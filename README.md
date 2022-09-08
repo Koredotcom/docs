@@ -1,2 +1,2 @@
 # docs
-Kore - All product related documentation
+Kore - All product related documentation.
