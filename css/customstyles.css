@@ -1324,10 +1324,10 @@ body.itAssistDocs{
     font-size: 14px;
     font-weight: 400;
     border: 1px solid #BDC1C6;
-    border-radius: 4px;
+    border-radius: 4px; 
     width: 240px;
     margin-left: 0;
-    background-image: url(../images/search.svg);
+    background-image: url(../images/itassist/search.svg);
     background-repeat: no-repeat;
     background-position: left 14px center;
     padding-left: 35px;
@@ -1437,7 +1437,7 @@ body.itAssistDocs{
     background-color:#ffffff;
     margin-bottom: 6px;
     padding: 4px 10px;
-    background-image: url(../images/expand.png);
+    background-image: url(../images/itassist/expand.png);
     background-repeat: no-repeat;
     background-position: right center;
     cursor: pointer;

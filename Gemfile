@@ -1,8 +1,9 @@
 source "https://rubygems.org"
 
+
 # to publish on github page
 gem 'github-pages', group: :jekyll_plugins
-
+gem 'include_absolute'
 group :jekyll_plugins do
     gem 'jekyll-commonmark-ghpages'
   end
@@ -16,6 +17,7 @@ group :jekyll_plugins do
   gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
   
   gem "webrick", "~> 1.7"
+
 
 # to publich without github page
 #gem "jekyll"

@@ -11,8 +11,10 @@ topnav:
 i18n_dropdown:
  - title: English
    url: ""
+   id: "en"
  - title: Ko
    url: ""
+   id: "ko"
 
 buttons:
    - title: Go To Builder

@@ -51,6 +51,9 @@ feedback_email: tomjoht@gmail.com
 highlighter: rouge
 # library used for syntax highlighting
 
+plugins:
+  - flexible_include
+
 markdown: CommonMarkGhPages
 commonmark:
   options: ["UNSAFE", "SMART", "FOOTNOTES"]
@@ -66,29 +69,60 @@ defaults:
     scope:
       path: "docs/en/itassist"
     values:
-      layout: "page_itassist"
+      layout: "en/itassist/page_itassist"
       topnav: topnav_itassist
 
   -
     scope:
       path: "docs/en/platform"
     values:
-      layout: "page_platform"
+      layout: "en/platform/page_platform"
       topnav: topnav_platform   
 
   -
     scope:
       path: "docs/en/searchassist"
     values:
-      layout: "page_searchassist"
+      layout: "en/searchassist/page_searchassist"
       topnav: topnav_searchassist    
 
   -
     scope:
       path: "docs/en/smartassist"
     values:
-      layout: "page_smartassist"
+      layout: "en/smartassist/page_smartassist"
       topnav: topnav_smartassist    
+
+
+  -
+    scope:
+      path: "docs/ko/itassist"
+    values:
+      layout: "ko/itassist/page_itassist"
+      topnav: topnav_itassist
+
+  -
+    scope:
+      path: "docs/ko/platform"
+    values:
+      layout: "ko/platform/page_platform"
+      topnav: topnav_platform   
+
+  -
+    scope:
+      path: "docs/ko/searchassist"
+    values:
+      layout: "ko/searchassist/page_searchassist"
+      topnav: topnav_searchassist    
+
+  -
+    scope:
+      path: "docs/ko/smartassist"
+    values:
+      layout: "ko/smartassist/page_smartassist"
+      topnav: topnav_smartassist   
+
+       
 
       
 

@@ -11,8 +11,8 @@
           
 
             <a class="navbar-brand" href="index.html">
-            <span class="projectTitle"><img src="./images/kore-logo.svg" class="attachment-large size-large" alt=""> {{site.topnav_title}}</span>
-            <img src="./images/kore-icon-mobile.svg" class="mobilelogo"><span class="mobileTitle">DOCUMENTATION</span>
+            <span class="projectTitle"><img src="./images/itassist/kore-logo.svg" class="attachment-large size-large" alt=""> {{site.topnav_title}}</span>
+            <img src="./images/itassist/kore-icon-mobile.svg" class="mobilelogo"><span class="mobileTitle">DOCUMENTATION</span>
             </a>
 
         </div>
@@ -30,7 +30,7 @@
                             SimpleJekyllSearch.init({
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
-                                dataSource: '{{ "search_itassist.json" }}',
+                                dataSource: '{{ "search/en/search_itassist.json" }}',
                                 searchResultTemplate: '<li onclick="setCurrentActive(event)"><a href="{url}" title="{{page.title | escape }}">{title}</a></li>',
                     noResultsText: '{{site.data.strings.search_no_results_text}}',
                             limit: 10,
@@ -90,8 +90,8 @@
             <ul class="dropdown-menu" id="i18nlng">
  {% for entry in topnav_i18ndropdown %}
 
-              <li>
-                    <a href="{{entry.url}}" >   {{entry.title}} </a>
+              <li id={{entry.id}}>
+                    <a >   {{entry.title}} </a>
               </li>
             
     {% endfor %}
