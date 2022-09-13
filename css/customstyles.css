@@ -1415,7 +1415,7 @@ body.platformDocs{
 .platformDocs .container .leftNav .nav li a::after{
     display: none;
 }
-.platformDocs .container .leftNav .nav li.active a:hover{
+.platformDocs .container .leftNav .nav li a:hover{
     color: #ffffff;
     background-color:#0D6EFD;
 }
@@ -1455,7 +1455,7 @@ body.platformDocs{
     transform: rotate(-90deg);
 }
 
-.platformDocs .container .leftNav  details summary .nav{
+.platformDocs .container .leftNav  details .nav{
     padding-left: 15px;
 }
 .platformDocs .container .leftNav details summary.active{
@@ -1786,7 +1786,7 @@ body.itAssistDocs{
 .itAssistDocs .container .leftNav .nav li a::after{
     display: none;
 }
-.itAssistDocs .container .leftNav .nav li.active a:hover{
+.itAssistDocs .container .leftNav .nav li a:hover{
     color: #ffffff;
     background-color:#0D6EFD;
 }
@@ -1826,7 +1826,7 @@ body.itAssistDocs{
     transform: rotate(-90deg);
 }
 
-.itAssistDocs .container .leftNav  details summary .nav{
+.itAssistDocs .container .leftNav  details .nav{
     padding-left: 15px;
 }
 .itAssistDocs .container .leftNav details summary.active{
@@ -2196,7 +2196,7 @@ body.smartassistDocs{
     transform: rotate(-90deg);
 }
 
-.smartassistDocs .container .leftNav  details summary .nav{
+.smartassistDocs .container .leftNav  details .nav{
     padding-left: 15px;
 }
 .smartassistDocs .container .leftNav details summary.active{
@@ -2505,6 +2505,7 @@ body.searchassistDocs{
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
+
 .searchassistDocs .container .leftNav h6:nth-child(1){
     border: 0;
     margin-bottom: 10px;
@@ -2526,7 +2527,7 @@ body.searchassistDocs{
 .searchassistDocs .container .leftNav .nav li a::after{
     display: none;
 }
-.searchassistDocs .container .leftNav .nav li.active a:hover{
+.searchassistDocs .container .leftNav .nav li a:hover{
     color: #ffffff;
     background-color:#0D6EFD;
 }
@@ -2566,7 +2567,7 @@ body.searchassistDocs{
     transform: rotate(-90deg);
 }
 
-.searchassistDocs .container .leftNav  details summary .nav{
+.searchassistDocs .container .leftNav  details .nav{
     padding-left: 15px;
 }
 .searchassistDocs .container .leftNav details summary.active{
