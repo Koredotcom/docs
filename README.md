@@ -1,9 +1,7 @@
-# docs
-Kore - All product related documentation.
 
 ### [Sample Demo](https://koredotcom.github.io/docs/en/itassist/getting_started)
 
-## Available Products To Write The Documentation
+##  Documentation For the Kore.ai Products
 
  - IT Assist
  - Search Assist
