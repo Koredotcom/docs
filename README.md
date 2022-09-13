@@ -80,7 +80,7 @@ To write any product documentation please follow below steps.
          
          
          
-### Steps To Upload Images Product Specific
+### Steps To Upload Product Specific Images
   
 While writing the documentation there would be a cases where we have to display the images, to achive this use case please follow below steps.
 
