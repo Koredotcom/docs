@@ -3,7 +3,7 @@ Kore - All product related documentation.
 
 ### [Sample Demo](https://koredotcom.github.io/docs/en/itassist/getting_started)
 
-## Available products to write the documentation
+## Available Products To Write The Documentation
 
  - IT Assist
  - Search Assist
