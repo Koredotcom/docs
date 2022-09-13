@@ -21,7 +21,7 @@ To write any product documentation please follow below steps.
    - Navigate to the [docs](https://github.com/Koredotcom/docs/tree/main/docs) folder
    - Select the language that you want to write the doc.
    - Once you open selected language folder you will be able to see the availale [prodcuts](https://github.com/Koredotcom/docs/tree/main/docs/en) documentation folders.
-   - Open any of the product folder Eg:[It Assit](https://github.com/Koredotcom/docs/tree/main/docs/en/itassist)
+   - Open any of the product folder Eg:[It Assist](https://github.com/Koredotcom/docs/tree/main/docs/en/itassist)
    - Create the file with **.md** extension.
    - Once file created make sure you add the front matters on top of the documentation page which defines the title of the doc and navigation link.
    
