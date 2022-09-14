@@ -104,8 +104,8 @@ layout: ko/itassist/itassist
             });
         }
 
-          $("#i18nlng  li").on('click', function(e){
                let availableLang = ['en', 'ko'];
+          $("#i18nlng  li").on('click', function(e){
                let currentUrl = location.href;
                let cuttentLang =  $(e.currentTarget).attr('id');
                let urlArr =   currentUrl.split('/');
@@ -118,6 +118,33 @@ layout: ko/itassist/itassist
                location.href = urlArr.join('/');
        });
 
-          $('#i18ndrpText').html(sessionStorage.getItem('i18n') || 'English'); 
+           function capitalize(s)
+        {
+            if(!s){
+                return s;
+            }
+            return s[0].toUpperCase() + s.slice(1);
+        }
+            let lang = sessionStorage.getItem('i18n');
+            let lngId = 'en';
+            switch(lang){
+                case 'English' :
+                   lngId = 'en';
+                   break;
+
+                 case 'Ko' :
+                     lngId = 'ko';
+                   break;
+            }
+             let currentUrl = location.href;
+              let urlArr =   currentUrl.split('/');
+                let storLang = '';
+              urlArr.forEach((el, index)=> {
+                    if(availableLang.indexOf(el) >= 0){
+                        storLang = el == 'en' ? 'English': capitalize(el);
+                     $('#i18ndrpText').html(storLang); 
+                    }
+               });
+               sessionStorage.setItem("i18n", storLang || 'English');
     });
 </script>
