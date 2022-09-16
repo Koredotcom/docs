@@ -8,11 +8,38 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> {{site.topnav_title}}</span></a>
+            <a class="navbar-brand" href="index.html">
+             <span class="projectTitle"><img src="./images/searchassist/kore-logo.svg" class="attachment-large size-large" alt=""> Documentation</span>
+                <img src="./images/searchassist/kore-icon-mobile.svg" class="mobilelogo"><span class="mobileTitle">DOCUMENTATION</span>
+            </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <!-- toggle sidebar button -->
+                               <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="{{site.data.strings.search_placeholder_text}}">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="{{ "js/jekyll-search.js"}}" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '{{ "search/en/search_searchassist.json" }}',
+                                searchResultTemplate: '<li onclick="setCurrentActive(event)"><a href="{url}" title="{{page.title | escape }}">{title}</a></li>',
+                    noResultsText: '{{site.data.strings.search_no_results_text}}',
+                            limit: 10,
+                            fuzzy: true,
+                    });
+
+                     function setCurrentActive(e){
+                         sessionStorage.setItem('currentActive',$(e.currentTarget).text());
+                    }
+                    </script>
+                    <!--end search-->
+                </li>
               
                 <!-- entries without drop-downs appear here -->
 
@@ -74,31 +101,6 @@
     <button> <a target="_blank" href="{{entry.url}}" >{{entry.title}}</a></button>
     </li>
     {% endfor %}
-                <!--comment out this block if you want to hide search-->
-                <li>
-                    <!--start search-->
-                    <div id="search-demo-container">
-                        <input type="text" id="search-input" placeholder="{{site.data.strings.search_placeholder_text}}">
-                        <ul id="results-container"></ul>
-                    </div>
-                    <script src="{{ "js/jekyll-search.js"}}" type="text/javascript"></script>
-                    <script type="text/javascript">
-                            SimpleJekyllSearch.init({
-                                searchInput: document.getElementById('search-input'),
-                                resultsContainer: document.getElementById('results-container'),
-                                dataSource: '{{ "search/en/search_searchassist.json" }}',
-                                searchResultTemplate: '<li onclick="setCurrentActive(event)"><a href="{url}" title="{{page.title | escape }}">{title}</a></li>',
-                    noResultsText: '{{site.data.strings.search_no_results_text}}',
-                            limit: 10,
-                            fuzzy: true,
-                    });
-
-                     function setCurrentActive(e){
-                         sessionStorage.setItem('currentActive',$(e.currentTarget).text());
-                    }
-                    </script>
-                    <!--end search-->
-                </li>
             </ul>
         </div>
         </div>

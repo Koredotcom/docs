@@ -6,3 +6,5 @@ permalink: en/itassist/Accessing The Platform
 ---
 #### Accessing The Platform
 ###### Action Task
+
+hey there am here

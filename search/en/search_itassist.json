@@ -4,6 +4,7 @@ layout: none
 search: exclude
 ---
 
+
 [
     {% assign pagesHtml = "" | split: ',' %}
 {% for page in site.html_pages  %}
@@ -24,7 +25,8 @@ search: exclude
     "tags": "{{ page.tags }}",
     "keywords": "{{page.keywords}}",
     "url": "{{page.url}}",
-    "summary": "{{page.summary | strip }}"
+    "summary": "{{page.summary | strip }}",
+    "content": "{{page.content | strip_html | escape | newline_to_br  | strip_newlines | remove:'<br />'  }}"
     }
     {% unless forloop.last  %},{% endunless %}
     {% endfor %}
