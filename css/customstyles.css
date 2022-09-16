@@ -212,8 +212,8 @@ p.post-meta {font-size: 80%; color: #777;}
     z-index: 9;
     left: 0;
     top: 81px;
-    display: block;
-    box-shadow: none;
+    /* display: block; */
+    box-shadow: none !important;
     background: #fff;
     overflow: auto;
     padding: 0 16px !important;
