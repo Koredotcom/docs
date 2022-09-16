@@ -213,9 +213,10 @@ p.post-meta {font-size: 80%; color: #777;}
     left: 0;
     top: 81px;
     display: block;
-    /* flex-wrap: wrap; */
+    box-shadow: none;
     background: #fff;
     overflow: auto;
+    padding: 0 16px !important;
 }
 #search-demo-container ul#results-container li{
     width: 50%;
@@ -225,6 +226,7 @@ p.post-meta {font-size: 80%; color: #777;}
     font-size: 16px;
     font-weight: 500;
     color: #0d6efd;
+    border: 0;
 }
 #search-demo-container ul#results-container li p{
     text-overflow: ellipsis;
