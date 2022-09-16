@@ -197,18 +197,43 @@ p.post-meta {font-size: 80%; color: #777;}
 
 /* search area */
 #search-demo-container ul#results-container {
-    list-style: none;
+   /* list-style: none;
     font-size: 12px;
     background-color: white;
     position: absolute;
-    top: 40px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
+    top: 40px;  if you change anything about the nav, you'll prob. need to reset the top and left values here.
     left: 20px;
     z-index: -1;
     width:223px;
-    border-left: 1px solid #dedede;
+    border-left: 1px solid #dedede;*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    left: 0;
+    top: 81px;
+    display: flex;
+    flex-wrap: wrap;
 }
-
-
+#search-demo-container ul#results-container li{
+    width: 50%;
+}
+#search-demo-container ul#results-container li a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #0d6efd;
+}
+#search-demo-container ul#results-container li p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    font-size: 12px;
+    font-weight: 400;
+    color: #202124;
+}
 ul#results-container a {
     background-color: transparent;
 }
