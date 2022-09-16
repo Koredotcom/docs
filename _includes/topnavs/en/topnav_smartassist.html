@@ -28,7 +28,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: '{{ "search/en/search_smartassist.json" }}',
-                                searchResultTemplate: '<li onclick="setCurrentActive(event)"><a href="{url}" title="{{page.title | escape }}">{title}</a></li>',
+                                searchResultTemplate: '<li onclick="setCurrentActive(event)"><a href="{url}" title="{{page.title | escape }}">{title}</a><p>{content}</p></li>',
                     noResultsText: '{{site.data.strings.search_no_results_text}}',
                             limit: 10,
                             fuzzy: true,
