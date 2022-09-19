@@ -24,3 +24,4 @@ IT Assist empowers service desks to transform the speed, impact, and delivery of
 
 
 
+> <span style="color:orange">**Note**: </span>This is a note of text. 
