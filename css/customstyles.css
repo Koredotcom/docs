@@ -1356,7 +1356,7 @@ body.platformDocs{
     border-radius: 4px;
     width: 240px;
     margin-left: 0;
-    background-image: url(../images/platform/search.svg);
+    background-image: url(../images/en/platform/search.svg);
     background-repeat: no-repeat;
     background-position: left 14px center;
     padding-left: 35px;
@@ -1472,7 +1472,7 @@ body.platformDocs{
 .platformDocs .container .leftNav details summary::after{
     content: '';
     display: inline-block;
-    background-image: url(../images/platform/expand.png);
+    background-image: url(../images/en/platform/expand.png);
     background-repeat: no-repeat;
     background-position: right center;
     width: 6px;
@@ -1727,7 +1727,7 @@ body.itAssistDocs{
     border-radius: 4px;
     width: 240px;
     margin-left: 0;
-    background-image: url(../images/itassist/search.svg);
+    background-image: url(../images/ko/itassist/search.svg);
     background-repeat: no-repeat;
     background-position: left 14px center;
     padding-left: 35px;
@@ -1843,7 +1843,7 @@ body.itAssistDocs{
 .itAssistDocs .container .leftNav details summary::after{
     content: '';
     display: inline-block;
-    background-image: url(../images/itassist/expand.png);
+    background-image: url(../images/ko/itassist/expand.png);
     background-repeat: no-repeat;
     background-position: right center;
     width: 6px;
@@ -2097,7 +2097,7 @@ body.smartassistDocs{
     border-radius: 4px;
     width: 240px;
     margin-left: 0;
-    background-image: url(../images/smartassist/search.svg);
+    background-image: url(../images/en/smartassist/search.svg);
     background-repeat: no-repeat;
     background-position: left 14px center;
     padding-left: 35px;
@@ -2213,7 +2213,7 @@ body.smartassistDocs{
 .smartassistDocs .container .leftNav details summary::after{
     content: '';
     display: inline-block;
-    background-image: url(../images/smartassist/expand.png);
+    background-image: url(../images/en/smartassist/expand.png);
     background-repeat: no-repeat;
     background-position: right center;
     width: 6px;
@@ -2467,7 +2467,7 @@ body.searchassistDocs{
     border-radius: 4px;
     width: 240px;
     margin-left: 0;
-    background-image: url(../images/searchassist/search.svg);
+    background-image: url(../images/en/searchassist/search.svg);
     background-repeat: no-repeat;
     background-position: left 14px center;
     padding-left: 35px;
