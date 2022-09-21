@@ -1,3 +1,9 @@
+---
+title: Overview
+
+permalink: en/itassist/overview
+
+---
 ## Overview
 
 Modern businesses demand faster, simpler, and more efficient IT services management to provide a great experience to their employees and optimize their productivity. Employee experience is largely defined by an easily accessible service desk that provides quick responses and resolutions to their queries without having to access multiple applications. In this process, the major challenges faced by service desks include numerous issues, repetitive and time-consuming tasks, limited time and resources, and missing out on important issues. IT Assist is a solution designed to tackle all these IT service management challenges and help the service desks focus on increasing efficiency, cutting costs, and improving employee satisfaction.
