@@ -14,7 +14,7 @@
 
 ###### USER GUIDE
 
-- [Sign In](en/itassist/Sign In)
+- [Sign In](en/itassist/Sign%20In)
 
 <details >
   <summary>Access Management
@@ -28,7 +28,7 @@
 
   </details>
 
-[Ticket Reduction & Self-Serve Process](en/itassist/Ticket%20Reduction%20and%20Self-Serve Process)
+[Ticket Reduction & Self-Serve Process](en/itassist/Ticket%20Reduction%20and%20Self-Serve%20Process)
 
   <details >
   <summary>Employee Self-Serve Activities
