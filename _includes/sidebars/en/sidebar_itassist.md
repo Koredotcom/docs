@@ -20,40 +20,40 @@
   <summary>Access Management
   </summary>
 
-  - [About Access Management](en/itassist/Access Management)
+  - [About Access Management](en/itassist/Access%20Management)
   - [Reset Password](en/itassist/Access Management#reset-password)
   - [Unlock Account](en/itassist/Access Management#unlock-account)
-  - [Password Health Checks and Reminders](en/itassist/Access Management#password-health-checks-and-reminders)
-  - [Configuration](en/itassist/Access Management#configuration)
+  - [Password Health Checks and Reminders](en/itassist/Access%20Management#password-health-checks-and-reminders)
+  - [Configuration](en/itassist/Access%20Management#configuration)
 
   </details>
 
-[Ticket Reduction & Self-Serve Process](en/itassist/Ticket Reduction and Self-Serve Process)
+[Ticket Reduction & Self-Serve Process](en/itassist/Ticket%20Reduction%20and%20Self-Serve Process)
 
   <details >
   <summary>Employee Self-Serve Activities
   </summary>
 
-  - [About](en/itassist/Employee Self-service Activities)
-  - [Configuration](en/itassist/Employee Self-service Activities#configuration)
+  - [About](en/itassist/Employee%20Self-service%20Activities)
+  - [Configuration](en/itassist/Employee%20Self-service%20Activities#configuration)
 
 </details>
 
-[Incident Management](en/itassist/Incident Management)
+[Incident Management](en/itassist/Incident%20Management)
 
-[Request Management](en/itassist/Request Management)
+[Request Management](en/itassist/Request%20Management)
 
 <details >
   <summary>Ticket Management
   </summary>
-  - [About](en/itassist/Ticket Management)
-  - [View Tickets](en/itassist/Ticket Management#view-tickets)
-  - [Ticket Follow-up Actions](en/itassist/Ticket Management#ticket-follo-up-actions)
-  - [Ticket Updates](en/itassist/Ticket Management#ticket-updates)
+  - [About](en/itassist/Ticket%20Management)
+  - [View Tickets](en/itassist/Ticket%20Management#view-tickets)
+  - [Ticket Follow-up Actions](en/itassist/Ticket%20Management#ticket-follo-up-actions)
+  - [Ticket Updates](en/itassist/Ticket%20Management#ticket-updates)
 
   </details>
 
-[Manager Approvals](en/itassist/Manager Approvals)
+[Manager Approvals](en/itassist/Manager%20Approvals)
 
 <details >
   <summary>Notifications
@@ -70,25 +70,25 @@
   <summary>Outage Reports
   </summary>
 
-  - [About](en/itassist/Outage Reports)
-  - [Configuration](en/itassist/Outage Reports#configuration)
+  - [About](en/itassist/Outage%20Reports)
+  - [Configuration](en/itassist/Outage%20Reports#configuration)
 
   </details>
 <details >
   <summary>Knowledge Search
   </summary>
 
-  - [About](en/itassist/Knowledge Search)
-  - [Features](en/itassist/Knowledge Search#features)
+  - [About](en/itassist/Knowledge%20Search)
+  - [Features](en/itassist/Knowledge%20Search#features)
 
   </details>
-[Pre-trained FAQ Modules](en/itassist/Pre-trained FAQ Modules)
+[Pre-trained FAQ Modules](en/itassist/Pre-trained%20FAQ%20Modules)
 
 <details >
   <summary>Talk to Agents
   </summary>
 
-  - [About](en/itassist/Talk to Agent)
-  - [Configuration](en/itassist/Talk to Agent#configuration)
+  - [About](en/itassist/Talk%20to%20Agent)
+  - [Configuration](en/itassist/Talk%20to%20Agent#configuration)
 
   </details>
