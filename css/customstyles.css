@@ -1886,6 +1886,15 @@ body.itAssistDocs{
 .itAssistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li{
     padding: 10px;
 }
+.itAssistDocs .container .contentbody success{
+    background-color:#D4EDDA;
+    border-radius: 4px;
+    padding: 15px;
+    color: #155724;
+}
+.itAssistDocs .container .contentbody success a{
+    text-decoration: underline;
+}
 /*---mobile---*/
 @media (min-width: 320px) and (max-width: 1200px) {
     body.itAssistDocs{
