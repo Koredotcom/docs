@@ -21,10 +21,10 @@
   </summary>
 
   - [About Access Management](en/itassist/Access Management)
-  - [Reset Password](en/itassist/Access Management#markdown-header-reset-password)
-  - [Unlock Account](en/itassist/Access Management#markdown-header-unlock-account)
-  - [Password Health Checks and Reminders](en/itassist/Access Management#markdown-header-password-health-checks-and-reminders)
-  - [Configuration](en/itassist/Access Management#markdown-header-configuration)
+  - [Reset Password](en/itassist/Access Management#reset-password)
+  - [Unlock Account](en/itassist/Access Management#unlock-account)
+  - [Password Health Checks and Reminders](en/itassist/Access Management#password-health-checks-and-reminders)
+  - [Configuration](en/itassist/Access Management#configuration)
 
   </details>
 
@@ -35,7 +35,7 @@
   </summary>
 
   - [About](en/itassist/Employee Self-service Activities)
-  - [Configuration](en/itassist/Employee Self-service Activities#markdown-header-configuration)
+  - [Configuration](en/itassist/Employee Self-service Activities#configuration)
 
 </details>
 
@@ -47,9 +47,9 @@
   <summary>Ticket Management
   </summary>
   - [About](en/itassist/Ticket Management)
-  - [View Tickets](en/itassist/Ticket Management#markdown-header-view-tickets)
-  - [Ticket Follow-up Actions](en/itassist/Ticket Management#markdown-header-ticket-follo-up-actions)
-  - [Ticket Updates](en/itassist/Ticket Management#markdown-header-ticket-updates)
+  - [View Tickets](en/itassist/Ticket Management#view-tickets)
+  - [Ticket Follow-up Actions](en/itassist/Ticket Management#ticket-follo-up-actions)
+  - [Ticket Updates](en/itassist/Ticket Management#ticket-updates)
 
   </details>
 
@@ -60,9 +60,9 @@
   </summary>
 
   - [About](en/itassist/Notifications)
-  - [Features](en/itassist/Notifications#markdown-header-features)
-  - [Types of Notifications](en/itassist/Notifications#markdown-header-types-of-notifications)
-  - [Ticket Updates](en/itassist/Notifications#markdown-header-ticket-updates)
+  - [Features](en/itassist/Notifications#features)
+  - [Types of Notifications](en/itassist/Notifications#types-of-notifications)
+  - [Ticket Updates](en/itassist/Notifications#ticket-updates)
 
   </details>
 
@@ -71,7 +71,7 @@
   </summary>
 
   - [About](en/itassist/Outage Reports)
-  - [Configuration](en/itassist/Outage Reports#markdown-header-configuration)
+  - [Configuration](en/itassist/Outage Reports#configuration)
 
   </details>
 <details >
@@ -79,7 +79,7 @@
   </summary>
 
   - [About](en/itassist/Knowledge Search)
-  - [Features](en/itassist/Knowledge Search#markdown-header-features)
+  - [Features](en/itassist/Knowledge Search#features)
 
   </details>
 [Pre-trained FAQ Modules](en/itassist/Pre-trained FAQ Modules)
@@ -89,6 +89,6 @@
   </summary>
 
   - [About](en/itassist/Talk to Agent)
-  - [Configuration](en/itassist/Talk to Agent#markdown-header-configuration)
+  - [Configuration](en/itassist/Talk to Agent#configuration)
 
   </details>
