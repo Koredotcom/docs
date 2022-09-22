@@ -1515,6 +1515,41 @@ body.platformDocs{
 .platformDocs .navbar .topnavlinks .navbar-collapse .navbar-right li{
     padding: 10px;
 }
+
+.platformDocs .container .contentbody success{
+    background-color:#D4EDDA;
+    border-radius: 4px;
+    padding: 15px;
+    color: #155724;
+    display: block;
+}
+.platformDocs .container .contentbody success a{
+    text-decoration: underline;
+}
+.platformDocs .container .contentbody warning{
+    background-color:#FFFBEA;
+    border-radius: 4px;
+    padding: 15px;
+    color: #806D16;
+    display: block;
+}
+.platformDocs .container .contentbody warning a{
+    text-decoration: underline;
+}
+
+.platformDocs .container .contentbody danger{
+    background-color:#FBC4C4;
+    border-radius: 4px;
+    padding: 15px;
+    color: #202427;
+    display: block;
+}
+.platformDocs .container .contentbody danger span{
+    font-style: italic;
+}
+.platformDocs .container .contentbody danger a{
+    text-decoration: underline;
+}
 /*---mobile---*/
 @media (min-width: 320px) and (max-width: 1200px) {
     body.platformDocs{
@@ -2290,6 +2325,40 @@ body.smartassistDocs{
 .smartassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li{
     padding: 10px;
 }
+.smartassistDocs .container .contentbody success{
+    background-color:#D4EDDA;
+    border-radius: 4px;
+    padding: 15px;
+    color: #155724;
+    display: block;
+}
+.smartassistDocs .container .contentbody success a{
+    text-decoration: underline;
+}
+.smartassistDocs .container .contentbody warning{
+    background-color:#FFFBEA;
+    border-radius: 4px;
+    padding: 15px;
+    color: #806D16;
+    display: block;
+}
+.smartassistDocs .container .contentbody warning a{
+    text-decoration: underline;
+}
+
+.smartassistDocs .container .contentbody danger{
+    background-color:#FBC4C4;
+    border-radius: 4px;
+    padding: 15px;
+    color: #202427;
+    display: block;
+}
+.smartassistDocs .container .contentbody danger span{
+    font-style: italic;
+}
+.smartassistDocs .container .contentbody danger a{
+    text-decoration: underline;
+}
 /*---mobile---*/
 @media (min-width: 320px) and (max-width: 1200px) {
     body.smartassistDocs{
@@ -2660,6 +2729,40 @@ body.searchassistDocs{
 }
 .searchassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li{
     padding: 10px;
+}
+.searchassistDocs .container .contentbody success{
+    background-color:#D4EDDA;
+    border-radius: 4px;
+    padding: 15px;
+    color: #155724;
+    display: block;
+}
+.searchassistDocs .container .contentbody success a{
+    text-decoration: underline;
+}
+.searchassistDocs .container .contentbody warning{
+    background-color:#FFFBEA;
+    border-radius: 4px;
+    padding: 15px;
+    color: #806D16;
+    display: block;
+}
+.searchassistDocs .container .contentbody warning a{
+    text-decoration: underline;
+}
+
+.searchassistDocs .container .contentbody danger{
+    background-color:#FBC4C4;
+    border-radius: 4px;
+    padding: 15px;
+    color: #202427;
+    display: block;
+}
+.searchassistDocs .container .contentbody danger span{
+    font-style: italic;
+}
+.searchassistDocs .container .contentbody danger a{
+    text-decoration: underline;
 }
 /*---mobile---*/
 @media (min-width: 320px) and (max-width: 1200px) {
