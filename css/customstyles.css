@@ -1891,8 +1891,33 @@ body.itAssistDocs{
     border-radius: 4px;
     padding: 15px;
     color: #155724;
+    display: block;
 }
 .itAssistDocs .container .contentbody success a{
+    text-decoration: underline;
+}
+.itAssistDocs .container .contentbody warning{
+    background-color:#FFFBEA;
+    border-radius: 4px;
+    padding: 15px;
+    color: #806D16;
+    display: block;
+}
+.itAssistDocs .container .contentbody warning a{
+    text-decoration: underline;
+}
+
+.itAssistDocs .container .contentbody danger{
+    background-color:#FBC4C4;
+    border-radius: 4px;
+    padding: 15px;
+    color: #202427;
+    display: block;
+}
+.itAssistDocs .container .contentbody danger span{
+    font-style: italic;
+}
+.itAssistDocs .container .contentbody danger a{
     text-decoration: underline;
 }
 /*---mobile---*/
