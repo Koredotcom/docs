@@ -21,8 +21,8 @@
   </summary>
 
   - [About Access Management](en/itassist/Access%20Management)
-  - [Reset Password](en/itassist/Access Management#reset-password)
-  - [Unlock Account](en/itassist/Access Management#unlock-account)
+  - [Reset Password](en/itassist/Access%20Management#reset-password)
+  - [Unlock Account](en/itassist/Access%20Management#unlock-account)
   - [Password Health Checks and Reminders](en/itassist/Access%20Management#password-health-checks-and-reminders)
   - [Configuration](en/itassist/Access%20Management#configuration)
 
