@@ -1,14 +1,14 @@
 ###### GETTING STARTED
 
-- [Overview](en/itassist/Overview#markdown-header-overview)
-- [What is IT Assist](en/itassist/Overview#markdown-header-what-is-it-assist)
-- [Why IT Assist](en/itassist/Overview#markdown-header-why-it-assist)
+- [Overview](en/itassist/Overview#overview)
+- [What is IT Assist](en/itassist/Overview#what-is-it-assist)
+- [Why IT Assist](en/itassist/Overview#why-it-assist)
 
-[Out-of-box Capabilities](en/itassist/Out-of-box Capabilities)
+[Out-of-box Capabilities](en/itassist/Out-of-box%20Capabilities)
 
 [Integrations](en/itassist/Integrations)
 
-[Managing IT Assist](en/itassist/Managing IT Assist)
+[Managing IT Assist](en/itassist/Managing%20IT%20Assist)
 
 [Glossary](en/itassist/Glossary)
 
