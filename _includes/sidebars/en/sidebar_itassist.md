@@ -4,13 +4,13 @@
 - [What is IT Assist](en/itassist/overview#what-is-it-assist)
 - [Why IT Assist](en/itassist/overview#why-it-assist)
 
-[Out-of-box Capabilities](en/itassist/out_of_box_capabilities)
+- [Out-of-box Capabilities](en/itassist/out_of_box_capabilities)
 
-[Integrations](en/itassist/integrations)
+- [Integrations](en/itassist/integrations)
 
-[Managing IT Assist](en/itassist/managing_it_assist)
+- [Managing IT Assist](en/itassist/managing_it_assist)
 
-[Glossary](en/itassist/glossary)
+- [Glossary](en/itassist/glossary)
 
 ###### USER GUIDE
 
@@ -28,7 +28,7 @@
 
   </details>
 
-[Ticket Reduction & Self-Serve Process](en/itassist/ticket_reduction_and_self-serve_process)
+- [Ticket Reduction & Self-Serve Process](en/itassist/ticket_reduction_and_self-serve_process)
 
   <details >
   <summary>Employee Self-Serve Activities
@@ -39,13 +39,14 @@
 
 </details>
 
-[Incident Management](en/itassist/incident_management)
+- [Incident Management](en/itassist/incident_management)
 
-[Request Management](en/itassist/request_management)
+- [Request Management](en/itassist/request_management)
 
 <details >
   <summary>Ticket Management
   </summary>
+  
   - [About](en/itassist/ticket_management)
   - [View Tickets](en/itassist/ticket_management#view-tickets)
   - [Ticket Follow-up Actions](en/itassist/ticket_management#ticket-follo-up-actions)
@@ -53,7 +54,7 @@
 
   </details>
 
-[Manager Approvals](en/itassist/manager_approvals)
+- [Manager Approvals](en/itassist/manager_approvals)
 
 <details >
   <summary>Notifications
@@ -82,7 +83,7 @@
   - [Features](en/itassist/knowledge_search#features)
 
   </details>
-[Pre Trained FAQ Modules](en/itassist/pre_trained_faq_modules)
+- [Pre Trained FAQ Modules](en/itassist/pre_trained_faq_modules)
 
 <details >
   <summary>Talk to Agents
