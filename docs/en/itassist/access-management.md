@@ -1,4 +1,5 @@
 ---
+
 title: Access Management
 
 permalink: en/itassist/access_management
@@ -17,7 +18,7 @@ The Access Management features can be configured to work with the Single-Sign-On
 
 IT Assist is very versatile and is trained to generate a new password in various ways depending upon the security policies defined in the Identity Provider using the preferred channel of communication of the employee. For example, directly providing a temporary password, resetting the password with a link, providing instructions to reset a password, or directing employees to the service desk in specific cases.
 
-| ![img](G:\My Drive\ITAssist\reset-pass-temp.png) | ![img](G:\My Drive\ITAssist\reset-pass-instructions.png) |
+| ![img](/images/en/itassist/reset-pass-temp.png) | ![img](/images/en/itassist/reset-pass-instructions.png) |
 | :----------------------------------------------: | :------------------------------------------------------: |
 
 ​	*Reset password - temporary password generation 				Reset password - password reset instructions* 
@@ -26,7 +27,7 @@ IT Assist is very versatile and is trained to generate a new password in various
 
 Employees are often locked out of their accounts due to various reasons. IT Assist makes it easy for the employees to unlock the account with simple intents. Depending on the reason for account lock up and the policies defined by the Identity Provider or the SSO application, IT Assist either unlocks the account or gives appropriate instructions to the employees on why the account is locked and how to unlock it. For example, if an employee requests to unlock his account, IT Assist checks with the SSO (say, Okta) whether the account has been forced locked. If not, it unlocks the account for the employee or gives appropriate instructions for the same. 
 
-| ![img](G:\My Drive\ITAssist\unlock-instructions.png) | ![img](G:\My Drive\ITAssist\unlock-account) |
+| ![img](/images/en/itassist/unlock-instructions.png) | ![img](/images/en/itassist/nlock-account) |
 | ---------------------------------------------------- | ------------------------------------------- |
 
 ​		*Providing instructions to unlock the account                        		Unlocking the account directly*
@@ -35,7 +36,8 @@ Employees are often locked out of their accounts due to various reasons. IT Assi
 
 Some Identity providers mandate the passwords to be updated at regular intervals. In such cases, IT Assist can be configured to proactively send password reset reminders as per the security policies. If the Identity Provider allows, IT Assist can perform regular password health checks and display appropriate reminders to the employees, as required.
 
-![img](G:\My Drive\ITAssist\password-reset-reminder.png)
+ ![img](/images/en/itassist/password-reset-reminder.png)
+ 
 
 ​																	*Password Reset Reminder*
 
