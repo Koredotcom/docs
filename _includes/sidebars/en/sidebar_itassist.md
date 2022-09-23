@@ -82,7 +82,7 @@
   - [Features](en/itassist/knowledge_search#features)
 
   </details>
-[Pre-trained FAQ Modules](en/itassist/pre_trained_faq_modules)
+[Pre Trained FAQ Modules](en/itassist/pre_trained_faq_modules)
 
 <details >
   <summary>Talk to Agents

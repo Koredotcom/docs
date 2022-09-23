@@ -1,5 +1,5 @@
 ---
-title: Pre-trained FAQ Modules
+title: Pre Trained FAQ Modules
 
 permalink: en/itassist/pre_trained_faq_modules
 
