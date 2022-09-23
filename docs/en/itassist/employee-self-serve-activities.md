@@ -9,7 +9,7 @@ permalink: en/itassist/employee_self_service_activities
 
 
 
-![img](G:\My Drive\ITAssist\employee-self-serve-activities.png)
+![img](images/en/itassist/employee-self-serve-activities.png)
 
 ​																*Self-Service activities*
 
