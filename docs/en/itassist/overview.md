@@ -20,5 +20,5 @@ The advanced AI technology allows it to have human-like abilities to understand 
 
 IT Assist empowers service desks to transform the speed, impact, and delivery of IT services. The robust underlying technology of IT Assist makes it the industry differentiator. Some of the key features of IT Assist include:
 
-![image-20220913131447734](C:\Users\Prabhat.Singh\AppData\Roaming\Typora\typora-user-images\image-20220913131447734.png)
+![image-20220913131447734](images/en/itassist/image-20220913131447734.png)
 
