@@ -282,7 +282,7 @@ div#toc ul li {
     list-style: square;
 }
 div#toc ul li a::after{
-    display: none;
+    /* display: none; */
 }
 div#toc ul {
     background-color: #f2f3f5;
