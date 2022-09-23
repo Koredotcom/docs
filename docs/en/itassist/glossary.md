@@ -1,7 +1,7 @@
 ---
 title: Glossary
 
-permalink: en/itassist/Glossary
+permalink: en/itassist/glossary
 
 ---
 

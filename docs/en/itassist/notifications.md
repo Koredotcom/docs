@@ -1,7 +1,7 @@
 ---
 title: Notifications
 
-permalink: en/itassist/Notifications
+permalink: en/itassist/notifications
 
 ---
 

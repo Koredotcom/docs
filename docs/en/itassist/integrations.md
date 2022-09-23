@@ -1,7 +1,7 @@
 ---
 title: Integrations
 
-permalink: en/itassist/Integrations
+permalink: en/itassist/integrations
 
 ---
 

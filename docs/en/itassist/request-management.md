@@ -1,7 +1,7 @@
 ---
 title: Request Management
 
-permalink: en/itassist/Request Management
+permalink: en/itassist/request_management
 
 ---
 

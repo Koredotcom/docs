@@ -1,7 +1,7 @@
 ---
 title: Ticket Reduction and Self-Serve Process
 
-permalink: en/itassist/Ticket Reduction and Self-Serve Process
+permalink: en/itassist/ticket_reduction_and_self_serve_process
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Out-of-box Capabilities
 
-permalink: en/itassist/Out-of-box Capabilities
+permalink: en/itassist/out_of_box_capabilities
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Pre-trained FAQ Modules
 
-permalink: en/itassist/Pre-trained FAQ Modules
+permalink: en/itassist/pre_trained_faq_modules
 
 ---
 

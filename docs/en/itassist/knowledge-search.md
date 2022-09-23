@@ -1,7 +1,7 @@
 ---
 title: Knowledge Search
 
-permalink: en/itassist/Knowledge Search
+permalink: en/itassist/knowledge_search
 
 ---
 

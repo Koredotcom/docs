@@ -1,7 +1,7 @@
 ---
 title: Incident Management
 
-permalink: en/itassist/Incident Management
+permalink: en/itassist/incident_management
 
 ---
 

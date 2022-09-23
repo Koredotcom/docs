@@ -1,7 +1,7 @@
 ---
 title: Managing IT Assist
 
-permalink: en/itassist/Managing IT Assist
+permalink: en/itassist/managing_it_assist
 
 ---
 

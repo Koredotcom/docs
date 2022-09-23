@@ -1,7 +1,7 @@
 ---
 title: Ticket Management
 
-permalink: en/itassist/Ticket Management
+permalink: en/itassist/ticket_management
 
 ---
 

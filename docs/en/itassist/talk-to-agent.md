@@ -1,7 +1,7 @@
 ---
 title: Talk to Agent
 
-permalink: en/itassist/Talk to Agent
+permalink: en/itassist/talk_to_agent
 
 ---
 

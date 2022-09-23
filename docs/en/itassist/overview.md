@@ -1,7 +1,7 @@
 ---
 title: Overview
 
-permalink: en/itassist/Overview
+permalink: en/itassist/overview
 
 ---
 # Overview

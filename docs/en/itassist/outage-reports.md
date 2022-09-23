@@ -1,7 +1,7 @@
 ---
 title: Outage Reports
 
-permalink: en/itassist/Outage Reports
+permalink: en/itassist/outage_reports
 
 ---
 

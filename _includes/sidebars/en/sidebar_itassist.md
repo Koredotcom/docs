@@ -1,68 +1,68 @@
 ###### GETTING STARTED
 
-- [Overview](en/itassist/Overview#overview)
-- [What is IT Assist](en/itassist/Overview#what-is-it-assist)
-- [Why IT Assist](en/itassist/Overview#why-it-assist)
+- [Overview](en/itassist/overview#overview)
+- [What is IT Assist](en/itassist/overview#what-is-it-assist)
+- [Why IT Assist](en/itassist/overview#why-it-assist)
 
-[Out-of-box Capabilities](en/itassist/Out-of-box%20Capabilities)
+[Out-of-box Capabilities](en/itassist/out_of_box_capabilities)
 
-[Integrations](en/itassist/Integrations)
+[Integrations](en/itassist/integrations)
 
-[Managing IT Assist](en/itassist/Managing%20IT%20Assist)
+[Managing IT Assist](en/itassist/managing_it_assist)
 
-[Glossary](en/itassist/Glossary)
+[Glossary](en/itassist/glossary)
 
 ###### USER GUIDE
 
-- [Sign In](en/itassist/Sign%20In)
+- [Sign In](en/itassist/sign_in)
 
 <details >
   <summary>Access Management
   </summary>
 
-  - [About Access Management](en/itassist/Access%20Management)
-  - [Reset Password](en/itassist/Access%20Management#reset-password)
-  - [Unlock Account](en/itassist/Access%20Management#unlock-account)
-  - [Password Health Checks and Reminders](en/itassist/Access%20Management#password-health-checks-and-reminders)
-  - [Configuration](en/itassist/Access%20Management#configuration)
+  - [About Access Management](en/itassist/access_management)
+  - [Reset Password](en/itassist/access_management#reset-password)
+  - [Unlock Account](en/itassist/access_management#unlock-account)
+  - [Password Health Checks and Reminders](en/itassist/access_management#password-health-checks-and-reminders)
+  - [Configuration](en/itassist/access_management#configuration)
 
   </details>
 
-[Ticket Reduction & Self-Serve Process](en/itassist/Ticket%20Reduction%20and%20Self-Serve%20Process)
+[Ticket Reduction & Self-Serve Process](en/itassist/ticket_reduction_and_self-serve_process)
 
   <details >
   <summary>Employee Self-Serve Activities
   </summary>
 
-  - [About](en/itassist/Employee%20Self-service%20Activities)
-  - [Configuration](en/itassist/Employee%20Self-service%20Activities#configuration)
+  - [About](en/itassist/employee_self_service_activities)
+  - [Configuration](en/itassist/employee_self_service_activities#configuration)
 
 </details>
 
-[Incident Management](en/itassist/Incident%20Management)
+[Incident Management](en/itassist/incident_management)
 
-[Request Management](en/itassist/Request%20Management)
+[Request Management](en/itassist/request_management)
 
 <details >
   <summary>Ticket Management
   </summary>
-  - [About](en/itassist/Ticket%20Management)
-  - [View Tickets](en/itassist/Ticket%20Management#view-tickets)
-  - [Ticket Follow-up Actions](en/itassist/Ticket%20Management#ticket-follo-up-actions)
-  - [Ticket Updates](en/itassist/Ticket%20Management#ticket-updates)
+  - [About](en/itassist/ticket_management)
+  - [View Tickets](en/itassist/ticket_management#view-tickets)
+  - [Ticket Follow-up Actions](en/itassist/ticket_management#ticket-follo-up-actions)
+  - [Ticket Updates](en/itassist/ticket_management#ticket-updates)
 
   </details>
 
-[Manager Approvals](en/itassist/Manager%20Approvals)
+[Manager Approvals](en/itassist/manager_approvals)
 
 <details >
   <summary>Notifications
   </summary>
 
-  - [About](en/itassist/Notifications)
-  - [Features](en/itassist/Notifications#features)
-  - [Types of Notifications](en/itassist/Notifications#types-of-notifications)
-  - [Ticket Updates](en/itassist/Notifications#ticket-updates)
+  - [About](en/itassist/notifications)
+  - [Features](en/itassist/notifications#features)
+  - [Types of Notifications](en/itassist/notifications#types-of-notifications)
+  - [Ticket Updates](en/itassist/notifications#ticket-updates)
 
   </details>
 
@@ -70,25 +70,25 @@
   <summary>Outage Reports
   </summary>
 
-  - [About](en/itassist/Outage%20Reports)
-  - [Configuration](en/itassist/Outage%20Reports#configuration)
+  - [About](en/itassist/outage-reports)
+  - [Configuration](en/itassist/outage-reports#configuration)
 
   </details>
 <details >
   <summary>Knowledge Search
   </summary>
 
-  - [About](en/itassist/Knowledge%20Search)
-  - [Features](en/itassist/Knowledge%20Search#features)
+  - [About](en/itassist/knowledge_search)
+  - [Features](en/itassist/knowledge_search#features)
 
   </details>
-[Pre-trained FAQ Modules](en/itassist/Pre-trained%20FAQ%20Modules)
+[Pre-trained FAQ Modules](en/itassist/pre_trained_faq_modules)
 
 <details >
   <summary>Talk to Agents
   </summary>
 
-  - [About](en/itassist/Talk%20to%20Agent)
-  - [Configuration](en/itassist/Talk%20to%20Agent#configuration)
+  - [About](en/itassist/talk_to_agent)
+  - [Configuration](en/itassist/talk_to_agent#configuration)
 
   </details>

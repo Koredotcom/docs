@@ -1,7 +1,7 @@
 ---
 title: Manager Approvals
 
-permalink: en/itassist/Manager Approvals
+permalink: en/itassist/manager_approvals
 
 ---
 

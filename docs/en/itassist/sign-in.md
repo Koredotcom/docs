@@ -1,7 +1,7 @@
 ---
 title: Sign In
 
-permalink: en/itassist/Sign In
+permalink: en/itassist/sign_in
 
 ---
 

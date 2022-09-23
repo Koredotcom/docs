@@ -1,7 +1,7 @@
 ---
 title: Access Management
 
-permalink: en/itassist/Access Management
+permalink: en/itassist/access_management
 
 ---
 
