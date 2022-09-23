@@ -29,7 +29,7 @@
 
   </details>
 
-- [Ticket Reduction & Self-Serve Process](en/itassist/ticket_reduction_and_self-serve_process)
+- [Ticket Reduction & Self-Serve Process](en/itassist/ticket_reduction_and_self_serve_process)
 
   <details >
   <summary>Employee Self-Serve Activities
