@@ -13,7 +13,7 @@ IT Assist can be used to manage both incident tickets and the request tickets en
 
 IT Assist can list all the incidents and request tickets related to the employee. Employees can choose to view the list of tickets or request the details of a particular ticket. 
 
-![img](G:\My Drive\ITAssist\incident-list-and-incident-detail.png)
+![img](images/en/itassist/incident-list-and-incident-detail.png)
 
 ​																*Incident list and incident detail*
 
@@ -23,7 +23,7 @@ An employee can take up different follow-up actions like adding comments, markin
 
 Alternatively, you can also provide the ticket number and the action to be taken.
 
-| ![img](G:\My Drive\ITAssist\actions-using-buttons.png) | ![img](G:\My Drive\ITAssist\actions-using-conversational-message.png) |
+| ![img](images/en/itassist/actions-using-buttons.png) | ![img](images/en/itassist/actions-using-conversational-message.png) |
 | ------------------------------------------------------ | ------------------------------------------------------------ |
 
 ​								*Actions using buttons                             			Actions using conversational message* 
@@ -34,7 +34,7 @@ Alternatively, you can also provide the ticket number and the action to be taken
 
 If there is a workflow associated with a particular action in the backend application, the workflow is triggered by IT Assist when the employee clicks the corresponding action button in the widget. For example, if escalate action is enabled and the employee wants to escalate a ticket, IT Assist will ask for the escalation reason and initiate the workflow in the backend.
 
-| ![img](G:\My Drive\ITAssist\escalate-ticket.png) | ![img](G:\My Drive\ITAssist\initiating-escalate-workflow.png) |
+| ![img](images/en/itassist/escalate-ticket.png) | ![img](images/en/itassist/initiating-escalate-workflow.png) |
 | ------------------------------------------------ | ------------------------------------------------------------ |
 
 ​								*Escalate Ticket 															Initiating Escalate workflow*
