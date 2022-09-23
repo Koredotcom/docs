@@ -21,3 +21,7 @@ And the next line. OverviewModern businesses demand faster, simpler, and more ef
 
 
 <warning> **Warning:** This is a danger Info </warning>
+
+
+
+<warning> ![sample](images/en/itassist/bulb.png) **Tips:** This is a danger Info </warning>
