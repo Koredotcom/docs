@@ -9,7 +9,7 @@ permalink: en/itassist/out_of_box_capabilities
 
 IT Assist comes with a set of standard features that can be readily used without any customizations.
 
-![](G:\My Drive\ITAssist\standard-features.png)
+![Standard Feature](images/en/itassist/standard-features.png)
 
 
 
