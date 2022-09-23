@@ -13,7 +13,7 @@ IT Assist offers a self-service process for the employees to interact in the mos
 
 For example, if an application is not working for an employee, IT Assist can help identify if it is a known issue or an outage already announced for the application and avoid the employee contacting the service desk to get this information or raise a ticket. 
 
-| ![img](G:\My Drive\ITAssist\outage-notification.png) | ![img](G:\My Drive\ITAssist\event-specific-relevant-info-articles.png) |
+| ![img](images/en/itassist/outage-notification.png) | ![img](images/en/itassist/event-specific-relevant-info-articles.png) |
 | ---------------------------------------------------- | ------------------------------------------------------------ |
 
 ​					*Showing outage Information                                   		Showing relevant articles*
