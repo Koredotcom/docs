@@ -1952,7 +1952,7 @@ body.itAssistDocs{
 .itAssistDocs .container .contentbody tip::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/ko/itassist/info.svg);
+    background-image: url(../images/itassist/info.svg);
     background-repeat: no-repeat;
     position: absolute;
     left: 15px;
@@ -1962,7 +1962,7 @@ body.itAssistDocs{
 .itAssistDocs .container .contentbody note::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/ko/itassist/info.svg);
+    background-image: url(../images/itassist/info.svg);
     background-repeat: no-repeat;
     position: absolute;
     left: 15px;
@@ -1972,7 +1972,7 @@ body.itAssistDocs{
 .itAssistDocs .container .contentbody warning::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/ko/itassist/warning.svg);
+    background-image: url(../images/itassist/bulb.svg);
     background-repeat: no-repeat;
     /* background-position: right center; */
     position: absolute;
