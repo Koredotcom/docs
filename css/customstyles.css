@@ -1510,7 +1510,7 @@ body.platformDocs{
 .platformDocs .container .rightContent{
     width: 100%;
     padding-top: 15px;
-    padding-right: 250px;
+    padding-right: 260px;
     overflow: auto;
     height: calc(100vh - 80px);
 }
@@ -1556,16 +1556,20 @@ body.platformDocs{
     left: 15px;
     top: 20px;
     color: #155724;
+    width: 16px;
+    height: 16px;
 }
 .platformDocs .container .contentbody note::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/info.svg);
+    background-image: url(../images/warning.svg);
     background-repeat: no-repeat;
     position: absolute;
     left: 15px;
     top: 20px;
     color: #806D16;
+    width: 16px;
+    height: 16px;
 }
 .platformDocs .container .contentbody warning::before{
     content: '';
@@ -1577,6 +1581,8 @@ body.platformDocs{
     left: 15px;
     top: 20px;
     color: #FBC4C4;
+    width: 16px;
+    height: 16px;
 }
 .platformDocs .container .contentbody warning{
     background-color:#FBC4C4;
@@ -1949,7 +1955,7 @@ body.itAssistDocs{
 .itAssistDocs .container .rightContent{
     width: 100%;
     padding-top: 15px;
-    padding-right: 250px;
+    padding-right: 260px;
     overflow: auto;
     height: calc(100vh - 80px);
 }
@@ -1991,16 +1997,20 @@ body.itAssistDocs{
     left: 15px;
     top: 20px;
     color: #155724;
+    width: 16px;
+    height: 16px;
 }
 .itAssistDocs .container .contentbody note::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/info.svg);
+    background-image: url(../images/warning.svg);
     background-repeat: no-repeat;
     position: absolute;
     left: 15px;
     top: 20px;
     color: #806D16;
+    width: 16px;
+    height: 16px;
 }
 .itAssistDocs .container .contentbody warning::before{
     content: '';
@@ -2012,6 +2022,8 @@ body.itAssistDocs{
     left: 15px;
     top: 20px;
     color: #FBC4C4;
+    width: 16px;
+    height: 16px;
 }
 .itAssistDocs .container .contentbody note a{
     text-decoration: underline;
@@ -2387,7 +2399,7 @@ body.smartassistDocs{
 .smartassistDocs .container .rightContent{
     width: 100%;
     padding-top: 15px;
-    padding-right: 250px;
+    padding-right: 260px;
     overflow: auto;
     height: calc(100vh - 80px);
 }
@@ -2424,12 +2436,14 @@ body.smartassistDocs{
 .smartassistDocs .container .contentbody note::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/info.svg);
+    background-image: url(../images/warning.svg);
     background-repeat: no-repeat;
     position: absolute;
     left: 15px;
     top: 20px;
     color: #806D16;
+    width: 16px;
+    height: 16px;
 }
 .smartassistDocs .container .contentbody warning::before{
     content: '';
@@ -2441,6 +2455,8 @@ body.smartassistDocs{
     left: 15px;
     top: 20px;
     color: #FBC4C4;
+    width: 16px;
+    height: 16px;
 }
 .smartassistDocs .container .contentbody note{
     background-color:#FFFBEA;
@@ -2449,6 +2465,8 @@ body.smartassistDocs{
     color: #806D16;
     display: block;
     position: relative;
+    width: 16px;
+    height: 16px;
 }
 .smartassistDocs .container .contentbody note a{
     text-decoration: underline;
@@ -2825,7 +2843,7 @@ body.searchassistDocs{
 .searchassistDocs .container .rightContent{
     width: 100%;
     padding-top: 15px;
-    padding-right: 250px;
+    padding-right: 260px;
     overflow: auto;
     height: calc(100vh - 80px);
 }
@@ -2870,16 +2888,20 @@ body.searchassistDocs{
     left: 15px;
     top: 20px;
     color: #155724;
+    width: 16px;
+    height: 16px;
 }
 .searchassistDocs .container .contentbody note::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/info.svg);
+    background-image: url(../images/warning.svg);
     background-repeat: no-repeat;
     position: absolute;
     left: 15px;
     top: 20px;
     color: #806D16;
+    width: 16px;
+    height: 16px;
 }
 .searchassistDocs .container .contentbody warning::before{
     content: '';
@@ -2891,6 +2913,8 @@ body.searchassistDocs{
     left: 15px;
     top: 20px;
     color: #FBC4C4;
+    width: 16px;
+    height: 16px;
 }
 .searchassistDocs .container .contentbody warning{
     background-color:#FBC4C4;
