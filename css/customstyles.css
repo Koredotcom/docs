@@ -1525,38 +1525,38 @@ body.platformDocs{
     padding: 10px;
 }
 
-.platformDocs .container .contentbody success{
+.platformDocs .container .contentbody tip{
     background-color:#D4EDDA;
     border-radius: 4px;
     padding: 15px;
     color: #155724;
     display: block;
 }
-.platformDocs .container .contentbody success a{
+.platformDocs .container .contentbody tip a{
     text-decoration: underline;
 }
-.platformDocs .container .contentbody warning{
+.platformDocs .container .contentbody note{
     background-color:#FFFBEA;
     border-radius: 4px;
     padding: 15px;
     color: #806D16;
     display: block;
 }
-.platformDocs .container .contentbody warning a{
+.platformDocs .container .contentbody note a{
     text-decoration: underline;
 }
 
-.platformDocs .container .contentbody danger{
+.platformDocs .container .contentbody warning{
     background-color:#FBC4C4;
     border-radius: 4px;
     padding: 15px;
     color: #202427;
     display: block;
 }
-.platformDocs .container .contentbody danger span{
+.platformDocs .container .contentbody warning span{
     font-style: italic;
 }
-.platformDocs .container .contentbody danger a{
+.platformDocs .container .contentbody warning a{
     text-decoration: underline;
 }
 /*---mobile---*/
@@ -1930,38 +1930,38 @@ body.itAssistDocs{
 .itAssistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li{
     padding: 10px;
 }
-.itAssistDocs .container .contentbody success{
+.itAssistDocs .container .contentbody tip{
     background-color:#D4EDDA;
     border-radius: 4px;
     padding: 15px;
     color: #155724;
     display: block;
 }
-.itAssistDocs .container .contentbody success a{
+.itAssistDocs .container .contentbody tip a{
     text-decoration: underline;
 }
-.itAssistDocs .container .contentbody warning{
+.itAssistDocs .container .contentbody note{
     background-color:#FFFBEA;
     border-radius: 4px;
     padding: 15px;
     color: #806D16;
     display: block;
 }
-.itAssistDocs .container .contentbody warning a{
+.itAssistDocs .container .contentbody note a{
     text-decoration: underline;
 }
 
-.itAssistDocs .container .contentbody danger{
+.itAssistDocs .container .contentbody warning{
     background-color:#FBC4C4;
     border-radius: 4px;
     padding: 15px;
     color: #202427;
     display: block;
 }
-.itAssistDocs .container .contentbody danger span{
+.itAssistDocs .container .contentbody warning span{
     font-style: italic;
 }
-.itAssistDocs .container .contentbody danger a{
+.itAssistDocs .container .contentbody warning a{
     text-decoration: underline;
 }
 /*---mobile---*/
@@ -2334,38 +2334,38 @@ body.smartassistDocs{
 .smartassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li{
     padding: 10px;
 }
-.smartassistDocs .container .contentbody success{
+.smartassistDocs .container .contentbody tip{
     background-color:#D4EDDA;
     border-radius: 4px;
     padding: 15px;
     color: #155724;
     display: block;
 }
-.smartassistDocs .container .contentbody success a{
+.smartassistDocs .container .contentbody tip a{
     text-decoration: underline;
 }
-.smartassistDocs .container .contentbody warning{
+.smartassistDocs .container .contentbody note{
     background-color:#FFFBEA;
     border-radius: 4px;
     padding: 15px;
     color: #806D16;
     display: block;
 }
-.smartassistDocs .container .contentbody warning a{
+.smartassistDocs .container .contentbody note a{
     text-decoration: underline;
 }
 
-.smartassistDocs .container .contentbody danger{
+.smartassistDocs .container .contentbody warning{
     background-color:#FBC4C4;
     border-radius: 4px;
     padding: 15px;
     color: #202427;
     display: block;
 }
-.smartassistDocs .container .contentbody danger span{
+.smartassistDocs .container .contentbody warning span{
     font-style: italic;
 }
-.smartassistDocs .container .contentbody danger a{
+.smartassistDocs .container .contentbody warning a{
     text-decoration: underline;
 }
 /*---mobile---*/
@@ -2739,38 +2739,38 @@ body.searchassistDocs{
 .searchassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li{
     padding: 10px;
 }
-.searchassistDocs .container .contentbody success{
+.searchassistDocs .container .contentbody tip{
     background-color:#D4EDDA;
     border-radius: 4px;
     padding: 15px;
     color: #155724;
     display: block;
 }
-.searchassistDocs .container .contentbody success a{
+.searchassistDocs .container .contentbody tip a{
     text-decoration: underline;
 }
-.searchassistDocs .container .contentbody warning{
+.searchassistDocs .container .contentbody note{
     background-color:#FFFBEA;
     border-radius: 4px;
     padding: 15px;
     color: #806D16;
     display: block;
 }
-.searchassistDocs .container .contentbody warning a{
+.searchassistDocs .container .contentbody note a{
     text-decoration: underline;
 }
 
-.searchassistDocs .container .contentbody danger{
+.searchassistDocs .container .contentbody warning{
     background-color:#FBC4C4;
     border-radius: 4px;
     padding: 15px;
     color: #202427;
     display: block;
 }
-.searchassistDocs .container .contentbody danger span{
+.searchassistDocs .container .contentbody warning span{
     font-style: italic;
 }
-.searchassistDocs .container .contentbody danger a{
+.searchassistDocs .container .contentbody warning a{
     text-decoration: underline;
 }
 /*---mobile---*/
@@ -2876,7 +2876,3 @@ body.searchassistDocs{
   /*---mobile---*/
 /*----SEARCH ASSIST ---*/
 
-.itAssistDocs .container .contentbody warning  img{
-    width: 40px;
-    height: 49px;
-}
