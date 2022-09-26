@@ -8,19 +8,19 @@ permalink: en/itassist/Analyse
 ###### Action Task
 
 
-<success> **Success:**  This is a success Info </success>
+<tip> **Success:**  This is a success Info </tip>
 
 
 Second line with nothing after.
 And the next line. OverviewModern businesses demand faster, simpler, and more efficient IT services management to provide a great experience to their employees and optimize their productivity. Employee experience is largely 
 
-<danger> **Danger:**  Deleted Tasks Cannot Be Restored. [here](https://duckduckgo.com). </danger>
+<warning> **Danger:**  Deleted Tasks Cannot Be Restored. [here](https://duckduckgo.com). </warning>
 
 Second line with nothing after.
 And the next line. OverviewModern businesses demand faster, simpler, and more efficient IT services management to provide a great experience to their employees and optimize their productivity. Employee experience is largely 
 
 
-<warning> **Warning:** This is a danger Info </warning>
+<note> **Warning:** This is a danger Info </note>
 
 
 
