@@ -1947,6 +1947,18 @@ body.itAssistDocs{
     color: #806D16;
     display: block;
 }
+.itAssistDocs .container .contentbody note::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/ko/itassist/expand.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 6px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
 .itAssistDocs .container .contentbody note a{
     text-decoration: underline;
 }
