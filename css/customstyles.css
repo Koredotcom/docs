@@ -1933,9 +1933,10 @@ body.itAssistDocs{
 .itAssistDocs .container .contentbody tip{
     background-color:#D4EDDA;
     border-radius: 4px;
-    padding: 15px;
+    padding: 15px 15px 15px 30px;
     color: #155724;
     display: block;
+    position: relative;
 }
 .itAssistDocs .container .contentbody tip a{
     text-decoration: underline;
@@ -1943,21 +1944,41 @@ body.itAssistDocs{
 .itAssistDocs .container .contentbody note{
     background-color:#FFFBEA;
     border-radius: 4px;
-    padding: 15px;
+    padding: 15px 15px 15px 30px;
     color: #806D16;
     display: block;
+    position: relative;
+}
+.itAssistDocs .container .contentbody tip::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/ko/itassist/info.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    color: #155724;
 }
 .itAssistDocs .container .contentbody note::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/ko/itassist/expand.png);
+    background-image: url(../images/ko/itassist/info.svg);
     background-repeat: no-repeat;
-    background-position: right center;
-    width: 6px;
-    height: 10px;
     position: absolute;
-    right: 0;
-    top: 12px;
+    left: 15px;
+    top: 20px;
+    color: #806D16;
+}
+.itAssistDocs .container .contentbody warning::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/ko/itassist/warning.svg);
+    background-repeat: no-repeat;
+    /* background-position: right center; */
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    color: #FBC4C4;
 }
 .itAssistDocs .container .contentbody note a{
     text-decoration: underline;
@@ -1966,9 +1987,10 @@ body.itAssistDocs{
 .itAssistDocs .container .contentbody warning{
     background-color:#FBC4C4;
     border-radius: 4px;
-    padding: 15px;
+    padding: 15px 15px 15px 30px;
     color: #202427;
     display: block;
+    position: relative;
 }
 .itAssistDocs .container .contentbody warning span{
     font-style: italic;
