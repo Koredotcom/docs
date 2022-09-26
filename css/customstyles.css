@@ -1550,7 +1550,7 @@ body.platformDocs{
 .platformDocs .container .contentbody tip::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/info.svg);
+    background-image: url(../images/bulb.svg);
     background-repeat: no-repeat;
     position: absolute;
     left: 15px;
@@ -1574,7 +1574,7 @@ body.platformDocs{
 .platformDocs .container .contentbody warning::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/bulb.svg);
+    background-image: url(../images/warning.svg);
     background-repeat: no-repeat;
     /* background-position: right center; */
     position: absolute;
@@ -1991,7 +1991,7 @@ body.itAssistDocs{
 .itAssistDocs .container .contentbody tip::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/info.svg);
+    background-image: url(../images/bulb.svg);
     background-repeat: no-repeat;
     position: absolute;
     left: 15px;
@@ -2015,7 +2015,7 @@ body.itAssistDocs{
 .itAssistDocs .container .contentbody warning::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/bulb.svg);
+    background-image: url(../images/warning.svg);
     background-repeat: no-repeat;
     /* background-position: right center; */
     position: absolute;
@@ -2426,7 +2426,7 @@ body.smartassistDocs{
 .smartassistDocs .container .contentbody tip::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/info.svg);
+    background-image: url(../images/bulb.svg);
     background-repeat: no-repeat;
     position: absolute;
     left: 15px;
@@ -2448,7 +2448,7 @@ body.smartassistDocs{
 .smartassistDocs .container .contentbody warning::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/bulb.svg);
+    background-image: url(../images/warning.svg);
     background-repeat: no-repeat;
     /* background-position: right center; */
     position: absolute;
@@ -2882,7 +2882,7 @@ body.searchassistDocs{
 .searchassistDocs .container .contentbody tip::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/info.svg);
+    background-image: url(../images/bulb.svg);
     background-repeat: no-repeat;
     position: absolute;
     left: 15px;
@@ -2906,7 +2906,7 @@ body.searchassistDocs{
 .searchassistDocs .container .contentbody warning::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/bulb.svg);
+    background-image: url(../images/warning.svg);
     background-repeat: no-repeat;
     /* background-position: right center; */
     position: absolute;
