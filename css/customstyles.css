@@ -1525,10 +1525,10 @@ body.platformDocs{
     padding: 10px;
 }
 .platformDocs .container .contentbody info{
-    background-color:#D4EDDA;
+    background-color:#F3F8FF;
     border-radius: 4px;
     padding: 15px 15px 15px 40px;
-    color: #155724;
+    color: #07377F;
     display: block;
     position: relative;
 }
@@ -1992,10 +1992,10 @@ body.itAssistDocs{
     padding: 10px;
 }
 .itAssistDocs .container .contentbody info{
-    background-color:#D4EDDA;
+    background-color:#F3F8FF;
     border-radius: 4px;
     padding: 15px 15px 15px 40px;
-    color: #155724;
+    color: #07377F;
     display: block;
     position: relative;
 }
@@ -2459,10 +2459,10 @@ body.smartassistDocs{
     padding: 10px;
 }
 .smartassistDocs .container .contentbody info{
-    background-color:#D4EDDA;
+    background-color:#F3F8FF;
     border-radius: 4px;
     padding: 15px 15px 15px 40px;
-    color: #155724;
+    color: #07377F;
     display: block;
     position: relative;
 }
@@ -2926,10 +2926,10 @@ body.searchassistDocs{
     padding: 10px;
 }
 .searchassistDocs .container .contentbody info{
-    background-color:#D4EDDA;
+    background-color:#F3F8FF;
     border-radius: 4px;
     padding: 15px 15px 15px 40px;
-    color: #155724;
+    color: #07377F;
     display: block;
     position: relative;
 }
