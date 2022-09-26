@@ -8,7 +8,7 @@ permalink: en/itassist/Analyse
 ###### Action Task
 
 
-<tip> **Tip:**  This is a success Info </tip>
+<tip> **Tip:**  This is a tip Info </tip>
 
 
 Second line with nothing after.
@@ -20,8 +20,8 @@ Second line with nothing after.
 And the next line. OverviewModern businesses demand faster, simpler, and more efficient IT services management to provide a great experience to their employees and optimize their productivity. Employee experience is largely 
 
 
-<note> **Note:** This is a danger Info </note>
+<note> **Note:** This is a note Info </note>
 
 
 
-<warning> ![sample](images/en/itassist/bulb.png) **Warning:** This is a danger Info </warning>
+<warning> ![sample](images/en/itassist/bulb.png) **Warning:** This is a warning Info </warning>
