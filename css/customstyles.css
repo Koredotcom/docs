@@ -1528,9 +1528,10 @@ body.platformDocs{
 .platformDocs .container .contentbody tip{
     background-color:#D4EDDA;
     border-radius: 4px;
-    padding: 15px;
+    padding: 15px 15px 15px 30px;
     color: #155724;
     display: block;
+    position: relative;
 }
 .platformDocs .container .contentbody tip a{
     text-decoration: underline;
@@ -1538,20 +1539,52 @@ body.platformDocs{
 .platformDocs .container .contentbody note{
     background-color:#FFFBEA;
     border-radius: 4px;
-    padding: 15px;
+    padding: 15px 15px 15px 30px;
     color: #806D16;
     display: block;
+    position: relative;
 }
 .platformDocs .container .contentbody note a{
     text-decoration: underline;
 }
-
+.platformDocs .container .contentbody tip::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/info.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    color: #155724;
+}
+.platformDocs .container .contentbody note::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/info.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    color: #806D16;
+}
+.platformDocs .container .contentbody warning::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/bulb.svg);
+    background-repeat: no-repeat;
+    /* background-position: right center; */
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    color: #FBC4C4;
+}
 .platformDocs .container .contentbody warning{
     background-color:#FBC4C4;
     border-radius: 4px;
-    padding: 15px;
+    padding: 15px 15px 15px 30px;
     color: #202427;
     display: block;
+    position: relative;
 }
 .platformDocs .container .contentbody warning span{
     font-style: italic;
@@ -1952,7 +1985,7 @@ body.itAssistDocs{
 .itAssistDocs .container .contentbody tip::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/itassist/info.svg);
+    background-image: url(../images/info.svg);
     background-repeat: no-repeat;
     position: absolute;
     left: 15px;
@@ -1962,7 +1995,7 @@ body.itAssistDocs{
 .itAssistDocs .container .contentbody note::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/itassist/info.svg);
+    background-image: url(../images/info.svg);
     background-repeat: no-repeat;
     position: absolute;
     left: 15px;
@@ -1972,7 +2005,7 @@ body.itAssistDocs{
 .itAssistDocs .container .contentbody warning::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/itassist/bulb.svg);
+    background-image: url(../images/bulb.svg);
     background-repeat: no-repeat;
     /* background-position: right center; */
     position: absolute;
@@ -2371,19 +2404,51 @@ body.smartassistDocs{
 .smartassistDocs .container .contentbody tip{
     background-color:#D4EDDA;
     border-radius: 4px;
-    padding: 15px;
+    padding: 15px 15px 15px 30px;
     color: #155724;
-    display: block;
+    display: block;position: relative;
 }
 .smartassistDocs .container .contentbody tip a{
     text-decoration: underline;
 }
+.smartassistDocs .container .contentbody tip::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/info.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    color: #155724;
+}
+.smartassistDocs .container .contentbody note::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/info.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    color: #806D16;
+}
+.smartassistDocs .container .contentbody warning::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/bulb.svg);
+    background-repeat: no-repeat;
+    /* background-position: right center; */
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    color: #FBC4C4;
+}
 .smartassistDocs .container .contentbody note{
     background-color:#FFFBEA;
     border-radius: 4px;
-    padding: 15px;
+    padding: 15px 15px 15px 30px;
     color: #806D16;
     display: block;
+    position: relative;
 }
 .smartassistDocs .container .contentbody note a{
     text-decoration: underline;
@@ -2392,9 +2457,10 @@ body.smartassistDocs{
 .smartassistDocs .container .contentbody warning{
     background-color:#FBC4C4;
     border-radius: 4px;
-    padding: 15px;
+    padding: 15px 15px 15px 30px;
     color: #202427;
     display: block;
+    position: relative;
 }
 .smartassistDocs .container .contentbody warning span{
     font-style: italic;
@@ -2776,9 +2842,10 @@ body.searchassistDocs{
 .searchassistDocs .container .contentbody tip{
     background-color:#D4EDDA;
     border-radius: 4px;
-    padding: 15px;
+    padding: 15px 15px 15px 30px;
     color: #155724;
     display: block;
+    position: relative;
 }
 .searchassistDocs .container .contentbody tip a{
     text-decoration: underline;
@@ -2786,20 +2853,52 @@ body.searchassistDocs{
 .searchassistDocs .container .contentbody note{
     background-color:#FFFBEA;
     border-radius: 4px;
-    padding: 15px;
+    padding: 15px 15px 15px 30px;
     color: #806D16;
     display: block;
+    position: relative;
 }
 .searchassistDocs .container .contentbody note a{
     text-decoration: underline;
 }
-
+.searchassistDocs .container .contentbody tip::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/info.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    color: #155724;
+}
+.searchassistDocs .container .contentbody note::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/info.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    color: #806D16;
+}
+.searchassistDocs .container .contentbody warning::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/bulb.svg);
+    background-repeat: no-repeat;
+    /* background-position: right center; */
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    color: #FBC4C4;
+}
 .searchassistDocs .container .contentbody warning{
     background-color:#FBC4C4;
     border-radius: 4px;
-    padding: 15px;
+    padding: 15px 15px 15px 30px;
     color: #202427;
     display: block;
+    position: relative;
 }
 .searchassistDocs .container .contentbody warning span{
     font-style: italic;
