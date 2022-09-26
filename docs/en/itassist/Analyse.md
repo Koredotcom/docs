@@ -22,6 +22,3 @@ And the next line. OverviewModern businesses demand faster, simpler, and more ef
 
 <note> **Note:** This is a note Info </note>
 
-
-
-<warning> ![sample](images/en/itassist/bulb.png) **Warning:** This is a warning Info </warning>
