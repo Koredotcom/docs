@@ -280,6 +280,15 @@ div#toc ul li {
     margin: 8px 0px 8px 22px;
     font-size: 90%;
     list-style: square;
+    position: relative;
+}
+div#toc ul li .anchorjs-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
 }
 div#toc ul li a::after{
     display: none;
@@ -298,7 +307,7 @@ div#toc ul li ul {
 }
 
 div#toc ul li ul li::before {
-    content: "–  ";
+    content: "–";
 }
 
 div#toc >ul::before {
@@ -957,8 +966,8 @@ span.soft {
 
 @media only screen and (min-width: 900px), only screen and (min-device-width: 900px) {
     .col-md-9 img {
-        max-width: 700px;
-        max-height: 700px;
+        max-width: 100%;
+        max-height: 100%;
     }
 }
 
@@ -1501,7 +1510,7 @@ body.platformDocs{
 .platformDocs .container .rightContent{
     width: 100%;
     padding-top: 15px;
-    padding-right: 250px;
+    padding-right: 260px;
     overflow: auto;
     height: calc(100vh - 80px);
 }
@@ -1514,6 +1523,102 @@ body.platformDocs{
 }
 .platformDocs .navbar .topnavlinks .navbar-collapse .navbar-right li{
     padding: 10px;
+}
+.platformDocs .container .contentbody info{
+    background-color:#F3F8FF;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #07377F;
+    display: block;
+    position: relative;
+}
+.platformDocs .container .contentbody info a{
+    text-decoration: underline;
+}
+.platformDocs .container .contentbody info::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/info.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    color: #155724;
+    width: 16px;
+    height: 16px;
+}
+.platformDocs .container .contentbody tip{
+    background-color:#D4EDDA;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #155724;
+    display: block;
+    position: relative;
+}
+.platformDocs .container .contentbody tip a{
+    text-decoration: underline;
+}
+.platformDocs .container .contentbody note{
+    background-color:#FFFBEA;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #806D16;
+    display: block;
+    position: relative;
+}
+.platformDocs .container .contentbody note a{
+    text-decoration: underline;
+}
+.platformDocs .container .contentbody tip::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/bulb.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    color: #155724;
+    width: 16px;
+    height: 16px;
+}
+.platformDocs .container .contentbody note::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/note.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 17px;
+    color: #806D16;
+    width: 16px;
+    height: 16px;
+}
+.platformDocs .container .contentbody warning::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/warning.svg);
+    background-repeat: no-repeat;
+    /* background-position: right center; */
+    position: absolute;
+    left: 15px;
+    top: 16px;
+    color: #FBC4C4;
+    width: 16px;
+    height: 16px;
+}
+.platformDocs .container .contentbody warning{
+    background-color:#FBC4C4;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #202427;
+    display: block;
+    position: relative;
+}
+.platformDocs .container .contentbody warning span{
+    font-style: italic;
+}
+.platformDocs .container .contentbody warning a{
+    text-decoration: underline;
 }
 /*---mobile---*/
 @media (min-width: 320px) and (max-width: 1200px) {
@@ -1872,7 +1977,7 @@ body.itAssistDocs{
 .itAssistDocs .container .rightContent{
     width: 100%;
     padding-top: 15px;
-    padding-right: 250px;
+    padding-right: 260px;
     overflow: auto;
     height: calc(100vh - 80px);
 }
@@ -1885,6 +1990,103 @@ body.itAssistDocs{
 }
 .itAssistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li{
     padding: 10px;
+}
+.itAssistDocs .container .contentbody info{
+    background-color:#F3F8FF;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #07377F;
+    display: block;
+    position: relative;
+}
+.itAssistDocs .container .contentbody info a{
+    text-decoration: underline;
+}
+.itAssistDocs .container .contentbody info::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/info.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    color: #155724;
+    width: 16px;
+    height: 16px;
+}
+.itAssistDocs .container .contentbody tip{
+    background-color:#D4EDDA;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #155724;
+    display: block;
+    position: relative;
+}
+.itAssistDocs .container .contentbody tip a{
+    text-decoration: underline;
+}
+.itAssistDocs .container .contentbody tip::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/bulb.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    color: #155724;
+    width: 16px;
+    height: 16px;
+}
+.itAssistDocs .container .contentbody note{
+    background-color:#FFFBEA;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #806D16;
+    display: block;
+    position: relative;
+}
+.itAssistDocs .container .contentbody note::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/note.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 17px;
+    color: #806D16;
+    width: 16px;
+    height: 16px;
+}
+.itAssistDocs .container .contentbody warning::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/warning.svg);
+    background-repeat: no-repeat;
+    /* background-position: right center; */
+    position: absolute;
+    left: 15px;
+    top: 16px;
+    color: #FBC4C4;
+    width: 16px;
+    height: 16px;
+}
+.itAssistDocs .container .contentbody note a{
+    text-decoration: underline;
+}
+
+.itAssistDocs .container .contentbody warning{
+    background-color:#FBC4C4;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #202427;
+    display: block;
+    position: relative;
+}
+.itAssistDocs .container .contentbody warning span{
+    font-style: italic;
+}
+.itAssistDocs .container .contentbody warning a{
+    text-decoration: underline;
 }
 /*---mobile---*/
 @media (min-width: 320px) and (max-width: 1200px) {
@@ -2242,7 +2444,7 @@ body.smartassistDocs{
 .smartassistDocs .container .rightContent{
     width: 100%;
     padding-top: 15px;
-    padding-right: 250px;
+    padding-right: 260px;
     overflow: auto;
     height: calc(100vh - 80px);
 }
@@ -2255,6 +2457,102 @@ body.smartassistDocs{
 }
 .smartassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li{
     padding: 10px;
+}
+.smartassistDocs .container .contentbody info{
+    background-color:#F3F8FF;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #07377F;
+    display: block;
+    position: relative;
+}
+.smartassistDocs .container .contentbody info a{
+    text-decoration: underline;
+}
+.smartassistDocs .container .contentbody info::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/info.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    color: #155724;
+    width: 16px;
+    height: 16px;
+}
+.smartassistDocs .container .contentbody tip{
+    background-color:#D4EDDA;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #155724;
+    display: block;position: relative;
+}
+.smartassistDocs .container .contentbody tip a{
+    text-decoration: underline;
+}
+.smartassistDocs .container .contentbody tip::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/bulb.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    color: #155724;
+}
+.smartassistDocs .container .contentbody note::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/note.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 17px;
+    color: #806D16;
+    width: 16px;
+    height: 16px;
+}
+.smartassistDocs .container .contentbody warning::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/warning.svg);
+    background-repeat: no-repeat;
+    /* background-position: right center; */
+    position: absolute;
+    left: 15px;
+    top: 16px;
+    color: #FBC4C4;
+    width: 16px;
+    height: 16px;
+}
+.smartassistDocs .container .contentbody note{
+    background-color:#FFFBEA;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #806D16;
+    display: block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+}
+.smartassistDocs .container .contentbody note a{
+    text-decoration: underline;
+}
+
+.smartassistDocs .container .contentbody warning{
+    background-color:#FBC4C4;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #202427;
+    display: block;
+    position: relative;
+}
+.smartassistDocs .container .contentbody warning span{
+    font-style: italic;
+}
+.smartassistDocs .container .contentbody warning a{
+    text-decoration: underline;
 }
 /*---mobile---*/
 @media (min-width: 320px) and (max-width: 1200px) {
@@ -2613,7 +2911,7 @@ body.searchassistDocs{
 .searchassistDocs .container .rightContent{
     width: 100%;
     padding-top: 15px;
-    padding-right: 250px;
+    padding-right: 260px;
     overflow: auto;
     height: calc(100vh - 80px);
 }
@@ -2626,6 +2924,102 @@ body.searchassistDocs{
 }
 .searchassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li{
     padding: 10px;
+}
+.searchassistDocs .container .contentbody info{
+    background-color:#F3F8FF;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #07377F;
+    display: block;
+    position: relative;
+}
+.searchassistDocs .container .contentbody info a{
+    text-decoration: underline;
+}
+.searchassistDocs .container .contentbody info::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/info.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    color: #155724;
+    width: 16px;
+    height: 16px;
+}
+.searchassistDocs .container .contentbody tip{
+    background-color:#D4EDDA;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #155724;
+    display: block;
+    position: relative;
+}
+.searchassistDocs .container .contentbody tip a{
+    text-decoration: underline;
+}
+.searchassistDocs .container .contentbody note{
+    background-color:#FFFBEA;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #806D16;
+    display: block;
+    position: relative;
+}
+.searchassistDocs .container .contentbody note a{
+    text-decoration: underline;
+}
+.searchassistDocs .container .contentbody tip::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/bulb.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    color: #155724;
+    width: 16px;
+    height: 16px;
+}
+.searchassistDocs .container .contentbody note::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/note.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 17px;
+    color: #806D16;
+    width: 16px;
+    height: 16px;
+}
+.searchassistDocs .container .contentbody warning::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/warning.svg);
+    background-repeat: no-repeat;
+    /* background-position: right center; */
+    position: absolute;
+    left: 15px;
+    top: 16px;
+    color: #FBC4C4;
+    width: 16px;
+    height: 16px;
+}
+.searchassistDocs .container .contentbody warning{
+    background-color:#FBC4C4;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #202427;
+    display: block;
+    position: relative;
+}
+.searchassistDocs .container .contentbody warning span{
+    font-style: italic;
+}
+.searchassistDocs .container .contentbody warning a{
+    text-decoration: underline;
 }
 /*---mobile---*/
 @media (min-width: 320px) and (max-width: 1200px) {
@@ -2729,3 +3123,4 @@ body.searchassistDocs{
   }
   /*---mobile---*/
 /*----SEARCH ASSIST ---*/
+
