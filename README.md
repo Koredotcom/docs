@@ -100,5 +100,55 @@ While writing the documentation there would be a cases where we have to display 
    
 
 
+ 
+ #### Information Templates Examples
+
+### Tip:
+ 
+ **Syntax**
+
+     <tip> **Tip:**  This is a tip Info </tip>
+
+**Demo**
+
+<img width="529" alt="image" src="https://user-images.githubusercontent.com/103113830/192445705-42f66871-f925-44e3-b450-e5640d2057b3.png">
+
+
+
+### Warning:
+
+**Syntax**
+     
+         <warning> **Warning:**  Deleted Tasks Cannot Be Restored. [here](https://duckduckgo.com). </warning>
+         
+         
+**Demo**
+
+<img width="520" alt="image" src="https://user-images.githubusercontent.com/103113830/192446568-99208cac-ad1a-4811-b15d-1e9fd84d09d4.png">
+
+
+
+### Note:
+
+ **Syntax** 
+           
+        <note> **Note:** This is a note Info </note>
+
+**Demo**
+
+ <img width="516" alt="image" src="https://user-images.githubusercontent.com/103113830/192446706-20b94d42-a016-4935-a1ce-52aef624be91.png">
+
+
+
+### Info:
+
+ **Syntax**
   
+        <info> **Info:** This is a  Info </info>
+
+
+ **Demo**
+ 
+  <img width="551" alt="image" src="https://user-images.githubusercontent.com/103113830/192446830-92001ffe-6ac6-406b-840f-b9867eb6e3d2.png">
+
   
