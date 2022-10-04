@@ -1,11 +1,9 @@
 ---
 title: Request Management
 
-permalink: en/itassist/request_management
+permalink: en/itassist/request-management
 
 ---
-
-# Request Management
 
 IT Assist helps employees search through the catalogs to request products or services on their own. IT Assist also initiates any workflows defined in the backend System of Record associated with the process for request management.
 

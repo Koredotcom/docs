@@ -1,11 +1,9 @@
 ---
 title: Ticket Reduction and Self-Serve Process
 
-permalink: en/itassist/ticket_reduction_and_self_serve_process
+permalink: en/itassist/ticket-reduction-and-self-serve-process
 
 ---
-
-# Ticket Reduction and Self-Serve Process 
 
 One of the top priorities for every service desk is to reduce the number of incoming tickets. When the number of tickets is high, it strains the support team agents leading to delays in working on critical issues and a poor employee experience. 
 

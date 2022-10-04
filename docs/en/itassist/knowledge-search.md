@@ -1,15 +1,13 @@
 ---
 title: Knowledge Search
 
-permalink: en/itassist/knowledge_search
+permalink: en/itassist/knowledge-search
 
 ---
 
-# Knowledge Search
-
 With the focus on employee experience and the self-service strategy, enterprises set up knowledge bases to help their employees find the information to their queries on their own. However, multiple channels and the vast amount of information reduces the chances of finding the right information at the right time and thereby, reduce the usability of the knowledge bases to their full potential. Knowledge search in IT Assist allows accessing articles, guides, and/or blogs relevant to a particular topic or issue that the employee is searching for, without having to use different search engines and through their commonly used channel of communication. IT Assist is capable of understanding unstructured intents, interpreting them, and giving a structured response using knowledge bases, FAQ modules, and information from other integrated third-party applications.
 
-![img](G:\My Drive\ITAssist\searching-articles-relevant-to-the-query.png)
+![img](images\en\itassist\searching-articles-relevant-to-the-query.png)
 
 ​															*Searching articles relevant to the query*
 
@@ -24,8 +22,8 @@ IT Assist can search relevant information from various sources:
 
 If IT Assist finds a relevant article in response to an employee query, it displays a featured snippet from the article along with a link to the complete article.
 
-| ![img](G:\My Drive\ITAssist\info-from-FAQ-1.png) | ![img](G:\My Drive\ITAssist\info-from-FAQ-2.png) |
-| ------------------------------------------------ | ------------------------------------------------ |
+| ![img](images\en\itassist\info-from-FAQ-1.png) | ![img](images\en\itassist\info-from-FAQ-2.png) |
+| ---------------------------------------------- | ---------------------------------------------- |
 
 ​															*Displaying relevant information from FAQs*
 

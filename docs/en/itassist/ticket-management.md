@@ -1,11 +1,9 @@
 ---
 title: Ticket Management
 
-permalink: en/itassist/ticket_management
+permalink: en/itassist/ticket-management
 
 ---
-
-# Ticket Management
 
 IT Assist can be used to manage both incident tickets and the request tickets end to end. Employees can take various actions on the tickets like view tickets, close tickets, escalate tickets, etc. If there are any updates to the tickets, IT Assist shows the updates as notifications in the chat widget.
 
@@ -28,7 +26,7 @@ Alternatively, you can also provide the ticket number and the action to be taken
 
 ​								*Actions using buttons                             			Actions using conversational message* 
 
-![img](G:\My Drive\ITAssist\actions-with-additional-input-fields.png)
+![img](images\en\itassist\actions-with-additional-input-fields.png)
 
 ​																*Actions with additional input fields*
 
@@ -45,6 +43,6 @@ IT Assist also allows creating custom workflows using *Kore’s process app* to 
 
 Any changes made to the tickets by the service team or other employees are also shown to the employee as a **notification** in IT Assist. You can learn more about Notifications [here](https://docs.google.com/document/d/1O_NP0HgupKwLae216EHm5madwR-Xk2dO/edit#heading=h.y0om16hs1skr). 
 
-![img](https://lh5.googleusercontent.com/qr0uWqaHn8SBb30FWh7RV-rzULPRw6rZ5B2dXXyPxJr_JIzcbrYSpczl-ZoMjbzuR0Od_tt8HjYK_h-3ehPp58frnIo7bpd783TeCOGC86T-kaxt8oqTT1jF7Xs8PlE3rn9T2jMgZVHGR-pTCet7FbGdOes71metBkNL5MiUO23thdqEhM4u1GTuLOFY)
+![img](images\en\itassist\ticket-update-notification.png)
 
 ​																	*Ticket update notification*

@@ -1,11 +1,9 @@
 ---
 title: Incident Management
 
-permalink: en/itassist/incident_management
+permalink: en/itassist/incident-management
 
 ---
-
-# Incident Management
 
 Incident management involves the steps to identify, analyze, and resolve issues that the employees are not able to resolve on their own using the self-serve process and hence, require incidents to be created. Incidents are tickets that the employees create to get an issue resolved. 
 

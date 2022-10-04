@@ -1,11 +1,9 @@
 ---
 title: Pre-trained FAQ Modules
 
-permalink: en/itassist/pre_trained_faq_modules
+permalink: en/itassist/pre-trained-faq-modules
 
 ---
-
-# Pre-trained FAQ Modules
 
 IT Assist includes a pre-trained ontology with generic answers to questions related to commonly used enterprise applications like Slack, MS Teams, etc.
 
@@ -22,7 +20,7 @@ The ontology also includes pre-trained general questions about an organizationâ€
 
 The FAQ Modules are built as **knowledge graphs** enabling IT Assist to perform **efficient searches**. It also makes IT Assist understand **unstructured inputs** easily and be more efficient with **indirect queries**. 
 
-![img](G:\My Drive\ITAssist\knowledge-graph.png)
+![img](images\en\itassist\knowledge-graph.png)
 
 â€‹																			*Knowledge Graph*
 
