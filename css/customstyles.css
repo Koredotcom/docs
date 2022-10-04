@@ -1726,6 +1726,7 @@ body.platformDocs{
 /*----IT ASSIST ---*/
 body.itAssistDocs{
     overflow: hidden;
+    font-family: 'Inter';
 }
 .itAssistDocs .navbar {
     height: 80px;
