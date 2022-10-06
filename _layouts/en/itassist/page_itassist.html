@@ -81,7 +81,15 @@ layout: en/itassist/itassist
             $(ulList[y]).addClass('nav');
         }
         for (var i = 0; i < lis.length; i++) {
-            if($(lis[i]).text()  ==   sessionStorage.getItem('currentActive')){
+            var detailsParent = $(lis[i]).parent().parent()[0];
+            var currActiveNode = '';
+              if(detailsParent.nodeName == 'DETAILS'){
+                currActiveNode = $(detailsParent).find('summary').text().trim().replaceAll(' ', '_')+'_'+$(lis[i]).text();
+            }
+            if(!currActiveNode){
+                currActiveNode = $(lis[i]).text();
+            }
+            if(currActiveNode ==   sessionStorage.getItem('currentActive')){
                 $(lis[i]).addClass('active');
                 var activeParents = $(lis[i]).parents();
                 activeParents.each(el=>{
@@ -97,9 +105,22 @@ layout: en/itassist/itassist
             var current = document.querySelector("#tg-sb-sidebar ul li.active");
             if(current && current.length){
               current[0].className = current[0].className.replace(" active", "");
+            }else if(current && current.className){
+               current.className = current.className.replace(" active", "");
             }
             this.className += " active";
-            sessionStorage.setItem('currentActive', $(this).text());
+            let nestedSidebarActive = '';
+            let parentDetailsNode = $(this).parent().parent()[0];
+            if(parentDetailsNode.nodeName == 'DETAILS'){
+                nestedSidebarActive = $(parentDetailsNode).find('summary').text().trim().replaceAll(' ', '_')
+            }
+            if(nestedSidebarActive){
+                nestedSidebarActive = nestedSidebarActive+'_'+$(this).text();
+            }
+            if(!nestedSidebarActive){
+                nestedSidebarActive = $(this).text();
+            }
+            sessionStorage.setItem('currentActive', nestedSidebarActive);
                 
             });
         }
