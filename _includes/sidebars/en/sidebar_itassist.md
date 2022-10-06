@@ -1,37 +1,54 @@
 
-###### GETTING STARTED_en
-- [Kore.ai XO Itassist](en/itassist/kore_xo_platform)
-- [Virtual Assistants Overview](en/itassist/virtual_assistant_overview)
-- [Natural Language Processing (NLP)](https://duckduckgo.com)
-- [Concepts and Terminology](https://duckduckgo.com)
+###### GETTING STARTED
+
+- [Overview](en/itassist/overview#overview)
+
+- [Out-of-box Capabilities](en/itassist/out-of-box-capabilities)
+
+- [Integrations](en/itassist/integrations)
+
+- [Managing IT Assist](en/itassist/managing-it-assist)
+
+- [Glossary](en/itassist/glossary)
+
+###### USER GUIDE
+
+- [Sign In](en/itassist/sign-in)
+
+- [Access Management](en/itassist/access-management)
+
+- [Ticket Reduction & Self-Serve Process](en/itassist/ticket-reduction-and-self-serve-process)
+
+- [Employee_Self_Service_Activities](en/itassist/employee-self-service-activities)
+
+- [Incident Management](en/itassist/incident-management)
+
+- [Request Management](en/itassist/request-management)
+
+- [Ticket Management](en/itassist/ticket-management)
+
+- [Manager Approvals](en/itassist/manager-approvals)
+
+- [Notifications](en/itassist/notifications)
+
+- [Outage Reports](en/itassist/outage-reports)
+  
+<details >
+  <summary>Knowledge Search
+  </summary>
+
+  - [About](en/itassist/knowledge-search)
+  - [Features](en/itassist/knowledge-search#features)
+
+  </details>
+
+- [Pre Trained FAQ Modules](en/itassist/pre-trained-faq-modules)
 
 <details >
-  <summary>Quick Start Guide_en
+  <summary>Talk to Agents
   </summary>
 
-  - [Accessing the Platform](en/itassist/Accessing%20The%20Platform)
-  - [Working with the Builder](https://duckduckgo.com)
-  - [Using Workspaces](https://duckduckgo.com)
-
-  </details>
-
-  ###### CONCEPTS
-
-  <details >
-  <summary>Design
-  </summary>
-
-  - [Storyboard](en/itassist/Storyboard)
-  - [Task](en/itassist/Task)
-
-   <details >
-  <summary>Dialog Tasks
-  </summary>
-  
-  - [Overview](https://duckduckgo.com)
-  - [Dialog Builder](https://duckduckgo.com)
-  - [Knowledge Graph](https://duckduckgo.com)
-
-  </details>
+  - [About](en/itassist/talk-to-agent)
+  - [Configuration](en/itassist/talk-to-agent#configuration)
 
   </details>
