@@ -10,7 +10,7 @@ Modern businesses demand faster, simpler, and more efficient IT services managem
 
 IT Assist is an AI-powered all-in-one solution that provides a customizable virtual assistant to handle various IT needs, from access management and request management to incident management and more. The IT Assist virtual assistant is an interactive tool that can be integrated seamlessly with any preferred channel of communication, making it easier and more effective for the employees to ask questions, raise issues, and obtain personalized solutions. 
 
-![IT Assist integrated with MS Teams](images\en\itassist\itassist-integrated-with-ms-teams.png)
+![IT Assist integrated with MS Teams](images/en/itassist/itassist-integrated-with-ms-teams.png)
 
 The advanced AI technology allows it to have human-like abilities to understand the context better and resolve issues quickly. IT Assist can initiate tasks and workflows by simple conversational messages, with the click of a button, using sentiments or expressions in the chat, or by mentioning an explicit intent in the chat. IT Assist can also be pre-trained to understand your workplace lingo and jargon.
 

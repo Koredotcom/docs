@@ -11,7 +11,7 @@ IT Assist notification framework allows employees to receive updates and announc
 
 For example, if a request ticket is created by an employee and it requires approval from the manager, the update is immediately shown to the manager as a notification in the IT Assist chat widget. Whenever the manager takes any action on the request, like approving or denying the request, the update is again displayed to the employee as a notification.
 
-| ![img](images\en\itassist\approval-notification-to-manager.png) | ![img](images\en\itassist\approval-update-to-the-employee.png) |
+| ![img](images/en/itassist/approval-notification-to-manager.png) | ![img](images/en/itassist/approval-update-to-the-employee.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 ​	   			*Approval notification to manager	                       		  Approval update to the employee*
@@ -28,13 +28,13 @@ IT Assist is capable of handling two types of notifications:
 
 - **Broadcast notifications**: These types of notifications are useful when the message is to be sent to a large group of employees, like the company announcements for an upgrade, mandatory training, or new security policy, etc. Broadcast messages can be sent to all the employees of the organization or the employees of a particular department.
 
-![img](images\en\itassist\broadcast-message.png)
+![img](images/en/itassist/broadcast-message.png)
 
 ​																					*Broadcast message*
 
 - **User-specific notifications**: These notifications are specific to a particular employee and only displayed to the same employee. These notifications can be sent either using the employee id or the email address of the employee. For example, displaying a notification to the employee when there is an update to any of his tickets or when there is a pending action item for the employee.
 
-| ![img](images\en\itassist\user-specific-notification-request-approval.png) | ![img](images\en\itassist\user-specific-notification-ticket-update.png) |
+| ![img](images/en/itassist/user-specific-notification-request-approval.png) | ![img](images/en/itassist/user-specific-notification-ticket-update.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 ​	*User-specific notification - request approval            			User-specific notification - ticket update*

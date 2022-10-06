@@ -20,7 +20,7 @@ Every organization has its own set of requirements ranging from how the assistan
 
 Workbench manages the assistant from personalization to testing and deployment. On a high level, an IT Assist admin can perform the following tasks using Workbench.  
 
-![img](images\en\itassist\workbench-tasks.png)
+![img](images/en/itassist/workbench-tasks.png)
 
 ​																				*Workbench tasks*
 

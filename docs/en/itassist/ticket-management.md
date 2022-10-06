@@ -26,7 +26,7 @@ Alternatively, you can also provide the ticket number and the action to be taken
 
 ​								*Actions using buttons                             			Actions using conversational message* 
 
-![img](images\en\itassist\actions-with-additional-input-fields.png)
+![img](images/en/itassist/actions-with-additional-input-fields.png)
 
 ​																*Actions with additional input fields*
 
@@ -43,6 +43,6 @@ IT Assist also allows creating custom workflows using *Kore’s process app* to 
 
 Any changes made to the tickets by the service team or other employees are also shown to the employee as a **notification** in IT Assist. You can learn more about Notifications [here](https://docs.google.com/document/d/1O_NP0HgupKwLae216EHm5madwR-Xk2dO/edit#heading=h.y0om16hs1skr). 
 
-![img](images\en\itassist\ticket-update-notification.png)
+![img](images/en/itassist/ticket-update-notification.png)
 
 ​																	*Ticket update notification*

@@ -20,7 +20,7 @@ The ontology also includes pre-trained general questions about an organizationâ€
 
 The FAQ Modules are built as **knowledge graphs** enabling IT Assist to perform **efficient searches**. It also makes IT Assist understand **unstructured inputs** easily and be more efficient with **indirect queries**. 
 
-![img](images\en\itassist\knowledge-graph.png)
+![img](images/en/itassist/knowledge-graph.png)
 
 â€‹																			*Knowledge Graph*
 

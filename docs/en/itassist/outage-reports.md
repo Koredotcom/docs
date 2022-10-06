@@ -11,7 +11,7 @@ IT Assist handles such scenarios very efficiently by searching through the plann
 
 IT Assist can provide a list of all the outages at once or can display information about a relevant outage in case of a specific query.
 
-| ![img](images\en\itassist\list-of-outages.png) | ![img](images\en\itassist\specific-outage-information.png) |
+| ![img](images/en/itassist/list-of-outages.png) | ![img](images/en/itassist/specific-outage-information.png) |
 | ---------------------------------------------- | ---------------------------------------------------------- |
 
 ​								*List of outages					 											Specific outage information*

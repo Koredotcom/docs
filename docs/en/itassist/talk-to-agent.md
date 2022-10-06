@@ -7,7 +7,7 @@ permalink: en/itassist/talk-to-agent
 
 IT Assist provides a lot of self-help and ticketing features. However, there can be times when the employee issue is too complex for the virtual assistant or it is something critical and needs immediate attention. For such situations, IT Assist provides a simple interface to connect to live agents from the service team. The conversation is handed over from the virtual assistant to a live agent **seamlessly** and **contextually** using an Agent Desktop present in the system of record, such as SNOW, SAP, Salesforce, etc. 
 
-![img](images\en\itassist\connecting-to-live-agent.png)
+![img](images/en/itassist/connecting-to-live-agent.png)
 
 ​																			*Connecting to live agent*
 

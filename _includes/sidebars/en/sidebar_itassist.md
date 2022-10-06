@@ -19,7 +19,7 @@
 
 - [Ticket Reduction & Self-Serve Process](en/itassist/ticket-reduction-and-self-serve-process)
 
-- [Employee_Self_Service_Activities](en/itassist/employee-self-service-activities)
+- [Employee Self Service Activities](en/itassist/employee-self-service-activities)
 
 - [Incident Management](en/itassist/incident-management)
 
