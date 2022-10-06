@@ -1259,6 +1259,7 @@ h4.panel-title {
 /*----PLATFORM ---*/
 body.platformDocs{
     overflow: hidden;
+    font-family: 'Inter', 'Open Sans', sans-serif;
 }
 .platformDocs .navbar {
     height: 80px;
@@ -1726,6 +1727,7 @@ body.platformDocs{
 /*----IT ASSIST ---*/
 body.itAssistDocs{
     overflow: hidden;
+    font-family: 'Inter', 'Open Sans', sans-serif;
 }
 .itAssistDocs .navbar {
     height: 80px;
@@ -2193,6 +2195,7 @@ body.itAssistDocs{
 /*----SMART ASSIST ---*/
 body.smartassistDocs{
     overflow: hidden;
+    font-family: 'Inter', 'Open Sans', sans-serif;
 }
 .smartassistDocs .navbar {
     height: 80px;
@@ -2659,6 +2662,7 @@ body.smartassistDocs{
 /*----SEARCH ASSIST ---*/
 body.searchassistDocs{
     overflow: hidden;
+    font-family: 'Inter', 'Open Sans', sans-serif;
 }
 .searchassistDocs .navbar {
     height: 80px;
