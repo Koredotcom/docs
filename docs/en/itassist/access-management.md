@@ -2,11 +2,9 @@
 
 title: Access Management
 
-permalink: en/itassist/access_management
+permalink: en/itassist/access-management
 
 ---
-
-# Access Management
 
 Employees today use a plethora of applications, and managing accounts and passwords for these applications is a real problem for the employees. Even when single sign-on solutions are used, the security policies mandate the users to update passwords regularly. One of the common challenges in access management for both employees and administrators is password and account management. Sometimes identifying the issues whether the account has been locked or the password needs to be reset causes unnecessary delays. This can lead to diminished employee productivity if they spend time trying to reset passwords or manage constantly changing passwords. 
 
@@ -37,7 +35,7 @@ Employees are often locked out of their accounts due to various reasons. IT Assi
 Some Identity providers mandate the passwords to be updated at regular intervals. In such cases, IT Assist can be configured to proactively send password reset reminders as per the security policies. If the Identity Provider allows, IT Assist can perform regular password health checks and display appropriate reminders to the employees, as required.
 
  ![img](images/en/itassist/password-reset-reminder.png)
- 
+
 
 ​																	*Password Reset Reminder*
 

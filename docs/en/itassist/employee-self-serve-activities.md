@@ -1,13 +1,9 @@
 ---
 title: Employee Self-service Activities
 
-permalink: en/itassist/employee_self_service_activities
+permalink: en/itassist/employee-self-service-activities
 
 ---
-
-# Employee Self-service Activities
-
-
 
 ![img](images/en/itassist/employee-self-serve-activities.png)
 

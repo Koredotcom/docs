@@ -1,11 +1,9 @@
 ---
 title: Outage Reports
 
-permalink: en/itassist/outage_reports
+permalink: en/itassist/outage-reports
 
 ---
-
-# Outage Reports
 
 In all organizations, we often see different software applications undergoing some downtime for sending upgrades, fixing issues, etc. These outages/downtimes are usually planned well in advance but can sometimes be ad hoc too in emergency situations. Such situations, when an application is not working as expected, are bound to raise many queries and tickets by the employees. The tickets are not only redundant but also do not need specific resolutions by the service desk. At the same time, lack of relevant information for the employees causes unnecessary delays.
 
@@ -13,8 +11,8 @@ IT Assist handles such scenarios very efficiently by searching through the plann
 
 IT Assist can provide a list of all the outages at once or can display information about a relevant outage in case of a specific query.
 
-| ![img](G:\My Drive\ITAssist\list-of-outages.png) | ![img](G:\My Drive\ITAssist\specific-outage-information.png) |
-| ------------------------------------------------ | ------------------------------------------------------------ |
+| ![img](images/en/itassist/list-of-outages.png) | ![img](images/en/itassist/specific-outage-information.png) |
+| ---------------------------------------------- | ---------------------------------------------------------- |
 
 ​								*List of outages					 											Specific outage information*
 

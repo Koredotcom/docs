@@ -5,8 +5,6 @@ permalink: en/itassist/glossary
 
 ---
 
-# Glossary
-
 | Terminology                       | Description                                                  |
 | --------------------------------- | ------------------------------------------------------------ |
 | Intent                            | Intent or Intention describes the ultimate goal or motive of a user interacting with the virtual assistant. |
