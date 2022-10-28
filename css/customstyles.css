@@ -709,7 +709,7 @@ button.cursorNorm {
 h2  {
     /* font-size:24px;
     line-height:29px; */
-    color: #85B7FE;
+    color: #07377F;
     font-size: 20px;
     margin: 0;
     padding-top: 20px;
@@ -1389,7 +1389,7 @@ body.platformDocs{
     display: none;
 }
 .platformDocs .navbar .topnavlinks .navbar-header .navbar-brand .projectTitle .attachment-large{
-    width: 118px;
+    width: 160px;
     margin-right: 1.4rem;
 }
 .platformDocs .container {
@@ -1857,7 +1857,7 @@ body.itAssistDocs{
     display: none;
 }
 .itAssistDocs .navbar .topnavlinks .navbar-header .navbar-brand .projectTitle .attachment-large{
-    width: 118px;
+    width: 160px;
     margin-right: 1.4rem;
 }
 .itAssistDocs .container {
@@ -2325,7 +2325,7 @@ body.smartassistDocs{
     display: none;
 }
 .smartassistDocs .navbar .topnavlinks .navbar-header .navbar-brand .projectTitle .attachment-large{
-    width: 118px;
+    width: 200px;
     margin-right: 1.4rem;
 }
 .smartassistDocs .container {
@@ -2792,7 +2792,7 @@ body.searchassistDocs{
     display: none;
 }
 .searchassistDocs .navbar .topnavlinks .navbar-header .navbar-brand .projectTitle .attachment-large{
-    width: 118px;
+    width: 200px;
     margin-right: 1.4rem;
 }
 .searchassistDocs .container {

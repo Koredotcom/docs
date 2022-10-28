@@ -78,5 +78,37 @@
     }
 
     render[settings.showEffect]();
+
+    document.getElementById('tg-sb-content').addEventListener("scroll", function(event){
+      console.log('scrolling..')
+      onscrollevent()
+    });
+
+    function onscrollevent(){
+      var mainSection = document.querySelectorAll('.top-level-header');
+
+      mainSection.forEach((v,i)=> {
+          if(v && v.getBoundingClientRect()){
+              let rect = v.getBoundingClientRect().y
+        if(rect < window.innerHeight-200){
+          var menuItems = document.querySelectorAll('#toc ul li a');
+          if(menuItems && menuItems.length){
+              menuItems.forEach(v=> v.classList.remove('active'))
+          }
+          if(mainSection && mainSection.length){
+            var menuId =  mainSection[i].id;
+              var menu = document.querySelectorAll('#toc ul li a[href="#'+menuId+'"]');
+              if(menu && menu.length){
+                  menu[0].classList.add('active');
+              }  
+          }
+        }
+          }
+        
+      })
+    }
+
+      
+  
   };
 })(jQuery);
