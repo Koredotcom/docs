@@ -51,4 +51,39 @@ $(function() {
             return $this.find("a[data-toggle=tab]:first, a[data-toggle=pill]:first").tab("show");
         }
     });
+    let listOfSidelinks = $('#tg-sb-sidebar li a');
+    let arrayOfSideLinks = [];
+
+
+    listOfSidelinks.map((lnk, el)=>{
+        let link = $(el).attr('href');
+        let displayText = $(el).html();
+        arrayOfSideLinks.push({
+            link: link,
+            displayText : displayText
+
+        });
+    });
+
+   let currentPageIndex = arrayOfSideLinks.findIndex(el=>{
+            return '/' + el.link == location.pathname;
+    });
+
+    let prevPost = arrayOfSideLinks[currentPageIndex-1];
+    let nextPost = arrayOfSideLinks[currentPageIndex+1];
+if(prevPost){
+
+    $('.next-prev-section #prev-post-title').html(`<a href="${prevPost.link}" > ${prevPost.displayText}</a>`);
+}else{
+    $('.next-prev-section .prev-section').hide();
+}
+   if(nextPost){
+
+       $('.next-prev-section #next-post-title').html(`<a href="${nextPost.link}" > ${nextPost.displayText}</a>`);
+   }else{
+    $('.next-prev-section .next-section').hide();
+   }
+
+   
+
 });
