@@ -66,7 +66,7 @@ $(function() {
     });
 
    let currentPageIndex = arrayOfSideLinks.findIndex(el=>{
-            return '/' + el.link == location.pathname;
+            return '/docs/' + el.link == location.pathname;
     });
 
     let prevPost = arrayOfSideLinks[currentPageIndex-1];
