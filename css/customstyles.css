@@ -285,14 +285,6 @@ div#toc ul li {
     margin: 0;
     color: #202124;
 }
-div#toc ul li .anchorjs-link {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    left: 0;
-    top: 0;
-}
 .div#toc ul li:hover{
     color: #0d6efd;
 }
@@ -304,10 +296,19 @@ div#toc ul li .anchorjs-link {
      border-left: 2px solid #0d6efd;
     padding: 8px;
 }
-.div#toc ul li:hover a.active{
+.div#toc ul li:hover .active{
     border-left: 2px solid #0d6efd;
    padding: 8px;
 }
+div#toc ul li .anchorjs-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
 div#toc ul li a::after{
     display: none;
 }
@@ -335,15 +336,16 @@ div#toc >ul::before {
     /* text-align:center;
     margin-left:auto;
     margin-right:auto; */
-    width:70px;
+    /* width:70px; */
     /* padding-top:20px;
     padding-bottom:20px; */
-    padding-left:0px;
+    width: 100%;
+    padding-left: 0px;
     font-weight: 600;
     font-size: 14px;
     color: #202124;
     position: absolute;
-    top: 0;
+    top: -25px;
     left: 0;
 }
 
