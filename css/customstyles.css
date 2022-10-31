@@ -273,10 +273,17 @@ div#toc{
     top: 100px;
 }
 div#toc ul li {
-    margin: 8px 0px 8px 22px;
-    font-size: 90%;
-    list-style: square;
+    /* margin: 8px 0px 8px 22px; */
+    font-size: 12px;
+    /* list-style: square; */
+    list-style: none;
     position: relative;
+    list-style: none;
+    position: relative;
+    /* border-left: 2px solid #fff; */
+    padding: 0;
+    margin: 0;
+    color: #202124;
 }
 div#toc ul li .anchorjs-link {
     position: absolute;
@@ -286,15 +293,32 @@ div#toc ul li .anchorjs-link {
     left: 0;
     top: 0;
 }
+.div#toc ul li:hover{
+    color: #0d6efd;
+}
+.div#toc ul li a{
+    border-left: 2px solid #ffffff;
+   padding: 8px;
+}
+.div#toc ul li:hover a{
+     border-left: 2px solid #0d6efd;
+    padding: 8px;
+}
+.div#toc ul li:hover a.active{
+    border-left: 2px solid #0d6efd;
+   padding: 8px;
+}
 div#toc ul li a::after{
     display: none;
 }
 div#toc ul {
-    background-color: #f2f3f5;
+    /* background-color: #f2f3f5; */
+    border-left: 1px solid #85B7FE!important;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 0px;
     max-width: 300px;
-    color: gray;
+    margin-top: 25px;
+    position: relative;
 }
 
 div#toc ul li ul {
@@ -308,15 +332,19 @@ div#toc ul li ul li::before {
 
 div#toc >ul::before {
     content: "Table of Contents";
-    font-weight: 500;
-    color: #555;
-    text-align:center;
+    /* text-align:center;
     margin-left:auto;
-    margin-right:auto;
+    margin-right:auto; */
     width:70px;
-    padding-top:20px;
-    padding-bottom:20px;
-    padding-left:10px;
+    /* padding-top:20px;
+    padding-bottom:20px; */
+    padding-left:0px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #202124;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 li.dropdownActive a {
