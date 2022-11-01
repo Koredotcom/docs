@@ -376,6 +376,10 @@ li.dropdownActive a {
     cursor:pointer;
     color:#202124;
 }
+.next-prev-section .prev-section #prev-post-title a::after{
+    content: '';
+    background-image: url(../images/carrot.svg);
+}
 .next-prev-section .next-section{
     flex: 1 1;
     text-align: right;
@@ -391,6 +395,10 @@ li.dropdownActive a {
     font-size: 14px;
     cursor:pointer;
     color:#202124;
+}
+.next-prev-section .next-section #next-post-title a::after{
+    content: '';
+    background-image: url(../images/carrot.svg);
 }
 .post-content a.fa-rss {
     color: orange;
