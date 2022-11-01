@@ -379,6 +379,8 @@ li.dropdownActive a {
 .next-prev-section .prev-section #prev-post-title a::after{
     content: '';
     background-image: url(../images/carrot.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
 }
 .next-prev-section .next-section{
     flex: 1 1;
@@ -399,6 +401,8 @@ li.dropdownActive a {
 .next-prev-section .next-section #next-post-title a::after{
     content: '';
     background-image: url(../images/carrot.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
 }
 .post-content a.fa-rss {
     color: orange;
