@@ -366,6 +366,7 @@ li.dropdownActive a {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    position: relative;
 }
 .next-prev-section .prev-section .prev-title{
     font-size: 10px;
@@ -395,6 +396,7 @@ li.dropdownActive a {
     display: flex;
     flex-direction: column;
     padding-right: 20px;
+    position: relative;
 }
 .next-prev-section .next-section .next-title{
     font-size: 10px;
