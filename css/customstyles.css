@@ -354,7 +354,40 @@ li.dropdownActive a {
     font-weight: bold;
 }
 
-
+.next-prev-section{
+    display: flex;
+    padding-bottom: 10px;
+}
+.next-prev-section .prev-section{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+}
+.next-prev-section .prev-section .prev-title{
+    font-size: 0.8rem;
+    opacity: 0.5;
+    color: #202124;
+}
+.next-prev-section .prev-section #prev-post-title a{
+    font-size: 14px;
+    cursor:pointer;
+    color:#202124;
+}
+.next-prev-section .next-section{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+.next-prev-section .next-section .next-title{
+    font-size: 0.8rem;
+    opacity: 0.5;
+    color: #202124;
+}
+.next-prev-section .next-section #next-post-title a{
+    font-size: 14px;
+    cursor:pointer;
+    color:#202124;
+}
 .post-content a.fa-rss {
     color: orange;
 }
