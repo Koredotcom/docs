@@ -285,18 +285,18 @@ div#toc ul li {
     margin: 0;
     color: #202124;
 }
-.div#toc ul li:hover{
+.itAssistDocs .container .contentbody .div#toc ul li:hover{
     color: #0d6efd;
 }
-.div#toc ul li a{
+.itAssistDocs .container .contentbody .div#toc ul li a{
     border-left: 2px solid #ffffff;
    padding: 8px;
 }
-.div#toc ul li:hover a{
+.itAssistDocs .container .contentbody .div#toc ul li:hover a{
      border-left: 2px solid #0d6efd;
     padding: 8px;
 }
-.div#toc ul li:hover .active{
+.itAssistDocs .container .contentbody .div#toc ul li .active{
     border-left: 2px solid #0d6efd;
    padding: 8px;
 }
