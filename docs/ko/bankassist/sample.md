@@ -1,7 +1,7 @@
 ---
 title: Sample
 
-permalink: en/bankassist/sample
+permalink: ko/bankassist/sample
 
 ---
 ## Sample

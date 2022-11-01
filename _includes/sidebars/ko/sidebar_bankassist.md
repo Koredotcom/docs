@@ -1,3 +1,3 @@
 
 ###### GETTING STARTED_ko
-- [Sample](en/bankassist/sample)
+- [Sample](ko/bankassist/sample)
