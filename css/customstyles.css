@@ -364,7 +364,7 @@ li.dropdownActive a {
     flex-direction: column;
 }
 .next-prev-section .prev-section .prev-title{
-    font-size: 0.8rem;
+    font-size: 10px;
     opacity: 0.5;
     color: #202124;
 }
@@ -374,12 +374,13 @@ li.dropdownActive a {
     color:#202124;
 }
 .next-prev-section .next-section{
+    flex: 1 1;
     text-align: right;
     display: flex;
     flex-direction: column;
 }
 .next-prev-section .next-section .next-title{
-    font-size: 0.8rem;
+    font-size: 10px;
     opacity: 0.5;
     color: #202124;
 }
