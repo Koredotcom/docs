@@ -273,10 +273,36 @@ div#toc{
     top: 100px;
 }
 div#toc ul li {
-    margin: 8px 0px 8px 22px;
-    font-size: 90%;
-    list-style: square;
+    /* margin: 8px 0px 8px 22px; */
+    font-size: 12px;
+    /* list-style: square; */
+    list-style: none;
     position: relative;
+    list-style: none;
+    position: relative;
+    /* border-left: 2px solid #fff; */
+    padding: 0;
+    margin: 0;
+    color: #202124;
+}
+div#toc ul li:hover{
+    color: #0d6efd;
+}
+div#toc ul li a{
+    border-left: 2px solid #ffffff;
+   padding: 8px;
+   display: block;
+   color: #202124;
+}
+div#toc ul li:hover a{
+     border-left: 2px solid #0d6efd;
+    padding: 8px;
+    color: #0d6efd;
+}
+div#toc ul li .active{
+    border-left: 2px solid #0d6efd;
+   padding: 8px;
+   color: #0d6efd;
 }
 div#toc ul li .anchorjs-link {
     position: absolute;
@@ -286,15 +312,18 @@ div#toc ul li .anchorjs-link {
     left: 0;
     top: 0;
 }
+
 div#toc ul li a::after{
     display: none;
 }
 div#toc ul {
-    background-color: #f2f3f5;
-    padding: 5px;
-    border-radius: 5px;
+    /* background-color: #f2f3f5; */
+    border-left: 1px solid #85B7FE!important;
+    padding: 5px 0;
+    border-radius: 0px;
     max-width: 300px;
-    color: gray;
+    margin-top: 25px;
+    position: relative;
 }
 
 div#toc ul li ul {
@@ -308,22 +337,90 @@ div#toc ul li ul li::before {
 
 div#toc >ul::before {
     content: "Table of Contents";
-    font-weight: 500;
-    color: #555;
-    text-align:center;
+    /* text-align:center;
     margin-left:auto;
-    margin-right:auto;
-    width:70px;
-    padding-top:20px;
-    padding-bottom:20px;
-    padding-left:10px;
+    margin-right:auto; */
+    /* width:70px; */
+    /* padding-top:20px;
+    padding-bottom:20px; */
+    width: 100%;
+    padding-left: 0px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #202124;
+    position: absolute;
+    top: -25px;
+    left: 0;
 }
 
 li.dropdownActive a {
     font-weight: bold;
 }
 
-
+.next-prev-section{
+    display: flex;
+    padding-bottom: 10px;
+}
+.next-prev-section .prev-section{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    position: relative;
+}
+.next-prev-section .prev-section .prev-title{
+    font-size: 10px;
+    opacity: 0.5;
+    color: #202124;
+}
+.next-prev-section .prev-section #prev-post-title a{
+    font-size: 14px;
+    cursor:pointer;
+    color:#202124;
+}
+.next-prev-section .prev-section #prev-post-title a::after{
+    content: '';
+    background-image: url(../images/carrot.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    transform: rotate(180deg);
+}
+.next-prev-section .next-section{
+    flex: 1 1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    position: relative;
+}
+.next-prev-section .next-section .next-title{
+    font-size: 10px;
+    opacity: 0.5;
+    color: #202124;
+}
+.next-prev-section .next-section #next-post-title a{
+    font-size: 14px;
+    cursor:pointer;
+    color:#202124;
+}
+.next-prev-section .next-section #next-post-title a::after{
+    content: '';
+    background-image: url(../images/carrot.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    /* transform: rotate(180deg); */
+}
 .post-content a.fa-rss {
     color: orange;
 }
@@ -3123,4 +3220,473 @@ body.searchassistDocs{
   }
   /*---mobile---*/
 /*----SEARCH ASSIST ---*/
+
+/*----BANK ASSIST ---*/
+body.bankassistDocs{
+    overflow: hidden;
+    font-family: 'Inter', 'Open Sans', sans-serif;
+}
+.bankassistDocs .navbar {
+    height: 80px;
+    display: flex;
+    /* align-items: center; */
+    background-color: #ffffff;
+    border: 0;
+    box-shadow: 0 1px 0 rgb(0 0 0 / 8%);
+    padding: 0 15px;
+    margin-bottom: 0;
+}
+.bankassistDocs .navbar .topnavlinks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-header{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-collapse{
+    display: flex !important;
+    align-items: center;
+    width: 70%;
+    justify-content: flex-end;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right{
+    display: flex;
+    align-items: center;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li.dropdown .dropdown-menu{
+    box-shadow: 0 8px 15px rgb(0 0 0 / 10%);
+    border: 0;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li.dropdown .dropdown-menu li {
+    padding: 0;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li.dropdown .dropdown-menu li a{
+    padding: 0.6em 20px;
+    line-height: 1.5em;
+    color: #202124;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li.dropdown .dropdown-menu li:hover a{
+    background: #EFF0F1;
+    color: #0d6efd;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li button{
+    background: #fff;
+    color: #202124 ;
+    font-weight: normal;
+    padding: 0.7em 1em ;
+    border: 1px solid #bdc1c5;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li button{
+    background: transparent;
+    color: #202124 ;
+    font-weight: normal;
+    padding: 0.7em 1em ;
+    border: 1px solid #bdc1c5;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li button a{
+    background-color: transparent;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li button:hover {
+    background: #0d6efd;
+    border: 1px solid #0d6efd;
+    color: #ffffff;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li button:hover a{
+    color: #ffffff;
+    background-color: transparent;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li a::after{
+    display: none;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right .dropdown .dropdown-toggle{
+    /* margin: 0 15px 0 0; */
+    font-size: 15px;
+    /* padding: 0; */
+    background: #fff;
+    border: 0;
+    color: #202124;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li a{
+    padding: 0;
+    font-size: 15px;
+    color: #202124;
+    margin: 0;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right #search-demo-container{
+    width: 240px;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right #search-demo-container input{
+    margin-top: 0;
+    /* color: #BDC1C6; */
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #BDC1C6;
+    border-radius: 4px;
+    width: 240px;
+    margin-left: 0;
+    background-image: url(../images/ko/itassist/search.svg);
+    background-repeat: no-repeat;
+    background-position: left 14px center;
+    padding-left: 35px;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-header .navbar-brand{
+ padding: 0;
+ display: flex;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-header .navbar-brand .projectTitle{
+    flex-shrink: 0;
+    transition: height 0.3s;
+    color: #202124;
+    font-family: 'Inter', 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-header .navbar-brand .mobilelogo{
+    display: none;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-header .navbar-brand .mobileTitle{
+    display: none;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-header .navbar-brand .projectTitle .attachment-large{
+    width: 160px;
+    margin-right: 1.4rem;
+}
+.bankassistDocs .container {
+    width: 100%;
+    /* height: calc(100% - 80px); */
+    padding-right: 0;
+}
+.bankassistDocs .container #main{
+    height: 100%;
+}
+.bankassistDocs .container .contentbody{
+    display: flex;
+    margin: 0;
+    height: 100%;
+}
+.bankassistDocs .container .contentbody a{
+    color: #0d6efd;
+}
+.bankassistDocs .container .contentbody a::after{
+    display: none;
+}
+.bankassistDocs .container .contentbody p{
+    color: #202124;
+}
+.bankassistDocs .container .leftNav{
+    border-right: 1px solid #e4e5e7;
+    width: 320px;
+    flex-shrink: 0;
+    padding-top: 20px;
+    overflow: auto;
+    height: calc(100vh - 80px);
+}
+.bankassistDocs .container .leftNav h6{
+    font-size: 12px;
+    color: #07377F ;
+    font-weight: 600 ;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.bankassistDocs .container .leftNav h6:nth-child(1){
+    border: 0;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+}
+.bankassistDocs .container .leftNav .nav li a{
+    color: #202124;
+    font-size: 12px;
+    text-shadow: none;
+    font-family: inter;
+    line-height: 25px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+    background-color:#ffffff;
+    margin-bottom: 6px;
+}
+.bankassistDocs .container .leftNav .nav li a::after{
+    display: none;
+}
+.bankassistDocs .container .leftNav .nav li a:hover{
+    color: #ffffff;
+    background-color:#0D6EFD;
+}
+.bankassistDocs .container .leftNav .nav li.active a{
+    color: #ffffff;
+    background-color:#0D6EFD;
+}
+.bankassistDocs .container .leftNav details summary{
+    color: #202124;
+    font-size: 12px;
+    text-shadow: none;
+    font-family: inter;
+    line-height: 25px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+    background-color:#ffffff;
+    margin-bottom: 6px;
+    padding: 4px 10px;
+    cursor: pointer;
+    position: relative;
+}
+.bankassistDocs .container .leftNav details summary::after{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/ko/itassist/expand.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 6px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+.bankassistDocs .container .leftNav details[open] summary::after{
+    transform: rotate(-90deg);
+}
+
+.bankassistDocs .container .leftNav  details .nav{
+    padding-left: 15px;
+}
+.bankassistDocs .container .leftNav details summary.active{
+    color: #ffffff;
+    background-color:#0D6EFD;
+}
+/* .bankassistDocs .container .leftNav details summary:hover{
+    color: #ffffff;
+    background-color:#0D6EFD;
+} */
+
+
+.bankassistDocs .container .rightContent{
+    width: 100%;
+    padding-top: 15px;
+    padding-right: 260px;
+    overflow: auto;
+    height: calc(100vh - 80px);
+}
+.bankassistDocs .container .rightContent .post-header .post-title-main{
+    color: #07377F!important;
+    font-size: 26px !important;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li{
+    padding: 10px;
+}
+.bankassistDocs .container .contentbody info{
+    background-color:#F3F8FF;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #07377F;
+    display: block;
+    position: relative;
+}
+.bankassistDocs .container .contentbody info a{
+    text-decoration: underline;
+}
+.bankassistDocs .container .contentbody info::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/info.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    color: #155724;
+    width: 16px;
+    height: 16px;
+}
+.bankassistDocs .container .contentbody tip{
+    background-color:#D4EDDA;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #155724;
+    display: block;
+    position: relative;
+}
+.bankassistDocs .container .contentbody tip a{
+    text-decoration: underline;
+}
+.bankassistDocs .container .contentbody tip::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/bulb.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    color: #155724;
+    width: 16px;
+    height: 16px;
+}
+.bankassistDocs .container .contentbody note{
+    background-color:#FFFBEA;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #806D16;
+    display: block;
+    position: relative;
+}
+.bankassistDocs .container .contentbody note::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/note.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 17px;
+    color: #806D16;
+    width: 16px;
+    height: 16px;
+}
+.bankassistDocs .container .contentbody warning::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/warning.svg);
+    background-repeat: no-repeat;
+    /* background-position: right center; */
+    position: absolute;
+    left: 15px;
+    top: 16px;
+    color: #FBC4C4;
+    width: 16px;
+    height: 16px;
+}
+.bankassistDocs .container .contentbody note a{
+    text-decoration: underline;
+}
+
+.bankassistDocs .container .contentbody warning{
+    background-color:#FBC4C4;
+    border-radius: 4px;
+    padding: 15px 15px 15px 40px;
+    color: #202427;
+    display: block;
+    position: relative;
+}
+.bankassistDocs .container .contentbody warning span{
+    font-style: italic;
+}
+.bankassistDocs .container .contentbody warning a{
+    text-decoration: underline;
+}
+/*---mobile---*/
+@media (min-width: 320px) and (max-width: 1200px) {
+    body.bankassistDocs{
+        overflow: auto;
+    }
+    .bankassistDocs .navbar{
+        height: 60px;
+        padding: 5px 15px;
+    }
+    .bankassistDocs .container .leftNav{
+        border-right: 0px solid #e4e5e7;
+        width: 100%;
+        flex-shrink: 0;
+        padding: 0;
+        overflow: initial;
+        height: auto;
+    }
+    .bankassistDocs .container .contentbody{
+        display: block;
+    }
+    .bankassistDocs .navbar .topnavlinks{
+        display: block;
+    }
+    .bankassistDocs .navbar .topnavlinks .navbar-header{
+        display: block;
+        align-items: center;
+        width: 100%;
+    }
+    .bankassistDocs .navbar .topnavlinks .navbar-collapse{
+        display: none !important;
+        align-items: center;
+        width: auto;
+        justify-content: flex-end;
+        border: 0;
+        box-shadow: 0 8px 15px rgb(0 0 0 / 10%);
+        background: #ffffff;
+    }
+    .bankassistDocs .navbar .topnavlinks .navbar-collapse.in{
+        display: block !important;
+        align-items: center;
+        width: auto;
+        justify-content: flex-end;
+        border: 0;
+    }
+    .bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right{
+        background: #ffffff;
+        display: block;
+        width: 100%;
+    }
+    .bankassistDocs .navbar .topnavlinks .navbar-collapse.in .navbar-right{
+        display: block;
+        background: #ffffff;
+        display: block;
+    }
+    .bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li{
+        padding: 10px;
+    }
+    .bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right #search-demo-container{
+        width: 100%;
+    }
+    .bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right #search-demo-container input{
+        width: 100%;
+    }
+    .bankassistDocs .navbar .topnavlinks .navbar-header .navbar-brand .projectTitle{
+        display: none;
+    }
+    .bankassistDocs .navbar .topnavlinks .navbar-header .navbar-brand{
+        align-items: center;
+    }
+    .bankassistDocs .navbar .topnavlinks .navbar-header .navbar-brand .mobilelogo{
+        display: block;
+    }
+    .bankassistDocs .navbar .topnavlinks .navbar-header .navbar-brand .mobileTitle{
+        display: inline-block;
+        padding-left: 10px;
+        color: #202124;
+    }
+    .bankassistDocs .navbar .topnavlinks .navbar-header .navbar-toggle{
+        background-color: #0D6EFD;
+        border: 1px solid #0d6efd;
+    }
+    .bankassistDocs .container .contentbody{
+        display: block;
+    }
+    .bankassistDocs .container .rightContent{
+        padding-right: 0;
+        overflow: initial;
+        height: auto;
+    }
+    .bankassistDocs .navbar .topnavlinks .navbar-collapse .navbar-right li button{
+        width: 100%;
+    }
+    div#toc{
+        position: relative;
+        width: 100%;
+    }
+    .div#toc ul{
+        max-width: auto;
+    }
+  }
+  /*---mobile---*/
+/*----BANK ASSIST ---*/ 
 

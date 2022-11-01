@@ -91,7 +91,14 @@ defaults:
       path: "docs/en/smartassist"
     values:
       layout: "en/smartassist/page_smartassist"
-      topnav: topnav_smartassist    
+      topnav: topnav_smartassist   
+
+  -
+    scope:
+      path: "docs/en/bankassist"
+    values:
+      layout: "en/bankassist/page_bankassist"
+      topnav: topnav_bankassist  
 
 
   -
@@ -122,6 +129,13 @@ defaults:
       layout: "ko/smartassist/page_smartassist"
       topnav: topnav_smartassist   
 
+
+  -
+    scope:
+      path: "docs/ko/bankassist"
+    values:
+      layout: "ko/bankassist/page_bankassist"
+      topnav: topnav_bankassist   
        
 
       
