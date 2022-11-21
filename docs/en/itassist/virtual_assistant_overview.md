@@ -1,7 +1,7 @@
 ---
 title: Virtual Assistant Overview
 
-permalink: en/itassist/virtual_assistant_overview
+permalink: en/itassist/virtual-assistant-overview
 
 ---
 #### Virtual Assistant Overview
