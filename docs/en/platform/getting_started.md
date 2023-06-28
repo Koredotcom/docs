@@ -6,7 +6,6 @@ permalink: en/platform/getting_started
 ---
 #### Topic Guide
 ###### Gettting started
-<p>[vc_row][vc_column][ultimate_spacer height="10"][vc_column_text]</p>
 <p><span style="font-weight: 400">The Kore.ai XO Platform enables you to launch enterprise-grade, AI-enabled conversational Virtual Assistants using an intuitive graphical interface for building, training, testing, and monitoring virtual assistants.</span></p>
 <p><span style="font-weight: 400">Whether you are looking to build a complex VA that has to make multiple calls to your backend systems with conditional routing, or a VA that sends contextual notifications to your users, or even a VA that responds to their queries, creating VAs has never been easier.</span></p>
 <p>This post takes you through the basics you need to know to successfully access the Kore.ai’s Experience Optimization Platform.</p>
