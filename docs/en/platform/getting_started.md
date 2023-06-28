@@ -4,7 +4,6 @@ title: Getting Started
 permalink: en/platform/getting_started
 
 ---
-#### Topic Guide
 ###### Gettting started
 <p><span style="font-weight: 400">The Kore.ai XO Platform enables you to launch enterprise-grade, AI-enabled conversational Virtual Assistants using an intuitive graphical interface for building, training, testing, and monitoring virtual assistants.</span></p>
 <p><span style="font-weight: 400">Whether you are looking to build a complex VA that has to make multiple calls to your backend systems with conditional routing, or a VA that sends contextual notifications to your users, or even a VA that responds to their queries, creating VAs has never been easier.</span></p>
@@ -149,25 +148,25 @@ permalink: en/platform/getting_started
 <li>Additional users can be invited to a workspace using the ‘Invite Team’ option or inviting users to a particular assistant.</li>
 <li>A user can belong to multiple workspaces.</li>
 </ol>
-<h3>Join a Workspace</h3>
+<h2>Join a Workspace</h2>
 <p>Before setting up your Workspace, you need to sign up to the Kore.ai XO Platform.</p>
 <p>If your email domain matches existing Workspaces within the XO Platform, then it means that your organization is already working on projects you may want to join. The Platform lists matching Workspaces and you can <b>Request Access</b> to them as soon as you sign up. If you are part of a team, but you are not managing it, then this is the recommended way to proceed.</p>
 <p><a href="https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20220628070251/workspace-2.png"><img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20220628070251/workspace-2.png" alt="" width="650" height="300" class="alignnone size-full wp-image-42393" /></a></p>
-<h3>Create Your Workspace</h3>
+<h2>Create Your Workspace</h2>
 <p>If you are managing a team, as part of your organization’s VA development projects, then you may want to create your own Workspace. You can do so by choosing <b>Create New</b>, rather than requesting access to an existing Workspace.</p>
 <p><a href="https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20220628070546/create-newworkspace.png"><img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20220628070546/create-newworkspace.png" alt="" width="663" height="319" class="alignnone size-full wp-image-42397" /></a></p>
 <p>To create your Workspace, you will need to provide a <b>Name</b>, and invite the first members by entering their email addresses. Those who accept your invitation will gain access to this Workspace exclusively.</p>
 <p><a href="https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20220628070850/workspace-name.png"><img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20220628070850/workspace-name.png" alt="" width="650" height="300" class="alignnone size-full wp-image-42400" /></a></p>
-<h3>Invite Members</h3>
+<h2>Invite Members</h2>
 <p>After the Workspace has been created, Administrators can invite new members using the <b>Invite</b> option on the main landing page, in the top navigation menu.</p>
 <p><a href="https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20220628071651/apps-gif-2.gif"><br />
 <img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20220628071651/apps-gif-2.gif" alt="" width="1906" height="848" class="alignnone size-full wp-image-42407" /></a></p>
-<h3>Switch Workspaces</h3>
+<h2>Switch Workspaces</h2>
 <p>Team members can switch workspaces, using the switcher at the top right, next to the profile area.<br />
 <a href="https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20220628080215/switch-ws.png"><br />
 <img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20220628080215/switch-ws.png" alt="" width="671" height="358" class="alignnone size-full wp-image-42431" /></a></p>
 <p>[/vc_column_text][vc_column_text]</p>
-<h3>Browse Workspaces</h3>
+<h2>Browse Workspaces</h2>
 <p>Team members can also <b>Browse Workspaces</b> to see those that are active within your organization, and to which access can be requested. This option lists Workspaces based on the email domain.</p>
 <p><a href="https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20220628072139/apps-gif-3.gif"><img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20220628072139/apps-gif-3.gif" alt="" width="1906" height="848" class="alignnone size-full wp-image-42414" /></a></p>
 
