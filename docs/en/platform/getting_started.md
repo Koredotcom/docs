@@ -86,7 +86,7 @@ permalink: en/platform/getting_started
 <li><strong>Profile </strong><span style="font-weight: 400">- Here is where you can see your profile details, set the platform’s language and log out.</span></li>
 </ul>
 <p><a href="https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20230120093234/va-builder-landing-page-1.png"><img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20230120093234/va-builder-landing-page-1.png" alt="" width="600" height="234" class="alignnone size-medium wp-image-52078" /></a></p>
-<h2>Invite Users to your Virtual Assistant</h2>
+<h2>Invite Users to your VA </h2>
 <p>Account administrators can add other enterprise users to the virtual assistant account by inviting them from the Bots Admin portal.</p>
 <p><span style="font-weight: 400">To invite users to your Kore.ai XO Platform account, follow these steps:</span></p>
 <ol>
