@@ -174,5 +174,4 @@ permalink: en/platform/getting_started
 <h3>Browse Workspaces</h3>
 <p>Team members can also <b>Browse Workspaces</b> to see those that are active within your organization, and to which access can be requested. This option lists Workspaces based on the email domain.</p>
 <p><a href="https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20220628072139/apps-gif-3.gif"><img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20220628072139/apps-gif-3.gif" alt="" width="1906" height="848" class="alignnone size-full wp-image-42414" /></a></p>
-<p>[/vc_column_text][ultimate_spacer height="10"][/vc_column][/vc_row]</p>
 
