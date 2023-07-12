@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
- <link rel="icon" type="image/x-icon" href="./images/platform-icon.svg">
+<meta name="robots" content="noindex">
+ <link rel="icon" type="image/x-icon" href="./images/bankAssist-icon.svg">
     {% include head.html %}
     <script>
         $(document).ready(function() {
@@ -73,8 +74,8 @@
     {% endif %}
 
 </head>
-<body class="platformDocs">
-{% include topnavs/ko/topnav_platform.html %}
+<body class="bankassistDocs">
+{% include topnavs/en/topnav_bankassist.html %}
 <!-- Page Content -->
 <div class="container">
   <div id="main">
@@ -85,15 +86,16 @@
             <!-- Sidebar Column -->
             <div class="col-md-3 leftNav" id="tg-sb-sidebar">
                 {% capture sidebr %}
-                {% include sidebars/ko/sidebar_platform.md %}  
+                {% include sidebars/en/sidebar_bankassist.md   %}  
                 {% endcapture %}
-                
+                 
                 {{ sidebr | markdownify }}
             </div>
             {% assign content_col_size = "col-md-9" %}
         {% endunless %}
 
         <!-- Content Column -->
+
         <div class="{{content_col_size}} rightContent" id="tg-sb-content">
             {{content}}
         </div>
