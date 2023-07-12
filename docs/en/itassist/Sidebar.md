@@ -12,6 +12,9 @@
 
 [Glossary](en/itassist/Glossary)
 
+[Publish Bot API](en/itassist/Publish Bot API)
+  
+
 ###### USER GUIDE
 
 - [Sign In](en/itassist/Sign In)
@@ -90,6 +93,5 @@
 
   - [About](en/itassist/Talk to Agent)
   - [Configuration](en/itassist/Talk to Agent#markdown-header-configuration)
-  - [Publish Bot API](en/itassist/Publish Bot API)
-
+ 
   </details>
