@@ -1,27 +1,3 @@
-<!-----
-
-Yay, no errors, warnings, or alerts!
-
-Conversion time: 0.509 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a link checker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β34
-* Wed Jul 12 2023 06:43:49 GMT-0700 (PDT)
-* Source doc: Publish Bot API-InitiateTraning
-* Tables are currently converted to HTML tables.
------>
-
-
-
 # **Publish Bot API**
 
 To initiate a publish request for a bot.
