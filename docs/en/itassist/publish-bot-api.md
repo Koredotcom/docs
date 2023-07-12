@@ -1,3 +1,10 @@
+---
+title: Publish Bot API
+
+permalink: en/itassist/publish-bot-api
+
+---
+
 # **Publish Bot API**
 
 To initiate a publish request for a bot.
