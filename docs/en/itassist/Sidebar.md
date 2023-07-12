@@ -90,5 +90,6 @@
 
   - [About](en/itassist/Talk to Agent)
   - [Configuration](en/itassist/Talk to Agent#markdown-header-configuration)
+  - [Publish Bot API](en/itassist/Publish Bot API)
 
   </details>
