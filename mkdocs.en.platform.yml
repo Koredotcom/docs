@@ -1,7 +1,7 @@
 site_name: Kore ai Docs
 site_author: Rajasekhar Balla
-docs_dir: 'docs/en/platform/'
-site_dir: 'site/en/platform/'
+docs_dir: 'docs/platform/'
+site_dir: 'site/platform/'
 repo_name: Koredotcom/mkdocs-sample
 repo_url: https://github.com/Koredotcom/mkdocs-sample/
 extra_css:
