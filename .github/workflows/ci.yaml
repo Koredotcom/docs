@@ -14,33 +14,27 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Build EN platform docs
+      - name: Build EN XO docs
         uses: ./
         with:
           entrypoint: mkdocs
-          args: build --config-file=mkdocs.en.platform.yml
-      - name: Build EN platform docs 10.0.0
+          args: build --config-file=mkdocs.en.xo.yml
+      - name: Build JA XO docs
         uses: ./
         with:
           entrypoint: mkdocs
-          args: build --config-file=mkdocs.en.platform_v10.0.0.yml    
-      - name: Build EN itassist docs
+          args: build --config-file=mkdocs.ja.xo.yml    
+      - name: Build KO XO docs
         uses: ./
         with:
           entrypoint: mkdocs
-          args: build --config-file=mkdocs.en.itassist.yml    
-      - name: Build JA platform docs
+          args: build --config-file=mkdocs.ko.xo.yml  
+      - name: Build EN xo docs v10
         uses: ./
         with:
           entrypoint: mkdocs
-          args: build --config-file=mkdocs.ja.platform.yml
-      - name: Build JA itassist docs
-        uses: ./
-        with:
-          entrypoint: mkdocs
-          args: build --config-file=mkdocs.ja.itassist.yml        
-    
-
+          args: build --config-file=mkdocs.en.xo_v10.yml    
+            
       # - name: Copy redirect index page
       #   run: sudo cp /index.html /site
 

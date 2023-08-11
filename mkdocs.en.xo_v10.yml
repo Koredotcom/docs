@@ -1,9 +1,9 @@
 site_name: Kore ai Docs
 site_author: Rajasekhar Balla
-docs_dir: 'docs/platform/'
-site_dir: 'site/platform/'
-repo_name: Koredotcom/mkdocs-sample
-repo_url: https://github.com/Koredotcom/mkdocs-sample/
+docs_dir: 'docs/xo/v10'
+site_dir: 'site/xo/v10'
+repo_name: Koredotcom/docs
+repo_url: https://github.com/Koredotcom/docs
 extra_css:
     - stylesheets/extra_kore.css
 theme:
@@ -49,12 +49,15 @@ extra:
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/Koredotcom
   alternate:
-    - name: tr - Türkçe
-      link: https://Koredotcom.github.io/mkdocs-sample/tr/test
-      lang: tr
     - name: en - English 
-      link: https://Koredotcom.github.io/mkdocs-sample/en/
+      link: https://docsinternal-kore.github.io/docs/en
       lang: en
+    - name: ja - 日本語 
+      link: https://docsinternal-kore.github.io/docs/ja
+      lang: ja  
+    - name: ko - 한국어 
+      link: https://docsinternal-kore.github.io/docs/ko
+      lang: jako   
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -74,7 +77,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true 
 copyright: |
-  &copy; 2023 <a href="https://github.com/Koredotcom"  target="_blank" rel="noopener">Rajasekhar Balla</a>
+  © 2023 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
   - Home: index.md
   - Getting started:

@@ -7,7 +7,7 @@ and build a highly optimized site.
 
 ## Site structure
 
-V10.0.0. Set up and customize the structure of your documentation by configuring the
+Set up and customize the structure of your documentation by configuring the
 header and footer to your taste, choosing among many modes of navigation,
 setting up site search, and more.
 
