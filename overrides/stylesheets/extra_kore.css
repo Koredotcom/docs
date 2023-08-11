@@ -22,3 +22,8 @@
 .md-search__icon{
     color: #898686;
 }
+.md-header .nav-links .nav-item{
+    padding: 10px;
+    font-size: 13px;
+    color: #000;
+}
