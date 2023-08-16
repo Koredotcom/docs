@@ -30,6 +30,7 @@ You can provide an intent description, and the Platform handles the Conversation
 
 
 
+
 ### Training Data Suggestions
 
 Quickly generate high-quality training data using suggested utterances for each intent. Review and add the utterances to create a robust training set for your bot. <a href="https://developer.kore.ai/docs/bots/chatbot-overview/using-the-dialog-builder-tool/#Automatically_Generate_Utterance_Suggestions"> Learn more </a>.
