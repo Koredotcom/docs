@@ -15,43 +15,31 @@ Key features and enhancements included in this release:
 
 Create Virtual Assistants faster with the new bot creation process that lets you generate use cases automatically. Dialog Tasks are auto-created along with the bot, providing you with the base framework to fast-track your VA creation journey. [Learn more].
 
-
-
-
 ### Automatic Dialog Generation
 
 This feature auto-generates conversations and dialog flows using the VA’s purpose and intent description provided during the creation process. The Platform uses LLM and generative AI to create suitable Dialog Tasks for Conversation Design, Logic Building & Training by including the required nodes in the flow.
 
 You can provide an intent description, and the Platform handles the Conversation Generation for the Dialog Flow. You can preview the conversation flow, view the Bot Action taken, improvise the intent description, and regenerate the conversation to make it more human-like. The nodes and the flow for the Business Logic are automatically built for your conversation, and you only need to configure the flow transition. <a href="https://developer.kore.ai/docs/bots/chatbot-overview/using-the-dialog-builder-tool/#Auto-Generate_Dialog_Tasks">Learn more </a>.
 
-<img src ="../assets/images/autogenerate-dialog-task.gif" >
-
-
-
-
-
+![Autogenerate Dialog Task](../assets/images/autogenerate-dialog-task.gif)
 
 ### Training Data Suggestions
 
 Quickly generate high-quality training data using suggested utterances for each intent. Review and add the utterances to create a robust training set for your bot. <a href="https://developer.kore.ai/docs/bots/chatbot-overview/using-the-dialog-builder-tool/#Automatically_Generate_Utterance_Suggestions"> Learn more </a>.
 
-<img src ="../assets/images/training-suggestions.gif" >
-
-
+![Training Data Suggestions](../assets/images/training-suggestions.gif)
 
 ### NLP Batch Test Case Suggestions
 
 Automatically generate NLP test cases for every intent, including the entity checks. Use the generated utterances to quickly create test suites in the builder. <a href="https://developer.kore.ai/docs/bots/test-your-bot/batch-testing/batch-testing/#Generating_Test_Cases_Automatically"> Learn more </a>.
 
-<img src ="../assets/images/batch-testing.gif" >
-
-
+![Batch Test Case Suggestions](../assets/images/batch-testing.gif)
 
 ### Conversation Test Cases Suggestions
 
 Get simulated user inputs covering end-user scenarios at every test step. Use the suggestions to create test suites instantly. You can view input/utterance suggestions at every conversation step simulating the various input types and scenarios. This feature helps check if the task/intent is robust enough to handle random user utterances. It helps you predict and simulate the end user’s behavior and check if the VA can execute all the defined flows by generating user responses and presenting any digressions from the specified intent. <a href="https://developer.kore.ai/docs/bots/test-your-bot/create-a-test-suite/#Generated_User_Response_Suggestions"> Learn more </a>.
 
-<img src ="../assets/images/conv-test.gif" >
+![Conversation Test Cases Suggestions](../assets/images/conv-test.gif)
 
 
 ## Dynamic Conversations
@@ -61,7 +49,7 @@ Get simulated user inputs covering end-user scenarios at every test step. Use th
 
 You can now leverage Generative AI to rephrase bot responses based on conversation context and users’ emotions, resulting in more empathetic and natural responses that enhance user experience and engagement. When the OpenAI or Azure-OpenAI integration is enabled, you can see a new setting to rephrase responses at the node level for Message, Entity, and Confirmation Nodes. The messages added as User Prompts, Error Prompts, and Bot Responses are rephrased during runtime using the integration. <a href="https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/#Dynamic_Prompt_and_Message_Rephrasing"> Learn more </a>.
 
-<img src ="../assets/images/rephrase-response.gif" >
+![Dynamic Paraphrasing](../assets/images/rephrase-response.gif)
 
 
 ### AI-Assisted Adaptive Dialog
