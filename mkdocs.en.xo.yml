@@ -107,6 +107,8 @@ copyright: |
 nav:
   - Home: index.md
   - Getting started:
+    - What's new : whats-new/whats-new-in-this-release.md
+    - Recent Updates: whats-new/10-1-x-release-notes.md
     - Installation: getting-started.md
     - Creating your site: creating-your-site.md
     - Publishing your site: publishing-your-site.md
