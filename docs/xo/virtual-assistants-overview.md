@@ -11,12 +11,7 @@ Further enhancements facilitated the emergence of Artificial Intelligence (AI) t
 
 AI-driven, NLP-based chat, and voice Conversational Virtual Assistants are the latest in technology and a must for contemporary enterprises.
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
+![Human to Machine Interaction](../assets/images/ConversationalBot.png "human-machine interactions")
 
 
 
@@ -43,7 +38,7 @@ In a nutshell, such an assistant can significantly reduce the amount of time and
 
 
 
-* Talk to people, systems and internet-enabled things,
+* Talk to people, systems, and internet-enabled things,
 * Perform omnichannel communication through voice and text, using natural language,
 * Understand natural language, including domain-specific,
 * Learn from its interactions and apply this learning in future conversations,
@@ -69,13 +64,13 @@ Let’s take a look at the key components and the core process that enable a Vir
 
 ### The Key Components
 
-Whatever the user says is considered an Utterance. The main task of the Conversational VA is to analyze the utterance and extract the intent, and entities essential to carry a conversation.
+Whatever the user says is considered an Utterance. The main task of the Conversational VA is to analyze the utterance and extract the intent, and entities essential to carry a conversation. 
 
-An Intent is the user’s intention and usually comes in the form of a verb or noun within the user utterance.
+An Intent is the user’s intention and usually comes in the form of a verb or noun within the user's utterance.
 
 Entities are a collection of data or information that the VA requires to complete the task which is identified in the user intent. They can be fields, data or words that the developer designates as necessary for the VA to complete a task. Entities can either be part of a user utterance, but the VA might also need to prompt the user to provide them. An Entity can be of any type; for instance: name, location, date, time, etc.
 
-For example, let us consider the following message that a user sends to the Virtual Assistant:
+For example, let us consider the following message that a user sends to the Virtual Assistant: 
 
 _I want to fly to London this weekend._
 
@@ -99,7 +94,7 @@ In order for a Conversational Virtual Assistant to work as intended, it has to s
 
 ## Building Intelligent Conversational Virtual Assistants
 
-Virtual Assistants are not smart by default. They are designed to show some level of artificial intelligence by leveraging technologies such as machine learning, big data, natural language processing, etc. However, a Virtual Assistant is only intelligent when it can understand user needs, perspectives or context, and responds according to the user’s mood or emotion. This is only achievable through training and interaction with users, over a period of time. Below are a few suggestions that may help you increase your VA’s level of intelligence.
+Virtual Assistants are not smart by default. They are designed to show some level of artificial intelligence by leveraging technologies such as machine learning, big data, natural language processing, etc. However, a Virtual Assistant is only intelligent when it can understand user needs, perspectives, or context, and responds according to the user’s mood or emotion. This is only achievable through training and interaction with users, over a period of time. Below are a few suggestions that may help you increase your VA’s level of intelligence.
 
 
 ### Build a Rich Collection of Intents and Entities
@@ -109,7 +104,7 @@ The key for a Conversational Virtual Assistant to understand humans is its abili
 
 ### Develop Conversations
 
-Managing dialogs to keep track of multiple conversation threads, remember the context, and respond to the user tone or sentiment provides the much-needed humane touch to the conversation. At the same time, this serves the user with accurate and appropriate responses, ensuring a positive experience.
+Managing dialogs to keep track of multiple conversation threads, remember the context, and respond to the user's tone or sentiment provides the much-needed humane touch to the conversation. At the same time, this serves the user with accurate and appropriate responses, ensuring a positive experience.
 
 
 ### Build a Knowledge Graph
