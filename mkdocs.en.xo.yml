@@ -120,20 +120,20 @@ nav:
   - Overview:
     - Virtual Assistants Overview: virtual-assistants-overview.md
   - Message templates:
-    - Web & Mobile SDK Message Formatting and Templates: message-templates/web-mobile-SDK-message-formatting-and-templates.md
-  - Changelog:
-    - changelog/index.md
-    - How to upgrade: upgrade.md
-  - Contributing:
-    - contributing/index.md
-    - Reporting a bug: contributing/reporting-a-bug.md
-    - Reporting a docs issue: contributing/reporting-a-docs-issue.md
-    - Requesting a change: contributing/requesting-a-change.md
-    - Asking a question: https://github.com/squidfunk/mkdocs-material/discussions
-  - Guides:
-    - Creating a reproduction: guides/creating-a-reproduction.md
-  - FAQ:
-    - Sponsoring: faq/sponsoring.md
+    - Web & Mobile SDK Message Formatting and Templates: web-mobile-SDK-message-formatting-and-templates
+    - Changelog:
+      - changelog/index.md
+      - How to upgrade: upgrade.md
+    - Contributing:
+      - contributing/index.md
+      - Reporting a bug: contributing/reporting-a-bug.md
+      - Reporting a docs issue: contributing/reporting-a-docs-issue.md
+      - Requesting a change: contributing/requesting-a-change.md
+      - Asking a question: https://github.com/squidfunk/mkdocs-material/discussions
+    - Guides:
+      - Creating a reproduction: guides/creating-a-reproduction.md
+    - FAQ:
+      - Sponsoring: faq/sponsoring.md
   - Setup:
     - setup/index.md
     - Changing the colors: setup/changing-the-colors.md
