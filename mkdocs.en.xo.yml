@@ -119,7 +119,6 @@ nav:
     - License: license.md
   - Overview:
     - Virtual Assistants Overview: virtual-assistants-overview.md
-  - Message templates:
     - Web & Mobile SDK Message Formatting and Templates: web-mobile-SDK-message-formatting-and-templates.md
     - Changelog:
       - changelog/index.md
