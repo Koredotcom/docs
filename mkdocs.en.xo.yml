@@ -109,6 +109,10 @@ nav:
   - Getting started:
     - What's new : whats-new/whats-new-in-this-release.md
     - Recent Updates: whats-new/10-1-x-release-notes.md
+ - Overview:
+    - Virtual Assistants Overview : virtual-assistants-overview.md
+- Message Templates:
+    - Web & Mobile SDK: Message Formatting and Templates : web-mobile-SDK-message-formatting-and-templates.md
     - Installation: getting-started.md
     - Creating your site: creating-your-site.md
     - Publishing your site: publishing-your-site.md
