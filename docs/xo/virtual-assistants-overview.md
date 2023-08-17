@@ -11,7 +11,7 @@ Further enhancements facilitated the emergence of Artificial Intelligence (AI) t
 
 AI-driven, NLP-based chat, and voice Conversational Virtual Assistants are the latest in technology and a must for contemporary enterprises.
 
-![Human to Machine Interaction](../assets/images/ConversationalBot.png "human-machine interactions")
+![Human to Machine Interaction](../assets/images/conversationalbot.png "Human-Machine Interactions")
 
 
 
@@ -21,12 +21,7 @@ A Conversational Virtual Assistant (VA) acts as an intelligent intermediary betw
 
 These Virtual Assistants are designed to converse with users through a combination of natural language-based conversations. Responses can come in the form of text, links, buttons, calendars, or other widgets that accelerate the speed with which a user can respond.
 
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
+![Conversational Virtual Assistants](../assets/images/conversationalbot1.png "Conversational Virtual Assistants")
 
 
 AI-powered messaging solutions or Conversational Virtual Assistants serve as the stepping stone to the future. They communicate with intelligent virtual agents, organization apps, websites, social media platforms, and messenger platforms. Users can interact with such assistants using voice or text to access information, complete tasks, and execute transactions.
@@ -46,14 +41,7 @@ In a nutshell, such an assistant can significantly reduce the amount of time and
 * Apply context to improve communication,
 * Handle task interruptions and accomplish what users want.
 
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-
-
+![Virtual Assistant Key Features](../assets/images/conversationalbot2.png "Virtual Assistant Key Features")
 
 ## How Do Conversational Virtual Assistants Work?
 
