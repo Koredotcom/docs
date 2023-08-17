@@ -33,7 +33,7 @@ Quickly generate high-quality training data using suggested utterances for each 
 
 Automatically generate NLP test cases for every intent, including the entity checks. Use the generated utterances to quickly create test suites in the builder. <a href="https://developer.kore.ai/docs/bots/test-your-bot/batch-testing/batch-testing/#Generating_Test_Cases_Automatically"> Learn more </a>.
 
-![Batch Test Case Suggestions](./images/batch-testing.gif)
+![Batch Test Case Suggestions](images/batch-testing.gif)
 
 ### Conversation Test Cases Suggestions
 
