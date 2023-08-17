@@ -118,9 +118,8 @@ nav:
     - Alternatives: alternatives.md
     - License: license.md
   - Overview:
-     - Virtual Assistants Overview: virtual-assistants-overview.md
-  - Message Templates:
-     - Web & Mobile SDK Message Formatting and Templates: web-mobile-SDK-message-formatting-and-templates.md
+    - Virtual Assistants Overview: virtual-assistants-overview.md
+    - Web & Mobile SDK Message Formatting and Templates: web-mobile-SDK-message-formatting-and-templates.md
     - Changelog:
       - changelog/index.md
       - How to upgrade: upgrade.md
