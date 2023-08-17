@@ -159,9 +159,9 @@ nav:
       - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
     - Dependencies:
       - setup/dependencies/image-processing.md
-  - Reference:
+  - API:
     - reference/index.md
-    - Admonitions: reference/admonitions.md
+    - Debug Logs API: API/debug-logs-api.md
     - Annotations: reference/annotations.md
     - Buttons: reference/buttons.md
     - Code blocks: reference/code-blocks.md
