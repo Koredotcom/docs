@@ -11,7 +11,7 @@ Further enhancements facilitated the emergence of Artificial Intelligence (AI) t
 
 AI-driven, NLP-based chat, and voice Conversational Virtual Assistants are the latest in technology and a must for contemporary enterprises.
 
-![Human to Machine Interaction](../assets/images/conversationalbot.png)
+![Human to Machine Interaction](../assets/images/ConversationalBot.png)
 
 
 
