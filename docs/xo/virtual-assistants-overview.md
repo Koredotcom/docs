@@ -21,7 +21,7 @@ A Conversational Virtual Assistant (VA) acts as an intelligent intermediary betw
 
 These Virtual Assistants are designed to converse with users through a combination of natural language-based conversations. Responses can come in the form of text, links, buttons, calendars, or other widgets that accelerate the speed with which a user can respond.
 
-![Conversational Virtual Assistants](../assets/images/conversationalbot1.png)
+![Conversational Virtual Assistants](../assets/images/ConversationalBot1.png)
 
 
 AI-powered messaging solutions or Conversational Virtual Assistants serve as the stepping stone to the future. They communicate with intelligent virtual agents, organization apps, websites, social media platforms, and messenger platforms. Users can interact with such assistants using voice or text to access information, complete tasks, and execute transactions.
@@ -41,7 +41,7 @@ In a nutshell, such an assistant can significantly reduce the amount of time and
 * Apply context to improve communication,
 * Handle task interruptions and accomplish what users want.
 
-![Virtual Assistant Key Features](../assets/images/conversationalbot2.png)
+![Virtual Assistant Key Features](../assets/images/ConversationalBot2.png)
 
 ## How Do Conversational Virtual Assistants Work?
 
