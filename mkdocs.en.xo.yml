@@ -162,6 +162,7 @@ nav:
   - API:
     - reference/index.md
     - Debug Logs API: API/debug-logs-api.md
+    - Conversation Details & Summary API: API/conversation-details-summary-api.md
     - Annotations: reference/annotations.md
     - Buttons: reference/buttons.md
     - Code blocks: reference/code-blocks.md
