@@ -73,7 +73,7 @@ To fetch the conversational details and conversation summary data between the bo
 ## Sample Request
 
 
-```
+<code>
 curl --location --request POST 'https://bots.kore.ai/api/public/bot/st-86exxx8d-7021-5f2b-bf6c-8a1xxxxxb0/conversationDetails' \
 --header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTkxY2I0ODlhLThhMDYxxxxxkZTUxYiJ9.uzxDMjnN1eP_HxhRZDoGf6P-ZxxxxxC_Vh1xxxMs' \
 --header 'Content-Type: application/json' \
@@ -81,7 +81,7 @@ curl --location --request POST 'https://bots.kore.ai/api/public/bot/st-86exxx8d-
 "callId":"00001",
 "isSummaryRequired":true
 }'
-```
+</code>
 
 
 
@@ -147,7 +147,7 @@ curl --location --request POST 'https://bots.kore.ai/api/public/bot/st-86exxx8d-
 </table>
 
 
-**Note**: If the session ID is available, the call ID is not mandatory & vice versa. If both are present, the session ID is considered.
+<b>Note</b>: If the session ID is available, the call ID is not mandatory & vice versa. If both are present, the session ID is considered.
 
 
 ## Sample Response
