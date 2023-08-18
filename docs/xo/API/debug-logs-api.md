@@ -172,8 +172,6 @@ Accepted channel types are:
 
 
 ## Sample Response
-
-
 ```
 [
     {
@@ -208,3 +206,4 @@ Accepted channel types are:
             "identity": "Nov22PilotEnv1"
         }
     },
+```
