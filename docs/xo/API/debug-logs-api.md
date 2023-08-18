@@ -1,6 +1,8 @@
 # **Debug Logs API**
 
-To get debug logs of a specific conversation (currently supported only for IVR Channel).
+To fetch debug logs of a specific conversation
+
+**Note**: “**ivrVoice**” (IVR) or **rtm ** (Web/Mobile Client)** **channels are currently supported.
 
 
 <table>
@@ -82,7 +84,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 
 ```
 curl -X GET \
-   'https://{{host}}/api/1.1/{{BotID}}/debuglogs?identity={{id}}&channelType=ivrVoice&minimumInfo=true&limit=5&offset=300&timezone=America/New_York' \
+   'https://{{host}}/api/1.1/{{BotID}}/debuglogs?identity={{id}}&channelType=ivrVoice&minimumInfo=true&limit=5&offset=300&timezone=America/New_York' \  
   -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 ```
 
@@ -109,13 +111,22 @@ curl -X GET \
   <tr>
    <td>identity
    </td>
-   <td>Unique ID associated with the call.
+   <td>Unique ID associated with the conversation.
    </td>
   </tr>
   <tr>
-   <td>channelType
+   <td>channel
    </td>
-   <td> “<strong>ivrVoice</strong>” and <strong>web/mobile client </strong>channels are currently supported.
+   <td>Name of the channel through which the conversation is initiated. The default is ‘rtm’.
+<p>
+Accepted channel types are:
+<ul>
+
+<li>“rtm”
+
+<li>“ivrVoice”
+</li>
+</ul>
    </td>
   </tr>
   <tr>
@@ -193,4 +204,7 @@ curl -X GET \
         "debugLevel": "Info",
         "debugMessage": "entity node initiated",
         "metaInfo": {
-            "channel": "
+             "channel": "ivrVoice",
+            "identity": "Nov22PilotEnv1"
+        }
+    },
