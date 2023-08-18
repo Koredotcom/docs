@@ -2,7 +2,6 @@
 
 This document provides information on the various releases and the corresponding feature updates and enhancements introduced in version 10.1.x of the platform.
 
-
 ## v10.1.8 August 06, 2023
 
 <span style="text-decoration:underline;">Patch Release</span>
