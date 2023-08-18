@@ -13,10 +13,8 @@ To fetch the conversational details and summary between the bot and the user. Th
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td>This API allows only POST method.
-<p>
-<strong>GET Method \
-</strong>Version 1: <code><a href="https://{{host}}//api/public/bot/{{botId}}/conversationhistory">https://{{host}}//api/public/bot/{{botId}}/</a>conversationDetails</code>
+   <td>
+</strong<code>https://{{host}}/api/public/bot/{{botId}}/conversationDetails</code>
    </td>
   </tr>
   <tr>
@@ -31,11 +29,6 @@ To fetch the conversational details and summary between the bot and the user. Th
    <td><code>auth: {{JWT}}</code>
    </td>
   </tr>
-</table>
-
-
-
-<table>
   <tr>
    <td><strong>API Scope</strong>
    </td>
