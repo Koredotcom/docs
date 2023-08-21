@@ -200,8 +200,62 @@ Accepted channel types are:
         "debugLevel": "Info",
         "debugMessage": "entity node initiated",
         "metaInfo": {
-             "channel": "ivrVoice",
+            "channel": "ivrVoice",
             "identity": "Nov22PilotEnv1"
         }
     },
+    {
+        "timestamp": "2018-11-22T13:06:17.258Z",
+        "debugTitle": "Nam",
+        "debugLevel": "Info",
+        "debugMessage": "Waiting for user input",
+        "metaInfo": {
+            "channel": "ivrVoice",
+            "identity": "Nov22PilotEnv1"
+        }
+    },
+    {
+        "debugTitle": "Nam",
+        "debugMessage": "User prompt parsing",
+        "debugLevel": "info",
+        "timestamp": "2018-11-22T13:06:17.304Z",
+        "metaInfo": {
+            "channel": "ivrVoice",
+            "identity": "Nov22PilotEnv1"
+        }
+    },
+    {
+        "debugTitle": "Nam",
+        "debugMessage": "User prompt parsing successful",
+        "debugLevel": "info",
+        "debugDetail": "\"Let me know your name\\n\"",
+        "timestamp": "2018-11-22T13:06:17.325Z",
+        "metaInfo": {
+            "channel": "ivrVoice",
+            "identity": "Nov22PilotEnv1"
+        }
+    },
+    {
+        "timestamp": "2018-11-22T13:06:31.464Z",
+        "nomatch_count": "2",
+        "noinput_count": "0",
+        "debugTitle": "Nam",
+        "debugLevel": "Warning",
+        "debugMessage": "executeNode has invoked due to MAX_NO_MATCH event",
+        "metaInfo": {
+            "channel": "ivrVoice",
+            "identity": "Nov22PilotEnv1"
+        }
+    },
+    {
+        "timestamp": "2018-11-22T13:07:54.395Z",
+        "debugTitle": "Company: Reached end of dialog",
+        "debugLevel": "Info",
+        "metaInfo": {
+            "channel": "ivrVoice",
+            "identity": "Nov22PilotEnv1"
+        }
+    }
+]
+
 ```
