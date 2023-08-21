@@ -1,9 +1,10 @@
 # **Debug Logs API**
 
-To fetch debug logs of a specific conversation
+To fetch debug logs of a specific conversation.
 
-**Note**: “**ivrVoice**” (IVR) or **rtm ** (Web/Mobile Client)** **channels are currently supported.
+!!! note "Supported Channels"
 
+ “**ivrVoice**” (IVR) or **rtm ** (Web/Mobile Client)** **channels are currently supported.
 
 <table>
   <tr>
@@ -87,8 +88,6 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    'https://{{host}}/api/1.1/{{BotID}}/debuglogs?identity={{id}}&channelType=ivrVoice&minimumInfo=true&limit=5&offset=300&timezone=America/New_York' \  
   -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 ```
-
-
 
 ## Body Parameters
 
