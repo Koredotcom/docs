@@ -81,13 +81,11 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 
 ## Sample Request
 
-
 ```
-curl -X GET \
+  curl -X GET \
    'https://{{host}}/api/1.1/{{BotID}}/debuglogs?identity={{id}}&channelType=ivrVoice&minimumInfo=true&limit=5&offset=300&timezone=America/New_York' \  
   -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 ```
-
 
 
 
