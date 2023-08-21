@@ -151,6 +151,9 @@ curl --location --request POST 'https://bots.kore.ai/api/public/bot/st-86exxx8d-
 
 <b>Note</b>: If the session ID is available, the call ID is not mandatory & vice versa. If both are present, the session ID is considered.
 
+!!! warning "Session ID Use Case"
+
+    If the session ID is available, the call ID is not mandatory & vice versa. If both are present, the session ID is considered.
 
 ## Sample Response
 
