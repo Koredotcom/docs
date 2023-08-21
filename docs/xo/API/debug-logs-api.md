@@ -2,9 +2,10 @@
 
 To fetch debug logs of a specific conversation.
 
-!!! note "Supported Channels"
 
- “**ivrVoice**” (IVR) or **rtm ** (Web/Mobile Client)** **channels are currently supported.
+ !!! note "Channels Supported"
+
+    “**ivrVoice**” (IVR) or **rtm ** (Web/Mobile Client)** **channels are currently supported.
 
 <table>
   <tr>
