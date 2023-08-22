@@ -177,10 +177,10 @@ nav:
     - Lists: reference/lists.md
     - Math: reference/math.md
     - Tooltips: reference/tooltips.md
-  - Insiders:
+  - Analytics:
     - insiders/index.md
-    - Getting started:
-      - Installation: insiders/getting-started.md
+    - Analyze:
+      - Dashboard Filters: analytics/dashboard-filters.md
       - Changelog: insiders/changelog.md
   - Blog:
     - blog/index.md
