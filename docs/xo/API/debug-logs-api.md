@@ -72,7 +72,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   <tr>
    <td>BotID
    </td>
-   <td>Bot ID. You can access it from the General Settings page of the bot.
+   <td>Bot ID or stream ID. You can access it from the General Settings page of the bot.
    </td>
   </tr>
 </table>
