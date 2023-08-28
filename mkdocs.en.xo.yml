@@ -129,9 +129,11 @@ nav:
         - Digital Skills: getting-started.md
         - Feedback Survey: getting-started.md
       - Training: 
-        - Topic 1: getting-started.md 
-        - Topic 2: getting-started.md 
-        - Topic N: getting-started.md 
+        - Intents: getting-started.md 
+        - Entities: getting-started.md 
+        - Bot Synonymns: getting-started.md
+        - Traits: getting-started.md
+        - Fields: getting-started.md
         - NLU Configuration: getting-started.md      
     - Contributing:
       - contributing/index.md
