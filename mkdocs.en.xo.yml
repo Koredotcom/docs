@@ -120,6 +120,7 @@ nav:
     - Alternatives: alternatives.md
     - License: license.md
   - AUTOMATION:
+    - Use Cases:
       - Design:
         - Dialogs: getting-started.md 
         - Knowledge AI: getting-started.md
