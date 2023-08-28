@@ -107,6 +107,8 @@ copyright: |
 nav:
   - Home: index.md
   - Getting started:
+    - Virtual Assistants Overview: virtual-assistants-overview.md
+    - Web & Mobile SDK Message Formatting and Templates: web-mobile-SDK-message-formatting-and-templates.md
     - What's new: whats-new/whats-new-in-this-release.md
     - Recent Updates: whats-new/10-1-x-release-notes.md
     - Installation: getting-started.md
@@ -117,12 +119,13 @@ nav:
     - Philosophy: philosophy.md
     - Alternatives: alternatives.md
     - License: license.md
-  - Overview:
-    - Virtual Assistants Overview: virtual-assistants-overview.md
-    - Web & Mobile SDK Message Formatting and Templates: web-mobile-SDK-message-formatting-and-templates.md
-    - Changelog:
-      - changelog/index.md
-      - How to upgrade: upgrade.md
+  - Automation:
+    - Uses Cases:
+      - Dialogs: automation/dailogs.md 
+      - Knowledge AI: automation/knowledge-ai.md
+      - Alert Tasks: automation/alert-tasks.md
+      - Small Talk: automation/small-talk.md
+      - Digital Skills: automation/digital-skills.md
     - Contributing:
       - contributing/index.md
       - Reporting a bug: contributing/reporting-a-bug.md
