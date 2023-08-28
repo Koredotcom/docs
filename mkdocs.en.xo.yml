@@ -150,6 +150,11 @@ nav:
         - Standard Responses: getting-started.md 
         - Manage Interruptions: getting-started.md 
         - Ignore Words and Field Memory: getting-started.md
+      - Utterance Testing: 
+      - Regression Testing: 
+        - Health and Monitoring: getting-started.md 
+        - Batch Testing: getting-started.md
+        - Conversation Testing: getting-started.md
     - Contributing:
       - contributing/index.md
       - Reporting a bug: contributing/reporting-a-bug.md
