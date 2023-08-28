@@ -145,8 +145,7 @@ nav:
       - Conversation Management: 
         - Standard Responses: getting-started.md 
         - Manage Interruptions: getting-started.md 
-        - Ignore Words and Field Memory: getting-started.md
-      - Utterance Testing: 
+        - Ignore Words and Field Memory: getting-started.md 
       - Regression Testing: 
         - Health and Monitoring: getting-started.md 
         - Batch Testing: getting-started.md
