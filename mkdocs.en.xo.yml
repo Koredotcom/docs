@@ -120,19 +120,18 @@ nav:
     - Alternatives: alternatives.md
     - License: license.md
   - AUTOMATION:
-    - Use Cases:
-      - Dialogs: getting-started.md 
-      - Knowledge AI: getting-started.md
-      - Alert Tasks: getting-started.md
-      - Small Talk: getting-started.md
-      - Digital Skills: getting-started.md
-      - Feedback Survey: getting-started.md
-    - Natural Language:
+      - Design:
+        - Dialogs: getting-started.md 
+        - Knowledge AI: getting-started.md
+        - Alert Tasks: getting-started.md
+        - Small Talk: getting-started.md
+        - Digital Skills: getting-started.md
+        - Feedback Survey: getting-started.md
       - Training: 
         - Topic 1: getting-started.md 
         - Topic 2: getting-started.md 
         - Topic N: getting-started.md 
-      - NLU Configuration: getting-started.md      
+        - NLU Configuration: getting-started.md      
     - Contributing:
       - contributing/index.md
       - Reporting a bug: contributing/reporting-a-bug.md
