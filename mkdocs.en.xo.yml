@@ -119,13 +119,20 @@ nav:
     - Philosophy: philosophy.md
     - Alternatives: alternatives.md
     - License: license.md
-  - Automation:
-    - Uses Cases:
-      - Dialogs: automation/dailogs.md 
-      - Knowledge AI: automation/knowledge-ai.md
-      - Alert Tasks: automation/alert-tasks.md
-      - Small Talk: automation/small-talk.md
-      - Digital Skills: automation/digital-skills.md
+  - AUTOMATION:
+    - Use Cases:
+      - Dialogs: getting-started.md 
+      - Knowledge AI: getting-started.md
+      - Alert Tasks: getting-started.md
+      - Small Talk: getting-started.md
+      - Digital Skills: getting-started.md
+      - Feedback Survey: getting-started.md
+    - Natural Language:
+      - Training: 
+        - Topic 1: getting-started.md 
+        - Topic 2: getting-started.md 
+        - Topic N: getting-started.md 
+      - NLU Configuration: getting-started.md      
     - Contributing:
       - contributing/index.md
       - Reporting a bug: contributing/reporting-a-bug.md
