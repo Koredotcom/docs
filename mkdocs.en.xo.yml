@@ -142,6 +142,10 @@ nav:
         - Intent Events: getting-started.md 
         - conversation Events: getting-started.md 
         - Sentiment Events: getting-started.md
+      - Conversation Management: 
+        - Standard Responses: getting-started.md 
+        - Manage Interruptions: getting-started.md 
+        - Ignore Words and Field Memory: getting-started.md
     - Contributing:
       - contributing/index.md
       - Reporting a bug: contributing/reporting-a-bug.md
