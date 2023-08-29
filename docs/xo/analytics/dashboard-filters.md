@@ -18,7 +18,8 @@ To understand the filter criteria availability on different dashboards, see the 
 
 
 !!! note "Default period"
-By default, the VA dashboard displays data for the past 24 hours.
+
+    By default, the VA dashboard displays data for the past 24 hours.
 
 
 ## Filter Criteria Descriptions
