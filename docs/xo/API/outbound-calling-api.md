@@ -106,7 +106,7 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
   <tr>
    <td>target
    </td>
-   <td>URI of the target of the outbound call. For example: 	
+   <td>URI of the target of the outbound call. For example:
 <ul>
 
 <li>“tel:911234567890” with the country code
@@ -174,7 +174,7 @@ If not provided, It will pick the default carrier for that account.
    </td>
    <td>Time in milliseconds to wait for a speech before returning amd_no_speech_detected.
    </td>
-   <td>no, \
+   <td>no,
 default=5000
    </td>
   </tr>
@@ -183,7 +183,7 @@ default=5000
    </td>
    <td>Time in milliseconds to wait before returning amd_decision_timeout.
    </td>
-   <td>no, \
+   <td>no,
 default=15000
    </td>
   </tr>
@@ -192,7 +192,7 @@ default=15000
    </td>
    <td>Time in milliseconds to wait to hear a tone.
    </td>
-   <td>no, \
+   <td>no,
 default=20000
    </td>
   </tr>
@@ -201,7 +201,7 @@ default=20000
    </td>
    <td>Silence in milliseconds to wait for during greeting before returning amd_machine_stopped_speaking.
    </td>
-   <td>no, \
+   <td>no,
 default=2000
    </td>
   </tr>
@@ -223,9 +223,9 @@ default=2000
 
 
 1. “disconnect”: Machine detection is enabled, and the call is disconnected in amd.
-2. “detect”: Machine detection is enabled, and the call is not disconnected in amd. \
+2. “detect”: Machine detection is enabled, and the call is not disconnected in amd.
  	
-3. “disabled”: Machine detection is not enabled.	
+3. “disabled”: Machine detection is not enabled.
    </td>
    <td>
 string, optional
@@ -293,7 +293,7 @@ curl --location --request POST '{{host}}/api/1.1/public/bot/:<bot>/smartassist/d
 
 # **2. Receiving Call Status Notifications**
 
-To receive call status notifications using the `notifyUrl` property on the dial-out request. When this property is set, SAVG sends an HTTP POST request to the specified URL. 
+To receive call status notifications using the `notifyUrl` property on the dial-out request. When this property is set, SAVG sends an HTTP POST request to the specified URL.
 
 
 ## Sample Response
@@ -408,7 +408,7 @@ User-Agent: abc
 
 <li>“completed”: The call was completed (disconnected) after it was answered. 	
 
-<li>"failed": The call ended before it was answered. \
+<li>"failed": The call ended before it was answered.
  	
 
 <li>“answered”: When a call connection is established.
@@ -424,9 +424,9 @@ User-Agent: abc
    <td>If the status is "failed", it provides the reason for the failure:
 <ul>
 
-<li>“Busy here”: The target number was busy.	
+<li>“Busy here”: The target number was busy.
 
-<li>“Service Unavailable”: When the server is not available. \
+<li>“Service Unavailable”: When the server is not available.
  	
 
 <li>“Temporarily Unavailable”: The end-user declined or rejected the call.
@@ -435,9 +435,9 @@ User-Agent: abc
 If the status is "completed", it provides the reason for the call end:
 <ul>
 
-<li>“Caller-disconnected”: The call was disconnected from the end-user side.	
+<li>“Caller-disconnected”: The call was disconnected from the end-user side.
 
-<li>“Bot-disconnected”: The call was disconnected by the bot. \
+<li>“Bot-disconnected”: The call was disconnected by the bot.
  	
 
 <li>“SAVG-disconnected”: The call was disconnected due to amd-error.
@@ -487,25 +487,25 @@ If the status is "completed", it provides the reason for the call end:
    <td>This property is included when answering machine detection is enabled (<code>machineDetection </code>is configured to "disconnect") and detected, and the call ends. It provides the detection reason:
 <ul>
 
-<li>“amd_human_detected”: A human is speaking. \
+<li>“amd_human_detected”: A human is speaking.
  	
 
-<li>“amd_machine_detected”: A machine is speaking. \
+<li>“amd_machine_detected”: A machine is speaking.
  	
 
-<li>“amd_no_speech_detected”: No speech was detected. \
+<li>“amd_no_speech_detected”: No speech was detected.
  	
 
-<li>“amd_decision_timeout”: No decision was made in the time given. \
+<li>“amd_decision_timeout”: No decision was made in the time given.
  	
 
-<li>“amd_machine_stopped_speaking”: A machine has 	completed the greeting. \
+<li>“amd_machine_stopped_speaking”: A machine has completed the greeting.
  	
 
-<li>“amd_tone_detected”:	A beep was detected. \
+<li>“amd_tone_detected”: A beep was detected.
  	
 
-<li>“amd_error”: An error has occurred. \
+<li>“amd_error”: An error has occurred.
  	
 
 <li>“amd_stopped”: Answering machine detection was stopped.
