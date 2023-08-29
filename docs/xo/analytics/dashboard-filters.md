@@ -17,7 +17,7 @@ The dashboard filters are used to filter and view the analytics data for virtual
 To understand the filter criteria availability on different dashboards, see the [Filter Criteria Matrix.](https://developer.kore.ai/docs/bots/analyzing-your-bot/dashboard-filter-criteria/#Filter_Criteria_Matrix)
 
 
-!!! note "Default period"
+!!! note
     By default, the VA dashboard displays data for the past 24 hours.
 
 
