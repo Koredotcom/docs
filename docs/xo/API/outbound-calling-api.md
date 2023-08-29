@@ -157,7 +157,7 @@ If not provided, It will pick the default carrier for that account.
   <tr>
    <td>timers
    </td>
-   <td>An object containing various timeout properties like: \
+   <td>An object containing various timeout properties like:
 
 
 <table>
