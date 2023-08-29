@@ -210,7 +210,7 @@ nav:
       - Dashboard Filters: analytics/dashboard-filters.md
       - Changelog: insiders/changelog.md
   - Guides:
-      - Snippet Extraction Stage: answer generation/test-shruti.md
+      - Snippet Extraction Stage: answergeneration/test-shruti.md
   - Blog:
     - blog/index.md
     - 2022:
