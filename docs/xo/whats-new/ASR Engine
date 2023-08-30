@@ -22,19 +22,10 @@ Steps to configure or modify the ASR Engine settings:
     ![Alt text](<../assets/images/ASR Engine/image_5.png>)
     1. Enter a parameter name and value in the **Name** and **Value** fields. \
     ![Alt text](<../assets/images/ASR Engine/image_6.png>)
- \
 The names and values are used to include the corresponding property in the VoiceXML definition in the IVR system and Session Parameters in the AudioCodes channel. These values defined for a node or a standard response override the global Call Control Parameters defined in the VA IVR /AudioCodes settings page.
     2. Click **Confirm**.
     Checking out how a note looks like in MD.
-7. Click **Save** to complete the process. \
+7. Click **Save** to complete the process.
     ![Alt text](<../assets/images/ASR Engine/image_7.png>)
   
 
-
-**Note**: Trial Note \
- 	 \
- 	This is a trial to see how a note renders in MD. \
-
-**warning** "Session ID Use Case"
-
-If the session ID is available, the call ID is not mandatory & vice versa. If both are present, the session ID is considered.
