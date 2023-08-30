@@ -18,12 +18,13 @@ If you are a first-time user, you must sign up using your valid email address an
 ![Alt text](../assets/images/agent-assist-revised-onboarding/enter-signup-details.png)
 !!! note
     This is a trial note to view how the note feature renders in GIT.
+
 5. Enter your first name in the **First Name** field.
 6. Enter your last name in the **Last Name** field.
 7. Enter your company or account name in the **Company/Account name** field.
-8. Enter a password of your choice in the **Password** field. \
+8. Enter a password of your choice in the **Password** field.
 !!! note
-Your password should be at least eight characters with no spaces, and include an alphabet, a special character, a number, and a lower and an uppercase letter.
+    Your password should be at least eight characters with no spaces, and include an alphabet, a special character, a number, and a lower and an uppercase letter.
 9. Re-enter your password in the **Confirm password** field.
 10. Click **Sign up**.
 ![Alt text](../assets/images/agent-assist-revised-onboarding/signup-completion-page.png)
@@ -31,7 +32,7 @@ Your password should be at least eight characters with no spaces, and include an
 ![Alt text](../assets/images/agent-assist-revised-onboarding/verification-link-email-notification.png)
 12. Click the **Verify Email** button.
 ![Alt text](../assets/images/agent-assist-revised-onboarding/verify-email.png)
-!!! note
+    !!! note
     If you can’t click the **Verify Email** button, copy the URL (highlighted) and paste it into a browser manually.
 
     After successful verification, you land in the following page:
