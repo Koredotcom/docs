@@ -42,7 +42,7 @@ To start using AgentAssist, you must have an account with AgestAssist and sign i
 
 ### Steps to sign in:
 
-1. Refer to [point-1](#bookmark=id.1yo3y3tq5771).
+1. Refer to [point-1](#setup-process).
 2. Enter your email address, and click **Continue**, as highlighted in the following screenshot.
 ![Alt text](../assets/images/agent-assist-revised-onboarding/enter-email-address.png)
 3. Enter your password.
