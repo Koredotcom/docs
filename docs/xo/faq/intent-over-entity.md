@@ -14,7 +14,7 @@ Configure Intent Over Entity
 
 Steps to configure Intent over Entity:
 
-1. Go to** AUTOMATIONS > Attached bots > Click the bot to be configured**.
+1. Go to **AUTOMATIONS** > **Attached bots** > Click the bot to be configured.
 
 ![Select Bot](<../../assets/images/Select bot.png>)
 
