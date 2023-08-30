@@ -9,7 +9,7 @@ There are two options for configuration:
 1. **Intent over Entity**: The ongoing intent automatically terminates, initiating a new dialogue. For example: If a customer intends to place an order and during the interaction changes their intent and requests to edit the order, the system terminates the ongoing intent (place order) and initiates a new intent (edit order).
 
 
-![!\[alt_text\](images/image1.png "image_tooltip")](<../../assets/images/Intent over Entity.png>)
+![Intent Over Entity](<../../assets/images/Intent over Entity.png>)
 
 
 2. **Entity over Intent**: The ongoing dialogue task proceeds normally, considering the customer input as an entity value, and allows the dialogue task to progress to the next node. For example: If a customer intends to place an order and during the interaction changes their intent and requests to edit the order, the system continues with the ongoing intent to place the order.
