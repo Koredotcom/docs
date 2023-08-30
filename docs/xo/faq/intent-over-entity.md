@@ -30,11 +30,11 @@ Steps to configure Intent over Entity:
 3. The **Dialog Tasks** page appears. Clicking anywhere in the row opens the flow designer for the dialog task.
 
 
-!![Dialog Task Page](<../../assets/images/Dialog Tasks page.png>)
+![Dialog Task Page](<../../assets/images/Dialog Tasks page.png>)
  
 
 
-!![Flow Designer Page](<../../assets/images/Flow designer page.png>)
+![Flow Designer Page](<../../assets/images/Flow designer page.png>)
 
 4. Click the **ENTITY** node to be configured and then click the **INSTANCE PROPERTIES** tab.
 
@@ -42,8 +42,6 @@ Steps to configure Intent over Entity:
 ![Entity Node](<../../assets/images/Entity Node.png>)
 
 5. Click **Advanced Controls** and select **Intent over Entity**. A check box confirms the selection.
-
-
 
 ![Advanced Controls](images/image7.png "image_tooltip")(<../../assets/images/Advanced Controls.png>)
 
