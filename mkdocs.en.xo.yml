@@ -119,8 +119,8 @@ nav:
     - Philosophy: philosophy.md
     - Alternatives: alternatives.md
     - License: license.md
-  - AUTOMATION:
-    - Use Cases:
+  - Automation:
+    - Conversation Automation:
       - Design:
         - Dialogs: getting-started.md 
         - Knowledge AI: getting-started.md
@@ -209,6 +209,8 @@ nav:
     - Analyze:
       - Dashboard Filters: analytics/dashboard-filters.md
       - Changelog: insiders/changelog.md
+  - Guides:
+      - Snippet Extraction Stage: guides/answergeneration/test-shruti.md
   - Blog:
     - blog/index.md
     - 2022:
