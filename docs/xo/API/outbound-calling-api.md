@@ -1,7 +1,3 @@
-
-
-
-
 # **Outbound Calling API (SAVG)**
 
 
@@ -20,7 +16,6 @@ This process happens in two parts:
 # **1. Triggering the Outbound Call via API**
 
 The application triggers an outbound call using an HTTP POST request to the endpoint.
-
 
 <table>
   <tr>
@@ -57,10 +52,7 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
   </tr>
 </table>
 
-
-
 ## Path Parameters
-
 
 <table>
   <tr>
@@ -89,10 +81,7 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
   </tr>
 </table>
 
-
-
 ## Query Parameters
-
 
 <table>
   <tr>
@@ -159,7 +148,6 @@ If not provided, It will pick the default carrier for that account.
    </td>
    <td>An object containing various timeout properties like:
 
-
 <table>
   <tr>
    <td><strong>PROPERTY</strong>
@@ -207,8 +195,6 @@ default=2000
   </tr>
 </table>
 
- 	
-
    </td>
    <td>object, optional
 
@@ -219,8 +205,6 @@ default=2000
 
    </td>
    <td>Activates machine (answering machine and fax) detection. Possible values:
-
-
 
 1. “disconnect”: Machine detection is enabled, and the call is disconnected in amd.
 2. “detect”: Machine detection is enabled, and the call is not disconnected in amd.
@@ -245,10 +229,7 @@ string, optional
   </tr>
 </table>
 
-
-
 ## Sample Request
-
 
 ```
 curl --location --request POST '{{host}}/api/1.1/public/bot/:<bot>/smartassist/dialout' \
@@ -276,11 +257,7 @@ curl --location --request POST '{{host}}/api/1.1/public/bot/:<bot>/smartassist/d
        }
     }
 ```
-
-
-
 ## Sample Response
-
 
 ```
 {
@@ -288,16 +265,11 @@ curl --location --request POST '{{host}}/api/1.1/public/bot/:<bot>/smartassist/d
 "callId":"2c01240f-6880-123c-179b-02d8f501xxxx"
 }
 ```
-
-
-
 # **2. Receiving Call Status Notifications**
 
 To receive call status notifications using the `notifyUrl` property on the dial-out request. When this property is set, SAVG sends an HTTP POST request to the specified URL.
 
-
 ## Sample Response
-
 
 ```
 POST /notify HTTP/1.1
@@ -378,10 +350,7 @@ User-Agent: abc
 }
 ```
 
-
-
 ## Response Body Parameters
-
 
 <table>
   <tr>
@@ -406,7 +375,7 @@ User-Agent: abc
    <td>Call status:
 <ul>
 
-<li>“completed”: The call was completed (disconnected) after it was answered. 	
+<li>“completed”: The call was completed (disconnected) after it was answered.
 
 <li>"failed": The call ended before it was answered.
  	
@@ -516,4 +485,3 @@ If the status is "completed", it provides the reason for the call end:
    </td>
   </tr>
 </table>
-
