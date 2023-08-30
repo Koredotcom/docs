@@ -119,8 +119,8 @@ nav:
     - Philosophy: philosophy.md
     - Alternatives: alternatives.md
     - License: license.md
-  - AUTOMATION:
-    - Use Cases:
+  - Automation:
+    - Conversation Automation:
       - Design:
         - Dialogs: getting-started.md 
         - Knowledge AI: getting-started.md
