@@ -39,7 +39,8 @@ Manage Interruption Behavior
 
 This feature allows you to manage the interaction's interruption behavior to suit your requirements. There are several pre-configured scenarios available to be configured.
 
-**NOTE**: Interruption Behavior can be configured only when Intent over Entity is selected.
+!!! **NOTE**
+    : Interruption Behavior can be configured only when Intent over Entity is selected.
 
 Steps to configure Interruption Behavior:
 
