@@ -16,16 +16,15 @@ You can create a new workspace from scratch or join an existing workspace.
 **To create a workspace from the All-Workspaces icon, follow these steps:**
 
 
-
 1. Hover over the icon on the primary navigation panel and All workspaces pop-up is displayed.
 2. Click the + icon on the All workspaces pop-up. The Create Workspace dialog box is displayed.
 3. Enter a workspace name in the Give it a name field.
 4. Select the icon to select an emoji for your workspace. The list of emojis is displayed and you can select.
-5. Select **Visibility** from the drop-down box. You can select from one of the following: \
-Private: Your workspace is discoverable by members only if they are invited. \
+5. Select **Visibility** from the drop-down box. You can select from one of the following: 
+Private: Your workspace is discoverable by members only if they are invited. 
 Public: Anyone in the organization can join this workspace.
-6. Select **Discoverability** from the drop-down box. You can select from one of the following: \
-Other members can request to join the workspace. \
+6. Select **Discoverability** from the drop-down box. You can select from one of the following: 
+Other members can request to join the workspace. 
 Other members cannot find your workspace.
 7. Type and add members in the Add members field.
 8. Click **Create workspace**. Your workspace is live now and you can start adding boards from this space.
@@ -38,7 +37,7 @@ Other members cannot find your workspace.
 
 
 1. Click the three dots icon corresponding to the &lt;Workspace name>on the left panel of the Workspace landing page. A pop-up with a list of options is displayed.
-2. Click **+Create workspace**. The **Create Workspace** dialog box is displayed. \
+2. Click **+Create workspace**. The **Create Workspace** dialog box is displayed. 
 
 ![Test Image](<../assets/images/Agent Chat Metrics Report.png>)
 
