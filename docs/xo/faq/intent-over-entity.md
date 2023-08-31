@@ -21,7 +21,7 @@ Steps to configure Intent over Entity:
 
 3. The **Dialog Tasks** page appears. Clicking anywhere in the row opens the flow designer for the dialog task.
 
-![Dialod Task Page](../assets/images/dialog-task-page.png)
+![Dialog Task Page](../assets/images/dialog-task-page.png)
 
 ![Flow Designer](../assets/images/flow-designer-page.png)
 
@@ -47,8 +47,7 @@ Steps to configure Interruption Behavior:
 
 2. Click **Manage Interruptions** from the dropdown menu. The **Manage Interruption Behavior** page appears.
 
-![MAnage Interruption Behavior](../assets/images/manage-interruption-behavior.png)
-
+![Interruption Behavior Dropdown](../assets/images/manage-interruption-dropdown.png)
 ![Manage Interruption Behavior](../assets/images/manage-interruption-behavior.png)
 
 3. Select the required interruption behavior. A confirmation is displayed.
