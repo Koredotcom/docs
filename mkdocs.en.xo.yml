@@ -214,7 +214,7 @@ nav:
   - Guides:
       - Snippet Extraction Stage: guides/answergeneration/test-shruti.md
       - Overview:
-        - Create a New Workspace: create-a-new-workspace.md
+        - Create a New Workspace: guide/overview/create-a-new-workspace.md
   - Blog:
     - blog/index.md
     - 2022:
