@@ -74,7 +74,7 @@ You can remove an existing group for irrelevance or other reasons.
 4. Click the **delete** button on the subsequent screen.
     ![Alt text](../assets/images/agent-coaching-groups/delete-group-button.png)
 5. Click **Yes** on the confirmation screen, as shown in the following screenshot.
-    ![Alt text](../assets/images/agent-coaching-groups/delete-group-confirmation.png){ width="300" }
+    ![Alt text](../assets/images/agent-coaching-groups/delete-group-confirmation.png){ width="200" }
 
 
 **Group Rules:**
