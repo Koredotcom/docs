@@ -1,5 +1,5 @@
 
-# **Links Demo**
+# Links Demo
 
 
 1. Open link from image [![Mushroom](../mushroom.png 'Mushroom Cute')](https://www.pngwing.com/en/free-png-duoxo)
