@@ -1,7 +1,3 @@
-
-
-
-
 # **Intent Discovery (Beta)**
 
 The new Intent Discovery module helps you auto-extract popular intents from previous user conversations. It reduces the time and effort to build a virtual assistant and leads to the success of your Conversational AI Journey. This is a beta feature and is available only for the English language and Enterprise users.
@@ -16,7 +12,7 @@ You can upload your historical transcripts in CSV format. After the transcripts 
 
 The Intent Discovery journey consists of the following steps:
 
-1. [Create a Project](#Create_a_Project): You may have many business use cases to automate. Projects help manage intent discovery for each business use case separately – a project for a specific use case.
+1. [Create a Project](#create-a-project): You may have many business use cases to automate. Projects help manage intent discovery for each business use case separately – a project for a specific use case.
 2. [Upload Transcripts](#upload-transcripts): Upload your use case-specific historical transcripts in CSV format. Conversations are extracted from the uploaded transcripts.
 3. [Extract Intents:](#extract-intents) Intents and training data are extracted from the conversations.
 4. [Train the Utterances](#train-the-utterances) to create new intents or add them as training data: You can add new intents as dialogs or FAQs or train them for existing dialogs or FAQs.
@@ -26,7 +22,7 @@ The Intent Discovery journey consists of the following steps:
 
 ## Create a Project
 
-1. Go to **Build **>** Tools **>** Intent Discovery**.
+1. Go to **Build > Tools > Intent Discovery**.
 
 
 
@@ -275,7 +271,7 @@ Once the intents are listed, you can perform the following actions for the inten
 
 1. Click the **Add/Train** dropdown across the intent, then select the **Dialog Task** option under **Add**. The **Add Dialog Task** dialog box for the intent is displayed. 
 2. Provide a name and description for the new intent. 
-3. All the utterances qualified for the extracted intent are displayed in a table. The bookmark icon appears if you have bookmarked this utterance in the Extracted Intent Details dialog box. 
+3. All the utterances qualified for the extracted intent are displayed in a table. The bookmark icon appears if you have bookmarked this utterance in the [Extracted Intent Details](#extracted-intent-details) dialog box. 
 4. Select all the required utterances and click the **Add to Bot** button. A confirmation message is shown on adding a new Dialog Task.
 
 
@@ -413,11 +409,6 @@ For example:
 1. Click the **Add/Train** dropdown across the intent, then select the **FAQ** option under **Train**. The **Train FAQ** dialog box for the intent is displayed.
 2. Select the FAQ to be trained from the **FAQ** drop-down. A label box showing the current Bot Response appears. Select all the required utterances from the table below and click **Add Utterances**.
 
-
-
-<p id="gdcalert30" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image28.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert31">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](../assets/images/intent-discovery/train-faq-st1.png)
 
 
@@ -435,7 +426,7 @@ For example:
 
 
 
-* If **Trained ‘n’ new FAQs** text/tag is existing, then the count increases by 1. For example: **Trained 1 new FAQ** will be changed to** Trained 2 new FAQs**.
+* If **Trained ‘n’ new FAQs** text/tag is existing, then the count increases by 1. For example: **Trained 1 new FAQ** will be changed to **Trained 2 new FAQs**.
 * If there are no intents created so far, then the text becomes **Trained 1 new FAQ**.
 
 Additionally, the training will reflect under the **Results** column against the project name on the Intent Discovery homepage.
@@ -450,10 +441,7 @@ For example:
 
 ### Change the status of utterances
 
-You can change the status of utterances between **Yet to Review **and **Reviewed **on the 
-
-
-[Extracted Intent Details](#heading=h.or02a2woat2e) dialog box. You can change the status of one or multiple utterances in a go as per requirement.
+You can change the status of utterances between **Yet to Review** and **Reviewed**  on the [Extracted Intent Details](#extracted-intent-details) dialog box. You can change the status of one or multiple utterances in a go as per requirement.
 
 
 ## Reusing an existing project
