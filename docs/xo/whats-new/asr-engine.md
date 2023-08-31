@@ -11,7 +11,6 @@ Steps to configure or modify the ASR Engine settings:
 1. Log in to [AgentAssist](https://agentassist.kore.ai/koreagentassist/) using your credentials.
 2. Click **Configuration > Speech Recognition**. \
     ![Alt text](../assets/images/asr-engine/image_1.png)
-
 3. Click **Speech Recognition** on the ASR engine page. \
     ![Alt text](../assets/images/asr-engine/image_2.png)
 4. Select your preference in the **Speech Recognition Preference** list. \
@@ -24,8 +23,7 @@ Steps to configure or modify the ASR Engine settings:
     ![Alt text](../assets/images/asr-engine/image_6.png)
 The names and values are used to include the corresponding property in the VoiceXML definition in the IVR system and Session Parameters in the AudioCodes channel. These values defined for a node or a standard response override the global Call Control Parameters defined in the VA IVR /AudioCodes settings page.
     2. Click **Confirm**.
-    Checking out how a note looks like in MD.
-7. Click **Save** to complete the process.
+    3. Click **Save** to complete the process.
     ![Alt text](../assets/images/asr-engine/image_7.png)
 
 > [!NOTE]  
