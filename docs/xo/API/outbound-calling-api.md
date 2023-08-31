@@ -78,13 +78,9 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
 
 
    <div class="result" markdown>
+   !!! note "Channels Supported"
 
-   !!! note
-
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-       nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-       massa, nec semper lorem quam in massa.
-
+        “ivrVoice” (IVR) or rtm  (Web/Mobile Client) channels are currently supported.
    </div>
 
    </td>
