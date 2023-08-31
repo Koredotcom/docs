@@ -40,6 +40,8 @@ Other members cannot find your workspace.
 1. Click the three dots icon corresponding to the &lt;Workspace name>on the left panel of the Workspace landing page. A pop-up with a list of options is displayed.
 2. Click **+Create workspace**. The **Create Workspace** dialog box is displayed. 
 
+![Test Image](<../assets/images/Agent Chat Metrics Report.png>)
+
 !!! note 
     Repeat the process that is documented from step 3 of the preceding procedure to continue.
 
