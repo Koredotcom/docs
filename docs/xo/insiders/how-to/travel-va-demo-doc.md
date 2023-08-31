@@ -1,28 +1,3 @@
-<!-----
-
-Yay, no errors, warnings, or alerts!
-
-Conversion time: 0.323 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β34
-* Thu Aug 31 2023 01:20:06 GMT-0700 (PDT)
-* Source doc: Git DemoDoc-Travel VA
-
-WARNING:
-You have 2 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
-
------>
-
 
 # **Travel Assistant Overview**
 
@@ -41,4 +16,4 @@ Conversation skills are central to your VA, since they make the functionality po
 4. Some [Knowledge Graph](https://developer.kore.ai/uncategorised/build-a-travel-assistant-knowledge-graph/) FAQs along with relevant structure that lets your VA reply to users’ questions, initiate tasks and detect intents appropriately. 
 5. A [Smart Alert](https://developer.kore.ai/docs/bots/how-tos/travel-planing-assistant/schedule-a-smart-alert/) that sends users weather forecasts.
 
-[![Mushroom](../mushroom.png 'Mushroom Cute')](https://www.pngwing.com/en/free-png-duoxo)
+[![Mushroom](../mushroom.png 'Mushroom Cute')](https://www.pngwing.com/en/free-png-duoxo){:target="_blank"}
