@@ -77,15 +77,10 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
    <td>botId or streamId. You can access it from the General Settings page of the bot.
 
 
-   <div class="result" markdown>
+   !!! note "Channels Supported"
 
-   !!! note
+        “ivrVoice” (IVR) or rtm  (Web/Mobile Client) channels are currently supported.
 
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-       nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-       massa, nec semper lorem quam in massa.
-
-   </div>
 
    </td>
    <td>string, required
