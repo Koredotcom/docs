@@ -15,6 +15,7 @@ You can create a new workspace from scratch or join an existing workspace.
 
 **To create a workspace from the All-Workspaces icon, follow these steps:**
 
+![Alt text](<../assets/images/create workspace 1.gif>)
 
 1. Hover over the icon on the primary navigation panel and All workspaces pop-up is displayed.
 2. Click the + icon on the All workspaces pop-up. The Create Workspace dialog box is displayed.
