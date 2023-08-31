@@ -30,8 +30,9 @@ With more and more issues and situations arising that have common or related sol
 3. Click **Agent** **Coaching** from the left menu. The **Agent Coaching** page is displayed with pre-existing groups, if any.
 
     ![Alt text](../assets/images/agent-coaching-groups/agent-coaching-page.png)
-4. Click the **+ New Coaching Group** button. \
+4. Click the **+ New Coaching Group** button.
     ![Alt text](../assets/images/agent-coaching-groups/new-coaching-group.png)
+
 5. Enter a name for the new group in the **Name** field.
 6. Enter a short description about the new group in the **Description** field.
 7. Click **Save**. The new group appears on the list of pre-existing group names.
@@ -137,7 +138,7 @@ You can remove an existing group for irrelevance or other reasons.
 
 !!! Note "About this document"
     It’s a trial document to view how notes render in GIT.
-[`tip`](#type:tip){ #type:tip }
+(#type:tip){ #type:tip }
 
 :   !!! tip
         Do not publish this document.
