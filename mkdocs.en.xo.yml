@@ -107,6 +107,8 @@ copyright: |
 nav:
   - Home: index.md
   - Getting started:
+    - Virtual Assistants Overview: virtual-assistants-overview.md
+    - Web & Mobile SDK Message Formatting and Templates: web-mobile-SDK-message-formatting-and-templates.md
     - What's new: whats-new/whats-new-in-this-release.md
     - Recent Updates: whats-new/10-1-x-release-notes.md
     - Installation: getting-started.md
@@ -117,12 +119,37 @@ nav:
     - Philosophy: philosophy.md
     - Alternatives: alternatives.md
     - License: license.md
-  - Overview:
-    - Virtual Assistants Overview: virtual-assistants-overview.md
-    - Web & Mobile SDK Message Formatting and Templates: web-mobile-SDK-message-formatting-and-templates.md
-    - Changelog:
-      - changelog/index.md
-      - How to upgrade: upgrade.md
+  - Automation:
+    - Conversation Automation:
+      - Design:
+        - Dialogs: getting-started.md 
+        - Knowledge AI: getting-started.md
+        - Alert Tasks: getting-started.md
+        - Small Talk: getting-started.md
+        - Digital Skills: getting-started.md
+        - Feedback Survey: getting-started.md
+      - Training: 
+        - Intents: getting-started.md 
+        - Entities: getting-started.md 
+        - Bot Synonyms: getting-started.md
+        - Traits: getting-started.md
+        - Fields: getting-started.md
+      - NLU Configuration: 
+        - Engine Tuning: getting-started.md 
+        - Amend Entity: getting-started.md 
+        - Multi Intent Detect: getting-started.md
+      - Events: 
+        - Intent Events: getting-started.md 
+        - conversation Events: getting-started.md 
+        - Sentiment Events: getting-started.md
+      - Conversation Management: 
+        - Standard Responses: getting-started.md 
+        - Manage Interruptions: getting-started.md 
+        - Ignore Words and Field Memory: getting-started.md 
+      - Regression Testing: 
+        - Health and Monitoring: getting-started.md 
+        - Batch Testing: getting-started.md
+        - Conversation Testing: getting-started.md
     - Contributing:
       - contributing/index.md
       - Reporting a bug: contributing/reporting-a-bug.md
@@ -133,6 +160,7 @@ nav:
       - Creating a reproduction: guides/creating-a-reproduction.md
     - FAQ:
       - Sponsoring: faq/sponsoring.md
+      - Intent Over Entity: faq/intent-over-entity.md
   - Setup:
     - setup/index.md
     - Changing the colors: setup/changing-the-colors.md
@@ -162,6 +190,7 @@ nav:
   - API:
     - reference/index.md
     - Debug Logs API: API/debug-logs-api.md
+    - Outbound Calling API: API/outbound-calling-api.md
     - Conversation Details & Summary API: API/conversation-details-summary-api.md
     - Annotations: reference/annotations.md
     - Buttons: reference/buttons.md
@@ -182,6 +211,10 @@ nav:
     - Analyze:
       - Dashboard Filters: analytics/dashboard-filters.md
       - Changelog: insiders/changelog.md
+  - Guides:
+      - Snippet Extraction Stage: guides/answergeneration/test-shruti.md
+      - Overview:
+        - Create a New Workspace: overview/create-a-new-workspace.md
   - Blog:
     - blog/index.md
     - 2022:
