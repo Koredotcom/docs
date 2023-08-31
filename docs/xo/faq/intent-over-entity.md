@@ -1,4 +1,4 @@
-How does Intent Over Entity work?
+# How does Intent Over Entity work?
 
 [Intent](https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/#I) over [Entity](https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/#E) is a bot-level setting configured on the [Dialog Task](https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/#D) to prioritize a customer’s intent. The bot understands the intention behind the customer's input. By focusing on the intent, the system quickly determines the customer's requirements and the desired outcome, and provides more efficient and effective responses.
 
