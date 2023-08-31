@@ -1,6 +1,6 @@
 # **Debug Logs API**
 
-To fetch debug logs of a specific conversation.
+To fetch debug logs of specific conversations.
 
 
 !!! note "Channels Supported"
