@@ -13,7 +13,7 @@ This process happens in two parts:
 2. Receiving Call Status Notifications.
 
 
-# **1. Triggering the Outbound Call via API**
+## **1. Triggering the Outbound Call via API**
 
 The application triggers an outbound call using an HTTP POST request to the endpoint.
 
@@ -52,7 +52,7 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
   </tr>
 </table>
 
-## Path Parameters
+### Path Parameters
 
 <table>
   <tr>
@@ -81,7 +81,7 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
   </tr>
 </table>
 
-## Query Parameters
+### Query Parameters
 
 <table>
   <tr>
@@ -229,7 +229,7 @@ string, optional
   </tr>
 </table>
 
-## Sample Request
+### Sample Request
 
 ```
 curl --location --request POST '{{host}}/api/1.1/public/bot/:<bot>/smartassist/dialout' \
@@ -257,7 +257,7 @@ curl --location --request POST '{{host}}/api/1.1/public/bot/:<bot>/smartassist/d
        }
     }
 ```
-## Sample Response
+### Sample Response
 
 ```
 {
@@ -265,11 +265,11 @@ curl --location --request POST '{{host}}/api/1.1/public/bot/:<bot>/smartassist/d
 "callId":"2c01240f-6880-123c-179b-02d8f501xxxx"
 }
 ```
-# **2. Receiving Call Status Notifications**
+## **2. Receiving Call Status Notifications**
 
 To receive call status notifications using the `notifyUrl` property on the dial-out request. When this property is set, SAVG sends an HTTP POST request to the specified URL.
 
-## Sample Response
+### Sample Response
 
 ```
 POST /notify HTTP/1.1
@@ -350,7 +350,7 @@ User-Agent: abc
 }
 ```
 
-## Response Body Parameters
+### Response Body Parameters
 
 <table>
   <tr>
