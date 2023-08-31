@@ -138,7 +138,6 @@ You can remove an existing group for irrelevance or other reasons.
 
 !!! Note "About this document"
     It’s a trial document to view how notes render in GIT.
-(#type:tip){ #type:tip }
 
-:   !!! tip
-        Do not publish this document.
+!!! tip
+    Do not publish this document.
