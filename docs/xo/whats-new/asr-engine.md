@@ -27,6 +27,11 @@ The names and values are used to include the corresponding property in the Voice
     Checking out how a note looks like in MD.
 7. Click **Save** to complete the process.
     ![Alt text](../assets/images/asr-engine/image_7.png)
-!!! note
-    trial note
 
+> **Note**
+>
+This is an important note.
+
+> **Warning**
+>
+Your warning text here.
