@@ -28,10 +28,11 @@ The names and values are used to include the corresponding property in the Voice
 7. Click **Save** to complete the process.
     ![Alt text](../assets/images/asr-engine/image_7.png)
 
-> **Note**
->
-This is an important note.
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
 
-> **Warning**
->
-Your warning text here.
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
