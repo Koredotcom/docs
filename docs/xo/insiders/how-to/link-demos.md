@@ -1,6 +1,7 @@
 
-# Links Demo
+# Playing with links
 
+how do different kind of links going to work?
 
 1. Open link from image [![Mushroom](../mushroom.png 'Mushroom Cute')](https://www.pngwing.com/en/free-png-duoxo)
 2. [Open link through text](https://developer.kore.ai/docs/bots/how-tos/update-booking-task/) 
