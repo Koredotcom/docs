@@ -24,8 +24,7 @@ The Intent Discovery journey consists of the following steps:
 
 
 
-## 
-    Create a Project
+## Create a Project
 
 1. Go to **Build **>** Tools **>** Intent Discovery**.
 
