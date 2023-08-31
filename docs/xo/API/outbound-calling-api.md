@@ -77,7 +77,7 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
    <td>botId or streamId. You can access it from the General Settings page of the bot.
 
 !!! note
-       test note
+    test note
    </td>
    <td>string, required
    </td>
