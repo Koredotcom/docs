@@ -3,7 +3,7 @@
 
 Learn about the new features and enhancements included in v10.1 of **Kore.ai Experience Optimization Platform** which was released on April 16, 2023.
 
-The v10.1 of the Kore.ai XO Platform focuses on leveraging the power of **Large Language Models** and **Generative AI** to enable enterprises to create intelligent conversational experiences. The release offers a copilot for smart assistance, better conversational capabilities, and delivers personalized responses.
+The v10.1 of the Kore.ai XO Platform focuses on leveraging the power of **Large Language Models** and **Generative AI** to enable enterprises to create intelligent and context-specific conversational experiences. The release offers a copilot for smart assistance, better conversational capabilities, and delivers personalized responses.
 
 The key features and enhancements included in this release are listed below:
 
