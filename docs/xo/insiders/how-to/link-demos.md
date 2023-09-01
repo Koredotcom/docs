@@ -20,8 +20,8 @@ how do different kind of links going to work?
                    initial-scale=1.0">
     <style>
         .box {
-            background-color: black;
-            height: 100vh;
+            background-color: white;
+            height: 80px;
             display: flex;
             align-items: center;
             justify-content: center;
