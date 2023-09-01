@@ -7,7 +7,7 @@ You can upload your historical transcripts in CSV format. After the transcripts 
 
 
 
-![Intent_Discovery](../assets/images/intent-discovery/intent-discovery-intro.png)
+![Intent_Discovery](../assets/images/intent-discovery/intent-discovery-intro.png) { width="800" }
  
 
 The Intent Discovery journey consists of the following steps:
