@@ -17,7 +17,12 @@ The Intent Discovery journey consists of the following steps:
 
 1. Go to **Build > Tools > Intent Discovery**.
 
-![alt_text](../assets/images/intent-discovery/create-project.png)
+![Image caption](../assets/images/intent-discovery/create-project.png) {width = "300"}
+
+<figure markdown>
+  ![Image title](../assets/images/intent-discovery/create-project.png){ width="300" }
+  <figcaption>Image caption</figcaption>
+</figure>
 
 2. Click the **Create Project** button.
 3. Enter a name and a brief description of the project. Note that the character limit for Project Name is 256, and Description is 1000. Click **Proceed**. 
