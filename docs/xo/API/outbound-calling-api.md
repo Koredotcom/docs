@@ -75,6 +75,10 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
    <td>botId
    </td>
    <td>botId or streamId. You can access it from the General Settings page of the bot.
+
+  !!! note
+      <div class="alert alert-info"> if session ID is available call ID is not mandatory &amp; vice versa. If both are present session ID will be considered.</div>
+
 !!! note "Channels Supported"
 
     “ivrVoice” (IVR) or rtm  (Web/Mobile Client) channels are currently supported.
