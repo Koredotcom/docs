@@ -6,6 +6,8 @@ Note that this stage is only used for the Extractive Model of producing answer s
 
 ![alt_text](images/answersnippets1.png "image_tooltip")
 
+<a href="images/answersnippets1.png" rel="some text"><img src="images/answersnippets1.png"></img></a>
+
 Use the following fields to configure this Workbench stage.
 
 **Stage Name**: Give an appropriate name to the stage for easy identification.
