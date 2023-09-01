@@ -17,9 +17,9 @@ The Intent Discovery journey consists of the following steps:
 
 1. Go to **Build > Tools > Intent Discovery**.
 
-![Image title](../assets/images/intent-discovery/create-project.png =400x400)
+![Image title](../assets/images/intent-discovery/create-project.png)
 
-<img src="../assets/images/intent-discovery/create-project.png" alt="Create a Project" width="75%" height="75% title="Create a Project">
+<img src="/docs/xo/assets/images/intent-discovery/create-project.png" alt="Create a Project" width="75%" height="75% title="Create a Project">
 
 <figure markdown>
 ![Image caption](../assets/images/intent-discovery/create-project.png){ width="500" }{ align=left }
