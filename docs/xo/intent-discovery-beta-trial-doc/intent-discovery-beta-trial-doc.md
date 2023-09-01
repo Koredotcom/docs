@@ -4,10 +4,7 @@ The new Intent Discovery module helps you auto-extract popular intents from prev
 
 You can upload your historical transcripts in CSV format. After the transcripts are uploaded into the bot, the bot uses LLMs to identify the different topics, intents, or conversations between the user and the bot. It intelligently identifies all the intents available. You can review each intent to understand which conversations have resulted in identifying these intents. After the review, you can also see the underline utterances that resulted in identifying an intent. You can either add these intents as new intents for your virtual assistant or pick specific utterances and train them as utterances for your existing dialogs and FAQs. So, it helps both ways – either create new intents or enhance the training you provide to your virtual assistant.
 
-
-
-<img src="../assets/images/intent-discovery/intent-discovery-intro.png" alt="Intent_Discovery" style="zoom:75%;" />
-
+![alt_text](../assets/images/intent-discovery/intent-discovery-intro.png)
 
 The Intent Discovery journey consists of the following steps:
 
@@ -16,17 +13,16 @@ The Intent Discovery journey consists of the following steps:
 3. [Extract Intents:](#extract-intents) Intents and training data are extracted from the conversations.
 4. [Train the Utterances](#train-the-utterances) to create new intents or add them as training data: You can add new intents as dialogs or FAQs or train them for existing dialogs or FAQs.
 
-
-
-
 ## Create a Project
 
 1. Go to **Build > Tools > Intent Discovery**.
 
+![Image caption](../assets/images/intent-discovery/create-project.png) {width = "300"}
 
-
-<img src="../assets/images/intent-discovery/create-project.png" alt="alt_text" style="zoom:25%;" />
-
+<figure markdown>
+  ![Image title](../assets/images/intent-discovery/create-project.png){ width="300" }
+  <figcaption>Image caption</figcaption>
+</figure>
 
 2. Click the **Create Project** button.
 3. Enter a name and a brief description of the project. Note that the character limit for Project Name is 256, and Description is 1000. Click **Proceed**. 
@@ -37,10 +33,7 @@ The new project is created. You see the Intent Discovery page with the header �
 
 ![alt_text](../assets/images/intent-discovery/upload-transcript.png)
 
-
-
 The Intent Discovery landing page lists all the projects with conversational insights for each project, such as the status of the project, number of sessions, intents extracted, and results in terms of added dialogs, added FAQs, trained dialogs, and trained FAQs. Note that the result will be NA for the projects for which intent extraction is incomplete.
-
 
 The status of a project can be any of the following, displayed in the Status column:
 
@@ -49,12 +42,9 @@ The status of a project can be any of the following, displayed in the Status col
 * Intent Extraction In Progress
 * Intents Extracted
 
-
 ![alt_text](../assets/images/intent-discovery/intent-discovery-page.png)
 
-
 **Note**: You can create **a maximum of 10 projects** per VA. You can change an existing project’s name and description anytime.
-
 
 ## Upload Transcripts
 
@@ -62,14 +52,11 @@ On the Intent Discovery page for the new project, you can see a button to initia
 
 ![alt_text](../assets/images/intent-discovery/upload-transcript.png)
 
-
 You can download the sample CSV file by clicking the link. Ensure to upload transcripts in the format specified in the sample file. Please note that **all the columns in the file must be filled**.
-
 
 ### Format of the CSV (Transcript) file
 
 ![alt_text](../assets/images/intent-discovery/sample-csv-file.png)
-
 
 
 <table>
@@ -123,8 +110,6 @@ You can download the sample CSV file by clicking the link. Ensure to upload tran
   </tr>
 </table>
 
-
-
 ### Limitations
 
 * Number of transcripts files allowed: Up to 5 CSV files per project.
@@ -157,10 +142,9 @@ If some transcript files are uploaded but No intents extracted so far, the** Man
         * Invalid File
         * Upload Failed
 
-    
+
 
 ![alt_text](../assets/images/intent-discovery/transcript-list.png)
-
 
 
 The dialog box has the provision to download a sample file using the **Sample File** button and upload additional transcript files by clicking the **Upload Transcripts** button.
