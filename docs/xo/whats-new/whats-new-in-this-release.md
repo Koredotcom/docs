@@ -13,7 +13,7 @@ Key features and enhancements included in this release are listed below:
 
 ### Enhanced Bot Creation Journey with Use Case Suggestions
 
-Create Virtual Assistants faster with the new bot creation process that lets you generate use cases automatically. Dialog Tasks are auto-created along with the bot, providing you with the base framework to fast-track your VA creation journey. [Learn more].
+Create Virtual Assistants faster with the new bot creation process that lets you generate use cases automatically. Dialog Tasks are auto-created along with the bot, providing you with the base framework to fasttrack your VA creation journey. [Learn more].
 
 ### Automatic Dialog Generation
 
