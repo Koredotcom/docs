@@ -7,10 +7,6 @@ The v10.1 of the Kore.ai XO Platform focuses on leveraging the power of **Large 
 
 > **Note**
 Your note text here
-
-> **Warning**
-Your warning text here
-
 The key features and enhancements included in this release are listed below:
 
 
