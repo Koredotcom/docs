@@ -54,5 +54,6 @@ jobs:
           path: .cache
       - run: pip install mkdocs-material 
       - run: pip install mike --force-reinstall --verbose
+      - run: pip install mkdocs-glightbox
       # - run: mike deploy --push --update-aliases 1.0 latest --ignore
       # - run: mkdocs gh-deploy --force
