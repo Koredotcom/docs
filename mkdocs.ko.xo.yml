@@ -36,6 +36,7 @@ theme:
 plugins:
   - search:
       lang: tr
+  - glightbox      
 extra:
   version:
     provider: mike
