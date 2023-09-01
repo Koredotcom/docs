@@ -75,7 +75,7 @@ how do different kind of links going to work?
 <body>
     <div class="box">
         <a href="#popup-box">
-            Click the image to enlarge ! <img src="../mushroom.png" width="60" height="60">
+            Click the image to enlarge ! <img src="/mushroom.png" width="60" height="60">
         </a>
     </div>
     <div id="popup-box" class="modal">
@@ -84,7 +84,7 @@ how do different kind of links going to work?
                 This is a Mushroom !
             </h1>
             <b>
-                <p><img src="../mushroom.png"></p>
+                <p><img src="/mushroom.png"></p>
             </b>
             <a href="#"
                class="box-close">
