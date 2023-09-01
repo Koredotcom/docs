@@ -6,9 +6,8 @@ You can upload your historical transcripts in CSV format. After the transcripts 
 
 
 
+<img src="../assets/images/intent-discovery/intent-discovery-intro.png" alt="Intent_Discovery" style="zoom:75%;" />
 
-![Intent_Discovery](../assets/images/intent-discovery/intent-discovery-intro.png) { width="800" }
- 
 
 The Intent Discovery journey consists of the following steps:
 
@@ -26,7 +25,7 @@ The Intent Discovery journey consists of the following steps:
 
 
 
-![alt_text](../assets/images/intent-discovery/create-project.png)
+<img src="../assets/images/intent-discovery/create-project.png" alt="alt_text" style="zoom:25%;" />
 
 
 2. Click the **Create Project** button.
@@ -136,7 +135,7 @@ You can download the sample CSV file by clicking the link. Ensure to upload tran
 
 1. Click the **Upload Transcript** button, and then browse and select the transcripts files (CSV format). The selected files are uploaded, and you see a prompt to manage the transcripts on the next page.
 
- 
+
 ![alt_text](../assets/images/intent-discovery/browse-for-transcript.png)
 
 
@@ -330,7 +329,7 @@ For example:
 
 
 ![alt_text](../assets/images/intent-discovery/train-dialog-task-st3.png)
- 
+
 
 The **Actions** column text for the intent will reflect the training of a new dialog task. 
 
