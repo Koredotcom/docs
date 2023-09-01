@@ -28,5 +28,5 @@ The names and values are used to include the corresponding property in the Voice
 7. Click **Save** to complete the process.
     ![Alt text](../assets/images/asr-engine/image_7.png)
 !!! note
-    trial note
+    trial note added here.
 
