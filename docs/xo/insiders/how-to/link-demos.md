@@ -7,7 +7,7 @@ how do different kind of links going to work?
 [![Mushroom](../mushroom.png){ width=60} ](https://www.pngwing.com/en/free-png-duoxo) 
 2. [Open link through text](https://developer.kore.ai/docs/bots/how-tos/update-booking-task/) 
 3. <a href="https://developer.kore.ai/uncategorised/change-flight-task/" target="_blank">Open link in new tab</a>
-4. Some [Knowledge Graph](https://developer.kore.ai/uncategorised/build-a-travel-assistant-knowledge-graph/) FAQs along with relevant structure that lets your VA reply to users’ questions, initiate tasks and detect intents appropriately. 
+4. 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -75,16 +75,16 @@ how do different kind of links going to work?
 <body>
     <div class="box">
         <a href="#popup-box">
-            Click to Open Popup Box !
+            Click the image to enlarge ! <img src="../mushroom.png" width="60" height="60">
         </a>
     </div>
     <div id="popup-box" class="modal">
         <div class="content">
             <h1 style="color: green;">
-                Hello GeeksForGeeks !
+                This is a Mushroom !
             </h1>
             <b>
-                <p>Never Give Up !</p>
+                <p><img src="../mushroom.png"></p>
             </b>
             <a href="#"
                class="box-close">
