@@ -72,6 +72,9 @@
     
     </div>
 
+
+End of tab
+
 <div class="grid cards" markdown>
 
 :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
@@ -103,9 +106,7 @@ Change the colors, fonts, language, icons, logo and more with a few lines
 Material for MkDocs is licensed under MIT and available on [GitHub]
 [:octicons-arrow-right-24: License](#)
 
-
 </div>
-
 
 <div class="grid" markdown>
 
