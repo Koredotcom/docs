@@ -14,6 +14,7 @@ theme:
     - navigation.sections
     - navigation.top
     - navigation.path
+    - navigation.footer
     - search.suggest
     - search.highlight
     - content.tabs.link
