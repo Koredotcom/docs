@@ -19,6 +19,19 @@
 
 </div>
 
+=== "Dialogs"
+
+| Introduction to Dialog Task                                  | Navigate Dialog   Task                                         | Build Dialog  Task                                            |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| A core component of the XO Platform, an essential tool for building conversations that are connected to your business logic. | Explore all about the Dialog Builder and how you can combine human interaction and business logic. | Use the Dialog Builder to create dialog tasks from start to end. |
+  
+
+=== "Nodes"
+
+    Tab 2
+
+
+
 === "Tab 1"
 
     <div class="grid cards" markdown>
