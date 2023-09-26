@@ -42,6 +42,9 @@ plugins:
 extra:
   version:
     provider: mike
+  analytics:
+    provider: google
+    property: G-6GL1FRPFB3
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/Koredotcom
