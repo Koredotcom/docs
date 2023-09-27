@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 <details>
     <summary>Q&A_1</summary>
     <p>Q&A_1_content</p>
@@ -141,20 +146,20 @@ Material for MkDocs is licensed under MIT and available on [GitHub]
     <kr-grid type="g1" >
         <kr-grid-item>
             <img src="https://i.pcmag.com/imagery/articles/01eGstfLC8DcJFtCbjOVe69-12..v1623096915.jpg"></img>
-            <kr-grid-title>Introduction to Dialog Tasks</kr-grid-title>
-            <kr-grid-desc>A core component of the XO Platform,an essential tool for building conversationsthat are connected to your business logic.</kr-grid-desc>
+            <kr-grid-title><Span Style="font-size:10px">Introduction to Dialog Tasks</span></kr-grid-title>
+            <kr-grid-desc><Span Style="font-size:10px">A core component of the XO Platform,an essential tool for building conversations that are connected to your business logic.</span></kr-grid-desc>
             <a href="https://kore.ai">Reference</a>
         </kr-grid-item>
         <kr-grid-item>
             <img src="https://i.pcmag.com/imagery/articles/01eGstfLC8DcJFtCbjOVe69-12..v1623096915.jpg"></img>
             <kr-grid-title>Introduction to Dialog Tasks</kr-grid-title>
-            <kr-grid-desc>A core component of the XO Platform,an essential tool for building conversationsthat are connected to your business logic.</kr-grid-desc>
+            <kr-grid-desc>A core component of the XO Platform,an essential tool for building conversations that are connected to your business logic.</kr-grid-desc>
             <a href="https://kore.ai">Reference</a>
         </kr-grid-item>
         <kr-grid-item>
             <img src="https://i.pcmag.com/imagery/articles/01eGstfLC8DcJFtCbjOVe69-12..v1623096915.jpg"></img>
             <kr-grid-title>Introduction to Dialog Tasks</kr-grid-title>
-            <kr-grid-desc>A core component of the XO Platform,an essential tool for building conversationsthat are connected to your business logic.</kr-grid-desc>
+            <kr-grid-desc>A core component of the XO Platform,an essential tool for building conversations that are connected to your business logic.</kr-grid-desc>
             <a href="https://kore.ai">Reference</a>
         </kr-grid-item>
     </kr-grid>
