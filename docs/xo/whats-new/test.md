@@ -146,9 +146,9 @@ Material for MkDocs is licensed under MIT and available on [GitHub]
     <kr-grid type="g1" >
         <kr-grid-item>
             <img src="https://i.pcmag.com/imagery/articles/01eGstfLC8DcJFtCbjOVe69-12..v1623096915.jpg"></img>
-            <kr-grid-title><Span Style="font-size:12px">Introduction to Dialog Tasks</span></kr-grid-title>
-            <kr-grid-desc><Span Style="font-size:12px">A core component of the XO Platform,an essential tool for building conversations that are connected to your business logic.</span></kr-grid-desc>
-            <Span Style="font-size:12px"><a href="https://kore.ai">Reference</a></span>
+            <kr-grid-title><Span Style="font-size:13px">Introduction to Dialog Tasks</span></kr-grid-title>
+            <kr-grid-desc><Span Style="font-size:13px">A core component of the XO Platform, an essential tool for building conversations that are connected to your business logic.</span></kr-grid-desc>
+            <Span Style="font-size:13px"><a href="https://kore.ai">Reference</a></span>
         </kr-grid-item>
         <kr-grid-item>
             <img src="https://i.pcmag.com/imagery/articles/01eGstfLC8DcJFtCbjOVe69-12..v1623096915.jpg"></img>
