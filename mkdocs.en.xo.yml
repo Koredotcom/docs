@@ -20,6 +20,7 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - header.autohide
   language: en
   palette:
     - scheme: default
