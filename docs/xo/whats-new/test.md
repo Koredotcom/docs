@@ -122,3 +122,39 @@ Material for MkDocs is licensed under MIT and available on [GitHub]
 > :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
 
 </div>
+
+
+
+
+
+
+=== "Tab 1"
+
+    <div class="grid cards" markdown>
+
+    one
+    
+    </div>
+
+=== "Tab 2"
+
+    <kr-grid type="g1" >
+        <kr-grid-item>
+            <img src="https://i.pcmag.com/imagery/articles/01eGstfLC8DcJFtCbjOVe69-12..v1623096915.jpg"></img>
+            <kr-grid-title>Introduction to Dialog Tasks</kr-grid-title>
+            <kr-grid-desc>A core component of the XO Platform,an essential tool for building conversationsthat are connected to your business logic.</kr-grid-desc>
+            <a href="https://kore.ai">Reference</a>
+        </kr-grid-item>
+        <kr-grid-item>
+            <img src="https://i.pcmag.com/imagery/articles/01eGstfLC8DcJFtCbjOVe69-12..v1623096915.jpg"></img>
+            <kr-grid-title>Introduction to Dialog Tasks</kr-grid-title>
+            <kr-grid-desc>A core component of the XO Platform,an essential tool for building conversationsthat are connected to your business logic.</kr-grid-desc>
+            <a href="https://kore.ai">Reference</a>
+        </kr-grid-item>
+        <kr-grid-item>
+            <img src="https://i.pcmag.com/imagery/articles/01eGstfLC8DcJFtCbjOVe69-12..v1623096915.jpg"></img>
+            <kr-grid-title>Introduction to Dialog Tasks</kr-grid-title>
+            <kr-grid-desc>A core component of the XO Platform,an essential tool for building conversationsthat are connected to your business logic.</kr-grid-desc>
+            <a href="https://kore.ai">Reference</a>
+        </kr-grid-item>
+    </kr-grid>
