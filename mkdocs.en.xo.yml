@@ -43,6 +43,7 @@ plugins:
 extra:
   version:
     provider: mike
+  generator: false
   analytics:
     provider: google
     property: G-6GL1FRPFB3
@@ -59,16 +60,7 @@ extra:
           data: 0
           note: >- 
             Thanks for your feedback! Help us improve this page by
-            using our <a href="https://community.kore.ai/" target="_blank" rel="noopener">feedback form</a>.
-  social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/Koredotcom
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/Koredotcom
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/Koredotcom
-    - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/Koredotcom
+            using our <a href="https://community.kore.ai/" target="_blank" rel="noopener">feedback form</a>.  
   alternate:
     - name: en - English 
       link: https://docsinternal-kore.github.io/docs/en
