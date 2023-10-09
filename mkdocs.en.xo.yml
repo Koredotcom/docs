@@ -37,6 +37,7 @@ theme:
       accent: lime
     
 plugins:
+  - tags:
   - search:
       lang: tr
   - glightbox   
