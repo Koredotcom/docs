@@ -18,7 +18,7 @@ IVR Properties are accessible by going to a Dialog Task, selecting an _Entity, M
 
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<p>[alt_text](./images/access-ivr.png )</p>
 
  \
 This document details the voice call properties and how they vary across various channels.
@@ -238,7 +238,7 @@ Voice Call Properties apply only for the following nodes and message types:
 
 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<p>('./images/timeout_prompt.png')</p>
 
 
 
