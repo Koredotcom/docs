@@ -242,7 +242,7 @@ Voice Call Properties apply only for the following nodes and message types:
 Most settings are the same for all nodes, with a few exceptions.
 
 
-![timeout prompt](../images/timeout_prompt.png)
+![timeout prompt](../images/timeout_prompts.png )
 
 
 
@@ -521,7 +521,7 @@ SmartAssist Gateway
 <p>
 Once the property is enabled, you can see one or more language codes corresponding to the bot languages.  Enter the locale code for a specific bot language in the <strong>Locale Value</strong> field. For example, enter ‘<strong>US</strong>‘ or ‘<strong>UK</strong>‘ as the Locale Value for the English (EN) bot language.
 
-![Locale Definition](../images/locale_definition.png)
+![Locale Definition](../images/locale_definition.png )
 
 
 <p>
