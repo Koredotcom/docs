@@ -1,17 +1,12 @@
 # **Small Talk**
 
-**Small Talk** refers to the casual conversations that a Virtual Assistant can have with end users. The ability to engage end users in casual conversations helps socialize your assistant and improves recall rates.
+**Small Talk** refers to the casual conversations that a Virtual Assistant can have with end users. The ability to engage end users in casual conversations helps your assistant socialize better with customers and improves recall rates.
 
 The Small Talk conversation is designed as a series of interaction volleys between the assistant and the user. VAs that can answer social inputs like _How Are You?_ are more likely to create a positive impression and help build an invaluable connection with the user.
 
 You can find Small Talk on the Unified XO Platform under **Build > Conversational Skills > Small Talk**.
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
-
+![Small Talk Navigation](../use-cases/images/small-talk-navigation.png "Small Talk Navigation")
 
 # Benefits
 
