@@ -5,7 +5,7 @@ The Conversations Dashboard provides insights into how conversations are handled
 To view the Conversations Dashboard, click the **Analyze** tab on the top menu and then click **Conversations Dashboard** in the left navigation. Select appropriate filters on the dashboard and click **Apply**.
 
 
-![Conversations Dashbaord](/docs/xo/analytics/images/conversations-dashboard-navigation-and-filter.png "Conversations Dashbaord")
+![Conversations Dashbaord](./images/conversations-dashboard-navigation-and-filter.png "Conversations Dashbaord")
 
 
 !!! note
@@ -17,18 +17,18 @@ The Conversations Dashboard is organized into four categories based on the conve
 
 ## Conversation Sessions
 
-Conversation Sessions display the total number of conversations between the virtual assistant and a user in a specific period of time. The session starts when a user sends a message and ends when the user indicates that the problem is solved, abandons the chat, or reaches the agent transfer node. For details on the metrics used in each widget/category, see the [Metrics Table](/docs/xo/analytics/conversations-dashboard.md#metrics-table) section in this document.
+Conversation Sessions display the total number of conversations between the virtual assistant and a user in a specific period of time. The session starts when a user sends a message and ends when the user indicates that the problem is solved, abandons the chat, or reaches the agent transfer node. For details on the metrics used in each widget/category, see the [Metrics Table](./conversations-dashboard.md#metrics-table) section in this document.
 
-![Conversation Sessions](/docs/xo/analytics/images/conversation-sessions.png "Conversation Sessions")
+![Conversation Sessions](./images/conversation-sessions.png "Conversation Sessions")
 
 
 ## Self-service Rate
 
 Self-service sessions refer to the conversations that the virtual assistant contains. The **Self-service Rate** widget displays the percentage and total number of self-service conversations. It also shows the percentage increase or decrease in the self-service conversations from the last selected period. For example, if you select the past 24 hours’ data, the widget displays the percentage and total conversation sessions contained in the past 24 hours. Based on your selection, the widget can also display the rise or drop in the percentage of conversation sessions from the previous 24 hours. Any ongoing conversation is classified under Self-service conversation.
 
-If a dialog task reaches the <em>End Of Dialog</em> node, the task is considered as completed and categorized as a self-service. There could be a scenario where a virtual assistant is configured with either a <em>Welcome event</em> or an <em>On-Connect event</em>, and there are multiple messages sent by the virtual assistant without any user interaction. In this case, the platform considers this task as contained and increases the self-service count. For details on the metrics used in each widget/category, see the [Metrics Table](/docs/xo/analytics/conversations-dashboard.md#metrics-table) section in this document.
+If a dialog task reaches the <em>End Of Dialog</em> node, the task is considered as completed and categorized as a self-service. There could be a scenario where a virtual assistant is configured with either a <em>Welcome event</em> or an <em>On-Connect event</em>, and there are multiple messages sent by the virtual assistant without any user interaction. In this case, the platform considers this task as contained and increases the self-service count. For details on the metrics used in each widget/category, see the [Metrics Table](./conversations-dashboard.md#metrics-table) section in this document.
 
-![Self-service Rate](/docs/xo/analytics/images/self-service-rate.png "Self-service Rate")
+![Self-service Rate](./images/self-service-rate.png "Self-service Rate")
 
 ## Drop-off Rate
 
@@ -40,18 +40,18 @@ A drop-off is a conversation session where the user abandons the conversation wi
 * No response from the assistant.
 * The user abandons the assistant during a live conversation.
 
-The **Drop-off Rate** widget displays the percentage and the total number of drop-offs within a selected period. It also shows the percentage increase or decrease in the drop-off sessions from the last selected period. For details on the metrics used in each widget/category, see the [Metrics Table](/docs/xo/analytics/conversations-dashboard.md#metrics-table) section in this document.
+The **Drop-off Rate** widget displays the percentage and the total number of drop-offs within a selected period. It also shows the percentage increase or decrease in the drop-off sessions from the last selected period. For details on the metrics used in each widget/category, see the [Metrics Table](./conversations-dashboard.md#metrics-table) section in this document.
 
-![Drop-off Rate](/docs/xo/analytics/images/drop-off-rate.png "Drop-off Rate")
+![Drop-off Rate](./images/drop-off-rate.png "Drop-off Rate")
 
 
 ## Agent Transfer Rate
 
 Some conversations may require human assistance as the users can’t finish the tasks using the virtual assistant. In such cases, the session is handed over to a human agent for help. When the conversation reaches the point where it’s transferred to an agent – the dialog reaches the agent transfer node, the platform considers this as an Agent Transfer session.
 
-The **Agent Transfer Rate** widget displays the percentage and total number of agent transfers within the selected period. It also shows the percentage increase or decrease in the agent transfer sessions from the last selected period. For details on the metrics used in each widget/category, see the [Metrics Table](/docs/xo/analytics/conversations-dashboard.md#metrics-table) section in this document.
+The **Agent Transfer Rate** widget displays the percentage and total number of agent transfers within the selected period. It also shows the percentage increase or decrease in the agent transfer sessions from the last selected period. For details on the metrics used in each widget/category, see the [Metrics Table](./conversations-dashboard.md#metrics-table) section in this document.
 
-![Agent Transfer Rate](/docs/xo/analytics/images/agent-transfer-rate.png "Agent Transfer Rate")
+![Agent Transfer Rate](./images/agent-transfer-rate.png "Agent Transfer Rate")
 
 !!! note
 
