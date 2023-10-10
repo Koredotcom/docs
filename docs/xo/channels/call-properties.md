@@ -248,8 +248,8 @@ Voice Call Properties apply only for the following nodes and message types:
 
 
 
-**Voice Call Settings Field Reference \
-**The following sections provide detailed descriptions of each IVR setting, including descriptions, applicability to nodes, default values, and other key information.
+**Voice Call Settings Field Reference**
+The following sections provide detailed descriptions of each IVR setting, including descriptions, applicability to nodes, default values, and other key information.
 !!! note
 
     * You can enter prompts in one of these formats: Plain text, Script, File location of an audio file. If you want to define JavaScript or attach an audio file, click the icon before the prompt text message box and select a mode. By default, it is set to Text mode.
@@ -604,11 +604,10 @@ By default this option is disabled.
 </table>
 
 
-Below is a demo of the IVR Properties section, within the Component Properties panel of a Dialog Task node. \
+Below is a demo of the IVR Properties section, within the Component Properties panel of a Dialog Task node.
 
 
 ![Component Properties](../images/ivr-properties.gif )
-
 
 
 
