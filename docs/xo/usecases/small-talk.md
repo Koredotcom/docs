@@ -165,7 +165,7 @@ comment`est`vous comment`ca`va ca`va
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](../usecases/images/image2.png "image_tooltip")
+![alt_text](images/image2.png "image_tooltip")
 
 
 
@@ -193,7 +193,7 @@ You can create a **New Group** manually by clicking **New Group**.
 <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](../usecases/images/image3.png "image_tooltip")
+![alt_text](images/image3.png "image_tooltip")
 
 
 On the New Group dialog box, enter a name in the **Group Name** field, then click **Proceed_._**
@@ -203,7 +203,7 @@ On the New Group dialog box, enter a name in the **Group Name** field, then clic
 <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](../usecases/images/image4.png "image_tooltip")
+![alt_text](images/image4.png "image_tooltip")
 
 
 From the Small Talk editor that opens you can enter User Utterance – Bot Response pairs and **Add** to the list.
@@ -213,7 +213,7 @@ From the Small Talk editor that opens you can enter User Utterance – Bot Respo
 <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](../usecases/images/image5.png "image_tooltip")
+![alt_text](images/image5.png "image_tooltip")
 
 
 
@@ -231,7 +231,7 @@ On hovering over any Small Talk group, you have the option to:
 <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](../usecases/images/image6.png "image_tooltip")
+![alt_text](images/image6.png "image_tooltip")
 
 
 
@@ -247,7 +247,7 @@ If you have already had Small Talk for your company, you can import it using a J
 <p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](../usecases/images/image7.png "image_tooltip")
+![alt_text](images/image7.png "image_tooltip")
 
 * At this point you can download  a sample file to get the formatting details, if you need them. Once your import file is prepared, select it and click **Next**.  \
 
@@ -255,7 +255,7 @@ If you have already had Small Talk for your company, you can import it using a J
 <p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](../usecases/images/image8.png "image_tooltip")
+![alt_text](images/image8.png "image_tooltip")
 
 * The import starts. 
 
