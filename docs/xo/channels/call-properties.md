@@ -387,7 +387,8 @@ SmartAssist Gateway
 <li>For Link, enter the URL of the grammar. Ideally, the URL should be accessible to the IVR system so that the resource can be accessed while executing the calls at runtime
 
 <p>
-<a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Configuring_Grammar">See below for a detailed configuration for Grammar syntax</a>. \
+<a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Configuring_Grammar">See below for a detailed configuration for Grammar syntax</a>.
+
 !!! note
 
     If the <strong>Enable Transcription </strong>option is enabled for the VA along with specifying the source of the transcription engine, defining grammar isn’t mandatory.
@@ -530,7 +531,6 @@ Once the property is enabled, you can see one or more language codes correspondi
 ![Locale Definition](../images/locale_definition.png )
 
 
-<p>
 !!! note
 
     By default, the <strong>Locale Definition</strong> property is disabled for all virtual assistants.
@@ -549,6 +549,7 @@ Once the property is enabled, you can see one or more language codes correspondi
 <p>
 You can use the <strong>Default </strong>DTD settings defined in the Status, Public ID, and System ID fields for the VXML. If you want to modify settings, click <strong>Customize </strong>to change the values.
 <p>
+
 !!! note
 
     If the <strong>Status </strong>field is set to <em>Include</em>, you can enter the Public and System ID. If it is set to <em>Exclude</em>, you cannot view those fields.
@@ -569,6 +570,7 @@ You can add an URL to redirect the conversation whenever the call hangs up.
 <p>
 By default, the <strong>Fallback Redirection</strong> is disabled. If you want to enable the Fallback Redirection, click <strong>Customize</strong>.
 <p>
+
 !!! note
 
     The Fallback Redirection is supported by both standard and universal bots.
