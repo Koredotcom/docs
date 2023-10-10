@@ -449,7 +449,7 @@ SmartAssist Gateway
    <td>Define behavior when either the timeout or number of retry attempts exceed the specified limit. Options include:
 <ul>
 
-<li>Invoke CallTermination Handler
+<li>Invoke Call Termination Handler
 
 <li>Initiate Dialog: Select a Dialog task from the list of VA tasks.
 
@@ -518,7 +518,7 @@ SmartAssist Gateway
 <p>
 Once the property is enabled, you can see one or more language codes corresponding to the bot languages.  Enter the locale code for a specific bot language in the <strong>Locale Value</strong> field. For example, enter ‘<strong>US</strong>‘ or ‘<strong>UK</strong>‘ as the Locale Value for the English (EN) bot language.
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<p>(./images/locale_definition.png)</p>
 
 
 <p>
@@ -587,7 +587,7 @@ By default this option is disabled.
 Below is a demo of the IVR Properties section, within the Component Properties panel of a Dialog Task node. \
 
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<p>(./images/ivr-properties.gif)</p>
 
 
 
