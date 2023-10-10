@@ -5,7 +5,7 @@ The Conversations Dashboard provides insights into how conversations are handled
 To view the Conversations Dashboard, click the **Analyze** tab on the top menu and then click **Conversations Dashboard** in the left navigation. Select appropriate filters on the dashboard and click **Apply**.
 
 
-![Conversations Dashbaord](./images/conversations-dashboard-navigation-and-filter.png "Conversations Dashbaord")
+![Conversations Dashboard](./images/conversations-dashboard-navigation-and-filter.png "Conversations Dashboard")
 
 
 !!! note
