@@ -62,7 +62,7 @@ For Entity and Confirmation nodes, you can define the extraction rule overriding
 <p>
 !!! note
 
- Selecting the <strong>Terminate call</strong> option under <strong>IVR Channel – Voice Call Properties – End of Task Behavior</strong> no longer turns off the End of Task event at the bot level.
+    Selecting the <strong>Terminate call</strong> option under <strong>IVR Channel – Voice Call Properties – End of Task Behavior</strong> no longer turns off the End of Task event at the bot level.
 
 </li>
 </ul>
@@ -97,7 +97,8 @@ SmartAssist Gateway
 <p>
 !!! note
 
-You should use these properties and values in the VXML files for all call flows in the IVR system and Session Parameters in AudioCodes channel.
+  You should use these properties and values in the VXML files for all call flows in the IVR system and Session Parameters in AudioCodes channel.
+
    </td>
    <td>IVR,
 <p>
@@ -156,7 +157,8 @@ SmartAssist Gateway
 <p>
 <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Configuring_Grammar">See below for a detailed configuration for Grammar syntax</a>. \
 !!! note
-If the <strong>Enable Transcription </strong>option is enabled for the VA along with specifying the source of the transcription engine, defining grammar isn’t mandatory.
+
+    If the <strong>Enable Transcription </strong>option is enabled for the VA along with specifying the source of the transcription engine, defining grammar isn’t mandatory.
 </li>
 </ul>
 </li>
@@ -236,24 +238,25 @@ Voice Call Properties apply only for the following nodes and message types:
 * Confirmation Node
 * Standard Responses
 * Welcome Message
-
 !!! note
 
-Most settings are the same for all nodes, with a few exceptions.
+    Most settings are the same for all nodes, with a few exceptions.
 
 
-![timeout prompt](../images/timeout_prompts.png )
+
+![timeout prompts](../images/timeout_prompts.png )
 
 
 
 **Voice Call Settings Field Reference \
 **The following sections provide detailed descriptions of each IVR setting, including descriptions, applicability to nodes, default values, and other key information.
+!!! note
 
-!!! notes on prompts
+    * You can enter prompts in one of these formats: Plain text, Script, File location of an audio file. If you want to define JavaScript or attach an audio file, click the icon before the prompt text message box and select a mode. By default, it is set to Text mode.
+    * You can enter more than one prompt message of different types. You can define their order of sequence by dragging and dropping them.
+    * Multiple prompts are useful in scenarios where the prompt has to be played more than once, to avoid repetition, since the prompts are played in order.
 
-* You can enter prompts in one of these formats: Plain text, Script, File location of an audio file. If you want to define JavaScript or attach an audio file, click the icon before the prompt text message box and select a mode. By default, it is set to Text mode.
-* You can enter more than one prompt message of different types. You can define their order of sequence by dragging and dropping them.
-* Multiple prompts are useful in scenarios where the prompt has to be played more than once, to avoid repetition, since the prompts are played in order.
+
 
 <table>
   <tr>
@@ -385,7 +388,9 @@ SmartAssist Gateway
 <p>
 <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Configuring_Grammar">See below for a detailed configuration for Grammar syntax</a>. \
 !!! note
-If the <strong>Enable Transcription </strong>option is enabled for the VA along with specifying the source of the transcription engine, defining grammar isn’t mandatory.
+
+    If the <strong>Enable Transcription </strong>option is enabled for the VA along with specifying the source of the transcription engine, defining grammar isn’t mandatory.
+
 </li>
 </ul>
 </li>
@@ -527,7 +532,8 @@ Once the property is enabled, you can see one or more language codes correspondi
 <p>
 !!! note
 
- By default, the <strong>Locale Definition</strong> property is disabled for all virtual assistants.
+    By default, the <strong>Locale Definition</strong> property is disabled for all virtual assistants.
+
 
    </td>
    <td>N/A
@@ -542,10 +548,10 @@ Once the property is enabled, you can see one or more language codes correspondi
 <p>
 You can use the <strong>Default </strong>DTD settings defined in the Status, Public ID, and System ID fields for the VXML. If you want to modify settings, click <strong>Customize </strong>to change the values.
 <p>
-
 !!! note
 
-If the <strong>Status </strong>field is set to <em>Include</em>, you can enter the Public and System ID. If it is set to <em>Exclude</em>, you cannot view those fields.
+    If the <strong>Status </strong>field is set to <em>Include</em>, you can enter the Public and System ID. If it is set to <em>Exclude</em>, you cannot view those fields.
+
 
    </td>
    <td>N/A
@@ -562,10 +568,10 @@ You can add an URL to redirect the conversation whenever the call hangs up.
 <p>
 By default, the <strong>Fallback Redirection</strong> is disabled. If you want to enable the Fallback Redirection, click <strong>Customize</strong>.
 <p>
-
 !!! note
 
-The Fallback Redirection is supported by both standard and universal bots.
+    The Fallback Redirection is supported by both standard and universal bots.
+
 
    </td>
    <td>N/A
