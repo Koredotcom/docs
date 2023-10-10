@@ -61,6 +61,7 @@ For Entity and Confirmation nodes, you can define the extraction rule overriding
 
 <p>
 !!! note
+
  Selecting the <strong>Terminate call</strong> option under <strong>IVR Channel – Voice Call Properties – End of Task Behavior</strong> no longer turns off the End of Task event at the bot level.
 
 </li>
@@ -95,6 +96,7 @@ SmartAssist Gateway
    <td>Click <strong>Add Parameter</strong>. Enter property names and values to use in defining the call behavior.
 <p>
 !!! note
+
 You should use these properties and values in the VXML files for all call flows in the IVR system and Session Parameters in AudioCodes channel.
    </td>
    <td>IVR,
@@ -229,8 +231,6 @@ On the Voice Call Properties panel for a node, you can enter node-specific promp
 
 Voice Call Properties apply only for the following nodes and message types:
 
-
-
 * Entity Node
 * Message Node
 * Confirmation Node
@@ -238,16 +238,17 @@ Voice Call Properties apply only for the following nodes and message types:
 * Welcome Message
 
 !!! note
+
 Most settings are the same for all nodes, with a few exceptions.
 
 
-
-![timeout prompt]('../images/timeout_prompt.png')
+![timeout prompt](../images/timeout_prompt.png)
 
 
 
 **Voice Call Settings Field Reference \
 **The following sections provide detailed descriptions of each IVR setting, including descriptions, applicability to nodes, default values, and other key information.
+
 !!! notes on prompts
 
 * You can enter prompts in one of these formats: Plain text, Script, File location of an audio file. If you want to define JavaScript or attach an audio file, click the icon before the prompt text message box and select a mode. By default, it is set to Text mode.
@@ -525,7 +526,9 @@ Once the property is enabled, you can see one or more language codes correspondi
 
 <p>
 !!! note
+
  By default, the <strong>Locale Definition</strong> property is disabled for all virtual assistants.
+
    </td>
    <td>N/A
    </td>
@@ -539,8 +542,11 @@ Once the property is enabled, you can see one or more language codes correspondi
 <p>
 You can use the <strong>Default </strong>DTD settings defined in the Status, Public ID, and System ID fields for the VXML. If you want to modify settings, click <strong>Customize </strong>to change the values.
 <p>
+
 !!! note
+
 If the <strong>Status </strong>field is set to <em>Include</em>, you can enter the Public and System ID. If it is set to <em>Exclude</em>, you cannot view those fields.
+
    </td>
    <td>N/A
    </td>
@@ -556,8 +562,11 @@ You can add an URL to redirect the conversation whenever the call hangs up.
 <p>
 By default, the <strong>Fallback Redirection</strong> is disabled. If you want to enable the Fallback Redirection, click <strong>Customize</strong>.
 <p>
+
 !!! note
+
 The Fallback Redirection is supported by both standard and universal bots.
+
    </td>
    <td>N/A
    </td>
@@ -592,7 +601,7 @@ By default this option is disabled.
 Below is a demo of the IVR Properties section, within the Component Properties panel of a Dialog Task node. \
 
 
-![Component Properties](../images/ivr-properties.gif)
+![Component Properties](../images/ivr-properties.gif )
 
 
 
