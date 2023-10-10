@@ -10,7 +10,8 @@ To view the Conversations Dashboard, click the **Analyze** tab on the top menu a
 
 !!! note
 
-   **Note:** The Conversations Dashboard is available only post 9.2 release, i.e. post April 09, 2022.
+    The Conversations Dashboard is available only post 9.2 release, i.e. post April 09, 2022.
+
 
 The Conversations Dashboard is organized into four categories based on the conversation behavior, explained below.
 
@@ -55,14 +56,16 @@ The **Agent Transfer Rate** widget displays the percentage and total number of a
 
 !!! note
 
-   **Note:** Unblu and IVR channels don’t need any Agent Transfer node to transfer the conversation to Agents.
+    Unblu and IVR channels don’t need any Agent Transfer node to transfer the conversation to Agents.
 
 
 ## Metrics Table
 
 Refer to the table below for the list of widgets present across each category on the Conversations Dashboard.
 
-**Note:** For a trend line chart, if the period is 24 hours, the X-axis shows hourly intervals. Otherwise, the axis shows daily intervals. The Y-axis shows the total number of sessions.
+!!! note
+
+    For a trend line chart, if the period is 24 hours, the X-axis shows hourly intervals. Otherwise, the axis shows daily intervals. The Y-axis shows the total number of sessions.
 
 
 <table>
