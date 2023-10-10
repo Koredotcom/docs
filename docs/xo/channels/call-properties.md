@@ -528,7 +528,7 @@ SmartAssist Gateway
 <p>
 Once the property is enabled, you can see one or more language codes corresponding to the bot languages.  Enter the locale code for a specific bot language in the <strong>Locale Value</strong> field. For example, enter ‘<strong>US</strong>‘ or ‘<strong>UK</strong>‘ as the Locale Value for the English (EN) bot language.
 
-![Locale Definition](../images/locale_definition.png )
+![Locale Definition] (../images/locale_definition.png )
 
 
 !!! note
