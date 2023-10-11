@@ -206,8 +206,8 @@ If you have already had Small Talk for your company, you can import it using a J
 
 * The import begins instantly.
 
-!!!CAUTION
-Existing Small Talk will be replaced with the imported file.
+> [!WARNING]  
+> Existing Small Talk will be replaced with the imported file.
 
 ## Modify the Existing Greetings Group
 
