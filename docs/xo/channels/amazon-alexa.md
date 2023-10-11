@@ -133,7 +133,7 @@ To configure a custom Interaction Model, follow the steps below:
 
 
 
-![save model](..images/alexa-10.png "save model")
+![save model](../images/alexa-10.png "save model")
 
 
 **Note**: It takes 2-5 mins for the Model to build. Any changes to the built model can be implemented by rebuilding the model.
@@ -275,7 +275,7 @@ Once done, test the utterance integration on the **Alexa Developer Console** usi
 3. Navigate to the **Alexa Simulator** section, type an intent utterance, and click enter.
 
 
-![alexa simulator](../images/alexa=23.png "alexa simulator")
+![alexa simulator](../images/alexa-23.png "alexa simulator")
 
 If you get a successful response, then the integration is considered a success.
 
@@ -303,7 +303,7 @@ On Alexa, it’s important to set up your Privacy and Compliance information bef
 
 1. Click the **Distribution** tab. Then, click the **Privacy & Compliance** left menu option.
 
-![privacy compliance](../images/alexa-25.png "privacy compliance")
+![privacy compliance](../images/alexa-26.png "privacy compliance")
 
 2. Provide all the required details.
 3. Click **Save and Continue**.
@@ -320,7 +320,7 @@ You will be redirected to the **Availability** page to invite your co-developers
 3. Click **Save and Continue**.
 
 
-![beta test](../images/alexa-26.png "beta test")
+![beta test](../images/alexa-27.png "beta test")
 
 
 
@@ -334,19 +334,19 @@ The next step is to **validate your skills** for the model. After configuring **
 2. Click **Run** to validate your skill.
 
 
-![validate skill](../images/alexa-27.png "validate skill")
+![validate skill](../images/alexa-28.png "validate skill")
 
 
 Upon successful validation, your skill will be visible under **Alexa Skills** on Amazon App Store.
 
 
-![alexa skills](../images/alexa-28.png "alexa skills")
+![alexa skills](../images/alexa-29.png "alexa skills")
 
 
 Additionally, your **Skill Builder Checklist** will display green checks for all the options.
 
 
-![skill builder](../images/alexa-29.png "skill builder")
+![skill builder](../images/alexa-30.png "skill builder")
 
 
 After enabling the channel and verifying all the configurations, you can test the new channel integration by publishing your virtual assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
