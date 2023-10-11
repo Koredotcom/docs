@@ -236,13 +236,13 @@ Once you create/import a group, you can add/modify the query-response pairs.
 
 10. Responses are **Channel-specific** and **Java Script** formatted. By clicking the **Settings** (gear icon) that appears next to the response, when you hover over it you will reach the Manage Response window. Here is where you can configure the following:
   * Add a default message to be displayed on all channels.
-   * For channel-specific responses:
-        * Click **+ Add Response**.
-        * Click the **New Prompt Message**.
-        * Select **Channel**.
-        * Enter the response in standard text or in Java Script using the Advanced Mode. If applicable Select a Template. ([see here](https://developer.kore.ai/docs/bots/sdks/message-templates/) for more on message formatting). 
+  * For channel-specific responses:
+      * Click **+ Add Response**.
+      * Click the **New Prompt Message**.
+      * Select **Channel**.
+      * Enter the response in standard text or in Java Script using the Advanced Mode. If applicable Select a Template. ([see here](https://developer.kore.ai/docs/bots/sdks/message-templates/) for more on message formatting). 
         ![message response channel](../usecases/images/message-response-channel.png "message response channel")
-        * Click **Save.**
+      * Click **Save.**
 
 
 # Small Talk Context
