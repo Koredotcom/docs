@@ -209,7 +209,6 @@ Once you create/import a group, you can add/modify the query-response pairs.
 
 1. Enter the User Query in the **User** column and the corresponding Bot Response in the **Bot** column.
 2. Press **Enter** or **Add** to add the query-response pair to the list. 
-
 ![Add Query Response](../usecases/images/add-query-response.gif "Add Query Response")
 3. Queries are designed using patterns. [Know more about patterns](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#managing-patterns).
 4. For each User Query, you can enter **alternate questions** that depict a different way the user might ask the same query.
