@@ -257,8 +257,9 @@ This information is stored in the Small Talk context and can be accessed using: 
   "previousMatchData": []
 }
 ```
-You can define and store multiple pattern tokens in the same user input and they can be accessed using the positional count variables – __0_, __1_, __2_ so on, and so forth. Since they capture the positional content, they are not continuous in case the optional token is missing from the user utterance. \
-For example, consider the pattern: _how is the *[ climate temperature ]  { at _~location } ~time*
+You can define and store multiple pattern tokens in the same user input and they can be accessed using the positional count variables – __0_, __1_, __2_ so on, and so forth. Since they capture the positional content, they are not continuous in case the optional token is missing from the user utterance. 
+
+For example, consider the pattern: *how is the *[ climate temperature ]  { at _~location } ~time*
 
   * **Case1**: 
     * user utterance: “_how is the temperature in London today_“
@@ -275,8 +276,8 @@ context:
   },
   "previousMatchData": []}
 ```
-* **Case2**:
-  * user utterance: “_how is the climate today_“
+ * **Case2**:
+   * user utterance: “*how is the climate today*“
 
 context: 
 ```
