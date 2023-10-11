@@ -276,8 +276,8 @@ context:
   },
   "previousMatchData": []}
 ```
- * **Case2**:
-   * user utterance: “*how is the climate today*“
+  * **Case2**: 
+    * user utterance: “*how is the climate today*“
 
 context: 
 ```
