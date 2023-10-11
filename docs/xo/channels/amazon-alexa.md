@@ -33,7 +33,6 @@ The following are the important checks to do and considerations before you enabl
 The steps to add the **Amazon Alexa** channel are given below:
 
 
-
 1. **Add a New Skill** – Create a new Alexa skill in the Amazon developer console.
 2. **Configure the Interaction Model** – The Alexa skill can be built in one of the following ways:
 * Dialog Migration to extract the dialog tasks from Kore.ai and import them into Amazon Alexa’s Skills. This will entail reimport for reflecting the ongoing changes in the dialog definition. Intent detection and execution are primarily controlled by Alexa.
@@ -54,16 +53,15 @@ The steps to add the **Amazon Alexa** channel are given below:
 
 ![Alexa Skills](../images/alexa-1.png "Alexa Skills Kit")
 Click the **Skills** tab on the **Alexa Developer Console**.
-4. Click **Create Skill**.
+3. Click **Create Skill**.
 
 
 ![Create Skill](../images/alexa-2.png "create skill")
 
-5. Enter the **Skill Name** field information on the **Create a New Skill** page and select the **primary locale** value.
+4. Enter the **Skill Name** field information on the **Create a New Skill** page and select the **primary locale** value.
 5. Then, follow the steps below:
 * Enable the **Sync Locale** option, if required.
 * Select **Custom** (default selection) to **Choose a model to add to your skill** to create all of your skill’s interactions and map them to your custom model.
-
 
 
 ![sync locale](../images/alexa-3.png "sync locale")
@@ -90,7 +88,6 @@ Your skill is built and listed on the Developer Console.
 
 
 ![developer console](../images/alexa-6.png "developer console")
-
 
 6. Click **Your Skills** to view the custom skill you added to the console.
 
@@ -119,8 +116,7 @@ To configure a custom Interaction Model, follow the steps below:
 * Navigate to **Deploy** > **Channels** > **Amazon Alexa** > **Configurations**.
 * Click **Download File** under **Alexa Skill Definition JSON** to download the VA’s tasks.
 
-
-![download file](..images/alexa-8.png "download file")
+![download file](../images/alexa-8.png "download file")
 
 
 * Click **Confirm** on the **Download** window.
@@ -161,7 +157,6 @@ To configure a custom Interaction Model for the **SearchQuery** Slot Type, follo
 * Sign in to the [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask).
 * Click the **Skills** tab.
 * In the **SKILL NAME** column, click the name of your custom skill.
-
 
 
 ![skill name](../images/alexa-11.png "skill name")
@@ -208,7 +203,6 @@ Click **Save Model** and **Build Model** on the top action panel.
 If end-user authorization is required for making API calls to external services, you need to enable the **Account Linking** feature for your Alexa Skill with the steps below:
 
 
-
 1. On **Your Skills** console, select the **Build** tab.
 2. Expand the **Tools** left menu, then click **Account Linking**.
 3. **Auth Code Grant** is the default _Authorization grant type_ selection on the **Account Linking** page.Enter the values for the mandatory fields under **Security Provider Information**. [Learn more](https://developer.amazon.com/en-US/docs/alexa/account-linking/configure-implicit-grant.html#config).
@@ -244,6 +238,7 @@ Alexa shares the user **access tokens** with Kore.ai assistants to make API call
 5. Paste the URL for the **Default Region** field on the **Service Endpoint Type** page.
 
 ![default region](../images/alexa-19.png "default region")
+
 6. For the **Select SSL Certificate Type** drop-down, select the option “**_My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority_**.”
 
 
@@ -263,7 +258,6 @@ Before testing your assistant on **Alexa**, complete the channel setup with thes
 2. Select **Yes** for **Enable Channel**.
 3. Click **Save** to complete the configuration.
 
-
 ![configuration](../images/alexa-21.png "configuration")
 
 
@@ -281,7 +275,6 @@ Once done, test the utterance integration on the **Alexa Developer Console** usi
 3. Navigate to the **Alexa Simulator** section, type an intent utterance, and click enter.
 
 
-
 ![alexa simulator](../images/alexa=23.png "alexa simulator")
 
 If you get a successful response, then the integration is considered a success.
@@ -290,7 +283,6 @@ If you get a successful response, then the integration is considered a success.
 ## Step 7: Distribution
 
 To publish your Alexa Skill on the **Alexa App**, follow the steps below:
-
 
 
 1. Click the **Distribution** tab on the **Alexa Developer Console**.
