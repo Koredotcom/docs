@@ -18,9 +18,8 @@ IVR Properties are accessible by going to a Dialog Task, selecting an _Entity, M
 
 
 
-<p>[alt_text](./images/access-ivr.png )</p>
+![access IVR properties](../images/access-ivr.png )
 
- \
 This document details the voice call properties and how they vary across various channels.
 
 
@@ -61,7 +60,10 @@ For Entity and Confirmation nodes, you can define the extraction rule overriding
 <li>Terminate the call.
 
 <p>
-<strong>Note</strong>: Selecting the <strong>Terminate call</strong> option under <strong>IVR Channel – Voice Call Properties – End of Task Behavior</strong> no longer turns off the End of Task event at the bot level.
+!!! note
+
+    Selecting the <strong>Terminate call</strong> option under <strong>IVR Channel – Voice Call Properties – End of Task Behavior</strong> no longer turns off the End of Task event at the bot level.
+
 </li>
 </ul>
    </td>
@@ -93,7 +95,10 @@ SmartAssist Gateway
    </td>
    <td>Click <strong>Add Parameter</strong>. Enter property names and values to use in defining the call behavior.
 <p>
-<strong>Note</strong>: You should use these properties and values in the VXML files for all call flows in the IVR system and Session Parameters in AudioCodes channel.
+!!! note
+
+  You should use these properties and values in the VXML files for all call flows in the IVR system and Session Parameters in AudioCodes channel.
+
    </td>
    <td>IVR,
 <p>
@@ -151,7 +156,9 @@ SmartAssist Gateway
 
 <p>
 <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Configuring_Grammar">See below for a detailed configuration for Grammar syntax</a>. \
-<strong>Note</strong>: If the <strong>Enable Transcription </strong>option is enabled for the VA along with specifying the source of the transcription engine, defining grammar isn’t mandatory.
+!!! note
+
+    If the <strong>Enable Transcription </strong>option is enabled for the VA along with specifying the source of the transcription engine, defining grammar isn’t mandatory.
 </li>
 </ul>
 </li>
@@ -226,32 +233,31 @@ On the Voice Call Properties panel for a node, you can enter node-specific promp
 
 Voice Call Properties apply only for the following nodes and message types:
 
-
-
 * Entity Node
 * Message Node
 * Confirmation Node
 * Standard Responses
 * Welcome Message
+!!! note
 
-**Note**: Most settings are the same for all nodes, with a few exceptions.
-
-
-
-<p>('./images/timeout_prompt.png')</p>
+    Most settings are the same for all nodes, with a few exceptions.
 
 
 
-**Voice Call Settings Field Reference \
-**The following sections provide detailed descriptions of each IVR setting, including descriptions, applicability to nodes, default values, and other key information.
-
-**Notes on Prompts: **
+![timeout prompts](../images/timeout_prompts.png )
 
 
 
-* You can enter prompts in one of these formats: Plain text, Script, File location of an audio file. If you want to define JavaScript or attach an audio file, click the icon before the prompt text message box and select a mode. By default, it is set to Text mode.
-* You can enter more than one prompt message of different types. You can define their order of sequence by dragging and dropping them.
-* Multiple prompts are useful in scenarios where the prompt has to be played more than once, to avoid repetition, since the prompts are played in order.
+**Voice Call Settings Field Reference**
+
+The following sections provide detailed descriptions of each IVR setting, including descriptions, applicability to nodes, default values, and other key information.
+!!! notes on prompts
+
+    * You can enter prompts in one of these formats: Plain text, Script, File location of an audio file. If you want to define JavaScript or attach an audio file, click the icon before the prompt text message box and select a mode. By default, it is set to Text mode.
+    * You can enter more than one prompt message of different types. You can define their order of sequence by dragging and dropping them.
+    * Multiple prompts are useful in scenarios where the prompt has to be played more than once, to avoid repetition, since the prompts are played in order.
+
+
 
 <table>
   <tr>
@@ -381,8 +387,12 @@ SmartAssist Gateway
 <li>For Link, enter the URL of the grammar. Ideally, the URL should be accessible to the IVR system so that the resource can be accessed while executing the calls at runtime
 
 <p>
-<a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Configuring_Grammar">See below for a detailed configuration for Grammar syntax</a>. \
-<strong>Note</strong>: If the <strong>Enable Transcription </strong>option is enabled for the VA along with specifying the source of the transcription engine, defining grammar isn’t mandatory.
+<a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Configuring_Grammar">See below for a detailed configuration for Grammar syntax</a>.
+
+!!! note
+
+    If the <strong>Enable Transcription </strong>option is enabled for the VA along with specifying the source of the transcription engine, defining grammar isn’t mandatory.
+
 </li>
 </ul>
 </li>
@@ -449,7 +459,7 @@ SmartAssist Gateway
    <td>Define behavior when either the timeout or number of retry attempts exceed the specified limit. Options include:
 <ul>
 
-<li>Invoke CallTermination Handler
+<li>Invoke Call Termination Handler
 
 <li>Initiate Dialog: Select a Dialog task from the list of VA tasks.
 
@@ -518,11 +528,14 @@ SmartAssist Gateway
 <p>
 Once the property is enabled, you can see one or more language codes corresponding to the bot languages.  Enter the locale code for a specific bot language in the <strong>Locale Value</strong> field. For example, enter ‘<strong>US</strong>‘ or ‘<strong>UK</strong>‘ as the Locale Value for the English (EN) bot language.
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+![Locale Definition] (../images/locale_definition.png )
 
 
-<p>
-<strong>Note</strong>: By default, the <strong>Locale Definition</strong> property is disabled for all virtual assistants.
+!!! note
+
+    By default, the <strong>Locale Definition</strong> property is disabled for all virtual assistants.
+
+
    </td>
    <td>N/A
    </td>
@@ -536,7 +549,12 @@ Once the property is enabled, you can see one or more language codes correspondi
 <p>
 You can use the <strong>Default </strong>DTD settings defined in the Status, Public ID, and System ID fields for the VXML. If you want to modify settings, click <strong>Customize </strong>to change the values.
 <p>
-<strong>Note</strong>: If the <strong>Status </strong>field is set to <em>Include</em>, you can enter the Public and System ID. If it is set to <em>Exclude</em>, you cannot view those fields.
+
+!!! note
+
+    If the <strong>Status </strong>field is set to <em>Include</em>, you can enter the Public and System ID. If it is set to <em>Exclude</em>, you cannot view those fields.
+
+
    </td>
    <td>N/A
    </td>
@@ -552,7 +570,12 @@ You can add an URL to redirect the conversation whenever the call hangs up.
 <p>
 By default, the <strong>Fallback Redirection</strong> is disabled. If you want to enable the Fallback Redirection, click <strong>Customize</strong>.
 <p>
-<strong>Note</strong>: The Fallback Redirection is supported by both standard and universal bots.
+
+!!! note
+
+    The Fallback Redirection is supported by both standard and universal bots.
+
+
    </td>
    <td>N/A
    </td>
@@ -584,11 +607,10 @@ By default this option is disabled.
 </table>
 
 
-Below is a demo of the IVR Properties section, within the Component Properties panel of a Dialog Task node. \
+Below is a demo of the IVR Properties section, within the Component Properties panel of a Dialog Task node.
 
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
+![Component Properties](../images/ivr-properties.gif )
 
 
 
