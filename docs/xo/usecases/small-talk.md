@@ -211,43 +211,32 @@ Once you create/import a group, you can add/modify the query-response pairs.
 2. Press **Enter** or **Add** to add the query-response pair to the list. 
 
 ![Add Query Response](../usecases/images/add-query-response.gif "Add Query Response")
-
 3. Queries are designed using patterns. [Know more about patterns](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#managing-patterns).
 4. For each User Query, you can enter **alternate questions** that depict a different way the user might ask the same query.
 5. For each bot response, you can enter **alternate responses**. The Platform picks one response at random during runtime.
-
 ![Alternate Response](../usecases/images/alternate-responses.png "Alternate Response")
-
 6. Using the handlebar icon that appears in front of the question on hover, you can rearrange the order of the questions.
-
 ![Rearrange Questions Order](../usecases/images/rearrange-questions-order.gif "Rearrange Questions Order")
-
 7. Each User Query can have a **child query**. The child-questions can be asked only when the parent-question is asked and responded to. To add a Child Query, use the **+** icon that appears next to the question when you hover over it.
-
 ![Child Item](../usecases/images/child-item.gif "Child Item")
-
 8. You can delete query or response alternatives by hovering over them and clicking the red **x** on the top right corner.
-
 ![Delete query or response](../usecases/images/delete-query-or-response.png "delete query or response")
-
 9. You can also delete the entire Query-Response pair, along with its child pair by hovering over the parent and clicking the **bin** icon on the far right. You will be asked to confirm your choice. 
-
 ![Delete query response pair child](../usecases/images/delete-qr-pair-child.png "delete query response pair child")
-
 10. Responses are **Channel-specific** and **Java Script** formatted. By clicking the **Settings** (gear icon) that appears next to the response, when you hover over it you will reach the Manage Response window. Here is where you can configure the following:
   * Add a default message to be displayed on all channels.
   * For channel-specific responses:
-      * Click **+ Add Response**.
-      * Click the **New Prompt Message**.
-      * Select **Channel**.
-      * Enter the response in standard text or in Java Script using the Advanced Mode. If applicable Select a Template. ([see here](https://developer.kore.ai/docs/bots/sdks/message-templates/) for more on message formatting). 
-        ![message response channel](../usecases/images/message-response-channel.png "message response channel")
-      * Click **Save.**
+    * Click **+ Add Response**.
+    * Click the **New Prompt Message**.
+    * Select **Channel**.
+    * Enter the response in standard text or in Java Script using the Advanced Mode. If applicable Select a Template. ([see here](https://developer.kore.ai/docs/bots/sdks/message-templates/) for more on message formatting). 
+    ![message response channel](../usecases/images/message-response-channel.png "message response channel")
+    * Click **Save.**
 
 
 # Small Talk Context
 
-You can mark desired information in the user utterance pattern definition and it will be available in the context. A new section called **Small Talk** is introduced under** NL Analysis** which stores the contextual information from the ongoing small talk. You can use this information to personalize the Small Talk messages.
+You can mark desired information in the user utterance pattern definition and it will be available in the context. A new section called **Small Talk** is introduced under **NLP Analysis** which stores the contextual information from the ongoing small talk. You can use this information to personalize the Small Talk messages.
 
 Marking a section in the user input pattern by including an underscore ‘_’ symbol you can indicate the required information. For example, _I am from _~location Where are you from?_ will allow you to capture the location from the user utterance. \
 This information is stored in the Small Talk context and can be accessed using: `context.smallTalk.matchData._0` The following is the JSON structure: \
@@ -266,7 +255,7 @@ You can define and store multiple pattern tokens in the same user input and they
 For example, consider the pattern: _how is the *[ climate temperature ]  { at _~location } ~time*
 
   * **Case1**: 
-      * user utterance: “_how is the temperature in London today_“
+    * user utterance: “_how is the temperature in London today_“
 
 context: 
 
@@ -280,8 +269,8 @@ context:
   },
   "previousMatchData": []}
 ```
-  * **Case2:**
-    * user utterance: “_how is the climate today_“
+* **Case2**:
+  * user utterance: “_how is the climate today_“
 
 context: 
 ```
