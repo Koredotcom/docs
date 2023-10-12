@@ -11,6 +11,10 @@ Digital Skills are a set of features within the Kore.ai XO Platform which allow 
     * **Panels**: A Panel is like a collection of widgets. You can use Panels to present end users with the same type of information in an organized manner, but all in one place. For example, you might have a _My Trips_ Panel, which could include widgets for _Upcoming Trips_, _Completed Trips_ and _Canceled Trips_.
 
 # Digital Skills Implementation
-You can implement Digital Forms within the Kore.ai XO Platform, by following [this article](https://developer.kore.ai/docs/bots/bot-builder-tool/digital-forms/). 
+* You can implement Digital Forms within the Kore.ai XO Platform, by following [this article](https://developer.kore.ai/docs/bots/bot-builder-tool/digital-forms/). 
 
-You can also implement Digital Views by following the process described [here](https://developer.kore.ai/docs/bots/bot-builder-tool/digital-views/). Digital Views can be further enhanced using the Kore.ai Widget SDK, which you can learn more about [here](https://developer.kore.ai/docs/bots/sdks/kore-ai-widget-sdk-tutorial/). You can download the Widget SDK from [Kore.ai’s GitHub profile](https://github.com/Koredotcom/web-kore-sdk).
+* You can also implement Digital Views by following the process described [here](https://developer.kore.ai/docs/bots/bot-builder-tool/digital-views/). 
+
+* Digital Views can be further enhanced using the Kore.ai Widget SDK, which you can learn more about [here](https://developer.kore.ai/docs/bots/sdks/kore-ai-widget-sdk-tutorial/). 
+
+* You can download the Widget SDK from [Kore.ai’s GitHub profile](https://github.com/Koredotcom/web-kore-sdk).
