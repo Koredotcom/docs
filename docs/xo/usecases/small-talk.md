@@ -237,7 +237,7 @@ Once you create/import a group, you can add/modify the query-response pairs.
     * Select **Channel**.
     * Enter the response in standard text or in Java Script using the Advanced Mode. If applicable Select a Template. ([see here](https://developer.kore.ai/docs/bots/sdks/message-templates/) for more on message formatting). 
     ![message response channel](../usecases/images/message-response-channel.png "message response channel")
-  * Click **Save**.
+    * Click **Save**.
 
 
 # Small Talk Context
@@ -257,12 +257,11 @@ This information is stored in the Small Talk context and can be accessed using: 
   "previousMatchData": []
 }
 ```
-You can define and store multiple pattern tokens in the same user input and they can be accessed using the positional count variables – __0_, __1_, __2_ so on, and so forth. Since they capture the positional content, they are not continuous in case the optional token is missing from the user utterance. 
+You can define and store multiple pattern tokens in the same user input and they can be accessed using the positional count variables – *0*, *1*, *2* so on, and so forth. Since they capture the positional content, they are not continuous in case the optional token is missing from the user utterance. 
 
 For example, consider the pattern: *how is the *[ climate temperature ]  { at _~location } ~time*
 
-  * **Case1**: 
-    * user utterance: “_how is the temperature in London today_“
+**Case1**: user utterance: “_how is the temperature in London today_“
 
 context: 
 
@@ -276,8 +275,7 @@ context:
   },
   "previousMatchData": []}
 ```
-  * **Case2**: 
-    * user utterance: “*how is the climate today*“
+**Case2**: user utterance: “*how is the climate today*“
 
 context: 
 ```
