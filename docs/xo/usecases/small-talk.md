@@ -1,4 +1,5 @@
 
+[TOC]
 # **Small Talk**
 
 **Small Talk** refers to the casual conversations that a Virtual Assistant can have with end users. The ability to engage end users in casual conversations helps your assistant socialize better with customers and improves recall rates.
