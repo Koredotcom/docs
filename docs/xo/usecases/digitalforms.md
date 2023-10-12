@@ -30,6 +30,7 @@ Here is the overall usage process for Digital Forms within the Kore.ai XO Platfo
 * **Form Submission**: When it is submitted, the component values are validated and any errors are highlighted. Based on the mode of invocation, post successful validation:
     * The VA execution proceeds as per dialog flow in case of dialog task invocation.
     * The selected task is triggered.
+
 ## Create a Form
 A Digital Form includes a definition and various components to capture user input.
 
@@ -46,9 +47,8 @@ To create forms, follow the steps below:
 
       ![Create New Form](../usecases/images/create-new-form.png "Create New Form")
 
-4. **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. Click the card to select the style. If it has a logo, you can upload an image file (jpg or png) for the logo. 
-
-> **Note**: During the Export of the Bot, the logo is not exported along with Digital Forms. So, while importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
+4. **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. Click the card to select the style. If it has a logo, you can upload an image file (jpg or png) for the logo.
+> **Note**: During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
 
 5. Turn on the **Description** toggle if you want to show a description of the form in the header. 
 
