@@ -116,7 +116,7 @@ This metric is available only for the Conversation Session.
 [Metrics Table](./conversations-dashboard.md#metrics-table)
 <p>
 <strong>Drop-off:</strong> Displays the total number of hours for drop-off sessions distributed hourly. 
-<a href="./conversations-dashboard.md#metrics-table">Metrics Table.</a>
+<a href="#metrics-table">Metrics Table.</a>
 <p>
 <strong>Agent Transfer</strong>: Displays the total number of hours for agent transfer sessions distributed hourly. 
    </td>
