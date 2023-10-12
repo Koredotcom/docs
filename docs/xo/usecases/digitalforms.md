@@ -34,6 +34,7 @@ Here is the overall usage process for Digital Forms within the Kore.ai XO Platfo
 A Digital Form includes a definition and various components to capture user input.
 
 To create forms, follow the below steps:
+
 1. Under the **Build** top menu, select **Digital Skills**.
 
 2. Click **Digital Forms > New Form**.
