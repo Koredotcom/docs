@@ -258,7 +258,7 @@ The following is the JSON structure:
 ```
 You can define and store multiple pattern tokens in the same user input and they can be accessed using the positional count variables – *0*, *1*, *2* so on, and so forth. Since they capture the positional content, they are not continuous in case the optional token is missing from the user utterance. 
 
-For example, consider the pattern: *how is the *[ climate temperature ]  { at _~location } ~time*
+For example, consider the pattern: how is the *[ climate temperature ]  { at _~location } ~time*
 
 **Case1**: user utterance: “_how is the temperature in London today_“
 
