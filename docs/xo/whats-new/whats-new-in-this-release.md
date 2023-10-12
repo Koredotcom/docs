@@ -1,11 +1,11 @@
 
 # **What’s New**
 
-Learn about the new features and enhancements included in v10.1 of **Kore.ai Experience Optimization Platform**, released on April 16, 2023.
+Learn about the new features and enhancements included in v10.1 of **Kore.ai Experience Optimization Platform** which was released on April 16, 2023.
 
-The v10.1 of the Kore.ai XO Platform focuses on leveraging the power of **Large Language Models** and **Generative AI** to enable enterprises to create intelligent conversational experiences. The release offers a copilot for smart assistance, better conversational capabilities, and delivers personalized responses.
+The v10.1 of the Kore.ai XO Platform focuses on leveraging the power of **Large Language Models** and **Generative AI** to enable enterprises to create intelligent and context-specific conversational experiences. The release offers a copilot for smart assistance, better conversational capabilities, and delivers personalized responses.
 
-Key features and enhancements included in this release:
+The key features and enhancements included in this release are listed below for your reference:
 
 
 ## Smart Copilot for IVA Development
@@ -13,7 +13,7 @@ Key features and enhancements included in this release:
 
 ### Enhanced Bot Creation Journey with Use Case Suggestions
 
-Create Virtual Assistants faster with the new bot creation process that lets you generate use cases automatically. Dialog Tasks are auto-created along with the bot, providing you with the base framework to fast-track your VA creation journey. [Learn more].
+Create Virtual Assistants faster with the new bot creation process that lets you generate use cases automatically. Dialog Tasks are auto-created along with the bot, providing you with the base framework to fasttrack your VA creation journey. [Learn more].
 
 ### Automatic Dialog Generation
 

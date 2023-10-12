@@ -27,3 +27,41 @@
     font-size: 13px;
     color: #000;
 }
+
+/* kr grid g1 start*/
+kr-grid[type="g1"] {
+    grid-gap: 0.8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    margin: 1em 0;
+}
+kr-grid[type="g1"] kr-grid-item{
+    padding: 15px;
+    border: 2px solid transparent;
+    transition: border .25s;
+    border-radius: 5px;
+}
+kr-grid[type="g1"] kr-grid-item:hover{
+    border: 2px solid #eee;
+}
+kr-grid[type="g1"] kr-grid-item img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    height: 100px;
+    object-fit: cover;
+}
+kr-grid[type="g1"] .glightbox{
+    pointer-events: none;
+}
+kr-grid[type="g1"] kr-grid-title{
+    display: block;
+    font-weight: 700;
+    margin: 15px 0px 0px 0px;
+    color: #4051b5;
+    font-size: 18px;
+}
+kr-grid[type="g1"] kr-grid-desc{
+    display: block;
+    margin-bottom: 10px;
+}
+/* kr grid g1 end*/

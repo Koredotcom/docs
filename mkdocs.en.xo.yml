@@ -13,11 +13,14 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.path
+    - navigation.footer
     - search.suggest
     - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - header.autohide
   language: en
   palette:
     - scheme: default
@@ -25,7 +28,7 @@ theme:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
       primary: indigo
-      accent: purple 
+      accent: indigo
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
@@ -40,15 +43,24 @@ plugins:
 extra:
   version:
     provider: mike
-  social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/Koredotcom
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/Koredotcom
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/Koredotcom
-    - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/Koredotcom
+  generator: false
+  analytics:
+    provider: google
+    property: G-6GL1FRPFB3
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://community.kore.ai/" target="_blank" rel="noopener">feedback form</a>.  
   alternate:
     - name: en - English 
       link: https://docsinternal-kore.github.io/docs/en
@@ -71,6 +83,7 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+      title: On this Page
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
