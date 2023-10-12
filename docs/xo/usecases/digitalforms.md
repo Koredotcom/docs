@@ -38,10 +38,12 @@ To create forms, follow the below steps:
 
 2. Click **Digital Forms > New Form**.
 
-3. On the **New Form** page, enter
-* **Name** of the Form
-* **Display Name** for the Form
-* **Description** of the Form 
+3. On the **New Form** page, enter the following:
+
+  * **Name** of the Form.
+  * **Display Name** for the Form.
+  * **Description** of the Form.
+
 ![Create New Form](../usecases/images/create-new-form.png "Create New Form")
 
 4. **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. Click the card to select the style. If it has a logo, you can upload an image file (jpg or png) for the logo. 
@@ -177,16 +179,17 @@ Of special interest are the following Component Properties:
 
     * **Manage Context Variables** is used to create and set values for the context variables. Remember to use the full path of the variable in the _key_ field ie. ```context.BotUserSession.&lt;variable_name>```
 
-> **IMPORTANT NOTE**: We strongly urge you not to make changes to the connection settings as this affects the V's performance.
+> **NOTE**: We urge you not to make changes to the connection settings as this affects the V's performance.
+
 * **Sub-dialog Node** is configured as normal ([see here for details](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-dialog-node/)) Of special interest are the following:
-    * Use the **Entity Post-assignment** to capture the user input.
-    * In case you modify the sub-dialog or the source form, you are presented with an option to **Regenerate Dialog**. This ensures that the changes are reflected in the task without having to rebuild the entire task. Be aware that the changes are reflected in all places this sub-dialog is used. 
 
+ * Use the **Entity Post-assignment** to capture the user input.
+* In case you modify the sub-dialog or the source form, you are presented with an option to **Regenerate Dialog**. This ensures that the changes are reflected in the task without having to rebuild the entire task. Be aware that the changes are reflected in all places this sub-dialog is used. 
 
-    ![form experience node](../usecases/images/subdialog-node-configuration.png "form experience node")
+![form experience node](../usecases/images/subdialog-node-configuration.png "form experience node")
 
 6. The user input can be accessed as follows:
-    * Form component values are accessed from the Context Object using ```{{context.forms.&lt;form_name>.&lt;component_name>}}```
+    * Form component values are accessed from the Context Object using ```{{context.forms.form_name.component_name}}```
     * In the case of the sub-dialog, the variables used in the post-assignment settings as ```{{context.&lt;variable_name>}}```
 7. You can continue with the Dialog Task as per your business needs. For example, you can use the Form Component values as input to a **Service Node** to update the data or use the **Script Node** to process it further. If you are using the conversation experience too, remember to connect the auto-generated sub-dialog to the process flow.
 
@@ -197,11 +200,11 @@ Digital Forms are rendered in Digital Views by configuring Widgets & Panels, [se
 To invoke a form using Widgets and Panels, follow the below steps:
 
 1. Create a widget to invoke the Digital Form from **Build -> Digital Skills -> Digital Views** option.
-    * Enter the name.
-    * Select _Digital Forms_ as the **Source.**
-    * **Add a Form** by selecting it from the drop-down list.
-    * Select the **Dialog to Invoke on Submit** from the drop-down list.
-    * Click **Save**.
+* Enter the name.
+* Select _Digital Forms_ as the **Source.**
+* **Add a Form** by selecting it from the drop-down list.
+* Select the **Dialog to Invoke on Submit** from the drop-down list.
+* Click **Save**.
 
 > **Note**: While a Digital Form is used to define multiple Widgets and also add to multiple panels, it will be associated with a single Dialog Task across all Widgets and Panels.
 
@@ -212,10 +215,8 @@ You can add a form directly to a panel, it creates a widget by default.
 3. You can **Test** the panel.
 4. Follow the steps provided [here](https://developer.kore.ai/docs/bots/sdks/kore-ai-widget-sdk-tutorial/) to publish and host the panels.
 
-
 ## The User Experience
 When the end-user initiates the dialog and reaches the node connecting to the Form node, the following events take place. Depending upon the experience selected at design time and the channel of invocation, the flow is the following:
-
 
 ### Form Experience
 A **link to the form** is presented to the user. Note that for a synchronous WebHook channel, instead of a link the complete form definition is sent [click here for more details](https://developer.kore.ai/docs/bots/channel-enablement/adding-webhook-channel/).
@@ -387,18 +388,23 @@ Following is a list of the available components.
 * **Text Field** – used for single-line input.
 
     ![text field](../usecases/images/text-field-input.png "text field")
+
 * **Text Area** – used for multi-line entry.
 
     ![text area](../usecases/images/text-area.png "text area")
+
 * **Number** – used for numerical entries.
 
 ![number field](../usecases/images/number-field.png "number field")
+
 * **Radio Button** – used as a selection option from a given list.
 
 ![radio button](../usecases/images/radio-button.png "radio button")
+
 * **Dropdown** – Used as a selection option from a given list; can be multi-select.
 
 ![dropdown list](../usecases/images/dropdown-list.png "dropdown list")
+
 * **Checkbox** – Used for multi-select option from a given list.
 
 ![checkbox](../usecases/images/checkbox.png "checkbox")
@@ -413,7 +419,9 @@ Use the **Date component** and set the <em>Time option</em> to <em>yes</em>; cho
 ![date and time](../usecases/images/date-time.png "date and time")
 
 * **Phone Number** – Used for phone number entries, allows the user to choose the country code.
+
   ![phone number](../usecases/images/phone-number.png "phone number")
+
 * **Email** – Used for email address entries, validates for <em>xxx@uuu.com</em> format.
 
 ![email](../usecases/images/email-field.png "email")
@@ -421,6 +429,7 @@ Use the **Date component** and set the <em>Time option</em> to <em>yes</em>; cho
 * **Toggle** – Used for switching between two values, ideal for yes/no type of inputs.
 
 ![Toggle](../usecases/images/toggle-field.png "toggle")
+
 * **Address** – Used for address entries.
 
 ![address](../usecases/images/address-field.png "address")
