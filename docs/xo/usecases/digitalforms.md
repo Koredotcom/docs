@@ -399,7 +399,7 @@ Following is a list of available components. For details on the properties of ea
    </td>
    <td>
 
-![text field](../usecases/images/text-field-input.png "text field")
+![text field](../usecases/images/text-field-input.png)
 
    </td>
   </tr>
@@ -408,7 +408,7 @@ Following is a list of available components. For details on the properties of ea
    </td>
    <td>
 
-![text area](../usecases/images/text-area.png "text area")
+![text area](../usecases/images/text-area.png)
 
    </td>
   </tr>
@@ -417,7 +417,7 @@ Following is a list of available components. For details on the properties of ea
    </td>
    <td>
 
-![number field](../usecases/images/number-field.png "number field")
+![number field](../usecases/images/number-field.png)
 
    </td>
   </tr>
@@ -426,7 +426,7 @@ Following is a list of available components. For details on the properties of ea
    </td>
    <td>
 
-![radio button](../usecases/images/radio-button.png "radio button")
+![radio button](../usecases/images/radio-button.png)
 
    </td>
   </tr>
@@ -435,7 +435,7 @@ Following is a list of available components. For details on the properties of ea
    </td>
    <td>
 
-![dropdown list](../usecases/images/dropdown-list.png "dropdown list")
+![dropdown list](../usecases/images/dropdown-list.png)
 
    </td>
   </tr>
@@ -444,7 +444,7 @@ Following is a list of available components. For details on the properties of ea
    </td>
    <td>
 
-![checkbox](../usecases/images/checkbox.png "checkbox")
+![checkbox](../usecases/images/checkbox.png)
 
    </td>
   </tr>
@@ -453,7 +453,7 @@ Following is a list of available components. For details on the properties of ea
    </td>
    <td>
 
-![date](../usecases/images/date-calendar.png "date")
+![date](../usecases/images/date-calendar.png)
 
    </td>
   </tr>
@@ -464,7 +464,7 @@ Use the <strong>Date component</strong> and set the <em>Time option</em> to <em>
    </td>
    <td>
 
-![date and time](../usecases/images/date-time.png "date and time")
+![date and time](../usecases/images/date-time.png)
 
    </td>
   </tr>
@@ -473,7 +473,7 @@ Use the <strong>Date component</strong> and set the <em>Time option</em> to <em>
    </td>
    <td>
 
-![phone number](../usecases/images/phone-number.png "phone number")
+![phone number](../usecases/images/phone-number.png)
 
    </td>
   </tr>
@@ -482,7 +482,7 @@ Use the <strong>Date component</strong> and set the <em>Time option</em> to <em>
    </td>
    <td>
 
-![email](../usecases/images/email-field.png "email")
+![email](../usecases/images/email-field.png)
 
    </td>
   </tr>
@@ -491,7 +491,7 @@ Use the <strong>Date component</strong> and set the <em>Time option</em> to <em>
    </td>
    <td>
 
-![Toggle](../usecases/images/toggle-field.png "Toggle")
+![Toggle](../usecases/images/toggle-field.png)
 
    </td>
   </tr>
@@ -500,7 +500,7 @@ Use the <strong>Date component</strong> and set the <em>Time option</em> to <em>
    </td>
    <td>
 
-![address](../usecases/images/address-field.png "address")
+![address](../usecases/images/address-field.png)
 
    </td>
   </tr>
@@ -509,7 +509,7 @@ Use the <strong>Date component</strong> and set the <em>Time option</em> to <em>
    </td>
    <td>
 
-![url](../usecases/images/url-field.png "URL")
+![url](../usecases/images/url-field.png)
 
    </td>
   </tr>
@@ -518,7 +518,7 @@ Use the <strong>Date component</strong> and set the <em>Time option</em> to <em>
    </td>
    <td>
 
-![range slider](../usecases/images/range-slider.png "range slider")
+![range slider](../usecases/images/range-slider.png)
 
    </td>
   </tr>
@@ -539,7 +539,7 @@ Use the <strong>Date component</strong> and set the <em>Time option</em> to <em>
    </td>
    <td>
 
-![button](../usecases/images/button-field.png "button")
+![button](../usecases/images/button-field.png)
 
    </td>
   </tr>
@@ -548,7 +548,7 @@ Use the <strong>Date component</strong> and set the <em>Time option</em> to <em>
    </td>
    <td>
 
-![label](../usecases/images/label-field.png "label")
+![label](../usecases/images/label-field.png)
 
    </td>
   </tr>
@@ -557,7 +557,7 @@ Use the <strong>Date component</strong> and set the <em>Time option</em> to <em>
    </td>
    <td>
 
-![Protip](../usecases/images/protip-field.png "protip")
+![Protip](../usecases/images/protip-field.png)
 
    </td>
   </tr>
@@ -566,7 +566,7 @@ Use the <strong>Date component</strong> and set the <em>Time option</em> to <em>
    </td>
    <td>
 
-![Note](../usecases/images/note-field.png "note")
+![Note](../usecases/images/note-field.png)
 
    </td>
   </tr>
