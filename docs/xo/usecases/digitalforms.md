@@ -35,12 +35,14 @@ A Digital Form includes a definition and various components to capture user inpu
 
 To create forms, follow the below steps:
 1. Under the **Build** top menu, select **Digital Skills**.
+
 2. Click **Digital Forms > New Form**.
+
 3. On the **New Form** page, enter
-    * **Name** of the Form
-    * **Display Name** for the Form
-    * **Description** of the Form 
-      ![Create New Form](../usecases/images/create-new-form.png "Create New Form")
+* **Name** of the Form
+* **Display Name** for the Form
+* **Description** of the Form 
+![Create New Form](../usecases/images/create-new-form.png "Create New Form")
 
 4. **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. Click the card to select the style. If it has a logo, you can upload an image file (jpg or png) for the logo. 
 
@@ -203,9 +205,7 @@ To invoke a form using Widgets and Panels, follow the below steps:
 
 > **Note**: While a Digital Form is used to define multiple Widgets and also add to multiple panels, it will be associated with a single Dialog Task across all Widgets and Panels.
 
-
 ![invoke form in widget](../usecases/images/invoke-form-in-widget.png "invoke form in widget")
-
 
 2. **Add the Widget** to an existing panel or create a new panel. 
 You can add a form directly to a panel, it creates a widget by default.
@@ -380,202 +380,78 @@ The Bot Export option is available for Digital Forms with a status of _In Develo
 
 ### Components List
 
-Following is a list of available components. For details on the properties of each component.
+Following is a list of the available components.
 
-<table>
-  <tr>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>SAMPLE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>BASIC</strong>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Text Field</strong> – used for single-line input.
-   </td>
-   <td>
+**BASIC**
 
-![](../usecases/images/text-field-input.png)
+* **Text Field** – used for single-line input.
 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Text Area</strong> – used for multi-line entry
-   </td>
-   <td>
+    ![text field](../usecases/images/text-field-input.png "text field")
+* **Text Area** – used for multi-line entry.
 
-![text area](../usecases/images/text-area.png)
+    ![text area](../usecases/images/text-area.png "text area")
+* **Number** – used for numerical entries.
 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Number</strong> – used for numerical entries
-   </td>
-   <td>
+![number field](../usecases/images/number-field.png "number field")
+* **Radio Button** – used as a selection option from a given list.
 
-![number field](../usecases/images/number-field.png)
+![radio button](../usecases/images/radio-button.png "radio button")
+* **Dropdown** – Used as a selection option from a given list; can be multi-select.
 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Radio Button</strong> – used as a selection option from a given list
-   </td>
-   <td>
+![dropdown list](../usecases/images/dropdown-list.png "dropdown list")
+* **Checkbox** – Used for multi-select option from a given list.
 
-![radio button](../usecases/images/radio-button.png)
+![checkbox](../usecases/images/checkbox.png "checkbox")
 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Dropdown</strong> – Used as a selection option from a given list; can be multi-select
-   </td>
-   <td>
+* **Date** – Used for date entries, gives a date picker for the user to choose the date.
 
-![dropdown list](../usecases/images/dropdown-list.png)
+![date](../usecases/images/date-calendar.png "date")
 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Checkbox</strong> – Used for multi-select option from a given list
-   </td>
-   <td>
+* **Date & Time** – Used for date & time entries. The system displays a date and time picker for the user to choose the date and time.
+Use the **Date component** and set the <em>Time option</em> to <em>yes</em>; choose from <em>12</em> or <em>24-hour</em> format.
 
-![checkbox](../usecases/images/checkbox.png)
+![date and time](../usecases/images/date-time.png "date and time")
 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Date</strong> – Used for date entries, gives a date picker for the user to choose the date.
-   </td>
-   <td>
+* **Phone Number** – Used for phone number entries, allows the user to choose the country code.
+  ![phone number](../usecases/images/phone-number.png "phone number")
+* **Email** – Used for email address entries, validates for <em>xxx@uuu.com</em> format.
 
-![date](../usecases/images/date-calendar.png)
+![email](../usecases/images/email-field.png "email")
 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Date & Time</strong> – Used for date & time entries, give a date and time picker for the user to choose the date and time.
-<p>
-Use the <strong>Date component</strong> and set the <em>Time option</em> to <em>yes</em>; choose from <em>12</em> or <em>24-hour</em> format
-   </td>
-   <td>
+* **Toggle** – Used for switching between two values, ideal for yes/no type of inputs.
 
-![date and time](../usecases/images/date-time.png)
+![Toggle](../usecases/images/toggle-field.png "toggle")
+* **Address** – Used for address entries.
 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Phone Number</strong> – Used for phone number entries, allows the user to choose the country code.
-   </td>
-   <td>
+![address](../usecases/images/address-field.png "address")
 
-![phone number](../usecases/images/phone-number.png)
+* **URL** – Used for web URL entries, validates for <em>xxx.com</em> format.
 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Email</strong> – Used for email address entries, validates for <em>xxx@uuu.com</em> format
-   </td>
-   <td>
+![url](../usecases/images/url-field.png "url")
 
-![email](../usecases/images/email-field.png)
+* **Range Slider** – Value selection between specified min and max values; can be represented as a percentage.
 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Toggle</strong> – Used for switching between two values, ideal for yes/no type of inputs
-   </td>
-   <td>
+![range slider](../usecases/images/range-slider.png "range")
 
-![Toggle](../usecases/images/toggle-field.png)
+* **Password** - Used to display passwords in their masked form ```*****```
 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Address</strong> – Used for address entries
-   </td>
-   <td>
+**ADVANCED**
 
-![address](../usecases/images/address-field.png)
+* **Button** – Used as a clickable component to submit reset, or open an external URL the form. Choose from <em>Primary</em>, <em>Secondary</em>, <em>Tertiary</em>, <em>Ghost,</em> or <em>Danger</em>.
 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>URL</strong> – Used for web URL entries, validates for <em>xxx.com</em> format
-   </td>
-   <td>
+   ![button](../usecases/images/button-field.png "button")
 
-![url](../usecases/images/url-field.png)
+* **Label** – Used to display a static text box, no action required from the user.
 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Range Slider</strong> – Value selection between specified min and max values; can be represented as a percentage
-   </td>
-   <td>
+   ![label](../usecases/images/label-field.png "label")
 
-![range slider](../usecases/images/range-slider.png)
+* **Protip** – Used to mark important information for the end-user, no user action required.
 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Password</strong>
-   </td>
-   <td> *****
-   </td>
-  </tr>
-  <tr>
-   <td><strong>ADVANCED</strong>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Button</strong> – Used as a clickable component to submit, or reset, or open an external URL the form. Choose from <em>Primary</em>, <em>Secondary</em>, <em>Tertiary</em>, <em>Ghost,</em> or <em>Danger</em>.
-   </td>
-   <td>
+![Protip](../usecases/images/protip-field.png "protip")
 
-![button](../usecases/images/button-field.png)
+* **Note** – Used to mark information for the end-user, no user action required.
 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Label</strong> – Used to display a static text box, no action required from the user
-   </td>
-   <td>
-
-![label](../usecases/images/label-field.png)
-
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Protip</strong> – Used to mark important information for the end-user, no user action required.
-   </td>
-   <td>
-
-![Protip](../usecases/images/protip-field.png)
-
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Note</strong> – Used to mark information for the end-user, no user action required.
-   </td>
-   <td>
-
-![Note](../usecases/images/note-field.png)
-
-   </td>
-  </tr>
-</table>
-
-
- 
-
+![Note](../usecases/images/note-field.png "note")
 
 ### Component Properties
 
