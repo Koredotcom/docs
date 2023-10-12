@@ -43,7 +43,7 @@ To create forms, follow the below steps:
     * **Display Name** for the Form.
     * **Description** of the Form.
 
-![Create New Form](../usecases/images/create-new-form.png "Create New Form")
+      ![Create New Form](../usecases/images/create-new-form.png "Create New Form")
 
 4. **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. Click the card to select the style. If it has a logo, you can upload an image file (jpg or png) for the logo. 
 
