@@ -1,3 +1,11 @@
+```markdown
+---
+toc:
+  depth_from: 1
+  depth_to: 6
+  ordered: false
+---
+```
 # **Digital Skills**
 
  Improving the user experience is a crucial aspect of developing a virtual assistant or any digital application. Digital skills are essential for efficiently handling and presenting information to users in a user-friendly and visually appealing manner.
