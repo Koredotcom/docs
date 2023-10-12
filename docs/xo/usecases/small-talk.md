@@ -288,7 +288,7 @@ context:
 }
 
 ```
-The context can be accessed from the child nodes under _previousMatchedData_ array using: `context.smallTalk.previousMatchData[i].matchData._0` with the variable _i_ taking the index value of 0, 1, and 2 based on the parent level.
+The context can be accessed from the child nodes under _previousMatchedData_ array using: `context.smallTalk.previousMatchData[i].matchData.0` with the variable _i_ taking the index value of 0, 1, and 2 based on the parent level.
 
 The JSON structure for the parent Small Talk context would be:
 
