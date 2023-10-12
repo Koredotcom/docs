@@ -243,8 +243,10 @@ Once you create/import a group, you can add/modify the query-response pairs.
 You can mark desired information in the user utterance pattern definition and it will be available in the context. A new section called **Small Talk** is introduced under **NLP Analysis** which stores the contextual information from the ongoing small talk. You can use this information to personalize the Small Talk messages.
 
 Marking a section in the user input pattern by including an underscore ‘_’ symbol you can indicate the required information. For example, *I am from _~location Where are you from?* will allow you to capture the location from the user utterance. 
-This information is stored in the Small Talk context and can be accessed using: `context.smallTalk.matchData._0` The following is the JSON structure: 
-`context.smallTalk.matchData._0 The following is the JSON structure:`
+This information is stored in the Small Talk context and can be accessed using: `context.smallTalk.matchData.0`
+
+The following is the JSON structure:
+
 ```
 {
   "pattern": "I am from _~location Where are you from?",
