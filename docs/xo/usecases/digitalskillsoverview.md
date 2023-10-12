@@ -9,7 +9,7 @@ Digital Skills are a set of features within the Kore.ai XO Platform which allow 
 
 * **Digital Views**: There are two components to Digital Views:
      * **Widgets**: These can be set up to retrieve information from a Dialog Task, JSON file or Digital Form and present it to the user.
-     * **Panels**: A Panel is like a collection of widgets. You can use Panels to present end users with the same type of information in an organized manner, but all in one place. For example, you might have a *My Trips* Panel, which could include widgets for *Upcoming Trips*, *Completed Trips* and *Canceled Trips*.
+     * **Panels**: A Panel is a collection of widgets. You can use Panels to present end users with the same type of information in an organized manner in one place. For example, you might have a *My Trips* Panel, which could include widgets for *Upcoming Trips*, *Completed Trips* and *Canceled Trips*.
 
 # Digital Skills Implementation
 * You can implement Digital Forms within the Kore.ai XO Platform, by following [this article](https://developer.kore.ai/docs/bots/bot-builder-tool/digital-forms/). 
