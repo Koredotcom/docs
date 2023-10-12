@@ -205,15 +205,14 @@ To invoke a form using Widgets and Panels, follow the below steps:
 4. **Add a Form** by selecting it from the drop-down list.
 5. Select the **Dialog to Invoke on Submit** from the drop-down list.
 6. Click **Save**.
-
-> **Note**: While a Digital Form is used to define multiple Widgets and also add to multiple panels, it will be associated with a single Dialog Task across all Widgets and Panels.
-
-![invoke form in widget](../usecases/images/invoke-form-in-widget.png "invoke form in widget")
-
 7. **Add the Widget** to an existing panel or create a new panel. 
 You can add a form directly to a panel, it creates a widget by default.
 8. You can **Test** the panel.
 9. Follow the steps provided [here](https://developer.kore.ai/docs/bots/sdks/kore-ai-widget-sdk-tutorial/) to publish and host the panels.
+
+> **Note**: While a Digital Form is used to define multiple Widgets and also add to multiple panels, it will be associated with a single Dialog Task across all Widgets and Panels.
+
+![invoke form in widget](../usecases/images/invoke-form-in-widget.png "invoke form in widget")
 
 ## The User Experience
 When the end-user initiates the dialog and reaches the node connecting to the Form node, the following events take place. Depending upon the experience selected at design time and the channel of invocation, the flow is the following:
@@ -2675,15 +2674,11 @@ context.prefillForms = {
 ## **Limitations**
 
 * Digital Forms will not work as expected on the following channels:
-
-  * Amazon Alexa
-  * Cisco Jabber
-  * Google Assistant
-  * IVR Voice
-  * Twilio Voice
-
+    * Amazon Alexa
+    * Cisco Jabber
+    * Google Assistant
+    * IVR Voice
+    * Twilio Voice
 * You are advised to choose the Conversation Experience for these channels.
-
 * Digital Forms created in the parent bot are not inherited into **Smart Bots**.
-
 * The Digital Forms functionality is not applicable for **Universal Bots**.
