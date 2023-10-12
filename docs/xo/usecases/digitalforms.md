@@ -51,23 +51,16 @@ To create forms, follow the steps below:
 > **Note**: During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
 
 5. Turn on the **Description** toggle if you want to show a description of the form in the header. 
-
 ![Description Toggle](../usecases/images/description-toggle-turn-on.png "Description Toggle")
 
 6. **Form Security** – Enable **Secure Form Data** to redact form data from the Bot Context, Debug Logs, Service Calls, Agent Transfer, and the Bot Kit. 
-
 ![secure form data](../usecases/images/secure-form-data.png "secure form data")
-
 While enabling, you can also choose whether to display the **Secure Form icon** to your end users. 
-
 ![enable redact form data](../usecases/images/enable-redact-form-data.png "enable redact form data")
-
 Once enabled, the Platform will replace the user input with a unique random system-generated alphanumeric value in all the modules. Also, the **Secure Form** icon and a **Tip** will be displayed, notifying the user that the form is secure.
-
 ![secure form icon](../usecases/images/secure-form-icon.png "secure form icon")
 
 7. Click **Save & Proceed**. 
-
 ![save digital form](../usecases/images/save-digital-form.png "save digital form")
 
 ### Add Components
