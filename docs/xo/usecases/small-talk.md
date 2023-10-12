@@ -238,16 +238,13 @@ Once you create/import a group, you can add/modify the query-response pairs.
     * Enter the response in standard text or in Java Script using the Advanced Mode. If applicable Select a Template. ([see here](https://developer.kore.ai/docs/bots/sdks/message-templates/) for more on message formatting). 
     ![message response channel](../usecases/images/message-response-channel.png "message response channel")
     * Click **Save**.
-
-
 # Small Talk Context
 
 You can mark desired information in the user utterance pattern definition and it will be available in the context. A new section called **Small Talk** is introduced under **NLP Analysis** which stores the contextual information from the ongoing small talk. You can use this information to personalize the Small Talk messages.
 
-Marking a section in the user input pattern by including an underscore ‘_’ symbol you can indicate the required information. For example, _I am from _~location Where are you from?_ will allow you to capture the location from the user utterance. \
-This information is stored in the Small Talk context and can be accessed using: `context.smallTalk.matchData._0` The following is the JSON structure: \
+Marking a section in the user input pattern by including an underscore ‘_’ symbol you can indicate the required information. For example, *I am from _~location Where are you from?* will allow you to capture the location from the user utterance. 
+This information is stored in the Small Talk context and can be accessed using: `context.smallTalk.matchData._0` The following is the JSON structure: 
 `context.smallTalk.matchData._0 The following is the JSON structure:`
-
 ```
 {
   "pattern": "I am from _~location Where are you from?",
