@@ -1,6 +1,4 @@
-<div style='text-align: right;'>
 [TOC]
-</div>
 
 # **Digital Skills**
 
