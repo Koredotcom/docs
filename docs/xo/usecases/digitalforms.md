@@ -336,6 +336,7 @@ A Dialog Task that contains a Digital Form can be published only if:
 * The corresponding Digital Form is also selected for publishing.
 
 A Digital Form that is configured to trigger a Dialog Task is published only if:
+
 * The corresponding Dialog Task is already published, or
 * The corresponding Dialog Task is selected for publishing.
 
@@ -399,7 +400,7 @@ Following is a list of available components. For details on the properties of ea
    </td>
    <td>
 
-![text field](../usecases/images/text-field-input.png)
+![](../usecases/images/text-field-input.png)
 
    </td>
   </tr>
