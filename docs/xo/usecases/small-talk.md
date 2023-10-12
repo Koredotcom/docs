@@ -202,7 +202,6 @@ If you have already had Small Talk for your company, you can import it using a J
 
 You can click the existing Greetings group to modify it, if the default small talk does not fit your needs. From the Small Talk editor that opens you can now enter User Utterance – Bot Response pairs and **Add** to the list.
 
-
 ## Work with Query – Response Pairs
 
 Once you create/import a group, you can add/modify the query-response pairs.
