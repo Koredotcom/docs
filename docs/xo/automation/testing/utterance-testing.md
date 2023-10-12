@@ -72,7 +72,7 @@ Below are the possible outcomes of a user utterance test:
 ![alt_text](./images/utterance-testing-3-utterancetesting-multiple.png "Utterance Testing Multiple")
 
 </div>
-<img src="./images/utterance-testing-3-utterancetesting-multiple.png" width="650">
+<img src="../testing/images/utterance-testing-3-utterancetesting-multiple.png" width="650">
 
 
 
