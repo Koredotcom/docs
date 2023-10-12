@@ -1,5 +1,3 @@
-
-[TOC]
 # **Small Talk**
 
 **Small Talk** refers to the casual conversations that a Virtual Assistant can have with end users. The ability to engage end users in casual conversations helps your assistant socialize better with customers and improves recall rates.
@@ -344,3 +342,4 @@ Importing Small Talk file triggers the training automatically.
 > * Respond to Small Talk and resume the on-hold task – this is the default setting.
 > * Execute the Small Talk using *Hold & Resume* settings.
 ![manage interruptions behavior](../usecases/images/manage-interruptions-behaviour.png "manage interruptions behavior")
+
