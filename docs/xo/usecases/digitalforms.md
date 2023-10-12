@@ -39,10 +39,9 @@ To create forms, follow the below steps:
 2. Click **Digital Forms > New Form**.
 
 3. On the **New Form** page, enter the following:
-
-  * **Name** of the Form.
-  * **Display Name** for the Form.
-  * **Description** of the Form.
+    * **Name** of the Form.
+    * **Display Name** for the Form.
+    * **Description** of the Form.
 
 ![Create New Form](../usecases/images/create-new-form.png "Create New Form")
 
