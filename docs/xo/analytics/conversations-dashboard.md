@@ -112,9 +112,9 @@ This metric is available only for the Conversation Session.
 <p>
 <strong>Conversation Sessions</strong>: Displays the total number of hours for self-service, drop-off, and agent transfer sessions over a period of time.
 <p>
-<strong>Self-Service</strong>: Displays the total number of hours for self-service sessions distributed hourly.
+<strong>Self-Service</strong>: Displays the total number of hours for self-service sessions distributed hourly. 
 <p>
-<strong>Drop-off:</strong> Displays the total number of hours for drop-off sessions distributed hourly.
+<strong>Drop-off:</strong> Displays the total number of hours for drop-off sessions distributed hourly. 
 <p>
 <strong>Agent Transfer</strong>: Displays the total number of hours for agent transfer sessions distributed hourly. 
    </td>
