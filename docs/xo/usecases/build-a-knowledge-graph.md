@@ -14,6 +14,7 @@ To open the Knowledge Graph builder, follow the below steps:
 
 > **Note**:
 All features explained here are supported by the Few-Shot Knowledge Graph, except for the following:
+>
 >  * Few-Shot Knowledge Graphs do not require an ontology structure, but you can create one to  improve intent detection. 
 > * Default terms are not available in Few-Shot Knowledge Graphs. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.
 > * Lemmatization using Parts of Speech, Search in Answer, and Contextual Paths Qualification are not supported by Few-Shot Graphs. Please see the Knowledge Graph Types Comparison Table for a detailed list of supported features.
