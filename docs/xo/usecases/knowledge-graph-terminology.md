@@ -35,9 +35,7 @@ Any node at any level starting with the 2nd is called a **_Leaf Term/Node_**.
 
 > **Note**: 
 > * This hierarchical organization of nodes is for your convenience to keep related questions together.
->
 > * The Knowledge Graph Engine does not consider any parent-child relation while evaluating the questions for a match.
->
 > * The hierarchy does not influence the FAQ matching process since all the nodes are considered the same way, irrespective of their position.
 
 ![leaf term](../usecases/images/leaf-term-node.png "leaf term")
@@ -91,6 +89,4 @@ A VA can respond to a given question with an FAQ or the execution of a Dialog Ta
 > * For Few-shot graphs, you can add all your FAQs to the Root node because the LLM does not require an ontology.
 > * Default terms are not available in Few-Shot Knowledge Graphs. The only exception is when you switch from an Ontology Graph, where the existing Default terms are stored as such until updated. 
 > * Later, Default terms become Organizer terms and can be set as Mandatory.
->* Path Level Synonyms are only supported for Mandatory Terms and for Tags.
-```
-
+> * Path Level Synonyms are only supported for Mandatory Terms and for Tags.
