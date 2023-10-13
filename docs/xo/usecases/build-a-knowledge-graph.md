@@ -119,8 +119,8 @@ To delete a term, follow the steps below:
 2. Click the **Delete** icon.
 3. On the confirmation dialog box, you can find the following options:
 
-* **Delete the FAQs along with the term** – Choosing this option deletes the term and FAQs under it.
-* **Delete the term and move FAQs to root term** - Choosing this option deletes the term and moves the FAQs under it to the root term.
+    * **Delete the FAQs along with the term** – Choosing this option deletes the term and FAQs under it.
+    * **Delete the term and move FAQs to root term** - Choosing this option deletes the term and moves the FAQs under it to the root term.
 
 > **Note**
 >
@@ -149,17 +149,16 @@ The Knowledge Graph engine works well with the default settings, but you can fin
 
 1. Configure the Knowledge Graph by defining terms, **synonyms, primary and alternative questions, or user utterances.** Though hierarchy does not affect the KG engine performance, it does help organize and guide your knowledge implementation.
 2. Set the following parameters:
-
- * **Path Coverage** – For Ontology-based graphs, you can define the minimum percentage of terms in the user’s utterance to be present in a path to qualify it for further scoring.
- * **Definite Score for KG** – Define the minimum score for a KG intent match to consider as a definite match and discard any other intent matches found.
- * **Minimum and Definitive Level for Knowledge Tasks** – Define minimum and definitive threshold to identify and respond in case of a knowledge task.
- * **KG Suggestions Count** – Define the maximum number of KG/FAQ suggestions to present when a definite KG intent match is unavailable.
- * **The proximity of Suggested Matches** – Define the maximum difference to allow between top-scoring and immediate next suggested questions to consider as equally important. 
- * **Qualify Contextual Paths** – This ensures that the bot context is populated and retained with the terms/nodes of the matched intent. This further enhances the user experience.
+    * **Path Coverage** – For Ontology-based graphs, you can define the minimum percentage of terms in the user’s utterance to be present in a path to qualify it for further scoring.
+    * **Definite Score for KG** – Define the minimum score for a KG intent match to consider as a definite match and discard any other intent matches found.
+    * **Minimum and Definitive Level for Knowledge Tasks** – Define minimum and definitive threshold to identify and respond in case of a knowledge task.
+    * **KG Suggestions Count** – Define the maximum number of KG/FAQ suggestions to present when a definite KG intent match is unavailable.
+    * **The proximity of Suggested Matches** – Define the maximum difference to allow between top-scoring and immediate next suggested questions to consider as equally important. 
+    * **Qualify Contextual Paths** – This ensures that the bot context is populated and retained with the terms/nodes of the matched intent. This further enhances the user experience.
 
 > **Note**: You can customize these settings in Natural Language > Thresholds & Configurations. See Knowledge Graph Training for details.
 
- * **Traits** – Traits qualify nodes/terms even if the user utterance does not contain the term/node. Traits are also helpful in filtering the suggested intent list.
+* **Traits** – Traits qualify nodes/terms even if the user utterance does not contain the term/node. Traits are also helpful in filtering the suggested intent list.
 
 
 
