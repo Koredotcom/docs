@@ -41,8 +41,9 @@ When you test an utterance, the NLP engine tries to identify an intent using the
 
     Utterance testing differs for Knowledge AI and Ranking and Resolver, depending on the NLP version, Ranking and Resolver version, and whether you are using the Few-Shot Knowledge Graph model.
 
- 
-Utterance Match Classification
+
+
+### Utterance Match Classification
 
 Test results are classified as either _Probable Matches_ or _Definitive Matches_, as follows;
 
@@ -81,7 +82,7 @@ Post v. 8.0 of the XO Platform, the details of how the entity is matched, and wi
 
 
 * **Identification Engine** – Machine Learning, Fundamental Meaning or Knowledge Graph;
-* **Training Type **– match can be from NER, pattern training, entity name, system concept, etc.. In case of pattern match, click the row to get the details for the same;
+* **Training Type** – match can be from NER, pattern training, entity name, system concept, etc.. In case of pattern match, click the row to get the details for the same;
 * **Confidence Score** identified by the ML engine using NER training (only when Conditional Random Field is selected as the NER model) 
 
 ![Entity Match](./images/utterance-testing-5.png "Entity Match")
@@ -200,7 +201,7 @@ The ranking and details for each match can be viewed by selecting the matched ut
 ![Ranking and Resolver](./images/utterance-testing-13-rr-matched-utterance.png "Ranking and Resolver")
 
 
-#### RR Scoring Model
+### RR Scoring Model
 
 Depending upon the Bot language the scoring model can be:
 
@@ -221,9 +222,9 @@ The basis for **intent elimination** by Ranking & Resolver when the three engine
 
 <table style="width: 100%; border-collapse: collapse; background-color: #dffbea;">
 <tr>
-<td><strong>Ranking and Resolver v2</strong>
+<td><strong>Ranking and Resolver v2</strong></td>
 </tr>
-<tr>
+<tr><td>
 <a href="https://developer.kore.ai/docs/bots/nlp/nlp-detection/#Notes_on_Ranking_and_Resolver_Version_2">Version 2 of the Ranking and Resolver</a> only ranks the scores of the definitive matches from ML and KG engines (not the FM engine) without intent rescoring to ensure the best intent identification accuracy.
 If you enable Ranking and Resolver Version 2, your test results adjust as follows: 
 
@@ -233,8 +234,8 @@ The Ranking & Resolver window displays the following:
    * The winning intent name and the ranking score.
    * The other definitive intent(s), the reason for elimination, and the ranking score.
    * The result, including the winning and eliminated intents.
-</tr>
-<tr>   
+</td></tr>
+
 ![Ranking and Resolver V2](./images/utterance-testing-14-rr-testing.png "Ranking and Resolver V2")
 
 The NLP Analysis page within the NLP Insights dashboard displays the following:
