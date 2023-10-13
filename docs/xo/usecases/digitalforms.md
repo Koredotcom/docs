@@ -30,44 +30,37 @@ Here is the overall usage process for Digital Forms within the Kore.ai XO Platfo
 * **Form Submission**: When it is submitted, the component values are validated and any errors are highlighted. Based on the mode of invocation, post successful validation:
     * The VA execution proceeds as per dialog flow in case of dialog task invocation.
     * The selected task is triggered.
+
 ## Create a Form
 A Digital Form includes a definition and various components to capture user input.
 
-To create forms, follow the below steps:
+To create forms, follow the steps below:
+
 1. Under the **Build** top menu, select **Digital Skills**.
 
 2. Click **Digital Forms > New Form**.
 
 3. On the **New Form** page, enter the following:
+    * **Name** of the Form.
+    * **Display Name** for the Form.
+    * **Description** of the Form.
 
-  * **Name** of the Form.
-  * **Display Name** for the Form.
-  * **Description** of the Form.
+      ![Create New Form](../usecases/images/create-new-form.png "Create New Form")
 
-![Create New Form](../usecases/images/create-new-form.png "Create New Form")
-
-4. **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. Click the card to select the style. If it has a logo, you can upload an image file (jpg or png) for the logo. 
-
-> **Note**: During the Export of the Bot, the logo is not exported along with Digital Forms. So, while importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
+4. **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. Click the card to select the style. If it has a logo, you can upload an image file (jpg or png) for the logo.
+> **Note**: During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
 
 5. Turn on the **Description** toggle if you want to show a description of the form in the header. 
-
 ![Description Toggle](../usecases/images/description-toggle-turn-on.png "Description Toggle")
 
 6. **Form Security** – Enable **Secure Form Data** to redact form data from the Bot Context, Debug Logs, Service Calls, Agent Transfer, and the Bot Kit. 
-
 ![secure form data](../usecases/images/secure-form-data.png "secure form data")
-
 While enabling, you can also choose whether to display the **Secure Form icon** to your end users. 
-
 ![enable redact form data](../usecases/images/enable-redact-form-data.png "enable redact form data")
-
 Once enabled, the Platform will replace the user input with a unique random system-generated alphanumeric value in all the modules. Also, the **Secure Form** icon and a **Tip** will be displayed, notifying the user that the form is secure.
-
 ![secure form icon](../usecases/images/secure-form-icon.png "secure form icon")
 
 7. Click **Save & Proceed**. 
-
 ![save digital form](../usecases/images/save-digital-form.png "save digital form")
 
 ### Add Components
