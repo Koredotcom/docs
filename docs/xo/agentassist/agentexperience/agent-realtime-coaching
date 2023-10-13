@@ -45,104 +45,40 @@ Steps to add none intent utterances:
 
 
 1. Log in to [https://agentassist.kore.ai/koreagentassist](https://agentassist.kore.ai/koreagentassist/).
-2. Click **Configuration **> **Agent Coaching**.
-3. Click the **edit** button under **Actions**. \
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
+2. Click **Configuration**> **Agent Coaching**.
+3. Click the **edit** button under **Actions**.
+![Alt text](agent-realtime-coaching-images/image_1.png)
 4. Click **Add Utterance(s)**. \
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_2.png)
 5. Select **AI Assist** or **Input Utterances Manually**. \
  \
 **Follow these steps if you select AI Assist**:
     1. Select **AI Assist**. \
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_3.png)
     2. Select rules, as required, from the **Add Rules** list and click **Add**. \
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_4.png)
     3. All added rules are displayed on the left, and the AI starts searching for more utterances that are similar in meaning to the utterances of your selected rules.. \
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_5.png)
     4. Select utterances, as required, and then click **Add Selected**. \
-
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_6.png)
     5. Click **Save** to complete the process. \
-
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image7.png "image_tooltip")
- \
- \
+![Alt text](agent-realtime-coaching-images/image_7.png)
+ 
 
 
     **Follow these steps if you select Input Utterances Manually:**
 
-    1. Select **Input Utterances Manually**. \
-
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image8.png "image_tooltip")
-
-    2. Enter your utterance in the **Utterances** field and press the **Enter** key. \
-
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image9.png "image_tooltip")
- \
+    1. Select **Input Utterances Manually**.
+    ![Alt text](agent-realtime-coaching-images/image_8.png)
+    2. Enter your utterance in the **Utterances** field and press the **Enter** key.
+    ![Alt text](agent-realtime-coaching-images/image_9.png)
 Following this step, you can add multiple utterances.
-    3. Click **Save**. \
-
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image10.png "image_tooltip")
+    3. Click **Save**
+.
+![Alt text](agent-realtime-coaching-images/image_10.png)
 
         * The new utterance gets added to the list of utterances. \
-
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image11.png "image_tooltip")
- \
+![Alt text](agent-realtime-coaching-images/image_11.png)
 
 
 
@@ -162,15 +98,7 @@ This is a predefined rule with conditions and actions that come with Agent Coach
 * **Assigned to**: All Agents
 
 The following screenshot displays the Price Objection rule:
-
-
-
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image12.png "image_tooltip")
-
-
+![Alt text](agent-realtime-coaching-images/image_12.png)
 For information on rule functionalities, refer to the section 
 
 <p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Create, Publish, Edit, Delete, and Disable Rules"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
@@ -194,53 +122,23 @@ From time to time, depending on newer or different situations, you can create ne
 
 1. Log in to [https://agentassist.kore.ai/koreagentassist](https://agentassist.kore.ai/koreagentassist/).
 2. Click **Configuration **> **Agent Coaching**. \
-
-
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image13.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_13.png)
 3. Click **+New Rule**.  \
-
-
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image14.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_14.png)
 4. Enter a name for the new rule in the **Name** field.
-
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image15.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_15.png)
 5. Enter a short description about the rule in the **Description** field. \
 To read how to form a rule description, hover over the “**i**” button beside the **Description** field.
+![Alt text](agent-realtime-coaching-images/image_16.png)
 
-        
-
-<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image16.png "image_tooltip")
- \
-The rule description should be concise and include keywords and conditions. It trains our AI for real-time assistance.
-
+    The rule description should be concise and include keywords and conditions. It trains our AI for real-time assistance.
 6. Enter a tag in the **Tag** field and then press the **Enter** key to add the tag.
 7. Click **Voice** or **Live Chat** or both in the **Channels** field.
     * **Voice**: Choose Voice if you want this rule to take input utterance only through the voice (voice calls) medium.
     * **Live Chat**: Choose Live Chat if you want this rule to take input utterance only through the live chat (text messages) medium.
     * **Both**: Choose both Voice and Live Chat if you want this rule to take input utterance through both these mediums.
 8. Click **Apply** to complete the rule creation process: \
-
-
-<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image17.png "image_tooltip")
- \
+![Alt text](agent-realtime-coaching-images/image_17.png)
 A message shows up to confirm new rule creation.
 9. Click **+Add a trigger** under **When…** to add a trigger condition for the rule. For more information, refer to the **
 
@@ -271,22 +169,10 @@ After creating a new rule, you need to publish it to be available in the system.
 
 1. Log in to [https://agentassist.kore.ai/koreagentassist](https://agentassist.kore.ai/koreagentassist/).
 2. Click **Configuration **> **Agent Coaching**.
-3. Click the **Publish** button on the top right corner of the page. \
-
-
-<p id="gdcalert22" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert23">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image18.png "image_tooltip")
-
+3. Click the **Publish** button on the top right corner of the page. 
+![Alt text](agent-realtime-coaching-images/image_18.png)
     * The Published Successfully confirmation message appears on the screen. \
-
-
-<p id="gdcalert23" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert24">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image19.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_19.png)
 
 
 ### Editing a Rule
@@ -302,21 +188,9 @@ You can add to or change an existing rule, from time to time based on the requir
 2. Click **Configuration **> **Agent Coaching**.
 3. Locate the rule you want to edit–either from the displayed list or by partially entering the rule name in the **Search** box.
     * As you start entering the rule name, matching rule names appear on the screen. \
-
-
-<p id="gdcalert24" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image20.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert25">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image20.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_20.png)
 4. Click the **edit** button beside a rule name that you want to edit. \
-
-
-<p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image21.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image21.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_21.png)
 
 **Note**: Co-editing a rule is not allowed–if you edit a rule, it's locked, and no one else can edit or delete it simultaneously. AgentAssist will notify you if you attempt to co-edit a rule. If a rule is locked for editing, but the user has not performed any editing for 15 minutes or left the **Rules Configuration** screen, AgentAssist unlocks the rule for editing by another user.
 
@@ -332,21 +206,9 @@ You can delete a rule due to irrelevance or other reasons. AgentAssist lets you 
 
 1. Go to the **Configuration > Agent Coaching** main page.
 2. Click the delete button beside a rule name that you want to delete. \
-
-
-<p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image22.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image22.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_22.png)
 3. Click the **Yes** button in the confirmation popup window. \
-
-
-<p id="gdcalert27" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image23.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image23.png "image_tooltip")
- \
+![Alt text](agent-realtime-coaching-images/image_23.png)
 
 
 
@@ -361,27 +223,10 @@ If you don’t want to use a rule temporarily, you can disable it.
 
 1. Go to the **Configuration > Agent Coaching** main page.
 2. In the **Enabled** column, click the **disable** 
-
-<p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image24.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image24.png "image_tooltip")
  button corresponding to the rule you want to disable. \
-
-
-<p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image25.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image25.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_24.png)
     * The **Configuration has been saved** message appears on the screen. \
-
-
-<p id="gdcalert30" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image26.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert31">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image26.png "image_tooltip")
- \
+![Alt text](agent-realtime-coaching-images/image_25.png)
 
 
 
@@ -410,144 +255,43 @@ Utterances are inputs from either the customers or the agents. In Utterance Trig
 
 [Steps to create a new rule](#heading=h.6fgyarkaa4td). 
 2. Under **When**, click the **+ Add a trigger** button. \
-
-
-<p id="gdcalert32" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image27.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert33">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image27.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_26.png)
 3. Select **Utterance**. \
-
-
-<p id="gdcalert33" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image28.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert34">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image28.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_27.png) \
 4. Click **{select person}**. \
-
-
-<p id="gdcalert34" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image29.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert35">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image29.png "image_tooltip")
-
-5. Select either **Agent** or **Customer**.
+![Alt text](agent-realtime-coaching-images/image_28.png)
+5. Select either **Agent** or **Customer**.\
 6. Click **set utterances**. \
-
-
-<p id="gdcalert35" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image30.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert36">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image30.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_29.png)
 7. Enter an utterance that the user (customer or agent) may use in the **Utterances** box. \
-
-
-<p id="gdcalert36" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image31.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert37">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image31.png "image_tooltip")
-
 8. Select the utterance you have entered. \
-
-
-<p id="gdcalert37" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image32.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert38">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image32.png "image_tooltip")
+![Alt text](agent-realtime-coaching-images/image_30.png)
 
     *  There may be other matching utterances the AI suggests: \
-
-
-<p id="gdcalert38" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image33.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert39">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image33.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_31.png)
 9. Select the AI-suggested utterances, as required. \
-
-
-<p id="gdcalert39" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image34.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert40">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image34.png "image_tooltip")
- \
+![Alt text](agent-realtime-coaching-images/image_32.png)
 **Note**: AI suggests utterances that match with what you have entered based on conversation history. It also shows the appearance percentage of utterances.  
 10. Click **Add**. (The appearance of this button is based on the number of utterances entered by you plus the number of AI-suggested utterances you have selected. In this example, it’s 1+3. So, it’s displayed as **Add 4**.) \
-
-
-<p id="gdcalert40" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image35.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert41">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image35.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_33.png)
 11. Click **Okay**. \
-
-
-<p id="gdcalert41" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image36.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert42">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image36.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_34.png)
 12. Click **Save**. \
-
-
-<p id="gdcalert42" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image37.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert43">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image37.png "image_tooltip")
- \
+ ![Alt text](agent-realtime-coaching-images/image_35.png)
 **Note**: Before clicking the **Save** button, you can delete any utterance that you either would have added by mistake or think is not relevant.
     * The following screen appears: \
-
-
-<p id="gdcalert43" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image38.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert44">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image38.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_36.png)
 13. Click **1 time** to select the number of times any of these utterances appear. The default selection is **1 time**. For example, a customer may use any of these utterances once by mistake and to be sure, you want the customer to use them twice or thrice. You need to select **2 times** or **3 times** for such situations.   \
-
-
-<p id="gdcalert44" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image39.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert45">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image39.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_37.png)
 14. Click the default time frame, **in conversation**, to change it if you want to select other options. \
-
-
-<p id="gdcalert45" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image40.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert46">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image40.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_38.png)
     * If you select **Anytime in conversation**, the following screen appears: \
-
-
-<p id="gdcalert46" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image41.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert47">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image41.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_39.png)
     * If you select **By time**, the following screen appears: \
-
-
-<p id="gdcalert47" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image42.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert48">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image42.png "image_tooltip")
- \
+![Alt text](agent-realtime-coaching-images/image_40.png)
 From the dropdown, select **first** or **within** and enter the time in seconds.
     * If you select **By number of messages**, the following screen appears: \
-
-
-<p id="gdcalert48" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image43.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert49">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image43.png "image_tooltip")
+![Alt text](agent-realtime-coaching-images/image_41.png)
  \
 From the dropdown, select **first** or **within** and enter a number in the **messages** field.
 15. Press the **Enter** key to complete the process.
