@@ -55,8 +55,6 @@ This test suite includes all the end-user utterances that have successfully matc
 
 To add a new test suite, follow the steps below:
 
-
-
 1. Go to **Build** > **Testing** > **Batch Testing**, and click **New Test Suite**.
 
 <img src="../images/batch-testing-3.png" width="650">
@@ -133,7 +131,6 @@ _Multiple Intents for a Test Utterance_
 You can automatically generate batch test cases if you have enabled [LLM and Generative AI ](https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/)for your Virtual Assistant. You can access the feature either right after creating a new test case, as shown above, or from the test cases list.
 
 
-
 <img src="../images/batch-testing-9-goto-generate-test-cases.png" width="650">
 
 
@@ -142,7 +139,6 @@ You can automatically generate batch test cases if you have enabled [LLM and Gen
 #### Steps to Generate Test Cases
 
 To generate test cases automatically, follow the steps below:
-
 
 
 1. Click **Generate Test Cases** from any of the two areas mentioned above.
@@ -859,11 +855,12 @@ If the order is not provided or partially provided, the platform defines the imp
 4. Click **Create**. The dataset file is displayed as an option to run the test suite on the Batch Testing page:
 
 
+
 ## Running Test Suites
 
 The following steps guide you on how to run a batch test on your bot and get a detailed analytical report on the utterances based on the test results. To get started, go to Build > Testing > **Batch Testing**.
 
-!!!Note
+!!! note
 
     Before testing, it is essential to add and train your bot with a considerable number of utterances using Machine Learning.
 
@@ -925,6 +922,7 @@ Each test run creates a test report record and displays a summary of the test re
 
 
 
+
 ### Download a CSV Report
 
 To get a detailed analysis of the test run, click **the Download** icon to download the test report in CSV format. You have an option to delete the test results if needed. The top section of the report comprises the summary with the following fields:
@@ -981,7 +979,7 @@ The report also provides detailed information on each of the test utterances and
 * **Matched Intent’s Score** – For False Positives and False Negatives, the confidence scores from FM, ML, and/or KG engines are displayed for the matched intent from the utterance. Note that the scores are given only if the engine detects the intent, which means that you may not see the scores from all three engines at all times.
 * **Expected Intent’s Score** – For False Positives, the confidence scores for the intent expected to match for the given utterance is given. Again the score will be given by the engines detecting the intent.
 
-!!!Tip
+!!! tip
 
     For any of the batch tests, if results indicate that your bot is unable to recognize the correct intents, you can work on improving its performance by adding or modifying utterances to the Machine Learning model.
 

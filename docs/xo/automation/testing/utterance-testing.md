@@ -24,10 +24,7 @@ Follow these steps to test your assistant:
 5. In the **Type a user utterance** field, enter the utterance that you want to test. Example: _Book a flight_.
 6. The result appears with a single, multiple, or no matching intents
 
-\
 <img src="./images/utterance-testing-1.png" width="650">
-\
-
 
 
 ## Types of Test Results
@@ -41,19 +38,16 @@ When you test an utterance, the NLP engine tries to identify an intent using the
 * [Ranking and Resolver](https://developer.kore.ai/docs/bots/nlp/nlp-detection/).
 
 
- !!! note
+!!! note
 
     Utterance testing differs for Knowledge AI and Ranking and Resolver, depending on the NLP version, Ranking and Resolver version, and whether you are using the Few-Shot Knowledge Graph model.
 
  
-\
-<span style="font-weight: 500;">Utterance Match Classification</span>
+Utterance Match Classification
 
 Test results are classified as either _Probable Matches_ or _Definitive Matches_, as follows;
 
-\
 <img src="./images/utterence-testing-2-testing-matches.png" width="300">
-
 
 
 _Definitive Matches_ get high confidence scores and are assumed to be perfect matches for the user utterance. In published assistants, if user input matches with a single _Definitive Match_, the VA directly executes the task. If the utterances match with multiple _Definitive Matches_, they are sent as options for the end-user to choose one.
@@ -88,8 +82,6 @@ Below are the possible outcomes of a user utterance test:
 
 During testing of the VA, the matched entities are displayed. The entities from the utterance are processed in the following order:
 
-
-
 * first NER and pattern entities 
 * then the remaining entities.
 
@@ -99,12 +91,10 @@ Post v. 8.0 of the XO Platform, the details of how the entity is matched, and wi
 
 * **Identification Engine** – Machine Learning, Fundamental Meaning or Knowledge Graph;
 * **Training Type **– match can be from NER, pattern training, entity name, system concept, etc.. In case of pattern match, click the row to get the details for the same;
-* **Confidence Score** identified by the ML engine using NER training (only when Conditional Random Field is selected as the NER model) \
+* **Confidence Score** identified by the ML engine using NER training (only when Conditional Random Field is selected as the NER model) 
 
 
 <img src="./images/utterance-testing-5.png" width="650">
-
-
 
 ## Analyzing the Test Results
 
@@ -156,7 +146,7 @@ Clicking the **Processed Utterance** shows how the user utterance was analyzed a
 
 
 
-<span style="font-weight: 500;"> FM Scoring Model </span>
+FM Scoring Model
 
 From v. 7.2, the FM engine generates the model in two ways, depending upon the language of the VA.
 
@@ -263,13 +253,10 @@ The ranking and details for each match can be viewed by selecting the matched ut
 
 Depending upon the Bot language the scoring model can be:
 
-
-
 * based on a mixture of word roles, sentence/word positions, and word order; or
 * based on dependency parsing (supported for German and French languages)
 
 The basis for **intent elimination** by Ranking & Resolver when the three engines return different definite/possible matches is as follows:
-
 
 
 * Intents matched based upon entity values like date, number etc., by the Machine Learning Model are eliminated.
@@ -280,7 +267,6 @@ The basis for **intent elimination** by Ranking & Resolver when the three engine
 * Definitive matches which match a Negative Pattern.
 * Intents for which the pre-conditions, in case defined, are not met are eliminated.
 * If the definitive match was from Knowledge Graph Engine by Search In Answer and there is another matched intent.
-
 
 
 <table style="width: 100%; border-collapse: collapse; background-color: #dffbea;">
