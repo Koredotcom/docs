@@ -304,7 +304,7 @@ Once done, test the utterance integration on the **Alexa Developer Console** usi
 
 
 
-![alexa simulator](../images/alexa-22.png "alexa simulator")
+![alexa simulator](../images/alexa-22.png  "alexa simulator")
 
 
 If you get a successful response, then the integration is considered a success.
