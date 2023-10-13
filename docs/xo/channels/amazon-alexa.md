@@ -14,8 +14,6 @@ To accomplish the channel enablement, you must do the following:
 
 The following are the important checks to do and considerations before you enable the Amazon Alexa channel:
 
-
-
 1. Enterprise assistants that require the user’s authorization to communicate with it are not supported.
 2. If your dialog tasks require the user’s authorization to communicate with external systems, then the Platform will push a card with URL information to the Alexa app.
 3. Intents and entities of only Published Dialog Tasks can be exported to Amazon Alexa.
@@ -33,11 +31,10 @@ The following are the important checks to do and considerations before you enabl
 The steps to add the **Amazon Alexa** channel are given below:
 
 
-
 1. **Add a New Skill** – Create a new Alexa skill in the Amazon developer console.
 2. **Configure the Interaction Model** – The Alexa skill can be built in one of the following ways:
-* Dialog Migration to extract the dialog tasks from Kore.ai and import them into Amazon Alexa’s Skills. This will entail reimport for reflecting the ongoing changes in the dialog definition. Intent detection and execution are primarily controlled by Alexa.
-* Redirection to create a single intent in your skill with the [SearchQuery](https://developer.amazon.com/en-US/docs/alexa/custom-skills/slot-type-reference.html#searchquery) Slot Type that accepts user inputs and redirects them to your Kore.ai VA. Intent detection and execution are primarily controlled by the Kore.ai VA.
+    * Dialog Migration to extract the dialog tasks from Kore.ai and import them into Amazon Alexa’s Skills. This will entail reimport for reflecting the ongoing changes in the dialog definition. Intent detection and execution are primarily controlled by Alexa.
+    * Redirection to create a single intent in your skill with the [SearchQuery](https://developer.amazon.com/en-US/docs/alexa/custom-skills/slot-type-reference.html#searchquery) Slot Type that accepts user inputs and redirects them to your Kore.ai VA. Intent detection and execution are primarily controlled by the Kore.ai VA.
 3. **Enable Account Linking (Optional)** – To access end user’s authentication details to make API calls to external services.
 4. **Enable Webhook Integration** – To integrate Amazon Alexa with your Kore.ai VA, enable webhook integration by copying the **Webhook URL** on the **Configurations** tab of the Amazon Alexa Channel page in the XO Platform and select _HTTPS_ as the Service Endpoint type.
 5. **Enable Channel** – Enable the channel after completing the integration setup.
@@ -47,58 +44,27 @@ The steps to add the **Amazon Alexa** channel are given below:
 
 ## Step 1: Add a New Skill
 
-
-
 1. Log in to your [Amazon Developer Dashboard](https://developer.amazon.com/dashboard) and click the **Alexa** tab.
 2. Select **Alexa Skills Kit** on the menu.
-
-
-![alexa skills](../images/alexa-1.png "alexa skills")
-
-
+![alexa skills](./images/alexa-1.png "alexa skills")
 3. Click the **Skills** tab on the **Alexa Developer Console**.
 4. Click **Create Skill**.
-
-
-
-![create skill](../images/alexa-2.png "create skill")
-
-
+ ![create skill](./images/alexa-2.png "create skill")
 5. Enter the **Skill Name** field information on the **Create a New Skill** page and select the **primary locale** value.
 6. Then, follow the steps below:
-* Enable the **Sync Locale** option, if required.
-* Select **Custom** (default selection) to **Choose a model to add to your skill** to create all of your skill’s interactions and map them to your custom model.
-
-
-
-![sync locale](../images/alexa-3.png "sync locale")
-
-
-* Under **Choose a method to host your skill’s backend resources** section, select **Alexa-hosted(Node.js)**.
-* Click **Create Skill**.
-
-
-![choose method](../images/alexa-4.png "choose method")
-
-
-* Select a template to add to your skill with these steps:
-* Select the **Start from Scratch** tab.
-* Click **Continue with Template**.
-
-
-![continue with template](../images/alexa-5.png "continue with template")
-
-
+    * Enable the **Sync Locale** option, if required.
+    * Select **Custom** (default selection) to **Choose a model to add to your skill** to create all of your skill’s interactions and map them to your custom model.
+    ![sync locale](./images/alexa-3.png "sync locale")
+    * Under **Choose a method to host your skill’s backend resources** section, select **Alexa-hosted(Node.js)**.
+    * Click **Create Skill**.
+    ![choose method](./images/alexa-4.png "choose method")
+    * Select a template to add to your skill with these steps:
+    * Select the **Start from Scratch** tab.
+    * Click **Continue with Template**.
+    ![continue with template](./images/alexa-5.png "continue with template")
 7. Enter the captcha shown on the screen and click **Submit** to process and create an Amazon Alexa voice skill. Your skill is built and listed on the Developer Console.
-
-
-
-![alexa voice skill](../images/alexa-6.png "alexa voice skill")
-
-
-
+![alexa voice skill](./images/alexa-6.png "alexa voice skill")
 8. Click **Your Skills** to view the custom skill you added to the console.
-
 
 ## Step 2: Configure the Interaction Model
 
@@ -109,17 +75,9 @@ Configuring the **Interaction Model** helps define the words and phrases in the 
 
 To configure a custom Interaction Model, follow the steps below:
 
-
-
 1. On the Developer Console, select the **Build** tab. Then, click the **Interaction Model** left menu option.
 2. Select the **JSON Editor** option.
-
-
-
-
-![JSON editor](../images/alexa-7.png "JSON editor")
-
-
+   ![JSON editor](./images/alexa-7.png "JSON editor")
 3. In the **JSON Editor** window, define the intents and entities to associate with your newly created skill based on the Kore.ai XO Platform definitions.
 4. To capture the intents and entities from the Kore.ai XO Builder, follow these steps:
 * Select the virtual assistant.

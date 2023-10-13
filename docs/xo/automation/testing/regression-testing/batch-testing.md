@@ -9,10 +9,7 @@ The **Batch Testing** feature helps you discern the ability of your bot to corre
 To conduct a batch test, you can use predefined test suites available in the builder or create your own custom test suites. Based on your requirement, the test suites can be run to view the desired results. This option can be accessed from the **Testing -> Batch Testing** option from the left navigation menu.
 
 
-
-# **Best Practices**
-
-
+## **Best Practices**
 
 * An optimal approach to bot NLP training is to first create a test suite of most of the use cases(user utterances) that the bot needs to identify, run it against the model and start training for the ones that failed.
 * Create/update batch testing modules for high usage utterances.
@@ -23,120 +20,81 @@ To conduct a batch test, you can use predefined test suites available in the bui
 
 
 
-# **Managing Test Suites**
+## **Managing Test Suites**
 
 Kore.ai provides a few out-of-the-box **Test Suites** to perform batch testing. **'Developer defined utterances’** and **'Successful user utterances’** are the built-in test suites that can be run to perform Batch Testing. You can also create a **New Test Suite** for testing a custom set of utterances.
 
 
 
-## Developer defined utterances
+### Developer defined utterances
 
 This test suite validates the utterances that have been previously added and trained by the developer from Machine Learning Utterances screen. Using this test suite would mean testing collectively the entire set of utterances that a developer has added for all tasks of the bot.
 
+![BT - Developer Defined Utterances](../images/batch-testing-1-developer-du.png "BT - Developer Defined Utterances")
 
 
-<img src="../images/batch-testing-1-developer-du.png" width="650">
-
-
-
-
-## Successful user utterances
+### Successful user utterances
 
 This test suite includes all the end-user utterances that have successfully matched one or more intents and the corresponding task is fully executed. You can also find these utterances from the ‘Intent found’ section of the Analyze module.
 
+![BT - Successful user utterances](../images/batch-testing-2-successful-utterances.png "BT - Successful user utterances")
 
 
-<img src="../images/batch-testing-2-successful-utterances.png" width="650">
-
-
-
-
-## Adding a New Test Suite
+### Adding a New Test Suite
 
 To add a new test suite, follow the steps below:
 
 1. Go to **Build** > **Testing** > **Batch Testing**, and click **New Test Suite**.
 
-<img src="../images/batch-testing-3.png" width="650">
-
-
+![BT - New Test Suite](../images/batch-testing-3.png "BT - New Test Suite")
 
 2. In the **New test Suite** window, add a **name** and provide a **description**.
 3. Next, choose how to add test cases: either manually or by uploading a test case file.
     * Selecting **Add Manually** lets you add test cases manually or use LLM and Generative AI to generate test cases automatically.
     * Selecting **Upload Test Cases File** lets you upload a file containing test cases.
 
+![BT - New Test Suite Details](../images/batch-testing-4-newtest.png "BT - New Test Suite Details")
 
 
-<img src="../images/batch-testing-4-newtest.png" width="650">
-
-
-
-
-### Adding Test Cases Manually
+#### Adding Test Cases Manually
 
 Once you create a test suite to which you have chosen to add test cases manually, you can either add them manually or generate them automatically.
 
 In the Test Cases page, click the **+Add Test Case**.
 
-
-<img src="../images/batch-testing-5-add-manually.png" width="650">
-
-
+![BT - Add Test Case Manually](../images/batch-testing-5-add-manually.png "BT - Add Test Case Manually")
 
 In the **Add Test Case** window, select or enter information in the following fields:
-
-
 
 1. The **Intent** that corresponds to the Dialog Task you want to test. You can add/tag one or more intents to a test utterance. 
 You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utterance. It helps in scenarios where ambiguity is by-design and should be considered as True Positive. For example, for the utterance “I need help to book a flight ticket,” the expected intent can be either “Book flight” (Dialog) or “How to book a flight?” (FAQ).
 2. The **Parent Intent** within that task.
 3. **Test Utterances**: You can add multiple utterances, each on a new line.
 4. The **Entity Order**: Select one from the available options, depending on the intent you are working with. You can only select one item. The Entity Order selection is not available if you have added multiple intents.
-<table>
-  <tr>
-   <td>
-    
 
-<img src="../images/batch-testing-6-one-intent-for-a-test-utterance.png" width="450">
 
-<p>
+**One Intent for a Test Utterance**
+![One intent for a test utterance](../images/batch-testing-6-one-intent-for-a-test-utterance.png "One intent for a test utterance") { width = 400px }
 
-_One Intent for a Test Utterance_
-   </td>
-   <td>
-    
 
-<img src="../images/batch-testing-7-multiple-intents-for-a-test-utterance.png" width="450">
-
-<p>
-
-_Multiple Intents for a Test Utterance_
-   </td>
-  </tr>
-</table>
+**Multiple Intents for a Test Utterance**
+![Multiple intents for a test utterance](../images/batch-testing-7-multiple-intents-for-a-test-utterance.png "Multiple intents for a test utterance")
 
 
 5. Click **Save** when ready.
 6. Once added, your test cases are listed and ready to run. You can use the **Add Manually** button at the top of the list to add more test cases. The option to Generate Test cases only displays if you have enabled LLM and Generative AI for the VA.
 
-
-
-<img src="../images/batch-testing-8-add-new-case.png" width="750">
-
+![New test added](../images/batch-testing-8-add-new-case.png "New test added")
   
 
-### Generating Test Cases Automatically
+#### Generating Test Cases Automatically
 
 You can automatically generate batch test cases if you have enabled [LLM and Generative AI ](https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/)for your Virtual Assistant. You can access the feature either right after creating a new test case, as shown above, or from the test cases list.
 
-
-<img src="../images/batch-testing-9-goto-generate-test-cases.png" width="650">
-
+![Generating test cases automatically](../images/batch-testing-9-goto-generate-test-cases.png "Generating test cases automatically")
 
 
-
-#### Steps to Generate Test Cases
+##### Steps to Generate Test Cases
 
 To generate test cases automatically, follow the steps below:
 
@@ -145,36 +103,23 @@ To generate test cases automatically, follow the steps below:
 2. In the **Generate Test Case** window, select the **Dialog Task** you want to test. 
 3. Click **Generate**. Wait for a few moments until the generation completes.
 
-
-
-<img src="../images/batch-testing-10-generate-add-intent.png" width="650">
-
-
+![Click Generate](../images/batch-testing-10-generate-add-intent.png "Click Generate")
 
 4. Once test cases are generated, you can reject some of them. If required, click Generate more to get more suggestions. 
 5. Click **Add Test Cases** when ready.
 
-
-
-<img src="../images/batch-testing-11-generation-done.png" width="650">
-
-
+![Add Test case](../images/batch-testing-11-generation-done.png "Add Test case")
 
 Once you add the test cases, they are listed within your test suite, along with any other cases you might have added manually or generated in the past. You can continue adding test cases to the suite using these two methods.
 
+![test case list](../images/batch-testing-12-test-cases-added.png "test case list")
 
 
-<img src="../images/batch-testing-12-test-cases-added.png" width="650">
-
-
-
-
-### Adding a Test Suite by Uploading a Test Cases File
+#### Adding a Test Suite by Uploading a Test Cases File
 
 If you **Upload a Test Cases File**, you can import an array of test utterances, also known as a Dataset at once in a batch file. The Dataset file must be in a CSV or JSON format and can have a maximum of 1000 utterances. You can download the sample CSV or JSON file formats while creating the test suite.
 
 **Important Tip:** For a Universal Bot, to create a test suite, you can add multiple intents in the CSV/JSON file using the upload method. The format includes the intents and the corresponding bot names as follows:
-
 
 ```
 {
@@ -184,9 +129,7 @@ If you **Upload a Test Cases File**, you can import an array of test utterances,
 }
 ```
 
-
 **Example**
-
 
 ```
 {
@@ -196,7 +139,6 @@ If you **Upload a Test Cases File**, you can import an array of test utterances,
 }
 ```
 
-
 The ability to create test suites manually is not yet available for universal bots.
 
 
@@ -205,7 +147,6 @@ The ability to create test suites manually is not yet available for universal bo
 The JSON format for creating custom suites allows you to define an array of test cases where each test case should consist of an utterance to be tested, the intent against which the utterance to be tested, and optionally define the list of expected entities to be determined from the utterance. If expected intent is a child intent, then you can also include the parent intent to be considered.
 
 The sample code is given below:
-
 
 ```
 {
@@ -322,13 +263,10 @@ The sample code is given below:
 
 ```
 
-
-
 * For Entities that have the Multi-Item enabled, values need to be given as: `entity1||entity2`
 * Composite Entities require passing values in the following format: `component1name:entityValue|component2name:entityValue2`
+
 The sample code is given below:
-
-
 
 ```
 {
@@ -356,11 +294,8 @@ The sample code is given below:
    }
 ```
 
-
 * The order in which the entities are to be extracted can be given as: `"entityOrder":["TransferAmount", "PayeeName"]`. 
 If the order is not provided or partially provided, the platform determines the shortest route covering all the entities as the default order.
-
-
 
 <table>
   <tr>
@@ -471,7 +406,6 @@ In the case of Small Talk, this field should be populated when the Small Talk is
 
 CSV format for creating custom suites allows you to define test cases as records in CSV file where each test case should consist of an utterance to be tested, the intent against which the utterance to be tested, and optionally define entities to be determined from the utterance. If your test case requires more than one entity to be detected from a sentence, then you have to include an extra row for each of the additional entities to be detected. If expected intent is a child intent, then you can also include the parent intent to be considered.
 
-
 ```
 input,intent,parentIntent,entityName,entityValue,entityOrder
 Send 200 dollars to Leonardo, Transfer Funds,,TransferAmount,200 USD,,
@@ -480,14 +414,12 @@ What is the balance in my checking account,Show Balance, Transfer Funds,,,
 Repeat this transfer every month, Setup Auto Pay, Transfer Funds,,,
 Show my past 20 transactions, Show Account Statement,,HistorySize,20,,
 Pay my credit card dues,Pay Bill,,,,,
-
 ```
-
-
 
 * For Entities that have the Multi-Item enabled values need to be given as: `entity1||entity2`
 * Composite Entities require the values in the following format:`component1name:entityValue|component2name:entityValue2`
 Sample:
+
 ```
 input,intent,parentIntent,entityName,entityValue
 "Add cart to Apples , Grapes",Add to cart,LOV,Apples||Grapes,,
@@ -569,9 +501,7 @@ If the order is not provided or partially provided, the platform defines the imp
 </table>
 
 
-
-### Entity Format Conversions
-
+#### Entity Format Conversions
 
 <table>
   <tr>
@@ -837,26 +767,18 @@ If the order is not provided or partially provided, the platform defines the imp
 </table>
 
 
-
-#### Importing a Dataset file
-
-
+##### Importing a Dataset file
 
 1. Click **New Test Suite** on the batch testing page. A dialog box to import the dataset appears.
-2. Enter a **Name, Description, **and choose a **Dataset Type** in the respective boxes for your dataset file.
-3. To import the Dataset file, click **Choose File **to locate and select a JSON or CSV file containing the utterances as per the Dataset Type selected.
+2. Enter a **Name, Description,** and choose a **Dataset Type** in the respective boxes for your dataset file.
+3. To import the Dataset file, click **Choose File** to locate and select a JSON or CSV file containing the utterances as per the Dataset Type selected.
 
-
-
-<img src="../images/batch-testing-13-new-test-suite-1-2.png" width="450">
-
-
+![Importing a Dataset file](../images/batch-testing-13-new-test-suite-1-2.png "Importing a Dataset file")
 
 4. Click **Create**. The dataset file is displayed as an option to run the test suite on the Batch Testing page:
 
 
-
-## Running Test Suites
+### Running Test Suites
 
 The following steps guide you on how to run a batch test on your bot and get a detailed analytical report on the utterances based on the test results. To get started, go to Build > Testing > **Batch Testing**.
 
@@ -864,44 +786,32 @@ The following steps guide you on how to run a batch test on your bot and get a d
 
     Before testing, it is essential to add and train your bot with a considerable number of utterances using Machine Learning.
 
-
-
-
-<img src="../images/batch-testing-14-batch-testing-menu.png" width="350">
-
+![Build > Testing > Batch Testing](../images/batch-testing-14-batch-testing-menu.png "Build > Testing > Batch Testing")
 
 To run a Test Suite, follow the steps below:
 
-
-
 1. Click the desired test suite name in the **Batch Testing** window.  
 Note that **Developer Defined Utterances** and **Successful User Utterances** are default test suites to validate user utterances through Batch Testing.
-2. Select **In Development** to run batch tests on test suites for only the**_ in-development _**version of the Virtual Assistant(s). Alternatively, select **Published** to run batch tests on test suites for only the published version of the Virtual Assistant(s).
+2. Select **In Development** to run batch tests on test suites for only the **_in-development_** version of the Virtual Assistant(s). Alternatively, select **Published** to run batch tests on test suites for only the published version of the Virtual Assistant(s).
 3. Click **Run Test Suite** to initiate the batch test execution. 
 
-
-<img src="../images/batch-testing-15-run-test-suite-in-dev.png" width="650">
-
+![Run Test Suite](../images/batch-testing-15-run-test-suite-in-dev.png "Run Test Suite")
 
 
-### Execution of Newly Created Batch Test Suites
+#### Execution of Newly Created Batch Test Suites
 
 Once you create a new test batch test suite, by default, the system automatically initiates test run execution for both **_In-development_** and **_Published_** VA versions. This makes it convenient to assess test results while the VA is in development and once a VA is published following a production release.
 
-
-<img src="../images/batch-testing-16-batch-testing-run-publish.png" width="650">
-
+![Execution of Newly Created Batch Test Suites](../images/batch-testing-16-batch-testing-run-publish.png "Execution of Newly Created Batch Test Suites")
 
 
-### View Test Case Details
+#### View Test Case Details
 
 Running a test suite will display the results as described below.
 
 **Note:** The test case with multiple intents is considered a test case for all the intents mentioned. For example, if a test case has Intent 1 and Intent 2 as expected intents, then Intent 1 and Intent 2 are shown as covered in the batch test summary.
 
 Each test run creates a test report record and displays a summary of the test result. The batch test result in the screenshot below includes the following information:
-
-
 
 * **Last Run Date & Time** that displays the date and time of the latest test run.
 * **F1 Score** is the weighted average of Precision and Recall i.e. (2*precision*recall)/(precision+recall).
@@ -916,18 +826,12 @@ Each test run creates a test report record and displays a summary of the test re
     3. Failed – when there was a system error and the test could not be resumed post-recovery.
 * Hovering over the warning/error icon will display a message suggesting the reason.
 
+![Test report](../images/batch-testing-17-Batch-Test-Sample-Result-warn.png "Test report")
 
 
-<img src="../images/batch-testing-17-Batch-Test-Sample-Result-warn.png" width="650">
-
-
-
-
-### Download a CSV Report
+#### Download a CSV Report
 
 To get a detailed analysis of the test run, click **the Download** icon to download the test report in CSV format. You have an option to delete the test results if needed. The top section of the report comprises the summary with the following fields:
-
-
 
 * **Bot Name**
 * **Report name** of the test suite
@@ -952,14 +856,9 @@ To get a detailed analysis of the test run, click **the Download** icon to downl
 * **False Positive (FP):** Percentage of utterances that have matched an unexpected intent. In the case of Small Talk, it would be when the list of expected and actual intents are different.
 * **False Negative (FN):** Percentage of utterances that have not matched expected intent. In the case of Small Talk, it would be when the list of expected Small Talk intent is blank but the actual Small Talk is mapped to an intent.
 
-
-
-<img src="../images/batch-testing-18-sample-result-2.png" width="650">
- 
+![Sample CSV Test report](../images/batch-testing-18-sample-result-2.png "Sample CSV Test report")
  
 The report also provides detailed information on each of the test utterances and the corresponding results.
-
-
 
 * **Utterances**- Utterances used in the corresponding test suite.
 * **Expected Intent**– The intent expected to match for a given utterance, will include trait where applicable with trait prefix
@@ -984,19 +883,15 @@ The report also provides detailed information on each of the test utterances and
     For any of the batch tests, if results indicate that your bot is unable to recognize the correct intents, you can work on improving its performance by adding or modifying utterances to the Machine Learning model.
 
 
-### Batch Test Results for Universal Bots
+#### Batch Test Results for Universal Bots
 
 The XO Platform now displays Batch Test Results for Universal bots for each test run in the summary view for [FAQs](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#NLP-_FAQs_Summary), [Dialog Intents](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#Dialog_Intent_Summary), and [Small Talk](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#NLP-_Small_Talk_Summary) during Batch Testing. The actionable insights help understand the test coverage and NLP performance for each intent type in the Universal Bot. [Learn more](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#NLP_Batch_Test_Results_Summary_for_Universal_Bots).
 
 
-### View Individual Test Run Summary
+#### View Individual Test Run Summary
 
 You can view the individual Batch Test Run summary of a test suite by clicking the **View Summary** icon of a test as shown below.
 
-
-
-<img src="../images/batch-testing-19-view-summary.png" width="650">
-
-
+![View Summary](../images/batch-testing-19-view-summary.png "View Summary")
 
 This displays the relevant NLP and Flow Health metrics on the **Health and Monitoring** Dashboard for intents mapped to Dialogs, FAQs, and Traits. [Learn More](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#Test_Coverage).
