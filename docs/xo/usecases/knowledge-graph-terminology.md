@@ -34,6 +34,7 @@ For example, in a Travel Assistant, you might have a first-level node called *Re
 Any node at any level starting with the 2nd is called a **_Leaf Term/Node_**.
 
 > **Note**: 
+>
 > * This hierarchical organization of nodes is for your convenience to keep related questions together.
 > * The Knowledge Graph Engine does not consider any parent-child relation while evaluating the questions for a match.
 > * The hierarchy does not influence the FAQ matching process since all the nodes are considered the same way, irrespective of their position.
@@ -71,7 +72,8 @@ A trait is a collection of typical end-user utterances that define the nature of
 
 A trait is applied to multiple terms across your Bot Ontology.
 
-> **Note**: 
+> **Note**:
+>
 > * Traits also help you filter nodes based on associated user utterances. Thus, if the user types an utterance that is present in a trait, the assistant only searches the nodes to which the trait is applied. 
 > * If the utterance is present in any other node to which the trait is not applied, the node is ignored.
 
@@ -85,8 +87,8 @@ A VA can respond to a given question with an FAQ or the execution of a Dialog Ta
 * **Task**: Linking a Dialog task to a KG Intent helps leverage the capabilities of the Knowledge Graph and Dialog tasks to handle FAQs that involve complex conversations.
 ![link dialog task to kg intent](../usecases/images/link-dialog-task-to-kg-intent.png "link dialog task to kg intent")
 
-> **Note**: 
-* For Few-shot graphs, you can add all your FAQs to the Root node because the LLM does not require an ontology.
-* Default terms are not available in Few-Shot Knowledge Graphs. The only exception is when you switch from an Ontology Graph, where the existing Default terms are stored as such until updated. 
-* Later, Default terms become Organizer terms and can be set as Mandatory.
-* Path Level Synonyms are only supported for Mandatory Terms and for Tags.
+> Important
+>
+> * For Few-shot graphs, you can add all your FAQs to the Root node because the LLM does not require an ontology.
+> * Default terms are not available in Few-Shot Knowledge Graphs. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.
+> * Path Level Synonyms are only supported for Mandatory Terms and for Tags.
