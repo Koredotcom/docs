@@ -74,7 +74,7 @@ You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utteranc
 
 
 **One Intent for a Test Utterance**
-![One intent for a test utterance](../images/batch-testing-6-one-intent-for-a-test-utterance.png "One intent for a test utterance") { "width = 400" }
+![One intent for a test utterance](../images/batch-testing-6-one-intent-for-a-test-utterance.png "One intent for a test utterance") { width = 400px }
 
 
 **Multiple Intents for a Test Utterance**
