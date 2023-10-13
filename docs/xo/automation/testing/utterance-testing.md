@@ -44,7 +44,7 @@ When you test an utterance, the NLP engine tries to identify an intent using the
 
 
 
-#### Utterance Match Classification
+### Utterance Match Classification
 
 Test results are classified as either _Probable Matches_ or _Definitive Matches_, as follows;
 
@@ -221,7 +221,7 @@ The basis for **intent elimination** by Ranking & Resolver when the three engine
 * If the definitive match was from Knowledge Graph Engine by Search In Answer and there is another matched intent.
 
 
-#### Ranking and Resolver v2"
+#### Ranking and Resolver v2
 <a href="https://developer.kore.ai/docs/bots/nlp/nlp-detection/#Notes_on_Ranking_and_Resolver_Version_2">Version 2 of the Ranking and Resolver</a> only ranks the scores of the definitive matches from ML and KG engines (not the FM engine) without intent rescoring to ensure the best intent identification accuracy.
 If you enable Ranking and Resolver Version 2, your test results adjust as follows: 
 
