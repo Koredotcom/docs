@@ -23,13 +23,22 @@ For Ontology-Based graphs, it is best to organize your FAQs into a clear structu
 
 ### First-level Term/Node
 
-The immediate next-level nodes after the _Root _node are known as **_First-Level Term/Node_**. There can be any number of first-level nodes in a graph. We recommend using first-level nodes to represent high-level terms, such as the names of departments, functionalities, etc. For example, in a Travel Assistant, you might have a first-level node called _Reservation_, which can be structured by functionality into subnodes such as: *Cancel and Update*.
+The immediate next-level nodes after the *Root* node are known as **_First-Level Term/Node_**. There can be any number of first-level nodes in a graph. 
+
+We recommend using first-level nodes to represent high-level terms, such as the names of departments, functionalities, etc. 
+
+For example, in a Travel Assistant, you might have a first-level node called *Reservation*, which can be structured by functionality into subnodes such as: *Cancel and Update*.
 
 ### Leaf Term/Node
 
 Any node at any level starting with the 2nd is called a **_Leaf Term/Node_**.
 
-> **Note**: This hierarchical organization of nodes is for your convenience to keep related questions together. The Knowledge Graph Engine does not consider any parent-child relation while evaluating the questions for a match. The hierarchy does not influence the FAQ matching process since all the nodes are considered the same way, irrespective of their position.
+> **Note**: 
+> * This hierarchical organization of nodes is for your convenience to keep related questions together.
+>
+> * The Knowledge Graph Engine does not consider any parent-child relation while evaluating the questions for a match.
+>
+> * The hierarchy does not influence the FAQ matching process since all the nodes are considered the same way, irrespective of their position.
 
 ![leaf term](../usecases/images/leaf-term-node.png "leaf term")
 
@@ -64,7 +73,9 @@ A trait is a collection of typical end-user utterances that define the nature of
 
 A trait is applied to multiple terms across your Bot Ontology.
 
-> **Note**: Traits also help you filter nodes based on associated user utterances. Thus, if the user types an utterance that is present in a trait, the assistant only searches the nodes to which the trait is applied. If the utterance is present in any other node to which the trait is not applied, the node is ignored.
+> **Note**: 
+> * Traits also help you filter nodes based on associated user utterances. Thus, if the user types an utterance that is present in a trait, the assistant only searches the nodes to which the trait is applied. 
+> * If the utterance is present in any other node to which the trait is not applied, the node is ignored.
 
 ### Intents
 
