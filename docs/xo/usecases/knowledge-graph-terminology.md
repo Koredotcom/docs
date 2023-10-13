@@ -86,7 +86,7 @@ A VA can respond to a given question with an FAQ or the execution of a Dialog Ta
 ![link dialog task to kg intent](../usecases/images/link-dialog-task-to-kg-intent.png "link dialog task to kg intent")
 
 > **Note**: 
-> * For Few-shot graphs, you can add all your FAQs to the Root node because the LLM does not require an ontology.
-> * Default terms are not available in Few-Shot Knowledge Graphs. The only exception is when you switch from an Ontology Graph, where the existing Default terms are stored as such until updated. 
-> * Later, Default terms become Organizer terms and can be set as Mandatory.
-> * Path Level Synonyms are only supported for Mandatory Terms and for Tags.
+* For Few-shot graphs, you can add all your FAQs to the Root node because the LLM does not require an ontology.
+* Default terms are not available in Few-Shot Knowledge Graphs. The only exception is when you switch from an Ontology Graph, where the existing Default terms are stored as such until updated. 
+* Later, Default terms become Organizer terms and can be set as Mandatory.
+* Path Level Synonyms are only supported for Mandatory Terms and for Tags.
