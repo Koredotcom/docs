@@ -117,8 +117,10 @@ To delete a term, follow the steps below:
 1.  On the nodes hierarchy, hover over the term you want to delete.
 2.  Click the **Delete** icon.
 3. On the confirmation dialog box, you can find the following options:
-    * **Delete the FAQs along with the term** – Choosing this option deletes the term and FAQs under it.
-    * **Delete the term and move FAQs to root term** 
+
+* **Delete the FAQs along with the term** – Choosing this option deletes the term and FAQs under it.
+* **Delete the term and move FAQs to root term** 
+
 Choosing this option deletes the term and moves the FAQs under it to the root term.
 
 > **Note**
@@ -156,6 +158,7 @@ The Knowledge Graph engine works well with the default settings, but you can fin
 * **Qualify Contextual Paths** – This ensures that the bot context is populated and retained with the terms/nodes of the matched intent. This further enhances the user experience.
 
 > **Note**: You can customize these settings in Natural Language > Thresholds & Configurations. See Knowledge Graph Training for details.
+
  * **Traits** – Traits qualify nodes/terms even if the user utterance does not contain the term/node. Traits are also helpful in filtering the suggested intent list.
 
 
