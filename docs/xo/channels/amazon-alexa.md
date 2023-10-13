@@ -78,7 +78,7 @@ To configure a custom Interaction Model, follow the steps below:
 
 
 1. On the Developer Console, select the **Build** tab. Then, click the **Interaction Model** left menu option.
-2. Select the **JSON Editor** option.\
+2. Select the **JSON Editor** option.
 ![JSON editor](./images/alexa-7.png "JSON editor")
 3. In the **JSON Editor** window, define the intents and entities to associate with your newly created skill based on the Kore.ai XO Platform definitions.
 4. To capture the intents and entities from the Kore.ai XO Builder, follow these steps:
