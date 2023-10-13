@@ -226,7 +226,7 @@ If end-user authorization is required for making API calls to external services,
 
 
 
-![implicit grant](../images/alexa-16.png "implicit grant")
+![implicit grant](../images/alexa-16.png )
 
 
 Alexa shares the user **access tokens** with Kore.ai assistants to make API calls defined for the Service nodes.
@@ -304,7 +304,7 @@ Once done, test the utterance integration on the **Alexa Developer Console** usi
 
 
 
-![alexa simulator](../images/alexa-22.png  "alexa simulator")
+![alexa simulator](../images/alexa-22.png )
 
 
 If you get a successful response, then the integration is considered a success.
