@@ -45,24 +45,24 @@ The steps to add the **Amazon Alexa** channel are given below:
 ## Step 1: Add a New Skill
 
 1. Log in to your [Amazon Developer Dashboard](https://developer.amazon.com/dashboard) and click the **Alexa** tab.
-2. Select **Alexa Skills Kit** on the menu. \
+2. Select **Alexa Skills Kit** on the menu.
 ![alexa skills](./images/alexa-1.png "alexa skills")
 3. Click the **Skills** tab on the **Alexa Developer Console**.
-4. Click **Create Skill**. \
+4. Click **Create Skill**.
  ![create skill](./images/alexa-2.png "create skill")
 5. Enter the **Skill Name** field information on the **Create a New Skill** page and select the **primary locale** value.
 6. Then, follow the steps below:
     * Enable the **Sync Locale** option, if required.
-    * Select **Custom** (default selection) to **Choose a model to add to your skill** to create all of your skill’s interactions and map them to your custom model.\
+    * Select **Custom** (default selection) to **Choose a model to add to your skill** to create all of your skill’s interactions and map them to your custom model.
     ![sync locale](./images/alexa-3.png "sync locale")
     * Under **Choose a method to host your skill’s backend resources** section, select **Alexa-hosted(Node.js)**.
-    * Click **Create Skill**. \
+    * Click **Create Skill**.
     ![choose method](./images/alexa-4.png "choose method")
     * Select a template to add to your skill with these steps:
     * Select the **Start from Scratch** tab.
-    * Click **Continue with Template**. \
+    * Click **Continue with Template**.
     ![continue with template](./images/alexa-5.png "continue with template")
-7. Enter the captcha shown on the screen and click **Submit** to process and create an Amazon Alexa voice skill. Your skill is built and listed on the Developer Console. \
+7. Enter the captcha shown on the screen and click **Submit** to process and create an Amazon Alexa voice skill. Your skill is built and listed on the Developer Console.
 ![alexa voice skill](./images/alexa-6.png "alexa voice skill")
 8. Click **Your Skills** to view the custom skill you added to the console.
 
