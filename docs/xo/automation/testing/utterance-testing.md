@@ -61,11 +61,7 @@ Below are the possible outcomes of a user utterance test:
 * **Single Match (Possible or Definitive)**: The NLP engine finds a match for the user utterance with a single intent or task. The intent is displayed below the User Utterance field. If it is a correct match, you can move on to test the next utterance or you can also further train the task to improve its score. If it is an incorrect match, you can mark it as incorrect and select the appropriate intent.
 * **Multiple Matches (Possible or Definitive or Both)**: NLP engine identifies multiple intents that match with the user utterance. From the results, select the radio button for the matching task and train it. 
 
-<div style="width:650px">
-
-![alt_text](./images/utterance-testing-3-utterancetesting-multiple.png "Utterance Testing Multiple")
-
-</div>
+![Utterance Testing - Multiple Matches](./images/utterance-testing-3-utterancetesting-multiple.png "Utterance Testing - Multiple Matches")
 <img src="../testing/images/utterance-testing-3-utterancetesting-multiple.png" width="650">
 
 
