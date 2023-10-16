@@ -16,9 +16,7 @@ To add an FAQ, follow the below steps:
 
 1. On the left pane of the **Knowledge Graph** window, click the node to which you want to add questions.
 2. Click **Add Intent** on the top-right.
-
 ![add faq intent](../usecases/images/add-faq-intent.png "add faq intent")
-
 3. On the **Intent** window, under the **Intent** section, select **FAQ**.
 4. (Optional) Enter a **Display Name** to represent the FAQ to the end-users.
 5. In the **Add Question** field, enter the question that describes the user’s query.
