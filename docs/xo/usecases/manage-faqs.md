@@ -11,9 +11,8 @@ All features explained here are supported by the Few-Shot Knowledge Graph, excep
 * Lemmatization using Parts of Speech Search in Answer and Contextual Paths Qualification. Please see the Knowledge Graph Types Comparison Table for a detailed list of supported features.
 * Path Level and Knowledge Graph Synonyms are only supported for Mandatory Terms and for Tags.
 
-# Add FAQs
+## Add FAQs
 To add an FAQ, follow the below steps:
-
 1. On the left pane of the **Knowledge Graph** window, click the node to which you want to add questions.
 2. Click **Add Intent** on the top-right.
 ![add faq intent](../usecases/images/add-faq-intent.png "add faq intent")
@@ -31,7 +30,7 @@ To add an FAQ, follow the below steps:
 As you enter these questions, pay attention to terms that you can further add to your FAQ hierarchy. [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/creating-a-knowledge-graph/?preview_id=18007&preview_nonce=70f4e3338c&post_format=standard&_thumbnail_id=-1&preview=true#).
 
 
-# Manage Bot Responses
+## Manage Bot Responses
 
 For the FAQ Response, you can compose a simple or complex channel-specific reply. The editor is like any other prompt editor on the Platform, for example, messages for dialog nodes. [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/). 
 
@@ -49,7 +48,7 @@ Sometimes the FAQ responses are quite lengthy or may include nice-to-have inform
 
 * Select **Add Alternate Response** if your question can have more than one answer. Repeat the step for all the alternative responses you want to add. At runtime, the platform picks one response at random.
 
-# Add FAQs from an Existing Source
+## Add FAQs from an Existing Source
 
 When the Knowledge Graph you are trying to build is large and complex, it's important to have all the FAQs in one place and Import or Extract them as required. 
 
@@ -60,7 +59,7 @@ Adding FAQs from an existing source is the most effective method to implement in
 * Leverage an existing list of Q&As from **Knowledge Extraction** to populate the Questions and Responses. [See here for more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-extraction-service/).
 
 
-# Move FAQs Between Nodes
+## Move FAQs Between Nodes
 
 You can move one or more Questions and Response sets between nodes in your Knowledge Graph, with the steps below:
 
@@ -71,7 +70,7 @@ You can move one or more Questions and Response sets between nodes in your Knowl
 The demo below shows you how this works.
 ![move faq between nodes demo](../usecases/images/move-faq-to-new-node.gif "move faq between nodes demo")
 
-# Edit FAQs and Responses
+## Edit FAQs and Responses
 
 1. From the nodes hierarchy, select the relevant term.
 2. FAQs associated with the term appear on the right pane.
