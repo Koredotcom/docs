@@ -5,7 +5,7 @@ Interactive Voice Response (IVR) systems are preferred in many leading organizat
 
 
 * **Non-Intuitive Interface**: IVR systems do not simply let the customers state their needs, they make the users go through an extensive list of menu options, from which customers must select before finding the intent. Even if they allow users to express their intent at first, the backend programs can only understand a limited number of phrases.
-* **Static Flows**: IVR systems use static call flows that do not align with the nonlinear and contextual nature of human interactions. Following is a scenario where a customer is trying to Book Flight tickets: 
+* **Static Flows**: IVR systems use static call flows that do not align with the nonlinear and contextual nature of human interactions. Following is a scenario where a customer is trying to Book Flight tickets:
 
     ```
     User: Book me a ticket to NYC
@@ -410,10 +410,10 @@ The ASR metadata is extracted in the response using the following syntax: \
 
 In this example, the parameters like **ASR Confidence** **score**,** input mode**, **utterance, **etc. are extracted in the syntax shown below:
 
-_“data”: {_
-
-_“text”: \
-“{“confidence”:”0.810000″, \
-“Inputmode”:”voice”, \
-“interpretation”:”Login.”, \
-“utterance”:”Login.”}”_
+“data”: {_
+  “text”:
+    “{“confidence”:0.810000, 
+       “Inputmode”: voice,
+       “interpretation”:Login.,
+       “utterance”: Login.
+}
