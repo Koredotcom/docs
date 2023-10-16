@@ -138,13 +138,10 @@ To configure a custom Interaction Model for the **SearchQuery** Slot Type, follo
 * Type a _Custom Intent Name_ and click **Create custom Intent**.
 
 
-
 ![custom intent](../images/alexa-12.png "custom intent")
-
 
 * Click this intent name listed on the left menu under **Intents** to open the detail page.
 * Add the phrases or words in the **Sample Utterances** text input field.
-
 
 
 ![sample utterances](../images/alexa-13.png "sample utterances")
@@ -153,9 +150,7 @@ To configure a custom Interaction Model for the **SearchQuery** Slot Type, follo
 * In the drop-down box, enter the slot name and click the **+** icon.
 
 
-
 ![slot name](../images/alexa-14.png "slot name")
-
 
 * Repeat these steps for all the remaining variable words.
 
@@ -163,12 +158,10 @@ To configure a custom Interaction Model for the **SearchQuery** Slot Type, follo
 
 6. Select `AMAZON.SearchQuery` from the dropdown list in the **SLOT TYPE** column.
 
-
-
 ![intent slots](../images/alexa-15.png "intent slots")
 
-
 7. Click **Save Model** and **Build Model** on the top action panel.
+
 
 
 ## Step 3: Enable Account Linking (Optional)
