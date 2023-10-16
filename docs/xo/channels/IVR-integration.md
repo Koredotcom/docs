@@ -109,7 +109,6 @@ d. Enter the details to complete the setup, see [Voice Call Properties: Channel 
 
 
 ![IVR Sandbox](./images/IVR-6.png "IVR Sandbox")
- \
 
 ![IVR data](./images/IVR-7.png "image_tooltip")
 
@@ -158,8 +157,9 @@ Enabling this option generates a** Phone Number, Pin, **and **Secret**. To devel
 
 
 ![select app](./images/IVR-10.png "select app")
- \
+
 4. Click **Save**.
+
 5. The following pop-up is displayed for the new app creation. Enter the details and click **Create** to create the app. \
 
 
@@ -315,8 +315,7 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
 
 4. Click the **Configurations** tab. \
 
-
-![configurations tab] <img src="../images/IVR-18.png" >
+ <img src="../images/IVR-18.png" >
 
 5. From the **Select App** drop-down list, select an existing App or create a new app. See [Configure IVR Settings](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#Configure_IVR_Settings) to know more.
 6. Copy the following values: \
@@ -324,7 +323,7 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
 **  b. Client Secret**: To generate a JWT token that must be appended to the WebHook URL. \
 
 
-![client secret] <img src="../images/IVR-19.png">
+<img src="../images/IVR-19.png">
 
 7. Select **Yes** for Enable Channel.
 
@@ -337,7 +336,6 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
 !!! note
 
     For a quick overview of the JWT token, refer to Introduction to JWT tokens.
-
 
 
 2. JWT has to be passed in the IVR hook URL as a value for the query parameter “token”: \
@@ -380,20 +378,20 @@ To extract the metadata from the ASR transcription, follow these steps:
 1. In** IVR Channel** settings under **Voice Call Properties** various details like **Input Mode**, **ASR Confidence Threshold** etc. are configured.
 
 ![input mode](./images/IVR-21.png "input mode")
- \
+
 See [Voice Call Properties: Channel Settings](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Channel_Settings) for more information.The additional information provided by the ASR engines can be extracted using the **context object**. This is configured at  **Bot User Session → lastMessage →  asrMetaData**. \
 
 3. Go to the **Settings** panel of the last message node for your dialog task and configure the **JavaScript Message** under **Bot Responses**, as shown below: \
 
 
 ![JavaScript message](./images/IVR-22.png "JavaScript message")
- \
+
 The ASR metadata is extracted in the response using the following syntax: \
 `print(JSON.stringify(context.session.BotUserSession.lastMessage.asrMetaData)) \
 `
 
 ![messages ](./images/IVR-23.png "messages")
-` \
+
 `In this example, based on the **ASR Confidence** value extracted from the user input, we define the connection rules for the dialog as shown below: \
 
 
