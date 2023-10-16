@@ -161,14 +161,14 @@ To configure a custom Interaction Model for the **SearchQuery** Slot Type, follo
 
 **Note**: On the **Intents** detail page, the **Intent Slots** section displays the slots you add. When you highlight a word or phrase in an utterance, you can add a new slot or select an existing slot.
 
-Select `AMAZON.SearchQuery` from the dropdown list in the **SLOT TYPE** column.
+6. Select `AMAZON.SearchQuery` from the dropdown list in the **SLOT TYPE** column.
 
 
 
 ![intent slots](../images/alexa-15.png "intent slots")
 
 
-Click **Save Model** and **Build Model** on the top action panel.
+7. Click **Save Model** and **Build Model** on the top action panel.
 
 
 ## Step 3: Enable Account Linking (Optional)
