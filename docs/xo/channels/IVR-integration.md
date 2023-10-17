@@ -57,7 +57,7 @@ Steps to configure IVR settings for your Virtual Assistant:
 7. Use the **WebHook URL** provided in your external application.
 8. Enter the details to complete the setup, see [Voice Call Properties: Channel Settings](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Channel_Settings) for more information.
  ![Webhook URL](./images/IVR-5.png "Webhook URL")
-9.From the **Voice Call Properties** tab, set the configurations.
+9.  From the **Voice Call Properties** tab, set the configurations.
 10. The Platform supports all UniMRCP-encoded voice-to-text services. If you select the **Enable Transcription** option for the VA, then the platform allows you to skip defining grammar during configuring IVR settings for any node (described in [Configure Dialog Node IVR Properties](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#Configure_Dialog_Node_IVR_Properties)).
 See [Voice Call Properties: Configuring Grammar](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Configuring_Grammar) for a detailed configuration for Grammar syntax.
 
