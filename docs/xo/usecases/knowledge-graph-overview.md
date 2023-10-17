@@ -85,7 +85,7 @@ Training this model mainly involves adding tags and alternative questions to FAQ
 
 ## Compare Knowledge Graph Types
 
-<table>
+<table border="1.5">
   <tr bgcolor="#ECECEC">
    <td><strong>FEATURE</strong>
    </td>
