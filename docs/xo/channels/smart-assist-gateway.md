@@ -84,10 +84,10 @@ To define the follow-up task when an event is detected, follow these steps:
  * Click **Done**.
  ![add response](./images/sa-gateway2.png "add response")
 
+!!! tip
 
- !!! tip
+     You can use any value currently stored in the `context` variable of your message construction with `{{variable brackets}}`. For example, ‘Hello `{{context.session.UserContext.firstName}}`. How can I help you?’ This helps personalize the response message.
 
-    You can use any value currently stored in the `context` variable of your message construction with `{{variable brackets}}`. For example, ‘Hello `{{context.session.UserContext.firstName}}`. How can I help you?’ This helps personalize the response message.
 
 ### Step 3: Select the Call Termination Handler
 
@@ -127,8 +127,8 @@ To define the key parameters for user input management, follow the steps below:
 
 !!! note
 
-  You don’t have to enable the channel explicitly since it is auto-enabled.
-    
+    You don’t have to enable the channel explicitly since it is auto-enabled.
+
 After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end users with the new channel. Learn more about[ Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)
