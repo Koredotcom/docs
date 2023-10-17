@@ -14,7 +14,7 @@ You can create the Knowledge Graph using a sample spreadsheet that you can downl
 
 Follow the instructions below to build your Knowledge Graph in a spreadsheet.
 
-### Download the Sample CSV file
+### Download the Sample File
 
 1. Select the VA to work with and go to **Build**.
 2. On the left pane, click **Conversation Skills**> **Knowledge Graph**.
@@ -25,7 +25,7 @@ Follow the instructions below to build your Knowledge Graph in a spreadsheet.
 
 ![download sample csv](../usecases/images/download-sample-csv.png "download sample csv")
 
-### Build the Knowledge Graph in a CSV
+### Build the Knowledge Graph
 
 The format for the CSV file includes details regarding alternate answers, extended responses, and advanced responses.
 
@@ -130,7 +130,7 @@ The XO Platform allows you to create the Knowledge Graph in JSON and upload it. 
 Follow the instructions below to build your Knowledge Graph using JSON:
 
 
-### Downloading the JSON sample
+### Download the Sample File
 
 1. On the left pane, click **Conversational Skills** > **Knowledge Graph**.
 2. You can find the **Import** option on the respective Knowledge Graph.
