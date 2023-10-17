@@ -3,7 +3,6 @@
 Interactive Voice Response (IVR) systems are preferred in many leading organizations to automate customer interactions. However, if you are using an IVR  system, you may often encounter the following two issues:
 
 
-
 * **Non-Intuitive Interface**: IVR systems do not simply let the customers state their needs, they make the users go through an extensive list of menu options, from which customers must select before finding the intent. Even if they allow users to express their intent at first, the backend programs can only understand a limited number of phrases.
 * **Static Flows**: IVR systems use static call flows that do not align with the nonlinear and contextual nature of human interactions. Following is a scenario where a customer is trying to Book Flight tickets:
 
@@ -14,7 +13,6 @@ Interactive Voice Response (IVR) systems are preferred in many leading organizat
     IVR: Sorry, I don't understand the input.
     ```
 
-
 Conventional IVR systems do not have diversified options for the users to articulate their requests beyond the rigid program flows.
 
 
@@ -23,7 +21,6 @@ Conventional IVR systems do not have diversified options for the users to articu
 Kore.ai XO Platform allows you to give a conversational makeover to your IVR system. It lets you build Virtual Assistants with human-like conversation capabilities and integrate them with your existing IVR system, thus taking your organization’s customer service experience to a new level.
 
 The following features enable  the seamless integration of your Kore.ai VAs with your existing IVR:
-
 
 * **Native VXML Support**: Built-in support to parse and generate World Wide Web Consortium (W3C) compliant Voice Extensible Markup Language(VXML) files.
 * **Hybrid integration**: Flexibility to build use cases or dialogs on the  Kore.ai Experience Optimization (XO) Platform, which can work in sync with the IVR dialogs.
@@ -78,11 +75,11 @@ Steps to configure IVR settings for your Virtual Assistant:
 !!! note
 
     If you have enabled IVR Sandbox, the following settings are required to be configured on the platform. These are pre-populated if you do not enable the IVR settings. In case you have enabled the settings, ensure the values are the same as follows:
-    – Enable Transcription set to Yes
-    – Transcription engine source set to builtin:speech/transcribe
-    – IVR Data Extraction Key set to user input
-    – ASR Confidence Threshold Key set to userinput confidence
-    – ASR Threshold Confidence set to 50.
+     – Enable Transcription set to Yes.
+     – Transcription engine source set to builtin:speech/transcribe.
+     – IVR Data Extraction Key set to user input.
+     – ASR Confidence Threshold Key set to userinput confidence.
+     – ASR Threshold Confidence set to 50.
    ![IVR Sandbox](./images/IVR-6.png "IVR Sandbox")
    ![IVR data](./images/IVR-7.png "image_tooltip")
 
@@ -111,7 +108,7 @@ Kore.ai XO Platform offers an **IVR Sandbox environment** to instantly launch yo
 
 Enabling this option generates a** Phone Number, Pin, **and **Secret**. To develop and test it with your teams, you can call your VA by using the phone number and PIN allocated for your VA. On receiving the valid Pin and Secret you will be connected with the VA for interactions. See the following steps to understand the Sandbox configuration.
 
-1. To enable the Sandbox. select **Enable** for **Kore.ai IVR Sandbox** under the **Configurations** tab .
+1. To enable the Sandbox, select **Enable** for **Kore.ai IVR Sandbox** under the **Configurations** tab .
 
   ![IVR configuration](./images/IVR-9.png "IVR configuration")
 
@@ -224,7 +221,6 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
    <td>
     Select any document to be the application root document
 
-
 **Note**: The application root contains the file path, which is an entry point for the application.
 
 
@@ -245,14 +241,14 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
 
 4. Click the **Configurations** tab.
 
- <img src= "./images/IVR-18.png" >
+  <img src= "./images/IVR-18.png" >
 
 5. From the **Select App** drop-down list, select an existing App or create a new app. See [Configure IVR Settings](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#Configure_IVR_Settings) to know more.
 6. Copy the following values:
-*   **WebHook URL**: For calling the VA from IVR.
-*   **Client Secret**: To generate a JWT token that must be appended to the WebHook URL.
+  *   **WebHook URL**: For calling the VA from IVR.
+  *   **Client Secret**: To generate a JWT token that must be appended to the WebHook URL.
 
-  <img src="./images/IVR-19.png">
+    <img src="./images/IVR-19.png">
 
 7. Select **Yes** for Enable Channel.
 
@@ -260,7 +256,7 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
 
 1. To generate the JWT Token, click [here](https://developer.kore.ai/tools/jwt/).
 
-!!! note
+ !!! note
 
     For a quick overview of the JWT token, refer to Introduction to JWT tokens.
 
@@ -268,7 +264,7 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
 `https://{{host}}/ivr/hooks/{{botId}}?token={{JWT}} \
 `The token can also be passed as the body parameter.
 
-!!! note
+ !!! note
 
     The host name, {{host}} refers to an environment URL, for example, https://bots.kore.ai. It changes based on the domain name.
 
