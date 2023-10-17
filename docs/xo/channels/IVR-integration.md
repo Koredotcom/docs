@@ -108,8 +108,10 @@ Steps to configure Telephony Welcome Event:
     This option was introduced in ver 7.1 of the platform. It is not available for on-prem installation.
 
 Kore.ai XO Platform offers an **IVR Sandbox environment** to instantly launch your VA for interactions over voice calls. This is useful when a working IVR system is not available for testing your VA over a voice channel. IVR Sandbox is an optional integration and it can coexist with your custom IVR integration.
+
 Enabling this option generates a** Phone Number, Pin, **and **Secret**. To develop and test it with your teams, you can call your VA by using the phone number and PIN allocated for your VA. On receiving the valid Pin and Secret you will be connected with the VA for interactions. See the following steps to understand the Sandbox configuration.
-1. Select **Enable **for **Kore.ai IVR Sandbox** under the **Configurations** tab, to enable the Sandbox.
+
+1. To enable the Sandbox. select **Enable** for **Kore.ai IVR Sandbox** under the **Configurations** tab .
 
   ![IVR configuration](./images/IVR-9.png "IVR configuration")
 
@@ -119,7 +121,7 @@ Enabling this option generates a** Phone Number, Pin, **and **Secret**. To devel
 4. Click **Save**.
 5. The following pop-up is displayed for the new app creation. Enter the details and click **Create** to create the app.
   ![create app](./images/IVR-11.png "create app")
-6. Upon saving the details, the following pop-up is displayed with** Phone Number, PIN** and **Secret** values. Click **OK**.
+6. Upon saving the details, the following pop-up is displayed with **Phone Number, PIN** and **Secret** values. Click **OK**.
 7. Once enabled, you can access the IVR Sandbox interaction details by clicking the **Test**
  ![test app](./images/IVR-12.png "test app")
 button, which becomes visible upon hovering over the IVR icon under the **Configured Channels**.
@@ -153,7 +155,7 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
 
     The Webhook Payload is used to test the IVR channel configuration for your VA. It can be tested using Postman.
 
- 3. The **IVR Voice Sample CURL **request is as follows:
+3. The **IVR Voice Sample CURL **request is as follows:
  ```
   `curl --location --request POST
   '{{host}}/ivr/hooks/{{streamId}}?token={{token}}'  
@@ -161,7 +163,7 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
     --data-raw '{
         "callId":"98ab21298XXXXX46",
         "message":"check balance",
-         "from":"1402XXX455", 
+         "from":"1402XXX455",
          "app_root":"app.vxml"
  }'
  ```
@@ -276,8 +278,8 @@ You can pass data to the VA from the IVR call flow using VXML > subdialog > as s
 
    ![IVR call flow](./images/IVR-20.png "IVR call flow")
 
-* _message**: **_Message from User. If the value is empty, then Welcome message would be triggered.
-* _callId**: **_A unique Call ID, based on which the VA identifies the IVR sessions
+* _message_: Message from User. If the value is empty, then Welcome message would be triggered.
+* _callId_:  A unique Call ID, based on which the VA identifies the IVR sessions
 * _from_: Unique User’s Identity, e.g., Phone Number
 * _to_: Bot Stream Id
 
