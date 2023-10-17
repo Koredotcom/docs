@@ -5,6 +5,7 @@ A careful analysis of the Knowledge Graph helps in detecting errors in your ques
 The Knowledge Graph (KG) Diagnosis tool helps you identify any inefficiencies in your KGs and suggests possible corrective actions. These are just guidelines and you need to further analyze the recommendations before going ahead with any changes.
 
 The KG provides an option to initiate an inspection, as follows:
+
 * This option is available only for the in-development version of the KG where there are one or more FAQs added.
 * The analysis considers the thresholds and other configurations of the KG.
 * The analysis issues a warning if any node contains more than 25 questions and an advisory to the effect that the training fails if there are more than 100 questions in any node.
@@ -32,16 +33,16 @@ In the example below, the details of all the patterns with invalid syntaxes are 
 
 The following table details the fields that are displayed in the report:
 
-<table>
+<table border="1.5">
   <tr>
-   <td><strong>ISSUE TYPE</strong>
-   </td>
-   <td><strong>CATEGORY</strong>
-   </td>
-   <td><strong>DETAILS</strong>
-   </td>
-   <td><strong>SUGGESTION</strong>
-   </td>
+   <th><strong>ISSUE TYPE</strong>
+   </th>
+   <th><strong>CATEGORY</strong>
+   </th>
+   <th><strong>DETAILS</strong>
+   </th>
+   <th><strong>SUGGESTION</strong>
+   </th>
   </tr>
   <tr>
    <td>Patterns with Invalid Syntax
@@ -260,7 +261,7 @@ The following table details the fields that are displayed in the report:
 ## Report Fields for Few-Shot Knowledge Graphs
 
 For Few-Shot Knowledge Graphs, nothing regarding paths and keywords requires analysis; since these are not used by the model to detect intent. The only report fields you will see when inspecting such a graph are the following: 
-<table>
+<table border="1.5">
   <tr>
    <td><strong>ISSUE TYPE</strong>
    </td>
