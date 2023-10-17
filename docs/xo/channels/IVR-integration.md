@@ -306,15 +306,18 @@ The ASR metadata is extracted in the response using the following syntax:
 
  In this example, the parameters like **ASR Confidence**, **score**,**input mode**, **utterance**, etc. are extracted in the syntax shown below:
 
-```
-data”: {
-“text”:
-“{“confidence”:”0.810000″,
-“Inputmode”:”voice”,
-“interpretation”:”Login.”,
-“utterance”:”Login.”}”
+     ```
+     data:
+     {
+     "text":
+     {
+       "confidence": "0.810000",
+       "Inputmode": "voice",
+       "interpretation": "Login.",
+       "utterance": "Login.""
+     }
+     ```
 
-```
 !!! note
 
     The information is available for the existing and new virtual assistants whose IVR channel is enabled.
