@@ -307,195 +307,63 @@ This feature analyzes the speech pattern or event of both the customer and the a
 
 
 1. Select **Speech Analysis** after clicking **When > +Add a trigger**. \
-
-
-<p id="gdcalert49" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image44.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert50">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image44.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_42.png)
 2. Click **{speech type}** and select a type for analysis.  \
-
-
-<p id="gdcalert50" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image45.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert51">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image45.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_43.png)
     * If you select **Cross Talk**, the following screen appears: \
-
-
-<p id="gdcalert51" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image46.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert52">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image46.png "image_tooltip")
-
+    ![Alt text](agent-realtime-coaching-images/image_44.png)
         1. Click **30** to enter the duration in seconds–30 seconds is the default value.
         2. Enter the duration in seconds and then press the **Enter** key. \
-
-
-<p id="gdcalert52" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image47.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert53">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image47.png "image_tooltip")
-
+        ![Alt text](agent-realtime-coaching-images/image_45.png)
         3. Click **1 time** to update the number of times crosstalk happened in a conversation. \
-
-
-<p id="gdcalert53" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image48.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert54">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image48.png "image_tooltip")
-
+        ![Alt text](agent-realtime-coaching-images/image_46.png)
         4. Click to select the number of times, as required.
         5. Click **in conversation** to update when crosstalk happened–**in conversation** is the default value. \
-
-
-<p id="gdcalert54" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image49.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert55">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image49.png "image_tooltip")
-
+        ![Alt text](agent-realtime-coaching-images/image_47.png)
             1. If you select **Anytime in conversation**, the following screen appears: \
-
-
-<p id="gdcalert55" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image50.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert56">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image50.png "image_tooltip")
-
+            ![Alt text](agent-realtime-coaching-images/image_48.png)
             2. If you select **By time**, the following screen appears: \
-
-
-<p id="gdcalert56" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image51.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert57">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image51.png "image_tooltip")
-
+            ![Alt text](agent-realtime-coaching-images/image_49.png)
                 1. From the dropdown, select **first** or **within** and enter the time in seconds.
                 2. Press the **Enter** key to save the new values. \
 **Note**: A validation error is displayed, as highlighted in the screenshot, either if the configured crosstalk time duration is lesser than the selected conversation time period or if the trigger setup is incomplete.
     * If you select **Dead Air**, the following screen appears: \
-
-
-<p id="gdcalert57" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image52.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert58">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image52.png "image_tooltip")
-
+    ![Alt text](agent-realtime-coaching-images/image_50.png)
         6. Click **30** to enter the duration in seconds, and then press the **Enter** key to save it. \
-
-
-<p id="gdcalert58" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image53.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert59">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image53.png "image_tooltip")
-
+        ![Alt text](agent-realtime-coaching-images/image_51.png)
         7. Click **{select person}** to select the user. \
-
-
-<p id="gdcalert59" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image54.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert60">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image54.png "image_tooltip")
-
+        ![Alt text](agent-realtime-coaching-images/image_52.png)
         8. Click **1 time** to select the frequency.
         9. Click **In conversation** to select a time frame. \
-
-
-<p id="gdcalert60" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image55.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert61">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image55.png "image_tooltip")
-
+        ![Alt text](agent-realtime-coaching-images/image_53.png)
             3. From the dropdown, select **first** or **within** and enter the time in seconds.
             4. Press the **Enter** key to save the new values. \
 **Note**: A validation error is displayed, as highlighted in the screenshot, either if the configured Dead Air duration is lesser than the selected conversation time period or if the trigger setup is incomplete.
     * If you select **Speech Speed**, the following screen appears: \
-
-
-<p id="gdcalert61" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image56.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert62">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image56.png "image_tooltip")
-
+    ![Alt text](agent-realtime-coaching-images/image_54.png)
         10. Click **{select person}** to select either Agent or Customer. \
-
-
-<p id="gdcalert62" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image57.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert63">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image57.png "image_tooltip")
-
+        ![Alt text](agent-realtime-coaching-images/image_55.png)
         11. Click **180** to enter words per minute–180 words per minute is the default value.
         12. Enter the number of words per minute and then press the **Enter** key to save it.
         13. Click **1 time** to select the frequency.
         14. Click **In conversation** to select a time frame.
     * If you select **Talk Ratio**, the following screen appears: \
-
-
-<p id="gdcalert63" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image58.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert64">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image58.png "image_tooltip")
-
+    ![Alt text](agent-realtime-coaching-images/image_56.png)
         15. Click **{Comparator}** to select a value comparison. \
-
-
-<p id="gdcalert64" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image59.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert65">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image59.png "image_tooltip")
-
+        ![Alt text](agent-realtime-coaching-images/image_57.png)
             5. If you select **Less than **or** Greater than**, a screen similar to the following appears: \
-
-
-<p id="gdcalert65" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image60.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert66">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image60.png "image_tooltip")
- \
-
+            ![Alt text](agent-realtime-coaching-images/image_58.png)
             6. If you select **In between**, the following screen appears: \
-
-
-<p id="gdcalert66" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image61.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert67">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image61.png "image_tooltip")
-
+            ![Alt text](agent-realtime-coaching-images/image_59.png)
         16. Click **{Value}** to enter a percentage value. \
-
-
-<p id="gdcalert67" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image62.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert68">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image62.png "image_tooltip")
- \
+        ![Alt text](agent-realtime-coaching-images/image_60.png)
 If you have selected **In between**, you have to enter the values twice, and click the tick mark, as highlighted in the following screenshot: \
-
-
-<p id="gdcalert68" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image63.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert69">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image63.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_61.png)
         17. Click **in conversation** to select a time duration. By default, **Anytime in conversation** is selected. \
-
-
-<p id="gdcalert69" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image64.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert70">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image64.png "image_tooltip")
-
+        ![Alt text](agent-realtime-coaching-images/image_62.png)
             7. Click **By time** to indicate a selected time frame for talk ratio measurement.
             8. Enter time in minutes and press the **Enter** key. \
-
-
-<p id="gdcalert70" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image65.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert71">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image65.png "image_tooltip")
+            ![Alt text](agent-realtime-coaching-images/image_63.png)
 
 
 **Coaching Rule:**
@@ -648,23 +516,9 @@ AgentAssist allows you to add multiple rule triggers. It lets you set different 
 1. Click **+Add a trigger** in the rule trigger creation page to create a new trigger.
 2. Click **+Add a trigger **again to create a new rule trigger.
 3. Select **And** or **Or**. \
-
-
-<p id="gdcalert71" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image66.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert72">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image66.png "image_tooltip")
-
-
+![Alt text](agent-realtime-coaching-images/image_64.png)
 **Note**: For creating multiple rule triggers, it is mandatory to choose **And** or **Or**. When you choose “**And,**” the rule triggers add up. When you choose “**Or**,” the rule triggers set to either of the rules. Here’s an example of this functionality:
-
-
-
-<p id="gdcalert72" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image67.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert73">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image67.png "image_tooltip")
-
+![Alt text](agent-realtime-coaching-images/image_65.png)
 
 The **And** condition ensures that rule triggers 1 and 2 are combined, and the **Or** condition ensures that either the combination of the first two rule triggers (1+2) or the third rule trigger (3) becomes applicable.
 
