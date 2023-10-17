@@ -103,7 +103,9 @@ You might have all the FAQs related to your business in a PDF file but not in th
 There are two ways to add the extracted content to the Knowledge Graph.
 
 ### From the Extracts Section
+
 To add the content from the **Extracts** section, follow the steps below:
+
 1. Open the VA.
 2. Select the **Build** top menu item.
 3. From the left menu, click **Conversational Skills** > **Knowledge Graph**.
@@ -112,7 +114,9 @@ To add the content from the **Extracts** section, follow the steps below:
 6. You can select multiple Q&As and perform a bulk move.
 
 ### From Knowledge Graph
+
 To add the content from the KG, follow the steps below:
+
 1. Open the VA.
 2. Select the **Build** top menu item.
 3. From the left pane, click **Conversational Skills** > **Knowledge Graph**.
