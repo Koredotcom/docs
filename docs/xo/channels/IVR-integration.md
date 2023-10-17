@@ -32,8 +32,6 @@ The following features enable  the seamless integration of your Kore.ai VAs with
 
 To setup IVR integration, perform the following steps:
 
-
-
 1. **[Configure IVR Settings](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#Configure_IVR_Settings)**: Define IVR settings such as transcription options, welcome messages, standard responses, and VXML properties.
 2. **[Configure Dialog Node IVR Properties](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#Configure_Dialog_Node_IVR_Properties)**: Define dialog by configuring node-specific grammar, prompts, and call flow behavior like time-out, retries.
 3. **[IVR Channel Setup](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#IVR_Channel_Setup)**: Set up authentication, configure WebHook in your IVR system and enable channel.
@@ -55,22 +53,21 @@ Steps to configure IVR settings for your Virtual Assistant:
 4. On the **Configurations** tab, perform the following steps:
 5. Use **Kore.ai IVR Sandbox** for testing your VA. See [Sandbox Configuration ](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#ivr-sandbox)for more details.
 
-!!! note
-
-    If you save the configuration after associating an app without enabling IVR Settings, the platform pre-populates the required settings for Sandbox.
-
 6. Associate an App with the IVR channel, either by creating a new one or selecting an existing one. If you do not have any apps, a message is displayed as shown in the following screenshot.
 
    ![associate app](./images/IVR-4.png "associate app")
 
-!!! note
-
-    If you already have created apps, then select an app from the Select App drop-down or create a new app. See Sandbox Configuration steps to know more.
-
 7. Use the **WebHook URL** provided in your external application.
 8. Enter the details to complete the setup, see [Voice Call Properties: Channel Settings](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Channel_Settings) for more information.
    ![Webhook URL](./images/IVR-5.png "Webhook URL")
-9. From the **Voice Call Properties **tab, set the configurations.
+9. From the **Voice Call Properties** tab, set the configurations.
+
+10. The Platform supports all UniMRCP-encoded voice-to-text services. If you select the **Enable Transcription** option for the VA, then the platform allows you to skip defining grammar during configuring IVR settings for any node (described in [Configure Dialog Node IVR Properties](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#Configure_Dialog_Node_IVR_Properties)).
+See [Voice Call Properties: Configuring Grammar](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Configuring_Grammar) for a detailed configuration for Grammar syntax.
+
+!!! note
+
+    If you already have created apps, then select an app from the Select App drop-down or create a new app. See Sandbox Configuration steps to know more.
 
 !!! note
 
@@ -86,15 +83,18 @@ Steps to configure IVR settings for your Virtual Assistant:
 !!! note
 
     Sandbox may not respond as expected if you use different values.
-10. The Platform supports all UniMRCP-encoded voice-to-text services. If you select the **Enable Transcription** option for the VA, then the platform allows you to skip defining grammar during configuring IVR settings for any node (described in [Configure Dialog Node IVR Properties](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#Configure_Dialog_Node_IVR_Properties)).
-See [Voice Call Properties: Configuring Grammar](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Configuring_Grammar) for a detailed configuration for Grammar syntax.
+
+!!! note
+
+    If you save the configuration after associating  an app without enabling IVR Settings, the  platform pre-populates the required settings for Sandbox.
 
 Once you have enabled the IVR channel, configure the **Telephony Welcome Event** in IVR Settings. This plays a welcome message for users when they connect to the VA through the IVR channel.
+
 Steps to configure Telephony Welcome Event:
 
 
-1. Under the **Build **tab, select **Intelligence —> Events**.
-2. Select the **Use Voice Call Properties **option to open the voice settings section.
+1. Under the **Build** tab, select **Intelligence > Events**.
+2. Select the **Use Voice Call Properties** option to open the voice settings section.
 3. Under the **Initial Prompts** text field, enter the message that needs to be played when the user connects to the VA. To know more about other configuration fields, see the [Voice Call Properties: Dialog Node Settings](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Dialog_Node_Settings) section.
 ![initial prompts](./images/IVR-8.png "initial prompts")
 
@@ -120,11 +120,12 @@ Enabling this option generates a** Phone Number, Pin, **and **Secret**. To devel
   ![create app](./images/IVR-11.png "create app")
 6. Upon saving the details, the following pop-up is displayed with **Phone Number, PIN** and **Secret** values. Click **OK**.
 7. Once enabled, you can access the IVR Sandbox interaction details by clicking the **Test**
- ![test app](./images/IVR-12.png "test app")
 button, which becomes visible upon hovering over the IVR icon under the **Configured Channels**.
  ![configure channels](./images/IVR-13.png "configure channels")
+ ![test app](./images/IVR-12.png "test app")
 8. On clicking **Test**, the following pop-up is displayed.
 ![testing app](./images/IVR-14.png "testing app")
+
 The **Phone Number**, **PIN**, and **Secret** are populated in the IVR Configurations panel as shown in the following screenshot.
 ![phone number](./images/IVR-15.png "phone number")
 
@@ -148,9 +149,6 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
 1. Go to **Deploy** > **Channels** in the left navigation panel of the virtual assistant.
 2. On the **Channels** page, click **IVR**. The IVR Channel Instructions panel is displayed.
  ![deploy channels](./images/IVR-17.png "deploy channels")
-!!! note
-
-    The Webhook Payload is used to test the IVR channel configuration for your VA. It can be tested using Postman.
 
 3. The **IVR Voice Sample CURL **request is as follows:
  ```
@@ -252,17 +250,21 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
 
 7. Select **Yes** for Enable Channel.
 
+!!! note
+
+    The Webhook Payload is used to test the IVR channel configuration for your VA. It can be tested using Postman.
+
 **Generating JWT Token**
 
 1. To generate the JWT Token, click [here](https://developer.kore.ai/tools/jwt/).
 
- !!! note
-
-    For a quick overview of the JWT token, refer to Introduction to JWT tokens.
-
 2. JWT has to be passed in the IVR hook URL as a value for the query parameter “token”:
 `https://{{host}}/ivr/hooks/{{botId}}?token={{JWT}} \
 `The token can also be passed as the body parameter.
+
+!!! note
+
+    For a quick overview of the JWT token, refer to Introduction to JWT tokens.
 
  !!! note
 
