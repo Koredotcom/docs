@@ -235,6 +235,7 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
 
   ![configurations](./images/IVR-18.png "configurations")
 5. From the **Select App** drop-down list, select an existing App or create a new app. See [Configure IVR Settings](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#Configure_IVR_Settings) to know more.
+
 6. Copy the following values:
   *   **WebHook URL**: For calling the VA from IVR.
   *   **Client Secret**: To generate a JWT token that must be appended to the WebHook URL.
@@ -283,11 +284,10 @@ The **Automatic Speech Recognition (ASR)** engine configured by bot engineers co
 
 To extract the metadata from the ASR transcription, follow these steps:
 
-1. In** IVR Channel** settings under **Voice Call Properties** various details like **Input Mode**, **ASR Confidence Threshold** etc. are configured.
+1. In **IVR Channel** settings under **Voice Call Properties** various details like **Input Mode**, **ASR Confidence Threshold** etc. are configured.
  ![input mode](./images/IVR-21.png "input mode")
 2. See [Voice Call Properties: Channel Settings](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Channel_Settings) for more information.The additional information provided by the ASR engines can be extracted using the **context object**. This is configured at  **Bot User Session → lastMessage →  asrMetaData**.
 3. Go to the **Settings** panel of the last message node for your dialog task and configure the **JavaScript Message** under **Bot Responses**, as shown below:
-
   ![JavaScript message](./images/IVR-22.png "JavaScript message")
 The ASR metadata is extracted in the response using the following syntax:
 
