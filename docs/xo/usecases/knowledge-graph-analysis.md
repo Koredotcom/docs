@@ -34,7 +34,7 @@ In the example below, the details of all the patterns with invalid syntaxes are 
 The following table details the fields that are displayed in the report:
 
 <table border="1.5">
-  <tr>
+  <tr bgcolor="#ECECEC">
    <th><strong>ISSUE TYPE</strong>
    </th>
    <th><strong>CATEGORY</strong>
@@ -262,7 +262,7 @@ The following table details the fields that are displayed in the report:
 
 For Few-Shot Knowledge Graphs, nothing regarding paths and keywords requires analysis; since these are not used by the model to detect intent. The only report fields you will see when inspecting such a graph are the following: 
 <table border="1.5">
-  <tr>
+<tr bgcolor="#ECECEC">
    <td><strong>ISSUE TYPE</strong>
    </td>
    <td><strong>CATEGORY </strong>

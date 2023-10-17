@@ -86,7 +86,7 @@ Training this model mainly involves adding tags and alternative questions to FAQ
 ## Compare Knowledge Graph Types
 
 <table>
-  <tr>
+  <tr bgcolor="#ECECEC">
    <td><strong>FEATURE</strong>
    </td>
    <td><strong>FEW-SHOT KG MODEL </strong>
@@ -102,7 +102,7 @@ Training this model mainly involves adding tags and alternative questions to FAQ
    <td>Yes, Mandatory.
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Default Terms
    </td>
    <td>No, unless you switch from an Ontology KG and don’t update the term. After updating, the term becomes an <em>Organizer </em>and can be set as <em>Mandatory</em>. 
@@ -118,7 +118,7 @@ Training this model mainly involves adding tags and alternative questions to FAQ
    <td>Yes
    </td>
   </tr>
-  <tr>
+ <tr bgcolor="#FAFAFA">
    <td>Organizer Terms
    </td>
    <td>Yes
@@ -134,7 +134,7 @@ Training this model mainly involves adding tags and alternative questions to FAQ
    <td>Yes, always performed.
    </td>
   </tr>
-  <tr>
+<tr bgcolor="#FAFAFA">
    <td>Tags
    </td>
    <td>Yes
@@ -150,7 +150,7 @@ Training this model mainly involves adding tags and alternative questions to FAQ
    <td>Yes
    </td>
   </tr>
-  <tr>
+<tr bgcolor="#FAFAFA">
    <td>Path-Level Synonyms
    </td>
    <td>Yes, for Mandatory Terms
@@ -166,7 +166,7 @@ Training this model mainly involves adding tags and alternative questions to FAQ
    <td>Yes
    </td>
   </tr>
-  <tr>
+ <tr bgcolor="#FAFAFA">
    <td>Traits
    </td>
    <td>Yes
@@ -182,7 +182,7 @@ Training this model mainly involves adding tags and alternative questions to FAQ
    <td>Yes
    </td>
   </tr>
-  <tr>
+ <tr bgcolor="#FAFAFA">
    <td>Stop Words
    </td>
    <td>Yes
@@ -198,7 +198,7 @@ Training this model mainly involves adding tags and alternative questions to FAQ
    <td>Yes
    </td>
   </tr>
-  <tr>
+ <tr bgcolor="#FAFAFA">
    <td>Auto-Generate KG
    </td>
    <td>Yes
@@ -214,7 +214,7 @@ Training this model mainly involves adding tags and alternative questions to FAQ
    <td>Yes
    </td>
   </tr>
-  <tr>
+<tr bgcolor="#FAFAFA">
    <td>Lemmatization using Parts of Speech
    </td>
    <td>No
@@ -230,7 +230,7 @@ Training this model mainly involves adding tags and alternative questions to FAQ
    <td>Yes
    </td>
   </tr>
-  <tr>
+<tr bgcolor="#FAFAFA">
    <td>Search in answer
    </td>
    <td>No
@@ -246,7 +246,7 @@ Training this model mainly involves adding tags and alternative questions to FAQ
    <td>Yes
    </td>
   </tr>
-  <tr>
+<tr bgcolor="#FAFAFA">
    <td>Auto-Correction
    </td>
    <td>Yes
@@ -262,7 +262,7 @@ Training this model mainly involves adding tags and alternative questions to FAQ
    <td>Yes
    </td>
   </tr>
-  <tr>
+<tr bgcolor="#FAFAFA">
    <td>KG Suggestions Count
    </td>
    <td>Yes
@@ -278,7 +278,7 @@ Training this model mainly involves adding tags and alternative questions to FAQ
    <td>Yes
    </td>
   </tr>
-  <tr>
+<tr bgcolor="#FAFAFA">
    <td>Manage Long Responses
    </td>
    <td>Yes
@@ -294,7 +294,7 @@ Training this model mainly involves adding tags and alternative questions to FAQ
    <td>Yes
    </td>
   </tr>
-  <tr>
+<tr bgcolor="#FAFAFA">
    <td>Context Output
    </td>
    <td>Yes
