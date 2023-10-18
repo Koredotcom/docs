@@ -72,14 +72,11 @@ You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utteranc
 3. **Test Utterances**: You can add multiple utterances, each on a new line.
 4. The **Entity Order**: Select one from the available options, depending on the intent you are working with. You can only select one item. The Entity Order selection is not available if you have added multiple intents.
 
+  **One Intent for a Test Utterance**
+  ![One intent for a test utterance](../images/batch-testing-6-one-intent-for-a-test-utterance.png "One intent for a test utterance")
 
-**One Intent for a Test Utterance**
-![One intent for a test utterance](../images/batch-testing-6-one-intent-for-a-test-utterance.png "One intent for a test utterance")
-
-
-**Multiple Intents for a Test Utterance**
-![Multiple intents for a test utterance](../images/batch-testing-7-multiple-intents-for-a-test-utterance.png "Multiple intents for a test utterance")
-
+  **Multiple Intents for a Test Utterance**
+  ![Multiple intents for a test utterance](../images/batch-testing-7-multiple-intents-for-a-test-utterance.png "Multiple intents for a test utterance")
 
 5. Click **Save** when ready.
 6. Once added, your test cases are listed and ready to run. You can use the **Add Manually** button at the top of the list to add more test cases. The option to Generate Test cases only displays if you have enabled LLM and Generative AI for the VA.
