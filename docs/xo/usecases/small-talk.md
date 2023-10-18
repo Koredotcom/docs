@@ -51,10 +51,8 @@ Small Talk is a VA-level task that is configured automatically. When you create 
 
 The following are the messages under the Greetings group (these are the Standard Responses of Greeting and other categories that are migrated to Small Talk once you choose to **Proceed**)
 
-
-
-<table>
-  <tr>
+<table border="1.5">
+  <tr bgcolor="#ECECEC">
    <td colspan="2" ><strong>GREETINGS</strong>
    </td>
   </tr>
