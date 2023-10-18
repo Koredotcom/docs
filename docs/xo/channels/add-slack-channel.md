@@ -98,7 +98,7 @@ If you want to enable the public distribution of your app on Slack, you must pro
 
 
 1. Go to the **Configurations** tab to review and complete the channel setup.
-2. Click **Authorize **under the app credentials area.
+2. Click **Authorize** under the app credentials area.
 3. Under **Enable Channel**, select **Yes **and click on **Save **to enable the Slack channel.
 ![enable channel](./images/slack11.png "enable channel")
 
