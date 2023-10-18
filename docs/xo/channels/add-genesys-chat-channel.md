@@ -36,28 +36,27 @@ A **Bot Connector service** enables your bot to exchange messages with the _Gene
 
 1. Log in to the **[Genesys Developer Portal](https://login.mypurecloud.com/#/authenticate)**.
 2. Create a Bot Connector with the steps below:
-    1. Navigate to **Admin** > **Integrations** on the left menu.
-    2. Click the **Configuration** tab.
-    3. On the Kore.ai XO Platform, navigate to **Deploy** > **Channels** > **Genesys Chat**.
+    * Navigate to **Admin** > **Integrations** on the left menu.
+    * Click the **Configuration** tab.
+    * On the Kore.ai XO Platform, navigate to **Deploy** > **Channels** > **Genesys Chat**.
     ![genesys chat](./images/genesys-1.png "genesys chat")
-
-    4. Copy the **Webhook URL** from the **Configurations** section.
-    5. Paste it in the **Value** field of the **Properties** section under **Configuration** on the **Genesys Chat** Portal.
+    * Copy the **Webhook URL** from the **Configurations** section.
+    * Paste it in the **Value** field of the **Properties** section under **Configuration** on the **Genesys Chat** Portal.
     ![properties](./images/genesys-2.png "image_tooltip")
-    6. In the **Genesys Cloud login URL** field under **Configuration**, provide the URL of your Genesys AWS Region which will allow the platform to correctly route the conversation requests. This is a **mandatory field.** You can find the URL of your region through the link provided with the field.
+    * In the **Genesys Cloud login URL** field under **Configuration**, provide the URL of your Genesys AWS Region which will allow the platform to correctly route the conversation requests. This is a **mandatory field.** You can find the URL of your region through the link provided with the field.
     ![mandatory configuration](./images/genesys-3.png "mandatory configuration")
-    7. Create an app on the Kore.ai XO platform. A JWT Token is created with the _clientId_ and _clientSecret_ credentials. To create an app, follow the steps below:
-    8. Click the **Create App** link under the **Configurations** section of the **Genesys Chat** Channel.
+3. Create an app on the Kore.ai XO platform. A JWT Token is created with the _clientId_ and _clientSecret_ credentials. To create an app, follow the steps below:
+    * Click the **Create App** link under the **Configurations** section of the **Genesys Chat** Channel.
     ![genesys configuration](./images/genesys-4.png "genesys configuration")
-    9. Follow the steps mentioned [here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel/).
+    * Follow the steps mentioned [here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel/).
     **Note**: Select _HS256_ for **JWT Signing Algorithms Used For Client App Authentication**.
-    10. Copy the **_Client Secret_** value of the app you’ve created.
-    11. Navigate to the **Configuration** > **Credentials** page, and click **Change**.
+    * Copy the **_Client Secret_** value of the app you’ve created.
+    *  Navigate to the **Configuration** > **Credentials** page, and click **Change**.
     ![credentials](./images/genesys-5.png "credentials")
-    12. Paste the copied **_Client Secret_** in the **Value** field when the **Change Credentials** window appears.
-    13. Click **OK**.
+    * Paste the copied **_Client Secret_** in the **Value** field when the **Change Credentials** window appears.
+    * Click **OK**.
     ![change credentials](./images/genesys-6.png "change credentials")
-    14. Once you paste all the required credentials, click **Authorize** to validate the authorization.
+    * Once you paste all the required credentials, click **Authorize** to validate the authorization.
     ![authorize](./images/genesys-7.png "authorize")
 
     Your Bot Connector is created successfully!
@@ -95,7 +94,7 @@ After creating the inbound messaging flow, you should configure and deploy the m
   4. For **Select your Configuration**, select the _Messenger Configuration_ to assign it to the deployment.
   5. For **Restrict Domain Access**, select _Allow all domains_.
   6. For **Select your Architect Flow**, select your Message Flow created in the previous step.
-  7. Click **Save**. \
+  7. Click **Save**. 
   The system routes the message sent by the user via the **Genesys Messenger** to the message flow.
   ![genesys messenger](./images/genesys-11.png "genesys messenger")
 
