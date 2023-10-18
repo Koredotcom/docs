@@ -48,7 +48,8 @@ To create forms, follow the steps below:
       ![Create New Form](./images/create-new-form.png "Create New Form")
 
 4. **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. Click the card to select the style. If it has a logo, you can upload an image file (jpg or png) for the logo.
-> **Note**: During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
+
+> **<p style="color:#1338BE">NOTE</p>** During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
 
 5. Turn on the **Description** toggle if you want to show a description of the form in the header. 
 ![Description Toggle](./images/description-toggle-turn-on.png "Description Toggle")
@@ -172,7 +173,7 @@ Of special interest are the following Component Properties:
 
     * **Manage Context Variables** is used to create and set values for the context variables. Remember to use the full path of the variable in the _key_ field ie. ```context.BotUserSession.&lt;variable_name>```
 
-> **NOTE**: We urge you not to make changes to the connection settings as this affects the V's performance.
+> **<p style="color:#1338BE">NOTE</p>** We urge you not to make changes to the connection settings as this affects the V's performance.
 
 * **Sub-dialog Node** is configured as normal ([see here for details](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-dialog-node/)) Of special interest are the following:
 
@@ -203,7 +204,7 @@ You can add a form directly to a panel, it creates a widget by default.
 8. You can **Test** the panel.
 9. Follow the steps provided [here](https://developer.kore.ai/docs/bots/sdks/kore-ai-widget-sdk-tutorial/) to publish and host the panels.
 
-> **Note**: While a Digital Form is used to define multiple Widgets and also add to multiple panels, it will be associated with a single Dialog Task across all Widgets and Panels.
+> **<p style="color:#1338BE">NOTE</p>** While a Digital Form is used to define multiple Widgets and also add to multiple panels, it will be associated with a single Dialog Task across all Widgets and Panels.
 
 ![invoke form in widget](./images/invoke-form-in-widget.png "invoke form in widget")
 
@@ -315,7 +316,7 @@ The _In Development_ and _Published_ versions of the VA can be viewed by togglin
 
 ![va status search](./images/va-status-search.png "va status search")
  
-> **Note**: If any edits are done to the Digital Form while it is In Development, the changes would be reflected in the Published version as soon as you publish the form.
+> **<p style="color:#1338BE">NOTE</p>** If any edits are done to the Digital Form while it is In Development, the changes would be reflected in the Published version as soon as you publish the form.
 
 * **_Suspended_** when a published form is suspended by the admin.
 
@@ -450,7 +451,7 @@ Use the **Date component** and set the <em>Time option</em> to <em>yes</em>; cho
 
 ![Protip](./images/protip-field.png "protip")
 
-* **Note** – Used to mark information for the end-user, no user action required.
+* **<p style="color:#1338BE">NOTE</p>** Used to mark information for the end-user, no user action required.
 
 ![Note](./images/note-field.png "note")
 
@@ -458,11 +459,10 @@ Use the **Date component** and set the <em>Time option</em> to <em>yes</em>; cho
 
 The following are the properties that can be set for each of the components.
 
-> **Note**: Not all the properties are valid for all the components, refer to the [property matrix](https://developer.kore.ai/docs/bots/bot-builder-tool/digital-forms/#Properties) for the mapping:
+> **<p style="color:#1338BE">NOTE</p>** Not all the properties are valid for all the components, refer to the [property matrix](https://developer.kore.ai/docs/bots/bot-builder-tool/digital-forms/#Properties) for the mapping:
 
-
-<table>
-  <tr>
+<table border="1.5">
+  <tr bgcolor="#ECECEC">
    <td><strong>PROPERTY</strong>
    </td>
    <td><strong>DESCRIPTION</strong>

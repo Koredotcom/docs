@@ -12,7 +12,7 @@ To open the Knowledge Graph builder, follow the below steps:
 4. You will notice that there is already a Knowledge Graph with the name of your assistant.
 ![access existing knowledge graph](../usecases/images/access-existing-knowledge-graph.png "access existing knowledge graph")
 
-> **Note**:
+> **<p style="color:#1338BE">NOTE</p>**
 All features explained here are supported by the Few-Shot Knowledge Graph, except for the following:
 >
 >  * Few-Shot Knowledge Graphs do not require an ontology structure, but you can create one to  improve intent detection. 
@@ -30,7 +30,8 @@ To create nodes, follow the below steps:
 2. On the top left of the Knowledge Graph window, hover over the root node.
 3. Click the **+** icon. A text box appears below to **Add Node**. For better performance, there is a restriction of 50k FAQs spread across 20k maximum allowed number of nodes.
 4. Type the name of the node in the text box and press **Enter**. A warning would be displayed in case you enter a duplicate node name, i.e. if a child node with the same name already exists under the parent node.
-> **Note**: This node becomes a child for the root node and can be referred to as a First-level node.
+
+> **<p style="color:#1338BE">NOTE</p>** This node becomes a child for the root node and can be referred to as a First-level node.
 5. Repeat steps 1 to 3 in this section to create other First-level nodes.
 6. After you create First-level nodes, create child nodes as follows:
     * Hover over any First-level node, and click the plus icon to create its child node.
@@ -83,7 +84,7 @@ You can improve the performance of your Knowledge Graph by adding tags, synonyms
 
 Once created, there will be times when you want to make changes to the Knowledge Graph for better organization and presentation.
 
-> **Note**: Once you make any changes to the Knowledge Graph, make sure to click Train on the top-right to send the updates to the Knowledge Graph engine. If you do not train the VA, the changes are not reflected in its responses.
+> **<p style="color:#1338BE">NOTE</p>** Once you make any changes to the Knowledge Graph, make sure to click Train on the top-right to send the updates to the Knowledge Graph engine. If you do not train the VA, the changes are not reflected in its responses.
 
 By default, intents added to a child node are visible for all its parent nodes in the path, up to the root node. 
 
@@ -122,7 +123,7 @@ To delete a term, follow the steps below:
     * **Delete the FAQs along with the term** – Choosing this option deletes the term and FAQs under it.
     * **Delete the term and move FAQs to root term** - Choosing this option deletes the term and moves the FAQs under it to the root term.
 
-> **Note**
+> **<p style="color:#1338BE">NOTE</p>**
 >
 > * If the term has child nodes, all those nodes will be deleted.
 ![child node deleted](../usecases/images/child-node-deleted.png "child node deleted")
@@ -156,7 +157,7 @@ The Knowledge Graph engine works well with the default settings, but you can fin
     * **The proximity of Suggested Matches** – Define the maximum difference to allow between top-scoring and immediate next suggested questions to consider as equally important. 
     * **Qualify Contextual Paths** – This ensures that the bot context is populated and retained with the terms/nodes of the matched intent. This further enhances the user experience.
 
-> **Note**: You can customize these settings in Natural Language > Thresholds & Configurations. See Knowledge Graph Training for details.
+> ****<p style="color:#1338BE">NOTE</p>**** You can customize these settings in Natural Language > Thresholds & Configurations. See Knowledge Graph Training for details.
 
 * **Traits** – Traits qualify nodes/terms even if the user utterance does not contain the term/node. Traits are also helpful in filtering the suggested intent list.
 
