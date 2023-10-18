@@ -115,13 +115,13 @@ Let us look at each of the options:
   </tr>
 </table>
 
-
-
 ## Output
 
 The output JSON file is generated and placed under the project root directory with the name `ao_output.json`
 
-The output JSON file can directly be imported to Knowledge Graph in the bot. [See here](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/importing-the-bot-ontology-from-csv-or-json/#Importing_Ontology) for steps to import Knowledge Graph.
+The output JSON file can directly be imported to Knowledge Graph in the bot. 
+
+Please refer to this [link](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/importing-the-bot-ontology-from-csv-or-json/#Importing_Ontology) for steps to import Knowledge Graph.
 
 
 > **<p style="color:#1338BE">NOTE</p>** When you try to import the Knowledge Graph it replaces the existing one. We recommend you take a back up before importing.
