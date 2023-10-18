@@ -30,7 +30,7 @@ Kore.ai provides a few out-of-the-box **Test Suites** to perform batch testing. 
 
 This test suite validates the utterances that have been previously added and trained by the developer from Machine Learning Utterances screen. Using this test suite would mean testing collectively the entire set of utterances that a developer has added for all tasks of the bot.
 
-![BT - Developer Defined Utterances](../images/batch-testing-1-developer-du.png "BT - Developer Defined Utterances")
+<img src="../images/batch-testing-1-developer-du.png" alt="BT - Developer Defined Utterances" title="BT - Developer Defined Utterances" style="border: 1px solid  gray;"/>
 
 
 ### Successful user utterances
@@ -46,7 +46,7 @@ To add a new test suite, follow the steps below:
 
 1. Go to **Build** > **Testing** > **Batch Testing**, and click **New Test Suite**.
 
-![BT - New Test Suite](../images/batch-testing-3.png "BT - New Test Suite")
+<img src="../images/batch-testing-3.png" alt="BT - New Test Suite" title="BT - New Test Suite" style="border: 1px solid  gray;"/>
 
 2. In the **New test Suite** window, add a **name** and provide a **description**.
 3. Next, choose how to add test cases: either manually or by uploading a test case file.
@@ -85,7 +85,7 @@ You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utteranc
 6. Once added, your test cases are listed and ready to run. You can use the **Add Manually** button at the top of the list to add more test cases. The option to Generate Test cases only displays if you have enabled LLM and Generative AI for the VA.
 
 ![New test added](../images/batch-testing-8-add-new-case.png "New test added")
-  
+
 
 #### Generating Test Cases Automatically
 
@@ -400,7 +400,7 @@ In the case of Small Talk, this field should be populated when the Small Talk is
   </tr>
 </table>
 
- 
+
 
 **CSV Format for Test Suite**
 
@@ -425,7 +425,7 @@ input,intent,parentIntent,entityName,entityValue
 "Add cart to Apples , Grapes",Add to cart,LOV,Apples||Grapes,,
 "I booked a ticket from hyderabad on July 6th, 2018 and it cost me Rs. 1200",Composite Test,Composite55,City5:Hyderabad|Date5:2018-07-06"|Curr5:1200 INR
 ```
- 
+
 * The order of extraction of entity value can be mentioned in the following format: `entity3>entity4>entity1`. 
 If the order is not provided or partially provided, the platform determines the shortest route covering all the entities as the default order.
 
@@ -857,7 +857,7 @@ To get a detailed analysis of the test run, click **the Download** icon to downl
 * **False Negative (FN):** Percentage of utterances that have not matched expected intent. In the case of Small Talk, it would be when the list of expected Small Talk intent is blank but the actual Small Talk is mapped to an intent.
 
 ![Sample CSV Test report](../images/batch-testing-18-sample-result-2.png "Sample CSV Test report")
- 
+
 The report also provides detailed information on each of the test utterances and the corresponding results.
 
 * **Utterances**- Utterances used in the corresponding test suite.
