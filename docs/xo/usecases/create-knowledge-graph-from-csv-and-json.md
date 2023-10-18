@@ -143,7 +143,7 @@ Follow the instructions below to build your Knowledge Graph using JSON:
 ![json reference](../usecases/images/json-reference-code.png "json reference")
 
 <table border="1.5">
-  <tr>
+  <tr bgcolor="#ECECEC">
    <td><strong>PROPERTY NAME</strong>
    </td>
    <td><strong>TYPE</strong>
@@ -170,7 +170,7 @@ Follow the instructions below to build your Knowledge Graph using JSON:
 </ul>
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Question
    </td>
    <td>String
@@ -186,23 +186,17 @@ Follow the instructions below to build your Knowledge Graph using JSON:
    <td>VA response; included in the FAQ array.
    </td>
   </tr>
-  <tr>
-   <td>Terms
-   </td>
-   <td>Array
-   </td>
-   <td>Includes the leaf node to which the question is added, and its parents up to the First-level node.
-   </td>
+  <tr bgcolor="#FAFAFA">
+   <td>Terms</td>
+   <td>Array</td>
+   <td>Includes the leaf node to which the question is added, and its parents up to the First-level node.</td>
   </tr>
   <tr>
-   <td>refId
-   </td>
-   <td>String
-   </td>
-   <td>Optional reference to any external content used as a source for this FAQ
-   </td>
+   <td>refId</td>
+   <td>String</td>
+   <td>Optional reference to any external content used as a source for this FAQ.</td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Alternate Questions
    </td>
    <td>Array
@@ -218,13 +212,10 @@ Follow the instructions below to build your Knowledge Graph using JSON:
    <td>Consists of arrays of terms and their synonyms.
    </td>
   </tr>
-  <tr>
-   <td>Unmappedpath
-   </td>
-   <td>Array
-   </td>
-   <td>Consists of arrays of nodes that do not have any questions, and all their parents up to the First-level node.
-   </td>
+  <tr bgcolor="#FAFAFA">
+   <td>Unmappedpath</td>
+   <td>Array</td> 
+   <td>Consists of arrays of nodes that do not have any questions, and all their parents up to the First-level node.</td>
   </tr>
   <tr>
    <td>Traits
