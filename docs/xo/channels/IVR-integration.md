@@ -307,6 +307,7 @@ The ASR metadata is extracted in the response using the following syntax:
  In this example, the parameters like **ASR Confidence**, **score**,**input mode**, **utterance**, etc. are extracted in the syntax shown below:
 
      ```
+
      data:
      {
      "text":
@@ -316,6 +317,7 @@ The ASR metadata is extracted in the response using the following syntax:
        "interpretation": "Login.",
        "utterance": "Login.""
      }
+     
      ```
 
 !!! note
