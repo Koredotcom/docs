@@ -30,7 +30,7 @@ Kore.ai provides a few out-of-the-box **Test Suites** to perform batch testing. 
 
 This test suite validates the utterances that have been previously added and trained by the developer from Machine Learning Utterances screen. Using this test suite would mean testing collectively the entire set of utterances that a developer has added for all tasks of the bot.
 
-<img src="./images/batch-testing-1-developer-du.png" alt="BT - Developer Defined Utterances" title="BT - Developer Defined Utterances" style="border: 1px solid  gray;" markdown>
+<img src="../images/batch-testing-1-developer-du.png" alt="BT - Developer Defined Utterances" title="BT - Developer Defined Utterances" style="border: 1px solid  gray;" markdown>
 
 
 ### Successful user utterances
