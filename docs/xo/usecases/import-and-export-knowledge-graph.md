@@ -8,7 +8,9 @@ The XO Platform allows you to import any VA with a file size up to 50MB. If you 
 
 ## Import
 
-> **Warning**: Importing a Knowledge Graph replaces the existing one. Please proceed with caution and follow the steps below carefully.
+
+> **<p style="color:red">WARNING</p>** Importing a Knowledge Graph replaces the existing one. Please proceed with caution and follow the steps below carefully.
+
 
 To import a Knowledge Graph, follow the steps below:
 
@@ -42,7 +44,7 @@ To export a Knowledge Graph, follow the below steps:
 
 3. Based on the preferred format: click **Export JSON** or **Export CSV**.
 
-> **Note**: Please read the warning message shown below before clicking **Confirm**. To learn more about caching challenges and strategies, click [here](https://aws.amazon.com/builders-library/caching-challenges-and-strategies/#:~:text=Caches%20are%20also%20susceptible%20to%20poisoning%20attacks%2C%20in%20which%20a,will%20see%20the%20malicious%20value).
+> **<p style="color:#1338BE">NOTE</p>** Please read the warning message shown below before clicking **Confirm**. To learn more about caching challenges and strategies, click [here](https://aws.amazon.com/builders-library/caching-challenges-and-strategies/#:~:text=Caches%20are%20also%20susceptible%20to%20poisoning%20attacks%2C%20in%20which%20a,will%20see%20the%20malicious%20value).
 
 ![export caching message](../usecases/images/export-caching-notice-message.png "export caching message")
 
