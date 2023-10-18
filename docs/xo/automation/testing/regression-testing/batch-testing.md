@@ -36,6 +36,7 @@ This test suite validates the utterances that have been previously added and tra
 ### Successful user utterances
 
 This test suite includes all the end-user utterances that have successfully matched one or more intents and the corresponding task is fully executed. You can also find these utterances from the ‘Intent found’ section of the Analyze module.
+
 <img src="../images/batch-testing-2-successful-utterances.png" alt="Successful user utterances" title="Successful user utterances" style="border: 1px solid  gray;">
 
 
