@@ -12,7 +12,7 @@ After completing the extraction, you can edit the question and answers using an 
 To move data using the Knowledge Extraction service to the Knowledge Graph, follow the process below:
 
 1. **Extracting:** Extract the existing FAQ content from structured or unstructured sources of question-answer data such as PDF, web pages, and CSV files. This extraction can be done before or after creating a Knowledge Graph for the assistant you are working with. 
-> **Note**: The Knowledge Extraction service supports a specific content structure for each source type. Refer to the [Supported formats section below for details.](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-extraction-service/#Supported_Formats_and_Requirements)
+> **<p style="color:#1338BE">NOTE</p>** The Knowledge Extraction service supports a specific content structure for each source type. Refer to the [Supported formats section below for details.](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-extraction-service/#Supported_Formats_and_Requirements)
 2. **Editing**: Upon successful data extraction, you can edit the questions and answer text before moving it to the Knowledge Graph.
 3. **Moving**: You can add data to a VA before or after creating a Knowledge Graph (KG). If you try to add the extracted content to a KG before it exists, the VA automatically creates a KG with the VA’s name.
 
@@ -35,7 +35,7 @@ The Knowledge Extractor allows you to add the extracted content to the Knowledge
 
 ## Extract from a File
 
-> **Note**: The file size should not exceed 5MB.
+> **<p style="color:#1338BE">NOTE</p>** The file size should not exceed 5MB.
 
 To extract content from a file, please follow the steps below. For file format details, refer to the [Supported formats](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-extraction-service/#Supported_Formats) section of this article.
 
@@ -53,11 +53,11 @@ To extract content from a file, please follow the steps below. For file format d
 
 ### Annotate & Extract
 
-> **Note**: This feature has been introduced in v8.0 of the Platform.
+> **<p style="color:#1338BE">NOTE</p>** This feature has been introduced in v8.0 of the Platform.
 
 You might have all the FAQs related to your business in a PDF file but not in the XO Platform compatible format. Versions prior to 8.0 of the XO Platform did not allow incompatible files. The introduction of the Annotation tool helps annotate documents, identifying the key sections of the content. The Knowledge Extraction engine uses this information to extract the FAQs from the document.
 
-> **Note**: This is only applicable to PDF documents.
+> **<p style="color:#1338BE">NOTE</p>** This is only applicable to PDF documents.
 
 1. Select a new or previously extracted PDF file. Note that you can use a previously extracted file provided no questions from that file are added to the Knowledge Graph.
 2. Click **Annotate & Extract** to make annotation on a newly uploaded file.
@@ -126,7 +126,7 @@ To add the content from the KG, follow the steps below:
 7. Select the checkboxes next to the question-answer pairs that you want to move and then click **Add**.
 ![drag question answer pair to kg](../usecases/images/drag-question-answer-pair-to-kg.gif "drag question answer pair to kg")
 
-> **Note**: Once you move a question-answer pair from the extract to the knowledge graph, you cannot move it again. The platform shows a duplicate error when you try to move a question from the extract that is already present in the collection. You can make any changes to the moved content from the knowledge graph. However, if the question is modified or removed from the knowledge graph, then the developer is allowed to add it again.
+> **<p style="color:#1338BE">NOTE</p>** Once you move a question-answer pair from the extract to the knowledge graph, you cannot move it again. The platform shows a duplicate error when you try to move a question from the extract that is already present in the collection. You can make any changes to the moved content from the knowledge graph. However, if the question is modified or removed from the knowledge graph, then the developer is allowed to add it again.
 
 ### Supported Formats and Requirements
 

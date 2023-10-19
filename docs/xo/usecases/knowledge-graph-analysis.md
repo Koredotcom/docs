@@ -27,7 +27,7 @@ The platform analyzes the KG and provides a report of the analysis. The identifi
 In the example below, the details of all the patterns with invalid syntaxes are shown:
 ![example of patterns with invalid syntaxes](../usecases/images/example-patterns-with-invalid-syntaxes.png "example of patterns with invalid syntaxes")
 
-> **Note:** There can be more than 50 warnings or 10 suggestions, but only the first 50/10 occurrences of the issue are listed. You must fix the same and re-run the analysis to view the next set.
+> **<p style="color:#1338BE">NOTE</p>** There can be more than 50 warnings or 10 suggestions, but only the first 50/10 occurrences of the issue are listed. You must fix the same and re-run the analysis to view the next set.
 
 ### Report Fields for Ontology Knowledge Graphs
 
@@ -329,7 +329,7 @@ For Few-Shot Knowledge Graphs, nothing regarding paths and keywords requires ana
   </tr>
 </table>
 
-> **Note:** Every time a KG is inspected, the following details get updated in a scenario where any FAQs are modified or any new FAQs are added:
+> **<p style="color:#1338BE">NOTE</p>** Every time a KG is inspected, the following details get updated in a scenario where any FAQs are modified or any new FAQs are added:
 >
 > * Total checks
 > * Count of errors, warnings, suggestions
