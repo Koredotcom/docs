@@ -96,9 +96,9 @@ When selecting **Digital Form** as a widget source, you  can select the Digital 
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>A Digital Form can be used to define multiple Widgets and can also be added to multiple Panels. However, it will be associated with the same Dialog Task across all Widgets and Panels.
-<img src="../use-cases/images/digital-form-as-source.png" alt="digital form as source"</p>
-</div>
+<p>A Digital Form can be used to define multiple Widgets and can also be added to multiple Panels. However, it will be associated with the same Dialog Task across all Widgets and Panels.</p></div>
+
+![digital form as source](../use-cases/images/digital-form-as-source.png "digital form as source")
 
 ### Edit, Run & Preview a Widget
 

@@ -48,23 +48,25 @@ To create forms, follow the steps below:
       ![Create New Form](../use-cases/images/create-new-form.png "Create New Form")
 
 4. **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. Click the card to select the style. If it has a logo, you can upload an image file (jpg or png) for the logo.
-
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.</p>
 </div>
 
-5. Turn on the **Description** toggle if you want to show a description of the form in the header. 
+<ol start="5"><li>Turn on the **Description** toggle if you want to show a description of the form in the header.</li></ol>
+
 ![Description Toggle](../use-cases/images/description-toggle-turn-on.png "Description Toggle")
 
-6. **Form Security** – Enable **Secure Form Data** to redact form data from the Bot Context, Debug Logs, Service Calls, Agent Transfer, and the Bot Kit. 
+<ol start="6"><li><b>Form Security</b> – Enable <b>Secure Form Data</b> to redact form data from the Bot Context, Debug Logs, Service Calls, Agent Transfer, and the Bot Kit.</li></ol>
+
 ![secure form data](../use-cases/images/secure-form-data.png "secure form data")
 While enabling, you can also choose whether to display the **Secure Form icon** to your end users. 
 ![enable redact form data](../use-cases/images/enable-redact-form-data.png "enable redact form data")
 Once enabled, the Platform will replace the user input with a unique random system-generated alphanumeric value in all the modules. Also, the **Secure Form** icon and a **Tip** will be displayed, notifying the user that the form is secure.
 ![secure form icon](../use-cases/images/secure-form-icon.png "secure form icon")
 
-7. Click **Save & Proceed**. 
+<ol start="7"><li>Click <b>Save & Proceed</b>.</li></ol>
+
 ![save digital form](../use-cases/images/save-digital-form.png "save digital form")
 
 ### Add Components
@@ -111,7 +113,7 @@ You can use the **Edit** option from the form listing to edit the form. The foll
 * **_The Component Listing_** is used for selecting and adding components to the Form by simple drag and drop action.
 * Use the **View Toggler** to switch between **Desktop View** and **Mobile View**.
 * Use the Move Component _Handle Bar_ against each of the components to change its location by a simple drag and drop action;
-* Use _Form Actions _to:
+* Use *Form Actions* to:
     * **Test** the form to see the preview of the Digital Form in the XO Platform.
     * **Delete** the Form. Please keep in mind that deleted forms cannot be restored.
     * Change the Form **Settings** such as name, display name, and description.
@@ -375,9 +377,9 @@ The Bot Export option is available for Digital Forms with a status of *In Develo
 * Choose the option to _Include dependent dialogs_ to export Dialog Tasks that are integrated with the selected Digital Forms to define widgets. 
 **_Note that this does not include the Sub-dialog Tasks generated using Digital Forms._**
 * Complete information for each of the selected forms are available in the export file and this includes:
-    * Fields,
-    * Field properties,
-    * Form integrations,
+    * Fields
+    * Field properties
+    * Form integrations
 
 # **Form Component Details**
 

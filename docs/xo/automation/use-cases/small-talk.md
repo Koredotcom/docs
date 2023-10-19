@@ -197,8 +197,10 @@ If you have already had Small Talk for your company, you can import it using a J
 
 * The import begins instantly.
 
-> **Warning**
-> Existing Small Talk will be replaced with the imported file.
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Existing Small Talk will be replaced with the imported file.</p>
+</div>
 
 ### Modify the Existing Greetings Group
 
@@ -334,7 +336,7 @@ Once you have made changes to the Small Talk, it needs to be trained for the VA 
 
 ![automatic training](../use-cases/images/automatic-training.png "automatic training")
 
-<div class="admonition important">
+<div class="admonition note">
 <p class="admonition-title">Important</p>
 <p><ul><li>Only three levels of child nodes are allowed in Small talk. The child questions are identified only if the corresponding parent level question was answered in the previous volley.</li>
 <li>The questions are evaluated in the order in which they are added to a group. It is advisable to add generic small talk at the end and specific small talk at the beginning (For example, how is your day today? must be added first and then followed by how are you). You can re-order the primary questions after adding them.</li>

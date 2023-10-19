@@ -36,11 +36,10 @@ To create nodes, follow the below steps:
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This node becomes a child for the root node and can be referred to as a First-level node.</p></div>
-
-5. Repeat steps 1 to 3 in this section to create other First-level nodes.
-6. After you create First-level nodes, create child nodes as follows:
-    * Hover over any First-level node, and click the plus icon to create its child node.
-    * You can create a child node for any level node by hovering over it and clicking the **+** icon.
+<ol start="5"><li>Repeat steps 1 to 3 in this section to create other First-level nodes.</li>
+<li>After you create First-level nodes, create child nodes as follows:</li>
+<ul><li>Hover over any First-level node, and click the plus icon to create its child node.</li>
+<li>You can create a child node for any level node by hovering over it and clicking the <b>+</b> icon.</li></ul></ol>
 
 Follow the same process to create multiple node levels. 
 

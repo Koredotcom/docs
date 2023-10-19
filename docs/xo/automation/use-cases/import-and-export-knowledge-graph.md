@@ -8,9 +8,10 @@ The XO Platform allows you to import any VA with a file size up to 50MB. If you 
 
 ## Import
 
-
-> **<p style="color:red">WARNING</p>** Importing a Knowledge Graph replaces the existing one. Please proceed with caution and follow the steps below carefully.
-
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Importing a Knowledge Graph replaces the existing one. Please proceed with caution and follow the steps below carefully.</p>
+</div>
 
 To import a Knowledge Graph, follow the steps below:
 

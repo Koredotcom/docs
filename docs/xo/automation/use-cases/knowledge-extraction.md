@@ -17,8 +17,8 @@ To move data using the Knowledge Extraction service to the Knowledge Graph, foll
 <p>The Knowledge Extraction service supports a specific content structure for each source type. Refer to the <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-extraction-service/#Supported_Formats_and_Requirements">Supported formats section below for details</a></p>
 </div>
 
-2. **Editing**: Upon successful data extraction, you can edit the questions and answer text before moving it to the Knowledge Graph.
-3. **Moving**: You can add data to a VA before or after creating a Knowledge Graph (KG). If you try to add the extracted content to a KG before it exists, the VA automatically creates a KG with the VA’s name.
+<ol start="2"><li><b>Editing</b>: Upon successful data extraction, you can edit the questions and answer text before moving it to the Knowledge Graph.</li>
+<li><b>Moving</b>: You can add data to a VA before or after creating a Knowledge Graph (KG). If you try to add the extracted content to a KG before it exists, the VA automatically creates a KG with the VA’s name.</li></ol>
 
 The Knowledge Extractor allows you to add the extracted content to the Knowledge Graph as follows:
 

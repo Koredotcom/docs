@@ -2,7 +2,10 @@
 
 FAQs allow you to add question-answer sets to your Knowledge Graph and map them to related ontology terms. This feature improves intent recognition and increases the performance of your VA.
 
-> **Important**: There is a limit of 50k FAQs over 20k nodes to avoid performance issues.
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>There is a limit of 50k FAQs over 20k nodes to avoid performance issues.</p>
+</div>
 
 All features explained here are supported by the Few-Shot Knowledge Graph, except for the following:
 
@@ -13,6 +16,7 @@ All features explained here are supported by the Few-Shot Knowledge Graph, excep
 
 ## Add FAQs
 To add an FAQ, follow the below steps:
+
 1. On the left pane of the **Knowledge Graph** window, click the node to which you want to add questions.
 2. Click **Add Intent** on the top-right.
 ![add faq intent](../use-cases/images/add-faq-intent.png "add faq intent")

@@ -8,8 +8,10 @@ Terms or Nodes are the building blocks of an ontology and are used to define the
 
 You can organize the terms in a hierarchical order to represent the flow of information in your graph. You can create, organize, edit, and delete terms and set term types to facilitate intent identification 
 
-> **Important**: 
-The Knowledge graph is limited to 20 thousand nodes/terms and 50 thousand FAQs.
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>The Knowledge graph is limited to 20 thousand nodes/terms and 50 thousand FAQs.</p>
+</div>
 
 ### Node/Term Hierarchy
 
@@ -89,8 +91,9 @@ A VA can respond to a given question with an FAQ or the execution of a Dialog Ta
 * **Task**: Linking a Dialog task to a KG Intent helps leverage the capabilities of the Knowledge Graph and Dialog tasks to handle FAQs that involve complex conversations.
 ![link dialog task to kg intent](../use-cases/images/link-dialog-task-to-kg-intent.png "link dialog task to kg intent")
 
-> Important
->
-> * For Few-shot graphs, you can add all your FAQs to the Root node because the LLM does not require an ontology.
-> * Default terms are not available in Few-Shot Knowledge Graphs. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.
-> * Path Level Synonyms are only supported for Mandatory Terms and for Tags.
+<div class="admonition note">
+<p class="admonition-title">Important</p>
+<p><ul><li>For Few-shot graphs, you can add all your FAQs to the Root node because the LLM does not require an ontology.</li>
+<li>Default terms are not available in Few-Shot Knowledge Graphs. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.</li>
+<li>Path Level Synonyms are only supported for Mandatory Terms and for Tags.</li></ul></p>
+</div>
