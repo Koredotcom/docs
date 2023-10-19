@@ -8,7 +8,7 @@ The XO Platform allows you to import any VA with a file size up to 50MB. If you 
 
 ## Import
 
-<div class="admonition caution">
+<div class="admonition warning">
 <p class="admonition-title">Caution</p>
 <p>Importing a Knowledge Graph replaces the existing one. Please proceed with caution and follow the steps below carefully.</p>
 </div>
