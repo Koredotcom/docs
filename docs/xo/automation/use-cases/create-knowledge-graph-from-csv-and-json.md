@@ -23,7 +23,7 @@ Follow the instructions below to build your Knowledge Graph in a spreadsheet.
 5. After backup, click **Proceed**.
 6. On the corresponding dialog box, click **Sample CSV**. The CSV file is downloaded to your local computer.
 
-![download sample csv](./images/download-sample-csv.png "download sample csv")
+![download sample csv](../use-cases/images/download-sample-csv.png "download sample csv")
 
 ### Build the Knowledge Graph
 
@@ -44,7 +44,7 @@ Moving forward, this article discusses detailed information for each section and
 ### **FAQ**
 
 This contains the actual questions and answers along with the alternate questions, answers, and extended answers.
-![FAQ Sample](./images/faq-sample.png "FAQ Sample")
+![FAQ Sample](../use-cases/images/faq-sample.png "FAQ Sample")
 
 The following column details can be used:
 
@@ -69,7 +69,7 @@ The following column details can be used:
 ### **Nodes**
 
 This section includes settings for both nodes and tags.
-![Nodes and Tags Settings](./images/nodes-and-tags-settings.png "[Nodes and Tags Settings")
+![Nodes and Tags Settings](../use-cases/images/nodes-and-tags-settings.png "[Nodes and Tags Settings")
 
 > **Key Terms and Definitions**
 >
@@ -84,7 +84,7 @@ This section includes settings for both nodes and tags.
 ### **Synonyms**
 
 Use this section to enter the synonyms as key-value pairs.
-![enter synonyms](./images/enter-synonyms.png "enter synonyms")
+![enter synonyms](../use-cases/images/enter-synonyms.png "enter synonyms")
 
 * **Synonyms**: Mandatory entry in the header, must be blank in the following rows.
 * **Phrase**: for which the synonym needs to be entered.
@@ -101,13 +101,13 @@ Use of synonyms in KG term identification can be enabled using the following:
 * **KG Params**: mandatory entry in the header, must be blank in the following rows.
 * **lang**: VA language code. For example, “en” for English.
 * **stopwords**: Comma-separated values.
-![kg params](./images/kg-params.png "kg params")
+![kg params](../use-cases/images/kg-params.png "kg params")
 
 ### **Traits**
 
 Trait related information can be specified as follows:
 
-![alt_text](./images/trait-related-information.png "image_tooltip")
+![alt_text](../use-cases/images/trait-related-information.png "image_tooltip")
 
 * **Traits**: Mandatory entry in the header, must be blank in the following rows.
 * **lang**: VA language code. For example, “en” for English.
@@ -140,7 +140,7 @@ Follow the instructions below to build your Knowledge Graph using JSON:
 
 ### JSON Reference
 
-![json reference](./images/json-reference-code.png "json reference")
+![json reference](../use-cases/images/json-reference-code.png "json reference")
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">

@@ -17,17 +17,17 @@ To import a Knowledge Graph, follow the steps below:
 1. Open the VA to import the KG and select the **Build** tab.
 2. On the left pane, click **Conversational Skills** > **Knowledge Graph**.
 3. You can find the **Import** option on the respective Knowledge Graph.
-![Import Knowledge Graph](./images/import-knowledge-graph.png "Import Knowledge Graph")
+![Import Knowledge Graph](../use-cases/images/import-knowledge-graph.png "Import Knowledge Graph")
 
 4. Click **Import**.
 5. In the **Import** dialog, do one of the following based on the scenario:
     * For a new Knowledge Graph, click **Proceed**.
     * For an existing Knowledge Graph, take a backup CSV or JSON file, and then click **Proceed**.
-    ![backup knowledge graph](./images/backup-knowledge-graph.png "backup knowledge graph")
+    ![backup knowledge graph](../use-cases/images/backup-knowledge-graph.png "backup knowledge graph")
 
 6. Drag and drop the file to the **Import** window or click **Browse** to locate the file.
 7. Click **Next** to begin the import.
-![click to begin import](./images/click-begin-import.png "click to begin import")
+![click to begin import](../use-cases/images/click-begin-import.png "click to begin import")
 
 After the import is complete, the success message appears in a dialog box. 
 8. Click **Done**.
@@ -40,12 +40,12 @@ To export a Knowledge Graph, follow the below steps:
 
 1. On the left pane, click **Conversational Skills** > **Knowledge Graph**.
 2. You can find the **Export** option on the respective Knowledge Graph.
-![Export Knowledge Graph](./images/export-knowledge-graph.png "image_tooltip")
+![Export Knowledge Graph](../use-cases/images/export-knowledge-graph.png "image_tooltip")
 
 3. Based on the preferred format: click **Export JSON** or **Export CSV**.
 
 > **<p style="color:#1338BE">NOTE</p>** Please read the warning message shown below before clicking **Confirm**. To learn more about caching challenges and strategies, click [here](https://aws.amazon.com/builders-library/caching-challenges-and-strategies/#:~:text=Caches%20are%20also%20susceptible%20to%20poisoning%20attacks%2C%20in%20which%20a,will%20see%20the%20malicious%20value).
 
-![export caching message](./images/export-caching-notice-message.png "export caching message")
+![export caching message](../use-cases/images/export-caching-notice-message.png "export caching message")
 
 When these steps are completed, the Knowledge Graph file is downloaded to your machine.

@@ -17,7 +17,7 @@ This article gives an overview on the working and implementation of **Panels & W
     * Upcoming Trips
     * Completed Bookings
     * Canceled Bookings
-    ![access digital views](./images/access-digitalviews.png "access digital views")
+    ![access digital views](../use-cases/images/access-digitalviews.png "access digital views")
 
 You can access Digital Views by selecting the VA you want to work with then going to **Build > Digital Skills > Digital Views**. 
 
@@ -51,10 +51,10 @@ Widgets are individual components that can communicate with the VA for presentin
 To configure widgets, follow the below steps:
 
 1. Click **Create Widget** to create a widget.
-![create widget](./images/create-widget.png "create widget")
+![create widget](../use-cases/images/create-widget.png "create widget")
 
 2. The New Widget dialog opens.
-![new widget dialog](./images/new-widget-dialog.png "new widget dialog")
+![new widget dialog](../use-cases/images/new-widget-dialog.png "new widget dialog")
 
 3. On the **New Widget** window, enter the following details:
     * **Name** of the widget
@@ -80,27 +80,27 @@ You can use the icon next to the Dialog Task to open the Dialog Task for checkin
 Any entities used by the selected Dialog Task need to be pre-populated with values by mapping **Entity Name** with **Entity Values**.
 
 If the selected Dialog Task has any **Authorization Profile** defined, it is displayed here.
-![dialog task source](./images/dialog-task-source.png "dialog task source")
+![dialog task source](../use-cases/images/dialog-task-source.png "dialog task source")
 
 ### JSON
 
 When selecting JSON as the source, you will be presented with a Javascript editor, where you can add your code, as shown below:
-![json file upload](./images/json-source-file.png "json file upload")
+![json file upload](../use-cases/images/json-source-file.png "json file upload")
 
 ### Digital Form
 
 When selecting **Digital Form** as a widget source, you  can select the Digital Form, and the Dialog Task to trigger on submission.
 
 > **<p style="color:#1338BE">NOTE</p>** A Digital Form can be used to define multiple Widgets and can also be added to multiple Panels. However, it will be associated with the same Dialog Task across all Widgets and Panels.
-![digital form as source](./images/digital-form-as-source.png "digital form as source")
+![digital form as source](../use-cases/images/digital-form-as-source.png "digital form as source")
 
 ### Edit, Run & Preview a Widget
 
 After you save, the widget will be **In Development **state. You can **Edit** or **Delete** the widget.
-![widget saved](./images/widget-saved.png "widget saved")
+![widget saved](../use-cases/images/widget-saved.png "widget saved")
 
 When you select **Edit** widget, apart from being able to modify any of the above fields, you will have the option to **Run & Preview** the widget. You can save the preview as the thumbnail display for the widget.
-![widget preview](./images/run-widget-preview.png "widget preview")
+![widget preview](../use-cases/images/run-widget-preview.png "widget preview")
 
 ## Configure Panels
 Panel refers to containers that hold one or more widgets. You can add an existing widget to the panel or create new widgets within it.
@@ -115,17 +115,17 @@ To create a panel, follow the steps below:
     * **Display Name** for the Panel.
     * **Panel Icon** to display in the chat window (URL to the location).
     * **Save** the Panel.
-    ![create new digital view panel](./images/create-new-digital-view-panel.png "create new digital view panel")
+    ![create new digital view panel](../use-cases/images/create-new-digital-view-panel.png "create new digital view panel")
 
 3. After you save, the panel will be **In Development** and will be displayed on your Digital Views screen. 
 
 ### Add Widgets
 
 1. Click **Add Widget** to add widgets to the panel.
-![add widget to panel](./images/widget-added-to-panel.png "add widget to panel")
+![add widget to panel](../use-cases/images/widget-added-to-panel.png "add widget to panel")
 
 2. Select widgets from the drop-down list and click **Add**. You can add multiple widgets to the same panel.
-![select widgets from dropdown](./images/select-widgets-from-dropdown-list.png "select widgets from dropdown")
+![select widgets from dropdown](../use-cases/images/select-widgets-from-dropdown-list.png "select widgets from dropdown")
 
 ### Panel Options
 
@@ -137,7 +137,7 @@ You have the following options for a given panel:
 * **Panel Management** to add existing forms/widgets, or remove already added forms/widgets from the panel.
 * **Test** the individual panel – this opens the **Talk to Bot** window along with the panel listing with the current panel active and data presented. You can interact with the VA and test the panel.
 * **Delete** the Panel.
-![panel options for digital views](./images/panel-options-for-digital-views.png "panel options for digital views")
+![panel options for digital views](../use-cases/images/panel-options-for-digital-views.png "panel options for digital views")
 
 ## Publish
 
@@ -145,7 +145,7 @@ When you publish your Virtual Assistant,  please ensure that the panels and widg
 
 [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/) about publishing a Virtual Assistant.
 
-![publish digital view](./images/publish-digitalview.png "publish digital view")
+![publish digital view](../use-cases/images/publish-digitalview.png "publish digital view")
 
 
 ## Host

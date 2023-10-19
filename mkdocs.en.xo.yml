@@ -141,7 +141,7 @@ nav:
         - Alert Tasks: getting-started.md
         - Small Talk: getting-started.md
         - Digital Skills: getting-started.md
-        - Feedback Survey: feedback-survey.md
+        - Feedback Survey: automation/use-cases/feedback-survey.md
       - Training: 
         - Intents: getting-started.md 
         - Entities: getting-started.md 

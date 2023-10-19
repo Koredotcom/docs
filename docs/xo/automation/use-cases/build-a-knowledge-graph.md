@@ -10,7 +10,7 @@ To open the Knowledge Graph builder, follow the below steps:
 2. Select the **Build** tab from the top menu.
 3. On the left menu, select **Conversation Skills** and click **Knowledge Graph**.
 4. You will notice that there is already a Knowledge Graph with the name of your assistant.
-![access existing knowledge graph](./images/access-existing-knowledge-graph.png "access existing knowledge graph")
+![access existing knowledge graph](../use-cases/images/access-existing-knowledge-graph.png "access existing knowledge graph")
 
 > **<p style="color:#1338BE">NOTE</p>**
 All features explained here are supported by the Few-Shot Knowledge Graph, except for the following:
@@ -40,11 +40,11 @@ To create nodes, follow the below steps:
 Follow the same process to create multiple node levels. 
 
 The demo below shows you how to create nodes.
-![add kg node](./images/add-kg-node.gif "add kg node")
+![add kg node](../use-cases/images/add-kg-node.gif "add kg node")
 
 You can delete nodes by clicking the **Delete** icon on the right.
 
-![delete kg node](./images/delete-kg-node.png "delete kg node")
+![delete kg node](../use-cases/images/delete-kg-node.png "delete kg node")
 
 ## Build the Knowledge Graph
 
@@ -68,7 +68,7 @@ To leverage the capabilities of the Knowledge Graph and dialog tasks, and handle
 5. You can also add a **Reference Id**. This field can be used to add a reference to any external content used as a source for this FAQ.
 6. Click **Save**.
 
-![save kg task](./images/save-task.png "save kg task")
+![save kg task](../use-cases/images/save-task.png "save kg task")
 
 ### Manage Traits, Synonyms, and Stop Words
 
@@ -78,7 +78,7 @@ You can improve the performance of your Knowledge Graph by adding tags, synonyms
 
 **Manage Variable Namespaces** section (introduced in v8.0) allows you to associate the Variable Namespaces to use with this Knowledge Graph. This option is visible only when the Variable Namespace is enabled for the VA. For more information, refer to [Managing Namespace](https://developer.kore.ai/docs/bots/bot-settings/bot-management/managing-namespace/).
 
-![variable namespaces select](./images/variable-namespaces-select.png "variable namespaces select")
+![variable namespaces select](../use-cases/images/variable-namespaces-select.png "variable namespaces select")
 
 ## Update a Knowledge Graph
 
@@ -90,7 +90,7 @@ By default, intents added to a child node are visible for all its parent nodes i
 
 If you do not want the intents from child nodes to be seen beyond a certain parent node, click the following icon on the **Questions** pane of the selected parent.
 
-![exclude child terms](./images/exclude-child-terms.png "exclude child terms")
+![exclude child terms](../use-cases/images/exclude-child-terms.png "exclude child terms")
 
 The intents from all its child nodes are visible to the selected parent node and not to all its parent nodes.
 
@@ -104,7 +104,7 @@ You can move one or more Intent and Response sets between nodes in your Knowledg
 
 The demo below shows you how this works.
 
-![move node](./images/move-to-new-node.gif "move node")
+![move node](../use-cases/images/move-to-new-node.gif "move node")
 
 ### Edit and Delete Terms
 
@@ -112,7 +112,7 @@ The demo below shows you how this works.
 2. Click the **Settings** (gear) icon. The settings window opens.
 3. You can change the name of the term, set the term types, set the term status, add traits, add or remove synonyms, and manage context. [Learn more](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/). 
 
-![term settings](./images/term-settings.png "term settings")
+![term settings](../use-cases/images/term-settings.png "term settings")
 
 To delete a term, follow the steps below:
 
@@ -126,7 +126,7 @@ To delete a term, follow the steps below:
 > **<p style="color:#1338BE">NOTE</p>**
 >
 > * If the term has child nodes, all those nodes will be deleted.
-![child node deleted](./images/child-node-deleted.png "child node deleted")
+![child node deleted](../use-cases/images/child-node-deleted.png "child node deleted")
 > * If your VA is already published, you must train it  for the deletions to be effective.
 > * If you have deleted the first level term you can selectively train to remove the related terms from the published copy.
 > * If you have deleted, say, the nth level child term, then you need to select the entire parent term for training.
@@ -138,11 +138,11 @@ To delete a term, follow the steps below:
 3. Hover over the intent or response to edit it and click the **Edit** icon.
 4. Make changes to the intent or response and click **Save**.
 5. You can delete the intent using the **Delete** icon.
-![delete faq intent](./images/delete-faq-intent.png "delete faq intent")
+![delete faq intent](../use-cases/images/delete-faq-intent.png "delete faq intent")
 
 6. Selecting multiple intents lets you delete them in bulk.
 
-![bulk delete intents](./images/delete-selected-intents.png "bulk delete intents")
+![bulk delete intents](../use-cases/images/delete-selected-intents.png "bulk delete intents")
 
 ## Improve Performance
 

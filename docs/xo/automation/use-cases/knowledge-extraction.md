@@ -5,7 +5,7 @@ The Knowledge Graph Extraction service enables you to effortlessly move your ent
 The feature supports the extraction of knowledge from unstructured content such as web pages and PDF documents, and structured content like CSV files.
 
 After completing the extraction, you can edit the question and answers using an easy-to-use interface and organize them under the relevant Knowledge Graph nodes.
-![knowledge extraction](./images/knowledge-extraction.png "knowledge extraction")
+![knowledge extraction](../use-cases/images/knowledge-extraction.png "knowledge extraction")
 
 ## The Extraction Process
 
@@ -29,7 +29,7 @@ The Knowledge Extractor allows you to add the extracted content to the Knowledge
  4. Under the **Extracts** section, click **Extract from URL**.
 5. Enter a **Name** for the extraction.
 6. Enter the **URL** of the page, and then click **Proceed**.
-![extract url](./images/extract-url.png "extract url")
+![extract url](../use-cases/images/extract-url.png "extract url")
 7. Once the extraction is completed successfully, a success status page appears.
 8. **Review & Add** the relevant questions to your Knowledge Graph,
 
@@ -44,7 +44,7 @@ To extract content from a file, please follow the steps below. For file format d
 3. From the left menu, click **Conversational Skills** > **Knowledge Graph**.
 4. Under the **Extracts** section, click **Extract from URL**.
 5. Click **Browse** to locate the file (PDF or CSV).
-![locate file](./images/drag-and-drop-file.png "locate file")
+![locate file](../use-cases/images/drag-and-drop-file.png "locate file")
 6. Click **Proceed**.
 7. For PDF files you have an option to annotate the document before extraction.
 8. After the extraction is completed successfully, a success status page is displayed.
@@ -61,7 +61,7 @@ You might have all the FAQs related to your business in a PDF file but not in th
 
 1. Select a new or previously extracted PDF file. Note that you can use a previously extracted file provided no questions from that file are added to the Knowledge Graph.
 2. Click **Annotate & Extract** to make annotation on a newly uploaded file.
-![annotate and extract](<./images/annotate-and extract-pdf.png> "annotate and extract")
+![annotate and extract](../use-cases/images/annotate-and%20extract-pdf.png "annotate and extract")
 3. The PDF document is loaded into the Annotation Tool allowing you to annotate the various sections in the document.
 4. To annotate, select the text and tag it as follows:
     * **Heading** tags are used to identify questions. Headings are used to train the model to identify the questions and the content between two consecutive headings is treated as the answer for the preceding heading.
@@ -75,11 +75,11 @@ You might have all the FAQs related to your business in a PDF file but not in th
     * **Document Info** – Name, Size, and the Number of Pages of the document.
     * **Annotation Summary** – Number of annotations marked for each category for the particular page and entire document.
 7. After you annotate, you can **Extract** the document.
-![annotate and extract](./images/annotate-and-extract-demo.gif "annotate and extract")
+![annotate and extract](../use-cases/images/annotate-and-extract-demo.gif "annotate and extract")
 8. Once the content is extracted, you will see a message showing you how many questions have been found and allowing you to review and add them to the Knowledge Graph.
-![extraction complete](./images/extraction-complete.png "extraction complete")
+![extraction complete](../use-cases/images/extraction-complete.png "extraction complete")
 9. Choosing to **Review** the questions will take you to a screen where you can review extracted FAQs. This screen splits your FAQs into: **All Questions**, **Added** to KG and **Not Added** to the KG. 
-![review faqs](./images/review-faqs.png "review faqs")
+![review faqs](../use-cases/images/review-faqs.png "review faqs")
 10. The **All Questions** tab gives the questions extracted by the KG Engine as per the annotations and training. Click the name of a question or check the checkbox to select multiple ones to add to the Knowledge Graph then drag and drop them to the appropriate node..
 11. If you are not satisfied with the extracted content, you can always re-annotate the document. Just click on the **Annotate** tab to return to the annotation tool.
 12. The same procedure mentioned above is followed for re-annotation. The following points need to be kept in mind for re-annotation:
@@ -92,10 +92,10 @@ You might have all the FAQs related to your business in a PDF file but not in th
 2. Select the **Build** top menu item.
 3. From the left pane, click **Conversational Skills** > **Knowledge Graph**.
 4. The **Knowledge Extraction** section displays the list of all extractions.
-![knowledge extraction section](./images/knowledge-extracton-section.png "knowledge extraction section")
+![knowledge extraction section](../use-cases/images/knowledge-extracton-section.png "knowledge extraction section")
 5. Click the name of a successful extract you want to edit.
 6. Hover over the question-answer pair to modify it and click the **Edit** icon.
-![edit question answer pair](./images/edit-question-answer-pair.png "edit question answer pair")
+![edit question answer pair](../use-cases/images/edit-question-answer-pair.png "edit question answer pair")
 7. Make the necessary changes and click **Save**.
 
 ### Add the Extracted Content to the Knowledge Graph
@@ -124,7 +124,7 @@ To add the content from the KG, follow the steps below:
 5. Click **Add from Extraction**. It opens the list of successful and failed extractions.
 6. Click the name of a successful extract you want to move.
 7. Select the checkboxes next to the question-answer pairs that you want to move and then click **Add**.
-![drag question answer pair to kg](./images/drag-question-answer-pair-to-kg.gif "drag question answer pair to kg")
+![drag question answer pair to kg](../use-cases/images/drag-question-answer-pair-to-kg.gif "drag question answer pair to kg")
 
 > **<p style="color:#1338BE">NOTE</p>** Once you move a question-answer pair from the extract to the knowledge graph, you cannot move it again. The platform shows a duplicate error when you try to move a question from the extract that is already present in the collection. You can make any changes to the moved content from the knowledge graph. However, if the question is modified or removed from the knowledge graph, then the developer is allowed to add it again.
 
