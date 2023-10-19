@@ -1,6 +1,6 @@
-# **Knowledge Extraction**
+# **Knowledge Graph Extraction**
 
-The Knowledge Graph Extraction service enables you to effortlessly move your enterprise’s Frequently Asked Questions (FAQ) content into a Knowledge Graph that trains your assistant based on these questions.
+The **Knowledge Graph Extraction** service enables you to effortlessly move your enterprise’s Frequently Asked Questions (FAQ) content into a Knowledge Graph that trains your assistant based on these questions.
 
 The feature supports the extraction of knowledge from unstructured content such as web pages and PDF documents, and structured content like CSV files.
 
@@ -141,7 +141,8 @@ To add the content from the KG, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Once you move a question-answer pair from the extract to the knowledge graph, you cannot move it again. The platform shows a duplicate error when you try to move a question from the extract that is already present in the collection. You can make any changes to the moved content from the knowledge graph. However, if the question is modified or removed from the knowledge graph, then the developer is allowed to add it again.</p>
+<p>Once you move a question-answer pair from the extract to the knowledge graph, you cannot move it again. The platform shows a duplicate error when you try to move a question from the extract that is already present in the collection.</p>
+<p>You can make any changes to the moved content from the knowledge graph. However, if the question is modified or removed from the knowledge graph, then the developer is allowed to add it again.</p>
 </div>
 
 ### Supported Formats and Requirements

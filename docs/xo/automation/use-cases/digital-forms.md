@@ -272,7 +272,7 @@ When exceptions are encountered during the dialog execution with a Form Node, th
    <td>The Virtual Assistant asks if the user wants to switch to a new task.
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>The user tries to continue the conversation (in the chat window) without submitting the form responses.
    </td>
    <td>The Virtual Assistant asks if the user wants to switch to a new task.
@@ -286,7 +286,7 @@ When exceptions are encountered during the dialog execution with a Form Node, th
 Otherwise, the ongoing task goes on, and based on the configuration, the user is taken to the next step of the task.
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#FAFAFA">
    <td>The user tries to relaunch the form while the form is already open.
    </td>
    <td>The form link will not open the form and a message will be displayed saying that the form link is no longer valid.
@@ -491,7 +491,7 @@ The following are the properties that can be set for each of the components.
    <td>This is the text which appears against the component for the end-users.
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Name</strong>
    </td>
    <td>This is the reference name that can be used for referencing the component in the other components of the form and form level operations
@@ -503,7 +503,7 @@ The following are the properties that can be set for each of the components.
    <td>Help information about a field to be displayed to the end-user.
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#FAFAFA">
    <td><strong>Placeholder Text</strong>
    </td>
    <td>A prompt message for the end-user
@@ -528,7 +528,7 @@ The following are the properties that can be set for each of the components.
 </ul>
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#FAFAFA">
    <td><strong>Button Action</strong>
    </td>
    <td>For button component, can be:
@@ -549,7 +549,7 @@ The following are the properties that can be set for each of the components.
    <td>To mark the component value is not changeable
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#FAFAFA">
    <td><strong>Required</strong>
    </td>
    <td>To define whether input for this field is necessary or optional for the end-user entry.
@@ -570,7 +570,7 @@ The following are the properties that can be set for each of the components.
 </ul>
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#FAFAFA">
    <td><strong>Date Format</strong>
    </td>
    <td>Time format to be presented to the end-user can be
@@ -593,7 +593,7 @@ The following are the properties that can be set for each of the components.
    <td>To enable the end-user to enter Time along with Date
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#FAFAFA">
    <td><strong>Time Format</strong>
 <p>
 Used in conjunction with the above Time property
@@ -607,7 +607,7 @@ Used in conjunction with the above Time property
    <td>Choose the desired default country code that should be shown to the end-user. Default is United States +1
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#FAFAFA">
    <td><strong>Secure Field Data</strong>
    </td>
    <td>To Secure the user information collected by this field.
@@ -630,7 +630,7 @@ Available only when Secure Field Data is enabled
 </ul>
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#FAFAFA">
    <td><strong>Mask Input</strong>
 <p>
 Available only when Secure Field Data is enabled
@@ -644,7 +644,7 @@ Available only when Secure Field Data is enabled
    <td>Choose the number of columns to present the checkbox values in the grid view. You can select a minimum of 1 and a maximum of 4 columns, with 4 columns being the default selection.
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#ECECEC">
    <td colspan="2" ><strong>Data Settings</strong>
    </td>
   </tr>
@@ -654,7 +654,7 @@ Available only when Secure Field Data is enabled
    <td>In case the component needs to be pre-populated with a default value
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#FAFAFA">
    <td><strong>Values</strong>
    </td>
    <td>For Radio Button, Dropdown and Checkbox, add values to be given for selection by the end-user. You can mark one value as a default value
@@ -666,7 +666,7 @@ Available only when Secure Field Data is enabled
    <td>For Dropdown, if the user can select multiple values.
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#ECECEC">
    <td colspan="2" ><strong>Validation Settings</strong>
    </td>
   </tr>
@@ -676,7 +676,7 @@ Available only when Secure Field Data is enabled
    <td>To be displayed in case user entry fails validation
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#FAFAFA">
    <td><strong>Validate</strong>
    </td>
    <td>To define when the validations defined for a field are to be checked. Options are:
@@ -707,13 +707,13 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
 </ul>
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#FAFAFA">
    <td><strong>Custom Error Message</strong>
    </td>
    <td>This would be displayed when a particular validation fails
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#ECECEC">
    <td colspan="2" ><strong>Visibility Settings</strong>
    </td>
   </tr>
@@ -750,7 +750,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
 </ul>
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#ECECEC">
    <td colspan="2" ><strong>Auto Populate</strong>
    </td>
   </tr>
@@ -816,7 +816,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td><strong>RANGE SLIDER</strong>
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#ECECEC">
    <td colspan="12" ><strong>General Settings</strong>
    </td>
    <td>
@@ -854,7 +854,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Yes
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Name</strong>
    </td>
    <td>Yes
@@ -914,7 +914,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Yes
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Placeholder Text</strong>
    </td>
    <td>Yes
@@ -974,7 +974,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Yes
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Required</strong>
    </td>
    <td>Yes
@@ -1004,7 +1004,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Yes
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#ECECEC">
    <td colspan="12" ><strong>Tool-tip</strong>
    </td>
    <td>
@@ -1042,7 +1042,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Yes
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Tool-tip Type</strong>
    </td>
    <td>Yes
@@ -1102,7 +1102,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Yes
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Date Format</strong>
    </td>
    <td>No
@@ -1164,7 +1164,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>No
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Default Country Code</strong>
    </td>
    <td>No
@@ -1224,7 +1224,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>No
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Secure Data</strong>
    </td>
    <td>Yes
@@ -1284,7 +1284,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Yes
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Mask Input</strong>
    </td>
    <td>Yes
@@ -1314,7 +1314,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>No
    </td>
   </tr>
-  <tr>
+   <tr bgcolor="#ECECEC">
    <td colspan="12" ><strong>Data Settings</strong>
    </td>
    <td>
@@ -1352,7 +1352,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>No
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Default Value</strong>
    </td>
    <td>Yes
@@ -1450,7 +1450,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Yes
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Auto Populate Settings</strong>
    </td>
    <td>Yes
@@ -1480,7 +1480,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Yes
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#ECECEC">
    <td colspan="12" ><strong>Visibility Settings</strong>
    </td>
    <td>
@@ -1518,7 +1518,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Yes
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Visibility Settings</strong>
    </td>
    <td>Yes
@@ -1548,7 +1548,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Yes
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#ECECEC">
    <td colspan="12" ><strong>Validations</strong>
    </td>
    <td>
@@ -1586,7 +1586,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Yes
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Validate</strong>
    </td>
    <td>Yes
@@ -1646,7 +1646,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Yes
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Not equal to</strong>
    </td>
    <td>Yes
@@ -1706,7 +1706,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>No
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Does not contain</strong>
    </td>
    <td>Yes
@@ -1766,7 +1766,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>No
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Max Length</strong>
    </td>
    <td>Yes
@@ -1826,7 +1826,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>No
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Part of</strong>
    </td>
    <td>Yes
@@ -1886,7 +1886,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>No
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Greater than</strong>
    </td>
    <td>No
@@ -1946,7 +1946,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Yes
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Greater than or equal to</strong>
    </td>
    <td>No
@@ -2020,7 +2020,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    </td>
    <td><strong>PRO-TIP</strong></td>
    </tr>
-  <tr>
+  <tr bgcolor="#ECECEC">
    <td colspan="5" ><strong>General Settings</strong>
    </td>
   </tr>
@@ -2034,7 +2034,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Yes
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Name</strong>
    </td>
    <td>Yes
@@ -2054,7 +2054,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Yes
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Placeholder Text</strong>
    </td>
    <td>No
@@ -2074,7 +2074,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>No
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Error Message</strong>
    </td>
    <td>Yes
@@ -2094,7 +2094,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>No
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Validate</strong>
    </td>
    <td>Yes
@@ -2114,7 +2114,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>No
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Action Type</strong> (Submit, Reset, Clear)
    </td>
    <td>Yes
@@ -2138,7 +2138,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>No
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Default Value</strong>
    </td>
    <td>No
@@ -2148,7 +2148,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>No
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#ECECEC">
    <td colspan="5" ><strong>Auto Fill</strong>
    </td>
   </tr>
@@ -2162,7 +2162,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>No
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Auto-Populate Settings</strong>
    </td>
    <td>No
@@ -2172,7 +2172,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>No
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#ECECEC">
    <td colspan="5" ><strong>Visibility Settings</strong>
    </td>
   </tr>
@@ -2186,7 +2186,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Yes
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Visibility Settings</strong>
    </td>
    <td>Yes
@@ -2215,7 +2215,7 @@ The following mapping gives the type of entities included in the sub-dialog when
    <td>Name
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Display Name
    </td>
    <td>Display Name
@@ -2227,7 +2227,7 @@ The following mapping gives the type of entities included in the sub-dialog when
    <td>Entity Prompt
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Error Message
    </td>
    <td>Error Prompt
@@ -2251,7 +2251,7 @@ The following mapping gives the type of entities included in the sub-dialog when
    <td>String
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Text Area
    </td>
    <td>Description
@@ -2263,7 +2263,7 @@ The following mapping gives the type of entities included in the sub-dialog when
    <td>Number
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Radio Button
    </td>
    <td>LoI (Enum) with each of the options in the radio button group copied as list items
@@ -2277,7 +2277,7 @@ The following mapping gives the type of entities included in the sub-dialog when
 Multi-select would be enabled based on the ‘is multi-select’ option of the Form Component
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Checkbox
    </td>
    <td>LoI (Enum) with each of the options in the checkbox group copied as list items
@@ -2291,7 +2291,7 @@ Multi-select is enabled by default
    <td>Date
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Phone Number
    </td>
    <td>Phone Number
@@ -2303,7 +2303,7 @@ Multi-select is enabled by default
    <td>Email
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Address
    </td>
    <td>Address
@@ -2315,19 +2315,13 @@ Multi-select is enabled by default
    <td>URL
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Toggle
    </td>
    <td>LoI (Enum) with each of the options in the toggle copied as list items
    </td>
   </tr>
-  <tr>
-   <td>Range Slider
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
+  <tr bgcolor="#ECECEC">
    <td colspan="2" ><strong>Advanced</strong>
    </td>
   </tr>
@@ -2337,7 +2331,7 @@ Multi-select is enabled by default
    <td>Not Applicable
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Label
    </td>
    <td>Not Applicable
@@ -2349,7 +2343,7 @@ Multi-select is enabled by default
    <td>Not Applicable
    </td>
   </tr>
-  <tr>
+  <<tr bgcolor="#FAFAFA">
    <td>Note
    </td>
    <td>Not Applicable
@@ -2374,7 +2368,7 @@ The following mapping gives the context object to capture the component value al
    <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Text Area
    </td>
    <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
@@ -2386,7 +2380,7 @@ The following mapping gives the context object to capture the component value al
    <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Radio Button
    </td>
    <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
@@ -2398,7 +2392,7 @@ The following mapping gives the context object to capture the component value al
    <td><code>context.forms.&lt;form_name>.&lt;component_name>[&lt;index>]</code>
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Checkbox
    </td>
    <td><code>context.forms.&lt;form_name>.&lt;component_name>[&lt;index>]</code>
@@ -2412,7 +2406,7 @@ The following mapping gives the context object to capture the component value al
 In mm/dd/yyyy format
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Date & Time
    </td>
    <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
@@ -2428,7 +2422,7 @@ In mm/dd/yyyy hh:mm AM/PM format
 prefixed with the area code of the country selected by the user
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Email
    </td>
    <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
@@ -2440,7 +2434,7 @@ prefixed with the area code of the country selected by the user
    <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>URL
    </td>
    <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
@@ -2454,7 +2448,7 @@ prefixed with the area code of the country selected by the user
 Yes/No values
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Range Slider
    </td>
    <td><code>context.forms.&lt;form_name>.&lt;component_name></code>

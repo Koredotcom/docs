@@ -337,7 +337,7 @@ Once you have made changes to the Small Talk, it needs to be trained for the VA 
 ![automatic training](../use-cases/images/automatic-training.png "automatic training")
 
 <div class="admonition note">
-<p class="admonition-title">Important</p>
+<p class="admonition-title">Key Considerations</p>
 <p><ul><li>Only three levels of child nodes are allowed in Small talk. The child questions are identified only if the corresponding parent level question was answered in the previous volley.</li>
 <li>The questions are evaluated in the order in which they are added to a group. It is advisable to add generic small talk at the end and specific small talk at the beginning (For example, how is your day today? must be added first and then followed by how are you). You can re-order the primary questions after adding them.</li>
 <li>Groups are also evaluated in the order in which they are added.</li>
@@ -345,9 +345,11 @@ Once you have made changes to the Small Talk, it needs to be trained for the VA 
 <li>Intents and Knowledge Collection will take precedence over Small Talk i.e. when Intents (or FAQs) and Small Talk are detected, preference is given to Intents (or FAQs).</li>
 <li>Any Small Talk identified is displayed after Ranking & Resolver.</li>
 <li>Small talk is language-specific. If your assistant is multilingual, then you can design Small Talk in each of the enabled languages.</li>
-<li>Interruption Behavior for Small Talk is handled using the following options from Build > Intelligence > Manage Interruptions > Interruption Behavior for Small Talk:</li>
+<li>Interruption Behavior for Small Talk is handled using the following options under <b>Build</b> > <b>Intelligence</b> > <b>Manage Interruptions</b> > <b>Interruption Behavior for Small Talk</b>:</li>
 <ul><li>Respond to Small Talk and resume the on-hold task – this is the default setting.</li>
-<li>Execute the Small Talk using *Hold & Resume* settings.
-![manage interruptions behavior](../use-cases/images/manage-interruptions-behaviour.png "manage interruptions behavior")</li></ul>
+<li>Execute the Small Talk using <b><i>Hold & Resume</i></b> settings.
+</li></ul>
 </ul></p>
 </div>
+
+![manage interruptions behavior](../use-cases/images/manage-interruptions-behaviour.png "manage interruptions behavior")
