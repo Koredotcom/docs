@@ -11,13 +11,14 @@ You can configure a Virtual Assistant to launch these surveys at a certain point
 > 3. You can leverage channel-specific configuration to modify the feedback prompts.
 > 4. Feedback flows are fully customizable.
 > 5. The Kore.ai XO Platform lets you configure feedback in two ways:
->   * Using the built-in flows to collect the feedback and the new service type called **feedback service** to submit the feedback to the bots platform.
->   * Collecting feedback from other sources that can be pushed to the platform as part of the conversation execution.
+> * Using the built-in flows to collect the feedback and the new service type called **feedback service** to submit the feedback to the bots platform.
+> * Collecting feedback from other sources that can be pushed to the platform as part of the conversation execution.
 > 6. Feedback Surveys get created as dialog tasks with a series of entities, service calls, and message notes. You have complete control of modifying the out-of-the-box messages, adding additional messages to specific channels, such as voice channels, and capturing the feedback on voice.
 > 7. You can use the automatic feedback template that the platform generates or build their flows and submit the feedback to the platform feedback service. Alternatively, it could be a hybrid approach where the feedback flow can emerge from or integrate with another flow.
 > 8. Once a customer responds to a Feedback Survey, the event displays on the chat transcript slider of the Conversations History Dashboard. [Learn more](https://developer.kore.ai/docs/bots/analyzing-your-bot/feedback-analytics/).
 > 9. Additionally, you can filter and analyze Conversations (with feedback survey enabled) based on the Feedback Type, Response, and Score using prebuilt and custom filters. [Learn more](https://developer.kore.ai/docs/bots/analyzing-your-bot/conversation-history-dashboard/#Prebuilt_Filters_for_Conversations_History).
 > 10. The feedback response from a customer is captured and pushed to the platform for further analysis in three ways:
+>
 >   * By creating a **Dialog** to capture feedback responses/scores and generate the required analytics to derive actionable insights on the **Feedback Analysis Dashboard**. [Learn more](https://developer.kore.ai/docs/bots/analyzing-your-bot/feedback-analytics/).
 >   * By pushing feedback data to the platform using the Public API. [Learn more](https://developer.kore.ai/docs/bots/api-guide/feedback-survey-api/).
 >    * By pushing feedback data via the Botkit. [Learn more](https://developer.kore.ai/docs/bots/sdks/using-the-botkit-sdk/#Feedback_Survey).
@@ -178,12 +179,10 @@ The **Primary Question** response options the customer will see are displayed be
 **Like/Dislike**
 
 ![like dislike survey](../usecases/images/like-dislike-survey.png "like dislike survey")
-
 > **<p style="color:#1338BE">NOTE</p>** The default response names provided for **CSAT** and the **Like/Dislike** types are editable; however, the scores set in the system cannot be changed for any survey type.
 
 3. To create your flow, select **Create survey without Dialog** and click **Next**.
 ![survey without dialog](../usecases/images/survey-without-dialog.png "survey without dialog")
-
 4. **Optional Step**: To capture additional details from the customer for a negative feedback, configure the **follow-up question** with the steps below:
 
     * Enable the **Follow-up Question** option (default setting).
@@ -197,15 +196,14 @@ The **Primary Question** response options the customer will see are displayed be
     
     * Either edit the default follow-up question in the text area provided for the **THEN** clause or keep it unchanged.
     ![edit default follow-up question](../usecases/images/edit-default-follow-up-question.png "edit default follow-up question")
-
 5. Modify the **Acknowledgement Message** in the text area or retain the default message to acknowledge the customer’s effort in taking the survey.
 ![modify acknowledgement message](../usecases/images/acknowledge-message-modify.png "modify acknowledgement message")
-
 6. Click **Next** to move to survey launch configuration.
 
 ### Step 3: Define Launch Configuration
 
 After defining the survey, you can choose how and when to launch the survey in one of the following ways with the **Launch Configuration**:
+
 * Associate the survey with the end-of-task (conversation) event.
 * Add the survey task as a sub-dialog to other primary tasks.
 
