@@ -132,7 +132,7 @@ To delete a term, follow the steps below:
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>If the term has child nodes, all those nodes will be deleted.</p>
+<p>If the term has child nodes, all those nodes will be deleted. A warning message like the one shown below is displayed before you confirm.</p>
 </div>
 
 ![child node deleted](../use-cases/images/child-node-deleted.png "child node deleted")

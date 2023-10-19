@@ -53,16 +53,20 @@ To create forms, follow the steps below:
 <p>During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.</p>
 </div>
 
-<ol start="5"><li>Turn on the **Description** toggle if you want to show a description of the form in the header.</li></ol>
+<ol start="5"><li>Turn on the <b>Description</b> toggle if you want to show a description of the form in the header.</li></ol>
 
 ![Description Toggle](../use-cases/images/description-toggle-turn-on.png "Description Toggle")
 
 <ol start="6"><li><b>Form Security</b> – Enable <b>Secure Form Data</b> to redact form data from the Bot Context, Debug Logs, Service Calls, Agent Transfer, and the Bot Kit.</li></ol>
 
 ![secure form data](../use-cases/images/secure-form-data.png "secure form data")
-While enabling, you can also choose whether to display the **Secure Form icon** to your end users. 
+
+<p>While enabling, you can also choose whether to display the <b>Secure Form icon</b> to your end users.</p>
+
 ![enable redact form data](../use-cases/images/enable-redact-form-data.png "enable redact form data")
-Once enabled, the Platform will replace the user input with a unique random system-generated alphanumeric value in all the modules. Also, the **Secure Form** icon and a **Tip** will be displayed, notifying the user that the form is secure.
+
+<p>Once enabled, the Platform will replace the user input with a unique random system-generated alphanumeric value in all the modules. Also, the <b>Secure Form</b> icon and a tip will be displayed, notifying the user that the form is secure.</p>
+
 ![secure form icon](../use-cases/images/secure-form-icon.png "secure form icon")
 
 <ol start="7"><li>Click <b>Save & Proceed</b>.</li></ol>
@@ -206,6 +210,7 @@ To invoke a form using Widgets and Panels, follow the below steps:
 4. **Add a Form** by selecting it from the drop-down list.
 5. Select the **Dialog to Invoke on Submit** from the drop-down list.
 6. Click **Save**.
+![invoke form in widget](../use-cases/images/invoke-form-in-widget.png "invoke form in widget")
 7. **Add the Widget** to an existing panel or create a new panel. 
 You can add a form directly to a panel, it creates a widget by default.
 8. You can **Test** the panel.
@@ -214,8 +219,6 @@ You can add a form directly to a panel, it creates a widget by default.
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>While a Digital Form is used to define multiple Widgets and also add to multiple panels, it will be associated with a single Dialog Task across all Widgets and Panels.</p></div>
-
-![invoke form in widget](../use-cases/images/invoke-form-in-widget.png "invoke form in widget")
 
 ## The User Experience
 When the end-user initiates the dialog and reaches the node connecting to the Form node, the following events take place. Depending upon the experience selected at design time and the channel of invocation, the flow is the following:
