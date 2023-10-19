@@ -33,7 +33,7 @@ For example, in a Travel Assistant, you might have a first-level node called *Re
 
 Any node at any level starting with the 2nd is called a **_Leaf Term/Node_**.
 
-> **Note**: 
+> **<p style="color:#1338BE">NOTE</p>**
 >
 > * This hierarchical organization of nodes is for your convenience to keep related questions together.
 > * The Knowledge Graph Engine does not consider any parent-child relation while evaluating the questions for a match.
@@ -72,7 +72,7 @@ A trait is a collection of typical end-user utterances that define the nature of
 
 A trait is applied to multiple terms across your Bot Ontology.
 
-> **Note**:
+> **<p style="color:#1338BE">NOTE</p>**
 >
 > * Traits also help you filter nodes based on associated user utterances. Thus, if the user types an utterance that is present in a trait, the assistant only searches the nodes to which the trait is applied. 
 > * If the utterance is present in any other node to which the trait is not applied, the node is ignored.
