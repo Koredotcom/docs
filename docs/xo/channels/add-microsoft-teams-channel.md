@@ -76,7 +76,7 @@ Configure the MS Teams credentials on the Kore.ai XO Platform to establish commu
 ![Single tenant app](./images/MS_Team9.png "Single tenant app")
 
 2. Click **Save**.
-3. Copy the **Webhook URL** from the tab and paste it in the **Messaging endpoint** field on the **Configurations **module in Azure bot.
+3. Copy the **Webhook URL** from the tab and paste it in the **Messaging endpoint** field on the **Configurations** module in Azure bot.
 4. Click **Apply** to save the entered value.
 5. Once the **Configuration** is completed, select the **Channels** option from the left menu and then select the **Microsoft Teams** channel.
 ![configure tenant](./images/MS_Team10.png "configure tenant")
