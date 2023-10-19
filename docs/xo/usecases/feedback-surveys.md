@@ -181,10 +181,12 @@ The **Primary Question** response options the customer will see are displayed be
 
 ![like dislike survey](../usecases/images/like-dislike-survey.png "like dislike survey")
 
-3. To create your flow, select **Create survey without Dialog** and click **Next**.
-![survey without dialog](../usecases/images/survey-without-dialog.png "survey without dialog")
+**Create the Survey Flow**
 
-4. **Optional Step**: To capture additional details from the customer for a negative feedback, configure the **follow-up question** with the steps below:
+To create your flow, follow the steps below:
+1. Select **Create survey without Dialog** and click **Next**.
+![survey without dialog](../usecases/images/survey-without-dialog.png "survey without dialog")
+2. **(Optional Step)**: To capture additional details from the customer for a negative feedback, configure the **follow-up question** with the steps below:
 
     * Enable the **Follow-up Question** option (default setting).
     ![enable follow-up](../usecases/images/follow-up-enable.png "enable follow-up")
@@ -195,9 +197,9 @@ The **Primary Question** response options the customer will see are displayed be
     * Either edit the default follow-up question in the text area provided for the **THEN** clause or keep it unchanged.
     ![edit default follow-up question](../usecases/images/edit-default-follow-up-question.png "edit default follow-up question")
 
-5. Modify the **Acknowledgement Message** in the text area or retain the default message to acknowledge the customer’s effort in taking the survey.
+3. Modify the **Acknowledgement Message** in the text area or retain the default message to acknowledge the customer’s effort in taking the survey.
 ![modify acknowledgement message](../usecases/images/acknowledge-message-modify.png "modify acknowledgement message")
-6. Click **Next** to move to survey launch configuration.
+4. Click **Next** to move to survey launch configuration.
 
 ### Step 3: Define Launch Configuration
 
