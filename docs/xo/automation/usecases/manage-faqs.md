@@ -20,7 +20,7 @@ To add an FAQ, follow the below steps:
 4. (Optional) Enter a **Display Name** to represent the FAQ to the end-users.
 5. In the **Add Question** field, enter the question that describes the user’s query.
 6. (Optional) If there are alternatives to the same question, add them in the **Add Alternate FAQ** field. Repeat the step for all the alternative questions you want to add.
-7. (Optional) Use patterns to define the FAQs. This can be done by preceding the pattern with || (two vertical bars) in the alternate question field. The Platform marks these as patterns and evaluates them accordingly ([see here for more on patterns](https://developer.kore.ai/docs/bots/how-tos/how-to-use-patterns-for-intents-entities/)).
+7. (Optional) Use patterns to define the FAQs. This can be done by preceding the pattern with || (two vertical bars) in the alternate question field. The Platform marks these as patterns and evaluates them accordingly. [Learn More](https://developer.kore.ai/docs/bots/how-tos/how-to-use-patterns-for-intents-entities/).
 8. (Optional) Add terms that enable the Knowledge Graph Engine to identify questions more effectively.
 9. (Optional) Enable or disable the **Intent Status** for the FAQ intents. The Knowledge Graph does not use the FAQs intents that are enabled. These intents do not participate in the intent recognition process during testing and end-user interaction.
 10. (Optional) Enable or disable the **Term Status**. The Knowledge Graph uses only the enabled terms. The disabled terms and all their FAQ intents do not participate in the intent recognition process during testing and end-user interaction.

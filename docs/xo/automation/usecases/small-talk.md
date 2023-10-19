@@ -177,9 +177,8 @@ On hovering over any Small Talk group, you have the option to:
 
 * **Delete** the group.
 * **Settings** that will allow you to:
-* Manage Variable Namespaces by associating a variable namespace to use with this Small Talk group. This option is visible only when the variable namespace is enabled for the VA. For more information, refer to [Managing Namespace. \
+* Manage Variable Namespaces by associating a variable namespace to use with this Small Talk group. This option is visible only when the variable namespace is enabled for the VA. For more information, refer to [Managing Namespace.
 ](https://developer.kore.ai/docs/bots/bot-settings/bot-management/managing-namespace/)
-
 ![Manage Variable Namespaces](../usecases/images/manage-variable-namespaces.png "Manage Variable Namespaces")
 
 ### Import Small Talk
@@ -190,7 +189,7 @@ If you have already had Small Talk for your company, you can import it using a J
 
 ![Import Smalltalk File](../usecases/images/import-smalltalk-file.png "Import Smalltalk File")
 
-* At this point you can download  a sample file to get the formatting details, if you need them. Once your import file is prepared, select it and click **Next**.  \
+* At this point you can download  a sample file to get the formatting details, if you need them. Once your import file is prepared, select it and click **Next**.  
 
 ![Drag and Drop Smalltalk File](../usecases/images/drag-and-drop-smalltalk-file.png "Drag and Drop Smalltalk File")
 
