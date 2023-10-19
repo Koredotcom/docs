@@ -23,27 +23,23 @@ Create an Azure Bot and configure it on the Kore.ai XO Platform to establish a c
 
 3. Fill in the required details, select the **Multi Tenant **option in the **Type of App field** then click **Review + Create**. \
 ![review create](./images/MS_Team2.png "review create")
+4. On the next page, review the details and check for the **Validation** status. Click **Create **to proceed.
+![app validation](./images/MS_Team3.png "app validation")
+5. Associate the Azure Bot with a **Microsoft App ID** and **Password**. You can choose the default option: **Auto create App Id and password**. You can also choose to** Create a new Microsoft App ID** or **Use existing app registration**. For more information, see [Microsoft Bot Framework documentation](https://docs.microsoft.com/en-gb/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-4.0#app-registration). \
+![create app ID](./images/MS_Team4.png "create app ID")
+6. Once the deployment is completed, click **Go to resource** to view details of your resource.
+![view resource](./images/MS_Team5.png "view resource")
 
 !!! note
 
          The platform supports both Single-Tenant and Multi-Tenant apps.
-
-4. On the next page, review the details and check for the **Validation** status. Click **Create **to proceed.
-![app validation](./images/MS_Team3.png "app validation")
-
-5. Associate the Azure Bot with a **Microsoft App ID** and **Password**. You can choose the default option: **Auto create App Id and password**. You can also choose to** Create a new Microsoft App ID** or **Use existing app registration**. For more information, see [Microsoft Bot Framework documentation](https://docs.microsoft.com/en-gb/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-4.0#app-registration). \
-![create app ID](./images/MS_Team4.png "create app ID")
-
-6. Once the deployment is completed, click **Go to resource** to view details of your resource.
-![view resource](./images/MS_Team5.png "view resource")
-
 
 ## Step 2: Configure the Resource App Id and Password
 
 Generate a new App Password and Client Secret to configure the Azure Bot on the Kore.ai XO Platform.
 
 
-1. On the **Configurations **tab, click the **Manage **option next to the **Microsoft App ID** field. \
+1. On the **Configurations **tab, click the **Manage **option next to the **Microsoft App ID** field.
 ![Microsoft App ID](./images/MS_Team6.png "Microsoft App ID")
 
 2. Choose **Certificates & secrets** in the left navigation bar, and create a new client secret on the page:
@@ -106,13 +102,8 @@ To do so, create an MS Teams app, associate the bot with it, and then publish th
 1. [Log in](https://teams.microsoft.com/) to the MS Teams account with admin credentials.
 2. Click **Ellipsis […]** in the left navigation bar and then select the **Developer Portal** icon to launch the Apps builder.
 ![developer portal](./images/MS_Team13.png "developer portal")
-!!! note
-
-          The Developer Portal view is only available on the **Microsoft Teams Desktop** client.
-
 3. On the **Developer Portal** page, select the **Apps** tab and then click the **New App** button.
 ![new app](./images/MS_Team14.png "new app")
-
 4. On the **New App** dialog, enter a name for the app, copy and paste the App ID of your Azure Bot in the **App ID** field, and then click **Publish**.
 ![app ID](./images/MS_Team15.png "app ID")
 
@@ -125,6 +116,9 @@ To do so, create an MS Teams app, associate the bot with it, and then publish th
 7. Click **Publish your App** and complete the publishing process.
 ![complete process](./images/MS_Team18.png "complete process")
 
+!!! note
+
+          The Developer Portal view is only available on the **Microsoft Teams Desktop** client.
 
 ## Step 5: Approve the MS Teams App Publish Request
 
