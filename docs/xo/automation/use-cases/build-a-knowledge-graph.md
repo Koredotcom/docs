@@ -12,13 +12,14 @@ To open the Knowledge Graph builder, follow the below steps:
 4. You will notice that there is already a Knowledge Graph with the name of your assistant.
 ![access existing knowledge graph](../use-cases/images/access-existing-knowledge-graph.png "access existing knowledge graph")
 
-> **<p style="color:#1338BE">NOTE</p>**
-All features explained here are supported by the Few-Shot Knowledge Graph, except for the following:
->
->  * Few-Shot Knowledge Graphs do not require an ontology structure, but you can create one to  improve intent detection. 
-> * Default terms are not available in Few-Shot Knowledge Graphs. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.
-> * Lemmatization using Parts of Speech, Search in Answer, and Contextual Paths Qualification are not supported by Few-Shot Graphs. Please see the Knowledge Graph Types Comparison Table for a detailed list of supported features.
-> * Path Level and Knowledge Graph Synonyms are only supported for Mandatory Terms and for Tags.
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All features explained here are supported by the Few-Shot Knowledge Graph, except for the following:
+<ul><li>Few-Shot Knowledge Graphs do not require an ontology structure, but you can create one to  improve intent detection.</li> 
+<li>Default terms are not available in Few-Shot Knowledge Graphs. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.</li>
+<li>Lemmatization using Parts of Speech, Search in Answer, and Contextual Paths Qualification are not supported by Few-Shot Graphs. Please see the Knowledge Graph Types Comparison Table for a detailed list of supported features.</li>
+<li>Path Level and Knowledge Graph Synonyms are only supported for Mandatory Terms and for Tags.</li></ul></p>
+</div>
 
 ## Create the Knowledge Graph Node Structure
 
