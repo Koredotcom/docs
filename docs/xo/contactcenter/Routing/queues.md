@@ -162,5 +162,5 @@ Deleting a queue means that all corresponding routing rules are removed.
 
 There are two ways to assign a conversation to a queue:
 
-1. Using the _[Set Queue ](https://docs.kore.ai/smartassist/experience-flows/set-queue/)_node within an experience flow.
+1. Using the _[Set Queue ](https://docs.kore.ai/smartassist/experience-flows/set-queue/)_ node within an experience flow.
 2. Using the [agentUtils.setQueue()](https://docs.kore.ai/smartassist/utils/script-nodes-call-flows-agent-utils/#Set_Queue) method.
