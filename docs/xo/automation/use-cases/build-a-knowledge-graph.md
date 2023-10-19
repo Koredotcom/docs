@@ -1,6 +1,8 @@
 # **Build a Knowledge Graph**
 
-The XO Platform’s Knowledge Graph (KG) helps you turn your static FAQ text into an intelligent, personalized conversational experience. It goes beyond the usual practice of capturing FAQs as flat question-answer pairs. Instead, the Knowledge Graph enables you to create a hierarchical structure of key domain terms and associate them with context-specific questions and their alternatives, synonyms, traits, and more. Additionally, you can opt for the LLM-based Few-Shot Knowledge Graph, which requires no ontology and reduces maintenance and training requirements. [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-graph-terminology/).
+The XO Platform’s Knowledge Graph (KG) helps you turn your static FAQ text into an intelligent, personalized conversational experience. It goes beyond the usual practice of capturing FAQs as flat question-answer pairs. Instead, the Knowledge Graph enables you to create a hierarchical structure of key domain terms and associate them with context-specific questions and their alternatives, synonyms, traits, and more. 
+
+Additionally, you can opt for the LLM-based Few-Shot Knowledge Graph, which requires no ontology and reduces maintenance and training requirements. [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-graph-terminology/).
 
 To generate a Knowledge Graph, you need to add FAQs to an existing or new VA. If you have not created a VA, refer to [Building a Virtual Assistant.](https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/).
 
@@ -31,7 +33,6 @@ To create nodes, follow the below steps:
 2. On the top left of the Knowledge Graph window, hover over the root node.
 3. Click the **+** icon. A text box appears below to **Add Node**. For better performance, there is a restriction of 50k FAQs spread across 20k maximum allowed number of nodes.
 4. Type the name of the node in the text box and press **Enter**. A warning would be displayed in case you enter a duplicate node name, i.e. if a child node with the same name already exists under the parent node.
-
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This node becomes a child for the root node and can be referred to as a First-level node.</p></div>
@@ -130,14 +131,19 @@ To delete a term, follow the steps below:
     * **Delete the FAQs along with the term** – Choosing this option deletes the term and FAQs under it.
     * **Delete the term and move FAQs to root term** - Choosing this option deletes the term and moves the FAQs under it to the root term.
 
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the term has child nodes, all those nodes will be deleted.</p>
+</div>
+
+![child node deleted](../use-cases/images/child-node-deleted.png "child node deleted")
+
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><ul><li>If the term has child nodes, all those nodes will be deleted.</li>
-<img src="../use-cases/images/child-node-deleted.png" alt="child node deleted">
-<li>If your VA is already published, you must train it  for the deletions to be effective.</li>
+<p><li>If your VA is already published, you must train it  for the deletions to be effective.</li>
 <li>If you have deleted the first level term you can selectively train to remove the related terms from the published copy.</li>
 <li>If you have deleted, say, the nth level child term, then you need to select the entire parent term for training.</li></ul></p>
-</div>
+</div> 
 
 ### Edit Intents and Responses
 
