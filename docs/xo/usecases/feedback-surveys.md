@@ -4,26 +4,25 @@ The XO Platform allows you to design and create feedback surveys for products, s
 
 You can configure a Virtual Assistant to launch these surveys at a certain point in a conversation or at the end of a conversation (when the _end of conversation_ event is triggered). The **NPS**, **CSAT**, and **Like/Dislike** survey types are currently supported.
 
-> **Key Feature Highlights**
->
-> 1. The Feedback Module is use-case and channel-agnostic. But by default, it only shows text messages. You can always add additional channel-specific prompts to collect feedback from voice channels.
-> 2. When a feedback survey is created on the platform, all messages are in text format. The text from the platform gets converted into a voice using the ASR and TTS engines.
-> 3. You can leverage channel-specific configuration to modify the feedback prompts.
-> 4. Feedback flows are fully customizable.
-> 5. The Kore.ai XO Platform lets you configure feedback in two ways:
-> * Using the built-in flows to collect the feedback and the new service type called **feedback service** to submit the feedback to the bots platform.
-> * Collecting feedback from other sources that can be pushed to the platform as part of the conversation execution.
-> 6. Feedback Surveys get created as dialog tasks with a series of entities, service calls, and message notes. You have complete control of modifying the out-of-the-box messages, adding additional messages to specific channels, such as voice channels, and capturing the feedback on voice.
-> 7. You can use the automatic feedback template that the platform generates or build their flows and submit the feedback to the platform feedback service. Alternatively, it could be a hybrid approach where the feedback flow can emerge from or integrate with another flow.
-> 8. Once a customer responds to a Feedback Survey, the event displays on the chat transcript slider of the Conversations History Dashboard. [Learn more](https://developer.kore.ai/docs/bots/analyzing-your-bot/feedback-analytics/).
-> 9. Additionally, you can filter and analyze Conversations (with feedback survey enabled) based on the Feedback Type, Response, and Score using prebuilt and custom filters. [Learn more](https://developer.kore.ai/docs/bots/analyzing-your-bot/conversation-history-dashboard/#Prebuilt_Filters_for_Conversations_History).
-> 10. The feedback response from a customer is captured and pushed to the platform for further analysis in three ways:
->
->   * By creating a **Dialog** to capture feedback responses/scores and generate the required analytics to derive actionable insights on the **Feedback Analysis Dashboard**. [Learn more](https://developer.kore.ai/docs/bots/analyzing-your-bot/feedback-analytics/).
->   * By pushing feedback data to the platform using the Public API. [Learn more](https://developer.kore.ai/docs/bots/api-guide/feedback-survey-api/).
->    * By pushing feedback data via the Botkit. [Learn more](https://developer.kore.ai/docs/bots/sdks/using-the-botkit-sdk/#Feedback_Survey).
-> 11. In addition to the primary survey question, you can configure a **Follow-up Question** for negative feedback to gather specific details and better understand any primary survey issues.
-> 12. Additionally, you can set an Acknowledgement Message to customers after they complete the survey to show appreciation and let them know that it has been received.
+**Key Features**
+
+1. The Feedback Module is use-case and channel-agnostic. But by default, it only shows text messages. You can always add additional channel-specific prompts to collect feedback from voice channels.
+2. When a feedback survey is created on the platform, all messages are in text format. The text from the platform gets converted into a voice using the ASR and TTS engines.
+3. You can leverage channel-specific configuration to modify the feedback prompts.
+4. Feedback flows are fully customizable.
+5. The Kore.ai XO Platform lets you configure feedback in two ways:
+    * Using the built-in flows to collect the feedback and the new service type called **feedback service** to submit the feedback to the bots platform.
+    * Collecting feedback from other sources that can be pushed to the platform as part of the conversation execution.
+6. Feedback Surveys get created as dialog tasks with a series of entities, service calls, and message notes. You have complete control of modifying the out-of-the-box messages, adding additional messages to specific channels, such as voice channels, and capturing the feedback on voice.
+7. You can use the automatic feedback template that the platform generates or build their flows and submit the feedback to the platform feedback service. Alternatively, it could be a hybrid approach where the feedback flow can emerge from or integrate with another flow.
+8. Once a customer responds to a Feedback Survey, the event displays on the chat transcript slider of the Conversations History Dashboard. [Learn more](https://developer.kore.ai/docs/bots/analyzing-your-bot/feedback-analytics/).
+9. Additionally, you can filter and analyze Conversations (with feedback survey enabled) based on the Feedback Type, Response, and Score using prebuilt and custom filters. [Learn more](https://developer.kore.ai/docs/bots/analyzing-your-bot/conversation-history-dashboard/#Prebuilt_Filters_for_Conversations_History).
+10. The feedback response from a customer is captured and pushed to the platform for further analysis in three ways:
+    * By creating a **Dialog** to capture feedback responses/scores and generate the required analytics to derive actionable insights on the **Feedback Analysis Dashboard**. [Learn more](https://developer.kore.ai/docs/bots/analyzing-your-bot/feedback-analytics/).
+    * By pushing feedback data to the platform using the Public API. [Learn more](https://developer.kore.ai/docs/bots/api-guide/feedback-survey-api/).
+    * By pushing feedback data via the Botkit. [Learn more](https://developer.kore.ai/docs/bots/sdks/using-the-botkit-sdk/#Feedback_Survey).
+11. In addition to the primary survey question, you can configure a **Follow-up Question** for negative feedback to gather specific details and better understand any primary survey issues.
+12. Additionally, you can set an Acknowledgement Message to customers after they complete the survey to show appreciation and let them know that it has been received.
 
 ## Navigating to Feedback Survey
 
@@ -159,6 +158,7 @@ To define the survey design, follow the steps below:
 
 1. Select the relevant option in the **Add Feedback Survey** window based on how you want to create the survey.
 2. If you want to create a new Feedback Survey along with a **Dialog Task** to collect the feedback and capture the analytics, follow the steps below:
+
     * Select **Create a survey with a New Dialog**.
     * Enter the **Dialog Name** in the text area.
     ![enter dialog name](../usecases/images/enter-the-dialog-name.png "enter dialog name")
@@ -179,6 +179,7 @@ The **Primary Question** response options the customer will see are displayed be
 **Like/Dislike**
 
 ![like dislike survey](../usecases/images/like-dislike-survey.png "like dislike survey")
+
 > **<p style="color:#1338BE">NOTE</p>** The default response names provided for **CSAT** and the **Like/Dislike** types are editable; however, the scores set in the system cannot be changed for any survey type.
 
 3. To create your flow, select **Create survey without Dialog** and click **Next**.
@@ -228,11 +229,11 @@ The **Task Flow** will include a combination of **Entity**, **Message**, and **S
 
 You can customize the dialog flow as per your need by changing the dialog flow definition fields.
 
-> **Important**
->
-> * **Feedback Service** is introduced as the new **Service Type** option under **General Settings**. You can use this service to submit feedback on the surveys you may have captured using your custom flows.
+**Important**
+
+* **Feedback Service** is introduced as the new **Service Type** option under **General Settings**. You can use this service to submit feedback on the surveys you may have captured using your custom flows.
 ![feedback service type](../usecases/images/feedback-service-type.png "feedback service type")
->
-> * You can invoke feedback as a sub-dialog from any other point in the conversation where you would like to capture the feedback.
+
+* You can invoke feedback as a sub-dialog from any other point in the conversation where you would like to capture the feedback.
 ![feedback as sub-dialog](../usecases/images/feedback-as-sub-dialog.png "feedback as sub-dialog")
 
