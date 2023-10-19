@@ -184,10 +184,10 @@ The **Primary Question** response options the customer will see are displayed be
 **Create the Survey Flow**
 
 To create your flow, follow the steps below:
+
 1. Select **Create survey without Dialog** and click **Next**.
 ![survey without dialog](../usecases/images/survey-without-dialog.png "survey without dialog")
 2. **(Optional Step)**: To capture additional details from the customer for a negative feedback, configure the **follow-up question** with the steps below:
-
     * Enable the **Follow-up Question** option (default setting).
     ![enable follow-up](../usecases/images/follow-up-enable.png "enable follow-up")
     * Define when to post the follow-up question by configuring the **IF condition**, where you must select the conditional option from the list for **User Score**.
@@ -196,7 +196,6 @@ To create your flow, follow the steps below:
     ![adjust feedback counter](../usecases/images/adjust-feedback-score-counter.png "adjust feedback counter")
     * Either edit the default follow-up question in the text area provided for the **THEN** clause or keep it unchanged.
     ![edit default follow-up question](../usecases/images/edit-default-follow-up-question.png "edit default follow-up question")
-
 3. Modify the **Acknowledgement Message** in the text area or retain the default message to acknowledge the customer’s effort in taking the survey.
 ![modify acknowledgement message](../usecases/images/acknowledge-message-modify.png "modify acknowledgement message")
 4. Click **Next** to move to survey launch configuration.
@@ -229,9 +228,9 @@ The **Task Flow** will include a combination of **Entity**, **Message**, and **S
 
 You can customize the dialog flow as per your need by changing the dialog flow definition fields.
 
-**Important**
+<p style="color:darkblue"><b>DEFINING CUSTOM FLOWS</b></p>
 
-* **Feedback Service** is introduced as the new **Service Type** option under **General Settings**. You can use this service to submit feedback on the surveys you may have captured using your custom flows.
+* **Feedback Service** is introduced as the new **Service Type** option under **General Settings** for the **Service Node**. You can use this service to submit feedback on the surveys you may have captured using your custom flows.
 
 ![feedback service type](../usecases/images/feedback-service-type.png "feedback service type")
 
