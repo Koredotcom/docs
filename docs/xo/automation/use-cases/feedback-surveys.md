@@ -173,7 +173,10 @@ The **Primary Question** response options the customer will see are displayed be
 ![nps survey](../use-cases/images/nps-survey.png "NPS Survey")
 
 **CSAT**
-> **<p style="color:#1338BE">NOTE</p>** The default response names provided for **CSAT** and the **Like/Dislike** types are editable; however, the scores set in the system cannot be changed for any survey type.
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The default response names provided for <b>CSAT</b> and the <b>Like/Dislike</b> types are editable; however, the scores set in the system cannot be changed for any survey type.</p>
+</div>
 
 ![csat survey](../use-cases/images/csat-survey.png "csat survey")
 

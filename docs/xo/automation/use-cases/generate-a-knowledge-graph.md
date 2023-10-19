@@ -8,7 +8,10 @@ The XO Platform provides a Knowledge Graph Generator that automatically extracts
 
 You can also edit the hierarchy after import to suit your needs. It is highly recommended to review and make changes as the Knowledge Graph generated is only a suggestion.
 
-> **<p style="color:#1338BE">NOTE</p>** The Knowledge Graph Generator is available from v7.1 of the Platform.
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Knowledge Graph Generator is available from v7.1 of the Platform.</p>
+</div>
 
 The Kore.ai Knowledge Graph Generator is hosted on the Kore GitHub repository. This document provides the steps needed to install and use the generator.
 
@@ -123,7 +126,9 @@ The output JSON file can directly be imported to Knowledge Graph in the bot.
 
 Please refer to this [link](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/importing-the-bot-ontology-from-csv-or-json/#Importing_Ontology) for steps to import Knowledge Graph.
 
-
-> **<p style="color:#1338BE">NOTE</p>** When you try to import the Knowledge Graph it replaces the existing one. We recommend you take a back up before importing.
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you try to import the Knowledge Graph it replaces the existing one. We recommend you take a back up before importing.</p>
+</div>
 
 

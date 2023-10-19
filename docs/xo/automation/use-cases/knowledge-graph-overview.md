@@ -25,7 +25,10 @@ You can select your desired Knowledge Graph Type by going to **Build > Natural L
 
 Changing Knowledge Graph Types is captured in the Change Logs, which you can access by going to **Deploy > Change Logs**.
 
-> **<p style="color:#1338BE">NOTE</p>** Before changing your Knowledge Graph Type, we recommend backing up your existing knowledge graph by either creating a new bot version or by exporting a copy of your knowledge graph as a JSON or CSV.
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before changing your Knowledge Graph Type, we recommend backing up your existing knowledge graph by either creating a new bot version or by exporting a copy of your knowledge graph as a JSON or CSV.</p>
+</div>
 
 Please continue reading to learn more about each type of knowledge graph. See [Knowledge Graph Terminology](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-graph-terminology/) for in-depth information about Knowledge Graph features and components.
 

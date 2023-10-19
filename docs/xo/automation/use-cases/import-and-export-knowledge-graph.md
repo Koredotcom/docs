@@ -44,7 +44,10 @@ To export a Knowledge Graph, follow the below steps:
 
 3. Based on the preferred format: click **Export JSON** or **Export CSV**.
 
-> **<p style="color:#1338BE">NOTE</p>** Please read the warning message shown below before clicking **Confirm**. To learn more about caching challenges and strategies, click [here](https://aws.amazon.com/builders-library/caching-challenges-and-strategies/#:~:text=Caches%20are%20also%20susceptible%20to%20poisoning%20attacks%2C%20in%20which%20a,will%20see%20the%20malicious%20value).
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please read the warning message shown below before clicking <b>Confirm</b>. To learn more about caching challenges and strategies, click <a href="https://aws.amazon.com/builders-library/caching-challenges-and-strategies/#:~:text=Caches%20are%20also%20susceptible%20to%20poisoning%20attacks%2C%20in%20which%20a,will%20see%20the%20malicious%20value">here</a>.</p>
+</div>
 
 ![export caching message](../use-cases/images/export-caching-notice-message.png "export caching message")
 

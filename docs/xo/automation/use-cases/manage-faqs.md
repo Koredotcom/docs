@@ -38,7 +38,10 @@ You can add channel-specific responses to questions in your Knowledge Graph. By 
 
 To add a channel-specific response, select the channel from the channels list before typing the response.
 
-> **<p style="color:#1338BE">NOTE</p>** We recommend adding one response for All Channels so that it is triggered in the absence of a channel-specific response.
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We recommend adding one response for All Channels so that it is triggered in the absence of a channel-specific response.</p>
+</div>
 
 **Handling Lengthy Reponses and Improving Readability**
 

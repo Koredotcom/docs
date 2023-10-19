@@ -73,7 +73,10 @@ The **Dialog Task** option allows you to trigger a task and present the output i
 
 The **Select Dialog Task** drop-down will list all available tasks in the current VA. Select the task you want to trigger using this widget.
 
-> **<p style="color:#1338BE">NOTE</p>** In the connected Dialog Task make sure to use a Message node to present the required information in the widget using any of the supported widget templates.
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In the connected Dialog Task make sure to use a Message node to present the required information in the widget using any of the supported widget templates.</p>
+</div>
 
 You can use the icon next to the Dialog Task to open the Dialog Task for checking the task details like entity names etc.
 
@@ -91,8 +94,11 @@ When selecting JSON as the source, you will be presented with a Javascript edito
 
 When selecting **Digital Form** as a widget source, you  can select the Digital Form, and the Dialog Task to trigger on submission.
 
-> **<p style="color:#1338BE">NOTE</p>** A Digital Form can be used to define multiple Widgets and can also be added to multiple Panels. However, it will be associated with the same Dialog Task across all Widgets and Panels.
-![digital form as source](../use-cases/images/digital-form-as-source.png "digital form as source")
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A Digital Form can be used to define multiple Widgets and can also be added to multiple Panels. However, it will be associated with the same Dialog Task across all Widgets and Panels.
+<img src="../use-cases/images/digital-form-as-source.png" alt="digital form as source"</p>
+</div>
 
 ### Edit, Run & Preview a Widget
 

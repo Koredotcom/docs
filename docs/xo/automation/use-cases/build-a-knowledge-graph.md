@@ -32,7 +32,10 @@ To create nodes, follow the below steps:
 3. Click the **+** icon. A text box appears below to **Add Node**. For better performance, there is a restriction of 50k FAQs spread across 20k maximum allowed number of nodes.
 4. Type the name of the node in the text box and press **Enter**. A warning would be displayed in case you enter a duplicate node name, i.e. if a child node with the same name already exists under the parent node.
 
-> **<p style="color:#1338BE">NOTE</p>** This node becomes a child for the root node and can be referred to as a First-level node.
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This node becomes a child for the root node and can be referred to as a First-level node.</p></div>
+
 5. Repeat steps 1 to 3 in this section to create other First-level nodes.
 6. After you create First-level nodes, create child nodes as follows:
     * Hover over any First-level node, and click the plus icon to create its child node.
@@ -85,7 +88,10 @@ You can improve the performance of your Knowledge Graph by adding tags, synonyms
 
 Once created, there will be times when you want to make changes to the Knowledge Graph for better organization and presentation.
 
-> **<p style="color:#1338BE">NOTE</p>** Once you make any changes to the Knowledge Graph, make sure to click Train on the top-right to send the updates to the Knowledge Graph engine. If you do not train the VA, the changes are not reflected in its responses.
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Once you make any changes to the Knowledge Graph, make sure to click Train on the top-right to send the updates to the Knowledge Graph engine. If you do not train the VA, the changes are not reflected in its responses.</p>
+</div>
 
 By default, intents added to a child node are visible for all its parent nodes in the path, up to the root node. 
 
@@ -124,13 +130,14 @@ To delete a term, follow the steps below:
     * **Delete the FAQs along with the term** – Choosing this option deletes the term and FAQs under it.
     * **Delete the term and move FAQs to root term** - Choosing this option deletes the term and moves the FAQs under it to the root term.
 
-> **<p style="color:#1338BE">NOTE</p>**
->
-> * If the term has child nodes, all those nodes will be deleted.
-![child node deleted](../use-cases/images/child-node-deleted.png "child node deleted")
-> * If your VA is already published, you must train it  for the deletions to be effective.
-> * If you have deleted the first level term you can selectively train to remove the related terms from the published copy.
-> * If you have deleted, say, the nth level child term, then you need to select the entire parent term for training.
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><ul><li>If the term has child nodes, all those nodes will be deleted.</li>
+<img src="../use-cases/images/child-node-deleted.png" alt="child node deleted">
+<li>If your VA is already published, you must train it  for the deletions to be effective.</li>
+<li>If you have deleted the first level term you can selectively train to remove the related terms from the published copy.</li>
+<li>If you have deleted, say, the nth level child term, then you need to select the entire parent term for training.</li></ul></p>
+</div>
 
 ### Edit Intents and Responses
 
@@ -158,7 +165,10 @@ The Knowledge Graph engine works well with the default settings, but you can fin
     * **The proximity of Suggested Matches** – Define the maximum difference to allow between top-scoring and immediate next suggested questions to consider as equally important. 
     * **Qualify Contextual Paths** – This ensures that the bot context is populated and retained with the terms/nodes of the matched intent. This further enhances the user experience.
 
-> ****<p style="color:#1338BE">NOTE</p>**** You can customize these settings in Natural Language > Thresholds & Configurations. See Knowledge Graph Training for details.
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p> You can customize these settings in Natural Language > Thresholds & Configurations. See Knowledge Graph Training for details.</p>
+</div>
 
 * **Traits** – Traits qualify nodes/terms even if the user utterance does not contain the term/node. Traits are also helpful in filtering the suggested intent list.
 
