@@ -77,7 +77,7 @@ Let us look at each of the options:
    <td>
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Input File Type
    </td>
    <td>The type of input file:
@@ -106,7 +106,7 @@ Let us look at each of the options:
    <td>en (English)
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Verbose Mode
    </td>
    <td>Running a command in verbose mode to see intermediate progress steps

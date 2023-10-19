@@ -723,7 +723,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Whether the given component is visible to the end-user or not
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#ECECEC">
    <td><strong>Visibility Rules</strong>
    </td>
    <td>You can define conditions when a particular component would be visible or hidden
@@ -760,7 +760,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>Whether the given component should be auto-populated or not
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#ECECEC">
    <td><strong>Auto population rules</strong>
    </td>
    <td>
@@ -1412,7 +1412,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td>No
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#ECECEC">
    <td colspan="12" ><strong>Auto Fill</strong>
    </td>
    <td>

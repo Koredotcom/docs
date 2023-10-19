@@ -58,7 +58,7 @@ The following are the messages under the Greetings group (these are the Standard
    <td colspan="2" ><strong>GREETINGS</strong>
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Response when User says Hi
    </td>
    <td>Shown when the user says <em>hi</em>, <em>hello</em>, <em>hey</em>, etc, or just enters the VA’s name.
@@ -99,7 +99,7 @@ comment`est`vous comment`ca`va ca`va
    <td>Shown when the user says “who are you”
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>User says ‘great’, ‘awesome’, etc. when there is no task in context
    </td>
    <td>Shown when the user says great, awesome, etc. (probably after finishing a task)
@@ -111,7 +111,7 @@ comment`est`vous comment`ca`va ca`va
    <td>Shown when the user says good, great, awesome, cool, “fair enough”, “that helped”, “it helps”, “that was useful”, “that was handy” etc. (probably after finishing a task)
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>User says ‘no’, ‘nope’, etc. when there is no task in context
    </td>
    <td>This is small talk in the response to when the user utterance is – ‘No’, ’Nopes’ etc.
@@ -123,7 +123,7 @@ comment`est`vous comment`ca`va ca`va
    <td>Shown when the user says “I am done”, “that’s it for now”, “that’s all”, done, etc. (probably after finishing a task)
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>User implies to end the conversation (eg. ‘good night’, ‘bye’, ‘ttyl’)
    </td>
    <td>This condition occurs only for Dialog tasks for which the following Follow-up Tasks Setting is configured: “Yes, at the end of this dialog ask the user to select and perform a task from ‘Follow-up task’ list in the Dialog settings.” The VA shows this message when it presents the Follow-Up Intents array to the user at the end of the Dialog.
@@ -135,7 +135,7 @@ comment`est`vous comment`ca`va ca`va
    <td>Shown when the user thanks the VA.
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>User says ‘OK’, ‘fine’, ‘yes’ etc. when there is no task in context
    </td>
    <td>Shown when the user says OK, fine, got it, etc (probably after finishing a task)

@@ -57,7 +57,7 @@ Known as **_New Promoter Score_**, this is a standard customer experience metric
    <td>This score indicates a loyal customer who is satisfied with the conversation and is highly likely to return.
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Passives</strong>
    </td>
    <td>6,7, & 8
@@ -92,7 +92,7 @@ Known as **_New Promoter Score_**, this is a standard customer experience metric
    <td>1
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Satisfied</strong>
    </td>
    <td>2
@@ -104,7 +104,7 @@ Known as **_New Promoter Score_**, this is a standard customer experience metric
    <td>3
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Unsatisfied</strong>
    </td>
    <td>4
