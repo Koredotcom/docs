@@ -78,7 +78,7 @@ Following this step, you can add multiple utterances.
 ![Alt text](agent-realtime-coaching-images/image_10.png)
 
         * The new utterance gets added to the list of utterances. \
-![Alt text](agent-realtime-coaching-images/image_11.png)
+![Alt text](./images/image_11.png)
 
 
 
@@ -99,12 +99,8 @@ This is a predefined rule with conditions and actions that come with Agent Coach
 
 The following screenshot displays the Price Objection rule:
 
-![Alt text](images/image_12.png)
-For information on rule functionalities, refer to the section, ##
-=======
-![Alt text](agent-realtime-coaching-images/image_12.png)
-
-For information on rule functionalities, refer to the section
+![Alt text](./images/image_12.png)
+For information on rule functionalities, refer to the section [Create, Publish, Edit, Delete, and Disable Rules](#create-publish-edit-delete-and-disable-rules)
 
 
 ## Create, Publish, Edit, Delete, and Disable Rules
