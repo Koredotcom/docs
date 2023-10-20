@@ -92,7 +92,7 @@ Follow these steps to assign agents to a queue:
 
 1. Click **Add Agent Group**;
 2. Click the checkbox next to the name of a group to select it. You can use the _Search_ field at the top of the list to find a specific group.\
-![assign_agent_groups](./images/queues/assign-agent-groups.png)
+![assign_agent_groups](./images/assign-agent-groups.png)
 
 !!! Note
 
@@ -105,26 +105,26 @@ From the monitor screen, you can see the consolidated list of agents that are pa
 In the **Preferred** tab, you can assign preferred agents to the queue.
 
 1. Under **Preferred Agents**, find the agent you need in the list. You can use the _Search_ field for this purpose. Select the corresponding **Preferred** checkbox to set the agent as preferred.\
-![preferred tab](./images/queues/preferred-agents.png)
+![preferred tab](./images/preferred-agents.png)
 
 2. Under **Advanced Settings**, configure the preferred agent timeout. During a preferred agent check, skills are ignored. If a preferred agent is not assigned and the preferred agent timeout expires, the check expands to the full agent list, and skills match to select the best available agent for the conversation.\
-![advanced_settings](./images/queues/advanced-settings.png)
+![advanced_settings](./images/advanced-settings.png)
 
 ### Skills
 
 1. In the **Skills** **tab**, search for a specific skill to assign to the Queue.\
-![skills_tab](./images/queues/skills.png)
+![skills_tab](./images/skills.png)
 
 2. Choose whether you want the skill to expire and set the time for this. Once a skill assignment expires, the conversation routes to other assigned skills.\
-![skill_requirement_expiration](./images/queues/skill-requirement-expiration.png)
+![skill_requirement_expiration](./images/skill-requirement-expiration.png)
 
 When you are ready to save the Queue, click **Create**. The new Queue is then listed among your available queues. You must configure at least the _Settings_ and _Assignment_ tabs to save a queue.\
-![create_queue](./images/queues/create-queue.png)
+![create_queue](./images/create-queue.png)
 
 ## **Edit a Queue**
 
 1. Click the **Edit** icon corresponding to the queue you want to edit.\
-![edit_queue_button](./images/queues/edit-queue-button.png)
+![edit_queue_button](./images/edit-queue-button.png)
 
 2. Make the required changes and click **Save**.
 
@@ -134,7 +134,7 @@ To delete a queue, follow these steps:
 
 1. Click the **Edit** icon corresponding to the queue you want to edit.
 2. Click the **Delete (bin)** button on the right of the bottom toolbar.\
-![delete_queue_button](./images/queues/delete-queue-button.png)
+![delete_queue_button](./images/delete-queue-button.png)
 
 3. **Confirm** your choice.
 
