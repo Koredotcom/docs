@@ -1,4 +1,4 @@
-<# Real-time Agent Coaching
+# Real-time Agent Coaching
 
 
 ## Introduction
