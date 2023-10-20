@@ -8,7 +8,7 @@ All conversations get assigned to queues based on the agent selection logic and 
 
 Once a conversation comes in, it gets assigned to a queue. Afterward, the next step is to check the routing mode. 
 
-The **Simple Routing** mode checks for agent skills and agent availability. After the skill and availability match, an agent gets assigned to the conversation. 
+The **Simple Routing** mode checks for agent skills and agent availability. After the skill and availability match, an agent gets assigned to the conversation.
 
 The **Advanced Routing** mode checks for preferred agents. If a queue has preferred agents configured, admins can specify a time, after which the routing extends to skill match. If a preferred agent becomes available before the configured time expires, they will have priority over agents selected via skill match.
 
