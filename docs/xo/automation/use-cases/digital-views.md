@@ -51,10 +51,10 @@ Widgets are individual components that can communicate with the VA for presentin
 To configure widgets, follow the below steps:
 
 1. Click **Create Widget** to create a widget.
-    <img src="../use-cases/images/create-widget.png" alt="create widget" title="create widget" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/create-widget.png" alt="create widget" title="create widget" style="border: 1px solid gray; zoom:75%;">
 
 2. The New Widget dialog opens.
-    <img src="../use-cases/images/new-widget-dialog.png" alt="new widget dialog" title="new widget dialog" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/new-widget-dialog.png" alt="new widget dialog" title="new widget dialog" style="border: 1px solid gray; zoom:75%;">
 
 3. On the **New Widget** window, enter the following details:
     * **Name** of the widget
@@ -83,12 +83,12 @@ You can use the icon next to the Dialog Task to open the Dialog Task for checkin
 Any entities used by the selected Dialog Task need to be pre-populated with values by mapping **Entity Name** with **Entity Values**.
 
 If the selected Dialog Task has any **Authorization Profile** defined, it is displayed here.
-<img src="../use-cases/images/dialog-task-source.png" alt="dialog task source" title="dialog task source" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/dialog-task-source.png" alt="dialog task source" title="dialog task source" style="border: 1px solid gray; zoom:75%;">
 
 ### JSON
 
 When selecting JSON as the source, you will be presented with a Javascript editor, where you can add your code, as shown below:
-<img src="../use-cases/images/json-source-file.png" alt="json file upload" title="json file upload" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/json-source-file.png" alt="json file upload" title="json file upload" style="border: 1px solid gray; zoom:75%;">
 
 ### Digital Form
 
@@ -98,15 +98,15 @@ When selecting **Digital Form** as a widget source, you  can select the Digital 
 <p class="admonition-title">Note</p>
 <p>A Digital Form can be used to define multiple Widgets and can also be added to multiple Panels. However, it will be associated with the same Dialog Task across all Widgets and Panels.</p></div>
 
-<img src="../use-cases/images/digital-form-as-source.png" alt="digital form as source" title="digital form as source" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/digital-form-as-source.png" alt="digital form as source" title="digital form as source" style="border: 1px solid gray; zoom:75%;">
 
 ### Edit, Run & Preview a Widget
 
 After you save, the widget will be **In Development** state. You can **Edit** or **Delete** the widget.
-<img src="../use-cases/images/widget-saved.png" alt="widget saved" title="widget saved" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/widget-saved.png" alt="widget saved" title="widget saved" style="border: 1px solid gray; zoom:75%;">
 
 When you select **Edit** widget, apart from being able to modify any of the above fields, you will have the option to **Run & Preview** the widget. You can save the preview as the thumbnail display for the widget.
-<img src="../use-cases/images/run-widget-preview.png" alt="widget preview" title="widget preview" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/run-widget-preview.png" alt="widget preview" title="widget preview" style="border: 1px solid gray; zoom:75%;">
 
 ## Configure Panels
 Panel refers to containers that hold one or more widgets. You can add an existing widget to the panel or create new widgets within it.
@@ -121,17 +121,17 @@ To create a panel, follow the steps below:
     * **Display Name** for the Panel.
     * **Panel Icon** to display in the chat window (URL to the location).
     * **Save** the Panel.
-    <img src="../use-cases/images/create-new-digital-view-panel.png" alt="create new digital view panel" title="create new digital view panel" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/create-new-digital-view-panel.png" alt="create new digital view panel" title="create new digital view panel" style="border: 1px solid gray; zoom:75%;">
 
 3. After you save, the panel will be **In Development** and will be displayed on your Digital Views screen. 
 
 ### Add Widgets
 
 1. Click **Add Widget** to add widgets to the panel.
-   <img src="../use-cases/images/widget-added-to-panel.png" alt="add widget to panel" title="add widget to panel" style="border: 1px solid gray; zoom:75%;">
+   <img src="../images/widget-added-to-panel.png" alt="add widget to panel" title="add widget to panel" style="border: 1px solid gray; zoom:75%;">
 
 2. Select widgets from the drop-down list and click **Add**. You can add multiple widgets to the same panel.
-<img src="../use-cases/images/select-widgets-from-dropdown-list.png" alt="select widgets from dropdown" title="select widgets from dropdown" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/select-widgets-from-dropdown-list.png" alt="select widgets from dropdown" title="select widgets from dropdown" style="border: 1px solid gray; zoom:75%;">
 
 ### Panel Options
 
@@ -143,7 +143,7 @@ You have the following options for a given panel:
 * **Panel Management** to add existing forms/widgets, or remove already added forms/widgets from the panel.
 * **Test** the individual panel – this opens the **Talk to Bot** window along with the panel listing with the current panel active and data presented. You can interact with the VA and test the panel.
 * **Delete** the Panel.
-<img src="../use-cases/images/panel-options-for-digital-views.png" alt="panel options for digital views" title="panel options for digital views" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/panel-options-for-digital-views.png" alt="panel options for digital views" title="panel options for digital views" style="border: 1px solid gray; zoom:75%;">
 
 ## Publish
 
@@ -151,7 +151,7 @@ When you publish your Virtual Assistant,  please ensure that the panels and widg
 
 [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/) about publishing a Virtual Assistant.
 
-<img src="../use-cases/images/publish-digitalview.png" alt="publish digital view" title="publish digital view" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/publish-digitalview.png" alt="publish digital view" title="publish digital view" style="border: 1px solid gray; zoom:75%;">
 
 ## Host
 

@@ -12,7 +12,7 @@ To open the Knowledge Graph builder, follow the below steps:
 2. Select the **Build** tab from the top menu.
 3. On the left menu, select **Conversation Skills** and click **Knowledge Graph**.
 4. You will notice that there is already a Knowledge Graph with the name of your assistant.
-<img src="../use-cases/images/access-existing-knowledge-graph.png" alt="access existing knowledge graph" title="access existing knowledge graph" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/access-existing-knowledge-graph.png" alt="access existing knowledge graph" title="access existing knowledge graph" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -44,11 +44,11 @@ To create nodes, follow the below steps:
 Follow the same process to create multiple node levels. 
 
 The demo below shows you how to create nodes.
-<img src="../use-cases/images/add-kg-node.gif" alt="add kg node" title="add kg node" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-kg-node.gif" alt="add kg node" title="add kg node" style="border: 1px solid gray; zoom:75%;">
 
 You can delete nodes by clicking the **Delete** icon on the right.
 
-<img src="../use-cases/images/delete-kg-node.png" alt="delete kg node" title="delete kg node" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/delete-kg-node.png" alt="delete kg node" title="delete kg node" style="border: 1px solid gray; zoom:75%;">
 
 ## Build the Knowledge Graph
 
@@ -72,7 +72,7 @@ To leverage the capabilities of the Knowledge Graph and dialog tasks, and handle
 5. You can also add a **Reference Id**. This field can be used to add a reference to any external content used as a source for this FAQ.
 6. Click **Save**.
 
-<img src="../use-cases/images/save-task.png" alt="save kg task" title="save kg task" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/save-task.png" alt="save kg task" title="save kg task" style="border: 1px solid gray; zoom:75%;">
 
 ### Manage Traits, Synonyms, and Stop Words
 
@@ -82,7 +82,7 @@ You can improve the performance of your Knowledge Graph by adding tags, synonyms
 
 **Manage Variable Namespaces** section (introduced in v8.0) allows you to associate the Variable Namespaces to use with this Knowledge Graph. This option is visible only when the Variable Namespace is enabled for the VA. For more information, refer to [Managing Namespace](https://developer.kore.ai/docs/bots/bot-settings/bot-management/managing-namespace/).
 
-<img src="../use-cases/images/variable-namespaces-select.png" alt="variable namespaces select" title="variable namespaces select" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/variable-namespaces-select.png" alt="variable namespaces select" title="variable namespaces select" style="border: 1px solid gray; zoom:75%;">
 
 ## Update a Knowledge Graph
 
@@ -97,7 +97,7 @@ By default, intents added to a child node are visible for all its parent nodes i
 
 If you do not want the intents from child nodes to be seen beyond a certain parent node, click the following icon on the **Questions** pane of the selected parent.
 
-<img src="../use-cases/images/exclude-child-terms.png" alt="exclude child terms" title="exclude child terms" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/exclude-child-terms.png" alt="exclude child terms" title="exclude child terms" style="border: 1px solid gray; zoom:75%;">
 
 
 The intents from all its child nodes are visible to the selected parent node and not to all its parent nodes.
@@ -112,7 +112,7 @@ You can move one or more Intent and Response sets between nodes in your Knowledg
 
 The demo below shows you how this works.
 
-<img src="../use-cases/images/move-to-new-node.gif" alt="move node" title="move node" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/move-to-new-node.gif" alt="move node" title="move node" style="border: 1px solid gray; zoom:75%;">
 
 ### Edit and Delete Terms
 
@@ -120,7 +120,7 @@ The demo below shows you how this works.
 2. Click the **Settings** (gear) icon. The settings window opens.
 3. You can change the name of the term, set the term types, set the term status, add traits, add or remove synonyms, and manage context. [Learn more](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/). 
 
-<img src="../use-cases/images/term-settings.png" alt="term settings" title="term settings" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/term-settings.png" alt="term settings" title="term settings" style="border: 1px solid gray; zoom:75%;">
 
 To delete a term, follow the steps below:
 
@@ -136,7 +136,7 @@ To delete a term, follow the steps below:
 <p>If the term has child nodes, all those nodes will be deleted. A warning message like the one shown below is displayed before you confirm.</p>
 </div>
 
-<img src="../use-cases/images/child-node-deleted.png" alt="child node deleted" title="child node deleted" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/child-node-deleted.png" alt="child node deleted" title="child node deleted" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -152,10 +152,10 @@ To delete a term, follow the steps below:
 3. Hover over the intent or response to edit it and click the **Edit** icon.
 4. Make changes to the intent or response and click **Save**.
 5. You can delete the intent using the **Delete** icon.
-<img src="../use-cases/images/child-node-deleted.png" alt="child node deleted" title="child node deleted" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/child-node-deleted.png" alt="child node deleted" title="child node deleted" style="border: 1px solid gray; zoom:75%;">
 
 6. Selecting multiple intents lets you delete them in bulk.
-<img src="../use-cases/images/delete-selected-intents.png" alt="delete faq intent" title="delete faq intent" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/delete-selected-intents.png" alt="delete faq intent" title="delete faq intent" style="border: 1px solid gray; zoom:75%;">
 
 ## Improve Performance
 
