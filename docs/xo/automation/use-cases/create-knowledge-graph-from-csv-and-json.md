@@ -22,7 +22,8 @@ Follow the instructions below to build your Knowledge Graph in a spreadsheet.
 4. You are prompted to **back up** the Knowledge Graph before proceeding. Choose the CSV or JSON format for the backup.
 5. After backup, click **Proceed**.
 6. On the corresponding dialog box, click **Sample CSV**. The CSV file is downloaded to your local computer.
-<img src="../images/download-sample-csv.png" alt="download sample csv" title="download sample csv" style="border: 1px solid gray; zoom:75%;">
+
+    <img src="../images/download-sample-csv.png" alt="download sample csv" title="download sample csv" style="border: 1px solid gray; zoom:75%;">
 
 ### Build the Knowledge Graph
 

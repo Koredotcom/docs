@@ -58,13 +58,13 @@ The following are the messages under the Greetings group (these are the Standard
    <td colspan="2" ><strong>GREETINGS</strong>
    </td>
   </tr>
-  <tr bgcolor="#FAFAFA">
+  <tr>
    <td>Response when User says Hi
    </td>
    <td>Shown when the user says <em>hi</em>, <em>hello</em>, <em>hey</em>, etc, or just enters the VA’s name.
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td>Response to ‘how are you’?
    </td>
    <td>The user asks “how are you?”
@@ -163,17 +163,18 @@ To add Small Talk to your VA, follow the below steps:
 
 You can create a **New Group** manually by clicking **New Group**.
 
-<img src="../images/add-new-smalltalk-group.png" alt="Add New SmallTalk Group" title="Add New SmallTalk Group" style="border: 1px solid gray; zoom:75%;">
+  <img src="../images/add-new-smalltalk-group.png" alt="Add New SmallTalk Group" title="Add New SmallTalk Group" style="border: 1px solid gray; zoom:75%;">
+  
 
 On the **New Group** dialog box, enter a name in the **Group Name** field, then click **Proceed**.
 
-<img src="../images/add-smalltalk-group-name.png" alt="Add SmallTalk Group Name" title="Add SmallTalk Group Name" style="border: 1px solid gray; zoom:75%;">
+  <img src="../images/add-smalltalk-group-name.png" alt="Add SmallTalk Group Name" title="Add SmallTalk Group Name" style="border: 1px solid gray; zoom:75%;">
 
 From the Small Talk editor that opens you can enter User Utterance – Bot Response pairs and **Add** to the list.
 
-<img src="../images/add-user-utterance -bot-response-pairs.png" alt="Add User Utterance and Bot Response Pairs" title="Add User Utterance and Bot Response Pairs" style="border: 1px solid gray; zoom:75%;">
+  <img src="../images/add-user-utterance -bot-response-pairs.png" alt="Add User Utterance and Bot Response Pairs" title="Add User Utterance and Bot Response Pairs" style="border: 1px solid gray; zoom:75%;">
 
-#### Group Settings
+### Group Settings
 
 On hovering over any Small Talk group, you have the option to:
 
@@ -181,7 +182,7 @@ On hovering over any Small Talk group, you have the option to:
 * **Settings** that will allow you to:
 * Manage Variable Namespaces by associating a variable namespace to use with this Small Talk group. This option is visible only when the variable namespace is enabled for the VA. For more information, refer to [Managing Namespace](https://developer.kore.ai/docs/bots/bot-settings/bot-management/managing-namespace/).
 
-<img src="../images/manage-variable-namespaces.png" alt="Manage Variable Namespaces" title="Manage Variable Namespaces" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/manage-variable-namespaces.png" alt="Manage Variable Namespaces" title="Manage Variable Namespaces" style="border: 1px solid gray; zoom:75%;">
 
 ### Import Small Talk
 
@@ -189,11 +190,11 @@ If you have already had Small Talk for your company, you can import it using a J
 
 * While in Small Talk, click the **more** (ellipses) icon and select the **Import** option.
 
-<img src="../images/import-smalltalk-file.png" alt="Import Smalltalk File" title="Import Smalltalk File" style="border: 1px solid gray; zoom:75%;">
+  <img src="../images/import-smalltalk-file.png" alt="Import Smalltalk File" title="Import Smalltalk File" style="border: 1px solid gray; zoom:75%;">
 
 * At this point you can download  a sample file to get the formatting details, if you need them. Once your import file is prepared, select it and click **Next**.  
 
-<img src="../images/drag-and-drop-smalltalk-file.png" alt="Drag and Drop Smalltalk File" title="Drag and Drop Smalltalk File" style="border: 1px solid gray; zoom:75%;">
+  <img src="../images/drag-and-drop-smalltalk-file.png" alt="Drag and Drop Smalltalk File" title="Drag and Drop Smalltalk File" style="border: 1px solid gray; zoom:75%;">
 
 * The import begins instantly.
 
@@ -211,25 +212,32 @@ You can click the existing Greetings group to modify it, if the default small ta
 Once you create/import a group, you can add/modify the query-response pairs.
 
 1. Enter the User Query in the **User** column and the corresponding Bot Response in the **Bot** column.
-2. Press **Enter** or **Add** to add the query-response pair to the list. 
-<img src="../images/add-query-response.gif" alt="Add Query Response" title="Add Query Response" style="border: 1px solid gray; zoom:75%;">
+2. Press **Enter** or **Add** to add the query-response pair to the list.
+
+    <img src="../images/add-query-response.gif" alt="Add Query Response" title="Add Query Response" style="border: 1px solid gray; zoom:75%;">
+
 3. Queries are designed using patterns. [Know more about patterns](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#managing-patterns).
 
 4. For each User Query, you can enter **alternate questions** that depict a different way the user might ask the same query.
 
 5. For each bot response, you can enter **alternate responses**. The Platform picks one response at random during runtime.
-<img src="../images/alternate-responses.png" alt="Alternate Response" title="Alternate Response" style="border: 1px solid gray; zoom:75%;">
+  <img src="../images/alternate-responses.png" alt="Alternate Response" title="Alternate Response" style="border: 1px solid gray; zoom:75%;">
 
 6. Using the handlebar icon that appears in front of the question on hover, you can rearrange the order of the questions.
-<img src="../images/rearrange-questions-order.gif" alt="Rearrange Questions Order" title="Rearrange Questions Order" style="border: 1px solid gray; zoom:75%;">
+
+    <img src="../images/rearrange-questions-order.gif" alt="Rearrange Questions Order" title="Rearrange Questions Order" style="border: 1px solid gray; zoom:75%;">
 
 7. Each User Query can have a **child query**. The child-questions can be asked only when the parent-question is asked and responded to. To add a Child Query, use the **+** icon that appears next to the question when you hover over it.
-<img src="../images/child-item.gif" alt="Child Item" title="Child Item" style="border: 1px solid gray; zoom:75%;">
-8. You can delete query or response alternatives by hovering over them and clicking the red **x** on the top right corner.
-<img src="../images/delete-query-or-response.png" alt="Delete query or response" title="Delete query or response" style="border: 1px solid gray; zoom:75%;">
 
-9. You can also delete the entire Query-Response pair, along with its child pair by hovering over the parent and clicking the **bin** icon on the far right. You will be asked to confirm your choice. 
-<img src="../images/delete-qr-pair-child.png" alt="Delete query response pair child" title="Delete query response pair child" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/child-item.gif" alt="Child Item" title="Child Item" style="border: 1px solid gray; zoom:75%;">
+
+8. You can delete query or response alternatives by hovering over them and clicking the red **x** on the top right corner.
+
+    <img src="../images/delete-query-or-response.png" alt="Delete query or response" title="Delete query or response" style="border: 1px solid gray; zoom:75%;">
+
+9. You can also delete the entire Query-Response pair, along with its child pair by hovering over the parent and clicking the **bin** icon on the far right. You will be asked to confirm your choice.
+
+    <img src="../images/delete-qr-pair-child.png" alt="Delete query response pair child" title="Delete query response pair child" style="border: 1px solid gray; zoom:75%;">
 
 10. Responses are **Channel-specific** and **Java Script** formatted. By clicking the **Settings** (gear icon) that appears next to the response, when you hover over it you will reach the Manage Response window. Here is where you can configure the following:
   * Add a default message to be displayed on all channels.

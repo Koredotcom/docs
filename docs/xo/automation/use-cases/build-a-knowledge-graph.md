@@ -12,16 +12,17 @@ To open the Knowledge Graph builder, follow the below steps:
 2. Select the **Build** tab from the top menu.
 3. On the left menu, select **Conversation Skills** and click **Knowledge Graph**.
 4. You will notice that there is already a Knowledge Graph with the name of your assistant.
-<img src="../images/access-existing-knowledge-graph.png" alt="access existing knowledge graph" title="access existing knowledge graph" style="border: 1px solid gray; zoom:75%;">
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>All features explained here are supported by the Few-Shot Knowledge Graph, except for the following:
-<ul><li>Few-Shot Knowledge Graphs do not require an ontology structure, but you can create one to  improve intent detection.</li> 
-<li>Default terms are not available in Few-Shot Knowledge Graphs. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.</li>
-<li>Lemmatization using Parts of Speech, Search in Answer, and Contextual Paths Qualification are not supported by Few-Shot Graphs. Please see the Knowledge Graph Types Comparison Table for a detailed list of supported features.</li>
-<li>Path Level and Knowledge Graph Synonyms are only supported for Mandatory Terms and for Tags.</li></ul></p>
-</div>
+    <img src="../images/access-existing-knowledge-graph.png" alt="access existing knowledge graph" title="access existing knowledge graph" style="border: 1px solid gray; zoom:75%;">
+
+    <div class="admonition note">
+    <p class="admonition-title">Note</p>
+    <p>All features explained here are supported by the Few-Shot Knowledge Graph, except for the following:
+    <ul><li>Few-Shot Knowledge Graphs do not require an ontology structure, but you can create one to  improve intent detection.</li> 
+    <li>Default terms are not available in Few-Shot Knowledge Graphs. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.</li>
+    <li>Lemmatization using Parts of Speech, Search in Answer, and Contextual Paths Qualification are not supported by Few-Shot Graphs. Please see the Knowledge Graph Types Comparison Table for a detailed list of supported features.</li>
+    <li>Path Level and Knowledge Graph Synonyms are only supported for Mandatory Terms and for Tags.</li></ul></p>
+    </div>
 
 ## Create the Knowledge Graph Node Structure
 
@@ -33,9 +34,10 @@ To create nodes, follow the below steps:
 2. On the top left of the Knowledge Graph window, hover over the root node.
 3. Click the **+** icon. A text box appears below to **Add Node**. For better performance, there is a restriction of 50k FAQs spread across 20k maximum allowed number of nodes.
 4. Type the name of the node in the text box and press **Enter**. A warning would be displayed in case you enter a duplicate node name, i.e. if a child node with the same name already exists under the parent node.
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This node becomes a child for the root node and can be referred to as a First-level node.</p></div>
+    <div class="admonition note">
+    <p class="admonition-title">Note</p>
+    <p>This node becomes a child for the root node and can be referred to as a First-level node.</p></div>
+
 <ol start="5"><li>Repeat steps 1 to 3 in this section to create other First-level nodes.</li>
 <li>After you create First-level nodes, create child nodes as follows:</li>
 <ul><li>Hover over any First-level node, and click the plus icon to create its child node.</li>
@@ -44,6 +46,7 @@ To create nodes, follow the below steps:
 Follow the same process to create multiple node levels. 
 
 The demo below shows you how to create nodes.
+
 <img src="../images/add-kg-node.gif" alt="add kg node" title="add kg node" style="border: 1px solid gray; zoom:75%;">
 
 You can delete nodes by clicking the **Delete** icon on the right.
@@ -72,7 +75,7 @@ To leverage the capabilities of the Knowledge Graph and dialog tasks, and handle
 5. You can also add a **Reference Id**. This field can be used to add a reference to any external content used as a source for this FAQ.
 6. Click **Save**.
 
-<img src="../images/save-task.png" alt="save kg task" title="save kg task" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/save-task.png" alt="save kg task" title="save kg task" style="border: 1px solid gray; zoom:75%;">
 
 ### Manage Traits, Synonyms, and Stop Words
 
@@ -110,9 +113,9 @@ You can move one or more Intent and Response sets between nodes in your Knowledg
 2. Identify the intent that you want to move, and select the checkbox next to it. You can select multiple items.
 3. Drag the intent and drop it on the relevant node. The node is highlighted and the intent displays on the right pane of the node.
 
-The demo below shows you how this works.
+    The demo below shows you how this works.
 
-<img src="../images/move-to-new-node.gif" alt="move node" title="move node" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/move-to-new-node.gif" alt="move node" title="move node" style="border: 1px solid gray; zoom:75%;">
 
 ### Edit and Delete Terms
 
@@ -131,12 +134,12 @@ To delete a term, follow the steps below:
     * **Delete the FAQs along with the term** – Choosing this option deletes the term and FAQs under it.
     * **Delete the term and move FAQs to root term** - Choosing this option deletes the term and moves the FAQs under it to the root term.
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>If the term has child nodes, all those nodes will be deleted. A warning message like the one shown below is displayed before you confirm.</p>
-</div>
+    <div class="admonition warning">
+    <p class="admonition-title">Warning</p>
+    <p>If the term has child nodes, all those nodes will be deleted. A warning message like the one shown below is displayed before you confirm.</p>
+    </div>
 
-<img src="../images/child-node-deleted.png" alt="child node deleted" title="child node deleted" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/child-node-deleted.png" alt="child node deleted" title="child node deleted" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -152,10 +155,12 @@ To delete a term, follow the steps below:
 3. Hover over the intent or response to edit it and click the **Edit** icon.
 4. Make changes to the intent or response and click **Save**.
 5. You can delete the intent using the **Delete** icon.
-<img src="../images/child-node-deleted.png" alt="child node deleted" title="child node deleted" style="border: 1px solid gray; zoom:75%;">
+    
+    <img src="../images/child-node-deleted.png" alt="child node deleted" title="child node deleted" style="border: 1px solid gray; zoom:75%;">
 
 6. Selecting multiple intents lets you delete them in bulk.
-<img src="../images/delete-selected-intents.png" alt="delete faq intent" title="delete faq intent" style="border: 1px solid gray; zoom:75%;">
+
+    <img src="../images/delete-selected-intents.png" alt="delete faq intent" title="delete faq intent" style="border: 1px solid gray; zoom:75%;">
 
 ## Improve Performance
 

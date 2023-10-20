@@ -132,13 +132,13 @@ To create a Feedback Survey on the Bot Builder, follow the steps below:
 
     <img src="../images/add-feedback.png" alt="add feedback" title="add feedback" style="border: 1px solid gray; zoom:75%;">
  
-Otherwise, click **New Survey**.
+    Otherwise, click **New Survey**.
 
-<img src="../images/click-new-survey.png" alt="click new survey" title="click new survey" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/click-new-survey.png" alt="click new survey" title="click new survey" style="border: 1px solid gray; zoom:75%;">
 
-In the **Add Feedback Survey** window, define the survey details and design, and launch the survey to be visible to customers.
+    In the **Add Feedback Survey** window, define the survey details and design, and launch the survey to be visible to customers.
 
-The Feedback Survey definition and design flow steps are given below:
+    The Feedback Survey definition and design flow steps are given below:
 
 ### Step 1: Define the Survey Details
 
@@ -234,7 +234,7 @@ To configure the feedback survey launch, follow the steps below:
     * **Launch after End of Task**: The dialog task is considered as the ‘_End of Task_‘ event, and the survey is triggered at the end of every conversation. When selected, **_End of Task_** (**End of Conversation** Event) under **Intelligence** > **Events** > **End Of Task** will be overridden and the feedback survey is launched. Through the survey dialog you’ve created in the previous step.
     * **I will decide how to launch the Survey**: You can manually initiate the feedback survey at any time by using the associated dialog task in the Kore.ai XO platform. A dialog task will be made available under Build → Conversational Skills. This allows you to control when the survey is launched and gather feedback at your own convenience.
 
-      <img src="../images/launch-survey-after-end-of-task.png" alt="launch survey after end of task" title="launch survey after end of task" style="border: 1px solid gray; zoom:75%;">
+        <img src="../images/launch-survey-after-end-of-task.png" alt="launch survey after end of task" title="launch survey after end of task" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Create** to launch the feedback survey.
 

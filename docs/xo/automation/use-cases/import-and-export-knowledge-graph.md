@@ -41,15 +41,16 @@ To export a Knowledge Graph, follow the below steps:
 
 1. On the left pane, click **Conversational Skills** > **Knowledge Graph**.
 2. You can find the **Export** option on the respective Knowledge Graph.
-<img src="../images/export-knowledge-graph.png" alt="export knowledge graph" title="export knowledge graph" style="border: 1px solid gray; zoom:75%;">
+
+    <img src="../images/export-knowledge-graph.png" alt="export knowledge graph" title="export knowledge graph" style="border: 1px solid gray; zoom:75%;">
 
 3. Based on the preferred format: click **Export JSON** or **Export CSV**.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Please read the warning message shown below before clicking <b>Confirm</b>. To learn more about caching challenges and strategies, click <a href="https://aws.amazon.com/builders-library/caching-challenges-and-strategies/#:~:text=Caches%20are%20also%20susceptible%20to%20poisoning%20attacks%2C%20in%20which%20a,will%20see%20the%20malicious%20value">here</a>.</p>
-</div>
+    <div class="admonition note">
+    <p class="admonition-title">Note</p>
+    <p>Please read the warning message shown below before clicking <b>Confirm</b>. To learn more about caching challenges and strategies, click <a href="https://aws.amazon.com/builders-library/caching-challenges-and-strategies/#:~:text=Caches%20are%20also%20susceptible%20to%20poisoning%20attacks%2C%20in%20which%20a,will%20see%20the%20malicious%20value">here</a>.</p>
+    </div>
 
-<img src="../images/export-caching-notice-message.png" alt="export caching message" title="export caching message" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/export-caching-notice-message.png" alt="export caching message" title="export caching message" style="border: 1px solid gray; zoom:75%;">
 
-When these steps are completed, the Knowledge Graph file is downloaded to your machine.
+    When these steps are completed, the Knowledge Graph file is downloaded to your machine.
