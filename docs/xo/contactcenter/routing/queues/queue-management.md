@@ -4,7 +4,7 @@
 
 All conversations get assigned to queues based on the agent selection logic and skill proficiency match. A conversation can only be in one queue at any given time. Once conversations get assigned to a queue, SmartAssist assigns them to agents. The agent assignment works based on pre-established rules and criteria, as shown in the illustration below:
 
-![agent_assignment_criteria](./images/queues/agent-assignment-criteria.png)
+![agent_assignment_criteria](./images/agent-assignment-criteria.png)
 
 Once a conversation comes in, it gets assigned to a queue. Afterward, the next step is to check the routing mode. 
 
@@ -33,7 +33,7 @@ All conversations will get assigned to queues as they come in. This process is b
 ## The Queues Live Board
 
 To access _Queues **,**_ go to **Configuration > Routing > Queues**.\
-![queues_page](./images/queues/queues-page.png)
+![queues_page](./images/queues-page.png)
 
 This section displays the following:
 
@@ -48,7 +48,7 @@ This section displays the following:
 
 1. At the top-right corner of the Configuration page, Click **New Queue**.
 2. In the **New Queue** window, you can set up the queue as follows:\
-![new_queue_button](./images/queues/new-queue-button.png)
+![new_queue_button](./images/new-queue-button.png)
     1. With **Simple Routing**, you can configure the Queue Settings and Assignments;  
     2. With **Advanced Routings**, you can configure the Queue Settings, Assignments, Preferred Agents, and Skills.
 
@@ -59,26 +59,26 @@ This section is available in _Simple_ and _Advanced Routing_ modes and allows yo
 1. The **Name** by which to identify the queue;
 2. A short **Description** of the queue (optional);
 3. **Hours of Operation**: Select from the available [hours of operation](https://docs.kore.ai/smartassist/settings/hours-of-operation-2/).\
-![queue_settings](./images/queues/queue-settings.png)
+![queue_settings](./images/queue-settings.png)
 
 4. **Transfer Rules:** This feature lets you limit the agents’ ability to transfer from one queue to another. If this feature is enabled, you can select the specific queues to which agents can transfer customers. If disabled, agents can transfer to any queue from the current one.\
-![transfer_rules](./images/queues/transfer-rules.png)
+![transfer_rules](./images/transfer-rules.png)
 
 !!! Note
 
 If the customer ends the chat before the completion of a transfer, then the transfer will be dropped, and the interaction will not be assigned to any queue or agent. This feature only applies to chat conversations and is available if you are using Kore WebSdk v1.0. \
 
 5. **Maximum Wait Time**: Specify the maximum time a conversation should wait in the queue before the default _No available agent_ flow handles it.\
-![maximum_wait_time](./images/queues/maximum-wait-time.png)
+![maximum_wait_time](./images/maximum-wait-time.png)
 
 6. Enable **Advanced Routing**: Preferred agents and skill dropoffs will be available if you enable this option.\
-![advanced_routing](./images/queues/advanced-routing.png)
+![advanced_routing](./images/advanced-routing.png)
 
 ### Assignments
 
 This section is available in _Simple_ and _Advanced Routing_ modes and allows you to assign agents, agent groups, or both to the queue.
 
-![assignments](./images/queues/assignments.png)
+![assignments](./images/assignments.png)
 
 #### Assign Agents
 
@@ -86,7 +86,7 @@ Follow these steps to assign agents to a queue:
 
 1. Click **Add Agent**;
 2. **Click the checkbox next to an agent’s name** to select it. You can use the _Search_ field at the top of the list to find a specific person.\
-![assign_agents](./images/queues/assign-agents.gif)
+![assign_agents](./images/assign-agents.gif)
 
 #### Assign Agent Groups
 
@@ -146,5 +146,5 @@ Deleting a queue means that all corresponding routing rules are removed.
 
 There are two ways to assign a conversation to a queue:
 
-1. Using the _[Set Queue ](https://docs.kore.ai/smartassist/experience-flows/set-queue/)_node within an experience flow.
+1. Using the _[Set Queue](https://docs.kore.ai/smartassist/experience-flows/set-queue/)_ node within an experience flow.
 2. Using the [agentUtils.setQueue()](https://docs.kore.ai/smartassist/utils/script-nodes-call-flows-agent-utils/#Set_Queue) method.
