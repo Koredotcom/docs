@@ -36,6 +36,7 @@ To customize the interruptions settings for a node:
 1. Open the dialog task and then the node to change settings.
 2. Click the **instance tab** and select **Advanced Controls**.
 3. Under the **Interruptions Behavior** section, select **Customize for this node** and make the necessary configurations. These configurations are the same as discussed above for the VA level [Interruptions Settings](https://multisite.korebots.com/bot-intelligence-bots/interruption-handling-context-switching-intents/#Interruptions).
+
 <img src="../images/node-level-customization.gif" alt="node level customization" title="node level customization" style="border: 1px solid gray; zoom:65%;">
 
 ## Dialog Level Settings
@@ -93,7 +94,7 @@ Following are the options under **Allow interruptions**.
    <td>This option lets the assistant switch to a new intent as soon as it is detected irrespective of the current intent flow. When you select this option, the Resume Options section appears providing further choices to define how to resume the on-hold task once the new intent task is completed.  Refer to the <a href="https://developer.kore.ai/docs/bots/bot-intelligence/interruption-handling-context-switching-intents/#Resume_Options">Resume Options</a> section below for details.
    </td>
   </tr>
- <tr bgcolor="#BABABA">
+ <tr bgcolor="#FAFAFA">
    <td><strong>Discard the current task and switch to new</strong>
    </td>
    <td>When you select this option, the VA discards the current task and switches to a new task soon after it encounters another intent. The VA sends a message to notify the user before switching to the new task and the current task would be discarded. You can customize the message from the <strong>Manage Response </strong>setting.
@@ -105,7 +106,7 @@ Following are the options under **Allow interruptions**.
    <td>When you select this option, the VA discards the current task and switches to a new task soon after it encounters another intent. The VA does not notify the user about the switch and does not resume the current task later.
    </td>
   </tr>
-  <tr bgcolor="#BABABA">
+  <tr bgcolor="#FAFAFA">
    <td><strong>Continue with the current task and add a new task to the follow-up task list</strong>
    </td>
    <td>When you select this option, the VA continues on the current task even if it encounters a new intent. It, however, adds the new intent to the Follow-up intents array. Refer to the <a href="https://developer.kore.ai/docs/bots/bot-intelligence/sub-intents-and-follow-up-intents/#Follow-up_Intents">Follow-up Intents</a> documentation for more information.
@@ -160,7 +161,7 @@ User: Yes
 VA: Enter the name of the destination airport</code>
    </td>
   </tr>
-  <tr bgcolor="#BABABA">
+  <tr bgcolor="#FAFAFA">
    <td><strong>Notify the user with a message that the on-hold task is being resumed</strong>
    </td>
    <td>Notifies the user with a message and resumes the last task that’s kept on hold without user confirmation.
@@ -209,7 +210,7 @@ Condition: Mostly Sunny
 VA: Enter the name of the destination airport</code>
    </td>
   </tr>
-  <tr bgcolor="#BABABA">
+  <tr bgcolor="#FAFAFA">
    <td><strong>Always resume the on hold task without any specific message to the user if the task is ended in a single response</strong>
    </td>
    <td>Sometimes, the switched-over tasks end with a single response. For example, in the weather forecast example above, if the user had directly entered <em>By the way, what’s the weather forecast for LA tomorrow?</em> the VA would have merely responded with the forecast, with no further steps.
