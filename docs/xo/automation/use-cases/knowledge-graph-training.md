@@ -138,8 +138,8 @@ To add synonyms for a term, follow the below steps:
 
 ![manage synonyms](../use-cases/images/manage-synonyms.png "manage synonyms")
 
-<ol start="4"><li>You can use <b>Bot Synonyms</b> in the identification of KG terms. This option can be enabled either from the [Threshold and Configurations](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/#Threshold_Configurations) or from <b>More Options</b> > <b>Manage Synonyms</b>.</li>
-Once enabled, the bot-level synonyms that match with KG terms (or tags) are automatically displayed under the Bot Synonyms heading in the <b>Synonyms</b> section and are used by the KG engine. The Bot Synonyms are used similar to that of KG graph level synonyms, for path qualification and for question matching. When a node matches both with a bot synonym and a bot concept, the bot concept takes priority.
+<ol start="4"><li>You can use <b>Bot Synonyms</b> in the identification of KG terms. This option can be enabled either from the <a href="https://developer.kore.ai/docs/bots/nlp/knowledge-graph/#Threshold_Configurations">Threshold and Configurations</a> or from <b>More Options</b> > <b>Manage Synonyms</b>.
+<p>Once enabled, the bot-level synonyms that match with KG terms (or tags) are automatically displayed under the Bot Synonyms heading in the <b>Synonyms</b> section and are used by the KG engine. The Bot Synonyms are used similar to that of KG graph level synonyms, for path qualification and for question matching. When a node matches both with a bot synonym and a bot concept, the bot concept takes priority.</p></li>
 <li>To add synonyms for a child node, enter them in the Synonyms box next to the <b>Child Terms</b> listed at the bottom of the settings window.</li></ol>
 
 ![child synonyms terms](../use-cases/images/child-synonyms-terms.png "child synonyms terms")

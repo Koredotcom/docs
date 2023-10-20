@@ -22,8 +22,7 @@ Follow the instructions below to build your Knowledge Graph in a spreadsheet.
 4. You are prompted to **back up** the Knowledge Graph before proceeding. Choose the CSV or JSON format for the backup.
 5. After backup, click **Proceed**.
 6. On the corresponding dialog box, click **Sample CSV**. The CSV file is downloaded to your local computer.
-
-![download sample csv](../use-cases/images/download-sample-csv.png "download sample csv")
+<img src="../use-cases/images/download-sample-csv.png" alt="download sample csv" title="download sample csv" style="border: 1px solid gray; zoom:75%;">
 
 ### Build the Knowledge Graph
 
@@ -44,7 +43,8 @@ Moving forward, this article discusses detailed information for each section and
 ### **FAQ**
 
 This contains the actual questions and answers along with the alternate questions, answers, and extended answers.
-![FAQ Sample](../use-cases/images/faq-sample.png "FAQ Sample")
+
+<img src="../use-cases/images/faq-sample.png" alt="FAQ Sample" title="FAQ Sample" style="border: 1px solid gray; zoom:75%;">
 
 The following column details can be used:
 
@@ -69,7 +69,8 @@ The following column details can be used:
 ### **Nodes**
 
 This section includes settings for both nodes and tags.
-![Nodes and Tags Settings](../use-cases/images/nodes-and-tags-settings.png "[Nodes and Tags Settings")
+
+<img src="../use-cases/images/nodes-and-tags-settings.png" alt="Nodes and Tags Settings" title="Nodes and Tags Settings" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title"><b>Key Terms and Definitions</b></p>
@@ -86,7 +87,8 @@ This section includes settings for both nodes and tags.
 ### **Synonyms**
 
 Use this section to enter the synonyms as key-value pairs.
-![enter synonyms](../use-cases/images/enter-synonyms.png "enter synonyms")
+
+<img src="../use-cases/images/enter-synonyms.png" alt="enter synonyms" title="enter synonyms" style="border: 1px solid gray; zoom:75%;">
 
 * **Synonyms**: Mandatory entry in the header, must be blank in the following rows.
 * **Phrase**: for which the synonym needs to be entered.
@@ -103,13 +105,13 @@ Use of synonyms in KG term identification can be enabled using the following:
 * **KG Params**: mandatory entry in the header, must be blank in the following rows.
 * **lang**: VA language code. For example, “en” for English.
 * **stopwords**: Comma-separated values.
-![kg params](../use-cases/images/kg-params.png "kg params")
+<img src="../use-cases/images/kg-params.png" alt="kg params" title="kg params" style="border: 1px solid gray; zoom:75%;">
 
 ### **Traits**
 
 Trait related information can be specified as follows:
 
-![alt_text](../use-cases/images/trait-related-information.png "image_tooltip")
+<img src="../use-cases/images/trait-related-information.png" alt="trait related information" title="trait related information" style="border: 1px solid gray; zoom:75%;">
 
 * **Traits**: Mandatory entry in the header, must be blank in the following rows.
 * **lang**: VA language code. For example, “en” for English.
@@ -142,7 +144,7 @@ Follow the instructions below to build your Knowledge Graph using JSON:
 
 ### JSON Reference
 
-![json reference](../use-cases/images/json-reference-code.png "json reference")
+<img src="../use-cases/images/json-reference-code.png" alt="json reference" title="json reference" style="border: 1px solid gray; zoom:75%;">
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">

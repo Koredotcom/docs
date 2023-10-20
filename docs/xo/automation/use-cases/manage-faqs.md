@@ -19,7 +19,8 @@ To add an FAQ, follow the below steps:
 
 1. On the left pane of the **Knowledge Graph** window, click the node to which you want to add questions.
 2. Click **Add Intent** on the top-right.
-![add faq intent](../use-cases/images/add-faq-intent.png "add faq intent")
+<img src="../use-cases/images/add-faq-intent.png" alt="add faq intent" title="add faq intent" style="border: 1px solid gray; zoom:75%;">
+
 3. On the **Intent** window, under the **Intent** section, select **FAQ**.
 4. (Optional) Enter a **Display Name** to represent the FAQ to the end-users.
 5. In the **Add Question** field, enter the question that describes the user’s query.
@@ -29,7 +30,7 @@ To add an FAQ, follow the below steps:
 9. (Optional) Enable or disable the **Intent Status** for the FAQ intents. The Knowledge Graph does not use the FAQs intents that are enabled. These intents do not participate in the intent recognition process during testing and end-user interaction.
 10. (Optional) Enable or disable the **Term Status**. The Knowledge Graph uses only the enabled terms. The disabled terms and all their FAQ intents do not participate in the intent recognition process during testing and end-user interaction.
 11. (Optional) Add a **Reference Id**. This field is used to reference any external content used as a source for this FAQ.
-![add faq form](../use-cases/images/add-faq-form.png "add faq form")
+<img src="../use-cases/images/add-faq-form.png" alt="add faq form" title="add faq form" style="border: 1px solid gray; zoom:75%;">
 
 As you enter these questions, pay attention to terms that you can further add to your FAQ hierarchy. [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/creating-a-knowledge-graph/?preview_id=18007&preview_nonce=70f4e3338c&post_format=standard&_thumbnail_id=-1&preview=true#).
 
@@ -65,7 +66,6 @@ Adding FAQs from an existing source is the most effective method to implement in
 * Select the **Import** option to import a Knowledge Graph exported from another VA. [See here for more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/importing-the-bot-ontology-from-csv-or-json/).
 * Leverage an existing list of Q&As from **Knowledge Extraction** to populate the Questions and Responses. [See here for more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-extraction-service/).
 
-
 ## Move FAQs Between Nodes
 
 You can move one or more Questions and Response sets between nodes in your Knowledge Graph, with the steps below:
@@ -75,7 +75,7 @@ You can move one or more Questions and Response sets between nodes in your Knowl
 3. Drag the FAQ and drop it on the relevant node. The node is highlighted and the FAQ displays on the right pane of the node.
 
 The demo below shows you how this works.
-![move faq between nodes demo](../use-cases/images/move-faq-to-new-node.gif "move faq between nodes demo")
+<img src="../use-cases/images/move-faq-to-new-node.gif" alt="move faq between nodes demo" title="move faq between nodes demo" style="border: 1px solid gray; zoom:75%;">
 
 ## Edit FAQs and Responses
 
@@ -84,8 +84,7 @@ The demo below shows you how this works.
 3. Hover over the Question or Response to edit it and click the **edit** icon.
 4. Make changes to the Question or Response and click **Save**.
 5. You can delete the Question using the **bin** icon.
-![edit or delete faq responses](../use-cases/images/edit-delete-faq-responses.png "edit or delete faq responses")
-
+<img src="../use-cases/images/edit-delete-faq-responses.png" alt="edit or delete faq responses" title="edit or delete faq responses" style="border: 1px solid gray; zoom:75%;">
 Selecting multiple intents lets you delete them in bulk.
-![delete selected intents](../use-cases/images/delete-multiple-intents.png "delete selected intents")
+<img src="../use-cases/images/delete-multiple-intents.png" alt="delete selected intents" title="delete selected intents" style="border: 1px solid gray; zoom:75%;">
 

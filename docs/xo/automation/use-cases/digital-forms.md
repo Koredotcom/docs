@@ -19,7 +19,7 @@ In this article, we discuss the features and implementation of Digital Forms in 
 
 You can access **Digital Forms** from the **Build** top menu under **Digital Skills > Digital Forms**.
 
-![Access Digital Forms](../use-cases/images/access-digital-forms.png "Access Digital Forms")
+<img src="../use-cases/images/access-digital-forms.png" alt="Access Digital Forms" title="Access Digital Forms" style="border: 1px solid gray; zoom:75%;">
 
 Here is the overall usage process for Digital Forms within the Kore.ai XO Platform
 
@@ -45,7 +45,7 @@ To create forms, follow the steps below:
     * **Display Name** for the Form.
     * **Description** of the Form.
 
-      ![Create New Form](../use-cases/images/create-new-form.png "Create New Form")
+      <img src="../use-cases/images/create-new-form.png" alt="Create New Form" title="Create New Form" style="border: 1px solid gray; zoom:75%;">
 
 4. **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. Click the card to select the style. If it has a logo, you can upload an image file (jpg or png) for the logo.
 <div class="admonition note">
@@ -53,25 +53,16 @@ To create forms, follow the steps below:
 <p>During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.</p>
 </div>
 
-<ol start="5"><li>Turn on the <b>Description</b> toggle if you want to show a description of the form in the header.</li></ol>
-
-![Description Toggle](../use-cases/images/description-toggle-turn-on.png "Description Toggle")
-
-<ol start="6"><li><b>Form Security</b> – Enable <b>Secure Form Data</b> to redact form data from the Bot Context, Debug Logs, Service Calls, Agent Transfer, and the Bot Kit.</li></ol>
-
-![secure form data](../use-cases/images/secure-form-data.png "secure form data")
-
+<ol start="5"><li>Turn on the <b>Description</b> toggle if you want to show a description of the form in the header.
+<img src="../use-cases/images/description-toggle-turn-on.png" alt="Description Toggle" title="Description Toggle" style="border: 1px solid gray; zoom:75%;"></li>
+<li><b>Form Security</b> – Enable <b>Secure Form Data</b> to redact form data from the Bot Context, Debug Logs, Service Calls, Agent Transfer, and the Bot Kit.
+<img src="../use-cases/images/secure-form-data.png" alt="secure form data" title="secure form data" style="border: 1px solid gray; zoom:75%;"></li>
 <p>While enabling, you can also choose whether to display the <b>Secure Form icon</b> to your end users.</p>
-
-![enable redact form data](../use-cases/images/enable-redact-form-data.png "enable redact form data")
-
+<img src="../use-cases/images/enable-redact-form-data.png" alt="enable redact form data" title="enable redact form data" style="border: 1px solid gray; zoom:75%;">
 <p>Once enabled, the Platform will replace the user input with a unique random system-generated alphanumeric value in all the modules. Also, the <b>Secure Form</b> icon and a tip will be displayed, notifying the user that the form is secure.</p>
-
-![secure form icon](../use-cases/images/secure-form-icon.png "secure form icon")
-
-<ol start="7"><li>Click <b>Save & Proceed</b>.</li></ol>
-
-![save digital form](../use-cases/images/save-digital-form.png "save digital form")
+<img src="../use-cases/images/secure-form-icon.png" alt="secure form icon" title="secure form icon" style="border: 1px solid gray; zoom:75%;">
+<li>Click <b>Save & Proceed</b>.
+<img src="../use-cases/images/save-digital-form.png" alt="save digital form" title="save digital form" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ### Add Components
 
@@ -79,23 +70,23 @@ Once you configure the basic details for your form, the Platform takes you to th
 
 You can drag and drop the components available on the left pane to the canvas and configure their properties to build the form. For details of the available components & their properties.
 
-![Drag and drop component](../use-cases/images/drag-component.gif "Drag and drop component")
+<img src="../use-cases/images/drag-component.gif" alt="Drag and drop component" title="Drag and drop component" style="border: 1px solid gray; zoom:75%;">
 
 You can search for a given component, or scroll through the list to find what you require.
 
-![search component](../use-cases/images/search-component.gif "search component")
+<img src="../use-cases/images/search-component.gif" alt="search component" title="search component" style="border: 1px solid gray; zoom:75%;">
 
 You can view the components list in a grid format by clicking the icon on the top right of the list.
 
 If you hover in-between components within the form itself, you can find an in-form **Add Component** button which also allows you to search and add new components without having to navigate to the left-side list.
 
-![add component](../use-cases/images/add-component-in-form.png "add component")
+<img src="../use-cases/images/add-component-in-form.png" alt="add component" title="add component" style="border: 1px solid gray; zoom:75%;">
 
 ### Add Form Sections
 
 If you are working with a longer and more complex form, you can split it into sections. Hover your cursor in-between form components to reveal an **Add Section** button. Clicking it will add a title and description to your form, which you can use to organize the other fields into sections.
 
-![add form section](../use-cases/images/add-section.png "add form section")
+<img src="../use-cases/images/add-section.png" alt="add form section" title="add form section" style="border: 1px solid gray; zoom:75%;">
 
 ### Form Actions
 
@@ -107,12 +98,12 @@ From the Forms Listing page, you can:
 * **Test** forms.
 * **Delete** forms.
 
-![form actions](../use-cases/images/form-actions.png "form actions")
+<img src="../use-cases/images/form-actions.png" alt="form actions" title="form actions" style="border: 1px solid gray; zoom:75%;">
 
 ### Edit
 You can use the **Edit** option from the form listing to edit the form. The following actions are performed on the Form in edit mode:
 
-![form actions](../use-cases/images/form-editor.png "form actions")
+<img src="../use-cases/images/form-editor.png" alt="form editor" title="form editor" style="border: 1px solid gray; zoom:75%;">
 
 * **_The Component Listing_** is used for selecting and adding components to the Form by simple drag and drop action.
 * Use the **View Toggler** to switch between **Desktop View** and **Mobile View**.
@@ -130,13 +121,13 @@ You can use the **Edit** option from the form listing to edit the form. The foll
 
 Use the **Branding** option to change the look and feel of the form to reflect your organization’s standards. An instant preview gives you an idea of how the form would look with the new colors and you have the option to **Save** or **Restore Default** scheme.
 
-![form actions](../use-cases/images/form-editor.png "form actions")
+<img src="../use-cases/images/branding-flight-search.png" alt="branding" title="branding" style="border: 1px solid gray; zoom:75%;">
 
 ### Test
 
 **Test** the form to see a preview of what it would look like to the end user. You can do this at any point while you work on the form.
 
-![test preview](../use-cases/images/test-preview.png "test preview")
+<img src="../use-cases/images/test-preview.png" alt="test preview" title="test preview" style="border: 1px solid gray; zoom:75%;">
 
 ## Invoke a Form
 
@@ -156,13 +147,11 @@ To invoke a form from a dialog task, follow the below steps:
 1. Create/open the dialog from where you want to invoke the Digital Form.
 2. Click the **+** icon next to the node where you want to add the Form.
 3. Select the **Digital Form** option and then the form from the list. You can choose to add a Digital Form directly or use an existing Form Node.
-4. You are prompted to select the **Form Experience**, it can be: 
+4. You are prompted to select the **Form Experience**, it can be:
+<img src="../use-cases/images/configuration-form-node.png" alt="configure form node" title="configure form node" style="border: 1px solid gray; zoom:75%;">
 
-![configure form node](../use-cases/images/configuration-form-node.png "configure form node")
-
- * **Only Form UI** – This creates a Form Node and associates it with the Digital Form selected. This is the default option. 
-
-![only form ui](../use-cases/images/only-ui.png "only form ui")
+ * **Only Form UI** – This creates a Form Node and associates it with the Digital Form selected. This is the default option.
+ <img src="../use-cases/images/only-ui.png" alt="only form ui" title="only form ui" style="border: 1px solid gray; zoom:75%;">
 
 * **Both Form UI and Conversation Experience** – This further prompts you to choose a channel. When a user is using one of the selected channels they are presented with a Form UI, the rest of the channel users get a conversation experience. 
 This option creates:
@@ -171,7 +160,7 @@ This option creates:
 * A **Sub-dialog Node** to capture the required entities (as defined in the Digital Form using components) for the conversational experience. 
 * A **Group** encompassing the following nodes ([see here for details](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/grouping-nodes/)). This grouping can be renamed and/or deleted.
 
-    ![form experience node](../use-cases/images/form-experience-nodes.png "form experience node")
+<img src="../use-cases/images/form-experience-nodes.png" alt="form experience node" title="form experience node" style="border: 1px solid gray; zoom:75%;">
 
 5. You can set the **Properties** for each of the nodes added.
 * The **Form Node** ([click here for details](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-form-node/)). 
@@ -189,9 +178,8 @@ Of special interest are the following Component Properties:
 * **Sub-dialog Node** is configured as normal ([see here for details](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-dialog-node/)) Of special interest are the following:
 
  * Use the **Entity Post-assignment** to capture the user input.
-* In case you modify the sub-dialog or the source form, you are presented with an option to **Regenerate Dialog**. This ensures that the changes are reflected in the task without having to rebuild the entire task. Be aware that the changes are reflected in all places this sub-dialog is used. 
-
-![form experience node](../use-cases/images/subdialog-node-configuration.png "form experience node")
+* In case you modify the sub-dialog or the source form, you are presented with an option to **Regenerate Dialog**. This ensures that the changes are reflected in the task without having to rebuild the entire task. Be aware that the changes are reflected in all places this sub-dialog is used.
+<img src="../use-cases/images/subdialog-node-configuration.png" alt="sub dialog node" title="sub dialog node" style="border: 1px solid gray; zoom:75%;">
 
 6. The user input can be accessed as follows:
     * Form component values are accessed from the Context Object using ```{{context.forms.form_name.component_name}}```
@@ -200,7 +188,7 @@ Of special interest are the following Component Properties:
 
 ### Invocation from Panels
 
-Digital Forms are rendered in Digital Views by configuring Widgets & Panels, [see here for more on Digital Views](https://developer.kore.ai/docs/bots/bot-builder-tool/digital-views/).
+Digital Forms are rendered in Digital Views by configuring Widgets & Panels, [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/digital-views/).
 
 To invoke a form using Widgets and Panels, follow the below steps:
 
@@ -210,7 +198,7 @@ To invoke a form using Widgets and Panels, follow the below steps:
 4. **Add a Form** by selecting it from the drop-down list.
 5. Select the **Dialog to Invoke on Submit** from the drop-down list.
 6. Click **Save**.
-![invoke form in widget](../use-cases/images/invoke-form-in-widget.png "invoke form in widget")
+<img src="../use-cases/images/invoke-form-in-widget.png" alt="invoke form in widget" title="invoke form in widget" style="border: 1px solid gray; zoom:75%;">
 7. **Add the Widget** to an existing panel or create a new panel. 
 You can add a form directly to a panel, it creates a widget by default.
 8. You can **Test** the panel.
@@ -226,7 +214,7 @@ When the end-user initiates the dialog and reaches the node connecting to the Fo
 ### Form Experience
 A **link to the form** is presented to the user. Note that for a synchronous WebHook channel, instead of a link the complete form definition is sent [click here for more details](https://developer.kore.ai/docs/bots/channel-enablement/adding-webhook-channel/).
 
-![link to form message](../use-cases/images/UIForms-linkmessage.png "link to form message")
+<img src="../use-cases/images/UIForms-linkmessage.png" alt="link to form message" title="link to form message" style="border: 1px solid gray; zoom:75%;">
 
 Clicking the link opens the form in either full-screen or inline mode, based on the selection. Please note the following details about the link:
 
@@ -235,17 +223,17 @@ Clicking the link opens the form in either full-screen or inline mode, based on 
 
 End-users can fill in the values for the components/fields.
 
-![test preview](../use-cases/images/test-preview-fill-form.png "test preview")
+<img src="../use-cases/images/test-preview-fill-form.png" alt="test preview" title="test preview" style="border: 1px solid gray; zoom:75%;">
 
 Every form comes with a default **Submit** button. This validates the form entries, prompts for any missing values. 
 
-![form validation](../use-cases/images/validation-form.png "form validation")
+<img src="../use-cases/images/validation-form.png" alt="form validation" title="form validation" style="border: 1px solid gray; zoom:75%;">
 
 Once the form is validated and submitted, the values are available in the context variable and accessed using the following code: `context.forms.&lt;form_name>.&lt;component_name>`
 
 Here we are capturing the user entry and displaying it using a message node.
 
-![form experience](../use-cases/images/user-bot-form-experience.png "form experience")
+<img src="../use-cases/images/user-bot-form-experience.png" alt="form experience" title="form experience" style="border: 1px solid gray; zoom:75%;">
 
 ### Conversation Experience
 
@@ -255,7 +243,7 @@ The values are available in the sub-dialog context and are captured using Entity
 
 Following is the user experience in Conversation mode:
 
-![user experience](../use-cases/images/conversation-experience.png "user experience")
+<img src="../use-cases/images/conversation-experience.png" alt="user experience" title="user experience" style="border: 1px solid gray; zoom:75%;">
 
 ### Exceptions
 When exceptions are encountered during the dialog execution with a Form Node, they are handled as follows:
@@ -318,15 +306,15 @@ As with any assistant, the Digital Forms exist in the following states:
 * **_Rejected_** when the Publish request is rejected by the admin.
 * **_Published_** In the XO Platform, the status of a Digital Form remains In Development even after publishing.
 
-![publish status](../use-cases/images/publish-status.png "publish status")
+<img src="../use-cases/images/publish-status.png" alt="publish status" title="publish status" style="border: 1px solid gray; zoom:75%;">
 
 * On publishing the form, you can see the form listed under **Publish Status → View Publishing Summary**, but the status on the Digital Forms main page remains as _In Development_.
 
-![form status](../use-cases/images/form-status.png "form status")
+<img src="../use-cases/images/form-status.png" alt="form status" title="form status" style="border: 1px solid gray; zoom:75%;">
 
 The _In Development_ and _Published_ versions of the VA can be viewed by toggling between the respective statuses in the top search-bar.
 
-![va status search](../use-cases/images/va-status-search.png "va status search")
+<img src="../use-cases/images/va-status-search.png" alt="va status search" title="va status search" style="border: 1px solid gray; zoom:75%;">
  
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -394,60 +382,60 @@ Following is a list of the available components.
 
 * **Text Field** – used for single-line input.
 
-    ![text field](../use-cases/images/text-field-input.png "text field")
+   <img src="../use-cases/images/text-field-input.png" alt="text field" title="text field" style="border: 1px solid gray; zoom:75%;">
 
 * **Text Area** – used for multi-line entry.
 
-    ![text area](../use-cases/images/text-area.png "text area")
+   <img src="../use-cases/images/text-area.png" alt="text area" title="text area" style="border: 1px solid gray; zoom:75%;">
 
 * **Number** – used for numerical entries.
 
-![number field](../use-cases/images/number-field.png "number field")
+   <img src="../use-cases/images/number-field.png" alt="number field" title="number field" style="border: 1px solid gray; zoom:75%;">
 
 * **Radio Button** – used as a selection option from a given list.
 
-![radio button](../use-cases/images/radio-button.png "radio button")
+   <img src="../use-cases/images/radio-button.png" alt="radio button" title="radio button" style="border: 1px solid gray; zoom:75%;">
 
 * **Dropdown** – Used as a selection option from a given list; can be multi-select.
 
-![dropdown list](../use-cases/images/dropdown-list.png "dropdown list")
+   <img src="../use-cases/images/dropdown-list.png" alt="dropdown list" title="dropdown list" style="border: 1px solid gray; zoom:75%;">
 
 * **Checkbox** – Used for multi-select option from a given list.
 
-![checkbox](../use-cases/images/checkbox.png "checkbox")
+    <img src="../use-cases/images/checkbox.png" alt="checkbox" title="checkbox" style="border: 1px solid gray; zoom:75%;">
 
 * **Date** – Used for date entries, gives a date picker for the user to choose the date.
 
-![date](../use-cases/images/date-calendar.png "date")
+    <img src="../use-cases/images/date-calendar.png" alt="date" title="date" style="border: 1px solid gray; zoom:75%;">
 
 * **Date & Time** – Used for date & time entries. The system displays a date and time picker for the user to choose the date and time.
 Use the **Date component** and set the <em>Time option</em> to <em>yes</em>; choose from <em>12</em> or <em>24-hour</em> format.
 
-![date and time](../use-cases/images/date-time.png "date and time")
+   <img src="../use-cases/images/date-time.png" alt="date and time" title="date and time" style="border: 1px solid gray; zoom:75%;">
 
 * **Phone Number** – Used for phone number entries, allows the user to choose the country code.
 
-  ![phone number](../use-cases/images/phone-number.png "phone number")
+   <img src="../use-cases/images/phone-number.png" alt="phone number" title="phone number" style="border: 1px solid gray; zoom:75%;">
 
 * **Email** – Used for email address entries, validates for <em>xxx@uuu.com</em> format.
 
-![email](../use-cases/images/email-field.png "email")
+  <img src="../use-cases/images/email-field.png" alt="email" title="email" style="border: 1px solid gray; zoom:75%;">
 
 * **Toggle** – Used for switching between two values, ideal for yes/no type of inputs.
 
-![Toggle](../use-cases/images/toggle-field.png "toggle")
+    <img src="../use-cases/images/toggle-field.png" alt="toggle" title="toggle" style="border: 1px solid gray; zoom:75%;">
 
 * **Address** – Used for address entries.
 
-![address](../use-cases/images/address-field.png "address")
+   <img src="../use-cases/images/address-field.png" alt="address" title="address" style="border: 1px solid gray; zoom:75%;">
 
 * **URL** – Used for web URL entries, validates for <em>xxx.com</em> format.
 
-![url](../use-cases/images/url-field.png "url")
+  <img src="../use-cases/images/url-field.png" alt="url" title="url" style="border: 1px solid gray; zoom:75%;">
 
 * **Range Slider** – Value selection between specified min and max values; can be represented as a percentage.
 
-![range slider](../use-cases/images/range-slider.png "range")
+  <img src="../use-cases/images/range-slider.png" alt="range slider" title="range slider" style="border: 1px solid gray; zoom:75%;">
 
 * **Password** - Used to display passwords in their masked form ```*****```
 
@@ -455,19 +443,19 @@ Use the **Date component** and set the <em>Time option</em> to <em>yes</em>; cho
 
 * **Button** – Used as a clickable component to submit reset, or open an external URL the form. Choose from <em>Primary</em>, <em>Secondary</em>, <em>Tertiary</em>, <em>Ghost,</em> or <em>Danger</em>.
 
-   ![button](../use-cases/images/button-field.png "button")
+   <img src="../use-cases/images/button-field.png" alt="button" title="button" style="border: 1px solid gray; zoom:75%;">
 
 * **Label** – Used to display a static text box, no action required from the user.
 
-   ![label](../use-cases/images/label-field.png "label")
+   <img src="../use-cases/images/label-field.png" alt="label" title="label" style="border: 1px solid gray; zoom:75%;">
 
 * **Protip** – Used to mark important information for the end-user, no user action required.
 
-![Protip](../use-cases/images/protip-field.png "protip")
+   <img src="../use-cases/images/protip-field.png" alt="protip" title="protip" style="border: 1px solid gray; zoom:75%;">
 
 * **Note** - Used to mark information for the end-user, no user action required.
 
-![Note](../use-cases/images/note-field.png "note")
+   <img src="../use-cases/images/note-field.png" alt="note" title="note" style="border: 1px solid gray; zoom:75%;">
 
 ### Component Properties
 
