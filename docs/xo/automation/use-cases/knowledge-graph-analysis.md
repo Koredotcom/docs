@@ -10,12 +10,15 @@ The KG provides an option to initiate an inspection, as follows:
 * The analysis considers the thresholds and other configurations of the KG.
 * The analysis issues a warning if any node contains more than 25 questions and an advisory to the effect that the training fails if there are more than 100 questions in any node.
 * You can invoke the diagnosis, by clicking **Inspect** on the KG screen.
-![KG Inspect](../use-cases/images/KG_Inspect.png "Inspect KG")
+
+<img src="../images/KG_Inspect.png" alt="KG Inspect" title="KG Inspect" style="border: 1px solid gray; zoom:75%;">
+
 * You can also add patterns as alternate questions for an FAQ to provide better coverage, which helps in detecting the right FAQs for a user question. KG Inspect helps in identifying any syntax errors that occur knowingly or unknowingly while defining patterns. 
 The platform analyzes the KG and provides a report of the analysis. The identified incorrect patterns in KG are displayed in the report.
 
 * You have an option to **Re-run** the analysis or **Export** the report. The export option downloads the report in JSON format.
-![re-run analysis](../use-cases/images/re-run-analysis.png "re-run analysis")
+
+<img src="../images/re-run-analysis.png" alt="re-run analysis" title="re-run analysis" style="border: 1px solid gray; zoom:75%;">
 
 * The inspect report shows an overview of the number of issues found under various categories. Please read below to learn more.
 * The various categories are grouped as:
@@ -25,7 +28,8 @@ The platform analyzes the KG and provides a report of the analysis. The identifi
 * Click each category to view the detailed report
 
 In the example below, the details of all the patterns with invalid syntaxes are shown:
-![example of patterns with invalid syntaxes](../use-cases/images/example-patterns-with-invalid-syntaxes.png "example of patterns with invalid syntaxes")
+
+<img src="../images/example-patterns-with-invalid-syntaxes.png" alt="example of patterns with invalid syntaxes" title="example of patterns with invalid syntaxes" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>

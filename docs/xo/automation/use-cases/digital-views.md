@@ -88,6 +88,7 @@ If the selected Dialog Task has any **Authorization Profile** defined, it is dis
 ### JSON
 
 When selecting JSON as the source, you will be presented with a Javascript editor, where you can add your code, as shown below:
+
 <img src="../images/json-source-file.png" alt="json file upload" title="json file upload" style="border: 1px solid gray; zoom:75%;">
 
 ### Digital Form
@@ -131,6 +132,7 @@ To create a panel, follow the steps below:
    <img src="../images/widget-added-to-panel.png" alt="add widget to panel" title="add widget to panel" style="border: 1px solid gray; zoom:75%;">
 
 2. Select widgets from the drop-down list and click **Add**. You can add multiple widgets to the same panel.
+
 <img src="../images/select-widgets-from-dropdown-list.png" alt="select widgets from dropdown" title="select widgets from dropdown" style="border: 1px solid gray; zoom:75%;">
 
 ### Panel Options
