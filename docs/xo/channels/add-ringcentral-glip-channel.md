@@ -47,34 +47,30 @@ To enable Glip as a channel for your Kore.ai Virtual Assistant, you must create 
 1. Log in to the **RingCentral Developer Console**.
 2. Click the **Console** button on the top left.
 3. In the **Apps** section, click **Create App**.
-
-
 ![RingCentral developer Console](./images/ringcentral_glip1.png "RingCentral developer Console")
 
 4. Select **REST API App** under **App Type** to call the **RingCentral REST API**.
 ![RingCentral REST API](./images/ringcentral_glip2.png "RingCentral REST API")
 
 5. Click **Next**.
+
 6. Enter all the required details on the **Create App – REST API App Settings** page and click **Next**.
+
 7. Enter the values to the following fields on the     **App Properties (internal-use only)** page:
  * App Name
  * App Description (optional)
  * Primary Contact
  * Select the relevant option for **Do you intend to promote this app in the RingCentral App Gallery?**
-
-
-  ![app properties](./images/ringcentral_glip3.png "app properties")
+ ![app properties](./images/ringcentral_glip3.png "app properties")
 
 8. (Optional) In the **App Card panel**, enter the values for the given fields to configure how your application will be presented within our App Gallery.
 
 9. In the **Auth** panel, enter the values for the following fields to select the authentication method your app will use:
  * Select **3-legged OAuth flow authorization code**.
  * Select **Server-side web app (most common)** or **Client-side web app** based on your app type for **From what type of app will you be calling the API?**
-
-  ![OAuth flow](./images/ringcentral_glip4.png "OAuth flow")
+ ![OAuth flow](./images/ringcentral_glip4.png "OAuth flow")
 
  * On the Kore.ai XO Platform, copy the **OAuth Redirect URI** under the **Configurations** tab in the **RingCentral Glip** window.
-
  ![ringcentral glip configuration](./images/ringcentral_glip5.png "ringcentral glip configuration")
 
  * Paste the copied **OAuth Redirect URI** link in the **Auth** panel.
@@ -132,7 +128,7 @@ The virtual assistant on the Kore.ai XO Platform must be associated with the ext
 2. Click the **Users** tab.
 3. Click **Users with Extension** on the left menu.
 4. Click **+Add User**.
-![user extension](./images/ringcentral_glip12.png "user extension")
+ ![user extension](./images/ringcentral_glip12.png "user extension")
 
 5. On the **Add Users and Phones** dialog box, select **Add Users without Phone**, and follow the instructions on the page.
 6. Click **Unassigned Extensions** on the left menu.
@@ -148,9 +144,9 @@ The virtual assistant on the Kore.ai XO Platform must be associated with the ext
 
 
 
- !!! note
+Notes
 
-    If you receive an account activation email on your registered email address, please note the username and password to authorize the virtual assistant on the Kore.ai XO Platform.
+*  If you receive an account activation email on your registered email address, please note the username and password to authorize the virtual assistant on the Kore.ai XO Platform.
 
 * Alternatively, select the “pre-assigned credentials” option and just provide/save the password.**.
 
@@ -161,7 +157,6 @@ The virtual assistant on the Kore.ai XO Platform must be associated with the ext
 ### Step 3(a): Test the Validation
 
 To access the admin portal from the Sandbox account screen and test the validation, follow the steps below:
-
 
 1. Go to the **Sandbox Account** section and click the [link](https://app.devtest.ringcentral.com/) in the **Team Messaging** section.
 ![team messaging](./images/ringcentral_glip14.png "team messaging")
@@ -181,7 +176,8 @@ On the Kore.ai XO Platform, navigate to **RingCentral Glip** > **Configurations*
  ![authorize app](./images/ringcentral_glip15.png "authorize app")
 
 2. In the **Sign-in** window, click **Continue as **to sign in with the existing user’s account, or click **Use Another Account**.
-![use another account](./images/ringcentral_glip16.png "user another account")
+
+ ![use another account](./images/ringcentral_glip16.png "user another account")
 
 3. Click **Authorize** on the **Access Request** page.
 4. Once the access token is obtained successfully, authorization is complete.
@@ -204,7 +200,6 @@ Once your app is tested in the Sandbox environment and ready for production, fol
 
 
 Once your app is production ready, follow the steps below on the Kore.ai XO Platform:
-
 
 
 1. Navigate to **Deploy** > **Channels** > **RingCentral Glip**.
