@@ -53,7 +53,8 @@ To set Task Level Amend Entity Behavior, follow the below steps:
 
 1. Go to **Build > Conversation Skills > Dialog Tasks** and select the task that you want to configure.
 2. On the Dialog Task page, click the **More Options** icon and select the **Manage Amend Behavior**.
-<img src="../images/manage-amend-behavior.png" alt="manage amend behavior" title="manage amend behavior" style="border: 1px solid gray; zoom:75%;">
+
+    <img src="../images/manage-amend-behavior.png" alt="manage amend behavior" title="manage amend behavior" style="border: 1px solid gray; zoom:75%;">
 
 3. On the **Manage Amend Behavior** dialog box, by default, the **Use bot level settings** option is selected and the bot level setting is displayed.
 4. Select **Customize for this task** to override the bot level settings:
