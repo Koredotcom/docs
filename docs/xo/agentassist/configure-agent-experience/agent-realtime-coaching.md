@@ -137,21 +137,9 @@ To read how to form a rule description, hover over the “**i**” button beside
 8. Click **Apply** to complete the rule creation process: \
 ![Alt text](./images/image_17.png)
 A message shows up to confirm new rule creation.
-9. Click **+Add a trigger** under **When…** to add a trigger condition for the rule. For more information, refer to the **
-
-<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Agent Coaching Rule Triggers"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Agent Coaching Rule Triggers](#heading=h.erf80zv7srj3)** section.
-10. Click **+Add an action** under **Then do…** to add an action for the rule. For more info, refer to the **
-
-<p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Agent Coaching Actions"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Agent Coaching Actions](#heading=h.w4w32yx8fk41)** section.
-11. Click **Add agents, groups** under **Assign this to…** to add agents or groups you want to assign this rule to. For more info, refer to the **
-
-<p id="gdcalert21" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Assign this to"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Assign this to](#heading=h.j511ahl30x61)** section.
+9. Click **+Add a trigger** under **When…** to add a trigger condition for the rule. For more information, refer to the [Agent Coaching Rule Triggers](#agent-coaching-rule-triggers-when) section.
+10. Click **+Add an action** under **Then do…** to add an action for the rule. For more info, refer to the [Agent Coaching Actions](#agent-coaching-actions-then-do) section.
+11. Click **Add agents, groups** under **Assign this to…** to add agents or groups you want to assign this rule to. For more info, refer to the [Assign this to](#assign-this-to) section.
 12. Click **Save**.
 
 
@@ -246,21 +234,17 @@ Utterances are inputs from either the customers or the agents. In Utterance Trig
 
 
 
-1. Go to the rule trigger creation page. For help, refer to 
-
-<p id="gdcalert31" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Steps to create a new rule"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert32">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Steps to create a new rule](#heading=h.6fgyarkaa4td). 
+1. Go to the rule trigger creation page. For help, refer to [Steps to create a new rule](#steps-to-create-a-new-rule).
 2. Under **When**, click the **+ Add a trigger** button. \
 ![Alt text](./images/image_26.png)
 3. Select **Utterance**. \
-![Alt text](./images/image_27.png) \
+![Alt text](./images/image_27.png)
 4. Click **{select person}**. \
 ![Alt text](./images/image_28.png)
-5. Select either **Agent** or **Customer**.\
+5. Select either **Agent** or **Customer**.
 6. Click **set utterances**. \
 ![Alt text](./images/image_29.png)
-7. Enter an utterance that the user (customer or agent) may use in the **Utterances** box. \
+7. Enter an utterance that the user (customer or agent) may use in the **Utterances** box.
 8. Select the utterance you have entered. \
 ![Alt text](./images/image_30.png)
 
@@ -550,13 +534,7 @@ You have two types of adherences to choose from:
 ![Alt text](./images/image_66.png)  
 * **Utterance**: Choosing this option sends an acknowledgement that the agent will take further action within a specified time frame during a session. An example would be when you ask the agent to offer a discount to the customer, and the agent acknowledges that they will perform this action within the next few messages, few minutes, or anytime during the session. The following screenshot is displayed when this option is selected: \
 ![Alt text](./images/image_67.png)
-For practical examples of this feature, refer to steps 7-8 of 
-
-<p id="gdcalert75" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Steps to set up the Nudge Agent actions"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert76">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Steps to set up the Nudge Agent actions](#heading=h.xs5uzo2mdkhi).
-
-
+For practical examples of this feature, refer to steps 7-8 of [Steps to set up the Nudge Agent actions](#steps-to-set-up-the-nudge-agent-actions).
 ### Nudge Agent
 
 The Nudge Agent actions are the small messages that pop up on the agent’s screen while communicating with the customers. They are disappearing messages, which stay on the agent’s screen for 5 seconds. Through these messages, you either compliment the agents for a good job or direct them to take other appropriate actions to serve the customers in the best way possible. Here are the following four nudges that you can choose from:
@@ -659,11 +637,7 @@ Click the default value of **5 seconds** to update it, as required. After enteri
 ![Alt text](./images/image_97.png)
     3. If you select **Acknowledge Pressed**, the following screen is displayed: \
     ![Alt text](./images/image_98.png)
-    4. If you select **Utterance**, follow steps 9-12 of 
-
-<p id="gdcalert107" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Steps to set up the Nudge Agent actions"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert108">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Steps to set up the Nudge Agent actions](#heading=h.xs5uzo2mdkhi) to complete the process. \
+    4. If you select **Utterance**, follow steps 9-12 of [Steps to set up the Nudge Agent actions](#steps-to-set-up-the-nudge-agent-actions) to complete the process. \
 
 
     The agent gets screens similar to the following on their system for:
@@ -717,11 +691,7 @@ This feature lets you assign the rule to the intended agents or groups. Currentl
 
 
 
-1. Go to the rule action setup page. For help, refer to 
-
-<p id="gdcalert121" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Steps to create a new rule"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert122">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Steps to create a new rule](#heading=h.6fgyarkaa4td). \
+1. Go to the rule action setup page. For help, refer to [Steps to create a new rule](#steps-to-create-a-new-rule).
 2. Click **+Add agents, groups** under the section **Assign this to...** \
 ![Alt text](./images/image_110.png)
     * The following screen shows the default selection of **All Agents**: \
