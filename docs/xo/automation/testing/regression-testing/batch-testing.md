@@ -44,7 +44,7 @@ This test suite includes all the end-user utterances that have successfully matc
 
 To add a new test suite, follow the steps below:
 
-1. Go to **Build** > **Testing** > **Batch Testing**, and click **New Test Suite**.\
+1. Go to **Build** > **Testing** > **Batch Testing**, and click **New Test Suite**.  
 <img src="../images/batch-testing-3.png" alt="BT - New Test Suite" title="BT - New Test Suite" style="border: 1px solid gray;">
 2. In the **New test Suite** window, add a **name** and provide a **description**.
 3. Next, choose how to add test cases: either manually or by uploading a test case file.
