@@ -4,7 +4,7 @@ Human conversations are characterized by twists and turns, and no two directions
 
 Consider the following conversation for example:
 
-<img src="../conversation-management/images/flight-usecase-manage-interruptions.png" alt="Flight use case manage interruptions" title="Flight use case manage interruptions" style="border: 1px solid gray; zoom:65%;">
+<img src="../images/flight-usecase-manage-interruptions.png" alt="Flight use case manage interruptions" title="Flight use case manage interruptions" style="border: 1px solid gray; zoom:65%;">
 
 It includes an entity value for the assistant to proceed with the current intent, while also presenting a new user requirement or intent.
 
@@ -36,7 +36,7 @@ To customize the interruptions settings for a node:
 1. Open the dialog task and then the node to change settings.
 2. Click the **instance tab** and select **Advanced Controls**.
 3. Under the **Interruptions Behavior** section, select **Customize for this node** and make the necessary configurations. These configurations are the same as discussed above for the VA level [Interruptions Settings](https://multisite.korebots.com/bot-intelligence-bots/interruption-handling-context-switching-intents/#Interruptions).
-<img src="../conversation-management/images/node-level-customization.gif" alt="node level customization" title="node level customization" style="border: 1px solid gray; zoom:65%;">
+<img src="../images/node-level-customization.gif" alt="node level customization" title="node level customization" style="border: 1px solid gray; zoom:65%;">
 
 ## Dialog Level Settings
 
@@ -46,10 +46,10 @@ To customize the Interruptions settings for a dialog:
 
 1. **Open the Dialog task** you want to customize.
 2. On the top-right of the dialog builder, click the **more options icon** and then click **Manage Interruptions**.
-<img src="../conversation-management/images/dialog-level-manage-interruptions.png" alt="node level customization" title="node level customization" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/dialog-level-manage-interruptions.png" alt="node level customization" title="node level customization" style="border: 1px solid gray; zoom:75%;">
 
 3. Under the Interruptions Behavior section, select **Customize for this task** and make the necessary configurations. These settings are the same as discussed above for the Bot Level [Interruptions](https://developer.kore.ai/docs/bots/bot-intelligence/interruption-handling-context-switching-intents/#Allow_Interruptions).
-<img src="../conversation-management/images/dialog-level-manage-interruptions.png" alt="dialog level manage interruptions" title="dialog level manage interruptions" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/dialog-level-manage-interruptions.png" alt="dialog level manage interruptions" title="dialog level manage interruptions" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -61,7 +61,7 @@ To customize the Interruptions settings for a dialog:
 The VA Level interruptions settings can be overridden at the task level as discussed above.
 
 You can access the interruption settings for your VA from under **Build > Intelligence > Manage Interruptions** page.
-<img src="../conversation-management/images/bot-level-settings-manageinterruptions.png" alt="bot level settings manage interruptions" title="bot level settings manage interruptions" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/bot-level-settings-manageinterruptions.png" alt="bot level settings manage interruptions" title="bot level settings manage interruptions" style="border: 1px solid gray; zoom:75%;">
 
 The Platform provides options for _Interruptions Behavior_ under the following three categories:
 
@@ -238,7 +238,7 @@ For example, if you specify the On Hold Quantity as 1 and if a third intent come
 
 You can choose whether FAQs should honor the interruptions settings or if FAQs should be always responded to.
 
-<img src="../conversation-management/images/faq-interruption-behavior.png" alt="faq interruption behavior" title="faq interruption behavior" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/faq-interruption-behavior.png" alt="faq interruption behavior" title="faq interruption behavior" style="border: 1px solid gray; zoom:75%;">
 
 The flag **Interruption Behavior for FAQs** will allow you to:
 
@@ -249,7 +249,7 @@ The flag **Interruption Behavior for FAQs** will allow you to:
 
 You can handle ambiguous intents during a conversation flow by setting the flag **Behavior for Ambiguous Interruptions**.
 
-<img src="../conversation-management/images/ambiguous-interruption-behavior.png" alt="ambiguous intent interruption behavior" title="ambiguous intent interruption behavior" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/ambiguous-interruption-behavior.png" alt="ambiguous intent interruption behavior" title="ambiguous intent interruption behavior" style="border: 1px solid gray; zoom:75%;">
 
 These settings allow you to:
 
@@ -264,7 +264,7 @@ These settings allow you to:
 
 You can handle small talk during a conversation flow by setting the flag **Interruption Behavior for Small Talk**. 
 
-<img src="../conversation-management/images/smalltalk-interruption-behavior.png" alt="small talk interruption behavior" title="small talk interruption behavior" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/smalltalk-interruption-behavior.png" alt="small talk interruption behavior" title="small talk interruption behavior" style="border: 1px solid gray; zoom:75%;">
 
 These settings allow you to:
 

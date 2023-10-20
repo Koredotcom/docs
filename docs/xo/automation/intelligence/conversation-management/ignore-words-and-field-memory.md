@@ -17,7 +17,7 @@ You can edit each task to persist data for that task to pre-populate in another 
 
 You can also configure words to ignore in the user input at the task level. For example, for a *7-day Weather Forecast* task, you might want days of the week, such as *Monday*, *Tuesday*, and so forth to be ignored since all weekdays are included.
 
-<img src="../conversation-management/images/ignore-words-edit-alert-tasks.png" alt="edit alert tasks for ignore words" title="edit alert tasks for ignore words" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/ignore-words-edit-alert-tasks.png" alt="edit alert tasks for ignore words" title="edit alert tasks for ignore words" style="border: 1px solid gray; zoom:75%;">
 
 Click a task name to show task fields that can be configured or edited for Field Memory and other field settings. 
 

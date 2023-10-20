@@ -43,7 +43,7 @@ To Set VA Level Amend Entity Behavior, follow the below steps:
         * _Skip display of previously displayed messages_ – messages from Message nodes alone.
     * **Resume dialog from amend identification node** – use this option to resume the dialog from the node where the amend was identified.
 5. The amend process can be extended to entities marked as _Hidden_ using the **Amend Hidden Entities** option.
-<img src="../nlu-configurations/images/amend-hidden-entities.png" alt="amend hidden entities" title="amend hidden entities" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/amend-hidden-entities.png" alt="amend hidden entities" title="amend hidden entities" style="border: 1px solid gray; zoom:75%;">
 
 ### Task Level
 
@@ -53,9 +53,9 @@ To set Task Level Amend Entity Behavior, follow the below steps:
 
 1. Go to **Build > Conversation Skills > Dialog Tasks** and select the task that you want to configure.
 2. On the Dialog Task page, click the **More Options** icon and select the **Manage Amend Behavior**.
-<img src="../nlu-configurations/images/manage-amend-behavior.png" alt="manage amend behavior" title="manage amend behavior" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/manage-amend-behavior.png" alt="manage amend behavior" title="manage amend behavior" style="border: 1px solid gray; zoom:75%;">
 
-3. On the **Manage Amend Behaviour** dialog box, by default, the **Use bot level settings** option is selected and the bot level setting is displayed.
+3. On the **Manage Amend Behavior** dialog box, by default, the **Use bot level settings** option is selected and the bot level setting is displayed.
 4. Select **Customize for this task** to override the bot level settings:
     * **Do not allow amend entities** – It will not allow the user to amend entity values for this task.
     * **Allow amend entities** – It will further give you three Dialog Resumption options:
@@ -64,7 +64,8 @@ To set Task Level Amend Entity Behavior, follow the below steps:
             * _Skip display of previously displayed messages_ – messages from Message nodes alone.
         * **Resume dialog from amend identification node** – use this option to resume the dialog from the node where the amend was identified.
         * **Jump to a specific node in the dialog** – use this option to select a node from the current dialog where the task flow needs to jump. You can use this option to add custom behavior before resuming with the dialog. The Context object will contain the details of the entities amended, along with the previous and current values. You may use this information to customize the dialog.
-        * The amend process can be extended to hidden entities using the **Amend Hidden Entities** option.<img src="../nlu-configurations/images/manage-amend-behavior-options.png" alt="manage amend behavior options" title="manage amend behavior options" style="border: 1px solid gray; zoom:75%;">
+        * The amend process can be extended to hidden entities using the **Amend Hidden Entities** option.
+        <img src="../images/manage-amend-behavior-options.png" alt="manage amend behavior options" title="manage amend behavior options" style="border: 1px solid gray; zoom:75%;">
 
 ## Triggers
 
