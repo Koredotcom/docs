@@ -4,7 +4,7 @@ This channel enablement flow is modified as per the changes implemented by Faceb
 
 To add the Workplace by Facebook channel to your assistant, you need a developer portal _Facebook_ account to configure the connection between _Facebook Workplace_ and Kore.ai. Kore.ai application must be authorized to send and receive messages from the Workplace by Facebook channel.
 
-Add the Workplace by Facebook Channel
+## Add the Workplace by Facebook Channel
 
 To complete the following procedure, you must have an admin account in the _Facebook Workplace Developers Portal_ (https://&lt;**_Your Domain_**>workplace.com/work/admin).
 
