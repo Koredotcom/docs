@@ -313,11 +313,11 @@ As with any assistant, the Digital Forms exist in the following states:
 
    <img src="../images/publish-status.png" alt="publish status" title="publish status" style="border: 1px solid gray; zoom:75%;">
 
-* On publishing the form, you can see the form listed under **Publish Status → View Publishing Summary**, but the status on the Digital Forms main page remains as _In Development_.
+   On publishing the form, you can see the form listed under **Publish Status → View Publishing Summary**, but the status on the Digital Forms main page remains as _In Development_.
 
    <img src="../images/form-status.png" alt="form status" title="form status" style="border: 1px solid gray; zoom:75%;">
 
-The _In Development_ and _Published_ versions of the VA can be viewed by toggling between the respective statuses in the top search-bar.
+   The _In Development_ and _Published_ versions of the VA can be viewed by toggling between the respective statuses in the top search-bar.
 
    <img src="../images/va-status-search.png" alt="va status search" title="va status search" style="border: 1px solid gray; zoom:75%;">
  
