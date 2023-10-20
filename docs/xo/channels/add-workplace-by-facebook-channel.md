@@ -32,22 +32,16 @@ To complete the following procedure, you must have an admin account in the _Face
          You are advised to set the permissions correctly after evaluating the above-mentioned link carefully. Managing the permissions for your VA after installing the Kore.ai application on your workplace account needs you to uninstall the application on the workplace account and re-authorize it in the XO platform.
 
 ![workplace facebook](./images/workplace_facebook.png "image_tooltip")
-
 6. You are redirected to Workplace by Facebook page.
 7. Log in to your _Facebook Workplace_ admin account.
 8. Click **Customize** to provide the following details for the instance of Kore.ai application installed on Workplace by Facebook account:
     * integration logo
     * name
     * description
-
-
 ![facebook admin account](./images/workplace_facebook1.png "facebook admin account")
-
 9. The **permissions** needed by the Kore.ai assistant is selected based upon the configuration given in step 4.
 10. Select the groups to which the assistant needs to be added and click **Add to Workplace**.
-11. Once the instance of Kore.ai application is added to your Workplace by Facebook account, you are redirected to the Kore.ai XO Platform. \
-
+11. Once the instance of Kore.ai application is added to your Workplace by Facebook account, you are redirected to the Kore.ai XO Platform.
 ![add workplace facebook channel](./images/workplace_facebook2.png "add workplace facebook channel")
-
 12. In XO Platform, from the **Configuration** tab, click **Yes** in the **Enable Channel** section; and click **Save**.
 13. The assistant may require your Bots Admin approval and assignment before it is available to any users.
