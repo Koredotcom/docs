@@ -68,7 +68,7 @@ Steps to add none intent utterances:
 
     **Follow these steps if you select Input Utterances Manually:**
 
-    1. Select **Input Utterances Manually**.
+    1. Select **Input Utterances Manually**.\
     ![Alt text](agent-realtime-coaching-images/image_8.png)
     2. Enter your utterance in the **Utterances** field and press the **Enter** key.
     ![Alt text](agent-realtime-coaching-images/image_9.png)
@@ -98,17 +98,13 @@ This is a predefined rule with conditions and actions that come with Agent Coach
 * **Assigned to**: All Agents
 
 The following screenshot displays the Price Objection rule:
-<<<<<<< HEAD
+
 ![Alt text](images/image_12.png)
 For information on rule functionalities, refer to the section, ##
 =======
 ![Alt text](agent-realtime-coaching-images/image_12.png)
-For information on rule functionalities, refer to the section 
->>>>>>> ab53c0bf870ef8e8bb9b6cb3a7f0bb7c616bad12
 
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Create, Publish, Edit, Delete, and Disable Rules"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Create, Publish, Edit, Delete, and Disable Rules](#heading=h.fvxyd24rl93g). 
+For information on rule functionalities, refer to the section
 
 
 ## Create, Publish, Edit, Delete, and Disable Rules
