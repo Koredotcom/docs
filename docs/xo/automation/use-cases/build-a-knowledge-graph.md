@@ -123,7 +123,7 @@ You can move one or more Intent and Response sets between nodes in your Knowledg
 2. Click the **Settings** (gear) icon. The settings window opens.
 3. You can change the name of the term, set the term types, set the term status, add traits, add or remove synonyms, and manage context. [Learn more](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/). 
 
-<img src="../images/term-settings.png" alt="term settings" title="term settings" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/term-settings.png" alt="term settings" title="term settings" style="border: 1px solid gray; zoom:75%;">
 
 To delete a term, follow the steps below:
 
@@ -141,12 +141,12 @@ To delete a term, follow the steps below:
 
     <img src="../images/child-node-deleted.png" alt="child node deleted" title="child node deleted" style="border: 1px solid gray; zoom:75%;">
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><li>If your VA is already published, you must train it  for the deletions to be effective.</li>
-<li>If you have deleted the first level term you can selectively train to remove the related terms from the published copy.</li>
-<li>If you have deleted, say, the nth level child term, then you need to select the entire parent term for training.</li></ul></p>
-</div> 
+    <div class="admonition note">
+    <p class="admonition-title">Note</p>
+    <p><ul><li>If your VA is already published, you must train it  for the deletions to be effective.</li>
+    <li>If you have deleted the first level term you can selectively train to remove the related terms from the published copy.</li>
+    <li>If you have deleted, say, the nth level child term, then you need to select the entire parent term for training.</li></ul></p>
+    </div> 
 
 ### Edit Intents and Responses
 
@@ -175,10 +175,10 @@ The Knowledge Graph engine works well with the default settings, but you can fin
     * **The proximity of Suggested Matches** – Define the maximum difference to allow between top-scoring and immediate next suggested questions to consider as equally important. 
     * **Qualify Contextual Paths** – This ensures that the bot context is populated and retained with the terms/nodes of the matched intent. This further enhances the user experience.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p> You can customize these settings in Natural Language > Thresholds & Configurations. See Knowledge Graph Training for details.</p>
-</div>
+    <div class="admonition note">
+    <p class="admonition-title">Note</p>
+    <p> You can customize these settings in Natural Language > Thresholds & Configurations. See Knowledge Graph Training for details.</p>
+    </div>
 
 * **Traits** – Traits qualify nodes/terms even if the user utterance does not contain the term/node. Traits are also helpful in filtering the suggested intent list.
 
