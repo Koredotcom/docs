@@ -1,5 +1,4 @@
 # **Adding the Google Business Messaging Channel**
-
 Modern business applications require agent integrations on web/mobile devices to enable seamless customer communication via SMS/chats.
 
 The **Kore.ai XO Platform** now helps a _Google Business Messaging Partner_ to create rich and asynchronous messaging experiences within apps and during calls through the GBM channel enablement. This feature helps seamlessly integrate real-time business agents to Virtual Assistants.
