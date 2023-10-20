@@ -6,7 +6,7 @@ The **Batch Testing** feature helps you discern the ability of your bot to corre
 
 **Note**: The Batch Testing dashboard displays the summary of test coverage, performance, and training recommendations for multiple test suites based on validations of the intent identification capabilities of your NLU model. The **Health and Monitoring** dashboard is a one-stop place that displays this information for the individual test suite(s) the user selects. [Learn More](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/).
 
-To conduct a batch test, you can use predefined test suites available in the builder or create your own custom test suites. Based on your requirements, the test suites can be run to view the desired results. This option can be accessed from the **Testing -> Batch Testing** option from the left navigation menu.
+To conduct a batch test, you can use predefined test suites available in the builder or create your own custom test suites. Based on your requirement, the test suites can be run to view the desired results. This option can be accessed from the **Testing -> Batch Testing** option from the left navigation menu.
 
 
 ## **Best Practices**
@@ -30,28 +30,27 @@ Kore.ai provides a few out-of-the-box **Test Suites** to perform batch testing. 
 
 This test suite validates the utterances that have been previously added and trained by the developer from Machine Learning Utterances screen. Using this test suite would mean testing collectively the entire set of utterances that a developer has added for all tasks of the bot.
 
-<img src="../images/batch-testing-1-developer-du.png" alt="BT - Developer Defined Utterances" title="BT - Developer Defined Utterances" style="border: 1px solid  gray;">
+<img src="../images/batch-testing-1-developer-du.png" alt="BT - Developer Defined Utterances" title="BT - Developer Defined Utterances" style="border: 1px solid gray;"/>
 
 
 ### Successful user utterances
 
 This test suite includes all the end-user utterances that have successfully matched one or more intents and the corresponding task is fully executed. You can also find these utterances from the ‘Intent found’ section of the Analyze module.
 
-<img src="../images/batch-testing-2-successful-utterances.png" alt="Successful user utterances" title="Successful user utterances" style="border: 1px solid  gray;">
+<img src="../images/batch-testing-2-successful-utterances.png" alt="BT - Successful user utterances" title="BT - Successful user utterances" style="border: 1px solid gray;"/>
 
 
 ### Adding a New Test Suite
 
 To add a new test suite, follow the steps below:
 
-1. Go to **Build** > **Testing** > **Batch Testing**, and click **New Test Suite**.
-<img src="../images/batch-testing-3.png" alt="BT - New Test Suite" title="BT - New Test Suite" style="border: 1px solid  gray;">
+1. Go to **Build** > **Testing** > **Batch Testing**, and click **New Test Suite**.  
+<img src="../images/batch-testing-3.png" alt="BT - New Test Suite" title="BT - New Test Suite" style="border: 1px solid gray;">
 2. In the **New test Suite** window, add a **name** and provide a **description**.
 3. Next, choose how to add test cases: either manually or by uploading a test case file.
     * Selecting **Add Manually** lets you add test cases manually or use LLM and Generative AI to generate test cases automatically.
-    * Selecting **Upload Test Cases File** lets you upload a file containing test cases.
-<img src="../images/batch-testing-4-newtest.png" alt="BT - New Test Suite Details" title="BT - New Test Suite Details" style="border: 1px solid  gray;zoom:50%;">
-
+    * Selecting **Upload Test Cases File** lets you upload a file containing test cases.<img src="../images/batch-testing-4-newtest.png" alt="BT - New Test Suite Details" title="BT - New Test Suite Details" style="border: 1px solid gray; zoom:50%;" />
+    
 
 #### Adding Test Cases Manually
 
@@ -69,11 +68,14 @@ You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utteranc
 3. **Test Utterances**: You can add multiple utterances, each on a new line.
 4. The **Entity Order**: Select one from the available options, depending on the intent you are working with. You can only select one item. The Entity Order selection is not available if you have added multiple intents.
 
-  **One Intent for a Test Utterance**
-  ![One intent for a test utterance](../images/batch-testing-6-one-intent-for-a-test-utterance.png "One intent for a test utterance")
 
-  **Multiple Intents for a Test Utterance**
-  ![Multiple intents for a test utterance](../images/batch-testing-7-multiple-intents-for-a-test-utterance.png "Multiple intents for a test utterance")
+**One Intent for a Test Utterance**
+![One intent for a test utterance](../images/batch-testing-6-one-intent-for-a-test-utterance.png "One intent for a test utterance") { width = 400px }
+
+
+**Multiple Intents for a Test Utterance**
+![Multiple intents for a test utterance](../images/batch-testing-7-multiple-intents-for-a-test-utterance.png "Multiple intents for a test utterance")
+
 
 5. Click **Save** when ready.
 6. Once added, your test cases are listed and ready to run. You can use the **Add Manually** button at the top of the list to add more test cases. The option to Generate Test cases only displays if you have enabled LLM and Generative AI for the VA.
