@@ -44,4 +44,5 @@ To complete the following procedure, you must have an admin account in the _Face
 11. Once the instance of Kore.ai application is added to your Workplace by Facebook account, you are redirected to the Kore.ai XO Platform.
 ![add workplace facebook channel](./images/workplace_facebook2.png "add workplace facebook channel")
 12. In XO Platform, from the **Configuration** tab, click **Yes** in the **Enable Channel** section; and click **Save**.
-13. The assistant may require your Bots Admin approval and assignment before it is available to any users.
+
+The assistant may require your Bots Admin approval and assignment before it is available to any users.
