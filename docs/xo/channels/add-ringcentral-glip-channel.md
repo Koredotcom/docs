@@ -68,6 +68,7 @@ To enable Glip as a channel for your Kore.ai Virtual Assistant, you must create 
 9. In the **Auth** panel, enter the values for the following fields to select the authentication method your app will use:
  * Select **3-legged OAuth flow authorization code**.
  * Select **Server-side web app (most common)** or **Client-side web app** based on your app type for **From what type of app will you be calling the API?**
+
  ![OAuth flow](./images/ringcentral_glip4.png "OAuth flow")
 
  * On the Kore.ai XO Platform, copy the **OAuth Redirect URI** under the **Configurations** tab in the **RingCentral Glip** window.
