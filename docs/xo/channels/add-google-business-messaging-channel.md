@@ -155,7 +155,7 @@ To send messages and events as your agent, you need to authenticate API calls wi
 5. Store the key securely to recover it if required.
 
 
-### Step 5: Configure the Virtual Assistant for the Service Account
+## Step 5: Configure the Virtual Assistant for the Service Account
 
 To configure the virtual assistant for the service account on the Kore.ai XO Platform, follow the steps below:
 
