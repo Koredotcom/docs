@@ -99,7 +99,7 @@ This is a predefined rule with conditions and actions that come with Agent Coach
 
 The following screenshot displays the Price Objection rule:
 ![Alt text](images/image_12.png)
-For information on rule functionalities, refer to the section 
+For information on rule functionalities, refer to the section, ##
 
 <p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Create, Publish, Edit, Delete, and Disable Rules"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
