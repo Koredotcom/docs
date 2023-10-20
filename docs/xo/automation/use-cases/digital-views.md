@@ -17,7 +17,7 @@ This article gives an overview on the working and implementation of **Panels & W
     * Upcoming Trips
     * Completed Bookings
     * Canceled Bookings
-    <img src="../use-cases/images/access-digitalviews.png" alt="access digital views" title="access digital views" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/access-digitalviews.png" alt="access digital views" title="access digital views" style="border: 1px solid gray; zoom:75%;">
 
 You can access Digital Views by selecting the VA you want to work with then going to **Build > Digital Skills > Digital Views**. 
 
