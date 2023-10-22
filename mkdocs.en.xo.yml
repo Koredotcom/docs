@@ -151,7 +151,7 @@ nav:
       - NLU Configuration: 
         - Engine Tuning: getting-started.md 
         - Amend Entity: getting-started.md 
-        - Multi Intent Detect: getting-started.md
+        - Multi Intent Detect: automation/natural-language/nlu-configuration/multi-intent-detection.md
       - Events: 
         - Intent Events: getting-started.md 
         - conversation Events: getting-started.md 
