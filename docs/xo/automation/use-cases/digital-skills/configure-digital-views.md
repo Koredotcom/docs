@@ -145,10 +145,11 @@ We will see how to create Widgets with static JSON content. We will use a JSON t
     };
 print(JSON.stringify(message));
 ```
-5. Test the panel and you will see both the **Panel** icons. 
-6. Click on each to see them in action.
 
-    <img src="../../images/test-panel.png" alt="test panel" title="test panel" style="border: 1px solid gray; zoom:75%;">
+<ol start="5"><li> Test the panel and you will see both the <b>Panel</b> icons.</li>
+<li>Click on each to see them in action.</li>
+<img src="../../images/test-panel.png" alt="test panel" title="test panel" style="border: 1px solid gray; zoom:75%;">
+</ol>
 
 ## Publish
 
@@ -186,6 +187,6 @@ We will be hosting the Panels in the web/mobile client. [See here](https://devel
 
 10. Open the `index_widgets_chat.html` file in the browser and see the chat window along with the widgets. 
 
-    <img src="../images/open-index-widget-chat.png" alt="open index widget chart" title="open index widget chart" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/open-index-widget-chat.png" alt="open index widget chart" title="open index widget chart" style="border: 1px solid gray; zoom:75%;">
 
 11. If you want to host the Panels individually use the `index_widgets.html` file. See the GitHub for hosting the same in your web site.
