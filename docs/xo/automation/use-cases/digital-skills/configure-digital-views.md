@@ -173,7 +173,7 @@ We will be hosting the Panels in the web/mobile client. [See here](https://devel
     * `botOptions.clientSecret`
 6. Make other changes as per your requirements.
 
-    <img src="../../images/banking-form.png" alt="banking form" title="banking form" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/configure-bot-actions.png" alt="configure bot actions" title="configure bot actions" style="border: 1px solid gray; zoom:75%;">
 
 7. Open the `kore-widgets-config.js`
 8. Configure your `botOptionsWiz` with the ‘_Widget SDK_’ channel configurations copied  in  above  section.
@@ -182,10 +182,10 @@ We will be hosting the Panels in the web/mobile client. [See here](https://devel
     * `botOptionsWiz.clientSecret`
 9. Make other changes as per your requirements.
 
-    <img src="../../images/configure-bot-actions.png" alt="configure bot actions" title="configure bot actions" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/configure-bot-actions-2.png" alt="configure bot actions" title="configure bot actions" style="border: 1px solid gray; zoom:75%;">
 
 10. Open the `index_widgets_chat.html` file in the browser and see the chat window along with the widgets. 
 
-    <img src="../../images/configure-bot-actions-2.png" alt="configure bot actions" title="configure bot actions" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/open-index-widget-chat.png" alt="open index widget chart" title="open index widget chart" style="border: 1px solid gray; zoom:75%;">
 
 11. If you want to host the Panels individually use the `index_widgets.html` file. See the GitHub for hosting the same in your web site.
