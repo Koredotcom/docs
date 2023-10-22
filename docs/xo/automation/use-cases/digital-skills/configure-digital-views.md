@@ -118,12 +118,10 @@ We will see how to create Widgets with static JSON content. We will use a JSON t
 
     <img src="../../images/new-widget-data-entry.png" alt="new widget data" title="new widget data" style="border: 1px solid gray; zoom:75%;">
 
-4. Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, [refer here](https://developer.kore.ai/docs/bots/sdks/widget-sdk-message-formatting-and-templates/). 
-`var message =`
+4. Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, click [here](https://developer.kore.ai/docs/bots/sdks/widget-sdk-message-formatting-and-templates/). 
 
 ```
-{
-      "templateType": "piechart",
+{     "templateType": "piechart",
       "pie_type": "regular",
       "title": "Summary",
       "description": "monthly report",
@@ -147,7 +145,6 @@ We will see how to create Widgets with static JSON content. We will use a JSON t
     };
 print(JSON.stringify(message));
 ```
-
 5. Test the panel and you will see both the **Panel** icons. 
 6. Click on each to see them in action.
 
