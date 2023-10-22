@@ -147,6 +147,7 @@ We will see how to create Widgets with static JSON content. We will use a JSON t
     };
 print(JSON.stringify(message));
 ```
+
 5. Test the panel and you will see both the **Panel** icons. 
 6. Click on each to see them in action.
 
