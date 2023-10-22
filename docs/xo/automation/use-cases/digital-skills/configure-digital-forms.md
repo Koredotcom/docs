@@ -132,7 +132,7 @@ Create a form to gather the following information:
 * **Description** would be the tip you want to display, eg. _Additional charges will apply_.
 24. Scroll and locate **Visibility Settings.** This component should be visible only when the account type is set to Credit Card.
 * Set **Is visible** flag to _Yes_
-* Add **Visibility Rules – Rule 1** for the field to be **Visible** select **accounttype** _field, _=(Equal To)_ operator, _Value_ comparison with, _Credit Card_ value AND selecting **cardtype** _field, _=(Equal To)_ operator, _Value_ comparison with, _Platinum_ value.
+* Add **Visibility Rules – Rule 1** for the field to be **Visible** select **accounttype** field, _=(Equal To)_ operator, _Value_ comparison with, _Credit Card_ value AND selecting **cardtype** field, _=(Equal To)_ operator, _Value_ comparison with, _Platinum_ value.
     
     <img src="../../images/view-visibility-settings.png" alt="visibility settings" title="visibility settings" style="border: 1px solid gray; zoom:75%;">
 
@@ -167,7 +167,7 @@ We will be creating a dialog task and adding a form node to trigger the Digital 
 2. From the left navigation menu, select **Conversational Skills -> Dialog Tasks.**
 3. Click the **+** against the **Dialog Tasks** to create a new Task
     * Enter **IntentName**, say, _OpenAccount_
-    * **Create & Proceed** to open the dialog builder page.
+    * Click **Create & Proceed** to open the dialog builder page.
 4. Retain the Intent Node default settings, and close the Intent Node.
 5. Click the **+** next to the intent node and select the **Form** option.
 6. From the dropdown list select the form (_OpenAccount_) we created earlier.
@@ -178,6 +178,8 @@ We will be creating a dialog task and adding a form node to trigger the Digital 
 8. For this use case, select _Only Form UI_ experience.
 9. A Form Node would be added, you can customize the form name, etc.
 10. We are changing the **Name** to _OpenAccountForm_ and **Display Name** to _Form to open account_.
+
+**Capture Form Node Values**
 
 Next, to capture the values returned by the Form Node using a Script node and displaying the same, follow the steps below:
 
