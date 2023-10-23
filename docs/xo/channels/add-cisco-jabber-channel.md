@@ -3,7 +3,7 @@
 Cisco Jabber is a platform that offers multiple communication methods, and which you can integrate with the assistants built with the Kore.ai XO Platform. Adding the Jabber channel to your Kore.ai VA allows end-users to interact with it using their _Jabber_ accounts. This article shows you how to add it as a Channel, where your VA can communicate to end-users via Jabber. You must have or register for a developer account in the _Jabber_ portal.
 
 
-# Configuration
+## Configuration
 
 To add the Cisco Jabber channel, follow the below steps:
 
@@ -27,7 +27,7 @@ To learn more about working with Channels within the Kore.ai XO Platform, please
 Following are code snippets of the payload formats for verifying the integration.
 
 
-# Payload for Post URL
+## Payload for Post URL
 
 Below is the response message from the bot that must be accepted by the POST URL that is registered in the **Configurations** tab.
 
@@ -44,31 +44,31 @@ Below is the response message from the bot that must be accepted by the POST URL
 
 
 
-# Webhook Payload
+## Webhook Payload
 
 Below is the Webhook payload format to post messages to the Kore.ai Bots Platform from Jabber.
 
-
 ```
- {
-                "message": {
-                    "text" : "<Message>",
-                    "attachments" : [<array of attachment links (optional)>]
-                },
-                "from" : {
-                    "id": "<unique-id-of-sender(mandatory)>",
-                    "userInfo" : {
-                      "firstName" : "<first-name(optional)>",
-                      "lastName" : "<second-name(optional)>",
-                      "email" : "<email(optional)>"
-                    }
-                },
-                "to" : {
-                    "id": <unique-id-of-recipient(mandatory)>,
-                    "groupInfo" : { //If message comes from a group/team/room conversations.
-                        "id" : "<unique-id-of-group>",
-                        "name": "<group-name(optional)>"
-                    }
-                }
-            }
- ```
+{
+  {
+    "message": {
+        "text" : "<Message>",
+        "attachments" : [<array of attachment links (optional)>]
+    },
+    "from" : {
+        "id": "<unique-id-of-sender(mandatory)>",
+        "userInfo" : {
+          "firstName" : "<first-name(optional)>",
+          "lastName" : "<second-name(optional)>",
+          "email" : "<email(optional)>"
+        }
+    },
+    "to" : {
+        "id": <unique-id-of-recipient(mandatory)>,
+        "groupInfo" : { //If message comes from a group/team/room conversations.
+            "id" : "<unique-id-of-group>",
+            "name": "<group-name(optional)>"
+        }
+    }
+}
+```
