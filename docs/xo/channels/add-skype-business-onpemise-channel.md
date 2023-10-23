@@ -53,12 +53,11 @@ To edit the Skype channel, follow the below steps:
 
 1. Hover over the channel to modify, and then click the **Settings** icon displayed to show the command menu displayed in the following illustration.
 ![settings](./images/Skype-Channel4.png "settings")
-
-Select one of the following commands to modify the channel:
+2. Select one of the following commands to modify the channel:
  * **Edit** – Click to open the **Skype Channel** page.
- * **Disable/Enable** – Click **Disable** to temporarily disable the use of the Skype channel for your bot. When the channel is disabled, click
- * **Enable** to enable use of the Skype channel.
- * **Delete** – Click **Delete**. On the **Delete Confirmation** dialog box, click **OK** to permanently delete the bot channel configuration. 
+ * **Disable/Enable** – Click **Disable** to temporarily disable the use of the Skype channel for your bot.
+ * **Enable** - When the channel is disabled, click **Enable** to enable use of the Skype channel.
+ * **Delete** – Click **Delete**. On the **Delete Confirmation** dialog box, click **OK** to permanently delete the bot channel configuration.
 
 !!! warning
 
