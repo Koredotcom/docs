@@ -4,7 +4,7 @@ To add Yammer as a channel to your Kore.ai bot, you must create an app in Yammer
 
 
 
-1. **Register an App **– To enable Yammer as a channel for your bot, create an app on Yammer. Log in to your _Yammer_ developer account to _Register a New App_. Initially, to enable the Yammer channel, you must create and register for a developer account in the Yammer Developer portal.
+1. **Register an App**– To enable Yammer as a channel for your bot, create an app on Yammer. Log in to your _Yammer_ developer account to _Register a New App_. Initially, to enable the Yammer channel, you must create and register for a developer account in the Yammer Developer portal.
 2. **Enter the Redirect URL** – Copy the_ Redirect URL_ provided in the **Configurations **tab of the Yammer channel page in the Bot Builder and enter it in the **Redirect URL** field to proceed with creating an app on Yammer.
 1. **Get App Information**– Go to the App Details page to get and reserve the **Channel ID**and **Channel Secret** for your channel configuration.
 2. **Deploy Bot to your Enterprise**– To allow your enterprise users to discover the bot in the App Directory, you can deploy the bot by updating the** App Directory** section.
@@ -57,7 +57,6 @@ Select one of the following commands to modify the channel:
 
 
 
-
   !!! warning
 
-             This operation is permanent and cannot be undone.
+           This operation is permanent and cannot be undone.
