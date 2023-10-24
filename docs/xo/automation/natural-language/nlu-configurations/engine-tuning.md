@@ -561,17 +561,12 @@ set to 3 by default
   <tr>
    <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Precedence_Intents">Precedence for Intents with Ambiguous Entities</a>
    </td>
-   <td>Enable to Use Precedence, Intent Over Entity, or Entity Over Intent options for intents with ambiguous entities.
-   </td>
-   <td>FM
-   </td>
-   <td>Enable
-<p>
-Disable (default)
-<p>
-/td>
-   </td>
-   <td>
+   <td>Enable to Use Precedence, Intent Over Entity, or Entity Over Intent options for intents with ambiguous entities.</td>
+   <td>FM</td>
+   <td><ul><li>Enable</li>
+<li>Disable (default)</li></ul>
+</td>
+<td>
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
@@ -618,7 +613,7 @@ This configuration is employed to specify how compound words should be handled. 
 
 The Machine Learning (ML) engine is responsible for analyzing and assessing user inputs to construct and refine a model. The ML model's primary goal is to categorize user inputs into predefined intents for which it has been trained. Nonetheless, when confronted with out-of-context utterances, the ML system may erroneously attempt to associate them with the incorrect intent.
 
-To address this issue, you can prevent misclassifications by activating the "None" intent within the **Training** > **Thresholds & Configurations** section for various languages. The **None intent** serves as a temporary category that safeguards against the ML model misassigning untrained or ambiguous utterances to inappropriate intents. This safeguard is enabled by default for newly created virtual assistants.
+To address this issue, you can prevent misclassifications by activating the **None Intent** option in the **Training** > **Thresholds & Configurations** section for various languages. The **None intent** serves as a temporary category that safeguards against the ML model assigning untrained or ambiguous utterances to inappropriate intents. This safeguard is enabled by default for newly created virtual assistants.
 
 For example, for an Airlines VA, an Intent “Book Flight Ticket” is mapped. If a customer requests to “Book a Movie Ticket” the ML tries to associate the closest intent “Book Flight Ticket” (wrong intent) as the successful intent and triggers it. This error can be eliminated by enabling the None intent.
 
@@ -632,7 +627,7 @@ Hyperparameters offer the means to further tailor the behavior of your Virtual A
 
 #### Network Type
 
-You can choose the Neural Network that you want to use. This setting is moved to the Machine Learning section post v8.1. [Refer here for details](https://developer.kore.ai/docs/bots/nlp/user-utterances/#Threshold_Configurations).
+You can choose the Neural Network that you want to use. This setting is moved to the Machine Learning section post v8.1. [Learn more](https://developer.kore.ai/docs/bots/nlp/user-utterances/#Threshold_Configurations).
 
 #### Epochs
 
@@ -710,7 +705,7 @@ Disabling this configuration sends the original user input to ML for intent iden
 
 ### Multiple Intent Model
 
-Enabling this feature creates multiple ML intent models for your VA. All the Primary Dialog Intents will be part of the Bot Level Intent Model. Separate Dialog Level ML Models are created for each of the other Dialog Tasks and Sub Dialog Tasks, consisting of all the sub-intents used in the respective task definition. [Refer here for details](https://developer.kore.ai/docs/bots/nlp/user-utterances/#Threshold_Configurations).
+Enabling this feature creates multiple ML intent models for your VA. All the Primary Dialog Intents will be part of the Bot Level Intent Model. Separate Dialog Level ML Models are created for each of the other Dialog Tasks and Sub Dialog Tasks, consisting of all the sub-intents used in the respective task definition. [Learn more](https://developer.kore.ai/docs/bots/nlp/user-utterances/#Threshold_Configurations).
 
 ### Lemmatization of KG Synonyms
 
