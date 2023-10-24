@@ -563,8 +563,8 @@ set to 3 by default
    </td>
    <td>Enable to Use Precedence, Intent Over Entity, or Entity Over Intent options for intents with ambiguous entities.</td>
    <td>FM</td>
-   <td><ul><li>Enable</li>
-<li>Disable (default)</li></ul>
+   <td>Enable
+<p>Disable (default)</p>
 </td>
 <td>
    </td>
