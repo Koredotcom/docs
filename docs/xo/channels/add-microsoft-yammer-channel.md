@@ -56,7 +56,6 @@ Select one of the following commands to modify the channel:
   * **Delete** – Click **Delete**. On the **Delete Confirmation** dialog box, click **OK** to permanently delete the bot channel configuration.
 
 
-
   !!! warning
 
            This operation is permanent and cannot be undone.

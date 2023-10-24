@@ -61,14 +61,10 @@ Steps to add a user in LivePerson:
 
 4. Provide a **URL** for the bot avatar.
 5. Choose the Login method as **API Key**, and select the **Generate API Key** option from the **API key** drop-down list to generate a new API key.
-
 ![generate API Key](./images/liveperson_channel7.png "generate API Key")
-
 6. Copy the **App key**, **Secret**, **Access Token**, and **Access Token Secret**, and enter them in the kore.ai **Configurations** tab of the LivePerson Channel page. For more information, see [Step 4 – Configure the LivePerson Channel in the XO Platform](https://developer.kore.ai/docs/bots/channel-enablement/adding-liveperson-channel/#Step_4_Configure_the_Channel_in_the_XO_Platform) section.
 7. Select Agent from the **Assignment** drop-down list, set **Max no. live chats** as **Unlimited**, and then select the skill created in the previous step from the **Skills** drop-down list.
-
 ![assignment](./images/liveperson_channel8.png "assignment")
-
 8. Click **Save**. For further information, see [Create and manage users](https://knowledge.liveperson.com/admin-settings-create-and-manage-users.html#Adding%20a%20user) and [Create a bot](https://developers.liveperson.com/tutorials-guides-getting-started-with-bot-building-deploy-the-bot.html#step-11-create-a-bot-user) user within LivePerson’s documentation.
 
 
@@ -103,7 +99,6 @@ Once the LivePerson channel is enabled, you can verify the integration by publis
 Steps to verify the LivePerson channel integration:
 
 
-
 1. Sign in to the LivePerson account with your admin user credentials.
 2. Go to the **Manage Campaigns and Engagements** page and click the **Live Messaging on your site** link, as shown below.
 ![manage campaigns](./images/liveperson_channel11.png "managee campaigns")
@@ -115,17 +110,11 @@ Steps to verify the LivePerson channel integration:
 ![Engagement Studio](./images/liveperson_channel13.png "Engagement Studio")
 
 5. Once the LivePerson campaign is published, go to **Manage Campaigns and Engagements > Campaign Builder > Data Sources**, as shown below.
-
-
 ![Manage Campaigns](./images/liveperson_channel14.png "Manage Campaigns")
-
 6. On the Data Sources page, select the **Web card** and click **Edit**.
-
-![Data Sources](./images/liveperson_channel15.png "Data Sources")
-
+![Data Sources](./images/liveperson_channel14.png "Data Sources")
 7. On the Web Tag page, copy the **embed code** and paste it into the html page you use to interact with the Kore.ai XO Platform Virtual Assistant (VA).
-![embed code](./images/liveperson_channel16.png "image_tooltip")
-
+![embed code](./images/liveperson_channel15.png "embed code") 
 8. Send a message from the _LivePerson Chat_ console to the kore.ai XO platform VA for which you have enabled the LivePerson channel.
 9. In the XO Platform, once you receive a message from the **LivePerson Agent** console, you can send a response to start communication between the two systems, as shown below.
-![liveperson agent](images/liveperson_channel17.png "liveperson agent")
+![liveperson agent](./images/liveperson_channel16.png "liveperson agent")
