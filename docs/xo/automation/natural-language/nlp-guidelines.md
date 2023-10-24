@@ -154,7 +154,7 @@ _ToFlight_ & _FromFlight_ captured from user utterance _change flight from XYZ32
 * **Pattern**: [ word1 word2 ] *n – match against any one word or phrase as defined within […] pattern for entity ToFlight–  _to *1_ pattern for entity FromFlight –  _[ using from ] *1_.
 _ToFlight_ & _FromFlight_ are captured from user utterance _change flight  from XYZ321 to ABC123_ and _change flight  to ABC123 using XYZ321_ but not from _change flight  for ABC123 using XYZ321._
 * **Pattern**: ~concept *n – pattern built using concepts. 
-pattern for entity ToFlight–  _to *1_ the pattern for entity FromFlight –  _~from *1_ wherefrom is a concept as (using) (from) _ToFlight_& _FromFlight_ are captured from user utterance _change flight from XYZ321 to ABC123_ and _change flight  to ABC123 using XYZ321_ but not from _change flight for ABC123 using XYZ321._
+pattern for entity ToFlight–  _to *1_ the pattern for entity FromFlight –  _~from *1_, where _from_ is a concept as (using) (from) _ToFlight_ & _FromFlight_ are captured from user utterance _change flight from XYZ321 to ABC123_ and _change flight  to ABC123 using XYZ321_ but not from _change flight for ABC123 using XYZ321._
 
 For more information on how to add patterns, refer to [Managing Patterns](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Patterns_and_Rules).
 
