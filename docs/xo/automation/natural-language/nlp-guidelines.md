@@ -133,7 +133,7 @@ As above, to detect entities, developers can use a combination of entity pattern
 
 **Examples**
 
-Following are some examples of entity patterns to recognize the _from _and _to _flight number for an intent to _change flight_.
+Following are some examples of entity patterns to recognize the _from_ and _to_ flight number for an intent to _change flight_.
 
 The pattern operators defined above can be applied to entity patterns also.
 
@@ -151,8 +151,7 @@ _ToFlight_ & _FromFlight_ captured from user utterance _change flight from XYZ32
 <p>When multiple patterns are entered for an entity, a match of either one will be taken.</p>
 </div>
 
-* **Pattern**: [ word1 word2 ] *n – match against any one word or phrase as defined within […]. 
-pattern for entity ToFlight–  _to *1_ pattern for entity FromFlight –  _[ using from ] *1_.
+* **Pattern**: [ word1 word2 ] *n – match against any one word or phrase as defined within […] pattern for entity ToFlight–  _to *1_ pattern for entity FromFlight –  _[ using from ] *1_.
 _ToFlight_ & _FromFlight_ are captured from user utterance _change flight  from XYZ321 to ABC123_ and _change flight  to ABC123 using XYZ321_ but not from _change flight  for ABC123 using XYZ321._
 * **Pattern**: ~concept *n – pattern built using concepts. 
 pattern for entity ToFlight–  _to *1_ the pattern for entity FromFlight –  _~from *1_ wherefrom is a concept as (using) (from) _ToFlight_& _FromFlight_ are captured from user utterance _change flight from XYZ321 to ABC123_ and _change flight  to ABC123 using XYZ321_ but not from _change flight for ABC123 using XYZ321._
@@ -163,7 +162,7 @@ For more information on how to add patterns, refer to [Managing Patterns](https:
 
 Negative patterns are used to eliminate intents detected by the Fundamental Meaning or Machine Learning models.
 
-For example, a user says _I was trying to Book a Flight when I faced an issue_. Though the machine identifies the intent as _Book a Flight_, that is not what the user wants to do. In such a case, defining _was trying to *_ as a negative pattern, would ensure that the matched intent is ignored.
+For example, a user says _I was trying to Book a Flight when I faced an issue_. Though the machine identifies the intent as _Book a Flight_, that is not what the user wants to do. In such a case, defining `was trying to *` as a negative pattern, would ensure that the matched intent is ignored.
 
 ## Synonyms
 
@@ -205,10 +204,10 @@ The general guideline for Synonyms are as follows:
 A match between the user input and synonym for entity (only for List of Values and Lookup types) identification can occur in one of the following ways:
 
 * **Partial Match** – This is the default behavior whereby one or more words in the input must match one or more words for a given synonym. For example, the user utterance  _inflight services_ will match _inflight magazine.._
-* **Exact Match** – Here the input must contain all the words for a given synonym. For example, _book inflight services _will match _add inflight services_. But _inflight services _ will not match _inflight magazine_. To trigger an exact match, the synonym must be enclosed within double-quotes.
+* **Exact Match** – Here the input must contain all the words for a given synonym. For example, _book inflight services_ will match _add inflight services_. But _inflight services_ will not match _inflight magazine_. To trigger an exact match, the synonym must be enclosed within double-quotes.
 * **Full Match** – The entire input must exactly match a given synonym word. For example, a _flight booking_ should match &lt;flight booking> but _my flight booking_ should NOT match &lt;flight booking>. Similarly, a _flight booking_ should not match &lt;my flight booking>. To trigger an exact match, the synonym must be enclosed within angular brackets.
 
-**Canonical Form Match** – This is the default behavior wherein the user input is matched with the synonym or its canonical form. For example, _Book me a flight_ will match with the synonym _booking request_ since _book _is the canonical form of _booking_. To disable this behavior, prefix the synonym with a single apostrophe as _checking_. (post v7.1)
+**Canonical Form Match** – This is the default behavior wherein the user input is matched with the synonym or its canonical form. For example, _Book me a flight_ will match with the synonym _booking request_ since _book_ is the canonical form of _booking_. To disable this behavior, prefix the synonym with a single apostrophe as _checking_. (post v7.1)
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>

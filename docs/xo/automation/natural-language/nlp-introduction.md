@@ -46,7 +46,7 @@ The Conversation Flow involves the following steps:
 
 <div class="admonition note">
 <p class="admonition-title">Important References</p>
-<p><ul><li>To understand <b>NLP Settings and Guidelines</b>, click <a href="../natural-language/nlp-guidelines.md">here</a>.</li>
+<p><ul><li>To understand <b>NLP Settings and Guidelines</b>, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlp-guidelines/">here</a>.</li>
 <li>To learn about <b>NLP Training</b> for your VA, click here.</li></ul></p>
 </div>
 
