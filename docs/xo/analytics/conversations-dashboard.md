@@ -1,15 +1,14 @@
 # **Conversations Dashboard**
 The Conversations Dashboard provides insights into how conversations are handled by your virtual assistant (VA). It shows how many conversations were successfully answered by the VA, how many were transferred to agents, and how many were incomplete. You can also view other metrics, such as the trend of conversation sessions, the conversation path analysis, the session distribution by channel, and the VA’s engagement grouped by self-service, drop-off, and agent transfer sessions.
 
+!!! note
+
+    The Conversations Dashboard is available only post 9.2 release, i.e. post April 09, 2022.
+
 To view the Conversations Dashboard, click the **Analyze** tab on the top menu and then click **Conversations Dashboard** in the left navigation. Select appropriate filters on the dashboard and click **Apply**.
 
 
 <img src="../images/conversations-dashboard-navigation-and-filter.png" alt="Conversations Dashboard"  title="Conversations Dashboard" style="border: 1px solid gray; zoom:100%;">
-
-
-!!! note
-
-    The Conversations Dashboard is available only post 9.2 release, i.e. post April 09, 2022.
 
 
 The Conversations Dashboard is organized into four categories based on the conversation behavior, explained below.
