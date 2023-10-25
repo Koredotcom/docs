@@ -17,11 +17,11 @@ Steps to enable the LivePerson channel:
 
 1. Go to the LivePerson account setup page and create a standard or an enterprise account. For more information, see [LivePerson documentation](https://developers.liveperson.com/get-started-with-automation.html#access-the-conversational-ai-applications).
 2. On the Login page, log in with your admin account credentials as shown below.
-<img src="../images/liveperson_channel1.png" alt="live persen credentials" title="live persen credentials" style="border: 1px solid gray;">
+<img src="./images/liveperson_channel1.png" alt="live persen credentials" title="live persen credentials" style="border: 1px solid gray;">
 
 3. Click **Next** and enter your Login Name and password, then click Sign-in.
 4. You are redirected to the Agent Workspace, as shown below.
-<img src="../images/liveperson_channel2.png" alt="agent Workspace" title="agent Workspace" style="border: 1px solid gray;">
+<img src="./images/liveperson_channel2.png" alt="agent Workspace" title="agent Workspace" style="border: 1px solid gray;">
 
 
 ## Step 2: Add a skill in LivePerson
@@ -33,13 +33,13 @@ Steps to add a skill to an agent in LivePerson:
 
 1. Sign in to your LivePerson account as an administrator and then select the **Manage Users** tab.
 2. In the **Manage Users & Skills** tab, click **Add Skill** to create a new skill.
-![manage users](./images/liveperson_channel2.png "manage users")
+<img src="./images/liveperson_channel3.png" alt="manage users" title="manage users" style="border: 1px solid gray;">
 
 3. On the Skills page, click **+Add Skill** (at the bottom bar) and enter the details of the required skills.
 4. Enter skill name as . For example, if your _Kore.ai VA name_ is **weather bot**, then the skill name must be **weather_skill**.
 5. Enter a **Description** for the skill, and then unselect the check box – **Conversation assigned to skill can be transferred to other skills**.
 6. Click **Save** to save the skill.
-![skills](./images/liveperson_channel3.png "image_tooltip")
+<img src="./images/liveperson_channel4.png" alt="skills" title="skills" style="border: 1px solid gray;">
 
 7. Read more about [creating skills in LivePerson](https://knowledge.liveperson.com/admin-settings-skills-groups-connect-visitors-to-agents-by-skills.html/).
 
