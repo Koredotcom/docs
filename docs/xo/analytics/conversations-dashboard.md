@@ -4,7 +4,7 @@ The Conversations Dashboard provides insights into how conversations are handled
 To view the Conversations Dashboard, click the **Analyze** tab on the top menu and then click **Conversations Dashboard** in the left navigation. Select appropriate filters on the dashboard and click **Apply**.
 
 
-<img src="./images/conversations-dashboard-navigation-and-filter.png" alt="Conversations Dashboard"  title="Conversations Dashboard" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/conversations-dashboard-navigation-and-filter.png" alt="Conversations Dashboard"  title="Conversations Dashboard" style="border: 1px solid gray; zoom:100%;">
 
 
 !!! note
@@ -19,7 +19,7 @@ The Conversations Dashboard is organized into four categories based on the conve
 
 Conversation Sessions display the total number of conversations between the virtual assistant and a user in a specific period of time. The session starts when a user sends a message and ends when the user indicates that the problem is solved, abandons the chat, or reaches the agent transfer node. For details on the metrics used in each widget/category, see the [Metrics Table](./conversations-dashboard.md#metrics-table) section in this document.
 
-<img src="./images/conversation-sessions.png" alt="Conversation Sessions"  title="Conversation Sessions" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/conversation-sessions.png" alt="Conversation Sessions"  title="Conversation Sessions" style="border: 1px solid gray; zoom:100%;">
 
 
 ## Self-service Rate
@@ -28,7 +28,7 @@ Self-service sessions refer to the conversations that the virtual assistant cont
 
 If a dialog task reaches the <em>End Of Dialog</em> node, the task is considered as completed and categorized as a self-service. There could be a scenario where a virtual assistant is configured with either a <em>Welcome event</em> or an <em>On-Connect event</em>, and there are multiple messages sent by the virtual assistant without any user interaction. In this case, the platform considers this task as contained and increases the self-service count. For details on the metrics used in each widget/category, see the [Metrics Table](./conversations-dashboard.md#metrics-table) section in this document.
 
-<img src="./images/self-service-rate.png" alt="Self-service Rate"  title="Self-service Rate" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/self-service-rate.png" alt="Self-service Rate"  title="Self-service Rate" style="border: 1px solid gray; zoom:100%;">
 
 
 ## Drop-off Rate
@@ -43,7 +43,7 @@ A drop-off is a conversation session where the user abandons the conversation wi
 
 The **Drop-off Rate** widget displays the percentage and the total number of drop-offs within a selected period. It also shows the percentage increase or decrease in the drop-off sessions from the last selected period. For details on the metrics used in each widget/category, see the [Metrics Table](./conversations-dashboard.md#metrics-table) section in this document.
 
-<img src="./images/drop-off-rate.png" alt="Drop-off Rate"  title="Drop-off Rate" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/drop-off-rate.png" alt="Drop-off Rate"  title="Drop-off Rate" style="border: 1px solid gray; zoom:100%;">
 
 
 ## Agent Transfer Rate
@@ -52,7 +52,7 @@ Some conversations may require human assistance as the users can’t finish the 
 
 The **Agent Transfer Rate** widget displays the percentage and total number of agent transfers within the selected period. It also shows the percentage increase or decrease in the agent transfer sessions from the last selected period. For details on the metrics used in each widget/category, see the [Metrics Table](./conversations-dashboard.md#metrics-table) section in this document.
 
-<img src="./images/agent-transfer-rate.png" alt="Agent Transfer Rate"  title="Agent Transfer Rate" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/agent-transfer-rate.png" alt="Agent Transfer Rate"  title="Agent Transfer Rate" style="border: 1px solid gray; zoom:100%;">
 
 !!! note
 
