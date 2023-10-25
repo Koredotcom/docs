@@ -32,7 +32,7 @@ All conversations will get assigned to queues as they come in. This process is b
 
 ## The Queues Live Board
 
-To access _Queues **,**_ go to **Configuration > Routing > Queues**.\
+To access _Queues **,**_ go to **Contact Center > ROUTING > Queues**.\
 ![queues_page](./images/queues-page.png)
 
 This section displays the following:
