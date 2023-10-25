@@ -17,13 +17,11 @@ Steps to enable the LivePerson channel:
 
 1. Go to the LivePerson account setup page and create a standard or an enterprise account. For more information, see [LivePerson documentation](https://developers.liveperson.com/get-started-with-automation.html#access-the-conversational-ai-applications).
 2. On the Login page, log in with your admin account credentials as shown below.
-
 <img src="../images/liveperson_channel1.png" alt="live persen credentials" title="live persen credentials" style="border: 1px solid gray;">
 
 3. Click **Next** and enter your Login Name and password, then click Sign-in.
 4. You are redirected to the Agent Workspace, as shown below.
-![agent Workspace](./images/liveperson_channel2.png "agent workspace")
-
+<img src="../images/liveperson_channel2.png" alt="agent Workspace" title="agent Workspace" style="border: 1px solid gray;">
 
 
 ## Step 2: Add a skill in LivePerson
