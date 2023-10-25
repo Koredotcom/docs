@@ -129,11 +129,8 @@ To create a panel, follow the steps below:
 ### Add Widgets
 
 1. Click **Add Widget** to add widgets to the panel.
-   
    <img src="../../images/widget-added-to-panel.png" alt="add widget to panel" title="add widget to panel" style="border: 1px solid gray; zoom:75%;">
-
 2. Select widgets from the drop-down list and click **Add**. You can add multiple widgets to the same panel.
-
     <img src="../../images/select-widgets-from-dropdown-list.png" alt="select widgets from dropdown" title="select widgets from dropdown" style="border: 1px solid gray; zoom:75%;">
 
 ### Panel Options
