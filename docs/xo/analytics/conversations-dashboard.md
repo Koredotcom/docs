@@ -6,8 +6,7 @@ The Conversations Dashboard provides insights into how conversations are handled
     The Conversations Dashboard is available only post 9.2 release, i.e. post April 09, 2022.
 
 To view the Conversations Dashboard:
-1. Click the **Analyze** tab on the top menu and then click **Conversations Dashboard** in the left navigation.
-<img src="../images/conversations-dashboard-navigation-and-filter.png" alt="Conversations Dashboard"  title="Conversations Dashboard" style="border: 1px solid gray; zoom:100%;"> 
+1. Click the **Analyze** tab on the top menu and then click **Conversations Dashboard** in the left navigation.  <img src="../images/conversations-dashboard-navigation-and-filter.png" alt="Conversations Dashboard"  title="Conversations Dashboard" style="border: 1px solid gray; zoom:100%;"> 
 2. Select appropriate filters on the dashboard and click **Apply**.
 
 
