@@ -17,7 +17,7 @@ Steps to enable the LivePerson channel:
 
 1. Go to the LivePerson account setup page and create a standard or an enterprise account. For more information, see [LivePerson documentation](https://developers.liveperson.com/get-started-with-automation.html#access-the-conversational-ai-applications).
 2. On the Login page, log in with your admin account credentials as shown below.
-<img src="../images/liveperson_channel1.png" alt="live persen credentials" title="live persen credentials" style="border: 1px solid gray; zoom:50%;">
+<img src="../images/liveperson_channel1.png" alt="live persen credentials" title="live persen credentials" style="border: 1px solid gray; ">
 
 3. Click **Next** and enter your Login Name and password, then click Sign-in.
 4. You are redirected to the Agent Workspace, as shown below.
@@ -39,7 +39,7 @@ Steps to add a skill to an agent in LivePerson:
 4. Enter skill name as . For example, if your _Kore.ai VA name_ is **weather bot**, then the skill name must be **weather_skill**.
 5. Enter a **Description** for the skill, and then unselect the check box – **Conversation assigned to skill can be transferred to other skills**.
 6. Click **Save** to save the skill.
-<img src="../images/liveperson_channel4.png" alt="skills" title="skills" style="border: 1px solid gray; zoom:50%;">
+<img src="../images/liveperson_channel4.png" alt="skills" title="skills" style="border: 1px solid gray; ">
 
 7. Read more about [creating skills in LivePerson](https://knowledge.liveperson.com/admin-settings-skills-groups-connect-visitors-to-agents-by-skills.html/).
 
@@ -52,17 +52,17 @@ Steps to add a user in LivePerson:
 
 
 1. Sign in to the LivePerson admin account, and then go to **Manage Users & Skills** and click **Add User**.
-<img src="../images/liveperson_channel4.png" alt="manage skills" title="manage skills" style="border: 1px solid gray; zoom:50%;">
+<img src="../images/liveperson_channel4.png" alt="manage skills" title="manage skills" style="border: 1px solid gray; ">
 
 2. On the Add User page, select the **User Type** as _Bot_.
 3. Enter a _Login Name_, _Email_, _Nickname_, _Employee ID_, and _Name_. (The nickname and name are displayed on the screen in the user chat.) <img src="../images/liveperson_channel5.png" alt="nickname details" title="nickname details" style="border: 1px solid gray;">
 
 4. Provide a **URL** for the bot avatar.
 5. Choose the Login method as **API Key**, and select the **Generate API Key** option from the **API key** drop-down list to generate a new API key.
-<img src="../images/liveperson_channel6.png" alt="generate API Key" title="generate API Key" style="border: 1px solid gray; zoom:50%;">
+<img src="../images/liveperson_channel6.png" alt="generate API Key" title="generate API Key" style="border: 1px solid gray; ">
 6. Copy the **App key**, **Secret**, **Access Token**, and **Access Token Secret**, and enter them in the kore.ai **Configurations** tab of the LivePerson Channel page. For more information, see [Step 4 – Configure the LivePerson Channel in the XO Platform](/docs/xo/channels/add-live-person-channel/#step-4-configure-the-channel-in-the-xo-platform) section.
 7. Select Agent from the **Assignment** drop-down list, set **Max no. live chats** as **Unlimited**, and then select the skill created in the previous step from the **Skills** drop-down list.
-<img src="../images/liveperson_channel7.png" alt="assignment" title="assignment" style="border: 1px solid gray; zoom:50%;">
+<img src="../images/liveperson_channel7.png" alt="assignment" title="assignment" style="border: 1px solid gray; ">
 8. Click **Save**. For further information, see [Create and manage users](https://knowledge.liveperson.com/admin-settings-create-and-manage-users.html#Adding%20a%20user) and [Create a bot](https://developers.liveperson.com/tutorials-guides-getting-started-with-bot-building-deploy-the-bot.html#step-11-create-a-bot-user) user within LivePerson’s documentation.
 
 
