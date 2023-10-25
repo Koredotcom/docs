@@ -15,7 +15,7 @@ Traits are entities that can be extracted from the user input, before intent rec
 * Indirect entity extraction, e.g.: gender or age-specific words can be inferred from the text.  A phrase such as: “Seat in front of the plane with extra legroom” implies, for example, a _First Class_ seat.
 * Intent recognition, using rules. Any rule match for intent will be considered a definitive match.
 * Identification based on keywords/phrases and their synonyms. For Example, **Trait-Color: Blue**– “Blue”, “Sapphire”, “Teal”; **Trait-Color-Red** – Red, Maroon, Crimson **Trait-Status: NotWorking:** “doesn’t work”, “switched off”;  **Trait-Status:Working**: “working”, “turned on.”
-* Inference from a keyword or specific phrase in the sentence. There is no obvious association between certain words in the sentence and the value of the entity, but rather you need the sentence as a whole to determine the value. For example, **Trait-Greeting-Emotion: Positive **– “Good Morning”, “How are you”;**  Trait-Greeting-Emotion: Negative** – “I hate to say”, “I am not having trouble”.
+* Inference from a keyword or specific phrase in the sentence. There is no obvious association between certain words in the sentence and the value of the entity, but rather you need the sentence as a whole to determine the value. For example, **Trait-Greeting-Emotion: Positive** – “Good Morning”, “How are you”; **Trait-Greeting-Emotion: Negative** – “I hate to say”, “I am not having trouble”.
 
 Configuring Traits involves:
 
@@ -42,7 +42,7 @@ This can be achieved by the following:
 To access **Traits**, follow the steps below:
 
 1. Navigate to **Build > Natural Language > Training > Traits**.
-<img src="../../images/access-traits.png" alt="access traits" title="access traits" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/access-traits.png" alt="access traits" title="access traits" style="border: 1px solid gray; zoom:75%;">
 
 The following key features can be leveraged when defining Traits:
 
@@ -50,7 +50,7 @@ The following key features can be leveraged when defining Traits:
 
     * Trait Type can be _ML Based_ or _Pattern Based_. Each trait of a trait type can be trained using words, phrases, utterances, or patterns based on the type. **Manage** Trait Type allows you to define the training configuration. [See below](https://developer.kore.ai/docs/bots/nlp/traits/#The_ML_Model_for_Traits) for ML-based trait configuration.
     * A _Trait Type_ can have one or more _Traits_.
-    <img src="../../images/trait-type-definition.png" alt="traits type definition" title="traits type definition" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/trait-type-definition.png" alt="traits type definition" title="traits type definition" style="border: 1px solid gray; zoom:75%;">
 
 2. **Traits** **names** should be unique in a group. But traits with the same name can be present in multiple groups.
 
@@ -101,13 +101,13 @@ _Intent detection_ or _Dialog execution_ is achieved using traits, along with th
 There are multiple ways to add rules:
 
 1. From the Traits section using the **Add New Rule** link.
-<img src="../../images/add-new-rule-link.png" alt="add new rule link" title="add new rule link" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-new-rule-link.png" alt="add new rule link" title="add new rule link" style="border: 1px solid gray; zoom:75%;">
 
 2. From the Intent Node using the **Rules** section under the **NLP Properties**.
-<img src="../../images/add-rules-intent-node.png" alt="add rules intent node" title="add rules intent node" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-rules-intent-node.png" alt="add rules intent node" title="add rules intent node" style="border: 1px solid gray; zoom:75%;">
 
 3. Click the **Rules** tab for a given **Intent** to view the rules under **Build > Natural Language > Training**.
-<img src="../../images/view-rules.png" alt="view rules" title="view rules" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/view-rules.png" alt="view rules" title="view rules" style="border: 1px solid gray; zoom:75%;">
 
 Each rule can have one or more conditions with AND as the operator. Multiple trait rules can be defined for a given intent and the intent is considered as a definite match if any one of the rules matches.
 
@@ -115,7 +115,7 @@ Each rule can have one or more conditions with AND as the operator. Multiple tra
 
 The Knowledge Graph can also be part of the discovery process using Traits. For this, each term or node can be associated with a trait. A given term can be associated with a single Trait.
 
-<img src="../../images/kg-intents.png" alt="kg intents" title="kg intents" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/kg-intents.png" alt="kg intents" title="kg intents" style="border: 1px solid gray; zoom:75%;">
 
 ### Trait Detection
 
@@ -136,11 +136,11 @@ The Ranking and Resolver gets input from the three NL engines and Traits to anal
 
 * The intent is considered as a definite match only if all the traits (one in the case of Knowledge Graph) present in a trait rule are detected.
 * NL Analysis includes information on traits detected and the NLP Flow shows the information about traits detected.
-<img src="../../images/utterance-testing-intent-detection.png" alt="utterance testing intent detection" title="utterance testing intent detection" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/utterance-testing-intent-detection.png" alt="utterance testing intent detection" title="utterance testing intent detection" style="border: 1px solid gray; zoom:75%;">
 
 ### Dialog Transition
 
 The Conversation Flow is controlled using Traits. For a Dialog, **Connection Rules** are defined using the Trait Context. This is done from the **Connection** tab under the **Properties** Panel for the Dialog.
 
 The Traits Context is accessed using `context.traits`. It returns an array of all traits matching the intent, hence the condition to be used is ‘_contains_'.
-<img src="../../images/traits-dialog-transition.png" alt="traits dialog transition" title="traits dialog transition" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/traits-dialog-transition.png" alt="traits dialog transition" title="traits dialog transition" style="border: 1px solid gray; zoom:75%;">
