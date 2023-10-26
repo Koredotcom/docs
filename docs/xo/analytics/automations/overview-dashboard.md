@@ -9,7 +9,7 @@ The Overview dashboard gives a snapshot of the Virtual Assistant’s conversatio
 2. Click **Overview** under the **Automation** section of the **Analytics** panel. The Overview dashboard is displayed on the right side of the page.
 3. Select appropriate filters on the dashboard and click **Apply**.
 
-<img src="images/overview-dashboard.png" alt="Overview Dashboard" title="Overview Dashboard" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/overview-dashboard.png" alt="Overview Dashboard" title="Overview Dashboard" style="border: 1px solid gray; zoom:80%;">
 
 
 
