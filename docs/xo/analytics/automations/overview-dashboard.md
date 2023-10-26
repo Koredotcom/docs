@@ -5,7 +5,6 @@ The Overview dashboard gives a snapshot of the Virtual Assistant’s conversatio
 **To view the Overview dashboard, follow the steps**: 
 
 
-
 1. Click the three dots on the left navigation pane and then click **Analytics**. The Analytics panel is displayed with the list of reports.
 2. Click **Overview** under the **Automation** section of the **Analytics** panel. The Overview dashboard is displayed on the right side of the page.
 3. Select appropriate filters on the dashboard and click **Apply**.
