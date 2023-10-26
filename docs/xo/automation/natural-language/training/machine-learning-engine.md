@@ -528,7 +528,7 @@ This setting is not valid when _Network Type_ is set to _Transformer_.
 
 The Kore.ai XO Platform now supports the following **150 Polish stop words** for ML Engine Training, in addition to the current stop words:
 
-AlphabetPolish Words
+Alphabet Polish Words
 
 <table border="1.5">
 <tr bgcolor="#FAFAFA">
@@ -838,10 +838,9 @@ The ML engine enables you to identify issues proactively in the training phase i
 
 ![alt_text](images/image27.png "image_tooltip")
 
-4. Once you click on the Intent with an error or warning, hover over the **Bulb** icon to view the summary of error or warning messages as illustrated below: 
+Once you click on the Intent with an error or warning, hover over the **Bulb** icon to view the summary of error or warning messages as illustrated below: 
 
 ![alt_text](images/image28.png "image_tooltip")
-
 
 ## Exporting and Importing Machine Learning Utterances
 
