@@ -14,9 +14,6 @@ This article discusses the processes behind the Machine Learning Engine, and how
 
 The below diagram summarizes the intent detection pipeline for both training and prediction stages. For the training pipeline, the language detection and auto-correction are not run with the assumption that the trainer would be aware of the language in which training needs to be done and of the spellings to be used which might include domain-specific non-dictionary words like Kore, etc.
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image1.png "image_tooltip")
 
 ### Entities Extraction
@@ -28,8 +25,6 @@ Entity extraction involves identifying any information provided by the user apar
 3. **NER or named entity recognition** needs the training to identify the same entity type for different entities e.g. source & destination cities for flight booking intent, both of which are city type entities and the engine needs the training to distinguish between the two. NER can be conditional random field-based or neural network-based. CRF is preferred since it works on lesser data and has a faster training time compared to the NN-based method.
 
 The following diagram summarizes the NER entity extraction pipeline.
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 ![alt_text](images/image2.png "image_tooltip")
 
@@ -89,9 +84,6 @@ To add utterances to the Machine Learning Engine, please follow the steps below:
 5. You can use the filter option to restrict the display items to **Dialog Intents, Sub Intent Dialogs** or **Sub-Intents**. You can also choose to **Include Hidden Tasks**. 
 6.  Click **Utterances > + Utterance** against the Intent for which you want to add the utterances. 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image3.png "image_tooltip")
 
 7. The user utterance page opens.
@@ -102,8 +94,6 @@ Here is where you can enter the utterances.
 <p class="admonition-title">Note</p>
 <p>Utterances greater than 3,000 characters in length are not allowed.</p>
 </div>
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 ![alt_text](images/image4.png "image_tooltip")
 
@@ -122,8 +112,6 @@ Apart from the intent, you can train your VA to recognize the entities, if prese
 
 **You can mark entities in your utterances**, by selecting the entity value and clicking the corresponding entity name.
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 ![alt_text](images/image5.png "image_tooltip")
 
 The Platform will also try to identify and mark the entities. You have the option to accept or discard these suggestions. The Platform will identify the entities based upon:
@@ -134,15 +122,13 @@ The Platform will also try to identify and mark the entities. You have the optio
 
 For each of the entities thus marked, the confidence scores identified by the ML engine are displayed. This score is available only when the Conditional Random Field is selected as the NER model.
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 ![alt_text](images/image6.png "image_tooltip")
 
 Further, if you have enabled Entity Placeholders, the Platform will replace the entity values in the training utterance with entity name placeholders for training the ML model. Using actual entity values as well as multiple additions of an utterance with just a change in the entity value will have an adverse impact on the ML training model. The name of entities also starts contributing highly to the intent detection model.
 
 #### Using Negative Patterns
 
-Negative patterns can be used to eliminate intents detected by the Fundamental Meaning or Machine Learning models. [Refer here to know more](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Negative_Patterns).
+Negative patterns can be used to eliminate intents detected by the Fundamental Meaning or Machine Learning models. [Learn more](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Negative_Patterns).
 
 ## Training your Assistant
 
@@ -150,7 +136,7 @@ After you added user utterances, you should train the Kore.ai interpreter to rec
 
 _“You have untrained utterances in your ML model. Train your VA to update with all your utterances.”_
 
-Click **Train**. A status bar is displayed to show progress for utterance training. When complete, the _Utterances trained successfully_ message is displayed. The user utterances are added to the Machine Learning Database. You can further configure the ML engine, identify the dummy intents when a user utterance contains the words that are not used in the VA’s training i.e. vocabulary, [refer here for more details](https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/).
+Click **Train**. A status bar is displayed to show progress for utterance training. When complete, the _Utterances trained successfully_ message is displayed. The user utterances are added to the Machine Learning Database. You can further configure the ML engine, identify the dummy intents when a user utterance contains the words that are not used in the VA’s training i.e. vocabulary, [Learn more](https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/).
 
 Once you have trained your VA, you can test it on the newly trained data. [Learn how to test your ](https://developer.kore.ai/docs/bots/test-your-bot/testing-your-bot-with-nlp/)assistant.
 
@@ -178,8 +164,6 @@ To set up the **Auto Train** option, follow the steps below:
 3. On the left navigation menu, click **Natural Language** -> **Thresholds & Configurations** -> **Machine Learning**.
 4. Select “_Yes, add the successfully identified user utterances to the ML training model (Unsupervised Training)”_ for the **Auto Training For Machine Learning** option.
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 ![alt_text](images/image7.png "image_tooltip")
 
 
@@ -198,7 +182,7 @@ The Threshold & Configurations for the ML engine are discussed in detail in the 
 
 The XO  Platform ver 6.3 upgraded its Machine Learning (ML) model to v3. This includes a host of improvements and also allows developers to fine-tune the model using parameters to suit business requirements. The developers can change parameters like stop word usage, synonym usage, thresholds, and n-grams, as well as opt between [Deep Neural Network](https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks) or [Conditional Random Field-based](https://en.wikipedia.org/wiki/Conditional_random_field) algorithms for the [Named-Entity Recognition (NER) ](https://en.wikipedia.org/wiki/Named-entity_recognition)model.
 
-In v8.0 of the Platform, provision has been enabled to use the v5 of the ML intent model and externalize several hyperparameters. This can be achieved through the Advanced NLP Configuration, [refer here for details](https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/).
+In v8.0 of the Platform, provision has been enabled to use the v5 of the ML intent model and externalize several hyperparameters. This can be achieved through the Advanced NLP Configuration, [Learn more](https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/).
 
 When the Multiple Intents Model =is enabled, the ML Engine maintains multiple intent models for the VA as follows:
 
@@ -214,17 +198,13 @@ You can configure the Thresholds and Configurations separately for each of the i
 
 Training of “similar intents” with different purposes is usually difficult as the training given for an intent can add noise or conflict with the training given to the other intent. This is more evident in cases where the intents have a contextually different meaning or purpose.
 
-Consider the following case: A user is in the **Make a Booking **task, so any query related to the Booking refund policy should be answered within this context. However, the query can also trigger FAQs from **Cancel a Booking**. 
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+Consider the following case: A user is in the **Make a Booking** task, so any query related to the Booking refund policy should be answered within this context. However, the query can also trigger FAQs from **Cancel a Booking**. 
 
 ![alt_text](images/image8.png "image_tooltip")
 
 Enabling the Multiple Intent Models from the Advanced NLP Configurations ([see here for how](https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/)) allows you to have a dedicated ML model only for the primary intents and separate ML Models for each of the dialogs with their associated sub-intents so that the intent detection of sub-intents gets preferential treatment.
 
 Continuing with the above example, with a Multiple Intent Model, you can define a separate _context-based_ FAQ and ensure a proper response to the user.
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 ![alt_text](images/image9.png "image_tooltip")
 
@@ -234,8 +214,6 @@ All the primary intents of the VA will be part of the **Bot Level Intent Model**
 
 The XO Platform provides language-wise defaults for the following parameters related to the ML performance of your VA. You can customize them to suit your particular needs.
 
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 ![alt_text](images/image10.png "image_tooltip")
 
 <div class="admonition note">
@@ -243,14 +221,14 @@ The XO Platform provides language-wise defaults for the following parameters rel
 <ul><li>The illustration below shows the list of all possible configurations and these are available for both single and multiple intent models.</li>
 <li>When the multiple intent model is enabled, you can configure the individual models by selecting the Configure link against the model.</li>
 <li>While there is only one VA level intent model, you can add multiple dialog intent models using the Add New button and configure each as per your requirements.</li>
-<li>Advanced ML Configurations can be applied from here or from the Advanced NLP Configurations section refer here for details.</li></ul>
+<li>Advanced ML Configurations can be applied from here or from the Advanced NLP Configurations section.</li></ul>
 </div>
 
 #### Network Type
 
 You can choose the Neural Network that you would like to use to train the intent models. This setting has been moved to Machine Learning from Advanced NLP Configurations in v8.1.
 
-You can choose between the following types. Based on the selection additional configurations can be done from the Advanced NLP Configurations section, [refer here for details](https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Externalization_of_ML_Engine).
+You can choose between the following types. Based on the selection additional configurations can be done from the Advanced NLP Configurations section, [Learn more](https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Externalization_of_ML_Engine).
 
 * **Standard.**
 * **MLP-BOW** – The bag-of-words model is a simplifying representation used in natural language processing and information retrieval. In this model, a text is represented as the bag of its words, disregarding grammar and even word order but keeping multiplicity.
@@ -259,7 +237,7 @@ You can choose between the following types. Based on the selection additional co
 * **CNN** (convolutional neural networks) is a class of deep neural networks in deep learning most commonly applied to analyzing visual imagery. It makes use of the word order for a specific region size and has achieved remarkable results on various text classification tasks.
 * **Transformers** use a Universal Sentence encoder in the vectorization stage of the Training pipeline. The output of the sentence encoder is fed to a Multi-Layer perceptron network for training. SentenceEncoder has an inbuilt capability of understanding the semantic similarity between sentences taking into account the synonyms and various usage patterns of the same sentence. 
 The Universal Sentence Encoder encodes text into high-dimensional vectors that can be used for text classification, semantic similarity, clustering, and other natural language tasks. The model is trained and optimized for greater-than-word length text, such as sentences, phrases, or short paragraphs. It is trained on a variety of data sources and a variety of tasks with the aim of dynamically accommodating a wide variety of natural language understanding tasks. The input is the variable-length English text and the output is a 512-dimensional vector.
-* **KAEN** (Kore Advanced Embeddings Network) – Models trained with Sentence Embeddings alone can not understand the domain-specific terminology especially if the words from training are non-dictionary words. Kore.ai provides a model which can understand the meaning of the sentence and at the same time give importance to the domain-specific terminology. There are two parallel layers in work in this model – one to optimize the weights against the sentence embeddings and the other to optimize the word importance for a given sentence.  The activation function used for these two layers is RReLU (Randomized Leaky Rectified Linear Unit, [refer here for details](https://arxiv.org/pdf/1505.00853.pdf))
+* **KAEN** (Kore Advanced Embeddings Network) – Models trained with Sentence Embeddings alone can not understand the domain-specific terminology especially if the words from training are non-dictionary words. Kore.ai provides a model which can understand the meaning of the sentence and at the same time give importance to the domain-specific terminology. There are two parallel layers in work in this model – one to optimize the weights against the sentence embeddings and the other to optimize the word importance for a given sentence.  The activation function used for these two layers is RReLU (Randomized Leaky Rectified Linear Unit, [Learn more](https://arxiv.org/pdf/1505.00853.pdf))
 * **Zero-Shot Model with OpenAI**: Helps define descriptive intents that the VA identifies in the user utterance based on semantic similarity without requiring training data.
 * **Few-shot Model (Kore.ai Hosted Embeddings)**: Helps define more number of granular intents that describe the user’s intention in the utterance more accurately with limited training requirement.
 
@@ -297,9 +275,6 @@ The Kore.ai XO platform allows developers to create a Natural Language Understan
 
 1. The user defines the intent to be identified by the system. For example, in the banking use case, instead of saying “_I see invalid transactions_“, the intent you provide has to be more descriptive within a subject, object, and nouns. It should be something more descriptive like “_I received an alert on my phone about transactions that I have not done._“. This helps the virtual assistant correctly identify the intent “_Dispute credit card Transaction._“
 
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image11.png "image_tooltip")
 
 If required, the user can add dialogs for the intents.
@@ -319,16 +294,10 @@ For an online shopping virtual assistant, the following needs to be ensured to i
 
 When an intent is named “**_Show the status of my order_**,” for example, under **Build** > **Conversational Skills** > **Dialog Tasks**.
 
-
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 ![alt_text](images/image12.png "image_tooltip")
 
 
 For a new bot, under **Build** > **Natural Language** > **Training** > **Intents**, ensure that no training utterances are added for the intent.
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/image13.png "image_tooltip")
 
@@ -346,8 +315,6 @@ To enable the **ZSL** model, follow the steps below:
 1. Navigate to **Build** > **Natural Language** > **Thresholds and Configurations** > **Machine Learning**.
 2. Select **_Zero-Shot Model with OpenAI_** in the dropdown list for **Network Type**, and click **Save**.
 
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 ![alt_text](images/image14.png "image_tooltip")
 
 **Testing the Utterance**
@@ -359,14 +326,10 @@ To test the utterance for the **Zero-Shot Learning Model with OpenAI** Network T
 
 **Example 1**: “_I don’t want the product_.”
 
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 ![alt_text](images/image15.png "image_tooltip")
 
 
 **Example 2**: “_Where is my delivery?_”
-
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 ![alt_text](images/image16.png "image_tooltip")
 
@@ -375,15 +338,10 @@ To test the utterance for the **Zero-Shot Learning Model with OpenAI** Network T
 
 **Example 1**: **_Cancel My Order_** for “_I don’t want the product_.”
 
-<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 ![alt_text](images/image17.png "image_tooltip")
 
 
 **Example 2**: **_Show the status of my order_** for “_Where is my delivery?_”
-
-<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/image18.png "image_tooltip")
 
@@ -396,8 +354,6 @@ The Few-shot model allows you to train your virtual assistants using the task na
 **Few-Shot as the Default ML Model**
 
 The Platform sets the Few-Shot model as the default ML Engine model selection with the recommended thresholds for new standard workspace bots when **_English_** is selected as the NLU Language.
-
-<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 ![alt_text](images/image19.png "image_tooltip")
 
@@ -473,15 +429,9 @@ The model uses embeddings generated using large pre-trained language models to c
 
 1. You can start by just creating intents with descriptive names. Post-testing the performance of the intent, you can consider adding a few utterances only for the failed variations. For example, in the banking use case, when the utterance “_I forgot my pin_” (which is very straightforward) is given, the virtual assistant correctly identifies the intent “_reset credit card pin_.” 
 
-
-<p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image20.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image20.png "image_tooltip")
 
 2. However, for a more complex utterance like “_I received an alert on my phone about transactions that I have not done._“, the virtual assistant identifies the intent “_Dispute credit card Transaction_” correctly only when a training utterance like “_Unidentified Transactions_” is added to nudge the model in the right direction. 
-
-<p id="gdcalert21" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image21.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 ![alt_text](images/image21.png "image_tooltip")
 
@@ -494,9 +444,6 @@ To enable the **FSL** model, follow the steps below:
 
 1. Navigate to **Build** > **Natural Language** > **Thresholds and Configurations** > **Machine Learning**.
 2. Select **_Few-Shot Model (Kore.ai Hosted Embeddings)_** in the dropdown list for **Network Type**, and click **Save**.
-
-<p id="gdcalert22" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image22.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert23">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/image22.png "image_tooltip")
 
@@ -517,9 +464,6 @@ To manage the Few-shot Model as the default Network Type for traits, follow the 
 4. In the resulting window, click **Manage** to view the **Manage Traits** panel.
 5. The system selects **Few-shot Model (Kore.ai Hosted Embeddings)** by default as the Network Type, and the following settings appear:i. **ML Threshold** is set to the default value 0.5.ii. The **Feature Extraction** and **Sequence Length** options available for Standard Models don’t appear as they’re not applicable. 
 
-<p id="gdcalert23" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image23.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert24">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image23.png "image_tooltip")
 
 
@@ -537,8 +481,6 @@ In this case, MPNET provides a high score (ML Threshold and ML Definitive scores
 
 On the Platform, you can use Bot Synonyms as part of the Few-shot model by enabling the **Bot Synonyms** option in the **Bot Level Intent Model Configurations** window (after selecting the **Few-Shot Model (Kore.ai Hosted Embeddings)** Network Type under **BUILD** > **NATURAL LANGUAGE** > **THRESHOLDS AND CONFIGURATIONS**.
 
-<p id="gdcalert24" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image24.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert25">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 ![alt_text](images/image24.png "image_tooltip")
 
 When the **Bot Synonyms** option is enabled, the following happens:
@@ -552,8 +494,6 @@ When the **Bot Synonyms** option is enabled, the following happens:
 When you select the **Zero-shot Model with OpenAI** or **Few-shot Model** Network Types to train the intent models (on the **_Bot Level Intent Model Configurations_** page), you must ensure that the NLU Language enabled is **_English_** (default) under **Configurations** > **Languages**.
 
 If you enable another language, the system does not allow selecting these two network types, and displays an error message as shown below:
-
-<p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image25.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 ![alt_text](images/image25.png "image_tooltip")
 
@@ -784,8 +724,6 @@ Choose the NER model to be used for entity detection. The XO Platform provides t
 
 This setting helps filter out low-confidence recognitions and remove false positive results. This is beneficial for improving the accuracy of Named Entity Recognition (NER) results by excluding less reliable or uncertain identifications.
 
-<p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image26.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 ![alt_text](images/image26.png "image_tooltip")
 
 
@@ -794,7 +732,7 @@ This setting helps filter out low-confidence recognitions and remove false posit
 While using the <b>NER Threshold</b> setting, the following considerations should be made:
 <ul><li>This feature is useful for identifying NER entities for CRF and DNN methods.</li>
 <li>The user can set the threshold value between 0 and 1 in <b>multiples of 0.01</b>.</li>
-<li>For all the existing bots and languages, the default threshold value is **0**, for all new bots, the default value is configurable. To **0.3** currently.</li>
+<li>For all the existing bots and languages, the default threshold value is <b>0</b>, for all new bots, the default value is configurable. To <b>0.3</b> currently.</li>
 <li>During runtime, the system returns only the matched entity values with a confidence score above the threshold.</li>
 <li>The confidence score based on this setting is reflected in the following locations:</li>
     <ul><li><b>Utterance Testing</b>: On the left panel.</li>
@@ -853,8 +791,8 @@ All new VAs that are created use the new ML model by default. Developers can upg
 
 If you are using a previous model of ML in the XO Platform, you can upgrade it as follows:
 
-1. Open the assistant for which you want to upgrade the ML model and go to** Natural Language > Thresholds & Configurations**.
-2. Expand** Machine Learning**. Under the ML Upgrade section, click the **Upgrade Now** button. It opens a confirmation window.
+1. Open the assistant for which you want to upgrade the ML model and go to **Natural Language** > **Thresholds & Configurations**.
+2. Expand **Machine Learning**. Under the ML Upgrade section, click the **Upgrade Now** button. It opens a confirmation window.
 3. Click **Upgrade and Train**. You can see new customizable options under the Machine Learning section.
 
 <div class="admonition note">
@@ -870,7 +808,7 @@ The ML engine enables you to identify issues proactively in the training phase i
 * **Inadequate training utterances** – notifies the intents that have insufficient training utterances so that you can add more utterances to them. 
 * **Utterance does not qualify any intent (false negative)** – notifies about a utterance for which the NLP model cannot predict any intent. For example, an utterance added to Intent A is expected to predict Intent A. Whereas in some cases the model won’t be able to predict neither the trained Intent A nor any other Intents within the model. Identifying such cases proactively helps you to rectify the utterance and enhance the model for prediction. 
 * **Utterance predicts wrong intent (false positive)** – Identifies utterances that predict intents other than the trained intent. For example, when you add an utterance that is similar to utterances from another intent, the model could predict a different intent rather than the intent to which it is trained to. Knowing this would help you to rectify the utterance and improve the model prediction
-* **Utterance predicts intent with low confidence **– notifies about the utterances that have low confidence scores. With this recommendation, you can identify and fix such utterances to improve the confidence score during the virtual assistant creation phase itself.
+* **Utterance predicts intent with low confidence** – notifies about the utterances that have low confidence scores. With this recommendation, you can identify and fix such utterances to improve the confidence score during the virtual assistant creation phase itself.
 
 ### Viewing NLU Training Validations
 1. On the virtual assistant’s **Build** menu, click **Natural Language ->** **Training.**
@@ -898,16 +836,9 @@ The ML engine enables you to identify issues proactively in the training phase i
         </p>
         </div>
 
-<p id="gdcalert27" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image27.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image27.png "image_tooltip")
 
 4. Once you click on the Intent with an error or warning, hover over the **Bulb** icon to view the summary of error or warning messages as illustrated below: 
-
-
-<p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image28.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/image28.png "image_tooltip")
 
@@ -930,8 +861,6 @@ You can import and export ML utterances of a VA into another in CSV and JSON for
 
     * Click **Import Utterances** and upload a CSV or JSON file with the utterances to import, or
     * Click **Export Utterances** and select CSV or JSON formats to export the utterances.
-
-<p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image29.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 ![alt_text](images/image29.png "image_tooltip")
 
