@@ -12,7 +12,7 @@ This article discusses the processes behind the Machine Learning Engine, and how
 
 ### Intent Detection
 
-The below diagram summarizes the intent detection pipeline for both training and prediction stages. For the training pipeline, the language detection and auto-correction are not run with the assumption that the trainer would be aware of the language in which training needs to be done and of the spellings to be used which might include domain-specific non-dictionary words like Kore, etc.
+The below diagram summarizes the intent detection pipeline for both training and prediction stages. For the training pipeline, the language detection and auto-correction are not run with the assumption that the trainer would be aware of the language in which training needs to be done and of the spellings to be used which might include domain-specific non-dictionary words like Kore, etc. hello
 
 <img src="../images/intent-detection.png" alt="intent detection" title="intent detection" style="border: 1px solid gray; zoom:75%;">
 
