@@ -17,9 +17,8 @@ To create a Bot from within Cisco Webex Teams, please follow the steps below:
 
 3. Provide all the required information to create the bot and click on **Add Bot**.
 4. This step will create a _Bot User_ and an _Access Token_ is also generated for accessing this bot.
-5. Make a note of the **Bot Username** and **Access Token** from this page. \
-![access token](./images/cisco1.png "access token")
-
+5. Make a note of the **Bot Username** and **Access Token** from this page.
+<img src="../images/cisco1.png" alt="access token" title="access token" style="border: 1px solid gray; zoom:70%;">
 
 ## Step 2: Enable the Cisco Webex Team channel from the XO Platform
 
@@ -43,7 +42,7 @@ To create a Bot from within Cisco Webex Teams, please follow the steps below:
 
       For more information, read [Cisco’s documentation](https://developer.webex.com/docs/integrations)
 
-      ![cisco client secret](./images/cisco2.png "cisco client secret")
+      <img src="../images/cisco2.png" alt="cisco client secret" title="cisco client secret" style="border: 1px solid gray; zoom:70%;">
 
   !!! note
 
@@ -55,7 +54,7 @@ To create a Bot from within Cisco Webex Teams, please follow the steps below:
 1. In the XO Platform, on the Channel Configuration page, enter the Post URL where you want Webex **Client ID** and **Client Secret** noted in the previous step.
 2. **Enable Channel** to complete the configuration.
 3. **Save** the configuration.
-![enable cisco channel](./images/cisco3.png "enable cisco channel")
+<img src="../images/cisco3.png" alt="enable cisco channel" title="enable cisco channel" style="border: 1px solid gray; zoom:70%;">
 
 After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
 
