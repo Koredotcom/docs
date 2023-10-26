@@ -11,7 +11,7 @@ The Overview dashboard gives a snapshot of the Virtual Assistant’s conversatio
 
     
 
-<img src="images/overview dashboard.png/" alt="Overview Dashboard" title="Overview Dashboard" style="border: 1px solid gray; zoom:80%;">
+<img src="images/overview-dashboard.png/" alt="Overview Dashboard" title="Overview Dashboard" style="border: 1px solid gray; zoom:80%;">
 
 
 
