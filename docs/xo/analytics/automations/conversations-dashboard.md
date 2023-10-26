@@ -12,7 +12,7 @@ The Conversations Dashboard provides insights into how conversations are handled
 2. Click **Conversations Dashboard** under the **Automation** section of the **Analytics** panel. The Overview dashboard is displayed on the right side of the page.
 3. Select appropriate filters on the dashboard and click **Apply**.
 
-  <img src="../automations/images/conversations-dashboard.png" alt="Conversations Dashboard"  title="Conversations Dashboard" style="border: 1px solid gray; zoom:100%;"> 
+  <img src="images/conversation-sessions.png" alt="Conversations Dashboard"  title="Conversations Dashboard" style="border: 1px solid gray; zoom:100%;"> 
   
 
 The Conversations Dashboard is organized into four categories based on the conversation behavior, explained below.
