@@ -1,9 +1,12 @@
 
+
 # Configure Speech Recognition
 
 After you configure the Voice channel, you can personalize the ASR Engine by configuring speech recognition preference and language for speech-to-text conversion. You can also add call control parameters.
 
 Steps to configure or modify the ASR Engine settings:
+
+
 
 1. Log in to [AgentAssist](https://agentassist.kore.ai/koreagentassist/) using your credentials.
 2. Click **Configuration > Speech Recognition**. \
@@ -20,8 +23,14 @@ Steps to configure or modify the ASR Engine settings:
     ![Alt text](../assets/images/asr-engine/image_6.png)
 The names and values are used to include the corresponding property in the VoiceXML definition in the IVR system and Session Parameters in the AudioCodes channel. These values defined for a node or a standard response override the global Call Control Parameters defined in the VA IVR /AudioCodes settings page.
     2. Click **Confirm**.
-    Checking out how a note looks like in MD.
-7. Click **Save** to complete the process.
+    3. Click **Save** to complete the process.
     ![Alt text](../assets/images/asr-engine/image_7.png)
-!!! note
-    trial note to be added here.
+
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
