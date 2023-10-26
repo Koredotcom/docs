@@ -46,7 +46,7 @@ To create a Bot from within Cisco Webex Teams, please follow the steps below:
 
   !!! note
 
-           The Redirect URI now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
+      The Redirect URI now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
 
 
 ## Step 4: Complete Cisco Webex Team Channel Configuration from the XO Platform
