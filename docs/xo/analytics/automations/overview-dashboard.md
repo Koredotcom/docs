@@ -11,12 +11,13 @@ The Overview dashboard gives a snapshot of the Virtual Assistant’s conversatio
 
     
 
-<img src="../automations/images/overview dashboard.png/" alt="Overview Dashboard" title="Overview Dashboard" style="border: 1px solid gray; zoom:100%;">
+<img src="../automations/images/overview dashboard.png/" alt="Overview Dashboard" title="Overview Dashboard" style="border: 1px solid gray; zoom:80%;">
+
 
 
 !!! note
 
-    “The Overview dashboard is available only post-9.3 release, i.e. post-July 24, 2022.
+    The Overview dashboard is available only post-9.3 release, i.e. post-July 24, 2022.
 
 
 
