@@ -12,8 +12,8 @@ To create a Bot from within Cisco Webex Teams, please follow the steps below:
 
 
 1. [Log in to the Cisco Webex Developer Portal](https://developer.webex.com/) and proceed to the **Start Building Apps** page or to the **My Webex Apps** page.
-2. Click the **Create a New App** option and choose the **Create a Bot** option. \
-![cisco webex app](./images/cisco.png "cisco webex app")
+2. Click the **Create a New App** option and choose the **Create a Bot** option.
+<img src="../images/cisco.png" alt="cisco webex app" title="cisco webex app" style="border: 1px solid gray; zoom:70%;">
 
 3. Provide all the required information to create the bot and click on **Add Bot**.
 4. This step will create a _Bot User_ and an _Access Token_ is also generated for accessing this bot.
