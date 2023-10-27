@@ -361,7 +361,7 @@ Since this model helps obtain good accuracy levels with fewer training utterance
 
 ConfigurationDefault Setting
 <table border="1.5">
-<tr bgcolor="#ECECEC">
+<tr bgcolor="#FAFAFA">
    <td><strong>ML Engine</strong>
    </td>
    <td>
@@ -382,7 +382,7 @@ ConfigurationDefault Setting
    <td>‘<strong><em>Rescoring of Intents</em></strong>‘ (by the R&R engine to find the top-qualifying/winning intents) is disabled.
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>Fundamental Meaning</strong>
    </td>
    <td>‘<strong><em>Intent Detection using Task Name Words</em></strong>’ (to determine if the FM Engine should identify the intents using the words in the Task Name) is disabled.
@@ -528,10 +528,10 @@ This setting is not valid when _Network Type_ is set to _Transformer_.
 
 The Kore.ai XO Platform now supports the following **150 Polish stop words** for ML Engine Training, in addition to the current stop words:
 
-AlphabetPolish Words
+Alphabet Polish Words
 
 <table border="1.5">
-<tr bgcolor="#ECECEC">
+<tr bgcolor="#FAFAFA">
    <td><strong>A</strong>
    </td>
    <td><code>"a","aby","ach","acz","aczkolwiek","aj","albo","ale","ależ","ani","aż"</code>
@@ -545,7 +545,7 @@ AlphabetPolish Words
 <code>"był","była","było","były","będzie","będą"</code>
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>C</strong>
    </td>
    <td><code>"cali","cała","cały","chce","choć","ci","ciebie","cię","co","cokolwiek","coraz",</code>
@@ -561,7 +561,7 @@ AlphabetPolish Words
 <code>"dwaj","dwie","dwoje","dzisiaj","dziś"</code>
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>G</strong>
    </td>
    <td><code>"gdy","gdyby","gdyż","gdzie","gdziekolwiek","gdzieś","go","godz"</code>
@@ -573,7 +573,7 @@ AlphabetPolish Words
    <td><code>"hab"</code>
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>I</strong>
    </td>
    <td><code>"i","ich","ii","iii","ile","im","inna","inne","inny","innych","inż","iv","ix","iż"</code>
@@ -589,7 +589,7 @@ AlphabetPolish Words
 <code>"jej","jemu","jest","jestem","jeszcze","jeśli","jeżeli","już","ją"</code>
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>K</strong>
    </td>
    <td><code>"każdy","kiedy","kierunku","kilka","kilku","kimś","kto","ktokolwiek","ktoś","która","które",</code>
@@ -603,7 +603,7 @@ AlphabetPolish Words
    <td><code>"lat","lecz","lub"</code>
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>M</strong>
    </td>
    <td><code>"ma","mają","mam","mamy","mało","mgr","mi","miał","mimo","między","mnie","mną","mogą","moi",</code>
@@ -621,7 +621,7 @@ AlphabetPolish Words
 <code>"nią","niż","no","nowe","np","nr"</code>
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>O</strong>
    </td>
    <td><code>"o","o.o.","obok","od","ok","około","on","ona","one","oni","ono","oraz","oto","owszem"</code>
@@ -635,7 +635,7 @@ AlphabetPolish Words
 <code>"powinni","powinno","poza","prawie","prof","przecież","przed","przede","przedtem","przez","przy"</code>
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>R</strong>
    </td>
    <td><code>"raz","razie","roku","również"</code>
@@ -647,7 +647,7 @@ AlphabetPolish Words
    <td><code>"sam","sama","się","skąd","sobie","sobą","sposób","swoje","są"</code>
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>T</strong>
    </td>
    <td><code>"ta","tak","taka","taki","takich","takie","także","tam","te","tego","tej","tel","temu",</code>
@@ -663,7 +663,7 @@ AlphabetPolish Words
    <td><code>"u","ul"</code>
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>V</strong>
    </td>
    <td><code>"vi","vii","viii","vol"</code>
@@ -677,7 +677,7 @@ AlphabetPolish Words
 <code>"więcej","wszyscy","wszystkich","wszystkie","wszystkim","wszystko","wtedy","www","wy","właśnie","wśród"</code>
    </td>
   </tr>
-  <tr>
+  <tr bgcolor="#FAFAFA">
    <td><strong>X</strong>
    </td>
    <td><code>"xi","xii","xiii","xiv","xv"</code>
@@ -838,10 +838,9 @@ The ML engine enables you to identify issues proactively in the training phase i
 
 ![alt_text](images/image27.png "image_tooltip")
 
-4. Once you click on the Intent with an error or warning, hover over the **Bulb** icon to view the summary of error or warning messages as illustrated below: 
+Once you click on the Intent with an error or warning, hover over the **Bulb** icon to view the summary of error or warning messages as illustrated below: 
 
 ![alt_text](images/image28.png "image_tooltip")
-
 
 ## Exporting and Importing Machine Learning Utterances
 

@@ -20,8 +20,6 @@ The Overview dashboard gives a snapshot of the Virtual Assistant’s conversatio
     The Overview dashboard is available only post-9.3 release, i.e. post-July 24, 2022.
 
 
-
-
 ### Overview Dashboard Components
 
 Once users start interacting with your assistant, you can view the following details in the Overview dashboard:
