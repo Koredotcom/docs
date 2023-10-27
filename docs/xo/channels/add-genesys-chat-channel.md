@@ -22,12 +22,11 @@ To set up **Genesys Chat** as a channel, you should create an account on the [Ge
 
 The steps to add the channel are summarized below:
 
-1. [Create a Bot Connector](https://developer.kore.ai/docs/bots/channel-enablement/adding-genesys-chat-as-a-channel/#Step_1_Create_a_Bot_Connector).
-2. [Link the Virtual Assistant to the Bot Connector](https://developer.kore.ai/docs/bots/channel-enablement/adding-genesys-chat-as-a-channel/#Step_2_Link_the_Virtual_Assistant_to_the_Bot_Connector).
-3. [Create an inbound message flow](https://developer.kore.ai/docs/bots/channel-enablement/adding-genesys-chat-as-a-channel/#Step_3_Create_an_Inbound_Message_Flow).
-4. [Configure the Messenger SDK](https://developer.kore.ai/docs/bots/channel-enablement/adding-genesys-chat-as-a-channel/#Step_4_Configure_the_Messenger_SDK).
-5. [Enable the Channel](https://developer.kore.ai/docs/bots/channel-enablement/adding-genesys-chat-as-a-channel/#Step_5_Enable_the_Channel).
-6. [Publish the Bot](https://developer.kore.ai/docs/bots/channel-enablement/adding-genesys-chat-as-a-channel/#Step_6_Publish_the_Bot).
+1. [Create a Bot Connector](/docs/xo/channels/add-genesys-chat-channel/#step-1-create-a-bot-connector).
+2. [Create an inbound message flow](/docs/xo/channels/add-genesys-chat-channel/#step-2-create-an-inbound-message-flow).
+3. [Configure the Messenger SDK](docs/xo/channels/add-genesys-chat-channel/#step-3-configure-the-messenger-sdk).
+4. [Enable the Channel](/docs/xo/channels/add-genesys-chat-channel/#step-4-enable-the-channel).
+5. [Publish the Bot](/docs/xo/channels/add-genesys-chat-channel/#step-5-publish-the-bot).
 
 
 ## Step 1: Create a Bot Connector
