@@ -7,8 +7,8 @@ The **Skills** feature helps set up organizational classifications to route call
 
 # The Skills Live Board
 
-You can reach the Skills Live Board by going to **Configuration > Routing > Skills**.\
-![skills-live-board](./images/skills/skills-page.png)
+You can reach the Skills Live Board by going to **Contact Center > ROUTING > Skills**.\
+![skills-live-board](./images/skills-page.png)
 
 The Skills section is organized by Skill Groups. Click a group to expand it and display the skills assigned to that group. You can use the **Search** field to find skills or skill groups by name.
 
@@ -20,15 +20,15 @@ To add skills to a skill group, follow these steps:
 
 1. Click the respective skill group to get the drill-down view of associated **Skills**;
 2. Click the **+ New Skill** button.\
-![new-skill-button](./images/skills/new-skill-button.png)
+![new-skill-button](./images/new-skill-button.png)
 
 3. Enter the following details in the **Add New Skill** window:
     1. **Skill Name**: Enter the name to identify the skill by.
     2. **Description**: Enter a brief description of the skill or its purpose.
     3. **Agent Assignments**: Associate agents to the skill and provide the proficiency level (Novice, Average, Good, and Expert);\
-    ![add_new_skill](./images/skills/add-new-skill.png)
+    ![add_new_skill](./images/add-new-skill.png)
     4. Click **Create** to complete the process. SmartAssist creates the new skill, adds it to the list, and displays a success confirmation message.\
-    ![skill_created](./images/skills/skill-created.png)
+    ![skill_created](./images/skill-created.png)
 
 # Add a Skill Using a Script
 
@@ -77,7 +77,7 @@ To edit the field values of an existing skill, follow these steps:
 
 1. Click the desired skill group to get the associated skills list;
 2. Click the **Edit** icon corresponding to the skill you want to update;\
-![edit-skill-button](./images/skills/edit-skill-button.png)
+![edit-skill-button](./images/edit-skill-button.png)
 3. Make your changes in the **Edit Skill** window;
 4. Click **Save**. A success confirmation message is displayed once the skill details are updated.
 
@@ -93,7 +93,7 @@ To delete a skill, follow these steps:
     3. Click the **Delete** button on the confirmation pop-up for each agent. Once deleting all the agents under _Agent Assignments_, click **Save**.
     4. Click the **Delete Skill** icon.
     5. Click the **Delete** button on the confirmation pop-up to confirm your choice.
-    ![delete-skill-button](./images/skills/delete-skill-button.png)
+    ![delete-skill-button](./images/delete-skill-button.png)
 
 !!! **Note**
 
