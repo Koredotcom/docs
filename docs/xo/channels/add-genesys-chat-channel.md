@@ -24,7 +24,7 @@ The steps to add the channel are summarized below:
 
 1. [Create a Bot Connector](/docs/xo/channels/add-genesys-chat-channel/#step-1-create-a-bot-connector).
 2. [Create an inbound message flow](/docs/xo/channels/add-genesys-chat-channel/#step-2-create-an-inbound-message-flow).
-3. [Configure the Messenger SDK](docs/xo/channels/add-genesys-chat-channel/#step-3-configure-the-messenger-sdk).
+3. [Configure the Messenger SDK](/docs/xo/channels/add-genesys-chat-channel/#step-3-configure-the-messenger-sdk).
 4. [Enable the Channel](/docs/xo/channels/add-genesys-chat-channel/#step-4-enable-the-channel).
 5. [Publish the Bot](/docs/xo/channels/add-genesys-chat-channel/#step-5-publish-the-bot).
 
