@@ -47,14 +47,14 @@ Steps to add none intent utterances:
 1. Log in to [https://agentassist.kore.ai/koreagentassist](https://agentassist.kore.ai/koreagentassist/).
 2. Click **Configuration**> **Agent Coaching**.
 3. Click the **edit** button under **Actions**.
-![Alt text](./images/image_1.png)
+![Alt text](./images/rule-edit-button-image_1.png)
 4. Click **Add Utterance(s)**. \
-![Alt text](./images/image_2.png)
+![Alt text](./images/add-utterances-button-image_2.png)
 5. Select **AI Assist** or **Input Utterances Manually**. \
  \
 **Follow these steps if you select AI Assist**:
     1. Select **AI Assist**. \
-![Alt text](./images/image_3.png)
+![Alt text](./images/add-utterances-through-ai-assist-image_3.png)
     2. Select rules, as required, from the **Add Rules** list and click **Add**. \
 ![Alt text](./images/image_4.png)
     3. All added rules are displayed on the left, and the AI starts searching for more utterances that are similar in meaning to the utterances of your selected rules.. \
