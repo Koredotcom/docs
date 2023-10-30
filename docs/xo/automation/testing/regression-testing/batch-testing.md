@@ -45,11 +45,14 @@ This test suite includes all the end-user utterances that have successfully matc
 To add a new test suite, follow the steps below:
 
 1. Go to **Build** > **Testing** > **Batch Testing**, and click **New Test Suite**.
-<img src="../images/batch-testing-3.png" alt="BT - New Test Suite" title="BT - New Test Suite" style="border: 1px solid  gray;">
+
+<img src="../images/batch-testing-3.png" alt="BT - New Test Suite" title="BT - New Test Suite" style="border: 1px solid  gray;"> 
+
 2. In the **New test Suite** window, add a **name** and provide a **description**.
-3. Next, choose how to add test cases: either manually or by uploading a test case file.
+3. Next, choose how to add test cases: either manually or by uploading a test case file. 
     * Selecting **Add Manually** lets you add test cases manually or use LLM and Generative AI to generate test cases automatically.
-    * Selecting **Upload Test Cases File** lets you upload a file containing test cases.
+    * Selecting **Upload Test Cases File** lets you upload a file containing test cases. 
+
 <img src="../images/batch-testing-4-newtest.png" alt="BT - New Test Suite Details" title="BT - New Test Suite Details" style="border: 1px solid  gray;zoom:50%;">
 
 
@@ -59,7 +62,8 @@ Once you create a test suite to which you have chosen to add test cases manually
 
 In the Test Cases page, click the **+Add Test Case**.
 
-![BT - Add Test Case Manually](../images/batch-testing-5-add-manually.png "BT - Add Test Case Manually")
+<img src="../images/batch-testing-5-add-manually.png" alt="Add test cases manually" title="Add test cases manually" style="border: 1px solid  gray;zoom:50%;"> \
+
 
 In the **Add Test Case** window, select or enter information in the following fields:
 
@@ -67,46 +71,43 @@ In the **Add Test Case** window, select or enter information in the following fi
 You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utterance. It helps in scenarios where ambiguity is by-design and should be considered as True Positive. For example, for the utterance “I need help to book a flight ticket,” the expected intent can be either “Book flight” (Dialog) or “How to book a flight?” (FAQ).
 2. The **Parent Intent** within that task.
 3. **Test Utterances**: You can add multiple utterances, each on a new line.
-4. The **Entity Order**: Select one from the available options, depending on the intent you are working with. You can only select one item. The Entity Order selection is not available if you have added multiple intents.
-
-  **One Intent for a Test Utterance**
-  ![One intent for a test utterance](../images/batch-testing-6-one-intent-for-a-test-utterance.png "One intent for a test utterance")
-
-  **Multiple Intents for a Test Utterance**
-  ![Multiple intents for a test utterance](../images/batch-testing-7-multiple-intents-for-a-test-utterance.png "Multiple intents for a test utterance")
-
+4. The **Entity Order**: Select one from the available options, depending on the intent you are working with. You can only select one item. The Entity Order selection is not available if you have added multiple intents. \
+\
+**One Intent for a Test Utterance** \
+<img src="../images/batch-testing-6-one-intent-for-a-test-utterance.png" alt="One intent for a test utterance" title="One intent for a test utterance" style="border: 1px solid  gray;zoom:50%;"> \
+\
+**Multiple Intents for a Test Utterance** \
+<img src="../images/batch-testing-7-multiple-intents-for-a-test-utterance.png" alt="Multiple intents for a test utterance" title="Multiple intents for a test utterance" style="border: 1px solid  gray;zoom:50%;">
+  
 5. Click **Save** when ready.
-6. Once added, your test cases are listed and ready to run. You can use the **Add Manually** button at the top of the list to add more test cases. The option to Generate Test cases only displays if you have enabled LLM and Generative AI for the VA.
-
-![New test added](../images/batch-testing-8-add-new-case.png "New test added")
+6. Once added, your test cases are listed and ready to run. You can use the **Add Manually** button at the top of the list to add more test cases. The option to Generate Test cases only displays if you have enabled LLM and Generative AI for the VA. \
+\
+<img src="../images/batch-testing-8-add-new-case.png" alt="New test added" title="New test added" style="border: 1px solid  gray;zoom:50%;">
 
 
 #### Generating Test Cases Automatically
 
 You can automatically generate batch test cases if you have enabled [LLM and Generative AI ](https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/)for your Virtual Assistant. You can access the feature either right after creating a new test case, as shown above, or from the test cases list.
 
-![Generating test cases automatically](../images/batch-testing-9-goto-generate-test-cases.png "Generating test cases automatically")
+<img src="../images/batch-testing-9-goto-generate-test-cases.png" alt="Generating test cases automatically" title="Generating test cases automatically" style="border: 1px solid  gray;zoom:50%;">
 
 
-##### Steps to Generate Test Cases
+#### Steps to Generate Test Cases
 
 To generate test cases automatically, follow the steps below:
-
-
 1. Click **Generate Test Cases** from any of the two areas mentioned above.
 2. In the **Generate Test Case** window, select the **Dialog Task** you want to test. 
-3. Click **Generate**. Wait for a few moments until the generation completes.
-
-![Click Generate](../images/batch-testing-10-generate-add-intent.png "Click Generate")
-
+3. Click **Generate**. Wait for a few moments until the generation completes. 
+ \
+<img src="../images/batch-testing-10-generate-add-intent.png" alt="Click Generate" title="Click Generate" style="border: 1px solid  gray;zoom:50%;"> 
 4. Once test cases are generated, you can reject some of them. If required, click Generate more to get more suggestions. 
 5. Click **Add Test Cases** when ready.
-
-![Add Test case](../images/batch-testing-11-generation-done.png "Add Test case")
+ \
+<img src="../images/batch-testing-11-generation-done.png" alt= "Add Test case" title="Add Test case" style="border: 1px solid  gray;zoom:50%;">
 
 Once you add the test cases, they are listed within your test suite, along with any other cases you might have added manually or generated in the past. You can continue adding test cases to the suite using these two methods.
 
-![test case list](../images/batch-testing-12-test-cases-added.png "test case list")
+<img src="../images/batch-testing-12-test-cases-added.png" alt="test case list" title="test case list" style="border: 1px solid  gray;zoom:50%;">
 
 
 #### Adding a Test Suite by Uploading a Test Cases File
@@ -291,7 +292,7 @@ The sample code is given below:
 * The order in which the entities are to be extracted can be given as: `"entityOrder":["TransferAmount", "PayeeName"]`. 
 If the order is not provided or partially provided, the platform determines the shortest route covering all the entities as the default order.
 
-<table>
+<table border="1">
   <tr>
    <td>
 <strong>PROPERTY NAME</strong>
@@ -423,7 +424,7 @@ input,intent,parentIntent,entityName,entityValue
 * The order of extraction of entity value can be mentioned in the following format: `entity3>entity4>entity1`. 
 If the order is not provided or partially provided, the platform determines the shortest route covering all the entities as the default order.
 
-<table>
+<table border="1">
   <tr>
    <td>
 <strong>COLUMN NAME</strong>
@@ -497,7 +498,7 @@ If the order is not provided or partially provided, the platform defines the imp
 
 #### Entity Format Conversions
 
-<table>
+<table border="1">
   <tr>
    <td><strong>ENTITY TYPE</strong>
    </td>
@@ -761,13 +762,13 @@ If the order is not provided or partially provided, the platform defines the imp
 </table>
 
 
-##### Importing a Dataset file
+**Importing a Dataset file**
 
 1. Click **New Test Suite** on the batch testing page. A dialog box to import the dataset appears.
 2. Enter a **Name, Description,** and choose a **Dataset Type** in the respective boxes for your dataset file.
 3. To import the Dataset file, click **Choose File** to locate and select a JSON or CSV file containing the utterances as per the Dataset Type selected.
 
-![Importing a Dataset file](../images/batch-testing-13-new-test-suite-1-2.png "Importing a Dataset file")
+<img src="../images/batch-testing-13-new-test-suite-1-2.png" alt="Importing a Dataset file" title="Importing a Dataset file" style="border: 1px solid  gray;zoom:50%;">
 
 4. Click **Create**. The dataset file is displayed as an option to run the test suite on the Batch Testing page:
 
@@ -780,7 +781,7 @@ The following steps guide you on how to run a batch test on your bot and get a d
 
     Before testing, it is essential to add and train your bot with a considerable number of utterances using Machine Learning.
 
-![Build > Testing > Batch Testing](../images/batch-testing-14-batch-testing-menu.png "Build > Testing > Batch Testing")
+<img src="../images/batch-testing-14-batch-testing-menu.png" alt="Build > Testing > Batch Testing" title="Build > Testing > Batch Testing" style="border: 1px solid  gray;zoom:50%;">
 
 To run a Test Suite, follow the steps below:
 
@@ -789,14 +790,14 @@ Note that **Developer Defined Utterances** and **Successful User Utterances** ar
 2. Select **In Development** to run batch tests on test suites for only the **_in-development_** version of the Virtual Assistant(s). Alternatively, select **Published** to run batch tests on test suites for only the published version of the Virtual Assistant(s).
 3. Click **Run Test Suite** to initiate the batch test execution. 
 
-![Run Test Suite](../images/batch-testing-15-run-test-suite-in-dev.png "Run Test Suite")
+<img src="../images/batch-testing-15-run-test-suite-in-dev.png" alt="Run Test Suite" title="Run Test Suite" style="border: 1px solid  gray;zoom:50%;">
 
 
 #### Execution of Newly Created Batch Test Suites
 
 Once you create a new test batch test suite, by default, the system automatically initiates test run execution for both **_In-development_** and **_Published_** VA versions. This makes it convenient to assess test results while the VA is in development and once a VA is published following a production release.
 
-![Execution of Newly Created Batch Test Suites](../images/batch-testing-16-batch-testing-run-publish.png "Execution of Newly Created Batch Test Suites")
+<img src="../images/batch-testing-16-batch-testing-run-publish.png" alt="Execution of Newly Created Batch Test Suites" title="Execution of Newly Created Batch Test Suites" style="border: 1px solid  gray;zoom:50%;">
 
 
 #### View Test Case Details
@@ -820,7 +821,7 @@ Each test run creates a test report record and displays a summary of the test re
     3. Failed – when there was a system error and the test could not be resumed post-recovery.
 * Hovering over the warning/error icon will display a message suggesting the reason.
 
-![Test report](../images/batch-testing-17-Batch-Test-Sample-Result-warn.png "Test report")
+<img src="../images/batch-testing-17-Batch-Test-Sample-Result-warn.png" alt="Test report" title="Test report" style="border: 1px solid  gray;zoom:50%;">
 
 
 #### Download a CSV Report
@@ -850,7 +851,7 @@ To get a detailed analysis of the test run, click **the Download** icon to downl
 * **False Positive (FP):** Percentage of utterances that have matched an unexpected intent. In the case of Small Talk, it would be when the list of expected and actual intents are different.
 * **False Negative (FN):** Percentage of utterances that have not matched expected intent. In the case of Small Talk, it would be when the list of expected Small Talk intent is blank but the actual Small Talk is mapped to an intent.
 
-![Sample CSV Test report](../images/batch-testing-18-sample-result-2.png "Sample CSV Test report")
+<img src="../images/batch-testing-18-sample-result-2.png" alt="Sample CSV Test report" title="Sample CSV Test report" style="border: 1px solid  gray;zoom:50%;">
 
 The report also provides detailed information on each of the test utterances and the corresponding results.
 
@@ -886,6 +887,6 @@ The XO Platform now displays Batch Test Results for Universal bots for each test
 
 You can view the individual Batch Test Run summary of a test suite by clicking the **View Summary** icon of a test as shown below.
 
-![View Summary](../images/batch-testing-19-view-summary.png "View Summary")
+<img src="../images/batch-testing-19-view-summary.png" alt="View Summary" title="View Summary" style="border: 1px solid  gray;zoom:50%;">
 
 This displays the relevant NLP and Flow Health metrics on the **Health and Monitoring** Dashboard for intents mapped to Dialogs, FAQs, and Traits. [Learn More](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#Test_Coverage).
