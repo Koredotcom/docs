@@ -61,7 +61,7 @@ Once you create a test suite to which you have chosen to add test cases manually
 
 In the Test Cases page, click the **+Add Test Case**.
 
-<img src="../images/batch-testing-5-add-manually.png" alt="Add test case manually" title="Add test case manually" style="border: 1px solid gray; zoom:50%;"/>
+<img src="../images/batch-testing-5-add-manually.png" alt="Add test case manually" title="Add test case manually" width="500" style="border: 1px solid gray;">
 
 <br><br>
 
