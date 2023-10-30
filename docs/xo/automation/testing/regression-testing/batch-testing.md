@@ -52,6 +52,7 @@ To add a new test suite, follow the steps below:
     * Selecting **Upload Test Cases File** lets you upload a file containing test cases.  
 
     <img src="../images/batch-testing-4-newtest.png" alt="BT - New Test Suite Details" title="BT - New Test Suite Details" style="border: 1px solid gray; zoom:50%;"/>
+    <img src="../images/batch-testing-5-add-testcase-manually.png" alt="Add test case manually" title="Add test case manually" style="border: 1px solid gray; zoom:50%;"/>
     
 
 #### Adding Test Cases Manually
