@@ -5,7 +5,6 @@ Adding the Kore channel to your assistant allows end-users to interact with it u
 To add the Kore channel, follow the below steps:
 
 
-
 1. Select the assistant that you want to add the Kore Messaging channel to.
 2. On the **Channels** tab, click the **Kore** icon. The **Kore Channel **page is displayed.
 3. Under the **Enable/Disable Channel** section, select **Enable**
@@ -16,5 +15,4 @@ After the channel is enabled and all configurations are verified, you can option
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)
 
-
-![Kore Channel](./images/kore-channel-config.png "Kore Channel")
+<img src="../images/kore-channel-config.png" alt="Kore Channel" title="Kore Channel" style="border: 1px solid gray; zoom:70%;">
