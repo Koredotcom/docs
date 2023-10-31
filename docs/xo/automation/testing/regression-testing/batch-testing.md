@@ -70,7 +70,7 @@ You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utteranc
 2. The **Parent Intent** within that task.
 3. **Test Utterances**: You can add multiple utterances, each on a new line.
 4. The **Entity Order**: Select one from the available options, depending on the intent you are working with. You can only select one item. The Entity Order selection is not available if you have added multiple intents.  
-    
+/
 **One Intent for a Test Utterance**  
 <img src="../images/batch-testing-6-one-intent-for-a-test-utterance.png" alt="One Intent for a Test Utterance" title="One Intent for a Test Utterance" style="border: 1px solid gray; zoom:50%;"/>  
   /
@@ -112,7 +112,7 @@ Once you add the test cases, they are listed within your test suite, along with 
 
 <img src="../images/batch-testing-12-test-cases-added.png" alt="test case list" title="test case list" style="border: 1px solid gray; zoom:50%;"/> 
 
-
+<br>
 
 
 #### Adding a Test Suite by Uploading a Test Cases File
@@ -141,6 +141,7 @@ If you **Upload a Test Cases File**, you can import an array of test utterances,
 
 The ability to create test suites manually is not yet available for universal bots.
 
+<br>
 
 **JSON Format for Test Suite**
 
@@ -298,7 +299,12 @@ The sample code is given below:
 * The order in which the entities are to be extracted can be given as: `"entityOrder":["TransferAmount", "PayeeName"]`. 
 If the order is not provided or partially provided, the platform determines the shortest route covering all the entities as the default order.
 
-<table border="1">
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<table>
   <tr>
    <td>
 <strong>PROPERTY NAME</strong>
@@ -430,7 +436,12 @@ input,intent,parentIntent,entityName,entityValue
 * The order of extraction of entity value can be mentioned in the following format: `entity3>entity4>entity1`. 
 If the order is not provided or partially provided, the platform determines the shortest route covering all the entities as the default order.
 
-<table border="1">
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<table>
   <tr>
    <td>
 <strong>COLUMN NAME</strong>
@@ -504,7 +515,12 @@ If the order is not provided or partially provided, the platform defines the imp
 
 #### Entity Format Conversions
 
-<table border="1">
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<table>
   <tr>
    <td><strong>ENTITY TYPE</strong>
    </td>
@@ -768,7 +784,7 @@ If the order is not provided or partially provided, the platform defines the imp
 </table>
 
 
-##### Importing a Dataset file
+**Importing a Dataset file**
 
 1. Click **New Test Suite** on the batch testing page. A dialog box to import the dataset appears.
 2. Enter a **Name, Description,** and choose a **Dataset Type** in the respective boxes for your dataset file.
@@ -788,7 +804,7 @@ The following steps guide you on how to run a batch test on your bot and get a d
 
 <img src="../images/batch-testing-14-batch-testing-menu.png" alt="Build > Testing > Batch Testing" title="Build > Testing > Batch Testing" style="border: 1px solid gray; zoom:50%;"/> 
 
-
+<br>
 
 To run a Test Suite, follow the steps below:
 
@@ -807,6 +823,7 @@ Once you create a new test batch test suite, by default, the system automaticall
 
 <img src="../images/batch-testing-16-batch-testing-run-publish.png" alt="Execution of Newly Created Batch Test Suites" title="Execution of Newly Created Batch Test Suites" style="border: 1px solid gray; zoom:50%;"/> 
 
+<br>
 
 #### View Test Case Details
 
@@ -830,7 +847,7 @@ Each test run creates a test report record and displays a summary of the test re
 * Hovering over the warning/error icon will display a message suggesting the reason.
 
 <img src="../images/batch-testing-17-batch-Test-sample-result-warn.png" alt="Test report" title="Test report" style="border: 1px solid gray; zoom:50%;"/> 
-
+<br>
 
 #### Download a CSV Report
 
@@ -857,8 +874,7 @@ To get a detailed analysis of the test run, click **the Download** icon to downl
 **Note** that when you tag multiple intents (dialog, FAQ, and small talk) to a test utterance, the test result appears as TP if the actual intents match the expected intents but also include ambiguous intents.
 * **True Negative (TN):** Percentage of utterances that were not expected to match any intent and they did not match. Not applicable to Small Talk.
 * **False Positive (FP):** Percentage of utterances that have matched an unexpected intent. In the case of Small Talk, it would be when the list of expected and actual intents are different.
-* **False Negative (FN):** Percentage of utterances that have not matched expected intent. In the case of Small Talk, it would be when the list of expected Small Talk intent is blank but the actual Small Talk is mapped to an intent.
-
+* **False Negative (FN):** Percentage of utterances that have not matched expected intent. In the case of Small Talk, it would be when the list of expected Small Talk intent is blank but the actual Small Talk is mapped to an intent.  
 <img src="../images/batch-testing-18-sample-result-2.png" alt="Sample CSV Test report" title="Sample CSV Test report" style="border: 1px solid gray; zoom:50%;"/> 
 
 
@@ -886,11 +902,13 @@ The report also provides detailed information on each of the test utterances and
 
     For any of the batch tests, if results indicate that your bot is unable to recognize the correct intents, you can work on improving its performance by adding or modifying utterances to the Machine Learning model.
 
+<br>
 
 #### Batch Test Results for Universal Bots
 
 The XO Platform now displays Batch Test Results for Universal bots for each test run in the summary view for [FAQs](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#NLP-_FAQs_Summary), [Dialog Intents](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#Dialog_Intent_Summary), and [Small Talk](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#NLP-_Small_Talk_Summary) during Batch Testing. The actionable insights help understand the test coverage and NLP performance for each intent type in the Universal Bot. [Learn more](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#NLP_Batch_Test_Results_Summary_for_Universal_Bots).
 
+<br>
 
 #### View Individual Test Run Summary
 
