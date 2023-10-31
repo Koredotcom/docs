@@ -52,7 +52,7 @@ To add a new test suite, follow the steps below:
     * Selecting **Upload Test Cases File** lets you upload a file containing test cases.  
     <img src="../images/batch-testing-4-newtest.png" alt="BT - New Test Suite Details" title="BT - New Test Suite Details" style="border: 1px solid gray; zoom:50%;"/>
     
-    
+<br>    
 
 #### Adding Test Cases Manually
 
@@ -62,7 +62,6 @@ In the Test Cases page, click the **+Add Test Case**.
 
 <img src="../images/batch-testing-5-add-manually.png" alt="Add test case manually" title="Add test case manually" style="border: 1px solid gray; zoom:50%;"/>
 
-<br>
 
 In the **Add Test Case** window, select or enter information in the following fields:
 
@@ -70,23 +69,19 @@ In the **Add Test Case** window, select or enter information in the following fi
 You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utterance. It helps in scenarios where ambiguity is by-design and should be considered as True Positive. For example, for the utterance “I need help to book a flight ticket,” the expected intent can be either “Book flight” (Dialog) or “How to book a flight?” (FAQ).
 2. The **Parent Intent** within that task.
 3. **Test Utterances**: You can add multiple utterances, each on a new line.
-4. The **Entity Order**: Select one from the available options, depending on the intent you are working with. You can only select one item. The Entity Order selection is not available if you have added multiple intents.
+4. The **Entity Order**: Select one from the available options, depending on the intent you are working with. You can only select one item. The Entity Order selection is not available if you have added multiple intents.  
 
-
-**One Intent for a Test Utterance**
-
+**One Intent for a Test Utterance**  
 <img src="../images/batch-testing-6-one-intent-for-a-test-utterance.png" alt="One Intent for a Test Utterance" title="One Intent for a Test Utterance" style="border: 1px solid gray; zoom:50%;"/>  
 
-
-**Multiple Intents for a Test Utterance**
-
+**Multiple Intents for a Test Utterance**  
 <img src="../images/batch-testing-7-multiple-intents-for-a-test-utterance.png" alt="Multiple intents for a test utterance" title="Multiple intents for a test utterance" style="border: 1px solid gray; zoom:50%;"/> 
-
 
 5. Click **Save** when ready.
 6. Once added, your test cases are listed and ready to run. You can use the **Add Manually** button at the top of the list to add more test cases. The option to Generate Test cases only displays if you have enabled LLM and Generative AI for the VA.  
 <img src="../images/batch-testing-8-add-new-case.png" alt="New test added" title="New test added"style="border: 1px solid gray; zoom:50%;"/> 
 
+<br>
 
 #### Generating Test Cases Automatically
 
@@ -94,7 +89,7 @@ You can automatically generate batch test cases if you have enabled [LLM and Gen
 
 <img src="../images/batch-testing-9-goto-generate-test-cases.png" alt="Generating test cases automatically" title="Generating test cases automatically" style="border: 1px solid gray; zoom:50%;"/> 
 
-
+<br>
 
 ##### Steps to Generate Test Cases
 
@@ -103,15 +98,13 @@ To generate test cases automatically, follow the steps below:
 
 1. Click **Generate Test Cases** from any of the two areas mentioned above.
 2. In the **Generate Test Case** window, select the **Dialog Task** you want to test. 
-3. Click **Generate**. Wait for a few moments until the generation completes.
-
+3. Click **Generate**. Wait for a few moments until the generation completes.  
 <img src="../images/batch-testing-10-generate-add-intent.png" alt="Click Generate" title="Click Generate" style="border: 1px solid gray; zoom:50%;"/> 
 
 
 
 4. Once test cases are generated, you can reject some of them. If required, click Generate more to get more suggestions. 
-5. Click **Add Test Cases** when ready.
-
+5. Click **Add Test Cases** when ready.  
 <img src="../images/batch-testing-11-generation-done.png" alt="Add Test case" title="Add Test case" style="border: 1px solid gray; zoom:50%;"/> 
 
 
@@ -779,11 +772,8 @@ If the order is not provided or partially provided, the platform defines the imp
 
 1. Click **New Test Suite** on the batch testing page. A dialog box to import the dataset appears.
 2. Enter a **Name, Description,** and choose a **Dataset Type** in the respective boxes for your dataset file.
-3. To import the Dataset file, click **Choose File** to locate and select a JSON or CSV file containing the utterances as per the Dataset Type selected.
-
+3. To import the Dataset file, click **Choose File** to locate and select a JSON or CSV file containing the utterances as per the Dataset Type selected.  
 <img src="../images/batch-testing-13-new-test-suite-1-2.png" alt="Importing a Dataset file" title="Importing a Dataset file" style="border: 1px solid gray; zoom:50%;"/> 
-
-
 
 4. Click **Create**. The dataset file is displayed as an option to run the test suite on the Batch Testing page:
 
@@ -805,11 +795,10 @@ To run a Test Suite, follow the steps below:
 1. Click the desired test suite name in the **Batch Testing** window.  
 Note that **Developer Defined Utterances** and **Successful User Utterances** are default test suites to validate user utterances through Batch Testing.
 2. Select **In Development** to run batch tests on test suites for only the **_in-development_** version of the Virtual Assistant(s). Alternatively, select **Published** to run batch tests on test suites for only the published version of the Virtual Assistant(s).
-3. Click **Run Test Suite** to initiate the batch test execution. 
-
+3. Click **Run Test Suite** to initiate the batch test execution.  
 <img src="../images/batch-testing-15-run-test-suite-in-dev.png" alt="Run Test Suite" title="Run Test Suite" style="border: 1px solid gray; zoom:50%;"/> 
 
-
+<br>
 
 
 #### Execution of Newly Created Batch Test Suites
