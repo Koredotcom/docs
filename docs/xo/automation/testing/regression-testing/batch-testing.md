@@ -70,10 +70,10 @@ You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utteranc
 2. The **Parent Intent** within that task.
 3. **Test Utterances**: You can add multiple utterances, each on a new line.
 4. The **Entity Order**: Select one from the available options, depending on the intent you are working with. You can only select one item. The Entity Order selection is not available if you have added multiple intents.  
-
+/
 **One Intent for a Test Utterance**  
 <img src="../images/batch-testing-6-one-intent-for-a-test-utterance.png" alt="One Intent for a Test Utterance" title="One Intent for a Test Utterance" style="border: 1px solid gray; zoom:50%;"/>  
-  
+  /
   **Multiple Intents for a Test Utterance**  
 <img src="../images/batch-testing-7-multiple-intents-for-a-test-utterance.png" alt="Multiple intents for a test utterance" title="Multiple intents for a test utterance" style="border: 1px solid gray; zoom:50%;"/>  
 
