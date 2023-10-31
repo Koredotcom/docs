@@ -49,7 +49,10 @@ To add a new test suite, follow the steps below:
 2. In the **New test Suite** window, add a **name** and provide a **description**.
 3. Next, choose how to add test cases: either manually or by uploading a test case file.
     * Selecting **Add Manually** lets you add test cases manually or use LLM and Generative AI to generate test cases automatically.
-    * Selecting **Upload Test Cases File** lets you upload a file containing test cases.<img src="../images/batch-testing-4-newtest.png" alt="BT - New Test Suite Details" title="BT - New Test Suite Details" style="border: 1px solid gray; zoom:50%;" />
+    * Selecting **Upload Test Cases File** lets you upload a file containing test cases.  
+
+    <img src="../images/batch-testing-4-newtest.png" alt="BT - New Test Suite Details" title="BT - New Test Suite Details" style="border: 1px solid gray; zoom:50%;"/>
+    
     
 
 #### Adding Test Cases Manually
@@ -58,7 +61,9 @@ Once you create a test suite to which you have chosen to add test cases manually
 
 In the Test Cases page, click the **+Add Test Case**.
 
-![BT - Add Test Case Manually](../images/batch-testing-5-add-manually.png "BT - Add Test Case Manually")
+<img src="../images/batch-testing-5-add-manually.png" alt="Add test case manually" title="Add test case manually" width="500" style="border: 1px solid gray;">
+
+<br><br>
 
 In the **Add Test Case** window, select or enter information in the following fields:
 
