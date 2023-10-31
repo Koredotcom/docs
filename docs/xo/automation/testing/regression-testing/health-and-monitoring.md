@@ -25,9 +25,7 @@ This dashboard lets you achieve the following:
 To navigate to the **Health and Monitoring** dashboard, follow these steps:
 
 1. Click the **Build** tab on the top menu of the Virtual Assistant dashboard.
-2. Click **Health & Monitoring** under **Testing** in the left navigation menu.
-
-
+2. Click **Health & Monitoring** under **Testing** in the left navigation menu.  
 <img src="../images/hm-1.png" alt="Health and Monitoring dashboard" title="Health and Monitoring dashboard" style="border: 1px solid  gray;">
 
 
@@ -36,8 +34,6 @@ To navigate to the **Health and Monitoring** dashboard, follow these steps:
 
 The **Health and Monitoring** Dashboard is divided into two sections that include the following:
 
-
-
 1. **NLP**: This panel extracts all test suite results from Batch Testing and presents insights into your test cases with performance analytics. The key components of this panel include the execution summary, the **key performance metrics**, and the **total test coverage** of the selected test suites for the Dialog intents, FAQs, Small Talks, and Traits. The key [recommendation scores](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#Health_and_Monitoring_Metrics) presented here depict if your virtual assistant is trained sufficiently or not.
 2. **Flow**: This panel summarizes the coverage of all the conversation flows by the Virtual Assistant you’ve defined including its performance, intents’ coverage and transitions. [Learn more](https://developer.kore.ai/docs/bots/analyzing-your-bot/flow-health-dashboard/). The key components of the **Flow** panel include transition coverage and intent summary panels for the test suites. [Learn more](https://developer.kore.ai/docs/bots/analyzing-your-bot/flow-health-dashboard/#Flow_Dashboard_Components).
 
@@ -45,17 +41,15 @@ The **Health and Monitoring** Dashboard is divided into two sections that includ
 
 ## Health and Monitoring Metrics
 
-
 ### NLP Intent Coverage Metrics
 
 The following metrics extracted from Batch Testing results are displayed in two ways:
 
-1. As aggregate values in the **Bot Health** summary section. 
+1. As aggregate values in the **Bot Health** summary section.  
+<img src="../images/hm-2.png" alt="aggregate values" title="aggregate values" style="border: 1px solid  gray;">  
+  
 
-<kbd>![aggregate values](../images/hm-2.png "aggregate values")</kbd>
-
-2. As individual scores in the **Dialog Intents**, **FAQs**, **Small Talk**, and **Traits** summary panels.
-
+2. As individual scores in the **Dialog Intents**, **FAQs**, **Small Talk**, and **Traits** summary panels.  
 <img src="../images/hm-3.png" alt="individual scores" title="individual scores" style="border: 1px solid  gray;">
 
 * **Accuracy**: Determines if the intent identified by your ML model is correct or not.
@@ -77,6 +71,7 @@ The Flow Health metrics display all the test suite results from the conversation
 To get the detailed NLP data of all the test cases executed for all the test suites that are considered in the VA, click the **View Test Cases** link in the **NLP** section.
 
 <img src="../images/hm-4.png" alt="detailed NLP data" title="detailed NLP data" style="border: 1px solid  gray;">
+<br>
 
 The **Test Cases- Detailed Analysis** window displays test results for Intents, Entities, and Traits as described below. The summary data helps identify the errors or areas of improvement for each category and fix them.
 
@@ -87,8 +82,6 @@ To view the **Details** section, in the **Test Cases – Detailed Analysis** win
 
 **Intents**
 
-
-
 * **Test Cases**: The test case name.
 * **Intent Type**: Displays if the intent is a Dialog intent, FAQ, or Small Talk.
 * **Expected Intent**: Intent expected in the user utterance.
@@ -98,9 +91,7 @@ To view the **Details** section, in the **Test Cases – Detailed Analysis** win
 
 <img src="../images/hm-5.png" alt="Intents" title="Intents" style="border: 1px solid  gray;">
   
-<p>
-  
-</p> 
+<br> 
   
 **Entities**
 
@@ -115,8 +106,7 @@ A summary table with the following details is displayed:
 
 <img src="../images/Hm-6.png" alt="Entities" title="Entities" style="border: 1px solid  gray;">
 
-<p>
-</p>
+<br>
 
 **Traits**
 
@@ -130,11 +120,9 @@ A summary table with the following details is displayed:
 * **Trait Result:** Displays if the match detected is True Positive, False Positive, or False Negative.
 * **Tags:** The tag labeled for the conversation by the analyst.
 
-<img src="../images/Hm-7.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid  gray;">
+<img src="../images/Hm-7.png" alt="Traits" title="Traits" style="border: 1px solid  gray;">
 
-
-<p>
-</p>
+<br>
 
 **Tags**
 
@@ -148,31 +136,25 @@ The following tags are available for intents, entities, and traits:
 * **Needs Training**: Indicates that the virtual assistant needs training for the identified intent/entity/trait after the test execution.
 * **New Intent**: Indicates a new intent during test execution.
 
-Hover over the desired entry, and click the **detailed view** icon.
-
+Hover over the desired entry, and click the **detailed view** icon.  
 <img src="../images/Hm-8.png" alt="Test cases detailed analysis" title="Test cases detailed analysis" style="border: 1px solid  gray;">
 
 A sliding window with the test results for the selected test case and intent type appears.
 
-**Intent and Entity Details**
-
+**Intent and Entity Details**  
 <img src="../images/hm-9.png" alt="Intent and Entity Details" title="Intent and Entity Details" style="border: 1px solid  gray;">
 
-<p>
-</p>
+<br>
 
-**Trait Details** are displayed in the test case details window if you select the **trait** intent type.
-
+**Trait Details** are displayed in the test case details window if you select the **trait** intent type.  
 <img src="../images/Hm-10.png" alt="Trait Details" title="Trait Details" style="border: 1px solid  gray;">
 
-<p>
-</p>
+<br>
 
-Click the **expansion arrow** icon under **Entity** to view the entity order expected by the ML engine and the actual entity order.
-
+Click the **expansion arrow** icon under **Entity** to view the entity order expected by the ML engine and the actual entity order.  
 <img src="../images/hm-11.png" alt="Entity" title="Entity" style="border: 1px solid  gray;">
 
-
+<br>
 
 #### NLP Analysis
 
@@ -193,7 +175,7 @@ To view the **NLP Analysis** section, follow these steps:
 2. Click the **NLP Analysis** tab as shown below:  
     <img src="../images/hm-12.png" alt="NLP Analysis" title="NLP Analysis" style="border: 1px solid  gray;">
 
-
+<br>
 
 ## Test Suite Summary
 
@@ -211,19 +193,16 @@ For **Flow Health**, clicking the **View Test Suites** link displays the followi
 Please click [here](https://developer.kore.ai/docs/bots/analyzing-your-bot/flow-health-dashboard/#Flow_Metrics) to learn more about Test Suite Performance and Test Coverage Analysis.
 
 
+
 #### Utterance Testing
 
 Based on the test case failures, you can retrain your virtual assistant using the **Utterance testing** option for all possible user utterances and inputs. Training is how you enhance the performance of the NLP engine to prioritize one task or user intent over another based on the user input. To learn more, please refer to this [link](https://docsinternal-kore.github.io/docs/xo/automation/testing/utterance-testing/).
 
-To navigate to the **Utterance Testing** window, follow these steps:
-
-* Click the **go to utterance testing** (magic wand) icon on the **Test Cases – Detailed Analysis** page.  
-  
-  <img src="../images/hm-13.png" alt="go to utterance testing" title="go to utterance testing" style="border: 1px solid  gray;">
+To navigate to the **Utterance Testing** window, click the **go to utterance testing** (magic wand) icon on the **Test Cases – Detailed Analysis** page.  
+<img src="../images/hm-13.png" alt="go to utterance testing" title="go to utterance testing" style="border: 1px solid  gray;">
 
 
 In the **Utterance Testing** window shown below, you can do the following:
-
 * Test & [Train](https://docsinternal-kore.github.io/docs/xo/automation/testing/utterance-testing/#training-the-assistant) your virtual assistant based on these [recommendations ](https://developer.kore.ai/docs/bots/nlp/user-utterances/#Recommendations)to understand different user utterances and match them with intents and entities.
 * View the **NLP analysis** flow and **Fields/Entities** analysis data including the confidence score based on the NER training.
 * Use the **Mark as an incorrect match** link to match the user input with the right intent when it is mapped to an incorrect task.  
@@ -232,12 +211,11 @@ In the **Utterance Testing** window shown below, you can do the following:
 
 ## Dialog Intent Summary
 
-This section provides the performance metrics, test coverage and analytics for only the **Dialog Intents** test cases.
-
+This section provides the performance metrics, test coverage and analytics for only the **Dialog Intents** test cases.  
 <img src="../images/hm-15.png" alt="Dialog Intent Summary" title="Dialog Intent Summary" style="border: 1px solid  gray;">
 
-<p>
-</p>
+<br>
+
 The sub-sections available include:
 
 
@@ -423,7 +401,7 @@ table, th, td {
   </tr>
 </table>
 
-
+<br>
 
 ## Dialog Intent Flow Health
 
@@ -450,10 +428,10 @@ View Recommendations
 
 You can view relevant training recommendations for dialog intents, FAQs, or Small Talks when errors and warnings are triggered during the test execution. To view the recommendations summary, click **View Recommendations** on the top right of the details page.
 
-To view the details of the utterance validations, errors, warnings, and recommendations and correct them, click the **Recommendations** column.
-
+To view the details of the utterance validations, errors, warnings, and recommendations and correct them, click the **Recommendations** column.  
 <img src="../images/hm-16.png" alt="Recommendations" title="Recommendations" style="border: 1px solid  gray;">
 
+<br>
 
 ## Viewing Specific Test Results
 
@@ -463,12 +441,11 @@ To know how to get the drill-down view of a specific NLP test case execution, pl
 ### NLP- FAQs Summary
 
 The **FAQ Summary** section displays the [recommendation scores](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#Health_and_Monitoring_Metrics) generated for FAQs from the latest batch test executions.  
-
 <img src="../images/hm-17.png" alt="FAQ Summary" title="FAQ Summary" style="border: 1px solid  gray;">  
-<p></p>
 
-**Viewing Additional FAQ Recommendations**: For **FAQ Details**, clicking **View Recommendations** will display the report that was already run during the previous run time. To know how to view and manage additional recommendations, please refer to this [link](https://developer.kore.ai/docs/bots/nlp/training-validations/#How_to_Use_the_NLU_Validate_Model).
+<br>
 
+**Viewing Additional FAQ Recommendations**: For **FAQ Details**, clicking **View Recommendations** will display the report that was already run during the previous run time. To know how to view and manage additional recommendations, please refer to this [link](https://developer.kore.ai/docs/bots/nlp/training-validations/#How_to_Use_the_NLU_Validate_Model).  
 <img src="../images/hm-18.png" alt="Viewing Additional FAQ Recommendations" title="Viewing Additional FAQ Recommendations" style="border: 1px solid  gray;">
 <br>
 <br>
@@ -477,13 +454,12 @@ The **FAQ Summary** section displays the [recommendation scores](https://develop
 <br>
 
 **Knowledge Graph**: Clicking this button will take you to the **Knowledge Graph** section where you can perform [KG Analysis](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ontology-analysis/).  
-
 <img src="../images/hm-20.png" alt="Knowledge Graph button" title="Knowledge Graph button" style="border: 1px solid  gray;">
 <br>
-<br>  
-
+<br>
 <img src="../images/hm-21.png" alt="Knowledge Graph window" title="Knowledge Graph window" style="border: 1px solid  gray;">
 
+<br>
 
 ### Flow- FAQs Summary
 
@@ -493,13 +469,10 @@ Please refer to this [link](https://developer.kore.ai/docs/bots/analyzing-your-b
 ### NLP- Small Talk Summary
 
 The **Small Talk Summary** panel displays the [recommendation scores](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#Health_and_Monitoring_Metrics) generated for Small Talk interactions from the latest batch test executions.  
-
 <img src=../images/hm-22.png alt="Small Talk Summary" title="Small Talk Summary" style="border: 1px solid  gray;">  
 <br>
-<br>
 
-**Small Talk button**: Click this button to view the group name and the relevant user utterances, and Bot utterances.
-
+**Small Talk button**: Click this button to view the group name and the relevant user utterances, and Bot utterances.  
 <img src="../images/hm-23.png" alt="Small Talk button" title="Small Talk button" style="border: 1px solid  gray;">
 
 
@@ -507,18 +480,17 @@ The **Small Talk Summary** panel displays the [recommendation scores](https://de
 
 Please refer to this [link](https://developer.kore.ai/docs/bots/analyzing-your-bot/flow-health-dashboard/#Small_Talk) for more information.
 
+<br>
 
 ## Trait and Entity Summary Information
 
 The **Trait Summary** and **Entity Summary** sections display the [recommendation scores](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#Health_and_Monitoring_Metrics) generated for traits and entities respectively from the latest batch test executions.
 
-**Trait Summary**
-
+**Trait Summary**  
 <img src="../images/hm-24.png" alt="Trait Summary" title="Trait Summary" style="border: 1px solid  gray;">  
-<br><br>
+<br>
 
-**Entity Summary**
-
+**Entity Summary**  
 <img src="../images/hm-25.png" alt="Entity Summary" title="Entity Summary" style="border: 1px solid  gray;">  
 <br><br>
 
@@ -526,6 +498,7 @@ The **Trait Summary** and **Entity Summary** sections display the [recommendatio
 
 Please refer to [Test Coverage](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#Test_Coverage) and [Test Results Analysis](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#NLP_-_Test_Results_Analysis) for information on the sub-sections of these summary panels.
 
+<br>
 
 ## NLP Batch Test Results Summary for Universal Bots
 
@@ -533,18 +506,20 @@ The XO Platform now displays batch test results for Universal bots for each test
 
 The only difference between Standard and Universal Bots is that the insights derived are based on the intents of all the linked bots. For instance, the intent coverage is based on the comparison of the intents covered in the test suite and the total number of intents present in all the linked bots. 
 
+<br>
 
 ### Test Suite Summary
 
 The **Test Suite Summary** for the Universal Bot is the same for Dialog Intents, FAQs, and Small Talk. However, for the Universal Bot, the system takes the total number of respective intents in all the linked bots as the denominator to calculate the coverage metrics.
 
+<br>
 
 ### Intent Summary
 
-The **NLP Intent Summary** sections are the same for Universal Bots, except the **Recommendations** information is not displayed for **Dialogs** and **FAQs**, as shown below:
-
+The **NLP Intent Summary** sections are the same for Universal Bots, except the **Recommendations** information is not displayed for **Dialogs** and **FAQs**, as shown below:  
 <img src="../images/hm-26.png" alt="NLP Intent Summary" title="NLP Intent Summary" style="border: 1px solid  gray;">
 
+<br>
 
 ### Dialog Intents
 
@@ -555,8 +530,7 @@ The **Dialog Intent Details** page for Universal Bot summarizes the following in
 * Test Cases
 * [NLP performance metrics](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#NLP_Performance_Metrics): TP, FP, FN, and F1.
 * [Coverage metrics](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#NLP_Intent_Coverage_Metrics): Precision, Recall, and Accuracy.
-* Covered In (The Test Suites that cover the intent).
-
+* Covered In (The Test Suites that cover the intent).  
 <img src="../images/hm-27.png" alt="Dialog Intent Details" title="Dialog Intent Details" style="border: 1px solid  gray;">  
 <br><br>
 
@@ -564,19 +538,18 @@ Please refer to [Intent Details Window](https://developer.kore.ai/docs/bots/anal
 
 **Note**: The **Recommendations** option is not available for Universal Bot on this page.
 
-To view the intents not covered on the **Dialog Intent Details** page, click the **Three-dotted/Ellipses** icon and select **_View Intents Not Covered_**.
-
+To view the intents not covered on the **Dialog Intent Details** page, click the **Three-dotted/Ellipses** icon and select **_View Intents Not Covered_**.  
 <img src="../images/hm-28.png" alt="Dialog Intent-Intents Not Covered" title="Dialog Intent-Intents Not Covered" style="border: 1px solid  gray;">  
 
+<br>
 
-
-In the **Not Covered Intent**s List, you can view the respective Bot Name, as shown below. This helps analyze which Bots don’t identify the tested intents and improve test execution accordingly.
-
+In the **Not Covered Intent**s List, you can view the respective Bot Name, as shown below. This helps analyze which Bots don’t identify the tested intents and improve test execution accordingly.  
 <img src="../images/hm-29.png" alt="Dialog Intent-Not Covered Intent" title="Dialog Intent-Not Covered Intent" style="border: 1px solid  gray;">
-<br><br>
+<br>
 
 The **Search** and **Filter** options help select specific intents not covered by a Bot.
 
+<br>
 
 ### FAQ
 
@@ -588,10 +561,9 @@ The **FAQ Details** page for Universal Bot summarizes the following information:
 * Test Cases
 * [NLP performance metrics](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#NLP_Performance_Metrics): TP, FP, FN, and F1.
 * [Coverage metrics](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#NLP_Intent_Coverage_Metrics): Precision, Recall, and Accuracy.
-* Covered In (The Test Suites that cover the intent).
-
+* Covered In (The Test Suites that cover the intent).  
 <img src="../images/hm-30.png" alt="FAQ Details" title="FAQ Details" style="border: 1px solid  gray;">  
-<br><br>  
+<br>  
 
 Please refer to [Intent Details Window](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#Intent_Details_Window) for more information on the above values.
 
@@ -599,15 +571,14 @@ Please refer to [Intent Details Window](https://developer.kore.ai/docs/bots/anal
 
         The 'Knowledge Graph' and 'Recommendations' options are not available for Universal Bot on this page.
 
-To view the intents not covered on the **FAQ Details** page, click the **Three-dotted/Ellipses** icon and select **_View Intents Not Covered_**.
-
+To view the intents not covered on the **FAQ Details** page, click the **Three-dotted/Ellipses** icon and select **_View Intents Not Covered_**.  
 <img src="../images/hm-31.png" alt="FAQ-Intents Not Covered" title="FAQ-Intents Not Covered" style="border: 1px solid  gray;">    
-<br><br>
+<br>
 
-In the **Not Covered Intents** List, you can view the respective Bot Name, as shown below.
-
+In the **Not Covered Intents** List, you can view the respective Bot Name, as shown below.  
 <img src="../images/hm-32.png" alt="FAQ-Not Covered Intents" title="FAQ-Not Covered Intents" style="border: 1px solid  gray;">  
   
+<br>
 
 ### Small Talk
 
@@ -618,8 +589,7 @@ The **Small Talk Details** page for Universal Bot summarizes the following infor
 * Test Cases
 * [NLP performance metrics](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#NLP_Performance_Metrics): TP, FP, FN, and F1.
 * [Coverage metrics](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#NLP_Intent_Coverage_Metrics): Precision, Recall, and Accuracy.
-* Covered In (The Test Suites that cover the intent).
-
+* Covered In (The Test Suites that cover the intent).  
 <img src="../images/hm-33.png" alt="Small Talk Details" title="Small Talk Details" style="border: 1px solid  gray;"> 
 
 Please refer to [Intent Details Window](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/#Intent_Details_Window) for more information on the above values.
@@ -628,33 +598,30 @@ Please refer to [Intent Details Window](https://developer.kore.ai/docs/bots/anal
 
         The 'Small Talk' option is not available for Universal Bot on this page.
 
-To view the intents not covered on the **Small Talk Details** page, click the **Three-dotted/Ellipses** icon and select **_View Intents Not Covered_**.
-
+To view the intents not covered on the **Small Talk Details** page, click the **Three-dotted/Ellipses** icon and select **_View Intents Not Covered_**.  
 <img src="../images/hm-34.png" alt="Small Talk-Intents Not Covered" title="Small Talk-Intents Not Covered" style="border: 1px solid  gray;"> 
-<br><br>
+<br>
 
-In the **Small Talk-Intents Not Covered**s List, you can view the respective Bot Name, as shown below.
-
+In the **Small Talk-Intents Not Covered**s List, you can view the respective Bot Name, as shown below.  
 <img src="../images/hm-35.png" alt="Small Talk-Small Talk-Intents Not Covered" title="Small Talk-Small Talk-Intents Not Covered" style="border: 1px solid  gray;"> 
 
+<br>
 
 ## Intent Details Window
 
 The **View Details** link in the Dialog intent, FAQ, and Small Talk summary sections provides access to a drill-down view of the key performance metrics and recommendations of the covered intents.
 
-The given data helps identify the intent-related issues proactively in the training phase itself to work on fixing them accordingly.
-
+The given data helps identify the intent-related issues proactively in the training phase itself to work on fixing them accordingly.  
 <img src="../images/hm-36.png" alt="Intent Details" title="Intent Details" style="border: 1px solid  gray;"> 
-<br><br>
+<br>
 
 Here’s what you can do:
 
 **View the Training Data Summary**
 
-You can view the training data summary with the relevant recommendation metrics for Dialog Intents, FAQs, and Small Talks in the details panel.
-
+You can view the training data summary with the relevant recommendation metrics for Dialog Intents, FAQs, and Small Talks in the details panel.  
 <img src="../images/hm-37.png" alt="Training Data Summary" title="Training Data Summary" style="border: 1px solid  gray;">  
-<br><br>
+<br>
 
 The summary of all the metrics displayed is given below:
 
@@ -796,14 +763,14 @@ The summary of all the metrics displayed is given below:
 <br>
 </p>
 
+<br>
+
 **View Intents Not Covered**
 
-This feature helps identify the intents not covered so as to include them in the test data for better and holistic [testing of the virtual assistant](https://developer.kore.ai/docs/bots/test-your-bot/testing-your-bot-with-nlp/#Testing_the_Bot). Click the **three-dot menu** on the right side of the panel to view the list of **intents not covered** in batch testing.
-
+This feature helps identify the intents not covered so as to include them in the test data for better and holistic [testing of the virtual assistant](https://developer.kore.ai/docs/bots/test-your-bot/testing-your-bot-with-nlp/#Testing_the_Bot). Click the **three-dot menu** on the right side of the panel to view the list of **intents not covered** in batch testing.  
 <img src="../images/hm-38.png" alt="Training data-intents not covered" title="Training data-intents not covered" style="border: 1px solid  gray;"> 
-<br><br>
+<br>
 
-You can include the intents from this list to retrain your virtual assistant and improve performance.
-
+You can include the intents from this list to retrain your virtual assistant and improve performance.  
 <img src="../images/hm-39.png" alt="Training data-Not covered intents" title="Training data-Not covered intents" style="border: 1px solid  gray;"> 
 
