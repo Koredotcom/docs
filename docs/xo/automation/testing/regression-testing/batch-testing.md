@@ -50,7 +50,6 @@ To add a new test suite, follow the steps below:
 3. Next, choose how to add test cases: either manually or by uploading a test case file.
     * Selecting **Add Manually** lets you add test cases manually or use LLM and Generative AI to generate test cases automatically.
     * Selecting **Upload Test Cases File** lets you upload a file containing test cases.  
-
     <img src="../images/batch-testing-4-newtest.png" alt="BT - New Test Suite Details" title="BT - New Test Suite Details" style="border: 1px solid gray; zoom:50%;"/>
     
     
@@ -75,17 +74,18 @@ You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utteranc
 
 
 **One Intent for a Test Utterance**
+
 <img src="../images/batch-testing-6-one-intent-for-a-test-utterance.png" alt="One Intent for a Test Utterance" title="One Intent for a Test Utterance" style="border: 1px solid gray; zoom:50%;"/>  
 
 
 **Multiple Intents for a Test Utterance**
+
 <img src="../images/batch-testing-7-multiple-intents-for-a-test-utterance.png" alt="Multiple intents for a test utterance" title="Multiple intents for a test utterance" style="border: 1px solid gray; zoom:50%;"/> 
 
 
 5. Click **Save** when ready.
-6. Once added, your test cases are listed and ready to run. You can use the **Add Manually** button at the top of the list to add more test cases. The option to Generate Test cases only displays if you have enabled LLM and Generative AI for the VA.
-
-!<img src="../images/batch-testing-8-add-new-case.png" alt="New test added" title="New test added"style="border: 1px solid gray; zoom:50%;"/> 
+6. Once added, your test cases are listed and ready to run. You can use the **Add Manually** button at the top of the list to add more test cases. The option to Generate Test cases only displays if you have enabled LLM and Generative AI for the VA.  
+<img src="../images/batch-testing-8-add-new-case.png" alt="New test added" title="New test added"style="border: 1px solid gray; zoom:50%;"/> 
 
 
 #### Generating Test Cases Automatically
