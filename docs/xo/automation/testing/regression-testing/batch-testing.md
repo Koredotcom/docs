@@ -61,7 +61,7 @@ Once you create a test suite to which you have chosen to add test cases manually
 
 In the Test Cases page, click the **+Add Test Case**.
 
-<img src="../images/batch-testing-5-add-manually.png" alt="Add test case manually" title="Add test case manually" width="500" style="border: 1px solid gray;">
+<img src="../images/batch-testing-5-add-testcase-manually.png" alt="Add test case manually" title="Add test case manually" style="border: 1px solid gray; zoom:50%;"/>
 
 <br><br>
 
@@ -75,7 +75,7 @@ You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utteranc
 
 
 **One Intent for a Test Utterance**
-![One intent for a test utterance](../images/batch-testing-6-one-intent-for-a-test-utterance.png "One intent for a test utterance") { width = 400px }
+<img src="../images/batch-testing-6-one-intent-for-a-test-utterance.png" alt="One Intent for a Test Utterance" title="One Intent for a Test Utterance" style="border: 1px solid gray; zoom:50%;"/>
 
 
 **Multiple Intents for a Test Utterance**
