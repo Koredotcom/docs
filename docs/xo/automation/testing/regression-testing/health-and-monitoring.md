@@ -523,6 +523,7 @@ The **NLP Intent Summary** sections are the same for Universal Bots, except the 
 ### Dialog Intents
 
 The **Dialog Intent Details** page for Universal Bot summarizes the following information:
+
 * Intent Name
 * Bot Name
 * Training Utterance
