@@ -542,7 +542,7 @@ To view the intents not covered on the **Dialog Intent Details** page, click the
 
 <br>
 
-In the **Not Covered Intent**s List, you can view the respective Bot Name, as shown below. This helps analyze which Bots don’t identify the tested intents and improve test execution accordingly.  
+In the **Not Covered Intents** List, you can view the respective Bot Name, as shown below. This helps analyze which Bots don’t identify the tested intents and improve test execution accordingly.  
 <img src="../images/hm-29.png" alt="Dialog Intent-Not Covered Intent" title="Dialog Intent-Not Covered Intent" style="border: 1px solid  gray; zoom:50%;"/>
 <br>
 
@@ -553,6 +553,7 @@ The **Search** and **Filter** options help select specific intents not covered b
 ### FAQ
 
 The **FAQ Details** page for Universal Bot summarizes the following information:
+
 * Intent Name
 * Bot
 * Path
@@ -582,6 +583,7 @@ In the **Not Covered Intents** List, you can view the respective Bot Name, as sh
 ### Small Talk
 
 The **Small Talk Details** page for Universal Bot summarizes the following information:
+
 * Intent
 * Group
 * Bot
@@ -601,7 +603,7 @@ To view the intents not covered on the **Small Talk Details** page, click the **
 <img src="../images/hm-34.png" alt="Small Talk-Intents Not Covered" title="Small Talk-Intents Not Covered" style="border: 1px solid  gray; zoom:50%;"/> 
 <br>
 
-In the **Small Talk-Intents Not Covered**s List, you can view the respective Bot Name, as shown below.  
+In the **Small Talk-Intents Not Covered** List, you can view the respective Bot Name, as shown below.  
 <img src="../images/hm-35.png" alt="Small Talk-Small Talk-Intents Not Covered" title="Small Talk-Small Talk-Intents Not Covered" style="border: 1px solid  gray; zoom:50%;"/> 
 
 <br>
