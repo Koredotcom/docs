@@ -102,9 +102,8 @@ A summary table with the following details is displayed:
 * **Expected Value**: The Entity expected in the user utterance.
 * **Matched Value**: The Entity actually matched in the utterance.
 * **Entity Result**: Displays if an entity is matched (_True_), or not (_False_).
-* **Tags**: The tag labeled for the conversation by the analyst.
-
-<img src="../images/Hm-6.png" alt="Entities" title="Entities" style="border: 1px solid  gray; zoom:50%;"/>
+* **Tags**: The tag labeled for the conversation by the analyst.  
+<img src="../images/hm-6.png" alt="Entities" title="Entities" style="border: 1px solid  gray; zoom:50%;"/>
 
 <br>
 
@@ -137,7 +136,7 @@ The following tags are available for intents, entities, and traits:
 * **New Intent**: Indicates a new intent during test execution.
 
 Hover over the desired entry, and click the **detailed view** icon.  
-<img src="../images/Hm-8.png" alt="Test cases detailed analysis" title="Test cases detailed analysis" style="border: 1px solid  gray; zoom:50%;"/>
+<img src="../images/hm-8.png" alt="Test cases detailed analysis" title="Test cases detailed analysis" style="border: 1px solid  gray; zoom:50%;"/>
 
 A sliding window with the test results for the selected test case and intent type appears.
 
