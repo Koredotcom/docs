@@ -119,7 +119,7 @@ A summary table with the following details is displayed:
 * **Trait Result:** Displays if the match detected is True Positive, False Positive, or False Negative.
 * **Tags:** The tag labeled for the conversation by the analyst.
 
-<img src="../images/Hm-7.png" alt="Traits" title="Traits" style="border: 1px solid  gray; zoom:50%;"/>
+<img src="../images/hm-7.png" alt="Traits" title="Traits" style="border: 1px solid  gray; zoom:50%;"/>
 
 <br>
 
