@@ -146,7 +146,7 @@ A sliding window with the test results for the selected test case and intent typ
 <br>
 
 **Trait Details** are displayed in the test case details window if you select the **trait** intent type.  
-<img src="../images/Hm-10.png" alt="Trait Details" title="Trait Details" style="border: 1px solid  gray; zoom:50%;"/>
+<img src="../images/hm-10.png" alt="Trait Details" title="Trait Details" style="border: 1px solid  gray; zoom:50%;"/>
 
 <br>
 
