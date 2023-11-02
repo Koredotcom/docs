@@ -102,9 +102,8 @@ A summary table with the following details is displayed:
 * **Expected Value**: The Entity expected in the user utterance.
 * **Matched Value**: The Entity actually matched in the utterance.
 * **Entity Result**: Displays if an entity is matched (_True_), or not (_False_).
-* **Tags**: The tag labeled for the conversation by the analyst.
-
-<img src="../images/Hm-6.png" alt="Entities" title="Entities" style="border: 1px solid  gray; zoom:50%;"/>
+* **Tags**: The tag labeled for the conversation by the analyst.  
+<img src="../images/hm-6.png" alt="Entities" title="Entities" style="border: 1px solid  gray; zoom:50%;"/>
 
 <br>
 
@@ -120,7 +119,7 @@ A summary table with the following details is displayed:
 * **Trait Result:** Displays if the match detected is True Positive, False Positive, or False Negative.
 * **Tags:** The tag labeled for the conversation by the analyst.
 
-<img src="../images/Hm-7.png" alt="Traits" title="Traits" style="border: 1px solid  gray; zoom:50%;"/>
+<img src="../images/hm-7.png" alt="Traits" title="Traits" style="border: 1px solid  gray; zoom:50%;"/>
 
 <br>
 
@@ -137,7 +136,7 @@ The following tags are available for intents, entities, and traits:
 * **New Intent**: Indicates a new intent during test execution.
 
 Hover over the desired entry, and click the **detailed view** icon.  
-<img src="../images/Hm-8.png" alt="Test cases detailed analysis" title="Test cases detailed analysis" style="border: 1px solid  gray; zoom:50%;"/>
+<img src="../images/hm-8.png" alt="Test cases detailed analysis" title="Test cases detailed analysis" style="border: 1px solid  gray; zoom:50%;"/>
 
 A sliding window with the test results for the selected test case and intent type appears.
 
@@ -147,7 +146,7 @@ A sliding window with the test results for the selected test case and intent typ
 <br>
 
 **Trait Details** are displayed in the test case details window if you select the **trait** intent type.  
-<img src="../images/Hm-10.png" alt="Trait Details" title="Trait Details" style="border: 1px solid  gray; zoom:50%;"/>
+<img src="../images/hm-10.png" alt="Trait Details" title="Trait Details" style="border: 1px solid  gray; zoom:50%;"/>
 
 <br>
 
@@ -524,6 +523,7 @@ The **NLP Intent Summary** sections are the same for Universal Bots, except the 
 ### Dialog Intents
 
 The **Dialog Intent Details** page for Universal Bot summarizes the following information:
+
 * Intent Name
 * Bot Name
 * Training Utterance
@@ -543,7 +543,7 @@ To view the intents not covered on the **Dialog Intent Details** page, click the
 
 <br>
 
-In the **Not Covered Intent**s List, you can view the respective Bot Name, as shown below. This helps analyze which Bots don’t identify the tested intents and improve test execution accordingly.  
+In the **Not Covered Intents** List, you can view the respective Bot Name, as shown below. This helps analyze which Bots don’t identify the tested intents and improve test execution accordingly.  
 <img src="../images/hm-29.png" alt="Dialog Intent-Not Covered Intent" title="Dialog Intent-Not Covered Intent" style="border: 1px solid  gray; zoom:50%;"/>
 <br>
 
@@ -554,6 +554,7 @@ The **Search** and **Filter** options help select specific intents not covered b
 ### FAQ
 
 The **FAQ Details** page for Universal Bot summarizes the following information:
+
 * Intent Name
 * Bot
 * Path
@@ -583,6 +584,7 @@ In the **Not Covered Intents** List, you can view the respective Bot Name, as sh
 ### Small Talk
 
 The **Small Talk Details** page for Universal Bot summarizes the following information:
+
 * Intent
 * Group
 * Bot
@@ -602,7 +604,7 @@ To view the intents not covered on the **Small Talk Details** page, click the **
 <img src="../images/hm-34.png" alt="Small Talk-Intents Not Covered" title="Small Talk-Intents Not Covered" style="border: 1px solid  gray; zoom:50%;"/> 
 <br>
 
-In the **Small Talk-Intents Not Covered**s List, you can view the respective Bot Name, as shown below.  
+In the **Small Talk-Intents Not Covered** List, you can view the respective Bot Name, as shown below.  
 <img src="../images/hm-35.png" alt="Small Talk-Small Talk-Intents Not Covered" title="Small Talk-Small Talk-Intents Not Covered" style="border: 1px solid  gray; zoom:50%;"/> 
 
 <br>
