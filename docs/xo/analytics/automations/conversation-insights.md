@@ -4,13 +4,9 @@ Once a virtual assistant is published, it is important to understand and analyze
 
 **To view the Conversation Insights dashboard, follow the steps**: 
 
+1. Click the three dots on the left navigation pane and then click **Analytics**. **The Analytics** panel is displayed with the list of reports.
 
-
-1. Click the three dots on the left navigation pane and then click **Analytics**. **The Analytics** panel is displayed with the list of reports. 
-
-<img src="../images/conversation-insights-dashboards.png" alt="Conversation Insights Dashboards" title="Conversation Insights Dashboards" style="border: 1px solid gray; zoom:80%;">
-
-
+    <img src="../images/conversation-insights-dashboards.png" alt="Conversation Insights Dashboards" title="Conversation Insights Dashboards" style="border: 1px solid gray; zoom:80%;">
 
 2. Click the **Conversation Insights dashboard** under the **Automation** section of the **Analytics** panel. The **Conversation Insights dashboard** is displayed on the right side of the page.
 3. Select appropriate filters on the dashboard and click **Apply**.
@@ -213,32 +209,28 @@ The following steps explain how to train a single utterance or bulk utterances.
 1. Click the **Train** button available across the utterance to initiate the training.
 2. You may also select multiple utterances for bulk training and choose an option from the **Train** drop-down as shown in the following screenshot. 
 
-<img src="../images/train-the-utterance-1.png" alt="Train The Utterance" title="Train The Utterance" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/train-the-utterance-1.png" alt="Train The Utterance" title="Train The Utterance" style="border: 1px solid gray; zoom:80%;">
 
-!!! note
+    !!! note
 
     NLP Analysis and the Utterance testing panels are displayed the same as in the NLP Insights. The training process is the same as the utterance training in the NLP insights.
 
-<img src="../images/train-the-utterance-2.png" alt="Train The Utterance" title="Train The Utterance" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/train-the-utterance-2.png" alt="Train The Utterance" title="Train The Utterance" style="border: 1px solid gray; zoom:80%;">
 
 3. Select a matching intent from the **Selected Intent** drop-down and click **Save** to initiate the training.
-4. You can also add Intent synonyms, patterns, and traits as required. The following message is displayed if the task is already published. Click **Upgrade** to change the task status to Development, to make the changes.
+4.You can also add Intent synonyms, patterns, and traits as required. The following message is displayed if the task is already published. Click **Upgrade** to change the task status to Development, to make the changes.
 
-
-<img src="../images/train-the-utterance-3.png" alt="Train The Utterance" title="Train The Utterance" style="border: 1px solid gray; zoom:80%;">
-
+    <img src="../images/train-the-utterance-3.png" alt="Train The Utterance" title="Train The Utterance" style="border: 1px solid gray; zoom:65%;">
 
 
 A message, **Utterance Uploaded Successfully** is displayed.
 
-
-!!! note
+    !!! note
 
     You can also click Re-Run Utterance if you want to train the utterance again.
 
 
 <img src="../images/train-the-utterance-4.png" alt="Train The Utterance" title="Train The Utterance" style="border: 1px solid gray; zoom:80%;">
-
 
 
 !!! note
@@ -254,21 +246,17 @@ The following steps explain how to add an existing intent to an utterance or mul
 1. To map an existing Dialog Task or FAQ, click the **Train** drop-down. (See step 2 under Train the Utterances).
 2. Click the **Dialog Task** option to choose the matching intent for the selected utterance.
 
-<img src="../images/add-exisitng-intent.png" alt="Add Exisitng Intent" title="Add Exisitng Intent" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-exisitng-intent.png" alt="Add Exisitng Intent" title="Add Exisitng Intent" style="border: 1px solid gray; zoom:80%;">
 
 
+3. Click the button **Add Utterances** to add the intent for the utterances. Click **Yes, Mark as Reviewed** if you want to change the status of the trained utterances to Reviewed, or else click **No**. 
 
-3. Click the button **Add Utterances** to add the intent for the utterances. Click **Yes, Mark as Reviewed** if you want to change the status of the trained utterances to Reviewed, or else click **No**.
-
-<img src="../images/add-exisitng-intent-1.png" alt="Add Exisitng Intent" title="Add Exisitng Intent" style="border: 1px solid gray; zoom:80%;">
-
+    <img src="../images/add-exisitng-intent-1.png" alt="Add Exisitng Intent" title="Add Exisitng Intent" style="border: 1px solid gray; zoom:80%;">
 
 
-4. Click the **FAQ** option from the **Train** drop-down to add the matching FAQ for the selected utterance.
+4. Click the **FAQ** option from the **Train** drop-down to add the matching FAQ for the selected utterance. 
 
-
-<img src="../images/add-exisitng-intent-2.png" alt="Add Exisitng Intent" title="Add Exisitng Intent" style="border: 1px solid gray; zoom:80%;">
-
+    <img src="../images/add-exisitng-intent-2.png" alt="Add Exisitng Intent" title="Add Exisitng Intent" style="border: 1px solid gray; zoom:80%;">
 
 5. Upon adding the FAQ successfully, a message is displayed as shown below. Click **Yes, Mark as Reviewed** if you want to change the status of the trained utterances to Reviewed, or else click **No**.
  
@@ -282,30 +270,28 @@ In a scenario where the utterances cannot be mapped to any of the existing inten
 
 1. To create a new Dialog Task or FAQ for that utterance, click the **Add Intent** drop-down.
 
-
-<img src="../images/add-new-intent.png" alt="Add New Intent" title="Add New Intent" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-new-intent.png" alt="Add New Intent" title="Add New Intent" style="border: 1px solid gray; zoom:80%;">
 
 
 2. Click the **Dialog Task** option to create a new intent for the selected utterance.
 3. The **Create Dialog** panel is displayed. Enter the required details and click **Proceed** to add the new intent for the utterance.
 
-<img src="../images/add-new-intent-1.png" alt="Add New Intent" title="Add New Intent" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-new-intent-1.png" alt="Add New Intent" title="Add New Intent" style="border: 1px solid gray; zoom:80%;">
 
 
 4. Click **Yes, Mark as Reviewed** if you want to change the status of the trained utterances to Reviewed, or else click **No**.
 
-<img src="../images/add-new-intent-2.png" alt="Add New Intent" title="Add New Intent" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-new-intent-2.png" alt="Add New Intent" title="Add New Intent" style="border: 1px solid gray; zoom:80%;">
 
 
 5. Click the **FAQ** option listed in the **Add Intent** drop-down to add a new FAQ for the selected utterance.
 
-<img src="../images/add-new-intent-3.png" alt="Add New Intent" title="Add New Intent" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-new-intent-3.png" alt="Add New Intent" title="Add New Intent" style="border: 1px solid gray; zoom:80%;">
 
 
 6. Click **Yes, Mark as Reviewed** if you want to change the status of the trained utterances to Reviewed, or else click **No**.
 
-
-<img src="../images/add-new-intent-4.png" alt="Add New Intent" title="Add New Intent" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-new-intent-4.png" alt="Add New Intent" title="Add New Intent" style="border: 1px solid gray; zoom:80%;">
 
 
 
@@ -322,7 +308,7 @@ The status of all the utterances is **Yet to review** by default. You can change
 
 
 
-* Click on any utterance from the list to display the **Details, NLP Analysis**, and **Chat History** panel shown in the following screenshot.
+* Click any utterance from the list to display the **Details, NLP Analysis**, and **Chat History** panel shown in the following screenshot.
 
 <img src="../images/status-review-1.png" alt="Status Review" title="Status Review" style="border: 1px solid gray; zoom:80%;">
 
