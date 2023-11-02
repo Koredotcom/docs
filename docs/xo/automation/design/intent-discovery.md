@@ -4,12 +4,10 @@ The new Intent Discovery module helps you auto-extract popular intents from prev
 
 You can upload your historical transcripts in CSV format. After the transcripts are uploaded into the bot, the bot uses LLMs to identify the different topics, intents, or conversations between the user and the bot. It intelligently identifies all the intents available. You can review each intent to understand which conversations have resulted in identifying these intents. After the review, you can also see the underline utterances that resulted in identifying an intent. You can either add these intents as new intents for your virtual assistant or pick specific utterances and train them as utterances for your existing dialogs and FAQs. So, it helps both ways – either create new intents or enhance the training you provide to your virtual assistant.
 
-<img src="..images/intent-discovery-demo-diagram.png" alt="Intent Discovery" title="Intent Discovery" style="border: 1px solid gray; zoom:50%;"/> 
+<img src="../images/intent-discovery-demo-diagram.png" alt="Intent Discovery" title="Intent Discovery" style="border: 1px solid gray; zoom:50%;"/> 
 
 
 The Intent Discovery journey consists of the following steps:
-
-
 
 1. [Create a Project](https://developer.kore.ai/docs/bots/intent-discovery/#Create_a_Project): You may have many business use cases to automate. Projects help manage intent discovery for each business use case separately – a project for a specific use case.
 2. [Upload Transcripts](https://developer.kore.ai/docs/bots/intent-discovery/#Upload_Transcripts): Upload your use case-specific historical transcripts in CSV format. Conversations are extracted from the uploaded transcripts.
@@ -18,82 +16,55 @@ The Intent Discovery journey consists of the following steps:
 
 ## Create a Project
 
-1. Go to **Build **>** Tools **>** Intent Discovery**.  
+1. Go to **Build > Tools > Intent Discovery**.  
 <img src="../images/intent-discovery-home.png" alt="Click Intent Discovery" title="Click Intent Discovery" style="border: 1px solid gray; zoom:50%;"/>  
 
 2. Click the **Create Project** button.
-3. Enter a name and a brief description of the project. Note that the character limit for Project Name is 256, and Description is 1000. Click **Proceed**
+3. Enter a name and a brief description of the project. Note that the character limit for Project Name is 256, and Description is 1000. Click **Proceed**.  
+<img src="../images/intent-discovery-project.png" alt="Project name and description" title="Project name and description" style="border: 1px solid gray; zoom:50%;"/>  
 
-    
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-
-
-
-    The new project is created. You see the Intent Discovery page with the header ‘Projects / {{New Project’s Name}}’.
-
-
-    
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
-
-
+4. The new project is created. You see the Intent Discovery page with the header **‘Projects / {{New Project’s Name}}’**.  
+<img src="../images/upload-transcript.png" alt="Project Created" title="Project Created" style="border: 1px solid gray; zoom:50%;"/>  
+  
+<br>
 
 The Intent Discovery landing page lists all the projects with conversational insights for each project, such as the status of the project, number of sessions, intents extracted, and results in terms of added dialogs, added FAQs, trained dialogs, and trained FAQs. Note that the result will be NA for the projects for which intent extraction is incomplete.
 
- \
 The status of a project can be any of the following, displayed in the Status column:
-
-
 
 * No Files Uploaded
 * Intents Not Extracted
 * Intent Extraction In Progress
 * Intents Extracted
 
+<img src="../images/intent-discovery-page.png" alt="Different status of project" title="Different status of project" style="border: 1px solid gray; zoom:50%;"/>   
 
+!!! note
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
-
-
-**Note**: You can create **a maximum of 10 projects** per VA. You can change an existing project’s name and description anytime.
+        You can create a maximum of 10 projects per VA. You can change an existing project’s name and description anytime.
 
 
 ## Upload Transcripts
 
 On the Intent Discovery page for the new project, you can see a button to initiate the upload of the transcript file(s) and a link to download a sample transcript file.
 
-
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.png "image_tooltip")
-
+<img src="../images/upload-transcript.png" alt="Upload Transcripts" title="Upload Transcripts" style="border: 1px solid gray; zoom:50%;"/>  
+<br>
 
 You can download the sample CSV file by clicking the link. Ensure to upload transcripts in the format specified in the sample file. Please note that **all the columns in the file must be filled**.
 
 
 ### Format of the CSV (Transcript) file
 
+<img src="../images/sample-csv-file.png" alt="Sample CSV File" title="Sample CSV File" style="border: 1px solid gray; zoom:50%;"/>  
 
+<br>
 
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image7.png "image_tooltip")
-
-
-
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
 <table>
   <tr>
    <td>FIELD NAME
@@ -145,52 +116,26 @@ You can download the sample CSV file by clicking the link. Ensure to upload tran
   </tr>
 </table>
 
-
+<br>
 
 ### Limitations
-
-
 
 * Number of transcripts files allowed: Up to 5 CSV files per project.
 * Maximum size of CSV transcript file: 1MB each
 
+<br>
 
 ### Steps to upload the transcripts:
 
+1. Click the **Upload Transcript** button, and then browse and select the transcripts files (CSV format). The selected files are uploaded, and you see a prompt to manage the transcripts on the next page.  
+<img src="../images/browse-for-transcript.png" alt="Browse for Transcript" title="Browse for Transcript" style="border: 1px solid gray; zoom:50%;"/>  
+  
+    <img src="../images/upload-transcript-confirmation.png" alt="Transcript upload confirmation" title="Upload transcript confirmation" style="border: 1px solid gray; zoom:50%;"/>  
 
-
-1. Click the **Upload Transcript** button, and then browse and select the transcripts files (CSV format). The selected files are uploaded, and you see a prompt to manage the transcripts on the next page.
-
+2. If some transcript files are uploaded but No intents extracted so far, the **Manage Transcripts** button is displayed as shown in the screenshot below.  
+<img src="../images/manage-transcripts.png" alt="Manage Transcript" title="Manage Transcript" style="border: 1px solid gray; zoom:50%;"/>
     
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image8.png "image_tooltip")
-
-
-
-    
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image9.png "image_tooltip")
-
-
-
-    If some transcript files are uploaded but No intents extracted so far, the** Manage Transcripts** button is displayed as shown in the screenshot below.
-
-
-    
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image10.png "image_tooltip")
-
-
-2. On clicking **Manage Transcripts**, you can see the **Transcripts** dialog box with the list of all the transcript files. Below details are displayed on the window:
+3. On clicking **Manage Transcripts**, you can see the **Transcripts** dialog box with the list of all the transcript files. Below details are displayed on the window:
     1. File Name: Name of the transcript file uploaded
     2. Upload Time: Time of transcript upload
     3. Sessions: Count of sessions in the transcript, gets populated after the successful extraction of conversations. 
@@ -201,13 +146,7 @@ You can download the sample CSV file by clicking the link. Ensure to upload tran
         * Invalid File
         * Upload Failed
 
-    
-
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image11.png "image_tooltip")
-
+    <img src="../images/transcript-list.png" alt="List of Transcripts" title="List of Transcripts" style="border: 1px solid gray; zoom:50%;"/>
 
 
 The dialog box has the provision to download a sample file using the **Sample File** button and upload additional transcript files by clicking the **Upload Transcripts** button.
