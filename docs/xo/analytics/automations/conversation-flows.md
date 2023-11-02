@@ -19,13 +19,11 @@ The Conversation Flows provides the following views:
 
 
 1. Click the three dots on the left navigation pane and then click **Analytics**. **The Analytics** panel is displayed with the list of reports.
+
+    <img src="../images/conversation-flows-dashboard.png" alt="Conversation Flows Dashboard" title="Conversation Flows Dashboard" style="border: 1px solid gray; zoom:80%;">
+
 2. Click the **Conversation Flows dashboard** under the **Automation** section of the **Analytics** panel. The **Conversation Flows dashboard** is displayed on the right side of the page.
 3. Select appropriate filters on the dashboard and click **Apply**.
-
-
-<img src="../images/conversation-flows-dashboard.png" alt="Conversation Flows Dashboard" title="Conversation Flows Dashboard" style="border: 1px solid gray; zoom:80%;">
-
-
 
 
 By default, the Intents Flow is presented along with the intents. Selecting any node will expand the flow to present the subsequent nodes in that path.
@@ -33,19 +31,15 @@ By default, the Intents Flow is presented along with the intents. Selecting any 
 
 <img src="../images/conversation-flows-1.png" alt="Conversation Flows" title="Conversation Flows" style="border: 1px solid gray; zoom:80%;">
 
-
 You can select session-wise view by toggling the **View tasks by sessions** option.
 
 
 <img src="../images/conversation-flows-2.png" alt="Conversation Flows" title="Conversation Flows" style="border: 1px solid gray; zoom:80%;">
 
 
-
-
 ## Purpose
 
 The Conversation Flows can be used to identify the following:
-
 
 
 * Popular utterances – Utterances that are used to invoke the virtual assistant’s intents. Utterances are automatically grouped by similarity to provide a simplified view. 

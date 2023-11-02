@@ -6,14 +6,14 @@ After you publish a Virtual Assistant (VA), you can monitor its performance usin
 
 
 1. Click the three dots on the left navigation pane and then click **Analytics**. **The Analytics** panel is displayed with the list of reports.
+
+    <img src="../images/performance-dashboard-overview.png" alt="Performance Dashboard Overview" title="Performance Dashboard Overview" style="border: 1px solid gray; zoom:80%;">
+
 2. Click **Performance Dashboard** under the **Automation** section of the **Analytics** panel. The **Performance Dashboard** is displayed on the right side of the page.
-
-<img src="../images/performance-dashboard-overview.png" alt="Performance Dashboard Overview" title="Performance Dashboard Overview" style="border: 1px solid gray; zoom:80%;">
-
 
 3. Select appropriate filters on the dashboard and click **Apply**.
 
-<img src="../images/performance-dashboard.png" alt="Performance Dashboard" title="Performance Dashboard" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/performance-dashboard.png" alt="Performance Dashboard" title="Performance Dashboard" style="border: 1px solid gray; zoom:100%;">
 
 
 !!! note
