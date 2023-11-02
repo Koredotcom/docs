@@ -31,19 +31,15 @@ By default, the Intents Flow is presented along with the intents. Selecting any 
 
 <img src="../images/conversation-flows-1.png" alt="Conversation Flows" title="Conversation Flows" style="border: 1px solid gray; zoom:80%;">
 
-
 You can select session-wise view by toggling the **View tasks by sessions** option.
 
 
 <img src="../images/conversation-flows-2.png" alt="Conversation Flows" title="Conversation Flows" style="border: 1px solid gray; zoom:80%;">
 
 
-
-
 ## Purpose
 
 The Conversation Flows can be used to identify the following:
-
 
 
 * Popular utterances – Utterances that are used to invoke the virtual assistant’s intents. Utterances are automatically grouped by similarity to provide a simplified view. 

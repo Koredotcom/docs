@@ -19,11 +19,10 @@ For example, an e-Commerce company requiring insights on user trend-based data f
 
 
 1. Click the three dots on the left navigation pane and then click **Analytics**. **The Analytics** panel is displayed with the list of reports.
+
+    <img src="../images/users-dashboard.png" alt="Users Dashboard" title="Users Dashboard" style="border: 1px solid gray; zoom:80%;">
+
 2. Click **Users Dashboard** under the **Automation** section of the **Analytics** panel. The **Users Dashboard** is displayed on the right side of the page.
-
-<img src="../images/users-dashboard.png" alt="Users Dashboard" title="Users Dashboard" style="border: 1px solid gray; zoom:80%;">
-
-
 3. Select appropriate filters on the dashboard and click **Apply**.
 
 !!! note
