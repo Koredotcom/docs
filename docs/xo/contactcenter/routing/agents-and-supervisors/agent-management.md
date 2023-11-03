@@ -4,7 +4,7 @@
 
 In the Contact Center, the term **Agent Management** refers to the management of agents (customer support representatives), supervisors, and administrators with an account within the contact center. To serve customers, you must add users to contact center and provide them with the necessary access. You can create user profiles, assign them to voice, chat, or both channels, and specific skills or queues.
 
-You can find the _Agent Management_ section by going to **Contact Center > AGENT & SUPERVISORS > Agent Management > Agents**.
+You can find the _Agents_ section by going to **Contact Center > AGENT & SUPERVISORS > Agent Management**.
 
 <img src="./images/agent-management-page-agents.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:80%;">
 
@@ -214,7 +214,7 @@ Alternatively, edit the user, and on the **Edit User** window, click the **Delet
 
 An **Agent Group** is a collection of agents based on skills, scopes, roles, functionalities, etc. Agents are assigned to groups to streamline customer service within Contact Center.
 
-To find _Agent Groups_, go to **Contact Center > AGENT & SUPERVISORS > Agent Management > Agent Groups**. All groups are visible on this page by default.
+To find _Agent Groups_, go to **Contact Center > AGENT & SUPERVISORS > Agent Management**. All groups are visible on this page by default.
 <img src="./images/agent-groups-tab.png" alt="Delete an Agent" title="Delete an Agent" style="border: 1px solid gray; zoom:80%;">
 
 ### Agent Group Section Features
@@ -275,3 +275,88 @@ To delete an agent group, follow these steps:
 1. On the **Agent Groups** page, click the **Edit** icon next to the group you want to delete.
 2. In the **Edit Group** window, click the **Delete Agent Group** icon at the bottom left.\
 <img src="./images/delete-button.png" alt="Delete an Agent Group" title="Delete an Agent Group" style="border: 1px solid gray; zoom:60%;">
+
+## **Agent Status Management**
+
+This feature lets you display various statuses of an Agent – such as available, offline, busy, or away – along with a brief description for each status. You can add new statuses and edit or delete the existing ones.
+
+### The Agent Status Live Board
+
+You can find the _Agent Status_ section by going to **Contact Center > Agent Management > AGENT & SUPERVISORS**.
+
+Here you can see a list of existing statuses, along with the following information:
+
+* **Name**: The name of the status that is displayed within the Agent Console.
+* **Actions**: The available action is to Edit the status entry.
+* **Type**: The type of status, mentioning whether the agent is _Available, Away, Busy,_or _Offline_ while the particular status is set.
+* **Description**: A short description of the status. \
+<img src="./images/agent-status-page.png" alt="Agent Status Page" title="Agent Status Page" style="border: 1px solid gray; zoom:80%;">
+
+### Create an Agent Status
+
+To create a new agent status, follow these steps:
+
+1. In the **Agent Status** section, click **+ New Status**.
+2. In the **New Status** window, enter the following details:
+    1. **Status Name** – Enter the status name.
+    2. **Status Type** – Select the status type: _Away _or _Busy_.
+    3. **Description** – Type in a brief description of the status.
+3. Click **Add & Exit** to create the status and exit the window or click **Add & Stay** to create the status and continue to a new one. \
+<img src="./images/new-status-dialog-box.png" alt="New Status Dialog Box" title="New Status Dialog Box" style="border: 1px solid gray; zoom:60%;">
+
+4. The **_status created successfully_** success message is displayed on-screen and the new status is added to the **Agent Status** list. \
+<img src="./images/status-created.png" alt="New Status Created" title="New Status Created" style="border: 1px solid gray; zoom:60%;">
+
+### Edit an Agent Status
+
+To edit an existing **Agent status** entry, follow these steps:
+
+1. In the **Agent Status** section, click the **Edit** icon corresponding to the status entry that you want to modify. \
+<img src="./images/status-edit-button.png" alt="Status Edit Icon" title="Status Edit Icon" style="border: 1px solid gray; zoom:60%;">
+
+2. In the **Edit Status** window, edit the **Status Name**, **Status Type**, and/or **Description**, then click **Update**. \
+<img src="./images/edit-status-dialog-box.png" alt="Edit Status Dialog Box" title="Edit Status Dialog Box" style="border: 1px solid gray; zoom:60%;">
+
+3. The **Status updated successfully** message appears in the window and the modified values reflect in the **Agent Status** window. \
+<img src="./images/status-updated.png" alt="Status Updated" title="Status Updated" style="border: 1px solid gray; zoom:80%;">
+
+### Delete an Agent Status
+
+!!! Notes:
+
+   1. The default statuses (Available, Away, Busy, and Offline) cannot be deleted. Only custom statuses provide this option.
+   2. Deleted Agent Status entries cannot be restored.
+
+To delete an existing **Agent Status** entry, follow these steps:
+
+1. In the _Agent Status_ section, click the **Delete** icon corresponding to the status that you want to delete. \
+ \
+<img src="./images/delete-status-icon.png" alt="Delete Status Icon" title="Delete Status Icon" style="border: 1px solid gray; zoom:80%;">
+
+2. You will be asked to confirm your choice. Click **Yes** to confirm.
+3. A success status message is displayed and the deleted _Agent Status_ is removed from the list.
+
+### Configure Login Prep Status
+
+Login Prep status ensures agents do not receive interactions immediately after they log in on the Console. This status provides agents with a designated time to prepare before they start receiving interactions. Administrators can enable and configure this status for their agents.
+
+Steps to enable and configure Login Prep status:
+
+1. By default, the login prep status is disabled. Click the Edit button to enable login prep. \
+<img src="./images/login-prep-disabled.png" alt="Login Prep Disabled" title="Login Prep Disabled" style="border: 1px solid gray; zoom:80%;">
+
+2. On the **Edit Status** window, turn on the toggle to Enabled. \
+You can customize the following fields:
+    1. Status Name
+    2. Description
+    3. Message to Agent
+        1. Rule (default 30 seconds)
+        2. Message \
+      <img src="./images/edit-login-prep.png" alt="Edit Login Prep" title="Edit Login Prep" style="border: 1px solid gray; zoom:60%;">  
+
+4. Click **Update** to save the changes. \
+<img src="./images/update-login-prep-status.png" alt="Update Login Prep" title="Update Login Prep" style="border: 1px solid gray; zoom:60%;">  
+A confirmation message is displayed. \
+<img src="./images/update-login-prep-status.png" alt="Login Prep Enabled" title="Login Prep Enabled" style="border: 1px solid gray; zoom:60%;">
+ \
+Once enabled, the Login Prep becomes the default status for every new login for the agent. [Learn more](https://docs.kore.ai/smartassist/console/interacting-with-customers/#Behavior_When_Login_Prep_Status_is_Enabled).
