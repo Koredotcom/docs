@@ -168,8 +168,7 @@ To assign skills to a user:
 
 ### save a User
 
-To save the user, click the **Add** button at the bottom of the New User window. This is available regardless of the section that you are currently navigating.
-
+To save the user, click the **Add** button at the bottom of the New User window. This is available regardless of the section that you are currently navigating.\
 <img src="./images/add-new-user-button.png" alt="Save New User" title="Save New User" style="border: 1px solid gray; zoom:60%;">
 
 !!! **_Notes:_**
