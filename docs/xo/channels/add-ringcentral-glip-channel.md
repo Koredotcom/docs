@@ -25,11 +25,11 @@ To start the integration, you must register an application on RingCentral to gai
 The steps to add the channel are summarized below:
 
 
-1. [Create a RingCentral App](https://developer.kore.ai/docs/bots/channel-enablement/adding-ringcentral-glip-channel/#Step_1_Create_a_RingCentral_App)
-2. [App Set Up on the Kore.ai XO Platform using the Application Key and App secret](https://developer.kore.ai/docs/bots/channel-enablement/adding-ringcentral-glip-channel/#Step_2_Application_Set_up_on_the_Koreai_XO_Platform)
-3. [Authorize a valid extension (user) of your RingCentral account to generate the developer access token, access the Glip APIs, and enable the channel](https://developer.kore.ai/docs/bots/channel-enablement/adding-ringcentral-glip-channel/#Step_3_Authorize_Extension_user_of_your_RingCentral_Sandbox_Account)
-4. [Test the integration](https://developer.kore.ai/docs/bots/channel-enablement/adding-ringcentral-glip-channel/#Step_4_Test_the_Integration)
-5. [(Recommended) Apply for Production](https://developer.kore.ai/docs/bots/channel-enablement/adding-ringcentral-glip-channel/#Recommended_Step_5_Apply_for_Production)
+1. [Create a RingCentral App](docs/xo/channels/add-ringcentral-glip-channel/#step-1-create-a-ringcentral-app)
+2. [App Set Up on the Kore.ai XO Platform using the Application Key and App secret](/docs/xo/channels/add-ringcentral-glip-channel/#step-2-application-set-up-on-the-koreai-xo-platform)
+3. [Authorize a valid extension (user) of your RingCentral account to generate the developer access token, access the Glip APIs, and enable the channel](/docs/xo/channels/add-ringcentral-glip-channel/#step-3-authorize-extension-user-of-your-ringcentral-sandbox-account)
+4. [Test the integration](/docs/xo/channels/add-ringcentral-glip-channel/#step-4-test-the-integration)
+5. [(Recommended) Apply for Production](/docs/xo/channels/add-ringcentral-glip-channel/#recommended-step-5-apply-for-production)
 
 
 ## Step 1: Create a RingCentral App
