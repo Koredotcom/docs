@@ -24,24 +24,14 @@ The option to record the test suite captures the metadata in the background whic
   
 !!! note
 
-        Note: "On-Connect" is the message you receive as soon as you open the chat window, even before you enter any message. The option is displayed for VAs with an On-Connect message. If you skip it, the On-connect message does not get added as a test case. If you click Proceed, then the On-connect message is created as a separate test case.
+        "On-Connect" is the message you receive as soon as you open the chat window, even before you enter any message. The option is displayed for VAs with an On-Connect message. If you skip it, the On-connect message does not get added as a test case. If you click Proceed, then the On-connect message is created as a separate test case.  
+          
+4. The Chat window is displayed. The chat transcript is recorded and the recording status is displayed at the top. You can click **Stop** to stop the recording.  
+<img src="../images/ct-create-test-suite-record-chat.png" alt="Chat Recording Status" title="Chat Recording Status" style="border: 1px solid gray;"/>  
+  
+!!! note
 
-4. The Chat window is displayed. The chat transcript is recorded and the recording status is displayed at the top. You can click **Stop** to stop the recording.
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-
-
-    ```
-Note: If there is an error while recording due to any limitation set on the platform, it is displayed on the page.
-```
-
-
-
- 
+        If there is an error while recording due to any limitation set on the platform, it is displayed on the page.
 
 
 #### Generated User Response Suggestions
@@ -52,34 +42,19 @@ This feature provides a regression tool that creates a conversation test suite f
 
 It also helps you predict and simulate the end user’s behavior and check if the VA can execute all the defined flows by generating user responses and presenting any digressions from the specified intent.
 
-Click any suggestion to send it to your VA and test the response.
+Click any suggestion to send it to your VA and test the response.  
+<img src="../images/ct-create-test-suite-suggestions.png" alt="Suggestions" title="Suggestions" style="border: 1px solid gray;"/>
 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
-
-
-You can refresh the suggestions list or minimize the suggestions panel. You can also talk to your VA by typing in your responses.
-
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
-
+You can refresh the suggestions list or minimize the suggestions panel. You can also talk to your VA by typing in your responses.  
+<img src="../images/ct-create-test-suite-refresh-collapse.png" alt="Refresh suggestions" title="Refresh suggestions" style="border: 1px solid gray;"/>
 
 
 ### Validate Test Suite
 
 The conversation is recorded and all the metadata at each test case is captured. Once the recording is completed, the Platform provides you an option to validate the test suite as follows:
 
-
-
-1. Upon successful completion of recording, click **Validate Test Suite**. \
+1. Upon successful completion of recording, click **Validate Test Suite**.  
+<img src="../images/ct-create-test-suite-record3.png" alt="Click Validate Test Suite" title="Click Validate Test Suite" style="border: 1px solid gray;"/>
 
 
 <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
