@@ -91,7 +91,7 @@ You can automatically generate batch test cases if you have enabled [LLM and Gen
 
 <br>
 
-##### Steps to Generate Test Cases
+#### Steps to Generate Test Cases
 
 To generate test cases automatically, follow the steps below:
 
@@ -796,15 +796,14 @@ table, th, td {
 
 ### Running Test Suites
 
-The following steps guide you on how to run a batch test on your bot and get a detailed analytical report on the utterances based on the test results. To get started, go to Build > Testing > **Batch Testing**.
+The following steps guide you on how to run a batch test on your bot and get a detailed analytical report on the utterances based on the test results. To get started, go to Build > Testing > **Batch Testing**.  
+<img src="../images/batch-testing-14-batch-testing-menu.png" alt="Build > Testing > Batch Testing" title="Build > Testing > Batch Testing" style="border: 1px solid gray; zoom:50%;"/>
 
 !!! note
 
     Before testing, it is essential to add and train your bot with a considerable number of utterances using Machine Learning.
 
-<img src="../images/batch-testing-14-batch-testing-menu.png" alt="Build > Testing > Batch Testing" title="Build > Testing > Batch Testing" style="border: 1px solid gray; zoom:50%;"/> 
-
-<br>
+ 
 
 To run a Test Suite, follow the steps below:
 
@@ -844,8 +843,7 @@ Each test run creates a test report record and displays a summary of the test re
     1. Success – when all records are present in the file are processed
     2. Success with a warning – when one or more records present in the suite are discarded from detection due to system error
     3. Failed – when there was a system error and the test could not be resumed post-recovery.
-* Hovering over the warning/error icon will display a message suggesting the reason.
-
+* Hovering over the warning/error icon will display a message suggesting the reason.  
 <img src="../images/batch-testing-17-batch-Test-sample-result-warn.png" alt="Test report" title="Test report" style="border: 1px solid gray; zoom:50%;"/> 
 <br>
 
