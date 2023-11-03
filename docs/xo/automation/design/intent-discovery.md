@@ -232,18 +232,12 @@ In a scenario where the utterances cannot be mapped to the existing intents, you
 4. Select all the required utterances and click the **Add to Bot** button. A confirmation message is shown on adding a new Dialog Task.  
 <img src="../images/add-dialog-task-st2.png" alt="Add dialog task intent - Add required utterances to bot" title="Add dialog task intent - Add required utterances to bot" style="border: 1px solid gray; zoom:50%;"/>
 
-The **Actions** column text for the intent will reflect the addition of a dialog task. 
-
-For example:
-
-
+The **Actions** column text for the intent will reflect the addition of a dialog task. For example:
 
 * If **Added ‘n’ new Dialog Tasks** text/tag is existing, then the count increases by 1. For example: **Added 1 new Dialog Task** will be changed to **Added 2 new Dialog Tasks**.
 * If there are no intents created so far, then the text becomes **Added 1 new Dialog Task**. 
 
 Additionally, this  change will reflect under the **Results** column against the project name on the Intent Discovery homepage. For example:
-
-
 
 * If **Added ‘n’ new Dialog Tasks** tag/text is existing, then the count is increased by 1. For example: **Added 1 new Dialog Tasks** will be changed to **Added 2 new Dialog Tasks.**
 * If there are no Dialog tasks created so far, then the text becomes  **Added 1 new Dialog Task**.
@@ -251,53 +245,25 @@ Additionally, this  change will reflect under the **Results** column against the
 
 ### Train a Dialog task
 
+1. Click the **Add/Train** dropdown across the intent, then select the **Dialog Task** option under **Train**. The **Train Dialog Task** dialog box for the intent is displayed.  
+<img src="../images/train-dialog-task.png" alt="Choose to Train Dialog Task" title="Choose to Train Dialog Task" style="border: 1px solid gray; zoom:50%;"/>  
+    
+   <img src="../images/train-dialog-task-st1.png" alt="Train dialog task - Dialog Tasks list" title="Train dialog task - Dialog Tasks list" style="border: 1px solid gray; zoom:50%;"/>  
+  
+
+2. Select the dialog task to be trained from the **Intent** drop-down and select all the required utterances from the table below. Click **Add Utterances**.  
+<img src="../images/train-dialog-task-st2.png" alt="Train dialog task - Select dialog task" title="Train dialog task - Select dialog task" style="border: 1px solid gray; zoom:50%;"/>  
+
+3. Once the existing Dialog task is trained with the selected Utterances, a confirmation message is shown.  
+<img src="../images/train-dialog-task-st2.png" alt="Train dialog task - Confirmation" title="Train dialog task - Confirmation" style="border: 1px solid gray; zoom:50%;"/>  
 
 
-1. Click the **Add/Train** dropdown across the intent, then select the **Dialog Task** option under **Train**. The **Train Dialog Task** dialog box for the intent is displayed.
-2. Select the dialog task to be trained from the **Intent** drop-down and select all the required utterances from the table below. Click **Add Utterances**.
-
-
-
-<p id="gdcalert24" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image22.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert25">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image22.png "image_tooltip")
-
-
-
-
-<p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image23.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image23.png "image_tooltip")
-
-
-
-
-3. Once the existing Dialog task is trained with the selected Utterances, a confirmation message is shown.
-
-
-
-<p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image24.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image24.png "image_tooltip")
- 
-
-The **Actions** column text for the intent will reflect the training of a new dialog task. 
-
-For example:
-
-
+The **Actions** column text for the intent will reflect the training of a new dialog task. For example:
 
 * If **Trained ‘n’ new Dialog Tasks** text/tag is existing, then increase the count by 1. For example: **Trained 1 new Dialog Task** will be changed to **Trained 2 new Dialog Tasks.**
 * If there are no intents created so far, then append the text with **Trained 1 new Dialog Task**.
 
-Additionally, this change will reflect under the **Results** column against the project name on the Intent Discovery homepage.
-
-For example:
-
-
+Additionally, this change will reflect under the **Results** column against the project name on the Intent Discovery homepage. For example:
 
 * If **Trained ‘n’ new Dialog Tasks** tag/text is existing, then increase the count by 1. For example: **Trained 1 new Dialog Tasks** will be changed to **Trained 2 new Dialog Tasks**.
 * If there are no Dialog Tasks trained so far, then append the text with **Trained 1 new Dialog Task**.
@@ -305,58 +271,27 @@ For example:
 
 ### Add a new FAQ intent
 
+1. Click the **Add/Train** dropdown across the intent, then select the **FAQ** option under **Add**. The **Add FAQ** dialog box for the intent is displayed.  
+<img src="../images/add-faq.png" alt="Choose to add FAQ" title="Choose to add FAQ" style="border: 1px solid gray; zoom:50%;"/>  
 
-
-1. Click the **Add/Train **dropdown across the intent, then select the **FAQ** option under **Add**. The **Add FAQ **dialog box for the intent is displayed. 
 2. Provide a name and description for the new intent. 
 3. All the Utterances qualified for the Extracted Intent are displayed in a table. The bookmark icon appears if the user has bookmarked this utterance in the Session summary dialog box. 
-4. Select all the required utterances and click **Next**.
-
-
-
-<p id="gdcalert27" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image25.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image25.png "image_tooltip")
-
-
-
+4. Select all the required utterances and click **Next**.  
+<img src="../images/add-faq-st1.png" alt="Add FAQ Intent - Select required utterances" title="Add FAQ Intent - Select required utterances" style="border: 1px solid gray; zoom:50%;"/>  
 
 5. On the next dialog box, provide the FAQ question text to be created as an FAQ, along with the required Bot Response to be shown. All the selected utterances from the previous screen are added as alternative questions for this FAQ. 
-6. Provide or select other features of the FAQ, like Bot response channel, Display name, reference ID, etc. as per your need and preference, and click the **Add to Bot** button. 
+6. Provide or select other features of the FAQ, like Bot response channel, Display name, reference ID, etc. as per your need and preference, and click the **Add to Bot** button.  
+<img src="../images/add-faq-st2.png" alt="Add FAQ Intent - Add to bot" title="Add FAQ Intent - Add to bot" style="border: 1px solid gray; zoom:50%;"/>  
 
+7. A confirmation message is shown on adding a new FAQ.  
+<img src="../images/add-faq-st3.png" alt="Add FAQ Intent - Confirmation" title="Add FAQ Intent - Confirmation" style="border: 1px solid gray; zoom:50%;"/>  
 
-
-<p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image26.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image26.png "image_tooltip")
-
-
-A confirmation message is shown on adding a new FAQ. 
-
-
-
-<p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image27.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image27.png "image_tooltip")
-
-
-The **Actions** column text for the intent will reflect the addition of an FAQ. 
-
-For example:
-
-
+The **Actions** column text for the intent will reflect the addition of an FAQ. For example:
 
 * If **Added ‘n’ new FAQs** text/tag is existing, then the count increases by 1. For example:** Added 1 new FAQ** will be changed to **Added 2 new FAQs**.
 * If there are no intents created so far, then the text becomes **Added 1 new FAQ**. 
 
-Additionally, the adding will reflect under the **Results** column against the project name on the Intent Discovery homepage.
-
-For example:
-
-
+Additionally, the adding will reflect under the **Results** column against the project name on the Intent Discovery homepage. For example:
 
 * If **Added ‘n’ new FAQs** tag/text is existing, then the count increases by 1. For example: **Added 1 new FAQs** will be changed to **Added 2 new FAQs**.
 * If there are no Dialog tasks created so far, then the text becomes **Added 1 new FAQ**. 
@@ -364,45 +299,22 @@ For example:
 
 ### Train an FAQ
 
+1. Click the **Add/Train** dropdown across the intent, then select the **FAQ** option under **Train**. The **Train FAQ** dialog box for the intent is displayed.  
+<img src="../images/train-faq.png" alt="Choose to train FAQ" title="Choose to train FAQ" style="border: 1px solid gray; zoom:50%;"/>  
+
+2. Select the FAQ to be trained from the **FAQ** drop-down. A label box showing the current Bot Response appears. Select all the required utterances from the table below and click **Add Utterances**.  
+<img src="../images/train-faq-st1.png" alt="Train FAQ - Add required utterances" title="Train FAQ - Add required utterances" style="border: 1px solid gray; zoom:50%;"/>  
+
+3. Once the existing FAQ is trained with the selected Utterances, a confirmation message is shown.  
+<img src="../images/train-faq-st2.png" alt="Train FAQ - Confirmation" title="Train FAQ - Confirmation" style="border: 1px solid gray; zoom:50%;"/> 
 
 
-1. Click the **Add/Train** dropdown across the intent, then select the **FAQ** option under **Train**. The **Train FAQ** dialog box for the intent is displayed.
-2. Select the FAQ to be trained from the **FAQ** drop-down. A label box showing the current Bot Response appears. Select all the required utterances from the table below and click **Add Utterances**.
-
-
-
-<p id="gdcalert30" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image28.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert31">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image28.png "image_tooltip")
-
-
-
-
-3. Once the existing FAQ is trained with the selected Utterances, a confirmation message is shown.
-
-
-
-<p id="gdcalert31" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image29.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert32">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image29.png "image_tooltip")
-
-
-The **Actions** column text for the intent will reflect the training of an FAQ. 
-
-For example:
-
-
+The **Actions** column text for the intent will reflect the training of an FAQ. For example:
 
 * If **Trained ‘n’ new FAQs** text/tag is existing, then the count increases by 1. For example: **Trained 1 new FAQ** will be changed to** Trained 2 new FAQs**.
 * If there are no intents created so far, then the text becomes **Trained 1 new FAQ**.
 
-Additionally, the training will reflect under the **Results** column against the project name on the Intent Discovery homepage.
-
-For example:
-
-
+Additionally, the training will reflect under the **Results** column against the project name on the Intent Discovery homepage. For example:
 
 * If **Trained ‘n’ new FAQs** tag/text is existing, then the count increases by 1. For example: **Trained 1 new FAQs** will be changed to **Trained 2 new FAQs**.
 * If there are no Dialog tasks created so far, then the text becomes **Trained 1 new FAQ**. 
@@ -410,11 +322,8 @@ For example:
 
 ### Change the status of utterances
 
-You can change the status of utterances between **Yet to Review **and **Reviewed **on the 
-
-<p id="gdcalert32" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Extracted Intent Details"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert33">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Extracted Intent Details](#heading=h.or02a2woat2e) dialog box. You can change the status of one or multiple utterances in a go as per requirement.
+You can change the status of utterances between **Yet to Review** and **Reviewed** on the 
+[Extracted Intent Details](https://docsinternal-kore.github.io/docs/xo/automation/design/intent-discovery/#extracted-intent-details) dialog box. You can change the status of one or multiple utterances in a go as per requirement.
 
 
 ## Reusing an existing project
@@ -425,49 +334,25 @@ The number of files and the file size limitations remain the same.
 
 Uploading new transcript files will cause deletion of below data from the project:
 
+* Extracted intents
+* Summaries generated
+* Utterances segregated for each session
+* Status flag for each session
+* Bookmarks of the utterances
 
-
-* 
-Extracted intents
-
-
-* 
-Summaries generated
-
-
-* 
-Utterances segregated for each session
-
-
-* 
-Status flag for each session
-
-
-* 
-Bookmarks of the utterances
 Please note that the previously loaded transcript files will not be deleted while uploading new ones. Re-extraction of intents will restore the above-deleted project data.
 
 
 ## Deleting a project
 
-You can also delete the project if it is no longer required. Since a maximum of 10 projects can be created within a bot, you may need to delete a past, unwanted project to make a place for a new one. \
+You can also delete the project if it is no longer required. Since a maximum of 10 projects can be created within a bot, you may need to delete a past, unwanted project to make a place for a new one.
 
-
-<p id="gdcalert33" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image30.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert34">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image30.png "image_tooltip")
-
-
-<p id="gdcalert34" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image31.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert35">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image31.png "image_tooltip")
+<img src="../images/delete-project.png" alt="Delete a project" title="Delete a project" style="border: 1px solid gray; zoom:50%;"/>  
+  
+  <img src="../images/project-delete-confirmation.png" alt="Delete Project - Confirmation" title="Delete Project - Confirmation" style="border: 1px solid gray; zoom:50%;"/> 
 
 
 When you delete a project, all the corresponding data in the project is automatically deleted, which includes: 
-
-
 
 * Transcripts 
 * Extracted intents
@@ -476,4 +361,6 @@ When you delete a project, all the corresponding data in the project is automati
 * Status flag for each session
 * Bookmarks of the utterances
 
-**Note**: Deletion of a project will have no impact on the Dialog Tasks/FAQ’s that have been trained using the intents extracted from the deleted projects.** **
+!!! note
+
+    Deletion of a project will have no impact on the Dialog Tasks/FAQ’s that have been trained using the intents extracted from the deleted projects.** **
