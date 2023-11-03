@@ -193,7 +193,7 @@ To edit a user, follow these steps:
 
 To delete a user, follow these steps:
 
-1. On the **Agents**page, click the **...** icon corresponding to the user you want to delete.
+1. On the **Agents** page, click the **...** icon corresponding to the user you want to delete.
 2. Click **Delete**.\
 <img src="./images/delete-user.png" alt="Delete User Button" title="Delete User Button" style="border: 1px solid gray; zoom:60%;">
 \
