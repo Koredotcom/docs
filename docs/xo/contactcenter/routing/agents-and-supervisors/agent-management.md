@@ -1,9 +1,9 @@
 # Agent Management
 
 ## Agents
-In SmartAssist, the term **Agent Management** refers to the management of agents (customer support representatives), supervisors, and administrators with an account within SmartAssist. To serve customers, you must add users to SmartAssist and provide them with the necessary access. You can create user profiles, assign them to voice, chat, or both channels, and specific skills or queues.
+In the Contact Center, the term **Agent Management** refers to the management of agents (customer support representatives), supervisors, and administrators with an account within the contact center. To serve customers, you must add users to contact center and provide them with the necessary access. You can create user profiles, assign them to voice, chat, or both channels, and specific skills or queues.
 
-You can find the _Agent Management_ section by going to **Contact Center > AGENT & SUPERVISORS > Agent Management**.
+You can find the _Agent Management_ section by going to **Contact Center > AGENT & SUPERVISORS > Agent Management > Agents**.
 
 <img src="./images/agent-management-page-agents.png" alt="Agents Tab" title="Agents Tab" style="border: 1px solid gray; zoom:80%;">
 
@@ -27,7 +27,7 @@ The Agents section includes the features in the table below.
   <tr>
    <td>User
    </td>
-   <td>This is the name of the user you are viewing, as entered within their profile. Under every user’s name, SmartAssist mentions the groups that the user is part of.
+   <td>This is the name of the user you are viewing, as entered within their profile. Under every user’s name, contact center mentions the groups that the user is part of.
    </td>
   </tr>
   <tr>
@@ -89,7 +89,7 @@ The Agents section includes the features in the table below.
 
 ### Add a User
 
-You can add a user to SmartAssist by following the steps below:
+You can add a user to Contact Center by following the steps below:
 
 1. In the Agent section, click **+Add User**.
 <img src="./images/add-user-button.png" alt="Add User Button" title="Add User Button" style="border: 1px solid gray; zoom:80%;">
@@ -106,7 +106,7 @@ In the profile section, configure the following:
 
 * _(Optional)_ **Profile Picture**: Upload the user’s profile picture here.
 * **First Name **and** Last Name** are mandatory fields for the user’s first and last names, respectively. Only alphanumeric characters are allowed.
-* _(Optional) **Nick Name:**_ This is a mandatory field for the user’s nickname in SmartAssist.
+* _(Optional) **Nick Name:**_ This is a mandatory field for the user’s nickname in contact center.
 * **Role**: Select whether the new user should be an Agent, Supervisor, or Administrator. See [Role Management](https://docs.kore.ai/smartassist/agent/rolemanagement-overview/) for details.
 * **Phone Number**: This mandatory field requires a 10-digit phone number.
 * **Email ID**: This is a mandatory field for the user’s email address.
@@ -207,4 +207,70 @@ Alternatively, edit the user, and on the **Edit User** window, click the **Delet
    1. _You cannot delete your own user._
    2. _You cannot delete the SmartAssist account owner._
    3. _Reports, dashboards, and APIs will display deleted agents as long as interactions and metrics contain data associated with the deleted agents._
-   4. _After deleting a user record, the respective user can no longer sign into SmartAssist. If you want to temporarily restrict users from handling customer conversations, you can turn off their access to chat and voice channels, or add them to the [Unassigned group](https://docs.kore.ai/smartassist/agent/agent-group/agent-groups/#Preconfigured_Groups)._
+   4. _After deleting a user record, the respective user can no longer sign into the contact center. If you want to temporarily restrict users from handling customer conversations, you can turn off their access to chat and voice channels, or add them to the [Unassigned group](https://docs.kore.ai/smartassist/agent/agent-group/agent-groups/#Preconfigured_Groups)._
+
+## **Agent Groups**
+
+An **Agent Group** is a collection of agents based on skills, scopes, roles, functionalities, etc. Agents are assigned to groups to streamline customer service within Contact Center.
+
+To find _Agent Groups_, go to **Contact Center > AGENT & SUPERVISORS > Agent Management > Agent Groups**. All groups are visible on this page by default.
+<img src="./images/agent-groups-tab.png" alt="Delete an Agent" title="Delete an Agent" style="border: 1px solid gray; zoom:80%;">
+
+### Agent Group Section Features
+
+The Agent Group section includes the following features: 
+
+* You can use the **Search** field to find a group by name. 
+* Each group item shows the _Group Name, Description,_ and the _Number of Agents_ it includes.
+* Clicking any group name reveals the agents who are part of it. Each agent is listed with their name, Edit Action, Role, assigned Skills, and Queues. Learn more about [User Management](https://docs.kore.ai/smartassist/getting-started/agent-management/).
+
+### Pre-configured Groups
+
+There are two pre-configured groups available:
+
+* **Unassigned** is automatically selected in the _Group_ drop down while creating a new user. The _Unassigned_ group is not considered for routing interactions..
+* **Default Group**.
+
+## Create an Agent Group
+
+To create a new agent group, follow these steps:
+
+1. On the _Agent Groups _page, click**Add Group**.
+<img src="./images/add-group-button.png" alt="Add Group Button" title="Add Group Button" style="border: 1px solid gray; zoom:80%;">
+
+2. In the **New Group** window, provide the input for the following fields:
+    1. **Group Name** – Enter the name of the agent group.
+    2. **Description** – Enter a brief description of the group.
+
+### Add Agents to a Group
+
+To add agents to a group, you either need to add a new agent to the Contact Center or edit an existing one to assign the group to them. Follow these steps to add an agent to a group:
+
+1. Go to **Agents** and create or edit an agent.
+2. On the **profile**, select the desired group.
+3. **Save** the agent record.
+
+To learn more about adding or editing agents, please see [User Management](https://docs.kore.ai/smartassist/getting-started/agent-management/).
+
+<img src="./images/group-dropdown.png" alt="Select Group" title="Select Group" style="border: 1px solid gray; zoom:60%;">
+
+## Edit an Agent Group
+
+To modify an agent group, follow these steps:
+
+1. On the **Agent Groups** page, hover over the group that you want to edit, then click the **Edit** icon next to the group name;
+<img src="./images/edit-group-button.png" alt="Edit Group Name" title="Edit Group Name" style="border: 1px solid gray; zoom:60%;">
+
+2. In the **Edit Group** window, make the required changes;
+3. Click **Save**.
+
+!!! **Note**
+   _You cannot change the name of the pre-configured groups: Unassigned and Default Group._
+
+## Delete an Agent Group
+
+To delete an agent group, follow these steps:
+
+1. On the **Agent Groups** page, click the **Edit** icon next to the group you want to delete.
+2. In the **Edit Group** window, click the **Delete Agent Group** icon at the bottom left.\
+<img src="./images/delete-button.png" alt="Delete an Agent Group" title="Delete an Agent Group" style="border: 1px solid gray; zoom:60%;">
