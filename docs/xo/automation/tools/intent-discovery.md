@@ -182,7 +182,7 @@ After the intent extraction is completed, you can see the list of extracted inte
 You can view the details of the intent action by clicking the **View** icon under the Actions column next to the text.  
 <img src="../images/click-view-on-intent.png" alt="Click View on Images" title="Click View on Images" style="border: 1px solid gray; zoom:50%;"/>  
   
- <img src="../images/view-intent-activity" alt="Intent Activity" title="Intent Activity" style="border: 1px solid gray; zoom:50%;"/>
+ <img src="../images/view-intent-activity.png" alt="Intent Activity" title="Intent Activity" style="border: 1px solid gray; zoom:50%;"/>
 
 
 
@@ -244,10 +244,9 @@ Additionally, this  change will reflect under the **Results** column against the
 
 1. Click the **Add/Train** dropdown across the intent, then select the **Dialog Task** option under **Train**. The **Train Dialog Task** dialog box for the intent is displayed.  
 <img src="../images/train-dialog-task.png" alt="Choose to Train Dialog Task" title="Choose to Train Dialog Task" style="border: 1px solid gray; zoom:50%;"/>  
-    
+
    <img src="../images/train-dialog-task-st1.png" alt="Train dialog task - Dialog Tasks list" title="Train dialog task - Dialog Tasks list" style="border: 1px solid gray; zoom:50%;"/>  
   
-
 2. Select the dialog task to be trained from the **Intent** drop-down and select all the required utterances from the table below. Click **Add Utterances**.  
 <img src="../images/train-dialog-task-st2.png" alt="Train dialog task - Select dialog task" title="Train dialog task - Select dialog task" style="border: 1px solid gray; zoom:50%;"/>  
 
@@ -360,4 +359,4 @@ When you delete a project, all the corresponding data in the project is automati
 
 !!! note
 
-    Deletion of a project will have no impact on the Dialog Tasks/FAQ’s that have been trained using the intents extracted from the deleted projects.** **
+    Deletion of a project will have no impact on the Dialog Tasks/FAQ’s that have been trained using the intents extracted from the deleted projects.
