@@ -218,9 +218,9 @@ To find _Agent Groups_, go to **Contact Center > AGENT & SUPERVISORS > Agent Man
 
 ### Agent Group Section Features
 
-The Agent Group section includes the following features: 
+The Agent Group section includes the following features:
 
-* You can use the **Search** field to find a group by name. 
+* You can use the **Search** field to find a group by name.
 * Each group item shows the _Group Name, Description,_ and the _Number of Agents_ it includes.
 * Clicking any group name reveals the agents who are part of it. Each agent is listed with their name, Edit Action, Role, assigned Skills, and Queues. Learn more about [User Management](https://docs.kore.ai/smartassist/getting-started/agent-management/).
 
