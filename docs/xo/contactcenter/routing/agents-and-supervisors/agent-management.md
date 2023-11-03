@@ -112,7 +112,7 @@ In the profile section, configure the following:
 * **Email ID**: This is a mandatory field for the user’s email address.
 * **Group:** This is a mandatory field for a new user’s organizational group. The **Unassigned** group is pre-selected. \
 !!! **_Note_**
-_Users in the Unassigned group are not considered when routing interactions._
+   _Users in the Unassigned group are not considered when routing interactions._
 * **Custom ID**: This optional field lets you enter a custom ID for each user. The field supports up to 15 alphanumeric characters and cannot include space or special characters. You can use this field via API while [adding ](https://docs.kore.ai/smartassist/api/create-an-agent/)or [editing ](https://docs.kore.ai/smartassist/api/update-a-specific-agent/)a user.
 * **Desktop Layout**: Choose the layout with which the user will work within the Agent Console. See [Manage Layout](https://docs.kore.ai/smartassist/console/manage-layout/) for details.
 <img src="./images/new-user-profile.png" alt="New User Profile" title="New User Profile" style="border: 1px solid gray; zoom:60%;">
