@@ -156,15 +156,8 @@ The dialog box has the provision to download a sample file using the **Sample Fi
 
 Upon successful upload of the transcript(s), the platform extracts the conversations from the uploaded files. You can view all the conversations, and the chat messages exchanged between the end user and the VA/agent.
 
-The platform displays the conversation session summary, which includes the count of the VA messages and user messages. You need to select a **Date Filter** under **Contents** to display the details.
-
- \
-
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image12.png "image_tooltip")
+The platform displays the conversation session summary, which includes the count of the VA messages and user messages. You need to select a **Date Filter** under **Contents** to display the details.  
+<img src="../images/conversation-in-transcript.png" alt="Conversations in Transcript" title="Conversations in Transcript" style="border: 1px solid gray; zoom:50%;"/>
 
 
 If a conversation is not useful or is not contributing to the intent, you can delete the specific conversation. Deleting a conversation also impacts the conversation count and average message count in the columns.
@@ -174,118 +167,53 @@ If a conversation is not useful or is not contributing to the intent, you can de
 
 You can delete the uploaded transcript file if the file is not required anymore, in case the upload was incorrect, or if the conversation has been extracted but the file is not useful.
 
-On hovering any row, the** delete** icon is displayed, which is used to delete that specific Transcript.
+On hovering any row, the **delete** icon is displayed, which is used to delete that specific Transcript.  
+<img src="../images/delete-transcript.png" alt="Delete Transcript" title="Delete Transcript" style="border: 1px solid gray; zoom:50%;"/>
 
- \
-
-
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image13.png "image_tooltip")
-
-
+<br>
 
 ## Extract Intents
 
 The next step is intent extraction. 
 
-On clicking the **Extract Intents** button on the Transcripts dialog box, you can see a message about intents being extracted. This process may take a few minutes depending on the number and size of the transcript files.
+Click the **Extract Intents** button on the Transcripts dialog box. You can see a message about intents being extracted. This process may take a few minutes depending on the number and size of the transcript files.  
+<img src="../images/intent-extraction-in-progress.png" alt="Intent extraction in progress" title="Intent extraction in progress" style="border: 1px solid gray; zoom:50%;"/>
 
-In case the status of one or more transcript files is **Conv. Extraction In-Progress**, you can still initiate intent extraction. In that case, conversation extraction from those transcript files runs in the background, and once that is complete, intent extraction will begin.
+After the intent extraction is completed, you can see the list of extracted intents along with session count, qualified utterances, and actions.  
+<img src="../images/intents-extracted.png" alt="Intents Extracted" title="Intents extracted" style="border: 1px solid gray; zoom:50%;"/>
 
-
-    
-
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image14.png "image_tooltip")
-
-
-After the intent extraction is completed, you can see the list of extracted intents along with session count, qualified utterances, and actions.
-
-
-    
-
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image15.png "image_tooltip")
-
-
-You can view the details of the intent action by clicking the **View** icon under the Actions column next to the text.
-
-
-    
-
-<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image16.png "image_tooltip")
-
-
-
-    
-
-<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image17.png "image_tooltip")
+You can view the details of the intent action by clicking the **View** icon under the Actions column next to the text.  
+<img src="../images/click-view-on-intent.png" alt="Click View on Images" title="Click View on Images" style="border: 1px solid gray; zoom:50%;"/>  
+  
+ <img src="../images/view-intent-activity" alt="Intent Activity" title="Intent Activity" style="border: 1px solid gray; zoom:50%;"/>
 
 
 
 ### Extracted Intent Details
 
-Clicking anywhere on the extracted Intents row displays a pop-up dialog box to view the details of the extracted Intent. The title of the dialog box is the extracted Intent name.
-
-
-
-<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image18.png "image_tooltip")
-
+Clicking anywhere on the extracted Intents row displays a pop-up dialog box to view the details of the extracted Intent. The title of the dialog box is the extracted Intent name.  
+<img src="../images/extracted-intent-details-slider.png" alt="Details of Extracted Intent" title="Details of Extracted Intent" style="border: 1px solid gray; zoom:50%;"/>
 
 The dialog box shows a table with individual rows for each session. The table has below columns: 
-
-
-
 * Session ID: The session ID and the Date and Time of the Session.
 * Utterances: The list of utterances qualifying the extracted Intent. 
     * The platform shows only 3 utterances per session (row). The remaining count of the utterances is shown as a chip. 
     * On clicking the chip, you see all the utterances for the corresponding session.
     * You can **bookmark **the utterances.
 * Status: A dropdown that shows whether the session item has been reviewed. By default, it  shows **Yet to Review**. You can change it to **Reviewed**.
-* **View Transcripts** action button: This button is present in the Status column of each row, next to the drop-down. It helps you view the detailed conversion of the Session. On clicking the icon, a new pop-up, **
+* **View Transcripts** action button: This button is present in the Status column of each row, next to the drop-down. It helps you view the detailed conversion of the Session. On clicking the icon, the [**Session Details** dialog box](https://docsinternal-kore.github.io/docs/xo/automation/design/intent-discovery/#session-details) is displayed.
 
-<p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Session Details dialog box"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-[Session Details dialog box](#heading=h.6ad55cqfun1d)**, appears.
-
-A **Status** dropdown is also displayed at the top of the dialog box to mark the status of sessions as **Reviewed** or **Yet to Review**. You can bulk-select sessions and change the status using this option.
 
 
 ### Session Details
 
-This dialog box, titled **Transcript,** shows the summary of the session. The detailed chat is displayed below the summary.
-
-
-
-<p id="gdcalert21" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image19.png "image_tooltip")
-
+The **Transcript** dialog box shows the summary of the session. The detailed chat is displayed below the summary.  
+<img src="../images/session-summary.png" alt="Transcript - Session Summary" title="Transcript - Session Summary" style="border: 1px solid gray; zoom:50%;"/>
 
 
 ## Train the Utterances
 
-In a scenario where the utterances cannot be mapped to the existing intents, you can create a new intent.
-
-Once the intents are listed, you can perform the following actions for the intents:
-
-
+In a scenario where the utterances cannot be mapped to the existing intents, you can create a new intent. Once the intents are listed, you can perform the following actions for the intents:
 
 * Add a new Dialog Task or FAQ
 * Train them for an existing Dialog Task or FAQ
@@ -294,29 +222,15 @@ Once the intents are listed, you can perform the following actions for the inten
 
 ### Add a new Dialog Task intent
 
+1. Click the **Add/Train** dropdown across the intent, then select the **Dialog Task** option under **Add**. The **Add Dialog Task** dialog box for the intent is displayed.  
+<img src="../images/add-dialog-task.png" alt="Choose to Add Dialog Task" title="Choose to Add Dialog Task" style="border: 1px solid gray; zoom:50%;"/>  
 
+2. Provide a name and description for the new intent.
+3. All the utterances qualified for the extracted intent are displayed in a table. The bookmark icon appears if you have bookmarked this utterance in the Extracted Intent Details dialog box.  
+<img src="../images/add-dialog-task-st1.png" alt="Add dialog task intent - Qualified utterances" title="Add dialog task intent - Qualified utterances" style="border: 1px solid gray; zoom:50%;"/>  
 
-1. Click the **Add/Train** dropdown across the intent, then select the **Dialog Task** option under **Add**. The **Add Dialog Task** dialog box for the intent is displayed. 
-2. Provide a name and description for the new intent. 
-3. All the utterances qualified for the extracted intent are displayed in a table. The bookmark icon appears if you have bookmarked this utterance in the Extracted Intent Details dialog box. 
-4. Select all the required utterances and click the **Add to Bot** button. A confirmation message is shown on adding a new Dialog Task.
-
-    
-
-<p id="gdcalert22" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image20.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert23">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image20.png "image_tooltip")
-
-
-
-
-
-<p id="gdcalert23" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image21.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert24">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image21.png "image_tooltip")
-
+4. Select all the required utterances and click the **Add to Bot** button. A confirmation message is shown on adding a new Dialog Task.  
+<img src="../images/add-dialog-task-st2.png" alt="Add dialog task intent - Add required utterances to bot" title="Add dialog task intent - Add required utterances to bot" style="border: 1px solid gray; zoom:50%;"/>
 
 The **Actions** column text for the intent will reflect the addition of a dialog task. 
 
@@ -327,9 +241,7 @@ For example:
 * If **Added ‘n’ new Dialog Tasks** text/tag is existing, then the count increases by 1. For example: **Added 1 new Dialog Task** will be changed to **Added 2 new Dialog Tasks**.
 * If there are no intents created so far, then the text becomes **Added 1 new Dialog Task**. 
 
-Additionally, this  change will reflect under the **Results** column against the project name on the Intent Discovery homepage.
-
-For example:
+Additionally, this  change will reflect under the **Results** column against the project name on the Intent Discovery homepage. For example:
 
 
 
