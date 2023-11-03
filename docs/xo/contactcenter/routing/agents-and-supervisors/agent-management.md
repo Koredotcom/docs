@@ -1,6 +1,7 @@
 # Agent Management
 
 ## Agents
+
 In the Contact Center, the term **Agent Management** refers to the management of agents (customer support representatives), supervisors, and administrators with an account within the contact center. To serve customers, you must add users to contact center and provide them with the necessary access. You can create user profiles, assign them to voice, chat, or both channels, and specific skills or queues.
 
 You can find the _Agent Management_ section by going to **Contact Center > AGENT & SUPERVISORS > Agent Management > Agents**.
