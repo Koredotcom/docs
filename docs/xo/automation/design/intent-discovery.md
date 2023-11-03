@@ -9,10 +9,10 @@ You can upload your historical transcripts in CSV format. After the transcripts 
 
 The Intent Discovery journey consists of the following steps:
 
-1. [Create a Project](https://developer.kore.ai/docs/bots/intent-discovery/#Create_a_Project): You may have many business use cases to automate. Projects help manage intent discovery for each business use case separately – a project for a specific use case.
-2. [Upload Transcripts](https://developer.kore.ai/docs/bots/intent-discovery/#Upload_Transcripts): Upload your use case-specific historical transcripts in CSV format. Conversations are extracted from the uploaded transcripts.
-3. [Extract Intents:](https://developer.kore.ai/docs/bots/intent-discovery/#Extract_Conversations) Intents and training data are extracted from the conversations.
-4. [Train the Utterances](https://developer.kore.ai/docs/bots/intent-discovery/#Train_the_Utterances) to create new intents or add them as training data: You can add new intents as dialogs or FAQs or train them for existing dialogs or FAQs.
+1. [Create a Project](https://docsinternal-kore.github.io/docs/xo/automation/design/intent-discovery/#create-a-project): You may have many business use cases to automate. Projects help manage intent discovery for each business use case separately – a project for a specific use case.
+2. [Upload Transcripts](https://docsinternal-kore.github.io/docs/xo/automation/design/intent-discovery/#upload-transcripts): Upload your use case-specific historical transcripts in CSV format. Conversations are extracted from the uploaded transcripts.
+3. [Extract Intents:](https://docsinternal-kore.github.io/docs/xo/automation/design/intent-discovery/#extract-intents) Intents and training data are extracted from the conversations.
+4. [Train the Utterances](https://docsinternal-kore.github.io/docs/xo/automation/design/intent-discovery/#train-the-utterances) to create new intents or add them as training data: You can add new intents as dialogs or FAQs or train them for existing dialogs or FAQs.
 
 ## Create a Project
 
@@ -26,7 +26,6 @@ The Intent Discovery journey consists of the following steps:
 4. The new project is created. You see the Intent Discovery page with the header **‘Projects / {{New Project’s Name}}’**.  
 <img src="../images/upload-transcript.png" alt="Project Created" title="Project Created" style="border: 1px solid gray; zoom:50%;"/>  
   
-<br>
 
 The Intent Discovery landing page lists all the projects with conversational insights for each project, such as the status of the project, number of sessions, intents extracted, and results in terms of added dialogs, added FAQs, trained dialogs, and trained FAQs. Note that the result will be NA for the projects for which intent extraction is incomplete.
 
@@ -49,7 +48,7 @@ The status of a project can be any of the following, displayed in the Status col
 On the Intent Discovery page for the new project, you can see a button to initiate the upload of the transcript file(s) and a link to download a sample transcript file.
 
 <img src="../images/upload-transcript.png" alt="Upload Transcripts" title="Upload Transcripts" style="border: 1px solid gray; zoom:50%;"/>  
-<br>
+
 
 You can download the sample CSV file by clicking the link. Ensure to upload transcripts in the format specified in the sample file. Please note that **all the columns in the file must be filled**.
 
@@ -58,7 +57,7 @@ You can download the sample CSV file by clicking the link. Ensure to upload tran
 
 <img src="../images/sample-csv-file.png" alt="Sample CSV File" title="Sample CSV File" style="border: 1px solid gray; zoom:50%;"/>  
 
-<br>
+
 
 <style>
 table, th, td {
@@ -116,14 +115,13 @@ table, th, td {
   </tr>
 </table>
 
-<br>
+
 
 ### Limitations
 
 * Number of transcripts files allowed: Up to 5 CSV files per project.
 * Maximum size of CSV transcript file: 1MB each
 
-<br>
 
 ### Steps to upload the transcripts:
 
@@ -170,7 +168,6 @@ You can delete the uploaded transcript file if the file is not required anymore,
 On hovering any row, the **delete** icon is displayed, which is used to delete that specific Transcript.  
 <img src="../images/delete-transcript.png" alt="Delete Transcript" title="Delete Transcript" style="border: 1px solid gray; zoom:50%;"/>
 
-<br>
 
 ## Extract Intents
 
