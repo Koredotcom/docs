@@ -184,7 +184,7 @@ To save the user, click the **Add** button at the bottom of the New User window.
 To edit a user, follow these steps:
 
 1. On the **Agents** page, click the **Edit** icon corresponding to the user you want to edit.\
-<img src="./images/edit-button.png" alt="Edit User Button" title="Edit User Button" style="border: 1px solid gray; zoom:60%;">
+<img src="./images/edit-user-button.png" alt="Edit User Button" title="Edit User Button" style="border: 1px solid gray; zoom:60%;">
 
 2. On the **Edit User** window, make the necessary edits.
 3. Click **Save**.
