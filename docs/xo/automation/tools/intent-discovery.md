@@ -197,7 +197,7 @@ The dialog box shows a table with individual rows for each session. The table ha
 * Utterances: The list of utterances qualifying the extracted Intent. 
     * The platform shows only 3 utterances per session (row). The remaining count of the utterances is shown as a chip. 
     * On clicking the chip, you see all the utterances for the corresponding session.
-    * You can **bookmark **the utterances.
+    * You can **bookmark** the utterances.
 * Status: A dropdown that shows whether the session item has been reviewed. By default, it  shows **Yet to Review**. You can change it to **Reviewed**.
 * **View Transcripts** action button: This button is present in the Status column of each row, next to the drop-down. It helps you view the detailed conversion of the Session. On clicking the icon, the [**Session Details** dialog box](https://docsinternal-kore.github.io/docs/xo/automation/tools/intent-discovery/#session-details) is displayed.
 
