@@ -192,6 +192,7 @@ Clicking anywhere on the extracted Intents row displays a pop-up dialog box to v
 <img src="../images/extracted-intent-details-slider.png" alt="Details of Extracted Intent" title="Details of Extracted Intent" style="border: 1px solid gray; zoom:50%;"/>
 
 The dialog box shows a table with individual rows for each session. The table has below columns: 
+
 * Session ID: The session ID and the Date and Time of the Session.
 * Utterances: The list of utterances qualifying the extracted Intent. 
     * The platform shows only 3 utterances per session (row). The remaining count of the utterances is shown as a chip. 
@@ -283,7 +284,7 @@ Additionally, this change will reflect under the **Results** column against the 
 
 The **Actions** column text for the intent will reflect the addition of an FAQ. For example:
 
-* If **Added ‘n’ new FAQs** text/tag is existing, then the count increases by 1. For example:** Added 1 new FAQ** will be changed to **Added 2 new FAQs**.
+* If **Added ‘n’ new FAQs** text/tag is existing, then the count increases by 1. For example: **Added 1 new FAQ** will be changed to **Added 2 new FAQs**.
 * If there are no intents created so far, then the text becomes **Added 1 new FAQ**. 
 
 Additionally, the adding will reflect under the **Results** column against the project name on the Intent Discovery homepage. For example:
@@ -306,7 +307,7 @@ Additionally, the adding will reflect under the **Results** column against the p
 
 The **Actions** column text for the intent will reflect the training of an FAQ. For example:
 
-* If **Trained ‘n’ new FAQs** text/tag is existing, then the count increases by 1. For example: **Trained 1 new FAQ** will be changed to** Trained 2 new FAQs**.
+* If **Trained ‘n’ new FAQs** text/tag is existing, then the count increases by 1. For example: **Trained 1 new FAQ** will be changed to **Trained 2 new FAQs**.
 * If there are no intents created so far, then the text becomes **Trained 1 new FAQ**.
 
 Additionally, the training will reflect under the **Results** column against the project name on the Intent Discovery homepage. For example:
