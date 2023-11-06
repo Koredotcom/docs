@@ -20,17 +20,14 @@ The option to record the test suite captures the metadata in the background whic
 <img src="../images/ct-create-test-suite-record1.png" alt="Start recording New Test" title="Start recording New Test" style="border: 1px solid gray;"/>
 
 3. In the displayed pop-up, click **Proceed** to record the test with the On-Connect event or click the **Skip On-Connect** button.  
-<img src="../images/ct-create-test-suite-record2.png" alt="Recording Options" title="Recording Options" style="border: 1px solid gray;"/>  
-!!! note  
+<img src="../images/ct-create-test-suite-record2.png" alt="Recording Options" title="Recording Options" style="border: 1px solid gray;"/>   
   
-        "On-Connect" is the message you receive as soon as you open the chat window, even before you enter any message. The option is displayed for VAs with an On-Connect message. If you skip it, the On-connect message does not get added as a test case. If you click Proceed, then the On-connect message is created as a separate test case.      
+**Note:** "On-Connect" is the message you receive as soon as you open the chat window, even before you enter any message. The option is displayed for VAs with an On-Connect message. If you skip it, the On-connect message does not get added as a test case. If you click Proceed, then the On-connect message is created as a separate test case.      
         
 4. The Chat window is displayed. The chat transcript is recorded and the recording status is displayed at the top. You can click **Stop** to stop the recording.  
 <img src="../images/ct-create-test-suite-record-chat.png" alt="Chat Recording Status" title="Chat Recording Status" style="border: 1px solid gray;"/>  
   
-!!! note
-
-        If there is an error while recording due to any limitation set on the platform, it is displayed on the page.
+**Note:** If there is an error while recording due to any limitation set on the platform, it is displayed on the page.
 
 
 #### Generated User Response Suggestions
@@ -60,14 +57,14 @@ The conversation is recorded and all the metadata at each test case is captured.
 
 3. If you click **Continue in Background**, you can see the status in the top right corner of the landing page by clicking the **Draft** icon.  
 <img src="../images/ct-create-test-suite-draft.png" alt="Continue in Background" title="Continue in Background" style="border: 1px solid gray;"/>  
-!!! note  
-        "On-Connect" is the message you receive as soon as you open the chat window, even before you enter any message. The option is displayed for VAs with an On-Connect message. If you skip it, the On-connect message does not get added as a test case. If you click Proceed, then the On-connect message is created as a separate test case.  
+  
+**Note:** "On-Connect" is the message you receive as soon as you open the chat window, even before you enter any message. The option is displayed for VAs with an On-Connect message. If you skip it, the On-connect message does not get added as a test case. If you click Proceed, then the On-connect message is created as a separate test case.  
 
 
 4. The Chat window is displayed. The chat transcript is recorded and the recording status is displayed at the top. You can click **Stop** to stop the recording.  
 <img src="../images/ct-create-test-suite-validate-ts.png" alt="Validate Test Suite" title="Validate Test Suite" style="border: 1px solid gray;"/>  
-!!! note  
-        If there is an error while recording due to any limitation set on the platform, it is displayed on the page.  
+  
+**Note:** If there is an error while recording due to any limitation set on the platform, it is displayed on the page.  
 
 
 #### Capture Test Suite Metadata
@@ -115,8 +112,8 @@ Using this option, you can create test suites by uploading chat transcripts in a
 
 3. You can drag and drop a predefined JSON file in the **Upload** pop-up or select the file in the local directory using the **browse** option.  
 <img src="../images/ct-create-test-suite-create-upload-file.png" alt="Browse for the JSON file" title="Browse for the JSON file" style="border: 1px solid gray;"/>  
-!!! note
-        Only JSON files can be uploaded. The maximum file size allowed for upload is 2MB. You can also download a sample JSON file by clicking the Download JSON Sample button.
+  
+**Note:** Only JSON files can be uploaded. The maximum file size allowed for upload is 2MB. You can also download a sample JSON file by clicking the Download JSON Sample button.
 
 If there is an error during upload due to any limitation set on the platform, an error is displayed as follows.
 <img src="../images/ct-create-test-suite-file-error.png" alt="JSON file upload error" title="JSON file upload error" style="border: 1px solid gray;"/> 
