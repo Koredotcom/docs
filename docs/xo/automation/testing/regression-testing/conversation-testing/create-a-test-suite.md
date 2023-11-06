@@ -21,7 +21,7 @@ The option to record the test suite captures the metadata in the background whic
 
 3. In the displayed pop-up, click **Proceed** to record the test with the On-Connect event or click the **Skip On-Connect** button.  
 <img src="../images/ct-create-test-suite-record2.png" alt="Recording Options" title="Recording Options" style="border: 1px solid gray;"/>  
-!!! note  
+    !!! note  
   
         "On-Connect" is the message you receive as soon as you open the chat window, even before you enter any message. The option is displayed for VAs with an On-Connect message. If you skip it, the On-connect message does not get added as a test case. If you click Proceed, then the On-connect message is created as a separate test case.      
         
