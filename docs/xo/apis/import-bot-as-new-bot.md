@@ -74,7 +74,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 
 ## Sample Request
 
-```
+```json
 curl -X POST \
   https://{{host}}/api/public/bot/import \
   -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
@@ -155,7 +155,7 @@ curl -X POST \
 
 ## Sample Response
 
-```
+```json
 {
     "status": "pending",
     ""streamId": "st-xxxxx-xxx-xxx-xxx-xxxxx",

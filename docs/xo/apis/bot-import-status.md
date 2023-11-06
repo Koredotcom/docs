@@ -85,7 +85,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 ## Sample Request
 
 
-```
+```json
 curl -X GET \
   https://{{host}}/api/public/bot/import/status/bir-xxxxxxx-xxx-xxxx-xxxxx-xxxxxxxxxx \
   -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
@@ -103,7 +103,7 @@ No Body Parameters passed.
 ## Sample Response
 
 
-```
+```json
 {
     "_id": "bir-5fxxxxxx-a0xx-52xx-axxf-f3xxxxxxxxxx",
     "status": "success",

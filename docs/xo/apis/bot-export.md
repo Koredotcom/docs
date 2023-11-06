@@ -85,7 +85,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 ## Sample Request
 
 
-```
+```json
 curl --location 'https://{host}/api/public/bot/{BotID}/export' \
 --header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTIyIiwibmFtZSI6IjM0NCIsImFwcElkIjoiY3MtN2Q1NDM2Y2QtNzliNi01YjI3LTg3OTgtMWQyNWNhMWQ5MWE2In0.xKEFeQPof33gbo-CCw-QLvJFrfC0tQEYwWDda1pg024' \
 --header 'content-type: application/json' \
@@ -256,7 +256,7 @@ To learn more about the optional parameters for partial import and dependent tas
 ## Sample Response
 
 
-```
+```json
 {
     "status": "pending",
     "streamId": "st-57af1576-bbdc-5ded-a608-5cfbc00c6415",
