@@ -56,7 +56,8 @@ If the virtual assistant’s response is from a Dialog node, then the following 
 
 ## Dynamic Text Marking
 
-The dynamic text annotation feature in the **Expected Output** allows you to annotate a section of the text. You can add one or more annotations for a VA response. \
+The dynamic text annotation feature in the **Expected Output** allows you to annotate a section of the text. You can add one or more annotations for a VA response.  
+
 During test execution, the annotated portion of the text is ignored by the platform for text assertion. You can view all the added annotations of VA’s responses and be able to remove them.
 
 !!! note
@@ -77,7 +78,7 @@ The following steps explain the dynamic text marking with an example:
 
 4. You can again click the Dynamic Marker icon to deselect the text and remove the dynamic marking.
 5. Click the Dynamic Marker icon next to the list to expand and see the list of dynamic values.  
-<img src="../images/tca-img9.png" alt="Dynamic values" title="Dynamic values" style="border: 1px solid gray;"/>
+<img src="../images/tca-img10.png" alt="Dynamic values" title="Dynamic values" style="border: 1px solid gray;"/>
 
 
 ## Test Coverage
@@ -85,7 +86,7 @@ The following steps explain the dynamic text marking with an example:
 The **Test Coverage** captures details like how many transitions or Intents are covered for this test suite. It helps add more test cases to cover the missed intents and transitions.
 
 This section explains how to access the Test Coverage and its details.  
-<img src="../images/tca-img10.png" alt="Test coverage" title="Test coverage" style="border: 1px solid gray;"/>  
+<img src="../images/tca-img11.png" alt="Test coverage" title="Test coverage" style="border: 1px solid gray;"/>  
 
 On the Conversation Testing landing page, in the **Test Suite Details** grid, click any Test Suite and then click the **Test Coverage** tab. Test Coverage contains the following three sub-tabs:
 
@@ -106,7 +107,7 @@ The following details are displayed in the **Transition Coverage** section:
   * **Covered** – Count and percentage of unique transitions covered as part of the Test Case definition against the Total Transitions list.  
   * **Not Covered** – Count and percentage of unique transitions not covered as part of the Test Case definition against the Total Transitions list.  
   
-<img src="../images/tca-img11.png" alt="Transition coverage" title="Transition coverage" style="border: 1px solid gray;"/>
+<img src="../images/tca-img12.png" alt="Transition coverage" title="Transition coverage" style="border: 1px solid gray;"/>
 
 For example, the VA has total 292 transitions, out of which the coverage is as follows:
 
@@ -124,37 +125,41 @@ For example, the VA has total 292 transitions, out of which the coverage is as f
 All the intents and their transition coverage details are displayed in this section.  
 
 The following details are displayed in the grid:
+
   * Intent Name  
   * Coverage Status  
   * Total Transitions  
   * Transition Covered  
   * Transition Coverage (%)
 
-<img src="../images/tca-img12.png" alt="Intent coverage" title="Intent coverage" style="border: 1px solid gray;"/>
+<img src="../images/tca-img13.png" alt="Intent coverage" title="Intent coverage" style="border: 1px solid gray;"/>
 
 You can obtain Node transition details of an intent by clicking the **View Transitions** slider. The **Node Transitions** pop-up displays the following details:  
+
   * From Node  
   * To Node  
   * Coverage Status
 
-<img src="../images/tca-img13.png" alt="Node Transitions" title="Node Transitions" style="border: 1px solid gray;"/>
+<img src="../images/tca-img14.png" alt="Node Transitions" title="Node Transitions" style="border: 1px solid gray;"/>
 
 !!! note
 
         A transition must have one of the following three values displayed in the Coverage Status column:
-          * Covered  
-          * Not Covered  
-          * Not Valid
+
+          - Covered  
+          - Not Covered  
+          - Not Valid
 
 
 You can sort, search, and filter the data for all the columns in the Intent coverage grid.  
 
+<img src="../images/tca-img15.png" alt="Intent Coverage Operations" title="Intent Coverage Operations" style="border: 1px solid gray;"/>
 
 ### FAQs
 
 In the FAQs tab of Test Coverage, all the unique FAQ names covered in this test suite are displayed.  
 
-<img src="../images/tca-img15.png" alt="FAQ" title="FAQ" style="border: 1px solid gray;"/>
+<img src="../images/tca-img16.png" alt="FAQ" title="FAQ" style="border: 1px solid gray;"/>
 
 
 ### Small Talk
@@ -166,7 +171,7 @@ All the Small Talks covered in the test cases are displayed in this tab in two c
 
 To know more about Patterns and Groups, see [Small Talk](https://developer.kore.ai/docs/bots/bot-builder-tool/small-talk/).
 
-<img src="../images/tca-img16.png" alt="Small talk" title="Small talk" style="border: 1px solid gray;"/>
+<img src="../images/tca-img17.png" alt="Small talk" title="Small talk" style="border: 1px solid gray;"/>
 
 !!! note
 
