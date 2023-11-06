@@ -13,9 +13,9 @@ You can use the Test Editor to view the test cases and their metadata. This sect
 3. To see the details, choose a test case in the right side pane – **Test Suite Details**, or click the test case in the Validated Chat of the left pane.  
 <img src="../images/te-img3.png" alt="Choose a test case" title="Choose a test case" style="border: 1px solid gray;"/>  
 
-  A  test case consists of:
-    * One user input  
-    * One or more VA responses for a user input  
+A  test case consists of:  
+  * One user input  
+  * One or more VA responses for a user input  
 <img src="../images/te-img4.png" alt="Test case details" title="Test case details" style="border: 1px solid gray;"/>
 
 4. If the VA response is from a dialog intent, the following details are displayed:  
