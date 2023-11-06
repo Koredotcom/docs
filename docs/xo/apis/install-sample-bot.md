@@ -92,7 +92,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 ## Sample Request
 
 
-```
+```json
 curl -X POST \
   'https://{{host}}/api/public/samplebots/{{bot_id}}/add' \
   -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
@@ -107,7 +107,7 @@ curl -X POST \
 No Body parameters are passed.
 ## Sample Response
 
-```
+```json
 {
     "visibility": {
         "namespace": "private",

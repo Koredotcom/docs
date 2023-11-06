@@ -85,7 +85,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 ## Sample Request for the Universal Bot
 
 
-```
+```json
 curl -X POST \
   https://{{host}}/api/public/bot/{{BotID}}/import \
   -H 'auth: YOUR_JWT_ACCESS_TOKEN' \
@@ -127,7 +127,7 @@ curl -X POST \
 ## Sample Request
 
 
-```
+```json
 curl -X POST \
   https://{{host}}/api/public/bot/{{BotID}}/import \
   -H 'auth: YOUR_JWT_ACCESS_TOKEN' \
@@ -246,7 +246,7 @@ Usage:
 **For the Universal bot, the _import_ the _importOptions_ may differ as shown below:
 
 
-```
+```json
 "importOptions": {
 	"nlpData": [
 		"training_data",
@@ -282,7 +282,7 @@ Usage:
 ## Sample Response
 
 
-```
+```json
 {
     "streamRefId": "c685t327-xxxx-58xx-9xbx-33xxxxxxxxxx",
     "statusLogs": [
