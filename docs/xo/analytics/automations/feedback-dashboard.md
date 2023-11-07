@@ -22,7 +22,7 @@ This dashboard displays graphs and charts derived from real-time feedback data f
 
 1. Click the three dots on the left navigation pane and then click **Analytics**. The **Analytics** panel is displayed with the list of reports.
 
-<img src="../images/navigate-to-feedback-dashboard.png" alt="Navigate to Feedback Dashboard" title="Navigate to Feedback Dashboard" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/navigate-to-feedback-dashboard.png" alt="Navigate to Feedback Dashboard" title="Navigate to Feedback Dashboard" style="border: 1px solid gray; zoom:80%;">
 
 2. Click the **Feedback Dashboard** under the **Automation** section of the **Analytics** panel. The **Feedback Dashboard** is displayed on the right side of the page.
 3. Select appropriate filters on the dashboard and click **Apply**.
