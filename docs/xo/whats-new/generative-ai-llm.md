@@ -210,11 +210,11 @@ Once you meet the prerequisites and enable the feature:
 
 1. You should [upload the PDF document(s)](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/#Upload_PDF_Documents) to be shared with the third-party system (OpenAI). You can upload a maximum of 10 documents with a size of not more than 5 MB.
 2. The uploaded documents are listed under the **Answer from Documents** section with the following details:
-* Upload Name
-* Uploaded by
-* Uploaded on
-* Status (Active/Inactive)
-* Actions (View and Delete File)
+    * Upload Name
+    * Uploaded by
+    * Uploaded on
+    * Status (Active/Inactive)
+    * Actions (View and Delete File)
 1. A good practice is to test the answer generation by asking the VA a question directly related to the contents of your uploaded documents. [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/#Test_Answer_Generation).
 2. You can view, delete, and disable the uploaded documents.
 3. The VA provides answers only from uploaded documents that are active, whereas disabled documents are ignored.
