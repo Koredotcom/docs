@@ -36,11 +36,11 @@ The **Feedback Dashboard** displays analytics data on the **Feedback Survey resp
 
 *  **Date**: Indicates the date range to filter the conversation sessions and capture the survey feedback responses.
 
-!!! note
+    !!! note
 
     The session start time filters the sessions based on when they were initiated.
 
-<img src="../images/dashboard-filters-1.png" alt="Dashboard Filters 1" title="Dashboard Filters 1" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/dashboard-filters-1.png" alt="Dashboard Filters 1" title="Dashboard Filters 1" style="border: 1px solid gray; zoom:80%;">
 
 
 The filter options include the following:
@@ -80,7 +80,7 @@ For the **NPS** survey type, it captures the data for the following responders:
 * **Passives**: Respondents who gave a score between 6 and 8.
 * **Detractors**: Respondents who gave a score between 0 and 5.
 
-<img src="../images/dashboard-sections-1.png" alt="Dashboard Sections 1" title="Dashboard Sections 1" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/dashboard-sections-1.png" alt="Dashboard Sections 1" title="Dashboard Sections 1" style="border: 1px solid gray; zoom:60%;">
 
 
 For the **CSAT** survey type, it captures the data for the following responses:
@@ -91,7 +91,7 @@ For the **CSAT** survey type, it captures the data for the following responses:
 * **Unsatisfied**: Respondents who gave a score of 2.
 * **Very Unsatisfied**: Respondents who gave a score of 1.
 
-<img src="../images/dashboard-sections-2.png" alt="Dashboard Sections 2" title="Dashboard Sections 2" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/dashboard-sections-2.png" alt="Dashboard Sections 2" title="Dashboard Sections 2" style="border: 1px solid gray; zoom:60%;">
 
 
 For the **Like/Dislike** survey type, it captures the data for the following responses:
@@ -101,7 +101,7 @@ For the **Like/Dislike** survey type, it captures the data for the following res
 * **Extremely Likely**: Respondents who gave a score of 1.
 * **Extremely Unlikely**: Respondents who gave a score of 0.
 
-<img src="../images/dashboard-sections-3.png" alt="Dashboard Sections 3" title="Dashboard Sections 3" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/dashboard-sections-3.png" alt="Dashboard Sections 3" title="Dashboard Sections 3" style="border: 1px solid gray; zoom:60%;">
 
 
 ### Score Break up – Respondent-wise Survey Score over Time
@@ -115,20 +115,20 @@ This section displays the bar chart widget representing the percentage of each r
 
 For the **NPS** survey type, the number of promoters, passives, and detractors is displayed in different colors over the selected period on the days they responded.
 
-<img src="../images/NPS-survey-type.png" alt="NPS Survey Type" title="NPS Survey Type" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/NPS-survey-type.png" alt="NPS Survey Type" title="NPS Survey Type" style="border: 1px solid gray; zoom:60%;">
 
 
 
 For the **CSAT** survey type, the number of **very satisfied**, **satisfied, neutral**, **unsatisfied**, and **very unsatisfied** responses received over the selected date range is displayed in different colors.
 
 
-<img src="../images/CSAT-survey-type.png" alt="CSAT Survey Type" title="CSAT Survey Type" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/CSAT-survey-type.png" alt="CSAT Survey Type" title="CSAT Survey Type" style="border: 1px solid gray; zoom:60%;">
 
 
 For the **Like/Dislike** survey type, the number of **extremely likely** and **extremely unlikely** responses captured over the selected date range is displayed in different colors
 
 
-<img src="../images/like-dislike-survey-type.png" alt="LIKE DISLIKE Survey Type" title="LIKE DISLIKE Survey Type" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/like-dislike-survey-type.png" alt="LIKE DISLIKE Survey Type" title="LIKE DISLIKE Survey Type" style="border: 1px solid gray; zoom:60%;">
 
 
 
