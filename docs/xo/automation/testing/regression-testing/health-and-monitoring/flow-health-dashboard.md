@@ -19,7 +19,7 @@ In this article, the Hotel Booking virtual assistant is used as an example to un
 A transition shows how a user intent is transferred from one node to another node in a dialog task. A transition is a flow of intent between two nodes. It has a **From** node and a **To** node.  For example, **“Book a Hotel”** is a user intent in a dialog task. A **city** is an entity node in the dialog flow to which the **book a hotel** user intent is transitioned, and then it transitions to the **state** node. From the **state** node, it transitions to **country** and **reservemessage** nodes. Therefore, in the **Book a Hotel** task, you have four transitions in total. For more information, see [User Intent](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-user-intent-node/).  
 <img src="../images/fh-img1.png" alt="Use case - book a hotel" title="Use case - book a hotel" style="border: 1px solid gray;zoom:50%;"/>
 
-Once you record a conversation flow, save it and run it in the _Conversation Testing_ module.  The conversation testing module helps in knowing how a dialog task performs. For example, if you have a **Get User Data** dialog task and want to see how this dialog task is performing, you can create a **Show User Data** test suite with various test cases. Run the **Show User Data** test suite and see whether it was completed _successfully_, _failed_, _paused, _or _not executed_. For more information, see the [Conversation Testing](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page/) article.
+Once you record a conversation flow, save it and run it in the _Conversation Testing_ module.  The conversation testing module helps in knowing how a dialog task performs. For example, if you have a **Get User Data** dialog task and want to see how this dialog task is performing, you can create a **Show User Data** test suite with various test cases. Run the **Show User Data** test suite and see whether it was completed _successfully_, _failed_, _paused_, or _not executed_. For more information, see the [Conversation Testing](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page/) article.
 
 The test suite results are tracked in the _Conversation Testing,_ and the analytics for test suites are displayed in the **Flow Health** dashboard.  
 
@@ -33,7 +33,7 @@ To access the **Flow Health Dashboard**, follow these steps:
 
 2. Drill down to learn how to view the Dialog Intent, FAQ, and Small Talk summary sections. In these sections, you can view the intent level summaries, along with test coverage details to easily identify the transitions or intents to be covered. You can also expand to the test case results to view the execution analytics.  
   
-    **Note**: The test suites are used to verify the Intents, Small Talks, FAQs, and Standard Responses with test cases. The Flow Health dashboard considers standard responses in test cases to calculate overall percentages. However, the dashboard has no separate summary tile for the Standard Responses. For this reason, you will notice a slight difference in the test results’ overall count or percentage.
+**Note**: The test suites are used to verify the Intents, Small Talks, FAQs, and Standard Responses with test cases. The Flow Health dashboard considers standard responses in test cases to calculate overall percentages. However, the dashboard has no separate summary tile for the Standard Responses. For this reason, you will notice a slight difference in the test results’ overall count or percentage.
 
 
 ### Flow Metrics
@@ -46,7 +46,8 @@ View the overall percentage of the test case results in the test suites with the
   * **Fail** – Total Number of Test cases failed across all test suites.
   * **Not Executed** – Total Number of Test cases aborted or not executed before execution across all test suites.
 
-    <img src="../images/fh-img3.png" alt="Flow Metrics" title="Flow Metrics" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/fh-img3.png" alt="Flow Metrics" title="Flow Metrics" style="border: 1px solid gray;zoom:50%;"/>
+
 
 1. Click the **View Test Suites** link to view all the test suites that are considered in the VA with the following details:
     1. **Test Suite**  – The name of the test suite.
@@ -102,7 +103,9 @@ The percentage of transitions coverage is displayed as follows:
   * **Covered** – Shows the number of transitions that are covered in the test cases.
   * **Not Covered** – Shows the percentage of total transitions that are not covered in the test cases.
 
-    <img src="../images/fh-img9.png" alt="Transition Coverage" title="Transition Coverage" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/fh-img9.png" alt="Transition Coverage" title="Transition Coverage" style="border: 1px solid gray;zoom:50%;"/>
+
+
 
 1. Click the <img src="../images/fh-tilda-icon.png"> icon beside the percentages to open the Dialog Transitions page and view the following details:
 
