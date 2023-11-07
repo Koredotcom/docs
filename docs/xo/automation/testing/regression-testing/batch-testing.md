@@ -30,14 +30,14 @@ Kore.ai provides a few out-of-the-box **Test Suites** to perform batch testing. 
 
 This test suite validates the utterances that have been previously added and trained by the developer from Machine Learning Utterances screen. Using this test suite would mean testing collectively the entire set of utterances that a developer has added for all tasks of the bot.
 
-<img src="../images/batch-testing-1-developer-du.png" alt="BT - Developer Defined Utterances" title="BT - Developer Defined Utterances" style="border: 1px solid gray;"/>
+<img src="../images/batch-testing-1-developer-du.png" alt="BT - Developer Defined Utterances" title="BT - Developer Defined Utterances" style="border: 1px solid gray;zoom:50%;"/>
 
 
 ### Successful user utterances
 
 This test suite includes all the end-user utterances that have successfully matched one or more intents and the corresponding task is fully executed. You can also find these utterances from the ‘Intent found’ section of the Analyze module.
 
-<img src="../images/batch-testing-2-successful-utterances.png" alt="BT - Successful user utterances" title="BT - Successful user utterances" style="border: 1px solid gray;"/>
+<img src="../images/batch-testing-2-successful-utterances.png" alt="BT - Successful user utterances" title="BT - Successful user utterances" style="border: 1px solid gray;zoom:50%;"/>
 
 
 ### Adding a New Test Suite
@@ -45,7 +45,7 @@ This test suite includes all the end-user utterances that have successfully matc
 To add a new test suite, follow the steps below:
 
 1. Go to **Build** > **Testing** > **Batch Testing**, and click **New Test Suite**.  
-<img src="../images/batch-testing-3.png" alt="BT - New Test Suite" title="BT - New Test Suite" style="border: 1px solid gray;">
+<img src="../images/batch-testing-3.png" alt="BT - New Test Suite" title="BT - New Test Suite" style="border: 1px solid gray;zoom:50%;">
 2. In the **New test Suite** window, add a **name** and provide a **description**.
 3. Next, choose how to add test cases: either manually or by uploading a test case file.
     * Selecting **Add Manually** lets you add test cases manually or use LLM and Generative AI to generate test cases automatically.
