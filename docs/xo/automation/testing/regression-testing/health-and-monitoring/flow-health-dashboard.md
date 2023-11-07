@@ -163,13 +163,13 @@ To view the intent summary and identify the issues, follow these steps:
 1. Click the **>** icon to open the intent details summary for the desired intent.  
 <img src="../images/fh-img17.png" alt="Open intent details" title="Open intent details" style="border: 1px solid gray;zoom:50%;"/>
 
-2. Click the **Test Suite Name** to analyze how the test suite is performing. For example, click the Dialog_Test_Raise_Complain__Fail_ test suite to view the test results analysis as illustrated in the screenshot below:  
+2. Click the **Test Suite Name** to analyze how the test suite is performing. For example, click the **Dialog_TS_Suite_RaiseComplain_Fail** test suite to view the test results analysis as illustrated in the screenshot below:  
 <img src="../images/fh-img18.png" alt="Test result analysis" title="Test result analysis" style="border: 1px solid gray;zoom:50%;"/>
 
 3. In this test suite, the test case1 has failed because it has an incorrect data type selected for the **Date** field as shown below:  
 <img src="../images/fh-img19.png" alt="Sample execution result" title="Sample execution result" style="border: 1px solid gray;zoom:50%;"/>
 
-4. Text assertion fails because there is a mismatch between the _Expected _and _Actual _output. For more information, see [Test Case Assertion](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/test-case-assertion). 
+4. Text assertion fails because there is a mismatch between the _Expected_ and _Actual_ output. For more information, see [Test Case Assertion](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/test-case-assertion). 
 
 5. Click the **X** icon to close the Intent Details window.
 
