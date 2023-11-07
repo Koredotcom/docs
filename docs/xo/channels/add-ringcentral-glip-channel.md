@@ -25,7 +25,7 @@ To start the integration, you must register an application on RingCentral to gai
 The steps to add the channel are summarized below:
 
 
-1. [Create a RingCentral App](docs/xo/channels/add-ringcentral-glip-channel/#step-1-create-a-ringcentral-app)
+1. [Create a RingCentral App](/docs/xo/channels/add-ringcentral-glip-channel/#step-1-create-a-ringcentral-app)
 2. [App Set Up on the Kore.ai XO Platform using the Application Key and App secret](/docs/xo/channels/add-ringcentral-glip-channel/#step-2-application-set-up-on-the-koreai-xo-platform)
 3. [Authorize a valid extension (user) of your RingCentral account to generate the developer access token, access the Glip APIs, and enable the channel](/docs/xo/channels/add-ringcentral-glip-channel/#step-3-authorize-extension-user-of-your-ringcentral-sandbox-account)
 4. [Test the integration](/docs/xo/channels/add-ringcentral-glip-channel/#step-4-test-the-integration)
