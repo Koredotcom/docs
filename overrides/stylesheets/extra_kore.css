@@ -70,6 +70,6 @@ kr-grid[type="g1"] kr-grid-desc{
 
 /* start: code block max height */
 .md-typeset pre > code {
-    max-height: 11rem;
+    max-height: 20rem;
 }
 /* end: code block max height */
