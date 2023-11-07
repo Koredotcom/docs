@@ -36,11 +36,13 @@ The **Feedback Dashboard** displays analytics data on the **Feedback Survey resp
 
 *  **Date**: Indicates the date range to filter the conversation sessions and capture the survey feedback responses.
 
-    !!! note
+ !!! note
 
     The session start time filters the sessions based on when they were initiated.
 
-    <img src="../images/dashboard-filters-1.png" alt="Dashboard Filters 1" title="Dashboard Filters 1" style="border: 1px solid gray; zoom:80%;">
+
+<img src="../images/dashboard-filters-1.png" alt="Dashboard Filters 1" title="Dashboard Filters 1" style="border: 1px solid gray; zoom:80%;">
+
 
 
 The filter options include the following:
