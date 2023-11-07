@@ -7,16 +7,16 @@ The following sections explain the options available on the Conversation Testing
 
 ## Test Case Execution
 
-You can execute test cases on the Conversation Testing Landing Page and the individual Test Case details page. \
+You can execute test cases on the Conversation Testing Landing Page and the individual Test Case details page.  
 Follow these steps for test execution:
 
 1. On the **Test Suite Details** page, select the test suite and then click the **Run Test Suite** button for that specific suite.  
 <img src="../images/tces-img1.png" alt="Test Suite Details" title="Test Suite Details" style="border: 1px solid gray;zoom:50%;"/>  
+
+    **Note:** You can also execute the test cases by clicking the Run Test button on the Test Suite Details page.  
   
     <img src="../images/tces-img2.png" alt="Run test" title="Run test" style="border: 1px solid gray;zoom:50%;"/>  
-    
-    **Note:** You can also execute the test cases by clicking the Run Test button on the Test Suite Details page.
-  
+
 
 2. Choose the Version of the VA you want to test.  
   
