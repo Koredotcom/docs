@@ -79,7 +79,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 
 ## Sample Request
 
-```
+```json
 curl -X POST \
   https://{{host}}/api/public/uploadfile \
   -H 'auth: YOUR_JWT_ACCESS_TOKEN' \

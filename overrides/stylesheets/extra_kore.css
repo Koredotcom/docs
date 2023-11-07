@@ -65,3 +65,11 @@ kr-grid[type="g1"] kr-grid-desc{
     margin-bottom: 10px;
 }
 /* kr grid g1 end*/
+
+
+
+/* start: code block max height */
+.md-typeset pre > code {
+    max-height: 11rem;
+}
+/* end: code block max height */
