@@ -62,8 +62,7 @@ To enable Glip as a channel for your Kore.ai Virtual Assistant, you must create 
  * App Description (optional)
  * Primary Contact
  * Select the relevant option for **Do you intend to promote this app in the RingCentral App Gallery?**
-
-  <img src="../images/ringcentral_glip2.png" alt="app properties" title="app properties" style="border: 1px solid gray; zoom:70%;">
+ <img src="../images/ringcentral_glip2.png" alt="app properties" title="app properties" style="border: 1px solid gray; zoom:70%;">
 
 8. (Optional) In the **App Card panel**, enter the values for the given fields to configure how your application will be presented within our App Gallery.
 
@@ -112,7 +111,7 @@ After creating the app for the Sandbox/Production environment, you need to confi
 <img src="../images/ringcentral_glip8.png" alt="ringcentral developer application" title="ringcentral developer application" style="border: 1px solid gray; zoom:70%;">
 
 2. Under **Application Credentials**, click the copy icons for the **_Client ID_** and **_Client Secret_** (tap on click to see first) fields.
-<img src="../images/ringcentral_glip9.png" alt="application credentials" title="application credentials" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/ringcentral_glip9.png" alt="application credentials" title="application credentials" style="border: 1px solid gray; ">
 
 3. On the Kore.ai XO Platform, navigate to **Deploy** > **Channels** and click **RingCentral Glip**.
 
@@ -133,16 +132,11 @@ The virtual assistant on the Kore.ai XO Platform must be associated with the ext
 1. Log in to your RingCentral Sandbox account.
 2. Click the **Users** tab.
 3. Click **Users with Extension** on the left menu.
-4. Click **+Add User**.
-
-<img src="../images/ringcentral_glip12.png" alt="user extension" title="user extension" style="border: 1px solid gray; zoom:70%;">
-
+4. Click **+Add User**.<img src="../images/ringcentral_glip12.png" alt="user extension" title="user extension" style="border: 1px solid gray; zoom:70%;">
 5. On the **Add Users and Phones** dialog box, select **Add Users without Phone**, and follow the instructions on the page.
 6. Click **Unassigned Extensions** on the left menu.
 7. Click **Add Unassigned Ext**.
-
 <img src="../images/ringcentral_glip13.png" alt="unassigned extension" title="unassigned extension" style="border: 1px solid gray; zoom:70%;">
-
 8. On the **user profile information** page, enter all the required information.
 9. Click **Save & Enable** to enable the extension.
 
@@ -167,9 +161,7 @@ Notes
 To access the admin portal from the Sandbox account screen and test the validation, follow the steps below:
 
 1. Go to the **Sandbox Account** section and click the [link](https://app.devtest.ringcentral.com/) in the **Team Messaging** section.
-
 <img src="../images/ringcentral_glip14.png" alt="team messaging" title="team messaging" style="border: 1px solid gray; zoom:70%;">
-
 2. Navigate to **Messages** on the left menu.
 3. In the **Direct Messages** section, click the **+** icon to start a new DM with the virtual assistant.
 4. Find the virtual assistant using either the name or email address you used in _Step 3_.
@@ -182,17 +174,14 @@ On the Kore.ai XO Platform, navigate to **RingCentral Glip** > **Configurations*
 
 
 1. In the **RingCentral Glip** window, click the **Authorize** button.
-
-  <img src="../images/ringcentral_glip15.png" alt="authorize app" title="authorize app" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/ringcentral_glip15.png" alt="authorize app" title="authorize app" style="border: 1px solid gray; zoom:70%;">
 
 2. In the **Sign-in** window, click **Continue as **to sign in with the existing user’s account, or click **Use Another Account**.
- <img src="../images/ringcentral_glip16.png" alt="use another account" title="use another account" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/ringcentral_glip16.png" alt="use another account" title="use another account" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Authorize** on the **Access Request** page.
 4. Once the access token is obtained successfully, authorization is complete.
-
 <img src="../images/ringcentral_glip17.png" alt="access request" title="access request" style="border: 1px solid gray; zoom:70%;">
-
 5. On the Kore.ai XO Platform, select **_Yes_** for the **Enable Channel** option under the **RingCentral Glip** > **Configurations** tab.
 6. Click **Save** to enable the channel and Publish the Virtual Assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
 
