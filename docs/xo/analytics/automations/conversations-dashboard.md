@@ -53,9 +53,9 @@ The **Drop-off Rate** widget displays the percentage and the total number of dro
 
 Some conversations may require human assistance as the users can’t finish the tasks using the virtual assistant. In such cases, the session is handed over to a human agent for help. When the conversation reaches the point where it’s transferred to an agent – the dialog reaches the agent transfer node, the platform considers this as an Agent Transfer session.
 
-The **Agent Transfer Rate** widget displays the percentage and total number of agent transfers within the selected period. It also shows the percentage increase or decrease in the agent transfer sessions from the last selected period. For details on the metrics used in each widget/category, see the [Metrics Table](./conversations-dashboard.md#metrics-table) section in this document.
+The **Agent Transfer Rate** widget displays the percentage and total number of agent transfers within the selected period. It also shows the percentage increase or decrease in the agent transfer sessions from the last selected period. For details on the metrics used in each widget/category, see the [Metrics Table](./conversations-dashboard.md#metrics-table) section in this document.as
 
-<img src="../automations/images/agent-transfer-rate.png" alt="Agent Transfer Rate"  title="Agent Transfer Rate" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/agent-transfer-rate.png" alt="Agent Transfer Rate"  title="Agent Transfer Rate" style="border: 1px solid gray; zoom:100%;">
 
 !!! note
 
