@@ -45,9 +45,9 @@ Even if your assistant has already been created, you can still add new languages
 4. Once you click configure, you can setup the following language configurations:  
 <img src="../images/mlva-img6-new-lang-config.png" alt="Setup language configuations" title="Setup language configurations" style="border: 1px solid gray;zoom:50%;"/>
 
-    a. **Choose the NLU Language** – Allows you to select any supported language as the NLU model to train your assistant.
+  a. **Choose the NLU Language** – Allows you to select any supported language as the NLU model to train your assistant.
 
-    b. **Select the Language Definition Mode** - You can choose any of the following options to copy the language definitions:
+  b. **Select the Language Definition Mode** - You can choose any of the following options to copy the language definitions:
 
       * **Basic Mode** – Lets you only copy dialog prompts and messages.  
          **Note:** A base language is a language that is already enabled in the assistant. You need to choose a Base Language for your assistant from which you want to copy your assistant’s data for both Basic and Advanced modes.  
@@ -59,8 +59,8 @@ Even if your assistant has already been created, you can still add new languages
       * **Use Language Pack** – Lets you upload the language definitions after adding manually translating a JSON file. You can download a JSON language pack of any of the already-enabled languages and then edit the dialog prompts and messages in the JSON file. Upload the updated JSON file to enable the new language for the assistant.  
         <img src="../images/mlva-img9-lang-pack.png" alt="Language pack" title="Language pack" style="border: 1px solid gray;zoom:50%;"/> 
 
-    c. **Manage Translations** – In case the Translation Engine is not configured, click the **Configure** link to set up the translation engine for your assistant. To learn how to enable Input Translation or Runtime Response Translation, [refer to this article](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/language-management/managing-translation-services/).  
-    <img src="../images/mlva-img10-enable-translation.png" alt="Manage translations" title="Manage translations" style="border: 1px solid gray;zoom:50%;"/>
+  c. **Manage Translations** – In case the Translation Engine is not configured, click the **Configure** link to set up the translation engine for your assistant. To learn how to enable Input Translation or Runtime Response Translation, [refer to this article](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/language-management/managing-translation-services/).  
+  <img src="../images/mlva-img10-enable-translation.png" alt="Manage translations" title="Manage translations" style="border: 1px solid gray;zoom:50%;"/>
 
 5. Once you have configured translations, click **Enable** to add/enable a new language for the assistant.
 
