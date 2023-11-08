@@ -265,8 +265,6 @@ This can be sorted from <strong>High to Low</strong> or<strong> Low to High</str
   </tr>
 </table>
 
-
-
 ### Debug Log
 
 Any custom debug statements that you entered in the Script node using the script `koreDebugger.log("&lt;debug statement>")`are displayed on this tab. Debug statements should be in a string format. See the following table to know more:

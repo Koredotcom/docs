@@ -8,7 +8,7 @@ The NLP Insights feature helps you gain in-depth insights into the analytics dat
 
 1. Click the three dots on the left navigation pane and then click **Analytics**.The **Analytics** panel is displayed with the list of reports.
     
-    <img src="../images/navigating-to-NLP-Insights.png" alt="Navigating to NLP Insights" title="Navigating to NLP Insights" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../images/navigating-to-NLP-insights.png" alt="Navigating to NLP Insights" title="Navigating to NLP Insights" style="border: 1px solid gray; zoom:80%;"> 
 
 
 2. Click the **NLP Insights** under the **Automation** section of the **Analytics** panel. The **NLP Insights dashboard** is displayed on the right side of the page.
@@ -404,7 +404,6 @@ If it is a multi-lingual VA, you can select specific languages to filter the con
 
 The following sections describe more about the options available on NLP Insights page and the analysis of the records captured here.
 
-
 ## Features
 
 The following list details the features available in NLP Insights for Intent Found, Intent Not Found, and Unhandled Utterances.
@@ -416,9 +415,9 @@ The following list details the features available in NLP Insights for Intent Fou
 * Any important record you want to mark, track later, or both can be pinned. They appear on  the **Pinned** tab.
 * Sorting feature is available for Date and Time (Oldest to Newest, Newest to Oldest). You can export the insights data as a CSV file.
 
-<img src="../images/NLP-insights-analysis.png" alt="NLP Insights Analysis" title="NLP Insights Analysis" style="border: 1px solid gray; zoom:80%;">
+   <img src="../images/NLP-insights-analysis.png" alt="NLP Insights Analysis" title="NLP Insights Analysis" style="border: 1px solid gray; zoom:80%;">
 
-!!! note
+   !!! note
 
     The NLP Insights page shows the conversations from the last 24 hours by default. You can filter the insights for a selected period – use the Date drop-down to select 24 hours, the last 7 days, or a custom period.
 
@@ -713,22 +712,21 @@ If the intent has been answered from a document, this section provides the follo
 * A Similarity Score for how similar the user query is to the document content.
 * An option to add the query to the Knowledge Graph as an FAQ.
 
-<img src="../images/Filter-criteria-details-1.png" alt="Filter Criteria Details" title="Filter Criteria Details" style="border: 1px solid gray; zoom:80%;">
-
+   <img src="../images/Filter-criteria-details-1.png" alt="Filter Criteria Details" title="Filter Criteria Details" style="border: 1px solid gray; zoom:80%;">
 
 
 ### NLP Analysis
 
 This tab provides a visual representation of the NLP Analysis, including intent scoring and selection.  See Testing and Training a Virtual Assistant and Ranking and Resolver for more information.
 
-<img src="../images/NLP-analysis.png" alt="NLP Analysis" title="NLP Analysis" style="border: 1px solid gray; zoom:80%;">
+   <img src="../images/NLP-analysis.png" alt="NLP Analysis" title="NLP Analysis" style="border: 1px solid gray; zoom:80%;">
 
 
 ### Chat History
 
 On the Chat History tab, you can access the exact message or conversation for which the record is logged. It shows the entire chat history of the user session.
 
-<img src="../images/chat-history.png" alt="Chat History" title="Chat History" style="border: 1px solid gray; zoom:80%;">
+   <img src="../images/chat-history.png" alt="Chat History" title="Chat History" style="border: 1px solid gray; zoom:80%;">
 
 Chat History provides visibility into the user information by capturing the following details:
 
@@ -737,12 +735,12 @@ Chat History provides visibility into the user information by capturing the foll
 * **Go to Selected Utterance**: When you click this icon, the selected utterance is highlighted in orange (see the preceding screenshot).
 * **Trace ID**– A unique ID assigned to each incoming message. The Id is also included in all the logs maintained by the Platform.. When you hover over the message, the info icon appears. Click the **Info** icon to view the **Message Id** associated with the message.
 
-<img src="../images/chat-history-1.png" alt="Chat History-1" title="Chat History-1" style="border: 1px solid gray; zoom:80%;">
+   <img src="../images/chat-history-1.png" alt="Chat History-1" title="Chat History-1" style="border: 1px solid gray; zoom:60%;">
 
 
 * Click the **Message Id** to view the **Trace ID** associated with a message in the Chat History.
 
-<img src="../images/chat-history-2.png" alt="Chat History-2" title="Chat History-2" style="border: 1px solid gray; zoom:80%;">
+   <img src="../images/chat-history-2.png" alt="Chat History-2" title="Chat History-2" style="border: 1px solid gray; zoom:60%;">
 
 !!! note
 
