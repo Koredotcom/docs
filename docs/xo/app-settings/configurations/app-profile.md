@@ -123,7 +123,7 @@ There are approximately 25 HTTP Status codes defined by default for a Bot or tas
   2. Select **Build** tab from top menu
   3. From the left menu click **Configurations -> General Settings**
   4. Scroll down to locate the **Error Messages** section.
-  5. Click the **Edit** <img src="../images/app-prof-editicon.png" width="20"> icon for the code that you want to customize to open the **Setup Error Message** dialog.  
+  5. Click the **Edit** <img src="../images/app-prof-editicon.png" width="20" style="border: 1px solid gray> icon for the code that you want to customize to open the **Setup Error Message** dialog.  
   <img src="../images/app-prof-img3-general-settings-error-messages-setup.png" alt="Setup Error Message" title="Setup Error Message" style="border: 1px solid gray;zoom:50%;"/>  
     
   6. In the **Message Type** field, select one of:
