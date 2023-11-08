@@ -19,31 +19,31 @@ If the virtual assistant’s response is from a Dialog node, then the following 
         * Expected Intent
         * Transitions  
           
-        <img src="../images/tca-img1.png" alt="Flow Assertion" title="Flow Assertion" style="border: 1px solid gray;"/>
+        <img src="../images/tca-img1.png" alt="Flow Assertion" title="Flow Assertion" style="border: 1px solid gray;zoom:50%;"/>
 
 * **Text Assertion:** A Text assertion tests the content presented to the user (string-to-string match), and provides support for dynamic values. Text assertions compare the text of the expected output with the actual output.
     * It is enabled by default. You can disable it if required.
     * This section shows the summary on the right side of the Test Suite panel:
         * **Expected Response**: Contains all possible responses/variations with the annotated dynamic values.  
 
-        <img src="../images/tca-img2.png" alt="Text Assertion" title="Text Assertion" style="border: 1px solid gray;"/>  
+        <img src="../images/tca-img2.png" alt="Text Assertion" title="Text Assertion" style="border: 1px solid gray;zoom:50%;"/>  
       
     **Note:** In case of text assertion, if the expected output has dynamic values, then it should be annotated using [Dynamic Text Marking](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/test-case-assertion/#dynamic-text-marking). If not marked, the text assertion fails and eventually leads to failure of the test case. For the test case to pass, the text for that specific output must be dynamically marked.  
       
     For example, in the following test case, the city name entered by the user can be different every time. It is marked as dynamic for that specific test case to pass.  
-    <img src="../images/tca-img3.png" alt="Example-Test case details" title="Example-Test case details" style="border: 1px solid gray;"/>  
+    <img src="../images/tca-img3.png" alt="Example-Test case details" title="Example-Test case details" style="border: 1px solid gray;zoom:50%;"/>  
       
     The test case and text assertion can be seen as passed in the [Result Summary](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/test-case-execution-summary/#result-summary). If the text is not marked as dynamic, the test case would fail.  
-    <img src="../images/tca-img4.png" alt="Result summary" title="Result summary" style="border: 1px solid gray;"/>
+    <img src="../images/tca-img4.png" alt="Result summary" title="Result summary" style="border: 1px solid gray;zoom:50%;"/>
 
 * **Context Assertion:** A context assertion can be used to test the presence of specific context variables during a conversation. By using a context assertion, you can verify that the correct context variables are present at a specific point in the conversation, which can be helpful for ensuring the smooth and successful execution of the conversation flow.  
     * It is disabled by default. You can enable it if required.  
-          <img src="../images/tca-img5.png" alt="Context assertion disabled by default" title="Context assertion disabled by default" style="border: 1px solid gray;"/>
+          <img src="../images/tca-img5.png" alt="Context assertion disabled by default" title="Context assertion disabled by default" style="border: 1px solid gray;zoom:50%;"/>
 
     * Once enabled, you can click the Add button to add key-value pairs of context variables.  
-    <img src="../images/tca-img6.png" alt="Context assertion enabled" title="Context assertion enabled" style="border: 1px solid gray;"/>  
+    <img src="../images/tca-img6.png" alt="Context assertion enabled" title="Context assertion enabled" style="border: 1px solid gray;zoom:50%;"/>  
       
-        <img src="../images/tca-img7.png" alt="Add new context variables" title="Add new context variables" style="border: 1px solid gray;"/>  
+        <img src="../images/tca-img7.png" alt="Add new context variables" title="Add new context variables" style="border: 1px solid gray;zoom:50%;"/>  
 
     * This section shows a summary of added variables:
         * Key
@@ -70,15 +70,15 @@ The following steps explain the dynamic text marking with an example:
 1. Click any Test Suite on the Conversation Testing page.
 2. In the **Test Editor** tab, navigate to the **Test Suite Details** Panel.
 3. In the **Test Suite Details** panel, select a text in the **Expected Output** for a test case and click the Dynamic Marker icon (see the following screenshots).  
-<img src="../images/tca-img8.png" alt="Test suite details-Expected output" title="Test suite details-Expected output" style="border: 1px solid gray;"/>  
+<img src="../images/tca-img8.png" alt="Test suite details-Expected output" title="Test suite details-Expected output" style="border: 1px solid gray;zoom:50%;"/>  
   
-    <img src="../images/tca-img9.png" alt="Clicked Dynamic marker" title="Clicked Dynamic marker" style="border: 1px solid gray;"/>  
+    <img src="../images/tca-img9.png" alt="Clicked Dynamic marker" title="Clicked Dynamic marker" style="border: 1px solid gray;zoom:50%;"/>  
   
     **Note:** The selected state variable in the Expected Output is annotated and highlighted in blue. One or multiple words can be marked as dynamic text.  
 
 4. You can again click the Dynamic Marker icon to deselect the text and remove the dynamic marking.
 5. Click the Dynamic Marker icon next to the list to expand and see the list of dynamic values.  
-<img src="../images/tca-img10.png" alt="Dynamic values" title="Dynamic values" style="border: 1px solid gray;"/>
+<img src="../images/tca-img10.png" alt="Dynamic values" title="Dynamic values" style="border: 1px solid gray;zoom:50%;"/>
 
 
 ## Test Coverage
@@ -86,7 +86,7 @@ The following steps explain the dynamic text marking with an example:
 The **Test Coverage** captures details like how many transitions or Intents are covered for this test suite. It helps add more test cases to cover the missed intents and transitions.
 
 This section explains how to access the Test Coverage and its details.  
-<img src="../images/tca-img11.png" alt="Test coverage" title="Test coverage" style="border: 1px solid gray;"/>  
+<img src="../images/tca-img11.png" alt="Test coverage" title="Test coverage" style="border: 1px solid gray;zoom:50%;"/>  
 
 On the Conversation Testing landing page, in the **Test Suite Details** grid, click any Test Suite and then click the **Test Coverage** tab. Test Coverage contains the following three sub-tabs:
 
@@ -107,7 +107,7 @@ The following details are displayed in the **Transition Coverage** section:
   * **Covered** – Count and percentage of unique transitions covered as part of the Test Case definition against the Total Transitions list.  
   * **Not Covered** – Count and percentage of unique transitions not covered as part of the Test Case definition against the Total Transitions list.  
   
-<img src="../images/tca-img12.png" alt="Transition coverage" title="Transition coverage" style="border: 1px solid gray;"/>
+<img src="../images/tca-img12.png" alt="Transition coverage" title="Transition coverage" style="border: 1px solid gray;zoom:50%;"/>
 
 For example, the VA has total 292 transitions, out of which the coverage is as follows:
 
@@ -132,7 +132,7 @@ The following details are displayed in the grid:
   * Transition Covered  
   * Transition Coverage (%)
 
-<img src="../images/tca-img13.png" alt="Intent coverage" title="Intent coverage" style="border: 1px solid gray;"/>
+<img src="../images/tca-img13.png" alt="Intent coverage" title="Intent coverage" style="border: 1px solid gray;zoom:50%;"/>
 
 You can obtain Node transition details of an intent by clicking the **View Transitions** slider. The **Node Transitions** pop-up displays the following details:  
 
@@ -140,7 +140,7 @@ You can obtain Node transition details of an intent by clicking the **View Trans
   * To Node  
   * Coverage Status
 
-<img src="../images/tca-img14.png" alt="Node Transitions" title="Node Transitions" style="border: 1px solid gray;"/>
+<img src="../images/tca-img14.png" alt="Node Transitions" title="Node Transitions" style="border: 1px solid gray;zoom:50%;"/>
 
 !!! note
 
@@ -153,13 +153,13 @@ You can obtain Node transition details of an intent by clicking the **View Trans
 
 You can sort, search, and filter the data for all the columns in the Intent coverage grid.  
 
-<img src="../images/tca-img15.png" alt="Intent Coverage Operations" title="Intent Coverage Operations" style="border: 1px solid gray;"/>
+<img src="../images/tca-img15.png" alt="Intent Coverage Operations" title="Intent Coverage Operations" style="border: 1px solid gray;zoom:50%;"/>
 
 ### FAQs
 
 In the FAQs tab of Test Coverage, all the unique FAQ names covered in this test suite are displayed.  
 
-<img src="../images/tca-img16.png" alt="FAQ" title="FAQ" style="border: 1px solid gray;"/>
+<img src="../images/tca-img16.png" alt="FAQ" title="FAQ" style="border: 1px solid gray;zoom:50%;"/>
 
 
 ### Small Talk
@@ -171,7 +171,7 @@ All the Small Talks covered in the test cases are displayed in this tab in two c
 
 To know more about Patterns and Groups, see [Small Talk](https://developer.kore.ai/docs/bots/bot-builder-tool/small-talk/).
 
-<img src="../images/tca-img17.png" alt="Small talk" title="Small talk" style="border: 1px solid gray;"/>
+<img src="../images/tca-img17.png" alt="Small talk" title="Small talk" style="border: 1px solid gray;zoom:50%;"/>
 
 !!! note
 

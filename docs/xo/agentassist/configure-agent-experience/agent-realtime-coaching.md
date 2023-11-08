@@ -563,33 +563,33 @@ The Nudge Agent actions are the small messages that pop up on the agent’s scre
 6. Enter a message in the **Nudge Message** box, and then click the tick mark to save it. \
 ![Alt text](./images/enter-positive-nudge-message-image_72.png)
 7. Click **+Add Adherence** to set an adherence for the agent. \
-![Alt text](./images/image_73.png)
+![Alt text](./images/add-adeherence-button-image_73.png)
 8. Select **Utterance** in the **Choose a Trigger** window. \
-![Alt text](./images/image_74.png)
+![Alt text](./images/utterance-trigger-image_74.png)
 9. Click **{set utterances}** to enter the agent’s utterance. \
-![Alt text](./images/image_75.png)
+![Alt text](./images/agent-utterance-for-adherence-image_75.png)
 10. Type and select the utterance. You can select similar utterances from the  utterances list. \
-![Alt text](./images/image_76.png)
+![Alt text](./images/select-adherence-utterances-image_76.png)
 11. Click **Add**, and then click **Save**. \
-![Alt text](./images/image_77.png)
+![Alt text](./images/adding-and-saving-adherences-image_77.png)
 12. Click **Anytime** in the next screen to select one of the options. \
-![Alt text](./images/image_78.png)
+![Alt text](./images/select-adherence-utterance-timer-image_78.png)
     * If you select **Within next (n) messages**, the following screen appears: \
-![Alt text](./images/image_79.png)
+![Alt text](./images/adherence-utterance-within-number-of-messages-image_79.png)
 You can change the number of messages, as required, by clicking the highlighted area.
     * If you select **Within next (n) minutes**, the following screen appears: \
-![Alt text](./images/image_80.png)
+![Alt text](./images/adherence-utterance-within-number-of-minutes-image_80.png)
 You can change the time in minutes, as required, by clicking the highlighted area. \
  \
 The agent gets screens similar to the following on their system for:
         1. Positive Nudges \
-        ![Alt text](./images/image_81.png)
+        ![Alt text](./images/positive-nudge-image_81.png)
         2. Neutral Nudges \
-        ![Alt text](./images/image_82.png)
+        ![Alt text](./images/neutral-nudge-image_82.png)
         3. Warning Nudges \
-        ![Alt text](./images/image_83.png)
+        ![Alt text](./images/warning-nudge-image_83.png)
         4. Critical Nudges \
-        ![Alt text](./images/image_84.png)
+        ![Alt text](./images/critical-nudge-image_84.png)
 
 
 ### Hint Agent
@@ -610,45 +610,45 @@ The Hint Agent actions are small pop-up messages that advise agents to take furt
 
 1. Go to the rule action setup page.
 2. Click **+ Add an action** under section, **Then do…**
-![Alt text](./images/image_85.png)
+![Alt text](./images/adding-hint-action-image_85.png)
 3. Click the **Hint Agent** option in the **Choose an Action** window. \
-![Alt text](./images/image_86.png)
+![Alt text](./images/hint-agent-image_86.png)
 4. Click **{Choose}** and select one of the message types, as highlighted in the following screenshot: \
-![Alt text](./images/image_87.png)
+![Alt text](./images/select-hint-type-image_87.png)
 5. Click **{Choose}** to enter the title of your message, as highlighted in the following screenshot: \
-![Alt text](./images/image_88.png)
+![Alt text](./images/hint-message-image_88.png)
 6. Click the tick mark after entering the title. \
-![Alt text](./images/image_89.png)
+![Alt text](./images/save-hint-message-image_89.png)
 7. Click **{Choose}** to enter the body of your message, as highlighted in the following screenshot: \
-![Alt text](./images/image_90.png)
+![Alt text](./images/hint-message-body-image_90.png)
 8. Click the tick mark after entering the body of your message. \
-![Alt text](./images/image_91.png)
+![Alt text](./images/save-hint-message-body-image_91.png)
 9. Click **{Choose}** to select the display option of your message, as highlighted in the following screenshot: \
-![Alt text](./images/image_92.png)
+![Alt text](./images/hint-message-behavior-image_92.png)
     1. If you select **Auto Close**, the following screen displays: \
-    ![Alt text](./images/image_93.png)
+    ![Alt text](./images/autoclose-behavior-hint-message-image_93.png)
 Click the default value of **5 seconds** to update it, as required. After entering the value, press the Enter key to update the new entry.
     2. If you select **Does not auto close**, the following screen displays: \
     ![Alt text](./images/image_95.png)
 10. Click **+Add Adherence** to set up agent adherence of the rule action. \
-![Alt text](./images/image_96.png)
+![Alt text](./images/adding-hint-adherence-image_96.png)
 11. Select an adherence trigger: \
-![Alt text](./images/image_97.png)
+![Alt text](./images/hint-adherence-trigger-image_97.png)
     3. If you select **Acknowledge Pressed**, the following screen is displayed: \
-    ![Alt text](./images/image_98.png)
+    ![Alt text](./images/hint-acknowledgement-image_98.png)
     4. If you select **Utterance**, follow steps 9-12 of [Steps to set up the Nudge Agent actions](#steps-to-set-up-the-nudge-agent-actions) to complete the process. \
 
 
     The agent gets screens similar to the following on their system for:
 
 * Positive Hints \
-![Alt text](./images/image_99.png)
+![Alt text](./images/positive-hint-widget-image_99.png)
 * Neutral Hints \
-![Alt text](./images/image_100.png)
+![Alt text](./images/neutral-hint-widget-image_100.png)
 * Warning Hints \
-![Alt text](./images/image_101.png)
+![Alt text](./images/warning-hint-widget-image_101.png)
 * Critical Hints \
-![Alt text](./images/image_102.png)
+![Alt text](./images/critical-hint-widget-image_102.png)
 
 
 ### Email Manager
@@ -662,22 +662,22 @@ This feature lets you set a push notification alert to the manager’s desktop. 
 
 1. Go to the rule action setup page.
 2. Click **+ Add an action** under section, **Then do…** \
-![Alt text](./images/image_103.png)
+![Alt text](./images/email-manager-action-step-image_103.png)
 3. Click the **Email Manager** option in the **Choose an Action** window. \
-![Alt text](./images/image_104.png)
+![Alt text](./images/email-manager-button-image_104.png)
 4. Click **{select people}** to enter the email address of one or multiple managers who should receive the notification. \
-![Alt text](./images/image_105.png)
+![Alt text](./images/select-email-addresses-image_105.png)
 5. Enter the email addresses, and then click the tick mark to save them. \
-![Alt text](./images/image_106.png)
+![Alt text](./images/saving-email-addresses-image_106.png)
 **Note**: Use commas to separate multiple email addresses.
 6. Click **{set subject}** to enter a subject for your notification. \
-![Alt text](./images/image_107.png)
+![Alt text](./images/email-subject-image_107.png)
 7. Click the tick mark to save it. \
-![Alt text](./images/image_108.png)
+![Alt text](./images/save-email-subject-image_108.png)
 8. Click **{set body}** to enter the body of the notification. \
-![Alt text](./images/image_109.png)
+![Alt text](./images/email-body-image_109.png)
 9. Enter the notification content and then click the tick mark to save it. \
-![Alt text](./images/image_110x.png)
+![Alt text](./images/save-email-body-image_110.png)
 
 
 
@@ -692,11 +692,11 @@ This feature lets you assign the rule to the intended agents or groups. Currentl
 
 1. Go to the rule action setup page. For help, refer to [Steps to create a new rule](#steps-to-create-a-new-rule).
 2. Click **+Add agents, groups** under the section **Assign this to...** \
-![Alt text](./images/image_110.png)
+![Alt text](./images/assigning-to-agents-groups-image_110.png)
     * The following screen shows the default selection of **All Agents**: \
-    ![Alt text](./images/image_111.png)
+    ![Alt text](./images/assigning-to-all-agents-image_111.png)
 
 3. Click **Save** from the top right corner of the screen. \
-![Alt text](./images/image_112.png)
+![Alt text](./images/saving-rule-configuration-image_112.png)
     * The new rule appears at the bottom of the list of all new rules. \
-    ![Alt text](./images/image_112.png)
+    ![Alt text](./images/saving-rule-configuration-image_112.png)
