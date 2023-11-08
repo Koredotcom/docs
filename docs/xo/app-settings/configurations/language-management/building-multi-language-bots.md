@@ -5,7 +5,7 @@ Consumers are more likely to engage with virtual assistants that communicate in 
 This article takes you through the general context within which multilingual VAs work. It discusses language use in VA-user conversations and in NLU processes, language enablement options, as well as language detection and selection. 
 
 
-# Building a Multilingual VA
+## Building a Multilingual VA
 
 If you want to build a Multilingual VA, there are a few points to keep in mind:
 
@@ -15,7 +15,7 @@ If you want to build a Multilingual VA, there are a few points to keep in mind:
   4. Translation can be automated using pre-built translation services from providers such as Microsoft or Google; or custom services, including any that you may build in-house. Read [here](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/language-management/managing-translation-services/) to learn more.
 
 
-# The Conversation (Bot) Language
+## The Conversation (Bot) Language
 
 Enabling a language requires you to train the model to understand the user’s input and present the responses in the user’s language. To achieve this, the platform allows you to choose a **Conversation (Bot) Language** and **NLU Language** for every language that you would like to enable. In most cases, the Conversation Language can be the same as the NLU Language.
 
@@ -24,7 +24,7 @@ Conversation Language is the one that users use to interact with the assistant. 
 You can also use the automatic response translation feature when you or your team does not have expertise in the user’s language. You can write the responses in your preferred language and the platform will automatically translate them to the user’s language during the conversation. 
 
 
-## **Supported Bot Languages**
+### Supported Bot Languages
 
 The following are the Conversation Languages supported by the Platform:
 
@@ -337,12 +337,12 @@ The following are the Conversation Languages supported by the Platform:
 
 
 
-# The NLU Language
+## The NLU Language
 
 The NLU Language is the one that you train the assistant with, to identify the user’s intents. The NLU model is built using the NLU Language that you choose. This language can be the same as the Conversation language or it can be any other supported language. 
 
 
-## Supported NLU Languages
+### Supported NLU Languages
 
 The following are the NLU Languages supported by the platform. While most of the NLU features are supported in all languages, there are some exceptions, [see here for more details](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/language-management/multi-lingual-bot-behavior).
 
@@ -435,7 +435,7 @@ The following are the NLU Languages supported by the platform. While most of the
 
 
 
-## Language-specific NLU Models 
+### Language-specific NLU Models 
 
 The platform supports language-specific NLU models for 26 languages. These models are pre-trained to understand system entities, concepts, sentiment, etc. in specific languages. 
 
@@ -444,7 +444,7 @@ The platform supports language-specific NLU models for 26 languages. These model
   * These models provide a wide range of configurations for you to fully customize the model behavior. 
 
 
-## The Multilingual NLU Model 
+### The Multilingual NLU Model 
 
 Multilingual NLU model is a language-agnostic model that understands over 100 languages. 
 
@@ -453,12 +453,12 @@ Multilingual NLU model is a language-agnostic model that understands over 100 la
   * This model supports fewer configurations as compared to the language-specific NLU models.
 
 
-# Language Enablement Options
+## Language Enablement Options
 
 The platform offers various options for you to enable additional languages. You can choose a combination of Conversation Language, NLU Language, Input Translation, and Response Translation that suits your needs.
 
 
-## Scenario 1: Enabling a language in which you can train as well
+### Scenario 1: Enabling a language in which you can train as well
 
 Example
 
@@ -490,7 +490,7 @@ Example
   * Input Translation and Response Translation are not required for this flow.
 
 
-## Scenario 2: Enabling a language using another language as NLU Language
+### Scenario 2: Enabling a language using another language as NLU Language
 
 Example
 
@@ -533,7 +533,7 @@ Example
   * You will need to enable the Response Translation option if the responses are defined in a language other than the conversation language.
 
 
-## Scenario 3: Enabling a language using the Multilingual NLU model
+### Scenario 3: Enabling a language using the Multilingual NLU model
 
 Example
 
@@ -576,12 +576,12 @@ Example
   * You will need to enable the Response Translation option if the responses are defined in a language other than the conversation language.
 
 
-# Language Detection and Selection
+## Language Detection and Selection
 
 Multilingual virtual assistants auto-detect and switch language based on the user’s utterance. An exception to this rule is when the user is expected to enter a value against an entity and the user input satisfies that entity’s criteria.
 
 
-## Language Detection
+### Language Detection
 
 There are three ways an assistant can detect the language based upon the user utterance:
 
@@ -595,7 +595,7 @@ The assistant continues to communicate with the user in the same language. If th
 If the assistant fails to detect a user’s language with high confidence, it requests the user to select a preferred language from the list of enabled options.
 
 
-## Language Selection 
+### Language Selection 
 
 1. The virtual assistant identifies user language from every utterance. In case a change is detected, it will get a confirmation from the user regarding the switch and will proceed as per the user response.  These standard responses can be customized using the getCurrentOptions utility, [see here for more](https://developer.kore.ai/docs/bots/advanced-topics/koreutil-libraries/#koreUtilgetCurrentOptions).  
   
