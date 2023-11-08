@@ -2,7 +2,7 @@
 
 To initiate a publish request for a bot.
 
-> [!IMPORTANT]  
+!!! note
     Before calling the API, ensure that at least one channel is enabled for the bot.
 
 
