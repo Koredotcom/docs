@@ -686,8 +686,7 @@ For each status, you can configure the following:
 Messages can be edited by clicking the Edit icon under the Message column. \
 <img src="./images/status-edit.png" alt="Status Edit" title="Status Edit" style="border: 1px solid gray; zoom:80%;">
 
-    7. Each status lets you edit the message text, add variables and select the language.
-
+    7. Each status lets you edit the message text, add variables and select the language.\
     <img src="./images/status-pop-up.png" alt="Status Message Dialog Box" title="Status Message Dilaog Box" style="border: 1px solid gray; zoom:40%;">
 
     8. **To add a variable**, place the cursor where you want to insert the variable, click the **Variable** field, then select the one you need. This adds a variable placeholder in your message text, which will be replaced with contextual information once the message reaches its recipient. You can select more than one variable within the same message. \
