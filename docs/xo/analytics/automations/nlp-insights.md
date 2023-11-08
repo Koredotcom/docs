@@ -5,11 +5,9 @@ The NLP Insights feature helps you gain in-depth insights into the analytics dat
 **To view the NLP Insights dashboard, follow the steps**: 
 
 
-
 1. Click the three dots on the left navigation pane and then click **Analytics**.The **Analytics** panel is displayed with the list of reports.
     
-    <img src="../images/navigating-to-NLP-insights.png" alt="Navigating to NLP Insights" title="Navigating to NLP Insights" style="border: 1px solid gray; zoom:80%;"> 
-
+   <img src="../images/navigating-to-NLP-insights.png" alt="Navigating to NLP Insights" title="Navigating to NLP Insights" style="border: 1px solid gray; zoom:80%;"> 
 
 2. Click the **NLP Insights** under the **Automation** section of the **Analytics** panel. The **NLP Insights dashboard** is displayed on the right side of the page.
 3. Select appropriate filters on the dashboard and click **Apply**.
@@ -43,8 +41,6 @@ An intent refers to the goal the customer has in mind when typing in a question 
 See the following table and features section to know more:
 
 <img src="../images/intent-found.png" alt="Intent Found" title="Intent Found" style="border: 1px solid gray; zoom:80%;">
-
-
 
 The following is an example of Intent Found:
 
@@ -200,7 +196,7 @@ In an unhandled utterance, the following new fields are available:
 * **Node Name**– Name of the node in which the utterance is not handled
 * **Task Name** – Name of the task in which the utterances are unidentified on an entity, message, or confirmation nodes.
 
-<img src="../images/unhandled-utterances.png" alt="Unhandled Utterances" title="Unhandled Utterances" style="border: 1px solid gray; zoom:80%;">
+   <img src="../images/unhandled-utterances.png" alt="Unhandled Utterances" title="Unhandled Utterances" style="border: 1px solid gray; zoom:80%;">
 
 
 * Group by functionality is available for **_Utterances, Traits, Prompt Type, Task Name, and Node Name_**
@@ -417,7 +413,7 @@ The following list details the features available in NLP Insights for Intent Fou
 
    <img src="../images/NLP-insights-analysis.png" alt="NLP Insights Analysis" title="NLP Insights Analysis" style="border: 1px solid gray; zoom:80%;">
 
-   !!! note
+!!! note
 
     The NLP Insights page shows the conversations from the last 24 hours by default. You can filter the insights for a selected period – use the Date drop-down to select 24 hours, the last 7 days, or a custom period.
 
