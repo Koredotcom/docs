@@ -817,7 +817,7 @@ Tagalog
 </table>
 
 
-* In these cases, developer concepts are not supported in entity extraction
+'*' - In these cases, developer concepts are not supported in entity extraction
 
 
 ## NLP Support
