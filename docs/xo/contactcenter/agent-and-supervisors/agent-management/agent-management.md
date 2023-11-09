@@ -133,7 +133,7 @@ To configure the digital experience, follow these steps:
 1. **Enable** or **Disable** the digital experience using the toggle switch.
 2. **CAPACITY BY CHANNEL TYPE** – This lets you set the maximum number of sessions an agent can handle simultaneously in a specific channel (Digital, Email, or Message).
 3. **Language Support** – Allows you to enable or disable the languages known by the user and sets the proficiency level (_Novice, Average_, _Good, or Expert_). To add more languages, see  [System Setup > Languages & Speech](https://docs.kore.ai/smartassist/settings/general-settings/language-management/#). 
-<img src="../images/new-user-settings.png" alt="New User Settings" title="New User Settings" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/new-user-settings.png" alt="New User Settings" title="New User Settings" style="border: 1px solid gray; zoom:80%;">
 
 #### Voice Experience
 
@@ -143,10 +143,10 @@ In the **Voice Experience** section, the following options are available:
 
 * **Enable Voice Settings** – Enabling this option adds the user to the voice channel so that they can handle incoming calls.
 * **Language Support** – Select the language for voice support from the given options and set the language proficiency level. To add more languages, see [System Setup > Languages & Speech](https://docs.kore.ai/smartassist/settings/general-settings/language-management/#). 
-<img src="../images/voice-experience.png" alt="Voice Experience Dialog Box" title="Voice Experience Dialog Box" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/voice-experience.png" alt="Voice Experience Dialog Box" title="Voice Experience Dialog Box" style="border: 1px solid gray; zoom:80%;">
 
 * **Voicemail** – Enabling this option lets the user select the maximum number of voicemails an agent can receive. 
-<img src="../images/voicemail.png" alt="Voicemail Dialog Box" title="Voicemail Dialog Box" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/voicemail.png" alt="Voicemail Dialog Box" title="Voicemail Dialog Box" style="border: 1px solid gray; zoom:80%;">
 
 ### Queues & Skills
 
@@ -158,7 +158,7 @@ To assign queues to a user, follow these steps:
 
 1. Type a **Queue Name** in the field, then select the one you need from the list. Clicking into the _Skills_ field shows the list of available options. The list only contains queues that are already created. To add a queue, see [Routing > Queues](https://docs.kore.ai/smartassist/routing/queues/).
 2. Once you select a queue, it will be added to the user’s list of assigned queues. If you have more than one queue assigned to the same user, you can **select or deselect the queues** to assign; and **set queues as _Preferred_**. Queues set as such will take priority over others when the user receives incoming queries. 
-<img src="../images/queues.png" alt="Queues Dialog Box" title="Queues Dialog Box" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/queues.png" alt="Queues Dialog Box" title="Queues Dialog Box" style="border: 1px solid gray; zoom:80%;">
 
 ### Skills
 
@@ -169,12 +169,12 @@ To assign skills to a user:
 1. **Type a skill name**, and select it from the dropdown list to add it to the user’s skill list. Clicking into the _Skills_ field shows the list of available options. The list only contains skills that are already created. To add more skills, see [Routing > Skills](https://docs.kore.ai/smartassist/skills/skills/).
 2. Once you select a skill, **choose the proficiency level**  (_Novice, Average, Good,_ or _Expert_).
 3. You can remove a skill by clicking the **Delete (bin)** button next to it.
-<img src="../images/skills.png" alt="Skills Dialog Box" title="Skills Dialog Box" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/skills.png" alt="Skills Dialog Box" title="Skills Dialog Box" style="border: 1px solid gray; zoom:80%;">
 
 ### save a User
 
 To save the user, click the **Add** button at the bottom of the New User window. This is available regardless of the section that you are currently navigating.
-<img src="../images/add-new-user-button.png" alt="Save New User" title="Save New User" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/add-new-user-button.png" alt="Save New User" title="Save New User" style="border: 1px solid gray; zoom:80%;">
 
 !!! Notes
 
@@ -189,7 +189,7 @@ To save the user, click the **Add** button at the bottom of the New User window.
 To edit a user, follow these steps:
 
 1. On the **Agents** page, click the **Edit** icon corresponding to the user you want to edit.
-<img src="../images/edit-user-button.png" alt="Edit User Button" title="Edit User Button" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/edit-user-button.png" alt="Edit User Button" title="Edit User Button" style="border: 1px solid gray; zoom:80%;">
 
 2. On the **Edit User** window, make the necessary edits.
 3. Click **Save**.
@@ -200,9 +200,9 @@ To delete a user, follow these steps:
 
 1. On the **Agents** page, click the **...** icon corresponding to the user you want to delete.
 2. Click **Delete**. 
-<img src="../images/delete-user.png" alt="Delete User Button" title="Delete User Button" style="border: 1px solid gray; zoom:60%;"> 
+<img src="../images/delete-user.png" alt="Delete User Button" title="Delete User Button" style="border: 1px solid gray; zoom:80%;"> 
 Alternatively, edit the user, and on the **Edit User** window, click the **Delete (bin)** icon on the bottom left. 
-<img src="../images/delete-button.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/delete-button.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
 
 3. You will be asked to confirm your choice.
 
@@ -255,14 +255,14 @@ To add agents to a group, you either need to add a new agent to the Contact Cent
 3. **Save** the agent record.
 
 To learn more about adding or editing agents, please see [User Management](https://docs.kore.ai/smartassist/getting-started/agent-management/).
-<img src="../images/group-dropdown.png" alt="Select Group" title="Select Group" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/group-dropdown.png" alt="Select Group" title="Select Group" style="border: 1px solid gray; zoom:80%;">
 
 ### Edit an Agent Group
 
 To modify an agent group, follow these steps:
 
 1. On the **Agent Groups** page, hover over the group that you want to edit, then click the **Edit** icon next to the group name;
-<img src="../images/edit-group-button.png" alt="Edit Group Name" title="Edit Group Name" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/edit-group-button.png" alt="Edit Group Name" title="Edit Group Name" style="border: 1px solid gray; zoom:80%;">
 
 2. In the **Edit Group** window, make the required changes;
 3. Click **Save**.
@@ -277,7 +277,7 @@ To delete an agent group, follow these steps:
 
 1. On the **Agent Groups** page, click the **Edit** icon next to the group you want to delete.
 2. In the **Edit Group** window, click the **Delete Agent Group** icon at the bottom left.
-<img src="../images/delete-button.png" alt="Delete an Agent Group" title="Delete an Agent Group" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/delete-button.png" alt="Delete an Agent Group" title="Delete an Agent Group" style="border: 1px solid gray; zoom:80%;">
 
 ## **Agent Status Management**
 
@@ -305,20 +305,20 @@ To create a new agent status, follow these steps:
     2. **Status Type** – Select the status type: _Away_ or _Busy_.
     3. **Description** – Type in a brief description of the status.
 3. Click **Add & Exit** to create the status and exit the window or click **Add & Stay** to create the status and continue to a new one. 
-<img src="../images/new-status-dialog-box.png" alt="New Status Dialog Box" title="New Status Dialog Box" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/new-status-dialog-box.png" alt="New Status Dialog Box" title="New Status Dialog Box" style="border: 1px solid gray; zoom:80%;">
 
 4. The **_status created successfully_** success message is displayed on-screen and the new status is added to the **Agent Status** list. 
-<img src="../images/status-created.png" alt="New Status Created" title="New Status Created" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/status-created.png" alt="New Status Created" title="New Status Created" style="border: 1px solid gray; zoom:80%;">
 
 ### Edit an Agent Status
 
 To edit an existing **Agent status** entry, follow these steps:
 
 1. In the **Agent Status** section, click the **Edit** icon corresponding to the status entry that you want to modify.
-<img src="../images/status-edit-button.png" alt="Status Edit Icon" title="Status Edit Icon" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/status-edit-button.png" alt="Status Edit Icon" title="Status Edit Icon" style="border: 1px solid gray; zoom:80%;">
 
 2. In the **Edit Status** window, edit the **Status Name**, **Status Type**, and/or **Description**, then click **Update**.
-<img src="../images/edit-status-dialog-box.png" alt="Edit Status Dialog Box" title="Edit Status Dialog Box" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/edit-status-dialog-box.png" alt="Edit Status Dialog Box" title="Edit Status Dialog Box" style="border: 1px solid gray; zoom:80%;">
 
 3. The **Status updated successfully** message appears in the window and the modified values reflect in the **Agent Status** window.
 <img src="../images/status-updated.png" alt="Status Updated" title="Status Updated" style="border: 1px solid gray; zoom:80%;">
@@ -354,12 +354,12 @@ You can customize the following fields:
     3. Message to Agent
         1. Rule (default 30 seconds)
         2. Message 
-        <img src="../images/edit-login-prep.png" alt="Edit Login Prep" title="Edit Login Prep" style="border: 1px solid gray; zoom:60%;">  
+        <img src="../images/edit-login-prep.png" alt="Edit Login Prep" title="Edit Login Prep" style="border: 1px solid gray; zoom:80%;">  
 
 3. Click **Update** to save the changes. 
-<img src="../images/update-login-prep-status.png" alt="Update Login Prep" title="Update Login Prep" style="border: 1px solid gray; zoom:60%;"> 
+<img src="../images/update-login-prep-status.png" alt="Update Login Prep" title="Update Login Prep" style="border: 1px solid gray; zoom:80%;"> 
 A confirmation message is displayed. 
-<img src="../images/login-prep-enabled.png" alt="Login Prep Enabled" title="Login Prep Enabled" style="border: 1px solid gray; zoom:60%;"> 
+<img src="../images/login-prep-enabled.png" alt="Login Prep Enabled" title="Login Prep Enabled" style="border: 1px solid gray; zoom:80%;"> 
 Once enabled, the Login Prep becomes the default status for every new login for the agent. [Learn more](https://docs.kore.ai/smartassist/console/interacting-with-customers/#Behavior_When_Login_Prep_Status_is_Enabled).
 
 ## **Agent Settings**
