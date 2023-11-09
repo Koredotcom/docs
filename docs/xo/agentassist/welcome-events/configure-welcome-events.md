@@ -18,13 +18,12 @@ Steps to configure Welcome Events for Non-Universal Bots:
 <img src="../images/configure-welcome-events.png" alt="configure welcome events" title="configure welcome events" style="border: 1px solid gray; zoom:80%;">
 
     **Note**: The bot-level settings for Welcome Event are not applicable for AgentAssist. If the same bot is used for automation (prior to agent transfer), the bot-level event settings are honored.
-    
+
 2. Click **Select Dialog** and select the appropriate event from the **Automation** dropdown.
 <img src="../images/select-dialog.png" alt="select dialog" title="select dialog" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **Save** to configure the welcome event.
-<img src="..images/saving-welcome-event-configuration.png" alt="
-saving welcome event config" title="saving welcome event config" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/saving-welcome-event-configuration.png" alt="saving welcome event config" title="saving welcome event config" style="border: 1px solid gray; zoom:80%;">
 
 
 ### Configure Welcome Events for a Universal Bot
