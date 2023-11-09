@@ -144,47 +144,49 @@ For example, you can PUT a value into the session using the `UserSession` variab
 var name = UserContext.get("firstName")+UserContext.get("lastName");
 UserSession.put("fullName") = name;
 ```
+
 * **UserSession** – A key/value pair that you can define for this specific user for all assistants in an enterprise. 
 
-    For example, you may want to store a user location to make it available to all assistants, such as a user home address for commerce, transportation, and home delivery services. 
+For example, you may want to store a user location to make it available to all assistants, such as a user home address for commerce, transportation, and home delivery services. 
 
-    You can persist default location data as **HomeLocation (UserSession)** with the following JavaScript code: 
+You can persist default location data as **HomeLocation (UserSession)** with the following JavaScript code: 
 
-    ```
-    var location = {
-    "title": labels[location],
-    "value": {
-    "latitude": location.latitude,
-    "longitude": request.location.longitude
-    }
-    };
-    UserSession.put('HomeLocation', location, '20000');
-    ```
+```
+var location = {
+"title": labels[location],
+"value": {
+"latitude": location.latitude,
+"longitude": request.location.longitude
+}
+};
+UserSession.put('HomeLocation', location, '20000');
+```
 
 * **BotUserSession** – A key/value pair that you can define to a specific bot based on the inputs by a specific user. For example, you may want to persist a user location for more than one task of a Bot. 
 
     For a travel bot, the user may be able to book a flight and a hotel based on the same home and destination addresses. 
     
-    For example, you can persist the default home and destination data as **HomeLocation (BotUserSession)** and **DestinationLocation (BotUserSession)** with the following JavaScript code: 
+    For example, you can persist the default home and destination data as **HomeLocation (BotUserSession)** and **DestinationLocation (BotUserSession)** with the following JavaScript code:
 
-    ```
-    var homelocation = {
-    "title": labels[request.sourceLocation],
-    "value": {
-    "latitude": request.sourceLocation.latitude,
-    "longitude": request.sourceLocation.longitude
-    }
-    };
-    BotUserSession.put('HomeLocation', homelocation, '20000');
-    var destlocation = {
-    "title": labels[request.destLocation],
-    "value": {
-    "latitude": request.destLocation.latitude,
-    "longitude": request.destLocation.longitude
-    }
-    };
-  BotUserSession.put('DestinationLocation', destlocation, '20000');
-  ```
+```
+var homelocation = {
+"title": labels[request.sourceLocation],
+"value": {
+"latitude": request.sourceLocation.latitude,
+"longitude": request.sourceLocation.longitude
+}
+};
+BotUserSession.put('HomeLocation', homelocation, '20000');
+var destlocation = {
+"title": labels[request.destLocation],
+"value": {
+"latitude": request.destLocation.latitude,
+"longitude": request.destLocation.longitude
+}
+};
+BotUserSession.put('DestinationLocation', destlocation, '20000');
+```
+
 
 ## Standard Keys
 
