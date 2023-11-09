@@ -42,12 +42,12 @@ Steps to configure Welcome Events for a Universal Bot:
 
 1. Click the **Select Bot** dropdown to select the child bot (only child bots of the selected UB appear). \
 <img src="../configure-welcome-events/images/stesps-to-configure-welcome-event-child-bot.png" alt="
-steps to configure welcome events child bot" title="free text" style="border: 1px solid gray; zoom:80%;">
+steps to configure welcome events child bot" title="steps to configure welcome event child bot" style="border: 1px solid gray; zoom:80%;">
 
 2. Click the **Automation** dropdown to select dialog tasks associated with the selected bot. \
 <img src="../configure-welcome-events/images/stesps-to-configure-welcome-event-2.png" alt="
-steps to configure welcome events 2" title="free text" style="border: 1px solid gray; zoom:80%;">
+steps to configure welcome events 2" title="steps to configure welcome events 2" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **Save** to configure the welcome event. \
 <img src="../configure-welcome-events/images/saving-welcome-event-configuration.png" alt="
-free text" title="free text" style="border: 1px solid gray; zoom:100%;">
+saving welcome event configuration" title="saving welcome event configuration" style="border: 1px solid gray; zoom:100%;">
