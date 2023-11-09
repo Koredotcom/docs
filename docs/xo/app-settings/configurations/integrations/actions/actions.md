@@ -4,7 +4,9 @@ The Kore.ai XO Platform offers pre-built integrations with popular business appl
 
 **Watch a Short Video on System Integrations**
 
-<video src="https://https://vimeo.com/715550596" controls></video>
+[![System Integration](img src="../images/actions-video-intro.png")](https://vimeo.com/715550596 "System Integration")
+
+
 **<&lt;VIDEO HERE>>**
 
 
