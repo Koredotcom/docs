@@ -14,7 +14,7 @@ The **Advanced Conversation Analytics** feature provides a more detailed view of
 
 1. Click the three dots on the left navigation pane and then click **Analytics**.The **Analytics** panel is displayed with the list of reports.
 
-    <img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/navigating-to-conversations-history-dashboard.png" alt="Navigating to Conversations History Dashboard" title="Navigating to Conversations History Dashboard" style="border: 1px solid gray; zoom:80%;">
 
 
 2. Click the **Conversations History dashboard** under the **Automation** section of the **Analytics** panel. The **Conversations History dashboard** is displayed on the right side of the page.
@@ -197,16 +197,16 @@ To view the prebuilt filters, follow the steps:
 
 1. On the **Conversations History** dashboard page, the prebuilt filters are categorized and listed under the **Filter Views** section.
 
-    <img src="../images/view-prebuilt-filters.png" alt="View Prebuilt Filters" title="View Prebuilt Filters" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/view-prebuilt-filters-1.png" alt="View Prebuilt Filters-1" title="View Prebuilt Filters" style="border: 1px solid gray; zoom:80%;">
 
 
 2. Click the **Read More** link corresponding to the name of the filter type to see the configuration details of each conversation filter type. 
 
-    <img src="../images/view-prebuilt-filters-1.png" alt="View Prebuilt Filters-1" title="View Prebuilt Filters-1" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/view-prebuilt-filters-2.png" alt="View Prebuilt Filters-2" title="View Prebuilt Filters-1" style="border: 1px solid gray; zoom:80%;">
 
 3. Click any prebuilt filter name to access the **Conversations History** panel where relevant data is displayed.
 
-    <img src="../images/view-prebuilt-filters-2.png" alt="View Prebuilt Filters-2" title="View Prebuilt Filters-2" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/view-prebuilt-filters-3.png" alt="View Prebuilt Filters-3" title="View Prebuilt Filters-2" style="border: 1px solid gray; zoom:80%;">
 
 
 ### Create a Custom Conversation Filter
@@ -222,8 +222,7 @@ A **Conversation Filter** helps group and display selective conversation history
 
 2. On the **Create Conversation Filter** panel, provide inputs for the following fields:
 
-
-<table>
+    <table>
   <tr>
    <td>
     ld
@@ -614,14 +613,13 @@ A **Conversation Filter** helps group and display selective conversation history
    </td>
   </tr>
 </table>
-
-
 3. Click **Save**.
 
-    <img src="../images/create-conversation-filter-2.png" alt="Create Conversation Filter-2" title="Create Conversation Filter-2" style="border: 1px solid gray; zoom:80%;">
+
+<img src="../images/create-conversation-filter-2.png" alt="Create Conversation Filter-2" title="Create Conversation Filter-2" style="border: 1px solid gray; zoom:80%;">
 
 
-4. The new custom filter is listed on the Filter Views page. The conversations are grouped and displayed Conversations History Dashboard based on the inputs provided on the Filter Views page.
+The new custom filter is listed on the Filter Views page. The conversations are grouped and displayed Conversations History Dashboard based on the inputs provided on the Filter Views page.
 
 **Edit a Conversation Filter**
 
@@ -638,7 +636,7 @@ You can edit one or more fields for an existing conversation filter.
  3. Modify the required fields on the **Edit Conversation Filter** window.
 4. Click **Apply**.
 
-   <img src="../images/edit-a-conversation-filter-2.png" alt="Edit a Conversation Filter 2" title="Edit a Conversation Filter 2" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../images/edit-a-conversation-filter-2.png" alt="Edit a Conversation Filter 2" title="Edit a Conversation Filter 2" style="border: 1px solid gray; zoom:80%;"> 
 
 
 ## Filter Criteria
@@ -679,12 +677,11 @@ To add a custom label in addition to the default label for a conversation, follo
 2. In the **Labels** window, scroll down and click **+ Add**.
 3. Enter the **label name**, and click the **confirm** icon.
 
-!!! note
+    !!! note
 
     You can select a different label color by clicking the color icon and using the color palette.
 
-<img src="../images/add-a-custom-label-2.png" alt="Add a Custom Label-2" title="Add a Custom Label-2" style="border: 1px solid gray; zoom:80%;">
-
+    <img src="../images/add-a-custom-label-2.png" alt="Add a Custom Label-2" title="Add a Custom Label-2" style="border: 1px solid gray; zoom:80%;">
 4. Click **Save**.
 
 
@@ -850,8 +847,6 @@ The list of events triggered during a conversation is displayed below.
   </tr>
 </table>
 
-
-
 ### Enriched Chat Transcript
 
 The **Enriched Chat Transcript** feature provides a more detailed view of the conversation, with all the events associated with each message displayed in the chat transcript slider. This can be useful for understanding the conversation at a granular level and identifying any issues that may have arisen. It can also help train the virtual assistant and improve its performance.
@@ -875,7 +870,7 @@ The **Event** labels that appear under **Conversation Events** are displayed aga
 
 **Feedback User Type Label**
 
-For conversations with the customer response to a feedback survey, the feedback user type label is added automatically based on the analytics data. This label indicates if a customer is a **_promote_**r or a **_detractor_**.
+For conversations with the customer response to a feedback survey, the feedback user type label is added automatically based on the analytics data. This label indicates if a customer is a **_promote_** or a **_detractor_**.
 
 Hovering the mouse on the label displays the following data:
 
@@ -915,8 +910,7 @@ The Enriched Chat Transcript is visible on the Chat History panel.
 * The Chat History window displays the conversation flow. In addition, the following information is displayed on the side pane:
     * **Date Filter** dropdown to select the period of Chat History.
 
-    <img src="../images/chat-history-1.png" alt="Chat History 1" title="Chat History 1" style="border: 1px solid gray; zoom:80%;">
-
+        <img src="../images/chat-history-1.png" alt="Chat History 1" title="Chat History 1" style="border: 1px solid gray; zoom:80%;">
 
     * The date-wise information summary on the following:
         * Conversation channel.
@@ -931,8 +925,8 @@ The Enriched Chat Transcript is visible on the Chat History panel.
             * Tasks completed
             * Failed Tasks
         * Language (of interaction)
-        * Event labels tagged to the conversation history. 
-        
+        * Event labels tagged to the conversation history.
+       
         <img src="../images/chat-history-2.png" alt="Chat History 2" title="Chat History 2" style="border: 1px solid gray; zoom:80%;">
 
         * Trace ID – A unique ID assigned to each incoming message. The ID is also included in all the logs maintained by the Platform. When you hover over the message, the info icon appears. Click the **Info** icon to view the **Message ID** associated with the message.
