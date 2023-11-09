@@ -5,7 +5,7 @@ Welcome Events are pre-configured messages or prompts that are automatically tri
 
 Managers can configure Welcome Events to provide consistent and relevant information to agents at the start of a conversation. These events can be used for both chat and voice interactions.
 
-You can configure Welcome Events for AgentAssist using Standard/Non-Universal Bots or a Universal Bot (UB). To learn more about the types of bots, see [Universal Bots](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/universal-bots/#Highlights){:target="_blank" rel="noopener"}.
+You can configure Welcome Events for AgentAssist using Standard/Non-Universal Bots or a Universal Bot (UB). To learn more about the types of bots, see [Universal Bots](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/universal-bots/#Highlights){:target="_blank"}.
 
 
 ### Configure Welcome Events for a Non-Universal Bot
