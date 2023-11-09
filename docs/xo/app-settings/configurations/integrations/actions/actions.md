@@ -1,5 +1,7 @@
 # **Actions**
 
+<base target="_blank">
+
 The Kore.ai XO Platform offers pre-built integrations with popular business applications to exchange data. You can configure and enable actions for Service Now, Salesforce, Zendesk, Hubspot, and others. Each of these integrations provides a full conversation flow definition, a low-code interface for API integration, and pre-built response mapping and create dialog tasks with pre-built templates without need to worry about developer assistance.
 
 **Watch a Short Video on System Integrations**
@@ -7,18 +9,13 @@ The Kore.ai XO Platform offers pre-built integrations with popular business appl
 [![System Integration](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/images/actions-video-intro.png)](https://vimeo.com/715550596 "System Integration")
 
 
-**<&lt;VIDEO HERE>>**
-
-
 ## Steps to use the actions or pre-built integrations
-
-
 
 1. Enable the Developer or a User to do a single-click authorization.
 2. Enable an integration to exchange data between two systems during the dialog task execution.
 3. Enable an integration and create the dialog tasks using the preconfigured templates supported by the integration.
 
-The **Actions **module is available under the **Build > Integrations** menu.
+The **Actions** module is available under the **Build > Integrations** menu.
 
 
 ## Actions Enablement
@@ -47,30 +44,20 @@ Identification and authorization token generated or provided by a web applicatio
 
 Actions can be authorized based on the authorization profiles that are supported by the third-party  integrations.  Users can use pre-authorized credentials provided by the developer during the configuration process or their own authorization profile during the configuration process to let the end user authorize during the conversation.
 
+!!! note
 
-```
-Note: An email notification is sent to all the bot developers when the authorization token expires for any of the Prebuilt Action Integrations in the bot. The notification requests the bot developer to reauthorize. The integration moves to an error state as soon as the token expires. The service call fails during the run time, upon expiry of authorization token and an error message, "Something went wrong" is displayed to the end-user.
-```
+    An email notification is sent to all the bot developers when the authorization token expires for any of the Prebuilt Action Integrations in the bot. The notification requests the bot developer to reauthorize. The integration moves to an error state as soon as the token expires. The service call fails during the run time, upon expiry of authorization token and an error message, "Something went wrong" is displayed to the end-user.
 
-
-The email template which is sent to the bot developer upon token expiry is as follows: \
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
+The email template which is sent to the bot developer upon token expiry is as follows:  
+<img src="../images/actions-img1.png" alt="Email Template" title="Email Template" style="border: 1px solid gray;zoom:50%;"/>
 
 
 ## Available Actions and How to Configure Them
 
 The available Actions/Integrations are listed in the table below. Go to **Build > Integrations > Actions** and click the **Action** you want to configure in the Kore.ai XO platform. The page with Instructions and Configuration settings will slide out. For step-by-step instructions on how to configure an action, click the Learn more link for the action in the table below.
 
- 
 
-
-<table>
+<table border="1">
   <tr>
    <td><strong>Actions</strong>
    </td>
@@ -290,36 +277,16 @@ Disabling the integration action will change its status from enabled to disabled
 
 **Steps to disable an integration.**
 
-
-
 1. To **disable** the integration, hover over it in the actions list and click the **Settings** icon in the top right corner.
-2. If the action/integration is enabled, you will have the option to **Disable** it, and vice versa. \
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
- \
+2. If the action/integration is enabled, you will have the option to **Disable** it, and vice versa.  
+<img src="../images/actions-img2-integrations_disable.png" alt="Disable integration" title="Disable integration" style="border: 1px solid gray;zoom:50%;"/>
 
 3. Once you Disable an action, the authorization configurations related to that particular action are disabled with no changes.
-4. The service node status changes from **Integration Service** to **Custom Service**. \
+4. The service node status changes from **Integration Service** to **Custom Service**.  
+<img src="../images/actions-img3-integrations_disable1.png" alt="Node status change" title="Node status change" style="border: 1px solid gray;zoom:50%;"/>
 
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
- \
-
-5. If you need to enable a previously disabled action, you can do so by hovering over it in the actions list and clicking on the Settings icon located in the top right corner as shown in the figure below. \
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
- \
+5. If you need to enable a previously disabled action, you can do so by hovering over it in the actions list and clicking on the Settings icon located in the top right corner as shown in the figure below.  
+<img src="../images/actions-img4-integrations_disable2.png" alt="Re-enable integration" title="Re-enable integration" style="border: 1px solid gray;zoom:50%;"/>
 
 6. You will be redirected to re-authorize the action with your external integration account credentials. For more information related to how to authorize an integration action, see Authorization article.
 
@@ -330,25 +297,15 @@ You can delete an external integration that is no longer in use.
 
 **Steps to delete an integration:**
 
-
-
 1. To **delete** the integration, hover over it in the actions list and click the **Settings** icon in the top right corner.
-2. Choose the option to **Delete** the action/integration. \
+2. Choose the option to **Delete** the action/integration.  
+<img src="../images/actions-img5-integrations_delete.png" alt="Delete integration" title="Delete integration" style="border: 1px solid gray;zoom:50%;"/>
 
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
- \
- \
 **Warning**: Deletion is permanent and cannot be undone. You are asked to confirm your choice, so make sure this is exactly what you want to do. Once an action is **Deleted**, all authorization configurations related to that particular integration are deleted. \
 
 
-
 ## More Like This
-
-
 
 * [Kore.ai Integrations Framework Guide](https://info.kore.ai/hubfs/1.%20Kore.ai%20Resources/XO%20Platform/Documents/Technical%20Documents%20v9.0/Kore.ai%20XO%20Platform%20Integration%20Capabilities_Sep%202022.pdf)
 * [Configure Salesforce Integrations Actions](https://vimeo.com/761445731) (Video: 3m15s)
