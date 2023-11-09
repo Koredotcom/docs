@@ -237,7 +237,7 @@ There are two pre-configured groups available:
 
 To create a new agent group, follow these steps:
 
-1. On the _Agent Groups_ page, click**Add Group**.
+1. On the _Agent Groups_ page, click **Add Group**.
 <img src="../images/add-group-button.png" alt="Add Group Button" title="Add Group Button" style="border: 1px solid gray; zoom:80%;">
 
 2. In the **New Group** window, provide the input for the following fields:
