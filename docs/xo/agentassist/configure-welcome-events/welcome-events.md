@@ -14,73 +14,40 @@ Steps to configure Welcome Events for Non-Universal Bots:
 
 
 
-1. Go to **CONFIGURATION > Welcome Event > Configure Welcome Event**. \
+1. Go to **CONFIGURATION > Welcome Event > Configure Welcome Event**.\
+<img src="./images/configure-welcome-events.png" alt="
+configure welcome events" title="configure welcome events" style="border: 1px solid gray; zoom:80%;">\
+**Note**: The bot-level settings for Welcome Event are not applicable for AgentAssist. If the same bot is used for automation (prior to agent transfer), the bot-level event settings are honored.\
+2. Click **Select Dialog** and select the appropriate event from the **Automation** dropdown. \
+<img src="../configure-welcome-events/images/select-dialog.png" alt="
+select dialog" title="select dialog" style="border: 1px solid gray; zoom:80%;">
 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
- \
- ![Alt text](images/configure-welcome-events.png)
-**NOTE**: The bot-level settings for Welcome Event are not applicable for AgentAssist. If the same bot is used for automation (prior to agent transfer), the bot-level event settings are honored.
-2. Click **Select Dialog **and select the appropriate event from the **Automation** dropdown. \
-
-![alt_text](images/image2.png "image_tooltip")
-
-3. Click **Save **to configure the welcome event. \
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-
+3. Click **Save** to configure the welcome event. \
+<img src="../configure-welcome-events/images/saving-welcome-event-configuration.png" alt="
+saving welcome event config" title="saving welcome event config" style="border: 1px solid gray; zoom:80%;">
 
 
 ### Configure Welcome Events for a Universal Bot
 
 If a Universal Bot is selected on the main bot selector, two dropdowns appear for Event Dialogue task selection.
+<img src="../configure-welcome-events/images/universal-bot-selected-screen-1.png" alt="
+universal bot selected screen" title="universal bot selected screen" style="border: 1px solid gray; zoom:80%;">
 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
- \
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
-
+<img src="../configure-welcome-events/images/universal-bot-selected-screen-2.png" alt="
+universal bot selected screen 2" title="universal bot selected screen 2" style="border: 1px solid gray; zoom:80%;">
 
 Steps to configure Welcome Events for a Universal Bot:
 
 
 
 1. Click the **Select Bot** dropdown to select the child bot (only child bots of the selected UB appear). \
-
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.png "image_tooltip")
+<img src="../configure-welcome-events/images/stesps-to-configure-welcome-event-child-bot.png" alt="
+steps to configure welcome events child bot" title="steps to configure welcome event child bot" style="border: 1px solid gray; zoom:80%;">
 
 2. Click the **Automation** dropdown to select dialog tasks associated with the selected bot. \
-
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image7.png "image_tooltip")
+<img src="../configure-welcome-events/images/stesps-to-configure-welcome-event-2.png" alt="
+steps to configure welcome events 2" title="steps to configure welcome events 2" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **Save** to configure the welcome event. \
-
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image8.png "image_tooltip")
+<img src="../configure-welcome-events/images/saving-welcome-event-configuration.png" alt="
+saving welcome event configuration" title="saving welcome event configuration" style="border: 1px solid gray; zoom:100%;">
