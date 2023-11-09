@@ -109,7 +109,7 @@ var userRepository = {
 "title": _labels_[repository],
 "value": repository
 };
-`EnterpriseContext.put('Gitrepository', userRepository, 200000);
+EnterpriseContext.put('Gitrepository', userRepository, 200000);
 ```
 
 * **BotContext** – A key/value pair available to all users of this specific bot. For example, you may want to set up a default currency for financial transactions for a session based on a user’s location. You can persist the default currency data as **currency (Bot Context)** with the following JavaScript code:
@@ -206,9 +206,9 @@ In addition to session and context keys, there are Kore.ai variable placeholders
     }
 }
 ```
-`To use the `_labels_` key in a response: 
+<p>To use the <code>_labels_</code> key in a response:</p> 
 
-`print('<;a href="https://app.asana.com/0/' + workspace.id + '/' + id + '/f" target="_blank">' + title + '&lt;/a> in workspace '+_labels_[workspace.id]);`
+`print('<a href="https://app.asana.com/0/' + workspace.id + '/' + id + '/f" target="_blank">' + title + '</a> in workspace '+_labels_[workspace.id]);`
 
 <ul><li><b>_tenant_</b> – Used to return the tenant for the enterprise when defined. For example, <i>JIRA</i> requires a tenant for URLs, such as <b>myteam</b>, in <code>https://myteam.atlassian.net/browse/RTM-1978</code>. You can use the <code>_tenant_</code> key to build a link in a task response such as: <code>var title = request.fields.issuetype.name + ' <a href ="https://' + _tenant_ + '/browse/' + response.key + '" target = "_blank">' + request.fields.summary + '</a>  has been created.';</code></li>
 <li><b>_fields_</b> – Used to return an action task field input provided by the end-user that is not part of a payload response. For example, in a <i>JIRA</i> action task, the end-user is prompted to enter a workspace name. You can use the <code>_fields_</code> key to store the end-user input as: 
