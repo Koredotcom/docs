@@ -41,9 +41,9 @@ The JavaScript syntax to GET, PUT, or DELETE a key/value pair for each context t
 For example:
 
 ```
-    BotContext.put("topicSessionVariable","music",2000);
-    UserSession.put("firstName","Mary",20000);
-    UserContext.get("firstName");
+BotContext.put("topicSessionVariable","music",2000);
+UserSession.put("firstName","Mary",20000);
+UserContext.get("firstName");
 ```
 
 <div class="admonition note">
@@ -75,18 +75,18 @@ BotUserSession.delete("Company");
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The syntax `BotUserSession.delete("Company")` is used to delete the root-level object, <b>Company</b>. Using the same syntax, you cannot delete the key-value pairs inside the root-level object. `BotUserSession.delete("Company.name")` is not supported. If you want to delete the key-value pairs, use the syntax – `delete context.session.BotUserSession.{path to delete the key}`.</p>
+<p>The syntax <code>BotUserSession.delete("Company")</code> is used to delete the root-level object, <b>Company</b>. Using the same syntax, you cannot delete the key-value pairs inside the root-level object. <code>BotUserSession.delete("Company.name")</code> is not supported. If you want to delete the key-value pairs, use the syntax – <code>delete context.session.BotUserSession.{path to delete the key}</code>.</p>
 </div>
 
 For example, using `delete context.session.BotUserSession.Company.name`, you can delete the **name** defined inside the **Company**. You cannot delete the root-level object using the syntax `delete context.session.BotUserSession.Company`.
 
 ### put() method
 
-Using the **put ()** method, you can insert objects at the root-level for EnterpriseContext, BotContext, UserSession, and BotUserSession object types. For e.g., `BotUserSession.put("Company", Company)`.
+Using the **put ()** method, you can insert objects at the root-level for EnterpriseContext, BotContext, UserSession, and BotUserSession object types. For example, `BotUserSession.put("Company", Company)`.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You cannot insert key-value pairs inside the root level object. The syntax `BotUserSession.put("Company.Address", Address)` is not supported.</p>
+<p>You cannot insert key-value pairs inside the root level object. The syntax <code>BotUserSession.put("Company.Address", Address)</code> is not supported.</p>
 </div>
 
 ### get() method
@@ -95,26 +95,30 @@ Using the **get ()** method, you can retrieve the root-level object for Enterpri
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You cannot retrieve key-value pairs inside the root level object. The syntax `BotUserSession.get("Company.name")` is not supported.</p>
+<p>You cannot retrieve key-value pairs inside the root level object. The syntax <code>BotUserSession.get("Company.name")</code> is not supported.</p>
 </div>
 
 ## Session Variable Types
 
 The following types of session variables are available on the XO Platform:
 
-**EnterpriseContext** – A key/value pair available to all assistants and all users in an enterprise. For example, with the GitHub bot, a user will need to access one or more enterprise repositories. You can persist the repository data as **Gitrepository (Enterprise Context)** with the following JavaScript code: `var userRepository = {`
+**EnterpriseContext** – A key/value pair available to all assistants and all users in an enterprise. For example, with the GitHub bot, a user will need to access one or more enterprise repositories. You can persist the repository data as **Gitrepository (Enterprise Context)** with the following JavaScript code: 
 
 ```
+var userRepository = {
 "title": _labels_[repository],
 "value": repository
 };
+`EnterpriseContext.put('Gitrepository', userRepository, 200000);
 ```
 
-* `EnterpriseContext.put('Gitrepository', userRepository, 200000);`
+* **BotContext** – A key/value pair available to all users of this specific bot. For example, you may want to set up a default currency for financial transactions for a session based on a user’s location. You can persist the default currency data as **currency (Bot Context)** with the following JavaScript code:
 
-    **BotContext** – A key/value pair available to all users of this specific bot. For example, you may want to set up a default currency for financial transactions for a session based on a user’s location. You can persist the default currency data as **currency (Bot Context)** with the following JavaScript code: `var defaultCurrency = { TODO Custom JavaScript for location-based currency }`
+    ```
+    var defaultCurrency = { TODO Custom JavaScript for location-based currency }
+    BotContext.put('currency', defaultCurrency, 200000);
+    ```
 
-* `BotContext.put('currency', defaultCurrency, 200000);`
 * **UserContext** – A key/value pair available to all assistants for a user. These keys are read-only and provided by the system as user data for:
     * **UserContext.get(“_id”)** – The Kore.ai user ID.
     * **UserContext.get(“emailId”)** – The email address associated with the user ID.
@@ -134,49 +138,53 @@ The following types of session variables are available on the XO Platform:
         * `val` – The alternate ID
         * `type` – The type of alternate ID.
 
-For example, you can PUT a value into the session using the `UserSession` variable where the key is defined as `fullName` based on the GET from the two `UserContext` variables. 
-`var name = UserContext.get("firstName")+UserContext.get("lastName");`
-
-* `UserSession.put("fullName") = name;`
-
-**UserSession** – A key/value pair that you can define for this specific user for all assistants in an enterprise. 
-
-For example, you may want to store a user location to make it available to all assistants, such as a user home address for commerce, transportation, and home delivery services. 
-
-You can persist default location data as **HomeLocation (UserSession)** with the following JavaScript code: `var location = {`
+For example, you can PUT a value into the session using the `UserSession` variable where the key is defined as `fullName` based on the GET from the two `UserContext` variables.
 
 ```
- "title": labels[location],
- "value": {
- "latitude": location.latitude,
- "longitude": request.location.longitude
- }
-};
-
+var name = UserContext.get("firstName")+UserContext.get("lastName");
+UserSession.put("fullName") = name;
 ```
-* `UserSession.put('HomeLocation', location, '20000');`
+* **UserSession** – A key/value pair that you can define for this specific user for all assistants in an enterprise. 
 
-**BotUserSession** – A key/value pair that you can define to a specific bot based on the inputs by a specific user. For example, you may want to persist a user location for more than one task of a Bot. For a travel bot, the user may be able to book a flight and a hotel based on the same home and destination addresses. For example, you can persist the default home and destination data as **HomeLocation (BotUserSession)** and **DestinationLocation (BotUserSession)** with the following JavaScript code: `var homelocation = {`
+    For example, you may want to store a user location to make it available to all assistants, such as a user home address for commerce, transportation, and home delivery services. 
 
-```
- "title": labels[request.sourceLocation],
- "value": {
- "latitude": request.sourceLocation.latitude,
- "longitude": request.sourceLocation.longitude
- }
-};
-BotUserSession.put('HomeLocation', homelocation, '20000');
-var destlocation = {
- "title": labels[request.destLocation],
- "value": {
- "latitude": request.destLocation.latitude,
- "longitude": request.destLocation.longitude
- }
-};
+    You can persist default location data as **HomeLocation (UserSession)** with the following JavaScript code: 
 
-```
+    ```
+    var location = {
+    "title": labels[location],
+    "value": {
+    "latitude": location.latitude,
+    "longitude": request.location.longitude
+    }
+    };
+    UserSession.put('HomeLocation', location, '20000');
+    ```
 
-* `BotUserSession.put('DestinationLocation', destlocation, '20000');`
+* **BotUserSession** – A key/value pair that you can define to a specific bot based on the inputs by a specific user. For example, you may want to persist a user location for more than one task of a Bot. 
+
+    For a travel bot, the user may be able to book a flight and a hotel based on the same home and destination addresses. 
+    
+    For example, you can persist the default home and destination data as **HomeLocation (BotUserSession)** and **DestinationLocation (BotUserSession)** with the following JavaScript code: 
+
+    ```
+    var homelocation = {
+    "title": labels[request.sourceLocation],
+    "value": {
+    "latitude": request.sourceLocation.latitude,
+    "longitude": request.sourceLocation.longitude
+    }
+    };
+    BotUserSession.put('HomeLocation', homelocation, '20000');
+    var destlocation = {
+    "title": labels[request.destLocation],
+    "value": {
+    "latitude": request.destLocation.latitude,
+    "longitude": request.destLocation.longitude
+    }
+    };
+  BotUserSession.put('DestinationLocation', destlocation, '20000');
+  ```
 
 ## Standard Keys
 
