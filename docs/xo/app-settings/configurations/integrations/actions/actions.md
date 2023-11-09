@@ -8,6 +8,10 @@ The Kore.ai XO Platform offers pre-built integrations with popular business appl
 
 [![System Integration](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/images/actions-video-intro.png)](https://vimeo.com/715550596 "System Integration")
 
+<figure class="video_container">
+  <iframe src="https://vimeo.com/715550596" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+
 
 ## Steps to use the actions or pre-built integrations
 
@@ -302,7 +306,7 @@ You can delete an external integration that is no longer in use.
 <img src="../images/actions-img5-integrations_delete.png" alt="Delete integration" title="Delete integration" style="border: 1px solid gray;zoom:50%;"/>
 
 
-**Warning**: Deletion is permanent and cannot be undone. You are asked to confirm your choice, so make sure this is exactly what you want to do. Once an action is **Deleted**, all authorization configurations related to that particular integration are deleted. \
+**Warning**: Deletion is permanent and cannot be undone. You are asked to confirm your choice, so make sure this is exactly what you want to do. Once an action is **Deleted**, all authorization configurations related to that particular integration are deleted.
 
 
 ## More Like This
