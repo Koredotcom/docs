@@ -171,7 +171,7 @@ To assign skills to a user:
 
 ### save a User
 
-To save the user, click the **Add** button at the bottom of the New User window. This is available regardless of the section that you are currently navigating.\
+To save the user, click the **Add** button at the bottom of the New User window. This is available regardless of the section that you are currently navigating.
 <img src="../images/add-new-user-button.png" alt="Save New User" title="Save New User" style="border: 1px solid gray; zoom:60%;">
 
 !!! Notes
@@ -186,7 +186,7 @@ To save the user, click the **Add** button at the bottom of the New User window.
 
 To edit a user, follow these steps:
 
-1. On the **Agents** page, click the **Edit** icon corresponding to the user you want to edit.\
+1. On the **Agents** page, click the **Edit** icon corresponding to the user you want to edit.
 <img src="../images/edit-user-button.png" alt="Edit User Button" title="Edit User Button" style="border: 1px solid gray; zoom:60%;">
 
 2. On the **Edit User** window, make the necessary edits.
@@ -197,9 +197,8 @@ To edit a user, follow these steps:
 To delete a user, follow these steps:
 
 1. On the **Agents** page, click the **...** icon corresponding to the user you want to delete.
-2. Click **Delete**.\
+2. Click **Delete**.
 <img src="../images/delete-user.png" alt="Delete User Button" title="Delete User Button" style="border: 1px solid gray; zoom:60%;">
-\
 Alternatively, edit the user, and on the **Edit User** window, click the **Delete (bin)** icon on the bottom left.
 <img src="../images/delete-button.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:60%;">
 
@@ -260,7 +259,7 @@ To learn more about adding or editing agents, please see [User Management](https
 
 To modify an agent group, follow these steps:
 
-1. On the **Agent Groups** page, hover over the group that you want to edit, then click the **Edit** icon next to the group name;\
+1. On the **Agent Groups** page, hover over the group that you want to edit, then click the **Edit** icon next to the group name;
 <img src="../images/edit-group-button.png" alt="Edit Group Name" title="Edit Group Name" style="border: 1px solid gray; zoom:60%;">
 
 2. In the **Edit Group** window, make the required changes;
@@ -275,7 +274,7 @@ To modify an agent group, follow these steps:
 To delete an agent group, follow these steps:
 
 1. On the **Agent Groups** page, click the **Edit** icon next to the group you want to delete.
-2. In the **Edit Group** window, click the **Delete Agent Group** icon at the bottom left.\
+2. In the **Edit Group** window, click the **Delete Agent Group** icon at the bottom left.
 <img src="../images/delete-button.png" alt="Delete an Agent Group" title="Delete an Agent Group" style="border: 1px solid gray; zoom:60%;">
 
 ## **Agent Status Management**
@@ -324,7 +323,7 @@ To edit an existing **Agent status** entry, follow these steps:
 
 ### Delete an Agent Status
 
-!!! Notes:
+!!! Notes
 
       1. The default statuses (Available, Away, Busy, and Offline) cannot be deleted. Only custom statuses provide this option.
       2. Deleted Agent Status entries cannot be restored.
