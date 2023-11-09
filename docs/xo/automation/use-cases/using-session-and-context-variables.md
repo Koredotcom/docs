@@ -102,15 +102,15 @@ Using the **get ()** method, you can retrieve the root-level object for Enterpri
 
 The following types of session variables are available on the XO Platform:
 
-**EnterpriseContext** – A key/value pair available to all assistants and all users in an enterprise. For example, with the GitHub bot, a user will need to access one or more enterprise repositories. You can persist the repository data as **Gitrepository (Enterprise Context)** with the following JavaScript code: 
+* **EnterpriseContext** – A key/value pair available to all assistants and all users in an enterprise. For example, with the GitHub bot, a user will need to access one or more enterprise repositories. You can persist the repository data as **Gitrepository (Enterprise Context)** with the following JavaScript code: 
 
-```
-var userRepository = {
-"title": _labels_[repository],
-"value": repository
-};
-EnterpriseContext.put('Gitrepository', userRepository, 200000);
-```
+    ```
+    var userRepository = {
+    "title": _labels_[repository],
+    "value": repository
+    };
+    EnterpriseContext.put('Gitrepository', userRepository, 200000);
+    ```
 
 * **BotContext** – A key/value pair available to all users of this specific bot. For example, you may want to set up a default currency for financial transactions for a session based on a user’s location. You can persist the default currency data as **currency (Bot Context)** with the following JavaScript code:
 
@@ -138,29 +138,29 @@ EnterpriseContext.put('Gitrepository', userRepository, 200000);
         * `val` – The alternate ID
         * `type` – The type of alternate ID.
 
-For example, you can PUT a value into the session using the `UserSession` variable where the key is defined as `fullName` based on the GET from the two `UserContext` variables.
+    For example, you can PUT a value into the session using the `UserSession` variable where the key is defined as `fullName` based on the GET from the two `UserContext` variables.
 
-```
-var name = UserContext.get("firstName")+UserContext.get("lastName");
-UserSession.put("fullName") = name;
-```
+    ```
+    var name = UserContext.get("firstName")+UserContext.get("lastName");
+    UserSession.put("fullName") = name;
+    ```
 
 * **UserSession** – A key/value pair that you can define for this specific user for all assistants in an enterprise. 
 
-For example, you may want to store a user location to make it available to all assistants, such as a user home address for commerce, transportation, and home delivery services. 
+    For example, you may want to store a user location to make it available to all assistants, such as a user home address for commerce, transportation, and home delivery services. 
 
-You can persist default location data as **HomeLocation (UserSession)** with the following JavaScript code: 
+    You can persist default location data as **HomeLocation (UserSession)** with the following JavaScript code: 
 
-```
-var location = {
-"title": labels[location],
-"value": {
-"latitude": location.latitude,
-"longitude": request.location.longitude
-}
-};
-UserSession.put('HomeLocation', location, '20000');
-```
+    ```
+    var location = {
+    "title": labels[location],
+    "value": {
+    "latitude": location.latitude,
+    "longitude": request.location.longitude
+    }
+    };
+    UserSession.put('HomeLocation', location, '20000');
+    ```
 
 * **BotUserSession** – A key/value pair that you can define to a specific bot based on the inputs by a specific user. For example, you may want to persist a user location for more than one task of a Bot. 
 
@@ -168,25 +168,24 @@ UserSession.put('HomeLocation', location, '20000');
     
     For example, you can persist the default home and destination data as **HomeLocation (BotUserSession)** and **DestinationLocation (BotUserSession)** with the following JavaScript code:
 
-```
-var homelocation = {
-"title": labels[request.sourceLocation],
-"value": {
-"latitude": request.sourceLocation.latitude,
-"longitude": request.sourceLocation.longitude
-}
-};
-BotUserSession.put('HomeLocation', homelocation, '20000');
-var destlocation = {
-"title": labels[request.destLocation],
-"value": {
-"latitude": request.destLocation.latitude,
-"longitude": request.destLocation.longitude
-}
-};
-BotUserSession.put('DestinationLocation', destlocation, '20000');
-```
-
+    ```
+    var homelocation = {
+    "title": labels[request.sourceLocation],
+    "value": {
+    "latitude": request.sourceLocation.latitude,
+    "longitude": request.sourceLocation.longitude
+    }
+    };
+    BotUserSession.put('HomeLocation', homelocation, '20000');
+    var destlocation = {
+    "title": labels[request.destLocation],
+    "value": {
+    "latitude": request.destLocation.latitude,
+    "longitude": request.destLocation.longitude
+    }
+    };
+    BotUserSession.put('DestinationLocation', destlocation, '20000');
+    ```
 
 ## Standard Keys
 
