@@ -2,8 +2,8 @@
 
 **Dispositions** represent a label that agents assign to the outcome of a conversation. In SmartAssist, you can create **disposition sets** to organize **disposition codes** according to your business requirements.
 
-To reach this feature, go to **Contact Center > AGENT & SUPERVISORS > Dispositions**.
-<img src="../dispositions/images/dispositions-page.png" alt="
+To reach this feature, go to **Contact Center > AGENT & SUPERVISORS > Dispositions**.\
+<img src="./images/dispositions-page.png" alt="
 Dispositions Page" title="Dispositions Page" style="border: 1px solid gray; zoom:80%;">
 
 ## Disposition Sets
@@ -11,7 +11,7 @@ Dispositions Page" title="Dispositions Page" style="border: 1px solid gray; zoom
 A Disposition Set is a group of disposition codes that you can assign to queues or agent groups to collect information at the end of a conversation. The disposition codes within a set act as fields that agents must populate when ending an interaction.
 
 The Dispositions section opens with the **Disposition Sets** tab preselected.
-<img src="../dispositions/images/disposition-sets.png" alt="
+<img src="./images/disposition-sets.png" alt="
 Disposition Sets Tab" title="Disposition Sets Tab" style="border: 1px solid gray; zoom:80%;">
 
 The **Resolution**vDisposition Set comes prebuilt. It can be edited but cannot be deleted or disabled. You can change your _Display_ option and edit assigned Disposition Codes. Everything else within this Set is uneditable. The default Disposition Codes for this Set are: _Resolved, Requires Supervisor Attention_, and _Unresolved_.
@@ -37,7 +37,7 @@ Within the Disposition Sets section, you can perform the following:
 To add a new Disposition Set, follow these steps:
 
 1. Under _Dispositions > Disposition Sets_, click **Add Set**. \
-<img src="../dispositions/images/add-set.png" alt="
+<img src="./images/add-set.png" alt="
 Add Set Button" title="Add Set Button" style="border: 1px solid gray; zoom:80%;">
 
 2. In the New Disposition Set window, configure the following:
@@ -52,7 +52,7 @@ In the General tab, you can configure the main settings for the Disposition Set.
 4. **Is Required**: Choose whether the Disposition Set is required at the end of a conversation. You can select _Yes_ or _No_. If you select _Yes_, agents must select a disposition code within this set when ending interactions that are part of the queues assigned to the set or if the agent is part of a group assigned to the set.
 5. Under the **Assignment** section, you can assign the Disposition Set to either queues or agent groups, as follows:
     1. Select **Assign to Queues** and the disposition set will display to all agents who are in the assigned queues. You can assign the set to all queues or selected queues. Click **Add Queue** to search and select one or multiple queues from a list. Queues must have been previously created before becoming available to select here. See [Queues](https://docs.kore.ai/smartassist/routing/queues/) to learn more about creating them. You can delete a queue assignment using the **Delete** (bin) icon on the right of the entry. \
-    <img src="../dispositions/images/assign-to-queues.gif" alt="Assign to Queues" title="Assign to Queues" style="border: 1px solid gray; zoom:70%;">
+    <img src="./images/assign-to-queues.gif" alt="Assign to Queues" title="Assign to Queues" style="border: 1px solid gray; zoom:70%;">
 
     2. Select **Assign to Agent Groups** and the Disposition Set will display to all agents in the selected agent groups. The selection process is similar to the Queue selection above.
 
@@ -70,17 +70,17 @@ To delete a code, click the **Delete** (bin) icon on the right.
 #### Enable or Disable a Set
 
 By default, new Disposition Sets are enabled. Turn off the toggle if you want to disable a Disposition Code.
-<img src="../dispositions/images/new-disposition-set-enabled.png" alt="Enable New Disposition Set" title="Enable New Disposition Set" style="border: 1px solid gray; zoom:80%;">
+<img src="./images/new-disposition-set-enabled.png" alt="Enable New Disposition Set" title="Enable New Disposition Set" style="border: 1px solid gray; zoom:80%;">
 
 Click **Create** when ready. Below is a short demo that shows you how to add a new Disposition Set.
-<img src="../dispositions/images/add-disposition-set.gif" alt="Add New Disposition Set" title="Add New Disposition Set" style="border: 1px solid gray; zoom:80%;">
+<img src="./images/add-disposition-set.gif" alt="Add New Disposition Set" title="Add New Disposition Set" style="border: 1px solid gray; zoom:80%;">
 
 ### Edit a Disposition Set
 
 To edit a Disposition Set, follow these steps: 
 
 1. Click the **Edit** icon corresponding to the set you want to edit. \
-<img src="../dispositions/images/edit-button.png" alt="Edit a Disposition Set" title="Edit a Disposition Set" style="border: 1px solid gray; zoom:80%;">
+<img src="./images/edit-button.png" alt="Edit a Disposition Set" title="Edit a Disposition Set" style="border: 1px solid gray; zoom:80%;">
 
 2. In the _Edit Disposition Set_ window, make the required changes and click **Save**.
 
@@ -90,7 +90,7 @@ To delete a Disposition Set, follow these steps:
 
 1. Click the **Edit** icon corresponding to the set you want to delete.
 2. In the _Edit Disposition Set_ window, click the **Delete** (bin) button on the bottom left. You must confirm your choice.
-<img src="../dispositions/images/delete-button.png" alt="Delete a Disposition Set" title="Delete a Disposition Set" style="border: 1px solid gray; zoom:80%;">
+<img src="./images/delete-button.png" alt="Delete a Disposition Set" title="Delete a Disposition Set" style="border: 1px solid gray; zoom:80%;">
 
 !!! Notes
 
@@ -125,13 +125,13 @@ Contact center also allows you to create custom codes and makes them available t
 To add a Disposition Code:
 
 1. Click **+ Add Code**. \
-<img src="../dispositions/images/add-code.png" alt="Add Code Button" title="Add Code" style="border: 1px solid gray; zoom:80%;">
+<img src="./images/add-code.png" alt="Add Code Button" title="Add Code" style="border: 1px solid gray; zoom:80%;">
 
 2. A _New Disposition Code_ page opens. Click **Enable** at the top right to activate the Code.
 3. Enter the disposition **Code Name** and **Description**.
 4. **Assign** a color and check the preview to make sure it looks good.
 5. Click **Create**. \
-<img src="../dispositions/images/new-disposition-code-window.png" alt="New Custom Disposition Code Window" title="New Custom Disposition Code Window" style="border: 1px solid gray; zoom:80%;">
+<img src="./images/new-disposition-code-window.png" alt="New Custom Disposition Code Window" title="New Custom Disposition Code Window" style="border: 1px solid gray; zoom:80%;">
 
 #### Edit a Custom Disposition Code
 
@@ -140,7 +140,7 @@ To edit a custom Disposition Code, follow these steps:
 1. Find it in the list of Disposition Codes,
 2. Click the **Edit** button under the Actions column,
 3. Make your changes in the _Edit Disposition Code_ window, then **Save**.
-<img src="../dispositions/images/edit-disposition.png" alt="Edit Custom Disposition Code" title="Edit Custom Disposition Code" style="border: 1px solid gray; zoom:80%;">
+<img src="./images/edit-disposition.png" alt="Edit Custom Disposition Code" title="Edit Custom Disposition Code" style="border: 1px solid gray; zoom:80%;">
 
 #### Delete a Custom Disposition Code
 
@@ -149,8 +149,7 @@ To delete a custom Disposition Code, follow these steps:
 1. Find it in the list of Disposition Codes.
 2. Click the **Delete** button under the Actions column.
 3. **Confirm** your choice.
-<img src="../dispositions/images/delete-disposition.png" alt="Delete Custom Disposition Code" title="Delete Custom Disposition Code" style="border: 1px solid gray; zoom:80%;">
-
+<img src="./images/delete-disposition.png" alt="Delete Custom Disposition Code" title="Delete Custom Disposition Code" style="border: 1px solid gray; zoom:80%;">
 
 !!! Notes
 
@@ -160,4 +159,4 @@ To delete a custom Disposition Code, follow these steps:
 ## The Agent Experience with Dispositions
 
 Dispositions are displayed once agents end a conversation within the [Agent Console](https://docs.kore.ai/smartassist/console/interacting-with-customers/#End_Interactions). No disposition code is selected by default when choosing a Disposition Set at the end of an interaction. Agents must choose a disposition code. If you have assigned more than one Disposition Set to a specific Queue or Agent Group, then corresponding agents see all sets and must select codes for all required sets.
-<img src="../dispositions/images/console-disposition-and-notes.png" alt="Agent Console Disposition Selection" title="Agent Console Disposition Selection" style="border: 1px solid gray; zoom:80%;">
+<img src="./images/console-disposition-and-notes.png" alt="Agent Console Disposition Selection" title="Agent Console Disposition Selection" style="border: 1px solid gray; zoom:80%;">
