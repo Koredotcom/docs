@@ -191,7 +191,7 @@ The following types of session variables are available on the XO Platform:
 
 In addition to session and context keys, there are Kore.ai variable placeholders for reusable data. Select one of:
 
-**_labels_** – Used to return the friendly label in place of a GUID. For example, when user data is requested from a web service API, the ID of a project or workspace returned is a GUID. You can use the `_labels_` key to show the user-friendly name of the GUID to the end-user instead of the GUID. In Kore.ai, a drop-down control stores the response for the `_labels_` key as, for example: 
+<ul><li><b>_labels_</b> – Used to return the friendly label in place of a GUID. For example, when user data is requested from a web service API, the ID of a project or workspace returned is a GUID. You can use the `_labels_` key to show the user-friendly name of the GUID to the end-user instead of the GUID. In Kore.ai, a drop-down control stores the response for the `_labels_` key as, for example:
 
 ```
 {
@@ -207,7 +207,8 @@ In addition to session and context keys, there are Kore.ai variable placeholders
     }
 }
 ```
-<p>To use the <code>_labels_</code> key in a response:</p> 
+</li></ul>
+<p>To use the <code>_labels_</code> key in a response:</p>
 
 `print('<a href="https://app.asana.com/0/' + workspace.id + '/' + id + '/f" target="_blank">' + title + '</a> in workspace '+_labels_[workspace.id]);`
 
