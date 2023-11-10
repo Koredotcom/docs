@@ -14,7 +14,7 @@ You can configure the Waiting Experience within Contact center using the followi
 * Message language configuration.
 * Call to chat deflection if the wait time exceeds a specified limit.
 * Callback if the wait time exceeds a specified limit.
-* Send a voicemail if the call wait duration exceeds a specified limit, the queue position is too long, or the estimated wait time exceeds a specified limit. \
+* Send a voicemail if the call wait duration exceeds a specified limit, the queue position is too long, or the estimated wait time exceeds a specified limit.
 
     !!! NOTE
 

@@ -131,7 +131,7 @@ To add a Disposition Code:
 3. Enter the disposition **Code Name** and **Description**.
 4. **Assign** a color and check the preview to make sure it looks good.
 5. Click **Create**.
-<img src="../images/new-disposition-code-window.png" alt="New Custom Disposition Code Window" title="New Custom Disposition Code Window" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/new-disposition-code-window.png" alt="New Custom Disposition Code Window" title="New Custom Disposition Code Window" style="border: 1px solid gray; zoom:100%;">
 
 #### Edit a Custom Disposition Code
 
