@@ -28,7 +28,7 @@ All conversations will get assigned to queues as they come in. This process is b
 
 **Advanced Routing** 
 
-* In this case, the conversation first routes to a preferred agent. 
+* In this case, the conversation first routes to a preferred agent.
 * For each new conversation, SmartAssist checks preferred agents (if any) for availability. During a preferred agent check, skills are ignored. If a preferred agent is not assigned and the preferred agent timeout expires, the check is expanded to the full agent list, and skills are matched to select the best available agent (according to the Simple Routing Mode).
 
 ## The Queues Live Board
@@ -45,7 +45,7 @@ This section displays the following:
 * **Mode:** Specifies whether the queue is set to the **Simple** or **Advanced** routing mode;
 * **Status:** Displays the status of the conversation, **Active** or **Inactive**.
 
-## Add a Queue
+### Add a Queue
 
 1. At the top-right corner of the Configuration page, Click **New Queue**.
 2. In the **New Queue** window, you can set up the queue as follows:
@@ -75,12 +75,12 @@ This section is available in _Simple_ and _Advanced Routing_ modes and allows yo
 6. Enable **Advanced Routing**: Preferred agents and skill dropoffs will be available if you enable this option.
 <img src="../images/advanced-routing.png" alt="Advanced Routing" title="Advanced Routing" style="border: 1px solid gray; zoom:100%;">
 
-### Assignments
+## Assignments
 
 This section is available in _Simple_ and _Advanced Routing_ modes and allows you to assign agents, agent groups, or both to the queue.
 <img src="../images/assignments.png" alt="Assignments" title="Assignments" style="border: 1px solid gray; zoom:70%;">
 
-#### Assign Agents
+### Assign Agents
 
 Follow these steps to assign agents to a queue: 
 
@@ -88,7 +88,7 @@ Follow these steps to assign agents to a queue:
 2. **Click the checkbox next to an agent’s name** to select it. You can use the _Search_ field at the top of the list to find a specific person.
 <img src="../images/assign-agents.gif" alt="Assign Agents" title="Assign Agents" style="border: 1px solid gray; zoom:70%;">
 
-#### Assign Agent Groups
+### Assign Agent Groups
 
 1. Click **Add Agent Group**;
 2. Click the checkbox next to the name of a group to select it. You can use the _Search_ field at the top of the list to find a specific group.

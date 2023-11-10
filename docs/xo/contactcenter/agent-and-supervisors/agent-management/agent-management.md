@@ -143,10 +143,10 @@ In the **Voice Experience** section, the following options are available:
 
 * **Enable Voice Settings** – Enabling this option adds the user to the voice channel so that they can handle incoming calls.
 * **Language Support** – Select the language for voice support from the given options and set the language proficiency level. To add more languages, see [System Setup > Languages & Speech](https://docs.kore.ai/smartassist/settings/general-settings/language-management/#). 
-<img src="../images/voice-experience.png" alt="Voice Experience Dialog Box" title="Voice Experience Dialog Box" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/voice-experience.png" alt="Voice Experience Dialog Box" title="Voice Experience Dialog Box" style="border: 1px solid gray; zoom:100%;">
 
 * **Voicemail** – Enabling this option lets the user select the maximum number of voicemails an agent can receive. 
-<img src="../images/voicemail.png" alt="Voicemail Dialog Box" title="Voicemail Dialog Box" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/voicemail.png" alt="Voicemail Dialog Box" title="Voicemail Dialog Box" style="border: 1px solid gray; zoom:100%;">
 
 ### Queues & Skills
 
@@ -202,7 +202,7 @@ To delete a user, follow these steps:
 2. Click **Delete**. 
 <img src="../images/delete-user.png" alt="Delete User Button" title="Delete User Button" style="border: 1px solid gray; zoom:80%;"> 
 Alternatively, edit the user, and on the **Edit User** window, click the **Delete (bin)** icon on the bottom left. 
-<img src="../images/delete-button.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/delete-button.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:100%;">
 
 3. You will be asked to confirm your choice.
 
@@ -305,7 +305,7 @@ To create a new agent status, follow these steps:
     2. **Status Type** – Select the status type: _Away_ or _Busy_.
     3. **Description** – Type in a brief description of the status.
 3. Click **Add & Exit** to create the status and exit the window or click **Add & Stay** to create the status and continue to a new one. 
-<img src="../images/new-status-dialog-box.png" alt="New Status Dialog Box" title="New Status Dialog Box" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/new-status-dialog-box.png" alt="New Status Dialog Box" title="New Status Dialog Box" style="border: 1px solid gray; zoom:100%;">
 
 4. The **_status created successfully_** success message is displayed on-screen and the new status is added to the **Agent Status** list. 
 <img src="../images/status-created.png" alt="New Status Created" title="New Status Created" style="border: 1px solid gray; zoom:80%;">
@@ -318,7 +318,7 @@ To edit an existing **Agent status** entry, follow these steps:
 <img src="../images/status-edit-button.png" alt="Status Edit Icon" title="Status Edit Icon" style="border: 1px solid gray; zoom:80%;">
 
 2. In the **Edit Status** window, edit the **Status Name**, **Status Type**, and/or **Description**, then click **Update**.
-<img src="../images/edit-status-dialog-box.png" alt="Edit Status Dialog Box" title="Edit Status Dialog Box" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/edit-status-dialog-box.png" alt="Edit Status Dialog Box" title="Edit Status Dialog Box" style="border: 1px solid gray; zoom:100%;">
 
 3. The **Status updated successfully** message appears in the window and the modified values reflect in the **Agent Status** window.
 <img src="../images/status-updated.png" alt="Status Updated" title="Status Updated" style="border: 1px solid gray; zoom:80%;">
@@ -354,12 +354,12 @@ You can customize the following fields:
     3. Message to Agent
         1. Rule (default 30 seconds)
         2. Message 
-        <img src="../images/edit-login-prep.png" alt="Edit Login Prep" title="Edit Login Prep" style="border: 1px solid gray; zoom:80%;">  
+        <img src="../images/edit-login-prep.png" alt="Edit Login Prep" title="Edit Login Prep" style="border: 1px solid gray; zoom:100%;">  
 
 3. Click **Update** to save the changes. 
-<img src="../images/update-login-prep-status.png" alt="Update Login Prep" title="Update Login Prep" style="border: 1px solid gray; zoom:80%;"> 
+<img src="../images/update-login-prep-status.png" alt="Update Login Prep" title="Update Login Prep" style="border: 1px solid gray; zoom:100%;"> 
 A confirmation message is displayed. 
-<img src="../images/login-prep-enabled.png" alt="Login Prep Enabled" title="Login Prep Enabled" style="border: 1px solid gray; zoom:80%;"> 
+<img src="../images/login-prep-enabled.png" alt="Login Prep Enabled" title="Login Prep Enabled" style="border: 1px solid gray; zoom:100%;"> 
 Once enabled, the Login Prep becomes the default status for every new login for the agent. [Learn more](https://docs.kore.ai/smartassist/console/interacting-with-customers/#Behavior_When_Login_Prep_Status_is_Enabled).
 
 ## **Agent Settings**
@@ -689,7 +689,7 @@ Messages can be edited by clicking the Edit icon under the Message column.
 <img src="../images/status-edit.png" alt="Status Edit" title="Status Edit" style="border: 1px solid gray; zoom:80%;">
 
     7. Each status lets you edit the message text, add variables and select the language.
-    <img src="../images/status-pop-up.png" alt="Status Message Dialog Box" title="Status Message Dilaog Box" style="border: 1px solid gray; zoom:40%;">
+    <img src="../images/status-pop-up.png" alt="Status Message Dialog Box" title="Status Message Dilaog Box" style="border: 1px solid gray; zoom:80%;">
 
     8. **To add a variable**, place the cursor where you want to insert the variable, click the **Variable** field, then select the one you need. This adds a variable placeholder in your message text, which will be replaced with contextual information once the message reaches its recipient. You can select more than one variable within the same message.
     For example: `{{agentFirstName}}` becomes Christine Mark.
