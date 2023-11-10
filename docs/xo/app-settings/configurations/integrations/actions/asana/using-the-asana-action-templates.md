@@ -1,7 +1,7 @@
 
 # **Using the Asana Action Templates**
 
-You can use the **Prebuilt Action Templates **from your Asana integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
+You can use the **Prebuilt Action Templates** from your Asana integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 
 Steps to create a dialog task using Asana action templates:
 
@@ -91,7 +91,7 @@ Steps to fetch a task with ID from the Asana integration:
         **Sample Response**
 
         ```
-        `{`
+        {
                 "data": {
                     "gid": "1204307990977944",
                     "assignee": {
@@ -155,7 +155,7 @@ Steps to fetch tasks created by a user from the Asana integration:
         **Sample Response**
 
         ```
-        `{`
+        {
                 "data": [
                     {
                         "gid": "1204325494675011",
@@ -247,7 +247,7 @@ Steps to fetch tasks created by a user from the Asana integration:
         **Sample Response**  
 
         ```
-        `{`
+        {
                 "data": [
                     {
                         "gid": "1204325494675011",
@@ -334,7 +334,7 @@ Steps to retrieve all projects from the Asana integration:
         **Sample Response**
 
         ```
-        `{`
+        {
                 "data": [
                     {
                         "gid": "1190334540433515",
@@ -396,7 +396,7 @@ Steps to retrieve all users from the Asana integration:
         **Sample Response**
 
         ```
-        '{'
+        {
                 "data": [
                     {
                         "gid": "11xxxx674034",
@@ -421,4 +421,4 @@ Steps to retrieve all users from the Asana integration:
 6. Follow the prompts in the VA console to view all users on Asana as shown below:  
 <img src="../images/asana-template-img24-list_all_users2.png" alt="Prompt in VA" title="Prompt in VA" style="border: 1px solid gray;zoom:50%;"/>
 
-7. You will notice that all users are found on Asana. Expand and click the **View User **button.
+7. You will notice that all users are found on Asana. Expand and click the **View User** button.
