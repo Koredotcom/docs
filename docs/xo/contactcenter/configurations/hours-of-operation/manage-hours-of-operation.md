@@ -47,7 +47,7 @@ Add Holidays & Special Days" title="Add Holidays & Special Days" style="border: 
 * Toggle the **Period** to either _Partial_ or _Full_. When set to _Partial_, you can adjust the working hours for the day. When set to _Full_, the day is considered a holiday.
 * To add more hours of operation for holidays and special days, click **+ Add Another**.
 * To delete an entry, click the **Delete (bin)** icon next to it.
-* Click **Save.
+* Click **Save**.
 <img src="../images/configure-holiday-hours.png" alt="
 Configure Holiday Hours" title="Configure Holiday Hours" style="border: 1px solid gray; zoom:80%;">
 
