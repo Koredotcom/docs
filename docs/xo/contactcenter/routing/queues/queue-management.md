@@ -105,26 +105,26 @@ From the monitor screen, you can see the consolidated list of agents that are pa
 In the **Preferred** tab, you can assign preferred agents to the queue.
 
 1. Under **Preferred Agents**, find the agent you need in the list. You can use the _Search_ field for this purpose. Select the corresponding **Preferred** checkbox to set the agent as preferred.
-<img src="./images/preferred-agents.png" alt="Preferred Agents Tab" title="Preferred Agents Tab" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/preferred-agents.png" alt="Preferred Agents Tab" title="Preferred Agents Tab" style="border: 1px solid gray; zoom:70%;">
 
 2. Under **Advanced Settings**, configure the preferred agent timeout. During a preferred agent check, skills are ignored. If a preferred agent is not assigned and the preferred agent timeout expires, the check expands to the full agent list, and skills match to select the best available agent for the conversation.
-<img src="./images/advanced-settings.png" alt="Advanced Settings" title="Advanced Settings" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/advanced-settings.png" alt="Advanced Settings" title="Advanced Settings" style="border: 1px solid gray; zoom:70%;">
 
 ### Skills
 
 1. In the **Skills** **tab**, search for a specific skill to assign to the Queue.
-<img src="./images/skills.png" alt="Skills Tab" title="Skills Tab" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/skills.png" alt="Skills Tab" title="Skills Tab" style="border: 1px solid gray; zoom:70%;">
 
 2. Choose whether you want the skill to expire and set the time for this. Once a skill assignment expires, the conversation routes to other assigned skills.
-<img src="./images/skill-requirement-expiration.png" alt="Skill Requirement Expiration" title="Skill Requirement Expiration" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/skill-requirement-expiration.png" alt="Skill Requirement Expiration" title="Skill Requirement Expiration" style="border: 1px solid gray; zoom:70%;">
 
 When you are ready to save the Queue, click **Create**. The new Queue is then listed among your available queues. You must configure at least the _Settings_ and _Assignment_ tabs to save a queue.
-<img src="./images/create-queue.png" alt="Create Queue" title="Create Queue" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/create-queue.png" alt="Create Queue" title="Create Queue" style="border: 1px solid gray; zoom:70%;">
 
 ## **Edit a Queue**
 
 1. Click the **Edit** icon corresponding to the queue you want to edit.
-<img src="./images/edit-queue-button.png" alt="Edit Queue Button" title="Edit Queue Button" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/edit-queue-button.png" alt="Edit Queue Button" title="Edit Queue Button" style="border: 1px solid gray; zoom:70%;">
 
 2. Make the required changes and click **Save**.
 
@@ -134,7 +134,7 @@ To delete a queue, follow these steps:
 
 1. Click the **Edit** icon corresponding to the queue you want to edit.
 2. Click the **Delete (bin)** button on the right of the bottom toolbar.
-<img src="./images/delete-queue-button.png" alt="Delete Queue Button" title="Delete Queue Button" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/delete-queue-button.png" alt="Delete Queue Button" title="Delete Queue Button" style="border: 1px solid gray; zoom:70%;">
 
 3. **Confirm** your choice.
 
