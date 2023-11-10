@@ -113,5 +113,5 @@ The available audio file deletion methods are listed below and illustrated in th
 
 1. Delete a file from the saved list by clicking the **Delete (bin)** icon next to it. You will be asked to confirm your choice. Files deleted from the list have to be reuploaded if you change your mind.
 2. Remove an uploaded file that has not yet been saved to the list by clicking the **Delete (x)** button on the top right corner of the upload panel.
-<img src="./images/delete-audio-file.png" alt="
+<img src="../images/delete-audio-file.png" alt="
 Delete Audio File" title="Delete Audio File" style="border: 1px solid gray; zoom:80%;">
