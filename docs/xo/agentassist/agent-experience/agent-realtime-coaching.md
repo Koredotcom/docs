@@ -46,7 +46,7 @@ Steps to add none intent utterances:
 
 
 
-1. Log in to [https://agentassist.kore.ai/koreagentassist](https://agentassist.kore.ai/koreagentassist/).
+1. Log in to [https://agentassist.kore.ai/koreagentassist](https://agentassist.kore.ai/koreagentassist/) {:target="_blank"}.
 2. Click **Configuration**> **Agent Coaching**.
 3. Click the **edit** button under **Actions**.\
 ![Alt text](./images/rule-edit-button-image_1.png)
@@ -584,10 +584,12 @@ You can change the number of messages, as required, by clicking the highlighted 
 You can change the time in minutes, as required, by clicking the highlighted area. \
  \
 The agent gets screens similar to the following on their system for:
-        1. Positive Nudges \
+        1. Positive Nudges
         ![Alt text](./images/positive-nudge-image_81.png)
-        2. Neutral Nudges \
+
+        2. Neutral Nudges
         ![Alt text](./images/neutral-nudge-image_82.png)
+
         3. Warning Nudges \
         ![Alt text](./images/warning-nudge-image_83.png)
         4. Critical Nudges \
