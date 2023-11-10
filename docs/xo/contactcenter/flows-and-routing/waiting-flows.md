@@ -205,7 +205,7 @@ These messages are periodically displayed to customers waiting in the chat queue
 Click the **Save** button at the bottom of the Edit Waiting Experience window to make sure that your configuration is saved. You can save all your settings by clicking in any tab.
 <img src="../images/save-experience.png" alt="Save Experience" title="Save Experience" style="border: 1px solid gray; zoom:80%;">
 
-## Edit Waiting Experience
+### Edit Waiting Experience
 
 To edit Waiting Experience configurations, follow these steps:
 
@@ -216,7 +216,7 @@ To edit Waiting Experience configurations, follow these steps:
 3. A success confirmation message is displayed when the **Waiting Experience** changes are updated.
 <img src="../images/confirmation-message.png" alt="Waiting Experience Updated" title="Waiting Experience Updated" style="border: 1px solid gray; zoom:80%;">
 
-## Delete Waiting Experience
+### Delete Waiting Experience
 
 To delete a Waiting Experience entry, follow these steps:
 
