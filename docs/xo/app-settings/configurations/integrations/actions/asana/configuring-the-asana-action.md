@@ -1,4 +1,3 @@
-<base target="_blank">
 
 # **Configuring the Asana Action**
 
@@ -104,7 +103,7 @@ Steps to install action templates:
 4. A dialog task is automatically created for each installed template.  
 <img src="../images/asana-action-img11.png" alt="Dialog task created" title="Dialog task created" style="border: 1px solid gray;zoom:50%;"/>
 
-5. Alternatively, you can create a new dialog task and select the Asana integration to select the dialog task from the templates and click **Proceed**. For example, select the **Get Task by Id**task.  
+5. Alternatively, you can create a new dialog task and select the Asana integration to select the dialog task from the templates and click **Proceed**. For example, select the **Get Task by Id** task.  
 <img src="../images/asana-action-img12.png" alt="Select task" title="Select task" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Once you click **Proceed**, the dialog task is auto-created, and the canvas opens with all required entity nodes, service nodes, and message scripts.  
