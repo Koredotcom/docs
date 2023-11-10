@@ -52,7 +52,7 @@ Steps to authorize an Asana action using developer credentials:
   
     **Note**: The Asana action is moved from Available to Configured region.
 
-6. You can also click the **Skip for Now** button to install the Dialog Task templates later. To learn how to use action templates, read the [Using the Asana Action Templates](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/asana/using-the-asana-action-templates/){:target="_blank"} article.  
+6. You can also click the **Skip for Now** button to install the Dialog Task templates later. To learn how to use action templates, read the <a href="../using-the-asana-action-templates" target="_blank">Using the Asana Action Templates</a> article.  
 <img src="../images/asana-action-img5.png" alt="Skip for now" title="Skip for now" style="border: 1px solid gray;zoom:50%;"/>
 
 
