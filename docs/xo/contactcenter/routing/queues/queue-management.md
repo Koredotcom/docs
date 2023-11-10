@@ -73,7 +73,7 @@ This section is available in _Simple_ and _Advanced Routing_ modes and allows yo
 <img src="../images/maximum-wait-time.png" alt="Maximum Wait Time" title="Maximum Wait Time" style="border: 1px solid gray; zoom:70%;">
 
 6. Enable **Advanced Routing**: Preferred agents and skill dropoffs will be available if you enable this option.
-<img src="../images/advanced-routing.png" alt="Advanced Routing" title="Advanced Routing" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/advanced-routing.png" alt="Advanced Routing" title="Advanced Routing" style="border: 1px solid gray; zoom:100%;">
 
 ### Assignments
 
