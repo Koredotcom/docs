@@ -586,19 +586,19 @@ You can change the time in minutes, as required, by clicking the highlighted are
 The agent gets screens similar to the following on their system for:
         1. Positive Nudges
 
-        ![Alt text](./images/positive-nudge-image_81.png)
+           ![Alt text](./images/positive-nudge-image_81.png)
 
         2. Neutral Nudges
 
-        ![Alt text](./images/neutral-nudge-image_82.png)
+           ![Alt text](./images/neutral-nudge-image_82.png)
 
         3. Warning Nudges
 
-        ![Alt text](./images/warning-nudge-image_83.png)
+           ![Alt text](./images/warning-nudge-image_83.png)
 
         4. Critical Nudges
-        
-        ![Alt text](./images/critical-nudge-image_84.png)
+
+           ![Alt text](./images/critical-nudge-image_84.png)
 
 
 ### Hint Agent
