@@ -1,5 +1,3 @@
- <base target="_blank">
-
 # **Agent Management**
 
 ## Agents
@@ -318,7 +316,7 @@ To edit an existing **Agent status** entry, follow these steps:
 <img src="../images/status-edit-button.png" alt="Status Edit Icon" title="Status Edit Icon" style="border: 1px solid gray; zoom:80%;">
 
 2. In the **Edit Status** window, edit the **Status Name**, **Status Type**, and/or **Description**, then click **Update**.
-<img src="../images/edit-status-dialog-box.png" alt="Edit Status Dialog Box" title="Edit Status Dialog Box" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/edit-status-dialog-box.png" alt="Edit Status Dialog Box" title="Edit Status Dialog Box" style="border: 1px solid gray; zoom:80%;">
 
 3. The **Status updated successfully** message appears in the window and the modified values reflect in the **Agent Status** window.
 <img src="../images/status-updated.png" alt="Status Updated" title="Status Updated" style="border: 1px solid gray; zoom:80%;">
@@ -354,10 +352,10 @@ You can customize the following fields:
     3. Message to Agent
         1. Rule (default 30 seconds)
         2. Message 
-        <img src="../images/edit-login-prep.png" alt="Edit Login Prep" title="Edit Login Prep" style="border: 1px solid gray; zoom:100%;">  
+        <img src="../images/edit-login-prep.png" alt="Edit Login Prep" title="Edit Login Prep" style="border: 1px solid gray; zoom:80%;">  
 
 3. Click **Update** to save the changes. 
-<img src="../images/update-login-prep-status.png" alt="Update Login Prep" title="Update Login Prep" style="border: 1px solid gray; zoom:100%;"> 
+<img src="../images/update-login-prep-status.png" alt="Update Login Prep" title="Update Login Prep" style="border: 1px solid gray; zoom:80%;"> 
 A confirmation message is displayed. 
 <img src="../images/login-prep-enabled.png" alt="Login Prep Enabled" title="Login Prep Enabled" style="border: 1px solid gray; zoom:100%;"> 
 Once enabled, the Login Prep becomes the default status for every new login for the agent. [Learn more](https://docs.kore.ai/smartassist/console/interacting-with-customers/#Behavior_When_Login_Prep_Status_is_Enabled).
@@ -390,7 +388,7 @@ These settings are grouped and presented as closed groups when first opening the
 
 ### Chats
 
-* **Manual**: Agents must click **_Accept _**to begin chatting with the next customer. Set the acceptance timeout for agents before a chat returns to the queue by entering the number of minutes and seconds.
+* **Manual**: Agents must click **_Accept _** to begin chatting with the next customer. Set the acceptance timeout for agents before a chat returns to the queue by entering the number of minutes and seconds.
 <img src="../images/chat-configuration.png" alt="Chat Configuration Manual" title="Chat Configuration Manual" style="border: 1px solid gray; zoom:80%;">
 
 * **Auto**: Chats are auto-answered, and the agent does not need to click ‘Accept’. Set the first response timeout for agents to respond to new chats.
