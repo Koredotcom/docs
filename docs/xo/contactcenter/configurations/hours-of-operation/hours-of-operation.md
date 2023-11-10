@@ -5,24 +5,21 @@ The **Hours of Operation** feature helps set the standard hours when agents are 
 In **Contact Center,** you can define the standard working hours for each day of the week and set the non-working hours for weekends and public holidays in different time zones.  [Default Flows](https://docs.kore.ai/smartassist/default-agent-flows/default-flows-2/) are handled by SmartAssist based on your configuration for **Hours of Operation**,
 
 You can reach the Hours of Operation feature by going to **Contact Center > Configurations > Hours of Operation**.
-<img src="./images/hours-of-operation-page.png" alt="
+<img src="../images/hours-of-operation-page.png" alt="
 Hours of Operation Page" title="Hours of Operation Page" style="border: 1px solid gray; zoom:80%;">
 
 The Hours of Operation section displays the following details:
 
-* A **Name **for each configuration;
+* A **Name** for each configuration;
 * **Actions**: Here is where you can **Edit** or **Delete** a configuration.
 * **Timezone**: Lists the timezone for which the hours of operation are configured;
-* **Special **Days: Lists any configured special days or holidays.
-
+* **Special** Days: Lists any configured special days or holidays.
 
 # Add Hours of Operation
 
 To add **Hours of Operation**, follow these steps:
 
-
-
-1. Click **+ New Hours **to add a new** Hours of Operation** entry. \
+1. Click **+ New Hours **to add a new** Hours of Operation** entry
 
 
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
