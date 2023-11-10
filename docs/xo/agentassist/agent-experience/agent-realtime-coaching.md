@@ -1,3 +1,6 @@
+<base target="_blank">
+
+
 # Real-time Agent Coaching
 
 
