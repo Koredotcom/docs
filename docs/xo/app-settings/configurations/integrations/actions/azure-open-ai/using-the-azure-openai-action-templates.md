@@ -11,7 +11,7 @@ Steps to create a dialog task using the Azure OpenAI action templates:
 3. On the Dialog Task pop-up, under the Integration, select the Azure OpenAI option to view the action templates.  
 <img src="../images/configure-azure-img20-azure-action9.png" alt="Select Azure OpenAI" title="Select Azure OpenAI" style="border: 1px solid gray;zoom:50%;"/>
 
-4. If you have not configured any integration for your virtual assistant, you will see the Explore Integrations option. Once you click this option, you will be redirected to the Actions page to configure an integration for your VA. For more information, see [Actions Overview](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/actions){:target="_blank"}.  
+4. If you have not configured any integration for your virtual assistant, you will see the Explore Integrations option. Once you click this option, you will be redirected to the Actions page to configure an integration for your VA. For more information, see <a href="../docs/xo/app-settings/configurations/integrations/actions/actions" target="_blank">Actions Overview</a>.  
 <img src="../images/azure-temp-img3-create-dialog-new.png" alt="Configure Integration" title="Configure Integration" style="border: 1px solid gray;zoom:50%;"/>
 
 
