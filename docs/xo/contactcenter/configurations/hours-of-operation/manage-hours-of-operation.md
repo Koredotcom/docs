@@ -41,6 +41,7 @@ Set the Date, Name, Period, Start Work Time, and End Work Time for holidays or s
 To add a new entry, click the **+ Add New** button.
 <img src="../images/holidays-and-special-days.png" alt="
 Add Holidays & Special Days" title="Add Holidays & Special Days" style="border: 1px solid gray; zoom:80%;">
+
 * Enter the **Date** of the holiday or special day;
 * Enter a **Name**;
 * Toggle the **Period** to either _Partial_ or _Full_. When set to _Partial_, you can adjust the working hours for the day. When set to _Full_, the day is considered a holiday.
