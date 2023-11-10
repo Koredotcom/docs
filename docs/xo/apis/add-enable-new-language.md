@@ -242,3 +242,6 @@ For success case:
 "widgets":0
 }
 }]
+
+# Test
+<a href="/docs/xo/apis/bot-export.md">How to generate the JWT Token</a>.
