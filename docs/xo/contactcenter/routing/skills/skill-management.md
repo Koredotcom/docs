@@ -7,7 +7,7 @@ The **Skills** feature helps set up organizational classifications to route call
 
 # The Skills Live Board
 
-You can reach the Skills Live Board by going to **Contact Center > ROUTING > Skills**.\
+You can reach the Skills Live Board by going to **Contact Center > ROUTING > Skills**.
 <img src="../images/skills-page.png" alt="Skills Page" title="Skills Page" style="border: 1px solid gray; zoom:80%;">
 
 The Skills section is organized by Skill Groups. Click a group to expand it and display the skills assigned to that group. You can use the **Search** field to find skills or skill groups by name.
@@ -19,16 +19,16 @@ Before adding a skill, you need a skill group. See [Skill Groups](https://docs.k
 To add skills to a skill group, follow these steps:
 
 1. Click the respective skill group to get the drill-down view of associated **Skills**;
-2. Click the **+ New Skill** button.\
+2. Click the **+ New Skill** button.
 <img src="../images/new-skill-button.png" alt="New Skill Button" title="New Skill Button" style="border: 1px solid gray; zoom:70%;">
 
 3. Enter the following details in the **Add New Skill** window:
     1. **Skill Name**: Enter the name to identify the skill by.
     2. **Description**: Enter a brief description of the skill or its purpose.
-    3. **Agent Assignments**: Associate agents to the skill and provide the proficiency level (Novice, Average, Good, and Expert);\
+    3. **Agent Assignments**: Associate agents to the skill and provide the proficiency level (Novice, Average, Good, and Expert);
     <img src="../images/add-new-skill.png" alt="Add New Skill" title="Add New Skill" style="border: 1px solid gray; zoom:60%;">
 
-    4. Click **Create** to complete the process. SmartAssist creates the new skill, adds it to the list, and displays a success confirmation message.\
+    4. Click **Create** to complete the process. SmartAssist creates the new skill, adds it to the list, and displays a success confirmation message.
     <img src="../images/skill-created.png" alt="Skill Created" title="Skill Created" style="border: 1px solid gray; zoom:60%;">
 
 # Add a Skill Using a Script
