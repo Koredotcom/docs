@@ -12,7 +12,7 @@ Steps to create a dialog task using Asana action templates:
 3. On the Dialog Task pop-up, under the **Integration**, select the **Asana** option to view the action templates.  
 <img src="../images/asana-action-img12.png" alt="Select Asana action template" title="Select Asana action template" style="border: 1px solid gray;zoom:50%;"/>  
  
-    **Note**: If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/actions).  
+    **Note**: If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/actions){:target="_blank"}.  
     
     <img src="../images/asana-template-img3-create_dialog_new.png" alt="Explore integrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -77,7 +77,7 @@ The following Asana action is supported in the latest version of the XO Platform
 
 Steps to fetch a task with ID from the Asana integration:
 
-1. Refer to the [Installing the Asana Templates](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/asana/configuring-the-asana-action/#step-2-install-the-asana-action-templates) section to install this template.
+1. Refer to the [Installing the Asana Templates](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/asana/configuring-the-asana-action/#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
 2. The _Get Task by Id_ dialog task is added with the following components:  
 <img src="../images/asana-action-img13.png" alt="Dialog task is added" title="Dialog task is added" style="border: 1px solid gray;zoom:50%;"/>  
     1. **getTaskById**: A user intent to fetch a task with ID from the Asana space.
@@ -142,7 +142,7 @@ Steps to fetch a task with ID from the Asana integration:
 
 Steps to fetch tasks created by a user from the Asana integration:
 
-1. Refer to the [Installing the Asana Templates](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/asana/configuring-the-asana-action/#step-2-install-the-asana-action-templates) section to install this template.
+1. Refer to the [Installing the Asana Templates](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/asana/configuring-the-asana-action/#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
 2. The _Find Tasks Created by User_ dialog task is added with the following components:  
 <img src="../images/asana-template-img10-find_tasks.png" alt="Add dialog task to find tasks" title="Add dialog task to find tasks" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -233,7 +233,7 @@ Steps to fetch tasks created by a user from the Asana integration:
 
 Steps to fetch tasks created by a user from the Asana integration:
 
-1. Refer to the [Installing the Asana Templates](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/asana/configuring-the-asana-action/#step-2-install-the-asana-action-templates) section to install this template.
+1. Refer to the [Installing the Asana Templates](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/asana/configuring-the-asana-action/#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
 2. The _FindTasks Assigned to a User_ dialog task is added with the following components:  
 <img src="../images/asana-template-img15-find_task_assigned.png" alt="Dialog task to find task assigned to user is added" title="Dialog task to find task assigned to user is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -322,7 +322,7 @@ Steps to fetch tasks created by a user from the Asana integration:
 
 Steps to retrieve all projects from the Asana integration:
 
-1. Refer to the [Installing the Asana Templates](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/asana/configuring-the-asana-action/#step-2-install-the-asana-action-templates) section to install this template.
+1. Refer to the [Installing the Asana Templates](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/asana/configuring-the-asana-action/#step-2-install-the-asana-action-templates){:target="_blank"} section to install this template.
 2. The _List All Projects_ dialog task is added with the following components:  
 <img src="../images/asana-template-img19-list_all_projects.png" alt="Dialog task for listing tasks" title="Dialog task for listing tasks" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -385,7 +385,7 @@ Steps to retrieve all projects from the Asana integration:
 
 Steps to retrieve all users from the Asana integration:
 
-1. Refer to the [Installing the Asana Templates](https://developer.kore.ai/integrations/configuring-the-asana-action/#Step_2_Install_the_Asana_Action_Templates) section to install this template.
+1. Refer to the [Installing the Asana Templates](https://developer.kore.ai/integrations/configuring-the-asana-action/#Step_2_Install_the_Asana_Action_Templates){:target="_blank"} section to install this template.
 2. The _List All Users_ dialog task is added with the following components:  
 <img src="../images/asana-template-img22list_all_users.png" alt="Dialog task to list users" title="Dialog task to list users" style="border: 1px solid gray;zoom:50%;"/> 
 
