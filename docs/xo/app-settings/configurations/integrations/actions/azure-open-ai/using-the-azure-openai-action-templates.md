@@ -46,7 +46,7 @@ The following Azure OpenAI action is supported:
 Steps to resolve the query in the Azure OpenAI integration:
 
 
-1. Refer to the <a href="../docs/xo/app-settings/configurations/integrations/actions/azure-open-ai/configuring-the-azure-openai-action/#step-3-install-the-azure-openai-action-templates" target="_blank">Installing the Azure OpenAI Action Templates</a> section to install this template.
+1. Refer to the <a href="../configuring-the-azure-openai-action/#step-3-install-the-azure-openai-action-templates" target="_blank">Installing the Azure OpenAI Action Templates</a> section to install this template.
 
 2. The _General Query_ dialog task is added with the following components:  
 <img src="../images/configure-azure-img21-azure-action10.png" alt="Dialog added" title="Dialog added" style="border: 1px solid gray;zoom:50%;"/>
