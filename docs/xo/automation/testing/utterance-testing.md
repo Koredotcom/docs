@@ -233,9 +233,9 @@ The **Ranking & Resolver** window displays the following:
 
 <img src="../images/utterance-testing-14-rr-testing.png" alt="Ranking and Resolver V2" title="Ranking and Resolver V2" style="border: 1px solid gray; zoom:50%;"/>
 
-<br>
 
 The **NLP Analysis** page within the **NLP Insights** dashboard displays the following:
+
    * The given user utterance.
    * The flow of how the NLP models generated the rescored matching intents.
    * The flow of Version 2 of R&R, including the ranking, identification, and marking of the winning intent as the definitive match.
@@ -257,7 +257,7 @@ Below is the process we recommend you use for utterance training:
     1. **For an unmatched intent**: From the **Select an Intent** drop-down list, select the intent that you want to match with the user utterance.
     2. **For multiple matched intents**: Select the radio button for the intent you want to match.
     3. **For a single matched intent**: Click the name of the matched intent.
-2. The user utterance that you entered gets displayed in the field under the _ML Utterances _section. To add the utterance to the intent, click **Save**. You can add as many utterances as you want, one after another. For more information, read [Machine Learning](https://developer.kore.ai/docs/bots/nlp/user-utterances/){:target="_blank"}.
+2. The user utterance that you entered gets displayed in the field under the _ML Utterances_ section. To add the utterance to the intent, click **Save**. You can add as many utterances as you want, one after another. For more information, read [Machine Learning](https://developer.kore.ai/docs/bots/nlp/user-utterances/){:target="_blank"}.
 3. Under the _Intent Synonyms_ section, each word in the task name appears as a separate line item. Enter the synonyms for the words to optimize the NLP interpreter accuracy to recognize the correct task. For more information, read [Managing Synonyms](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Managing_Synonyms){:target="_blank"}.
 4. Under the _Intent Patterns_ section, enter task patterns for the intent. For more information, read [Managing Patterns](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Managing_Patterns){:target="_blank"}.
 5. When you are done making the relevant training entries, click **Re-Run Utterance** to see if you have improved the intent to get a high confidence score. 

@@ -36,12 +36,14 @@ You can also filter the details at the grid level by applying filters for intent
 
 The Conversation Testing allows you to capture the flow, track the executed nodes, covered transitions, and metadata. Following are the major options available on the Conversation Testing page:
 
-* [Create a Test Suite](https://developer.kore.ai/docs/bots/test-your-bot/create-a-test-suite/){:target="_blank"}
-* [Test Editor](https://developer.kore.ai/docs/bots/test-your-bot/test-editor/){:target="_blank"}
-* [Test Case Assertion](https://developer.kore.ai/docs/bots/test-your-bot/test-case-assertion/){:target="_blank"}
-* [Test Case Execution Summary](https://developer.kore.ai/docs/bots/test-your-bot/test-case-execution-summary/){:target="_blank"}
+* [Create a Test Suite](../create-a-test-suite/){:target="_blank"}
+* [Test Editor](../test-editor/){:target="_blank"}
+* [Test Case Assertion](../test-case-assertion/){:target="_blank"}
+* [Test Case Execution Summary](../test-case-execution-summary/){:target="_blank"}
 
 
 <p>
-<a href="../../batch-testing/" target="_blank">Previous</a> <pre> <pre> <a href="../create-a-test-suite" target="_blank"">Next</a>
+
+[Previous](../../batch-testing){:target="_blank"} <pre> <pre> [Next](../create-a-test-suite"){:target="_blank"}
+
 </p>
