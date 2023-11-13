@@ -803,7 +803,6 @@ The following steps guide you on how to run a batch test on your bot and get a d
 
     Before testing, it is essential to add and train your bot with a considerable number of utterances using Machine Learning.
 
- 
 
 To run a Test Suite, follow the steps below:
 
@@ -845,7 +844,7 @@ Each test run creates a test report record and displays a summary of the test re
     3. Failed – when there was a system error and the test could not be resumed post-recovery.
 
 * Hovering over the warning/error icon will display a message suggesting the reason.  
-<img src="../images/batch-testing-17-batch-Test-sample-result-warn.png" alt="Test report" title="Test report" style="border: 1px solid gray; zoom:50%;"/> 
+<img src="../images/batch-testing-17-batch-test-sample-result-warn.png" alt="Test report" title="Test report" style="border: 1px solid gray; zoom:50%;"/> 
 
 
 #### Download a CSV Report
