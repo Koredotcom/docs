@@ -6,7 +6,7 @@ The Kore.ai XO Platform offers pre-built integrations with popular business appl
 
 **Watch a Short Video on System Integrations**
 
-[![System Integration - Click to watch](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/images/actions-video-intro.png)](https://vimeo.com/715550596 "System Integration - Click to watch")
+[![System Integration - Click to watch](../images/actions-video-intro.png)](https://vimeo.com/715550596 "System Integration - Click to watch")
 
 
 ## Steps to use the actions or pre-built integrations
@@ -91,7 +91,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/bamboo-hr/configuring-the-bamboo-hr-action">Learn more</a>
+   <td><a href="../bamboo-hr/configuring-the-bamboo-hr-action">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -103,7 +103,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/dhl/configuring-the-dhl-action">Learn more</a>
+   <td><a href="../dhl/configuring-the-dhl-action">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -115,7 +115,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/freshdesk/configuring-the-freshdesk-action">Learn more</a>
+   <td><a href="../freshdesk/configuring-the-freshdesk-action">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -127,7 +127,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/freshservice/configuring-the-freshservice-action">Learn more</a>
+   <td><a href="../freshservice/configuring-the-freshservice-action">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -139,7 +139,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/google-maps/configuring-the-google-maps-action">Learn more</a>
+   <td><a href="../google-maps/configuring-the-google-maps-action">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -151,7 +151,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Dev OAuth and OAuth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/hubspot/configuring-the-hubspot-action">Learn more</a>
+   <td><a href="../hubspot/configuring-the-hubspot-action">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -163,7 +163,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/jira/configuring-the-jira-action">Learn more</a>
+   <td><a href="../jira/configuring-the-jira-action">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -175,7 +175,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/microsoft-graph/configuring-the-microsoft-graph-action">Learn more</a>
+   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions../microsoft-graph/configuring-the-microsoft-graph-action">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -187,7 +187,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>API Key OAuth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/open-ai/configuring-the-openai-action">Learn more</a>
+   <td><a href="../open-ai/configuring-the-openai-action">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -199,7 +199,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Dev OAuth and OAuth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/salesforce/configuring-the-salesforce-crm-actio">Learn more</a>
+   <td><a href="../salesforce/configuring-the-salesforce-crm-actio">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -211,7 +211,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic OAuth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/shopify/configuring-the-shopify-action/">Learn more</a>
+   <td><a href="../shopify/configuring-the-shopify-action/">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -223,7 +223,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic OAuth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/servicenow/configuring-the-servicenow-action/">Learn more</a>
+   <td><a href="../servicenow/configuring-the-servicenow-action/">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -235,7 +235,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic OAuth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/stripe/configuring-the-stripe-action/">Learn more</a>
+   <td><a href="../stripe/configuring-the-stripe-action/">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -247,7 +247,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic OAuth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/twilio/configuring-the-twilio-action/">Learn more</a>
+   <td><a href="../twilio/configuring-the-twilio-action/">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -259,7 +259,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic OAuth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/zendesk/configuring-the-zendesk-action/">Learn more</a>
+   <td><a href="../zendesk/configuring-the-zendesk-action/">Learn more</a>
    </td>
   </tr>
 </table>
