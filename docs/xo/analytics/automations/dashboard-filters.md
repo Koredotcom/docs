@@ -56,14 +56,8 @@ The following table describes all the filter criteria available on the Kore.ai X
   <tr>
    <td><strong>Conversation Type</strong>
    </td>
-   <td>The data on the relevant dashboard is displayed based on the interactive or non-interactive conversation type.
-
-[Learn more](../automations/conversations-dashboard.md).  
+   <td>The data on the relevant dashboard is displayed based on the interactive or non-interactive conversation type. Learn more.  
    
-
-[Learn more](#dashboard-filters).  
-
-
 <p>
 The Developer Interactions are not included in the Conversation Type filter.
    </td>
