@@ -66,7 +66,7 @@ Once <strong>Target Audience</strong> is defined and saved, you cannot change th
   <tr>
    <td>Variable Namespaces
    </td>
-   <td>You can categorize variables using Namespaces and map them to various components. The XO Platform will load the variables only from the mapped namespaces while executing specific components. <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/managing-namespace">Learn more</a>.
+   <td>You can categorize variables using Namespaces and map them to various components. The XO Platform will load the variables only from the mapped namespaces while executing specific components. <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/managing-namespace" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
