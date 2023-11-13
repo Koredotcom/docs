@@ -5,7 +5,7 @@ The following list provides definitions of commonly used terms in conversation t
 
 ### Dynamic Text Marking
 
-The dynamic text annotation feature allows you to annotate a section of the text. During test execution, the annotated portion of the text is ignored by the platform for text assertion. To know more, see [Dynamic Text Marking](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/test-case-assertion/#dynamic-text-marking).
+The dynamic text annotation feature allows you to annotate a section of the text. During test execution, the annotated portion of the text is ignored by the platform for text assertion. To know more, see [Dynamic Text Marking](../test-case-assertion/#dynamic-text-marking){:target="_blank"}.
 
 
 ### Test Assertion
@@ -30,9 +30,9 @@ A conversation test suite has a set of test cases that helps the testers to exec
 
 ### Test Suite Metadata
 
-The test suite metadata captured in conversation testing are details like Intent id, node id, intent and node names, transition flows, etc., that provide more information about the test suites. The metadata captured can be used to track the test coverage and to perform the [flow and text assertions](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/test-case-assertion/#types-of-assertions).
+The test suite metadata captured in conversation testing are details like Intent id, node id, intent and node names, transition flows, etc., that provide more information about the test suites. The metadata captured can be used to track the test coverage and to perform the [flow and text assertions](../test-case-assertion/#types-of-assertions){:target="_blank"}.
 
 
 ### Transition Flow of Nodes
 
-In conversation testing, you test the correct sequence of the nodes traversed in the background for any user input. For more information, see [Nodes](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/nodes-transitions/).
+In conversation testing, you test the correct sequence of the nodes traversed in the background for any user input. For more information, see [Nodes](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/nodes-transitions/){:target="_blank"}.
