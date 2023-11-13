@@ -225,11 +225,12 @@ The basis for **intent elimination** by Ranking & Resolver when the three engine
 If you enable Ranking and Resolver Version 2, your test results adjust as follows: 
 
 The **Ranking & Resolver** window displays the following:
-   * The definitive intent that is matched based on ranking.
-   * The number of definitive and probable matches.
-   * The winning intent name and the ranking score.
-   * The other definitive intent(s), the reason for elimination, and the ranking score.
-   * The result, including the winning and eliminated intents.
+
+* The definitive intent that is matched based on ranking.
+* The number of definitive and probable matches.
+* The winning intent name and the ranking score.
+* The other definitive intent(s), the reason for elimination, and the ranking score.
+* The result, including the winning and eliminated intents.
 
 <img src="../images/utterance-testing-14-rr-testing.png" alt="Ranking and Resolver V2" title="Ranking and Resolver V2" style="border: 1px solid gray; zoom:50%;"/>
 
