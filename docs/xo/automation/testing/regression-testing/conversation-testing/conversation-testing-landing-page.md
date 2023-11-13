@@ -3,7 +3,7 @@
 
 Conversation Testing enables you to simulate end-to-end conversational flows to evaluate the dialog task execution or perform regression. You can create Test Suites to capture various business scenarios and run them at a later time to validate the assistant’s performance.
 
-The Conversation testing framework tracks the transition coverage and determines how well the Virtual Assistant (VA) understands the user queries and executes the dialogs and other intents of user conversations for a particular input(s). Like the NLP Health in the [Health and Monitoring dashboard](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/) a Flow health feature available in the Health and Monitoring dashboard presents a summary of the total coverage of dialog flows and analysis of conversation test results of your VA. This summary helps you understand the flow transitions and intent coverage in test suites. It enables you to add relevant test cases to cover missing transitions and intents. You can also use the test result analysis to identify and fix the issues in the dialog task definitions and improve the performance of your VA.
+The Conversation testing framework tracks the transition coverage and determines how well the Virtual Assistant (VA) understands the user queries and executes the dialogs and other intents of user conversations for a particular input(s). Like the NLP Health in the [Health and Monitoring dashboard](https://developer.kore.ai/docs/bots/analyzing-your-bot/virtual-assistants-health-and-monitoring/){:target="_blank"} a Flow health feature available in the Health and Monitoring dashboard presents a summary of the total coverage of dialog flows and analysis of conversation test results of your VA. This summary helps you understand the flow transitions and intent coverage in test suites. It enables you to add relevant test cases to cover missing transitions and intents. You can also use the test result analysis to identify and fix the issues in the dialog task definitions and improve the performance of your VA.
 <br>
 
 ## Conversation Testing Landing Page
@@ -36,14 +36,19 @@ You can also filter the details at the grid level by applying filters for intent
 
 The Conversation Testing allows you to capture the flow, track the executed nodes, covered transitions, and metadata. Following are the major options available on the Conversation Testing page:
 
-* [Create a Test Suite](https://developer.kore.ai/docs/bots/test-your-bot/create-a-test-suite/)
-* [Test Editor](https://developer.kore.ai/docs/bots/test-your-bot/test-editor/)
-* [Test Case Assertion](https://developer.kore.ai/docs/bots/test-your-bot/test-case-assertion/)
-* [Test Case Execution Summary](https://developer.kore.ai/docs/bots/test-your-bot/test-case-execution-summary/)
+* [Create a Test Suite](https://developer.kore.ai/docs/bots/test-your-bot/create-a-test-suite/){:target="_blank"}
+* [Test Editor](https://developer.kore.ai/docs/bots/test-your-bot/test-editor/){:target="_blank"}
+* [Test Case Assertion](https://developer.kore.ai/docs/bots/test-your-bot/test-case-assertion/){:target="_blank"}
+* [Test Case Execution Summary](https://developer.kore.ai/docs/bots/test-your-bot/test-case-execution-summary/){:target="_blank"}
 
-[Previous](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/batch-testing/)
+[Previous](../../batch-testing/)
 
 [Batch Testing](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/batch-testing/)
+
+<p>
+<a href="../../batch-testing/" target="_blank" style="text-align: left">Previous</a>
+<a href="https://developer.kore.ai/docs/bots/test-your-bot/create-a-test-suite" target="_blank" style="text-align: left">Next</a>
+</p>
 
 <p style="text-align: right">
 <a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/batch-testing/">

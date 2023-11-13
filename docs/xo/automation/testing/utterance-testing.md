@@ -32,10 +32,10 @@ Follow these steps to test your assistant:
 When you test an utterance, the NLP engine tries to identify an intent using the following  engines and intent identification features:
 
 
-* [Machine Learning](https://developer.kore.ai/docs/bots/nlp/user-utterances/) engine, 
-* [Fundamental Meaning](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/) engine,
-* [Knowledge AI](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ai-overview/), including the [Knowledge Graph](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/) engine and the [Answer from Documents](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/) feature,
-* [Ranking and Resolver](https://developer.kore.ai/docs/bots/nlp/nlp-detection/).
+* [Machine Learning](https://developer.kore.ai/docs/bots/nlp/user-utterances/){:target="_blank"} engine, 
+* [Fundamental Meaning](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/){:target="_blank"} engine,
+* [Knowledge AI](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ai-overview/), including the [Knowledge Graph](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/){:target="_blank"} engine and the [Answer from Documents](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/){:target="_blank"} feature,
+* [Ranking and Resolver](https://developer.kore.ai/docs/bots/nlp/nlp-detection/){:target="_blank"}.
 
 
 !!! note
@@ -111,7 +111,7 @@ From each model dialog, clicking the icon on the top right will display the conf
 
 The ML model tries to match the user input with the task label and the training utterances of each task. If the user input consists of multiple sentences, each sentence is run separately against the task name as well as the task utterances.
 
-Click on the Machine Learning Model button to open the Machine Learning Model section of NLP Analysis. This shows only the names of the tasks that secure a positive score. In general, the more the number of training utterances that you add to a task, the greater are its chances for discovery. For more information, read [Machine Learning](https://developer.kore.ai/docs/bots/nlp/user-utterances/).  
+Click on the Machine Learning Model button to open the Machine Learning Model section of NLP Analysis. This shows only the names of the tasks that secure a positive score. In general, the more the number of training utterances that you add to a task, the greater are its chances for discovery. For more information, read [Machine Learning](https://developer.kore.ai/docs/bots/nlp/user-utterances/){:target="_blank"}.  
 <img src="../images/utterance-testing-8-testing-ml.png" alt="Machine Learning Model - Intent Score" title="Machine Learning Model - Intent Score" style="border: 1px solid gray; zoom:50%;"/>
 
 <br>
@@ -164,16 +164,16 @@ The other scoring methods are:
 
 If the VA includes a Knowledge Graph, the user utterances are processed to extract the terms and are mapped with the Knowledge Graph to fetch the relevant paths. All the paths containing more than a preset threshold of the number of terms get shortlisted for further screening. Path with 100% terms covered and having a similar FAQ in the path is considered a perfect match.
 
-In case the utterance triggers a dialog (as per run a dialog option in KG), the same is displayed as _matched intent_ and _matched utterance_. You can further train the VA as you would for an intent from ML or FM engine. [Know more about Knowledge Graph Training from here](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/).  
+In case the utterance triggers a dialog (as per run a dialog option in KG), the same is displayed as _matched intent_ and _matched utterance_. You can further train the VA as you would for an intent from ML or FM engine. [Know more about Knowledge Graph Training from here](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/){:target="_blank"}.  
 <img src="../images/utterance-testing-11-testing-kg.png" alt="Knowledge Graph" title="Knowledge Graph" style="border: 1px solid gray; zoom:50%;"/>
 
 <br>
 
 #### Answer from Documents
 
-If you have enabled [Answer from Documents](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/) for your VA, and a match is found within your uploaded documents, you will see results for this match, provided the intent is not identified using any other method (a dialog task, a Knowledge Graph FAQ, the Machine Learning or the Fundamental Meaning engine).
+If you have enabled [Answer from Documents](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/){:target="_blank"} for your VA, and a match is found within your uploaded documents, you will see results for this match, provided the intent is not identified using any other method (a dialog task, a Knowledge Graph FAQ, the Machine Learning or the Fundamental Meaning engine).
 
-When an utterance is answered from a document, you will see a note mentioning that no Intent was identified by the ML, FM, and KG engines. Click [Add to KG](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/manage-faqs/) to add an FAQ to the Knowledge Graph to address the utterance and improve intent identification. 
+When an utterance is answered from a document, you will see a note mentioning that no Intent was identified by the ML, FM, and KG engines. Click [Add to KG](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/manage-faqs/){:target="_blank"} to add an FAQ to the Knowledge Graph to address the utterance and improve intent identification. 
 
 When the _Answer from Document_ feature is used in reply to a test utterance, the following information is provided:
 
@@ -221,7 +221,7 @@ The basis for **intent elimination** by Ranking & Resolver when the three engine
 <br>
 
 #### Ranking and Resolver v2
-<a href="https://developer.kore.ai/docs/bots/nlp/nlp-detection/#Notes_on_Ranking_and_Resolver_Version_2">Version 2 of the Ranking and Resolver</a> only ranks the scores of the definitive matches from ML and KG engines (not the FM engine) without intent rescoring to ensure the best intent identification accuracy.
+<a href="https://developer.kore.ai/docs/bots/nlp/nlp-detection/#Notes_on_Ranking_and_Resolver_Version_2" target="_blank">Version 2 of the Ranking and Resolver</a> only ranks the scores of the definitive matches from ML and KG engines (not the FM engine) without intent rescoring to ensure the best intent identification accuracy.
 If you enable Ranking and Resolver Version 2, your test results adjust as follows: 
 
 The **Ranking & Resolver** window displays the following:
@@ -257,9 +257,9 @@ Below is the process we recommend you use for utterance training:
     1. **For an unmatched intent**: From the **Select an Intent** drop-down list, select the intent that you want to match with the user utterance.
     2. **For multiple matched intents**: Select the radio button for the intent you want to match.
     3. **For a single matched intent**: Click the name of the matched intent.
-2. The user utterance that you entered gets displayed in the field under the _ML Utterances _section. To add the utterance to the intent, click **Save**. You can add as many utterances as you want, one after another. For more information, read [Machine Learning](https://developer.kore.ai/docs/bots/nlp/user-utterances/).
-3. Under the _Intent Synonyms_ section, each word in the task name appears as a separate line item. Enter the synonyms for the words to optimize the NLP interpreter accuracy to recognize the correct task. For more information, read [Managing Synonyms](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Managing_Synonyms).
-4. Under the _Intent Patterns_ section, enter task patterns for the intent. For more information, read [Managing Patterns](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Managing_Patterns).
+2. The user utterance that you entered gets displayed in the field under the _ML Utterances _section. To add the utterance to the intent, click **Save**. You can add as many utterances as you want, one after another. For more information, read [Machine Learning](https://developer.kore.ai/docs/bots/nlp/user-utterances/){:target="_blank"}.
+3. Under the _Intent Synonyms_ section, each word in the task name appears as a separate line item. Enter the synonyms for the words to optimize the NLP interpreter accuracy to recognize the correct task. For more information, read [Managing Synonyms](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Managing_Synonyms){:target="_blank"}.
+4. Under the _Intent Patterns_ section, enter task patterns for the intent. For more information, read [Managing Patterns](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Managing_Patterns){:target="_blank"}.
 5. When you are done making the relevant training entries, click **Re-Run Utterance** to see if you have improved the intent to get a high confidence score. 
 
 <img src="../images/utterance-testing-16-utterance-training.png" alt="Utterance-based Training" title="Utterance-based Training" style="border: 1px solid gray; zoom:50%;"/>
@@ -320,7 +320,7 @@ If you want the assistant to respond to user utterance with FAQs there are two w
 
 * set the terms, term configuration, or classes from the FAQ page, train the KG and retest the utterance.
 * add the utterance as an alternate question to the selected FAQ from the Knowledge Graph page, train the KG and retest the utterance.
-[Know more about Knowledge Graph Training](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/).
+[Know more about Knowledge Graph Training](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/){:target="_blank"}.
 
 <br>
 
