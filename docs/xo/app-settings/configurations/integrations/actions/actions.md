@@ -79,7 +79,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="../azure-open-ai/configuring-the-azure-openai-action">Learn more</a>
+   <td>[Learn more](../azure-open-ai/configuring-the-azure-openai-action){:target="_blank"}
    </td>
   </tr>
   <tr>
