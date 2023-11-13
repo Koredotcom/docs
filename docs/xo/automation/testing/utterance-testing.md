@@ -221,7 +221,7 @@ The basis for **intent elimination** by Ranking & Resolver when the three engine
 <br>
 
 #### Ranking and Resolver v2
-<a href="https://developer.kore.ai/docs/bots/nlp/nlp-detection/#Notes_on_Ranking_and_Resolver_Version_2" target="_blank">Version 2 of the Ranking and Resolver</a> only ranks the scores of the definitive matches from ML and KG engines (not the FM engine) without intent rescoring to ensure the best intent identification accuracy.
+[Version 2 of the Ranking and Resolver](https://developer.kore.ai/docs/bots/nlp/nlp-detection/#Notes_on_Ranking_and_Resolver_Version_2){:target="_blank"} only ranks the scores of the definitive matches from ML and KG engines (not the FM engine) without intent rescoring to ensure the best intent identification accuracy.
 If you enable Ranking and Resolver Version 2, your test results adjust as follows: 
 
 The **Ranking & Resolver** window displays the following:
