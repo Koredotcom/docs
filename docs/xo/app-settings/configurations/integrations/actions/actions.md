@@ -79,7 +79,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/azure-open-ai/configuring-the-azure-openai-action">Learn more</a>
+   <td><a href="../azure-open-ai/configuring-the-azure-openai-action">Learn more</a>
    </td>
   </tr>
   <tr>
