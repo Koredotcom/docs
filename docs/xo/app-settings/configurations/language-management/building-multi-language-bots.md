@@ -10,7 +10,7 @@ This article takes you through the general context within which multilingual VAs
 If you want to build a Multilingual VA, there are a few points to keep in mind:
 
   1. There is a set of basic building blocks to a multilingual VA: the language in which it talks to users, the language in which you train it, and the process through which it detects and selects which languages to use. Please continue reading this article to learn more.
-  2. You can create a new Virtual Assistant or add new languages to an existing one. Read more about managing languages [here](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/language-management/managing-languages-for-multilingual-vas/).
+  2. You can create a new Virtual Assistant or add new languages to an existing one. Read more about managing languages [here](../managing-languages-for-multilingual-vas/).
   3. Multilingual VAs have language-specific components and some features exhibit different behaviors compared to single language assistants. Read more about this [here](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/language-management/multilingual-vas-components-feature-support/).
   4. Translation can be automated using pre-built translation services from providers such as Microsoft or Google; or custom services, including any that you may build in-house. Read [here](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/language-management/managing-translation-services/) to learn more.
 
