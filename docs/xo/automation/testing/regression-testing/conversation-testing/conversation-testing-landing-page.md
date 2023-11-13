@@ -46,19 +46,5 @@ The Conversation Testing allows you to capture the flow, track the executed node
 [Batch Testing](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/batch-testing/)
 
 <p>
-<a href="../../batch-testing/" target="_blank" style="text-align: left">Previous</a>
-<a href="https://developer.kore.ai/docs/bots/test-your-bot/create-a-test-suite" target="_blank" style="text-align: right">Next</a>
+<a href="../../batch-testing/" target="_blank" style="text-align: left">Previous</a><a href="https://developer.kore.ai/docs/bots/test-your-bot/create-a-test-suite" target="_blank" style="text-align: right">Next</a>
 </p>
-
-<p style="text-align: right">
-<a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/batch-testing/">
-</a></p>
-
-
-<p style="text-align: right">
-<a href="https://developer.kore.ai/docs/bots/test-your-bot/create-a-test-suite/">Next</a></p>
-
-
-<p style="text-align: right">
-<a href="https://developer.kore.ai/docs/bots/test-your-bot/create-a-test-suite/">Create a Test Suite</a></p>
-
