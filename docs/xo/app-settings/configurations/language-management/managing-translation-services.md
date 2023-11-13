@@ -13,7 +13,7 @@ To enable automatic translation using Microsoft Translation Services, please fol
 
 1. Go to **Build > Configurations > Languages > Translation Configurations**.
 2. Select **Microsoft Translator**.
-3. Provide the **API Key** of your Microsoft Translator API service.[ Learn More.](https://www.microsoft.com/en-us/translator/business/)
+3. Provide the **API Key** of your Microsoft Translator API service.[ Learn More.](https://www.microsoft.com/en-us/translator/business/){:target="_blank"}
 4. Click **Save** to complete the setup.
 
 <img src="../images/mts-img1-microsoft-translation-config.png" alt="Translation configurations - Microsoft" title="Translation Configurations - Microsoft" style="border: 1px solid gray;zoom:50%;"/>
@@ -25,7 +25,7 @@ To enable automatic translation using Google Translation Services, please follow
 
 1. Go to **Build > Configurations > Languages > Translation Configurations**.
 2. Select **Google Translator**.
-3. Provide the **API Key** of your Google Translation API service. [Learn More.](https://cloud.google.com/translate)
+3. Provide the **API Key** of your Google Translation API service. [Learn More.](https://cloud.google.com/translate){:target="_blank"}
 4. Click **Save** to complete the setup.
 
 <img src="../images/mts-img2-google-translation-config-1.png" alt="Translation configurations - Google" title="Translation Configurations - Google" style="border: 1px solid gray;zoom:50%;"/>
@@ -71,7 +71,7 @@ Here is how custom translation services work:
 
 3. Provide a name for the **Custom Translation Engine**.
 4. Define the request payload for sending the text to be translated. Refer to the details provided above for defining the request payload.
-5. Refer to the [Service Node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-service-node/#Define_a_Custom_Service) documentation to learn more about how to configure service integrations.  
+5. Refer to the [Service Node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-service-node/#Define_a_Custom_Service){:target="_blank"} documentation to learn more about how to configure service integrations.  
 <img src="../images/mts-img4-custom-translation-config-1.png" alt="Define Request payload" title="Define request payload" style="border: 1px solid gray;zoom:50%;"/>
 
 6. After defining the request payload, you can test the integration by providing the required details from the Test Request tab. Provide the sample values for the variables shown under the Sample Context Values sections, click **Test** to verify if the custom translation connection is established.  
