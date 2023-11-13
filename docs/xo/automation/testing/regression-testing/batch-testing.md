@@ -797,11 +797,7 @@ table, th, td {
 ### Running Test Suites
 
 The following steps guide you on how to run a batch test on your bot and get a detailed analytical report on the utterances based on the test results. To get started, go to Build > Testing > **Batch Testing**.  
-<img src="../images/batch-testing-14-batch-testing-menu.png" alt="Build > Testing > Batch Testing" title="Build > Testing > Batch Testing" style="border: 1px solid gray; zoom:50%;"/>
-
-!!! note
-
-    Before testing, it is essential to add and train your bot with a considerable number of utterances using Machine Learning.
+<img src="../images/batch-testing-14-batch-testing-menu.png" alt="Batch Testing" title="Batch Testing" style="border: 1px solid gray; zoom:50%;"/>
 
 
 To run a Test Suite, follow the steps below:
