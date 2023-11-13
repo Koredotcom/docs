@@ -372,7 +372,7 @@ Post-release 8.0, this property can include the expected Small Talk pattern.
    <td>String
    </td>
    <td>Value of the entity expected to be determined from the utterance. You can define the expected Entity Value as a string or use a Regular Expression. For the purpose of Batch Testing, the platform flattens all entity values into string formats. 
-   Please refer to the <a href="#entity-format-conversions">Entity Format Conversions</a> section for more information.
+   Please refer to the [Entity Format Conversions](#entity-format-conversions) section for more information.
    </td>
   </tr>
   <tr>
@@ -486,7 +486,7 @@ In the case of Small Talk, this field should be populated when the Small Talk is
    </td>
    <td>String [Optional]
    </td>
-   <td>Value of the entity expected to be determined from the utterance. You can define the expected Entity Value as a string or use a Regular Expression. For the purpose of Batch Testing, the platform flattens all entity values into string formats. Please refer to the <a href="#entity-format-conversions">Entity Format Conversions</a> section for more information.
+   <td>Value of the entity expected to be determined from the utterance. You can define the expected Entity Value as a string or use a Regular Expression. For the purpose of Batch Testing, the platform flattens all entity values into string formats. Please refer to the [Entity Format Conversions](#entity-format-conversions) section for more information.
 
    </td>
   </tr>
