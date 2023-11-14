@@ -99,7 +99,7 @@ Steps to install action templates:
 3. Once the template is installed, click the **Go to Dialog** button to view the dialog task.
 4. A dialog task is automatically created for each installed template.
 5. Alternatively, you can create a new dialog task and select the Bitly integration to select the dialog task from the templates and click **Proceed**. For example, select the **Short an Url** task.  
-<img src="../images/bitly-action-img11.png" alt="Create task and select integration" title="Create task and select integration" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/bitly-action-img11-tem-img2.png" alt="Create task and select integration" title="Create task and select integration" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Once you click **Proceed**, the dialog task is auto-created, and the canvas opens with all required entity nodes, service nodes, and message scripts.  
-<img src="../images/bitly-action-img12.png" alt="Dialog create dand canvas opens" title="Dialog create dand canvas opens" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/bitly-action-img12-tem-img4.png" alt="Dialog create dand canvas opens" title="Dialog create dand canvas opens" style="border: 1px solid gray;zoom:50%;"/>

@@ -130,7 +130,7 @@ Steps to find an employee by ID from the BambooHR integration:
 
     1. **getEmployeeByID** – A user intent to find an employee by ID.
     2. **companyDomain** and **id**– Entity nodes for gathering the required employee details.
-    3. **getEmployeeByIdService** – A bot action service to find an employee by an ID from an external integration. Click the **Plus **icon to expand to view the _getEmployeeByIdService_ bot action component properties.
+    3. **getEmployeeByIdService** – A bot action service to find an employee by an ID from an external integration. Click the **Plus** icon to expand to view the _getEmployeeByIdService_ bot action component properties.
     4. In the Component Properties window, click the **Edit Request** link to edit the request parameters as shown below:  
     <img src="../images/bamboo-hr-tem-img9-get-employee1.png" alt="Request" title="Request" style="border: 1px solid gray;zoom:50%;"/>  
       
@@ -162,7 +162,7 @@ Steps to view all employees in the BambooHR integration:
 
     1. **listAllEmployees** – A user intent to create an employee.
     2. **companyDomain** – Entity nodes for gathering the required employee details.
-    3. **listAllEmployeesService** – A bot action service to fetch all employees from an external integration. Click the **Plus **icon to expand to view the _listAllEmployeesService_ bot action component properties.
+    3. **listAllEmployeesService** – A bot action service to fetch all employees from an external integration. Click the **Plus** icon to expand to view the _listAllEmployeesService_ bot action component properties.
     4. In the Component Properties window, click the **Edit Request** link to edit the request parameters as shown below:  
     <img src="../images/bamboo-hr-tem-img12-list-employees1.png" alt="Request" title="Request" style="border: 1px solid gray;zoom:50%;"/>  
       
