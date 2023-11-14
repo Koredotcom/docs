@@ -59,7 +59,7 @@ You can authorize the integration at a user level with their login credentials. 
 Steps to authorize a BambooHR action at a user level:
 
 1. Go to **Build > Integrations > Actions**.
-2. Select the **BambooHR **action in the **Available Actions** region.
+2. Select the **BambooHR** action in the **Available Actions** region.
 3. In the Configurations dialog, select the **Authorization** tab.
 4. Enter the following details:
     * **Authorization Type** – Select the **Allow Users to Authorize the Integration** option, and then select the **Basic Auth** option.
