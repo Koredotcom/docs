@@ -11,7 +11,7 @@ Steps to create a dialog task using the BambooHR action templates:
 3. On the Dialog Task pop-up, under the Integration, select the BambooHR option to view the action templates.  
 <img src="../images/bamboo-hr-tem-img2.png" alt="Select BambooHR" title="Select BambooHR" style="border: 1px solid gray;zoom:50%;"/>
 
-**Note**: If you have not configured any integration for your virtual assistant, you will see the Explore Integrations option. Once you click this option, you will be redirected to the Actions page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/).  
+**Note**: If you have not configured any integration for your virtual assistant, you will see the Explore Integrations option. Once you click this option, you will be redirected to the Actions page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
 <img src="../images/bamboo-hr-tem-img3-explore-integrations.png" alt="Explore integrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 ## Bamboo HR Actions
