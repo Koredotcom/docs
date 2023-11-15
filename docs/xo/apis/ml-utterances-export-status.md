@@ -1,20 +1,20 @@
 
-# **Delete Batch Test Suite Execution API**
+# **ML Utterances Export Status API**
 
-To delete a specific execution of a Batch Test Suite.
+To get the download link of the ML Utterances export copy.
 
 
 <table>
   <tr>
    <td><strong>Method</strong>
    </td>
-   <td>DELETE
+   <td>GET
    </td>
   </tr>
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{host}/api/public/bot/{botId}/testsuite/{testSuiteName}/{testRunId}</code>
+   <td><code>https://{{host}}/api/public/bot/{{BotID}}/mlexport/status</code>
    </td>
   </tr>
   <tr>
@@ -37,9 +37,9 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    <td>
 <ul>
 
-<li>Bot Builder: Batch Tests Management
+<li>Bot Builder: Utterances Export
 
-<li>Admin Console: Batch Tests Management
+<li>Admin Console: Test > Utterances Export and Train
 </li>
 </ul>
    </td>
@@ -47,16 +47,16 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 </table>
 
 
-## Query Parameters
+## Path Parameters
 
 
 <table>
   <tr>
    <td><strong>PARAMETER</strong>
    </td>
-   <td><strong>DESCRIPTION</strong>
+   <td><strong>REQUIRED/OPTIONAL</strong>
    </td>
-   <td><strong>MANDATE</strong>
+   <td><strong>DESCRIPTION</strong>
    </td>
   </tr>
   <tr>
@@ -68,25 +68,9 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    </td>
   </tr>
   <tr>
-   <td><strong>BotID</strong>
+   <td><strong>BotId</strong>
    </td>
    <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
-   </td>
-   <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td><strong>testSuiteName</strong>
-   </td>
-   <td>Name of the test suite on the Bot Builder.
-   </td>
-   <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td><strong>testRunId</strong>
-   </td>
-   <td>The unique identifier of an execution result obtained by running the <a href="https://developer.kore.ai/docs/bots/api-guide/batch-test-execution-api/">test execution API</a>.
    </td>
    <td>Required
    </td>
@@ -98,22 +82,35 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 
 
 ```json
-curl --location --request DELETE \
-     'https://{host}/api/public/bot/{botId}/testsuite/{testSuiteName}/{testRunId}' \
-      --header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
-      --header 'bot-language: {language-code}'
+curl -X GET \
+  'https://{{host}}/api/public/bot/{{bot ID}}/mlexport/status' \
+  -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
+  -H 'content-type: application/json' \
 ```
-
 
 ## Body Parameters
 
 No body parameters are passed.
-
 
 ## Sample Response
 
 
 ```json
 {
-    "message": "Test Result Removed Successfully"
+    "_id": "dx-aaxxxxxx-bxxe-5xxc-bxxf-31xxxxxxxxxx",
+    "status": "SUCCESS",
+    "percentageComplete": 100,
+    "streamId": "sx-6xxxxxx2-5xx1-5xx0-b9xx-8cxxxxxxxxxx",
+    "createdBy": "u-5dxxxxxx-bxx1-5xx0-axx8-2exxxxxxxxxx",
+    "jobType": "ML_UTTERANCE",
+    "action": "EXPORT",
+    "countOfDockStatuses": 1,
+    "fileType": "CSV",
+    "statusLogs": [],
+    "lMod": "2019-06-27T06:49:15.726Z",
+    "createdOn": "2019-06-27T06:49:15.572Z",
+    "requestedTime": "2023-07-25T15:23:36.912Z",
+    "__v": 0,
+    "downloadUrl": ""
 }
+```

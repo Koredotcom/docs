@@ -1,20 +1,19 @@
+# **ML Utterances Train API**
 
-# **Delete Batch Test Suite API**
-
-To delete a Batch Test Suite.
+To initiate the ML training for a bot.
 
 
 <table>
   <tr>
    <td><strong>Method</strong>
    </td>
-   <td>DELETE
+   <td>POST
    </td>
   </tr>
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{host}/api/public/bot/{botId}/testsuite/{testSuiteName}</code>
+   <td><code>https://{{host}}/api/public/bot/{{BotID}}/ml/train</code>
    </td>
   </tr>
   <tr>
@@ -37,14 +36,17 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    <td>
 <ul>
 
-<li>Bot Builder: Batch Tests Management
+<li>Bot Builder: Train ML
 
-<li>Admin Console: Batch Tests Management
+<li>Admin Console: Test and Train > Train ML
 </li>
 </ul>
    </td>
   </tr>
 </table>
+
+
+ 
 
 
 ## Query Parameters
@@ -70,17 +72,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   <tr>
    <td><strong>BotID</strong>
    </td>
-   <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
-   </td>
-   <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td><strong>testSuiteName</strong>
-   </td>
-   <td>Name of the test suite on the Bot Builder.
-<p>
-<strong>Note</strong>: Only Custom Batch Test Suites can be deleted.
+   <td>The <strong>Bot ID</strong> or <strong>Stream ID</strong> to be accessed under <strong>General Settings</strong> on the Bot Builder.
    </td>
    <td>Required
    </td>
@@ -88,19 +80,25 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 </table>
 
 
+ 
+
+
 ## Sample Request
 
 
 ```json
-curl --location --request DELETE \
-     'https://{host}/api/public/stream/{streamId}/testsuite/{testSuiteName}' \
-       --header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
-       --header 'bot-language: {language-code}'
+curl -X POST \
+  https://{{host}}/api/public/bot/{{BotId}}/ml/train \
+  -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 ```
+
+
+ 
+
 
 ## Body Parameters
 
-No Body parameters are passed.
+No Body Parameters are passed.
 
  
 
@@ -109,6 +107,9 @@ No Body parameters are passed.
 
 
 ```json
-{
-    "message": "Test Suite removed successfully"
-}
+[
+    {
+        "message": "Training Queued.",
+        "Training_ID": "5dxxxxxxxxxxxxxxxxxxxxxx"
+    }
+]
