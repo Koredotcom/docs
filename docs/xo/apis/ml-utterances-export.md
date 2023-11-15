@@ -1,20 +1,19 @@
+# **ML Utterances Export API**
 
-# **Delete Batch Test Suite Execution API**
-
-To delete a specific execution of a Batch Test Suite.
+To export the ML utterances of a bot by creating a _request ID_ to generate the download link of the bot using the [ML Utterance Export Status API](https://developer.kore.ai/docs/bots/api-guide/ml-utterances-export-status-api/).
 
 
 <table>
   <tr>
    <td><strong>Method</strong>
    </td>
-   <td>DELETE
+   <td>POST
    </td>
   </tr>
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{host}/api/public/bot/{botId}/testsuite/{testSuiteName}/{testRunId}</code>
+   <td><code>https://{{host}}/api/public/bot/{{BotID}}/mlexport</code>
    </td>
   </tr>
   <tr>
@@ -37,9 +36,9 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    <td>
 <ul>
 
-<li>Bot Builder: Batch Tests Management
+<li>Bot Builder: Utterances Export
 
-<li>Admin Console: Batch Tests Management
+<li>Admin Console: Test > Utterances Export and Train
 </li>
 </ul>
    </td>
@@ -68,25 +67,9 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    </td>
   </tr>
   <tr>
-   <td><strong>BotID</strong>
+   <td><strong>BotId</strong>
    </td>
    <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
-   </td>
-   <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td><strong>testSuiteName</strong>
-   </td>
-   <td>Name of the test suite on the Bot Builder.
-   </td>
-   <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td><strong>testRunId</strong>
-   </td>
-   <td>The unique identifier of an execution result obtained by running the <a href="https://developer.kore.ai/docs/bots/api-guide/batch-test-execution-api/">test execution API</a>.
    </td>
    <td>Required
    </td>
@@ -98,12 +81,10 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 
 
 ```json
-curl --location --request DELETE \
-     'https://{host}/api/public/bot/{botId}/testsuite/{testSuiteName}/{testRunId}' \
-      --header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
-      --header 'bot-language: {language-code}'
+curl -X POST \ 'https://{{host}}/api/public/bot/{{bot_id}}/mlexport?state=configured&=&type=csv' \
+  -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
+  -H 'content-type: application/json'
 ```
-
 
 ## Body Parameters
 
@@ -115,5 +96,18 @@ No body parameters are passed.
 
 ```json
 {
-    "message": "Test Result Removed Successfully"
+    "status": "IN_PROGRESS",
+    "percentageComplete": 0,
+    "streamId": "st-22184e1f-e116-5ed4-8741-7aec3be466d7",
+    "jobType": "ML_UTTERANCE",
+    "action": "EXPORT",
+    "countOfDockStatuses": 1,
+    "createdBy": "u-8214dc3a-c749-5d23-b8ad-2a21bfa396ca",
+    "fileType": "CSV",
+    "statusLogs": [],
+    "_id": "ds-db32ec69-7f80-5873-890a-576fe585965f",
+    "lMod": "2023-07-26T13:15:04.000Z",
+    "createdOn": "2023-07-26T13:15:04.983Z",
+    "requestedTime": "2023-07-26T13:15:04.984Z",
+    "__v": 0
 }

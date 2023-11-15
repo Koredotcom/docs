@@ -100,7 +100,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 ```json
 curl --location --request 
 POST \' https://{{host}}/api/public/bot/{{BotID}}/notify' \
---header 'auth: {{JWT}}' \
+--header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "channel": "msteams",

@@ -1,6 +1,6 @@
-# **Create (Import) a Test Suite API**
+# **Execute a Test Suite API**
 
-To create a conversation test suite by importing the test cases from a given file. This API returns **_dsId_**, the ID to check the import status.
+To execute Conversation Test Suites and get results. This API only initiates the test process and returns the execution status and **_testRunId_** to track the execution status. Please look at the [Conversation Test Suite Execution Status API](https://developer.kore.ai/docs/bots/api-guide/conversation-test-suite-execution-status-api/) for the results of the test.
 
 
 <table>
@@ -13,7 +13,7 @@ To create a conversation test suite by importing the test cases from a given fil
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{{host}}/api/public/stream/:streamId/conversation/testsuite/import</code>
+   <td><code>https://{{host}}/api/public/stream/:streamId/conversation/testsuite/:testSuiteName/run</code>
    </td>
   </tr>
   <tr>
@@ -36,9 +36,9 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    <td>
 <ul>
 
-<li>Bot Builder: Conversation Tests Management
+<li>Bot Builder: Conversation Tests Execution
 
-<li>Admin Console: Conversation Tests Management
+<li>Admin Console: Conversation Tests Execution
 </li>
 </ul>
    </td>
@@ -75,6 +75,14 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    <td>Required
    </td>
   </tr>
+  <tr>
+   <td><strong>testSuiteName</strong>
+   </td>
+   <td>Name of the test suite on the Bot Builder.
+   </td>
+   <td>Required
+   </td>
+  </tr>
 </table>
 
 
@@ -83,17 +91,14 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 
 
 ```json
-curl --location --request POST \     
-'https://{{host}}/api/public/stream/:streamId/conversation/testsuite/import' \
+curl --location --request POST \
+      'https://{{host}}/api/public/stream/:streamId/conversation/testsuite/:testSuiteName/run' \
       --header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
       --header 'bot-language: {language-code}' \
       --header 'Content-Type: application/json' \
       --data-raw '{
-          "fileName": "64dxxxxxxxxxxxxxxxxxxxxc", field(fileId)
-          "name": "newtestcase", 
-          "tags" : [],
-          "description" : ""
-}'
+         "version":"inDevelopment" 
+         }'
 ```
 
 
@@ -111,35 +116,18 @@ curl --location --request POST \
    </td>
   </tr>
   <tr>
-   <td><strong>fileName</strong>
+   <td><strong>version</strong>
    </td>
-   <td>File containing the conversation test suite details.
+   <td>The version of the bot against which the execution is required. The following options are available:
+<ul>
+
+<li><strong><em>published</em></strong> for the published version.
+
+<li><strong><em>inDevelopment</em></strong> for the configured version.
+</li>
+</ul>
    </td>
    <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td><strong>name</strong>
-   </td>
-   <td>TestSuite Name
-   </td>
-   <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td><strong>tags</strong>
-   </td>
-   <td>Conversation test cases tags list.
-   </td>
-   <td>Optional
-   </td>
-  </tr>
-  <tr>
-   <td><strong>description</strong>
-   </td>
-   <td>Test suite description
-   </td>
-   <td>Optional
    </td>
   </tr>
 </table>
@@ -152,5 +140,5 @@ curl --location --request POST \
 ```json
 {
     "status": "IN_PROGRESS",
-    "dsId": "ds-f8xxxxx5-5xxa-5xx4-axx4-48xxxxxxxxx9" 
+    "testRunId": "ctr-80xxxx9a-bxx1-58xx-axx7-d5xxxxxxxxxx"
 }

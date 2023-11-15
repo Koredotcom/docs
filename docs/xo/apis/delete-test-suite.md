@@ -1,19 +1,20 @@
-# **Create (Import) a Test Suite API**
 
-To create a conversation test suite by importing the test cases from a given file. This API returns **_dsId_**, the ID to check the import status.
+# **Delete a Test Suite API**
+
+To delete an existing conversation test suite.
 
 
 <table>
   <tr>
    <td><strong>Method</strong>
    </td>
-   <td>POST
+   <td>DELETE
    </td>
   </tr>
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{{host}}/api/public/stream/:streamId/conversation/testsuite/import</code>
+   <td><code>https://{{host}}/api/public/stream/:streamId/conversation/testsuite</code>
    </td>
   </tr>
   <tr>
@@ -83,17 +84,14 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 
 
 ```json
-curl --location --request POST \     
-'https://{{host}}/api/public/stream/:streamId/conversation/testsuite/import' \
-      --header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
+curl --location --request DELETE \
+      'https://{{host}}/api/public/stream/:streamId/conversation/testsuite' \
+      --header 'auth: {jwt-token}' \
       --header 'bot-language: {language-code}' \
       --header 'Content-Type: application/json' \
       --data-raw '{
-          "fileName": "64dxxxxxxxxxxxxxxxxxxxxc", field(fileId)
-          "name": "newtestcase", 
-          "tags" : [],
-          "description" : ""
-}'
+         "testSuiteNames" : ["newtestcaseconvtest"] 
+         }'
 ```
 
 
@@ -111,35 +109,11 @@ curl --location --request POST \
    </td>
   </tr>
   <tr>
-   <td><strong>fileName</strong>
+   <td><strong>testSuiteNames</strong>
    </td>
-   <td>File containing the conversation test suite details.
-   </td>
-   <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td><strong>name</strong>
-   </td>
-   <td>TestSuite Name
+   <td>Array containing test suite names.
    </td>
    <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td><strong>tags</strong>
-   </td>
-   <td>Conversation test cases tags list.
-   </td>
-   <td>Optional
-   </td>
-  </tr>
-  <tr>
-   <td><strong>description</strong>
-   </td>
-   <td>Test suite description
-   </td>
-   <td>Optional
    </td>
   </tr>
 </table>
@@ -151,6 +125,5 @@ curl --location --request POST \
 
 ```json
 {
-    "status": "IN_PROGRESS",
-    "dsId": "ds-f8xxxxx5-5xxa-5xx4-axx4-48xxxxxxxxx9" 
+    "status": "Success"
 }

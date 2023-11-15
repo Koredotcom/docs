@@ -105,7 +105,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 ```json
 curl -X GET \
   https://{host}/api/public/bot/{botId}/testsuite?skip={skip}&limit={limit} \
-  --header 'auth: {jwt-token}' \
+  --header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
   --header 'bot-language: {language-code}'
 ```
 

@@ -87,7 +87,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 
 ```json
 curl --location 'https://{host}/api/public/bot/{BotID}/export' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTIyIiwibmFtZSI6IjM0NCIsImFwcElkIjoiY3MtN2Q1NDM2Y2QtNzliNi01YjI3LTg3OTgtMWQyNWNhMWQ5MWE2In0.xKEFeQPof33gbo-CCw-QLvJFrfC0tQEYwWDda1pg024' \
+--header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
 --header 'content-type: application/json' \
 --data '{
     "exportType": "published",

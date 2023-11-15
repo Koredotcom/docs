@@ -1,20 +1,19 @@
+# **FAQ Training API**
 
-# **Delete Batch Test Suite Execution API**
-
-To delete a specific execution of a Batch Test Suite.
+To initiate the training of the knowledge graph.
 
 
 <table>
   <tr>
    <td><strong>Method</strong>
    </td>
-   <td>DELETE
+   <td>POST
    </td>
   </tr>
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{host}/api/public/bot/{botId}/testsuite/{testSuiteName}/{testRunId}</code>
+   <td><code>https://{{host}}/api/public/bot/{{BotID}}/faqs/train</code>
    </td>
   </tr>
   <tr>
@@ -37,9 +36,9 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    <td>
 <ul>
 
-<li>Bot Builder: Batch Tests Management
+<li>Bot Builder: Train FAQ
 
-<li>Admin Console: Batch Tests Management
+<li>Admin Console: Test and Train > Train FAQ
 </li>
 </ul>
    </td>
@@ -47,7 +46,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 </table>
 
 
-## Query Parameters
+## Path Parameters
 
 
 <table>
@@ -68,52 +67,60 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    </td>
   </tr>
   <tr>
-   <td><strong>BotID</strong>
+   <td><strong>BotId</strong>
    </td>
    <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
    </td>
    <td>Required
    </td>
   </tr>
+</table>
+
+## Sample Request
+
+
+```json
+curl -X POST \
+  https://{{host}}/api/public/bot/{{bot_id}}/faqs/train \
+  -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
+  -H 'content-type: application/json' \
+-d '{
+"language":"en"
+}'
+```
+
+## Body Parameters
+
+
+<table>
   <tr>
-   <td><strong>testSuiteName</strong>
+   <td><strong>PARAMETER</strong>
    </td>
-   <td>Name of the test suite on the Bot Builder.
+   <td><strong>DESCRIPTION</strong>
    </td>
-   <td>Required
+   <td><strong>MANDATE</strong>
    </td>
   </tr>
   <tr>
-   <td><strong>testRunId</strong>
+   <td><strong>language</strong>
    </td>
-   <td>The unique identifier of an execution result obtained by running the <a href="https://developer.kore.ai/docs/bots/api-guide/batch-test-execution-api/">test execution API</a>.
+   <td>The Bot language which is identified by the language acronym. For example, <em>en</em> for English and <em>de</em> for German. The user can set the default language of the bot.
    </td>
    <td>Required
    </td>
   </tr>
 </table>
 
-
-## Sample Request
-
-
-```json
-curl --location --request DELETE \
-     'https://{host}/api/public/bot/{botId}/testsuite/{testSuiteName}/{testRunId}' \
-      --header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
-      --header 'bot-language: {language-code}'
-```
-
-
-## Body Parameters
-
-No body parameters are passed.
-
-
 ## Sample Response
 
 
 ```json
 {
-    "message": "Test Result Removed Successfully"
+    "_id": "ds-1xxxxxxd-31xx-5xx1-83xx-0dxxxxxxxxxx",
+    "message": "in-progress",
+    "status": "in-progress",
+    "__v": 0,
+    "lastModifiedBy": "u-adxxxxxx-exx1-5xxd-axxc-21xxxxxxxxxx",
+    "modifiedOn": "2022-07-29T08:20:31.569Z"
 }
+```
