@@ -1,6 +1,6 @@
 # **Using the Confluence Action Templates**
 
-You can use the **Prebuilt Action Templates **from your Confluence integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
+You can use the **Prebuilt Action Templates** from your Confluence integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 
 Steps to create a dialog task using Confluence action templates:
 
@@ -9,10 +9,11 @@ Steps to create a dialog task using Confluence action templates:
 <img src="../images/confluence-tem-img1-create-dailog-task.png" alt="Create a Dialog Task" title="Create a Dialog Task" style="border: 1px solid gray;zoom:50%;"/>
 
 3. On the Dialog Task pop-up, under the **Integration**, select the **Confluence** option to view the action templates.  
-<img src="../images/confluence-action-img13-tem-img2.png" alt="Integration > Confluence" title="Integration > Confluence" style="border: 1px solid gray;zoom:50%;"/>  
-  
-  **Note**: If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
-  <img src="../images/conflu-tem-img3-create-dialog-new.png" alt="Explore integrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/confluence-action-img13-tem-img2.png" alt="Integration > Confluence" title="Integration > Confluence" style="border: 1px solid gray;zoom:50%;"/>
+
+
+**Note**: If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+<img src="../images/conflu-tem-img3-create-dialog-new.png" alt="Explore integrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 ## Confluence Actions
 
@@ -73,15 +74,15 @@ Steps to create content using the Confluence integration:
 
 
         To add one or more responses, scroll down and click the +Add Response button:  
-        <img src="../images/confluence-tem-img6.png" alt="Response" title="Response" style="border: 1px solid gray;zoom:50%;"/>
+        <img src="../images/confluence-tem-response-img5.png" alt="Response" title="Response" style="border: 1px solid gray;zoom:50%;"/>
 
         **Sample Response**
 
-        ``````
+        ```
         {
-        "id": "21004299",
-        "type": "page",
-        "status": "current",
+        "id": "21004299",  
+        "type": "page",  
+        "status": "current",  
         "title": "Page 1",
         "space": {
         "id": 196612,
@@ -314,19 +315,19 @@ Steps to create content using the Confluence integration:
         
 
 
-    4. **createContentService** – A bot action service to create content in the Confluence space. Click the **Plus **icon to expand to view the createContentService bot action component properties. In the **Component Properties** window, click the **Edit Request** link to edit the request parameters.
+    4. **createContentService** – A bot action service to create content in the Confluence space. Click the **Plus** icon to expand to view the createContentService bot action component properties. In the **Component Properties** window, click the **Edit Request** link to edit the request parameters.
     5. **createContentMessage** – A message node with the script to display responses for creating content.
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
 5. Follow the prompts in the VA console to create content on Confluence as shown below:  
-<img src="../images/confluence-tem-img7.png" alt="VA console prompt to create content" title="VA console prompt to create content" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/confluence-tem-img6.png" alt="VA console prompt to create content" title="VA console prompt to create content" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Enter a title and body details when prompted by the VA as shown below:  
-<img src="../images/confluence-tem-img8.png" alt="VA console prompt to enter title and body" title="VA console prompt to enter title and body" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/confluence-tem-img7.png" alt="VA console prompt to enter title and body" title="VA console prompt to enter title and body" style="border: 1px solid gray;zoom:50%;"/>
 
 7. You will notice that content is created with the title and body on Confluence. Expand and click the **View Content** button.  
-<img src="../images/confluence-tem-img9.png" alt="Content created, expand to view" title="Content created, expand to view" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/confluence-tem-img8.png" alt="Content created, expand to view" title="Content created, expand to view" style="border: 1px solid gray;zoom:50%;"/>
 
 8. You can view the page on Confluence.  
-<img src="../images/confluence-tem-img10.png" alt="View page in Confluence" title="View page in Confluence" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/confluence-tem-img9.png" alt="View page in Confluence" title="View page in Confluence" style="border: 1px solid gray;zoom:50%;"/>
