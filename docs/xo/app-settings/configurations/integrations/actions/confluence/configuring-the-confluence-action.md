@@ -170,7 +170,7 @@ Steps to install action templates:
 <img src="../images/confluence-action-img12.png" alt="Dialog tasks auto-created for installed templates" title="Dialog tasks auto-created for installed templates" style="border: 1px solid gray;zoom:50%;"/>
 
 5. Select the desired dialog task from the templates and click **Proceed**. For example, select the **Create Content** task.  
-<img src="../images/confluence-action-img13.png" alt="Select dialog task" title="Select dialog task" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/confluence-action-img13-tem-img2.png" alt="Select dialog task" title="Select dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Once you click **Proceed**, the dialog task is auto-created, and the canvas opens with all required entity nodes, service nodes, and message scripts.  
-<img src="../images/confluence-action-img14.png" alt="Dialog task canvas" title="Dialog task canvas" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/confluence-action-img14-tem-img4.png" alt="Dialog task canvas" title="Dialog task canvas" style="border: 1px solid gray;zoom:50%;"/>
