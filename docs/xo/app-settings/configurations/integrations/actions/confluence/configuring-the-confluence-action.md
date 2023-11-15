@@ -68,8 +68,9 @@ Steps to authorize a Confluence action using developer credentials:
 1. Go to **Build > Integrations > Actions** and select the **Confluence** action.
 2. In the **Configurations** dialog, select the **Authorization** tab.
 3. Enter the following details:
-        * **Authorization Type** – Select the **Pre-authorize the Integration** option, and then select the **OAuth** option.  
-        <img src="../images/confluence-action-img2.png" alt="Authorization Type-OAuth" title="Authorization Type-OAuth" style="border: 1px solid gray;zoom:50%;"/>  
+
+    * **Authorization Type** – Select the **Pre-authorize the Integration** option, and then select the **OAuth** option.  
+    <img src="../images/confluence-action-img2.png" alt="Authorization Type-OAuth" title="Authorization Type-OAuth" style="border: 1px solid gray;zoom:50%;"/>  
           
         
     **System Authorization**
@@ -94,15 +95,16 @@ Steps to authorize a Confluence action using developer credentials:
 
       * Select the type of authorization mechanism. For example, select the OAuth v2 option. To create custom OAuth profiles, read the [Setting Up Authorization Using OAuth v2](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-oauthv2-clientcredentials/){:target="_blank"} article.
       * Enter the following authentication credentials for the OAuth v2 mechanism:
-            * Call back URL
-            * Identity Provider Name
-            * Client ID
-            * Client Secret
-            * Authorization URL
-            * Token Request URL
-            * Scope
-            * Refresh Token URL  
-          <img src="../images/confluence-action-img5.png" alt="Authorization credentials" title="Authorization credentials" style="border: 1px solid gray;zoom:50%;"/>
+
+          * Call back URL
+          * Identity Provider Name
+          * Client ID
+          * Client Secret
+          * Authorization URL
+          * Token Request URL
+          * Scope
+          * Refresh Token URL  
+      <img src="../images/confluence-action-img5.png" alt="Authorization credentials" title="Authorization credentials" style="border: 1px solid gray;zoom:50%;"/>
 
       * Click **Save Auth** to save Authorization Profile.Select the new **Authorization Profile** you created to enable integration.  
       <img src="../images/confluence-action-img6.png" alt="Save auth" title="Save auth" style="border: 1px solid gray;zoom:50%;"/>
