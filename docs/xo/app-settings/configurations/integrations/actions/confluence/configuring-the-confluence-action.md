@@ -137,6 +137,7 @@ Steps to authorize a Confluence action at a user level:
     **System Authorization**
 
     The end user has to provide credentials during the conversation to authorize users for Confluence integration to obtain the access token.
+    
     * Select the **System** card to enable Kore.ai’s preconfigured Confluence app.
     * Once you click the **Enable** button, a link is sent to the end user to authorize the integration.
     * Click the link and enter the login credentials to allow the user to authorize the integration.
