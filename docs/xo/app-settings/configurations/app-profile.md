@@ -66,7 +66,7 @@ Once <strong>Target Audience</strong> is defined and saved, you cannot change th
   <tr>
    <td>Variable Namespaces
    </td>
-   <td>You can categorize variables using Namespaces and map them to various components. The XO Platform will load the variables only from the mapped namespaces while executing specific components. <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/managing-namespace">Learn more</a>.
+   <td>You can categorize variables using Namespaces and map them to various components. The XO Platform will load the variables only from the mapped namespaces while executing specific components. <a href="../integrations/managing-namespace" target="_blank"></a>.
    </td>
   </tr>
   <tr>
@@ -100,7 +100,7 @@ Once <strong>Target Audience</strong> is defined and saved, you cannot change th
   <tr>
    <td>Error Message(s)
    </td>
-   <td>Edit or add custom <strong>HTTP Status Codes</strong> and error messages for your Bot. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/app-profile/#customizing-error-messages">Customizing Error Messages</a>.
+   <td>Edit or add custom <strong>HTTP Status Codes</strong> and error messages for your Bot. For more information, see <a href="#customizing-error-messages">Customizing Error Messages</a>.
    </td>
   </tr>
 </table>

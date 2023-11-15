@@ -9,13 +9,13 @@ To create an Assistant from scratch, follow the below steps:
 
 1. Log in to your Kore.ai XO Platform account.
 2. On the Virtual Assistant landing page, click **New Bot** on the top-right and select the **Start from Scratch** option.
-3. On the _Create New Bot _window, enter the Assistant details:
+3. On the _Create New Bot_ window, enter the Assistant details:
     1. **Name** – Give a name to your Assistant. For example, Banking Assistant. If the name is already used, try something else
     2. **Select the language from the Default Bot Language drop-down** list.  
 
     <img src="../images/mlva-img1-add-lang-to-new-va.png" alt="Name and default bot language" title="Name and default bot language" style="border: 1px solid gray;zoom:50%;"/>
 
-4. If the selected language is from one of the 26 languages supported as NLU languages ([read more here](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/language-management/multilingual-vas-components-feature-support/#nlp-support)) then by default, the VA language will be the same as the NLU language. You can always change the NLU language to any language by clicking on the **Advanced Options** link to search and select the **NLU language** from the list of supported languages.  
+4. If the selected language is from one of the 26 languages supported as NLU languages ([read more here](../multilingual-vas-components-feature-support/#nlp-support){:target="_blank"}) then by default, the VA language will be the same as the NLU language. You can always change the NLU language to any language by clicking on the **Advanced Options** link to search and select the **NLU language** from the list of supported languages.  
 <img src="../images/mlva-img2-nlu-lang-scratch.png" alt="Change NLU Language" title="Change NLU Language" style="border: 1px solid gray;zoom:50%;"/>
 
 5. Once you select an NLU language, which is different from the default Bot Language, you can enable the following translation modules:
@@ -59,7 +59,7 @@ Even if your assistant has already been created, you can still add new languages
       * **Use Language Pack** – Lets you upload the language definitions after adding manually translating a JSON file. You can download a JSON language pack of any of the already-enabled languages and then edit the dialog prompts and messages in the JSON file. Upload the updated JSON file to enable the new language for the assistant.  
         <img src="../images/mlva-img9-lang-pack.png" alt="Language pack" title="Language pack" style="border: 1px solid gray;zoom:50%;"/> 
 
-    c. **Manage Translations** – In case the Translation Engine is not configured, click the **Configure** link to set up the translation engine for your assistant. To learn how to enable Input Translation or Runtime Response Translation, [refer to this article](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/language-management/managing-translation-services/).  
+    c. **Manage Translations** – In case the Translation Engine is not configured, click the **Configure** link to set up the translation engine for your assistant. To learn how to enable Input Translation or Runtime Response Translation, [refer to this article](../managing-translation-services/){:target="_blank"}.  
     <img src="../images/mlva-img10-enable-translation.png" alt="Manage translations" title="Manage translations" style="border: 1px solid gray;zoom:50%;"/>
 
 5. Once you have configured translations, click **Enable** to add/enable a new language for the assistant.

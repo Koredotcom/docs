@@ -5,9 +5,9 @@ In the case of multi-lingual bots, while much of the bot behavior does not chang
 
 ## Pattern Support
 
-We have seen in [this document](https://developer.kore.ai/docs/bots/how-tos/how-to-use-patterns-for-intents-entities/), how Patterns can be used for Intent detection and Entity extraction. Those rules are for bots in the English language. Though the multilingual bots honor those rules, the language semantics impose some restrictions.
+We have seen in [this document](https://developer.kore.ai/docs/bots/how-tos/how-to-use-patterns-for-intents-entities/){:target="_blank"}, how Patterns can be used for Intent detection and Entity extraction. Those rules are for bots in the English language. Though the multilingual bots honor those rules, the language semantics impose some restrictions.
 
-Also, patterns can also be used in [Small Talk](https://developer.kore.ai/docs/bots/bot-builder-tool/small-talk/#Terminology) (while defining queries), [Knowledge Graph](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/creating-a-knowledge-graph/#Adding_FAQs) (using alternate question field), and [Trait](https://developer.kore.ai/docs/bots/nlp/traits/#Trait_Definition) identification but their behavior might differ slightly.
+Also, patterns can also be used in [Small Talk](https://developer.kore.ai/docs/bots/bot-builder-tool/small-talk/#Terminology){:target="_blank"} (while defining queries), [Knowledge Graph](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/creating-a-knowledge-graph/#Adding_FAQs){:target="blank"} (using alternate question field), and [Trait](https://developer.kore.ai/docs/bots/nlp/traits/#Trait_Definition){:target="_blank"} identification but their behavior might differ slightly.
 
 
 <table border="1">
@@ -957,7 +957,7 @@ Hindi
 
 ## Universal Bot Support
 
-Here we will list out, language-wise, the trigger phrases used in training the Universal bot ([see here](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/training-a-universal-bot/)) in the supported languages.
+Here we will list out, language-wise, the trigger phrases used in training the Universal bot ([see here](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/training-a-universal-bot/){:target="_blank"}) in the supported languages.
 
 
 <table border="1">

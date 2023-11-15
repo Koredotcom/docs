@@ -6,7 +6,7 @@ The Kore.ai XO Platform offers pre-built integrations with popular business appl
 
 **Watch a Short Video on System Integrations**
 
-[![System Integration - Click to watch](https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/images/actions-video-intro.png)](https://vimeo.com/715550596 "System Integration - Click to watch")
+[![System Integration - Click to watch](../images/actions-video-intro.png)](https://vimeo.com/715550596 "System Integration - Click to watch")
 
 
 ## Steps to use the actions or pre-built integrations
@@ -30,17 +30,17 @@ The Kore.ai XO Platform supports OAuth 2.0, Basic, and API key based authenticat
 
 ### OAuth v2 Authentication
 
-OAuth v2 is the new version of the open protocol to allow secure authorization via a standard method from web, mobile, and desktop applications. To learn how OAuth v2 authentication works, read the [Setting Up Authorization using OAuth v2](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-oauth-v2/) article.
+OAuth v2 is the new version of the open protocol to allow secure authorization via a standard method from web, mobile, and desktop applications. To learn how OAuth v2 authentication works, read the [Setting Up Authorization using OAuth v2](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-oauth-v2/){:target="_blank"} article.
 
 
 ### Basic HTTP Authentication
 
-HTTP Basic Auth is a simple method that creates a username and password style authentication for HTTP requests. This technique uses a header called Authorization, with a base64 encoded representation of the username and password. For more information, read the [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/) article.
+HTTP Basic Auth is a simple method that creates a username and password style authentication for HTTP requests. This technique uses a header called Authorization, with a base64 encoded representation of the username and password. For more information, read the [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"} article.
 
 
 ### API Key
 
-Identification and authorization token generated or provided by a web application or web service used to identify the incoming application request, and in some cases, also provides authentication for secure access. For more information, read the [Setting Up Authorization using an API Key](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-an-api-key/) article. 
+Identification and authorization token generated or provided by a web application or web service used to identify the incoming application request, and in some cases, also provides authentication for secure access. For more information, read the [Setting Up Authorization using an API Key](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-an-api-key/){:target="_blank"} article. 
 
 Actions can be authorized based on the authorization profiles that are supported by the third-party  integrations.  Users can use pre-authorized credentials provided by the developer during the configuration process or their own authorization profile during the configuration process to let the end user authorize during the conversation.
 
@@ -79,7 +79,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/azure-open-ai/configuring-the-azure-openai-action">Learn more</a>
+   <td><a href="../azure-open-ai/configuring-the-azure-openai-action" target="_blank">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -91,7 +91,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/bamboo-hr/configuring-the-bamboo-hr-action">Learn more</a>
+   <td><a href="../bamboo-hr/configuring-the-bamboo-hr-action" target="_blank">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -103,7 +103,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/dhl/configuring-the-dhl-action">Learn more</a>
+   <td><a href="../dhl/configuring-the-dhl-action" target="_blank">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -115,7 +115,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/freshdesk/configuring-the-freshdesk-action">Learn more</a>
+   <td><a href="../freshdesk/configuring-the-freshdesk-action" target="_blank">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -127,7 +127,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/freshservice/configuring-the-freshservice-action">Learn more</a>
+   <td><a href="../freshservice/configuring-the-freshservice-action" target="_blank">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -139,7 +139,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/google-maps/configuring-the-google-maps-action">Learn more</a>
+   <td><a href="../google-maps/configuring-the-google-maps-action" target="_blank">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -151,7 +151,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Dev OAuth and OAuth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/hubspot/configuring-the-hubspot-action">Learn more</a>
+   <td><a href="../hubspot/configuring-the-hubspot-action" target="_blank">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -163,7 +163,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/jira/configuring-the-jira-action">Learn more</a>
+   <td><a href="../jira/configuring-the-jira-action" target="_blank">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -175,7 +175,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/microsoft-graph/configuring-the-microsoft-graph-action">Learn more</a>
+   <td><a href="../microsoft-graph/configuring-the-microsoft-graph-action" target="_blank">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -187,7 +187,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>API Key OAuth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/open-ai/configuring-the-openai-action">Learn more</a>
+   <td><a href="../open-ai/configuring-the-openai-action" target="_blank">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -199,7 +199,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Dev OAuth and OAuth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/salesforce/configuring-the-salesforce-crm-actio">Learn more</a>
+   <td><a href="../salesforce/configuring-the-salesforce-crm-action" target="_blank">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -211,7 +211,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic OAuth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/shopify/configuring-the-shopify-action/">Learn more</a>
+   <td><a href="../shopify/configuring-the-shopify-action/" target="_blank">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -223,7 +223,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic OAuth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/servicenow/configuring-the-servicenow-action/">Learn more</a>
+   <td><a href="../servicenow/configuring-the-servicenow-action/" target="_blank">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -235,7 +235,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic OAuth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/stripe/configuring-the-stripe-action/">Learn more</a>
+   <td><a href="../stripe/configuring-the-stripe-action/" target="_blank">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -247,7 +247,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic OAuth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/twilio/configuring-the-twilio-action/">Learn more</a>
+   <td><a href="../twilio/configuring-the-twilio-action/" target="_blank">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -259,7 +259,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic OAuth
    </td>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/integrations/actions/zendesk/configuring-the-zendesk-action/">Learn more</a>
+   <td><a href="../zendesk/configuring-the-zendesk-action/" target="_blank">Learn more</a>
    </td>
   </tr>
 </table>
@@ -307,5 +307,5 @@ You can delete an external integration that is no longer in use.
 
 ## More Like This
 
-* [Kore.ai Integrations Framework Guide](https://info.kore.ai/hubfs/1.%20Kore.ai%20Resources/XO%20Platform/Documents/Technical%20Documents%20v9.0/Kore.ai%20XO%20Platform%20Integration%20Capabilities_Sep%202022.pdf)
+* [Kore.ai Integrations Framework Guide](https://info.kore.ai/hubfs/1.%20Kore.ai%20Resources/XO%20Platform/Documents/Technical%20Documents%20v9.0/Kore.ai%20XO%20Platform%20Integration%20Capabilities_Sep%202022.pdf){:target="_blank"}
 * [Configure Salesforce Integrations Actions](https://vimeo.com/761445731) (Video: 3m15s)
