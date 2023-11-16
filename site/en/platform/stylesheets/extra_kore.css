@@ -1,0 +1,17 @@
+
+.logo .logo-img img{
+    position: absolute;
+    top: -5px;
+    width: 95px;
+}
+
+.logo .logo-img .logo-title{
+    position: absolute;
+    margin-left: 106px;
+    margin-top: 1px;
+    color: #000;
+}
+[data-md-component="header"]{
+    background-color: white !important;
+    color: #898686 !important;
+}

@@ -1,0 +1,80 @@
+site_name: Kore ai Docs
+site_author: Rajasekhar Balla
+repo_name: Koredotcom/mkdocs-sample
+repo_url: https://github.com/Koredotcom/mkdocs-sample/
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: '(prefers-color-scheme: dark)'
+      scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/lightbulb
+        name: Karanlık moda geç
+    - media: '(prefers-color-scheme: light)'
+      scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/lightbulb-outline
+        name: Aydınlık moda geç
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.top
+    - navigation.path
+    - search.suggest
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/git-alt
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/Koredotcom
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/Koredotcom
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/Koredotcom
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/Koredotcom
+  alternate:
+    - name: tr - Türkçe
+      link: https://Koredotcom.github.io/mkdocs-sample/tr/
+      lang: tr
+    - name: en - English 
+      link: https://Koredotcom.github.io/mkdocs-sample/en/
+      lang: en
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - md_in_html
+  - pymdownx.keys
+
+plugins:
+  search: { }
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/Koredotcom"  target="_blank" rel="noopener">Rajasekhar Balla</a>
