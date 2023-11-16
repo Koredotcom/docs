@@ -69,7 +69,7 @@ Steps to authorize a Freshservice action at a user level:
 3. Enter the following details:
     1. **Authorization Type** – Select the **Allow Users to Authorize the Integration** option, and then select the **Basic Auth** option.
     2. Create your authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s Freshservice app for authorization. To create a profile, click the **Select Authorization** drop-down and select the **Create New** option.  
-    <img src="../images/freshservice-action-img.4png" alt="Create new auth profile" title="Create new auth profile" style="border: 1px solid gray;zoom:50%;"/>
+    <img src="../images/freshservice-action-img4.png" alt="Create new auth profile" title="Create new auth profile" style="border: 1px solid gray;zoom:50%;"/>
 
     3. Select the type of authorization mechanism. For example, select the **Basic Auth** option. To create Basic Auth profiles, see [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"}.  
     <img src="../images/freshservice-action-img5.png" alt="Auth mechanism type" title="Auth mechanism type" style="border: 1px solid gray;zoom:50%;"/>
