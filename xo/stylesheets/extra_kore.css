@@ -1,0 +1,75 @@
+
+.logo .logo-img img{
+    position: absolute;
+    top: -5px;
+    width: 95px;
+}
+
+.logo .logo-img .logo-title{
+    position: absolute;
+    margin-left: 106px;
+    margin-top: 1px;
+    color: #000;
+}
+[data-md-component="header"]{
+    background-color: white !important;
+    color: #898686 !important;
+}
+.md-search__input{
+    background: #fff;
+    border: 1px solid #898686;
+}
+.md-search__icon{
+    color: #898686;
+}
+.md-header .nav-links .nav-item{
+    padding: 10px;
+    font-size: 13px;
+    color: #000;
+}
+
+/* kr grid g1 start*/
+kr-grid[type="g1"] {
+    grid-gap: 0.8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    margin: 1em 0;
+}
+kr-grid[type="g1"] kr-grid-item{
+    padding: 15px;
+    border: 2px solid transparent;
+    transition: border .25s;
+    border-radius: 5px;
+}
+kr-grid[type="g1"] kr-grid-item:hover{
+    border: 2px solid #eee;
+}
+kr-grid[type="g1"] kr-grid-item img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    height: 100px;
+    object-fit: cover;
+}
+kr-grid[type="g1"] .glightbox{
+    pointer-events: none;
+}
+kr-grid[type="g1"] kr-grid-title{
+    display: block;
+    font-weight: 700;
+    margin: 15px 0px 0px 0px;
+    color: #4051b5;
+    font-size: 18px;
+}
+kr-grid[type="g1"] kr-grid-desc{
+    display: block;
+    margin-bottom: 10px;
+}
+/* kr grid g1 end*/
+
+
+
+/* start: code block max height */
+.md-typeset pre > code {
+    max-height: 20rem;
+}
+/* end: code block max height */
