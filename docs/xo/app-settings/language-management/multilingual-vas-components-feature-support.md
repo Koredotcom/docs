@@ -7,6 +7,7 @@ This article discusses language-specific components for multilingual VAs, as wel
 This article lists the VA elements for which you can provide language-specific values. You need not translate Standard Responses as the Platform automatically translates them when you enable a language.
 
 
+
 ## Metadata
 
 JSON object consisting of the following translatable elements
