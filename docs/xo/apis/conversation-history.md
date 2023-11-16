@@ -15,17 +15,13 @@ To fetch the conversational messages between the bot and user in reverse chronol
    </td>
    <td>This API has two versions for GET and POST methods. The v1 of the API includes messages associated with all tasks, and it has a maximum limit of 100 messages per request. The v2 of the API does not include the messages related to Alert and Action tasks, and it has a maximum limit of 10,000 messages per request.
 <p>
-<strong>GET Method \
-</strong>Version 1: <code>https://{{host}}/api/public/bot/{{botId}}/getMessages?userId={{userId}}&limit=10&dateFrom=2023-05-20&dateTo=2023-05-25 \
-</code>Version 2: <code>https://{{host}}/api/public/bot/{{botId}}/getMessagesV2?userId={{userId}}&limit=10&dateFrom=2023-05-20&dateTo=2023-05-25</code>
+<strong>GET Method</strong><p>Version 1: <p><code>https://{{host}}/api/public/bot/{{botId}}/getMessages?userId={{userId}}&limit=10&dateFrom=2023-05-20&dateTo=2023-05-25</code><p>Version 2: <p><code>https://{{host}}/api/public/bot/{{botId}}/getMessagesV2?userId={{userId}}&limit=10&dateFrom=2023-05-20&dateTo=2023-05-25</code>
 <p>
-<strong>Note</strong>: The GET method shows the RTM interactions by default. To get the channel-specific interaction, use the channelType parameter in the GET method. For the channelType parameter values, see [Request Body Parameters](https://developer.kore.ai/docs/bots/api-guide/conversation-history-api/#Request_Body_Parameters) see <a href="https://developer.kore.ai/docs/bots/api-guide/conversation-history-api/#Request_Body_Parameters">Request Body Parameters</a> section.
+<strong>Note</strong>: The GET method shows the RTM interactions by default. To get the channel-specific interaction, use the channelType parameter in the GET method. For the channelType parameter values, see <a href="https://developer.kore.ai/docs/bots/api-guide/conversation-history-api/#Request_Body_Parameters">Request Body Parameters</a> section.
 <p>
-<strong>POST Method \
-</strong>Version 1: \
-<code>https://{{host}}/api/public/bot/{{botId}}/getMessages \
-</code>and <code>https://{{host}}/api/public/getMessages</code> for Bot Admin Console. \
-Version 2: \
+<strong>POST Method</strong><p>Version 1:<p>
+<code>https://{{host}}/api/public/bot/{{botId}}/getMessages </code>and <code>https://{{host}}/api/public/getMessages</code> for Bot Admin Console.
+<p>Version 2:<p>
 <code>https://{{host}}/api/public/bot/{{botId}}/getMessagesV2</code>
    </td>
   </tr>
