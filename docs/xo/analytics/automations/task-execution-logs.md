@@ -374,12 +374,12 @@ The platform imposes restrictions on the number of log statements retained per V
 * Statements older than 7 days are removed.
 
 
-# **Task Execution Logs Analysis**
+## **Task Execution Logs Analysis**
 
 The following sections describe more about the options available on the Task Execution Logs page and the analysis of the records captured here.
 
 
-## Features
+### Features
 
 The following list details the features available for Task Execution Logs including Failed Tasks, API Calls, Script Execution, and Debug Log.
 
@@ -391,7 +391,7 @@ The following list details the features available for Task Execution Logs includ
 * The sorting feature is available for Date and Time (Oldest to Newest, Newest to Oldest). You can export the insights data as a CSV file.
 
 
-## Fields Matrix
+### Fields Matrix
 
 The following matrix shows the availability of fields on each tab of the Task Execution Log dashboard:
 
