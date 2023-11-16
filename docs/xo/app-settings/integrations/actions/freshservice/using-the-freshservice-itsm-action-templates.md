@@ -149,6 +149,7 @@ Steps to create a ticket in the Freshservice integration:
             ```
 
     5. **createTicketMessage** – A message node with the script to display responses for various scenarios.
+    
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
 5. Follow the prompts in the VA console to create a ticket as shown below:  
