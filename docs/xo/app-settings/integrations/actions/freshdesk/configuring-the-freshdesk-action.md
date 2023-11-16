@@ -80,6 +80,7 @@ Steps to authorize a Freshdesk action at a user level:
     <img src="../images/freshdesk-action-img6.png" alt="Save auth" title="Save auth" style="border: 1px solid gray;zoom:50%;"/>
 
     6. Select the new **Authorization Profile**, which you created to complete integration.
+
 4. Click **Enable**. When you configure the action for the first time, the **Integration Successful** pop-up is displayed.  
 <img src="../images/freshdesk-action-img7.png" alt="Enable integration" title="Enable integration" style="border: 1px solid gray;zoom:50%;"/>
 
