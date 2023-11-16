@@ -1091,6 +1091,7 @@ Steps to search ticket by field from the Freshdesk integration:
         ],
         "total": 2
         }
+        ```
 
     6. **searchTicketMessage** – A message node with the script to display responses for various scenarios.
 
