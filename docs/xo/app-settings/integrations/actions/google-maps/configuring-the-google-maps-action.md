@@ -45,6 +45,7 @@ Steps to authorize a Google Maps action using developer credentials:
 
     2. **API Key** – The secret API key of your Google Maps account.
 
+
 5. Click **Enable**. When you configure the action for the first time, the Integration Successful pop-up is displayed.  
 <img src="../images/google-maps-action-img3.png" alt="Enable integration" title="Enable integration" style="border: 1px solid gray;zoom:50%;"/>  
   
