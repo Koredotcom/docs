@@ -100,7 +100,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 ```json
 curl --location --request DELETE \
      'https://{host}/api/public/bot/{botId}/testsuite/{testSuiteName}/{testRunId}' \
-      --header 'auth: {jwt-code}' \
+      --header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
       --header 'bot-language: {language-code}'
 ```
 

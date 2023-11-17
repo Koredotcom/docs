@@ -99,7 +99,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 ```json
 curl --
 GET \ 'https://{{host}}/api/public/bot/{{BotID}}/notify/status/{{requestId}}' \
---header 'auth: {{JWT}}' \
+--header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
 --header 'Content-Type: application/json'
 ```
 

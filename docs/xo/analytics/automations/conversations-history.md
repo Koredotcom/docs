@@ -1,6 +1,6 @@
 # **Conversations History**
 
-The **Conversation History** module allows you to review the transcripts of past conversations and label certain conversations for follow-up or further action.
+The **Conversation History** dashboard allows you to review the transcripts of past conversations and label certain conversations for follow-up or further action.
 
 The **Advanced Conversation Analytics** feature provides a more detailed view of the conversation, including events and custom tags, which can help you better understand the interaction between the customer and the virtual assistant. Custom Tags can be reused across conversations for training purposes and for identifying areas where the virtual assistant could improve.
 
@@ -221,7 +221,6 @@ A **Conversation Filter** helps group and display selective conversation history
 
 
 2. On the **Create Conversation Filter** panel, provide inputs for the following fields:
-
     <table>
   <tr>
    <td>

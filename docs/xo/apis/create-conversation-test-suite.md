@@ -85,7 +85,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 ```json
 curl --location --request POST \     
 'https://{{host}}/api/public/stream/:streamId/conversation/testsuite/import' \
-      --header 'auth: {jwt-code}' \
+      --header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
       --header 'bot-language: {language-code}' \
       --header 'Content-Type: application/json' \
       --data-raw '{
