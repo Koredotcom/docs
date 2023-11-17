@@ -1,6 +1,6 @@
 # **Using Here Action Templates**
 
-You can use the **Prebuilt Action Templates **from your Here integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
+You can use the **Prebuilt Action Templates** from your Here integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 
 Steps to create a dialog task using Here action templates:
 
@@ -13,7 +13,7 @@ Steps to create a dialog task using Here action templates:
   
     **Note**: If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions){:target="_blank"}.  
       
-      <img src="../images/here--tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
+      <img src="../images/here-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
 ## Here Actions 
