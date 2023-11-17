@@ -102,7 +102,7 @@ Steps to install action templates:
 3. Once the template is installed, click the **Go to Dialog** button to view the dialog task.
 4. A dialog task is automatically created for each installed template.
 5. Alternatively, you can create a new dialog task and select the Here integration to select the dialog task from the templates and click **Proceed**. For example, select the **Get Location** task.  
-<img src="../images/here-action-img11.png" alt="Create new dialog task and integrate template" title="Create new dialog task and integrate template" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/here-action-img11-tem-img2.png" alt="Create new dialog task and integrate template" title="Create new dialog task and integrate template" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Once you click **Proceed**, the dialog task is auto-created, and the canvas opens with all required entity nodes, service nodes, and message scripts.  
-<img src="../images/here-action-img12.png" alt="Dialog task canvas" title="Dialog task canvas" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/here-action-img12-tem-img4.png" alt="Dialog task canvas" title="Dialog task canvas" style="border: 1px solid gray;zoom:50%;"/>
