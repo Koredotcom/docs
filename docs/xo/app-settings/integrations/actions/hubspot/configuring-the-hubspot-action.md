@@ -75,6 +75,7 @@ Steps to authorize a HubSpot action using developer credentials:
     **System Authorization**  
       
     Pre-authorize HubSpot CRM integration with the necessary authorization credentials to obtain the token to access external services.
+
     * **Authorization Type** – Select the **Pre-authorize the Integration** option, and then select the **_OAuth_** option.  
     <img src="../images/hubspot-integration-img2.png" alt="Auth type-OAuth" title="Auth type-OAuth" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -111,7 +112,7 @@ Steps to authorize a HubSpot action using developer credentials:
 
         <img src="../images/hubspot-integration-img7.png" alt="Enter auth credentials" title="Enter auth credentials" style="border: 1px solid gray;zoom:50%;"/>
 
-    * Click **Save Auth**to save Authorization Profile.
+    * Click **Save Auth** to save Authorization Profile.
     * Select the new **Authorization Profile,** which you created to enable integration
     * Once click **Authorize**, you are navigated to “login.hubspot.com”
     * Enter your developer account credentials to successfully connect with your Hubspot Account.  
@@ -140,6 +141,7 @@ Steps to authorize a HubSpot action at a user level:
     **System Authorization**
 
     The end user has to provide credentials during the conversation to authorize users for HubSpot CRM integration to obtain the access token.
+    
     1. Select the **System** card to enable the Kore.ai’s preconfigured HubSpot app.
     2. Once you click the **Enable** button, a link is sent to the end user to authorize integration.  
     <img src="../images/hubspot-integration-img10.png" alt="Enable integration-authorization link sent to user" title="Enable integration-authorization link sent to user" style="border: 1px solid gray;zoom:50%;"/>
