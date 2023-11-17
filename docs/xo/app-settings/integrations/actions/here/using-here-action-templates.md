@@ -11,7 +11,7 @@ Steps to create a dialog task using Here action templates:
 3. On the Dialog Task pop-up, under the **Integration**, select the **Here** option to view the action templates.  
 <img src="../images/here-action-img11-tem-img2.png" alt="Integration-Here" title="Integration-Here" style="border: 1px solid gray;zoom:50%;"/>  
   
-    **Note**: If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](https://developer.kore.ai/integrations/actions/).  
+    **Note**: If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions){:target="_blank"}.  
       
       <img src="../images/here--tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -46,13 +46,13 @@ The following Here action is supported:
 
 Steps to get location by free text in the Here integration:
 
-1. Refer to the [Installing the Here templates](https://developer.kore.ai/integrations/configuring-the-here-action/#Step_2_Install_the_Here_Action_Templates) section to install this template.
+1. Refer to the [Installing the Here templates](../configuring-the-here-action/#step-2-install-the-here-action-templates){:target="_blank"} section to install this template.
 2. The _Get Location_ dialog task is added with the following components:
 <img src="../images/here-action-img12-tem-img4.png" alt="Dialog task added" title="Dialog task added" style="border: 1px solid gray;zoom:50%;"/>
 
     1. **getLocation**: A user intent to find a location.
-    2. **location **– An entity node to enter a location.
-    3. **getLocationService**– A bot action service to find a location in an external integration. Click the **Plus** icon to expand to view the _generalQueryService_ bot action component properties.
+    2. **location**: An entity node to enter a location.
+    3. **getLocationService**: A bot action service to find a location in an external integration. Click the **Plus** icon to expand to view the _generalQueryService_ bot action component properties.
     4. In the **Component Properties** window, to add one or more responses, scroll down and click the **+Add Response** button.  
     <img src="../images/here-tem-img5.png" alt="Add response" title="Add response" style="border: 1px solid gray;zoom:50%;"/>  
 
@@ -100,7 +100,7 @@ Steps to get location by free text in the Here integration:
         }
         ```
 
-    5. getLocationMessage – A message node with the script to display the query in the Here system.
+    5. **getLocationMessage** – A message node with the script to display the query in the Here system.
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
