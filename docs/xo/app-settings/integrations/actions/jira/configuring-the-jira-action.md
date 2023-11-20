@@ -163,6 +163,6 @@ Steps to install action templates:
 <img src="../images/jira-action-img13.png" alt="Dialog task for each installed template" title="Dialog task for each installed template" style="border: 1px solid gray;zoom:50%;"/>
 
 5. Select the desired dialog task from the templates and click **Proceed**. For example, select the Update an Issue task.  
-<img src="../images/jira-action-img14-tem-2.png" alt="Select desired dialog rask" title="Select desired dialog task" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/jira-action-img14-tem-img2.png" alt="Select desired dialog rask" title="Select desired dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Once you click Proceed, the dialog task is auto-created, and the canvas opens with all required entity nodes, service nodes, and message scripts.
