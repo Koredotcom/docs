@@ -44,10 +44,12 @@ Steps to authorize a Google Maps action using developer credentials:
     <img src="../images/google-maps-action-img2.png" alt="Auth type - Basic auth" title="Auth type - Basic auth" style="border: 1px solid gray;zoom:50%;"/>
 
     2. **API Key** – The secret API key of your Google Maps account.
-5. Click **Enable**. When you configure the action for the first time, the Integration Successful pop-up is displayed.  
-<img src="../images/google-maps-action-img3.png" alt="Enable integration" title="Enable integration" style="border: 1px solid gray;zoom:50%;"/>
 
-**Note**: The Google Maps action is moved from Available to Configured region.
+
+5. Click **Enable**. When you configure the action for the first time, the Integration Successful pop-up is displayed.  
+<img src="../images/google-maps-action-img3.png" alt="Enable integration" title="Enable integration" style="border: 1px solid gray;zoom:50%;"/>  
+  
+    **Note**: The Google Maps action is moved from Available to Configured region.
 
 6. You can also click the **Skip for Now** button to install the Dialog Task templates later. To learn how to use action templates, read the [Using the Google Maps action templates](../using-the-google-maps-action-templates/){:target="_blank"} article.  
 <img src="../images/google-maps-action-img4.png" alt="Skip for now" title="Skip for now" style="border: 1px solid gray;zoom:50%;"/>
