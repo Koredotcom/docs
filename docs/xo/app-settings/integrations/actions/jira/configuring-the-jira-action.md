@@ -126,6 +126,7 @@ Steps to authorize a JIRA action at a user level:
     **System Authorization**
     
     The end user has to provide credentials during the conversation to authorize users for JIRA integration to obtain the access token.
+    
     1. Select the **System** card to enable the Kore.ai’s preconfigured JIRA app.  
     <img src="../images/jira-action-img9.png" alt="System card" title="System card" style="border: 1px solid gray;zoom:50%;"/>
 
