@@ -12,11 +12,7 @@ Steps to create a dialog task using HubSpot action templates:
 <img src="../images/hubspot-tem-img2.png" alt="Integration > Hubspot" title="Integration > Hubspot" style="border: 1px solid gray;zoom:50%;"/>
 
 
-
-
 **Note**: If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.
-
-
 
 <img src="../images/hubspot-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
 
