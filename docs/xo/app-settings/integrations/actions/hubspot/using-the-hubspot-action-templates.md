@@ -263,7 +263,7 @@ Steps to view all deals in HubSpot:
 <img src="../images/hubspot-tem-img14.png" alt="List All Deals dialog task is added" title="List All Deals dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
     1. **List All Deals** - A user intent to list all deals.
-    2. **listAllDealsService** – A bot action script to view all deals in an external integration. Click the **Plus **icon to expand to view the listAllDealsService bot action component properties.  
+    2. **listAllDealsService** – A bot action script to view all deals in an external integration. Click the **Plus** icon to expand to view the listAllDealsService bot action component properties.  
       
     3. Scroll down and click **+Add Response** to add one or more response.  
        <img src="../images/hubspot-tem-img15.png" alt="Add response" title="Add response" style="border: 1px solid gray;zoom:50%;"/>
@@ -389,7 +389,7 @@ Steps to view all deals in HubSpot:
         ] }
         ```
 
-    4. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus **icon to expand to view the getAccountService bot action component properties.
+    4. **getAccountService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
     5. **listAllDealsMessage** – A message node with script to display responses for various scenarios. 
 
 3. Click the **Train** tab to complete the Dialog task training.
@@ -643,7 +643,7 @@ Steps to create a contact in HubSpot:
     5. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
     6. **createContactMessage** – A message node with script to display responses for various scenarios. 
 
-3. Refer the step #3 to [train and talk to bot ](#create-a-deal)and learn how to view the new contact.
+3. Refer the step 3 to [train and talk to bot ](#create-a-deal)and learn how to view the new contact.
 
 ### Get a Contact by ID
 
@@ -682,7 +682,7 @@ Steps to find a contact by ID in HubSpot:
     6. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
     7. **getContactMessage** – A message node with script to display responses for various scenarios. 
 
-3. Refer the step #3 to [train and talk to bot ](#create-a-deal)section and learn how to find the contact.   
+3. Refer the step 3 to [train and talk to bot ](#create-a-deal)section and learn how to find the contact.   
 
 
 ### List All Contacts
@@ -807,7 +807,8 @@ Steps to view all contacts in HubSpot:
 
     4. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
     5. **listAllContactsMessage** – A message node with script to display responses for various scenarios. 
-3. Refer the step #3 to [train and talk to bot ](#create-a-deal)section and learn how to view all contacts.   
+    
+3. Refer the step 3 to [train and talk to bot ](#create-a-deal)section and learn how to view all contacts.   
 
 
 ### Update a Contact
@@ -852,11 +853,12 @@ Steps to update an existing contact in HubSpot:
         "archived": false
         }
         ```
+    
     6. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
     7. **getContactService** – A bot action service to get deal details in an external integration. Click the **Plus** icon to expand to view the getContactService bot action component properties.
     8. **updateContactMessage** – A message node with script to display responses for various scenarios.
 
-3. Refer the step #3 to [train and talk to bot ](#create-a-deal)section and learn how to update the contact.   
+3. Refer the step 3 to [train and talk to bot ](#create-a-deal)section and learn how to update the contact.   
 
 
 ### Search Contact by Keyword
@@ -911,7 +913,7 @@ Steps to search a contact using keywords in HubSpot:
     5. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
     6. **searchContactMessage** – A message node with script to display responses for various scenarios. 
 
-3. Refer the step #3 to [train and talk to bot ](#create-a-deal)section and learn how to search the contact with keyword.   
+3. Refer the step 3 to [train and talk to bot ](#create-a-deal)section and learn how to search the contact with keyword.   
 
 
 ### Delete a Contact
@@ -929,6 +931,6 @@ Steps to delete a contact in HubSpot:
     4. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
     5. **deleteContactMessage** – A message node with script to display responses for various scenarios.
 
-3. Refer the step #3 to [train and talk to bot ](#create-a-deal)section and learn how to delete the contact.
+3. Refer the step 3 to [train and talk to bot ](#create-a-deal)section and learn how to delete the contact.
 
 **Note**: If you enter an incorrect ID, the _404 – No Record Found_ error message is displayed.
