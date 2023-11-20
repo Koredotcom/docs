@@ -50,7 +50,7 @@ Steps to enable the JIRA action:
 
 1. Go to **Build > Integrations > Actions**.
 2. Once you click the **Actions** menu, all integrations are shown in the **Available** region. Select the **JIRA** action.  
-<img src="../images/jira-integration-img1.png" alt="Available actions-JIRA" title="Available actions-JIRA" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/jira-action-img1.png" alt="Available actions-JIRA" title="Available actions-JIRA" style="border: 1px solid gray;zoom:50%;"/>
 
 ### Pre-authorize the Integration
 
@@ -63,14 +63,14 @@ Steps to authorize a JIRA action using developer credentials:
 1. Go to **Build > Integrations > Actions** and select the **JIRA** action.
 2. In the **Configurations** dialog, select the **Authorization** tab.
 3. **Authorization Type** – Select the **Pre-authorize the Integration** option, and then select the **OAuth** option.  
-<img src="../images/jira-integration-img2.png" alt="Authorization Type-OAuth" title="Authorization Type-OAuth" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/jira-action-img2.png" alt="Authorization Type-OAuth" title="Authorization Type-OAuth" style="border: 1px solid gray;zoom:50%;"/>
 
     **System Authorization**
     
     Pre-authorize JIRA integration with the necessary authorization credentials to obtain the token to access external services.
     
       * Select the **System** card to enable the Kore.ai’s preconfigured JIRA app and click **Authorize**.  
-      <img src="../images/jira-integration-img3.png" alt="System card" title="System card" style="border: 1px solid gray;zoom:50%;"/>
+      <img src="../images/jira-action-img3.png" alt="System card" title="System card" style="border: 1px solid gray;zoom:50%;"/>
 
       * Once you click **Authorize**, you are redirected to [https://developer.atlassian.com/console/](https://developer.atlassian.com/console/){:target="_blank"}.
       * Enter your developer account credentials to connect with your JIRA Account successfully.
@@ -82,7 +82,7 @@ Steps to authorize a JIRA action using developer credentials:
 
       * Select **Custom** to enable the custom authorization profile.
       * Click the **Select Authorization** drop-down and select the **Create New** option.  
-      <img src="../images/jira-integration-img4.png" alt="Create new auth" title="Create new auth" style="border: 1px solid gray;zoom:50%;"/>
+      <img src="../images/jira-action-img4.png" alt="Create new auth" title="Create new auth" style="border: 1px solid gray;zoom:50%;"/>
 
       * Select the type of authorization mechanism. For example, select the OAuth v2 option. To create custom OAuth profiles, read the [Setting Up Authorization Using OAuth v2](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-oauthv2-clientcredentials/){:target="_blank"} article.
       * Enter the following authentication credentials for the OAuth v2 mechanism:
@@ -96,18 +96,18 @@ Steps to authorize a JIRA action using developer credentials:
         * Scope
         * Refresh Token URL
 
-        <img src="../images/jira-integration-img5.png" alt="Authorization credentials" title="Authorization credentials" style="border: 1px solid gray;zoom:50%;"/> 
+        <img src="../images/jira-action-img5.png" alt="Authorization credentials" title="Authorization credentials" style="border: 1px solid gray;zoom:50%;"/> 
 
 4. Click **Save Auth** to save Authorization Profile.
 5. Select the new **Authorization Profile**, which you created to enable integration.  
-<img src="../images/jira-integration-img6.png" alt="Authorization profile" title="Authorization profile" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/jira-action-img6.png" alt="Authorization profile" title="Authorization profile" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Once you click **Authorize**, you are redirected to [https://developer.atlassian.com/console/](https://developer.atlassian.com/console/){:target="_blank"}.
 7. Enter login credentials to connect with your JIRA Account successfully.
 8. Click the **Allow Access** button if prompted to let your custom app fetch the access token to complete the authorization.
 9. Once the authorization is successful, you will see a success message.
 10. Click **Enable**. When you configure the action for the first time, the Integration Successful pop-up is displayed.  
-<img src="../images/jira-integration-img7.png" alt="Enable integration" title="Enable integration" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/jira-action-img7.png" alt="Enable integration" title="Enable integration" style="border: 1px solid gray;zoom:50%;"/>
 
 **Note**: The JIRA action is moved from _Available_ to _Configured_ region.
 
@@ -121,13 +121,13 @@ Steps to authorize a JIRA action at a user level:
 1. Go to **Build > Integrations > Actions** and select the **JIRA** action.
 2. In the Configurations dialog, select the **Authorization** tab.
 3. **Authorization Type** – Select the **Allow Users to Authorize the Integration** option, and then select **OAuth** option.  
-<img src="../images/jira-integration-img8.png" alt="Authorization Type-OAuth" title="Authorization Type-OAuth" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/jira-action-img8.png" alt="Authorization Type-OAuth" title="Authorization Type-OAuth" style="border: 1px solid gray;zoom:50%;"/>
 
     **System Authorization**
     
     The end user has to provide credentials during the conversation to authorize users for JIRA integration to obtain the access token.
     1. Select the **System** card to enable the Kore.ai’s preconfigured JIRA app.  
-    <img src="../images/jira-integration-img9.png" alt="System card" title="System card" style="border: 1px solid gray;zoom:50%;"/>
+    <img src="../images/jira-action-img9.png" alt="System card" title="System card" style="border: 1px solid gray;zoom:50%;"/>
 
     2. Once you click the **Enable** button, a link is sent to the end user to authorize the integration.
     3. Click the link and enter the login credentials to allow the user to authorize the integration.
@@ -140,7 +140,7 @@ Steps to authorize a JIRA action at a user level:
     1. Select Custom to **enable** the custom authorization profile.
     2. Click the **Select Authorization** drop-down and select the **Create New** option. Follow the instructions in the **Custom Authorization** section.
     3. You can also select an existing authorization profile as shown below:  
-    <img src="../images/jira-integration-img10.png" alt="Select existing auth profile" title="Select existing auth profile" style="border: 1px solid gray;zoom:50%;"/>
+    <img src="../images/jira-action-img10.png" alt="Select existing auth profile" title="Select existing auth profile" style="border: 1px solid gray;zoom:50%;"/>
 
 4. Click the **Enable** button. The users will see the authorize option during the runtime.
 
@@ -152,16 +152,16 @@ Once you have configured a JIRA integration, you can explore and install action 
 Steps to install action templates:
 
 1. On the Integration Successful dialog, click the **Explore Templates** button to view the templates.  
-<img src="../images/jira-integration-img11.png" alt="Explore templates" title="Explore templates" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/jira-action-img11.png" alt="Explore templates" title="Explore templates" style="border: 1px solid gray;zoom:50%;"/>
 
 2. In the Integration Templates dialog, click the **Install** button to begin the installation.  
-<img src="../images/jira-integration-img12.png" alt="Begin installation" title="Begin installation" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/jira-action-img12.png" alt="Begin installation" title="Begin installation" style="border: 1px solid gray;zoom:50%;"/>
 
 3. Once the template is installed, click the **Go to Dialog** button to view the dialog task.
 4. Once all templates are installed, a dialog task for each template is auto-created.  
-<img src="../images/jira-integration-img13.png" alt="Dialog task for each installed template" title="Dialog task for each installed template" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/jira-action-img13.png" alt="Dialog task for each installed template" title="Dialog task for each installed template" style="border: 1px solid gray;zoom:50%;"/>
 
 5. Select the desired dialog task from the templates and click **Proceed**. For example, select the Update an Issue task.  
-<img src="../images/jira-integration-img14-tem-2.png" alt="Select desired dialog rask" title="Select desired dialog task" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/jira-action-img14-tem-2.png" alt="Select desired dialog rask" title="Select desired dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
 6. Once you click Proceed, the dialog task is auto-created, and the canvas opens with all required entity nodes, service nodes, and message scripts.
