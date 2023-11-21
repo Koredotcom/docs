@@ -7,8 +7,8 @@ Used to delete customer data.
 
 !!!note
     Delete User will not proceed if the requested user is:
-        -An account owner or belongs to one or more accounts.
-        -The bot owner or co-developer for one or more bots.
+    * An account owner or belongs to one or more accounts.
+    * The bot owner or co-developer for one or more bots.
 
 <table>
   <tr>
@@ -35,7 +35,7 @@ Used to delete customer data.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token.</a>
+See <a href="/analytics/automations/conversation-flows.md">How to generate the JWT Token.</a>
    </td>
   </tr>
   <tr>
