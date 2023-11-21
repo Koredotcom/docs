@@ -244,8 +244,8 @@ Steps to find a deal by Id in HubSpot:
         }
         ```
 
-    5. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus **icon to expand to view the getAccountService bot action component properties.
-    6. **getDealMessage**– A message node with script to display responses for various scenarios.
+    5. **getAccoutService** – A bot action service to get account details in an external integration. Click the **Plus** icon to expand to view the getAccountService bot action component properties.
+    6. **getDealMessage** – A message node with script to display responses for various scenarios.
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
