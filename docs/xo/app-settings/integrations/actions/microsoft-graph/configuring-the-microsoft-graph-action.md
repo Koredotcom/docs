@@ -70,6 +70,7 @@ Steps to authorize a Microsoft Graph action using developer credentials:
     **System Authorization**
 
     Pre-authorize Microsoft Graph integration with the necessary authorization credentials to obtain the token to access external services.
+
     * Select the **System** card to enable the Kore.ai’s preconfigured Microsoft Graph app and click **Authorize**.  
     <img src="../images/ms-graph-action-img3.png" alt="Enable the Kore.ai’s preconfigured Microsoft Graph app" title="Enable the Kore.ai’s preconfigured Microsoft Graph app" style="border: 1px solid gray;zoom:50%;"/>  
 
@@ -105,7 +106,7 @@ Steps to authorize a Microsoft Graph action using developer credentials:
 
           To register an Azure App, read the [Adding the Microsoft Teams Channel](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-microsoft-teams-channel/){:target="_blank"} article.
 
-      <img src="../images/ms-graph-action-img6.png" alt="Auth credentials" title="Auth credentials" style="border: 1px solid gray;zoom:50%;"/>
+        <img src="../images/ms-graph-action-img6.png" alt="Auth credentials" title="Auth credentials" style="border: 1px solid gray;zoom:50%;"/>
 
 4. Click **Save Auth** to save Authorization Profile.
 5. Select the new **Authorization Profile**, which you created to enable integration.  
@@ -135,6 +136,7 @@ Steps to authorize a Microsoft Graph action at a user level:
     **System Authorization**
 
     The end user has to provide credentials during the conversation to authorize users for Microsoft Graph integration to obtain the access token.
+
     * Select the **System** card to enable the Kore.ai’s preconfigured Microsoft Graph app.  
     <img src="../images/ms-graph-action-img10.png" alt="Enable the Kore.ai’s preconfigured Microsoft Graph" title="Enable the Kore.ai’s preconfigured Microsoft Graph" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -144,6 +146,7 @@ Steps to authorize a Microsoft Graph action at a user level:
     **Custom Authorization**
 
     Create your custom authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s Microsoft Graph app for authorization.
+    
     * Select **Custom** to enable the custom authorization profile.
     * Click the **Select Authorization** drop-down and select the **Create New** option. Follow the instructions in the **Custom Authorization** section.
     * You can also select an existing authorization profile as shown below:  
