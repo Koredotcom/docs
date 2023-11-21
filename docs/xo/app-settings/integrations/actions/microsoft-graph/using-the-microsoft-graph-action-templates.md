@@ -89,7 +89,7 @@ Steps to view all events in the Microsoft Graph integration:
         **Sample Response**
 
         ```
-        `{
+        {
         "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('purushottamKumar1215%40outlook.com')/events",
         "value": [
         {
@@ -399,7 +399,7 @@ Steps to create an event in the Microsoft Graph integration:
         **Sample Request**
 
         ```
-        `{
+        {
         "subject": "My event 1",
         "start": {
         "dateTime": "2022-11-09T11:45",
