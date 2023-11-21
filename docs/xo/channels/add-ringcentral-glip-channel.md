@@ -62,8 +62,7 @@ To enable Glip as a channel for your Kore.ai Virtual Assistant, you must create 
  * App Description (optional)
  * Primary Contact
  * Select the relevant option for **Do you intend to promote this app in the RingCentral App Gallery?**
-
- <img src="../images/ringcentral_glip2.png" alt="app properties" title="app properties" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/ringcentral_glip2.png" alt="app properties" title="app properties" style="border: 1px solid gray; zoom:90%;">
 
 8. (Optional) In the **App Card panel**, enter the values for the given fields to configure how your application will be presented within our App Gallery.
 
@@ -175,9 +174,8 @@ On the Kore.ai XO Platform, navigate to **RingCentral Glip** > **Configurations*
 1. In the **RingCentral Glip** window, click the **Authorize** button.
 <img src="../images/ringcentral_glip15.png" alt="authorize app" title="authorize app" style="border: 1px solid gray; zoom:70%;">
 
-2. In the **Sign-in** window, click **Continue as **to sign in with the existing user’s account, or click **Use Another Account**.
-
-<img src="../images/ringcentral_glip16.png" alt="use another account" title="use another account" style="border: 1px solid gray; ">
+2. In the **Sign-in** window, click **Continue as **to sign in with the existing user’s account, or click **Use Another Account**. 
+<img src="../images/ringcentral_glip16.png" alt="use another account" title="use another account" style="border: 1px solid gray; zoom:70%; ">
 
 3. Click **Authorize** on the **Access Request** page.
 4. Once the access token is obtained successfully, authorization is complete.
