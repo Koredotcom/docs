@@ -35,7 +35,7 @@ Used to delete customer data.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token.</a>
+See <a href="../analytics/automations/conversation-flows.md">How to generate the JWT Token.</a>
    </td>
   </tr>
   <tr>
