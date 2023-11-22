@@ -861,7 +861,8 @@ Steps to search a request in ServiceNow:
 
     5. **Sample Response:**
 
-    Response To large , here one result item is displayed:
+        Response To large , here one result item is displayed:
+        
         ```
         {
         "result": [
@@ -971,7 +972,7 @@ Steps to delete a request in ServiceNow:
     1. **Delete Request** - A user intent to delete a request.
     2. **SysId** – Entity nodes for entering the request ID.
     3. **deleteRequestService** – A bot action script to delete a request in an external integration. Click the **Plus** icon to expand to view the deleteRequestService bot action component properties.  
-    <img src="../images/servicenow-tem-img35.png" alt="deleteRequestService bot action component properties" title="deleteRequestService bot action component properties" style="border: 1px solid gray;zoom:50%;"/>
+    <img src="../images/servicenow-tem-img34.png" alt="deleteRequestService bot action component properties" title="deleteRequestService bot action component properties" style="border: 1px solid gray;zoom:50%;"/>
 
     4.  **deleteRequestMessage** – A message node with script to display responses for various scenarios.
 
