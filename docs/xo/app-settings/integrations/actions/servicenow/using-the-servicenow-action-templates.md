@@ -119,7 +119,7 @@ Steps to create a new incident in ServiceNow:
 
 1. Refer to the [Install the ServiceNow Action Templates](../configuring-the-servicenow-action/#step-2-install-the-servicenow-action-templates){:target="_blank"} section for installing this action.
 2. The _Create a Incident_ dialog task is added with the following components:  
-<img src="../images/servicenow-action-4.png" alt="Create an Incident dialog task" title="Create an Incident dialog task" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/servicenow-tem-img4.png" alt="Create an Incident dialog task" title="Create an Incident dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
     1. **createIncident** - A user intent to create an incident.
     2. **createIncidentShortDescription** and **createIncidentDescription** – Entity nodes for gathering the required incident details.
