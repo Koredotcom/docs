@@ -823,6 +823,42 @@ Once you create a new test batch test suite, by default, the system automaticall
 <img src="../images/batch-testing-16-batch-testing-run-publish.png" alt="Execution of Newly Created Batch Test Suites" title="Execution of Newly Created Batch Test Suites" style="border: 1px solid gray; zoom:50%;"/> 
 
 
+#### Cancel an Ongoing Batch Test Execution
+
+You can cancel an ongoing batch test execution in either **_Published_** or **_In-Development_** mode. This feature allows you to make changes, intervene, or start another batch test suite execution without waiting for the ongoing test run to complete.
+
+**Steps to Cancel an Ongoing Batch Test Execution:**
+
+
+1. Navigate to **Build** > **Testing** > **Batch Testing** on the Bot Builder.
+2. When the required test suite is running, click the **Cancel** icon.  
+<img src="../images/batch-testing-cancel-img1.png" alt="Click Cancel" title="Click Cancel" style="border: 1px solid gray; zoom:50%;"/> 
+
+3. Click **Confirm** in the confirmation dialog.  
+<img src="../images/batch-testing-cancel-img2.png" alt="Confirm" title="Confirm" style="border: 1px solid gray; zoom:50%;"/>
+
+The test execution is canceled, and a confirmation message is displayed.
+
+**Important Considerations**
+
+* For a canceled batch test suite, you cannot download the test results CSV file.
+* An orange **Warning** icon indicates that the test suite execution is canceled.
+* A red **Warning** icon indicates a failed batch test due to an unexpected technical error.  
+<img src="../images/batch-testing-cancel-img3.png" alt="Warning - Failed batch test" title="Warning - Failed batch test" style="border: 1px solid gray; zoom:50%;"/> 
+
+**Error Scenarios**
+
+You cannot cancel a batch test run in the following scenarios:
+
+1. When another batch test execution/cancelation is in progress.  
+<img src="../images/batch-testing-cancel-img4.png" alt="Another batch test execution/cancelation is in progress" title="Another batch test execution/cancelation is in progress" style="border: 1px solid gray; zoom:50%;"/>  
+  
+    **Solution**: Wait for one test suite execution or cancellation to complete before initiating the process for another.When you try to cancel a batch test run in the **_Published_** mode without publishing the VA.  
+
+2. When you try to cancel a batch test run in the **_Published_** mode without publishing the VA.  
+<img src="../images/batch-testing-cancel-img5.png" alt="Batch test is in Published mode" title="Batch test is in Published mode" style="border: 1px solid gray; zoom:50%;"/>  
+  
+    **Solution**: First, train and publish the VA before canceling the batch test run in Published mode.
 
 #### View Test Case Details
 

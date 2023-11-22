@@ -18,7 +18,7 @@ The Kore.ai XO Platform supports the following authorization types for the Sales
 * **Pre-Authorize the Integration** – To make the integration process smoother for developers and customers, you can pre-authorize it by providing the necessary authorization credentials to obtain the access token. 
 * **Allow Users to Authorize the Integration** – This method requires the end user to provide credentials during the conversation for authorization. This authorization process involves requesting permission for Kore.ai’s Salesforce app to access an access token at runtime.
 
-**NOTE**: The Salesforce CRM integration can be authorized only for the _Developer _and _Enterprise _editions because Rest API integration is enabled for these editions. You cannot authorize Salesforce’s _Trial _edition. To learn more about Salesforce account types, see [Salesforce documentation](https://help.salesforce.com/s/articleView?id=sf.accounts.htm&type=5){:target="_blank"}.
+**NOTE**: The Salesforce CRM integration can be authorized only for the _Developer_ and _Enterprise_ editions because Rest API integration is enabled for these editions. You cannot authorize Salesforce’s _Trial_ edition. To learn more about Salesforce account types, see [Salesforce documentation](https://help.salesforce.com/s/articleView?id=sf.accounts.htm&type=5){:target="_blank"}.
 
 
 <table border="1">
@@ -102,7 +102,7 @@ Steps to authorize a Salesforce action using developer credentials:
     <img src="../images/salesforce-action-img4.png" alt="Create new auth" title="Create new auth" style="border: 1px solid gray;zoom:50%;"/>
 
     * Select the type of authorization mechanism. For example, select the **OAuth v2** option. To create custom OAuth profiles, see [Setting Up Authorization Using OAuth v2](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-oauthv2-clientcredentials/){:target="_blank"}.  
-    <img src="../images/salesforce-action-img.5png" alt="Auth mechanism - OAuth V2" title="Auth mechanism - OAuth V2" style="border: 1px solid gray;zoom:50%;"/>
+    <img src="../images/salesforce-action-img5.png" alt="Auth mechanism - OAuth V2" title="Auth mechanism - OAuth V2" style="border: 1px solid gray;zoom:50%;"/>
 
     * Enter the following authentication credentials for the OAuth v2 mechanism:
         * Call back URL
