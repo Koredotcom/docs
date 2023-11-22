@@ -91,7 +91,7 @@ Steps to authorize a ServiceNow action at a user level:
 
 5. Create your own authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s ServiceNow app for authorization.
     1. Click the **Select Authorization** drop-down and select the **Create New** option.  
-    <img src="../images/servicenow-action-img.5png" alt="Create new auth" title="Create new auth" style="border: 1px solid gray;zoom:50%;"/>
+    <img src="../images/servicenow-action-img5.png" alt="Create new auth" title="Create new auth" style="border: 1px solid gray;zoom:50%;"/>
 
     2. **Authorization Type** – Select the **Allow Users to Authorize the Integration** option, and then select the **_Basic Auth_** option.
     3. Enter the following authentication credentials for the Basic Auth mechanism:
