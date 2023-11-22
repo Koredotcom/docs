@@ -853,7 +853,7 @@ You cannot cancel a batch test run in the following scenarios:
 1. When another batch test execution/cancelation is in progress.  
 <img src="../images/batch-testing-cancel-img4.png" alt="Another batch test execution/cancelation is in progress" title="Another batch test execution/cancelation is in progress" style="border: 1px solid gray; zoom:50%;"/>  
   
-    **Solution**: Wait for one test suite execution or cancellation to complete before initiating the process for another.When you try to cancel a batch test run in the **_Published_** mode without publishing the VA.  
+    **Solution**: Wait for one test suite execution or cancellation to complete before initiating the process for another.
 
 2. When you try to cancel a batch test run in the **_Published_** mode without publishing the VA.  
 <img src="../images/batch-testing-cancel-img5.png" alt="Batch test is in Published mode" title="Batch test is in Published mode" style="border: 1px solid gray; zoom:50%;"/>  
