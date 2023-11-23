@@ -6,7 +6,7 @@ The NLP Insights feature helps you gain in-depth insights into the analytics dat
 
 
 1. Click the three dots on the left navigation pane and then click **Analytics**.The **Analytics** panel is displayed with the list of reports.
-   
+
    <img src="../images/navigating-to-nlp.png" alt="Navigating to NLP" title="Navigating to NLP" style="border: 1px solid gray; zoom:80%;"> 
 
 2. Click the **NLP Insights** under the **Automation** section of the **Analytics** panel. The **NLP Insights dashboard** is displayed on the right side of the page.
@@ -40,7 +40,7 @@ An intent refers to the goal the customer has in mind when typing in a question 
 
 See the following table and features section to know more:
 
-<img src="../images/intent-found.png" alt="Intent Found" title="Intent Found" style="border: 1px solid gray; zoom:80%;">
+   <img src="../images/intent-found-1.png" alt="Intent Found" title="Intent Found" style="border: 1px solid gray; zoom:80%;">
 
 The following is an example of Intent Found:
 
