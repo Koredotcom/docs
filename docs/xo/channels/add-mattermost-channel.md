@@ -10,10 +10,10 @@ You can connect Kore.ai assistants to your Mattermost account using either:
 Before you begin, ensure that you have access to the administrative functions of your Mattermost account.
 
 
-# WebHook based Integration
+## WebHook based Integration
 
 
-## Step 1: Setup Outgoing Webhook
+### Step 1: Setup Outgoing Webhook
 
 
 
@@ -39,7 +39,7 @@ Before you begin, ensure that you have access to the administrative functions of
 
 
 
-## Step 2: Setup Incoming Webhook
+### Step 2: Setup Incoming Webhook
 
 
 
@@ -57,10 +57,10 @@ Before you begin, ensure that you have access to the administrative functions of
 
 
 
-# WebSocket based Integration
+## WebSocket based Integration
 
 
-## Step 1: Enable Personal Access Tokens
+### Step 1: Enable Personal Access Tokens
 
 To enable a WebSocket connection, you would need to create a Mattermost account to be provisioned as a bot.
 
@@ -94,7 +94,7 @@ To enable a WebSocket connection, you would need to create a Mattermost account 
 
 
 
-# XO Platform Channel Configuration
+## XO Platform Channel Configuration
 
 To configure the XO Platform channel, after having completed the setup in Mattermost, please follow the steps below:
 
