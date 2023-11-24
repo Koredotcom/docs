@@ -5,7 +5,7 @@
     Please provide a meaningful name like _Travel Bot_ or _HR Assistant_ to the virtual assistant inside **Teams Messaging**.
 
 
-# Requirements
+## Requirements
 
 Google Assistant as a channel should ideally be enabled for VAs that are specifically built to work on voice-based channels. Ensure to review the following before you enable Google Assistant as a channel:
 
@@ -18,7 +18,7 @@ Google Assistant as a channel should ideally be enabled for VAs that are specifi
 * Web form-based responses are not supported for Action, Information, and Alert tasks. and enable fulfillment using a webhook integration.
 
 
-# Step 1: Create a Google Actions Project
+## Step 1: Create a Google Actions Project
 
 1. Log in to [Actions on Google Console](https://developers.google.com/actions/), click **Go To Actions Console**.
 2. Click **Add/import project**. Provide all the details in the required fields and click **Create Project**.
@@ -35,7 +35,7 @@ Google Assistant as a channel should ideally be enabled for VAs that are specifi
 <img src="../images/google_assistant1.png" alt="provide name" title="provide name" style="border: 1px solid gray; zoom:70%;">
 
 
-# Step 2: Define Actions
+## Step 2: Define Actions
 
 1. Next, you must define Actions. Actions are the tasks that you intend your project to fulfill. Click **Actions** on the left pane and click **Add Your First Action**. A new window with options to either build a custom intent or to choose built-in intents is displayed. Choose an appropriate option as per your requirement.
 2. _Actions on Google_ will redirect you to the **Dialogflow** application for defining the action definition. If you are new to Dialogflow, you are requested to register on Dialogflow. Once your Dialogflow account is set up, you are redirected to the Console of Dialogflow to create a new Agent. Click **Create** to complete the creation of a new agent.
@@ -48,7 +48,7 @@ Google Assistant as a channel should ideally be enabled for VAs that are specifi
 7. Click **Save** to update your changes.
 <img src="../images/google_assistant2.png" alt="enable google assistant" title="enable google assistant" style="border: 1px solid gray; zoom:70%;">
 
-# Step 3: Enable Fulfillment
+## Step 3: Enable Fulfillment
 
 
 1. Next, Enable Fulfillment. To configure the webhook integration between your Dialogflow agent and Kore.ai assistant, click the **Fulfillment** option on the left pane and enable the **Webhook** toggle switch.
@@ -60,7 +60,7 @@ Google Assistant as a channel should ideally be enabled for VAs that are specifi
 <img src="../images/google_assistant3.png" alt="enable fulfillment" title="enable fulfillment" style="border: 1px solid gray; zoom:70%;">
 
 
-# Step 4: Test using Simulator
+## Step 4: Test using Simulator
 
 1. Your configurations to enable the channel are all set up now. **Actions on Google** provides a built-in simulator to test your assistant. For this, you must first enable few additional options of your Google account’s [Activity Controls](https://myaccount.google.com/activitycontrols) as per the details provided [here](https://developers.google.com/actions/dialogflow/first-app?hl=en#preview_the_app).
     * After you have configured these controls, in the Dialogflow console, click **Integrations** on the left pane and then click the **Google Assistant**. A popup window with Google Assistant’s integration settings is displayed. Review the required settings and then click **Test** at the bottom of the window.
@@ -69,7 +69,7 @@ Google Assistant as a channel should ideally be enabled for VAs that are specifi
 3. Proceed to the **Configurations** tab on the Google Assistant channel page to continue with the channel setup process.
 
 
-# Step 5: Enable the channel
+## Step 5: Enable the channel
 
 
 1. In the XO Platform, select the assistant you want to add the channel to.
