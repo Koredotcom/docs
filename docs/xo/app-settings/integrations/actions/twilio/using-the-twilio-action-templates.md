@@ -124,6 +124,7 @@ Steps to send an sms to a phone number using the Twilio Verify integration:
 <img src="../images/twilio-tem-img7.png" alt="VA prompt to Send SMS" title="VA prompt to Send SMS" style="border: 1px solid gray;zoom:50%;"/>
 
     **Note**: You must add the country code before the receiver's phone number to deliver the SMS. For example, to send an SMS to a phone number in the United States, add the country code as +1.
+    
 7. You will notice an sms is sent to the number from the Twilio number.
 
 
