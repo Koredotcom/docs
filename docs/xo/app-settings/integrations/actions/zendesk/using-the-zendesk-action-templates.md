@@ -12,7 +12,7 @@ Steps to create a dialog task using the Zendesk action templates:
 <img src="../images/zendesk-tem-img2.png" alt="Integration - Zendesk" title="Integration - Zendesk" style="border: 1px solid gray;zoom:50%;"/>
 
 4. Select any of the dialog task templates and click **Proceed**. For example, select the **Create a ticket** template.
-5. If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your VA. For more information, see [Actions Overview](https://developer.kore.ai/integrations/actions/).  
+5. If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank}.  
 <img src="../images/zendesk-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
  
 
@@ -86,7 +86,7 @@ The following Zendesk actions are supported in this release:
 
 Steps to create a ticket in the Zendesk integration:
 
-1. Refer to the [Installing the Zendesk templates ](https://developer.kore.ai/integrations/configuring-the-zendesk-action/#Step_2_Install_the_Zendesk_Action_Templates)section to install this template.
+1. Refer to the [Installing the Zendesk templates ](../configuring-the-zendesk-action/#step-2-install-the-zendesk-action-templates){:target="_blank} section to install this template.
 2. The _Create a Ticket_ dialog task is added with the following components:  
 <img src="../images/zendesk-tem-img4.png" alt="Create a Ticket dialog task is added" title="Create a Ticket dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -324,7 +324,7 @@ This action template is not yet supported by the Zendesk Integration.
 
 Steps to view all tickets in the Zendesk integration:
 
-1. Refer to the [Installing the Zendesk templates ](https://developer.kore.ai/integrations/configuring-the-zendesk-action/#Step_2_Install_the_Zendesk_Action_Templates)section to install this template.
+1. Refer to the [Installing the Zendesk templates ](../configuring-the-zendesk-action/#step-2-install-the-zendesk-action-templates){:target="_blank}section to install this template.
 2. The _View All Tickets_ dialog task is added with the following components:   
 <img src="../images/zendesk-tem-img8.png" alt="View All Tickets dialog task is added" title="View All Tickets dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -568,7 +568,7 @@ Steps to view all tickets in the Zendesk integration:
 
 Steps to find a ticket using the ID in the Zendesk integration:
 
-1. Refer to the [Installing the Zendesk templates ](https://developer.kore.ai/integrations/configuring-the-zendesk-action/#Step_2_Install_the_Zendesk_Action_Templates)section to install this template.
+1. Refer to the [Installing the Zendesk templates ](../configuring-the-zendesk-action/#step-2-install-the-zendesk-action-templates){:target="_blank}section to install this template.
 2. The _View Ticket(s) by ID(s)_ dialog task is added with the following components:  
 <img src="../images/zendesk-tem-img11.png" alt="View Ticket(s) by ID(s) dialog task is added" title="View Ticket(s) by ID(s) dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -743,7 +743,7 @@ Steps to find a ticket using the ID in the Zendesk integration:
 
 Steps to search ticket with keywords from the Zendesk integration:
 
-1. Refer to the [Installing the Zendesk templates ](https://developer.kore.ai/integrations/configuring-the-zendesk-action/#Step_2_Install_the_Zendesk_Action_Templates)section to install this template.
+1. Refer to the [Installing the Zendesk templates ](../configuring-the-zendesk-action/#step-2-install-the-zendesk-action-templates){:target="_blank}section to install this template.
 2. The _Search Ticket with Keywords_ dialog task is added with the following components:  
 <img src="../images/zendesk-tem-img14.png" alt="Search Ticket with Keywords dialog task is added" title="Search Ticket with Keywords dialog task is added" style="border: 1px solid gray;zoom:50%;"/>
 
