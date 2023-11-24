@@ -108,7 +108,7 @@ Steps to authorize a Zendesk action at a user level:
             * **Description** – Enter the description of the basic authentication profile.  
             <img src="../images/zendesk-action-img7.png" alt="Authentication credentials" title="Authentication credentials" style="border: 1px solid gray;zoom:50%;"/>
 
-        4.  Click **Save Auth**to save authorization profile.
+        4.  Click **Save Auth** to save authorization profile.
 
     3. Select the new **Authorization Profile** which you created to complete integration.
      
@@ -119,6 +119,7 @@ Steps to authorize a Zendesk action at a user level:
 Once you have configured a Zendesk integration, you can explore and install action templates.
 
 Steps to install action templates:
+
 1. On the Integration Successful dialog, click the **Explore Templates** button to view the templates.  
 <img src="../images/zendesk-action-img8.png" alt="Explore templates" title="Explore templates" style="border: 1px solid gray;zoom:50%;"/>
 
