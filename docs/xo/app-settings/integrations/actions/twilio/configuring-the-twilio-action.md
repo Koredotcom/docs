@@ -53,7 +53,7 @@ Steps to authorize a Twilio Verify action using developer credentials:
 5. Click **Enable**. When you configure the action for the first time, the Integration Successful pop-up is displayed.  
 <img src="../images/twilio-action-img4.png" alt="Integration successful" title="Integration successful" style="border: 1px solid gray;zoom:50%;"/>
 
-**Note**: The Twilio Verify action is moved from Available to Configured region.
+**Note**: The Twilio Verify action is moved from _Available_ to _Configured_ region.
 
 
 ### Allow the End User to Authorize

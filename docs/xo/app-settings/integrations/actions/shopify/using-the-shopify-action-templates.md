@@ -354,6 +354,7 @@ Steps to find an order using an order ID:
         ```
 
     5. **getOrderbyIDMessage** – A message node with the script to display responses for various scenarios.
+
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
 5. Follow the prompts in the VA console to get an order by ID as shown below.  
@@ -658,7 +659,7 @@ Steps to find orders by customer Id in Shopify:
         }
         ```
 
-    5. getOrdersbyCustomerIDMessage – A message node with the script to display responses.
+    5. **getOrdersbyCustomerIDMessage** – A message node with the script to display responses.
 
 3. Click the **Train** tab to complete the Dialog task training.
 4. Click the **Talk to Bot** icon to test and debug the dialog task.
