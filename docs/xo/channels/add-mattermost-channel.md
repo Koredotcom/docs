@@ -5,7 +5,7 @@ You can connect Kore.ai assistants to your Mattermost account using either:
 
 
 * [Webhook based integration](/docs/xo/channels/add-mattermost-channel/#webhook-based-integration)
-* [WebSocket based integration](https://docsinternal-kore.github.io/docs/xo/channels/add-mattermost-channel/#websocket-based-integration).
+* [WebSocket based integration](/docs/xo/channels/add-mattermost-channel/#websocket-based-integration).
 
 Before you begin, ensure that you have access to the administrative functions of your Mattermost account.
 
