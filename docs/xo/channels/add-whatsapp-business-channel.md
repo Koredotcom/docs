@@ -110,14 +110,14 @@ The Platform supports integration with **GupShup** to enable WhatsApp business a
       The important steps in completing this channel enablement are as follows:
 
 
-1. [Create a GupShup Application](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-whatsapp-business-messaging-channel/#Step_1_Create_a_GupShup_Application). \
-2. [Configure the Channel Enablement](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-whatsapp-business-messaging-channel/#Step_2_Configure_the_Channel_Enablement).
+1. [Create a GupShup Application](/docs/xo/channels/add-whatsapp-business-channel/#step-1-create-a-gupshup-application). \
+2. [Configure the Channel Enablement](/docs/xo/channels/add-whatsapp-business-channel/#step-2-configure-the-channel-enablement).
 
-* [Create a WABA (WhatsApp Business Account)](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-whatsapp-business-messaging-channel/#Step_2a_Create_a_new_WhatsApp_Business_Account).
-* [Set up the WABA Parameters on the Platform](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-whatsapp-business-messaging-channel/#Step_2b_Set_up_the_WABA_Parameters_on_the_Platform).
-* [Configure the Callback URL/Webhook URL](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-whatsapp-business-messaging-channel/#Step_2c_Configure_the_Callback_URLWebhook_URL).
+* [Create a WABA (WhatsApp Business Account)](/docs/xo/channels/add-whatsapp-business-channel/#step-2a-create-a-new-whatsapp-business-account).
+* [Set up the WABA Parameters on the Platform](/docs/xo/channels/add-whatsapp-business-channel/#step-2b-set-up-the-waba-parameters-on-the-platform).
+* [Configure the Callback URL/Webhook URL](/docs/xo/channels/add-whatsapp-business-channel/#step-2c-configure-the-callback-urlwebhook-url).
 
-3. [Secure the Integration](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-whatsapp-business-messaging-channel/#Step_3_Secure_the_Integration).
+3. [Secure the Integration](/docs/xo/channels/add-whatsapp-business-channel/#step-3-secure-the-integration).
 
 
 ### Step 1: Create a GupShup Application
@@ -148,7 +148,7 @@ The first step in the WhatsApp Messaging Channel integration is to create a GupS
 To send messages to your GupShup users on the WhatsApp Business Messaging Channel, follow the steps below:
 
 
-### Step 2(a): Create a new WhatsApp Business Account
+### Step 2a: Create a new WhatsApp Business Account
 
 Once you have created a GupShup app, you need to create a **WABA** to set up the integration with a number. To create a WABA, follow the steps below:
 
@@ -168,7 +168,7 @@ Once you have created a GupShup app, you need to create a **WABA** to set up the
 3. Once the account is verified with your _Facebook Business ID_, the **WABA ID**, **Mobile number**, and **Password** are displayed.
 
 
-### Step 2(b): Set up the WABA Parameters on the Platform
+### Step 2b: Set up the WABA Parameters on the Platform
 
 To integrate your GupShup service using the WBM channel to the Kore.ai XO Platform, follow the steps below:
 
@@ -183,7 +183,7 @@ To integrate your GupShup service using the WBM channel to the Kore.ai XO Platfo
 
 
 
-### Step 2(c): Configure the Callback URL/Webhook URL
+### Step 2c: Configure the Callback URL/Webhook URL
 
 To link to your bot on the Kore.ai Platform to receive inbound messages/events, you must configure the **Callback/Webhook URL** on your **GupShup WhatsApp Dashboard**.
 
@@ -193,6 +193,7 @@ To set up the **Callback URL**, follow the steps below:
 1. On the Kore.ai Bot Builder, navigate to **Deploy** > **Channels** > **WhatsApp Business Messaging** (under **Enterprise Channels**).
 2. Click the **Configurations** tab on the **WhatsApp Business Messaging** window.
 3. Ensure you have selected **GupShup** for the **Messaging Partner** field. Click **Copy** to copy the **Webhook URL**.
+
 <img src="../images/whatsapp20.png" alt="enter gupshup webhook" title="enter gupshup webhook" style="border: 1px solid gray; zoom:70%;">
 
 4. Navigate to your **GupShup WhatsApp Dashboard**.
