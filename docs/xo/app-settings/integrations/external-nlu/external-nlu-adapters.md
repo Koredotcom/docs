@@ -1,4 +1,4 @@
-# **External NLU Adapters**
+# **External NLU Adapters Overview**
 
 Kore.ai has one of the best NLP engines in the market including the unique Multiengine NLP capability. However, to provide integration flexibility and let the customers use the NLU engine of their preference with other features of the platform, Kore.ai provides an ability to make an external NLU engine co-exist with our built-in NLP engines.
 
@@ -57,4 +57,4 @@ Steps to configure an external NLU adapter:
 
         External NLU is supported only for intent, Entity nodes and FAQs.
 
-See [Dialogflow Engine](https://developer.kore.ai/integrations/dialogflow-engine/) to understand the Dialogflow usage. See [Test and Debug](https://developer.kore.ai/integrations/test-and-debug/) to know how to test your virtual assistant to validate the external NLU and to understand the conversation behavior.
+See [Dialogflow Engine](https://developer.kore.ai/integrations/dialogflow-engine/){:target="_blank"} to understand the Dialogflow usage. See [Test and Debug](https://developer.kore.ai/integrations/test-and-debug/){:target="_blank"} to know how to test your virtual assistant to validate the external NLU and to understand the conversation behavior.
