@@ -157,13 +157,13 @@ Click the **expansion arrow** icon under **Entity** to view the entity order exp
 The **NLP Analysis** section displays the detailed view of the historic analysis generated at the time of the test case execution for failed and successful test cases. For the selected intent type, this section gives an overview of the intents that are qualified (the definitive and probable matches) and disqualified to serve as crucial information for users trying to decode the reason for failed test cases. The following details are displayed as a graphical representation in this section:
 
 * [Traits](https://developer.kore.ai/docs/bots/nlp/traits/#Trait_Definition){:target="_blank"} (if applicable)
-* [Machine Learning (ML) engine](../../../utterance-testing/#ml-model){:target="_blank"}
-* [Fundamental Meaning (FM) engine](../../../utterance-testing/#fm-model){:target="_blank"}
-* [Knowledge Graph (KG) engine](../../../utterance-testing/#knowledge-graph){:target="_blank"}
+* [Machine Learning (ML) engine](../../../testing-your-bot-with-nlp/#ml-model){:target="_blank"}
+* [Fundamental Meaning (FM) engine](../../../testing-your-bot-with-nlp/#fm-model){:target="_blank"}
+* [Knowledge Graph (KG) engine](../../../testing-your-bot-with-nlp/#knowledge-graph){:target="_blank"}
 * [Trait Rule](https://developer.kore.ai/docs/bots/nlp/traits/#Trait_Association_Rules){:target="_blank"} (if applicable)
-* [Ranking and Resolver](../../../utterance-testing/#ranking-and-resolver)
+* [Ranking and Resolver](../../../testing-your-bot-with-nlp/#ranking-and-resolver)
 
-This is different from analyzing the test results under **Utterance Testing** where the current analysis information is displayed based on the changes to the trained data. [Learn more](../../../utterance-testing/#analyzing-the-test-results){:target="_blank"}.
+This is different from analyzing the test results under **Utterance Testing** where the current analysis information is displayed based on the changes to the trained data. [Learn more](../../../testing-your-bot-with-nlp/#analyzing-the-test-results){:target="_blank"}.
 
 To view the **NLP Analysis** section, follow these steps:
 
@@ -192,7 +192,7 @@ Please click [here](../flow-health-dashboard/#flow-metrics){:target="_blank"} to
 
 #### Utterance Testing
 
-Based on the test case failures, you can retrain your virtual assistant using the **Utterance testing** option for all possible user utterances and inputs. Training is how you enhance the performance of the NLP engine to prioritize one task or user intent over another based on the user input. To learn more, please refer to this [link](../../../utterance-testing/){:target="_blank"}.
+Based on the test case failures, you can retrain your virtual assistant using the **Utterance testing** option for all possible user utterances and inputs. Training is how you enhance the performance of the NLP engine to prioritize one task or user intent over another based on the user input. To learn more, please refer to this [link](../../../testing-your-bot-with-nlp/){:target="_blank"}.
 
 To navigate to the **Utterance Testing** window, click the **go to utterance testing** (magic wand) icon on the **Test Cases – Detailed Analysis** page.  
 <img src="../images/hm-13.png" alt="go to utterance testing" title="go to utterance testing" style="border: 1px solid  gray; zoom:50%;"/>
@@ -200,7 +200,7 @@ To navigate to the **Utterance Testing** window, click the **go to utterance tes
 
 In the **Utterance Testing** window shown below, you can do the following:
 
-* Test & [Train](../../../utterance-testing/#training-the-assistant){:target="_blank"} your virtual assistant based on these [recommendations ](https://developer.kore.ai/docs/bots/nlp/user-utterances/#Recommendations){:target="_blank"} to understand different user utterances and match them with intents and entities.
+* Test & [Train](../../../testing-your-bot-with-nlp/#training-the-assistant){:target="_blank"} your virtual assistant based on these [recommendations ](https://developer.kore.ai/docs/bots/nlp/user-utterances/#Recommendations){:target="_blank"} to understand different user utterances and match them with intents and entities.
 * View the **NLP analysis** flow and **Fields/Entities** analysis data including the confidence score based on the NER training.
 * Use the **Mark as an incorrect match** link to match the user input with the right intent when it is mapped to an incorrect task.  
   <img src="../images/hm-14.png" alt="Utterance Testing window" title="Utterance Testing window" style="border: 1px solid  gray; zoom:50%;"/>
@@ -318,11 +318,11 @@ table, th, td {
    <td>Displays the individual scores for the following
 <ul>
 
-<li><a href="../../../utterance-testing/#ml-model" target="_blank">Machine Learning (ML) score</a>
+<li><a href="../../../testing-your-bot-with-nlp/#ml-model" target="_blank">Machine Learning (ML) score</a>
 
-<li><a href="../../../utterance-testing/#fm-model" target="_blank">Fundamental Meaning (FM) score</a>
+<li><a href="../../../testing-your-bot-with-nlp/#fm-model" target="_blank">Fundamental Meaning (FM) score</a>
 
-<li><a href="../../../utterance-testing/#ranking-and-resolver" target="_blank">Ranking and Resolver (RR) score</a>
+<li><a href="../../../testing-your-bot-with-nlp/#ranking-and-resolver" target="_blank">Ranking and Resolver (RR) score</a>
 </li>
 </ul>
    </td>
