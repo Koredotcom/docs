@@ -46,6 +46,7 @@ Below are the steps involved in setting up the channel on Kore.ai and launching 
     * **Publish** the channel.
 2. Trigger opt-in and/or broadcast requests:
     * **Trigger opt-in**: Every time a new user opts in to use Google RCS, platform needs to be informed about this new user. To inform the platform, call the **msgevents API** with the below details: _Method_: `POST` _Request Headers_: `auth : &lt;JWT>` _Request Payload_:
+    
     ```
      `{ \
          "event" : "opt-in", \
