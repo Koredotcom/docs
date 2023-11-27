@@ -79,7 +79,6 @@ A JSON file will be generated and you need to copy the _client_email, and privat
 In the XO Platform, select the VA you’re working with, then go to Deploy > Channels > Google Chat > Configurations.
 
 
-
 1. Enter the following configuration details:
     1. **Client Email** – Copy the value of the _client_email_ field present in the credentials JSON file of your Service Account and enter it here.
     2. **Private Key** – Copy the value of the _private_key_ field present in the credentials JSON file of your Service Account and enter it here
