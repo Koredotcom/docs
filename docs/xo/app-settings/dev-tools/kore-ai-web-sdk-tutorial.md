@@ -48,6 +48,7 @@ In this next section, you will define the Web/Mobile Client channel for the Trav
     4. Client Secret
 11. Click **Save**.  
   Now that the bot is created and defined for the Web/Mobile Client channel, you are ready to publish and deploy your bot.  
+  
   !!! note
 
         By default, the Travel Sample Planning bot is configured with **Target Audience** set to **Enterprise Users** on the **Build** tab in the **Configurations -> General Settings. **Optionally, you can define this bot for **General Public** use. Once this bot is published, the **Target Audience** cannot be changed.
@@ -109,14 +110,16 @@ In this next section, you will define the Web/Mobile Client channel for the Trav
             The JWTUrl refers to the location where your app (where you want the Kore.ai Bot to be integrated) is hosted. For this tutorial, we are using the JWT server (as setup in step 19) and hence using the same here.
 
         3. Ensure that in kore-config.js you set the audience for your bot. Choose one of the following:
-            1. <code>"isAnonymous": &lt; <strong>false </strong>>;</code> if bot is deployed for the <strong>enterprise users</strong>, and then set <code>botOptions.userIdentity = '<strong>&lt;</strong> <strong>Your email ID ></strong>';
+            1. <code>"isAnonymous": &lt; <strong>false </strong>>;</code> if bot is deployed for the <strong>enterprise users</strong>, and then set <code>botOptions.userIdentity = '<strong>&lt;</strong> <strong>Your email ID ></strong>'</code>;
             
-                <strong>– or –</strong></code>
+                **– or –**
+
             2. <code>"isAnonymous": &lt; <strong>true </strong>>;</code> if bot is deployed for <strong>Consumer Use</strong>
    
     2. This step is valid for older Web SDK file downloaded <span style="text-decoration:underline;">before ver7.2</span> of the platform i.e. <span style="text-decoration:underline;">before Feb 2020</span>
         
         Open the index.html file from the …/SDKApp/sdk/UI folder using a text editor:
+
         1. Update the following lines to add the path to the UI folder:
 
             ```
@@ -150,9 +153,10 @@ In this next section, you will define the Web/Mobile Client channel for the Trav
                 The URL mentioned in the above code snippet, refers to the location where your app (where you want the Kore.ai Bot to be integrated) is hosted. For this tutorial, we are using the JWT server (as setup i step 18) and hence using the same here.
             
         3. Choose one of the following:
-            * <code>"isAnonymous": &lt; <strong>false </strong>>;</code> if bot is deployed for the <strong>enterprise users</strong>, and then set <code>botOptions.userIdentity = '<strong>&lt;</strong> <strong>Your email ID ></strong>';
+            * <code>"isAnonymous": &lt; <strong>false </strong>>;</code> if bot is deployed for the <strong>enterprise users</strong>, and then set <code>botOptions.userIdentity = '<strong>&lt;</strong> <strong>Your email ID ></strong>'</code>;
 
-                <strong>– or –</strong></code>
+                **– or –**
+        
             * <code>"isAnonymous": &lt; <strong>true </strong>>;</code> if bot is deployed for <strong>Consumer Use</strong>
 
 22. Save your changes.
@@ -260,6 +264,7 @@ botOptions.botInfo = {name:"<bot_name>", "_id":"<bot_id",
 ### Some commonly encountered errors
 
 * A wrong URL is given in index.html, users see a 404 error. Double check the URL. URL changes depending on whether you are hosting the bot on your own web SDK or on Kore’s web SDK. If its Kore web SDK, then the URL is `http://demo.kore.net:3000/users/sts 7`.
+
     If you are hosting on your in-house web SDK, then provide the respective URL.
 
 * missing/Invalid jwt.sub(): This error occurs for enterprise Bots, when the user’s email id is not given in the index.html file. Provide users identity as shown below in index.html
