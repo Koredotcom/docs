@@ -7,7 +7,7 @@ This document explains how to authorize and enable the Shopify action and instal
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow Shopify integration to exchange data. For more information, read the [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"} article.
+The Kore.ai XO Platform supports basic authentication to allow Shopify integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authentication){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the Shopify integration:
 
@@ -76,7 +76,7 @@ Steps to authorize a Shopify action at a user level:
     2. Create your authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s Shopify app for authorization. To create a profile, click the **Select Authorization** drop-down and select the **Create New** option.  
     <img src="../images/shopify-action-img4.png" alt="Create new authorization" title="Create new authorization" style="border: 1px solid gray;zoom:50%;"/>
 
-    3. Select the type of authorization mechanism. For example, select the **API Key** option. To create Basic Auth profiles, see [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"}.
+    3. Select the type of authorization mechanism. For example, select the **API Key** option. To create Basic Auth profiles, see [Bot Authorization Overview](../../../../dev-tools/bot-authentication){:target="_blank"}.
     4. Enter the following authentication credentials for the Basic Auth mechanism:
         * **Name** – Enter the name for the Basic Auth profile.
         * Select **Yes** for the tenancy URLs option.

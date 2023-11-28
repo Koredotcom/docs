@@ -7,7 +7,7 @@ This document explains the **Freshservice** configuration steps to enable, autho
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow Freshservice integration to exchange data. For more information, read the [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"} article.
+The Kore.ai XO Platform supports basic authentication to allow Freshservice integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authentication){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the Freshservice integration:
 
@@ -71,7 +71,7 @@ Steps to authorize a Freshservice action at a user level:
     2. Create your authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s Freshservice app for authorization. To create a profile, click the **Select Authorization** drop-down and select the **Create New** option.  
     <img src="../images/freshservice-action-img4.png" alt="Create new auth profile" title="Create new auth profile" style="border: 1px solid gray;zoom:50%;"/>
 
-    3. Select the type of authorization mechanism. For example, select the **Basic Auth** option. To create Basic Auth profiles, see [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"}.  
+    3. Select the type of authorization mechanism. For example, select the **Basic Auth** option. To create Basic Auth profiles, see [Bot Authorization Overview](../../../../dev-tools/bot-authentication){:target="_blank"}.  
     <img src="../images/freshservice-action-img5.png" alt="Auth mechanism type" title="Auth mechanism type" style="border: 1px solid gray;zoom:50%;"/>
 
     4. Enter the following authentication credentials for the Basic Auth mechanism:

@@ -7,7 +7,7 @@ This article explains how to enable, authorize, configure, and install the Micro
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow a Microsoft Graph integration to exchange data. For more information, see [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"}. 
+The Kore.ai XO Platform supports basic authentication to allow a Microsoft Graph integration to exchange data. For more information, see [Bot Authorization Overview](../../../../dev-tools/bot-authentication){:target="_blank"}. 
 The Kore.ai XO Platform supports the following authorization types for the Microsoft Graph integration:
 
 * **Pre-Authorize the Integration** – To make the integration process smoother for developers and customers, you can pre-authorize it by providing the necessary authorization credentials to obtain the access token..
