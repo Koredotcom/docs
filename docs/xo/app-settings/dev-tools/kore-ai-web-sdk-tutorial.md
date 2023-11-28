@@ -49,9 +49,9 @@ In this next section, you will define the Web/Mobile Client channel for the Trav
 11. Click **Save**.  
   Now that the bot is created and defined for the Web/Mobile Client channel, you are ready to publish and deploy your bot.  
   
-  !!! note
+    !!! note
 
-        By default, the Travel Sample Planning bot is configured with **Target Audience** set to **Enterprise Users** on the **Build** tab in the **Configurations -> General Settings. **Optionally, you can define this bot for **General Public** use. Once this bot is published, the **Target Audience** cannot be changed.
+            By default, the Travel Sample Planning bot is configured with **Target Audience** set to **Enterprise Users** on the **Build** tab in the **Configurations -> General Settings. **Optionally, you can define this bot for **General Public** use. Once this bot is published, the **Target Audience** cannot be changed.
 
 12. On the **Deploy** tab, click **Bot Management -> Publish**.
 13. On **Publish** page, select all tasks, and then click **Proceed**.
