@@ -7,7 +7,7 @@ This article explains how to authorize and enable the **ServiceNow** action and 
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow a ServiceNow integration to exchange data. For more information, see [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"} . 
+The Kore.ai XO Platform supports basic authentication to allow a ServiceNow integration to exchange data. For more information, see [Bot Authorization Overview](../../../../dev-tools/bot-authentication){:target="_blank"} . 
 
 The Kore.ai XO Platform supports the following authorization types for the ServiceNow integration:
 
@@ -86,7 +86,7 @@ Steps to authorize a ServiceNow action at a user level:
 1. Go to **Build > Integrations** and select the **Actions** menu item.
 2. Select the **ServiceNow** action in the **Available Actions** region.
 3. In the Configurations dialog, select the **Authorization** tab 
-4. Select the type of authorization mechanism. For example, select the **Basic Auth** option. To create Basic Auth profiles, see [Bot Authorization Overview ](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"}.  
+4. Select the type of authorization mechanism. For example, select the **Basic Auth** option. To create Basic Auth profiles, see [Bot Authorization Overview ](../../../../dev-tools/bot-authentication){:target="_blank"}.  
 <img src="../images/servicenow-action-img4.png" alt="Auth mechanism -- Basic auth" title="Auth mechanism -- Basic auth" style="border: 1px solid gray;zoom:50%;"/>
 
 5. Create your own authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s ServiceNow app for authorization.

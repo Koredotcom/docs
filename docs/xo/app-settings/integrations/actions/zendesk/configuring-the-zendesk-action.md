@@ -7,7 +7,7 @@ This article explains how to authorize and enable the **Zendesk** action and ins
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform allows you to integrate with Zendesk using basic authorization. For more information, see [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"}.
+The Kore.ai XO Platform allows you to integrate with Zendesk using basic authorization. For more information, see [Bot Authorization Overview](../../../../dev-tools/bot-authentication){:target="_blank"}.
 
 The Kore.ai XO Platform supports the following authorization types for the Zendesk integration:
 
@@ -94,7 +94,7 @@ Steps to authorize a Zendesk action at a user level:
 2. Select the **Zendesk** action in the **Available Actions** region.
 3. In the Configurations dialog, select the **Authorization** tab.
 4. Enter the following details:
-    1. Select the type of authorization mechanism. For example, select the **Basic Auth** option. To create Basic Auth profiles, see [Bot Authorization Overview ](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"}.
+    1. Select the type of authorization mechanism. For example, select the **Basic Auth** option. To create Basic Auth profiles, see [Bot Authorization Overview ](../../../../dev-tools/bot-authentication){:target="_blank"}.
     2. Create your authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s Zendesk app for authorization.
         1. Click the **Select Authorization** drop-down and select the **Create New** option  
         <img src="../images/zendesk-action-img6.png" alt="Create new auth" title="Create new auth" style="border: 1px solid gray;zoom:50%;"/>
