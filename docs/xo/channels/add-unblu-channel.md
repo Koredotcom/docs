@@ -67,18 +67,20 @@ For a detailed document on the implementation, [refer here](https://developer.ko
 
 Locate the following section and populate the apiKey and serverUrl fields with the above-mentioned values. \
 
-
 ```
-window.unblu.api
-.configure({
-   apiKey: "<your-unblu-apikey>",
-   serverUrl: "<your-unblu-host>"
-        * `  })`
-  ```
+  {
+    window.unblu.api
+    .configure({
+       apiKey: "<your-unblu-apikey>",
+       serverUrl: "<your-unblu-host>"
+            * `  }
+            )`
+```
+
 
 In the following Script tag, add Unblu host URL and the API key: `&lt;script type="text/javascript" defer="defer" src="&lt;your-unblu-host>/unblu/visitor.js?x-unblu-apikey=&lt;your-unblu-apikey>">&lt;/script>`
 
-The entire Unblu SDK HTML file would look like this: \
+The entire Unblu SDK HTML file would look like this:
 
 
 ```
