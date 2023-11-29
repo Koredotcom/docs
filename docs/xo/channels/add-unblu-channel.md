@@ -75,7 +75,8 @@ window.unblu.api
    serverUrl: "<your-unblu-host>"
         * `  })`
   ```
-    * In the following Script tag, add Unblu host URL and the API key: `&lt;script type="text/javascript" defer="defer" src="&lt;your-unblu-host>/unblu/visitor.js?x-unblu-apikey=&lt;your-unblu-apikey>">&lt;/script>`
+
+In the following Script tag, add Unblu host URL and the API key: `&lt;script type="text/javascript" defer="defer" src="&lt;your-unblu-host>/unblu/visitor.js?x-unblu-apikey=&lt;your-unblu-apikey>">&lt;/script>`
 
 The entire Unblu SDK HTML file would look like this: \
 
@@ -83,14 +84,10 @@ The entire Unblu SDK HTML file would look like this: \
 ```
 <!DOCTYPE html>
 <html>
-
 <head>
-
    <meta name="unblu:named-area" content="<your-namedArea-Id>" />
-
    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
    <script src="<your-unblu-host>/unblu/js-api/v2/visitor/visitor-api.min.js"></script>
-
  <script>
    function setVisitorData(engagementType, visitorData) {
       return Promise.resolve(JSON.stringify({ name: "John", about: "Tester" }));
@@ -103,8 +100,6 @@ The entire Unblu SDK HTML file would look like this: \
       .initialize().then(function (api) {
         console.log("API initialized successfully!");
         api.setNewConversationInterceptor(setVisitorData);
-
-
             }).catch(e => {
                 console.log("------error : ", e);
                 if (e.type === 'INITIALIZATION_TIMEOUT') {
@@ -114,14 +109,12 @@ The entire Unblu SDK HTML file would look like this: \
                 } else {
                  // show generic error message
                  }
-           });
-
+           }
+           );
 </script>
-
 <script type="text/javascript" defer="defer"
 src="<your-unblu-host>/unblu/visitor.js?x-unblu-apikey=<your-unblu-apikey>"></script>
 </head>
-
 <body>
 </body>
 </html>
@@ -243,14 +236,13 @@ Following is the structure of the `usercontext.customData \
  "propagated" : false
  }
 }
-```
 
+```
 
 
 ## Special Notes
 
 There are multiple functionalities that can be achieved by the integration of Unblu channel with Kore.ai assistant
-
 
 * When mapping a named area to a bot, _multiple named areas_ can be mapped. This way a single Kore.ai assistant has the ability to accept Unblu dialog offer requests from different origins like SDKs or namedAreas.
 * Also, the named area mapping is optional if you are enabling the Unblu channel for a single Kore.ai assistant.
@@ -265,10 +257,9 @@ Following is a code example for how to use the above mentioned templates, change
 
 **Card Template**:
 
-`var unbluCardTemplate = {`
-
 
 ```
+`var unbluCardTemplate = {`
     "$_type": "CardPostMessageData",
     "type": "CARD",
     "imageUrl": "data:image/png;base64,",
@@ -299,14 +290,14 @@ Following is a code example for how to use the above mentioned templates, change
   };
 
 print(JSON.stringify(unbluCardTemplate));
+
 ```
 
 **List Template**:
 
-`var unbluListTemplate = {`
-
 
 ```
+`var unbluListTemplate = {`
     "$_type": "ListPostMessageData",
     "type": "LIST",
     "header": {
@@ -363,17 +354,16 @@ print(JSON.stringify(unbluCardTemplate));
       }
     ]
 }
-print(JSON.stringify(unbluListTemplate));
+print(JSON.stringify(unbluListTemplate)
+);
+
 ```
 
 
 **Multi Choice Template**:
 
- \
-`var unbluMultiChoiceTemplate =  {`
-
-
 ```
+`var unbluMultiChoiceTemplate =  {`
     "$_type": "MultichoiceQuestionPostMessageData",
     "type": "MULTICHOICE_QUESTION",
     "text": "Choose one of the options",
@@ -394,3 +384,5 @@ print(JSON.stringify(unbluListTemplate));
     ]
   };
 print(JSON.stringify(unbluMultiChoiceTemplate));
+
+```
