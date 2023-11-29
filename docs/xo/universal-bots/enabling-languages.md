@@ -5,7 +5,7 @@ Like standard bots, you can enable more than one language for universal bots, bu
 When you enable a new language for a standard bot, you need to upload language packs consisting of the entire bot definitions. Whereas to enable a new language for a universal bot, you just need to set up the corresponding default dialog.
 
 Universal bots do not obtain the enabled languages of the linked bots. You must enable default and additional languages for the universal bot. When user utterances are made in an enabled language, the universal bot routes it to only those linked bot tasks that have the same language enabled. For example, if German is enabled for the universal bot and a user utters in German, the NLP engine looks for all the linked bot tasks that support German and sends the utterance only to those tasks.
-
+!!! note
 
     If a user interacts with the universal bot in a non-enabled language, it sends a standard response in the default language requesting the user to interact in one of the supported languages. Also, if none of the linked tasks have a relevant response, the bot triggers the language-specific default dialog.
 
@@ -28,8 +28,9 @@ Follow these steps to enable an additional language for a universal bot:
 
 4. Click the **Add Language** button from the top right.
 5. On the Add Language window, click **Configure **next to the language you want to.
-    !!! note
 
+!!! note
+    
     The language would be enabled only for the Universal Bot, ensure that this language is enabled and published in the linked bots as well. 
 
 
@@ -38,9 +39,9 @@ Follow these steps to enable an additional language for a universal bot:
 6. Under the **Language Selection Time Frame** (scroll down to view this option) select one of these options:
     * **Lifetime**: The auto-detected language or the language preference selected by the user will be set as the user’s preferred language.
     * **Per Session**: Detects the user’s language at the beginning of every session and responds accordingly.
-    
-    !!! note
 
+    !!! note
+    
     If the language cannot be determined with high confidence, the bot requests the users to select their preferred language. The default language is used to communicate with the user during language preference selection.
 
 
