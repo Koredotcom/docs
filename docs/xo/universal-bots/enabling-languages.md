@@ -1,4 +1,4 @@
-# **Enabling Additional Languages for the Universal Bot**
+# Enabling Additional Languages for the Universal Bot
 
 Like standard bots, you can enable more than one language for universal bots, but the functionality is completely different.
 
@@ -15,7 +15,7 @@ Universal bots do not obtain the enabled languages of the linked bots. You must 
 This article assumes that you understand the fundamentals of multi-language bots in Kore.ai and therefore focuses on the aspects specific to the universal bots. For the fundamentals of multi-language bots in the Bots Builder, refer to[ Building Multi-Language Bots](https://developer.kore.ai/docs/bots/advanced-topics/multi-lingual/building-multi-language-bots/).
 
 
-### **Enable Language**
+### Enable Language
 
 Follow these steps to enable an additional language for a universal bot:
 
@@ -48,7 +48,7 @@ Follow these steps to enable an additional language for a universal bot:
 7. Click **Save**.
 
 
-### **Customizing Default Dialog**
+### Customizing Default Dialog
 
 If the Kore.ai NLP engine cannot recognize the user intent, the universal bot responds to the users with the default dialog. You must create language-specific versions of the default dialog for each enabled language so that such bot responses go in the users’ preferred language. Otherwise, the universal bot responds applies the default bot language regardless of the user’s preferred language. 
  Follow these steps to open the language-specific default dialog:

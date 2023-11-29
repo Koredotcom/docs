@@ -1,4 +1,4 @@
-# **Universal Bots**
+# Universal Bots
 
 Kore.ai’s Universal Bots facilitate a scalable, modular approach to Bot building by helping you link several Bots into one.
 
@@ -9,7 +9,7 @@ Universal Bot is a container bot that can be linked with one or more Standard Bo
 
 
 
-## **Highlights**
+## Highlights
 
 
 
@@ -28,7 +28,7 @@ Universal Bot is a container bot that can be linked with one or more Standard Bo
 * Apart from this, the developer can define **eligible bots** ie. assign specific bots to specific end-users so that only the intents from these bots are made available to them.
 
 
-### **Implementation**
+### Implementation
 
 The following flow chart shows the working of a Universal bot:
 
@@ -48,7 +48,7 @@ The following is the explanation for the above process flow:
 * The user utterance is sent to the scoped bots and the results are processed by the Universal Bot’s Ranking and Resolver engine.
 
 
-## **Universal Bot – upgrade**
+## Universal Bot – upgrade
 
 Post ver7.3 release of the platform, new Universal Bots would be versioned as 2.0.
 
@@ -78,7 +78,7 @@ Once you upgrade, follow these steps to ensure that the user utterances are rout
 [Refer here for more on training the Universal Bot](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/training-a-universal-bot/).
 
 
-## **Next Steps**
+## Next Steps
 
 
 
