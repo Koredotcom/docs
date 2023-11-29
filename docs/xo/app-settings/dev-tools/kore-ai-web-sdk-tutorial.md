@@ -150,7 +150,7 @@ In this next section, you will define the Web/Mobile Client channel for the Trav
 
             !!! note
 
-                The URL mentioned in the above code snippet, refers to the location where your app (where you want the Kore.ai Bot to be integrated) is hosted. For this tutorial, we are using the JWT server (as setup i step 18) and hence using the same here.
+                The URL mentioned in the above code snippet, refers to the location where your app (where you want the Kore.ai Bot to be integrated) is hosted. For this tutorial, we are using the JWT server (as setup in step 15) and hence using the same here.
             
         3. Choose one of the following:
             * <code>"isAnonymous": &lt; <strong>false </strong>>;</code> if bot is deployed for the <strong>enterprise users</strong>, and then set <code>botOptions.userIdentity = '<strong>&lt;</strong> <strong>Your email ID ></strong>'</code>;
