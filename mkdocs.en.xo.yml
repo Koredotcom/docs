@@ -140,8 +140,11 @@ nav:
       - Campaign:
         - Introduction to Campaign: virtual-assistants-overview.md
         - Set up Campaign: virtual-assistants-overview.md       
-    - Glossary: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/ 
-    - FAQs: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
+    - Glossary:
+      - Concepts and Terminology: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/ 
+    - FAQs: 
+      - Automations FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
+      - Contact Center FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/   
   - Integrations:
     - Overview: whats-new/whats-new-in-this-release.md
     - Release notes: whats-new/whats-new-in-this-release.md   
