@@ -140,7 +140,7 @@ nav:
       - Campaign:
         - Introduction to Campaign: virtual-assistants-overview.md
         - Set up Campaign: virtual-assistants-overview.md       
-    - Glossary: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/ 
+    - **Glossary:** https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/ 
     - FAQs: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
   - Integrations:
     - Overview: whats-new/whats-new-in-this-release.md
