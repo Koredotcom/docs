@@ -121,10 +121,28 @@ copyright: |
 nav:
   - Platform: index.md
   - Getting Started:
-    - Virtual Assistants Overview: virtual-assistants-overview.md
-    - What's new: whats-new/whats-new-in-this-release.md   
+    - XO Platform:
+      - Introduction to the Platform: virtual-assistants-overview.md
+      - Access the Platform: virtual-assistants-overview.md   
+    - Automations:
+      - Introduction to Virtual Assistant: virtual-assistants-overview.md
+      - Build a Virtual Assistant: virtual-assistants-overview.md   
+    - Answers:
+      - Introduction to Answers: virtual-assistants-overview.md
+      - Configure Answers: virtual-assistants-overview.md   
+    - AgentAssist:
+      - Introduction to AgentAssist: virtual-assistants-overview.md
+      - Set up AgentAssist: virtual-assistants-overview.md       
+    - Contact Center:
+      - Introduction to Contact Center: virtual-assistants-overview.md
+      - Set up Contact Center: virtual-assistants-overview.md       
+    - Campaign:
+      - Introduction to Campaign: virtual-assistants-overview.md
+      - Set up Campaign: virtual-assistants-overview.md       
+    - Glossary: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/ 
+    - FAQs: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
   - Integrations:
-    - Overview: virtual-assistants-overview.md
+    - Overview: whats-new/whats-new-in-this-release.md
     - Release notes: whats-new/whats-new-in-this-release.md   
   - APIs:
     - reference/index.md
