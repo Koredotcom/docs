@@ -121,7 +121,7 @@ copyright: |
 nav:
   - Platform: index.md
   - Getting Started:
-    - Getting Started:
+    - Overview:
       - XO Platform:
         - Introduction to the Platform: virtual-assistants-overview.md
         - Access the Platform: virtual-assistants-overview.md   
@@ -140,8 +140,8 @@ nav:
       - Campaign:
         - Introduction to Campaign: virtual-assistants-overview.md
         - Set up Campaign: virtual-assistants-overview.md       
-      - Glossary: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/ 
-      - FAQs: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
+    - Glossary: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/ 
+    - FAQs: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
   - Integrations:
     - Overview: whats-new/whats-new-in-this-release.md
     - Release notes: whats-new/whats-new-in-this-release.md   
