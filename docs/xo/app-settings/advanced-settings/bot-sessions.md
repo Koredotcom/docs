@@ -49,7 +49,7 @@ The following details explain the options available on the page, to define the c
 
         !!! note
 
-                The minimum value that can be set here is **5 min **and the maximum value is **20160** **min** (14 days). These values can be configured at the application level through Koreconfig.
+                The minimum value that can be set here is **5 min** and the maximum value is **20160 min** (14 days). These values can be configured at the application level through Koreconfig.
 
 * **Session Closure Behavior** – You can choose to close the session without informing the user or inform the user about the session closure by sending out a message. This message can be customized using the **Manage response** link. You can click **Add Response**, if you want to add a new response.  
 <img src="../images/bot-sessions-img2.png" alt="Customize message using Manage Response" title="Customize message using Manage Response" style="border: 1px solid gray;zoom:50%;"/>
