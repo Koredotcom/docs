@@ -124,8 +124,8 @@ nav:
     - Virtual Assistants Overview: virtual-assistants-overview.md
     - What's new: whats-new/whats-new-in-this-release.md   
   - Integrations:
-    - Virtual Assistants Overview: virtual-assistants-overview.md
-    - What's new: whats-new/whats-new-in-this-release.md   
+    - Overview: virtual-assistants-overview.md
+    - Release notes: whats-new/whats-new-in-this-release.md   
   - APIs:
     - reference/index.md
     - Debug Logs API: API/debug-logs-api.md
