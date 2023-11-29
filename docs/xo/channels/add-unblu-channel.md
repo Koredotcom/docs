@@ -76,12 +76,12 @@ Locate the following section and populate the apiKey and serverUrl fields with t
             * `  }
             )`
 ```
-
+\
 
 In the following Script tag, add Unblu host URL and the API key: `&lt;script type="text/javascript" defer="defer" src="&lt;your-unblu-host>/unblu/visitor.js?x-unblu-apikey=&lt;your-unblu-apikey>">&lt;/script>`
 
 The entire Unblu SDK HTML file would look like this:
-
+\
 
 ```
 <!DOCTYPE html>
