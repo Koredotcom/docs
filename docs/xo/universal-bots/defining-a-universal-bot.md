@@ -77,8 +77,10 @@ Universal Bots connect multiple Standard Bots into a single bot. They support mo
 
 #### **Enabled Features and Configurations**
 
-This section assumes that you understand the fundamentals of[ standard bots](https://developer.kore.ai/docs/bots/bot-builder-tool/bot-creation/defining-a-standard-bot/). Details relevant to the Universal Bots alone are listed here. We recommend you to refer to the relevant standard bot documentation for help with the basics. \
-The **Feature** column entries in the following table provide URLs to the standard bot documentation. \
+This section assumes that you understand the fundamentals of[ standard bots](https://developer.kore.ai/docs/bots/bot-builder-tool/bot-creation/defining-a-standard-bot/). Details relevant to the Universal Bots alone are listed here. We recommend you to refer to the relevant standard bot documentation for help with the basics.
+
+The **Feature** column entries in the following table provide URLs to the standard bot documentation.
+
 The _Learn more_ links in the **Description** column refer to the universal bot documentation.
 
 
