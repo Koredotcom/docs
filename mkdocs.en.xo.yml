@@ -121,6 +121,7 @@ copyright: |
 nav:
   - Platform: index.md
   - Getting Started:
+    - Getting Started:
       - XO Platform:
         - Introduction to the Platform: virtual-assistants-overview.md
         - Access the Platform: virtual-assistants-overview.md   
