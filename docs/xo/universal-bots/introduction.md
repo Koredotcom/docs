@@ -3,8 +3,10 @@
 Kore.ai’s Universal Bots facilitate a scalable, modular approach to Bot building by helping you link several Bots into one.
 
 Universal Bot is a container bot that can be linked with one or more Standard Bots. When a user interacts with the Universal Bots, it routes the user utterance to the appropriate linked bot for intent detection or task fulfillment.
+!!! note
 
-**Note:** A universal Bot doesn’t own the linked bots, but it interprets the user utterances and maps them to the correct linked bots. The changes that you make to a linked bot task from inside the universal bot, such as training the task, are saved directly to the linked bot. Also, you cannot create any task for the universal bots except for customizing a default dialog task that gets created automatically with every universal bot.
+    A universal Bot doesn’t own the linked bots, but it interprets the user utterances and maps them to the correct linked bots. The changes that you make to a linked bot task from inside the universal bot, such as training the task, are saved directly to the linked bot. Also, you cannot create any task for the universal bots except for customizing a default dialog task that gets created automatically with every universal bot.
+
 
 
 ## **Highlights**
@@ -17,7 +19,7 @@ Universal Bot is a container bot that can be linked with one or more Standard Bo
 * The developer can **train the Universal bot** for identifying the relevant bots from a user utterance, using the ranking and disambiguation model. Universal Bot can be trained in three aspects:
     * Using example utterances like the Machine Learning model. This would help identify a set of linked bots as possible matches to the user utterance.
     * Invocation Names that would identify a specific linked bot from the user utterance.
-    * Invocation Phrases that would identify a specific intent in a specific bot from the user utterance. \
+    * Invocation Phrases that would identify a specific intent in a specific bot from the user utterance.
 [Refer here to know more](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/training-a-universal-bot/) about training a Universal Bot.
 * This trained Universal Bot can then be published so that when the end-users interact with Universal bot, it will perform **intent recognition across all linked bots** to understand the user’s intent and engage the appropriate bot to perform the task.
 * In the case of ambiguity in identifying an appropriate bot or task, a sub-dialog is initiated to obtain confirmation from the user.
@@ -33,9 +35,7 @@ The following flow chart shows the working of a Universal bot:
 
 ![alt_text](images/ub-process-flow-4.png "image_tooltip")
 
-![alt_text](images/image1.png "image_tooltip")
-
-		
+	
 
 The following is the explanation for the above process flow:
 
@@ -65,7 +65,7 @@ Older version universal bots will prompt you to **Upgrade** when:
 
 
 * you open the universal bot; or
-* when from the left navigation menu you access **Natural Language -> Training.**
+* when from the left navigation menu you access **Natural Language -> Training**.
 
 Once you upgrade, follow these steps to ensure that the user utterances are routed to the relevant linked bots:
 
