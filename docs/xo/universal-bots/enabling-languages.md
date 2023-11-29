@@ -29,9 +29,9 @@ Follow these steps to enable an additional language for a universal bot:
 4. Click the **Add Language** button from the top right.
 5. On the Add Language window, click **Configure **next to the language you want to.
 
-!!! note
+    !!! note
     
-    The language would be enabled only for the Universal Bot, ensure that this language is enabled and published in the linked bots as well. 
+        The language would be enabled only for the Universal Bot, ensure that this language is enabled and published in the linked bots as well. 
 
 
 
@@ -42,7 +42,7 @@ Follow these steps to enable an additional language for a universal bot:
 
     !!! note
     
-    If the language cannot be determined with high confidence, the bot requests the users to select their preferred language. The default language is used to communicate with the user during language preference selection.
+        If the language cannot be determined with high confidence, the bot requests the users to select their preferred language. The default language is used to communicate with the user during language preference selection.
 
 
 7. Click **Save**.
@@ -50,7 +50,7 @@ Follow these steps to enable an additional language for a universal bot:
 
 ### **Customizing Default Dialog**
 
-If the Kore.ai NLP engine cannot recognize the user intent, the universal bot responds to the users with the default dialog. You must create language-specific versions of the default dialog for each enabled language so that such bot responses go in the users’ preferred language. Otherwise, the universal bot responds applies the default bot language regardless of the user’s preferred language. \
+If the Kore.ai NLP engine cannot recognize the user intent, the universal bot responds to the users with the default dialog. You must create language-specific versions of the default dialog for each enabled language so that such bot responses go in the users’ preferred language. Otherwise, the universal bot responds applies the default bot language regardless of the user’s preferred language. 
  Follow these steps to open the language-specific default dialog:
 
 
