@@ -7,7 +7,7 @@ This article explains how to authorize and enable the **OpenAI** action and inst
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow OpenAI integration to exchange data. For more information, read the [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"} article.
+The Kore.ai XO Platform supports basic authentication to allow OpenAI integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authentication){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the OpenAI integration:
 
@@ -72,7 +72,7 @@ Steps to authorize an OpenAI action at a user level:
     * Click the **Select Authorization** drop-down and select the **Create New** option.  
     <img src="../images/open-ai-action-img5.png" alt="Create new Auth" title="Create new Auth" style="border: 1px solid gray;zoom:50%;"/>
 
-    * Select the type of authorization mechanism. For example, select the **API Key** option. To create Basic Auth profiles, read the [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"} article.  
+    * Select the type of authorization mechanism. For example, select the **API Key** option. To create Basic Auth profiles, read the [Bot Authorization Overview](../../../../dev-tools/bot-authentication){:target="_blank"} article.  
     <img src="../images/open-ai-action-img6.png" alt="Auth mechanism - API Key" title="Auth mechanism - API Key" style="border: 1px solid gray;zoom:50%;"/>
 
     * Enter the following authentication credentials for the Basic Auth mechanism:

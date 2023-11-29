@@ -43,7 +43,7 @@ See the following sections to understand more details.
 
 ## Utterance Testing
 
-[Utterance Testing](../../../automation/testing/testing-your-bot-with-nlp){:target="_blank"} also provides NLP Analysis. The **Matched Intents** and **Fields/Entities** tables that provide an easy way to update training data like synonyms, patterns, etc are not displayed if the Intent is identified on the external NLU engine.
+[Utterance Testing](../../../../automation/testing/testing-your-bot-with-nlp){:target="_blank"} also provides NLP Analysis. The **Matched Intents** and **Fields/Entities** tables that provide an easy way to update training data like synonyms, patterns, etc are not displayed if the Intent is identified on the external NLU engine.
 
 * If the intent is detected by an external engine, the utterance is not sent to the Kore.ai NLP engine.  
 <img src="../images/external-nlu-test-and-debug-img5.png" alt="Intent is detected by an external engine" title="Intent is detected by an external engine" style="border: 1px solid gray;zoom:50%;"/>
@@ -68,7 +68,7 @@ For example, irrespective of whether the expected intent is detected by the Exte
         There is no common base to compare the scores of all the engines, hence scores sent by the external NLU are not considered.
 
 
-For any intent detected by the external NLU, it should be considered that the thresholds have been met and in the ‘**Matched Intent Score**’ column, this is indicated as _ExtNLU (without any score against it)_ in place of ML, FM, or KG scores. This can be viewed in the downloaded CSV under NLU of Batch Testing. To know more, see [Batch Testing](../../../automation/testing/regression-testing/batch-testing){:target="_blank"}.
+For any intent detected by the external NLU, it should be considered that the thresholds have been met and in the ‘**Matched Intent Score**’ column, this is indicated as _ExtNLU (without any score against it)_ in place of ML, FM, or KG scores. This can be viewed in the downloaded CSV under NLU of Batch Testing. To know more, see [Batch Testing](../../../../automation/testing/regression-testing/batch-testing){:target="_blank"}.
 
 <img src="../images/external-nlu-test-and-debug-img9.png" alt="ExtNLU Matched intent score" title="ExtNLU Matched intent score" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -84,7 +84,7 @@ In Health and Monitoring go to **Test Cases —> Detailed Analysis** to see the 
 
 <img src="../images/external-nlu-test-and-debug-img10.png" alt="Intents and Entities identified by External NLU" title="Intents and Entities identified by External NLU" style="border: 1px solid gray;zoom:50%;"/>
 
-For more information, see [Virtual Assistant Health and Monitoring](../../../automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md){:target="_blank"}.
+For more information, see [Virtual Assistant Health and Monitoring](../../../../automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring){:target="_blank"}.
 
 
 ## NLP Insights
@@ -123,7 +123,7 @@ This list describes the conversation behavior while using external NLU adapter:
 
 
 * When external NLU is enabled, in the interruption handling only one behavior, “**Switch to a new task without any notification to the user and discard the current task**”, is supported. To know more information, see [Interruption Management Settings](https://developer.kore.ai/docs/bots/bot-intelligence/interruption-handling-context-switching-intents/#:~:text=To%20customize%20the%20Interruptions%20settings%20for%20a%20dialog%3A,and%20make%20the%20necessary%20configurations){:target="_blank"}.
-* If the external NLU API returns an error or the API cannot be reached, a fallback intent gets activated with the standard response as,_ Error in continuing the conversation due to incorrect bot definition._ To know more information, see [Standard Responses](https://developer.kore.ai/docs/bots/bot-intelligence/default-dialog/#Managing_Standard_Responses){:target="_blank"}.
+* If the external NLU API returns an error or the API cannot be reached, a fallback intent gets activated with the standard response as, _Error in continuing the conversation due to incorrect bot definition._ To know more information, see [Standard Responses](https://developer.kore.ai/docs/bots/bot-intelligence/default-dialog/#Managing_Standard_Responses){:target="_blank"}.
 
     !!! note
 
