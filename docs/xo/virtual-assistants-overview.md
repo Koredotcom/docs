@@ -1,5 +1,4 @@
-# **Virtual Assistants Overview**
-
+# Virtual Assistants Overview
 
 ## Introduction
 
