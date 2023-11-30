@@ -1,6 +1,6 @@
 <base target="_blank">
 
-# **Using Session and Context Variables in Tasks**
+# Using Session and Context Variables in Tasks
 
 When you define tasks, you can access session variables provided by the Bots Platform, or custom variables that you define, as well as the context object that defines the scope of the variable.
 

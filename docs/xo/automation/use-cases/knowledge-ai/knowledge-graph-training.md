@@ -1,4 +1,4 @@
-# **Knowledge Graph Training**
+# Knowledge Graph Training
 
 [Training your Assistant ](https://developer.kore.ai/docs/bots/nlp/optimizing-bots/)is not restricted to the Machine Learning and Fundamental Meaning engines. You must also train the Knowledge Graph (KG) engine, too.
 

@@ -1,4 +1,4 @@
-# **Import and Export a Knowledge Graph**
+# Import and Export a Knowledge Graph
 
 You can build a Knowledge Graph in a CSV or JSON file and upload it to a VA. Similarly, you can export the existing Knowledge Graph to CSV or JSON. Exporting a Knowledge Graph helps you edit it in a spreadsheet or import it to another VA.
 

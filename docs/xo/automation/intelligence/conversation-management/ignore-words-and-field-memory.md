@@ -1,4 +1,4 @@
-# **Ignore Words and Field Memory**
+# Ignore Words and Field Memory
 
 Developers can include words for the NLP engine to ignore when interpreting the user input for a task. Assistants can then respond faster to user input and improve the probability of correct task recognition. The NLP engine comes pre-built with a large set of generic ignore words.
 
