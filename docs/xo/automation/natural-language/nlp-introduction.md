@@ -1,4 +1,4 @@
-# **Natural Language Processing**
+# Natural Language Processing
 
 Conversational VAs enable machines to interact organically with users and deliver high-quality customer experiences. The key for a conversational VA to understand human interactions lies in its ability to identify the user’s intention (Intent Detection), extract useful information (Entity Extraction), and map them to relevant actions or tasks (Dialog Task execution). 
 

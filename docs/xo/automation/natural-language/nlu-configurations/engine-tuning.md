@@ -1,4 +1,4 @@
-# **NLP Engine Tuning and Advanced Configurations**
+# NLP Engine Tuning and Advanced Configurations
 
 You can fine-tune intent detection for each language enabled for your Virtual Assistant (VA). To perform this action, follow the below steps:
 

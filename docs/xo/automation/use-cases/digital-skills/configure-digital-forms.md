@@ -1,4 +1,4 @@
-# **Configure Digital Forms**
+# Configure Digital Forms
 
 In this How-To, we will explore a scenario in a Banking Bot, where the user can create an additional account. We will see how Digital Forms can be used to gather all the required information from the user and create the account.
 

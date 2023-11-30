@@ -1,4 +1,4 @@
-# **Manage FAQs**
+# Manage FAQs
 
 FAQs allow you to add question-answer sets to your Knowledge Graph and map them to related ontology terms. This feature improves intent recognition and increases the performance of your VA.
 
