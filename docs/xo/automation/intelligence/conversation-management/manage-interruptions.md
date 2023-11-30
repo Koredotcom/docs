@@ -1,4 +1,4 @@
-# **Manage Interruptions**
+# Manage Interruptions
 
 Human conversations are characterized by twists and turns, and no two directions are ever the same. Natural conversations often tend to go beyond linear intent resolution paths defined in virtual assistants. Ideally, a user allows the VA to take an intent to its logical conclusion before initiating another, but that is not always the case.
 

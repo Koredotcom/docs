@@ -1,4 +1,4 @@
-# **Multi-Intent Detection**
+# Multi-Intent Detection
 
 Kore.ai’s NLP engine breaks conversations down to their essence, identifies and follows-up on multiple action items, or intents, from a single message. The virtual assistant can then execute tasks in a sequential and logical manner.
 

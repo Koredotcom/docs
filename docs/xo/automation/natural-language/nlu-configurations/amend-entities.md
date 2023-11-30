@@ -1,4 +1,4 @@
-# **Amend Entities**
+# Amend Entities
 
 Time and again, we come across situations wherein the users change their preferences during task execution.
 

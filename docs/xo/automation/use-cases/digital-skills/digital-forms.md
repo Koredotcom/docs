@@ -1,4 +1,4 @@
-# **Digital Forms**
+# Digital Forms
 
 Virtual Assistants engage end-users primarily using a conversational interface that typically includes an exchange of a series of messages. But oftentimes, there is a need to gather information from the end-user to proceed further. Examples include providing delivery address while interacting with an eCommerce agent, details of an issue while reporting to ITSM agent, opportunity details while creating a CRM opportunity, capturing customer details to book a flight, etc.
 

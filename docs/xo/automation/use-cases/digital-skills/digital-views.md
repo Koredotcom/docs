@@ -1,4 +1,4 @@
-# **Digital Views**
+# Digital Views
 
 Interactions with Virtual Assistants are typically conducted using chat/messaging tools, voice channels, or other types of assistants. In the majority of the cases, the Virtual Assistants respond to the user queries only when the users have requested some information. This works well for conducting on-demand tasks that need user input for execution and the result is usually a short response, confirmation, or acknowledgment. But the need for more proactive user updates and less user input through an engaging interface has become a key requirement. 
 
