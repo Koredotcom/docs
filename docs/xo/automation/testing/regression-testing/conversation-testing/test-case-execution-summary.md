@@ -27,9 +27,9 @@ Follow these steps for test execution:
 3. You can monitor the progress of the test suite in the **Result** column and the status docker. The Result column displays the **Passed** or **Failed** status upon successful execution.  
 <img src="../images/tces-img4.png" alt="Result" title="Result" style="border: 1px solid gray;zoom:50%;"/>
 
-When a test case is executed, the test case result is determined with the features like assertions, dynamic texts, OneOf, and so on. To know more, see [Test Case Assertion](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/test-case-assertion).
+When a test case is executed, the test case result is determined with the features like assertions, dynamic texts, OneOf, and so on. To know more, see [Test Case Assertion](../test-case-assertion){:target="_blank"}.
 
-The platform simulates all the user inputs against the current VA definition in sequence, as available in the test case. For every user input, the VA’s responses are captured along with the metadata. See Capture Test Suite Metadata under [Validate Test Suite](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/create-a-test-suite/#validate-test-suite) to know more.
+The platform simulates all the user inputs against the current VA definition in sequence, as available in the test case. For every user input, the VA’s responses are captured along with the metadata. See Capture Test Suite Metadata under [Validate Test Suite](../create-a-test-suite/#validate-test-suite){:target="_blank"} to know more.
 
 
 ### Test Assertions Execution
@@ -41,17 +41,21 @@ The platform performs the assertions tagged to each VA response of a test case. 
 #### Flow Assertion
 
 * For any VA response in a test case, the assertion is determined as pass when the following conditions are true:
+
     * The Intent ID of the Expected and Actual responses is the same.
     * The Node ID of the Expected and Actual responses is the same.
     * The Transition(s) of the Expected and Actual responses are the same.
     * The Prompt type (Error or User Prompt) is the same in case of Entity nodes.
+
 * If the above conditions are not met, the assertion is determined as Failed.
 
 
 #### Text Assertion
 
 * For any VA response in a test case, the assertion is determined as passed when the following condition is true:
+
     * The expected and actual responses are the same (string comparison).
+
 * Dynamic text values are not considered when performing the comparison.
 * In case of multiple responses in the Expected Output (when a node has multiple variations), one of the expected responses must match for the assertion to pass.
 
@@ -59,8 +63,10 @@ The platform performs the assertions tagged to each VA response of a test case. 
 #### Context Assertion
 
 * For any VA response in a test case, the context assertion is determined as passed when the following conditions are true:
+
     * The expected and actual values are the same for the added context variable.
     * A VA response has multiple context assertions and multiple context assertion results.
+
 * A context assertion fails if the expected value and the actual value of the variable are not the same.
 
 !!! note
@@ -88,6 +94,7 @@ The following steps show how to access the test result summary and the details d
 
 
 3. The test result summary is displayed with the following details:
+
     * Total test cases
     * Breakdown of Passes, Failed, and Not Executed test cases
     * Duration of test case execution

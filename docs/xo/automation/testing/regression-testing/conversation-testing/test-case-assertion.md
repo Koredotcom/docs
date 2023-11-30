@@ -28,12 +28,12 @@ If the virtual assistant’s response is from a Dialog node, then the following 
 
         <img src="../images/tca-img2.png" alt="Text Assertion" title="Text Assertion" style="border: 1px solid gray;zoom:50%;"/>  
       
-    **Note:** In case of text assertion, if the expected output has dynamic values, then it should be annotated using [Dynamic Text Marking](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/test-case-assertion/#dynamic-text-marking). If not marked, the text assertion fails and eventually leads to failure of the test case. For the test case to pass, the text for that specific output must be dynamically marked.  
+    **Note:** In case of text assertion, if the expected output has dynamic values, then it should be annotated using [Dynamic Text Marking](#dynamic-text-marking). If not marked, the text assertion fails and eventually leads to failure of the test case. For the test case to pass, the text for that specific output must be dynamically marked.  
       
     For example, in the following test case, the city name entered by the user can be different every time. It is marked as dynamic for that specific test case to pass.  
     <img src="../images/tca-img3.png" alt="Example-Test case details" title="Example-Test case details" style="border: 1px solid gray;zoom:50%;"/>  
       
-    The test case and text assertion can be seen as passed in the [Result Summary](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/test-case-execution-summary/#result-summary). If the text is not marked as dynamic, the test case would fail.  
+    The test case and text assertion can be seen as passed in the [Result Summary](../test-case-execution-summary/#result-summary){:target="_blank"}. If the text is not marked as dynamic, the test case would fail.  
     <img src="../images/tca-img4.png" alt="Result summary" title="Result summary" style="border: 1px solid gray;zoom:50%;"/>
 
 * **Context Assertion:** A context assertion can be used to test the presence of specific context variables during a conversation. By using a context assertion, you can verify that the correct context variables are present at a specific point in the conversation, which can be helpful for ensuring the smooth and successful execution of the conversation flow.  
@@ -90,9 +90,9 @@ This section explains how to access the Test Coverage and its details.
 
 On the Conversation Testing landing page, in the **Test Suite Details** grid, click any Test Suite and then click the **Test Coverage** tab. Test Coverage contains the following three sub-tabs:
 
-  * [Dialog Intents](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/test-case-execution-summary/#dialog-intents)
-  * [FAQs](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/test-case-execution-summary/#faqs)
-  * [Small Talks](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/test-case-execution-summary/#small-talks)
+  * [Dialog Intents](../test-case-execution-summary/#dialog-intents){:target="_blank"}
+  * [FAQs](../test-case-execution-summary/#faqs){:target="_blank"}
+  * [Small Talks](../test-case-execution-summary/#small-talks){:target="_blank"}
 
 
 ### Dialog Intents
@@ -169,7 +169,7 @@ All the Small Talks covered in the test cases are displayed in this tab in two c
   * Pattern  
   * Group
 
-To know more about Patterns and Groups, see [Small Talk](https://developer.kore.ai/docs/bots/bot-builder-tool/small-talk/).
+To know more about Patterns and Groups, see [Small Talk](https://developer.kore.ai/docs/bots/bot-builder-tool/small-talk/){:target="_blank"}.
 
 <img src="../images/tca-img17.png" alt="Small talk" title="Small talk" style="border: 1px solid gray;zoom:50%;"/>
 
