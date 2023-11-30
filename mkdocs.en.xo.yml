@@ -146,7 +146,7 @@ nav:
       - Automations FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
       - Contact Center FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/   
   - Modules:
-    - Conversation Automation:
+    - Automations:
       - Design:
         - Dialogs: getting-started.md 
         - Knowledge AI: getting-started.md
@@ -220,7 +220,7 @@ nav:
   - Integrations:
     - Overview: whats-new/whats-new-in-this-release.md
     - Release notes: whats-new/whats-new-in-this-release.md   
-  - APIs & SDKs:
+  - APIs:
     - reference/index.md
     - Debug Logs API: API/debug-logs-api.md
     - Outbound Calling API: API/outbound-calling-api.md
