@@ -145,10 +145,82 @@ nav:
     - FAQs: 
       - Automations FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
       - Contact Center FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/   
+  - Modules:
+    - Conversation Automation:
+      - Design:
+        - Dialogs: getting-started.md 
+        - Knowledge AI: getting-started.md
+        - Small Talk: automation/use-cases/small-talk.md
+        - Digital Skills: 
+          - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
+          - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
+          - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
+          - Digital Views: automation/use-cases/digital-skills/digital-views.md
+          - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md
+        - Feedback Survey: automation/use-cases/feedback-surveys.md
+      - Training:
+        - Natural Language Processing:
+          - Overview: automation/natural-language/nlp-introduction.md
+          - NLP Guidelines: automation/natural-language/nlp-guidelines.md
+        - Introduction: automation/natural-language/training/nlp-training-overview.md
+        - Intents: getting-started.md 
+        - Entities: getting-started.md 
+        - Bot Synonyms: getting-started.md
+        - Traits: getting-started.md
+        - Fields: getting-started.md
+      - NLU Configuration: 
+        - Engine Tuning: automation/natural-language/nlu-configurations/engine-tuning.md
+        - Amend Entity: automation/natural-language/nlu-configurations/amend-entities.md
+        - Multi Intent Detect: automation/natural-language/nlu-configurations/multi-intent-detection.md
+      - Events: 
+        - Intent Events: getting-started.md 
+        - conversation Events: getting-started.md 
+        - Sentiment Events: getting-started.md
+      - Conversation Management: 
+        - Standard Responses: getting-started.md 
+        - Manage Interruptions: getting-started.md 
+        - Ignore Words and Field Memory: getting-started.md 
+      - Regression Testing: 
+        - Health and Monitoring: getting-started.md 
+        - Batch Testing: getting-started.md
+        - Conversation Testing: getting-started.md
+    - Answers:
+      - Design:
+        - Dialogs: getting-started.md 
+        - Knowledge AI: getting-started.md
+        - Small Talk: automation/use-cases/small-talk.md
+        - Digital Skills: 
+          - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
+          - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
+          - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
+          - Digital Views: automation/use-cases/digital-skills/digital-views.md
+          - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md
+    - AgentAssist:
+      - Design:
+        - Dialogs: getting-started.md 
+        - Knowledge AI: getting-started.md
+        - Small Talk: automation/use-cases/small-talk.md
+        - Digital Skills: 
+          - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
+          - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
+          - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
+          - Digital Views: automation/use-cases/digital-skills/digital-views.md
+          - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md
+    - Contact Center:
+      - Design:
+        - Dialogs: getting-started.md 
+        - Knowledge AI: getting-started.md
+        - Small Talk: automation/use-cases/small-talk.md
+        - Digital Skills: 
+          - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
+          - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
+          - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
+          - Digital Views: automation/use-cases/digital-skills/digital-views.md
+          - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md      
   - Integrations:
     - Overview: whats-new/whats-new-in-this-release.md
     - Release notes: whats-new/whats-new-in-this-release.md   
-  - APIs:
+  - APIs & SDKs:
     - reference/index.md
     - Debug Logs API: API/debug-logs-api.md
     - Outbound Calling API: API/outbound-calling-api.md
