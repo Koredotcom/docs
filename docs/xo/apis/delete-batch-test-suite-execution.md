@@ -1,5 +1,5 @@
 
-# **Delete Batch Test Suite Execution API**
+# Delete Batch Test Suite Execution API
 
 To delete a specific execution of a Batch Test Suite.
 

@@ -1,4 +1,4 @@
-# **Publish Bot API**
+# Publish Bot API
 
 To initiate a publish request for a bot.
 

@@ -1,6 +1,4 @@
-
-
-# **Conversation Test Suite Creation Status API**
+# Conversation Test Suite Creation Status API
 
 To get the creation/import request status of the Conversation Test Suite against a unique Import ID and provide the download link for the results file after the test execution is complete. Please refer to [Create (Import) a Test Suite API ](https://developer.kore.ai/docs/bots/api-guide/create-a-test-suite-api/) to learn more.
 

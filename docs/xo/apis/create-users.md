@@ -1,4 +1,4 @@
-# **Create User API**
+# Create User API
 
 To add users to an account.
 

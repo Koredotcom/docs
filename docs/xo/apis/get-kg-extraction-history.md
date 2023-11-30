@@ -1,4 +1,4 @@
-# **Get Extractions History – KG**
+# Get Extractions History – KG
 
 To get the KG extractions’ history as a list.
 

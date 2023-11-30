@@ -1,5 +1,5 @@
 
-# **Get KnowledgeTasks – KG**
+# Get KnowledgeTasks – KG
 
 To get the list of knowledge Tasks along with the nodes.
 

@@ -1,4 +1,4 @@
-# **Get Groups API**
+# Get Groups API
 
 To get the list of groups and group members available in the account.
 

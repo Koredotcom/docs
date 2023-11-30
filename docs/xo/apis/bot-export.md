@@ -1,4 +1,4 @@
-# **Bot Export API**
+# Bot Export API
 
 To export the bot definition and all the associated components.
 

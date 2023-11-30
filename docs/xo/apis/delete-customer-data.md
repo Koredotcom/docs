@@ -1,4 +1,4 @@
-# **Delete Customer Data API**
+# Delete Customer Data API
 
 Used to delete customer data.
 

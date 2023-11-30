@@ -1,5 +1,5 @@
 
-# **Get User Information**
+# Get User Information
 
 To retrieve the user details.
 

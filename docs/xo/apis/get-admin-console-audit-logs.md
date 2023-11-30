@@ -1,4 +1,4 @@
-# **Get Admin Console Audit Logs API**
+# Get Admin Console Audit Logs API
 
 To retrieve the audit logs from the Bot Admin Console.
 

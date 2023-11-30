@@ -1,4 +1,4 @@
-# **Get ChangeLogs API**
+# Get ChangeLogs API
 
 To get the list of changes made to the bot definition for a given date period.
 

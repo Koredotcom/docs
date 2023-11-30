@@ -1,4 +1,4 @@
-# **Bot Export – Status API**
+# Bot Export – Status API
 
 Gets the status of Bot Export request and also provides the download link of the bot export copy after the export is completed. Refer here for initiating [Bot Export API](https://developer.kore.ai/docs/bots/api-guide/bot-export-api/).
 
