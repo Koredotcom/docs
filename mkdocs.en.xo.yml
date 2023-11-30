@@ -245,7 +245,7 @@ nav:
       - Dashboard Filters: analytics/dashboard-filters.md
       - Changelog: insiders/changelog.md
   - Administration:
-    - Conversation Automation:
+    - Temp:
       - Design:
         - Dialogs: getting-started.md 
         - Knowledge AI: getting-started.md
