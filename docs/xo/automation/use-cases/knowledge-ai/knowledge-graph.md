@@ -95,3 +95,46 @@ The available term types are:
 * **Mandatory**: When you mark a term as Mandatory, all paths associated with the term are shortlisted for ranking only if the user’s utterance includes the mandatory term or its synonyms.
 * **Organizer**: Term can be marked as being a part of the Knowledge Graph only for organizing questions (this option is available only for terms, not tags).
 <img src="../../images/term-types.png" alt="term types" title="term types" style="border: 1px solid gray; zoom:75%;">
+
+### Tags
+
+When you type a question in the Intent Name **Add Question** field, the Knowledge Graph suggests some tags that you can add to the graph based on the text. To include a suggested term to the path, select the tag from the drop-down list that appears when the cursor is in the Add Term field. You can also add custom tags by typing them in the add term field and hitting the Enter/Return key.
+
+<img src="../../images/term-field-custom-tag.png" alt="term field custom tag" title="term field custom tag" style="border: 1px solid gray; zoom:75%;">
+
+After you add a tag, it is visible below the question like a tag everywhere the question appears. Tags work exactly like terms but are not displayed in the Knowledge Graph to avoid clutter. 
+
+## Synonyms
+
+You can add multiple synonyms for each term in your Knowledge Graph, making the path discoverable for varied user utterances. You can add synonyms for a term from the term’s  Settings window.
+
+When you add a synonym for a term in the Knowledge Graph, you can add them as local (Path Level) or global (Knowledge Graph level) synonyms.
+
+**Local Synonyms** apply to the term only in that particular path, whereas **Global Synonyms** apply to the term even if it appears on any other path in the hierarchy.
+
+To add synonyms for a term, follow the below steps:
+
+1. On the top left of the VA’s Knowledge Graph, **hover over the node/term** for which you want to add synonyms.
+2. Click the **gear icon** to open the Settings window.
+3. To add **synonyms**,  do the following:
+    * To add local synonyms, type them in the box under **Path Level Synonyms**.
+
+      <img src="../../images/path-level-synonyms.png" alt="path level synonyms" title="path level synonyms" style="border: 1px solid gray; zoom:75%;">
+
+    * To add Global synonyms, click **Edit** then **Add** under **Knowledge Graph Synonyms** and enter them.
+    <div class="admonition note">
+    <p class="admonition-title">Note</p>
+    <p>Press Enter after typing each synonym in the Synonyms box. If you type multiple synonyms without pressing Enter after each synonym, all the synonyms are considered as a single entity, even if they are separated by spaces.</p>
+    
+   <img src="../../images/add-global-synonyms.png" alt="add global synonyms" title="add global synonyms" style="border: 1px solid gray; zoom:75%;"></div>
+
+   <div class="admonition note">
+   <p class="admonition-title">Note</p>
+   <p>These Knowledge Graph Synonyms can also be accessed from the Manage Synonyms option under the more options icon on the top-right of the Knowledge Graph page.</p>
+   <img src="../../images/manage-synonyms.png" alt="manage synonyms" title="manage synonyms" style="border: 1px solid gray; zoom:75%;"></div>
+
+<ol start="4"><li>You can use <b>Bot Synonyms</b> in the identification of KG terms. This option can be enabled either from the <a href="https://developer.kore.ai/docs/bots/nlp/knowledge-graph/#Threshold_Configurations">Threshold and Configurations</a> or from <b>More Options</b> > <b>Manage Synonyms</b>.
+<p>Once enabled, the bot-level synonyms that match with KG terms (or tags) are automatically displayed under the Bot Synonyms heading in the <b>Synonyms</b> section and are used by the KG engine. The Bot Synonyms are used similar to that of KG graph level synonyms, for path qualification and for question matching. When a node matches both with a bot synonym and a bot concept, the bot concept takes priority.</p></li>
+<li>To add synonyms for a child node, enter them in the Synonyms box next to the <b>Child Terms</b> listed at the bottom of the settings window.
+
+<img src="../../images/child-synonyms-terms.png" alt="child synonyms terms" title="child synonyms terms" style="border: 1px solid gray; zoom:75%;"></li></ol>
