@@ -1,6 +1,6 @@
 # ML Utterances Export API
 
-To export the ML utterances of a bot by creating a _request ID_ to generate the download link of the bot using the [ML Utterance Export Status API](ml-utterances-export-status.md).
+To export the ML utterances of a bot by creating a _request ID_ to generate the download link of the bot using the [ML Utterance Export Status API](../ml-utterances-export-status).
 
 
 <table>

@@ -4,8 +4,6 @@ Proactive Notifications allow enterprises to engage with their end users (custom
 
 Proactive notification includes:
 
-
-
 * Nudge the employees to reset their password before it expires in certain days
 * Remind users to submit expense reports.
 * Inform customers about their order status.
