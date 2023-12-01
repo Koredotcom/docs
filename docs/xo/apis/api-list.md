@@ -8,11 +8,11 @@ Based on the functionality addressed, the APIs can be categorized as:
 
 
 
-1. APIs related to the Bot Definition functionality, [more](../api-list#bot-definition-apis)
-2. APIs related to NLP training, [more](../api-list#nlp-training-apis)
-3. APIs aiding in Analyzing the performance and behavior, [more](../api-list##analytics-apis)
+1. APIs related to the Bot Definition functionality, [more](#bot-definition-apis)
+2. APIs related to NLP training, [more](#nlp-training-apis)
+3. APIs aiding in Analyzing the performance and behavior, [more](#analytics-apis)
 4. APIs related to the Admin Console functionality, [more](../api-list#admin-apis)
-5. APIs related to the data access from Data Tables, [more](../api-list##data-data-table-access-apis)
+5. APIs related to the data access from Data Tables, [more](#data-data-table-access-apis)
 
 !!!note
     All the APIs have rate limits to manage the usage. If the rate limit is exceeded, an API call fails with the following error message – “_Rate limit for this API has been reached. Please try again after some time._”
