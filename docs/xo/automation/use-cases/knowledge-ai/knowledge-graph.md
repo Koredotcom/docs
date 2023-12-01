@@ -143,21 +143,9 @@ To create a trait, follow the below steps:
 
 <ol><li>On the top-right of the Knowledge Graph window, click the <b>more options icon</b> and then select <b>Manage Traits</b>.
 <img src="../../images/manage-traits.png" alt="manage traits" title="manage traits" style="border: 1px solid gray; zoom:75%;"></li>
-<li>On the Manage Traits window, click <b>New Trait</b>.</li>
+<li>On the Manage Traits window, click <b>New Trait</b>.
+</li>
 <li>In the <b>Trait Type</b> and <b>Trait Name</b> field, enter a relevant name for the trait. For example, <i>Flight Fare</i>.</li>
 <li>In the <b>Utterances</b> field, enter all the utterances that you want to include in the trait. Examples of the <i>Issues</i> trait: <i>First Class, Premium Economy, Economy,</i> etc.</li>
 <li>Click <b>Save & Add Rule</b> or <b>Save & Exit</b>.
 <img src="../../images/add-traits-save-and-add-rules.png" alt="save and add rule" title="save and add rule" style="border: 1px solid gray; zoom:75%;"></li></ol>
-
-After you create a trait, you can assign it to multiple nodes in the Knowledge Graph.
-
-To add a trait to a node/term, follow the below steps:
-
-1. On the top-left of your Knowledge Graph, hover over the **terms** to which you want to add the trait.
-2. Click the **gear icon** to open the **Settings** window.
-3. Select the name of a trait from the **Trait** dropdown list and click **Save**.
-
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-Adding a trait to a node doesn't add it to other nodes with the same name. You must add traits to each relevant node separately.</div>
-<img src="../../images/add-term-traits.png" alt="add term traits" title="add term traits" style="border: 1px solid gray; zoom:75%;">
