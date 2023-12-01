@@ -158,14 +158,14 @@ nav:
       - Feedback Survey: automation/use-cases/feedback-surveys.md
     - Training:
       - Natural Language Processing:
-       - Overview: automation/natural-language/nlp-introduction.md
-       - NLP Guidelines: automation/natural-language/nlp-guidelines.md
-       - Introduction: automation/natural-language/training/nlp-training-overview.md
-       - Intents: getting-started.md 
-       - Entities: getting-started.md 
-       - Bot Synonyms: getting-started.md
-       - Traits: getting-started.md
-       - Fields: getting-started.md
+        - Overview: automation/natural-language/nlp-introduction.md
+        - NLP Guidelines: automation/natural-language/nlp-guidelines.md
+        - Introduction: automation/natural-language/training/nlp-training-overview.md
+        - Intents: getting-started.md 
+        - Entities: getting-started.md 
+        - Bot Synonyms: getting-started.md
+        - Traits: getting-started.md
+        - Fields: getting-started.md
     - NLU Configuration: 
       - Engine Tuning: automation/natural-language/nlu-configurations/engine-tuning.md
       - Amend Entity: automation/natural-language/nlu-configurations/amend-entities.md
