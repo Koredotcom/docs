@@ -34,7 +34,7 @@ When you test an utterance, the NLP engine tries to identify an intent using the
 
 * [Machine Learning](https://developer.kore.ai/docs/bots/nlp/user-utterances/){:target="_blank"} engine, 
 * [Fundamental Meaning](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/){:target="_blank"} engine,
-* [Knowledge AI](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ai-overview/), including the [Knowledge Graph]((../../use-cases/knowledge-ai/knowledge-graph-training)){:target="_blank"} engine and the [Answer from Documents](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/){:target="_blank"} feature,
+* [Knowledge AI](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ai-overview/), including the [Knowledge Graph](../../use-cases/knowledge-ai/knowledge-graph-training){:target="_blank"} engine and the [Answer from Documents](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/){:target="_blank"} feature,
 * [Ranking and Resolver](https://developer.kore.ai/docs/bots/nlp/nlp-detection/){:target="_blank"}.
 
 
@@ -321,7 +321,7 @@ If you want the assistant to respond to user utterance with FAQs there are two w
 
 * set the terms, term configuration, or classes from the FAQ page, train the KG and retest the utterance.
 * add the utterance as an alternate question to the selected FAQ from the Knowledge Graph page, train the KG and retest the utterance.
-[Know more about Knowledge Graph Training]((../../use-cases/knowledge-ai/knowledge-graph-training)){:target="_blank"}.
+[Know more about Knowledge Graph Training](../../use-cases/knowledge-ai/knowledge-graph-training){:target="_blank"}.
 
 
 
