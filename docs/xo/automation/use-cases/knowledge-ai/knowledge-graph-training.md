@@ -130,6 +130,7 @@ To add synonyms for a term, follow the below steps:
 Once enabled, the bot-level synonyms that match with KG terms (or tags) are automatically displayed under the Bot Synonyms heading in the <b>Synonyms</b> section and are used by the KG engine. The Bot Synonyms are used similar to that of KG graph-level synonyms, for path qualification and for question matching. 
 
 When a node matches both with a bot synonym and a bot concept, the bot concept takes priority.
+
 5. To add synonyms for a child node, enter them in the Synonyms box next to the <b>Child Terms</b> listed at the bottom of the settings window.
 <img src="../../images/child-synonyms-terms.png" alt="child synonyms terms" title="child synonyms terms" style="border: 1px solid gray; zoom:75%;">
 
