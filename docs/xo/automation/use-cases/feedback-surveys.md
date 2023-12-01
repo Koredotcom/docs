@@ -1,4 +1,4 @@
-# **Feedback Survey**
+# Feedback Survey
 
 The XO Platform allows you to design and create feedback surveys for products, services, and overall experiences using out-of-the-box templates on the web and mobile channels. 
 

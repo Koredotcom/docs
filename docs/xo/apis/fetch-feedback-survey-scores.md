@@ -1,4 +1,4 @@
-# **Feedback Survey API**
+# Feedback Survey API
 
 To fetch the feedback survey scores provided by the user in the conversation with a virtual assistant and push the data for visualization on the **Feedback Analytics** module using the **_Survey Type_** and **_Survey Name_**.
 

@@ -1,4 +1,4 @@
-# **Update NLP Configurations**
+# Update NLP Configurations
 
 To update the NLP thresholds and configurations.
 

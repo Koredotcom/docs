@@ -1,4 +1,4 @@
-# **Configuring the DHL Action**
+# Configuring the DHL Action
 
 The Kore.ai XO Platform lets you easily connect your DHL instance to find information regarding DHL Locations and Track Shipments.
 

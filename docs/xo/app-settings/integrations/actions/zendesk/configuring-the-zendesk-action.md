@@ -1,4 +1,4 @@
-# **Configuring the Zendesk Action**
+# Configuring the Zendesk Action
 
 The XO Platform lets you easily connect with your Zendesk instance to create, view, update, search, and delete tickets using the pre-built templates. [Learn more about Zendesk](https://developer.zendesk.com/documentation/){:target="_blank"}.
 

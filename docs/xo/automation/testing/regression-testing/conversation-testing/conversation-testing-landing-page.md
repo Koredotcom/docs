@@ -1,5 +1,5 @@
 
-# **Conversation Testing Overview**
+# Conversation Testing Overview
 
 Conversation Testing enables you to simulate end-to-end conversational flows to evaluate the dialog task execution or perform regression. You can create Test Suites to capture various business scenarios and run them at a later time to validate the assistant’s performance.
 
@@ -41,9 +41,3 @@ The Conversation Testing allows you to capture the flow, track the executed node
 * [Test Case Assertion](../test-case-assertion/){:target="_blank"}
 * [Test Case Execution Summary](../test-case-execution-summary/){:target="_blank"}
 
-
-<p>
-
-[Previous](../../batch-testing){:target="_blank"} <pre> <pre> [Next](../create-a-test-suite"){:target="_blank"}
-
-</p>

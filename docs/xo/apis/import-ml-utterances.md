@@ -1,5 +1,5 @@
 
-# **ML Utterances Import API**
+# ML Utterances Import API
 
 To import the ML Utterances into a bot.
 

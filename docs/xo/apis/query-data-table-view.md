@@ -1,4 +1,4 @@
-# **Query Data (View) API**
+# Query Data (View) API
 
 Used to get data from Table View.
 

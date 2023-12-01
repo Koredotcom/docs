@@ -1,4 +1,4 @@
-# **Data Update API**
+# Data Update API
 
 Used to update data into Data Table.
 

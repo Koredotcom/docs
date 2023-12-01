@@ -1,5 +1,5 @@
 
-# **Assign Admin Roles API**
+# Assign Admin Roles API
 
 To add or remove users or groups from admin roles.
 

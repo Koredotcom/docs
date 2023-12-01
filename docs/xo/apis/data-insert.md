@@ -1,4 +1,4 @@
-# **Data Insert API**
+# Data Insert API
 
 Used to insert data into Data Table.
 

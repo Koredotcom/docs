@@ -1,4 +1,4 @@
-# **Using the HubSpot Action Templates**
+# Using the HubSpot Action Templates
 
 You can use the **Prebuilt Action Templates** from your HubSpot integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 

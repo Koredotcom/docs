@@ -1,4 +1,4 @@
-# **Bot Functions**
+# Bot Functions
 
 Bot Functions is a feature that uses a custom Script file that enables you to collate and manage reusable utility JavaScript functions that can be used by different tasks, nodes, and other elements. Once you upload a custom script file to the assistant, it reduces the redundant development efforts by making all the functions in the file accessible anywhere in the assistant.
 

@@ -1,4 +1,4 @@
-# **Configuring the Azure OpenAI Action**
+# Configuring the Azure OpenAI Action
 
 The XO Platform lets you easily connect with the Azure OpenAI instance to find answers to your general queries. The Platform supports all common actions on Azure with ready-to-use pre-built dialog templates.
 

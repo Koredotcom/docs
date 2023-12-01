@@ -1,4 +1,4 @@
-# **Create a Test Suite**
+# Create a Test Suite
 
 A Test Suite contains a collection of test cases grouped to simulate a specific conversation between the user and the bot and used anytime for test execution. You can know the execution status and determine and analyze the results in a test suite.
 

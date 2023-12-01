@@ -1,5 +1,5 @@
 
-# **Configuring the Asana Action**
+# Configuring the Asana Action
 
 The Kore.ai XO Platform lets you easily connect with your Asana instance to find information regarding projects, users, and tasks. [Learn more about Asana](https://asana.com/){:target="_blank"}.
 

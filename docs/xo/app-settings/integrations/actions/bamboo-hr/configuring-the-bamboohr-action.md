@@ -1,4 +1,4 @@
-# **Configuring the BambooHR Action**
+# Configuring the BambooHR Action
 
 The XO Platform lets you easily connect the HubSpot integration to create, view, and update employees. You can also search and view time off requests, who is out and update request status using the pre-built templates. 
 

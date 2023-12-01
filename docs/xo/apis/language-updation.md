@@ -1,4 +1,4 @@
-# **Language Updation API**
+# Language Updation API
 
 To update for an existing language’s configuration for a virtual assistant.
 
