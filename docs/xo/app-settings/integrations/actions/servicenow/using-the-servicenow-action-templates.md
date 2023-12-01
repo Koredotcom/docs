@@ -1,4 +1,4 @@
-# **Using The ServiceNow Action Templates**
+# Using The ServiceNow Action Templates
 
 You can use the **Prebuilt Action Templates** from your ServiceNow integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 

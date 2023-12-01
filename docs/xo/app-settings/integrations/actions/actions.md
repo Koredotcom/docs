@@ -1,6 +1,4 @@
-# **Actions**
-
-<base target="_blank">
+# Actions
 
 The Kore.ai XO Platform offers pre-built integrations with popular business applications to exchange data. You can configure and enable actions for Service Now, Salesforce, Zendesk, Hubspot, and others. Each of these integrations provides a full conversation flow definition, a low-code interface for API integration, and pre-built response mapping and create dialog tasks with pre-built templates without need to worry about developer assistance.
 

@@ -1,4 +1,4 @@
-# **Redacting Personally Identifiable Information**
+# Redacting Personally Identifiable Information
 
 Personally identifiable information (PII), or sensitive personal information (SPI), refers to information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Some examples of PII include Social Security Number, email address, credit card numbers, passport number, home address, and so forth.
 

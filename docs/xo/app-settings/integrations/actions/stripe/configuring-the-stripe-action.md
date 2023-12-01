@@ -1,4 +1,4 @@
-# **Configuring the Stripe Action**
+# Configuring the Stripe Action
 
 The XO Platform lets you easily connect the Stripe integration and APIs to accept payments, send payouts, and manage the Stripe payment to complete payment-related tasks.
 

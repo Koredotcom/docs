@@ -1,4 +1,4 @@
-# **Configuring the Freshservice ITSM Action**
+# Configuring the Freshservice ITSM Action
 
 The XO Platform lets you easily connect the Freshservice integration to allow you to create, view, update, and delete tickets in the system to manage your IT services. Click the [Freshservice](https://www.freshworks.com/freshservice/){:target="_blank"} link to learn more.
 

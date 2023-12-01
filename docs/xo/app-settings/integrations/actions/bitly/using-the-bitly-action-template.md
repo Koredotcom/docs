@@ -1,4 +1,4 @@
-# **Using the Bitly Action Template**
+# Using the Bitly Action Template
 
 You can use the **Prebuilt Action Templates **from your Bitly integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 
