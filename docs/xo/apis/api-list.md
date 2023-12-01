@@ -8,11 +8,11 @@ Based on the functionality addressed, the APIs can be categorized as:
 
 
 
-1. APIs related to the Bot Definition functionality, [more](api-list#Bot_Definition_APIs)
-2. APIs related to NLP training, [more](https://developer.kore.ai/docs/bots/api-guide/api-list/#NLP_Training_APIs)
-3. APIs aiding in Analyzing the performance and behavior, [more](https://developer.kore.ai/docs/bots/api-guide/api-list/#Bot_Analytics_APIs)
-4. APIs related to the Admin Console functionality, [more](https://developer.kore.ai/docs/bots/api-guide/api-list/#Admin_APIs)
-5. APIs related to the data access from Data Tables, [more](https://developer.kore.ai/docs/bots/api-guide/api-list/#Data_Data_Table_Access_APIs)
+1. APIs related to the Bot Definition functionality, [more](../api-list#bot-definition-apis)
+2. APIs related to NLP training, [more](../api-list#nlp-training-apis)
+3. APIs aiding in Analyzing the performance and behavior, [more](../api-list##analytics-apis)
+4. APIs related to the Admin Console functionality, [more](../api-list#admin-apis)
+5. APIs related to the data access from Data Tables, [more](../api-list##data-data-table-access-apis)
 
 !!!note
     All the APIs have rate limits to manage the usage. If the rate limit is exceeded, an API call fails with the following error message – “_Rate limit for this API has been reached. Please try again after some time._”
@@ -103,7 +103,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="bot-export-status.md">Bot Export – Status</a>
+   <td><a href="../bot-export-status">Bot Export – Status</a>
    </td>
    <td>To get the status of the Bot Export request and also provides the download link of the export copy after the export is completed.
    </td>
@@ -113,7 +113,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="channel-enablement.md">Enable Channel</a>
+   <td><a href="../channel-enablement">Enable Channel</a>
    </td>
    <td>To enable or update a channel for an assistant.
    </td>
@@ -123,7 +123,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="add-enable-new-language.md">Add and Enable a New Language</a>
+   <td><a href="../add-enable-new-language">Add and Enable a New Language</a>
    </td>
    <td>To add and enable a new language for a virtual assistant.
    </td>
@@ -133,7 +133,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="enable-existing-language.md">Enable an existing Language</a>
+   <td><a href="../enable-existing-language">Enable an existing Language</a>
    </td>
    <td>To enable an <a href="https://developer.kore.ai/docs/bots/advanced-topics/multi-lingual/building-multi-language-bots/#Supported_Bot_Languages">existing language</a> for a virtual assistant.
    </td>
@@ -143,7 +143,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="disable-existing-language.md">Disable an existing Language</a>
+   <td><a href="../disable-existing-language">Disable an existing Language</a>
    </td>
    <td>To disable an existing language for a virtual assistant that is currently enabled.
    </td>
@@ -153,7 +153,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="language-updation.md">Update a Language Configuration</a>
+   <td><a href="../language-updation">Update a Language Configuration</a>
    </td>
    <td>To update the configuration of an existing language for a virtual assistant.
    </td>
@@ -163,7 +163,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="proactive-notifications.md">Proactive Notification</a>
+   <td><a href="../proactive-notifications">Proactive Notification</a>
    </td>
    <td>To send proactive notifications to the configured channel.
    </td>
@@ -173,7 +173,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="proactive-notifications-status.md">Proactive Notification Status</a>
+   <td><a href="../proactive-notifications-status">Proactive Notification Status</a>
    </td>
    <td>To send proactive notifications to the configured channel.
    </td>
@@ -183,7 +183,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="publish-bot.md">Publish Bot</a>
+   <td><a href="../publish-bot">Publish Bot</a>
    </td>
    <td>To initiate a bot publish request.
    </td>
@@ -193,7 +193,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="bot-publish-status.md">Bot Publish Status</a>
+   <td><a href="../bot-publish-status">Bot Publish Status</a>
    </td>
    <td>Gets the publish status of the ongoing assistant or the last completed status request of the assistant. 
    </td>
@@ -203,7 +203,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="bot-variables-import.md">Bot Variables Import</a>
+   <td><a href="../bot-variables-import">Bot Variables Import</a>
    </td>
    <td>To import global and content variables into the assistant.
    </td>
@@ -213,7 +213,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="batch-test-execution.md">Batch Test Execution</a>
+   <td><a href="../batch-test-execution">Batch Test Execution</a>
    </td>
    <td>To invoke the execution of a Batch Test suite.
    </td>
@@ -223,7 +223,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="batch-test-execution-status.md">Batch Test Execution Status</a>
+   <td><a href="../batch-test-execution-status">Batch Test Execution Status</a>
    </td>
    <td>To know the status of the execution against a unique Test Request Id.
    </td>
@@ -233,7 +233,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="get-batch-test-suites.md">Get Batch Test Suites</a>
+   <td><a href="../get-batch-test-suites">Get Batch Test Suites</a>
    </td>
    <td>To get the list of Batch Test Suites available.
    </td>
@@ -243,7 +243,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="export-batch-test-suite.md">Export Batch Test Suite</a>
+   <td><a href="../export-batch-test-suite">Export Batch Test Suite</a>
    </td>
    <td>To export the test cases of a given Batch Test Suite.
    </td>
@@ -253,7 +253,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="import-batch-test-suite.md">Import Batch Test Suite</a>
+   <td><a href="../import-batch-test-suite">Import Batch Test Suite</a>
    </td>
    <td>To import a batch test suite.
    </td>
@@ -263,7 +263,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="delete-batch-test-suite.md">Delete Batch Test Suite</a>
+   <td><a href="../delete-batch-test-suite">Delete Batch Test Suite</a>
    </td>
    <td>To delete a Batch Test Suite.
    </td>
@@ -273,7 +273,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="delete-batch-test-suite-execution.md">Delete Batch Test Suite Execution</a>
+   <td><a href="../delete-batch-test-suite-execution">Delete Batch Test Suite Execution</a>
    </td>
    <td>To delete a specific execution of a Batch Test Suite.
    </td>
@@ -283,7 +283,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="create-conversation-test-suite.md">Create (Import) a Conversation Test Suite</a>
+   <td><a href="../create-conversation-test-suite">Create (Import) a Conversation Test Suite</a>
    </td>
    <td>To create or import a Conversation Test Suite.
    </td>
@@ -293,7 +293,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="get-conversation-test-suite-creation-status.md">Conversation Test Suite Creation Status</a>
+   <td><a href="../get-conversation-test-suite-creation-status">Conversation Test Suite Creation Status</a>
    </td>
    <td>To get the creation status of a Conversation Test Suite.
    </td>
@@ -303,7 +303,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="execute-test-suite.md">Conversation Test Suite Execution</a>
+   <td><a href="../execute-test-suite">Conversation Test Suite Execution</a>
    </td>
    <td>To execute a Conversation Test Suite.
    </td>
@@ -313,7 +313,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="get-test-suite-execution-status.md">Conversation Test Suite Execution Status</a>
+   <td><a href="../get-test-suite-execution-status">Conversation Test Suite Execution Status</a>
    </td>
    <td>To get the execution status and summary of a Conversation Test Suite.
    </td>
@@ -323,7 +323,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="delete-test-suite.md">Delete Conversation Test Suite</a>
+   <td><a href="../delete-test-suite">Delete Conversation Test Suite</a>
    </td>
    <td>To delete a Conversation Test Suite.
    </td>
@@ -359,7 +359,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="import-ml-utterances.md">ML Utterances Import</a>
+   <td><a href="../import-ml-utterances">ML Utterances Import</a>
    </td>
    <td>To import ML Utterances into an assistant.
    </td>
@@ -369,7 +369,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="ml-utterances-import-status.md">ML Utterances Import Status</a>
+   <td><a href="../ml-utterances-import-status">ML Utterances Import Status</a>
    </td>
    <td>To get the status of the ML utterances import request made through Import ML Utterances API.
    </td>
@@ -379,7 +379,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="ml-utterances-train.md">ML Utterance Train</a>
+   <td><a href="../ml-utterances-train">ML Utterance Train</a>
    </td>
    <td>To initiate ML training of an assistant.
    </td>
@@ -389,7 +389,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="ml-utterances-train-status.md">ML Utterance Train Status</a>
+   <td><a href="../ml-utterances-train-status">ML Utterance Train Status</a>
    </td>
    <td>To get the status of the ML training.
    </td>
@@ -399,7 +399,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="ml-utterances-export.md">ML Utterances Export</a>
+   <td><a href="../ml-utterances-export">ML Utterances Export</a>
    </td>
    <td>To export the ML utterances of an assistant.
    </td>
@@ -409,7 +409,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="ml-utterances-export-status.md">ML Utterances Export Status</a>
+   <td><a href="../ml-utterances-export-status">ML Utterances Export Status</a>
    </td>
    <td>To get the download link of the ML Utterances export copy.
    </td>
@@ -419,7 +419,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="faq-training.md">FAQ Training</a>
+   <td><a href="../faq-training">FAQ Training</a>
    </td>
    <td>To initiate the training of the knowledge graph.
    </td>
@@ -429,7 +429,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="faq-training-status.md">FAQ Training Status</a>
+   <td><a href="../faq-training-status">FAQ Training Status</a>
    </td>
    <td>To get the status of the FAQ training.
    </td>
@@ -439,7 +439,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="extract-kg-from-file-url.md">Extraction from file or URL</a>
+   <td><a href="../extract-kg-from-file-url">Extraction from file or URL</a>
    </td>
    <td>To extract FAQs using a file or URL.
    </td>
@@ -449,7 +449,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="get-kg-extraction-history.md">Get Extractions History</a>
+   <td><a href="../get-kg-extraction-history">Get Extractions History</a>
    </td>
    <td>To get a list of KG Extractions history.
    </td>
@@ -459,7 +459,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="get-kg-extraction-questions.md">Get Extraction Question</a>
+   <td><a href="../get-kg-extraction-questions">Get Extraction Question</a>
    </td>
    <td>To get a list of KG Extraction Questions.
    </td>
@@ -469,7 +469,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="get-knowledge-tasks.md">Get KnowledgeTasks</a>
+   <td><a href="../get-knowledge-tasks">Get KnowledgeTasks</a>
    </td>
    <td>To get a listing of knowledge Tasks along with the nodes.
    </td>
@@ -479,7 +479,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="add-questions-to-knowledgegraph.md">Add Questions from Extraction</a>
+   <td><a href="../add-questions-to-knowledgegraph">Add Questions from Extraction</a>
    </td>
    <td>To add specific questions from extraction to the Knowledge Graph.
    </td>
@@ -489,7 +489,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="get-faqs-from-knowledge-task.md">Get FAQs</a>
+   <td><a href="../get-faqs-from-knowledge-task">Get FAQs</a>
    </td>
    <td>To get a list of questions and nodes under the Knowledge task.
    </td>
@@ -499,7 +499,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="update-nlp-configurations.md">Update NLP Configurations</a>
+   <td><a href="../update-nlp-configurations">Update NLP Configurations</a>
    </td>
    <td>To update the NLP thresholds and configurations.
    </td>
@@ -535,7 +535,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="find-intent.md">Find Intent</a>
+   <td><a href="../find-intent">Find Intent</a>
    </td>
    <td>To obtain the intent recognition result and the scoring from NLP and ML engines.
    </td>
@@ -545,7 +545,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="conversation-history.md">Conversation History</a>
+   <td><a href="../conversation-history">Conversation History</a>
    </td>
    <td>To fetch the conversational messages between the assistant and user in reverse chronological order.
    </td>
@@ -555,7 +555,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="conversation-summary.md">Conversation Summary</a>
+   <td><a href="../conversation-summary">Conversation Summary</a>
    </td>
    <td>To summarizes the conversation between a user and an agent.
    </td>
@@ -565,7 +565,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="fetch-feedback-survey-scores.md">Feedback Analytics</a>
+   <td><a href="../fetch-feedback-survey-scores">Feedback Analytics</a>
    </td>
    <td>To fetch the Feedback Survey Response Data and push it to the Feedback Analytics Dashboard.
    </td>
@@ -575,7 +575,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="fetch-debug-logs.md">Debug Logs</a>
+   <td><a href="../fetch-debug-logs">Debug Logs</a>
    </td>
    <td>To get debug logs of a specific conversation.
    </td>
@@ -585,7 +585,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="get-change-logs.md">Get ChangeLogs</a>
+   <td><a href="../get-change-logs">Get ChangeLogs</a>
    </td>
    <td>To get the list of changes made to the assistant definition for a given date period.
    </td>
@@ -595,7 +595,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="get-sessions-history.md">Sessions History</a>
+   <td><a href="../get-sessions-history">Sessions History</a>
    </td>
    <td>To retrieve the conversation sessions created.
    </td>
@@ -605,7 +605,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="get-dashboard-widget-data.md">Get Dashboard Widget Data</a>
+   <td><a href="../get-dashboard-widget-data">Get Dashboard Widget Data</a>
    </td>
    <td>To get the data result of a widget from a specific Custom Dashboard added to an assistant.
    </td>
@@ -615,7 +615,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="get-analytics.md">Get Analytics</a>
+   <td><a href="../get-analytics">Get Analytics</a>
    </td>
    <td>To extract the metrics data related to the intent detection and task performance using API
    </td>
@@ -625,7 +625,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="user-engagement-trend.md">User Engagement Trend</a>
+   <td><a href="../user-engagement-trend">User Engagement Trend</a>
    </td>
    <td>To provide the number of users who have interacted with the assistant in a given period across different time intervals.
    </td>
@@ -635,7 +635,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="http://conversation-details-and-summary.md">Conversation Details and Summary</a>
+   <td><a href="../conversation-details-and-summary">Conversation Details and Summary</a>
    </td>
    <td>To fetch the conversational details and summary between the bot and the user..
    </td>
@@ -661,7 +661,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="get-bots.md">Get Bots</a>
+   <td><a href="../get-bots">Get Bots</a>
    </td>
    <td>To retrieve the list of bots available in an account
    </td>
@@ -669,7 +669,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="import-roles.md">Import Roles</a>
+   <td><a href="../import-roles">Import Roles</a>
    </td>
    <td>To import bot or admin roles into an account
    </td>
@@ -677,7 +677,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="get-roles.md">Get Roles</a>
+   <td><a href="../get-roles">Get Roles</a>
    </td>
    <td>To retrieve the list of bot or admin roles available in an account.
    </td>
@@ -685,7 +685,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="get-user-roles-details.md">Get User Roles Details</a>
+   <td><a href="../get-user-roles-details">Get User Roles Details</a>
    </td>
    <td>To get full information on all users and their associated roles in the account
    </td>
@@ -693,7 +693,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="get-groups.md">Get Groups</a>
+   <td><a href="../get-groups">Get Groups</a>
    </td>
    <td>To get the list of groups and group members available in the account
    </td>
@@ -701,7 +701,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="export-roles.md">Export Roles</a>
+   <td><a href="../export-roles">Export Roles</a>
    </td>
    <td>To export bot or admin roles from an account
    </td>
@@ -709,7 +709,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="assign-bt-roles.md">Assign BT Roles</a>
+   <td><a href="../assign-bt-roles">Assign BT Roles</a>
    </td>
    <td>To assign a bot role to a set of users in a specific assistant
    </td>
@@ -717,7 +717,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="assign-admin-roles.md">Assign Admin Roles</a>
+   <td><a href="../assign-admin-roles">Assign Admin Roles</a>
    </td>
    <td>To add or remove users or groups from admin roles
    </td>
@@ -725,7 +725,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="update-user-access.md">Update User Access</a>
+   <td><a href="../update-user-access">Update User Access</a>
    </td>
    <td>To add or remove the ability to access XO Platform, create new assistants
    </td>
@@ -733,7 +733,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="create-users.md">Create Users</a>
+   <td><a href="../create-users">Create Users</a>
    </td>
    <td>To add users to an account
    </td>
@@ -741,7 +741,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="get-user-information.md">Get Users Information</a>
+   <td><a href="../get-user-information">Get Users Information</a>
    </td>
    <td>To retrieve the user details
    </td>
@@ -749,7 +749,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="update-user.md">Update User</a>
+   <td><a href="../update-user">Update User</a>
    </td>
    <td>To update user details
    </td>
@@ -757,7 +757,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="delete-users.md">Remove Users from Account</a>
+   <td><a href="../delete-users">Remove Users from Account</a>
    </td>
    <td>To remove users from an account
    </td>
@@ -765,7 +765,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="delete-customer-data.md">Delete Customer Data</a>
+   <td><a href="../delete-customer-data">Delete Customer Data</a>
    </td>
    <td>To delete customer data
    </td>
@@ -773,7 +773,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="delete-customer-data-status.md">Delete Customer Data Status API</a>
+   <td><a href="../delete-customer-data-status">Delete Customer Data Status API</a>
    </td>
    <td>To get the status of the Customer Data Delete request
    </td>
@@ -781,7 +781,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="get-admin-console-audit-logs.md">Get Admin Console Audit Logs</a>
+   <td><a href="../get-admin-console-audit-logs">Get Admin Console Audit Logs</a>
    </td>
    <td>To get admin console audit logs.
    </td>
@@ -805,7 +805,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="data-insert.md">Insert Data</a>
+   <td><a href="../data-insert">Insert Data</a>
    </td>
    <td>To insert data into Data Table
    </td>
@@ -813,7 +813,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="bulk-data-insert.md">Insert Bulk Data</a>
+   <td><a href="../bulk-data-insert">Insert Bulk Data</a>
    </td>
    <td>To insert bulk data into Data Table
    </td>
@@ -821,7 +821,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="data-update.md">Update Data</a>
+   <td><a href="../data-update">Update Data</a>
    </td>
    <td>To update data into Data Table.
    </td>
@@ -829,7 +829,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="data-delete.md">Delete Data</a>
+   <td><a href="../data-delete">Delete Data</a>
    </td>
    <td>To delete data from Data Table.
    </td>
@@ -837,7 +837,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="query-table-data.md">Get Table Data</a>
+   <td><a href="../query-table-data">Get Table Data</a>
    </td>
    <td>To get data from Data Table.
    </td>
@@ -845,7 +845,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    </td>
   </tr>
   <tr>
-   <td><a href="query-data-table-view.md">Get View Data</a>
+   <td><a href="../query-data-table-view">Get View Data</a>
    </td>
    <td>To get data from Data View.
    </td>
