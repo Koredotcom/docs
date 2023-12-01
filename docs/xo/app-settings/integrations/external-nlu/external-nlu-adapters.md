@@ -1,4 +1,4 @@
-# **External NLU Adapters Overview**
+# External NLU Adapters Overview
 
 Kore.ai has one of the best NLP engines in the market including the unique Multiengine NLP capability. However, to provide integration flexibility and let the customers use the NLU engine of their preference with other features of the platform, Kore.ai provides an ability to make an external NLU engine co-exist with our built-in NLP engines.
 
@@ -34,7 +34,7 @@ Steps to configure an external NLU adapter:
   
     !!! note
     
-        De Identification of PII data means removing or masking PII data in order to reduce the risk of disclosure of user’s sensitive information that is connected with the data. If the de-identification of PII is disabled for the External NLU Adapter, any API call being made to the external NLU will send the masked PII data in the payload. If you select the option – **do not de-identify PII data from the user input**, intent or entity detection may not work properly. To know more about PII data, see [Redacting Personally Identifiable Information](https://developer.kore.ai/docs/bots/bot-settings/pii-data-masking/){:target="_blank"}.
+        De Identification of PII data means removing or masking PII data in order to reduce the risk of disclosure of user’s sensitive information that is connected with the data. If the de-identification of PII is disabled for the External NLU Adapter, any API call being made to the external NLU will send the masked PII data in the payload. If you select the option – **do not de-identify PII data from the user input**, intent or entity detection may not work properly. To know more about PII data, see [Redacting Personally Identifiable Information](../../../advanced-settings/pii-data-masking){:target="_blank"}.
 
 4. Click **Save**, to save the configurations.
 5. You can check the External NLU connectivity by clicking **TEST**. On successful completion of the test, the following message is displayed.  

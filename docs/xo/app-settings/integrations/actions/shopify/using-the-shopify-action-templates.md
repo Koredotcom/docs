@@ -1,4 +1,4 @@
-# **Using the Shopify Action Templates**
+# Using the Shopify Action Templates
 
 You can use the **Prebuilt Action Templates** from your Shopify integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 

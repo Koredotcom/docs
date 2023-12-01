@@ -1,4 +1,4 @@
-# **Change Logs**
+# Change Logs
 
 Change Logs keep track of all the changes that take place in your Process App. To access the changelogs, follow the below steps:
 

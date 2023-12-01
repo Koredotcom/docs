@@ -1,4 +1,4 @@
-# **Using the Freshservice ITSM Action Templates**
+# Using the Freshservice ITSM Action Templates
 
 You can use the **Prebuilt Action Templates** from your Freshservice integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 

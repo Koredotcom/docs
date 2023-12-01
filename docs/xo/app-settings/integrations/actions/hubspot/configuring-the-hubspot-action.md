@@ -1,4 +1,4 @@
-# **Configuring the HubSpot Action**
+# Configuring the HubSpot Action
 
 The XO Platform lets you easily connect the HubSpot integration to create, view, update, search and delete deals. You can also create, view, update, search and delete contacts using the pre-built templates. Click the [HubSpot](https://www.hubspot.com/?__hstc=59894770.e90bc57a4e2025da994552ad13bbab05.1699003492940.1700224472376.1700227712599.57&__hssc=59894770.6.1700227712599&__hsfp=4271746649){:target="_blank"} link to know more. 
 

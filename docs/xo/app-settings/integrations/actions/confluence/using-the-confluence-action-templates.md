@@ -1,4 +1,4 @@
-# **Using the Confluence Action Templates**
+# Using the Confluence Action Templates
 
 You can use the **Prebuilt Action Templates** from your Confluence integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 

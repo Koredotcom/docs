@@ -1,4 +1,4 @@
-# **Glossary**
+# Glossary
 
 The following list provides definitions of commonly used terms in conversation testing.
 

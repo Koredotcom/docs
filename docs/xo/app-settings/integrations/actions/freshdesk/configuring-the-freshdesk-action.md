@@ -1,4 +1,4 @@
-# **Configuring the Freshdesk Action**
+# Configuring the Freshdesk Action
 
 The XO Platform lets you easily connect the Freshdesk integration to create, view, update, search and delete tickets. Click the [Freshdesk](https://www.freshworks.com/freshdesk/){:target="_blank"} link to learn more.
 

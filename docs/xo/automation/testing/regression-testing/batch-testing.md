@@ -1,4 +1,4 @@
-# **Batch Testing**
+# Batch Testing
 
 Once you have built and trained your bot, the most important question that arises is how good is your bot’s learning model? So, evaluating your bot’s performance is important to delineate how good your bot understands the user utterances.
 

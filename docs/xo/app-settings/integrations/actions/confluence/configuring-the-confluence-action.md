@@ -1,4 +1,4 @@
-# **Configuring the Confluence Action**
+# Configuring the Confluence Action
 
 The XO Platform lets you easily connect with your Confluence instance to create, and view pages or blogs on the Confluence space. [Learn more about Confluence](https://support.atlassian.com/confluence-cloud/resources/){:target="_blank"}.
 

@@ -1,4 +1,4 @@
-# **Kore.ai Web SDK Tutorial**
+# Kore.ai Web SDK Tutorial
 
 This tutorial is an end-to-end walkthrough for setting up and running an instance of the Kore.ai Bots Web SDK which is a collection of libraries that you can use to integrate Kore.ai bots with your own web applications.
 

@@ -12,18 +12,18 @@ You can find the Knowledge Graph by selecting your desired VA, then going to **B
 
 <div class="admonition note">
 <p class="admonition-title">Training a Few-Shot Knowledge Graph</p>
-<p>Few-Shot Knowledge Graphs do not require an ontology and do not perform path qualification. Instead, they identify intents using semantic similarity and pattern recognition. However, if you want to train the VA on a specific use case for which the appropriate FAQ is not identified, you can map FAQs to an ontology, similar to what you would do with an Ontology-based Graph.</p></div>
+<p>Few-Shot Knowledge Graphs do not require an ontology and do not perform path qualification. Instead, they identify intents using semantic similarity and pattern recognition. However, if you want to train the VA on a specific use case for which the appropriate FAQ is not identified, you can map FAQs to an ontology, similar to what you would do with an Ontology-based Graph.</p>
 
 <p>The main difference concerning training is that in the Few-Shot KG, Terms don't require some of the training configurations needed in an Ontology Graph. Here are some key pointers:</p>
 
 <p><ul><li>Default Terms are not available. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.</li>
 <li>Organizer Terms do not support Path-Level and Knowledge Graph Synonyms. They support Intent Preconditions and Context Output.</li> 
 <li>Mandatory Terms support Traits, Path-Level and Knowledge Graph Synonyms, Intent Preconditions, and Context Output, just like in an Ontology-based Graph.</li>
-<li>You can set all Thresholds and Configurations except Path Coverage and Lemmatization using Parts of Speech, Search in Answer, and Qualify Contextual Paths, which are not supported by Few-Shot Graphs.</li>
+<li>You can set all Thresholds and Configurations except Path Coverage and Lemmatization using Parts of Speech, Search in Answer, and Qualify Contextual Paths, which are not supported by Few-Shot Graphs.</li></ul></p>
 
-See the Knowledge Graph Types Comparison Table for a detailed list of supported features.
+<p>See the Knowledge Graph Types Comparison Table for a detailed list of supported features.</p>
 
-Also, see Training Configuration below for training setup details.</p>
+<p>Also, see Training Configuration below for training setup details.</p>
 </div>
 
 ## Knowledge Graph Engine Capabilities
@@ -326,31 +326,28 @@ Following are some examples of the phrases as recognized by the KG engine with a
    </td>
    <td>outstand
 <p>
-book
+book</p>
    </td>
    <td>outstanding
 <p>
-booking
+booking</p>
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>I am filing for a visa so that I can travel
    </td>
-   <td>file
-   </td>
-   <td>filing
-   </td>
+   <td>file</td>
+   <td>filing</td>
   </tr>
   <tr>
-   <td>What happens if my luggage exceeds the maximum weight? ?
-   </td>
+   <td>What happens if my luggage exceeds the maximum weight? ?</td>
    <td>, happen
 <p>
 exceed
    </td>
    <td>happens
 <p>
-exceeds
+exceeds</p>
    </td>
   </tr>
 </table>

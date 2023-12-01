@@ -1,4 +1,4 @@
-# **Using the JIRA Action Templates**
+# Using the JIRA Action Templates
 
 You can use the **Prebuilt Action Templates** from your JIRA integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 

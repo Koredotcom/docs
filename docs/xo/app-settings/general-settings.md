@@ -1,4 +1,4 @@
-# **General Settings**
+# General Settings
 
 To modify the general settings of a bot:
 
