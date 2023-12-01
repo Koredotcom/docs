@@ -106,7 +106,7 @@ After you add a tag, it is visible below the question like a tag everywhere the 
 
 ## Synonyms
 
-You can add multiple synonyms for each term in your Knowledge Graph, making the path discoverable for varied user utterances. You can add synonyms for a term from the term’s  Settings window.
+You can add multiple synonyms for each term in your Knowledge Graph, making the path discoverable for varied user utterances. You can add synonyms for a term from the term’s  <b>Settings</b> window.
 
 When you add a synonym for a term in the Knowledge Graph, you can add them as local (Path Level) or global (Knowledge Graph level) synonyms.
 
@@ -133,19 +133,28 @@ To add synonyms for a term, follow the below steps:
 <li>To add synonyms for a child node, enter them in the Synonyms box next to the <b>Child Terms</b> listed at the bottom of the settings window.
 <img src="../../images/child-synonyms-terms.png" alt="child synonyms terms" title="child synonyms terms" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
-### Traits
+### Context
 
-You can create traits with common user utterances and then add them to the relevant terms in your Knowledge Graph. To know more about Traits, [click here](https://developer.kore.ai/docs/bots/nlp/traits/).
+You can **Manage Context** for the terms and tags by setting:
 
-Traits are common across the XO Platform. If you have created Traits from the Natural Language section they are available for use here as well.
+* **Intent Precondition** – the context that should be present as a qualifier for this node or tag.
+* **Context Output** – the context that should be populated to signify the execution of this task.
 
-To create a trait, follow the below steps:
+Post the XO Platform v8.0 release, context can be enabled for <b>Organizer</b> nodes as well. Enabling the **Manage Context** option allows you to set the context precondition and context output mentioned above. Click [here](https://developer.kore.ai/docs/bots/bot-intelligence/context-management/) for more information on Context Management.
 
-<ol><li>On the top-right of the Knowledge Graph window, click the <b>more options icon</b> and then select <b>Manage Traits</b>.
-<img src="../../images/manage-traits.png" alt="manage traits" title="manage traits" style="border: 1px solid gray; zoom:75%;"></li>
-<li>On the Manage Traits window, click <b>New Trait</b>.
-</li>
-<li>In the <b>Trait Type</b> and <b>Trait Name</b> field, enter a relevant name for the trait. For example, <i>Flight Fare</i>.</li>
-<li>In the <b>Utterances</b> field, enter all the utterances that you want to include in the trait. Examples of the <i>Issues</i> trait: <i>First Class, Premium Economy, Economy,</i> etc.</li>
-<li>Click <b>Save & Add Rule</b> or <b>Save & Exit</b>.
-<img src="../../images/add-traits-save-and-add-rules.png" alt="save and add rule" title="save and add rule" style="border: 1px solid gray; zoom:75%;"></li></ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Enabling the <b>Manage Context</b> option will not show the term/node name by default.</p>
+</div>
+
+### Stop Words
+
+Stop words present in the user utterance are discarded for scoring even if the stop word is used to define a node (or node synonyms).
+
+The Knowledge Graph has a language-specific predefined set of stop words. This list can be customized to suit your requirements.
+
+To edit the stop words list, follow the steps below:
+
+1. From the Knowledge Graph page, click on the **more options icon** and select **Manage Stop Words**.
+2. From the Manage Stop Words window, delete or add stop words.
+<img src="../../images/manage-stop-words.png" alt="manage stop words" title="manage stop words" style="border: 1px solid gray; zoom:75%;">
