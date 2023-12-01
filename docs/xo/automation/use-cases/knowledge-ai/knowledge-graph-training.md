@@ -166,4 +166,28 @@ To edit the stop words list, follow the steps below:
 2. From the Manage Stop Words window, delete or add stop words.
 <img src="../../images/manage-stop-words.png" alt="manage stop words" title="manage stop words" style="border: 1px solid gray; zoom:75%;">
 
+## Training Process
 
+After you complete creating/editing the Knowledge Graph, click the **Train** button on the top-right of the Knowledge Graph window. When you perform this action, all the paths, synonyms, and question-answer sets are sent to the Graph DB engine.
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>After every change that you make to the Knowledge Graph such as adding synonyms to a term or editing the name of a term, you must click the Train button for the changes to reflect in the bot responses.</p>
+</div>
+
+The training fails if any single node has more than 100 questions. This limit was introduced in v7.3 to make the Knowledge Graph more efficient by improving the response times. In such failure cases, you can **Download Errors** CSV file which lists the path with more than 100 questions. You can use this file to rectify your Knowledge Graph.
+
+## Testing
+
+When you complete creating the Knowledge Graph and training it, we recommend that you interact with the assistant and ask questions connected to the Knowledge Graph. Test the responses by using a variety of utterances so that you can identify missing terms, questions, alternative questions, synonyms, and traits. [Learn more about utterance testing](https://developer.kore.ai/docs/bots/test-your-bot/testing-your-bot-with-nlp/).
+
+## Thresholds & Configurations
+
+To train and improve the performance, Thresholds and Configurations can be specified for all three NLP engines – FM, KG, and ML. You can access these settings from **Natural Language > Training > Thresholds & Configurations.**
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If your VA is multilingual, you can set the Thresholds differently for different languages. If not set, the Default Settings will be used for all languages. This feature is available from v7.0 onwards.</p>
+</div>
+
+The settings for the Knowledge Graph engine are discussed in detail in the following sections.
