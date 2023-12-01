@@ -326,31 +326,28 @@ Following are some examples of the phrases as recognized by the KG engine with a
    </td>
    <td>outstand
 <p>
-book
+book</p>
    </td>
    <td>outstanding
 <p>
-booking
+booking</p>
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>I am filing for a visa so that I can travel
    </td>
-   <td>file
-   </td>
-   <td>filing
-   </td>
+   <td>file</td>
+   <td>filing</td>
   </tr>
   <tr>
-   <td>What happens if my luggage exceeds the maximum weight? ?
-   </td>
+   <td>What happens if my luggage exceeds the maximum weight? ?</td>
    <td>, happen
 <p>
 exceed
    </td>
    <td>happens
 <p>
-exceeds
+exceeds</p>
    </td>
   </tr>
 </table>
