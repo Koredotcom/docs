@@ -1,10 +1,10 @@
 # Knowledge Graph Training
 
-[Training your Assistant ](https://developer.kore.ai/docs/bots/nlp/optimizing-bots/)is not restricted to the Machine Learning and Fundamental Meaning engines. You must also train the Knowledge Graph (KG) engine, too.
+[Training your Assistant](https://developer.kore.ai/docs/bots/nlp/optimizing-bots/)is not restricted to the Machine Learning and Fundamental Meaning engines. You must also train the Knowledge Graph (KG) engine, too.
 
 The Ontology-based Knowledge Graph turns static FAQ text into an intelligent, personalized conversational experience. It uses domain terms and relationships thus reducing the training needs. It also has the capability to enable the ontology weighted features whenever ML gets confused and to automate conversational dialog for resolving appropriate answers.
 
-The Few-Shot Knowledge Graph leverages Kore.ai’s LLM and lets you add FAQs without building an ontology. Less training and maintenance are required since you do not need to configure the graph term-by-term. [Learn more about Knowledge Graph Types](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ontology/).
+The Few-Shot Knowledge Graph leverages Kore.ai’s LLM and lets you add FAQs without building an ontology. Less training and maintenance are required since you do not need to configure the graph term-by-term. [Learn more about Knowledge Graph Types](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-overview/#knowledge-graph-types).
 
 The Knowledge Graph engine thus responds to users’ intents by identifying the appropriate questions within the Knowledge Graph, and then presenting the user with the appropriate response.
 
@@ -12,19 +12,18 @@ You can find the Knowledge Graph by selecting your desired VA, then going to **B
 
 <div class="admonition note">
 <p class="admonition-title">Training a Few-Shot Knowledge Graph</p>
-<p>Few-Shot Knowledge Graphs do not require an ontology and do not perform path qualification. Instead, they identify intents using semantic similarity and pattern recognition. However, if you want to train the VA on a specific use case for which the appropriate FAQ is not identified, you can map FAQs to an ontology, similar to what you would do with an Ontology-based Graph.</p></div>
+<p>Few-Shot Knowledge Graphs do not require an ontology and do not perform path qualification. Instead, they identify intents using semantic similarity and pattern recognition. However, if you want to train the VA on a specific use case for which the appropriate FAQ is not identified, you can map FAQs to an ontology, similar to what you would do with an Ontology-based Graph.</p>
 
 <p>The main difference concerning training is that in the Few-Shot KG, Terms don't require some of the training configurations needed in an Ontology Graph. Here are some key pointers:</p>
 
 <p><ul><li>Default Terms are not available. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.</li>
 <li>Organizer Terms do not support Path-Level and Knowledge Graph Synonyms. They support Intent Preconditions and Context Output.</li> 
 <li>Mandatory Terms support Traits, Path-Level and Knowledge Graph Synonyms, Intent Preconditions, and Context Output, just like in an Ontology-based Graph.</li>
-<li>You can set all Thresholds and Configurations except Path Coverage and Lemmatization using Parts of Speech, Search in Answer, and Qualify Contextual Paths, which are not supported by Few-Shot Graphs.</li>
+<li>You can set all Thresholds and Configurations except Path Coverage and Lemmatization using Parts of Speech, Search in Answer, and Qualify Contextual Paths, which are not supported by Few-Shot Graphs.</li></ul></p>
 
-See the Knowledge Graph Types Comparison Table for a detailed list of supported features.
+<p>See the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-overview/#compare-knowledge-graph-typesfor">Knowledge Graph Types Comparison Table</a> for a detailed list of supported features.</p>
 
-Also, see Training Configuration below for training setup details.</p>
-</div>
+<p>Also, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-training/#training-configuration">Training Configuration</a> below for training setup details.</p></div>
 
 ## Knowledge Graph Engine Capabilities
 
@@ -46,8 +45,7 @@ Here are the steps that the Knowledge Graph Engine takes when detecting FAQs:
 * **Step 3: Shortlist Paths**: All the paths consisting of 50% or more matching terms with the user utterance are shortlisted for further processing.
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Patch coverage computation doesn't consider the root node.</p>
-</div>
+<p>Patch coverage computation doesn't consider the root node.</p></div>
 
 * **Step 4: Filter with Traits**: If traits are defined in the Knowledge Graph, paths shortlisted in the above step are further filtered based on the confidence score of a classification algorithm in user utterance. 
 * **Step 5: Send to Ranker**: The KG engine then sends the shortlisted paths to the Ontology Ranker Program.
@@ -95,9 +93,8 @@ The available term types are:
 
 * **Default**: Default terms do not have any particular considerations in shortlisting qualified paths.
 * **Mandatory**: When you mark a term as Mandatory, all paths associated with the term are shortlisted for ranking only if the user’s utterance includes the mandatory term or its synonyms.
-* **Organizer**: Term can be marked as being a part of the Knowledge Graph only for organizing questions (this option is available only for terms, not tags). 
-
-   <img src="../../images/term-types.png" alt="term types" title="term types" style="border: 1px solid gray; zoom:75%;">
+* **Organizer**: Term can be marked as being a part of the Knowledge Graph only for organizing questions (this option is available only for terms, not tags).
+<img src="../../images/term-types.png" alt="term types" title="term types" style="border: 1px solid gray; zoom:75%;">
 
 ### Tags
 
@@ -151,16 +148,12 @@ Traits are common across the XO Platform. If you have created Traits from the Na
 To create a trait, follow the below steps:
 
 1. On the top-right of the Knowledge Graph window, click the **more options icon** and then select **Manage Traits**.
-
-   <img src="../../images/manage-traits.png" alt="manage traits" title="manage traits" style="border: 1px solid gray; zoom:75%;">
-
+<img src="../../images/manage-traits.png" alt="manage traits" title="manage traits" style="border: 1px solid gray; zoom:75%;">
 2. On the Manage Traits window, click **New Trait**.
 3. In the **Trait Type** and **Trait Name** field, enter a relevant name for the trait. For example, *Flight Fare*.
 4. In the **Utterances** field, enter all the utterances that you want to include in the trait. Examples of the *Issues* trait: *First Class, Premium Economy, Economy,* etc.
 5. Click **Save & Add Rule** or **Save & Exit**.
-
-   <img src="../../images/add-traits-save-and-add-rules.png" alt="save and add rule" title="save and add rule" style="border: 1px solid gray; zoom:75%;">
-
+<img src="../../images/add-traits-save-and-add-rules.png" alt="save and add rule" title="save and add rule" style="border: 1px solid gray; zoom:75%;">
 
 After you create a trait, you can assign it to multiple nodes in the Knowledge Graph.
 
@@ -326,31 +319,28 @@ Following are some examples of the phrases as recognized by the KG engine with a
    </td>
    <td>outstand
 <p>
-book
+book</p>
    </td>
    <td>outstanding
 <p>
-booking
+booking</p>
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>I am filing for a visa so that I can travel
    </td>
-   <td>file
-   </td>
-   <td>filing
-   </td>
+   <td>file</td>
+   <td>filing</td>
   </tr>
   <tr>
-   <td>What happens if my luggage exceeds the maximum weight? ?
-   </td>
+   <td>What happens if my luggage exceeds the maximum weight? ?</td>
    <td>, happen
 <p>
 exceed
    </td>
    <td>happens
 <p>
-exceeds
+exceeds</p>
    </td>
   </tr>
 </table>

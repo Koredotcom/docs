@@ -7,7 +7,7 @@ In the case of multi-lingual bots, while much of the bot behavior does not chang
 
 We have seen in [this document](https://developer.kore.ai/docs/bots/how-tos/how-to-use-patterns-for-intents-entities/){:target="_blank"}, how Patterns can be used for Intent detection and Entity extraction. Those rules are for bots in the English language. Though the multilingual bots honor those rules, the language semantics impose some restrictions.
 
-Also, patterns can also be used in [Small Talk](https://developer.kore.ai/docs/bots/bot-builder-tool/small-talk/#Terminology){:target="_blank"} (while defining queries), [Knowledge Graph](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/creating-a-knowledge-graph/#Adding_FAQs){:target="blank"} (using alternate question field), and [Trait](https://developer.kore.ai/docs/bots/nlp/traits/#Trait_Definition){:target="_blank"} identification but their behavior might differ slightly.
+Also, patterns can also be used in [Small Talk](../../../automation/use-cases/small-talk/#terminology){:target="_blank"} (while defining queries), [Knowledge Graph](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/creating-a-knowledge-graph/#Adding_FAQs){:target="blank"} (using alternate question field), and [Trait](../../../automation/natural-language/training/traits/#trait-definition){:target="_blank"} identification but their behavior might differ slightly.
 
 
 <table border="1">

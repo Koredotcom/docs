@@ -34,7 +34,7 @@ When you test an utterance, the NLP engine tries to identify an intent using the
 
 * [Machine Learning](https://developer.kore.ai/docs/bots/nlp/user-utterances/){:target="_blank"} engine, 
 * [Fundamental Meaning](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/){:target="_blank"} engine,
-* [Knowledge AI](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ai-overview/), including the [Knowledge Graph](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/){:target="_blank"} engine and the [Answer from Documents](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/){:target="_blank"} feature,
+* [Knowledge AI](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ai-overview/), including the [Knowledge Graph](../../use-cases/knowledge-ai/knowledge-graph-training){:target="_blank"} engine and the [Answer from Documents](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/){:target="_blank"} feature,
 * [Ranking and Resolver](https://developer.kore.ai/docs/bots/nlp/nlp-detection/){:target="_blank"}.
 
 
@@ -164,7 +164,7 @@ The other scoring methods are:
 
 If the VA includes a Knowledge Graph, the user utterances are processed to extract the terms and are mapped with the Knowledge Graph to fetch the relevant paths. All the paths containing more than a preset threshold of the number of terms get shortlisted for further screening. Path with 100% terms covered and having a similar FAQ in the path is considered a perfect match.
 
-In case the utterance triggers a dialog (as per run a dialog option in KG), the same is displayed as _matched intent_ and _matched utterance_. You can further train the VA as you would for an intent from ML or FM engine. [Know more about Knowledge Graph Training from here](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/){:target="_blank"}.  
+In case the utterance triggers a dialog (as per run a dialog option in KG), the same is displayed as _matched intent_ and _matched utterance_. You can further train the VA as you would for an intent from ML or FM engine. [Know more about Knowledge Graph Training from here](../../use-cases/knowledge-ai/knowledge-graph-training){:target="_blank"}.  
 <img src="../images/utterance-testing-11-testing-kg.png" alt="Knowledge Graph" title="Knowledge Graph" style="border: 1px solid gray; zoom:50%;"/>
 
 
@@ -321,7 +321,7 @@ If you want the assistant to respond to user utterance with FAQs there are two w
 
 * set the terms, term configuration, or classes from the FAQ page, train the KG and retest the utterance.
 * add the utterance as an alternate question to the selected FAQ from the Knowledge Graph page, train the KG and retest the utterance.
-[Know more about Knowledge Graph Training](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/){:target="_blank"}.
+[Know more about Knowledge Graph Training](../../use-cases/knowledge-ai/knowledge-graph-training){:target="_blank"}.
 
 
 

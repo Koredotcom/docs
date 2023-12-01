@@ -368,7 +368,7 @@ JSON object consisting of the following translatable components related to IDP c
 
 We have seen in [this document](https://developer.kore.ai/docs/bots/how-tos/how-to-use-patterns-for-intents-entities/){:target="_blank"}, how Patterns can be used for Intent detection and Entity extraction. These rules are for VAs in the English language. In other languages, there may be differences. 
 
-Patterns can be used in [Small Talk](https://developer.kore.ai/docs/bots/bot-builder-tool/small-talk/#Terminology){:target="_blank"} (while defining queries), [Knowledge Graph](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/creating-a-knowledge-graph/#Adding_FAQs){:target="_blank"} (using alternate question fields), and [Trait](https://developer.kore.ai/docs/bots/nlp/traits/#Trait_Definition){:target="_blank"} identification but their behavior might differ slightly. The table below provides an overview of how this may occur.
+Patterns can be used in [Small Talk](../../../automation/use-cases/small-talk/#terminology){:target="_blank"} (while defining queries), [Knowledge Graph](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/creating-a-knowledge-graph/#Adding_FAQs){:target="_blank"} (using alternate question fields), and [Trait](../../../automation/natural-language/training/traits/#trait-definition){:target="_blank"} identification but their behavior might differ slightly. The table below provides an overview of how this may occur.
 
 <table border="1">
   <tr>
