@@ -35,3 +35,22 @@ The following are the overall capabilities of the Knowledge Graph Engine:
 * **Weighing Phrases using Traits**: Kore.ai’s Knowledge Graph engine includes a concept of traits for filtering out irrelevant suggestions. [Learn More](https://developer.kore.ai/docs/bots/nlp/traits/).
 * **Ability to Mark Term Importance**: The Knowledge Graph has a provision to mark that an ontology term is important. For example, in the question, *How to book a flight?*, the word *flight* is an important term. If the *flight* keyword is not present in the user utterance, then it makes little sense.
 * **Ability to Group Relevant Nodes**: As the graph grows in size, managing graph nodes can become a challenging task. Using the *organizer node* construct of the ontology engine, developers can group relevant child nodes under a parent node.
+
+## FAQ Detection Steps
+
+Here are the steps that the Knowledge Graph Engine takes when detecting FAQs:
+
+* **Step 1: Extract Nodes**: The KG engine processes the user utterance to extract the term (ontology nodes) present in the graph. It also takes into consideration the synonyms, traits, and tags associated with the terms.
+* **Step 2: Query Graph**: The KG engine fetches all the paths that consist of the extracted nodes.
+* **Step 3: Shortlist Paths**: All the paths consisting of 50% or more matching terms with the user utterance are shortlisted for further processing.
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Patch coverage computation doesn't consider the root node.</p></div>
+
+* **Step 4: Filter with Traits**: If traits are defined in the Knowledge Graph, paths shortlisted in the above step are further filtered based on the confidence score of a classification algorithm in user utterance. 
+* **Step 5: Send to Ranker**: The KG engine then sends the shortlisted paths to the Ontology Ranker Program.
+* **Step 6: Score based on Cosine Similarity**: The Ontology Ranker makes use of user-defined synonyms, lemma forms of word, n-grams, stop words, to compute the cosine similarity between the user utterance and the shortlisted questions. Paths are ranked in non-increasing order of cosine similarity score.
+* **Step 7: Qualify Matches**: The Ontology Ranker then qualifies the paths as follows:
+    * Paths with score >= upper_threshold are qualified as an answer (definitive match).
+    * Paths with lower_threshold > score > upper_threshold are marked as suggestions (probable match).
+    * Paths with a score > lower_threshold are ignored.
