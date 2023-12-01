@@ -23,8 +23,7 @@ You can find the Knowledge Graph by selecting your desired VA, then going to **B
 
 <p>See the Knowledge Graph Types Comparison Table for a detailed list of supported features.</p>
 
-<p>Also, see Training Configuration below for training setup details.</p>
-</div>
+<p>Also, see Training Configuration below for training setup details.</p></div>
 
 ## Knowledge Graph Engine Capabilities
 
@@ -44,10 +43,10 @@ Here are the steps that the Knowledge Graph Engine takes when detecting FAQs:
 * **Step 1: Extract Nodes**: The KG engine processes the user utterance to extract the term (ontology nodes) present in the graph. It also takes into consideration the synonyms, traits, and tags associated with the terms.
 * **Step 2: Query Graph**: The KG engine fetches all the paths that consist of the extracted nodes.
 * **Step 3: Shortlist Paths**: All the paths consisting of 50% or more matching terms with the user utterance are shortlisted for further processing.
+
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Patch coverage computation doesn't consider the root node.</p>
-</div>
+<p>Patch coverage computation doesn't consider the root node.</p></div>
 
 * **Step 4: Filter with Traits**: If traits are defined in the Knowledge Graph, paths shortlisted in the above step are further filtered based on the confidence score of a classification algorithm in user utterance. 
 * **Step 5: Send to Ranker**: The KG engine then sends the shortlisted paths to the Ontology Ranker Program.
@@ -127,14 +126,14 @@ To add synonyms for a term, follow the below steps:
     * To add Global synonyms, click **Edit** then **Add** under **Knowledge Graph Synonyms** and enter them.
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <p>Press Enter after typing each synonym in the Synonyms box. If you type multiple synonyms without pressing Enter after each synonym, all the synonyms are considered as a single entity, even if they are separated by spaces.</p>
+    <p>Press Enter after typing each synonym in the Synonyms box. If you type multiple synonyms without pressing Enter after each synonym, all the synonyms are considered as a single entity, even if they are separated by spaces.</p></div>
     
-   <img src="../../images/add-global-synonyms.png" alt="add global synonyms" title="add global synonyms" style="border: 1px solid gray; zoom:75%;"></div>
+   <img src="../../images/add-global-synonyms.png" alt="add global synonyms" title="add global synonyms" style="border: 1px solid gray; zoom:75%;">
 
    <div class="admonition note">
    <p class="admonition-title">Note</p>
-   <p>These Knowledge Graph Synonyms can also be accessed from the Manage Synonyms option under the more options icon on the top-right of the Knowledge Graph page.</p>
-   <img src="../../images/manage-synonyms.png" alt="manage synonyms" title="manage synonyms" style="border: 1px solid gray; zoom:75%;"></div>
+   <p>These Knowledge Graph Synonyms can also be accessed from the Manage Synonyms option under the more options icon on the top-right of the Knowledge Graph page.</p></div>
+   <img src="../../images/manage-synonyms.png" alt="manage synonyms" title="manage synonyms" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="4"><li>You can use <b>Bot Synonyms</b> in the identification of KG terms. This option can be enabled either from the <a href="https://developer.kore.ai/docs/bots/nlp/knowledge-graph/#Threshold_Configurations">Threshold and Configurations</a> or from <b>More Options</b> > <b>Manage Synonyms</b>.
 <p>Once enabled, the bot-level synonyms that match with KG terms (or tags) are automatically displayed under the Bot Synonyms heading in the <b>Synonyms</b> section and are used by the KG engine. The Bot Synonyms are used similar to that of KG graph level synonyms, for path qualification and for question matching. When a node matches both with a bot synonym and a bot concept, the bot concept takes priority.</p></li>
