@@ -1,6 +1,6 @@
 # Bot Export – Status API
 
-Gets the status of Bot Export request and also provides the download link of the bot export copy after the export is completed. Refer here for initiating [Bot Export API](bot-export).
+Gets the status of Bot Export request and also provides the download link of the bot export copy after the export is completed. Refer here for initiating [Bot Export API](../bot-export).
 
 <table>
   <tr>

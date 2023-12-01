@@ -1,6 +1,6 @@
 # Conversation Test Suite Creation Status API
 
-To get the creation/import request status of the Conversation Test Suite against a unique Import ID and provide the download link for the results file after the test execution is complete. Please refer to [Create (Import) a Test Suite API ](create-conversation-test-suite.md) to learn more.
+To get the creation/import request status of the Conversation Test Suite against a unique Import ID and provide the download link for the results file after the test execution is complete. Please refer to [Create (Import) a Test Suite API ](../create-conversation-test-suite) to learn more.
 
 <table>
   <tr>

@@ -1,6 +1,6 @@
 # Execute a Test Suite API
 
-To execute Conversation Test Suites and get results. This API only initiates the test process and returns the execution status and **_testRunId_** to track the execution status. Please look at the [Conversation Test Suite Execution Status API](https://developer.kore.ai/docs/bots/api-guide/conversation-test-suite-execution-status-api/) for the results of the test.
+To execute Conversation Test Suites and get results. This API only initiates the test process and returns the execution status and **_testRunId_** to track the execution status. Please look at the [Conversation Test Suite Execution Status API](../batch-test-execution-status/) for the results of the test.
 
 
 <table>

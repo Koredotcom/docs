@@ -1,6 +1,6 @@
 # Bot Publish Status – API
 
-To fetch the publish status of the current bot or the last completed status request for the bot. To initiate the Publish API, refer [here](publish-bot.md).
+To fetch the publish status of the current bot or the last completed status request for the bot. To initiate the Publish API, refer [here](../publish-bot.md).
 
 
 <table>
