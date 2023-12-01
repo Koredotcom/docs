@@ -1,6 +1,6 @@
 # Knowledge Graph Training
 
-[Training your Assistant](https://developer.kore.ai/docs/bots/nlp/optimizing-bots/)is not restricted to the Machine Learning and Fundamental Meaning engines. You must also train the Knowledge Graph (KG) engine, too.
+[Training your Assistant](https://developer.kore.ai/docs/bots/nlp/optimizing-bots/)is not restricted to the Machine Learning and Fundamental Meaning engines. You must also train the Knowledge Graph (KG) engine.
 
 The Ontology-based Knowledge Graph turns static FAQ text into an intelligent, personalized conversational experience. It uses domain terms and relationships thus reducing the training needs. It also has the capability to enable the ontology weighted features whenever ML gets confused and to automate conversational dialog for resolving appropriate answers.
 
