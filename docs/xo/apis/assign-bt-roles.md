@@ -1,4 +1,4 @@
-# **Assign BT Roles API**
+# Assign BT Roles API
 
 To assign a bot role to a set of users in a specific bot.
 

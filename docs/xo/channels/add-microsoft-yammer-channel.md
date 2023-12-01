@@ -19,8 +19,8 @@ To add the Yammer channel, follow the below steps:
 
 
 1. In the **Bots** section of the Bot Builder, click the bot you want to add the Yammer channel to.
-2. On the **Channels** tab, click the** Yammer** icon. The **Yammer Channel** page is displayed.
-3. In a new browser tab, log in to your** Yammer Developer** account and go to the **My Apps** section to register a new app.
+2. On the **Channels** tab, click the **Yammer** icon. The **Yammer Channel** page is displayed.
+3. In a new browser tab, log in to your **Yammer Developer** account and go to the **My Apps** section to register a new app.
 4. To create an app, click **Register New App**. Enter the required details in the listed fields.
 5. Copy the _Redirect URL_ from the **Configurations** tab of the Yammer Channel page and enter it in the **Redirect URL **field.
 6. Click **Continue** to create the app.
@@ -34,7 +34,7 @@ To add the Yammer channel, follow the below steps:
 <img src="../images/Yammer-3.png" alt="deploy yammer" title="deploy yammer" style="border: 1px solid gray; zoom:70%;">
 
 10. Go to the **Configurations** tab on the Yammer channel page to complete the channel setup.
-11. Click** Authorize** to generate a developer access token which enables Kore.ai bot platform to access the App. Enter all the details in other required fields. Select **Yes** and click **Save** to enable Yammer Channel.
+11. Click **Authorize** to generate a developer access token which enables Kore.ai bot platform to access the App. Enter all the details in other required fields. Select **Yes** and click **Save** to enable Yammer Channel.
 
 
 ## Edit Yammer Channel
@@ -43,12 +43,12 @@ To edit the Yammer channel, follow the below steps:
 
 
 1. Hover over the channel and click to modify. You can make necessary updates to your channel configurations and save them.
-2. You can also disable or delete the channel information by clicking the **Settings **icon as shown in the image.
-<img src="../images/Yammer-4png" alt="settings" title="settings" style="border: 1px solid gray; zoom:70%;">
+2. You can also disable or delete the channel information by clicking the **Settings** icon as shown in the image.
+<img src="../images/Yammer-4.png" alt="settings" title="settings" style="border: 1px solid gray; zoom:70%;">
 
 Select one of the following commands to modify the channel:
 
-  * **Disable/Enable** – Click **Disable** to temporarily disable the use of the Yammer channel for your bot. To enable the use of the Yammer channel, Click **Enable.**
+  * **Disable/Enable** – Click **Disable** to temporarily disable the use of the Yammer channel for your bot. To enable the use of the Yammer channel, Click **Enable**.
   * **Delete** – Click **Delete**. On the **Delete Confirmation** dialog box, click **OK** to permanently delete the bot channel configuration.
 
 !!! warning

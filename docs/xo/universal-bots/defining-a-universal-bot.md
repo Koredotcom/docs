@@ -1,4 +1,4 @@
-# **Defining a Universal Bot**
+# Defining a Universal Bot
 
 Kore.ai’s Universal Bots facilitate a scalable, modular approach to bot building by linking several standard individual bots into one.
 
@@ -10,7 +10,7 @@ Kore.ai’s Universal Bots facilitate a scalable, modular approach to bot buildi
 Before starting with[ creating a Universal Bot](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/creating-a-universal-bot/), let us understand how Universal Bots work and how they differ from Standard Bots.
 
 
-### **Bot Behavior**
+### Bot Behavior
 
 Universal bot responses vary with the number of bots and tasks that match the user intent along with their relevance (exact matches or suggestions). The Natural Language Processing (NLP) engine processes the utterances sent to the linked bots, detects the user intents, and ranks them based on relevance. As a developer, you can test and train the bot responses as explained in[ Test the Universal Bot](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/creating-a-universal-bot/#Testing_a_User_Utterance).
 
@@ -70,12 +70,12 @@ Following the table shows how universal bot responses operate in various possibl
 
 
 
-### **Standard Bots vs. Universal Bots**
+### Standard Bots vs. Universal Bots
 
 Universal Bots connect multiple Standard Bots into a single bot. They support most Standard Bot features with a few exceptions.
 
 
-#### **Enabled Features and Configurations**
+#### Enabled Features and Configurations
 
 This section assumes that you understand the fundamentals of[ standard bots](https://developer.kore.ai/docs/bots/bot-builder-tool/bot-creation/defining-a-standard-bot/). Details relevant to the Universal Bots alone are listed here. We recommend you to refer to the relevant standard bot documentation for help with the basics.
 
@@ -291,7 +291,7 @@ When it comes to Universal bots, if a user types <strong>Help</strong>, the bot 
 
 
 
-### **Event Management**
+### Event Management
 
 Let us see the behavior of Universal Bots for the following BotKit events in Linked Bots:
 
@@ -391,7 +391,7 @@ Following table summarises the above scenarios and behavior:
 
 
 
-#### **End of Conversation**
+#### End of Conversation
 
 The following table depicts the bot behavior for the end of the conversation event:
 
@@ -461,7 +461,7 @@ The following table depicts the bot behavior for the end of the conversation eve
 
 
 
-## **Next Steps**
+## Next Steps
 
 
 

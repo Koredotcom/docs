@@ -1,4 +1,4 @@
-# **Generate a Knowledge Graph**
+# Generate a Knowledge Graph
 
 The performance of the  Knowledge Graph is based on its organization which is influenced by the key domain terms, and the established hierarchy.
 

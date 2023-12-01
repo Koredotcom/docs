@@ -1,4 +1,4 @@
-# **Data Insert (Bulk) API**
+# Data Insert (Bulk) API
 
 Used to insert bulk data into Data Table.
 

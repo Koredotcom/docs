@@ -1,4 +1,4 @@
-# **Create (Import) a Test Suite API**
+# Create (Import) a Test Suite API
 
 To create a conversation test suite by importing the test cases from a given file. This API returns **_dsId_**, the ID to check the import status.
 

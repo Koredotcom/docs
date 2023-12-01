@@ -1,6 +1,5 @@
 # Virtual Assistants Overview
 
-
 ## Introduction
 
 Communication has been the essence of life from the beginning of time. Traditionally, conversations were restricted to verbal and textual interaction between humans. These interactions were usually guided by emotions, context, and awareness of previous conversations.

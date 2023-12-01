@@ -1,5 +1,5 @@
 
-# **ML Utterance Train Status API**
+# ML Utterance Train Status API
 
 To get the ML training status.
 

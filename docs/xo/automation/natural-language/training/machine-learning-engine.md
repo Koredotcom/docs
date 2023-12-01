@@ -1,4 +1,4 @@
-# **The Machine Learning Engine**
+# The Machine Learning Engine
 
 Developers need to provide sample utterances for each intent (task) the assistant needs to identify, to train the machine learning model. The Kore.ai XO Platform Machine Learning (ML) engine will build a model that will try to map a user utterance to one of the VA’s intents.
 

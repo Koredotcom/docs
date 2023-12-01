@@ -1,4 +1,4 @@
-# **Query Data (Table) API**
+# Query Data (Table) API
 
 Used to get data from Data Table.
 

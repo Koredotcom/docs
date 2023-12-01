@@ -1,4 +1,4 @@
-# **Proactive Notification Status API**
+# Proactive Notification Status API
 
 To fetch the status of Proactive Notifications API.
 

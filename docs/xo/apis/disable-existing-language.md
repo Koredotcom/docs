@@ -1,4 +1,4 @@
-# **Disable an Existing Language API**
+# Disable an Existing Language API
 
 To disable an existing language for a virtual assistant.
 

@@ -1,5 +1,5 @@
 
-# **Add Questions from Extract – KG**
+# Add Questions from Extract – KG
 
 To add specific questions to the Knowledge graph.
 

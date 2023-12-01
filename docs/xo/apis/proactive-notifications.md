@@ -1,4 +1,4 @@
-# **Proactive Notifications API**
+# Proactive Notifications API
 
 Proactive Notifications allow enterprises to engage with their end users (customers or employees) by providing relevant and timely updates.
 

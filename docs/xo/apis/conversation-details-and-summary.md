@@ -1,4 +1,4 @@
-# **Conversation Details and Summary API**
+# Conversation Details and Summary API
 
 To fetch the conversational details and conversation summary data between the bot and the user. This API supports pagination. You can specify skip and limit parameters to retrieve a certain number of messages at a time.
 

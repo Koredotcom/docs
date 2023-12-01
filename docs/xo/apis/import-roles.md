@@ -1,6 +1,4 @@
-
-
-# **Import Roles API**
+# Import Roles API
 
 To import bot or admin roles into an account. This is typically used to import roles from one environment to another.
 

@@ -1,4 +1,4 @@
-# **ML Utterances Train API**
+# ML Utterances Train API
 
 To initiate the ML training for a bot.
 

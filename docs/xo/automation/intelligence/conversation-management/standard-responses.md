@@ -1,4 +1,4 @@
-# **Standard Responses**
+# Standard Responses
 
 Kore.ai Bot Builder tool provides a few default text responses. This section lists them and gives an explanation as to when these responses are triggered. For an overview on Standard Responses, click [here](https://developer.kore.ai/docs/bots/bot-intelligence/default-dialog/#Standard_Responses).
 

@@ -145,35 +145,8 @@ nav:
     - FAQs: 
       - Automations FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
       - Contact Center FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/   
-  - Integrations:
-    - Overview: whats-new/whats-new-in-this-release.md
-    - Release notes: whats-new/whats-new-in-this-release.md   
-  - APIs:
-    - reference/index.md
-    - Debug Logs API: API/debug-logs-api.md
-    - Outbound Calling API: API/outbound-calling-api.md
-    - Conversation Details & Summary API: API/conversation-details-summary-api.md
-    - Annotations: reference/annotations.md
-    - Buttons: reference/buttons.md
-    - Code blocks: reference/code-blocks.md
-    - Content tabs: reference/content-tabs.md
-    - Data tables: reference/data-tables.md
-    - Diagrams: reference/diagrams.md
-    - Footnotes: reference/footnotes.md
-    - Formatting: reference/formatting.md
-    - Grids: reference/grids.md
-    - Icons, Emojis: reference/icons-emojis.md
-    - Images: reference/images.md
-    - Lists: reference/lists.md
-    - Math: reference/math.md
-    - Tooltips: reference/tooltips.md  
-  - Analytics:
-    - insiders/index.md
-    - Analyze:
-      - Dashboard Filters: analytics/dashboard-filters.md
-      - Changelog: insiders/changelog.md
-  - Administration:
-    - Conversation Automation:
+  - Modules:
+    - AUTOMATIONS:
       - Design:
         - Dialogs: getting-started.md 
         - Knowledge AI: getting-started.md
@@ -211,6 +184,67 @@ nav:
         - Health and Monitoring: getting-started.md 
         - Batch Testing: getting-started.md
         - Conversation Testing: getting-started.md
+    - ANSWERS:
+      - Design:
+        - Dialogs: getting-started.md 
+        - Knowledge AI: getting-started.md
+        - Small Talk: automation/use-cases/small-talk.md
+        - Digital Skills: 
+          - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
+          - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
+          - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
+          - Digital Views: automation/use-cases/digital-skills/digital-views.md
+          - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md
+    - AGENTASSIST:
+      - Design:
+        - Dialogs: getting-started.md 
+        - Knowledge AI: getting-started.md
+        - Small Talk: automation/use-cases/small-talk.md
+        - Digital Skills: 
+          - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
+          - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
+          - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
+          - Digital Views: automation/use-cases/digital-skills/digital-views.md
+          - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md
+    - CONTACT CENTER:
+      - Design:
+        - Dialogs: getting-started.md 
+        - Knowledge AI: getting-started.md
+        - Small Talk: automation/use-cases/small-talk.md
+        - Digital Skills: 
+          - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
+          - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
+          - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
+          - Digital Views: automation/use-cases/digital-skills/digital-views.md
+          - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md      
+  - Integrations:
+    - Overview: whats-new/whats-new-in-this-release.md
+    - Release notes: whats-new/whats-new-in-this-release.md   
+  - APIs:
+    - reference/index.md
+    - Debug Logs API: API/debug-logs-api.md
+    - Outbound Calling API: API/outbound-calling-api.md
+    - Conversation Details & Summary API: API/conversation-details-summary-api.md
+    - Annotations: reference/annotations.md
+    - Buttons: reference/buttons.md
+    - Code blocks: reference/code-blocks.md
+    - Content tabs: reference/content-tabs.md
+    - Data tables: reference/data-tables.md
+    - Diagrams: reference/diagrams.md
+    - Footnotes: reference/footnotes.md
+    - Formatting: reference/formatting.md
+    - Grids: reference/grids.md
+    - Icons, Emojis: reference/icons-emojis.md
+    - Images: reference/images.md
+    - Lists: reference/lists.md
+    - Math: reference/math.md
+    - Tooltips: reference/tooltips.md  
+  - Analytics:
+    - insiders/index.md
+    - Analyze:
+      - Dashboard Filters: analytics/dashboard-filters.md
+      - Changelog: insiders/changelog.md
+  - Administration:
     - Contributing:
       - contributing/index.md
       - Reporting a bug: contributing/reporting-a-bug.md

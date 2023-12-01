@@ -1,5 +1,5 @@
 
-# **ML Utterances Export Status API**
+# ML Utterances Export Status API
 
 To get the download link of the ML Utterances export copy.
 
