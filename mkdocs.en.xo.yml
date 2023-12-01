@@ -184,8 +184,8 @@ nav:
       - Conversation Testing: getting-started.md
   - Answers:
     - Content Sources:
-      - Directory: answers/directory.md 
-      - Web Crawl: answers/web-crawl.md      
+      - Directory: answers/content-sources/directory.md 
+      - Web Crawl: answers/content-sources/web-crawl.md      
   - Contact Center:
     - Configurations:
       - Default Flows: contactcenter/configurations/default-flows/configure-default-flows.md 
@@ -199,7 +199,7 @@ nav:
         - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md  
   - AgentAssist:
     - Agent Experience:
-      - Dialogs: getting-started.md 
+      - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md 
       - Knowledge AI: getting-started.md
       - Small Talk: automation/use-cases/small-talk.md
       - Digital Skills: 
