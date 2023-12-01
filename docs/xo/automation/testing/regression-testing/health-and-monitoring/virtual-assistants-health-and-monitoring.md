@@ -1,4 +1,4 @@
-# **Health and Monitoring**
+# Health and Monitoring
 
 The **Health and Monitoring** dashboard offers a goal-driven approach to improving the accuracy of the virtual assistant’s Natural Language Processing (NLP) model. The training data is analyzed along with the test coverage and test results of the test suites to provide insights into the NLP Model’s performance.
 

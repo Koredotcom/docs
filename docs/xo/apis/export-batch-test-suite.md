@@ -1,5 +1,5 @@
 
-# **Export Batch Test Suite API**
+# Export Batch Test Suite API
 
 To export the test cases of a given Batch Test Suite and get a link to download the file once the export is completed.
 

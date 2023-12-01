@@ -1,5 +1,5 @@
 
-# **Import Batch Test Suite API**
+# Import Batch Test Suite API
 
 To import the test cases from a given Test Suite file.
 

@@ -1,4 +1,4 @@
-# **Test Case Assertion**
+# Test Case Assertion
 
 A test case assertion is a statement specifying a condition that must be satisfied for a test case to be considered successful. In the context of conversational systems, test case assertions can be used to validate various aspects of the conversation, such as the correctness of the response to a user’s input, the correctness of the conversation flow, and the correctness of the conversation context. By including multiple assertions in a test case, you can thoroughly test the behavior of a conversational system and ensure that it is functioning as expected.
 

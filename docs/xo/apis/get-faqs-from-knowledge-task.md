@@ -1,4 +1,4 @@
-# **Get FAQs – KG**
+# Get FAQs – KG
 
 To get a list of questions and nodes under the Knowledge task.
 

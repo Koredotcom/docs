@@ -1,4 +1,4 @@
-# **Configuring the Microsoft Graph Action**
+# Configuring the Microsoft Graph Action
 
 You can use Microsoft Graph to create, view, and update events and to-do lists, and send emails to users. Click the [Microsoft Graph](https://azure.microsoft.com/en-us/get-started/azure-portal){:target="_blank"} link to learn more. .
 

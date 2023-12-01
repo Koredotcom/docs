@@ -1,4 +1,4 @@
-# **Dialogflow Engine**
+# Dialogflow Engine
 
 The Dialogflow engine is responsible for understanding user inputs and providing relevant responses based on pre-defined intents and entities. It uses natural language processing (NLP) and machine learning algorithms to identify the user’s intent and extract relevant information from their inputs. It also enables developers to build complex conversational flows, manage context, and integrate with external APIs. To use the Dialogflow engine for Natural Language Understanding, you need to create the agent and train the model on Dialogflow if you don’t have one already. The following sections detail the agent creation and training steps and also explain how to obtain the information needed to configure the Dialogflow ES Adapter. Once all the configurations are done, you can start [testing the conversation behavior/flow](../test-and-debug/){:target="_blank"} of the bot using your Dialogflow ES model.
 

@@ -1,4 +1,4 @@
-# **Get Roles API**
+# Get Roles API
 
 To retrieve the list of the bot or admin roles available in an account.
 

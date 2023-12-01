@@ -1,4 +1,4 @@
-# **Extraction from file or URL – KG**
+# Extraction from file or URL – KG
 
 To extract the Knowledge Graph from the imported file or URL.
 

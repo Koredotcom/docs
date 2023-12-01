@@ -1,4 +1,4 @@
-# **FAQ Training API**
+# FAQ Training API
 
 To initiate the training of the knowledge graph.
 

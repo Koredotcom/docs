@@ -1,6 +1,6 @@
 
 
-# **Get Bots API**
+# Get Bots API
 
 To retrieve the list of the bots available in an account.
 

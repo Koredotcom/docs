@@ -1,4 +1,4 @@
-# **Test and Debug**
+# Test and Debug
 
 The following sections describe how you can test and debug your Virtual Assistant to validate the working of External NLU.
 

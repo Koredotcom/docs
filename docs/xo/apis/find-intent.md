@@ -1,4 +1,4 @@
-# **Find Intent API**
+# Find Intent API
 
 To fetch the intent recognition result and the scores from NLP and ML engines.
 

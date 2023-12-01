@@ -1,4 +1,4 @@
-# **Configuring the ServiceNow Action**
+# Configuring the ServiceNow Action
 
 The XO Platform lets you easily connect the ServiceNow integration to create, view, update, search and delete incidents. You can also create, view, update, search and delete requests using the pre-built templates. Click the [ServiceNow](https://www.servicenow.com/){:target="_blank"} link to know more. 
 

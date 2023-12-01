@@ -1,4 +1,4 @@
-# **Add and Enable a New Language API**
+# Add and Enable a New Language API
 
 To initiate the addition and enablement of a new language for a virtual assistant.
 

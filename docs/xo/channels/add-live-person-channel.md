@@ -7,7 +7,6 @@ To add LivePerson as a channel to your Kore.ai assistant, you must add a bot use
 !!! note
 
     A LivePerson account with administrator credentials is required to complete this configuration.
-         .
 
 Steps to enable the LivePerson channel:
 

@@ -1,5 +1,5 @@
 
-# **Get Dashboard Widget Data**
+# Get Dashboard Widget Data
 
 To retrieve the data associated with custom widgets and the reports of a bot.
 

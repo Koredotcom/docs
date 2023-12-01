@@ -1,4 +1,4 @@
-# **Configuring the Here Action**
+# Configuring the Here Action
 
 The Kore.ai XO Platform lets you easily connect with your Here instance to find locations by text. [Learn more about Here](https://www.here.com/){:target="_blank"}.
 

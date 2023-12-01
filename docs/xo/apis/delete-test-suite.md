@@ -1,5 +1,5 @@
 
-# **Delete a Test Suite API**
+# Delete a Test Suite API
 
 To delete an existing conversation test suite.
 

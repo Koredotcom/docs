@@ -1,5 +1,5 @@
 
-# **Bot Variables Import API**
+# Bot Variables Import API
 
 To import global and content variables into the bot.
 

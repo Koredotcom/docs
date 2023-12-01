@@ -1,4 +1,4 @@
-# **Conversation Summary API**
+# Conversation Summary API
 
 The API summarizes the conversation between a user and an agent. The agent can be a virtual agent or a human agent. The API accepts the conversation Id or the transcripts as input and provides an auto-generated conversation summary. Currently, the API supports transcripts only in English (en) and is available only in our global deployment (https://bots.kore.ai).
 

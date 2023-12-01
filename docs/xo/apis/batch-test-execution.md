@@ -1,9 +1,6 @@
+# Batch Test Execution API
 
-
-
-# **Batch Test Execution API**
-
-To execute Batch Test Suites and get results. This API only initiates the test process. Please look at the [Batch Test Execution Status API](https://developer.kore.ai/docs/bots/api-guide/batch-test-execution-status-api/) for the results of the batch test.
+To execute Batch Test Suites and get results. This API only initiates the test process. Please look at the [Batch Test Execution Status API](batch-test-execution-status/) for the results of the batch test.
 
 
 <table>

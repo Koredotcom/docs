@@ -1,4 +1,4 @@
-# **ML Utterances Import Status API**
+# ML Utterances Import Status API
 
 To get the status of the ML utterances import request made through Import ML Utterances API.
 

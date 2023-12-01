@@ -1,4 +1,4 @@
-# **Data Delete API**
+# Data Delete API
 
 Used to delete data from Data Table.
 

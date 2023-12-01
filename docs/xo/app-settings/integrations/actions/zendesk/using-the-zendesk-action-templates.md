@@ -1,4 +1,4 @@
-# **Using the Zendesk Action Templates**
+# Using the Zendesk Action Templates
 
 You can use the **Prebuilt Action Templates** from your Zendesk integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 

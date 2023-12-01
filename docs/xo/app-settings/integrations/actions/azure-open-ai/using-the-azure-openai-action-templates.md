@@ -1,4 +1,4 @@
-# **Using the Azure OpenAI Action Templates**
+# Using the Azure OpenAI Action Templates
 
 You can use the **Prebuilt Action Templates** from your Azure OpenAI integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 

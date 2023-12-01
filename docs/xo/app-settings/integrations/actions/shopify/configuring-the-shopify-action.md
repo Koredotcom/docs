@@ -1,4 +1,4 @@
-# **Configuring the Shopify Action**
+# Configuring the Shopify Action
 
 The Kore.ai XO Platform lets you easily connect your Shopify Shop instance to find information regarding Customers, Products, and Orders.
 
