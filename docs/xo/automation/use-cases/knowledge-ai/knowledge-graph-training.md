@@ -131,8 +131,8 @@ Once enabled, the bot-level synonyms that match with KG terms (or tags) are auto
 
 When a node matches both with a bot synonym and a bot concept, the bot concept takes priority.
 
-5. To add synonyms for a child node, enter them in the Synonyms box next to the <b>Child Terms</b> listed at the bottom of the settings window.
-<img src="../../images/child-synonyms-terms.png" alt="child synonyms terms" title="child synonyms terms" style="border: 1px solid gray; zoom:75%;">
+<ol start="5"><li>To add synonyms for a child node, enter them in the Synonyms box next to the <b>Child Terms</b> listed at the bottom of the settings window.
+<img src="../../images/child-synonyms-terms.png" alt="child synonyms terms" title="child synonyms terms" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ### Traits
 
@@ -191,3 +191,124 @@ To train and improve the performance, Thresholds and Configurations can be speci
 </div>
 
 The settings for the Knowledge Graph engine are discussed in detail in the following sections.
+
+### Explore Thresholds and Configurations
+
+To navigate to Thresholds and Configuration, please follow the steps below: 
+
+1. Open the VA for which you want to configure Knowledge Graph settings.
+2. Hover over the left pane and click **Natural Language** > **Training**.
+3. Click the **Thresholds & Configurations** tab.
+4. Below is a detailed discussion about the **Knowledge Graph** section on this page.
+<img src="../../images/thresholds-configurations.png" alt="thresholds and configurations" title="thresholds and configurations" style="border: 1px solid gray; zoom:75%;">
+
+Here are the features that you will find in this section of the Platform:
+
+* **Auto-Correction** will spell correct the words in the user input to the closest matching word from the VA’s Knowledge Graph domain dictionary. Knowledge Graph domain dictionary comprises the words extracted from Knowledge Graph’s questions, alternate questions, nodes, and synonyms.
+* **Bot Synonyms** will enable the XO Platform to use the Bot Synonyms in Knowledge Graph as well. Inclusion of Bot Synonyms for intent detection by the KG engine requires training. Click **Proceed** when prompted to enable this setting and initiate training.
+* **Lemmatization using Parts of Speech** will enable the use of parts of speech associated with the words in the utterance to lemmatize.
+* **Path Coverage** can be used to define the minimum percentage of terms in the user’s utterance to be present in a path to qualify it for further scoring. The default setting is 50% i.e. at least half of the terms in the user utterance should match the node names and terms.
+* **Minimum and Definitive Level for Knowledge Graph Intent** allows you to set the confidence levels for a Knowledge Graph intent. You can view and adjust the confidence level percentages for the graph in one of three ranges:
+    * **Definitive Range** – Matches in this range (**green area**) are picked and any other probable matches are discarded, default set to 93-100%.
+    * **Probable Range** – Matches in this range (**dark gray area**) are considered for re-scoring and ranking, by default set to 80-93%
+    * **Low Confidence Range** – If no other intents have matched, low confidence matches (**orange area**) are presented to end-user for intent confirmation, by default set to 60-80%
+    * **Not Matching an Intent** – The **light gray area** represents the knowledge graph intent NLP interpreter confidence levels as too low to match the knowledge graph intent, default set to 60%.
+* **KG Suggestions Count:** Define the maximum number of KG/FAQ suggestions (up to 5) to be presented when a definite KG intent match is not available. Default set to 3.
+* **Proximity of Suggested Matches:** Define the maximum difference (up to 50%) to be allowed between top-scoring and immediate next suggested questions to consider them as equally important. Default set to 5%. This applies to the matches in the probable range.
+* **Manage Long Responses** when the response size exceeds channel-specific limitations. You can choose to truncate the response or display the full response with a **read more** link. Read More link is included at the end of the message. On selecting this link, the full response is opened as an answer in the browser. The URL to open the long response in a web browser is set by default by the Platform. But you can provide a custom URL, too.
+* **Search in Answer** for the qualifying FAQs.
+* **Qualify Contextual Paths** in the Knowledge Graph using the context tags available in the context. Enabling this option will ensure that the paths are shortlisted using terms or tags from the context. These tags can come from previous matched paths or intent or custom-defined tags.
+
+The Platform also offers some advanced configurations. [Learn more](https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/).
+
+### Search in Answer
+
+This feature enables identifying FAQs by searching the user input against the answer section, instead of only matching with questions. This is a fallback mechanism only i.e. search in the answer section will be done only if no FAQs are identified from questions.
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This feature is not supported in all languages, refer here for details.</p>
+</div>
+
+When the **Search in Answer** flag is enabled, the Knowledge Graph engine considers the answer text for identifying the intents also.
+
+Once this option is enabled, you can specify whether to **Inform the end-user that the answer is a probable answer**. If selected a Standard Message to the effect is displayed, which can be customized using the Manage Response link. [Learn more](https://developer.kore.ai/docs/bots/bot-intelligence/default-dialog/#Managing_Standard_Responses).
+
+There are three ways in which you can render the response:
+
+1. **Show Complete Response**: Full response is sent as the answer to the user.
+2. **Show only the Relevant Paragraph**: Only the relevant paragraph from which the question was identified is sent as the response.
+3. **Show only the Relevant Paragraph with Read More link**: Only the relevant paragraph from which the question was identified is sent as the response.
+
+An additional Read More link is included at the end of the message. On selecting this link, the full response is opened as an answer in the browser. The URL to open the long response in a web browser is set by default by the Platform. But you can provide a **custom URL** (see below for details).
+
+<img src="../../images/search-in-answer.png" alt="search in answer" title="search in answer" style="border: 1px solid gray; zoom:75%;">
+
+### Custom URL Configuration
+
+By default, the URL to open the long response in the web browser is set by the Platform. You have an option to provide a custom URL for rendering the FAQ answers.
+
+The Platform will call the provided URL with details of the relevant message template (template id) and other necessary information.
+
+The following API gives the full information of the FAQ:
+
+**URL**: `https://{{host-name}}/api/1.1/public/users/{{userId}}/faqs/resolvedResponse/{{respId}}`
+
+**Method**: `get`
+
+**Headers**: `{auth : JWT}`
+
+**Sample Response**:
+
+```
+{
+"response": "You can contact our Branch officials wherein you have submitted your documents.If the documents are in order, the account will be opened within 2 working days.",
+"primaryQuestion": "How to check the status of my account opening?"
+}
+```
+
+## Lemmatization
+
+Lemmatization in linguistics is the process of grouping together the inflected forms of a word so they can be analyzed as a single item, identified by the word’s lemma, or dictionary form. Using Parts of Speech information from the user utterance in the process of lemmatization can improve identifying a more accurate FAQ.
+
+Following are some examples of the phrases as recognized by the KG engine with and without using parts of speech:
+
+<table border="1.5">
+  <tr bgcolor="#ECECEC">
+   <td><strong>USER UTTERANCE</strong>
+   </td>
+   <td><strong>NOT USING POS</strong>
+   </td>
+   <td><strong>USING POS</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>What is my outstanding booking invoice balance
+   </td>
+   <td>outstand
+<p>
+book</p>
+   </td>
+   <td>outstanding
+<p>
+booking</p>
+   </td>
+  </tr>
+  <tr bgcolor="#FAFAFA">
+   <td>I am filing for a visa so that I can travel
+   </td>
+   <td>file</td>
+   <td>filing</td>
+  </tr>
+  <tr>
+   <td>What happens if my luggage exceeds the maximum weight? ?</td>
+   <td>, happen
+<p>
+exceed
+   </td>
+   <td>happens
+<p>
+exceeds</p>
+   </td>
+  </tr>
+</table>
