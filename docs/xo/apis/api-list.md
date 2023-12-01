@@ -41,11 +41,11 @@ Based on the functionality addressed, the APIs can be categorized as:
    </td>
   </tr>
   <tr>
-   <td><a href="../upload-file.md">Upload File</a>
+   <td><a href="../upload-file">Upload File</a>
    </td>
    <td>To upload the botdefinition, botconfig, and botfunction file (if any) as well as the bot icon to the local server and get the file ID to be used in the Import Bot API.
 <p>
-To upload utterances in <a href="import-ml-utterances.md">ML Utterances Import API</a>, bot roles, admin roles for <a href="import-roles.md">Import Roles API</a>, <a href="import-batch-test-suite.md">Import Batch Test Suite </a>details and <a href="extract-kg-from-file-url.md">Extraction from file or URL</a> to extract FAQs.
+To upload utterances in <a href="./import-ml-utterances">ML Utterances Import API</a>, bot roles, admin roles for <a href="import-roles.md">Import Roles API</a>, <a href="../apis/import-batch-test-suite.md">Import Batch Test Suite </a>details and <a href="extract-kg-from-file-url.md">Extraction from file or URL</a> to extract FAQs.
    </td>
    <td>NA
    </td>
