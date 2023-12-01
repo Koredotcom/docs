@@ -1,4 +1,4 @@
-# **Multilingual Virtual Assistant Behavior**
+# Multilingual Virtual Assistant Behavior
 
 In the case of multi-lingual bots, while much of the bot behavior does not change with the language, but the language semantics does impose some restrictions. In this document we will list out the different behaviors that would be language-dependent, so you as bot developer can cater for such scenarios.
 

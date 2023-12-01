@@ -1,4 +1,4 @@
-# **Multilingual VAs: Components & Feature Support**
+# Multilingual VAs: Components & Feature Support
 
 In the case of multilingual VAs, while much of the assistant’s behavior does not change with the language, the semantics does impose some restrictions. In this document we will list out the different behaviors that would be language-dependent, so you can cater for such scenarios.
 

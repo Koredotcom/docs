@@ -1,4 +1,4 @@
-# **Getting Started with Multilingual Virtual Assistants**
+# Getting Started with Multilingual Virtual Assistants
 
 Consumers are more likely to engage with virtual assistants that communicate in their preferred language. The Kore.ai XO Platform supports enabling multiple languages within an assistant without having to rebuild the definitions. The platform supports over 100 languages and you can choose to enable any of these languages for your assistant. You can start building with one language and enable additional languages as and when you need them.  
 
