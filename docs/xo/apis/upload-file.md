@@ -1,6 +1,6 @@
 # Upload File API
 
-To upload the _botdefinition_, _botconfig_, and _botfunction_ files (if any) and the **bot** icon to the local server. Additionally, the API fetches the _file ID_ to be used in [Import Bot API](https://developer.kore.ai/docs/bots/api-guide/import-bot-as-a-new-bot-api/).
+To upload the _botdefinition_, _botconfig_, and _botfunction_ files (if any) and the **bot** icon to the local server. Additionally, the API fetches the _file ID_ to be used in [Import Bot API](import-bot-as-new-bot.md).
 
 !!! note
     You need to upload the files separately. You can upload a file by signing with any app created by the account administrator.
