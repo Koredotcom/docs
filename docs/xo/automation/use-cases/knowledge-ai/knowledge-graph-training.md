@@ -19,11 +19,11 @@ You can find the Knowledge Graph by selecting your desired VA, then going to **B
 <p><ul><li>Default Terms are not available. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.</li>
 <li>Organizer Terms do not support Path-Level and Knowledge Graph Synonyms. They support Intent Preconditions and Context Output.</li> 
 <li>Mandatory Terms support Traits, Path-Level and Knowledge Graph Synonyms, Intent Preconditions, and Context Output, just like in an Ontology-based Graph.</li>
-<li>You can set all Thresholds and Configurations except Path Coverage and Lemmatization using Parts of Speech, Search in Answer, and Qualify Contextual Paths, which are not supported by Few-Shot Graphs.</li>
+<li>You can set all Thresholds and Configurations except Path Coverage and Lemmatization using Parts of Speech, Search in Answer, and Qualify Contextual Paths, which are not supported by Few-Shot Graphs.</li></ul></p>
 
-See the Knowledge Graph Types Comparison Table for a detailed list of supported features.
+<p>See the Knowledge Graph Types Comparison Table for a detailed list of supported features.</p>
 
-Also, see Training Configuration below for training setup details.</p>
+<p>Also, see Training Configuration below for training setup details.</p>
 </div>
 
 ## Knowledge Graph Engine Capabilities
@@ -326,31 +326,28 @@ Following are some examples of the phrases as recognized by the KG engine with a
    </td>
    <td>outstand
 <p>
-book
+book</p>
    </td>
    <td>outstanding
 <p>
-booking
+booking</p>
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>I am filing for a visa so that I can travel
    </td>
-   <td>file
-   </td>
-   <td>filing
-   </td>
+   <td>file</td>
+   <td>filing</td>
   </tr>
   <tr>
-   <td>What happens if my luggage exceeds the maximum weight? ?
-   </td>
+   <td>What happens if my luggage exceeds the maximum weight? ?</td>
    <td>, happen
 <p>
 exceed
    </td>
    <td>happens
 <p>
-exceeds
+exceeds</p>
    </td>
   </tr>
 </table>
