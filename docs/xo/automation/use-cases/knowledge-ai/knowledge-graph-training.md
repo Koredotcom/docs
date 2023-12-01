@@ -1,6 +1,6 @@
 # Knowledge Graph Training
 
-[Training your Assistant](https://developer.kore.ai/docs/bots/nlp/optimizing-bots/)is not restricted to the Machine Learning and Fundamental Meaning engines. You must also train the Knowledge Graph (KG) engine, too.
+[Training your Assistant](https://developer.kore.ai/docs/bots/nlp/optimizing-bots/) is not restricted to the Machine Learning and Fundamental Meaning engines. You must also train the Knowledge Graph (KG) engine.
 
 The Ontology-based Knowledge Graph turns static FAQ text into an intelligent, personalized conversational experience. It uses domain terms and relationships thus reducing the training needs. It also has the capability to enable the ontology weighted features whenever ML gets confused and to automate conversational dialog for resolving appropriate answers.
 
@@ -19,11 +19,11 @@ You can find the Knowledge Graph by selecting your desired VA, then going to **B
 <p><ul><li>Default Terms are not available. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.</li>
 <li>Organizer Terms do not support Path-Level and Knowledge Graph Synonyms. They support Intent Preconditions and Context Output.</li> 
 <li>Mandatory Terms support Traits, Path-Level and Knowledge Graph Synonyms, Intent Preconditions, and Context Output, just like in an Ontology-based Graph.</li>
-<li>You can set all Thresholds and Configurations except Path Coverage and Lemmatization using Parts of Speech, Search in Answer, and Qualify Contextual Paths, which are not supported by Few-Shot Graphs.</li></ul></p>
+<li>You can set all Thresholds and Configurations except Path Coverage and Lemmatization using Parts of Speech, Search in Answer, and Qualify Contextual Paths, which are not supported by Few-Shot Graphs.</li></ul></p></div>
 
-<p>See the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-overview/#compare-knowledge-graph-typesfor">Knowledge Graph Types Comparison Table</a> for a detailed list of supported features.</p>
+<p>See the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-overview/#compare-knowledge-graph-types">Knowledge Graph Types Comparison Table</a> for a detailed list of supported features.</p>
 
-<p>Also, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-training/#training-configuration">Training Configuration</a> below for training setup details.</p></div>
+<p>Also, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-training/#training-configuration">Training Configuration</a> below for training setup details.</p>
 
 ## Knowledge Graph Engine Capabilities
 
@@ -104,7 +104,7 @@ When you type a question in the Intent Name **Add Question** field, the Knowledg
 
 After you add a tag, it is visible below the question like a tag everywhere the question appears. Tags work exactly like terms but are not displayed in the Knowledge Graph to avoid clutter. 
 
-## Synonyms
+### Synonyms
 
 You can add multiple synonyms for each term in your Knowledge Graph, making the path discoverable for varied user utterances. You can add synonyms for a term from the term’s  Settings window.
 
@@ -165,10 +165,8 @@ To add a trait to a node/term, follow the below steps:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Adding a trait to a node doesn't add it to other nodes with the same name. You must add traits to each relevant node separately.
-</p></div>
-
-<img src="../../images/add-term-traits.png" alt="add term traits" title="add term traits" style="border: 1px solid gray; zoom:75%;">
+Adding a trait to a node doesn't add it to other nodes with the same name. You must add traits to each relevant node separately.
+<img src="../../images/add-term-traits.png" alt="add term traits" title="add term traits" style="border: 1px solid gray; zoom:75%;"></div>
 
 ### Context
 
@@ -194,8 +192,7 @@ To edit the stop words list, follow the below steps:
 
 1. From the Knowledge Graph page, click on the **more options icon** and select **Manage Stop Words**.
 2. From the Manage Stop Words window, delete or add stop words.
-
-   <img src="../../images/manage-stop-words.png" alt="manage stop words" title="manage stop words" style="border: 1px solid gray; zoom:75%;">
+<img src="../../images/manage-stop-words.png" alt="manage stop words" title="manage stop words" style="border: 1px solid gray; zoom:75%;">
 
 ## Training Process
 
@@ -231,8 +228,7 @@ To navigate to Thresholds and Configuration, please follow the steps below:
 2. Hover over the left pane and click **Natural Language** > **Training**.
 3. Click the **Thresholds & Configurations** tab.
 4. Below is a detailed discussion about the **Knowledge Graph** section on this page.
-
-   <img src="../../images/thresholds-configurations.png" alt="thresholds and configurations" title="thresholds and configurations" style="border: 1px solid gray; zoom:75%;">
+<img src="../../images/thresholds-configurations.png" alt="thresholds and configurations" title="thresholds and configurations" style="border: 1px solid gray; zoom:75%;">
 
 Here are the features that you will find in this section of the Platform:
 
