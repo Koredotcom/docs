@@ -123,14 +123,41 @@ To add synonyms for a term, follow the below steps:
     * To add Global synonyms, click **Edit** then **Add** under **Knowledge Graph Synonyms** and enter them.
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <p>Press Enter after typing each synonym in the Synonyms box. If you type multiple synonyms without pressing Enter after each synonym, all the synonyms are considered as a single entity, even if they are separated by spaces.</p>
-    <img src="../../images/add-global-synonyms.png" alt="add global synonyms" title="add global synonyms" style="border: 1px solid gray; zoom:75%;"></div>
-   <div class="admonition note">
-   <p class="admonition-title">Note</p>
-   <p>These Knowledge Graph Synonyms can also be accessed from the Manage Synonyms option under the more options icon on the top-right of the Knowledge Graph page.</p>
-   <img src="../../images/manage-synonyms.png" alt="manage synonyms" title="manage synonyms" style="border: 1px solid gray; zoom:75%;"></div>
+    <ul><li>Press Enter after typing each synonym in the Synonyms box. If you type multiple synonyms without pressing Enter after each synonym, all the synonyms are considered as a single entity, even if they are separated by spaces.
+    <img src="../../images/add-global-synonyms.png" alt="add global synonyms" title="add global synonyms" style="border: 1px solid gray; zoom:75%;"></li>
+   <li>These Knowledge Graph Synonyms can also be accessed from the Manage Synonyms option under the more options icon on the top-right of the Knowledge Graph page.
+   <img src="../../images/manage-synonyms.png" alt="manage synonyms" title="manage synonyms" style="border: 1px solid gray; zoom:75%;"></li></ul></div>
 
 <ol start="4"><li>You can use <b>Bot Synonyms</b> in the identification of KG terms. This option can be enabled either from the <a href="https://developer.kore.ai/docs/bots/nlp/knowledge-graph/#Threshold_Configurations">Threshold and Configurations</a> or from <b>More Options</b> > <b>Manage Synonyms</b>.
 <p>Once enabled, the bot-level synonyms that match with KG terms (or tags) are automatically displayed under the Bot Synonyms heading in the <b>Synonyms</b> section and are used by the KG engine. The Bot Synonyms are used similar to that of KG graph level synonyms, for path qualification and for question matching. When a node matches both with a bot synonym and a bot concept, the bot concept takes priority.</p></li>
 <li>To add synonyms for a child node, enter them in the Synonyms box next to the <b>Child Terms</b> listed at the bottom of the settings window.
 <img src="../../images/child-synonyms-terms.png" alt="child synonyms terms" title="child synonyms terms" style="border: 1px solid gray; zoom:75%;"></li></ol>
+
+### Traits
+
+You can create traits with common user utterances and then add them to the relevant terms in your Knowledge Graph. To know more about Traits, [click here](https://developer.kore.ai/docs/bots/nlp/traits/).
+
+Traits are common across the XO Platform. If you have created Traits from the Natural Language section they are available for use here as well.
+
+To create a trait, follow the below steps:
+
+1. On the top-right of the Knowledge Graph window, click the **more options icon** and then select **Manage Traits**.
+<img src="../../images/manage-traits.png" alt="manage traits" title="manage traits" style="border: 1px solid gray; zoom:75%;">
+2. On the Manage Traits window, click **New Trait**.
+3. In the **Trait Type** and **Trait Name** field, enter a relevant name for the trait. For example, *Flight Fare*.
+4. In the **Utterances** field, enter all the utterances that you want to include in the trait. Examples of the *Issues* trait: *First Class, Premium Economy, Economy,* etc.
+5. Click **Save & Add Rule** or **Save & Exit**.
+<img src="../../images/add-traits-save-and-add-rules.png" alt="save and add rule" title="save and add rule" style="border: 1px solid gray; zoom:75%;">
+
+After you create a trait, you can assign it to multiple nodes in the Knowledge Graph.
+
+To add a trait to a node/term, follow the below steps:
+
+1. On the top-left of your Knowledge Graph, hover over the **terms** to which you want to add the trait.
+2. Click the **gear icon** to open the **Settings** window.
+3. Select the name of a trait from the **Trait** dropdown list and click **Save**.
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+Adding a trait to a node doesn't add it to other nodes with the same name. You must add traits to each relevant node separately.
+<img src="../../images/add-term-traits.png" alt="add term traits" title="add term traits" style="border: 1px solid gray; zoom:75%;"></div>

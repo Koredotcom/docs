@@ -165,10 +165,8 @@ To add a trait to a node/term, follow the below steps:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Adding a trait to a node doesn't add it to other nodes with the same name. You must add traits to each relevant node separately.
-</p></div>
-
-<img src="../../images/add-term-traits.png" alt="add term traits" title="add term traits" style="border: 1px solid gray; zoom:75%;">
+Adding a trait to a node doesn't add it to other nodes with the same name. You must add traits to each relevant node separately.
+<img src="../../images/add-term-traits.png" alt="add term traits" title="add term traits" style="border: 1px solid gray; zoom:75%;"></div>
 
 ### Context
 
