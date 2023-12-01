@@ -54,3 +54,44 @@ Here are the steps that the Knowledge Graph Engine takes when detecting FAQs:
     * Paths with score >= upper_threshold are qualified as an answer (definitive match).
     * Paths with lower_threshold > score > upper_threshold are marked as suggestions (probable match).
     * Paths with a score > lower_threshold are ignored.
+
+## Training Guidelines
+
+From the Knowledge Graph, follow these steps to build and train the corresponding Knowledge Graph:
+
+1. Identify terms by grouping the unique words in each FAQ question. Build a hierarchy based on all such unique words.
+2. Ensure that each node has not more than 25 questions.
+3. Associate traits with terms to enable filtering FAQs from multiple identified results.
+4. Define synonyms for each term/node in the hierarchy. Ensure that all the different ways to call the term are defined.
+5. Depending on the importance of each term in a path, mark them as either mandatory or regular.
+6. Define alternative questions for each FAQ to ensure better coverage.
+7. Manage context for accurate response.
+8. Use Stop Words to filter unwanted utterances.
+
+## Training Configuration
+
+This article presupposes that you already know the basics of building your Knowledge Graph. If not, please read [this article](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ontology/).
+
+In order to configure the training of your Knowledge Graph for improved VA performance, we recommend that you go through as many of the following parameters as possible. These parameters involve:
+
+* Adjusting the Term Type to your VA’s needs when adding terms to your graph,
+* Setting tags for FAQs to improve detection,
+* Configuring synonyms for Knowledge Graph terms to enhance path detection and help the VA find the appropriate questions to answer by widening the spectrum of words that can be used to find a specific question,
+* Adding Traits to detect relevant information that improves intent or scenario detection.
+* Manage Context to help users complete tasks faster and create more natural, human-like back and forth conversations.
+* Add Stop Words which will be discarded from intent scoring, even when they are a node term. 
+
+We will discuss these parameters in detail in the following sections.
+
+### Term Type
+
+Designate the terms and tags in the Knowledge Graph as Default, or Mandatory, or Organizer depending on their importance in qualifying matching paths: You can configure term types by accessing the term/node settings.
+
+<img src="../../images/term-type-settings.png" alt="term type setting" title="term type setting" style="border: 1px solid gray; zoom:75%;">
+
+The available term types are: 
+
+* **Default**: Default terms do not have any particular considerations in shortlisting qualified paths.
+* **Mandatory**: When you mark a term as Mandatory, all paths associated with the term are shortlisted for ranking only if the user’s utterance includes the mandatory term or its synonyms.
+* **Organizer**: Term can be marked as being a part of the Knowledge Graph only for organizing questions (this option is available only for terms, not tags).
+<img src="../../images/term-types.png" alt="term types" title="term types" style="border: 1px solid gray; zoom:75%;">
