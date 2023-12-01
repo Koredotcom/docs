@@ -1,4 +1,4 @@
-# **Intent Discovery (Beta)**
+# Intent Discovery (Beta)
 
 The new Intent Discovery module helps you auto-extract popular intents from previous user conversations. It reduces the time and effort to build a virtual assistant and leads to the success of your Conversational AI Journey. This is a beta feature and is available only for the English language and Enterprise users.
 
@@ -9,10 +9,10 @@ You can upload your historical transcripts in CSV format. After the transcripts 
 
 The Intent Discovery journey consists of the following steps:
 
-1. [Create a Project](https://docsinternal-kore.github.io/docs/xo/automation/tools/intent-discovery/#create-a-project): You may have many business use cases to automate. Projects help manage intent discovery for each business use case separately – a project for a specific use case.
-2. [Upload Transcripts](https://docsinternal-kore.github.io/docs/xo/automation/tools/intent-discovery/#upload-transcripts): Upload your use case-specific historical transcripts in CSV format. Conversations are extracted from the uploaded transcripts.
-3. [Extract Intents:](https://docsinternal-kore.github.io/docs/xo/automation/tools/intent-discovery/#extract-intents) Intents and training data are extracted from the conversations.
-4. [Train the Utterances](https://docsinternal-kore.github.io/docs/xo/automation/tools/intent-discovery/#train-the-utterances) to create new intents or add them as training data: You can add new intents as dialogs or FAQs or train them for existing dialogs or FAQs.
+1. [Create a Project](#create-a-project): You may have many business use cases to automate. Projects help manage intent discovery for each business use case separately – a project for a specific use case.
+2. [Upload Transcripts](#upload-transcripts): Upload your use case-specific historical transcripts in CSV format. Conversations are extracted from the uploaded transcripts.
+3. [Extract Intents:](#extract-intents) Intents and training data are extracted from the conversations.
+4. [Train the Utterances](#train-the-utterances) to create new intents or add them as training data: You can add new intents as dialogs or FAQs or train them for existing dialogs or FAQs.
 
 ## Create a Project
 
@@ -198,8 +198,9 @@ The dialog box shows a table with individual rows for each session. The table ha
     * The platform shows only 3 utterances per session (row). The remaining count of the utterances is shown as a chip. 
     * On clicking the chip, you see all the utterances for the corresponding session.
     * You can **bookmark** the utterances.
+
 * Status: A dropdown that shows whether the session item has been reviewed. By default, it  shows **Yet to Review**. You can change it to **Reviewed**.
-* **View Transcripts** action button: This button is present in the Status column of each row, next to the drop-down. It helps you view the detailed conversion of the Session. On clicking the icon, the [**Session Details** dialog box](https://docsinternal-kore.github.io/docs/xo/automation/tools/intent-discovery/#session-details) is displayed.
+* **View Transcripts** action button: This button is present in the Status column of each row, next to the drop-down. It helps you view the detailed conversion of the Session. On clicking the icon, the [**Session Details** dialog box](#session-details) is displayed.
 
 
 
@@ -319,7 +320,7 @@ Additionally, the training will reflect under the **Results** column against the
 ### Change the status of utterances
 
 You can change the status of utterances between **Yet to Review** and **Reviewed** on the 
-[Extracted Intent Details](https://docsinternal-kore.github.io/docs/xo/automation/tools/intent-discovery/#extracted-intent-details) dialog box. You can change the status of one or multiple utterances in a go as per requirement.
+[Extracted Intent Details](#extracted-intent-details) dialog box. You can change the status of one or multiple utterances in a go as per requirement.
 
 
 ## Reusing an existing project

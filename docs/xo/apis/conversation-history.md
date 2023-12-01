@@ -17,7 +17,7 @@ To fetch the conversational messages between the bot and user in reverse chronol
 <p>
 <strong>GET Method</strong><p>Version 1: <p><code>https://{{host}}/api/public/bot/{{botId}}/getMessages?userId={{userId}}&limit=10&dateFrom=2023-05-20&dateTo=2023-05-25</code><p>Version 2: <p><code>https://{{host}}/api/public/bot/{{botId}}/getMessagesV2?userId={{userId}}&limit=10&dateFrom=2023-05-20&dateTo=2023-05-25</code>
 <p>
-<strong>Note</strong>: The GET method shows the RTM interactions by default. To get the channel-specific interaction, use the channelType parameter in the GET method. For the channelType parameter values, see <a href="https://developer.kore.ai/docs/bots/api-guide/conversation-history-api/#Request_Body_Parameters">Request Body Parameters</a> section.
+<strong>Note</strong>: The GET method shows the RTM interactions by default. To get the channel-specific interaction, use the channelType parameter in the GET method. For the channelType parameter values, see <a href="#Request_Body_Parameters">Request Body Parameters</a> section.
 <p>
 <strong>POST Method</strong><p>Version 1:<p>
 <code>https://{{host}}/api/public/bot/{{botId}}/getMessages </code>and <code>https://{{host}}/api/public/getMessages</code> for Bot Admin Console.
@@ -442,7 +442,7 @@ Default direction is forward.
    </td>
    <td>optional
    </td>
-   <td>A specific Session-Id if known. <a href="https://developer.kore.ai/docs/bots/api-guide/sessions-api/">Refer here to obtain the session id</a>
+   <td>A specific Session-Id if known. <a href="../get-sessions-history/">Refer here to obtain the session id</a>
    </td>
   </tr>
   <tr>
