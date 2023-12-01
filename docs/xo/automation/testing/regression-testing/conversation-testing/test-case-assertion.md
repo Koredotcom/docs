@@ -169,7 +169,7 @@ All the Small Talks covered in the test cases are displayed in this tab in two c
   * Pattern  
   * Group
 
-To know more about Patterns and Groups, see [Small Talk](https://developer.kore.ai/docs/bots/bot-builder-tool/small-talk/){:target="_blank"}.
+To know more about Patterns and Groups, see [Small Talk](../../../automation/use-cases/small-talk){:target="_blank"}.
 
 <img src="../images/tca-img17.png" alt="Small talk" title="Small talk" style="border: 1px solid gray;zoom:50%;"/>
 
