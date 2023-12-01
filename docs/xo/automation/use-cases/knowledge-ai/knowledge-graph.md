@@ -106,7 +106,7 @@ After you add a tag, it is visible below the question like a tag everywhere the 
 
 ## Synonyms
 
-You can add multiple synonyms for each term in your Knowledge Graph, making the path discoverable for varied user utterances. You can add synonyms for a term from the term’s  Settings window.
+You can add multiple synonyms for each term in your Knowledge Graph, making the path discoverable for varied user utterances. You can add synonyms for a term from the term’s  <b>Settings</b> window.
 
 When you add a synonym for a term in the Knowledge Graph, you can add them as local (Path Level) or global (Knowledge Graph level) synonyms.
 
