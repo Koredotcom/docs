@@ -45,7 +45,7 @@ Based on the functionality addressed, the APIs can be categorized as:
    </td>
    <td>To upload the botdefinition, botconfig, and botfunction file (if any) as well as the bot icon to the local server and get the file ID to be used in the Import Bot API.
 <p>
-To upload utterances in <a href="./import-ml-utterances">ML Utterances Import API</a>, bot roles, admin roles for <a href="import-roles.md">Import Roles API</a>, <a href="../apis/import-batch-test-suite.md">Import Batch Test Suite </a>details and <a href="extract-kg-from-file-url.md">Extraction from file or URL</a> to extract FAQs.
+To upload utterances in <a href="../import-ml-utterances">ML Utterances Import API</a>, bot roles, admin roles for <a href="../import-roles">Import Roles API</a>, <a href="../import-batch-test-suite">Import Batch Test Suite </a>details and <a href="../extract-kg-from-file-url">Extraction from file or URL</a> to extract FAQs.
    </td>
    <td>NA
    </td>
@@ -53,7 +53,7 @@ To upload utterances in <a href="./import-ml-utterances">ML Utterances Import AP
    </td>
   </tr>
   <tr>
-   <td><a href="import-bot-as-new-bot.md">Import Bot as a New Bot</a>
+   <td><a href="../import-bot-as-new-bot">Import Bot as a New Bot</a>
    </td>
    <td>To create a new assistant in the account owner’s XO Platform using the File IDs generated when uploading the files.
    </td>
@@ -63,7 +63,7 @@ To upload utterances in <a href="./import-ml-utterances">ML Utterances Import AP
    </td>
   </tr>
   <tr>
-   <td><a href="import-bot-into-an-existing-bot.md">Import Bot into an Existing Bot</a>
+   <td><a href="../import-bot-into-an-existing-bot">Import Bot into an Existing Bot</a>
    </td>
    <td>To import the bot definition file into an existing assistant for upgrading to a new version or restoring to an earlier version.
    </td>
@@ -73,7 +73,7 @@ To upload utterances in <a href="./import-ml-utterances">ML Utterances Import AP
    </td>
   </tr>
   <tr>
-   <td><a href="bot-import-status.md">Bot Import Status</a>
+   <td><a href="../bot-import-status">Bot Import Status</a>
    </td>
    <td>To get the status of the bot import request.
    </td>
@@ -83,7 +83,7 @@ To upload utterances in <a href="./import-ml-utterances">ML Utterances Import AP
    </td>
   </tr>
   <tr>
-   <td><a href="install-sample-bot.md">Install Sample Bot</a>
+   <td><a href="../install-sample-bot">Install Sample Bot</a>
    </td>
    <td>To install a sample assistant.
    </td>
@@ -93,7 +93,7 @@ To upload utterances in <a href="./import-ml-utterances">ML Utterances Import AP
    </td>
   </tr>
   <tr>
-   <td><a href="bot-export.md">Bot Export</a>
+   <td><a href="../bot-export">Bot Export</a>
    </td>
    <td>To export a bot definition and all associated components.
    </td>
