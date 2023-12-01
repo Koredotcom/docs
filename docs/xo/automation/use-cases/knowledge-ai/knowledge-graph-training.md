@@ -21,7 +21,7 @@ You can find the Knowledge Graph by selecting your desired VA, then going to **B
 <li>Mandatory Terms support Traits, Path-Level and Knowledge Graph Synonyms, Intent Preconditions, and Context Output, just like in an Ontology-based Graph.</li>
 <li>You can set all Thresholds and Configurations except Path Coverage and Lemmatization using Parts of Speech, Search in Answer, and Qualify Contextual Paths, which are not supported by Few-Shot Graphs.</li></ul></p>
 
-<p>See the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-overview/#compare-knowledge-graph-typesfor">Knowledge Graph Types Comparison Table</a> for a detailed list of supported features.</p>
+<p>See the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-overview/#compare-knowledge-graph-types">Knowledge Graph Types Comparison Table</a> for a detailed list of supported features.</p>
 
 <p>Also, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-training/#training-configuration">Training Configuration</a> below for training setup details.</p></div>
 
