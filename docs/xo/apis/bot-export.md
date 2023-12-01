@@ -3,7 +3,7 @@
 To export the bot definition and all the associated components.
 
 !!!note
-   This API only initiates the export process. Please use the [Export Status API](https://developer.kore.ai/docs/bots/api-guide/bot-export-status-api/) to view the export progress status and obtain a link to download the file once the export completes.
+   This API only initiates the export process. Please use the [Export Status API](bot-export-status) to view the export progress status and obtain a link to download the file once the export completes.
 
 
 <table>
