@@ -1,4 +1,4 @@
-# **Using the Freshdesk Action Templates**
+# Using the Freshdesk Action Templates
 
 You can use the **Prebuilt Action Templates** from your Freshdesk integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 

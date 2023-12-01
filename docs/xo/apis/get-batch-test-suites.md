@@ -1,4 +1,4 @@
-# **Get Batch Test Suites API**
+# Get Batch Test Suites API
 
 To get the list of Batch Test Suites available for a bot.
 

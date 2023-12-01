@@ -1,4 +1,4 @@
-# **Configuring the Twilio Action**
+# Configuring the Twilio Action
 
 The XO Platform lets you easily connect the Twilio Verify to send SMS, start verification and check verification. Click the [Twilio Verify](https://www.twilio.com/){:target="_blank"} link to know more.
 

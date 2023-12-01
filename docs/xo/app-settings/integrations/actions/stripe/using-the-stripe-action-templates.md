@@ -1,4 +1,4 @@
-# **Using the Stripe Action Templates**
+# Using the Stripe Action Templates
 
 You can use the **Prebuilt Action Templates** from your Stripe integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 

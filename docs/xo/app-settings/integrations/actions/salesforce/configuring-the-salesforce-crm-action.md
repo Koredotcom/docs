@@ -1,4 +1,4 @@
-# **Configuring the Salesforce CRM Action**
+# Configuring the Salesforce CRM Action
 
 The XO Platform lets you easily integrate with [Salesforce CRM](https://www.salesforce.com/in/?ir=1) to power your conversations to create leads, opportunities, and other functions.
 

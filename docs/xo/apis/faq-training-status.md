@@ -1,4 +1,4 @@
-# **FAQ Training Status API**
+# FAQ Training Status API
 
 To get the status of the FAQ training.
 

@@ -1,4 +1,4 @@
-# **Configuring the Google Maps Action**
+# Configuring the Google Maps Action
 
 The Kore.ai XO Platform lets you easily connect with Google Maps to find information regarding accurate Locations and places.
 

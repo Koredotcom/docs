@@ -1,4 +1,4 @@
-# **Configuring the Bitly Action**
+# Configuring the Bitly Action
 
 The Kore.ai XO Platform lets you easily connect with your Bitly instance to shorten any long URLs. [Learn more about Bitly](https://bitly.com/){:target="_blank"}.
 

@@ -1,4 +1,4 @@
-# **Remove Users from Account**
+# Remove Users from Account
 
 To remove users from an account.
 

@@ -1,4 +1,4 @@
-# **Using the Microsoft Graph Action Templates**
+# Using the Microsoft Graph Action Templates
 
 You can use the **Prebuilt Action Templates** from your Microsoft Graph integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 

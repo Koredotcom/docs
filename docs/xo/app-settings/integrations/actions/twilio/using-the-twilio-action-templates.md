@@ -1,4 +1,4 @@
-# **Using the Twilio Action Templates**
+# Using the Twilio Action Templates
 
 You can use the **Prebuilt Action Templates** from your Twilio Verify integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 

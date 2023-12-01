@@ -1,4 +1,4 @@
-# **Configuring the OpenAI Action**
+# Configuring the OpenAI Action
 
 The XO Platform lets you easily connect with OpenAI to generate answers to your queries and extract skills from documents.
 

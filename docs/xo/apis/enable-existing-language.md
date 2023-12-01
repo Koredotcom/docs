@@ -1,4 +1,4 @@
-# **Enable an Existing Language API**
+# Enable an Existing Language API
 
 To enable an existing language for a virtual assistant.
 

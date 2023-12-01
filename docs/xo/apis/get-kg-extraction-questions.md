@@ -1,4 +1,4 @@
-# **Get Extraction Questions – KG**
+# Get Extraction Questions – KG
 
 To get the list of KG Extraction Questions.
 

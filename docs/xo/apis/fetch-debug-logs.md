@@ -1,4 +1,4 @@
-# **Debug Logs API**
+# Debug Logs API
 
 To fetch debug logs of a specific conversation.
 

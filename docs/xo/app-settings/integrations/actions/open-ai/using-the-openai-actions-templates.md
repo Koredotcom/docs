@@ -1,4 +1,4 @@
-# **Using the OpenAI Action Templates**
+# Using the OpenAI Action Templates
 
 You can use the **Prebuilt Action Templates** from your OpenAI integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 

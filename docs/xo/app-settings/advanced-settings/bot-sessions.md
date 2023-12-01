@@ -1,4 +1,4 @@
-# **Conversation Sessions**
+# Conversation Sessions
 
 Conversation sessions are defined as uninterrupted interactions between the bot and the user. These sessions are used in multiple analytics dashboards in the Bot Builder as well as Bot Admin Console platforms.
 

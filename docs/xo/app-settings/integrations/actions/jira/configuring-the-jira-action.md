@@ -1,4 +1,4 @@
-# **Configuring the JIRA Action**
+# Configuring the JIRA Action
 
 The XO Platform lets you easily connect the JIRA integration to create, view, update and delete issues. Click the [JIRA](https://www.atlassian.com/software/jira){:target="_blank"} link to learn more.
 

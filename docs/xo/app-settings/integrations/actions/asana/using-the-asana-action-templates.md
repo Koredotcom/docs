@@ -1,5 +1,5 @@
 
-# **Using the Asana Action Templates**
+# Using the Asana Action Templates
 
 You can use the **Prebuilt Action Templates** from your Asana integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 
