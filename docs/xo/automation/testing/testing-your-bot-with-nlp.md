@@ -35,7 +35,7 @@ When you test an utterance, the NLP engine tries to identify an intent using the
 * [Machine Learning](https://developer.kore.ai/docs/bots/nlp/user-utterances/){:target="_blank"} engine, 
 * [Fundamental Meaning](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/){:target="_blank"} engine,
 * [Knowledge AI](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ai-overview/), including the [Knowledge Graph](../../use-cases/knowledge-ai/knowledge-graph-training){:target="_blank"} engine and the [Answer from Documents](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/){:target="_blank"} feature,
-* [Ranking and Resolver](https://developer.kore.ai/docs/bots/nlp/nlp-detection/){:target="_blank"}.
+* [Ranking and Resolver](../../natural-language/training/ranking-and-resolver){:target="_blank"}.
 
 
 !!! note
@@ -221,7 +221,7 @@ The basis for **intent elimination** by Ranking & Resolver when the three engine
 
 
 #### Ranking and Resolver v2
-[Version 2 of the Ranking and Resolver](https://developer.kore.ai/docs/bots/nlp/nlp-detection/#Notes_on_Ranking_and_Resolver_Version_2){:target="_blank"} only ranks the scores of the definitive matches from ML and KG engines (not the FM engine) without intent rescoring to ensure the best intent identification accuracy.
+[Version 2 of the Ranking and Resolver](../../natural-language/training/ranking-and-resolver){:target="_blank"} only ranks the scores of the definitive matches from ML and KG engines (not the FM engine) without intent rescoring to ensure the best intent identification accuracy.
 If you enable Ranking and Resolver Version 2, your test results adjust as follows: 
 
 The **Ranking & Resolver** window displays the following:
