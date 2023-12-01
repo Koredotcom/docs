@@ -125,20 +125,27 @@ To add synonyms for a term, follow the below steps:
     <img src="../../images/add-global-synonyms.png" alt="add global synonyms" title="add global synonyms" style="border: 1px solid gray; zoom:75%;"></li>
    <li>These Knowledge Graph Synonyms can also be accessed from the <b>Manage Synonyms</b> option under the more options icon on the top-right of the Knowledge Graph page.
    <img src="../../images/manage-synonyms.png" alt="manage synonyms" title="manage synonyms" style="border: 1px solid gray; zoom:75%;"></li></ul>
-4. You can use <b>Bot Synonyms</b> in the identification of KG terms. This option can be enabled either from the <a href="https://developer.kore.ai/docs/bots/nlp/knowledge-graph/#Threshold_Configurations">Threshold and Configurations</a> or from <b>More Options</b> > <b>Manage Synonyms</b>.
-
-Once enabled, the bot-level synonyms that match with KG terms (or tags) are automatically displayed under the Bot Synonyms heading in the <b>Synonyms</b> section and are used by the KG engine. The Bot Synonyms are used similar to that of KG graph-level synonyms, for path qualification and for question matching. 
-
-When a node matches both with a bot synonym and a bot concept, the bot concept takes priority.
-
-<ol start="5"><li>To add synonyms for a child node, enter them in the Synonyms box next to the <b>Child Terms</b> listed at the bottom of the settings window.
-<img src="../../images/child-synonyms-terms.png" alt="child synonyms terms" title="child synonyms terms" style="border: 1px solid gray; zoom:75%;"></li></ol>
+4. You can use <b>Bot Synonyms</b> in the identification of KG terms. This option can be enabled either from the <a href="https://developer.kore.ai/docs/bots/nlp/knowledge-graph/#Threshold_Configurations">Threshold and Configurations</a> or from <b>More Options</b> > <b>Manage Synonyms</b>. Once enabled, the bot-level synonyms that match with KG terms (or tags) are automatically displayed under the Bot Synonyms heading in the <b>Synonyms</b> section and are used by the KG engine. The Bot Synonyms are used similar to that of KG graph-level synonyms, for path qualification and for question matching. When a node matches both with a bot synonym and a bot concept, the bot concept takes priority.
+5. To add synonyms for a child node, enter them in the Synonyms box next to the <b>Child Terms</b> listed at the bottom of the settings window.
+<img src="../../images/child-synonyms-terms.png" alt="child synonyms terms" title="child synonyms terms" style="border: 1px solid gray; zoom:75%;">
 
 ### Traits
 
 You can create traits with common user utterances and then add them to the relevant terms in your Knowledge Graph. To know more about Traits, click [here](https://developer.kore.ai/docs/bots/nlp/traits/).
 
 Traits are common across the XO Platform. If you have created Traits from the Natural Language section, they are available for use here as well.
+
+To create a trait, follow the steps below:
+
+<ol><li>On the top-right of the <b>Knowledge Graph</b> window, click the <b>More Options</b> icon and then select <b>Manage Traits</b>.
+<img src="../../images/manage-traits.png" alt="manage traits" title="manage traits" style="border: 1px solid gray; zoom:75%;"></li>
+<li>On the Manage Traits window, click <b>New Trait</b>.
+</li>
+<li>In the <b>Trait Type</b> and <b>Trait Name</b> field, enter a relevant name for the trait. For example, <i>Flight Fare</i>.</li>
+<li>In the <b>Utterances</b> field, enter all the utterances that you want to include in the trait. Examples of the <i>Issues</i> trait: <i>First Class, Premium Economy, Economy,</i> etc.</li>
+<li>Click <b>Save & Add Rule</b> or <b>Save & Exit</b>.
+<img src="../../images/add-traits-save-and-add-rules.png" alt="save and add rule" title="save and add rule" style="border: 1px solid gray; zoom:75%;"></li></ol>
+
 
 ### Context
 
