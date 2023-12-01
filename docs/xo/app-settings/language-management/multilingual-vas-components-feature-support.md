@@ -50,7 +50,7 @@ JSON object consisting of the following translatable elements
    </td>
    <td>Object
    </td>
-   <td>Arrays of error codes and their corresponding messages. Enter translations of the error message. Refer to <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/app-profile/#customizing-error-messages" target="_blank">Customizing Error Messages</a> to learn more about error messages.
+   <td>Arrays of error codes and their corresponding messages. Enter translations of the error message. Refer to <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/general-settings/#customizing-error-messages" target="_blank">Customizing Error Messages</a> to learn more about error messages.
    </td>
   </tr>
 </table>
@@ -368,7 +368,7 @@ JSON object consisting of the following translatable components related to IDP c
 
 We have seen in [this document](https://developer.kore.ai/docs/bots/how-tos/how-to-use-patterns-for-intents-entities/){:target="_blank"}, how Patterns can be used for Intent detection and Entity extraction. These rules are for VAs in the English language. In other languages, there may be differences. 
 
-Patterns can be used in [Small Talk](../../../automation/use-cases/small-talk/#terminology){:target="_blank"} (while defining queries), [Knowledge Graph](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/creating-a-knowledge-graph/#Adding_FAQs){:target="_blank"} (using alternate question fields), and [Trait](../../../automation/natural-language/training/traits/#trait-definition){:target="_blank"} identification but their behavior might differ slightly. The table below provides an overview of how this may occur.
+Patterns can be used in [Small Talk](../../../automation/use-cases/small-talk/#terminology){:target="_blank"} (while defining queries), [Knowledge Graph](../../../automation/use-cases/knowledge-ai/build-a-knowledge-graph/#add-faqs){:target="_blank"} (using alternate question fields), and [Trait](../../../automation/natural-language/training/traits/#trait-definition){:target="_blank"} identification but their behavior might differ slightly. The table below provides an overview of how this may occur.
 
 <table border="1">
   <tr>
