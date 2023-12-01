@@ -164,7 +164,7 @@ The other scoring methods are:
 
 If the VA includes a Knowledge Graph, the user utterances are processed to extract the terms and are mapped with the Knowledge Graph to fetch the relevant paths. All the paths containing more than a preset threshold of the number of terms get shortlisted for further screening. Path with 100% terms covered and having a similar FAQ in the path is considered a perfect match.
 
-In case the utterance triggers a dialog (as per run a dialog option in KG), the same is displayed as _matched intent_ and _matched utterance_. You can further train the VA as you would for an intent from ML or FM engine. [Know more about Knowledge Graph Training from here](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/){:target="_blank"}.  
+In case the utterance triggers a dialog (as per run a dialog option in KG), the same is displayed as _matched intent_ and _matched utterance_. You can further train the VA as you would for an intent from ML or FM engine. [Know more about Knowledge Graph Training from here](../../use-cases/knowledge-ai/knowledge-graph-training.md){:target="_blank"}.  
 <img src="../images/utterance-testing-11-testing-kg.png" alt="Knowledge Graph" title="Knowledge Graph" style="border: 1px solid gray; zoom:50%;"/>
 
 
