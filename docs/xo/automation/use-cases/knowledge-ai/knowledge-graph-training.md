@@ -228,8 +228,7 @@ To navigate to Thresholds and Configuration, please follow the steps below:
 2. Hover over the left pane and click **Natural Language** > **Training**.
 3. Click the **Thresholds & Configurations** tab.
 4. Below is a detailed discussion about the **Knowledge Graph** section on this page.
-
-   <img src="../../images/thresholds-configurations.png" alt="thresholds and configurations" title="thresholds and configurations" style="border: 1px solid gray; zoom:75%;">
+<img src="../../images/thresholds-configurations.png" alt="thresholds and configurations" title="thresholds and configurations" style="border: 1px solid gray; zoom:75%;">
 
 Here are the features that you will find in this section of the Platform:
 
