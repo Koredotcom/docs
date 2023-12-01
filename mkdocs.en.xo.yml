@@ -119,7 +119,7 @@ markdown_extensions:
 copyright: |
   © 2023 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
-  - Platform: index.md
+  - Platform:
     - Getting Started:
       - Platform:
         - Introduction to the Platform: virtual-assistants-overview.md
