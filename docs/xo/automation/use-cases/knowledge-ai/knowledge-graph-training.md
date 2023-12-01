@@ -104,7 +104,7 @@ When you type a question in the Intent Name **Add Question** field, the Knowledg
 
 After you add a tag, it is visible below the question like a tag everywhere the question appears. Tags work exactly like terms but are not displayed in the Knowledge Graph to avoid clutter. 
 
-## Synonyms
+### Synonyms
 
 You can add multiple synonyms for each term in your Knowledge Graph, making the path discoverable for varied user utterances. You can add synonyms for a term from the term’s  Settings window.
 
@@ -192,8 +192,7 @@ To edit the stop words list, follow the below steps:
 
 1. From the Knowledge Graph page, click on the **more options icon** and select **Manage Stop Words**.
 2. From the Manage Stop Words window, delete or add stop words.
-
-   <img src="../../images/manage-stop-words.png" alt="manage stop words" title="manage stop words" style="border: 1px solid gray; zoom:75%;">
+<img src="../../images/manage-stop-words.png" alt="manage stop words" title="manage stop words" style="border: 1px solid gray; zoom:75%;">
 
 ## Training Process
 

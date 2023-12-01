@@ -143,6 +143,7 @@ To create a trait, follow the below steps:
 
 1. On the top-right of the Knowledge Graph window, click the **more options icon** and then select **Manage Traits**.
 <img src="../../images/manage-traits.png" alt="manage traits" title="manage traits" style="border: 1px solid gray; zoom:75%;">
+
 2. On the Manage Traits window, click **New Trait**.
 3. In the **Trait Type** and **Trait Name** field, enter a relevant name for the trait. For example, *Flight Fare*.
 4. In the **Utterances** field, enter all the utterances that you want to include in the trait. Examples of the *Issues* trait: *First Class, Premium Economy, Economy,* etc.
@@ -161,3 +162,15 @@ To add a trait to a node/term, follow the below steps:
 <p class="admonition-title">Note</p>
 Adding a trait to a node doesn't add it to other nodes with the same name. You must add traits to each relevant node separately.
 <img src="../../images/add-term-traits.png" alt="add term traits" title="add term traits" style="border: 1px solid gray; zoom:75%;"></div>
+
+### Stop Words
+
+Stop words present in the user utterance are discarded for scoring even if the stop word is used to define a node (or node synonyms).
+
+The Knowledge Graph has a language-specific predefined set of stop words. This list can be customized to suit your requirements.
+
+To edit the stop words list, follow the below steps:
+
+1. From the Knowledge Graph page, click on the **more options icon** and select **Manage Stop Words**.
+2. From the Manage Stop Words window, delete or add stop words.
+<img src="../../images/manage-stop-words.png" alt="manage stop words" title="manage stop words" style="border: 1px solid gray; zoom:75%;">
