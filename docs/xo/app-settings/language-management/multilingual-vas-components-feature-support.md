@@ -50,7 +50,7 @@ JSON object consisting of the following translatable elements
    </td>
    <td>Object
    </td>
-   <td>Arrays of error codes and their corresponding messages. Enter translations of the error message. Refer to <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/configurations/general-settings/#customizing-error-messages" target="_blank">Customizing Error Messages</a> to learn more about error messages.
+   <td>Arrays of error codes and their corresponding messages. Enter translations of the error message. Refer to <a href="../../general-settings/#customizing-error-messages" target="_blank">Customizing Error Messages</a> to learn more about error messages.
    </td>
   </tr>
 </table>
