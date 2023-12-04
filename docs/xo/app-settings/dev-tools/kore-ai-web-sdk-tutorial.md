@@ -69,7 +69,7 @@ In this next section, you will define the Web/Mobile Client channel for the Trav
 16. To download and install node.js on your computer, go to [https://nodejs.org/en/download/](https://nodejs.org/en/download/){:target="_blank"}, and then select your OS as .pkg for Mac, and .msi for Windows.
 17. In a **Terminal** window, run the `node -v` command to verify installation and version, for example, `v6.10.2`.
 18. Locate the **SDKApp/sdk** folder of your <span style="text-decoration:underline;">web server hosting the app</span> where you want to integrate the Kore bot. For this tutorial, to download the test application and JWT web service, click [SDKApp](https://s3.amazonaws.com/static-kore/downloads/SDKApp.zip){:target="_blank"}, and unzip it.
-19. To download the Kore.ai Web SDK, go to [https://github.com/Koredotcom/web-kore-sdk](https://github.com/Koredotcom/web-kore-sdk){:target="_blank"}, and then click **Download**. Extract all files to the …/SDKApp/sdk folder mentioned in step above. Check for the release compatibility from the [release notes](https://developer.kore.ai/docs/bots/whats-new/whats-new-in-this-release-bot-builder/#SDK_Versions){:target="_blank"}.
+19. To download the Kore.ai Web SDK, go to [https://github.com/Koredotcom/web-kore-sdk](https://github.com/Koredotcom/web-kore-sdk){:target="_blank"}, and then click **Download**. Extract all files to the …/SDKApp/sdk folder mentioned in step above. Check for the release compatibility from the [release notes](../../../whats-new/whats-new-in-this-release){:target="_blank"}.
 20. From the Bot Builder **Web/Mobile Client Channel** page on the **Deploy -> Channels** menu, copy the following (as mentioned in step 8 above):
     1. clientSecret
     2. clientId
