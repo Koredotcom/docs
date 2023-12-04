@@ -123,7 +123,7 @@ nav:
       - Platform:
         - Introduction to the Platform: virtual-assistants-overview.md
         - Access the Platform: virtual-assistants-overview.md   
-      - Automations:
+      - Automation:
         - Introduction to Virtual Assistant: virtual-assistants-overview.md
         - Build a Virtual Assistant: virtual-assistants-overview.md   
       - Answers:
@@ -141,7 +141,7 @@ nav:
     - Glossary:
       - Concepts and Terminology: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/ 
     - FAQs: 
-      - Automations FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
+      - Automation FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
       - Contact Center FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/   
   - Automation:
     - Design:
