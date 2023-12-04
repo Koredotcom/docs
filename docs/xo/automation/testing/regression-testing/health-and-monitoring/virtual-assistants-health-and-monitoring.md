@@ -200,7 +200,7 @@ To navigate to the **Utterance Testing** window, click the **go to utterance tes
 
 In the **Utterance Testing** window shown below, you can do the following:
 
-* Test & [Train](../../../testing-your-bot-with-nlp/#training-the-assistant){:target="_blank"} your virtual assistant based on these [recommendations ](https://developer.kore.ai/docs/bots/nlp/user-utterances/#Recommendations){:target="_blank"} to understand different user utterances and match them with intents and entities.
+* Test & [Train](../../../testing-your-bot-with-nlp/#training-the-assistant){:target="_blank"} your virtual assistant based on these [recommendations ](../../../../natural-language/training/machine-learning-engine/#training-recommendations){:target="_blank"} to understand different user utterances and match them with intents and entities.
 * View the **NLP analysis** flow and **Fields/Entities** analysis data including the confidence score based on the NER training.
 * Use the **Mark as an incorrect match** link to match the user input with the right intent when it is mapped to an incorrect task.  
   <img src="../images/hm-14.png" alt="Utterance Testing window" title="Utterance Testing window" style="border: 1px solid  gray; zoom:50%;"/>
