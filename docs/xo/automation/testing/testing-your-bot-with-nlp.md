@@ -111,7 +111,7 @@ From each model dialog, clicking the icon on the top right will display the conf
 
 The ML model tries to match the user input with the task label and the training utterances of each task. If the user input consists of multiple sentences, each sentence is run separately against the task name as well as the task utterances.
 
-Click on the Machine Learning Model button to open the Machine Learning Model section of NLP Analysis. This shows only the names of the tasks that secure a positive score. In general, the more the number of training utterances that you add to a task, the greater are its chances for discovery. For more information, read [Machine Learning](https://developer.kore.ai/docs/bots/nlp/user-utterances/){:target="_blank"}.  
+Click on the Machine Learning Model button to open the Machine Learning Model section of NLP Analysis. This shows only the names of the tasks that secure a positive score. In general, the more the number of training utterances that you add to a task, the greater are its chances for discovery. For more information, read [Machine Learning](../../natural-language/training/machine-learning-engine/){:target="_blank"}.  
 <img src="../images/utterance-testing-8-testing-ml.png" alt="Machine Learning Model - Intent Score" title="Machine Learning Model - Intent Score" style="border: 1px solid gray; zoom:50%;"/>
 
 
