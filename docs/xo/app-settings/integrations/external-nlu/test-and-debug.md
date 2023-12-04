@@ -51,7 +51,7 @@ See the following sections to understand more details.
 * Click the **View Response** link to view the API response in the JSON format, received from the external NLU engine in both cases of whether intent is detected or not detected by the external NLU.  
 <img src="../images/external-nlu-test-and-debug-img6.png" alt="View the API response in the JSON format" title="View the API response in the JSON format" style="border: 1px solid gray;zoom:50%;"/>
 
-* If the intent is not detected by the external engine, the Kore.ai NLU engine acts as a fallback. So, in this case, the NLP analysis shows the analysis of intent detection results from our three engines along with the ranking and resolver. For more information, see [Ranking and Resolver](https://developer.kore.ai/docs/bots/nlp/nlp-detection/){:target="_blank"}.  
+* If the intent is not detected by the external engine, the Kore.ai NLU engine acts as a fallback. So, in this case, the NLP analysis shows the analysis of intent detection results from our three engines along with the ranking and resolver. For more information, see [Ranking and Resolver](../../../../automation/natural-language/training/ranking-and-resolver){:target="_blank"}.  
 <img src="../images/external-nlu-test-and-debug-img7.png" alt="Intent is not detected by an external engine" title="Intent is not detected by an external engine" style="border: 1px solid gray;zoom:50%;"/>
 
 * If the intent is detected by the external engine but cannot be mapped to any intent on the XO platform, even then the Kore.ai NLU engine acts as a fallback. In this case, the NLP analysis displays a relevant message along with the API response containing the detected Intents and parameters.  
