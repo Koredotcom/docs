@@ -35,10 +35,6 @@ theme:
         name: Switch to light mode    
       primary: indigo
       accent: lime
-    icon:
-      admonition:
-        <type>: <icon>
-        
 plugins:
   - search:
       lang: tr
