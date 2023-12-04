@@ -200,7 +200,7 @@ To navigate to the **Utterance Testing** window, click the **go to utterance tes
 
 In the **Utterance Testing** window shown below, you can do the following:
 
-* Test & [Train](../../../testing-your-bot-with-nlp/#training-the-assistant){:target="_blank"} your virtual assistant based on these [recommendations ](https://developer.kore.ai/docs/bots/nlp/user-utterances/#Recommendations){:target="_blank"} to understand different user utterances and match them with intents and entities.
+* Test & [Train](../../../testing-your-bot-with-nlp/#training-the-assistant){:target="_blank"} your virtual assistant based on these [recommendations ](../../../../natural-language/training/machine-learning-engine/#training-recommendations){:target="_blank"} to understand different user utterances and match them with intents and entities.
 * View the **NLP analysis** flow and **Fields/Entities** analysis data including the confidence score based on the NER training.
 * Use the **Mark as an incorrect match** link to match the user input with the right intent when it is mapped to an incorrect task.  
   <img src="../images/hm-14.png" alt="Utterance Testing window" title="Utterance Testing window" style="border: 1px solid  gray; zoom:50%;"/>
@@ -442,12 +442,9 @@ The **FAQ Summary** section displays the [recommendation scores](#health-and-mon
 **Viewing Additional FAQ Recommendations**: For **FAQ Details**, clicking **View Recommendations** will display the report that was already run during the previous run time. To know how to view and manage additional recommendations, please refer to this [link](https://developer.kore.ai/docs/bots/nlp/training-validations/#How_to_Use_the_NLU_Validate_Model){:target="_blank"}.  
 <img src="../images/hm-18.png" alt="Viewing Additional FAQ Recommendations" title="Viewing Additional FAQ Recommendations" style="border: 1px solid  gray; zoom:50%;"/>
 
-
 <img src="../images/hm-19.png" alt="Report" title="Report" style="border: 1px solid  gray; zoom:50%;"/>  
 
-
-
-**Knowledge Graph**: Clicking this button will take you to the **Knowledge Graph** section where you can perform [KG Analysis](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ontology-analysis/){:target="_blank"}.  
+**Knowledge Graph**: Clicking this button will take you to the **Knowledge Graph** section where you can perform [KG Analysis](../../../../use-cases/knowledge-ai/knowledge-graph-analysis){:target="_blank"}.  
 <img src="../images/hm-20.png" alt="Knowledge Graph button" title="Knowledge Graph button" style="border: 1px solid  gray; zoom:50%;"/>
 
 
