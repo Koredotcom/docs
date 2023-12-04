@@ -143,7 +143,7 @@ nav:
     - FAQs: 
       - Automations FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
       - Contact Center FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/   
-  - Automations:
+  - Automation:
     - Design:
       - Dialogs: getting-started.md 
       - Knowledge AI: getting-started.md
@@ -199,7 +199,7 @@ nav:
   - AgentAssist:
     - Agent Experience:
       - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md 
-      - Knowledge AI: getting-started.md
+      - Knowledge AI: agentassist/agent-experience/agent-realtime-coaching.md
       - Small Talk: automation/use-cases/small-talk.md
       - Digital Skills: 
         - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
@@ -218,7 +218,7 @@ nav:
         - API List: apis/api-list.md           
   - Analytics:
     - insiders/index.md
-    - Automations:
+    - Automation:
       - Introduction: analytics/automations/introduction.md
       - Changelog: insiders/changelog.md
   - Administration:
