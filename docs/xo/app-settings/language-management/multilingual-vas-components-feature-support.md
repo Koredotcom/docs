@@ -236,7 +236,7 @@ JSON object consisting of the following translatable components of your assistan
    </td>
    <td>Array
    </td>
-   <td>Arrays of ignore words related to the alert task. Replace the words with the translated text. Refer to <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/manage-intents-entities/" target="_blank">Managing Ignore Words and Field Memory</a> to learn more.
+   <td>Arrays of ignore words related to the alert task. Replace the words with the translated text. Refer to <a href="../../../automation/intelligence/conversation-management/ignore-words-and-field-memory" target="_blank">Managing Ignore Words and Field Memory</a> to learn more.
    </td>
   </tr>
   <tr>
