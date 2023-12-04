@@ -173,7 +173,7 @@ In case the utterance triggers a dialog (as per run a dialog option in KG), the 
 
 If you have enabled [Answer from Documents](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/){:target="_blank"} for your VA, and a match is found within your uploaded documents, you will see results for this match, provided the intent is not identified using any other method (a dialog task, a Knowledge Graph FAQ, the Machine Learning or the Fundamental Meaning engine).
 
-When an utterance is answered from a document, you will see a note mentioning that no Intent was identified by the ML, FM, and KG engines. Click [Add to KG](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/manage-faqs/){:target="_blank"} to add an FAQ to the Knowledge Graph to address the utterance and improve intent identification. 
+When an utterance is answered from a document, you will see a note mentioning that no Intent was identified by the ML, FM, and KG engines. Click [Add to KG](../../use-cases/knowledge-ai/manage-faqs){:target="_blank"} to add an FAQ to the Knowledge Graph to address the utterance and improve intent identification. 
 
 When the _Answer from Document_ feature is used in reply to a test utterance, the following information is provided:
 
