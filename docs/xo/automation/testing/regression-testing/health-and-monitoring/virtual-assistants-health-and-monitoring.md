@@ -755,7 +755,7 @@ The summary of all the metrics displayed is given below:
 
 **View Intents Not Covered**
 
-This feature helps identify the intents not covered so as to include them in the test data for better and holistic [testing of the virtual assistant](https://developer.kore.ai/docs/bots/test-your-bot/testing-your-bot-with-nlp/#Testing_the_Bot){:target="_blank"}. Click the **three-dot menu** on the right side of the panel to view the list of **intents not covered** in batch testing.  
+This feature helps identify the intents not covered so as to include them in the test data for better and holistic [testing of the virtual assistant](../../testing-your-bot-with-nlp/#testing-the-assistant){:target="_blank"}. Click the **three-dot menu** on the right side of the panel to view the list of **intents not covered** in batch testing.  
 <img src="../images/hm-38.png" alt="Training data-intents not covered" title="Training data-intents not covered" style="border: 1px solid  gray; zoom:50%;"/> 
 
 
