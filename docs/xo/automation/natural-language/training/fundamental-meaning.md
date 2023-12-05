@@ -142,42 +142,27 @@ On the **Training** page under the **Bot Synonyms** tab, you can view and add sy
 
 To add a bot synonym, follow the below steps:
 
-1. On the **Training** page, select the **Bot Synonyms** tab. 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image1.png "image_tooltip")
+1. On the **Training** page, select the **Bot Synonyms** tab.
+<img src="../images/add-bot-synonym.png" alt="add synonyms" title="add synonyms" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **New Synonym** or use the edit icon against an existing synonym, to open the synonym page.
 3. In the **Name** field, enter the name of the word (keyword) for which you want to create synonyms.
 4. In the **Synonyms** field, enter one or more synonyms for the keyword. Press **Enter/Return** after entering each synonym.
-5. Added Synonyms are automatically saved once you press _Enter/Return_. 
+5. Added Synonyms are automatically saved once you press _Enter/Return_.
+<img src="../images/synonym-added-successfully.png" alt="synonyms added successfully" title="synonyms added successfully" style="border: 1px solid gray; zoom:75%;">
 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image2.png "image_tooltip")
 
 #### Add Entity Synonyms
 
 On the **Training** page, on the **Entities** tab, each dialog task entity is listed with any defined synonyms for that entity name.
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image3.png "image_tooltip")
-
+<img src="../images/entity-tab.png" alt="entity tab" title="entity tab" style="border: 1px solid gray; zoom:75%;">
 
 To add synonyms for a dialog task entity, follow the below steps:
 
-
 1. On the **Training** page, select the **Entities** tab.
 2. Click the **Edit** icon against the entity for which you want to add synonyms.
-3. Enter one or more synonyms for the entity and then press **Enter** after entering each synonym. They will be saved automatically. 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image4.png "image_tooltip")
+3. Enter one or more synonyms for the entity and then press **Enter** after entering each synonym. They will be saved automatically.
+<img src="../images/entity-training.png" alt="entity training" title="entity training" style="border: 1px solid gray; zoom:75%;">
 
 #### Use Patterns Instead of Synonyms
 
@@ -234,19 +219,13 @@ You can define a new concept the same way as you would define a Bot Synonym, but
 You can also define custom concepts using emojis.
 
 Concepts are used to define patterns. For example, the pattern _buy ~fruit_ is used to capture _buy orange_ or _buy banana_.
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
+<img src="../images/define-custom-concepts.png" alt="define custom concepts" title="define custom concepts" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 Add the <b>~disable_help</b> concept key and train the VA to disable the system help. You can train the virtual assistant (VA) to use the <b>custom_help</b> group in Smalltalk to trigger the customized help messages. <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/small-talk/#Add_Groups">Learn more</a>.</p></div>
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image6.png "image_tooltip")
+<img src="../images/custom_help.png" alt="custom help" title="custom help" style="border: 1px solid gray; zoom:75%;">
 
 #### Parallel Editing for Concepts
 
@@ -269,13 +248,8 @@ To define this concept, follow the steps below:
 3. Click the **New Concept** button.
 4. In the **New Concept** panel, enter the value for **Concept Name**.
 5. Enter the Concept Name as `~bot_substitutions`.
-6. Enter the word in the utterance to be replaced, followed by the <code>|</code> symbol and the substitution word. 
-
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image7.png "image_tooltip")
+6. Enter the word in the utterance to be replaced, followed by the <code>|</code> symbol and the substitution word.
+<img src="../images/replace-utterance.png" alt="replace utterance" title="replace utterance" style="border: 1px solid gray; zoom:75%;">
 
 !!!note
 
@@ -318,13 +292,9 @@ To treat a Bot Synonym word as an Alias in an utterance, you must define a custo
 2. Click the **Bot Synonyms** tab.
 3. Click the **New Synonym** button.
 4. In the **New Synonym** panel, enter the value for **Synonym Name**.
-5. Enter the value(s) for **Synonyms** by prefixing the name with a <code>+</code> icon as shown below: 
+5. Enter the value(s) for **Synonyms** by prefixing the name with a <code>+</code> icon as shown below:
 
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image8.png "image_tooltip")
+<img src="../images/synonym-prefix.png" alt="synonyms prefix" title="synonyms prefix" style="border: 1px solid gray; zoom:75%;">
 
 !!!note
 
@@ -338,20 +308,12 @@ However, they do the following:
 **Alias Patterns**
 
 The **Custom Concept Entity** on the Platform allows the selective marking of aliases using patterns. 
-In the example below, the system marks `Aston` as an alias for `Aston Martin` only if it is not followed by the word `Martin` according to the **Synonyms** pattern. 
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image9.png "image_tooltip")
+In the example below, the system marks `Aston` as an alias for `Aston Martin` only if it is not followed by the word `Martin` according to the **Synonyms** pattern.
+<img src="../images/synonyms-example-1.png" alt="synonyms example 1" title="synonyms example 1" style="border: 1px solid gray; zoom:75%;">
  
-Similarly, in the example below, the system marks `Kelly` as the alias for `TeleHealth` only if it is followed by the word `health` (the underscore limits the marking to one word) according to the **Synonyms** pattern. 
+Similarly, in the example below, the system marks `Kelly` as the alias for `TeleHealth` only if it is followed by the word `health` (the underscore limits the marking to one word) according to the **Synonyms** pattern.
 
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image10.png "image_tooltip")
-
+<img src="../images/synonyms-example-2.png" alt="synonyms example 2" title="synonyms example 2" style="border: 1px solid gray; zoom:75%;">
 
 #### Bot Homophones
 
@@ -370,18 +332,12 @@ With Bot Homophones, the system considers all the alternative homophones to chec
 
 To treat a Bot Synonym word as a Homophone/Homonym in an utterance, you must define a custom concept with the steps below:
 
-
-
 1. On the left menu of the Bot Builder, navigate to **Natural Language** > **Training**.
 2. Click the **Concepts** tab.
 3. Click the **New Concept** button.
 4. In the **New Concept** panel, enter the value for **Concept Name**.
 5. Enter the value(s) for **Synonyms** in the following syntax, where the concept members are homophones separated by a `|` icon.`original word in the utterance | homonym1 | homonym2 | homonymN`
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image11.png "image_tooltip")
+<img src="../images/enter-synonym-values.png" alt="enter synonyms" title="enter synonyms" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
@@ -395,21 +351,13 @@ The NLP engine can recognize emojis present in the user utterance. You can inclu
 
 You can import emojis into your VA’s system concepts so that it can conduct the conversations when emojis are present in the user’s utterances. For this, follow the below steps:
 
-
-
 1. Under the **Build** top menu option, from the left menu, click **Natural Language -> Training**
 2. On the **Intents** tab, click the more/ellipses icon and select **Import Emojis into Concepts**.
-3. This adds all the default emojis to the system concepts for the current language. As you can see emojis are updated for the system concepts like this: ~_emohappy_, ~_emohello_, etc. 
-
-
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image12.png "image_tooltip")
+3. This adds all the default emojis to the system concepts for the current language. As you can see emojis are updated for the system concepts like this: ~_emohappy_, ~_emohello_, etc.
+<img src="../images/import-emoji.png" alt="import emoji" title="import emoji" style="border: 1px solid gray; zoom:75%;">
 
 4. After importing, you may choose to review and remove any emojis that you may not want to support.
 5. If you are trying to re-import the emojis, then the current emojis are retained and any additional emojis are added.
-
 
 ## Manage Patterns and Rules
 
@@ -447,33 +395,21 @@ You can also use concepts to build patterns. For example, the pattern is defined
 
 In the **Intents** section, you can view, add, and delete patterns for dialog tasks.
 
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image13.png "image_tooltip")
-
+<img src="../images/manage-patterns-for-dialog-tasks.png" alt="manage patterns for dialog tasks" title="manage patterns for dialog tasks" style="border: 1px solid gray; zoom:75%;">
 
 To add an intent pattern, follow the below steps:
 
 1. On the **Training** page, click the **Patterns/+Pattern** against the intent name you want to enter the patterns for.
 2. In the **Intent** pane, enter one or more sentence patterns, and press **Enter** between patterns.
-3. You can **reorder, edit** or **delete** patterns using the appropriate icons. 
+3. You can **reorder, edit** or **delete** patterns using the appropriate icons.
 
-
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image14.png "image_tooltip")
+<img src="../images/add-intent-pattern.png" alt="add intent pattern" title="add intent pattern" style="border: 1px solid gray; zoom:75%;">
 
 #### Add Rules for Intents
 
 You can use traits or context tags to define intent identification rules for better intent detection. You can add Traits or Context Tags and conditional rules using AND, OR operators.
 
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image15.png "image_tooltip")
-
+<img src="../images/add-rules-for-an-intent.png" alt="add rules for an intent" title="add rules for an intent" style="border: 1px solid gray; zoom:75%;">
 
 To add an intent rule, follow the below steps:
 
@@ -482,31 +418,21 @@ To add an intent rule, follow the below steps:
 
 Refer here to know more about [Traits](https://developer.kore.ai/docs/bots/nlp/traits/), [Trait Association Rules](https://developer.kore.ai/docs/bots/nlp/traits/#Trait_Association_Rules) and [Context Tags](https://developer.kore.ai/docs/bots/bot-intelligence/context-management/).
 
-
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image16.png "image_tooltip")
-
+<img src="../images/fm-rules.png" alt="manage rules" title="manage rules" style="border: 1px solid gray; zoom:75%;">
 
 #### Add Patterns for Entities
 
-In the **Entities **section of the **Training** page, you can view, add, and delete patterns for dialog task entity node names.
+In the **Entities** section of the **Training** page, you can view, add, and delete patterns for dialog task entity node names.
 
 To add an entity pattern, follow the below steps:
 
-1. On the **Training** page, click the **Entities **tab.
+1. On the **Training** page, click the **Entities** tab.
 2. Click the edit icon against the entity to enter the patterns to it.
 3. In the **Entity Training** page, select the **Patterns** tab.
 4. Enter one or more sentence patterns, and press ENTER between patterns.
-5. You can **reorder, edit **or **delete** patterns using the appropriate icons. 
+5. You can **reorder, edit** or **delete** patterns using the appropriate icons.
 
-<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image17.png "image_tooltip")
-
-
+<img src="../images/manage-patterns.png" alt="manage patterns" title="manage patterns" style="border: 1px solid gray; zoom:75%;">
 
 ### Negative Patterns
 
@@ -520,36 +446,19 @@ The **Negative Patterns** feature helps filter matched intents that are a part o
 
 To activate Negative Patterns, follow the steps below:
 
+1. Click the **Build** top menu option.
+2. Navigate to **Natural Language** -> **Thresholds & Configurations** -> **Ranking and Resolver Engine**.
+3. Enable **Negative Patterns**.
 
-
-    1. Click the **Build** top menu option.
-    2. Navigate to **Natural Language** -> **Thresholds & Configurations** -> **Ranking and Resolver Engine**.
-    3. Enable **Negative Patterns**.
-
-
-
-<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image18.png "image_tooltip")
-
-
-
+<img src="../images/enable-negative-patterns-fm.png" alt="enable negative patterns" title="enable negative patterns" style="border: 1px solid gray; zoom:75%;">
 
 1. For each of the intents in your VA, you can define negative patterns similar to how you define intent patterns. 
-    1. Go to **Natural Language** > **Training** > **Intents** and select the Intent to which you want to add the Negative Pattern.
-    2. In the Intent training window, select the **Negative Patterns** tab.
-    3. Add negative patterns in the **Add a Pattern** field, then press **Enter/Return**. Your new patterns are automatically saved.
+    * Go to **Natural Language** > **Training** > **Intents** and select the Intent to which you want to add the Negative Pattern.
+    * In the Intent training window, select the **Negative Patterns** tab.
+    * Add negative patterns in the **Add a Pattern** field, then press **Enter/Return**. Your new patterns are automatically saved.
 2. Any intents identified by FM or ML engines, if identified as one of the configured negative patterns, will be ignored and not sent to Ranking & Resolver.
-3. Once added, these patterns can be reordered, edited, and deleted. 
-
-
-<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image19. "image_tooltip")
-
-
+3. Once added, these patterns can be reordered, edited, and deleted.
+<img src="../images/negative-patterns-fm.png" alt="negative patterns" title="negative patterns" style="border: 1px solid gray; zoom:75%;">
 
 ## Thresholds & Configurations
 
@@ -561,8 +470,6 @@ The settings for the FM engine are discussed in detail in the following sections
 
     If your assistant is multilingual, you can set the Thresholds differently for different languages. If not set, the Default Settings will be used for all languages. This feature is available from v7.0.
 
-
-
 To set up Thresholds and Configurations for the FM Engine, please follow the steps below:
 
 1. Open the assistant for which you want to configure thresholds.
@@ -571,4 +478,5 @@ To set up Thresholds and Configurations for the FM Engine, please follow the ste
 4. The **Fundamental Meaning** section allows you to set the threshold for the FM engine:
     * **Intent Detection using Task Name Words** can be disabled in case your use case requires it. This is particularly useful if you have too many tasks named – _place order_, _cancel order_, _request order_, _duplicate order_. All these tasks will be matched as intents if the user utterance has the word “_order_” in it. Instead of _trying_, _guessing_, and training for all possible utterances, disabling this option does the trick. Disabling it will not affect the intent detection using patterns. Also, an implicit pattern using the words in the Task Name will be automatically added. The implicit pattern identifies this intent only when the user input starts and ends with the exact task name. By default, it is enabled.
     * **FM Threshold** can be used to limit the number of results sent from the FM Engine to Ranking and Resolver, so as to reduce the possibility of presenting a low confidence match to the end-user. Enable this configuration and choose the _threshold percentage_ as a value between 0% and 20%. Default is 2%. Only the intent matches within the set % of the top-scoring intent will be considered and all other intents will be eliminated. This configuration is available only for English, Spanish, French and German languages.
+
     <img src="../images/thresholds-and-configurations-enable.png" alt="thresholds and configurations" title="thresholds and configurations" style="border: 1px solid gray; zoom:75%;">
