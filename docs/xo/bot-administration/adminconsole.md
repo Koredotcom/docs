@@ -3,7 +3,7 @@
 The Kore.ai Admin Console is where virtual assistant project administrators can manage Kore.ai assistants and related tasks, users, security, billing, and more, at an organization level. This article provides an overview of the Admin Console, taking you through prerequisites, access options and a  recommended workflow.
 
 
-# Admin Prerequisites
+## Admin Prerequisites
 
 To sign up for an Admin account, you must meet the following requirements:
 
@@ -12,7 +12,7 @@ To sign up for an Admin account, you must meet the following requirements:
 * Authorization to control the Admin account. Only one user in an account can be the primary Admin. The Primary Admin can add multiple other users as admins with custom defined permissions.
 
 
-# Accessing the Admin Console
+## Accessing the Admin Console
 
 You can access the Admin Console from the [XO Platform](https://bots.kore.ai/botbuilder){:target="_blank"} using the **Go To Admin Console** option, under your user account menu.
 
@@ -35,7 +35,7 @@ As an Admin, you can enroll users, manage admin and custom roles, define securit
 <img src="../images/adminconsole-img2-bac-dashboard.png" alt="Admin Console Dashboard" title="Admin Console Dashboard" style="border: 1px solid gray;zoom:50%;"/>
 
 
-# Getting Started as an XO Platform Admin
+## Getting Started as an XO Platform Admin
 
 When you first start using the Kore.ai XO Platform, using the Admin Console, you should start inviting and adding users to join the Kore.ai account for your company.
 
@@ -53,7 +53,7 @@ Let us look at inviting and adding users to join your enterprise account. For th
 The following sections describe how to achieve the above-mentioned steps from the Admin Console.
 
 
-## Step 1 – Inviting a New User
+### Step 1 – Inviting a New User
 
 Let’s invite Bob to join Kore.ai.
 
@@ -67,7 +67,7 @@ An email is sent to bob@koremessenger.com with a link to sign up for Kore.ai. Bo
 [More on User Management](../user-management/users-module-overview/){:target="_blank"}
 
 
-## Step 2 – Assigning an Assistant
+### Step 2 – Assigning an Assistant
 
 As an Admin, you can assign users to assistants. Before you can assign an assistant to a user, it should have been published to the enterprise.
 
@@ -83,9 +83,9 @@ For this example scenario, we assume that assistants have been published to your
 [More on Bots Management](../bot-management/)
 
 
-## Step 3 – Assigning a Role
+### Step 3 – Assigning a Role
 
-You can assign Roles to the user. By default the roles of _Master Admin, Bot Owner, Bot Developer _and _Bot Tester_ are created by the Platform. You can create your own custom roles, too ([refer here for more](../user-management/role-management)).
+You can assign Roles to the user. By default the roles of _Master Admin, Bot Owner, Bot Developer_ and _Bot Tester_ are created by the Platform. You can create your own custom roles, too ([refer here for more](../user-management/role-management)).
 
 <img src="../images/adminconsole-img5-bac-roles.png" alt="Assigning a Role" title="Assigning a Role" style="border: 1px solid gray;zoom:50%;"/>
 
