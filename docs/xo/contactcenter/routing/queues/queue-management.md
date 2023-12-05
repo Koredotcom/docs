@@ -1,4 +1,4 @@
-# **Queues**
+# Queues
 
 **Queues** are virtual, temporary waiting rooms that hold and process incoming requests for conversations between agents and customers. These are the holding areas for digital and audio conversations waiting for an agent to be assigned. 
 

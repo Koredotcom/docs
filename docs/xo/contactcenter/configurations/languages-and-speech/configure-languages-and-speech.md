@@ -1,30 +1,4 @@
-<!-----
-
-You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
-* ERRORs: 0
-* WARNINGs: 0
-* ALERTS: 11
-
-Conversion time: 3.896 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β34
-* Fri Nov 10 2023 02:01:32 GMT-0800 (PST)
-* Source doc: Languages and Speech
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
------>
-
-# **Languages and Speech**
+# Languages and Speech
 
 This feature lets you configure the language and speech settings within Contact Center module, to manage how your contact center uses languages and speech recognition.
 
