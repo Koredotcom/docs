@@ -141,6 +141,7 @@ The final step in the setup is to enable the channel on the XO Platform. To enab
 
 1. On the XO Platform, under **Zoom Contact Center** > **Configurations**, select **Yes** for **Enable Channel**.
 2. Click **Save**.
+
 <img src="../images/Zoom14.png" alt="enable Zoom  channel" title=" enable Zoom channel" style="border: 1px solid gray; zoom:100%;">
 
 
