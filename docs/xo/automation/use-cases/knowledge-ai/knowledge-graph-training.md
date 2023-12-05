@@ -11,24 +11,19 @@ The Knowledge Graph engine thus responds to users’ intents by identifying the 
 You can find the Knowledge Graph by selecting your desired VA, then going to **Build** > **Conversation Skills** > **Knowledge Graph**.
 
 !!! note "Key Considerations for Training a Few-Shot Knowledge Graph"
+    
+    Few-Shot Knowledge Graphs do not require an ontology and do not perform path qualification. Instead, they identify intents using semantic similarity and pattern recognition. However, if you want to train the VA on a specific use case for which the appropriate FAQ is not identified, you can map FAQs to an ontology, similar to what you would do with an Ontology-based Graph.
 
-   Few-Shot Knowledge Graphs do not require an ontology and do not perform path qualification. Instead, they identify intents using semantic similarity and pattern recognition. However, if you want to train the VA on a specific use case for which the appropriate FAQ is not identified, you can map FAQs to an ontology, similar to what you would do with an Ontology-based Graph.
-   
-   The main difference concerning training is that in the Few-Shot KG, Terms don't require some of the training configurations needed in an Ontology Graph. Here are some key pointersThe following considerations should be made when training a Few-shot Knowledge Graph.
-   * Default Terms are not available. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.
-   * Organizer Terms do not support Path-Level and Knowledge Graph Synonyms. They support Intent Preconditions and Context Output.
-   * Mandatory Terms support Traits, Path-Level and Knowledge Graph Synonyms, Intent Preconditions, and Context Output, just like in an Ontology-based Graph.
-   * You can set all Thresholds and Configurations except Path Coverage and Lemmatization using Parts of Speech, Search in Answer, and Qualify Contextual Paths, which are not supported by Few-Shot Graphs.
+    The main difference concerning training is that in the Few-Shot KG, Terms don't require some of the training configurations needed in an Ontology Graph. Here are some key pointers:
 
-<div class="admonition note">
-<p class="admonition-title">Key Considerations for Training a Few-Shot Knowledge Graph</p>
-<p>Few-Shot Knowledge Graphs do not require an ontology and do not perform path qualification. Instead, they identify intents using semantic similarity and pattern recognition. However, if you want to train the VA on a specific use case for which the appropriate FAQ is not identified, you can map FAQs to an ontology, similar to what you would do with an Ontology-based Graph.</p>
-<p>The main difference concerning training is that in the Few-Shot KG, Terms don't require some of the training configurations needed in an Ontology Graph. Here are some key pointers:</p>
-<p><ul><li>Default Terms are not available. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.</li>
-<li>Organizer Terms do not support Path-Level and Knowledge Graph Synonyms. They support Intent Preconditions and Context Output.</li> 
-<li>Mandatory Terms support Traits, Path-Level and Knowledge Graph Synonyms, Intent Preconditions, and Context Output, just like in an Ontology-based Graph.</li>
-<li>You can set all Thresholds and Configurations except Path Coverage and Lemmatization using Parts of Speech, Search in Answer, and Qualify Contextual Paths, which are not supported by Few-Shot Graphs.</li></ul></p></div>
+    1. Default Terms are not available. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.
 
+    2. Organizer Terms do not support Path-Level and Knowledge Graph Synonyms. They support Intent Preconditions and Context Output.
+
+    3. Mandatory Terms support Traits, Path-Level and Knowledge Graph Synonyms, Intent Preconditions, and Context Output, just like in an Ontology-based Graph.
+
+    4. You can set all Thresholds and Configurations except Path Coverage and Lemmatization using Parts of Speech, Search in Answer, and Qualify Contextual Paths, which are not supported by Few-Shot Graphs.
+    
 <p>See the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-overview/#compare-knowledge-graph-types" target="_blank">Knowledge Graph Types Comparison Table</a> for a detailed list of supported features.</p>
 
 <p>Also, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-training/#training-configuration" target="_blank">Training Configuration</a> for training setup details.</p>
@@ -51,9 +46,10 @@ Here are the steps that the Knowledge Graph Engine takes when detecting FAQs:
 1. **Extract Nodes**: The KG engine processes the user utterance to extract the term (ontology nodes) present in the graph. It also takes into consideration the synonyms, traits, and tags associated with the terms.
 2. **Query Graph**: The KG engine fetches all the paths that consist of the extracted nodes.
 3. **Shortlist Paths**: All the paths consisting of 50% or more matching terms with the user utterance are shortlisted for further processing.
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Patch coverage computation doesn't consider the root node.</p></div>
+
+!!! note
+    
+    Patch coverage computation doesn't consider the root node.
 
 <ol start="4"><li><b>Filter with Traits</b>: If traits are defined in the Knowledge Graph, paths shortlisted in the above step are further filtered based on the confidence score of a classification algorithm in user utterance.</li>
 <li><b>Send to Ranker</b>: The KG engine then sends the shortlisted paths to the Ontology Ranker Program.</li>
@@ -167,10 +163,10 @@ You can **Manage Context** for the terms and tags by setting:
 
 Post the XO Platform v8.0 release, context can be enabled for <b>Organizer</b> nodes as well. Enabling the **Manage Context** option allows you to set the context precondition and context output mentioned above. Click <a href="https://developer.kore.ai/docs/bots/bot-intelligence/context-management/" target="_blank">here</a> for more information on Context Management.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Enabling the <b>Manage Context</b> option will not show the term/node name by default.</p>
-</div>
+!!! note
+
+    Enabling the <b>Manage Context</b> option will not show the term/node name by default.
+
 
 ### Stop Words
 
@@ -188,10 +184,10 @@ To edit the stop words list, follow the steps below:
 
 After you complete creating/editing the Knowledge Graph, click the **Train** button on the top-right of the Knowledge Graph window. When you perform this action, all the paths, synonyms, and question-answer sets are sent to the Graph DB engine.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>After every change that you make to the Knowledge Graph such as adding synonyms to a term or editing the name of a term, you must click the Train button for the changes to reflect in the bot responses.</p>
-</div>
+!!! note
+
+    After every change that you make to the Knowledge Graph such as adding synonyms to a term or editing the name of a term, you must click the Train button for the changes to reflect in the bot responses.
+
 
 The training fails if any single node has more than 100 questions. This limit was introduced in v7.3 to make the Knowledge Graph more efficient by improving the response times. In such failure cases, you can **Download Errors** CSV file which lists the path with more than 100 questions. You can use this file to rectify your Knowledge Graph.
 
@@ -203,10 +199,9 @@ When you complete creating the Knowledge Graph and training it, we recommend tha
 
 To train and improve the performance, Thresholds and Configurations can be specified for all three NLP engines – FM, KG, and ML. You can access these settings from **Natural Language > Training > Thresholds & Configurations.**
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If your VA is multilingual, you can set the Thresholds differently for different languages. If not set, the Default Settings will be used for all languages. This feature is available from v7.0 onwards.</p>
-</div>
+!!! note
+
+    If your VA is multilingual, you can set the Thresholds differently for different languages. If not set, the Default Settings will be used for all languages. This feature is available from v7.0 onwards.
 
 The settings for the Knowledge Graph engine are discussed in detail in the following sections.
 
@@ -243,10 +238,9 @@ The Platform also offers some advanced configurations. <a href="https://develope
 
 This feature enables identifying FAQs by searching the user input against the answer section, instead of only matching with questions. This is a fallback mechanism only i.e. search in the answer section will be done only if no FAQs are identified from questions.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This feature is not supported in all languages, refer here for details.</p>
-</div>
+!!! note
+
+    This feature is not supported in all languages, refer here for details.
 
 When the **Search in Answer** flag is enabled, the Knowledge Graph engine considers the answer text for identifying the intents also.
 

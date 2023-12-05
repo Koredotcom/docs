@@ -1,4 +1,4 @@
-# **Waiting Flows**
+# Waiting Flows
 
 While customers wait for an agent to assist with their query via voice or chat, you can customize their Waiting Experience to maintain engagement and improve customer satisfaction.
 
