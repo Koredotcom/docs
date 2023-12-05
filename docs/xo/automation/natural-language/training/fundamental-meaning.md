@@ -433,7 +433,7 @@ To add an entity pattern, follow the below steps:
 
 <img src="../images/manage-patterns.png" alt="manage patterns" title="manage patterns" style="border: 1px solid gray; zoom:75%;">
 
-## Negative Patterns
+### Negative Patterns
 
 On the Kore.ai XO Platform, a natural language engine attempts to identify the user’s input and match it to a task.
 
