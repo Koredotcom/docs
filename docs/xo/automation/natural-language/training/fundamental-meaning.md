@@ -13,15 +13,15 @@ The FM model scores user utterances using various semantic rules, which include:
 * Word Match, Word Coverage across the sentence, Word Position
 * Sentence structure
 
-### The FM Process
+## The FM Process
 
 The FM model uses the following processes in training.
 
-#### Tokenization
+### Tokenization
 
 Also known as word segmentation, this process breaks up the given text into units called tokens. The hyphenated words are retained (might be subjected to spell correction later); digits with a hyphen are split. For example, **_2-3_** becomes **_2 – 3_**. Tokenization is not done for known concepts like Dates, Currency, etc.
 
-#### Substitution
+### Substitution
 
 This process expands interjections, abbreviations, misspellings, texting shorthand, and contractions using system concepts. Like `~emohello` for all greeting-related expressions, `~yes` for confirmation, `~no` for rejection, and more. A **Bot Substitution** or replacement of words happens immediately after tokenization.
 
@@ -29,19 +29,19 @@ This feature allows bot developers to add substitutions specific to their domain
 
 Another use of this feature is on voice channels where ideally, mis-transcriptions should be corrected by the ASR software, but that isn’t always possible. In these cases, the substitution functionality allows bot developers to correct transcription errors. For example, **_our d_** is corrected to **_Audi_** by a car serving bot. [Learn more](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Bot_Substitutions).
 
-#### Merging
+### Merging
 
 This process combines a sequence of single words, numbers, or dates. For example, “credit card” or “twenty five” or “twenty-five” merged into a single word.
 
-#### Spell Check
+### Spell Check
 
 This process replaces unknown words with known words (if any) which involves case conversion. The Platform refers to WordNet and VA Defined Terms for spell check. E.g. “I wantt  to pai for my booking”   becomes “I want to pay for my booking”
 
-#### Lemmatization
+### Lemmatization
 
 The XO Platform uses the WordNet database to look up word lemmas in a given text.
 
-#### Gleaning
+### Gleaning
 
 This process helps identify sections of utterances and mark them as special. This includes the following:
 
@@ -50,15 +50,15 @@ This process helps identify sections of utterances and mark them as special. Thi
 3. Identifying and normalizing numbers and from other related entities: e.g. “seven one three triple five double zero eighty four” => 7135550084, which is probably a phone number.
 4. Identifying System entities like Percentages – “sixty six percent”; Units of measurement – “five sq km”, “12 stone 7 pounds”; Currencies – “twenty bucks”, “six lakh rupees”; Dates and times – “last day of next month”, “10 o’clock tonight”.
 
-#### Parts of Speech (POS) tagging
+### Parts of Speech (POS) tagging
 
 This process marks up a word in a corpus to the corresponding part-of-speech tag based on the context and definition. Part-of-speech tags are useful in building parse trees which are used to extract the relationship between words. **POS Tagging** is also essential for building lemmatizers to reduce a word to its root form.  Each word is assigned a part of the speech tag, and possibly a role (subject/verb/object) from VA definition data.
 
-#### Marking
+### Marking
 
 This process of assigns a concept to each word. **POS tagging** and **Parsing** are abstract and deal with nouns and verbs. Alternatively, **Marking** applies a meaning to the word. For example, for the utterance “book a flight” – `book` can be a noun or verb. However, in this context, it is marked as a verb.
 
-### Key Components
+## Key Components
 
 Synonyms, Concepts & Patterns are the cornerstones of the FM engine. These are used in intent detection and also by Ranking & Resolver when trying to choose among the multiple possible intents.
 
@@ -66,7 +66,7 @@ Synonyms, Concepts & Patterns are the cornerstones of the FM engine. These are u
 * **Concepts** are a predefined set of choices that are defined once and used in multiple places. The Platform has a large set of inbuilt concepts that developers can use to define a pattern like ~world_country, ~asian_country. You can create your own custom concepts which are applicable to your use case, you can also create hierarchical concepts.
 * **Patterns** used mainly for intent detection in the FM engine. Can be used to define metaphors or other idiomatic expressions for task names. Concepts can be used in defining patterns.
 
-### FM Output
+## FM Output
 
 The FM Engine collects information on a word in a given user input depending on:
 
@@ -197,7 +197,7 @@ Whenever a user adds and saves a new synonym, the system only updates the databa
 
 Whenever a user deletes an existing synonym, the system removes only the concerned synonym from the existing synonyms list without overwriting the complete list. During concurrent usage, the system prompts the user to refresh the page to make the latest information available.
 
-### Manage Concepts
+## Manage Concepts
 
 **Concepts** are clusters of related and synonymous terms that can be considered as a group identified by a single term.
 
@@ -205,14 +205,14 @@ For example, _yes_ can be expressed as _ok,_ _I agree_ or _all right_ etc.
 
 In addition, Concepts can be very useful when you want to categorize terms. For example, you might have _fruit_ as a concept, under which you can classify terms such as _apple, orange, banana, etc._
 
-#### Concept Types
+### Concept Types
 
 There are two types of Concepts within the XO Platform:
 
 * **System Concepts**: The Kore.ai platform provides a list of default concepts that cover the most common scenarios like yes, no, help etc.
 * **Custom Concepts**: You might want to define concepts catering to your business requirements. For example, you might want to use the term _fruit_ to imply either _apple_ or _orange_ or _banana_. If you want to add to the list of default words, you are advised to create a new concept and add words there before mapping the pattern, instead of adding more words to the default concepts like ~emogoodbye or ~emohello.
 
-#### Define Custom Concepts
+### Define Custom Concepts
 
 You can define a new concept the same way as you would define a Bot Synonym, but you need to start the word with a **~**. For more details on the naming convention, [refer here](https://developer.kore.ai/docs/bots/nlp/additional-notes-nlp-settings-guidelines/#Concepts).
 
@@ -227,11 +227,11 @@ Add the <b>~disable_help</b> concept key and train the VA to disable the system 
 
 <img src="../images/custom_help.png" alt="custom help" title="custom help" style="border: 1px solid gray; zoom:75%;">
 
-#### Parallel Editing for Concepts
+### Parallel Editing for Concepts
 
 Parallel Editing works the same for Concepts and Synonyms. Please click [here](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Parallel_Editing_for_Synonyms) to learn more.
 
-#### Bot Substitutions
+## Bot Substitutions
 
 The NLP engine can recognize Bot substitutions present in the user utterance using a custom concept definition called `~bot_substitutions` for bot substitution.
 
@@ -269,7 +269,7 @@ Bot substitution is used to support the following patterns for user utterances:
 
 * `&lt; word` will match the first word in a sentence, e.g., `&lt; new Chevy|Chevrolet` will change _new Chevy car_ to _Chevrolet car_, but it will not change _I want to know about the new Chevy car_.
 
-#### Bot word Aliases
+## Bot word Aliases
 
 The Bots on the Kore.ai XO Platform can now be trained during the NL process to identify aliases or alternative spellings in utterances (during Speech-to-Text (STT) transcriptions).
 
@@ -285,8 +285,6 @@ Synonym words with a <code>+</code> prefix are treated as aliases to train word 
 **Define a Bot Alias** 
 
 To treat a Bot Synonym word as an Alias in an utterance, you must define a custom concept with the steps below:
-
-
 
 1. On the left menu of the Bot Builder, navigate to **Natural Language** > **Training**.
 2. Click the **Bot Synonyms** tab.
@@ -315,7 +313,7 @@ Similarly, in the example below, the system marks `Kelly` as the alias for `Tele
 
 <img src="../images/synonyms-example-2.png" alt="synonyms example 2" title="synonyms example 2" style="border: 1px solid gray; zoom:75%;">
 
-#### Bot Homophones
+## Bot Homophones
 
 The Kore.ai XO Platform now supports **Bot Homophones** or Homonyms to identify the relevant word when two or more words are pronounced the same but have different spellings. Homonyms are a challenge on voice channels because while processing and adjusting an utterance on the Natural Language (NL) Pipeline, the Speech-to-Text (STT) engine can easily transcribe the wrong word. For example, `Write an email` can be wrongly transcribed to `Right an email`.
 
@@ -376,7 +374,7 @@ To learn more about best practices and tips for optimizing NLP, refer to [Natura
 
 For a quick guide towards the usage of patterns, refer to [How to use Patterns](https://developer.kore.ai/docs/bots/how-tos/how-to-use-patterns-for-intents-entities/).
 
-#### Navigate to the Patterns Tab
+### Navigate to the Patterns Tab
 
 1. Open the VA for which you want to add patterns and select the **Build** tab from the top menu.
 2. From the left menu click **Natural Language ->** **Training**.
@@ -384,7 +382,7 @@ For a quick guide towards the usage of patterns, refer to [How to use Patterns](
     * **Intents**– Add or edit patterns or rules for dialog task User Intent nodes.
     * **Entities**– Add or edit patterns for dialog task Entity nodes.
 
-#### Add Patterns for Intents
+### Add Patterns for Intents
 
 You can define a pattern as a sentence that represents the task but does not actually contain any of the words in the name of the task.
 
@@ -406,7 +404,7 @@ To add an intent pattern, follow the below steps:
 
 <img src="../images/add-intent-pattern.png" alt="add intent pattern" title="add intent pattern" style="border: 1px solid gray; zoom:75%;">
 
-#### Add Rules for Intents
+### Add Rules for Intents
 
 You can use traits or context tags to define intent identification rules for better intent detection. You can add Traits or Context Tags and conditional rules using AND, OR operators.
 
@@ -421,7 +419,7 @@ Refer here to know more about [Traits](https://developer.kore.ai/docs/bots/nlp/t
 
 <img src="../images/fm-rules.png" alt="manage rules" title="manage rules" style="border: 1px solid gray; zoom:75%;">
 
-#### Add Patterns for Entities
+### Add Patterns for Entities
 
 In the **Entities** section of the **Training** page, you can view, add, and delete patterns for dialog task entity node names.
 
@@ -435,7 +433,7 @@ To add an entity pattern, follow the below steps:
 
 <img src="../images/manage-patterns.png" alt="manage patterns" title="manage patterns" style="border: 1px solid gray; zoom:75%;">
 
-### Negative Patterns
+## Negative Patterns
 
 On the Kore.ai XO Platform, a natural language engine attempts to identify the user’s input and match it to a task.
 
