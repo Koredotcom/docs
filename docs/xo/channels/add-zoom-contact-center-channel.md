@@ -30,10 +30,10 @@ Please ensure you have the following before enabling this channel:
 The important steps to set up the ZCC channel are summarized below:
 
 
-1. [Associate an App to the channel](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-zoom-contact-center-channel/#Step_1_Associate_an_App).
-2. [Create a Bot Connector instance](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-zoom-contact-center-channel/#Step_2_Add_Koreai_Chatbot_Connector_Instance) on [Zoom App Marketplace](https://marketplace.zoom.us/apps) to associate a virtual assistant.
-3. [Authorize the connector by configuring the required parameters](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-zoom-contact-center-channel/#Step_3_Authorize_the_Connector).
-4. [Enable the channel on the XO Platform](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-zoom-contact-center-channel/#Step_4_Enable_the_Channel).
+1. [Associate an App to the channel](docs/xo/channels/add-zoom-contact-center-channel/#step-1-associate-an-app).
+2. [Create a Bot Connector instance](/docs/xo/channels/add-zoom-contact-center-channel/#step-2-add-koreai-chatbot-connector-instance) on [Zoom App Marketplace](https://marketplace.zoom.us/apps) to associate a virtual assistant.
+3. [Authorize the connector by configuring the required parameters](/docs/xo/channels/add-zoom-contact-center-channel/#step-3-authorize-the-connector).
+4. [Enable the channel on the XO Platform](/docs/xo/channels/add-zoom-contact-center-channel/#step-4-enable-the-channel).
 
 
 ### **Step 1: Associate an App**
@@ -137,7 +137,7 @@ The final step in the setup is to enable the channel on the XO Platform. To enab
 
 1. On the XO Platform, under **Zoom Contact Center** > **Configurations**, select **Yes** for **Enable Channel**.
 2. Click **Save**.
-<img src="../images/Zoom14.png" alt="enable Zoom  channel" title=" enable Zoom channel" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/Zoom14.png" alt="enable Zoom  channel" title=" enable Zoom channel" style="border: 1px solid gray; zoom:70%;">
 
 
 You’re now ready to test the new channel integration by publishing your virtual assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
