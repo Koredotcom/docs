@@ -8,10 +8,10 @@ The Fundamental Meaning model is a deterministic model that uses semantic rules 
 
 The FM model scores user utterances using various semantic rules, which include:
 
-* Grammar;
-* Parts of speech;
-* Word Match, Word Coverage across the sentence, Word Position;
-* Sentence structure.
+* Grammar
+* Parts of speech
+* Word Match, Word Coverage across the sentence, Word Position
+* Sentence structure
 
 ### The FM Process
 
