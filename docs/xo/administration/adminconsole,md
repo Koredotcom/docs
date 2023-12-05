@@ -91,8 +91,6 @@ You can assign Roles to the user. By default the roles of _Master Admin, Bot Own
 
 To assign a role to a user follow these steps:
 
-
-
 1. From **User Management**, select **Role Management.**
 2. Hover over the role that you want to assign to the user and click the **edit icon.**
 3. From the **Manage Role** dialog, under the **Assignments** tab click **Assign Role** button.
