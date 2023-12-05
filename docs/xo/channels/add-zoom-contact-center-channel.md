@@ -30,7 +30,7 @@ Please ensure you have the following before enabling this channel:
 The important steps to set up the ZCC channel are summarized below:
 
 
-1. [Associate an App to the channel](docs/xo/channels/add-zoom-contact-center-channel/#step-1-associate-an-app).
+1. [Associate an App to the channel](/docs/xo/channels/add-zoom-contact-center-channel/#step-1-associate-an-app).
 2. [Create a Bot Connector instance](/docs/xo/channels/add-zoom-contact-center-channel/#step-2-add-koreai-chatbot-connector-instance) on [Zoom App Marketplace](https://marketplace.zoom.us/apps) to associate a virtual assistant.
 3. [Authorize the connector by configuring the required parameters](/docs/xo/channels/add-zoom-contact-center-channel/#step-3-authorize-the-connector).
 4. [Enable the channel on the XO Platform](/docs/xo/channels/add-zoom-contact-center-channel/#step-4-enable-the-channel).
