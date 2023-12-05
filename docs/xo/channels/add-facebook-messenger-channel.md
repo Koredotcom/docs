@@ -6,11 +6,11 @@ The steps to enable this channel are simple and summarized below:
 
 
 
-1. [Create and set up a Facebook Messenger App](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-facebook-channel/#Step_1_Create_and_Set_up_a_Facebook_Messenger_App).
-2. [Configure the Webhook or Callback URL to send and receive messages](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-facebook-channel/#Step_2_Configure_the_WebhookCallback_URL).
-3. [Subscribe to the app on the Facebook page using the Client ID and Client Secret](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-facebook-channel/#Step_3_Set_up_App_ID_and_Secret).
-4. [Submit the App for Approval.](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-facebook-channel/#Step_4_Submit_the_App_for_Approval)
-5. [Enable the channel and complete the configuration on the Kore.ai XO Platform](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-facebook-channel/#Step_5_Enable_the_Channel).
+1. [Create and set up a Facebook Messenger App](/docs/xo/channels/add-facebook-messenger-channel/#step-1-create-and-set-up-a-facebook-messenger-app).
+2. [Configure the Webhook or Callback URL to send and receive messages](/docs/xo/channels/add-facebook-messenger-channel/#step-2-configure-the-webhookcallback-url).
+3. [Subscribe to the app on the Facebook page using the Client ID and Client Secret](/docs/xo/channels/add-facebook-messenger-channel/#step-3-set-up-app-id-and-secret).
+4. [Submit the App for Approval.](/docs/xo/channels/add-facebook-messenger-channel/#step-4-submit-the-app-for-approval)
+5. [Enable the channel and complete the configuration on the Kore.ai XO Platform](/docs/xo/channels/add-facebook-messenger-channel/#step-5-enable-the-channel).
 
 
 ## Step 1: Create and Set up a Facebook Messenger App
