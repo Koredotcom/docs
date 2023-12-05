@@ -26,7 +26,7 @@ The Real Time Status includes:
 
 By default, Bot metrics based on usage of **all bots** during the **last 24 hours** is displayed. You can customize the metrics displayed by the time period and bot selection.
 
-Select the **Bot** for which you want to see the metrics and further select a **Task **(multiple selections allowed) within the assistant if needed. By default, the metrics for all Bots are displayed
+Select the **Bot** for which you want to see the metrics and further select a **Task**(multiple selections allowed) within the assistant if needed. By default, the metrics for all Bots are displayed
 
 The **Time Periods** you can select are:
 
