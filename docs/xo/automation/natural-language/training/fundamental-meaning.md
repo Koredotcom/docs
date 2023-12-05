@@ -337,6 +337,7 @@ To treat a Bot Synonym word as a Homophone/Homonym in an utterance, you must def
 3. Click the **New Concept** button.
 4. In the **New Concept** panel, enter the value for **Concept Name**.
 5. Enter the value(s) for **Synonyms** in the following syntax, where the concept members are homophones separated by a `|` icon.`original word in the utterance | homonym1 | homonym2 | homonymN`
+
 <img src="../images/enter-synonym-values.png" alt="enter synonyms" title="enter synonyms" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition warning">
