@@ -4,12 +4,12 @@ Effective context management is important because it allows Virtual Assistants t
 
 For example, let us consider the following conversation:
 
-!!! note "Example"
-
-    User: What is the cost of an Economy flight ticket from London to Paris on Aug 15, 2022?
-    VA: It's €242.
-    User: Great! I would like to book it.
-
+<div class="admonition note">
+<p class="admonition-title">Example</p>
+<p><b>User</b>: What is the cost of an Economy flight ticket from London to Paris on Aug 15, 2022?</p>
+<p><b>VA</b>: It's €242.</p>
+<p><b>User</b>: Great! I would like to book it.</p>
+</div>
 
 In the above conversation, the _booking_ is in the context of an economy flight on Aug. 15, 2022. The VA should not be asking the user whether they would like to book a flight or a hotel; what their departure and destination cities are or when they want to fly. 
 
@@ -27,14 +27,14 @@ For example, The _City Name_ entity in _Check Weather_ intent can be pre-populat
 
 This document talks about the concepts behind the implementation of context management in the Kore.ai XO Platform. For a detailed step-by-step example, [refer here](https://developer.kore.ai/docs/bots/how-tos/context-switching/).
 
-!!! note "Use Case Example"
-
-    User: When is my flight to Singapore?
-    VA: Your flight from New York to Singapore is confirmed for Jun 20th.
-    User: Do I need a Visa?
-   VA: Yes, you need a visa to visit Singapore for business or tourism
-   User: I would like to apply for one
-   VA: Sure I can help with a Visa to Singapore. Let me know the duration of the stay.
+<div class="admonition note">
+<p class="admonition-title">Example</p>
+<p><b>User</b>: When is my flight to Singapore?</p>
+<p><b>VA</b>: Your flight from New York to Singapore is confirmed for Jun 20th.</p>
+<p><b>User</b>: Do I need a Visa?</p>
+<p><b>VA</b>: Yes, you need a visa to visit Singapore for business or tourism?</p>
+<p><b>User</b>: I would like to apply for one.</p>
+<p><b>VA</b>: Sure I can help with a Visa to Singapore. Let me know the duration of the stay.</p></div>
 `
 To achieve the above conversation, the context object can be used as follows:
 
@@ -75,6 +75,7 @@ The Platform supports emitting details of a dialog task when executed by the use
 
 * The intent name is emitted as a contextual tag for all dialog tasks when the task execution is initiated.
 * You can add any additional tags from the **NLP Properties** tab of the dialog task (you may have to scroll down).
+
 <img src="../images/set-dialog-task.png" alt="set dialog tasks" title="set dialog tasks" style="border: 1px solid gray; zoom:75%;">
 
 * You can emit output context tags from any place where JavaScript is written (script node, advanced prompts, _run a script_ option, etc.) using the `contextTags.add(string value).`
