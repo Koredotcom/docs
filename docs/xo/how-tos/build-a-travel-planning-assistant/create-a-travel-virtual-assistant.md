@@ -66,20 +66,18 @@ An Entity node is typically used to gather information from the user. Let us use
 3. You can also drag and drop **Entity** from the node panel on the left.
 4. Click the newly added Entity node to open the _Entity_ window.
 5. By default, the **Component Properties** tab is selected. Under the **General Settings** section, enter the following details:
-* Name
-* Display Name
-* Type: Select _List of Items (enumerated)_ from the drop-down list. You can provide a list of values that the user can select. To add a list of values:
- * Click the **Settings** icon next to the field.
- <img src="../images/click-list-settings.png" alt="click list settings" title="click list settings" style="border: 1px solid gray; zoom:75%;"> 
-
- * Select the **Static List** option.
- * Under the **Keys & Values To Use** section, enter the **Display Name** as _Arrival_ and _Departure _in separate rows_. **Value** and **Synonyms** columns auto-populate, leave them as is.
- * Define the percentage of **Auto Correction** to be applied to match the user’s input to a value in the list. Set to 0 if you do not want to apply auto correction at all.
- * Click **Save**.
-<img src="../images/save-list-of-items.png" alt="save list of items" title="save list of items" style="border: 1px solid gray; zoom:75%;">
-
-6. Go back to the **Entity** window.
-7. Under the **User Prompts** section, enter the following text:
+    * Name
+    * Display Name
+    * Type: Select _List of Items (enumerated)_ from the drop-down list. You can provide a list of values that the user can select. To add a list of values, follow the steps below:
+        <ul><li>Click the <b>Settings</b> icon next to the field.
+        <img src="../images/click-list-settings.png" alt="click list settings" title="click list settings" style="border: 1px solid gray; zoom:75%;"> </li>
+        <li>Select the <b>Static List</b> option.</li>
+        <li>Under the <b>Keys & Values To Use</b> section, enter the <b>Display Name</b> as <i>Arrival</i> and <i>Departure</i> in separate rows. <b>Value</b> and <b>Synonyms</b> columns auto-populate, leave them as is.</li>
+        <li>Define the percentage of <b>Auto Correction</b> to be applied to match the user’s input to a value in the list. Set to 0 if you do not want to apply auto correction at all.</li>
+        <li>Click <b>Save</b>.
+        <img src="../images/save-list-of-items.png" alt="save list of items" title="save list of items" style="border: 1px solid gray; zoom:75%;"></li></ul>
+<ol start="6"><li>Go back to the <b>Entity</b> window.</li>
+<li>Under the <b>User Prompts</b> section, enter the following text:
 
 ```
 Hello {{context.session.UserContext.firstName}}! Welcome to Los Angeles International Airport.
@@ -87,11 +85,10 @@ I can help you with flight Arrival/Departure information. Please select your pre
 ```
 
 !!!note
-    The context variable retrieves the user's first name. Also, markdown is used for the airport name to appear in bold.
+    The context variable retrieves the user's first name. Also, markdown is used for the airport name to appear in bold.</li></ol>
 
 <ol start="8"><li>Under the <b>Display List of Values</b> section, select <i>Yes</i>, use channel-specific standard formatting for default messages and show the available list of values to the end-user option. This displays the list of values as a button template in supported channels.
 <img src="../images/display-list-values.png" alt="display list values" title="display list values" style="border: 1px solid gray; zoom:75%;"></li>
-
 <li>Close the <b>Entity</b> window.</li></ol>
 
 ### Create a Service Node
@@ -116,7 +113,7 @@ A Service Bot Action node allows you to make a backend API call. Here the servic
 
 9. **Sub Type**: _REST_
 10. Under the **Request Definition** section, click **DEFINE REQUEST**.
-11. On the **Define Request **page**,** enter the following details:
+11. On the **Define Request** page, enter the following details:
     * **Request Type** – _GET_
     * **Request URL** – https://5e85a56644467600161c6579.mockapi.io/FlightDetails 
 This API does not require any Auth or Header Parameters.
@@ -297,7 +294,7 @@ print(JSON.stringify(message));
 ```
 <ol start="9"><li>Click <b>Save</b>.</li>
 <li>Return to the <b>Message</b> window.</li>
-<li>On the Message window, click the <b>Connections</b> tab.</li>
+<li>On the Message window, click the <b>Connections</b> tab, and follow the steps below:</li>
 <ul><li>From the drop-down list, change the default connection from <i>Not Connected</i> to <i>End of Dialog</i>.</li>
 <li>Click <b>Save</b>.</li></ul>
 <li>Close the <b>Message</b> window.</li></ol>
