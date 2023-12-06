@@ -93,9 +93,9 @@ The following fields are accessible from this page:
     * _Not Active_: hovering over the information icon displays when the invite to join the account was sent.
     * _Suspended_: hovering over the information icon displays the last logged in date and time. You can Activate User either using the **more** icon on this dialog or using the **ACTIVATE** button displayed when you hover over the user row in the Users page.
 
-* **Groups** to which the user is assigned. Using the **Edit** link you can select or deselect the groups for the given User. [Refer here for more on Managing Groups](../managing-your-groups)
+* **Groups** to which the user is assigned. Using the **Edit** link you can select or deselect the groups for the given User. [Refer here for more on Managing Groups](../managing-your-groups){:target="_blank"}
 * **Admin Role** status, can be added or removed using the **Edit** link.
-* **Bot Builder Access** status can be modified using the **Edit** link. [Refer here for more on Role Management](../role-management).
+* **Bot Builder Access** status can be modified using the **Edit** link. [Refer here for more on Role Management](../role-management){:target="_blank"}.
 * User Details like First Name, Last Name, email id, etc. can be viewed and modified.  
 Note that the email id is read-only field and cannot be modified.
 
@@ -120,7 +120,7 @@ This tab displays the Bots to which the User has access and their role – Owner
 
 As an admin, you may Edit or Delete the role of the User for a given Bot. Note that you cannot delete or modify the role of a Bot Owner, it is assigned at the time of Bot creation.
 
-You can also select a Bot and assign a Bot role to the user. [See here for more on Bot roles](../role-management/#bot-roles).
+You can also select a Bot and assign a Bot role to the user. [See here for more on Bot roles](../role-management/#bot-roles){:target="_blank"}.
 
 <img src="../images/bac-manage-bots.png" alt="Manage Bots" title="Manage Bots" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -141,7 +141,7 @@ The _password reset email_ sent message is displayed and an email is sent to the
 
 !!! tip
 
-        If SSO is enabled, Bots Admins can still log on to the Bots Admin Console directly using their password credentials and bypass SSO. For more information, see [Logging On Using Your Admin Password Instead of SSO](../../security-control/using-single-sign-on/#logging-on-using-your-admin-password-instead-of-sso).
+        If SSO is enabled, Bots Admins can still log on to the Bots Admin Console directly using their password credentials and bypass SSO. For more information, see [Logging On Using Your Admin Password Instead of SSO](../../security-control/using-single-sign-on/#logging-on-using-your-admin-password-instead-of-sso){:target="_blank"}.
 
 
 #### Delete User
