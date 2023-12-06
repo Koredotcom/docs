@@ -4,11 +4,12 @@ Effective context management is important because it allows Virtual Assistants t
 
 For example, let us consider the following conversation:
 
-```
-User: What is the cost of an Economy flight ticket from London to Paris on Aug 15, 2022?
-VA: It's €242.
-User: Great! I would like to book it.
-```
+!!! note "Example"
+
+    User: What is the cost of an Economy flight ticket from London to Paris on Aug 15, 2022?
+    VA: It's €242.
+    User: Great! I would like to book it.
+
 
 In the above conversation, the _booking_ is in the context of an economy flight on Aug. 15, 2022. The VA should not be asking the user whether they would like to book a flight or a hotel; what their departure and destination cities are or when they want to fly. 
 
@@ -26,16 +27,15 @@ For example, The _City Name_ entity in _Check Weather_ intent can be pre-populat
 
 This document talks about the concepts behind the implementation of context management in the Kore.ai XO Platform. For a detailed step-by-step example, [refer here](https://developer.kore.ai/docs/bots/how-tos/context-switching/).
 
-## Use Case Example
+!!! note "Use Case Example"
 
-```
-User: When is my flight to Singapore?
-VA: Your flight from New York to Singapore is confirmed for Jun 20th.
-User: Do I need a Visa?
-VA: Yes, you need a visa to visit Singapore for business or tourism
-User: I would like to apply for one
-VA: Sure I can help with a Visa to Singapore. Let me know the duration of the stay.
-```
+    User: When is my flight to Singapore?
+    VA: Your flight from New York to Singapore is confirmed for Jun 20th.
+    User: Do I need a Visa?
+   VA: Yes, you need a visa to visit Singapore for business or tourism
+   User: I would like to apply for one
+   VA: Sure I can help with a Visa to Singapore. Let me know the duration of the stay.
+`
 To achieve the above conversation, the context object can be used as follows:
 
 * _Flight Booking Enquiry_ emits the destination city entity value.
@@ -77,7 +77,6 @@ The Platform supports emitting details of a dialog task when executed by the use
 * You can add any additional tags from the **NLP Properties** tab of the dialog task (you may have to scroll down).
 <img src="../images/set-dialog-task.png" alt="set dialog tasks" title="set dialog tasks" style="border: 1px solid gray; zoom:75%;">
 
-
 * You can emit output context tags from any place where JavaScript is written (script node, advanced prompts, _run a script_ option, etc.) using the `contextTags.add(string value).`
 
 #### Alert Tasks
@@ -114,28 +113,28 @@ Intent pre-conditions are used to define the intent detection scope for intents 
 
 Intent pre-conditions for dialog intents are set to define when a dialog is detected i.e. making a dialog available for detection only when specific tags are available in the context.
 
-1. You can add one or more intent pre-conditions for making a dialog intent available.
+* You can add one or more intent pre-conditions for making a dialog intent available.
 <img src="../images/dialog-tasks-preconditions.png" alt="dialog tasks precondition" title="dialog tasks precondition" style="border: 1px solid gray; zoom:75%;">
 
-2. Dialog intents with pre-conditions are detected only if the defined pre-conditions are met.
-3. The intent with a precondition set is treated as a sub-intent and will be part of the [Linked Task Exception](https://developer.kore.ai/docs/bots/bot-intelligence/sub-intents-and-follow-up-intents/#Linked_Task_Exceptions) behavior from the Dialog level Hold and Resume settings.
+* Dialog intents with pre-conditions are detected only if the defined pre-conditions are met.
+* The intent with a precondition set is treated as a sub-intent and will be part of the [Linked Task Exception](https://developer.kore.ai/docs/bots/bot-intelligence/sub-intents-and-follow-up-intents/#Linked_Task_Exceptions) behavior from the Dialog level Hold and Resume settings.
 
 #### Alert Tasks
 
 Intent pre-conditions for **alert** tasks are set to define when a task is detected i.e. making a task available for detection only when specific tags are available in the context.
 
-1. You can add one or more intent pre-conditions for making a task intent available.
-2. Task intents with pre-conditions must be detected only if the defined pre-conditions are met.
+* You can add one or more intent pre-conditions for making a task intent available.
+* Task intents with pre-conditions must be detected only if the defined pre-conditions are met.
 <img src="../images/input-preconditions.png" alt="input preconditions" title="input preconditions" style="border: 1px solid gray; zoom:75%;">
 
 #### Knowledge Graph
 
 Intent pre-conditions for Knowledge Graph can be associated with terms.
 
-1. You can define intent pre-conditions for any of the terms present in the Knowledge Graph.
+* You can define intent pre-conditions for any of the terms present in the Knowledge Graph.
 <img src="../images/define-intent-preconditions.png" alt="define intent preconditions" title="define intent preconditions" style="border: 1px solid gray; zoom:75%;">
 
-2. Paths that contain terms with pre-conditions are qualified only if the pre-conditions are met.
+* Paths that contain terms with pre-conditions are qualified only if the pre-conditions are met.
 
 ### Contextual Intent Detection
 
