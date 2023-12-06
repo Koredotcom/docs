@@ -1,4 +1,4 @@
-# Migrate Google Dialogflow Bot to the XO Platform
+# Migrate Google Dialogflow Bot
 
 The Kore.ai XO Platform supports the migration of an existing **Google Dialogflow** bot into your XO Platform account using the External NLU Adapter.
 
