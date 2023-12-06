@@ -3,49 +3,37 @@
 To add the LINE channel to your Kore.ai bot, you must set up a webhook integration to configure the connection between LINE and Kore.ai. Adding the LINE channel to your Kore.ai assistant allows end-users to interact with it using their _LINE_ accounts. To add the LINE channel to your bot, you must also have or create a LINE account.
 
 
-# Step 1: Create a LINE Provider
+## Step 1: Create a LINE Provider
 
 
 
 1. Log in to your [LINE Developer account portal](https://developers.line.me/), and click **Create a new provider**..If you already have a _Provider_ that you want to use for this bot, then choose the provider from the Provider_ List._
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
-2.  Click **Create a Messaging API Channel**. \
+<img src="../images/line.png" alt="line channel" title="line channel" style="border: 1px solid gray; zoom:70%;">
 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+2.  Click **Create a Messaging API Channel**.
 
-
-![alt_text](images/image2.png "image_tooltip")
+<img src="../images/line1.png" alt="line messaging api" title="line messaging api" style="border: 1px solid gray; zoom:70%;">
 
 
 
-# Step 2: Add a Channel on LINE
+## Step 2: Add a Channel on LINE
 
 
 
 1. Under **Create a new channel **, provide the required details.
-2. Click **Create **to review and proceed with channel creation. \
+2. Click **Create **to review and proceed with channel creation.
+<img src="../images/line2.png" alt="channel creation" title="channel creation" style="border: 1px solid gray; zoom:70%;">
 
+!!! note
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-
-
-    ```
-Note: The Kore.ai XO Platform uses PUSH_MESSAGE APIs to deliver non-interactive messages to end-users. These scenarios include cases like alert notifications, session closure messages, and any other scenario where the replyToken from the LINE channel is either not available or expired. These API calls may be charged; review the LINE plan options and select the appropriate plan that suits your needs.
-```
+    The Kore.ai XO Platform uses PUSH_MESSAGE APIs to deliver non-interactive messages to end-users. These scenarios include cases like alert notifications, session closure messages, and any other scenario where the replyToken from the LINE channel is either not available or expired. These API calls may be charged; review the LINE plan options and select the appropriate plan that suits your needs.
 
 
 
 
-# Step 3: Enable the Channel
+
+## Step 3: Enable the Channel
 
 
 
@@ -57,45 +45,29 @@ Note: The Kore.ai XO Platform uses PUSH_MESSAGE APIs to deliver non-interactive 
 6. Enter the **Channel User** ID and **Channel Secret**, retrieved from LINE.
 7. Under Enable Channel, select Yes and click Save to enable the LINE Channel for your assistant.
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
+<img src="../images/line3.png" alt="deploy line channel" title="deploy line channel" style="border: 1px solid gray; zoom:70%;">
 
 
 
-# Step 4 : Enable the Webhook Integration
+
+## Step 4 : Enable the Webhook Integration
 
 
 
 1. From the LINE Channel Configuration page in the XO Platform, copy the **Webhook URL**.
-2. Go to  LINE, and navigate to the **Messaging API **section of your newly created LINE Channel.  Scroll to Webhook Settings and click Edit to enter the Webhook URL you just copied from the XO Platform. \
+2. Go to  LINE, and navigate to the **Messaging API **section of your newly created LINE Channel.  Scroll to Webhook Settings and click Edit to enter the Webhook URL you just copied from the XO Platform.
+<img src="../images/line4.png" alt="Line Webhook URL" title="Line Webhook URL" style="border: 1px solid gray; zoom:70%;">
 
+3. Click **Update**.
+<img src="../images/line5.png" alt="line webhook settings" title="line Webhook settings" style="border: 1px solid gray; zoom:70%;">
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
-
-3. Click **Update**. \
-
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.png "image_tooltip")
-
-4. After saving the webhook URL, Enable the Webhook, choose whether to enable redelivery and error statistics aggregation, then click **Verify **to ensure that the webhook call from LINE is acknowledged by the Kore.ai XO Platform. \
-
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image7.png "image_tooltip")
+4. After saving the webhook URL, Enable the Webhook, choose whether to enable redelivery and error statistics aggregation, then click **Verify **to ensure that the webhook call from LINE is acknowledged by the Kore.ai XO Platform.
+<img src="../images/line6.png" alt="line channel verification" title="line channel verification" style="border: 1px solid gray; zoom:70%;">
 
 
 
-# Step 5: Review Additional Options
+
+## Step 5: Review Additional Options
 
 We recommend that you review additional options available for your LINE channels like group behavior, auto-replies, and greetings messages.
 
