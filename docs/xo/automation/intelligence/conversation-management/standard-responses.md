@@ -46,7 +46,7 @@ In the **Standard Response** section, the standard bot responses are categorized
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If the standard responses are updated at the conditions wherein an ambiguity is presented to the user, the bot response will not display the ambiguous choices to the user and you need to use the function <b>getChoices</b> to present the ambiguity list (refer to point 6 below).</p>
+<p>If the standard responses are updated at the conditions wherein an ambiguity is presented to the user, the bot response will not display the ambiguous choices to the user and you need to use the function <b>getChoices</b> to present the ambiguity list (refer to point 7 below).</p>
 </div>
 
 1. Select a tab category for the standard response. For example, **Greeting**, and then hover the situation for which you want to add the response. 
@@ -58,8 +58,9 @@ In the **Standard Response** section, the standard bot responses are categorized
 <img src="../images/select-field-for-response.png" alt="edit alert tasks for ignore words" title="edit alert tasks for ignore words" style="border: 1px solid gray; zoom:75%;">
 
 6. In the bot **Response** editor, you can override the default Bot Response for this channel using basic editor controls on the **Simple Mode** tab, or write custom JavaScript for the response on the **Advanced Mode** tab as follows:
-   * **Simple Mode** tab – Enter the text for the default standard response. For example, *There* you are, I was ~hoping~ you would return soon! and then optionally, format the text using the formatting buttons for bold, italics, header styles, hyperlinks, ordered and unordered lists, and inserting a line. For more information, refer to [Using the Prompt Editor](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/).
-   * **Advanced Mode tab** – Enter JavaScript to override the channel message as described in the following code examples.
+
+* **Simple Mode** tab – Enter the text for the default standard response. For example, *There* you are, I was ~hoping~ you would return soon! and then optionally, format the text using the formatting buttons for bold, italics, header styles, hyperlinks, ordered and unordered lists, and inserting a line. For more information, refer to [Using the Prompt Editor](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/).
+* **Advanced Mode tab** – Enter JavaScript to override the channel message as described in the following code examples.
 
 !!!note
 
@@ -144,11 +145,11 @@ var indexArray = ['a', 'b', 'c',
     print(JSON.stringify(message));
 ```
 
-7. Using the **getChoices()** function, you can also customize the **response display format** using the [message formatting templates](https://developer.kore.ai/docs/bots/sdks/message-templates/). When the getChoices() function is called and there is an ambuguity, the platform returns the ambiguous choices information as an array which can be used to present the options to the end users. 
+<ol start="7"><li>Using the <code>getChoices()</code> function, you can also customize the <b>response display format</b> using the <a href="https://developer.kore.ai/docs/bots/sdks/message-templates/">message formatting templates</a>. When the <code>getChoices()</code> function is called and there is an ambuguity, the platform returns the ambiguous choices information as an array which can be used to present the options to the end users.
 
 For example, to display the standard response for _Did you mean in_ a button format, you can use the following code:
 
-```
+<pre>
 var info =getChoices() ;
 var message = {
 "type": "template",
@@ -168,9 +169,8 @@ var button = {
 message.payload.buttons.push(button);
 }
 print(JSON.stringify(message)); 
-```
-
-8. Click **Done** to save and close the **Edit Response** dialog and apply the new standard response.
+</pre></li>
+<li>Click <b>Done</b> to save and close the <b>Edit Response</b> dialog and apply the new standard response.</li></ol>
 
 ## Scenarios
 
