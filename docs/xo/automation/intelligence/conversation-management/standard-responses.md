@@ -25,8 +25,8 @@ For example, in the SMS channel, you may only want to use short bot responses to
 
 To access and manage the default responses in bot builder, follow the below steps:
 
-* Select the **Build** tab from the top menu
-* From the left menu, click **Intelligence > Standard Responses**.
+1. Select the **Build** tab from the top menu
+2. From the left menu, click **Intelligence > Standard Responses**.
 <img src="../images/navigate-standard-responses.png" alt="edit alert tasks for ignore words" title="edit alert tasks for ignore words" style="border: 1px solid gray; zoom:75%;">
 
 For each standard response category tab, the event or user input is listed followed by one or more NLP interpreter standard responses. You can modify the default response, and if needed, add additional responses selected randomly by the NLP interpreter in response to user input or system event.
