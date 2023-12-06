@@ -62,6 +62,7 @@ After the application is created:
 3. Go to the **Dev environments** page and set up the environment for your app.
 4. Click **Set up dev environment** under the **Account Activity API** section. Provide a value for the **Dev environment label**, say _ProductionEnvironment_, and choose your app.
 5. Click **Complete setup**.
+
 <img src="../images/Twitter3.png" alt="Twitter account activity" title="Twitter account activity" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -87,14 +88,11 @@ To edit the Twitter channel, follow the below steps:
 1. Hover over the channel and click to modify.
 2. You can make necessary updates to your channel configurations and save them.
 3. You can also disable or delete the channel information by clicking the **Settings **icon.
-
 <img src="../images/Twitter4.png" alt="Twitter settings" title="Twitter settings" style="border: 1px solid gray; zoom:70%;">
-
-4.  Select one of the following commands to modify the channel:
-* **Disable/Enable** – Click **Disable** to temporarily disable the use of the Twitter channel for your bot. To enable use of Twitter, click **Enable**.
-* **Delete** – Click **Delete**. On the **Delete Confirmation** dialog box, click **OK** to permanently delete the bot channel configuration.
+4. Select one of the following commands to modify the channel:
+ * **Disable/Enable** – Click **Disable** to temporarily disable the use of the Twitter channel for your bot. To enable use of Twitter, click **Enable**.
+ * **Delete** – Click **Delete**. On the **Delete Confirmation** dialog box, click **OK** to permanently delete the bot channel configuration.
 
 !!! warning
 
     This operation is permanent, and cannot be undone.
-    
