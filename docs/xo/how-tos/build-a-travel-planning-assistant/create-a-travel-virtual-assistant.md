@@ -111,23 +111,23 @@ A Service Bot Action node allows you to make a backend API call. Here the servic
     * **Type**: _Webservice_
     <img src="../images/general-settings-service-node.gif" alt="general settings service node" title="general settings service node" style="border: 1px solid gray; zoom:75%;">
 
-9. **Sub Type**: _REST_
-10. Under the **Request Definition** section, click **DEFINE REQUEST**.
-11. On the **Define Request** page, enter the following details:
+    * **Sub Type**: _REST_
+9. Under the **Request Definition** section, click **DEFINE REQUEST**.
+10. On the **Define Request** page, enter the following details:
     * **Request Type** – _GET_
     * **Request URL** – https://5e85a56644467600161c6579.mockapi.io/FlightDetails 
 This API does not require any Auth or Header Parameters.
-12. Click the **Test Request** tab.
+11. Click the **Test Request** tab.
     * Click **Test** on the top-right.
     * Wait for the test to complete and you get a Status Code 200.
     * Click **Save as Sample Response**.
     * Click **Save**.
-13. Return to the dialog builder.
-14. Under the **Connections** section, set the **Default Connection Rule** to _End of Bot Action_.
+12. Return to the dialog builder.
+13. Under the **Connections** section, set the **Default Connection Rule** to _End of Bot Action_.
 <img src="../images/default-connection-rule.png" alt="default connection rule" title="default connection rule" style="border: 1px solid gray; zoom:75%;">
 
-10. Close the **Service** window.
-11. Collapse the **Bot Action** node.
+14. Close the **Service** window.
+15. Collapse the **Bot Action** node.
 
 
 ### Create a Flight Selection Entity Node
@@ -143,7 +143,7 @@ This Entity node is to capture the Flight Number for which the user wants the st
     * **Type**: _String_ (users can write a custom script to convert the API string output to a list of values in the following steps, this is the requirement of the dummy API used)
 5. Under the **User Prompts** section, enter the following text: 
 `Please provide the flight number.`
-* **Manage**: Users can define a specific prompt for the Web SDK channel.
+**Manage**: Users can define a specific prompt for the Web SDK channel.
 6. Click **Manage**. Read more about [managing user prompts](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/).
 <img src="../images/click-manage-user-prompt.png" alt="click manage user prompt" title="click manage user prompt" style="border: 1px solid gray; zoom:75%;">
 
