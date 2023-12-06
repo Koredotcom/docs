@@ -65,8 +65,6 @@ To add the LINE channel to your Kore.ai bot, you must set up a webhook integrati
 <img src="../images/line6.png" alt="line channel verification" title="line channel verification" style="border: 1px solid gray; zoom:70%;">
 
 
-
-
 ## Step 5: Review Additional Options
 
 We recommend that you review additional options available for your LINE channels like group behavior, auto-replies, and greetings messages.
