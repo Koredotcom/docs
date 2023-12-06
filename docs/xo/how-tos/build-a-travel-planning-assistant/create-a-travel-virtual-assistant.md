@@ -112,22 +112,22 @@ A Service Bot Action node allows you to make a backend API call. Here the servic
     <img src="../images/general-settings-service-node.gif" alt="general settings service node" title="general settings service node" style="border: 1px solid gray; zoom:75%;">
 
     * **Sub Type**: _REST_
-9. Under the **Request Definition** section, click **DEFINE REQUEST**.
-10. On the **Define Request** page, enter the following details:
-    * **Request Type** – _GET_
-    * **Request URL** – https://5e85a56644467600161c6579.mockapi.io/FlightDetails 
-This API does not require any Auth or Header Parameters.
-11. Click the **Test Request** tab.
-    * Click **Test** on the top-right.
-    * Wait for the test to complete and you get a Status Code 200.
-    * Click **Save as Sample Response**.
-    * Click **Save**.
-12. Return to the dialog builder.
-13. Under the **Connections** section, set the **Default Connection Rule** to _End of Bot Action_.
-<img src="../images/default-connection-rule.png" alt="default connection rule" title="default connection rule" style="border: 1px solid gray; zoom:75%;">
 
-14. Close the **Service** window.
-15. Collapse the **Bot Action** node.
+<ol start="9"><li>Under the <b>Request Definition</b> section, click <b>DEFINE REQUEST</b>.</li>
+<li>On the <b>Define Request</b> page, enter the following details:</li>
+    <ul><li><b>Request Type</b> – <i>GET</i>
+    <li><b>Request URL</b> – <code>https://5e85a56644467600161c6579.mockapi.io/FlightDetails </code>
+This API does not require any Auth or Header Parameters.</li></ul>
+<li>Click the <b>Test Request</b> tab.</li>
+<li>Click <b>Test</b> on the top-right.</li>
+<li>Wait for the test to complete and you get a Status Code 200.</li>
+<li>Click <b>Save as Sample Response</b>.</li>
+<li>Click <b>Save</b>.</li>
+<li>Return to the dialog builder.</li>
+<li>Under the <b>Connections</b> section, set the <b>Default Connection Rule</b> to <i>End of Bot Action</i>.
+<img src="../images/default-connection-rule.png" alt="default connection rule" title="default connection rule" style="border: 1px solid gray; zoom:75%;"></li>
+<li>Close the <b>Service</b> window.</li>
+<li>Collapse the <b>Bot Action</b> node.</li></ol>
 
 
 ### Create a Flight Selection Entity Node
