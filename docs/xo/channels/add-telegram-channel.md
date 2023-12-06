@@ -5,7 +5,7 @@ To add Telegram as a channel to your Kore.ai assistant, you must create a bot on
 To add the Telegram channel, follow the below steps:
 
 
-# Step 1: Configure a Telegram Bot
+## Step 1: Configure a Telegram Bot
 
 
 
@@ -26,7 +26,7 @@ To add the Telegram channel, follow the below steps:
 
 
 
-# Step 2: Configure the Channel
+## Step 2: Configure the Channel
 
 
 
