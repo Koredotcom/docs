@@ -138,7 +138,7 @@ nav:
       - Campaign:
         - Introduction to Campaign: virtual-assistants-overview.md
         - Set up Campaign: virtual-assistants-overview.md       
-    - _: <hr>
+    - ____________________:
     - Glossary:
       - Concepts and Terminology: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/ 
     - FAQs: 
