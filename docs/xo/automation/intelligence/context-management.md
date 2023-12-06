@@ -75,7 +75,7 @@ The Platform supports emitting details of a dialog task when executed by the use
 
 * The intent name is emitted as a contextual tag for all dialog tasks when the task execution is initiated.
 * You can add any additional tags from the **NLP Properties** tab of the dialog task (you may have to scroll down).
-<img src="../images/set-dialog-task.png" alt="set dialog tasks" title="set dialog tasks" style="border: 1px solid gray; zoom:75%;">
+<img src="../../images/set-dialog-task.png" alt="set dialog tasks" title="set dialog tasks" style="border: 1px solid gray; zoom:75%;">
 
 
 * You can emit output context tags from any place where JavaScript is written (script node, advanced prompts, _run a script_ option, etc.) using the `contextTags.add(string value).`
