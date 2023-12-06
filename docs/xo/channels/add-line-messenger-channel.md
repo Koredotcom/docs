@@ -12,7 +12,6 @@ To add the LINE channel to your Kore.ai bot, you must set up a webhook integrati
 
 
 2.  Click **Create a Messaging API Channel**.
-
 <img src="../images/line1.png" alt="line messaging api" title="line messaging api" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -44,7 +43,6 @@ To add the LINE channel to your Kore.ai bot, you must set up a webhook integrati
 5. Go to **Deploy > Channels > LINE > Configuration**.
 6. Enter the **Channel User** ID and **Channel Secret**, retrieved from LINE.
 7. Under Enable Channel, select Yes and click Save to enable the LINE Channel for your assistant.
-
 <img src="../images/line3.png" alt="deploy line channel" title="deploy line channel" style="border: 1px solid gray; zoom:70%;">
 
 
