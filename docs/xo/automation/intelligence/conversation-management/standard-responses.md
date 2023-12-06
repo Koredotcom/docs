@@ -147,7 +147,7 @@ var indexArray = ['a', 'b', 'c',
 
 <ol start="7"><li>Using the <code>getChoices()</code> function, you can also customize the <b>response display format</b> using the <a href="https://developer.kore.ai/docs/bots/sdks/message-templates/">message formatting templates</a>. When the <code>getChoices()</code> function is called and there is an ambuguity, the platform returns the ambiguous choices information as an array which can be used to present the options to the end users.
 
-For example, to display the standard response for _Did you mean in_ a button format, you can use the following code:
+For example, to display the standard response for <i>Did you mean</i> in a button format, you can use the following code:
 
 <pre>
 var info =getChoices() ;
