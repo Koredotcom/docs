@@ -83,7 +83,7 @@ You may want to create one or more groups of users in your account for users wit
     3. scrolling to select one or more Kore.ai users and Kore.ai groups,
     4. Then click <img src="../images/single-arrow-right.png">, to move the selected list to the **Current Members** section.
     7. To add all available users and groups, click <img src="../images/double-arrow-right.png">.  
-    <img src="../images/bots-admin-user-mgmt-groups-create-new-group-add-users.png" alt="Add users to group" title="Add users to group" style="border: 1px solid gray;zoom:50%;"/>
+    <img src="../images/bots-admin-user-mgmt-groups-create-new-group-add-users.png" alt="Add users to group" title="Add users to group" style="border: 1px solid gray;zoom:80%;"/>
  
 6. Click **Save**. The group is created and the **Groups** page is displayed.
 7. The _Group Updated_ message is displayed at the top of the page.
@@ -118,4 +118,4 @@ You may no longer need a group of users in your account. You must remove all use
 
 The group is deleted.
 
-<img src="../images/bots-admin-user-mgmt-groups-delete.png" alt="Delete group" title="Delete group" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/bots-admin-user-mgmt-groups-delete.png" alt="Delete group" title="Delete group" style="border: 1px solid gray;zoom:80%;"/>

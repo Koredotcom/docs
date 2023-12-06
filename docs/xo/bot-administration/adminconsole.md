@@ -80,12 +80,12 @@ For this example scenario, we assume that assistants have been published to your
 3. To save and apply the changes, in the **Bot & task assignments** dialog, click **Apply**.
 4. In the _Bot Assignment successful_ dialog, click **OK**.
 
-[More on Bots Management](../bot-management/)
+[More on Bots Management](../bot-management/){:target="_blank"}
 
 
 ### Step 3 – Assigning a Role
 
-You can assign Roles to the user. By default the roles of _Master Admin, Bot Owner, Bot Developer_ and _Bot Tester_ are created by the Platform. You can create your own custom roles, too ([refer here for more](../user-management/role-management)).
+You can assign Roles to the user. By default the roles of _Master Admin, Bot Owner, Bot Developer_ and _Bot Tester_ are created by the Platform. You can create your own custom roles, too ([refer here for more](../user-management/role-management){:target="_blank"}).
 
 <img src="../images/adminconsole-img5-bac-roles.png" alt="Assigning a Role" title="Assigning a Role" style="border: 1px solid gray;zoom:50%;"/>
 
