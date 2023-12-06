@@ -122,12 +122,12 @@ As an admin, you may Edit or Delete the role of the User for a given Bot. Note t
 
 You can also select a Bot and assign a Bot role to the user. [See here for more on Bot roles](../role-management/#bot-roles){:target="_blank"}.
 
-<img src="../images/bac-manage-bots.png" alt="Manage Bots" title="Manage Bots" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/bac-manage-bots.png" alt="Manage Bots" title="Manage Bots" style="border: 1px solid gray;"/>
 
 
 ### Other Options
 
-<img src="../images/bac-users-more.png" alt="Other Options" title="Other Options" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/bac-users-more.png" alt="Other Options" title="Other Options" style="border: 1px solid gray;"/>
 
 
 
