@@ -57,10 +57,10 @@ In the **Standard Response** section, the standard bot responses are categorized
 5. When a specific task is selected, the **Choose a Field is** drop-down is displayed. Select **Any Field** or a specific field for this channel-specific response.
 <img src="../images/select-field-for-response.png" alt="edit alert tasks for ignore words" title="edit alert tasks for ignore words" style="border: 1px solid gray; zoom:75%;">
 
-6. In the bot **Response** editor, you can override the default Bot Response for this channel using basic editor controls on the **Simple Mode** tab, or write custom JavaScript for the response on the **Advanced Mode** tab as follows:
+<ol start="6"><li>In the bot <b>Response</b> editor, you can override the default Bot Response for this channel using basic editor controls on the <b>Simple Mode</b> tab, or write custom JavaScript for the response on the <b>Advanced Mode</b> tab as follows:</li></ol>
 
-* **Simple Mode** tab – Enter the text for the default standard response. For example, *There* you are, I was ~hoping~ you would return soon! and then optionally, format the text using the formatting buttons for bold, italics, header styles, hyperlinks, ordered and unordered lists, and inserting a line. For more information, refer to [Using the Prompt Editor](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/).
-* **Advanced Mode tab** – Enter JavaScript to override the channel message as described in the following code examples.
+  * **Simple Mode** – Enter the text for the default standard response. For example, *There* you are, I was ~hoping~ you would return soon! and then optionally, format the text using the formatting buttons for bold, italics, header styles, hyperlinks, ordered and unordered lists, and inserting a line. For more information, refer to [Using the Prompt Editor](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/).
+  * **Advanced Mode** – Enter JavaScript to override the channel message as described in the following code examples.
 
 !!!note
 

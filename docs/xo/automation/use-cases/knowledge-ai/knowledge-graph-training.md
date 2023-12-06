@@ -35,7 +35,7 @@ The following are the overall capabilities of the Knowledge Graph Engine:
 * **Ease of Training using Synonyms**: Kore.ai’s Knowledge Graph has a provision to associate synonyms against a graph node. This helps capture the variation in a question. For example, *flight* can be used as a synonym for *plane* in an FAQ such as *How can I buy a plane ticket*?
 * **Better Coverage with Alternate Questions**: The Knowledge Graph has a provision to add alternate questions. This helps us to capture the various ways a user might ask the same question. For example, in *How do I change my flight?* we can add an alternate question as *Can I change my flight?*
 * **Improved Accuracy**: Ontology-driven question-answers reduce the possibility of false positives.
-* **Weighing Phrases using Traits**: Kore.ai’s Knowledge Graph engine includes a concept of traits for filtering out irrelevant suggestions. <a href="https://developer.kore.ai/docs/bots/nlp/traits/" target="_blank">Learn more</a>.
+* **Weighing Phrases using Traits**: Kore.ai’s Knowledge Graph engine includes a concept of traits for filtering out irrelevant suggestions. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-terminology/#traits" target="_blank">Learn more</a>.
 * **Ability to Mark Term Importance**: The Knowledge Graph has a provision to mark that an ontology term is important. For example, in the question, *How to book a flight?*, the word *flight* is an important term. If the *flight* keyword is not present in the user utterance, then it makes little sense.
 * **Ability to Group Relevant Nodes**: As the graph grows in size, managing graph nodes can become a challenging task. Using the *organizer node* construct of the ontology engine, developers can group relevant child nodes under a parent node.
 
@@ -242,7 +242,7 @@ This feature enables identifying FAQs by searching the user input against the an
 
 When the **Search in Answer** flag is enabled, the Knowledge Graph engine considers the answer text for identifying the intents also.
 
-Once this option is enabled, you can specify whether to **Inform the end-user that the answer is a probable answer**. If selected a Standard Message to the effect is displayed, which can be customized using the Manage Response link. <a href="https://developer.kore.ai/docs/bots/bot-intelligence/default-dialog/#Managing_Standard_Responses" target="_blank">Learn more</a>.
+Once this option is enabled, you can specify whether to **Inform the end-user that the answer is a probable answer**. If selected a Standard Message to the effect is displayed, which can be customized using the Manage Response link. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/standard-responses/" target="_blank">Learn more</a>.
 
 There are three ways in which you can render the response:
 
