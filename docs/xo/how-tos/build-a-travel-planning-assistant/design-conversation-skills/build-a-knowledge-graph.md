@@ -57,17 +57,14 @@ Here is an example Ontology:
 To create an ontology, follow the steps below:
 
 1. Hover over the Knowledge Graph name on the left pane and click the **+** icon to **Add Child Node**. For example, we can add a node for questions related to **international** travel, and one for **reservation** related questions.
-
 <img src="../images/add-child-node.png" alt="add child node" title="add child node" style="border: 1px solid gray; zoom:75%;"> 
 
-2. To add subgroups, hover over the node and click the corresponding **+** icon to add child nodes.
-
-<img src="../images/add-subgroup.png" alt="add subgroup" title="add subgroup" style="border: 1px solid gray; zoom:75%;">  
-
-3. Repeat the process for related questions.
-4. To add questions to your newly created ontology, select them from your list of FAQs, then drag and drop them onto the relevant node. You will notice the path gets updated accordingly.
-<img src="../images/add-faq-to-node.gif" alt="add faq to node" title="add faq to node" style="border: 1px solid gray; zoom:75%;"> 
-5. Edit a question and see that the node name is added as a tag. This ensures that this question is qualified for a user utterance containing the term/node name. 
+<ol start="2"><li>To add subgroups, hover over the node and click the corresponding <b>+</b> icon to add child nodes.
+<img src="../images/add-subgroup.png" alt="add subgroup" title="add subgroup" style="border: 1px solid gray; zoom:75%;"> </li>
+<li>Repeat the process for related questions.</li>
+<li>To add questions to your newly created ontology, select them from your list of FAQs, then drag and drop them onto the relevant node. You will notice the path gets updated accordingly.
+<img src="../images/add-faq-to-node.gif" alt="add faq to node" title="add faq to node" style="border: 1px solid gray; zoom:75%;"></li>
+<li>Edit a question and see that the node name is added as a tag. This ensures that this question is qualified for a user utterance containing the term/node name.</li></ol>
  
 !!! note
 
@@ -76,7 +73,6 @@ To create an ontology, follow the steps below:
 <img src="../images/edit-ontology-question.png" alt="edit ontology question" title="edit ontology question" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="6"><li>You can further add nodes to your Ontology. The image below shows you the Ontology that we will be working with moving forward.
-
 <img src="../images/ontology-example.png" alt="ontology example" title="ontology example" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Train the Knowledge Graph and use <b>Talk to Bot</b>. There should not be any changes in the responses.</li></ol>
 
