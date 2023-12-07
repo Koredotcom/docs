@@ -65,6 +65,6 @@ You can review all historical bulk invite import operations along with the resul
 2. The **History of Bulk User Invite** dialog is displayed as shown in the following illustration.  
 <img src="../images/inviting-many-users-img5.png" alt="History of Bulk User Invite" title="History of Bulk User Invite" style="border: 1px solid gray;zoom:70%;"/>
 
-3. To view the results of an import, in the **Report** column for the import that you want to view, click Results.
+3. To view the results of an import, in the **Report** column for the import that you want to view, click **_Results_**.
 4. The **Report on File Based Bulk User Invite** dialog is displayed as shown in the following illustration.  
 <img src="../images/inviting-many-users-img4.png" alt="Report on File Based Bulk User Invite" title="Report on File Based Bulk User Invite" style="border: 1px solid gray;zoom:70%;"/>
