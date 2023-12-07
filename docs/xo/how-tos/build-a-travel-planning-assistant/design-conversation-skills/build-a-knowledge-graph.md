@@ -63,10 +63,10 @@ To create an ontology, follow the steps below:
 <li>Repeat the process for related questions.</li>
 <li>To add questions to your newly created ontology, select them from your list of FAQs, then drag and drop them onto the relevant node. You will notice the path gets updated accordingly.</li>
 <img src="../images/add-faq-to-node.gif" alt="add faq to node" title="add faq to node" style="border: 1px solid gray; zoom:75%;">
-<li>Edit a question and see that the node name is added as a tag. This ensures that this question is qualified for a user utterance containing the term/node name.</li>
+<li>Edit a question and see that the node name is added as a tag. This ensures that this question is qualified for a user utterance containing the term/node name.</li></ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The tags you added earlier are retained and you can delete them, whereas the node names cannot be deleted from the tags list.</p></div></ol>    
+<p>The tags you added earlier are retained and you can delete them, whereas the node names cannot be deleted from the tags list.</p></div>    
 <img src="../images/edit-ontology-question.png" alt="edit ontology question" title="edit ontology question" style="border: 1px solid gray; zoom:75%;">
 <ol start="6"><li>You can further add nodes to your Ontology. The image below shows you the Ontology that we will be working with moving forward.</li>
 <img src="../images/ontology-example.png" alt="ontology example" title="ontology example" style="border: 1px solid gray; zoom:75%;">
