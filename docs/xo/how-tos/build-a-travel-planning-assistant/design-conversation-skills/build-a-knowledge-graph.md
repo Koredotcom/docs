@@ -46,6 +46,7 @@ Each group can be a node in the ontology. You can have multiple levels of the no
 Here is an example Ontology: 
 
 **Reservation**
+
 * Make
     * How do I pay for my booking?
 * Update
@@ -56,9 +57,11 @@ Here is an example Ontology:
 To create an ontology, follow the steps below:
 
 1. Hover over the Knowledge Graph name on the left pane and click the **+** icon to **Add Child Node**. For example, we can add a node for questions related to **international** travel, and one for **reservation** related questions.
+
 <img src="../images/add-child-node.png" alt="add child node" title="add child node" style="border: 1px solid gray; zoom:75%;"> 
 
 2. To add subgroups, hover over the node and click the corresponding **+** icon to add child nodes.
+
 <img src="../images/add-subgroup.png" alt="add subgroup" title="add subgroup" style="border: 1px solid gray; zoom:75%;">  
 
 3. Repeat the process for related questions.
@@ -71,6 +74,7 @@ To create an ontology, follow the steps below:
     The tags you added earlier are retained and you can delete them, whereas the node names cannot be deleted from the tags list.
     
 <img src="../images/edit-ontology-question.png" alt="edit ontology question" title="edit ontology question" style="border: 1px solid gray; zoom:75%;">
+
 <ol start="6"><li>You can further add nodes to your Ontology. The image below shows you the Ontology that we will be working with moving forward.
 
 <img src="../images/ontology-example.png" alt="ontology example" title="ontology example" style="border: 1px solid gray; zoom:75%;"></li>
@@ -194,21 +198,18 @@ While this is a valid response it is not the right one. Ideally, since the user 
 
 To add traits, follow the below steps:
 
-1. From the **more** option next to the **Train** button, select the **Manage Traits** option.
-
-<img src="../images/select-manage-trait.png" alt="manage trait" title="manage trait" style="border: 1px solid gray; zoom:75%;">  
-
-2. Click **New Trait** to create a new trait.
-3. Select the **Trait Type** and add **Traits** to it. Here, let us consider **_Issues_** as Trait Type and **_lostpass_** as Trait.
-4. Add “**_lost my boarding pass_** as the **utterance** that triggers this trait. (Do not forget to hit enter after you add the utterance).
-5. Click **Save** and **Train the trait**.
-<img src="../images/save-and-train-trait.png" alt="save and train trait" title="save and train trait" style="border: 1px solid gray; zoom:75%;"> 
-
-6. Apply Trait with  the steps below:
-    * From the ontology, go to the **Issues** node **Settings** page.
-    * Add **_lostpass_** as the trait (pick from the drop-down list).
-    * Click **Save** and **Train** the Knowledge Graph.
-    * Click **Talk to the Bot** and try the same question. Now you will get the expected response.
-    <img src="../images/add-trait-to-node.png" alt="add trait to node" title="add trait to node" style="border: 1px solid gray; zoom:75%;"> 
+<ol><li>From the <b>more</b> option next to the <b>Train</b> button, select the <b>Manage Traits</b> option.
+<img src="../images/select-manage-trait.png" alt="manage trait" title="manage trait" style="border: 1px solid gray; zoom:75%;"> </li>
+<li>Click <b>New Trait</b> to create a new trait.
+<li>Select the <b>Trait Type</b> and add <b>Traits</b> to it. Here, let us consider <b><i>Issues</i></b> as Trait Type and <b><i>lostpass</i></b> as Trait.
+<li>Add “<i>lost my boarding pass</i>" as the utterance that triggers this trait. (Do not forget to hit enter after you add the utterance).</li>
+<li>Click <b>Save</b> and <b>Train the trait</b>.
+<img src="../images/save-and-train-trait.png" alt="save and train trait" title="save and train trait" style="border: 1px solid gray; zoom:75%;"></li>
+<li>Apply Trait with  the steps below:</li></ol>
+<ul><li>From the ontology, go to the <b>Issues</b> node <b>Settings</b> page.</li>
+<li>Add <b><i>lostpass</i></b> as the trait (pick from the drop-down list).</li>
+<li>Click <b>Save</b> and <b>Train</b> the Knowledge Graph.</li>
+<li>Click <b>Talk to the Bot</b> and try the same question. Now you will get the expected response.
+<img src="../images/add-trait-to-node.png" alt="add trait to node" title="add trait to node" style="border: 1px solid gray; zoom:75%;"></li></ul>
 
 In this document you have seen various settings for building and managing a Knowledge Graph. For details regarding the implementation and functionality of Knowledge Graph, click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ontology/" target="_blank">here</a>.
