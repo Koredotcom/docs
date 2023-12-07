@@ -6,8 +6,8 @@ This document is part of the documentation related to creating a sample travel a
 
 The assistant we build will perform basic travel booking tasks, as follows:
 
-* Check the status of a flight, based on the flight number provided by the user, as seen <a href="https://developer.kore.ai/docs/bots/how-tos/travel-planing-assistant/create-a-travel-virtual-assistant/#Create_a_Dialog_Task">here</a>.
-* Update a flight booking, as discussed <a href="https://developer.kore.ai/docs/bots/how-tos/update-booking-task/">here</a>.
+* Check the status of a flight, based on the flight number provided by the user, as seen <a href="https://developer.kore.ai/docs/bots/how-tos/travel-planing-assistant/create-a-travel-virtual-assistant/#Create_a_Dialog_Task" target="_blank">here</a>.
+* Update a flight booking, as discussed <a href="https://developer.kore.ai/docs/bots/how-tos/update-booking-task/" target="_blank">here</a>.
 * Perform a flight change, based on the current flight and new flight preference provided by the user. as discussed in this present article.
 
 ### Add the Change Flight Dialog Task / Intent
@@ -31,7 +31,7 @@ To add this Dialog Task, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For instructions related to the <b>Legacy Dialog Builder</b>, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlp-guidelines/">here</a>.</p></div>
+<p>For instructions related to the <b>Legacy Dialog Builder</b>, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlp-guidelines/" target="_blank">here</a>.</p></div>
 
 <img src="../images/add-dialog-task.png" alt="add dialog task" title="add dialog task" style="border: 1px solid gray; zoom:75%;"> 
 
@@ -92,7 +92,7 @@ A **Service Node** allows you to make a backend API call. It is included in the 
 
 To add a **Bot Action – Service Node**, follow the steps below:
 
-1. Click the **+** below the _Seat_ Entity node.
+1. Click the **+** icon below the **Seat** Entity node.
 2. Select **Bot Action**, click to open properties, name it _UpdateBooking_, and close the **Properties** window.
 3. To add a Service Node, click the **+** icon next to the **Update Booking** Bot Action node to expand it.
 4. Click the **+** icon within the **Bot Action** layout, and select **Service**.
