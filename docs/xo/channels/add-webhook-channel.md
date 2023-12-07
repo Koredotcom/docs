@@ -90,7 +90,7 @@ To associate an App, follow the below steps:
 9. Select **Yes **to** Enable Channel**.
 10. **Save** the configuration. The Webhook URL in this channel instance is created dynamically.
 
-<img src="../images/webhook1.png" alt="enable webhook channel" title="enable webhook channel" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/webhook1.jpg" alt="enable webhook channel" title="enable webhook channel" style="border: 1px solid gray; zoom:70%;">
 
 
 
