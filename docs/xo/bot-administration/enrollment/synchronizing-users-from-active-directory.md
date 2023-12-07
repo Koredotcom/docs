@@ -46,6 +46,7 @@ Complete the steps in the following procedure to define the synchronization sett
 !!! NOTE
 
         If you are using a bot built on the platform from before v7.3, you will have an option to **Upgrade** or **Configure**. If you proceed to Configure without Upgrade the following options from the configuration steps will not be available;
+                
                 * access to AD sub-Groups or option to create a group within Kore.ai for the OUs in AD;
                 * add custom fields to the user data by mapping it to the right key from the AD server incoming payload;
                 * specify the inclusion rules.
@@ -67,7 +68,7 @@ In the following procedure, the cloud-based connection settings dialogs are desc
 7. **SSL** – Select to enable SSL for HTTPS.
 8. **Test Connection** – Click to test the authentication and Host configuration settings.
 9. Click **Save and next** to continue.
-
+<br>
 
 * Optionally, on the **Organizational Units** tab, you can define the Org Units that need to be imported from your company directory. Groups and sub-groups from the selected OU will be synchronized into the platform and the hierarchy of groups as present in the AD Server will be maintained in the platform.
     1. You can choose to
