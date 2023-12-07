@@ -60,16 +60,16 @@ To create an ontology, follow the steps below:
 
 <img src="../images/add-child-node.png" alt="add child node" title="add child node" style="border: 1px solid gray; zoom:75%;">
 
-2. To add subgroups, hover over the node and click the corresponding <b>+</b> icon to add child nodes.
+<ol start="2"><li>To add subgroups, hover over the node and click the corresponding <b>+</b> icon to add child nodes.</li>
 
 <img src="../images/add-subgroup.png" alt="add subgroup" title="add subgroup" style="border: 1px solid gray; zoom:75%;">
 
-3. Repeat the process for related questions.
-4. To add questions to your newly created ontology, select them from your list of FAQs, then drag and drop them onto the relevant node. You will notice the path gets updated accordingly.
+<li>Repeat the process for related questions.</li>
+<li>To add questions to your newly created ontology, select them from your list of FAQs, then drag and drop them onto the relevant node. You will notice the path gets updated accordingly.</li>
 
 <img src="../images/add-faq-to-node.gif" alt="add faq to node" title="add faq to node" style="border: 1px solid gray; zoom:75%;">
 
-5. Edit a question and see that the node name is added as a tag. This ensures that this question is qualified for a user utterance containing the term/node name.
+<li>Edit a question and see that the node name is added as a tag. This ensures that this question is qualified for a user utterance containing the term/node name.</li></ol>
 
 <img src="../images/edit-ontology-question.png" alt="edit ontology question" title="edit ontology question" style="border: 1px solid gray; zoom:75%;">
 
