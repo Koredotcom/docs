@@ -133,7 +133,7 @@ Enterprises can set up access to the Bot builder tool using the enterprise SSO. 
 
 Post v7.2 release, Kore.ai supports the IDP initiated flow, wherein the platform gets the postback directly with SAML response and is able to validate the assertion and register/identify the user. The configuration for these modes – SP-based and IDP-based flow is different and is highlighted in the configuration steps below.
 
-Refer below [to configure SSO using SAML](#configureing-sso-using-saml)
+Refer below [to configure SSO using SAML](#configuring-sso-using-saml)
 
 
 #### Use case 2: End-user authentication
@@ -203,7 +203,7 @@ To complete this procedure, you must have already selected _Okta_ as a SAML prov
     2. under **Security & Control** -> **Single Sign on page**
     3. after enabling **SAML** and selecting **Okta**
     4. **ACS URL for SP Initiated SAML Flow field** would contain the required URL.
-    5. For on-prem accounts, the ACS URL for SP Initiated SAML Flow is displayed as _https://idproxy-dev.kore.com/authorize/callback_ . This needs to be updated as “single sign on URL” in Okta platform and _https://idproxy-dev.kore.com_ needs to be updated as the “Audience URL”
+    5. For on-prem accounts, the ACS URL for SP Initiated SAML Flow is displayed as [_https://idproxy-dev.kore.com/authorize/callback_](https://idproxy-dev.kore.com/authorize/callback){:target="_blank"}. This needs to be updated as “single sign on URL” in Okta platform and [_https://idproxy-dev.kore.com_](https://idproxy-dev.kore.com){:target="_blank"} needs to be updated as the “Audience URL”
     6. You can provide the **Attribute statements** like emailId, firstName as per your requirement.
 
 8. To configure **ACS URL for IDP Initiated SAML Flow**, copy and paste the complete URL that get from your admin. In case you are using internal redirection URLs, please reach out to your internal admin/network teams.
@@ -224,7 +224,7 @@ Enter the **Audience URI** field as ACS URL for SP Initiated SAML Flow ([https:/
     
     !!! Note
             
-        Only data after the **—–BEGIN CERTIFICATE—– **header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai.
+        Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai.
 
 13. In Kore.ai, click **Save**. This will complete the integration of Okta login.
 
@@ -235,8 +235,8 @@ The _Identity Provider information successfully updated_ message is displayed at
 
 **OneLogin** – For more information, refer below, or in the _OneLogin_ documentation, see [Configuring SSO for Kore.ai](https://www.onelogin.com/connector/kore){:target="_blank"}.
 
-* **SAML 2.0 Endpoint** – The HTTP SSO endpoint for _OneLogin _to enable Service Provider initiated SAML flow, for example, https://app.onelogin.com/trust/saml2/http-post/sso/358111.
-* **Issuer URL** – The URL for the _OneLogin_ issuer, for example,https://app.onelogin.com/saml/metadata/358111.
+* **SAML 2.0 Endpoint** – The HTTP SSO endpoint for _OneLogin _to enable Service Provider initiated SAML flow, for example, [https://app.onelogin.com/trust/saml2/http-post/sso/358111](https://app.onelogin.com/trust/saml2/http-post/sso/358111){:target="_blank"}.
+* **Issuer URL** – The URL for the _OneLogin_ issuer, for example, [https://app.onelogin.com/saml/metadata/358111](https://app.onelogin.com/saml/metadata/358111){:target="_blank"}.
 * **X.509 Certificate** – The public certificate stored by the service provider from the identity provider used to validate a user signature. You can add multiple (max of 2) certificates, delete already added invalid certificates, platform will use the latest certificate for authorization, in case it is invalid then the older certificate would be used.
 * **ACS URL for SP Initiated SAML Flow** – This is the redirect URL for Service Provided initiated SAML flow.
 * **ACS URL for IDP Initiated SAML Flow** – This is the account-specific URL for Identity Provided initiated SAML flow.
@@ -285,7 +285,7 @@ To complete this procedure, you must have already selected _OneLogin_ as a SAML 
     
     !!!Note
     
-        Only data after the **—–BEGIN CERTIFICATE—–**header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai.
+        Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai.
 
 * In Kore.ai, click **Save**.
 
@@ -296,8 +296,8 @@ The _Identity Provider information successfully updated_ message is displayed at
 
 ### Bitium Configuration
 
-* **Single Sign-On URL** – The HTTP SSO endpoint for _Bitium _to enable Service Provider intiated SAML flow, for example, https://www.bitium.com/7655.
-* **Issuer URL** – The URL for the _OneLogin_ issuer, for example,https://bitium.com/7655/saml/82456/metadata.xml.
+* **Single Sign-On URL** – The HTTP SSO endpoint for _Bitium_ to enable Service Provider intiated SAML flow, for example, [https://www.bitium.com/7655](https://www.bitium.com/7655){:target="_blank"}.
+* **Issuer URL** – The URL for the _OneLogin_ issuer, for example, [https://bitium.com/7655/saml/82456/metadata.xml](https://bitium.com/7655/saml/82456/metadata.xml){:target="_blank"}.
 * **Certificate** – The public certificate stored by the service provider from the identity provider used to validate a user signature. You can add multiple (max of 2) certificates, delete already added invalid certificates, platform will use the latest certificate for authorization, in case it is invalid then the older certificate would be used.
 * **ACS URL for SP Initiated SAML Flow** – This is the redirect URL for Service Provided initiated SAML flow.
 * **ACS URL for IDP Initiated SAML Flow** – This is the account-specific URL for Identity Provided initiated SAML flow.
@@ -345,7 +345,7 @@ To complete this procedure, you must have already selected _Bitium_ as a SAML pr
     
     !!! Note
     
-        Only data after the **—–BEGIN CERTIFICATE—– **header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai.
+        Only data after the **—–BEGIN CERTIFICATE—–** header and before the **—–END CERTIFICATE—-** footer should be copied and pasted into Kore.ai.
 
 * In Kore.ai, click **Save**.
 
