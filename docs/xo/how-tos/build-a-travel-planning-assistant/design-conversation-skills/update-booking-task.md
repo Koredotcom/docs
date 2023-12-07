@@ -32,22 +32,21 @@ To create an Update Booking Dialog Task/Intent:
 5. Click **Proceed**.
 
 The Property Panel for User Intent will be displayed. We will retain the default properties.
- 
-!!! note
 
-    For instructions related to the Legacy Dialog Builder, refer here.
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For instructions related to the <b>Legacy Dialog Builder</b>, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlp-guidelines/">here</a>.</p></div>
 
-6. Close the User Intent Property Panel.
+<ol start="6"><li>Close the User Intent Property Panel.</li></ol>
 <img src="../images/close-user-property-panel.png" alt="user property panel" title="user property panel" style="border: 1px solid gray; zoom:75%;"> 
 
-
-### Add Entity nodes (Booking Number & Update Type)
+### Add Entity Nodes (Booking Number & Update Type)
 
 The Entity Node is typically used to gather information from the user.
 
 Here we will be using it to capture the user input for Booking Number and type of update. 
 
-Add an Entity node that retrieves the Booking Number as follows:
+**Add an Entity node that retrieves the Booking Number** with the following steps:
 
 1. Click the **+** below the _User Intent_ node.
 2. Select the **Entity** option and click **+New Entity**.
@@ -57,7 +56,7 @@ Add an Entity node that retrieves the Booking Number as follows:
     * **Display Name**: _Booking Number_
     * **Type**: _Number_
 
- Add an Entity Node that retrieves the Update Type 
+**Add an Entity Node that retrieves the Update Type** with the following steps:
 
 1. Click the **+** below the Booking Number node.
 2. Select the **Entity** option.
@@ -69,19 +68,17 @@ Add an Entity node that retrieves the Booking Number as follows:
         * **Type**: Select _List of Items(enumerated)_ from the drop-down. We need to provide the list of values that the user can select.
             * Click the **Settings (gear) icon** that appears next to the field.
             * Opt for **Static List.**
-            * Enter the following options under separate rows as the **Display name** – _Name_ and _Passport Number. _Value_ and _Synonym_ columns will auto-populate, leave them as is.
+            * Enter the following options under separate rows as the **Display name** – _Name_ and _Passport Number_. _Value_ and _Synonym_ columns will auto-populate, leave them as is.
             * Define the percentage of **Auto-correction** to be applied to match the user’s input to a value in the list.
             <img src="../images/define-auto-correction.png" alt="define autocorrection" title="define autocorrection" style="border: 1px solid gray; zoom:75%;"> 
             * Click **Save**.
             * Navigate back to the Entity Property Panel.
             * **User Prompts:** Enter the following text and hit enter to save:`What would you like to update?`
-            * **Display List Of Values**: Mark as_Yes, use channel specific standard formatting for default messages and show the available list of values to the end user_‘. This will present the list of values in a button template for the supported channels.
+            * **Display List Of Values**: Mark as _Yes, use channel specific standard formatting for default messages and show the available list of values to the end user_‘. This will present the list of values in a button template for the supported channels.
 5. Close the **UpdateType** Entity Property Panel.
 <img src="../images/entity-update-type.png" alt="entity update type" title="entity update type" style="border: 1px solid gray; zoom:75%;"> 
 
-### Add an Entity Node
-
-Add an Entity Node that retrieves the Updated Name with the following steps: 
+**Add an Entity Node that retrieves the Updated Name** with the following steps: 
 
 1. Click the **+** below the _UpdateType_ node.
 2. Select the **Entity** option and click **+New Entity**.
@@ -102,8 +99,8 @@ We will be using a dummy API setup for this tutorial. We will be using a mock AP
 
 1. Click the **+** below the _UpdateType_ Entity node.
 2. Select **Bot Action**, click to open properties, name it GetBooking, and close the properties window.
-3. To add a service node, click the **+** next to the **Get Booking Bot** Action node to expand it.
-4. Click the **+** within the Bot Action layout.
+3. To add a service node, click the **+** icon next to the **Get Booking** Bot Action node to expand it.
+4. Click the **+** within the **Bot Action** layout.
 5. Select **Service** – Service node is used to make a backend API call to get booking information.
     * Click **+ New Service**
     * The **Property Panel** for the Service Node is displayed, if not click on the newly created entity node to open it.
@@ -140,11 +137,11 @@ We will be using a dummy API setup for this tutorial.
             * Wait for the test to be completed and you get a Status: 200.
         * Click **Save as Sample Response.**
         * Click **Save.**
-    * On the **Service** node Property window, click the **Connections** tab.
+    * On the **Service Node** Property window, click the **Connections** tab.
         * Under the **Connection Rules** section, ensure that the **Default** connection is set to **End of Bot Action**.
 
 6. Close the _Service_ Property Panel.
-7. Click next to the Bot Action node to collapse it.
+7. Click **Next** to the **Bot Action** node to collapse it.
 
 ### Add a Message Node
 
@@ -158,27 +155,30 @@ Here we will be using the Message node to show the success message.
 4. Enter the following details:
     * **Name**: _BookingUpdated_
     * **Display Name**: _Booking Updated_
-    * **Bot Responses:** Enter `Your booking has been updated`.
-5. On the Message Property Panel, click the **Connections** icon.
+    * **Bot Responses:** Enter "*Your booking has been updated*".
+5. On the **Message Property** Panel, click the **Connections** icon.
     * Change the **Default** connection from _Not Connected_ to _End of Dialog_‘.
     * Click **Save**.
 6. Close the **Property** Panel.
 
-When completed, your task may look similar to the one illustrated below:
+When completed, your task may look similar to the one shown below:
 <img src="../images/add-a-message-node.png" alt="add a message node" title="add a message node" style="border: 1px solid gray; zoom:75%;">
 
 ## Test the Assistant
 
-To test the Dialog task, you can use the Talk to bot feature, at the bottom right corner of the Platform.
+To test the **Dialog** task, follow the steps below:
 
-Enter the following utterance (intent name) – “_Update Booking_”
+1. Use the **Talk to bot** feature, at the bottom right corner of the Platform.
 
-Follow the Bot instructions given below:
+2. Enter the utterance (intent name) “_Update Booking_”
+
+3. Follow the Bot instructions given below:
 
 * Enter Booking Number – 29565731.
 * Select the Update Type – Choose Name.
 * Enter the Name: e.g. Anne Smith.
 * See the success message.
+
 <img src="../images/test-update-booking.png" alt="test update booking" title="test update booking" style="border: 1px solid gray; zoom:75%;">
 
 
