@@ -31,7 +31,7 @@ When using an import file, the following validation rules are applied:
 * Entries with invalid email formats are ignored.
 * Each successful import of an email address generates an invitation email to become a Kore.ai user.
 * Existing users in your Kore.ai account are not sent invitation emails.
-* Imported users with status set to **Activate **are sent a notification that the Kore.ai account is activated.
+* Imported users with status set to **Activate** are sent a notification that the Kore.ai account is activated.
 
 **Sample File**
 
@@ -64,7 +64,7 @@ After you have created an import file, you need to upload the import file. This 
 
 
 
-1. In the **Enrollment** **>** **Import** page, click **Choose File**.
+1. In the **Enrollment > Import** page, click **Choose File**.
 2. Navigate to your import file, and then click **Open**. The filename is displayed to the right of the **Choose File** button.
 3. Click **Import File**. The status of the import is described immediately following the **Import File** button.
 4. You can click the _File Based Bulk User Import History_ link to review an import status from a prior import.  
