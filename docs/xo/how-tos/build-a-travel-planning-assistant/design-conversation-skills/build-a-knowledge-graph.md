@@ -158,7 +158,6 @@ To trigger a task, follow the steps below:
 3. Set **Intent** to _Task_.
 <img src="../images/set-task-intent.png" alt="set task intent" title="set task intent" style="border: 1px solid gray; zoom:75%;"> 
 
-
 4. From the drop-down list select the _Check Flight Status_ Dialog Task.
 5. Click **Save** and **Train** the Knowledge Graph.
 6. Select **Talk to bot** with the utterance _How do I check my flight status?_ will trigger the _Check flight_ status task.
