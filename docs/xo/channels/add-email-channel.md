@@ -2,7 +2,10 @@
 
 When you add the email channel to your VA, Kore.ai automatically generates the email address that the end-users can send an email for communications with your assistant. By default, the email address syntax is **&lt; bot name >.kore@m.&lt; kore host >**. For example, **myemail.kore@m.app-bots.kore.com**. Optionally, you can click **Change **to add a custom name, such as **MyBot.kore@m.app-bots.kore.com.**
 
-**Note**: You can add 5000 characters for the email channel. This character limit is configurable for the On-Prem installation.
+!!! note
+
+      You can add 5000 characters for the email channel. This character limit is configurable for the On-Prem installation.
+
 
 By adding the email channel to your VA, end-users can interact with it using any standard email client, such as _Microsoft Outlook_ or _Yahoo_.
 
@@ -31,7 +34,7 @@ Steps to add the email channel:
 
 9. Click **Save**.
 <img src="../images/email4.png" alt="save email channel configuration" title="save email channel configuration" style="border: 1px solid gray; zoom:70%;">
- 
+
 10. On the Email Channel Configurations page, click **Save**. The _Channel added successfully_ message is displayed.
 
 Once the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
