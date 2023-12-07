@@ -47,9 +47,9 @@ Complete the steps in the following procedure to define the synchronization sett
 
     If you are using a bot built on the platform from before v7.3, you will have an option to **Upgrade** or **Configure**. If you proceed to Configure without Upgrade the following options from the configuration steps will not be available;
                 
-        * access to AD sub-Groups or option to create a group within Kore.ai for the OUs in AD;
-        * add custom fields to the user data by mapping it to the right key from the AD server incoming payload;
-        * specify the inclusion rules.
+    * access to AD sub-Groups or option to create a group within Kore.ai for the OUs in AD;
+    * add custom fields to the user data by mapping it to the right key from the AD server incoming payload;
+    * specify the inclusion rules.
     
     Also, the older version would be deprecated in the upcoming releases.
 
