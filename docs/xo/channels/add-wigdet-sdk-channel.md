@@ -10,6 +10,7 @@ To add the Widget SDK channel
 2. Go to **Deploy > Channels > Widget SDK**.
 3. Navigate to the **Configurations** tab.
 4. In the **Select App** drop-down list, select your existing app or click **Create App** to create a new one.
+
 <img src="../images/sdk.png" alt="widget SDK channel configuration" title="widget sdk configuration" style="border: 1px solid gray; zoom:70%;">
 
 5. In the **Name** field, enter the name for the app registration used in the XO Platform, for example, My App Registration.
