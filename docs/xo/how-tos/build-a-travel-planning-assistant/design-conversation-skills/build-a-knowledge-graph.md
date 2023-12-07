@@ -206,7 +206,7 @@ To add traits, follow the below steps:
 
 6. Apply Trait with  the steps below:
     * From the ontology, go to the **Issues** node **Settings** page.
-    * Add **_lostpass** as the trait (pick from the drop-down list).
+    * Add **_lostpass_** as the trait (pick from the drop-down list).
     * Click **Save** and **Train** the Knowledge Graph.
     * Click **Talk to the Bot** and try the same question. Now you will get the expected response.
     <img src="../images/add-trait-to-node.png" alt="add trait to node" title="add trait to node" style="border: 1px solid gray; zoom:75%;"> 
