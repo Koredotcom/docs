@@ -47,12 +47,9 @@ Here is an example Ontology:
 
 **Reservation**
 
-* Make
-    * How do I pay for my booking?
-* Update
-    * How do I update my booking?
-* Cancel
-    * Can I cancel my reservation?
+* **Make**: *How do I pay for my booking?*
+* **Update**: *How do I update my booking?*
+* **Cancel**: *Can I cancel my reservation?*
 
 To create an ontology, follow the steps below:
 
