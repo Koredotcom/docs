@@ -60,6 +60,7 @@ To add the LINE channel to your Kore.ai bot, you must set up a webhook integrati
 <img src="../images/line5.png" alt="line webhook settings" title="line Webhook settings" style="border: 1px solid gray; zoom:70%;">
 
 4. After saving the webhook URL, Enable the Webhook, choose whether to enable redelivery and error statistics aggregation, then click **Verify **to ensure that the webhook call from LINE is acknowledged by the Kore.ai XO Platform.
+
 <img src="../images/line6.png" alt="line channel verification" title="line channel verification" style="border: 1px solid gray; zoom:70%;">
 
 

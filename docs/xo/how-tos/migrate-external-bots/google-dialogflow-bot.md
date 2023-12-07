@@ -1,4 +1,4 @@
-# Migrate Google Dialogflow Bot to the XO Platform
+# Migrate Google Dialogflow Bot
 
 The Kore.ai XO Platform supports the migration of an existing **Google Dialogflow** bot into your XO Platform account using the External NLU Adapter.
 
@@ -24,9 +24,9 @@ The following are the results of completing the Bot Migration from Google Dialog
 
 The migration is a simple 3-steps process:
 
-1. <a href="https://developer.kore.ai/docs/bots/bot-admin/bots-management/migration-of-the-google-dialogflow-bot/#Step_1_Export_the_Google_Dialogflow_Bot_Project" target="_blank">Export the Google Dialogflow Bot Project</a>.
-2. <a href="https://developer.kore.ai/docs/bots/bot-admin/bots-management/migration-of-the-google-dialogflow-bot/#Step_2_Import_the_Dialogflow_Project" target="_blank">Import the Dialogflow Project to the Kore.AI XO Platform</a>. 
-3. <a href="https://developer.kore.ai/docs/bots/bot-admin/bots-management/migration-of-the-google-dialogflow-bot/#Step_3_Import_the_Bot" target="_blank">Import the Virtual Assistant</a>.
+1. <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/migrate-external-bots/google-dialogflow-bot/#step-1-export-the-google-dialogflow-bot-project" target="_blank">Export the Google Dialogflow Bot Project</a>.
+2. <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/migrate-external-bots/google-dialogflow-bot/#step-2-import-the-dialogflow-project" target="_blank">Import the Dialogflow Project to the Kore.AI XO Platform</a>. 
+3. <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/migrate-external-bots/google-dialogflow-bot/#step-3-import-the-bot" target="_blank">Import the Virtual Assistant</a>.
 
 ### Step 1: Export the Google Dialogflow Bot Project
 
@@ -38,7 +38,7 @@ Install the <a href="https://www.dialogflow.com/" target="_blank">Dialogflow API
 
 To export your Google Dialogflow project, follow the steps below:
 
-1. Navigate to the **DialogFlow Essentials** page <a href="https://dialogflow.cloud.google.com/" target="_blank">here</a>.
+1. Navigate to the **DialogFlow Essentials** test console <a href="https://dialogflow.cloud.google.com/" target="_blank">here</a>. You must create at least one agent to access the console.
 2. Select the **Dialogflow bot** project you want to export.
 3. Click the **Export and Import** tab on the bot configuration page.
 4. Click the **Export as ZIP** button.
