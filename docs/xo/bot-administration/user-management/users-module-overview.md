@@ -4,18 +4,16 @@ After you add your Kore.ai users, you may need to update user information, add o
 
 The following illustration is an example of the **Users** tab in the **User Management** module on the **Users** page.
 
-<img src="../images/bac_users.png" alt="User Management Module" title="User Management Module" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/bac-users.png" alt="User Management Module" title="User Management Module" style="border: 1px solid gray;zoom:50%;"/>
 
 
 ## In This Module
 
 The **User Management** module is comprised of the following pages:
 
-
-
 * [User Management](../managing-your-users/){:target="_blank"}  
 On the **Users** section, you can view and manage your Kore.ai user roles, status, and monitor user message activity.  
-On the **User Settings**tab, you can define the user profile fields displayed to the user in their profile, for example, address information, and if the user can edit those fields.
+On the **User Settings** tab, you can define the user profile fields displayed to the user in their profile, for example, address information, and if the user can edit those fields.
 * [Groups Management](../managing-your-groups){:target="_blank"}  
 On the **Groups** page in the **User Management** module, you can create and manage logical related groups of managed users, as well as importing groups, such as your company Active Directory groups.
 * [Role Management](../role-management){:target="_blank"}  

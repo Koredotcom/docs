@@ -160,7 +160,7 @@ You can **Manage Context** for the terms and tags by setting:
 * **Intent Precondition** – the context that should be present as a qualifier for this node or tag.
 * **Context Output** – the context that should be populated to signify the execution of this task.
 
-Post the XO Platform v8.0 release, context can be enabled for <b>Organizer</b> nodes as well. Enabling the **Manage Context** option allows you to set the context precondition and context output mentioned above. Click <a href="https://developer.kore.ai/docs/bots/bot-intelligence/context-management/" target="_blank">here</a> for more information on Context Management.
+Post the XO Platform v8.0 release, context can be enabled for <b>Organizer</b> nodes as well. Enabling the **Manage Context** option allows you to set the context precondition and context output mentioned above. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/context-management/" target="_blank">here</a> for more information on Context Management.
 
 !!! note
 
