@@ -174,10 +174,10 @@ To test the **Dialog** task, follow the steps below:
 
 3. Follow the Bot instructions given below:
 
-* Enter Booking Number – 29565731.
-* Select the Update Type – Choose Name.
-* Enter the Name: e.g. Anne Smith.
-* See the success message.
+    * Enter Booking Number – 29565731.
+    * Select the Update Type – Choose Name.
+    * Enter the Name: e.g. Anne Smith.
+    * See the success message.
 
 <img src="../images/test-update-booking.png" alt="test update booking" title="test update booking" style="border: 1px solid gray; zoom:75%;">
 

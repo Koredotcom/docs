@@ -12,7 +12,7 @@ The assistant we build will perform basic travel booking tasks, as follows:
 
 ### Add the Change Flight Dialog Task / Intent
 
-* The Change Flight  task will prompt the user to enter their Current and New Flight Numbers.
+* The Change Flight  task will prompt the user to enter their *Current* and *New Flight Numbers*.
 * Next it would prompt for the Seat preference.
 * It will then make a service call to update the booking appropriately.
 * The message indicating success or failure is displayed before the end of the dialog.
@@ -35,7 +35,7 @@ To add this Dialog Task, follow the steps below:
 
 <img src="../images/add-dialog-task.png" alt="add dialog task" title="add dialog task" style="border: 1px solid gray; zoom:75%;"> 
 
-6. Close the **User Intent** Property Panel.
+<ol start="6"><li>Close the <b>User Intent</b> Property Panel.</li></ol>
 
 ### Add Entity nodes
 
@@ -53,7 +53,7 @@ Here we will be using it to capture the user input for the Current Flight (chang
     * **Display Name**: _Current Flight_
     * **Type**: _String_
     * **User Prompts:** Enter the text "*Enter the Current Flight that you want to change from*". 
-    * Close the _CurrentFlight_ Entity Property Panel.
+    * Close the **CurrentFlight** Entity Property Panel.
 
  **Add an Entity Node to retrieve the New Flight to change** with the following steps:
 
@@ -62,7 +62,7 @@ Here we will be using it to capture the user input for the Current Flight (chang
     * **Display Name**: _New Flight_
     * **Type**: _String_
     * **User Prompts:** Enter the text "*Enter the New Flight that you want to change to*".
-2. Close the _NewFlight_ Entity Property Panel.
+2. Close the **NewFlight** Entity Property Panel.
 
  **Add a Seat Selection Entity Node** with the following steps:
 
@@ -78,13 +78,13 @@ Here we will be using it to capture the user input for the Current Flight (chang
 <img src="../images/add-seat-selection-entity-node.png" alt="add seat selection entity node" title="add seat selection entity node" style="border: 1px solid gray; zoom:75%;"> 
 
 3. Under **Display List of Values**, select _Yes, use channel specific standard formatting for default messages and show an available list of values to the end user._
-<p><b>User Prompts</b>: Enter the text: "<i>Please select a seat</i>."</p>
+4. **User Prompts**: Enter the text: "_Please select a seat_.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can use Javascript in the User Prompt to display available seats. In this case you would need to set the Type  'String'. For the purpose of this use case, we have chosen to list fixed values, which is why we have set the Type to 'List of Items'.</p></div>
+<p>You can use Javascript in the User Prompt to display available seats. In this case you would need to set the Type  <code>String</code>. For the purpose of this use case, we have chosen to list fixed values, which is why we have set the Type to <code>List of Items</code>.</p></div>
 
-<ol start="4"><li> Close the <b>Seat</b> Entity Property Panel.</li></ol>
+<ol start="5"><li> Close the <b>Seat</b> Entity Property Panel.</li></ol>
 
 ## Add a Bot Action – Service Node
 
@@ -93,10 +93,10 @@ A **Service Node** allows you to make a backend API call. It is included in the 
 To add a **Bot Action – Service Node**, follow the steps below:
 
 1. Click the **+** below the _Seat_ Entity node.
-2. Select **Bot Action**, click to open properties, name it _UpdateBooking_, and close the properties window.
-3. To add a Service Node, click the **+** icon next to the **Update Booking** Bot Action node to expand it
+2. Select **Bot Action**, click to open properties, name it _UpdateBooking_, and close the **Properties** window.
+3. To add a Service Node, click the **+** icon next to the **Update Booking** Bot Action node to expand it.
 4. Click the **+** icon within the **Bot Action** layout, and select **Service**.
-5. Click **+ New Service**
+5. Click **+ New Service**.
 6. The **Property Panel** for the Service Node is displayed, if not click on the newly created entity node to open it.
 7. Enter the following details:
     * **Name**: _UpdateBookingService_
@@ -110,8 +110,8 @@ Here is an example request to enter:
 
 A **Message Node** is used to display a message from the VA to the user. Here we will be using the Message node to confirm the update to the user..
 
-1. Click the **+** below the _UpdateBooking_ Bot Action node. 
-2. Select **Message** and click + **New message**. The **Property Panel** for the Message Node is displayed. If not click on the newly added dialog node to open
+1. Click the **+** icon below the _UpdateBooking_ Bot Action node. 
+2. Select **Message** and click **+ New message**. The **Property Panel** for the Message Node is displayed. If not click on the newly added dialog node to open.
 3. Enter the following details:
     * **Name**: _FlightChangeConfirmation_
     * **Display Name**: _Flight Change Confirmation_
