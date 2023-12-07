@@ -1,9 +1,178 @@
 # Standard Responses
 
-Kore.ai Bot Builder tool provides a few default text responses. This section lists them and gives an explanation as to when these responses are triggered. For an overview on Standard Responses, click [here](https://developer.kore.ai/docs/bots/bot-intelligence/default-dialog/#Standard_Responses).
+Kore.ai Bot Builder tool provides a few default text responses, Natural Language Processing, or NLP interpreter responses to user inputs or events. This section lists them and gives an explanation as to when these responses are triggered. 
+
+For example, a reply to a user input of _Hi!_ The bot replies with one of the following responses, chosen randomly at runtime:
+
+* Hi!
+* Hello
+* Hi there!
+* Hey 🙂
+
+The NLP interpreter displays pre-defined text responses to users based on an event, condition, trigger, or user input. Depending on your custom bot and users of that bot, you may want to modify the default responses to users displayed for an event or request for input.
+
+Example
+
+* **User Input** – When were you born?
+* **Event** – Authorization Failure
+* **Trigger** – Task canceled
+
+You can define both standard bot responses, or if desired, add a channel override response that is displayed only in the specified channel the user is in, otherwise, one of the standard default responses is displayed. 
+
+For example, in the SMS channel, you may only want to use short bot responses to save data.
+
+### Default Responses
+
+To access and manage the default responses in bot builder, follow the below steps:
+
+1. Select the **Build** tab from the top menu
+2. From the left menu, click **Intelligence > Standard Responses**.
+<img src="../images/navigate-standard-responses.png" alt="edit alert tasks for ignore words" title="edit alert tasks for ignore words" style="border: 1px solid gray; zoom:75%;">
+
+For each standard response category tab, the event or user input is listed followed by one or more NLP interpreter standard responses. You can modify the default response, and if needed, add additional responses selected randomly by the NLP interpreter in response to user input or system event.
+
+In the **Standard Response** section, the standard bot responses are categorized in the following sections:
+
+* **Statements** – Responses displayed to the user as the result of an action by the bot or user. For example, a user cancels a task, or a user gives an invalid response to your bot request.
+* **Queries** – Statements from the bot to the user to ask for more information. For example, _Which field do you want to change?_
+* **Error & Warnings** – Statements from the bot to the user when an error occurs during the scenario, such as the _End date cannot be before or same as the start date!_
+* **Questions** – Questions the bot may pose to the user when not included in any other category.
+* **Choices** – The bot is asking for Yes/No input. For example, _Would you like to receive push notifications every time this task occurs?_
+* **Greeting** – Initial responses by the bot when the bot is installed, or other initial contacts. For example, when a user returns to the interaction after a period of inactivity.
+
+### Add and Edit Responses
+
+**Add a New Standard Response**
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the standard responses are updated at the conditions wherein an ambiguity is presented to the user, the bot response will not display the ambiguous choices to the user and you need to use the function <b>getChoices</b> to present the ambiguity list (refer to point 7 below).</p>
+</div>
+
+1. Select a tab category for the standard response. For example, **Greeting**, and then hover the situation for which you want to add the response. 
+2. Click **Add Response**.
+   The **Add Channel Overrides** dialog is displayed.
+3. In the **Choose a channel** drop-down list, select a channel to create a channel-specific response. You can go with the **Any Channel** option to enable the response for all channels.
+4. In the case of channel-specific response, from the **Choose a Task** drop-down list, select **Any Task** to apply this channel-specific response to all tasks or select a specific task.
+5. When a specific task is selected, the **Choose a Field is** drop-down is displayed. Select **Any Field** or a specific field for this channel-specific response.
+<img src="../images/select-field-for-response.png" alt="edit alert tasks for ignore words" title="edit alert tasks for ignore words" style="border: 1px solid gray; zoom:75%;">
+
+<ol start="6"><li>In the bot <b>Response</b> editor, you can override the default Bot Response for this channel using basic editor controls on the <b>Simple Mode</b> tab, or write custom JavaScript for the response on the <b>Advanced Mode</b> tab as follows:</li></ol>
+
+  * **Simple Mode** – Enter the text for the default standard response. For example, *There* you are, I was ~hoping~ you would return soon! and then optionally, format the text using the formatting buttons for bold, italics, header styles, hyperlinks, ordered and unordered lists, and inserting a line. For more information, refer to [Using the Prompt Editor](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/).
+  * **Advanced Mode** – Enter JavaScript to override the channel message as described in the following code examples.
+
+!!!note
+
+    Use the following keys to return default values for:
+
+    1. response.message – Returns the default message as a string. 
+    2. response.choices – Returns the options choice or confirmation message types as an array.
+
+**Slack Channel Override Example**
+
+```
+var message = {};`
+var attachments = [];
+var attachment = {
+    'text': "Exception occurred during API execution",
+    'color': '#FFCC00',
+    'attachment_type': 'default'
+};
+attachments.push(attachment);
+message.attachments = attachments;
+print(JSON.stringify(message));
+```
+
+**FaceBook Channel Override Example**
+
+```
+var message = {
+text: response.message
+};
+var buttons = [];
+for (var i = 0; i < response.choices.length; i++) {
+    var choiceItem = response.choices[i];
+    if (choiceItem.length > 20) {
+        choiceItem = choiceItem.substring(
+            0, 18) + '..';
+    }
+    var element = {
+        content_type: 'text',
+        title: choiceItem,
+        payload: choiceItem
+    };
+    buttons.push(element);
+}
+message.quick_replies = buttons;
+print(JSON.stringify(message));
+```
 
 
-## Statements
+**Email Channel Override Example**
+
+```
+var message = {};
+var text = response.message + ' <br> ';
+for (var i = 0; i < response.choices.length; i++) {
+    text = text.concat(
+        '<u> + response.choices[i] + ' <
+        /u> <br>');
+    }
+    message.text = text;
+print(JSON.stringify(message));
+```
+**SMS Channel Override Example**
+
+```
+var message = {};
+var indexArray = ['a', 'b', 'c',
+        'd', 'e',
+        'f', 'g', 'h', 'i', 'j',
+        'k', 'l', 'm', 'n', 'o',
+        'p', 'q', 'r', 's', 't',
+        'u', 'v', 'w', 'x', 'y',
+        'z'
+    ];
+    var text = response.message + '\\n';
+    for (var i = 0; i < response.choices
+        .length; i++) {
+        text = text.concat(indexArray[i] +
+            ') ' + response.choices[
+                i] + '\\n');
+    }
+    message.text = text;
+    print(JSON.stringify(message));
+```
+
+<ol start="7"><li>Using the <code>getChoices()</code> function, you can also customize the <b>response display format</b> using the <a href="https://developer.kore.ai/docs/bots/sdks/message-templates/">message formatting templates</a>. When the <code>getChoices()</code> function is called and there is an ambuguity, the platform returns the ambiguous choices information as an array which can be used to present the options to the end users.
+
+For example, to display the standard response for <i>Did you mean</i> in a button format, you can use the following code:
+
+<pre>
+var info =getChoices() ;
+var message = {
+"type": "template",
+"payload": {
+  "template_type": "button",
+  "text": "Did you mean",
+  "subText": "You can now customize response for did you mean",
+  "buttons": []
+ }
+};
+for (i = 0; i < info.length; i++) {
+var button = {
+  "type": "postback",
+  "title": info[i],
+  "payload": "payload1"
+};
+message.payload.buttons.push(button);
+}
+print(JSON.stringify(message)); 
+</pre></li>
+<li>Click <b>Done</b> to save and close the <b>Edit Response</b> dialog and apply the new standard response.</li></ol>
+
+## Scenarios
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">
@@ -1492,8 +1661,6 @@ This message will be displayed if the user’s input matches with intent and the
    </td>
   </tr>
 </table>
-
-
 
 ## Greeting
 
