@@ -99,8 +99,8 @@ We will be using a dummy API setup for this tutorial. We will be using a mock AP
 
 1. Click the **+** below the _UpdateType_ Entity node.
 2. Select **Bot Action**, click to open properties, name it GetBooking, and close the properties window.
-3. To add a service node, click the **+** icon next to the **Get Booking Bot** Action node to expand it.
-4. Click the **+** within the Bot Action layout.
+3. To add a service node, click the **+** icon next to the **Get Booking** Bot Action node to expand it.
+4. Click the **+** within the **Bot Action** layout.
 5. Select **Service** – Service node is used to make a backend API call to get booking information.
     * Click **+ New Service**
     * The **Property Panel** for the Service Node is displayed, if not click on the newly created entity node to open it.
@@ -137,11 +137,11 @@ We will be using a dummy API setup for this tutorial.
             * Wait for the test to be completed and you get a Status: 200.
         * Click **Save as Sample Response.**
         * Click **Save.**
-    * On the **Service** node Property window, click the **Connections** tab.
+    * On the **Service Node** Property window, click the **Connections** tab.
         * Under the **Connection Rules** section, ensure that the **Default** connection is set to **End of Bot Action**.
 
 6. Close the _Service_ Property Panel.
-7. Click **Next** to the Bot Action node to collapse it.
+7. Click **Next** to the **Bot Action** node to collapse it.
 
 ### Add a Message Node
 
@@ -155,22 +155,24 @@ Here we will be using the Message node to show the success message.
 4. Enter the following details:
     * **Name**: _BookingUpdated_
     * **Display Name**: _Booking Updated_
-    * **Bot Responses:** Enter `Your booking has been updated`.
-5. On the Message Property Panel, click the **Connections** icon.
+    * **Bot Responses:** Enter "*Your booking has been updated*".
+5. On the **Message Property** Panel, click the **Connections** icon.
     * Change the **Default** connection from _Not Connected_ to _End of Dialog_‘.
     * Click **Save**.
 6. Close the **Property** Panel.
 
-When completed, your task may look similar to the one illustrated below:
+When completed, your task may look similar to the one shown below:
 <img src="../images/add-a-message-node.png" alt="add a message node" title="add a message node" style="border: 1px solid gray; zoom:75%;">
 
 ## Test the Assistant
 
-To test the Dialog task, you can use the Talk to bot feature, at the bottom right corner of the Platform.
+To test the **Dialog** task, follow the steps below:
 
-Enter the following utterance (intent name) – “_Update Booking_”
+1. Use the **Talk to bot** feature, at the bottom right corner of the Platform.
 
-Follow the Bot instructions given below:
+2. Enter the utterance (intent name) “_Update Booking_”
+
+3. Follow the Bot instructions given below:
 
 * Enter Booking Number – 29565731.
 * Select the Update Type – Choose Name.
