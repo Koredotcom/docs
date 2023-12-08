@@ -150,7 +150,7 @@ or
 
 https://{tenant}.service-now.com/api/now/v1/table/incident
 
-For more information, see [Using Session and Context Variables in Tasks](../../../../automation/use-cases/using-session-and-context-variables).
+For more information, see [Using Session and Context Variables in Tasks](../../../../automation/use-cases/using-session-and-context-variables){:target="_blank"}.
 
 Click **Save** to save the authorization settings and close the **New Authorization Mechanism** dialog.
 

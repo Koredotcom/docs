@@ -12,32 +12,32 @@ The Platform lets you quickly enable one authentication profile across all VAs a
 
 ### Basic Auth
 
-A standard protocol to collect username and password information. Kore.ai uses SSL encryption in combination with basic authentication to help secure end-user information. For more information, see [Setting Up Authorization using Basic Auth](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-basic-auth/){:target="_blank"}.
+A standard protocol to collect username and password information. Kore.ai uses SSL encryption in combination with basic authentication to help secure end-user information. For more information, see [Setting Up Authorization using Basic Auth](../setting-up-authorization-using-basic-auth/){:target="_blank"}.
 
 
 ### OAuth v2 password grant type
 
-Define a custom authorization type for non-standard web service authorization types. For more information, see [Setting Up Authorization using OAuth v2 password grant](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-oauth-v2-password-grant/){:target="_blank"}.
+Define a custom authorization type for non-standard web service authorization types. For more information, see [Setting Up Authorization using OAuth v2 password grant](../setting-up-authorization-using-oauth-v2-password-grant/){:target="_blank"}.
 
 
 ### OAuth v2 client credentials
 
-This option allows you to configure authorization using client credentials. [Learn more.](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-oauthv2-clientcredentials/){:target="_blank"}
+This option allows you to configure authorization using client credentials. [Learn more.](../authorization/bot-oauthv2-clientcredentials/){:target="_blank"}
 
 
 ### OAuth v2
 
-The newest version of OAuth protocol focusing on specific authorization flows for web applications and web services. For more information, see [Setting Up Authorization using OAuth v2](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-oauth-v2/){:target="_blank"}.
+The newest version of OAuth protocol focusing on specific authorization flows for web applications and web services. For more information, see [Setting Up Authorization using OAuth v2](../setting-up-authorization-using-oauth-v2/){:target="_blank"}.
 
 
 ### OAuth v1
 
-Enables web applications or web services to access protected resources using an API without end-users having to disclose their login credentials to Kore.ai. For more information, see [Setting Up Authorization using OAuth v1](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-oauth-v1/){:target="_blank"}.
+Enables web applications or web services to access protected resources using an API without end-users having to disclose their login credentials to Kore.ai. For more information, see [Setting Up Authorization using OAuth v1](../setting-up-authorization-using-oauth-v1/){:target="_blank"}.
 
 
 ### API Key
 
-Identification and authorization token generated or provided by a web application or web service used to identify the incoming application request, and in some cases, also provides authentication for secure access. For more information, see [Setting Up Authorization using an API Key](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-an-api-key/){:target="_blank"}.
+Identification and authorization token generated or provided by a web application or web service used to identify the incoming application request, and in some cases, also provides authentication for secure access. For more information, see [Setting Up Authorization using an API Key](../setting-up-authorization-using-an-api-key/){:target="_blank"}.
 
 
 ## Authorization Options
