@@ -47,27 +47,33 @@ Here is an example Ontology:
 
 **Reservation**
 
-* Make
-    * How do I pay for my booking?
-* Update
-    * How do I update my booking?
-* Cancel
-    * Can I cancel my reservation?
+* **Make**: *How do I pay for my booking?*
+* **Update**: *How do I update my booking?*
+* **Cancel**: *Can I cancel my reservation?*
 
 To create an ontology, follow the steps below:
 
-<ol><li>Hover over the Knowledge Graph name on the left pane and click the <b>+</b> icon to <b>Add Child Node</b>. For example, we can add a node for questions related to international travel, and one for reservation related questions.</li>
+1. Hover over the Knowledge Graph name on the left pane and click the <b>+</b> icon to <b>Add Child Node</b>. For example, we can add a node for questions related to international travel, and one for reservation related questions.
+
 <img src="../images/add-child-node.png" alt="add child node" title="add child node" style="border: 1px solid gray; zoom:75%;">
-<li>To add subgroups, hover over the node and click the corresponding <b>+</b> icon to add child nodes.</li>
+
+<ol start="2"><li>To add subgroups, hover over the node and click the corresponding <b>+</b> icon to add child nodes.</li>
+
 <img src="../images/add-subgroup.png" alt="add subgroup" title="add subgroup" style="border: 1px solid gray; zoom:75%;">
+
 <li>Repeat the process for related questions.</li>
 <li>To add questions to your newly created ontology, select them from your list of FAQs, then drag and drop them onto the relevant node. You will notice the path gets updated accordingly.</li>
+
 <img src="../images/add-faq-to-node.gif" alt="add faq to node" title="add faq to node" style="border: 1px solid gray; zoom:75%;">
+
 <li>Edit a question and see that the node name is added as a tag. This ensures that this question is qualified for a user utterance containing the term/node name.</li></ol>
+
+<img src="../images/edit-ontology-question.png" alt="edit ontology question" title="edit ontology question" style="border: 1px solid gray; zoom:75%;">
+
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The tags you added earlier are retained and you can delete them, whereas the node names cannot be deleted from the tags list.</p></div>    
-<img src="../images/edit-ontology-question.png" alt="edit ontology question" title="edit ontology question" style="border: 1px solid gray; zoom:75%;">
+<p>The tags you added earlier are retained and you can delete them, whereas the node names cannot be deleted from the tags list.</p></div>
+
 <ol start="6"><li>You can further add nodes to your Ontology. The image below shows you the Ontology that we will be working with moving forward.</li>
 <img src="../images/ontology-example.png" alt="ontology example" title="ontology example" style="border: 1px solid gray; zoom:75%;">
 <li>Train the Knowledge Graph and use <b>Talk to Bot</b>. There should not be any changes in the responses.</li></ol>
@@ -151,7 +157,6 @@ To trigger a task, follow the steps below:
 2. Click **Add Intent** _How do I check my flight status?_
 3. Set **Intent** to _Task_.
 <img src="../images/set-task-intent.png" alt="set task intent" title="set task intent" style="border: 1px solid gray; zoom:75%;"> 
-
 
 4. From the drop-down list select the _Check Flight Status_ Dialog Task.
 5. Click **Save** and **Train** the Knowledge Graph.
