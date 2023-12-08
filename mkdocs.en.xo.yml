@@ -146,7 +146,7 @@ nav:
       - Contact Center FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/   
   - Automation: 
     - Design: 
-      - Dialogs Tasks: a.html 
+      - Dialogs Tasks:
         - Overview: a1.html
         - Navigating Dialog Tasks: a2.html
         - Build Dialog Tasks: a3.html
