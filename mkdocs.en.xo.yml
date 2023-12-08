@@ -118,6 +118,7 @@ markdown_extensions:
 copyright: |
   © 2023 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
+  - Home: home.md
   - Platform:
     - Getting Started:
       - Platform:

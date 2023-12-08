@@ -1,7 +1,12 @@
-
+html {
+    font-size: 100%;
+}
+.md-typeset h1,.md-typeset h2{
+    margin: 0 !important;
+}
 .logo .logo-img img{
     position: absolute;
-    top: -5px;
+    top: -11px;
     width: 95px;
 }
 
