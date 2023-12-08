@@ -50,7 +50,9 @@ For example, “_Are there any charges for a flight change? ?_” followed by �
 
 * Knowledge on how to [build a virtual assistant](https://developer.kore.ai/docs/bots/how-tos/travel-planing-assistant/create-a-travel-virtual-assistant/). 
 * A Virtual Assistant with the Dialog Tasks mentioned below – [see an overview here](https://developer.kore.ai/docs/bots/how-tos/travel-assistant-overview/).
-* **Check Flight Status**– This task prompts the user to enter their flight number and displays its status.  <img src="../images/flightstatus-task.png" alt="flight status task" title="flight status task" style="border: 1px solid gray; zoom:75%;"> 
+* **Check Flight Status**– This task prompts the user to enter their flight number and displays its status.
+
+    <img src="../images/flightstatus-task.png" alt="flight status task" title="flight status task" style="border: 1px solid gray; zoom:75%;"> 
 
 * **Change Flight** – This task prompts the user for their Current Flight and New Flight, then performs the flight change.
 
@@ -75,6 +77,7 @@ Sharing content needs to be handled differently in the two cases mentioned:
 ### Task-driven Context switching
 
 The following is the scenario where the Change Flight dialog invokes the Check Flight Status task to ensure that the flight is available to book.
+
 <img src="../images/task-driven-context-switching.png" alt="task driven context switching" title="task driven context switching" style="border: 1px solid gray; zoom:75%;">
 
 We will be using the Context Variables and Entity Pre-Assignments to achieve this.
@@ -87,6 +90,7 @@ We need to invoke Check Flight Status from Change Flight, check flight availabil
         * **Flight Number** – entity required in the Check Flight Status  dialog set to `context.entities.currentflight`
         * **Add Key/Value** – pair `context.type` and _change_ identifying the Change Flight  intent. This will be checked in the Check Flight Status  dialog as shown in the next step to modify the flow.
         * Ensure that the **Transition Option** is set to Initiate _Check Flight Status_,., once complete return to this node.
+        
         <img src="../images/transition-node.png" alt="transition node" title="transition node" style="border: 1px solid gray; zoom:75%;">
 
     * **Message Node** to display a message that the new flight is not available to book. Connect this message back to the **New Flight** Entity node, so that the user be prompted to select a different flight.
@@ -125,6 +129,7 @@ Talk to the Bot to see the changes in action.
 ### User triggered context switching
 
 While asking to change their flight, users might ask for the status of the flight that they want to switch to.
+
 <img src="../images/user-triggered-context-switching.png" alt="user triggered context switching" title="user triggered context switching" style="border: 1px solid gray; zoom:75%;">
 
 Let us see how this can be achieved. We will be using historic tags – system generated and custom tags. The historic tags get transmitted from one intent to another automatically.
