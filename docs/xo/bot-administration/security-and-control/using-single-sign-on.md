@@ -325,7 +325,7 @@ The _Identity Provider information successfully updated_ message is displayed at
 
 #### Kore.ai SSO for Bitium
 
-To configure Single Sign-On in _Bitium_ for Kore.ai, you must first add the Kore.ai app to your _Bitium _account, and then copy URLs and the security certificate from _Bitium_ into your Kore.ai account. This topic describes how to add the Kore.ai app to your _Bitium_ account, and then access the URLs and certificate needed for the Kore.ai configuration for SSO using _Bitium_.
+To configure Single Sign-On in _Bitium_ for Kore.ai, you must first add the Kore.ai app to your _Bitium_ account, and then copy URLs and the security certificate from _Bitium_ into your Kore.ai account. This topic describes how to add the Kore.ai app to your _Bitium_ account, and then access the URLs and certificate needed for the Kore.ai configuration for SSO using _Bitium_.
 
 To complete this procedure, you must have already selected _Bitium_ as a SAML provider on the **Single Sign On** page in the Bots Admin Console.
 
