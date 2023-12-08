@@ -7,8 +7,8 @@ To add the Twilio SMS channel, follow the below steps:
 
 
 1. **Setup Account** – Login to Twilio developer portal and set up an account.
-2. **Setup Messaging Service **– In the Programmable Messages section, create a messaging service
-3. **Add Phone Number **– Associate a Twilio Phone Number to your bot.
+2. **Setup Messaging Service**– In the Programmable Messages section, create a messaging service
+3. **Add Phone Number**– Associate a Twilio Phone Number to your bot.
 
 To add the Twilio Channel, follow the below steps: \
 The following procedure requires an active _Twilio_ account for developers with access to the Twilio Console. For more information, refer to _Creating a Twilio Trial Account_ later in this topic.
@@ -40,7 +40,7 @@ The following procedure requires an active _Twilio_ account for developers with 
 
 <img src="../images/twilio4.png" alt="Twilio Inbound Settings" title="Twilio Inbound Settings" style="border: 1px solid gray; zoom:70%;">
 
-!!! important
+  !!! important
 
       The Callback URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
 
@@ -53,7 +53,7 @@ The following procedure requires an active _Twilio_ account for developers with 
 15. Go to the **Configurations** tab in the Twilio SMS channel page to review and complete the channel setup.
 
 
-# **Edit the Twilio Channel**
+## **Edit the Twilio Channel**
 
 To edit the Twilio channel, follow the below steps:
 
@@ -69,14 +69,13 @@ To edit the Twilio channel, follow the below steps:
     * Click **Delete**.
     * On the **Delete Confirmation** dialog box, click **OK** to permanently delete the bot channel configuration.
 
-  !!! warning
+!!! warning
 
-        This operation is permanent, and cannot be undone.
+      This operation is permanent, and cannot be undone.
 
 
 
-# **Create a Twilio Trial Account**
-
+## **Create a Twilio Trial Account**
 
 
 1. You can sign up and create a free _Twilio_ trial account at [https://www.twilio.com/try-twilio](https://www.twilio.com/try-twilio).
@@ -95,7 +94,6 @@ To edit the Twilio channel, follow the below steps:
 8. On the corresponding dialog box, you can find the phone number that you must configure the Kore.ai Twilio channel.
 9. Click **Buy This Number** to save the number to your account.
 <img src="../images/twilio9.png" alt="Get Started with Twilio Phone" title="Get Started with Twilio Phone Settings" style="border: 1px solid gray; zoom:70%;">
-
 
 
 10. The phone number is saved and accessible from the **Home** screen on the **Dashboard**. You are now ready to configure the Twilio channel in Kore.ai Bot Builder.
