@@ -69,7 +69,9 @@ To install the Kore.ai Connector, you should review the following hardware and s
 The server hosting the Kore.ai Connector Agent should have:
 
 **RAM:** 4 GB
+
 **CPU Core:** 8
+
 **Hard disk space:** 10 GB
 
 To support the following:
@@ -298,7 +300,7 @@ You must configure access control for each bot application that will use the Kor
 * **internalhost** – Specify the actual host name of the on-premises enterprise application used for data exchange with your Bots.
 * **internalport** – Specify the actual port of the on-premises enterprise application used for data exchange with your Bots.
 * **protocol** – Specify HTTP or HTTPS for the connection to on-premises enterprise applications.
-* **allowedPaths** – Specify all paths as “/*” or a specific array of paths for the host, not to include any parameters. The Kore.ai Connector checks the path up to, but not including parameters beginning with **"?"**
+* **allowedPaths** – Specify all paths as “/*” or a specific array of paths for the host, not to include any parameters. The Kore.ai Connector checks the path up to, but not including parameters beginning with "**?**"
 
 The following image is an example of a configured accesscontrol.json file with four Bot configurations.
 
@@ -370,7 +372,7 @@ In this section, you can verify the connection to the Kore.ai Connector Agent in
 2. In Bot Builder, for each Bot task that you want to run using the Kore.ai Connector, clone or upgrade each Bot.
     1. In the **Set up Request Chain Object** dialog, select **Access using connector**, save the changes, and then publish the Bot. For more information about configuring the request object, see [Configuring an Alert Task Request Object](https://developer.kore.ai/docs/bots/bot-builder-tool/alert/notification-tasks/){:target="_blank"} or  [Configuring an Action Task Request Object](https://developer.kore.ai/docs/bots/bot-builder-tool/action-info-task/kore-bot-action-tasks/){:target="_blank"} in the Bot Builder tool documentation.
 
-   !!! Note
+      !!! Note
    
          The option in the **Set up Request Chain Object** dialog for **Access using connector** is only available after the Kore.ai connector is enabled in the Bots Admin Console.
 
