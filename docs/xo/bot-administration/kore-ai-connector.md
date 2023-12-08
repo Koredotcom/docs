@@ -370,11 +370,11 @@ In this section, you can verify the connection to the Kore.ai Connector Agent in
 <img src="../images/kore-ai-connector-img10.png" alt="Enable bots" title="Enable bots" style="border: 1px solid gray;zoom:70%;"/>
 
 2. In Bot Builder, for each Bot task that you want to run using the Kore.ai Connector, clone or upgrade each Bot.
-    1. In the **Set up Request Chain Object** dialog, select **Access using connector**, save the changes, and then publish the Bot. For more information about configuring the request object, see [Configuring an Alert Task Request Object](https://developer.kore.ai/docs/bots/bot-builder-tool/alert/notification-tasks/){:target="_blank"} or  [Configuring an Action Task Request Object](https://developer.kore.ai/docs/bots/bot-builder-tool/action-info-task/kore-bot-action-tasks/){:target="_blank"} in the Bot Builder tool documentation.
+   1. In the **Set up Request Chain Object** dialog, select **Access using connector**, save the changes, and then publish the Bot. For more information about configuring the request object, see [Configuring an Alert Task Request Object](https://developer.kore.ai/docs/bots/bot-builder-tool/alert/notification-tasks/){:target="_blank"} or  [Configuring an Action Task Request Object](https://developer.kore.ai/docs/bots/bot-builder-tool/action-info-task/kore-bot-action-tasks/){:target="_blank"} in the Bot Builder tool documentation.
 
-      !!! Note
+      !!! note
    
-         The option in the **Set up Request Chain Object** dialog for **Access using connector** is only available after the Kore.ai connector is enabled in the Bots Admin Console.
+            The option in the **Set up Request Chain Object** dialog for **Access using connector** is only available after the Kore.ai connector is enabled in the Bots Admin Console.
 
 3. In the Bots Admin Console, deploy the published Bot and assign the users that can use the Bot tasks in your enterprise. For more information, see [Bot Management](../bot-management){:target="_blank"}.
 
