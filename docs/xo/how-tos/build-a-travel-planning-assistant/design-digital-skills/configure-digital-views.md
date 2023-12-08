@@ -23,9 +23,9 @@ You also need a Dialog Task that handles upcoming bookings. Read more about work
 
 Let us consider each of the following scenarios one by one:
 
-1. Dialog Task to display Upcoming Bookings, using the Widget SDK Channel.
-2. Widgets to trigger the above dialog task and a Panel set with the widgets.
-3. A Panel to hold a widget displaying a static JSON template message.
+1. **Dialog Task** to display Upcoming Bookings, using the Widget SDK Channel.
+2. **Widgets** to trigger the above dialog task and a Panel set with the widgets.
+3. A **Panel** to hold a widget displaying a static JSON template message.
 
 ### Message Template
 
@@ -204,7 +204,7 @@ Next, we will see how to create Widgets with static JSON content. We will use a 
 1. Create a Widget and call it **Travel Spend**.
 2. In the **New Widget** dialog, enter the Name, and set the source to JSON.
 <img src="../images/json-widget.png" alt="json widget" title="json widget" style="border: 1px solid gray; zoom:75%;"> 
- 
+
 Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, <a href="https://developer.kore.ai/docs/bots/sdks/widget-sdk-message-formatting-and-templates/" target="_blank">refer here</a>.
 
 ```js
@@ -237,12 +237,12 @@ var message =
 print(JSON.stringify(message));
 ```
 
-3. **Create a Panel** and name it **Travel Spend Breakdown**.
-4. Add the **Travel Spend Widget** to the **Travel Spend Breakdown Panel**.
-<img src="../images/travel-spend-widget.png" alt="travel spend widget" title="travel spend widget" style="border: 1px solid gray; zoom:75%;"> 
+<ol start="3"><li><b>Create a Panel</b> and name it <b>Travel Spend Breakdown</b>.</li>
+<li>Add the <b>Travel Spend Widget</b> to the <b>Travel Spend Breakdown Panel</b>.</li>
+  <img src="../images/travel-spend-widget.png" alt="travel spend widget" title="travel spend widget" style="border: 1px solid gray; zoom:75%;"> 
 
-5. **Test** the panel and you will see it in action.
-<img src="../images/travel-spend-breakdown.png" alt="travel spend breakdown" title="travel spend breakdown" style="border: 1px solid gray; zoom:75%;"> 
+<li><b>Test</b> the panel and you will see it in action.</li></ol>
+  <img src="../images/travel-spend-breakdown.png" alt="travel spend breakdown" title="travel spend breakdown" style="border: 1px solid gray; zoom:75%;"> 
 
 ## Publishing
 
@@ -259,7 +259,7 @@ Learn more about <a href="https://developer.kore.ai/docs/bots/publish/publishing
 
 We will be hosting the Panels in the web/mobile client. Click <a href="https://developer.kore.ai/docs/bots/sdks/kore-ai-widget-sdk-tutorial/" target="_blank">here</a> for more details on the Widget SDK usage.
 
-1. Download the Kore.ai Widget SDK, go to <a href="https://github.com/Koredotcom/web-kore-sdk" target="_blank">https://github.com/Koredotcom/web-kore-sdk</a>, and then click **Download**.
+1. Download the Kore.ai Widget SDK, go to <a href="https://github.com/Koredotcom/web-kore-sdk" target="_blank">Kore SDK</a>, and then click **Download**.
 2. Extract all files to the `/SDKApp/sdk` folder.
 3. Open the above SDK folder, and traverse to the **UI** folder.
 4. Open the `kore-config.js` file.
