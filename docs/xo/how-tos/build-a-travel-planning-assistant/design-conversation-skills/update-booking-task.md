@@ -6,9 +6,9 @@ This document is part of the documentation that shows you the steps in creating 
 
 The assistant we build will perform basic travel booking tasks, as follows:
 
-* Check the status of a flight, based on the flight number provided by the user, as seen <a href="https://developer.kore.ai/docs/bots/how-tos/travel-planing-assistant/create-a-travel-virtual-assistant/#Create_a_Dialog_Task">here</a>.
-* Update a flight booking, as discussed in <a href="https://developer.kore.ai/docs/bots/how-tos/update-booking-task/">this article</a>.
-* Perform a flight change, based on the current flight and new flight preference provided by the user, as seen <a href="https://developer.kore.ai/uncategorised/change-flight-task/">here</a>.
+* Check the status of a flight, based on the flight number provided by the user, as seen <a href="https://developer.kore.ai/docs/bots/how-tos/travel-planing-assistant/create-a-travel-virtual-assistant/#Create_a_Dialog_Task" target="_blank">here</a>.
+* Update a flight booking, as discussed in <a href="https://developer.kore.ai/docs/bots/how-tos/update-booking-task/" target="_blank">this article</a>.
+* Perform a flight change, based on the current flight and new flight preference provided by the user, as seen <a href="https://developer.kore.ai/uncategorised/change-flight-task/" target="_blank">here</a>.
 
 In this article, therefore, we will be configuring the assistant to update a booking, by configuring an Update Booking Intent. For the purpose of this use case, we will work with a Name update.
 
@@ -35,9 +35,9 @@ The Property Panel for User Intent will be displayed. We will retain the default
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For instructions related to the <b>Legacy Dialog Builder</b>, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlp-guidelines/">here</a>.</p></div>
+<p>For instructions related to the <b>Legacy Dialog Builder</b>, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlp-guidelines/" target="_blank">here</a>.</p></div>
 
-<ol start="6"><li>Close the User Intent Property Panel.</li></ol>
+<ol start="6"><li>Close the <b>User Intent</b> Property Panel.</li></ol>
 <img src="../images/close-user-property-panel.png" alt="user property panel" title="user property panel" style="border: 1px solid gray; zoom:75%;"> 
 
 ### Add Entity Nodes (Booking Number & Update Type)
@@ -48,7 +48,7 @@ Here we will be using it to capture the user input for Booking Number and type o
 
 **Add an Entity node that retrieves the Booking Number** with the following steps:
 
-1. Click the **+** below the _User Intent_ node.
+1. Click the **+** icon below the **User Intent** node.
 2. Select the **Entity** option and click **+New Entity**.
 3. The **Property Panel** for the Entity Node is displayed, if not click on the newly created entity to open it.
 4. Enter the following details:
@@ -58,7 +58,7 @@ Here we will be using it to capture the user input for Booking Number and type o
 
 **Add an Entity Node that retrieves the Update Type** with the following steps:
 
-1. Click the **+** below the Booking Number node.
+1. Click the **+** icon below the **Booking Number** node.
 2. Select the **Entity** option.
 3. Click **+ New entity**.
 4. The **Property Panel** for the Entity Node is displayed, if not click on the newly created entity to open it.
@@ -80,7 +80,7 @@ Here we will be using it to capture the user input for Booking Number and type o
 
 **Add an Entity Node that retrieves the Updated Name** with the following steps: 
 
-1. Click the **+** below the _UpdateType_ node.
+1. Click the **+** icon below the **UpdateType** node.
 2. Select the **Entity** option and click **+New Entity**.
 3. The **Property Panel** for the Entity Node is displayed, if not click on the newly created entity to open it. 
 4. Enter the following details:
@@ -97,10 +97,10 @@ Here the service node is used to call an API to get the booking details  for the
 
 We will be using a dummy API setup for this tutorial. We will be using a mock API created specifically for this purpose with the following fields – FirstName, LastName, Address, City, Country, ZipCode, BookingNumber.
 
-1. Click the **+** below the _UpdateType_ Entity node.
+1. Click the **+** icon below the **UpdateType** Entity node.
 2. Select **Bot Action**, click to open properties, name it GetBooking, and close the properties window.
 3. To add a service node, click the **+** icon next to the **Get Booking** Bot Action node to expand it.
-4. Click the **+** within the **Bot Action** layout.
+4. Click the **+** icon within the **Bot Action** layout.
 5. Select **Service** – Service node is used to make a backend API call to get booking information.
     * Click **+ New Service**
     * The **Property Panel** for the Service Node is displayed, if not click on the newly created entity node to open it.
@@ -115,7 +115,7 @@ Here the service node is used to call an API to update the account balance for t
 
 We will be using a dummy API setup for this tutorial.
 
-1. Click the **+** below the _GetBooking_ Service node.
+1. Click the **+** icon below the **GetBooking** Service node.
 2. Select **Service** – Service node is used to make a backend API call to update booking information.
 3. Click **+ New service**.
 4. The **Property Panel** for the Service Node is displayed, if not click on the newly added service node to open
@@ -140,7 +140,7 @@ We will be using a dummy API setup for this tutorial.
     * On the **Service Node** Property window, click the **Connections** tab.
         * Under the **Connection Rules** section, ensure that the **Default** connection is set to **End of Bot Action**.
 
-6. Close the _Service_ Property Panel.
+6. Close the **Service** Property Panel.
 7. Click **Next** to the **Bot Action** node to collapse it.
 
 ### Add a Message Node
@@ -149,7 +149,7 @@ A Message Node is used to display a message from the assistant to the user.
 
 Here we will be using the Message node to show the success message.
 
-1. Click the **+** below the **GetBooking** Bot Action.
+1. Click the **+** icon below the **GetBooking** Bot Action.
 2. Select **Message** and click the **+ New message**.
 3. **Property Panel** for the Message Node is displayed
 4. Enter the following details:
