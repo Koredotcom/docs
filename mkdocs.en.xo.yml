@@ -148,33 +148,33 @@ nav:
     - Design: 
       - Dialogs Tasks:
         - Overview: automation/intelligence/context-management.md 
-        - Navigating Dialog Tasks: a2.html
-        - Build Dialog Tasks: a3.html
+        - Navigating Dialog Tasks: automation/intelligence/context-management.md
+        - Build Dialog Tasks: automation/intelligence/context-management.md
         - Node Types:
-          - Overview: a4.html
-          - Intent Node: a5.html
-          - Dialog Node: a6.html
-          - Dynamic Intent Node: a7.html
-          - GenAI Node: a8.html
-          - GenAI Prompt: a9.html
-          - Entity Node: a10.html
-          - Form Node: a11.html
-          - Confirmation Node: a12.html
-          - Message Node: a13.html
-          - Logic Node: a14.html
-          - Bot Action Node: a15.html
-          - Service Node: a16.html
-          - Webhook Node: a17.html
-          - Script Node: a18.html
-          - Process Node: a19.html
-          - Agent Transfer Node: a20.html
+          - Overview: automation/intelligence/context-management.md
+          - Intent Node: automation/intelligence/context-management.md
+          - Dialog Node: automation/intelligence/context-management.md
+          - Dynamic Intent Node: automation/intelligence/context-management.md
+          - GenAI Node: automation/intelligence/context-management.md
+          - GenAI Prompt: automation/intelligence/context-management.md
+          - Entity Node: automation/intelligence/context-management.md
+          - Form Node: automation/intelligence/context-management.md
+          - Confirmation Node: automation/intelligence/context-management.md
+          - Message Node: automation/intelligence/context-management.md
+          - Logic Node: automation/intelligence/context-management.md
+          - Bot Action Node: automation/intelligence/context-management.md
+          - Service Node: automation/intelligence/context-management.md
+          - Webhook Node: automation/intelligence/context-management.md
+          - Script Node: automation/intelligence/context-management.md
+          - Process Node: automation/intelligence/context-management.md
+          - Agent Transfer Node: automation/intelligence/context-management.md
         - Node Connections:
-          - Node Connections Setup: a21.html 
-          - Sub-Intent Scoping: a22.html
-        - Entity Types: a23.html
-        - Entity Rules: a24.html
-        - User Prompts or Messages: a25.html
-        - Voice Call Properties: a26.html  
+          - Node Connections Setup: automation/intelligence/context-management.md 
+          - Sub-Intent Scoping: automation/intelligence/context-management.md
+        - Entity Types: automation/intelligence/context-management.md
+        - Entity Rules: automation/intelligence/context-management.md
+        - User Prompts or Messages: automation/intelligence/context-management.md
+        - Voice Call Properties: automation/intelligence/context-management.md  
       - Knowledge AI: getting-started.md
       - Small Talk: automation/use-cases/small-talk.md
       - Digital Skills: 
