@@ -178,7 +178,7 @@ nav:
       - Knowledge AI:
         - Overview: automation/use-cases/knowledge-ai/knowledge-graph-overview.md
         - Knowledge Graph (KG):
-          - Introduction: automation/use-cases/knowledge-ai/knowledge-graph-overview.md
+          - Introduction: automation/use-cases/knowledge-ai/knowledge-ai-introduction.md
           - Terminology: automation/use-cases/knowledge-ai/knowledge-graph-terminology.md
           - Build a KG: automation/use-cases/knowledge-ai/build-a-knowledge-graph.md
           - Manage FAQs: automation/use-cases/knowledge-ai/manage-faqs.md
