@@ -11,7 +11,6 @@ Consider a Travel Planning VA trying to address the following scenarios:
 * **Sharing content across intents** – Once the user has entered his/her booking number, they should not be prompted for it again in the course of the conversation.
 
 <div class="admonition note">
-<p class="admonition-title"></p>
 <p><b>User</b>: I want to change my seat.</p> 
 <p><b>VA</b>: Sure, may I have your booking number? (initiating Change Seat Task)</p>
 <p><b>User</b>: It's 2343544</p>
@@ -26,7 +25,6 @@ Ideally, Get Seat should not be asking for the flight number again.</div>
 Extending the above example:
 
 <div class="admonition note">
-<p class="admonition-title"></p>
 <p><em>User</em>: I want to change my seat.</p>
 <p><b>VA</b>: Sure, may I have your booking number? (initiating Change Seat Task)</p>
 <p><b>User</b>: It’s 2343544</p>
@@ -52,16 +50,16 @@ For example, “_Are there any charges for a flight change? ?_” followed by �
 
 * Knowledge on how to [build a virtual assistant](https://developer.kore.ai/docs/bots/how-tos/travel-planing-assistant/create-a-travel-virtual-assistant/). 
 * A Virtual Assistant with the Dialog Tasks mentioned below – [see an overview here](https://developer.kore.ai/docs/bots/how-tos/travel-assistant-overview/).
-* **Check Flight Status**– This task prompts the user to enter their flight number and displays its status.  <img src="../train-the-assistant/images/flightstatus-task.png" alt="flight status task" title="flight status task" style="border: 1px solid gray; zoom:75%;"> 
+* **Check Flight Status**– This task prompts the user to enter their flight number and displays its status.  <img src="../images/flightstatus-task.png" alt="flight status task" title="flight status task" style="border: 1px solid gray; zoom:75%;"> 
 
 * **Change Flight** – This task prompts the user for their Current Flight and New Flight, then performs the flight change.
 
-    <img src="../train-the-assistant/images/changeflight-task.png" alt="change flight task" title="change flight task" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/changeflight-task.png" alt="change flight task" title="change flight task" style="border: 1px solid gray; zoom:75%;">
 
-* **Update Booking** – A Dialog Task that asks the user for the number of the booking to update and the update that needs to be made, then performs the update.<img src="../train-the-assistant/images/update-booking.png" alt="update booking" title="update booking" style="border: 1px solid gray; zoom:75%;">
+* **Update Booking** – A Dialog Task that asks the user for the number of the booking to update and the update that needs to be made, then performs the update.<img src="../images/update-booking.png" alt="update booking" title="update booking" style="border: 1px solid gray; zoom:75%;">
 
 * **Knowledge Graph**– Frequently asked questions that the assistant handles.
-<img src="../train-the-assistant/images/kg-faqs.png" alt="knowledge graph FAQs" title="knowledge graph FAQs" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/kg-faqs.png" alt="knowledge graph FAQs" title="knowledge graph FAQs" style="border: 1px solid gray; zoom:75%;">
 
 ## Implementation
 
@@ -71,19 +69,17 @@ Let us consider each of the above scenarios one by one.
 
 Sharing content needs to be handled differently in the two cases mentioned:
 
-* **Task-driven transition** – This can be handled at the time of development by invoking the corresponding intent and passing the data through entity pre-assignment
+* **Task-driven transition** – This can be handled at the time of development by invoking the corresponding intent and passing the data through entity pre-assignment.
 * **User-driven transition** – This is a bit complex since we have no way of knowing when, during the current task flow, the user would make such a request and it requires a combination of tags, entity emission, and extraction.
 
 ### Task-driven Context switching
 
 The following is the scenario where the Change Flight dialog invokes the Check Flight Status task to ensure that the flight is available to book.
-<img src="../train-the-assistant/images/task-driven-context-switching.png" alt="task driven context switching" title="task driven context switching" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/task-driven-context-switching.png" alt="task driven context switching" title="task driven context switching" style="border: 1px solid gray; zoom:75%;">
 
 We will be using the Context Variables and Entity Pre-Assignments to achieve this.
 
-**Steps:**
-
-We need to invoke Check Flight Status  from Change Flight, check flight availability  and proceed accordingly
+We need to invoke Check Flight Status from Change Flight, check flight availability and follow the steps below:
 
 1. Open the **Change Flight** dialog task.
 2. Add a _Dialog Node_, _Bot Action Node_ with a _Script Node_, and a _Message Node_ as follows:
@@ -91,7 +87,7 @@ We need to invoke Check Flight Status  from Change Flight, check flight availabi
         * **Flight Number** – entity required in the Check Flight Status  dialog set to `context.entities.currentflight`
         * **Add Key/Value** – pair `context.type` and _change_ identifying the Change Flight  intent. This will be checked in the Check Flight Status  dialog as shown in the next step to modify the flow.
         * Ensure that the **Transition Option** is set to Initiate _Check Flight Status_,., once complete return to this node.
-        <img src="../train-the-assistant/images/transition-node.png" alt="transition node" title="transition node" style="border: 1px solid gray; zoom:75%;">
+        <img src="../images/transition-node.png" alt="transition node" title="transition node" style="border: 1px solid gray; zoom:75%;">
 
     * **Message Node** to display a message that the new flight is not available to book. Connect this message back to the **New Flight** Entity node, so that the user be prompted to select a different flight.
     * **Script Node** – _CheckStatus to check the status of the new flight to change to_, and proceed accordingly. The Status of the new flight is obtained from a BotContext variable that will be populated by the Check Flight Status dialog task. 
@@ -103,10 +99,10 @@ nextStep = "update";
 context.nextStep = nextStep; 
 ```
 
-<img src="../train-the-assistant/images/script-node-check-status.png" alt="script node check status" title="script node check status" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/script-node-check-status.png" alt="script node check status" title="script node check status" style="border: 1px solid gray; zoom:75%;">
 
 * **Connection Settings** Bot Action Connections should indicate to proceed to UpdateBooking in case the new flight is available (if the `context.nextStep` is _updated_ from the above script) else go to the message node.
-<img src="../train-the-assistant/images/connection-settings.png" alt="connection settings" title="connection settings" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/connection-settings.png" alt="connection settings" title="connection settings" style="border: 1px solid gray; zoom:75%;">
 
 Next, let us modify the **Check Flight Status** dialog to check for the _change_ tag and populate the Bot Context variable if needed.
 
@@ -129,13 +125,11 @@ Talk to the Bot to see the changes in action.
 ### User triggered context switching
 
 While asking to change their flight, users might ask for the status of the flight that they want to switch to.
-<img src="../train-the-assistant/images/user-triggered-context-switching.png" alt="user triggered context switching" title="user triggered context switching" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/user-triggered-context-switching.png" alt="user triggered context switching" title="user triggered context switching" style="border: 1px solid gray; zoom:75%;">
 
 Let us see how this can be achieved. We will be using historic tags – system generated and custom tags. The historic tags get transmitted from one intent to another automatically.
 
-**Steps**:
-
-First, modify the Change Flight task  to populate the appropriate tags and configure the Hold and Resume settings:
+First, modify the Change Flight task to populate the appropriate tags and configure the Hold and Resume settings. Follow the steps below to complete the process:
 
 1. Open the **Change Flight** dialog.
 2. Open the properties panel of **CurrentFlight** entity.
@@ -165,16 +159,15 @@ The **Update Booking** intent should be invoked only through the Change Flight t
 
 2. Restricting task access:
     * Open the **Update Booking** dialog.
-    * Open the **UpdateBooking** intent, **NLP Properties** tab
+    * Open the **UpdateBooking** intent, **NLP Properties** tab.
     * Under the **Manage Context** section add “_Change_” to the **Intent Preconditions**.
 
 This will ensure that this dialog will be executed only if Change exists in the context.
 
-* Open **the Change Flight** dialog
-* Open the **ChangeFlight** intent node, **NLP Properties** tab
-* Under the **Manage Context** section add “_Change_” to the **Context Output** as expected by the Update Booking dialog
+* Open **the Change Flight** dialog.
+* Open the **ChangeFlight** intent node, **NLP Properties** tab.
+* Under the **Manage Context** section add “_Change_” to the **Context Output** as expected by the Update Booking dialog.
 * Now the Update Booking can not be triggered by any other dialog.
-
 
 ### Sharing context across FAQs
 
@@ -185,7 +178,7 @@ The following Knowledge Graph is used in this scenario:
 **Primary Question**: What are the charges for changing flights?
 
 **Alternate**: What are the charges?
-<img src="../train-the-assistant/images/sharing-context-faq.png" alt="sharing context faq" title="sharing context faq" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/sharing-context-faq.png" alt="sharing context faq" title="sharing context faq" style="border: 1px solid gray; zoom:75%;">
 
 In the second question, the word _charges_ is in the context of changing flights. To enable it, all you need is to set a flag. For each question answered the Context tags are set automatically, we just instruct the Platform to use them appropriately.
 
