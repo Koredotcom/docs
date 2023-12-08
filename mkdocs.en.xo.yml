@@ -185,8 +185,8 @@ nav:
           - Knowledge Extraction: automation/use-cases/knowledge-ai/knowledge-extraction.md
           - Import or Export KG:
             - Prepare Data for Import: automation/use-cases/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
-            - Import KG: automation/use-cases/knowledge-ai/import-and-export-knowledge-graph.md#import
-            - Export KG: automation/use-cases/knowledge-ai/import-and-export-knowledge-graph.md#export
+            - Import KG: automation/use-cases/knowledge-ai/import-and-export-knowledge-graph.md/#import
+            - Export KG: automation/use-cases/knowledge-ai/import-and-export-knowledge-graph.md/#export
             - Auto-Generate KG: automation/use-cases/knowledge-ai/generate-a-knowledge-graph.md
           - KG Analysis: automation/use-cases/knowledge-ai/knowledge-graph-analysis.md 
       - Alert Tasks: automation/use-cases/small-talk.md
