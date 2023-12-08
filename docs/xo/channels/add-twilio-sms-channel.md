@@ -10,7 +10,10 @@ To add the Twilio SMS channel, follow the below steps:
 2. **Setup Messaging Service**– In the Programmable Messages section, create a messaging service
 3. **Add Phone Number**– Associate a Twilio Phone Number to your bot.
 
-To add the Twilio Channel, follow the below steps: \
+## **Setup Twilio Developer Account**
+
+To add the Twilio Channel, follow the below steps:
+
 The following procedure requires an active _Twilio_ account for developers with access to the Twilio Console. For more information, refer to _Creating a Twilio Trial Account_ later in this topic.
 
 
