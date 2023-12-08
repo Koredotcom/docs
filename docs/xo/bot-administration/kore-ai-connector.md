@@ -67,9 +67,12 @@ To install the Kore.ai Connector, you should review the following hardware and s
 **Hardware Requirements**
 
 The server hosting the Kore.ai Connector Agent should have:
+
 **RAM:** 4 GB
 **CPU Core:** 8
-**Hard disk space:** 10 GB – To support the following:
+**Hard disk space:** 10 GB
+
+To support the following:
 
 * Kore.ai Connector download – 10MB
 * Installation Files – 20MB
@@ -108,7 +111,8 @@ The following Microsoft Windows 64-bit operating systems are supported:
 * Windows Server 2012 (64-bit)
 * Windows Server 2012 R2 (64-bit)
 
-**Node.js** – Required to run the Kore.ai Connector Agent. Download and install from [https://nodejs.org/en/download/](https://nodejs.org/en/download/){:target="_blank"} (version 10 or higher)on the server where the Kore.ai Connector Agent is installed. In addition, you must also install the **forever** module. After node.js is installed, run the following command to install the **forever** module.
+**Node.js** – Required to run the Kore.ai Connector Agent. Download and install from [https://nodejs.org/en/download/](https://nodejs.org/en/download/){:target="_blank"} (version 10 or higher)on the server where the Kore.ai Connector Agent is installed. In addition, you must also install the **forever** module. After node.js is installed, run the following command to install the **forever** module:
+
 `npm  install forever -g`
 
 **Installation Process**
@@ -132,7 +136,7 @@ In the Bots Admin Console, you begin by adding a connector. When you add a conne
 
 6. Copy, and then uncompress the file to your application server.
     1. For Linux, use the following command:
-      _tar -xvf kore-connector-X.X.X.tar.gz_
+      `tar -xvf kore-connector-X.X.X.tar.gz
     
     2. For Windows, in File Explorer, right-click the file and select **Extract to** on the command menu.
 
@@ -294,7 +298,7 @@ You must configure access control for each bot application that will use the Kor
 * **internalhost** – Specify the actual host name of the on-premises enterprise application used for data exchange with your Bots.
 * **internalport** – Specify the actual port of the on-premises enterprise application used for data exchange with your Bots.
 * **protocol** – Specify HTTP or HTTPS for the connection to on-premises enterprise applications.
-* **allowedPaths** – Specify all paths as “/*” or a specific array of paths for the host, not to include any parameters. The Kore.ai Connector checks the path up to, but not including parameters beginning with ” **?** “
+* **allowedPaths** – Specify all paths as “/*” or a specific array of paths for the host, not to include any parameters. The Kore.ai Connector checks the path up to, but not including parameters beginning with **"?"**
 
 The following image is an example of a configured accesscontrol.json file with four Bot configurations.
 
@@ -302,7 +306,7 @@ The following image is an example of a configured accesscontrol.json file with f
 
 !!! Note
 
-   Comments cannot be used in configuration files.
+      Comments cannot be used in configuration files.
 
 
 ## Starting
@@ -368,7 +372,7 @@ In this section, you can verify the connection to the Kore.ai Connector Agent in
 
    !!! Note
    
-      The option in the **Set up Request Chain Object** dialog for **Access using connector** is only available after the Kore.ai connector is enabled in the Bots Admin Console.
+         The option in the **Set up Request Chain Object** dialog for **Access using connector** is only available after the Kore.ai connector is enabled in the Bots Admin Console.
 
 3. In the Bots Admin Console, deploy the published Bot and assign the users that can use the Bot tasks in your enterprise. For more information, see [Bot Management](../bot-management){:target="_blank"}.
 
