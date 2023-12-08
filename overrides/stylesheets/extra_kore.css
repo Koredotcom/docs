@@ -1,24 +1,34 @@
 html {
-    font-size: 100%;
+    font-size: 110%;
 }
 .md-typeset h1,.md-typeset h2{
     margin: 0 !important;
 }
+.logo{
+    height: 100%;
+}
+.logo-img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 .logo .logo-img img{
-    position: absolute;
-    top: -11px;
     width: 95px;
 }
 
 .logo .logo-img .logo-title{
-    position: absolute;
-    margin-left: 106px;
-    margin-top: 1px;
     color: #000;
 }
 [data-md-component="header"]{
     background-color: white !important;
     color: #898686 !important;
+}
+.md-search{
+    z-index: 4;
+}
+.md-search__form{
+    margin-bottom: 0px !important;
 }
 .md-search__input{
     background: #fff;

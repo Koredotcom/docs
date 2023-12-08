@@ -48,6 +48,16 @@
             width: 100%;
             height: 147px;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mdc-main-banner h1{
+            color: var(--gray-900, #101828);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            margin: 0px;
         }
         /* Banner styles end */
 
@@ -318,6 +328,8 @@
             padding-left: 20px;
             position: relative;
             margin: 0px;
+            display: flex;
+            align-items: center;
         }
         .mdc-whats-new-title::before{
             content: '';
@@ -370,6 +382,7 @@
             border-radius: var(--radius-md, 8px);
             background: var(--gray-50, #F9FAFB);
             position: relative;
+            height: max-content;
         }
         .arrow-image{
             position: absolute;
@@ -529,17 +542,19 @@
         }
         </style>
       <section class="mdx-container">
-        <div class="mdc-main-banner"></div>
+        <div class="mdc-main-banner">
+            <h1>Discover Our Documentation Library</h1>
+        </div>
         <main class="mdc-main md-grid">
             <!--Banner search Start-->
-            <div class="mdc-search">
+            <!-- <div class="mdc-search">
                 <input type="text" class="mdc-search-input">
                 <span class="mdc-search-icon">
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" >
                       <path d="M19.8465 20.2705L15.7512 16.1752M17.9636 10.856C17.9636 15.0155 14.5916 18.3876 10.432 18.3876C6.27241 18.3876 2.90039 15.0155 2.90039 10.856C2.90039 6.69636 6.27241 3.32434 10.432 3.32434C14.5916 3.32434 17.9636 6.69636 17.9636 10.856Z" stroke="#98A2B3" stroke-width="1.8829" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </span>
-            </div>
+            </div> -->
              <!--Banner search End-->
     
             <!--Explore section start-->
@@ -780,13 +795,13 @@
             </section>
              <!--Whats new section End-->
     
-            <div class="mdc-spacing"></div>
+            <!-- <div class="mdc-spacing"></div> -->
     
             <!--Documentation help start-->
             <section class="mdc-help-wrapper">
-                <div class="mdc-help-title">
+                <!-- <div class="mdc-help-title">
                     <img src="assets/kore-logo.svg" alt="Kore.ai"/>Documentation
-                </div>
+                </div> -->
                 <div class="mdc-helpline-centers">
                     <div class="mdc-helpline-block">
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
