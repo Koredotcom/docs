@@ -9,7 +9,7 @@ The following illustration shows an example of the **Analytics** module with the
 
 ## Viewing System and User Events
 
-On the **Audit Report** page in the Kore.ai Bots Admin Console in the **Analytics **module, you can view the Kore.ai system and user-generated events. For example, a system-generated event could be a periodic Microsoft® Active Directory® Sync. An example of a user-generated event could be the addition of a new user.
+On the **Audit Report** page in the Kore.ai Bots Admin Console in the **Analytics** module, you can view the Kore.ai system and user-generated events. For example, a system-generated event could be a periodic Microsoft® Active Directory® Sync. An example of a user-generated event could be the addition of a new user.
 Post the release of v8.1, the changes triggered by using Public APIs is also captured. For example import of roles using API etc.
 
 Using the filters on the **Audit Report** page you can select event categories, events, and time periods to drill-down and filter events as needed. Kore.ai audit reports also list error messages that can help you to troubleshoot system issues or when you create a Kore.ai service request.
@@ -19,7 +19,9 @@ Using the filters on the **Audit Report** page you can select event categories, 
 
 The list of entries in an admin console table can be very large depending on the size of your company, for example, a list of users. To find one or more specific users or groups, in the **Search** field, enter at least three characters to begin find-as-you-type.
 
-**Note: **The number of search terms in a search query is unlimited, however, no more than the first 20 characters of each search term is used to return search results.
+!!! Note
+
+    The number of search terms in a search query is unlimited, however, no more than the first 20 characters of each search term is used to return search results.
 
 To view all entries, clear the search field, and then press the **Enter** key.
 
@@ -502,7 +504,8 @@ Chat History provides visibility into the user information with the inclusion of
 
 !!! Note
 
-        The Trace ID is retained in the logs for 30 days. Once the Trace ID is expired, you see a tooltip message as ‘`Trace Id: Trace records for this message are not available`‘.
+        The Trace ID is retained in the logs for 30 days. Once the Trace ID is expired, you see a tooltip message as 
+        ‘`Trace Id: Trace records for this message are not available`‘.
 
 Click on any chat history to see these options. Following are the user information details provided:
 
