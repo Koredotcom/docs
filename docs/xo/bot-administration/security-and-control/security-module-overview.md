@@ -1,8 +1,6 @@
 # Security & Control Module Overview
 
-In the **Security & Control **module of the Kore.ai Bots Admin Console,
-
-
+In the **Security & Control** module of the Kore.ai Bots Admin Console,
 
 * configure Single Sign-On (SSO) authentication for your domain users ([see here](../using-single-sign-on/){:target="_blank"}),
 * configure and install the Kore.ai Connector agent for Bot communications between Kore.ai and your on-premises applications using custom Kore.ai Bots ([see here](../../kore-ai-connector/){:target="_blank"}),
