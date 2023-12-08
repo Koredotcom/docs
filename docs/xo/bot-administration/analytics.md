@@ -505,6 +505,7 @@ Chat History provides visibility into the user information with the inclusion of
 !!! Note
 
         The Trace ID is retained in the logs for 30 days. Once the Trace ID is expired, you see a tooltip message as 
+        
         ‘`Trace Id: Trace records for this message are not available`‘.
 
 Click on any chat history to see these options. Following are the user information details provided:
