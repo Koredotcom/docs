@@ -50,7 +50,7 @@ Now that you have the prerequisites and have configured the Knowledge Graph Gene
 
 The following command executes the generator:
 
-```
+```{python}
 python KnowledgeGraphGenerator.py --file_path <INPUT_FILE_PATH> --type <INPUT_FILE_TYPE> --language <LANGUAGE_CODE> --v <true/false>
 ```
 

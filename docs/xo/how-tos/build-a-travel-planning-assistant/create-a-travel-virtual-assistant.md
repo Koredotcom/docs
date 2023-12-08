@@ -152,7 +152,7 @@ This Entity node is to capture the Flight Number for which the user wants the st
 9.  Under the **Message** section, delete all text from the **Plain Text** tab and click the **Advanced** tab.
 10. Copy and paste the following **JavaScript** into the Advanced tab. The JavaScript extracts flight numbers matching user preference from the string output from API call and displays them in the _Quick Reply_ format.
 
-```
+```js
 var data = context.Fetchflightdetails.response.body.details;
 context.flights = [];
 context.info;
@@ -189,8 +189,8 @@ for (i=0; i < context.flights.length; i++)
 message.payload.quick_replies.push(replies);
 }
 print(JSON.stringify(message));
-
 ```
+
 <ol start="11"><li>Click <b>Save</b>.</li>
 
 <img src="../images/save-user-prompt.png" alt="save user prompt" title="save user prompt" style="border: 1px solid gray; zoom:75%;">
@@ -217,7 +217,7 @@ A Script node is used to write custom JavaScript in the Dialog task. Here, users
 10. On the _Add Script_ dialog box, copy and paste the following JavaScript. This code extracts the details of the selected flight number and also mitigates potential task failures caused by users not selecting a preference and instead manually entering information that is not found within the Context. Learn more about the [Context Object](https://developer.kore.ai/docs/bots/bot-builder-tool/context-object/). 
 `context.valid = false;`
 
-```
+```js
 context.details;
 var x = context.flights.length;
 for (var l = 0; l < x; l++)
@@ -239,8 +239,8 @@ if (context.valid === false)
 {
     delete context.entities.SelectFlight;
 }
-
 ```
+
 <ol start="11"><li>Click <b>Save</b>.</li>
 
 <img src="../images/save-script-node.png" alt="save script node" title="save script node" style="border: 1px solid gray; zoom:75%;">
@@ -269,7 +269,7 @@ A Message node is used to display a message from the VA to the user. Here, users
     * Under the **Message** section, delete all text in the **Plain Text** tab and click the **Advanced** tab.
 8. Copy and paste the following JavaScript. The JavaScript is written to display the flight details in the _Table_ format. 
 
-```
+```js
 var elements = [context.details];`
 var message = {
     "type": "template",
@@ -292,6 +292,7 @@ for (var i = 0; i < elements.length; i++) {
 message.payload.elements = ele;
 print(JSON.stringify(message));
 ```
+
 <ol start="9"><li>Click <b>Save</b>.</li>
 <li>Return to the <b>Message</b> window.</li>
 <li>On the Message window, click the <b>Connections</b> tab, and follow the steps below:</li>
