@@ -175,7 +175,7 @@ nav:
         - Entity Rules: automation/intelligence/context-management.md
         - User Prompts or Messages: automation/intelligence/context-management.md
         - Voice Call Properties: automation/intelligence/context-management.md  
-      - Knowledge AI: getting-started.md
+      - Knowledge AI:
         - Overview: automation/use-cases/knowledge-ai/knowledge-graph-overview.md
         - Knowledge Graph (KG):
           - Introduction: automation/use-cases/knowledge-ai/knowledge-graph-overview.md
