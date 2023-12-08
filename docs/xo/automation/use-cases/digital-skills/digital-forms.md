@@ -2452,10 +2452,7 @@ Yes/No values
 
 **SAMPLE CONTEXT OBJECT**
 
-
-
-
-```
+```js
 "forms": {
     "basicpropertieslist": {
       "TextField": "text",
@@ -2490,7 +2487,7 @@ You can specify pre-fill form data using the following context object: `context.
 
 You can use the following in Javascript to populate the above-mentioned context object:
 
-```
+```js
 context.prefillForms = {
   <form_name>: {
      fields: {

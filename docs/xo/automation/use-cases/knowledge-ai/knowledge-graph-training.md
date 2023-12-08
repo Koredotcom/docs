@@ -270,7 +270,7 @@ The following API gives the full information of the FAQ:
 
 **Sample Response**:
 
-```
+```js
 {
 "response": "You can contact our Branch officials wherein you have submitted your documents.If the documents are in order, the account will be opened within 2 working days.",
 "primaryQuestion": "How to check the status of my account opening?"

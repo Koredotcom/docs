@@ -71,7 +71,7 @@ In the **Standard Response** section, the standard bot responses are categorized
 
 **Slack Channel Override Example**
 
-```
+```js
 var message = {};`
 var attachments = [];
 var attachment = {
@@ -86,7 +86,7 @@ print(JSON.stringify(message));
 
 **FaceBook Channel Override Example**
 
-```
+```js
 var message = {
 text: response.message
 };
@@ -111,7 +111,7 @@ print(JSON.stringify(message));
 
 **Email Channel Override Example**
 
-```
+```js
 var message = {};
 var text = response.message + ' <br> ';
 for (var i = 0; i < response.choices.length; i++) {
@@ -124,7 +124,7 @@ print(JSON.stringify(message));
 ```
 **SMS Channel Override Example**
 
-```
+```js
 var message = {};
 var indexArray = ['a', 'b', 'c',
         'd', 'e',

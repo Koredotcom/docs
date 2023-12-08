@@ -1,4 +1,4 @@
-# Travel VA: Configuring Digital Forms
+# Travel VA: Configure Digital Forms
 
 In this document, we will explore a scenario in a Travel Planning assistant, through which a user can book a flight. We will see how Digital Forms can be used to gather all the required information from the user, then make the booking based on that information.
 
@@ -166,15 +166,16 @@ Next, we will see how to capture the values returned by the Form Node using a Sc
 3. Click **Manage** under **Bot Responses** to open the message editor.
 4. Select the **JavaScript** tab and enter the following code. This is a simple script that captures some of the data from within the context object, as submitted by the user into the Form, and displays it accordingly.
 
-```
+```js
 var message; 
 message = 'You have booked a '+context.forms.BookingForm.TripType+' flight in the name of '+context.forms. BookingForm.PassengerLastName; 
 message = message + ' and opted for '+ context.forms. BookingForm.Fare; 
 print(message); 
 ```
+
 <img src="../images/javascript-code-block.png" alt="javascript code" title="javascript code" style="border: 1px solid gray; zoom:75%;">
 
-5. Your dialog task is ready to use a digital form.
+<ol start="5"><li>Your dialog task is ready to use a digital form.</li></ol>
 <img src="../images/dialog-task-digital-form.png" alt="dialog task" title="dialog task" style="border: 1px solid gray; zoom:75%;"> 
 
 ## Test the Assistant

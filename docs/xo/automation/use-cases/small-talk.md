@@ -258,7 +258,7 @@ This information is stored in the Small Talk context and can be accessed using: 
 
 The following is the JSON structure:
 
-```
+```js
 {
   "pattern": "I am from _~location Where are you from?",
   "matchData": {
@@ -276,7 +276,7 @@ For example, consider the pattern: how is the *[ climate temperature ]  { at _~l
 
 context: 
 
-```
+```js
 {
   "pattern": "how is the _[ climate temperature ]  { at _~location } ~time",
   "matchData": {
@@ -290,7 +290,7 @@ context:
 **Case2**: user utterance: “*how is the climate today*“
 
 context: 
-```
+```js
 {
   "pattern": "how is the _[ climate temperature ]  { at _~location } ~time",
   "matchData": {
@@ -305,7 +305,7 @@ The context can be accessed from the child nodes under _previousMatchedData_ arr
 
 The JSON structure for the parent Small Talk context would be:
 
-```
+```js
 {
   "pattern": "That is nice",
   "matchData": {},
