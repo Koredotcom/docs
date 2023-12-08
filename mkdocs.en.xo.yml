@@ -118,7 +118,8 @@ markdown_extensions:
 copyright: |
   © 2023 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
-  - Platform:
+  - Platform : home.md
+  - Getting Started:
     - Getting Started:
       - Platform:
         - Introduction to the Platform: virtual-assistants-overview.md
@@ -143,9 +144,37 @@ nav:
     - FAQs: 
       - Automation FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
       - Contact Center FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/   
-  - Automation:
-    - Design:
-      - Dialogs: getting-started.md 
+  - Automation: 
+    - Design: 
+      - Dialogs Tasks:
+        - Overview: automation/intelligence/context-management.md 
+        - Navigating Dialog Tasks: automation/intelligence/context-management.md
+        - Build Dialog Tasks: automation/intelligence/context-management.md
+        - Node Types:
+          - Overview: automation/intelligence/context-management.md
+          - Intent Node: automation/intelligence/context-management.md
+          - Dialog Node: automation/intelligence/context-management.md
+          - Dynamic Intent Node: automation/intelligence/context-management.md
+          - GenAI Node: automation/intelligence/context-management.md
+          - GenAI Prompt: automation/intelligence/context-management.md
+          - Entity Node: automation/intelligence/context-management.md
+          - Form Node: automation/intelligence/context-management.md
+          - Confirmation Node: automation/intelligence/context-management.md
+          - Message Node: automation/intelligence/context-management.md
+          - Logic Node: automation/intelligence/context-management.md
+          - Bot Action Node: automation/intelligence/context-management.md
+          - Service Node: automation/intelligence/context-management.md
+          - Webhook Node: automation/intelligence/context-management.md
+          - Script Node: automation/intelligence/context-management.md
+          - Process Node: automation/intelligence/context-management.md
+          - Agent Transfer Node: automation/intelligence/context-management.md
+        - Node Connections:
+          - Node Connections Setup: automation/intelligence/context-management.md 
+          - Sub-Intent Scoping: automation/intelligence/context-management.md
+        - Entity Types: automation/intelligence/context-management.md
+        - Entity Rules: automation/intelligence/context-management.md
+        - User Prompts or Messages: automation/intelligence/context-management.md
+        - Voice Call Properties: automation/intelligence/context-management.md  
       - Knowledge AI: getting-started.md
       - Small Talk: automation/use-cases/small-talk.md
       - Digital Skills: 
