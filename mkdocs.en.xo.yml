@@ -187,7 +187,7 @@ nav:
             - Prepare Data for Import: automation/use-cases/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
             - Importing KG: automation/use-cases/knowledge-ai/import-and-export-knowledge-graph.md/#import
             - Exporting KG: automation/use-cases/knowledge-ai/import-and-export-knowledge-graph.md/#export
-            - Auto-Generate KG:	automation/use-cases/knowledge-ai/generate-a-knowledge-graph.md
+            - Auto-Generate KG: automation/use-cases/knowledge-ai/generate-a-knowledge-graph.md
           - KG Analysis: automation/use-cases/knowledge-ai/knowledge-graph-analysis.md 
 		  - Alert Tasks: automation/use-cases/small-talk.md
       - Small Talk: automation/use-cases/small-talk.md
