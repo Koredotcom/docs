@@ -172,9 +172,10 @@ message = 'You have booked a '+context.forms.BookingForm.TripType+' flight in th
 message = message + ' and opted for '+ context.forms. BookingForm.Fare; 
 print(message); 
 ```
+
 <img src="../images/javascript-code-block.png" alt="javascript code" title="javascript code" style="border: 1px solid gray; zoom:75%;">
 
-5. Your dialog task is ready to use a digital form.
+<ol start="5"><li>Your dialog task is ready to use a digital form.</li></ol>
 <img src="../images/dialog-task-digital-form.png" alt="dialog task" title="dialog task" style="border: 1px solid gray; zoom:75%;"> 
 
 ## Test the Assistant
