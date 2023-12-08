@@ -4,7 +4,7 @@ Using patterns can help to improve NLP interpreter accuracy.
 
 In this document, we will elaborate on the various pattern syntax and how they can be used in intent detection and entity extraction.
 
-<div class="admonition important">
+<div class="admonition note">
 <p class="admonition-title">Important</p>
 <p><ul><li>Patterns are to be used as a last resort, only for cases where the ML engine cannot be used. Examples of such cases would be to train the VA in recognizing idiomatic utterances, command like utterances.</li>
 <li>Patterns are evaluated in the order of their listing. Once a match is found the rest of the patterns are not evaluated. So ensure when adding patterns to add in the order of most restrictive to least restrictive.</li>
@@ -375,9 +375,9 @@ No space between !! and word/concept
    <td><b>[ … ]</b></td>
    <td>Used to define a group of words/concepts and the match should be against exactly one of the groups declared in [ ]. Be aware that when a match is found the rest of the group is ignored, so order the words accordingly.
 
-**_Note: the parentheses should not be clubbed with the word, i.e maintain a space between the parenthesis and the adjacent word._**
+<b>Note</b>: the parentheses should not be clubbed with the word, i.e maintain a space between the parenthesis and the adjacent word.
 
-_Due to the difficulty in maintaining and tracking, it is recommended you use concept instead of this pattern. This pattern also has a detrimental effect on the VA’s performance._
+<i>Due to the difficulty in maintaining and tracking, it is recommended you use concept instead of this pattern. This pattern also has a detrimental effect on the VA’s performance.</i>
 
    </td>
    <td>
@@ -414,7 +414,7 @@ _Due to the difficulty in maintaining and tracking, it is recommended you use co
    <td><b>{ … }</b></td>
    <td>Used to define an optional group or words/concepts and the match would be against zero or one of the words/patterns declared in { }. Be aware that when a match is found, the rest of the group is ignored, so order the words accordingly.
 
-**_Note: the parentheses should not be clubbed with the word, i.e maintain a space between the parenthesis and the adjacent word._**
+<b>Note</b>: the parentheses should not be clubbed with the word, i.e maintain a space between the parenthesis and the adjacent word.
 
    </td>
    <td>
@@ -593,10 +593,9 @@ Due to the risk of running into false positives, you are advised not to use this
   </tr>
 </table>
 
-
 ### Pattern Operators
 
-* **AND: ( X Y )**: An ordered relationship of words in sequence. This is the default setting. i.e. when you specify a pattern as _cancel order_ it is the same as _(cancel order)_. \
+* **AND: ( X Y )**: An ordered relationship of words in sequence. This is the default setting. i.e. when you specify a pattern as _cancel order_ it is the same as _(cancel order)_. 
 For example, _(Cancel Booking)_ matches _Cancel my flight booking_ but doesn’t match _I have a pending booking for flight can I cancel?_. The XO Platform uses patterns with increasing numbers of wildcards between words (up to 3 for an intent). So a pattern of _Cancel Order_ can match:
     * cancel order
     * cancel my order
@@ -612,15 +611,14 @@ For example, _(Cancel Booking)_ matches _Cancel my flight booking_ but doesn’t
     * will not match _Get current weather_
     * will match _Get 3-day weather forecast_
 
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>!word</code> means not after this point. So (<i>!forecast the weather</i>) and (get the weather !forecast) are different. The utterance Get the forecast for the weather matches the second but not the first.</p></div>
 
-!!!note
-
-!word means not after this point. So (!forecast the weather) and (get the weather !forecast) are different. The utterance Get the forecast for the weather matches the second but not the first.
-
-* User utterance: _Planning a trip to California get me the forecast_
+* User utterance: _Planning a trip to California get me the forecast_.
 * **Optional: {X}**: For example, {phone} If the user utterance is _Get me a phone number_ or _get me a number_ the Platform will treat it equally.
 * **Enforce Phrase:** X_Y: To enforce occurrence of the phrase as is in the user utterance, without any words in between. For example, check_in. The utterance _check in_ or _I want to check in_ will match but not _Can you check me in for my flight?_ 
-* **Concepts: ~**: The Platform has a large set of inbuilt concepts that developers can use to define a pattern. For example, (I [like love] ~world_country) will match
+* **Concepts: ~**: The Platform has a large set of inbuilt concepts that developers can use to define a pattern. For example, (I [like love] ~world_country) will match.
     * I like India
     * I love traveling to Australia
     * I would like to visit an African country
@@ -641,11 +639,7 @@ Negative Patterns can be used to eliminate intents detected in the presence of a
 
 Add a **Negative Pattern** (_network failure) (error) (technical issue)_ for the intent _Book a Flight_.
 
-**User Utterance**: “_I was booking a flight when I got network failure error”_
-
-_or “I was booking a flight when I faced a technical issue”_
-
-_or “I got an error while booking a flight.”_
+**User Utterance**: “_I was booking a flight when I got network failure error”_, or “I was booking a flight when I faced a technical issue”_, or “I got an error while booking a flight.”_
 
 **Intent Rejected**: _Book a Flight_
 
@@ -705,9 +699,7 @@ This can be used as a combination of patterns for the likely location in the use
 
 **Pattern for DepartureCity entity**: “_from * to” and “to from *2”_
 
-**User Utterance**: "_Book flight to London from Paris_."
-
-or _Book flight from Paris to London._
+**User Utterance**: "_Book flight to London from Paris_." or _Book flight from Paris to London._
 
 **Entity Extracted**: _ArrivalCity_ = _London_ and _DepartureCity_= Paris
 
@@ -721,9 +713,7 @@ This can be for patterns using a group of words or concepts of which at least on
 
 **Pattern for _DepartureCity_ entity**: “[ from ] * to” and “to [ from ] *”
 
-**User Utterance**: _Book flight to London from Paris_
-
-or _Book flight from London to Paris._
+**User Utterance**: _Book flight to London from Paris_ or _Book flight from London to Paris._
 
 **Entity Extracted**: ArrivalCity = _London_, DepartureCity = _Paris_
 
@@ -739,9 +729,7 @@ This can be for using concepts. You can create your own custom concepts and use 
 
 Custom Concept: _~in_ – _(from)_
 
-**User Utterance**: _Book flight landing in London and taking off from Paris ._
-
-or _Book flight with takeoff from Paris and landing in London_
+**User Utterance**: _Book flight landing in London and taking off from Paris._ or _Book flight with takeoff from Paris and landing in London_
 
 **Entity Extracted**: ArrivalCity = _London_, DepartureCity = _Paris_
 
@@ -753,7 +741,7 @@ Useful in entity patterns and custom entities
 
 Words that are used in the intent identification are dynamically marked with the _~intent_ concept. This can then be used as an anchor or reference point for some entity patterns.
 
-**Sample Pattern**: _“~intent~trip~plural“_
+**Sample Pattern**: “<i>~intent~trip~plural</i>“
 
 **User Utterance not resulting in entity extraction**: _show my trips._
 

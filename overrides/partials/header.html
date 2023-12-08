@@ -47,6 +47,13 @@
   .md-cstm-sele .nav-item span{
     transform: rotate(90deg);
   }
+  .md-select__list__cstm{
+    width: 160px;
+    padding: 8px;
+  }
+  .md-select__list__cstm .md-select__link{
+    font-size: 13px;
+  }
 </style>
 <!-- Header -->
 <header class="{{ class }}" data-md-component="header">
@@ -116,11 +123,21 @@
           <span class="md-nav__icon md-icon"></span>
       </a>
         <div class="md-select__inner">
-          <ul class="md-select__list">
+          <ul class="md-select__list md-select__list__cstm">
             
               <li class="md-select__item">
-                <a href="" class="md-select__link">
-                  text
+                <a href="https://community.kore.ai/" target="_blank" class="md-select__link">
+                  Community
+                </a>
+              </li>
+              <li class="md-select__item">
+                <a href="https://academy.kore.ai/" target="_blank" class="md-select__link">
+                  Academy
+                </a>
+              </li>
+              <li class="md-select__item">
+                <a href="https://support.kore.ai/" target="_blank" class="md-select__link">
+                  Customer Support
                 </a>
               </li>
           </ul>
