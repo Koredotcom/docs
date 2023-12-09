@@ -16,9 +16,9 @@ This information can be provided in several ways. For the purpose of this articl
 
 * A pre-built Virtual Assistant. We will use the <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/create-a-travel-virtual-assistant/" target="_blank">Travel Planning VA</a> for this example.
 
-* Following is the Script file with two functions using the message templates to display the data. (Refer here for more on <a href="https://developer.kore.ai/docs/bots/sdks/message-templates/" target="_blank">message templates</a>): 
+* The Script file has the following functions that use the message templates to display the data. (Refer <a href="https://developer.kore.ai/docs/bots/sdks/message-templates/" target="_blank">here</a> for more information on message templates): 
  
-    * **tableTemplate** – </em>takes a two-dimensional array and displays the content in a tabular format
+    * **tableTemplate** – </em>takes a two-dimensional array and displays the content in a tabular format.
  
     * **pieTemplate** – </em>takes a two-dimensional array and displays the content in a pie format.
     
@@ -83,7 +83,7 @@ To begin using Bot Functions, you first need to import a script into your assist
 
 1. Open the **Dialog Tasks** page and create a New Dialog Task called “*Get Travel Spend*”.
 2. Add entities to capture the **Flight Number** and **Fare**.
-3. Ideally, there would be a service call to fetch the =details. Here we will use static values for demonstration purposes.
+3. Ideally, there would be a service call to fetch the details. Here we will use static values for demonstration purposes.
 4. Add a **Script** node using the **Bot Action** and enter the following – we are declaring an array carrying the spent amount on Airlines, Hotels and Experiences.
 
     `context.travelspend = [["Airlines",1264],["Hotels",568],["Experiences", 324];`
@@ -108,7 +108,7 @@ The bot function can also be used to create a Widget using Digital Views, as fol
 
 1. Go to **Build > Digital Skills > Digital Views**.
 2. Click **Create Widget**.
-3. **Name your Widget**as _Travel Spend_.
+3. Name your Widget as _Travel Spend_.
 4. Select _Pie Chart_ as the **Template Hint**.
 5. You can link the Widget to the Dialog Task you just created. For this example, we will choose _JSON_ as the **Source** to populate the data for this widget.
 6. Add the following script:
