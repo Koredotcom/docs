@@ -14,7 +14,7 @@ This information can be provided in several ways. For the purpose of this articl
 
 * To go through these configurations, you need to know at least the basics of <a href="https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/" target="_blank">building a Virtual Assistant</a>. 
 
-* A pre-built Virtual Assistant. We will use the <a href="https://developer.kore.ai/docs/bots/how-tos/travel-planing-assistant/create-a-travel-virtual-assistant/" target="_blank">Travel Planning VA</a> for this example.
+* A pre-built Virtual Assistant. We will use the <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/create-a-travel-virtual-assistant/" target="_blank">Travel Planning VA</a> for this example.
 
 * Following is the Script file with two functions using the message templates to display the data. (Refer here for more on <a href="https://developer.kore.ai/docs/bots/sdks/message-templates/" target="_blank">message templates</a>): 
  
