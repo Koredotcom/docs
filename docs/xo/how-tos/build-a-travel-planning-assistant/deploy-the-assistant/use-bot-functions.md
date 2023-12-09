@@ -1,4 +1,4 @@
-# Travel VA: Using Bot Functions
+# Travel VA: Use Bot Functions
 
 In this document we explore Bot Functions for a travel VA that can help reuse the same functionality in several places. We will see how a travel spend report can be programmed as a function and used, for example, to send to users upon request in different circumstances, to integrate with apps or create digital views. 
 
