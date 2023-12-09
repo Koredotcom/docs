@@ -1,8 +1,8 @@
 # The Machine Learning Engine
 
-Developers need to provide sample utterances for each intent (task) the assistant needs to identify, to train the machine learning model. The Kore.ai XO Platform Machine Learning (ML) engine will build a model that will try to map a user utterance to one of the VA’s intents.
+Developers need to provide sample utterances for each intent (task) the assistant needs to identify, to train the machine learning model. The XO Platform Machine Learning (ML) engine will build a model that will try to map a user utterance to one of the VA’s intents.
 
-The XO Platform allows fully unsupervised machine learning to constantly expand the language capabilities of your assistant – without human intervention. Unlike unsupervised models in which AI assistants learn from any input – good or bad – the Kore.ai XO Platform enables assistants to automatically increase their vocabulary only when the VA successfully recognizes the intent and extracts the entities of a human’s request to complete a task.
+The XO Platform allows fully unsupervised machine learning to constantly expand the language capabilities of your assistant – without human intervention. Unlike unsupervised models in which AI assistants learn from any input – good or bad – the XO Platform enables assistants to automatically increase their vocabulary only when the VA successfully recognizes the intent and extracts the entities of a human’s request to complete a task.
 
 However, we recommend keeping Supervised learning enabled to monitor the VA performance and manually tune where required. Using the XO Platform, developers can evaluate all interaction logs, easily change NL settings for failed scenarios, and use the learnings to retrain the VA for better conversations.
 
@@ -247,7 +247,7 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
 <p>Before using this feature, enable the <a href="https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/#Integration_Setup">OpenAI Integration</a>.</p>
 </div>
 
-The Kore.ai XO platform allows developers to create a Natural Language Understanding (NLU) model through **OpenAI integration** integration for use in a virtual assistant. The **Zero-Shot Learning (ZSL) Model** allows developers to quickly create the model without needing training data. Instead, it relies on a pre-trained language model and a logic learning machine (LLM) to identify the intention of a user through the utterance based on semantic similarity. This feature uses the intent name to map or identify the intent name’s similarity with the user input to predict the utterances accurately. Thus, the intents have to be defined very well. This approach is well-suited for virtual assistants with relatively fewer intents and distinct use cases.
+The XO platform allows developers to create a Natural Language Understanding (NLU) model through **OpenAI integration** integration for use in a virtual assistant. The **Zero-Shot Learning (ZSL) Model** allows developers to quickly create the model without needing training data. Instead, it relies on a pre-trained language model and a logic learning machine (LLM) to identify the intention of a user through the utterance based on semantic similarity. This feature uses the intent name to map or identify the intent name’s similarity with the user input to predict the utterances accurately. Thus, the intents have to be defined very well. This approach is well-suited for virtual assistants with relatively fewer intents and distinct use cases.
 
 **Benefits**
 
@@ -516,7 +516,7 @@ This setting is not valid when _Network Type_ is set to _Transformer_.
 
 ### Support for Non-CS Languages
 
-The Kore.ai XO Platform now supports the following **150 Polish stop words** for ML Engine Training, in addition to the current stop words:
+The XO Platform now supports the following **150 Polish stop words** for ML Engine Training, in addition to the current stop words:
 
 Alphabet Polish Words
 

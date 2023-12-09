@@ -4,7 +4,7 @@ The XO Platform allows you to declare and use variables within the assistants yo
 
 In this Use Case we will explore a scenario in a Travel Planning Assistant, where Variables can be used. We will see how Global Variables can be used to pass API endpoints and change them easily when migrating from development to testing to production environments.
 
-For details on what Variables are and how they are implemented in the Kore.ai XO Platform, click <a href="https://developer.kore.ai/docs/bots/bot-settings/bot-management/using-bot-variables/" target="_blank">here</a>. 
+For details on what Variables are and how they are implemented in the XO Platform, click <a href="https://developer.kore.ai/docs/bots/bot-settings/bot-management/using-bot-variables/" target="_blank">here</a>. 
 
 For a use case with Content Variables, click <a href="https://developer.kore.ai/docs/bots/how-tos/how-to-use-content-variables/" target="_blank">here</a>.
 

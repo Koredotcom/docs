@@ -24,7 +24,7 @@ The Kore.ai Knowledge Graph Generator is hosted on the Kore GitHub repository. T
     * Windows 10 users must install **Windows 10 SDK**. You can download it [here](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk/).
     * The operating system must be up to date for a seamless installation of requirements. Some libraries like SpiCy (internal dependency) need specific DLLs that are available in the latest updates.
 * A file containing the FAQs in _JSON_ or _CSV_ format. You can obtain this file in two ways:
-    * Export the Knowledge Graph from Kore.ai XO Platform, [see here for how](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/importing-the-bot-ontology-from-csv-or-json/#Exporting_Ontology).
+    * Export the Knowledge Graph from XO Platform, [see here for how](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/importing-the-bot-ontology-from-csv-or-json/#Exporting_Ontology).
     * Build the Knowledge Graph in a tabular form with questions in the first column and answers in the corresponding second column and save the file in _CSV_ format.
 
 ## Configuration

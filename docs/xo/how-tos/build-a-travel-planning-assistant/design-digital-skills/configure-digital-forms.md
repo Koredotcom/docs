@@ -2,7 +2,7 @@
 
 In this document, we will explore a scenario in a Travel Planning assistant, through which a user can book a flight. We will see how Digital Forms can be used to gather all the required information from the user, then make the booking based on that information.
 
-For details on what Digital Forms are and how they are implemented in the Kore.ai XO Platform, click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/digital-forms/" target="_blank">here</a>.
+For details on what Digital Forms are and how they are implemented in the XO Platform, click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/digital-forms/" target="_blank">here</a>.
 
 ## Problem Statement
 
@@ -39,7 +39,7 @@ Moving forward, we will be creating a form that gathers some of the necessary in
 
 #### Form Creation
 
-1. From the Kore.ai XO Platform, open the **Travel Planning** assistant.
+1. From the XO Platform, open the **Travel Planning** assistant.
 2. Select the **Build** tab from the top menu.
 3. From the left navigation menu, select **Digital Skills > Digital Forms**.
 4. Click **New Form** and enter the following:
@@ -150,7 +150,7 @@ We will be creating a dialog task and adding a form node to trigger the Digital 
 
 1. Click the **+** next to the intent node and select the **Digital Form** node.
 2. From the dropdown list select the _Booking Form_ we created earlier.
-3. You will be prompted to select the **Form Experience.** Kore.ai XO Platform allows you to gather user input both from the form and through conversation based on the channel.
+3. You will be prompted to select the **Form Experience.** The XO Platform allows you to gather user input both from the form and through conversation based on the channel.
 4. For this use case, let us select **Only Form UI** experience.
 5. A Form Node would be added, you can customize the form name, etc.
 6. We are changing the **Name** to _BookingForm_ and **Display Name** to _Booking Form_.

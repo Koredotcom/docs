@@ -1,6 +1,6 @@
 # Travel VA: Use Content Variables
 
-The Kore.ai XO Platform allows you to declare and use variables within the assistants you build. These variables can be used to capture values that are commonly used by different tasks, nodes, and other elements
+The XO Platform allows you to declare and use variables within the assistants you build. These variables can be used to capture values that are commonly used by different tasks, nodes, and other elements
 
 In this use case, we will explore a scenario in a Travel Planning Assistant, where variables can be used, and see how Content Variables can be used to pass language-specific messages.
 

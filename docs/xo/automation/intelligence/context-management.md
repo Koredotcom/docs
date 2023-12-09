@@ -25,7 +25,7 @@ For example, User utterance _what are the extra charges?_ should be responded wi
 * **Sharing Entity Values across Intents**: Entity values or conversation flows can be driven using the previous intent’s context information. 
 For example, The _City Name_ entity in _Check Weather_ intent can be pre-populated if the user has executed _Check Flight Status_ intent and has provided value for the _Destination City_ entity.
 
-This document talks about the concepts behind the implementation of context management in the Kore.ai XO Platform. For a detailed step-by-step example, [refer here](https://developer.kore.ai/docs/bots/how-tos/context-switching/).
+This document talks about the concepts behind the implementation of context management in the XO Platform. For a detailed step-by-step example, [refer here](https://developer.kore.ai/docs/bots/how-tos/context-switching/).
 
 <div class="admonition note">
 <p class="admonition-title">Example</p>
