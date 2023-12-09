@@ -48,18 +48,19 @@ _Now that the assistant is created and defined for the Web/Mobile Client channel
 <p class="admonition-title">Note</p>
 <p>By default, the Travel Sample Planning assistant is configured with <b>Target Audience</b> set to <i>Enterprise Users</i> on the <b>Build</b> tab in the <b>Configurations</b> -> <b>General Settings</b>. Optionally, you can define this assistant for <b>General Public</b> use. Once this assistant is published, the <b>Target Audience</b> cannot be changed.</p></div>
 
-1. On the **Deploy** tab, click **Publish**.
-2. On **Publish** page, select all tasks, and then click **Proceed**.
-3. Enter a comment and **Confirm** publish.
+<ol start="9"><li> On the <b>Deploy</b> tab, click <b>Publish</b>.</li>
+<li>On <b>Publish</b> page, select all tasks, and then click <b>Proceed</b>.</li>
+<li>Enter a comment and <b>Confirm</b> publish.
 
-_After an enterprise developer publishes a assistant, it must be approved and assigned to the users for use._
+<i>After an enterprise developer publishes a assistant, it must be approved and assigned to the users for use.</i></li>
 
-1. Complete one of the following assistant deployments in the Bots Admin Console depending if your bot **Target Audience** is set to **Enterprise Users** or **General Public**. Complete one of the following:
-    * In the Bots Admin Console, in the **Bots Management** module, on the **Enterprise Bots** page, click the **Ellipses**  icon for the _Travel Planning Sample Virtual Assistant_ that you want to deploy, and then click **Manage bot tasks**. The **Manage Bot Tasks** dialog is displayed.
-    * In the **Bot tasks** field, click the **Expand** the **>** icon to display the available and deployed tasks, select all tasks for this bot, and then click **Confirm**.
-    * In the **Manage bots tasks** dialog, click **Confirm**. The _Bot status changed successfully_ message is displayed.
-    * On the **Enterprise Bots** page, click the **Ellipses** icon for the _Travel Planning Sample Virtual Assistant_ that you want to assign the users to, and then click **Bot & task assignments**.
-    * The **Bot & task assignments** dialog is displayed. Assign the assistant to your users, for all tasks, including yourself.
+<li>Complete one of the following assistant deployments in the Bots Admin Console depending if your bot <b>Target Audience</b> is set to <b>Enterprise Users</b> or <b>General Public</b>. Complete one of the following:</li></ol>
+
+* In the Bots Admin Console, in the **Bots Management** module, on the **Enterprise Bots** page, click the **Ellipses**  icon for the _Travel Planning Sample Virtual Assistant_ that you want to deploy, and then click **Manage bot tasks**. The **Manage Bot Tasks** dialog is displayed.
+* In the **Bot tasks** field, click the **Expand** the **>** icon to display the available and deployed tasks, select all tasks for this bot, and then click **Confirm**.
+* In the **Manage bots tasks** dialog, click **Confirm**. The _Bot status changed successfully_ message is displayed.
+* On the **Enterprise Bots** page, click the **Ellipses** icon for the _Travel Planning Sample Virtual Assistant_ that you want to assign the users to, and then click **Bot & task assignments**.
+* The **Bot & task assignments** dialog is displayed. Assign the assistant to your users, for all tasks, including yourself.
 
 _Now it is time to download, uncompress, install and configure the software packages required for the Web SDK and a test application to run the assistant locally on your local host server._
 
@@ -87,8 +88,7 @@ _Now it is time to download, uncompress, install and configure the software pack
 
 * Open the `kore-config.js` and update the _botOptions_ parameters botInfo, clientId and clientSecret, and your email id as userIdentity.
 
-```js
-“clientSecret”: “{client secret}”
+<p><code>“clientSecret”: “{client secret}”
 $.ajax({
    url: “http://localhost:3000/api/users/getJWT”,
      //this is sample url of a localhost. 
@@ -100,11 +100,11 @@ $.ajax({
    _botOptions.botInfo= {name:"{bot name}","id":"{bot id"};
      // Kore bot name is case sensitive
  })
- ```
+</code></p>
 
-The JWTUrl refers to the location where your app (where you want the Kore.ai assistant to be integrated) is hosted. For this tutorial, we are using the JWT server (as setup in step 19) and hence using the same here.
+<p>The JWTUrl refers to the location where your app (where you want the Kore.ai assistant to be integrated) is hosted. For this tutorial, we are using the JWT server (as setup in step 19) and hence using the same here.</p>
 
-Ensure that in `kore-config.js` you set the audience for your assistant. Choose one of the following:
+<p>Ensure that in <code>kore-config.js</code> you set the audience for your assistant. Choose one of the following:</p>
 
 * <code>"isAnonymous": < <em>false</em> >;</code> if the assistant is deployed for the <strong>enterprise users</strong>, and then set <code>botOptions.userIdentity = '<strong>&lt;</strong> <strong><em>Your email ID</em> ></strong>';</code> <strong>
 – or –</strong>
