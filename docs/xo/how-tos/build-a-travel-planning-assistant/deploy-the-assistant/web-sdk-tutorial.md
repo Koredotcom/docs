@@ -62,7 +62,7 @@ _Now that the assistant is created and defined for the Web/Mobile Client channel
 * On the **Enterprise Bots** page, click the **Ellipses** icon for the _Travel Planning Sample Virtual Assistant_ that you want to assign the users to, and then click **Bot & task assignments**.
 * The **Bot & task assignments** dialog is displayed. Assign the assistant to your users, for all tasks, including yourself.
 
-_Now it is time to download, uncompress, install and configure the software packages required for the Web SDK and a test application to run the assistant locally on your local host server._
+Now it is time to download, uncompress, install and configure the software packages required for the Web SDK and a test application to run the assistant locally on your local host server with the steps below:
 
 1. To download and install _node.js_ on your computer, go to <a href="https://nodejs.org/en/download/" target="_blank">Node JS Download</a> link, and select your OS as `.pkg` for Mac, and `.msi` for Windows.
 2. In a **Terminal** window, run the `node -v` command to verify installation and version, for example, `v6.10.2`.
