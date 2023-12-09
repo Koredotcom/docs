@@ -88,19 +88,20 @@ _Now it is time to download, uncompress, install and configure the software pack
 
 * Open the `kore-config.js` and update the _botOptions_ parameters botInfo, clientId and clientSecret, and your email id as userIdentity.
 
-<p><code>“clientSecret”: “{client secret}”
+```js
+“clientSecret”: “{client secret}”
 $.ajax({
-   url: “http://localhost:3000/api/users/getJWT”,
-     //this is sample url of a localhost. 
-     //This should include the url where you are hosting the bot.
-   botOptions.userIdentity = ‘ ‘;
-     // Provide users email id here
-   botOptions.clientId= "{client id} ";
-     // secure client-id
-   _botOptions.botInfo= {name:"{bot name}","id":"{bot id"};
-     // Kore bot name is case sensitive
- })
-</code></p>
+url: “http://localhost:3000/api/users/getJWT”,
+//this is sample url of a localhost. 
+//This should include the url where you are hosting the bot.
+botOptions.userIdentity = ‘ ‘;
+// Provide users email id here
+botOptions.clientId= "{client id} ";
+// secure client-id
+botOptions.botInfo= {name:"{bot name}","id":"{bot id"};
+// Kore bot name is case sensitive
+})
+```
 
 <p>The JWTUrl refers to the location where your app (where you want the Kore.ai assistant to be integrated) is hosted. For this tutorial, we are using the JWT server (as setup in step 19) and hence using the same here.</p>
 
@@ -245,7 +246,7 @@ Some commonly encountered errors are:
 
 * _A wrong URL_ is given in index.html, users see a 404 error. Double check the URL. URL changes depending on whether you are hosting the assistant on your own web SDK or on Kore’s web SDK. If its Kore web SDK, then the URL is `http://demo.kore.net:3000/users/sts 7`. If you are hosting on your in-house web SDK, then provide the respective URL.
 * _missing/Invalid jwt.sub():_ This error occurs for enterprise assistants, when the user’s email id is not given in the index.html file. Provide users identity as shown below in index.html `botOptions.userIdentity = 'x@gmail.com';// Provide users email id here.`
-* _Not found: _User sees this error when either wrong clientID or no clientID is given. Check the correct ClientID from Bot – API Extensions option `botOptions.clientId = "{clientID}"; // secure client-id`.
-* _error verifying the jwt: the _Wrong clientSecret is given in index.html: Check the correct clientSecret you get from Bot – API Extensions option `"clientSecret": "{clientSecret}" //provide clientSecret here`.
+* _Not found_: User sees this error when either wrong clientID or no clientID is given. Check the correct ClientID from Bot – API Extensions option `botOptions.clientId = "{clientID}"; // secure client-id`.
+* _error verifying the jwt_: the _Wrong clientSecret_ is given in index.html: Check the correct clientSecret you get from Bot – API Extensions option `"clientSecret": "{clientSecret}" //provide clientSecret here`.
 
 After you install and test the Web SDK using the test application and your local host server, you can use the same concept to install and configure the Web SDK in your own enterprise application. You will just need to reconfigure the file paths and URLs in the index.html file of the Web SDK to point to your website and servers, and configure a Kore.ai assistant for the Web/Mobile Client channel with JWT credentials for your enterprise.
