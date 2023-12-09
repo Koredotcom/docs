@@ -26,7 +26,7 @@ This section provides detailed steps on how to run a Kore.ai Sample Virtual Assi
 2. Hover over **Travel Planning Sample**, and then click **Install**.
 3. The _Travel Planning Sample installed successfully_ message is displayed and the Sample Virtual Assistant is added to your **Bots** left-hand navigation menu.
 
-In this next section, you will define the Web/Mobile Client channel for the Travel Planning Sample Virtual Assistant by creating a new client app and defining channel settings. Click <a href="https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel/" target="_blank">here</a> for a detailed explanation of the steps.
+In this next section, you will define the Web/Mobile Client channel for the Travel Planning Sample Virtual Assistant by creating a new client app and defining channel settings. Click <a href="https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel/" target="_blank">here</a> for a detailed explanation of the steps given below:
 
 1. On the XO Platform top menu, select the **Build** tab.
 2. From the left menu, click **Integrations** > **BotKit**.
@@ -72,10 +72,9 @@ _Now it is time to download, uncompress, install and configure the software pack
     * clientSecret
     * clientId
     * Bot Name
-6. For ver7.2 of the platform, the Web SDK repo structure has undergone a major change. The steps would vary based on which repo you are using.
-    
-* Follow this step for the latest Web SDK file downloaded **after ver7.2** of the platform.
-* Open the `index.html` file from the `/SDKApp/sdk/UI` folder using a text editor. Update the following lines to add the path to the _UI_ folder:
+For ver7.2 of the platform, the Web SDK repo structure has undergone a major change. The steps would vary based on which repo you are using.
+6. Follow this step for the latest Web SDK file downloaded **after ver7.2** of the platform.
+7. Open the `index.html` file from the `/SDKApp/sdk/UI` folder using a text editor. Update the following lines to add the path to the _UI_ folder:
 
 ```js    
 <script src="libs/jquery.js" type="text/javascript"></script>
@@ -86,7 +85,7 @@ _Now it is time to download, uncompress, install and configure the software pack
 <link href="chatWindow.css" rel="stylesheet"></link>
 ```
 
-* Open the `kore-config.js` and update the _botOptions_ parameters botInfo, clientId and clientSecret, and your email id as userIdentity.
+<ol start="8"><li>Open the <code>kore-config.js</code> and update the <i>botOptions</i> parameters botInfo, clientId and clientSecret, and your email id as userIdentity.</li></ol>
 
 ```js
 “clientSecret”: “{client secret}”
@@ -145,16 +144,15 @@ _botOptions.botInfo= {name:"{bot name}","id":"{bot id"};
 <p class="admonition-title">Note</p>
 <p>The URL mentioned in the above code snippet, refers to the location where your app (where you want the Kore.ai Bot to be integrated) is hosted. For this tutorial, we are using the JWT server (as setup i step 18) and hence using the same here.</p></div>
 
-* Choose one of the following:
-    * <code>"isAnonymous": &lt; <strong><em>false</em> </strong>>;</code> if the assistant is deployed for the <strong>enterprise users</strong>, and then set <code>botOptions.userIdentity = '<strong>&lt;</strong> <strong><em>Your email ID</em> ></strong>';</code> <strong>– or –</strong>
-    * <code>"isAnonymous": &lt; <strong><em>true</em> </strong>>;</code> if the assistant is deployed for <strong>Consumer Use</strong>.
-7. Save your changes. <em>You are ready to start the JWT token generation service and access the test application with the configured Web SDK in your local web browser.</em>
-8. Go to home directory<code>cd SDKApp</code>.
-9. Install dependencies using the following command <code>npm install</code>.
+<ol start="9"><li>Choose one of the following:</li>
+<ul><li><code>"isAnonymous": &lt; <strong><em>false</em> </strong>>;</code> if the assistant is deployed for the <strong>enterprise users</strong>, and then set <code>botOptions.userIdentity = '<strong>&lt;</strong> <strong><em>Your email ID</em> ></strong>';</code></li> – or –
+<li><code>"isAnonymous": &lt; <strong><em>true</em> </strong>>;</code> if the assistant is deployed for <strong>Consumer Use</strong>.</li></ul>
+<li>Save your changes. <em>You are ready to start the JWT token generation service and access the test application with the configured Web SDK in your local web browser.</em></li>
+<li>Go to home directory<code>cd SDKApp</code>.</li>
+<li>Install dependencies using the following command <code>npm install</code>.</li>
 <img src="../images/web-sdk-json.png" alt="web sdk json" title="web sdk json" style="border: 1px solid gray; zoom:75%;"> 
-
-10. Start SDKApp <code>node startServer.js</code>.
-11. Access the application in any browser using <em>localhost:3000</em>.
+<li>Start SDKApp <code>node startServer.js</code>.</li>
+<li>Access the application in any browser using <em>localhost:3000</em>.</li></ol>
 
 ### Passing data via webSDK
 
