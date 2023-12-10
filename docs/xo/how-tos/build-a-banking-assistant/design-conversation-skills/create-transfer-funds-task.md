@@ -172,7 +172,7 @@ A Message Node is used to display a message from the Bot to the user. Here we wi
 <li>Change the <strong>Default</strong> connection from ‘<em>Not Connected</em>‘ to ‘<em>End of Dialog</em>‘.
 <li>Click <strong>Save</strong>.
 </li>
-<li>Close the Property Panel.</li></ol>
+<li>Close the <b>Property</b> Panel.</li></ol>
 
 ### Test
 
