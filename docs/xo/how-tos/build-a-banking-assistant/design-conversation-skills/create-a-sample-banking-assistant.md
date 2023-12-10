@@ -31,6 +31,7 @@ This document helps you to create a Standard Bot for banking activities. To crea
     * Set the **Default Bot Language** to _English._
     * Select the **Bot Type** as _Standard Bot_.
 4. Click **Create**.
+    
     <img src="../images/create-new-bot.png" alt="create new bot" title="create new bot" style="border: 1px solid gray; zoom:75%;">
 
 ## Get Balance Intent
@@ -77,6 +78,7 @@ Entity Node is typically used to gather information from the user. Here, it is u
     * **Display Name**: _Account Number_.
     * **Type**: _Number_.
     * **User Prompts:** Enter the following text and press **Enter** to save: `Enter the account number.
+    
     <img src="../images/set-user-prompts.png" alt="set user prompts" title="set user prompts" style="border: 1px solid gray; zoom:75%;"> 
 
 5. Close the _AccountNumber_ Entity Property window.
@@ -106,6 +108,7 @@ Service Node allows you to make a backend API call and is under Bot Action.
 Here, the service node is used to call an API to fetch the account balance for the user-entered account number. You can find a dummy API setup for this tutorial. A mock API is created specifically for this purpose with the following fields – FirstName, LastName, Address, City, Country, ZipCode, AccountNumber, AccountType, Balance.
 
 1. From the left pane, drag and drop the **Bot Action** node below the _Account Type_ entity node.
+
 <img src="../images/drop-below-action-type-entity-node.png" alt="drop below action type node" title="drop below action type node" style="border: 1px solid gray; zoom:75%;"> 
 
 2. The newly created **Bot Action** node would be expanded. If not, click the **+** icon to expand
@@ -139,6 +142,7 @@ or on the **Bot Action** node layout, click the **+** icon and select **Service*
 
 7. On the **Service** node Property window, click the **Connections** tab.
     * Under the **Connection Rules** section, ensure that the **Default** connection is set to **End of Bot Action**.
+
     <img src="../images/end-of-bot.png" alt="end of bot" title="end of bot" style="border: 1px solid gray; zoom:75%;"> 
 
 8. Close the Service Property window.
@@ -156,6 +160,7 @@ A Message node displays a message from the bot to the user. Here, the Message no
     * **Display Name**: _Balance Message_
     * **Bot Responses**: Define a standard message to send to the user.
         * Click **Manage**.
+        
         <img src="../images/manage-bot-response.png" alt="manage bot response" title="manage bot response" style="border: 1px solid gray; zoom:75%;"> 
 
         * On the **Manage User Prompts** page, you can find the user prompt.
@@ -198,8 +203,9 @@ To test the dialog task, you can use the **Talk to bot** option at the bottom-ri
     * Enter Account Number – 67846279
     * Select Account Type – Savings
 3. See the Account Balance.
+    
     <img src="../images/test-banking-bot.png" alt="test banking bot" title="test banking bot" style="border: 1px solid gray; zoom:75%;"> 
 
 ## Next Steps
 
-Now that you have added the _Get Balance_ dialog task to the Banking bot, the next step is to add the Update Balance task. For convenience, the steps for _Update Balance_ are split into different documents. <a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-update-balance/" target="_blank">Click here to continue</a>.
+Now that you have added the _Get Balance_ dialog task to the Banking bot, the next step is to add the Update Balance task. For convenience, the steps for _Update Balance_ are split into different documents. Click <a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-update-balance/" target="_blank">here</a> to continue.
