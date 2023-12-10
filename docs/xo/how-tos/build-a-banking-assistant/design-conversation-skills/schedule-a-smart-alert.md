@@ -25,7 +25,7 @@ If you want to use this service, you need register to their **free alerts** as w
 
 Alert tasks can be used to deliver timely, relevant, and personalized information from enterprise systems to customers and employees by polling the relevant service in real-time or according to a user-defined schedule.
 
-### Steps to Set up an Alert Task
+#### Steps to Set up an Alert Task
 
 1. From **Build** > **Conversational Skills**, click **Alert Task** to create one.
 2. On the **Task Details** page, follow the steps below:
@@ -35,7 +35,7 @@ Alert tasks can be used to deliver timely, relevant, and personalized informatio
     * Click **Create & Proceed**.
     <img src="../images/create-alert-task.png" alt="create alert task" title="create alert task" style="border: 1px solid gray; zoom:75%;">
 
-3. You will be directed to the Alert Settings page
+3. You will be directed to the <b>Alert Settings</b> page. Follow the steps below to complete the setup.
     * Review and modify the **General Settings** if needed. For our use case, we do not need to modify any settings here.
     * Select the **API Request** tab
         * Ensure that the **Content Type** is set to _JSON_.
