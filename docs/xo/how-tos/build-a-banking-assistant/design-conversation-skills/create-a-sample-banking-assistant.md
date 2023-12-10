@@ -109,25 +109,27 @@ Here, the service node is used to call an API to fetch the account balance for t
 
 1. From the left pane, drag and drop the **Bot Action** node below the _Account Type_ entity node.
 
-<img src="../images/drop-below-action-type-entity-node.png" alt="drop below action type node" title="drop below action type node" style="border: 1px solid gray; zoom:75%;"> 
+    <img src="../images/drop-below-action-type-entity-node.png" alt="drop below action type node" title="drop below action type node" style="border: 1px solid gray; zoom:75%;"> 
 
-2. The newly created **Bot Action** node would be expanded. If not, click the **+** icon to expand
-3. From the left pane, drag and drop the **Service** node to the **Bot Action** node layout, 
-or on the **Bot Action** node layout, click the **+** icon and select **Service** from the list, and click **+ New Service**.
+<ol start="2"><li>The newly created <b>Bot Action</b> node would be expanded. If not, click the <b>+</b> icon to expand.</li>
+<li>From the left pane, drag and drop the <b>Service</b> node to the <b>Bot Action</b> node layout,
+or on the <b>Bot Action</b> node layout, click the <b>+</b> icon and select <b>Service</b> from the list, and click <b>+ New Service</b>.</li>
+
 <img src="../images/bot-action-new-service.png" alt="new service" title="new service" style="border: 1px solid gray; zoom:75%;"> 
 
-4. A _Service_ node is added to the _Bot Actions_ node layout.
-5. Click the Service node to open its **Property** window.
-6. Under the **General Settings** section, enter the following details:
-    * **Name**: GetAccountBalance
-    * **Display Name**: Get Account Balance
-    * **Description**: Enter a description to describe the service node.
-    <img src="../images/describe-service-node.png" alt="describe service node" title="describe service node" style="border: 1px solid gray; zoom:75%;">  
+<li> A <i>Service</i> node is added to the <i>Bot Actions</i> node layout.</li>
+<li>Click the Service node to open its <b>Property</b> window.</li>
+<li>Under the <b>General Settings</b> section, enter the following details:</li></ol>
 
-    * Click **DEFINE REQUEST**.
-        * On the **Define Request** page, enter the following details:
-            * **Request type** – _GET_
-            * **Request URL** – `https://5c3c633d29429300143fe4d2.mockapi.io/AccountDetails?filter={{context.entities.AccountNumber}}`
+* **Name**: GetAccountBalance
+* **Display Name**: Get Account Balance
+* **Description**: Enter a description to describe the service node.
+<img src="../images/describe-service-node.png" alt="describe service node" title="describe service node" style="border: 1px solid gray; zoom:75%;">  
+
+* Click **DEFINE REQUEST**.
+    * On the **Define Request** page, enter the following details:
+        * **Request type** – _GET_
+        * **Request URL** – `https://5c3c633d29429300143fe4d2.mockapi.io/AccountDetails?filter={{context.entities.AccountNumber}}`
 
         Due to the limitations of the dummy API service, instead of fetching the record for the given account number, the response is filtered for the required account number.
         
@@ -140,13 +142,14 @@ or on the **Bot Action** node layout, click the **+** icon and select **Service*
     <li>Click <b>Save</b> on the top-right of the page.</li>
       <img src="../images/save-sample-response.png" alt="save sample response" title="save sample response" style="border: 1px solid gray; zoom:75%;"></ul>
 
-7. On the **Service** node Property window, click the **Connections** tab.
-    * Under the **Connection Rules** section, ensure that the **Default** connection is set to **End of Bot Action**.
+<ol start="7"><li>On the <b>Service</b> node Property window, click the <b>Connections</b> tab.</li></ol>
+    
+<ul><li>Under the <b>Connection Rules</b> section, ensure that the <b>Default</b> connection is set to <b>End of Bot Action</b>.</li>
 
-    <img src="../images/end-of-bot.png" alt="end of bot" title="end of bot" style="border: 1px solid gray; zoom:75%;"> 
+<img src="../images/end-of-bot.png" alt="end of bot" title="end of bot" style="border: 1px solid gray; zoom:75%;"></ul>
 
-8. Close the Service Property window.
-9. Click the **–** icon next to the Bot Action node to collapse the bot action node.
+<ol start="8"><li>Close the Service Property window.</li>
+<li>Click the <b>–</b> icon next to the Bot Action node to collapse the bot action node.</li></ol>
 
 ### Message Node
 
