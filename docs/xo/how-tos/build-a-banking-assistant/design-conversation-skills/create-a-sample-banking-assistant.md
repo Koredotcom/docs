@@ -16,7 +16,7 @@ The bot we build will perform the basic banking transactions. This bot will:
 
 * Get account balance based on the user’s _Account Number_ and _Account Type_.
 * Update accounts with the balance. For more information, <a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-update-balance/" target="_blank">click here</a>.
-* Transfer a specified amount from the user account to a payee account. For more information, <a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-transfer-funds/" target="_blank">click here</a>.
+* Transfer a specified amount from the user account to a payee account. For more information, <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-transfer-funds-task/" target="_blank">click here</a>.
 
 Let us start building the bot and add _Get Balance_ task to it.
 

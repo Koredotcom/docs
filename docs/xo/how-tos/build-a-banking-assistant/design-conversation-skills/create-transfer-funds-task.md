@@ -20,7 +20,7 @@ This is document details steps in creating a sample banking bot. This bot is use
 The Bot we will be building will be performing the basic banking transactions like the following:
 
 <ul>
-<li>Get account balance based on the Account Number and Account Type entered by the user, as seen <a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/" target="_blank">here</a>.
+<li>Get account balance based on the Account Number and Account Type entered by the user, as seen <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">here</a>.
 
 <li>Update accounts with the balance, as seen <a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-update-balance/" target="_blank">here</a>.
 
@@ -50,7 +50,7 @@ Let us add the Transfer Funds task.
 
 We need to add an Intent Dialog as the first step in the Bot. Intent Dialog is the first step in the user-bot conversation flow.
 
-<ul>
+<ol>
 <li>Open the Banking Bot with the two pre-configured tasks – <a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/" target="_blank">Get Balance</a> and <a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-update-balance/" target="_blank">Update Balance</a>.
 
 <li>Ensure that the <strong>Build </strong>tab is selected from the top menu.
@@ -71,11 +71,8 @@ We need to add an Intent Dialog as the first step in the Bot. Intent Dialog is t
 <li>Click <strong>Proceed.</strong>
 
 <li>Property Panel for User Intent will be displayed. We will retain the default properties.
-
-<li>For instructions with the older Dialog Builder, click <a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-transfer-funds/ target="_blank">here</a>.
-
 <li>Close the User Intent Property Panel.</li>
-</ul>
+</ol>
 
 ### Step 2: Entity nodes
 
@@ -83,7 +80,7 @@ Entity Node is typically used to gather information from the user.
 
 Here we will be using it to capture the user input for the Payee and Payer Account Number and amount to be transferred.
 
-<ul>
+<ol>
 <li>Click the <strong>+</strong> below to the User Intent node.
 <li>Select the <strong>Entity</strong> option.
 <li>Click the <strong>+ New entity </strong>.
@@ -111,25 +108,18 @@ Here we will be using it to capture the user input for the Payee and Payer Accou
 <li><strong>User Prompts:</strong> Enter the following text<br><code>Enter the Account to which you want to transfer funds.</code>
 </li> 
 </ul>
-
 <li>Close the PayeeAccount Entity Property Panel.
-
 <li>Repeat the above steps to add another entity with the following details: 
 <ul>
- 
 <li><strong>Name</strong>: <em>AmountToTransfer</em>
- 
 <li><strong>Display Name</strong>: <em>Amount To Transfer </em>
- 
 <li><strong>Type</strong>: <em>Number</em>
- 
-<li><strong>User Prompts:</strong> Enter the following text and hit enter to save:<br><code>Enter the amount to transfer.</code>
+<li><strong>User Prompts:</strong> Enter the following text and hit enter to save: <code>Enter the amount to transfer.</code>
 </li> 
 </ul>
-
-<li>Close the Amount Entity Property Panel.
+<li>Close the <b>Amount Entity</b> Property Panel.
 </li>
-</ul>
+</ol>
 
 The next steps would update the balance in both the Payer and Payee accounts. Since we already have <a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-update-balance/" target="_blank">Update Balance</a> task, we will see how to run it from the current task.
 
@@ -137,7 +127,7 @@ The next steps would update the balance in both the Payer and Payee accounts. Si
 
 Predefined dialog tasks can be triggered from within another task with the steps below:
 
-<ul>
+<ol>
 <li>Click the <strong>+</strong> below to the Amount Entity node.
 <li>Select <strong>Dialog Task</strong>.
 <li>From the given task list, select the required task – <strong>UpdateBalance</strong>.
@@ -152,30 +142,23 @@ Predefined dialog tasks can be triggered from within another task with the steps
 
 <img src="../images/intent-update-balance.png" alt="update balance intent" title="update balance intent" style="border: 1px solid gray; zoom:75%;"></ul>
 
-<li>Close the UpdateBalance Dialog Properties panel.
-
+<li>Close the UpdateBalance Dialog Properties panel.</li>
 <li>Repeat the same steps to Update the Payee Account with the following values in the <strong>Entity Pre-Assignments</strong> section:
 <ul>
- 
 <li><strong>AccountType</strong>: <em>savings</em>
- 
 <li><strong>AccountNumber</strong>: <em>context.entities.PayeeAccount</em>
- 
-<li><strong>Amount</strong>: <em>context.entities.Amount</em>
- 
+<li><strong>Amount</strong>: <em>context.entities.Amount</em> 
 <li><strong>TransactionType</strong>: <em>Credit</em>
-</li> 
-</ul>
-
+</li></ul>
 <li>Close the UpdateBalance Dialog Properties panel.
 </li>
-</ul>
+</ol>
 
 ### Step 4: Message Node
 
 A Message Node is used to display a message from the Bot to the user. Here we will be using the Message node to show the balance.
 
-<ul>
+<ol>
 <li>Click the <strong>+</strong> below the UpdateBalance [2] Service node.</li>
 <li>Select <strong>Message</strong> and click the ‘+ <strong>New message</strong>'.</li>
 <li><strong>Property Panel</strong> for the Message Node is displayed. If not click on the newly added dialog node to open.</li>
@@ -185,15 +168,11 @@ A Message Node is used to display a message from the Bot to the user. Here we wi
     <li><strong>Display Name</strong>: <em>Final Message</em></li>  
     <li><strong>Bot Responses: <code>The amount {{context.entities.AmountToTransfer}} has been transferred from {{context.entities.PayerAccount}} to {{context.entities.PayeeAccount}}</code></strong></li>
     </ul>  
-</ul>
-<ul>
 <li>On the Bot Response Property Panel, open the connections tab by clicking the ‘<strong>Connections</strong>‘ icon. 
 <li>Change the <strong>Default</strong> connection from ‘<em>Not Connected</em>‘ to ‘<em>End of Dialog</em>‘.
- 
 <li>Click <strong>Save</strong>.
-</li> 
-
-<li>Close the Property Panel.</li></ul>
+</li>
+<li>Close the Property Panel.</li></ol>
 
 ### Test
 
@@ -202,8 +181,7 @@ To test the Dialog task, you can use the ‘Talk to bot’ at the bottom right c
 Follow the Bot instructions and enter the following values;
 
 <ul>
-<li>Enter Payer Account – 02929664;</li>
-<li>Enter Payee Account – 44994354;</li>
-<li>Enter Transfer Amount – 200</li>
-<li>See the success message.</li>
+<li>Payer Account – 02929664;</li>
+<li>Payee Account – 44994354;</li>
+<li>Transfer Amount – 200</li>
 </ul>
