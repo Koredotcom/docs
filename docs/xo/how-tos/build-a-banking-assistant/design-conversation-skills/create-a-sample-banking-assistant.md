@@ -78,7 +78,6 @@ Entity Node is typically used to gather information from the user. Here, it is u
     * **Display Name**: _Account Number_.
     * **Type**: _Number_.
     * **User Prompts:** Enter the following text and press **Enter** to save: `Enter the account number.
-    
     <img src="../images/set-user-prompts.png" alt="set user prompts" title="set user prompts" style="border: 1px solid gray; zoom:75%;"> 
 
 5. Close the _AccountNumber_ Entity Property window.
@@ -159,12 +158,12 @@ A Message node displays a message from the bot to the user. Here, the Message no
 2. Select **Message** from the list and click **+ New Message**.
 3. Click the Message node to open its **Property** window.
 4. Enter the following details:
-    * **Name**: _BalanceMessage_
-    * **Display Name**: _Balance Message_
+    * **Name**: _BalanceMessage_.
+    * **Display Name**: _Balance Message_.
     * **Bot Responses**: Define a standard message to send to the user.
         * Click **Manage**.
-        
-        <img src="../images/manage-bot-response.png" alt="manage bot response" title="manage bot response" style="border: 1px solid gray; zoom:75%;"> 
+          
+          <img src="../images/manage-bot-response.png" alt="manage bot response" title="manage bot response" style="border: 1px solid gray; zoom:75%;"> 
 
         * On the **Manage User Prompts** page, you can find the user prompt.
         * Open the user prompt to define JavaScript to parse the message for all channels.

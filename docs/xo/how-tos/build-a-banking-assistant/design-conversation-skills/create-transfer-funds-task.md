@@ -5,19 +5,19 @@ This is document details steps in creating a sample banking bot. This bot is use
 ## Prerequisites
 
 <ul>
-<li>You must have <a href="https://developer.kore.ai/docs/bots/getting-started/how-to-open-bot-builder/" target="_blank">signed up</a> with the Kore.ai Bots Platform
+<li>You must have <a href="https://developer.kore.ai/docs/bots/getting-started/how-to-open-bot-builder/" target="_blank">signed up</a> with the Kore.ai Bots Platform.
 
-<li>You must be aware of the basics of Bot building (refer to <a href="https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/" target="_blank">this link</a>)
+<li>You must be aware of the basics of Bot building (refer to <a href="https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/" target="_blank">this link</a>).
 
-<li>You must have created a simple bot. Click (<a href="https://developer.kore.ai/docs/bots/chatbot-overview/creating-a-simple-bot/" target="_blank">here</a> for an example)
+<li>You must have created a simple bot. Click (<a href="https://developer.kore.ai/docs/bots/chatbot-overview/creating-a-simple-bot/" target="_blank">here</a> for an example).
 
-<li>You must have created a Banking Bot. Click (<a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/" target="_blank">here</a> for example)
+<li>You must have created a Banking Bot. Click (<a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/" target="_blank">here</a> for an example).
 </li>
 </ul>
 
 ## Bot Overview
 
-The Bot we will be building will be performing the basic banking transactions.<br>This Bot will:
+The Bot we will be building will be performing the basic banking transactions like the following:
 
 <ul>
 <li>Get account balance based on the Account Number and Account Type entered by the user, as seen <a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/" target="_blank">here</a>.
@@ -43,7 +43,7 @@ Let us add the Transfer Funds task.
 
 <li>The message indicating success or failure is displayed.</li>
 
-<img src="..s/images/success-failure-message.png" alt="success failure message" title="success failure message" style="border: 1px solid gray; zoom:75%;"> 
+<img src="../images/success-failure-message.png" alt="success failure message" title="success failure message" style="border: 1px solid gray; zoom:75%;"> 
 </ul>
 
 ### Step 1: Dialog Task
@@ -145,16 +145,12 @@ Predefined dialog tasks can be triggered from within another task with the steps
 <li>Navigate to the <strong>Instance Properties</strong> tab and enter the following details:
 <li><strong>Entity Pre-Assignments</strong> section – these are the entity values required by the Dialog Task if they are not populated here the user will be prompted to enter the same. Since we have already collected the information through the entities defined in the previous step we will be passing those user-entered values to the UpdateBalance task 
 <ul>
- 
-<li><strong>AccountType</strong>: <em>savings</em></li>
- 
-<li><strong>AccountNumber</strong>: <em>context.entities.PayerAccount</em></li>
- 
-<li><strong>Amount</strong>: <em>context.entities.Amount</em></li>
- 
-<li><strong>TransactionType</strong>: <em>Debit</em> (payer account needs to be deducted of the transferred amount)</li>
+<li><strong>AccountType</strong>: <em>savings</em>.</li>
+<li><strong>AccountNumber</strong>: <em>context.entities.PayerAccount</em>.</li>
+<li><strong>Amount</strong>: <em>context.entities.Amount</em>.</li>
+<li><strong>TransactionType</strong>: <em>Debit</em> (payer account needs to be deducted of the transferred amount).</li>
 
-<img src="..s/images/intent-update-balance.png" alt="update balance intent" title="update balance intent" style="border: 1px solid gray; zoom:75%;"></ul>
+<img src="../images/intent-update-balance.png" alt="update balance intent" title="update balance intent" style="border: 1px solid gray; zoom:75%;"></ul>
 
 <li>Close the UpdateBalance Dialog Properties panel.
 
@@ -181,7 +177,7 @@ A Message Node is used to display a message from the Bot to the user. Here we wi
 
 <ul>
 <li>Click the <strong>+</strong> below the UpdateBalance [2] Service node.</li>
-<li>Select <strong>Message</strong> and click the ‘+ <strong>New message</strong>‘</li>
+<li>Select <strong>Message</strong> and click the ‘+ <strong>New message</strong>'.</li>
 <li><strong>Property Panel</strong> for the Message Node is displayed. If not click on the newly added dialog node to open.</li>
 <li>Enter the following details:  
     <ul>
