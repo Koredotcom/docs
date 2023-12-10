@@ -27,7 +27,7 @@ Alert tasks can be used to deliver timely, relevant, and personalized informatio
 
 ### Steps to Set up an Alert Task
 
-1. From **Build** > **Conversational Skills** add an **Alert Task**.
+1. From **Build** > **Conversational Skills**, click **Alert Task** to create one.
 2. On the **Task Details** page, follow the steps below:
     * Enter a **Task Name**, say _Get Daily Weather_.
     * Choose the **Connection Type**, we go with _Webservice_.
@@ -47,11 +47,11 @@ Alert tasks can be used to deliver timely, relevant, and personalized informatio
         * Under **Request** click **Add API** to add the service API that needs to be invoked. We are using a _GET_ method from the following API: `http://api.openweathermap.org/data/2.5/weather?q={cityname}&APPID=&lt;your-app-id>`.
             * The **APPID** in the above url is assigned to you by OpenWeather when you sign up. You can find it from the <a href="https://home.openweathermap.org/api_keys" target="_blank">API keys</a> section after you login to your account.
             * Notice that the **Parameters** list is populated automatically with the parameters entered earlier.
-            * **Save** the API.
+        * **Save** the API.
 
             <img src="../images/add-api.png" alt="add api" title="add api" style="border: 1px solid gray; zoom:75%;">
 
-            * **Test** the API to ensure that the configuration is proper. Enter a sample city name, when prompted and ensure you get a success message and a proper Response.
+        * **Test** the API to ensure that the configuration is proper. Enter a sample city name, when prompted and ensure you get a success message and a proper Response.
         * **Save** the response.
 
 Next we need to format the **Bot Response.** For our use case, we will be parsing the weather description, temperature and humidity details returned by the API call to be presented to the user. 

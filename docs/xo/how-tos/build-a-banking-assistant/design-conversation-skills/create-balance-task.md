@@ -15,7 +15,7 @@ This is document details steps in creating a sample banking bot. This bot is use
 The Bot we will be building will be performing the basic banking transactions. This Bot will do the following:
 
 <ul>
-<li>Get account balance based on the Account Number and Account Type entered by the user, as <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">seen here</a>.</li>
+<li>Get account balance based on the Account Number and Account Type entered by the user, as seen <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">here</a>.</li>
 <li>Update accounts with the balance, on this page.</li>
 <li>Transfer a specified amount from the payer account to a payee account, as given<a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-transfer-funds-task/" target="_blank"> here</a>.</li>
 </ul>
@@ -69,8 +69,8 @@ Entity Node is typically used to gather information from the user. Here we will 
 <li>Select the <strong>Account Type</strong> entity already created while configuring the Get Balance task.</li>
 <li>Close the <b>AccountType Entity</b> Property Panel.</li> 
 </ul>
-<li>Click the <strong>+</strong> below the Account Type node.</li>
-<li>Select the <strong>Entity</strong> option<strong> and follow the steps below:</strong> 
+<li>Click the <strong>+</strong> below the <b>Account Type</b> node.</li>
+<li>Select the <strong>Entity</strong> option and follow the steps below:
 <ul>
 <li>Click the <strong>+ New entity</strong>.</li>
 <li><strong>Property Panel</strong> for the Entity Node is displayed, if not click on the newly created entity to open.</li>
@@ -79,9 +79,8 @@ Entity Node is typically used to gather information from the user. Here we will 
 <ul>
   <li><strong>Name</strong>: <em>TransactionType</em>.</li>   
 <li><strong>Display Name</strong>: <em>Transaction Type </em>.</li>   
-<li><strong>Type</strong>: Select ‘<em>List of Items (enumerated)</em>‘ from the drop-down. We need to provide the list of values that the user can select.</li>
-<ul>
-<li>Click the <strong>Settings (gear) icon</strong> that appears next to the field.</li>
+<li><strong>Type</strong>: Select ‘<em>List of Items (enumerated)</em>‘ from the drop-down. We need to provide the list of values that the user can select.</li></ul>
+<li>Click the <strong>Settings</strong> icon that appears next to the field.</li>
 <li>Opt for <strong>Static List</strong>.</li>
 <li>Enter the following options under separate rows as the <strong>Display name </strong>– <em>Credit</em> and <em>Debit</em>.
 
@@ -91,7 +90,7 @@ Entity Node is typically used to gather information from the user. Here we will 
     
 <li>Click <strong>Save</strong>.</li></ul></ul>   
 
-<li>Navigate back to Entity Property Panel and enter the following values:</li>
+<li>Navigate back to <b>Entity Property</b> Panel and enter the following values:</li>
 <ul><li><strong>User Prompts:</strong> Enter the following text and hit enter to save:<br><code>Select the transaction type.</code></li>
 <li><strong>Display List Of Values</strong>: Mark as ‘<em>Yes, use channel specific standard formatting for default messages and show the available list of values to end user</em>‘. This will present the list of values in a button template for the supported channels.
 </li>
@@ -125,7 +124,7 @@ Entity Node is typically used to gather information from the user. Here we will 
 </li> 
 </ol>
 
-### Step 3: Bot Action – Service Node – Get Balance
+### Step 3: Bot Action – Service Node (Get Balance)
 
 Service Node allows you to make a backend API call. It is included in the Bot Actions.<br>Here the service node is used to call an API to get the account balance for the user entered account number.
 
@@ -141,8 +140,7 @@ We will be using a dummy API setup for this tutorial. We will be using a mock AP
 <li>Select the existing <em>GetAccountBalance </em>service node, created in the <b>Get Balance</b> task.</li>
 </ol>
 
-### Step 4: Bot Action – Script Node
-
+### Step 4(a): Bot Action – Script Node
 
 Script Node allows you to incorporate programming logic into the bot and is part of Bot Action.<br>Here the script node is used to credit/debit the user entered amount to/from the account.
 
@@ -176,7 +174,7 @@ var balance, i;
 
 <img src="../images/script-property-panel.png" alt="script property panel" title="script property panel" style="border: 1px solid gray; zoom:75%;"></ol>
 
-### Step 4: Bot Action – Service Node – Update Balance
+### Step 4(b): Bot Action – Service Node (Update Balance)
 
 Here the service node is used to call an API to update the account balance for the user entered account number.<br>We will be using a dummy API setup for this tutorial.
 
@@ -197,8 +195,8 @@ Here the service node is used to call an API to update the account balance for t
 <li>In the <strong>Define Request Page,</strong> enter the following details:   
 <ul>
  <li><strong>Request type</strong> – <em>PUT</em>.</li>
-<li><strong>Request URL</strong>: <code>https://5c3c633d29429300143fe4d2.mockapi.io/AccountDetails/{{context.entities.AccountNumber}}</code>.</li>
-<li>This API does not require any Auth Parameters.</li>
+<li><strong>Request URL</strong>: <code>https://5c3c633d29429300143fe4d2.mockapi.io/AccountDetails/{{context.entities.AccountNumber}}</code>.
+This API does not require any Auth Parameters.</li></ul>
 <li>In the <strong>Body</strong> tab, select the type as <em>application/json</em>.</li>   
 <li>Select the <strong>Test Request</strong> tab.</li>   
 <li>Enter an account number and balance in the <strong>Sample Context Values</strong> section.</li>   
@@ -229,8 +227,8 @@ A Message Node is used to display a message from the Bot to the user.<br>Here we
 
 <ol>
 <li>Click the <strong>+</strong> below the ToUpdateBalance Bot Action.</li>
-<li>Select <strong>Message</strong> and click the <strong>+ New message </strong>.</li>
-<li><strong>Property Panel</strong> for the Message Node is displayed.</li>
+<li>Select <strong>Message</strong> and click the <strong>+ New message </strong>.
+Property Panel</strong> for the Message Node is displayed.</li>
 <li>Enter the following details:</li> 
 <ul>
 <li><strong>Name</strong>: <em>UpdateMessage</em>.</li>
@@ -238,13 +236,13 @@ A Message Node is used to display a message from the Bot to the user.<br>Here we
 <li><strong>Bot Responses:</strong> Enter <code>Your account balance has been updated</code> and hit enter to save.</li> 
 </ul>
 
-<li>On the Bot Response Property Panel, open the connections tab by clicking the ‘<strong>Connections</strong>‘ icon.</li>
+<li>On the Bot Response Property Panel, open the connections tab by clicking the ‘<strong>Connections</strong>‘ icon. Then, follow the steps below:</li>
 <ul>
 <li>Change the <strong>Default</strong> connection from ‘<em>Not Connected</em>‘ to ‘<em>End of Dialog</em>‘.</li>
 <li>Click <strong>Save</strong>.
 </li> 
 </ul>
-<li>Close the Property Panel.
+<li>Close the <b>Property</b> Panel.
 </li>
 </ol>
 
