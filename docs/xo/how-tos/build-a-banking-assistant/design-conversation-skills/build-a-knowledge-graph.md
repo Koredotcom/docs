@@ -36,8 +36,9 @@ To add a static FAQ, follow the steps below:
 
 ## Tags
 
-Issue: Try the utterance “_how do I apply for a credit card_?” 
+**Issue**: Try the utterance “_how do I apply for a credit card_?” 
 We will get did you mean dialog with reference to a question pertaining to Debit Card, which is not appropriate in this scenario. Ideally, we should see an _I don’t know_ response as you get for a totally unrelated query regarding weather.
+
 <img src="../images/kg-tutorial-bot.png" alt="kg tutorial bot" title="kg tutorial bot" style="border: 1px solid gray; zoom:75%;">
 
 **Solution**
@@ -172,6 +173,7 @@ To add synonyms, follow the steps below:
 3. **Save** and **Train** the Bot.
 4. **Talk to Bot** and use the same query “_How do I get a debit card?”_
 5. Try “_How do I get a checkbook”_ and you will see that the synonym works here also. This is because we added the synonym at path level and it is applicable to all nodes and questions under that path/node.
+
 <img src="../images/kg-tutorial-bot-synonyms.png" alt="kg tutorial bot synonyms" title="kg tutorial bot synonyms" style="border: 1px solid gray; zoom:75%;">
 
 6. Similarly, we can define **Knowledge Graph Synonym** if it is applicable to the entire knowledge graph.
@@ -203,6 +205,7 @@ Consider the query “_How do I check my account balance?_.” If the bot has a 
 To trigger a task, follow the steps below:
 
 1. Before proceeding, ensure that you have a task defined for _Check Balance_. Let us consider a dummy dialog that displays a message.
+
 <img src="../images/tasks-execution-dummy-dialog.png" alt="tasks execution dummy dialog" title="tasks execution dummy dialog" style="border: 1px solid gray; zoom:75%;">
 
 2. Add the **Add Intent** _How do I check my account balance?_
