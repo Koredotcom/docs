@@ -26,19 +26,19 @@ To add a static FAQ, follow the steps below:
 6. Click **Add Intent** to start entering your FAQs.
 7. Select **Intent** type as FAQ.
 8. **Add Question** and **Bot Response**; then click **Save**.
-<img src="../design-conversation-skills/images/add-question-and-bot-response.png" alt="add question and bot response" title="add question and bot response" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-question-and-bot-response.png" alt="add question and bot response" title="add question and bot response" style="border: 1px solid gray; zoom:75%;">
 
 9. Click **Add Intent** on the top-right to add more Q&As.
 10. After you enter all the Q&As, click **Train** to train the Knowledge Graph.
-<img src="../design-conversation-skills/images/click-training.png" alt="click training" title="click training" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/click-training.png" alt="click training" title="click training" style="border: 1px solid gray; zoom:75%;">
 
 11. Click **Talk to Bot** at the bottom-right to check the bot response for the added Q&As.
 
 ## Tags
 
-* Issue: Try the utterance “_how do I apply for a credit card_?” 
+Issue: Try the utterance “_how do I apply for a credit card_?” 
 We will get did you mean dialog with reference to a question pertaining to Debit Card, which is not appropriate in this scenario. Ideally, we should see an _I don’t know_ response as you get for a totally unrelated query regarding weather.
-<img src="../design-conversation-skills/images/kg-tutorial-bot.png" alt="kg tutorial bot" title="kg tutorial bot" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/kg-tutorial-bot.png" alt="kg tutorial bot" title="kg tutorial bot" style="border: 1px solid gray; zoom:75%;">
 
 **Solution**
 
@@ -47,16 +47,16 @@ To overcome the above situation, we can add **tags** to each question. Tags help
 ### Steps to Add Tags
 
 1. Hover over the Question to find the **Edit** icon. 
-<img src="../design-conversation-skills/images/edit-question-tag.png" alt="edit question tag" title="edit question tag" style="border: 1px solid gray; zoom:75%;"> 
+<img src="../images/edit-question-tag.png" alt="edit question tag" title="edit question tag" style="border: 1px solid gray; zoom:75%;"> 
 
 2. Click the **Edit** icon to add a tag to the question.
 3. In the **Add Tag** text box, you can find some suggestions by the platform based on the phrases present in the question. You can pick one from the list or type your own custom tag.
 4. For this use case, we can pick the _debit card_ tag as suggested by the platform and **Save** the changes.
-<img src="../design-conversation-skills/images/pick-debit-card.png" alt="pick debit card" title="pick debit card" style="border: 1px solid gray; zoom:75%;"> 
+<img src="../images/pick-debit-card.png" alt="pick debit card" title="pick debit card" style="border: 1px solid gray; zoom:75%;"> 
 
 5. Similarly, add a _checkbook_ for the _How to apply for checkbook_ question.
 6. **Train** the bot.
-<img src="../design-conversation-skills/images/train-bot-for-debit-card.png" alt="train bot for debit card" title="train bot for debit card" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/train-bot-for-debit-card.png" alt="train bot for debit card" title="train bot for debit card" style="border: 1px solid gray; zoom:75%;">
 
 7. **Talk to the Bot**, use the same utterance “_how do I apply for a credit card_?”
 
@@ -83,19 +83,19 @@ To create an ontology, follow the steps below:
 
 1. Hover over the Knowledge Graph name on the left pane and click **+** icon to **Add Child Node**.
 2. Add the Nodes as _Apply_ and _Joint Account_.
-<img src="../design-conversation-skills/images/add-child-node-banking.png" alt="add child node" title="add child node" style="border: 1px solid gray; zoom:75%;"> 
+<img src="../images/add-child-node-banking.png" alt="add child node" title="add child node" style="border: 1px solid gray; zoom:75%;"> 
 
 3. To add subgroups, hover over the node and use the corresponding **+** icon to add child nodes.
 4. Select the questions pertaining to Joint Account and drag and drop them to the **Joint Account** node.
 5. Repeat the process for questions related to **Apply**, **Debit Card**, and **Checkbook** nodes.
-<img src="../design-conversation-skills/images/repeat-steps-ontology.png" alt="repeat steps ontology" title="repeat steps ontology" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/repeat-steps-ontology.png" alt="repeat steps ontology" title="repeat steps ontology" style="border: 1px solid gray; zoom:75%;">
 
 6. You will notice the path gets updated accordingly.
-<img src="../design-conversation-skills/images/kg-path-update.png" alt="kg path update" title="kg path update" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/kg-path-update.png" alt="kg path update" title="kg path update" style="border: 1px solid gray; zoom:75%;">
 
 7. Edit a question and see that the node name is added as a tag.
 8. This ensures that this question is qualified for a user utterance containing the term/node name. Note that the tags you added earlier are retained and you can delete them, whereas the node names cannot be deleted.
-<img src="../design-conversation-skills/images/edit-a-question.png" alt="edit a question" title="edit a question" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/edit-a-question.png" alt="edit a question" title="edit a question" style="border: 1px solid gray; zoom:75%;">
 
 9. **Train** the Knowledge Graph and **Talk to Bot**.
 10. There should not be any changes in the bot responses.
@@ -129,7 +129,7 @@ To address this case, we mark the term _Joint Account_ as **Mandatory**. This he
 2. From the Settings section, select the **Mandatory** option from the dropdown next to the term name.
 3. **Save** and **Train** the Knowledge Collection.
 4. Now the questions under this node are considered only if the user utterance has the node name, **Joint Account** in this case.
-<img src="../design-conversation-skills/images/mandatory-settings.png" alt="mandatory settings" title="mandatory settngs" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/mandatory-settings.png" alt="mandatory settings" title="mandatory settngs" style="border: 1px solid gray; zoom:75%;">
 
 **Use Case 2**: Consider the following FAQs.
 
@@ -151,7 +151,7 @@ Though they do not have any phrases or terms in common, they are related to _Cus
 4. From the **Settings** page, select the **Organizer** option.
 5. **Save** and **Train** the Knowledge Collection.
 6. Now the questions under this node are considered even if the user utterance does not include the node name.
-<img src="../design-conversation-skills/images/save-and-train-faq.png" alt="save and train faq" title="save and train faq" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/save-and-train-faq.png" alt="save and train faq" title="save and train faq" style="border: 1px solid gray; zoom:75%;">
 
 ## Synonyms
 
@@ -167,12 +167,12 @@ To add synonyms, follow the steps below:
 
 1. Hover over the **Apply** node and click the **Settings** icon.
 2. In the **Path Level Synonyms**, add **get**.
-<img src="../design-conversation-skills/images/get-path-level-synonyms.png" alt="get path level synonyms" title="get path level synonyms" style="border: 1px solid gray; zoom:75%;"> 
+<img src="../images/get-path-level-synonyms.png" alt="get path level synonyms" title="get path level synonyms" style="border: 1px solid gray; zoom:75%;"> 
 
 3. **Save** and **Train** the Bot.
 4. **Talk to Bot** and use the same query “_How do I get a debit card?”_
 5. Try “_How do I get a checkbook”_ and you will see that the synonym works here also. This is because we added the synonym at path level and it is applicable to all nodes and questions under that path/node.
-<img src="../design-conversation-skills/images/kg-tutorial-bot-synonyms.png" alt="kg tutorial bot synonyms" title="kg tutorial bot synonyms" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/kg-tutorial-bot-synonyms.png" alt="kg tutorial bot synonyms" title="kg tutorial bot synonyms" style="border: 1px solid gray; zoom:75%;">
 
 6. Similarly, we can define **Knowledge Graph Synonym** if it is applicable to the entire knowledge graph.
 
@@ -191,7 +191,7 @@ To add alternate questions, follow the steps below:
 1. Hover over the question, in this case, _How do I access my account online?_ and click the **Edit** icon.
 2. In the **Add alternate question** enter the question.
 3. Add all the three queries mentioned above.
-<img src="../design-conversation-skills/images/add-alternative-question.png" alt="add alternative question" title="add alternative question" style="border: 1px solid gray; zoom:75%;"> 
+<img src="../images/add-alternative-question.png" alt="add alternative question" title="add alternative question" style="border: 1px solid gray; zoom:75%;"> 
 
 4. **Save**, **Train**, and **Talk to the Bot**.
 5. Entering any of the above three questions will yield the same response as the question _How do I access my account online?_
@@ -203,12 +203,12 @@ Consider the query “_How do I check my account balance?_.” If the bot has a 
 To trigger a task, follow the steps below:
 
 1. Before proceeding, ensure that you have a task defined for _Check Balance_. Let us consider a dummy dialog that displays a message.
-<img src="../design-conversation-skills/images/tasks-execution-dummy-dialog.png" alt="tasks execution dummy dialog" title="tasks execution dummy dialog" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/tasks-execution-dummy-dialog.png" alt="tasks execution dummy dialog" title="tasks execution dummy dialog" style="border: 1px solid gray; zoom:75%;">
 
 2. Add the **Add Intent** _How do I check my account balance?_
 3. Set **Intent** to _Task._
 4. From the drop-down list select the Dialog Task name **Check Balance**.
-<img src="../design-conversation-skills/images/check-balance.png" alt="check balance" title="check balance" style="border: 1px solid gray; zoom:75%;"> 
+<img src="../images/check-balance.png" alt="check balance" title="check balance" style="border: 1px solid gray; zoom:75%;"> 
 
 5. **Save** and **Train** the Knowledge Graph.
 6. **Talk to bot** with the utterance _How do I check my account balance?_ will trigger the _Check Balance_ task.
@@ -230,18 +230,18 @@ To add tags, follow the steps below:
 1. Edit the question “_How do I access my account online?”_
 2. For the alternate question: “_Does your bank support internet banking to view account details?”_
     * Add the tag _internet-banking_.
-    <img src="../design-conversation-skills/images/add-tag-internal-banking.png" alt="add tag internal banking" title="add tag internal banking" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/add-tag-internal-banking.png" alt="add tag internal banking" title="add tag internal banking" style="border: 1px solid gray; zoom:75%;">
 
     * Click the tag to open the **Tag Settings** dialog and set **Tag Usage** to **Mandatory**. 
-    <img src="../design-conversation-skills/images/click-tag-to-open.png" alt="click tag to open" title="click tag to open" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/click-tag-to-open.png" alt="click tag to open" title="click tag to open" style="border: 1px solid gray; zoom:75%;">
 
     * Click **Done**.
 3. Repeat for the alternate question _Is there a mobile app that I can use to access my account?_ with the tag _mobile app_.
-<img src="../design-conversation-skills/images/repeat-alternative-question.png" alt="repeat alternative question" title="repeat alternative question" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/repeat-alternative-question.png" alt="repeat alternative question" title="repeat alternative question" style="border: 1px solid gray; zoom:75%;">
 
 4. **Save** and **Train** the bot.
 5. Now **Talk to the Bot** and see the response.
-<img src="../design-conversation-skills/images/talk-to-bot-ontology.png" alt="talk to bot ontology" title="talk to bot ontology" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/talk-to-bot-ontology.png" alt="talk to bot ontology" title="talk to bot ontology" style="border: 1px solid gray; zoom:75%;">
 
 ## Traits
 
@@ -250,7 +250,7 @@ To add tags, follow the steps below:
 **User**: _I lost my card, how do I apply for another debit card?_
 **Bot**: _How do I apply for a debit card?_.
 
-<img src="../design-conversation-skills/images/kg-trait.png" alt="kg trait" title="kg trait" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/kg-trait.png" alt="kg trait" title="kg trait" style="border: 1px solid gray; zoom:75%;">
 
 While this is a valid response it is not the right one. Ideally, since the user said _I lost my card_ bot must direct the user to report a stolen card.
 
@@ -260,30 +260,31 @@ To add traits, follow the steps below:
 
 1. First, add this question as an alternate question to “_How do I report a stolen card?_”
 
-<img src="../design-conversation-skills/images/add-trait-ontology.png" alt="add trait ontology" title="add trait ontology" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-trait-ontology.png" alt="add trait ontology" title="add trait ontology" style="border: 1px solid gray; zoom:75%;">
 
-2. **Save** and **Train the bot.**
-3. **Talk to bot** and ask the same question. You will get the same response.
-4. Define the Trait with the steps below:
+<ol start="2"><li><strong>Save</strong> and <strong>Train</strong> the bot.</li>
+<li><strong>Talk to bot</strong> and ask the same question. You will get the same response.</li>
+<li>Now let us see how to add Trait.</li>
+<li>Define Trait with the steps below: 
+<ul> 
+<li>From the <strong>more</strong> option next to the <strong>Train</strong> button, select the <strong>Manage Traits</strong> option.</li>
 
-* From the **More** option next to the **Train** button, select **Manage Traits**.
+<img src="../images/manage-traits-ontology.png" alt="manage traits ontology" title="manage traits ontology" style="border: 1px solid gray; zoom:75%;">
 
-<img src="../design-conversation-skills/images/manage-traits-ontology.png" alt="manage traits ontology" title="manage traits ontology" style="border: 1px solid gray; zoom:75%;">
+<li>Click <b>New Trait</b> to create a new trait.</li>
+<li>Give a <b>Trait Type</b> and add <b>Traits</b> to it. Here, let us consider <i>Issues</i> as Trait Type and <i>lostcard</i> as the trait.</li>
+<li>Add <i>lost my card</i> as the <b>utterance</b> that triggers this trait. (Do not forget to hit enter after you add the utterance).</li>
 
-* Click **New Trait** to create a new trait.
-* Give a **Trait Type** and add **Traits** to it. Here, let us consider _Issues_ as Trait Type and _lostcard_ as the trait.
-* Add _lost my card_ as the **utterance** that triggers this trait. (Do not forget to hit enter after you add the utterance). 
+<img src="../images/add-lost-my-card-utterance.png" alt="add lost my card utterance" title="add lost my card utterance" style="border: 1px solid gray; zoom:75%;">
 
-<img src="../design-conversation-skills/images/add-lost-my-card-utterance.png" alt="add lost my card utterance" title="add lost my card utterance" style="border: 1px solid gray; zoom:75%;">
+<li><b>Save</b> and <b>Train the trait</b>.</li></ul>
+<li>Click <b>Apply Trait</b>.
+<ul><li>From the ontology, go to the <b>Issues</b> node <b>Settings</b> page.</li>
+<li>Add <i>lostcard</i> as <b>Trait</b> (pick from the drop-down list).</li>
 
-* **Save** and **Train the trait**.
-* Click **Apply Trait**.
-* From the ontology, go to the **Issues** node **Settings** page.
-* Add _lostcard_ as **Trait** (pick from the drop-down list). 
+<img src="../images/select-trait-from-dropdown.png" alt="select trait from list" title="select trait from list" style="border: 1px solid gray; zoom:75%;">
 
-<img src="../design-conversation-skills/images/select-trait-from-dropdown.png" alt="select trait from list" title="select trait from list" style="border: 1px solid gray; zoom:75%;">
+<li><b>Save</b> and <b>Train</b> the Knowledge Graph.</li>
+<li><b>Talk to the Bot</b> and try the same question. Now you will get the expected response.</li>
 
-* **Save** and **Train** the Knowledge Graph.
-* **Talk to the Bot** and try the same question. Now you will get the expected response. 
-
-<img src="../design-conversation-skills/images/kg-bot-trait.png" alt="kg bot trait" title="kg bot trait" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/kg-bot-trait.png" alt="kg bot trait" title="kg bot trait" style="border: 1px solid gray; zoom:75%;"></ul></ol> 
