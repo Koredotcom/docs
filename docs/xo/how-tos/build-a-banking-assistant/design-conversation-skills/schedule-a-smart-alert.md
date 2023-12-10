@@ -36,8 +36,9 @@ Alert tasks can be used to deliver timely, relevant, and personalized informatio
     <img src="../images/create-alert-task.png" alt="create alert task" title="create alert task" style="border: 1px solid gray; zoom:75%;">
 
 3. You will be directed to the <b>Alert Settings</b> page. Follow the steps below to complete the setup.
-    * Review and modify the **General Settings** if needed. For our use case, we do not need to modify any settings here.
-    * Select the **API Request** tab
+
+    1. Review and modify the **General Settings** if needed. For our use case, we do not need to modify any settings here.
+    2. Select the **API Request** tab and follow the steps below:
         * Ensure that the **Content Type** is set to _JSON_.
         * We do not need to set **Authorization Provider** for our use case. Configure the same if the API you are using has any authorization requirements.
         * Set **Parameter** to gather the _preferred City_ from the User. Ensure that it is set as a **Mandatory** field. This is the API requirement.

@@ -48,7 +48,6 @@ The Bot we will be building will be performing the basic banking transactions. T
 
 <li>Click <strong>Proceed.</strong></li>
 <li><strong>Property</strong> Panel for<strong> User Intent</strong> will be displayed. We will retain the default properties.</li>
-<li>Note: For instructions with the older Dialog Builder, Click<a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-update-balance/" target="_blank"> here</a>.</li>
 <li>Close the User Intent Property Panel.</li>
 </ol>
 
