@@ -20,8 +20,6 @@ The Bot we will be building will be performing the basic banking transactions. T
 <li>Transfer a specified amount from the payer account to a payee account, as given<a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-transfer-funds-task/" target="_blank"> here</a>.</li>
 </ul>
 
-Let us add the Update Balance task.
-
 ## Update Balance Intent
 
 <ul>
@@ -56,7 +54,6 @@ Let us add the Update Balance task.
 
 ### Step 2: Entity nodes
 
-
 Entity Node is typically used to gather information from the user. Here we will be using it to capture the user input for Account Number and Account Type, Type of transaction, and Amount.
 
 <ol>
@@ -73,18 +70,16 @@ Entity Node is typically used to gather information from the user. Here we will 
 <li>Close the <b>AccountType Entity</b> Property Panel.</li> 
 </ul>
 <li>Click the <strong>+</strong> below the Account Type node.</li>
-<li>Select the <strong>Entity</strong> option<strong>.</strong> 
+<li>Select the <strong>Entity</strong> option<strong> and follow the steps below:</strong> 
 <ul>
 <li>Click the <strong>+ New entity</strong>.</li>
 <li><strong>Property Panel</strong> for the Entity Node is displayed, if not click on the newly created entity to open.</li>
 <ul>
  <li>Enter the following details:   
 <ul>
-  <li><strong>Name</strong>: <em>TransactionType</em>
-   
-<li><strong>Display Name</strong>: <em>Transaction Type </em>
-   
-<li><strong>Type</strong>: Select ‘<em>List of Items (enumerated)</em>‘ from the drop-down. We need to provide the list of values that the user can select.    
+  <li><strong>Name</strong>: <em>TransactionType</em>.</li>   
+<li><strong>Display Name</strong>: <em>Transaction Type </em>.</li>   
+<li><strong>Type</strong>: Select ‘<em>List of Items (enumerated)</em>‘ from the drop-down. We need to provide the list of values that the user can select.</li>
 <ul>
 <li>Click the <strong>Settings (gear) icon</strong> that appears next to the field.</li>
 <li>Opt for <strong>Static List</strong>.</li>
@@ -94,10 +89,10 @@ Entity Node is typically used to gather information from the user. Here we will 
 
 <img src="../images/entity-display-name.png" alt="entity display name" title="entity display name" style="border: 1px solid gray; zoom:75%;">
     
-<li>Click <strong>Save</strong>.</li>   
-</ul>
-<li>Navigate back to Entity Property Panel.</li>
-<li><strong>User Prompts:</strong> Enter the following text and hit enter to save:<br><code>Select the transaction type.</code></li>
+<li>Click <strong>Save</strong>.</li></ul></ul>   
+
+<li>Navigate back to Entity Property Panel and enter the following values:</li>
+<ul><li><strong>User Prompts:</strong> Enter the following text and hit enter to save:<br><code>Select the transaction type.</code></li>
 <li><strong>Display List Of Values</strong>: Mark as ‘<em>Yes, use channel specific standard formatting for default messages and show the available list of values to end user</em>‘. This will present the list of values in a button template for the supported channels.
 </li>
 <img src="../images/display-list-of-values.png" alt="display list of values" title="display list of values" style="border: 1px solid gray; zoom:75%;"></ul>
@@ -108,7 +103,7 @@ Entity Node is typically used to gather information from the user. Here we will 
 </ul>
 
 <li>Click the <strong>+</strong> below the Transaction Type node.</li>
-<li>Select the <strong>Entity</strong> option.</li>
+<li>Select the <strong>Entity</strong> option and follow the steps below:</li>
 <ul>
 
 <li>Click <strong>+ New entity </strong>.</li>
@@ -140,10 +135,10 @@ We will be using a dummy API setup for this tutorial. We will be using a mock AP
 
 <li>Click the <strong>+</strong> below the Amount Entity node.</li>
 <li>Select <strong>Bot Action</strong>, click to open properties, name it <em>ToGetBalance</em>, and close the properties window.</li>
-<li>To add a service node, click the <strong>+</strong> next to the ToGetBalance bot action to expand it.</li>
+<li>To add a service node, click the <strong>+</strong> icon next to the ToGetBalance bot action to expand it.</li>
 <li>Click the <strong>+</strong> within the bot action layout.</li>
 <li>Select <strong>Service</strong> – Service node is used to make a backend API call to get account balance information.</li>
-<li>Select the existing <em>GetAccountBalance </em>service node, created in the Get Balance task.</li>
+<li>Select the existing <em>GetAccountBalance </em>service node, created in the <b>Get Balance</b> task.</li>
 </ol>
 
 ### Step 4: Bot Action – Script Node
@@ -166,9 +161,7 @@ Script Node allows you to incorporate programming logic into the bot and is part
 </ul>
 </li> 
 </ol>
-
-
-In the <strong>Add Script</strong> window enter the following script. This script first checks the account type to match the user entry and then extracts the balance for that record.
+<ol start="6"><li>In the <strong>Add Script</strong> window enter the following script. This script first checks the account type to match the user entry and then extracts the balance for that record.</li></ol>
 
 ```js
 var balance, i;
@@ -178,56 +171,40 @@ var balance, i;
    }
 }
 ```
+<ol start="7"><li>Click <strong>Save</strong>.</li> 
+<li>Close the Script Property Panel.</li>
 
-<ul>
-<li>Click <strong>Save</strong>.</li> 
-<li>Close the Script Property Panel</li>.
-
-<img src="../images/script-property-panel.png" alt="script property panel" title="script property panel" style="border: 1px solid gray; zoom:75%;"></ul>
+<img src="../images/script-property-panel.png" alt="script property panel" title="script property panel" style="border: 1px solid gray; zoom:75%;"></ol>
 
 ### Step 4: Bot Action – Service Node – Update Balance
 
 Here the service node is used to call an API to update the account balance for the user entered account number.<br>We will be using a dummy API setup for this tutorial.
 
 <ol>
-<li>Click the <strong>+</strong> below the BalanceCalculation script node.</li>
+<li>Click the <strong>+</strong> icon below the BalanceCalculation script node.</li>
 <li>Select <strong>Service</strong> – Service node is used to make a backend API call to update account balance information.</li>
 <li>Click the <strong>+ New service</strong>.</li>
 <li><strong>Property Panel</strong> for the Service Node is displayed, if not click on the newly added service node to open.</li>
 <li>Enter the following details:</li> 
 <ul>
-<li><strong>Name</strong>: <em>UpdateBalance</em>.</li>
- 
-<li><strong>Display Name</strong>: <em>Update Balance</em>.</li>
- 
-<li><strong>Service Type</strong>: <em>Custom Service</em>.</li>
- 
-<li><strong>Type</strong>: <em>Webservice</em>.</li>
- 
-<li><strong>Sub Type</strong>: <em>REST</em>.</li>
- 
+<li><strong>Name</strong>: <em>UpdateBalance</em>.</li> 
+<li><strong>Display Name</strong>: <em>Update Balance</em>.</li> 
+<li><strong>Service Type</strong>: <em>Custom Service</em>.</li> 
+<li><strong>Type</strong>: <em>Webservice</em>.</li> 
+<li><strong>Sub Type</strong>: <em>REST</em>.</li> 
 <li>Click <strong>DEFINE REQUEST</strong>.</li>  
 <ul>
 <li>In the <strong>Define Request Page,</strong> enter the following details:   
 <ul>
  <li><strong>Request type</strong> – <em>PUT</em>.</li>
-<li><strong>Request URL</strong>.</li>
- `https://5c3c633d29429300143fe4d2.mockapi.io/AccountDetails/{{context.entities.AccountNumber}}`.
-   
+<li><strong>Request URL</strong>: <code>https://5c3c633d29429300143fe4d2.mockapi.io/AccountDetails/{{context.entities.AccountNumber}}</code>.</li>
 <li>This API does not require any Auth Parameters.</li>
-   
-<li>In the <strong>Body</strong> tab, select the type as <em>application/json</em>.</li>
-   
-<li>Select the <strong>Test Request</strong> tab.</li>
-   
-<li>Enter an account number and balance in the <strong>Sample Context Values</strong> section.</li>
-   
-<li>Click the <strong>Test</strong> button.</li>
-   
-<li>Wait for the test to be completed and you get a Status: 200.</li>
-   
-<li>Click <strong>Save as Sample Response</strong>.</li>
-   
+<li>In the <strong>Body</strong> tab, select the type as <em>application/json</em>.</li>   
+<li>Select the <strong>Test Request</strong> tab.</li>   
+<li>Enter an account number and balance in the <strong>Sample Context Values</strong> section.</li>   
+<li>Click the <strong>Test</strong> button.</li>   
+<li>Wait for the test to be completed and you get a Status: 200.</li>   
+<li>Click <strong>Save as Sample Response</strong>.</li>   
 <li>Click <strong>Save</strong>.</li>   
 </ul>
 </li>   
@@ -239,8 +216,8 @@ Here the service node is used to call an API to update the account balance for t
 <li>Under the <strong>Connection Rules</strong> section, ensure that the <strong>Default</strong> connection is set to <strong>End of Bot Action</strong>.</li>  
 </ul>
  
-<li>Close the Service Property Panel.</li>
-<li>Click <strong>–</strong> next to the Bot Action node to collapse the bot action node.
+<li>Close the <b>Service Property</b> Panel.</li>
+<li>Click the <strong>–</strong> icon next to the Bot Action node to collapse the bot action node.
 </li> 
 </ul>
 </li> 
@@ -280,11 +257,11 @@ Follow the Bot instructions and enter the values for the fields below::
 
 <ul>
 
-<li>Account Number – For example, 29565731</li>
+<li>Account Number – For example, 29565731.</li>
 
-<li>Account Type – Savings or Current</li>
+<li>Account Type – Savings or Current.</li>
 
-<li>Transaction Type – Credit or Debit</li>
+<li>Transaction Type – Credit or Debit.</li>
 
 <li>Enter the Amount – For example, 1000.</li>
 
