@@ -1,4 +1,4 @@
-# Creating a Banking Assistant
+# Create a Banking Assistant
 
 This document helps you create a sample banking bot. This bot is used in various use case scenarios presented in the How-Tos section of the developer documentation.
 
