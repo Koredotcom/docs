@@ -60,10 +60,10 @@ kr-grid[type="g1"] kr-grid-item:hover{
     border: 2px solid #eee;
 }
 kr-grid[type="g1"] kr-grid-item img{
-    width: 25%;
+    width: 10%;
     border-radius: 5px 5px 0px 0px;
-    height: 100px;
-    object-fit: cover;
+    height: 10%;
+    object-fit: none;
 }
 kr-grid[type="g1"] .glightbox{
     pointer-events: none;
