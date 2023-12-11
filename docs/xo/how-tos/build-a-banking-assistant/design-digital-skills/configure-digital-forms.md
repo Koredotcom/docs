@@ -53,7 +53,7 @@ Create a form to gather the following information:
 3. From the left navigation menu, select **Digital Skills** -> **Digital Forms** to access the Digital Forms page.
 4. Click **New Form** and enter the following:
     * **Name**: name to the form, say _OpenAccount_.
-    * **Display Name** for the form, say _Open an Account_
+    * **Display Name** for the form, say _Open an Account_.
     * **Description** of the form.
     * **Description**: Turn on the toggle to show a description of the form in the header.
 
@@ -142,7 +142,7 @@ Click the card to select the style. If it has a logo, you can upload an image fi
 
 Continue with this task and transition to this node: In the **Select Node** drop-down list, you can select any node present in the current dialog task.
 
-<img src="../images/select-node-dropdown-list.png" alt="select node dropdown" title="select node dropdown" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/select-node-dropdown-list.png" alt="select node dropdown" title="select node dropdown" style="border: 1px solid gray; zoom:125%;">
 
 
 !!!note
