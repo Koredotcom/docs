@@ -162,6 +162,7 @@ UI Form we will be using the UI Form configured as shown <a href="https://develo
 Let us consider each of the following scenarios one by one:
 
 Dialog Task to:
+
 * Capture the customer id.
 * Trigger the UI Form to gather account details.
 * Invoke the service node to add the account data.
