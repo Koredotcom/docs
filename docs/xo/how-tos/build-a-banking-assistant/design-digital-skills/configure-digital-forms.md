@@ -52,12 +52,12 @@ Create a form to gather the following information:
 2. Select the **Build** tab from the top menu.
 3. From the left navigation menu, select **Digital Skills** -> **Digital Forms** to access the Digital Forms page.
 4. Click **New Form** and enter the following:
-    * **Name**: name to the form, say _OpenAccount_
+    * **Name**: name to the form, say _OpenAccount_.
     * **Display Name** for the form, say _Open an Account_
     * **Description** of the form.
     * **Description**: Turn on the toggle to show a description of the form in the header.
 
-**Select the form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. 
+5. **Select the form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. 
     
 Click the card to select the style. If it has a logo, you can upload an image file (png or jpg) for the logo.
 
@@ -65,8 +65,8 @@ Click the card to select the style. If it has a logo, you can upload an image fi
 
     During the Export of the Bot, the logo is not exported along with Digital Forms. So, while importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
 
-5. **Save & Proceed** to the next step.
-<img src="../images/form-creation-digital-form.png" alt="digital form" title="digital form" style="border: 1px solid gray; zoom:75%;">
+<ol start="6"><li> <b>Save & Proceed</b> to the next step.</li>
+<img src="../images/form-creation-digital-form.png" alt="digital form" title="digital form" style="border: 1px solid gray; zoom:75%;"></ol>
 
 #### Form Editor
 
@@ -113,7 +113,7 @@ Click the card to select the style. If it has a logo, you can upload an image fi
         <img src="../images/visibility-settings-rule-1.png" alt="visibility settings rule 1" title="visibility settings rule 1" style="border: 1px solid gray; zoom:75%;">
 
 9. For the Credit Card option, the user needs to further select the type of card. Drag and drop a **Radio Button** component onto the form and set the following values:
-    * **Display Name**say  _Card Type._
+    * **Display Name** say  _Card Type._
     * **Name** used for internal reference, say _cardtype_.
     * **Description** of the field.
     * **Placeholder** value to be displayed in the field when blank, say, _Choose the type of credit card_.
@@ -148,9 +148,9 @@ Continue with this task and transition to this node: In the **Select Node** drop
 !!!note
 
     The target node has to be in the same dialog, you cannot make a jump to a target node outside the current dialog. The list of target nodes only shows the local nodes.
-    If the target node is not present during runtime, the platform presents the error Error in continuing the conversation, and the task should get discarded..
+    If the target node is not present during runtime, the platform presents the error Error in continuing the conversation, and the task should get discarded.
 
-14. Use the **Test** button to see a preview.
+    Use the **Test** button to see a preview.
 
 ### Dialog Task Configuration
 
@@ -160,7 +160,7 @@ We will be creating a dialog task and adding a form node to trigger the Digital 
 
 1. Select the **Build** tab from the top menu
 2. From the left navigation menu, select **Conversational Skills -> Dialog Tasks.**
-3. Click the **+** against the **Dialog Tasks** to create a new Task
+3. Click the **+** against the **Dialog Tasks** to create a new Task.
     * Enter **IntentName**, say, _OpenAccount_
     * **Create & Proceed** to open the dialog builder page.
 4. Retain the Intent Node default settings, and close the Intent Node.
