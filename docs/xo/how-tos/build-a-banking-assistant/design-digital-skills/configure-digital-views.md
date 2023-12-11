@@ -9,10 +9,10 @@ For details on what Digital Views are and how it is implemented in the Kore.ai B
 
 Consider a Banking Bot trying to address the following scenarios:
 
-<video class="wp-video-shortcode" id="video-23376-1" width="410" height="528" preload="metadata" controls="controls"><source type="video/mp4" src="../design-digital-skills/images/WP_howto.mp4" /><a href="../design-digital-skills/images/WP_howto.mp4">Banking Bot Demo</a></video>
+<video class="wp-video-shortcode" id="video-23376-1" width="410" height="528" preload="metadata" controls="controls"><source type="video/mp4" src="../images/WP_howto.mp4" /><a href="../images/WP_howto.mp4">Banking Bot Demo</a></video>
 
 <video width="410" height="530" controls>
-<source src="../design-digital-skills/images/WP_howto.mp4" type="video/mp4"></video>
+<source src="../images/WP_howto.mp4" type="video/mp4"></video>
 
 This document gives a step-by-step approach to achieve all the above-mentioned scenarios using – Digital Views (Panels, Widgets), Widget SDK and Web/Mobile Client.
 
@@ -21,7 +21,7 @@ This document gives a step-by-step approach to achieve all the above-mentioned s
 * Bot building knowledge
 * A <a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/" target="_blank"> Banking Bot</a> with a dialog as mentioned below:
     * <a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/#Get_Balance_Intent" target="_blank"> Get Balance</a> – Dialog task prompting the user for their Account Number and Account Type and displaying the available balance in the account.
-    <img src="../design-digital-skills/images/get-balance-dialog-digital-views.png" alt="get balance dialog" title="get balance dialog" style="border: 1px solid gray; zoom:75%;"> 
+    <img src="../images/get-balance-dialog-digital-views.png" alt="get balance dialog" title="get balance dialog" style="border: 1px solid gray; zoom:75%;"> 
 
 ## Configurations
 
@@ -34,7 +34,7 @@ Let us consider each of the following scenarios one by one:
 ### Message Template
 
 First, the Dialog task which would be triggered from the Widget should have a message definition for the Widget SDK channel.
-<img src="../design-digital-skills/images/dialog-task-message-template.png" alt="dialog task message template" title="dialog task message template" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/dialog-task-message-template.png" alt="dialog task message template" title="dialog task message template" style="border: 1px solid gray; zoom:75%;">
 
 We are using the following message to display the account details:
 
@@ -73,14 +73,14 @@ First, let us see how to configure a Widget to display balance from the current 
     * **AccountType** to _current_.
     * **AccountNumber** to _1_.
 You can use the **Open Dialog Task** icon, next to the select Dialog Task drop down, to open the dialog and check the entities needed.
-<img src="../design-digital-skills/images/open-dialog-task-digital-views.png" alt="open dialog tasks" title="open dialog tasks" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/open-dialog-task-digital-views.png" alt="open dialog tasks" title="open dialog tasks" style="border: 1px solid gray; zoom:75%;">
 
 * **Save** the widget.
 * **Edit** the widget and click **Run & Preview** to see the widget output.
 * **Save as preview** will set the output as the thumbnail against the widget.
 
 **Savings Account**: Repeat the above steps for Account View from _savings_ account of the same account number.
-<img src="../design-digital-skills/images/savings-account-widget.png" alt="savings account widget" title="savings account widget" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/savings-account-widget.png" alt="savings account widget" title="savings account widget" style="border: 1px solid gray; zoom:75%;">
 
 ### Panel Configuration
 
@@ -88,27 +88,25 @@ The Widgets thus created need to be attached to a Panel for runtime display and 
 
 1. Click the **Create Panel** button to create a Panel.
 2. In the **New Panel** window, enter Panel Name, Display Name and a URL for Icon.
-<img src="../design-digital-skills/images/new-panel-window.png" alt="new panel window" title="new panel window" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/new-panel-window.png" alt="new panel window" title="new panel window" style="border: 1px solid gray; zoom:75%;">
 
 3. Click the **Add Widget** button to open the **Panel Management** window.
 4. Use the **Add Widget** to select and add the Widgets that we want to display, in this case Account Balance and Current Account widgets.
-<img src="../design-digital-skills/images/add-widgets.png" alt="add widgets" title="add widgets" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-widgets.png" alt="add widgets" title="add widgets" style="border: 1px solid gray; zoom:75%;">
 
 5. Use the **Test** button to see the widgets in action.
-<img src="../design-digital-skills/images/see-widgets-in-action.png" alt="see widgets in action" title="see widgets in action" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/see-widgets-in-action.png" alt="see widgets in action" title="see widgets in action" style="border: 1px solid gray; zoom:75%;">
 
 ### Panel with JSON Widgets
 
 We will see how to create Widgets with static JSON content. We will use a JSON to display a pie chart.
 
 1. Click on **Create Panel** to create a new panel and name it **JSON Example**.
-2. Use the **More** icon and select **Panel Management**, there you will find the option to **Create Widget**. Click on that. 
+2. Use the **More** icon and select **Panel Management**, there you will find the option to **Create Widget**. Click on that.
+<img src="../images/panel-management.png" alt="panel management" title="panel management" style="border: 1px solid gray; zoom:75%;">
 
-<img src="../design-digital-skills/images/panel-management.png" alt="panel management" title="panel management" style="border: 1px solid gray; zoom:75%;">
-
-3. In the **New Widget** dialog, enter the Name, and set the source to JSON. 
-
-<img src="../design-digital-skills/images/configure-new-widget-dialog.png" alt="configure new widget dialog" title="configure new widget dialog" style="border: 1px solid gray; zoom:75%;">
+3. In the **New Widget** dialog, enter the Name, and set the source to JSON.
+<img src="../images/configure-new-widget-dialog.png" alt="configure new widget dialog" title="configure new widget dialog" style="border: 1px solid gray; zoom:75%;">
 
 Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, click <a href="https://developer.kore.ai/docs/bots/sdks/widget-sdk-message-formatting-and-templates/" target="_blank"> here</a>. 
 
@@ -142,7 +140,7 @@ print(JSON.stringify(message));
 
 <ol start="4"><li><b>Test</b> the panel and you will see both the panel icons, click on each to see them in action.</li></ol>
 
-<img src="../design-digital-skills/images/json-example-panel.png" alt="json example panel" title="json example panel" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/json-example-panel.png" alt="json example panel" title="json example panel" style="border: 1px solid gray; zoom:75%;">
 
 ## Publish
 
@@ -167,7 +165,7 @@ We will be hosting the Panels in the web/mobile client. Click <a href="https://d
     * `botOptions.clientSecret`
 
 6. Make other changes as per your requirements.
-<img src="../design-digital-skills/images/configure-bot-options.png" alt="configure bot options" title="configure bot options" style="border: 1px solid gray; zoom:75%;"> 
+<img src="../images/configure-bot-options.png" alt="configure bot options" title="configure bot options" style="border: 1px solid gray; zoom:75%;"> 
 
 7. Open the `kore-widgets-config.js`.
 8. Configure your `botOptionsWiz` with the ‘_Widget SDK_’ channel configurations copied  in  above  section.
@@ -176,9 +174,9 @@ We will be hosting the Panels in the web/mobile client. Click <a href="https://d
     * `botOptionsWiz.clientSecret`
 
 9. Make other changes as per your requirements.
-<img src="../design-digital-skills/images/widget-config-changes.png" alt="widget configuration changes" title="widget configuration changes" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/widget-config-changes.png" alt="widget configuration changes" title="widget configuration changes" style="border: 1px solid gray; zoom:75%;">
 
 10. Open the `index_widgets_chat.html` file in the browser and see the chat window along with the widgets.
-<img src="../design-digital-skills/images/index-widgets-chat.png" alt="index widgets" title="index widgets" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/index-widgets-chat.png" alt="index widgets" title="index widgets" style="border: 1px solid gray; zoom:75%;">
 
 11. If you want to host the Panels individually use the `index_widgets.html` file. See the GitHub for hosting the same in your web site.
