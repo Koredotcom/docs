@@ -28,17 +28,17 @@ The Kore.ai XO Platform supports OAuth 2.0, Basic, and API key based authenticat
 
 ### OAuth v2 Authentication
 
-OAuth v2 is the new version of the open protocol to allow secure authorization via a standard method from web, mobile, and desktop applications. To learn how OAuth v2 authentication works, read the [Setting Up Authorization using OAuth v2](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-oauth-v2/){:target="_blank"} article.
+OAuth v2 is the new version of the open protocol to allow secure authorization via a standard method from web, mobile, and desktop applications. To learn how OAuth v2 authentication works, read the [Setting Up Authorization using OAuth v2](../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2){:target="_blank"} article.
 
 
 ### Basic HTTP Authentication
 
-HTTP Basic Auth is a simple method that creates a username and password style authentication for HTTP requests. This technique uses a header called Authorization, with a base64 encoded representation of the username and password. For more information, read the [Bot Authorization Overview](../../../dev-tools/bot-authentication/){:target="_blank"} article.
+HTTP Basic Auth is a simple method that creates a username and password style authentication for HTTP requests. This technique uses a header called Authorization, with a base64 encoded representation of the username and password. For more information, read the [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} article.
 
 
 ### API Key
 
-Identification and authorization token generated or provided by a web application or web service used to identify the incoming application request, and in some cases, also provides authentication for secure access. For more information, read the [Setting Up Authorization using an API Key](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-an-api-key/){:target="_blank"} article. 
+Identification and authorization token generated or provided by a web application or web service used to identify the incoming application request, and in some cases, also provides authentication for secure access. For more information, read the [Setting Up Authorization using an API Key](../../../dev-tools/bot-authorization/setting-up-authorization-using-an-api-key/){:target="_blank"} article. 
 
 Actions can be authorized based on the authorization profiles that are supported by the third-party  integrations.  Users can use pre-authorized credentials provided by the developer during the configuration process or their own authorization profile during the configuration process to let the end user authorize during the conversation.
 
