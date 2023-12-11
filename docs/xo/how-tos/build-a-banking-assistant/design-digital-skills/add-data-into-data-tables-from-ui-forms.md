@@ -189,7 +189,7 @@ We will be creating a dialog task and adding a form node to trigger the UI Form 
 <img src="../images/check-customer-id-validity.png" alt="check customer id validity" title="check customer id validity" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="6"><li>Add a <b>Logic</b> node to proceed with the Form if the customer id is valid else prompt for the customer id.</li>
-<img src="../images/logic-node.png" alt="logic node" title="logic node" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/logic-node.png" alt="logic node" title="logic node" style="border: 1px solid gray; zoom:75%;"></ol>
 
 The _InvalidCustId_ is a **Message** node with the following JavaScript:
 
