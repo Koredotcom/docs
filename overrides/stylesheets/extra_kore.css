@@ -55,6 +55,7 @@ kr-grid[type="g1"] kr-grid-item{
     border: 2px solid transparent;
     transition: border .25s;
     border-radius: 5px;
+    align-items: center;
 }
 kr-grid[type="g1"] kr-grid-item:hover{
     border: 2px solid #eee;
