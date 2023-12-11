@@ -119,11 +119,10 @@ copyright: |
   © 2023 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
   - Platform : home.md
-  - Getting Started:
-    - Getting Started:
-      - Platform:
-        - Introduction to the Platform: virtual-assistants-overview.md
-        - Access the Platform: virtual-assistants-overview.md   
+  - Get Started:
+    - Platform:
+      - Introduction to the Platform: virtual-assistants-overview.md
+      - Access the Platform: virtual-assistants-overview.md   
       - Automation:
         - Introduction to Virtual Assistant: virtual-assistants-overview.md
         - Build a Virtual Assistant: virtual-assistants-overview.md   
@@ -147,7 +146,7 @@ nav:
   - Automation: 
     - Design: 
       - Dialogs Tasks:
-        - Overview: automation/intelligence/context-management.md 
+        - Overview: whats-new/whats-new-in-this-release.md 
         - Navigating Dialog Tasks: automation/intelligence/context-management.md
         - Build Dialog Tasks: automation/intelligence/context-management.md
         - Node Types:
@@ -176,9 +175,9 @@ nav:
         - User Prompts or Messages: automation/intelligence/context-management.md
         - Voice Call Properties: automation/intelligence/context-management.md  
       - Knowledge AI:
-        - Overview: automation/use-cases/knowledge-ai/knowledge-graph-overview.md
+        - Overview: automation/use-cases/knowledge-ai/knowledge-ai-introduction.md
         - Knowledge Graph (KG):
-          - Introduction: automation/use-cases/knowledge-ai/knowledge-ai-introduction.md
+          - Introduction: automation/use-cases/knowledge-ai/knowledge-graph-overview.md
           - Terminology: automation/use-cases/knowledge-ai/knowledge-graph-terminology.md
           - Build a KG: automation/use-cases/knowledge-ai/build-a-knowledge-graph.md
           - Manage FAQs: automation/use-cases/knowledge-ai/manage-faqs.md
