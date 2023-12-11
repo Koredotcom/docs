@@ -75,7 +75,7 @@ We will create a dialog task to gather the required information, and use a **Ser
 
 You can use a Service call to fetch data from the table:
 
-1. Click the **+** icon against the entity node.
+1. Click the **+** iconagainst the entity node.
 2. Select **Service** -> **New Service Node** option.
 3. From the **General Settings** section configure the following:
     * **Name** say _GetCustomerData_.
