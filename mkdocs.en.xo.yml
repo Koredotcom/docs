@@ -146,7 +146,7 @@ nav:
   - Automation: 
     - Design: 
       - Dialogs Tasks:
-        - Overview: automation/intelligence/context-management.md 
+        - Overview: whats-new/whats-new-in-this-release.md 
         - Navigating Dialog Tasks: automation/intelligence/context-management.md
         - Build Dialog Tasks: automation/intelligence/context-management.md
         - Node Types:
