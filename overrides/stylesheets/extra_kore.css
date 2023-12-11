@@ -60,9 +60,10 @@ kr-grid[type="g1"] kr-grid-item:hover{
     border: 2px solid #eee;
 }
 kr-grid[type="g1"] kr-grid-item img{
-    width: 10%;
+    width: 25%;
     border-radius: 5px 5px 0px 0px;
-    height: 10%;
+    height: 25%;
+    align-items: center;
     object-fit: none;
 }
 kr-grid[type="g1"] .glightbox{
@@ -72,7 +73,7 @@ kr-grid[type="g1"] kr-grid-title{
     display: block;
     font-weight: 700;
     margin: 15px 0px 0px 0px;
-    color: #4051b5;
+    color: #3b3c3f;
     font-size: 18px;
 }
 kr-grid[type="g1"] kr-grid-desc{
