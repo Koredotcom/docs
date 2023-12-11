@@ -120,25 +120,24 @@ copyright: |
 nav:
   - Platform : home.md
   - Getting Started:
-    - Getting Started:
-      - Platform:
-        - Introduction to the Platform: virtual-assistants-overview.md
-        - Access the Platform: virtual-assistants-overview.md   
-      - Automation:
-        - Introduction to Virtual Assistant: virtual-assistants-overview.md
-        - Build a Virtual Assistant: virtual-assistants-overview.md   
-      - Answers:
-        - Introduction to Answers: virtual-assistants-overview.md
-        - Configure Answers: virtual-assistants-overview.md   
-      - AgentAssist:
-        - Introduction to AgentAssist: virtual-assistants-overview.md
-        - Set up AgentAssist: virtual-assistants-overview.md       
-      - Contact Center:
-        - Introduction to Contact Center: virtual-assistants-overview.md
-        - Set up Contact Center: virtual-assistants-overview.md       
-      - Campaign:
-        - Introduction to Campaign: virtual-assistants-overview.md
-        - Set up Campaign: virtual-assistants-overview.md       
+    - Platform:
+      - Introduction to the Platform: virtual-assistants-overview.md
+      - Access the Platform: virtual-assistants-overview.md   
+    - Automation:
+      - Introduction to Virtual Assistant: virtual-assistants-overview.md
+      - Build a Virtual Assistant: virtual-assistants-overview.md   
+    - Answers:
+      - Introduction to Answers: virtual-assistants-overview.md
+      - Configure Answers: virtual-assistants-overview.md   
+    - AgentAssist:
+      - Introduction to AgentAssist: virtual-assistants-overview.md
+      - Set up AgentAssist: virtual-assistants-overview.md       
+    - Contact Center:
+      - Introduction to Contact Center: virtual-assistants-overview.md
+      - Set up Contact Center: virtual-assistants-overview.md       
+    - Campaign:
+      - Introduction to Campaign: virtual-assistants-overview.md
+      - Set up Campaign: virtual-assistants-overview.md       
     - Glossary:
       - Concepts and Terminology: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/ 
     - FAQs: 
