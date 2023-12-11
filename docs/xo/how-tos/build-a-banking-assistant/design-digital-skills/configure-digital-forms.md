@@ -53,7 +53,7 @@ Create a form to gather the following information:
 3. From the left navigation menu, select **Digital Skills** -> **Digital Forms** to access the Digital Forms page.
 4. Click **New Form** and enter the following:
     * **Name**: name to the form, say _OpenAccount_.
-    * **Display Name** for the form, say _Open an Account_
+    * **Display Name** for the form, say _Open an Account_.
     * **Description** of the form.
     * **Description**: Turn on the toggle to show a description of the form in the header.
 
