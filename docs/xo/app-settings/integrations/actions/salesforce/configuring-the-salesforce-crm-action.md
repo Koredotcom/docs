@@ -11,7 +11,7 @@ This article explains how to authorize and enable the **Salesforce CRM** action 
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports OAuth 2.0 authentication to allow a Salesforce integration to exchange data. For more information, see [Setting Up Authorization Using OAuth v2](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-oauth-v2/){:target="_blank"} article. 
+The Kore.ai XO Platform supports OAuth 2.0 authentication to allow a Salesforce integration to exchange data. For more information, see [Setting Up Authorization Using OAuth v2](../../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2/){:target="_blank"} article. 
 
 The Kore.ai XO Platform supports the following authorization types for the Salesforce CRM integration:
 

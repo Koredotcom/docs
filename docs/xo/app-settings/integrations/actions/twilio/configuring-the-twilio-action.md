@@ -7,7 +7,7 @@ This article explains how to authorize and enable the **Twilio Verify** action a
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow Twilio Verify integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authentication){:target="_blank"} article.
+The Kore.ai XO Platform supports basic authentication to allow Twilio Verify integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the Twilio Verify integration:
 
@@ -73,7 +73,7 @@ Steps to authorize a Twilio Verify action at a user level:
     3. Click the **Select Authorization** drop-down and select the **Create New** option.  
     <img src="../images/twilio-action-img5.png" alt="Create new authorization" title="Create new authorization" style="border: 1px solid gray;zoom:50%;"/>
 
-    4. Select the type of authorization mechanism. For example, select the Basic Auth option. To create Basic Auth profiles, see [Bot Authorization Overview](../../../../dev-tools/bot-authentication){:target="_blank"}.
+    4. Select the type of authorization mechanism. For example, select the Basic Auth option. To create Basic Auth profiles, see [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"}.
     5. Enter the following authentication credentials for the Basic Auth mechanism:
         * _Name_ – Enter the name for the Basic Auth profile.
         * Select _Yes; some tasks will have tenancy URLs, and the user must provide the URLs to authenticate successfully_.
