@@ -6,7 +6,7 @@ In a standard Dialog Task, this scenario is designed by placing a series of Enti
 
 **Digital Forms** provide a range of input fields that allow your assistant to capture the required details from end-users. After the users complete the form, the input is submitted to the VA to proceed with the task at hand.
 
-In this article, we discuss the features and implementation of Digital Forms in the Kore.ai XO Platform. For a use case example and a step-by-step implementation of a Digital Form [click here](https://developer.kore.ai/docs/bots/how-tos/how-to-configure-ui-forms/).
+In this article, we discuss the features and implementation of Digital Forms in the XO Platform. For a use case example and a step-by-step implementation of a Digital Form [click here](https://developer.kore.ai/docs/bots/how-tos/how-to-configure-ui-forms/).
 
 ## Features
 * Improved user experience with a single interface for input collection.
@@ -21,7 +21,7 @@ You can access **Digital Forms** from the **Build** top menu under **Digital Ski
 
 <img src="../../images/access-digital-forms.png" alt="Access Digital Forms" title="Access Digital Forms" style="border: 1px solid gray; zoom:75%;">
 
-Here is the overall usage process for Digital Forms within the Kore.ai XO Platform
+Here is the overall usage process for Digital Forms within the XO Platform
 
 * **Form Creation**: Define a Digital Form by adding components and configuring their properties.
 * **Form Invocation**: Forms are invoked from inside a task or process:

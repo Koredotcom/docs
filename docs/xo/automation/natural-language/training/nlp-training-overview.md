@@ -58,7 +58,7 @@ Similarly, if you are planning to use Deep Neural Networks, you need a higher nu
 
 ### Knowledge Graph Engine
 
-If your intents are more query-like in nature than transactional tasks or if the content is in documents and you want the VA to answer user queries from documents, then use Knowledge Collection. This engine can also be used to trigger dialog tasks in response to user queries thus incorporating other features available within the Kore.ai XO Platform.
+If your intents are more query-like in nature than transactional tasks or if the content is in documents and you want the VA to answer user queries from documents, then use Knowledge Collection. This engine can also be used to trigger dialog tasks in response to user queries thus incorporating other features available within the XO Platform.
 
 If you have a lot of Intents and do not have time to prepare alternate utterances, but you are able to manually annotate some important terms, use Knowledge Collection. It is advisable to spend some time building a corpus and going for Machine Learning since annotation in the Knowledge Graph works in a similar way to ML’s auto-learning process. [Learn more about the Knowledge Graph](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/).
 

@@ -12,7 +12,7 @@ You can find Small Talk on the Unified XO Platform under **Build > Conversationa
 
 Positive interactions are key to businesses today, especially in the context of CRM automation. Even when people know that they are not being assisted by a human, they still appreciate the occasional joke, casual chat or other friendly cues that make human-to-human conversations more engaging. This is why a Virtual Assistant that can handle small talk improves the experience for your users or customers.
 
-The Small Talk Engine within the Kore.ai XO Platform lets you configure the conversational elements that are specific to your business context, so that you can create a conversational VA that recognizes when people make small talk and responds accordingly, thus providing a friendly experience, rather than one that feels dry and technical. 
+The Small Talk Engine within the XO Platform lets you configure the conversational elements that are specific to your business context, so that you can create a conversational VA that recognizes when people make small talk and responds accordingly, thus providing a friendly experience, rather than one that feels dry and technical. 
 
 ## Features
 

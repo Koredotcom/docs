@@ -271,7 +271,7 @@ Bot substitution is used to support the following patterns for user utterances:
 
 ## Bot word Aliases
 
-The Bots on the Kore.ai XO Platform can now be trained during the NL process to identify aliases or alternative spellings in utterances (during Speech-to-Text (STT) transcriptions).
+The Bots on the XO Platform can now be trained during the NL process to identify aliases or alternative spellings in utterances (during Speech-to-Text (STT) transcriptions).
 
 Alias is based on [Marking](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Marking), the chat script-specific process of linking concepts to words to match patterns based on those concepts.
 
@@ -315,7 +315,7 @@ Similarly, in the example below, the system marks `Kelly` as the alias for `Tele
 
 ## Bot Homophones
 
-The Kore.ai XO Platform now supports **Bot Homophones** or Homonyms to identify the relevant word when two or more words are pronounced the same but have different spellings. Homonyms are a challenge on voice channels because while processing and adjusting an utterance on the Natural Language (NL) Pipeline, the Speech-to-Text (STT) engine can easily transcribe the wrong word. For example, `Write an email` can be wrongly transcribed to `Right an email`.
+The XO Platform now supports **Bot Homophones** or Homonyms to identify the relevant word when two or more words are pronounced the same but have different spellings. Homonyms are a challenge on voice channels because while processing and adjusting an utterance on the Natural Language (NL) Pipeline, the Speech-to-Text (STT) engine can easily transcribe the wrong word. For example, `Write an email` can be wrongly transcribed to `Right an email`.
 
 With Bot Homophones, the system considers all the alternative homophones to check for a better, or equally valid, word choice during the NL pipeline and [POS tagging](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Parts_of_Speech_POS_tagging) processes.
 
@@ -435,7 +435,7 @@ To add an entity pattern, follow the below steps:
 
 ### Negative Patterns
 
-On the Kore.ai XO Platform, a natural language engine attempts to identify the user’s input and match it to a task.
+On the XO Platform, a natural language engine attempts to identify the user’s input and match it to a task.
 
 During this process, you may want the NLP engine to identify and filter the matched intents, but not trigger them.
 
