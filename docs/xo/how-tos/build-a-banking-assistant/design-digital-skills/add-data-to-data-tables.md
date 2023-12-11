@@ -143,12 +143,12 @@ Create a Data Table to hold the following information:
 
 <img src="../images/add-column-details.png" alt="add column details" title="add column details" style="border: 1px solid gray; zoom:75%;">
 
-6. Under the **Indexes** section add an index for CustId to be unique.
+<ol start="6"><li>Under the <b>Indexes</b> section add an index for CustId to be unique.</li>
 <img src="../images/indexes-section.png" alt="indexes section" title="indexes section" style="border: 1px solid gray; zoom:75%;">
 
-7. Click **Create** and your table is ready.
-8. Under the **Bot Assignments** add the bot which would be using this table, say _Banking Bot_, and give _Read_, _Write_ and _Delete_ permissions. _Delete_ permission is optional since we would not be deleting data.
-<img src="../images/bot-assignments.png" alt="bot assignments" title="bot assignments" style="border: 1px solid gray; zoom:75%;">
+<li>Click <b>Create</b> and your table is ready.</li>
+<li>Under the <b>Bot Assignments</b> add the bot which would be using this table, say <i>Banking Bot</i>, and give <i>Read</i>, <i>Write</i> and <i>Delete</i> permissions. <i>Delete</i> permission is optional since we would not be deleting data.</li>
+<img src="../images/bot-assignments.png" alt="bot assignments" title="bot assignments" style="border: 1px solid gray; zoom:75%;"></ol>
 
 ### Dialog Task Configuration
 
@@ -223,28 +223,27 @@ We will be creating a dialog task to gather the required information, and use a 
   </tr>
 </table>
 
-5. `CustType` can be Basic, Preferred, or Premium based on the income level of the customer. For this purpose, we have used a static list to populate the CustType value as follows:
+<ol start="5"><li><code>CustType</code> can be Basic, Preferred, or Premium based on the income level of the customer. For this purpose, we have used a static list to populate the CustType value as follows:</li>
 <img src="../images/basic-cust-type.png" alt="basic cust type" title="basic cust type" style="border: 1px solid gray; zoom:75%;">
 
-6. For generating the CustID, we need to get the last customer id in the table and add one to it. For this, we will first fetch data from the table and then use a Script node to process the id.
+<li>For generating the CustID, we need to get the last customer id in the table and add one to it. For this, we will first fetch data from the table and then use a Script node to process the id.</li></ol>
 
 #### Fetch Data
 
 You can use a Service call to fetch data from the table:
 
-1. Click the **+** against the last entity node.
+1. Click the **+** icon of the last entity node.
 2. Select **Service** -> **New Service Node** option.
 3. From the **General Settings** section configure the following:
-* **Name** say _GetLastCustId_
-* **Display Name** say _Get Customer Data_
-* **Service Type** select _Data Service_
-* **Type** select _Table_.
+    * **Name** say _GetLastCustId_
+    * **Display Name** say _Get Customer Data_
+    * **Service Type** select _Data Service_
+    * **Type** select _Table_.
 4. Under **Request Definition** click **Add Request** to define a request to fetch data from the table.
 5. In the **Data Service Request Definition** page, enter the following:
     * **Choose Table Name** as _customertable_
     * **Actions** as _Get Data_.
-
-<img src="../images/configure-data-service-request.png" alt="configure data service request" title="configure data service request" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/configure-data-service-request.png" alt="configure data service request" title="configure data service request" style="border: 1px solid gray; zoom:75%;">
 
 6. **Test** and **Save** the definition and **close** the service node.
 7. Add a **Script** node to process the values fetched from the data service to obtain the value for the next customer id using the following script:
@@ -337,7 +336,7 @@ We will be using a Service call to add data to the table:
 
 <img src="../images/data-service-request.png" alt="data service request" title="data service request" style="border: 1px solid gray; zoom:75%;">
 
-7. Add a **Message node** to display the values added using the following response format:
+<ol start="7"><li>Add a <b>Message node</b> to display the values added using the following response format:</li></ol>
 
 ```js
 Customer account created for: {{context.GetCustData.response.body.queryResult[0].CustName}}, {{context.GetCustData.response.body.queryResult[0].CustEmail}}, {{context.GetCustData.response.body.queryResult[0].CustAddress}}, {{context.GetCustData.response.body.queryResult[0].CustType}}

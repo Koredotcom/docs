@@ -9,10 +9,7 @@ For details on what Digital Views are and how it is implemented in the Kore.ai B
 
 Consider a Banking Bot trying to address the following scenarios:
 
-<video class="wp-video-shortcode" id="video-23376-1" width="410" height="528" preload="metadata" controls="controls"><source type="video/mp4" src="../images/WP_howto.mp4" /><a href="../images/WP_howto.mp4">Banking Bot Demo</a></video>
-
-<video width="410" height="530" controls>
-<source src="../images/WP_howto.mp4" type="video/mp4"></video>
+<video class="wp-video-shortcode" id="video-23376-1" width="360" height="528" preload="metadata" controls="controls"><source type="video/mp4" src="../images/WP_howto.mp4" /><a href="../images/WP_howto.mp4">Banking Bot Demo</a></video>
 
 This document gives a step-by-step approach to achieve all the above-mentioned scenarios using – Digital Views (Panels, Widgets), Widget SDK and Web/Mobile Client.
 
@@ -80,6 +77,7 @@ You can use the **Open Dialog Task** icon, next to the select Dialog Task drop d
 * **Save as preview** will set the output as the thumbnail against the widget.
 
 **Savings Account**: Repeat the above steps for Account View from _savings_ account of the same account number.
+
 <img src="../images/savings-account-widget.png" alt="savings account widget" title="savings account widget" style="border: 1px solid gray; zoom:75%;">
 
 ### Panel Configuration
@@ -103,6 +101,7 @@ We will see how to create Widgets with static JSON content. We will use a JSON t
 
 1. Click on **Create Panel** to create a new panel and name it **JSON Example**.
 2. Use the **More** icon and select **Panel Management**, there you will find the option to **Create Widget**. Click on that.
+
 <img src="../images/panel-management.png" alt="panel management" title="panel management" style="border: 1px solid gray; zoom:75%;">
 
 3. In the **New Widget** dialog, enter the Name, and set the source to JSON.
