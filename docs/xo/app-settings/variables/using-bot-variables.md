@@ -48,12 +48,12 @@ You can use the encrypted environment variable values in the following modules i
 
     * **Authorization Profiles** – You can use encrypted/regular environment variables on the following fields while defining a new authorization mechanism for all types of authorizations:
 
-        * **Authorization Check URL**, **Field Key** for form field, and **Field Key** and **Field Value Authorization Fields** for Authorization Type _Basic Auth_. [Learn more](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-basic-auth/){:target="_blank"}.
-        * **Client Id**, **Client Secret Key**, and **Authorization URL** for Authorization Type _Oauth V2_. [Learn more](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-oauth-v2/){:target="_blank"}.
+        * **Authorization Check URL**, **Field Key** for form field, and **Field Key** and **Field Value Authorization Fields** for Authorization Type _Basic Auth_. [Learn more](../../dev-tools/bot-authorization/setting-up-authorization-using-basic-auth){:target="_blank"}.
+        * **Client Id**, **Client Secret Key**, and **Authorization URL** for Authorization Type _Oauth V2_. [Learn more](../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2/){:target="_blank"}.
         * **Client Id**, **Client Secret Key**, **Token Request URL**, **Scope**, and **Refresh Token URL** for Authorization Type _Oauth V2 Client Credentials_.
-        * **Consumer Key**, **Consumer Secret**, **Request Token Link**, **Access Token Link**, and **User Authorization Link** for Authorization Type _Oauth V1_. [Learn more](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-oauth-v1/){:target="_blank"}.
-        * **Authorization Check URL** and **Field Key** (for Form Field) for Authorization Type _API Key_. [Learn more](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-an-api-key/){:target="_blank"}.
-        * **Field Key** for Form Field, **Token URL**, **Field Key**, and **Field Value** for Authorization Field, and **Refresh Token URL** for Authorization Type _Oauth V2 Password Grant Type_. [Learn more](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-oauth-v2-password-grant/){:target="_blank"}.
+        * **Consumer Key**, **Consumer Secret**, **Request Token Link**, **Access Token Link**, and **User Authorization Link** for Authorization Type _Oauth V1_. [Learn more](../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v1/){:target="_blank"}.
+        * **Authorization Check URL** and **Field Key** (for Form Field) for Authorization Type _API Key_. [Learn more](../../dev-tools/bot-authorization/setting-up-authorization-using-an-api-key/){:target="_blank"}.
+        * **Field Key** for Form Field, **Token URL**, **Field Key**, and **Field Value** for Authorization Field, and **Refresh Token URL** for Authorization Type _Oauth V2 Password Grant Type_. [Learn more](../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2-password-grant/){:target="_blank"}.
 
 The availability of the environment variables has been extended to the **Field Key** and **Field Value** parameters.  
 <img src="../images/env-and-content-variables-img3.png" alt="Field Key and Field Value" title="Field Key and Field Value" style="border: 1px solid gray;zoom:50%;"/>
