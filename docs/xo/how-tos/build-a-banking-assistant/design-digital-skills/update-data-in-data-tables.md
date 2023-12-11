@@ -38,14 +38,14 @@ We will create a dialog task to gather the required information, and use a **Ser
 #### Create Dialog Task
 
 1. From the left navigation menu, select **Bot Tasks -> Dialog Tasks**.
-2. Click the **+** against the **Dialog Tasks** to create a new Task.
+2. Click the **+** icon against the **Dialog Tasks** to create a new Task.
     * Enter **IntentName**, say, _UpdateCustomer_.
     * **Create & Proceed** to open the dialog builder page.
 3. Retain the Intent Node default settings, and close the Intent Node.
-4. Click the **+** next to the intent node and add an **Entities** to capture the customer id: 
+4. Click the **+** icon next to the intent node and add an **Entities** to capture the customer id: 
 
-<table>
-  <tr>
+<table border="1.5">
+<tr bgcolor="#ECECEC">
    <td>
     <strong>ENTITY NAME</strong>
    </td>
@@ -75,7 +75,7 @@ We will create a dialog task to gather the required information, and use a **Ser
 
 You can use a Service call to fetch data from the table:
 
-1. Click the **+** against the entity node.
+1. Click the **+** icon against the entity node.
 2. Select **Service** -> **New Service Node** option.
 3. From the **General Settings** section configure the following:
     * **Name** say _GetCustomerData_.
@@ -90,8 +90,8 @@ You can use a Service call to fetch data from the table:
 
 <img src="../images/data-service-request-definition.png" alt="data service request definition" title="data service request definition" style="border: 1px solid gray; zoom:75%;">
 
-6. **Save** the definition and close the service node.
-7. Add a **Message Node** to display the records fetches using the following context variable values, since we are fetching only one record, we are using a static _[0]_ reference to the row:
+<ol start="6"><li><b>Save</b> the definition and close the service node.</li>
+<li>Add a <b>Message Node</b> to display the records fetches using the following context variable values, since we are fetching only one record, we are using a static _[0]_ reference to the row:</li></ol>
 
 ```
 For the customer number entered, we have the following details: {{context.GetCustomerData.response.body.queryResult[0].CustName}}, {{context.GetCustomerData.response.body.queryResult[0].CustEmail}}, {{context.GetCustomerData.response.body.queryResult[0].Address}}, {{context.GetCustomerData.response.body.queryResult[0].CustType}}
@@ -101,11 +101,11 @@ For the customer number entered, we have the following details: {{context.GetCus
 
 We will be using an entity node and a logic node to capture the inputs from the customer and to control the process flow:
 
-1. Click the **+** against the last message node added above.
+1. Click the **+** icon against the last message node added above.
 2. Select an **Entity Node** and add a _List of Items (enumerated)_ type entity with the following settings. 
 
-<table>
-  <tr>
+<table border="1.5">
+<tr bgcolor="#ECECEC">
    <td>
     <strong>DISPLAY NAME</strong>
    </td>
@@ -164,8 +164,8 @@ else {
 
 **Assign Values** from the entities defined as follows, remember you need to include all the fields and their values, else the field would be set to null value:
 
-<table>
-  <tr>
+<table border="1.5">
+<tr bgcolor="#ECECEC">
    <td>
         <strong>COLUMN</strong>
    </td>

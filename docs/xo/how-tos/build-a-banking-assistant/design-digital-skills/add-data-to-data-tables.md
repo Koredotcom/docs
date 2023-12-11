@@ -159,11 +159,11 @@ We will be creating a dialog task to gather the required information, and use a 
 #### Create Dialog Task
 
 1. From the left navigation menu, select **Bot Tasks** -> **Dialog Tasks**.
-2. Click the **+** against the **Dialog Tasks** to create a new Task, and follow the steps below:
+2. Click the **+** icon against the **Dialog Tasks** to create a new Task, and follow the steps below:
     * Enter **IntentName**, say, _AddCustomer_
     * **Create & Proceed** to open the dialog builder page.
 3. Retain the Intent Node default settings, and close the Intent Node.
-4. Click the **+** next to the intent node and add four **Entities** as follows: 
+4. Click the **+** icon next to the intent node and add four **Entities** as follows: 
 
 <table border="1.5">
 <tr bgcolor="#ECECEC">
@@ -270,7 +270,7 @@ context.lastID = id;
 
 We will be using a Service call to add data to the table:
 
-1. Click the **+** against the last Entity node added above.
+1. Click the **+** icon against the last Entity node added above.
 2. Select **Service** -> **New Service Node** option.
 3. From the **General Settings** section configure the following:
     * **Name** say _AddCustData_.
