@@ -13,11 +13,11 @@ OAuth v1 authorization works as follows:
 2. The XO Platform redirects the user to a login dialog at the web application.
 3. The user authorizes the request token, associating it with their account.
 4. The web application redirects the user back to the XO Platform.  
-<img src="../images/oauth-v1-img1.png" alt="Auth profile - Add" title="Auth profile - Add" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/oauth-v1-img1.png" alt="Auth profile - Add" title="Auth profile - Add" style="border: 1px solid gray;zoom:80%;"/>
 
 5. The XO Platform exchanges the request token for an access token.
 6. The access token allows the XO Platform to access a protected resource at the provider, on behalf of the user.  
-<img src="../images/oauth-v1-img2.png" alt="New auth mechanism details" title="New auth mechanism details" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/oauth-v1-img2.png" alt="New auth mechanism details" title="New auth mechanism details" style="border: 1px solid gray;zoom:80%;"/>
 
 
 ## Configuring oAuth v1 Authorization
@@ -97,13 +97,13 @@ or
 <p>
 https://{tenant}.service-now.com/api/now/v1/table/incident
 <p>
-For more information, see <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/using-session-and-context-variables-in-tasks/" target="_blank">Using Session and Context Variables in Tasks</a>.
+For more information, see <a href="../../../automation/use-cases/using-session-and-context-variables" target="_blank">Using Session and Context Variables in Tasks</a>.
    </td>
   </tr>
   <tr>
    <td>Access Using a Connector
    </td>
-   <td>Select <strong>Yes</strong> to enable access for Kore.ai Bots using the Kore.ai Connector agent. This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network. For more information, see <a href="https://developer.kore.ai/docs/bots/bot-admin/security-control/security-module-overview/#Why_Use_the_Koreai_Connector_for_Bots" target="_blank">Using the Kore.ai Connector</a>.
+   <td>Select <strong>Yes</strong> to enable access for Kore.ai Bots using the Kore.ai Connector agent. This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network. For more information, see <a href="../../../xo/bot-administration/security-and-control/security-module-overview" target="_blank">Using the Kore.ai Connector</a>.
    </td>
   </tr>
   <tr>
@@ -115,7 +115,7 @@ For more information, see <a href="https://developer.kore.ai/docs/bots/bot-build
   <tr>
    <td>Description
    </td>
-   <td>:Enter a description for your authorization task. 
+   <td>Enter a description for your authorization task. 
    </td>
   </tr>
 </table>
@@ -127,7 +127,7 @@ If required, in the **Subdomain** section, select **Yes** if the base URL for a 
 
 In the following example configuration, the tenancy URL contains the {tenant} organization placeholder.
 
-<img src="../images/oauth-v1-img3.png" alt="Defining tenancy" title="Defining tenancy" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/oauth-v1-img3.png" alt="Defining tenancy" title="Defining tenancy" style="border: 1px solid gray;zoom:80%;"/>
 
 
 ## Adding Additional Fields
@@ -138,7 +138,7 @@ If, for example, the default username and password fields do not meet your needs
 
 **Additional Fields** are added as shown in the following illustration.
 
-<img src="../images/oauth-v1-img4.png" alt="Additional fields"" title="Additional fields" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/oauth-v1-img4.png" alt="Additional fields"" title="Additional fields" style="border: 1px solid gray;zoom:80%;"/>
 
 Specify the following fields:
 
@@ -151,7 +151,7 @@ Specify the following fields:
 
 By default, no authorization fields are configured as part of the header of the request message. If your request requires authorization fields or the expected authorization is not part of the header, for example, social security number or PIN, click **Add Authorization Fields** and then define the fields as shown in the following illustration.
 
-<img src="../images/oauth-v1-img5.png" alt="Adding auth fields" title="Adding auth fields" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/oauth-v1-img5.png" alt="Adding auth fields" title="Adding auth fields" style="border: 1px solid gray;zoom:80%;"/>
 
 1. In the **Field Type** field, you can select one of the following depending on where in the request message and the type of authorization fields that are required.
     1. **Header** – The assistant expects the authorization fields as part of the header of the request.
@@ -168,10 +168,10 @@ By default, no authorization fields are configured as part of the header of the 
 
 After you save the authorization, you can test it on the **Authorization** page when you click **Test** before continuing to develop the remaining steps of your assistant. When you click **Test**, the test is executed using the **authorization token URLs** and the **Consumer Key** and **Consumer Token**. If the tenancy was defined, the **Test Authorization** dialog is displayed. 
 
-<img src="../images/oauth-v1-img6.png" alt="Test authorization dialog" title="Test authorization dialog" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/oauth-v1-img6.png" alt="Test authorization dialog" title="Test authorization dialog" style="border: 1px solid gray;zoom:80%;"/>
 
 Click **Test** to begin the authorization test. 
 
 When the validation of authorization is complete, the **Test Authorization** dialog is closed and the results of the validation, either success or failure, is displayed. If the authorization fails, the _Auth Test Failed_ message is displayed along with the **Headers** and **Response** tabs.
 
-<img src="../images/oauth-v1-img7.png" alt="Auth Test Failed" title="Auth Test Failed" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/oauth-v1-img7.png" alt="Auth Test Failed" title="Auth Test Failed" style="border: 1px solid gray;zoom:80%;"/>
