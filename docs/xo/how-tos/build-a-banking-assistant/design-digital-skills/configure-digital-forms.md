@@ -142,7 +142,7 @@ Click the card to select the style. If it has a logo, you can upload an image fi
 
 Continue with this task and transition to this node: In the **Select Node** drop-down list, you can select any node present in the current dialog task.
 
-<img src="../images/select-node-dropdown-list.png" alt="select node dropdown" title="select node dropdown" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/select-node-dropdown-list.png" alt="select node dropdown" title="select node dropdown" style="border: 1px solid gray; zoom:125%;">
 
 
 !!!note
