@@ -165,6 +165,6 @@ When you click **Test**, the **Test Authorization** dialog is displayed and popu
 <img src="../images/oauth-v2-password-grant-img7.png" alt="Test authorization dialog" title="Test authorization dialog" style="border: 1px solid gray;zoom:80%;"/>
 
 
-When the validation of authorization is complete, the **Test Authorization** dialog is closed and the results of the validation, either success or failure, is displayed to the immediate right of the **Test **button. If the authorization fails, the _Auth Test Failed_ message is displayed along with the **Headers** and **Response** tabs as shown in the following illustration.
+When the validation of authorization is complete, the **Test Authorization** dialog is closed and the results of the validation, either success or failure, is displayed to the immediate right of the **Test** button. If the authorization fails, the _Auth Test Failed_ message is displayed along with the **Headers** and **Response** tabs as shown in the following illustration.
 
 <img src="../images/oauth-v2-password-grant-img8.png" alt="Test result" title="Test result" style="border: 1px solid gray;zoom:80%;"/>
