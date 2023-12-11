@@ -33,7 +33,7 @@ OAuth v2 is the new version of the open protocol to allow secure authorization v
 
 ### Basic HTTP Authentication
 
-HTTP Basic Auth is a simple method that creates a username and password style authentication for HTTP requests. This technique uses a header called Authorization, with a base64 encoded representation of the username and password. For more information, read the [Bot Authorization Overview](../../../dev-tools/bot-authentication/){:target="_blank"} article.
+HTTP Basic Auth is a simple method that creates a username and password style authentication for HTTP requests. This technique uses a header called Authorization, with a base64 encoded representation of the username and password. For more information, read the [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} article.
 
 
 ### API Key
