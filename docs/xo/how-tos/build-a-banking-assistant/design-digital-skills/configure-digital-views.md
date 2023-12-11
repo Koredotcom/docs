@@ -102,10 +102,10 @@ We will see how to create Widgets with static JSON content. We will use a JSON t
 1. Click on **Create Panel** to create a new panel and name it **JSON Example**.
 2. Use the **More** icon and select **Panel Management**, there you will find the option to **Create Widget**. Click on that.
 
-<img src="../images/panel-management.png" alt="panel management" title="panel management" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/panel-management.png" alt="panel management" title="panel management" style="border: 1px solid gray; zoom:75%;">
 
-3. In the **New Widget** dialog, enter the Name, and set the source to JSON.
-<img src="../images/configure-new-widget-dialog.png" alt="configure new widget dialog" title="configure new widget dialog" style="border: 1px solid gray; zoom:75%;">
+<ol start="3"><li>In the <b>New Widget</b> dialog, enter the Name, and set the source to JSON.</li>
+<img src="../images/configure-new-widget-dialog.png" alt="configure new widget dialog" title="configure new widget dialog" style="border: 1px solid gray; zoom:75%;"></ol>
 
 Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, click <a href="https://developer.kore.ai/docs/bots/sdks/widget-sdk-message-formatting-and-templates/" target="_blank"> here</a>. 
 

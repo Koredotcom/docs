@@ -54,8 +54,8 @@ Create a Data Table to hold the following information:
 5. Under the **Column** section add the following details: 
 
 
-<table>
-  <tr>
+<table border="1.5">
+<tr bgcolor="#ECECEC">
    <td>
     <strong>COLUMN NAME</strong>
    </td>
@@ -165,8 +165,8 @@ We will be creating a dialog task to gather the required information, and use a 
 3. Retain the Intent Node default settings, and close the Intent Node.
 4. Click the **+** next to the intent node and add four **Entities** as follows: 
 
-<table>
-  <tr>
+<table border="1.5">
+<tr bgcolor="#ECECEC">
    <td>
     <strong>ENTITY NAME</strong>
    </td>
@@ -283,8 +283,8 @@ We will be using a Service call to add data to the table:
     * **Actions** as _Add Data_.
 6. **Assign Values** from the entities defined as follows:
 
-<table>
-  <tr>
+<table border="1.5">
+<tr bgcolor="#ECECEC">
    <td>
         <strong>COLUMN</strong>
    </td>
