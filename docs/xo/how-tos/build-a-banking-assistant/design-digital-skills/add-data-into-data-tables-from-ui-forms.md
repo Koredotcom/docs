@@ -29,8 +29,8 @@ Consider a Banking Bot trying to address the following scenarios:
         * **Description**, say _Account details Table;_
         * Under the **Column** section add the following details:
 
-<table>
-  <tr>
+<table border="1.5">
+<tr bgcolor="#ECECEC">
    <td>
             <strong>COLUMN NAME</strong>
 </li>  
@@ -187,7 +187,7 @@ We will be creating a dialog task and adding a form node to trigger the UI Form 
 
 <img src="../images/check-customer-id-validity.png" alt="check customer id validity" title="check customer id validity" style="border: 1px solid gray; zoom:75%;">
 
-6. Add a **Logic** node to proceed with the Form if the customer id is valid else prompt for the customer id.
+<ol start="6"><li>Add a <b>Logic</b> node to proceed with the Form if the customer id is valid else prompt for the customer id.</li>
 <img src="../images/logic-node.png" alt="logic node" title="logic node" style="border: 1px solid gray; zoom:75%;">
 
 The _InvalidCustId_ is a **Message** node with the following JavaScript:
