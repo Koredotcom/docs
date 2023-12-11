@@ -22,7 +22,7 @@ Define a custom authorization type for non-standard web service authorization ty
 
 ### OAuth v2 client credentials
 
-This option allows you to configure authorization using client credentials. [Learn more.](../authorization/bot-oauthv2-clientcredentials/){:target="_blank"}
+This option allows you to configure authorization using client credentials. [Learn more.](../bot-oauthv2-clientcredentials/){:target="_blank"}
 
 
 ### OAuth v2
