@@ -1,4 +1,4 @@
-# **Using Bot Variables**
+# Using Bot Variables
 
 **Bot variables** help you capture values that are commonly used by different tasks, nodes, and other bot elements. You can configure a bot variable as a key-value pair once in the bot settings and substitute key with value at runtime during the conversation flow. By capturing frequently used values in a single place, bot variables provide the advantages of reusability and consistency. For example, let’s say you are testing a flight booking bot using a staging endpoint. If you configure the endpoint as a variable, it helps you to call the API from several places quickly. When you want to change the staging endpoint to production while publishing the bot, it is easy. Similarly, variables can be used to externalize content for messages and prompts from the dialog flow definition. Kore.ai platform allows bot developers to define two types of variables – Environment and Content.
 

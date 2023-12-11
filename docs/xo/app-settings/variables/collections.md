@@ -1,4 +1,4 @@
-# **Collections**
+# Collections
 
 Collections enable you to store multiple value sets for Environment Variables so that you can select the appropriate variable set while promoting the bot definition to a different environment without manual intervention.
 
