@@ -1,5 +1,4 @@
-
-# **What’s New**
+# What’s New
 
 Learn about the new features and enhancements included in v10.1 of **Kore.ai Experience Optimization Platform** which was released on April 16, 2023.
 
