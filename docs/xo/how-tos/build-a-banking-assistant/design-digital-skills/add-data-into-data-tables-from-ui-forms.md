@@ -29,125 +29,125 @@ Consider a Banking Bot trying to address the following scenarios:
         * **Description**, say _Account details Table;_
         * Under the **Column** section add the following details:
 
-<table border="1.5">
-<tr bgcolor="#ECECEC">
-   <td>
-            <strong>COLUMN NAME</strong>
+    <table border="1.5">
+    <tr bgcolor="#ECECEC">
+    <td>
+    <strong>COLUMN NAME</strong>
+    </td>
+    <td>
+    <strong>TYPE</strong>
+    </td>
+    <td>
+    <strong>REQUIRED</strong>
    </td>
    <td>
-            <strong>TYPE</strong>
+    <strong>ADDITIONAL SETTINGS</strong>
+   </td>
+    </tr>
+    <tr>
+    <td>
+    AccountId
+    </td>
+    <td>
+    number
    </td>
    <td>
-            <strong>REQUIRED</strong>
+    Yes
    </td>
    <td>
-            <strong>ADDITIONAL SETTINGS</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>
-            AccountId
-   </td>
-   <td>
-            number
-   </td>
-   <td>
-            Yes
-   </td>
-   <td>
-            Encrypted & Max Length of 5
-   </td>
-  </tr>
-  <tr>
-   <td>
-            AccountName
-   </td>
-   <td>
-            string
-   </td>
-   <td>
-            Yes
-   </td>
-   <td>
-            –
+    Encrypted & Max Length of 5
    </td>
   </tr>
   <tr>
    <td>
-            AccountType
+    AccountName
    </td>
    <td>
-            string
+    string
    </td>
    <td>
-            No
+    Yes
    </td>
    <td>
-            –
+     –
    </td>
   </tr>
   <tr>
    <td>
-            CustId
+    AccountType
    </td>
    <td>
-            number
+    string
    </td>
    <td>
-            Yes
+    No
    </td>
    <td>
-            Reference table & column as
+    –
+   </td>
+  </tr>
+  <tr>
+   <td>
+    CustId
+   </td>
+   <td>
+    number
+   </td>
+   <td>
+    Yes
+   </td>
+   <td>
+    Reference table & column as
 <p>
 
-            <em>customertable.CustId</em>
+<em>customertable.CustId</em>
    </td>
   </tr>
   <tr>
    <td>
-            CashCard
+    CashCard
    </td>
    <td>
-            string
+    string
    </td>
    <td>
-            No
+    No
    </td>
    <td>
-            –
-   </td>
-  </tr>
-  <tr>
-   <td>
-            WithdrawalLimit
-   </td>
-   <td>
-            number
-   </td>
-   <td>
-            No
-   </td>
-   <td>
-            –
+    –
    </td>
   </tr>
   <tr>
    <td>
-            CCType
+    WithdrawalLimit
    </td>
    <td>
-            string
+    number
    </td>
    <td>
-            No
+    No
    </td>
    <td>
-            –
+    –
+   </td>
+  </tr>
+  <tr>
+   <td>
+    CCType
+   </td>
+   <td>
+    string
+   </td>
+   <td>
+    No
+   </td>
+   <td>
+    –
    </td>
   </tr>
 </table>
 
-<img src="../design-digital-skills/images/update-form.png" alt="update form" title="update form" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/update-form.png" alt="update form" title="update form" style="border: 1px solid gray; zoom:75%;">
 
 UI Form we will be using the UI Form configured as shown <a href="https://developer.kore.ai/docs/bots/how-tos/how-to-configure-ui-forms/#UI_Form_Configuration" target="_blank"> here</a>.
 
@@ -163,7 +163,7 @@ Dialog Task to:
 ### Dialog Task Configuration
 
 We will be creating a dialog task and adding a form node to trigger the UI Form created in the above step and use a service node to make a service call to add the new account from the form data.
-<img src="../design-digital-skills/images/dialog-task-configuration-ui-form.png" alt="dialog task configuration" title="dialog task configuration" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/dialog-task-configuration-ui-form.png" alt="dialog task configuration" title="dialog task configuration" style="border: 1px solid gray; zoom:75%;">
 
 #### Create Dialog Task
 
@@ -179,10 +179,10 @@ We will be creating a dialog task and adding a form node to trigger the UI Form 
     * Close the entity node.
 5. Add a **Service** node to check for the validity of the customer id entered.
 
-<img src="../design-digital-skills/images/check-customer-id-validity.png" alt="check customer id validity" title="check customer id validity" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/check-customer-id-validity.png" alt="check customer id validity" title="check customer id validity" style="border: 1px solid gray; zoom:75%;">
 
 6. Add a **Logic** node to proceed with the Form if the customer id is valid else prompt for the customer id.
-<img src="../design-digital-skills/images/logic-node.png" alt="logic node" title="logic node" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/logic-node.png" alt="logic node" title="logic node" style="border: 1px solid gray; zoom:75%;">
 
 The _InvalidCustId_ is a **Message** node with the following JavaScript:
 
@@ -243,7 +243,7 @@ if (context.forms.OpenAccount.accounttype == 'Credit Card')
 
 <ol start="10"><li>Use a <b>Service</b> node to add the account details using the context variables populated in the previous Script node.</li> 
 
-<img src="../design-digital-skills/images/service-node-to-add-account-details.png" alt="service node to add account details" title="service node to add account details" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/service-node-to-add-account-details.png" alt="service node to add account details" title="service node to add account details" style="border: 1px solid gray; zoom:75%;">
 
 <li>Your dialog with form and service nodes to update the data table is ready.</li>
 <li><b>Talk to bot</b> and follow the steps to add an account to a given customer id.</li></ol>
