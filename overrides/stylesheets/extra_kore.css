@@ -60,9 +60,9 @@ kr-grid[type="g1"] kr-grid-item:hover{
     border: 2px solid #eee;
 }
 kr-grid[type="g1"] kr-grid-item img{
-    width: 25%;
+    width: 100%;
     border-radius: 5px 5px 0px 0px;
-    height: 25%;
+    height: 100%;
     align-items: center;
     object-fit: none;
 }
