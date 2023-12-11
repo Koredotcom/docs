@@ -97,7 +97,7 @@ Steps to authorize a HubSpot action using developer credentials:
     * Click the **Select Authorization** drop-down and select the **Create New** option.  
     <img src="../images/hubspot-integration-img5.png" alt="Create new auth" title="Create new auth" style="border: 1px solid gray;zoom:50%;"/>
 
-    * Select the type of authorization mechanism. For example, select the **OAuth v2** option. To create custom OAuth profiles, see [Setting Up Authorization Using OAuth v2](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-oauthv2-clientcredentials/){:target="_blank"}.  
+    * Select the type of authorization mechanism. For example, select the **OAuth v2** option. To create custom OAuth profiles, see [Setting Up Authorization Using OAuth v2](../../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2){:target="_blank"}.  
     <img src="../images/hubspot-integration-img6.png" alt="Select auth mechanism" title="Select auth mechanism" style="border: 1px solid gray;zoom:50%;"/>
 
     * Enter the following authentication credentials for the OAuth v2 mechanism:
