@@ -29,120 +29,126 @@ Consider a Banking Bot trying to address the following scenarios:
         * **Description**, say _Account details Table;_
         * Under the **Column** section add the following details:
 
-    <table border="1.5">
-    <tr bgcolor="#ECECEC">
-    <td>
-    <strong>COLUMN NAME</strong>
-    </td>
-    <td>
-    <strong>TYPE</strong>
-    </td>
-    <td>
-    <strong>REQUIRED</strong>
+<table>
+  <tr>
+   <td>
+            <strong>COLUMN NAME</strong>
+</li>  
+</ul>
+</li>  
+</ul>
+</li>  
+</ul>
    </td>
    <td>
-    <strong>ADDITIONAL SETTINGS</strong>
-   </td>
-    </tr>
-    <tr>
-    <td>
-    AccountId
-    </td>
-    <td>
-    number
+            <strong>TYPE</strong>
    </td>
    <td>
-    Yes
+            <strong>REQUIRED</strong>
    </td>
    <td>
-    Encrypted & Max Length of 5
+            <strong>ADDITIONAL SETTINGS</strong>
    </td>
   </tr>
   <tr>
    <td>
-    AccountName
+            AccountId
    </td>
    <td>
-    string
+            number
    </td>
    <td>
-    Yes
+            Yes
    </td>
    <td>
-     –
-   </td>
-  </tr>
-  <tr>
-   <td>
-    AccountType
-   </td>
-   <td>
-    string
-   </td>
-   <td>
-    No
-   </td>
-   <td>
-    –
+            Encrypted & Max Length of 5
    </td>
   </tr>
   <tr>
    <td>
-    CustId
+            AccountName
    </td>
    <td>
-    number
+            string
    </td>
    <td>
-    Yes
+            Yes
    </td>
    <td>
-    Reference table & column as
+            –
+   </td>
+  </tr>
+  <tr>
+   <td>
+            AccountType
+   </td>
+   <td>
+            string
+   </td>
+   <td>
+            No
+   </td>
+   <td>
+            –
+   </td>
+  </tr>
+  <tr>
+   <td>
+            CustId
+   </td>
+   <td>
+            number
+   </td>
+   <td>
+            Yes
+   </td>
+   <td>
+            Reference table & column as
 <p>
 
-<em>customertable.CustId</em>
+            <em>customertable.CustId</em>
    </td>
   </tr>
   <tr>
    <td>
-    CashCard
+            CashCard
    </td>
    <td>
-    string
+            string
    </td>
    <td>
-    No
+            No
    </td>
    <td>
-    –
-   </td>
-  </tr>
-  <tr>
-   <td>
-    WithdrawalLimit
-   </td>
-   <td>
-    number
-   </td>
-   <td>
-    No
-   </td>
-   <td>
-    –
+            –
    </td>
   </tr>
   <tr>
    <td>
-    CCType
+            WithdrawalLimit
    </td>
    <td>
-    string
+            number
    </td>
    <td>
-    No
+            No
    </td>
    <td>
-    –
+            –
+   </td>
+  </tr>
+  <tr>
+   <td>
+            CCType
+   </td>
+   <td>
+            string
+   </td>
+   <td>
+            No
+   </td>
+   <td>
+            –
    </td>
   </tr>
 </table>
@@ -241,8 +247,7 @@ if (context.forms.OpenAccount.accounttype == 'Credit Card')
 }
 ```
 
-<ol start="10"><li>Use a <b>Service</b> node to add the account details using the context variables populated in the previous Script node.</li> 
-
+<ol start="10"><li>Use a <b>Service</b> node to add the account details using the context variables populated in the previous Script node.</li>
 <img src="../images/service-node-to-add-account-details.png" alt="service node to add account details" title="service node to add account details" style="border: 1px solid gray; zoom:75%;">
 
 <li>Your dialog with form and service nodes to update the data table is ready.</li>
