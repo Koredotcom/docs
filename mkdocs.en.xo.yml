@@ -118,11 +118,11 @@ markdown_extensions:
 copyright: |
   © 2023 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
-  - Platform:
-    - Getting Started:
-      - Platform:
-        - Introduction to the Platform: virtual-assistants-overview.md
-        - Access the Platform: virtual-assistants-overview.md   
+  - Platform : home.md
+  - Getting Started:
+    - PLATFORM:
+      - Introduction to the Platform: getting-started/about-xo-platform.md
+      - Access the Platform: virtual-assistants-overview.md   
       - Automation:
         - Introduction to Virtual Assistant: virtual-assistants-overview.md
         - Build a Virtual Assistant: virtual-assistants-overview.md   
@@ -135,18 +135,62 @@ nav:
       - Contact Center:
         - Introduction to Contact Center: virtual-assistants-overview.md
         - Set up Contact Center: virtual-assistants-overview.md       
-      - Campaign:
-        - Introduction to Campaign: virtual-assistants-overview.md
+      - Campaigns:
+        - Introduction to Campaigns: virtual-assistants-overview.md
         - Set up Campaign: virtual-assistants-overview.md       
-    - Glossary:
+      - Quality Management:
+        - Introduction to Quality Management: virtual-assistants-overview.md
+        - Configure Quality Management: virtual-assistants-overview.md         
+    - GLOSSARY:
       - Concepts and Terminology: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/ 
     - FAQs: 
       - Automation FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
       - Contact Center FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/   
-  - Automation:
-    - Design:
-      - Dialogs: getting-started.md 
-      - Knowledge AI: getting-started.md
+  - Automation: 
+    - DESIGN: 
+      - Dialogs Tasks:
+        - Overview: whats-new/whats-new-in-this-release.md 
+        - Navigating Dialog Tasks: automation/intelligence/context-management.md
+        - Build Dialog Tasks: automation/intelligence/context-management.md
+        - Node Types:
+          - Overview: automation/intelligence/context-management.md
+          - Intent Node: automation/intelligence/context-management.md
+          - Dialog Node: automation/intelligence/context-management.md
+          - Dynamic Intent Node: automation/intelligence/context-management.md
+          - GenAI Node: automation/intelligence/context-management.md
+          - GenAI Prompt: automation/intelligence/context-management.md
+          - Entity Node: automation/intelligence/context-management.md
+          - Form Node: automation/intelligence/context-management.md
+          - Confirmation Node: automation/intelligence/context-management.md
+          - Message Node: automation/intelligence/context-management.md
+          - Logic Node: automation/intelligence/context-management.md
+          - Bot Action Node: automation/intelligence/context-management.md
+          - Service Node: automation/intelligence/context-management.md
+          - Webhook Node: automation/intelligence/context-management.md
+          - Script Node: automation/intelligence/context-management.md
+          - Process Node: automation/intelligence/context-management.md
+          - Agent Transfer Node: automation/intelligence/context-management.md
+        - Node Connections:
+          - Node Connections Setup: automation/intelligence/context-management.md 
+          - Sub-Intent Scoping: automation/intelligence/context-management.md
+        - Entity Types: automation/intelligence/context-management.md
+        - Entity Rules: automation/intelligence/context-management.md
+        - User Prompts or Messages: automation/intelligence/context-management.md
+        - Voice Call Properties: automation/intelligence/context-management.md  
+      - Knowledge AI:
+        - Overview: automation/use-cases/knowledge-ai/knowledge-ai-introduction.md
+        - Knowledge Graph (KG):
+          - Introduction: automation/use-cases/knowledge-ai/knowledge-graph-overview.md
+          - Terminology: automation/use-cases/knowledge-ai/knowledge-graph-terminology.md
+          - Build a KG: automation/use-cases/knowledge-ai/build-a-knowledge-graph.md
+          - Manage FAQs: automation/use-cases/knowledge-ai/manage-faqs.md
+          - Knowledge Extraction: automation/use-cases/knowledge-ai/knowledge-extraction.md
+          - Import or Export KG:
+            - Prepare Data for Import: automation/use-cases/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
+            - Import or Export KG: automation/use-cases/knowledge-ai/import-and-export-knowledge-graph.md
+            - Auto-Generate KG: automation/use-cases/knowledge-ai/generate-a-knowledge-graph.md
+          - KG Analysis: automation/use-cases/knowledge-ai/knowledge-graph-analysis.md 
+      - Alert Tasks: automation/use-cases/small-talk.md
       - Small Talk: automation/use-cases/small-talk.md
       - Digital Skills: 
         - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
@@ -155,7 +199,7 @@ nav:
         - Digital Views: automation/use-cases/digital-skills/digital-views.md
         - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md
       - Feedback Survey: automation/use-cases/feedback-surveys.md
-    - Training:
+    - TRAINING:
       - Natural Language Processing:
         - Overview: automation/natural-language/nlp-introduction.md
         - NLP Guidelines: automation/natural-language/nlp-guidelines.md
@@ -165,24 +209,24 @@ nav:
         - Bot Synonyms: getting-started.md
         - Traits: getting-started.md
         - Fields: getting-started.md
-    - NLU Configuration: 
+    - NLU CONFIGURATION: 
       - Engine Tuning: automation/natural-language/nlu-configurations/engine-tuning.md
       - Amend Entity: automation/natural-language/nlu-configurations/amend-entities.md
       - Multi Intent Detect: automation/natural-language/nlu-configurations/multi-intent-detection.md
-    - Events: 
+    - EVENTS: 
       - Intent Events: getting-started.md 
       - conversation Events: getting-started.md 
       - Sentiment Events: getting-started.md
-    - Conversation Management: 
+    - CONVERSATION MANAGEMENT: 
       - Standard Responses: getting-started.md 
       - Manage Interruptions: getting-started.md 
       - Ignore Words and Field Memory: getting-started.md 
-    - Regression Testing: 
+    - REGRESSION TESTING: 
       - Health and Monitoring: getting-started.md 
       - Batch Testing: getting-started.md
       - Conversation Testing: getting-started.md
   - Answers:
-    - Content Sources:
+    - CONTENT SOURCES:
       - Directory: answers/content-sources/directory.md 
       - Web Crawl: answers/content-sources/web-crawl.md      
   - Contact Center:
@@ -200,7 +244,7 @@ nav:
     - Agent Experience:
       - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md 
       - Knowledge AI: agentassist/agent-experience/agent-realtime-coaching.md
-      - Small Talk: automation/use-cases/small-talk.md
+      - Small Talk: agentassist/agent-experience/agent-realtime-coaching.md
       - Digital Skills: 
         - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
         - Digital Forms: automation/use-cases/digital-skills/digital-forms.md

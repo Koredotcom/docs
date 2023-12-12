@@ -1,19 +1,34 @@
-
+html {
+    font-size: 120%;
+}
+.md-typeset h1,.md-typeset h2{
+    margin: 0 !important;
+}
+.logo{
+    height: 100%;
+}
+.logo-img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 .logo .logo-img img{
-    position: absolute;
-    top: -5px;
     width: 95px;
 }
 
 .logo .logo-img .logo-title{
-    position: absolute;
-    margin-left: 106px;
-    margin-top: 1px;
     color: #000;
 }
 [data-md-component="header"]{
     background-color: white !important;
     color: #898686 !important;
+}
+.md-search{
+    z-index: 4;
+}
+.md-search__form{
+    margin-bottom: 0px !important;
 }
 .md-search__input{
     background: #fff;
@@ -39,7 +54,7 @@ kr-grid[type="g1"] kr-grid-item{
     padding: 15px;
     border: 2px solid transparent;
     transition: border .25s;
-    border-radius: 5px;
+    border-radius: 5px;    
 }
 kr-grid[type="g1"] kr-grid-item:hover{
     border: 2px solid #eee;
@@ -47,8 +62,9 @@ kr-grid[type="g1"] kr-grid-item:hover{
 kr-grid[type="g1"] kr-grid-item img{
     width: 100%;
     border-radius: 5px 5px 0px 0px;
-    height: 100px;
-    object-fit: cover;
+    height: 50px;
+    align-items: center;
+    object-fit: none;
 }
 kr-grid[type="g1"] .glightbox{
     pointer-events: none;
@@ -57,12 +73,14 @@ kr-grid[type="g1"] kr-grid-title{
     display: block;
     font-weight: 700;
     margin: 15px 0px 0px 0px;
-    color: #4051b5;
+    color: #3b3c3f;
     font-size: 18px;
+    align-content: center;
 }
 kr-grid[type="g1"] kr-grid-desc{
     display: block;
     margin-bottom: 10px;
+    align-content: center;
 }
 /* kr grid g1 end*/
 

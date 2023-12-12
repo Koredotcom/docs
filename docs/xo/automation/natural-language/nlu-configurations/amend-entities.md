@@ -25,7 +25,7 @@ The entity amendment process is divided into three stages:
 
 ## Implementation Hierarchy
 
-On the Kore.ai XO Platform, Amend Entity behavior is defined at two levels:
+On the XO Platform, Amend Entity behavior is defined at two levels:
 
 * VA level
 * Task level

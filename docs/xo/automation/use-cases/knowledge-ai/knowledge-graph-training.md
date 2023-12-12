@@ -1,6 +1,6 @@
 # Knowledge Graph Training
 
-<a href="https://developer.kore.ai/docs/bots/nlp/optimizing-bots/" target="_blank">Training your Assistant</a> is not restricted to the Machine Learning and Fundamental Meaning engines. You must also train the Knowledge Graph (KG) engine.
+<a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/nlp-training-overview/" target="_blank">Training your Assistant</a> is not restricted to the Machine Learning and Fundamental Meaning engines. You must also train the Knowledge Graph (KG) engine.
 
 The Ontology-based Knowledge Graph turns static FAQ text into an intelligent, personalized conversational experience. It uses domain terms and relationships thus reducing the training needs. It also has the capability to enable the ontology weighted features whenever ML gets confused and to automate conversational dialog for resolving appropriate answers.
 
@@ -15,7 +15,7 @@ You can find the Knowledge Graph by selecting your desired VA, then going to **B
     Few-Shot Knowledge Graphs do not require an ontology and do not perform path qualification. Instead, they identify intents using semantic similarity and pattern recognition. However, if you want to train the VA on a specific use case for which the appropriate FAQ is not identified, you can map FAQs to an ontology, similar to what you would do with an Ontology-based Graph.
 
     The main difference concerning training is that in the Few-Shot KG, Terms don't require some of the training configurations needed in an Ontology Graph. Here are some key pointers:
-
+      
     1. Default Terms are not available. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.
 
     2. Organizer Terms do not support Path-Level and Knowledge Graph Synonyms. They support Intent Preconditions and Context Output.
@@ -35,7 +35,7 @@ The following are the overall capabilities of the Knowledge Graph Engine:
 * **Ease of Training using Synonyms**: Kore.ai’s Knowledge Graph has a provision to associate synonyms against a graph node. This helps capture the variation in a question. For example, *flight* can be used as a synonym for *plane* in an FAQ such as *How can I buy a plane ticket*?
 * **Better Coverage with Alternate Questions**: The Knowledge Graph has a provision to add alternate questions. This helps us to capture the various ways a user might ask the same question. For example, in *How do I change my flight?* we can add an alternate question as *Can I change my flight?*
 * **Improved Accuracy**: Ontology-driven question-answers reduce the possibility of false positives.
-* **Weighing Phrases using Traits**: Kore.ai’s Knowledge Graph engine includes a concept of traits for filtering out irrelevant suggestions. <a href="https://developer.kore.ai/docs/bots/nlp/traits/" target="_blank">Learn more</a>.
+* **Weighing Phrases using Traits**: Kore.ai’s Knowledge Graph engine includes a concept of traits for filtering out irrelevant suggestions. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-terminology/#traits" target="_blank">Learn more</a>.
 * **Ability to Mark Term Importance**: The Knowledge Graph has a provision to mark that an ontology term is important. For example, in the question, *How to book a flight?*, the word *flight* is an important term. If the *flight* keyword is not present in the user utterance, then it makes little sense.
 * **Ability to Group Relevant Nodes**: As the graph grows in size, managing graph nodes can become a challenging task. Using the *organizer node* construct of the ontology engine, developers can group relevant child nodes under a parent node.
 
@@ -74,7 +74,7 @@ From the Knowledge Graph, follow these steps to build and train the correspondin
 
 ## Training Configuration
 
-This article presupposes that you already know the basics of building your Knowledge Graph. If not, please read <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ontology/" target="_blank">this</a> article.
+This article presupposes that you already know the basics of building your Knowledge Graph. If not, please read <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-overview/#the-ontology-knowledge-graph" target="_blank">this</a> article.
 
 In order to configure the training of your Knowledge Graph for improved VA performance, we recommend that you go through as many of the following parameters as possible. These parameters involve:
 
@@ -130,7 +130,7 @@ To add synonyms for a term, follow the below steps:
    <li>These Knowledge Graph Synonyms can also be accessed from the <b>Manage Synonyms</b> option under the more options icon on the top-right of the Knowledge Graph page.
    <img src="../../images/manage-synonyms.png" alt="manage synonyms" title="manage synonyms" style="border: 1px solid gray; zoom:75%;"></li></ul>
 
-<ol start="4"><li>You can use <b>Bot Synonyms</b> in the identification of KG terms. This option can be enabled either from the <a href="https://developer.kore.ai/docs/bots/nlp/knowledge-graph/#Threshold_Configurations" target="_blank">Threshold and Configurations</a> or from <b>More Options</b> > <b>Manage Synonyms</b>.
+<ol start="4"><li>You can use <b>Bot Synonyms</b> in the identification of KG terms. This option can be enabled either from the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-training/#thresholds-configurations" target="_blank">Threshold and Configurations</a> or from <b>More Options</b> > <b>Manage Synonyms</b>.
 <p>Once enabled, the bot-level synonyms that match with KG terms (or tags) are automatically displayed under the Bot Synonyms heading in the <b>Synonyms</b> section and are used by the KG engine.</p>
 <p>The Bot Synonyms are used similar to that of KG graph-level synonyms, for path qualification and for question matching. When a node matches both with a bot synonym and a bot concept, the bot concept takes priority.</p></li>
 <li>To add synonyms for a child node, enter them in the Synonyms box next to the <b>Child Terms</b> listed at the bottom of the settings window.
@@ -138,7 +138,7 @@ To add synonyms for a term, follow the below steps:
 
 ### Traits
 
-You can create traits with common user utterances and then add them to the relevant terms in your Knowledge Graph. To know more about Traits, click <a href="https://developer.kore.ai/docs/bots/nlp/traits/" target="_blank">here</a>.
+You can create traits with common user utterances and then add them to the relevant terms in your Knowledge Graph. To know more about Traits, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-training/#traits" target="_blank">here</a>.
 
 Traits are common across the XO Platform. If you have created Traits from the Natural Language section, they are available for use here as well.
 
@@ -153,7 +153,6 @@ To create a trait, follow the steps below:
 <li>Click <b>Save & Add Rule</b> or <b>Save & Exit</b>.
 <img src="../../images/add-traits-save-and-add-rules.png" alt="save and add rule" title="save and add rule" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
-
 ### Context
 
 You can **Manage Context** for the terms and tags by setting:
@@ -161,12 +160,11 @@ You can **Manage Context** for the terms and tags by setting:
 * **Intent Precondition** – the context that should be present as a qualifier for this node or tag.
 * **Context Output** – the context that should be populated to signify the execution of this task.
 
-Post the XO Platform v8.0 release, context can be enabled for <b>Organizer</b> nodes as well. Enabling the **Manage Context** option allows you to set the context precondition and context output mentioned above. Click <a href="https://developer.kore.ai/docs/bots/bot-intelligence/context-management/" target="_blank">here</a> for more information on Context Management.
+Post the XO Platform v8.0 release, context can be enabled for <b>Organizer</b> nodes as well. Enabling the **Manage Context** option allows you to set the context precondition and context output mentioned above. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/context-management/" target="_blank">here</a> for more information on Context Management.
 
 !!! note
 
     Enabling the <b>Manage Context</b> option will not show the term/node name by default.
-
 
 ### Stop Words
 
@@ -193,7 +191,7 @@ The training fails if any single node has more than 100 questions. This limit wa
 
 ## Testing
 
-When you complete creating the Knowledge Graph and training it, we recommend that you interact with the assistant and ask questions connected to the Knowledge Graph. Test the responses by using a variety of utterances so that you can identify missing terms, questions, alternative questions, synonyms, and traits. <a href="https://developer.kore.ai/docs/bots/test-your-bot/testing-your-bot-with-nlp/" target="_blank">Learn more about utterance testing</a>.
+When you complete creating the Knowledge Graph and training it, we recommend that you interact with the assistant and ask questions connected to the Knowledge Graph. Test the responses by using a variety of utterances so that you can identify missing terms, questions, alternative questions, synonyms, and traits. <a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/testing-your-bot-with-nlp/" target="_blank">Learn more about utterance testing</a>.
 
 ## Thresholds & Configurations
 
@@ -232,7 +230,7 @@ Here are the features that you will find in this section of the Platform:
 * **Search in Answer** for the qualifying FAQs.
 * **Qualify Contextual Paths** in the Knowledge Graph using the context tags available in the context. Enabling this option will ensure that the paths are shortlisted using terms or tags from the context. These tags can come from previous matched paths or intent or custom-defined tags.
 
-The Platform also offers some advanced configurations. <a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/" target="_blank">Learn more</a>.
+The Platform also offers some advanced configurations. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/" target="_blank">Learn more</a>.
 
 ### Search in Answer
 
@@ -244,7 +242,7 @@ This feature enables identifying FAQs by searching the user input against the an
 
 When the **Search in Answer** flag is enabled, the Knowledge Graph engine considers the answer text for identifying the intents also.
 
-Once this option is enabled, you can specify whether to **Inform the end-user that the answer is a probable answer**. If selected a Standard Message to the effect is displayed, which can be customized using the Manage Response link. <a href="https://developer.kore.ai/docs/bots/bot-intelligence/default-dialog/#Managing_Standard_Responses" target="_blank">Learn more</a>.
+Once this option is enabled, you can specify whether to **Inform the end-user that the answer is a probable answer**. If selected a Standard Message to the effect is displayed, which can be customized using the Manage Response link. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/standard-responses/" target="_blank">Learn more</a>.
 
 There are three ways in which you can render the response:
 
@@ -272,7 +270,7 @@ The following API gives the full information of the FAQ:
 
 **Sample Response**:
 
-```
+```js
 {
 "response": "You can contact our Branch officials wherein you have submitted your documents.If the documents are in order, the account will be opened within 2 working days.",
 "primaryQuestion": "How to check the status of my account opening?"

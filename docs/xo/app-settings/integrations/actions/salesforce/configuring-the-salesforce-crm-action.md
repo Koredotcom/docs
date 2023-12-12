@@ -11,7 +11,7 @@ This article explains how to authorize and enable the **Salesforce CRM** action 
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports OAuth 2.0 authentication to allow a Salesforce integration to exchange data. For more information, see [Setting Up Authorization Using OAuth v2](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-oauth-v2/){:target="_blank"} article. 
+The Kore.ai XO Platform supports OAuth 2.0 authentication to allow a Salesforce integration to exchange data. For more information, see [Setting Up Authorization Using OAuth v2](../../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2/){:target="_blank"} article. 
 
 The Kore.ai XO Platform supports the following authorization types for the Salesforce CRM integration:
 
@@ -101,7 +101,7 @@ Steps to authorize a Salesforce action using developer credentials:
     * Click the **Select Authorization** drop-down and select the **Create New** option.  
     <img src="../images/salesforce-action-img4.png" alt="Create new auth" title="Create new auth" style="border: 1px solid gray;zoom:50%;"/>
 
-    * Select the type of authorization mechanism. For example, select the **OAuth v2** option. To create custom OAuth profiles, see [Setting Up Authorization Using OAuth v2](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-oauthv2-clientcredentials/){:target="_blank"}.  
+    * Select the type of authorization mechanism. For example, select the **OAuth v2** option. To create custom OAuth profiles, see [Setting Up Authorization Using OAuth v2](../../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2){:target="_blank"}.  
     <img src="../images/salesforce-action-img5.png" alt="Auth mechanism - OAuth V2" title="Auth mechanism - OAuth V2" style="border: 1px solid gray;zoom:50%;"/>
 
     * Enter the following authentication credentials for the OAuth v2 mechanism:

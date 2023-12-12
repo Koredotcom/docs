@@ -27,7 +27,34 @@
 {% elif "navigation.tabs" not in features %}
   {% set class = class ~ " md-header--shadow" %}
 {% endif %}
-
+<style>
+  .md-header__option{
+    margin-bottom: 0px;
+  }
+  .nav-links{
+    display: flex;
+  }
+  .m-0{
+    margin: 0px;
+  }
+  .md-cstm-sele{
+    z-index: 30;
+  }
+  .md-cstm-sele .nav-item{
+    display: flex;
+    align-items: center;
+  }
+  .md-cstm-sele .nav-item span{
+    transform: rotate(90deg);
+  }
+  .md-select__list__cstm{
+    width: 160px;
+    padding: 8px;
+  }
+  .md-select__list__cstm .md-select__link{
+    font-size: 13px;
+  }
+</style>
 <!-- Header -->
 <header class="{{ class }}" data-md-component="header">
   <nav
@@ -77,18 +104,49 @@
         </div>
       </div>
     </div>
+    
     <div class="nav-links">
       <a class="nav-item" 
           target="_blank" 
           href="https://community.kore.ai/?__hstc=48303737.3349b4c86fed311d945dbec6899be857.1528698434671.1528698434671.1528698434671.1&__hssc=48303737.1.1528698434672&__hsfp=2270402703"
-      >Community</a>
+      >Release Note</a>
 
-      <a class="nav-item"
+      <!-- <a class="nav-item"
           target="_blank" 
           href="https://support.kore.ai/"
-      >Support</a>
+      > -->
+      <div class="md-select md-cstm-sele">
+        <a
+          class="md-header__button m-0 nav-item"
+        >
+          Get Support
+          <span class="md-nav__icon md-icon"></span>
+      </a>
+        <div class="md-select__inner">
+          <ul class="md-select__list md-select__list__cstm">
+            
+              <li class="md-select__item">
+                <a href="https://community.kore.ai/" target="_blank" class="md-select__link">
+                  Community
+                </a>
+              </li>
+              <li class="md-select__item">
+                <a href="https://academy.kore.ai/" target="_blank" class="md-select__link">
+                  Academy
+                </a>
+              </li>
+              <li class="md-select__item">
+                <a href="https://support.kore.ai/" target="_blank" class="md-select__link">
+                  Customer Support
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+  
 
       <a class="nav-item" href="#">Doc Versions</a>
+      
     </div>
 
     <!-- Color palette -->
@@ -132,7 +190,7 @@
     <!-- Site language selector -->
     {% if config.extra.alternate %}
       <div class="md-header__option">
-        <div class="md-select">
+        <div class="md-select md-cstm-sele">
           {% set icon = config.theme.icon.alternate or "material/translate" %}
           <button
             class="md-header__button md-icon"
