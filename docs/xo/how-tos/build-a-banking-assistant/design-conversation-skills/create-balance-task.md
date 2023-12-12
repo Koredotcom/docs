@@ -7,7 +7,7 @@ This is document details steps in creating a sample banking bot. This bot is use
 <li>You must have <a href="https://developer.kore.ai/docs/bots/getting-started/how-to-open-bot-builder/" target="_blank">signed up</a> with the Kore.ai Bots Platform.</li>
 <li>You must be aware of the basics of Bot building (refer to <a href="https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/" target="_blank">this </a>link).</li>
 <li>You must have created a simple bot (click<a href="https://developer.kore.ai/docs/bots/chatbot-overview/creating-a-simple-bot/" target="_blank"> here</a> for an example).</li>
-<li>You must have created a Banking Bot with Get Balance task (click<a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/" target="_blank"> here</a> for example).</li>
+<li>You must have created a Banking Bot with Get Balance task (click<a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank"> here</a> for example).</li>
 </ul>
 
 ## Bot Overview
@@ -33,7 +33,7 @@ The Bot we will be building will be performing the basic banking transactions. T
 ### Step 1: Dialog Task
 
 <ol>
-<li>Open the Banking Bot with the Get Balance task already configured, click<a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/" target="_blank"> here </a>for more.</li>
+<li>Open the Banking Bot with the Get Balance task already configured, click<a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-balance-task/" target="_blank"> here </a>for more.</li>
 <li>Ensure that the <strong>Build </strong>tab is selected from the top menu.</li>
 <li>Navigate to the <strong>Conversational Skills -> Dialog Task</strong> page from the left menu.</li>
 <li>Click <strong>Create Dialog</strong> from the top right.</li>
@@ -266,4 +266,4 @@ Follow the Bot instructions and enter the values for the fields below::
 
 ## Next Steps
 
-Your Banking Bot is almost complete, you have successfully added Get Balance and Update Balance dialog tasks to the Bot. The next step would be to include the Transfer Funds task. Click<a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-transfer-funds/" target="_blank"> here </a>to continue.
+Your Banking Bot is almost complete, you have successfully added Get Balance and Update Balance dialog tasks to the Bot. The next step would be to include the Transfer Funds task. Click<a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-transfer-funds-task/" target="_blank"> here </a>to continue.

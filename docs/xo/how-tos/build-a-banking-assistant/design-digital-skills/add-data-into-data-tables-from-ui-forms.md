@@ -4,8 +4,9 @@ In this page, we explore a scenario in a Banking Bot where the user can create a
 
 We will see how data collected from the UI Forms can be used to create the account in a Data Table.
 
-For details on what UI Forms are and how they are implemented on the XO Platform, click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/ui-forms/" target="_blank"> here</a>.
-For details on what Data Tables are and how it is implemented in the XO Platform, click <a href="https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/" target="_blank"> here</a>.
+For details on what UI Forms are and how they are implemented on the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-forms/" target="_blank">here</a>.
+
+For details on Data Tables and their implementation on the XO Platform, click <a href="https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/" target="_blank"> here</a>.
 
 ## Problem Statement
 
@@ -23,7 +24,7 @@ Consider a Banking Bot trying to address the following scenarios:
 
 * Bot building knowledge
 * A Banking Bot with access to
-    * Customer details table as created <a href="https://developer.kore.ai/docs/bots/how-tos/how-to-add-data-tables/#Table_Creation" target="_blank"> here</a> 
+    * Customer details table as created <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-digital-skills/add-data-to-data-tables/#table-creation" target="_blank"> here</a>.
     * Account details table, using the same steps shown in the above link create the following data table:
         * **Name**, say _accountdetails;_
         * **Description**, say _Account details Table;_
@@ -155,7 +156,7 @@ Consider a Banking Bot trying to address the following scenarios:
 
 <img src="../images/update-form.png" alt="update form" title="update form" style="border: 1px solid gray; zoom:75%;">
 
-UI Form we will be using the UI Form configured as shown <a href="https://developer.kore.ai/docs/bots/how-tos/how-to-configure-ui-forms/#UI_Form_Configuration" target="_blank"> here</a>.
+UI Form we will be using the UI Form configured as shown <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-digital-skills/configure-digital-forms/" target="_blank"> here</a>.
 
 ## Configurations
 
@@ -193,9 +194,8 @@ We will be creating a dialog task and adding a form node to trigger the UI Form 
 
 The _InvalidCustId_ is a **Message** node with the following JavaScript:
 
- `context.entities.CustId = null;`
-
 ```js
+context.entities.CustId = null;
 print('You have entered an invalid customer id, try again');
 ```
 
