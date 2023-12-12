@@ -4,8 +4,8 @@ hide:
 ---
 # **Kore.ai XO Platform Documentation**
 Learn how to use Kore.ai Experience Optimization (XO) Platform – a one-stop platform that seamlessly blends conversational AI intelligence and generative AI innovation, offering businesses the tools to create scalable and memorable customer experiences. It empowers businesses with advanced capabilities to build engaging conversations with customers and employees. The platform is recognized as the world's most secure, credible, and scalable solution for generative and conversational AI. Using the Kore.ai no-code platform, businesses can construct intelligent virtual assistants, integrating both large language models (LLM) and generative AI capabilities to enhance customer engagement through everlasting conversations in their chosen language and communication channels.
-
-<kr-grid type="g1" >
+<img src="./images/ai-image.jpeg" alt="New Test Suite Details" title="New Test Suite Details" style="border: 1px solid gray; zoom:80%; float:right;">
+<kr-grid type="g1">
     <kr-grid-item>
         <img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04052752/Message-Chart-Circle-Icon.svg"></img>
         <kr-grid-title>Virtual Assistant Integration</kr-grid-title>
@@ -25,7 +25,7 @@ Learn how to use Kore.ai Experience Optimization (XO) Platform – a one-stop pl
         <a href="">Learn More</a>
     </kr-grid-item>
 </kr-grid>
-<kr-grid type="g1" >
+<kr-grid type="g1">
     <kr-grid-item>
         <img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04063645/FAQ-Icon.svg"></img>
         <kr-grid-title>Lifecycle Management</kr-grid-title>
