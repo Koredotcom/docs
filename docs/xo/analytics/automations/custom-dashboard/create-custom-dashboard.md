@@ -84,8 +84,7 @@ if(context.custType == 1){
 Let’s consider how each metric mentioned in the problem statement can be implemented using widgets from the Custom Dashboard.
 
 1. From the left navigation panel, under **Dashboard** click **Custom Dashboard.**
-2. **Create a New Dashboard**.
-
+2. **Create a New Dashboard**.\
 <img src="../images/create-new-dashboard.png" alt="Create New Dashboard" title="Create New Dashboard" style="border: 1px solid gray; zoom:80%;">
 
 3. Use the **Add Widget** button to add widgets for the above scenarios. You can add up to 4 widgets per row and organize them by moving anywhere within the row or across the rows on the dashboard. You can also manually resize the widgets.
