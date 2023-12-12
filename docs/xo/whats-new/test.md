@@ -163,3 +163,7 @@ Material for MkDocs is licensed under MIT and available on [GitHub]
             <a href="https://kore.ai">Reference</a>
         </kr-grid-item>
     </kr-grid>
+
+
+
+[https://docsinternal-kore.github.io/docs/xo/channels/images/IVR-1.png](https://docsinternal-kore.github.io/docs/xo/channels/images/IVR-1.png){:download}
