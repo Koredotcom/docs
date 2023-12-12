@@ -187,6 +187,7 @@ The response from this service call would be:
 ### Delete data
 
 To delete rows from the data table you need to define filter criteria to specify the rows to be deleted using
+
 * the column names,
 * an operator and
 * filter value, these values can be static or a reference to a context object  for example `{{context.entities.&lt;entity-name>}}`. Multiple filter criteria can be defined using AND/OR connectors.
@@ -242,36 +243,36 @@ From the assigned bots for any given data table/table view, you can query and ma
 
 7. The response from this service call would be:  
   
-  ```
-    "CustomerView": {
-        "response": {
-            "body": {
-                "hasMore": true,
-                "total": 4,
-                "metaInfo": [
-                {
-                    "name": "type",
-                    "type": "string"
-                },
-                {
-                    "name": "address",
-                    "type": "string"
-                }
-                ],
-                "queryResult": [
-                {
-                    "type": "Gold",
-                    "address": "New York"
-                },
-                {
-                    "type": "Gold",
-                    "address": "Chicago"
-                },
-                {
-                    "type": "Gold",
-                    "address": "Chicago"
-                }
-                ]
-            }
-        }  
-    }
+    ```
+      "CustomerView": {
+          "response": {
+              "body": {
+                  "hasMore": true,
+                  "total": 4,
+                  "metaInfo": [
+                  {
+                      "name": "type",
+                      "type": "string"
+                  },
+                  {
+                      "name": "address",
+                      "type": "string"
+                  }
+                  ],
+                  "queryResult": [
+                  {
+                      "type": "Gold",
+                      "address": "New York"
+                  },
+                  {
+                      "type": "Gold",
+                      "address": "Chicago"
+                  },
+                  {
+                      "type": "Gold",
+                      "address": "Chicago"
+                  }
+                  ]
+              }
+          }  
+      }
