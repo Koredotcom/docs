@@ -15,7 +15,7 @@ The following are the prerequisites:
 The bot we build will perform the basic banking transactions. This bot will:
 
 * Get account balance based on the user’s _Account Number_ and _Account Type_.
-* Update accounts with the balance. For more information, <a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-update-balance/" target="_blank">click here</a>.
+* Update accounts with the balance. For more information, <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-balance-task/" target="_blank">click here</a>.
 * Transfer a specified amount from the user account to a payee account. For more information, <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-transfer-funds-task/" target="_blank">click here</a>.
 
 Let us start building the bot and add _Get Balance_ task to it.
@@ -61,7 +61,7 @@ Successful creation of the bot directs you to the Bot Summary page. We need to a
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For instructions with the older Dialog Builder,  <a href="https://developer.kore.ai/v8-1/docs/bots/how-tos/creating-a-banking-bot/" target="_blank">refer here</a></p>
+<p>For instructions with the older Dialog Builder,  <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">refer here</a></p>
 </div>
 
 ### Entity Node
@@ -210,4 +210,4 @@ To test the dialog task, you can use the **Talk to bot** option at the bottom-ri
 
 ## Next Steps
 
-Now that you have added the _Get Balance_ dialog task to the Banking bot, the next step is to add the Update Balance task. For convenience, the steps for _Update Balance_ are split into different documents. Click <a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-update-balance/" target="_blank">here</a> to continue.
+Now that you have added the _Get Balance_ dialog task to the Banking bot, the next step is to add the Update Balance task. For convenience, the steps for _Update Balance_ are split into different documents. Click <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-balance-task/" target="_blank">here</a> to continue.

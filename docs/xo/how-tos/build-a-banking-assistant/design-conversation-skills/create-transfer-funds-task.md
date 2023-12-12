@@ -11,7 +11,7 @@ This is document details steps in creating a sample banking bot. This bot is use
 
 <li>You must have created a simple bot. Click (<a href="https://developer.kore.ai/docs/bots/chatbot-overview/creating-a-simple-bot/" target="_blank">here</a> for an example).
 
-<li>You must have created a Banking Bot. Click (<a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/" target="_blank">here</a> for an example).
+<li>You must have created a Banking Bot. Click (<a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">here</a> for an example).
 </li>
 </ul>
 
@@ -22,7 +22,7 @@ The Bot we will be building will be performing the basic banking transactions li
 <ul>
 <li>Get account balance based on the Account Number and Account Type entered by the user, as seen <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">here</a>.
 
-<li>Update accounts with the balance, as seen <a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-update-balance/" target="_blank">here</a>.
+<li>Update accounts with the balance, as seen <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-balance-task/" target="_blank">here</a>.
 
 <li>Transfer a specified amount from the user account to a payee account.
 </li>
@@ -51,7 +51,7 @@ Let us add the Transfer Funds task.
 We need to add an Intent Dialog as the first step in the Bot. Intent Dialog is the first step in the user-bot conversation flow.
 
 <ol>
-<li>Open the Banking Bot with the two pre-configured tasks – <a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/" target="_blank">Get Balance</a> and <a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-update-balance/" target="_blank">Update Balance</a>.
+<li>Open the Banking Bot with the two pre-configured tasks – <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">Get Balance</a> and <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-balance-task/" target="_blank">Update Balance</a>.
 
 <li>Ensure that the <strong>Build </strong>tab is selected from the top menu.
 
@@ -121,7 +121,7 @@ Here we will be using it to capture the user input for the Payee and Payer Accou
 </li>
 </ol>
 
-The next steps would update the balance in both the Payer and Payee accounts. Since we already have <a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-update-balance/" target="_blank">Update Balance</a> task, we will see how to run it from the current task.
+The next steps would update the balance in both the Payer and Payee accounts. Since we already have <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-balance-task/" target="_blank">Update Balance</a> task, we will see how to run it from the current task.
 
 ### Step 3: Run Dialog Task
 
