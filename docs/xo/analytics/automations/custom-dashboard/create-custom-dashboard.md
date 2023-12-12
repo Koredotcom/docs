@@ -60,7 +60,8 @@ if(context.entities.TransferAmount[0].amount > 0)
 <img src="../images/manage-payee.png" alt="Manage Payee" title="Manage Payee" style="border: 1px solid gray; zoom:80%;">
 
 
-Here we have a Script that assigns a value to the customerType meta tags: \
+Here we have a Script that assigns a value to the customerType meta tags: 
+
 `if(context.custType == 3){`
 
 
@@ -84,6 +85,7 @@ Let’s consider how each metric mentioned in the problem statement can be imple
 
 1. From the left navigation panel, under **Dashboard** click **Custom Dashboard.**
 2. **Create a New Dashboard**.
+
 <img src="../images/create-new-dashboard.png" alt="Create New Dashboard" title="Create New Dashboard" style="border: 1px solid gray; zoom:80%;">
 
 3. Use the **Add Widget** button to add widgets for the above scenarios. You can add up to 4 widgets per row and organize them by moving anywhere within the row or across the rows on the dashboard. You can also manually resize the widgets.
@@ -96,7 +98,7 @@ The details for each widget are explained in the following sections.
 1. **Add Widget**
 2. Query setup:
     1. **Dataset** – _Analytics_
-    2. **Select** – _sessionTag.TransferValue as TransferValue, count(taskName) \
+    2. **Select** – _sessionTag.TransferValue as TransferValue, count(taskName)
 _This will let the platform know what data to fetch. Here we are using the session tag values added to the Transfer Amount task against the total number of tasks executed.
     3. **Group By** – _sessionTag.TransferValue_
     4. **Run** to see the results from the above query.
