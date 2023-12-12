@@ -29,9 +29,11 @@ In this document, we demonstrate how Traits can be used to identify such situati
 * Bot building knowledge.
 * A <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">Banking Bot</a> with the dialogs as mentioned below:
     * <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-transfer-funds-task/" target="_blank">Transfer Funds</a> – Dialog task prompting the user for Payer and Payee account numbers and the amount to be transferred and transferring the specified amount from the payer account to the payee account.
+    
     <img src="../images/dialog-transfer-funds.png" alt="dialog transfer funds" title="dialog transfer funds" style="border: 1px solid gray; zoom:75%;"> 
 
     * **Issue Resolution**– Dialog task to assist in any issues faced by the user. It would display a regret message and transfer to a Live Agent.
+
     <img src="../images/issue-resolution-dialog-traits.png" alt="issue resolution" title="issue resolution" style="border: 1px solid gray; zoom:75%;">
 
     * **Knowledge Collection** – A node “transfer funds” with an FAQ “_How do I transfer funds?_”
@@ -47,7 +49,7 @@ We will be using Trait to steer the conversation to “Issue Resolution” when 
 
 1. Select **Build** tab from the top menu.
 2. From **Natural Language -> Training** select the **Traits** tab.
-3. Click **Add New Trait**. We will be using a trait to identify the existence of the word ‘issue’ in the user utterance.
+3. Click **Add New Trait**. We will be using a trait to identify the existence of the word ‘issue’ in the user utterance. Follow the steps below to complete adding the trait:
     * Add a **Trait Type** as _Problem Statement_ and **Traits** as _issue_. A given Trait Type can have multiple Traits grouped together logically.
     * Optionally you can add utterances for Issues as _‘problem’, ‘unable to’_, and _‘not working’_. These are the alternate words that users might use to indicate an issue.
     <img src="../images/add-utterance-for-issue.png" alt="add utterance" title="add utterance" style="border: 1px solid gray; zoom:75%;"> 
