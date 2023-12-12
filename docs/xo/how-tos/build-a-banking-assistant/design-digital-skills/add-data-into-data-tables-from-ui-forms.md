@@ -193,9 +193,8 @@ We will be creating a dialog task and adding a form node to trigger the UI Form 
 
 The _InvalidCustId_ is a **Message** node with the following JavaScript:
 
- `context.entities.CustId = null;`
-
 ```js
+context.entities.CustId = null;
 print('You have entered an invalid customer id, try again');
 ```
 
