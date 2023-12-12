@@ -241,38 +241,38 @@ From the assigned bots for any given data table/table view, you can query and ma
 5. You can set the Instance and Connections properties as per your bot requirements.
 6. The data returned from the data table can be accessed from the context object and used in your task as per your need, using: `{{context.&lt;service_node_name>.response.body.queryResult[&lt;index>].&lt;column_name>}}`
 
-7. The response from this service call would be:  
+The response from this service call would be:  
   
-    ```
-      "CustomerView": {
-          "response": {
-              "body": {
-                  "hasMore": true,
-                  "total": 4,
-                  "metaInfo": [
-                  {
-                      "name": "type",
-                      "type": "string"
-                  },
-                  {
-                      "name": "address",
-                      "type": "string"
-                  }
-                  ],
-                  "queryResult": [
-                  {
-                      "type": "Gold",
-                      "address": "New York"
-                  },
-                  {
-                      "type": "Gold",
-                      "address": "Chicago"
-                  },
-                  {
-                      "type": "Gold",
-                      "address": "Chicago"
-                  }
-                  ]
-              }
-          }  
-      }
+  ```
+    "CustomerView": {
+        "response": {
+            "body": {
+                "hasMore": true,
+                "total": 4,
+                "metaInfo": [
+                {
+                    "name": "type",
+                    "type": "string"
+                },
+                {
+                    "name": "address",
+                    "type": "string"
+                }
+                ],
+                "queryResult": [
+                {
+                    "type": "Gold",
+                    "address": "New York"
+                },
+                {
+                    "type": "Gold",
+                    "address": "Chicago"
+                },
+                {
+                    "type": "Gold",
+                    "address": "Chicago"
+                }
+                ]
+            }
+        }  
+    }
