@@ -3,7 +3,7 @@
 In this post we explore how you can view your account details using a Digital View and a Banking Bot. We will see how this Digital View can be presented using Panels and Widgets. Widgets can be used to trigger Dialog Tasks and display appropriate messages and Panel can be used to hold these Widgets. 
 We will also see how the Panel can be hosted on Web/Mobile Client using the Widget SDK.
 
-For details on what Digital Views are and how it is implemented in the Kore.ai Bots platform, click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/digital-views/" target="_blank"> here</a>.
+For details on what Digital Views are and how it is implemented in the Kore.ai Bots platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-views/" target="_blank"> here</a>.
 
 ## Problem Statement
 
@@ -16,8 +16,8 @@ This document gives a step-by-step approach to achieve all the above-mentioned s
 ## Prerequisites
 
 * Bot building knowledge
-* A <a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/" target="_blank"> Banking Bot</a> with a dialog as mentioned below:
-    * <a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/#Get_Balance_Intent" target="_blank"> Get Balance</a> – Dialog task prompting the user for their Account Number and Account Type and displaying the available balance in the account.
+* A <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank"> Banking Bot</a> with a dialog as mentioned below:
+    * <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/#get-balance-intent" target="_blank"> Get Balance</a> – Dialog task prompting the user for their Account Number and Account Type and displaying the available balance in the account.
     <img src="../images/get-balance-dialog-digital-views.png" alt="get balance dialog" title="get balance dialog" style="border: 1px solid gray; zoom:75%;"> 
 
 ## Configurations
