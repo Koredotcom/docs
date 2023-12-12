@@ -50,9 +50,8 @@ Building a composite entity involves the following steps:
 
 Since the Composite Entity is a combination of other entities, you need to build individual entities in the dialog task. To capture the Flight Information from the above example, you must create sub-entities that capture the required details. Here is a sample mapping of sub-entities for a primary entity called _Flight_, for which we create a few sub-entities to capture relevant information:
 
-
-<table>
-  <tr>
+<table border="1.5">
+<tr bgcolor="#ECECEC">
    <td><strong>ENTITY</strong>
    </td>
    <td><strong>ENTITY TYPE</strong>
@@ -100,12 +99,12 @@ Add a Composite Entity after a relevant node in the dialog task. To make this en
 
 1. On the **Entity** window, click the **NLP Properties** tab.
 2. On the **NLP Properties** tab, under the **Composite Patterns for Entity** section, add relevant patterns. The various patterns built are similar to the ones used in defining Entity Patterns. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#navigate-to-the-patterns-tab" target="_blank">here</a> to learn more.
-<img src="../train-the-assistant/images/define-composite-entity.png" alt="define composite entity" title="define composite entity" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/define-composite-entity.png" alt="define composite entity" title="define composite entity" style="border: 1px solid gray; zoom:75%;">
 
 For the above composite entity patterns, the following are the sample utterances and the output:
 
-<table>
-  <tr>
+<table border="1.5">
+<tr bgcolor="#ECECEC">
    <td>
 <strong>SAMPLE UTTERANCE</strong>
    </td>
@@ -166,7 +165,7 @@ In terms of composite entities following scenarios can be addressed:
 
 Post v8.0.07, you can use the _Entity Pre-Assignments_ and _Entity Post-Assignments_ from the Dialog Node, Instance Properties as shown in the image below (the numbers in the below image correspond to the number in the above use case):
 
-<img src="../train-the-assistant/images/test-composite-entity.png" alt="test composite entities" title="test composite entities" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/test-composite-entity.png" alt="test composite entities" title="test composite entities" style="border: 1px solid gray; zoom:75%;">
 
 ## JSON Object for Composite Entity
 
