@@ -100,6 +100,8 @@ Steps to change the view owner:
 
 The Kore.ai XO Platform allows you to share Table Views by assigning them to bots, process apps, or apps.
 
-**Note**: In the Shared Views tab, you can view only the views shared with a user who has permission to view. When you share the tables views with users, they cannot edit or update the view definitions.
+!!! Note
+
+    In the Shared Views tab, you can view only the views shared with a user who has permission to view. When you share the tables views with users, they cannot edit or update the view definitions.
 
 The bot or process developers can see the table view definitions using a [**Service node**](../data-as-service/){:target="_blank"}.
