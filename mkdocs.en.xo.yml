@@ -121,25 +121,25 @@ nav:
   - Platform : home.md
   - Getting Started:
     - PLATFORM:
-      - Introduction to the Platform: getting-started/about-xo-platform.md
+      - About the Platform: getting-started/about-xo-platform.md
       - Access the Platform: virtual-assistants-overview.md   
       - Automation:
-        - Introduction to Virtual Assistant: virtual-assistants-overview.md
+        - About Virtual Assistant: virtual-assistants-overview.md
         - Build a Virtual Assistant: virtual-assistants-overview.md   
       - Answers:
-        - Introduction to Answers: virtual-assistants-overview.md
+        - About Answers: virtual-assistants-overview.md
         - Configure Answers: virtual-assistants-overview.md   
       - AgentAssist:
-        - Introduction to AgentAssist: virtual-assistants-overview.md
+        - About AgentAssist: virtual-assistants-overview.md
         - Set up AgentAssist: virtual-assistants-overview.md       
       - Contact Center:
-        - Introduction to Contact Center: virtual-assistants-overview.md
+        - About Contact Center: virtual-assistants-overview.md
         - Set up Contact Center: virtual-assistants-overview.md       
       - Campaigns:
-        - Introduction to Campaigns: virtual-assistants-overview.md
+        - About Campaigns: virtual-assistants-overview.md
         - Set up Campaign: virtual-assistants-overview.md       
       - Quality Management:
-        - Introduction to Quality Management: virtual-assistants-overview.md
+        - About Quality Management: virtual-assistants-overview.md
         - Configure Quality Management: virtual-assistants-overview.md         
     - GLOSSARY:
       - Concepts and Terminology: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/ 
