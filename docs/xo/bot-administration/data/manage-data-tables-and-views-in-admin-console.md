@@ -20,7 +20,7 @@ To view data tables, follow these steps:
 5. In the Change Table Owner dialog, select the new owner for the table and click **Proceed**.  
 <img src="../images/data-table-admin2.png" alt="Select new owner for table" title="Select new owner for table" style="border: 1px solid gray;zoom:50%;"/>
 
-6. Once the Ownership is changed, all related tables and views ownership is also transferred to the new owner. The table is moved to the new owner and all app assignments for this table are lost. For more information, see [Change Table Ownership](https://developer.kore.ai/docs/bots/advanced-topics/data-table/#Change_Table_Owner){:target="_blank"}.
+6. Once the Ownership is changed, all related tables and views ownership is also transferred to the new owner. The table is moved to the new owner and all app assignments for this table are lost. For more information, see [Change Table Ownership](../data-table/#change-table-owner){:target="_blank"}.
 
  
 ## View Table Views and Change Ownership
@@ -38,4 +38,4 @@ As an administrator you can view all table views in the workspace.
 5. In the Change View Owner dialog, select the new owner for the table and click **Proceed**.  
 <img src="../images/data-view-admin2.png" alt="Bot metrics" title="Bot metrics" style="border: 1px solid gray;zoom:50%;"/>
 
-6. Once the Ownership is changed, all related views ownership is also transferred to the new owner. The view is moved to the new owner and all app assignments for this view are lost. Refer to the use case scenario for the related tables ownership change in the Data Table . For more information, see [Change View Ownership](https://developer.kore.ai/docs/bots/advanced-topics/table-views/#Change_View_Ownership){:target="_blank"}.
+6. Once the Ownership is changed, all related views ownership is also transferred to the new owner. The view is moved to the new owner and all app assignments for this view are lost. Refer to the use case scenario for the related tables ownership change in the Data Table . For more information, see [Change View Ownership](../table-views/#change-view-ownership){:target="_blank"}.
