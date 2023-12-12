@@ -91,20 +91,20 @@ We will discuss these parameters in detail in the following sections.
 
 Designate the terms and tags in the Knowledge Graph as Default, or Mandatory, or Organizer depending on their importance in qualifying matching paths: You can configure term types by accessing the term/node settings.
 
-<img src="../../images/term-type-settings.png" alt="term type setting" title="term type setting" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/term-type-settings.png" alt="term type setting" title="term type setting" style="border: 1px solid gray; zoom:75%;">
 
 The available term types are: 
 
 * **Default**: Default terms do not have any particular considerations in shortlisting qualified paths.
 * **Mandatory**: When you mark a term as Mandatory, all paths associated with the term are shortlisted for ranking only if the user’s utterance includes the mandatory term or its synonyms.
 * **Organizer**: Term can be marked as being a part of the Knowledge Graph only for organizing questions (this option is available only for terms, not tags).
-<img src="../../images/term-types.png" alt="term types" title="term types" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/term-types.png" alt="term types" title="term types" style="border: 1px solid gray; zoom:75%;">
 
 ### Tags
 
 When you type a question in the Intent Name **Add Question** field, the Knowledge Graph suggests some tags that you can add to the graph based on the text. To include a suggested term to the path, select the tag from the drop-down list that appears when the cursor is in the Add Term field. You can also add custom tags by typing them in the add term field and hitting the Enter/Return key.
 
-<img src="../../images/term-field-custom-tag.png" alt="term field custom tag" title="term field custom tag" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/term-field-custom-tag.png" alt="term field custom tag" title="term field custom tag" style="border: 1px solid gray; zoom:75%;">
 
 After you add a tag, it is visible below the question like a tag everywhere the question appears. Tags work exactly like terms but are not displayed in the Knowledge Graph to avoid clutter.
 
@@ -122,19 +122,19 @@ To add synonyms for a term, follow the below steps:
 2. Click the **gear icon** to open the Settings window.
 3. To add **synonyms**, do the following:
     * To add local synonyms, type them in the box under **Path Level Synonyms**.
-    <img src="../../images/path-level-synonyms.png" alt="path level synonyms" title="path level synonyms" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/path-level-synonyms.png" alt="path level synonyms" title="path level synonyms" style="border: 1px solid gray; zoom:75%;">
     * To add Global synonyms, click **Edit** then **Add** under **Knowledge Graph Synonyms** and enter them.
     <p><b>Important Considerations</b></p>
     <ul><li>Press Enter after typing each synonym in the Synonyms box. If you type multiple synonyms without pressing Enter after each synonym, all the synonyms are considered as a single entity, even if they are separated by spaces.
-    <img src="../../images/add-global-synonyms.png" alt="add global synonyms" title="add global synonyms" style="border: 1px solid gray; zoom:75%;"></li>
+    <img src="../images/add-global-synonyms.png" alt="add global synonyms" title="add global synonyms" style="border: 1px solid gray; zoom:75%;"></li>
    <li>These Knowledge Graph Synonyms can also be accessed from the <b>Manage Synonyms</b> option under the more options icon on the top-right of the Knowledge Graph page.
-   <img src="../../images/manage-synonyms.png" alt="manage synonyms" title="manage synonyms" style="border: 1px solid gray; zoom:75%;"></li></ul>
+   <img src="../images/manage-synonyms.png" alt="manage synonyms" title="manage synonyms" style="border: 1px solid gray; zoom:75%;"></li></ul>
 
 <ol start="4"><li>You can use <b>Bot Synonyms</b> in the identification of KG terms. This option can be enabled either from the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-training/#thresholds-configurations" target="_blank">Threshold and Configurations</a> or from <b>More Options</b> > <b>Manage Synonyms</b>.
 <p>Once enabled, the bot-level synonyms that match with KG terms (or tags) are automatically displayed under the Bot Synonyms heading in the <b>Synonyms</b> section and are used by the KG engine.</p>
 <p>The Bot Synonyms are used similar to that of KG graph-level synonyms, for path qualification and for question matching. When a node matches both with a bot synonym and a bot concept, the bot concept takes priority.</p></li>
 <li>To add synonyms for a child node, enter them in the Synonyms box next to the <b>Child Terms</b> listed at the bottom of the settings window.
-<img src="../../images/child-synonyms-terms.png" alt="child synonyms terms" title="child synonyms terms" style="border: 1px solid gray; zoom:75%;"></li></ol>
+<img src="../images/child-synonyms-terms.png" alt="child synonyms terms" title="child synonyms terms" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ### Traits
 
@@ -145,13 +145,13 @@ Traits are common across the XO Platform. If you have created Traits from the Na
 To create a trait, follow the steps below:
 
 <ol><li>On the top-right of the <b>Knowledge Graph</b> window, click the <b>More Options</b> icon and then select <b>Manage Traits</b>.
-<img src="../../images/manage-traits.png" alt="manage traits" title="manage traits" style="border: 1px solid gray; zoom:75%;"></li>
+<img src="../images/manage-traits.png" alt="manage traits" title="manage traits" style="border: 1px solid gray; zoom:75%;"></li>
 <li>On the Manage Traits window, click <b>New Trait</b>.
 </li>
 <li>In the <b>Trait Type</b> and <b>Trait Name</b> field, enter a relevant name for the trait. For example, <i>Flight Fare</i>.</li>
 <li>In the <b>Utterances</b> field, enter all the utterances that you want to include in the trait. Examples of the <i>Issues</i> trait: <i>First Class, Premium Economy, Economy,</i> etc.</li>
 <li>Click <b>Save & Add Rule</b> or <b>Save & Exit</b>.
-<img src="../../images/add-traits-save-and-add-rules.png" alt="save and add rule" title="save and add rule" style="border: 1px solid gray; zoom:75%;"></li></ol>
+<img src="../images/add-traits-save-and-add-rules.png" alt="save and add rule" title="save and add rule" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ### Context
 
@@ -176,7 +176,7 @@ To edit the stop words list, follow the steps below:
 
 1. From the Knowledge Graph page, click on the **more options icon** and select **Manage Stop Words**.
 2. From the Manage Stop Words window, delete or add stop words.
-<img src="../../images/manage-stop-words.png" alt="manage stop words" title="manage stop words" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/manage-stop-words.png" alt="manage stop words" title="manage stop words" style="border: 1px solid gray; zoom:75%;">
 
 ## Training Process
 
@@ -211,7 +211,7 @@ To navigate to Thresholds and Configuration, please follow the steps below:
 2. Hover over the left pane and click **Natural Language** > **Training**.
 3. Click the **Thresholds & Configurations** tab.
 4. Below is a detailed discussion about the **Knowledge Graph** section on this page.
-<img src="../../images/thresholds-configurations.png" alt="thresholds and configurations" title="thresholds and configurations" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/thresholds-configurations.png" alt="thresholds and configurations" title="thresholds and configurations" style="border: 1px solid gray; zoom:75%;">
 
 Here are the features that you will find in this section of the Platform:
 
@@ -252,7 +252,7 @@ There are three ways in which you can render the response:
 
 An additional Read More link is included at the end of the message. On selecting this link, the full response is opened as an answer in the browser. The URL to open the long response in a web browser is set by default by the Platform. But you can provide a **custom URL** (see below for details).
 
-<img src="../../images/search-in-answer.png" alt="search in answer" title="search in answer" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/search-in-answer.png" alt="search in answer" title="search in answer" style="border: 1px solid gray; zoom:75%;">
 
 ### Custom URL Configuration
 

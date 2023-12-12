@@ -13,7 +13,6 @@ There are two types of Knowledge Graphs:
 1. The **Ontology Knowledge Graph** lets you create an ontological structure of key domain terms and associate them with context-specific questions and their alternatives, synonyms, and Machine-Learning-enabled Traits.
 2. The **Few-Shot Knowledge Graph** leverages a Large Language Model (LLM) to simplify knowledge organization. Using this model, you are not required to build an ontology. All you need to do is add all FAQs to the root node/term. This significantly reduces the complexity of building and maintaining an ontology structure.
 
-
 ## Choosing Your Knowledge Graph Type
 
 Starting with v10.1 of the XO Platform, the Few-Shot Model is the default for all new Knowledge Graphs created under NLP V3 and in English.
@@ -22,7 +21,7 @@ If you have built your Ontology-based graph before this release, you can migrate
 
 You can select your desired Knowledge Graph Type by going to **Build > Natural Language > Thresholds and Configurations > Knowledge Graph**.
 
-<img src="../../images/switch-knowledge-graph.gif" alt="switch knowledge graph" title="switch knowledge graph" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/switch-knowledge-graph.gif" alt="switch knowledge graph" title="switch knowledge graph" style="border: 1px solid gray; zoom:75%;">
 
 Changing Knowledge Graph Types is captured in the Change Logs, which you can access by going to **Deploy > Change Logs**.
 

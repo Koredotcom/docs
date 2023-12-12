@@ -18,17 +18,17 @@ To import a Knowledge Graph, follow the steps below:
 1. Open the VA to import the KG and select the **Build** tab.
 2. On the left pane, click **Conversational Skills** > **Knowledge Graph**.
 3. You can find the **Import** option on the respective Knowledge Graph.
-<img src="../../images/import-knowledge-graph.png" alt="Import Knowledge Graph" title="Import Knowledge Graph" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/import-knowledge-graph.png" alt="Import Knowledge Graph" title="Import Knowledge Graph" style="border: 1px solid gray; zoom:75%;">
 
 4. Click **Import**.
 5. In the **Import** dialog, do one of the following based on the scenario:
     * For a new Knowledge Graph, click **Proceed**.
     * For an existing Knowledge Graph, take a backup CSV or JSON file, and then click **Proceed**.
-    <img src="../../images/backup-knowledge-graph.png" alt="backup knowledge graph" title="backup knowledge graph" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/backup-knowledge-graph.png" alt="backup knowledge graph" title="backup knowledge graph" style="border: 1px solid gray; zoom:75%;">
 
 6. Drag and drop the file to the **Import** window or click **Browse** to locate the file.
 7. Click **Next** to begin the import.
-<img src="../../images/click-begin-import.png" alt="click begin import" title="click begin import" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/click-begin-import.png" alt="click begin import" title="click begin import" style="border: 1px solid gray; zoom:75%;">
 
 After the import is complete, the success message appears in a dialog box. 
 8. Click **Done**.
@@ -42,7 +42,7 @@ To export a Knowledge Graph, follow the below steps:
 1. On the left pane, click **Conversational Skills** > **Knowledge Graph**.
 2. You can find the **Export** option on the respective Knowledge Graph.
 
-    <img src="../../images/export-knowledge-graph.png" alt="export knowledge graph" title="export knowledge graph" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/export-knowledge-graph.png" alt="export knowledge graph" title="export knowledge graph" style="border: 1px solid gray; zoom:75%;">
 
 3. Based on the preferred format: click **Export JSON** or **Export CSV**.
 
@@ -51,6 +51,6 @@ To export a Knowledge Graph, follow the below steps:
     <p>Please read the warning message shown below before clicking <b>Confirm</b>. To learn more about caching challenges and strategies, click <a href="https://aws.amazon.com/builders-library/caching-challenges-and-strategies/#:~:text=Caches%20are%20also%20susceptible%20to%20poisoning%20attacks%2C%20in%20which%20a,will%20see%20the%20malicious%20value">here</a>.</p>
     </div>
 
-    <img src="../../images/export-caching-notice-message.png" alt="export caching message" title="export caching message" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/export-caching-notice-message.png" alt="export caching message" title="export caching message" style="border: 1px solid gray; zoom:75%;">
 
     When these steps are completed, the Knowledge Graph file is downloaded to your machine.
