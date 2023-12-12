@@ -177,19 +177,6 @@ nav:
         - Entity Rules: automation/intelligence/context-management.md
         - User Prompts or Messages: automation/intelligence/context-management.md
         - Voice Call Properties: automation/intelligence/context-management.md  
-      - Knowledge AI:
-        - Overview: automation/use-cases/knowledge-ai/knowledge-ai-introduction.md
-        - Knowledge Graph (KG):
-          - Introduction: automation/use-cases/knowledge-ai/knowledge-graph-overview.md
-          - Terminology: automation/use-cases/knowledge-ai/knowledge-graph-terminology.md
-          - Build a KG: automation/use-cases/knowledge-ai/build-a-knowledge-graph.md
-          - Manage FAQs: automation/use-cases/knowledge-ai/manage-faqs.md
-          - Knowledge Extraction: automation/use-cases/knowledge-ai/knowledge-extraction.md
-          - Import or Export KG:
-            - Prepare Data for Import: automation/use-cases/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
-            - Import or Export KG: automation/use-cases/knowledge-ai/import-and-export-knowledge-graph.md
-            - Auto-Generate KG: automation/use-cases/knowledge-ai/generate-a-knowledge-graph.md
-          - KG Analysis: automation/use-cases/knowledge-ai/knowledge-graph-analysis.md 
       - Alert Tasks: automation/use-cases/small-talk.md
       - Small Talk: automation/use-cases/small-talk.md
       - Digital Skills: 
@@ -226,6 +213,19 @@ nav:
       - Batch Testing: getting-started.md
       - Conversation Testing: getting-started.md
   - Answers:
+    - KNOWLEDGE AI:
+        - Overview: automation/use-cases/knowledge-ai/knowledge-ai-introduction.md
+        - Knowledge Graph (KG):
+          - Introduction: automation/use-cases/knowledge-ai/knowledge-graph-overview.md
+          - Terminology: automation/use-cases/knowledge-ai/knowledge-graph-terminology.md
+          - Build a KG: automation/use-cases/knowledge-ai/build-a-knowledge-graph.md
+          - Manage FAQs: automation/use-cases/knowledge-ai/manage-faqs.md
+          - Knowledge Extraction: automation/use-cases/knowledge-ai/knowledge-extraction.md
+          - Import or Export KG:
+            - Prepare Data for Import: automation/use-cases/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
+            - Import or Export KG: automation/use-cases/knowledge-ai/import-and-export-knowledge-graph.md
+            - Auto-Generate KG: automation/use-cases/knowledge-ai/generate-a-knowledge-graph.md
+          - KG Analysis: automation/use-cases/knowledge-ai/knowledge-graph-analysis.md       
     - CONTENT SOURCES:
       - Directory: answers/content-sources/directory.md 
       - Web Crawl: answers/content-sources/web-crawl.md      
