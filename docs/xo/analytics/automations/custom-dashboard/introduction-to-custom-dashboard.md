@@ -6,7 +6,7 @@ Using Custom Dashboard, you can select the metrics most relevant to your needs a
 
 Custom Dashboards are available along with the other out-of-the-box dashboards in the Bot Builder. For more information on the Default Dashboard, see here.
 
-Follow these steps to build Custom Dashboards:
+**Follow these steps to build Custom Dashboards**:
 
 
 
@@ -18,7 +18,8 @@ Follow these steps to build Custom Dashboards:
 
 
 
-1. Click the three dots on the left navigation pane and then click **Analytics**. The Analytics panel is displayed with the list of reports. 
+1. Click the three dots on the left navigation pane and then click **Analytics**. The Analytics panel is displayed with the list of reports.
+
 <img src="../images/navigate-to-custom-dashboard.png" alt="Navigate to Custom Dashboard" title="Navigate to Custom Dashboard" style="border: 1px solid gray; zoom:80%;">
 
 2. Click the **Custom Dashboards** under the **Automation** section of the **Analytics** panel. The **Custom Dashboards dashboard** is displayed on the right side of the page.
