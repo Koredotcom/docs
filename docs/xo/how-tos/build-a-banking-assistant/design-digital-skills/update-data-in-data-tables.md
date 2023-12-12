@@ -19,7 +19,7 @@ Consider a Banking Bot, for a given customer, the following data is stored. This
 ## Prerequisites
 
 * Bot building knowledge.
-* A Banking Bot with access to the above-mentioned table, and data existing in that table (click <a href="https://developer.kore.ai/docs/bots/how-tos/how-to-add-data-tables/" target="_blank"> here</a> for use case example to create and add data).
+* A Banking Bot with access to the above-mentioned table, and data existing in that table (click <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-digital-skills/add-data-to-data-tables/" target="_blank"> here</a> for use case example to create and add data).
 
 ## Configurations
 

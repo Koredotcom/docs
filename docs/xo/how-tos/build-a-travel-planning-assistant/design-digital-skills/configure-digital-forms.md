@@ -2,7 +2,7 @@
 
 In this document, we will explore a scenario in a Travel Planning assistant, through which a user can book a flight. We will see how Digital Forms can be used to gather all the required information from the user, then make the booking based on that information.
 
-For details on what Digital Forms are and how they are implemented in the XO Platform, click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/digital-forms/" target="_blank">here</a>.
+For details on what Digital Forms are and how they are implemented in the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-forms/" target="_blank">here</a>.
 
 ## Problem Statement
 
@@ -12,8 +12,8 @@ Consider a Travel Planning Assistant helping a user book a flight. There are sev
 
 To understand these configurations, you need to know at least the basics of the following XO Platform features:
 
-* <a href="https://developer.kore.ai/docs/bots/how-tos/travel-planing-assistant/create-a-travel-virtual-assistant/" target="_blank">Building a Virtual Assistant</a>: This is because your assistant needs to have been already built when you begin working on your forms.
-* <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/digital-forms/" target="_blank">Working with Digital Forms</a>.
+* <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/create-a-travel-virtual-assistant/" target="_blank">Building a Virtual Assistant</a>: This is because your assistant needs to have been already built when you begin working on your forms.
+* <a href="" target="_blank">Working with Digital Forms</a>.
 
 ## Configurations
 
@@ -184,7 +184,7 @@ print(message);
 
 You can use the context object as shown above in <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-script-node/" target="_blank">Script</a> or <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-service-node/" target="_blank">Service</a> nodes for further processing of the booking.
 
-Click <a href="https://developer.kore.ai/docs/bots/how-tos/how-to-add-data-into-data-tables-from-digital-forms/" target="_blank">here</a> to learn how to add this data into data tables.
+Click <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-digital-skills/add-data-into-data-tables-from-ui-forms/" target="_blank">here</a> to learn how to add this data into data tables.
 <img src="../images/test-bot-configure-form.png" alt="test bot configure form" title="test bot configure form" style="border: 1px solid gray; zoom:75%;">
 
 

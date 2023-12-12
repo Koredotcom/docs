@@ -6,9 +6,9 @@ This document is part of the documentation that shows you the steps in creating 
 
 The assistant we build will perform basic travel booking tasks, as follows:
 
-* Check the status of a flight, based on the flight number provided by the user, as seen <a href="https://developer.kore.ai/docs/bots/how-tos/travel-planing-assistant/create-a-travel-virtual-assistant/#Create_a_Dialog_Task" target="_blank">here</a>.
-* Update a flight booking, as discussed in <a href="https://developer.kore.ai/docs/bots/how-tos/update-booking-task/" target="_blank">this article</a>.
-* Perform a flight change, based on the current flight and new flight preference provided by the user, as seen <a href="https://developer.kore.ai/uncategorised/change-flight-task/" target="_blank">here</a>.
+* Check the status of a flight, based on the flight number provided by the user, as seen <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/create-a-travel-virtual-assistant/#create-a-dialog-task" target="_blank">here</a>.
+* Update a flight booking, as discussed in <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/design-conversation-skills/update-booking-task/ target="_blank">this article</a>.
+* Perform a flight change, based on the current flight and new flight preference provided by the user, as seen <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/design-conversation-skills/change-flight-task/" target="_blank">here</a>.
 
 In this article, therefore, we will be configuring the assistant to update a booking, by configuring an Update Booking Intent. For the purpose of this use case, we will work with a Name update.
 

@@ -2,7 +2,7 @@
 
 In this post, we explore how you can create an additional account through a Banking Bot. We will see how Digital Forms can be used to gather all the required information from the user and create the account.
 
-For details on what Digital Forms are and how it is implemented in the XO platform, click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/digital-forms/" target="_blank"> here</a>.
+For details on what Digital Forms are and how it is implemented in the XO platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-forms/" target="_blank"> here</a>.
 
 ## Problem Statement
 
@@ -199,4 +199,4 @@ Your dialog with form is ready!
 <img src="../images/talk-to-bot-digital-forms.png" alt="javascript code" title="javascript code" style="border: 1px solid gray; zoom:75%;">
 
 <li>You can use the context object as shown above it a <b>Script</b> or <b>Service</b> nodes for further processing.</li>
-<li>Click <a href="https://developer.kore.ai/docs/bots/how-tos/how-to-add-data-into-data-tables-from-digital-forms/" target="_blank">here</a> to learn how to add this data into data tables.</li></ol>
+<li>Click <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-digital-skills/add-data-into-data-tables-from-ui-forms/" target="_blank">here</a> to learn how to add this data into data tables.</li></ol>

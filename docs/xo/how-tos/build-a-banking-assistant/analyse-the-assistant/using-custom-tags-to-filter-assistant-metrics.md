@@ -2,7 +2,7 @@
 
 In this How-To, we will explore a scenario in a Banking Bot, where, various metrics will be used to analyze the bot performance.
 
-For details on what Bot Metrics are and how they are implemented in the Kore.ai Bots platform, click <a href="https://developer.kore.ai/docs/bots/analyzing-your-bot/bot-analysis/" target="_blank">here</a>.
+For details on what Bot Metrics are and how they are implemented in the XO Platform, click <a href="https://developer.kore.ai/docs/bots/analyzing-your-bot/bot-analysis/" target="_blank">here</a>.
 
 ## Problem Statement
 
@@ -11,15 +11,15 @@ A Banking Bot client can track the following metrics:
 * Frequent Intents used by customers;
 * Usage split based on the customer type;
 
-This document gives a detailed step-by-step approach to viewing the above statistics from the Bot Metrics page and apply filters based on <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/custom-meta-tags/" target="_blank">Custom Meta Tags</a>.
+This document gives a detailed step-by-step approach to viewing the above statistics from the Bot Metrics page and apply filters based on <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/analyse-the-assistant/using-custom-tags-to-filter-assistant-metrics/" target="_blank">Custom Meta Tags</a>.
 
 ## Prerequisites
 
 <ul><li>Bot building knowledge.</li>
-<li>Custom Meta Tags usage, click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/custom-meta-tags/" target="_blank">here</a> to learn more.</li>
-<li>A <a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/" target="_blank">Banking Bot</a> with the dialogs as mentioned below:</li>
+<li>Custom Meta Tags usage, click <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/analyse-the-assistant/using-custom-tags-to-filter-assistant-metrics/" target="_blank">here</a> to learn more.</li>
+<li>A <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">Banking Bot</a> with the dialogs as mentioned below:</li>
 <ul>
-<li><strong><a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-transfer-funds/" target="_blank">Transfer Money</a></strong> – Dialog task walking the user through the steps in transferring money.</li>
+<li><strong><a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-transfer-funds-task/" target="_blank">Transfer Money</a></strong> – Dialog task walking the user through the steps in transferring money.</li>
 
 <img src="../images/transfer-money-dialog.png" alt="transfer money dialog" title="transfer money dialog" style="border: 1px solid gray; zoom:75%;"></ul></ul>
 
