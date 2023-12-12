@@ -119,9 +119,9 @@ copyright: |
   © 2023 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
   - Platform : home.md
-  - Get Started:
+  - Getting Started:
     - PLATFORM:
-      - Introduction to the Platform: virtual-assistants-overview.md
+      - Introduction to the Platform: getting-started/about-xo-platform.md
       - Access the Platform: virtual-assistants-overview.md   
       - Automation:
         - Introduction to Virtual Assistant: virtual-assistants-overview.md
