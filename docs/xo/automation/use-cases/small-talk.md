@@ -1,4 +1,4 @@
-# **Small Talk**
+# Small Talk
 
 **Small Talk** refers to the casual conversations that a Virtual Assistant can have with end users. The ability to engage end users in casual conversations helps your assistant socialize better with customers and improves recall rates.
 
@@ -12,7 +12,7 @@ You can find Small Talk on the Unified XO Platform under **Build > Conversationa
 
 Positive interactions are key to businesses today, especially in the context of CRM automation. Even when people know that they are not being assisted by a human, they still appreciate the occasional joke, casual chat or other friendly cues that make human-to-human conversations more engaging. This is why a Virtual Assistant that can handle small talk improves the experience for your users or customers.
 
-The Small Talk Engine within the Kore.ai XO Platform lets you configure the conversational elements that are specific to your business context, so that you can create a conversational VA that recognizes when people make small talk and responds accordingly, thus providing a friendly experience, rather than one that feels dry and technical. 
+The Small Talk Engine within the XO Platform lets you configure the conversational elements that are specific to your business context, so that you can create a conversational VA that recognizes when people make small talk and responds accordingly, thus providing a friendly experience, rather than one that feels dry and technical. 
 
 ## Features
 
@@ -258,7 +258,7 @@ This information is stored in the Small Talk context and can be accessed using: 
 
 The following is the JSON structure:
 
-```
+```js
 {
   "pattern": "I am from _~location Where are you from?",
   "matchData": {
@@ -276,7 +276,7 @@ For example, consider the pattern: how is the *[ climate temperature ]  { at _~l
 
 context: 
 
-```
+```js
 {
   "pattern": "how is the _[ climate temperature ]  { at _~location } ~time",
   "matchData": {
@@ -290,7 +290,7 @@ context:
 **Case2**: user utterance: “*how is the climate today*“
 
 context: 
-```
+```js
 {
   "pattern": "how is the _[ climate temperature ]  { at _~location } ~time",
   "matchData": {
@@ -305,7 +305,7 @@ The context can be accessed from the child nodes under _previousMatchedData_ arr
 
 The JSON structure for the parent Small Talk context would be:
 
-```
+```js
 {
   "pattern": "That is nice",
   "matchData": {},

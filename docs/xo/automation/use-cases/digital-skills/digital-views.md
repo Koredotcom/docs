@@ -1,8 +1,8 @@
-# **Digital Views**
+# Digital Views
 
 Interactions with Virtual Assistants are typically conducted using chat/messaging tools, voice channels, or other types of assistants. In the majority of the cases, the Virtual Assistants respond to the user queries only when the users have requested some information. This works well for conducting on-demand tasks that need user input for execution and the result is usually a short response, confirmation, or acknowledgment. But the need for more proactive user updates and less user input through an engaging interface has become a key requirement. 
 
-Using **Digital Views** from the Kore.ai XO Platform, you can design and launch rich visual experiences through interactive components, panels, and widgets, to proactively present relevant information to your users or customers. **Panels** are the placeholders that hold one or more widgets. **Widgets** are individual components that display information to the end-users. Your users or customers can interact with your VA either in conversation mode or directly get the required information from the widgets.
+Using **Digital Views** from the XO Platform, you can design and launch rich visual experiences through interactive components, panels, and widgets, to proactively present relevant information to your users or customers. **Panels** are the placeholders that hold one or more widgets. **Widgets** are individual components that display information to the end-users. Your users or customers can interact with your VA either in conversation mode or directly get the required information from the widgets.
 
 This article gives an overview on the working and implementation of **Panels & Widgets**. For step-by-step usage instructions, [refer to this article](https://developer.kore.ai/docs/bots/how-tos/how-to-configure-digital-views/).
 

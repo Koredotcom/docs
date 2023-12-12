@@ -1,4 +1,4 @@
-# **Default Flows**
+# Default Flows
 
 The **Default Flows** feature lets you customize experiences for common events like welcome, transfer, or an unknown Intent.
 

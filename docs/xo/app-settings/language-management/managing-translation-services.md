@@ -1,4 +1,4 @@
-# **Managing Translation Services**
+# Managing Translation Services
 
 The Kore.ai XO Platform offers multiple ways to train your virtual assistant for language understanding. One of the ways is to use translation services to translate the user input. In this approach, you can train the virtual assistant in a language (NLU Language) other than the interaction language. For example, you can enable Spanish as an interaction language but train the assistant using English language training data.
 

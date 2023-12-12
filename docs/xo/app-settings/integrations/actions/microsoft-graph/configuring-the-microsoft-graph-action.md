@@ -1,4 +1,4 @@
-# **Configuring the Microsoft Graph Action**
+# Configuring the Microsoft Graph Action
 
 You can use Microsoft Graph to create, view, and update events and to-do lists, and send emails to users. Click the [Microsoft Graph](https://azure.microsoft.com/en-us/get-started/azure-portal){:target="_blank"} link to learn more. .
 
@@ -7,7 +7,7 @@ This article explains how to enable, authorize, configure, and install the Micro
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow a Microsoft Graph integration to exchange data. For more information, see [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"}. 
+The Kore.ai XO Platform supports basic authentication to allow a Microsoft Graph integration to exchange data. For more information, see [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"}. 
 The Kore.ai XO Platform supports the following authorization types for the Microsoft Graph integration:
 
 * **Pre-Authorize the Integration** – To make the integration process smoother for developers and customers, you can pre-authorize it by providing the necessary authorization credentials to obtain the access token..
@@ -87,7 +87,7 @@ Steps to authorize a Microsoft Graph action using developer credentials:
     * Click the **Select Authorization** drop-down and select the **Create New** option.  
     <img src="../images/ms-graph-action-img4.png" alt="Create new authorization" title="Create new authorization" style="border: 1px solid gray;zoom:50%;"/>
 
-    * Select the type of authorization mechanism. For example, select the OAuth v2 option. To create custom OAuth profiles, read the [Setting Up Authorization Using OAuth v2](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-oauthv2-clientcredentials/){:target="_blank"} article.  
+    * Select the type of authorization mechanism. For example, select the OAuth v2 option. To create custom OAuth profiles, read the [Setting Up Authorization Using OAuth v2](../../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2){:target="_blank"} article.  
     <img src="../images/ms-graph-action-img5.png" alt="Auth mechanism type" title="Auth mechanism type" style="border: 1px solid gray;zoom:50%;"/>
 
     * Enter the following authentication credentials for the OAuth v2 mechanism:
@@ -104,7 +104,7 @@ Steps to authorize a Microsoft Graph action using developer credentials:
         
         * **Refresh Token URL** – The refresh token URL of the Microsoft Azure Portal.  
 
-          To register an Azure App, read the [Adding the Microsoft Teams Channel](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-microsoft-teams-channel/){:target="_blank"} article.
+          To register an Azure App, read the [Adding the Microsoft Teams Channel](../../../../../channels/add-microsoft-teams-channel){:target="_blank"} article.
 
         <img src="../images/ms-graph-action-img6.png" alt="Auth credentials" title="Auth credentials" style="border: 1px solid gray;zoom:50%;"/>
 

@@ -1,4 +1,4 @@
-# **Knowledge Graph Terminology**
+# Knowledge Graph Terminology
 
 This article explains the terminology for [building a Knowledge Graph](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/creating-a-knowledge-graph/) within the XO Platform. This terminology applies to both the Few-Shot and the Ontology KG Models unless otherwise specified. [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ontology/).
 

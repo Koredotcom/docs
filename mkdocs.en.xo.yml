@@ -35,7 +35,6 @@ theme:
         name: Switch to light mode    
       primary: indigo
       accent: lime
-    
 plugins:
   - search:
       lang: tr
@@ -119,59 +118,154 @@ markdown_extensions:
 copyright: |
   © 2023 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
-  - Home: index.md
-  - Getting started:
-    - Virtual Assistants Overview: virtual-assistants-overview.md
-    - Web & Mobile SDK Message Formatting and Templates: web-mobile-SDK-message-formatting-and-templates.md
-    - What's new: whats-new/whats-new-in-this-release.md
-    - Recent Updates: whats-new/10-1-x-release-notes.md
-    - Installation: getting-started.md
-    - Creating your site: creating-your-site.md
-    - Publishing your site: publishing-your-site.md
-    - Customization: customization.md
-    - Browser support: browser-support.md
-    - Philosophy: philosophy.md
-    - Alternatives: alternatives.md
-    - License: license.md
-  - Automation:
-    - Conversation Automation:
-      - Design:
-        - Dialogs: getting-started.md 
-        - Knowledge AI: getting-started.md
-        - Small Talk: automation/use-cases/small-talk.md
-        - Digital Skills: 
-          - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
-          - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
-          - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
-          - Digital Views: automation/use-cases/digital-skills/digital-views.md
-          - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md
-        - Feedback Survey: automation/use-cases/feedback-surveys.md
-      - Training:
-        - Natural Language Processing:
-          - Overview: automation/natural-language/nlp-introduction.md
-          - NLP Guidelines: automation/natural-language/nlp-guidelines.md
+  - Platform : home.md
+  - Get Started:
+    - PLATFORM:
+      - Introduction to the Platform: virtual-assistants-overview.md
+      - Access the Platform: virtual-assistants-overview.md   
+      - Automation:
+        - Introduction to Virtual Assistant: virtual-assistants-overview.md
+        - Build a Virtual Assistant: virtual-assistants-overview.md   
+      - Answers:
+        - Introduction to Answers: virtual-assistants-overview.md
+        - Configure Answers: virtual-assistants-overview.md   
+      - AgentAssist:
+        - Introduction to AgentAssist: virtual-assistants-overview.md
+        - Set up AgentAssist: virtual-assistants-overview.md       
+      - Contact Center:
+        - Introduction to Contact Center: virtual-assistants-overview.md
+        - Set up Contact Center: virtual-assistants-overview.md       
+      - Campaigns:
+        - Introduction to Campaigns: virtual-assistants-overview.md
+        - Set up Campaign: virtual-assistants-overview.md       
+      - Quality Management:
+        - Introduction to Quality Management: virtual-assistants-overview.md
+        - Configure Quality Management: virtual-assistants-overview.md         
+    - GLOSSARY:
+      - Concepts and Terminology: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/ 
+    - FAQs: 
+      - Automation FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
+      - Contact Center FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/   
+  - Automation: 
+    - DESIGN: 
+      - Dialogs Tasks:
+        - Overview: whats-new/whats-new-in-this-release.md 
+        - Navigating Dialog Tasks: automation/intelligence/context-management.md
+        - Build Dialog Tasks: automation/intelligence/context-management.md
+        - Node Types:
+          - Overview: automation/intelligence/context-management.md
+          - Intent Node: automation/intelligence/context-management.md
+          - Dialog Node: automation/intelligence/context-management.md
+          - Dynamic Intent Node: automation/intelligence/context-management.md
+          - GenAI Node: automation/intelligence/context-management.md
+          - GenAI Prompt: automation/intelligence/context-management.md
+          - Entity Node: automation/intelligence/context-management.md
+          - Form Node: automation/intelligence/context-management.md
+          - Confirmation Node: automation/intelligence/context-management.md
+          - Message Node: automation/intelligence/context-management.md
+          - Logic Node: automation/intelligence/context-management.md
+          - Bot Action Node: automation/intelligence/context-management.md
+          - Service Node: automation/intelligence/context-management.md
+          - Webhook Node: automation/intelligence/context-management.md
+          - Script Node: automation/intelligence/context-management.md
+          - Process Node: automation/intelligence/context-management.md
+          - Agent Transfer Node: automation/intelligence/context-management.md
+        - Node Connections:
+          - Node Connections Setup: automation/intelligence/context-management.md 
+          - Sub-Intent Scoping: automation/intelligence/context-management.md
+        - Entity Types: automation/intelligence/context-management.md
+        - Entity Rules: automation/intelligence/context-management.md
+        - User Prompts or Messages: automation/intelligence/context-management.md
+        - Voice Call Properties: automation/intelligence/context-management.md  
+      - Knowledge AI:
+        - Overview: automation/use-cases/knowledge-ai/knowledge-ai-introduction.md
+        - Knowledge Graph (KG):
+          - Introduction: automation/use-cases/knowledge-ai/knowledge-graph-overview.md
+          - Terminology: automation/use-cases/knowledge-ai/knowledge-graph-terminology.md
+          - Build a KG: automation/use-cases/knowledge-ai/build-a-knowledge-graph.md
+          - Manage FAQs: automation/use-cases/knowledge-ai/manage-faqs.md
+          - Knowledge Extraction: automation/use-cases/knowledge-ai/knowledge-extraction.md
+          - Import or Export KG:
+            - Prepare Data for Import: automation/use-cases/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
+            - Import or Export KG: automation/use-cases/knowledge-ai/import-and-export-knowledge-graph.md
+            - Auto-Generate KG: automation/use-cases/knowledge-ai/generate-a-knowledge-graph.md
+          - KG Analysis: automation/use-cases/knowledge-ai/knowledge-graph-analysis.md 
+      - Alert Tasks: automation/use-cases/small-talk.md
+      - Small Talk: automation/use-cases/small-talk.md
+      - Digital Skills: 
+        - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
+        - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
+        - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
+        - Digital Views: automation/use-cases/digital-skills/digital-views.md
+        - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md
+      - Feedback Survey: automation/use-cases/feedback-surveys.md
+    - TRAINING:
+      - Natural Language Processing:
+        - Overview: automation/natural-language/nlp-introduction.md
+        - NLP Guidelines: automation/natural-language/nlp-guidelines.md
         - Introduction: automation/natural-language/training/nlp-training-overview.md
         - Intents: getting-started.md 
         - Entities: getting-started.md 
         - Bot Synonyms: getting-started.md
         - Traits: getting-started.md
         - Fields: getting-started.md
-      - NLU Configuration: 
-        - Engine Tuning: automation/natural-language/nlu-configurations/engine-tuning.md
-        - Amend Entity: automation/natural-language/nlu-configurations/amend-entities.md
-        - Multi Intent Detect: automation/natural-language/nlu-configurations/multi-intent-detection.md
-      - Events: 
-        - Intent Events: getting-started.md 
-        - conversation Events: getting-started.md 
-        - Sentiment Events: getting-started.md
-      - Conversation Management: 
-        - Standard Responses: getting-started.md 
-        - Manage Interruptions: getting-started.md 
-        - Ignore Words and Field Memory: getting-started.md 
-      - Regression Testing: 
-        - Health and Monitoring: getting-started.md 
-        - Batch Testing: getting-started.md
-        - Conversation Testing: getting-started.md
+    - NLU CONFIGURATION: 
+      - Engine Tuning: automation/natural-language/nlu-configurations/engine-tuning.md
+      - Amend Entity: automation/natural-language/nlu-configurations/amend-entities.md
+      - Multi Intent Detect: automation/natural-language/nlu-configurations/multi-intent-detection.md
+    - EVENTS: 
+      - Intent Events: getting-started.md 
+      - conversation Events: getting-started.md 
+      - Sentiment Events: getting-started.md
+    - CONVERSATION MANAGEMENT: 
+      - Standard Responses: getting-started.md 
+      - Manage Interruptions: getting-started.md 
+      - Ignore Words and Field Memory: getting-started.md 
+    - REGRESSION TESTING: 
+      - Health and Monitoring: getting-started.md 
+      - Batch Testing: getting-started.md
+      - Conversation Testing: getting-started.md
+  - Answers:
+    - CONTENT SOURCES:
+      - Directory: answers/content-sources/directory.md 
+      - Web Crawl: answers/content-sources/web-crawl.md      
+  - Contact Center:
+    - Configurations:
+      - Default Flows: contactcenter/configurations/default-flows/configure-default-flows.md 
+      - Routing: contactcenter/configurations/default-flows/configure-default-flows.md 
+      - Hour of Operations: contactcenter/configurations/default-flows/configure-default-flows.md 
+      - Setup: 
+        - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
+        - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
+        - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
+        - Digital Views: automation/use-cases/digital-skills/digital-views.md
+        - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md  
+  - AgentAssist:
+    - Agent Experience:
+      - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md 
+      - Knowledge AI: agentassist/agent-experience/agent-realtime-coaching.md
+      - Small Talk: agentassist/agent-experience/agent-realtime-coaching.md
+      - Digital Skills: 
+        - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
+        - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
+        - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
+        - Digital Views: automation/use-cases/digital-skills/digital-views.md
+        - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md
+  - Integrations & APIs:
+    - Integrations:
+      - Overview: channels/IVR-integration.md
+      - Actions: channels/IVR-integration.md   
+      - Agent Transfer: channels/IVR-integration.md
+    - APIs:
+      - API Reference:
+        - API Introduction: apis/api-list.md
+        - API List: apis/api-list.md           
+  - Analytics:
+    - insiders/index.md
+    - Automation:
+      - Introduction: analytics/automations/introduction.md
+      - Changelog: insiders/changelog.md
+  - Administration:
     - Contributing:
       - contributing/index.md
       - Reporting a bug: contributing/reporting-a-bug.md
@@ -183,66 +277,5 @@ nav:
     - FAQ:
       - Sponsoring: faq/sponsoring.md
       - Intent Over Entity: faq/intent-over-entity.md
-  - Setup:
-    - setup/index.md
-    - Changing the colors: setup/changing-the-colors.md
-    - Changing the fonts: setup/changing-the-fonts.md
-    - Changing the language: setup/changing-the-language.md
-    - Changing the logo and icons: setup/changing-the-logo-and-icons.md
-    - Ensuring data privacy: setup/ensuring-data-privacy.md
-    - Setting up navigation: setup/setting-up-navigation.md
-    - Setting up site search: setup/setting-up-site-search.md
-    - Setting up site analytics: setup/setting-up-site-analytics.md
-    - Setting up social cards: setup/setting-up-social-cards.md
-    - Setting up a blog: setup/setting-up-a-blog.md
-    - Setting up tags: setup/setting-up-tags.md
-    - Setting up versioning: setup/setting-up-versioning.md
-    - Setting up the header: setup/setting-up-the-header.md
-    - Setting up the footer: setup/setting-up-the-footer.md
-    - Adding a git repository: setup/adding-a-git-repository.md
-    - Adding a comment system: setup/adding-a-comment-system.md
-    - Building an optimized site: setup/building-an-optimized-site.md
-    - Building for offline usage: setup/building-for-offline-usage.md
-    - Extensions:
-      - setup/extensions/index.md
-      - Python Markdown: setup/extensions/python-markdown.md
-      - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
-    - Dependencies:
-      - setup/dependencies/image-processing.md
-  - API:
-    - reference/index.md
-    - Debug Logs API: API/debug-logs-api.md
-    - Outbound Calling API: API/outbound-calling-api.md
-    - Conversation Details & Summary API: API/conversation-details-summary-api.md
-    - Annotations: reference/annotations.md
-    - Buttons: reference/buttons.md
-    - Code blocks: reference/code-blocks.md
-    - Content tabs: reference/content-tabs.md
-    - Data tables: reference/data-tables.md
-    - Diagrams: reference/diagrams.md
-    - Footnotes: reference/footnotes.md
-    - Formatting: reference/formatting.md
-    - Grids: reference/grids.md
-    - Icons, Emojis: reference/icons-emojis.md
-    - Images: reference/images.md
-    - Lists: reference/lists.md
-    - Math: reference/math.md
-    - Tooltips: reference/tooltips.md
-  - Analytics:
-    - insiders/index.md
-    - Analyze:
-      - Dashboard Filters: analytics/dashboard-filters.md
-      - Changelog: insiders/changelog.md
-  - Guides:
-      - Snippet Extraction Stage: guides/answergeneration/test-shruti.md
-      - Overview:
-        - Create a New Workspace: overview/create-a-new-workspace.md
-  - Blog:
-    - blog/index.md
-    - 2022:
-      - blog/posts/blog-support-just-landed.md
-      - blog/posts/chinese-search-support.md
-    - 2021:
-      - blog/posts/the-past-present-and-future.md
-      - blog/posts/excluding-content-from-search.md
-      - blog/posts/search-better-faster-smaller.md
+      
+   

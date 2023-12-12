@@ -1,4 +1,4 @@
-# **Test Case Assertion**
+# Test Case Assertion
 
 A test case assertion is a statement specifying a condition that must be satisfied for a test case to be considered successful. In the context of conversational systems, test case assertions can be used to validate various aspects of the conversation, such as the correctness of the response to a user’s input, the correctness of the conversation flow, and the correctness of the conversation context. By including multiple assertions in a test case, you can thoroughly test the behavior of a conversational system and ensure that it is functioning as expected.
 
@@ -28,7 +28,9 @@ If the virtual assistant’s response is from a Dialog node, then the following 
 
         <img src="../images/tca-img2.png" alt="Text Assertion" title="Text Assertion" style="border: 1px solid gray;zoom:50%;"/>  
       
-    **Note:** In case of text assertion, if the expected output has dynamic values, then it should be annotated using [Dynamic Text Marking](#dynamic-text-marking). If not marked, the text assertion fails and eventually leads to failure of the test case. For the test case to pass, the text for that specific output must be dynamically marked.  
+          !!! note
+          
+              In case of text assertion, if the expected output has dynamic values, then it should be annotated using [Dynamic Text Marking](#dynamic-text-marking). If not marked, the text assertion fails and eventually leads to failure of the test case. For the test case to pass, the text for that specific output must be dynamically marked.  
       
     For example, in the following test case, the city name entered by the user can be different every time. It is marked as dynamic for that specific test case to pass.  
     <img src="../images/tca-img3.png" alt="Example-Test case details" title="Example-Test case details" style="border: 1px solid gray;zoom:50%;"/>  
@@ -49,8 +51,10 @@ If the virtual assistant’s response is from a Dialog node, then the following 
         * Key
         * Value  
 
-    **Note:** The Context assertion label is added or removed to the test case in a validated chat based on whether it is enabled or disabled. As you add one pair, text boxes to add another pair get displayed. Once added, the saved key-value pairs are retained even if the assertion is disabled. 
-    If the VA response is from a **FAQ** or **Small Talk or Standard Response**, the Flow assertion has only **Expected Node**. The behavior of Text and Context assertions is the same as how it is for Dialog intent.
+        !!! note
+        
+            The Context assertion label is added or removed to the test case in a validated chat based on whether it is enabled or disabled. As you add one pair, text boxes to add another pair get displayed. Once added, the saved key-value pairs are retained even if the assertion is disabled. 
+            If the VA response is from a **FAQ** or **Small Talk or Standard Response**, the Flow assertion has only **Expected Node**. The behavior of Text and Context assertions is the same as how it is for Dialog intent.
 
 
 
@@ -90,9 +94,9 @@ This section explains how to access the Test Coverage and its details.
 
 On the Conversation Testing landing page, in the **Test Suite Details** grid, click any Test Suite and then click the **Test Coverage** tab. Test Coverage contains the following three sub-tabs:
 
-  * [Dialog Intents](../test-case-execution-summary/#dialog-intents){:target="_blank"}
-  * [FAQs](../test-case-execution-summary/#faqs){:target="_blank"}
-  * [Small Talks](../test-case-execution-summary/#small-talks){:target="_blank"}
+  * [Dialog Intents](#dialog-intents)
+  * [FAQs](#faqs)
+  * [Small Talks](#small-talks)
 
 
 ### Dialog Intents
@@ -169,7 +173,7 @@ All the Small Talks covered in the test cases are displayed in this tab in two c
   * Pattern  
   * Group
 
-To know more about Patterns and Groups, see [Small Talk](https://developer.kore.ai/docs/bots/bot-builder-tool/small-talk/){:target="_blank"}.
+To know more about Patterns and Groups, see [Small Talk](../../../../use-cases/small-talk){:target="_blank"}.
 
 <img src="../images/tca-img17.png" alt="Small talk" title="Small talk" style="border: 1px solid gray;zoom:50%;"/>
 

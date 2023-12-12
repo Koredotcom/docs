@@ -1,4 +1,4 @@
-# **Get User Roles Details API**
+# Get User Roles Details API
 
 To get complete information of all the users and their associated roles in the account.
 

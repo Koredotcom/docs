@@ -1,4 +1,4 @@
-# **Hours of Operation**
+# Hours of Operation
 
 The **Hours of Operation** feature helps set the standard hours when agents are available for customers based on business operating hours, non-operating hours, and holidays.
 

@@ -1,10 +1,8 @@
-# **Proactive Notifications API**
+# Proactive Notifications API
 
 Proactive Notifications allow enterprises to engage with their end users (customers or employees) by providing relevant and timely updates.
 
 Proactive notification includes:
-
-
 
 * Nudge the employees to reset their password before it expires in certain days
 * Remind users to submit expense reports.

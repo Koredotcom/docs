@@ -1,5 +1,5 @@
 
-# **Configuring the Asana Action**
+# Configuring the Asana Action
 
 The Kore.ai XO Platform lets you easily connect with your Asana instance to find information regarding projects, users, and tasks. [Learn more about Asana](https://asana.com/){:target="_blank"}.
 
@@ -8,7 +8,7 @@ This document explains how to authorize and enable the Asana action and install 
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow Asana integration to exchange data. For more information, read the [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"} article.
+The Kore.ai XO Platform supports basic authentication to allow Asana integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the Asana integration:
 
@@ -69,7 +69,7 @@ Steps to authorize an Asana action at a user level:
     2. Create your authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s Asana app for authorization. To create a profile, click the **Select Authorization** drop-down and select the **Create New** option.  
     <img src="../images/asana-action-img6.png" alt="Create basic auth" title="Create basic auth" style="border: 1px solid gray;zoom:50%;"/>
 
-    3. Select the type of authorization mechanism. For example, select the **API Key** option. To create Basic Auth profiles, see [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"}.  
+    3. Select the type of authorization mechanism. For example, select the **API Key** option. To create Basic Auth profiles, see [Bot Authorization Overview](../../../../dev-tools/bot-authentication){:target="_blank"}.  
     <img src="../images/asana-action-img7.png" alt="API Key" title="API Key" style="border: 1px solid gray;zoom:50%;"/>
 
     4. Enter the following authentication credentials for the Basic Auth mechanism:

@@ -1,4 +1,4 @@
-# **Using the Salesforce CRM Action Templates**
+# Using the Salesforce CRM Action Templates
 
 You can use the **Prebuilt Action Templates** from your Salesforce integration to auto create dialog tasks and test them using the **Talk to Bot** option.
 

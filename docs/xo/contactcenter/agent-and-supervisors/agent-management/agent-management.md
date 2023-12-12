@@ -1,4 +1,4 @@
-# **Agent Management**
+# Agent Management
 
 ## Agents
 

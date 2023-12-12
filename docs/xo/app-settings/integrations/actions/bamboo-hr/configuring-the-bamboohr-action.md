@@ -1,4 +1,4 @@
-# **Configuring the BambooHR Action**
+# Configuring the BambooHR Action
 
 The XO Platform lets you easily connect the HubSpot integration to create, view, and update employees. You can also search and view time off requests, who is out and update request status using the pre-built templates. 
 
@@ -7,7 +7,7 @@ This document explains how to enable, authorize, configure, and install the Bamb
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow BambooHR integration to exchange data. For more information, read the [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"} article.
+The Kore.ai XO Platform supports basic authentication to allow BambooHR integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the BambooHR integration:
 
@@ -66,7 +66,7 @@ Steps to authorize a BambooHR action at a user level:
         * Create your authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s BambooHR app for authorization.
     * Click the **Select Authorization** drop-down and select the **Create New** option.  
     <img src="../images/bamboo-hr-img4.png" alt="Create New" title="Create New" style="border: 1px solid gray;zoom:50%;"/>
-    * Select the type of authorization mechanism. For example, select the **Basic Auth** option. To create Basic Auth profiles, see [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"}.  
+    * Select the type of authorization mechanism. For example, select the **Basic Auth** option. To create Basic Auth profiles, see [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"}.  
     <img src="../images/bamboo-hr-img5.png" alt="Auth mechanism type" title="Auth mechanism type" style="border: 1px solid gray;zoom:50%;"/>
 
 5. Enter the following authentication credentials for the Basic Auth mechanism:

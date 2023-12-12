@@ -1,4 +1,4 @@
-# **Natural Language Processing**
+# Natural Language Processing
 
 Conversational VAs enable machines to interact organically with users and deliver high-quality customer experiences. The key for a conversational VA to understand human interactions lies in its ability to identify the user’s intention (Intent Detection), extract useful information (Entity Extraction), and map them to relevant actions or tasks (Dialog Task execution). 
 
@@ -16,11 +16,11 @@ The Kore.ai Experience Optimization (XO) Platform employs a multi-engine approac
 * **Machine Learning (ML):** Kore.ai uses state-of-the-art NLP algorithms and models for machine learning to enable VAs to be trained and to gradually improve their intelligence;
 * **Knowledge Graph Engine (KG):** The Knowledge Graph helps you turn your static FAQ text into an intelligent and personalized conversational experience.
 
-With its three-fold approach, the Kore.ai XO Platform enables you to accelerate the Natural Language Understanding (NLU) performance of the virtual assistant and achieve optimal accuracy with relatively less training data. Kore.ai automatically enables the trained NLP capabilities to all built-in and custom VAs, and powers the way they communicate, understand, and respond to a user request.
+With its three-fold approach, the XO Platform enables you to accelerate the Natural Language Understanding (NLU) performance of the virtual assistant and achieve optimal accuracy with relatively less training data. Kore.ai automatically enables the trained NLP capabilities to all built-in and custom VAs, and powers the way they communicate, understand, and respond to a user request.
 
 ## NLP Building Blocks
 
-When a virtual assistant built on the Kore.ai XO Platform receives a user utterance, it is processed to identify the user intent, extract any additional information (entities), and then answer the user via a task execution. NLP is mostly concerned with the first two – intent detection and entity extraction.
+When a virtual assistant built on the XO Platform receives a user utterance, it is processed to identify the user intent, extract any additional information (entities), and then answer the user via a task execution. NLP is mostly concerned with the first two – intent detection and entity extraction.
 
 <img src="../images/nlp-building-blocks.png" alt="nlp building blocks" title="nlp building blocks" style="border: 1px solid gray; zoom:75%;">
 
@@ -28,7 +28,7 @@ When a virtual assistant built on the Kore.ai XO Platform receives a user uttera
 
 The Conversation Flow involves the following steps:
 
-1. **NLP Analysis**: The user utterance goes through a series of NLP engines for entity extraction and intent detection. (You can extend the out-of-the-box NLP functionality to use your own engine. You can install the [Bot Kit SDK](https://developer.kore.ai/docs/bots/sdks/using-the-botkit-sdk/) and easily integrate the virtual assistant with any 3rd party NLP engine. The output from the 3rd party NLP engine complements the outputs from Kore.ai thus adding to the efficiency and accuracy of the engine.) The engines provided by the Kore.ai XO Platform are as follows:
+1. **NLP Analysis**: The user utterance goes through a series of NLP engines for entity extraction and intent detection. (You can extend the out-of-the-box NLP functionality to use your own engine. You can install the [Bot Kit SDK](https://developer.kore.ai/docs/bots/sdks/using-the-botkit-sdk/) and easily integrate the virtual assistant with any 3rd party NLP engine. The output from the 3rd party NLP engine complements the outputs from Kore.ai thus adding to the efficiency and accuracy of the engine.) The engines provided by the XO Platform are as follows:
     * **Fundamental Meaning Engine** which breaks up the utterances based on the grammar constructs;
     * **Machine Learning Engine** which classifies individual words in the utterance, using an example-based, auto-learning training process;
     * **Knowledge Collection Engine** which mostly deals with FAQ type user queries. It can also be configured to trigger tasks in response to the user query;

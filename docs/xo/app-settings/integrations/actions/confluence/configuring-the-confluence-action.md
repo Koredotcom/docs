@@ -1,4 +1,4 @@
-# **Configuring the Confluence Action**
+# Configuring the Confluence Action
 
 The XO Platform lets you easily connect with your Confluence instance to create, and view pages or blogs on the Confluence space. [Learn more about Confluence](https://support.atlassian.com/confluence-cloud/resources/){:target="_blank"}.
 
@@ -7,7 +7,7 @@ This article explains how to authorize and enable the **Confluence** action and 
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports OAuth v2.0 authentication to allow a Confluence integration to exchange data. For more information, see [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"}. 
+The Kore.ai XO Platform supports OAuth v2.0 authentication to allow a Confluence integration to exchange data. For more information, see [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"}. 
 
 The Kore.ai XO Platform supports the following authorization types for the Confluence integration:
 
@@ -93,7 +93,7 @@ Steps to authorize a Confluence action using developer credentials:
       * Click the **Select Authorization** drop-down and select the **Create New** option.  
       <img src="../images/confluence-action-img4.png" alt="Create new Custom authorization" title="Create new Custom authorization" style="border: 1px solid gray;zoom:50%;"/>
 
-      * Select the type of authorization mechanism. For example, select the OAuth v2 option. To create custom OAuth profiles, read the [Setting Up Authorization Using OAuth v2](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-oauthv2-clientcredentials/){:target="_blank"} article.
+      * Select the type of authorization mechanism. For example, select the OAuth v2 option. To create custom OAuth profiles, read the [Setting Up Authorization Using OAuth v2](../../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2){:target="_blank"} article.
       * Enter the following authentication credentials for the OAuth v2 mechanism:
 
           * Call back URL

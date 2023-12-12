@@ -1,4 +1,4 @@
-# **Configuring the JIRA Action**
+# Configuring the JIRA Action
 
 The XO Platform lets you easily connect the JIRA integration to create, view, update and delete issues. Click the [JIRA](https://www.atlassian.com/software/jira){:target="_blank"} link to learn more.
 
@@ -6,7 +6,7 @@ This article explains how to authorize and enable the **JIRA** action and instal
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow a JIRA integration to exchange data. For more information, see [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"}. 
+The Kore.ai XO Platform supports basic authentication to allow a JIRA integration to exchange data. For more information, see [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"}. 
 
 The Kore.ai XO Platform supports the following authorization types for the JIRA integration:
 
@@ -84,7 +84,7 @@ Steps to authorize a JIRA action using developer credentials:
       * Click the **Select Authorization** drop-down and select the **Create New** option.  
       <img src="../images/jira-action-img4.png" alt="Create new auth" title="Create new auth" style="border: 1px solid gray;zoom:50%;"/>
 
-      * Select the type of authorization mechanism. For example, select the OAuth v2 option. To create custom OAuth profiles, read the [Setting Up Authorization Using OAuth v2](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-oauthv2-clientcredentials/){:target="_blank"} article.
+      * Select the type of authorization mechanism. For example, select the OAuth v2 option. To create custom OAuth profiles, read the [Setting Up Authorization Using OAuth v2](../../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2){:target="_blank"} article.
       * Enter the following authentication credentials for the OAuth v2 mechanism:
 
         * Call back URL

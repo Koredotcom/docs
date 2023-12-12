@@ -1,30 +1,32 @@
-# **Knowledge Graph Training**
+# Knowledge Graph Training
 
-[Training your Assistant ](https://developer.kore.ai/docs/bots/nlp/optimizing-bots/)is not restricted to the Machine Learning and Fundamental Meaning engines. You must also train the Knowledge Graph (KG) engine, too.
+<a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/nlp-training-overview/" target="_blank">Training your Assistant</a> is not restricted to the Machine Learning and Fundamental Meaning engines. You must also train the Knowledge Graph (KG) engine.
 
 The Ontology-based Knowledge Graph turns static FAQ text into an intelligent, personalized conversational experience. It uses domain terms and relationships thus reducing the training needs. It also has the capability to enable the ontology weighted features whenever ML gets confused and to automate conversational dialog for resolving appropriate answers.
 
-The Few-Shot Knowledge Graph leverages Kore.ai’s LLM and lets you add FAQs without building an ontology. Less training and maintenance are required since you do not need to configure the graph term-by-term. [Learn more about Knowledge Graph Types](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ontology/).
+The Few-Shot Knowledge Graph leverages Kore.ai’s LLM and lets you add FAQs without building an ontology. Less training and maintenance are required since you do not need to configure the graph term-by-term. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-overview/#knowledge-graph-types" target="_blank">Learn more about Knowledge Graph Types</a>.
 
 The Knowledge Graph engine thus responds to users’ intents by identifying the appropriate questions within the Knowledge Graph, and then presenting the user with the appropriate response.
 
-You can find the Knowledge Graph by selecting your desired VA, then going to **Build > Conversation Skills > Knowledge Graph.**
+You can find the Knowledge Graph by selecting your desired VA, then going to **Build** > **Conversation Skills** > **Knowledge Graph**.
 
-<div class="admonition note">
-<p class="admonition-title">Training a Few-Shot Knowledge Graph</p>
-<p>Few-Shot Knowledge Graphs do not require an ontology and do not perform path qualification. Instead, they identify intents using semantic similarity and pattern recognition. However, if you want to train the VA on a specific use case for which the appropriate FAQ is not identified, you can map FAQs to an ontology, similar to what you would do with an Ontology-based Graph.</p></div>
+!!! note "Key Considerations for Training a Few-Shot Knowledge Graph"
+    
+    Few-Shot Knowledge Graphs do not require an ontology and do not perform path qualification. Instead, they identify intents using semantic similarity and pattern recognition. However, if you want to train the VA on a specific use case for which the appropriate FAQ is not identified, you can map FAQs to an ontology, similar to what you would do with an Ontology-based Graph.
 
-<p>The main difference concerning training is that in the Few-Shot KG, Terms don't require some of the training configurations needed in an Ontology Graph. Here are some key pointers:</p>
+    The main difference concerning training is that in the Few-Shot KG, Terms don't require some of the training configurations needed in an Ontology Graph. Here are some key pointers:
+      
+    1. Default Terms are not available. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.
 
-<p><ul><li>Default Terms are not available. The only exception is when you switch from an Ontology Graph, in which case existing Default terms are stored as such until updated. Afterward, Default terms become Organizer terms and can be set as Mandatory.</li>
-<li>Organizer Terms do not support Path-Level and Knowledge Graph Synonyms. They support Intent Preconditions and Context Output.</li> 
-<li>Mandatory Terms support Traits, Path-Level and Knowledge Graph Synonyms, Intent Preconditions, and Context Output, just like in an Ontology-based Graph.</li>
-<li>You can set all Thresholds and Configurations except Path Coverage and Lemmatization using Parts of Speech, Search in Answer, and Qualify Contextual Paths, which are not supported by Few-Shot Graphs.</li>
+    2. Organizer Terms do not support Path-Level and Knowledge Graph Synonyms. They support Intent Preconditions and Context Output.
 
-See the Knowledge Graph Types Comparison Table for a detailed list of supported features.
+    3. Mandatory Terms support Traits, Path-Level and Knowledge Graph Synonyms, Intent Preconditions, and Context Output, just like in an Ontology-based Graph.
 
-Also, see Training Configuration below for training setup details.</p>
-</div>
+    4. You can set all Thresholds and Configurations except Path Coverage and Lemmatization using Parts of Speech, Search in Answer, and Qualify Contextual Paths, which are not supported by Few-Shot Graphs.
+    
+<p>See the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-overview/#compare-knowledge-graph-types" target="_blank">Knowledge Graph Types Comparison Table</a> for a detailed list of supported features.</p>
+
+<p>Also, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-training/#training-configuration" target="_blank">Training Configuration</a> for training setup details.</p>
 
 ## Knowledge Graph Engine Capabilities
 
@@ -33,7 +35,7 @@ The following are the overall capabilities of the Knowledge Graph Engine:
 * **Ease of Training using Synonyms**: Kore.ai’s Knowledge Graph has a provision to associate synonyms against a graph node. This helps capture the variation in a question. For example, *flight* can be used as a synonym for *plane* in an FAQ such as *How can I buy a plane ticket*?
 * **Better Coverage with Alternate Questions**: The Knowledge Graph has a provision to add alternate questions. This helps us to capture the various ways a user might ask the same question. For example, in *How do I change my flight?* we can add an alternate question as *Can I change my flight?*
 * **Improved Accuracy**: Ontology-driven question-answers reduce the possibility of false positives.
-* **Weighing Phrases using Traits**: Kore.ai’s Knowledge Graph engine includes a concept of traits for filtering out irrelevant suggestions. [Learn More](https://developer.kore.ai/docs/bots/nlp/traits/).
+* **Weighing Phrases using Traits**: Kore.ai’s Knowledge Graph engine includes a concept of traits for filtering out irrelevant suggestions. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-terminology/#traits" target="_blank">Learn more</a>.
 * **Ability to Mark Term Importance**: The Knowledge Graph has a provision to mark that an ontology term is important. For example, in the question, *How to book a flight?*, the word *flight* is an important term. If the *flight* keyword is not present in the user utterance, then it makes little sense.
 * **Ability to Group Relevant Nodes**: As the graph grows in size, managing graph nodes can become a challenging task. Using the *organizer node* construct of the ontology engine, developers can group relevant child nodes under a parent node.
 
@@ -41,21 +43,21 @@ The following are the overall capabilities of the Knowledge Graph Engine:
 
 Here are the steps that the Knowledge Graph Engine takes when detecting FAQs:
 
-* **Step 1: Extract Nodes**: The KG engine processes the user utterance to extract the term (ontology nodes) present in the graph. It also takes into consideration the synonyms, traits, and tags associated with the terms.
-* **Step 2: Query Graph**: The KG engine fetches all the paths that consist of the extracted nodes.
-* **Step 3: Shortlist Paths**: All the paths consisting of 50% or more matching terms with the user utterance are shortlisted for further processing.
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Patch coverage computation doesn't consider the root node.</p>
-</div>
+1. **Extract Nodes**: The KG engine processes the user utterance to extract the term (ontology nodes) present in the graph. It also takes into consideration the synonyms, traits, and tags associated with the terms.
+2. **Query Graph**: The KG engine fetches all the paths that consist of the extracted nodes.
+3. **Shortlist Paths**: All the paths consisting of 50% or more matching terms with the user utterance are shortlisted for further processing.
 
-* **Step 4: Filter with Traits**: If traits are defined in the Knowledge Graph, paths shortlisted in the above step are further filtered based on the confidence score of a classification algorithm in user utterance. 
-* **Step 5: Send to Ranker**: The KG engine then sends the shortlisted paths to the Ontology Ranker Program.
-* **Step 6: Score based on Cosine Similarity**: The Ontology Ranker makes use of user-defined synonyms, lemma forms of word, n-grams, stop words, to compute the cosine similarity between the user utterance and the shortlisted questions. Paths are ranked in non-increasing order of cosine similarity score.
-* **Step 7: Qualify Matches**: The Ontology Ranker then qualifies the paths as follows:
-    * Paths with score >= upper_threshold are qualified as an answer (definitive match).
-    * Paths with lower_threshold > score > upper_threshold are marked as suggestions (probable match).
-    * Paths with a score > lower_threshold are ignored.
+!!! note
+    
+    Patch coverage computation doesn't consider the root node.
+
+<ol start="4"><li><b>Filter with Traits</b>: If traits are defined in the Knowledge Graph, paths shortlisted in the above step are further filtered based on the confidence score of a classification algorithm in user utterance.</li>
+<li><b>Send to Ranker</b>: The KG engine then sends the shortlisted paths to the Ontology Ranker Program.</li>
+<li><b>Score based on Cosine Similarity</b>: The Ontology Ranker makes use of user-defined synonyms, lemma forms of word, n-grams, stop words, to compute the cosine similarity between the user utterance and the shortlisted questions. Paths are ranked in non-increasing order of cosine similarity score.</li>
+<li><b>Qualify Matches</b>: The Ontology Ranker then qualifies the paths as follows:</li>
+<ul><li>Paths with score >= upper_threshold are qualified as an answer (definitive match).</li>
+<li>Paths with lower_threshold > score > upper_threshold are marked as suggestions (probable match).</li>
+<li>Paths with a score > lower_threshold are ignored.</li></ul></ol>
 
 ## Training Guidelines
 
@@ -72,7 +74,7 @@ From the Knowledge Graph, follow these steps to build and train the correspondin
 
 ## Training Configuration
 
-This article presupposes that you already know the basics of building your Knowledge Graph. If not, please read [this article](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ontology/).
+This article presupposes that you already know the basics of building your Knowledge Graph. If not, please read <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-overview/#the-ontology-knowledge-graph" target="_blank">this</a> article.
 
 In order to configure the training of your Knowledge Graph for improved VA performance, we recommend that you go through as many of the following parameters as possible. These parameters involve:
 
@@ -95,9 +97,8 @@ The available term types are:
 
 * **Default**: Default terms do not have any particular considerations in shortlisting qualified paths.
 * **Mandatory**: When you mark a term as Mandatory, all paths associated with the term are shortlisted for ranking only if the user’s utterance includes the mandatory term or its synonyms.
-* **Organizer**: Term can be marked as being a part of the Knowledge Graph only for organizing questions (this option is available only for terms, not tags). 
-
-   <img src="../../images/term-types.png" alt="term types" title="term types" style="border: 1px solid gray; zoom:75%;">
+* **Organizer**: Term can be marked as being a part of the Knowledge Graph only for organizing questions (this option is available only for terms, not tags).
+<img src="../../images/term-types.png" alt="term types" title="term types" style="border: 1px solid gray; zoom:75%;">
 
 ### Tags
 
@@ -105,77 +106,52 @@ When you type a question in the Intent Name **Add Question** field, the Knowledg
 
 <img src="../../images/term-field-custom-tag.png" alt="term field custom tag" title="term field custom tag" style="border: 1px solid gray; zoom:75%;">
 
-After you add a tag, it is visible below the question like a tag everywhere the question appears. Tags work exactly like terms but are not displayed in the Knowledge Graph to avoid clutter. 
+After you add a tag, it is visible below the question like a tag everywhere the question appears. Tags work exactly like terms but are not displayed in the Knowledge Graph to avoid clutter.
 
-## Synonyms
+### Synonyms
 
-You can add multiple synonyms for each term in your Knowledge Graph, making the path discoverable for varied user utterances. You can add synonyms for a term from the term’s  Settings window.
+You can add multiple synonyms for each term in your Knowledge Graph, making the path discoverable for varied user utterances. You can add synonyms for a term from the term’s <b>Settings</b> window.
 
 When you add a synonym for a term in the Knowledge Graph, you can add them as local (Path Level) or global (Knowledge Graph level) synonyms.
 
-**Local Synonyms** apply to the term only in that particular path, whereas **Global Synonyms** apply to the term even if it appears on any other path in the hierarchy.
+**Local Synonyms** apply to the term only in that path, whereas **Global Synonyms** apply to the term even if it appears on any other path in the hierarchy.
 
 To add synonyms for a term, follow the below steps:
 
 1. On the top left of the VA’s Knowledge Graph, **hover over the node/term** for which you want to add synonyms.
 2. Click the **gear icon** to open the Settings window.
-3. To add **synonyms**,  do the following:
+3. To add **synonyms**, do the following:
     * To add local synonyms, type them in the box under **Path Level Synonyms**.
-
-      <img src="../../images/path-level-synonyms.png" alt="path level synonyms" title="path level synonyms" style="border: 1px solid gray; zoom:75%;">
-
+    <img src="../../images/path-level-synonyms.png" alt="path level synonyms" title="path level synonyms" style="border: 1px solid gray; zoom:75%;">
     * To add Global synonyms, click **Edit** then **Add** under **Knowledge Graph Synonyms** and enter them.
-    <div class="admonition note">
-    <p class="admonition-title">Note</p>
-    <p>Press Enter after typing each synonym in the Synonyms box. If you type multiple synonyms without pressing Enter after each synonym, all the synonyms are considered as a single entity, even if they are separated by spaces.</p>
-    
-   <img src="../../images/add-global-synonyms.png" alt="add global synonyms" title="add global synonyms" style="border: 1px solid gray; zoom:75%;"></div>
+    <p><b>Important Considerations</b></p>
+    <ul><li>Press Enter after typing each synonym in the Synonyms box. If you type multiple synonyms without pressing Enter after each synonym, all the synonyms are considered as a single entity, even if they are separated by spaces.
+    <img src="../../images/add-global-synonyms.png" alt="add global synonyms" title="add global synonyms" style="border: 1px solid gray; zoom:75%;"></li>
+   <li>These Knowledge Graph Synonyms can also be accessed from the <b>Manage Synonyms</b> option under the more options icon on the top-right of the Knowledge Graph page.
+   <img src="../../images/manage-synonyms.png" alt="manage synonyms" title="manage synonyms" style="border: 1px solid gray; zoom:75%;"></li></ul>
 
-   <div class="admonition note">
-   <p class="admonition-title">Note</p>
-   <p>These Knowledge Graph Synonyms can also be accessed from the Manage Synonyms option under the more options icon on the top-right of the Knowledge Graph page.</p>
-   <img src="../../images/manage-synonyms.png" alt="manage synonyms" title="manage synonyms" style="border: 1px solid gray; zoom:75%;"></div>
-
-<ol start="4"><li>You can use <b>Bot Synonyms</b> in the identification of KG terms. This option can be enabled either from the <a href="https://developer.kore.ai/docs/bots/nlp/knowledge-graph/#Threshold_Configurations">Threshold and Configurations</a> or from <b>More Options</b> > <b>Manage Synonyms</b>.
-<p>Once enabled, the bot-level synonyms that match with KG terms (or tags) are automatically displayed under the Bot Synonyms heading in the <b>Synonyms</b> section and are used by the KG engine. The Bot Synonyms are used similar to that of KG graph level synonyms, for path qualification and for question matching. When a node matches both with a bot synonym and a bot concept, the bot concept takes priority.</p></li>
+<ol start="4"><li>You can use <b>Bot Synonyms</b> in the identification of KG terms. This option can be enabled either from the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-training/#thresholds-configurations" target="_blank">Threshold and Configurations</a> or from <b>More Options</b> > <b>Manage Synonyms</b>.
+<p>Once enabled, the bot-level synonyms that match with KG terms (or tags) are automatically displayed under the Bot Synonyms heading in the <b>Synonyms</b> section and are used by the KG engine.</p>
+<p>The Bot Synonyms are used similar to that of KG graph-level synonyms, for path qualification and for question matching. When a node matches both with a bot synonym and a bot concept, the bot concept takes priority.</p></li>
 <li>To add synonyms for a child node, enter them in the Synonyms box next to the <b>Child Terms</b> listed at the bottom of the settings window.
-
 <img src="../../images/child-synonyms-terms.png" alt="child synonyms terms" title="child synonyms terms" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ### Traits
 
-You can create traits with common user utterances and then add them to the relevant terms in your Knowledge Graph. To know more about Traits, [click here](https://developer.kore.ai/docs/bots/nlp/traits/).
+You can create traits with common user utterances and then add them to the relevant terms in your Knowledge Graph. To know more about Traits, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/knowledge-ai/knowledge-graph-training/#traits" target="_blank">here</a>.
 
-Traits are common across the XO Platform. If you have created Traits from the Natural Language section they are available for use here as well.
+Traits are common across the XO Platform. If you have created Traits from the Natural Language section, they are available for use here as well.
 
-To create a trait, follow the below steps:
+To create a trait, follow the steps below:
 
-1. On the top-right of the Knowledge Graph window, click the **more options icon** and then select **Manage Traits**.
-
-   <img src="../../images/manage-traits.png" alt="manage traits" title="manage traits" style="border: 1px solid gray; zoom:75%;">
-
-2. On the Manage Traits window, click **New Trait**.
-3. In the **Trait Type** and **Trait Name** field, enter a relevant name for the trait. For example, *Flight Fare*.
-4. In the **Utterances** field, enter all the utterances that you want to include in the trait. Examples of the *Issues* trait: *First Class, Premium Economy, Economy,* etc.
-5. Click **Save & Add Rule** or **Save & Exit**.
-
-   <img src="../../images/add-traits-save-and-add-rules.png" alt="save and add rule" title="save and add rule" style="border: 1px solid gray; zoom:75%;">
-
-
-After you create a trait, you can assign it to multiple nodes in the Knowledge Graph.
-
-To add a trait to a node/term, follow the below steps:
-
-1. On the top-left of your Knowledge Graph, hover over the **terms** to which you want to add the trait.
-2. Click the **gear icon** to open the **Settings** window.
-3. Select the name of a trait from the **Trait** dropdown list and click **Save**.
-
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Adding a trait to a node doesn't add it to other nodes with the same name. You must add traits to each relevant node separately.
-</p></div>
-
-<img src="../../images/add-term-traits.png" alt="add term traits" title="add term traits" style="border: 1px solid gray; zoom:75%;">
+<ol><li>On the top-right of the <b>Knowledge Graph</b> window, click the <b>More Options</b> icon and then select <b>Manage Traits</b>.
+<img src="../../images/manage-traits.png" alt="manage traits" title="manage traits" style="border: 1px solid gray; zoom:75%;"></li>
+<li>On the Manage Traits window, click <b>New Trait</b>.
+</li>
+<li>In the <b>Trait Type</b> and <b>Trait Name</b> field, enter a relevant name for the trait. For example, <i>Flight Fare</i>.</li>
+<li>In the <b>Utterances</b> field, enter all the utterances that you want to include in the trait. Examples of the <i>Issues</i> trait: <i>First Class, Premium Economy, Economy,</i> etc.</li>
+<li>Click <b>Save & Add Rule</b> or <b>Save & Exit</b>.
+<img src="../../images/add-traits-save-and-add-rules.png" alt="save and add rule" title="save and add rule" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ### Context
 
@@ -184,12 +160,11 @@ You can **Manage Context** for the terms and tags by setting:
 * **Intent Precondition** – the context that should be present as a qualifier for this node or tag.
 * **Context Output** – the context that should be populated to signify the execution of this task.
 
-Post the release of v8.0 of the Platform, context can be enabled for Organizer nodes as well. Enabling the **Manage Context** option allows you to set the context precondition and context output mentioned above. [Click here for more](https://developer.kore.ai/docs/bots/bot-intelligence/context-management/) on Context Management.
+Post the XO Platform v8.0 release, context can be enabled for <b>Organizer</b> nodes as well. Enabling the **Manage Context** option allows you to set the context precondition and context output mentioned above. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/context-management/" target="_blank">here</a> for more information on Context Management.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Enabling the Manage Context option will not emit the term/node name by default.</p>
-</div>
+!!! note
+
+    Enabling the <b>Manage Context</b> option will not show the term/node name by default.
 
 ### Stop Words
 
@@ -197,36 +172,34 @@ Stop words present in the user utterance are discarded for scoring even if the s
 
 The Knowledge Graph has a language-specific predefined set of stop words. This list can be customized to suit your requirements.
 
-To edit the stop words list, follow the below steps:
+To edit the stop words list, follow the steps below:
 
 1. From the Knowledge Graph page, click on the **more options icon** and select **Manage Stop Words**.
 2. From the Manage Stop Words window, delete or add stop words.
-
-   <img src="../../images/manage-stop-words.png" alt="manage stop words" title="manage stop words" style="border: 1px solid gray; zoom:75%;">
+<img src="../../images/manage-stop-words.png" alt="manage stop words" title="manage stop words" style="border: 1px solid gray; zoom:75%;">
 
 ## Training Process
 
 After you complete creating/editing the Knowledge Graph, click the **Train** button on the top-right of the Knowledge Graph window. When you perform this action, all the paths, synonyms, and question-answer sets are sent to the Graph DB engine.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>After every change that you make to the Knowledge Graph such as adding synonyms to a term or editing the name of a term, you must click the Train button for the changes to reflect in the bot responses.</p>
-</div>
+!!! note
+
+    After every change that you make to the Knowledge Graph such as adding synonyms to a term or editing the name of a term, you must click the Train button for the changes to reflect in the bot responses.
+
 
 The training fails if any single node has more than 100 questions. This limit was introduced in v7.3 to make the Knowledge Graph more efficient by improving the response times. In such failure cases, you can **Download Errors** CSV file which lists the path with more than 100 questions. You can use this file to rectify your Knowledge Graph.
 
 ## Testing
 
-When you complete creating the Knowledge Graph and training it, we recommend that you interact with the assistant and ask questions connected to the Knowledge Graph. Test the responses by using a variety of utterances so that you can identify missing terms, questions, alternative questions, synonyms, and traits. [Learn more about utterance testing](https://developer.kore.ai/docs/bots/test-your-bot/testing-your-bot-with-nlp/).
+When you complete creating the Knowledge Graph and training it, we recommend that you interact with the assistant and ask questions connected to the Knowledge Graph. Test the responses by using a variety of utterances so that you can identify missing terms, questions, alternative questions, synonyms, and traits. <a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/testing-your-bot-with-nlp/" target="_blank">Learn more about utterance testing</a>.
 
 ## Thresholds & Configurations
 
 To train and improve the performance, Thresholds and Configurations can be specified for all three NLP engines – FM, KG, and ML. You can access these settings from **Natural Language > Training > Thresholds & Configurations.**
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If your VA is multilingual, you can set the Thresholds differently for different languages. If not set, the Default Settings will be used for all languages. This feature is available from v7.0 onwards.</p>
-</div>
+!!! note
+
+    If your VA is multilingual, you can set the Thresholds differently for different languages. If not set, the Default Settings will be used for all languages. This feature is available from v7.0 onwards.
 
 The settings for the Knowledge Graph engine are discussed in detail in the following sections.
 
@@ -238,8 +211,7 @@ To navigate to Thresholds and Configuration, please follow the steps below:
 2. Hover over the left pane and click **Natural Language** > **Training**.
 3. Click the **Thresholds & Configurations** tab.
 4. Below is a detailed discussion about the **Knowledge Graph** section on this page.
-
-   <img src="../../images/thresholds-configurations.png" alt="thresholds and configurations" title="thresholds and configurations" style="border: 1px solid gray; zoom:75%;">
+<img src="../../images/thresholds-configurations.png" alt="thresholds and configurations" title="thresholds and configurations" style="border: 1px solid gray; zoom:75%;">
 
 Here are the features that you will find in this section of the Platform:
 
@@ -258,20 +230,19 @@ Here are the features that you will find in this section of the Platform:
 * **Search in Answer** for the qualifying FAQs.
 * **Qualify Contextual Paths** in the Knowledge Graph using the context tags available in the context. Enabling this option will ensure that the paths are shortlisted using terms or tags from the context. These tags can come from previous matched paths or intent or custom-defined tags.
 
-The Platform also offers some advanced configurations. [Learn more](https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/).
+The Platform also offers some advanced configurations. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/" target="_blank">Learn more</a>.
 
 ### Search in Answer
 
 This feature enables identifying FAQs by searching the user input against the answer section, instead of only matching with questions. This is a fallback mechanism only i.e. search in the answer section will be done only if no FAQs are identified from questions.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This feature is not supported in all languages, refer here for details.</p>
-</div>
+!!! note
+
+    This feature is not supported in all languages, refer here for details.
 
 When the **Search in Answer** flag is enabled, the Knowledge Graph engine considers the answer text for identifying the intents also.
 
-Once this option is enabled, you can specify whether to **Inform the end-user that the answer is a probable answer**. If selected a Standard Message to the effect is displayed, which can be customized using the Manage Response link. [Learn more](https://developer.kore.ai/docs/bots/bot-intelligence/default-dialog/#Managing_Standard_Responses).
+Once this option is enabled, you can specify whether to **Inform the end-user that the answer is a probable answer**. If selected a Standard Message to the effect is displayed, which can be customized using the Manage Response link. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/standard-responses/" target="_blank">Learn more</a>.
 
 There are three ways in which you can render the response:
 
@@ -299,7 +270,7 @@ The following API gives the full information of the FAQ:
 
 **Sample Response**:
 
-```
+```js
 {
 "response": "You can contact our Branch officials wherein you have submitted your documents.If the documents are in order, the account will be opened within 2 working days.",
 "primaryQuestion": "How to check the status of my account opening?"
@@ -326,32 +297,28 @@ Following are some examples of the phrases as recognized by the KG engine with a
    </td>
    <td>outstand
 <p>
-book
+book</p>
    </td>
    <td>outstanding
 <p>
-booking
+booking</p>
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>I am filing for a visa so that I can travel
    </td>
-   <td>file
-   </td>
-   <td>filing
-   </td>
+   <td>file</td>
+   <td>filing</td>
   </tr>
   <tr>
-   <td>What happens if my luggage exceeds the maximum weight? ?
-   </td>
+   <td>What happens if my luggage exceeds the maximum weight? ?</td>
    <td>, happen
 <p>
 exceed
    </td>
    <td>happens
 <p>
-exceeds
+exceeds</p>
    </td>
   </tr>
 </table>
-

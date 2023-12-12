@@ -1,4 +1,4 @@
-# **Managing Languages for Multilingual VAs**
+# Managing Languages for Multilingual VAs
 
 You can create an assistant from scratch, enable a language for an existing assistant or update the language configuration for an existing assistant. Besides these functionalities, this article also shows you how to switch between languages and how to enable or disable a language.
 

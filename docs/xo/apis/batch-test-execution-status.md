@@ -1,7 +1,7 @@
 
-# **Batch Test Execution Status API**
+# Batch Test Execution Status API
 
-To get the status of the Batch Test Execution request against a unique ‘Request Id’ and provide the download link for the results file after the test execution is complete. Please refer to the [Batch Test Execution API](https://developer.kore.ai/docs/bots/api-guide/batch-test-execution-api/) to learn more.
+To get the status of the Batch Test Execution request against a unique ‘Request Id’ and provide the download link for the results file after the test execution is complete. Please refer to the [Batch Test Execution API](../batch-test-execution) to learn more.
 
 
 <table>

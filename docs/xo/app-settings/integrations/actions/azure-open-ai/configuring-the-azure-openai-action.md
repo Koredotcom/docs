@@ -1,4 +1,4 @@
-# **Configuring the Azure OpenAI Action**
+# Configuring the Azure OpenAI Action
 
 The XO Platform lets you easily connect with the Azure OpenAI instance to find answers to your general queries. The Platform supports all common actions on Azure with ready-to-use pre-built dialog templates.
 
@@ -7,7 +7,7 @@ This article explains how to authorize and enable the **Azure OpenAI** action an
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication, allowing Azure OpenAI integration to exchange data. For more information, read the [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"} article.
+The Kore.ai XO Platform supports basic authentication, allowing Azure OpenAI integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the Azure OpenAI integration:
 
@@ -117,7 +117,7 @@ Steps to authorize an Azure OpenAI action at a user level:
     4. Select the type of authorization mechanism. For example, select the API Key option.  
     <img src="../images/configure-azure-img15-open-ai-api-key1-1.png" alt="Select authorization mechanism" title="Select authorization mechanism" style="border: 1px solid gray;zoom:50%;"/>  
       
-        To create Basic Auth profiles, see [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"}.
+        To create Basic Auth profiles, see [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"}.
 
     5. Enter the following authentication credentials for the Basic Auth mechanism:
         * _Name_ – Enter the name for the Basic Auth profile.

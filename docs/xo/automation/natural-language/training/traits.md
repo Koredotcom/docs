@@ -1,4 +1,4 @@
-# **Traits**
+# Traits
 
 In natural conversations, it is very common that a user provides background/relevant information while describing a specific scenario.
 

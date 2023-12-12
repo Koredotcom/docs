@@ -1,4 +1,4 @@
-# **Dispositions**
+# Dispositions
 
 **Dispositions** represent a label that agents assign to the outcome of a conversation. In SmartAssist, you can create **disposition sets** to organize **disposition codes** according to your business requirements.
 

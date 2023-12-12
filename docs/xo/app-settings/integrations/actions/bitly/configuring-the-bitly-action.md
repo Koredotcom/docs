@@ -1,4 +1,4 @@
-# **Configuring the Bitly Action**
+# Configuring the Bitly Action
 
 The Kore.ai XO Platform lets you easily connect with your Bitly instance to shorten any long URLs. [Learn more about Bitly](https://bitly.com/){:target="_blank"}.
 
@@ -7,7 +7,7 @@ This document explains how to authorize and enable the Bitly action and install 
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports API key authentication to allow Bitly integration to exchange data. For more information, read the [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"} article.
+The Kore.ai XO Platform supports API key authentication to allow Bitly integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the Bitly integration:
 
@@ -66,7 +66,7 @@ Steps to authorize an Bitly action at a user level:
     <img src="../images/bitly-action-img6.png" alt="Auth type" title="Auth type" style="border: 1px solid gray;zoom:50%;"/>
 
     2. Create your authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s Bitly app for authorization. To create a profile, click the **Select Authorization** drop-down and select the **Create New** option.
-    3. Select the type of authorization mechanism. For example, select the **API Key** option. To create Basic Auth profiles, see [Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/){:target="_blank"}.  
+    3. Select the type of authorization mechanism. For example, select the **API Key** option. To create Basic Auth profiles, see [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"}.  
     <img src="../images/bitly-action-img7.png" alt="Auth mechanism-API key" title="Auth mechanism-API key" style="border: 1px solid gray;zoom:50%;"/>
 
     4. Enter the following authentication credentials for the Basic Auth mechanism:

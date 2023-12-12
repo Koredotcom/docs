@@ -1,4 +1,4 @@
-# **Install a Sample Bot API**
+# Install a Sample Bot API
 
 To install a sample bot.
 

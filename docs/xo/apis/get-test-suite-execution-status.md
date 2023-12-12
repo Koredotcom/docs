@@ -1,5 +1,5 @@
 
-# **Get the Execution Status and Summary of a Test Suite API**
+# Get the Execution Status and Summary of a Test Suite API
 
 To get the status of the Conversation Test Suite Execution request against a unique **_testSuiteId_** if the request is in progress, and provide the download link for the results file after the test execution is complete.
 

@@ -1,4 +1,4 @@
-# **Update User API**
+# Update User API
 
 To update the user details.
 

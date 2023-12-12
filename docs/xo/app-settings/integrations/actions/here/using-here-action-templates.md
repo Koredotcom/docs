@@ -1,4 +1,4 @@
-# **Using Here Action Templates**
+# Using Here Action Templates
 
 You can use the **Prebuilt Action Templates** from your Here integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
 

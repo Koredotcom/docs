@@ -1,4 +1,4 @@
-# **Configure Digital Forms**
+# Configure Digital Forms
 
 In this How-To, we will explore a scenario in a Banking Bot, where the user can create an additional account. We will see how Digital Forms can be used to gather all the required information from the user and create the account.
 
@@ -191,7 +191,7 @@ Next, to capture the values returned by the Form Node using a Script node and di
 4. Select the **JavaScript** tab and enter the following code. This code would capture from the context object, the data submitted by the user in the Form and display it accordingly. 
 `var message;`
 
-```
+```js
 message = 'You have opened a '+context.forms.OpenAccount.accounttype+' account in the name of '+context.forms.OpenAccount.accountname;
 if (context.forms.OpenAccount.accounttype == 'Checkings' && context.forms.OpenAccount.cashcard == 'Yes')
   message = message + ' and opted for cash card with withdrawal limit set to '+ context.forms.OpenAccount.withdrawallimit;

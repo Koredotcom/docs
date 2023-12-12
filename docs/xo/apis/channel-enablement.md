@@ -1,4 +1,4 @@
-# **Channel Enablement API**
+# Channel Enablement API
 
 To initiate enable a channel for a virtual assistant.
 

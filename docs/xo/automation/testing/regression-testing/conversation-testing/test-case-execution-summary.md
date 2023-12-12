@@ -1,4 +1,4 @@
-# **Test Case Execution Summary**
+# Test Case Execution Summary
 
 The Test Case Execution Summary allows you to view the test case results, identify the failed test cases, and resolve the flow of the virtual assistant. It gives complete details of the overall test results and the defects found.
 
