@@ -99,6 +99,7 @@ Add a Composite Entity after a relevant node in the dialog task. To make this en
 
 1. On the **Entity** window, click the **NLP Properties** tab.
 2. On the **NLP Properties** tab, under the **Composite Patterns for Entity** section, add relevant patterns. The various patterns built are similar to the ones used in defining Entity Patterns. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#navigate-to-the-patterns-tab" target="_blank">here</a> to learn more.
+
 <img src="../images/define-composite-entity.png" alt="define composite entity" title="define composite entity" style="border: 1px solid gray; zoom:75%;">
 
 For the above composite entity patterns, the following are the sample utterances and the output:
