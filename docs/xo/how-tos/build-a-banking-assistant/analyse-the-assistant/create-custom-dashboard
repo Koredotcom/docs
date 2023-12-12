@@ -22,7 +22,7 @@ You can create a custom dashboard to achieve all the scenarios listed above, wit
 
 Once the Dashboard is configured for the listed scenarios, it looks like below.
 
-<img src="../analyse-the-assistant/images/configured-dashboard.png" alt="configured dashboard" title="configured dashboard" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/configured-dashboard.png" alt="configured dashboard" title="configured dashboard" style="border: 1px solid gray; zoom:75%;">
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ Once the Dashboard is configured for the listed scenarios, it looks like below.
 
 <ul><li><strong><a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-transfer-funds/" target="_blank">Transfer Funds</a></strong> – The Dialog task walking the user through the steps in transferring money.</li>
 
-<img src="../analyse-the-assistant/images/transfer-funds-dialog-task.png" alt="transfer funds" title="transfer funds" style="border: 1px solid gray; zoom:75%;"></ul></ul>
+<img src="../images/transfer-funds-dialog-task.png" alt="transfer funds" title="transfer funds" style="border: 1px solid gray; zoom:75%;"></ul></ul>
 
 In this dialog, we have included a Script node to add Custom Meta Tag, TransferValue, based upon the amount transferred. The following script is used:
 
@@ -49,11 +49,11 @@ if(context.entities.TransferAmount[0].amount > 0)
     tags.addSessionLevelTag("TransferValue","LowValue");
 ```
 
-<img src="../analyse-the-assistant/images/add-custom-metatag.png" alt="add custom metatag" title="add custom metatag" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-custom-metatag.png" alt="add custom metatag" title="add custom metatag" style="border: 1px solid gray; zoom:75%;">
 
 **Manage Payee** – For the user to manage their payee list.
 
-<img src="../analyse-the-assistant/images/manage-payee-dialog.png" alt="manage payee dialog" title="manage payee dialog" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/manage-payee-dialog.png" alt="manage payee dialog" title="manage payee dialog" style="border: 1px solid gray; zoom:75%;">
 
 Here we have a Script that assigns a value to the customerType meta tags:
 
@@ -75,7 +75,7 @@ Let’s consider how each metric mentioned in the problem statement can be imple
 
 * From the left navigation panel, under **Dashboard** click **Custom Dashboard.**
 * Click **Create New Dashboard**.
-<img src="../analyse-the-assistant/images/create-custom-dashboard.png" alt="create custom dashboard" title="create custom dashboard" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/create-custom-dashboard.png" alt="create custom dashboard" title="create custom dashboard" style="border: 1px solid gray; zoom:75%;">
 
 *  Use the **Add Widget** button to add widgets for the above scenarios. You can add up to 4 widgets per row and organize them by moving anywhere within the row or across the rows on the dashboard. You can also manually resize the widgets.
 
@@ -94,10 +94,10 @@ _This will let the platform know what data to fetch. Here we are using the sessi
     * Select **Pie chart**
     * Set **Dimension** to TransferValue.
     * Set **Metrics** to count(taskName).
-    <img src="../analyse-the-assistant/images/create-new-dashboard.png" alt="create new dashboard" title="create new dashboard" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/create-new-dashboard.png" alt="create new dashboard" title="create new dashboard" style="border: 1px solid gray; zoom:75%;">
 
 4. See the **Preview** and if all is fine, click **Update to Dashboard**.
-    <img src="../analyse-the-assistant/images/dollar-value-breakup.png" alt="dollar value breakup" title="dollar value breakup" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/dollar-value-breakup.png" alt="dollar value breakup" title="dollar value breakup" style="border: 1px solid gray; zoom:75%;">
 
 ### Customer Type Summary
 
@@ -118,7 +118,7 @@ Repeat the steps listed in the previous section (<a href="https://developer.kore
     * Select **Bar chart**.
     * Set **Dimension** to _CustomerCategory_.
     * Set **Metrics** to _count(taskName)_.
-    <img src="../analyse-the-assistant/images/customer-type-summary.png" alt="customer type summary" title="customer type summary" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/customer-type-summary.png" alt="customer type summary" title="customer type summary" style="border: 1px solid gray; zoom:75%;">
 
 4. See the **Preview** and then click **Update to Dashboard**.
 
@@ -146,7 +146,7 @@ We want to see only Success or Failed Tasks.
     * Set **Dimension** to _date_.
     * Set **Metrics** to _TotalTasks_.
     * Set **Overlay** to _metricType_.
-    <img src="../analyse-the-assistant/images/widget-set-up-bar-chart.png" alt="widget setup bar chart" title="widget setup bar chart" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/widget-set-up-bar-chart.png" alt="widget setup bar chart" title="widget setup bar chart" style="border: 1px solid gray; zoom:75%;">
 
 4. See the **Preview** and then click **Update to Dashboard**.
 
@@ -172,7 +172,7 @@ We want to see only Failed Tasks.
 
     * Select **Table chart**.
     * Set **Dimension** to _TaskName_ and _Failures_.
-    <img src="../analyse-the-assistant/images/set-dimension.png" alt="set dimension" title="set dimension" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/set-dimension.png" alt="set dimension" title="set dimension" style="border: 1px solid gray; zoom:75%;">
 
 4. See the **Preview** and then click **Update to Dashboard.**
 
@@ -193,7 +193,7 @@ Repeat the steps listed in the previous section with the following details:
     * Set **Dimension** to _date._
     * Set **Metrics** to _count(messageId)._
     * Set **Overlay** to _channel_.
-    <img src="../analyse-the-assistant/images/widget-setup.png" alt="widget setup" title="widget setup" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/widget-setup.png" alt="widget setup" title="widget setup" style="border: 1px solid gray; zoom:75%;">
 
 4. See the **Preview** and then click **Update to Dashboard**.
 
@@ -216,13 +216,13 @@ Repeat the steps listed in the previous section with the following details:
     * Select **Table chart**.
     * Set **Dimension** to _count(messageId),userId._
 4. The following is a result when you just retrieve the count of all messages, grouping by the userId.
-<img src="../analyse-the-assistant/images/retrieve-count-of-messages.png" alt="retrieve count" title="retrieve count" style="border: 1px solid gray; zoom:75%;"> 
+<img src="../images/retrieve-count-of-messages.png" alt="retrieve count" title="retrieve count" style="border: 1px solid gray; zoom:75%;"> 
 
 5. The following is a result when you retrieve the count of messages, grouping by the userId, using the Having clause.
-<img src="../analyse-the-assistant/images/retrieve-information.png" alt="retrieve information" title="retrieve information" style="border: 1px solid gray; zoom:75%;"> 
+<img src="../images/retrieve-information.png" alt="retrieve information" title="retrieve information" style="border: 1px solid gray; zoom:75%;"> 
 
 6. See the **Preview** and then click **Add to Dashboard**.
-<img src="../analyse-the-assistant/images/click-add-to-dashboard.png" alt="add to dashboard" title="add to dashboard" style="border: 1px solid gray; zoom:75%;"> 
+<img src="../images/click-add-to-dashboard.png" alt="add to dashboard" title="add to dashboard" style="border: 1px solid gray; zoom:75%;"> 
 
 The Having clause widget is added to the dashboard as shown in the following screenshot.
-<img src="../analyse-the-assistant/images/having-clause-widget.png" alt="having clause widget" title="having clause widget" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/having-clause-widget.png" alt="having clause widget" title="having clause widget" style="border: 1px solid gray; zoom:75%;">
