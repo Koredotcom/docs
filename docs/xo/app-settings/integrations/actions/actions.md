@@ -89,7 +89,7 @@ The available Actions/Integrations are listed in the table below. Go to **Build 
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="../bamboo-hr/configuring-the-bamboo-hr-action" target="_blank">Learn more</a>
+   <td><a href="../bamboo-hr/configuring-the-bamboohr-action" target="_blank">Learn more</a>
    </td>
   </tr>
   <tr>
@@ -306,4 +306,4 @@ You can delete an external integration that is no longer in use.
 ## More Like This
 
 * [Kore.ai Integrations Framework Guide](https://info.kore.ai/hubfs/1.%20Kore.ai%20Resources/XO%20Platform/Documents/Technical%20Documents%20v9.0/Kore.ai%20XO%20Platform%20Integration%20Capabilities_Sep%202022.pdf){:target="_blank"}
-* [Configure Salesforce Integrations Actions](https://vimeo.com/761445731) (Video: 3m15s)
+* [Configure Salesforce Integrations Actions](https://vimeo.com/761445731){:target="_blank"} (Video: 3m15s)

@@ -85,7 +85,6 @@ Let’s consider how each metric mentioned in the problem statement can be imple
 
 1. From the left navigation panel, under **Dashboard** click **Custom Dashboard.**
 2. **Create a New Dashboard**.
-
 <img src="../images/create-new-dashboard.png" alt="Create New Dashboard" title="Create New Dashboard" style="border: 1px solid gray; zoom:80%;">
 
 3. Use the **Add Widget** button to add widgets for the above scenarios. You can add up to 4 widgets per row and organize them by moving anywhere within the row or across the rows on the dashboard. You can also manually resize the widgets.
@@ -198,8 +197,7 @@ This query provides channel-wise usage details. Repeat the steps listed in the p
     6. Set **Dimension** to _date_
     7. Set **Metrics** to _count(messageId)_
     8. Set **Overlay** to _channel_
-
-<img src="../images/channel-volume-trend.png" alt="Channel Volume Trend" title="Channel Volume Trend" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/channel-volume-trend.png" alt="Channel Volume Trend" title="Channel Volume Trend" style="border: 1px solid gray; zoom:80%;">
 
 4. See the **Preview** and then click **Update to Dashboard**
 
@@ -229,7 +227,6 @@ This query uses a **Having** clause, to display the number of filtered messages 
 
 6. See the **Preview** and then click **Add to Dashboard**.
 <img src="../images/filter-the-mesage-using-having-clause 3.png" alt="Filter the Mesage Using Having Clause 3" title="Filter the Mesage Using Having Clause 3" style="border: 1px solid gray; zoom:80%;">
-
 The Having clause widget is added to the dashboard as shown in the following screenshot.
 <img src="../images/filter-the-mesage-using-having-clause 4.png" alt="Filter the Mesage Using Having Clause 4" title="Filter the Mesage Using Having Clause 4" style="border: 1px solid gray; zoom:80%;">
 

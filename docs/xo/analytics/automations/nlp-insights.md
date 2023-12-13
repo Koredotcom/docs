@@ -6,8 +6,7 @@ The NLP Insights feature helps you gain in-depth insights into the analytics dat
 
 
 1. Click the three dots on the left navigation pane and then click **Analytics**. The **Analytics** panel is displayed with the list of reports.
-
-   <img src="../images/navigating-to-nlp.png" alt="Navigating to NLP" title="Navigating to NLP" style="border: 1px solid gray; zoom:80%;"> 
+<img src="../images/navigating-to-nlp.png" alt="Navigating to NLP" title="Navigating to NLP" style="border: 1px solid gray; zoom:80%;"> 
 
 2. Click the **NLP Insights** under the **Automation** section of the **Analytics** panel. The **NLP Insights dashboard** is displayed on the right side of the page.
 3. Select appropriate filters on the dashboard and click **Apply**.
@@ -730,13 +729,10 @@ Chat History provides visibility into the user information by capturing the foll
 * **User Conversation Sessions**: Lists all the sessions of the user in the given period with the selected utterance section expanded.
 * **Go to Selected Utterance**: When you click this icon, the selected utterance is highlighted in orange (see the preceding screenshot).
 * **Trace ID**– A unique ID assigned to each incoming message. The Id is also included in all the logs maintained by the Platform.. When you hover over the message, the info icon appears. Click the **Info** icon to view the **Message Id** associated with the message.
-
-   <img src="../images/chat-history-1.png" alt="Chat History-1" title="Chat History-1" style="border: 1px solid gray; zoom:60%;">
-
+<img src="../images/chat-history-1.png" alt="Chat History-1" title="Chat History-1" style="border: 1px solid gray; zoom:60%;">
 
 * Click the **Message Id** to view the **Trace ID** associated with a message in the Chat History.
-
-   <img src="../images/chat-history-2.png" alt="Chat History-2" title="Chat History-2" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/chat-history-2.png" alt="Chat History-2" title="Chat History-2" style="border: 1px solid gray; zoom:60%;">
 
 !!! note
 

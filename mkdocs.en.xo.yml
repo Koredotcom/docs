@@ -121,25 +121,25 @@ nav:
   - Platform : home.md
   - Getting Started:
     - PLATFORM:
-      - Introduction to the Platform: getting-started/about-xo-platform.md
+      - About the Platform: getting-started/about-xo-platform.md
       - Access the Platform: virtual-assistants-overview.md   
       - Automation:
-        - Introduction to Virtual Assistant: virtual-assistants-overview.md
+        - About Virtual Assistant: virtual-assistants-overview.md
         - Build a Virtual Assistant: virtual-assistants-overview.md   
       - Answers:
-        - Introduction to Answers: virtual-assistants-overview.md
+        - About Answers: virtual-assistants-overview.md
         - Configure Answers: virtual-assistants-overview.md   
       - AgentAssist:
-        - Introduction to AgentAssist: virtual-assistants-overview.md
+        - About AgentAssist: virtual-assistants-overview.md
         - Set up AgentAssist: virtual-assistants-overview.md       
       - Contact Center:
-        - Introduction to Contact Center: virtual-assistants-overview.md
+        - About Contact Center: virtual-assistants-overview.md
         - Set up Contact Center: virtual-assistants-overview.md       
       - Campaigns:
-        - Introduction to Campaigns: virtual-assistants-overview.md
+        - About Campaigns: virtual-assistants-overview.md
         - Set up Campaign: virtual-assistants-overview.md       
       - Quality Management:
-        - Introduction to Quality Management: virtual-assistants-overview.md
+        - About Quality Management: virtual-assistants-overview.md
         - Configure Quality Management: virtual-assistants-overview.md         
     - GLOSSARY:
       - Concepts and Terminology: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/ 
@@ -149,7 +149,7 @@ nav:
   - Automation: 
     - DESIGN: 
       - Dialogs Tasks:
-        - Overview: whats-new/whats-new-in-this-release.md 
+        - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
         - Navigating Dialog Tasks: automation/intelligence/context-management.md
         - Build Dialog Tasks: automation/intelligence/context-management.md
         - Node Types:
@@ -177,19 +177,6 @@ nav:
         - Entity Rules: automation/intelligence/context-management.md
         - User Prompts or Messages: automation/intelligence/context-management.md
         - Voice Call Properties: automation/intelligence/context-management.md  
-      - Knowledge AI:
-        - Overview: automation/use-cases/knowledge-ai/knowledge-ai-introduction.md
-        - Knowledge Graph (KG):
-          - Introduction: automation/use-cases/knowledge-ai/knowledge-graph-overview.md
-          - Terminology: automation/use-cases/knowledge-ai/knowledge-graph-terminology.md
-          - Build a KG: automation/use-cases/knowledge-ai/build-a-knowledge-graph.md
-          - Manage FAQs: automation/use-cases/knowledge-ai/manage-faqs.md
-          - Knowledge Extraction: automation/use-cases/knowledge-ai/knowledge-extraction.md
-          - Import or Export KG:
-            - Prepare Data for Import: automation/use-cases/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
-            - Import or Export KG: automation/use-cases/knowledge-ai/import-and-export-knowledge-graph.md
-            - Auto-Generate KG: automation/use-cases/knowledge-ai/generate-a-knowledge-graph.md
-          - KG Analysis: automation/use-cases/knowledge-ai/knowledge-graph-analysis.md 
       - Alert Tasks: automation/use-cases/small-talk.md
       - Small Talk: automation/use-cases/small-talk.md
       - Digital Skills: 
@@ -226,6 +213,19 @@ nav:
       - Batch Testing: getting-started.md
       - Conversation Testing: getting-started.md
   - Answers:
+    - KNOWLEDGE AI:
+        - Overview: automation/use-cases/knowledge-ai/knowledge-ai-introduction.md
+        - Knowledge Graph (KG):
+          - Introduction: automation/use-cases/knowledge-ai/knowledge-graph-overview.md
+          - Terminology: automation/use-cases/knowledge-ai/knowledge-graph-terminology.md
+          - Build a KG: automation/use-cases/knowledge-ai/build-a-knowledge-graph.md
+          - Manage FAQs: automation/use-cases/knowledge-ai/manage-faqs.md
+          - Knowledge Extraction: automation/use-cases/knowledge-ai/knowledge-extraction.md
+          - Import or Export KG:
+            - Prepare Data for Import: automation/use-cases/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
+            - Import or Export KG: automation/use-cases/knowledge-ai/import-and-export-knowledge-graph.md
+            - Auto-Generate KG: automation/use-cases/knowledge-ai/generate-a-knowledge-graph.md
+          - KG Analysis: automation/use-cases/knowledge-ai/knowledge-graph-analysis.md       
     - CONTENT SOURCES:
       - Directory: answers/content-sources/directory.md 
       - Web Crawl: answers/content-sources/web-crawl.md      

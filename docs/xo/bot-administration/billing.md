@@ -43,7 +43,7 @@ Information icons to indicate any plan changes like downgrade messages and expir
 
 The **Cancel Subscription** option allows you to cancel the current subscription for the selected bot.
 
-**Change Plan** option gives you a list of all plans with the plan offerings with the current plan indicated. From here you can choose to **Select Plan**. [Refer here](https://developer.kore.ai/docs/bots/bot-settings/bot-management/subscription-plans/) for plan details.
+**Change Plan** option gives you a list of all plans with the plan offerings with the current plan indicated. From here you can choose to **Select Plan**. [Refer here](https://developer.kore.ai/docs/bots/bot-settings/bot-management/subscription-plans/){:target="_blank"} for plan details.
 
  
 

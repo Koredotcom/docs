@@ -12,12 +12,7 @@ Used to delete customer data.
 
           - An account owner or belongs to one or more accounts.  
           - The bot owner or co-developer for one or more bots. 
-        
 
-!!! note "test"
-   Delete User will not proceed if the requested user is:
-   * An account owner or belongs to one or more accounts.
-   * The bot owner or co-developer for one or more bots.
 
 <table>
   <tr>
