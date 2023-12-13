@@ -33,8 +33,8 @@ When you test an utterance, the NLP engine tries to identify an intent using the
 
 
 * [Machine Learning](https://developer.kore.ai/docs/bots/nlp/user-utterances/){:target="_blank"} engine, 
-* [Fundamental Meaning](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/){:target="_blank"} engine,
-* [Knowledge AI](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ai-overview/), including the [Knowledge Graph](../../use-cases/knowledge-ai/knowledge-graph-training){:target="_blank"} engine and the [Answer from Documents](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/){:target="_blank"} feature,
+* [Fundamental Meaning](../../natural-language/training/fundamental-meaning){:target="_blank"} engine,
+* [Knowledge AI](../../use-cases/knowledge-ai/knowledge-ai-introduction), including the [Knowledge Graph](../../use-cases/knowledge-ai/knowledge-graph-training){:target="_blank"} engine and the [Answer from Documents](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/){:target="_blank"} feature,
 * [Ranking and Resolver](../../natural-language/training/ranking-and-resolver){:target="_blank"}.
 
 
@@ -259,7 +259,7 @@ Below is the process we recommend you use for utterance training:
     2. **For multiple matched intents**: Select the radio button for the intent you want to match.
     3. **For a single matched intent**: Click the name of the matched intent.
 2. The user utterance that you entered gets displayed in the field under the _ML Utterances_ section. To add the utterance to the intent, click **Save**. You can add as many utterances as you want, one after another. For more information, read [Machine Learning](https://developer.kore.ai/docs/bots/nlp/user-utterances/){:target="_blank"}.
-3. Under the _Intent Synonyms_ section, each word in the task name appears as a separate line item. Enter the synonyms for the words to optimize the NLP interpreter accuracy to recognize the correct task. For more information, read [Managing Synonyms](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Managing_Synonyms){:target="_blank"}.
+3. Under the _Intent Synonyms_ section, each word in the task name appears as a separate line item. Enter the synonyms for the words to optimize the NLP interpreter accuracy to recognize the correct task. For more information, read [Managing Synonyms](../../natural-language/training/fundamental-meaning/#managing-synonyms){:target="_blank"}.
 4. Under the _Intent Patterns_ section, enter task patterns for the intent. For more information, read [Managing Patterns](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Managing_Patterns){:target="_blank"}.
 5. When you are done making the relevant training entries, click **Re-Run Utterance** to see if you have improved the intent to get a high confidence score. 
 
