@@ -1,4 +1,4 @@
-# Using Patterns for Intents & Entities
+# Use Patterns for Intents & Entities
 
 Using patterns can help to improve NLP interpreter accuracy.
 
@@ -97,7 +97,7 @@ The following is a list of the pattern syntaxes available on the XO Platform tha
    </td>
    <td>Compound words:  A compound word is treated as one word and that impacts how the canonical form is constructed. No additional words allowed in between word1 and word2. This is to ensure that a sequence of tokens are read as a phrase. Usage is restricted to words, concepts not allowed.
 
-**Note**: There should be no space between the word1, word2 and _.
+<b>Note</b>: There should be no space between the word1, word2 and _.
 
    </td>
    <td>
@@ -132,7 +132,7 @@ The following is a list of the pattern syntaxes available on the XO Platform tha
    </td>
    <td>_word1 ensures that the word1 in the user utterance is <span style="text-decoration:underline;">not marked</span> as <span style="text-decoration:underline;">Used Up</span> by the platform and is to be considered for entity extraction. This is useful when entity words are used in the intent pattern.
 
-For e.g., the pattern (buy ~number ticket) will match “buy 2 tickets for the show at 7”; each of the three pattern words internally will be tracked as used up, but a ticket number entity will first consider “7” and not “2” because “7” is not used up. If the pattern is changed to (**buy _~number ticket**), then “2” is still matched for the intent pattern but the word is not marked as used up and the entity would consider it, hence the leading underscore is useful for pattern tokens that constitute important data.
+For e.g., the pattern (buy ~number ticket) will match “buy 2 tickets for the show at 7”; each of the three pattern words internally will be tracked as used up, but a ticket number entity will first consider “7” and not “2” because “7” is not used up. If the pattern is changed to (buy _~number ticket), then “2” is still matched for the intent pattern but the word is not marked as used up and the entity would consider it, hence the leading underscore is useful for pattern tokens that constitute important data.
 
    </td>
    <td>
@@ -204,9 +204,11 @@ For e.g., the pattern (buy ~number ticket) will match “buy 2 tickets for the s
    </td>
    <td>Up to _n_ number of additional words between the specified words/phrases.
 
-**Note:** FM engine automatically generates variations with this wildcard and unless it is a special scenario, developers do not further perform any action.
+!!!note
 
-An advanced NLP configuration setting allows developers to change the default number of possible wildcards between tokens.
+    FM engine automatically generates variations with this wildcard and unless it is a special scenario, developers do not further perform any action.
+
+    An advanced NLP configuration setting allows developers to change the default number of possible wildcards between tokens.
 
    </td>
    <td>
@@ -245,7 +247,7 @@ _“<em>can you tell me what the credit on my card is</em>?”
 
 (available 7.1 onwards).
 
-**Note:** If a phrase needs to be treated as an idiom or  a complete unit, then instead of using an _ or the *0 syntax, the phrase can be used in concept. The advantages of this usage are having a specific sequence of words, correct canonical handling, easy reuse, and better performance.
+<b>Note</b>: If a phrase needs to be treated as an idiom or  a complete unit, then instead of using an _ or the *0 syntax, the phrase can be used in concept. The advantages of this usage are having a specific sequence of words, correct canonical handling, easy reuse, and better performance.
 
    </td>
    <td>
@@ -282,7 +284,7 @@ _“<em>can you tell me what the credit on my card is</em>?”
    </td>
    <td>Indicates the match for word1 should start from the beginning of a sentence. Add a space after the angular bracket.
 
-**Note:** ‘**&lt;’** indicates the start of the sentence. The next token would match the first word.
+<b>Note</b>: ‘<’ indicates the start of the sentence. The next token would match the first word.
 
    </td>
    <td>
@@ -430,7 +432,7 @@ No space between !! and word/concept.
    </td>
    <td>Used to define a group of words/concepts and the match should be against exactly one of the group declared in [ ]._ Be aware that when a match is found the rest of the group is ignored, so order the words accordingly._
 
-**Note:** The brackets should not be clubbed with the word, i.e. maintain a space between the parenthesis and the adjacent word.
+<b>Note</b>: The brackets should not be clubbed with the word, i.e. maintain a space between the parenthesis and the adjacent word.
 
    </td>
    <td>
@@ -469,7 +471,7 @@ No space between !! and word/concept.
    </td>
    <td>Used to define an optional group or words/concepts and the match would be against zero or one of the words/patterns declared in { }. Be aware that when a match is found, rest of the group is ignored, so order the words accordingly.
 
-**Note:** The brackets should not be clubbed with the word, i.e. maintain a space between the parenthesis and the adjacent word.
+<b>Note</b>: The brackets should not be clubbed with the word, i.e. maintain a space between the parenthesis and the adjacent word.
 
    </td>
    <td>
@@ -610,7 +612,7 @@ Due to the risk of running into false positives, you are advised <span style="te
   <tr>
    <td><b>word1~concept2</b>
 
-**~concept1~concept2**
+<b>~concept1~concept2</b>
 
 (from ver8.0)
 
@@ -710,6 +712,7 @@ _Note that the _!word_ means _not after this point_.
 So (!forecast the weather) and (get the weather !forecast) are different. The utterance _get the forecast for the weather_ matches the second but not the first.
 
 **Optional: {X}**: For example, {phone} If the user utterance is _Get me a phone number_ or _get me a number_ the platform will treat it equally.
+
 * **Enforce Phrase:** X_Y: To enforce occurrence of the phrase as is in the user utterance, without any words in between. For example, transfer_funds. The utterance _transfer funds_ or _I want to transfer funds_ will match but not _Can I transfer some funds_.
 * **Concepts: ~**: Platform has a large set of inbuilt concepts that developers can use to define a pattern. For example, (I [like love] ~world_country) will match
     * I like India
@@ -751,16 +754,16 @@ Continuing with the Banking Bot example with _Transfer Funds_ intent. This inten
 
 ### Pattern 1: word1 * word2
 
-This can be used as a positional wildcard that indicates the expected position of the entity. 
-
+This can be used as a positional wildcard that indicates the expected position of the entity.
 * **Pattern for _ToAccount_ entity**: _to * from_.
+
 * **User Utterance**: _Transfer funds to ABC123 from my account._ 
 * **Entity Extracted**: _ToAccount = ABC123_
 * **User Utterance not resulting in entity extraction**: “_transfer funds for ABC123 from my account”_.
 
 ### Pattern 2: word1 *n
 
-This can be used as a positional wildcard * that indicates the expected position of the entity based upon the number of words</span> after the specified word1. That is, _n_ words after the _word1_ are to be considered for the entity, if _n_ words are not present then look for the next occurrence of _word1_. 
+This can be used as a positional wildcard * that indicates the expected position of the entity based upon the number of words after the specified word1. That is, _n_ words after the _word1_ are to be considered for the entity, if _n_ words are not present then look for the next occurrence of _word1_.
 
 * **Pattern for _ToAccount_ entity**: _from *2_
 * **User Utterance**: _Transfer funds to ABC123 from my account._ 
@@ -812,7 +815,7 @@ or _Transfer funds from my account to ABC123._
 Useful in entity patterns and custom entities 
 Words that are used in the intent identification are dynamically marked with the _~intent_ concept. This can then be used as an anchor or reference point for some entity patterns.
 
-* **Sample Pattern**: _“~intent~meeting~plural”_.
+* **Sample Pattern**: “_~intent~meeting~plural_”.
 * **User Utterance not resulting in entity extraction**: _show my meetings._ 
 * **User Utterance might mark the entity**: “_schedule a presentation called Meeting the Sales Goals_.”
 
