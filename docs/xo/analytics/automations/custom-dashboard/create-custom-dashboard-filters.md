@@ -99,7 +99,6 @@ You can perform the following steps to update the filters of the Custom Dashboar
 4. Edit the details as per the requirement, in the **Configuration** panel.
 5. Click the **Preview** button. The **Preview Filter** pop-up is displayed as shown in the preceding screenshot. Select a value from the drop-down as per the requirement.
 6. Click the **Update filter** button to update the details.
-
 <img src="../images/update-filter4.png" alt="Update Filter4" title="Update Filter4" style="border: 1px solid gray; zoom:80%;">    
 
 
