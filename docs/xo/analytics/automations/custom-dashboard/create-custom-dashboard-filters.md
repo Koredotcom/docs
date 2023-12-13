@@ -16,15 +16,11 @@ To add one or more filters at the Custom Dashboard level, perform the following 
 
 
 1. Click the **Add Filter** button to go to the **Configuration** panel shown below.
-
 <img src="../images/add-custom-filters1.png" alt="Add Custom Filters1" title="Add Custom Filters1" style="border: 1px solid gray; zoom:80%;">
-
-
 !!! note
 
     Tooltips are available for all the fields in the Add Custom Filter panel except the Preview Date. Using the Preview Date, you can select a date range to display the data.
-
-
+    
 <img src="../images/add-custom-filters2.png" alt="Add Custom Filters2" title="Add Custom Filters2" style="border: 1px solid gray; zoom:80%;">
 
 
@@ -41,7 +37,7 @@ The Platform currently supports 3 types of filters:
 
 * **Alphanumeric Text field:** You can choose from the existing values of the selected field as suggestions in ascending order or add a new value. Adding a new value creates filters for the values which are not available in the VA.
 * **Numeric Text field:** You can choose a numeric range by providing values at the **‘From Value’** and **‘To Value’** fields. On applying this filter, results in each widget are filtered out based on the From and To values defined in the filter.
-1. Enter the **Filter Name.**
+2. Enter the **Filter Name.**
 2. Select a field from any of the following data sources in the **Filter Source** drop-down:
 * **Sessions (Dataset)** – It presents all the fields captured by the platform during conversation sessions.
 * **User Tag (Custom Tag)** – It presents the Custom user tags generated in the VA to choose from. You can also add a user tag which is not yet available in the VA.
