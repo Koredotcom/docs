@@ -182,7 +182,7 @@ For example, to obtain the count of a specific FAQ, the following details are en
 
 **Group By** fields for applying the aggregating functions. For example, you can display the count of all messages, grouping by the userId. To understand the Group By usage, see the examples at Create Custom Dashboard.
 
-**Having** clause is used to filter the results with aggregate functions as the ‘Where’ keyword cannot be used here. For example, _count(messageid)>10_. The clause works only with the ‘Group By’ function. \
+**Having** clause is used to filter the results with aggregate functions as the ‘Where’ keyword cannot be used here. For example, _count(messageid)>10_. The clause works only with the ‘Group By’ function.
 To understand how the Having clause works, see Filter the Messages using the Having Clause.
 
 !!! note
