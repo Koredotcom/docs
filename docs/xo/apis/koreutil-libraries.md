@@ -14,18 +14,18 @@ Below is the list of koreUtil libraries provided by the Platform:
 
 
 
-* [koreUtil.rrule](#koreUtilrrule)
-* [koreUtil.moment](#koreUtilmoment)
-* [koreUtil.intl](#koreUtilintl)
-* [koreUtil.momenttz](#koreUtilmomenttz)
-* [koreUtil.xml2js](#koreUtilxml2js)
-* [koreUtil.hash](#koreUtilhash)
-* [koreUtil._](#koreUtil)
-* [koreUtil.getCurrentOptions](#koreUtilgetCurrentOptions)
-* [koreUtil.getAmbiguousIntents](#koreUtilgetAmbiguousIntents)
-* [koreUtil.getSessionId](#koreUtilgetSessionId)
-* [koreUtil.closeConversationSession](#koreUtilclose)
-* [koreUtil.autoTranslate](#koreautotranslate)
+* [koreUtil.rrule](../koreutil-libraries#koreUtilrrule)
+* [koreUtil.moment](../koreutil-libraries#koreUtilmoment)
+* [koreUtil.intl](../koreutil-libraries#koreUtilintl)
+* [koreUtil.momenttz](../koreutil-libraries#koreUtilmomenttz)
+* [koreUtil.xml2js](../koreutil-libraries#koreUtilxml2js)
+* [koreUtil.hash](../koreutil-libraries#koreUtilhash)
+* [koreUtil._](../koreutil-libraries#koreUtil)
+* [koreUtil.getCurrentOptions](../koreutil-libraries#koreUtilgetCurrentOptions)
+* [koreUtil.getAmbiguousIntents](../koreutil-libraries#koreUtilgetAmbiguousIntents)
+* [koreUtil.getSessionId](../koreutil-libraries#koreUtilgetSessionId)
+* [koreUtil.closeConversationSession](../koreutil-libraries#koreUtilclose)
+* [koreUtil.autoTranslate](../koreutil-libraries#koreautotranslate)
 
 
 ### koreUtil.rrule
@@ -34,25 +34,25 @@ koreUtil.rrule is a platform-offered JS library for creating new recurrence rule
 
 **Usage Example:**
 ```
-context.rule = new koreUtil.rrule({ \
-freq: koreUtil.rrule.WEEKLY, \
-interval: 5, \
-byweekday: [koreUtil.rrule.MO, koreUtil.rrule.FR], \
-dtstart: new Date(2012, 1, 1, 10, 30), \
-until: new Date(2012, 12, 31) \
-}); \
-context.between=context.rule.between(new Date(2012, 7, 1), new Date(2012, 8, 1)); \
+context.rule = new koreUtil.rrule({ 
+freq: koreUtil.rrule.WEEKLY, 
+interval: 5, 
+byweekday: [koreUtil.rrule.MO, koreUtil.rrule.FR], 
+dtstart: new Date(2012, 1, 1, 10, 30), 
+until: new Date(2012, 12, 31) 
+}); 
+context.between=context.rule.between(new Date(2012, 7, 1), new Date(2012, 8, 1)); 
 context.readableFormat=context.rule.toText();
 ```
 
 **Output:**
 
-* For context.between \
-```[ \
-"2012-08-27T10:30:00.000Z", \
-"2012-08-31T10:30:00.000Z" \
+*For context.between*
+```[ 
+"2012-08-27T10:30:00.000Z", 
+"2012-08-31T10:30:00.000Z" 
 ]```
-* For context.readableFormat \
+*For context.readableFormat*
 ```every 5 weeks on Monday, Friday until January 31, 2013```
 
 
@@ -60,28 +60,26 @@ context.readableFormat=context.rule.toText();
 
 koreUtil.moment is a platform-offered JS library for validating, manipulating, and formatting dates.
 
-**Usage Example:** \
+**Usage Example:** 
 ```context.german=koreUtil.moment().locale('de').format('LLLL');```
 
-**Output:** \
-**For context.german: \
-`Montag, 18. November 2019 01:43`
+**Output:** 
+*For context.german:*
+```Montag, 18. November 2019 01:43```
 
 
 ### koreUtil.intl
 
 koreUtil.intl is a platform-offered JS library for language-specific string comparison, number formatting, and date and time formatting.
 
-**Usage Example: \
-`context.formattedNumberUK = koreUtil.intl.NumberFormat('en-GB').format(123456.789); \
-var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0)); \
-context.USdate=koreUtil.intl.DateTimeFormat('en-US').format(date);`**
+**Usage Example:**
+```context.formattedNumberUK = koreUtil.intl.NumberFormat('en-GB').format(123456.789);
+var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0)); 
+context.USdate=koreUtil.intl.DateTimeFormat('en-US').format(date);```
 
 **Output:**
 
-
-
-* For context.formattedNumberUK: \
+* For context.formattedNumberUK: *
 `123,456.789`
 * For context.USdate \
 `12/20/2012`
