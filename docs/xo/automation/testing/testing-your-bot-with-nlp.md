@@ -34,7 +34,7 @@ When you test an utterance, the NLP engine tries to identify an intent using the
 
 * [Machine Learning](../../natural-language/training/machine-learning-engine){:target="_blank"} engine, 
 * [Fundamental Meaning](../../natural-language/training/fundamental-meaning){:target="_blank"} engine,
-* [Knowledge AI](../../use-cases/knowledge-ai/knowledge-ai-introduction), including the [Knowledge Graph](../../use-cases/knowledge-ai/knowledge-graph-training){:target="_blank"} engine and the [Answer from Documents](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/){:target="_blank"} feature,
+* [Knowledge AI](../../../answers/knowledge-ai/knowledge-ai-introduction){:target="_blank"}, including the [Knowledge Graph](../../../answers/knowledge-ai/knowledge-graph-training){:target="_blank"} engine and the [Answer from Documents](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/){:target="_blank"} feature,
 * [Ranking and Resolver](../../natural-language/training/ranking-and-resolver){:target="_blank"}.
 
 
@@ -258,7 +258,7 @@ Below is the process we recommend you use for utterance training:
     1. **For an unmatched intent**: From the **Select an Intent** drop-down list, select the intent that you want to match with the user utterance.
     2. **For multiple matched intents**: Select the radio button for the intent you want to match.
     3. **For a single matched intent**: Click the name of the matched intent.
-2. The user utterance that you entered gets displayed in the field under the _ML Utterances_ section. To add the utterance to the intent, click **Save**. You can add as many utterances as you want, one after another. For more information, read [Machine Learning](https://developer.kore.ai/docs/bots/nlp/user-utterances/){:target="_blank"}.
+2. The user utterance that you entered gets displayed in the field under the _ML Utterances_ section. To add the utterance to the intent, click **Save**. You can add as many utterances as you want, one after another. For more information, read [Machine Learning](../../natural-language/training/machine-learning-engine){:target="_blank"}.
 3. Under the _Intent Synonyms_ section, each word in the task name appears as a separate line item. Enter the synonyms for the words to optimize the NLP interpreter accuracy to recognize the correct task. For more information, read [Managing Synonyms](../../natural-language/training/fundamental-meaning/#manage-synonyms){:target="_blank"}.
 4. Under the _Intent Patterns_ section, enter task patterns for the intent. For more information, read [Managing Patterns](../../natural-language/training/fundamental-meaning/#manage-patterns-and-rules){:target="_blank"}.
 5. When you are done making the relevant training entries, click **Re-Run Utterance** to see if you have improved the intent to get a high confidence score. 
@@ -321,7 +321,7 @@ If you want the assistant to respond to user utterance with FAQs there are two w
 
 * set the terms, term configuration, or classes from the FAQ page, train the KG and retest the utterance.
 * add the utterance as an alternate question to the selected FAQ from the Knowledge Graph page, train the KG and retest the utterance.
-[Know more about Knowledge Graph Training](../../use-cases/knowledge-ai/knowledge-graph-training){:target="_blank"}.
+[Know more about Knowledge Graph Training](../../../answers/knowledge-ai/knowledge-graph-training){:target="_blank"}.
 
 
 
