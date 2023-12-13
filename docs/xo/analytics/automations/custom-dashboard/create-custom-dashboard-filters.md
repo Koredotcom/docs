@@ -22,8 +22,6 @@ To add one or more filters at the Custom Dashboard level, perform the following 
     Tooltips are available for all the fields in the Add Custom Filter panel except the Preview Date. Using the Preview Date, you can select a date range to display the data.
     
 <img src="../images/add-custom-filters2.png" alt="Add Custom Filters2" title="Add Custom Filters2" style="border: 1px solid gray; zoom:80%;">
-
-
 The Platform currently supports 3 types of filters:
 
 * **Drop-down list:** Allows you to choose from a list of values based on the selected field name within the dataset or meta tag. You can set one or more values as ‘default values’ for this control.
