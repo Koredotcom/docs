@@ -136,4 +136,4 @@ The **Sensitive Entity** option provides flexibility in managing the handling of
 
 Both the PII and Sensitive Entity complement each other in providing comprehensive protection for sensitive data. While the PII feature offers broad coverage for common PII patterns, sensitive nodes enable you to handle sensitive data in a more granular and contextually aware manner, addressing specific challenges and custom use cases.
 
-It’s recommended to leverage both features in combination to ensure comprehensive protection of sensitive data throughout your conversations. For more information, see the [Entity Node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-entity-node/#Configure_the_Node) article.
+It’s recommended to leverage both features in combination to ensure comprehensive protection of sensitive data throughout your conversations. For more information, see the [Entity Node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-entity-node/#Configure_the_Node){:target="_blank"} article.
