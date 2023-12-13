@@ -14,18 +14,18 @@ Below is the list of koreUtil libraries provided by the Platform:
 
 
 
-* [koreUtil.rrule](#koreUtilrrule)
-* [koreUtil.moment](#koreUtilmoment)
-* [koreUtil.intl](#koreUtilintl)
-* [koreUtil.momenttz](#koreUtilmomenttz)
-* [koreUtil.xml2js](#koreUtilxml2js)
-* [koreUtil.hash](#koreUtilhash)
-* [koreUtil._](#koreUtil)
-* [koreUtil.getCurrentOptions](#koreUtilgetCurrentOptions)
-* [koreUtil.getAmbiguousIntents](#koreUtilgetAmbiguousIntents)
-* [koreUtil.getSessionId](#koreUtilgetSessionId)
-* [koreUtil.closeConversationSession](#koreUtilclose)
-* [koreUtil.autoTranslate](#koreautotranslate)
+* [koreUtil.rrule](../koreutil-libraries#koreUtilrrule)
+* [koreUtil.moment](../koreutil-libraries#koreUtilmoment)
+* [koreUtil.intl](../koreutil-libraries#koreUtilintl)
+* [koreUtil.momenttz](../koreutil-libraries#koreUtilmomenttz)
+* [koreUtil.xml2js](../koreutil-libraries#koreUtilxml2js)
+* [koreUtil.hash](../koreutil-libraries#koreUtilhash)
+* [koreUtil._](../koreutil-libraries#koreUtil)
+* [koreUtil.getCurrentOptions](../koreutil-libraries#koreUtilgetCurrentOptions)
+* [koreUtil.getAmbiguousIntents](../koreutil-libraries#koreUtilgetAmbiguousIntents)
+* [koreUtil.getSessionId](../koreutil-libraries#koreUtilgetSessionId)
+* [koreUtil.closeConversationSession](../koreutil-libraries#koreUtilclose)
+* [koreUtil.autoTranslate](../koreutil-libraries#koreautotranslate)
 
 
 ### koreUtil.rrule
@@ -34,25 +34,25 @@ koreUtil.rrule is a platform-offered JS library for creating new recurrence rule
 
 **Usage Example:**
 ```
-context.rule = new koreUtil.rrule({ \
-freq: koreUtil.rrule.WEEKLY, \
-interval: 5, \
-byweekday: [koreUtil.rrule.MO, koreUtil.rrule.FR], \
-dtstart: new Date(2012, 1, 1, 10, 30), \
-until: new Date(2012, 12, 31) \
-}); \
-context.between=context.rule.between(new Date(2012, 7, 1), new Date(2012, 8, 1)); \
+context.rule = new koreUtil.rrule({ 
+freq: koreUtil.rrule.WEEKLY, 
+interval: 5, 
+byweekday: [koreUtil.rrule.MO, koreUtil.rrule.FR], 
+dtstart: new Date(2012, 1, 1, 10, 30), 
+until: new Date(2012, 12, 31) 
+}); 
+context.between=context.rule.between(new Date(2012, 7, 1), new Date(2012, 8, 1)); 
 context.readableFormat=context.rule.toText();
 ```
 
 **Output:**
 
-* For context.between \
-```[ \
-"2012-08-27T10:30:00.000Z", \
-"2012-08-31T10:30:00.000Z" \
+*For context.between*
+```[ 
+"2012-08-27T10:30:00.000Z", 
+"2012-08-31T10:30:00.000Z" 
 ]```
-* For context.readableFormat \
+*For context.readableFormat*
 ```every 5 weeks on Monday, Friday until January 31, 2013```
 
 
@@ -60,109 +60,105 @@ context.readableFormat=context.rule.toText();
 
 koreUtil.moment is a platform-offered JS library for validating, manipulating, and formatting dates.
 
-**Usage Example:** \
+**Usage Example:** 
 ```context.german=koreUtil.moment().locale('de').format('LLLL');```
 
-**Output:** \
-**For context.german: \
-`Montag, 18. November 2019 01:43`
+**Output:** 
+*For context.german:*
+```Montag, 18. November 2019 01:43```
 
 
 ### koreUtil.intl
 
 koreUtil.intl is a platform-offered JS library for language-specific string comparison, number formatting, and date and time formatting.
 
-**Usage Example: \
-`context.formattedNumberUK = koreUtil.intl.NumberFormat('en-GB').format(123456.789); \
-var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0)); \
-context.USdate=koreUtil.intl.DateTimeFormat('en-US').format(date);`**
+**Usage Example:**
+```context.formattedNumberUK = koreUtil.intl.NumberFormat('en-GB').format(123456.789);
+var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0)); 
+context.USdate=koreUtil.intl.DateTimeFormat('en-US').format(date);```
 
 **Output:**
 
-
-
-* For context.formattedNumberUK: \
-`123,456.789`
-* For context.USdate \
-`12/20/2012`
+*For context.formattedNumberUK:*
+```123,456.789```
+*For context.USdate*
+```12/20/2012```
 
 
 ### koreUtil.momenttz
 
 koreUtil.momenttz is a platform-offered JS library for the formatting of dates in any timezone and converting dates between timezones.
 
-**Usage Example: \
-`var jun = koreUtil.moment("2014-06-01T12:00:00Z"); \
-context.newyork= koreUtil.momenttz(jun,'America/New_York').format('ha z'); \
-context.tokyo = koreUtil.moment().tz('Asia/Tokyo').format('ha z'); \
-context.sydney = koreUtil.moment().tz('Australia/Sydney').format('ha z');`**
+**Usage Example:**
+```var jun = koreUtil.moment("2014-06-01T12:00:00Z"); 
+context.newyork= koreUtil.momenttz(jun,'America/New_York').format('ha z'); 
+context.tokyo = koreUtil.moment().tz('Asia/Tokyo').format('ha z'); 
+context.sydney = koreUtil.moment().tz('Australia/Sydney').format('ha z');```
 
 **Output:**
 
-
-
-* For context.newyork: \
-`5am PDT`
-* For context.tokyo: \
-`7pm JST`
-* For context.sydney: \
-`9pm AEDT`
+* For context.newyork: *
+```5am PDT```
+* For context.tokyo: *
+```7pm JST```
+* For context.sydney: *
+```9pm AEDT```
 
 
 ### koreUtil.xml2js
 
 koreUtil.xml2js is a Platform-offered JS library for parsing XML to JSON and vice versa.
 
-**Usage Example: \
-`var obj = {name: "John", Surname: "Doe", age: 23}; \
+**Usage Example:**
+```var obj = {name: "John", Surname: "Doe", age: 23}; \
 var builder = new koreUtil.xml2js.Builder(); \
-context.xml = builder.buildObject(obj);`**
+context.xml = builder.buildObject(obj);```
 
 **Output:**
 
-
-
-* For context.xml: \
-`John Doe 23`
+* For context.xml: *
+```John Doe 23```
 
 
 ### koreUtil.hash
 
 koreUtil.hash is a Platform offered JS library that supports SHA on JavaScript.
 
-**Usage Example: \
-`context.hashString= koreUtil.hash('sha256').update('42').digest('hex');`**
+**Usage Example:**
+```context.hashString= koreUtil.hash('sha256').update('42').digest('hex');
+```
 
 **Output:**
 
-
-
-* For context.hashString: \
-`73475cb40a568e8da8a045ced110137e159f890ac4da883b6b17dc651b3a8049`
+* For context.hashString:*
+```73475cb40a568e8da8a045ced110137e159f890ac4da883b6b17dc651b3a8049
+```
 
 
 ### koreUtil._
 
 koreUtil._ is a Platform-offered JS library that provides utility functions for common programming tasks.
 
-**Usage Example: \
-`context.chunkArray = koreUtil._.chunk(['a', 'b', 'c', 'd'], 2); \
-var users = [ \
-{ 'user': 'barney', 'age': 36, 'active': true }, \
-{ 'user': 'fred', 'age': 40, 'active': false } \
-]; \
-context.filterActive =koreUtil._.pluck(koreUtil._.filter(users, { 'age': 36, 'active': true }), 'user');`**
+**Usage Example:**
+```context.chunkArray = koreUtil._.chunk(['a', 'b', 'c', 'd'], 2); 
+var users = [ 
+{ 'user': 'barney', 'age': 36, 'active': true }, 
+{ 'user': 'fred', 'age': 40, 'active': false } 
+]; 
+context.filterActive =koreUtil._.pluck(koreUtil._.filter(users, { 'age': 36, 'active': true }), 'user');
+```
 
 **Output:**
 
 
 
-* For context.chunkArray: \
-`[["a","b"],["c","d"]]`
-* For context.filterActive: \
-`[ \
+* For context.chunkArray: *
+```[["a","b"],["c","d"]]```
+* For context.filterActive: *
+```[ \
 "barney" \
-]`
+]
+```
 
 
 ### koreUtil.getCurrentOptions
@@ -174,12 +170,13 @@ Following is the return format for each of the situations:
 
 
 
-* For the language selection standard response: \
-`{"list_of_languages": [`
-* `   {"title": "English","value": "English"},`
-* `   {"title": "Deutsche","value": "Deutsche"},`
-* `   {"title": "Español","value": "Español"}`
-* `]}`
+* For the language selection standard response: *
+```{"list_of_languages": [`
+      {"title": "English","value": "English"},
+      {"title": "Deutsche","value": "Deutsche"},`
+      {"title": "Español","value": "Español"}`
+]}
+```
 * For the language ambiguity standard response: \
 `{"current_language": "Español",`
 * `      "list_of_new_languages": [`

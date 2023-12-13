@@ -16,60 +16,58 @@ To add one or more filters at the Custom Dashboard level, perform the following 
 
 
 1. Click the **Add Filter** button to go to the **Configuration** panel shown below.
-<img src="../images/add-custom-filters1.png" alt="Add Custom Filters1" title="Add Custom Filters1" style="border: 1px solid gray; zoom:80%;">
-!!! note
-
-    Tooltips are available for all the fields in the Add Custom Filter panel except the Preview Date. Using the Preview Date, you can select a date range to display the data.
+    <img src="../images/add-custom-filters1.png" alt="Add Custom Filters1" title="Add Custom Filters1" style="border: 1px solid gray; zoom:80%;">
     
-<img src="../images/add-custom-filters2.png" alt="Add Custom Filters2" title="Add Custom Filters2" style="border: 1px solid gray; zoom:80%;">
+    !!! note
+
+        Tooltips are available for all the fields in the Add Custom Filter panel except the Preview Date. Using the Preview Date, you can select a date range to display the data.
+
+    <img src="../images/add-custom-filters2.png" alt="Add Custom Filters2" title="Add Custom Filters2" style="border: 1px solid gray; zoom:80%;">
+    The Platform currently supports 3 types of filters:
+
+    * **Drop-down list:** Allows you to choose from a list of values based on the selected field name within the dataset or meta tag. You can set one or more values as ‘default values’ for this control.
+        * This is an optional feature.
+        * The existing values of the selected field are displayed in ascending order as suggestions. Either choose from the suggested values or add a new value.
 
 
-The Platform currently supports 3 types of filters:
+    !!! note
 
-* **Drop-down list:** Allows you to choose from a list of values based on the selected field name within the dataset or meta tag. You can set one or more values as ‘default values’ for this control.
-    * This is an optional feature.
-    * The existing values of the selected field are displayed in ascending order as suggestions. Either choose from the suggested values or add a new value.
+        By adding a new value, you can create filters for values that are not available for the VA.
 
-
-!!! note
-
-    By adding a new value, you can create filters for values that are not available for the VA.
-
-* **Alphanumeric Text field:** You can choose from the existing values of the selected field as suggestions in ascending order or add a new value. Adding a new value creates filters for the values which are not available in the VA.
-* **Numeric Text field:** You can choose a numeric range by providing values at the **‘From Value’** and **‘To Value’** fields. On applying this filter, results in each widget are filtered out based on the From and To values defined in the filter.
+    * **Alphanumeric Text field:** You can choose from the existing values of the selected field as suggestions in ascending order or add a new value. Adding a new value creates filters for the values which are not available in the VA.
+    * **Numeric Text field:** You can choose a numeric range by providing values at the **‘From Value’** and **‘To Value’** fields. On applying this filter, results in each widget are filtered out based on the From and To values defined in the filter.
 2. Enter the **Filter Name.**
-2. Select a field from any of the following data sources in the **Filter Source** drop-down:
-* **Sessions (Dataset)** – It presents all the fields captured by the platform during conversation sessions.
-* **User Tag (Custom Tag)** – It presents the Custom user tags generated in the VA to choose from. You can also add a user tag which is not yet available in the VA.
-* **Message Tag (Custom Tag)** – It presents the Custom message tags generated in the VA to choose from. You can also add a message tag which is not yet available in the VA.
-* **Session Tag (Custom Tag)**– It presents the Custom session tags generated in the VA to choose from. You can also add a session tag which is not yet available in the VA.
+3. Select a field from any of the following data sources in the **Filter Source** drop-down:
+    * **Sessions (Dataset)** – It presents all the fields captured by the platform during conversation sessions.
+    * **User Tag (Custom Tag)** – It presents the Custom user tags generated in the VA to choose from. You can also add a user tag which is not yet available in the VA.
+    * **Message Tag (Custom Tag)** – It presents the Custom message tags generated in the VA to choose from. You can also add a message tag which is not yet available in the VA.
+    * **Session Tag (Custom Tag)**– It presents the Custom session tags generated in the VA to choose from. You can also add a session tag which is not yet available in the VA.
 
-The fields in the Sessions dataset are supported for custom filters. Messages and Analytics dataset filters are not supported.
+    The fields in the Sessions dataset are supported for custom filters. Messages and Analytics dataset filters are not supported.
 
-See Datasets and Fields to understand more.
+    See Datasets and Fields to understand more.
 
-<img src="../images/add-custom-filters3.png" alt="Add Custom Filters3" title="Add Custom Filters3" style="border: 1px solid gray; zoom:80%;">   
+    <img src="../images/add-custom-filters3.png" alt="Add Custom Filters3" title="Add Custom Filters3" style="border: 1px solid gray; zoom:80%;">   
 
-For custom filters, we can use fields either from the Sessions dataset or from Message, User, or Session tags. We can add filters for the existing tags and also the tags that are not available in the VA. See Custom Meta Tags to understand more.
+    For custom filters, we can use fields either from the Sessions dataset or from Message, User, or Session tags. We can add filters for the existing tags and also the tags that are not available in the VA. See Custom Meta Tags to understand more.
 
-!!! note
+    !!! note
 
-    Based on the Filter Source, select the fields in the Field Name drop-down. In case of Custom Tags, you can select any of the existing tags or add a tag that is not available in the VA.
+        Based on the Filter Source, select the fields in the Field Name drop-down. In case of Custom Tags, you can select any of the existing tags or add a tag that is not available in the VA.
 
-1. Click the button **Save & Preview** to save and preview the filter details.
-2. You can also select a **Default** filter to be applied to all the widgets in the entire dashboard.
-
+4. Click the button **Save & Preview** to save and preview the filter details.
+5. You can also select a **Default** filter to be applied to all the widgets in the entire dashboard.
 <img src="../images/add-custom-filters4.png" alt="Add Custom Filters4" title="Add Custom Filters4" style="border: 1px solid gray; zoom:80%;">    
 
-3. Click the button **Add to Dashboard** in the preview panel to add the filter to the dashboard.
-4. Click the button **Apply** if you want to apply the filter to the dashboard.
+6. Click the button **Add to Dashboard** in the preview panel to add the filter to the dashboard.
+7. Click the button **Apply** if you want to apply the filter to the dashboard.
 
-!!! note
+    !!! note
 
-    The default filter is added at the dashboard level (highlighted in the screenshot) and you can select the value from the LoB drop-down to apply to all the widgets.
+        The default filter is added at the dashboard level (highlighted in the screenshot) and you can select the value from the LoB drop-down to apply to all the widgets.
 
-<img src="../images/add-custom-filters5.png" alt="Add Custom Filters5" title="Add Custom Filters5" style="border: 1px solid gray; zoom:80%;"> 
-    
+    <img src="../images/add-custom-filters5.png" alt="Add Custom Filters5" title="Add Custom Filters5" style="border: 1px solid gray; zoom:80%;"> 
+        
 
 ## Manage Filters
 
