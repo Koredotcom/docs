@@ -41,7 +41,7 @@ Any node at any level starting with the 2nd is called a **_Leaf Term/Node_**.
 <li>The Knowledge Graph Engine does not consider any parent-child relation while evaluating the questions for a match.</li>
 <li>The hierarchy does not influence the FAQ matching process since all the nodes are considered the same way, irrespective of their position.</li>
 
-<img src="../../automation/use-cases/images/leaf-term-node.png" alt="leaf term" title="leaf term" style="border: 1px solid gray; zoom:75%;"></ul></p>
+<img src="../images/leaf-term-node.png" alt="leaf term" title="leaf term" style="border: 1px solid gray; zoom:75%;"></ul></p>
 </div>
 
 ### Term/Node Types
@@ -52,7 +52,7 @@ Functionally, there are three types of Terms/Nodes.
 * **Mandatory**: When you mark a term as _Mandatory_, paths associated with it are shortlisted for ranking only if the user’s utterance includes the mandatory term or its synonyms.
 * **Organizer**: This term type can be marked as part of the Knowledge Graph to organize the ontology and help qualify FAQs even when they don’t contain the specific terms.
 
-    <img src="../../automation/use-cases/images/organizer-term.png" alt="organizer term" title="organizer term" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/organizer-term.png" alt="organizer term" title="organizer term" style="border: 1px solid gray; zoom:75%;">
 
 ## Tags
 
@@ -88,11 +88,11 @@ A VA can respond to a given question with an FAQ or the execution of a Dialog Ta
 
 * **FAQ**: The question-answer pairs must be added to relevant nodes in your ontology. A maximum of 50k FAQs is permissible. A question is asked differently by different users, and to support this, you must associate multiple alternate forms for each question. Preceding an alternate question with || will allow you to enter patterns for FAQs (after the v.7.2 release).
 
-    <img src="../../automation/use-cases/images/faq-intent-bot-response.png" alt="faq intent and bot response" title="faq intent and bot response" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/faq-intent-bot-response.png" alt="faq intent and bot response" title="faq intent and bot response" style="border: 1px solid gray; zoom:75%;">
 
 * **Task**: Linking a Dialog task to a KG Intent helps leverage the capabilities of the Knowledge Graph and Dialog tasks to handle FAQs that involve complex conversations.
 
-    <img src="../../automation/use-cases/images/link-dialog-task-to-kg-intent.png" alt="link dialog task to kg intent" title="link dialog task to kg intent" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/link-dialog-task-to-kg-intent.png" alt="link dialog task to kg intent" title="link dialog task to kg intent" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Important</p>
