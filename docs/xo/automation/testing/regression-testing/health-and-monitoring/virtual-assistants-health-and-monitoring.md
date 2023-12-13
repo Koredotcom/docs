@@ -156,11 +156,11 @@ Click the **expansion arrow** icon under **Entity** to view the entity order exp
 
 The **NLP Analysis** section displays the detailed view of the historic analysis generated at the time of the test case execution for failed and successful test cases. For the selected intent type, this section gives an overview of the intents that are qualified (the definitive and probable matches) and disqualified to serve as crucial information for users trying to decode the reason for failed test cases. The following details are displayed as a graphical representation in this section:
 
-* [Traits](https://developer.kore.ai/docs/bots/nlp/traits/#Trait_Definition){:target="_blank"} (if applicable)
+* [Traits](../../../../natural-language/training/traits){:target="_blank"} (if applicable)
 * [Machine Learning (ML) engine](../../../testing-your-bot-with-nlp/#ml-model){:target="_blank"}
 * [Fundamental Meaning (FM) engine](../../../testing-your-bot-with-nlp/#fm-model){:target="_blank"}
 * [Knowledge Graph (KG) engine](../../../testing-your-bot-with-nlp/#knowledge-graph){:target="_blank"}
-* [Trait Rule](https://developer.kore.ai/docs/bots/nlp/traits/#Trait_Association_Rules){:target="_blank"} (if applicable)
+* [Trait Rule](../../../../natural-language/training/traits/#trait-association-rules){:target="_blank"} (if applicable)
 * [Ranking and Resolver](../../../testing-your-bot-with-nlp/#ranking-and-resolver)
 
 This is different from analyzing the test results under **Utterance Testing** where the current analysis information is displayed based on the changes to the trained data. [Learn more](../../../testing-your-bot-with-nlp/#analyzing-the-test-results){:target="_blank"}.
@@ -444,7 +444,7 @@ The **FAQ Summary** section displays the [recommendation scores](#health-and-mon
 
 <img src="../images/hm-19.png" alt="Report" title="Report" style="border: 1px solid  gray; zoom:50%;"/>  
 
-**Knowledge Graph**: Clicking this button will take you to the **Knowledge Graph** section where you can perform [KG Analysis](../../../../use-cases/knowledge-ai/knowledge-graph-analysis){:target="_blank"}.  
+**Knowledge Graph**: Clicking this button will take you to the **Knowledge Graph** section where you can perform [KG Analysis](../../../../../answers/knowledge-ai/knowledge-graph-analysis){:target="_blank"}.  
 <img src="../images/hm-20.png" alt="Knowledge Graph button" title="Knowledge Graph button" style="border: 1px solid  gray; zoom:50%;"/>
 
 
