@@ -79,88 +79,86 @@ context.USdate=koreUtil.intl.DateTimeFormat('en-US').format(date);```
 
 **Output:**
 
-* For context.formattedNumberUK: *
-`123,456.789`
-* For context.USdate \
-`12/20/2012`
+*For context.formattedNumberUK:*
+```123,456.789```
+*For context.USdate*
+```12/20/2012```
 
 
 ### koreUtil.momenttz
 
 koreUtil.momenttz is a platform-offered JS library for the formatting of dates in any timezone and converting dates between timezones.
 
-**Usage Example: \
-`var jun = koreUtil.moment("2014-06-01T12:00:00Z"); \
-context.newyork= koreUtil.momenttz(jun,'America/New_York').format('ha z'); \
-context.tokyo = koreUtil.moment().tz('Asia/Tokyo').format('ha z'); \
-context.sydney = koreUtil.moment().tz('Australia/Sydney').format('ha z');`**
+**Usage Example:**
+```var jun = koreUtil.moment("2014-06-01T12:00:00Z"); 
+context.newyork= koreUtil.momenttz(jun,'America/New_York').format('ha z'); 
+context.tokyo = koreUtil.moment().tz('Asia/Tokyo').format('ha z'); 
+context.sydney = koreUtil.moment().tz('Australia/Sydney').format('ha z');```
 
 **Output:**
 
-
-
-* For context.newyork: \
-`5am PDT`
-* For context.tokyo: \
-`7pm JST`
-* For context.sydney: \
-`9pm AEDT`
+* For context.newyork: *
+```5am PDT```
+* For context.tokyo: *
+```7pm JST```
+* For context.sydney: *
+```9pm AEDT```
 
 
 ### koreUtil.xml2js
 
 koreUtil.xml2js is a Platform-offered JS library for parsing XML to JSON and vice versa.
 
-**Usage Example: \
-`var obj = {name: "John", Surname: "Doe", age: 23}; \
+**Usage Example:**
+```var obj = {name: "John", Surname: "Doe", age: 23}; \
 var builder = new koreUtil.xml2js.Builder(); \
-context.xml = builder.buildObject(obj);`**
+context.xml = builder.buildObject(obj);```
 
 **Output:**
 
-
-
-* For context.xml: \
-`John Doe 23`
+* For context.xml: *
+```John Doe 23```
 
 
 ### koreUtil.hash
 
 koreUtil.hash is a Platform offered JS library that supports SHA on JavaScript.
 
-**Usage Example: \
-`context.hashString= koreUtil.hash('sha256').update('42').digest('hex');`**
+**Usage Example:**
+```context.hashString= koreUtil.hash('sha256').update('42').digest('hex');
+```
 
 **Output:**
 
-
-
-* For context.hashString: \
-`73475cb40a568e8da8a045ced110137e159f890ac4da883b6b17dc651b3a8049`
+* For context.hashString:*
+```73475cb40a568e8da8a045ced110137e159f890ac4da883b6b17dc651b3a8049
+```
 
 
 ### koreUtil._
 
 koreUtil._ is a Platform-offered JS library that provides utility functions for common programming tasks.
 
-**Usage Example: \
-`context.chunkArray = koreUtil._.chunk(['a', 'b', 'c', 'd'], 2); \
-var users = [ \
-{ 'user': 'barney', 'age': 36, 'active': true }, \
-{ 'user': 'fred', 'age': 40, 'active': false } \
-]; \
-context.filterActive =koreUtil._.pluck(koreUtil._.filter(users, { 'age': 36, 'active': true }), 'user');`**
+**Usage Example:**
+```context.chunkArray = koreUtil._.chunk(['a', 'b', 'c', 'd'], 2); 
+var users = [ 
+{ 'user': 'barney', 'age': 36, 'active': true }, 
+{ 'user': 'fred', 'age': 40, 'active': false } 
+]; 
+context.filterActive =koreUtil._.pluck(koreUtil._.filter(users, { 'age': 36, 'active': true }), 'user');
+```
 
 **Output:**
 
 
 
-* For context.chunkArray: \
-`[["a","b"],["c","d"]]`
-* For context.filterActive: \
-`[ \
+* For context.chunkArray: *
+```[["a","b"],["c","d"]]```
+* For context.filterActive: *
+```[ \
 "barney" \
-]`
+]
+```
 
 
 ### koreUtil.getCurrentOptions
@@ -172,12 +170,13 @@ Following is the return format for each of the situations:
 
 
 
-* For the language selection standard response: \
-`{"list_of_languages": [`
-* `   {"title": "English","value": "English"},`
-* `   {"title": "Deutsche","value": "Deutsche"},`
-* `   {"title": "Español","value": "Español"}`
-* `]}`
+* For the language selection standard response: *
+```{"list_of_languages": [`
+      {"title": "English","value": "English"},
+      {"title": "Deutsche","value": "Deutsche"},`
+      {"title": "Español","value": "Español"}`
+]}
+```
 * For the language ambiguity standard response: \
 `{"current_language": "Español",`
 * `      "list_of_new_languages": [`

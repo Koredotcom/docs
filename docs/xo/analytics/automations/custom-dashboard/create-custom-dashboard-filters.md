@@ -17,6 +17,7 @@ To add one or more filters at the Custom Dashboard level, perform the following 
 
 1. Click the **Add Filter** button to go to the **Configuration** panel shown below.
     <img src="../images/add-custom-filters1.png" alt="Add Custom Filters1" title="Add Custom Filters1" style="border: 1px solid gray; zoom:80%;">
+    
     !!! note
 
         Tooltips are available for all the fields in the Add Custom Filter panel except the Preview Date. Using the Preview Date, you can select a date range to display the data.
@@ -64,7 +65,7 @@ To add one or more filters at the Custom Dashboard level, perform the following 
     !!! note
 
         The default filter is added at the dashboard level (highlighted in the screenshot) and you can select the value from the LoB drop-down to apply to all the widgets.
-        
+
     <img src="../images/add-custom-filters5.png" alt="Add Custom Filters5" title="Add Custom Filters5" style="border: 1px solid gray; zoom:80%;"> 
         
 
