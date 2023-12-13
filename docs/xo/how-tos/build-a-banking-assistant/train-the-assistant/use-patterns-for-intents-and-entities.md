@@ -165,7 +165,7 @@ For e.g., the pattern (buy ~number ticket) will match “buy 2 tickets for the s
    <td><b>word1 *n word2</b>
 
    </td>
-   <td>Exactly _n_ number of additional words between the specified words/phrases
+   <td>Exactly <b>n</b> number of additional words between the specified words/phrases
 
    </td>
    <td>
@@ -202,7 +202,7 @@ For e.g., the pattern (buy ~number ticket) will match “buy 2 tickets for the s
    <td><b>word1 *~n word2</b>
 
    </td>
-   <td>Up to _n_ number of additional words between the specified words/phrases.
+   <td>Up to <b>n</b> number of additional words between the specified words/phrases.
 
 !!!note
 
@@ -430,7 +430,7 @@ No space between !! and word/concept.
    <td><b>[ … ]</b>
 
    </td>
-   <td>Used to define a group of words/concepts and the match should be against exactly one of the group declared in [ ]._ Be aware that when a match is found the rest of the group is ignored, so order the words accordingly._
+   <td>Used to define a group of words/concepts and the match should be against exactly one of the group declared in [ ]. Be aware that when a match is found the rest of the group is ignored, so order the words accordingly.
 
 <b>Note</b>: The brackets should not be clubbed with the word, i.e. maintain a space between the parenthesis and the adjacent word.
 
@@ -508,7 +508,7 @@ No space between !! and word/concept.
    </td>
    <td>Contains a sub-pattern i.e. when a pattern or part of a pattern is enclosed in these parentheses, we treat it as a pattern unlike [ ] and { }.
 
-This is the default setting i.e. when a pattern _word1 word2_ it is treated as _( word1 word2 )_
+This is the default setting i.e. when a pattern _word1 word2_ it is treated as <i>( word1 word2 )</i>
 
 Commonly used explicitly to define sub pattern inside [ ] or { }
 
@@ -707,7 +707,7 @@ For example, _(Cancel Order)_ matches _Cancel my phone order_ but doesn’t matc
 * User utterance: _Planning a trip to California get me the forecast_
     * Will not match _Get current weather_
     * Will match _Get 3-day weather forecast 
-_Note that the _!word_ means _not after this point_. 
+Note that the _!word_ means _not after this point_.
 
 So (!forecast the weather) and (get the weather !forecast) are different. The utterance _get the forecast for the weather_ matches the second but not the first.
 
@@ -795,7 +795,7 @@ This can be for patterns using a group of words or concepts of which at least on
 * **Pattern for FromAccount entity**: “_[using from] * to” and “to [using from] *_” .
 * **User Utterance**: _Transfer funds to ABC123 from my account._
 or _Transfer funds using my account to ABC123._
-**Entity Extracted**_: _ToAccount = ABC123_ and _FromAccount = my account_.
+* **Entity Extracted**: _ToAccount = ABC123_ and _FromAccount = my account_.
 * **User Utterance not resulting in entity extraction**: “transfer funds for _ABC123 using my account”_.
 
 ### Pattern 5: ~CustomConcept *
@@ -808,7 +808,7 @@ _Custom Concept_: _~in – (using) (from)_
 * **User Utterance**: _Transfer funds to ABC123 using my account._
 or _Transfer funds from my account to ABC123._ 
 * **Entity Extracted**: _ToAccount = ABC123_ and _FromAccount = my account_.
-* **User Utterance not resulting in entity extraction**_: “_transfer funds to ABC123 <span style="text-decoration:underline;">of</span> my account_”
+* **User Utterance not resulting in entity extraction**: “_transfer funds to ABC123 <span style="text-decoration:underline;">of</span> my account_”
 
 ### Pattern 6: ~intent
 
