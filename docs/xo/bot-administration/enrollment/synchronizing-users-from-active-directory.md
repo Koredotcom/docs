@@ -9,7 +9,8 @@ As a Bots Admin or admin user, you can configure Kore.ai to synchronize with you
 * Define organizational units to import from Active Directory
 * Set up an automated schedule for synchronization.
 
-Kore.ai can synchronize with your LDAP Active Directory to match the member information from your organization to include, for example, user profile data such as name, department, title, telephone number, location, and user status in the organization. \
+Kore.ai can synchronize with your LDAP Active Directory to match the member information from your organization to include, for example, user profile data such as name, department, title, telephone number, location, and user status in the organization.  
+
 If a Kore.ai user leaves your company and is deactivated in Active Directory, Kore.ai can automatically deactivate the Kore.ai account during the next scheduled Active Directory synchronization. Your company’s Active Directory is never modified during synchronization.
 
 !!! Note

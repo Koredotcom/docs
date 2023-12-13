@@ -106,7 +106,7 @@ You may need to modify the members of a group. This topic describes how to modif
 
 ## Deletion
 
-You may no longer need a group of users in your account. You must remove all users from a group before you can delete a group. Complete the steps in the following procedure to delete a group. Instead of deleting a group, you can also modify the common settings as well as the membership of an existing group. For more information, see [Modify an Existing User Group](#modify-an-existing-user-group).
+You may no longer need a group of users in your account. You must remove all users from a group before you can delete a group. Complete the steps in the following procedure to delete a group. Instead of deleting a group, you can also modify the common settings as well as the membership of an existing group. For more information, see [Modify an Existing User Group](#modification).
 
 1. In the **User Management** module, on the **Groups** page, in the **Group Name** column, select the name of one or more groups to delete.
 2. On the **Action** bar, click <img src="../images/delete-button.png">.
