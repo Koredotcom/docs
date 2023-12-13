@@ -243,36 +243,37 @@ From the assigned bots for any given data table/table view, you can query and ma
 
 The response from this service call would be:  
   
-  ```
-    "CustomerView": {
-        "response": {
-            "body": {
-                "hasMore": true,
-                "total": 4,
-                "metaInfo": [
-                {
-                    "name": "type",
-                    "type": "string"
-                },
-                {
-                    "name": "address",
-                    "type": "string"
-                }
-                ],
-                "queryResult": [
-                {
-                    "type": "Gold",
-                    "address": "New York"
-                },
-                {
-                    "type": "Gold",
-                    "address": "Chicago"
-                },
-                {
-                    "type": "Gold",
-                    "address": "Chicago"
-                }
-                ]
-            }
-        }  
+```
+"CustomerView": {
+  "response": {
+    "body": {
+      "hasMore": true,
+      "total": 4,
+      "metaInfo": [
+      {
+          "name": "type",
+          "type": "string"
+      },
+      {
+          "name": "address",
+          "type": "string"
+      }
+      ],
+      "queryResult": [
+      {
+          "type": "Gold",
+          "address": "New York"
+      },
+      {
+          "type": "Gold",
+          "address": "Chicago"
+      },
+      {
+          "type": "Gold",
+          "address": "Chicago"
+      }
+      ]
     }
+  }  
+}
+```

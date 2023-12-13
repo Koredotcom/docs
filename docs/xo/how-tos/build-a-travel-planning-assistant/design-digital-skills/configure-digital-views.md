@@ -4,7 +4,7 @@ In this How-To, we will explore a scenario in a Travel Planning Assistant, where
 
 We will also see how the Panel can be hosted on a Web/Mobile Client using the Widget SDK.
 
-For details on what Digital Views are and how they are implemented in the Kore.ai XO Platform, click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/digital-views/" target="_blank">here</a>.
+For details on what Digital Views are and how they are implemented in the XO Platform, click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/digital-views/" target="_blank">here</a>.
 
 ## Problem Statement
 
