@@ -21,7 +21,7 @@ If you have built your Ontology-based graph before this release, you can migrate
 
 You can select your desired Knowledge Graph Type by going to **Build > Natural Language > Thresholds and Configurations > Knowledge Graph**.
 
-<img src="../../automation/use-cases/images/switch-knowledge-graph.gif" alt="switch knowledge graph" title="switch knowledge graph" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/switch-knowledge-graph.gif" alt="switch knowledge graph" title="switch knowledge graph" style="border: 1px solid gray; zoom:75%;">
 
 Changing Knowledge Graph Types is captured in the Change Logs, which you can access by going to **Deploy > Change Logs**.
 
