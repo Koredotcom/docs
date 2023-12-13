@@ -64,13 +64,13 @@ The Knowledge Graph allows you to add [Synonyms](https://developer.kore.ai/docs/
 
 For example, the reservation node in our previously-mentioned Travel Assistant may have the following synonyms added to it: booking, order, purchase, etc. 
 
-## Synonym Types
+### Synonym Types
 
 When you add a synonym for a term or a tag in the Knowledge Graph, you can add it as a local or global synonym. Local synonyms (or **_Path Level Synonyms_**) apply to the term only in that particular path, whereas global synonyms (or **_Knowledge Graph Synonyms_**) apply to the term even if it appears on any other path in the ontology.
 
 After v. 7.2 of the XO Platform, you can also use **_Bot Synonyms_** inside the Knowledge Graph engine for path qualification and question matching. With this setting, you need not recreate the same synonyms in Bot Synonyms and KG Synonyms.
 
-### Traits
+## Traits
 
 A trait is a collection of typical end-user utterances that define the nature of a question. [Learn more](https://developer.kore.ai/docs/bots/nlp/traits/).
 
@@ -82,7 +82,7 @@ A trait is applied to multiple terms across your Bot Ontology.
 <li>If the utterance is present in any other node to which the trait is not applied, the node is ignored.</li></ul></p>
 </div>
 
-### Intents
+## Intents
 
 A VA can respond to a given question with an FAQ or the execution of a Dialog Task.
 
