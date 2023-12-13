@@ -17,7 +17,7 @@ To add one or more filters at the Custom Dashboard level, perform the following 
 
 1. Click the **Add Filter** button to go to the **Configuration** panel shown below.
     <img src="../images/add-custom-filters1.png" alt="Add Custom Filters1" title="Add Custom Filters1" style="border: 1px solid gray; zoom:80%;">
-    
+
     !!! note
 
         Tooltips are available for all the fields in the Add Custom Filter panel except the Preview Date. Using the Preview Date, you can select a date range to display the data.
@@ -99,7 +99,6 @@ You can perform the following steps to update the filters of the Custom Dashboar
 4. Edit the details as per the requirement, in the **Configuration** panel.
 5. Click the **Preview** button. The **Preview Filter** pop-up is displayed as shown in the preceding screenshot. Select a value from the drop-down as per the requirement.
 6. Click the **Update filter** button to update the details.
-
 <img src="../images/update-filter4.png" alt="Update Filter4" title="Update Filter4" style="border: 1px solid gray; zoom:80%;">    
 
 
@@ -113,12 +112,10 @@ You can perform the following steps to delete the filters of the Custom Dashboar
 
 
 1. In the **Update Custom Filter** panel, select the filter to be deleted from the **Choose Filter** drop-down.
-
 <img src="../images/delete-filter1.png" alt="Delete Filter1" title="Delete Filter1" style="border: 1px solid gray; zoom:80%;"> 
 
 
 2. Click the button **Delete** to delete the selected filter.
-
 <img src="../images/delete-filter2.png" alt="Delete Filter2" title="Delete Filter2" style="border: 1px solid gray; zoom:80%;">
 
 

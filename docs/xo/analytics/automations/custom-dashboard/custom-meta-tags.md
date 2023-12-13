@@ -18,7 +18,7 @@ You can define these tags at three levels:
 
 
 * **User Level**: These tags can be added to the user’s profile information to capture user information. For example, to track conversations with a premium customer you will define a user-level tag with the user name or some qualifier as the value.
-* **Message Level**: These tags can be added to the message of the current node. If the current node is not associated with a message, then the tag gets added to the immediately previous node that has a message associated with it. From the above example, to track bookings to a specific city _Chicago_, you would be defining a Message Level tag. \
+* **Message Level**: These tags can be added to the message of the current node. If the current node is not associated with a message, then the tag gets added to the immediately previous node that has a message associated with it. From the above example, to track bookings to a specific city _Chicago_, you would be defining a Message Level tag.
 The platform will roll up these message-level tags to the task level. If a task ends up as a ‘Success/Failed Task’, then all the ‘message level’ tags emitted anywhere during the task execution will be associated with the Success/Failed Task event. You can filter Success Tasks as well as Failed Tasks using the message level tags emitted anywhere during the task execution
 * **Session Level**: These tags can be added to the current session of the user. These can be used to track the conversation sessions from a specific time frame say holiday season or a geographic domain.
 

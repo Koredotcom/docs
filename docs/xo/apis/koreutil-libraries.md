@@ -14,17 +14,17 @@ Below is the list of koreUtil libraries provided by the Platform:
 
 
 
-* [koreUtil.rrule](../koreutil-libraries#koreUtilrrule)
-* [koreUtil.moment](../koreutil-libraries#koreUtilmoment)
-* [koreUtil.intl](../koreutil-libraries#koreUtilintl)
-* [koreUtil.momenttz](../koreutil-libraries#koreUtilmomenttz)
-* [koreUtil.xml2js](../koreutil-libraries#koreUtilxml2js)
-* [koreUtil.hash](../koreutil-libraries#koreUtilhash)
-* [koreUtil._](../koreutil-libraries#koreUtil)
-* [koreUtil.getCurrentOptions](../koreutil-libraries#koreUtilgetCurrentOptions)
-* [koreUtil.getAmbiguousIntents](../koreutil-libraries#koreUtilgetAmbiguousIntents)
-* [koreUtil.getSessionId](../koreutil-libraries#koreUtilgetSessionId)
-* [koreUtil.closeConversationSession](../koreutil-libraries#koreUtilclose)
+* [koreUtil.rrule](../koreutil-libraries#koreutilrrule)
+* [koreUtil.moment](../koreutil-libraries#koreutilmoment)
+* [koreUtil.intl](../koreutil-libraries#koreutilintl)
+* [koreUtil.momenttz](../koreutil-libraries#koreutilmomenttz)
+* [koreUtil.xml2js](../koreutil-libraries#koreutilxml2js)
+* [koreUtil.hash](../koreutil-libraries#koreutilhash)
+* [koreUtil._](../koreutil-libraries#koreutil_)
+* [koreUtil.getCurrentOptions](../koreutil-libraries#koreutilgetcurrentoptions)
+* [koreUtil.getAmbiguousIntents](../koreutil-libraries#koreutilgetambiguousintents)
+* [koreUtil.getSessionId](../koreutil-libraries#koreutilgetsessionid)
+* [koreUtil.closeConversationSession](../koreutil-libraries#koreutilclose)
 * [koreUtil.autoTranslate](../koreutil-libraries#koreautotranslate)
 
 
