@@ -11,7 +11,7 @@ Steps to create a dialog task using ServiceNow action templates:
 3. On the Dialog Task pop-up, under the **Integration**, select the **ServiceNow** option to view the action templates.  
 <img src="../images/servicenow-tem-img2.png" alt="Integration - Servicenow" title="Integration - Servicenow" style="border: 1px solid gray;zoom:50%;"/>
 
-**Note**: If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](https://developer.kore.ai/integrations/actions/){:target="_blank"}.  
+**Note**: If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
 <img src="../images/servicenow-tem-img3.png" alt="Explore integrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
