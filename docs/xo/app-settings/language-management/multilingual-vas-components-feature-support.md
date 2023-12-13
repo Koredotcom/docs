@@ -42,7 +42,7 @@ JSON object consisting of the following translatable elements
    </td>
    <td>Object
    </td>
-   <td>Arrays of important words in the task names and their corresponding synonyms. Enter translation of the words as well as their synonyms. Refer to <a href="https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Synonyms" target="_blank">Managing Synonyms</a> to learn more about bot synonyms.
+   <td>Arrays of important words in the task names and their corresponding synonyms. Enter translation of the words as well as their synonyms. Refer to <a href="../../../automation/natural-language/training/fundamental-meaning/#manage-synonyms" target="_blank">Managing Synonyms</a> to learn more about bot synonyms.
    </td>
   </tr>
   <tr>
@@ -57,7 +57,7 @@ JSON object consisting of the following translatable elements
 
 ## Dialog Tasks
 
-JSON object consisting of the following translatable components of your VA’s [Dialog Tasks](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/dialog-tasks/){:target="_blank"}.
+JSON object consisting of the following translatable components of your VA’s [Dialog Tasks](../../../automation/use-cases/dialogs/dialog-tasks-overview){:target="_blank"}.
 
 <table border="1">
   <tr>
@@ -130,7 +130,7 @@ JSON object consisting of the following translatable components related to the N
    </td>
    <td>Object
    </td>
-   <td>Synonyms for the words in the entity node names. Refer to <a href="https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Synonyms" target="_blank">Managing Synonyms</a> to learn more.
+   <td>Synonyms for the words in the entity node names. Refer to <a href="../../../automation/natural-language/training/fundamental-meaning/#manage-synonyms" target="_blank">Managing Synonyms</a> to learn more.
    </td>
   </tr>
   <tr>
@@ -138,7 +138,7 @@ JSON object consisting of the following translatable components related to the N
    </td>
    <td>Object
    </td>
-   <td>Patterns for the User Intent and Entity nodes in the dialog task. Refer to <a href="https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Patterns_and_Rules" target="_blank">Managing Patterns</a> to learn more.
+   <td>Patterns for the User Intent and Entity nodes in the dialog task. Refer to <a href="../../../automation/natural-language/training/fundamental-meaning/#manage-patterns-and-rules" target="_blank">Managing Patterns</a> to learn more.
    </td>
   </tr>
 </table>
@@ -212,7 +212,7 @@ JSON object consisting of the following translatable components of your assistan
    </td>
    <td>Array
    </td>
-   <td>Array of patterns related to the alert task’s name. Replace the pattern text with the translated text. Refer to <a href="https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Patterns_and_Rules" target="_blank">Managing Patterns</a> to learn more.
+   <td>Array of patterns related to the alert task’s name. Replace the pattern text with the translated text. Refer to <a href="../../../automation/natural-language/training/fundamental-meaning/#manage-patterns-and-rules" target="_blank">Managing Patterns</a> to learn more.
    </td>
   </tr>
   <tr>
@@ -220,7 +220,7 @@ JSON object consisting of the following translatable components of your assistan
    </td>
    <td>Object
    </td>
-   <td>Arrays consisting of synonyms for each task field. Replace the field name and the synonyms with the translated text. Refer to <a href="https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Synonyms" target="_blank">Managing Synonyms</a> to learn more.
+   <td>Arrays consisting of synonyms for each task field. Replace the field name and the synonyms with the translated text. Refer to <a href="../../../automation/natural-language/training/fundamental-meaning/#manage-synonyms" target="_blank">Managing Synonyms</a> to learn more.
    </td>
   </tr>
   <tr>
@@ -228,7 +228,7 @@ JSON object consisting of the following translatable components of your assistan
    </td>
    <td>Object
    </td>
-   <td>Arrays consisting of patterns for each task field. Replace the pattern text with the translated text. Refer to <a href="https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Patterns_and_Rules" target="_blank">Managing Patterns</a> to learn more.
+   <td>Arrays consisting of patterns for each task field. Replace the pattern text with the translated text. Refer to <a href="../../../automation/natural-language/training/fundamental-meaning/#manage-patterns-and-rules" target="_blank">Managing Patterns</a> to learn more.
    </td>
   </tr>
   <tr>
