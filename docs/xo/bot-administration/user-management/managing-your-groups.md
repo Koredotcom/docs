@@ -5,7 +5,7 @@ On the **Groups** page in the **User Management** module, you can create and man
 <img src="../images/bac-groups.png" alt="User Management - Groups" title="User Management - Groups" style="border: 1px solid gray;zoom:50%;"/>
 
 
-# Details
+## Details
 
 To sort the list of column values, click the **Arrow Up** <img src="../images/up-arrow.png"> icon or **Arrow Down** <img src="../images/down-arrow.png"> icon to the right of a column name. The following list describes the columns displayed in the Groups listing.
 
@@ -54,7 +54,7 @@ To sort the list of column values, click the **Arrow Up** <img src="../images/up
 
 
 
-## Using the Search Field
+### Using the Search Field
 
 The list of entries in an admin console table can be very large depending on the size of your company. To find one or more specific users or groups, in the **Search** field, enter at least three characters to begin find-as-you-type.
 
@@ -65,7 +65,7 @@ The list of entries in an admin console table can be very large depending on the
 To view all entries, clear the search field, and then press the **Enter** key.
 
 
-# Creation
+## Creation
 
 You may want to create one or more groups of users in your account for users with, for example, a related interest, department, or location. Groups created by the admin are not visible to the user and are for administrative purposes only. This topic describes how to define a new group and add users, or existing groups of users to that group.
 
@@ -89,7 +89,7 @@ You may want to create one or more groups of users in your account for users wit
 7. The _Group Updated_ message is displayed at the top of the page.
 
 
-# Modification
+## Modification
 
 You may need to modify the members of a group. This topic describes how to modify the common group properties and the membership of an existing group.
 
@@ -104,9 +104,9 @@ You may need to modify the members of a group. This topic describes how to modif
 <img src="../images/bots-admin-user-mgmt-groups-edit.png" alt="Modify group" title="Modify group" style="border: 1px solid gray;zoom:50%;"/>
 
 
-# Deletion
+## Deletion
 
-You may no longer need a group of users in your account. You must remove all users from a group before you can delete a group. Complete the steps in the following procedure to delete a group. Instead of deleting a group, you can also modify the common settings as well as the membership of an existing group. For more information, see [Modify an Existing User Group](#modify-an-existing-user-group).
+You may no longer need a group of users in your account. You must remove all users from a group before you can delete a group. Complete the steps in the following procedure to delete a group. Instead of deleting a group, you can also modify the common settings as well as the membership of an existing group. For more information, see [Modify an Existing User Group](#modification).
 
 1. In the **User Management** module, on the **Groups** page, in the **Group Name** column, select the name of one or more groups to delete.
 2. On the **Action** bar, click <img src="../images/delete-button.png">.

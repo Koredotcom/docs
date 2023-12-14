@@ -26,8 +26,8 @@ Custom Dashboards are available along with the other out-of-the-box dashboards i
 
 
 * Each of these dashboards can have one or more **widgets**.
-* Each widget in the dashboard must be associated with a dataset
-* You need to define a query to extract the required data to be displayed in a widget
+* Each widget in the dashboard must be associated with a dataset.
+* You need to define a query to extract the required data to be displayed in a widget.
 
 
 ## Add Custom Dashboards
@@ -83,7 +83,7 @@ The platform allows you to choose between Query Mode and Advanced Mode while wri
 **Select:** fields to be depicted by the Widget.
 
 * The fields differ for each selected dataset. See the table for more details. For example to list the success & failed intents, _metricType_:
-* You can apply on these fields the aggregation functions like “_min”_, “_max”_, “_sum”_, “_count”_, or “_avg”_“. For example, to count the total triggered intents, _count(metricType)_, you can give a display name as an alias – _count(metricType) as total._
+* You can apply on these fields the aggregation functions like “_min”_, “_max”_, “_sum”_, “_count”_, or “_avg”_. For example, to count the total triggered intents, _count(metricType)_, you can give a display name as an alias – _count(metricType) as total._
 
 * **Aggregate Functions:** While defining a query, you can click the drop-down provided for each field in **Select**, to access the relevant aggregate functions. On selecting the appropriate aggregate function, you can enter the filter criteria.
 
@@ -168,11 +168,11 @@ The Distinct function is used to obtain the number of distinct values across the
 
 Apart from these if you have defined any Custom/Meta Tags for your VA, you can use them under the appropriate heading with the following notation: `userTag.tagname = value`. If you declared a Message level custom tag, select the Message Dataset and enter `messageTag.TagName`. This would result in an empty dataset, and as a result the display would be empty.
 
-**Filter By** clause is used to extract only those records that fulfill a specified condition. You can apply the following operators on these fields: “_=”_, “_>=”_, “_&lt;=”_, “_>”_, “_&lt;“, “in”, “not in”_. \
-For example, to obtain the count of a specific FAQ, the following details are entered in the query setup. \
- \
- \
-<code>taskName = 'What account privileges does an authorized user have?' <strong>and </strong>metricType = successtasks<em>. \
+**Filter By** clause is used to extract only those records that fulfill a specified condition. You can apply the following operators on these fields: “_=”_, “_>=”_, “_&lt;=”_, “_>”_, “_&lt;“, “in”, “not in”_.
+For example, to obtain the count of a specific FAQ, the following details are entered in the query setup. 
+
+<code>taskName = 'What account privileges does an authorized user have?' <strong>and </strong>metricType = successtasks<em>.
+
 </em></code>While conjugating multiple conditions, they would be evaluated left to right, and this ordering cannot be changed using parentheses ()
 
 !!! note
@@ -182,7 +182,7 @@ For example, to obtain the count of a specific FAQ, the following details are en
 
 **Group By** fields for applying the aggregating functions. For example, you can display the count of all messages, grouping by the userId. To understand the Group By usage, see the examples at Create Custom Dashboard.
 
-**Having** clause is used to filter the results with aggregate functions as the ‘Where’ keyword cannot be used here. For example, _count(messageid)>10_. The clause works only with the ‘Group By’ function. \
+**Having** clause is used to filter the results with aggregate functions as the ‘Where’ keyword cannot be used here. For example, _count(messageid)>10_. The clause works only with the ‘Group By’ function.
 To understand how the Having clause works, see Filter the Messages using the Having Clause.
 
 !!! note
