@@ -1,29 +1,13 @@
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 7.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-<a href="#gdcalert6">alert6</a>
-<a href="#gdcalert7">alert7</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
 # **Using XO Platform APIs**
 
-The XO Platform allows you to develop Virtual Assistants using secured APIs. All key developer activities like creation, import and export, training, and publishing are available using these APIs. Key account management activities like managing XO Platform access, managing admin, and roles can also be performed via secured public APIs. For a complete list of APIs and usage instructions, [refer here](https://developer.kore.ai/docs/bots/api-guide/api-list/).
+The XO Platform allows you to develop Virtual Assistants using secured APIs. All key developer activities like creation, import and export, training, and publishing are available using these APIs. Key account management activities like managing XO Platform access, managing admin, and roles can also be performed via secured public APIs. For a complete list of APIs and usage instructions, [refer here](../api-list).
 
 Authentication of the API requests involves the following two steps:
 
 
-
 1. **Create an App**: An App helps you create secure authentication credentials to access the XO Platform features. You can associate the app for enabling BotKit, APIs, SDKs, and Channels.
 2. **Assign API Scopes to an App**: Assigning API scopes to the app allows the app to access the Platform APIs securely:
-    * **XO Platform API Scopes**: Developers can assign appropriate API Scopes to the app to access respective Platform features for a virtual assistant.
+    * **Unified XO Platform API Scopes**: Developers can assign appropriate API Scopes to the app to access respective Platform features for a virtual assistant.
     * **Bot Admin Console API Scopes**: Account administrators can assign API Scopes to the app to access respective features in any virtual assistants built into their accounts on the Platform.
 
 
@@ -33,22 +17,14 @@ Steps to create a Client App from the XO Platform:
 
 
 
-1. Go to **Deploy** > **APIs & Extensions** > **Manage Apps**. \
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
+1. Go to **App Settings** > **Dev Tools** > **Web/Mobile SDK**.
+![Create APP](../images/devtoolshome.png "create app")
 
 2. If you are creating an app for the first-time, click the **Create App** button. Otherwise, click the **New App** button.
 3. On the Create Client App page, enter a **name** for the app.
 4. Select **Enforce JTI**, **JWE**, or both as per your requirements to secure the connections with the Platform:
     * **Enforce JTI (JWT ID) Claim** – Once enabled, the Platform accepts the requests only from calls with the JTI Claim in the requests and those without JTI Claim are rejected.
     * **Enforce JWE Encryption** (Generating JWT token) – To access the XO Platform’s public APIs, the application making the API request requires authentication. Kore.ai uses the JWT (JSON Web Token) mechanism to handle the authentication. For a quick overview of the JWT token, read [Introduction to JWT tokens](https://jwt.io/introduction/). \
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image2.png "image_tooltip")
@@ -73,7 +49,6 @@ Steps to create a Client App from the Bot Admin Console:
 4. Click the **Manage Apps** link to create a new app. \
 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image3.png "image_tooltip")
@@ -101,7 +76,6 @@ You can define apps to securely access the data from data tables and data views.
 
 
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image4.png "image_tooltip")
@@ -122,7 +96,6 @@ Steps to associate API Scopes to a Client App from the XO Platform:
 1. Go to **Deploy** > **API & EXTENSIONs** > **API Scopes** and click **Create API Scope**. \
 
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image5.png "image_tooltip")
@@ -131,7 +104,6 @@ Steps to associate API Scopes to a Client App from the XO Platform:
 3. The app’s **Client ID** and **Client Secret** are displayed on the screen. Copy these values. \
 
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image6.png "image_tooltip")
@@ -156,7 +128,6 @@ Steps to associate API Scopes to a Client App from the Bot Admin Console:
 8. Click **Save**. The app and associated scopes are listed on the API Scopes page. \
 
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image7.png "image_tooltip")
