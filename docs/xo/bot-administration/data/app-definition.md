@@ -8,6 +8,6 @@ You can define apps to securely access the data from data tables and data views.
 App definition includes
 
 1. entering the **App Name**
-2. enforcing JTI/JWE as per your requirements. ([refer here for details](https://developer.kore.ai/docs/bots/api-guide/apis/){:target="_blank"})
+2. enforcing JTI/JWE as per your requirements. ([refer here for details](../../../apis/api-introduction){:target="_blank"})
 
 <img src="../images/data-apps-def-img1.png" alt="App definition" title="App definition" style="border: 1px solid gray;zoom:80%;"/>
