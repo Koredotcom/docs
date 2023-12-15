@@ -23,8 +23,8 @@ Apart from performing business functionality, our VA would also act as a proxy b
 3. Download and Install the Node.js (version 10 or above). The BotKit SDK requires `node.js` to run on the same server where the SDK is installed.
     * Go to `https://nodejs.org/en/download/` and select your OS as a `.pkg` file type for Mac and `.msi` file type for Windows.
     * In a Terminal window, run the `node -v` command to verify installation and version, for example, v6.10.2.
-4. A test callback server application. We will be using NGROK from <a href="https://dl.equinox.io/ngrok/ngrok/stable" target="_blank">https://dl.equinox.io/ngrok/ngrok/stable</a> to simulate the callback server application. Following are the steps to install NGROK:
-    * Open <a href="https://dl.equinox.io/ngrok/ngrok/stable" target="_blank">https://dl.equinox.io/ngrok/ngrok/stable</a>.
+4. A test callback server application. We will be using NGROK from <a href="https://dl.equinox.io/ngrok/ngrok/stable" target="_blank">here</a> to simulate the callback server application. Following are the steps to install NGROK:
+    * Open this <a href="https://dl.equinox.io/ngrok/ngrok/stable" target="_blank">link</a>.
     * Download and install the ngrok file for your operating system.
         * **On Windows:**
             * Download the zip file for your Windows machine 32-bit or 64-bit.
@@ -40,10 +40,10 @@ Apart from performing business functionality, our VA would also act as a proxy b
 
 ## Design and Configuration
 
-1. Open the Kore.ai XO Platform – <a href="https://bots.kore.ai/botbuilder/" target="_blank">here</a>.
+1. Open the <a href="https://bots.kore.ai/botbuilder/" target="_blank">XO Platform</a>.
 2. Select the VA for which Agent Transfer needs to be configured.
 3. Open or create a dialog task (_Support Call Back)_ and add an **Agent transfer** node.
-<img src="../deploy-the-assistant/images/agent-transfer-node.png" alt="agent transfer node" title="agent transfer node" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/agent-transfer-node.png" alt="agent transfer node" title="agent transfer node" style="border: 1px solid gray; zoom:75%;">
 
 4. Enter a _Name (LiveAgent)_ and _Description_ and **Save**.
 5. You will see a message ‘_SDK is not currently configured/Subscribed. Please go to API Extensions to configure the SDK_’. For now ignore this message as we will be showing how to configure SDK, later in this article.
@@ -53,7 +53,7 @@ Apart from performing business functionality, our VA would also act as a proxy b
 9. Enter the Callback URL of your application, to be invoked by BotKIt SDK events. Since we are using NGROK, we will show how to obtain the callback URL:
     * In a **Terminal** Window, start _ngrok_ to monitor port 8003 using the following command: `ngrok http 8003`.
     * Copy ngrok forwarding URL. It will be in the format mentioned <a href="http://xxxxxxaa.ngrok.io/" target="_blank">here</a>.
-    <img src="../deploy-the-assistant/images/ngrok-dorwarding-url.png" alt="ngrok forwarding url" title="ngrok forwarding url" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/ngrok-dorwarding-url.png" alt="ngrok forwarding url" title="ngrok forwarding url" style="border: 1px solid gray; zoom:75%;">
     
     Use this forwarding URL as the call back URL and save. 
 
@@ -71,20 +71,20 @@ Apart from performing business functionality, our VA would also act as a proxy b
     <li>Give the respective botId and botName of your VA, which you have copied earlier.</li>
     <li>This JS file contains 3 API’s of Kore – Initialization, Send Message, Get Message. If required, any new API’s written for human agent transfer should be put in here.    
     Example: If closing connection is required, then close connection api written needs to go into <code>livechatapi.js</code></li>
-        <img src="../deploy-the-assistant/images/js-file-apis.png" alt="js file apis" title="js file apis" style="border: 1px solid gray; zoom:75%;">
+        <img src="../images/js-file-apis.png" alt="js file apis" title="js file apis" style="border: 1px solid gray; zoom:75%;">
     <li>Edit <code>config.json.</code></li>
         <ul><li>Client ID, Client Secret key, respective server ports running and liveagent license of the third-party server goes here.</li>
         <li>Client Id, Client Secret can be copied from Events and Extensions – Agent Transfer.</li>
         <li><code>ngrok</code> forwarding url can be copied from ngrok running instance. It is the call back url. This should be the URL entry.</li>
         <li><code>Liveagentlicense</code> is the code given in the chatlink of livechat.</li>
-        <img src="../deploy-the-assistant/images/live-agent-license.png" alt="live agent license" title="live agent license" style="border: 1px solid gray; zoom:75%;"></ul>
+        <img src="../images/live-agent-license.png" alt="live agent license" title="live agent license" style="border: 1px solid gray; zoom:75%;"></ul>
     <li>Edit <code>LiveChat.js</code></li>
         <ul><li>Give the respective botId and botName, which you have copied earlier and save.</li>
-        <img src="../deploy-the-assistant/images/give-bot-id-and-name.png" alt="give bot id and name" title="give bot id and name" style="border: 1px solid gray; zoom:75%;"></ul>
+        <img src="../images/give-bot-id-and-name.png" alt="give bot id and name" title="give bot id and name" style="border: 1px solid gray; zoom:75%;"></ul>
     <li>Edit <code>app.js</code></li>
         <ul><li>Add the following line <code>sdk.registerBot(require('./LiveChat.js'))</code>.</li>
         <li>Delete any existing sdk.registerBot statements, if not needed.</li>
-        <img src="../deploy-the-assistant/images/delete sdk bot statements.png" alt="delete sdk bot statements" title="delete sdk bot statements" style="border: 1px solid gray; zoom:75%;"></ul></ul></ol>
+        <img src="../images/delete sdk bot statements.png" alt="delete sdk bot statements" title="delete sdk bot statements" style="border: 1px solid gray; zoom:75%;"></ul></ul></ol>
 
 ## Execution
 
