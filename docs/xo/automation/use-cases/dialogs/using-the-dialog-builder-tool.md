@@ -128,7 +128,7 @@ You can use the **Add Node** button visible on hover over the connector line, to
 
 #### Add If-Else Node Connections
 
-To add **If-Else** connection conditions, hover over the node and click the blue **"+"** button on the bottom. [Learn more](../node-types/nodes-transitions/){:target="_blank"}.
+To add **If-Else** connection conditions, hover over the node and click the blue **"+"** button on the bottom. [Learn more](../node-connections/node-conditions/){:target="_blank"}.
 
 <p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
@@ -138,7 +138,7 @@ To add **If-Else** connection conditions, hover over the node and click the blue
 
 ### Node Properties
 
-Clicking on a node will open its Properties panel, which includes specific features, depending on the type of node you are working with. Please consult the documentation on [Node Types](../node-types/nodes-conditions/){:target="_blank"} to learn more about what is included with each. So, noting that some nodes may not come with some features, here is a general overview of what is available within this panel:
+Clicking on a node will open its Properties panel, which includes specific features, depending on the type of node you are working with. Please consult the documentation on [Node Types](../node-types/nodes-transitions/){:target="_blank"} to learn more about what is included with each. So, noting that some nodes may not come with some features, here is a general overview of what is available within this panel:
 
 
 * **Component Properties** such as name, type, and component-specific properties.
