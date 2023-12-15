@@ -1,6 +1,6 @@
 # Nodes Overview
 
-In order to create Dialog Tasks, the [Dialog Builder](../using-the-dialog-builder-tool/){:target="_blank"} uses nodes and transitions to make the necessary connections between the components of your conversation. In this article, we will overview the available node types, transitions, as well as context object information.
+In order to create Dialog Tasks, the [Dialog Builder](../../using-the-dialog-builder-tool/){:target="_blank"} uses nodes and transitions to make the necessary connections between the components of your conversation. In this article, we will overview the available node types, transitions, as well as context object information.
 
 
 ## How do Nodes and Transitions Work?
@@ -66,7 +66,7 @@ The Script Node is used to write custom Javascript JS code in the dialog task. F
 
 #### Logic Node
 
-The Logic Node allows developers to use context variables and define complex transition conditions within Bot Action nodes and Dialog Tasks overall. For more details, please refer to  [Working with the Logic Node.](../working-with-the-logic-node/){:target="_blank"}.
+The Logic Node allows developers to use context variables and define complex transition conditions within Bot Action nodes and Dialog Tasks overall. For more details, please refer to  [Working with the Logic Node](../working-with-the-logic-node/){:target="_blank"}.
 
 
 #### WebHook Node
@@ -102,7 +102,7 @@ You can use the following operators to write conditions:
 * Less than
 * Contains
 
-Learn more about [setting up node connections](../../node-connections/nodes-conditions/).
+Learn more about [setting up node connections](../../node-connections/nodes-conditions/){:target="_blank"}.
 
 
 ### Environment Variables
@@ -114,10 +114,10 @@ Environment Variables are global, reusable components which can be used in multi
   
     !!! Note
     
-            You must enter dynamic variables without braces. For example, Environment variables as `env.value`, Content variables as `content.value`, and Context variable as `context.entities.entityname`. For more information, see the [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions/#entity) article.
+            You must enter dynamic variables without braces. For example, Environment variables as `env.value`, Content variables as `content.value`, and Context variable as `context.entities.entityname`. For more information, see the [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions/#entity){:target="_blank"} article.
 
 * To define and manage the bot response that is repeated within the bot configuration as variables.
 * Authorization Token
 * Channel-related tokens and URLs
 
-Post the release of v8.1 of the platform, for <span style="text-decoration:underline;">on-prem installations</span>, multiple value sets can be stored for these environment variables using Collections, [refer here for more](../../../../../app-settings/variables/collections).
+Post the release of v8.1 of the platform, for <span style="text-decoration:underline;">on-prem installations</span>, multiple value sets can be stored for these environment variables using Collections, [refer here for more](../../../../../app-settings/variables/collections){:target="_blank"}.

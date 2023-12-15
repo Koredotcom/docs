@@ -427,19 +427,3 @@ In the top navigation area, you will see a real-time set of errors and warnings 
 
 
 ![alt_text](images/image35.png "image_tooltip")
-
-
-
-## Toggle the Conversation View
-
-While working with the Logic-Driven Dialog Builder, you can also toggle the Conversation View, to see what the conversation between the assistant and the User could look like, in real time.
-
-To toggle this view. Click **Conversation Builder**, at the bottom left of your canvas.
-
-
-
-<p id="gdcalert36" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image36.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert37">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image36.gif "image_tooltip")
-
