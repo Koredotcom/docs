@@ -147,9 +147,9 @@ To delete a Dialog Task:
 
 Please see the articles linked below for information on:
 
-* Dialog Settings,
-* Manage Interruptions,
-* Amend Behavior.
+* [Dialog Settings](../using-the-dialog-builder-tool/#dialog-settings){:target="_blank"},
+* [Manage Interruptions](../../../intelligence/conversation-management/manage-interruptions){:target="_blank"},
+* [Amend Behavior.](../../../natural-language/nlu-configurations/amend-entities){:target="_blank"}
 
 
 ## Conversation Design, Logic Building & Training
