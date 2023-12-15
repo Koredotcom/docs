@@ -81,8 +81,8 @@ Apart from performing business functionality, our VA would also act as a proxy b
     <li>Edit <code>LiveChat.js</code></li>
         <ul><li>Give the respective botId and botName, which you have copied earlier and save.</li>
         <img src="../images/give-bot-id-and-name.png" alt="give bot id and name" title="give bot id and name" style="border: 1px solid gray; zoom:75%;"></ul>
-    <li>Edit <code>app.js</code></li>
-        <ul><li>Add the following line <code>sdk.registerBot(require('./LiveChat.js'))</code>.</li>
+    <li>Edit <code>app.js.</code></li>
+        <ul><li>Add the following line <code>sdk.registerBot(require('./LiveChat.js')).</code></li>
         <li>Delete any existing sdk.registerBot statements, if not needed.</li>
         <img src="../images/delete sdk bot statements.png" alt="delete sdk bot statements" title="delete sdk bot statements" style="border: 1px solid gray; zoom:75%;"></ul></ul></ol>
 
