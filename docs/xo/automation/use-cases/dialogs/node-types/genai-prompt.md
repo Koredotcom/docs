@@ -35,7 +35,7 @@ Setting up a GenAI Prompt in a dialog task involves adding the node at the appro
 ## Add the Node
 
 1. Go to **Build** > **Conversational Skills** > **Dialog Tasks** and select the task to which you want to add the GenAI Prompt.
-2. Use the “**+**” button next to the node under which you want to add the **GenAI Prompt**. Then, choose **GenAI Prompt**, and then click **New GenAI Prompt**. (For more information on adding nodes, see [different ways to add a node](../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.) Alternatively, you can drag and drop the **GenAI Prompt** node to the required location on the canvas.
+2. Use the “**+**” button next to the node under which you want to add the **GenAI Prompt**. Then, choose **GenAI Prompt**, and then click **New GenAI Prompt**. (For more information on adding nodes, see [different ways to add a node](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.) Alternatively, you can drag and drop the **GenAI Prompt** node to the required location on the canvas.
 3. The GenAI Prompt window is displayed with the **Component Properties** tab selected by default.
 
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
@@ -114,7 +114,7 @@ For more information on custom tags, see [Custom Meta Tags](../../../../../analy
 
 ### Connections Properties
 
-On the **Connections** tab, you can set the transition properties to determine the node in the dialog task to execute next. You can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. See [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions) for a detailed setup guide.
+On the **Connections** tab, you can set the transition properties to determine the node in the dialog task to execute next. You can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. See [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"} for a detailed setup guide.
 
 <p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 

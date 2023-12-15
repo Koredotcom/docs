@@ -267,7 +267,7 @@ Add Custom Meta Tags to the conversation flow to profile VA-user conversations a
 
 Configure Voice Properties to streamline the user experience on voice channels. You can define prompts, grammar, and other call behavior parameters for the node. This node does not require Initial Prompts, Error Prompts, and grammar configuration.
 
-See [Voice Call Properties](../../../../../channels/call-properties/?h=voice+call){:target="_blank"} for more information on setting up this section of the GenAI Node.
+See [Voice Call Properties](../../../../../channels/call-properties){:target="_blank"} for more information on setting up this section of the GenAI Node.
 
 <p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
