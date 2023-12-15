@@ -91,9 +91,9 @@ In the **Entity Post-Assignments** section, there is a list of entities availabl
 
 !!! Important Notes
 
-        This option is available only if the Transition Options is set to return to the current node on task completion.
-        Currently, there is a limitation when using URL entity types. URL values with http as opposed to https or without the www suffix will not work. If you want to reset the values, you need to use the keyword "null", spaces would be ignored by the platform.
-        Many dialog transitions without user interference can lead to infinite dialog looping. To prevent such a situation, the Virtual Assistant displays the error, 'Sorry something went wrong and I cannot complete your request now,' after 25 such transitions, as shown in the following screenshot. This error is displayed when the dialog nodes are connected either in a loop or in a linear manner.
+        This option is available only if the Transition Options is set to return to the current node on task completion.  
+                Currently, there is a limitation when using URL entity types. URL values with http as opposed to https or without the www suffix will not work. If you want to reset the values, you need to use the keyword "null", spaces would be ignored by the platform.  
+                        Many dialog transitions without user interference can lead to infinite dialog looping. To prevent such a situation, the Virtual Assistant displays the error, 'Sorry something went wrong and I cannot complete your request now,' after 25 such transitions, as shown in the following screenshot. This error is displayed when the dialog nodes are connected either in a loop or in a linear manner.
 
 <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
@@ -110,7 +110,7 @@ Click **Advanced Controls** to set up the below-listed options:
     1. **Use the task level _Interruptions Behavior_ Setting**: The VA refers to the **Interruptions Behavior** settings set at the dialog task level.
     2. **Customize for this node**: By configuring this option you can customize the **Interruptions Behavior** settings for this node.Read the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions){:target="_blank"} article for more information.
 
-2. **Custom Tags**defines tags to build custom profiles of your bot conversations. [See here for more](../../../../../analytics/automations/custom-dashboard/custom-meta-tags){:target="_blank"}. You can add tags for the following:
+2. **Custom Tags** defines tags to build custom profiles of your bot conversations. [See here for more](../../../../../analytics/automations/custom-dashboard/custom-meta-tags){:target="_blank"}. You can add tags for the following:
     1. **Message –** Define custom tags to be added to the current message in the conversation.
     2. **User –** Define custom tags to be added to the user’s profile information.
     3. **Session –** Define custom tags to be added to the current conversation session.
