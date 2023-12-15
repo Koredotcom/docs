@@ -19,7 +19,7 @@ To add a dialog task, follow the steps below:
 
 5. The Dialog Builder now displays the root intent component.
 6. Enter a name for the dialog task in the **Intent Name** field. As the field label states, the name should reflect the user intent you want to achieve with this Dialog Task. Optionally, you can add a **description**.
-7. You can add user utterances that should trigger this intent, using the **Intent Training **field**.** You may add this data later, from the user intent node that is generated within this task.
+7. You can add user utterances that should trigger this intent, using the **Intent Training** field. You may add this data later, from the user intent node that is generated within this task.
 8. If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../../../app-settings/integrations/actions/actions){:target="_blank"}.
 
     1. Click and expand **More Options** to set additional options for _Intent Settings_, _Analytics – Containment Type_ and _Conversation Context_.
@@ -50,7 +50,7 @@ Now, you are ready to add nodes and establish transitions between these nodes fo
 
 This feature auto-generates dialog flows using the VA’s purpose and intent description provided during task creation. The Platform uses LLM and generative AI to create suitable Dialog Tasks for Conversation Design, Logic Building, and Training by including the required nodes in the flow. This helps simplify and shorten the development process and suggests possible pathways that developers might not think otherwise.
 
-To enable this feature, you must turn on **[LLM and Generative AI](https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/){:target="_blank"}**, and **Automatic Dialog Task Generation **under **Buld > Natural Language > Advanced NLU Settings**.
+To enable this feature, you must turn on **[LLM and Generative AI](https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/){:target="_blank"}**, and **Automatic Dialog Task Generation** under **Buld > Natural Language > Advanced NLU Settings**.
 
 The nodes and the flow for the Business Logic are automatically built for your conversation, and you only need to configure the flow transition.
 
@@ -94,11 +94,8 @@ Before moving on, here is an overview of the Dialog Task Builder. For details, p
 
 There are three ways to add a node:
 
-1. Using the conversation-first approach, [refer here for details](https://developer.kore.ai/docs/bots/bot-builder-tool/bot-creation/the-conversation-designer/){:target="_blank"}.
-2. Drag and drop nodes from the panel onto the dialog builder, [see below](#use-drag-and-drop).
-3. Using the options from the Dialog Builder Canvas, [see below](#use-the-dialog-canvas).
-
-In this article, we will be working with drag and drop, and the Dialog Builder Canvas. For details about the conversation-first approach, please read about the [Conversation-Designer](https://developer.kore.ai/docs/bots/bot-builder-tool/bot-creation/the-conversation-designer/)
+1. Drag and drop nodes from the panel onto the dialog builder, [see below](#use-drag-and-drop).
+2. Using the options from the Dialog Builder Canvas, [see below](#use-the-dialog-canvas).
 
 
 #### Use Drag and Drop
@@ -204,7 +201,7 @@ You can delete the group using the **Delete** icon on the right, that becomes vi
 ![alt_text](images/image16.png "image_tooltip")
 
 
-If you are using the group to set up a Subintent, you can also configure it, using the **Configure**(Gear) icon, that becomes visible once you hover over the group. For additional information, please see [Grouping Nodes as Subintents](../node-connections/grouping-nodes/).
+If you are using the group to set up a Subintent, you can also configure it, using the **Configure**(Gear) icon, that becomes visible once you hover over the group. For additional information, please see [Grouping Nodes as Subintents](../node-connections/grouping-nodes/){:target="_blank"}.
 
 <p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
@@ -334,7 +331,7 @@ The top menu provides access to a variety of options which you can use while wor
 
     ![alt_text](images/image28.gif "image_tooltip")
 
-* **Help** – Get contextual help for your Dialog Task or follow a Setup Guide. Find out more by reading [Help and Learning Resources](https://developer.kore.ai/docs/bots/chatbot-overview/help/).
+* **Help** – Get contextual help for your Dialog Task or follow a Setup Guide. Find out more by reading [Help and Learning Resources](https://developer.kore.ai/docs/bots/chatbot-overview/help/){:target="_blank"}.
     <p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image29.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
     ![alt_text](images/image29.png "image_tooltip")
