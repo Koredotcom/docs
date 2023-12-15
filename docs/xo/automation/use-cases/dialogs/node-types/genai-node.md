@@ -139,7 +139,7 @@ Include a brief description of the use case context; for example: _Act like a fl
 
 Specify the entities to be collected by LLM during runtime. Click Add Entity, enter a Key for the Entity Type, then choose a Value from the drop-down list. Click the Bin icon next to an entity type to remove it.
 
-You can add a maximum of 5 entities. Most entity types are supported. Here are the exceptions: custom, composite, list of items (enumerated and lookup), and attachment. See [Entity Types](../../entity-types) for more information.
+You can add a maximum of 5 entities. Most entity types are supported. Here are the exceptions: custom, composite, list of items (enumerated and lookup), and attachment. See [Entity Types](../../entity-types){:target="_blank"} for more information.
 
 <p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
@@ -276,7 +276,7 @@ See [Voice Call Properties](../../../../../channels/call-properties/?h=voice+cal
 
 ### Connections
 
-Define the transition conditions from this node. These conditions are applicable only for this instance and will not affect this node being used in any other dialog. See [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions) for a detailed setup guide.
+Define the transition conditions from this node. These conditions are applicable only for this instance and will not affect this node being used in any other dialog. See [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"} for a detailed setup guide.
 
 <p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
