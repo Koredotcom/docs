@@ -128,7 +128,7 @@ You can use the **Add Node** button visible on hover over the connector line, to
 
 #### Add If-Else Node Connections
 
-To add **If-Else** connection conditions, hover over the node and click the blue **"+"** button on the bottom. [Learn more](../node-types/nodes-conditions/){:target="_blank"}.
+To add **If-Else** connection conditions, hover over the node and click the blue **"+"** button on the bottom. [Learn more](../node-types/nodes-transitions/){:target="_blank"}.
 
 <p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
@@ -420,8 +420,6 @@ Add or modify the following settings for your dialog:
 ## Troubleshooting
 
 In the top navigation area, you will see a real-time set of errors and warnings are available as you define your dialog task located on the top-right of the Dialog Builder. Click the information icon to display any errors or warnings as shown in the following illustration.
-
-
 
 <p id="gdcalert35" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image35.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert36">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
