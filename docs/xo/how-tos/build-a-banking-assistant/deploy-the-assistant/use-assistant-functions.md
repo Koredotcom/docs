@@ -76,7 +76,7 @@ function pieTemplate(data){
 5. Drag and drop or browse the script file that you saved from the Prerequisites section and click **Import**.
 6. Once the success message is displayed click **Done**.
 7. Your Script file is ready to use.
-<img src="../images/import-new-bot-functions.png" alt="import new bot functions" title="jimport new bot functions" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/import-new-bot-functions.png" alt="import new bot functions" title="import new bot functions" style="border: 1px solid gray; zoom:75%;">
 
 8. Open the **Dialog Tasks** page and create a New Dialog Task called _“Monthly Statement”._
     * Add entities to capture the **Account Number** and **Account Type**.
@@ -90,7 +90,7 @@ function pieTemplate(data){
         print(tableTemplate(info));</code>
 
     * Add another **Message** node to send this data to the Bot Function declared earlier and get the report.
-        * From **Bot Responses** section, click **Manage Responses**
+        * From **Bot Responses** section, click **Manage Responses**.
         * **Add Bot Response**, select _Web/Mobile Client_ as the **Channel**, switch to **JavaScript** tab and enter  the following code to display the values in a pie chart: <code>var info = context.monthlyBal; 
         print(pieTemplate(info));</code>
 
@@ -102,9 +102,8 @@ function pieTemplate(data){
     `context.monthlyExpenses = [["Jan",100],["Feb",200],["Mar", 300],["Apr",100],["May",400],["June", 500],["Jul",100],["Aug",200],["Sept", 300],["Oct",100],["Nov",100],["Dec", 300]];`
 
     * Add a **Message** node to send this data to the Bot Function declared earlier and get the report.
-        * From **Bot Responses** section, click **Manage Responses**
-        * **Add Bot Response**, select _Web/Mobile Client_ as the **Channel**, switch to **JavaScript** tab and enter the following code to display the values in a pie chart. As you can see we are using the same function that was invoked in the previous dialog task. 
-        
+        * From **Bot Responses** section, click **Manage Responses**.
+        * **Add Bot Response**, select _Web/Mobile Client_ as the **Channel**, switch to **JavaScript** tab and enter the following code to display the values in a pie chart. As you can see we are using the same function that was invoked in the previous dialog task.
         <code>var info = context.monthlyExpenses; 
         print(pieTemplate(info));</code>
 
