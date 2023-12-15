@@ -76,7 +76,7 @@ function pieTemplate(data){
 5. Drag and drop or browse the script file that you saved from the Prerequisites section and click **Import**.
 6. Once the success message is displayed click **Done**.
 7. Your Script file is ready to use.
-<img src="../deploy-the-assistant/images/import-new-bot-functions.png" alt="import new bot functions" title="jimport new bot functions" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/import-new-bot-functions.png" alt="import new bot functions" title="jimport new bot functions" style="border: 1px solid gray; zoom:75%;">
 
 8. Open the **Dialog Tasks** page and create a New Dialog Task called _“Monthly Statement”._
     * Add entities to capture the **Account Number** and **Account Type**.
@@ -110,6 +110,6 @@ function pieTemplate(data){
 
 <ol start="11"><li>Close the Dialog Task.</li>
 <li><b>Talk to Bot</b> and try both the dialogs. Thus we have used the same function to display the reports in multiple places.</li>
-<img src="../deploy-the-assistant/images/dialog-1.png" alt="dialog 1" title="dialog 1" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/dialog-1.png" alt="dialog 1" title="dialog 1" style="border: 1px solid gray; zoom:75%;">
 
-<img src="../deploy-the-assistant/images/dialog-2.png" alt="dialog 2" title="dialog 2" style="border: 1px solid gray; zoom:75%;"></ol>
+<img src="../images/dialog-2.png" alt="dialog 2" title="dialog 2" style="border: 1px solid gray; zoom:75%;"></ol>
