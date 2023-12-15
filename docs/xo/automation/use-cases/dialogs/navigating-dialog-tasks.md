@@ -147,9 +147,9 @@ To delete a Dialog Task:
 
 Please see the articles linked below for information on:
 
-* Dialog Settings,
-* Manage Interruptions,
-* Amend Behavior.
+* [Dialog Settings](../using-the-dialog-builder-tool/#dialog-settings){:target="_blank"},
+* [Manage Interruptions](../../../intelligence/conversation-management/manage-interruptions){:target="_blank"},
+* [Amend Behavior.](../../../natural-language/nlu-configurations/amend-entities){:target="_blank"}
 
 
 ## Conversation Design, Logic Building & Training
@@ -240,6 +240,7 @@ The Conversation Designer is where you can simulate an interaction between your 
 **The Dialog Builder**
 
 The Dialog Builder is where you can build business logic into your conversations. It comes with a dedicated top menu, which facilitates access to the following features:
+
 * **Navigate away from the Dialog Task Builder and back to the Dialog Tasks List**.
 * **Switch between Dialog Tasks** – Simply use this dropdown if you need to work on a different task. You don’t have to go back to the list to do so.
 * **Tabs related to the main stages of the Dialog Task development process**: Design, Build and Train.
@@ -282,6 +283,6 @@ Now, let’s take a look at the features that the training module offers.
 
 #### Related Links
 
-* [Using the Dialog Builder](../using-the-dialog-builder-tool){:target="_blank"}{:target="_blank"}
-* [Dialog Task – Legacy Builder](../dialog-task-legacy-builder){:target="_blank"}{:target="_blank"}
+* [Using the Dialog Builder](../using-the-dialog-builder-tool){:target="_blank"}
+* [Dialog Task – Legacy Builder](../dialog-task-legacy-builder){:target="_blank"}
 * [Help and Learning Resources](https://developer.kore.ai/docs/bots/chatbot-overview/help/){:target="_blank"}
