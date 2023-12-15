@@ -21,7 +21,7 @@ In this document, we will see how Content Variable can be used to store the mess
     * Select the **Build** tab from the top menu.
     * From **Intelligence** select **Events**.
     * Click the **On Connect** event and configure to **Show Message**.
-    <img src="../deploy-the-assistant/images/show-message.png" alt="show message" title="show message" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/show-message.png" alt="show message" title="show message" style="border: 1px solid gray; zoom:75%;">
 
 * Enable the Spanish language for the bot with the steps below:
     * From **Configurations**, select **Language**.
@@ -37,13 +37,13 @@ Declaring a Content Variable to hold the On Connect message will ensure it is no
 4. Click **Add Variable** to open the corresponding window.
 5. Enter **Variable Name** and **Variable Value**. For this use case, were are calling the Variable _connectMessage_, and for the value, we are entering the “_Welcome to the Banking Portal – your one-stop for all banking needs._"
 6. Click **Save**.
-<img src="../deploy-the-assistant/images/configure-content-variable.png" alt="configure content variable" title="configure content variable" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/configure-content-variable.png" alt="configure content variable" title="configure content variable" style="border: 1px solid gray; zoom:75%;">
 
 7. Now switch the language to _Spanish_ and for the same **connectMessage** variable using the **Edit** icon enter the text in Spanish – “_Bienvenido al portal bancario: su única parada para todas las necesidades bancarias_.“
-<img src="../deploy-the-assistant/images/switch-language-to-spanish.png" alt="switch language to spanish" title="switch language to spanish" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/switch-language-to-spanish.png" alt="switch language to spanish" title="switch language to spanish" style="border: 1px solid gray; zoom:75%;">
 
 8. Return to the **On Connect Event Handler** and replace the text with reference to the content variable using the following code: <code>{{content.connectMessage}}</code>.
-<img src="../deploy-the-assistant/images/on-connect-event-handlers.png" alt="on connect event handlers" title="on connect event handlers" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/on-connect-event-handlers.png" alt="on connect event handlers" title="on connect event handlers" style="border: 1px solid gray; zoom:75%;">
 
 9. **Save** the changes.
 
@@ -55,4 +55,4 @@ Use **Talk to Bot** to test the changes.
 2. The message will appear in English.
 3. Use the cheat command to switch the language:<code>cheat lang Es</code>.
 4. Reconnect to the bot and see the message in Spanish.
-<img src="../deploy-the-assistant/images/test-content-variable-banking-bot.png" alt="test content variable" title="test content variable" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/test-content-variable-banking-bot.png" alt="test content variable" title="test content variable" style="border: 1px solid gray; zoom:75%;">
