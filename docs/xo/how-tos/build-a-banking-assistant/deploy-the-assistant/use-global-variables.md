@@ -24,10 +24,10 @@ In this document, we will see how Global Variable can be used to store the API e
 * Bot building knowledge.
 * A Banking Bot with the dialogs as mentioned below:
     * **Get Balance** – Dialog task prompting the user for their Account Number and displaying the available balance in the account.
-    <img src="../deploy-the-assistant/images/global-variables-prerequisites.png" alt="prerequisites" title="prerequisites" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/global-variables-prerequisites.png" alt="prerequisites" title="prerequisites" style="border: 1px solid gray; zoom:75%;">
 
     * **Update Account** – Dialog task prompting the user for Account Number that needs to be updated, the Amount to be updated and whether the amount needs to be credited or debited and updating the Account balance accordingly.
-    <img src="../deploy-the-assistant/images/global-variables-update-account.png" alt="update account" title="update account" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/global-variables-update-account.png" alt="update account" title="update account" style="border: 1px solid gray; zoom:75%;">
 
 ## Implementation Steps
 
@@ -39,14 +39,14 @@ Declaring a Global Variable to hold the API endpoint will help the transition ea
 4. Click **Add Variable** to open the corresponding window.
 5. Enter **Variable Name** and **Variable Value**. For this use case, were are calling the Variable _accountURL_, and for value, we are entering the _Service API call endpoint._
 6. Click **Save**.
-<img src="../deploy-the-assistant/images/global-variables-overview.png" alt="global variables implementation" title="global variables implementation" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/global-variables-overview.png" alt="global variables implementation" title="global variables implementation" style="border: 1px solid gray; zoom:75%;">
 
 7. Now open the **Get Balance** Dialog Task.
 8. Select the **GetAccountBalance** Service Node.
 9. Click **Edit Request** under the **Request Definition**.
 10. Replace the request URL with the Global Variable created above. using the `env` prefix followed by any parameters needed. In this case: 
 <code>{{env.accountURL}}{{context.entities.AccountNumber}}</code>
-<img src="../deploy-the-assistant/images/replace-request-url-global-variable.png" alt="replace global variable" title="replace global variable" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/replace-request-url-global-variable.png" alt="replace global variable" title="replace global variable" style="border: 1px solid gray; zoom:75%;">
 
 11. Repeat for **Update Balance** Dialog Task.
 12. Now when you Export and Import the Bot to another environment, all you need to worry about is to change the value of the Global Variable and the changes will be effective in both the Dialog Tasks.
