@@ -1,6 +1,6 @@
 # Use Global Variables
 
-The XO Platform provides a way to declare and use variables within the bot. These variables can be used to capture values that are commonly used by different tasks, nodes, and other bot elements
+The XO Platform provides a way to declare and use variables within the bot. These variables can be used to capture values that are commonly used by different tasks, nodes, and other bot elements.
 
 In this post, we explore a Banking Bot scenario, where **Bot Variables** can be used. We see how Global Variables are used to pass API endpoints and can change them easily when migrating from development to testing to production environments.
 
@@ -45,7 +45,7 @@ Declaring a Global Variable to hold the API endpoint will help the transition ea
 8. Select the **GetAccountBalance** Service Node.
 9. Click **Edit Request** under the **Request Definition**.
 10. Replace the request URL with the Global Variable created above. using the `env` prefix followed by any parameters needed. In this case: 
-<code>{{env.accountURL}}{{context.entities.AccountNumber}}</code>
+<code>{{env.accountURL}}{{context.entities.AccountNumber}}</code>.
 <img src="../images/replace-request-url-global-variable.png" alt="replace global variable" title="replace global variable" style="border: 1px solid gray; zoom:75%;">
 
 11. Repeat for **Update Balance** Dialog Task.
