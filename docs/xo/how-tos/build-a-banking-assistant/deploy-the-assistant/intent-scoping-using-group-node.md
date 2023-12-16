@@ -61,6 +61,7 @@ The **fulfillment** section can be used to define the actions when this particul
 * **Transition Flow** – Use this option to define how the dialog should resume after executing this sub-intent. There are two behaviors you can define:
     * **Jump To A Node** – The dialog will resume from the node selected here.
     * **Resume The Dialog** – The dialog will resume from the node where this intent was identified.
+    
     <img src="../images/transition-flow.png" alt="transition flow" title="transition flow" style="border: 1px solid gray; zoom:75%;">
  
 ## Implementation Steps
