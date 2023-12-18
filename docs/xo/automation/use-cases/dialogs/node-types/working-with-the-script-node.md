@@ -20,7 +20,7 @@ Keeping this in mind, the setup a Script node in a dialog task involves the foll
 2. **Open the dialog task** to add the Script node to.
 3. **Add the script node** in the designated place. For steps in adding nodes, [refer here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
 4. The Script window is displayed with the **Component Properties** tab selected by default.
-5. You can configure the **Connection Properties,** [refer here for details](../../using-the-dialog-builder-tool/#bot-action-nodes){:target="_blank"}.
+5. You can configure the **Connection Properties,** [refer here for details](#connections-properties).
 
     <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
