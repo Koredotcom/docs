@@ -57,8 +57,11 @@ To configure the component properties, follow the below steps:
 
     ![alt_text](images/image3.png "image_tooltip")
  
-5. **Note**: The Platform now supports additional Synonyms for Traditional Chinese language for Yes/No confirmation. [Learn more](#additional-synonyms-for-traditional-chinese-language).
-6. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the **Variable Namespace** is enabled for the assistant you are working with. You can go with the task level settings or customize it for this node. For more information, refer to the [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"} article.
+    !!! Note
+    
+        The Platform now supports additional Synonyms for Traditional Chinese language for Yes/No confirmation. [Learn more](#additional-synonyms-for-traditional-chinese-language).
+
+5. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the **Variable Namespace** is enabled for the assistant you are working with. You can go with the task level settings or customize it for this node. For more information, refer to the [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"} article.
     <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
     ![alt_text](images/image4.gif "image_tooltip")
