@@ -16,10 +16,10 @@ For example, the _Book Flights_ sample dialog uses the following message nodes:
 
 
 * **_WeatherReport:_** This shows the weather details returned by the _WeatherApi_ Service node, formatted using the _LocationScript_ node.
-* **_FinalFlightinfo_**: This shows the flight itineraries that the _Flights info _service node returns.
+* **_FinalFlightinfo_**: This shows the flight itineraries that the _Flights info_ service node returns.
 * **_Thanks_**: After showing the final flight details, prompts the user if they have any other requests.
 
-To understand customized JavaScript responses and channel-specific templates, refer to _[Customize JavaScript Responses]_(../../prompt-editor/#customize-javascript-responses){:target="_blank"} in [_User Prompts_](../../prompt-editor/){:target="_blank"} _article._
+To understand customized JavaScript responses and channel-specific templates, refer to [_Customize JavaScript Responses_](../../prompt-editor/#customize-javascript-responses){:target="_blank"} in [_User Prompts_](../../prompt-editor){:target="_blank"} article.
 
 
 ## Set-Up
@@ -134,7 +134,7 @@ To setup Component Transitions, follow these steps:
         6. greater than 
         7. less than
     
-    2. _Select the entity, operator using the respective drop-down lists, and type the number in the **Value** box. For example, PassengerCount (entity) greater than (operator) 5 (specified value).._
+    2. Select the entity, operator using the respective drop-down lists, and type the number in the **Value** box. For example, **PassengerCount**(entity) **greater than**(operator) **5**(specified value).
     3. **Context**: Compare a context object in the dialog with a specific value using one of these operators.  
 
         * exists  
@@ -149,7 +149,7 @@ To setup Component Transitions, follow these steps:
     
     4. **Intent:** Select an intent that matches the next user utterance.
 
-5. _In the **Then go to** drop-down list, select the next node to execute in the dialog flow if the conditional expression succeeds. For example, if the PassengerCount (entity) is greater than (operator) 5 (specified value), **Then go to** Offers (sub-dialog)._
+5. In the **Then go to** drop-down list, select the next node to execute in the dialog flow if the conditional expression succeeds. For example, **if the** _PassengerCount_(entity) _is greater than_(operator) _5_(specified value), **Then go to** _Offers_(sub-dialog).
 6. In the **Else** drop-down list, select the node to execute if the condition fails.
 
     !!! Note
