@@ -62,7 +62,7 @@ The **Entity Type** provides the NLP Interpreter with the expected type of data 
 
             ![alt_text](images/image2.png "image_tooltip")
 
-    This image corresponds to the new Dialog Builder, you will find this feature in the legacy builder at the same location: i.e. Entity node -> Component Properties.
+            This image corresponds to the new Dialog Builder, you will find this feature in the legacy builder at the same location: i.e. Entity node -> Component Properties.
 
 6. You can enable the **Sensitive Entity** option to redact, replace, or mask sensitive data input at the entity node level. This setting helps you secure sensitive data input during the conversation.
     <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
