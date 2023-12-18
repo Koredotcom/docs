@@ -110,7 +110,7 @@ Use the Instance Properties to define any user tags that you want to set.
 To configure this tab, please follow these steps:
 
 1. On the Form window, click the **Instance Properties** tab.
-2. Under the **Custom Tags** section, add tags to build custom profiles of your conversations. [Click here for more](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/custom-meta-tags/).
+2. Under the **Custom Tags** section, add tags to build custom profiles of your conversations. [Click here for more](../../../../../analytics/automations/custom-dashboard/custom-meta-tags){:target="_blank"}.
     <p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
     ![alt_text](images/image11.png "image_tooltip")
