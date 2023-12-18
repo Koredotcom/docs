@@ -97,6 +97,7 @@ We need to invoke Get Balance from Transfer Amount, check for funds and proceed 
     * **Account Number** – entity required in the Get Balance dialog set to _Payer Account_ number
     * **Add Key/Value** – pair `context.type` and _transfer_ identifying the Transfer Amount intent. This will be checked in the Get Balance dialog as shown in the next step to modify the flow.
     * Ensure that the **Transition Option** is set to Initiate **Get Balance**, once complete return to this node.
+
     <img src="../images/transition-option.png" alt="transition option" title="transition option" style="border: 1px solid gray; zoom:75%;">
 
     * **Script Node** – _CheckBalance_ to check the balance in the payer account with the amount to be transferred and proceed accordingly. Balance in the payer account is obtained from a BotContext variable that will be populated by the Get Balance dialog.
@@ -149,7 +150,7 @@ First, modify the Transfer Amount to populate the appropriate tags and configure
 4. Next, open the **Manage Interruptions** dialog from the **more** (vertical ellipses) option.
 5. Customize the settings for this task as **Allow hold and resume** and set the **Hold Options** to _Hold the current task and resume back once the new task is completed_ and the **Resume Options** to _Resume the on hold task without any specific message to the user_.
 
-Next, modify the Get Balance dialog to capture the data sent by the Transfer Amount
+Next, modify the **Get Balance** dialog to capture the data sent by the Transfer Amount
 
 1. Open the **Get Balance** dialog.
 2. Add a **Script node** – _CheckAcId_ to check if the Account Number is available in the context, after the Intent node.
@@ -192,7 +193,9 @@ The **Update Account** intent should be invoked only through **Transfer Amount**
 The following Knowledge Collection is used in this scenario:
 
 **Primary Question**: *What are the interest rates for credit cards?*
+
 **Primary Question**: *What are the charges for credit cards?*
+
 **Alternate**: *What are the charges?*
 
 <img src="../images/sharing-context-across-faqs.png" alt="sharing context across faqs" title="sharing context across faqs" style="border: 1px solid gray; zoom:75%;">
@@ -213,6 +216,7 @@ In the second question, the word _charges_ is in the context of the credit card.
 The following Knowledge Collection is used in this scenario:
 
 **Primary Question**: *What are your transfer rates?* 
+
 **Alternate**: *What are the rates?*
 
 The use case here is that the user might, during the transfer amount, ask about the rates. This should result in the appropriate FAQ being triggered to answer the query.
