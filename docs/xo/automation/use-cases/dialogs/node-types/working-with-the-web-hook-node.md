@@ -20,7 +20,7 @@ To get access to WebHook events and use WebHook nodes in your dialog task, you n
     
         The registration app you create is based on the **Callback URL** applicable to all tasks for the bot. While each task can have unique SDK configurations, the **Callback URL** is the same. Create separate bots for separate application **Callback URLs** for live agent transfers.
 
-9. Under the **PII Data** section, define how **sensitive information** should be handled. If there is a need to share unmasked data when an agent session is in progress, even when [PII redaction is enabled](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"}, select the _Do not mask and send original data to Agent BotKit_. Else, go with the default setting of _Mask and send sensitive data to Agent BotKit._
+9. Under the **PII Data** section, define how **sensitive information** should be handled. If there is a need to share unmasked data when an agent session is in progress, even when [PII redaction is enabled](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"}, select the **Do not mask and send original data to Agent BotKit**. Else, go with the default setting of **Mask and send sensitive data to Agent BotKit**.
 10. Under the **Access Using a Connector** section, indicate if your URL is behind a firewall and a **Connector** has to be used.
 11. Click **Save**. The _Successfully subscribed_ message is displayed.
 
