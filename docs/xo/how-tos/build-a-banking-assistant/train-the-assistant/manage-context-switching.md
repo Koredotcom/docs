@@ -11,7 +11,6 @@ Consider a Banking Bot trying to address the following scenarios:
 * **Sharing content across intents** – Once the user has entered his/her account number, they should not be prompted again in the course of the conversation. 
 
 <div class="admonition note">
-<p class="admonition-title"></p>
 <p><b>User</b>: I want to transfer $200 from my account.</p>
 <p><b>Bot</b>: Sure, may I have your account number?
 // (initiating Transfer Amount task)</p> 
@@ -28,7 +27,6 @@ Ideally, Get Balance should not be asking for the account number.
 The extended version of the above example is given below:
 
 <div class="admonition note">
-<p class="admonition-title"></p>
 <p><b>User</b>: I want to transfer $200 from my account.</p>
 <p><b>Bot</b>: Sure, may I have your account number?
 // (initiating Transfer Amount task)</p>
@@ -116,7 +114,7 @@ context.nextStep = nextStep;
 
 * **Message Node** to display the insufficient funds message
 
-Next, let us modify the **Get Balance** dialog to check for transfer tag and populate the Bot Context variable if needed.
+Next, let us modify the **Get Balance** dialog to check for transfer tag and populate the Bot Context variable if needed with the steps below:
 
 1. Open the **Get Balance** dialog.
 2. Open the **BalanceMessage** (the final message node) node.
@@ -150,19 +148,18 @@ First, modify the Transfer Amount to populate the appropriate tags and configure
 4. Next, open the **Manage Interruptions** dialog from the **more** (vertical ellipses) option.
 5. Customize the settings for this task as **Allow hold and resume** and set the **Hold Options** to _Hold the current task and resume back once the new task is completed_ and the **Resume Options** to _Resume the on hold task without any specific message to the user_.
 
-Next, modify the **Get Balance** dialog to capture the data sent by the Transfer Amount
+Next, modify the **Get Balance** dialog to capture the data sent by the Transfer Amount with the steps below:
 
 1. Open the **Get Balance** dialog.
 2. Add a **Script node** – _CheckAcId_ to check if the Account Number is available in the context, after the Intent node.
-
-Add the following **script**. This script checks for the Intent “*Transfer Amount*." Captures the account number and populates the AccountNumber entity with that value.
+3. Add the following **script**. This script checks for the Intent “*Transfer Amount*." Captures the account number and populates the AccountNumber entity with that value.
 
 ```js
 var i = koreUtil._.indexOf(context.historicTags[0].tags, 'Transfer Amount')
 context.entities.AccountNumber = context.historicTags[0].tags[i+1]
 ```
 
-<ol start="3"><li>Run the Bot and see the changes taking effect.</li></ol>
+<ol start="4"><li>Run the Bot and see the changes taking effect.</li></ol>
 
 ### Follow up Intents
 
