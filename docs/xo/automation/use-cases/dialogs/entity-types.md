@@ -13,7 +13,7 @@ The following **Entity Types** are specified for an entity node.
    </td>
    <td><a href="#composite">Composite</a>
    </td>
-   <td><a href="#name">Person Name</a>
+   <td><a href="#person-name">Person Name</a>
    </td>
   </tr>
   <tr>
@@ -21,21 +21,21 @@ The following **Entity Types** are specified for an entity node.
    </td>
    <td><a href="#date">Date</a>
    </td>
-   <td><a href="#percent">Percentage</a>
+   <td><a href="#percentage">Percentage</a>
    </td>
   </tr>
   <tr>
-   <td><a href="#attachment">Attachment</a>
+   <td><a href="#attachment-image-file">Attachment</a>
    </td>
-   <td><a href="#dateperiod">Date Period</a>
+   <td><a href="#date-period">Date Period</a>
    </td>
-   <td><a href="#phone">Phone Number</a>
+   <td><a href="#phone-number">Phone Number</a>
    </td>
   </tr>
   <tr>
    <td><a href="#email">Email</a>
    </td>
-   <td><a href="#datetime">Date Time</a>
+   <td><a href="#date-time">Date Time</a>
    </td>
    <td><a href="#quantity">Quantity</a>
    </td>
@@ -51,17 +51,17 @@ The following **Entity Types** are specified for an entity node.
   <tr>
    <td><a href="#country">Country</a>
    </td>
-   <td><a href="#enum">List of Items (enumerated)</a>
+   <td><a href="#list-of-items-enumerated">List of Items (enumerated)</a>
    </td>
    <td><a href="#time">Time</a>
    </td>
   </tr>
   <tr>
-   <td><a href="#company">Company</a>
+   <td><a href="#company-name-or-organization-name">Company</a>
    </td>
-   <td><a href="#lookup">List of items (lookup)</a>
+   <td><a href="#list-of-items-lookup">List of items (lookup)</a>
    </td>
-   <td><a href="#timezone">Time Zone</a>
+   <td><a href="#time-zone">Time Zone</a>
    </td>
   </tr>
   <tr>
@@ -77,7 +77,7 @@ The following **Entity Types** are specified for an entity node.
    </td>
    <td><a href="#number">Number</a>
    </td>
-   <td><a href="#zip">Zip Code</a>
+   <td><a href="#zip-code">Zip Code</a>
    </td>
   </tr>
   <tr>
@@ -94,7 +94,7 @@ The following **Entity Types** are specified for an entity node.
 
 ### Address
 
-Captures addresses written in the standard US and Germany address formats. For example, 200 E Main ST Pheonix AZ 85123 USA. The complete address is captured as a string: “200 E Main ST Pheonix AZ 85123 USA.” In addition to this string, the Address entities like [City](#city), [Country](#country), and [Zip Code](#zip) also provide the full formatted address that has been captured.
+Captures addresses written in the standard US and Germany address formats. For example, 200 E Main ST Pheonix AZ 85123 USA. The complete address is captured as a string: “200 E Main ST Pheonix AZ 85123 USA.” In addition to this string, the Address entities like [City](#city), [Country](#country), and [Zip Code](#zip-code) also provide the full formatted address that has been captured.
 
 ```
 "entities":
@@ -317,7 +317,413 @@ Apart from the supported companies, the virtual assistant recognizes the words s
 }
 ```
 
-**[List of Supported Company Names](#1676370397423-1b16d497-2321)**
+<details>
+  <summary><b>List of Supported Company Names</b></summary>
+  <p>ABN AMRO<br />
+    Accor<br />
+    Acer<br />
+    Activision Blizzard (Activision Blizzard)<br />
+    Acumen<br />
+    Adidas<br />
+    Aditi Technologies<br />
+    Aditya Birla<br />
+    Advanced Micro Devices (AMD)<br />
+    Affiliated Computer Services<br />
+    Ahold Delhaize<br />
+    Air France-KLM<br />
+    Airbus<br />
+    Aitken Spence<br />
+    AkzoNobel<br />
+    Albertson’s<br />
+    Albertsons<br />
+    Alcatel-Lucent<br />
+    Alfa Laval<br />
+    Alliance Global<br />
+    Allianz<br />
+    AllState<br />
+    Alstom<br />
+    Altria<br />
+    Amazon.com (Amazon)<br />
+    American Express (AMEX)<br />
+    American International Group (AIG)<br />
+    American Savings<br />
+    Andritz AG<br />
+    AOL Time Warner (AOL Time Warner)<br />
+    Aon<br />
+    Apollo Tyres<br />
+    Apple<br />
+    Apple Computer<br />
+    Arcor<br />
+    Assicurazioni Generali<br />
+    Associated Press<br />
+    Asus<br />
+    AT&amp;T<br />
+    Atari<br />
+    Avast Software<br />
+    Avatar Reality<br />
+    Avianca<br />
+    AXA<br />
+    Axiata<br />
+    Axis Bank<br />
+    Bacardi<br />
+    Banco Bilbao Vizcaya Argentaria (BBVA)<br />
+    Banco Santander<br />
+    Bank of America (BOA)<br />
+    Bank of Hawaii (BOH)<br />
+    Bank of Montreal<br />
+    Barclays<br />
+    Barilla<br />
+    Barnes and Noble<br />
+    Barrick Gold<br />
+    BASF<br />
+    Baskin-Robbins<br />
+    Bata<br />
+    Bayer<br />
+    Becton Dickinson<br />
+    Berkshire Hathaway<br />
+    Bic<br />
+    BIDV<br />
+    Billabong<br />
+    Black &amp; Decker<br />
+    Bloomingdale’s<br />
+    BMW<br />
+    BNP Paribas (BNP)<br />
+    Boeing<br />
+    Bombardier<br />
+    Borders<br />
+    Bouygues<br />
+    BRAC<br />
+    Bridgestone<br />
+    British Airways (BA)<br />
+    British Petroleum (BP)<br />
+    Brookstone’s<br />
+    Cadbury Schweppes<br />
+    Canon<br />
+    CapGemini<br />
+    Capital One<br />
+    Caterpillar<br />
+    Celestica<br />
+    Central Pacific Bank<br />
+    Chevron<br />
+    Cisco Systems (Cisco)<br />
+    Citibank (Citi and Citigroup)<br />
+    Coca-Cola (Coke)<br />
+    Cognizant Technology Solutions<br />
+    Comerica<br />
+    Concentrix<br />
+    ConocoPhillips (Conoco)<br />
+    Costco<br />
+    Countrywide<br />
+    Creative Labs<br />
+    Crédit Agricole (CA)<br />
+    Credit Suisse<br />
+    Cummins<br />
+    CVS<br />
+    Dabur<br />
+    Daikin<br />
+    Daimler AG<br />
+    Dangote<br />
+    Danish Refugee Council<br />
+    Danone<br />
+    Decathlon<br />
+    Dell<br />
+    Dell Computer (Dell)<br />
+    Deloitte<br />
+    Delta Air Lines (Delta)<br />
+    Deutsche Bank<br />
+    Deutsche Telekom<br />
+    DHL<br />
+    Dow Chemical<br />
+    Dunkin’ Donuts<br />
+    easyJet<br />
+    EDF<br />
+    Electrolux<br />
+    Electronic Arts (EA)<br />
+    Electronic Data Systems (EDS)<br />
+    Embraer<br />
+    EMC<br />
+    Emerson Electric<br />
+    Enel<br />
+    Eni<br />
+    Enron<br />
+    Epson<br />
+    Ericsson<br />
+    Etisalat<br />
+    Expedia<br />
+    Exxon Mobil (Exxon Mobil)<br />
+    ExxonMobil (Exxon Mobil)<br />
+    EY<br />
+    Faber-Castell<br />
+    Facebook<br />
+    Federal Express (FedEx)<br />
+    Ferrero<br />
+    Fiat<br />
+    Ficosa<br />
+    Finastra<br />
+    FIS<br />
+    FleetBoston<br />
+    Foodland<br />
+    Ford Motor Company (Ford)<br />
+    FPT<br />
+    France Télécom<br />
+    Fujitsu<br />
+    Gap<br />
+    Gazprom<br />
+    General Electric (GE)<br />
+    General Motors (GM)<br />
+    General Nutrition Center (GNC)<br />
+    Generali<br />
+    Gerdau<br />
+    Gillette<br />
+    Glaxo Smith Kline (Glaxo)<br />
+    Google<br />
+    Haier<br />
+    Halliburton<br />
+    Hawaiian Electric (HECO)<br />
+    HCL Technologies<br />
+    Hearst<br />
+    Heineken<br />
+    Hewlett Packard (HP)<br />
+    Hewlett-Packard (HP)<br />
+    Hilti<br />
+    Hindustan Computers<br />
+    Hitachi<br />
+    Honda<br />
+    Honda Motors (Honda)<br />
+    Honeywell<br />
+    HSBC<br />
+    HTC<br />
+    Huawei<br />
+    Hutchison Whampoa<br />
+    Hyundai<br />
+    Hyundai Motor Company<br />
+    ICAP<br />
+    ICICI<br />
+    IKEA<br />
+    Illinois Tool Works<br />
+    Indesit<br />
+    Indian Oil<br />
+    Indofood<br />
+    Infosys<br />
+    ING<br />
+    Ingersoll Rand<br />
+    Instagram<br />
+    Intel<br />
+    International Business Machines (IBM)<br />
+    International Paper<br />
+    Intesa Sanpaolo<br />
+    IOCL<br />
+    Isuzu<br />
+    Jardine Matheson<br />
+    JCPenney (J.C. Penney, JC Penny, and JC Penney)<br />
+    JG Summit Holdings<br />
+    Johnson &amp; Johnson (J&amp;J)<br />
+    Jollibee<br />
+    JPMorgan Chase (JPMorgan Chase)<br />
+    Kenya Airways<br />
+    KFC<br />
+    Kia Motors (Kia)<br />
+    Kingston Technology<br />
+    KMart<br />
+    Knorr<br />
+    Komatsu<br />
+    Konami<br />
+    Kony<br />
+    Kore (Kore.ai and Kore.com)<br />
+    KPMG<br />
+    Krispy Kreme<br />
+    Kroger<br />
+    L’Oréal<br />
+    Lactalis<br />
+    Lagardère<br />
+    Lear<br />
+    Lenovo<br />
+    LensCrafters<br />
+    Leonardo<br />
+    Leoni AG<br />
+    Lexmark<br />
+    LG<br />
+    LG Electronics (LG)<br />
+    Linde<br />
+    LiuGong<br />
+    Lockheed Martin<br />
+    Lotte<br />
+    Lowe’s<br />
+    Lowes<br />
+    Lucent Technologies<br />
+    Lukoil<br />
+    Lupin<br />
+    Lush<br />
+    Luxottica<br />
+    Mac Cosmetics<br />
+    Macy<br />
+    Maggi<br />
+    Marriott<br />
+    Martini &amp; Rossi<br />
+    Mastercard<br />
+    Masterfoods<br />
+    Mattel<br />
+    Mazda<br />
+    Mercedes-AMG (Mercedes-Benz)<br />
+    Merck<br />
+    Merrill Lynch<br />
+    Metropolitan Life (MetLife)<br />
+    Michelin<br />
+    Microsoft<br />
+    Millipore<br />
+    Mitsubishi Electric<br />
+    Mobil<br />
+    Monsanto<br />
+    Motorola<br />
+    Nagarro<br />
+    Namco Bandai Games<br />
+    Nestlé<br />
+    NetApp<br />
+    New York Life Insurance (New York Life)<br />
+    News Corporation (“News Corp”)<br />
+    Nike<br />
+    Nikon<br />
+    Nintendo<br />
+    Nissan<br />
+    Nissan Motors (Nissan)<br />
+    Nordstrom (Nordstrom Rack)<br />
+    Novartis<br />
+    Oceanit<br />
+    Oknoplast<br />
+    Ooredoo<br />
+    Oracle<br />
+    Orbitz<br />
+    Origins<br />
+    Outfit7<br />
+    Pacific Gas and Electric (PG&amp;E)<br />
+    Panasonic<br />
+    Parmalat<br />
+    Partners In Health<br />
+    Pepper Lunch<br />
+    Pepsi-Cola (Pepsi and PepsiCo)<br />
+    Petronas<br />
+    Petrovietnam<br />
+    Pfizer<br />
+    Philips<br />
+    Phillip Morris<br />
+    Pirelli<br />
+    POSCO<br />
+    Priceline<br />
+    Procter &amp; Gamble (P&amp;G)<br />
+    Proton<br />
+    PSA Peugeot Citroën (Peugeot Citroën)<br />
+    PwC<br />
+    QNB<br />
+    Quest<br />
+    Radio Shack<br />
+    Ranbaxy<br />
+    Reckitt Benckiser<br />
+    Red Bull<br />
+    Red Bus<br />
+    Regus<br />
+    Renault<br />
+    Repsol<br />
+    RG Multinational<br />
+    Ricoh<br />
+    Robert Bosch GmbH (Bosch)<br />
+    Rockstar Energy<br />
+    Rohde &amp; Schwarz<br />
+    Royal Bank of Canada (RBC)<br />
+    Royal Bank of Scotland (RBS)<br />
+    Royal Dutch Shell (Shell)<br />
+    RPG<br />
+    Rusal<br />
+    SABMiller plc<br />
+    Safeway<br />
+    Samsung Electronics (Samsung)<br />
+    San Miguel<br />
+    SanDisk<br />
+    Sanofi Aventis<br />
+    SAP (SAP Labs and SAP SE)<br />
+    Sapient<br />
+    SAS<br />
+    Sasken Communication Technologies<br />
+    Sasol<br />
+    SBC Communications<br />
+    Schlumberger<br />
+    Schneider Electric<br />
+    Scotiabank<br />
+    Sears Roebuck (Sears)<br />
+    Sega Sammy Holdings<br />
+    Sephora<br />
+    Servcorp<br />
+    Sharper Image<br />
+    Shirokia<br />
+    Siemens<br />
+    Sinopec<br />
+    SM Investments<br />
+    Société Générale<br />
+    Solaris Bus &amp; Coach<br />
+    Sony (Sony Computer Entertainment, Sony Music Entertainment, and Sony Pictures Entertainment)<br />
+    Southwest Airlines<br />
+    Sprint<br />
+    Square Enix<br />
+    Standard Chartered<br />
+    Starbucks<br />
+    State Street<br />
+    SunTrust<br />
+    Target<br />
+    Tata Motors (Tata)<br />
+    Tate &amp; Lyle<br />
+    TCS<br />
+    Tech Mahindra<br />
+    Telefonica<br />
+    Tesco<br />
+    Tetra Pak<br />
+    The Body Shop<br />
+    The Coffee Bean &amp; Tea Leaf<br />
+    The International Press and Media Group (IPMG)<br />
+    Thomson Reuters (Reuters)<br />
+    Tire and Rubber Company (Goodyear)<br />
+    Tissot<br />
+    TMobile<br />
+    Toshiba<br />
+    Total<br />
+    Towers Watson<br />
+    Toyota<br />
+    TRW Automotive<br />
+    Tyco<br />
+    U.S. Bancorp<br />
+    Uber<br />
+    Unicredit<br />
+    Unilever<br />
+    Unisys<br />
+    United Airlines (United)<br />
+    United Parcel Service (UPS)<br />
+    United States Automobile Association (USAA)<br />
+    United States Postal Service (USPS)<br />
+    Verizon<br />
+    Viacom<br />
+    Victoria’s Secret<br />
+    Viettel Mobile<br />
+    Vimpelcom<br />
+    Virgin<br />
+    Visa<br />
+    VNPT<br />
+    Vodafone<br />
+    Voith<br />
+    Wachovia<br />
+    Walmart<br />
+    Wal-Mart<br />
+    Walt Disney (Disney)<br />
+    Washington Mutual<br />
+    Wells Fargo<br />
+    Whirlpool<br />
+    Whole Foods<br />
+    Wikimedia Foundation<br />
+    Wipro<br />
+    Wirecard<br />
+    Yahoo<br />
+    Yakult<br />
+    Yamaha<br />
+    Zensar Technologies<br />
+    ZTE</p>
+</details>
 
 
 ### Color
@@ -331,12 +737,90 @@ Captures the name of the color from a user utterance. For example, Set the statu
 }
 ```
 
-**[List of Supported Colors](#1676372578068-85e965fe-5a3c)**
+<details>
+    <summary><b>List of Supported Colors</b></summary>
+    <table border="1">
+    <thead>
+    <tr>
+    <th style="text-align: center;">Color</th>
+    <th style="text-align: center;">Prefix</th>
+    </tr>
+    <tr>
+    <td>green</td>
+    <td>caesious celadon chartreuse chlorochrous glaucous green greenish Kelly olivaceous pistachio porraceous prasinous smaragdine virescent virid viridian zinnober apple celery emerald lime mint olive sage</td>
+    </tr>
+    <tr>
+    <td>brown</td>
+    <td>amber bronze brown brownish brunette buff fuscous infuscate mahogany russet rust sandy sepia sienna sinopia sorrel tan taupe terracotta Titian umbra almond chocolate cinnamon coffee copper hazel honey khaki nutmeg rainbow walnut</td>
+    </tr>
+    <tr>
+    <td>orange</td>
+    <td>auburn orange orangish</td>
+    </tr>
+    <tr>
+    <td>blue</td>
+    <td>aqua aquamarine azuline azure blue blueish cerulean cyaneous indigo mazarine navy pavonated porceline royal teal turquoise ultramarine watchet aquamarine cobalt peacock periwinkle sapphire sky steel</td>
+    </tr>
+    <tr>
+    <td>purple</td>
+    <td>amaranthine heliotrope hyacinthine ianthine magenta mauve orchid porphyrous puce purple purplish purpure purpureal rhodopsin aubergine claret lavender lilac mulberry plum violet</td>
+    </tr>
+    <tr>
+    <td>red</td>
+    <td>cardinal cerise cinnabar coccineous coquelicot cramoisy crimson cyan erythraean flammeous fuchsia garnet haematic incarnadine kermes lateritious madder magenta maroon miniaceous minium modena nacarat phoeniceous pink pinkish ponceau puccoon puniceous rectory red reddish Rufous sanguineous solferino stammel testaceous umber vermeil vermilion vermillion vinaceous brick burgundy cherry coral raspberry rose ruby salmon strawberry maroon miniaceous minium modena nacarat phoeniceous pink pinkish ponceau puccoon puniceous rectory red reddish Rufous sanguineous solferino stammel testaceous umber vermeil</td>
+    </tr>
+    <tr>
+    <td>yellow</td>
+    <td>beige buff citreous citrine gamboge lurid nankeen ochre tawny yellow yellowish apricot butter buttercup butterscotch canary chrome gold goldenrod lemon mustard peach persimmon primrose saffron suede sulphur tangerine</td>
+    </tr>
+    <tr>
+    <td>gold</td>
+    <td>metallic</td>
+    </tr>
+    <tr>
+    <td>silver</td>
+    <td>metallic</td>
+    </tr>
+    <tr>
+    <td>copper</td>
+    <td>metallic</td>
+    </tr>
+    <tr>
+    <td>bronze</td>
+    <td>metallic</td>
+    </tr>
+    <tr>
+    <td>black</td>
+    <td>blackish ebony jet_black licorice melanic morel nigrine piceous</td>
+    </tr>
+    <tr>
+    <td>white</td>
+    <td>blond chalk cream cretaceous ivory magnolia off-white whey white whitish</td>
+    </tr>
+    <tr>
+    <td>grey</td>
+    <td>ashen cesious columbine gray grayish grey greyish hoary taupe</td>
+    </tr>
+    <tr>
+    <td>transparent</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>reflective</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>metallic</td>
+    <td>argent brass bronze copper gold metallic platinum silver</td>
+    </tr>
+    </thead>
+    </table>
+</details>
 
 
 ### Currency
 
-Captures the amount and type of currency from the user utterance. For example, _This handbag is priced at 200 dollars _where 200 is the amount and USD is the currency.
+Captures the amount and type of currency from the user utterance. For example, _This handbag is priced at 200 dollars_ where 200 is the amount and USD is the currency.
 
 This entity type recognizes:
 
@@ -419,7 +903,9 @@ TKT-1234
 </table>
 
 
-**Note**: The dialog will fail if the expression is null. If the null expression is desired, bot developers can always use the preConditions entity rule as an alternative to skip over a node in the flow.
+!!! Note
+
+    The dialog will fail if the expression is null. If the null expression is desired, bot developers can always use the preConditions entity rule as an alternative to skip over a node in the flow.
 
 For more information, refer to [Regex Expressions](https://en.wikipedia.org/wiki/Regular_expression){:target="_blank"}.
 
@@ -462,7 +948,7 @@ The virtual assistant recognizes all possible ways and formats of dates, like:
 
 Captures a date grouping along with time in a user utterance.
 
-For example, _Book a flight on the 10 th of October at 6 pm, r_eturns the value for Date Time in ISO8601 date format as YYYYY-MM-DDThh: mm: ss.sTZD.
+For example, _Book a flight on the 10 th of October at 6 pm_, returns the value for Date Time in ISO8601 date format as YYYYY-MM-DDThh: mm: ss.sTZD.
 
 The virtual assistant recognizes all possible ways and formats to express date and time.
 
@@ -596,7 +1082,7 @@ Post v7.1, the following keys are added to the context object for the below-ment
 
 !!! Note
 
-    The ‘**Display List of Values**’ option is available only for the [List of Items (enum)](#enum). It is **NOT **available for the [List of Items (lookup)](#lookup).
+    The ‘**Display List of Values**’ option is available only for the [List of Items (enumerated)](#list-of-items-enumerated). It is **NOT **available for the [List of Items (lookup)](#lookup).
 
 
 ### List of Items (lookup)
@@ -612,7 +1098,7 @@ This feature is not fully supported in all languages. [Click here for details](.
 
 **Static List**: Use Static List to define the entity values as one of the following list types:
 
-**JSON** tab – Enter a list of key/value pairs and synonyms ([Click here for more](https://developer.kore.ai/docs/bots/how-tos/multi-lingual-bot-behavior/#Feature_Support)). For example:  
+**JSON** tab: Enter a list of key/value pairs and synonyms ([Click here for more](../../../../app-settings/language-management/multilingual-vas-components-feature-support){:target="_blank"}). For example:  
                  
 
 ```
@@ -630,7 +1116,7 @@ This feature is not fully supported in all languages. [Click here for details](.
 ```
 
 * **Editor** tab – Enter the **Display Name**, **Value**, and **Synonyms** for the key.
-* **Upload File** – Click **Upload File **to locate a JSON formatted file list or a .csv file formatted list of key/value pairs. For example,  
+* **Upload File** – Click **Upload File** to locate a JSON formatted file list or a .csv file formatted list of key/value pairs. For example,  
 
     <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
@@ -694,6 +1180,7 @@ The external service invoked must have a provision to accept and handle the user
             * If a match is found, it is assigned to the entity.
             * If no match is found, the user is presented with a list of values to choose from. If the user input matches with any of the items in the list, then it is assigned to the entity. If the user input does not match any of the items, then the input is updated in the context object and another call to the remote service is initiated.
             * If one or more matches are found, then it is considered ambiguous and the user is presented with the choices.  If the user input matches with any of the items in the list, then it is assigned to the entity. If the user input does not match any of the items, then the input is updated in the context object and another call to the remote service is initiated.
+        
         3. If the entity is marked as a multi-item entity, then the list of values returned from the remote server is re-evaluated and all valid (valid as per entity type) list items are assigned as values for the entity. Invalid list items are discarded.
     
     4. Handle the following exceptions:
@@ -1045,7 +1532,8 @@ There won’t be any validations done on the user utterance for string entities 
 
 ### Time
 
-Capture time in a user utterance. For example, _Set my alarm for 6 am, _return the value of Time in ISO 8601 time format as hh:mm:ss.sZD. \
+Capture time in a user utterance. For example, _Set my alarm for 6 am_, return the value of Time in ISO 8601 time format as hh:mm:ss.sZD.  
+
 It recognizes the following denotations:
 
 * am, a.m., AM, pm, p.m., PM, P.M.
