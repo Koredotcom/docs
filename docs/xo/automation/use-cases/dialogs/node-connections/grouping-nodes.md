@@ -80,7 +80,7 @@ Once added, each of the sub-intent can be trained for recognition within this gr
 The **fulfillment** section can be used to define the actions when this particular sub-intent is identified from the user input. It includes the following properties:
 
 1. **Context Variables** – Set the key-value pairs to define the session or context variables to be updated when this sub-intent is identified. If you want to reset the values, you need to use the keyword “null”, spaces would be ignored by the platform.
-2. **Present a Message** – Optionally, define a message to be presented to the user when this sub-intent is identified. As with other responses, you can define the message as plain text, JavaScript format, specify, and set [Voice Call Properties](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/){:target="_blank"}, where applicable.
+2. **Present a Message** – Optionally, define a message to be presented to the user when this sub-intent is identified. As with other responses, you can define the message as plain text, JavaScript format, specify, and set [Voice Call Properties](../../../../../channels/call-properties){:target="_blank"}, where applicable.
 3. **Context Output** – Define the context tags to be set when this intent is identified. The intent name is always set as output context by the system. If you want to reset the values, you need to use the keyword “null”, spaces would be ignored by the platform.
 4. **Transition Flow** – Use this option to define how the dialog should resume after executing this sub-intent. There are two behaviors you can define:
     1. **Jump To A Node** – The dialog will resume from the node selected here.
