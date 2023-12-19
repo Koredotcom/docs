@@ -2,7 +2,7 @@
 
 Validating user input before processing goes a long way in improving the bot’s efficiency and user experience. While the entity type does impose some basic restrictions, these are not always sufficient and does not cater to the specific business requirements. **Entity rules** can be used for additional processing hints and validations.
 
-Entity rules can be added from the **Entity Rules** section under **Instance Properties** of the corresponding entity. Add the rule in the JSON editor provided, [see here for how](node-types/working-with-the-entity-node/#instance-properties){:target="_blank"}.
+Entity rules can be added from the **Entity Rules** section under **Instance Properties** of the corresponding entity. Add the rule in the JSON editor provided, [see here for how](../node-types/working-with-the-entity-node/#instance-properties){:target="_blank"}.
 
 These rules can also be set in the script for an entity, in such cases, the rule needs to be set before the entity prompt in the dialog flow. Add a script node at the beginning of the dialog or just before the concerned entity node with the following script:
 
