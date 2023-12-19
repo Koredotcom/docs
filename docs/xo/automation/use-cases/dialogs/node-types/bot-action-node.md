@@ -18,7 +18,7 @@ The Bot Action Node allows you to:
 Setting up a Bot Action node in a dialog task involves the following steps:
 
 1. Open the dialog task to which you want to add the Bot Action node.
-2. Add the Bot Action node in the designated place. For steps related to adding nodes, [refer here](../../using-the-dialog-builder-tool/#add-nodes).
+2. Add the Bot Action node in the designated place. For steps related to adding nodes, [refer here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
 3. The Bot Action  node Properties panel is displayed with the **Component Properties** tab selected by default.
 4. You can use the **+**/**–** against the node to **Expand/Collapse** the node
 5. Once you expand a Bot Action node, you have the option to add various nodes – service, script, webhook, logic and/or process nodes. Please refer to the individual nodes for configuration details.
