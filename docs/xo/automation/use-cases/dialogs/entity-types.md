@@ -1,6 +1,6 @@
 # Entity Types
 
-The **Entity Type** provides the NLP Interpreter with the expected type of data from a user utterance to enhance recognition and system performance.  The Kore.ai NLP interpreter extracts the entity from the user utterance. If the user does not enter a required entity, you can define a virtual assistant Response node to prompt the user to provide the entity. For more information, refer to [Working with the Message (Bot Response) Node](../node-types/working-with-the-message-nodes){:target="_blank"}.
+The **Entity Type** provides the NLP Interpreter with the expected type of data from a user utterance to enhance recognition and system performance.  The Kore.ai NLP interpreter extracts the entity from the user utterance. If the user does not enter a required entity, you can define a virtual assistant Response node to prompt the user to provide the entity. For more information, refer to [Working with the Entity Node](../node-types/working-with-the-entity-node){:target="_blank"}.
 
 You can also define entity rules to validate user input, [refer here for details](../entity-rules/){:target="_blank"}.
 
@@ -1051,7 +1051,7 @@ Display a list of values to the end-user. To define the list type,
 
 This feature is not fully supported in all languages [Click here for details](../../../../app-settings/language-management/multilingual-vas-components-feature-support){:target="_blank"}.
 
-* **Static List** – Enter the **Display Name**, **Value**, and **Synonyms** for the key. Set up [Auto-Correction](#auto) value for the user inputs.
+* **Static List** – Enter the **Display Name**, **Value**, and **Synonyms** for the key. Set up _Auto-Correction_ value for the user inputs.
 * **List from Context** – Define a context variable to use for this item in the following fields:
     * **Specify Context Variable to Use** – Defines the context object type. For example, EnterpriseContext, BotContext, UserContexts, or session variables such as context.entities. Enter`context.`; select a context object type.
     * **Display Name Key** – The name displayed to the end-user.
@@ -1082,7 +1082,7 @@ Post v7.1, the following keys are added to the context object for the below-ment
 
 !!! Note
 
-    The ‘**Display List of Values**’ option is available only for the [List of Items (enumerated)](#list-of-items-enumerated). It is **NOT **available for the [List of Items (lookup)](#lookup).
+    The ‘**Display List of Values**’ option is available only for the [List of Items (enumerated)](#list-of-items-enumerated). It is **NOT** available for the [List of Items (lookup)](#list-of-items-lookup).
 
 
 ### List of Items (lookup)
