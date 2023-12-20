@@ -61,9 +61,8 @@ To upload PDF documents, follow these steps:
 
         Filenames must not be longer than 10 characters.
 
-<ol start="3"><li>Once selecting the document, you can update its name if required. Click <b>Proceed</b> when ready.
-
-<img src="../images/click-proceed-documents-upload.png" alt="click proceed" title="click proceed" style="border: 1px solid gray; zoom:75%;"></li>
+<ol start="3"><li>Once selecting the document, you can update its name if required. Click <b>Proceed</b> when ready.</li>
+<img src="../images/click-proceed-documents-upload.png" alt="click proceed" title="click proceed" style="border: 1px solid gray; zoom:75%;">
 <li>Please wait a few moments until your document uploads. This action may take longer than expected, depending on the file size, your connection speed, and other factors.</li>
 <li>When the upload completes successfully, close the upload window.
 <img src="../images/close-upload-window.png" alt="close upload window" title="close upload window" style="border: 1px solid gray; zoom:75%;"></li>
