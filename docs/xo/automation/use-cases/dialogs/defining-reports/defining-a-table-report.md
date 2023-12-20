@@ -1,33 +1,68 @@
-# System Commands
+# Defining a Table Report
 
-Using system commands, users can define the bot behavior to some extent.
+With some tasks, you may want to add a link to a message sent to a user that contains data too large for a message, for example, a message with a picture, abstract, and a link to a full article or report. This topic describes how to define a table report with variable width columns.
+The table report type can be displayed to an end-user when the URL for this table is clicked in a message. In the following illustration, the message sent to the end-user contains a link to the table report called **Your Daily Tasks**. To learn how to use report keys, read the [Alert Tasks](https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-message-definition/#Report_Keys){:target="_blank"} article.
 
-The following is the list of available commands
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
+![alt_text](images/image1.png "image_tooltip")
 
-## To manage sessions
-
-* You can **terminate the current task/intent** using commands like “_Discard_“, “_Terminate_“, “_End_” etc. Any previous tasks that were on hold would be resumed.
-* You can **terminate all tasks/intents** for that particular session using commands like “_Discard All_“, “_Terminate Everything_“, “_Clean All_” etc.  You can also use the **Refresh** icon at the top of the **Talk to Bot** window for the same purpose.
-* You, as a developer, can define your own discard commands using a **custom concept** named _~bot_commands_override_discard_ ([see here for how](../../../../natural-language/training/fundamental-meaning/#define-custom-concepts){:target="_blank"}). When the words in this concept are detected in the user utterance then the current task will be discarded without any further checks. Only these words will cause a discard to happen, and these must be the only words on the user utterance. An explicit reference to “all” in these command variations will ensure termination of all tasks, else only the current task will be terminated.
-
-Be aware that if the bot recognizes any of these commands (<span style="text-decoration:underline;">except</span> those defined in the custom concept) as a valid intent or entity value then priority would be given to the intent/entity recognized and the bot would process these phrases accordingly. The priority being – first intent then entity and lastly system command.
+When the user clicks the link in the message, a table report with variable width columns shows the data for the columns defined with a table header, optional table description, and a header row as shown in the following illustration for the _Your list of tasks_ report.
 
 
-## To manage accounts
+<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-Chances are the end-user might want to change their account profile like revoke permissions or manage the alert subscriptions etc.
+
+![alt_text](images/image2.png "image_tooltip")
 
 
 
-* Users can **manage accounts** using commands like “_Reactivate my account_“, “_manage my account_“, etc.
-* Platform responds with a message to the user with a link.
-* The link can be used by the user to change:
-    * **Authorizations** – The end-user can delete any authorizations and/or add new auth accounts. Especially useful when the user has multiple accounts and wants to revisit the auth account or if the given account authorization token has expired. In case the bot requires multiple authorizations each of these would be listed here.
-    * **Alert Task Settings** – The end-user can unsubscribe by deleting the subscription or change the notification settings
-    * **Profile** – this includes first name, last name and the preferred time zone.
-* This link would be generated ONLY when:
-    * no intent matches the user utterance; and
-    * the user utterance matches the pattern `<&lt; [manage delete reactivate] [account connection] >>`
+## To define a table report
 
-NOTE: In case your virtual assistance has _account_ related tasks, a proper training would ensure that this link is not sent to the end-user instead of the account-related task.
+To complete the following procedure, you must have already defined a task, such as an alert task, or information task, that you want to add a table report link to. Complete the steps in the following procedure to define a table report with variable width columns.
+
+
+
+1. In Bot Builder, select the task for the Bot that you want to add a table report link to.
+**Note:** Only unpublished tasks can be modified.
+2. Click the **Settings** <img src="../settings-icon.png"> icon, and then click **Edit**.
+3. On the **Bot Response** tab for the task that you want to add a table report to, click the **Expand** <img src="../expand-icon.png"> icon for the **Report Template Definition** section.
+4. In the **Link Title** field, enter the link text to display to the end-user in the task post, for example, _Your Task List_.
+5. In the **Header** field, enter the title of the report to display when the table report is displayed to the end-user.
+6. In the **Details** field, optionally enter any end-user help information displayed directly below the **Header** in the report, for example, _This is a list of your daily Google Tasks_.
+7. In the **Template** drop-down list, select **Table**.
+8. Click **Edit Template**. The **Table Configuration** dialog is displayed.
+9. Click **Add Column**. The **Column Configuration** dialog is displayed as shown in the following illustration.
+
+    <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+    ![alt_text](images/image5.png "image_tooltip")
+
+    <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+    ![alt_text](images/image6.png "image_tooltip")
+
+10. In the **Column Name** field, enter the first column title, for example, _Task_.
+11. In the  **Data Type** field, select one of the following data types for the information displayed in the column:
+    1. **String**
+    2. **Number**
+    3. **Date**
+
+12. Enable **Is a link** if the data in the column is a hyperlink. When enabled:
+    1. In the **Link Label** field, enter the JavaScript to display the text for the link, for example, `print(Name);` .
+    2. In the **URL Value** field, enter the JavaScript to display the data to output when the **Link Label** is clicked, for example, `print("https://login.salesforce.com/" + Id);`
+
+13. If **Is a link** is not enabled, then enter the JavaScript to display the value for the column, for example, `print(StageName);`.
+14. In the **Display it as an image** section, select **Yes** if the column value is an image.
+15. In the **Display it as HTML** section, select **Yes** if the column value contains HTML content.
+16. In the **Is this column Sortable** section, select Yes if the end-user should be able to sort the column.
+17. Click **Done**. The **Table Configuration** dialog is displayed with the new column added as shown in the following illustration.
+
+    <p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+    ![alt_text](images/image7.png "image_tooltip")
+
+18. Repeat Steps 9 – 17 for each additional column in the report, click **Save** to save the column configurations, and then click **Close**.
+19. In the **Report Template Definition** section, click **Save** to save the table report
+
+The table is saved _Successfully saved response data_ message is displayed at the top of the page.
