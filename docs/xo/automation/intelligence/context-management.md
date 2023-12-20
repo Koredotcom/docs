@@ -118,7 +118,7 @@ Intent pre-conditions for dialog intents are set to define when a dialog is dete
 <img src="../images/dialog-tasks-preconditions.png" alt="dialog tasks precondition" title="dialog tasks precondition" style="border: 1px solid gray; zoom:75%;">
 
 * Dialog intents with pre-conditions are detected only if the defined pre-conditions are met.
-* The intent with a precondition set is treated as a sub-intent and will be part of the [Linked Task Exception](https://developer.kore.ai/docs/bots/bot-intelligence/sub-intents-and-follow-up-intents/#Linked_Task_Exceptions) behavior from the Dialog level Hold and Resume settings.
+* The intent with a precondition set is treated as a sub-intent and will be part of the <a href=" https://docsinternal-kore.github.io/docs/xo/automation/intelligence/sub-intents-and-follow-up-intents/#linked-task-exceptions" target="_blank">Linked Task Exception</a> behavior from the Dialog level Hold and Resume settings.
 
 #### Alert Tasks
 

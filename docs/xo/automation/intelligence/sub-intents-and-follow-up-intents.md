@@ -1,6 +1,6 @@
 # Sub-Intents & Follow-up Intents
 
-Human conversations are dynamic in that they tend to switch between intents and entities, often combining multiple things into one.
+Human conversations are dynamic since they tend to switch between intents and entities, often combining multiple things into one.
 
 The XO Platform offers **Sub Intents** that are defined at the task level, and are the easiest way to shape dialog without having to manage context manually. This enables conversations to seamlessly branch into related intents as part of the primary intent, and work only within this context. An output context is added to the parent intent and an input context of the same name is added to the newly created child intent. Thus, the child intent can only be matched when the parent intent was matched during a previous portion of the conversation.
 
@@ -96,8 +96,8 @@ You can enable the dialog task to present all the Follow-up tasks to the user at
 
 1. Open the dialog task whose settings you want to customize.
 2. On the top-right of the Dialog Builder, click the **more** options icon and then click **Dialog Settings**.
-3. The Follow-up Task sections shows the following options:
+3. The **Follow-up Task** section shows the following options:
 <img src="../images/follow-up-task.png" alt="follow up task" title="follow up task" style="border: 1px solid gray; zoom:75%;">
 
-  * **Yes**, at the end of this dialog ask the user to select and perform a task from the _Follow-up task_ list: Select this option to show all the unattended intents to the user at the end of the dialog. To customize the message sent to the user, click **Manager Response** next to the option.
-  * **No**, the _Follow-up task_ list is handled as part of the node connections: This is the default option. If this option is active, the VA does not present the Follow-up intents to the users at the end of the dialog. However, a developer can access this using the _FollowupIntents_ array.
+<ul><li><b>Yes</b>, at the end of this dialog ask the user to select and perform a task from the <i>Follow-up task</i> list: Select this option to show all the unattended intents to the user at the end of the dialog. To customize the message sent to the user, click <b>Manager Response</b> next to the option.</li>
+<li><b>No</b>, the <i>Follow-up task</i> list is handled as part of the node connections: This is the default option. If this option is active, the VA does not present the Follow-up intents to the users at the end of the dialog. However, a developer can access this using the <i>FollowupIntents</i> array.</li></ul>
