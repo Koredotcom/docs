@@ -17,25 +17,25 @@ The Kore.ai Knowledge Graph Generator is hosted on the Kore GitHub repository. T
 
 ## Prerequisites
 
-* **Python 3.6**: The Knowledge Graph Generator requires python v3.6. You can download it [here](https://www.python.org/downloads/).
-* **Virtual Environment**: It is advised to use a virtual environment, instead of installing requirements in the system directly. Follow the [steps mentioned here](https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments) to set up a virtual environment.
+* **Python 3.6**: The Knowledge Graph Generator requires python v3.6. You can download it <a href="https://www.python.org/downloads/" target="_blank">here</a>.
+* **Virtual Environment**: It is advised to use a virtual environment, instead of installing requirements in the system directly. Follow the steps mentioned <a href="https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments" target="_blank">here</a> to set up the environment.
 * For Windows Developers:
     * **Microsoft Visual C++** Build Tools – tested with v14.0.
-    * Windows 10 users must install **Windows 10 SDK**. You can download it [here](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk/).
+    * Windows 10 users must install **Windows 10 SDK**. You can download it <a href="https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk/" target="_blank">here</a>.
     * The operating system must be up to date for a seamless installation of requirements. Some libraries like SpiCy (internal dependency) need specific DLLs that are available in the latest updates.
 * A file containing the FAQs in _JSON_ or _CSV_ format. You can obtain this file in two ways:
-    * Export the Knowledge Graph from XO Platform, [see here for how](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/importing-the-bot-ontology-from-csv-or-json/#Exporting_Ontology).
+    * Export the Knowledge Graph from XO Platform, <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/import-and-export-knowledge-graph/" target="_blank">Learn more</a>.
     * Build the Knowledge Graph in a tabular form with questions in the first column and answers in the corresponding second column and save the file in _CSV_ format.
 
 ## Configuration
 
-1. Download the Knowledge Graph Generator from Kore.ai GitHub: [https://github.com/Koredotcom/KnowledgeGraphGenerator](https://github.com/Koredotcom/KnowledgeGraphGenerator).
+1. Download the Knowledge Graph Generator from <a href="https://github.com/Koredotcom/KnowledgeGraphGenerator" target="_blank">Kore.ai GitHub</a>.
 2. Extract the zip file into a folder and open the command prompt from that generator folder.
 3. Activate the virtual environment: Execute the following command replacing the placeholders with actual values to activate the virtual environment:
     1. For Windows: 
-`&lt;virtual_environments_folder_location>/&lt;virtualenv_name>/Scripts/activate`
+`<virtual_environments_folder_location>/>virtualenv_name>/Scripts/activate`
     2. For Unix/macOS: 
-`&lt;virtual_environments_folder_location>/&lt;virtualenv_name>/bin/activate`.
+`<virtual_environments_folder_location>/<virtualenv_name>/bin/activate`.
 4. Once the virtual environment is activated, you can see the virtual environment name at the start of every command in the console.
 5. Install the requirements: Run the following command from your project root directory (KnowledgeGraphGenerator) in the virtual environment to install the requirements 
 `pip install -r requirements.txt 
@@ -124,7 +124,7 @@ The output JSON file is generated and placed under the project root directory wi
 
 The output JSON file can directly be imported to Knowledge Graph in the bot. 
 
-Please refer to this [link](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/importing-the-bot-ontology-from-csv-or-json/#Importing_Ontology) for steps to import Knowledge Graph.
+Please refer to this <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/import-and-export-knowledge-graph/#import" target="_blank">link</a> for steps to import Knowledge Graph.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
