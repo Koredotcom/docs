@@ -61,7 +61,7 @@ In the case of Entity and Confirmation nodes, you refer to Prompts whereas, for 
     1. To edit the default sample message by adding context object variables or javascript code, click the sample message. The Message editor opens.
     2. To add a new prompt message, click **Add Prompt Message/Manage Prompts**. The Message editor opens.
 
-6. In the **Channel **drop-down list,** All Channels** is the default value. To create a channel-specific message, select the channel from the list.
+6. In the **Channel** drop-down list, **All Channels** is the default value. To create a channel-specific message, select the channel from the list.
 7. On the Message Editor, the **Plain Text** tab is the default selection. If you want to compose a Javascript message, click the **Advanced** tab.
 
     <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
