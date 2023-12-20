@@ -2,7 +2,7 @@
 
 The Answer from Documents feature helps answer end-user queries from unstructured PDF documents without the need to extract individual FAQs and train them. This feature leverages a Large Language Model (LLM) and Generative AI models from OpenAI or Azure OpenAI integration to generate answers by processing uploaded documents and user queries. This is a beta feature and is available in English and Non-English languages supported on the XO Platform.
 
-<div class="admonition caution">
+<div class="admonition warning">
 <p class="admonition-title"><b>Important</b></p>
 <p>After redacting personally identifiable information, the documents and end-user queries are shared with OpenAI or Azure OpenAI integration to curate the answers. You must agree to enable the feature.</p></div>
 
@@ -57,11 +57,12 @@ To upload PDF documents, follow these steps:
 
 2. **Drag and drop** your document or click **Browse** to find it on your computer. 
 
-!!!note
+    !!!note
 
-    Filenames must not be longer than 10 characters.
+        Filenames must not be longer than 10 characters.
 
 <ol start="3"><li>Once selecting the document, you can update its name if required. Click <b>Proceed</b> when ready.
+
 <img src="../images/click-proceed-documents-upload.png" alt="click proceed" title="click proceed" style="border: 1px solid gray; zoom:75%;"></li>
 <li>Please wait a few moments until your document uploads. This action may take longer than expected, depending on the file size, your connection speed, and other factors.</li>
 <li>When the upload completes successfully, close the upload window.
@@ -107,7 +108,7 @@ You must confirm your choice. Click **OK** to do so, or **Cancel** otherwise.
 
 !!!note
 
-You cannot restore deleted documents. You must upload them again if you change your mind later.
+    You cannot restore deleted documents. You must upload them again if you change your mind later.
 
 ## Disable Answer from Documents
 
