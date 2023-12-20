@@ -10,7 +10,7 @@ It includes an entity value for the assistant to proceed with the current intent
 
 VAs must account for this by allowing users to pause a task, start and complete another task, and seamlessly return to the original task without losing important contextual data and conversation continuity.
 
-Kore.ai provides you with granular control over hold and resume functionality at the VA, task, and node levels, and allows you to [control context switching](https://developer.kore.ai/docs/bots/bot-intelligence/context-management/) rules and behaviors. You can handle such interruptions in intent flows by providing a whole range of options to define the task-switching experience.
+Kore.ai provides you with granular control over hold and resume functionality at the VA, task, and node levels, and allows you to <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/context-management" target="_blank">control context switching</a> rules and behaviors. You can handle such interruptions in intent flows by providing a whole range of options to define the task-switching experience.
 
 The **Manage Interruptions** options allow you to select if and how a user can switch to another task, as well as the exit strategies. It can be set up at the VA, task, and node levels to ensure the configurations are layered to suit your various business requirements. You can also add conditional exceptions between tasks with the ability to pass contextual data between them.
 
@@ -35,7 +35,7 @@ To customize the interruptions settings for a node:
 
 1. Open the dialog task and then the node to change settings.
 2. Click the **instance tab** and select **Advanced Controls**.
-3. Under the **Interruptions Behavior** section, select **Customize for this node** and make the necessary configurations. These configurations are the same as discussed above for the VA level [Interruptions Settings](https://multisite.korebots.com/bot-intelligence-bots/interruption-handling-context-switching-intents/#Interruptions).
+3. Under the **Interruptions Behavior** section, select **Customize for this node** and make the necessary configurations. These configurations are the same as discussed above for the VA level <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/manage-interruptions/" target="_blank">interruptions</a>.
 
 <img src="../images/node-level-customization.gif" alt="node level customization" title="node level customization" style="border: 1px solid gray; zoom:65%;">
 
@@ -49,7 +49,7 @@ To customize the Interruptions settings for a dialog:
 2. On the top-right of the dialog builder, click the **more options icon** and then click **Manage Interruptions**.
 <img src="../images/dialog-level-manage-interruptions.png" alt="node level customization" title="node level customization" style="border: 1px solid gray; zoom:75%;">
 
-3. Under the Interruptions Behavior section, select **Customize for this task** and make the necessary configurations. These settings are the same as discussed above for the Bot Level [Interruptions](https://developer.kore.ai/docs/bots/bot-intelligence/interruption-handling-context-switching-intents/#Allow_Interruptions).
+3. Under the Interruptions Behavior section, select **Customize for this task** and make the necessary configurations. These settings are the same as discussed above for the Bot Level <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#allow-interruptions" target="_blank">interruptions</a>.
 <img src="../images/dialog-level-manage-interruptions.png" alt="dialog level manage interruptions" title="dialog level manage interruptions" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
@@ -91,7 +91,7 @@ Following are the options under **Allow interruptions**.
   <tr>
    <td><strong>Hold the current task and resume back once the new task is completed</strong>
    </td>
-   <td>This option lets the assistant switch to a new intent as soon as it is detected irrespective of the current intent flow. When you select this option, the Resume Options section appears providing further choices to define how to resume the on-hold task once the new intent task is completed.  Refer to the <a href="https://developer.kore.ai/docs/bots/bot-intelligence/interruption-handling-context-switching-intents/#Resume_Options">Resume Options</a> section below for details.
+   <td>This option lets the assistant switch to a new intent as soon as it is detected irrespective of the current intent flow. When you select this option, the Resume Options section appears providing further choices to define how to resume the on-hold task once the new intent task is completed.  Refer to the <a href="https://developer.kore.ai/docs/bots/bot-intelligence/interruption-handling-context-switching-intents/#Resume_Options" target="_blank">Resume Options</a> section below for details.
    </td>
   </tr>
  <tr bgcolor="#FAFAFA">
@@ -109,21 +109,20 @@ Following are the options under **Allow interruptions**.
   <tr bgcolor="#FAFAFA">
    <td><strong>Continue with the current task and add a new task to the follow-up task list</strong>
    </td>
-   <td>When you select this option, the VA continues on the current task even if it encounters a new intent. It, however, adds the new intent to the Follow-up intents array. Refer to the <a href="https://developer.kore.ai/docs/bots/bot-intelligence/sub-intents-and-follow-up-intents/#Follow-up_Intents">Follow-up Intents</a> documentation for more information.
+   <td>When you select this option, the VA continues on the current task even if it encounters a new intent. It, however, adds the new intent to the Follow-up intents array. Refer to the <a href="https://developer.kore.ai/docs/bots/bot-intelligence/sub-intents-and-follow-up-intents/#Follow-up_Intents" target="_blank">Follow-up Intents</a> documentation for more information.
    </td>
   </tr>
 </table>
 
-
 ### Do not allow interruptions
 
-When you select this option, the assistant-level **interruptions** are turned off. However, you may override this behavior for selected tasks, linked dialogs (exceptions), or node levels. Refer to the [Interruptions Hierarchy ](https://developer.kore.ai/docs/bots/bot-intelligence/interruption-handling-context-switching-intents/#Interruptions_Hierarchy)section above for more information.
+When you select this option, the assistant-level **interruptions** are turned off. However, you may override this behavior for selected tasks, linked dialogs (exceptions), or node levels. Refer to the <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#interruptions-hierarchy" target="_blank">Interruptions Hierarchy</a> section above for more information.
 
 ### Allow the end user to select the behavior
 
 When you select this option, the VA presents the end-user with a confirmation message asking if the user wants to switch to a new task. The VA switches to the new task only if the end-user chooses to do so. You can customize the confirmation message sent to the user by clicking the **Manage Response** link next to the option.
 
-You need to define a *Resume* option that the VA should take if the user decides to switch the task. Refer to the [Resume Options](https://developer.kore.ai/docs/bots/bot-intelligence/interruption-handling-context-switching-intents/#Resume_Options) section below for details.
+You need to define a *Resume* option that the VA should take if the user decides to switch the task. Refer to the <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#resume-options" target="_blank">Resume Options</a> section below for details.
 
 ### Resume Options
 
