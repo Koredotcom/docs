@@ -24,13 +24,7 @@ When you create a dialog task, by default the first component created and displa
 
 **Additional components** in the dialog task need to be added to perform the intent requested by the end-user. For example, for the _Search for a Flight_ dialog, you should add additional components to query the user for the departure airport, arrival airport, and date.
 
-To add a component, click either of the **Add Component** 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
- icons as shown in the following illustration:
+To add a component, click either of the **Add Component** <img src="../images/add-component-icon.png"> icons as shown in the following illustration:
 
 
 <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
@@ -179,13 +173,7 @@ A real-time set of errors and warnings is available as you define your dialog ta
 
 ![alt_text](images/image17.png "image_tooltip")
 
-In addition, you can view the flow of your dialog task from the start of the root intent to a selected component by using the **Show Trace** 
-
-<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image18.png "image_tooltip")
- icon as shown in the following illustration.
+In addition, you can view the flow of your dialog task from the start of the root intent to a selected component by using the **Show Trace** <img src="../images/show-trace-icon.png"> icon as shown in the following illustration.
 
 
 <p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
