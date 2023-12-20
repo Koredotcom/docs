@@ -20,8 +20,6 @@ Let’s understand how the custom agent can be integrated and how it can improve
 
 ## Prerequisites
 
-
-
 * A fully functional Bot (we will be using a Banking Bot).
 * Download BotKit SDK from [Kore’s GitHub](https://github.com/Koredotcom/BotKit){:target="_blank"}.
 * Download and Install the Node.js(version 10 or above). The BotKit SDK requires node.js to run on the same server where the SDK is installed.
@@ -29,7 +27,7 @@ Let’s understand how the custom agent can be integrated and how it can improve
     2. In a Terminal window, run the `node -v` command to verify installation and version, for example, v6.10.2.
 
 * A test callback server application. We will be using NGROK from [https://dl.equinox.io/ngrok/ngrok/stable](https://dl.equinox.io/ngrok/ngrok/stable){:target="_blank"} to simulate the callback server application. Following are the steps to install NGROK:
-    1. Open [https://dl.equinox.io/ngrok/ngrok/stable](https://dl.equinox.io/ngrok/ngrok/stable).
+    1. Open [https://dl.equinox.io/ngrok/ngrok/stable](https://dl.equinox.io/ngrok/ngrok/stable){:target="_blank"}.
     2. Download and install the ngrok file for your operating system.
         * To download NGROK on Windows:
             1. Download the zip file for your Windows machine 32-bit or 64-bit.
@@ -144,10 +142,10 @@ Let’s understand how the custom agent can be integrated and how it can improve
 
     The events and methods required for sending messages from User, bot, and transferring to Agent are outlined in LiveChat.JS.
 
-1. _~on_user_message_ event is triggered when a user sends a message. This message is sent to the bot using the sendBotMessage method.
-2. _~on_bot_message_ is triggered when bot sends a message. This message is sent to the user using the SendUserMessage method.
-3. _~on_agent_transfer_ event is triggered when the service agentTransfer node is triggered in bot. This event connects to the agent using the connectToAgent method, which internally calls the initChat API.
+1. _on_user_message_ event is triggered when a user sends a message. This message is sent to the bot using the sendBotMessage method.
+2. _on_bot_message_ is triggered when bot sends a message. This message is sent to the user using the SendUserMessage method.
+3. _on_agent_transfer_ event is triggered when the service agentTransfer node is triggered in bot. This event connects to the agent using the connectToAgent method, which internally calls the initChat API.
 4. _gethistory_ method gives the chat history of the user with the bot to the transferred agent.
 5. _scheduleJob_ is run for every 5 secs, and it polls for the pending messages from the Agent, which internally calls the getPendingMessages.
 6. _getPendingMessages_ gets all the pending messages from Agent and delivers it to the User.
-7. _~chat_closed_ gets triggered when the agent closes the chat with the user.
+7. _chat_closed_ gets triggered when the agent closes the chat with the user.
