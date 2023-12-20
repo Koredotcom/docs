@@ -25,8 +25,8 @@ To complete the following procedure, you must have already defined a task, such 
 
 1. In Bot Builder, select the task for the Bot that you want to add a table report link to.
 **Note:** Only unpublished tasks can be modified.
-2. Click the **Settings** <img src="../settings-icon.png"> icon, and then click **Edit**.
-3. On the **Bot Response** tab for the task that you want to add a table report to, click the **Expand** <img src="../expand-icon.png"> icon for the **Report Template Definition** section.
+2. Click the **Settings** <img src="../images/settings-icon.png"> icon, and then click **Edit**.
+3. On the **Bot Response** tab for the task that you want to add a table report to, click the **Expand** <img src="../images/expand-icon.png"> icon for the **Report Template Definition** section.
 4. In the **Link Title** field, enter the link text to display to the end-user in the task post, for example, _Your Task List_.
 5. In the **Header** field, enter the title of the report to display when the table report is displayed to the end-user.
 6. In the **Details** field, optionally enter any end-user help information displayed directly below the **Header** in the report, for example, _This is a list of your daily Google Tasks_.
