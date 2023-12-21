@@ -25,7 +25,7 @@ For example, User utterance _what are the extra charges?_ should be responded wi
 * **Sharing Entity Values across Intents**: Entity values or conversation flows can be driven using the previous intent’s context information. 
 For example, The _City Name_ entity in _Check Weather_ intent can be pre-populated if the user has executed _Check Flight Status_ intent and has provided value for the _Destination City_ entity.
 
-This document talks about the concepts behind the implementation of context management in the XO Platform. For a detailed step-by-step example, [refer here](https://developer.kore.ai/docs/bots/how-tos/context-switching/).
+This document talks about the concepts behind the implementation of context management in the XO Platform. For a detailed step-by-step example, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#interruptions-hierarchy" target="_blank">here</a>.
 
 <div class="admonition note">
 <p class="admonition-title">Example</p>
@@ -118,7 +118,7 @@ Intent pre-conditions for dialog intents are set to define when a dialog is dete
 <img src="../images/dialog-tasks-preconditions.png" alt="dialog tasks precondition" title="dialog tasks precondition" style="border: 1px solid gray; zoom:75%;">
 
 * Dialog intents with pre-conditions are detected only if the defined pre-conditions are met.
-* The intent with a precondition set is treated as a sub-intent and will be part of the [Linked Task Exception](https://developer.kore.ai/docs/bots/bot-intelligence/sub-intents-and-follow-up-intents/#Linked_Task_Exceptions) behavior from the Dialog level Hold and Resume settings.
+* The intent with a precondition set is treated as a sub-intent and will be part of the <a href=" https://docsinternal-kore.github.io/docs/xo/automation/intelligence/sub-intents-and-follow-up-intents/#linked-task-exceptions" target="_blank">Linked Task Exception</a> behavior from the Dialog level Hold and Resume settings.
 
 #### Alert Tasks
 

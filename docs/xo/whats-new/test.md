@@ -124,7 +124,7 @@ Material for MkDocs is licensed under MIT and available on [GitHub]
 :fontawesome-brands-css3: __CSS__ for text running out of boxes
 { .card }
 
-> :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
+> :fontawesome-brands-internet-explorer: __Internet Explorer New__ ... huh?
 
 </div>
 

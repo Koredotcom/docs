@@ -4,7 +4,7 @@
 
 The Ontology-based Knowledge Graph turns static FAQ text into an intelligent, personalized conversational experience. It uses domain terms and relationships thus reducing the training needs. It also has the capability to enable the ontology weighted features whenever ML gets confused and to automate conversational dialog for resolving appropriate answers.
 
-The Few-Shot Knowledge Graph leverages Kore.ai’s LLM and lets you add FAQs without building an ontology. Less training and maintenance are required since you do not need to configure the graph term-by-term. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-overview/#knowledge-graph-types" target="_blank">Learn more about Knowledge Graph Types</a>.
+The Few-Shot Knowledge Graph leverages Kore.ai’s LLM and lets you add FAQs without building an ontology. Less training and maintenance are required since you do not need to configure the graph term-by-term. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-overview/#knowledge-graph-types" target="_blank">Learn more</a> about Knowledge Graph Types.
 
 The Knowledge Graph engine thus responds to users’ intents by identifying the appropriate questions within the Knowledge Graph, and then presenting the user with the appropriate response.
 

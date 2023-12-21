@@ -1,6 +1,6 @@
 # Creating a Knowledge Graph from CSV or JSON Files
 
-The XO Platform gives you the option to create a Knowledge Graph in a spreadsheet or JSON and then  import it into the VA instead of creating the Knowledge Graph from scratch. [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/importing-the-bot-ontology-from-csv-or-json/). 
+The XO Platform gives you the option to create a Knowledge Graph in a spreadsheet or JSON and then  import it into the VA instead of creating the Knowledge Graph from scratch. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/import-and-export-knowledge-graph/" target="_blank">Learn more</a>.
 
 The process to create a Knowledge Graph using an editor is summarized below:
 
@@ -133,7 +133,6 @@ For Taxonomy Based KG, the following fields can be included if there are one or 
 The XO Platform allows you to create the Knowledge Graph in JSON and upload it. You can download a sample JSON from the VA to understand its structure.
 
 Follow the instructions below to build your Knowledge Graph using JSON:
-
 
 ### Download the Sample File
 
