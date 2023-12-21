@@ -40,7 +40,7 @@ To configure the Intercom agent, follow the instructions in the sections below.
 2. Select a Virtual Assistant for which you want to configure the Genesys agent. 
 3. Navigate to **Build > Integrations > Agent Transfer** and click the **Genesys** button.
 
-    <img src="../images/configuring-the-genesys-agent-img1.png" alt="Agent Transfer -> Genesys" title="Agent Transfer -> Genesys" style="border: 1px solid gray;">
+    <img src="../images/configuring-the-genesys-agent-img1.png" alt="Agent Transfer - Genesys" title="Agent Transfer - Genesys" style="border: 1px solid gray;">
 
 4. Click the **Configurations** tab and enter the following credentials for the Genesys Agent:
     1. **Genesys Cloud login URL**: URL of your Genesys AWS Region which will allow the platform to route the conversation requests to the provided Genesys AWS region. This is a **mandatory field**. You can find the URL of your region through the link provided with the field.

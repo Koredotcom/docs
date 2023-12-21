@@ -74,14 +74,14 @@ To set up the retrieve the verification token, follow these steps:
 2. Select a Virtual Assistant for which you want to configure the Drift agent.
 3. Navigate to **Build > Integrations > Agent Transfer** and click the **Drift** button.
 
-    <img src="../images/configuring-the-drift-agent-img6.png" alt="Agent Transfer -> Drift" title="Agent Transfer -> Drift" style="border: 1px solid gray;">  
+    <img src="../images/configuring-the-drift-agent-img6.png" alt="Agent Transfer - Drift" title="Agent Transfer - Drift" style="border: 1px solid gray;">  
 
 4. Click the Configurations tab and enter the following credentials for the Drift Agent:
 
     1. **Access Token**: The access token ID for the Drift, which was copied in step 2.
     2. **Verification Token**: The token ID for the Drift, which was copied in step 3.
 
-    <img src="../images/configuring-the-drift-agent-img7.png" alt="Enter Drift agent credentials" title="Enter Drift agent credentials" style="border: 1px solid gray;">
+        <img src="../images/configuring-the-drift-agent-img7.png" alt="Enter Drift agent credentials" title="Enter Drift agent credentials" style="border: 1px solid gray;">
 
 5. If you want to make Drift the default agent, enable the **Default Agent System for all bot channels** option.
 
