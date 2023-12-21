@@ -28,7 +28,7 @@ Create an external integration in Drift to receive messages.
 4. Add the redirect URL. This URL is found on the **Configurations** tab of Kore.ai’s Drift Agent.
 5. Paste the URL and click **Add**.
 
-    <img src="../images/configuring-the-drift-agent-img2.png" alt="Add redirect URL" title="Add redirect URL" border="1">
+    <img src="../images/configuring-the-drift-agent-img2.png" alt="Add redirect URL" title="Add redirect URL" style="border: 1px solid gray;>
 
 6. Select the WebHooks tab and add the Request URL, which is Kore.ai’s Drift Agent Webhook URL on the Configurations tab. Provide access to the following scopes for the Webhook as shown:
     1. new_message
@@ -74,9 +74,10 @@ To set up the retrieve the verification token, follow these steps:
 2. Select a Virtual Assistant for which you want to configure the Drift agent.
 3. Navigate to **Build > Integrations > Agent Transfer** and click the **Drift** button.
 
-    <img src="../images/configuring-the-drift-agent-img6.png" alt="Agent Transfer -> Drift" title="Agent Transfer -> Drift" style="border: 1px solid gray;">
+    <img src="../images/configuring-the-drift-agent-img6.png" alt="Agent Transfer -> Drift" title="Agent Transfer -> Drift" style="border: 1px solid gray;">  
 
 4. Click the Configurations tab and enter the following credentials for the Drift Agent:
+
     1. **Access Token**: The access token ID for the Drift, which was copied in step 2.
     2. **Verification Token**: The token ID for the Drift, which was copied in step 3.
 
