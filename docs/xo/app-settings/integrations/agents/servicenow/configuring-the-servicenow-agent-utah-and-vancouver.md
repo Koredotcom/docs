@@ -177,7 +177,7 @@ This section helps you verify how the conversations from the Kore.ai XO Platform
 To verify the data exchange between Kore.ai’s VA and ServiceNow agent, follow these steps:
 
 1. Open a virtual assistant for which you have enabled the ServiceNow agent.
-2. Create a new Agent Transfer Node task. For example, create a _Platform Agent_ task with the _UserAgent_ node and configure it to use the ServiceNow agent. For more information, see [Agent Transfer Node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-agent-transfer-node/){:target="_blank"}.
+2. Create a new Agent Transfer Node task. For example, create a _Platform Agent_ task with the _UserAgent_ node and configure it to use the ServiceNow agent. For more information, see [Agent Transfer Node](../../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node){:target="_blank"}.
 
     <img src="../images/configuring-the-servicenow-agent-utah-and-vancouver-img23.png" alt="new Agent Transfer Node task" title="new Agent Transfer Node task" style="border: 1 px solid gray; zoom=60%;">
 
