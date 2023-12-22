@@ -58,8 +58,8 @@ For a detailed document on the implementation, [refer here](https://developer.ko
 * From your Unblu Account, **API Keys** section, make a note of the _API Key_.
 * Configure the **Unblu SDK** to give access to Kore.ai assistant, following the steps given below.
 * Open the Unblu SDK HTML file. Ensure that the following attributes are set:  
-    * In the `&lt;head>` the meta tag should look thus: `&lt;meta name="unblu:named-area" content="&lt;your-namedArea-Id>" />` This is the named area that you created in Step 1 above.
-    * Script tag to populate the visitor information needs point to the Unblu host: `&lt;script src="&lt;your-unblu-host>/unblu/js-api/v2/visitor/visitor-api.min.js">&lt;/script>`
+    * In the `<head>` the meta tag should look thus: `<meta name="unblu:named-area" content="<your-namedArea-Id>" />` This is the named area that you created in Step 1 above.
+    * Script tag to populate the visitor information needs point to the Unblu host: `<script src="<your-unblu-host>/unblu/js-api/v2/visitor/visitor-api.min.js"></script>`
     * Invoke the function `setVisitorData` to pass the visitor data to Kore.ai assistant. Note that the `visitorData` should be in string format and if you need to pass an object use Stringify.
 
         Locate the following section and populate the apiKey and serverUrl fields with the above-mentioned values.  
@@ -75,7 +75,7 @@ For a detailed document on the implementation, [refer here](https://developer.ko
     * In the following Script tag, add Unblu host URL and the API key: 
     
         ```
-        <script type="text/javascript" defer="defer" src="&lt;your-unblu-host>/unblu/visitor.js?x-unblu-apikey=&lt;your-unblu-apikey>"></script>
+        <script type="text/javascript" defer="defer" src="<your-unblu-host>/unblu/visitor.js?x-unblu-apikey=<your-unblu-apikey>"></script>
         ```
 
     * The entire Unblu SDK HTML file would look like this:
