@@ -89,7 +89,7 @@ Complete the following steps to configure the ServiceNow agent for **Utah** and 
 1. Log in to the ServiceNow Developer instance with Admin User Credentials.
 2. To create an application, search and select the **System Definition** under **Plugins** from the left menu.
 
-<img src="../images/configuring-the-servicenow-agent-utah-and-vancouver-img6.png" alt="System Definition - Plugins" title="System Definition - Plugins" style="border: 1px solid gray;zoom=60%;">
+    <img src="../images/configuring-the-servicenow-agent-utah-and-vancouver-img6.png" alt="System Definition - Plugins" title="System Definition - Plugins" style="border: 1px solid gray;zoom=60%;">
 
 3. Search and install the following plugins:
 
