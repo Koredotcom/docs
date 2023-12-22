@@ -23,7 +23,7 @@ The Agent Console is an agent’s primary working area consisting of the followi
 2. Incoming Interactions (Next Customer notification)
 3. Live Interaction Pane
 4. Additional Tools (AgentAssist Widget, History, Actions, Responses, User Info). The layout and components can be customized using [Manage Layout](https://docs.kore.ai/smartassist/console/manage-layout/).
-<img src="../images/console-layout.png" alt="Contact Center Icon" title="Contact Center Icon" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/console-layout.png" alt="Console Layout" title="Console Layout" style="border: 1px solid gray; zoom:80%;">
 
 # Agent Features
 
