@@ -275,7 +275,8 @@ To define the survey design, follow the steps below:
     ![alt_text](images/fs17.png "image_tooltip")
 
 
-    !!! 
+    !!! note
+    
 
         The default response names provided for **CSAT** and the **Like/Dislike** types are editable; however, the scores set in the system cannot be changed for any survey type.
 

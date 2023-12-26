@@ -405,13 +405,15 @@ Follow these steps to publish a universal bot:
     * Include new linked bots, or
     * Update already published linked bots, or
     * Delete any unlinked bots
+    !!! note
 
-             Default dialog is automatically selected and as it is mandatory to publish it you cannot de-select it. 
+            Default dialog is automatically selected and as it is mandatory to publish it you cannot de-select it. 
 
 6. You can choose to Publish the following training components:
     * Training Utterances, Invocation Names, Synonyms, Fallback Bots, NLP Settings 
-    
-            The first time you are publishing a Universal Bot, all the NLP settings need to be selected for publishing
+    !!! note
+
+          The first time you are publishing a Universal Bot, all the NLP settings need to be selected for publishing
 7. Select from the list of enabled languages to publish the bot and then click **Proceed**. 
 [ ](https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20210630111657/ub_publish.png)
 
@@ -420,8 +422,9 @@ Follow these steps to publish a universal bot:
     ![alt_text](images/image2.png "image_tooltip")
 
 8. Enter appropriate **Comments** and click **Publish**.
+!!! note
 
-        After you publish a universal bot, all the published tasks in the selected linked bots become accessible to the users and any changes made to the linked bots automatically reflect in the universal bot.
+       After you publish a universal bot, all the published tasks in the selected linked bots become accessible to the users and any changes made to the linked bots automatically reflect in the universal bot.
 
 		
 

@@ -281,7 +281,7 @@ By default, it is set to 0.3 and can be set to any value between 0 and 1.
 
 
 
-![alt_text](images/tub45.png "image_tooltip")
+![alt_text](images/tub4.png "image_tooltip")
 
 
 		
@@ -329,8 +329,9 @@ Inclusive bots need not be trained with sample utterances to participate in the 
 
 ![alt_text](images/tub6.png "image_tooltip")
 
+!!! note
 
-        A linked bot can be marked either as Fallback or Inclusive, not both.
+    A linked bot can be marked either as Fallback or Inclusive, not both.
 
 
 ## **Linked Bots**
@@ -415,7 +416,7 @@ The following configurations are to be provided in the Bot Builder so that you c
 * **Bot Assignment Behaviour** can be used to define the behavior when the eligible bots are not set for a given user ([see here](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/training-a-universal-bot/#Eligible_Bots)). The setting can be:
     * _Assign all Child Bots_: All linked bots are eligible. This is the default setting.
     * _Do not Assign any Child Bot_: The user is not eligible for any of the linked bots.
-* 
+
 
 
 
