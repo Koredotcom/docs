@@ -9,7 +9,7 @@ When basic authorization is used for a task, the XO Platform automatically promp
 
 After the end-user is authorized, the settings are saved using the following naming syntax:
 
-{{ First Name }} {{ Last Name }} {{ VA Name }} {{ Account # }} {{ Sequence # }}
+<p><code>{{ First Name }} {{ Last Name }} {{ VA Name }} {{ Account # }} {{ Sequence # }}</code></p>
 
 For example, John Smith’s Twitter Account #1.
 
@@ -123,7 +123,7 @@ After you save the authentication, if you have defined an **Authorization Check 
 
 2. After you click **Test Authorization**, the **Test Authorization** window is displayed and populated with the URL you specified in the **Authorization Check URL** section, as shown in the following illustration.
 
-<img src="../images/test-authorization-window.png" alt="test authorization window" title="test authorization window" style="border: 1px solid gray; zoom:75%;">
+  <img src="../images/test-authorization-window.png" alt="test authorization window" title="test authorization window" style="border: 1px solid gray; zoom:75%;">
 
 To configure the Test Authorization – Basic Auth, follow the below steps:
 

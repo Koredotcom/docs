@@ -98,7 +98,7 @@ The following table describes the fields used to define an authorization IDP for
 
 ## Authorization Fields
 
-By default, authorization fields are configured as part of the header of the task request message. If your task request requires additional authorization fields or the expected authorization is not part of the header, for example, social security number or PIN, click **+ Add Authorization Field**and then define the fields as shown in the following illustration.
+By default, authorization fields are configured as part of the header of the task request message. If your task request requires additional authorization fields or the expected authorization is not part of the header, for example, social security number or PIN, click **+ Add Authorization Field** and then define the fields as shown in the following illustration.
 <img src="../images/auth-fields-oauth.png" alt="auth fields oauth" title="auth fields oauth" style="border: 1px solid gray; zoom:75%;">
 
 1. In the **Field Type** field, you can select one of the following depending on where in the task request message and the type of authorization fields that are required.
@@ -109,8 +109,7 @@ By default, authorization fields are configured as part of the header of the tas
 2. In the **Field Key** field, enter the name of the field for the selected **Field Type**.
 3. In the **Field Value** field, enter the value for the **Field Key** specified.
 4. Click **Done**. The new authorization field is added in the **Authorization Fields** section.
-
-To add additional authorization fields, click **Add** in the **Authorization Fields** section.
+5. To add additional authorization fields, click **Add** in the **Authorization Fields** section.
 
 ## Token URL
 
@@ -122,8 +121,7 @@ http://{tenant}.someCompany.com/test/{{tokenId}}
 3. In the **Token URL Content Type** field, select the content type expected from the **Token URL**. One of: **JSON, RSS, XML, URL Encoded JSON, CSV, Text, Twitter Encoded JSON, Multipart/Form-data,Multipart/Related**, or **Oracle ADF**.
 4. In the **Refresh Token URL**, enter the refresh token URL if required. 
 5. For situations when there may be authentication errors, enter the **Auth Error Status Code**.
-
-Click **Save Auth** to save the authorization settings and close the **New Authorization Mechanism** dialog.
+6. Click **Save Auth** to save the authorization settings and close the **New Authorization Mechanism** dialog.
 
 ## Testing
 
