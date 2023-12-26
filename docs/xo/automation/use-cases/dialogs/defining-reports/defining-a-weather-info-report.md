@@ -1,6 +1,6 @@
 # Defining a Weather Info Report
 
-While you can configure a standard Kore.ai alert to provide an alert message to a user with, for example, a weather report for the day, or daily tide report. But what if the user wants a 3-day or 10-day forecast? That’s a lot of data to push into a single message. With the Kore.ai Bots Platform, you can define a link in your message that can display the weather data in a formatted table that your end-user can retrieve when needed.
+While you can configure a standard Kore.ai alert to provide an alert message to a user with, for example, a weather report for the day, or daily tide report. But what if the user wants a 3-day or 10-day forecast? That’s a lot of data to push into a single message. With the XO Platform, you can define a link in your message that can display the weather data in a formatted table that your end-user can retrieve when needed.
 The weather info report type can be displayed as a link in a weather alert message as shown in the following illustration for the report called Get 3 Day Forecast.
 
 <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>

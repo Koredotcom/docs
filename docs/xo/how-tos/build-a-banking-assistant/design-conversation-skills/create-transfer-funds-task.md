@@ -5,7 +5,7 @@ This is document details steps in creating a sample banking bot. This bot is use
 ## Prerequisites
 
 <ul>
-<li>You must have <a href="https://developer.kore.ai/docs/bots/getting-started/how-to-open-bot-builder/" target="_blank">signed up</a> with the Kore.ai Bots Platform.
+<li>You must have <a href="https://developer.kore.ai/docs/bots/getting-started/how-to-open-bot-builder/" target="_blank">signed up</a> with the XO Platform.
 
 <li>You must be aware of the basics of Bot building (refer to <a href="https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/" target="_blank">this link</a>).
 

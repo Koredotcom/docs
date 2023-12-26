@@ -4,7 +4,7 @@
 
 When you define tasks, you can access session variables provided by the Bots Platform, or custom variables that you define, as well as the context object that defines the scope of the variable.
 
-For example, some API requests may require you to set session variables before request execution, or a dialog task component may need to access a session variable to transition to the next node. In addition, a dialog task can access the `context` object with additional system variables. For more information, see the [Context Object](https://developer.kore.ai/docs/bots/bot-builder-tool/context-object/).
+For example, some API requests may require you to set session variables before request execution, or a dialog task component may need to access a session variable to transition to the next node. In addition, a dialog task can access the `context` object with additional system variables. For more information, see the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/context-object/" target="_blank">Context Object</a>.
 
 You can use session variables where you define JavaScript for the User Prompt editor in tasks under the JavaScript tab.
 
@@ -135,7 +135,7 @@ The following types of session variables are available on the XO Platform:
         * `locked` – The user exceeded the maximum number of login attempts.
     * **UserContext.get(“jTitle”)** – The title of the user, if defined.
     * **UserContext.get(“orgId”)** – The organizational ID of the user account, if defined.
-    * **UserContext.get(“customData”)** – Use this to pass user information to web channels, currently only for webSDK. For more information, see [Kore.ai Web SDK Tutorial](https://developer.kore.ai/docs/bots/sdks/kore-ai-web-sdk-tutorial/).
+    * **UserContext.get(“customData”)** – Use this to pass user information to web channels, currently only for webSDK. For more information, click <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/kore-ai-web-sdk-tutorial/" target="_blank">here</a>.
     * **UserContext.get(“identities”)** – Alternate user IDs, if defined.
         * `val` – The alternate ID
         * `type` – The type of alternate ID.

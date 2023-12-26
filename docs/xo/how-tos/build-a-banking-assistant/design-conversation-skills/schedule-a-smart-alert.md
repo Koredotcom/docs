@@ -2,7 +2,7 @@
 
 In this post, we explore a scenario for a travel Bot, where the user needs to be provided with weather updates daily for a preferred location. We use an Alert task to achieve the same. We also see how auto-subscription can be enabled on this Alert task, making it smart.
 
-For details on what Alert task is and how it is implemented in the Kore.ai Bots platform, click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/notification-tasks/" target="_blank"> here</a>.
+For details on what Alert task is and how it is implemented in the XO platform, click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/notification-tasks/" target="_blank"> here</a>.
 
 ## Problem Statement
 
@@ -45,7 +45,7 @@ Alert tasks can be used to deliver timely, relevant, and personalized informatio
         <img src="../images/set-task-parameter.png" alt="set task parameter" title="set task parameter" style="border: 1px solid gray; zoom:75%;">
 
         * We will not need any **Initializer** requirements for our use case. Use this in case any JavaScript needs to be executed before the request is sent.
-        * Under **Request** click **Add API** to add the service API that needs to be invoked. We are using a _GET_ method from the following API: `http://api.openweathermap.org/data/2.5/weather?q={cityname}&APPID=&lt;your-app-id>`.
+        * Under **Request** click **Add API** to add the service API that needs to be invoked. We are using a _GET_ method from the following API: `http://api.openweathermap.org/data/2.5/weather?q={cityname}&APPID=<your-app-id>`.
             * The **APPID** in the above url is assigned to you by OpenWeather when you sign up. You can find it from the <a href="https://home.openweathermap.org/api_keys" target="_blank">API keys</a> section after you login to your account.
             * Notice that the **Parameters** list is populated automatically with the parameters entered earlier.
         * **Save** the API.

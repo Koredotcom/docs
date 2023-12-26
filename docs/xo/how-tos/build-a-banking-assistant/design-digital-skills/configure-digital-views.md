@@ -3,7 +3,7 @@
 In this post we explore how you can view your account details using a Digital View and a Banking Bot. We will see how this Digital View can be presented using Panels and Widgets. Widgets can be used to trigger Dialog Tasks and display appropriate messages and Panel can be used to hold these Widgets. 
 We will also see how the Panel can be hosted on Web/Mobile Client using the Widget SDK.
 
-For details on what Digital Views are and how it is implemented in the Kore.ai Bots platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-views/" target="_blank"> here</a>.
+For details on what Digital Views are and how it is implemented in the XO platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-views/" target="_blank"> here</a>.
 
 ## Problem Statement
 
@@ -107,7 +107,7 @@ We will see how to create Widgets with static JSON content. We will use a JSON t
 <ol start="3"><li>In the <b>New Widget</b> dialog, enter the Name, and set the source to JSON.</li>
 <img src="../images/configure-new-widget-dialog.png" alt="configure new widget dialog" title="configure new widget dialog" style="border: 1px solid gray; zoom:75%;"></ol>
 
-Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, click <a href="https://developer.kore.ai/docs/bots/sdks/widget-sdk-message-formatting-and-templates/" target="_blank"> here</a>. 
+Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, click <a href="https://docsinternal-kore.github.io/docs/xo/web-mobile-SDK-message-formatting-and-templates/" target="_blank"> here</a>. 
 
 ```js
 var message =
@@ -152,7 +152,7 @@ To publish the Bot first enable channels:
 
 ## Hosting
 
-We will be hosting the Panels in the web/mobile client. Click <a href="https://developer.kore.ai/docs/bots/sdks/kore-ai-widget-sdk-tutorial/" target="_blank">here</a> for more details on the Widget SDK usage.
+We will be hosting the Panels in the web/mobile client. Click <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/kore-ai-web-sdk-tutorial/" target="_blank">here</a> for more details on the Widget SDK usage.
 
 1. Download the Kore.ai Widget SDK, go to <a href="https://github.com/Koredotcom/web-kore-sdk" target="_blank">Kore Web SDK</a>, and then click **Download**.
 2. Extract all files to the `/SDKApp/sdk` folder.

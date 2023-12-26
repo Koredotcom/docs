@@ -4,7 +4,7 @@ The XO Platform allows you to declare and use variables within the assistants yo
 
 In this Use Case we will explore a scenario in a Travel Planning Assistant, where Variables can be used. We will see how Global Variables can be used to pass API endpoints and change them easily when migrating from development to testing to production environments.
 
-For details on what Variables are and how they are implemented in the XO Platform, click <a href="https://developer.kore.ai/docs/bots/bot-settings/bot-management/using-bot-variables/" target="_blank">here</a>. 
+For details on what Variables are and how they are implemented in the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/variables/using-bot-variables/" target="_blank">here</a>. 
 
 For a use case with Content Variables, click <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/deploy-the-assistant/use-content-variables/" target="_blank">here</a>.
 
@@ -23,7 +23,7 @@ In this document, we will see how Global Variable can be used to store the API e
 
 ## Prerequisites
 
-To go through these configurations, you need to know at least the basics of <a href="https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/" target="_blank">building a Virtual Assistant</a>. This is because your assistant needs to have been already built when you begin working on your variables.
+To go through these configurations, you need to know at least the basics of <a href="https://docsinternal-kore.github.io/docs/xo/virtual-assistants-overview/?h=overview#building-intelligent-conversational-virtual-assistants" target="_blank">building a Virtual Assistant</a>. This is because your assistant needs to have been already built when you begin working on your variables.
 
 ## Implementation
 

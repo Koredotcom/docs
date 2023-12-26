@@ -138,8 +138,6 @@ The following table describes the fields in the **Advanced Settings** section of
   </tr>
 </table>
 
-
-
 ## Authorization
 
 You must define how the end-user must be authorized to get the alert task notification message. For example, _Twitter_ is an alert task using web services that require an authorized end-user. The authorization for the alert task is the same end-user log-in username and password for _Twitter_ to allow Kore.ai to access the end-user account and poll for the alert task data.
@@ -234,7 +232,7 @@ The following illustration is an example of the **Version History** page for a b
 
 ## View Logs
 
-You may need to troubleshoot alert tasks. In the Kore.ai Bot Builder tool, you can view logged events for configured and published alert tasks that interact with the Kore.ai Bots Platform and third-party applications. The **View Logs** command displays archived log events for each alert task instance that you can use to view the alert task request and the application response.
+You may need to troubleshoot alert tasks. In the Kore.ai Bot Builder tool, you can view logged events for configured and published alert tasks that interact with the XO Platform and third-party applications. The **View Logs** command displays archived log events for each alert task instance that you can use to view the alert task request and the application response.
 
 In the **Alert Tasks** section, click the **Settings** (gear) icon for the task to view logs for, and then click **View Logs**. The **Logs** page for the bot alert task opens.
 <img src="../images/alert-tasks-settings.png" alt="alert tasks settings" title="alert tasks settings" style="border: 1px solid gray; zoom:75%;"> 

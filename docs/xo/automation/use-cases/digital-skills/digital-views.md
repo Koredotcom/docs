@@ -4,7 +4,7 @@ Interactions with Virtual Assistants are typically conducted using chat/messagin
 
 Using **Digital Views** from the XO Platform, you can design and launch rich visual experiences through interactive components, panels, and widgets, to proactively present relevant information to your users or customers. **Panels** are the placeholders that hold one or more widgets. **Widgets** are individual components that display information to the end-users. Your users or customers can interact with your VA either in conversation mode or directly get the required information from the widgets.
 
-This article gives an overview on the working and implementation of **Panels & Widgets**. For step-by-step usage instructions, [refer to this article](https://developer.kore.ai/docs/bots/how-tos/how-to-configure-digital-views/).
+This article gives an overview on the working and implementation of **Panels & Widgets**. For step-by-step usage instructions, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/configure-digital-views/" target="_blank">here</a>.
 
 
 ## How It Works 
@@ -150,10 +150,10 @@ You have the following options for a given panel:
 
 When you publish your Virtual Assistant,  please ensure that the panels and widgets you want to include are selected.
 
-[Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/) about publishing a Virtual Assistant.
+<a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/configure-digital-views/#publish" target="_blank">Learn more</a> about publishing a Virtual Assistant.
 
 <img src="../../images/publish-digitalview.png" alt="publish digital view" title="publish digital view" style="border: 1px solid gray; zoom:75%;">
 
 ## Host
 
-The XO Platform provides the Widget SDK for hosting and managing panels and widgets. You can choose to host your widgets independently or co-host them along with the WebSDK. You can download the SDKs from the Kore.ai GitHub page. Do ensure to enable WidgetSDK as a channel. [Learn more](https://developer.kore.ai/docs/bots/sdks/kore-ai-widget-sdk-tutorial/).
+The XO Platform provides the Widget SDK for hosting and managing panels and widgets. You can choose to host your widgets independently or co-host them along with the WebSDK. You can download the SDKs from the Kore.ai GitHub page. Do ensure to enable WidgetSDK as a channel. <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/kore-ai-web-sdk-tutorial/" target="_blank">Learn more</a>.

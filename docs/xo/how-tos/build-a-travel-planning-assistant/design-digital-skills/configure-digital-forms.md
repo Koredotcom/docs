@@ -135,7 +135,7 @@ Use the **Test** button to see a preview. Below is a demo of the user experience
 
 ### Dialog Task Configuration
 
-We will be creating a dialog task and adding a form node to trigger the Digital Form created in the above step and use a service node to make a service call to complete the booking process. Please see <a href="https://developer.kore.ai/docs/bots/chatbot-overview/using-the-dialog-builder-tool/" target="_blank">Using the Dialog Builder</a> for details on working with Dialog Tasks. 
+We will be creating a dialog task and adding a form node to trigger the Digital Form created in the above step and use a service node to make a service call to complete the booking process. Please see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/" target="_blank">Using the Dialog Builder</a> for details on working with Dialog Tasks. 
 
 #### Create a Dialog Task
 
@@ -182,7 +182,7 @@ print(message);
 
 **Talk to the bot** to trigger the above dialog. The form will be displayed, enter the values and click Submit, the message will be displayed.
 
-You can use the context object as shown above in <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-script-node/" target="_blank">Script</a> or <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-service-node/" target="_blank">Service</a> nodes for further processing of the booking.
+You can use the context object as shown above in <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-script-node/" target="_blank">Script</a> or <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-service-node/" target="_blank">Service</a> nodes for further processing of the booking.
 
 Click <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-digital-skills/add-data-into-data-tables-from-ui-forms/" target="_blank">here</a> to learn how to add this data into data tables.
 <img src="../images/test-bot-configure-form.png" alt="test bot configure form" title="test bot configure form" style="border: 1px solid gray; zoom:75%;">
