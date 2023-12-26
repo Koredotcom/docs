@@ -254,7 +254,7 @@ This information grid represents the metadata for the _Total number of conversat
 </table>
 
 
-<img src="../images/user-level- feedback-1.png" alt="User Level Feedback 1" title="User Level Feedback 1" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/user-level-%20feedback-1.png" alt="User Level Feedback 1" title="User Level Feedback 1" style="border: 1px solid gray; zoom:80%;">
 
 !!! note
 
