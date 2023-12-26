@@ -1,6 +1,6 @@
 # Alert Task – OAuth v2 Password Grant Type
 
-We have seen how an Alert Task can be set up in the Kore.ai XO Platform [here](https://developer.kore.ai/docs/bots/bot-builder-tool/alert/notification-tasks/). In this article , we will see how authorization for the alert tasks can be set up using the OAuth v2 with password grant.
+We have seen how an Alert Task can be set up in the XO Platform [here](https://developer.kore.ai/docs/bots/bot-builder-tool/alert/notification-tasks/). In this article , we will see how authorization for the alert tasks can be set up using the OAuth v2 with password grant.
 
 ## General Setup
 
@@ -13,9 +13,9 @@ To begin your configuration, follow the steps below:
 * Select the **task** you want to work with. 
 * Click the **API Request** tab within the Alert Task.
 * Expand the **Authorization** section and click **Create New** to configure a new authorization.
-<img src="../use-cases/images/create-new-authorization.png" alt="create new authorization" title="create new authorization" style="border: 1px solid gray; zoom:75%;"> 
+<img src="../images/create-new-authorization.png" alt="create new authorization" title="create new authorization" style="border: 1px solid gray; zoom:75%;"> 
 * Next, the **New Authorization Mechanism** window opens, as shown in the illustration below.  
-<img src="../use-cases/images/new-auth-mechanism-password.png" alt="new auth mechanism" title="new auth mechanism" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/new-auth-mechanism-password.png" alt="new auth mechanism" title="new auth mechanism" style="border: 1px solid gray; zoom:75%;">
 
 To define a custom authorization, select **oAuth v2 password grant** in the **Authorization Type** field. Then specify a **Name** for the authorization to be displayed in the XO Platform  user interface. Next, configure each section as follows:
 
@@ -25,7 +25,7 @@ If required, in the **Subdomain** section, select **Yes** if the base URL for a 
 
 In the following example configuration, the tenancy URL contains the {tenant} organization placeholder.
 
-<img src="../use-cases/images/set-tenancy.png" alt="add password field" title="add password field" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/set-tenancy.png" alt="set tenancy" title="set tenancy" style="border: 1px solid gray; zoom:75%;">
 
 ## Form Fields
 
@@ -33,7 +33,7 @@ If the default username and password fields do not meet your needs, you can add 
 
 The following illustration is an example of a definition to add a password field to the authorization dialog.
 
-<img src="../use-cases/images/add-password-field.png" alt="add password field" title="add password field" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-password-field.png" alt="add password field" title="add password field" style="border: 1px solid gray; zoom:75%;">
 
 The following table describes the fields used to define an authorization IDP form field.
 
@@ -98,7 +98,7 @@ The following table describes the fields used to define an authorization IDP for
 ## Authorization Fields
 
 By default, authorization fields are configured as part of the header of the task request message. If your task request requires additional authorization fields or the expected authorization is not part of the header, for example, social security number or PIN, click **+ Add Authorization Field**and then define the fields as shown in the following illustration.
-<img src="../use-cases/images/auth-fields-oauth.png" alt="auth fields oauth" title="auth fields oauth" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/auth-fields-oauth.png" alt="auth fields oauth" title="auth fields oauth" style="border: 1px solid gray; zoom:75%;">
 
 1. In the **Field Type** field, you can select one of the following depending on where in the task request message and the type of authorization fields that are required.
     * **Header** – The VA expects the authorization fields as part of the header of the request.
@@ -129,11 +129,11 @@ Click **Save Auth** to save the authorization settings and close the **New Autho
 To test your authorization, follow the below steps:
 
 1. After you save the authentication, if you have defined an **Authorization URL** for your new authorization type, you can test your authorization definition on the **Authorization** page when you click **Test Authorization** before continuing to develop the remaining steps of your task.
-<img src="../use-cases/images/click-test-authorization.png" alt="click test auth" title="click test auth" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/click-test-authorization.png" alt="click test auth" title="click test auth" style="border: 1px solid gray; zoom:75%;">
 
 2. After you click **Test Authorization**, the **Test Authorization** window is displayed and populated with the URL you specified in the **Authorization Check URL** section, as shown in the following illustration.
 
-    <img src="../use-cases/images/test-auth-url.png" alt="test auth url" title="test auth url" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/test-auth-url.png" alt="test auth url" title="test auth url" style="border: 1px solid gray; zoom:75%;">
 
 3. Click **Test** to begin the authorization test. When the validation of authentication is complete, the **Test Authorization** window is closed and the results of the validation, either success or failure, is displayed to the immediate right of the **Test Authorization** button. If the authorization fails, the _Auth Test Failed_ message is displayed along with the **Headers** and **Response** tabs as shown in the following illustration. 
 <img src="../images/configure-test-authorization.png" alt="auth fails message" title="auth fails message" style="border: 1px solid gray; zoom:75%;">
