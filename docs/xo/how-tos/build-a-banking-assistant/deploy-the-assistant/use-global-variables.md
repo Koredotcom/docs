@@ -4,16 +4,16 @@ The XO Platform provides a way to declare and use variables within the bot. Thes
 
 In this post, we explore a Banking Bot scenario, where **Bot Variables** can be used. We see how Global Variables are used to pass API endpoints and can change them easily when migrating from development to testing to production environments.
 
-For details on Bot Variables usage in the XO Platform, click <a href="https://developer.kore.ai/docs/bots/bot-settings/bot-management/using-bot-variables/" target="_blank">here</a>.
+For details on Bot Variables usage in the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/variables/using-bot-variables/" target="_blank">here</a>.
 
-For a use case with Content Variables, click <a href="https://developer.kore.ai/docs/bots/how-tos/how-to-use-content-variables/" target="_blank">here</a>.
+For a use case with Content Variables, click <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/deploy-the-assistant/use-content-variables/" target="_blank">here</a>.
 
 ## Problem Statement
 
-In our <a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/" target="_blank">Banking Bot</a>, we have two tasks:
+In our <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">Banking Bot</a>, we have two tasks:
 
-1. <a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/#Get_Balance_Intent" target="_blank">Get Balance</a> which makes a service call with a given account number to get the balance in that account.
-2. <a href="https://developer.kore.ai/docs/bots/how-tos/banking-bot-update-balance/" target="_blank">Update Balance</a> which makes a service call to update a given account with the specified amount.
+1. <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/#get-balance-intent" target="_blank">Get Balance</a> which makes a service call with a given account number to get the balance in that account.
+2. <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-balance-task/#update-balance-intent" target="_blank">Update Balance</a> which makes a service call to update a given account with the specified amount.
 3. Both the above tasks call the same service and the service API endpoint changes for development, testing, and production environments.
 4. Changing the service call in both the Dialog Tasks is cumbersome and leading to errors, if the change is not done properly.
 

@@ -168,7 +168,7 @@ We will be creating a dialog task and adding a form node to trigger the Digital 
 6. From the dropdown list select the form (_OpenAccount_) we created earlier.
 <img src="../images/select-openaccount-form.png" alt="select open account form" title="select open account form" style="border: 1px solid gray; zoom:75%;">
 
-7. You will be prompted to select the **Form Experience.** Kore.ai Bots platform allows you to gather user input both from the form and through conversation based on the channel.
+7. You will be prompted to select the **Form Experience.** XO platform allows you to gather user input both from the form and through conversation based on the channel.
 8. For this use case, let us select _Only Form UI_ experience.
 9. A Form Node would be added, you can customize the form name, etc.
 10. We are changing the **Name** to _OpenAccountForm_ and **Display Name** to _Form to open account_.

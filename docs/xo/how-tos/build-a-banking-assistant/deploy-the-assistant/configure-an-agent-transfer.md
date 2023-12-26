@@ -18,7 +18,7 @@ Apart from performing business functionality, our VA would also act as a proxy b
 
 ## Prerequisites
 
-1. A fully functional VA. See an example Travel Planning Assistant <a href="https://developer.kore.ai/docs/bots/how-tos/travel-planing-assistant/create-a-travel-virtual-assistant/" target="_blank">here</a>.
+1. A fully functional VA. See an example Travel Planning Assistant <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/create-a-travel-virtual-assistant/" target="_blank">here</a>.
 2. Download BotKit SDK from <a href="https://github.com/Koredotcom/BotKit" target="_blank">Kore’s github</a>.
 3. Download and Install the Node.js (version 10 or above). The BotKit SDK requires `node.js` to run on the same server where the SDK is installed.
     * Go to `https://nodejs.org/en/download/` and select your OS as a `.pkg` file type for Mac and `.msi` file type for Windows.

@@ -1,6 +1,6 @@
 # Using Traits
 
-In this page, we explore how traits can be used to steer the conversation flow in a more natural and predictable direction for a Banking Bot. For details on what a Trait is and how it is implemented in the XO platform, click <a href="https://developer.kore.ai/docs/bots/nlp/traits/" target="_blank"> here</a>.
+In this page, we explore how traits can be used to steer the conversation flow in a more natural and predictable direction for a Banking Bot. For details on what a Trait is and how it is implemented in the XO platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/traits/" target="_blank"> here</a>.
 
 ## Problem Statement
 

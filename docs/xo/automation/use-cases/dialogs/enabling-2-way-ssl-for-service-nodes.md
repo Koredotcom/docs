@@ -7,7 +7,7 @@ It refers to a client (web browser or client application) authenticating themsel
 
 ## Kore.ai Implementation
 
-Kore.ai Bots platform offers this support by default in their cloud offering. In case, the services you use need a two-way SSL, the platform provides the certificate.
+XO Platform offers this support by default in their cloud offering. In case, the services you use need a two-way SSL, the platform provides the certificate.
 
 
 ### For On-premises Users

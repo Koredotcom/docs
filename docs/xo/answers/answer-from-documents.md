@@ -30,7 +30,7 @@ Before using the Answer from Documents feature, you must first perform the follo
 1. **Upgrade to NLU 3.0** if you have not already done so. You can upgrade by going to **Natural Language** > **Advanced Settings** and clicking **Upgrade Now** under the **NLP Version** section.
 <img src="../images/upgrade-to-nlu-3.png" alt="upgrade version" title="upgrade version" style="border: 1px solid gray; zoom:75%;">
 
-2. Configure the **OpenAI** or **Azure OpenAI** integration Action. You can find it under **Integrations** > **Actions** > **OpenAI**. [Configuring OpenAI Action](https://developer.kore.ai/integrations/configuring-the-openai-action/) or [Configuring Azure OpenAI Action](https://developer.kore.ai/integrations/configuring-the-azure-openai-action/).
+2. Configure the **OpenAI** or **Azure OpenAI** integration Action. You can find it under **Integrations** > **Actions** > **OpenAI**. <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/integrations/actions/open-ai/configuring-the-openai-action/" target="_blank">Configuring the OpenAI Action</a> or <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/integrations/actions/azure-open-ai/configuring-the-azure-openai-action/" target="_blank">Configuring Azure OpenAI Action</a>.
 
 
 ## Enable Answer from Documents
@@ -86,11 +86,11 @@ The document will open within a separate window, where you can browse each page,
  
 ## Test Answer Generation
 
-A good testing practice for this feature is to ask the VA a question directly related to the contents of your uploaded documents. You can use the [Talk to Bot ](https://developer.kore.ai/docs/bots/test-your-bot/talk-to-bot/)feature to test the answers generated from your uploaded documents. The Debug Log within the [Talk to Bot feature](https://developer.kore.ai/docs/bots/test-your-bot/talk-to-bot/#Debug_Log) and [NLP Insights](https://developer.kore.ai/docs/bots/analyzing-your-bot/bot-analysis/#Debug_Log) lets you see if a response failure is due to OpenAI or Azure OpenAI timing out.
+A good testing practice for this feature is to ask the VA a question directly related to the contents of your uploaded documents. You can use the <a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/talk-to-bot/" target="_blank">Talk to Bot</a> feature to test the answers generated from your uploaded documents. The Debug Log within the <a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/talk-to-bot/" target="_blank">Talk to Bot</a> and <a href="https://docsinternal-kore.github.io/docs/xo/analytics/automation/nlp-insights/" target="_blank">NLP Insights</a> lets you see if a response failure is due to OpenAI or Azure OpenAI timing out.
 
-You can also run [Utterance Testing](https://developer.kore.ai/docs/bots/test-your-bot/testing-your-bot-with-nlp/#Answer_from_Documents) to see results related to use cases where no intent is identified and the query is answered using the _Answer from Documents_ feature.
+You can also run <a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/testing-your-bot-with-nlp/" target="_blank">Utterance Testing</a> to see results related to use cases where no intent is identified and the query is answered using the _Answer from Documents_ feature.
 
-_[Batch Testing](https://developer.kore.ai/docs/bots/test-your-bot/batch-testing/batch-testing/)_ and _[Conversation Testing](https://developer.kore.ai/docs/bots/test-your-bot/conversation-testing-landing-page/)_ do not use the _Answer from Documents_ feature as a fallback; therefore, no related test results are available. 
+<a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/batch-testing/" target="_blank">Batch Testing</a> does not use the _Answer from Documents_ feature as a fallback; therefore, no related test results are available. 
 
 ## Disable Uploaded PDF Documents
 

@@ -6,7 +6,7 @@ We will see how data collected from the UI Forms can be used to create the accou
 
 For details on what UI Forms are and how they are implemented on the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-forms/" target="_blank">here</a>.
 
-For details on Data Tables and their implementation on the XO Platform, click <a href="https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/" target="_blank"> here</a>.
+For details on Data Tables and their implementation on the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-digital-skills/add-data-to-data-tables/" target="_blank"> here</a>.
 
 ## Problem Statement
 

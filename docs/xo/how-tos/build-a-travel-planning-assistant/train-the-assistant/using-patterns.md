@@ -9,7 +9,7 @@ In this document, we will elaborate on the various pattern syntax and how they c
 <p><ul><li>Patterns are to be used as a last resort, only for cases where the ML engine cannot be used. Examples of such cases would be to train the VA in recognizing idiomatic utterances, command like utterances.</li>
 <li>Patterns are evaluated in the order of their listing. Once a match is found the rest of the patterns are not evaluated. So ensure when adding patterns to add in the order of most restrictive to least restrictive.</li>
 <li>Only one wildcard (*) is allowed in a pattern.</li>
-<li>While most of the features are supported in all languages, there are some exceptions, see <a href="https://developer.kore.ai/docs/bots/how-tos/multi-lingual-bot-behavior/" target="_blank">here</a> for more details.</li></p>
+<li>While most of the features are supported in all languages, there are some exceptions, see <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/language-management/multi-lingual-bot-behavior/" target="_blank">here</a> for more details.</li></p>
 </div>
 
 ## Pattern Creation Guidelines
@@ -232,7 +232,7 @@ Add a space after the angular bracket
   <tr>
    <td><strong>Sample Pattern</strong>
    </td>
-   <td>“<em>Change &lt; seat t</em>“
+   <td>“<em>Change < seat t</em>“
    </td>
   </tr>
   <tr>
@@ -499,7 +499,7 @@ Due to the risk of running into false positives, you are advised not to use this
   <tr>
    <td><strong>Sample Pattern</strong>
    </td>
-   <td>“<em><&lt; change seat  >></em>“
+   <td>“<em><< change seat  >></em>“
    </td>
   </tr>
   <tr>
@@ -622,8 +622,8 @@ For example, _(Cancel Booking)_ matches _Cancel my flight booking_ but doesn’t
     * I like India
     * I love traveling to Australia
     * I would like to visit an African country
-* **Unordered: &lt;<, >>**: Used to find words in any order. For example, &lt;<Cancel Booking>> matches _Cancel my flight booking_ and also _I have a pending booking for a flight, can I cancel_
-* **Start/End of Statement: &lt;, >:** For example, ( _check in >_ ) will match _I want to check in,_ but will not match _I want to check in now.._
+* **Unordered: <<, >>**: Used to find words in any order. For example, <<Cancel Booking>> matches _Cancel my flight booking_ and also _I have a pending booking for a flight, can I cancel_
+* **Start/End of Statement: <, >:** For example, ( _check in >_ ) will match _I want to check in,_ but will not match _I want to check in now.._
 * **Quote: ‘ –**: If you quote words or use words that are not in canonical form, the system will restrict itself to what you used in the pattern. For example, (_like to book a flight_) This matches _I would like to book a flight_ but not _I really liked how easy it was to book a flight on your app_.
 
 
@@ -707,7 +707,7 @@ This can be used as a combination of patterns for the likely location in the use
 
 ### Pattern 4: [ word1 word2 ] *
 
-This can be for patterns using a group of words or concepts of which at least one should be present in the utterance. The order within the group is important (see above in <a href="https://developer.kore.ai/docs/bots/how-tos/how-to-use-patterns-for-intents-entities/#Patterns_for_Intent_Detection" target="_blank">intent detection</a> .
+This can be for patterns using a group of words or concepts of which at least one should be present in the utterance. The order within the group is important (see above in <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/train-the-assistant/using-patterns/" target="_blank">intent detection</a> .
 
 **Pattern for _ArrivalCity_ entity**: _“to * [ from ]”_ and _“[ from ] to *1”_
 

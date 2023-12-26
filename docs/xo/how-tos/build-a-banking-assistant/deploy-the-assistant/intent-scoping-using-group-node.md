@@ -2,14 +2,14 @@
 
 Node groups are primarily used for defining a group of nodes and representing them  on the dialog canvas. Note that it is not a part of the dialog flow.
 
-Node groups can be used to improve the user experience with follow-ups, digressions, and amending entity values. For a use case example, click <a href="https://developer.kore.ai/docs/bots/how-tos/intent-scoping-using-group-node/" target="_blank">here</a>.
+Node groups can be used to improve the user experience with follow-ups, digressions, and amending entity values. For a use case example, click <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/deploy-the-assistant/intent-scoping-using-group-node/" target="_blank">here</a>.
 
 ## Add a Node Group
 
 To add a node group to the dialog task, follow the below steps:
 
 1. **Open the Dialog Task** where you want to add the Group node.
-2. **Group the nodes**. For steps in grouping nodes, click <a href="https://developer.kore.ai/docs/bots/chatbot-overview/using-the-dialog-builder-tool/" target="_blank">here</a>.
+2. **Group the nodes**. For steps in grouping nodes, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/" target="_blank">here</a>.
 3. Once created, you cannot add or remove specific nodes from the group.
     * Any node you add is added outside the group.
     * Any node you delete is deleted from the entire dialog.
@@ -56,7 +56,7 @@ Once added, each of the sub-intent can be trained for recognition within this gr
 The **fulfillment** section can be used to define the actions when this particular sub-intent is identified from the user input. It includes the following properties:
 
 * **Context Variables** – Set the key-value pairs to define the session or context variables to be updated when this sub-intent is identified. If you want to reset the values, you need to use the keyword “null”, spaces would be ignored by the platform.
-* **Present a Message** – Optionally, define a message to be presented to the user when this sub-intent is identified. As with other responses, you can define the message as plain text, JavaScript format, specify, and set <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/" target="_blank">Voice Call Properties</a>, where applicable.
+* **Present a Message** – Optionally, define a message to be presented to the user when this sub-intent is identified. As with other responses, you can define the message as plain text, JavaScript format, specify, and set <a href="https://docsinternal-kore.github.io/docs/xo/channels/call-properties/" target="_blank">Voice Call Properties</a>, where applicable.
 * **Context Output** – Define the context tags to be set when this intent is identified. The intent name is always set as output context by the system. If you want to reset the values, you need to use the keyword “null”, spaces would be ignored by the platform.
 * **Transition Flow** – Use this option to define how the dialog should resume after executing this sub-intent. There are two behaviors you can define:
     * **Jump To A Node** – The dialog will resume from the node selected here.

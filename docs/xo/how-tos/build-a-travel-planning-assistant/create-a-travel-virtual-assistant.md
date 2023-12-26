@@ -1,6 +1,6 @@
 # Create a Travel Virtual Assistant
 
-After you have [signed up](https://developer.kore.ai/docs/bots/getting-started/how-to-open-bot-builder/) with the Kore.ai XO Platform, the next step is to create a Virtual Assistant. Before you create it, we recommend you to go through the basics of building a VA by reading [this article](https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/).
+After you have <a href="https://developer.kore.ai/docs/bots/getting-started/how-to-open-bot-builder/" target="_blank">signed up</a> with the XO Platform, the next step is to create a Virtual Assistant. Before you create it, we recommend you to go through the basics of building a VA by reading <a href="https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/" target="_blank">this</a> article.
 
 This article takes you through the creation of a simple travel VA, that gives users the flight status arriving/departing from Los Angeles International Airport. 
 
@@ -52,8 +52,8 @@ To create a Dialog Task, please follow the steps below:
 3. Click **Proceed**.
 <img src="../images/proceed-dialog-task.png" alt="proceed dialog task" title="proceed dialog task" style="border: 1px solid gray; zoom:75%;"> 
 
-4. When prompted to upgrade to **Conversation Driven Dialog Builder**, select **Upgrade**. For instructions on the Legacy Dialog Builder, [refer here](https://developer.kore.ai/v8-1/docs/bots/how-tos/creating-a-banking-bot/)
-5. Once your task has been created, you will see the Dialog Builder Canvas, with the first node displayed – the Intent Node, which receives the name of the task and represents the main node within the Dialog Task. [Learn more about working with the Dialog Builder](https://developer.kore.ai/docs/bots/chatbot-overview/using-the-dialog-builder-tool/).
+4. When prompted to upgrade to **Conversation Driven Dialog Builder**, select **Upgrade**. For instructions on the Legacy Dialog Builder. <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">Learn more</a>.
+5. Once your task has been created, you will see the Dialog Builder Canvas, with the first node displayed – the Intent Node, which receives the name of the task and represents the main node within the Dialog Task. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/" target="_blank">Learn more</a>.
 
 ### Create a User Preference Entity Node
 
@@ -144,7 +144,7 @@ This Entity node is to capture the Flight Number for which the user wants the st
 5. Under the **User Prompts** section, enter the following text: 
 `Please provide the flight number.`
 **Manage**: Users can define a specific prompt for the Web SDK channel.
-6. Click **Manage**. Read more about [managing user prompts](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/).
+6. Click **Manage**. Read more about <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/prompt-editor/#prompt-editor" target="_blank">managing user prompts</a>.
 <img src="../images/click-manage-user-prompt.png" alt="click manage user prompt" title="click manage user prompt" style="border: 1px solid gray; zoom:75%;">
 
 7. Click **Add User Prompts**.
@@ -214,10 +214,10 @@ A Script node is used to write custom JavaScript in the Dialog task. Here, users
     * **Name**: _ValidateFlight_
     * **Display Name**: _Validate Flight_
 9. Under the **Script Definition** section, click **Define Script**.
-10. On the _Add Script_ dialog box, copy and paste the following JavaScript. This code extracts the details of the selected flight number and also mitigates potential task failures caused by users not selecting a preference and instead manually entering information that is not found within the Context. Learn more about the [Context Object](https://developer.kore.ai/docs/bots/bot-builder-tool/context-object/). 
-`context.valid = false;`
+10. On the _Add Script_ dialog box, copy and paste the following JavaScript. This code extracts the details of the selected flight number and also mitigates potential task failures caused by users not selecting a preference and instead manually entering information that is not found within the Context. Learn more about the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/context-object/" target="_blank">Context Object</a>.
 
 ```js
+context.valid = false;
 context.details;
 var x = context.flights.length;
 for (var l = 0; l < x; l++)
@@ -351,7 +351,7 @@ When completed, the task might look similar to the illustration below:
 
 **Add Events**
 
-Currently, the assistant is waiting for user input on the start. However, it can also guide the user at the start of the conversation. For this, you can add an Event Handler to initiate this task every time a new connection is established from the Web/Mobile SDK. Learn more about [Event Handlers](https://developer.kore.ai/docs/bots/bot-intelligence/event-based-bot-actions/).
+Currently, the assistant is waiting for user input on the start. However, it can also guide the user at the start of the conversation. For this, you can add an Event Handler to initiate this task every time a new connection is established from the Web/Mobile SDK. Learn more about <a href="https://developer.kore.ai/docs/bots/bot-intelligence/event-based-bot-actions/" target="_blank">Event Handlers</a>.
 
 1. Close the Dialog Builder to go back to the **Dialog Tasks** page.
 2. From the Left Navigation pane, and select **Intelligence** > **Events**.

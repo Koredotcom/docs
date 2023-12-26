@@ -16,7 +16,7 @@ Kore.ai takes care of your data needs, without having to depend on external serv
 
 ## Overview
 
-Data Table offering on Kore.ai Bots platform is split into two parts:
+Data Table offering on XO Platform is split into two parts:
 
 * **Data Definition** which includes:
     * Defining **Data Tables** and **Views**.

@@ -14,7 +14,7 @@ The `Context` object can also be referenced in a script node as well as for dyna
 
 The platform also creates and maintains Session Variables which can be referred to from <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/using-session-and-context-variables/" target="_blank">here</a>.
 
-The following table describes the `Context` object keys. These can be classified into Global and Dialog contexts based on when they are created and populated. Click [here](https://developer.kore.ai/docs/bots/bot-settings/bot-sessions/#Implementation) for details.
+The following table describes the `Context` object keys. These can be classified into Global and Dialog contexts based on when they are created and populated. Click <a href="https://developer.kore.ai/docs/bots/bot-settings/bot-sessions/#Implementation" target="_blank">here</a> for details.
 
 <table border="1.5">
 <tr bgcolor="#ECECEC">
@@ -34,7 +34,7 @@ The following table describes the `Context` object keys. These can be classified
    </td>
    <td>The intent recognized by the NLP interpreter.
    </td>
-   <td><strong>Syntax:</strong> <code>context.intent.&lt;< intent name >></code>
+   <td><strong>Syntax:</strong> <code>context.intent.<< intent name >></code>
    </td>
   </tr>
   <tr>
@@ -44,11 +44,11 @@ The following table describes the `Context` object keys. These can be classified
    </td>
    <td>An array of key/value pairs based on user prompts and recognized user input for those prompts.
    </td>
-   <td><strong>Syntax:</strong> <code>context.entities.&lt;< entity name >></code>In the following code example, the <code>context.entities</code> object is used to access values for the amount and account names as a confirmation for a funds transfer between accounts
+   <td><strong>Syntax:</strong> <code>context.entities.<< entity name >></code>In the following code example, the <code>context.entities</code> object is used to access values for the amount and account names as a confirmation for a funds transfer between accounts
 <p>
 <code>var today = new Date();</code>
 <p>
-<code>if(today.getHours() &lt; 21)</code>
+<code>if(today.getHours() < 21)</code>
 <p>
 <code> {</code>
 <p>
@@ -305,13 +305,13 @@ The following table describes the `Context` object keys. These can be classified
    </td>
   </tr>
   <tr>
-   <td><&lt; nodename >>.response.body
+   <td><< nodename >>.response.body
    </td>
    <td>Dialog
    </td>
    <td>The HTTP JSON response from the Service node.
    </td>
-   <td><strong>Syntax:</strong> <code>context.&lt;< node name >>.response.body</code>
+   <td><strong>Syntax:</strong> <code>context.<< node name >>.response.body</code>
 <p>
 In the following code example, the response from a Service node is displayed to the end-user in a Message node.
 <p>
@@ -325,7 +325,7 @@ In the following code example, the response from a Service node is displayed to 
    </td>
    <td>A key/value pair defined by the developer.
    </td>
-   <td><strong>Syntax:</strong> <code>context.&lt;< varName >></code>
+   <td><strong>Syntax:</strong> <code>context.<< varName >></code>
 <p>
 For example, <code>context.customerId</code>
    </td>

@@ -2,7 +2,7 @@
 
 In this How-To, we will explore a scenario in a Banking Bot, where, various metrics will be used to analyze the bot performance.
 
-For details on what Bot Metrics are and how they are implemented in the XO Platform, click <a href="https://developer.kore.ai/docs/bots/analyzing-your-bot/bot-analysis/" target="_blank">here</a>.
+For details on what Bot Metrics are and how they are implemented in the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/analytics/automation/introduction/" target="_blank">here</a>.
 
 ## Problem Statement
 
