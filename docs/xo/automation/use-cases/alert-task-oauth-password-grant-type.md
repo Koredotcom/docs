@@ -8,13 +8,14 @@ OAuth v2 is the new version of the open protocol to allow secure authorization i
 
 To begin your configuration, follow the steps below:
 
-* Select the VA you want to work with.
-* Go to **Build** > **Conversation Skills** > **Alert Tasks**. 
-* Select the **task** you want to work with. 
-* Click the **API Request** tab within the Alert Task.
-* Expand the **Authorization** section and click **Create New** to configure a new authorization.
+1. Select the VA you want to work with.
+2. Go to **Build** > **Conversation Skills** > **Alert Tasks**. 
+3. Select the **task** you want to work with. 
+4. Click the **API Request** tab within the Alert Task.
+5. Expand the **Authorization** section and click **Create New** to configure a new authorization.
 <img src="../images/create-new-authorization.png" alt="create new authorization" title="create new authorization" style="border: 1px solid gray; zoom:75%;"> 
-* Next, the **New Authorization Mechanism** window opens, as shown in the illustration below.  
+
+6. Next, the **New Authorization Mechanism** window opens, as shown in the illustration below.  
 <img src="../images/new-auth-mechanism-password.png" alt="new auth mechanism" title="new auth mechanism" style="border: 1px solid gray; zoom:75%;">
 
 To define a custom authorization, select **oAuth v2 password grant** in the **Authorization Type** field. Then specify a **Name** for the authorization to be displayed in the XO Platform  user interface. Next, configure each section as follows:
