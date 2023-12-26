@@ -1,4 +1,4 @@
-# **Conversation Insights**
+# Conversation Insights
 
 Once a virtual assistant is published, it is important to understand and analyze its performance. Kore.ai XO platform provides various dashboards; one of them being NLP Insights that captures details like Intent Found, Intent Not Found, Unhandled Utterances, and so on. However, to categorize the utterances as True Positives (TP), True Negatives (TN), False Positives (FP), and False Negatives (FN), you need to go through all the utterances across multiple tabs in NLP Insights. There could be millions of utterances that a bot designer needs to review, which could be tedious and time-consuming.
 

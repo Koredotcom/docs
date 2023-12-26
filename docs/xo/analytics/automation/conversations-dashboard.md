@@ -1,4 +1,4 @@
-# **Conversations Dashboard**
+# Conversations Dashboard
 The Conversations Dashboard provides insights into how conversations are handled by your virtual assistant (VA). It shows how many conversations were successfully answered by the VA, how many were transferred to agents, and how many were incomplete. You can also view other metrics, such as the trend of conversation sessions, the conversation path analysis, the session distribution by channel, and the VA’s engagement grouped by self-service, drop-off, and agent transfer sessions.
 
 !!! note

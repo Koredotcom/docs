@@ -1,4 +1,4 @@
-# **Performance Dashboard**
+# Performance Dashboard
 
 After you publish a Virtual Assistant (VA), you can monitor its performance using the Performance dashboard. This dashboard provides insights into metrics such as the number of intents identified, tasks completed successfully, and any service or script failures that occur during interactions. You can use these insights to identify areas where your virtual assistant needs improvement. For example, if you see that many intents are not identified, you can train the virtual assistant for those unidentified intents.
 

@@ -1,4 +1,4 @@
-# **Users Dashboard**
+# Users Dashboard
 
 Once you have implemented a virtual assistant, you can gain actionable insights on the type of users it handles, including unique, new, and returning users, and the user trends for a given period for different conversation types, conversation statuses, channels, languages, and custom conversational tags on the Users Dashboard.
 

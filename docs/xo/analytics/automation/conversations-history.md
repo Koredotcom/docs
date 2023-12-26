@@ -1,4 +1,4 @@
-# **Conversations History**
+# Conversations History
 
 The **Conversation History** dashboard allows you to review the transcripts of past conversations and label certain conversations for follow-up or further action.
 

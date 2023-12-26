@@ -1,4 +1,4 @@
-# **Create Custom Dashboard Filters**
+# Create Custom Dashboard Filters
 
 Prior to the Version 10.0 release, you had to add filter conditions in the **Filter by** clause for individual widgets within a dashboard. There was no provision to filter the records at a dashboard level. The platform now allows you to create custom filters that filter the data for all the widgets across a custom dashboard.
 

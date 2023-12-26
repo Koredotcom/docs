@@ -1,4 +1,4 @@
-# **Dashboard Filters**
+# Dashboard Filters
 
 The dashboard filters are used to filter and view the analytics data for virtual assistants (VAs) on the following dashboards in the **ANALYTICS** section based on the user’s selection(s):
 

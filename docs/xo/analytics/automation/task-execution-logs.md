@@ -1,4 +1,4 @@
-# **Task Execution Logs**
+# Task Execution Logs
 
 The **Task Execution Logs** feature helps you gain in-depth insights into the task execution-related data and assess your virtual assistant’s performance in executing tasks. 
 
