@@ -1,4 +1,4 @@
-# **NLP Insights**
+# NLP Insights
 
 The NLP Insights feature helps you gain in-depth insights into the analytics data and assess your virtual assistant’s performance in identifying and executing tasks. You can improve your VA’s performance based on the insights. 
 

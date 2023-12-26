@@ -1,4 +1,4 @@
-# **Overview Dashboard**
+# Overview Dashboard
 
 The Overview dashboard gives a snapshot of the Virtual Assistant’s conversations, user analytics, and performance over time. You can filter the information by date, conversation type (interactive and non-interactive), conversation status, and more.
 

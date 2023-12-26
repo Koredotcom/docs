@@ -1,4 +1,4 @@
-# **Custom Meta Tags**
+# Custom Meta Tags
 
 While analyzing your Virtual Assistant’s performance, you might want to give preference to or discard a particular scenario. For example, you might want to track how many people book tickets to _Chicago_. Or you might want to track how a specific user, a premium customer, requests are being fulfilled.
 

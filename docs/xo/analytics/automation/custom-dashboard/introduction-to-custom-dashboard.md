@@ -1,4 +1,4 @@
-# **Introduction to Custom Dashboard**
+# Introduction to Custom Dashboard
 
 Custom Dashboard allows you to design your dashboards to meet business needs using a combination of built-in metrics and custom KPIs based on the user’s demographic or context information to provide a more tailored and relevant view of the data.
 

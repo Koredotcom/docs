@@ -1,4 +1,4 @@
-# **Create Custom Dashboard**
+# Create Custom Dashboard
 
 Let’s create a dashboard using various metrics to analyze the performance of a Virtual Assistant and identify trends for business needs using a Banking Bot as an example.
 

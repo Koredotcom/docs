@@ -1,4 +1,4 @@
-# **Feedback Dashboard**
+# Feedback Dashboard
 
 Once you’ve created a **Feedback Survey** for your conversations based on a survey type (_NPS_, _CSAT_, or _Like/Dislike_), it’s important to constantly monitor and analyze the customer responses, feedback survey scores, and trends over a given period.
 
