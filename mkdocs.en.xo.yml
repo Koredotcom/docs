@@ -261,9 +261,25 @@ nav:
         - API Introduction: apis/api-list.md
         - API List: apis/api-list.md           
   - Analytics:
-    - insiders/index.md
-    - Automation:
-      - Introduction: analytics/automations/introduction.md
+    - AUTOMATION:
+      - Introduction: analytics/automation/introduction.md
+      - Dashboard Filters: analytics/automation/dashboard-filters.md
+      - Overview Dashboard: analytics/automation/overview-dashboard.md
+      - Conversations Dashboard: analytics/automation/conversations-dashboard.md
+      - Users Dashboard: analytics/automation/users-dashboard.md
+      - Performance Dashboard: analytics/automation/performance-dashboard.md
+      - Custom Dashboard:
+        - Introduction: analytics/automation/custom-dashboard/introduction-to-custom-dashboard.md
+        - Custom Meta Tags: analytics/automation/custom-dashboard/custom-meta-tags.md
+        - Create Custom Dashboard: analytics/automation/custom-dashboard/create-custom-dashboard.md
+        - Create Custom Dashboard Filters: analytics/automation/custom-dashboard/create-custom-dashboard-filters.md  
+      - NLP Insights: analytics/automation/nlp-insights.md
+      - Task Execution Logs: analytics/automation/task-execution-logs.md
+      - Conversations History: analytics/automation/conversations-history.md
+      - Conversation Flows: analytics/automation/conversation-flows.md
+      - Conversation Insights: analytics/automation/conversation-insights.md
+      - Feedback Dashboard: analytics/automation/feedback-dashboard.md
+    - CONTACT CENTER:  
       - Changelog: insiders/changelog.md
   - Administration:
     - Contributing:
