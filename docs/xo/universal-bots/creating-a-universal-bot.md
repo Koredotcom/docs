@@ -94,8 +94,11 @@ Follow these steps to add linked bots to the Universal Bot:
 
 4. Click the **Link a Bot** link to open the Select a Bot dialog.
 
-    
+!!! note
+        
         On the Select a Bot dialog, you can only see the bots for which you are either the owner or a co-developer. If you cannot see a bot in this window, make sure the bot is shared with you by its owner.
+
+        
 5. Hover over the Bot to access the **Link Bot** button, and click the link. 
 [ ](https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20210630104201/ub_link.png)
 
