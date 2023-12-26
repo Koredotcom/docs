@@ -80,7 +80,7 @@ The following details explain the options available on the page, to define the c
 
 * **Do not proactively close the sessions after inactivity** – Select this option to close the session only when the user returns after 15 minutes of inactivity and provides a new intent. This was the default behavior before the release of ver8.0 of the platform. <span style="text-decoration:underline;">This option will be deprecated in future releases</span>.
 * **Proactively close the sessions after inactivity** – Select this option to close the session after a defined duration of inactivity. You can set the following parameters:
-    * **Inactivity Duration** – this is set to 15 minutes by default. The session closes after the time duration set here. \
+    * **Inactivity Duration** – this is set to 15 minutes by default. The session closes after the time duration set here. 
  **Note**: The minimum value that can be set here is **5 min ** and the maximum value is **20160** **min** (14 days). These values can be configured at the application level through Koreconfig.
 
 * **Session Closure Behavior** – You can choose to close the session without informing the user or inform the user about the session closure by sending out a message. This message can be customized using the **Manage Response** link. You can click **Add Response** if you want to add a new response. 
@@ -95,7 +95,7 @@ The following details explain the options available on the page, to define the c
 
 ![alt_text](images/conversationsessions3.png "image_tooltip")
 
-* **Run Custom Script** – You can use the custom script to invoke koreUtil.ClearAuthProfiles function to clear the authorization profile and associated session variables for that particular profile. For example, if you have enabled multiple authorization profiles for a session, you can use the `koreUtil.ClearAuthProfiles` to disable a particular authorization profile that is not needed for this session using this custom script: \
+* **Run Custom Script** – You can use the custom script to invoke koreUtil.ClearAuthProfiles function to clear the authorization profile and associated session variables for that particular profile. For example, if you have enabled multiple authorization profiles for a session, you can use the `koreUtil.ClearAuthProfiles` to disable a particular authorization profile that is not needed for this session using this custom script: 
  `koreUtil.ClearAuthProfiles ( [Auth_Profile_Name] )` 
 You can also clear all authorization profiles using this script: 
 `koreUtil.ClearAllAuthProfiles ( )` For more information, see[ kore.UtilLibraries](https://developer.kore.ai/docs/bots/advanced-topics/koreutil-libraries/)<span style="text-decoration:underline;"> </span>article.
