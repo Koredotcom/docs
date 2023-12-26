@@ -122,6 +122,7 @@ After you save the authentication, if you have defined an **Authorization Check 
 <img src="../images/click-test-authorization.png" alt="test authorization" title="test authorization" style="border: 1px solid gray; zoom:75%;">
 
 2. After you click **Test Authorization**, the **Test Authorization** window is displayed and populated with the URL you specified in the **Authorization Check URL** section, as shown in the following illustration.
+
 <img src="../images/test-authorization-window.png" alt="test authorization window" title="test authorization window" style="border: 1px solid gray; zoom:75%;">
 
 To configure the Test Authorization – Basic Auth, follow the below steps:
