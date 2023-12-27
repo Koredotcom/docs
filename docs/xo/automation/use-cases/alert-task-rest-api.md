@@ -5,17 +5,17 @@ We have seen how an Alert task can be set up in Kore.ai XO Platform <a href="htt
 ## General Setup
 
 The following illustration is an example of the **API Request** tab available when editing an Alert Task, with the **Connection Type** specified as **Webservice** and the **Connection Mode** set to **REST** defined on the **General** tab.
-<img src="../use-cases/images/web-service-general-set-up.png" alt="web service general setup" title="web service general setup" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/web-service-general-set-up.png" alt="web service general setup" title="web service general setup" style="border: 1px solid gray; zoom:75%;">
 
 For such an Alert Task you will need to define: 
 
-* **Content Type** – The type of data exchanged between Kore.ai and your web application. <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-rest-api-request/#Defining_the_Content_Type" target="_blank">Learn more</a>.
-* **Authentication** – If required for your alert task, you will need to define the authentication to access the API, for example, using basic authorization, OAuth, or API Key. <a href="https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/" target="_blank">Learn more</a>.
-* **Parameters** – Define one or more parameters used to process the API request, for example, input from user prompts, selection by an end-user from a list of choices, a URL, and so forth. <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-rest-api-request/#Defining_Parameters" target="_blank">Learn more</a>.
-* **Initializer** – Specify custom JavaScript to run, or set session variables prior to creating a task instance when web services require code to be executed, or session variables set, or modification of user context details before an API request is executed. <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-rest-api-request/#Defining_an_Initializer" target="_blank">Learn more</a>.
-* **Request** – Define a request chain used to make an API call to a web service to initiate the task using URLs and paths to your Bot to initiate the delivery of the data payload from the web service to the Bots Platform. The request chain can consist of pre-processors, API requests, and post-processors. <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-rest-api-request/#Defining_the_Request_Chain" target="_blank">Learn more</a>.
-* **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user. <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-rest-api-request/#Adding_the_Response_Sample" target="_blank">Learn more</a>.
-* **Preview Website Link Content in Post** – The website preview content displayed in the task notification message. <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-rest-api-request/#Preview_Website_Link_Content" target="_blank">Learn more</a>.
+* **Content Type** – The type of data exchanged between Kore.ai and your web application. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#content-type" target="_blank">Learn more</a>.
+* **Authentication** – If required for your alert task, you will need to define the authentication to access the API, for example, using basic authorization, OAuth, or API Key. <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/bot-authorization/setting-up-authorization-using-an-api-key/" target="_blank">Learn more</a>.
+* **Parameters** – Define one or more parameters used to process the API request, for example, input from user prompts, selection by an end-user from a list of choices, a URL, and so forth. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#parameters" target="_blank">Learn more</a>.
+* **Initializer** – Specify custom JavaScript to run, or set session variables prior to creating a task instance when web services require code to be executed, or session variables set, or modification of user context details before an API request is executed. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#define-an-initializer" target="_blank">Learn more</a>.
+* **Request** – Define a request chain used to make an API call to a web service to initiate the task using URLs and paths to your Bot to initiate the delivery of the data payload from the web service to the Bots Platform. The request chain can consist of pre-processors, API requests, and post-processors. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#define-the-request-chain" target="_blank">Learn more</a>.
+* **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#add-the-response-sample" target="_blank">Learn more</a>.
+* **Preview Website Link Content in Post** – The website preview content displayed in the task notification message. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/#preview-website-link-content" target="_blank">Learn more</a>.
 
 Click **Save** to save the API request settings.
 
@@ -23,7 +23,7 @@ Click **Save** to save the API request settings.
 
 The **Content Type** describes the type of data exchanged between Kore.ai and your Bot website or application, and the key-value pairs expected in the task payload response. To define the Content Type for the API Request (REST), expand the **Content Type** tab and select one of these options:
 
-<img src="../use-cases/images/select-content-type.png" alt="select content type" title="select content type" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/select-content-type.png" alt="select content type" title="select content type" style="border: 1px solid gray; zoom:75%;">
 
 * **JSON** – JavaScript Object Notation is an open standard format using human-readable text to transmit data objects as attribute-value pairs. You can use JSON to transmit data between the Kore.ai servers and your Bot web application.
 * **RSS** – Rich Site Summary, or Really Simple Syndication, is a family of standardized formats used to publish frequently updated information such as blog entries, news headlines, audio, and video.
@@ -45,7 +45,7 @@ If you require an authorization provider for your Alert Task, you will need to c
 Follow these steps to define the API Request (REST) parameters:
 
 1. Click the **Parameters** section, and then click **Add**. The _Set Up Task Parameter_ dialog opens.
-<img src="../use-cases/images/set-task-parameter-rest-api.png" alt="set task parameter" title="set task parameter" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/set-task-parameter-rest-api.png" alt="set task parameter" title="set task parameter" style="border: 1px solid gray; zoom:75%;">
 
 2. Depending on your Alert Task configuration, enter the values for the relevant fields as described in the following table. 
 
@@ -262,9 +262,9 @@ When selected, specify the <strong>Type</strong> for the array of end-user input
   </tr>
 </table>
 
-3. Click the **Advanced Settings** tab to define additional optional settings for the task fields.
+<ol start="3"><li>Click the <b>Advanced Settings</b> tab to define additional optional settings for the task fields.</li>
 
-    <img src="../use-cases/images/advanced-settings-rest-api.png" alt="advanced settings" title="advanced settings" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/advanced-settings-rest-api.png" alt="advanced settings" title="advanced settings" style="border: 1px solid gray; zoom:75%;"></ol>
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">
@@ -337,8 +337,8 @@ The JIRA API to ‘Post a comment’ requires one query field and one payload fi
   </tr>
 </table>
 
-4. Click **Add & Continue** to save the parameter for the task request and add another parameter, or click **Add & Exit** to save the parameter for the task request and close the dialog. You should organize multiple parameters in the order that the bot user should provide inputs. Use the up and down icons to move the parameters.
-<img src="../use-cases/images/add-and-continue.png" alt="add and continue" title="add and continue" style="border: 1px solid gray; zoom:75%;">
+<ol start="4"><li>Click <b>Add & Continue</b> to save the parameter for the task request and add another parameter, or click <b>Add & Exit</b> to save the parameter for the task request and close the dialog. You should organize multiple parameters in the order that the bot user should provide inputs. Use the up and down icons to move the parameters.</li>
+<img src="../images/add-and-continue.png" alt="add and continue" title="add and continue" style="border: 1px solid gray; zoom:75%;"></ol>
 
 ## Define an Initializer
 
@@ -354,7 +354,7 @@ To run a task, you may need to put or get values from a session before executing
 
 To configure the task initializer, click the **Initializer** tab. It opens a JavaScript editor in which you can write the required code.
 
-<img src="../use-cases/images/task-initializer.png" alt="task initializer" title="task initializer" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/task-initializer.png" alt="task initializer" title="task initializer" style="border: 1px solid gray; zoom:75%;">
 
 In the JavaScript editor, define the **Key** and the **Scope** as follows:
 
@@ -533,7 +533,7 @@ For any task, you will need to define an API request to make a call to a web ser
 #### Configure the API Request
 
 1. On the **API Request** tab, expand the **Request** section, and then click, **Add API**. The Add API dialog opens, and you can now configure the request.
-2. Specify the values for the fields in the **Add API** dialog as described in the following procedure.<img src="../use-cases/images/add-api-window.png" alt="add api window" title="add api window" style="border: 1px solid gray; zoom:75%;">
+2. Specify the values for the fields in the **Add API** dialog as described in the following procedure.<img src="../images/add-api-window.png" alt="add api window" title="add api window" style="border: 1px solid gray; zoom:75%;">
 
 3. In the **Name** field, enter the name of your API request, for example, _My API Request_.
 4. In the **Method** drop-down list, select the HTTP method used for the task from the following:
@@ -544,7 +544,7 @@ For any task, you will need to define an API request to make a call to a web ser
     * **DELETE** – Deletes the content of an existing target resource.
     * **GET** – Returns the content of an existing target resource.
 
-5. In the **URL** field, specify the URL for the bot task response to the process. For example, http://koremessenger.com/postURL. You can also use session variables in the URL as shown in the following example:
+5. In the **URL** field, specify the URL for the bot task response to the process. For example, <code>http://koremessenger.com/postURL</code>. You can also use session variables in the URL as shown in the following example:
 <code>https://mySite.crm.ondemand.com/sap/c4c/odata/v1/c4codata/ServiceRequestCollection?$filter=ID eq '{id}' and ReporterEmail eq '{userEmail}'&amp;$expand=ServiceRequestHistoricalVersion,ServiceRequestDescription</code>
 
 6. In the **Access Using A Connector** field, select **Yes** to enable access for Kore.ai Bots using the Kore.ai Connector agent. This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/bot-administration/kore-ai-connector/" target="_blank">Using the Kore.ai Connector</a>.
@@ -562,10 +562,10 @@ For any task, you will need to define an API request to make a call to a web ser
     * **Oracle ADF** – For Oracle Application Development Framework.
 
 8. In the **Authorization Headers** section, select or clear keys to enable or disable the key for the header as shown in the following illustration.
-<img src="../use-cases/images/select-auth-headers.png" alt="select auth headers" title="select auth headers" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/select-auth-headers.png" alt="select auth headers" title="select auth headers" style="border: 1px solid gray; zoom:75%;">
 
 9. On the **Parameters** tab, select or clear any **Auth Parameters** or **Parameters** to include in the header as shown in the following illustration.
-<img src="../use-cases/images/set-parameters-api-request.png" alt="set parameters" title="set parameters" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/set-parameters-api-request.png" alt="set parameters" title="set parameters" style="border: 1px solid gray; zoom:75%;">
 
 10. Click **Save** to save and close the API Request configuration.
 
@@ -587,7 +587,7 @@ You can use a pre-processor to manage request parameters before the API Request 
 #### Adding a Preprocessor
 
 1. On the **API Request** page, expand the **Request** tab, and then click **Add Processor**.
-<img src="../use-cases/images/add-pre-processor.png" alt="add pre processor" title="add pre processor" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-pre-processor.png" alt="add pre processor" title="add pre processor" style="border: 1px solid gray; zoom:75%;">
 
 2. Enter the name of your processor in the **Name** field.
 3. In the **Type of Process** drop-down list, you must select **Custom** for a pre-processor.
@@ -655,7 +655,7 @@ print(JSON.stringify(finalObject));
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>When a processor is placed in the **Request** section before the API Request, the processor is considered as a pre-processor. When placed after an API Request, the processor is considered a post-processor.</p></div>
+<p>When a processor is placed in the <b>Request</b> section before the API Request, the processor is considered as a pre-processor. When placed after an API Request, the processor is considered a post-processor.</p></div>
 
 #### Adding a Post-Processor
 
@@ -933,9 +933,9 @@ for (i = 0; i < data.length; i++) {
 
 <ol start="3"><li>Click <b>Add</b> to save the API request and then create another, or click <b>Add & Exit</b> to save the API request and close the dialog.</li></ol>
 
-* For multiple API requests, you should order the requests in the sequential order needed to get to entire data response. 
+For multiple API requests, you should order the requests in the sequential order needed to get to entire data response. 
     
-    For example, you may need to request a list of workspaces, then a list of projects, and finally, a list of users. Use the **Move Up** icon and the **Move Down** icon to reorder the API requests.
+For example, you may need to request a list of workspaces, then a list of projects, and finally, a list of users. Use the **Move Up** icon and the **Move Down** icon to reorder the API requests.
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
@@ -951,14 +951,14 @@ To add a sample response, please follow the steps below:
 2. Enter your Response Sample that contains the key-value pairs from your JSON response payload. Do one of the following:
 
   * To format the view of the response as a JSON structure with indentation as shown in the following illustration, click the **Formatted**  icon.
-  <img src="../use-cases/images/format-response.png" alt="format response" title="format response" style="border: 1px solid gray; zoom:75%;">
+  <img src="../images/format-response.png" alt="format response" title="format response" style="border: 1px solid gray; zoom:75%;">
 
   * To format the view of the response in serialized compact form as shown in the following illustration, click the **Unformatted** icon.
 
 ## Preview Website Link Content
 
 Some web services send links to preview media as part of the payload response. In this section, you can enable or disable preview links, and define the path to the links in the payload. By default, website preview links are disabled. The following illustration is an example of the **Preview Website Link Content in Post** section when **Yes** is selected.
-<img src="../use-cases/images/preview-website-link.png" alt="preview link" title="preview link" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/preview-website-link.png" alt="preview link" title="preview link" style="border: 1px solid gray; zoom:75%;">
 
 When enabled, define the path to the preview links in the payload in the **Path to the Link(toPreview)** field, if the path is not in the root of the payload. For example, in the following code example from an RSS payload, the path to the preview is
 

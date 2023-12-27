@@ -44,7 +44,9 @@ To add a Sample Response, follow the steps below:
  
 In the previous section, **Alert Tasks Path** lets you define a specific path for data from the API. This is an optional field that you can use to specify if the **Response Sample** section contains a hierarchical tree structure of data and you only want a specific hierarchical level submitted for the task request object.
 
-To define the **Alert Tasks Path** for an alert task using a webhook, on the **API Request** tab, click the **Expand** icon in the **Alert Tasks Path** section as shown in the following illustration.
+To define the **Alert Tasks Path** for an alert task using a webhook, follow the steps below:
+
+1. On the **API Request** tab, click the **Expand** icon in the **Alert Tasks Path** section as shown in the following illustration.
 <img src="../images/alert-tasks-path.png" alt="authorize to use account" title="authorize to use account" style="border: 1px solid gray; zoom:75%;">
 
 For example, in the following **Response Sample**, you may only want to expose the user data in the alert task response by defining the user in the **Alert Tasks Path** field.
@@ -73,4 +75,4 @@ For example, in the following **Response Sample**, you may only want to expose t
 }
 ```
 
-<ol start="3"><li>After you enter the <b>Alert Tasks Path</b> field, click <b>Save</b>.</li></ol>
+<ol start="2"><li>After you enter the <b>Alert Tasks Path</b> field, click <b>Save</b>.</li></ol>

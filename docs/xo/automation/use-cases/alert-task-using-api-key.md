@@ -100,7 +100,8 @@ The following table describes the fields used to define an authorization IDP for
 By default, authorization fields are configured as part of the header of the task request message. If your task request requires additional authorization fields or the expected authorization is not part of the header, for example, social security number or PIN,
 
 1. Click **+ Add Authorization Field** and then define the fields as shown in the following illustration.
-<img src="../images/add-auth-field-api-key.png" alt="add authorization field" title="add authorization field" style="border: 1px solid gray; zoom:75%;"> 
+
+  <img src="../images/add-auth-field-api-key.png" alt="add authorization field" title="add authorization field" style="border: 1px solid gray; zoom:75%;"> 
 
 2. In the **Field Type** field, you can select one of the following depending on where in the task request message and the type of authorization fields that are required. 
 * **Header** – The VA expects the authorization fields as part of the header of the request.
@@ -118,7 +119,9 @@ By default, authorization fields are configured as part of the header of the tas
 After you save the authentication, if you have defined an **Authorization Check URL** for your new authorization type, you can test your authorization definition on the **Authentication** tab when you click **Test Authorization** before continuing to develop the remaining steps of your task.
 <img src="../images/click-test-auth-v2.png" alt="click test authorization" title="click test authorization" style="border: 1px solid gray; zoom:75%;">
 
-After you click **Test Authorization**, the **Test Authorization** window is displayed and populated with the URL you specified in the **Authorization Check URL** section, as shown in the following illustration.<img src="../images/test-auth-window-api-key.png" alt="test auth window" title="test auth window" style="border: 1px solid gray; zoom:75%;">
+After you click **Test Authorization**, the **Test Authorization** window is displayed and populated with the URL you specified in the **Authorization Check URL** section, as shown in the following illustration.
+
+  <img src="../images/test-auth-window-api-key.png" alt="test auth window" title="test auth window" style="border: 1px solid gray; zoom:75%;">
 
 To configure the **Test Authorization API Key**, follow the steps below:
 
