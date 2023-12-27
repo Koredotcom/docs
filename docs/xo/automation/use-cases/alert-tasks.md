@@ -170,7 +170,7 @@ Configure the API request that asks for data from your website, system, or web a
 After you define the authorization mechanism and then click **Save Auth**, you are ready to configure the alert task request. The configuration settings for an alert task request are based on the **Connection Type** that you define for the task:
 
 * Configuring API Request for WebHook service. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-webhook-api/" target="_blank">here</a> for details.
-* Configuring API Request for REST service. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-rest-api-request/" target="_blank">here</a> for details.
+* Configuring API Request for REST service. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/" target="_blank">here</a> for details.
 * Configuring API Request for SOAP service. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-soap-api-request/#Website_Preview_Content" target="_blank">here</a> for details.
 * Configuring API Request for RSS service. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-rss-api-request/" target="_blank">here</a> for details.
 
@@ -187,7 +187,7 @@ To define the response object for an alert task, there are two sections:
     
     This section is not used for webhook alert tasks, action tasks, or RSS alert tasks. 
 
-Refer <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-report-templates/" target="_blank">here</a> for Configuring the Report Template Definition.
+Refer <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-report-templates/" target="_blank">here</a> for Configuring the Report Template Definition.
 
 * **Message Definition** – In this section, you define the look and feel of the data presented to the end-user when the alert is displayed based on the payload delivered by the webhook. <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-message-definition/" target="_blank">Learn more</a>.
 
@@ -203,13 +203,13 @@ After you define the **General** tab settings for your Alert task, configure the
 
 To configure the settings for an alert task, other than a webhook alert task, you will need to define:
 
-* **Filters** – You can define filters for end-users to limit the results of an alert task to the results an end-user needs. For example, you can define a filter for the name, or account, or business. When the alert is set up by the end-user, and the filter applied, only alert messages that meet the filter specifications are displayed to the end-user. For more information, see <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-defining-filters/" target="_blank">Defining Filters for a Task</a>.
-* **Schedule** – Alert tasks only reach out to a web service for data when the VA makes a request. For each task, you need to define when, and how often the web service is queried for data for an alert message. You can define the scheduling options presented to the end-user when the task is set up, as well as the default schedule for the task. For more information, see <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-configuring-the-schedule/" target="_blank">Configuring the Schedule for a Task</a>.
-* **Advanced Settings** – In the Advanced Settings section, you can define alert task settings for enabling and limiting the initial set of alert messages displayed to the end-user when the task is set up, define alert message reminders, and if required, prevent duplicate messages sent to the user. For more information, see <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-advanced-settings/" target="_blank">Define Advanced Settings</a>. 
+* **Filters** – You can define filters for end-users to limit the results of an alert task to the results an end-user needs. For example, you can define a filter for the name, or account, or business. When the alert is set up by the end-user, and the filter applied, only alert messages that meet the filter specifications are displayed to the end-user. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-defining-filters/" target="_blank">Defining Filters for a Task</a>.
+* **Schedule** – Alert tasks only reach out to a web service for data when the VA makes a request. For each task, you need to define when, and how often the web service is queried for data for an alert message. You can define the scheduling options presented to the end-user when the task is set up, as well as the default schedule for the task. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-configuring-the-schedule/" target="_blank">Configuring the Schedule for a Task</a>.
+* **Advanced Settings** – In the Advanced Settings section, you can define alert task settings for enabling and limiting the initial set of alert messages displayed to the end-user when the task is set up, define alert message reminders, and if required, prevent duplicate messages sent to the user. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-advanced-settings/" target="_blank">Define Advanced Settings</a>. 
 
 ## Version Namespaces
 
-Associate the Variable Namespaces to be used to execute this task. The system will use the variables only from these Namespaces to execute this task. This option is only available if you have enabled Namespaces. <a href="https://developer.kore.ai/docs/bots/bot-settings/bot-management/managing-namespace/" target="_blank">Learn more</a>.
+Associate the Variable Namespaces to be used to execute this task. The system will use the variables only from these Namespaces to execute this task. This option is only available if you have enabled Namespaces. <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/managing-namespace/" target="_blank">Learn more</a>.
 
 <img src="../images/version-namespaces.png" alt="version namespaces" title="version namespaces" style="border: 1px solid gray; zoom:75%;"> 
 

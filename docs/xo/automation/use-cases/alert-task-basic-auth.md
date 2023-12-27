@@ -1,6 +1,6 @@
 # Alert Task – Basic Auth
 
-We have seen how an Alert task can be set up in Kore.ai virtual assistant platform <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">here</a>. In this section, we will see how basic authorization for the alert tasks can be set up.
+We have seen how an Alert task can be set up in the XO Platform <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">here</a>. In this section, we will see how basic authorization for the alert tasks can be set up.
 
 ## How it Works 
 
