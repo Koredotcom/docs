@@ -73,4 +73,4 @@ For example, in the following **Response Sample**, you may only want to expose t
 }
 ```
 
-3. After you enter the **Alert Tasks Path** field, click **Save**.
+<ol start="3"><li>After you enter the <b>Alert Tasks Path</b> field, click <b>Save</b>.</li></ol>

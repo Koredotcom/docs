@@ -169,7 +169,7 @@ Configure the API request that asks for data from your website, system, or web a
 
 After you define the authorization mechanism and then click **Save Auth**, you are ready to configure the alert task request. The configuration settings for an alert task request are based on the **Connection Type** that you define for the task:
 
-* Configuring API Request for WebHook service. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-webhook-api-request/" target="_blank">here</a> for details.
+* Configuring API Request for WebHook service. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-webhook-api/" target="_blank">here</a> for details.
 * Configuring API Request for REST service. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-rest-api-request/" target="_blank">here</a> for details.
 * Configuring API Request for SOAP service. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-soap-api-request/#Website_Preview_Content" target="_blank">here</a> for details.
 * Configuring API Request for RSS service. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-rss-api-request/" target="_blank">here</a> for details.
