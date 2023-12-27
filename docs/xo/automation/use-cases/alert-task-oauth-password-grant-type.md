@@ -1,6 +1,6 @@
 # Alert Task – OAuth v2 Password Grant Type
 
-We have seen how an Alert Task can be set up in the XO Platform [here](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/). In this article , we will see how authorization for the alert tasks can be set up using the OAuth v2 with password grant.
+We have seen how an Alert Task can be set up in the XO Platform <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">here</a>. In this article , we will see how authorization for the alert tasks can be set up using the OAuth v2 with password grant.
 
 ## General Setup
 

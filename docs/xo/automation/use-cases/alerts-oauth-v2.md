@@ -1,6 +1,6 @@
 # Alert Task – OAuth v2
 
-We have seen how an Alert task can be set up in the XO Platform  [here](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/). In this article, we will see how alert task authorization can be set up using the OAuth v2.
+We have seen how an Alert task can be set up in the XO Platform <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/" target="_blank">here</a>. In this article, we will see how alert task authorization can be set up using the OAuth v2.
 
 ## How it Works 
 
@@ -117,7 +117,7 @@ In the following example configuration, the tenancy URL contains the {tenant} or
 ## Additional Fields
 
 1. Click **+ Add Additional Fields** to open the **Additional Fields** window, and then enter one or more key/value pairs that represent additional authorization input fields if required as shown in the following illustration.
-<img src="../use-cases/images/add-form-fields-v2.png" alt="add form fields" title="add form fields" style="border: 1px solid gray; zoom:75%;"> 
+<img src="../images/add-form-fields-v2.png" alt="add form fields" title="add form fields" style="border: 1px solid gray; zoom:75%;"> 
 
 2. Specify the following fields:
     * **Field Key** – The name of the custom field to specify for authorization.
@@ -149,11 +149,11 @@ After you save the authorization, you can test it using the **Authorization** pa
 
 1. Click **Test Authorization** before continuing to develop the remaining steps of your task.
 
-    <img src="../use-cases/images/click-test-auth-v2.png" alt="click test authorization" title="click test authorization" style="border: 1px solid gray; zoom:75%;"> 
+    <img src="../images/click-test-auth-v2.png" alt="click test authorization" title="click test authorization" style="border: 1px solid gray; zoom:75%;"> 
 
 2. After you click **Test Authorization**, the test is executed using the authentication token URLs and the **Client ID** and **Client Secret Key**. If the tenancy was defined, the **Test Authorization** window is displayed as shown in the following illustration.
 
-    <img src="../use-cases/images/test-auth-parameters.png" alt="test auth parameters" title="test auth parameters" style="border: 1px solid gray; zoom:75%;"> 
+    <img src="../images/test-auth-parameters.png" alt="test auth parameters" title="test auth parameters" style="border: 1px solid gray; zoom:75%;"> 
 
 3. Click **Test** to begin the authorization test. When the validation of authentication is complete, the **Test Authorization** window is closed and the results of the validation, either success or failure, is displayed to the immediate right of the **Test Authorization** button. If the authorization fails, the _Auth Test Failed_ message is displayed along with the **Headers** and **Response** tabs as shown in the following illustration.
 
