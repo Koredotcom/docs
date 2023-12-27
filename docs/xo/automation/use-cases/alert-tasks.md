@@ -160,7 +160,7 @@ To get started with defining the **Authorization** for a task,
     * **OAuth v2 Client Credential**
     * **OAuth v1** – Enables web applications or web services to access protected resources using an API without end-users having to disclose their login credentials to Kore.ai. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alerts-oauth-v1/" target="_blank">here</a> for the configuration details.
     * **OAuth v2** – The newest version of the OAuth protocol focusing on specific authorization flows for web applications and web services. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alerts-oauth-v2/" target="_blank">here</a> for the configuration details.
-    * **API Key** – An identification and authorization token generated or provided by a web application or web service used to identify the incoming application request, and in some cases, also provide authentication for secure access. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-api-key-authorization/" target="_blank">here</a> for the configuration details.
+    * **API Key** – An identification and authorization token generated or provided by a web application or web service used to identify the incoming application request, and in some cases, also provide authentication for secure access. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-using-api-key/" target="_blank">here</a> for the configuration details.
     <img src="../images/alerts-authorization.jpg" alt="alerts authorization" title="alerts authorization" style="border: 1px solid gray; zoom:75%;"> 
 
 ### API Requests
