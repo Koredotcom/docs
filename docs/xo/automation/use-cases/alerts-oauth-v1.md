@@ -1,6 +1,6 @@
 # Alert Task – OAuth v1
 
-We have seen how an Alert task can be set up in the XO Platform  [here](https://developer.kore.ai/docs/bots/bot-builder-tool/alert/notification-tasks/). In this article , we will see how authorization for the alert tasks can be set up using the OAuth v1.
+We have seen how an Alert task can be set up in the XO Platform  [here](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/). In this article , we will see how authorization for the alert tasks can be set up using the OAuth v1.
 
 ## How it Works 
 
@@ -16,8 +16,8 @@ OAuth is an open protocol to allow secure authorization in a simple and standard
 To begin your configuration, follow the steps below:
 
 1. Select the VA you want to work with.
-2. Go to Go to **Build** > **Conversation Skills** > **Alert Tasks**. 
-3. Select the **task** you want to work with. 
+2. Go to **Build** > **Conversation Skills** > **Alert Tasks**. 
+3. Select the task you want to work with. 
 4. Click the **API Request** tab within the Alert Task.
 5. Expand the **Authorization** section and click **Create New** to configure a new authorization.
 <img src="../images/create-new-authorization.png" alt="create new authorization" title="create new authorization" style="border: 1px solid gray; zoom:75%;"> 
@@ -112,7 +112,6 @@ In the following example configuration, the tenancy URL contains the {tenant} or
 1. Click **+ Add Additional Fields** to open the **Additional Fields** window, and then enter one or more key/value pairs that represent additional authorization input fields if required as shown in the following illustration.
 <img src="../images/add-additional-fields.png" alt="add additional fields" title="add additional fields" style="border: 1px solid gray; zoom:75%;">
 
-
 2. Specify the following fields:
     * **Field Key** – The name of the custom field to specify for authorization.
     * **Field Value** – The value of the custom field to specify for the authorization.
@@ -144,7 +143,7 @@ To add authorization fields:
 After you save the authorization, you can test your authorization definition on the **Authorization** page.
 
 1. Click **Test Authorization** before continuing to develop the remain steps of your task.
-<img src="../images/create-new-api-request.png" alt="create new api request" title="create new api request" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/click-test-auth-v2.png" alt="click test auth" title="click test auth" style="border: 1px solid gray; zoom:75%;">
 
 2. When you click **Test Authorization**, the test is executed using the authentication token URLs and the **Consumer Key** and **Consumer Token**. If the tenancy was defined, the **Test Authorization** dialog is displayed as shown in the following illustration.<img src="../images/test-authorization-yes.png" alt="test authorization" title="test authorization" style="border: 1px solid gray; zoom:75%;">
 

@@ -1,6 +1,6 @@
 # Alert Task – Basic Auth
 
-We have seen how an Alert task can be set up in Kore.ai virtual assistant platform [here](https://developer.kore.ai/docs/bots/bot-builder-tool/alert/notification-tasks/). In this section, we will see how basic authorization for the alert tasks can be set up.
+We have seen how an Alert task can be set up in Kore.ai virtual assistant platform [here](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/). In this section, we will see how basic authorization for the alert tasks can be set up.
 
 ## How it Works 
 
@@ -21,7 +21,7 @@ You can use Basic Authorization when configuring API Requests within Alert Tasks
 
 1. Select the VA you want to work with.
 2. Go to **Build** > **Conversation Skills** > **Alert Tasks**. 
-3. Select the **task** you want to work with. 
+3. Select the task you want to work with. 
 4. Click the **API Request** tab within the Alert Task.
 5. Expand the **Authorization** section and click **Create New** to configure a new authorization.
 <img src="../images/create-new-authorization.png" alt="create new authorization" title="create new authorization" style="border: 1px solid gray; zoom:75%;">
