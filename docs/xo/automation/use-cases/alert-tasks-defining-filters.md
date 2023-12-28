@@ -8,11 +8,11 @@ When the alert is set up by the end-user, and the filter applied, only alert mes
 
 To get started with defining filters for a task, on the **Settings** tab, click the **Expand** icon in the **Filters** section, and then click **Add** as shown in the following illustration.
 
-<img src="../use-cases/images/defining-filters.png" alt="defining filters" title="defining filters" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/defining-filters.png" alt="defining filters" title="defining filters" style="border: 1px solid gray; zoom:75%;">
 
 When you click **Add**, the **Alert Task Filter** dialog is displayed as shown in the following illustration.
 
-<img src="../use-cases/images/alert-task-filter.png" alt="alert task filter" title="alert task filter" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/alert-task-filter.png" alt="alert task filter" title="alert task filter" style="border: 1px solid gray; zoom:75%;">
 
 Define the fields described in the following table to create a new filter for a task.
 
@@ -199,7 +199,7 @@ Define the fields described in the following table to create a new filter for a 
 </table>
 
 For multiple filters, you can order the filters in an order the end-user expects, shown in numerical order in the following illustration.
-<img src="../use-cases/images/multiple-filters.png" alt="multiple filters" title="add password fieldmultiple filters" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/multiple-filters.png" alt="multiple filters" title="add password fieldmultiple filters" style="border: 1px solid gray; zoom:75%;">
 
 * Use the **Move Up** icon and the **Move Down** icon in the **Actions** column in the **Filters** section to reorder the filters if needed.
 * Click the **Edit** icon to modify the settings for an existing filter.

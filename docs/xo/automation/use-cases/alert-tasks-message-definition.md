@@ -65,12 +65,14 @@ Follow the steps below to add variable keys:
 ```
 
 * **_tenant_** – Returns the tenant for the enterprise when defined. For example, _JIRA_ requires a tenant for URLs, such as koreteam, in https://koreteam.atlassian.net/browse/BBF-3265. You can use the `_tenant_` key to build a link in a task response such as:
-  * **_fields_** – Used to return a task field input provided by the end-user that is not part of a payload response. For example, in a _JIRA_ task, the end-user is prompted to enter a workspace name. You can use the `_fields_` key to store the end-user input as: `_fields_["workspace"]`
-  * **_last_run** – Used to return the UTC date timestamp of a web service poll using ISO 8601 format, for example, 2016-03-05T12:44:38+00:00. For example, if a web service request returns all activity in a payload response, you can use the `_last_run` key to filter results displayed before or after the value for `_last_run`.
+
+    * **_fields_** – Used to return a task field input provided by the end-user that is not part of a payload response. For example, in a _JIRA_ task, the end-user is prompted to enter a workspace name. You can use the `_fields_` key to store the end-user input as: `_fields_["workspace"]`
+    * **_last_run** – Used to return the UTC date timestamp of a web service poll using ISO 8601 format, for example, 2016-03-05T12:44:38+00:00. For example, if a web service request returns all activity in a payload response, you can use the `_last_run` key to filter results displayed before or after the value for `_last_run`.
 
 ### Session Keys
 
 **Session Keys** are Kore.ai variable placeholders for user data specific to a single session instance.
+
 <img src="../images/session-keys.png" alt="session keys" title="session keys" style="border: 1px solid gray; zoom:75%;">
 
 * **UserContext.get(“_id”)** – The Kore.ai userId.

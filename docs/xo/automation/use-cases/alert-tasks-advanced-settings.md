@@ -53,7 +53,7 @@ To configure an alert reminder, follow the steps below:
 * For iCalendar events. For more information, see <a href="https://www.kanzaki.com/docs/ical/rrule.html" target="_blank">Recurrence Rule</a>.
 * **Cron** – Used for scheduling tasks in the future. For more information, see <a href="https://en.wikipedia.org/wiki/Cron#CRON_expression" target="_blank">Cron Expressions</a>.
 
-6. In the **Recurrence Pattern** section, define the string displayed to the end-user to show the frequency of a repeating event, such as a recurring weekly meeting. For example: 
+<ol start="6"><li>In the <b>Recurrence Pattern</b> section, define the string displayed to the end-user to show the frequency of a repeating event, such as a recurring weekly meeting. For example:
  
 ```js
 if (typeof(Recurrence) !== 'undefined' && Recurrence) {
@@ -113,9 +113,9 @@ if (typeof(Recurrence) !== 'undefined' && Recurrence) {
     print(rrule);
 }
 ```
-
-7. If the **Format to Identify Recurrence** field is set to **Cron**, then define the **Event End** section to define the string displayed to the end-user to show the date and time of the last recurring event.
-8. Click **Save** to save the settings.
+</li>
+<li>If the <b>Format to Identify Recurrence</b> field is set to <b>Cron</b>, then define the <b>Event End</b> section to define the string displayed to the end-user to show the date and time of the last recurring event.</li>
+<li>Click <b>Save</b> to save the settings.</li></ol>
 
 ## Preventing Duplicate Message Alerts 
 After you add your filters for the response object, you should determine if you need to apply a strategy to prevent the display of duplicate messages to the end-user. For example, if you set up an RSS task, you may want to prevent duplicate messages for the same subject, or for _Facebook_, prevent duplicate messages each time a comment is added to a post.

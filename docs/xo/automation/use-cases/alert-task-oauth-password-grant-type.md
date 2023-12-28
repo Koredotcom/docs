@@ -116,7 +116,8 @@ By default, authorization fields are configured as part of the header of the tas
 To define the token URL, follow the below steps:
 
 1. In the **Token URL** field, optionally define a URL that can be used to test the authentication settings from the XO Platform  before you deploy the task with the authorization mechanism. You can use dynamic fields, path parameter fields, query fields, and so forth, to define the test URL, for example, 
-http://{tenant}.someCompany.com/test/{{tokenId}}
+<code>http://{tenant}.someCompany.com/test/{{tokenId}}</code>
+
 2. In the **Token URL Method** field, select the HTTP request method type for the **Token URL**. One of **PUT**, **POST**, **PATCH**, **DELETE,** and **GET**.
 3. In the **Token URL Content Type** field, select the content type expected from the **Token URL**. One of: **JSON, RSS, XML, URL Encoded JSON, CSV, Text, Twitter Encoded JSON, Multipart/Form-data,Multipart/Related**, or **Oracle ADF**.
 4. In the **Refresh Token URL**, enter the refresh token URL if required. 
