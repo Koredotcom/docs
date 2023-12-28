@@ -146,7 +146,6 @@ You must define how the end-user must be authorized to get the alert task notifi
 
     Authorization for alert tasks with the Connection Type set to Webhook is not required as part of the alert task configuration.
 
-
 After you define the general settings for an alert task, the next step is to go to the **Authorization** section on the **API Request** tab.
 
 To get started with defining the **Authorization** for a task,
@@ -156,12 +155,12 @@ To get started with defining the **Authorization** for a task,
 3. To define a new authorization provider, click **Create New**.
 4. On the **New Authorization Mechanism** window, select the type of authorization used by your bot from the **Authorization Type** drop-down list.
 5. You can choose one of the following types of authorization:
-    * **Basic Auth**: A standard protocol to collect username and password information. Kore.ai uses SSL encryption in combination with basic authentication to help secure end-user information. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-basic-auth/" target="_blank">here</a> for the configuration details.
-    * **OAuth v2 Password Grant Type** – Define a custom authorization type for non-standard web service authorization types. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-oauth-v2-password-grant-type/" target="_blank">here</a> for the configuration details.
+    * **Basic Auth**: A standard protocol to collect username and password information. Kore.ai uses SSL encryption in combination with basic authentication to help secure end-user information. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-basic-auth/" target="_blank">here</a> for the configuration details.
+    * **OAuth v2 Password Grant Type** – Define a custom authorization type for non-standard web service authorization types. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-oauth-password-grant-type/" target="_blank">here</a> for the configuration details.
     * **OAuth v2 Client Credential**
-    * **OAuth v1** – Enables web applications or web services to access protected resources using an API without end-users having to disclose their login credentials to Kore.ai. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-oauth-v1/" target="_blank">here</a> for the configuration details.
-    * **OAuth v2** – The newest version of the OAuth protocol focusing on specific authorization flows for web applications and web services. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-oauth-v2/" target="_blank">here</a> for the configuration details.
-    * **API Key** – An identification and authorization token generated or provided by a web application or web service used to identify the incoming application request, and in some cases, also provide authentication for secure access. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-api-key-authorization/" target="_blank">here</a> for the configuration details.
+    * **OAuth v1** – Enables web applications or web services to access protected resources using an API without end-users having to disclose their login credentials to Kore.ai. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alerts-oauth-v1/" target="_blank">here</a> for the configuration details.
+    * **OAuth v2** – The newest version of the OAuth protocol focusing on specific authorization flows for web applications and web services. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alerts-oauth-v2/" target="_blank">here</a> for the configuration details.
+    * **API Key** – An identification and authorization token generated or provided by a web application or web service used to identify the incoming application request, and in some cases, also provide authentication for secure access. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-using-api-key/" target="_blank">here</a> for the configuration details.
     <img src="../images/alerts-authorization.jpg" alt="alerts authorization" title="alerts authorization" style="border: 1px solid gray; zoom:75%;"> 
 
 ### API Requests
@@ -170,8 +169,8 @@ Configure the API request that asks for data from your website, system, or web a
 
 After you define the authorization mechanism and then click **Save Auth**, you are ready to configure the alert task request. The configuration settings for an alert task request are based on the **Connection Type** that you define for the task:
 
-* Configuring API Request for WebHook service. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-webhook-api-request/" target="_blank">here</a> for details.
-* Configuring API Request for REST service. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-rest-api-request/" target="_blank">here</a> for details.
+* Configuring API Request for WebHook service. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-webhook-api/" target="_blank">here</a> for details.
+* Configuring API Request for REST service. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/" target="_blank">here</a> for details.
 * Configuring API Request for SOAP service. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-soap-api-request/#Website_Preview_Content" target="_blank">here</a> for details.
 * Configuring API Request for RSS service. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-rss-api-request/" target="_blank">here</a> for details.
 
@@ -188,9 +187,9 @@ To define the response object for an alert task, there are two sections:
     
     This section is not used for webhook alert tasks, action tasks, or RSS alert tasks. 
 
-Refer <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-report-templates/" target="_blank">here</a> for Configuring the Report Template Definition.
+Refer <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-report-templates/" target="_blank">here</a> for Configuring the Report Template Definition.
 
-* **Message Definition** – In this section, you define the look and feel of the data presented to the end-user when the alert is displayed based on the payload delivered by the webhook. <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-message-definition/" target="_blank">Learn more</a>.
+* **Message Definition** – In this section, you define the look and feel of the data presented to the end-user when the alert is displayed based on the payload delivered by the webhook. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-message-definition/" target="_blank">Learn more</a>.
 
 ## Alert Settings
 
@@ -204,13 +203,13 @@ After you define the **General** tab settings for your Alert task, configure the
 
 To configure the settings for an alert task, other than a webhook alert task, you will need to define:
 
-* **Filters** – You can define filters for end-users to limit the results of an alert task to the results an end-user needs. For example, you can define a filter for the name, or account, or business. When the alert is set up by the end-user, and the filter applied, only alert messages that meet the filter specifications are displayed to the end-user. For more information, see <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-defining-filters/" target="_blank">Defining Filters for a Task</a>.
-* **Schedule** – Alert tasks only reach out to a web service for data when the VA makes a request. For each task, you need to define when, and how often the web service is queried for data for an alert message. You can define the scheduling options presented to the end-user when the task is set up, as well as the default schedule for the task. For more information, see <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-configuring-the-schedule/" target="_blank">Configuring the Schedule for a Task</a>.
-* **Advanced Settings** – In the Advanced Settings section, you can define alert task settings for enabling and limiting the initial set of alert messages displayed to the end-user when the task is set up, define alert message reminders, and if required, prevent duplicate messages sent to the user. For more information, see <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-advanced-settings/" target="_blank">Define Advanced Settings</a>. 
+* **Filters** – You can define filters for end-users to limit the results of an alert task to the results an end-user needs. For example, you can define a filter for the name, or account, or business. When the alert is set up by the end-user, and the filter applied, only alert messages that meet the filter specifications are displayed to the end-user. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-defining-filters/" target="_blank">Defining Filters for a Task</a>.
+* **Schedule** – Alert tasks only reach out to a web service for data when the VA makes a request. For each task, you need to define when, and how often the web service is queried for data for an alert message. You can define the scheduling options presented to the end-user when the task is set up, as well as the default schedule for the task. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-configuring-the-schedule/" target="_blank">Configuring the Schedule for a Task</a>.
+* **Advanced Settings** – In the Advanced Settings section, you can define alert task settings for enabling and limiting the initial set of alert messages displayed to the end-user when the task is set up, define alert message reminders, and if required, prevent duplicate messages sent to the user. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-advanced-settings/" target="_blank">Define Advanced Settings</a>. 
 
 ## Version Namespaces
 
-Associate the Variable Namespaces to be used to execute this task. The system will use the variables only from these Namespaces to execute this task. This option is only available if you have enabled Namespaces. <a href="https://developer.kore.ai/docs/bots/bot-settings/bot-management/managing-namespace/" target="_blank">Learn more</a>.
+Associate the Variable Namespaces to be used to execute this task. The system will use the variables only from these Namespaces to execute this task. This option is only available if you have enabled Namespaces. <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/managing-namespace/" target="_blank">Learn more</a>.
 
 <img src="../images/version-namespaces.png" alt="version namespaces" title="version namespaces" style="border: 1px solid gray; zoom:75%;"> 
 
