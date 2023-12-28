@@ -100,7 +100,8 @@ The following table describes the fields used to define an authorization IDP for
 By default, authorization fields are configured as part of the header of the task request message. If your task request requires additional authorization fields or the expected authorization is not part of the header, for example, social security number or PIN,
 
 1. Click **+ Add Authorization Field** and then define the fields as shown in the following illustration.
-<img src="../images/add-auth-field-api-key.png" alt="add authorization field" title="add authorization field" style="border: 1px solid gray; zoom:75%;"> 
+
+    <img src="../images/add-auth-field-api-key.png" alt="add authorization field" title="add authorization field" style="border: 1px solid gray; zoom:75%;"> 
 
 2. In the **Field Type** field, you can select one of the following depending on where in the task request message and the type of authorization fields that are required. 
 * **Header** – The VA expects the authorization fields as part of the header of the request.
