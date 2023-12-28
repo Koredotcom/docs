@@ -189,7 +189,7 @@ To define the response object for an alert task, there are two sections:
 
 Refer <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-report-templates/" target="_blank">here</a> for Configuring the Report Template Definition.
 
-* **Message Definition** – In this section, you define the look and feel of the data presented to the end-user when the alert is displayed based on the payload delivered by the webhook. <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-message-definition/" target="_blank">Learn more</a>.
+* **Message Definition** – In this section, you define the look and feel of the data presented to the end-user when the alert is displayed based on the payload delivered by the webhook. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-message-definition/" target="_blank">Learn more</a>.
 
 ## Alert Settings
 
