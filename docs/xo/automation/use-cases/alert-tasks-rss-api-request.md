@@ -8,11 +8,11 @@ For a task with the **Connection Type** specified as **Webservice** and the **Co
 
 * **Content Type** – The type of data exchanged between the XO Platform and your web application,
 * **Authentication** – If required for your alert task, you will need to define the authentication to access the API, for example, using basic authorization, OAuth, or API Key. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/#authorization" target="_blank">Learn more</a>.
-* **Parameters** – Define one or more parameters used to process the API request, for example, input from user prompts, selection by an end-user from a list of choices, a URL, and so forth, <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/#authorization" target="_blank">Learn more</a>.
-* **Initializer** – Specify custom JavaScript to run, or set session variables prior to creating a task instance when web services require code to be executed, or session variables set, or modification of user context details before an API request is executed, <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/#authorization" target="_blank">Learn more</a>.
-* **Request** – Define a request chain used to make an API call to a web service to initiate the task using URLs and paths to your VA to initiate the delivery of the data payload from the web service to the XO Platform. The request chain can consist of preprocessors, API requests, and post-processors, <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/#authorization" target="_blank">Learn more</a>.
-* **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user, <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/#authorization" target="_blank">Learn more</a>.
-* **Preview Website Link Content in Post** – The website preview content displayed in the task notification message, <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/#authorization" target="_blank">Learn more</a>.
+* **Parameters** – Define one or more parameters used to process the API request, for example, input from user prompts, selection by an end-user from a list of choices, a URL, and so forth, <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-parameters" target="_blank">Learn more</a>.
+* **Initializer** – Specify custom JavaScript to run, or set session variables prior to creating a task instance when web services require code to be executed, or session variables set, or modification of user context details before an API request is executed, <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-an-initializer" target="_blank">Learn more</a>.
+* **Request** – Define a request chain used to make an API call to a web service to initiate the task using URLs and paths to your VA to initiate the delivery of the data payload from the web service to the XO Platform. The request chain can consist of pre-processors, API requests, and post-processors, <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-the-request-chain" target="_blank">Learn more</a>.
+* **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user, <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#add-the-response-sample" target="_blank">Learn more</a>.
+* **Preview Website Link Content in Post** – The website preview content displayed in the task notification message, <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#website-preview-content" target="_blank">Learn more</a>.
 
 ## Define the Content Type
 
@@ -35,6 +35,7 @@ To define the Content Type for the API Request (RSS), expand the **Content Type*
 ## Define Parameters
 
 Follow these steps to define the API Request (REST) parameters:
+
 1. Expand the **Parameters** section, and then click **Create Parameter**.
 <img src="../images/parameters-section.png" alt="parameters section" title="parameters section" style="border: 1px solid gray; zoom:75%;">
 
@@ -663,7 +664,7 @@ finalObject.fields = fields;
 print(JSON.stringify(finalObject));
 ```
 
-In the previous code, if **firstName** and **lastName** are stored as session variables, as John and Smith respectively, then the JSON response payload from the pre-processor would be:
+In the previous code, if **firstName** and **lastName** are stored as session variables, as <i>John</i> and <i>Smith</i> respectively, then the JSON response payload from the pre-processor would be:
 
 ```js
 {
@@ -732,7 +733,7 @@ For custom processors, you must print the final response as shown in the precedi
 print(JSON.stringify( <<-object->> ));
 ```
 
-##### Configure Standard Postprocessors
+##### Configure Standard Post-processors
 
 Follow these steps to add a standard postprocessor:
 
@@ -750,7 +751,7 @@ Follow these steps to add a standard postprocessor:
 "name":"jaganmohan.evuri" },
 ```
 
-<ol start="3"><li><p>It is then used as a variable input as shown in the following <b>Post URL</b></p> 
+<ol start="3"><li><p>It is then used as a variable input as shown in the following <b>Post URL:</b></p> 
 <p><code>https://app.asana.com/api/1.0/projects/<b>{id}</b>/tasks?opt_fields=completed,modified_at</code>
 You must also specify the HTML <b>Content Type</b> expected in the payload response as well as the HTML <b>Request</b> method. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/using-session-and-context-variables/" target="_blank">Using Session and Context Variables in Tasks</a>.</p></li>
 
@@ -851,7 +852,7 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 
 <ol start="4"><li><b>Extract</b>: For payloads that contain multiple objects, you can specify a path to the specific object.
 
-For example, click **Add Processor**, enter a **Name** for your processor, set the **Key** field to data, and then **Type of Process** to **extract** to use the object data in the following payload response.
+For example, click <b>Add Processor</b>, enter a <b>Name</b> for your processor, set the <b>Key</b> field to data, and then <b>Type of Process</b> to <b>extract</b> to use the object data in the following payload response.
 
 ```js
 {
@@ -979,8 +980,7 @@ print('<br>');
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p>No confirmation dialog is displayed when deleting an API request.</p>
-<p>If you click Continue or Save, the delete action is permanent and cannot be undone.</p></div>
+<p>No confirmation dialog is displayed when deleting an API request. If you click Continue or Save, the delete action is permanent and cannot be undone.</p></div>
 </ol>
 
 ## Add the Response Sample
@@ -994,8 +994,8 @@ To add a sample response, follow the steps below:
 1. On the **API Request** tab, Expand the **Sample Response** section.
 2. Enter your Response Sample that contains the key-value pairs from your JSON response payload. Do one of the following:
 
-  * To format the view of the response as a JSON structure with indentation as shown in the following illustration, click the **Formatted** icon.
-  * To format the view of the response in serialized compact form as shown in the following illustration, click the **Unformatted** icon.
+   * To format the view of the response as a JSON structure with indentation as shown in the following illustration, click the **Formatted** icon.
+   * To format the view of the response in serialized compact form as shown in the following illustration, click the **Unformatted** icon.
   <img src="../images/response-sample-rss.png" alt="response sample rss" title="response sample rss" style="border: 1px solid gray; zoom:75%;">
  
 ## Website Preview Content
@@ -1003,7 +1003,7 @@ To add a sample response, follow the steps below:
 Some web services send links to preview media as part of the payload response. In this section, you can enable or disable preview links, and define the path to the links in the payload. By default, website preview links are disabled. The following illustration is an example of the **Preview Website Link Content in Post** section, when **Yes** is selected.
 <img src="../images/preview-website-rss.png" alt="preview website" title="preview website" style="border: 1px solid gray; zoom:75%;">
 
-When enabled, define the path to the preview links in the payload in the **Path to the Link(toPreview)** field, if the path is not in the root of the payload. For example, in the following code example from an RSS payload, the path to the preview is
+When enabled, define the path to the preview links in the payload in the **Path to the Link (toPreview)** field, if the path is not in the root of the payload. For example, in the following code example from an RSS payload, the path to the preview is given by <i>link</i>.
 
 ```js
 "item": [
