@@ -90,11 +90,11 @@ Steps to configure IVR settings for your Virtual Assistant:
     ![alt_text](images/ivr(20).png "image_tooltip")
 3. The **Channels** page is displayed. Locate and click the **IVR** under Voice Channels. 
     ![alt_text](images/ivr(8).png "image_tooltip")
-
-
+The IVR Panel with Instructions is displayed.
+ ![alt_text](images/ivr(16).png "image_tooltip")
 
 4.On the **Configurations** tab, perform the following steps: 
-    ![alt_text](images/ivr(16).png "image_tooltip")
+   
 
 a. Use **Kore.ai IVR Sandbox** for testing your VA. See[ Sandbox Configuration](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#ivr-sandbox)<span style="text-decoration:underline;"> </span>for more details.
 ```
@@ -129,6 +129,8 @@ Note: If you have enabled IVR Sandbox, the following settings are required to be
  – ASR Threshold Confidence set to 50
 ```
 ![alt_text](images/ivr(7).png "image_tooltip")
+
+
 
 ![alt_text](images/ivr(1).png "image_tooltip")
 
@@ -264,19 +266,21 @@ Note: The Webhook Payload is used to test the IVR channel configuration for your
 
 
 
-The **IVR Voice Sample CURL** request is as follows: 
+The **IVR Voice Sample CURL** request is as follows:
 
- 
- `curl --location --request POST 
- '{{host}}/ivr/hooks/{{streamId}}?token={{token}}' 
- --header 'Content-Type: application/json' 
- --data-raw '{ 
- "callId":"98ab212987ce868ad546", 
- "message":"check balance", 
- "from":"14022334455", 
- "app_root":"app.vxml" 
- }' 
- 
+
+
+        curl --location --request POST
+        '{{host}}/ivr/hooks/{{streamId}}?token={{token}}' \
+        --header 'Content-Type: application/json' \
+        --data-raw '{
+        "callId":"98ab212987ce868ad546",
+        "message":"check balance",
+        "from":"14022334455",
+        "app_root":"app.vxml"
+        }'
+
+
  The following table provides the descriptions of all the mandatory and optional request parameters: 
 
 
@@ -340,7 +344,7 @@ The **IVR Voice Sample CURL** request is as follows:
 
 
 
-3. Click the **Configurations**tab. 
+3. Click the **Configurations** tab. 
 
 
 
@@ -365,9 +369,6 @@ The **IVR Voice Sample CURL** request is as follows:
 ```
 Note: For a quick overview of the JWT token, refer to Introduction to JWT tokens.
 ```
-
-
-
 
 2. JWT has to be passed in the IVR hook URL as a value for the query parameter “token”: 
  `https://{{host}}/ivr/hooks/{{botId}}?token={{JWT}}  `
@@ -453,16 +454,16 @@ To extract the metadata from the ASR transcription, follow these steps:
 
 
 In this example, the parameters like **ASR Confidence** **score**,** input mode**, **utterance, **etc. are extracted in the syntax shown below:
-{{
-_“data”: {_
 
-_“text”: 
-“{“confidence”:”0.810000″, 
-“Inputmode”:”voice”, 
-“interpretation”:”Login.”, 
-“utterance”:”Login.”}”
 
-}}
+    “data”: 
+    “text”: 
+    “{“confidence”:”0.810000″, 
+    “Inputmode”:”voice”, 
+    “interpretation”:”Login.”, 
+    “utterance”:”Login.”}”
+
+
 
 ```
 Note: The information is available for the existing and new virtual assistants whose IVR channel is enabled. 
