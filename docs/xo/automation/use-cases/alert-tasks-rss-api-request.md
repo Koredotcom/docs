@@ -8,11 +8,11 @@ For a task with the **Connection Type** specified as **Webservice** and the **Co
 
 * **Content Type** – The type of data exchanged between the XO Platform and your web application,
 * **Authentication** – If required for your alert task, you will need to define the authentication to access the API, for example, using basic authorization, OAuth, or API Key. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/#authorization" target="_blank">Learn more</a>.
-* **Parameters** – Define one or more parameters used to process the API request, for example, input from user prompts, selection by an end-user from a list of choices, a URL, and so forth, <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-parameters" target="_blank">Learn more</a>.
-* **Initializer** – Specify custom JavaScript to run, or set session variables prior to creating a task instance when web services require code to be executed, or session variables set, or modification of user context details before an API request is executed, <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-an-initializer" target="_blank">Learn more</a>.
-* **Request** – Define a request chain used to make an API call to a web service to initiate the task using URLs and paths to your VA to initiate the delivery of the data payload from the web service to the XO Platform. The request chain can consist of pre-processors, API requests, and post-processors, <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-the-request-chain" target="_blank">Learn more</a>.
-* **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user, <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#add-the-response-sample" target="_blank">Learn more</a>.
-* **Preview Website Link Content in Post** – The website preview content displayed in the task notification message, <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#website-preview-content" target="_blank">Learn more</a>.
+* **Parameters** – Define one or more parameters used to process the API request, for example, input from user prompts, selection by an end-user from a list of choices, a URL, and so forth. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-parameters" target="_blank">Learn more</a>.
+* **Initializer** – Specify custom JavaScript to run, or set session variables prior to creating a task instance when web services require code to be executed, or session variables set, or modification of user context details before an API request is executed. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-an-initializer" target="_blank">Learn more</a>.
+* **Request** – Define a request chain used to make an API call to a web service to initiate the task using URLs and paths to your VA to initiate the delivery of the data payload from the web service to the XO Platform. The request chain can consist of pre-processors, API requests, and post-processors. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#define-the-request-chain" target="_blank">Learn more</a>.
+* **Response Sample** – Define key/value pairs that you expect to receive in the task payload. The keys that you provide are available as drop-down choices for handling the data to display to the end-user. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#add-the-response-sample" target="_blank">Learn more</a>.
+* **Preview Website Link Content in Post** – The website preview content displayed in the task notification message. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/#website-preview-content" target="_blank">Learn more</a>.
 
 ## Define the Content Type
 
@@ -755,7 +755,7 @@ Follow these steps to add a standard postprocessor:
 <p><code>https://app.asana.com/api/1.0/projects/<b>{id}</b>/tasks?opt_fields=completed,modified_at</code>
 You must also specify the HTML <b>Content Type</b> expected in the payload response as well as the HTML <b>Request</b> method. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/using-session-and-context-variables/" target="_blank">Using Session and Context Variables in Tasks</a>.</p></li>
 
-<b>Spread</b>: For payloads that contain arrays of data that you need to separate. For example, click <b>Add Processor</b>, enter a <b>Name</b> for your processor, set the <b>Key</b> field to, for example, <b>data</b>, and <b>Type of Process</b> to <b>spread</b> to capture the content in the data element in the following code example to extract each item of the array.
+<ul><li><b>Spread</b>: For payloads that contain arrays of data that you need to separate. For example, click <b>Add Processor</b>, enter a <b>Name</b> for your processor, set the <b>Key</b> field to, for example, <b>data</b>, and <b>Type of Process</b> to <b>spread</b> to capture the content in the data element in the following code example to extract each item of the array.
 
 ```js
 {
@@ -848,9 +848,9 @@ You must also specify the HTML <b>Content Type</b> expected in the payload respo
 }]
 …
 ```
-</ol>
+</li>
 
-<ol start="4"><li><b>Extract</b>: For payloads that contain multiple objects, you can specify a path to the specific object.
+<li><b>Extract</b>: For payloads that contain multiple objects, you can specify a path to the specific object.
 
 For example, click <b>Add Processor</b>, enter a <b>Name</b> for your processor, set the <b>Key</b> field to data, and then <b>Type of Process</b> to <b>extract</b> to use the object data in the following payload response.
 
@@ -873,11 +873,11 @@ For example, click <b>Add Processor</b>, enter a <b>Name</b> for your processor,
 },
 }
 ```
-</li></ol>
+</li>
 
-<ol start="5"><li><b>Assign</b>: Using the <b>Assign</b> processor, you can specify a variable name for the payload response, if needed, for example, when the payload does not contain a key for the payload response data. 
+<li><b>Assign</b>: Using the <b>Assign</b> processor, you can specify a variable name for the payload response, if needed, for example, when the payload does not contain a key for the payload response data. 
 
-For example, set <b>Type of Process</b> to assign, and then in the <b>Output Variable</b> field, you can for example, define an output variable for the following payload that is an array of three objects.</li>
+For example, set <b>Type of Process</b> to assign, and then in the <b>Output Variable</b> field, you can for example, define an output variable for the following payload that is an array of three objects.
 
 ```js
 [
@@ -916,9 +916,9 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 }
 ]
 ```
-</ol>
+</li></ul></ol>
 
-<ol start="6"><li>In the <b>Output Variable</b> field, specify a variable to represent the array, as <code>offers</code>. For example. If you used the <b>UX Preview</b> feature, the response from Kore.ai would be:</li>
+<ol start="4"><li>In the <b>Output Variable</b> field, specify a variable to represent the array, as <code>offers</code>. For example. If you used the <b>UX Preview</b> feature, the response from Kore.ai would be:</li>
 
 ```js
 {
@@ -952,7 +952,7 @@ For example, set <b>Type of Process</b> to assign, and then in the <b>Output Var
 ```
 </ol>
 
-<ol start="7"><li>With the <b>Output Variable</b> set to <code>offers</code>, you can use the variable as <code>response.offers</code> in Bot Builder, for example, in a task response object as follows:</li>
+<ol start="5"><li>With the <b>Output Variable</b> set to <code>offers</code>, you can use the variable as <code>response.offers</code> in Bot Builder, for example, in a task response object as follows:</li>
 
 ```js
 print(JSON.stringify(response));
@@ -972,7 +972,7 @@ print('<br>');
 ```
 </ol>
 
-<ol start="8"><li><p>Click <b>Add</b> to save the API request and then create another, or click <b>Add & Exit</b> to save the API request and close the dialog.</p>
+<ol start="6"><li><p>Click <b>Add</b> to save the API request and then create another, or click <b>Add & Exit</b> to save the API request and close the dialog.</p>
 
 <p>For multiple API requests, you should order the requests in the sequential order needed to get the entire data response.</p> 
 
