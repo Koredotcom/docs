@@ -19,7 +19,7 @@
 			
 
 
-### **Environment Variables**
+## **Environment Variables**
 
 Environment Variables are global, reusable components that can be used in multiple places to define the bot configuration. Every Environment Variable is a key-value pair. The Variable Keys can be used at various places in the bot configuration. The platform will resolve/replace the Variable Keys with Variables Values during the conversation. Some of the typical use cases where a developer can use environment variables are:
 
@@ -34,7 +34,7 @@ Environment Variables are global, reusable components that can be used in multip
 Post the release of v8.1 of the platform, for <span style="text-decoration:underline;">on-prem installations</span>, multiple value sets can be stored for these environment variables using Collections,[ refer here for more](https://developer.kore.ai/docs/bots/bot-settings/bot-management/collections/).
 
 
-### **Restricting Sensitive Data with Environment Variables**
+## **Restricting Sensitive Data with Environment Variables**
 
 During the virtual assistant definition, developers may create **environment variables** for sensitive data like credentials/keys. These variables are useful for connecting to other systems using service nodes or as a part of authorization profiles. However, environment variables are visible to all the developers with shared access to the virtual assistant, especially when its definition is exported.
 
@@ -79,7 +79,8 @@ The availability of the environment variables has been extended to the **Field K
 
 
 ![alt_text](images/ubv(14).png "image_tooltip")
-# Content Variables
+
+## **Content Variables**
 Bot building essentially requires extensive content management efforts. When it comes to multi-language bots, it also involves tedious coordination efforts between the developers and globally-distributed content authors or copyright team. Content variables enable you to overcome that by abstracting bot flow development efforts from authoring or editing the content. Using Content Variables, programmers can avoid hard-coding the bot content, such as prompts, messages, or any data presented to the user, into bot components, and instead point to specific variables in centrally managed Content Variables files for each bot language. You can export the language-specific content variable files to content editors, without exposing any bot configurations. The writers can author the content in the exported file, which you can import back into the bot. 
  		
 
@@ -92,7 +93,7 @@ Bot building essentially requires extensive content management efforts. When it 
 			
 
 
-### **Defining Bot Variables and Securing Them**
+## **Defining Bot Variables and Securing Them**
 
 Enabling the **secure variable** setting after defining an Environment (Bot) Variable, encrypts and securely stores credentials set as environment variables. To add a Bot variable, follow the steps below:
 
@@ -131,7 +132,7 @@ Enabling the **secure variable** setting after defining an Environment (Bot) Var
 			
 
 
-### **Entering Language-Specific Values**
+## **Entering Language-Specific Values**
 
 To add language-specific values for content variables, you first need to switch the bot language. You can switch the language by clicking the name of the currently-enabled language from the top-right corner of the bot’s page and then selecting another language as follows: 
 
@@ -152,7 +153,7 @@ After switching the language, go to **Build > Configurations > Content Variables
 			
 
 
-### **Using Environment Variables**
+## **Using Environment Variables**
 
 You can invoke an environment variable in plain text mode (Standard editor) using the following syntax: `{{env.variableName}}` If you are using it in JavaScript mode, it is _env.variableName_ Here’s an example from a bot that uses two environment variables called _botType_ and _parameters _to determine different bot environments such as development, testing, and production. The following script node in one of the bot’s tasks captures the _base URL_ of the bot, depending on the current bot environment.
 
@@ -169,7 +170,7 @@ The URL in the following service node changes based on the captured URL.
 
 
 
-### **Updating the Environment Variable**
+## **Updating the Environment Variable**
 
 For on-premise deployments, the user can update the encryption key/secured variable value with a new one. To edit the value, follow these steps:
 
@@ -196,7 +197,7 @@ The new encrypted secure variable value is updated in the list as shown below:
 
 
 
-### **Using Content Variables**
+## **Using Content Variables**
 
 You can invoke a content variable in plain text mode (Standard editor) using the following syntax. `{{content.variableName}}` If you are using it in JavaScript mode, it is _content.variableName_ Here’s an entity node of a multi-language flight booking bot that captures the source airport of the users. It uses a content variable instead of a hard-coded user prompt. 
 
@@ -216,7 +217,7 @@ When the bot reaches this node as a part of the user interaction, the user promp
 			
 
 
-### **Importing and Exporting**
+## **Importing and Exporting**
 
 You can import and export bot variables between bots.
 
@@ -267,23 +268,17 @@ The **Bot Variable file** contains the following information, the same needs to 
 
 
 **Sample JSON file**:
-
+`{{
 [
 
   {"key":"hosturl",
-
    "value":"https://bots.kore.ai",
-
    "hint":"This is the URL of environment which can be used across the endpoints configured in the bot",
-
    "audioTag":"",
-
    "variableType":"env",
-
    "scope":"prePopulated",
-
    "group":"URLS"}
 
 ]
-
+}}'
 		
