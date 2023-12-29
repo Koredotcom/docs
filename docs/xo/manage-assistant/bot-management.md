@@ -12,7 +12,7 @@ This article discusses the main features that allow you to manage your assistant
 To learn more about Variables and how to use them, see[ Using Bot Variables](https://developer.kore.ai/docs/bots/bot-settings/bot-management/using-bot-variables/).
 
 
-# **Importing and Exporting Assistants**
+## **Importing and Exporting Assistants**
 
 Kore.ai allows you to export and import assistant tasks and associated configurations into another assistant. This feature helps you in the migration of bot definitions, cloning of assistants, or maintaining a periodic backup of bot definitions.
 
@@ -41,7 +41,7 @@ Prior to this patch, this flag was part of ‘NLP Settings’ under ‘NLP Data�
 			
 
 
-## **Importing an Assistant**
+### **Importing an Assistant**
 
 You can import tasks and configurations of a specific assistant into a new or existing assistant using one of these import types:
 
@@ -124,16 +124,16 @@ To import a Virtual Assistant, follow these steps:
     * On the confirmation dialog that opens, click **Backup** to download the existing assistant configuration.
 
     
- **Note**: While backing up is an optional choice, we strongly recommend you do so, especially when choosing Full Import, as you cannot recover the configurations after the imported assistant replaces them. 
+        **Note**: While backing up is an optional choice, we strongly recommend you do so, especially when choosing Full Import, as you cannot recover the configurations after the imported assistant replaces them. 
 
 
-![alt_text](images/bm(8).png "image_tooltip")
+        ![alt_text](images/bm(8).png "image_tooltip")
 
-3. Click **Proceed** to start the import.
-4. After the import is completed, the following success message appears. Click **Done**.
+    3. Click **Proceed** to start the import.
+    4. After the import is completed, the following success message appears. Click **Done**.
     * **Note**: Bot import would fail if the assistant has been restored but not published after the restore. 
  
- ## Creating a New Assistant Using the Import Option 
+ ### **Creating a New Assistant Using the Import Option** 
  
 To import a VA while creating it, follow these steps: 
 
@@ -161,7 +161,7 @@ To import a VA while creating it, follow these steps:
 
 
 
-## Components in the Incremental Import 
+### **Components in the Incremental Import**
 
 
 <table>
@@ -543,7 +543,7 @@ When exporting and importing universal and child VAs from a source environment t
 			
 
 
-# **Deleting an Assistant**
+## **Deleting an Assistant**
 
 You cannot delete a VA if any of the tasks are Published. Once you publish a task, the Bots Admin must approve and assign it to users. The developer cannot delete assigned tasks. To delete a published task, the Bots Admin needs to suspend the task. Also, you cannot delete a VA if it is part of a published flow. You must delete the flow or remove the assistant from the flow before attempting to delete it.
 
@@ -576,7 +576,7 @@ WARNING: All the configurations will be lost and there is no way to restore your
 			
 
 
-# **Viewing the Change Log**
+## **Viewing the Change Log**
 
 After creating a VA, you may need to edit it for various reasons such as changing its settings, adding tasks, enabling channels, and add flows. To track all the changes made to a VA, you can view the **Change Logs**, which show a chronological list of modifications to your assistant. It consists of all the changes from the initial save of your assistant to the last update. To view the changelog for a VA, follow these steps:
 
