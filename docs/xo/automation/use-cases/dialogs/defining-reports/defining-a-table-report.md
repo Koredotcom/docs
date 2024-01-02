@@ -23,7 +23,8 @@ To complete the following procedure, you must have already defined a task, such 
 
 
 
-1. In Bot Builder, select the task for the Bot that you want to add a table report link to.
+1. In Bot Builder, select the task for the Bot that you want to add a table report link to.  
+
     !!! Note
     
         Only unpublished tasks can be modified.
