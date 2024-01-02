@@ -110,7 +110,7 @@ Click **Advanced Controls** to set up the below-listed options:
     1. **Use the task level _Interruptions Behavior_ Setting**: The VA refers to the **Interruptions Behavior** settings set at the dialog task level.
     2. **Customize for this node**: By configuring this option you can customize the **Interruptions Behavior** settings for this node.Read the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions){:target="_blank"} article for more information.
 
-2. **Custom Tags** defines tags to build custom profiles of your bot conversations. [See here for more](../../../../../analytics/automations/custom-dashboard/custom-meta-tags){:target="_blank"}. You can add tags for the following:
+2. **Custom Tags** defines tags to build custom profiles of your bot conversations. [See here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}. You can add tags for the following:
     1. **Message –** Define custom tags to be added to the current message in the conversation.
     2. **User –** Define custom tags to be added to the user’s profile information.
     3. **Session –** Define custom tags to be added to the current conversation session.

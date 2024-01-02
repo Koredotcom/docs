@@ -175,7 +175,7 @@ Use the Instance Properties to determine whether to make the entity value mandat
 
                 When a user input results in an ambiguous entity value and an intent, you can customize how the bot should respond by configuring the setting – **Precedence for Intents with Ambiguous Entities**. [Learn more](../../../../natural-language/nlu-configurations/engine-tuning){:target="_blank"}.
     
-    * **Custom Tags**: This is where you can define tags to build custom profiles of your VA conversations. [Click here to learn more](../../../../../analytics/automations/custom-dashboard/custom-meta-tags){:target="_blank"}.
+    * **Custom Tags**: This is where you can define tags to build custom profiles of your VA conversations. [Click here to learn more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
 
 #### The User Input Flow
@@ -239,7 +239,7 @@ If you want to delete a condition, hover over it and click the bin icon at its t
 
 1. [Supported Entity Types](../../entity-types){:target="_blank"}
 2. [Supported Company Names](../../entity-types/#company-name-or-organization-name){:target="_blank"}
-3. [Supported Time Zones](../../entity-types/#supported-time-zones/){:target="_blank"}
-4. [Supported Colors](../../entity-types/#color/){:target="_blank"}
-5. [Composite Entities](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-composite-entities/){:target="_blank"}
-6. [Entity Rules](../../entity-rules/){:target="_blank"}
+3. [Supported Time Zones](../../entity-types/#supported-time-zones){:target="_blank"}
+4. [Supported Colors](../../entity-types/#color){:target="_blank"}
+5. [Composite Entities](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-composite-entities){:target="_blank"}
+6. [Entity Rules](../../entity-rules){:target="_blank"}
