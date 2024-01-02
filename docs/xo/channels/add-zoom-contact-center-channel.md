@@ -53,7 +53,7 @@ To create an app, follow the steps below:
     * In the **Name** field, enter the name for the app registration used in Bot Builder,. Ffor example, My App Registration.
     * Select one of these scopes for the app:
         * **Allow anonymous users to chat with the bot**: Enables anonymous users to interact with the bot.
-        * **Auto register new users on Kore.ai Bots Platform**: Select to control the auto-user registration in Kore.ai if the user assertion is unknown.
+        * **Auto register new users on XO Platform**: Select to control the auto-user registration in Kore.ai if the user assertion is unknown.
     * In the **JWT Signing** **Algorithms Used For Client App Authentication** drop-down list, select one of the following security algorithms:
         * **RS256/RS512: **Select to enable the **Public Key.** _The Private key, used for encryption, is provided by the user, and the Public key, used for decryption, is provided by the Platform_. Both the keys have to be used for generating the token. The Public Key is used by the XO Platform to authenticate the client application.
         * **HS256/HS512:** Select to generate a **Secret Key **and a **Client ID**. The **Client ID** is required for app initialization, and the **Secret Key** is used by the XO Platform to authenticate the client application.

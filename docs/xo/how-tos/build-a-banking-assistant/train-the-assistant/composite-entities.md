@@ -145,10 +145,9 @@ You can also define the _Synonyms_ and _Patterns_ as with any other entity.
 * Make sure that the sub-entities are not part of the dialog flow in the task using the composite entity.
 * If the sub-entity allows multi-items, the parent composite entity accepts only one value for the sub-entity and not a list.
 
-
 ## Passing Values
 
-You can pass values to composite entities using the entity pre-assignment from source Dialog tasks, Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-dialog-node/#Define_Instance_Properties" target="_blank">here</a> for more information on entity pre-assignment.
+You can pass values to composite entities using the entity pre-assignment from source Dialog tasks, Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-dialog-node/?h=dialog+no#instance-properties" target="_blank">here</a> for more information on entity pre-assignment.
 
 In terms of composite entities following scenarios can be addressed:
 

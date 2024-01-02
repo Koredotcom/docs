@@ -2,7 +2,7 @@
 
 In this document we explore Bot Functions for a travel VA that can help reuse the same functionality in several places. We will see how a travel spend report can be programmed as a function and used, for example, to send to users upon request in different circumstances, to integrate with apps or create digital views. 
 
-For details on the Bot Functions are and how they are implemented in the XO Platform, click <a href="https://developer.kore.ai/docs/bots/bot-settings/bot-functions/reusing-bot-functions-custom-script-file/#Updating_Custom_Script_File" target="_blank">here</a>.
+For details on the Bot Functions are and how they are implemented in the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/reusing-bot-functions-custom-script-file/#updating-the-custom-script-file" target="_blank">here</a>.
 
 ## Problem Statement
 
@@ -12,11 +12,11 @@ This information can be provided in several ways. For the purpose of this articl
 
 ## Prerequisites
 
-* To go through these configurations, you need to know at least the basics of <a href="https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/" target="_blank">building a Virtual Assistant</a>. 
+* To go through these configurations, you need to know at least the basics of <a href="https://docsinternal-kore.github.io/docs/xo/virtual-assistants-overview/?h=overview#building-intelligent-conversational-virtual-assistants" target="_blank">building a Virtual Assistant</a>. 
 
 * A pre-built Virtual Assistant. We will use the <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/create-a-travel-virtual-assistant/" target="_blank">Travel Planning VA</a> for this example.
 
-* The Script file has the following functions that use the message templates to display the data. (Refer <a href="https://developer.kore.ai/docs/bots/sdks/message-templates/" target="_blank">here</a> for more information on message templates): 
+* The Script file has the following functions that use the message templates to display the data. (Refer <a href="https://docsinternal-kore.github.io/docs/xo/web-mobile-SDK-message-formatting-and-templates/" target="_blank">here</a> for more information on message templates): 
  
     * **tableTemplate** – </em>takes a two-dimensional array and displays the content in a tabular format.
  

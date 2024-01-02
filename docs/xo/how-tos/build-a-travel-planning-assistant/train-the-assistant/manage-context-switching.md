@@ -2,7 +2,7 @@
 
 In this Use Case, we will explore a scenario in a Travel Planning Assistant, where, sharing the context across intents, FAQs help in improving the user experience and the assistant’s efficiency. Also, we will be looking at how the context can be used within a dialog flow to determine the sequence of events.
 
-For details on what Context Management is and how it is implemented in the Kore.ai XO Platform, click <a href="https://developer.kore.ai/docs/bots/bot-intelligence/context-management/" target="_blank">here</a>.
+For details on what Context Management is and how it is implemented in the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/context-management/" target="_blank">here</a>.
 
 ## Problem Statement
 
@@ -48,8 +48,8 @@ For example, “_Are there any charges for a flight change? ?_” followed by �
 
 ## Prerequisites
 
-* Knowledge on how to [build a virtual assistant](https://developer.kore.ai/docs/bots/how-tos/travel-planing-assistant/create-a-travel-virtual-assistant/). 
-* A Virtual Assistant with the Dialog Tasks mentioned below – [see an overview here](https://developer.kore.ai/docs/bots/how-tos/travel-assistant-overview/).
+* Knowledge on how to <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/create-a-travel-virtual-assistant/" target="_blank">build a virtual assistant</a>. 
+* A Virtual Assistant with the Dialog Tasks mentioned below – See an overview <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/travel-assistant-overview/" target="_blank">here</a>.
 * **Check Flight Status**– This task prompts the user to enter their flight number and displays its status.
 
     <img src="../images/flightstatus-task.png" alt="flight status task" title="flight status task" style="border: 1px solid gray; zoom:75%;"> 

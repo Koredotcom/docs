@@ -38,7 +38,7 @@ The various user queries in Small Talk are categorized into groups and assigned 
 Following are the various terms associated with Small Talk:
 
 1. **Groups** – Based upon the purpose and content, Small Talk is categorized into groups.
-2. **User Queries** – For each group, you can add User Queries, Alternate Queries, and Child Queries. Queries are formed using patterns. [Know more about patterns](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#managing-patterns)
+2. **User Queries** – For each group, you can add User Queries, Alternate Queries, and Child Queries. Queries are formed using patterns. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#manage-patterns-and-rules" target="_blank">Learn more</a>.
 3. **Bot Responses** – Each User Query must be associated with a bot response. These can be in plain text format or JavaScript. You can specify channel-specific responses. You can also enter multiple responses, one of which will be picked randomly by the Platform at runtime.
 
 ## Default Small Talk
@@ -78,17 +78,17 @@ whazzupp whatcha`upto watsup wassup howzit
 <p>
 comment`est`vous comment`ca`va ca`va
 <p>
-&lt;what`up &lt;what`is`up`today
+<what`up <what`is`up`today
 <p>
-&lt;what`is`up &lt;what`is`the`word> &lt;what`is`the`latest`word> &lt;what`is`new> &lt;what`is`happening>
+<what`is`up <what`is`the`word> <what`is`the`latest`word> <what`is`new> <what`is`happening>
 <p>
-&lt;what`is`going`on> &lt;what’up &lt;is`everything`OK &lt;is`everything`alright &lt;how`you`feeling
+<what`is`going`on> <what’up <is`everything`OK <is`everything`alright <how`you`feeling
 <p>
-&lt;how`you`doing &lt;how`is`tricks &lt;how`is`life &lt;how`is`it`going &lt;how`is`everything
+<how`you`doing <how`is`tricks <how`is`life <how`is`it`going <how`is`everything
 <p>
-&lt;how`is`by`you &lt;how`have`you`been`doing> &lt;how`have`you`been> &lt;how`goes> &lt;how`goes`things
+<how`is`by`you <how`have`you`been`doing> <how`have`you`been> <how`goes> <how`goes`things
 <p>
-&lt;how`goes`it &lt;how`is`your`day &lt;how`do`you`do> &lt;how`are`you> &lt;how`are`things>
+<how`goes`it <how`is`your`day <how`do`you`do> <how`are`you> <how`are`things>
 <p>
 <heya>
    </td>
@@ -180,7 +180,7 @@ On hovering over any Small Talk group, you have the option to:
 
 * **Delete** the group.
 * **Settings** that will allow you to:
-* Manage Variable Namespaces by associating a variable namespace to use with this Small Talk group. This option is visible only when the variable namespace is enabled for the VA. For more information, refer to [Managing Namespace](https://developer.kore.ai/docs/bots/bot-settings/bot-management/managing-namespace/).
+* Manage Variable Namespaces by associating a variable namespace to use with this Small Talk group. This option is visible only when the variable namespace is enabled for the VA. For more information, refer to <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/managing-namespace/" target="_blank">this</a> link.
 
     <img src="../images/manage-variable-namespaces.png" alt="Manage Variable Namespaces" title="Manage Variable Namespaces" style="border: 1px solid gray; zoom:75%;">
 
@@ -216,7 +216,7 @@ Once you create/import a group, you can add/modify the query-response pairs.
 
     <img src="../images/add-query-response.gif" alt="Add Query Response" title="Add Query Response" style="border: 1px solid gray; zoom:75%;">
 
-3. Queries are designed using patterns. [Know more about patterns](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#managing-patterns).
+3. Queries are designed using patterns. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#manage-patterns-and-rules" target="_blank">Learn more</a>.
 
 4. For each User Query, you can enter **alternate questions** that depict a different way the user might ask the same query.
 
@@ -245,7 +245,7 @@ Once you create/import a group, you can add/modify the query-response pairs.
     * Click **+ Add Response**.
     * Click the **New Prompt Message**.
     * Select **Channel**.
-    * Enter the response in standard text or in Java Script using the Advanced Mode. If applicable Select a Template. ([see here](https://developer.kore.ai/docs/bots/sdks/message-templates/) for more on message formatting). 
+    * Enter the response in standard text or in Java Script using the Advanced Mode. If applicable Select a Template. <a href="https://docsinternal-kore.github.io/docs/xo/web-mobile-SDK-message-formatting-and-templates/" target="_blank">Learn more</a>.
     <img src="../images/message-response-channel.png" alt="message response channel" title="message response channel" style="border: 1px solid gray; zoom:75%;">
     * Click **Save**.
 

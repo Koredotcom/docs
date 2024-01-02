@@ -36,7 +36,7 @@ As you enter these questions, pay attention to terms that you can further add to
 
 ## Manage Bot Responses
 
-For the FAQ Response, you can compose a simple or complex channel-specific reply. The editor is like any other prompt editor on the Platform, for example, messages for dialog nodes. [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/).
+For the FAQ Response, you can compose a simple or complex channel-specific reply. The editor is like any other prompt editor on the Platform, for example, messages for dialog nodes. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/prompt-editor/#prompt-editor" target="_blank">Learn more</a>.
 
 You can add channel-specific responses to questions in your Knowledge Graph. By creating varying responses with different language and formatting options, you can leverage the dynamic responses on the selected channels. 
 

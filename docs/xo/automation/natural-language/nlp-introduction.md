@@ -2,7 +2,7 @@
 
 Conversational VAs enable machines to interact organically with users and deliver high-quality customer experiences. The key for a conversational VA to understand human interactions lies in its ability to identify the user’s intention (Intent Detection), extract useful information (Entity Extraction), and map them to relevant actions or tasks (Dialog Task execution). 
 
-[Learn more](https://developer.kore.ai/docs/bots/chatbot-overview/chatbot-overview/#How_Do_Conversational_Virtual_Assistants_Work) about how Conversational VAs work and the key components that define their functioning.
+<a href="https://docsinternal-kore.github.io/docs/xo/virtual-assistants-overview/#how-do-conversational-virtual-assistants-work" target="_blank">Learn more</a> about how Conversational VAs work and the key components that define their functioning.
 
 **Natural Language Processing (NLP)** is the science of deducing the intention and related information from natural conversations. The conversation flow in Kore.ai virtual assistants passes through various Natural Language Understanding (NLU) engines and conversation engines before the VA decides upon action and response.
 
@@ -28,7 +28,7 @@ When a virtual assistant built on the XO Platform receives a user utterance, it 
 
 The Conversation Flow involves the following steps:
 
-1. **NLP Analysis**: The user utterance goes through a series of NLP engines for entity extraction and intent detection. (You can extend the out-of-the-box NLP functionality to use your own engine. You can install the [Bot Kit SDK](https://developer.kore.ai/docs/bots/sdks/using-the-botkit-sdk/) and easily integrate the virtual assistant with any 3rd party NLP engine. The output from the 3rd party NLP engine complements the outputs from Kore.ai thus adding to the efficiency and accuracy of the engine.) The engines provided by the XO Platform are as follows:
+1. **NLP Analysis**: The user utterance goes through a series of NLP engines for entity extraction and intent detection. (You can extend the out-of-the-box NLP functionality to use your own engine. You can install the <a href="https://developer.kore.ai/docs/bots/sdks/using-the-botkit-sdk/" target="_blank">BotKit SDK</a> and easily integrate the virtual assistant with any 3rd party NLP engine. The output from the 3rd party NLP engine complements the outputs from Kore.ai thus adding to the efficiency and accuracy of the engine.) The engines provided by the XO Platform are as follows:
     * **Fundamental Meaning Engine** which breaks up the utterances based on the grammar constructs;
     * **Machine Learning Engine** which classifies individual words in the utterance, using an example-based, auto-learning training process;
     * **Knowledge Collection Engine** which mostly deals with FAQ type user queries. It can also be configured to trigger tasks in response to the user query;

@@ -2,7 +2,7 @@
 
 In this post, we explore how to add account-related data for a customer with the help of a Banking Bot. We see how the required information gathered from the user can be stored in a data table.
 
-For details on what Data Tables are and how it is implemented in the Kore.ai Bots platform, click <a href="https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/" target="_blank"> here</a>.
+For details on what Data Tables are and how it is implemented in the XO platform, click <a href="https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/" target="_blank"> here</a>.
 
 ## Problem Statement
 

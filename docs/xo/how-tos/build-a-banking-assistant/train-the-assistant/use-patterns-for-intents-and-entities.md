@@ -9,7 +9,7 @@ In this document, we will elaborate on the various pattern syntax and how they c
 * Patterns are to be used as a last resort only for cases where ML engine cannot be used. Examples of such cases would be to train bot in recognizing idiomatic utterances, command like utterances.
 * Patterns are evaluated in the order of their listing. Once a match is found the rest of the patterns are not evaluated. So ensure when adding patterns to add in the order of most restrictive to least restrictive.
 * Only one wildcard (*) is allowed in a pattern.
-* While most of the features are supported in all languages, there are some exceptions, click <a href="https://developer.kore.ai/docs/bots/how-tos/multi-lingual-bot-behavior/" target="_blank">here</a> for more details.
+* While most of the features are supported in all languages, there are some exceptions, click <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/language-management/multi-lingual-bot-behavior/" target="_blank">here</a> for more details.
 
 The following are some general guideline for creating intent patterns:
 
@@ -293,7 +293,7 @@ _“<em>can you tell me what the credit on my card is</em>?”
   <tr>
    <td><strong>Sample Pattern</strong>
    </td>
-   <td>“&lt; cancel card”
+   <td>“< cancel card”
    </td>
   </tr>
   <tr>
@@ -554,7 +554,7 @@ Due to the risk of running into false positives, you are advised <span style="te
   <tr>
    <td><strong>Sample Pattern</strong>
    </td>
-   <td>“<em><&lt; credit limit on the card >></em>“
+   <td>“<em><< credit limit on the card >></em>“
    </td>
   </tr>
   <tr>
@@ -718,8 +718,8 @@ So (!forecast the weather) and (get the weather !forecast) are different. The ut
     * I like India
     * I love traveling to Australia
     * I would like to visit an African country
-* **Unordered: &lt;<, >>**: Used to find words in any order. For example, &lt;<Cancel Order>> matches _Cancel my phone order_ and also _I have a pending order for an iPhone X, can I cancel_
-* **Start/End of Statement: &lt;, >:** For example, ( _transfer fund >_ ) will match _I want to transfer funds_ but will not match _transfer funds today._
+* **Unordered: <<, >>**: Used to find words in any order. For example, <<Cancel Order>> matches _Cancel my phone order_ and also _I have a pending order for an iPhone X, can I cancel_
+* **Start/End of Statement: <, >:** For example, ( _transfer fund >_ ) will match _I want to transfer funds_ but will not match _transfer funds today._
 * **Quote**: **‘–**: If you quote words or use words that are not in canonical form, the system will restrict itself to what you used in the pattern. For example, (_like to transfer funds_) This matches _I would like to transfer funds from my account_ but not _I really liked transfer funds process_.
 
 ## Negative Patterns
@@ -789,7 +789,7 @@ or _Transfer funds from my account to ABC123._
 
 ### Pattern 4: [ word1 word2 ] *
 
-This can be for patterns using a group of words or concepts of which at least one should be present in the utterance. The order within the group is important (See <a href="https://developer.kore.ai/docs/bots/how-tos/how-to-use-patterns-for-intents-entities/#Patterns_for_Intent_Detection" target="_blank">intent detection</a> for details). 
+This can be for patterns using a group of words or concepts of which at least one should be present in the utterance. The order within the group is important (See <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/train-the-assistant/using-patterns/?h=use+pattern#patterns-for-intent-detection" target="_blank">intent detection</a> for details). 
 
 * **Pattern for _ToAccount_ entity**: _“to * [ using from ]”_ and _“[ using from ] to *1”_. 
 * **Pattern for FromAccount entity**: “_[using from] * to” and “to [using from] *_” .

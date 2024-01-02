@@ -2,7 +2,7 @@
 
 In this post, we explore a Banking Bot scenario where sharing the context across intents, and FAQs helps improve the user experience and efficiency of the Bot. Also, we look at how the context can be used within a dialog flow to determine the sequence of events.
 
-For details on what Context Management is and how it is implemented in the XO platform, click <a href="https://developer.kore.ai/docs/bots/bot-intelligence/context-management/" target="_blank">here</a>.
+For details on what Context Management is and how it is implemented in the XO platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/context-management/" target="_blank">here</a>.
 
 ## Problem Statement
 
