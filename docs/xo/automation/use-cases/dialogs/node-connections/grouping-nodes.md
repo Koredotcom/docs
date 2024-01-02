@@ -2,7 +2,7 @@
 
 Node groups are primarily used for defining a group of nodes and representing them on the dialog canvas. Note that it is not a part of the dialog flow.
 
-Node groups can be used to improve the user experience with follow-ups, digressions, and amending entity values. For a use case example, [refer here](https://developer.kore.ai/docs/bots/how-tos/intent-scoping-using-group-node/){:target="_blank"}.
+Node groups can be used to improve the user experience with follow-ups, digressions, and amending entity values. For a use case example, [refer here](../../../../../how-tos/build-a-banking-assistant/deploy-the-assistant/intent-scoping-using-group-node){:target="_blank"}.
 
 
 ## Add a Node Group
@@ -95,7 +95,8 @@ The **fulfillment** section can be used to define the actions when this particul
 
 Following are the changes in sub-intent behavior within a group:
 
-1. For every sub-intent identified, the context object will be updated with an array of objects with the identified sub-intent details with the latest at the top. The following information is captured:
+1. For every sub-intent identified, the context object will be updated with an array of objects with the identified sub-intent details with the latest at the top. The following information is captured:  
+
     1. Name of the sub-intent;
     2. Entities that are identified along with the sub-intent;
     3. Name of the group to which the sub-intent belongs, where applicable;
@@ -120,11 +121,13 @@ Following are the changes in sub-intent behavior within a group:
         ```
 
     5. The intent would be executed if the sub-intent identified from the user utterance is within the group scope and all the input preconditions are satisfied and the transition flow directs to the concerned node.
-    6. The execution of sub-intents would involve:
+    6. The execution of sub-intents would involve:  
+
         1. Updated context variables as per the defined mapping,
         2. Setting the Output Context as per the defined mapping,
         3. Presenting the message to the user, if applicable.
         
-    7. The current dialog execution should continue as per the transition flow defined.
+    7. The current dialog execution should continue as per the transition flow defined.  
+    
         1. Jump to the specified node; or
         2. Resume from the point where the sub-intent was identified.
