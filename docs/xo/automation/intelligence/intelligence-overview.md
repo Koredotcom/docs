@@ -15,7 +15,7 @@ Dialog management features include the following:
 * **Handling of interruptions and context switching** – The Platform provides you with granular control over hold and resumes functionality at the VA, task, and node levels. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/manage-interruptions/" target="_blank">Learn more</a>.
 * **Allowing users to modify entity values** – Very often users would want to amend the entity values, you can ensure that the VA responds to such situations and control the post-amendment dialog behavior. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/amend-entities/" target="_blank">Learn more</a>.
 * **Enabling the detection of multiple intents** – The ability of the NLP engine can be enhanced to detect and execute multiple intents identified in a single user utterance. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/multi-intent-detection/" target="_blank">Learn more</a>.
-* **Ignoring some words from user utterances** –  When words and phrases in user input that are not helpful in task interpretation are marked, then VAs can respond faster to user input and improve the probability of correct task recognition. <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/manage-intents-entities/" target="_blank">Learn more</a>.
+* **Ignoring some words from user utterances** –  When words and phrases in user input that are not helpful in task interpretation are marked, then VAs can respond faster to user input and improve the probability of correct task recognition. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/ignore-words-and-field-memory/" target="_blank">Learn more</a>.
 
 ## Context Management
 
@@ -28,4 +28,4 @@ Kore.ai allows you to capture and reuse contextual data for a large variety of s
 
 ## Sentiment Management
 
-Trigger conditional flows and steer user-VA conversations with <a href="https://developer.kore.ai/docs/bots/advanced-topics/sentiment-management/" target="_blank">Sentiment Analysis</a> and <a href="https://developer.kore.ai/docs/bots/advanced-topics/working-with-tone-processing/" target="_blank">Tone Processing</a>. Assistants built with Kore.ai analyze the emotional state of users and callers and model their response to provide excellent service.
+Trigger conditional flows and steer user-VA conversations with <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/sentiment-management/sentiment-management-overview/" target="_blank">Sentiment Analysis</a> and <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/sentiment-management/tone-analysis/" target="_blank">Tone Processing</a>. Assistants built with Kore.ai analyze the emotional state of users and callers and model their response to provide excellent service.
