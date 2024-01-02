@@ -211,9 +211,9 @@ nav:
         - Manage Interruptions: getting-started.md 
         - Ignore Words and Field Memory: getting-started.md 
     - TESTING:
-      - Test and Debug Overview: getting-started.md
-      - Talk to Bot: getting-started.md
-      - Utterance Testing: getting-started.md 
+      - Test and Debug Overview: automation/testing/test-and-debug-overview.md
+      - Talk to Bot: automation/testing/talk-to-bot.md
+      - Utterance Testing: automation/testing/testing-your-bot-with-nlp.md 
       - Regression Testing: 
         - Health and Monitoring: getting-started.md 
         - Batch Testing: getting-started.md
