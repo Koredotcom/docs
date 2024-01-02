@@ -239,7 +239,7 @@ If you want to delete a condition, hover over it and click the bin icon at its t
 
 1. [Supported Entity Types](../../entity-types){:target="_blank"}
 2. [Supported Company Names](../../entity-types/#company-name-or-organization-name){:target="_blank"}
-3. [Supported Time Zones](../../entity-types/#supported-time-zones){:target="_blank"}
+3. [Supported Time Zones](../../entity-types/#time-zone){:target="_blank"}
 4. [Supported Colors](../../entity-types/#color){:target="_blank"}
-5. [Composite Entities](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-composite-entities){:target="_blank"}
+5. [Composite Entities](../../../../../how-tos/build-a-banking-assistant/train-the-assistant/composite-entities){:target="_blank"}
 6. [Entity Rules](../../entity-rules){:target="_blank"}
