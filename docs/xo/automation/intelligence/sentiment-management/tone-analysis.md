@@ -4,7 +4,7 @@ The XO Platform <a href="https://docsinternal-kore.github.io/docs/xo/automation/
 
 You can use the score to help assess the user input and direct the flow of the conversation between the Virtual Assistant and the user.
 
-For example, if the tone score indicates a user is angry or sad, you want to transition the conversation to a live agent. In a dialog task, you can access the tone score from the `Context` object or you can configure events to be triggered, from the <a href="https://developer.kore.ai/docs/bots/advanced-topics/sentiment-management/" target="_blank">Sentiment Management</a> option under **Intelligence**.
+For example, if the tone score indicates a user is angry or sad, you want to transition the conversation to a live agent. In a dialog task, you can access the tone score from the `Context` object or you can configure events to be triggered, from the <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/sentiment-management/sentiment-management-overview/" target="_blank">Sentiment Management</a> option under **Intelligence**.
 
 
 ## Tones Types
@@ -167,7 +167,7 @@ For identifying the tone and analyzing the sentiment of a user utterance/phrase,
 
 The sentiment words are all stored in concepts and it is possible for a virtual assistant to extend the concepts by entering appropriate new words under the relevant concept name, during the concept training.
 
-The syntax for the concept name is: ~tone-&lt;tonename>-&lt;level>, where &lt;tonename> indicates any of the 6 tone types listed in  <a href="https://developer.kore.ai/docs/bots/advanced-topics/working-with-tone-processing/#Tones_Types" target="_blank">Tone Types</a> and &lt;level> is a number from 1 to 7. 1 is equivalent to a -3, 7 is +3, and 4 is the neutral 0. <a href="https://developer.kore.ai/docs/bots/advanced-topics/working-with-tone-processing/#Score_Tone_Emotions" target="_blank">Learn more</a>.
+The syntax for the concept name is: ~tone-&lt;tonename>-&lt;level>, where &lt;tonename> indicates any of the 6 tone types listed in  <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/sentiment-management/tone-analysis/#tones-types" target="_blank">Tone Types</a> and &lt;level> is a number from 1 to 7. 1 is equivalent to a -3, 7 is +3, and 4 is the neutral 0. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/sentiment-management/tone-analysis/#score-tone-emotions" target="_blank">Learn more</a>.
 
 The following are some examples of words that can be mapped to relevant concepts.
 

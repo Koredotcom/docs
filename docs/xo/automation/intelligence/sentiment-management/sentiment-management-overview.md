@@ -9,7 +9,7 @@ Emotion tones are critical indicators in understanding the attitudes and opinion
 
 Negative emotion scenarios like anger or disgust are typically considered factors that would determine a transfer of the conversation to a live agent.
 
-The <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlp-introduction/" target="_blank">NLP</a> interpreter can parse user utterances for specific words and phrases, and then provide an average tone score based on the connotation, word placement, and any added modifiers. <a href="https://developer.kore.ai/docs/bots/advanced-topics/working-with-tone-processing/" target="_blank">Learn more</a>.
+The <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlp-introduction/" target="_blank">NLP</a> interpreter can parse user utterances for specific words and phrases, and then provide an average tone score based on the connotation, word placement, and any added modifiers. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/sentiment-management/tone-analysis/" target="_blank">Learn more</a>.
 
 The tone or sentiment scores are stored as context and used to drive the flow of a dialog task through conditional transition statements. You can use these scores to steer user-assistant conversations or seamlessly invoke escalation to a live agent.
 
@@ -17,7 +17,7 @@ The tone or sentiment scores are stored as context and used to drive the flow of
 
 You can define multiple sentiment events from under **Build** > **Intelligence** > **Sentiment Management**. Click **New Event** to define an event based on which to capture the user’s emotion.
 
-<img src="../sentiment-management/images/new-event.png" alt="new event" title="new event" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/new-event.png" alt="new event" title="new event" style="border: 1px solid gray; zoom:75%;">
 
 The following parameters can be configured for a sentiment event:
 
@@ -30,14 +30,14 @@ The following parameters can be configured for a sentiment event:
     * The Message-level tone value is a tone value calculated for a given message from the user.
     * Select the required emotions to be captured from a list of six tones, anger, disgust, fear, sadness, joy, and positive.
     * Select if the tone should be considered at the _Session_ level or _Message_ level
-    * Define the range to be considered for each of these tones, the range can be between -3 to +3. <a href="https://developer.kore.ai/docs/bots/advanced-topics/working-with-tone-processing/" target="_blank">Learn more</a>.
+    * Define the range to be considered for each of these tones, the range can be between -3 to +3. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/sentiment-management/tone-analysis/" target="_blank">Learn more</a>.
     * When multiple emotions are selected, the event is triggered when **ALL** the tone rules are met. In case you want the event to trigger when any tone rule is met, add them as separate rules.
 
 !!!note
 
     Post v8.1, the Platform can identify the emojis in user utterance and set the tone accordingly.
 
-<img src="../sentiment-management/images/add-sentiment-based-event.png" alt="add sentiment based event" title="add sentiment based event" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-sentiment-based-event.png" alt="add sentiment based event" title="add sentiment based event" style="border: 1px solid gray; zoom:75%;">
 
 ## Event Flow
 
