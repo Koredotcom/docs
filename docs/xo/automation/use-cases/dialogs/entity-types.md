@@ -1098,22 +1098,21 @@ This feature is not fully supported in all languages. [Click here for details](.
 
 **Static List**: Use Static List to define the entity values as one of the following list types:
 
-**JSON** tab: Enter a list of key/value pairs and synonyms ([Click here for more](../../../../app-settings/language-management/multilingual-vas-components-feature-support){:target="_blank"}). For example:  
+* **JSON** tab: Enter a list of key/value pairs and synonyms ([Click here for more](../../../../app-settings/language-management/multilingual-vas-components-feature-support){:target="_blank"}). For example:  
                  
-
-```
-[{
-"title": "United States",
-"value": "US",
-"synonyms": ["united states", "USA", "US", "U.S.A", "America"]
-},
-{
-"title": "John F. Kennedy International Airport",
-"value": "JFK",
-"synonyms": ["John F. Kennedy International Airport", "New York International Airport", "JFK"]
-}
-]
-```
+    ```
+    [{
+    "title": "United States",
+    "value": "US",
+    "synonyms": ["united states", "USA", "US", "U.S.A", "America"]
+    },
+    {
+    "title": "John F. Kennedy International Airport",
+    "value": "JFK",
+    "synonyms": ["John F. Kennedy International Airport", "New York International Airport", "JFK"]
+    }
+    ]
+    ```
 
 * **Editor** tab – Enter the **Display Name**, **Value**, and **Synonyms** for the key.
 * **Upload File** – Click **Upload File** to locate a JSON formatted file list or a .csv file formatted list of key/value pairs. For example,  
