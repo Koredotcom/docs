@@ -8,7 +8,7 @@ Using **Namespaces** you can categorize variables and map them to various compon
 [Learn more about Variables.](https://developer.kore.ai/docs/bots/bot-settings/bot-management/using-bot-variables/)
 
 
-# Enabling Namespaces
+## Enabling Namespaces
 
 You can enable namespaces by going to **Build > Configurations > General Settings**. Turn on the toggle, then confirm your choice to enable the feature.
 
@@ -17,7 +17,7 @@ You can enable namespaces by going to **Build > Configurations > General Setting
 
 
 
-# Implementation
+## Implementation
 
 Once the Variable Namespaces feature is enabled:
 
@@ -45,7 +45,7 @@ Once Variable Namespaces are mapped, the following steps are implemented by the 
 3. the same logic applies to Bot functions used within the tasks.
 
 
-# Creating Namespaces
+## Creating Namespaces
 
 When configuring a variable (environment or content), you have an option to **Add Namespace**. Use this option to create a namespace.
 
@@ -56,7 +56,7 @@ When configuring a variable (environment or content), you have an option to **Ad
 
 
 
-# Editing
+## Editing
 
 You also have an option **to Manage Namespaces** from under **Build > Configurations > Environment/Content Variables**.
 
@@ -75,7 +75,7 @@ Use this option to **view, edit,** or **delete** namespaces. Deleting a namespac
 
 
 
-## Variable Mapping
+### Variable Mapping
 
 Once created, the namespace needs to be mapped to variables, tasks, and other components. This will ensure that only the variables that belong to the namespace mapped to a component will be loaded at the time of execution.
 
@@ -88,7 +88,7 @@ At the time of variable creation (environment and content), you can map the name
 
 
 
-## Components
+### Components
 
 All the components have a **Manage Variable Namespaces** action item which can be used to map the component with a particular namespace. Below is a list of places where you can find the **Manage Variable Namespaces** option:
 
@@ -101,7 +101,7 @@ All the components have a **Manage Variable Namespaces** action item which can b
  
 
 
-### Nodes within Dialog Tasks
+#### Nodes within Dialog Tasks
 
 You can find the option under the Component Properties section of the node. You can choose to use the Variable Namespace associated with the task or customize it for the node. 
 
@@ -113,7 +113,7 @@ You can find the option under the Component Properties section of the node. You 
 
 
 
-### Knowledge Graph
+#### Knowledge Graph
 
 **Conversation Skills > Knowledge Graph > More Options** menu.
 
@@ -124,7 +124,7 @@ You can find the option under the Component Properties section of the node. You 
 
 
 
-### Small Talk
+#### Small Talk
 
 **Conversation Skills > Small Talk > Group Settings** icon.
 
@@ -135,7 +135,7 @@ You can find the option under the Component Properties section of the node. You 
 
 
 
-### Event Handlers
+#### Event Handlers
 
 **Intelligence > Event > More Options** menu.
 
