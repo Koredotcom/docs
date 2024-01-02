@@ -109,7 +109,7 @@ After detecting these additional synonyms, the **Confirmation** node extracts â€
 
     ![alt_text](images/image6.png "image_tooltip")
 
-4. Under the **Custom Tags** section, add tags to build custom profiles of your VA conversations. [Learn more](../../../../../analytics/automations/custom-dashboard/custom-meta-tags){:target="_blank"}.
+4. Under the **Custom Tags** section, add tags to build custom profiles of your VA conversations. [Learn more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
     <p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
     ![alt_text](images/image7.png "image_tooltip")
@@ -117,7 +117,7 @@ After detecting these additional synonyms, the **Confirmation** node extracts â€
 
 ### IVR Properties
 
-Use  the **IVR properties** tab on the Confirmation Node to define the initial prompts, timeout prompts, no match prompts, and error prompts with customization for the retries behavior, input mode, grammar settings for Global and Node level use cases, prompts, and call behavior parameters for this node to use in IVR Channel. These settings are defined at the Confirmation Node level. For more information, read the [Voice Call Properties](../../voice-call-properties){:target="_blank"} article.
+Use  the **IVR properties** tab on the Confirmation Node to define the initial prompts, timeout prompts, no match prompts, and error prompts with customization for the retries behavior, input mode, grammar settings for Global and Node level use cases, prompts, and call behavior parameters for this node to use in IVR Channel. These settings are defined at the Confirmation Node level. For more information, read the [Voice Call Properties](../../../../../channels/call-properties){:target="_blank"} article.
 
 !!! Note
 
