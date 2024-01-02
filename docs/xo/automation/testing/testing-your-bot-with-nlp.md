@@ -34,7 +34,7 @@ When you test an utterance, the NLP engine tries to identify an intent using the
 
 * [Machine Learning](../../natural-language/training/machine-learning-engine){:target="_blank"} engine, 
 * [Fundamental Meaning](../../natural-language/training/fundamental-meaning){:target="_blank"} engine,
-* [Knowledge AI](../../../answers/knowledge-ai/knowledge-ai-introduction){:target="_blank"}, including the [Knowledge Graph](../../../answers/knowledge-ai/knowledge-graph-training){:target="_blank"} engine and the [Answer from Documents](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/){:target="_blank"} feature,
+* [Knowledge AI](../../../answers/knowledge-ai/knowledge-ai-introduction){:target="_blank"}, including the [Knowledge Graph](../../../answers/knowledge-ai/knowledge-graph-training){:target="_blank"} engine and the [Answer from Documents](../../../answers/answer-from-documents){:target="_blank"} feature,
 * [Ranking and Resolver](../../natural-language/training/ranking-and-resolver){:target="_blank"}.
 
 
