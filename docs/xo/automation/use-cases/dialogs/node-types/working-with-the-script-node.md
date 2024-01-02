@@ -56,7 +56,7 @@ Use the Instance Properties to define any user tags that you want to set for the
     The settings in the Instance Properties tab are specific to the current dialog task and do not reflect in other dialog tasks that use this node.
 
 1. On the Script node properties panel, click the **Instance Properties** tab.
-2. Under the **Custom Tags** section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automations/custom-dashboard/custom-meta-tags){:target="_blank"}.
+2. Under the **Custom Tags** section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
     <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
@@ -88,7 +88,7 @@ To set up node connection conditions, please follow the steps outlined in [Addin
 
 ## JavaScript Examples
 
-Using JavaScript, you can customize your dialog task by processing data before or after an API call. For example, directing the dialog task flow. You can use the `Context` object type-ahead feature to identify and select dynamic variables as shown in the following illustration. For more information, refer to [Context Object](https://developer.kore.ai/docs/bots/bot-builder-tool/context-object/){:target="_blank"}.
+Using JavaScript, you can customize your dialog task by processing data before or after an API call. For example, directing the dialog task flow. You can use the `Context` object type-ahead feature to identify and select dynamic variables as shown in the following illustration. For more information, refer to [Context Object](../../../context-object/){:target="_blank"}.
 
 <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
