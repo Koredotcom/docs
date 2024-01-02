@@ -34,7 +34,7 @@ When you test an utterance, the NLP engine tries to identify an intent using the
 
 * [Machine Learning](../../natural-language/training/machine-learning-engine){:target="_blank"} engine, 
 * [Fundamental Meaning](../../natural-language/training/fundamental-meaning){:target="_blank"} engine,
-* [Knowledge AI](../../../answers/knowledge-ai/knowledge-ai-introduction){:target="_blank"}, including the [Knowledge Graph](../../../answers/knowledge-ai/knowledge-graph-training){:target="_blank"} engine and the [Answer from Documents](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/){:target="_blank"} feature,
+* [Knowledge AI](../../../answers/knowledge-ai/knowledge-ai-introduction){:target="_blank"}, including the [Knowledge Graph](../../../answers/knowledge-ai/knowledge-graph-training){:target="_blank"} engine and the [Answer from Documents](../../../answers/answer-from-documents){:target="_blank"} feature,
 * [Ranking and Resolver](../../natural-language/training/ranking-and-resolver){:target="_blank"}.
 
 
@@ -171,7 +171,7 @@ In case the utterance triggers a dialog (as per run a dialog option in KG), the 
 
 #### Answer from Documents
 
-If you have enabled [Answer from Documents](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/){:target="_blank"} for your VA, and a match is found within your uploaded documents, you will see results for this match, provided the intent is not identified using any other method (a dialog task, a Knowledge Graph FAQ, the Machine Learning or the Fundamental Meaning engine).
+If you have enabled [Answer from Documents](../../../answers/answer-from-documents){:target="_blank"} for your VA, and a match is found within your uploaded documents, you will see results for this match, provided the intent is not identified using any other method (a dialog task, a Knowledge Graph FAQ, the Machine Learning or the Fundamental Meaning engine).
 
 When an utterance is answered from a document, you will see a note mentioning that no Intent was identified by the ML, FM, and KG engines. Click [Add to KG](../../../answers/knowledge-ai/manage-faqs){:target="_blank"} to add an FAQ to the Knowledge Graph to address the utterance and improve intent identification. 
 

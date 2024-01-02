@@ -128,7 +128,7 @@ You can use the **Add Node** button visible on hover over the connector line, to
 
 #### Add If-Else Node Connections
 
-To add **If-Else** connection conditions, hover over the node and click the blue **"+"** button on the bottom. [Learn more](../node-connections/node-conditions/){:target="_blank"}.
+To add **If-Else** connection conditions, hover over the node and click the blue **"+"** button on the bottom. [Learn more](../node-connections/nodes-conditions/){:target="_blank"}.
 
 <p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
