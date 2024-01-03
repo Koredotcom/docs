@@ -75,12 +75,12 @@ kr-grid[type="g1"] kr-grid-title{
     margin: 15px 0px 0px 0px;
     color: #0000008a;
     font-size: 18px;
-    align-content: center;
+    align-items: center;
 }
 kr-grid[type="g1"] kr-grid-desc{
     display: block;
     margin-bottom: 10px;
-    align-content: center;
+    align-items: center;
 }
 /* kr grid g1 end*/
 
