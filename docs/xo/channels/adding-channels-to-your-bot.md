@@ -58,49 +58,32 @@ Click the icon of the channel you want to add, and then configure the channel to
    <td>
    </td>
   </tr>
+
   <tr>
-   <td><a href="../adding-the-jabber-channel/">Cisco Jabber</a>
-<p>
-
-<a href="../adding-the-jabber-channel/"><img src="../images/logo1-jabber.png"></a>
-
-
+   <td><a href="../add-cisco-jabber-channel">Cisco Jabber</a>
+      <p>
+      <a href="../add-cisco-jabber-channel"><img src="../images/logo1-jabber.png"></a>
    </td>
-   <td><a href="../adding-the-cisco-spark-channel/">Cisco Webex Teams</a>
-<p>
-<a href="../adding-the-cisco-spark-channel/">(formerly Cisco Spark)</a>
-<p>
 
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image5.png" width="" alt="alt_text" title="image_tooltip">
-
+   <td><a href="../adding-cisco-channel/">Cisco Webex Teams (formerly Cisco Spark)</a>
+      <p>
+      <a href="../adding-cisco-channel/"><img src="../images/logo2-cisco-webex-teams.png"></a>
    </td>
+
    <td><a href="../adding-the-cisco-tropo-channel/">Cisco Tropo</a>
-<p>
-
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image6.png" width="" alt="alt_text" title="image_tooltip">
-
+      <p>
+      <a href="../adding-the-cisco-tropo-channel"><img src="../images/logo3-tropo.png"></a>
    </td>
-   <td><a href="../adding-the-google-assistant-channel/">Google Assistant</a>
-<p>
 
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image7.png" width="" alt="alt_text" title="image_tooltip">
-
+   <td><a href="../adding-google-assistant-channel">Google Assistant</a>
+      <p>
+      <a href="../adding-google-assistant-channel"><img src="../images/logo4-google-assistant.png"></a>
    </td>
+
    <td>
    </td>
   </tr>
+  
   <tr>
    <td><a href="../adding-genesys-chat-as-a-channel/">Genesys Cloud CX Messaging</a>
 <p>
