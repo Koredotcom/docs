@@ -112,14 +112,8 @@ Click the icon of the channel you want to add, and then configure the channel to
   </tr>
   
   <tr>
-   <td><a href="../adding-the-mattermost-channel" target="_blank">Mattermost</a>
-<p>
-
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image13.png" width="" alt="alt_text" title="image_tooltip">
+   <td><a href="../add-mattermost-channel" target="_blank">Mattermost<p><img src="../images/logo10-mattermost"></a>
+   <p>
 
    </td>
    <td><a href="../adding-the-microsoft-teams-channel" target="_blank">Microsoft Teams</a>
