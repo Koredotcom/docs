@@ -194,11 +194,11 @@ For each confirmation you can:
 
 * You can set **configuration properties** like the following:
 
-    * Display name,
-    * Node name,
-    * User prompts,
-    * Display options, and
-    * Synonyms for yes/no. Refer <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes/#component-properties" target="_blank">here</a>.
+    * Display name
+    * Node name
+    * User prompts
+    * Display options
+    * Synonyms for yes/no. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes/#component-properties" target="_blank">Learn more</a>.
 * Select the concerned user response options to continue with the appropriate path.
 <img src="../images/select-user-response-options.png" alt="user response options" title="user response options" style="border: 1px solid gray; zoom:75%;">
 
