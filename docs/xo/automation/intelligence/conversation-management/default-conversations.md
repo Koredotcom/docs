@@ -91,15 +91,15 @@ To add a new standard response, follow the steps below:
 
 1. Select a tab category for the standard response. For example, **Greeting**, and then hover the situation for which you want to add the response. 
 2. Click **Add Response**.
-3. **When t**he **Add Channel Overrides** dialog is displayed, follow the steps below:
+3. When the **Add Channel Overrides** dialog is displayed, follow the steps below:
 
     * In the **Choose a channel** drop-down list, select a channel to create a channel-specific response. You can go with the Any Channel option to enable the response for all channels.
     * In the case of channel-specific response, from the **Choose a Task** drop-down list, select **Any Task** to apply this channel-specific response to all tasks or select a specific task.
     * When a specific task is selected, the **Choose a Field is** drop-down is displayed. Select **Any Field** or a specific field for this channel-specific response.
     <img src="../images/add-channel-override.png" alt="add channel override" title="add channel override" style="border: 1px solid gray; zoom:75%;">
 
-    * In the bot **Response** editor, you can override the default Bot Response for this channel using basic editor controls on the **Simple Mode** tab, or write custom JavaScript for the response on the **Advanced Mode** tab. For the:
-        * **Simple Mode** tab – Enter the text for the default standard response. For example, *There* you are, I was ~hoping~ you would return soon! and then optionally, format the text using the formatting buttons for bold, italics, header styles, hyperlinks, ordered and unordered lists, and inserting a line. For more information, refer to <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/prompt-editor/#prompt-editor" target="_blank">Using the Prompt Editor</a>.
+    * In the bot **Response** editor, you can override the default Bot Response for this channel using basic editor controls on the **Simple Mode** tab, or write custom JavaScript for the response on the **Advanced Mode** tab as follows:
+        * **Simple Mode** tab – Enter the text for the default standard response. For example, *There* you are, I was *hoping* you would return soon! and then optionally, format the text using the formatting buttons for bold, italics, header styles, hyperlinks, ordered and unordered lists, and inserting a line. For more information, refer to <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/prompt-editor/#prompt-editor" target="_blank">Using the Prompt Editor</a>.
         * **Advanced Mode tab** – Enter JavaScript to override the channel message as described in the following code examples.
 
 <div class="admonition note">
@@ -185,7 +185,7 @@ var indexArray = ['a', 'b', 'c',
 print(JSON.stringify(message));
 ```
 
-Using the <code>getChoices()</code> function, you can also customize the **response display format** using the <a href="https://docsinternal-kore.github.io/docs/xo/web-mobile-SDK-message-formatting-and-templates/" target="_blank">message formatting templates</a>. When the <code>getChoices()</code> function is called and there is an ambuguity, the platform returns the ambiguous choices information as an array which can be used to present the options to the end users.
+Using the <code>getChoices()</code> function, you can also customize the **response display format** using the <a href="https://docsinternal-kore.github.io/docs/xo/web-mobile-SDK-message-formatting-and-templates/" target="_blank">message formatting templates</a>. When the <code>getChoices()</code> function is called and there is an ambiguity, the platform returns the ambiguous choices information as an array which can be used to present the options to the end users.
 
 For example, to display the standard response for _Did you mean in_ a button format, you can use the following code:
 
