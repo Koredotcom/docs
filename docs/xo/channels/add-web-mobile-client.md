@@ -80,9 +80,7 @@ To choose deployment options, follow these steps:
 
 
 1. In the **Web Client Details **section, copy the URL to share this URL with users to interact with your virtual assistant.
-
 <img src="../images/Web_Mobile5.png" alt="Web Client details" title="Web Client details" style="border: 1px solid gray; zoom:70%;">
-
 2. In the **Embed Code** section, copy the code to embed this Channel in your application pages where you want to display this virtual assistant widget.
 
 <img src="../images/Web_Mobile6.png" alt="embed code" title="embed code" style="border: 1px solid gray; zoom:70%;">
@@ -101,13 +99,10 @@ To edit the Web/Mobile Client channel, follow the below steps:
 
 
 1. Hover over the channel to modify, and then click the **Settings**.
-
 <img src="../images/Web_Mobile8.png" alt="modify configuration" title="modify configuration" style="border: 1px solid gray;">
-
 icon displayed to view the command menu, as shown in the screenshot below.
 
 <img src="../images/Web_Mobile9.png" alt="whitelist domains" title="whitelist domains" style="border: 1px solid gray;">
-
 2. Select one of the following commands to modify the channel:
   * **Edit** – Click to open the Web/Mobile Client channel setup page.
   * **Disable/Enable** – Click **Disable** to temporarily disable the use of the Web/Mobile Client channel for your bot. When the channel is disabled, click **Enable** to enable the use of the Web/Mobile Client channel.
