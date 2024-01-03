@@ -63,9 +63,9 @@ To access and manage the default responses in bot builder, follow the below step
 
 1. Select the **Build** tab from the top menu
 2. From the left menu, click **Intelligence > Standard Responses**.
-<img src="../images/default-responses.png" alt="default responses" title="default responses" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/default-responses.png" alt="default responses" title="default responses" style="border: 1px solid gray; zoom:75%;">
 
-For each standard response category tab, the event or user input is listed followed by one or more NLP interpreter standard responses. 
+    For each standard response category tab, the event or user input is listed followed by one or more NLP interpreter standard responses. 
 
 You can modify the default response, and if needed, add additional responses selected randomly by the NLP interpreter in response to user input or system event.
 
@@ -92,6 +92,7 @@ To add a new standard response, follow the steps below:
 1. Select a tab category for the standard response. For example, **Greeting**, and then hover the situation for which you want to add the response. 
 2. Click **Add Response**.
 3. **When t**he **Add Channel Overrides** dialog is displayed, follow the steps below:
+
     * In the **Choose a channel** drop-down list, select a channel to create a channel-specific response. You can go with the Any Channel option to enable the response for all channels.
     * In the case of channel-specific response, from the **Choose a Task** drop-down list, select **Any Task** to apply this channel-specific response to all tasks or select a specific task.
     * When a specific task is selected, the **Choose a Field is** drop-down is displayed. Select **Any Field** or a specific field for this channel-specific response.
@@ -211,4 +212,4 @@ message.payload.buttons.push(button);
 print(JSON.stringify(message)); 
 ```
 
-   * Click **Done** to save and close the **Edit Response** dialog and apply the new standard response.
+<ul><li>Click <b>Done</b> to save and close the <b>Edit Response</b> dialog and apply the new standard response.</li></ul>
