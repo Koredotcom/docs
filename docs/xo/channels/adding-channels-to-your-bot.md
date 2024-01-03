@@ -285,130 +285,87 @@ Click the icon of the channel you want to add, and then configure the channel to
   <tr>
    <td colspan="4" ><strong>Voice Channels</strong>
    </td>
+   
    <td>
    </td>
   </tr>
+  
   <tr>
-   <td><a href="../adding-the-amazon-alexa-channel" target="_blank">Amazon Alexa</a>
-<p>
-
-
-<p id="gdcalert35" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image35.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert36">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image35.png" width="" alt="alt_text" title="image_tooltip">
-
+   <td><a href="../amazon-alexa" target="_blank">Amazon Alexa</a>
+      <p>
+      <a href="../amazon-alexa" target="_blank"><img src="../images/logo32-alexa.png"></a>
    </td>
-   <td><a href="../adding-the-ivr-audiocodes-channel-2/">IVR – AudioCodes</a>
-<p>
 
-
-<p id="gdcalert36" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image36.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert37">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image36.png" width="" alt="alt_text" title="image_tooltip">
-
+   <td><a href="../ivr-audio-codes">IVR – AudioCodes</a>
+      <p>
+      <a href="../ivr-audio-codes"><img src="../images/logo33-audiocodes.png"></a>
    </td>
-   <td><a href="https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/">IVR</a>
-<p>
 
-
-<p id="gdcalert37" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image37.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert38">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image37.png" width="" alt="alt_text" title="image_tooltip">
-
+   <td><a href="../IVR-integration">IVR</a>
+      <p>
+      <a href="../IVR-integration"><img src="../images/logo34-ivr.png"></a>
    </td>
-   <td><a href="../adding-the-twilio-voice-channel" target="_blank">Twilio Voice</a>
-<p>
 
-
-<p id="gdcalert38" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image38.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert39">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image38.png" width="" alt="alt_text" title="image_tooltip">
-
+   <td><a href="../add-twilio-voice-channel" target="_blank">Twilio Voice</a>
+      <p>
+      <a href="../add-twilio-voice-channel" target="_blank"><img src="../images/logo35-twilio.png"></a>
    </td>
-   <td><a href="../adding-the-smartassist-gateway-channel" target="_blank">SmartAssist Gateway</a>
-<p>
 
-
-<p id="gdcalert39" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image39.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert40">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image39.png" width="" alt="alt_text" title="image_tooltip">
-
+   <td><a href="../smart-assist-gateway" target="_blank">SmartAssist Gateway</a>
+      <p>
+      <a href="../smart-assist-gateway" target="_blank"><img src="../images/logo36-smart-assist.png"></a>
    </td>
   </tr>
+
   <tr>
    <td colspan="4" ><strong>Other Channels</strong>
    </td>
+
    <td>
    </td>
   </tr>
+
   <tr>
-   <td><a href="../adding-the-email-channel" target="_blank">Email</a>
-<p>
-
-
-<p id="gdcalert40" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image40.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert41">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image40.png" width="" alt="alt_text" title="image_tooltip">
-
+   <td><a href="../add-email-channel" target="_blank">Email</a>
+      <p>
+      <a href="../add-email-channel" target="_blank"><img src="../images/logo37-email.png"></a>
    </td>
-   <td><a href="../adding-the-sms-channel" target="_blank">Twilio SMS</a>
-<p>
 
-
-<p id="gdcalert41" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image41.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert42">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image41.png" width="" alt="alt_text" title="image_tooltip">
-
+   <td><a href="../add-twilio-sms-channel" target="_blank">Twilio SMS</a>
+      <p>
+      <a href="../add-twilio-sms-channel" target="_blank"><img src="../images/logo35-twilio.png"></a>
    </td>
-   <td><a href="../adding-the-webmobile-client-channel" target="_blank">Web / Mobile Client</a>
-<p>
 
-
-<p id="gdcalert42" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image42.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert43">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image42.png" width="" alt="alt_text" title="image_tooltip">
-
+   <td><a href="../add-web-mobile-client" target="_blank">Web / Mobile Client</a>
+      <p>
+      <a href="../add-web-mobile-client" target="_blank"><img src="../images/logo39-webmobile.png"></a>
    </td>
-   <td><a href="../adding-webhook-channel" target="_blank">Webhook</a>
-<p>
 
-
-<p id="gdcalert43" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image43.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert44">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image43.png" width="" alt="alt_text" title="image_tooltip">
-
+   <td><a href="../add-webhook-channel" target="_blank">Webhook</a>
+      <p>
+      <a href="../add-webhook-channel" target="_blank"><img src="../images/logo40-webhook.png"></a>
    </td>
+
    <td>
    </td>
   </tr>
+  
   <tr>
-   <td><a href="../adding-the-widget-sdk-channel" target="_blank">Widget SDK</a>
-<p>
-
-
-<p id="gdcalert44" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image44.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert45">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image44.png" width="" alt="alt_text" title="image_tooltip">
-
+   <td><a href="../add-widget-sdk-channel" target="_blank">Widget SDK</a>
+      <p>
+      <a href="../add-widget-sdk-channel" target="_blank"><img src="../images/logo39-webmobile.png"></a>
    </td>
+
    <td>
    </td>
+   
    <td>
    </td>
+   
    <td>
    </td>
+   
    <td>
    </td>
   </tr>
 </table>
-
