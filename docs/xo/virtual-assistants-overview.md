@@ -1,7 +1,5 @@
 # Virtual Assistants Overview
 
-## Introduction
-
 Communication has been the essence of life from the beginning of time. Traditionally, conversations were restricted to verbal and textual interaction between humans. These interactions were usually guided by emotions, context, and awareness of previous conversations.
 
 With the advent of computers, interactions have expanded to include machines i.e. human-machine interactions. The transitions from a command-based interface to a Graphical User Interface (GUI) to a Conversational User Interface (CUI) became natural and need-based, making communication easier.

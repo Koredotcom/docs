@@ -4,7 +4,7 @@ In this How-To, we will explore a scenario in a Travel Planning Assistant, where
 
 We will also see how the Panel can be hosted on a Web/Mobile Client using the Widget SDK.
 
-For details on what Digital Views are and how they are implemented in the Kore.ai XO Platform, click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/digital-views/" target="_blank">here</a>.
+For details on what Digital Views are and how they are implemented in the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-views/" target="_blank">here</a>.
 
 ## Problem Statement
 
@@ -14,8 +14,8 @@ Consider a Travel Planning assistant helping a user retrieve upcoming bookings. 
 
 To go through these configurations, you need to know at least the basics of the following XO Platform features:
 
-* <a href="https://developer.kore.ai/docs/bots/how-tos/travel-planing-assistant/create-a-travel-virtual-assistant/" target="_blank">Building a Virtual Assistant</a>: This is because your assistant needs to have been already built when you begin working on your views.
-* <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/digital-views/" target="_blank">Working with Digital Views</a>.
+* <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/create-a-travel-virtual-assistant/" target="_blank">Building a Virtual Assistant</a>: This is because your assistant needs to have been already built when you begin working on your views.
+* <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-views/" target="_blank">Working with Digital Views</a>.
 
 You also need a Dialog Task that handles upcoming bookings. Read more about working with the Dialog Builder.
 
@@ -205,7 +205,7 @@ Next, we will see how to create Widgets with static JSON content. We will use a 
 2. In the **New Widget** dialog, enter the Name, and set the source to JSON.
 <img src="../images/json-widget.png" alt="json widget" title="json widget" style="border: 1px solid gray; zoom:75%;"> 
 
-Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, <a href="https://developer.kore.ai/docs/bots/sdks/widget-sdk-message-formatting-and-templates/" target="_blank">refer here</a>.
+Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, <a href="https://docsinternal-kore.github.io/docs/xo/web-mobile-SDK-message-formatting-and-templates/" target="_blank">refer here</a>.
 
 ```js
 var message =
@@ -253,11 +253,11 @@ To publish the Assistant, first enable channels:
 3. From the left navigation menu, select the **Publish** option. Under the Tasks & languages section, ensure that the Widget and Panels we developed are selected for publication.
 4. **Proceed** with the Publish.
 
-Learn more about <a href="https://developer.kore.ai/docs/bots/publish/publishing-bot/" target="_blank">publishing your Virtual Assistant</a>. 
+Learn more about <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/design-digital-skills/configure-digital-views/#publishing" target="_blank">publishing your Virtual Assistant</a>. 
 
 ## Hosting
 
-We will be hosting the Panels in the web/mobile client. Click <a href="https://developer.kore.ai/docs/bots/sdks/kore-ai-widget-sdk-tutorial/" target="_blank">here</a> for more details on the Widget SDK usage.
+We will be hosting the Panels in the web/mobile client. Click <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/kore-ai-web-sdk-tutorial/" target="_blank">here</a> for more details on the Widget SDK usage.
 
 1. Download the Kore.ai Widget SDK, go to <a href="https://github.com/Koredotcom/web-kore-sdk" target="_blank">Kore SDK</a>, and then click **Download**.
 2. Extract all files to the `/SDKApp/sdk` folder.

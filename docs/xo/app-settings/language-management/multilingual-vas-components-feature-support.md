@@ -42,7 +42,7 @@ JSON object consisting of the following translatable elements
    </td>
    <td>Object
    </td>
-   <td>Arrays of important words in the task names and their corresponding synonyms. Enter translation of the words as well as their synonyms. Refer to <a href="https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Synonyms" target="_blank">Managing Synonyms</a> to learn more about bot synonyms.
+   <td>Arrays of important words in the task names and their corresponding synonyms. Enter translation of the words as well as their synonyms. Refer to <a href="../../../automation/natural-language/training/fundamental-meaning/#manage-synonyms" target="_blank">Managing Synonyms</a> to learn more about bot synonyms.
    </td>
   </tr>
   <tr>
@@ -57,7 +57,7 @@ JSON object consisting of the following translatable elements
 
 ## Dialog Tasks
 
-JSON object consisting of the following translatable components of your VA’s [Dialog Tasks](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/dialog-tasks/){:target="_blank"}.
+JSON object consisting of the following translatable components of your VA’s [Dialog Tasks](../../../automation/use-cases/dialogs/dialog-tasks-overview){:target="_blank"}.
 
 <table border="1">
   <tr>
@@ -130,7 +130,7 @@ JSON object consisting of the following translatable components related to the N
    </td>
    <td>Object
    </td>
-   <td>Synonyms for the words in the entity node names. Refer to <a href="https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Synonyms" target="_blank">Managing Synonyms</a> to learn more.
+   <td>Synonyms for the words in the entity node names. Refer to <a href="../../../automation/natural-language/training/fundamental-meaning/#manage-synonyms" target="_blank">Managing Synonyms</a> to learn more.
    </td>
   </tr>
   <tr>
@@ -138,14 +138,14 @@ JSON object consisting of the following translatable components related to the N
    </td>
    <td>Object
    </td>
-   <td>Patterns for the User Intent and Entity nodes in the dialog task. Refer to <a href="https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Patterns_and_Rules" target="_blank">Managing Patterns</a> to learn more.
+   <td>Patterns for the User Intent and Entity nodes in the dialog task. Refer to <a href="../../../automation/natural-language/training/fundamental-meaning/#manage-patterns-and-rules" target="_blank">Managing Patterns</a> to learn more.
    </td>
   </tr>
 </table>
 
 ## Message Templates
 
-JSON object with arrays of Message Template IDs and Message Template Text values. They correspond to the **User Responses** field in the Message node and the** Bot Prompts** and **Error Prompts** fields in the [Entity node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-entity-node/){:target="_blank"} of the dialog tasks.
+JSON object with arrays of Message Template IDs and Message Template Text values. They correspond to the **User Responses** field in the Message node and the **Bot Prompts** and **Error Prompts** fields in the [Entity node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-entity-node/){:target="_blank"} of the dialog tasks.
 
 
 <table border="1">
@@ -212,7 +212,7 @@ JSON object consisting of the following translatable components of your assistan
    </td>
    <td>Array
    </td>
-   <td>Array of patterns related to the alert task’s name. Replace the pattern text with the translated text. Refer to <a href="https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Patterns_and_Rules" target="_blank">Managing Patterns</a> to learn more.
+   <td>Array of patterns related to the alert task’s name. Replace the pattern text with the translated text. Refer to <a href="../../../automation/natural-language/training/fundamental-meaning/#manage-patterns-and-rules" target="_blank">Managing Patterns</a> to learn more.
    </td>
   </tr>
   <tr>
@@ -220,7 +220,7 @@ JSON object consisting of the following translatable components of your assistan
    </td>
    <td>Object
    </td>
-   <td>Arrays consisting of synonyms for each task field. Replace the field name and the synonyms with the translated text. Refer to <a href="https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Synonyms" target="_blank">Managing Synonyms</a> to learn more.
+   <td>Arrays consisting of synonyms for each task field. Replace the field name and the synonyms with the translated text. Refer to <a href="../../../automation/natural-language/training/fundamental-meaning/#manage-synonyms" target="_blank">Managing Synonyms</a> to learn more.
    </td>
   </tr>
   <tr>
@@ -228,7 +228,7 @@ JSON object consisting of the following translatable components of your assistan
    </td>
    <td>Object
    </td>
-   <td>Arrays consisting of patterns for each task field. Replace the pattern text with the translated text. Refer to <a href="https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Patterns_and_Rules" target="_blank">Managing Patterns</a> to learn more.
+   <td>Arrays consisting of patterns for each task field. Replace the pattern text with the translated text. Refer to <a href="../../../automation/natural-language/training/fundamental-meaning/#manage-patterns-and-rules" target="_blank">Managing Patterns</a> to learn more.
    </td>
   </tr>
   <tr>
@@ -368,7 +368,7 @@ JSON object consisting of the following translatable components related to IDP c
 
 We have seen in [this document](https://developer.kore.ai/docs/bots/how-tos/how-to-use-patterns-for-intents-entities/){:target="_blank"}, how Patterns can be used for Intent detection and Entity extraction. These rules are for VAs in the English language. In other languages, there may be differences. 
 
-Patterns can be used in [Small Talk](../../../automation/use-cases/small-talk/#terminology){:target="_blank"} (while defining queries), [Knowledge Graph](../../../automation/use-cases/knowledge-ai/build-a-knowledge-graph/#add-faqs){:target="_blank"} (using alternate question fields), and [Trait](../../../automation/natural-language/training/traits/#trait-definition){:target="_blank"} identification but their behavior might differ slightly. The table below provides an overview of how this may occur.
+Patterns can be used in [Small Talk](../../../automation/use-cases/small-talk/#terminology){:target="_blank"} (while defining queries), [Knowledge Graph](../../../answers/knowledge-ai/build-a-knowledge-graph/#add-faqs){:target="_blank"} (using alternate question fields), and [Trait](../../../automation/natural-language/training/traits/#trait-definition){:target="_blank"} identification but their behavior might differ slightly. The table below provides an overview of how this may occur.
 
 <table border="1">
   <tr>

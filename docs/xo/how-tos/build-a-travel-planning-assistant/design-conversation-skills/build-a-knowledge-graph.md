@@ -2,7 +2,7 @@
 
 This article shows you how to build and understand the working of a Knowledge Graph for your Virtual Assistant. It shows how to convert an FAQ into ontology, add tags, use terms, add alternate questions, synonyms, tags, and traits.
 
-For details on the implementation process, please click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ontology/" target="_blank">here</a>.
+For details on the implementation process, please click <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-overview/#the-ontology-knowledge-graph" target="_blank">here</a>.
 
 Throughout this use case article, we will be building a Knowledge Graph for a Travel Planning Assistant. This article discusses both the basic setup of a Knowledge Graph, but also the solutions at hand for cases of ambiguity.
 
@@ -153,7 +153,7 @@ Consider the query _How do I check my flight status?_. If the VA has a task that
 
 To trigger a task, follow the steps below:
 
-1. Before proceeding, ensure that you have a Dialog Task defined for **_Check Flight Status_**. Let us consider a dummy dialog that displays a message. Learn more on adding tasks by reading <a href="https://developer.kore.ai/docs/bots/chatbot-overview/using-the-dialog-builder-tool/" target="_blank">Using the Dialog Builder</a>.
+1. Before proceeding, ensure that you have a Dialog Task defined for **_Check Flight Status_**. Let us consider a dummy dialog that displays a message. Learn more on adding tasks by reading <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/" target="_blank">Using the Dialog Builder</a>.
 2. Click **Add Intent** _How do I check my flight status?_
 3. Set **Intent** to _Task_.
 <img src="../images/set-task-intent.png" alt="set task intent" title="set task intent" style="border: 1px solid gray; zoom:75%;"> 
@@ -209,4 +209,4 @@ To add traits, follow the below steps:
 <li>Click <b>Talk to the Bot</b> and try the same question. Now you will get the expected response.
 <img src="../images/add-trait-to-node.png" alt="add trait to node" title="add trait to node" style="border: 1px solid gray; zoom:75%;"></li></ul>
 
-In this document you have seen various settings for building and managing a Knowledge Graph. For details regarding the implementation and functionality of Knowledge Graph, click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ontology/" target="_blank">here</a>.
+In this document you have seen various settings for building and managing a Knowledge Graph. For details regarding the implementation and functionality of Knowledge Graph, click <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-overview/#the-ontology-knowledge-graph" target="_blank">here</a>.

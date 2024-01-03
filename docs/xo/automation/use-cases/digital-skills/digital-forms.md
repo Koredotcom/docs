@@ -6,7 +6,7 @@ In a standard Dialog Task, this scenario is designed by placing a series of Enti
 
 **Digital Forms** provide a range of input fields that allow your assistant to capture the required details from end-users. After the users complete the form, the input is submitted to the VA to proceed with the task at hand.
 
-In this article, we discuss the features and implementation of Digital Forms in the Kore.ai XO Platform. For a use case example and a step-by-step implementation of a Digital Form [click here](https://developer.kore.ai/docs/bots/how-tos/how-to-configure-ui-forms/).
+In this article, we discuss the features and implementation of Digital Forms in the XO Platform. For a use case example and a step-by-step implementation of a Digital Form click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/configure-digital-forms/" target="_blank">here</a>.
 
 ## Features
 * Improved user experience with a single interface for input collection.
@@ -21,11 +21,11 @@ You can access **Digital Forms** from the **Build** top menu under **Digital Ski
 
 <img src="../../images/access-digital-forms.png" alt="Access Digital Forms" title="Access Digital Forms" style="border: 1px solid gray; zoom:75%;">
 
-Here is the overall usage process for Digital Forms within the Kore.ai XO Platform
+Here is the overall usage process for Digital Forms within the XO Platform
 
 * **Form Creation**: Define a Digital Form by adding components and configuring their properties.
 * **Form Invocation**: Forms are invoked from inside a task or process:
-    * A form is included as a component in the task. The dialog task offers a Form Experience and Conversation Experience based on the channel of interaction. Learn more by reading about the [Form Node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-form-node/).
+    * A form is included as a component in the task. The dialog task offers a Form Experience and Conversation Experience based on the channel of interaction. Learn more by reading about the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-form-node/" target="_blank">Form Node</a>.
     * A Digital Form is added to a Digital View with a dialog task triggered when a form is submitted from there.
 * **Form Submission**: When it is submitted, the component values are validated and any errors are highlighted. Based on the mode of invocation, post successful validation:
     * The VA execution proceeds as per dialog flow in case of dialog task invocation.
@@ -93,7 +93,7 @@ If you are working with a longer and more complex form, you can split it into se
 From the Forms Listing page, you can:
 
 * Create a **New Form**, as seen above.
-* **Edit** the Form[.](https://developer.kore.ai/docs/bots/bot-builder-tool/digital-forms/#Edit)
+* <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-forms/#edit" target="_blank">Edit</a> the Form.
 * Use the **Branding** option to customize a form.
 * **Test** forms.
 * **Delete** forms.
@@ -160,24 +160,24 @@ This option creates:
 * A **Bot Action Node** to determine the transitions to the Form Node and the Sub-dialog Node based on the channels selected.
 * A **Form Node** for the Digital Form, same as was generated for the Only Form UI above.
 * A **Sub-dialog Node** to capture the required entities (as defined in the Digital Form using components) for the conversational experience. 
-* A **Group** encompassing the following nodes ([see here for details](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/grouping-nodes/)). This grouping can be renamed and/or deleted.
+* A **Group** encompassing the following nodes. This grouping can be renamed and/or deleted. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-connections/grouping-nodes/#add-a-node-group" target="_blank">Learn more</a>.
 
    <img src="../../images/form-experience-nodes.png" alt="form experience node" title="form experience node" style="border: 1px solid gray; zoom:75%;">
 
 5. You can set the **Properties** for each of the nodes added.
-* The **Form Node** ([click here for details](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-form-node/)). 
+* The <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-form-node/" target="_blank">Form Node</a>. 
 Of special interest are the following Component Properties:
 * **Submit Message** – Message displayed to the end-user on successful submission of the form
-* **Web/Mobile SDK Form Behavior** – Using this option you can either have the form displayed *inline* the chat window or *open on a full page*. Also, you can either go ahead with the default submit prompt or configure the setting to display a custom and more specific message to be shown in chat. [See here](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-form-node/#Component_Properties) to know how to configure.
-* **Bot Action Node,** in case of the conversation experience flow, can also be configured [see here for details](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-logic-node/)) Of special interest is the following:
+* **Web/Mobile SDK Form Behavior** – Using this option you can either have the form displayed *inline* the chat window or *open on a full page*. Also, you can either go ahead with the default submit prompt or configure the setting to display a custom and more specific message to be shown in chat. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-form-node/#component-properties" target="_blank">Learn more</a> about the configuration.
+* **Bot Action Node,** in case of the conversation experience flow, can also be configured in the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-logic-node/" target="_blank">Logic Node</a> as follows:
 
-   * **Manage Context Variables** is used to create and set values for the context variables. Remember to use the full path of the variable in the _key_ field ie. ```context.BotUserSession.&lt;variable_name>```
+   * **Manage Context Variables** is used to create and set values for the context variables. Remember to use the full path of the variable in the _key_ field ie. ```context.BotUserSession.<variable_name>```
 
    <div class="admonition note">
    <p class="admonition-title">Note</p>
    <p>We urge you not to make changes to the connection settings as this affects the V's performance.</p></div>
 
-* **Sub-dialog Node** is configured as normal ([see here for details](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-dialog-node/)) Of special interest are the following:
+* **Sub-dialog Node** is configured as a normal <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-dialog-node/" target="_blank">Dialog Node</a> as follows:
 
  * Use the **Entity Post-assignment** to capture the user input.
 * In case you modify the sub-dialog or the source form, you are presented with an option to **Regenerate Dialog**. This ensures that the changes are reflected in the task without having to rebuild the entire task. Be aware that the changes are reflected in all places this sub-dialog is used.
@@ -186,12 +186,12 @@ Of special interest are the following Component Properties:
 
 6. The user input can be accessed as follows:
     * Form component values are accessed from the Context Object using ```{{context.forms.form_name.component_name}}```
-    * In the case of the sub-dialog, the variables used in the post-assignment settings as ```{{context.&lt;variable_name>}}```
+    * In the case of the sub-dialog, the variables used in the post-assignment settings as ```{{context.<variable_name>}}```
 7. You can continue with the Dialog Task as per your business needs. For example, you can use the Form Component values as input to a **Service Node** to update the data or use the **Script Node** to process it further. If you are using the conversation experience too, remember to connect the auto-generated sub-dialog to the process flow.
 
 ### Invocation from Panels
 
-Digital Forms are rendered in Digital Views by configuring Widgets & Panels, [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/digital-views/).
+Digital Forms are rendered in Digital Views by configuring Widgets & Panels. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-views/" target="_blank">Learn more</a>.
 
 To invoke a form using Widgets and Panels, follow the below steps:
 
@@ -207,7 +207,7 @@ To invoke a form using Widgets and Panels, follow the below steps:
 7. **Add the Widget** to an existing panel or create a new panel. 
 You can add a form directly to a panel, it creates a widget by default.
 8. You can **Test** the panel.
-9. Follow the steps provided [here](https://developer.kore.ai/docs/bots/sdks/kore-ai-widget-sdk-tutorial/) to publish and host the panels.
+9. Follow the steps provided <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/kore-ai-web-sdk-tutorial/" target="_blank">here</a> to publish and host the panels.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -217,7 +217,7 @@ You can add a form directly to a panel, it creates a widget by default.
 When the end-user initiates the dialog and reaches the node connecting to the Form node, the following events take place. Depending upon the experience selected at design time and the channel of invocation, the flow is the following:
 
 ### Form Experience
-A **link to the form** is presented to the user. Note that for a synchronous WebHook channel, instead of a link the complete form definition is sent [click here for more details](https://developer.kore.ai/docs/bots/channel-enablement/adding-webhook-channel/).
+A **link to the form** is presented to the user. Note that for a synchronous WebHook channel, instead of a link the complete form definition is sent <a href="https://docsinternal-kore.github.io/docs/xo/channels/add-webhook-channel/" target="_blank">here</a>.
 
 <img src="../../images/UIForms-linkmessage.png" alt="link to form message" title="link to form message" style="border: 1px solid gray; zoom:75%;">
 
@@ -234,7 +234,7 @@ Every form comes with a default **Submit** button. This validates the form entri
 
 <img src="../../images/validation-form.png" alt="form validation" title="form validation" style="border: 1px solid gray; zoom:75%;">
 
-Once the form is validated and submitted, the values are available in the context variable and accessed using the following code: `context.forms.&lt;form_name>.&lt;component_name>`
+Once the form is validated and submitted, the values are available in the context variable and accessed using the following code: `context.forms.<form_name>.<component_name>`
 
 Here we are capturing the user entry and displaying it using a message node.
 
@@ -297,7 +297,7 @@ Otherwise, the ongoing task goes on, and based on the configuration, the user is
 
 Users can access the form using **Panels & Widgets**. The experience is the same as for the Process Flow with Form experience.
 
-Once the form is validated and submitted, the values are available in the context variable and accessed using the following code: context.forms.&lt;form_name>.&lt;component_name>
+Once the form is validated and submitted, the values are available in the context variable and accessed using the following code: context.forms.<form_name>.<component_name>
 
 ## **Manage VAs with Digital Forms**
 ### Publish
@@ -469,7 +469,7 @@ The following are the properties that can be set for each of the components.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p> Not all the properties are valid for all the components, refer to the <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/digital-forms/#Properties">Property Matrix</a> for the mapping.</p>
+<p> Not all the properties are valid for all the components, refer to the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-forms/#component-properties">Property Matrix</a> for the mapping.</p>
 </div>
 
 <table border="1.5">
@@ -2359,43 +2359,43 @@ The following mapping gives the context object to capture the component value al
   <tr>
    <td>Text Field
    </td>
-   <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
+   <td><code>context.forms.<form_name>.<component_name></code>
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>Text Area
    </td>
-   <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
+   <td><code>context.forms.<form_name>.<component_name></code>
    </td>
   </tr>
   <tr>
    <td>Number
    </td>
-   <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
+   <td><code>context.forms.<form_name>.<component_name></code>
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>Radio Button
    </td>
-   <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
+   <td><code>context.forms.<form_name>.<component_name></code>
    </td>
   </tr>
   <tr>
    <td>Dropdown
    </td>
-   <td><code>context.forms.&lt;form_name>.&lt;component_name>[&lt;index>]</code>
+   <td><code>context.forms.<form_name>.<component_name>[<index>]</code>
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>Checkbox
    </td>
-   <td><code>context.forms.&lt;form_name>.&lt;component_name>[&lt;index>]</code>
+   <td><code>context.forms.<form_name>.<component_name>[<index>]</code>
    </td>
   </tr>
   <tr>
    <td>Date
    </td>
-   <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
+   <td><code>context.forms.<form_name>.<component_name></code>
 <p>
 In mm/dd/yyyy format
    </td>
@@ -2403,7 +2403,7 @@ In mm/dd/yyyy format
   <tr bgcolor="#FAFAFA">
    <td>Date & Time
    </td>
-   <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
+   <td><code>context.forms.<form_name>.<component_name></code>
 <p>
 In mm/dd/yyyy hh:mm AM/PM format
    </td>
@@ -2411,7 +2411,7 @@ In mm/dd/yyyy hh:mm AM/PM format
   <tr>
    <td>Phone Number
    </td>
-   <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
+   <td><code>context.forms.<form_name>.<component_name></code>
 <p>
 prefixed with the area code of the country selected by the user
    </td>
@@ -2419,25 +2419,25 @@ prefixed with the area code of the country selected by the user
   <tr bgcolor="#FAFAFA">
    <td>Email
    </td>
-   <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
+   <td><code>context.forms.<form_name>.<component_name></code>
    </td>
   </tr>
   <tr>
    <td>Address
    </td>
-   <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
+   <td><code>context.forms.<form_name>.<component_name></code>
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
    <td>URL
    </td>
-   <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
+   <td><code>context.forms.<form_name>.<component_name></code>
    </td>
   </tr>
   <tr>
    <td>Toggle
    </td>
-   <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
+   <td><code>context.forms.<form_name>.<component_name></code>
 <p>
 Yes/No values
    </td>
@@ -2445,7 +2445,7 @@ Yes/No values
   <tr bgcolor="#FAFAFA">
    <td>Range Slider
    </td>
-   <td><code>context.forms.&lt;form_name>.&lt;component_name></code>
+   <td><code>context.forms.<form_name>.<component_name></code>
    </td>
   </tr>
 </table>

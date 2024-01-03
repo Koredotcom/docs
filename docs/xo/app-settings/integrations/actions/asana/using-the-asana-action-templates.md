@@ -82,7 +82,7 @@ Steps to fetch a task with ID from the Asana integration:
 <img src="../images/asana-action-img13.png" alt="Dialog task is added" title="Dialog task is added" style="border: 1px solid gray;zoom:50%;"/>  
     1. **getTaskById**: A user intent to fetch a task with ID from the Asana space.
     2. **taskId** – An entity node for entering the task ID.
-    3. **getTaskByIdService** – A bot action service to fetch the task with the ID from the Asana integration. Click the **Plus **icon to expand to view the getTaskByIdService bot action component properties. In the **Component Properties** window, click the **Edit Request** link to edit the request parameters as shown below:  
+    3. **getTaskByIdService** – A bot action service to fetch the task with the ID from the Asana integration. Click the **Plus** icon to expand to view the getTaskByIdService bot action component properties. In the **Component Properties** window, click the **Edit Request** link to edit the request parameters as shown below:  
     <img src="../images/asana_template-img5.png" alt="Edit request" title="Edit request" style="border: 1px solid gray;zoom:50%;"/>  
       
         To add one or more responses, scroll down and click the **+Add Response** button:  
@@ -378,7 +378,7 @@ Steps to retrieve all projects from the Asana integration:
 6. Follow the prompts in the VA console to view all projects on Asana as shown below:  
 <img src="../images/asana-template-img21-list_all_projects2.png" alt="VA prompt to list projects" title="VA prompt to list projects" style="border: 1px solid gray;zoom:50%;"/> 
 
-7. You will notice that all projects are found on Asana. Expand and click the **View Project **button.
+7. You will notice that all projects are found on Asana. Expand and click the **View Project** button.
 
 
 ### **List All Users**

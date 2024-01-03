@@ -35,4 +35,4 @@ The test suite metadata captured in conversation testing are details like Intent
 
 ### Transition Flow of Nodes
 
-In conversation testing, you test the correct sequence of the nodes traversed in the background for any user input. For more information, see [Nodes](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/nodes-transitions/){:target="_blank"}.
+In conversation testing, you test the correct sequence of the nodes traversed in the background for any user input. For more information, see [Nodes](../../../../use-cases/dialogs/node-types/nodes-transitions){:target="_blank"}.

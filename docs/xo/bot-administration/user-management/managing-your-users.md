@@ -141,7 +141,7 @@ The _password reset email_ sent message is displayed and an email is sent to the
 
 !!! tip
 
-        If SSO is enabled, Bots Admins can still log on to the Bots Admin Console directly using their password credentials and bypass SSO. For more information, see [Logging On Using Your Admin Password Instead of SSO](../../security-control/using-single-sign-on/#logging-on-using-your-admin-password-instead-of-sso){:target="_blank"}.
+        If SSO is enabled, Bots Admins can still log on to the Bots Admin Console directly using their password credentials and bypass SSO. For more information, see [Logging On Using Your Admin Password Instead of SSO](../../security-and-control/using-single-sign-on/#logging-on-using-your-admin-password-instead-of-sso){:target="_blank"}.
 
 
 #### Delete User

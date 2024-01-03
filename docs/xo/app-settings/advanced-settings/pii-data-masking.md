@@ -7,8 +7,8 @@ Kore.ai allows you to redact any sensitive information that users share with you
 There are a few scenarios where the original value can be used to achieve the business needs.
 
 * If a PII value is used in Dialog Task transitions, the platform automatically uses the original value for the transition condition evaluation.
-* If a PII value is used in the Service Node definition, the platform uses the redacted value by default to make the service calls. You can choose to send the original data using the ‘De-identification of PII data’ configuration of the Service Node. Refer to the [Service Node ](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-service-node/){:target="_blank"}post for more details
-* You may use the Redaction of PII Data configuration of the Entity Nodes to present the original values of a redacted entity value to the users. Refer to the [Entity Node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-entity-node/){:target="_blank"} post for more details.
+* If a PII value is used in the Service Node definition, the platform uses the redacted value by default to make the service calls. You can choose to send the original data using the ‘De-identification of PII data’ configuration of the Service Node. Refer to the [Service Node ](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node){:target="_blank"}post for more details
+* You may use the Redaction of PII Data configuration of the Entity Nodes to present the original values of a redacted entity value to the users. Refer to the [Entity Node](../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node){:target="_blank"} post for more details.
 
 The platform provides the following three modes to redact specified information types:
 
@@ -136,4 +136,4 @@ The **Sensitive Entity** option provides flexibility in managing the handling of
 
 Both the PII and Sensitive Entity complement each other in providing comprehensive protection for sensitive data. While the PII feature offers broad coverage for common PII patterns, sensitive nodes enable you to handle sensitive data in a more granular and contextually aware manner, addressing specific challenges and custom use cases.
 
-It’s recommended to leverage both features in combination to ensure comprehensive protection of sensitive data throughout your conversations. For more information, see the [Entity Node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-entity-node/#Configure_the_Node) article.
+It’s recommended to leverage both features in combination to ensure comprehensive protection of sensitive data throughout your conversations. For more information, see the [Entity Node](../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node/#configure-the-node){:target="_blank"} article.

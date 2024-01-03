@@ -26,7 +26,7 @@ The Ranking & Resolver engine receives the outputs from the above engines and fu
 <li>Select <b><i>Version 2</i></b> for <b>Rank and Resolver Version</b>.</li>
 <li>Click <b>Enable Now</b> in the confirmation window.
     <img src="../images/ranking-and-resolver-engine-thresholds.png" alt="ranking and resolver engine thresholds" title="ranking and resolver engine thresholds" style="border: 1px solid gray; zoom:75%;"></li>
-Once enabled, you can use Utterance Testing to see your bot's behavior with R&R V2. <a href="https://developer.kore.ai/docs/bots/test-your-bot/testing-your-bot-with-nlp/#Ranking_and_Resolver">Learn more</a>.</ol></p>
+Once enabled, you can use Utterance Testing to see your bot's behavior with R&R V2. <a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/testing-your-bot-with-nlp/#ranking-and-resolver">Learn more</a>.</ol></p>
 
 ## How Ranking and Resolver Works for Different NLP Engines
 
@@ -76,7 +76,7 @@ The wining intent is decided by the Ranking & Resolver as follows:
     * If only FM or ML engines found an Intent but probable, that’s the winning intent.
     * If only the KG engine found a probable intent and its score is > higher threshold(80%) then that’s the winning intent.
     * If only the KG engine found a probable Intent and its score is >60% but &lt;80% then that’s the winning intent, but since the confidence is low, show it as a suggestion (user will see “Did you mean”)
-    * If more than one probable intents were found. [Learn more about model scores and resolver](https://developer.kore.ai/docs/bots/test-your-bot/testing-your-bot-with-nlp/#Analyzing_the_Test_Results).
+    * If more than one probable intents were found. <a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/testing-your-bot-with-nlp/#analyzing-the-test-results">Learn more about model scores and resolver</a>.
 
 ## Thresholds & Configuration
 
