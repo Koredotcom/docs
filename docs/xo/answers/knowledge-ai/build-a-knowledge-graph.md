@@ -2,11 +2,9 @@
 
 The XO Platform’s Knowledge Graph (KG) helps you turn your static FAQ text into an intelligent, personalized conversational experience. It goes beyond the usual practice of capturing FAQs as flat question-answer pairs. Instead, the Knowledge Graph enables you to create a hierarchical structure of key domain terms and associate them with context-specific questions and their alternatives, synonyms, traits, and more. 
 
-Additionally, you can opt for the LLM-based Few-Shot Knowledge Graph, which requires no ontology and reduces maintenance and training requirements. [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-graph-terminology/).
+Additionally, you can opt for the LLM-based Few-Shot Knowledge Graph, which requires no ontology and reduces maintenance and training requirements. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-terminology/" target="_blank">Learn more</a>.
 
-To generate a Knowledge Graph, you need to add FAQs to an existing or new VA. If you have not created a VA, refer to [Building a Virtual Assistant](https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/).
-
-To open the Knowledge Graph builder, follow the below steps:
+To generate a Knowledge Graph, you need to add FAQs to an existing or new VA. To open the Knowledge Graph builder, follow the below steps:
 
 1. Log in to the XO Platform and open the VA to which you want to add the Knowledge Graph.
 2. Select the **Build** tab from the top menu.
@@ -62,7 +60,7 @@ The next step is to add Knowledge Graph Intents which can be either:
 
 ### Add FAQs
 
-Using this option, you can add relevant question-answer sets to the nodes in the hierarchy. Note that there is a limit  of 50k FAQs over 20k nodes to avoid performance issues. [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/managing-faqs/).
+Using this option, you can add relevant question-answer sets to the nodes in the hierarchy. Note that there is a limit  of 50k FAQs over 20k nodes to avoid performance issues. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/manage-faqs/" target="_blank">Learn more</a>.
 
 ### Run a Task
 
@@ -79,11 +77,11 @@ To leverage the capabilities of the Knowledge Graph and dialog tasks, and handle
 
 ### Manage Traits, Synonyms, and Stop Words
 
-You can improve the performance of your Knowledge Graph by adding tags, synonyms, traits, and more. [Refer here](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/) to know more.
+You can improve the performance of your Knowledge Graph by adding tags, synonyms, traits, and more. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-training/" target="_blank">Learn more</a>.
 
 ### Manage Variable Namespaces
 
-**Manage Variable Namespaces** section (introduced in v8.0) allows you to associate the Variable Namespaces to use with this Knowledge Graph. This option is visible only when the Variable Namespace is enabled for the VA. For more information, refer to [Managing Namespace](https://developer.kore.ai/docs/bots/bot-settings/bot-management/managing-namespace/).
+**Manage Variable Namespaces** section (introduced in v8.0) allows you to associate the Variable Namespaces to use with this Knowledge Graph. This option is visible only when the Variable Namespace is enabled for the VA. For more information, refer to <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/managing-namespace/" target="_blank">Managing Namespace</a>.
 
 <img src="../images/variable-namespaces-select.png" alt="variable namespaces select" title="variable namespaces select" style="border: 1px solid gray; zoom:75%;">
 
@@ -121,7 +119,7 @@ You can move one or more Intent and Response sets between nodes in your Knowledg
 
 1. On the nodes hierarchy from the left pane, hover over the term/node you want to edit.
 2. Click the **Settings** (gear) icon. The settings window opens.
-3. You can change the name of the term, set the term types, set the term status, add traits, add or remove synonyms, and manage context. [Learn more](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/). 
+3. You can change the name of the term, set the term types, set the term status, add traits, add or remove synonyms, and manage context. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-training/" target="_blank">Learn more</a>. 
 
     <img src="../images/term-settings.png" alt="term settings" title="term settings" style="border: 1px solid gray; zoom:75%;">
 

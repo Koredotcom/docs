@@ -143,7 +143,7 @@ The structure of the Webhook URL of the first instance varies from any additiona
   <tr>
    <td>host_url
    </td>
-   <td>Your Kore.ai Bots Platform URL.
+   <td>Your XO Platform URL.
    </td>
   </tr>
   <tr>

@@ -4,7 +4,7 @@ The XO Platform allows you to declare and use variables within the assistants yo
 
 In this use case, we will explore a scenario in a Travel Planning Assistant, where variables can be used, and see how Content Variables can be used to pass language-specific messages.
 
-For details on what Variables are and how they are implemented in the XO Platform, click <a href="https://developer.kore.ai/docs/bots/bot-settings/bot-management/using-bot-variables/" target="_blank">here</a>. 
+For details on what Variables are and how they are implemented in the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/variables/using-bot-variables/" target="_blank">here</a>. 
 
 For a use case with Global Variables, click <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/deploy-the-assistant/use-global-variables/" target="_blank">here</a>.
 

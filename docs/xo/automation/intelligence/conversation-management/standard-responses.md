@@ -145,7 +145,7 @@ var indexArray = ['a', 'b', 'c',
     print(JSON.stringify(message));
 ```
 
-<ol start="7"><li>Using the <code>getChoices()</code> function, you can also customize the <b>response display format</b> using the <a href="https://developer.kore.ai/docs/bots/sdks/message-templates/">message formatting templates</a>. When the <code>getChoices()</code> function is called and there is an ambuguity, the platform returns the ambiguous choices information as an array which can be used to present the options to the end users.
+<ol start="7"><li>Using the <code>getChoices()</code> function, you can also customize the <b>response display format</b> using the <a href="https://docsinternal-kore.github.io/docs/xo/web-mobile-SDK-message-formatting-and-templates/">message formatting templates</a>. When the <code>getChoices()</code> function is called and there is an ambuguity, the platform returns the ambiguous choices information as an array which can be used to present the options to the end users.
 
 For example, to display the standard response for <i>Did you mean</i> in a button format, you can use the following code:
 
@@ -945,7 +945,7 @@ This message is displayed when <em>Hold and Resume</em> are set to <em>Allow the
    </td>
    <td>This response is displayed when the end-user authorization or re-authorization is requested.
 <p>
-The Authorization URL required for obtaining the user’s authorization is dynamically appended to the messages defined in the Simple mode. For defining the message in Advanced Mode, you can use the <code>koreUtil.getCurrentOptions()</code> function to retrieve the Authorization URL and use it as part of the message. <a href="https://developer.kore.ai/docs/bots/advanced-topics/koreutil-libraries/#koreUtilgetCurrentOptions">Know more</a>
+The Authorization URL required for obtaining the user’s authorization is dynamically appended to the messages defined in the Simple mode. For defining the message in Advanced Mode, you can use the <code>koreUtil.getCurrentOptions()</code> function to retrieve the Authorization URL and use it as part of the message. <a href="https://docsinternal-kore.github.io/docs/xo/apis/koreutil-libraries/#koreutilgetcurrentoptions">Know more</a>
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">

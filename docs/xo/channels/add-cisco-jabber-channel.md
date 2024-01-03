@@ -46,7 +46,7 @@ Below is the response message from the bot that must be accepted by the POST URL
 
 ## Webhook Payload
 
-Below is the Webhook payload format to post messages to the Kore.ai Bots Platform from Jabber.
+Below is the Webhook payload format to post messages to the XO Platform from Jabber.
 
 ```
 {
