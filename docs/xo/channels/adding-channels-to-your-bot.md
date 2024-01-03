@@ -87,32 +87,32 @@ Click the icon of the channel you want to add, and then configure the channel to
   <tr>
    <td><a href="../add-genesys-chat-channel" target="_blank">Genesys Cloud CX Messaging</a>
       <p>
-      <a href="../add-genesys-chat-channel" target="_blank"><img src="../images/logo5-genesys-chat-new-logo"></a>
+      <a href="../add-genesys-chat-channel" target="_blank"><img src="../images/logo5-genesys-chat-new-logo.png"></a>
    </td>
 
    <td><a href="../add-google-business-messaging-channel" target="_blank">Google Business Messaging</a>
       <p>
-      <a href="../add-google-business-messaging-channel" target="_blank"><img src="../images/logo6-gbm"></a>
+      <a href="../add-google-business-messaging-channel" target="_blank"><img src="../images/logo6-gbm.png"></a>
    </td>
 
    <td><a href="../add-google-chat" target="_blank">Google Chat</a>
       <p>
-      <a href="../add-google-chat" target="_blank"><img src="../images/logo7-google-chat"></a>
+      <a href="../add-google-chat" target="_blank"><img src="../images/logo7-google-chat.png"></a>
    </td>
 
    <td><a href="../add-kore-channel" target="_blank">Kore.ai</a>
       <p>
-      <a href="../add-kore-channel" target="_blank"><img src="../images/logo8-kore-ai"></a>
+      <a href="../add-kore-channel" target="_blank"><img src="../images/logo8-kore-ai.png"></a>
    </td>
 
    <td><a href="../add-live-person-channel" target="_blank">Live Person</a>
       <p>
-      <a href="../add-live-person-channel" target="_blank"><img src="../images/logo9-live-person"></a>
+      <a href="../add-live-person-channel" target="_blank"><img src="../images/logo9-live-person.png"></a>
    </td>
   </tr>
   
   <tr>
-   <td><a href="../add-mattermost-channel" target="_blank">Mattermost<p><img src="../images/logo10-mattermost"></a>
+   <td><a href="../add-mattermost-channel" target="_blank">Mattermost<p><img src="../images/logo10-mattermost.png"></a>
    <p>
 
    </td>
