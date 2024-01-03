@@ -4,9 +4,7 @@ The XO Platform’s Knowledge Graph (KG) helps you turn your static FAQ text int
 
 Additionally, you can opt for the LLM-based Few-Shot Knowledge Graph, which requires no ontology and reduces maintenance and training requirements. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-terminology/" target="_blank">Learn more</a>.
 
-To generate a Knowledge Graph, you need to add FAQs to an existing or new VA. If you have not created a VA, refer to [Building a Virtual Assistant](https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/)
-
-To open the Knowledge Graph builder, follow the below steps:
+To generate a Knowledge Graph, you need to add FAQs to an existing or new VA. To open the Knowledge Graph builder, follow the below steps:
 
 1. Log in to the XO Platform and open the VA to which you want to add the Knowledge Graph.
 2. Select the **Build** tab from the top menu.
