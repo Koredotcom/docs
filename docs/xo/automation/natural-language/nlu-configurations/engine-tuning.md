@@ -617,7 +617,7 @@ To address this issue, you can prevent misclassifications by activating the **No
 
 For example, for an Airlines VA, an Intent “Book Flight Ticket” is mapped. If a customer requests to “Book a Movie Ticket” the ML tries to associate the closest intent “Book Flight Ticket” (wrong intent) as the successful intent and triggers it. This error can be eliminated by enabling the None intent.
 
-Adding an extra _None_ _Intent_ ensures classifying random input to these intents in the VA. Once enabled, the ML Model is tuned to identify these none intents when a user utterance contains the words that are not used in the VA’s training. i.e., bot vocabulary. You can define the None Intent for the Linked Bots in a Universal Bot. For more information, see <a href="https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/creating-a-universal-bot/" target="_blank">Creating a Universal Bot</a> article.
+Adding an extra _None_ _Intent_ ensures classifying random input to these intents in the VA. Once enabled, the ML Model is tuned to identify these none intents when a user utterance contains the words that are not used in the VA’s training. i.e., bot vocabulary. You can define the None Intent for the Linked Bots in a Universal Bot. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/universal-bots/creating-a-universal-bot/" target="_blank">Creating a Universal Bot</a> article.
 
 ### Externalization of the ML Engine
 
@@ -826,7 +826,7 @@ The **Precedence for Intents with Ambiguous Entities** configuration setting all
 
 Bot designers can customize the flow on how the bot should respond when a user input results in an ambiguous entity with an intent by choosing the following options:
 
-* **Use Precedence** – Uses the **Instance Properties** setting specific to each entity, rather than global EoI/IoE settings. Applies to all Entity types except *String* and *Description* nodes. <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-entity-node/#Instance_Properties" target="_blank">Learn more</a>.
+* **Use Precedence** – Uses the **Instance Properties** setting specific to each entity, rather than global EoI/IoE settings. Applies to all Entity types except *String* and *Description* nodes. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-entity-node/#instance-properties" target="_blank">Learn more</a>.
 * **Intent over Entity**–  Terminates the ongoing intent automatically by initiating a new dialog task. For example: If a customer intends to place an order and during the interaction changes their intent and requests to edit the order, the system terminates the ongoing intent (_place order_) and initiates a new intent (_edit order_).
 
     <div class="admonition note">
@@ -836,7 +836,7 @@ Bot designers can customize the flow on how the bot should respond when a user i
 
 * **Entity over Intent**– Completes the ongoing dialog task normally once the user resolves the ambiguity in the intent. This option considers the customer input as an entity value, and allows the dialog task to progress to the next node. For example: If a customer intends to place an order and during the interaction changes their intent and requests to edit the order, the system continues with the ongoing intent to place the order.
 
-    When the user’s input for an entity consists of a valid value for the entity and another intent, you can control the experience by choosing between **Intent Over Entity** or **Entity Over Intent** options. <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-entity-node/#The_User_Input_Flow" target="_blank">Learn more</a>.
+    When the user’s input for an entity consists of a valid value for the entity and another intent, you can control the experience by choosing between **Intent Over Entity** or **Entity Over Intent** options. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-entity-node/#the-user-input-flow" target="_blank">Learn more</a>.
 
 ### Prefer Only the First Pattern Match in a Sentence
 
