@@ -71,16 +71,16 @@ kr-grid[type="g1"] .glightbox{
 }
 kr-grid[type="g1"] kr-grid-title{
     display: block;
-    font-weight: 700;
+    font-weight: 600;
     margin: 15px 0px 0px 0px;
     color: #0000008a;
     font-size: 18px;
-    align-items: center;
+    align-content: center;
 }
 kr-grid[type="g1"] kr-grid-desc{
     display: block;
     margin-bottom: 10px;
-    align-items: center;
+    align-content: center;
 }
 /* kr grid g1 end*/
 
