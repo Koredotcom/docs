@@ -97,7 +97,7 @@ Click the icon of the channel you want to add, and then configure the channel to
 
    <td><a href="../add-google-chat" target="_blank">Google Chat</a>
       <p>
-      <a href="../add-google-chat" target="_blank"><img src="../images/logo7-google-chat.png" style="zoom:50%;"></a>
+      <a href="../add-google-chat" target="_blank"><img src="../images/logo7-google-chat.png"></a>
    </td>
 
    <td><a href="../add-kore-channel" target="_blank">Kore.ai</a>
@@ -112,176 +112,265 @@ Click the icon of the channel you want to add, and then configure the channel to
   </tr>
   
   <tr>
-   <td><a href="../add-mattermost-channel" target="_blank">Mattermost</a>
-      <p>
-      <a href="../add-mattermost-channel" target="_blank"><img src="../images/logo10-mattermost.png"></a>
-   </td>
+   <td><a href="../add-mattermost-channel" target="_blank">Mattermost<p><img src="../images/logo10-mattermost.png"></a>
+   <p>
 
-   <td><a href="../add-microsoft-teams-channel" target="_blank">Microsoft Teams</a>
-      <p>
-      <a href="../add-microsoft-teams-channel" target="_blank"><img src="../images/logo11-ms-teams.png"></a>
    </td>
+   <td><a href="../adding-the-microsoft-teams-channel" target="_blank">Microsoft Teams</a>
+<p>
 
-   <td><a href="../add-naver-works-channel" target="_blank">Naver Works</a>
-      <p>
-      <a href="../add-naver-works-channel" target="_blank"><img src="../images/logo12-naver.png"></a>
+
+<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image14.png" width="" alt="alt_text" title="image_tooltip">
+
    </td>
+   <td><a href="../adding-the-naver-works-channel" target="_blank">Naver Works</a>
+<p>
 
-   <td><a href="../add-nice-incontact-channel" target="_blank">Nice inContact</a>
-      <p>
-      <a href="../add-nice-incontact-channel" target="_blank"><img src="../images/logo13-nice.png"></a>
+
+<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image15.png" width="" alt="alt_text" title="image_tooltip">
+
    </td>
+   <td><a href="../adding-nice-incontact-as-a-channel" target="_blank">Nice inContact</a>
+<p>
 
-   <td><a href="../add-google-rcs-channel" target="_blank">RCS Business Messaging</a>
-      <p>
-      <a href="../add-google-rcs-channel" target="_blank"><img src="../images/logo14-rcs.png"></a>
+
+<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image16.png" width="" alt="alt_text" title="image_tooltip">
+
+   </td>
+   <td><a href="../rcs-business-messaging/">RCS Business Messaging</a>
+<p>
+
+
+<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image17.png" width="" alt="alt_text" title="image_tooltip">
+
    </td>
   </tr>
-
   <tr>
-   <td><a href="../add-ringcentral-glip-channel" target="_blank">Glip by RingCentral</a>
-      <p>
-      <a href="../add-ringcentral-glip-channel" target="_blank"><img src="../images/logo15-glip.png"></a>
-   </td>
+   <td><a href="../adding-ringcentral-glip-channel" target="_blank">Glip by RingCentral</a>
+<p>
 
-   <td><a href="../add-ringcentral-engage-channel" target="_blank">Ringcentral Engage</a>
-      <p>
-      <a href="../add-ringcentral-engage-channel" target="_blank"><img src="../images/logo16-ring-central.png"></a>
-   </td>
 
-   <td><a href="../add-skype-business-channel" target="_blank">Skype for Business</a>
-      <p>
-      <a href="../add-skype-business-channel" target="_blank"><img src="../images/logo17-skype-business.png"></a>
-   </td>
+<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-   <td><a href="../add-slack-channel" target="_blank">Slack</a>
-      <p>
-      <a href="../add-slack-channel" target="_blank"><img src="../images/logo18-slack.png"></a>
-   </td>
 
+<img src="images/image18.png" width="" alt="alt_text" title="image_tooltip">
+
+   </td>
+   <td><a href="../add-ringcentral-engage-as-a-channel" target="_blank">Ringcentral Engage</a>
+<p>
+
+
+<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image19.png" width="" alt="alt_text" title="image_tooltip">
+
+   </td>
+   <td><a href="../adding-the-skype-for-business-channel" target="_blank">Skype for Business</a>
+<p>
+
+
+<p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image20.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image20.png" width="" alt="alt_text" title="image_tooltip">
+
+   </td>
+   <td><a href="../adding-the-slack-channel" target="_blank">Slack</a>
+<p>
+
+
+<p id="gdcalert21" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image21.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image21.png" width="" alt="alt_text" title="image_tooltip">
+
+   </td>
    <td>
    </td>
   </tr>
-  
   <tr>
-   <td><a href="../add-sunshine-conversations-channel" target="_blank">Sunshine Conversations</a>
-      <p>
-      <a href="../add-sunshine-conversations-channel" target="_blank"><img src="../images/logo19-sunshine-conversations.png"></a>
-   </td>
+   <td><a href="../adding-the-sunshine-conversations-channel" target="_blank">Sunshine Conversations</a>
+<p>
 
-   <td><a href="../add-syniverse-channel" target="_blank">Syniverse</a>
-      <p>
-      <a href="../add-syniverse-channel" target="_blank"><img src="../images/logo20-syniverse.png"></a>
-   </td>
 
-   <td><a href="../add-unblu-channel" target="_blank">Unblu</a>
-      <p>
-      <a href="../add-unblu-channel" target="_blank"><img src="../images/logo21-unblu.png"></a>
-   </td>
+<p id="gdcalert22" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image22.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert23">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-   <td><a href="../add-whatsapp-business-channel" target="_blank">WhatsApp Business Messaging</a>
-      <p>
-      <a href="../add-whatsapp-business-channel" target="_blank"><img src="../images/logo22-whatsapp-business.png"></a>
+
+<img src="images/image22.png" width="" alt="alt_text" title="image_tooltip">
+
+   </td>
+   <td><a href="../add-the-syniverse-channel" target="_blank">Syniverse</a>
+<p>
+
+
+<p id="gdcalert23" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image23.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert24">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image23.png" width="" alt="alt_text" title="image_tooltip">
+
+   </td>
+   <td><a href="../adding-the-unblu-channel" target="_blank">Unblu</a>
+<p>
+
+
+<p id="gdcalert24" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image24.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert25">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image24.png" width="" alt="alt_text" title="image_tooltip">
+
+   </td>
+   <td><a href="../adding-the-whatsapp-business-messaging-channel" target="_blank">WhatsApp Business Messaging</a>
+<p>
+
+
+<p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image25.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image25.png" width="" alt="alt_text" title="image_tooltip">
+
    </td>
    <td>
    </td>
   </tr>
-
   <tr>
-   <td><a href="../add-workplace-by-facebook-channel" target="_blank">Workplace By Facebook</a>
-      <p>
-      <a href="../add-workplace-by-facebook-channel" target="_blank"><img src="../images/logo23-wp-facebook.png"></a>
-   </td>
-   
-   <td><a href="../add-microsoft-yammer-channel" target="_blank">Yammer</a>
-      <p>
-      <a href="../add-microsoft-yammer-channel" target="_blank"><img src="../images/logo24-yammer.png"></a>
-   </td>
+   <td><a href="../adding-the-workplace-by-facebook-channel" target="_blank">Workplace By Facebook</a>
+<p>
 
-   <td><a href="../add-zoom-contact-center-channel" target="_blank">Zoom Contact Center</a>
-      <p>
-      <a href="../add-zoom-contact-center-channel" target="_blank"><img src="../images/logo25-zoom.png"></a>
-   </td>
 
+<p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image26.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image26.png" width="" alt="alt_text" title="image_tooltip">
+
+   </td>
+   <td><a href="../adding-the-yammer-channel" target="_blank">Yammer</a>
+<p>
+
+
+<p id="gdcalert27" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image27.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image27.png" width="" alt="alt_text" title="image_tooltip">
+
+   </td>
+   <td><a href="../adding-the-zoom-contact-center-channel" target="_blank">Zoom Contact Center</a>
+<p>
+
+
+<p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image28.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image28.png" width="" alt="alt_text" title="image_tooltip">
+
+   </td>
    <td>
    </td>
-
    <td>
    </td>
   </tr>
-
   <tr>
    <td colspan="4" ><strong>Social Channels</strong>
    </td>
-
    <td>
    </td>
   </tr>
-
   <tr>
-   <td><a href="../add-facebook-messenger-channel" target="_blank">Facebook Messenger</a>
-      <p>
-      <a href="../add-facebook-messenger-channel" target="_blank"><img src="../images/logo26-fb-messenger.png"></a>
-   </td>
+   <td><a href="../adding-the-facebook-channel" target="_blank">Facebook Messenger</a>
+<p>
 
-   <td><a href="../add-line-messenger-channel" target="_blank">Line</a>
-      <p>
-      <a href="../add-line-messenger-channel" target="_blank"><img src="../images/logo27-line.png"></a>
-   </td>
 
-   <td><a href="../add-skype-business-onpemise-channel" target="_blank">Skype</a>
-      <p>
-      <a href="../add-skype-business-onpemise-channel" target="_blank"><img src="../images/logo28-skype.png"></a>
-   </td>
+<p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image29.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-   <td><a href="../add-telegram-channel" target="_blank">Telegram</a>
-      <p>
-      <a href="../add-telegram-channel" target="_blank"><img src="../images/logo29-telegram.png"></a>
-   </td>
 
+<img src="images/image29.png" width="" alt="alt_text" title="image_tooltip">
+
+   </td>
+   <td><a href="../adding-the-line-channel" target="_blank">Line</a>
+<p>
+
+
+<p id="gdcalert30" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image30.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert31">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image30.png" width="" alt="alt_text" title="image_tooltip">
+
+   </td>
+   <td><a href="../adding-the-skype-channel" target="_blank">Skype</a>
+<p>
+
+
+<p id="gdcalert31" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image31.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert32">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image31.png" width="" alt="alt_text" title="image_tooltip">
+
+   </td>
+   <td><a href="../adding-the-telegram-channel" target="_blank">Telegram</a>
+<p>
+
+
+<p id="gdcalert32" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image32.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert33">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image32.png" width="" alt="alt_text" title="image_tooltip">
+
+   </td>
    <td>
    </td>
-
   </tr>
-
   <tr>
-   <td><a href="../add-twitter-channel" target="_blank">Twitter</a>
-      <p>
-      <a href="../add-twitter-channel" target="_blank"><img src="../images/logo30-twitter.png"></a>
-   </td>
+   <td><a href="../adding-the-twitter-channel" target="_blank">Twitter</a>
+<p>
 
-   <td><a href="../add-wechat-telegram" target="_blank">WeChat</a>
-      <p>
-      <td><a href="../add-wechat-telegram" target="_blank"><img src="../images/logo31-we-chat.png"></a>
-   </td>
 
+<p id="gdcalert33" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image33.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert34">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image33.png" width="" alt="alt_text" title="image_tooltip">
+
+   </td>
+   <td><a href="../adding-the-wechat-channel" target="_blank">WeChat</a>
+<p>
+
+
+<p id="gdcalert34" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image34.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert35">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+<img src="images/image34.png" width="" alt="alt_text" title="image_tooltip">
+
+   </td>
    <td>
    </td>
-   
    <td>
    </td>
-   
    <td>
    </td>
   </tr>
-  
   <tr>
    <td>
    </td>
-   
    <td>
    </td>
-   
    <td>
    </td>
-   
    <td>
    </td>
-   
    <td>
    </td>
   </tr>
-  
   <tr>
    <td colspan="4" ><strong>Voice Channels</strong>
    </td>
