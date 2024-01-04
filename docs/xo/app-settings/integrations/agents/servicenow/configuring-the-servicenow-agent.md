@@ -71,13 +71,13 @@ Complete the following steps to configure the ServiceNow agent for **Tokyo** and
 
     <img src="../images/configuring-the-servicenow-agent-tokyo-img6.png" alt="Basic Auth" title="Basic Auth" style="border: 1px solid gray;zoom:50%;">
 
-    * Select the **Connect Support (Supported for Tokyo and lower versions)** option.
-    * Select the **Basic Auth** option for enabling ServiceNow Agent with the Basic Authentication.
-    * **Instance URL**: The company’s URL where the ServiceNow instance is hosted. For example, the instance URL is in this format:[ https://devXXX67.service-now.com/](https://devxxx67.service-now.com/){:target="_blank"}.
-    * **User Name**: The username of your ServiceNow account.
-    * **Password**: The password of your ServiceNow account.
-    * **Queue ID**: The unique queue identification number.
-    * **Webhook URL**: The web URL for custom application function callbacks.
+    1. Select the **Connect Support (Supported for Tokyo and lower versions)** option.
+    2. Select the **Basic Auth** option for enabling ServiceNow Agent with the Basic Authentication.
+    3. **Instance URL**: The company’s URL where the ServiceNow instance is hosted. For example, the instance URL is in this format:[ https://devXXX67.service-now.com/](https://devxxx67.service-now.com/){:target="_blank"}.
+    4. **User Name**: The username of your ServiceNow account.
+    5. **Password**: The password of your ServiceNow account.
+    6. **Queue ID**: The unique queue identification number.
+    7. **Webhook URL**: The web URL for custom application function callbacks.
 
     **Option 2**: **OAuth with Refresh Token** – Follow the instructions in this [ServiceNow Documentation](https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0778194){:target="_blank"} to generate a refresh token.
 
@@ -286,7 +286,7 @@ This section helps you verify how the conversations from the Kore.ai XO Platform
 To verify the data exchange between Kore.ai’s VA and ServiceNow agent, follow these steps:
 
 1. Open a virtual assistant for which you have enabled the ServiceNow agent.
-2. Create a new Agent Transfer Node task. For example, create a _Platform Agent_task with the _UserAgent_ node and configure it to use the ServiceNow agent. For more information, see [Agent Transfer Node](../../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node){:target="_blank"}.
+2. Create a new Agent Transfer Node task. For example, create a _Platform Agent_ task with the _UserAgent_ node and configure it to use the ServiceNow agent. For more information, see [Agent Transfer Node](../../../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node){:target="_blank"}.
 
     <img src="../images/configuring-the-servicenow-agent-tokyo-img34.png" alt="new Agent Transfer Node task" title="new Agent Transfer Node task" style="border: 1px solid gray;zoom:80%;">
 

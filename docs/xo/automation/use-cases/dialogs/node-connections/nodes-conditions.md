@@ -66,7 +66,7 @@ For example, _PassengerCount (entity) greater than (operator) 5 (specified value
 
 The Context criterion allows you to compare a context object in the dialog task with a specific value. You can configure the following parameters:
 
-* Select the **Context** object you want to use. Keep in mind to follow the required syntax – see the [Context Object](https://developer.kore.ai/docs/bots/bot-builder-tool/context-object/){:target="_blank"} article for details.
+* Select the **Context** object you want to use. Keep in mind to follow the required syntax – see the [Context Object](../../../context-object/){:target="_blank"} article for details.
 * Select an **Operator** from the drop-down list: exists, does not exist, equal to, greater than or equal to, less than or equal to, not equal to, greater than, less than and contains.
 * Type the number in the **Value** field. This field is not displayed if it _exists_ or _does not exist_ and is used as operators. You can enter a static value or dynamic variable, such as context, environment, or content. To use a variable, enter the variable type (content, context, or env) followed by a dot (.) and then select the variable from the pop-up list.
 * In the **Then go to** dropdown, choose the node to connect to if the condition is met.

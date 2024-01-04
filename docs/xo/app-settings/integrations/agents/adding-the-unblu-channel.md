@@ -52,7 +52,7 @@ To learn more about working with Channels within the Kore.ai XO Platform, please
 
 For the seamless exchange of information from Unblu to Kore.ai, a few additional steps need to be performed.
 
-For a detailed document on the implementation, [refer here](https://developer.kore.ai/docs/bots/how-tos/kore-unblu-integration/){:target="_blank"}.
+For a detailed document on the implementation, [refer here](../kore-unblu-integration){:target="_blank"}.
 
 * The _host URL_ where the Unblu SDK would be hosted needs to be added to the **Domain** section of your Unblu Account.
 * From your Unblu Account, **API Keys** section, make a note of the _API Key_.

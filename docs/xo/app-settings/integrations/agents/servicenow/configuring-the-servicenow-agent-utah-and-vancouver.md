@@ -42,13 +42,13 @@ Complete the following steps to configure the ServiceNow agent for **Utah** and 
 
     <img src="../images/configuring-the-servicenow-agent-utah-and-vancouver-img2.png" alt="Basic Auth" title="Basic Auth" style="border: 1px solid gray;zoom=60%;">
 
-    * Select the **Agent Chat (Supported for Utah and higher versions)** option.
-    * Select the **Basic Auth** option for enabling ServiceNow Agent with the Basic Authentication.
-    * **Instance URL**: The company’s URL where the ServiceNow instance is hosted, for example,[ https://devXXX67.service-now.com/](https://devxxx67.service-now.com/).
-    * **User Name**: The username of your ServiceNow account.
-    * **Password**: The password of your ServiceNow account.
-    * **Queue ID**: The unique queue identification number.
-    * **Webhook URL**: The web URL for custom application function callbacks.
+    1. Select the **Agent Chat (Supported for Utah and higher versions)** option.
+    2. Select the **Basic Auth** option for enabling ServiceNow Agent with the Basic Authentication.
+    3. **Instance URL**: The company’s URL where the ServiceNow instance is hosted, for example,[ https://devXXX67.service-now.com/](https://devxxx67.service-now.com/).
+    4. **User Name**: The username of your ServiceNow account.
+    5. **Password**: The password of your ServiceNow account.
+    6. **Queue ID**: The unique queue identification number.
+    7. **Webhook URL**: The web URL for custom application function callbacks.
 
     **Option 2**: **OAuth with Refresh Token**- Follow the instructions in this [ServiceNow Documentation](https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0778194){:target="_blank"} to generate a refresh token.
 
