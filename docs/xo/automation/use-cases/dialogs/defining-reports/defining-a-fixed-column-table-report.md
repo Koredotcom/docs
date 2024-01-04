@@ -39,12 +39,12 @@ To complete the following procedure, you must have already defined a task, such 
     ![alt_text](images/image5.png "image_tooltip")
 
 10. In the **Column Name** field, enter the first column title, for example, _Task – Fixed Column Report_.
-11. In the  **Data Type** field, select one of the following data types for the information displayed in the column:
+11. In the  **Data Type** field, select one of the following data types for the information displayed in the column:  
     1. **String**
     2. **Number**
     3. **Date**
 
-12. Enable **Is a link** if the data in the column is a hyperlink. When enabled:
+12. Enable **Is a link** if the data in the column is a hyperlink. When enabled:  
     1. In the **Link Label** field, enter the JavaScript to display the text for the link, for example, `print(Name);` .
     2. In the **URL Value** field, enter the JavaScript to display the data to output when the **Link Label** is clicked, for example, `print("https://login.salesforce.com/" + Id);`
 

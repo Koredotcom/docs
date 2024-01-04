@@ -2,7 +2,7 @@
 
 In this post, we explore a Banking Bot scenario where the account-related data for a customer is stored in a Data Table. We will see how the data can be updated by a request from the user.
 
-For details on what Data Tables are and how it is implemented in the Kore.ai Bots platform, click <a href="https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/" target="_blank"> here</a>.
+For details on what Data Tables are and how it is implemented in the XO platform, click <a href="https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/" target="_blank"> here</a>.
 
 ## Problem Statement
 

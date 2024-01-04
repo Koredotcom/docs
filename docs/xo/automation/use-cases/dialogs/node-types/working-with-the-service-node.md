@@ -90,7 +90,7 @@ To configure the Component Properties tab, please follow the steps below:
 Use the Instance Properties to define any user tags that you want to set.
 
 1. On the Service node properties panel, click the **Instance Properties** tab.
-2. Under the **Custom Tags** section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automations/custom-dashboard/custom-meta-tags){:target="_blank"}.
+2. Under the **Custom Tags** section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
     <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
@@ -146,17 +146,18 @@ You can define the Service Type as:
     4. **DELETE** – Deletes the content of an existing target resource.
     5. **GET** – Returns the content of an existing target resource
 
-5. In the second field of the **Request URL**, specify the URL for the dialog task response to process at Kore.ai. For example, http://koremessenger.com/postURL. Add query or path parameters as part of the URL, if required. To use entity node values as parameters, use the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](https://developer.kore.ai/docs/bots/bot-builder-tool/context-object/){:target="_blank"}.
-    1. Optionally, click **Show Advanced**, and select
-        1 **Yes** in the **Access Using A Connector** field if access for Kore.ai assistants is using the Kore.ai connector agent. For more information, refer to [Using the Kore.ai Connector](../../../../../bot-administration/kore-ai-connector){:target="_blank"}.
-        2 **Yes** in the **De-Identification of PII Data** to redact any sensitive information types that users share with your assistants. For more information, refer to [Redacting Personally Identifiable Information](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"}
+5. In the second field of the **Request URL**, specify the URL for the dialog task response to process at Kore.ai. For example, http://koremessenger.com/postURL. Add query or path parameters as part of the URL, if required. To use entity node values as parameters, use the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../context-object){:target="_blank"}.
+    1. Optionally, click **Show Advanced**, and select  
+
+        1. **Yes** in the **Access Using A Connector** field if access for Kore.ai assistants is using the Kore.ai connector agent. For more information, refer to [Using the Kore.ai Connector](../../../../../bot-administration/kore-ai-connector){:target="_blank"}.  
+        2. **Yes** in the **De-Identification of PII Data** to redact any sensitive information types that users share with your assistants. For more information, refer to [Redacting Personally Identifiable Information](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"}
     
     2. In the **Auth** tab, select the type of authorization needed for this service node call, or define a new authorization type if needed. For more information, refer to [Setting Up Authentication](../../../../../app-settings/dev-tools/bot-authorization/bot-authentication){:target="_blank"}.
     3. In the **Headers** tab, specify the headers as key/value pairs if required to access the specified request URL.  Authentication headers are auto-generated based on the authorization type specified on the **Auth** tab. You need to define any other standard headers. For example, Content-type, Accept, or any custom headers. Headers defined here are only applicable to this service node.
     4. In the **Body** tab, select the body content type. You can select:
         * **application/x-www-form-urlencoded** – Also known as Multipart/Form-data, which is an encoding type that allows files to be sent through an HTTP POST request method if you want to allow a user to upload a file from a form. You can add key/value pairs that are encoded by the XO Platform.
         * **application/json** – Use JSON to transmit data between the Kore.ai servers and your VA’s web application. Any JSON is sent with the request without any processing.
-        * **application/xml** – For SOAP services, pass XML payload using POST methods. You can pass entity node values as part of the XML, using the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](https://developer.kore.ai/docs/bots/bot-builder-tool/context-object/){:target="_blank"}.
+        * **application/xml** – For SOAP services, pass XML payload using POST methods. You can pass entity node values as part of the XML, using the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../context-object/){:target="_blank"}.
     
     5. In the **Test Request** tab, click **Test** to optionally send your API request URL using the specified Auth type, HTTP headers, and body parameters, if defined. The response is displayed in the text area. Click **Save as Sample Response** to save the test response as the sample response for this node.
     6. Click **Save** to save the request for the service node and close the **Define Request for &lt; _Service Node Name_ >** dialog.

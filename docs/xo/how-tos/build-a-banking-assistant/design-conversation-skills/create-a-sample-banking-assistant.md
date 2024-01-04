@@ -6,7 +6,7 @@ This document helps you create a sample banking bot. This bot is used in various
 
 The following are the prerequisites:
 
-* You must have <a href="https://developer.kore.ai/docs/bots/getting-started/how-to-open-bot-builder/" target="_blank">signed up</a> with the Kore.ai Bots Platform.
+* You must have <a href="https://developer.kore.ai/docs/bots/getting-started/how-to-open-bot-builder/" target="_blank">signed up</a> with the XO Platform.
 * You must be aware of the basics concepts of bot-building (refer to <a href="https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/" target="_blank">this link</a>).
 * You must have created a simple bot (<a href="https://developer.kore.ai/docs/bots/chatbot-overview/creating-a-simple-bot/" target="_blank">refer here</a>) for an example).
 
@@ -24,7 +24,7 @@ Let us start building the bot and add _Get Balance_ task to it.
 
 This document helps you to create a Standard Bot for banking activities. To create a standard bot, follow the below steps:
 
-1. Log in to your Kore.ai Bots Platform with valid credentials.
+1. Log in to your XO Platform with valid credentials.
 2. On the bots landing page, click **New Bot** on the top-right and select **Start from Scratch** from the list.
 3. On the **Create New Bot** window, enter the bot details:
     * **Bot Name** – Provide a name to your bot. For example, _Banking Bot_. If the name is already used, provide a different name.

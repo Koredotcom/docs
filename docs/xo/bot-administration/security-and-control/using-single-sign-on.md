@@ -108,7 +108,7 @@ Consider the following scenario: A user is logged into a system that acts as an 
 
 ### Kore.ai Implementation
 
-There are two ways SAML can be used within Kore.ai Bots Platform:
+There are two ways SAML can be used within XO Platform:
 
 
 
@@ -120,7 +120,7 @@ There are two ways SAML can be used within Kore.ai Bots Platform:
 
 Enterprises can set up access to the Bot builder tool using the enterprise SSO. Bot developers and admins can log into bot builder using SSO done by the enterprise identity provider.
 
-**SSO flow from Kore.ai Bots platform**: The following is the flow within the Kore.ai Bots platform once SSO is configured using SAML:
+**SSO flow from XO Platform**: The following is the flow within the XO Platform once SSO is configured using SAML:
 
 
 

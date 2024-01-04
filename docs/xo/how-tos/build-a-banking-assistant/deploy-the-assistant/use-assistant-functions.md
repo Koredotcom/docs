@@ -2,11 +2,11 @@
 
 In this document we explore a Banking Bot scenario where Bot Functions can be used to reuse a piece of functionality. We see how the expenditure report can be programmed as a function and can be used for both Savings Account and Credit Card.
 
-For details on what Bot Functions are and how they are implemented in the Kore.ai Bots platform, click <a href="https://developer.kore.ai/docs/bots/bot-settings/bot-functions/reusing-bot-functions-custom-script-file/#Updating_Custom_Script_File" target="_blank">here</a>.
+For details on what Bot Functions are and how they are implemented in the XO platform, click <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/reusing-bot-functions-custom-script-file/#using-the-custom-script-file" target="_blank">here</a>.
 
 ## Problem Statement
 
-In our <a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/" target="_blank">Banking Bot</a>, we have a reporting task:
+In our <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">Banking Bot</a>, we have a reporting task:
 
 * Monthtly Statement which gives the monthly balance amounts for a given Account number.
 * Credit Card Statement gives an overview of the expenses for a given Credit Card.
@@ -17,8 +17,8 @@ In this document, we will see how Bot Function can be used to avoid duplication 
 ## Prerequisites
 
 * Bot building knowledge
-* A working bot. We will be using the Banking Bot from <a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/" target="_blank">here</a>.
-* Following is the Script file with two functions using the message templates to display the data (see here for more on <a href="https://developer.kore.ai/docs/bots/sdks/message-templates/" target="_blank">message templates</a>:
+* A working bot. We will be using the Banking Bot from <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">here</a>.
+* Following is the Script file with two functions using the message templates to display the data (see here for more on <a href="https://docsinternal-kore.github.io/docs/xo/web-mobile-SDK-message-formatting-and-templates/" target="_blank">message templates</a>:
     * _tableTemplate_: takes an two-dimensional array and displays the content in a tabular format
     * _pieTemplate_: takes an two-dimensional array and displays the content in a pie format
 

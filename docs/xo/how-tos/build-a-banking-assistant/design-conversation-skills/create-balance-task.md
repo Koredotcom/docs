@@ -4,7 +4,7 @@ This is document details steps in creating a sample banking bot. This bot is use
 
 ## Prerequisites
 <ul>
-<li>You must have <a href="https://developer.kore.ai/docs/bots/getting-started/how-to-open-bot-builder/" target="_blank">signed up</a> with the Kore.ai Bots Platform.</li>
+<li>You must have <a href="https://developer.kore.ai/docs/bots/getting-started/how-to-open-bot-builder/" target="_blank">signed up</a> with the XO Platform.</li>
 <li>You must be aware of the basics of Bot building (refer to <a href="https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/" target="_blank">this </a>link).</li>
 <li>You must have created a simple bot (click<a href="https://developer.kore.ai/docs/bots/chatbot-overview/creating-a-simple-bot/" target="_blank"> here</a> for an example).</li>
 <li>You must have created a Banking Bot with Get Balance task (click<a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank"> here</a> for example).</li>
@@ -162,7 +162,7 @@ Script Node allows you to incorporate programming logic into the bot and is part
 
 ```js
 var balance, i;
-<pre class="prettyprint">for (i=0; i &lt; context.GetAccountBalance.response.body.length; i++ )
+<pre class="prettyprint">for (i=0; i < context.GetAccountBalance.response.body.length; i++ )
 { if (context.GetAccountBalance.response.body[i].AccountType == context.entities.AccountType)
    { balance = parseFloat(context.GetAccountBalance.response.body[i].Balance);
    }

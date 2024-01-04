@@ -55,7 +55,7 @@ Context management involves the following steps:
 
 ### Output Context
 
-**Context Tags** are generated and stored in the **context object** to be used for managing the assistant’s behavior and user experience. The Platform creates a context object for every user intent, like dialog tasks and FAQs. ([Refer here for more on Context Object](https://developer.kore.ai/docs/bots/bot-builder-tool/context-object/)).
+**Context Tags** are generated and stored in the **context object** to be used for managing the assistant’s behavior and user experience. The Platform creates a context object for every user intent, like dialog tasks and FAQs. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/context-object/" target="_blank">Learn more</a>.
 
 **Default Contexts Tags**
 
@@ -143,7 +143,7 @@ Contextual intent detection helps in detecting relevant intents using the output
 
 #### Tasks
 
-You can define _Rules_ for identifying contextually relevant intents by using output context tags the same as traits ([Learn more](https://developer.kore.ai/docs/bots/nlp/traits/)).
+You can define _Rules_ for identifying contextually relevant intents by using output context tags the same as traits <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/traits/" target="_blank">Learn more</a>.
 
 #### Knowledge Graph
 

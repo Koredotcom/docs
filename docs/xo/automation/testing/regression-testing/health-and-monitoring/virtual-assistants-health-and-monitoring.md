@@ -1,10 +1,8 @@
-# Health and Monitoring
+# Virtual Assistant Health and Monitoring
 
 The **Health and Monitoring** dashboard offers a goal-driven approach to improving the accuracy of the virtual assistant’s Natural Language Processing (NLP) model. The training data is analyzed along with the test coverage and test results of the test suites to provide insights into the NLP Model’s performance.
 
 This dashboard lets you achieve the following:
-
-
 
 * Run the test suites against the in-development version of the bot to see the Virtual Assistant’s health.
 * Review the test execution summary for every intent type.
@@ -277,7 +275,7 @@ table, th, td {
   <tr>
    <td><strong>Parent Intent</strong>
    </td>
-   <td><a href="https://developer.kore.ai/docs/bots/bot-intelligence/sub-intents-and-follow-up-intents/" target="_blank">Learn more</a>.
+   <td><a href="../../../../intelligence/sub-intents-and-follow-up-intents" target="_blank">Learn more</a>.
    </td>
    <td>Yes
    </td>

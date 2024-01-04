@@ -35,7 +35,7 @@ Follow the below steps to register your Agent Transfer app:
     
         The registration app you create is based on the **Callback URL** applicable to all tasks for the VA. While each task can have unique SDK configurations, the Callback URL is the same. Create separate VAs for separate application Callback URLs for live agent transfers.
 
-6. Under the **PII Data** section, define how _sensitive information_ should be handled. If there is a need to share unmasked data when an agent session is in progress, even when [PII redaction is enabled](https://docsinternal-kore.github.io/docs/xo/app-settings/advanced-settings/pii-data-masking){:target="_blank"}, select the **Do not mask and send original data to Agent BotKit**. Else, go with the default setting of **Mask and send sensitive data to Agent BotKit**.
+6. Under the **PII Data** section, define how _sensitive information_ should be handled. If there is a need to share unmasked data when an agent session is in progress, even when [PII redaction is enabled](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"}, select the **Do not mask and send original data to Agent BotKit**. Else, go with the default setting of **Mask and send sensitive data to Agent BotKit**.
 7. Under the **Access Using a Connector** section, indicate if your URL is behind a firewall and a _Connector_ has to be used.
 8. Click **Save**.
 
@@ -47,7 +47,7 @@ Follow the below steps to register your Agent Transfer app:
 For details on managing  the API integration, please see the following articles:
 
 1. [Enabling Agent Transfer API](https://developer.kore.ai/docs/bots/api-guide/enabling-agent-transfer-api/){:target="_blank"}
-2. [Configuring Agent Transfer](https://developer.kore.ai/docs/bots/how-tos/how-to-configure-agent-transfer/){:target="_blank"}
+2. [Configuring Agent Transfer](../../../../../app-settings/integrations/agents/how-to-configure-agent-transfer){:target="_blank"}
 3. [BotKit SDK Tutorial – Agent Transfer](https://developer.kore.ai/docs/bots/sdks/botkit-sdk-tutorial-agent-transfer/){:target="_blank"}
 
 
@@ -69,8 +69,8 @@ Setting up an Agent Transfer node in a dialog task involves the following steps:
 
 1. Enter a **Name** and **Display Name** for the node. For example, _LiveAgent_.
 2. In the **Containment Type** section, choose the following options:
-    1. **Mark as Agent Transfer** –  To hand-off conversations to an agent when the VA is configured to transfer the conversation session to an agent transfer integration or custom integration. Indicates that the conversation was transferred to a live agent using the Agent Transfer node in the Dialog Flow. [Learn more](https://developer.kore.ai/integrations/agent-transfer-integrations/){:target="_blank"}.
-    2. **Mark as Self Service** – To mark conversations as self-service when the session reaches this node. Indicates that the conversation (initiated by the user) with a VA was successfully completed or informs that VA is not trained to handle a user’s request. [Learn more](../../../../../analytics/automations/conversations-history/#conversations-history-dashboard){:target="_blank"}.
+    1. **Mark as Agent Transfer** –  To hand-off conversations to an agent when the VA is configured to transfer the conversation session to an agent transfer integration or custom integration. Indicates that the conversation was transferred to a live agent using the Agent Transfer node in the Dialog Flow. [Learn more](../../../../../app-settings/integrations/agents/agent-transfer-integrations){:target="_blank"}.
+    2. **Mark as Self Service** – To mark conversations as self-service when the session reaches this node. Indicates that the conversation (initiated by the user) with a VA was successfully completed or informs that VA is not trained to handle a user’s request. [Learn more](../../../../../analytics/automation/conversations-history/#conversations-history-dashboard){:target="_blank"}.
 
         <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
@@ -106,7 +106,7 @@ Setting up an Agent Transfer node in a dialog task involves the following steps:
 
 This is where you can configure the instance specific fields for this agent transfer node. These are applicable only for this instance and will not affect this agent transfer node being used in any other dialog.
 
-For Agent Transfer node instances, you can configure tags to build custom profiles of your VAs conversations. Read more about [Custom Tags](../../../../../analytics/automations/custom-dashboard/custom-meta-tags){:target="_blank"}.
+For Agent Transfer node instances, you can configure tags to build custom profiles of your VAs conversations. Read more about [Custom Tags](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
 <p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 

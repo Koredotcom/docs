@@ -1,6 +1,6 @@
 # Defining a Weather Info Report
 
-While you can configure a standard Kore.ai alert to provide an alert message to a user with, for example, a weather report for the day, or daily tide report. But what if the user wants a 3-day or 10-day forecast? That’s a lot of data to push into a single message. With the Kore.ai Bots Platform, you can define a link in your message that can display the weather data in a formatted table that your end-user can retrieve when needed.
+While you can configure a standard Kore.ai alert to provide an alert message to a user with, for example, a weather report for the day, or daily tide report. But what if the user wants a 3-day or 10-day forecast? That’s a lot of data to push into a single message. With the XO Platform, you can define a link in your message that can display the weather data in a formatted table that your end-user can retrieve when needed.
 The weather info report type can be displayed as a link in a weather alert message as shown in the following illustration for the report called Get 3 Day Forecast.
 
 <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
@@ -39,12 +39,12 @@ To complete the following procedure, you must have already defined a task, such 
     ![alt_text](images/image5.png "image_tooltip")
 
 10. In the **Column Name** field, enter the first column title, for example, _Get 3 Day Forecast_.
-11. In the  **Data Type** field, select one of the following data types for the information displayed in the column:
+11. In the  **Data Type** field, select one of the following data types for the information displayed in the column:  
     1. **String**
     2. **Number**
     3. **Date**
 
-12. Enable **Is a link** if the data in the column is a hyperlink. When enabled:
+12. Enable **Is a link** if the data in the column is a hyperlink. When enabled:  
     1. In the **Link Label** field, enter the JavaScript to display the text for the link, for example, `print(Name);` .
     2. In the **URL Value** field, enter the JavaScript to display the data to output when the **Link Label** is clicked, for example, `print("https://login.salesforce.com/" + Id);`
 

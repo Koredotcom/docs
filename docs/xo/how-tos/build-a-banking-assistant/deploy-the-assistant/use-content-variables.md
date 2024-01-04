@@ -1,16 +1,16 @@
 # Use Content Variables
 
-Kore.ai bots platform provides a way to declare and use variables within the bot. These variables can be used to capture values that are commonly used by different tasks, nodes, and other bot elements.
+XO platform provides a way to declare and use variables within the bot. These variables can be used to capture values that are commonly used by different tasks, nodes, and other bot elements.
 
 In this How-To, we will explore a scenario in a Banking Bot, where Bot Variables can be used. We will see how Content Variables can be used to pass language-specific messages.
 
-For details on what Bot Variables are and how they are implemented in the XO platform, click <a href="https://developer.kore.ai/docs/bots/bot-settings/bot-management/using-bot-variables/" target="_blank">here</a>. 
+For details on what Bot Variables are and how they are implemented in the XO platform, click <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/variables/using-bot-variables/" target="_blank">here</a>. 
 
-For a use case with Global Variables, click <a href="https://developer.kore.ai/docs/bots/how-tos/how-to-use-content-variables/" target="_blank">here</a>.
+For a use case with Global Variables, click <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/deploy-the-assistant/use-global-variables/" target="_blank">here</a>.
 
 ## Problem Statement
 
-In our <a href="https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/" target="_blank">Banking Bot</a>, we welcome users when they connect to the Bot. The bot is multilingual and we want the messages to be in the appropriate user language.
+In our <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">Banking Bot</a>, we welcome users when they connect to the Bot. The bot is multilingual and we want the messages to be in the appropriate user language.
 
 In this document, we will see how Content Variable can be used to store the message in multiple languages.
 

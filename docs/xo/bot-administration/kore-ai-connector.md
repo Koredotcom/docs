@@ -1,6 +1,6 @@
 # Kore.ai Connector
 
-On the **Kore.ai Connector** page, in the **Security & Control** module of the Bots Admin Console, you can download and configure the Kore.ai Connector Agent for Bots within your secure company intranet to provide secure communications between the Kore.ai Bots platform in the cloud and your network.
+On the **Kore.ai Connector** page, in the **Security & Control** module of the Bots Admin Console, you can download and configure the Kore.ai Connector Agent for Bots within your secure company intranet to provide secure communications between the XO Platform in the cloud and your network.
 
 
 ## Why Kore.ai Connector?
@@ -58,7 +58,7 @@ When started, the Kore.ai Connector Agent initiates a persistent SSL connection 
 
 ## Installing
 
-This topic describes how to install and configure the Kore.ai Connector Agent for Kore.ai Bots that you can use to securely connect the cloud-based Kore.ai Bots platform to your on-premises applications in your company Intranet.
+This topic describes how to install and configure the Kore.ai Connector Agent for Kore.ai Bots that you can use to securely connect the cloud-based XO Platform to your on-premises applications in your company Intranet.
 
 **Prerequisites**
 

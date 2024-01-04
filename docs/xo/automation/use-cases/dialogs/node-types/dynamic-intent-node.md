@@ -114,7 +114,7 @@ In this section, you can add Custom Meta Tags to the conversation flow to profil
 * User – Define custom tags to be added to the user’s profile information.
 * Session – Define custom tags to be added to the current conversation session.
 
-For more information on custom tags, see [Custom Meta Tags](../../../../../analytics/automations/custom-dashboard/custom-meta-tags){:target="_blank"}.
+For more information on custom tags, see [Custom Meta Tags](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
 
 ### Connections Properties

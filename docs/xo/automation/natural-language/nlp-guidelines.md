@@ -90,7 +90,7 @@ The following are some general guideline for creating intent patterns:
 * Don’t use special characters such as () & / \ $ [ ] + *.
 * Don’t use punctuation such as – , . ! ? ‘ “.
 
-For a quick guide towards the usage of patterns, refer to [How to use Patterns](https://developer.kore.ai/docs/bots/how-tos/how-to-use-patterns-for-intents-entities/).
+For a quick guide towards the usage of patterns, refer to <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/" target="_blank">How to use Patterns</a>.
 
 ### Pattern Operators
 
@@ -156,7 +156,7 @@ _ToFlight_ & _FromFlight_ are captured from user utterance _change flight  from 
 * **Pattern**: ~concept *n – pattern built using concepts. 
 pattern for entity ToFlight–  _to *1_ the pattern for entity FromFlight –  _~from *1_, where _from_ is a concept as (using) (from) _ToFlight_ & _FromFlight_ are captured from user utterance _change flight from XYZ321 to ABC123_ and _change flight  to ABC123 using XYZ321_ but not from _change flight for ABC123 using XYZ321._
 
-For more information on how to add patterns, refer to [Managing Patterns](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Patterns_and_Rules).
+For more information on how to add patterns, refer to <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#manage-patterns-and-rules" target="_blank">Manage Patterns</a>.
 
 ### Negative Patterns
 
@@ -214,7 +214,7 @@ A match between the user input and synonym for entity (only for List of Values a
 <p>Synonyms can be added to identify intents as well as entities. Entity identification is triggered only after an Intent is identified.</p>
 </div>
 
-For more information on how to add synonyms, refer to [Managing Synonyms](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Synonyms).
+For more information on how to add synonyms, refer to <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#manage-synonyms" target="_blank">Managing Synonyms</a>.
 
 ## Concepts
 
@@ -247,7 +247,7 @@ Examples of invalid concepts names:
 
 You can also define custom concepts using emojis.
 
-For more information, refer to [Custom Concepts](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Concepts).
+For more information, refer to <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#manage-concepts" target="_blank">Custom Concepts</a>.
 
 ## Standard Responses
 
