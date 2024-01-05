@@ -23,11 +23,7 @@ To get started, go to the XO Platform and select the VA that you want to add the
 
     !!! Note
 
-        * The downloaded studio script varies based on the selected chat mode. The Scripts are not interchangeable between Legacy Chat and DFO modes.
-        * Avoid altering the downloaded script; it could affect the channel’s communication ability.
-        
-          
-      **Important**: The Callback URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
+        The Callback URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
 
 4. Click on **Create App** to complete the app creation. You will be redirected to the _Details_ page of your app.  
 <img src="../images/tropo-img2.png" alt="App details" title="App details" style="border: 1px solid gray; zoom:60%;">
