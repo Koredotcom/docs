@@ -8,6 +8,7 @@
 
 Adding the Cisco Tropo channel to your Kore.ai assistant is a three-step process to allow end-users to interact using their _Tropo_ accounts. To complete this procedure, you must already have a _Tropo_ account and be a member of a _Tropo_ team.
 
+
 To get started, go to the XO Platform and select the VA that you want to add the Cisco Tropo channel to, then follow the steps below. .
 
 
