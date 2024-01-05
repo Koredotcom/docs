@@ -247,7 +247,13 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
 <p>Before using this feature, enable the <a href="https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/#Integration_Setup" target="_blank">OpenAI Integration</a>.</p>
 </div>
 
-The XO platform allows developers to create a Natural Language Understanding (NLU) model through **OpenAI integration** integration for use in a virtual assistant. The **Zero-Shot Learning (ZSL) Model** allows developers to quickly create the model without needing training data. Instead, it relies on a pre-trained language model and a logic learning machine (LLM) to identify the intention of a user through the utterance based on semantic similarity. This feature uses the intent name to map or identify the intent name’s similarity with the user input to predict the utterances accurately. Thus, the intents have to be defined very well. This approach is well-suited for virtual assistants with relatively fewer intents and distinct use cases.
+The XO platform allows developers to create a Natural Language Understanding (NLU) model through **OpenAI integration** integration for use in a virtual assistant. The **Zero-Shot Learning (ZSL) Model** allows developers to quickly create the model without needing training data. 
+
+Instead, it relies on a pre-trained language model and a logic learning machine (LLM) to identify the intention of a user through the utterance based on semantic similarity. 
+
+This feature uses the intent name to map or identify the intent name’s similarity with the user input to predict the utterances accurately. 
+
+Thus, the intents have to be defined very well. This approach is well-suited for virtual assistants with relatively fewer intents and distinct use cases.
 
 **Benefits**
 
@@ -278,7 +284,8 @@ The XO platform allows developers to create a Natural Language Understanding (NL
 1. The user defines the intent to be identified by the system. For example, in the banking use case, instead of saying “_I see invalid transactions_“, the intent you provide has to be more descriptive within a subject, object, and nouns. It should be something more descriptive like “_I received an alert on my phone about transactions that I have not done._“. This helps the virtual assistant correctly identify the intent “_Dispute credit card Transaction._“
 <img src="../images/user-defines-intent.png" alt="user defines intent" title="user defines intent" style="border: 1px solid gray; zoom:75%;">
 
-If required, the user can add dialogs for the intents.
+   If required, the user can add dialogs for the intents.
+
 2. The user should enable the **_Zero-Shot Network Type_** under **Training**.
 3. The system identifies the most logical intent by matching the user utterance with the defined intent names (without training utterances). It then responds with the relevant intent. Intents identified by the **Zero-Shot** model are considered definitive matches.
 
