@@ -97,7 +97,7 @@ Click the icon of the channel you want to add, and then configure the channel to
 
    <td><a href="../add-google-chat" target="_blank">Google Chat</a>
       
-   <a href="../add-google-chat" target="_blank"><img src="../images/logo7-google-chat.png" style="zoom:50%;"></a></p>
+      <a href="../add-google-chat" target="_blank"><img src="../images/logo7-google-chat.png" style="zoom:50%;"></a>
    </td>
 
    <td><a href="../add-kore-channel" target="_blank">Kore.ai</a>
@@ -113,175 +113,154 @@ Click the icon of the channel you want to add, and then configure the channel to
   
   <tr>
    <td><a href="../add-mattermost-channel" target="_blank">Mattermost</a>
-
-   <a href="../add-mattermost-channel" target="_blank"><img src="../images/logo10-mattermost.png"></a>
+      
+      <a href="../add-mattermost-channel" target="_blank"><img src="../images/logo10-mattermost.png"></a>
    </td>
 
    <td><a href="../add-microsoft-teams-channel" target="_blank">Microsoft Teams</a>
       
-   <a href="../add-microsoft-teams-channel" target="_blank"><img src="../images/logo11-ms-teams.png"></a>
+      <a href="../add-microsoft-teams-channel" target="_blank"><img src="../images/logo11-ms-teams.png"></a>
    </td>
 
    <td><a href="../add-naver-works-channel" target="_blank">Naver Works</a>
       
-   <a href="../add-naver-works-channel" target="_blank"><img src="../images/logo12-naver.png"></a>
+      <a href="../add-naver-works-channel" target="_blank"><img src="../images/logo12-naver.png"></a>
    </td>
 
    <td><a href="../add-nice-incontact-channel" target="_blank">Nice inContact</a>
       
-   <a href="../add-nice-incontact-channel" target="_blank"><img src="../images/logo13-nice.png"></a>
+      <a href="../add-nice-incontact-channel" target="_blank"><img src="../images/logo13-nice.png"></a>
    </td>
 
    <td><a href="../add-google-rcs-channel" target="_blank">RCS Business Messaging</a>
       
-   <a href="../add-google-rcs-channel" target="_blank"><img src="../images/logo14-rcs.png"></a>
+      <a href="../add-google-rcs-channel" target="_blank"><img src="../images/logo14-rcs.png"></a>
    </td>
   </tr>
-
   <tr>
    <td><a href="../add-ringcentral-glip-channel" target="_blank">Glip by RingCentral</a>
       
-   <a href="../add-ringcentral-glip-channel" target="_blank"><img src="../images/logo15-glip.png"></a>
+      <a href="../add-ringcentral-glip-channel" target="_blank"><img src="../images/logo15-glip.png"></a>
    </td>
 
    <td><a href="../add-ringcentral-engage-channel" target="_blank">Ringcentral Engage</a>
       
-   <a href="../add-ringcentral-engage-channel" target="_blank"><img src="../images/logo16-ring-central.png"></a>
+      <a href="../add-ringcentral-engage-channel" target="_blank"><img src="../images/logo16-ring-central.png"></a>
    </td>
 
    <td><a href="../add-skype-business-channel" target="_blank">Skype for Business</a>
       
-   <a href="../add-skype-business-channel" target="_blank"><img src="../images/logo17-skype-business.png"></a>
+      <a href="../add-skype-business-channel" target="_blank"><img src="../images/logo17-skype-business.png"></a>
    </td>
 
    <td><a href="../add-slack-channel" target="_blank">Slack</a>
       
-   <a href="../add-slack-channel" target="_blank"><img src="../images/logo18-slack.png"></a>
+      <a href="../add-slack-channel" target="_blank"><img src="../images/logo18-slack.png"></a>
    </td>
-
    <td>
    </td>
   </tr>
-  
   <tr>
    <td><a href="../add-sunshine-conversations-channel" target="_blank">Sunshine Conversations</a>
       
-   <a href="../add-sunshine-conversations-channel" target="_blank"><img src="../images/logo19-sunshine-conversations.png"></a>
+      <a href="../add-sunshine-conversations-channel" target="_blank"><img src="../images/logo19-sunshine-conversations.png"></a>
    </td>
 
    <td><a href="../add-syniverse-channel" target="_blank">Syniverse</a>
       
-   <a href="../add-syniverse-channel" target="_blank"><img src="../images/logo20-syniverse.png"></a>
+      <a href="../add-syniverse-channel" target="_blank"><img src="../images/logo20-syniverse.png"></a>
    </td>
 
    <td><a href="../add-unblu-channel" target="_blank">Unblu</a>
       
-   <a href="../add-unblu-channel" target="_blank"><img src="../images/logo21-unblu.png"></a>
+      <a href="../add-unblu-channel" target="_blank"><img src="../images/logo21-unblu.png"></a>
    </td>
 
    <td><a href="../add-whatsapp-business-channel" target="_blank">WhatsApp Business Messaging</a>
       
-   <a href="../add-whatsapp-business-channel" target="_blank"><img src="../images/logo22-whatsapp-business.png"></a>
+      <a href="../add-whatsapp-business-channel" target="_blank"><img src="../images/logo22-whatsapp-business.png"></a>
    </td>
    <td>
    </td>
   </tr>
-
   <tr>
    <td><a href="../add-workplace-by-facebook-channel" target="_blank">Workplace By Facebook</a>
       
-   <a href="../add-workplace-by-facebook-channel" target="_blank"><img src="../images/logo23-wp-facebook.png"></a>
+      <a href="../add-workplace-by-facebook-channel" target="_blank"><img src="../images/logo23-wp-facebook.png"></a>
    </td>
    
    <td><a href="../add-microsoft-yammer-channel" target="_blank">Yammer</a>
       
-   <a href="../add-microsoft-yammer-channel" target="_blank"><img src="../images/logo24-yammer.png"></a>
+      <a href="../add-microsoft-yammer-channel" target="_blank"><img src="../images/logo24-yammer.png"></a>
    </td>
 
    <td><a href="../add-zoom-contact-center-channel" target="_blank">Zoom Contact Center</a>
       
-   <a href="../add-zoom-contact-center-channel" target="_blank"><img src="../images/logo25-zoom.png"></a>
+      <a href="../add-zoom-contact-center-channel" target="_blank"><img src="../images/logo25-zoom.png"></a>
    </td>
-
    <td>
    </td>
-
    <td>
    </td>
   </tr>
-
   <tr>
    <td colspan="4" ><strong>Social Channels</strong>
    </td>
-
    <td>
    </td>
   </tr>
-
   <tr>
    <td><a href="../add-facebook-messenger-channel" target="_blank">Facebook Messenger</a>
       
-   <a href="../add-facebook-messenger-channel" target="_blank"><img src="../images/logo26-fb-messenger.png"></a>
+      <a href="../add-facebook-messenger-channel" target="_blank"><img src="../images/logo26-fb-messenger.png"></a>
    </td>
 
    <td><a href="../add-line-messenger-channel" target="_blank">Line</a>
       
-   <a href="../add-line-messenger-channel" target="_blank"><img src="../images/logo27-line.png"></a>
+      <a href="../add-line-messenger-channel" target="_blank"><img src="../images/logo27-line.png"></a>
    </td>
 
    <td><a href="../add-skype-business-onpemise-channel" target="_blank">Skype</a>
       
-   <a href="../add-skype-business-onpemise-channel" target="_blank"><img src="../images/logo28-skype.png"></a>
+      <a href="../add-skype-business-onpemise-channel" target="_blank"><img src="../images/logo28-skype.png"></a>
    </td>
 
    <td><a href="../add-telegram-channel" target="_blank">Telegram</a>
       
-   <a href="../add-telegram-channel" target="_blank"><img src="../images/logo29-telegram.png"></a>
+      <a href="../add-telegram-channel" target="_blank"><img src="../images/logo29-telegram.png"></a>
    </td>
-
    <td>
    </td>
-
   </tr>
-
   <tr>
    <td><a href="../add-twitter-channel" target="_blank">Twitter</a>
       
-   <a href="../add-twitter-channel" target="_blank"><img src="../images/logo30-twitter.png"></a>
+      <a href="../add-twitter-channel" target="_blank"><img src="../images/logo30-twitter.png"></a>
    </td>
 
    <td><a href="../add-wechat-telegram" target="_blank">WeChat</a>
       
-   <td><a href="../add-wechat-telegram" target="_blank"><img src="../images/logo31-we-chat.png"></a>
+      <td><a href="../add-wechat-telegram" target="_blank"><img src="../images/logo31-we-chat.png"></a>
    </td>
-
    <td>
    </td>
-   
    <td>
    </td>
-   
    <td>
    </td>
   </tr>
-  
   <tr>
    <td>
    </td>
-   
    <td>
    </td>
-   
    <td>
    </td>
-   
    <td>
    </td>
-   
    <td>
    </td>
   </tr>
-  
   <tr>
    <td colspan="4" ><strong>Voice Channels</strong>
    </td>
