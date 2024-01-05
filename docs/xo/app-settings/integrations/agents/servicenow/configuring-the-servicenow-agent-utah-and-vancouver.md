@@ -77,11 +77,11 @@ Complete the following steps to configure the ServiceNow agent for **Utah** and 
 
     <img src="../images/configuring-the-servicenow-agent-utah-and-vancouver-img5.png" alt="Map channels with ServiceNow agent" title="Map channels with ServiceNow agent" style="border: 1px solid gray;zoom=60%;">
 
-    For example, if you have configured a Genesys chat integration, Intercom and ServiceNow agents. You can make one of them as default and map channels to agent systems. In this case, the Web Client and WebHook are mapped to Genesys and Intercom. Slack is mapped to the default ServiceNow agent. To learn more about channel enablement, see [Adding channels to your bot](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/){:target="_blank"}.
+    For example, if you have configured a Genesys chat integration, Intercom and ServiceNow agents. You can make one of them as default and map channels to agent systems. In this case, the Web Client and WebHook are mapped to Genesys and Intercom. Slack is mapped to the default ServiceNow agent. To learn more about channel enablement, see [Adding channels to your bot](../../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
 
 10. After mapping channels, click **Done**.
 11. Click **Save** to enable the ServiceNow agent.
-12. Publish the VA. For more information, see [Publishing Bot](https://developer.kore.ai/docs/bots/publish/publishing-bot/){:target="_blank"}.
+12. Publish the VA. For more information, see [Publishing Bot](../../../../../deploy/publishing-bot/){:target="_blank"}.
 
 
 ### Step 3: Install the required plugins
