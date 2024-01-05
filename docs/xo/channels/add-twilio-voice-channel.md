@@ -43,7 +43,7 @@ To associate the TwiML App with your Twilio Phone Number:
 
 ## Step 3: Set Up Agent Transfer (Optional)
 
-Optionally, you can also set up **Agent Transfer** functionality to transfer the user’s call conversation to another Twilio number. For this, you must configure the Kore.ai Agent Transfer SDK. Download the **Agent Transfer SDK** from the [Kore.ai GitHub repository](https://github.com/Koredotcom/BotKit){:target="_blank"} and define _data.message, transferCallToAgent_ and _agentPhonenumber_ parameters.
+Optionally, you can also set up **Agent Transfer** functionality to transfer the user’s call conversation to another Twilio number. For this, you must configure the Kore.ai Agent Transfer SDK. Download the **Agent Transfer SDK** from the [Kore.ai GitHub repository](https://github.com/Koredotcom/BotKit){:target="_blank"} and define **data.message, transferCallToAgent** and **agentPhonenumber** parameters.
 
 1. **data.message**: Define the message to be read out to the end-user when the _call is transferred to agent_ is initiated.
 2. **transferCallToAgent**: Set this flag to **True** to enable Agent Transfer and **False** to disable.

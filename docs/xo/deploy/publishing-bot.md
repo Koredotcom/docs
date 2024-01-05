@@ -18,9 +18,9 @@ The Publish Status dock item checks if the publishing is completed within the sp
 
 You can switch between the two states using the drop-down on the top right side of any Virtual Assistant window.
 
-<img src="../images/publish_bot_img1.png" alt="Switch between statuses" title="Switch between statuses" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/publish-bot-img1.png" alt="Switch between statuses" title="Switch between statuses" style="border: 1px solid gray; zoom:70%;">
 
-If your bot is trained in one or more languages that use NLP Version 2, you will see a banner notifying you about the upcoming[ auto-upgrade to NLP Version 3](../../automation/natural-language/training/optimizing-bots/#nlp-version-3).
+If your bot is trained in one or more languages that use NLP Version 2, you will see a banner notifying you about the upcoming[ auto-upgrade to NLP Version 3](../../automation/natural-language/training/optimizing-bots/#nlp-version-3){:target="_blank"}.
 
 
 ## Component Statuses
@@ -51,7 +51,7 @@ To publish a VA, please follow the steps below:
 1. Select **Deploy** from the top menu
 2. From the left menu select **Publish**.
 3. The _Publish_ page opens with all the components selected by default.  
-<img src="../images/publish_bot_img2.png" alt="Publish page" title="Publish page" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/publish-bot-img2.png" alt="Publish page" title="Publish page" style="border: 1px solid gray; zoom:70%;">
 
 4. Clear the checkboxes of any components you do not want to publish, and then click **Next**.
 5. Enter any useful **comments** for the Admin and click **Confirm**.
@@ -128,18 +128,18 @@ Every component that impacts end-user interactions or experience goes through th
     <ol>
     <li>Expand the <strong>Natural Language > NL Model</strong> option and click the <strong>All Components</strong> link.  
     
-        <img src="../images/publish_bot_img3.png" alt="NL model - All components" title="NL model - All components" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/publish-bot-img3.png" alt="NL model - All components" title="NL model - All components" style="border: 1px solid gray; zoom:70%;">
 
     <li>Select the following components: 
         <ol>
  
         <li><strong>ML Utterances</strong>: Replaces old user utterances with a new set of utterances in the <em>Published</em> version from the <em>In-Development</em> version, with all the additions, updates, and deletions. Click the <strong>Customize</strong> link to select the modified utterances associated with the updated tasks after publishing. You can search and select a particular task.
 
-        <img src="../images/publish_bot_img4.png" alt="ML Utterances" title="ML Utterances" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/publish-bot-img4.png" alt="ML Utterances" title="ML Utterances" style="border: 1px solid gray; zoom:70%;">
  
         <li><strong>Patterns</strong>: Replaces the old patterns with a new set of patterns in the Published version from the In Development version with all the additions, updates, and deletions. <a href="../../how-tos/build-a-travel-planning-assistant/train-the-assistant/using-patterns/" target="_blank">Learn more</a>. Click the <strong>Customize</strong> link to select modified patterns that were updated after publishing them. You can search and select a particular pattern.
 
-        <img src="../images/publish_bot_img5.png" alt="NL Model - Customize" title="NL Model - Customize" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/publish-bot-img5.png" alt="NL Model - Customize" title="NL Model - Customize" style="border: 1px solid gray; zoom:70%;">
  
         <li><strong>Rules</strong>: Replaces the intents in the <em>Published</em> version from the <em>In-Development</em> version with the new set of intent with rules defined for Dialog Execution and Knowledge Graph Intent detection. <a href="../../automation/natural-language/training/traits/#trait-association-rules" target="_blank">Learn more</a>. Click the <strong>Customize</strong> link to select updated rules after publishing them. You can search and select a particular rule.
  
@@ -152,7 +152,7 @@ Every component that impacts end-user interactions or experience goes through th
   
         <li><strong>Utterances and NER</strong> – User utterances in the <em>Published</em> version from the <em>In-Development</em> version with a new set of utterances associated with the task.
   
-        <li><strong>Ignore Words and Fields Memory</strong> – A full set of Ignore Words and Field Memory in the <em>Published</em> version with words the NLP engine must ignore when interpreting the user input for a task, including all the additions, updates, and deletions. <a href="../../xo/automation/intelligence/conversation-management/ignore-words-and-field-memory/" target="_blank">Learn more</a>.
+        <li><strong>Ignore Words and Fields Memory</strong> – A full set of Ignore Words and Field Memory in the <em>Published</em> version with words the NLP engine must ignore when interpreting the user input for a task, including all the additions, updates, and deletions. <a href="../../automation/intelligence/conversation-management/ignore-words-and-field-memory/" target="_blank">Learn more</a>.
   
         <li><strong>Entity Patterns and Negative Patterns</strong> – Old entity patterns with a new set of Entity and Negative patterns to improve NLP interpreter accuracy in the <em>Published</em> version from the <em>In-Development</em> version with all the additions, updates, and deletions. <a href="../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/" target="_blank">Learn more</a>.
   
@@ -331,9 +331,9 @@ Admins can set up auto-approval for any updates made to Enterprise or Consumer V
 2. Go to **Bots Management > Consumer Bots** or **Bots Management > Enterprise Bots**.
 3. Click the more icon for the required bot and select **Bot Settings**.
 
-    <img src="../images/publish_bot_img6.png" alt="Bot settings" title="Bot settings" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/publish-bot-img6.png" alt="Bot settings" title="Bot settings" style="border: 1px solid gray; zoom:70%;">
 
 4. On the Bot Settings window, select **Auto Approve**.
 5. Select **Auto Approve all publish requests for this bot**.
 
-    <img src="../images/publish_bot_img7.png" alt="Auto Approve all publish" title="Auto Approve all publish" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/publish-bot-img7.png" alt="Auto Approve all publish" title="Auto Approve all publish" style="border: 1px solid gray; zoom:70%;">
