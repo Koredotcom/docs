@@ -79,7 +79,6 @@ Click the icon of the channel you want to add, and then configure the channel to
       
    <a href="../add-google-assistant-channel" target="_blank"><img src="../images/logo4-google-assistant.png"></a>
    </td>
-
    <td>
    </td>
   </tr>
