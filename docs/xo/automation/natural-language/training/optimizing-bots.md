@@ -22,7 +22,7 @@ To get started optimizing your Virtual Assistant and tasks, you need to access t
 * **Thresholds & Configurations** – In this section, you can define the recognition confidence levels required for minimum recognition actions, the confidence range for asking a user to choose from a list of possible matches, and a recognition confidence level for a positive match for the knowledge graph.
 * Modify **Advanced Settings** like auto training setting for user utterances and negative intent patterns.
 
-    <img src="../training/images/select-natural-language.png" alt="select natural language" title="select natural language" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/select-natural-language.png" alt="select natural language" title="select natural language" style="border: 1px solid gray; zoom:75%;">
 
 ## NLP Version 3
 
