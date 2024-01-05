@@ -87,12 +87,12 @@ Click the icon of the channel you want to add, and then configure the channel to
   <tr>
    <td><a href="../add-genesys-chat-channel" target="_blank">Genesys Cloud CX Messaging</a>
       
-   <a href="../add-genesys-chat-channel" target="_blank"><img src="../images/logo5-genesys-chat-new-logo.png"></a></p>
+   <a href="../add-genesys-chat-channel" target="_blank"><img src="../images/logo5-genesys-chat-new-logo.png"></a>
    </td>
 
    <td><a href="../add-google-business-messaging-channel" target="_blank">Google Business Messaging</a>
       
-   <a href="../add-google-business-messaging-channel" target="_blank"><img src="../images/logo6-gbm.png"></a></p>
+   <a href="../add-google-business-messaging-channel" target="_blank"><img src="../images/logo6-gbm.png"></a>
    </td>
 
    <td><a href="../add-google-chat" target="_blank">Google Chat</a>
@@ -102,7 +102,7 @@ Click the icon of the channel you want to add, and then configure the channel to
 
    <td><a href="../add-kore-channel" target="_blank">Kore.ai</a>
       
-   <a href="../add-kore-channel" target="_blank"><img src="../images/logo8-kore-ai.png"></a></p>
+   <a href="../add-kore-channel" target="_blank"><img src="../images/logo8-kore-ai.png"></a>
    </td>
 
    <td><a href="../add-live-person-channel" target="_blank">Live Person</a>
