@@ -2,7 +2,7 @@
 
 A chatbot’s ability to consistently understand and interact with a user is dictated by the robustness of the Natural Language Processing (NLP) that powers the conversation.
 
-Kore.ai’s platform uses a unique Natural Language Processing strategy, combining Fundamental Meaning and Machine Learning engines for maximum conversation accuracy with little upfront training. Bots built on Kore.ai’s platform can understand and process multi-sentence messages, multiple intents, contextual references made by the user, patterns and idiomatic sentences, and more. [See here for an overview](../../nlp-introduction/){:target="_blank"}.
+The XO platform uses a unique Natural Language Processing strategy, combining Fundamental Meaning and Machine Learning engines for maximum conversation accuracy with little upfront training. Bots built on Kore.ai’s platform can understand and process multi-sentence messages, multiple intents, contextual references made by the user, patterns and idiomatic sentences, and more. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlp-introduction/" target="_blank">Learn more</a>.
 
 The NL engine includes recognition support for a wide range of entities and provides the tools needed to further customize your bot’s language understanding using additional patterns.
 
@@ -22,12 +22,7 @@ To get started optimizing your Virtual Assistant and tasks, you need to access t
 * **Thresholds & Configurations** – In this section, you can define the recognition confidence levels required for minimum recognition actions, the confidence range for asking a user to choose from a list of possible matches, and a recognition confidence level for a positive match for the knowledge graph.
 * Modify **Advanced Settings** like auto training setting for user utterances and negative intent patterns.
 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
+    <img src="../training/images/select-natural-language.png" alt="select natural language" title="select natural language" style="border: 1px solid gray; zoom:75%;">
 
 ## NLP Version 3
 
@@ -39,7 +34,7 @@ Version 10.0 of the XO Platform includes a new version of the NLP Engine (Versio
 * Improved the security of NLP by addressing several security vulnerabilities.
 * Improved performance by enabling LLM & Generative AI.
 
-In addition, it allows you to explore the latest features like [Zero-shot Model](../machine-learning-engine/#zero-shot-learning-model-with-openai){:target="_blank"}, [Few-shot Model](../machine-learning-engine/#few-shot-model-koreai-hosted-embeddings){:target="_blank"}, and [Intent Discovery](../../../tools/intent-discovery/){:target="_blank"}.
+In addition, it allows you to explore the latest features like <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/#zero-shot-learning-model-with-openai" target="_blank">Zero-shot Model</a>, <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/#few-shot-model-koreai-hosted-embeddings" target="_blank">Few-shot Model</a>, and <a href="https://docsinternal-kore.github.io/docs/xo/automation/tools/intent-discovery/" target="_blank">Intent Discovery</a>.
 
 The new VAs will automatically use the new version by default. We recommend migrating all your existing VAs to the new version to experience the new features and improvements.  Also, the **bot will face downtime during the upgrade**. To avoid downtime in crucial hours, it is recommended that you upgrade the bot manually at the earliest. Backup your virtual assistant before upgrading, validate the NLP performance using the Batch Testing module, and publish the changes.
 
@@ -67,8 +62,8 @@ On-Premise customers can run both versions in parallel or switch directly to Ver
 
 You can start optimizing your Virtual Assistant, by:
 
-* Customizing the ML engine, [see here for more](../machine-learning-engine/){:target="_blank"}.
-* Customizing the KG engine, [see here for more](../../../../answers/knowledge-ai/knowledge-graph-training/){:target="_blank"}.
-* Customizing the FM engine, [see here for more](../fundamental-meaning/){:target="_blank"}.
-* Customizing the Traits engine, [see here for more](../traits/){:target="_blank"}.
-* Customizing the R&R engine, [see here for more](../ranking-and-resolver/){:target="_blank"}.
+* <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/" target="_blank">Customizing the ML engine</a>
+* <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-training/" target="_blank">Customizing the KG engine</a>
+* <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/" target="_blank">Customizing the FM engine</a>
+* <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/traits/" target="_blank">Customizing the Traits engine</a>
+* <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/ranking-and-resolver/" target="_blank">Customizing the RR engine</a>

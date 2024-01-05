@@ -4,7 +4,7 @@ There are multiple places where the platform responds to user utterances without
 
 * **Default Dialog** when the user intent is not found or understood by the bot.
 * **Standard Responses** to certain questions, greetings, error and warning scenarios, etc.
-* **Event Handlers** for certain common bot events can be defined. <a href="https://developer.kore.ai/docs/bots/bot-intelligence/event-based-bot-actions/" target="_blank">Learn more</a>.
+* **Event Handlers** for certain common bot events can be defined. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/event-handling/" target="_blank">Learn more</a>.
 
 Though these are set by default by the platform, you can customize them as per your business requirements. In this document, we look into such customizations.
 
