@@ -282,12 +282,13 @@ Thus, the intents have to be defined very well. This approach is well-suited for
 **How it works**
 
 1. The user defines the intent to be identified by the system. For example, in the banking use case, instead of saying “_I see invalid transactions_“, the intent you provide has to be more descriptive within a subject, object, and nouns. It should be something more descriptive like “_I received an alert on my phone about transactions that I have not done._“. This helps the virtual assistant correctly identify the intent “_Dispute credit card Transaction._“
-<img src="../images/user-defines-intent.png" alt="user defines intent" title="user defines intent" style="border: 1px solid gray; zoom:75%;">
+
+   <img src="../images/user-defines-intent.png" alt="user defines intent" title="user defines intent" style="border: 1px solid gray; zoom:75%;">
 
    If required, the user can add dialogs for the intents.
 
-2. The user should enable the **_Zero-Shot Network Type_** under **Training**.
-3. The system identifies the most logical intent by matching the user utterance with the defined intent names (without training utterances). It then responds with the relevant intent. Intents identified by the **Zero-Shot** model are considered definitive matches.
+<ol start="2"><li>The user should enable the <b>Zero-Shot Network Type</b> under <b>Training</b>.</li>
+<li>The system identifies the most logical intent by matching the user utterance with the defined intent names (without training utterances). It then responds with the relevant intent. Intents identified by the <b>Zero-Shot</b> model are considered definitive matches.</li></ol>
 
 **Rescoring of Intents for Definitive Matches**
 
