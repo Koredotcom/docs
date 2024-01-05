@@ -106,11 +106,11 @@ Complete the following steps to configure the ServiceNow agent for **Tokyo** and
 
     <img src="../images/configuring-the-servicenow-agent-tokyo-img9.png" alt="Map channels to use ServiceNow agent" title="Map channels to use ServiceNow agent" style="border: 1px solid gray;zoom:80%;">
 
-    For example, if you have configured a Genesys chat integration, Intercom and ServiceNow agents. You can make one of them as default and map channels to agent systems. In this case, the Web Client and WebHook are mapped to Genesys and Intercom. Slack is mapped to the default ServiceNow agent. To learn more about channel enablement, see [Adding channels to your bot](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/){:target="_blank"}.
+    For example, if you have configured a Genesys chat integration, Intercom and ServiceNow agents. You can make one of them as default and map channels to agent systems. In this case, the Web Client and WebHook are mapped to Genesys and Intercom. Slack is mapped to the default ServiceNow agent. To learn more about channel enablement, see [Adding channels to your bot](../../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
 
 10. After mapping channels, click **Done**.
 11. Click **Save** to enable the ServiceNow agent.
-12. Publish the VA. For more information, see [Publishing Bot](https://developer.kore.ai/docs/bots/publish/publishing-bot/){:target="_blank"}.
+12. Publish the VA. For more information, see [Publishing Bot](../../../../../deploy/publishing-bot/){:target="_blank"}.
 
 
 ### Step 4: Switch to UI16 theme
