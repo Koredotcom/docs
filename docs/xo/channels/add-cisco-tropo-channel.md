@@ -19,6 +19,7 @@ To get started, go to the XO Platform and select the VA that you want to add the
 <img src="../images/tropo-img1.png" alt="Create new app" title="Create new app" style="border: 1px solid gray; zoom:60%;">
 
 3. Provide all the required information. Use the **Callback URL** available in the Configurations tab of the channel configuration page within the XO Platform, and provide it for defining the **Type of Application**.  
+      
       !!! note "Important"
       
             The Callback URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
