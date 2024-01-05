@@ -3,7 +3,7 @@
 
 !!! note "Important Note"
 
-   Tropo has been discontinued and is now part of Webex. You can use this integration only if you already have a Tropo account that was active prior to discontinuation.  Proceed with the channel setup only if you have a live Tropo account. You can click here to check for updates related to the Tropo service.
+      Tropo has been discontinued and is now part of Webex. You can use this integration only if you already have a Tropo account that was active prior to discontinuation.  Proceed with the channel setup only if you have a live Tropo account. You can click here to check for updates related to the Tropo service.
 
 
 Adding the Cisco Tropo channel to your Kore.ai assistant is a three-step process to allow end-users to interact using their _Tropo_ accounts. To complete this procedure, you must already have a _Tropo_ account and be a member of a _Tropo_ team.
@@ -17,11 +17,11 @@ To get started, go to the XO Platform and select the VA that you want to add the
 2. Click on **Create New App.**  
 <img src="../images/tropo-img1.png" alt="Create new app" title="Create new app" style="border: 1px solid gray; zoom:60%;">
 
-3. Provide all the required information. Use the **Callback URL **available in the Configurations tab of the channel configuration page within the XO Platform, and provide it for defining the **Type of Application**. 
+3. Provide all the required information. Use the **Callback URL** available in the Configurations tab of the channel configuration page within the XO Platform, and provide it for defining the **Type of Application**.  
 
    !!! note "Important"
    
-      The Callback URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
+         The Callback URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
 
 4. Click on **Create App** to complete the app creation. You will be redirected to the _Details_ page of your app.  
 <img src="../images/tropo-img2.png" alt="App details" title="App details" style="border: 1px solid gray; zoom:60%;">
