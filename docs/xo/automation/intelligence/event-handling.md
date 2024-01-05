@@ -32,7 +32,7 @@ Developers can define the VA should take when an event is triggered using one of
 
 ### Run a Task
 
-Select a Dialog task (Standard or Hidden) to be invoked when the event triggers. Once the event is triggered, the dialog starts executing. If it is interrupted because of other intent detections, the _Hold _and _Resume _settings come into play. During execution, if the selected Dialog is not published in the VA, the event is discarded.
+Select a Dialog task (Standard or Hidden) to be invoked when the event triggers. Once the event is triggered, the dialog starts executing. If it is interrupted because of other intent detections, the _Hold and Resume settings_ come into play. During execution, if the selected Dialog is not published in the VA, the event is discarded.
 
 In some cases, the Dialog may not be available to the user during a conversation for various reasons such as the task not yet being published, being suspended, or simply not having been assigned to the user. In such cases, the VA  shows an error message that the task is not currently available for execution. 
 
@@ -81,7 +81,7 @@ You can configure the following events to trigger responses:
   <tr>
    <td>End of Conversation
    </td>
-   <td>On reaching the end of conversation. <a href="https://developer.kore.ai/docs/bots/bot-intelligence/event-based-bot-actions/#End_of_Conversation">See details below</a>.
+   <td>On reaching the end of conversation. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/event-handling/#end-of-conversation">Learn more</a>.
    </td>
   </tr>
   <tr>
@@ -131,7 +131,7 @@ You can configure the following events to trigger responses:
   <tr>
    <td>Telephony Welcome Event
    </td>
-   <td>On receiving a user’s call from a voice channel like IVR, Twilio, or Audio Codes. <a href="https://developer.kore.ai/docs/bots/bot-intelligence/event-based-bot-actions/#Telephony_Welcome_Event">See</a> details below.
+   <td>On receiving a user’s call from a voice channel like IVR, Twilio, or Audio Codes. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/event-handling/#telephony-welcome-event">See</a> details below.
 <p>
 (previously called Twilio Voice Welcome Event)
    </td>
@@ -268,14 +268,14 @@ If the Task is unavailable to the user for any reasons, such as not yet publishe
 
 #### End of Conversation
 
-End of Conversation is triggered when the VA is not expected to send any message to the user or receive any message from the user.
+*End of Conversation* is triggered when the VA is not expected to send any message to the user or receive any message from the user.
 
 A new flag indicating the reason for ending the task, added to the _end of task_ event, will help decide the end of the conversation behavior. Client-side implementations of BotKits, RTM, and Webhook channels can use this reason for the task completion flag in the context to determine an appropriate course of action.
 
 On triggering this event, the context will be updated with the following details:
 
 * Reason for triggering event (see the table below).
-* Name of the task that has just ended. If it’s an FAQ, then the task name will be set to ‘FAQ’
+* Name of the task that has just ended. If it’s an FAQ, then the task name will be set to ‘FAQ’.
 
 <table border="1.5">
 <tr bgcolor="#ECECEC">
@@ -406,7 +406,7 @@ In this conversation, the dialog has reached the end, and the last response says
 
 **Solution**
 
-If the conversation session is not closed or the call is not disconnected after the end of the dialog, the Repeat Bot Response event is triggered, and the last message of the dialog task is repeated when you configure a task in the End of Task event with a message that says `"Is there anything else I can help you with?"`. For more information, see the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/dialog-tasks-overview/" target="_blank">End of Conversation</a> article.
+If the conversation session is not closed or the call is not disconnected after the end of the dialog, the Repeat Bot Response event is triggered, and the last message of the dialog task is repeated when you configure a task in the End of Task event with a message that says `"Is there anything else I can help you with?"`. For more information, see the <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/event-handling/#end-of-conversation" target="_blank">End of Conversation</a> section.
 
 Now the ‘Repeat Bot Responses’ event considers the end of dialog after the ‘Last User Input’ configuration, the repeat response will say, `"Thank you. Your flight has been booked successfully. Your booking reference number is XYZ789 and you will receive a message shortly. Is there anything else I can help you with?".`
 
@@ -438,35 +438,36 @@ A bot developer uses the **Repeat Bot Response** to allow you to repeat the resp
 
 <ol start="6"><li>Select the <b>Event Configuration</b> options to define how to repeat the response:</li>
 <ul><li><b>Repeat Only Last Bot Response</b> – By default, this option is selected with a filler message: "<i>Sure, I will repeat it for you.</i>"
-<img src="../images/repeat-bot-response-event.png" alt="repeat bot response event" title="repeat bot response event" style="border: 1px solid gray; zoom:75%;"></li>
+<img src="../images/repeat-bot-response-event.png" alt="repeat bot response event" title="repeat bot response event" style="border: 1px solid gray; zoom:75%;">
 
-<li>You can edit or add the filler message for the repeat bot response event before it is triggered.
-<img src="../images/add-filler-message.png" alt="add filler message" title="add filler message" style="border: 1px solid gray; zoom:75%;"></li>
+You can edit or add the filler message for the repeat bot response event before it is triggered.
+<img src="../images/add-filler-message.png" alt="add filler message" title="add filler message" style="border: 1px solid gray; zoom:75%;"></li></ul>
 
 <li>Click <b>+Add Filler Message</b> and select the <b>IVR</b> channel and enter the filler messages and then click <b>Done</b>.
-<img src="../images/add-filler-to-ivr.png" alt="add filler to ivr" title="add filler to ivr" style="border: 1px solid gray; zoom:75%;"></li>
+<img src="../images/add-filler-to-ivr.png" alt="add filler to ivr" title="add filler to ivr" style="border: 1px solid gray; zoom:75%;">
 
-<li>When the Repeat Bot Response event is triggered, these filler messages are used in the IVR channel conversation before repeating the response.
+When the Repeat Bot Response event is triggered, these filler messages are used in the IVR channel conversation before repeating the response.
 <img src="../images/use-filler-message.png" alt="use filler message" title="use filler message" style="border: 1px solid gray; zoom:75%;"></li>
 
-<li><b>Auto-generate Response</b> – When you select this option, you are redirected to enable the Advanced NLU model, if not enabled, to generate the bot response using the LLM and Generative AI engine.
-<img src="../images/auto-generate-response.png" alt="auto-generate responses" title="auto-generate responses" style="border: 1px solid gray; zoom:75%;"></li>
+<ul><li><b>Auto-generate Response</b> – When you select this option, you are redirected to enable the Advanced NLU model, if not enabled, to generate the bot response using the LLM and Generative AI engine.
 
-<li>Click <b>Enable Now</b> to define the Advanced NLU Settings for the LLM and Generative model and enable the Repeat Responses feature. <a href="https://developer.kore.ai/docs/bots/bot-intelligence/event-based-bot-actions/Click%20Enable%20Now%20to%20define%20the%20Advanced%20NLU%20Settings%20for%20the%20LLM%20and%20Generative%20model%20and%20enable%20the%20Repeat%20Responses%20feature.%20Learn%20more" target="_blank">Learn more</a>.</li></ul></ol>
+<img src="../images/auto-generate-response.png" alt="auto-generate responses" title="auto-generate responses" style="border: 1px solid gray; zoom:75%;"></li></ul>
+
+<li>Click <b>Enable Now</b> to define the Advanced NLU Settings for the <b>LLM and Generative</b> model and enable the Repeat Responses feature.</li></ul></ol>
 
 !!!note
 
     When the Auto-generate response option is enabled, the repeat bot response event will not use the filler messages that were defined in the previous step. The responses automatically sent from the LLM and Generative model when the event is triggered.
 
-<ol start="7"><li>Expand the Advanced Settings and define the following options to repeat the response:</li>
+<ol start="9"><li>Expand the Advanced Settings and define the following options to repeat the response:</li>
 <ul><li><b>Repeat Attempts Limit</b> – Set the number of retry attempts to repeat a response. The accepted value is between <b>1</b> and <b>10</b>. The default is <b>5</b>.</li>
 <li><b>Behavior on Exceeding Repeat Attempts</b> – Define what VA must do after exceeding the number of retry attempts to repeat the response. You can choose either the <b>End of Dialog</b> or <b>Initiate Dialog</b> option.
 
-<img src="../images/behavior-on-exceeding-repeat-attempts.png" alt="behavior on exceeding repeat responses" title="behavior on exceeding repeat responses" style="border: 1px solid gray; zoom:75%;"></li>
+<img src="../images/behavior-on-exceeding-repeat-attempts.png" alt="behavior on exceeding repeat responses" title="behavior on exceeding repeat responses" style="border: 1px solid gray; zoom:75%;">
 
-<li>When you select the <b>Initiate Dialog</b> option, you can choose the task to which the conversation must be redirected after a number of retry attempts to repeat.</li></ul></ol>
+When you select the <b>Initiate Dialog</b> option, you can choose the task to which the conversation must be redirected after a number of retry attempts to repeat.</li></ul></ol>
 
-<ol start="8"><li>Click <b>Save & Enable</b> to trigger the Repeat Bot Response event with the configurations.</li></ol>
+<ol start="10"><li>Click <b>Save & Enable</b> to trigger the Repeat Bot Response event with the configurations.</li></ol>
 
 #### Task Execution Failure Event
 
@@ -517,9 +518,9 @@ To configure the Ambiguous Intents Identified event follow these steps:
 <ol start="3"><li>You can select the following options in the Configuration panel:</li>
 
 <ul><li><b>Present all the qualified intents to the end-user for disambiguation</b>: This is the default selection in which the standard response related to the ambiguous intent(s) is presented. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/standard-responses/" target="_blank">Learn more</a>.
-<li><b>Automatically run a Dialog Task</b>. This option lets you select a Dialog Task. Select this option if you want to build custom business logic to analyze the ambiguous intents, define appropriate conversation flow using a Dialog Task, and associate it with the Ambiguous Intents Identified event. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/conversation-driven-dialog-builder/" target="_blank">Learn more</a>.
+<li><b>Automatically run a Dialog Task</b>: This option lets you select a Dialog Task. Select this option if you want to build custom business logic to analyze the ambiguous intents, define appropriate conversation flow using a Dialog Task, and associate it with the Ambiguous Intents Identified event. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/conversation-driven-dialog-builder/" target="_blank">Learn more</a>.
 
-<img src="../images/ambiguous-intents-identified.png" alt="ambiguous intents identified" title="ambiguous intents identified" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/ambiguous-intents-identified.png" alt="ambiguous intents identified" title="ambiguous intents identified" style="border: 1px solid gray; zoom:75%;"></li></ul>
 
 <li>Click the button <b>Save & Enable</b> to enable the event.</li></ol>
 
