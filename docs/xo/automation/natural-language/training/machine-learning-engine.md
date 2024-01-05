@@ -82,11 +82,11 @@ To add utterances to the Machine Learning Engine, please follow the steps below:
 3. From the left menu, select the **Natural Language ->** **Training** option.
 4. By default, the tab with a list of all **Intents** would be displayed.
 5. You can use the filter option to restrict the display items to **Dialog Intents, Sub Intent Dialogs** or **Sub-Intents**. You can also choose to **Include Hidden Tasks**. 
-6.  Click **Utterances > + Utterance** against the Intent for which you want to add the utterances. 
+6. Click **Utterances > + Utterance** against the Intent for which you want to add the utterances. 
 
 <img src="../images/add-utterances.png" alt="add utterance" title="add utterance" style="border: 1px solid gray; zoom:75%;">
 
-7. The user utterance page opens.
+<ol start="7"><li>The user utterance page opens.</li></ol>
 
 Here is where you can enter the utterances. 
 
@@ -177,7 +177,7 @@ The Threshold & Configurations for the ML engine are discussed in detail in the 
 
 ### Machine Learning Model Configuration Overview
 
-The XO  Platform ver 6.3 upgraded its Machine Learning (ML) model to v3. This includes a host of improvements and also allows developers to fine-tune the model using parameters to suit business requirements. The developers can change parameters like stop word usage, synonym usage, thresholds, and n-grams, as well as opt between [Deep Neural Network](https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks) or [Conditional Random Field-based](https://en.wikipedia.org/wiki/Conditional_random_field) algorithms for the [Named-Entity Recognition (NER) ](https://en.wikipedia.org/wiki/Named-entity_recognition)model.
+The XO  Platform ver 6.3 upgraded its Machine Learning (ML) model to v3. This includes a host of improvements and also allows developers to fine-tune the model using parameters to suit business requirements. The developers can change parameters like stop word usage, synonym usage, thresholds, and n-grams, as well as opt between <a href="https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks" target="_blank">Deep Neural Network</a> or <a href="https://en.wikipedia.org/wiki/Conditional_random_field" target="_blank">Conditional Random Field-based</a> algorithms for the <a href="https://en.wikipedia.org/wiki/Named-entity_recognition" target="_blank">Named-Entity Recognition</a> model.
 
 In v8.0 of the Platform, provision has been enabled to use the v5 of the ML intent model and externalize several hyperparameters. This can be achieved through the Advanced NLP Configuration. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/" target="_blank">Learn more</a>.
 
@@ -236,7 +236,7 @@ You can choose between the following types. Based on the selection additional co
 * **CNN** (convolutional neural networks) is a class of deep neural networks in deep learning most commonly applied to analyzing visual imagery. It makes use of the word order for a specific region size and has achieved remarkable results on various text classification tasks.
 * **Transformers** use a Universal Sentence encoder in the vectorization stage of the Training pipeline. The output of the sentence encoder is fed to a Multi-Layer perceptron network for training. SentenceEncoder has an inbuilt capability of understanding the semantic similarity between sentences taking into account the synonyms and various usage patterns of the same sentence. 
 The Universal Sentence Encoder encodes text into high-dimensional vectors that can be used for text classification, semantic similarity, clustering, and other natural language tasks. The model is trained and optimized for greater-than-word length text, such as sentences, phrases, or short paragraphs. It is trained on a variety of data sources and a variety of tasks with the aim of dynamically accommodating a wide variety of natural language understanding tasks. The input is the variable-length English text and the output is a 512-dimensional vector.
-* **KAEN** (Kore Advanced Embeddings Network) – Models trained with Sentence Embeddings alone can not understand the domain-specific terminology especially if the words from training are non-dictionary words. Kore.ai provides a model which can understand the meaning of the sentence and at the same time give importance to the domain-specific terminology. There are two parallel layers in work in this model – one to optimize the weights against the sentence embeddings and the other to optimize the word importance for a given sentence.  The activation function used for these two layers is RReLU (Randomized Leaky Rectified Linear Unit, [Learn more](https://arxiv.org/pdf/1505.00853.pdf))
+* **KAEN** (Kore Advanced Embeddings Network) – Models trained with Sentence Embeddings alone can not understand the domain-specific terminology especially if the words from training are non-dictionary words. Kore.ai provides a model which can understand the meaning of the sentence and at the same time give importance to the domain-specific terminology. There are two parallel layers in work in this model – one to optimize the weights against the sentence embeddings and the other to optimize the word importance for a given sentence.  The activation function used for these two layers is RReLU (Randomized Leaky Rectified Linear Unit, <a href="https://arxiv.org/pdf/1505.00853.pdf" target="_blank">Learn more</a>.
 * **Zero-Shot Model with OpenAI**: Helps define descriptive intents that the VA identifies in the user utterance based on semantic similarity without requiring training data.
 * **Few-shot Model (Kore.ai Hosted Embeddings)**: Helps define more number of granular intents that describe the user’s intention in the utterance more accurately with limited training requirement.
 
@@ -330,12 +330,11 @@ To test the utterance for the **Zero-Shot Learning Model with OpenAI** Network T
 **Example 2**: “_Where is my delivery?_”
 <img src="../images/test-utterance-example-2.png" alt="test utterance example" title="test utterance example" style="border: 1px solid gray; zoom:75%;">
 
-3. Click **Save & Run**.
-4. The Machine Learning Model identifies and displays the following intents in the **NLP Analysis** window for each example.
+<ol start="3"><li>Click <b>Save & Run</b>.</li>
+<li>The Machine Learning Model identifies and displays the following intents in the <b>NLP Analysis</b> window for each example.</li></ol>
 
 **Example 1**: **_Cancel My Order_** for “_I don’t want the product_.”
 <img src="../images/cancel-my-order.png" alt="cancel order" title="cancel order" style="border: 1px solid gray; zoom:75%;">
-
 
 **Example 2**: **_Show the status of my order_** for “_Where is my delivery?_”
 <img src="../images/Show-the-status-of-my-order.png" alt="Show the status of my order" title="Show the status of my order" style="border: 1px solid gray; zoom:75%;">
