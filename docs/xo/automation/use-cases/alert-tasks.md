@@ -171,7 +171,7 @@ After you define the authorization mechanism and then click **Save Auth**, you a
 
 * Configuring API Request for WebHook service. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-webhook-api/" target="_blank">here</a> for details.
 * Configuring API Request for REST service. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-task-rest-api/" target="_blank">here</a> for details.
-* Configuring API Request for SOAP service. Click <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/alert/alert-task-soap-api-request/#Website_Preview_Content" target="_blank">here</a> for details.
+* Configuring API Request for SOAP service. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-soap-api/" target="_blank">here</a> for details.
 * Configuring API Request for RSS service. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks-rss-api-request/" target="_blank">here</a> for details.
 
 ## Bot Responses
