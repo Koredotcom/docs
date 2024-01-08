@@ -1,5 +1,5 @@
 
-# **General Settings**
+# General Settings
 
 	
 
@@ -20,7 +20,7 @@ To modify the general settings of a bot:
 
 
 
-## **General Bot Settings**
+## General Bot Settings
 
 Modify one or more of the settings described in the following table.
 
@@ -130,7 +130,7 @@ To save the Bot settings, click **Save**. The _&lt; **Bot Name** > updated succe
 			
 
 
-## **Customizing Error Messages**
+## Customizing Error Messages
 
 In Bot Builder, each Bot and task contains a set of predefined error messages along with actions for standard HTTP Status codes returned for an HTTP Request method. In most cases, the default response and action are sufficient for an end-user response, however, you may need to handle other HTTP Status codes not defined by default, or customize the error message itself, or change the default response by Kore.ai in the event of an error. This topic describes how to customize and create error messages for Kore.ai Bots and tasks. When you create a Bot or a task, you can add or customize error messages for HTTP Status codes in the **Error Messages** section of the Bot or task settings.[ ](https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20230215113143/general-settings-error-messages.png)
 
@@ -143,7 +143,7 @@ In Bot Builder, each Bot and task contains a set of predefined error messages al
 
 		
 
-### **Custom Status Codes**
+### Custom Status Codes
 
 There are approximately 25 HTTP Status codes defined by default for a Bot or task. **To customize an HTTP Status code**.
 

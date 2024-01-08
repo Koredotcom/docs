@@ -2,7 +2,7 @@
 
 
 
-# **Getting Started with Multilingual Virtual Assistants**
+# Getting Started with Multilingual Virtual Assistants
 
 Consumers are more likely to engage with virtual assistants that communicate in their preferred language. The Kore.ai XO Platform supports enabling multiple languages within an assistant without having to rebuild the definitions. The platform supports over 100 languages and you can choose to enable any of these languages for your assistant. You can start building with one language and enable additional languages as and when you need them.  
 
@@ -30,7 +30,7 @@ Conversation Language is the one that users use to interact with the assistant. 
 You can also use the automatic response translation feature when you or your team does not have expertise in the user’s language. You can write the responses in your preferred language and the platform will automatically translate them to the user’s language during the conversation. 
 
 
-## **Supported Bot Languages**
+## Supported Bot Languages
 
 The following are the Conversation Languages supported by the Platform:
 
@@ -639,7 +639,7 @@ If the assistant fails to detect a user’s language with high confidence, it re
 
 
 
-2. Language selection settings – In addition, you may want to configure the language selection options. From the menu under the **Build** tab, click **Configurations -> Languages. **Under **Language Selection Logic** (scroll down for the option), for **language selection time frame**, set to one of the following:
+2. Language selection settings – In addition, you may want to configure the language selection options. From the menu under the **Build** tab, click **Configurations > Languages**. Under **Language Selection Logic** (scroll down for the option), for **language selection time frame**, set to one of the following:
     * **Lifetime**: The auto-detected language will be set as the user’s preferred language and used for all subsequent communications until the user interacts in another enabled language anytime later. If the user starts to talk in another enabled language, the virtual assistant changes to that language.
     * **Per Session**: Detects the user’s language at the beginning of every session and responds accordingly.
 
@@ -647,7 +647,7 @@ If the assistant fails to detect a user’s language with high confidence, it re
 
     * **Every User Message**: Identifies the user’s language from every utterance. In case a change is detected, the VA will get a confirmation from the user regarding the switch and proceed as per the user response. 
 
-
+    !!! note
 
         Note that the current conversation will be discarded in case the user wants to switch languages. This feature was introduced in release 7.2 and is the default setting for multilingual virtual assistants.
 
@@ -656,7 +656,7 @@ If the assistant fails to detect a user’s language with high confidence, it re
 
 
 3. For testing and debugging purposes, you can override the language selection settings by using the cheat command during a chat session. Replace the language name or code with one of these values:
-    1. English:** English **or **EN**
-    2. German: **German **or **DE**
-    3. French: **French **or **FR**
-    4. Spanish: **Spanish **or **ES**
+    1. English: **English** or **EN**
+    2. German: **German** or **DE**
+    3. French: **French** or **FR**
+    4. Spanish: **Spanish** or **ES**

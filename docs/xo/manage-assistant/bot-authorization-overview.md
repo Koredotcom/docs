@@ -1,4 +1,4 @@
-# **Bot Authorization Overview**
+# Bot Authorization Overview
 
 	
 

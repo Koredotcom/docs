@@ -1,7 +1,7 @@
 
 
 
-# **Multilingual VAs: Components & Feature Support**
+# Multilingual VAs: Components & Feature Support
 
 In the case of multilingual VAs, while much of the assistant’s behavior does not change with the language, the semantics does impose some restrictions. In this document we will list out the different behaviors that would be language-dependent, so you can cater for such scenarios.
 
@@ -10,9 +10,9 @@ This article discusses language-specific components for multilingual VAs, as wel
 This article lists the VA elements for which you can provide language-specific values. You need not translate Standard Responses as the Platform automatically translates them when you enable a language.
 
 
-# Metadata
+## Metadata
 
-JSON object consisting of the following translatable elements
+JSON object consisting of the following translatable elements.
 
 
 <table>
@@ -60,7 +60,7 @@ JSON object consisting of the following translatable elements
 
 
 
-# Dialog Tasks
+## Dialog Tasks
 
 JSON object consisting of the following translatable components of your VA’s[ Dialog Tasks](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/dialog-tasks/).
 
@@ -102,7 +102,7 @@ JSON object consisting of the following translatable components of your VA’s[ 
 
 
 
-# Dialog Components
+## Dialog Components
 
 JSON object consisting of the following translatable components related to the NLP settings of a dialog task.
 
@@ -152,9 +152,9 @@ JSON object consisting of the following translatable components related to the N
 
 
 
-# Message Templates
+## Message Templates
 
-JSON object with arrays of Message Template IDs and Message Template Text values. They correspond to the **User Responses **field in the Message node and the** Bot Prompts **and **Error Prompts **fields in the[ Entity node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-entity-node/) of the dialog tasks.
+JSON object with arrays of Message Template IDs and Message Template Text values. They correspond to the **User Responses** field in the Message node and the **Bot Prompts** and **Error Prompts** fields in the[ Entity node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-entity-node/) of the dialog tasks.
 
 
 <table>
@@ -178,7 +178,7 @@ JSON object with arrays of Message Template IDs and Message Template Text values
 
 
 
-# Alert Task
+## Alert Task
 
 JSON object consisting of the following translatable components of your assistant’s Alert Tasks.
 
@@ -284,7 +284,7 @@ JSON object consisting of the following translatable components of your assistan
 
 
 
-# Alert Fields
+## Alert Fields
 
 JSON object consisting of the following translatable components in the[ API Request tab](https://developer.kore.ai/docs/bots/bot-builder-tool/alert/notification-tasks/) of the Alert task.
 
@@ -326,7 +326,7 @@ JSON object consisting of the following translatable components in the[ API Requ
 
 
 
-# Bot Filters
+## Bot Filters
 
 JSON object consisting of the following translatable components related to Bot filters
 
@@ -352,7 +352,7 @@ JSON object consisting of the following translatable components related to Bot f
 
 
 
-# IDP Config Form Fields
+## IDP Config Form Fields
 
 JSON object consisting of the following translatable components related to IDP configuration form
 
@@ -378,7 +378,7 @@ JSON object consisting of the following translatable components related to IDP c
 
 
 
-# Pattern Support
+## Pattern Support
 
 We have seen in[ this document](https://developer.kore.ai/docs/bots/how-tos/how-to-use-patterns-for-intents-entities/), how Patterns can be used for Intent detection and Entity extraction. These rules are for VAs in the English language. In other languages, there may be differences. 
 
@@ -836,7 +836,7 @@ Tagalog
 \* in these cases, developer concepts are not supported in entity extraction
 
 
-# NLP Support
+## NLP Support
 
 Here are the NLP features supported by Multilingual VAs:
 

@@ -54,7 +54,7 @@ The bots list is where you can find all the VAs being developed within your acco
 
 
 
-* View **All Bots **which includes **My Bots** i.e bots developed by you and **_Shared Bots_** i.e virtual assistants shared with you for development by co-developers  who are part of your organization’s account (These are marked with a _Shared _icon.). Within this area, you can:
+* View **All Bots** which includes **My Bots** i.e bots developed by you and **_Shared Bots_** i.e virtual assistants shared with you for development by co-developers  who are part of your organization’s account (These are marked with a _Shared_ icon.). Within this area, you can:
     * Search your list of Virtual Assistants.
     * Filter the list restricting it to VAs created by you or shared with you;
     * Sort the list either ascending or descending by name, creation date, date modified, bot owner name;
@@ -76,7 +76,7 @@ The following sections describe the menu options that are available once you ope
 
 ### The Top Menu
 
-This navigation menu has been significantly updated, starting with version 9.0 of the platform. For a comparative list between the 9.0 and earlier versions, please see &lt;a href="https://developer.kore.ai/docs/bots/chatbot-overview/where-to-find-what/.
+This navigation menu has been significantly updated, starting with version 9.0 of the platform. For a comparative list between the 9.0 and earlier versions, please see [Where to find what](href="https://developer.kore.ai/docs/bots/chatbot-overview/where-to-find-what/).
 
 
 
@@ -90,7 +90,7 @@ All the actions available within the Kore.ai XO Platform can be accessed from th
 1. **Landing page icon** – You can use this icon to reach the main VA tab landing page.
 2. **VA implementation actions**:
     * **Build** - This section is where you can work on building your Virtual Assistant.
-    * **Deploy** - Here is where you can configure channels, publish your VA, integrate it with other services, etc**.**
+    * **Deploy** - Here is where you can configure channels, publish your VA, integrate it with other services, etc.
     * **Analyze** – This is where you can find data on your VA’s conversations and performance, as well as NLP, usage and containment metrics.
     * **Manage** – Here is where you can manage the team of developers working on your VA, view your Platform plan, usage and invoices. 
 3. **VA dropdown list** – Lets you switch between the various versions of the current virtual assistant; You can also search and switch to any virtual assistant within your account;

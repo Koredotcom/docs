@@ -1,4 +1,4 @@
-# **Training a Universal Bot**
+# Training a Universal Bot
 
 You can train a Universal Bot to guide it to the most relevant link bot(s) from which the intents are to be identified. You can use a combination of Invocation Phrases and Training Utterances to define the Bot Identification Training.
 
@@ -12,7 +12,7 @@ Training a Universal Bot is essential for the following reasons:
 * You must review the linked bot identification flow from the Utterance Testing module.
 
 
-# **Training**
+## Training
 
 In the following section, we elaborate on the training steps and best practices to make your Universal Bot efficient and functional.
 
@@ -26,14 +26,16 @@ Training a Universal Bot is a three-way process:
 2. Train with Invocation Names that would help identify a specific linked bot;
 3. Train with user utterance for scoping linked bots.
 
-        Inclusive bots need not be trained. If you choose to train the same, the training will not be used for bot scoping but will be used later if the linked bot is deselected as an Inclusive Bot.
+!!! note
 
-Training can be done from the **Build** tab from the top menu, by selecting the **Natural Language **>** Linked Bot Training** option.
+    Inclusive bots need not be trained. If you choose to train the same, the training will not be used for bot scoping but will be used later if the linked bot is deselected as an Inclusive Bot.
+
+Training can be done from the **Build** tab from the top menu, by selecting the **Natural Language > Linked Bot Training** option.
 
 Note the expectation of this document is that you have already created a Universal Bot and have linked bots to the same.[ Refer here for steps](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/creating-a-universal-bot/).
 
 
-## **Invocation Phrases**
+### Invocation Phrases
 
 Invocation Phrases refer to the typical phrases that contain a reference to a specific linked bot and intent from that specific linked bot.
 
@@ -49,7 +51,7 @@ Each invocation phrases constitute the following components
 * **Intent Phrase** would be the task related to the linked bot that the user wants to perform.
 
 
-### **Patterns**
+#### Patterns
 
 The presence of a trigger phrase and invocation name should follow the below-mentioned pattern rules:
 
@@ -149,7 +151,7 @@ or <em>Tell Clea I want today’s schedule</em>
 			
 
 
-### **Trigger Words**
+#### Trigger Words
 
 The following trigger words are supported by default in the platform ([see here for multi-lingual support](https://developer.kore.ai/docs/bots/how-tos/multi-lingual-bot-behavior/#TriggerExit_Phrase_Support)):
 
@@ -179,7 +181,7 @@ The following trigger words are supported by default in the platform ([see here 
 			
 
 
-## **Invocation Names**
+### Invocation Names
 
 The Linked bot’s name is considered an implicit invocation name.
 
@@ -203,7 +205,7 @@ Apart from this, you can define one or more Invocation Names for each of the lin
 			
 
 
-## **Utterances**
+### Utterances
 
 Training utterances refer to the typical ways in which the users are expected to ask for intent from a linked bot. This usually includes the key training utterances used for training the intents of the linked bots. Keep in mind unlike the ML training, these utterances can identify multiple linked bots, not zero it on one.
 
@@ -256,7 +258,7 @@ From the Linked Bot listing page, you can get an overview of their training stat
 			
 
 
-### **Exit Phrase**
+#### Exit Phrase
 
 The following trigger words can be used by the user to exit from an exclusive context of a linked bot.
 
@@ -265,12 +267,12 @@ The following trigger words can be used by the user to exit from an exclusive co
 * Exit
 
 
-## **None Intent**
+### None Intent
 
 The None Intents are used to qualify/disqualify the linked bots based on user utterances defined in them. The None intent is a placeholder that prevents the Machine Learning model from identifying the wrong intent for untrained or ambiguous utterances. For more information, see[ None Intent](https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#None_Intent) and[ Creating a Universal Bot](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/creating-a-universal-bot/#Step_3_Training) articles.
 
 
-## **Configurations**
+### Configurations
 
 For each linked bot, you can set the **Bot Qualification Threshold** as the minimum score needed to qualify the bot for the intent identification process.
 
@@ -295,7 +297,7 @@ By default, it is set to 0.3 and can be set to any value between 0 and 1.
 			
 
 
-## **Fallback Bots**
+### Fallback Bots
 
 You can mark certain bots as fallback bots which would be used for detecting intents when no other bots are identified from other training options.
 
@@ -307,7 +309,7 @@ You can mark certain bots as fallback bots which would be used for detecting int
 * You can change the list of preferred bots at any time to suit the business needs
 
 
-## **Inclusive Bots**
+### Inclusive Bots
 
 Inclusive bots need not be trained with sample utterances to participate in the bot scoping process. These bots will always be considered for Intent Detection at the time of evaluating the user utterances, except when the user invokes a linked bot either using ‘Invocation Phrases’ or ‘Trigger Phrases’. 
  Up to 3 linked bots can be marked as inclusive bots.
@@ -334,7 +336,7 @@ Inclusive bots need not be trained with sample utterances to participate in the 
     A linked bot can be marked either as Fallback or Inclusive, not both.
 
 
-## **Linked Bots**
+### Linked Bots
 
 The information related to the in-context linked bot would be available in the Session context under the following key:
 
@@ -354,7 +356,7 @@ The information related to the in-context linked bot would be available in the S
 			
 
 
-## **Eligible Bots**
+### Eligible Bots
 
 As Universal Bot developer you can assign specific bots to specific end-users so that only the intents from these bots are made available to them.
 
@@ -386,9 +388,9 @@ You can also define the bot behavior when the bot assignments are not provided, 
 			
 
 
-## **Settings**
+### Settings
 
-The configuration settings can be accessed from the **Build** top menu tab, left menu, under **Natural Language > Settings**
+The configuration settings can be accessed from the **Build** top menu tab, left menu, under **Natural Language > Settings**.
 
 The following configurations are to be provided in the Bot Builder so that you can configure these thresholds:
 
@@ -436,14 +438,14 @@ The following configurations are to be provided in the Bot Builder so that you c
 			
 
 
-# **Implementation**
+## Implementation
 
 Let us look at how the Universal Bot works.
 
 The universal bot processes user input in multiple stages to identify the appropriate bot and invoke the appropriate intent.
 
 
-#### **Stage 1 – Scoping of Bots**
+#### Stage 1 – Scoping of Bots
 
 Users should be able to use trigger phrases like “Talk to Salesforce”, “Ask Eva” (Eva being HR bot), or patterns like “Schedule a meeting” or “add a task” to invoke the linked bot.
 
@@ -454,7 +456,7 @@ Users should be able to use trigger phrases like “Talk to Salesforce”, “As
  **Bot** **Eligibility**: Different users may have access to a different set of bots/skills based on their role or association with teams, in the organization. Using the restricted scope, the universal bot will be able to identify a more appropriate bot based on the user’s access controls.
 
 
-#### **Stage 2 – Fork input to linked bots**
+#### Stage 2 – Fork input to linked bots
 
 Once a set of bots has been scoped, the user input is sent to all the in-scope linked bots. The ranking of intents from each of the linked bots is accumulated and further evaluated.
 
@@ -464,12 +466,12 @@ Once a set of bots has been scoped, the user input is sent to all the in-scope l
 * Identified intents are then forwarded back to the universal bot’s ranking and resolver for further evaluation and action.
 
 
-#### **Stage 3 – Ranking and Disambiguation**
+#### Stage 3 – Ranking and Disambiguation
 
 Response from the linked bots is ranked and, if more than one bot is qualified for user input, disambiguated using additional context. If not possible then a disambiguation dialog is presented to the bot user.
 
 
-#### **Stage 4 – Invoke fulfillment**
+#### Stage 4 – Invoke fulfillment
 
 
 
@@ -503,7 +505,7 @@ Response from the linked bots is ranked and, if more than one bot is qualified f
 			
 
 
-## **Next Steps**
+### Next Steps
 
 
 
