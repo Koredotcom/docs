@@ -56,7 +56,7 @@ Click the icon of the channel you want to add, and then configure the channel to
   
   <tr>
    <td><a href="../add-cisco-jabber-channel" target="_blank">Cisco Jabber</a>
-   <br><br><br>
+   <br><br><br><br>
    <a href="../add-cisco-jabber-channel" target="_blank"><img src="../images/logo1-jabber.png" width="50"></a>
    </td>
 
@@ -68,13 +68,13 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 
    <td><a href="../add-cisco-tropo-channel" target="_blank">Cisco Tropo</a>
-   <br><br><br>  
+   <br><br><br><br>  
    <a href="../add-cisco-tropo-channel" target="_blank"><img src="../images/logo3-tropo.png" width="50"></a>
    </td>
 
 
    <td><a href="../add-google-assistant-channel" target="_blank">Google Assistant</a>
-   <br><br><br>  
+   <br><br><br><br><br>  
    <a href="../add-google-assistant-channel" target="_blank"><img src="../images/logo4-google-assistant.png" zoom=60%></a>
    </td>
    <td>
@@ -83,7 +83,7 @@ Click the icon of the channel you want to add, and then configure the channel to
 
   <tr>
    <td><a href="../add-genesys-chat-channel" target="_blank">Genesys Cloud CX Messaging</a>
-   <br>
+   
    <a href="../add-genesys-chat-channel" target="_blank"><img src="../images/logo5-genesys-chat-new-logo.png"></a>
    </td>
 
@@ -126,13 +126,13 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 
    <td><a href="../add-naver-works-channel" target="_blank">Naver Works</a>
-   <br>  
+   <br>
    <a href="../add-naver-works-channel" target="_blank"><img src="../images/logo12-naver.png" width="50"></a>
    </td>
 
 
    <td><a href="../add-nice-incontact-channel" target="_blank">Nice inContact</a>
-   <br><br>
+   <br><br><br>
    <a href="../add-nice-incontact-channel" target="_blank"><img src="../images/logo13-nice.png" width="50"></a>
    </td>
 
@@ -173,20 +173,20 @@ Click the icon of the channel you want to add, and then configure the channel to
   </tr>
 
   <tr>
-   <td><a href="../add-sunshine-conversations-channel" target="_blank">Sunshine Conversations</a>
-   <br><br><br>  
-   <a href="../add-sunshine-conversations-channel" target="_blank"><img src="../images/logo19-sunshine-conversations.png" width="50"></a>
+   <td><a href="../add-sunshine-conversations-channel" target="_blank">Sunshine<br>Conversations</a>
+   <br><br><br><br>  
+   <a href="../add-sunshine-conversations-channel" target="_blank"><img src="../images/logo19-sunshine-conversations.png" width="65"></a>
    </td>
 
 
    <td><a href="../add-syniverse-channel" target="_blank">Syniverse</a>
-   <br><br><br>  
-   <a href="../add-syniverse-channel" target="_blank"><img src="../images/logo20-syniverse.png" width="50"></a>
+   <br><br><br><br>
+   <a href="../add-syniverse-channel" target="_blank"><img src="../images/logo20-syniverse.png" width="65"></a>
    </td>
 
 
    <td><a href="../add-unblu-channel" target="_blank">Unblu</a>
-   <br><br><br>  
+   <br><br><br><br>
    <a href="../add-unblu-channel" target="_blank"><img src="../images/logo21-unblu.png" width="50"></a>
    </td>
 
@@ -203,12 +203,12 @@ Click the icon of the channel you want to add, and then configure the channel to
   
   <tr>
    <td><a href="../add-workplace-by-facebook-channel" target="_blank">Workplace By Facebook</a>
-   <br>
+   <br><br><br>
    <a href="../add-workplace-by-facebook-channel" target="_blank"><img src="../images/logo23-wp-facebook.png" width="50"></a>
    </td>
    
    <td><a href="../add-microsoft-yammer-channel" target="_blank">Yammer</a>
-   <br><br>  
+   <br><br><br>  
    <a href="../add-microsoft-yammer-channel" target="_blank"><img src="../images/logo24-yammer.png" width="50"></a>
    </td>
 
@@ -227,4 +227,40 @@ Click the icon of the channel you want to add, and then configure the channel to
    </td>
   </tr>
   
+</table>
+
+
+### Social Channels
+
+<table>
+  <tr>
+   <td><a href="../add-facebook-messenger-channel" target="_blank">Facebook<br>Messenger</a>
+   <br>  
+   <a href="../add-facebook-messenger-channel" target="_blank"><img src="../images/logo26-fb-messenger.png" width="50"></a>
+   </td>
+
+
+   <td><a href="../add-line-messenger-channel" target="_blank">Line</a>
+   <br><br>  
+   <a href="../add-line-messenger-channel" target="_blank"><img src="../images/logo27-line.png" width="50"></a>
+   </td>
+
+
+   <td><a href="../add-skype-business-onpemise-channel" target="_blank">Skype</a>
+   <br><br>  
+   <a href="../add-skype-business-onpemise-channel" target="_blank"><img src="../images/logo28-skype.png" width="50"></a>
+   </td>
+
+
+   <td><a href="../add-telegram-channel" target="_blank">Telegram</a>
+   <br><br>  
+   <a href="../add-telegram-channel" target="_blank"><img src="../images/logo29-telegram.png" width="50"></a>
+   </td>
+
+
+   <td>
+   </td>
+  </tr>
+
+
 </table>
