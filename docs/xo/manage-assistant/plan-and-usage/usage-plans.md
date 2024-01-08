@@ -75,7 +75,7 @@ When Free credits expire, the following happen:
 			
 
 
-### **Free Credits Utilization**
+### Free Credits Utilization
 
 The usage deduction from the paid balance starts only after the free credits are fully utilized or expired. This ensures that the Free Credits available can be used before they expire.
 
@@ -90,7 +90,7 @@ Here are other important considerations:
 5. You can track the Free Credits usage on the[ Usage Plan Dashboard](https://developer.kore.ai/docs/bots/bot-settings/plan-usage/usage-plans/#Usage_Plan_Dashboard).
 
 
-### **Add Paid Credits**
+### Add Paid Credits
 
 To ensure that your Virtual Assistants in the Workspace respond after your Free Credits have exhausted or expired, you must add **Paid Credits**. The minimum top-up amount is **$100**.
 
@@ -877,7 +877,7 @@ Adding funds can be done either **manually** or by **enabling auto-reload** or a
 3. An invoice is generated automatically after the auto-reload.
 
 
-### **Minimum and Maximum Limits**
+### Minimum and Maximum Limits
 
 The threshold limits for the balance top-up are as follows:
 
@@ -899,20 +899,20 @@ The **maximum top-up amount** for a single transaction is **$20,000** by default
 The following payment modes are available on the Payment page when you add funds to the Platform:
 
 
-### **PayPal (Default Selection)**
+### PayPal (Default Selection)
 
 Link your PayPal email account to the Platform’s payment gateway to add paid credits.
 
 ![alt_text](images/up(24).png "image_tooltip")
 
 
-### **Credit/Debit Card**
+### Credit/Debit Card
 
 Initiate the transaction for paid credits using a valid credit/debit card. Add the _card number_, _account holder’s name_, _expiry date_, and _CVV security code_ to authorize the transaction and validate using an OTP.
 
 ![alt_text](images/up(10).png "image_tooltip")
 
-### **Wire Transfer**
+### Wire Transfer
 
 Select the wire transfer payment mode while adding funds. A wire transfer is a form of electronic payment that sends money directly from one bank account (Payer) to another (Payee). 
 
@@ -932,7 +932,7 @@ Select the wire transfer payment mode while adding funds. A wire transfer is a f
 
 
 
-### **Add Funds and Set up Automatic Reload**
+### Add Funds and Set up Automatic Reload
 
 To set up automatic recharge for your account, follow the steps below:
 
@@ -963,10 +963,9 @@ To set up automatic recharge for your account, follow the steps below:
 You can publish your Virtual Assistants for a Standard Account under the standard or enterprise custom plans. For a standard plan with Free Credits, an **Admin Approval** is required to publish. However, the virtual assistant is **auto-published** when it is enabled for paid plans. For an **Enterprise Custom Plan**, the virtual assistants are auto-published. Please click[ here](https://developer.kore.ai/docs/bots/publish/publishing-bot/) to learn more about publishing a Virtual Assistant.
 
 		
+!!! note
 
-	
-
-**Note**: A messaging channel should be enabled under **Deploy** > **Channels** before publishing a VA.
+      A messaging channel should be enabled under **Deploy** > **Channels** before publishing a VA.
 
 	
 
@@ -984,7 +983,7 @@ You can publish your Virtual Assistants for a Standard Account under the standar
 * You can distribute the paid credits among the shared virtual assistants to publish them.
 
 
-### **Standard Workspace with Free Credits**
+### Standard Workspace with Free Credits
 
 
 
@@ -1009,10 +1008,9 @@ This message indicates using free credits. You can further explore the Platform 
 * Make your VAs production-ready.
 
 		
+!!! note
 
-	
-
-**Note**: The attribution to Kore.ai does not apply to Enterprise and standard accounts with paid credits.
+      The attribution to Kore.ai does not apply to Enterprise and standard accounts with paid credits.
 
 	
 
@@ -1036,7 +1034,7 @@ Virtual assistants in an Enterprise Account are automatically published under th
  
 
 
-### **First Publish Scenarios**
+### First Publish Scenarios
 
 When you first publish a VA after subscribing to a Standard Plan, the following scenarios may apply:
 
@@ -1065,9 +1063,9 @@ For the first publish, you will be automatically upgraded to the Standard accoun
 
 		
 
-	
+!!! note
 
-**Note**: The **Publish Now** button appears when the credits are added, allowing you to publish the VA.
+      The **Publish Now** button appears when the credits are added, allowing you to publish the VA.
 
 	
 
@@ -1087,7 +1085,7 @@ For a successful first VA publish, the following message appears when your accou
  
 
 
-### **Notifications and Alerts for Subsequent Publish**
+### Notifications and Alerts for Subsequent Publish
 
 You can subsequently publish a VA when upgraded to a Standard Plan and have paid and free credit account balances. The system displays notifications for subsequent publish scenarios detailed below based on the availability of free and paid credits:
 
@@ -1160,7 +1158,7 @@ When you try to add funds and a previous payment is in progress for your account
 
 
 
-## **Upgrading a Standard Plan to an Enterprise Custom Plan**
+## Upgrading a Standard Plan to an Enterprise Custom Plan
 
 You can upgrade the **Standard Plan** to an **Enterprise Custom Plan**, which offers premium features like Topic Modeler, Universal Bots, Higher Limits, On-premise Deployments, and more. The custom plan includes **session-based pricing**, 24/7 technical support via **Email**, **Phone** & **Video**, and **program guidance** from our team.
 
@@ -1205,18 +1203,18 @@ The system redirects to the Kore.ai XO Platform[ contact page](https://kore.ai/c
 			
 
 
-## **Admin Console – Plan and Usage**
+## Admin Console – Plan and Usage
 
 An **Admin** user can view and manage all the plan subscriptions for their own account and publish Virtual Assistants on the **Admin Console** like any end user. Additionally, the Admin user can approve VA publish requests from account owners based on their Usage Plan, and manage usage from a single dashboard under the **Billing** section.[ Learn more](https://developer.kore.ai/docs/bots/bot-settings/plan-usage/usage-plans/#Admin_Account).
 
 
-## **Navigating to Plan and Usage**
+## Navigating to Plan and Usage
 
 		
 
-	
+!!! note
 
-**Note**: Only a user with **Admin** privileges can access the Admin Console.
+      Only a user with **Admin** privileges can access the Admin Console.
 
 	
 
@@ -1238,9 +1236,9 @@ To access the **Plan and Usage** feature on the **Admin Console**, follow the st
     ![alt_text](images/up(32).png "image_tooltip")
  		
 
-	
+!!! note
 
-**Note**: The **Billing** > **Plan and Usage** option does not appear on the Admin Console (left menu) for a shared account user.
+      The **Billing** > **Plan and Usage** option does not appear on the Admin Console (left menu) for a shared account user.
 
 	
 
@@ -1249,7 +1247,7 @@ To access the **Plan and Usage** feature on the **Admin Console**, follow the st
 			
 
 
-### **Deployment Flow**
+### Deployment Flow
 
 The admin can take action for a Standard Workspace VA deployment request based on the following scenarios:
 
@@ -1266,7 +1264,7 @@ If the standard workspace has exhausted all the free credits, the admin cannot a
 If a VAt account has paid credits, then the admin user can approve the deployment flow.
 
 
-### **Adding Paid Credits**
+### Adding Paid Credits
 
 The admin can add paid credits to the Standard Workspace in the following scenarios:
 
@@ -1279,7 +1277,7 @@ The admin can add paid credits to the Standard Workspace in the following scenar
 5. To set up the auto-recharge (reload) of credits for one or more bots.[ Learn more](https://developer.kore.ai/docs/bots/bot-settings/plan-usage/usage-plans/#Automatic_Recharge).
 
 
-### **Utilization of Credits**
+### Utilization of Credits
 
 On the **Admin Console**, paid credits in the account are utilized as follows:
 
@@ -1319,7 +1317,7 @@ On the **Admin Console**, paid credits in the account are utilized as follows:
 			
 
 
-## **Emails and Notifications**
+## Emails and Notifications
 
 The Platform sends notifications and marketing emails to the bot developers/account owners at various stages of their Bot-building journey. For the **Usage Plans** feature. In a nutshell, these emails are classified as follows:
 
@@ -1332,7 +1330,7 @@ The Platform sends notifications and marketing emails to the bot developers/acco
 * Publish and Other Update Emails.
 
 
-### **System-Triggered Email Templates**
+### System-Triggered Email Templates
 
 The following table describes the automatic emails triggered by the system when an event occurs:
 
@@ -1756,7 +1754,7 @@ When there are no free credits to back up the zero balance for paid credits, thi
 			
 
 
-## **Change the Bot Owner**
+## Change the Bot Owner
 
 Similar to how the Admin user can change a Bot owner on the Bot Admin Console (BAC), the workspace owner or admin can also transfer the bot ownership from one user to another on the **Plan and Usage** page – for both published and unpublished bots.
 
@@ -1773,7 +1771,7 @@ Please note the following considerations when using this feature:
 4. The new bot owner can manage the bot settings, tasks, and plans.
 
 
-## **Steps to Change the Bot Owner**
+## Steps to Change the Bot Owner
 
 To change the Bot owner, follow the steps mentioned below:
 
@@ -1842,7 +1840,7 @@ A success confirmation message appears, and The bot owner is updated on the **Te
 			
 
 
-## **Manage the Usage & Plan Details**
+## Manage the Usage & Plan Details
 
 The Kore.ai XO Platform allows an authorized Admin user to manage the plans and billing information both in the Platform and on the Bot Admin Console (BAC). The workspace owner or master admin can transfer the bot ownership from one user to another and grant him the admin role. Once the Admin role is transferred, they can manage the **Plan and Usage** details – for both published and unpublished bots.
 
@@ -1858,7 +1856,7 @@ Please note the following considerations when using this feature:
 4. The new bot owner can manage the bot settings, tasks, upgrade plans, and change billing order.
 
 
-## **Manage the Plan Details in the XO Platform**
+## Manage the Plan Details in the XO Platform
 
 Steps to manage the Usage and Plan details in the XO Platform:
 
@@ -1880,7 +1878,7 @@ Steps to manage the Usage and Plan details in the XO Platform:
 8. On the Usage Plan page, you can add funds or upgrade plan details. For information, see the[ Add Funds to Your Plan](https://developer.kore.ai/docs/bots/bot-settings/plan-usage/usage-plans/#Add_Funds_to_your_Account_to_Buy_Paid_Credits) </span>section.
 
 
-#### **Manage the Plan Details in Bot Admin Console**
+#### Manage the Plan Details in Bot Admin Console
 
 Steps to manage the Usage and Plan details in BAC:
 

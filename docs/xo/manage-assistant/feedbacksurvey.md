@@ -37,7 +37,7 @@ The Kore.ai XO Platform allows you to design and create feedback surveys for pro
 			
 
 
-## **Navigating to Feedback Survey**
+## Navigating to Feedback Survey
 
 To navigate to the Feedback Survey feature, follow the steps below:
 
@@ -61,12 +61,12 @@ To navigate to the Feedback Survey feature, follow the steps below:
 			
 
 
-## **Feedback Template Types**
+## Feedback Template Types
 
 The Platform provides the following in-built feedback template types, to create and define a feedback survey:
 
 
-### **NPS Scale Categorization**
+### NPS Scale Categorization
 
 Known as the **_New Promoter Score_**, this is a standard customer experience metric that measures the experience and loyalty of customers based on their feedback responses. For a single-question survey, respondents give a rating between 0 (not at all likely) and 10 (extremely likely), and based on their response, they fall into one of the following NPS score categories:
 
@@ -118,7 +118,7 @@ Known as the **_New Promoter Score_**, this is a standard customer experience me
 			
 
 
-### **CSAT Score Categorization**
+### CSAT Score Categorization
 
 **CSAT** or **Customer SATisfaction** is a customer experience metric that measures or quantifies how happy the customer is with a Virtual Assistant interaction. The customer is asked to rate on a **five-point scale**, **1** meaning very satisfied and **5** meaning very unsatisfied, for a survey question like “_How satisfied were you with the conversation?_” The response score is mapped to the relevant category as shown below:
 
@@ -166,7 +166,7 @@ Known as the **_New Promoter Score_**, this is a standard customer experience me
  
 
 
-### **Like/Dislike**
+### Like/Dislike
 
 The customer is asked to respond to the feedback survey by clicking a **Like** or **Dislike** icon. **Like** or **Extremely Likely** denotes the customer’s positive experience and is allocated a score of 1 internally. **Dislike** or **Extremely Unlikely** indicates a negative customer experience, and is allocated a score of 0 internally.
 
@@ -181,7 +181,7 @@ The customer is asked to respond to the feedback survey by clicking a **Like** o
 			
 
 
-## **Feedback Survey Creation and Definition**
+## Feedback Survey Creation and Definition
 
 To create a Feedback Survey on the Bot Builder, follow the steps below:
 
@@ -208,7 +208,7 @@ To create a Feedback Survey on the Bot Builder, follow the steps below:
 The Feedback Survey definition and design flow steps are given below:
 
 
-### **Step 1: Define the Survey Details**
+### Step 1: Define the Survey Details
 
 In this section, you can define a survey name and the type you want to use. To define the survey details, follow the steps below:
 
@@ -223,7 +223,7 @@ In this section, you can define a survey name and the type you want to use. To d
 
 
 
-### **Step 2: Define the Survey Design**
+### Step 2: Define the Survey Design
 
 You can define how to present the survey in the **Survey Design** stage which includes the following:
 
@@ -325,7 +325,7 @@ To define the survey design, follow the steps below:
 2. Click **Next** to move to the survey launch configuration.
 
 
-### **Step 3: Define Launch Configuration**
+### Step 3: Define Launch Configuration
 
 After defining the survey, you can choose how and when to launch the survey in one of the following ways with the **Launch Configuration**:
 
@@ -366,7 +366,7 @@ To configure the feedback survey launch, follow the steps below:
 			
 
 
-## **Feedback Survey Dialog Flow**
+## Feedback Survey Dialog Flow
 
 After you’ve created the survey, you can view the built-in survey flow as a dialog task under **Build** > **Conversational Skills** > **Dialog Tasks** on the left menu.
 

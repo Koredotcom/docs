@@ -145,8 +145,7 @@ To invite users to your Kore.ai XO Platform account, follow these steps:
     !!! note
 
         You can choose to invite a single user or bulk users.
-    Note: You can choose to invite a single user or bulk users.
-    ```
+   
 
 
 5. When the invited user accepts the invitation, they are redirected to the Sign-up page.
@@ -176,14 +175,13 @@ After a user is invited to an account, the administrator can enable the XO Platf
 
     ![alt_text](images/accplatform(4).png "image_tooltip")
 
-4. From the _Actions _drop-down list, select **XO Platform** Access and click Apply.
+4. From the _Actions_ drop-down list, select **XO Platform** Access and click Apply.
     ![alt_text](images/accplatform(14).png "image_tooltip")
-    !!! note
-        
-        The XO Platform access provided for an account gives permission to build and manage bots only in that account.
 
 
+!!! note
 
+    The XO Platform access provided for an account gives permission to build and manage bots only in that account.
 
 
 
@@ -274,7 +272,11 @@ To create your Workspace, you will need to provide a **Name**, and invite the fi
 
 After the Workspace has been created, Administrators can invite new members using the **Invite** option on the main landing page, in the top navigation menu.
 
-**Note**: By default, the **Invite Members** option at the Builder level is visible for the admins with the ‘Master Admin’ role. For admins with custom administrator roles, the **Invite** permission should be enabled in the role management.
+!!! note
+
+    By default, the **Invite Members** option at the Builder level is visible for the admins with the ‘Master Admin’ role. For admins with custom administrator roles, the **Invite** permission should be enabled in the role management.
+
+
 
  
 ![alt_text](images/accplatform(1).gif "image_tooltip")

@@ -1,5 +1,5 @@
 
-# **Multilingual Virtual Assistant Behavior**
+# Multilingual Virtual Assistant Behavior
 
 	
 
@@ -20,7 +20,7 @@ In the case of multi-lingual bots, while much of the bot behavior does not chang
 			
 
 
-## **Pattern Support**
+## Pattern Support
 
 We have seen in [this document](https://developer.kore.ai/docs/bots/how-tos/how-to-use-patterns-for-intents-entities/), how Patterns can be used for Intent detection and Entity extraction. Those rules are for bots in the English language. Though the multilingual bots honor those rules, the language semantics impose some restrictions.
 
@@ -498,7 +498,7 @@ Tagalog
 			
 
 
-## **NLP Support**
+## NLP Support
 
 Here we will list out the NLP features and their support.
 
@@ -1012,7 +1012,7 @@ Hindi
 			
 
 
-## **Universal Bot Support**
+## Universal Bot Support
 
 Here we will list out, language-wise, the trigger phrases used in training the Universal bot ([see here](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/training-a-universal-bot/)) in the supported languages.
 

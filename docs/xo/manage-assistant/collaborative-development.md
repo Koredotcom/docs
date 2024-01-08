@@ -8,12 +8,12 @@ Kore.ai allows cross-domain Bot sharing. You can share your Bot with one or more
 	
 
 
-## **Sharing Bots**
+## Sharing Bots
 
 There are two ways of sharing a Bot with your co-developers – from Bot Builder or from Bot Admin Console (as Account Admin).
 
 
-### **From the Bot Builder**
+### From the Bot Builder
 
 
 
@@ -54,7 +54,7 @@ To add users to workspace and invite them to access your virtual assistant from 
 			
 
 
-### **Change Bot Share Settings**
+### Change Bot Share Settings
 
 From the Bot Builder you can manage the developers working on your Bot. From the settings (gear) icon against each Developer you can:
 
@@ -78,7 +78,7 @@ From the Bot Builder you can manage the developers working on your Bot. From the
 			
 
 
-### **From Bot Admin Console**
+### From Bot Admin Console
 
 To share a bot with a developer or another user, if you do not have permission to invite new developers, it is essential for the Bot Admin to send an invitation to the developer and assign Bot Developer access. 
  Here are the steps for the account Admin to add users to your account.
@@ -115,7 +115,7 @@ To share a bot with a developer or another user, if you do not have permission t
 			
 
 
-### **Assign Bot Builder Access**
+### Assign Bot Builder Access
 
 You can make changes to the Bot user settings by modifying the **User Profile settings** from the **Bot Admin Console**.
 
@@ -132,7 +132,7 @@ Double click on the Bot User that you want to change the settings for and you ca
 			
 
 
-### **Working with Shared Bots**
+### Working with Shared Bots
 
 When a task, channel, or flow is claimed, the lock expires after 30 minutes, or when you exit the editing mode for the task, channel, or flow, whichever comes first. After 25 minutes, you are prompted to extend the lock, if desired. If you do not extend the lock before 30 minutes has elapsed, your changes are automatically saved, editing mode is ended, and the claim lock is removed.
 
