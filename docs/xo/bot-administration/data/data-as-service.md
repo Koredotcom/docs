@@ -2,7 +2,7 @@
 
 Kore.ai’s Data offering lets you define Data Tables, Table Views, and manipulate them from your Virtual Assistant. You can also view the definition of the data table or table view assigned to the VA and provide correct data mappings based on the data types for the table columns.
 
-This section deals with the manipulation aspect using the [Service Node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-service-node/){:target="_blank"} within a Dialog Task of your Virtual Assistant. For details on the data definition, [refer here](../data-services/){:target="_blank"}.
+This section deals with the manipulation aspect using the [Service Node](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node/){:target="_blank"} within a Dialog Task of your Virtual Assistant. For details on the data definition, [refer here](../data-services/){:target="_blank"}.
 
 
 ## Service Call – Table
@@ -13,7 +13,7 @@ From the assigned bots for any given data table/table view, you can query and ma
 
 1. Open the Bot and the Dialog Task where you want to access the data.
 2. Add a Service Node at the appropriate location in the process flow.
-3. [Click here](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-service-node/){:target="_blank"} for details on Service Node. Here we will be listing the configurations for Data Table integration.
+3. [Click here](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node/){:target="_blank"} for details on Service Node. Here we will be listing the configurations for Data Table integration.
 4. Component Properties configuration
     1. **General Settings** section
         
@@ -215,7 +215,7 @@ From the assigned bots for any given data table/table view, you can query and ma
 
 1. Open the Bot and the Dialog Task where you want to access the data.
 2. Add a Service Node at the appropriate location in the process flow.
-3. [Click here](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-service-node/){:target="_blank"} for details on Service Node. Here we will be listing the configurations for Data Table integration.
+3. [Click here](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node/){:target="_blank"} for details on Service Node. Here we will be listing the configurations for Data Table integration.
 4. Component Properties configuration
     1. **General Settings** section
         * **Name** – enter a name for the node;

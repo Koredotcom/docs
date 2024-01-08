@@ -98,7 +98,7 @@ To retrieve the Button ID, follow these steps:
 
     <img src="../images/configuring-the-salesforce-agent-img9.png" alt="Button ID" title="Button ID" style="border: 1px solid gray;zoom:80%;"/>
 
-    The Button ID is the string of characters after the last slash / in the URL. For example: https://meya-dev-ed.my.salesforce.com/5731I000000PL9G
+    The Button ID is the string of characters after the last slash / in the URL. For example: [https://meya-dev-ed.my.salesforce.com/5731I000000PL9G](https://meya-dev-ed.my.salesforce.com/5731I000000PL9G){:target="_blank"}
 
 4. Copy and save it for future use.
 
@@ -129,13 +129,13 @@ To retrieve the Button ID, follow these steps:
 
     <img src="../images/configuring-the-salesforce-agent-img12.png" alt="customize the channel mapping" title="customize the channel mapping" style="border: 1px solid gray;zoom:80%;"/>
 
-8. Click Manage to map the channels you want to use Salesforce agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/){:target="_blank"}.
+8. Click Manage to map the channels you want to use Salesforce agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
 
     <img src="../images/configuring-the-salesforce-agent-img13.png" alt="Map channels to use SF agent" title="Map channels to use SF agent" style="border: 1px solid gray;zoom:80%;"/>
 
 9. After mapping channels, click **Done**.
 10. Click **Save** to enable the Salesforce agent.
-11. Publish the VA. For more information, see [Publishing Bot](https://developer.kore.ai/docs/bots/publish/publishing-bot/){:target="_blank"}.
+11. Publish the VA. For more information, see [Publishing Bot](../../../../deploy/publishing-bot/){:target="_blank"}.
 
 
 ## Execution
