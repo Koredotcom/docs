@@ -253,11 +253,23 @@ Click the icon of the channel you want to add, and then configure the channel to
    <br><br>  
    <a href="../add-telegram-channel" target="_blank"><img src="../images/logo29-telegram.png" width="50"></a>
    </td>
+  </tr>
 
+  <tr>
+   <td><a href="../add-twitter-channel" target="_blank">Twitter</a>
+   <br>  
+   <a href="../add-twitter-channel" target="_blank"><img src="../images/logo30-twitter.png" width="50"></a>
+   </td>
+
+   <td><a href="../add-wechat-telegram" target="_blank">WeChat</a>
+     
+   <td><a href="../add-wechat-telegram" target="_blank"><img src="../images/logo31-we-chat.png" width="50"></a>
+   </td>
 
    <td>
    </td>
+
+   <td>
+   </td> 
   </tr>
-
-
 </table>
