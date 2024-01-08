@@ -49,3 +49,42 @@ To enable/disable or delete the channel, hover over it in the channels list and 
 Below is a list of all channels you can connect to via the Kore.ai XO Platform:
 
 Click the icon of the channel you want to add, and then configure the channel to work with your Kore.ai bot. The page with Instructions and Configuration settings will slide out.
+
+<table>
+  <tr>
+   <td colspan="5" ><strong>Enterprise Channels</strong>
+   </td>
+   <td>
+   </td>
+  </tr>
+
+
+  <tr>
+   <td><a href="../add-cisco-jabber-channel" target="_blank">Cisco Jabber</a>
+
+
+   <a href="../add-cisco-jabber-channel" target="_blank"><img src="../images/logo1-jabber.png"></a>
+   </td>
+
+
+   <td><a href="../add-cisco-channel" target="_blank">Cisco Webex Teams (formerly Cisco Spark)</a>
+     
+   <a href="../add-cisco-channel" target="_blank"><img src="../images/logo2-cisco-webex-teams.png"></a>
+   </td>
+
+
+   <td><a href="../add-cisco-tropo-channel" target="_blank">Cisco Tropo</a>
+     
+   <a href="../add-cisco-tropo-channel" target="_blank"><img src="../images/logo3-tropo.png"></a>
+   </td>
+
+
+   <td><a href="../add-google-assistant-channel" target="_blank">Google Assistant</a>
+     
+   <a href="../add-google-assistant-channel" target="_blank"><img src="../images/logo4-google-assistant.png"></a>
+   </td>
+   <td>
+   </td>
+  </tr>
+  
+</table>
