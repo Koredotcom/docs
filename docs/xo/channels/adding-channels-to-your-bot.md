@@ -262,7 +262,7 @@ Click the icon of the channel you want to add, and then configure the channel to
    </td>
 
    <td><a href="../add-wechat-telegram" target="_blank">WeChat</a>
-     
+   <br>  
    <td><a href="../add-wechat-telegram" target="_blank"><img src="../images/logo31-we-chat.png" width="50"></a>
    </td>
 
@@ -272,4 +272,41 @@ Click the icon of the channel you want to add, and then configure the channel to
    <td>
    </td> 
   </tr>
+</table>
+
+
+### Voice Channels
+
+<table>
+ <tr>
+   <td><a href="../amazon-alexa" target="_blank">Amazon Alexa</a>
+   <br><br>
+   <a href="../amazon-alexa" target="_blank"><img src="../images/logo32-alexa.png" width="50"></a>
+   </td>
+
+
+   <td><a href="../ivr-audio-codes">IVR–AudioCodes</a>
+   <br><br>
+   <a href="../ivr-audio-codes"><img src="../images/logo33-audiocodes.png" width="50"></a>
+   </td>
+
+
+   <td><a href="../IVR-integration">IVR</a>
+   <br><br>
+   <a href="../IVR-integration"><img src="../images/logo34-ivr.png" width="50"></a>
+   </td>
+
+
+   <td><a href="../add-twilio-voice-channel" target="_blank">Twilio Voice</a>
+   <br><br>
+   <a href="../add-twilio-voice-channel" target="_blank"><img src="../images/logo35-twilio.png" width="50"></a>
+   </td>
+
+
+   <td><a href="../smart-assist-gateway" target="_blank">SmartAssist<br>Gateway</a>
+   <br>  
+   <a href="../smart-assist-gateway" target="_blank"><img src="../images/logo36-smart-assist.png" width="50"></a>
+   </td>
+  </tr>
+  
 </table>
