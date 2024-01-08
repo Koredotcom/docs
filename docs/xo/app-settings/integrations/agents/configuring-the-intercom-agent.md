@@ -95,7 +95,7 @@ To set up Intercom to receive messages, you will first need to create an app in 
 
 8. After mapping channels, click **Done**.
 9. Click **Save** to enable the Intercom agent.
-10. Publish the VA. For more information, see [Publishing Bot](../../.././deploy/publishing-bot/){:target="_blank"}.
+10. Publish the VA. For more information, see [Publishing Bot](../../../../deploy/publishing-bot/){:target="_blank"}.
 
 
 ## Execution

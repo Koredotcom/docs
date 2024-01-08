@@ -28,7 +28,7 @@ From the assigned bots for any given data table/table view, you can query and ma
         * **Choose a Data Table** – You can choose from the list, these are the data tables assigned to this bot.
         * **Actions** – Select the action you would like to perform:
             * _Add Data_ – to add data ([see below for details](#add-data));
-            * _Get Data_ – to fetch data from the table ([see below for details](#get-data);
+            * _Get Data_ – to fetch data from the table ([see below for details](#get-data));
             * _Update Data_ – to modify existing data ([see below for details](#update-data));
             * _Delete data_ – to delete rows from the data table ([see below for details](#delete-data)).
 
