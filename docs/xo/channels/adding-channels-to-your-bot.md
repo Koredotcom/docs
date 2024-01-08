@@ -56,20 +56,20 @@ Click the icon of the channel you want to add, and then configure the channel to
   
   <tr>
    <td><a href="../add-cisco-jabber-channel" target="_blank">Cisco Jabber</a>
-   <br><br><br>
-   <a href="../add-cisco-jabber-channel" target="_blank"><img src="../images/logo1-jabber.png"></a>
+   <br><br>
+   <a href="../add-cisco-jabber-channel" target="_blank"><img src="../images/logo1-jabber.png" width="50"></a>
    </td>
 
 
    <td><a href="../add-cisco-channel" target="_blank">Cisco Webex Teams (formerly Cisco Spark)</a>
    <br>
-   <a href="../add-cisco-channel" target="_blank"><img src="../images/logo2-cisco-webex-teams.png"></a>
+   <a href="../add-cisco-channel" target="_blank"><img src="../images/logo2-cisco-webex-teams.png" width="50"></a>
    </td>
 
 
    <td><a href="../add-cisco-tropo-channel" target="_blank">Cisco Tropo</a>
-   <br><br><br>  
-   <a href="../add-cisco-tropo-channel" target="_blank"><img src="../images/logo3-tropo.png"></a>
+   <br><br>  
+   <a href="../add-cisco-tropo-channel" target="_blank"><img src="../images/logo3-tropo.png" width="50"></a>
    </td>
 
 
@@ -84,44 +84,44 @@ Click the icon of the channel you want to add, and then configure the channel to
   <tr>
    <td><a href="../add-genesys-chat-channel" target="_blank">Genesys Cloud CX Messaging</a>
    <br><br>  
-   <a href="../add-genesys-chat-channel" target="_blank"><img src="../images/logo5-genesys-chat-new-logo.png"></a>
+   <a href="../add-genesys-chat-channel" target="_blank"><img src="../images/logo5-genesys-chat-new-logo.png" width="50"></a>
    </td>
 
 
    <td><a href="../add-google-business-messaging-channel" target="_blank">Google Business Messaging</a>
-   <br><br><br>  
-   <a href="../add-google-business-messaging-channel" target="_blank"><img src="../images/logo6-gbm.png"></a>
+   <br><br>  
+   <a href="../add-google-business-messaging-channel" target="_blank"><img src="../images/logo6-gbm.png" width="50"></a>
    </td>
 
 
    <td><a href="../add-google-chat" target="_blank">Google Chat</a>
-     
-      <a href="../add-google-chat" target="_blank"><img src="../images/logo7-google-chat.png" width="50"></a>
+   <br><br>  
+   <a href="../add-google-chat" target="_blank"><img src="../images/logo7-google-chat.png" width="50"></a>
    </td>
 
 
    <td><a href="../add-kore-channel" target="_blank">Kore.ai</a>
    <br><br>  
-   <a href="../add-kore-channel" target="_blank"><img src="../images/logo8-kore-ai.png"></a>
+   <a href="../add-kore-channel" target="_blank"><img src="../images/logo8-kore-ai.png" width="50"></a>
    </td>
 
 
    <td><a href="../add-live-person-channel" target="_blank">Live Person</a>
    <br><br>  
-   <a href="../add-live-person-channel" target="_blank"><img src="../images/logo9-live-person.png"></a>
+   <a href="../add-live-person-channel" target="_blank"><img src="../images/logo9-live-person.png" width="50"></a>
    </td>
   </tr>
 
   <tr>
    <td><a href="../add-mattermost-channel" target="_blank">Mattermost</a>
    <br><br> 
-   <a href="../add-mattermost-channel" target="_blank"><img src="../images/logo10-mattermost.png"></a>
+   <a href="../add-mattermost-channel" target="_blank"><img src="../images/logo10-mattermost.png" width="50"></a>
    </td>
 
 
    <td><a href="../add-microsoft-teams-channel" target="_blank">Microsoft Teams</a>
    <br><br>  
-   <a href="../add-microsoft-teams-channel" target="_blank"><img src="../images/logo11-ms-teams.png"></a>
+   <a href="../add-microsoft-teams-channel" target="_blank"><img src="../images/logo11-ms-teams.png" width="50"></a>
    </td>
 
 
@@ -132,14 +132,43 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 
    <td><a href="../add-nice-incontact-channel" target="_blank">Nice inContact</a>
-   <br><br>  
-   <a href="../add-nice-incontact-channel" target="_blank"><img src="../images/logo13-nice.png"></a>
+   <br>
+   <a href="../add-nice-incontact-channel" target="_blank"><img src="../images/logo13-nice.png" width="50"></a>
    </td>
 
 
    <td><a href="../add-google-rcs-channel" target="_blank">RCS Business Messaging</a>
    <br>  
-   <a href="../add-google-rcs-channel" target="_blank"><img src="../images/logo14-rcs.png"></a>
+   <a href="../add-google-rcs-channel" target="_blank"><img src="../images/logo14-rcs.png" width="50"></a>
+   </td>
+  </tr>
+
+  <tr>
+   <td><a href="../add-ringcentral-glip-channel" target="_blank">Glip by RingCentral</a>
+   <br>  
+   <a href="../add-ringcentral-glip-channel" target="_blank"><img src="../images/logo15-glip.png" width="50"></a>
+   </td>
+
+
+   <td><a href="../add-ringcentral-engage-channel" target="_blank">Ringcentral Engage</a>
+   <br><br>  
+   <a href="../add-ringcentral-engage-channel" target="_blank"><img src="../images/logo16-ring-central.png" width="50"></a>
+   </td>
+
+
+   <td><a href="../add-skype-business-channel" target="_blank">Skype for Business</a>
+   <br>  
+   <a href="../add-skype-business-channel" target="_blank"><img src="../images/logo17-skype-business.png" width="50"></a>
+   </td>
+
+
+   <td><a href="../add-slack-channel" target="_blank">Slack</a>
+   <br><br>  
+   <a href="../add-slack-channel" target="_blank"><img src="../images/logo18-slack.png" width="50"></a>
+   </td>
+
+   
+   <td>
    </td>
   </tr>
   
