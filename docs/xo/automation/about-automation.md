@@ -9,25 +9,25 @@ Learn how to use the Experience Optimization (XO) Platform that seamlessly blend
     <kr-grid-item>
         <img src="../images/xop-sm-uc.svg" style="zoom:150%;"></img>
         <kr-grid-title>Use Cases</kr-grid-title>
-        <kr-grid-desc>The Platform offers robust integration capabilities, enabling seamless connection with various systems and services. This ensures that your virtual assistant can work in harmony with your existing tools and infrastructure.</kr-grid-desc>
+        <kr-grid-desc>Use Cases are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent.</kr-grid-desc>
         <a href="">Learn More</a>
     </kr-grid-item>
     <kr-grid-item>
         <img src="../images/xop-sm-nl.svg" style="zoom:150%;"></img>
         <kr-grid-title>Natural Language</kr-grid-title>
-        <kr-grid-desc>The Platform provides omnichannel support, allowing your virtual assistant to engage with users across multiple channels such as web, mobile, and messaging apps. This ensures consistent and efficient customer interactions.</kr-grid-desc>
+        <kr-grid-desc>Leverage the Platform’s NLP capabilities to train and optimize your automation workflows to handle complex use cases.</kr-grid-desc>
         <a href="">Learn More</a>
     </kr-grid-item>
     <kr-grid-item>
         <img src="../images/xop-sm-inteligence.svg" style="zoom:150%;"></img>
         <kr-grid-title>Intelligence</kr-grid-title>
-        <kr-grid-desc>Kore.ai’s virtual assistant is equipped with multilingual capabilities, enabling it to understand and communicate in different languages. This feature helps you cater to a diverse user base and expand your global reach.</kr-grid-desc>
+        <kr-grid-desc>Empower your automation workflows to handle nuances of human conversations, including interruptions, clarifications, and more.</kr-grid-desc>
         <a href="">Learn More</a>
     </kr-grid-item>    
     <kr-grid-item>
         <img src="../images/xop-sm-test.svg" style="zoom:150%;"></img>
         <kr-grid-title>Testing</kr-grid-title>
-        <kr-grid-desc>The Platform offers comprehensive lifecycle management tools for your virtual assistant. This includes features for development, testing, deployment, and ongoing maintenance, ensuring your virtual assistant remains efficient and up-to-date.</kr-grid-desc>
+        <kr-grid-desc>Use an extensive suite of features to conduct rigorous testing of your automation workflows to ensure everything works as expected. Find and fix problems before they reach your users.</kr-grid-desc>
         <a href="">Learn More</a>
     </kr-grid-item>    
 </kr-grid>
