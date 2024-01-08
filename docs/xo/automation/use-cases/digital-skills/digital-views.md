@@ -30,7 +30,7 @@ Here are the steps we recommend for efficient design of Digital Views:
 1. **Set up**: Panels are containers to host one or more widgets. You may create multiple panels and each panel can host widgets that present relevant information. Widgets are the interactive components that can contain information to be presented to the end-users and allow them to perform actions and follow-ups.
 2. **Configure**: Define widgets by connecting them either to your tasks or by directly defining the widget. If you have connected your widget to a Dialog Task, make sure to use a Message node to present the required information in the widget using any of the supported widget templates.
 3. **Preview & Publish**: Preview your widgets from the XO Platform to review the visual representation of the information. Enable the WidgetSDK channel and publish your panels and widgets to make them available for your end-users.
-4. **Host with Kore.ai SDK / Host Independently**: You can choose to host your widgets independently or co-host them along with the WebSDK. You can download the SDKs from the [Kore.ai GitHub page](https://github.com/Koredotcom/web-kore-sdk).
+4. **Host with Kore.ai SDK / Host Independently**: You can choose to host your widgets independently or co-host them along with the WebSDK. You can download the SDKs from the <a href="https://github.com/Koredotcom/web-kore-sdk" target="_blank">Kore.ai GitHub page</a>.
 
 ## General Setup
 

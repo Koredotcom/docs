@@ -38,7 +38,7 @@ This means the VA can respond faster to user input and provide the correct task 
 To add or edit **Field Memory** settings for a task, follow the steps below:
 
 1. Click the **Task Name** to display the associated **Task Fields**; then click the **Edit** icon to display the **Field Memory** window. In the **Field Memory** dialog, you can specify the following options:
-    * **Entity Type** – Select the type of data that the NLP interpreter should expect as input to enhance recognition and performance. <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/entity-types/" target="_blank">Learn more</a>.
+    * **Entity Type** – Select the type of data that the NLP interpreter should expect as input to enhance recognition and performance. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/entity-types/" target="_blank">Learn more</a>.
     * **Memory User-Provided Value** – Enable or disable persistence of data provided by the user for a specified time. One of: 
 **No, do not memorize** – The user’s data for this field is not persisted after the task is completed.**Yes, memorize this value** – The field value is persisted for the time specified in minutes.
 2. Click **Save** to save the settings and close the **Field Memory** window.

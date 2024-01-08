@@ -70,7 +70,7 @@ While using synonyms is great for words used in the name, users may sometimes re
 
 For example, a task name might be _Get Current Weather_, but the user inputs, _What’s happening with today’s rain situation?_. In such cases, none of the words used in the task name are used, yet the input has the same meaning. To optimize the accuracy and recognition of the NLP interpreter for your VA, you can create patterns.
 
-When the [NLP](https://kore.ai/platform/design-and-build/natural-language-processing/) interpreter matches a synonym to one task or field, and a pattern to a different task or field, the pattern match is prioritized and used for recognition over the synonym match.
+When the <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlp-introduction/" target="_blank">NLP</a> interpreter matches a synonym to one task or field, and a pattern to a different task or field, the pattern match is prioritized and used for recognition over the synonym match.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
