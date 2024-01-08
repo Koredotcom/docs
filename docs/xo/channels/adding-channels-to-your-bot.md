@@ -261,9 +261,9 @@ Click the icon of the channel you want to add, and then configure the channel to
    <a href="../add-twitter-channel" target="_blank"><img src="../images/logo30-twitter.png" width="50"></a>
    </td>
 
-   <td><a href="../add-wechat-telegram" target="_blank">WeChat</a>
+   <td><a href="../add-wechat-telegram" target="_blank">WeChat<br><img src="../images/logo31-we-chat.png" width="50"></a>
    <br>  
-   <td><a href="../add-wechat-telegram" target="_blank"><img src="../images/logo31-we-chat.png" width="50"></a>
+   <a href="../add-wechat-telegram" target="_blank"><img src="../images/logo31-we-chat.png" width="50"></a>
    </td>
 
    <td>
@@ -305,8 +305,41 @@ Click the icon of the channel you want to add, and then configure the channel to
 
    <td><a href="../smart-assist-gateway" target="_blank">SmartAssist<br>Gateway</a>
    <br>  
-   <a href="../smart-assist-gateway" target="_blank"><img src="../images/logo36-smart-assist.png" width="50"></a>
+   <a href="../smart-assist-gateway" target="_blank"><img src="../images/logo36-smart-assist.png" width="90"></a>
    </td>
   </tr>
   
+</table>
+
+
+### Other Channels
+
+<table>
+<tr>
+   <td><a href="../add-email-channel" target="_blank">Email</a>
+   <br><br>
+   <a href="../add-email-channel" target="_blank"><img src="../images/logo37-email.png" width="50"></a>
+   </td>
+
+   <td><a href="../add-twilio-sms-channel" target="_blank">Twilio SMS</a>
+   <br><br>
+   <a href="../add-twilio-sms-channel" target="_blank"><img src="../images/logo35-twilio.png" width="50"></a>
+   </td>
+
+   <td><a href="../add-web-mobile-client" target="_blank">Web/Mobile<br>Client</a>
+   <br>
+   <a href="../add-web-mobile-client" target="_blank"><img src="../images/logo39-webmobile.png" width="50"></a>
+   </td>
+
+   <td><a href="../add-webhook-channel" target="_blank">Webhook</a>
+   <br><br>
+   <a href="../add-webhook-channel" target="_blank"><img src="../images/logo40-webhook.png" width="50"></a>
+   </td>
+
+   <td><a href="../add-widget-sdk-channel" target="_blank">Widget SDK</a>
+   <br>
+   <a href="../add-widget-sdk-channel" target="_blank"><img src="../images/logo39-webmobile.png" width="50"></a>
+   </td>
+  
+  </tr>
 </table>
