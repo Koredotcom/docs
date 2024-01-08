@@ -87,13 +87,13 @@ To enable the NiceInContact, follow these steps:
         This option is available only when multiple agents are configured for your VA.
 
 7. You can customize the channel mapping by clicking the Manage link.
-8. Click Manage to map the channels you want to use to the Nice InContact User Hub agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/){:target="_blank"}.
+8. Click Manage to map the channels you want to use to the Nice InContact User Hub agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
 9. After mapping channels, click **Done**.
 
     <img src="../images/configuring-the-niceincontact-userhub-img4.png" alt="Mapping channels" title="Mapping channels" style="border: 1px solid gray;">
 
 10. Click **Save** to enable the NiceInContact agent.
-11. Publish the VA. For more information, see [Publishing Bot](https://developer.kore.ai/docs/bots/publish/publishing-bot/){:target="_blank"}.
+11. Publish the VA. For more information, see [Publishing Bot](../../../../deploy/publishing-bot/){:target="_blank"}.
 
 
 ## Execution

@@ -93,7 +93,7 @@ NLP Insights have Intent Identified, Intent Not Identified utterances and their 
 
 <img src="../images/external-nlu-test-and-debug-img11.png" alt="Failed External NLU API calls" title="Failed External NLU API calls" style="border: 1px solid gray;zoom:50%;"/>
 
-For more information, see [NLP Insights](../../../../analytics/automations/nlp-insights){:target="_blank"}.
+For more information, see [NLP Insights](../../../../analytics/automation/nlp-insights){:target="_blank"}.
 
 
 ## Conversation Behavior
@@ -123,7 +123,7 @@ This list describes the conversation behavior while using external NLU adapter:
 
 
 * When external NLU is enabled, in the interruption handling only one behavior, “**Switch to a new task without any notification to the user and discard the current task**”, is supported. To know more information, see [Interruption Management Settings](../../../../automation/intelligence/conversation-management/manage-interruptions){:target="_blank"}.
-* If the external NLU API returns an error or the API cannot be reached, a fallback intent gets activated with the standard response as, _Error in continuing the conversation due to incorrect bot definition._ To know more information, see [Standard Responses](https://developer.kore.ai/docs/bots/bot-intelligence/default-dialog/#Managing_Standard_Responses){:target="_blank"}.
+* If the external NLU API returns an error or the API cannot be reached, a fallback intent gets activated with the standard response as, _Error in continuing the conversation due to incorrect bot definition._ To know more information, see [Standard Responses](../../../../automation/intelligence/conversation-management/default-conversations/#standard-responses){:target="_blank"}.
 
     !!! note
 

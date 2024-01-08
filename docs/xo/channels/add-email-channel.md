@@ -1,6 +1,6 @@
 # **Adding the Email Channel**
 
-When you add the email channel to your VA, Kore.ai automatically generates the email address that the end-users can send an email for communications with your assistant. By default, the email address syntax is **&lt; bot name >.kore@m.&lt; kore host >**. For example, **myemail.kore@m.app-bots.kore.com**. Optionally, you can click **Change **to add a custom name, such as **MyBot.kore@m.app-bots.kore.com.**
+When you add the email channel to your VA, Kore.ai automatically generates the email address that the end-users can send an email for communications with your assistant. By default, the email address syntax is **&lt; bot name >.kore@m.&lt; kore host >**. For example, **myemail.kore@m.app-bots.kore.com**. Optionally, you can click **Change** to add a custom name, such as **MyBot.kore@m.app-bots.kore.com.**
 
 !!! note
 
@@ -37,6 +37,6 @@ Steps to add the email channel:
 
 10. On the Email Channel Configurations page, click **Save**. The _Channel added successfully_ message is displayed.
 
-Once the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
+Once the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](../../deploy/publishing-bot/).
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)
+To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](../adding-channels-to-your-bot/)

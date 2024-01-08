@@ -43,9 +43,9 @@ The Unblu Bot can be directly created from the Kore.ai XO Platform.
 
 After the channel is enabled and all configurations are verified, you can optionally publish
 
-the assistant to make it available for end-users, with the new channel. Learn more about [Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/){:target="_blank"}.
+the assistant to make it available for end-users, with the new channel. Learn more about [Publishing your Virtual Assistant](../../../../deploy/publishing-bot/){:target="_blank"}.
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/){:target="_blank"}
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}
 
 
 ## Additional Instructions

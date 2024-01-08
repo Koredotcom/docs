@@ -59,10 +59,10 @@ To configure the Intercom agent, follow the instructions in the sections below.
         This option is available only when you have multiple agents configured for your VA.  
 
 6. You can customize the channel mapping by clicking the **Manage** link.
-7. Once you click **Manage**, you can map the channels for which you want to use the Genesys agent to hand over the conversations. To learn more about channel enablement, see[ Adding channels to your bot](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/){:target="_blank"}.
+7. Once you click **Manage**, you can map the channels for which you want to use the Genesys agent to hand over the conversations. To learn more about channel enablement, see[ Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
 8. After mapping channels, click **Done**.
 9. Click **Save** to enable the Genesys agent.
-10. Publish the VA. For more information, see [Publishing Bot](https://developer.kore.ai/docs/bots/publish/publishing-bot/){:target="_blank"}.
+10. Publish the VA. For more information, see [Publishing Bot](../../../../deploy/publishing-bot/){:target="_blank"}.
 
 
 ## Execution
