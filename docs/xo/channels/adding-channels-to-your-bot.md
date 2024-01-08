@@ -314,30 +314,30 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 ### Other Channels
 
-<table>
+<table style="table-layout: fixed; width: 100%;">
 <tr>
-   <td><a href="../add-email-channel" target="_blank">Email</a>
+   <td style="width:20%;"><a href="../add-email-channel" target="_blank">Email</a>
    <br><br>
    <a href="../add-email-channel" target="_blank"><img src="../images/logo37-email.png" width="50"></a>
    </td>
 
-   <td><a href="../add-twilio-sms-channel" target="_blank">Twilio SMS</a>
+   <td style="width:20%;"><a href="../add-twilio-sms-channel" target="_blank">Twilio SMS</a>
    <br><br>
    <a href="../add-twilio-sms-channel" target="_blank"><img src="../images/logo35-twilio.png" width="50"></a>
    </td>
 
-   <td><a href="../add-web-mobile-client" target="_blank">Web/Mobile<br>Client</a>
+   <td style="width:20%;"><a href="../add-web-mobile-client" target="_blank">Web/Mobile<br>Client</a>
    <br>
    <a href="../add-web-mobile-client" target="_blank"><img src="../images/logo39-webmobile.png" width="50"></a>
    </td>
 
-   <td><a href="../add-webhook-channel" target="_blank">Webhook</a>
+   <td style="width:20%;"><a href="../add-webhook-channel" target="_blank">Webhook</a>
    <br><br>
    <a href="../add-webhook-channel" target="_blank"><img src="../images/logo40-webhook.png" width="50"></a>
    </td>
 
-   <td><a href="../add-widget-sdk-channel" target="_blank">Widget SDK</a>
-   <br>
+   <td style="width:20%;"><a href="../add-widget-sdk-channel" target="_blank">Widget SDK</a>
+   <br><br>
    <a href="../add-widget-sdk-channel" target="_blank"><img src="../images/logo39-webmobile.png" width="50"></a>
    </td>
   
