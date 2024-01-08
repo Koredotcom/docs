@@ -76,7 +76,7 @@ The **Session Context & Variables** tab displays dynamically the populated `Cont
 
 ### System Commands
 
-System Commands allow you to take control of the user-bot conversation during evaluation. These can also be injected into the assistant using JavaScript code. [See here for more](../../use-cases/dialogs/system-commands/){:target="_blank"}.
+System Commands allow you to take control of the user-bot conversation during evaluation. These can also be injected into the assistant using JavaScript code. [See here for more](../../system-commands/){:target="_blank"}.
 
 
 ## Record Session

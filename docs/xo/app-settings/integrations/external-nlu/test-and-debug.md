@@ -93,7 +93,7 @@ NLP Insights have Intent Identified, Intent Not Identified utterances and their 
 
 <img src="../images/external-nlu-test-and-debug-img11.png" alt="Failed External NLU API calls" title="Failed External NLU API calls" style="border: 1px solid gray;zoom:50%;"/>
 
-For more information, see [NLP Insights](../../../../analytics/automations/nlp-insights){:target="_blank"}.
+For more information, see [NLP Insights](../../../../analytics/automation/nlp-insights){:target="_blank"}.
 
 
 ## Conversation Behavior
