@@ -56,8 +56,7 @@ Click the icon of the channel you want to add, and then configure the channel to
   
   <tr>
    <td><a href="../add-cisco-jabber-channel" target="_blank">Cisco Jabber</a>
-
-
+   <br>
    <a href="../add-cisco-jabber-channel" target="_blank"><img src="../images/logo1-jabber.png"></a>
    </td>
 
@@ -69,14 +68,14 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 
    <td><a href="../add-cisco-tropo-channel" target="_blank">Cisco Tropo</a>
-     
+   <br>  
    <a href="../add-cisco-tropo-channel" target="_blank"><img src="../images/logo3-tropo.png"></a>
    </td>
 
 
    <td><a href="../add-google-assistant-channel" target="_blank">Google Assistant</a>
      
-   <a href="../add-google-assistant-channel" target="_blank"><img src="../images/logo4-google-assistant.png"></a>
+   <a href="../add-google-assistant-channel" target="_blank"><img src="../images/logo4-google-assistant.png" zoom=60%></a>
    </td>
    <td>
    </td>
@@ -110,6 +109,37 @@ Click the icon of the channel you want to add, and then configure the channel to
    <td><a href="../add-live-person-channel" target="_blank">Live Person</a>
      
    <a href="../add-live-person-channel" target="_blank"><img src="../images/logo9-live-person.png"></a>
+   </td>
+  </tr>
+
+  <tr>
+   <td><a href="../add-mattermost-channel" target="_blank">Mattermost</a>
+     
+      <a href="../add-mattermost-channel" target="_blank"><img src="../images/logo10-mattermost.png"></a>
+   </td>
+
+
+   <td><a href="../add-microsoft-teams-channel" target="_blank">Microsoft Teams</a>
+     
+      <a href="../add-microsoft-teams-channel" target="_blank"><img src="../images/logo11-ms-teams.png"></a>
+   </td>
+
+
+   <td><a href="../add-naver-works-channel" target="_blank">Naver Works</a>
+     
+      <a href="../add-naver-works-channel" target="_blank"><img src="../images/logo12-naver.png"></a>
+   </td>
+
+
+   <td><a href="../add-nice-incontact-channel" target="_blank">Nice inContact</a>
+     
+      <a href="../add-nice-incontact-channel" target="_blank"><img src="../images/logo13-nice.png"></a>
+   </td>
+
+
+   <td><a href="../add-google-rcs-channel" target="_blank">RCS Business Messaging</a>
+     
+      <a href="../add-google-rcs-channel" target="_blank"><img src="../images/logo14-rcs.png"></a>
    </td>
   </tr>
   
