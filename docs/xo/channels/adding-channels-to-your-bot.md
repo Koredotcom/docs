@@ -239,18 +239,15 @@ Click the icon of the channel you want to add, and then configure the channel to
    <a href="../add-facebook-messenger-channel" target="_blank"><img src="../images/logo26-fb-messenger.png" width="50"></a>
    </td>
 
-
    <td><a href="../add-line-messenger-channel" target="_blank">Line</a>
    <br><br>  
    <a href="../add-line-messenger-channel" target="_blank"><img src="../images/logo27-line.png" width="50"></a>
    </td>
 
-
    <td><a href="../add-skype-business-onpemise-channel" target="_blank">Skype</a>
    <br><br>  
    <a href="../add-skype-business-onpemise-channel" target="_blank"><img src="../images/logo28-skype.png" width="50"></a>
    </td>
-
 
    <td><a href="../add-telegram-channel" target="_blank">Telegram</a>
    <br><br>  
