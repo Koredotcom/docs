@@ -50,15 +50,10 @@ Below is a list of all channels you can connect to via the Kore.ai XO Platform:
 
 Click the icon of the channel you want to add, and then configure the channel to work with your Kore.ai bot. The page with Instructions and Configuration settings will slide out.
 
+### Enterprise Channels
+
 <table>
-  <tr>
-   <td colspan="5" ><strong>Enterprise Channels</strong>
-   </td>
-   <td>
-   </td>
-  </tr>
-
-
+  
   <tr>
    <td><a href="../add-cisco-jabber-channel" target="_blank">Cisco Jabber</a>
 
@@ -68,7 +63,7 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 
    <td><a href="../add-cisco-channel" target="_blank">Cisco Webex Teams (formerly Cisco Spark)</a>
-     
+   <br>
    <a href="../add-cisco-channel" target="_blank"><img src="../images/logo2-cisco-webex-teams.png"></a>
    </td>
 
@@ -84,6 +79,37 @@ Click the icon of the channel you want to add, and then configure the channel to
    <a href="../add-google-assistant-channel" target="_blank"><img src="../images/logo4-google-assistant.png"></a>
    </td>
    <td>
+   </td>
+  </tr>
+
+  <tr>
+   <td><a href="../add-genesys-chat-channel" target="_blank">Genesys Cloud CX Messaging</a>
+     
+   <a href="../add-genesys-chat-channel" target="_blank"><img src="../images/logo5-genesys-chat-new-logo.png"></a>
+   </td>
+
+
+   <td><a href="../add-google-business-messaging-channel" target="_blank">Google Business Messaging</a>
+     
+   <a href="../add-google-business-messaging-channel" target="_blank"><img src="../images/logo6-gbm.png"></a>
+   </td>
+
+
+   <td><a href="../add-google-chat" target="_blank">Google Chat</a>
+     
+      <a href="../add-google-chat" target="_blank"><img src="../images/logo7-google-chat.png" style="zoom:50%;"></a>
+   </td>
+
+
+   <td><a href="../add-kore-channel" target="_blank">Kore.ai</a>
+     
+   <a href="../add-kore-channel" target="_blank"><img src="../images/logo8-kore-ai.png"></a>
+   </td>
+
+
+   <td><a href="../add-live-person-channel" target="_blank">Live Person</a>
+     
+   <a href="../add-live-person-channel" target="_blank"><img src="../images/logo9-live-person.png"></a>
    </td>
   </tr>
   
