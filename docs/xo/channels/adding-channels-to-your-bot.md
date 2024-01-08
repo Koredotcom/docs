@@ -52,28 +52,28 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 ### Enterprise Channels
 
-<table>
+<table style="table-layout: fixed; width: 100%;">
   
   <tr>
-   <td><a href="../add-cisco-jabber-channel" target="_blank">Cisco Jabber</a>
+   <td style="width:25%;><a href="../add-cisco-jabber-channel" target="_blank">Cisco Jabber</a>
    <br><br><br>
    <a href="../add-cisco-jabber-channel" target="_blank"><img src="../images/logo1-jabber.png" width="50"></a>
    </td>
 
 
-   <td><a href="../add-cisco-channel" target="_blank">Cisco Webex<br>Teams<br>(formerly<br>Cisco Spark)</a>
+   <td style="width:25%;><a href="../add-cisco-channel" target="_blank">Cisco Webex<br>Teams<br>(formerly<br>Cisco Spark)</a>
    <br>
    <a href="../add-cisco-channel" target="_blank"><img src="../images/logo2-cisco-webex-teams.png" width="50"></a>
    </td>
 
 
-   <td><a href="../add-cisco-tropo-channel" target="_blank">Cisco Tropo</a>
+   <td style="width:25%;><a href="../add-cisco-tropo-channel" target="_blank">Cisco Tropo</a>
    <br><br><br>
    <a href="../add-cisco-tropo-channel" target="_blank"><img src="../images/logo3-tropo.png" width="50"></a>
    </td>
 
 
-   <td><a href="../add-google-assistant-channel" target="_blank">Google<br>Assistant</a>
+   <td style="width:25%;><a href="../add-google-assistant-channel" target="_blank">Google<br>Assistant</a>
    <br><br>
    <a href="../add-google-assistant-channel" target="_blank"><img src="../images/logo4-google-assistant.png" width="50"></a>
    </td>
@@ -232,24 +232,24 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 ### Social Channels
 
-<table>
+<table style="table-layout: fixed; width: 100%;">
   <tr>
-   <td><a href="../add-facebook-messenger-channel" target="_blank">Facebook<br>Messenger</a>
+   <td style="width:25%;><a href="../add-facebook-messenger-channel" target="_blank">Facebook<br>Messenger</a>
    <br>  
    <a href="../add-facebook-messenger-channel" target="_blank"><img src="../images/logo26-fb-messenger.png" width="50"></a>
    </td>
 
-   <td><a href="../add-line-messenger-channel" target="_blank">Line</a>
+   <td style="width:25%;><a href="../add-line-messenger-channel" target="_blank">Line</a>
    <br><br>  
    <a href="../add-line-messenger-channel" target="_blank"><img src="../images/logo27-line.png" width="50"></a>
    </td>
 
-   <td><a href="../add-skype-business-onpemise-channel" target="_blank">Skype</a>
+   <td style="width:25%;><a href="../add-skype-business-onpemise-channel" target="_blank">Skype</a>
    <br><br>  
    <a href="../add-skype-business-onpemise-channel" target="_blank"><img src="../images/logo28-skype.png" width="50"></a>
    </td>
 
-   <td><a href="../add-telegram-channel" target="_blank">Telegram</a>
+   <td style="width:25%;><a href="../add-telegram-channel" target="_blank">Telegram</a>
    <br><br>  
    <a href="../add-telegram-channel" target="_blank"><img src="../images/logo29-telegram.png" width="50"></a>
    </td>
@@ -261,7 +261,7 @@ Click the icon of the channel you want to add, and then configure the channel to
    <a href="../add-twitter-channel" target="_blank"><img src="../images/logo30-twitter.png" width="50"></a>
    </td>
 
-   <td><a href="../add-wechat-telegram" target="_blank">WeChat<br><img src="../images/logo31-we-chat.png" width="50"></a>
+   <td><a href="../add-wechat-telegram" target="_blank">WeChat</a>
    <br>  
    <a href="../add-wechat-telegram" target="_blank"><img src="../images/logo31-we-chat.png" width="50"></a>
    </td>
@@ -277,33 +277,33 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 ### Voice Channels
 
-<table>
+<table style="table-layout: fixed; width: 100%;">
  <tr>
-   <td><a href="../amazon-alexa" target="_blank">Amazon Alexa</a>
+   <td style="width:20%;><a href="../amazon-alexa" target="_blank">Amazon Alexa</a>
    <br><br>
    <a href="../amazon-alexa" target="_blank"><img src="../images/logo32-alexa.png" width="50"></a>
    </td>
 
 
-   <td><a href="../ivr-audio-codes">IVR–AudioCodes</a>
+   <td style="width:20%;><a href="../ivr-audio-codes">IVR–AudioCodes</a>
    <br><br>
    <a href="../ivr-audio-codes"><img src="../images/logo33-audiocodes.png" width="50"></a>
    </td>
 
 
-   <td><a href="../IVR-integration">IVR</a>
+   <td style="width:20%;><a href="../IVR-integration">IVR</a>
    <br><br>
    <a href="../IVR-integration"><img src="../images/logo34-ivr.png" width="50"></a>
    </td>
 
 
-   <td><a href="../add-twilio-voice-channel" target="_blank">Twilio Voice</a>
+   <td style="width:20%;><a href="../add-twilio-voice-channel" target="_blank">Twilio Voice</a>
    <br><br>
    <a href="../add-twilio-voice-channel" target="_blank"><img src="../images/logo35-twilio.png" width="50"></a>
    </td>
 
 
-   <td><a href="../smart-assist-gateway" target="_blank">SmartAssist<br>Gateway</a>
+   <td style="width:20%;><a href="../smart-assist-gateway" target="_blank">SmartAssist<br>Gateway</a>
    <br>  
    <a href="../smart-assist-gateway" target="_blank"><img src="../images/logo36-smart-assist.png" width="90"></a>
    </td>
