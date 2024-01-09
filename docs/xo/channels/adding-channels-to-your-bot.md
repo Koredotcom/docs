@@ -232,7 +232,7 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 ### Social Channels
 
-<table style="table-layout: fixed; width: 100%;">
+<table style="table-layout:fixed; width:100%;">
   <tr>
    <td style="width:25%;"><a href="../add-facebook-messenger-channel" target="_blank">Facebook<br>Messenger</a>
    <br>  
