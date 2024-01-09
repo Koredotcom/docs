@@ -90,13 +90,13 @@ To define oAuth v1, configure the fields described in the following table.
    <td>User Authorization Link
    </td>
    <td>This is the URL used to obtain end-user authorization for the XO Platform to access the web application or web service using the access token. This field is required. You can use dynamic fields, path parameter fields, query fields, and so forth, to define the Authorization URL, for example,
-<p>
+<br>
      https://kore.someCompany.com/sap/opu/odata/sap/{{authfield1}}/?$format=json
-<p>
+<br>
 or
-<p>
+<br>
 https://{tenant}.service-now.com/api/now/v1/table/incident
-<p>
+<br>
 For more information, see <a href="../../../../automation/use-cases/using-session-and-context-variables" target="_blank">Using Session and Context Variables in Tasks</a>.
    </td>
   </tr>

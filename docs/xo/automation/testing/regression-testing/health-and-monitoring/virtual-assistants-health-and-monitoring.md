@@ -288,7 +288,7 @@ table, th, td {
    <td><strong>Task State</strong>
    </td>
    <td>The status of the intent or task against which the intent is identified. Possible values include <strong>Configured</strong> or <strong>Published</strong>.
-<p>
+<br>
 .
    </td>
    <td>Yes
@@ -742,7 +742,7 @@ The summary of all the metrics displayed is given below:
   </tr>
 </table>
 
-<p>
+<br>
 
 </p>
 
