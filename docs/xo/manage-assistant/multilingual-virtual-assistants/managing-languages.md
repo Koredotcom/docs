@@ -23,7 +23,7 @@ To create an Assistant from scratch, follow the below steps:
 5. Once you select an NLU language, which is different from the default Bot Language, you can enable the following translation modules:
     * **User Input Translation** – This approach uses language translation services to translate the user input into a base language. The conversation is executed in the base language and the responses are auto-translated back to the user’s language using translation services. (Supported from v9.1)
 
-    * **Runtime Response Translation** – The Kore.ai XO Platform can automatically translate all the prebuilt responses as well as plain text messages to the user’s language. For this, you will need to provide your API keys for either Google Cloud Translation or Microsoft Translator service in the **Translation Configurations** section. You can also translate the content of the templated messages inside the JavaScript using the `koreUtil.AutoTranslate()` function by passing a string or a context variable. For example, <code>koreUtil.AutoTranslate(context.variable1)</code> 
+    * **Runtime Response Translation** – The Kore.ai XO Platform can automatically translate all the prebuilt responses as well as plain text messages to the user’s language. For this, you will need to provide your API keys for either Google Cloud Translation or Microsoft Translator service in the **Translation Configurations** section. You can also translate the content of the templated messages inside the JavaScript using the `koreUtil.AutoTranslate()` function by passing a string or a context variable. For example, <code>koreUtil.AutoTranslate(context.variable1)</code>. 
         ![alt_text](images/image9.png "image_tooltip")
 
     !!! note
