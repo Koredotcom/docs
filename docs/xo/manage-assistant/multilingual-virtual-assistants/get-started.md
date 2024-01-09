@@ -633,7 +633,9 @@ If the assistant fails to detect a user’s language with high confidence, it re
 
 1. The virtual assistant identifies user language from every utterance. In case a change is detected, it will get a confirmation from the user regarding the switch and will proceeds as per the user response.  These standard responses can be customized using the getCurrentOptions utility,[ see here for more](https://developer.kore.ai/docs/bots/advanced-topics/koreutil-libraries/#koreUtilgetCurrentOptions). 
 
-    Note that the current conversation will be discarded in case the user wants to switch languages.
+  !!! note
+
+      Note that the current conversation will be discarded in case the user wants to switch languages.
 
 
 
