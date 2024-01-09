@@ -149,7 +149,7 @@ You can define the Service Type as:
 5. In the second field of the **Request URL**, specify the URL for the dialog task response to process at Kore.ai. For example, http://koremessenger.com/postURL. Add query or path parameters as part of the URL, if required. To use entity node values as parameters, use the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../context-object){:target="_blank"}.
     1. Optionally, click **Show Advanced**, and select  
 
-        1. **Yes** in the **Access Using A Connector** field if access for Kore.ai assistants is using the Kore.ai connector agent. For more information, refer to [Using the Kore.ai Connector](../../../../../bot-administration/kore-ai-connector){:target="_blank"}.  
+        1. **Yes** in the **Access Using A Connector** field if access for Kore.ai assistants is using the Kore.ai connector agent. For more information, refer to [Using the Kore.ai Connector](../../../../../administration/kore-ai-connector){:target="_blank"}.  
         2. **Yes** in the **De-Identification of PII Data** to redact any sensitive information types that users share with your assistants. For more information, refer to [Redacting Personally Identifiable Information](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"}
     
     2. In the **Auth** tab, select the type of authorization needed for this service node call, or define a new authorization type if needed. For more information, refer to [Setting Up Authentication](../../../../../app-settings/dev-tools/bot-authorization/bot-authentication){:target="_blank"}.
@@ -386,9 +386,9 @@ Define the expected behavior of this alert if an upgraded version of the underly
 
         !!! Note
         
-            Your VA should have permission to access the table/view. The owner of the table/view has to grant this permission, [click here for how](../../../../../bot-administration/data/data-table/#assignments){:target="_blank"}.
+            Your VA should have permission to access the table/view. The owner of the table/view has to grant this permission, [click here for how](../../../../../administration/data/data-table/#assignments){:target="_blank"}.
 
-2. In the **Request Definition** section, click **Define Request** to specify the operation you want to perform. [Click here for details.](../../../../../bot-administration/data/data-as-service){:target="_blank"}
+2. In the **Request Definition** section, click **Define Request** to specify the operation you want to perform. [Click here for details.](../../../../../administration/data/data-as-service){:target="_blank"}
 
 
 ## Next Steps

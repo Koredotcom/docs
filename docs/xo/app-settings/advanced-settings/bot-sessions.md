@@ -6,7 +6,7 @@ Kore.ai virtual assistant platform allows you to customize how these Conversatio
 
 !!! note
 
-        Conversation Sessions are different from Billing Sessions, [refer here](../../../bot-administration/billing){:target="_blank"} for more on Billing Sessions.
+        Conversation Sessions are different from Billing Sessions, [refer here](../../../administration/billing){:target="_blank"} for more on Billing Sessions.
 
 
 ## Overview

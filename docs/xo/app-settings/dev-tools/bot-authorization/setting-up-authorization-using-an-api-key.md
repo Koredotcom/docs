@@ -120,7 +120,7 @@ In the **Authorization Check URL** field, optionally define a URL that can be us
 
 ## Access Using a Connector
 
-In the **Access Using a Connector** section, select **Yes** to enable access for Kore.ai assistants using the Kore.ai Connector agent. If your domain does not have any active Kore.ai Connectors defined, a warning message is displayed to contact the Admin Console system administrator. For more information, see [Using the Kore.ai Connector](../../../../bot-administration/kore-ai-connector){:target="_blank"} in the Admin Console documentation.
+In the **Access Using a Connector** section, select **Yes** to enable access for Kore.ai assistants using the Kore.ai Connector agent. If your domain does not have any active Kore.ai Connectors defined, a warning message is displayed to contact the Admin Console system administrator. For more information, see [Using the Kore.ai Connector](../../../../administration/kore-ai-connector){:target="_blank"} in the Admin Console documentation.
 
 Click **Save** to save the authorization settings and close the **New Authorization Mechanism** dialog.
 
