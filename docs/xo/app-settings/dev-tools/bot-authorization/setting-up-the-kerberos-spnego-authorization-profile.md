@@ -85,7 +85,7 @@ To configure the Kerberos SPNEGO authorization profile, define the fields descri
     <br>
     https://{tenant}.service-now.com/api/now/v1/table/incident
     <br>
-    For more information, see <a href="../../../../automation/use-cases/using-session-and-context-variables" :target="_blank">Using Session and Context Variables in Tasks</a>.
+    For more information, see <a href="../../../../automation/use-cases/using-session-and-context-variables" target="_blank">Using Session and Context Variables in Tasks</a>.
    </td>
    <td>Required
    </td>
