@@ -285,15 +285,15 @@ Click the icon of the channel you want to add, and then configure the channel to
    </td>
 
 
-   <td style="width:20%;"><a href="../ivr-audio-codes">IVR–AudioCodes</a>
+   <td style="width:20%;"><a href="../ivr-audio-codes" target="_blank">IVR–AudioCodes</a>
    <br>
-   <a href="../ivr-audio-codes"><img src="../images/logo33-audiocodes.png" width="50"></a>
+   <a href="../ivr-audio-codes" target="_blank"><img src="../images/logo33-audiocodes.png" width="50"></a>
    </td>
 
 
-   <td style="width:20%;"><a href="../IVR-integration">IVR</a>
+   <td style="width:20%;"><a href="../IVR-integration" target="_blank">IVR</a>
    <br><br>
-   <a href="../IVR-integration"><img src="../images/logo34-ivr.png" width="50"></a>
+   <a href="../IVR-integration" target="_blank"><img src="../images/logo34-ivr.png" width="50"></a>
    </td>
 
 
