@@ -7,8 +7,6 @@ You can create an assistant from scratch, enable a language for an existing assi
 
 To create an Assistant from scratch, follow the below steps:
 
-
-
 1. Log in to your Kore.ai XO Platform account.
 2. On the Virtual Assistant landing page, click **New Bot** on the top-right and select the **Start from Scratch** option.
 3. On the _Create New Bot_ window, enter the Assistant details:
@@ -30,7 +28,7 @@ To create an Assistant from scratch, follow the below steps:
 
         If you select Multilingual as the NLU language option, by default the Assistant will be able to understand the user input in 100 plus languages supported by the Kore.ai XO Platform. The Multilingual NLU model is a language-agnostic model, it understands user input in 100 plus languages without the need for translation. However, you could enable Response Translation if the responses are configured in a language other than the assistant language.
 
-6.Click **Create**.
+6. Click **Create**.
 
 ## Adding a language to an existing Virtual Assistant
 
@@ -77,7 +75,7 @@ Even if your assistant has already been created, you can still add new languages
 
 
 
-    * **Manage Translations** – In case the Translation Engine is not configured, click the **Configure **link to set up the translation engine for your assistant. To learn how to enable Input Translation or Runtime Response Translation,[ refer to this article](https://developer.kore.ai/docs/bots/advanced-topics/multi-lingual/managing-translation-services/?preview=true). 
+    * **Manage Translations** – In case the Translation Engine is not configured, click the **Configure** link to set up the translation engine for your assistant. To learn how to enable Input Translation or Runtime Response Translation,[ refer to this article](https://developer.kore.ai/docs/bots/advanced-topics/multi-lingual/managing-translation-services/?preview=true). 
 
 
     ![alt_text](images/image3.png "image_tooltip")
