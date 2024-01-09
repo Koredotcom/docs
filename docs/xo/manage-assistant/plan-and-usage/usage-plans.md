@@ -871,7 +871,10 @@ Adding funds can be done either **manually** or by **enabling auto-reload** or a
 3. If **Automate your balance top-ups** is enabled, the balance will be automatically updated with the recharge amount you define when it drops below the minimum limit. You should provide the following inputs to configure auto-recharge:
     * **Auto Reload for** – The amount (in USD) to be reloaded when the minimum balance is reached.
     * **When Balance Drops Below** – The minimum balance or threshold below which the system triggers auto-reload.
-    * **Note**: You can specify the minimum credits your account should maintain. Once the credit falls below this limit, the set amount will be automatically recharged using the saved payment method.
+
+    !!! note
+
+         You can specify the minimum credits your account should maintain. Once the credit falls below this limit, the set amount will be automatically recharged using the saved payment method.
 1. The system enables auto-reload as a part of the manual reload flow and only if at least one manual fund addition completes.
 2. The system regularly monitors the available balance for an account and triggers auto-reload when the account reaches the minimum balance. Once the system completes an auto-reload transaction using your payment authorization method, the system adds the recharge amount to your virtual assistant account’s available balance.
 3. An invoice is generated automatically after the auto-reload.
@@ -946,7 +949,11 @@ To set up automatic recharge for your account, follow the steps below:
 3. In the **Add Funds** window, follow the steps below:
     * Enter the value for **Amount to Credit** to specify the amount you’d like to add to your account.
     * Enable **Automate your balance top-ups** if you want to automatically add funds to your account. Otherwise, disable this option. 
-    **Note**: The automatic top-up will not work if you select the _Wire Transfer_ payment method.
+
+    !!! note
+
+         The automatic top-up will not work if you select the _Wire Transfer_ payment method.
+
     * Enter the value for **Auto reload for** (minimum value is $100).
     * Enter the value for **When Balance Drops Below** to specify the minimum credits to be maintained in your account reaching which the auto-recharge is done.
 4. Click **Authorize Payment**. You will be redirected to the **Payment** Page hosted by **PayPro Global** to complete the purchase.
