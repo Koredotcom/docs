@@ -91,7 +91,7 @@ For more information, see <a href="../../../../automation/use-cases/using-sessio
   <tr>
    <td>Access Using a Connector
    </td>
-   <td>Select <strong>Yes</strong> to enable access for Kore.ai Bots using the Kore.ai Connector agent. This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network. For more information, see <a href="../../../../bot-administration/kore-ai-connector" target="_blank">Using the Kore.ai Connector</a>.
+   <td>Select <strong>Yes</strong> to enable access for Kore.ai Bots using the Kore.ai Connector agent. This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network. For more information, see <a href="../../../../administration/kore-ai-connector" target="_blank">Using the Kore.ai Connector</a>.
    </td>
   </tr>
   <tr>
