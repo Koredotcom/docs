@@ -1,5 +1,5 @@
 
-# **Invoices**
+# Invoices
 
 The Invoice module provides access to all the invoices associated with the virtual assistants for the Standard Accounts. This includes the subscriptions to the Usage Plans as well as the Support Plans. This module does not show the invoices for Enterprise Accounts. 
 

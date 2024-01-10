@@ -111,19 +111,19 @@ Every component that impacts end-user interactions or experience goes through th
    </td>
    
    <td>The NL Model lets you publish only the NLP training data of specific intents without publishing the task definitions. When multiple users are working on a virtual assistant (VA), Bot developers or NLP trainers can independently publish their work without impacting the bot definitions of other users.
-    <p>
+    <br>
     For example, an NLP trainer might modify an utterance to correct some issue in a dialog task. In this case, the NLP trainer would like to publish only the training data without including the task definition.
-    <p>
+    <br>
     Whenever an utterance is added to an already published task, you can select that task under the <strong>ML Utterances</strong>, <strong>Patterns</strong>, and <strong>Rules</strong> modules under the <strong>NL Model</strong> to publish only the training data of selected intents without including the task definitions.
-    <p>
+    <br>
     You can also publish the Trait Groups and other NL Model configurations independently.
-    <p>
+    <br>
     <strong>Note</strong>: If you have selected one or more Dialog Tasks from <strong>Publish -> Tasks -> Dialog Tasks</strong> in the Publish request, the training data of these selected tasks is published and you cannot customize the ML Utterances, Patterns and Rules in the NL Model.
-    <p>
+    <br>
     If you want to publish the only training data of specific intents, you must first deselect tasks from the <strong>Publish -> Tasks -> Dialog Tasks</strong> section. Follow the steps below to select the intents for which you want to publish the ML Utterances, Patterns and Rules.
-    <p>
+    <br>
     When you have already selected the <strong>NL Model</strong> components for specific intents customization and then try to select the <strong>Dialog Tasks</strong> a warning message appears with notification to <strong>Reset</strong> the publishable components.
-    <p>
+    <br>
     Steps to publish only the training data for specific intents using the NL Model:
     <ol>
     <li>Expand the <strong>Natural Language > NL Model</strong> option and click the <strong>All Components</strong> link.  
@@ -290,13 +290,13 @@ Every component that impacts end-user interactions or experience goes through th
    <td>Advanced Settings
    </td>
    <td>Replaces the following in the Published version with the ones in the In Development version:
-    <p>
+    <br>
     – Language Detection Preference
-    <p>
+    <br>
     – Subdomain
-    <p>
+    <br>
     – Show link for task setup/execution
-    <p>
+    <br>
     – Error Messages
    </td>
   </tr>

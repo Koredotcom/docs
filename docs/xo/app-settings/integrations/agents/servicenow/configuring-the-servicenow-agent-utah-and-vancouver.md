@@ -24,7 +24,7 @@ Complete the following steps to configure the ServiceNow agent for **Utah** and 
 
 ### Step 1: Retrieve the ServiceNow Instance URL
 
-1. Log in to your ServiceNow account with admin user credentials. The ServiceNow account will have a unique URL for each developer instance in their Service Management or App Engine Studio, for example:[ https://devXXX67.service-now.com/](https://devxxx67.service-now.com/).
+1. Log in to your ServiceNow account with admin user credentials. The ServiceNow account will have a unique URL for each developer instance in their Service Management or App Engine Studio, for example:[ https://devXXX67.service-now.com/](https://devxxx67.service-now.com/){:target="_blank"}.
 2. Copy the Instance ID from the URL and paste it into the **Configurations** tab of the ServiceNow Agent  page. Refer to step 2.
 
 

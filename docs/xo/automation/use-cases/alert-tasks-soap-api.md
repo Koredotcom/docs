@@ -284,7 +284,7 @@ To get started with defining access using a connector for a task, follow these s
 1. On the **API Request** tab, expand the **Access using a connector** section.
 2. In the **Access Using A Connector** field, select **Yes** to enable access for Kore.ai Bots using the Kore.ai Connector agent. 
 
-    This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/bot-administration/security-and-control/security-module-overview/" target="_blank">Using the Kore.ai Connector</a>.
+    This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/administration/security-and-control/security-module-overview/" target="_blank">Using the Kore.ai Connector</a>.
 
     <img src="../images/access-using-a-connector.png" alt="access using a connector" title="access using a connector" style="border: 1px solid gray; zoom:75%;">
 

@@ -181,7 +181,7 @@ On the **User Settings** section in the **User Management** module, you can mana
 
 <li><strong>Profile Picture</strong>
 
-<p>
+<br>
 You can also select or clear <strong>Allow Edits</strong> to enable/disable the user to overwrite the data. Modifications to the user profile take effect when the user logs in next.
 </li>
 </ul>
@@ -215,7 +215,7 @@ You can also select or clear <strong>Allow Edits</strong> to enable/disable the 
 
 <li><strong>Country</strong>
 
-<p>
+<br>
 You can also select or clear <strong>Allow Edits</strong> to enable/disable the user to overwrite the data. Modifications to the user profile take effect when the user logs in next.
 </li>
 </ul>

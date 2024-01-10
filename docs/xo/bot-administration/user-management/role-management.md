@@ -402,7 +402,7 @@ Following is the list of permissions that can be assigned to a Bot role:
    <td>Full, View, No
    </td>
    <td>Ability to add, modify, and delete utterances, synonyms, patterns and standard responses. Ability to manage Default Dialog, Ignore Words, Field Memory, and Advanced Settings.
-<p>
+<br>
 <strong>Note: </strong>The Natural Language settings that can be modified from inside Dialog Tasks and Bot Analytics pages also adhere to these permissions.
    </td>
   </tr>
@@ -452,7 +452,7 @@ Following is the list of permissions that can be assigned to a Bot role:
    <td>Yes, No
    </td>
    <td>Ability to associate apps for BotKit, WebSDK, Agent Transfer, and Events.
-<p>
+<br>
 <strong>Note:</strong> App creation and management are allowed for all bot developers. However, the association of app against an extension is controlled via this permission.
    </td>
   </tr>

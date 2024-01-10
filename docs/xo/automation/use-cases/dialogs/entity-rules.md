@@ -48,11 +48,11 @@ Below are the entity rules that can be entered in the JSON editor for the requir
   </tr>
   <tr>
    <td colspan="3" >Example
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>"allowConfirmation": &lt;true/false></code>
-<p>
+<br>
 <code>}</code>
    </td>
   </tr>
@@ -62,19 +62,19 @@ Below are the entity rules that can be entered in the JSON editor for the requir
    <td>&lt;concept names>
    </td>
    <td>Additional words/phrases to be used to confirm an entity value.
-<p>
+<br>
 Used in conjunction with allowConfirmation rule mentioned above.
    </td>
   </tr>
   <tr>
    <td colspan="3" >Example
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>"confirmYesSynonyms": ["~concept1", "~concept2"]</code>
-<p>
+<br>
 <code>}</code>
-<p>
+<br>
 where concept1: ok;
 concept2: affirmative
    </td>
@@ -85,19 +85,19 @@ concept2: affirmative
    <td>&lt;concept names>
    </td>
    <td>Additional words/phrases to be used to cancel a confirmation entity. If selected/uttered, the entity value will be set to null
-<p>
+<br>
 Used in conjunction with allowConfirmation rule mentioned above.
    </td>
   </tr>
   <tr>
    <td colspan="3" >Example
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>"confirmNoSynonyms": ["~concept2", "~concept3"]</code>
-<p>
+<br>
 <code>}</code>
-<p>
+<br>
 where concept1: nope;
 concept2: wrong
    </td>
@@ -112,11 +112,11 @@ concept2: wrong
   </tr>
   <tr>
    <td colspan="3" >Example
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code> "processLatestSentence": &lt;true/false></code>
-<p>
+<br>
 <code>}</code>
    </td>
   </tr>
@@ -130,11 +130,11 @@ concept2: wrong
   </tr>
   <tr>
    <td colspan="3" >Example
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>"patternsOnly": &lt;true/false></code>
-<p>
+<br>
 <code>}</code>
    </td>
   </tr>
@@ -144,7 +144,7 @@ concept2: wrong
    <td>user defined preconditions
    </td>
    <td>To define preconditions for all entity types to process entity extraction if one of the conditions is true. If the condition is invalid the entity extraction is skipped entirely.
-<p>
+<br>
 <strong>Use Case Examples:</strong>
 <ul>
 
@@ -156,15 +156,15 @@ concept2: wrong
 
 <li><strong>Example 4</strong>: Add a precondition for each car make type to simplify the extraction of valid car models based on the car make. The car make can be a custom concept entity with an output tag based on the extracted entity value followed by a composite of individual LoVs for each model. Each list has a pre-condition corresponding to the make.
 
-<p>
+<br>
 The pre-condition can be expressed as a context tag or trait (like an intent’s pre-condition) or when enclosed in parentheses, as a pattern. For example:
-<p>
+<br>
 <code>"entityRules" : {</code>
-<p>
+<br>
 <code>    "preConditions" : ["checkMemberID"]</code>
-<p>
+<br>
 <code>}</code>
-<p>
+<br>
 This will only extract an entity value when the current context has a checkMemberID context tag set or a trait with that name has been found.
 </li>
 </ul>
@@ -176,44 +176,44 @@ This will only extract an entity value when the current context has a checkMembe
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{ </code>
-<p>
+<br>
 <code>"preConditions": </code>
-<p>
+<br>
 <code>[ "isCustomerX" ]</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity type</strong>: LoV Entity with Premium as one of the choices. But the list is only appropriate for Customer X.
-<p>
+<br>
 A previous script node has set the “isCustomerX” context tag.
-<p>
+<br>
 <strong>User Utterance</strong> “<em>check my premium account</em>”
 <strong>Extracted Value</strong> “Premium”
-<p>
+<br>
 A previous script node has not set the “isCustomerX” context tag.
-<p>
+<br>
 <strong>User Utterance</strong> “<em>check my premium account</em>”
 <strong>Extracted Value</strong> “none”
    </td>
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{ </code>
-<p>
+<br>
 <code>"preConditions" : </code>
-<p>
+<br>
 <code>[ "( buy )" ]</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity type</strong>: Number Entity
-<p>
+<br>
 <strong>User Utterance</strong> “<em>buy 10 apples</em>”
 <strong>Extracted Value</strong> “10”
-<p>
+<br>
 <strong>User Utterance</strong> “<em>search for 10 apples</em>”
 <strong>Extracted Value</strong> “none”
    </td>
@@ -242,7 +242,7 @@ There won’t be any validations done on the user utterance for string entities 
    <td><strong>discardAsCommand</strong>
    </td>
    <td><strong>Concept Name:</strong> ~bot_commands_override_discard
-<p>
+<br>
 <strong>Synonyms:</strong> abort, abort_all, cancel, clear_screen, discard, discard all, exit, exit_all, quit, quit_all, restart, start_over, startover, stop, stop_all
    </td>
    <td>If the rule is set to true, then the discard commands entered at a string entity node are not considered as valid string inputs, and the task gets discarded.
@@ -254,7 +254,7 @@ There won’t be any validations done on the user utterance for string entities 
    <td>&lt;concept name>
    </td>
    <td>To remove the words given in the concept from the start of the extracted string.
-<p>
+<br>
 The concept can be a single concept name or a space-separated list of concepts or an array of concept names.
    </td>
   </tr>
@@ -264,19 +264,19 @@ The concept can be a single concept name or a space-separated list of concepts o
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{ "stripLeading": [ </code>
-<p>
+<br>
 <code>      "~stringConcept" </code>
-<p>
+<br>
 <code>    ]</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>stringConcept: </strong> city
-<p>
+<br>
 <strong>Entity Pattern:</strong> I like *
-<p>
+<br>
 <strong>User Utterance</strong> “<em>I like city New York</em>”
 <strong>Extracted Value</strong> New York
    </td>
@@ -287,7 +287,7 @@ The concept can be a single concept name or a space-separated list of concepts o
    <td>&lt;concept name>
    </td>
    <td>To remove words in a concept from the end of the extracted string.
-<p>
+<br>
 The value can be a single concept name or a space-separated list of concepts or an array of concept names.
    </td>
   </tr>
@@ -297,17 +297,17 @@ The value can be a single concept name or a space-separated list of concepts or 
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{ "stripTrailing":</code>
-<p>
+<br>
 <code>    "~stringConcept ~stringConcept1"</code>
-<p>
+<br>
 <code> }</code>
    </td>
    <td><strong>stringConcept: </strong> city; <strong>stringConcept1: </strong> airport
-<p>
+<br>
 <strong>Entity Pattern:</strong> I like *
-<p>
+<br>
 <strong>User Utterance</strong> “<em>I like New York city</em>” or “<em>I like New York airport</em>”
 <strong>Extracted Value</strong> New York
    </td>
@@ -318,7 +318,7 @@ The value can be a single concept name or a space-separated list of concepts or 
    <td>&lt;concept name>
    </td>
    <td>To ignore any value that is a member of the concept, unless it is the entire input.
-<p>
+<br>
 The value can be a single concept name or a space-separated list of concepts or an array of concept names.
    </td>
   </tr>
@@ -328,25 +328,25 @@ The value can be a single concept name or a space-separated list of concepts or 
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "avoidSingleWord": </code>
-<p>
+<br>
 <code>      "~stringConcept"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>stringConcept: </strong> chess, cricket
-<p>
+<br>
 <strong>Entity Pattern:</strong> like to watch * tournament
-<p>
+<br>
 <strong>User Utterance</strong> “<em>I like to watch chess tournament</em>”
 <strong>Extracted Value</strong> prompt for entity value
-<p>
+<br>
 <strong>User Utterance </strong>“<em>I like to watch golf tournament</em>”
 <strong>Extracted Value</strong> golf
-<p>
+<br>
 <strong>User Utterance</strong> “<em>cricket</em>”
 <strong>Extracted Value</strong> cricket, since it is the entire input
    </td>
@@ -365,21 +365,21 @@ The value can be a single concept name or a space-separated list of concepts or 
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>"avoidSingleVerb": true</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern:</strong> I like * music
-<p>
+<br>
 <strong>User Utterance</strong> “<em>I like playing music</em>”
 <strong>Extracted Value</strong> prompt for entity value
-<p>
+<br>
 <strong>User Utterance</strong> “<em>I like rap music</em>”
 <strong>Extracted Value</strong> rap
-<p>
+<br>
 <strong>User Utterance</strong> “<em>play</em>”
 <strong>Extracted Value</strong> play, since it is the entire input
    </td>
@@ -398,11 +398,11 @@ The value can be a single concept name or a space-separated list of concepts or 
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>"extractOnlyNumbers": true</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td>
@@ -412,13 +412,13 @@ The value can be a single concept name or a space-separated list of concepts or 
    <td><strong>letters</strong>
    </td>
    <td>number
-<p>
+<br>
 Or
-<p>
+<br>
 range
    </td>
    <td>To extract a word of a specific length, or a sequence of individual characters that meet the length criteria.
-<p>
+<br>
 The rule value is either:
 <ul>
 
@@ -426,7 +426,7 @@ The rule value is either:
 
 <li>A range, <code>letters=5-8</code>, indicates that 5, 6, 7, and 8 letters are valid.
 
-<p>
+<br>
 Words or sequences of letters having only alphabets are matched. The words containing punctuation or numbers are not considered. Also, the return value is converted to all caps.
 </li>
 </ul>
@@ -438,21 +438,21 @@ Words or sequences of letters having only alphabets are matched. The words conta
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{ </code>
-<p>
+<br>
 <code>"letters": 2 </code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern</strong> – <em>“letters = 2″</em>
-<p>
+<br>
 <strong>User Utterance</strong> 234 XY
 <strong>Extracted Value</strong> “<em>XY</em>
-<p>
+<br>
 <strong>User Utterance</strong> 234 x y
 <strong>Extracted Value</strong> “<em>XY</em>
-<p>
+<br>
 <strong>User Utterance</strong> 234 alpha bravo
 <strong>Extracted Value</strong> “<em>AB
 </em>This value is extracted as part of a phonetic alphabet.
@@ -467,15 +467,15 @@ Words or sequences of letters having only alphabets are matched. The words conta
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{ </code>
-<p>
+<br>
 <code>"letters": 5-8 </code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern</strong> – <em>“letters = 5-8″</em>
-<p>
+<br>
 <strong>User Utterance</strong> Kore.ai is the best platform in artificial intelligence of recent times.
 <strong>Extracted Value</strong> “<em>platform, recent, times</em>
    </td>
@@ -510,15 +510,15 @@ Words or sequences of letters having only alphabets are matched. The words conta
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "asString": true</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern</strong> – by default numeric entries
-<p>
+<br>
 <strong>User Utterance</strong> “OTP is <em>009944</em>”
 <strong>Extracted Value</strong> “<em>009944″
 </em>without the rule, it would have been <em>“9944”</em>
@@ -528,9 +528,9 @@ Words or sequences of letters having only alphabets are matched. The words conta
    <td><strong>digits</strong>
    </td>
    <td>single number
-<p>
+<br>
 Or
-<p>
+<br>
 a range of values
    </td>
    <td>To enforce a number of digits to match in a Number entity. This rule will not ignore leading zeros. The word(s) matched are composed of that many digits after NL processing. When a range is provided for the rule, it passes only if the utterance value matches within that valid range
@@ -542,15 +542,15 @@ a range of values
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "digits": "3"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern</strong> – Numeric or string entries
-<p>
+<br>
 <strong>User Utterance</strong> “CVV is <em>034</em>”
 <strong>Extracted Value</strong> “<em>034″
 </em>The value is a match as the digits = 3. If the value of the digits is 2, then it would be a no match in this example.
@@ -558,15 +558,15 @@ a range of values
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "digits": "13-17"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern</strong> – Numeric or string entries
-<p>
+<br>
 <strong>User Utterance</strong> “My credit card number is 4012 8888 8888 1881″
 <strong>Extracted Value</strong> “<em>4012 8888 8888 1881″
 </em>It is a match as the number of digits in the credit card number is 16, and within the range.
@@ -597,13 +597,13 @@ a range of values
    <td><strong>defaultCode</strong>
    </td>
    <td>&lt;currency code>
-<p>
+<br>
 or
-<p>
+<br>
 &lt;country code>
    </td>
    <td>If no code is mentioned in user input, this value will be picked as code.
-<p>
+<br>
 The value needs to be a 3 letter currency code or two-letter country alpha-2 codes.
    </td>
   </tr>
@@ -613,18 +613,18 @@ The value needs to be a 3 letter currency code or two-letter country alpha-2 cod
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "defaultCode": "NZD"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern </strong>pay *
-<p>
+<br>
 <strong>User Utterance </strong>“<em>Pay 30</em>”
 <strong>Extracted Value</strong> “<em>NZD30</em>”
-<p>
+<br>
 <strong>User Utterance </strong>“<em>Pay USD30</em>”
 <strong>Extracted Value</strong> “<em>USD30</em>“
    </td>
@@ -643,18 +643,18 @@ The value needs to be a 3 letter currency code or two-letter country alpha-2 cod
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{   </code>
-<p>
+<br>
 <code>    "maxDigits": 3 </code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern </strong>pay *
-<p>
+<br>
 <strong>User Utterance </strong>“<em>Pay USD30</em>”
 <strong>Extracted Value</strong> “<em>USD30</em>”
-<p>
+<br>
 <strong>User Utterance </strong>“<em>Pay USD3000</em>”
 <strong>Extracted Value</strong> prompt for value
    </td>
@@ -663,9 +663,9 @@ The value needs to be a 3 letter currency code or two-letter country alpha-2 cod
    <td><strong>currencyCodes</strong>
    </td>
    <td>[&lt;currency code>,&lt;currency code>]
-<p>
+<br>
 or
-<p>
+<br>
 [&lt;country code>,&lt;country code>]
    </td>
    <td>To restrict the currency codes. If the user entered code is not in the given list then the value will be discarded.
@@ -677,26 +677,26 @@ or
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "currencyCodes": [</code>
-<p>
+<br>
 <code>    "USD",</code>
-<p>
+<br>
 <code>    "INR",</code>
-<p>
+<br>
 <code>    "NZD"</code>
-<p>
+<br>
 <code>  ]</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern </strong>pay *
-<p>
+<br>
 <strong>User Utterance </strong>“<em>Pay USD30</em>”
 <strong>Extracted Value</strong> “<em>USD30</em>”
-<p>
+<br>
 <strong>User Utterance </strong>“<em>Pay AUD30</em>”
 <strong>Extracted Value</strong> prompt for a value
    </td>
@@ -707,7 +707,7 @@ or
    <td>&lt;true/false>
    </td>
    <td>If the value is true, the currency entity requires both the currency code/symbol AND the amount. Otherwise, the entered value is unaccepted, resulting in an error message displayed to the user.
-<p>
+<br>
 If the value is false, the currency entity accepts the currency code or symbol even without the amount.
    </td>
   </tr>
@@ -717,20 +717,20 @@ If the value is false, the currency entity accepts the currency code or symbol e
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "ignoreOnlyCode": true  </code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td>In a scenario where the rule is set to true:
-<p>
+<br>
 <strong>Entity Pattern </strong>pay *
-<p>
+<br>
 <strong>User Utterance </strong>“<em>Pay USD30</em>”
 <strong>Extracted Value</strong> “<em>USD30</em>”
-<p>
+<br>
 <strong>User Utterance </strong>“<em>Pay AUD</em>”
 <strong>VA Response</strong>: I apologize, I did not recognize the currency you entered. Please enter the currency you would like to use. An example of currency is $ 100.
    </td>
@@ -755,15 +755,15 @@ If the value is false, the currency entity accepts the currency code or symbol e
    <td><strong>modelNumber</strong>
    </td>
    <td>&lt;true>
-<p>
+<br>
 or
-<p>
+<br>
 &lt;a character>
    </td>
    <td>To capture a model number that is composed of letters and numbers such as membership number, social security number, country of origin code, and other ticket numbers.
-<p>
+<br>
 The rule is especially useful to capture structured data on a voice channel where a custom regex pattern is not flexible or is too cumbersome to account for every variation.
-<p>
+<br>
 For example:
 <ul>
 
@@ -775,7 +775,7 @@ For example:
 
 <li>“I was in row 35 seat d”
 
-<p>
+<br>
 Each part of the structured data is a subentity, and the composite entity patterns define the order of those elements. The modelNumber rule means that the value stored in context.entities will be a concatenated string of the matched subentities instead of a JSON object.
 </li>
 </ul>
@@ -787,36 +787,36 @@ Each part of the structured data is a subentity, and the composite entity patter
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "modelNumber": true</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern </strong>– @AccountNumbers @AccountSuffix
-<p>
+<br>
 @AccountNumbers is a Number entity with “digits”:8 entity rule.
-<p>
+<br>
 @AccountSuffix is a String entity with “letters”:2 entity rule<strong>User Utterance </strong>“<em>“Account Number is 3 3 1 3 4 2 1 2 X Y”</em>
-<p>
+<br>
 <strong>Extracted Value</strong> “<em>“33 13 42 12 X Y”<strong>User Utterance </strong></em>“<em>“Account Number is 33134212 – XY”</em>”
-<p>
+<br>
 <strong>Extracted Value</strong> “<em>“33134212XY”</em>“<strong>User Utterance </strong>“<em>“Account Number is 33 13 42 12 alpha bravo”</em>
-<p>
+<br>
 <strong><em>Extracted Value “ “33134212AB”“</em></strong>
-<p>
+<br>
 <strong>User Utterance </strong>“<em>“Account Number is thirty three thirteen forty two twelve a like apple b as in boy”
 <strong>Extracted Value</strong> “ “33134212AB””
 <strong>Composite Patterns</strong> – {row} @RowNumber {seat} @Seat</em>
-<p>
+<br>
 @RowNumber is a Number entity with “digits”:2 and “range”: (“from”:1,”to”,35} entity rules.
-<p>
+<br>
 @Seat is a Custom concept entity using a concept ~seatletters ( A B C D E F )
-<p>
+<br>
 <strong>User Utterance </strong>“<em>“I am sitting in 33 A”
 <strong>Extracted Value</strong> “ “33A”“</em>
-<p>
+<br>
 <strong>User Utterance </strong>“<em>““I am in row thirty three seat sea”
 <strong>Extracted Value</strong> “ “33C”“</em>
    </td>
@@ -877,19 +877,19 @@ Each part of the structured data is a subentity, and the composite entity patter
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "disablePatterns": [</code>
-<p>
+<br>
 <code>    "possessive"</code>
-<p>
+<br>
 <code>  ]</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern </strong>– by default capitalized words
-<p>
+<br>
 <strong>User Utterance </strong>“schedule Bob’s review at 9 am”
 <strong>Extracted Value</strong> “<em>Bob</em>“
    </td>
@@ -900,7 +900,7 @@ Each part of the structured data is a subentity, and the composite entity patter
    <td>&lt;concept name>
    </td>
    <td>Words in the concept are not to be considered as names even when capitalized.
-<p>
+<br>
 The concept name could be a space-separated list of concepts or an array of concepts.
    </td>
   </tr>
@@ -910,21 +910,21 @@ The concept name could be a space-separated list of concepts or an array of conc
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "ignoreWords": [</code>
-<p>
+<br>
 <code>    "review",</code>
-<p>
+<br>
 <code>    "~prepositionList"</code>
-<p>
+<br>
 <code>  ]</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern</strong> – by definition capitalized words
-<p>
+<br>
 <strong>User Utterance </strong>“meeting for Bob Review”
 <strong>Extracted Value</strong> “<em>Bob</em>”
 would have been “Bob Review” without the rule
@@ -944,19 +944,19 @@ would have been “Bob Review” without the rule
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "negativePatterns": [</code>
-<p>
+<br>
 <code>    "about *"</code>
-<p>
+<br>
 <code>  ]</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern</strong> – by definition capitalized words
-<p>
+<br>
 <strong>User Utterance </strong>“schedule a meeting about Philip with Fred”
 <strong>Extracted Value</strong> “<em>Fred</em>”
 would have been “Philip” without the rule
@@ -984,7 +984,7 @@ would have been “Philip” without the rule
    <td>&lt;concept name>
    </td>
    <td>Words in the concept are not to be considered as companies even when capitalized.
-<p>
+<br>
 The concept name could be a space-separated list of concepts or an array of concepts.
    </td>
   </tr>
@@ -994,19 +994,19 @@ The concept name could be a space-separated list of concepts or an array of conc
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "ignoreWords": [</code>
-<p>
+<br>
 <code>    "atm"</code>
-<p>
+<br>
 <code>  ]</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern</strong> – by definition capitalized words
-<p>
+<br>
 <strong>User Utterance </strong>“find ATM”
 <strong>Extracted Value</strong> none
 would have been “ATM” (an Italian company) without the rule
@@ -1042,7 +1042,7 @@ would have been “ATM” (an Italian company) without the rule
    <td>{ “from” : &lt;from-date>, “to” : &lt;to-date> }
    </td>
    <td>To extract dates only in the specified range. Either endpoint is optional.
-<p>
+<br>
 Values can be a date, YYYY-MM-DD, or a keyword: today, tomorrow, yesterday. The dates are inclusive.
    </td>
   </tr>
@@ -1052,27 +1052,27 @@ Values can be a date, YYYY-MM-DD, or a keyword: today, tomorrow, yesterday. The 
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>"range": {</code>
-<p>
+<br>
 <code>   "from": "2020-01-01",</code>
-<p>
+<br>
 <code>   "to": "today"</code>
-<p>
+<br>
 <code>  }</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern </strong>– by default date patterns
-<p>
+<br>
 <strong>User Utterance </strong>“show schedule for 2019-02-03”
 <strong>Extracted Value</strong> prompt for a value
-<p>
+<br>
 <strong>User Utterance </strong>“show schedule for tomorrow”
 <strong>Extracted Value</strong> prompt for a value
-<p>
+<br>
 <strong>User Utterance </strong>“show schedule  for 2020-02-03”
 <strong>Extracted Value</strong> “2020-02-03”
    </td>
@@ -1083,7 +1083,7 @@ Values can be a date, YYYY-MM-DD, or a keyword: today, tomorrow, yesterday. The 
    <td>&lt;date>
    </td>
    <td>Sets the reference date to &lt;date> and any date calculation to set the current date entity value is based on that date.
-<p>
+<br>
 Values should be a date, YYYY-MM-DD, or a keyword: today, tomorrow, yesterday.
    </td>
   </tr>
@@ -1093,15 +1093,15 @@ Values should be a date, YYYY-MM-DD, or a keyword: today, tomorrow, yesterday.
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "referenceDate": "2020-07-09"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern </strong>– by default date patterns
-<p>
+<br>
 <strong>User Utterance </strong>“schedule after two days”
 <strong>Extracted Value</strong> “2020-07-11”
 would have been two days from the current date without the reference date
@@ -1113,7 +1113,7 @@ would have been two days from the current date without the reference date
    <td>“yyyy-mm-dd”
    </td>
    <td>In case of ambiguity in date, it uses the preferred date format to resolve ambiguity.
-<p>
+<br>
 Values can be:
 <ul>
 
@@ -1134,19 +1134,19 @@ Values can be:
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "preferredDateFormat": "mm-dd-yyyy"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>User Utterance </strong>“03-04-2021”
-<p>
+<br>
 <strong>Extracted Value</strong> “2021-03-04”
-<p>
+<br>
 NOTE: This rule only applies when there is an ambiguity in the user utterance. If the user’s preference is already set as part of a previous conversation, then the user selected format would take precedence over the defined rule
-<p>
+<br>
 For example, a per the previous use case, if the user had selected the preferred format to be “dd-mm-yyy” previously in the conversation then the date would be taken as “2021-04-03”
    </td>
   </tr>
@@ -1164,17 +1164,17 @@ For example, a per the previous use case, if the user had selected the preferred
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "returnOnlyMonthYear": true</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>User Utterance </strong>“03-04-2021”
-<p>
+<br>
 <strong>Extracted Value</strong> “04-2021”<strong>User Utterance </strong>“Apr 2021”
-<p>
+<br>
 <strong>Extracted Value</strong> “04-2021”
    </td>
   </tr>
@@ -1272,7 +1272,7 @@ For example, a per the previous use case, if the user had selected the preferred
    <td>{ “from” : &lt;from-date>, “to” : &lt;to-date> }
    </td>
    <td>To extract dates in the specified range. Either endpoint is optional.
-<p>
+<br>
 Values can be a date, YYYY-MM-DD, or a keyword: today, tomorrow, yesterday. The dates are inclusive.
    </td>
    <td>
@@ -1426,27 +1426,27 @@ Values can be a date, YYYY-MM-DD, or a keyword: today, tomorrow, yesterday. The 
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>"range": {</code>
-<p>
+<br>
 <code>   "from": "2020-01-01",</code>
-<p>
+<br>
 <code>   "to": "today"</code>
-<p>
+<br>
 <code>  }</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern </strong>– by default date patterns
-<p>
+<br>
 <strong>User Utterance </strong>“show schedule for 2019-02-03”
 <strong>Extracted Value</strong> prompt for a value
-<p>
+<br>
 <strong>User Utterance </strong>“show schedule for tomorrow”
 <strong>Extracted Value</strong> prompt for a value
-<p>
+<br>
 <strong>User Utterance </strong>“show schedule  for 2020-02-03”
 <strong>Extracted Value</strong> “2020-02-03”
    </td>
@@ -1527,61 +1527,61 @@ Values can be a date, YYYY-MM-DD, or a keyword: today, tomorrow, yesterday. The 
    <td><strong>range</strong> with <strong>strict</strong>
    </td>
    <td>{ “from” : &lt;from-date>, “to” : &lt;to-date>,
-<p>
+<br>
 “strict”: &lt;true/false> }
    </td>
    <td>If the value is <em>true</em>, the Date Period entity accepts values that are strictly in the defined date range.
-<p>
+<br>
 If the value is <em>false</em>, the Date Period entity accepts values that are in the range or overlapping with the range.
    </td>
    <td colspan="3" >Examples
    </td>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>"range": {</code>
-<p>
+<br>
 <code>   "from": "2022-01-01",</code>
-<p>
+<br>
 <code>   "to": "2023-03-05",</code>
-<p>
+<br>
 <code>   "strict" = "true"</code>
-<p>
+<br>
 <code>  }</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>User Utterance</strong>: “2022-05-05 – 2022-06-05”
-<p>
+<br>
 <strong>Expected Value</strong>: “Selected date range”
-<p>
+<br>
 (The user utterance is within the defined date range. As strict is true, any value strictly in the defined date range is a valid input and is accepted.)<strong>User Utterance</strong>: “2021-05-05 – 2022-05-05”
-<p>
+<br>
 <strong>Extracted Value</strong>: “I’m sorry, I am unable to recognize the string. Please enter again.”
-<p>
+<br>
 (The user utterance is not strictly in the defined date range, it’s overlapping. As strict is true, any overlapping input is an invalid input and is rejected with an error.)
    </td>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>"range": {</code>
-<p>
+<br>
 <code>   "from": "2022-01-01",</code>
-<p>
+<br>
 <code>   "to": "2023-03-05",</code>
-<p>
+<br>
 <code>   "strict" = "false"</code>
-<p>
+<br>
 <code>  }</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>User Utterance</strong>: “2021-05-05 – 2022-05-05”
-<p>
+<br>
 <strong>Expected Value</strong>: “Selected date range”
-<p>
+<br>
 (The user utterance is overlapping with the defined date range. As strict is false, any overlapping input is a valid input and is accepted.)
    </td>
    <td><strong>referenceDate</strong>
@@ -1589,21 +1589,21 @@ If the value is <em>false</em>, the Date Period entity accepts values that are i
    <td>&lt;date>
    </td>
    <td>Sets the reference date to &lt;date> and any date calculation to set the current date entity value is based on that date.
-<p>
+<br>
 Values should be a date, YYYY-MM-DD, or a keyword: today, tomorrow, yesterday.
    </td>
    <td colspan="3" >Example
    </td>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "referenceDate": "2020-07-09"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern </strong>– by default date patterns
-<p>
+<br>
 <strong>User Utterance </strong>“schedule after two days”
 <strong>Extracted Value</strong> “2020-07-11”
    </td>
@@ -1612,25 +1612,25 @@ Values should be a date, YYYY-MM-DD, or a keyword: today, tomorrow, yesterday.
    <td>past/future
    </td>
    <td>To adjust the date period based on the tense when the year is not present in the user utterance.
-<p>
+<br>
 Without this rule, the year is set as the current year if the month/day falls within 90 days from the current date else it would be set to the previous year. With this rule, you can force the year to current or past.
    </td>
    <td colspan="3" >Example
    </td>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code> "tense": "past"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern </strong>– by default date patterns
-<p>
+<br>
 <strong>User Utterance </strong>“get the statement for Jan”
 <strong>Extracted Value</strong> “2020-01-01” if the current date is “2020-15-12”
 without the rule, it would have been “2021-01-01”
-<p>
+<br>
 <strong> </strong>
    </td>
    <td><strong>preferredDateFormat</strong>
@@ -1638,7 +1638,7 @@ without the rule, it would have been “2021-01-01”
    <td>“yyyy-mm-dd”
    </td>
    <td>In case of ambiguity in date, it uses the preferred date format to resolve ambiguity.
-<p>
+<br>
 Values can be:
 <ul>
 
@@ -1655,19 +1655,19 @@ Values can be:
    <td colspan="3" >Example
    </td>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "preferredDateFormat": "mm-dd-yyyy"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>User Utterance </strong>“03-04-2021”
-<p>
+<br>
 <strong>Extracted Value</strong> “2021-03-04”
-<p>
+<br>
 NOTE: This rule only applies when there is an ambiguity in the user utterance. If the user’s preference is already set as part of a previous conversation, then the user selected format would take precedence over the defined rule
-<p>
+<br>
 For example, a per the previous use case, if the user had selected the preferred format to be “dd-mm-yyy” previously in the conversation then the date would be taken as “2021-04-03”
    </td>
   </tr>
@@ -1693,7 +1693,7 @@ For example, a per the previous use case, if the user had selected the preferred
    <td>{ “from” : &lt;from-datetime>, “to” : &lt;to-datetime> }
    </td>
    <td>To extract date-times only in the specified range. Either endpoint is optional.
-<p>
+<br>
 Values can be a date, YYYY-MM-DD, or a DateTime, YYYY-MM-DDTHH:MM:SS (user’s timezone is assumed if none specified) or a keyword: today, tomorrow, yesterday, now. The dates are inclusive.
    </td>
   </tr>
@@ -1703,27 +1703,27 @@ Values can be a date, YYYY-MM-DD, or a DateTime, YYYY-MM-DDTHH:MM:SS (user’s t
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "range": {</code>
-<p>
+<br>
 <code>    "from": "2020-01-01T00:00:00+05:30",</code>
-<p>
+<br>
 <code>    "to": "2020-10-01T00:00:00+05:30"</code>
-<p>
+<br>
 <code>  }</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern </strong>– by default date time patterns
-<p>
+<br>
 <strong>User Utterance </strong>“set alarm for 2019-02-03T10:00:00”
 <strong>Extracted Value</strong> prompt for a value
-<p>
+<br>
 <strong>User Utterance </strong>“show schedule for 2021-12-20T10:00:00”
 <strong>Extracted Value</strong> prompt for a value
-<p>
+<br>
 <strong>User Utterance </strong>“show schedule  for 2020-02-03 T10:00:00”
 <strong>Extracted Value</strong> “2020-02-03T10:00:00”
    </td>
@@ -1732,19 +1732,19 @@ Values can be a date, YYYY-MM-DD, or a DateTime, YYYY-MM-DDTHH:MM:SS (user’s t
    <td rowspan="3" ><strong>preferredTimes</strong>
    </td>
    <td>{ “from” : &lt;from-time>,
-<p>
+<br>
 “to” : &lt;to-time> }
    </td>
    <td>To set the preferred time which can be used to interpret times when they are ambiguous. These times would be applicable to all days of the week.
-<p>
+<br>
 For example, “3” will become “3 pm” if the preferredTimes are 9 am to 6 pm.
-<p>
+<br>
 If the time cannot be placed inside the range then it will pick am/pm based on which is closest. If there are two possibilities or equal distance then the “daylight/standard awake” hours will be used. The times should be ISO 8601 format, THH:MM
    </td>
   </tr>
   <tr>
    <td>{ “from” : [],
-<p>
+<br>
 “to” : [] }
    </td>
    <td>This option is for setting preferred times different for different days of the week. The “from” and “to” keys can be arrays with 7 members representing the time for each day, from Sunday to Saturday. Each value should be in the in Thh:MM format or an empty string to indicate there is no preference.
@@ -1762,50 +1762,50 @@ If the time cannot be placed inside the range then it will pick am/pm based on w
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>"preferredTimes": {</code>
-<p>
+<br>
 <code>    "from": "T12:00:00",</code>
-<p>
+<br>
 <code>    "to": "T18:00:00"</code>
-<p>
+<br>
 <code>  }</code>
    </td>
    <td><strong>Entity Pattern </strong>– by default date patterns
-<p>
+<br>
 <strong>User Utterance </strong>“remind me at 3”
 <strong>Extracted Value</strong> “T15:00:00”
    </td>
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>"preferredTimes": {</code>
-<p>
+<br>
 <code>    "from": [</code>
-<p>
+<br>
 <code>      "", "T09:00", </code>
-<p>
+<br>
 <code>      "T09:00", "T21:00", </code>
-<p>
+<br>
 <code>      "T21:00", "T07:00", ""</code>
-<p>
+<br>
 <code>    ],</code>
-<p>
+<br>
 <code>    "to": [</code>
-<p>
+<br>
 <code>      "", "T18:00",</code>
-<p>
+<br>
 <code>      "T18:00", "T06:00", </code>
-<p>
+<br>
 <code>      "T06:00", "T16:00", ""</code>
-<p>
+<br>
 <code>    ]</code>
-<p>
+<br>
 <code>  }</code>
    </td>
    <td><strong>Entity Pattern </strong>– by default date patterns
-<p>
+<br>
 <strong>User Utterance </strong>“remind me at 3”
 <strong>Extracted Value</strong> “T15:00:00”, if the current day is Monday/Tuesday/Friday;
 “T03:00:00”, if the current day is Wednesday/Thursday
@@ -1813,15 +1813,15 @@ If the time cannot be placed inside the range then it will pick am/pm based on w
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>"preferredTimes": {</code>
-<p>
+<br>
 <code>    "favor": "pm"</code>
-<p>
+<br>
 <code>  }</code>
    </td>
    <td><strong>Entity Pattern </strong>– by default date patterns
-<p>
+<br>
 <strong>User Utterance </strong>“remind me at 3”
 <strong>Extracted Value</strong> “T15:00:00”
    </td>
@@ -1832,7 +1832,7 @@ If the time cannot be placed inside the range then it will pick am/pm based on w
    <td>true/false
    </td>
    <td>If true then the dialog will be looking for time range in the user input.
-<p>
+<br>
 Influences how “10 to 4” is interpreted. By default, this will be “3:50” but if there is the possibility of a range then will be decoded as 2 times “10:00” and “16:00”
    </td>
   </tr>
@@ -1842,15 +1842,15 @@ Influences how “10 to 4” is interpreted. By default, this will be “3:50”
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>"timeRangePossible": "true"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td> 
-<p>
+<br>
 <strong> </strong>
    </td>
   </tr>
@@ -1860,7 +1860,7 @@ Influences how “10 to 4” is interpreted. By default, this will be “3:50”
    <td>“yyyy-mm-dd”
    </td>
    <td>In case of ambiguity in date, it uses the preferred date format to resolve ambiguity.
-<p>
+<br>
 Values can be:
 <ul>
 
@@ -1881,19 +1881,19 @@ Values can be:
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "preferredDateFormat": "mm-dd-yyyy"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>User Utterance </strong>“03-04-2021”
-<p>
+<br>
 <strong>Extracted Value</strong> “2021-03-04”
-<p>
+<br>
 NOTE: This rule only applies when there is an ambiguity in the user utterance. If the user’s preference is already set as part of a previous conversation, then the user selected format would take precedence over the defined rule
-<p>
+<br>
 For example, a per the previous use case, if the user had selected the preferred format to be “dd-mm-yyy” previously in the conversation then the date would be taken as “2021-04-03”
    </td>
   </tr>
@@ -1917,19 +1917,19 @@ For example, a per the previous use case, if the user had selected the preferred
    <td rowspan="3" ><strong>preferredTimes</strong>
    </td>
    <td>{ “from” : &lt;from-time>,
-<p>
+<br>
 “to” : &lt;to-time> }
    </td>
    <td>To set the preferred time which can be used to interpret times when they are ambiguous. These times would be applicable to all days of the week.
-<p>
+<br>
 For example, “3” will become “3 pm” if the preferredTimes are 9 am to 6 pm.
-<p>
+<br>
 If the time cannot be placed inside the range then it will pick am/pm based on which is closest. If there are two possibilities or equal distance then the “daylight/standard awake” hours will be used. The times should be ISO 8601 format, THH:MM
    </td>
   </tr>
   <tr>
    <td>{ “from” : [],
-<p>
+<br>
 “to” : [] }
    </td>
    <td>This option is for setting preferred times different for different days of the week. The “from” and “to” keys can be arrays with 7 members representing the time for each day, from Sunday to Saturday. Each value should be in the in Thh:MM format or an empty string to indicate there is no preference.
@@ -1947,50 +1947,50 @@ If the time cannot be placed inside the range then it will pick am/pm based on w
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>"preferredTimes": {</code>
-<p>
+<br>
 <code>    "from": "T12:00:00",</code>
-<p>
+<br>
 <code>    "to": "T18:00:00"</code>
-<p>
+<br>
 <code>  }</code>
    </td>
    <td><strong>Entity Pattern </strong>– by default date patterns
-<p>
+<br>
 <strong>User Utterance </strong>“remind me at 3”
 <strong>Extracted Value</strong> “T15:00:00”
    </td>
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>"preferredTimes": {</code>
-<p>
+<br>
 <code>    "from": [</code>
-<p>
+<br>
 <code>      "", "T09:00", </code>
-<p>
+<br>
 <code>      "T09:00", "T21:00", </code>
-<p>
+<br>
 <code>      "T21:00", "T07:00", ""</code>
-<p>
+<br>
 <code>    ],</code>
-<p>
+<br>
 <code>    "to": [</code>
-<p>
+<br>
 <code>      "", "T18:00",</code>
-<p>
+<br>
 <code>      "T18:00", "T06:00", </code>
-<p>
+<br>
 <code>      "T06:00", "T16:00", ""</code>
-<p>
+<br>
 <code>    ]</code>
-<p>
+<br>
 <code>  }</code>
    </td>
    <td><strong>Entity Pattern </strong>– by default date patterns
-<p>
+<br>
 <strong>User Utterance </strong>“remind me at 3”
 <strong>Extracted Value</strong> “T15:00:00”, if the current day is Monday/Tuesday/Friday;
 “T03:00:00”, if the current day is Wednesday/Thursday
@@ -1998,15 +1998,15 @@ If the time cannot be placed inside the range then it will pick am/pm based on w
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>"preferredTimes": {</code>
-<p>
+<br>
 <code>    "favor": "pm"</code>
-<p>
+<br>
 <code>  }</code>
    </td>
    <td><strong>Entity Pattern </strong>– by default date patterns
-<p>
+<br>
 <strong>User Utterance </strong>“remind me at 3”
 <strong>Extracted Value</strong> “T15:00:00”
    </td>
@@ -2025,7 +2025,7 @@ If the time cannot be placed inside the range then it will pick am/pm based on w
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 {
 “timeRangePossible”: “true”
 }
@@ -2037,17 +2037,17 @@ If the time cannot be placed inside the range then it will pick am/pm based on w
    <td><strong>range</strong>
    </td>
    <td>{ “from” : “now”,
-<p>
+<br>
 }
-<p>
+<br>
 or
-<p>
+<br>
 { “to” : “now”
-<p>
+<br>
 }
    </td>
    <td>To extract date-times only in the specified range. Either endpoint is optional.
-<p>
+<br>
 Currently, support is extended to the value “now” alone
    </td>
   </tr>
@@ -2057,15 +2057,15 @@ Currently, support is extended to the value “now” alone
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "range": {</code>
-<p>
+<br>
 <code>    "from": "now"</code>
-<p>
+<br>
 <code>  }</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td>
@@ -2077,7 +2077,7 @@ Currently, support is extended to the value “now” alone
    <td>true/false
    </td>
    <td>Rule to include or exclude the character “T” and the offset value in the time.
-<p>
+<br>
 Possible values are:
 <ul>
 
@@ -2085,9 +2085,9 @@ Possible values are:
 
 <li><strong>False </strong>– Obtains the time along with character T and the offset value.
 
-<p>
+<br>
 <strong>Note</strong>: The timeOnly rule supports multilang excluding English, German, French and Spanish.
-<p>
+<br>
 For example:
 <ul>
 
@@ -2108,11 +2108,11 @@ For example:
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>"timeOnly": "true"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td>
@@ -2140,7 +2140,7 @@ For example:
    <td>&lt;concept name>
    </td>
    <td>For the words in the concept not to be considered as cities.
-<p>
+<br>
 The concept name could be a space-separated list of concepts or an array of concepts or space-separated strings.
    </td>
   </tr>
@@ -2150,15 +2150,15 @@ The concept name could be a space-separated list of concepts or an array of conc
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "ignoreWords": "Send"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern </strong>– by default capitalized words
-<p>
+<br>
 <strong>User Utterance </strong>“Send destination to my email”
 <strong>Extracted Value</strong> prompt for entity value, without the rule it would have been “Send” since it is a city name
    </td>
@@ -2185,7 +2185,7 @@ The concept name could be a space-separated list of concepts or an array of conc
    <td>[&lt;“country1”>,&lt;“country2”>,..]
    </td>
    <td>To restrict zip code from the given set of preferred countries along with the user location country and the gleaned countries from the input.
-<p>
+<br>
 Need to add two-letter country alpha-2 codes in place of
 &lt;“country1”>,&lt;“country2”>,…
    </td>
@@ -2196,19 +2196,19 @@ Need to add two-letter country alpha-2 codes in place of
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "preferredCountries": [</code>
-<p>
+<br>
 <code>    "GB"</code>
-<p>
+<br>
 <code>  ]</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Entity Pattern </strong>– by default zip code patterns
-<p>
+<br>
 <strong>User Utterance </strong>“check delivery to <em>PO16 7GZ</em>”
 <strong>Extracted Value</strong> “<em>PO16 7GZ</em>“, without the rule this might have been ignored if the user is not in the UK region
    </td>
@@ -2235,7 +2235,7 @@ Need to add two-letter country alpha-2 codes in place of
    <td>[&lt;“country1”>,&lt;“country2”>,..]
    </td>
    <td>To restrict location from the given set of preferred countries along with the user location country and the gleaned countries from the input.
-<p>
+<br>
 Need to add two-letter country alpha-2 codes in place of
 &lt;“country1”>,&lt;“country2”>,…
    </td>
@@ -2246,15 +2246,15 @@ Need to add two-letter country alpha-2 codes in place of
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "preferredCountries": [</code>
-<p>
+<br>
 <code>    "GB"</code>
-<p>
+<br>
 <code>  ]</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td>
@@ -2280,7 +2280,7 @@ Need to add two-letter country alpha-2 codes in place of
    <td><strong>ignoreLemmaWords</strong>
    </td>
    <td>true/
-<p>
+<br>
 false
    </td>
    <td>If <code>ignoreLemmaWords</code> is true, lemmatization is not performed on the given user input in the LoV lookup entity to predict the output. If it is set to false, lemmatization is performed.
@@ -2292,23 +2292,23 @@ false
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>"ignoreLemmaWords": false</code>
-<p>
+<br>
 <code>}</code>
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>"ignoreLemmaWords": true</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Input Options</strong> – “ticket”, “tickets”.”
-<p>
+<br>
 <strong>User Utterance</strong> “I need a ticket,” “I need tickets.”
-<p>
+<br>
 <strong>Extracted Value</strong> When <strong><code>ignoreLemmaWords</code></strong> is set to false, the LoV entity extracts “ticket” for both the inputs – “ticket” and “tickets”.
 When it is set to true, the entity extracts “ticket” only when the input contains “ticket”. For a different input like “tickets”, the bot responds that it is not a valid option.
    </td>
@@ -2319,21 +2319,21 @@ When it is set to true, the entity extracts “ticket” only when the input con
    <td>
    </td>
    <td>The rule for the list of values (LOV) entity type to extend support to ignore words defined in the stop words or ignore words list.
-<p>
+<br>
 This rule helps to ignore words that are not part of every choice and if a particular word is either causing a specific match or an ambiguity. It assesses the common synonyms (common meaning present in more than one choice) and boost partial match score for same choice.
-<p>
+<br>
 <strong>Syntax</strong>
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>"ignoreWords": [</code>
-<p>
+<br>
 <code>""</code>
-<p>
+<br>
 <code>]</code>
-<p>
+<br>
 <code>}</code>
-<p>
+<br>
 <strong>Note</strong>: You can enter multiple synonyms as a comma-separated list of words to be ignored.
    </td>
   </tr>
@@ -2343,21 +2343,21 @@ This rule helps to ignore words that are not part of every choice and if a parti
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>"ignoreWords": [</code>
-<p>
+<br>
 <code>"~size"</code>
-<p>
+<br>
 <code>]</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Input Options</strong> – “~extra large size t-shirt”, “~large size t-shirt”, “~medium size t-shirt”, “~short size t-shirt”. “~child t-shirt, “~ men t-shirt” “~women t-shirt”
-<p>
+<br>
 <strong>User Utterance</strong> – “I need extra large size t-shirt”, “I need large size t-shirt.”, “I need medium size t-shirt” “I need t-shirt for men”
-<p>
+<br>
 <strong>Extracted Value</strong> – When <strong>ignoreWords</strong> is set to <em>size</em>, the LoV entity ignores the word “size” in the user input.
    </td>
   </tr>
@@ -2381,11 +2381,11 @@ This rule helps to ignore words that are not part of every choice and if a parti
    <td><strong>ownership</strong>
    </td>
    <td>include/
-<p>
+<br>
 exclude
    </td>
    <td>To look for potential “ownership” phrasing, e.g. “is mine” to determine if a potential choice should be included or excluded from the entity value.
-<p>
+<br>
 Examples of ownership phrases are “is mine”, “belongs to me”, etc.
    </td>
   </tr>
@@ -2395,30 +2395,30 @@ Examples of ownership phrases are “is mine”, “belongs to me”, etc.
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "ownership": "include"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Input Options</strong> – Pick your item: “pen”, “watch”, “bottle”, “book”, “cap”
-<p>
+<br>
 <strong>User Utterance</strong> “first two are mine”
 <strong>Extracted Value</strong> [“pen”, “watch”]
    </td>
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "ownership": "exclude"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Input Options</strong> – Pick your item: “pen”, “watch”, “bottle”, “book”, “cap”
-<p>
+<br>
 <strong>User Utterance</strong> “first two are mine”
 <strong>Extracted Value</strong> [“bottle”, “book”, “cap”], since the rule is to exclude the ownership values.
    </td>
@@ -2429,7 +2429,7 @@ Examples of ownership phrases are “is mine”, “belongs to me”, etc.
    <td>&lt;concept name> or array of words
    </td>
    <td>The list of words that supplement to the ownership phrases.
-<p>
+<br>
 The value can be an array of strings or a concept.To be used along with <em>ownership: include</em> rule
    </td>
   </tr>
@@ -2439,20 +2439,20 @@ The value can be an array of strings or a concept.To be used along with <em>owne
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "ownership": "include",</code>
-<p>
+<br>
 <code>  "includeWords": "great"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Input Options</strong> – Pick your item: “pen”, “watch”, “bottle”, “book”, “cap”
-<p>
+<br>
 <strong>User Utterance</strong> “first two are mine”
 <strong>Extracted Value</strong> [“pen”, “watch”]
-<p>
+<br>
 <strong>User Utterance</strong> “first two are great”
 <strong>Extracted Value</strong> [“pen”, “watch”]
    </td>
@@ -2463,7 +2463,7 @@ The value can be an array of strings or a concept.To be used along with <em>owne
    <td>&lt;concept name> or array of words
    </td>
    <td>The list of words that can be used as non-ownership phrases.
-<p>
+<br>
 The value can be an array of strings or a concept. To be used along with <em>ownership: exclude</em> rule
    </td>
   </tr>
@@ -2473,19 +2473,19 @@ The value can be an array of strings or a concept. To be used along with <em>own
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "ownership": "exclude",</code>
-<p>
+<br>
 <code>   "excludeWords": "~lovConcept"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Input Options</strong> – Pick your item: “pen”, “watch”, “bottle”, “book”, “cap”
-<p>
+<br>
 <strong>lovConcept</strong> – dubious<strong>User Utterance</strong> “first two are dubious”
-<p>
+<br>
 <strong>Extracted Value</strong> [“bottle”, “book”, “cap”]
    </td>
   </tr>
@@ -2503,15 +2503,15 @@ The value can be an array of strings or a concept. To be used along with <em>own
   </tr>
   <tr>
    <td colspan="2" >JSON
-<p>
+<br>
 <code>{</code>
-<p>
+<br>
 <code>  "noIndexMatch": "true"</code>
-<p>
+<br>
 <code>}</code>
    </td>
    <td><strong>Input Options</strong> – Pick your item: “pen”, “watch”, “bottle”, “book”, “cap”
-<p>
+<br>
 <strong>User Utterance</strong> a
 <strong>Extracted Value</strong> prompt for input, without the rule it would have been [“pen”]
    </td>

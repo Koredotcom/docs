@@ -1,5 +1,5 @@
 
-# **Managing Namespace**
+# Managing Namespace
 
 Chances are that you have defined tens or hundreds of (Environment or Content) variables and used them in the VA definitions. These variables could have been used in defining text prompts or messages, JavaScript, transitions, and service call definitions. Loading all these variables for every single task irrespective of their usage would lead to delays in response times impacting the user experience.
 

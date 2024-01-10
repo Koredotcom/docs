@@ -714,7 +714,7 @@ By default, the Allow Virtual Assistant to Pause/Resume feature is disabled. How
 
 Recorded calls are accessible to supervisors on the Dashboard’s [Interactions](https://docs.kore.ai/smartassist/dashboard/interactions/#Call_Recording) tab. The interactions are not recorded in the interactions tab for the duration that the recording was stopped/paused.
 
-Changes to the Call Recording Control settings are logged on the [Kore.ai Bots Admin Console](https://bots.kore.ai/admin/#_login) > Analytics > [Audit Report page](https://docs.kore.ai/smartassist/bot-administration/audit-report/).
+Changes to the Call Recording Control settings are logged on the [Kore.ai Bots Admin Console](https://bots.kore.ai/admin/#_login) > Analytics > [Audit Report page](https://docs.kore.ai/smartassist/administration/audit-report/).
 
 ## Transfers
 

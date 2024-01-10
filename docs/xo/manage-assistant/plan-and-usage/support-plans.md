@@ -1,4 +1,4 @@
-# **Support Plans**
+# Support Plans
 
 	
 
@@ -15,7 +15,7 @@ Here are the available Support Plans for publishing your virtual assistants. Sub
 3. You can[ reach out to us](https://kore.ai/contact-us) for upgrading to Enterprise Support. 
 
 
-### **Support Plan Limits**
+### Support Plan Limits
 
 The following are the Support Plans available for virtual assistants. 
 
@@ -192,7 +192,7 @@ Resolution time for addressing S1 Critical incidents.
 			
 
 
-### **Support Usage**
+### Support Usage
 
 Apart from the virtual assistant usage plan, you can also view the support plan details. Every paid virtual assistant comes with a basic support plan.
 
