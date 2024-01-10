@@ -6,7 +6,7 @@ The **Batch Testing** feature helps you discern the ability of your bot to corre
 
 **Note**: The Batch Testing dashboard displays the summary of test coverage, performance, and training recommendations for multiple test suites based on validations of the intent identification capabilities of your NLU model. The **Health and Monitoring** dashboard is a one-stop place that displays this information for the individual test suite(s) the user selects. [Learn More](../health-and-monitoring/virtual-assistants-health-and-monitoring/){:target="_blank"}.
 
-To conduct a batch test, you can use predefined test suites available in the builder or create your own custom test suites. Based on your requirement, the test suites can be run to view the desired results. This option can be accessed from the **Testing -> Batch Testing** option from the left navigation menu.
+To conduct a batch test, you can use predefined test suites available in the builder or create your own custom test suites. Based on your requirement, the test suites can be run to view the desired results. This option can be accessed from the **Testing -> Regression Testing -> Batch Testing** option from the left navigation menu.
 
 
 ## **Best Practices**
@@ -44,8 +44,8 @@ This test suite includes all the end-user utterances that have successfully matc
 
 To add a new test suite, follow the steps below:
 
-1. Go to **Build** > **Testing** > **Batch Testing**, and click **New Test Suite**.  
-<img src="../images/batch-testing-3.png" alt="BT - New Test Suite" title="BT - New Test Suite" style="border: 1px solid gray;zoom:50%;">
+1. Go to **Automation > Testing > Regression Testing**, select **Batch Testing** tab, and click **New Test Suite**.  
+  <img src="../images/batch-testing-3.png" alt="BT - New Test Suite" title="BT - New Test Suite" style="border: 1px solid gray;zoom:50%;">
 2. In the **New test Suite** window, add a **name** and provide a **description**.
 3. Next, choose how to add test cases: either manually or by uploading a test case file.
     * Selecting **Add Manually** lets you add test cases manually or use LLM and Generative AI to generate test cases automatically.
