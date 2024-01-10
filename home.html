@@ -1,0 +1,711 @@
+<div class="kore-home-cntr">
+    {% extends "main.html" %}
+
+    <!-- Render hero under tabs -->
+    {% block tabs %}
+      {{ super() }}
+    
+      <!-- Additional styles for landing page -->
+      <style>
+    
+        /* Application header should be static for the landing page */
+        .md-header {
+          position: initial;
+        }
+    
+        /* Remove spacing, as we cannot hide it completely */
+        .md-main__inner {
+          margin: 0;
+        }
+    
+        /* Hide main content for now */
+        .md-content {
+          display: none;
+        }
+    
+        /* Hide table of contents */
+        @media screen and (min-width: 60em) {
+          .md-sidebar--secondary {
+            display: none;
+          }
+        }
+    
+        /* Hide navigation */
+        @media screen and (min-width: 76.25em) {
+          .md-sidebar--primary {
+            display: none;
+          }
+        }
+      </style>
+    
+      <!-- Hero for landing page -->
+        <style>
+      /* Banner styles start */
+        .mdc-main-banner{
+            background-image: url(assets/mdc-banner.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 110px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mdc-main-banner h1{
+            color: var(--gray-900, #101828);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            margin: 0px;
+        }
+        /* Banner styles end */
+
+
+        /* Banner search styles start */
+        .mdc-search{
+            width: 524px;
+            margin: auto;
+            position: relative;
+            transform: translateY(-20px);
+        }
+        .mdc-search-input{
+            padding: 11px 18px 11px 42px;
+            border-radius: 9.038px;
+            border: 0px solid var(--gray-300, #D0D5DD);
+            background: var(--base-white, #FFF);
+            box-shadow: 0px 1.13px 2.259px 0px rgba(16, 24, 40, 0.05);
+            outline: 0px;
+            width: 100%;
+        }
+        .mdc-search-icon{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: default;
+            width: 54px;
+        }
+        /* Banner search styles end */
+
+         /* Explore section styles start */
+        .mdc-explore-wrapper{
+            display: flex;
+            justify-content: center;
+            margin-top: 24px;
+        }
+        .mdc-explore-block{
+            display: flex;
+            padding: var(--spacing-sm, 8px) 16px;
+            gap: 16px;
+            border-radius: 66px;
+            border: 1px solid var(--gray-200, #EAECF0);
+            background: var(--base-white, #FFF);
+            align-items: center;
+        }
+        .mdc-explore-block .mdc-explore-block-info{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .mdc-explore-block .explore-icon{
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: linear-gradient(33deg, #9747FF -0.23%, #8DCFFF 94.28%);
+        }
+        .explore-content{
+            color: var(--gray-500, #667085);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+        .explore-content span{
+            color: var(--gray-900, #0000008a);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            margin-right: 8px;
+        }
+        .mdc-explore-block-action span{
+            color: var(--primary-600, #155EEF);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; 
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+        }
+        /* Explore section styles End */
+
+        /* Services section styles start */
+        .mdc-services{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 24px;
+            margin-top: 24px;
+            justify-content: space-between;
+        }
+        .mdc-services-block{
+            display: flex;
+            border-radius: var(--radius-md, 8px);
+            padding: 18px;
+            border: 1px solid var(--gray-200, #EAECF0);
+            background: var(--base-white, #FFF);
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);
+            gap: 14px;
+            cursor: pointer;
+        }
+
+        .mdc-services-block:hover{
+            background: #e9f2ff47;
+        }
+        .mdc-services-title{
+            color: var(--gray-900, #0000008a);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            margin: 0;
+        }
+        .mdc-services-des{
+            color: var(--gray-500, #0000008a);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            margin: 5px 0px 10px 0px;
+        }
+        .mdc-services-action{
+            color: var(--primary-500, #155EEF);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            text-decoration: none;
+        }
+         /* Services section styles end */
+
+         /* Browse by offering section styles start */
+        .mdc-browse-by-offering{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            background: var(--gray-50, #F9FAFB);
+            border-radius: 8px;
+            padding: 0px 64px;
+        }
+        .mdc-main-title{
+            color: var(--gray-900, #101828);
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px; 
+            margin: 0;
+        }
+        .mdc-nav-tabs{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            list-style-type: none;
+            padding: 0px;
+            flex-wrap: wrap;
+        }
+        .mdc-nav-tabs .mdc-nav-item{
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+        .mdc-nav-tabs .mdc-nav-item .mdc-nav-link{
+            color: var(--gray-500, #667085);
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            line-height: 20px;
+        }
+        .mdc-nav-tabs .mdc-nav-item:hover{
+            background: var(--primary-50, #EFF4FF);
+        }
+        .mdc-nav-tabs .mdc-nav-item:hover .mdc-nav-link{
+            background: var(--primary-50, #EFF4FF);
+            color: var(--primary-600, #155EEF);
+        }
+        .mdc-nav-tabs .mdc-nav-item.active{
+            background: var(--primary-50, #EFF4FF);
+        }
+        .mdc-nav-tabs .mdc-nav-item.active .mdc-nav-link{
+            color: var(--primary-600, #155EEF);
+        }
+        .mdc-offering-data{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 12px;
+            padding-bottom: 20px;
+        }
+        .mdc-offering-data-block{
+            padding: var(--spacing-md, 16px);
+            border-radius: var(--radius-md, 8px);
+            transition: all 0.5s ease-in;
+            cursor: pointer;
+        }
+        .mdc-offering-data-block:hover{
+            box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03), 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+            background-color: #fff;
+        }
+        .mdc-offering-data-block .mdc-offering-header{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--gray-900, #101828);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+        .mdc-filter-icon{
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mdc-offering-data-block:hover .mdc-filter-icon{
+            background: var(--primary-50, #EFF4FF);
+        }
+        .mdc-offering-data-block:hover .mdc-filter-icon svg path{
+            fill: #155EEF !important;
+        }
+        .mdc-offering-info{
+            color: var(--gray-500, #667085);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+        .mdc-offering-action{
+            color: var(--primary-600, #155EEF);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px; 
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            text-decoration: none;
+            margin-top: 12px;
+        }
+        /* Browse by offering section styles end */
+
+         /* Whats new section styles start */
+        .mdc-whats-new{
+            padding: 24px 0px;
+            display: flex;
+            gap: 24px;
+        }
+        .mdc-whats-new-left{
+            width: 100%;
+            padding: 0px 60px 0px 0px;
+        }
+        .mdc-heading{
+            color: var(--gray-900, #101828);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px; 
+            margin: 0px 0px 12px 0px;
+        }
+        .mdc-des{
+            color: var(--gray-500, #667085);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            margin: 0px 0px 24px 0px;
+        }
+        .mdc-whats-new-block{
+            margin-bottom: 12px;
+        }
+        .mdc-whats-new-title{
+            color: var(--gray-900, #101828);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px; 
+            padding-left: 20px;
+            position: relative;
+            margin: 0px;
+            display: flex;
+            align-items: center;
+        }
+        .mdc-whats-new-title::before{
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            border: 1.6px solid var(--purple-200, #D9D6FE);
+            background-color: var(--purple-600, #6938EF);
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .mdc-whats-new-des{
+            padding-left: 20px;
+            position: relative;
+        }
+        .mdc-whats-new-des p{
+            color: var(--gray-500, #667085);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            padding: 12px 0px;
+            margin: 0px;
+        }
+        .mdc-whats-new-des span{
+            color: var(--gray-400, #98A2B3);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+        .mdc-whats-new-des::before{
+            content: '';
+            position: absolute;
+            height: 100%;
+            border-left: 1px dashed var(--purple-300, #BDB4FE);
+            left: 3px;
+            top: 0;
+        }
+        .mdc-whats-new-block span{
+            color: var(--gray-400, #98A2B3);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px; 
+        }
+        .mdc-whats-new-right{
+            width: 360px;
+            flex-shrink: 0;
+            padding: var(--spacing-3-xl, 64px) var(--spacing-lg, 24px) var(--spacing-lg, 24px) var(--spacing-lg, 24px);
+            border-radius: var(--radius-md, 8px);
+            background: var(--gray-50, #F9FAFB);
+            position: relative;
+            height: max-content;
+        }
+        .arrow-image{
+            position: absolute;
+            left: -61.309px;
+            top: -22.697px;
+            background-image: url(assets/quirky-paper-plane-with-dotted-line.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 138px;
+            height: 118px;
+        }
+        .mdc-whats-new-right h4{
+            color: var(--gray-900, #101828);
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0px;
+            line-height: 28px; 
+        }
+        .mdc-whats-new-right p{
+            margin: 0px;
+            color: var(--gray-700, #344054);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            margin: 8px 0px 40px 0px;
+        }
+        .mdc-email-notifi{
+            display: flex;
+            align-items: center;
+        }
+        .mdc-email-notifi .input-email{
+            padding: 10px 14px;
+            border-radius: var(--radius-md, 8px) 0px 0px var(--radius-md, 8px);
+            border: 1px solid var(--gray-300, #D0D5DD);
+            background: var(--base-white, #FFF);
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+            color: var(--gray-500, #667085);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            width: 100%;
+        }
+        .mdc-email-notifi  .send-btn{
+            padding: 10px 16px;
+            border-radius: 0px var(--radius-md, 8px) var(--radius-md, 8px) 0px;
+            border: 1px solid var(--gray-300, #D0D5DD);
+            background: var(--gray-50, #F9FAFB);
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+            color: var(--gray-500, #667085);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+        .relase-note-action{
+            color: var(--primary-500, #2970FF);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            display: inline-block;
+            text-decoration: none;
+        }
+         /* Whats new section styles end */
+
+
+        .mdc-spacing{
+            height: 64px;
+        }
+
+         /* hepler section styles start */
+        .mdc-help-wrapper{
+            border-bottom: 1px solid var(--gray-200, #EAECF0);
+            padding: 16px 0px 40px 0px;
+        }
+        .mdc-help-title{
+            color: var(--gray-700, #344054);
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            gap: 12px;
+            display: flex;
+            align-items: center;
+            margin: 0px;
+        }
+        .mdc-helpline-centers{
+            display: flex;
+            justify-content: center;
+            margin-top: 48px;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .mdc-helpline-block{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .mdc-helpline-block .mdc-helpline-title{
+            color: #000;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px; 
+        }
+        .mdc-helpline-block .mdc-helpline-action{
+            color: var(--primary-600, #155EEF);
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            line-height: 24px;
+        }
+         /* hepler section styles end */
+
+         /*Media quires for home page */
+         @media screen and (max-width:767px) {
+          .mdc-search{
+            width: 100%;
+            padding: 0px 20px;
+          }
+          .mdc-explore-wrapper{
+            margin-top: 15px;
+            padding: 0px 20px;
+          }
+          .mdc-explore-block{
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+          }
+          .mdc-explore-block-info{
+            flex-direction: column;
+            text-align: center;
+          }
+          .mdc-services{
+            padding: 0px 20px;
+          }
+          .mdc-browse-by-offering{
+            padding: 0px 20px;
+          }
+          .mdc-whats-new{
+            padding: 24px 20px;
+    flex-direction: column;
+
+          }
+          .mdc-whats-new-left{
+            padding: 0px;
+          }
+          .mdc-whats-new-right{
+            width: 100%;
+            padding: 20px !important;
+          }
+          .mdc-help-title{
+            justify-content: center;
+          }
+          .mdc-helpline-centers{
+            margin-top: 20px !important;
+            gap: 10px;
+          }
+        }
+        </style>
+      <section class="mdx-container">
+        <div class="mdc-main-banner">
+            <h1>Welcome to Kore.ai Product Documentation</h1>
+        </div>
+        <main class="mdc-main md-grid">
+            <!--Banner search Start-->
+            <!-- <div class="mdc-search">
+                <input type="text" class="mdc-search-input">
+                <span class="mdc-search-icon">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" >
+                      <path d="M19.8465 20.2705L15.7512 16.1752M17.9636 10.856C17.9636 15.0155 14.5916 18.3876 10.432 18.3876C6.27241 18.3876 2.90039 15.0155 2.90039 10.856C2.90039 6.69636 6.27241 3.32434 10.432 3.32434C14.5916 3.32434 17.9636 6.69636 17.9636 10.856Z" stroke="#98A2B3" stroke-width="1.8829" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </div> -->
+             <!--Banner search End-->
+                
+             <!--Services section start-->
+            <section class="mdc-services">
+                <a href="../automation/use-cases/dialogs/dialog-tasks-overview/"  class="mdc-services-block">
+                    <div class="mdc-services-icon">
+                        <img src="assets/automation.svg" alt="Automation">
+                    </div>
+                    <div  class="mdc-services-info">
+                        <h3 class="mdc-services-title">Automation</h3>
+                        <p class="mdc-services-des">Deliver extraordinary experiences for customers, agents, and employees on voice and digital channels.</p>
+                        <span class="mdc-services-action">Learn More</span>
+                    </div>
+                </a>
+                <a href="../answers/knowledge-ai/knowledge-ai-introduction/" class="mdc-services-block">
+                    <div class="mdc-services-icon">
+                        <img src="assets/answers.svg" alt="Answers">
+                    </div>
+                    <div class="mdc-services-info">
+                        <h3 class="mdc-services-title">Answers</h3>
+                        <p class="mdc-services-des">Conversational Search Assistant with the Added Power of LLMs and Generative AI</p>
+                        <span class="mdc-services-action">Learn More</span>
+                    </div>
+                </a>
+                <a href="../agentassist/agent-experience/agent-realtime-coaching/"  class="mdc-services-block">
+                    <div class="mdc-services-icon">
+                        <img src="assets/agentasisst.svg" alt="AgentAssist">
+                    </div>
+                    <div class="mdc-services-info">
+                        <h3 class="mdc-services-title">AgentAssist</h3>
+                        <p class="mdc-services-des">An AI-first intelligent virtual assistant to elevate your agents' productivity and experience.</p>
+                        <span class="mdc-services-action">Learn More</span>
+                    </div>
+                </a>
+                <a  href="../contactcenter/configurations/default-flows/configure-default-flows/" class="mdc-services-block">
+                    <div class="mdc-services-icon">
+                        <img src="assets/contact-center.svg" alt="Contact Center">
+                    </div>
+                    <div class="mdc-services-info">
+                        <h3 class="mdc-services-title">Contact Center</h3>
+                        <p class="mdc-services-des">Deliver an Exceptional Customer Experience using our AI-Native Contact Center as a Service.</p>
+                        <span class="mdc-services-action">Learn More</span>
+                    </div>
+                </a>
+                <a class="mdc-services-block">
+                    <div class="mdc-services-icon">
+                        <img src="assets/campaign.svg" alt="Campaigns">
+                    </div>
+                    <div class="mdc-services-info">
+                        <h3 class="mdc-services-title">Campaigns</h3>
+                        <p class="mdc-services-des">Proactively reach out to contacts across different channels.</p>
+                        <span class="mdc-services-action">Learn More</span>
+                    </div>
+                </a>
+                <a class="mdc-services-block">
+                    <div class="mdc-services-icon">
+                        <img src="assets/quality-mangement.svg" alt="Quality Management">
+                    </div>
+                    <div class="mdc-services-info">
+                        <h3 class="mdc-services-title">Quality Management</h3>
+                        <p class="mdc-services-des">Deliver an Exceptional Customer Experience using our AI-Native Contact Center as a Service.</p>
+                        <span class="mdc-services-action">Learn More</span>
+                    </div>
+                </a>
+            </section>
+            <!--Services section end-->
+    
+            <div class="mdc-spacing"></div>
+                 
+            <!--Whats new section start-->
+            <section class="mdc-whats-new">
+                <div class="mdc-whats-new-left">
+                    <h2 class="mdc-heading">What's New</h2>
+                    <p class="mdc-des">Explore the most recent changes, enhancements, and bug fixes with our latest release notes. Stay up-to-date with our software's evolving features and improvements</p>
+                    <div class="mdc-whats-new-block">
+                        <h4 class="mdc-whats-new-title">Enhanced Bot Creation Journey with Use Case Suggestions <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+                            <path d="M4.16675 10.5949H15.8334M15.8334 10.5949L10.0001 4.76152M15.8334 10.5949L10.0001 16.4282" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></h4>
+                        <div class="mdc-whats-new-des">
+                            <p>Create Virtual Assistants faster with the new bot creation process that lets you generate use cases automatically.</p>
+                            <span>12th September 2023</span>
+                        </div>
+                     </div>
+                     <div class="mdc-whats-new-block">
+                        <h4 class="mdc-whats-new-title">Enhanced Bot Creation Journey with Use Case Suggestions <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+                            <path d="M4.16675 10.5949H15.8334M15.8334 10.5949L10.0001 4.76152M15.8334 10.5949L10.0001 16.4282" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></h4>
+                        <div class="mdc-whats-new-des">
+                            <p>Create Virtual Assistants faster with the new bot creation process that lets you generate use cases automatically.</p>
+                            <span>12th September 2023</span>
+                        </div>
+                     </div>
+                     <a href="https://docsinternal-kore.github.io/docs/xo/whats-new/whats-new-in-this-release/ " class="relase-note-action">View Recent Release Notes </a>
+                </div>
+                <div class="mdc-whats-new-right">
+                    <div class="arrow-image"></div>
+                    <h4>Stay Connected to Our Most Recent Update Information</h4>
+                    <p>Your connection to our most recent update information is your key to remaining current and in-the-know.</p>
+                    <div class="mdc-email-notifi">
+                        <input type="email" class="input-email"/>
+                        <button class="send-btn">Send</button>
+                    </div>
+                </div>
+            </section>
+             <!--Whats new section End-->
+    
+            <!-- <div class="mdc-spacing"></div> -->
+    
+            <!--Documentation help start-->
+            <section class="mdc-help-wrapper">
+                <!-- <div class="mdc-help-title">
+                    <img src="assets/kore-logo.svg" alt="Kore.ai"/>Documentation
+                </div> -->
+                <div class="mdc-helpline-centers">
+                    <div class="mdc-helpline-block">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
+                          <path d="M9.59 9.59485C9.8251 8.92652 10.2892 8.36296 10.9 8.00398C11.5108 7.64501 12.2289 7.51379 12.9272 7.63356C13.6255 7.75333 14.2588 8.11637 14.7151 8.65838C15.1713 9.20038 15.4211 9.88637 15.42 10.5948C15.42 12.5948 12.42 13.5948 12.42 13.5948M12.5 17.5948H12.51M22.5 12.5948C22.5 18.1177 18.0228 22.5948 12.5 22.5948C6.97715 22.5948 2.5 18.1177 2.5 12.5948C2.5 7.072 6.97715 2.59485 12.5 2.59485C18.0228 2.59485 22.5 7.072 22.5 12.5948Z" stroke="#101828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h4 class="mdc-helpline-title">Need help</h4>
+                        <span class="mdc-helpline-action">Contact Support</span>
+                    </div>
+                    <div class="mdc-helpline-block">
+                        <svg  width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <path d="M22.5 9.52622C22.5 8.9204 22.5 8.6175 22.3802 8.47723C22.2763 8.35553 22.1203 8.29094 21.9608 8.3035C21.7769 8.31797 21.5627 8.53216 21.1343 8.96053L17.5 12.5948L21.1343 16.2292C21.5627 16.6575 21.7769 16.8717 21.9608 16.8862C22.1203 16.8988 22.2763 16.8342 22.3802 16.7125C22.5 16.5722 22.5 16.2693 22.5 15.6635V9.52622Z" stroke="#101828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2.5 10.3948C2.5 8.71469 2.5 7.87461 2.82698 7.23288C3.1146 6.66839 3.57354 6.20945 4.13803 5.92183C4.77976 5.59485 5.61984 5.59485 7.3 5.59485H12.7C14.3802 5.59485 15.2202 5.59485 15.862 5.92183C16.4265 6.20945 16.8854 6.66839 17.173 7.23288C17.5 7.87461 17.5 8.71469 17.5 10.3948V14.7948C17.5 16.475 17.5 17.3151 17.173 17.9568C16.8854 18.5213 16.4265 18.9802 15.862 19.2679C15.2202 19.5948 14.3802 19.5948 12.7 19.5948H7.3C5.61984 19.5948 4.77976 19.5948 4.13803 19.2679C3.57354 18.9802 3.1146 18.5213 2.82698 17.9568C2.5 17.3151 2.5 16.475 2.5 14.7948V10.3948Z" stroke="#101828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        <h4 class="mdc-helpline-title">Watch our</h4>
+                        <span class="mdc-helpline-action">Developer tutorials</span>
+                    </div>
+                    <div class="mdc-helpline-block">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
+                          <path d="M9.59 9.59485C9.8251 8.92652 10.2892 8.36296 10.9 8.00398C11.5108 7.64501 12.2289 7.51379 12.9272 7.63356C13.6255 7.75333 14.2588 8.11637 14.7151 8.65838C15.1713 9.20038 15.4211 9.88637 15.42 10.5948C15.42 12.5948 12.42 13.5948 12.42 13.5948M12.5 17.5948H12.51M22.5 12.5948C22.5 18.1177 18.0228 22.5948 12.5 22.5948C6.97715 22.5948 2.5 18.1177 2.5 12.5948C2.5 7.072 6.97715 2.59485 12.5 2.59485C18.0228 2.59485 22.5 7.072 22.5 12.5948Z" stroke="#101828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h4 class="mdc-helpline-title">Questions?</h4>
+                        <span class="mdc-helpline-action">Contact Sales</span>
+                    </div>
+                </div>
+            </section>
+            <!--Documentation help end-->
+        </main>
+      </section>
+    {% endblock %}
+    
+    <!-- Content -->
+    {% block content %}{% endblock %}
+    
+    <!-- Application footer -->
+    {% block footer %}{% endblock %}
+</div>
