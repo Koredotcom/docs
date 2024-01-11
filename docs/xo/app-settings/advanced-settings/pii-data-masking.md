@@ -89,7 +89,7 @@ The platform provides the following three modes to redact specified information 
    <td><strong>Map Entities</strong>
    </td>
    <td>Map all the entities in the bot’s Dialog tasks that correspond to the information type.
-<p>
+<br>
 
   <strong>Note</strong> : If you do not map entities corresponding to redacted information types, even valid user entries for those entities cause errors in the dialog tasks. For example, let’s say you have enabled redaction for email information type. When a user enters an email address for a bot entity, the platform immediately redacts the information even before the entity node captures it, as emails are set up for redaction. The entity node then receives redacted data, and since the entity is not mapped in the redaction settings, it assumes the redacted value as an invalid email entry. Whereas, if you map the entity in the redaction settings, the entity recognizes the data redacted and accepts it.
    </td>
@@ -98,7 +98,7 @@ The platform provides the following three modes to redact specified information 
    <td><strong>Display Type</strong>
    </td>
    <td>Select one of these modes to display the redacted data anywhere in the platform: <strong>Redaction</strong>, <strong>Replacement</strong>, <strong>Mask with Character.</strong>
-<p>
+<br>
 <strong>Note</strong>: The value displayed would be prefixed with a platform generated random unique identifier. This is the key used internally to retrieve the original value in case of conditional transitions etc..
    </td>
   </tr>

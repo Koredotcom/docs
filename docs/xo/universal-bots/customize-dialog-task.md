@@ -1,5 +1,5 @@
 
-# **Customizing the Universal Bot’s Default Dialog Task**
+# Customizing the Universal Bot’s Default Dialog Task
 
 	
 
@@ -30,7 +30,7 @@ While a Universal Bot acts as a container for Standard Bots and has limited func
 			
 
 
-## **Default Dialog Task**
+## Default Dialog Task
 
 **Before you Begin**
 
@@ -59,7 +59,7 @@ Universal bots come with a built-in dialog task that triggers automatically for 
 			
 
 
-#### **Default Dialog Nodes**
+#### Default Dialog Nodes
 
 Nodes that can be added to universal bot are limited compared to the standard bots. Below is the list of nodes that can be added to the default dialog task in the universal bot:
 
@@ -84,7 +84,7 @@ Nodes that can be added to universal bot are limited compared to the standard bo
 			
 
 
-#### **Customize the Default Dialog**
+#### Customize the Default Dialog
 
 Follow these steps to customize the default dialog message:
 
@@ -92,7 +92,7 @@ Follow these steps to customize the default dialog message:
 
 1. Open the universal bot for which you want to configure the default dialog.
 2. Select the **Build** tab from the top menu.
-3. Select **Intelligence -> Default Dialog**.
+3. Select **Intelligence > Default Dialog**.
 4. Listed will be the default dialog – **Intent Not Identified**. 
 [ ](https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20210630123543/ub_defaultDialog.png)
 
@@ -115,7 +115,7 @@ Follow these steps to customize the default dialog message:
 			
 
 
-#### **Customizing the Default Dialog for an Enabled Language**
+#### Customizing the Default Dialog for an Enabled Language
 
 If the Kore.ai NLP engine cannot recognize the user intent, the universal bot responds to the users with the default dialog. You must create language-specific versions of the default dialog for each enabled language so that such bot responses go in the users’ preferred language. Otherwise, the universal bot responds applies the default bot language regardless of the user’s preferred language.[ Learn more](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/enabling-additional-languages-for-the-universal-bot/).
 
@@ -130,7 +130,7 @@ If the Kore.ai NLP engine cannot recognize the user intent, the universal bot re
 			
 
 
-## **Event Handlers**
+## Event Handlers
 
 **Before you Begin**
 
@@ -157,7 +157,7 @@ The linked task will be executed at the trigger of the event. If the linked bot 
 			
 
 
-## **Variable Management**
+## Variable Management
 
 While building Universal bots you might want to propagate a few values to the linked bots, like:
 
@@ -181,7 +181,7 @@ This article assumes that you understand the fundamentals of creating variables 
 			
 
 
-### **Variable Declaration**
+### Variable Declaration
 
 As with Standard bots, you can
 
@@ -210,7 +210,7 @@ As with Standard bots, you can
 			
 
 
-## **Sentiment Management**
+## Sentiment Management
 
 **Before you Begin**
 
@@ -238,7 +238,7 @@ The linked task will be executed at the trigger of the event. If the linked bot 
 			
 
 
-## **Digital Views**
+## Digital Views
 
 **Before you Begin**
 

@@ -76,7 +76,7 @@ The following table displays each preset’s filter name, predefined configurati
 </ul>
    </td>
    <td>Shows all the conversations made during the specified dates irrespective of the filter criteria selected on the dashboard.
-<p>
+<br>
 <strong>Note</strong>: The user cannot edit the “<em>All Conversations</em>” view.
    </td>
   </tr>
@@ -452,7 +452,7 @@ A **Conversation Filter** helps group and display selective conversation history
 <li>Greater than equals to
 
 <li>Equals to
-<p>
+<br>
 
     The <strong>Time units</strong> options include:
 <ol>
@@ -486,7 +486,7 @@ A **Conversation Filter** helps group and display selective conversation history
 <li>Greater than equals to
 
 <li>Equals to
-<p>
+<br>
 
     The <strong>Event Name</strong> options include:
 <ol>
@@ -554,7 +554,7 @@ A **Conversation Filter** helps group and display selective conversation history
 <li>CSAT
 
 <li>Thumbs-up/Down
-<p>
+<br>
 
     The <strong>Conditional Filter</strong> options include
 <ol>
@@ -568,7 +568,7 @@ A **Conversation Filter** helps group and display selective conversation history
 <li>Greater than equals to
 
 <li>Equals to
-<p>
+<br>
 
     The options for <strong>Score</strong> include:
 <ol>

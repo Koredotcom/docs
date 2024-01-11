@@ -1,5 +1,5 @@
 
-# **Collections**
+# Collections
 
 	
 
@@ -8,6 +8,7 @@
 			
 
 Collections enable you to store multiple value sets for Environment Variables so that you can select the appropriate variable set while promoting the bot definition to a different environment without manual intervention.
+
 !!! note
 
     This feature was enabled in v8.1 of the platform and is available only for the <span style="text-decoration:underline;">on-prem installation.</span>
@@ -37,16 +38,15 @@ Using collections, you can define multiple value sets for these variables and de
 			
 
 
-## **Creation**
+## Creation
 
 Following are the steps in creating Collections
 
 
 
-1. From the left navigation menu, select **Settings -> Config Settings**
+1. From the left navigation menu, select **Settings > Config Settings**
 2. Click the **Environment Variables** option
-3. On the top left click the more/ellipses to access the **Manage Collections 
-**
+3. On the top left click the more/ellipses to access the **Manage Collections**.
 ![Alt text](images/Collections1.png)
 
 4. This would open the Manage Collections page.
@@ -70,23 +70,24 @@ Following are the steps in creating Collections
 			
 
 
-## **Adding Values**
+## Adding Values
 
 Create Environment Variables and add collection-specific values using the following steps:
 
 
 
-1. From the left navigation menu, select **Settings -> Config Settings**.
+1. From the left navigation menu, select **Settings > Config Settings**.
 2. Click the **Environment Variables** option.
 3. Click **Add Environment Variable**. You can also use the edit icon against an existing Environment Variable to add values.
 4. This would open the Add/Edit Environment Variable page.
 5. Enter the following details:
     1. _Variable Name_,
     2. Against the listed _Collection Name,_ enter the appropriate _Value,_
-    3. Enter developer notes in the _Notes _field. While this is an optional field, entering useful notes can help the developer working on the target bot to understand and provide relevant values.
+    3. Enter developer notes in the _Notes_ field. While this is an optional field, entering useful notes can help the developer working on the target bot to understand and provide relevant values.
     4. _Group_ can be used to categorize the variable.
     5. Assign a _Namespace_ if enabled ([refer here for more](https://developer.kore.ai/docs/bots/bot-settings/bot-management/managing-namespace/)).
-    ![Alt text](Collections2.png)
+
+        ![Alt text](images/Collections2.png)
 6. **Save** the Variable
 
 		
@@ -100,7 +101,7 @@ Create Environment Variables and add collection-specific values using the follow
 			
 
 
-## **Active Collection**
+## Active Collection
 
 
 
@@ -128,7 +129,7 @@ Create Environment Variables and add collection-specific values using the follow
 			
 
 
-## **Import & Export**
+## Import & Export
 
 
 

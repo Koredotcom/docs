@@ -93,13 +93,13 @@ To set up the retrieve the verification token, follow these steps:
 
     <img src="../images/configuring-the-drift-agent-img8.png" alt="Customizing the channel" title="Customizing the channel" style="border: 1px solid gray;">
 
-7. Click Manage to map the channels you want to use Drift agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/){:target="_blank"}.
+7. Click Manage to map the channels you want to use Drift agent for handing over the conversations. To learn more about channel enablement, see [Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"}.
 
     <img src="../images/configuring-the-drift-agent-img9.png" alt="Mapping channels to Drift agent" title="MApping channels to Drift agent" style="border: 1px solid gray;">
 
 8. After mapping channels, click **Done**.
 9. Click **Save** to enable the Drift agent.
-10. Publish the VA. For more information, see [Publishing Bot](https://developer.kore.ai/docs/bots/publish/publishing-bot/){:target="_blank"}.
+10. Publish the VA. For more information, see [Publishing Bot](../../../../deploy/publishing-bot/){:target="_blank"}.
 
 
 ## Execution

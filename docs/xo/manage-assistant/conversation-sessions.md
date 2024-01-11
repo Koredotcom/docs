@@ -26,7 +26,7 @@ Kore.ai virtual assistant platform allows you to customize how these Conversatio
 			
 
 
-## **Overview**
+## Overview
 
 A Conversation Session is defined as an uninterrupted volley between the end user and the bot.
 
@@ -63,7 +63,7 @@ Conversation Sessions are created for all interactions with the virtual assistan
 			
 
 
-## **Manage Sessions**
+## Manage Sessions
 
 This feature is only available post v8.0 of the platform release.
 
@@ -119,7 +119,7 @@ You can also clear all authorization profiles using this script:
 			
 
 
-## **Implementation**
+## Implementation
 
 **When does a Conversation Session start?**
 
