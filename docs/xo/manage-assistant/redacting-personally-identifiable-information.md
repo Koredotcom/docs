@@ -9,7 +9,7 @@ There are a few scenarios where the original value can be used to achieve the bu
 
 
 * If a PII value is used in Dialog Task transitions, the platform automatically uses the original value for the transition condition evaluation.
-* If a PII value is used in the Service Node definition, the platform uses the redacted value by default to make the service calls. You can choose to send the original data using the ‘De-identification of PII data’ configuration of the Service Node. Refer to the[ Service Node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-service-node/)<span style="text-decoration:underline;"> </span>post for more details
+* If a PII value is used in the Service Node definition, the platform uses the redacted value by default to make the service calls. You can choose to send the original data using the ‘De-identification of PII data’ configuration of the Service Node. Refer to the[ Service Node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-service-node/) post for more details
 * You may use the Redaction of PII Data configuration of the Entity Nodes to present the original values of a redacted entity value to the users. Refer to the[ Entity Node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-entity-node/) post for more details.
 
 The platform provides the following three modes to redact specified information types:
@@ -62,13 +62,13 @@ The platform provides the following three modes to redact specified information 
 			
 
 
-### **How to Redact**
+### How to Redact
 
 
 
 1. Open the bot for which you want to configure the PII settings.
 2. Select the **Build** tab from the top menu.
-3. From the left menu, click **Configuration** **-> PII Settings**.
+3. From the left menu, click **Configuration > PII Settings**.
 4. The PII Redaction page opens.
 5. If PII Redaction isn’t enabled for the bot, toggle the switch to **Yes**. The page now shows a list of information types whose redaction settings are configured by default.
 6. To activate the redaction of any of these out-of-the-box information types, toggle the switch next to them to Enable. To edit their redaction settings, click their name.
@@ -82,7 +82,7 @@ The platform provides the following three modes to redact specified information 
 
 
 
-### **Configuration Fields**
+### Configuration Fields
 
 
 <table>
@@ -109,6 +109,7 @@ The platform provides the following three modes to redact specified information 
    </td>
    <td>Map all the entities in the bot’s Dialog tasks that correspond to the information type.
 <p>
+
 <strong>Note</strong>: If you do not map entities corresponding to redacted information types, even valid user entries for those entities cause errors in the dialog tasks. For example, let’s say you have enabled redaction for email information type. When a user enters an email address for a bot entity, the platform immediately redacts the information even before the entity node captures it, as emails are set up for redaction. The entity node then receives redacted data, and since the entity is not mapped in the redaction settings, it assumes the redacted value as an invalid email entry. Whereas, if you map the entity in the redaction settings, the entity recognizes the data redacted and accepts it.
    </td>
   </tr>
@@ -117,6 +118,7 @@ The platform provides the following three modes to redact specified information 
    </td>
    <td>Select one of these modes to display the redacted data anywhere in the platform: <strong>Redaction</strong>, <strong>Replacement</strong>, <strong>Mask with Character.</strong>
 <p>
+
 <strong>Note</strong>: The value displayed would be prefixed with a platform-generated random unique identifier. This is the key used internally to retrieve the original value in case of conditional transitions etc..
    </td>
   </tr>
@@ -133,7 +135,7 @@ The platform provides the following three modes to redact specified information 
 
 
 
-### **Configure Contextual Sensitive Data**
+### Configure Contextual Sensitive Data
 
 The Kore.ai XO platform allows you to secure sensitive data input during the conversation. Enabling the redaction of sensitive data and utilizing custom regex patterns to identify and secure sensitive information is an effective approach.
 

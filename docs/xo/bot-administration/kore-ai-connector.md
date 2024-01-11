@@ -295,8 +295,8 @@ To configure outbound proxy settings, add the following configuration shown as t
 The Kore.ai Connector Agent requires an explicit set of white-listed URLs to access specific applications on your company intranet. Any other HTTP requests are denied by the Kore.ai Connector.
 You must configure access control for each bot application that will use the Kore.ai Connector Agent in the accesscontrol.json file in the Kore.ai Connector installation directory in the …/config/configs directory with the following parameters:
 
-* **virtualhost** – Specify the virtual host name exactly as specified in the **Request URL** property in the **Set Up Request Chain** dialog while configuring on-premises bots in the Bot Builder tool. For more information, see [Defining a Request Chain Object](https://developer.kore.ai/docs/bots/bot-builder-tool/alert/notification-tasks/){:target="_blank"} in the Bot Builder documentation.
-* **virtualport** – Specify the virtual port exactly as specified in the **Request URL** property in the **Set Up Request Chain** dialog while configuring on-premises bots in the Bot Builder tool. For more information, see [Defining a Request Chain Object](https://developer.kore.ai/docs/bots/bot-builder-tool/alert/notification-tasks/){:target="_blank"} in the Bot Builder documentation.
+* **virtualhost** – Specify the virtual host name exactly as specified in the **Request URL** property in the **Set Up Request Chain** dialog while configuring on-premises bots in the Bot Builder tool. For more information, see [Defining a Request Chain Object](../../automation/use-cases/alert-tasks/){:target="_blank"} in the Bot Builder documentation.
+* **virtualport** – Specify the virtual port exactly as specified in the **Request URL** property in the **Set Up Request Chain** dialog while configuring on-premises bots in the Bot Builder tool. For more information, see [Defining a Request Chain Object](../../automation/use-cases/alert-tasks/){:target="_blank"} in the Bot Builder documentation.
 * **internalhost** – Specify the actual host name of the on-premises enterprise application used for data exchange with your Bots.
 * **internalport** – Specify the actual port of the on-premises enterprise application used for data exchange with your Bots.
 * **protocol** – Specify HTTP or HTTPS for the connection to on-premises enterprise applications.
@@ -370,7 +370,7 @@ In this section, you can verify the connection to the Kore.ai Connector Agent in
 <img src="../images/kore-ai-connector-img10.png" alt="Enable bots" title="Enable bots" style="border: 1px solid gray;zoom:70%;"/>
 
 2. In Bot Builder, for each Bot task that you want to run using the Kore.ai Connector, clone or upgrade each Bot.  
-      1. In the **Set up Request Chain Object** dialog, select **Access using connector**, save the changes, and then publish the Bot. For more information about configuring the request object, see [Configuring an Alert Task Request Object](https://developer.kore.ai/docs/bots/bot-builder-tool/alert/notification-tasks/){:target="_blank"} or  [Configuring an Action Task Request Object](https://developer.kore.ai/docs/bots/bot-builder-tool/action-info-task/kore-bot-action-tasks/){:target="_blank"} in the Bot Builder tool documentation.  
+      1. In the **Set up Request Chain Object** dialog, select **Access using connector**, save the changes, and then publish the Bot. For more information about configuring the request object, see [Configuring an Alert Task Request Object](../../automation/use-cases/alert-tasks/#configuration){:target="_blank"} in the Bot Builder tool documentation.  
 
          **Note:** The option in the **Set up Request Chain Object** dialog for **Access using connector** is only available after the Kore.ai connector is enabled in the Bots Admin Console.
 

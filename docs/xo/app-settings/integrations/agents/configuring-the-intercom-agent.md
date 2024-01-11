@@ -89,13 +89,13 @@ To set up Intercom to receive messages, you will first need to create an app in 
 
     <img src="../images/configuring-the-intercom-agent-img5.png" alt="Customize the channel mapping" title="Customize the channel mapping" style="border: 1px solid gray;">
 
-7. Once you click **Manage**, you can map the channels which you want to use Intercom agent for handovering the conversations. To learn more about channel enablement, read the[ Adding channels to your bot](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/){:target="_blank"} article.
+7. Once you click **Manage**, you can map the channels which you want to use Intercom agent for handovering the conversations. To learn more about channel enablement, read the[ Adding channels to your bot](../../../../channels/adding-channels-to-your-bot/){:target="_blank"} article.
 
     <img src="../images/configuring-the-intercom-agent-img6.png" alt="Map channels to intercom agent" title="Map channels to intercom agent" style="border: 1px solid gray;">
 
 8. After mapping channels, click **Done**.
 9. Click **Save** to enable the Intercom agent.
-10. Publish the VA. For more information, see [Publishing Bot](https://developer.kore.ai/docs/bots/publish/publishing-bot/){:target="_blank"}.
+10. Publish the VA. For more information, see [Publishing Bot](../../../../deploy/publishing-bot/){:target="_blank"}.
 
 
 ## Execution

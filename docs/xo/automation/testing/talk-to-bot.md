@@ -17,7 +17,7 @@ A messaging window for the assistant is displayed and connected to the NLP inter
 
 <img src="../images/talk-to-bot-img2.png" alt="Talk to Bot - Messaging window" title="Talk to Bot - Messaging window" style="border: 1px solid gray; zoom:80%;"/>
 
-When you first open the window, the **Bot Setup Confirmation Message** field definition for the assistant is displayed, if defined. In the **Message** section, enter text to begin interacting and testing your assistant , for example, _Book a flight._ The NLP interpreter begins processing the task, verifying authentication with the user and the web service, and then prompting for required task field information. When all the required task fields are collected, it executes the task. While testing your assistant , try different variations of user prompts and ensure the NLP interpreter is processing the synonyms (or lack of synonyms) properly. If the assistant returns unexpected results, consider adding or modifying synonyms for your tasks and task field names as required. For more information, see [Natural Language Processing](https://developer.kore.ai/docs/bots/nlp/optimizing-bots/){:target="_blank"}.
+When you first open the window, the **Bot Setup Confirmation Message** field definition for the assistant is displayed, if defined. In the **Message** section, enter text to begin interacting and testing your assistant , for example, _Book a flight._ The NLP interpreter begins processing the task, verifying authentication with the user and the web service, and then prompting for required task field information. When all the required task fields are collected, it executes the task. While testing your assistant , try different variations of user prompts and ensure the NLP interpreter is processing the synonyms (or lack of synonyms) properly. If the assistant returns unexpected results, consider adding or modifying synonyms for your tasks and task field names as required. For more information, see [Natural Language Processing](../../natural-language/training/optimizing-bots/){:target="_blank"}.
 
 
 ## Debugging and Troubleshooting
@@ -76,7 +76,7 @@ The **Session Context & Variables** tab displays dynamically the populated `Cont
 
 ### System Commands
 
-System Commands allow you to take control of the user-bot conversation during evaluation. These can also be injected into the assistant using JavaScript code. [See here for more](../../use-cases/dialogs/system-commands/){:target="_blank"}.
+System Commands allow you to take control of the user-bot conversation during evaluation. These can also be injected into the assistant using JavaScript code. [See here for more](../../system-commands/){:target="_blank"}.
 
 
 ## Record Session

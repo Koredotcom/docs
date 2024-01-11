@@ -547,7 +547,7 @@ For any task, you will need to define an API request to make a call to a web ser
 5. In the **URL** field, specify the URL for the bot task response to the process. For example, <code>http://koremessenger.com/postURL</code>. You can also use session variables in the URL as shown in the following example:
 <code>https://mySite.crm.ondemand.com/sap/c4c/odata/v1/c4codata/ServiceRequestCollection?$filter=ID eq '{id}' and ReporterEmail eq '{userEmail}'&amp;$expand=ServiceRequestHistoricalVersion,ServiceRequestDescription</code>
 
-6. In the **Access Using A Connector** field, select **Yes** to enable access for Kore.ai Bots using the Kore.ai Connector agent. This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/bot-administration/kore-ai-connector/" target="_blank">Using the Kore.ai Connector</a>.
+6. In the **Access Using A Connector** field, select **Yes** to enable access for Kore.ai Bots using the Kore.ai Connector agent. This option is only visible if a Kore.ai Connector agent is configured and enabled in your enterprise on-premises network. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/administration/kore-ai-connector/" target="_blank">Using the Kore.ai Connector</a>.
 7. On the **Headers** tab, in the **Content Type** field, select one of the following supported data types for your sample response data.
         
     * **JSON** – JavaScript Object Notation is an open standard format using human-readable text to transmit data objects as attribute-value pairs. You can use JSON to transmit data between the Kore.ai servers and your Bot web application.
