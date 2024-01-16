@@ -248,15 +248,7 @@ nav:
         - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md  
   - AgentAssist:
     - Agent Experience:
-      - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md 
-      - Knowledge AI: agentassist/agent-experience/agent-realtime-coaching.md
-      - Small Talk: agentassist/agent-experience/agent-realtime-coaching.md
-      - Digital Skills: 
-        - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
-        - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
-        - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
-        - Digital Views: automation/use-cases/digital-skills/digital-views.md
-        - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md
+      - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md       
   - Integrations & APIs:
     - Integrations:
       - Overview: channels/IVR-integration.md

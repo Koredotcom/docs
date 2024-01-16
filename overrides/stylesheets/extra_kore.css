@@ -86,11 +86,11 @@ kr-grid[type="g1"] kr-grid-desc{
 kr-grid[type="g2"] {
     grid-gap: 0.8rem;
     display: grid;
-    grid-template-columns: none;
+    grid-template-columns: auto auto auto auto;
     margin: 1em 0;
 }
 kr-grid[type="g2"] kr-grid-item{
-    padding: 15px;
+    padding: 10px;
     border: 2px solid transparent;
     transition: border .25s;
     border-radius: 5px;        
@@ -101,7 +101,7 @@ kr-grid[type="g2"] kr-grid-item:hover{
 kr-grid[type="g2"] kr-grid-item img{
     width: 100%;
     border-radius: 5px 5px 0px 0px;
-    height: 40px;
+    height: 30px;
     align-items: center;
     object-fit: none;
 }
