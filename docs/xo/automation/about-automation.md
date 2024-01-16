@@ -35,10 +35,19 @@ Learn how to use the Experience Optimization (XO) Platform that seamlessly blend
     </kr-grid-item>    
 </kr-grid>
 
-<img src="../images/xop-sm-uc.svg" style="zoom:150%;"></img> <b>Define Use Cases:</b> Use Cases are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent. <a href="">Learn More</a>
-
-<img src="../images/xop-sm-nl.svg" style="zoom:150%;"></img> <b>Leverage Natural Language:</b> Leverage the Platform’s NLP capabilities to train and optimize your automation workflows to handle complex use cases. <a href="">Learn More</a>
-    
-<img src="../images/xop-sm-inteligence.svg" style="zoom:150%;"></img> <b>Intelligence Management:</b> Empower your automation workflows to handle nuances of human conversations, including interruptions, clarifications, and more. <a href="">Learn More</a>
-    
-<img src="../images/xop-sm-test.svg" style="zoom:150%;"></img> <b>Test Workflows:</b> Use an extensive suite of features to conduct rigorous testing of your automation workflows to ensure everything works as expected. Find and fix problems before they reach your users. <a href="">Learn More</a>  
+<p style="display:inline-block;">
+    <img src="../images/xop-sm-uc.svg" style="zoom:150%;"> 
+    <b>Define Use Cases:</b> Use Cases are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent. <a href="">Learn More</a>
+</p>
+<p style="display:inline-block;">
+    <img src="../images/xop-sm-nl.svg" style="zoom:150%;"> 
+    <b>Leverage Natural Language:</b> Leverage the Platform’s NLP capabilities to train and optimize your automation workflows to handle complex use cases. <a href="">Learn More</a>
+</p>    
+<p style="display:inline-block;">
+    <img src="../images/xop-sm-inteligence.svg" style="zoom:150%;"> 
+    <b>Intelligence Management:</b> Empower your automation workflows to handle nuances of human conversations, including interruptions, clarifications, and more. <a href="">Learn More</a>
+</p>
+<p style="display:inline-block;">
+    <img src="../images/xop-sm-test.svg" style="zoom:150%;"> 
+    <b>Test Workflows:</b> Use an extensive suite of features to conduct rigorous testing of your automation workflows to ensure everything works as expected. Find and fix problems before they reach your users. <a href="">Learn More</a>  
+</p>
