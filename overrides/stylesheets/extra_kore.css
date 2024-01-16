@@ -54,7 +54,8 @@ kr-grid[type="g1"] kr-grid-item{
     padding: 15px;
     border: 2px solid transparent;
     transition: border .25s;
-    border-radius: 5px;    
+    border-radius: 5px;
+    justify-items: center;    
 }
 kr-grid[type="g1"] kr-grid-item:hover{
     border: 2px solid #eee;
@@ -62,7 +63,7 @@ kr-grid[type="g1"] kr-grid-item:hover{
 kr-grid[type="g1"] kr-grid-item img{
     width: 100%;
     border-radius: 5px 5px 0px 0px;
-    height: 30px;
+    height: 50px;
     align-items: center;
     object-fit: none;
 }
@@ -74,15 +75,13 @@ kr-grid[type="g1"] kr-grid-title{
     font-weight: 600;
     margin: 15px 0px 0px 0px;
     color: #0000008a;
-    font-size: 18px;
-    align-items: center;
-    object-fit: none;
+    font-size: 18px;    
+    justify-items: center;
 }
 kr-grid[type="g1"] kr-grid-desc{
     display: block;
-    margin-bottom: 10px;
-    align-items: center;
-    object-fit: none;
+    margin-bottom: 10px;    
+    justify-items: center;
 }
 /* kr grid g1 end*/
 
