@@ -62,7 +62,7 @@ kr-grid[type="g1"] kr-grid-item:hover{
 kr-grid[type="g1"] kr-grid-item img{
     width: 100%;
     border-radius: 5px 5px 0px 0px;
-    height: 50px;
+    height: 30px;
     align-items: center;
     object-fit: none;
 }
@@ -76,11 +76,13 @@ kr-grid[type="g1"] kr-grid-title{
     color: #0000008a;
     font-size: 18px;
     align-items: center;
+    object-fit: none;
 }
 kr-grid[type="g1"] kr-grid-desc{
     display: block;
     margin-bottom: 10px;
     align-items: center;
+    object-fit: none;
 }
 /* kr grid g1 end*/
 
