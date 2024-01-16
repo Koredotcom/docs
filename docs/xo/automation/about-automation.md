@@ -8,44 +8,27 @@ Learn how to use the Experience Optimization (XO) Platform that seamlessly blend
 
 <kr-grid type="g2">
     <kr-grid-item>
-        <img src="../images/xop-sm-uc.svg" style="zoom:150%;"></img>
+        <img src="../images/xop-sm-uc.svg" style="zoom:200%;"></img>
         <kr-grid-title>Define Use Cases</kr-grid-title>
         <kr-grid-desc>Use Cases are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent.</kr-grid-desc>
         <a href="">Learn More</a>
     </kr-grid-item>
     <kr-grid-item>
-        <img src="../images/xop-sm-nl.svg" style="zoom:150%;"></img>
+        <img src="../images/xop-sm-nl.svg" style="zoom:200%;"></img>
         <kr-grid-title>Natural Language</kr-grid-title>
         <kr-grid-desc>Leverage the Platform’s NLP capabilities to train and optimize your automation workflows to handle complex use cases. Use Cases are fundamental building blocks for automation.</kr-grid-desc>
         <a href="">Learn More</a>
     </kr-grid-item>
     <kr-grid-item>
-        <img src="../images/xop-sm-inteligence.svg" style="zoom:150%;"></img>
+        <img src="../images/xop-sm-inteligence.svg" style="zoom:200%;"></img>
         <kr-grid-title>Intelligence Management</kr-grid-title>
         <kr-grid-desc>Empower your automation workflows to handle nuances of human conversations, including interruptions, clarifications, and more. Use Cases are fundamental building blocks for automation.</kr-grid-desc>
         <a href="">Learn More</a>
     </kr-grid-item>    
     <kr-grid-item>
-        <img src="../images/xop-sm-test.svg" style="zoom:150%;"></img>
+        <img src="../images/xop-sm-test.svg" style="zoom:200%;"></img>
         <kr-grid-title>Test Workflows</kr-grid-title>
         <kr-grid-desc>Use an extensive suite of features to conduct rigorous testing of your automation workflows to ensure everything works as expected. Find and fix problems before they reach your users.</kr-grid-desc>
         <a href="">Learn More</a>
     </kr-grid-item>       
 </kr-grid>
-
-<p style="display:inline-block;">
-    <img src="../images/xop-sm-uc.svg" style="zoom:100%;"> 
-    <b>Define Use Cases:</b> Use Cases are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent. <a href="">Learn More</a>
-</p>
-<p style="display:inline-block;">
-    <img src="../images/xop-sm-nl.svg" style="zoom:100%;"> 
-    <b>Leverage Natural Language:</b> Leverage the Platform’s NLP capabilities to train and optimize your automation workflows to handle complex use cases. <a href="">Learn More</a>
-</p>
-<p style="display:inline-block;">
-    <img src="../images/xop-sm-inteligence.svg" style="zoom:100%;"> 
-    <b>Intelligence Management:</b> Empower your automation workflows to handle nuances of human conversations, including interruptions, clarifications, and more. <a href="">Learn More</a>
-</p>
-<p style="display:inline-block;">
-    <img src="../images/xop-sm-test.svg" style="zoom:100%;"> 
-    <b>Test Workflows:</b> Use an extensive suite of features to conduct rigorous testing of your automation workflows to ensure everything works as expected. Find and fix problems before they reach your users. <a href="">Learn More</a>  
-</p>
