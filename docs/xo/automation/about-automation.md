@@ -73,3 +73,14 @@ Learn how to use the Experience Optimization (XO) Platform that seamlessly blend
     Use an extensive suite of features to conduct rigorous testing of your automation workflows to ensure everything works as expected. Find and fix problems before they reach your users.    
     <a href="">Learn More</a>
 
+<div class="grid cards" markdown>
+
+    :<img src="../images/xop-sm-uc.svg" style="zoom:100%;"></img>: __Use Cases__ are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent. <a href="">Learn More</a>
+
+    : <img src="../images/xop-sm-nl.svg" style="zoom:100%;"></img>: __Natural Language__ Leverage the Platform’s NLP capabilities to train and optimize your automation workflows to handle complex use cases. <a href="">Learn More</a>
+    
+    :<img src="../images/xop-sm-inteligence.svg" style="zoom:100%;"></img>: __Intelligence Management__ Empower your automation workflows to handle nuances of human conversations, including interruptions, clarifications, and more. <a href="">Learn More</a>
+    
+    :<img src="../images/xop-sm-test.svg" style="zoom:200%;"></img>: __Test Workflows__ Use an extensive suite of features to conduct rigorous testing of your automation workflows to ensure everything works as expected. Find and fix problems before they reach your users. <a href="">Learn More</a>
+    
+</div>
