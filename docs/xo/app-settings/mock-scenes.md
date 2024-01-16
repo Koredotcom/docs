@@ -89,10 +89,10 @@ This tab is used to design messages that the Virtual Assistant sends to users as
     <img src="../images/mock-scenes-img5-scene-notes.png" alt="Scene Notes" title="Scene Notes" style="border:1px solid gray; zoom=70%;">
 
 * Notes also provide an option to define the timeline of the conversation by using _hashtags_. Thus, defined notes help denote an important state in the conversation that is displayed on the left of the conversation under the **Story Timeline**. You can move to the relevant place in the conversation by clicking the tag on the timeline.You can define your own _custom tags_ or use one of the _predefined tags_. Each of these predefined tags is depicted by a unique symbol in the timeline indicating its purpose. These predefined tags include:
-    * #Start_< intent-name >
-    * #Hold_< intent-name >
-    * #End_< intent-name >
-    * #Resume_< intent-name >.
+    * \#Start_< intent-name >
+    * \#Hold_< intent-name >
+    * \#End_< intent-name >
+    * \#Resume_< intent-name >.
 
 * With the _tag_ option, you can **classify notes** using an existing tag or by creating a new custom tag. These tags are color-coded for reference.
 
