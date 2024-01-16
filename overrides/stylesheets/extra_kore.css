@@ -54,7 +54,8 @@ kr-grid[type="g1"] kr-grid-item{
     padding: 15px;
     border: 2px solid transparent;
     transition: border .25s;
-    border-radius: 5px;    
+    border-radius: 5px;
+    justify-self: start;    
 }
 kr-grid[type="g1"] kr-grid-item:hover{
     border: 2px solid #eee;
@@ -74,13 +75,13 @@ kr-grid[type="g1"] kr-grid-title{
     font-weight: 600;
     margin: 15px 0px 0px 0px;
     color: #0000008a;
-    font-size: 18px;
-    align-items: center;
+    font-size: 18px;    
+    justify-self: start;
 }
 kr-grid[type="g1"] kr-grid-desc{
     display: block;
-    margin-bottom: 10px;
-    align-items: center;
+    margin-bottom: 10px;    
+    justify-self: start;
 }
 /* kr grid g1 end*/
 
