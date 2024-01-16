@@ -26,8 +26,10 @@ Learn how to use the Experience Optimization (XO) Platform that seamlessly blend
     </kr-grid-item>    
     <kr-grid-item>
         <img src="../images/xop-sm-test.svg" style="zoom:200%;"></img>
-        <kr-grid-title align="center">Testing</kr-grid-title>
-        <kr-grid-desc align="center">Use an extensive suite of features to conduct rigorous testing of your automation workflows to ensure everything works as expected. Find and fix problems before they reach your users.</kr-grid-desc>
+        <kr-grid-title>Testing</kr-grid-title>
+        <kr-grid-desc>Use an extensive suite of features to conduct rigorous testing of your automation workflows to ensure everything works as expected. Find and fix problems before they reach your users.</kr-grid-desc>
         <a href="">Learn More</a>
+    </kr-grid-item>    
+    <kr-grid-item>    
     </kr-grid-item>    
 </kr-grid>
