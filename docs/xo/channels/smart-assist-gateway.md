@@ -1,4 +1,4 @@
-# **Adding the SmartAssist Gateway Channel**
+# Adding the SmartAssist Gateway Channel
 
 **SmartAssist** is a Kore.ai Contact Center Automation Solution. It helps enterprises manage their contact center infrastructure from the omnichannel interface, voice infrastructure, gateway, and live agent interactions, including agent assistance. [Learn more](https://docs.kore.ai/smartassist/getting-started/introduction/).
 

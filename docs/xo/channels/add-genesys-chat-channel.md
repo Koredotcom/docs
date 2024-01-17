@@ -1,4 +1,4 @@
-# **Adding Genesys Chat as a Channel**
+# Adding Genesys Chat as a Channel
 
 The Kore.ai XO Platform now allows you to add **Genesys Chat** as a messaging channel for your Virtual Assistants (VAs). Genesys Chat helps instantly share your ideas with people inside your organization with the persistent chat history feature to start a conversation with your colleagues and continue it anywhere any time.
 

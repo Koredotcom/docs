@@ -1,4 +1,4 @@
-# **Adding the Cisco Jabber Channel**
+# Adding the Cisco Jabber Channel
 
 Cisco Jabber is a platform that offers multiple communication methods, and which you can integrate with the assistants built with the Kore.ai XO Platform. Adding the Jabber channel to your Kore.ai VA allows end-users to interact with it using their _Jabber_ accounts. This article shows you how to add it as a Channel, where your VA can communicate to end-users via Jabber. You must have or register for a developer account in the _Jabber_ portal.
 

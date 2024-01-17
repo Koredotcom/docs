@@ -1,14 +1,4 @@
-
-
-
 # Building a Virtual Assistant
-
-	
-
-		
-
-			
-
 This document describes the process of implementing a Virtual Assistant using the Kore.ai XO Platform.
 
 If you are new to the Kore.ai XO Platform and want to familiarize yourself with the terms and concepts we use, please refer to[ Concepts and Terminology](https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/).

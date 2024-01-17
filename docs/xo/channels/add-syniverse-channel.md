@@ -1,4 +1,4 @@
-# **Add the Syniverse Channel**
+# Add the Syniverse Channel
 
 To set up Syniverse as a channel, the developer needs to associate the bot with a Syniverse app, set up a subscription, and enable the delivery events for this app. This document explains the steps to add the Syniverse as a channel to your bot.
 

@@ -1,4 +1,4 @@
-# **Adding the Cisco Webex Teams**
+# Adding the Cisco Webex Teams
 
 To add the Cisco Webex Teams (formerly Cisco Webex) channel to your VA, the developer must create a dedicated VA app and an integration app in Cisco Webex Teams.
 

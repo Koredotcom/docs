@@ -1,4 +1,4 @@
-# **Voice Call Properties**
+# Voice Call Properties
 
 You can enable voice interaction with your virtual assistant, i.e., users can talk to the virtual assistant. For this, you need to enable one of the voice channels like [IVR](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/), [Twilio](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-twilio-voice-channel/), [IVR-AudioCodes](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-ivr-audiocodes-channel/),[SmartAssist Gateway](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-smartassist-gateway-channel/), etc and publish the VA on those channels.
 

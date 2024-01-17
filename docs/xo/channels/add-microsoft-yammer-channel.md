@@ -1,4 +1,4 @@
-# **Adding the Yammer Channel**
+# Adding the Yammer Channel
 
 To add Yammer as a channel to your Kore.ai bot, you must create an app in Yammer and enable the platform to receive messages. Adding the Yammer channel to your Kore.ai bot allows end-users of your bot to interact with your bot using their _Yammer_ accounts. To add the Yammer channel to your bot, you must:
 

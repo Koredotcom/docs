@@ -1,4 +1,4 @@
-# **Adding the Microsoft Teams Channel**
+# Adding the Microsoft Teams Channel
 
 You can add Microsoft Teams as a delivery channel to your Kore.ai Virtual Assistant to allow it to interact with end-users using Microsoft Teams.
 

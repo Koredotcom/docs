@@ -1,4 +1,4 @@
-# **Adding the Skype for Business Channel**
+# Adding the Skype for Business Channel
 
 To set up Skype for Business as a channel, you must register a Bot Channel service in Azure and enable a webhook for the platform to receive messages. To enable Skype for Business, follow the below steps:
 

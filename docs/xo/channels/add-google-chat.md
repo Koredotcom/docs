@@ -1,4 +1,4 @@
-# **Adding the Google Chat Channel**
+# Adding the Google Chat Channel
 
 Adding Google Chat as a channel to your Kore.ai assistant allows end-users to chat with it using Google Chat. This article shows you how to set it up.
 
