@@ -155,22 +155,22 @@ nav:
         - Build Dialog Tasks: automation/use-cases/dialogs/using-the-dialog-builder-tool.md
         - Node Types:
           - Overview: automation/use-cases/dialogs/nodes-transitions.md
-          - Intent Node: automation/use-cases/dialogs/working-with-the-user-intent-node.md
-          - Dialog Node: automation/use-cases/dialogs/working-with-the-dialog-node.md
-          - Dynamic Intent Node: automation/use-cases/dialogs/dynamic-intent-node.md
-          - GenAI Node: automation/use-cases/dialogs/genai-node.md
-          - GenAI Prompt: automation/use-cases/dialogs/genai-prompt.md
-          - Entity Node: automation/use-cases/dialogs/working-with-the-entity-node.md
-          - Form Node: automation/use-cases/dialogs/working-with-the-form-node.md
-          - Confirmation Node: automation/use-cases/dialogs/working-with-the-confirmation-nodes.md
-          - Message Node: automation/use-cases/dialogs/working-with-the-message-nodes.md
-          - Logic Node: automation/use-cases/dialogs/working-with-the-logic-node.md
-          - Bot Action Node: automation/use-cases/dialogs/bot-action-node.md
-          - Service Node: automation/use-cases/dialogs/working-with-the-service-node.md
-          - Webhook Node: automation/use-cases/dialogs/working-with-the-web-hook-node.md
-          - Script Node: automation/use-cases/dialogs/working-with-the-script-node.md
-          - Process Node: automation/use-cases/dialogs/process-nodes.md
-          - Agent Transfer Node: automation/use-cases/dialogs/working-with-the-agent-transfer-node.md
+          - Intent Node: automation/use-cases/dialogs/node-types/working-with-the-user-intent-node.md
+          - Dialog Node: automation/use-cases/dialogs/node-types/working-with-the-dialog-node.md
+          - Dynamic Intent Node: automation/use-cases/dialogs/node-types/dynamic-intent-node.md
+          - GenAI Node: automation/use-cases/dialogs/node-types/genai-node.md
+          - GenAI Prompt: automation/use-cases/dialogs/node-types/genai-prompt.md
+          - Entity Node: automation/use-cases/dialogs/node-types/working-with-the-entity-node.md
+          - Form Node: automation/use-cases/dialogs/node-types/working-with-the-form-node.md
+          - Confirmation Node: automation/use-cases/node-types/dialogs/working-with-the-confirmation-nodes.md
+          - Message Node: automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md
+          - Logic Node: automation/use-cases/dialogs/node-types/working-with-the-logic-node.md
+          - Bot Action Node: automation/use-cases/dialogs/node-types/bot-action-node.md
+          - Service Node: automation/use-cases/dialogs/node-types/working-with-the-service-node.md
+          - Webhook Node: automation/use-cases/dialogs/node-types/working-with-the-web-hook-node.md
+          - Script Node: automation/use-cases/dialogs/node-types/working-with-the-script-node.md
+          - Process Node: automation/use-cases/dialogs/node-types/process-nodes.md
+          - Agent Transfer Node: automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md
         - Node Connections:
           - Node Connections Setup: automation/use-cases/dialogs/node-connections/grouping-nodes.md 
           - Sub-Intent Scoping: automation/use-cases/dialogs/node-connections/nodes-conditions.md
