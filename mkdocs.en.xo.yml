@@ -178,15 +178,14 @@ nav:
         - Entity Rules: automation/use-cases/dialogs/entity-rules.md
         - User Prompts or Messages: automation/use-cases/dialogs/prompt-editor.md
         - Voice Call Properties: automation/use-cases/dialogs/voice-call-properties.md  
-      - Alert Tasks: automation/use-cases/small-talk.md
+      - Alert Tasks: automation/use-cases/alert-tasks.md
       - Small Talk: automation/use-cases/small-talk.md
       - Digital Skills: 
         - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
         - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
         - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
         - Digital Views: automation/use-cases/digital-skills/digital-views.md
-        - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md
-      - Feedback Survey: automation/use-cases/feedback-surveys.md
+        - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md      
     - NATURAL LANGUAGE:
       - Training:
         - Overview: automation/natural-language/nlp-introduction.md
@@ -239,13 +238,7 @@ nav:
     - Configurations:
       - Default Flows: contactcenter/configurations/default-flows/configure-default-flows.md 
       - Routing: contactcenter/configurations/default-flows/configure-default-flows.md 
-      - Hour of Operations: contactcenter/configurations/default-flows/configure-default-flows.md 
-      - Setup: 
-        - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
-        - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
-        - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
-        - Digital Views: automation/use-cases/digital-skills/digital-views.md
-        - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md  
+      - Hour of Operations: contactcenter/configurations/default-flows/configure-default-flows.md       
   - AgentAssist:
     - Agent Experience:
       - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md       
