@@ -154,7 +154,11 @@ nav:
         - Navigating Dialog Tasks: automation/use-cases/dialogs/navigating-dialog-tasks.md
         - Build Dialog Tasks: automation/use-cases/dialogs/using-the-dialog-builder-tool.md
         - Node Types:
+<<<<<<< HEAD
           - Overview: automation/use-cases/dialogs/node-types/nodes-transitions.md
+=======
+          - Overview: automation/use-cases/dialogs/nodes-transitions.md
+>>>>>>> e2a01f35dc14a00965fbc890b0be078a7fb9e2f6
           - Intent Node: automation/use-cases/dialogs/node-types/working-with-the-user-intent-node.md
           - Dialog Node: automation/use-cases/dialogs/node-types/working-with-the-dialog-node.md
           - Dynamic Intent Node: automation/use-cases/dialogs/node-types/dynamic-intent-node.md
@@ -162,7 +166,11 @@ nav:
           - GenAI Prompt: automation/use-cases/dialogs/node-types/genai-prompt.md
           - Entity Node: automation/use-cases/dialogs/node-types/working-with-the-entity-node.md
           - Form Node: automation/use-cases/dialogs/node-types/working-with-the-form-node.md
+<<<<<<< HEAD
           - Confirmation Node: automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes.md
+=======
+          - Confirmation Node: automation/use-cases/node-types/dialogs/working-with-the-confirmation-nodes.md
+>>>>>>> e2a01f35dc14a00965fbc890b0be078a7fb9e2f6
           - Message Node: automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md
           - Logic Node: automation/use-cases/dialogs/node-types/working-with-the-logic-node.md
           - Bot Action Node: automation/use-cases/dialogs/node-types/bot-action-node.md
