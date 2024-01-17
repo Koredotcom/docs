@@ -18,7 +18,7 @@ IVR Properties are accessible by going to a Dialog Task, selecting an _Entity, M
 
 
 
-![access IVR properties](../images/access-ivr.png )
+![access IVR properties](../../../../images/access-ivr.png )
 
 This document details the voice call properties and how they vary across various channels.
 
@@ -244,7 +244,7 @@ Voice Call Properties apply only for the following nodes and message types:
 
 
 
-![timeout prompts](../images/timeout_prompts.png )
+![timeout prompts](../../../../images/timeout_prompts.png )
 
 
 
@@ -528,7 +528,7 @@ SmartAssist Gateway
 <p>
 Once the property is enabled, you can see one or more language codes corresponding to the bot languages.  Enter the locale code for a specific bot language in the <strong>Locale Value</strong> field. For example, enter ‘<strong>US</strong>‘ or ‘<strong>UK</strong>‘ as the Locale Value for the English (EN) bot language.
 
-<img src="../images/locale_definition.png" alt="Locale Definition" >
+<img src="../../../../images/locale_definition.png" alt="Locale Definition" >
 
 
 !!! note
@@ -610,7 +610,7 @@ By default this option is disabled.
 Below is a demo of the IVR Properties section, within the Component Properties panel of a Dialog Task node.
 
 
-![Component Properties](../images/ivr-properties.gif )
+![Component Properties](../../../../images/ivr-properties.gif )
 
 
 
