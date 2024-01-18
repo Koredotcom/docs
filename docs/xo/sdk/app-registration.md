@@ -1,5 +1,5 @@
 
-# **SDK App Registration**
+# SDK App Registration
 
 This topic describes how to register your application and generate credentials for your clients that are required to exchange messages between your application and the Kore.ai XO Platform.
 
