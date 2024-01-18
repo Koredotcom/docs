@@ -21,7 +21,7 @@ This event consists of the following two components:
 
 Syntax:
 
-```
+```javascript
 on_user_message : function(requestId, data, callback)
 ```
 Parameters:
@@ -80,9 +80,10 @@ function onUserMessage(requestId, payload, callback){
 
 Syntax:
 
-```
+```javascript
 on_bot_message : function(requestId, data, callback)
 ```
+
 Parameters:
 
 * requestId – A unique ID for each message event.
@@ -95,6 +96,7 @@ Parameters:
    "context":"context object"
 }
 ```
+
 * callback – The function to call at event completion used to send the updated message and context back to the user.
 
 Example: The following code snippet onBotMessage event evaluates the user message for content and then for message tone. If the message tone is greater than or equal to 2 for the angry tone, then the communication between the user and the assistant is switched to a live agent.
@@ -105,8 +107,8 @@ Example: The following code snippet onBotMessage event evaluates the user messag
  */
 function onBotMessage(requestId, payload, callback){
     debug("Bot Message Data",payload);
-	console.log("in bot message");
-    var visitorId = _.get(paylod, 'channel.from');
+    console.log("in bot message");
+    var visitorId = _.get(payload, 'channel.from');
     var entry = _map[visitorId];
     if(data.message.length === 0 || payload.message === '') {
         return;
@@ -130,11 +132,14 @@ function onBotMessage(requestId, payload, callback){
 
 ## onWebHook
 
-This event is triggered when the Kore NL Engine processes the Webhook node in the dialog flow. This event is sent to the SDK with `componentId` and context. The SDK can execute business logic and send the updated context back to the Platform. Syntax:
+This event is triggered when the Kore NL Engine processes the Webhook node in the dialog flow. This event is sent to the SDK with `componentId` and context. The SDK can execute business logic and send the updated context back to the Platform. 
 
-```
+Syntax:
+
+```javascript
 on_webhook = function(requestId, componentId, payload, callback)
 ```
+
 Parameters:
 
 * requestId – A unique ID for each webhook event.
@@ -212,24 +217,24 @@ function onAgentTransfer(requestId, data, callback){
 connectToAgent(requestId, data, callback);
 }
 ```
+
 Parameters:
 
 * requestId – A unique ID for each message event.
 * payload – A JSON response payload as follows:
 
-```json
-{
-   OnAgentTransferPayload ","
-      requestId ":1501244156289,"
-      botId ":"st - b4a22e86 - e95b - 575 c - b888 - e106d083a251 ","
-      callbackUrl ":"https: //bots.kore.ai/api/botsdk/stream/st-b4a22e86-e95b-575c-b888-e106d083a251/serviceCallback/1501244156289","context": ...
-}
+    ```json
+    {
+        OnAgentTransferPayload ","
+        requestId ":1501244156289,"
+        botId ":"st - b4a22e86 - e95b - 575 c - b888 - e106d083a251 ","
+        callbackUrl ":"https: //bots.kore.ai/api/botsdk/stream/st-b4a22e86-e95b-575c-b888-e106d083a251/serviceCallback/1501244156289","context": ...
+    }
+    ```
 
-```
 * callback – The function to call at event completion used to send the updated message and context back to the XO Platform.
 
 Example: The following code snippet onAgentTransfer event connects the user to a Live Agent and passing the user message, bot message, and historical chat messages of the session.
-
 
 ```javascript
 function connectToAgent(requestId, data, cb){
@@ -275,7 +280,6 @@ Parameters:
 
 Example:
 
-
 ```javascript
 on_event : function (requestId, data, callback)
 {
@@ -308,6 +312,7 @@ on_alert: function(requestId, data, callback)
  return sdk.sendAlertMessage(data, callback);
 }
 ```
+
 The alert response data is found in the data object sent to the kit.
 
 ## OnVariableUpdate
@@ -317,6 +322,7 @@ This event is triggered on **variable_update** when the assistant is published.
 Syntax: variable_update : function (requestId, data, callback) 
 
 Parameters:
+
 * requestId – A unique ID for each message event.
 * data– A JSON response payload
 * callback – The function to call after event completion; it is used to send the updated message and context back to the XO Platform.
@@ -363,7 +369,26 @@ These events are associated with the application subscribing to botkit event typ
     _Request_:
 
     ```json
-    { “resourceid”: “/bot.clientEvent”, “preDefinedEvent” : { “type”: “TYPING_STARTED” }, “customEvent”: {“test”:”test”}, “botInfo”: {“chatBot”:”&lt;bot-name>”, “taskBotId”:”&lt;bot-id>”} } _Response1_: {“ok”:true,”type”:”ack”} _Response2_: {“type”:”events”, “from”:”bot”, “botInfo”: {“chatBot”:”&lt;bot-name>”, “taskBotId”:”&lt;bot-id>”} }, “preDefinedEvent”:{“type”:”TYPING_STARTED”}, “customEvent”:{“test”:”test”},”traceId”:”6b12f4cc73c806dd”
+    { 
+        “resourceid”: “/bot.clientEvent”,
+        “preDefinedEvent” : { “type”: “TYPING_STARTED” }, 
+        “customEvent”: {“test”:”test”}, 
+        “botInfo”: {“chatBot”:”&lt;bot-name>”, “taskBotId”:”&lt;bot-id>”} 
+    } 
+    ```
+    _Response1_: 
+    ```json
+    {
+        “ok”:true,
+        ”type”:”ack”
+    }
+    ```
+    _Response2_:
+    ```json
+    {
+        “type”:”events”, “from”:”bot”, 
+        “botInfo”: {“chatBot”:”&lt;bot-name>”, “taskBotId”:”&lt;bot-id>”},
+        “preDefinedEvent”:{“type”:”TYPING_STARTED”}, “customEvent”:{“test”:”test”},”traceId”:”6b12f4cc73c806dd”
     }
     ```
 
@@ -371,13 +396,64 @@ These events are associated with the application subscribing to botkit event typ
     _Request_:
 
     ```json
-    { “resourceid”: “/bot.clientEvent”, “preDefinedEvent” : { “type”: “TYPING_STOPPED” }, “customEvent”: {“test”:”test”}, “botInfo”: {“chatBot”:”&lt;bot-name>”, “taskBotId”:”&lt;bot-id>”} } _Response1_: {“ok”:true,”type”:”ack”} _Response2_: {“type”:”events”, “from”:”bot”, “botInfo”: {“chatBot”:”&lt;bot-name>”, “taskBotId”:”&lt;bot-id>”} }, “preDefinedEvent”:{“type”:”TYPING_STOPPED”}, “customEvent”:{“test”:”test”},”traceId”:”6b12f4cc73c806dd”
+    { 
+        “resourceid”: “/bot.clientEvent”, 
+        “preDefinedEvent” : { “type”: “TYPING_STOPPED” }, 
+        “customEvent”: {“test”:”test”}, 
+        “botInfo”: {“chatBot”:”&lt;bot-name>”, “taskBotId”:”&lt;bot-id>”} 
+    } 
+    ```
+
+    _Response1_:
+
+    ```json
+    {
+        “ok”:true,
+        ”type”:”ack”
+    } 
+    ```
+
+    _Response2_:
+
+    ```json
+    {
+        “type”:”events”, 
+        “from”:”bot”, 
+        “botInfo”: {“chatBot”:”&lt;bot-name>”, “taskBotId”:”&lt;bot-id>”},
+        “preDefinedEvent”:{“type”:”TYPING_STOPPED”}, \
+        “customEvent”:{“test”:”test”},
+        ”traceId”:”6b12f4cc73c806dd”
     }
-```
+    ```
 
 * **User read the message:**
     _Request_:
+
     ```json 
-    { “resourceid”: “/bot.clientEvent”, “preDefinedEvent” : { “type”: “MESSAGE_READ”, “id”: “&lt;msg-id>” }, “customEvent”: {“string”}, “botInfo”: {“chatBot”:”&lt;bot-name>”, “taskBotId”:”&lt;bot-id>”} } _Response1_: {“ok”:true,”type”:”ack”} _Response2_: {“type”:”events”, “from”:”bot”, “botInfo”: {“chatBot”:”&lt;bot-name>”, “taskBotId”:”&lt;bot-id>”} }, “preDefinedEvent”:{“type”:”MESSAGE_READ”, “id”:”&lt;msg-id>”}, “customEvent”:{“string”},”traceId”:”6b12f4cc73c806dd”
+    { 
+        “resourceid”: “/bot.clientEvent”, 
+        “preDefinedEvent” : { “type”: “MESSAGE_READ”, “id”: “&lt;msg-id>” }, 
+        “customEvent”: {“string”}, 
+        “botInfo”: {“chatBot”:”&lt;bot-name>”,“taskBotId”:”&lt;bot-id>”}
+    } 
+    ```
+
+    _Response1_:
+
+    ```json
+    {
+        “ok”:true,
+        ”type”:”ack”
+    }
+    ```
+
+     _Response2_:
+
+    ```json
+    {
+        “type”:”events”, 
+        “from”:”bot”, 
+        “botInfo”: {“chatBot”:”&lt;bot-name>”, “taskBotId”:”&lt;bot-id>”} 
+        “preDefinedEvent”:{“type”:”MESSAGE_READ”, “id”:”&lt;msg-id>”}, “customEvent”:{“string”},”traceId”:”6b12f4cc73c806dd”
     }
     ```
