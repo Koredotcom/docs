@@ -4,21 +4,21 @@ The Kore.ai BotKit SDK provides functions that you can use for greater control o
 The following functions are supported by the BotKit SDK.
 
 
-* [sdk.sendUserMessage](#sdk.sendusermessage)
-* [sdk.sendBotMessage](#sdk.sendbotmessage)
-* [sdk.AsyncResponse](#sdk.asyncresponse)
-* [sdk.respondToHook](#sdk.respondtohook)
-* [sdk.saveData](#sdk.savedata)
-* [sdk.registerBot](#sdk.registerbot)
-* [sdk.getSavedData](#sdk.getsaveddata)
-* [sdk.getMessages](#sdk.getmessages)
-* [sdk.resetBot](#sdk.resetbot)
-* [sdk.startAgentSession](#sdk.startagentsession)
-* [sdk.clearAgentSession](#sdk.clearagentsession)
-* [sdk.extendRequestId](#sdk.extendrequestid)
-* [sdk.skipUserMessage](#sdk.skipusermessage)
-* [sdk.skipBotMessage](#sdk.skipbotmessage)
-* [sdk.closeConversationSession](#sdk.closeconversationsession)
+* [sdk.sendUserMessage](#sdksendusermessage)
+* [sdk.sendBotMessage](#sdksendbotmessage)
+* [sdk.AsyncResponse](#sdkasyncresponse)
+* [sdk.respondToHook](#sdkrespondtohook)
+* [sdk.saveData](#sdksavedata)
+* [sdk.registerBot](#sdkregisterbot)
+* [sdk.getSavedData](#sdkgetsaveddata)
+* [sdk.getMessages](#sdkgetmessages)
+* [sdk.resetBot](#sdkresetbot)
+* [sdk.startAgentSession](#sdkstartagentsession)
+* [sdk.clearAgentSession](#sdkclearagentsession)
+* [sdk.extendRequestId](#sdkextendrequestid)
+* [sdk.skipUserMessage](#sdkskipusermessage)
+* [sdk.skipBotMessage](#sdkskipbotmessage)
+* [sdk.closeConversationSession](#sdkcloseconversationsession)
 
 
 ## sdk.sendUserMessage
@@ -882,3 +882,4 @@ metaTags":
      }
     ]
 }
+```
