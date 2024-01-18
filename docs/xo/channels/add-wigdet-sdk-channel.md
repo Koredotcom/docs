@@ -1,4 +1,4 @@
-# **Adding the Widget SDK Channel**
+# Adding the Widget SDK Channel
 
 The Widgets SDK channel allows you to host widgets for presenting information from your assistant and enabling interaction with end-users.
 

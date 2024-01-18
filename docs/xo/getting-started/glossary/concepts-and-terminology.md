@@ -10,10 +10,11 @@
 
 This glossary lists the key terms and concepts related to the Kore.ai’s XO Platform.
 
+!!! note
 
-```
-Note: "Virtual Assistant", "VA" and "Bot" refer to the same concept and are used interchangeably throughout this glossary. Please see "Virtual Assistant" for the definition. 
-```
+      "Virtual Assistant", "VA" and "Bot" refer to the same concept and are used interchangeably throughout this glossary. Please see "Virtual Assistant" for the definition. 
+
+
 
 
 	
@@ -27,20 +28,21 @@ Note: "Virtual Assistant", "VA" and "Bot" refer to the same concept and are used
 
 ## A
 
-**Action task** –[ Action tasks](https://kore.ai/platform/design-and-build/tasks/) collect, modify, and post information in systems of record, such as scheduling an appointment, searching for a product, or updating critical information.
+**Action task** – Action tasks collect, modify, and post information in systems of record, such as scheduling an appointment, searching for a product, or updating critical information.
 
-**Administration & analytics** – The Kore.ai XO Platform provides enterprise grade visibility and control of all enterprise bots, user groups, and security, as well as a commitment to compliance in even the most highly regulated areas, including healthcare and financial services.[ Learn more.](https://kore.ai/platform/enterprise-features/integration/)
+**Administration & analytics** – The Kore.ai XO Platform provides enterprise grade visibility and control of all enterprise bots, user groups, and security, as well as a commitment to compliance in even the most highly regulated areas, including healthcare and financial services.
 
-**Alert task** –[ Alert tasks](https://kore.ai/platform/design-and-build/tasks/) Bots poll the system for user requested updates in real-time, to deliver timely, relevant, and personalized information to customers and employees directly from enterprise systems. \
- **API** – An API, or Application Programming Interface, is a set of definitions, protocols, and tools for building software. It helps developers by essentially providing the building blocks for a program.
+**Alert task** – Alert tasks Bots poll the system for user requested updates in real-time, to deliver timely, relevant, and personalized information to customers and employees directly from enterprise systems.
 
-**Artificial Intelligence (AI)** – AI is the development of computer systems that are able to perform tasks that normally require[ human-like intelligence](https://kore.ai/platform/intelligence/context-management/), such as decision making, speech recognition and understanding, translation between languages, and more.  
+**API** – An API, or Application Programming Interface, is a set of definitions, protocols, and tools for building software. It helps developers by essentially providing the building blocks for a program.
 
-**Auto-NLP** – A term we use to describe our synonym-based approach to[ natural language processing](https://kore.ai/bots-platform/natural-language-processing/). It allows VAs to communicate and understand intent variations right out of the gate, thus being speech enabled “automatically”
+**Artificial Intelligence (AI)** – AI is the development of computer systems that are able to perform tasks that normally require human-like intelligence, such as decision making, speech recognition and understanding, translation between languages, and more.  
+
+**Auto-NLP** – A term we use to describe our synonym-based approach to natural language processing. It allows VAs to communicate and understand intent variations right out of the gate, thus being speech enabled “automatically”.
 
 **Automatic Message Formatting** – The pre-programmed responses for tasks built into Kore.ai’s XO Platform NL engines.
 
-**Automated Speech Recognition (ASR)** – Our Platform can integrate an[ Automated Speech Recognition Engine](https://kore.ai/bots-platform/natural-language-processing/) to enable bots to process voice-driven interactions and communicate outside of traditional text-based interfaces.
+**Automated Speech Recognition (ASR)** – Our Platform can integrate an Automated Speech Recognition Engine to enable bots to process voice-driven interactions and communicate outside of traditional text-based interfaces.
 
 **Amazon Web Services (AWS)** – A subsidiary of Amazon.com which provides on-demand cloud computing platforms to people and enterprises.
 
@@ -57,11 +59,11 @@ Note: "Virtual Assistant", "VA" and "Bot" refer to the same concept and are used
 
 ## B
 
-**Bots (also see _Chatbot _and _Virtual Assistant_)** – Short for a computer program that acts as an intelligent intermediary between people, digital systems, and Internet-enabled things
+**Bots (also see _Chatbot_ and _Virtual Assistant_)** – Short for a computer program that acts as an intelligent intermediary between people, digital systems, and Internet-enabled things.
 
-**Bot Builder Tool** – A[ web-based Bot Builder](https://kore.ai/platform/design-and-build/dialog-builder/), part of the Kore.ai XO Platform, that allows enterprises to customize VA use cases, channels, tasks, security, and more. It also provides a framework in which developers can design, test, and deploy VAs in a consistent process at scale.
+**Bot Builder Tool** – A web-based Bot Builder, part of the Kore.ai XO Platform, that allows enterprises to customize VA use cases, channels, tasks, security, and more. It also provides a framework in which developers can design, test, and deploy VAs in a consistent process at scale.
 
-**Bot context** –[ User or task information that is captured at the bot level](https://kore.ai/platform/intelligence/context-management/) and can be used in context with some or all of the users of that bot.
+**Bot context** – User or task information that is captured at the bot leve and can be used in context with some or all of the users of that bot.
 
 		
 
@@ -76,27 +78,27 @@ Note: "Virtual Assistant", "VA" and "Bot" refer to the same concept and are used
 
 ## C
 
-**Channel** – A[ channel](https://kore.ai/bots-platform/channels/) is another word for any of the various communication platforms where a VA can be implemented, such as SMS, email, mobile apps, websites, messaging apps and more. With the Kore.ai’s XO Platform, you can design VA tasks once, and deploy across channels simply by checking a box. You can also differentiate cross-channel experiences by altering message responses or leveraging channel-specific UI elements, such as  date selectors, carousels, and more.
+**Channel** – A channel is another word for any of the various communication platforms where a VA can be implemented, such as SMS, email, mobile apps, websites, messaging apps and more. With the Kore.ai’s XO Platform, you can design VA tasks once, and deploy across channels simply by checking a box. You can also differentiate cross-channel experiences by altering message responses or leveraging channel-specific UI elements, such as  date selectors, carousels, and more.
 
-**Chatbot** – Short for a computer program that acts as an intelligent intermediary between people, digital systems, and Internet-enabled things. Find out more about VAs with our[ Bots 101 guide](https://korezone-kore.netdna-ssl.com/wp-content/uploads/1a-%E2%80%93-Understand-Everything-Your-Team-Needs-to-Know-about-Bots-bots-101-guide.pdf).
+**Chatbot** – Short for a computer program that acts as an intelligent intermediary between people, digital systems, and Internet-enabled things. 
 
 **Chat logs** – Histories of all recorded human-to-bot interactions.
 
-**Cisco Spark** – Cisco’s[ all-in-one communication platform,](https://www.ciscospark.com/) which is also a supported channel for bots and an integration partner for VA development.
+**Cisco Spark** – Cisco’s all-in-one communication platform, which is also a supported channel for bots and an integration partner for VA development.
 
 **Cloud (or Cloud computing)** – Internet-based computing that provides shared computer processing resources and data to computers and other devices, on demand.
 
 **Cloud Connector** – Provides an agent that runs behind your enterprise firewall that acts as a bridge to facilitate secure data exchanges between on-prem systems and Kore.ai’s cloud based infrastructure.
 
-**Component reusability** – The ability for developers to use components they’ve already built in the Bot Builder, such as APIs, synonyms, tasks, etc. and apply them to other bots.
+**Component Reusability** – The ability for developers to use components they’ve already built in the Bot Builder, such as APIs, synonyms, tasks, etc. and apply them to other bots.
 
-**Context (see also, Bot Context, Enterprise Context, Session Context, User Context)**  –[ The information that a VA pulls from a conversation](https://kore.ai/platform/intelligence/context-management/) with a user that it can leverage when performing tasks. Contextual data can vary in importance, utility, and lifespan.
+**Context (see also, Bot Context, Enterprise Context, Session Context, User Context)**  – The information that a VA pulls from a conversation with a user that it can leverage when performing tasks. Contextual data can vary in importance, utility, and lifespan.
 
-**Conversational Commerce** – A term coined by[ Chris Messina in 2016](https://medium.com/chris-messina/2016-will-be-the-year-of-conversational-commerce-1586e85e3991), which is another way of describing how digital economies will be driven by text and voice based interfaces and experiences.
+**Conversational Commerce** – A term coined by Chris Messina in 2016, which is another way of describing how digital economies will be driven by text and voice based interfaces and experiences.
 
 **Conversational UI** – Another way of describing text and voice-based interfaces, which don’t require graphical elements for use, such as Amazon’s Alexa or Apple’s Siri.
 
-**Cognitive Services (aka Conversational and Cognitive Services)** – A collection of separate APIs, SDKs, and services (that run on a cloud infrastructure like Azure) which developers can use to build intelligence into apps and/or to construct a VA that can leverage AI capabilities. Unlike a[ platform](https://kore.ai/platform/virtual-assistant-platform/), charge is typically separate for each service and each bot created.
+**Cognitive Services (aka Conversational and Cognitive Services)** – A collection of separate APIs, SDKs, and services (that run on a cloud infrastructure like Azure) which developers can use to build intelligence into apps and/or to construct a VA that can leverage AI capabilities. Unlike a platform, charge is typically separate for each service and each bot created.
 
 		
 
@@ -117,9 +119,9 @@ Note: "Virtual Assistant", "VA" and "Bot" refer to the same concept and are used
 
 **Deployment** – The process of publishing a bot to a communication channel where it will be engaged by users.
 
-**Dialog task** –[ Dialog tasks](https://kore.ai/platform/design-and-build/tasks/) are advanced tasks that developers design with logic-driven business processes and pre-established workflows. Bots key off the primary request intent to accomplish the task at hand, then go above and beyond to execute sub-intents and additional workflows. This way, VAs can handle complex multi-turn conversational experiences that replicate the natural back and forth exchanges people have every day.
+**Dialog task** – Dialog tasks are advanced tasks that developers design with logic-driven business processes and pre-established workflows. Bots key off the primary request intent to accomplish the task at hand, then go above and beyond to execute sub-intents and additional workflows. This way, VAs can handle complex multi-turn conversational experiences that replicate the natural back and forth exchanges people have every day.
 
-**Dialog Builder** –[ The Dialog Builder](https://kore.ai/platform/design-and-build/dialog-builder/) gives designers and developers the flexibility to manipulate the entire dialog process of a bot interaction and string together complex workflows in a GUI-based tool.
+**Dialog Builder** – The Dialog Builder gives designers and developers the flexibility to manipulate the entire dialog process of a bot interaction and string together complex workflows in a GUI-based tool.
 
 		
 
@@ -152,7 +154,7 @@ Note: "Virtual Assistant", "VA" and "Bot" refer to the same concept and are used
 
 **Enterprise context** – Information that represents company-wide rules and standards that apply to all users and VAs, such as a company travel policy, or expense limits.
 
-**Entity** – Entities are the necessary fields, data, or words for a VA to complete the user’s request: be that a date, a time, a location, a description or any number of things. With the required entities in hand, the VA can reach out to the web service and get the specific data or perform the action as per the user intent. For example, to book a flight, the VA needs the source and destination city along with the travel date. In this example, the user utterance “Book me a flight to Orlando for next Sunday_”, “_Orlando_”_ and “next Sunday_”_ are entities_. _For more information about parameters and user input, refer to the particular task type parameters and fields.
+**Entity** – Entities are the necessary fields, data, or words for a VA to complete the user’s request: be that a date, a time, a location, a description or any number of things. With the required entities in hand, the VA can reach out to the web service and get the specific data or perform the action as per the user intent. For example, to book a flight, the VA needs the source and destination city along with the travel date. In this example, the user utterance “Book me a flight to Orlando for next Sunday”, “_Orlando_” and “_next Sunday_” are entities. For more information about parameters and user input, refer to the particular task type parameters and fields.
 
 
 <table>
@@ -197,7 +199,7 @@ Count: Two
 
  
 
-**Entity extraction** – This is[ the process by which the NL engine identifies words](https://kore.ai/bots-platform/natural-language-processing/) from a user’s utterance to ensure all available fields match the task at hand. If the VA needs an entity to complete the task after initial extraction, it will prompt the user for it.
+**Entity extraction** – This is the process by which the NL engine identifies words from a user’s utterance to ensure all available fields match the task at hand. If the VA needs an entity to complete the task after initial extraction, it will prompt the user for it.
 
 		
 
@@ -267,17 +269,17 @@ Count: Two
 
 **Information and Communication Technologies (ICT)** – ICT refers to technologies that provide access to information through telecommunications. It is similar to Information Technology (IT), but focuses primarily on communication technologies. This includes the Internet, wireless networks, cell phones, and other communication media.
 
-**Information task** –[ Information tasks](https://kore.ai/platform/design-and-build/tasks/) lookup data or pull reports based on specific parameters and quickly return easy-to-consume results that are convenient for users. These reports are formatted and organized based on user preferences, applicable filters, and they can be downloaded for later use. For example, a VA can provide a sales manager with a report detailing the top 10 sales reps last year by region, organized from most to least sales.
+**Information task** – Information tasks lookup data or pull reports based on specific parameters and quickly return easy-to-consume results that are convenient for users. These reports are formatted and organized based on user preferences, applicable filters, and they can be downloaded for later use. For example, a VA can provide a sales manager with a report detailing the top 10 sales reps last year by region, organized from most to least sales.
 
 **Interface** – A shared boundary across which two or more separate components of a computer system exchange information.
 
-**Intelligence (see also[ Platform Intelligence)](https://kore.ai/platform/intelligence/context-management/)** – All the capabilities provided to developers who use the Kore.ai XO Platform to create AI-powered VAs including how to use contextual data, memory, NLP, machine learning (both supervised and unsupervised), sentiment analysis, and more.
+**Intelligence (see also Platform Intelligence)** – All the capabilities provided to developers who use the Kore.ai XO Platform to create AI-powered VAs including how to use contextual data, memory, NLP, machine learning (both supervised and unsupervised), sentiment analysis, and more.
 
 **Intent** – A few essential words in the utterance that describe what the user wants the VA to do. It is usually a combination of a verb and a noun. For example, in _“Book me a flight to Orlando for next Sunday”_, the intent is _Book me a flight_.
 
-**Intent recognition** –[ The process by which the NL engine analyzes the structure of a user’s command](https://kore.ai/bots-platform/natural-language-processing/) to identify each word by meaning, position, conjugation, capitalization, plurality, and other factors to correctly match the user’s intent to the task at hand.
+**Intent recognition** –[ The process by which the NL engine analyzes the structure of a user’s command to identify each word by meaning, position, conjugation, capitalization, plurality, and other factors to correctly match the user’s intent to the task at hand.
 
-**Interaction** – Any text-based or spoken communication between a human and a VA.
+**Interaction** – Any text-based or spoken communication between a huma and a VA.
 
 		
 
@@ -307,9 +309,9 @@ Count: Two
 
 ## K
 
-**Knowledge task** / **Knowledge Graph** –[ Knowledge tasks](https://kore.ai/platform/design-and-build/tasks/) take user questions and query a predefined set of information to rapidly find the right answers, such as business hours of operation or specific policy questions.
+**Knowledge task** / **Knowledge Graph** – Knowledge tasks take user questions and query a predefined set of information to rapidly find the right answers, such as business hours of operation or specific policy questions.
 
-**Kore.ai** – Kore.ai is a software development company, founded in 2014 in Orlando, FL to help[ enterprises build and use conversational, intelligent VAs for a variety of use cases.](http://www.zdnet.com/article/kore-ai-lets-enterprises-build-intelligent-chatbots-with-sentiment-analysis/) Learn more about[ Kore.ai](https://kore.ai/about-kore/).
+**Kore.ai** – Kore.ai is a software development company, founded in 2014 in Orlando, FL to help enterprises build and use conversational, intelligent VAs for a variety of use cases. Learn more about[ Kore.ai](https://kore.ai/about-kore/).
 
 		
 
@@ -345,7 +347,7 @@ Count: Two
 
 ## M
 
-**Machine Learning** – Using algorithms, patterns, and training data, machine learning allows computers to find hidden insights without being explicitly programmed. Learn more about the way Kore.ai uses[ machine learning for natural language enablement.](https://kore.ai/bots-platform/natural-language-processing/)
+**Machine Learning** – Using algorithms, patterns, and training data, machine learning allows computers to find hidden insights without being explicitly programmed. Learn more about the way Kore.ai uses machine learning for natural language enablement.
 
 **Managed Services Provider (MSP)** – Most often an IT provider that manages and assumes responsibility for providing a defined set of services to its clients either proactively or as the MSP determines that services are needed. They typically offer a range of services such as network maintenance, hardware repair, help-desk, email management, and anything else that requires a day-to-day administrator to keep running. They may need to purchase technology from a third-party provider, a cost which is bundled with their services and passed on to their end customer. MSPs operate on longer-term annual or multi-year contracts, and the tenure of their relationship is open-ended.
 
@@ -380,7 +382,7 @@ Count: Two
 
 **Natural Language (NL)** – The method by which users can talk to systems in everyday language like text and speech, rather than programming language.
 
-**Natural Language Processing (NLP)** – The process by which a VA or any other system understands and processes requests in common language, rather than programming language. NLP is typically enabled via machine learning, but[ Kore.ai uses a multi-engine  approach](https://kore.ai/bots-platform/natural-language-processing/) which includes intent recognition and entity extraction. NLP enables a VA to identify the user intents; extract useful information from their utterances and map the data(entities) to the relevant tasks. Kore.ai’s XO Platform uses a unique NLP strategy. It combines Fundamental Meaning, Machine Learning and Knowledge Graph Engines for optimal conversational accuracy. VAs built on the XO Platform can understand and process:
+**Natural Language Processing (NLP)** – The process by which a VA or any other system understands and processes requests in common language, rather than programming language. NLP is typically enabled via machine learning, but Kore.ai uses a multi-engine  approach which includes intent recognition and entity extraction. NLP enables a VA to identify the user intents; extract useful information from their utterances and map the data(entities) to the relevant tasks. Kore.ai’s XO Platform uses a unique NLP strategy. It combines Fundamental Meaning, Machine Learning and Knowledge Graph Engines for optimal conversational accuracy. VAs built on the XO Platform can understand and process:
 
 
 
@@ -395,7 +397,7 @@ Count: Two
 
 **Neural networks** – A computer system modeled on the human brain and nervous system.
 
-**Node** – A node is where different points of a dialog or workflow intersect. The Dialog Builder has multiple node types so developers can steer the human-to-bot conversation in different directions, including intent nodes, service nodes, message nodes, confirmation nodes, webhook nodes, and JavaScript nodes.[ Learn more about how you can use nodes to build more complex and free flowing VA dialogs/.](https://kore.ai/platform/design-and-build/dialog-builder/)
+**Node** – A node is where different points of a dialog or workflow intersect. The Dialog Builder has multiple node types so developers can steer the human-to-bot conversation in different directions, including intent nodes, service nodes, message nodes, confirmation nodes, webhook nodes, and JavaScript nodes.
 
 		
 
@@ -429,7 +431,7 @@ Count: Two
 
 **Pause & resume** – An approach for situations when a VA receives a task request while in the process of completing an initial request. The bot can then pause one request, complete the more immediate task, and circle back to resume the request it previously put on hold.
 
-**Platform architecture** –[ A visual descriptor of the various Platform features and how they interact with one another.](https://kore.ai/bots-platform)
+**Platform architecture** – A visual descriptor of the various Platform features and how they interact with one another.
 
 **Pilot** – The stage after proof of concept where a VA’s tasks are published and the bot is deployed to a select group of users for testing.
 
@@ -454,7 +456,7 @@ Count: Two
 
 **Response formatting** – The process by which a developer customizes the responses a bot will give during an interaction. Responses can be formatted to be natural language only, or include GUI elements such as buttons, forms, images, etc.
 
-**Robotic Processing Automation (RPA)** – A tool for automating manual, time-consuming, complex, rule-based workflows and functions for back-end IT administrative work. While it may sound similar to AI-based VAs, we explain all the nuances and differences in our whitepaper,[ Robotic Process Automation Software Robots & Chatbots: What’s Different, What’s Similar, and What’s Next?](https://kore.ai/robotic-process-automation-software-robots-chatbots/)
+**Robotic Processing Automation (RPA)** – A tool for automating manual, time-consuming, complex, rule-based workflows and functions for back-end IT administrative work. While it may sound similar to AI-based VAs, we explain all the nuances and differences in our whitepaper, Robotic Process Automation Software Robots & Chatbots: What’s Different, What’s Similar, and What’s Next?
 
 		
 
@@ -469,9 +471,9 @@ Count: Two
 
 ## S
 
-**SAP Solutions** –[ Bots built by Kore.ai to specifically integrate with SAP’s most popular systems](https://kore.ai/partners/), such as SuccessFactors, Concur, S/4Hana, SAP Hybris, and more.
+**SAP Solutions** – Bots built by Kore.ai to specifically integrate with SAP’s most popular systems, such as SuccessFactors, Concur, S/4Hana, SAP Hybris, and more.
 
-**Sentiment analysis** – Beyond completing tasks, VAs built with the Kore.ai XO Platform can understand a user’s mood throughout a conversation.[ Our NLP engine scores sentiment](https://kore.ai/platform/intelligence/context-management/) based on connotation, word placement, and modifiers. Developers can use these scores to trigger custom flows to improve bot-to-user communication, or bring in human agents as needed.
+**Sentiment analysis** – Beyond completing tasks, VAs built with the Kore.ai XO Platform can understand a user’s mood throughout a conversation. Our NLP engine scores sentimentbased on connotation, word placement, and modifiers. Developers can use these scores to trigger custom flows to improve bot-to-user communication, or bring in human agents as needed.
 
 **Service call** – Service calls are used to make API requests to third-party web services to push, pull, or manipulate data. The web service unpacks the request and converts it to a command that the application or system can understand in order to complete the task or return the needed data. The platform then receives that message and unpacks it in order to obtain the results of the request. The XO Platform supports the use of API services to make REST, SOAP, or ODATA requests.
 
@@ -487,11 +489,11 @@ Count: Two
 
 **Software Development Kit (also see Mobile SDK, Web SDK)** – Tools or resources that help developers create websites and apps and customize elements of the UI.
 
-**Storyboard** – A primary feature within the Kore.ai XO Platform that allows developers to visualize and manage the VA design process through FAQs, Dialog Tasks, and Mock Conversation Scenes
+**Storyboard** – A primary feature within the Kore.ai XO Platform that allows developers to visualize and manage the VA design process through FAQs, Dialog Tasks, and Mock Conversation Scenes.
 
 **Structured data** – Information with a high degree of organization that is easily searchable when placed in a database.
 
-**Supervised learning for NL** – Through the Bot Builder tool, developers and admins can[ support supervised learning](https://kore.ai/platform/intelligence/context-management/) and evaluate all interaction logs, easily change NL settings for failed scenarios, and use the learnings to retrain the bot for better conversations. Developers can also leverage chat logs to build predictive models and use the outcomes to further define additional proactive alerts, suggested actions, or automated workflows. Developers have input variables (X) and an output variable (Y), and use an algorithm to learn the mapping function from the input to the output Y=f(X). Here, the VA developer acts as a teacher and has virtually full control over what the VA learns. This means that the algorithm makes predictions based on the training data provided. The VA creator or developer can manually correct these predictions by flagging the findings as correct or incorrect. Since the VA developer already knows what the VA should understand, learning can be stopped as soon as the developer decides or when the model reaches an acceptable level of performance and maturity.
+**Supervised learning for NL** – Through the Bot Builder tool, developers and admins can support supervised learningand evaluate all interaction logs, easily change NL settings for failed scenarios, and use the learnings to retrain the bot for better conversations. Developers can also leverage chat logs to build predictive models and use the outcomes to further define additional proactive alerts, suggested actions, or automated workflows. Developers have input variables (X) and an output variable (Y), and use an algorithm to learn the mapping function from the input to the output Y=f(X). Here, the VA developer acts as a teacher and has virtually full control over what the VA learns. This means that the algorithm makes predictions based on the training data provided. The VA creator or developer can manually correct these predictions by flagging the findings as correct or incorrect. Since the VA developer already knows what the VA should understand, learning can be stopped as soon as the developer decides or when the model reaches an acceptable level of performance and maturity.
 
 **Synonyms** – Word variations for intents or entities that developers can add to a VA’s synonym library to give it a wider and more accurate range of natural language understanding.
 
@@ -508,7 +510,7 @@ Count: Two
 
 ## T
 
-**Tasks** – The different types of simple and complex “jobs” a developer designates the VA to perform. A VA can perform[ 5 types of tasks](https://kore.ai/platform/design-and-build/tasks/): alerts, actions, information, knowledge, and dialog tasks. For example, for a travel virtual assistant, task names are to book tickets, find hotels, provide weather forecasts etc. that cater to different user intents. Once the VA understands the intent, it is ready to perform a task, such as reaching out to a web service, extracting the current weather conditions report, parsing that response, and then delivering the data to the user.
+**Tasks** – The different types of simple and complex “jobs” a developer designates the VA to perform. A VA can perform 5 types of tasks: alerts, actions, information, knowledge, and dialog tasks. For example, for a travel virtual assistant, task names are to book tickets, find hotels, provide weather forecasts etc. that cater to different user intents. Once the VA understands the intent, it is ready to perform a task, such as reaching out to a web service, extracting the current weather conditions report, parsing that response, and then delivering the data to the user.
 
 **Testing** – The step-by-step processes of testing request chaining, intent and sub intent recognition and entity extraction, conversation flows, and more.
 
@@ -541,7 +543,7 @@ Count: Two
 
 **Unstructured data** – Unstructured data and documents, in this instance, refers to sources that are typically text-heavy and free-flowing. Such documents or data can still contain dates, numbers, and facts, but they lack a pre-defined data model or structure and overall consistency. The XO Platform supports semantic search against unstructured data and the training of bots from unstructured documents.
 
-**Unsupervised learning for NL** –[ Unsupervised learning for NL](https://kore.ai/platform/intelligence/context-management/) can be applied to expand the language capabilities of your VA, without human intervention. Unlike unsupervised models in which VAs learn from any input, good or bad, the Kore.ai XO Platform enables VAs to automatically increase their vocabulary only when the VA successfully recognizes the intent and extracts the entities of a human’s request to complete a task.
+**Unsupervised learning for NL** – Unsupervised learning for NL can be applied to expand the language capabilities of your VA, without human intervention. Unlike unsupervised models in which VAs learn from any input, good or bad, the Kore.ai XO Platform enables VAs to automatically increase their vocabulary only when the VA successfully recognizes the intent and extracts the entities of a human’s request to complete a task.
 
 **Utterance** – Anything that a user says to the VA is an utterance. For example, if the user types _“_Book me a flight to Orlando for next Sunday_”_, the entire sentence is considered as the user’s utterance.
 
@@ -589,9 +591,9 @@ For example, some API requests require you to set session variables before execu
 
 **Winning Intent** – When the VA receives a user utterance, it will attempt to detect potential intents, then score them by the probability that they represent what the user wants. The intent that scores the highest is the one that the VA responds to and is called a Winning Intent.
 
-**Workplace by Facebook** – A[ supported channel](https://kore.ai/bots-platform/channels/) for VAs built on the Kore.ai XO Platform, and[ an integration partner for VA development.](https://kore.ai/press/)
+**Workplace by Facebook** – A[ supported channel](https://kore.ai/bots-platform/channels/) for VAs built on the Kore.ai XO Platform, and an integration partner for VA development.
 
 
 ## X
 
-**XO Platform** – An[ enterprise-grade VA development platform offered as a SaaS, by Kore.ai,](https://kore.ai/bots-platform/) which gives enterprises every component necessary to design, train, deploy, analyze and manage AI-rich Virtual Assistants.
+**XO Platform** – An enterprise-grade VA development platform offered as a SaaS, by Kore.ai, which gives enterprises every component necessary to design, train, deploy, analyze and manage AI-rich Virtual Assistants.

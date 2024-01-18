@@ -171,9 +171,9 @@ The plain text tab supports the following markups:
   </tr>
   <tr>
    <td>Order
-<p>
+<br>
 1. This is one
-<p>
+<br>
 2. This is two
    </td>
    <td>Order
@@ -188,9 +188,9 @@ The plain text tab supports the following markups:
   </tr>
   <tr>
    <td>Bullet
-<p>
+<br>
 * This is one
-<p>
+<br>
 * This is two
    </td>
    <td>Bullet
@@ -205,7 +205,7 @@ The plain text tab supports the following markups:
   </tr>
   <tr>
    <td>This is
-<p>
+<br>
 >>indented
    </td>
    <td> 
@@ -227,7 +227,7 @@ The plain text tab supports the following markups:
    <td>This is &lt;br> new line
    </td>
    <td>This is
-<p>
+<br>
 new line
    </td>
   </tr>

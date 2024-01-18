@@ -1,5 +1,5 @@
 
-# **IVR Integration**
+# IVR Integration
 
 	
 
@@ -33,7 +33,7 @@ Interactive Voice Response (IVR) systems are preferred in many leading organizat
 			
 
 
-## **Kore.ai IVR Support**
+## Kore.ai IVR Support
 
 Kore.ai XO Platform allows you to give a conversational makeover to your IVR system. It lets you build Virtual Assistants with human-like conversation capabilities and integrate them with your existing IVR system, thus taking your organization’s customer service experience to a new level.
 
@@ -56,7 +56,7 @@ The following features enable  the seamless integration of your Kore.ai VAs with
 			
 
 
-## **IVR Set Up**
+## IVR Set Up
 
 To setup IVR integration, perform the following steps:
 
@@ -96,17 +96,19 @@ The IVR Panel with Instructions is displayed.
 4.On the **Configurations** tab, perform the following steps: 
    
 
-a. Use **Kore.ai IVR Sandbox** for testing your VA. See[ Sandbox Configuration](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#ivr-sandbox)<span style="text-decoration:underline;"> </span>for more details.
-```
-Note: If you save the configuration after associating an app without enabling IVR Settings, the platform pre-populates the required settings for Sandbox.
-```
+a. Use **Kore.ai IVR Sandbox** for testing your VA. See[ Sandbox Configuration](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#ivr-sandbox) for more details.
+
+!!! note
+
+        If you save the configuration after associating an app without enabling IVR Settings, the platform pre-populates the required settings for Sandbox.
 
 b. Associate an App with the IVR channel, either by creating a new one or selecting an existing one. If you do not have any apps, a message is displayed as shown in the following screenshot.
     ![alt_text](images/ivr(5).png "image_tooltip")
 
-```
-Note: If you already have created apps, then select an app from the Select App drop-down or create a new app. See Sandbox Configuration steps to know more.
-```
+!!! note
+
+    If you already have created apps, then select an app from the Select App drop-down or create a new app. See Sandbox Configuration steps to know more.
+
 
 
 
@@ -119,16 +121,17 @@ c. Use the **WebHook URL** provided in your external application.d. Enter the de
 
 5. From the **Voice Call Properties** tab, set the configurations. 
 
+!!! note
 
-```
-Note: If you have enabled IVR Sandbox, the following settings are required to be configured on the platform. These are pre-populated if you do not enable the IVR settings. In case you have enabled the settings, ensure the values are the same as follows:
-– Enable Transcription set to Yes
-– Transcription engine source set to builtin:speech/transcribe
- – IVR Data Extraction Key set to user input
- – ASR Confidence Threshold Key set to userinput.confidence
- – ASR Threshold Confidence set to 50
-```
+    If you have enabled IVR Sandbox, the following settings are required to be configured on the platform. These are pre-populated if you do not enable the IVR settings. In case you have enabled the settings, ensure the values are the same as follows:
+    – Enable Transcription set to Yes
+    – Transcription engine source set to builtin:speech/transcribe
+    – IVR Data Extraction Key set to user input
+    – ASR Confidence Threshold Key set to userinput.confidence
+    – ASR Threshold Confidence set to 50
+
 ![alt_text](images/ivr(7).png "image_tooltip")
+
 
 
 
@@ -136,11 +139,10 @@ Note: If you have enabled IVR Sandbox, the following settings are required to be
 
 
 
+!!! note
 
+    Sandbox may not respond as expected if you use different values.
 
-```
-Note: Sandbox may not respond as expected if you use different values.
-```
 
 
 The Platform supports all UniMRCP-encoded voice-to-text services. If you select the **Enable Transcription** option for the VA, then the platform allows you to skip defining grammar during configuring IVR settings for any node (described in[ Configure Dialog Node IVR Properties](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#Configure_Dialog_Node_IVR_Properties)). 
@@ -167,12 +169,12 @@ Once you have enabled the IVR channel, configure the **Telephony Welcome Event**
 
 
 
-#### **Sandbox Configuration**
+#### Sandbox Configuration
 
+!!! note
 
-```
-Note: This option was introduced in ver 7.1 of the platform. It is not available for on-prem installation.
-```
+    This option was introduced in ver 7.1 of the platform. It is not available for on-prem installation.
+
 
 
 Kore.ai XO Platform offers an **IVR Sandbox environment** to instantly launch your VA for interactions over voice calls. This is useful when a working IVR system is not available for testing your VA over a voice channel. IVR Sandbox is an optional integration and it can coexist with your custom IVR integration.
@@ -211,7 +213,7 @@ The **Phone Number, PIN**, and **Secret** are populated in the IVR Configuration
 ![alt_text](images/ivr(25).png "image_tooltip")
 
 
-**IVR Sandbox Limitations:**
+**IVR Sandbox Limitations**:
 
 
 
@@ -238,7 +240,7 @@ You can configure IVR properties for a node in a dialog task. Click the **IVR Pr
 
 
 
-### **IVR Channel Setup**
+### IVR Channel Setup
 
 This section explains the IVR channel setup for your virtual assistant. After configuring IVR Settings at both the VA and the Dialog levels, you must configure IVR Channel for the VA. IVR channel provides a generic integration to connect VAs with IVR systems. Kore.ai XO platform generates required VXML files to be exchanged as part of the VA interaction with the end user through the IVR systems.
 
@@ -257,10 +259,10 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
 
     ![alt_text](images/ivr(22).png "image_tooltip")
 
+!!! note
 
-```
-Note: The Webhook Payload is used to test the IVR channel configuration for your VA. It can be tested using Postman.
-```
+    The Webhook Payload is used to test the IVR channel configuration for your VA. It can be tested using Postman.
+
 
 
 
@@ -365,19 +367,20 @@ The **IVR Voice Sample CURL** request is as follows:
 
 1. To generate the JWT Token, click[ here](https://developer.kore.ai/tools/jwt/). 
 
+!!! note
 
-```
-Note: For a quick overview of the JWT token, refer to Introduction to JWT tokens.
-```
+    For a quick overview of the JWT token, refer to Introduction to JWT tokens.
+
 
 2. JWT has to be passed in the IVR hook URL as a value for the query parameter “token”: 
  `https://{{host}}/ivr/hooks/{{botId}}?token={{JWT}}  `
 
 The token can also be passed as the body parameter.
 
-```
-Note: The host name, {{host}} refers to an environment URL, for example, https://bots.kore.ai. It changes based on the domain name.
-```
+!!! note
+
+    The host name, {{host}} refers to an environment URL, for example, https://bots.kore.ai. It changes based on the domain name.
+
 
 
 
@@ -399,7 +402,7 @@ You can pass data to the VA from the IVR call flow using VXML &lt;subdialog> as 
 The _endOfConversation_ variable should be processed through the data returned from the sub-dialog. If the value is true, it indicates that the dialog execution (conversation) is complete. It can be a trigger point to end the call with the user.
 
 
-### **ASR Metadata Extraction**
+### ASR Metadata Extraction
 
 	
 
@@ -463,9 +466,8 @@ In this example, the parameters like **ASR Confidence** **score**,** input mode*
     “interpretation”:”Login.”, 
     “utterance”:”Login.”}”
 
+!!! note
 
+    The information is available for the existing and new virtual assistants whose IVR channel is enabled. 
 
-```
-Note: The information is available for the existing and new virtual assistants whose IVR channel is enabled. 
-```
 

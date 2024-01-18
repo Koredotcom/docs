@@ -1,4 +1,4 @@
-# **Adding the Facebook Messenger Channel**
+# Adding the Facebook Messenger Channel
 
 To add the Facebook Messenger channel to your Virtual Assistant, you need a **Facebook Developer** account. With this account, you can configure the connection between Facebook Messenger and Kore.ai. Enabling the Facebook Messenger Channel on the Bot Builder helps your users chat with the Virtual Assistant using their **Facebook** accounts.
 

@@ -141,15 +141,15 @@ We use [https://github.com/opentraveldata/opentraveldata](https://github.com/ope
   </tr>
   <tr>
    <td>City
-<p>
+<br>
 name
    </td>
    <td>Identifies the airport name from the city name in the user utterance. If the city has multiple airports, shows the list of airports to choose from.
    </td>
    <td>Utterance: Flying to Los Angeles
-<p>
+<br>
 Response: The airport you entered seems to be ambiguous. Tell me the option you would like to choose.
-<p>
+<br>
 <em>&lt;Names of five airports in Los Angeles></em>
    </td>
   </tr>
@@ -159,7 +159,7 @@ Response: The airport you entered seems to be ambiguous. Tell me the option you 
    <td>Identifies the airport name from full airport name or partial name with the prominent keyword.
    </td>
    <td>Utterance: Flying to Heathrow
-<p>
+<br>
 Captured: London Heathrow Airport with the necessary details in the virtual assistant.
    </td>
   </tr>
@@ -169,7 +169,7 @@ Captured: London Heathrow Airport with the necessary details in the virtual assi
    <td>Identifies airport names by the International Air Transport Association (IATA) codes.
    </td>
    <td>Utterance: Flying to LHR
-<p>
+<br>
 Captured: Details of the London Heathrow Airport
    </td>
   </tr>
@@ -179,7 +179,7 @@ Captured: Details of the London Heathrow Airport
    <td>Identifies International Civil Aviation Organization (ICAO) codes.
    </td>
    <td>Utterance: Flying to EGLL
-<p>
+<br>
 Captured: Details of the London Heathrow Airport
    </td>
   </tr>
@@ -189,9 +189,9 @@ Captured: Details of the London Heathrow Airport
    <td>Identifies city abbreviations that are listed in www.geonames.org
    </td>
    <td>Utterance: Flying to LA
-<p>
+<br>
 Response: The airport you entered seems to be ambiguous. Tell me the option you would like to choose.
-<p>
+<br>
 <em>&lt;Names of five airports in LA></em>
    </td>
   </tr>
@@ -319,7 +319,7 @@ Apart from the supported companies, the virtual assistant recognizes the words s
 
 <details>
   <summary><b>List of Supported Company Names</b></summary>
-  <p>ABN AMRO<br />
+  <br>ABN AMRO<br />
     Accor<br />
     Acer<br />
     Activision Blizzard (Activision Blizzard)<br />
@@ -878,25 +878,25 @@ See a few examples in the table below.
   </tr>
   <tr>
    <td>Content, Context, or
-<p>
+<br>
 Environment Variable
    </td>
    <td><code>content.TicketNumber</code>
-<p>
+<br>
 <code>context.TicketNumber</code>
-<p>
+<br>
 <code>env.TicketNumber</code>
-<p>
+<br>
 Where the variable <code>TicketNumber</code>
-<p>
+<br>
 contains the regular expression
-<p>
+<br>
 <code>[a-zA-Z]{3}[-]\d{4}</code> as the value.
    </td>
    <td>NLP-1234
-<p>
+<br>
 or
-<p>
+<br>
 TKT-1234
    </td>
   </tr>

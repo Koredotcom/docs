@@ -1,6 +1,7 @@
 ---
 hide:
   - toc
+  - feedback
 ---
 # Experience Optimization Platform
 Learn how to use the Experience Optimization (XO) Platform that seamlessly blends conversational AI intelligence and generative AI innovation, offering you the tools to create scalable and memorable customer experiences. It empowers businesses with advanced capabilities to build engaging conversations with customers and employees. The platform is recognized as the world's most secure, credible, and scalable solution for generative and conversational AI. Using this no-code platform, you can construct intelligent virtual assistants, integrating both large language models (LLM) and generative AI capabilities to enhance customer engagement through everlasting conversations in their chosen language and communication channels.

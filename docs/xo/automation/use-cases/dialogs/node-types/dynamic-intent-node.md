@@ -1,6 +1,6 @@
 # Dynamic Intent Node
 
-The Dynamic Intent node lets you dynamically trigger any of the flows in the bot by defining the intent name using variables. The target intent can be either a Dialog Task or a FAQ. You can use this node to proactively disambiguate an intent and choose different intents based on the user or conversation context.
+The Dynamic Intent node lets you dynamically trigger any of the flows in the bot by defining the intent's display name using variables. The target intent can be either a Dialog Task or a FAQ. You can use this node to proactively disambiguate an intent and choose different intents based on the user or conversation context.
 
 In the case of linked bots associated with Universal Bots, you can also use this node to trigger flows present in any other linked bots of the corresponding Universal Bot. This feature allows you to invoke reusable or utility flows in one linked bot from another, for example, user authentication, OTP verification, etc. It simplifies switching between tasks in different linked bots of a Universal Bot.
 
@@ -8,7 +8,7 @@ In the case of linked bots associated with Universal Bots, you can also use this
 ## Key Points
 
 * The target task can be within the current bot, or if connected to a Universal Bot, it can be in any of the other linked bots of the Universal Bot.
-* You can define the name of the target intent using Context or Environment variables.
+* You can define the display name of the target intent using Context or Environment variables.
 * The platform resolves the context or environment variable during runtime to identify the target intent.
 * If the variable fails to provide a valid Dialog Task or FAQ Name, the current task will be discarded, and the Task Failure Event will be triggered.
 
@@ -45,16 +45,16 @@ In this section, you can provide **Name**, **Display Name**, and **Description**
 
 #### Target Intent Name
 
-In this section, you can define the name of the intent (Dialog Task or FAQ) that you want to switch to. Use context variable or environment variable to define the name as follows:
+In this section, you can define the display name of the intent (Dialog Task or FAQ) that you want to switch to. Use context variable or environment variable to define the display name as follows:
 
 * Context Variable – `{{context.targetTaskName}}`
 * Environment Variable – `{{env.targetTaskName}}  
-`Where `targetTaskName` is a variable that contains the target intent name as the value.
+`Where `targetTaskName` is a variable that contains the target intent's display name as the value.
 
 Example Scenarios:
 
-* **If the target intent is present within the same bot**: The variable must use a valid intent name within the bot. The target intent can be associated with a Dialog Task or FAQ. Consider the following intent names – `reset_password`, `apply_paid_leave`, or `how often should I reset my password`. In the **Target Intent Name** field, you can use either the intent name `reset_password` as static text or the context variable `{{context.targetTaskName}}` where the variable `targetTaskName` contains the intent name `reset_password` as the value.
-* **If the target intent is present in a different linked bot** (the target bot and the current bot are linked to a common Universal Bot): The variable must refer to the target linked bot name and the name of the intent within the target bot, separated by a ‘dot’. Consider the following intent names – `HRBot.apply_paid_leave`, `ITBot.reset_password`, or `ITBot.how often should I reset my password`. In the **Target Intent Name** field, you can use either the intent name `ITBot.reset_password` as static text or the context variable `{{context.targetTaskName}}` where the variable `targetTaskName` contains the intent name `ITBot.reset_password` as the value.
+* **If the target intent is present within the same bot**: The variable must use a valid display name of an intent within the bot. The target intent can be associated with a Dialog Task or FAQ. Consider the following intent display names – `reset_password`, `apply_paid_leave`, or `how often should I reset my password`. In the **Target Intent Name** field, you can use either the display name `reset_password` as static text or the context variable `{{context.targetTaskName}}` where the variable `targetTaskName` contains the display name `reset_password` as the value.
+* **If the target intent is present in a different linked bot** (the target bot and the current bot are linked to a common Universal Bot): The variable must refer to the target linked bot name and the display name of the intent within the target bot, separated by a ‘dot’. Consider the following intent names – `HRBot.apply_paid_leave`, `ITBot.reset_password`, or `ITBot.how often should I reset my password`. In the **Target Intent Name** field, you can use either the display name `ITBot.reset_password` as static text or the context variable `{{context.targetTaskName}}` where the variable `targetTaskName` contains the display name `ITBot.reset_password` as the value.
 
 
 #### Target Intent Error Transition

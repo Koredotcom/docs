@@ -7,13 +7,11 @@ You can create an assistant from scratch, enable a language for an existing assi
 
 To create an Assistant from scratch, follow the below steps:
 
-
-
 1. Log in to your Kore.ai XO Platform account.
 2. On the Virtual Assistant landing page, click **New Bot** on the top-right and select the **Start from Scratch** option.
-3. On the _Create New Bot _window, enter the Assistant details:
+3. On the _Create New Bot_ window, enter the Assistant details:
     1. **Name** – Give a name to your Assistant. For example, Banking Assistant. If the name is already used, try something else
-    2. **Select the language from the Default Bot Language drop-down** list.
+    2. **Select the language** from the **Default Bot Language** drop-down list.
     ![alt_text](images/image8.png "image_tooltip")
 
 4. If the selected language is from one of the 26 languages supported as NLU languages ([read more here](https://developer.kore.ai/docs/bots/advanced-topics/multi-lingual/multilingual-vas-components-feature-support/#NLP_Support)) then by default, the VA language will be the same as the NLU language. You can always change the NLU language to any language by clicking on the **Advanced Options** link to search and select the **NLU language** from the list of supported languages. 
@@ -23,17 +21,14 @@ To create an Assistant from scratch, follow the below steps:
 5. Once you select an NLU language, which is different from the default Bot Language, you can enable the following translation modules:
     * **User Input Translation** – This approach uses language translation services to translate the user input into a base language. The conversation is executed in the base language and the responses are auto-translated back to the user’s language using translation services. (Supported from v9.1)
 
-    * **Runtime Response Translation** – The Kore.ai XO Platform can automatically translate all the prebuilt responses as well as plain text messages to the user’s language. For this, you will need to provide your API keys for either Google Cloud Translation or Microsoft Translator service in the **Translation Configurations **section. You can also translate the content of the templated messages inside the JavaScript using the `koreUtil.AutoTranslate()` function by passing a string or a context variable. For example, <code>koreUtil.AutoTranslate(context.variable1) 
+    * **Runtime Response Translation** – The Kore.ai XO Platform can automatically translate all the prebuilt responses as well as plain text messages to the user’s language. For this, you will need to provide your API keys for either Google Cloud Translation or Microsoft Translator service in the **Translation Configurations** section. You can also translate the content of the templated messages inside the JavaScript using the `koreUtil.AutoTranslate()` function by passing a string or a context variable. For example, <code>koreUtil.AutoTranslate(context.variable1)</code>. 
         ![alt_text](images/image9.png "image_tooltip")
-        
 
+    !!! note
 
-        Note: If you select Multilingual as the NLU language option, by default the Assistant will be able to understand the user input in 100 plus languages supported by the Kore.ai XO Platform. The Multilingual NLU model is a language-agnostic model, it understands user input in 100 plus languages without the need for translation. However, you could enable Response Translation if the responses are configured in a language other than the assistant language.
+        If you select Multilingual as the NLU language option, by default the Assistant will be able to understand the user input in 100 plus languages supported by the Kore.ai XO Platform. The Multilingual NLU model is a language-agnostic model, it understands user input in 100 plus languages without the need for translation. However, you could enable Response Translation if the responses are configured in a language other than the assistant language.
 
-6.Click **Create**.
-
-
-
+6. Click **Create**.
 
 ## Adding a language to an existing Virtual Assistant
 
@@ -48,7 +43,9 @@ Even if your assistant has already been created, you can still add new languages
 3.The Platform will display all the 100 plus languages that are supported. You can click on the Configure button to enable a language.
 ![alt_text](images/image11.png "image_tooltip")
 
-Note: You can also search for a language by entering its name in the Search field.
+!!! note
+
+    You can also search for a language by entering its name in the Search field.
   
 
 
@@ -57,8 +54,11 @@ Note: You can also search for a language by entering its name in the Search fiel
 
 * **Choose the NLU Language** – Allows you to select any supported language as the NLU model to train your assistant.
 * **Select the Language Definition Mode** -You can choose any of the following options to copy the language definitions:
-    * **Basic Mode** – Lets you only copy dialog prompts and messages. 
-Note: A base language is a language that is already enabled in the assistant. You need to choose a Base Language for your assistant from which you want to copy your assistant’s data for both Basic and Advanced modes.*
+    * **Basic Mode** – Lets you only copy dialog prompts and messages.
+
+    !!! note
+
+        A base language is a language that is already enabled in the assistant. You need to choose a Base Language for your assistant from which you want to copy your assistant’s data for both Basic and Advanced modes.*
 
         ![alt_text](images/image13.png "image_tooltip")
 
@@ -75,7 +75,7 @@ Note: A base language is a language that is already enabled in the assistant. Yo
 
 
 
-    * **Manage Translations** – In case the Translation Engine is not configured, click the **Configure **link to set up the translation engine for your assistant. To learn how to enable Input Translation or Runtime Response Translation,[ refer to this article](https://developer.kore.ai/docs/bots/advanced-topics/multi-lingual/managing-translation-services/?preview=true). 
+    * **Manage Translations** – In case the Translation Engine is not configured, click the **Configure** link to set up the translation engine for your assistant. To learn how to enable Input Translation or Runtime Response Translation,[ refer to this article](https://developer.kore.ai/docs/bots/advanced-topics/multi-lingual/managing-translation-services/?preview=true). 
 
 
     ![alt_text](images/image3.png "image_tooltip")
@@ -91,8 +91,8 @@ To update an already enabled language for an assistant, follow the below steps:
 
 
 
-1. Go to** Build > Configurations > Languages**.
-2. The platform will display all the languages under the **Language Management* *section.
+1. Go to **Build > Configurations > Languages**.
+2. The platform will display all the languages under the **Language Management** section.
 3. Click on the language that is already enabled in the VA. The _Manage Language_ dialog appears, here you can:
     1. **Update the NLU language** – Updating the NLU language will need training for the virtual assistant again.
     2. **Update the dialog prompts** – You can update the language pack file and upload it to update the dialog prompts.
@@ -101,11 +101,12 @@ To update an already enabled language for an assistant, follow the below steps:
 
     ![alt_text](images/image5.png "image_tooltip")
 
-4. Click the **Update **button once all the necessary changes are made.
+4. Click the **Update** button once all the necessary changes are made.
 
-Notes:
-After you have configured a new language, to make the new language work, you must re-publish the VA. Until then, the VA continues to function with the previously published languages.
-The default Synonym library is available only for English, French, Spanish, German, and Chinese languages. However, you can add custom synonyms for any language. 
+!!! note
+
+    AfterAfter you have configured a new language, to make the new language work, you must re-publish the VA. Until then, the VA continues to function with the previously published languages. 
+    The default Synonym library is available only for English, French, Spanish, German, and Chinese languages. However, you can add custom synonyms for any language. 
 
 
 
@@ -120,17 +121,16 @@ If you have configured multiple languages for a virtual assistant, you can switc
 
 ![alt_text](images/image12.png "image_tooltip")
 
+!!! note
 
-
-
-Note: The language dropdown will display the Bot Language and NLU language for the languages where the Bot Language is not equal to NLU language. If the Bot Language and the NLU language are the same then the language drop down will display only the Bot Language.
+    The language dropdown will display the Bot Language and NLU language for the languages where the Bot Language is not equal to NLU language. If the Bot Language and the NLU language are the same then the language drop down will display only the Bot Language.
 
 
 
 
 ### Disabling/Enabling Languages
 
-Languages can be enabled or disabled by going to **Build > Configurations > Languages &lt; Standard Languages.** Use the toggle to enable/disable a language.
+Languages can be enabled or disabled by going to **Build > Configurations > Languages &lt; Standard Languages**. Use the toggle to enable/disable a language.
 
 
 
@@ -144,5 +144,6 @@ Once you have configured and enabled a language you can:
 * Disable or deactivate a language that is previously enabled for the VA. The actual language-specific data that has been added while enabling the language will continue to exist in the VA even after disabling the language. Disabling would prevent the users from talking  to the assistant in that language (can be viewed in the VA export copy).
 * If a language is disabled you can enable it again, since the data is preserved, you need not enter all the details.
 
-    
-Note: Any change in language settings needs to be published before it can take effect in the published assistant.
+!!! note
+
+    Any change in language settings needs to be published before it can take effect in the published assistant.

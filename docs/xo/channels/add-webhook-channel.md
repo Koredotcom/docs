@@ -1,4 +1,4 @@
-# **Adding WebHook as a channel**
+# Adding WebHook as a channel
 
 Webhook channel provides a generic integration framework to connect your virtual assistant with any external communication systems. Kore.ai XO Platform provides standard request and response APIs to send and receive messages in text format. The end user’s input through a voice, keypad, or any other means must be converted to plain text before sending to the Kore.ai XO Platform using the Request API.
 

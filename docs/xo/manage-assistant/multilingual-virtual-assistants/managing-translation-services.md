@@ -51,7 +51,7 @@ Here is how custom translation services work:
 
 
 1. Follow the instructions below to enable the **Custom Translation Engine** feature.
-2. You can set up the integration with your translation service APIs using the **Get **or **Post** method.
+2. You can set up the integration with your translation service APIs using the **Get** or **Post** method.
 3. Refer to your translation service documentation for the authentication mechanism, request payload, and response payload.
 4. This integration is used for translating both the user input as well as the bot responses. The platform will automatically make the following information available in the context during runtime.
 5. It will make use of the following functions while defining the request payload.

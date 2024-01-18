@@ -1,4 +1,4 @@
-# **Adding the Amazon Alexa Channel**
+# Adding the Amazon Alexa Channel
 
 The Kore.ai XO Platform supports the integration of Virtual Assistants (VA) into the **Amazon Alexa** Channel. Ensure you have an Amazon Developer account for this configuration. Additionally, Amazon Alexa should be enabled for VAs built for voice-based channels.
 

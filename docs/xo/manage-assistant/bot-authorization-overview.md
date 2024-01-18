@@ -1,4 +1,4 @@
-# **Bot Authorization Overview**
+# Bot Authorization Overview
 
 	
 
@@ -44,6 +44,11 @@ Enables web applications or web services to access protected resources using an 
 ### API Key
 
 Identification and authorization tokens generated or provided by a web application or web service are used to identify the incoming application request, and in some cases, also provide authentication for secure access. For more information, see[ Setting Up Authorization using an API Key](https://developer.kore.ai/docs/bots/advanced-topics/authorization/setting-up-authorization-using-an-api-key/).
+
+
+### Kerberos SPNEGO
+
+Enables enterprises to use Kerberos SPNEGO authentication flow to connect securely with their internal applications using this security protocol. For more information, see the [Setting Up Kerberos SPNEGO authorization profile](https://developer.kore.ai/docs/bots/advanced-topics/setting-up-the-kerberos-spnego-authorization-profile/) article.
 
 
 ## Authorization Options

@@ -1,14 +1,4 @@
-
-
-
 # Building a Virtual Assistant
-
-	
-
-		
-
-			
-
 This document describes the process of implementing a Virtual Assistant using the Kore.ai XO Platform.
 
 If you are new to the Kore.ai XO Platform and want to familiarize yourself with the terms and concepts we use, please refer to[ Concepts and Terminology](https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/).
@@ -59,7 +49,7 @@ Try to answer the following questions (some if not all):
 
 
 * **Who is the _target audience_?** Technical help VAs targeted for a tech-savvy customer need a different design when compared to VAs for a layperson, such as an airline’s customer. Hence assessing the target audience is always important.
-* **What VA_ persona_ will resonate the most with this group?** This will help define how the VA talks and acts in every situation.
+* **What VA _persona_ will resonate the most with this group?** This will help define how the VA talks and acts in every situation.
 * **What is the _purpose of the VA_?** The goal i.e. the customer query that the VA needs to address defines the endpoint of any conversation.
 * **What _pain points_ will the VA solve?** The purpose and scope of VAs are set to identify what the VA addresses and when the human agent needs to take over.
 * **What _benefits_ will the VA provide for us or our customers?** The main benefit of using a VA is time-saving. Users need not waste their time waiting for a human agent to be available for answering their query. You, as the business owner, don’t worry about not being there to cater to all customer needs.
@@ -98,7 +88,7 @@ Based on the requirements, select the type of Virtual Assistant you want to crea
 
 * **Standard VA** – Standard VAs are the most common type of virtual assistant. Using these, you can create dialogs, alerts, actions, information tasks, and knowledge graphs, as well as flows that map one task to another. For more information, refer to[ Defining a Standard Bot](https://developer.kore.ai/docs/bots/bot-builder-tool/bot-creation/defining-a-standard-bot/).
 * **Universal VA** – Universal VAs facilitate a scalable, modular approach to VA building by helping you link several Standard VAs into one. The universal VA executes the tasks and functions of the linked VAs by routing relevant utterances to them. Once you publish a universal virtual assistant, changes made in the linked VAs automatically reflect in the universal VA. As a creator or developer of a virtual assistant, you can add any VAs (published and configured) to a universal VA and access their underlying tasks and functions. When you publish a universal virtual assistant, the end users can only access the tasks that are published in the linked VAs. For more information, refer to[ Defining Universal Virtual Assistants](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/defining-universal-bots/).
-* **Template VA** – You can install one or more fully functional, end-to-end Kore.ai template VAs from the Template Store, then customize and publish to understand how to configure virtual assistants. For more information, refer to[ Store](https://developer.kore.ai/docs/bots/bot-store/store/).
+* **Template VA** – You can install one or more fully functional, end-to-end Kore.ai template VAs from the Template Store, then customize and publish to understand how to configure virtual assistants. For more information, refer to[ Bot Store](https://developer.kore.ai/docs/bots/bot-store/store/).
 
 Within this document we will use a Standard VA as a working example.
 
@@ -121,7 +111,7 @@ In the **Create New Bot** window, start by configuring the basic details of your
 1. Select **Start from Scratch**.
 2. Enter a **Name**. 
 3. Select an **icon** or click the **+** icon to upload your own. Images should be in PNG format and should not exceed 40×40 pixels. The file size is limited to 80kb. 
-4. Select the **Purpose **of your VA. See[ VA Purposes](https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/#VA_Purposes) for a complete list.
+4. Select the **Purpose** of your VA. See[ VA Purposes](https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/#VA_Purposes) for a complete list.
 5. Choose **Standard Bot** as the **Bot Type**.
 6. Select the **Default Language**.
 7. Click **Proceed** when ready. 
@@ -139,9 +129,9 @@ Generating Use Cases while creating your VA simplifies the development process b
 
 
 
-1. Add a meaningful description that clearly states the VA’s purpose and mentions some intent examples. See[ VA Purposes](https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/#VA_Purposes) for a few sample descriptions. 
+1. Add a meaningful description that clearly states the VA’s purpose and mentions some intent examples.  
 2. Click **Get Use Cases** to generate intents that will be automatically added to the VA. (You can update the Bot Name and Purpose and remove use cases.)
-3. Click **Create**to create your VA with generated use cases. 
+3. Click **Create** to create your VA with generated use cases. 
 
 
     ![alt_text](images/bva(7).png "image_tooltip")
@@ -151,9 +141,9 @@ Generating Use Cases while creating your VA simplifies the development process b
 
 #### Create a VA without Generating Use Cases
 
-By creating a VA without generating use cases, you will not have any Dialog Tasks except for the default ones in the XO Platform: the _Welcome _and _Fallback _tasks.
+By creating a VA without generating use cases, you will not have any Dialog Tasks except for the default ones in the XO Platform: the _Welcome_ and _Fallback_ tasks.
 
-After configuring the basics of your VA, you can adjust the _Bot Name_, _Purpose_, and _Description _if required. Click **Create without Use Cases** to create your VA without any generated use cases.
+After configuring the basics of your VA, you can adjust the _Bot Name_, _Purpose_, and _Description_ if required. Click **Create without Use Cases** to create your VA without any generated use cases.
 
 ![alt_text](images/bva(7).png "image_tooltip")
 
