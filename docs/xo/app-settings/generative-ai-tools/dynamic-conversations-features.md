@@ -368,7 +368,9 @@ This feature uses LLM to reiterate the recent bot responses when the Repeat Resp
 
 The Few-shot model uses Kore Ai’s hosted embeddings to train virtual assistants based on intent names and training utterances. The model identifies the intents based on semantic similarity between user and training utterances.
 
-**Note:** The Few-shot model is production-ready in English but experimental in other languages. We advise caution before using it in production for non-English languages.
+!!! note
+
+    The Few-shot model is production-ready in English but experimental in other languages. We advise caution before using it in production for non-English languages.
 
 **Usage**
 

@@ -66,10 +66,10 @@ Follow these steps:
     ![alt_text](images/cpf(3).png "image_tooltip")
 
 3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed. 
-
     ![alt_text](images/cpf(2).png "image_tooltip")
 
 Adjusting the settings allows you to fine-tune the model’s behavior to meet your needs. The default settings work fine for most cases. You can tweak the settings and find the right balance for your use case. A few settings are common in the features, and a few are feature-specific:
+
 * **Model**: The selected model for which the settings are displayed.
 * **Instructions or Context**: Add feature/use case-specific instructions or context to guide the model.
 * **Temperature**: The setting controls the randomness of the model’s output. A higher temperature, like 0.8 or above, can result in unexpected, creative, and less relevant responses. On the other hand, a lower temperature, like 0.5 or below, makes the output more focused and relevant.
@@ -309,24 +309,25 @@ This feature also helps you predict and simulate the end user’s behavior and c
 1. You can create a test suite by recording a live conversation with a VA by initiating the interaction or letting the VA initiate it.
 2. An icon displays to indicate the user input suggestions from Generative AI.
 3. The Platform triggers OpenAI or Anthropic Claude-1 based on your model selection to generate suggestions for user input where expected in English or a Non-English Bot Language.
-4. The Platform shares the following information with OpenAI/Anthropic to generate suggestions
-* Randomly picked intents from the VA (Dialog, FAQ),
-* Conversation flow,
-* Current Intent, if any,
-* Current node type:
-    * For an entity node, the system sends the following:
-        * Entity name,
-        * Entity type,
-        * Sample entity values. 
-    * Types of user input scenarios:
-        * Entities,
-        * Without entities,
-        * Different entity combinations in the user input,
-        * Digression to another intent,
-        * Trigger error scenarios.
-* You can regenerate suggestions if required.
-* You can accept the suggestions shown or type custom input at every step.
-* Create a Test Suite after stopping the recording and validating the model.
+4. The Platform shares the following information with OpenAI/Anthropic to generate suggestions.
+
+    * Randomly picked intents from the VA (Dialog, FAQ),
+    * Conversation flow,
+    * Current Intent, if any,
+    * Current node type:
+        * For an entity node, the system sends the following:
+            * Entity name,
+            * Entity type,
+            * Sample entity values. 
+        * Types of user input scenarios:
+            * Entities,
+            * Without entities,
+            * Different entity combinations in the user input,
+            * Digression to another intent,
+            * Trigger error scenarios.
+    * You can regenerate suggestions if required.
+    * You can accept the suggestions shown or type custom input at every step.
+    * Create a Test Suite after stopping the recording and validating the model.
 
 If the feature is disabled, the Platform doesn’t display the Generative AI suggestions icon and the suggestions themselves.[ Learn more.](https://developer.kore.ai/docs/bots/test-your-bot/create-a-test-suite/#Generated_User_Response_Suggestions)
 
