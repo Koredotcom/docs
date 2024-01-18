@@ -2,8 +2,8 @@
 
 You can use the Kore.ai BotKit SDK to capture and handle events in the Bots Platform for better control and customization of the user’s experience with the Virtual Assistant that you are building. The following events are supported by the BotKit SDK:
 
-* [onMessage](https://developer.kore.ai/docs/bots/sdks/sdk-events/#message)
-* [onWebhook](https://developer.kore.ai/docs/bots/sdks/sdk-events/#web)
+* [onMessage](#onUserMessage)
+* [onWebhook](#onWebHook)
 * [onAgentTransfer](https://developer.kore.ai/docs/bots/sdks/sdk-events/#agent)
 * [onEventNode](https://developer.kore.ai/docs/bots/sdks/sdk-events/#onevent)
 * [onAlertNode](https://developer.kore.ai/docs/bots/sdks/sdk-events/#onalert)
@@ -17,7 +17,7 @@ This event consists of the following two components:
 * <span style="text-decoration:underline;">onUserMessage:</span> This event is triggered when a user sends a message to the assistant and it is received by the channel adapter. The user message is wrapped in this event and sent to the SDK.
 * <span style="text-decoration:underline;">onBotMessage</span>: This event is triggered when any messages need to be sent to the user. These messages are sent to the SDK along with `context` object.
 
-### **onUserMessage**
+### onUserMessage
 
 Syntax:
 
@@ -26,24 +26,23 @@ on_user_message : function(requestId, data, callback)
 ```
 Parameters:
 
-* `requestId` – A unique ID for each message event.
+* requestId – A unique ID for each message event.
+* payload – A JSON response payload as follows:
 
-* ```
-payload – A JSON response payload as follows:
-{
+ ```{
    "message":"message sent by the assistant to the user",
    "taskId":"Dialog task Id",
    "nodeId":"current node id in the dialog flow",
    "channel":"channel name",
    "context":"context object"
-}
+    }
 ```
 
-* `callback` – The function to call at event completion used to send the updated message and context back to the XO Platform.
+* callback – The function to call at event completion used to send the updated message and context back to the XO Platform.
 
 Example: In the following code example for the onUserMessage event, the user message is evaluated for transfer to a live agent and transferred, otherwise, the message is passed on to the BotKit SDK for processing.
 
-```
+```javascript
 /*
  * OnUserMessage event handler
  */
@@ -76,41 +75,30 @@ function onUserMessage(requestId, payload, callback){
 }
 ```
 
-### **onBotMessage**
+### onBotMessage
 
 Syntax:
 
-
 ```
- on_bot_message : function(requestId, data, callback)
+on_bot_message : function(requestId, data, callback)
 ```
-
-
 Parameters:
 
-
-
-* `requestId` – A unique ID for each message event.
-
+* requestId – A unique ID for each message event.
+* payload – A JSON response payload as follows:
 
 ```
-payload – A JSON response payload as follows:
 {
    "message":"message sent to the user",
    "channel":"channel name",
    "context":"context object"
-
+}
 ```
-
-
-
-* `}`
-* `callback` – The function to call at event completion used to send the updated message and context back to the user.
+* callback – The function to call at event completion used to send the updated message and context back to the user.
 
 Example: The following code snippet onBotMessage event evaluates the user message for content and then for message tone. If the message tone is greater than or equal to 2 for the angry tone, then the communication between the user and the assistant is switched to a live agent.
 
-
-```
+```javascript
 /*
  * onBotMessage event handler
  */
@@ -138,8 +126,6 @@ function onBotMessage(requestId, payload, callback){
     }
 }
 ```
-
-
 
 ## onWebHook
 
