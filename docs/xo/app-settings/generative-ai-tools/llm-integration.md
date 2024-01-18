@@ -30,29 +30,21 @@ Steps to configure a pre-built LLM:
 2. Choose the LLM you want to configure.
     1. Steps to configure Azure OpenAI:
         1. Click **Configure Now** for Azure OpenAI. 
-
-
             ![alt_text](images/llm-integration(12).png "image_tooltip")
-
         2. On the **Authorization** tab, enter the details like **API Key** and the **User Sub Doman**. Toggle on the required **model** and enter **Deployment ID**.
         3. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
     2. Steps to configure OpenAI:
         1. Click **Configure Now** for OpenAI. 
             ![alt_text](images/llm-integration(5).png "image_tooltip")
-
         2. On the **Authorization** tab, enter the **API Key**.
         3. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
     3. Steps to configure Anthropic:
         1. Click **Configure Now** for Anthropic. 
-
-
             ![alt_text](images/llm-integration(1).png "image_tooltip")
-
         2. On the **Authorization** tab, enter the **API Key**.
         3. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
+
 3. The configured model is listed in the LLM Integrations section. The status changed to _X/Y_ models configured, where _X_ is the number of the model(s) configured, and _Y_ is the number of model(s) supported. 
-
-
     ![alt_text](images/llm-integration(10).png "image_tooltip")
 
 4. If you want to configure another model, click **+New Integration** and select the model. 
@@ -102,9 +94,9 @@ Steps to integrate a Custom LLM:
 
     ![alt_text](images/llm-integration(15).png "image_tooltip")
  
- !!! note
+ 
 
-    OAuthv2.0 and Kerberos SPNEGO auth profiles are supported for the Custom LLM integration. 
+       **Note**: OAuthv2.0 and Kerberos SPNEGO auth profiles are supported for the Custom LLM integration. 
 
 5. Click **Test**. The Request Body to test LLM Connection pop-up is displayed. 
 
