@@ -32,16 +32,14 @@ Steps to enable the feature:
 			
 
 
-## Change Settings for a Model
 
-Click the option below to see the steps:
 
 		
 
 	
 
 
-### Change Settings for a Pre-built Model
+## Change Settings for a Pre-built Model
 
 	
 
@@ -248,8 +246,9 @@ When enabled, this feature lets you add an GenAI Node to Dialog Tasks. This node
 
 **Usage**
 
-When creating or editing a Dialog Task that’s created manually or[ auto-generated](https://developer.kore.ai/docs/bots/chatbot-overview/using-the-dialog-builder-tool/#Auto-Generated_Dialog_Tasks), you can find a node called GenAI Node within your nodes list. \
- When this feature is disabled, the node is unavailable within the Dialog Builder.[ Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/genai-node/).
+When creating or editing a Dialog Task that’s created manually or[ auto-generated](https://developer.kore.ai/docs/bots/chatbot-overview/using-the-dialog-builder-tool/#Auto-Generated_Dialog_Tasks), you can find a node called GenAI Node within your nodes list. 
+
+When this feature is disabled, the node is unavailable within the Dialog Builder.[ Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/genai-node/).
 
 
 ### Answer From Documents

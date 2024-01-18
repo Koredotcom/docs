@@ -68,13 +68,15 @@ To add a new prompt, follow the steps:
     1. If the response structure matches, the responses will be in green. Click **Save**. Skip to Step 11.
 
         **Note**: Both Actual Response and Expected Response are not editable.
-    ![alt_text](images/prl(2).png "image_tooltip")
+        ![alt_text](images/prl(2).png "image_tooltip")
+    
     2. If the response structure does not match, the responses will be in red. Click **Configure** to modify the Actual Response. The Post Processor Script is displayed. 
-        ![alt_text](images/prl(12).png "image_tooltip")
+    ![alt_text](images/prl(12).png "image_tooltip")
+        
         1. Enter the **Post Processor Script**. Click **Save & Test**. 
             ![alt_text](images/prl(11).png "image_tooltip")
         2. The response is displayed. 
-            ![alt_text](images/prl(4).png "image_tooltip")
+                ![alt_text](images/prl(4).png "image_tooltip")
         3. Click **Save**. The actual response and expected response turn green.
 
 11. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section. 
