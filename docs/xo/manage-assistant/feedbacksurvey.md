@@ -1,53 +1,34 @@
 # Feedback Survey
 
-
-
 The Kore.ai XO Platform allows you to design and create feedback surveys for products, services, and overall experiences using out-of-the-box templates on the web and mobile channels. You can configure a Virtual Assistant to launch these surveys at a certain point in a conversation or at the end of a conversation (when the _end-of-conversation_ event is triggered). The **NPS**, **CSAT**, and **Like/Dislike** survey types are currently supported.
 
-		
+!!! Key Feature Highlights
 
-	
-
-**Key Feature Highlights**
-
-
-
-1. The Feedback Module is use-case and channel-agnostic. But by default, it only shows text messages. You can always add additional channel-specific prompts to collect feedback from voice channels.
-2. When a feedback survey is created on the platform, all messages are in text format. The text from the platform gets converted into a voice using the ASR and TTS engines.
-3. You can leverage channel-specific configuration to modify the feedback prompts.
-4. Feedback flows are fully customizable.
-5. The Kore.ai XO Platform lets you configure feedback in two ways:
-    * Using the built-in flows to collect the feedback and the new service type called **feedback service** to submit the feedback to the bots platform.
-    * Collecting feedback from other sources that can be pushed to the platform as part of the conversation execution.
-1. Feedback Surveys are created as dialog tasks with a series of entities, service calls, and message notes. You have complete control of modifying the out-of-the-box messages, adding additional messages to specific channels, such as voice channels, and capturing the feedback on voice.
-2. You can use the automatic feedback template that the platform generates or build their flows and submit the feedback to the platform feedback service. Alternatively, it could be a hybrid approach where the feedback flow can emerge from or integrate with another flow.
-3. Once a customer responds to a Feedback Survey, the event displays on the chat transcript slider of the Conversations History Dashboard.[ Learn more](https://developer.kore.ai/docs/bots/analyzing-your-bot/feedback-analytics/).
-4. Additionally, you can filter and analyze Conversations (with feedback survey enabled) based on the Feedback Type, Response, and Score using prebuilt and custom filters.[ Learn more](https://developer.kore.ai/docs/bots/analyzing-your-bot/conversation-history-dashboard/#Prebuilt_Filters_for_Conversations_History).
-5. The feedback response from a customer is captured and pushed to the platform for further analysis in three ways:
-    * By creating a **Dialog** to capture feedback responses/scores and generate the required analytics to derive actionable insights on the **Feedback Analysis Dashboard**.[ Learn more](https://developer.kore.ai/docs/bots/analyzing-your-bot/feedback-analytics/).
-    * By pushing feedback data to the platform using the Public API.[ Learn more](https://developer.kore.ai/docs/bots/api-guide/feedback-survey-api/).
-    * By pushing feedback data via the Botkit.[ Learn more](https://developer.kore.ai/docs/bots/sdks/using-the-botkit-sdk/#Feedback_Survey).
-1. In addition to the primary survey question, you can configure a **Follow-up Question** for negative feedback to gather specific details and better understand any primary survey issues.
-2. Additionally, you can set an Acknowledgement Message to customers after they complete the survey to show appreciation and let them know that it has been received.
-
-	
-
-		
-
-			
+    1. The Feedback Module is use-case and channel-agnostic. But by default, it only shows text messages. You can always add additional channel-specific prompts to collect feedback from voice channels.
+    2. When a feedback survey is created on the platform, all messages are in text format. The text from the platform gets converted into a voice using the ASR and TTS engines.
+    3. You can leverage channel-specific configuration to modify the feedback prompts.
+    4. Feedback flows are fully customizable.
+    5. The Kore.ai XO Platform lets you configure feedback in two ways:
+        * Using the built-in flows to collect the feedback and the new service type called **feedback service** to submit the feedback to the bots platform.
+        * Collecting feedback from other sources that can be pushed to the platform as part of the conversation execution.
+    6. Feedback Surveys are created as dialog tasks with a series of entities, service calls, and message notes. You have complete control of modifying the out-of-the-box messages, adding additional messages to specific channels, such as voice channels, and capturing the feedback on voice.
+    7. You can use the automatic feedback template that the platform generates or build their flows and submit the feedback to the platform feedback service. Alternatively, it could be a hybrid approach where the feedback flow can emerge from or integrate with another flow.
+    8. Once a customer responds to a Feedback Survey, the event displays on the chat transcript slider of the Conversations History Dashboard.[ Learn more](../../analytics/automation/feedback-dashboard/){:target="_blank"}.
+    9. Additionally, you can filter and analyze Conversations (with feedback survey enabled) based on the Feedback Type, Response, and Score using prebuilt and custom filters.[ Learn more](../../xo/analytics/automation/conversations-history/#prebuilt-filters-for-conversations-history){:target="_blank"}.
+    10. The feedback response from a customer is captured and pushed to the platform for further analysis in three ways:
+        * By creating a **Dialog** to capture feedback responses/scores and generate the required analytics to derive actionable insights on the **Feedback Analysis Dashboard**.[ Learn more](../../analytics/automation/feedback-dashboard/){:target="_blank"}.
+        * By pushing feedback data to the platform using the Public API.[ Learn more](../../apis/fetch-feedback-survey-scores){:target="_blank"}.
+        * By pushing feedback data via the Botkit.[ Learn more](https://developer.kore.ai/docs/bots/sdks/using-the-botkit-sdk/#Feedback_Survey){:target="_blank"}.
+    11. In addition to the primary survey question, you can configure a **Follow-up Question** for negative feedback to gather specific details and better understand any primary survey issues.
+    12. Additionally, you can set an Acknowledgement Message to customers after they complete the survey to show appreciation and let them know that it has been received.
 
 
 ## Navigating to Feedback Survey
 
 To navigate to the Feedback Survey feature, follow the steps below:
 
-
-
 1. On the Bot Builder, click the **Build** tab.
 2. Navigate to **Configurations** > **Feedback Survey** on the left navigation menu.
-
-
-
 
     ![alt_text](images/fs5.png "image_tooltip")
  		
