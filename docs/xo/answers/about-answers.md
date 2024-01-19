@@ -4,7 +4,7 @@ hide:
   - feedback
 ---
 # About Answers
-Deliver AI-powered conversation search experience for your users by seamlessly engaging them with intelligent virtual assistants. Add multiple data sources for building your search index, including website crawlers, structured data, unstructured documents, catalogs, FAQs, and knowledgebases. A combination of automation Use Cases and Answers can deliver exceptional conversational experiences for your users.
+The Answers module offers conversational search tools to quickly and accurately retrieve information from vast datasets. Deliver AI-powered conversation search experience for your users by seamlessly engaging them with intelligent virtual assistants. Add multiple data sources for building your search index, including website crawlers, structured data, unstructured documents, catalogs, FAQs, and knowledgebase. A combination of automation Use Cases and Answers can deliver exceptional conversational experiences for your users.
 
 <kr-grid type="g2">
     <kr-grid-item>
