@@ -1,4 +1,4 @@
-# **Adding the Google Assistant channel**
+# Adding the Google Assistant channel
 
 !!! important
 

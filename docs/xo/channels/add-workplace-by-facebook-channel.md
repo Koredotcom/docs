@@ -1,4 +1,4 @@
-# **Adding the Workplace by Facebook Channel**
+# Adding the Workplace by Facebook Channel
 
 This channel enablement flow is modified as per the changes implemented by Facebook post v7.2 of the product.
 

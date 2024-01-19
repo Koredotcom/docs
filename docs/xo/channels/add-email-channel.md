@@ -1,4 +1,4 @@
-# **Adding the Email Channel**
+# Adding the Email Channel
 
 When you add the email channel to your VA, Kore.ai automatically generates the email address that the end-users can send an email for communications with your assistant. By default, the email address syntax is **&lt; bot name >.kore@m.&lt; kore host >**. For example, **myemail.kore@m.app-bots.kore.com**. Optionally, you can click **Change** to add a custom name, such as **MyBot.kore@m.app-bots.kore.com.**
 

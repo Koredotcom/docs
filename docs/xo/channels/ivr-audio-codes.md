@@ -1,4 +1,4 @@
-# **Adding the IVR-AudioCodes Channel**
+# Adding the IVR-AudioCodes Channel
 
 You can connect your assistant to AudioCodes using a Webhook based integration. Before you begin, please ensure that you have administration access to your AudioCodes account.
 

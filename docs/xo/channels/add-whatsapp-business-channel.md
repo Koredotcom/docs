@@ -1,4 +1,4 @@
-# **Adding the WhatsApp Business Messaging Channel**
+# Adding the WhatsApp Business Messaging Channel
 
 
 ## Adding the WhatsApp Channel using Infobip Application

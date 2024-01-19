@@ -1,4 +1,4 @@
-# **Adding the Zoom Contact Center Channel**
+# Adding the Zoom Contact Center Channel
 
 **Zoom Contact Center (ZCC)** is an automation solution for enterprises to manage customer interactions across voice and chat channels. It enables chat automation through Asynchronous Webhook Integration. The **Kore.ai XO Platform** now supports the Zoom Contact Center channel to integrate virtual assistants for rich and asynchronous messaging experiences.
 

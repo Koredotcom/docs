@@ -1,4 +1,4 @@
-# **Adding the Slack Channel**
+# Adding the Slack Channel
 
 To set up Slack as a channel, you must associate the assistant with a Slack app. Adding the Slack channel to your Kore.ai VA allows end-users to interact with it using their _Slack_ accounts.
 
