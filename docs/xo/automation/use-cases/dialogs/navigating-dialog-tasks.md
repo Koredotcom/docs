@@ -10,7 +10,6 @@
         "Virtual Assistant", "VA" and "Bot" refer to the same concept and are used interchangeably.
 
 
-
 ## Introduction
 
 This article takes you through the major features you can access via the Dialog Builder.
@@ -26,8 +25,6 @@ The purpose of the Dialog Builder is to combine human interaction and business l
 
 Here are a few other ways in which the Dialog Builder can benefit your organization:
 
-
-
 * Simplifies and streamlines VA development by providing access to tools and connecting to a wide variety of services.
 * Facilitates the application of business processes to Conversational VA Development.
 * Encourages innovation through clear, collaborative processes to Design, Build and Train AI-powered, Conversational Virtual Assistants.
@@ -35,22 +32,14 @@ Here are a few other ways in which the Dialog Builder can benefit your organizat
 
 ## Explore Dialog Tasks 
 
-You can access Dialog Tasks by going to: **Build > Virtual Assistants > Conversation Skills > Dialog Tasks**. Alternatively, you can find the list of existing Dialog Tasks under **Build > Virtual Assistants > Conversation Skills > Storyboard > Dialog Tasks.**
+You can access Dialog Tasks by going to: **Automation > USE CASES > Dialogs**.
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
+<img src="../images/navigate-dialog.png" alt="Navigate to Dialogs" title="Navigate to Dialogs" style="border:1px solid gray; zoom:60%;">
 
 
 ## The Dialog Tasks List
 
-Moving forward, this article will be working with Dialog Tasks by navigating to **Build > Virtual Assistants > Conversation Skills > Dialog Tasks**. The first page you see here is the list of existing Dialog Tasks. Let us now go through the features that you can access from this page.
-
-
+The first page you see here is the list of existing Dialog Tasks. Let us now go through the features that you can access from this page.
 
 * **See basic information about each dialog task**, at-a-glance. This includes the task name, description, last update date, and status.  
   
@@ -72,7 +61,7 @@ Moving forward, this article will be working with Dialog Tasks by navigating to 
             Starting with version 9.0 of the Kore.ai XO Platform, newly created tasks will use the new, Conversation-Driven Builder.
 
 * **Quick Start Guide** – If you are just getting started using the Kore.ai XO Platform, we recommend that you take a look at this guide, which will show you the basics of working with the Dialog Builder.
-* **Talk to Bot** – This is where you can easily test your VA, by simulating an interaction between a user and your VA.
+* **Test** – This is where you can easily test your VA, by simulating an interaction between a user and your VA.
 
 
 ## Dialog Task Options
@@ -85,22 +74,22 @@ There are scenarios where you may need to create two similar dialog tasks with m
 To clone a dialog task, follow the below steps:
 
 * **Open the VA** in which you want to clone the dialog task.
-* Select the **Build** tab from the top menu.
-* From the left menu, click **Conversation Skills -> Dialog Tasks**.
+* Select the **Automation** option from the left menu.
+* From the left menu, click **USE CASES > Dialogs**.
 * On the Dialog Tasks page, hover over the dialog you want to clone and click the **Clone** icon.  
   
-    <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>  
-    
-    ![alt_text](images/image3.png "image_tooltip")
+    <img src="../images/clone-dialog-icon.png" alt="Clone Dialog" title="Clone Dialog" style="border:1px solid gray; zoom=60%;">
 
 * On the **Clone a Dialog** window, enter a name in the **Intent Name** field.
-* Optionally, you can add a **Description** and set options for the task to be independent, a **Sub-intent dialog** or **Hide it from Help.**
-* Also optionally, you can adjust **Intent Training**, set **Intent Preconditions** or define **Context Output**.
-* Click **Clone**.  
+* Optionally, you can add a **Description**.
+* You can choose whether the cloned dialog will be available to the end customer **(Customer Use Case)** and/or in Agent Assist **(AgentAssist Use Case)**. 
+* Under **Intent Settings**,set options for the task to be independent, a **Sub-intent dialog** or **Hide it from Help.**
+* Under **Analytics - Containment type**, you can choose between **Abandonment as Self Service** and **Abandonment as Drop Off**.
+* Also optionally, you can adjust **Conversation Context**, set **Intent Preconditions** or define **Context Output**.
+* **{{Placeholder - Explore Integrations}}**
+* Click **Proceed**.  
   
-    <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>  
-    
-    ![alt_text](images/image4.png "image_tooltip")
+    <img src="../images/clone-dialog-options.png" alt="Clone Dialog - Options" title="Clone Dialog - Options" style="border:1px solid gray; zoom=60%;">
 
 
 #### Cloned Task Properties
@@ -132,15 +121,11 @@ To delete a Dialog Task:
 1. Hover over the task in the Dialog Tasks List.
 2. Click the **Delete** icon.  
   
-    <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>  
+    <img src="../images/delete-dialog-icon.png" alt="Delete Dialog" title="Delete Dialog" style="border:1px solid gray; zoom=60%;">
 
-      ![alt_text](images/image5.png "image_tooltip")
-
-3. If you are sure that you want to delete this task, then please click **OK** in the confirmation window. Otherwise, please click **Cancel**.  
+3. If you are sure that you want to delete this task, then please click **Delete** in the confirmation window. Otherwise, please click **Cancel**.  
   
-    <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>  
-      
-      ![alt_text](images/image6.png "image_tooltip")
+    <img src="../images/delete-dialog-confirmation.png" alt="Delete Dialog - Confirmation" title="Delete Dialog - Confirmation" style="border:1px solid gray; zoom=60%;">
 
 
 ### More Options
@@ -149,12 +134,12 @@ Please see the articles linked below for information on:
 
 * [Dialog Settings](../using-the-dialog-builder-tool/#dialog-settings){:target="_blank"},
 * [Manage Interruptions](../../../intelligence/conversation-management/manage-interruptions){:target="_blank"},
-* [Amend Behavior.](../../../natural-language/nlu-configurations/amend-entities){:target="_blank"}
+* [Manage Ammend Behavior.](../../../natural-language/nlu-configurations/amend-entities){:target="_blank"}
 
 
 ## Conversation Design, Logic Building & Training
 
-The Conversation Designer and Dialog Builder is where you can design, build, train and test the conversations that your VA can have with your users.
+The Dialog Builder is where you can design, build, train and test the conversations that your VA can have with your users.
 
 You can access them by creating a new Dialog Task or by opening an existing one.
 
@@ -162,13 +147,7 @@ You can access them by creating a new Dialog Task or by opening an existing one.
 
         This guide is applicable for the new, Conversation-Driven Dialog Builder. If your tasks are using the previous version, please consider upgrading.
 
-The Dialog Task development process consists in three main stages:
-
-* **Design**: Where you can design your conversation flow using natural language.
-* **Build**: This is where you can add business logic to your conversation.
-* **Train**: Once you are done creating your conversation flow, you can train your VA on it, using this section of the Dialog Builder.
-
-Let us look at each of these areas in detail.
+You can build Dialogs by adding and configuring [nodes](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/nodes-transitions/){:target="_blank"} in the required sequence as per business logic in the Dialog Builder.
 
 
 ### Design the Conversation Flow
