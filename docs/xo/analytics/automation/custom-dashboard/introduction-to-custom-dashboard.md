@@ -172,7 +172,6 @@ Apart from these if you have defined any Custom/Meta Tags for your VA, you can u
 For example, to obtain the count of a specific FAQ, the following details are entered in the query setup. 
 
 <code>taskName = 'What account privileges does an authorized user have?' <strong>and </strong>metricType = successtasks<em>.
-
 </em></code>While conjugating multiple conditions, they would be evaluated left to right, and this ordering cannot be changed using parentheses ()
 
 !!! note

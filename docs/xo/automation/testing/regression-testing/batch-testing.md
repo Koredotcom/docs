@@ -49,7 +49,7 @@ To add a new test suite, follow the steps below:
 2. In the **New test Suite** window, add a **name** and provide a **description**.
 3. Next, choose how to add test cases: either manually or by uploading a test case file.
     * Selecting **Add Manually** lets you add test cases manually or use LLM and Generative AI to generate test cases automatically.
-    * Selecting **Upload Test Cases File** lets you upload a file containing test cases.  
+    * Selecting **Choose how to add test cases** lets you upload a file containing test cases.  
     <img src="../images/batch-testing-4-newtest.png" alt="BT - New Test Suite Details" title="BT - New Test Suite Details" style="border: 1px solid gray; zoom:50%;"/>
     
     
@@ -87,9 +87,9 @@ You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utteranc
 
 You can automatically generate batch test cases if you have enabled [LLM and Generative AI ](https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/){:target="_blank"} for your Virtual Assistant. You can access the feature either right after creating a new test case, as shown above, or from the test cases list.
 
-<img src="../images/batch-testing-9-goto-generate-test-cases.png" alt="Generating test cases automatically" title="Generating test cases automatically" style="border: 1px solid gray; zoom:50%;"/> 
+<img src="../images/batch-testing-9-goto-generate-test-cases-1.png" alt="Generating test cases automatically" title="Generating test cases automatically" style="border: 1px solid gray; zoom:50%;"/> 
 
-
+<img src="../images/batch-testing-9-goto-generate-test-cases-2.png" alt="Generating test cases automatically" title="Generating test cases automatically" style="border: 1px solid gray; zoom:50%;"/> 
 
 #### Steps to Generate Test Cases
 
@@ -791,7 +791,7 @@ table, th, td {
 3. To import the Dataset file, click **Choose File** to locate and select a JSON or CSV file containing the utterances as per the Dataset Type selected.  
 <img src="../images/batch-testing-13-new-test-suite-1-2.png" alt="Importing a Dataset file" title="Importing a Dataset file" style="border: 1px solid gray; zoom:50%;"/> 
 
-4. Click **Create**. The dataset file is displayed as an option to run the test suite on the Batch Testing page:
+4. Click **Proceed**. The dataset file is displayed as an option to run the test suite on the Batch Testing page:
 
 
 ### Running Test Suites
