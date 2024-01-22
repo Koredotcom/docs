@@ -33,7 +33,7 @@ For development purposes, you may also use the WeChat Sandbox environment to int
     * _Access Token_
 5. Update the **WeChat Sandbox portal page** with the above URL and access token and **Save** the details
 6. **Enable** the weChat channel from the XO Platform.
-<img src="../images/wechat.png" alt="wechat channel configuration" title="wechat channel configuration" style="border: 1px solid gray; zoom:70%;">
+<img src="../channels/images/wechat.png" alt="wechat channel configuration" title="wechat channel configuration" style="border: 1px solid gray; zoom:70%;">
 
 
 After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).

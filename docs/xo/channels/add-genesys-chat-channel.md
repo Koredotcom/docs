@@ -38,26 +38,26 @@ A **Bot Connector service** enables your bot to exchange messages with the _Gene
     * Navigate to **Admin** > **Integrations** on the left menu.
     * Click the **Configuration** tab.
     * On the Kore.ai XO Platform, navigate to **Deploy** > **Channels** > **Genesys Chat**.
-    <img src="../images/genesys-1.png" alt="genesys chat" title="genesys chat" style="border: 1px solid gray; zoom:70%;">
+    <img src="../channels/images/genesys-1.png" alt="genesys chat" title="genesys chat" style="border: 1px solid gray; zoom:70%;">
 
     * Copy the **Webhook URL** from the **Configurations** section.
     * Paste it in the **Value** field of the **Properties** section under **Configuration** on the **Genesys Chat** Portal.
-    <img src="../images/genesys-2.png" alt="Properties " title="Properties" style="border: 1px solid gray; zoom:70%;">
+    <img src="../channels/images/genesys-2.png" alt="Properties " title="Properties" style="border: 1px solid gray; zoom:70%;">
     * In the **Genesys Cloud login URL** field under **Configuration**, provide the URL of your Genesys AWS Region which will allow the platform to correctly route the conversation requests. This is a **mandatory field.** You can find the URL of your region through the link provided with the field.
-    <img src="../images/genesys-3.png" alt="mandatory configuration" title="mandatory configuration " style="border: 1px solid gray; zoom:70%;">
+    <img src="../channels/images/genesys-3.png" alt="mandatory configuration" title="mandatory configuration " style="border: 1px solid gray; zoom:70%;">
 3. Create an app on the Kore.ai XO platform. A JWT Token is created with the _clientId_ and _clientSecret_ credentials. To create an app, follow the steps below:
     * Click the **Create App** link under the **Configurations** section of the **Genesys Chat** Channel.
-    <img src="../images/genesys-4.png" alt="genesys configuration" title="genesys configuration" style="border: 1px solid gray; zoom:70%;">
+    <img src="../channels/images/genesys-4.png" alt="genesys configuration" title="genesys configuration" style="border: 1px solid gray; zoom:70%;">
     * Follow the steps mentioned [here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel/).
     **Note**: Select _HS256_ for **JWT Signing Algorithms Used For Client App Authentication**.
     * Copy the **_Client Secret_** value of the app you’ve created.
     *  Navigate to the **Configuration** > **Credentials** page, and click **Change**.
-    <img src="../images/genesys-5.png" alt="genesys credentials" title="genesys credentials" style="border: 1px solid gray; zoom:70%;">
+    <img src="../channels/images/genesys-5.png" alt="genesys credentials" title="genesys credentials" style="border: 1px solid gray; zoom:70%;">
     * Paste the copied **_Client Secret_** in the **Value** field when the **Change Credentials** window appears.
     * Click **OK**.
-    <img src="../images/genesys-6.png" alt="change credentials" title="change credentials" style="border: 1px solid gray; zoom:70%;">
+    <img src="../channels/images/genesys-6.png" alt="change credentials" title="change credentials" style="border: 1px solid gray; zoom:70%;">
     * Once you paste all the required credentials, click **Authorize** to validate the authorization.
-    <img src="../images/genesys-1.png" alt="authorize " title="authorize " style="border: 1px solid gray; zoom:70%;">
+    <img src="../channels/images/genesys-1.png" alt="authorize " title="authorize " style="border: 1px solid gray; zoom:70%;">
 
     Your Bot Connector is created successfully!
 
@@ -71,15 +71,15 @@ To create an inbound message flow after connecting your VA to the Bot Connector,
 3. Click the Add button.
 4. In the **Create ‘Inbound Message Flow’** window, enter the values for the required fields.
 5. Click **Create Flow**.
-<img src="../images/genesys-1.png" alt="create flow" title="create flow" style="border: 1px solid gray; zoom:70%;">
+<img src="../channels/images/genesys-1.png" alt="create flow" title="create flow" style="border: 1px solid gray; zoom:70%;">
 6. After creating the Inbound Message Flow, follow the steps below:
     * Click the flow you’ve created in the list.
     * Click the **Initial State** icon on the top menu.
     * Select the **Call Bot Connector** option by navigating to **Start** > **Toolbox** > **Bot**.
-    <img src="../images/genesys-9.png" alt="call bot connector" title="call bot connector" style="border: 1px solid gray; zoom:70%;">
+    <img src="../channels/images/genesys-9.png" alt="call bot connector" title="call bot connector" style="border: 1px solid gray; zoom:70%;">
     * Select the bot connector and the relevant Bot from the list.
     * Enter values for the given fields.
-    <img src="../images/genesys-10.png" alt="genesys details" title="genesys details" style="border: 1px solid gray; zoom:70%;">
+    <img src="../channels/images/genesys-10.png" alt="genesys details" title="genesys details" style="border: 1px solid gray; zoom:70%;">
 
 7. Click **Publish** on the top panel.
 
@@ -96,7 +96,7 @@ After creating the inbound messaging flow, you should configure and deploy the m
   6. For **Select your Architect Flow**, select your Message Flow created in the previous step.
   7. Click **Save**.
   The system routes the message sent by the user via the **Genesys Messenger** to the message flow.
-  <img src="../images/genesys-11.png" alt="genesys messenger" title="genesys messenger" style="border: 1px solid gray; zoom:70%;">
+  <img src="../channels/images/genesys-11.png" alt="genesys messenger" title="genesys messenger" style="border: 1px solid gray; zoom:70%;">
 
   8. Paste the script generated in the messenger deployment on the HTML page where you want to add the **Genesys Messenger**.
   ![paste script](./images/genesys-12.png "paste script")

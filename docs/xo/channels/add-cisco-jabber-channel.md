@@ -17,7 +17,7 @@ To add the Cisco Jabber channel, follow the below steps:
 6. Capture the **POST URL** details from your Jabber app and enter them in the **POST URL** field.
 7. You can also optionally generate and capture the **Access Token **details from your Jabber integration and enter in the** Access Token field** to enable secure communication between Jabber and the VA.
 8. Select **Yes** and click **Save** to enable Jabber Channel.
-<img src="../images/add-jabber.png" alt="add jabber" title="add jabber" style="border: 1px solid gray; zoom:70%;">
+<img src="../channels/images/add-jabber.png" alt="add jabber" title="add jabber" style="border: 1px solid gray; zoom:70%;">
 
 
 After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
