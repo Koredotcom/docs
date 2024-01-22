@@ -28,17 +28,17 @@ To avoid repeatedly filtering your choices, you can create and save multiple fil
 
 1. Click the **Filter** button.
 
-    <img src="../images/create-filter-1_qa.png" alt="Create Filters 1 QA" title="Create Filters 1 QA" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-filter-1.png" alt="Create Filters 1" title="Create Filters 1" style="border: 1px solid gray; zoom:80%;">
 
 
 2. Click **New Filter**.
 
-    <img src="../images/create-filter-2_qa.png" alt="Create Filters 2 QA" title="Create Filters 2 QA" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-filter-2.png" alt="Create Filters 2" title="Create Filters 2" style="border: 1px solid gray; zoom:80%;">
 
 
 3. Select the Queues, Channels, Direction, and Agents.
 
-    <img src="../images/create-filter-3_qa.png" alt="Create Filters 3 QA" title="Create Filters 3 QA" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-filter-3.png" alt="Create Filters 3" title="Create Filters 3" style="border: 1px solid gray; zoom:80%;">
 
  
 Select from the below available options:
@@ -51,7 +51,7 @@ Select from the below available options:
 
 5. On the pop-up window, enter a name for the filter and click **Save & Apply**.
 
-    <img src="../images/create-filter-4_qa.png" alt="Create Filters 4 QA" title="Create Filters 4 QA" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-filter-4.png" alt="Create Filters 4" title="Create Filters 4" style="border: 1px solid gray; zoom:80%;">
 
 
 A confirmation message is displayed, and the filter is created.
