@@ -1,6 +1,6 @@
 # Knowledge Graph Terminology
 
-This article explains the terminology for [building a Knowledge Graph](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/creating-a-knowledge-graph/) within the XO Platform. This terminology applies to both the Few-Shot and the Ontology KG Models unless otherwise specified. [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ontology/).
+This article explains the terminology for <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/build-a-knowledge-graph/" target="_blank">Building a Knowledge Graph</a> within the XO Platform. This terminology applies to both the Few-Shot and the Ontology KG Models unless otherwise specified. <a href=" https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-overview/" target="_blank">Learn more</a>.
 
 ## Terms or Nodes
 
@@ -56,23 +56,23 @@ Functionally, there are three types of Terms/Nodes.
 
 ## Tags
 
-For each term/node, you can add custom [tags](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/#Tags). Tags work exactly like terms but are not displayed in the Knowledge Graph ontology to avoid clutter. You can add synonyms and traits to tags as you do to terms.
+For each term/node, you can add custom <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-terminology/#tags" target="_blank">tags</a>. Tags work exactly like terms but are not displayed in the Knowledge Graph ontology to avoid clutter. You can add synonyms and traits to tags as you do to terms.
 
 ## Synonyms
 
-The Knowledge Graph allows you to add [Synonyms](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/#Synonyms) for terms to include all possible alternative forms. Adding synonyms reduces the need for training the VA with alternative questions.
+The Knowledge Graph allows you to add <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-terminology/#synonyms" target="_blank">Synonyms</a> for terms to include all possible alternative forms. Adding synonyms reduces the need for training the VA with alternative questions.
 
 For example, the reservation node in our previously-mentioned Travel Assistant may have the following synonyms added to it: booking, order, purchase, etc. 
 
-## Synonym Types
+### Synonym Types
 
 When you add a synonym for a term or a tag in the Knowledge Graph, you can add it as a local or global synonym. Local synonyms (or **_Path Level Synonyms_**) apply to the term only in that particular path, whereas global synonyms (or **_Knowledge Graph Synonyms_**) apply to the term even if it appears on any other path in the ontology.
 
 After v. 7.2 of the XO Platform, you can also use **_Bot Synonyms_** inside the Knowledge Graph engine for path qualification and question matching. With this setting, you need not recreate the same synonyms in Bot Synonyms and KG Synonyms.
 
-### Traits
+## Traits
 
-A trait is a collection of typical end-user utterances that define the nature of a question. [Learn more](https://developer.kore.ai/docs/bots/nlp/traits/).
+A trait is a collection of typical end-user utterances that define the nature of a question. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/traits/" target="_blank">Learn more</a>.
 
 A trait is applied to multiple terms across your Bot Ontology.
 
@@ -82,7 +82,7 @@ A trait is applied to multiple terms across your Bot Ontology.
 <li>If the utterance is present in any other node to which the trait is not applied, the node is ignored.</li></ul></p>
 </div>
 
-### Intents
+## Intents
 
 A VA can respond to a given question with an FAQ or the execution of a Dialog Task.
 

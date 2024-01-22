@@ -25,19 +25,18 @@ To add an FAQ, follow the below steps:
 4. (Optional) Enter a **Display Name** to represent the FAQ to the end-users.
 5. In the **Add Question** field, enter the question that describes the user’s query.
 6. (Optional) If there are alternatives to the same question, add them in the **Add Alternate FAQ** field. Repeat the step for all the alternative questions you want to add.
-7. (Optional) Use patterns to define the FAQs. This can be done by preceding the pattern with || (two vertical bars) in the alternate question field. The Platform marks these as patterns and evaluates them accordingly. [Learn More](https://developer.kore.ai/docs/bots/how-tos/how-to-use-patterns-for-intents-entities/).
+7. (Optional) Use patterns to define the FAQs. This can be done by preceding the pattern with || (two vertical bars) in the alternate question field. The Platform marks these as patterns and evaluates them accordingly. <a href=" https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/" target="_blank">Learn more</a>.
 8. (Optional) Add terms that enable the Knowledge Graph Engine to identify questions more effectively.
 9. (Optional) Enable or disable the **Intent Status** for the FAQ intents. The Knowledge Graph does not use the FAQs intents that are enabled. These intents do not participate in the intent recognition process during testing and end-user interaction.
 10. (Optional) Enable or disable the **Term Status**. The Knowledge Graph uses only the enabled terms. The disabled terms and all their FAQ intents do not participate in the intent recognition process during testing and end-user interaction.
 11. (Optional) Add a **Reference Id**. This field is used to reference any external content used as a source for this FAQ.
 <img src="../images/add-faq-form.png" alt="add faq form" title="add faq form" style="border: 1px solid gray; zoom:75%;">
 
-As you enter these questions, pay attention to terms that you can further add to your FAQ hierarchy. [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/creating-a-knowledge-graph/?preview_id=18007&preview_nonce=70f4e3338c&post_format=standard&_thumbnail_id=-1&preview=true#).
-
+As you enter these questions, pay attention to terms that you can further add to your FAQ hierarchy. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-terminology/#terms-or-nodes" target="_blank">Learn more</a>.
 
 ## Manage Bot Responses
 
-For the FAQ Response, you can compose a simple or complex channel-specific reply. The editor is like any other prompt editor on the Platform, for example, messages for dialog nodes. [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/). 
+For the FAQ Response, you can compose a simple or complex channel-specific reply. The editor is like any other prompt editor on the Platform, for example, messages for dialog nodes. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/prompt-editor/#prompt-editor" target="_blank">Learn more</a>.
 
 You can add channel-specific responses to questions in your Knowledge Graph. By creating varying responses with different language and formatting options, you can leverage the dynamic responses on the selected channels. 
 
@@ -62,9 +61,9 @@ When the Knowledge Graph you are trying to build is large and complex, it's impo
 
 Adding FAQs from an existing source is the most effective method to implement in this case. The different ways to accomplish this include the following:
 
-* Use the Knowledge Graph Generator to generate Knowledge Graph from a FAQ list and import it to your VA. [See here for the steps](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/generation-of-ontology/).
-* Select the **Import** option to import a Knowledge Graph exported from another VA. [See here for more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/importing-the-bot-ontology-from-csv-or-json/).
-* Leverage an existing list of Q&As from **Knowledge Extraction** to populate the Questions and Responses. [See here for more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-extraction-service/).
+* Use the Knowledge Graph Generator to generate Knowledge Graph from a FAQ list and import it to your VA. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/generate-a-knowledge-graph/" target="_blank">Learn more</a>.
+* Select the **Import** option to import a Knowledge Graph exported from another VA. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/import-and-export-knowledge-graph/#import" target="_blank">Learn more</a>.
+* Leverage an existing list of Q&As from **Knowledge Extraction** to populate the Questions and Responses. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-extraction/" target="_blank">Learn more</a>.
 
 ## Move FAQs Between Nodes
 

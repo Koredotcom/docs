@@ -59,7 +59,7 @@ In the **Standard Response** section, the standard bot responses are categorized
 
 <ol start="6"><li>In the bot <b>Response</b> editor, you can override the default Bot Response for this channel using basic editor controls on the <b>Simple Mode</b> tab, or write custom JavaScript for the response on the <b>Advanced Mode</b> tab as follows:</li></ol>
 
-  * **Simple Mode** – Enter the text for the default standard response. For example, *There* you are, I was ~hoping~ you would return soon! and then optionally, format the text using the formatting buttons for bold, italics, header styles, hyperlinks, ordered and unordered lists, and inserting a line. For more information, refer to [Using the Prompt Editor](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/).
+  * **Simple Mode** – Enter the text for the default standard response. For example, *There* you are, I was ~hoping~ you would return soon! and then optionally, format the text using the formatting buttons for bold, italics, header styles, hyperlinks, ordered and unordered lists, and inserting a line. For more information. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/prompt-editor/#prompt-editor" target="_blank">Learn more</a>.
   * **Advanced Mode** – Enter JavaScript to override the channel message as described in the following code examples.
 
 !!!note
@@ -145,7 +145,7 @@ var indexArray = ['a', 'b', 'c',
     print(JSON.stringify(message));
 ```
 
-<ol start="7"><li>Using the <code>getChoices()</code> function, you can also customize the <b>response display format</b> using the <a href="https://developer.kore.ai/docs/bots/sdks/message-templates/">message formatting templates</a>. When the <code>getChoices()</code> function is called and there is an ambuguity, the platform returns the ambiguous choices information as an array which can be used to present the options to the end users.
+<ol start="7"><li>Using the <code>getChoices()</code> function, you can also customize the <b>response display format</b> using the <a href="https://docsinternal-kore.github.io/docs/xo/web-mobile-SDK-message-formatting-and-templates/">message formatting templates</a>. When the <code>getChoices()</code> function is called and there is an ambuguity, the platform returns the ambiguous choices information as an array which can be used to present the options to the end users.
 
 For example, to display the standard response for <i>Did you mean</i> in a button format, you can use the following code:
 
@@ -945,7 +945,7 @@ This message is displayed when <em>Hold and Resume</em> are set to <em>Allow the
    </td>
    <td>This response is displayed when the end-user authorization or re-authorization is requested.
 <p>
-The Authorization URL required for obtaining the user’s authorization is dynamically appended to the messages defined in the Simple mode. For defining the message in Advanced Mode, you can use the <code>koreUtil.getCurrentOptions()</code> function to retrieve the Authorization URL and use it as part of the message. <a href="https://developer.kore.ai/docs/bots/advanced-topics/koreutil-libraries/#koreUtilgetCurrentOptions">Know more</a>
+The Authorization URL required for obtaining the user’s authorization is dynamically appended to the messages defined in the Simple mode. For defining the message in Advanced Mode, you can use the <code>koreUtil.getCurrentOptions()</code> function to retrieve the Authorization URL and use it as part of the message. <a href="https://docsinternal-kore.github.io/docs/xo/apis/koreutil-libraries/#koreutilgetcurrentoptions">Know more</a>
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">

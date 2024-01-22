@@ -57,4 +57,4 @@ Steps to configure an external NLU adapter:
 
         External NLU is supported only for intent, Entity nodes and FAQs.
 
-See [Dialogflow Engine](https://developer.kore.ai/integrations/dialogflow-engine/){:target="_blank"} to understand the Dialogflow usage. See [Test and Debug](https://developer.kore.ai/integrations/test-and-debug/){:target="_blank"} to know how to test your virtual assistant to validate the external NLU and to understand the conversation behavior.
+See [Dialogflow Engine](../dialogflow-engine/){:target="_blank"} to understand the Dialogflow usage. See [Test and Debug](../test-and-debug/){:target="_blank"} to know how to test your virtual assistant to validate the external NLU and to understand the conversation behavior.

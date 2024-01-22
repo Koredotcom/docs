@@ -27,7 +27,7 @@ Follow these steps to enable an additional language for a universal bot:
     ![alt_text](images/ub_languages.png "image_tooltip")
 
 4. Click the **Add Language** button from the top right.
-5. On the Add Language window, click **Configure **next to the language you want to.
+5. On the Add Language window, click **Configure** next to the language you want to.
 
     !!! note
     

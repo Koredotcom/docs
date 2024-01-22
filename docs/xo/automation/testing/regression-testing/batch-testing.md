@@ -6,7 +6,7 @@ The **Batch Testing** feature helps you discern the ability of your bot to corre
 
 **Note**: The Batch Testing dashboard displays the summary of test coverage, performance, and training recommendations for multiple test suites based on validations of the intent identification capabilities of your NLU model. The **Health and Monitoring** dashboard is a one-stop place that displays this information for the individual test suite(s) the user selects. [Learn More](../health-and-monitoring/virtual-assistants-health-and-monitoring/){:target="_blank"}.
 
-To conduct a batch test, you can use predefined test suites available in the builder or create your own custom test suites. Based on your requirement, the test suites can be run to view the desired results. This option can be accessed from the **Testing -> Batch Testing** option from the left navigation menu.
+To conduct a batch test, you can use predefined test suites available in the builder or create your own custom test suites. Based on your requirement, the test suites can be run to view the desired results. This option can be accessed from the **Testing -> Regression Testing -> Batch Testing** option from the left navigation menu.
 
 
 ## **Best Practices**
@@ -44,12 +44,12 @@ This test suite includes all the end-user utterances that have successfully matc
 
 To add a new test suite, follow the steps below:
 
-1. Go to **Build** > **Testing** > **Batch Testing**, and click **New Test Suite**.  
-<img src="../images/batch-testing-3.png" alt="BT - New Test Suite" title="BT - New Test Suite" style="border: 1px solid gray;zoom:50%;">
+1. Go to **Automation > Testing > Regression Testing**, select **Batch Testing** tab, and click **New Test Suite**.  
+  <img src="../images/batch-testing-3.png" alt="BT - New Test Suite" title="BT - New Test Suite" style="border: 1px solid gray;zoom:50%;">
 2. In the **New test Suite** window, add a **name** and provide a **description**.
 3. Next, choose how to add test cases: either manually or by uploading a test case file.
     * Selecting **Add Manually** lets you add test cases manually or use LLM and Generative AI to generate test cases automatically.
-    * Selecting **Upload Test Cases File** lets you upload a file containing test cases.  
+    * Selecting **Choose how to add test cases** lets you upload a file containing test cases.  
     <img src="../images/batch-testing-4-newtest.png" alt="BT - New Test Suite Details" title="BT - New Test Suite Details" style="border: 1px solid gray; zoom:50%;"/>
     
     
@@ -87,9 +87,9 @@ You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utteranc
 
 You can automatically generate batch test cases if you have enabled [LLM and Generative AI ](https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/){:target="_blank"} for your Virtual Assistant. You can access the feature either right after creating a new test case, as shown above, or from the test cases list.
 
-<img src="../images/batch-testing-9-goto-generate-test-cases.png" alt="Generating test cases automatically" title="Generating test cases automatically" style="border: 1px solid gray; zoom:50%;"/> 
+<img src="../images/batch-testing-9-goto-generate-test-cases-1.png" alt="Generating test cases automatically" title="Generating test cases automatically" style="border: 1px solid gray; zoom:50%;"/> 
 
-
+<img src="../images/batch-testing-9-goto-generate-test-cases-2.png" alt="Generating test cases automatically" title="Generating test cases automatically" style="border: 1px solid gray; zoom:50%;"/> 
 
 #### Steps to Generate Test Cases
 
@@ -345,9 +345,9 @@ table, th, td {
    <td>String
    </td>
    <td>Determine the objective of an end-user utterance (can be task name or primary question in case of FAQ test case)
-<p>
+<br>
 Post-release 7.3, this property can be used to define traits to be identified against this utterance by using the prefix “<em>trait</em>” for example, <em>Trait: Trait Name1|| Trait Name2||Trait Name3</em>
-<p>
+<br>
 Post-release 8.0, this property can include the expected Small Talk pattern.
    </td>
   </tr>
@@ -385,13 +385,13 @@ Post-release 8.0, this property can include the expected Small Talk pattern.
   </tr>
   <tr>
    <td>entityOrder
-<p>
+<br>
 (ver7.1 onwards)
    </td>
    <td>Array [Optional]
    </td>
    <td>An array of entity names specifying the order in which the entities are to be extracted.
-<p>
+<br>
 If the order is not provided or partially provided, the platform determines the shortest route covering all the entities as the default order.
    </td>
   </tr>
@@ -401,7 +401,7 @@ If the order is not provided or partially provided, the platform determines the 
    <td>String [Optional]
    </td>
    <td>Define parent intent to be considered if the intent is a sub-intent.
-<p>
+<br>
 In the case of Small Talk, this field should be populated when the Small Talk is contextual follow-up intent; in case of multi-level contextual intent the parent intents should be separated by the delimiter ||
    </td>
   </tr>
@@ -465,9 +465,9 @@ table, th, td {
    <td>String
    </td>
    <td>Determine the objective of an end-user utterance (can be task name or primary question in case of FAQ test case)
-<p>
+<br>
 Post release 7.3, this property can be used to define traits to be identified against this utterance by using the prefix “<em>trait</em>” for example, <em>Trait: Trait Name1|| Trait Name2||Trait Name3</em>
-<p>
+<br>
 Post-release 8.0, this property can include the expected Small Talk pattern.
    </td>
   </tr>
@@ -477,7 +477,7 @@ Post-release 8.0, this property can include the expected Small Talk pattern.
    <td>String [Optional]
    </td>
    <td>Define parent intent to be considered if the intent is a sub-intent
-<p>
+<br>
 In the case of Small Talk, this field should be populated when the Small Talk is contextual follow-up intent and the intent would be matched assuming that the follow-up intent criteria is met; in the case of multi-level contextual intent the parent intents should be separated by the delimiter ||
    </td>
   </tr>
@@ -500,13 +500,13 @@ In the case of Small Talk, this field should be populated when the Small Talk is
   </tr>
   <tr>
    <td>entityOrder
-<p>
+<br>
 (ver7.1 onwards)
    </td>
    <td>Array [Optional]
    </td>
    <td>An array of entity names separated by > specifying the order in which the entities are to be extracted.
-<p>
+<br>
 If the order is not provided or partially provided, the platform defines the implicit order to process first the NER and pattern entities and then the remaining entities.
    </td>
   </tr>
@@ -791,7 +791,7 @@ table, th, td {
 3. To import the Dataset file, click **Choose File** to locate and select a JSON or CSV file containing the utterances as per the Dataset Type selected.  
 <img src="../images/batch-testing-13-new-test-suite-1-2.png" alt="Importing a Dataset file" title="Importing a Dataset file" style="border: 1px solid gray; zoom:50%;"/> 
 
-4. Click **Create**. The dataset file is displayed as an option to run the test suite on the Batch Testing page:
+4. Click **Proceed**. The dataset file is displayed as an option to run the test suite on the Batch Testing page:
 
 
 ### Running Test Suites

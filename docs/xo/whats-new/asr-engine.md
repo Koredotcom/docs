@@ -6,8 +6,6 @@ After you configure the Voice channel, you can personalize the ASR Engine by con
 
 Steps to configure or modify the ASR Engine settings:
 
-
-
 1. Log in to [AgentAssist](https://agentassist.kore.ai/koreagentassist/) using your credentials.
 2. Click **Configuration > Speech Recognition**. \
     ![Alt text](../assets/images/asr-engine/image_1.png)

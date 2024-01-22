@@ -5,7 +5,7 @@ This tutorial is an end-to-end walkthrough for setting up and running an instanc
 
 ## Web SDK Tutorial Overview
 
-In this tutorial, you will install a Kore.ai sample bot, a test application to host the bot, and then a JSON Web Token (JWT) generation web service using your local host server to communicate between the bot on your local server and the Kore.ai Bots Platform.
+In this tutorial, you will install a Kore.ai sample bot, a test application to host the bot, and then a JSON Web Token (JWT) generation web service using your local host server to communicate between the bot on your local server and the XO Platform.
 The following list describes the general steps you will take to install and configure the Web SDK.
 
 
@@ -15,7 +15,7 @@ The following list describes the general steps you will take to install and conf
 3. **Create a new Client App** – When you configure the Web/Mobile Client channel for the _Travel Planning Sample_ bot, you must create a client app and select the JWT signing algorithm used to generate the authentication tokens.
 4. **Publish the bot** – After you have configured the _Travel Planning Sample_ bot, you must publish the bot which sends the bot to the Bots Admin for approval.
 5. **Approve and Deploy the bot** – In the Bots Admin Console, the published bot and tasks must be approved to deploy.
-6. **Download and install Node.js** – You will need to install Node.js used to host the JWT token generation web service for the Web SDK to communicate between the bot in the test application and the Kore.ai Bots Platform.
+6. **Download and install Node.js** – You will need to install Node.js used to host the JWT token generation web service for the Web SDK to communicate between the bot in the test application and the XO Platform.
 7. **Download and uncompress the test application** –  The test application, [SDKApp](https://s3.amazonaws.com/static-kore/downloads/SDKApp.zip){:target="_blank"} is used to simulate your application that will host the Kore.ai bot as a channel on a web page using your computer local host server.
 8. **Download and uncompress the Kore.ai Web SDK** – The Web SDK contains the libraries used to communicate and run the bot in the test application using the Web/Mobile Client channel. You will need to configure settings in the index.html file for your computer.
 9. **Start your application and view the bot in a web browser** – In a **Terminal** window, you will start the JWT service, and then view the bot in a web browser.
@@ -33,7 +33,7 @@ To get started, you will need to build a bot to run in the test application, and
 2. Hover over **Travel Planning Sample**, and then click **Install**.
 3. The Travel Planning Sample installed successfully message is displayed and the sample bot is added to your **Bots** left-hand navigation menu.
 
-In this next section, you will define the Web/Mobile Client channel for the Travel Planning Sample bot by creating a new client app and defining channel settings. [See here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel/){:target="_blank"} for a detailed explanation of the steps.
+In this next section, you will define the Web/Mobile Client channel for the Travel Planning Sample bot by creating a new client app and defining channel settings. [See here](../../../channels/add-web-mobile-client/){:target="_blank"} for a detailed explanation of the steps.
 
 4. On the bot builder top menu, select the **Deploy** tab
 5. From the left menu, click **Integrations > Web/Mobile SDK**.

@@ -1,9 +1,7 @@
 ---
 template: home/home.html
-title: Material for MkDocs
+title: XO Platform
 social:
   cards_layout_options:
     title: Documentation that simply works
 ---
-
-Welcome to Material for MkDocs.

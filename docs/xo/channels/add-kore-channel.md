@@ -1,4 +1,4 @@
-# **Adding the Kore Channel**
+# Adding the Kore Channel
 
 Adding the Kore channel to your assistant allows end-users to interact with it using the Kore Messaging application available as a web, desktop, or mobile client.
 

@@ -13,4 +13,4 @@ The **Knowledge Graph** (KG) lets you turn static FAQ text into an intelligent, 
 
 ## Answer from Documents (Beta)
 
-**Answer from Documents** helps answer end-user queries from unstructured PDF documents without the need to extract individual FAQs and train them. This feature leverages LLM and Generative AI models from OpenAI or Azure OpenAI to process uploaded documents and user queries and generate answers from the documents. <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/" target="_blank">Learn more</a>
+**Answer from Documents** helps answer end-user queries from unstructured PDF documents without the need to extract individual FAQs and train them. This feature leverages LLM and Generative AI models from OpenAI or Azure OpenAI to process uploaded documents and user queries and generate answers from the documents. <a href="https://docsinternal-kore.github.io/docs/xo/answers/answer-from-documents/" target="_blank">Learn more</a>.

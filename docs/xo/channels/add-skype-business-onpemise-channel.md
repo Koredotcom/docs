@@ -1,4 +1,4 @@
-# **Adding the Skype Channel**
+# Adding the Skype Channel
 
 To add the Skype channel to your bot, you need a developer _Microsoft Bot Framework _account to configure the connection between Skype and Kore.ai. Adding the Skype channel to your Kore.ai bot is a three-step process to allow end-users to interact with your bot. To add the Skype channel to your bot, follow the below steps:
 

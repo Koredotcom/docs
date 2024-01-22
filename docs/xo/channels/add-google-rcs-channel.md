@@ -1,4 +1,4 @@
-# **RCS Business Messaging**
+# RCS Business Messaging
 
 **RCS Business Messaging** is the evolution of mobile messaging, increasing and improving the ways in which people and businesses communicate. It provides brands with the opportunity to increase their engagement with customers by making use of business messaging using assistants and artificial intelligence (AI). **Google RBM** allows companies to send visually rich messages that encourage customers to interact.
 

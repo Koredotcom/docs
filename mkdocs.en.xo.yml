@@ -147,47 +147,47 @@ nav:
       - Automation FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
       - Contact Center FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/   
   - Automation: 
-    - DESIGN: 
+    - Overview: automation/about-automation.md
+    - USE CASES: 
       - Dialogs Tasks:
         - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
-        - Navigating Dialog Tasks: automation/intelligence/context-management.md
-        - Build Dialog Tasks: automation/intelligence/context-management.md
+        - Navigating Dialog Tasks: automation/use-cases/dialogs/navigating-dialog-tasks.md
+        - Build Dialog Tasks: automation/use-cases/dialogs/using-the-dialog-builder-tool.md
         - Node Types:
-          - Overview: automation/intelligence/context-management.md
-          - Intent Node: automation/intelligence/context-management.md
-          - Dialog Node: automation/intelligence/context-management.md
-          - Dynamic Intent Node: automation/intelligence/context-management.md
-          - GenAI Node: automation/intelligence/context-management.md
-          - GenAI Prompt: automation/intelligence/context-management.md
-          - Entity Node: automation/intelligence/context-management.md
-          - Form Node: automation/intelligence/context-management.md
-          - Confirmation Node: automation/intelligence/context-management.md
-          - Message Node: automation/intelligence/context-management.md
-          - Logic Node: automation/intelligence/context-management.md
-          - Bot Action Node: automation/intelligence/context-management.md
-          - Service Node: automation/intelligence/context-management.md
-          - Webhook Node: automation/intelligence/context-management.md
-          - Script Node: automation/intelligence/context-management.md
-          - Process Node: automation/intelligence/context-management.md
-          - Agent Transfer Node: automation/intelligence/context-management.md
+          - Overview: automation/use-cases/dialogs/node-types/nodes-transitions.md
+          - Intent Node: automation/use-cases/dialogs/node-types/working-with-the-user-intent-node.md
+          - Dialog Node: automation/use-cases/dialogs/node-types/working-with-the-dialog-node.md
+          - Dynamic Intent Node: automation/use-cases/dialogs/node-types/dynamic-intent-node.md
+          - GenAI Node: automation/use-cases/dialogs/node-types/genai-node.md
+          - GenAI Prompt: automation/use-cases/dialogs/node-types/genai-prompt.md
+          - Entity Node: automation/use-cases/dialogs/node-types/working-with-the-entity-node.md
+          - Form Node: automation/use-cases/dialogs/node-types/working-with-the-form-node.md
+          - Confirmation Node: automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes.md
+          - Message Node: automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md
+          - Logic Node: automation/use-cases/dialogs/node-types/working-with-the-logic-node.md
+          - Bot Action Node: automation/use-cases/dialogs/node-types/bot-action-node.md
+          - Service Node: automation/use-cases/dialogs/node-types/working-with-the-service-node.md
+          - Webhook Node: automation/use-cases/dialogs/node-types/working-with-the-web-hook-node.md
+          - Script Node: automation/use-cases/dialogs/node-types/working-with-the-script-node.md
+          - Process Node: automation/use-cases/dialogs/node-types/process-nodes.md
+          - Agent Transfer Node: automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md
         - Node Connections:
-          - Node Connections Setup: automation/intelligence/context-management.md 
-          - Sub-Intent Scoping: automation/intelligence/context-management.md
-        - Entity Types: automation/intelligence/context-management.md
-        - Entity Rules: automation/intelligence/context-management.md
-        - User Prompts or Messages: automation/intelligence/context-management.md
-        - Voice Call Properties: automation/intelligence/context-management.md  
-      - Alert Tasks: automation/use-cases/small-talk.md
+          - Node Connections Setup: automation/use-cases/dialogs/node-connections/grouping-nodes.md 
+          - Sub-Intent Scoping: automation/use-cases/dialogs/node-connections/nodes-conditions.md
+        - Entity Types: automation/use-cases/dialogs/entity-types.md
+        - Entity Rules: automation/use-cases/dialogs/entity-rules.md
+        - User Prompts or Messages: automation/use-cases/dialogs/prompt-editor.md
+        - Voice Call Properties: automation/use-cases/dialogs/voice-call-properties.md  
+      - Alert Tasks: automation/use-cases/alert-tasks.md
       - Small Talk: automation/use-cases/small-talk.md
       - Digital Skills: 
         - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
         - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
         - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
         - Digital Views: automation/use-cases/digital-skills/digital-views.md
-        - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md
-      - Feedback Survey: automation/use-cases/feedback-surveys.md
-    - TRAINING:
-      - Natural Language Processing:
+        - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md      
+    - NATURAL LANGUAGE:
+      - Training:
         - Overview: automation/natural-language/nlp-introduction.md
         - NLP Guidelines: automation/natural-language/nlp-guidelines.md
         - Introduction: automation/natural-language/training/nlp-training-overview.md
@@ -196,36 +196,42 @@ nav:
         - Bot Synonyms: getting-started.md
         - Traits: getting-started.md
         - Fields: getting-started.md
-    - NLU CONFIGURATION: 
-      - Engine Tuning: automation/natural-language/nlu-configurations/engine-tuning.md
-      - Amend Entity: automation/natural-language/nlu-configurations/amend-entities.md
-      - Multi Intent Detect: automation/natural-language/nlu-configurations/multi-intent-detection.md
-    - EVENTS: 
-      - Intent Events: getting-started.md 
-      - conversation Events: getting-started.md 
-      - Sentiment Events: getting-started.md
-    - CONVERSATION MANAGEMENT: 
-      - Standard Responses: getting-started.md 
-      - Manage Interruptions: getting-started.md 
-      - Ignore Words and Field Memory: getting-started.md 
-    - REGRESSION TESTING: 
-      - Health and Monitoring: getting-started.md 
-      - Batch Testing: getting-started.md
-      - Conversation Testing: getting-started.md
+      - NLU Configuration: 
+        - Engine Tuning: automation/natural-language/nlu-configurations/engine-tuning.md
+        - Multi Intent Detect: automation/natural-language/nlu-configurations/multi-intent-detection.md
+        - Amend Entity: automation/natural-language/nlu-configurations/amend-entities.md        
+    - INTELLIGENCE:
+      - Events: 
+        - Intent Events: getting-started.md 
+        - conversation Events: getting-started.md 
+        - Sentiment Events: getting-started.md
+      - Conversation Management: 
+        - Standard Responses: getting-started.md 
+        - Manage Interruptions: getting-started.md 
+        - Ignore Words and Field Memory: getting-started.md 
+    - TESTING:
+      - Test and Debug Overview: automation/testing/test-and-debug-overview.md
+      - Talk to Bot: automation/testing/talk-to-bot.md
+      - Utterance Testing: automation/testing/testing-your-bot-with-nlp.md 
+      - Regression Testing: 
+        - Health and Monitoring: getting-started.md 
+        - Batch Testing: getting-started.md
+        - Conversation Testing: getting-started.md
   - Answers:
+    - Overview: answers/about-answers.md 
     - KNOWLEDGE AI:
-        - Overview: automation/use-cases/knowledge-ai/knowledge-ai-introduction.md
+        - Overview: answers/knowledge-ai/knowledge-ai-introduction.md
         - Knowledge Graph (KG):
-          - Introduction: automation/use-cases/knowledge-ai/knowledge-graph-overview.md
-          - Terminology: automation/use-cases/knowledge-ai/knowledge-graph-terminology.md
-          - Build a KG: automation/use-cases/knowledge-ai/build-a-knowledge-graph.md
-          - Manage FAQs: automation/use-cases/knowledge-ai/manage-faqs.md
-          - Knowledge Extraction: automation/use-cases/knowledge-ai/knowledge-extraction.md
+          - Introduction: answers/knowledge-ai/knowledge-graph-overview.md
+          - Terminology: answers/knowledge-ai/knowledge-graph-terminology.md
+          - Build a KG: answers/knowledge-ai/build-a-knowledge-graph.md
+          - Manage FAQs: answers/knowledge-ai/manage-faqs.md
+          - Knowledge Extraction: answers/knowledge-ai/knowledge-extraction.md
           - Import or Export KG:
-            - Prepare Data for Import: automation/use-cases/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
-            - Import or Export KG: automation/use-cases/knowledge-ai/import-and-export-knowledge-graph.md
-            - Auto-Generate KG: automation/use-cases/knowledge-ai/generate-a-knowledge-graph.md
-          - KG Analysis: automation/use-cases/knowledge-ai/knowledge-graph-analysis.md       
+            - Prepare Data for Import: answers/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
+            - Import or Export KG: answers/knowledge-ai/import-and-export-knowledge-graph.md
+            - Auto-Generate KG: answers/knowledge-ai/generate-a-knowledge-graph.md
+          - KG Analysis: answers/knowledge-ai/knowledge-graph-analysis.md       
     - CONTENT SOURCES:
       - Directory: answers/content-sources/directory.md 
       - Web Crawl: answers/content-sources/web-crawl.md      
@@ -233,24 +239,10 @@ nav:
     - Configurations:
       - Default Flows: contactcenter/configurations/default-flows/configure-default-flows.md 
       - Routing: contactcenter/configurations/default-flows/configure-default-flows.md 
-      - Hour of Operations: contactcenter/configurations/default-flows/configure-default-flows.md 
-      - Setup: 
-        - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
-        - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
-        - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
-        - Digital Views: automation/use-cases/digital-skills/digital-views.md
-        - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md  
+      - Hour of Operations: contactcenter/configurations/default-flows/configure-default-flows.md       
   - AgentAssist:
     - Agent Experience:
-      - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md 
-      - Knowledge AI: agentassist/agent-experience/agent-realtime-coaching.md
-      - Small Talk: agentassist/agent-experience/agent-realtime-coaching.md
-      - Digital Skills: 
-        - Overview: automation/use-cases/digital-skills/digital-skills-overview.md
-        - Digital Forms: automation/use-cases/digital-skills/digital-forms.md
-        - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
-        - Digital Views: automation/use-cases/digital-skills/digital-views.md
-        - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md
+      - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md       
   - Integrations & APIs:
     - Integrations:
       - Overview: channels/IVR-integration.md
@@ -261,9 +253,25 @@ nav:
         - API Introduction: apis/api-list.md
         - API List: apis/api-list.md           
   - Analytics:
-    - insiders/index.md
-    - Automation:
-      - Introduction: analytics/automations/introduction.md
+    - AUTOMATION:
+      - Introduction: analytics/automation/introduction.md
+      - Dashboard Filters: analytics/automation/dashboard-filters.md
+      - Overview Dashboard: analytics/automation/overview-dashboard.md
+      - Conversations Dashboard: analytics/automation/conversations-dashboard.md
+      - Users Dashboard: analytics/automation/users-dashboard.md
+      - Performance Dashboard: analytics/automation/performance-dashboard.md
+      - Custom Dashboard:
+        - Introduction: analytics/automation/custom-dashboard/introduction-to-custom-dashboard.md
+        - Custom Meta Tags: analytics/automation/custom-dashboard/custom-meta-tags.md
+        - Create Custom Dashboard: analytics/automation/custom-dashboard/create-custom-dashboard.md
+        - Create Custom Dashboard Filters: analytics/automation/custom-dashboard/create-custom-dashboard-filters.md  
+      - NLP Insights: analytics/automation/nlp-insights.md
+      - Task Execution Logs: analytics/automation/task-execution-logs.md
+      - Conversations History: analytics/automation/conversations-history.md
+      - Conversation Flows: analytics/automation/conversation-flows.md
+      - Conversation Insights: analytics/automation/conversation-insights.md
+      - Feedback Dashboard: analytics/automation/feedback-dashboard.md
+    - CONTACT CENTER:  
       - Changelog: insiders/changelog.md
   - Administration:
     - Contributing:
@@ -276,6 +284,5 @@ nav:
       - Creating a reproduction: guides/creating-a-reproduction.md
     - FAQ:
       - Sponsoring: faq/sponsoring.md
-      - Intent Over Entity: faq/intent-over-entity.md
-      
+      - Intent Over Entity: faq/intent-over-entity.md   
    

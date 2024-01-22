@@ -1,6 +1,6 @@
 # Travel VA: Using Traits
 
-In this post, we explore a scenario for a Travel Planning Assistant where traits are used to steer the conversation flow in a more natural and predictable direction. For details on what Traits are and how they are implemented in the XO Platform, click <a href="https://developer.kore.ai/docs/bots/nlp/traits/" target="_blank">here</a>. 
+In this post, we explore a scenario for a Travel Planning Assistant where traits are used to steer the conversation flow in a more natural and predictable direction. For details on what Traits are and how they are implemented in the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/traits/" target="_blank">here</a>. 
 
 ## Problem Statement
 
@@ -10,7 +10,7 @@ In this document, we will show how Traits can be used to identify such situation
 
 ## Prerequisites
 
-To go through these configurations, you need to know at least the basics of <a href="https://developer.kore.ai/docs/bots/how-tos/travel-planing-assistant/create-a-travel-virtual-assistant/" target="_blank">building a Virtual Assistant</a>. This is because your assistant needs to have been already built when you begin working on your forms.
+To go through these configurations, you need to know at least the basics of <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/create-a-travel-virtual-assistant/" target="_blank">building a Virtual Assistant</a>. This is because your assistant needs to have been already built when you begin working on your forms.
 
 In addition, your VA requires the following configurations:
 

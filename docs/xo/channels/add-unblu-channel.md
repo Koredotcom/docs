@@ -1,4 +1,4 @@
-# **Adding the Unblu Channel**
+# Adding the Unblu Channel
 
 Unblu is a Conversational Platform for Financial Services.
 

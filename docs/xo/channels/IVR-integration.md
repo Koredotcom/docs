@@ -1,4 +1,4 @@
-# **IVR Integration**
+# IVR Integration
 
 Interactive Voice Response (IVR) systems are preferred in many leading organizations to automate customer interactions. However, if you are using an IVR  system, you may often encounter the following two issues:
 

@@ -7,8 +7,8 @@ Kore.ai allows you to redact any sensitive information that users share with you
 There are a few scenarios where the original value can be used to achieve the business needs.
 
 * If a PII value is used in Dialog Task transitions, the platform automatically uses the original value for the transition condition evaluation.
-* If a PII value is used in the Service Node definition, the platform uses the redacted value by default to make the service calls. You can choose to send the original data using the ‘De-identification of PII data’ configuration of the Service Node. Refer to the [Service Node ](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-service-node/){:target="_blank"}post for more details
-* You may use the Redaction of PII Data configuration of the Entity Nodes to present the original values of a redacted entity value to the users. Refer to the [Entity Node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-entity-node/){:target="_blank"} post for more details.
+* If a PII value is used in the Service Node definition, the platform uses the redacted value by default to make the service calls. You can choose to send the original data using the ‘De-identification of PII data’ configuration of the Service Node. Refer to the [Service Node ](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node){:target="_blank"}post for more details
+* You may use the Redaction of PII Data configuration of the Entity Nodes to present the original values of a redacted entity value to the users. Refer to the [Entity Node](../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node){:target="_blank"} post for more details.
 
 The platform provides the following three modes to redact specified information types:
 
@@ -89,7 +89,7 @@ The platform provides the following three modes to redact specified information 
    <td><strong>Map Entities</strong>
    </td>
    <td>Map all the entities in the bot’s Dialog tasks that correspond to the information type.
-<p>
+<br>
 
   <strong>Note</strong> : If you do not map entities corresponding to redacted information types, even valid user entries for those entities cause errors in the dialog tasks. For example, let’s say you have enabled redaction for email information type. When a user enters an email address for a bot entity, the platform immediately redacts the information even before the entity node captures it, as emails are set up for redaction. The entity node then receives redacted data, and since the entity is not mapped in the redaction settings, it assumes the redacted value as an invalid email entry. Whereas, if you map the entity in the redaction settings, the entity recognizes the data redacted and accepts it.
    </td>
@@ -98,7 +98,7 @@ The platform provides the following three modes to redact specified information 
    <td><strong>Display Type</strong>
    </td>
    <td>Select one of these modes to display the redacted data anywhere in the platform: <strong>Redaction</strong>, <strong>Replacement</strong>, <strong>Mask with Character.</strong>
-<p>
+<br>
 <strong>Note</strong>: The value displayed would be prefixed with a platform generated random unique identifier. This is the key used internally to retrieve the original value in case of conditional transitions etc..
    </td>
   </tr>
@@ -136,4 +136,4 @@ The **Sensitive Entity** option provides flexibility in managing the handling of
 
 Both the PII and Sensitive Entity complement each other in providing comprehensive protection for sensitive data. While the PII feature offers broad coverage for common PII patterns, sensitive nodes enable you to handle sensitive data in a more granular and contextually aware manner, addressing specific challenges and custom use cases.
 
-It’s recommended to leverage both features in combination to ensure comprehensive protection of sensitive data throughout your conversations. For more information, see the [Entity Node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-entity-node/#Configure_the_Node) article.
+It’s recommended to leverage both features in combination to ensure comprehensive protection of sensitive data throughout your conversations. For more information, see the [Entity Node](../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node/#configure-the-node){:target="_blank"} article.

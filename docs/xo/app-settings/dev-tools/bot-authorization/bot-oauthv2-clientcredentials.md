@@ -90,7 +90,7 @@ Please define the fields as explained in the following table:
 
 ## Authorization Fields
 
-By default, authorization fields are configured as part of the header of the task request message. If your task request requires additional authorization fields or the expected authorization is not part of the header, for example, a verification code, click** + Add Authorization Field **and then define the fields as shown in the following illustration. 
+By default, authorization fields are configured as part of the header of the task request message. If your task request requires additional authorization fields or the expected authorization is not part of the header, for example, a verification code, click **+ Add Authorization Field** and then define the fields as shown in the following illustration. 
 
 <img src="../images/oauth-v2-clientcredentials-img3.png" alt="Authorization fields" title="Authorization fields" style="border: 1px solid gray;zoom:80%;"/>
 

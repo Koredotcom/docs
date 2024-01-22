@@ -153,7 +153,7 @@ Consider the query _How do I check my flight status?_. If the VA has a task that
 
 To trigger a task, follow the steps below:
 
-1. Before proceeding, ensure that you have a Dialog Task defined for **_Check Flight Status_**. Let us consider a dummy dialog that displays a message. Learn more on adding tasks by reading <a href="https://developer.kore.ai/docs/bots/chatbot-overview/using-the-dialog-builder-tool/" target="_blank">Using the Dialog Builder</a>.
+1. Before proceeding, ensure that you have a Dialog Task defined for **_Check Flight Status_**. Let us consider a dummy dialog that displays a message. Learn more on adding tasks by reading <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/" target="_blank">Using the Dialog Builder</a>.
 2. Click **Add Intent** _How do I check my flight status?_
 3. Set **Intent** to _Task_.
 <img src="../images/set-task-intent.png" alt="set task intent" title="set task intent" style="border: 1px solid gray; zoom:75%;"> 

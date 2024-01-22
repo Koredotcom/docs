@@ -1,4 +1,4 @@
-# **Adding the WeChat Channel**
+# Adding the WeChat Channel
 
 To set up WeChat as a channel, you need to register for a WeChat Official Account. You also need to enable webhook integrations for the XO Platform to send and receive messages.
 

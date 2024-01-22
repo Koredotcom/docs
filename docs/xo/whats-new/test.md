@@ -124,7 +124,7 @@ Material for MkDocs is licensed under MIT and available on [GitHub]
 :fontawesome-brands-css3: __CSS__ for text running out of boxes
 { .card }
 
-> :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
+> :fontawesome-brands-internet-explorer: __Internet Explorer New__ ... huh?
 
 </div>
 
@@ -197,3 +197,20 @@ Material for MkDocs is licensed under MIT and available on [GitHub]
             <a href="https://kore.ai">Reference</a>
         </kr-grid-item>
     </kr-grid>
+
+<p style="display:inline-block;">
+    <img src="../images/xop-sm-uc.svg" style="zoom:100%;"> 
+    <b>Define Use Cases:</b> Use Cases are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent. <a href="">Learn More</a>
+</p>
+<p style="display:inline-block;">
+    <img src="../images/xop-sm-nl.svg" style="zoom:100%;"> 
+    <b>Leverage Natural Language:</b> Leverage the Platform’s NLP capabilities to train and optimize your automation workflows to handle complex use cases. <a href="">Learn More</a>
+</p>
+<p style="display:inline-block;">
+    <img src="../images/xop-sm-inteligence.svg" style="zoom:100%;"> 
+    <b>Intelligence Management:</b> Empower your automation workflows to handle nuances of human conversations, including interruptions, clarifications, and more. <a href="">Learn More</a>
+</p>
+<p style="display:inline-block;">
+    <img src="../images/xop-sm-test.svg" style="zoom:100%;"> 
+    <b>Test Workflows:</b> Use an extensive suite of features to conduct rigorous testing of your automation workflows to ensure everything works as expected. Find and fix problems before they reach your users. <a href="">Learn More</a>  
+</p>
