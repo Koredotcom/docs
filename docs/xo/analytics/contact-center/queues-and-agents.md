@@ -4,30 +4,17 @@ The Queues & Agents dashboard displays the Overview, Efficiency, Agent Performan
 
 **To view the Queues & Agents dashboard, follow the steps**:
 
-
-
 1. Click the three dots on the left navigation pane and then click **Analytics**. The **Analytics** panel is displayed with the list of reports.
+
+    <img src="../images/navigating-to-queues-agents-report.png" alt="Navigating to Queues Agents Report" title="Navigating to Queues Agents Report" style="border: 1px solid gray; zoom:80%;">
+
 2. Click **Queues & Agents** under the **Contact Center** section of the **Analytics** panel. The **Queues & Agents** dashboard is displayed on the right side of the page.
-
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
-
 
 # **Time Selection**
 
 You can filter Queues & Agents data for a specific time range. You can choose a particular time range and click Apply.
 
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
+<img src="../images/time-selection.png" alt="Time Selection" title="Time Selection" style="border: 1px solid gray; zoom:80%;">
 
 
 
@@ -39,51 +26,33 @@ To avoid repeatedly filtering your choices, you can create and save multiple fil
 ### **Create Filter**
 
 
+1. Click the **Filter** button.
 
-1. Click the **Filter** button. 
+    <img src="../images/create-filter-1.png" alt="Create Filters 1" title="Create Filters 1" style="border: 1px solid gray; zoom:80%;">
 
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
 
 2. Click **New Filter**.
 
+    <img src="../images/create-filter-2.png" alt="Create Filters 2" title="Create Filters 2" style="border: 1px solid gray; zoom:80%;">
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
 
 3. Select the Queues, Channels, Direction, and Agents.
 
+    <img src="../images/create-filter-3.png" alt="Create Filters 3" title="Create Filters 3" style="border: 1px solid gray; zoom:80%;">
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
  
-Select from the below available options: 
+Select from the below available options:
 
-    1. Clear – Clears the selection.
-    2. Save & Apply – Saves the filter, and it appears when selected.
-    3. Apply – Applied for one instance and not saved.
+1. Clear – Clears the selection.
+2. Save & Apply – Saves the filter, and it appears when selected.
+3. Apply – Applied for one instance and not saved.
+
 4. Click **Save & Apply**.
-
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.png "image_tooltip")
 
 5. On the pop-up window, enter a name for the filter and click **Save & Apply**.
 
+    <img src="../images/create-filter-4.png" alt="Create Filters 4" title="Create Filters 4" style="border: 1px solid gray; zoom:80%;">
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image7.png "image_tooltip")
 
 A confirmation message is displayed, and the filter is created.
 
@@ -93,39 +62,19 @@ A confirmation message is displayed, and the filter is created.
 Steps to edit a filter:
 
 
-
 1. Click the **Filters** tab. The **Saved Filter** name appears.
 
+    <img src="../images/edit-filters-1.png" alt="Edit Filters 1" title="Edit Filters 1" style="border: 1px solid gray; zoom:80%;">
 
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image8.png "image_tooltip")
 
 2. Click the **Edit** button.
 
+    <img src="../images/edit-filters-2.png" alt="Edit Filters 2" title="Edit Filters 2" style="border: 1px solid gray; zoom:80%;">
 
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image9.png "image_tooltip")
 
 3. Make the necessary changes and click **Save & Apply**.
 
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image10.png "image_tooltip")
-
 A confirmation message is displayed, and the filter is updated. 
-
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image11.png "image_tooltip")
-
 
 
 ### **Copy Filter**
@@ -134,87 +83,42 @@ A confirmation message is displayed, and the filter is updated.
 
 1. Click the **Duplicate** button.
 
+    <img src="../images/copy-filters-1.png" alt="Copy Filters 1" title="Copy Filters 1" style="border: 1px solid gray; zoom:80%;">
 
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image12.png "image_tooltip")
 
 2. On the **Rename Filter** window, enter a name for the filter and click **Save**.
 
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image13.png "image_tooltip")
+    <img src="../images/copy-filters-2.png" alt="Copy Filters 2" title="Copy Filters 2" style="border: 1px solid gray; zoom:80%;">
 
 A confirmation is displayed and a copy of the filter is created.
 
 
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image14.png "image_tooltip")
-
-
-
 ### **Mark as Default**
-
-
 
 1. Click the **Mark as Default** button.
 
+    <img src="../images/mark-as-default-1.png" alt="Mark as Default 1" title="Mark as Default 1" style="border: 1px solid gray; zoom:80%;">
 
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image15.png "image_tooltip")
 
 2. A confirmation message is displayed and the filter is marked as default.
 
-
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image16.png "image_tooltip")
-
-
+    <img src="../images/mark-as-default-2.png" alt="Mark as Default 2" title="Mark as Default 2" style="border: 1px solid gray; zoom:80%;">
 
 ### **Delete Filter**
 
-
-
 1. Click the **Delete** button.
 
+    <img src="../images/delete-filter.png" alt="Delete Filter" title="Delete Filter" style="border: 1px solid gray; zoom:80%;">
 
-<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image17.png "image_tooltip")
 
 2. A Delete Filter message appears. Click **Delete**.
 
-
-<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image18.png "image_tooltip")
-
 A confirmation message is displayed and the filter is deleted.
-
-
-<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image19.png "image_tooltip")
-
 
 
 # **Overview of Incoming Conversations**
 
 This section displays the metrics for all conversations (phone, chat, and email):
-
-
 
 * Total Conversations – Total conversation count for the selected time range.
 * In Queue – Count conversations in a queue.
@@ -236,16 +140,11 @@ Clicking the percentage value on the Abandon Rate widget shows the following inf
 * “Abandoned while in Queue” – Count of conversations (NNNN) that were abandoned while waiting in the queue.
 * “Abandoned while with Agent” – Count of conversations (NNNN) that where abandoned while being attended by an Agent.
 
+    <img src="../images/abandon-rate.png" alt="Abandon Rate" title="Abandon Rate" style="border: 1px solid gray; zoom:80%;">
 
-<p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image20.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image20.png "image_tooltip")
 
 
 The formula for measuring the Abandon Count:
-
-
 
 * For Digital Channels: 
 Abandon Count = User Abandons While Waiting in Queue + Conversations With Agent that went through the Idle-Expired Sequence.
@@ -256,12 +155,7 @@ Overdue – This live metric shows the number of conversations currently in the 
 
 System Terminations: Count of conversations that were terminated by the System. This metric is shown based on selected queues only. Clicking on the number displays the details of the system terminations.
 
-
-
-<p id="gdcalert21" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image21.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image21.png "image_tooltip")
+<img src="../images/system-terminations.png" alt="System Terminations" title="System Terminations" style="border: 1px solid gray; zoom:80%;">
 
 
 Average Speed to Answer – The average time it takes an agent to respond to a conversation assigned to them.
@@ -270,14 +164,9 @@ Average Handling Time – The average handling time of the conversations.
 
 Queue Load – Displays the current load on the system as a percentage of its capacity. This is a live metric.
 
-Resolved Rate – Percentage of resolved conversations. 
+Resolved Rate – Percentage of resolved conversations.
 
-
-<p id="gdcalert22" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image22.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert23">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image22.png "image_tooltip")
-
+<img src="../images/resolved-rate.png" alt="Resolved Rate" title="Resolved Rate" style="border: 1px solid gray; zoom:80%;">
 
 
 # **Efficiency**
@@ -286,8 +175,6 @@ This section displays individual metrics for all conversations (call, chat, emai
 
 Voice Metrics: The following voice conversation metrics are displayed in this section:
 
-
-
 1. Average Speed to Answer
 2. Avg Handle Time
 3. Avg Pick-up Time
@@ -295,17 +182,10 @@ Voice Metrics: The following voice conversation metrics are displayed in this se
 5. Avg Talk Time
 6. Avg. Mute/Hold Time
 
-
-
-<p id="gdcalert23" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image23.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert24">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image23.png "image_tooltip")
+<img src="../images/voice-metrics.png" alt="Voice Metrics" title="Voice Metrics" style="border: 1px solid gray; zoom:80%;">
 
 
 Chat Metrics: The following chat conversation metrics are displayed in this section: 
-
-
 
 1. Average Speed to Answer
 2. Avg Handle Time
@@ -313,101 +193,59 @@ Chat Metrics: The following chat conversation metrics are displayed in this sect
 4. Avg. Agent Response Time
 5. Avg Customer Response Time
 
-
-
-<p id="gdcalert24" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image24.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert25">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image24.png "image_tooltip")
+<img src="../images/chat-metrics.png" alt="Chat Metrics" title="Chat Metrics" style="border: 1px solid gray; zoom:80%;">
 
 
 Transfers: The following transfer metrics are displayed in this section: 
-
-
 
 1. Transfer Rate
 2. Transfer Rate
 3. Call Transfers
 4. Chat Transfers
 
-
-
-<p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image25.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image25.png "image_tooltip")
-
+<img src="../images/transfers.png" alt="Transfers" title="Transfers" style="border: 1px solid gray; zoom:80%;">
 
 Skills In Queue: Displays counts per skill of all conversations currently in the queue (active or waiting).
 
-
-
-<p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image26.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image26.png "image_tooltip")
+<img src="../images/skills-in-queue.png" alt="Skills in Queue" title="Skills in Queue" style="border: 1px solid gray; zoom:80%;">
 
 
 Top Skills: Displays the number of conversations per skill for the selected time range.
 
 
-<p id="gdcalert27" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image27.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<img src="../images/top-skills.png" alt="Top Skills" title="Top Skills" style="border: 1px solid gray; zoom:80%;">
 
 
-![alt_text](images/image27.png "image_tooltip")
+Conversations by &lt; List-of-all-Disposition Sets>: Displays the Conversations by &lt;List-of-all-Disposition-Sets> to allow users to select a Disposition Set from the list.
 
 
-Conversations by &lt; List-of-all-Disposition Sets>: Displays the Conversations by &lt;List-of-all-Disposition-Sets> to allow users to select a Disposition Set from the list. \
-
-
-<p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image28.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image28.png "image_tooltip")
+<img src="../images/conversations-by.png" alt="Conversations By" title="Conversations By" style="border: 1px solid gray; zoom:80%;">
 
 
 * The Resolution Disposition Set is marked as default and appears as the default option in Disposition & Notes on the Live Interactions pane of the Agent Console. For additional information on Disposition Sets, refer to Disposition Sets.
 
+    <img src="../images/resolution-disposition-set.png" alt="Resolution Disposition Set" title="Resolution Disposition Set" style="border: 1px solid gray; zoom:80%;">
 
-<p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image29.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image29.png "image_tooltip")
 
 * The multi-colored progress bar appears only for the codes in the selected Disposition Set.
 * Separate progress bars appear below each Disposition Code.
 
 Average Satisfaction Rating: Displays the customer satisfaction rating based on the count of survey responses.
 
-
-
-<p id="gdcalert30" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image30.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert31">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image30.png "image_tooltip")
+<img src="../images/average-satisfaction-rating.png" alt="Average Satisfaction Rating" title="Average Satisfaction Rating" style="border: 1px solid gray; zoom:80%;">
 
 
 Customer Satisfaction by Channel: This section displays channel-wise customer satisfaction metrics based on survey responses.
 
-
-
-<p id="gdcalert31" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image31.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert32">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image31.png "image_tooltip")
-
+<img src="../images/customer-satisfaction-by-channel.png" alt="Customer Satisfaction by Channel" title="Customer Satisfaction by Channel" style="border: 1px solid gray; zoom:80%;">
 
 
 # **Agent Performance**
 
-This section displays agent performance metrics for all conversations (call, chat, e-mail). 
+This section displays agent performance metrics for all conversations (call, chat, e-mail).
 
 
-<p id="gdcalert32" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image32.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert33">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image32.png "image_tooltip")
-
+<img src="../images/agent-performance.png" alt="Agent Performance" title="Agent Performance" style="border: 1px solid gray; zoom:80%;">
 
 
 # **Queue Performance**
@@ -415,11 +253,7 @@ This section displays agent performance metrics for all conversations (call, cha
 This section displays queue performance metrics for all conversations (call, chat, e-mail).
 
 
-<p id="gdcalert33" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image33.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert34">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image33.png "image_tooltip")
-
+<img src="../images/queue-performance.png" alt="Q ueue Performance" title="Queue Performance" style="border: 1px solid gray; zoom:80%;">
 
 
 #  **About Queues and Agents Fields**
