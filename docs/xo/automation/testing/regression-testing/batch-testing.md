@@ -6,7 +6,7 @@ The **Batch Testing** feature helps you discern the ability of your bot to corre
 
 **Note**: The Batch Testing dashboard displays the summary of test coverage, performance, and training recommendations for multiple test suites based on validations of the intent identification capabilities of your NLU model. The **Health and Monitoring** dashboard is a one-stop place that displays this information for the individual test suite(s) the user selects. [Learn More](../health-and-monitoring/virtual-assistants-health-and-monitoring/){:target="_blank"}.
 
-To conduct a batch test, you can use predefined test suites available in the builder or create your own custom test suites. Based on your requirement, the test suites can be run to view the desired results. This option can be accessed from the **Testing -> Regression Testing -> Batch Testing** option from the left navigation menu.
+To conduct a batch test, you can use predefined test suites available in the builder or create your own custom test suites. Based on your requirement, the test suites can be run to view the desired results. This option can be accessed from the **Automation > Testing > Regression Testing** from the left navigation menu, and then the **Batch Testing** tab..
 
 
 ## **Best Practices**
@@ -796,7 +796,7 @@ table, th, td {
 
 ### Running Test Suites
 
-The following steps guide you on how to run a batch test on your bot and get a detailed analytical report on the utterances based on the test results. To get started, go to Build > Testing > **Batch Testing**.
+The following steps guide you on how to run a batch test on your bot and get a detailed analytical report on the utterances based on the test results. To get started, go to **Automation > Testing > Regression Testing**, select **Batch Testing** tab.
 
 !!! note
 
@@ -830,11 +830,11 @@ You can cancel an ongoing batch test execution in either **_Published_** or **_I
 **Steps to Cancel an Ongoing Batch Test Execution:**
 
 
-1. Navigate to **Build** > **Testing** > **Batch Testing** on the Bot Builder.
+1. Navigate to **Automation > Testing > Regression Testing**, select **Batch Testing** tab on the Bot Builder.
 2. When the required test suite is running, click the **Cancel** icon.  
 <img src="../images/batch-testing-cancel-img1.png" alt="Click Cancel" title="Click Cancel" style="border: 1px solid gray; zoom:50%;"/> 
 
-3. Click **Confirm** in the confirmation dialog.  
+3. Click **Yes** in the confirmation dialog.  
 <img src="../images/batch-testing-cancel-img2.png" alt="Confirm" title="Confirm" style="border: 1px solid gray; zoom:50%;"/>
 
 The test execution is canceled, and a confirmation message is displayed.

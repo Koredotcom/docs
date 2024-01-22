@@ -11,7 +11,7 @@ The Platform provides out-of-the-box support for Microsoft Translator and Google
 
 To enable automatic translation using Microsoft Translation Services, please follow the steps below:
 
-1. Go to **Build > Configurations > Languages > Translation Configurations**.
+1. Go to **App Settings > Language Management > Translation Configurations**.
 2. Select **Microsoft Translator**.
 3. Provide the **API Key** of your Microsoft Translator API service.[ Learn More.](https://www.microsoft.com/en-us/translator/business/){:target="_blank"}
 4. Click **Save** to complete the setup.
@@ -23,7 +23,7 @@ To enable automatic translation using Microsoft Translation Services, please fol
 
 To enable automatic translation using Google Translation Services, please follow the steps below: 
 
-1. Go to **Build > Configurations > Languages > Translation Configurations**.
+1. Go to **App Settings > Language Management > Translation Configurations**.
 2. Select **Google Translator**.
 3. Provide the **API Key** of your Google Translation API service. [Learn More.](https://cloud.google.com/translate){:target="_blank"}
 4. Click **Save** to complete the setup.
@@ -65,7 +65,7 @@ Here is how custom translation services work:
 
 ### Enabling a Custom Translation Engine
 
-1. Go to **Build > Configurations > Languages > Translation Configurations**.
+1. Go to **App Settings > Language Management > Translation Configurations**.
 2. Select **Custom**, and choose **Add Custom Engine** from the dropdown.  
 <img src="../images/mts-img3-custom-translation-config-2.png" alt="Add custom engine" title="Add custom engine" style="border: 1px solid gray;zoom:50%;"/>
 
