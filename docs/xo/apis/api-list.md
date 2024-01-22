@@ -135,7 +135,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
   <tr>
    <td><a href="../enable-existing-language">Enable an existing Language</a>
    </td>
-   <td>To enable an <a href="https://developer.kore.ai/docs/bots/advanced-topics/multi-lingual/building-multi-language-bots/#Supported_Bot_Languages">existing language</a> for a virtual assistant.
+   <td>To enable an <a href="/app-settings/language-management/building-multi-language-bots">existing language</a> for a virtual assistant.
    </td>
    <td>Languages Configuration.
    </td>
@@ -510,10 +510,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
   </tr>
 </table>
 
-
-
 ## Analytics APIs
-
 
 <table>
   <tr>
@@ -646,10 +643,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
   </tr>
 </table>
 
-
-
 ## Admin APIs
-
 
 <table>
   <tr>
@@ -790,10 +784,7 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
   </tr>
 </table>
 
-
-
 ## Data (Data Table) Access APIs
-
 
 <table>
   <tr>
