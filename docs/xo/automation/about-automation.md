@@ -4,7 +4,7 @@ hide:
   - feedback
 ---
 # About Automation
-Learn how to use the Experience Optimization (XO) Platform that seamlessly blends conversational AI intelligence and generative AI innovation, offering you the tools to create scalable and memorable customer experiences. It empowers businesses with advanced capabilities to build engaging conversations with customers and employees. The platform is recognized as the world's most secure, credible, and scalable solution for generative and conversational AI. Using this no-code platform, you can construct intelligent virtual assistants, integrating both large language models (LLM) and generative AI capabilities to enhance customer engagement through everlasting conversations in their chosen language and communication channels.
+The Automation module offers AI-powered sophisticated tools for creating virtual assistants that handle customer interactions through intelligent automation. Define specific use cases and utilize advanced Natural Language Processing (NLP) to handle complex interactions. Empower virtual assistants to handle interruptions and provide clarifications for more natural dialogues. The module also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
 
 <kr-grid type="g2">
     <kr-grid-item>

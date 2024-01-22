@@ -24,16 +24,15 @@ Steps to create a Client App from the XO Platform:
 3. On the Create Client App page, enter a **name** for the app.
 4. Select **Enforce JTI**, **JWE**, or both as per your requirements to secure the connections with the Platform:
     * **Enforce JTI (JWT ID) Claim** – Once enabled, the Platform accepts the requests only from calls with the JTI Claim in the requests and those without JTI Claim are rejected.
-    * **Enforce JWE Encryption** (Generating JWT token) – To access the XO Platform’s public APIs, the application making the API request requires authentication. Kore.ai uses the JWT (JSON Web Token) mechanism to handle the authentication. For a quick overview of the JWT token, read [Introduction to JWT tokens](https://jwt.io/introduction/). \
+    * **Enforce JWE Encryption** (Generating JWT token) – To access the XO Platform’s public APIs, the application making the API request requires authentication. Kore.ai uses the JWT (JSON Web Token) mechanism to handle the authentication. For a quick overview of the JWT token, read [Introduction to JWT tokens](https://jwt.io/introduction/).
+    ![alt_text](images/image2.png "image_tooltip")
 
+5. Click **Next** and **Done**. You are directed to the Manage Apps page, which lists all the apps associated with this virtual assistant. 
+6. Click the app name or anywhere in the row to see the app’s details, such as **Bot Name**, **Bot ID**, **Client ID**, and **Client Secret**. Also, the App Usage column lists where this app is used – Web SDK, BotKit, APIs, WebHook and IVR Channels. 
 
-![alt_text](images/image2.png "image_tooltip")
-
-5. Click **Next** and **Done**. \
-You are directed to the Manage Apps page, which lists all the apps associated with this virtual assistant. 
-6. Click the app name or anywhere in the row to see the app’s details, such as **Bot Name**, **Bot ID**, **Client ID**, and **Client Secret**. Also, the App Usage column lists where this app is used – Web SDK, BotKit, APIs, WebHook and IVR Channels. \
-**Note:** Use the **Client ID** and **Client Secret** of the client app from above to generate a JWT token. This token must be passed as a part of each API request for authorization.
-7. To delete apps, click the **Delete** icon against the respective app. \
+!!!note
+    Use the **Client ID** and **Client Secret** of the client app from above to generate a JWT token. This token must be passed as a part of each API request for authorization.
+7. To delete apps, click the **Delete** icon against the respective app. 
 **Note:** Only the Bot Owner can delete an app.
 
 
@@ -46,26 +45,19 @@ Steps to create a Client App from the Bot Admin Console:
 1. Log in to the Admin Console.
 2. Go to **Security & Control** > **API Scopes**.
 3. On the API Scopes page, click **New**.
-4. Click the **Manage Apps** link to create a new app. \
-
-
-
-
+4. Click the **Manage Apps** link to create a new app. 
 ![alt_text](images/image3.png "image_tooltip")
 
 5. Click **New App** and then do the following:
     1. Enter a name.
     2. Select **Enforce JTI**, **JWE**, or both as per your requirements.
-6. Click** Save**.
-
+6. Click **Save**.
 
 ## Data Tables
 
 Access control from the Data Tables module is different from the XO Platform and Bot Admin Console access controls.
 
 You can define apps to securely access the data from data tables and data views.
-
-
 
 * You can create one or more apps, [Learn more](https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/#App_Definition).
 * These apps can be used for:
@@ -93,43 +85,28 @@ Steps to associate API Scopes to a Client App from the XO Platform:
 
 
 
-1. Go to **Deploy** > **API & EXTENSIONs** > **API Scopes** and click **Create API Scope**. \
-
-
-
-
+1. Go to **Deploy** > **API & EXTENSIONs** > **API Scopes** and click **Create API Scope**.
 ![alt_text](images/image5.png "image_tooltip")
 
 2. On the New API Scope Mapping page, from the **App** drop-down list, select an existing client app for authentication.
-3. The app’s **Client ID** and **Client Secret** are displayed on the screen. Copy these values. \
-
-
-
-
+3. The app’s **Client ID** and **Client Secret** are displayed on the screen. Copy these values. 
 ![alt_text](images/image6.png "image_tooltip")
 
 4. Under the Scopes section, select the appropriate scopes to allow the client app to access the respective APIs. (If appropriate scopes are not selected, then the client apps cannot access the APIs).
 5. Click **Save**.
 
-
 ### Adding API Scopes in the Bots Admin Console
 
 Steps to associate API Scopes to a Client App from the Bot Admin Console:
 
-
-
 1. Log in to the Admin Console.
 2. Go to **Security & Control** > **API Scopes**.
 3. On the API Scopes page, click **New**.
-4. On the New API Scope Mapping page, from the **App **drop-down list, select an existing client app for authentication.
-5. Click the** Manage Apps **link to create a new app.
+4. On the New API Scope Mapping page, from the **App** drop-down list, select an existing client app for authentication.
+5. Click the **Manage Apps** link to create a new app.
 6. Once you select an app, the **Client ID** and **Client Secret** appear. Copy these values.
 7. Under the Scopes section, select the appropriate Scopes to allow the client app to access the respective APIs.[Learn more](https://developer.kore.ai/docs/bots/bot-admin/security-control/security-module-overview/#API_Scopes).
-8. Click **Save**. The app and associated scopes are listed on the API Scopes page. \
-
-
-
-
+8. Click **Save**. The app and associated scopes are listed on the API Scopes page. 
 ![alt_text](images/image7.png "image_tooltip")
 
 9. If you want to delete an app and its associated API Scope, click the **Delete** icon against the respective app.
@@ -286,8 +263,8 @@ Steps to associate API Scopes to a Client App from the Bot Admin Console:
 </table>
 
 
-**Note:** Once enabled, the API Scopes must be Published. [Follow the Publish](https://developer.kore.ai/docs/bots/publish/publishing-bot/#Publishing_Tasks) process to ensure that the API Scopes are selected.
-
+!!!note
+    Once enabled, the API Scopes must be Published. [Follow the Publish](/deploy/publishing-bot) process to ensure that the API Scopes are selected.
 
 ## Generating the JWT Token
 
@@ -295,16 +272,16 @@ Once you have associated the API scopes with a client app, you must generate the
 
 Steps to generate the token:
 
-
-
 1. Visit [https://developer.kore.ai/tools/jwt/](https://developer.kore.ai/tools/jwt/).
 2. In the **Algorithm** drop-down list, select **HS256**.
-3. Scroll down to the **Decoded** section, and update the **Playload **and the **Secret**.
-        1. Replace the content of the **Payload** field with the code block shown below, and add the Client ID of the app copied in the previous section. \
-`{ \
-"sub": "1234567890", \
-"appId": "add-Client-ID-here" \
-}`
-4. **Note:** The XO Platform validates the token only when it is entered exactly as “appId”. Don’t use “App ID”, “appid”, or “app ID”.
-5. In the **Verify Signature** field, replace **your-256-bit-secret** with the Client Secret copied in the previous section.
-* Click **Copy JWT** to copy the generated token. You can pass this token as a part of the API request for authorization.
+3. Scroll down to the **Decoded** section, and update the **Payload** and the **Secret**.
+        1. Replace the content of the **Payload** field with the code block shown below, and add the Client ID of the app copied in the previous section.
+        ```json
+        {
+            "sub": "1234567890",
+            "appId": "add-Client-ID-here"
+        }```
+        Note that the XO Platform validates the token only when it is entered exactly as “appId”. Don’t use “App ID”, “appid”, or “app ID”.
+
+4. In the **Verify Signature** field, replace **your-256-bit-secret** with the Client Secret copied in the previous section.
+5. Click **Copy JWT** to copy the generated token. You can pass this token as a part of the API request for authorization.
