@@ -85,8 +85,6 @@ The search feature on Interactions allows supervisors to do the following:
 
 How it works:
 
-
-
 1. Enter a word or phrase in the search field and click the **Search** icon.
 
 2. The count of search results is displayed.
@@ -140,13 +138,12 @@ To avoid repeatedly filtering your choices, you can create and save multiple fil
 
     <img src="../images/create-filters-3.png" alt="Create Filters 3" title="Create Filters 1" style="border: 1px solid gray; zoom:80%;">
 
-
-Select from the below available options:
+    Select from the below available options:
     1. Clear – Clears the selection.
     2. Save & Apply – Saves the filter, and it appears when selected.
     3. Apply – Applied for one instance and not saved.
-4. Click **Save & Apply**.
 
+4. Click **Save & Apply**.
 5. On the pop-up window, enter a name for the filter and click **Save & Apply**.
 
     <img src="../images/create-filters-4.png" alt="Create Filters 4" title="Create Filters 4" style="border: 1px solid gray; zoom:80%;">
@@ -167,7 +164,6 @@ The following Custom Tag fields are displayed:
     3. AND button to create a new clause
 
 <img src="../images/create-filters-1.png" alt="Create Filters 1" title="Create Filters 1" style="border: 1px solid gray; zoom:80%;">
-
 
 2. Select the values for the custom tag fields and click **AND** to create a new clause.
 
@@ -235,9 +231,9 @@ A confirmation is displayed and a copy of the filter is created.
 
     <img src="../images/mark-as-default-1.png" alt="Mark as Default 1" title="Mark as Default 1" style="border: 1px solid gray; zoom:80%;">
 
-<2. A confirmation message is displayed and the filter is marked as default.
+2. A confirmation message is displayed and the filter is marked as default.
 
-<img src="../images/mark-as-default-2.png" alt="Mark as Default 2" title="Mark as Default 2" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/mark-as-default-2.png" alt="Mark as Default 2" title="Mark as Default 2" style="border: 1px solid gray; zoom:80%;">
 
 
 ### **Delete Filter**
