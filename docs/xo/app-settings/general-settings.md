@@ -2,8 +2,8 @@
 
 To modify the general settings of a bot:
 
-1. Select the **Build** tab from the top.
-2. Click **Configuration > General Settings**.  
+1. Select the **App Settings** from the left side menu.
+2. Click **App Profile**.  
 <img src="../images/app-prof-img1-build-configurations-general-settings.png" alt="General Settings" title="General Settings" style="border: 1px solid gray;zoom:50%;"/>
 
 ## General Bot Settings
@@ -70,7 +70,7 @@ Once <strong>Target Audience</strong> is defined and saved, you cannot change th
    </td>
   </tr>
   <tr>
-   <td>Subdomain (Tenancy)
+   <td>Subdomain (aka Tenancy URL)
    </td>
    <td>Click <strong>Yes</strong> to enable the use of tenancy. When the tenancy is defined, the end-user is prompted to enter a tenant name as part of the URL for the Bot, for example, <em>kore</em>, for the <em>www.<strong>kore</strong>.someWebService.com</em> tenant-specific URL. When enabled define the following properties:
 <ul>
@@ -120,8 +120,8 @@ In Bot Builder, each Bot and task contains a set of predefined error messages al
 There are approximately 25 HTTP Status codes defined by default for a Bot or task. **To customize an HTTP Status code**
 
   1. Open the Bot or task in Bot Builder
-  2. Select **Build** tab from top menu
-  3. From the left menu click **Configurations -> General Settings**
+  2. Select **App Settings** from left side menu.
+  3. Click **App Profile**
   4. Scroll down to locate the **Error Messages** section.
   5. Click the **Edit** <img src="../images/app-prof-editicon.png" width="20" style="border: 1px solid gray;"> icon for the code that you want to customize to open the **Setup Error Message** dialog.  
     
