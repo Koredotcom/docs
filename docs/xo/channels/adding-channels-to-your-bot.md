@@ -5,7 +5,7 @@ By default, your Virtual Assistant is not available to users unless you define o
 
 You can add channels to your VA from the **Channels & Flows** > **Channels** > **Digital** section. Channels supported by the Kore.ai XO Platform are categorized based upon their functionality and usage.
 
-<img src="./images/channel-enablement-img1-channels-list.png" alt="Channels supported by the Kore.ai XO Platform" title="Channels supported by the Kore.ai XO Platform" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/channel-enablement-img1-channels-list.png" alt="Channels supported by the Kore.ai XO Platform" title="Channels supported by the Kore.ai XO Platform" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Enable a Channel
