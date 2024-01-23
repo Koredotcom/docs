@@ -8,13 +8,13 @@ AgentAssist is your agent’s personal intelligent virtual assistant. The AgentA
 
 <kr-grid type="g2">
     <kr-grid-item>
-        <img src="../images/lconusers.svg" style="zoom:200%;"></img>
+        <img src="../images/Iconusers.svg" style="zoom:200%;"></img>
         <kr-grid-title>Agent Experience</kr-grid-title>
         <kr-grid-desc>Enable Real-time Agent Coaching based on the analysis of agent utterances and speech. Empower agents by offering structured guidance for handling customer interactions using Playbook.</kr-grid-desc>
         <a href="">Learn More</a>
     </kr-grid-item>
     <kr-grid-item>
-        <img src="../images/lconsettings.svg" style="zoom:200%;"></img>
+        <img src="../images/Iconsettings.svg" style="zoom:200%;"></img>
         <kr-grid-title>Events and Widget Configuration</kr-grid-title>
         <kr-grid-desc>Configure Welcome Events for a consistent start-of-the-conversation experience. Set up the AgentAssist widget, enabling agents to collaborate one-on-one with AgentAssist during live conversations with customers.</kr-grid-desc>
         <a href="">Learn More</a>
