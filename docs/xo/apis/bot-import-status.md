@@ -29,7 +29,7 @@ To get the status of the bot import request initiated using the **Import Bot** A
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -47,9 +47,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
 ## Query Parameters
-
 
 <table>
   <tr>
@@ -71,16 +69,12 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   <tr>
    <td><strong>BotImportBIR</strong>
    </td>
-   <td>bir-xxxxxxx-xxx-xxxx-xxxxx-xxxxxxxxxx. The BIR ID is found in the response of the <a href="https://developer.kore.ai/docs/bots/api-guide/import-bot-as-a-new-bot-api/">Import Bot as a New Bot API</a> endpoint.
+   <td>bir-xxxxxxx-xxx-xxxx-xxxxx-xxxxxxxxxx. The BIR ID is found in the response of the <a href="../import-bot-as-a-new-bot-api">Import Bot as a New Bot API</a> endpoint.
    </td>
    <td>Required
    </td>
   </tr>
 </table>
-
-
- 
-
 
 ## Sample Request
 
@@ -91,17 +85,12 @@ curl -X GET \
   -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 ```
 
-
- 
-
-
 ## Body Parameters
 
 No Body Parameters passed.
 
 
 ## Sample Response
-
 
 ```json
 {
