@@ -9,11 +9,11 @@ To create the Syniverse app, follow the steps below:
 
 1. Log in to the [Syniverse developer portal](https://developer.syniverse.com/) and navigate to the **Applications** section.
 2. Click **Create New** if you want to create your first app. If you want to access existing apps, click **Your App**.
-<img src="../images/Syniverse1.png" alt="Syniverse channel" title="Syniverse channel" style="border: 1px solid gray; zoom:70%;">
+<img src="../channels/images/Syniverse1.png" alt="Syniverse channel" title="Syniverse channel" style="border: 1px solid gray; zoom:70%;">
 
 3. In the **Create App** screen, enter the app name, description, select account, and click **Save**.
 
-<img src="../images/Syniverse2.png" alt="Syniverse app" title="Syniverse app" style="border: 1px solid gray; zoom:70%;">
+<img src="../channels/images/Syniverse2.png" alt="Syniverse app" title="Syniverse app" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Capture Auth Keys
@@ -23,7 +23,7 @@ Once you create an app, to capture Auth keys, follow the steps below:
 1. Navigate to the created app in the **Applications** section and open the app.
 2. Use the **Auth Keys **(see the following screenshot) to complete the configuration in the Kore.ai platform and send the SMS via bot.
 
-<img src="../images/Syniverse3.png" alt="Syniverse Auth Keys" title="Syniverse Auth Keys" style="border: 1px solid gray; zoom:70%;">
+<img src="../channels/images/Syniverse3.png" alt="Syniverse Auth Keys" title="Syniverse Auth Keys" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Delivery Configurations
@@ -32,11 +32,11 @@ The next step is to configure how messages will be delivered via the Webhook URL
 
 1. Navigate to the **Event Manager** on the top menu bar and select **Delivery Configurations**.
 
-<img src="../images/Syniverse4.png" alt="Syniverse Delivery Configuration" title="Syniverse Delivery Configuration" style="border: 1px solid gray; zoom:70%;">
+<img src="../channels/images/Syniverse4.png" alt="Syniverse Delivery Configuration" title="Syniverse Delivery Configuration" style="border: 1px solid gray; zoom:70%;">
 
 
 2.  If you want to use an existing delivery configuration to set up the bot’s webhook URL, select one of the configurations from the displayed table (see the following screenshot), else, click **New Delivery Configuration**.
-<img src="../images/Syniverse5.png" alt="Syniverse webhook URL" title="Syniverse webhook URL" style="border: 1px solid gray; zoom:70%;">
+<img src="../channels/images/Syniverse5.png" alt="Syniverse webhook URL" title="Syniverse webhook URL" style="border: 1px solid gray; zoom:70%;">
 
 3. In the **Create Delivery Configuration **pop-up, enter the following values:
   * Provide a **Delivery Configuration Name**.
@@ -52,10 +52,10 @@ To set up subscriptions, follow the steps below:
 
 1. Navigate to the **Event Manager** on the top menu bar and select **Subscriptions**.
 
-<img src="../images/Syniverse6.png" alt="Syniverse subscriptions" title="Syniverse subscriptions" style="border: 1px solid gray; zoom:70%;">  
+<img src="../channels/images/Syniverse6.png" alt="Syniverse subscriptions" title="Syniverse subscriptions" style="border: 1px solid gray; zoom:70%;">  
 
 2.  If there are existing subscriptions, select one from the table to set up the event subscription (see the following screenshot), else, click **New Subscription**.
-<img src="../images/Syniverse7.png" alt="Syniverse channel" title="Syniverse channel" style="border: 1px solid gray; zoom:70%;">
+<img src="../channels/images/Syniverse7.png" alt="Syniverse channel" title="Syniverse channel" style="border: 1px solid gray; zoom:70%;">
 
 3. In the **New Topic Subscription **pop-up, enter the following values:
   * **Topic:** Select **SCG Message** from the drop-down.

@@ -8,7 +8,7 @@ The Conversation testing framework tracks the transition coverage and determines
 
 ## Conversation Testing Landing Page
 
-Go to **Build → Testing → Conversation Testing** to access the Conversation Testing page. It lists all the Test Suites with details in a grid. All the Test Suite details like the Test Suite name, the execution status in the Result column, Duration of execution, Number of passed and failed test cases, Number of test cases not executed, the percentage of passed test cases, and tags added to the test suite during its creation are all displayed in the grid. Using tags, you can easily organize the test suites and filter them.
+Go to **Automation > Testing > Regression Testing** from the left navigation menu, and then the **Conversation Testing** tab. to access the Conversation Testing page. It lists all the Test Suites with details in a grid. All the Test Suite details like the Test Suite name, the execution status in the Result column, Duration of execution, Number of passed and failed test cases, Number of test cases not executed, the percentage of passed test cases, and tags added to the test suite during its creation are all displayed in the grid. Using tags, you can easily organize the test suites and filter them.
 
 <img src="../images/ct-main.png" alt="Conversation Testing Landing" title="Conversation Testing Landing" style="border: 1px solid gray; zoom:50%;"/> 
 

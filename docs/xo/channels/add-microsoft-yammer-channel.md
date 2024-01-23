@@ -24,14 +24,14 @@ To add the Yammer channel, follow the below steps:
 4. To create an app, click **Register New App**. Enter the required details in the listed fields.
 5. Copy the _Redirect URL_ from the **Configurations** tab of the Yammer Channel page and enter it in the **Redirect URL **field.
 6. Click **Continue** to create the app.
-<img src="../images/Yammer-1.png" alt="add Yammer channel" title="add Yammer channel" style="border: 1px solid gray; zoom:70%;">
+<img src="../channels/images/Yammer-1.png" alt="add Yammer channel" title="add Yammer channel" style="border: 1px solid gray; zoom:70%;">
 
 7. After app creation, you are redirected to the **App Details** page. Capture the **Client ID** and **Client Secret** of your Yammer channel and provide them in the **Configurations** tab of LINE channel page.
-<img src="../images/Yammer-2.png" alt="yammer configurations" title="yammer configurations" style="border: 1px solid gray; zoom:70%;">
+<img src="../channels/images/Yammer-2.png" alt="yammer configurations" title="yammer configurations" style="border: 1px solid gray; zoom:70%;">
 
 8. To deploy bot to your enterprise, go to the **App Directory** section and enter the required information in the respective fields.
 9. Click **Deploy** to deploy the bot to your enterprise users.
-<img src="../images/Yammer-3.png" alt="deploy yammer" title="deploy yammer" style="border: 1px solid gray; zoom:70%;">
+<img src="../channels/images/Yammer-3.png" alt="deploy yammer" title="deploy yammer" style="border: 1px solid gray; zoom:70%;">
 
 10. Go to the **Configurations** tab on the Yammer channel page to complete the channel setup.
 11. Click **Authorize** to generate a developer access token which enables Kore.ai bot platform to access the App. Enter all the details in other required fields. Select **Yes** and click **Save** to enable Yammer Channel.
@@ -44,7 +44,7 @@ To edit the Yammer channel, follow the below steps:
 
 1. Hover over the channel and click to modify. You can make necessary updates to your channel configurations and save them.
 2. You can also disable or delete the channel information by clicking the **Settings** icon as shown in the image.
-<img src="../images/Yammer-4.png" alt="settings" title="settings" style="border: 1px solid gray; zoom:70%;">
+<img src="../channels/images/Yammer-4.png" alt="settings" title="settings" style="border: 1px solid gray; zoom:70%;">
 
 Select one of the following commands to modify the channel:
 

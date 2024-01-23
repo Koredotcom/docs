@@ -601,7 +601,7 @@ If the assistant fails to detect a user’s language with high confidence, it re
   
     **Note:** The current conversation will be discarded in case the user wants to switch languages.
 
-2. Language selection settings – In addition, you may want to configure the language selection options. From the menu under the **Build** tab, click **Configurations -> Languages** Under **Language Selection Logic** (scroll down for the option), for **language selection time frame**, set to one of the following:
+2. Language selection settings – In addition, you may want to configure the language selection options. From the **App Settings** , click **Configurations -> Language Management** Under **Language Selection Logic** (scroll down for the option), for **language selection time frame**, set to one of the following:
     1. **Lifetime**: The auto-detected language will be set as the user’s preferred language and used for all subsequent communications until the user interacts in another enabled language anytime later. If the user starts to talk in another enabled language, the virtual assistant changes to that language.
     2. **Per Session**: Detects the user’s language at the beginning of every session and responds accordingly.
     3. **Every User Message**: Identifies the user’s language from every utterance. In case a change is detected, the VA will get a confirmation from the user regarding the switch and proceed as per the user response.  
