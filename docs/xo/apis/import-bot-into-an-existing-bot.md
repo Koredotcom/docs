@@ -146,7 +146,7 @@ curl -X POST \
    </td>
    <td>Required
    </td>
-   <td>“Bot Definition File id” <a href="https://developer.kore.ai/docs/bots/api-guide/upload-file-api/">Learn more </a>on obtaining the Definition <em>file ID</em>.
+   <td>“Bot Definition File id” <a href="../upload-file">Learn more </a>on obtaining the Definition <em>file ID</em>.
    </td>
   </tr>
   <tr>
@@ -154,7 +154,7 @@ curl -X POST \
    </td>
    <td>Required
    </td>
-   <td>“Bot Configuration File id” <a href="https://developer.kore.ai/docs/bots/api-guide/upload-file-api/">Learn more </a>on obtaining the Configuration <em>file ID</em>.
+   <td>“Bot Configuration File id” <a href="../upload-file">Learn more </a>on obtaining the Configuration <em>file ID</em>.
    </td>
   </tr>
   <tr>
@@ -171,8 +171,7 @@ curl -X POST \
    <td>Required
    </td>
    <td>All bot components are imported by default. If needed, you may specify the components to be included in the import.
-<p>
-Usage:
+    Usage:
 <p>
 <code>"importOptions": {</code>
 <p>
@@ -212,14 +211,14 @@ Usage:
    </td>
    <td>Optional
    </td>
-   <td>This will indicate incremental import options for the ML utterances, whether to replace or append. <a href="https://developer.kore.ai/docs/bots/bot-settings/bot-management/bot-management-2/#Steps_in_Importing_to_an_Existing_Bot">Learn more</a>.
+   <td>This will indicate incremental import options for the ML utterances, whether to replace or append. <a href="/manage-assistant/bot-management/#importing-an-assistant">Learn more</a>.
     Usage:
-      <code>"options": {
+      <pre>"options": {
                 "utterances": {
                 "replace": true
                 "append":false
               }
-      </code>
+      </pre>
    </td>
   </tr>
 </table>
