@@ -2,7 +2,6 @@
 
 To initiate the addition and enablement of a new language for a virtual assistant.
 
-
 <table>
   <tr>
    <td><strong>Method</strong>
@@ -27,7 +26,7 @@ To initiate the addition and enablement of a new language for a virtual assistan
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>

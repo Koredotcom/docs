@@ -30,7 +30,7 @@ To import the bot definition file to an existing bot for a current version upgra
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -48,10 +48,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
-
 ## Query Parameters
-
 
 <table>
   <tr>
@@ -80,10 +77,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
-
 ## Sample Request for the Universal Bot
-
 
 ```json
 curl -X POST \
@@ -122,10 +116,7 @@ curl -X POST \
 }'
 ```
 
-
-
 ## Sample Request
-
 
 ```json
 curl -X POST \
@@ -139,10 +130,7 @@ curl -X POST \
 }'
 ```
 
-
-
 ## Body Parameters
-
 
 <table>
   <tr>
@@ -225,26 +213,19 @@ Usage:
    <td>Optional
    </td>
    <td>This will indicate incremental import options for the ML utterances, whether to replace or append. <a href="https://developer.kore.ai/docs/bots/bot-settings/bot-management/bot-management-2/#Steps_in_Importing_to_an_Existing_Bot">Learn more</a>.
-<p>
-Usage:
-<p>
-<code>"options": {</code>
-<p>
-<code>     "utterances": {</code>
-<p>
-<code>        "replace": true</code>
-<p>
-<code>	"append":false</code>
-<p>
-<code>        }</code>
+    Usage:
+      <code>"options": {
+                "utterances": {
+                "replace": true
+                "append":false
+              }
+      </code>
    </td>
   </tr>
 </table>
 
-
-**Universal Bot \
-**For the Universal bot, the _import_ the _importOptions_ may differ as shown below:
-
+**Universal Bot**
+For the Universal bot, the _import_ the _importOptions_ may differ as shown below:
 
 ```json
 "importOptions": {
@@ -274,13 +255,7 @@ Usage:
 	"customDashboard": true
 }
 ```
-
-
- 
-
-
 ## Sample Response
-
 
 ```json
 {
