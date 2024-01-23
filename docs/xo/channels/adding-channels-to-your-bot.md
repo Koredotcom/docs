@@ -5,7 +5,7 @@ By default, your Virtual Assistant is not available to users unless you define o
 
 You can add channels to your VA from the **Channels & Flows** > **Channels** > **Digital** section. Channels supported by the Kore.ai XO Platform are categorized based upon their functionality and usage.
 
-<img src="../channels/images/channel-enablement-img1-channels-list.png" alt="Channels supported by the Kore.ai XO Platform" title="Channels supported by the Kore.ai XO Platform" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/channel-enablement-img1-channels-list.png" alt="Channels supported by the Kore.ai XO Platform" title="Channels supported by the Kore.ai XO Platform" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Enable a Channel
@@ -16,7 +16,7 @@ To enable one or more channels for your VA, follow the below steps:
 2. Go to **Deploy > Channels**.
 3. Click the name of the channel you want to add. This opens the instructions page to install the channel.
 4. Click **Next** or the **Configuration** tab to open the configuration page for the channel. This image below shows the configuration page of the Skype for Business channel.  
-<img src="../channels/images/channel-enablement-img2-instructions.png" alt="Channel Configuration page" title="Channel Configuration page" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/channel-enablement-img2-instructions.png" alt="Channel Configuration page" title="Channel Configuration page" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
    
@@ -41,7 +41,7 @@ To enable/disable or delete the channel, hover over it in the channels list and 
 
     Please also note that channel edits will only take effect within your live assistant after publishing the In Development version of the VA with the channel enabled. For more information, please see Publishing your Virtual Assistant.
 
-<img src="../channels/images/channel-enablement-img3-delete-disable-channel.png" alt="Delete/Disable channel" title="Delete/Disable channel" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/channel-enablement-img3-delete-disable-channel.png" alt="Delete/Disable channel" title="Delete/Disable channel" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Available Channels
@@ -55,116 +55,116 @@ Click the icon of the channel you want to add, and then configure the channel to
 <table style="table-layout: fixed; width: 100%;">
   
   <tr>
-   <td style="width:25%;"><a href="../channels/add-cisco-jabber-channel" target="_blank">Cisco Jabber</a>
+   <td style="width:25%;"><a href="./add-cisco-jabber-channel" target="_blank">Cisco Jabber</a>
    <br><br><br><br>
-   <a href="../channels/add-cisco-jabber-channel" target="_blank"><img src="../channels/images/logo1-jabber.png" width="50"></a>
+   <a href="./add-cisco-jabber-channel" target="_blank"><img src="./images/logo1-jabber.png" width="50"></a>
    </td>
 
 
-   <td style="width:25%;"><a href="../channels/add-cisco-channel" target="_blank">Cisco Webex<br>Teams<br>(formerly<br>Cisco Spark)</a>
+   <td style="width:25%;"><a href="./add-cisco-channel" target="_blank">Cisco Webex<br>Teams<br>(formerly<br>Cisco Spark)</a>
    <br>
-   <a href="../channels/add-cisco-channel" target="_blank"><img src="../channels/images/logo2-cisco-webex-teams.png" width="50"></a>
+   <a href="./add-cisco-channel" target="_blank"><img src="./images/logo2-cisco-webex-teams.png" width="50"></a>
    </td>
 
 
-   <td style="width:25%;"><a href="../channels/add-cisco-tropo-channel" target="_blank">Cisco Tropo</a>
+   <td style="width:25%;"><a href="./add-cisco-tropo-channel" target="_blank">Cisco Tropo</a>
    <br><br><br><br>
-   <a href="../channels/add-cisco-tropo-channel" target="_blank"><img src="../channels/images/logo3-tropo.png" width="50"></a>
+   <a href="./add-cisco-tropo-channel" target="_blank"><img src="./images/logo3-tropo.png" width="50"></a>
    </td>
 
 
-   <td style="width:25%;"><a href="../channels/add-google-assistant-channel" target="_blank">Google<br>Assistant</a>
+   <td style="width:25%;"><a href="./add-google-assistant-channel" target="_blank">Google<br>Assistant</a>
    <br><br><br>
-   <a href="../channels/add-google-assistant-channel" target="_blank"><img src="../channels/images/logo4-google-assistant.png" width="50"></a>
+   <a href="./add-google-assistant-channel" target="_blank"><img src="./images/logo4-google-assistant.png" width="50"></a>
    </td>
    <td>
    </td>
   </tr>
 
   <tr>
-   <td><a href="../channels/add-genesys-chat-channel" target="_blank">Genesys Cloud<br>CX Messaging</a>
+   <td><a href="./add-genesys-chat-channel" target="_blank">Genesys Cloud<br>CX Messaging</a>
    <br><br>
-   <a href="../channels/add-genesys-chat-channel" target="_blank"><img src="../channels/images/logo5-genesys-chat-new-logo.png" width="90"></a>
+   <a href="./add-genesys-chat-channel" target="_blank"><img src="./images/logo5-genesys-chat-new-logo.png" width="90"></a>
    </td>
 
 
-   <td><a href="../channels/add-google-business-messaging-channel" target="_blank">Google Business<br>Messaging</a>
+   <td><a href="./add-google-business-messaging-channel" target="_blank">Google Business<br>Messaging</a>
    <br>
-   <a href="../channels/add-google-business-messaging-channel" target="_blank"><img src="../channels/images/logo6-gbm.png" width="50"></a>
+   <a href="./add-google-business-messaging-channel" target="_blank"><img src="./images/logo6-gbm.png" width="50"></a>
    </td>
 
 
-   <td><a href="../channels/add-google-chat" target="_blank">Google<br>Chat</a>
+   <td><a href="./add-google-chat" target="_blank">Google<br>Chat</a>
    <br><br>  
-   <a href="../channels/add-google-chat" target="_blank"><img src="../channels/images/logo7-google-chat.png" width="50"></a>
+   <a href="./add-google-chat" target="_blank"><img src="./images/logo7-google-chat.png" width="50"></a>
    </td>
 
 
-   <td><a href="../channels/add-kore-channel" target="_blank">Kore.ai</a>
+   <td><a href="./add-kore-channel" target="_blank">Kore.ai</a>
    <br><br><br>  
-   <a href="../channels/add-kore-channel" target="_blank"><img src="../channels/images/logo8-kore-ai.png" width="50"></a>
+   <a href="./add-kore-channel" target="_blank"><img src="./images/logo8-kore-ai.png" width="50"></a>
    </td>
 
 
-   <td><a href="../channels/add-live-person-channel" target="_blank">Live Person</a>
+   <td><a href="./add-live-person-channel" target="_blank">Live Person</a>
    <br><br>  
-   <a href="../channels/add-live-person-channel" target="_blank"><img src="../channels/images/logo9-live-person.png" width="50"></a>
+   <a href="./add-live-person-channel" target="_blank"><img src="./images/logo9-live-person.png" width="50"></a>
    </td>
   </tr>
 
   <tr>
-   <td><a href="../channels/add-mattermost-channel" target="_blank">Mattermost</a>
+   <td><a href="./add-mattermost-channel" target="_blank">Mattermost</a>
    <br><br><br>
-   <a href="../channels/add-mattermost-channel" target="_blank"><img src="../channels/images/logo10-mattermost.png" width="50"></a>
+   <a href="./add-mattermost-channel" target="_blank"><img src="./images/logo10-mattermost.png" width="50"></a>
    </td>
 
 
-   <td><a href="../channels/add-microsoft-teams-channel" target="_blank">Microsoft Teams</a>
+   <td><a href="./add-microsoft-teams-channel" target="_blank">Microsoft Teams</a>
    <br><br>
-   <a href="../channels/add-microsoft-teams-channel" target="_blank"><img src="../channels/images/logo11-ms-teams.png" width="50"></a>
+   <a href="./add-microsoft-teams-channel" target="_blank"><img src="./images/logo11-ms-teams.png" width="50"></a>
    </td>
 
 
-   <td><a href="../channels/add-naver-works-channel" target="_blank">Naver Works</a>
+   <td><a href="./add-naver-works-channel" target="_blank">Naver Works</a>
    <br><br><br>
-   <a href="../channels/add-naver-works-channel" target="_blank"><img src="../channels/images/logo12-naver.png" width="50"></a>
+   <a href="./add-naver-works-channel" target="_blank"><img src="./images/logo12-naver.png" width="50"></a>
    </td>
 
 
-   <td><a href="../channels/add-nice-incontact-channel" target="_blank">Nice inContact</a>
+   <td><a href="./add-nice-incontact-channel" target="_blank">Nice inContact</a>
    <br><br><br>
-   <a href="../channels/add-nice-incontact-channel" target="_blank"><img src="../channels/images/logo13-nice.png" width="50"></a>
+   <a href="./add-nice-incontact-channel" target="_blank"><img src="./images/logo13-nice.png" width="50"></a>
    </td>
 
 
-   <td><a href="../channels/add-google-rcs-channel" target="_blank">RCS Business<br>Messaging</a>
+   <td><a href="./add-google-rcs-channel" target="_blank">RCS Business<br>Messaging</a>
    <br>
-   <a href="../channels/add-google-rcs-channel" target="_blank"><img src="../channels/images/logo14-rcs.png" width="50"></a>
+   <a href="./add-google-rcs-channel" target="_blank"><img src="./images/logo14-rcs.png" width="50"></a>
    </td>
   </tr>
 
   <tr>
-   <td><a href="../channels/add-ringcentral-glip-channel" target="_blank">Glip by<br>RingCentral</a>
+   <td><a href="./add-ringcentral-glip-channel" target="_blank">Glip by<br>RingCentral</a>
    <br>
-   <a href="../channels/add-ringcentral-glip-channel" target="_blank"><img src="../channels/images/logo15-glip.png" width="50"></a>
+   <a href="./add-ringcentral-glip-channel" target="_blank"><img src="./images/logo15-glip.png" width="50"></a>
    </td>
 
 
-   <td><a href="../channels/add-ringcentral-engage-channel" target="_blank">Ringcentral<br>Engage</a>
+   <td><a href="./add-ringcentral-engage-channel" target="_blank">Ringcentral<br>Engage</a>
    <br>
-   <a href="../channels/add-ringcentral-engage-channel" target="_blank"><img src="../channels/images/logo16-ring-central.png" width="50"></a>
+   <a href="./add-ringcentral-engage-channel" target="_blank"><img src="./images/logo16-ring-central.png" width="50"></a>
    </td>
 
 
-   <td><a href="../channels/add-skype-business-channel" target="_blank">Skype for<br>Business</a>
+   <td><a href="./add-skype-business-channel" target="_blank">Skype for<br>Business</a>
    <br>  
-   <a href="../channels/add-skype-business-channel" target="_blank"><img src="../channels/images/logo17-skype-business.png" width="50"></a>
+   <a href="./add-skype-business-channel" target="_blank"><img src="./images/logo17-skype-business.png" width="50"></a>
    </td>
 
 
-   <td><a href="../channels/add-slack-channel" target="_blank">Slack</a>
+   <td><a href="./add-slack-channel" target="_blank">Slack</a>
    <br><br>
-   <a href="../channels/add-slack-channel" target="_blank"><img src="../channels/images/logo18-slack.png" width="50"></a>
+   <a href="./add-slack-channel" target="_blank"><img src="./images/logo18-slack.png" width="50"></a>
    </td>
 
    
@@ -173,27 +173,27 @@ Click the icon of the channel you want to add, and then configure the channel to
   </tr>
 
   <tr>
-   <td><a href="../channels/add-sunshine-conversations-channel" target="_blank">Sunshine<br>Conversations</a>
+   <td><a href="./add-sunshine-conversations-channel" target="_blank">Sunshine<br>Conversations</a>
    <br><br>  
-   <a href="../channels/add-sunshine-conversations-channel" target="_blank"><img src="../channels/images/logo19-sunshine-conversations.png" width="65"></a>
+   <a href="./add-sunshine-conversations-channel" target="_blank"><img src="./images/logo19-sunshine-conversations.png" width="65"></a>
    </td>
 
 
-   <td><a href="../channels/add-syniverse-channel" target="_blank">Syniverse</a>
+   <td><a href="./add-syniverse-channel" target="_blank">Syniverse</a>
    <br><br><br>
-   <a href="../channels/add-syniverse-channel" target="_blank"><img src="../channels/images/logo20-syniverse.png" width="65"></a>
+   <a href="./add-syniverse-channel" target="_blank"><img src="./images/logo20-syniverse.png" width="65"></a>
    </td>
 
 
-   <td><a href="../channels/add-unblu-channel" target="_blank">Unblu</a>
+   <td><a href="./add-unblu-channel" target="_blank">Unblu</a>
    <br><br><br>
-   <a href="../channels/add-unblu-channel" target="_blank"><img src="../channels/images/logo21-unblu.png" width="50"></a>
+   <a href="./add-unblu-channel" target="_blank"><img src="./images/logo21-unblu.png" width="50"></a>
    </td>
 
 
-   <td><a href="../channels/add-whatsapp-business-channel" target="_blank">WhatsApp<br>Business<br>Messaging</a>
+   <td><a href="./add-whatsapp-business-channel" target="_blank">WhatsApp<br>Business<br>Messaging</a>
    <br>  
-   <a href="../channels/add-whatsapp-business-channel" target="_blank"><img src="../channels/images/logo22-whatsapp-business.png" width="50"></a>
+   <a href="./add-whatsapp-business-channel" target="_blank"><img src="./images/logo22-whatsapp-business.png" width="50"></a>
    </td>
 
 
@@ -202,20 +202,20 @@ Click the icon of the channel you want to add, and then configure the channel to
   </tr>
   
   <tr>
-   <td><a href="../channels/add-workplace-by-facebook-channel" target="_blank">Workplace By<br>Facebook</a>
+   <td><a href="./add-workplace-by-facebook-channel" target="_blank">Workplace By<br>Facebook</a>
    <br>
-   <a href="../channels/add-workplace-by-facebook-channel" target="_blank"><img src="../channels/images/logo23-wp-facebook.png" width="50"></a>
+   <a href="./add-workplace-by-facebook-channel" target="_blank"><img src="./images/logo23-wp-facebook.png" width="50"></a>
    </td>
    
-   <td><a href="../channels/add-microsoft-yammer-channel" target="_blank">Yammer</a>
+   <td><a href="./add-microsoft-yammer-channel" target="_blank">Yammer</a>
    <br><br>  
-   <a href="../channels/add-microsoft-yammer-channel" target="_blank"><img src="../channels/images/logo24-yammer.png" width="50"></a>
+   <a href="./add-microsoft-yammer-channel" target="_blank"><img src="./images/logo24-yammer.png" width="50"></a>
    </td>
 
 
-   <td><a href="../channels/add-zoom-contact-center-channel" target="_blank">Zoom Contact<br>Center</a>
+   <td><a href="./add-zoom-contact-center-channel" target="_blank">Zoom Contact<br>Center</a>
    <br>  
-   <a href="../channels/add-zoom-contact-center-channel" target="_blank"><img src="../channels/images/logo25-zoom.png" width="50"></a>
+   <a href="./add-zoom-contact-center-channel" target="_blank"><img src="./images/logo25-zoom.png" width="50"></a>
    </td>
 
 
@@ -234,36 +234,36 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 <table style="table-layout:fixed; width:100%;">
   <tr>
-   <td style="width:25%;"><a href="../channels/add-facebook-messenger-channel" target="_blank">Facebook<br>Messenger</a>
+   <td style="width:25%;"><a href="./add-facebook-messenger-channel" target="_blank">Facebook<br>Messenger</a>
    <br>  
-   <a href="../channels/add-facebook-messenger-channel" target="_blank"><img src="../channels/images/logo26-fb-messenger.png" width="50"></a>
+   <a href="./add-facebook-messenger-channel" target="_blank"><img src="./images/logo26-fb-messenger.png" width="50"></a>
    </td>
 
-   <td style="width:25%;"><a href="../channels/add-line-messenger-channel" target="_blank">Line</a>
+   <td style="width:25%;"><a href="./add-line-messenger-channel" target="_blank">Line</a>
    <br><br>  
-   <a href="../channels/add-line-messenger-channel" target="_blank"><img src="../channels/images/logo27-line.png" width="50"></a>
+   <a href="./add-line-messenger-channel" target="_blank"><img src="./images/logo27-line.png" width="50"></a>
    </td>
 
-   <td style="width:25%;"><a href="../channels/add-skype-business-onpemise-channel" target="_blank">Skype</a>
+   <td style="width:25%;"><a href="./add-skype-business-onpemise-channel" target="_blank">Skype</a>
    <br><br>  
-   <a href="../channels/add-skype-business-onpemise-channel" target="_blank"><img src="../channels/images/logo28-skype.png" width="50"></a>
+   <a href="./add-skype-business-onpemise-channel" target="_blank"><img src="./images/logo28-skype.png" width="50"></a>
    </td>
 
-   <td style="width:25%;"><a href="../channels/add-telegram-channel" target="_blank">Telegram</a>
+   <td style="width:25%;"><a href="./add-telegram-channel" target="_blank">Telegram</a>
    <br><br>  
-   <a href="../channels/add-telegram-channel" target="_blank"><img src="../channels/images/logo29-telegram.png" width="50"></a>
+   <a href="./add-telegram-channel" target="_blank"><img src="./images/logo29-telegram.png" width="50"></a>
    </td>
   </tr>
 
   <tr>
-   <td><a href="../channels/add-twitter-channel" target="_blank">Twitter</a>
+   <td><a href="./add-twitter-channel" target="_blank">Twitter</a>
    <br>  
-   <a href="../channels/add-twitter-channel" target="_blank"><img src="../channels/images/logo30-twitter.png" width="50"></a>
+   <a href="./add-twitter-channel" target="_blank"><img src="./images/logo30-twitter.png" width="50"></a>
    </td>
 
-   <td><a href="../channels/add-wechat-telegram" target="_blank">WeChat</a>
+   <td><a href="./add-wechat-telegram" target="_blank">WeChat</a>
    <br>  
-   <a href="../channels/add-wechat-telegram" target="_blank"><img src="../channels/images/logo31-we-chat.png" width="50"></a>
+   <a href="./add-wechat-telegram" target="_blank"><img src="./images/logo31-we-chat.png" width="50"></a>
    </td>
 
    <td>
@@ -279,33 +279,33 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 <table style="table-layout: fixed; width: 100%;">
  <tr>
-   <td style="width:20%;"><a href="../channels/amazon-alexa" target="_blank">Amazon Alexa</a>
+   <td style="width:20%;"><a href="./amazon-alexa" target="_blank">Amazon Alexa</a>
    <br>
-   <a href="../channels/amazon-alexa" target="_blank"><img src="../channels/images/logo32-alexa.png" width="50"></a>
+   <a href="./amazon-alexa" target="_blank"><img src="./images/logo32-alexa.png" width="50"></a>
    </td>
 
 
-   <td style="width:20%;"><a href="../channels/ivr-audio-codes" target="_blank">IVR–AudioCodes</a>
+   <td style="width:20%;"><a href="./ivr-audio-codes" target="_blank">IVR–AudioCodes</a>
    <br>
-   <a href="../channels/ivr-audio-codes" target="_blank"><img src="../channels/images/logo33-audiocodes.png" width="50"></a>
+   <a href="./ivr-audio-codes" target="_blank"><img src="./images/logo33-audiocodes.png" width="50"></a>
    </td>
 
 
-   <td style="width:20%;"><a href="../channels/IVR-integration" target="_blank">IVR</a>
+   <td style="width:20%;"><a href="./IVR-integration" target="_blank">IVR</a>
    <br><br>
-   <a href="../channels/IVR-integration" target="_blank"><img src="../channels/images/logo34-ivr.png" width="50"></a>
+   <a href="./IVR-integration" target="_blank"><img src="./images/logo34-ivr.png" width="50"></a>
    </td>
 
 
-   <td style="width:20%;"><a href="../channels/add-twilio-voice-channel" target="_blank">Twilio Voice</a>
+   <td style="width:20%;"><a href="./add-twilio-voice-channel" target="_blank">Twilio Voice</a>
    <br><br>
-   <a href="../channels/add-twilio-voice-channel" target="_blank"><img src="../channels/images/logo35-twilio.png" width="50"></a>
+   <a href="./add-twilio-voice-channel" target="_blank"><img src="./images/logo35-twilio.png" width="50"></a>
    </td>
 
 
-   <td style="width:20%;"><a href="../channels/smart-assist-gateway" target="_blank">SmartAssist<br>Gateway</a>
+   <td style="width:20%;"><a href="./smart-assist-gateway" target="_blank">SmartAssist<br>Gateway</a>
    <br>  
-   <a href="../channels/smart-assist-gateway" target="_blank"><img src="../channels/images/logo36-smart-assist.png" width="90"></a>
+   <a href="./smart-assist-gateway" target="_blank"><img src="./images/logo36-smart-assist.png" width="90"></a>
    </td>
   </tr>
   
@@ -316,29 +316,29 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 <table style="table-layout: fixed; width: 100%;">
 <tr>
-   <td style="width:20%;"><a href="../channels/add-email-channel" target="_blank">Email</a>
+   <td style="width:20%;"><a href="./add-email-channel" target="_blank">Email</a>
    <br><br>
-   <a href="../channels/add-email-channel" target="_blank"><img src="../channels/images/logo37-email.png" width="50"></a>
+   <a href="./add-email-channel" target="_blank"><img src="./images/logo37-email.png" width="50"></a>
    </td>
 
-   <td style="width:20%;"><a href="../channels/add-twilio-sms-channel" target="_blank">Twilio SMS</a>
+   <td style="width:20%;"><a href="./add-twilio-sms-channel" target="_blank">Twilio SMS</a>
    <br>
-   <a href="../channels/add-twilio-sms-channel" target="_blank"><img src="../channels/images/logo35-twilio.png" width="50"></a>
+   <a href="./add-twilio-sms-channel" target="_blank"><img src="./images/logo35-twilio.png" width="50"></a>
    </td>
 
-   <td style="width:20%;"><a href="../channels/add-web-mobile-client" target="_blank">Web/Mobile<br>Client</a>
+   <td style="width:20%;"><a href="./add-web-mobile-client" target="_blank">Web/Mobile<br>Client</a>
    <br>
-   <a href="../channels/add-web-mobile-client" target="_blank"><img src="../channels/images/logo39-webmobile.png" width="50"></a>
+   <a href="./add-web-mobile-client" target="_blank"><img src="./images/logo39-webmobile.png" width="50"></a>
    </td>
 
-   <td style="width:20%;"><a href="../channels/add-webhook-channel" target="_blank">Webhook</a>
+   <td style="width:20%;"><a href="./add-webhook-channel" target="_blank">Webhook</a>
    <br><br>
-   <a href="../channels/add-webhook-channel" target="_blank"><img src="../channels/images/logo40-webhook.png" width="50"></a>
+   <a href="./add-webhook-channel" target="_blank"><img src="./images/logo40-webhook.png" width="50"></a>
    </td>
 
-   <td style="width:20%;"><a href="../channels/add-widget-sdk-channel" target="_blank">Widget SDK</a>
+   <td style="width:20%;"><a href="./add-widget-sdk-channel" target="_blank">Widget SDK</a>
    <br>
-   <a href="../channels/add-widget-sdk-channel" target="_blank"><img src="../channels/images/logo39-webmobile.png" width="50"></a>
+   <a href="./add-widget-sdk-channel" target="_blank"><img src="./images/logo39-webmobile.png" width="50"></a>
    </td>
   
   </tr>

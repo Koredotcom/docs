@@ -17,26 +17,26 @@ Steps to add the email channel:
 3. In the **Email** field, you can change the first portion of the address set to the VA name by default.
 4. Choose whether you want to send a contact card to all users, as part of the introduction message.
 5. Under the **Enable Channel** section, select **Yes **to enable the channel.
-<img src="../channels/images/email.png" alt="email channel configuration" title="email channel configuration" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/email.png" alt="email channel configuration" title="email channel configuration" style="border: 1px solid gray; zoom:70%;">
 
 
 6. (Optional) Turn on the **Email Template Design** toggle to configure the header and footer of the emails that are sent via the configured email address.
-<img src="../channels/images/email1.png" alt="email template designer" title="email template designer" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/email1.png" alt="email template designer" title="email template designer" style="border: 1px solid gray; zoom:70%;">
 
 
 7. Click **Edit Header **and **Edit Footer** to configure the header and footer details.
-<img src="../channels/images/email2.png" alt="email footer " title="email footer" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/email2.png" alt="email footer " title="email footer" style="border: 1px solid gray; zoom:70%;">
 
 
 8. In the Edit dialog window, change the header and footer details, and click **Preview **to see the changes.
-<img src="../channels/images/email3.png" alt="email preview " title="email preview " style="border: 1px solid gray; zoom:70%;">
+<img src="./images/email3.png" alt="email preview " title="email preview " style="border: 1px solid gray; zoom:70%;">
 
 
 9. Click **Save**.
-<img src="../channels/images/email4.png" alt="save email channel configuration" title="save email channel configuration" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/email4.png" alt="save email channel configuration" title="save email channel configuration" style="border: 1px solid gray; zoom:70%;">
 
 10. On the Email Channel Configurations page, click **Save**. The _Channel added successfully_ message is displayed.
 
 Once the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot).
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](../channels/adding-channels-to-your-bot)
+To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](../changelog/folder/adding-channels-to-your-bot)

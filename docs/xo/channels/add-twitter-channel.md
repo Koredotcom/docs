@@ -4,7 +4,7 @@ To set up Twitter as a channel, you must associate the bot with a Twitter accoun
 
 
 
-1. **Create Twitter App **– Log in to Twitter. In _Twitter App Management Console, _create an app to provide authorization for communication between Twitter and your Kore.ai bot.
+1. **Create Twitter App** – Log in to Twitter. In _Twitter App Management Console, _create an app to provide authorization for communication between Twitter and your Kore.ai bot.
 2. **Setup Keys and Tokens** – Generate the authentication keys and tokens for the _Twitter_ app to communicate with the XO Platform, and then copy those keys and tokens to Kore.ai Bot Builder.
 3. **Update Permissions** -To use _Twitter_ as a channel for your Kore.ai bot, you must define the _Twitter_ app permissions used to interact with the XO Platform.
 4. **Enable Channel **– After setting up the _Twitter_ app and entering configuration data in Bot Builder, you must enable the channel.
@@ -32,7 +32,7 @@ To complete this procedure, you must create a _Twitter_ account if you do not ha
  * Use the **Callback URL** from the **Configurations **tab of Twitter channel page.
 2. [Log in](https://apps.twitter.com/) to Twitter apps portal and select **Create New App**.
 3. Provide all the required information, and click **Create your Twitter application** to create your new app.
-<img src="../channels/images/Twitter.png" alt="Twitter channel" title="Twitter channel" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/Twitter.png" alt="Twitter channel" title="Twitter channel" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -43,7 +43,7 @@ After the application is created:
 
 1. Go to the **Keys and tokens** tab.
 2. Under the **Access token & access token secret** section, click **Create**. This action generates the Access Token and Access Token Secret.
-<img src="../channels/images/Twitter1.png" alt="Twitter access token" title="Twitter access token" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/Twitter1.png" alt="Twitter access token" title="Twitter access token" style="border: 1px solid gray; zoom:70%;">
 3. Copy the values of **API Key**, **API Secret Key**, **Access Token**, and **Access Token Secret** fields. You must provide them while configuring the Twitter channel  from the Bot Builder for the respective bot.
 
 
@@ -52,13 +52,13 @@ After the application is created:
 
 1. Go to the Permissions tab; click the **Edit **and set the **Access Permission **to _Read, Write, and Direct Messages_.
 2. Click **Save**.
-<img src="../channels/images/Twitter2.png" alt="Twitter access permission" title="Twitter access permission" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/Twitter2.png" alt="Twitter access permission" title="Twitter access permission" style="border: 1px solid gray; zoom:70%;">
 
 3. Go to the **Dev environments** page and set up the environment for your app.
 4. Click **Set up dev environment** under the **Account Activity API** section. Provide a value for the **Dev environment label**, say _ProductionEnvironment_, and choose your app.
 5. Click **Complete setup**.
 
-<img src="../channels/images/Twitter3.png" alt="Twitter account activity" title="Twitter account activity" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/Twitter3.png" alt="Twitter account activity" title="Twitter account activity" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Enable Channel
@@ -83,7 +83,7 @@ To edit the Twitter channel, follow the below steps:
 1. Hover over the channel and click to modify.
 2. You can make necessary updates to your channel configurations and save them.
 3. You can also disable or delete the channel information by clicking the **Settings **icon.
-<img src="../channels/images/Twitter4.png" alt="Twitter settings" title="Twitter settings" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/Twitter4.png" alt="Twitter settings" title="Twitter settings" style="border: 1px solid gray; zoom:70%;">
 4. Select one of the following commands to modify the channel:
   * **Disable/Enable** – Click **Disable** to temporarily disable the use of the Twitter channel for your bot. To enable use of Twitter, click **Enable**.
   * **Delete** – Click **Delete**. On the **Delete Confirmation** dialog box, click **OK** to permanently delete the bot channel configuration.

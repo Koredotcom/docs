@@ -11,7 +11,7 @@ To add the Widget SDK channel
 3. Navigate to the **Configurations** tab.
 4. In the **Select App** drop-down list, select your existing app or click **Create App** to create a new one.
 
-<img src="../channels/images/sdk.png" alt="widget SDK channel configuration" title="widget sdk configuration" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/sdk.png" alt="widget SDK channel configuration" title="widget sdk configuration" style="border: 1px solid gray; zoom:70%;">
 
 5. In the **Name** field, enter the name for the app registration used in the XO Platform, for example, My App Registration.
 6. Select one of these scopes for the app:
@@ -22,7 +22,7 @@ To add the Widget SDK channel
     * **HS256/HS512:** Select to generate a **Secret Key **and a **Client ID**. The **Client ID** is required for app initialization, and the **Secret Key** is used by the XO Platform to authenticate the client application.
 8. Optionally, In the **Push Notifications** section, click **Enable** and then specify a URL to send the notifications to.
 9. Click **Create**. The app registration details appear.
-<img src="../channels/images/sdk1.png" alt="enable widget SDK channel" title="enable widget SDK channel" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/sdk1.png" alt="enable widget SDK channel" title="enable widget SDK channel" style="border: 1px solid gray; zoom:70%;">
 
 10. To copy the app registration details to the clipboard for your application, you can click **Copy** for **Bot Name**, **Bot ID**, and **Client ID**. For **Client Secret**, click **View**, and then click **Copy**.
 11. In the **Enable Channel** section, select **Yes** to enable the channel immediately after saving.

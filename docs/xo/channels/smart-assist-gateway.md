@@ -77,8 +77,7 @@ To define the follow-up task when an event is detected, follow these steps:
  * **Run Script**: Run the script code you define.
  * **Show Message**: Displays the response message you define.
  * After selecting **Show Message**, click the **+ Add Response** button.
- ![show message](./images/sa-gateway1.png "show message)
-
+  ![add response](./images/sa-gateway1.png "add response")
  * Select **SmartAssist Gateway** from the list for **Channel** in the **Add Response** window.
  * Add the response text in the input field for **Response**.
  * Click **Done**.

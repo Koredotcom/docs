@@ -16,7 +16,7 @@ To get started, go to the XO Platform and select the VA that you want to add the
 
 1. Log in and navigate to **My Apps.** 
 2. Click on **Create New App.**  
-<img src="../channels/images/tropo-img1.png" alt="Create new app" title="Create new app" style="border: 1px solid gray; zoom:60%;">
+<img src="./images/tropo-img1.png" alt="Create new app" title="Create new app" style="border: 1px solid gray; zoom:60%;">
 
 3. Provide all the required information. Use the **Callback URL** available in the Configurations tab of the channel configuration page within the XO Platform, and provide it for defining the **Type of Application**.  
 
@@ -26,11 +26,11 @@ To get started, go to the XO Platform and select the VA that you want to add the
         The Callback URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
 
 4. Click on **Create App** to complete the app creation. You will be redirected to the _Details_ page of your app.  
-<img src="../channels/images/tropo-img2.png" alt="App details" title="App details" style="border: 1px solid gray; zoom:60%;">
+<img src="./images/tropo-img2.png" alt="App details" title="App details" style="border: 1px solid gray; zoom:60%;">
 
 5. Make note of the _Application Name, Application Type_ and _Phone Number_ associated with your app, because you will need to provide them in the XO Platform, when configuring the channel.
 6. Once the phone number is associated with the application, it can call the app to test using SIP client. Navigate to the **API Keys**  section, make note of the **_messaging_ API Key** so you can provide it within the XO Platform.  
-<img src="../channels/images/tropo-img3.png" alt="API Keys" title="API Keys" style="border: 1px solid gray; zoom:60%;">
+<img src="./images/tropo-img3.png" alt="API Keys" title="API Keys" style="border: 1px solid gray; zoom:60%;">
 
 
 ## Step 2: Configure the Tropo Channel within the XO Platform
@@ -44,8 +44,8 @@ Next, navigate to the Configurations tab to review and complete the channel setu
 5. Enter the **API Key** retrieved from within Tropo.
 6. Choose whether you want to **send a VCF contact card** upon the installation of your VA on this channel.
 7. Select **Yes** and click **Save** to enable the channel.  
-<img src="../channels/images/tropo-img4.png" alt="Enable channel" title="Enable channel" style="border: 1px solid gray; zoom:60%;">
+<img src="./images/tropo-img4.png" alt="Enable channel" title="Enable channel" style="border: 1px solid gray; zoom:60%;">
 
 After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot){:target="_blank"}.
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](../channels/adding-channels-to-your-bot){:target="_blank"}
+To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](../changelog/folder/adding-channels-to-your-bot){:target="_blank"}

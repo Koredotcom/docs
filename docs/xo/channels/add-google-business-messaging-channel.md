@@ -57,7 +57,7 @@ To integrate with the GBM channel, you need to register as a partner for Google 
 
 1. Open the [Business Communications Developer Console](https://business-communications.cloud.google.com/?utm_source=/business-communications/business-messages/guides/how-to/register&utm_medium=devsite&utm_campaign=business-messages).
 2. Under **Business Messages**, click **Create partner account**.
-<img src="../channels/images/GBM-1.png" alt="gooogle business " title="gooogle business " style="border: 1px solid gray; zoom:70%;">
+<img src="./images/GBM-1.png" alt="gooogle business " title="gooogle business " style="border: 1px solid gray; zoom:70%;">
 
 3. Enter the values for the following fields in the **Create a Business Messages partner account** window:
  * Your Name
@@ -65,7 +65,7 @@ To integrate with the GBM channel, you need to register as a partner for Google 
  * Partner Website
  * Region
 4. Click **Create**.
-<img src="../channels/images/GBM-2.png" alt="create business partner" title="create business partner" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/GBM-2.png" alt="create business partner" title="create business partner" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -79,10 +79,10 @@ To create an agent for your GBM Partner account, you must submit information on 
 
 1. Sign in to your account on the [Business Communications Developer Console](https://business-communications.cloud.google.com/?utm_source=/business-communications/rcs-business-messaging/guides/get-started/first-agent&utm_medium=devsite&utm_campaign=rcs-business-messaging).
 2. Click **Create Agent**.
-<img src="../channels/images/GBM-3.png" alt="create agent" title="create agent" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/GBM-3.png" alt="create agent" title="create agent" style="border: 1px solid gray; zoom:70%;">
 
 3. Enter the values for the **_Brand name_** and **_Agent name_** fields.
-<img src="../channels/images/GBM-4.png" alt="brand name" title="brand name" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/GBM-4.png" alt="brand name" title="brand name" style="border: 1px solid gray; zoom:70%;">
 
 4. Select **Enable the Business Messages Helper Bot** to activate the agent.
 5. Click **Create Agent**.
@@ -118,18 +118,18 @@ After creating the agent, you need to copy the **Webhook URL** from the Kore.ai 
 2. Click on the panel with your agent’s name.
 3. On the **Business Communications **page, click **Integrations** on the left menu.
 4. For the **Webhook** option, click the **Configure** link.
-<img src="../channels/images/GBM-5.png" alt="configure webhook" title="configure webhook" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/GBM-5.png" alt="configure webhook" title="configure webhook" style="border: 1px solid gray; zoom:70%;">
 
 5. Copy the **Webhook URL** from the Kore.ai XO Platform under **Deploy** > **Channels** > **Google Business Messaging** > **Configurations**.
-<img src="../channels/images/GBM-6.png" alt="webhook url" title="webhook url" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/GBM-6.png" alt="webhook url" title="webhook url" style="border: 1px solid gray; zoom:70%;">
 
 
 6. Paste the copied link for the **Webhook endpoint URL** field in the **Configure your webhook** window on the **Business Communications Developer** Console.
-<img src="../channels/images/GBM-7.png" alt="endpoint url" title="endpoint url" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/GBM-7.png" alt="endpoint url" title="endpoint url" style="border: 1px solid gray; zoom:70%;">
 
 7. Click the **Refresh** icon for the **Client token** field to generate the **Client token**.
 8. Click **Verify**.
-<img src="../channels/images/GBM-8.png" alt="client token" title="client token" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/GBM-8.png" alt="client token" title="client token" style="border: 1px solid gray; zoom:70%;">
 
 The **GBM platform** sends a **POST** request to the Kore.ai XO Platform’s webhook with the **_ClientToken_** and **_Secret Key_** parameters for verification before sending/receiving messages.
 
@@ -140,15 +140,15 @@ To send messages and events as your agent, you need to authenticate API calls wi
 
 
 1. On the left menu, click **Service account**.
-<img src="../channels/images/GBM-9.png" alt="service account" title="service account" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/GBM-9.png" alt="service account" title="service account" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the **Create key** button.
-<img src="../channels/images/GBM-10.png" alt="create key" title="create key" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/GBM-10.png" alt="create key" title="create key" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Create** on the confirmation window to download the JSON file with the **service account key**.
-<img src="../channels/images/GBM-11.png" alt="service account key" title="service account key" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/GBM-11.png" alt="service account key" title="service account key" style="border: 1px solid gray; zoom:70%;">
 
-<img src="../channels/images/GBM-12.png" alt="service key" title="service key" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/GBM-12.png" alt="service key" title="service key" style="border: 1px solid gray; zoom:70%;">
 
 4. Rename the downloaded file to **_rbm-agent-service-account-credentials.json_**.
 5. Store the key securely to recover it if required.
@@ -166,9 +166,9 @@ To configure the virtual assistant for the service account on the Kore.ai XO Pla
 1. Copy the **_client_email_**, **_client_id_**, **_token_uri_**, and **_private_key_** values from the downloaded JSON file.
 1. Paste the values in the respective fields under **Deploy** > **Channels** > **Enterprise Channels** > **Google Business Messaging** > **Configurations**.
 
-  <img src="../channels/images/GBM-13.png" alt="private key" title="private key" style="border: 1px solid gray; zoom:70%;">
+  <img src="./images/GBM-13.png" alt="private key" title="private key" style="border: 1px solid gray; zoom:70%;">
 
-  <img src="../channels/images/GBM-14.png" alt="client details" title="client details" style="border: 1px solid gray; zoom:70%;">
+  <img src="./images/GBM-14.png" alt="client details" title="client details" style="border: 1px solid gray; zoom:70%;">
 
 
 2. Select **Yes** for the **Enable Channel** option.

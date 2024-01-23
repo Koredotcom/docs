@@ -11,51 +11,51 @@ Steps to configure **Infobip**:
 
 1. Login to the **Infobip** developer portal.
 2. On the left navigation menu, click the **Channels and Numbers** option and select the **WhatsApp** channel on the **Channel Essentials** panel.
-<img src="../channels/images/whatsapp.png" alt="infobib" title="infobib" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp.png" alt="infobib" title="infobib" style="border: 1px solid gray; zoom:70%;">
 
 3. To configure a new number for the **Infobip** and **WhatsApp** messaging platforms’ integration, follow one of the steps given below:
     * Scan the QR code under **Overview** > **Connect** on the **WhatsApp** page on the Infobip portal using the camera or QR scanner on your mobile device.
     * Follow the instructions for steps 2 and 3 shown in the image below.
-    <img src="../channels/images/whatsapp1.png" alt="infobib integration" title="infobib integration" style="border: 1px solid gray; zoom:70%;">
+    <img src="./images/whatsapp1.png" alt="infobib integration" title="infobib integration" style="border: 1px solid gray; zoom:70%;">
 
     * Alternatively, add the number shown on the screen of the Infobip sender to your WhatsApp contacts.
-    <img src="../channels/images/whatsapp2.png" alt="infobib sender" title="infobib sender" style="border: 1px solid gray; zoom:70%;">
+    <img src="./images/whatsapp2.png" alt="infobib sender" title="infobib sender" style="border: 1px solid gray; zoom:70%;">
 
     !!! note
 
           The mobile number should have the country code preceded by a plus (+) sign to activate the **Infobip** and **WhatsApp** connections.
 
 4. Once the number is associated, select the **Senders** tab to view or edit the numbers for **WhatsApp** messaging.
-<img src="../channels/images/whatsapp3.png" alt="infobib connection" title="infobib connection" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp3.png" alt="infobib connection" title="infobib connection" style="border: 1px solid gray; zoom:70%;">
 
 
 5. Click the **ellipses** icon under **Action** and select **Edit Configuration**.
-<img src="../channels/images/whatsapp4.png" alt="edit infobib configuration" title="edit infobib configuration" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp4.png" alt="edit infobib configuration" title="edit infobib configuration" style="border: 1px solid gray; zoom:70%;">
 
 6. On the **Edit Configuration** page, click the **edit** icon, add the **URL for incoming messages** (copy the Webhook URL from the Kore Platform under **Deploy** > **Channels** > **WhatsApp Business Messaging** > **Configurations** tab) and click **Back**.
-<img src="../channels/images/whatsapp5.png" alt="deploy infobib" title="deploy infobib " style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp5.png" alt="deploy infobib" title="deploy infobib " style="border: 1px solid gray; zoom:70%;">
 
 7. Next, to add Infobip’s **Base URL**, follow these steps:
     * On the Kore.ai Platform, click the **Virtual Assistants** tab, and select the published virtual assistant to add the **WhatsApp Business Message** channel.
 
-    <img src="../channels/images/whatsapp6.png" alt="infobib sender" title="infobib sender" style="border: 1px solid gray; zoom:70%;">
+    <img src="./images/whatsapp6.png" alt="infobib sender" title="infobib sender" style="border: 1px solid gray; zoom:70%;">
 
     * Under **Deploy** > **Channels**, click **WhatsApp Business Messaging**.
     * On the **WhatsApp Business Messaging** panel, click the **Configurations** tab and provide inputs for the following fields:
         * **Messaging Partner** – Select **Infobip** from the dropdown list.
         * **Phone Number** – Copy and paste the number displayed on the **Infobip** portal for your account under the **Connect** section (please refer to step 3). The Platform now supports **adding multiple phone numbers on the WhatsApp Messaging Channel** for the same Virtual Assistant. The Virtual Assistant responds to only the source number from which it receives the message rather than a common phone number. [Learn more](https://developer.kore.ai/docs/bots/channel-enablement/whatsapp-messaging-channel-support-for-multiple-phone-numbers/).
         * **Base URL**: Copy the Base URL from this page. This URL will be used on Kore.ai to send the messages when the **WhatsApp Business Messaging** channel is enabled.
-        <img src="../channels/images/whatsapp7.png" alt="infobib messaging partner" title="infobib messaging partner" style="border: 1px solid gray; zoom:70%;">
+        <img src="./images/whatsapp7.png" alt="infobib messaging partner" title="infobib messaging partner" style="border: 1px solid gray; zoom:70%;">
 
 
         * **Username and Password**: The username and password of the **Infobip** account holder. Infobip’s API requires authentication and uses the basic authorization for sending and receiving messages over the API with these values.
         * **Webhook URL**: Copy the webhook URL provided in the configuration tab and update the same on the **Infobip developer portal** for Infobip to send the received messages from the subscriber (WhatsApp Business Messaging).
 
-        <img src="../channels/images/whatsapp8.png" alt="infobib API" title="infobib API" style="border: 1px solid gray; zoom:70%;">
+        <img src="./images/whatsapp8.png" alt="infobib API" title="infobib API" style="border: 1px solid gray; zoom:70%;">
 
     * Select **Yes** to enable the **WhatsApp Business Messaging** channel.
     * Click **Save** to complete the integration setup.
-    <img src="../channels/images/whatsapp9.png" alt="save infobib configuration" title="save infobib configuration" style="border: 1px solid gray; zoom:70%;">
+    <img src="./images/whatsapp9.png" alt="save infobib configuration" title="save infobib configuration" style="border: 1px solid gray; zoom:70%;">
 
     !!! note
 
@@ -67,9 +67,9 @@ Steps to configure **Infobip**:
 
 Once you’ve sent a message to **Infobip** using the **WhatsApp Business Messaging** channel, you can track the text, Virtual Assistant responses, delivery status, and errors (if any) on your **Infobip** account under **Channels and Numbers** > **Channel Essentials** > **WhatsApp** > **Overview** > **View Logs**.
 
-<img src="../channels/images/whatsapp10.png" alt="view infobib logs" title="view infobib logs" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp10.png" alt="view infobib logs" title="view infobib logs" style="border: 1px solid gray; zoom:70%;">
 
-<img src="../channels/images/whatsapp11.png" alt="infobib errors" title="infobib errors" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp11.png" alt="infobib errors" title="infobib errors" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -98,7 +98,7 @@ The Platform automatically decides the payload to be sent to the channels after 
 
 * To learn more about creating and managing templates, please refer to this [link](https://www.infobip.com/docs/whatsapp/manage-connection#manage-templates-manage-senders).
 * To know more about various message types and the structure of templates, please refer to this [link](https://www.infobip.com/docs/whatsapp/message-types#guidelines-amp-best-practices).
-* To learn more about sending template messages, please refer to this [link](https://www.infobip.com/docs/api/channels/whatsapp/whatsapp-outbound-messages/send-whatsapp-template-message).
+* To learn more about sending template messages, please refer to this [link](https://www.infobip.com/docs/api/whatsapp/whatsapp-outbound-messages/send-whatsapp-template-message).
 
 
 ## Adding the WhatsApp Channel Using GupShup Application
@@ -110,14 +110,14 @@ The Platform supports integration with **GupShup** to enable WhatsApp business a
       The important steps in completing this channel enablement are as follows:
 
 
-1. [Create a GupShup Application](/docs/xo/channels/add-whatsapp-business-channel/#step-1-create-a-gupshup-application). \
-2. [Configure the Channel Enablement](/docs/xo/channels/add-whatsapp-business-channel/#step-2-configure-the-channel-enablement).
+1. [Create a GupShup Application](/docs/xo/add-whatsapp-business-channel/#step-1-create-a-gupshup-application). \
+2. [Configure the Channel Enablement](/docs/xo/add-whatsapp-business-channel/#step-2-configure-the-channel-enablement).
 
-* [Create a WABA (WhatsApp Business Account)](/docs/xo/channels/add-whatsapp-business-channel/#step-2a-create-a-new-whatsapp-business-account).
-* [Set up the WABA Parameters on the Platform](/docs/xo/channels/add-whatsapp-business-channel/#step-2b-set-up-the-waba-parameters-on-the-platform).
-* [Configure the Callback URL/Webhook URL](/docs/xo/channels/add-whatsapp-business-channel/#step-2c-configure-the-callback-urlwebhook-url).
+* [Create a WABA (WhatsApp Business Account)](/docs/xo/add-whatsapp-business-channel/#step-2a-create-a-new-whatsapp-business-account).
+* [Set up the WABA Parameters on the Platform](/docs/xo/add-whatsapp-business-channel/#step-2b-set-up-the-waba-parameters-on-the-platform).
+* [Configure the Callback URL/Webhook URL](/docs/xo/add-whatsapp-business-channel/#step-2c-configure-the-callback-urlwebhook-url).
 
-3. [Secure the Integration](/docs/xo/channels/add-whatsapp-business-channel/#step-3-secure-the-integration).
+3. [Secure the Integration](/docs/xo/add-whatsapp-business-channel/#step-3-secure-the-integration).
 
 
 ### Step 1: Create a GupShup Application
@@ -125,22 +125,22 @@ The Platform supports integration with **GupShup** to enable WhatsApp business a
 The first step in the WhatsApp Messaging Channel integration is to create a GupShup application, To create an app, follow the steps below:
 
 1. Log in to the [GupShup portal](https://www.gupshup.io/whatsapp/dashboard) and navigate to the **Dashboard → WhatsApp** section.
-<img src="../channels/images/whatsapp12.png" alt="save gupshup application" title="save gupshup application" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp12.png" alt="save gupshup application" title="save gupshup application" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the **+ Create App** button.
-<img src="../channels/images/whatsapp13.png" alt="create gupshup app" title="create gupshup app" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp13.png" alt="create gupshup app" title="create gupshup app" style="border: 1px solid gray; zoom:70%;">
 
 
 3. On the **Create App** screen, click **Access API** to select the app type.
-<img src="../channels/images/whatsapp14.png" alt="access gupshup api" title="access gupshup api" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp14.png" alt="access gupshup api" title="access gupshup api" style="border: 1px solid gray; zoom:70%;">
 
 
 4. Provide a unique name for the application and click **Submit**.
-<img src="../channels/images/whatsapp15.png" alt="submit gupshup app" title="submit gupshup app" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp15.png" alt="submit gupshup app" title="submit gupshup app" style="border: 1px solid gray; zoom:70%;">
 
 
 5. For **_Step 2: Onboard your Users_**, click **Next**.
-<img src="../channels/images/whatsapp16.png" alt="onboard gupshup " title="onboard gupshup " style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp16.png" alt="onboard gupshup " title="onboard gupshup " style="border: 1px solid gray; zoom:70%;">
 
 
 ### Step 2: Configure the Channel Enablement
@@ -156,11 +156,11 @@ Once you have created a GupShup app, you need to create a **WABA** to set up the
 
 1. Navigate to the WhatsApp Dashboard on your GupShup Developer Console.
 2. Click the **Go Live** button of the desired app in the list.
-<img src="../channels/images/whatsapp17.png" alt="enable gupshup app" title="enable gupshup app" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp17.png" alt="enable gupshup app" title="enable gupshup app" style="border: 1px solid gray; zoom:70%;">
 
 3. On the **Let’s Get Started** window, select the **New Number** option under **Managed onboarding with Gupshup**.
 4. Click **Proceed**.
-<img src="../channels/images/whatsapp18.png" alt="add gupshup number" title="add gupshup number" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp18.png" alt="add gupshup number" title="add gupshup number" style="border: 1px solid gray; zoom:70%;">
 
 
 1. Enter your details to set up your WhatsApp Business account and click **Next**.
@@ -179,7 +179,7 @@ To integrate your GupShup service using the WBM channel to the Kore.ai XO Platfo
 3. Click the **Configurations** tab on the **WhatsApp Business Messaging** window.
 4. Select **GupShup** from the dropdown list for **Messaging Partner**.
 5. Paste the copied values for **Mobile number**, **WABA ID**, and &lt;b.Password in the respective input fields.
-<img src="../channels/images/whatsapp19.png" alt="add gupshup WABA ID" title="add gupshup WABA ID" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp19.png" alt="add gupshup WABA ID" title="add gupshup WABA ID" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -194,17 +194,17 @@ To set up the **Callback URL**, follow the steps below:
 2. Click the **Configurations** tab on the **WhatsApp Business Messaging** window.
 3. Ensure you have selected **GupShup** for the **Messaging Partner** field. Click **Copy** to copy the **Webhook URL**.
 
-<img src="../channels/images/whatsapp20.png" alt="enter gupshup webhook" title="enter gupshup webhook" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp20.png" alt="enter gupshup webhook" title="enter gupshup webhook" style="border: 1px solid gray; zoom:70%;">
 
 4. Navigate to your **GupShup WhatsApp Dashboard**.
 5. Click the **Settings** icon for your app of type **Access API**.
 
-<img src="../channels/images/whatsapp21.png" alt="enter gupshup settings" title="enter gupshup settings" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp21.png" alt="enter gupshup settings" title="enter gupshup settings" style="border: 1px solid gray; zoom:70%;">
 
 1. On the **Settings** page, scroll down to the **Test Access API and set callback URL **section.
 2. Click the **Callback URL / Link your Bot** tab.
 3. Turn on the toggle switch and paste the **Webhook URL** you copied from the Bot Builder in the **Enter your Callback URL** input field.
-<img src="../channels/images/whatsapp22.png" alt="test gupshup api" title="test gupshup api" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp22.png" alt="test gupshup api" title="test gupshup api" style="border: 1px solid gray; zoom:70%;">
 
 4. Click **Set**.
 
@@ -227,7 +227,7 @@ The Webhook URL used on the WhatsApp Business Messaging Channel for GupShup is a
 
 This feature is available under **Deploy** > **Channels** > **WhatsApp Business Messaging** > **Configurations**.
 
-<img src="../channels/images/whatsapp23.png" alt="secure gupshup integration" title="secure gupshup integration" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp23.png" alt="secure gupshup integration" title="secure gupshup integration" style="border: 1px solid gray; zoom:70%;">
 
 
 **How it Works**
@@ -318,4 +318,4 @@ On the WhatsApp Business Messaging platform, follow the below steps:
 4. Provide the **Webhook URL ** shared with the Karix support team.
 5. Select **Yes** for **Enable Channel**.
 6. Click **Save**.
-<img src="../channels/images/whatsapp24.png" alt="configure karix" title="configure karix" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/whatsapp24.png" alt="configure karix" title="configure karix" style="border: 1px solid gray; zoom:70%;">
