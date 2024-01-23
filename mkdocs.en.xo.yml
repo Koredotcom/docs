@@ -242,7 +242,7 @@ nav:
       - Routing: contactcenter/configurations/default-flows/configure-default-flows.md 
       - Hour of Operations: contactcenter/configurations/default-flows/configure-default-flows.md       
   - AgentAssist:
-  - Overview: agentassist/about-agentassist.md 
+    - Overview: agentassist/about-agentassist.md 
     - Agent Experience:
       - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md       
   - Integrations & APIs:
