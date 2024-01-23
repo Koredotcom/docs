@@ -15,4 +15,4 @@ After the channel is enabled and all configurations are verified, you can option
 
 To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)
 
-<img src="./images/kore-channel-config.png" alt="Kore Channel" title="Kore Channel" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/kore-channel-config.png" alt="Kore Channel" title="Kore Channel" style="border: 1px solid gray; zoom:70%;">

@@ -82,7 +82,7 @@ To associate an App, follow the below steps:
 5. If you want to use the JSON Web Encryption (JWE) standard, you can view the _Public Key_ by clicking the link provided below the _Client Secret_ field.
 6. The Webhook channel supports both **synchronous** and **asynchronous** modes. Depending on your business needs, you can enable one of these modes in the **Configurations** tab.
 7. (Only for Webhook v2.0) In the **Synchronous **mode, by default, the **Enable the Polling for Webhook v2 **option is selected.
-<img src="./images/webhook.jpg" alt="webhook channel" title="webhook channel" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/webhook.jpg" alt="webhook channel" title="webhook channel" style="border: 1px solid gray; zoom:70%;">
 
 
 8. Deselect the **Enable the Polling in Webhook V2** option to retrieve the complete response, all at once, without the need for polling. \
@@ -90,7 +90,7 @@ To associate an App, follow the below steps:
 9. Select **Yes **to** Enable Channel**.
 10. **Save** the configuration. The Webhook URL in this channel instance is created dynamically.
 
-<img src="./images/webhook1.jpg" alt="enable webhook channel" title="enable webhook channel" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/webhook1.jpg" alt="enable webhook channel" title="enable webhook channel" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -98,7 +98,7 @@ To associate an App, follow the below steps:
 
 Use the **Webhook URL** to establish integration with external communication systems. This URL is available only after enabling the channel.
 
-<img src="./images/webhook2.png" alt="add webhook URL" title="add webhook URL" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/webhook2.png" alt="add webhook URL" title="add webhook URL" style="border: 1px solid gray; zoom:70%;">
 
 
 

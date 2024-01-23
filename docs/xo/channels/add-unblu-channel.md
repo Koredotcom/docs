@@ -41,7 +41,7 @@ The Unblu Bot can be directly created from the Kore.ai XO Platform.
     * **Named Area** – Provide the Named Area you would like to associate with your Kore.ai assistant. Kore.ai will respond only to the user chats that have originated in the Named Area that you have selected here. This field is optional if you are enabling Unblu channel for a single kore.ai assistant alone.
     * Select to** Enable** the channel and **Save **your settings.
 4. **Enable** the channel.
-<img src="./images/unblu.png" alt="unblu integration" title="unblu integration" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/unblu.png" alt="unblu integration" title="unblu integration" style="border: 1px solid gray; zoom:70%;">
 
 
 After the channel is enabled and all configurations are verified, you can optionally publish

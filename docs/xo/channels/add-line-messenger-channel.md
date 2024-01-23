@@ -8,11 +8,11 @@ To add the LINE channel to your Kore.ai bot, you must set up a webhook integrati
 
 
 1. Log in to your [LINE Developer account portal](https://developers.line.me/), and click **Create a new provider**. If you already have a _Provider_ that you want to use for this bot, then choose the provider from the Provider_ List._
-<img src="./images/line.png" alt="line channel" title="line channel" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/line.png" alt="line channel" title="line channel" style="border: 1px solid gray; zoom:70%;">
 
 
 2.  Click **Create a Messaging API Channel**.
-<img src="./images/line1.png" alt="line messaging api" title="line messaging api" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/line1.png" alt="line messaging api" title="line messaging api" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -22,7 +22,7 @@ To add the LINE channel to your Kore.ai bot, you must set up a webhook integrati
 
 1. Under **Create a new channel **, provide the required details.
 2. Click **Create **to review and proceed with channel creation.
-<img src="./images/line2.png" alt="channel creation" title="channel creation" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/line2.png" alt="channel creation" title="channel creation" style="border: 1px solid gray; zoom:70%;">
 
 !!! note
 
@@ -43,7 +43,7 @@ To add the LINE channel to your Kore.ai bot, you must set up a webhook integrati
 5. Go to **Deploy > Channels > LINE > Configuration**.
 6. Enter the **Channel User** ID and **Channel Secret**, retrieved from LINE.
 7. Under Enable Channel, select Yes and click Save to enable the LINE Channel for your assistant.
-<img src="./images/line3.png" alt="deploy line channel" title="deploy line channel" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/line3.png" alt="deploy line channel" title="deploy line channel" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -54,14 +54,14 @@ To add the LINE channel to your Kore.ai bot, you must set up a webhook integrati
 
 1. From the LINE Channel Configuration page in the XO Platform, copy the **Webhook URL**.
 2. Go to  LINE, and navigate to the **Messaging API **section of your newly created LINE Channel.  Scroll to Webhook Settings and click Edit to enter the Webhook URL you just copied from the XO Platform.
-<img src="./images/line4.png" alt="Line Webhook URL" title="Line Webhook URL" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/line4.png" alt="Line Webhook URL" title="Line Webhook URL" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Update**.
-<img src="./images/line5.png" alt="line webhook settings" title="line Webhook settings" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/line5.png" alt="line webhook settings" title="line Webhook settings" style="border: 1px solid gray; zoom:70%;">
 
 4. After saving the webhook URL, Enable the Webhook, choose whether to enable redelivery and error statistics aggregation, then click **Verify **to ensure that the webhook call from LINE is acknowledged by the Kore.ai XO Platform.
 
-<img src="./images/line6.png" alt="line channel verification" title="line channel verification" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/line6.png" alt="line channel verification" title="line channel verification" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Step 5: Review Additional Options

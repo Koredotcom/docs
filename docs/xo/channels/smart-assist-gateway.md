@@ -49,7 +49,7 @@ To define the voice call properties specific to the SmartAssist Gateway, follow 
 
 
 1. Navigate to **DEPLOY** > **CHANNELS**, and click **SmartAssist Gateway** under **Voice Channels**.
-![SmartAssist Gateway](./images/sa-gateway.png "SmartAssist Gateway")
+![SmartAssist Gateway](../images/sa-gateway.png "SmartAssist Gateway")
 
 2. Click the **Voice Call Properties** tab in the **SmartAssist Gateway** window. [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/) on **Voice Call Properties**.
 
@@ -77,11 +77,11 @@ To define the follow-up task when an event is detected, follow these steps:
  * **Run Script**: Run the script code you define.
  * **Show Message**: Displays the response message you define.
  * After selecting **Show Message**, click the **+ Add Response** button.
-  ![add response](./images/sa-gateway1.png "add response")
+  ![add response](../images/sa-gateway1.png "add response")
  * Select **SmartAssist Gateway** from the list for **Channel** in the **Add Response** window.
  * Add the response text in the input field for **Response**.
  * Click **Done**.
- ![add response](./images/sa-gateway2.png "add response")
+ ![add response](../images/sa-gateway2.png "add response")
 
 !!! tip
 
@@ -102,7 +102,7 @@ Define the parameters to control the call flow behavior by following the steps b
 3. Click **Save**.
 
 The new **call control parameter** is listed on the **SmartAssist Gateway** window, as shown below. \
- ![call control](./images/sa-gateway3.png "image_tooltip")
+ ![call control](../images/sa-gateway3.png "image_tooltip")
 
 
 ### Step 5: Define the Timeout Prompt

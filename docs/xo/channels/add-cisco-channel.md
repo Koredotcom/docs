@@ -24,7 +24,7 @@ To create a Bot from within Cisco Webex Teams, please follow the steps below:
 
 
 1. In the XO Platform, select the assistant you want to add the channel to.
-2. Go to **Deploy > Channels**, and select **Cisco Webex Teams**. The channel window opens.
+2. Go to **Channels & Flows** > **Channels** > **Digital** > **All**, and select **Cisco Webex Teams**. The channel window opens.
 3. Enter the **Bot Username** and **Access Token** from the previous step.
 4. Make a note of the **Redirect URL**.
 
