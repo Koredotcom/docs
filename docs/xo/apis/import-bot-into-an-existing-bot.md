@@ -211,7 +211,7 @@ curl -X POST \
    </td>
    <td>Optional
    </td>
-   <td>This will indicate incremental import options for the ML utterances, whether to replace or append. <a href="/manage-assistant/bot-management/#importing-an-assistant">Learn more</a>.
+   <td>This will indicate incremental import options for the ML utterances, whether to replace or append. <a href="/docs/xo/manage-assistant/bot-management/#importing-an-assistant">Learn more</a>.
     Usage:
       <pre>"options": {
                 "utterances": {
