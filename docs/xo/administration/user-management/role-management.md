@@ -154,10 +154,6 @@ By default, a Master Admin role is created and this role can be assigned to any 
 </table>
 
 
-!!! Note
-
-        The creator of the account is assigned the role of **Primary Master Admin**. This role can be assigned or transferred to any other admin. To do this, first you must assign the master admin role to a user. It is visible only from the profile tab of the Primary Master Admin.
-
 
 ### Custom Admin Role
 

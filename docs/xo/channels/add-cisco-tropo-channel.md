@@ -3,7 +3,7 @@
 
 !!! note "Important Note"
 
-      Tropo has been discontinued and is now part of Webex. You can use this integration only if you already have a Tropo account that was active prior to discontinuation.  Proceed with the channel setup only if you have a live Tropo account. You can click here to check for updates related to the Tropo service.
+      Tropo has been discontinued and is now part of Webex. You can use this integration only if you already have a Tropo account that was active prior to discontinuation.  Proceed with the channel setup only if you have a live Tropo account. You can click [here](https://www.cisco.com/c/en/us/services/acquisitions/tropo.html) to check for updates related to the Tropo service.
 
 
 Adding the Cisco Tropo channel to your Kore.ai assistant is a three-step process to allow end-users to interact using their _Tropo_ accounts. To complete this procedure, you must already have a _Tropo_ account and be a member of a _Tropo_ team.
@@ -38,7 +38,7 @@ To get started, go to the XO Platform and select the VA that you want to add the
 Next, navigate to the Configurations tab to review and complete the channel setup.
 
 1. Select the assistant that you want to configure the Tropo channel for. 
-2. Go to **Deploy > Channels** and select **Cisco Tropo**. The channel setup window opens. 
+2. Go to **Channels & Flows** > **Channels** > **Digital** > **All** and select **Cisco Tropo**. The channel setup window opens. 
 3. Click **Next** or select the **Configurations** tab. 
 4. Provide the app details you configured within Tropo: the **Application Name, Application Type** and **Phone Number**. 
 5. Enter the **API Key** retrieved from within Tropo.
@@ -46,6 +46,6 @@ Next, navigate to the Configurations tab to review and complete the channel setu
 7. Select **Yes** and click **Save** to enable the channel.  
 <img src="../images/tropo-img4.png" alt="Enable channel" title="Enable channel" style="border: 1px solid gray; zoom:60%;">
 
-After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot){:target="_blank"}.
+After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot).
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](../changelog/folder/adding-channels-to-your-bot){:target="_blank"}
+To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](../changelog/folder/adding-channels-to-your-bot)
