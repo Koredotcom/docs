@@ -11,7 +11,7 @@ To enable the integration, you need to provide authorization using your Zendesk 
 2. Navigate to **Deploy** → **Channels** → **Sunshine Conversations** Channel.
 3. Click the **Authorize** button under **Configurations** on the **Sunshine Conversations** panel.
 
-<img src="../channels/images/Sunshine-1.png" alt="Sunshine Channel" title="Sunshine Channel" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/Sunshine-1.png" alt="Sunshine Channel" title="Sunshine Channel" style="border: 1px solid gray; zoom:70%;">
 
 4. On the **Zendesk subdomain** page, provide the subdomain and click **Sign in**.
 5. On the Zendesk sign-in page, provide your login credentials and click **Sign in**.
@@ -35,7 +35,7 @@ To enable the Agent Handoff, follow the steps below:
 3. Paste these values in their respective fields on the Kore.ai platform under **Sunshine Conversations** > **Configurations** > **OAuth** > **Enable Agent Handoff** section.
 4. Provide the **Key** and **Value** inputs in the text fields for **SessionClosure Metadata** to define your custom metadata. This key-value pair is captured in the switchboard integration API and sent to Zendesk when the conversation session closes.
 5. Click **Save** to enable the Channel and Agent Handoff.
-<img src="../channels/images/Sunshine-2.png" alt="Save Sunshine Channel" title="Save Sunshine Channel" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/Sunshine-2.png" alt="Save Sunshine Channel" title="Save Sunshine Channel" style="border: 1px solid gray; zoom:70%;">
 
 
 **Important Information on Session Closure Metadata**
