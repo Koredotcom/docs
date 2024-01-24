@@ -63,10 +63,10 @@ Follow these steps:
 1. Go to **Build** > **Natural Language** > **Generative AI & LLM** > **Co-Pilot** or **Dynamic Conversation**.
 2. Hover over the feature to view the **Advance Setting** (gear) icon. 
 
-    ![alt_text](images/cpf(3).png "image_tooltip")
+    ![alt_text](images/cpf(3).png "image_tooltip" )
 
 3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed. 
-    ![alt_text](images/cpf(2).png "image_tooltip")
+    ![alt_text](images/cpf(2).png )
 
 Adjusting the settings allows you to fine-tune the model’s behavior to meet your needs. The default settings work fine for most cases. You can tweak the settings and find the right balance for your use case. A few settings are common in the features, and a few are feature-specific:
 
