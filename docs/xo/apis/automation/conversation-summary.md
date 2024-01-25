@@ -1,6 +1,6 @@
 # Conversation Summary API(Beta)
 
-The API summarizes the conversation between a user and an agent. The agent can be a virtual agent or a human agent. The API accepts the conversation Id or the transcripts as input and provides an auto-generated conversation summary. 
+The API summarizes the conversation between a user and an agent. The agent can be a virtual agent or a human agent. The API accepts the conversation Id or the transcripts as input and provides an auto-generated conversation summary.
 
 The API uses a fine-tuned Flan-T5 model, an open-source LLM hosted by Kore.ai. The Flan-T5 foundational model is being fine-tuned for summarizing conversations using a large number of sample conversation transcripts from various fields and industries.
 
@@ -31,7 +31,7 @@ The API uses a fine-tuned Flan-T5 model, an open-source LLM hosted by Kore.ai. T
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token.</a>
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token.</a>
    </td>
   </tr>
   <tr>
