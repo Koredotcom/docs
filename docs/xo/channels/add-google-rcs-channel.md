@@ -35,12 +35,12 @@ Below are the steps involved in setting up the channel on Kore.ai and launching 
 
 1. **Create App, Enable Event and Publish the assistant**– This is required for the platform to receive a notification when a new user opts into talking to the bot via Google RCS.
     * **Create an App** on the Kore.ai XO Platform platform from **API Extensions** > **API Scopes** and enable the following scope: “_RCS Message Events_”.
-    <img src="../channels/images/rcs.png" alt="create rcs app" title="create rcs app" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/rcs.png" alt="create rcs app" title="create rcs app" style="border: 1px solid gray; zoom:70%;">
 
     * From **Natural Language** > **Default Conversation** > **Event Handlers**, configure the following events:
         * RCS Opt-In: action to be taken once the user Opts-in for the RCS Messaging,
         * RCS Opt-Out: action to be taken when the user Opts-out of the RCS Messaging.
-        <img src="../channels/images/rcs1.png" alt="rcs messaging" title="rcs messaging" style="border: 1px solid gray; zoom:70%;">
+        <img src="../images/rcs1.png" alt="rcs messaging" title="rcs messaging" style="border: 1px solid gray; zoom:70%;">
 
 
     * **Publish** the channel.

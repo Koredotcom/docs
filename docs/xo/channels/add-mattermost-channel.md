@@ -19,10 +19,10 @@ Before you begin, ensure that you have access to the administrative functions of
 
 1. Login to your Mattermost account
 2. From the **Main Menu** choose **Integrations**.
-<img src="../channels/images/mattermost.png" alt="main menu" title="main menu" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/mattermost.png" alt="main menu" title="main menu" style="border: 1px solid gray; zoom:70%;">
 
 3. Select the **Outgoing Webhooks** menu and click **Add Outgoing Webhook**.
-<img src="../channels/images/mattermost1.png" alt="add outgoing webhook" title="add outoging webhook" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/mattermost1.png" alt="add outgoing webhook" title="add outoging webhook" style="border: 1px solid gray; zoom:70%;">
 
 4. Provide required information as per the below image.
     * Enter your preferred values for **Title**, **Description** and **Bot Name fields**.
@@ -31,11 +31,11 @@ Before you begin, ensure that you have access to the administrative functions of
     * Provide your Kore.ai assistant Name in the **Trigger Words** field.
     * Copy the **Callback URL** for the Kore VA (located in the **XO Platform > Deploy > Channels > Mattermost**)  and provide it in the Callback URLs field.
     * Click on **Save** to complete the Outgoing Webhook setup.
-    <img src="../channels/images/mattermost2.png" alt="save mattermost configuration " title="save mattermost configuration" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/mattermost2.png" alt="save mattermost configuration " title="save mattermost configuration" style="border: 1px solid gray; zoom:70%;">
 
     * You will be redirected to the confirmation page with the Token displayed.
     * Copy this Token and provide it in the ‘Outgoing Webhook Token’ field present in the XO Platform Channel Configurations section.
-    <img src="../channels/images/mattermost3.png" alt="copy outgoing webhook token" title="copy outoging webhook token" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/mattermost3.png" alt="copy outgoing webhook token" title="copy outoging webhook token" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -48,12 +48,12 @@ Before you begin, ensure that you have access to the administrative functions of
     * Enter your preferred values for **Title**, **Description** and **Username** fields.
     * Choose a default **Channel**. Kore.ai VAs always respond back in the channel from which the user input is received.
     * Do not select the **Lock to this channel** option.
-    <img src="../channels/images/mattermost4.png" alt="choose default channel" title="choose default channel" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/mattermost4.png" alt="choose default channel" title="choose default channel" style="border: 1px solid gray; zoom:70%;">
 
 3. Click on **Save** to complete the Incoming Webhook setup.
 4. You would be redirected to the confirmation page along with the URL associated with this newly created incoming webhook.
 5. Copy this URL and provide it in the ‘Incoming Webhook URL’ field in the Kore Bot Channel Configurations section.
-<img src="../channels/images/mattermost5.png" alt="provide incoming webhook" title="provide incoming webhook" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/mattermost5.png" alt="provide incoming webhook" title="provide incoming webhook" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -70,7 +70,7 @@ To enable a WebSocket connection, you would need to create a Mattermost account 
     * Login to Mattermost from an account that has access to _System Console_.
     * Go to **System Console > Integrations > Integrations Management**.
     * Locate the **Enable Personal Access Tokens** setting, set it to **true**, and **Save**.
-<img src="../channels/images/mattermost6.png" alt="enable personal access tokens" title="enable personal access tokens" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/mattermost6.png" alt="enable personal access tokens" title="enable personal access tokens" style="border: 1px solid gray; zoom:70%;">
 
 
 ### Step 2: Create an Account to be Provisioned as a Bot
@@ -86,10 +86,10 @@ To enable a WebSocket connection, you would need to create a Mattermost account 
         * **_post:all_** to allow the bot to post to all Mattermost channels including direct messages.
         * **post:channels**: to allow the bot to post to all Mattermost public channels, but not in direct messages or private channels.
     * Click **Create Bot Account** to complete the setup.
-    <img src="../channels/images/mattermost7.png" alt="create bot account" title="create bot account" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/mattermost7.png" alt="create bot account" title="create bot account" style="border: 1px solid gray; zoom:70%;">
 
 3. A success page will be shown to you next, where you will also find the access token you can use to connect to this assistant.
-<img src="../channels/images/mattermost8.png" alt="success page" title="success page" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/mattermost8.png" alt="success page" title="success page" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -107,7 +107,7 @@ To configure the XO Platform channel, after having completed the setup in Matter
     * Incoming Webhook URL.
 4. Select **Yes** to enable the channel.
 5. Click **Save** to save your configuration.
-<img src="../channels/images/mattermost9.png" alt="enable mattermost" title="enable mattermost" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/mattermost9.png" alt="enable mattermost" title="enable mattermost" style="border: 1px solid gray; zoom:70%;">
 
 
 After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).

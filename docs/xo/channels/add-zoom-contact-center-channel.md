@@ -47,7 +47,7 @@ To create an app, follow the steps below:
 2. Select **Zoom Contact Center** under **Enterprise Channels**.
 3. Click the **Configurations** tab.
 4. If you’re creating an app for the first time, click the **Create App** link. Otherwise, select **Create App** from the dropdown list or click **Add**.  
-<img src="../channels/images/Zoom.png" alt="Zoom  channel" title="Zoom channel" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/Zoom.png" alt="Zoom  channel" title="Zoom channel" style="border: 1px solid gray; zoom:100%;">
 
 5. In the **Create New Client App** window, follow the steps below:
     * In the **Name** field, enter the name for the app registration used in Bot Builder,. Ffor example, My App Registration.
@@ -58,23 +58,23 @@ To create an app, follow the steps below:
         * **RS256/RS512: **Select to enable the **Public Key.** _The Private key, used for encryption, is provided by the user, and the Public key, used for decryption, is provided by the Platform_. Both the keys have to be used for generating the token. The Public Key is used by the XO Platform to authenticate the client application.
         * **HS256/HS512:** Select to generate a **Secret Key **and a **Client ID**. The **Client ID** is required for app initialization, and the **Secret Key** is used by the XO Platform to authenticate the client application.
     * (Optional) In the **Push Notifications** section, click **Enable** and then specify a URL to send the notifications.
-    <img src="../channels/images/Zoom1.png" alt="Zoom  client ID" title="Zoom client ID" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/Zoom1.png" alt="Zoom  client ID" title="Zoom client ID" style="border: 1px solid gray; zoom:100%;">
 
     * When you Enable the Push Notifications, you can select one of the following options to manage the notifications:
         * **All Messages** – Sends push notifications for all conversation messages to the client app.
         * **Message Delivery Failures** – Sends push notifications for failure scenarios such as WebSocket Disconnected, App is Killed, and Message Delivery Failure.
-        <img src="../channels/images/Zoom2.png" alt="message delivery failure" title="message delivery failure" style="border: 1px solid gray; zoom:100%;">
+        <img src="../images/Zoom2.png" alt="message delivery failure" title="message delivery failure" style="border: 1px solid gray; zoom:100%;">
 
 
     * To customize the display messages for the push notifications messages sent to the client app, select one of the following options:
         * **Send Original Messages** – Sends the actual conversation message as part of the push notification.
         * **Show a standard message from standard responses** – Sends a generic message instead of the original message.
-        <img src="../channels/images/Zoom3.png" alt="show standard messages" title="show standard messages" style="border: 1px solid gray; zoom:100%;">
+        <img src="../images/Zoom3.png" alt="show standard messages" title="show standard messages" style="border: 1px solid gray; zoom:100%;">
 
 
     * Click **Manage Responses** to add custom messages in the push notification. To learn more about adding responses, read articles [Default Standard Responses](https://developer.kore.ai/docs/bots/bot-intelligence/default-standard-responses/) and [Default Conversations](https://developer.kore.ai/docs/bots/bot-intelligence/default-dialog/).
     * Click **Save** and then, click **Create**.
-    <img src="../channels/images/Zoom4.png" alt="manage responses" title="manage responses" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/Zoom4.png" alt="manage responses" title="manage responses" style="border: 1px solid gray; zoom:100%;">
 
 
 
@@ -88,7 +88,7 @@ To set up **Zoom Contact Center** as a channel, the bot has to be associated wit
 2. Select **App Types** > **Connectors** on the left navigation menu.
 3. On the **Connectors** page, select the **Kore.ai Chatbot** option.
 4. On the **Overview** page, click **Add Connector**.
-<img src="../channels/images/Zoom5.png" alt="Zoom  connector" title="Zoom connector" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/Zoom5.png" alt="Zoom  connector" title="Zoom connector" style="border: 1px solid gray; zoom:100%;">
 
 
 ### **Step 3: Authorize the Connector**
@@ -101,36 +101,36 @@ The next step after creating a connector is to authorize it on the **Create Kore
     * Select **Chatbot** from the dropdown for **Choose Bot Type**.
     * Click **Next**.
 
-    <img src="../channels/images/Zoom6.png" alt="Zoom  connector details" title="Zoom connector details" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/Zoom6.png" alt="Zoom  connector details" title="Zoom connector details" style="border: 1px solid gray; zoom:100%;">
 
   2. Provide the following information in the** Authorize** section:
     * Select the region you want the chatbot to be available from the dropdown.
     * The **Base URL** of the Kore.ai Platform to connect to the app. For example, the base URL for Kore.ai is `bots.kore.ai`.
     * Copy and paste the **Bot ID**, **Client ID**, and **Client Secret** values from the **Channels **> **Configuration** section of the XO Platform (shown below) for **Authorization Parameters**.
 
-    <img src="../images/Zoom7.png" alt="Zoom  bot details" title="Zoom bot details" style="border: 1px solid gray; zoom:100%;">
+    <img src=".../images/Zoom7.png" alt="Zoom  bot details" title="Zoom bot details" style="border: 1px solid gray; zoom:100%;">
 
   3. Click **Next.
-  <img src="../channels/images/Zoom8.png" alt="save Zoom  configuration" title="Save Zoom configuration" style="border: 1px solid gray; zoom:70%;">
+  <img src="../images/Zoom8.png" alt="save Zoom  configuration" title="Save Zoom configuration" style="border: 1px solid gray; zoom:70%;">
 
   4. Copy the **Post URL** and **Access Token** values from the **Create Kore.ai Chatbot Connector** page.
 
-  <img src="../channels/images/Zoom9.png" alt="Zoom  URL" title="Zoom URL" style="border: 1px solid gray; zoom:100%;">
+  <img src="../images/Zoom9.png" alt="Zoom  URL" title="Zoom URL" style="border: 1px solid gray; zoom:100%;">
 
   5. Paste to the relevant fields on the Kore.ai XO Platform in the **Zoom Contact Center **> **Configurations** section.
 
-  <img src="../channels/images/Zoom10.png" alt="Zoom  contact center" title="Zoom contact center" style="border: 1px solid gray; zoom:100%;">
+  <img src="../images/Zoom10.png" alt="Zoom  contact center" title="Zoom contact center" style="border: 1px solid gray; zoom:100%;">
 
   5. Copy the **Webhook URL** from the **Zoom Contact Center **> **Configurations** section of the XO Platform.
 
-  <img src="../channels/images/Zoom11.png" alt="Zoom  Webhook URL" title="Zoom Webhook URL" style="border: 1px solid gray; zoom:100%;">
+  <img src="../images/Zoom11.png" alt="Zoom  Webhook URL" title="Zoom Webhook URL" style="border: 1px solid gray; zoom:100%;">
 
   6. Paste on the **Create Kore.ai Chatbot Connector** page, and click **Next**.
 
-  <img src="../channels/images/Zoom12.png" alt="Zoom  Kore connnector" title="Zoom Kore connector" style="border: 1px solid gray; zoom:100%;">
+  <img src="../images/Zoom12.png" alt="Zoom  Kore connnector" title="Zoom Kore connector" style="border: 1px solid gray; zoom:100%;">
 
 The following message appears once the Kore.ai Chatbot connector is authorized successfully.
-<img src="../channels/images/Zoom13.png" alt="Zoom  channel" title="Zoom channel" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/Zoom13.png" alt="Zoom  channel" title="Zoom channel" style="border: 1px solid gray; zoom:100%;">
 
 
 
@@ -142,7 +142,7 @@ The final step in the setup is to enable the channel on the XO Platform. To enab
 1. On the XO Platform, under **Zoom Contact Center** > **Configurations**, select **Yes** for **Enable Channel**.
 2. Click **Save**.
 
-<img src="../channels/images/Zoom14.png" alt="enable Zoom  channel" title=" enable Zoom channel" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/Zoom14.png" alt="enable Zoom  channel" title=" enable Zoom channel" style="border: 1px solid gray; zoom:100%;">
 
 
 You’re now ready to test the new channel integration by publishing your virtual assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/).

@@ -25,14 +25,14 @@ Google Assistant as a channel should ideally be enabled for VAs that are specifi
 3. After your project is created, you are redirected to the project’s **Get Started** page.
 4. On this page, you must select a category for your project. Select the project category as _Custom_ and click **Next**.
 5. After your category is selected, you must select a project template. Scroll down to the bottom of the page and select _Click here to build your Action using DialogFlow_, this will redirect you to the project’s overview page.
-<img src="../channels/images/google_assistant.png" alt="google assistant" title="google assistant" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/google_assistant.png" alt="google assistant" title="google assistant" style="border: 1px solid gray; zoom:70%;">
 
 6. Click the **Modify languages in Settings** option to update the languages in which your actions are displayed.
 7. Go back by clicking on the **Overview** tab on top of the page.
 8. Now click **Decide how your Action is invoked** under the **Quick Setup**. This opens up the **Develop** tab.
 9. Now proceed to the **Invocation** option on the left pane. Provide a name that users use to invoke your actions.
 10. Click **Save** on the top-left of the page. You may review other options available.
-<img src="../channels/images/google_assistant1.png" alt="provide name" title="provide name" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/google_assistant1.png" alt="provide name" title="provide name" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Step 2: Define Actions
@@ -42,11 +42,11 @@ Google Assistant as a channel should ideally be enabled for VAs that are specifi
 3. Once your agent is created, click **Intents** on the left pane. Dialogflow will add two intents by default viz. **Default Fallback Intent** and **Default Welcome Intent.**
     * **Default Fallback Intent** is used to respond to any user input that does not match any of the other intents defined in the intent.
     * **Default Welcome Intent** is used to respond to the user on the first input. If no other intent is created in Dialogflow, these two intents will be used to address all user inputs.
-4. As you expect your Kore.ai assistant to fulfill all your user requests, you must turn on _Webhook_ C_alls_ for both these intents. Once enabled, Dialogflow will route all user requests reaching any of these two intents to your Kore.ai assistant.
+4. As you expect your Kore.ai assistant to fulfill all your user requests, you must turn on _Webhook Calls_ for both these intents. Once enabled, Dialogflow will route all user requests reaching any of these two intents to your Kore.ai assistant.
 5. Select **Default Fallback Intent** to open the intent details and go to the end of the page. Under the **Fulfillment** section, turn on the toggle to **Enable webhook call for this intent** option. Click **Save** to update your changes.
 6. Go back to the **Intents** on the left pane, select **Default Welcome Intent** to open the intent details, and go to the end of the page. Under the **Fulfillment** section, turn on the toggle to **Enable webhook call for this intent** option.
 7. Click **Save** to update your changes.
-<img src="../channels/images/google_assistant2.png" alt="enable google assistant" title="enable google assistant" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/google_assistant2.png" alt="enable google assistant" title="enable google assistant" style="border: 1px solid gray; zoom:70%;">
 
 ## Step 3: Enable Fulfillment
 
@@ -54,10 +54,10 @@ Google Assistant as a channel should ideally be enabled for VAs that are specifi
 1. Next, Enable Fulfillment. To configure the webhook integration between your Dialogflow agent and Kore.ai assistant, click the **Fulfillment** option on the left pane and enable the **Webhook** toggle switch.
     * Open the assistant in the Kore.ai XO Platform and access the **Channel Enablement** option and select the **Google Assistant** channel.
     * Go to the **Configurations** tab and copy the **Webhook URL** provided there and update it in the **URL** field in the **Fulfillment** section of Dialogflow.
-    *. From the **Configurations** tab of the Google Assistant channel page on the builder, copy the **Access Token**. This token must be added as a header key in the Dialogflow Fulfillment screen.
+    * From the **Configurations** tab of the Google Assistant channel page on the builder, copy the **Access Token**. This token must be added as a header key in the Dialogflow Fulfillment screen.
     * Under the **Webhook** option of the **Fulfillment** section, add the key as **Access-token** and update the copied access token as the value for this key.
 2. Go to the end of the page and click **Save**.
-<img src="../channels/images/google_assistant3.png" alt="enable fulfillment" title="enable fulfillment" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/google_assistant3.png" alt="enable fulfillment" title="enable fulfillment" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Step 4: Test using Simulator
@@ -72,10 +72,9 @@ Google Assistant as a channel should ideally be enabled for VAs that are specifi
 ## Step 5: Enable the channel
 
 
-1. In the XO Platform, select the assistant you want to add the channel to.
-2. Go to **Deploy > Channels > Google Assistant**.
-3. Go to the **Configuration** tab, select Yes and Save your change to enable the channel.
-<img src="../channels/images/google_assistant4.png" alt="deploy google assistant" title="deploy google assistant" style="border: 1px solid gray; zoom:70%;">
+1. In the XO Platform, Go to **Channels & Flows** > **Channels** > **Digital** > **All** > **Google Assistant**.
+2. Go to the **Configuration** tab, select Yes and Save your change to enable the channel.
+<img src="../images/google_assistant4.png" alt="deploy google assistant" title="deploy google assistant" style="border: 1px solid gray; zoom:70%;">
 
 
 After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
