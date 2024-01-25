@@ -27,7 +27,7 @@ To set up **Genesys Cloud CX Messaging** as a channel, use your account on the [
 The steps to add the channel are summarized below:
 
 1. [Create a Bot Connector](/docs/xo/channels/add-genesys-chat-channel/#step-1-create-a-bot-connector) and [Link the Virtual Assistant to the Bot Connector](/docs/xo/channels/add-genesys-chat-channel/#step-1-create-a-bot-connector)
-2. [Create an App in the Kore.ai Web/Mobile Client](/docs/xo/channels/add-genesys-chat-channel/#Step-2-Create-an-App-on-the-Kore.ai-XO-Platform)
+2. [Create an App in the Kore.ai Web/Mobile Client](/docs/xo/channels/add-genesys-chat-channel/#Step-2-Create-an-app-in-the-kore.ai-xo-platform)
 3. [Create the OAuth Client App in the Genesys Developer Console](/docs/xo/channels/add-genesys-chat-channel/#step-3-create-the-oauth-client-app-in-the-genesys-developer-console)
 4. [Create an inbound message flow](/docs/xo/channels/add-genesys-chat-channel/#step-4-create-an-inbound-message-flow).
 5. [Configure the Messenger SDK](/docs/xo/channels/add-genesys-chat-channel/#step-5-configure-the-messenger-sdk)
@@ -107,25 +107,31 @@ Steps to create an app on the Genesys Developer Console:
 3. Click **Add Client** on the OAuth Screen.
 4. Enter the **App Name** and **Description**.
 5. Select the **Grant Types** as _Code Authorization_.
+
     ![alt_text](images/genesys_chat_create_app.png "image_tooltip")
+
 6. Copy the **Callback URL** from the **Configurations** tab of the Kore.ai XO Platform for Genesys Cloud CX Messaging channel.
     ![alt_text](images/genesys_chat_create_app2.png "image_tooltip")
 7. In the Genesys Console, go back to the **Integrations > OAuth** page and paste the **Callback URL** that you have copied in the **Authorized redirect URI** field.
+
 8. Add the _architect_, _integrations_, and _textbot_ scopes in the **Scopes** field.
+
     ![alt_text](images/genesys_chat_bearer1.png "image_tooltip")
+
 9. Click **Save** to update the OAuth Client configuration.
+
 10. Copy the **Client ID** and **Client Secret** from the OAuth Client App page.
+
 11. In the Kore.ai XO Platform, return to the **Channels & Flows** > **Channels** > **Digital** > **All** > **Genesys Cloud CX Messaging** > **Configurations** tab and paste the **Client ID** and **Client Secret** values.
+
 12. Once you paste all the required credentials, click **Authorize** to validate the authorization.
+
     ![alt_text](images/genesys_cloud_cx6.png "image_tooltip")
+
 13. If you are still logged into your Genesys Cloud instance, your current credentials are used. Otherwise, a login screen will open. Use valid credentials for the Genesys cloud instance you are configuring.
 
 Your Bot Connector is created successfully!
 
-		
-	 		
-
-	
 
 
 
