@@ -121,7 +121,7 @@ After creating the agent, you need to copy the **Webhook URL** from the Kore.ai 
 4. For the **Webhook** option, click the **Configure** link.
 <img src="../images/GBM-5.png" alt="configure webhook" title="configure webhook" style="border: 1px solid gray; zoom:70%;">
 
-5. Copy the **Webhook URL** from the Kore.ai XO Platform under **Deploy** > **Channels** > **Google Business Messaging** > **Configurations**.
+5. Copy the **Webhook URL** from the Kore.ai XO Platform under **Channels & Flows** > **Channels** > **Digital** > **All** **Google Business Messaging** > **Configurations**.
 <img src="../images/GBM-6.png" alt="webhook url" title="webhook url" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -166,7 +166,7 @@ To configure the virtual assistant for the service account on the Kore.ai XO Pla
 
 
 1. Copy the **_client_email_**, **_client_id_**, **_token_uri_**, and **_private_key_** values from the downloaded JSON file.
-1. Paste the values in the respective fields under **Deploy** > **Channels** > **Enterprise Channels** > **Google Business Messaging** > **Configurations**.
+1. Paste the values in the respective fields under **Channels & Flows** > **Channels** > **Digital** > **All** > **Google Business Messaging** > **Configurations**.
 
     <img src="../images/GBM-13.png" alt="private key" title="private key" style="border: 1px solid gray; zoom:70%;">
 
