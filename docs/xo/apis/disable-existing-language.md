@@ -2,9 +2,6 @@
 
 To disable an existing language for a virtual assistant.
 
- 
-
-
 <table>
   <tr>
    <td><strong>Method</strong>
@@ -16,8 +13,6 @@ To disable an existing language for a virtual assistant.
    <td><strong>Endpoint</strong>
    </td>
    <td><code>https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language/status</code>
-<p>
- 
    </td>
   </tr>
   <tr>
@@ -30,8 +25,7 @@ To disable an existing language for a virtual assistant.
    <td><strong>Authorization</strong>
    </td>
    <td><code>auth: {{JWT}}</code>
-<p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+    See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -48,10 +42,6 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    </td>
   </tr>
 </table>
-
-
- 
-
 
 ## Path Parameters
 
@@ -75,10 +65,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
-
 ## Sample Request
-
 
 ```json
 https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language/status \
@@ -90,10 +77,6 @@ https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language/status \
 "enable": false
 }]'
 ```
-
-
- 
-
 
 ## Body Parameters
 
@@ -126,9 +109,7 @@ https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language/status \
 </table>
 
 
-
 ## Sample Response
-
 
 ```json
 Disabled Spanish language successfully

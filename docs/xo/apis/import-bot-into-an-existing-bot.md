@@ -172,38 +172,24 @@ curl -X POST \
    </td>
    <td>All bot components are imported by default. If needed, you may specify the components to be included in the import.
     Usage:
-<p>
-<code>"importOptions": {</code>
-<p>
-<code>   "tasks": [</code>
-<p>
-<code>     "botTask",</code>
-<p>
-<code>     "knowledgeGraph"</code>
-<p>
-<code>     ],</code>
-<p>
-<code>   "nlpData": [</code>
-<p>
-<code>     "nlpSettings",</code>
-<p>
-<code>     "utterances",</code>
-<p>
-<code>     "standardResponses"</code>
-<p>
-<code>     ],</code>
-<p>
-<code>   "settings": [</code>
-<p>
-<code>     "botSettings",</code>
-<p>
-<code>     "botVariables",</code>
-<p>
-<code>     "ivrSettings"</code>
-<p>
-<code>     ]</code>
-<p>
-<code> },</code>
+    <pre>
+    "importOptions": {
+      "tasks": [
+        "botTask",
+        "knowledgeGraph"
+      ],
+      "nlpData": [
+        "nlpSettings",
+        "utterances",
+        "standardResponses"
+      ],
+      "settings": [
+        "botSettings",
+        "botVariables",
+        "ivrSettings"
+      ]
+    },
+    </pre>
    </td>
   </tr>
   <tr>
@@ -213,12 +199,14 @@ curl -X POST \
    </td>
    <td>This will indicate incremental import options for the ML utterances, whether to replace or append. <a href="/docs/xo/manage-assistant/bot-management/#importing-an-assistant">Learn more</a>.
     Usage:
-      <pre>"options": {
-                "utterances": {
-                "replace": true
-                "append":false
-              }
-      </pre>
+    <pre>
+   "options": {
+     "utterances":
+     {
+       "replace": true
+       "append":false
+     }
+    </pre>
    </td>
   </tr>
 </table>

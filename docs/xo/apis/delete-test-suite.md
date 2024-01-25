@@ -3,7 +3,6 @@
 
 To delete an existing conversation test suite.
 
-
 <table>
   <tr>
    <td><strong>Method</strong>
@@ -28,7 +27,7 @@ To delete an existing conversation test suite.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -71,7 +70,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   <tr>
    <td><strong>StreamID</strong>
    </td>
-   <td>The  <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
+   <td>The <em>Stream ID</em> can be accessed under <strong>General Settings</strong> on the Bot Builder.
    </td>
    <td>Required
    </td>
@@ -127,3 +126,4 @@ curl --location --request DELETE \
 {
     "status": "Success"
 }
+```

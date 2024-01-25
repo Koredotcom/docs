@@ -29,7 +29,7 @@ To enable an existing language for a virtual assistant.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -47,12 +47,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
- 
-
-
 ## Path Parameters
-
 
 <table>
   <tr>
@@ -73,10 +68,6 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
- 
-
-
 ## Sample Request
 
 
@@ -85,19 +76,13 @@ curl -X POST \
 https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language/status \
 -H 'Content-Type: application/json' \
 -H 'auth: YOUR_JWT_ACCESS_TOKEN' \
--d '[
-{
-"language" : ,
-"enable": true
-}]'
+-d '[{
+  "language" : ,
+  "enable": true
+  }]'
 ```
 
-
- 
-
-
 ## Body Parameters
-
 
 <table>
   <tr>
@@ -126,10 +111,7 @@ https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language/status \
   </tr>
 </table>
 
-
-
 ## Sample Response
-
 
 ```json
 "Enabled Spanish language successfully"

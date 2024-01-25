@@ -2,7 +2,6 @@
 
 To fetch the status of Proactive Notifications API.
 
-
 <table>
   <tr>
    <td><strong>Method</strong>
@@ -26,8 +25,7 @@ To fetch the status of Proactive Notifications API.
    <td><strong>Authorization</strong>
    </td>
    <td><code>auth: {{JWT}}</code>
-<p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+   See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -45,12 +43,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
- 
-
-
 ## Path Parameters
-
 
 <table>
   <tr>
@@ -89,12 +82,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
- 
-
-
 ## Sample Request
-
 
 ```json
 curl --
@@ -103,16 +91,9 @@ GET \ 'https://{{host}}/api/public/bot/{{BotID}}/notify/status/{{requestId}}' \
 --header 'Content-Type: application/json'
 ```
 
-
- 
-
-
 ## Body Parameters
 
 No body parameters are passed.
-
- 
-
 
 ## Sample Response
 

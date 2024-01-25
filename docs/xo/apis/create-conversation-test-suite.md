@@ -2,7 +2,6 @@
 
 To create a conversation test suite by importing the test cases from a given file. This API returns **_dsId_**, the ID to check the import status.
 
-
 <table>
   <tr>
    <td><strong>Method</strong>
@@ -27,7 +26,7 @@ To create a conversation test suite by importing the test cases from a given fil
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -95,11 +94,7 @@ curl --location --request POST \
           "description" : ""
 }'
 ```
-
-
-
 ## Body Parameters
-
 
 <table>
   <tr>
@@ -144,8 +139,6 @@ curl --location --request POST \
   </tr>
 </table>
 
-
-
 ## Sample Response
 
 
@@ -154,3 +147,4 @@ curl --location --request POST \
     "status": "IN_PROGRESS",
     "dsId": "ds-f8xxxxx5-5xxa-5xx4-axx4-48xxxxxxxxx9" 
 }
+```

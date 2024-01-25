@@ -44,10 +44,6 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   </tr>
 </table>
 
-
- 
-
-
 ## Path Parameters
 
 
@@ -65,10 +61,6 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    </td>
   </tr>
 </table>
-
-
- 
-
 
 ## Sample Request
 
@@ -100,10 +92,6 @@ https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language \
 }
 }]'
 ```
-
-
- 
-
 
 ## Body Parameters
 
@@ -227,7 +215,6 @@ https://{{host}}/api/{{version-Id}}/public/bot/{{botId}}/language \
 
 For success case:
 
-
 ```json
 [{
 "message": "Enabled language successfully",
@@ -241,6 +228,4 @@ For success case:
 "widgets":0
 }
 }]
-
-# Test
-<a href="/docs/xo/apis/bot-export.md">How to generate the JWT Token</a>.
+```

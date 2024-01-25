@@ -28,7 +28,7 @@ To import the test cases from a given Test Suite file.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -77,10 +77,6 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
- 
-
-
 ## Sample Request
 
 
@@ -97,13 +93,10 @@ curl --location --request POST \
          "fileType": "json",
          "importType": "update",
          "name": "hgf"
-}'
+        }'
 ```
 
-
-
 ## Body Parameters
-
 
 <table>
   <tr>
@@ -156,10 +149,6 @@ curl --location --request POST \
   </tr>
 </table>
 
-
- 
-
-
 ## Sample Response
 
 
@@ -177,3 +166,4 @@ curl --location --request POST \
     "__v": 0,
     "fileName": "sampleBatchtesting (2) (copy) (1).json"
 }
+```

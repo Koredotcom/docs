@@ -2,7 +2,6 @@
 
 To initiate enable a channel for a virtual assistant.
 
-
 <table>
   <tr>
    <td><strong>Method</strong>
@@ -29,7 +28,7 @@ To initiate enable a channel for a virtual assistant.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -47,10 +46,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
-
 ## Query Parameters
-
 
 <table>
   <tr>
@@ -168,10 +164,6 @@ curl --location --request POST 'https://{{host}}/api/public/channels' \
 }'
 ```
 
-
- 
-
-
 ## Body Parameters
 
 
@@ -229,10 +221,6 @@ curl --location --request POST 'https://{{host}}/api/public/channels' \
   </tr>
 </table>
 
-
- 
-
-
 ## Sample Response
 
 The response from the platform depends on the channel being enabled.
@@ -261,7 +249,6 @@ Sample response for **web/mobile SDK**:
 }
 ```
 
-
 Sample response for **webhook channel**:
 
 
@@ -283,9 +270,7 @@ Sample response for **webhook channel**:
 }
 ```
 
-
 Sample response for **Slack channel**:
-
 
 ```json
 {
@@ -300,9 +285,7 @@ Sample response for **Slack channel**:
 }
 ```
 
-
 Sample response for **MS Teams channel**:
-
 
 ```json
 {
@@ -316,3 +299,4 @@ Sample response for **MS Teams channel**:
     },
     "type": "msteams"
 }
+```

@@ -27,7 +27,7 @@ To fetch the publish status of the current bot or the last completed status requ
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -44,10 +44,6 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    </td>
   </tr>
 </table>
-
-
- 
-
 
 ## Path Parameters
 
@@ -81,10 +77,6 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
- 
-
-
 ## Sample Request
 
 
@@ -94,19 +86,11 @@ curl -X GET \
   -H 'Auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 ```
 
-
- 
-
-
 ## Body Parameters
 
 No body parameters are passed.
 
- 
-
-
 ## Sample Response
-
 
 ```json
 {
@@ -843,4 +827,4 @@ No body parameters are passed.
 
 
 !!! note
-    The possible values for the ‘status’ field are – SUCCESSFUL, FAILED or INPROGRESS.
+    The possible values for the ‘status’ field in the response are – SUCCESSFUL, FAILED or INPROGRESS.

@@ -27,7 +27,7 @@ To export the ML utterances of a bot by creating a _request ID_ to generate the 
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -111,3 +111,4 @@ No body parameters are passed.
     "requestedTime": "2023-07-26T13:15:04.984Z",
     "__v": 0
 }
+```

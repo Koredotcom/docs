@@ -26,7 +26,7 @@ Gets the status of Bot Export request and also provides the download link of the
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -43,10 +43,6 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    </td>
   </tr>
 </table>
-
-
- 
-
 
 ## Query Parameters
 
@@ -79,9 +75,6 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 </table>
 
 
- 
-
-
 ## Sample Request
 
 
@@ -96,7 +89,6 @@ curl -X GET \
 No body parameters are passed.
 
 ## Sample Response
-
 
 ```json
 {

@@ -33,7 +33,7 @@ To install a sample bot.
 <p>
 <code>bot-language : en</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -51,12 +51,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
- 
-
-
 ## Path Parameters
-
 
 <table>
   <tr>
@@ -85,12 +80,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
- 
-
-
 ## Sample Request
-
 
 ```json
 curl -X POST \

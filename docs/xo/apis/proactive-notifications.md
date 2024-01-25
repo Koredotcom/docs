@@ -34,7 +34,7 @@ Proactive notification includes:
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -51,10 +51,6 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    </td>
   </tr>
 </table>
-
-
- 
-
 
 ## Path Parameters
 
@@ -115,10 +111,6 @@ POST \' https://{{host}}/api/public/bot/{{BotID}}/notify' \
 }'
 ```
 
-
- 
-
-
 ## Body Parameters
 
 
@@ -161,19 +153,18 @@ The values is <em>resolve</em>.
 
 <li><em>val</em> → value of the message to be sent to user.
 
-<p>
-<strong>Example 1:Text</strong>: \
-<code>{ \
-"type": "text", \
-"val": "Hi User" \
+<strong>Example 1:Text</strong>:
+<code>{
+"type": "text",
+"val": "Hi User"
 }</code>
-<p>
+
 <strong>Example 2: Script</strong>:
-<p>
-<code>{ \
-"type": "script", \
-"val": "var envMsg = 'John'; var channel = context.session.BotUserSession.lastMessage.channel; print(JSON.stringify({text: 'Hi ' + envMsg + ' message is from ' + channel + ' channel'}));" \
-}</code>
+
+<pre>{
+   "type": "script",
+   "val": "var envMsg = 'John'; var channel = context.session.BotUserSession.lastMessage.channel; print(JSON.stringify({text: 'Hi ' + envMsg + ' message is from ' + channel + ' channel'}));" 
+}</pre>
 </li>
 </ul>
    </td>
@@ -183,21 +174,14 @@ The values is <em>resolve</em>.
   <tr>
    <td>identities
    </td>
-   <td>It accepts the list of user identities for whom notifications need to be sent.
-<p>
-A maximum of 1000 identities are supported.
+   <td>It accepts the list of user identities for whom notifications need to be sent. A maximum of 1000 identities are supported.
    </td>
    <td>Required
    </td>
   </tr>
 </table>
 
-
- 
-
-
 ## Sample Response
-
 
 ```json
 {

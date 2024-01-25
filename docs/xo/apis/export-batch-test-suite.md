@@ -3,7 +3,6 @@
 
 To export the test cases of a given Batch Test Suite and get a link to download the file once the export is completed.
 
-
 <table>
   <tr>
    <td><strong>Method</strong>
@@ -27,8 +26,7 @@ To export the test cases of a given Batch Test Suite and get a link to download 
    <td><strong>Authorization</strong>
    </td>
    <td><code>auth: {{JWT}}</code>
-<p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+   See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -79,8 +77,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    <td><strong>testSuiteName</strong>
    </td>
    <td>The name of the test suite created on the Bot Builder for the export.
-<p>
-Note: Only Custom Batch Test Suites can be exported.
+<p><strong>Note:</strong> Only Custom Batch Test Suites can be exported.
    </td>
    <td>Required
    </td>
@@ -98,13 +95,11 @@ curl -X POST \
   -H 'bot-language: {language-code}' \
 ```
 
-
 ## Body Parameters
 
 No body parameters are passed.
 
 ## Sample Response
-
 
 ```json
 {
@@ -112,4 +107,4 @@ No body parameters are passed.
     "name": "Batch Test Name",
     "description": "Batch Test Description"
 }
-
+```

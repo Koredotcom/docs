@@ -29,7 +29,7 @@ To export the bot definition and all the associated components.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -249,7 +249,7 @@ Usage:
 </table>
 
 
-To learn more about the optional parameters for partial import and dependent tasks, please click [here](https://developer.kore.ai/docs/bots/bot-settings/bot-management/bot-management-2/#Exporting_a_Bot).
+To learn more about the optional parameters for partial import and dependent tasks, please click [here](/docs/xo/manage-assistant/bot-management/#exporting-an-assistant).
 
 
 ## Sample Response

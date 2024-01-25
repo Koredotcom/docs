@@ -2,7 +2,6 @@
 
 To initiate the training of the knowledge graph.
 
-
 <table>
   <tr>
    <td><strong>Method</strong>
@@ -27,7 +26,7 @@ To initiate the training of the knowledge graph.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -45,9 +44,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
 ## Path Parameters
-
 
 <table>
   <tr>
@@ -112,7 +109,6 @@ curl -X POST \
 </table>
 
 ## Sample Response
-
 
 ```json
 {

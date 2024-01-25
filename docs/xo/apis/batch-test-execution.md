@@ -26,8 +26,7 @@ To execute Batch Test Suites and get results. This API only initiates the test p
    <td><strong>Authorization</strong>
    </td>
    <td><code>auth: {{JWT}}</code>
-<p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+   See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -44,10 +43,6 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    </td>
   </tr>
 </table>
-
-
- 
-
 
 ## Query Parameters
 
@@ -88,9 +83,6 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
 </table>
 
 
- 
-
-
 ## Sample Request
 
 
@@ -104,10 +96,6 @@ curl --location --request POST \
          "version":"inDevelopment" 
          }'
 ```
-
-
- 
-
 
 ## Body Parameters
 
@@ -125,28 +113,21 @@ curl --location --request POST \
    <td><strong>version</strong>
    </td>
    <td>The version of the bot against which the execution is required
-<ul>
-
-<li>published for Published version
-
-<li>inDevelopment for the Configured version
-</li>
-</ul>
+   <ul>
+      <li>published for Published version</li>
+      <li>inDevelopment for the Configured version</li>
+   </ul>
    </td>
    <td>Required
    </td>
   </tr>
 </table>
 
-
- 
-
-
 ## Sample Response
-
 
 ```json
 {
     "status": "accepted",
     "requestId": "tr-acfxxbff-xxxf-xaxx-bbbx-exxxabaxxcxx"
 }
+```

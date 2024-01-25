@@ -28,7 +28,7 @@ To delete a specific execution of a Batch Test Suite.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -46,9 +46,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
 ## Query Parameters
-
 
 <table>
   <tr>
@@ -86,7 +84,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   <tr>
    <td><strong>testRunId</strong>
    </td>
-   <td>The unique identifier of an execution result obtained by running the <a href="https://developer.kore.ai/docs/bots/api-guide/batch-test-execution-api/">test execution API</a>.
+   <td>The unique identifier of an execution result obtained by running the <a href="../batch-test-execution">test execution API</a>.
    </td>
    <td>Required
    </td>
@@ -104,16 +102,14 @@ curl --location --request DELETE \
       --header 'bot-language: {language-code}'
 ```
 
-
 ## Body Parameters
 
 No body parameters are passed.
 
-
 ## Sample Response
-
 
 ```json
 {
     "message": "Test Result Removed Successfully"
 }
+```

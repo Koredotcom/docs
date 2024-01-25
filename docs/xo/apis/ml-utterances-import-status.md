@@ -27,7 +27,7 @@ To get the status of the ML utterances import request made through Import ML Utt
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -80,16 +80,12 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   <tr>
    <td><strong>MLutteranceID</strong>
    </td>
-   <td>The ID generated in the format Bir-xxxxxxx-xxx-xxxx-xxxxx-xxxxxxxxxx when calling the <a href="https://developer.kore.ai/docs/bots/api-guide/ml-utterances-import-api/">ML Utterances Import API</a>.
+   <td>The ID generated in the format Bir-xxxxxxx-xxx-xxxx-xxxxx-xxxxxxxxxx when calling the <a href="../import-ml-utterances">ML Utterances Import API</a>.
    </td>
    <td>Required
    </td>
   </tr>
 </table>
-
-
- 
-
 
 ## Sample Request
 
@@ -100,16 +96,9 @@ curl -X GET \ https://{{host}}/api/public/bot/{{BotID}}/mlimport/status/{{MLutte
   -H 'content-type: application/json' \
 ```
 
-
- 
-
-
 ## Body Parameters
 
 No Body Parameters are passed.
-
- 
-
 
 ## Sample Response
 
@@ -126,3 +115,4 @@ No Body Parameters are passed.
     "__v": 0,
     "message": "File imported completed. 1 utterances copied successfully"
 }
+```

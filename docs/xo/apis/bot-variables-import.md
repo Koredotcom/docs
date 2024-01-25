@@ -28,7 +28,7 @@ To import global and content variables into the bot.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -45,10 +45,6 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    </td>
   </tr>
 </table>
-
-
- 
-
 
 ## Query Parameters
 
@@ -80,12 +76,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
- 
-
-
 ## Body Parameters
-
 
 <table>
   <tr>
@@ -158,28 +149,19 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    <td>Required
    </td>
    <td>For the variables of type locale, additional language data needs to be passed in the following format for each language:
-<p>
-<code>{</code>
-<p>
-<code>      "en": {</code>
-<p>
-<code>        "value": "english language prompt",</code>
-<p>
-<code>        "hint": ""</code>
-<p>
-<code>      }</code>
-<p>
-<code> }</code>
+    <pre>
+    {
+        "en": {
+            "value": "english language prompt",
+            "hint": ""
+        }
+    }
+    </pre>
    </td>
   </tr>
 </table>
 
-
- 
-
-
 ## Sample Request
-
 
 ```json
 curl -X POST \
@@ -187,13 +169,13 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
   -d '[
-  {
-    "key": "Global",
-    "value": "Globalkey-prePopulated",
-    "hint": "",
-    "variableType": "env",
-    "scope": "prePopulated"
-  },
+    {
+        "key": "Global",
+        "value": "Globalkey-prePopulated",
+        "hint": "",
+        "variableType": "env",
+        "scope": "prePopulated"
+    },
 	{
     "key": "Lang",
     "variableType": "locale",
@@ -207,11 +189,6 @@ curl -X POST \
   }
 ]'
 ```
-
-
- 
-
-
 ## Sample Request when Collections are enabled
 
 
@@ -369,13 +346,9 @@ curl -X POST \
 }'
 ```
 
-
 ## Body Parameters
 
 No body parameters are passed.
-
- 
-
 
 ## Sample Response
 
@@ -384,3 +357,4 @@ No body parameters are passed.
 {
   "message": "2 Variables imported/updated successfully."
 }
+```

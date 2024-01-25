@@ -2,7 +2,6 @@
 
 To initiate the ML training for a bot.
 
-
 <table>
   <tr>
    <td><strong>Method</strong>
@@ -27,7 +26,7 @@ To initiate the ML training for a bot.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -44,10 +43,6 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    </td>
   </tr>
 </table>
-
-
- 
-
 
 ## Query Parameters
 
@@ -79,10 +74,6 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
- 
-
-
 ## Sample Request
 
 
@@ -91,17 +82,9 @@ curl -X POST \
   https://{{host}}/api/public/bot/{{BotId}}/ml/train \
   -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 ```
-
-
- 
-
-
 ## Body Parameters
 
 No Body Parameters are passed.
-
- 
-
 
 ## Sample Response
 
@@ -113,3 +96,4 @@ No Body Parameters are passed.
         "Training_ID": "5dxxxxxxxxxxxxxxxxxxxxxx"
     }
 ]
+```

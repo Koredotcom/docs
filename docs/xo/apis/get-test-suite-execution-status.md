@@ -3,7 +3,6 @@
 
 To get the status of the Conversation Test Suite Execution request against a unique **_testSuiteId_** if the request is in progress, and provide the download link for the results file after the test execution is complete.
 
-
 <table>
   <tr>
    <td><strong>Method</strong>
@@ -28,7 +27,7 @@ To get the status of the Conversation Test Suite Execution request against a uni
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -46,10 +45,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
-
 ## Query Parameters
-
 
 <table>
   <tr>
@@ -135,10 +131,7 @@ No Body parameters are passed.
     },
     "percentageCompleted": 85
 }
-
 ```
-
-
 
 * When the request is completed.
 

@@ -2,9 +2,8 @@
 
 To initiate a publish request for a bot.
 
-!!! note
+!!!note
     Before calling the API, ensure that at least one channel is enabled for the bot.
-
 
 <table>
   <tr>
@@ -32,7 +31,7 @@ To initiate a publish request for a bot.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -78,8 +77,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    <td>Required
    </td>
    <td><em>Bot ID</em> or <em>Stream ID</em> can be accessed under <strong>General Settings </strong>on the Bot Builder.
-<p>
-<mark>Note: This is required only for Bot Builder API scope of Proactive Messages.</mark>
+   <strong>Note:</strong> This is required only for Bot Builder API scope of Proactive Messages.
    </td>
   </tr>
 </table>
@@ -135,7 +133,7 @@ curl -X POST \
 <li><em>false</em>: Skip the training.
 
 <p>
-<mark><strong>Note:</strong> By default, the platform automatically initiates training upon bot publishing to ensure that the bot is trained with the latest ML and KG changes. Skipping the training can result in issues in intent detection and flow execution.</mark>
+<strong>Note:</strong> By default, the platform automatically initiates training upon bot publishing to ensure that the bot is trained with the latest ML and KG changes. Skipping the training can result in issues in intent detection and flow execution.
 </li>
 </ul>
    </td>

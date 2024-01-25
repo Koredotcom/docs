@@ -27,7 +27,7 @@ To get the list of Batch Test Suites available for a bot.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -44,10 +44,6 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    </td>
   </tr>
 </table>
-
-
- 
-
 
 ## Path Parameters
 
@@ -108,20 +104,11 @@ curl -X GET \
   --header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
   --header 'bot-language: {language-code}'
 ```
-
-
- 
-
-
 ## Body Parameters
 
 No body parameters are passed.
 
- 
-
-
 ## Sample Response
-
 
 ```json
 {
@@ -450,3 +437,4 @@ No body parameters are passed.
         ]
     }
 }
+```
