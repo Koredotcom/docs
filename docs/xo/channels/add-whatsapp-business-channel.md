@@ -1,4 +1,4 @@
-# **Adding the WhatsApp Business Messaging Channel**
+# Adding the WhatsApp Business Messaging Channel
 
 
 ## Adding the WhatsApp Channel using Infobip Application
@@ -98,7 +98,7 @@ The Platform automatically decides the payload to be sent to the channels after 
 
 * To learn more about creating and managing templates, please refer to this [link](https://www.infobip.com/docs/whatsapp/manage-connection#manage-templates-manage-senders).
 * To know more about various message types and the structure of templates, please refer to this [link](https://www.infobip.com/docs/whatsapp/message-types#guidelines-amp-best-practices).
-* To learn more about sending template messages, please refer to this [link](https://www.infobip.com/docs/api/channels/whatsapp/whatsapp-outbound-messages/send-whatsapp-template-message).
+* To learn more about sending template messages, please refer to this [link](https://www.infobip.com/docs/api/whatsapp/whatsapp-outbound-messages/send-whatsapp-template-message).
 
 
 ## Adding the WhatsApp Channel Using GupShup Application
@@ -110,14 +110,14 @@ The Platform supports integration with **GupShup** to enable WhatsApp business a
       The important steps in completing this channel enablement are as follows:
 
 
-1. [Create a GupShup Application](/docs/xo/channels/add-whatsapp-business-channel/#step-1-create-a-gupshup-application). \
-2. [Configure the Channel Enablement](/docs/xo/channels/add-whatsapp-business-channel/#step-2-configure-the-channel-enablement).
+1. [Create a GupShup Application](/docs/xo/add-whatsapp-business-channel/#step-1-create-a-gupshup-application). \
+2. [Configure the Channel Enablement](/docs/xo/add-whatsapp-business-channel/#step-2-configure-the-channel-enablement).
 
-* [Create a WABA (WhatsApp Business Account)](/docs/xo/channels/add-whatsapp-business-channel/#step-2a-create-a-new-whatsapp-business-account).
-* [Set up the WABA Parameters on the Platform](/docs/xo/channels/add-whatsapp-business-channel/#step-2b-set-up-the-waba-parameters-on-the-platform).
-* [Configure the Callback URL/Webhook URL](/docs/xo/channels/add-whatsapp-business-channel/#step-2c-configure-the-callback-urlwebhook-url).
+* [Create a WABA (WhatsApp Business Account)](/docs/xo/add-whatsapp-business-channel/#step-2a-create-a-new-whatsapp-business-account).
+* [Set up the WABA Parameters on the Platform](/docs/xo/add-whatsapp-business-channel/#step-2b-set-up-the-waba-parameters-on-the-platform).
+* [Configure the Callback URL/Webhook URL](/docs/xo/add-whatsapp-business-channel/#step-2c-configure-the-callback-urlwebhook-url).
 
-3. [Secure the Integration](/docs/xo/channels/add-whatsapp-business-channel/#step-3-secure-the-integration).
+3. [Secure the Integration](/docs/xo/add-whatsapp-business-channel/#step-3-secure-the-integration).
 
 
 ### Step 1: Create a GupShup Application

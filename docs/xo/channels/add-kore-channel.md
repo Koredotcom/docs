@@ -1,4 +1,4 @@
-# **Adding the Kore Channel**
+# Adding the Kore Channel
 
 Adding the Kore channel to your assistant allows end-users to interact with it using the Kore Messaging application available as a web, desktop, or mobile client.
 
@@ -6,7 +6,7 @@ To add the Kore channel, follow the below steps:
 
 
 1. Select the assistant that you want to add the Kore Messaging channel to.
-2. On the **Channels** tab, click the **Kore** icon. The **Kore Channel **page is displayed.
+2. On the **Channels** tab, click the **Kore** icon. The **Kore Channel** page is displayed.
 3. Under the **Enable/Disable Channel** section, select **Enable**
 4. Enable **Bot Commands** to be used within Kore Messenger Rooms. Provide a **Command Name,** add **Help** text, give an **Example Command** and enter a **Description**.
 5. Click **Save** to enable the channel.

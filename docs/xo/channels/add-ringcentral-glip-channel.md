@@ -1,4 +1,4 @@
-# **Adding Glip by RingCentral as a Channel**
+# Adding Glip by RingCentral as a Channel
 
 The Kore.ai XO Platform now allows you to add **Glip by RingCentral** as a messaging channel to your Virtual Assistants (VAs).
 
@@ -25,11 +25,11 @@ To start the integration, you must register an application on RingCentral to gai
 The steps to add the channel are summarized below:
 
 
-1. [Create a RingCentral App](/docs/xo/channels/add-ringcentral-glip-channel/#step-1-create-a-ringcentral-app)
-2. [App Set Up on the Kore.ai XO Platform using the Application Key and App secret](/docs/xo/channels/add-ringcentral-glip-channel/#step-2-application-set-up-on-the-koreai-xo-platform)
-3. [Authorize a valid extension (user) of your RingCentral account to generate the developer access token, access the Glip APIs, and enable the channel](/docs/xo/channels/add-ringcentral-glip-channel/#step-3-authorize-extension-user-of-your-ringcentral-sandbox-account)
-4. [Test the integration](/docs/xo/channels/add-ringcentral-glip-channel/#step-4-test-the-integration)
-5. [(Recommended) Apply for Production](/docs/xo/channels/add-ringcentral-glip-channel/#recommended-step-5-apply-for-production)
+1. [Create a RingCentral App](/docs/xo/add-ringcentral-glip-channel/#step-1-create-a-ringcentral-app)
+2. [App Set Up on the Kore.ai XO Platform using the Application Key and App secret](/docs/xo/add-ringcentral-glip-channel/#step-2-application-set-up-on-the-koreai-xo-platform)
+3. [Authorize a valid extension (user) of your RingCentral account to generate the developer access token, access the Glip APIs, and enable the channel](/docs/xo/add-ringcentral-glip-channel/#step-3-authorize-extension-user-of-your-ringcentral-sandbox-account)
+4. [Test the integration](/docs/xo/add-ringcentral-glip-channel/#step-4-test-the-integration)
+5. [(Recommended) Apply for Production](/docs/xo/add-ringcentral-glip-channel/#recommended-step-5-apply-for-production)
 
 
 ## Step 1: Create a RingCentral App
@@ -119,7 +119,7 @@ After creating the app for the Sandbox/Production environment, you need to confi
 5. Paste the copied **_Client ID_** to the **Application Key** input field, and the **_Client Secret_** to the **_Application Secret_** input field.
 6. Click **Save**.
 
-<img src="../images/ringcentral_glip11.png" alt="save  app" title="save app" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/ringcentral_glip11.png" alt="save  app" title="save app" style="border: 1px solid gray; zoom:70%;">
 
 
 

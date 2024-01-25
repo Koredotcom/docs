@@ -1,4 +1,4 @@
-# **Adding the Twilio SMS Channel**
+# Adding the Twilio SMS Channel
 
 To add Twilio SMS as a channel, you must set up a Programmable SMS app, define the messaging service, and associate the bot with a Twilio Phone Number. When you add the Twilio channel to your bot, end-users for your bot can interact with your bot using text messages.
 

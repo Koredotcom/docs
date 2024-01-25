@@ -1,8 +1,8 @@
-# **Adding the Cisco Webex Teams**
+# Adding the Cisco Webex Teams
 
 To add the Cisco Webex Teams (formerly Cisco Webex) channel to your VA, the developer must create a dedicated VA app and an integration app in Cisco Webex Teams.
 
-Adding the Cisco Webex Teams channel to your Kore.ai VA is a four-step process to allow end-users to interact with it using their _Webex _accounts.
+Adding the Cisco Webex Teams channel to your Kore.ai VA is a four-step process to allow end-users to interact with it using their _Webex_ accounts.
 
 
 ## Step 1: Create a Bot with Cisco Webex Team
@@ -24,7 +24,7 @@ To create a Bot from within Cisco Webex Teams, please follow the steps below:
 
 
 1. In the XO Platform, select the assistant you want to add the channel to.
-2. Go to **Deploy > Channels**, and select **Cisco Webex Teams**. The channel window opens.
+2. Go to **Channels & Flows** > **Channels** > **Digital** > **All**, and select **Cisco Webex Teams**. The channel window opens.
 3. Enter the **Bot Username** and **Access Token** from the previous step.
 4. Make a note of the **Redirect URL**.
 

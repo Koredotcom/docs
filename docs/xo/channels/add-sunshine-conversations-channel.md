@@ -1,4 +1,4 @@
-# **Adding the Sunshine Conversations Channel**
+# Adding the Sunshine Conversations Channel
 
 Virtual Assistants built on the Kore.ai XO Platform can be deployed on the **Sunshine Conversations** platform. This channel integration supports conversations with virtual assistants and provides a seamless hand-off to agents on **Zendesk**.
 

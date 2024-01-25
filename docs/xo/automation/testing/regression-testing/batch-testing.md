@@ -6,7 +6,7 @@ The **Batch Testing** feature helps you discern the ability of your bot to corre
 
 **Note**: The Batch Testing dashboard displays the summary of test coverage, performance, and training recommendations for multiple test suites based on validations of the intent identification capabilities of your NLU model. The **Health and Monitoring** dashboard is a one-stop place that displays this information for the individual test suite(s) the user selects. [Learn More](../health-and-monitoring/virtual-assistants-health-and-monitoring/){:target="_blank"}.
 
-To conduct a batch test, you can use predefined test suites available in the builder or create your own custom test suites. Based on your requirement, the test suites can be run to view the desired results. This option can be accessed from the **Testing -> Batch Testing** option from the left navigation menu.
+To conduct a batch test, you can use predefined test suites available in the builder or create your own custom test suites. Based on your requirement, the test suites can be run to view the desired results. This option can be accessed from the **Automation > Testing > Regression Testing** from the left navigation menu, and then the **Batch Testing** tab..
 
 
 ## **Best Practices**
@@ -44,12 +44,12 @@ This test suite includes all the end-user utterances that have successfully matc
 
 To add a new test suite, follow the steps below:
 
-1. Go to **Build** > **Testing** > **Batch Testing**, and click **New Test Suite**.  
-<img src="../images/batch-testing-3.png" alt="BT - New Test Suite" title="BT - New Test Suite" style="border: 1px solid gray;zoom:50%;">
+1. Go to **Automation > Testing > Regression Testing**, select **Batch Testing** tab, and click **New Test Suite**.  
+  <img src="../images/batch-testing-3.png" alt="BT - New Test Suite" title="BT - New Test Suite" style="border: 1px solid gray;zoom:50%;">
 2. In the **New test Suite** window, add a **name** and provide a **description**.
 3. Next, choose how to add test cases: either manually or by uploading a test case file.
     * Selecting **Add Manually** lets you add test cases manually or use LLM and Generative AI to generate test cases automatically.
-    * Selecting **Upload Test Cases File** lets you upload a file containing test cases.  
+    * Selecting **Choose how to add test cases** lets you upload a file containing test cases.  
     <img src="../images/batch-testing-4-newtest.png" alt="BT - New Test Suite Details" title="BT - New Test Suite Details" style="border: 1px solid gray; zoom:50%;"/>
     
     
@@ -87,9 +87,9 @@ You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utteranc
 
 You can automatically generate batch test cases if you have enabled [LLM and Generative AI ](https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/){:target="_blank"} for your Virtual Assistant. You can access the feature either right after creating a new test case, as shown above, or from the test cases list.
 
-<img src="../images/batch-testing-9-goto-generate-test-cases.png" alt="Generating test cases automatically" title="Generating test cases automatically" style="border: 1px solid gray; zoom:50%;"/> 
+<img src="../images/batch-testing-9-goto-generate-test-cases-1.png" alt="Generating test cases automatically" title="Generating test cases automatically" style="border: 1px solid gray; zoom:50%;"/> 
 
-
+<img src="../images/batch-testing-9-goto-generate-test-cases-2.png" alt="Generating test cases automatically" title="Generating test cases automatically" style="border: 1px solid gray; zoom:50%;"/> 
 
 #### Steps to Generate Test Cases
 
@@ -791,12 +791,12 @@ table, th, td {
 3. To import the Dataset file, click **Choose File** to locate and select a JSON or CSV file containing the utterances as per the Dataset Type selected.  
 <img src="../images/batch-testing-13-new-test-suite-1-2.png" alt="Importing a Dataset file" title="Importing a Dataset file" style="border: 1px solid gray; zoom:50%;"/> 
 
-4. Click **Create**. The dataset file is displayed as an option to run the test suite on the Batch Testing page:
+4. Click **Proceed**. The dataset file is displayed as an option to run the test suite on the Batch Testing page:
 
 
 ### Running Test Suites
 
-The following steps guide you on how to run a batch test on your bot and get a detailed analytical report on the utterances based on the test results. To get started, go to Build > Testing > **Batch Testing**.
+The following steps guide you on how to run a batch test on your bot and get a detailed analytical report on the utterances based on the test results. To get started, go to **Automation > Testing > Regression Testing**, select **Batch Testing** tab.
 
 !!! note
 
@@ -830,11 +830,11 @@ You can cancel an ongoing batch test execution in either **_Published_** or **_I
 **Steps to Cancel an Ongoing Batch Test Execution:**
 
 
-1. Navigate to **Build** > **Testing** > **Batch Testing** on the Bot Builder.
+1. Navigate to **Automation > Testing > Regression Testing**, select **Batch Testing** tab on the Bot Builder.
 2. When the required test suite is running, click the **Cancel** icon.  
 <img src="../images/batch-testing-cancel-img1.png" alt="Click Cancel" title="Click Cancel" style="border: 1px solid gray; zoom:50%;"/> 
 
-3. Click **Confirm** in the confirmation dialog.  
+3. Click **Yes** in the confirmation dialog.  
 <img src="../images/batch-testing-cancel-img2.png" alt="Confirm" title="Confirm" style="border: 1px solid gray; zoom:50%;"/>
 
 The test execution is canceled, and a confirmation message is displayed.

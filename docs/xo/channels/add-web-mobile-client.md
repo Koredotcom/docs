@@ -1,4 +1,4 @@
-# **Adding the Web/Mobile Client Channel**
+# Adding the Web/Mobile Client Channel
 
 To use any Kore.ai Bot SDKs, you must first register your app to get the authentication credentials to communicate between the Kore.ai bot and your application hosting the bot. The Kore.ai bot SDKs can be used to add a chat widget to your company application that enables users to chat with the application using natural language input. The Kore.ai bots platform interprets the user input, processes the request, and responds to the user.
 

@@ -1,4 +1,4 @@
-# **Adding the LINE Channel**
+# Adding the LINE Channel
 
 To add the LINE channel to your Kore.ai bot, you must set up a webhook integration to configure the connection between LINE and Kore.ai. Adding the LINE channel to your Kore.ai assistant allows end-users to interact with it using their _LINE_ accounts. To add the LINE channel to your bot, you must also have or create a LINE account.
 
@@ -7,7 +7,7 @@ To add the LINE channel to your Kore.ai bot, you must set up a webhook integrati
 
 
 
-1. Log in to your [LINE Developer account portal](https://developers.line.me/), and click **Create a new provider**..If you already have a _Provider_ that you want to use for this bot, then choose the provider from the Provider_ List._
+1. Log in to your [LINE Developer account portal](https://developers.line.me/), and click **Create a new provider**. If you already have a _Provider_ that you want to use for this bot, then choose the provider from the Provider_ List._
 <img src="../images/line.png" alt="line channel" title="line channel" style="border: 1px solid gray; zoom:70%;">
 
 

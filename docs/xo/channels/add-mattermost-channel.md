@@ -1,4 +1,4 @@
-# **Adding the Mattermost Channel**
+# Adding the Mattermost Channel
 
 You can connect Kore.ai assistants to your Mattermost account using either:
 

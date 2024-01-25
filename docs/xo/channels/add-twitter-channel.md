@@ -1,10 +1,10 @@
-# **Adding the Twitter Channel**
+# Adding the Twitter Channel
 
 To set up Twitter as a channel, you must associate the bot with a Twitter account, define a Twitter app, and enable the integration. To add Twitter as a channel, follow the below steps:
 
 
 
-1. **Create Twitter App **– Log in to Twitter. In _Twitter App Management Console, _create an app to provide authorization for communication between Twitter and your Kore.ai bot.
+1. **Create Twitter App** – Log in to Twitter. In _Twitter App Management Console, _create an app to provide authorization for communication between Twitter and your Kore.ai bot.
 2. **Setup Keys and Tokens** – Generate the authentication keys and tokens for the _Twitter_ app to communicate with the XO Platform, and then copy those keys and tokens to Kore.ai Bot Builder.
 3. **Update Permissions** -To use _Twitter_ as a channel for your Kore.ai bot, you must define the _Twitter_ app permissions used to interact with the XO Platform.
 4. **Enable Channel **– After setting up the _Twitter_ app and entering configuration data in Bot Builder, you must enable the channel.

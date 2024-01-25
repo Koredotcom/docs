@@ -63,15 +63,15 @@ To enable the Twilio Voice Channel, follow the below steps:
     3. In the **Enable Channel** section, select **Yes**, and then click **Save** to complete the user creation process and channel activation.  
     <img src="../images/twilio-voice-img3.png" alt="Enable channel" title="Enable channel" style="border: 1px solid gray; zoom:70%;">
 
-4. From the **Voice Call Properties** tab, enter the details to configure the channel level voice properties, [click here for more details](../call-properties/#channel-settings){:target="_blank"}.
+4. From the **Voice Call Properties** tab, enter the details to configure the channel level voice properties, [click here for more details](./call-properties#channel-settings){:target="_blank"}.
 5. Once you have enabled the Twilio channel, it is recommended to configure the **Telephony Welcome Event** for Voice Call Settings. This plays a welcome message for users when they connect to the VA through the Twilio channel. For this:  
 
     1. From **Natural Language > Default Conversation > Event Handlers** configure **Telephony Welcome Event**.
     2. Click **Use Voice Call Properties** to open the Voice Call settings section.
     3. Under the **Initial Prompts** text box, enter the message that needs to be played when the user connects to the VA.
 
-For details regarding the configuration of voice properties at the Dialog Task level, please , refer to [Configuring Voice Call Settings for a Node](../call-properties/#dialog-node-settings){:target="_blank"}.
+For details regarding the configuration of voice properties at the Dialog Task level, please , refer to [Configuring Voice Call Settings for a Node](./call-properties#dialog-node-settings){:target="_blank"}.
 
-After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](../../deploy/publishing-bot/){:target="_blank"}.
+After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](./deploy/publishing-bot){:target="_blank"}.
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](../adding-channels-to-your-bot/){:target="_blank"}
+To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](./adding-channels-to-your-bot){:target="_blank"}

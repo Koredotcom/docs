@@ -1,4 +1,4 @@
-# **Add the Syniverse Channel**
+# Add the Syniverse Channel
 
 To set up Syniverse as a channel, the developer needs to associate the bot with a Syniverse app, set up a subscription, and enable the delivery events for this app. This document explains the steps to add the Syniverse as a channel to your bot.
 
@@ -73,11 +73,11 @@ To ensure that messages flow between the two systems, you should obtain the **Se
 
     1. Navigate to the **Voice and Messaging Console** on the top menu bar of your Syniverse Developer Portal account, and double click **Sender ID** from the **Messaging Accounts** in the left Navigation Menu. Click **+Purchase or Migrate Sender Address** button to purchase a new Sender ID.
     2. Scroll down to **Alias**, and copy the value.
-    <img src="../images/Syniverse8.png" alt="Syniverse Messaging Accounts" title="Syniverse Messaging Accounts" style="border: 1px solid gray; zoom:70%;">
+    <img src=".../images/Syniverse8.png" alt="Syniverse Messaging Accounts" title="Syniverse Messaging Accounts" style="border: 1px solid gray; zoom:70%;">
 
     3. Paste this value in the **Syniverse** **Configurations** panel of the Kore.ai platform.
 
-    <img src="../images/Syniverse8.png" alt="enable Syniverse channel" title="enable Syniverse channel" style="border: 1px solid gray; zoom:70%;">
+    <img src=".../images/Syniverse8.png" alt="enable Syniverse channel" title="enable Syniverse channel" style="border: 1px solid gray; zoom:70%;">
 
     4. Select **_Yes_** for **Enable Channel**.
     5. Click **Save**.

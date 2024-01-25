@@ -8,10 +8,11 @@ You can create an assistant from scratch, enable a language for an existing assi
 To create an Assistant from scratch, follow the below steps:
 
 1. Log in to your Kore.ai XO Platform account.
-2. On the Virtual Assistant landing page, click **New Bot** on the top-right and select the **Start from Scratch** option.
-3. On the _Create New Bot_ window, enter the Assistant details:
+2. On the XO Platform landing page, click **New App**.
+3. On the _Create New Bot_ window, select the **New** option, and enter the App details:
     1. **Name** – Give a name to your Assistant. For example, Banking Assistant. If the name is already used, try something else
-    2. **Select the language from the Default Bot Language drop-down** list.  
+    2. **Purpose** - Select the Purpose of the app from the dropdown.
+    2. Select the app language from the **Default App Language** drop-down list.  
 
     <img src="../images/mlva-img1-add-lang-to-new-va.png" alt="Name and default bot language" title="Name and default bot language" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -24,16 +25,18 @@ To create an Assistant from scratch, follow the below steps:
     `koreUtil.AutoTranslate(context.variable1)`  
   <img src="../images/mlva-img3-select-nlulang-scratch.png" alt="Change NLU - Enable translation modules" title="Change NLU - Enable translation modules" style="border: 1px solid gray;zoom:50%;"/>  
 
-    **Note:** If you select Multilingual as the NLU language option, by default the Assistant will be able to understand the user input in 100 plus languages supported by the Kore.ai XO Platform. The Multilingual NLU model is a language-agnostic model, it understands user input in 100 plus languages without the need for translation. However, you could enable Response Translation if the responses are configured in a language other than the assistant language.
+    !!! Note
+    
+        If you select Multilingual as the NLU language option, by default the Assistant will be able to understand the user input in 100 plus languages supported by the Kore.ai XO Platform. The Multilingual NLU model is a language-agnostic model, it understands user input in 100 plus languages without the need for translation. However, you could enable Response Translation if the responses are configured in a language other than the assistant language.
 
-6. Click **Create** when done.
+6. Click **Proceed** when done.
 
 
 ## Adding a language to an existing Virtual Assistant
 
 Even if your assistant has already been created, you can still add new languages to it. Follow these steps to add a new language for your virtual assistant:
 
-1. Go to **Build > Configurations > Languages**.
+1. Go to **App Settings > Configurations > Language Management**.
 2. On the Language Management page, in the **_Standard Languages_** section, click the **+ Add Language** to add languages.  
 <img src="../images/mlva-img4-add-lang.png" alt="Add Language" title="Add Language" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -71,8 +74,8 @@ If you want to enable/disable input translation, change the NLU language of the 
 
 To update an already enabled language for an assistant, follow the below steps:
 
-1. Go to **Build > Configurations > Languages**.
-2. The platform will display all the languages under the **Language Management** section.
+1. Go to ****App Settings > Configurations > Language Management****.
+2. The platform will display all the languages under the **Standard Languages** section.
 3. Click on the language that is already enabled in the VA. The _Manage Language_ dialog appears, here you can:
 
     a. **Update the NLU language** – Updating the NLU language will need training for the virtual assistant again.
