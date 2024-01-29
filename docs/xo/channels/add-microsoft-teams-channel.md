@@ -45,11 +45,11 @@ Generate a new App Password and Client Secret to configure the Azure Bot on the 
 
 2. Choose **Certificates & secrets** in the left navigation bar, and create a new client secret on the page:
     * Click the **+ New client secret** option.
-    * Provide the necessary details, and then click the **Add **option.
-3. Copy the **Value **of the new client secret and provide it in the **App Password** field present on the **Configurations **tab of the Kore.ai XO Platform. Refer Step 3: Enable Microsoft Teams Channel. \
+    * Provide the necessary details, and then click the **Add** option.
+3. Copy the **Value** of the new client secret and provide it in the **App Password** field present on the **Configurations** tab of the Kore.ai XO Platform. Refer Step 3: Enable Microsoft Teams Channel. 
 <img src="../images/MS_Team7.png" alt="enable channel" title="enable channel" style="border: 1px solid gray; zoom:70%;">
 
-4. Close the** Certificates and secrets** section to return the **Configuration **section of the resource using the breadcrumbs.
+4. Close the **Certificates and secrets** section to return the **Configuration** section of the resource using the breadcrumbs.
 
 !!! note
 
@@ -147,7 +147,7 @@ To enable Proactive Notifications, follow these steps:
 
 4. On the More Services page, search and select the **App registrations**.
 <img src="../images/MS_Team21.png" alt="app registrations" title="app registrations" style="border: 1px solid gray; zoom:70%;">
-![app registrations](./images/MS_Team21.png "app registrations")
+![app registrations](../images/images/MS_Team21.png "app registrations")
 
 5. On the App registrations page, click **New registration**.
 <img src="../images/MS_Team21_dup.png" alt="new registration" title="new registration" style="border: 1px solid gray; zoom:70%;">
@@ -165,7 +165,7 @@ To enable Proactive Notifications, follow these steps:
     * TeamsAppInstallation.ReadWriteForUser.All
     * User.Read.All
 
-    ![add permissions](./images/MS_Team24.png "add permissions")
+    ![add permissions](../images/images/MS_Team24.png "add permissions")
 
 10. Click on the **Grant admin consent** for > domain name> option to complete the granting of the permissions.
 11. Proceed to the **Certificates & secrets** section and select the **New client secret** option.

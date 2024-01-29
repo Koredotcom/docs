@@ -67,8 +67,8 @@ Please refer to this [link](https://support.ringcentral.com/engagedigital/admin/
 ## Subscribe to events for message delivery
 
 
-1. Select the **content. imported** event under the **Subscriptions **section.
-2. Click **Save.**
+1. Select the **content. imported** event under the **Subscriptions** section.
+2. Click **Save**.
 
 !!! note
 

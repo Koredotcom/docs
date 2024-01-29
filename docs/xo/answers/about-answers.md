@@ -4,7 +4,8 @@ hide:
   - feedback
 ---
 # About Answers
-The Answers module offers conversational search tools to quickly and accurately retrieve information from vast datasets. Deliver AI-powered conversation search experience for your users by seamlessly engaging them with intelligent virtual assistants. Add multiple data sources for building your search index, including website crawlers, structured data, unstructured documents, catalogs, FAQs, and knowledgebase. A combination of automation Use Cases and Answers can deliver exceptional conversational experiences for your users.
+
+The Answers module offers AI-powered conversational search tools to quickly and accurately retrieve information from vast datasets and offer the most relevant piece of information to complex natural language user. Add multiple data sources for building your search index, including website crawlers, structured data, unstructured documents, catalogs, FAQs, and knowledge bases. Enrich and enhance your content to meet the specific needs of your users in accordance with your business needs. By combining automation Use Cases and Answers, you can create an exceptional, seamless conversational experience for your users.
 
 <kr-grid type="g2">
     <kr-grid-item>
@@ -22,7 +23,7 @@ The Answers module offers conversational search tools to quickly and accurately 
     <kr-grid-item>
         <img src="../images/lm-answer-configuration.svg" style="zoom:200%;"></img>
         <kr-grid-title>Configurations</kr-grid-title>
-        <kr-grid-desc>Configure the similarity score for the closer match, set the number of chunks for answer generation, and choose an LLM to get rephrased answers for user queries.</kr-grid-desc>
+        <kr-grid-desc>Configure the similarity score for the closer match, set the number of chunks for answer generation, and choose an LLM to get paraphrased answers for user queries.</kr-grid-desc>
         <a href="">Learn More</a>
     </kr-grid-item>           
 </kr-grid>

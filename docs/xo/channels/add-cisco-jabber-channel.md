@@ -10,12 +10,12 @@ To add the Cisco Jabber channel, follow the below steps:
 
 
 1. Select the assistant that you want to add the Jabber channel to.
-2. Go to Deploy > **Channels**.
-3. Click the** Jabber** icon. The **Jabber Channel** **page** is displayed.
+2. Go to **Channels & Flows** > **Channels** > **Digital** > **All**.
+3. Click the **Jabber** icon. The **Jabber Channel page** is displayed.
 4. To enable a webhook integration on your Jabber application, log into your Jabber app. Copy the **Webhook URL** from the **Configurations** tab on the Jabber channel page and enter the **Webhook URL** field in the Jabber app for integration.
 5. Go to the **Configurations** tab on the Jabber channel page to complete the channel setup.
 6. Capture the **POST URL** details from your Jabber app and enter them in the **POST URL** field.
-7. You can also optionally generate and capture the **Access Token **details from your Jabber integration and enter in the** Access Token field** to enable secure communication between Jabber and the VA.
+7. You can also optionally generate and capture the **Access Token** details from your Jabber integration and enter in the **Access Token field** to enable secure communication between Jabber and the VA.
 8. Select **Yes** and click **Save** to enable Jabber Channel.
 <img src="../images/add-jabber.png" alt="add jabber" title="add jabber" style="border: 1px solid gray; zoom:70%;">
 

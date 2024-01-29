@@ -43,7 +43,7 @@ Perform the following steps to enable Nice inContact as a channel, download the 
         * The downloaded studio script varies based on the selected chat mode. The Scripts are not interchangeable between Legacy Chat and DFO modes.
         * Avoid altering the downloaded script; it could affect the channel’s communication ability.
 
-3. Select an application from the dropdown list to view the Client ID and other fields. If an application is not available, Click **Create App** to create it. For more information, see the [Add Web/Mobile Client Channel](../add-web-mobile-client){:target="_blank"}.  
+3. Select an application from the dropdown list to view the Client ID and other fields. If an application is not available, Click **Create App** to create it. For more information, see the [Add Web/Mobile Client Channel](./add-web-mobile-client){:target="_blank"}.  
 <img src="../images/nice-in-contact-img3.png" alt="Nice InContact Configurations" title="Nice InContact Configurations" style="border: 1px solid gray; zoom:60%;">
 
 4. In the Enable channel, select **Yes** and then click **Save**. The configuration saved success message is displayed.  
@@ -71,7 +71,7 @@ Steps to configure the Nice inContact as a channel – **Legacy Chat**:
 
 ### Step 1 (Common): Install Nice Studio
 
-1. Log into the [Nice CXone](https://na1.nice-incontact.com/login/#/logout?autoLogout=true){:target="_blank"} Portal.
+1. Log into the [Nice CXone](https://na1.nice-incontact.com/login) Portal.
 2. Click the **profile icon** in the top right corner and then click **Support & Downloads**. The download page is displayed.  
 <img src="../images/nice-in-contact-img5.png" alt="Download page" title="Download page" style="border: 1px solid gray; zoom:60%;">
 

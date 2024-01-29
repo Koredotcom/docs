@@ -108,7 +108,7 @@ The next step after creating a connector is to authorize it on the **Create Kore
     * The **Base URL** of the Kore.ai Platform to connect to the app. For example, the base URL for Kore.ai is `bots.kore.ai`.
     * Copy and paste the **Bot ID**, **Client ID**, and **Client Secret** values from the **Channels **> **Configuration** section of the XO Platform (shown below) for **Authorization Parameters**.
 
-    <img src="../images/Zoom7.png" alt="Zoom  bot details" title="Zoom bot details" style="border: 1px solid gray; zoom:100%;">
+    <img src=".../images/Zoom7.png" alt="Zoom  bot details" title="Zoom bot details" style="border: 1px solid gray; zoom:100%;">
 
   3. Click **Next.
   <img src="../images/Zoom8.png" alt="save Zoom  configuration" title="Save Zoom configuration" style="border: 1px solid gray; zoom:70%;">

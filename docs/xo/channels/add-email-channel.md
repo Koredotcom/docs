@@ -37,6 +37,6 @@ Steps to add the email channel:
 
 10. On the Email Channel Configurations page, click **Save**. The _Channel added successfully_ message is displayed.
 
-Once the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](../../deploy/publishing-bot/).
+Once the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot).
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](../adding-channels-to-your-bot/)
+To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](../changelog/folder/adding-channels-to-your-bot)
