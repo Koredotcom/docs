@@ -22,7 +22,7 @@ This dashboard displays graphs and charts derived from real-time feedback data f
 
 1. Click the three dots on the left navigation pane and then click **Analytics**. The **Analytics** panel is displayed with the list of reports.
 
-    <img src="../images/navigate-to-feedback-dashboard.png" alt="Navigate to Feedback Dashboard" title="Navigate to Feedback Dashboard" style="border: 1px solid gray; zoom:80%;">
+    <img src="../../images/navigate-to-feedback-dashboard.png" alt="Navigate to Feedback Dashboard" title="Navigate to Feedback Dashboard" style="border: 1px solid gray; zoom:80%;">
 
 2. Click the **Feedback Dashboard** under the **Automation** section of the **Analytics** panel. The **Feedback Dashboard** is displayed on the right side of the page.
 3. Select appropriate filters on the dashboard and click **Apply**.
@@ -41,7 +41,7 @@ The **Feedback Dashboard** displays analytics data on the **Feedback Survey resp
     The session start time filters the sessions based on when they were initiated.
 
  
-<img src="../images/dashboard-filters-1.png" alt="Dashboard Filters 1" title="Dashboard Filters 1" style="border: 1px solid gray; zoom:80%;">
+<img src="../../images/dashboard-filters-1.png" alt="Dashboard Filters 1" title="Dashboard Filters 1" style="border: 1px solid gray; zoom:80%;">
 
 
 
@@ -53,16 +53,16 @@ The filter options include the following:
 * **Last 3 Months** Captures feedback survey responses from conversations in the last three months.
 * **Custom**: Select the start and end date range on the calendar widget to capture the feedback survey data.
 
-    <img src="../images/dashboard-filters-2.png" alt="Dashboard Filters 2" title="Dashboard Filters 2" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../../images/dashboard-filters-2.png" alt="Dashboard Filters 2" title="Dashboard Filters 2" style="border: 1px solid gray; zoom:80%;"> 
 
 1. **Survey Type**: The type of survey including CSAT, NPS, or Like/Dislike. Learn more.
-    <img src="../images/dashboard-filters-3.png" alt="Dashboard Filters 3" title="Dashboard Filters 3" style="border: 1px solid gray; zoom:80%;">
+    <img src="../../images/dashboard-filters-3.png" alt="Dashboard Filters 3" title="Dashboard Filters 3" style="border: 1px solid gray; zoom:80%;">
 
 
 2. **Survey Name**: This is the feedback survey name provided when creating a feedback survey under **Build** > **Configurations** > **Feedback Survey**. You can either select **All Surveys** to capture the Feedback Survey analytics data of all the surveys configured for the virtual assistant or a specific survey name from the dropdown list.
 
 
-    <img src="../images/dashboard-filters-4.png" alt="Dashboard Filters 4" title="Dashboard Filters 4" style="border: 1px solid gray; zoom:80%;">
+    <img src="../../images/dashboard-filters-4.png" alt="Dashboard Filters 4" title="Dashboard Filters 4" style="border: 1px solid gray; zoom:80%;">
 
 
 ## Dashboard Sections
@@ -82,7 +82,7 @@ For the **NPS** survey type, it captures the data for the following responders:
 * **Passives**: Respondents who gave a score between 6 and 8.
 * **Detractors**: Respondents who gave a score between 0 and 5.
 
-<img src="../images/dashboard-sections-1.png" alt="Dashboard Sections 1" title="Dashboard Sections 1" style="border: 1px solid gray; zoom:60%;">
+<img src="../../images/dashboard-sections-1.png" alt="Dashboard Sections 1" title="Dashboard Sections 1" style="border: 1px solid gray; zoom:60%;">
 
 
 For the **CSAT** survey type, it captures the data for the following responses:
@@ -93,7 +93,7 @@ For the **CSAT** survey type, it captures the data for the following responses:
 * **Unsatisfied**: Respondents who gave a score of 2.
 * **Very Unsatisfied**: Respondents who gave a score of 1.
 
-<img src="../images/dashboard-sections-2.png" alt="Dashboard Sections 2" title="Dashboard Sections 2" style="border: 1px solid gray; zoom:60%;">
+<img src="../../images/dashboard-sections-2.png" alt="Dashboard Sections 2" title="Dashboard Sections 2" style="border: 1px solid gray; zoom:60%;">
 
 
 For the **Like/Dislike** survey type, it captures the data for the following responses:
@@ -103,7 +103,7 @@ For the **Like/Dislike** survey type, it captures the data for the following res
 * **Extremely Likely**: Respondents who gave a score of 1.
 * **Extremely Unlikely**: Respondents who gave a score of 0.
 
-<img src="../images/dashboard-sections-3.png" alt="Dashboard Sections 3" title="Dashboard Sections 3" style="border: 1px solid gray; zoom:60%;">
+<img src="../../images/dashboard-sections-3.png" alt="Dashboard Sections 3" title="Dashboard Sections 3" style="border: 1px solid gray; zoom:60%;">
 
 
 ### Score Break up – Respondent-wise Survey Score over Time
@@ -117,20 +117,20 @@ This section displays the bar chart widget representing the percentage of each r
 
 For the **NPS** survey type, the number of promoters, passives, and detractors is displayed in different colors over the selected period on the days they responded.
 
-<img src="../images/NPS-survey-type.png" alt="NPS Survey Type" title="NPS Survey Type" style="border: 1px solid gray; zoom:60%;">
+<img src="../../images/NPS-survey-type.png" alt="NPS Survey Type" title="NPS Survey Type" style="border: 1px solid gray; zoom:60%;">
 
 
 
 For the **CSAT** survey type, the number of **very satisfied**, **satisfied, neutral**, **unsatisfied**, and **very unsatisfied** responses received over the selected date range is displayed in different colors.
 
 
-<img src="../images/CSAT-survey-type.png" alt="CSAT Survey Type" title="CSAT Survey Type" style="border: 1px solid gray; zoom:60%;">
+<img src="../../images/CSAT-survey-type.png" alt="CSAT Survey Type" title="CSAT Survey Type" style="border: 1px solid gray; zoom:60%;">
 
 
 For the **Like/Dislike** survey type, the number of **extremely likely** and **extremely unlikely** responses captured over the selected date range is displayed in different colors
 
 
-<img src="../images/like-dislike-survey-type.png" alt="LIKE DISLIKE Survey Type" title="LIKE DISLIKE Survey Type" style="border: 1px solid gray; zoom:60%;">
+<img src="../../images/like-dislike-survey-type.png" alt="LIKE DISLIKE Survey Type" title="LIKE DISLIKE Survey Type" style="border: 1px solid gray; zoom:60%;">
 
 
 
@@ -142,18 +142,18 @@ This section displays the meter graph (from 0 to 100) widget for the survey scor
 * **NPS Score**: Displays a whole number between -100 and 100 based on the formula `(Percentage of Promoters - Percentage of Detractors)`.
 
 
-    <img src="../images/NPS-score.png" alt="NPS Score" title="NPS Score" style="border: 1px solid gray; zoom:80%;">
+    <img src="../../images/NPS-score.png" alt="NPS Score" title="NPS Score" style="border: 1px solid gray; zoom:80%;">
 
 
 
 * **CSAT**: Displays the percentage value based on the formula `(Number of very satisfied/satisfied Respondents / Total Number of Respondents) * 100`.
 
-    <img src="../images/CSAT-score.png" alt="CSAT Score" title="CSAT Score" style="border: 1px solid gray; zoom:80%;">
+    <img src="../../images/CSAT-score.png" alt="CSAT Score" title="CSAT Score" style="border: 1px solid gray; zoom:80%;">
 
 
 * **Like/Dislike**: Displays the percentage value based on the formula `(Number of extremely likely Respondents / Total Number of Respondents) * 100`.
 
-    <img src="../images/like-dislike-score.png" alt="Like Dislike Score" title="Like Dislike Score" style="border: 1px solid gray; zoom:80%;">
+    <img src="../../images/like-dislike-score.png" alt="Like Dislike Score" title="Like Dislike Score" style="border: 1px solid gray; zoom:80%;">
 
 ### Survey Trendline
 
@@ -167,19 +167,19 @@ This section displays the widget with the line graph capturing the date-wise res
 
 For the **NPS** survey type, the line graph displays the **Promoters score** trend changes for the total number of promoters over the selected period.
 
-<img src="../images/survey-trendline-1.png" alt="Survey Trendline 1" title="Survey Trendline 1" style="border: 1px solid gray; zoom:80%;">
+<img src="../../images/survey-trendline-1.png" alt="Survey Trendline 1" title="Survey Trendline 1" style="border: 1px solid gray; zoom:80%;">
 
 
 For the **CSAT** survey type, the line graph displays the **Respondents Score** trend changes for the total number of very satisfied and satisfied respondents over the selected period.
 
 
-<img src="../images/survey-trendline-2.png" alt="Survey Trendline 2" title="Survey Trendline 2" style="border: 1px solid gray; zoom:80%;">
+<img src="../../images/survey-trendline-2.png" alt="Survey Trendline 2" title="Survey Trendline 2" style="border: 1px solid gray; zoom:80%;">
 
 
 For the **Like/Dislike** survey type, the line graph displays the **respondents’ score** trend changes for the total number of extremely likely respondents over the selected period.
 
 
-<img src="../images/survey-trendline-3.png" alt="Survey Trendline 3" title="Survey Trendline 3" style="border: 1px solid gray; zoom:80%;">
+<img src="../../images/survey-trendline-3.png" alt="Survey Trendline 3" title="Survey Trendline 3" style="border: 1px solid gray; zoom:80%;">
 
 
 
@@ -254,7 +254,7 @@ This information grid represents the metadata for the _Total number of conversat
 </table>
 
 
-<img src="../images/user-level-%20feedback-1.png" alt="User Level Feedback 1" title="User Level Feedback 1" style="border: 1px solid gray; zoom:80%;">
+<img src="<../../images/user-level- feedback-1.png>" alt="User Level Feedback 1" title="User Level Feedback 1" style="border: 1px solid gray; zoom:80%;">
 
 !!! note
 
@@ -266,4 +266,4 @@ This information grid represents the metadata for the _Total number of conversat
 
 To download the **User-level feedback** report, click the **Export to CSV** icon as shown below:
 
-<img src="../images/download-the-feedback-analytics-report.png" alt="Download the Feedback Analytics Report" title="Download the Feedback Analytics Report" style="border: 1px solid gray; zoom:80%;">
+<img src="../../images/download-the-feedback-analytics-report.png" alt="Download the Feedback Analytics Report" title="Download the Feedback Analytics Report" style="border: 1px solid gray; zoom:80%;">
