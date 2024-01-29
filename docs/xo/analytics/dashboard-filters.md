@@ -1,9 +1,6 @@
 # Dashboard Filters
 
 The dashboard filters are used to filter and view the analytics data for virtual assistants (VAs) on the following dashboards in the **ANALYTICS** section based on the user’s selection(s):
-
-
-
 * Overview Dashboard
 * Conversations Dashboard
 * Users Dashboard
@@ -15,7 +12,7 @@ The dashboard filters are used to filter and view the analytics data for virtual
 * Task Execution Logs
 * Feedback Dashboard
 
-<img src="./images/list-of-filters.png" alt="List of Filters" title="List of Filters" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/list-of-filters.png" alt="List of Filters" title="List of Filters" style="border: 1px solid gray; zoom:80%;">
 
 
 To understand the filter criteria availability on different dashboards, see the Filter Criteria Matrix.
@@ -24,11 +21,9 @@ To understand the filter criteria availability on different dashboards, see the 
 
     By default, the VA dashboard displays data for the past 24 hours.
 
-
 ## Filter Criteria Descriptions
 
 The following table describes all the filter criteria available on the Kore.ai XO platform:
-
 
 <table>
   <tr>
@@ -207,7 +202,7 @@ tags.addMessageLevelTag(“tagname”,”tagvalue”)
     To see the filter criteria from UserID till Custom Tags listed in the preceding table, click the More Filters drop-down.
 
 
-<img src="./images/more-filters-drop-down.png" alt="More Filters drop-down" title="More Filters drop-down" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/more-filters-drop-down.png" alt="More Filters drop-down" title="More Filters drop-down" style="border: 1px solid gray; zoom:80%;">
 
 
 
