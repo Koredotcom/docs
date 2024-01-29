@@ -256,6 +256,7 @@ nav:
         - API List: apis/api-list.md           
   - Analytics:
     - Introduction: analytics/introduction.md
+    - Dashboard Filters: analytics/automation/dashboard-filters.md
     - Overview:
       - Summary Dashboard: analytics/overview/summary-dashboard.md
       - Conversations Dashboard: analytics/overview/conversations-dashboard.md
@@ -263,7 +264,6 @@ nav:
       - Users Dashboard: analytics/overview/users-dashboard.md
       - Feedback Dashboard: analytics/overview/feedback-dashboard.md
     - AUTOMATION:
-      - Dashboard Filters: analytics/automation/dashboard-filters.md       
       - Performance Dashboard: analytics/automation/performance-dashboard.md
       - Conversation Insights: analytics/automation/conversation-insights.md
       - NLP Insights: analytics/automation/nlp-insights.md
