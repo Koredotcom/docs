@@ -23,8 +23,8 @@ To define Basic Authorization for your assistant, follow these steps:
 
 1. Open the VA for which you want to configure the Basic Authorization profile.
 2. Select the **Build** tab from the top menu.
-3. From the left menus, click **Configurations > Authorization Profile**
-4. Click **Add** to open the **New Authorization Mechanism** dialog.  
+3. From the left menus, click **App Settings**, then select **Dev Tools > Authorization Profiles**.
+4. Click **New** to open the **New Authorization Mechanism** dialog.  
 <img src="../images/basic-auth-img2.png" alt="New Auth mechanism - Add" title="New Auth mechanism - Add" style="border: 1px solid gray;zoom:50%;"/>
 
 5. In the **Authorization Type** drop-down list, select **Basic Auth**.
