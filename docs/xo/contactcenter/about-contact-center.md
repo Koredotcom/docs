@@ -28,7 +28,7 @@ The Contact Center module offers a conversational AI-native contact center-as-a-
     <kr-grid-item>
         <img src="../images/sa-unified-configurations.svg" style="zoom:200%;"></img>
         <kr-grid-title>Configurations</kr-grid-title>
-        <kr-grid-desc>Configure hour of operations, language & speech recognition settings, default flows, response templates, surveys, forms, and widgets to integrate external systems and pages into the Agent Console, and advance settings for co-browsing, agent tools, and data masking.</kr-grid-desc>
+        <kr-grid-desc>Configure hours of operation, language & speech recognition settings, default flows, response templates, surveys, forms, and widgets to integrate external systems and pages into the Agent Console, and advanced settings for co-browsing, agent tools, and data masking.</kr-grid-desc>
         <a href="">Learn More</a>
     </kr-grid-item>           
 </kr-grid>

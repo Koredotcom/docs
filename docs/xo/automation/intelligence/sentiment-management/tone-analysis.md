@@ -169,6 +169,11 @@ The sentiment words are all stored in concepts and it is possible for a virtual 
 
 The syntax for the concept name is: ~tone-&lt;tonename>-&lt;level>, where &lt;tonename> indicates any of the 6 tone types listed in  <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/sentiment-management/tone-analysis/#tones-types" target="_blank">Tone Types</a> and &lt;level> is a number from 1 to 7. 1 is equivalent to a -3, 7 is +3, and 4 is the neutral 0. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/sentiment-management/tone-analysis/#score-tone-emotions" target="_blank">Learn more</a>.
 
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Apart from the basic tone words, sentiment analysis also uses words that can increase or decrease intensity, like "very" or "extremely". However, you don't have to add different phrases covering all the possibilities for various levels. Just add a basic tone word, and these intensifiers will adjust the level automatically.</p>
+</div>
+
 The following are some examples of words that can be mapped to relevant concepts.
 
 * The word _freaking_ could be defined as a synonym under ~tone-angry-7, which indicates real bad anger.

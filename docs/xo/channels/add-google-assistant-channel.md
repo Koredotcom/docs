@@ -42,7 +42,7 @@ Google Assistant as a channel should ideally be enabled for VAs that are specifi
 3. Once your agent is created, click **Intents** on the left pane. Dialogflow will add two intents by default viz. **Default Fallback Intent** and **Default Welcome Intent.**
     * **Default Fallback Intent** is used to respond to any user input that does not match any of the other intents defined in the intent.
     * **Default Welcome Intent** is used to respond to the user on the first input. If no other intent is created in Dialogflow, these two intents will be used to address all user inputs.
-4. As you expect your Kore.ai assistant to fulfill all your user requests, you must turn on _Webhook_ C_alls_ for both these intents. Once enabled, Dialogflow will route all user requests reaching any of these two intents to your Kore.ai assistant.
+4. As you expect your Kore.ai assistant to fulfill all your user requests, you must turn on _Webhook Calls_ for both these intents. Once enabled, Dialogflow will route all user requests reaching any of these two intents to your Kore.ai assistant.
 5. Select **Default Fallback Intent** to open the intent details and go to the end of the page. Under the **Fulfillment** section, turn on the toggle to **Enable webhook call for this intent** option. Click **Save** to update your changes.
 6. Go back to the **Intents** on the left pane, select **Default Welcome Intent** to open the intent details, and go to the end of the page. Under the **Fulfillment** section, turn on the toggle to **Enable webhook call for this intent** option.
 7. Click **Save** to update your changes.
@@ -54,7 +54,7 @@ Google Assistant as a channel should ideally be enabled for VAs that are specifi
 1. Next, Enable Fulfillment. To configure the webhook integration between your Dialogflow agent and Kore.ai assistant, click the **Fulfillment** option on the left pane and enable the **Webhook** toggle switch.
     * Open the assistant in the Kore.ai XO Platform and access the **Channel Enablement** option and select the **Google Assistant** channel.
     * Go to the **Configurations** tab and copy the **Webhook URL** provided there and update it in the **URL** field in the **Fulfillment** section of Dialogflow.
-    *. From the **Configurations** tab of the Google Assistant channel page on the builder, copy the **Access Token**. This token must be added as a header key in the Dialogflow Fulfillment screen.
+    * From the **Configurations** tab of the Google Assistant channel page on the builder, copy the **Access Token**. This token must be added as a header key in the Dialogflow Fulfillment screen.
     * Under the **Webhook** option of the **Fulfillment** section, add the key as **Access-token** and update the copied access token as the value for this key.
 2. Go to the end of the page and click **Save**.
 <img src="../images/google_assistant3.png" alt="enable fulfillment" title="enable fulfillment" style="border: 1px solid gray; zoom:70%;">
@@ -72,9 +72,8 @@ Google Assistant as a channel should ideally be enabled for VAs that are specifi
 ## Step 5: Enable the channel
 
 
-1. In the XO Platform, select the assistant you want to add the channel to.
-2. Go to **Deploy > Channels > Google Assistant**.
-3. Go to the **Configuration** tab, select Yes and Save your change to enable the channel.
+1. In the XO Platform, Go to **Channels & Flows** > **Channels** > **Digital** > **All** > **Google Assistant**.
+2. Go to the **Configuration** tab, select Yes and Save your change to enable the channel.
 <img src="../images/google_assistant4.png" alt="deploy google assistant" title="deploy google assistant" style="border: 1px solid gray; zoom:70%;">
 
 

@@ -22,9 +22,9 @@ To enable one or more channels for your VA, follow the below steps:
 
 ## Editing, Testing,  Disabling or Deleting Channels
 
-**To edit a channel** configuration, go to **Channels & Flows** > **Channels** > **Digital** > **Configured** list, the channel, make your changes and save.
+To **edit a channel** configuration, go to **Channels & Flows** > **Channels** > **Digital** > **Configured** list, the channel, make your changes and save.
 
-To test, disable or delete the channel, go to **Channels & Flows** > **Channels** > **Digital** > **Configured** list, hover over the channel and click more option in the top right corner. The Test, Disable, or Delete as required and follow the instructions.
+To **test**, **disable or delete the channel**, go to **Channels & Flows** > **Channels** > **Digital** > **Configured** list, hover over the channel and click more option in the top right corner. The Test, Disable, or Delete as required and follow the instructions.
 
 
 !!! Warning
