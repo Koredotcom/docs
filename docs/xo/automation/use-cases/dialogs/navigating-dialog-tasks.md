@@ -173,7 +173,7 @@ The Dialog Design process occurs in the Conversation Designer. This comes with i
 
 The Dialog Builder is where you can build business logic into your conversations. Here you have access to the tools you need in order to integrate your conversation scenarios with your business logic. Here is an overview of the features it provides.
 
-<img src="../images/navigate-dialog-builder.png" alt="Dialog builder" title="Dialog builder" style="border:1px solid gray; zoom:60%;">
+<img src="../images/navigate-dialog-builder-canvas.png" alt="Dialog builder" title="Dialog builder" style="border:1px solid gray; zoom:60%;">
 
 * **The Canvas** – This represents the entire surface on which the components of your conversation are placed.
 * **The Root Intent** – This is the first component of any conversation and will be displayed on your canvas by default, whenever you create a new Dialog Task.
