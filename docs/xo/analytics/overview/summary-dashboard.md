@@ -1,24 +1,24 @@
-# Overview Dashboard
+# Summary Dashboard
 
-The Overview dashboard gives a snapshot of the Virtual Assistant’s conversations, user analytics, and performance over time. You can filter the information by date, conversation type (interactive and non-interactive), conversation status, and more.
+The Summary dashboard gives a snapshot of the Virtual Assistant’s conversations, user analytics, and performance over time. You can filter the information by date, conversation type (interactive and non-interactive), conversation status, and more.
 
-**To view the Overview dashboard, follow the steps**: 
+**To view the Summary dashboard, follow the steps**: 
 
 
 1. Click the three dots on the left navigation pane and then click **Analytics**. The Analytics panel is displayed with the list of reports.
 
     <img src="../images/overview-dashboard.png" alt="Overview Dashboard" title="Overview Dashboard" style="border: 1px solid gray; zoom:80%;">
     
-2. Click **Overview** under the **Automation** section of the **Analytics** panel. The Overview dashboard is displayed on the right side of the page.
+2. Click **Summary** under the **Overview** section of the **Analytics** panel. The Summary dashboard is displayed on the right side of the page.
 3. Select appropriate filters on the dashboard and click **Apply**.
 
 
 !!! note
 
-    The Overview dashboard is available only post-9.3 release, i.e. post-July 24, 2022.
+    The Summary/Overview dashboard is available only post-9.3 release, i.e. post-July 24, 2022.
 
 
-### Overview Dashboard Components
+### Summary Dashboard Components
 
 Once users start interacting with your assistant, you can view the following details in the Overview dashboard:
 

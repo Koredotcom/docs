@@ -44,6 +44,7 @@
     display: flex;
     align-items: center;
   }
+
   .md-cstm-sele .nav-item span{
     transform: rotate(90deg);
   }
@@ -53,6 +54,63 @@
   }
   .md-select__list__cstm .md-select__link{
     font-size: 13px;
+  }
+  .md-more-links{
+    background-color: var(--md-primary-fg-color);
+    display: none;
+    text-align: center;
+  }
+  .md-more-links .nav-links{
+    justify-content: center;
+  }
+  .md-more-links .nav-item{
+    color: var(--md-primary-bg-color) !important;
+  }
+  .md-more-links .nav-item span{
+    border-radius: 100%;
+    height: 0.9rem;
+    transition: background-color .25s;
+    width: 0.9rem;
+    }
+    .md-more-links .nav-item span::after{
+      background-color: currentcolor;
+    border-radius: 100%;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    -webkit-mask-image: var(--md-nav-icon--next);
+    mask-image: var(--md-nav-icon--next);
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transition: transform .25s;
+    vertical-align: -0.1rem;
+    width: 100%;
+    }
+  @media only screen and (max-device-width: 767px){
+   .md-d-none{
+    display: none;
+   }
+   .md-more-links{
+    display: block !important;
+   }
+  }
+  @media only screen and (max-device-width: 550px){
+   .md-header__button{
+     margin: 0px !important;
+   }
+   .logo .logo-img img{
+    width: 70px !important;
+   }
+   .md-header__title{
+    margin-left: 10px !important;
+   }
+   .logo-title{
+    font-size: 13px !important;
+   }
   }
 </style>
 <!-- Header -->
@@ -105,7 +163,7 @@
       </div>
     </div>
     
-    <div class="nav-links">
+    <div class="nav-links md-d-none">
       <a class="nav-item" 
           target="_blank" 
           href="https://developer.kore.ai/docs/bots/whats-new/10-1-x-release-notes/"
@@ -229,7 +287,51 @@
 
   
   </nav>
+   <nav class="md-more-links">
+    <div class="nav-links">
+      <a class="nav-item" 
+          target="_blank" 
+          href="https://developer.kore.ai/docs/bots/whats-new/10-1-x-release-notes/"
+      >Release Notes</a>
 
+      <!-- <a class="nav-item"
+          target="_blank" 
+          href="https://support.kore.ai/"
+      > -->
+      <div class="md-select md-cstm-sele">
+        <a
+          class="md-header__button m-0 nav-item"
+        >
+          Get Support
+          <span class="md-nav__icon md-icon"></span>
+      </a>
+        <div class="md-select__inner">
+          <ul class="md-select__list md-select__list__cstm">
+            
+              <li class="md-select__item">
+                <a href="https://community.kore.ai/" target="_blank" class="md-select__link">
+                  Community
+                </a>
+              </li>
+              <li class="md-select__item">
+                <a href="https://academy.kore.ai/" target="_blank" class="md-select__link">
+                  Academy
+                </a>
+              </li>
+              <li class="md-select__item">
+                <a href="https://support.kore.ai/" target="_blank" class="md-select__link">
+                  Customer Support
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+  
+
+      <a class="nav-item" href="#">Doc Versions</a>
+      
+    </div>
+   </nav>
   <!-- Navigation tabs (sticky) -->
   {% if "navigation.tabs.sticky" in features %}
     {% if "navigation.tabs" in features %}
