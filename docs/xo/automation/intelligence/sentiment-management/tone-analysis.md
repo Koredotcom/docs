@@ -6,12 +6,9 @@ You can use the score to help assess the user input and direct the flow of the c
 
 For example, if the tone score indicates a user is angry or sad, you want to transition the conversation to a live agent. In a dialog task, you can access the tone score from the `Context` object or you can configure events to be triggered, from the <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/sentiment-management/sentiment-management-overview/" target="_blank">Sentiment Management</a> option under **Intelligence**.
 
-
 ## Tones Types
 
 The Kore.ai XO Platform evaluates user inputs to find the following six possible emotions:
-
-
 
 * angry
 * disgust
