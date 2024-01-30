@@ -1,9 +1,6 @@
 # Dashboard Filters
 
 The dashboard filters are used to filter and view the analytics data for virtual assistants (VAs) on the following dashboards in the **ANALYTICS** section based on the user’s selection(s):
-
-
-
 * Overview Dashboard
 * Conversations Dashboard
 * Users Dashboard
@@ -24,11 +21,9 @@ To understand the filter criteria availability on different dashboards, see the 
 
     By default, the VA dashboard displays data for the past 24 hours.
 
-
 ## Filter Criteria Descriptions
 
 The following table describes all the filter criteria available on the Kore.ai XO platform:
-
 
 <table>
   <tr>

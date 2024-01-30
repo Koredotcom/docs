@@ -36,27 +36,7 @@ Version 10.0 of the XO Platform includes a new version of the NLP Engine (Versio
 
 In addition, it allows you to explore the latest features like <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/#zero-shot-learning-model-with-openai" target="_blank">Zero-shot Model</a>, <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/#few-shot-model-koreai-hosted-embeddings" target="_blank">Few-shot Model</a>, and <a href="https://docsinternal-kore.github.io/docs/xo/automation/tools/intent-discovery/" target="_blank">Intent Discovery</a>.
 
-The new VAs will automatically use the new version by default. We recommend migrating all your existing VAs to the new version to experience the new features and improvements.  Also, the **bot will face downtime during the upgrade**. To avoid downtime in crucial hours, it is recommended that you upgrade the bot manually at the earliest. Backup your virtual assistant before upgrading, validate the NLP performance using the Batch Testing module, and publish the changes.
-
-With the release of v10.1.11 on September 23, 2023, a virtual assistant created in NLP v2 can only be trained and published after upgrading to NLP v3.
-
-All ‘inactive bots’ are automatically upgraded to NLP v3. Inactive bots are defined as the ones that did not have any end-user interaction in the past 90 days as of the deployment date. The bot designers will need to manually trigger the training and publishing of the bots to ensure that they function correctly.
-
-We also plan to auto-upgrade all ‘active bots’. Starting November 18, 2023, all active bots using NLP v2 will be automatically upgraded to NLP v3 over the next two weeks. The upgrade also includes initiating training for all bot languages in both the configured and published copies for customer bots. During this upgrade process, the intent identification may not function as expected, potentially leading to inconsistent user experiences. To minimize disruptions, we strongly recommend upgrading your bots manually before November 18 during your non-critical business hours. 
-
-If a **customer bot** is using NLP v2 and has been active in the last three months, then the upgrade happens as below:
-
-* Configured copy
-    * The Platform will upgrade the NLP version from v2 to v3 for all bot languages.
-    * After changing the version, it will trigger the training.
-    * Once the training is completed for one language, it will initiate the training for another language.
-
-* Published copy
-    * The Platform will upgrade the NLP version from v2 to v3 for all languages.
-    * After changing the version, it will trigger the training.
-    * Once the training is completed for one language, it will initiate the training for another language.
-
-After the upgrade, the virtual assistant’s configured copy will be in NLP v3, but the published copy will remain in NLP v2. Upon publishing the virtual assistant for the first time post-upgrade, its version will change to NLP v3.
+The new VAs will automatically use the new version by default. As of January 21, 2024, existing VAs are already migrated to Version 3, and the Platform no longer supports Version 2.
 
 On-Premise customers can run both versions in parallel or switch directly to Version 3.
 
