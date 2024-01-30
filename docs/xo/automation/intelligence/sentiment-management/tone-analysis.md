@@ -55,8 +55,6 @@ The value of the base tone and modifiers are used to calculate the final tone sc
 
 Tone results are returned as `Context` object variables as:
 
-
-
 * `message_tone` – An array of recognized tone emotions and scores for the current node in a dialog task.
 * `dialog_tone` – An array of average recognized tone emotions and scores for the entire conversation session. This value is reset at the end of each conversation session.
 
@@ -171,7 +169,7 @@ The syntax for the concept name is: ~tone-&lt;tonename>-&lt;level>, where &lt;to
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Apart from the basic tone words, sentiment analysis also uses words that can increase or decrease intensity, like "very" or "extremely". However, you don't have to add different phrases covering all the possibilities for various levels. Just add a basic tone word, and these intensifiers will adjust the level automatically.</p>
+<p>Apart from the basic tone words, sentiment analysis also uses words that can increase or decrease intensity, like "very" or "extremely." However, you don't have to add different phrases covering all the possibilities for various levels. Just add a basic tone word, and these intensifiers will adjust the level automatically.</p>
 </div>
 
 The following are some examples of words that can be mapped to relevant concepts.
