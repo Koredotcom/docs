@@ -1,11 +1,11 @@
-# Conversation Summary API(Beta)
+# Conversation Summary API (Beta)
 
 The API summarizes the conversation between a user and an agent. The agent can be a virtual agent or a human agent. The API accepts the conversation Id or the transcripts as input and provides an auto-generated conversation summary.
 
 The API uses a fine-tuned Flan-T5 model, an open-source LLM hosted by Kore.ai. The Flan-T5 foundational model is being fine-tuned for summarizing conversations using a large number of sample conversation transcripts from various fields and industries.
 
 !!!note
-  Currently, the API is in its beta phase and has some limitations. The API supports transcripts only in English (en) and is available only in our global deployment (https://bots.kore.ai). The generated summary may have factual inconsistencies and inaccurate representations due to limited coverage in the beta phase.
+    Currently, the API is in its beta phase and has some limitations. The API supports transcripts only in English (en) and is available only in our global deployment (https://bots.kore.ai). The generated summary may have factual inconsistencies and inaccurate representations due to limited coverage in the beta phase.
 
 <table>
   <tr>
