@@ -173,33 +173,19 @@ The Dialog Design process occurs in the Conversation Designer. This comes with i
 
 The Dialog Builder is where you can build business logic into your conversations. Here you have access to the tools you need in order to integrate your conversation scenarios with your business logic. Here is an overview of the features it provides.
 
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image13.png "image_tooltip")
+<img src="../images/navigate-dialog-builder.png" alt="Dialog builder" title="Dialog builder" style="border:1px solid gray; zoom:60%;">
 
 * **The Canvas** – This represents the entire surface on which the components of your conversation are placed.
 * **The Root Intent** – This is the first component of any conversation and will be displayed on your canvas by default, whenever you create a new Dialog Task.
-* **Nodes** – These are the different points at which components of your conversation intersect. For details, please see [Node Types](../node-types/nodes-transitions/){:target="_blank"}.
-* **Nodes Panel** – Here is where you can choose which Node Type to add and simply drag and drop it to the canvas, at the desired location. You can also add notes using the ⨁ buttons within your flow.
-* **Toggle the Conversation Builder** – This helps you work on your VA using both the conversation and flow views simultaneously.
+* **Assets** – These are the different points at which components of your conversation intersect. For details, please see [Node Types](../node-types/nodes-transitions/){:target="_blank"}.
+* **Nodes** - These are placeholders for creating groups of assets. Each node has one or more assets added in logical sequences.
+* **Assets Panel** – Here is where you can choose which Node Type to add and simply drag and drop it to the canvas, at the desired location. You can also add notes using the ⨁ buttons within your flow.
+* **Nodes panel** -  This tab has a list of nodes created in the current dialog.
+* **Bookmarks panel** - This tab has the list of bookmarks added to assets and nodes on the canvas.
 * **Component Configuration Panel**– This panel is available when a component is selected, and can be minimized (as shown in the screenshot above).
-* **Talk to Bot** – This is where you can test your VA, right from within the Dialog Builder.
 * **Display Options Panel** – This panel is only available when no component is selected and allows you to configure Display and Zoom Options, to Auto-Arrange components or to turn the map on or off. The map allows you to see the general area where you are currently located within your flow.
 
-Remember that the more you train your Virtual Assistant and the more rigor you apply to the training data, the more effective it becomes.
-
-
-Now, let’s take a look at the features that the training module offers.  
-  
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image14.png "image_tooltip")
-
-* **Assign the Primary Intent**: This is where you decide what intent you are training the VA on.
-* **Add Utterances**: Here is where you can add utterance options that the VA could use in order to recognize the intent you are training the VA on.
-* **Add Patterns**: Patterns are word combinations that indicate a certain intent or entity. You can add exact word combinations that the VA will use to precisely detect the selected intent when these combinations are present in an utterance.
-* **Negative patterns**: These are patterns which you don’t want the VA to recognize as being relevant to the intent you are training it for.
-* **Rules**: Here is where you can define intent identification rules to trigger the intent you are working with. You may use [traits](../../../natural-language/training/traits){:target="_blank"} or [context tags](../../../intelligence/context-management){:target="_blank"} to define these rules.
+Remember that the more you train your app and the more rigor you apply to the training data, the more effective it becomes.
 
 
 #### Related Links
