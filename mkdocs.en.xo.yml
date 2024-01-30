@@ -198,17 +198,14 @@ nav:
         - Fields: getting-started.md
       - NLU Configuration: 
         - Engine Tuning: automation/natural-language/nlu-configurations/engine-tuning.md
-        - Multi Intent Detect: automation/natural-language/nlu-configurations/multi-intent-detection.md
+        - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
         - Amend Entity: automation/natural-language/nlu-configurations/amend-entities.md        
     - INTELLIGENCE:
       - Introduction: automation/intelligence/intelligence-overview.md
       - Events: 
-        - Event Handling: automation/intelligence/event-handling.md
+        - Intent Events: automation/intelligence/event-handling.md
         - Context Management: automation/intelligence/context-management.md
-        - Context Object: automation/intelligence/context-object.md
-        - Intent Events: 
-          - Multi-Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
-          - Amend Entities: automation/natural-language/nlu-configurations/amend-entities.md
+          - Context Object: automation/intelligence/context-object.md
         - Conversation Events: 
           - Default Conversations: automation/intelligence/conversation-management/default-conversations.md
           - Conversation Driven Dialog Builder: automation/intelligence/conversation-management/conversation-driven-dialog-builder.md
