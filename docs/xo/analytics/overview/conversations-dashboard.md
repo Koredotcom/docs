@@ -90,6 +90,12 @@ Refer to the table below for the list of widgets present across each category on
 <strong>Drop-Off</strong>: Displays drop-off versus total conversation line chart over a period of time.
 <br>
 <strong>Agent Transfer</strong>: Displays agent transfer versus total conversation line chart over a period of time.
+
+Scenarios considered as  'agent hand-off' sessions:
+
+* Customers transferred to agents without completing any task with the bot - **Total Agent Transfer**.
+* Customers transferred to agents after successfully completing one or more tasks with the bot - **Sessions Transferred to Agents after Completion of 1 or More Tasks**.
+
    </td>
   </tr>
   <tr>
