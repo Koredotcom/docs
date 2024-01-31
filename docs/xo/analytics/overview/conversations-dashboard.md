@@ -81,28 +81,25 @@ Refer to the table below for the list of widgets present across each category on
   <tr>
    <td>Conversation Session Trend
    </td>
-   <td>A line chart that displays the conversation session over a period of time.
-<br>
-<strong>Conversation Sessions</strong>: Displays the total conversations, self-service, drop-off, and agent transfer sessions over a period of time.
-<br>
-<strong>Self-Service</strong>: Displays self-service versus total conversation line chart over a period of time.
-<br>
-<strong>Drop-Off</strong>: Displays drop-off versus total conversation line chart over a period of time.
-<br>
-<strong>Agent Transfer</strong>: Displays agent transfer versus total conversation line chart over a period of time.
+   <td><p>A line chart that displays the conversation session over a period of time.</p>
+<p><strong>Conversation Sessions</strong>: Displays the total conversations, self-service, drop-off, and agent transfer sessions over a period of time.</p>
 
+<p><strong>Self-Service</strong>: Displays self-service versus total conversation line chart over a period of time.
+</p>
+<p><strong>Drop-Off</strong>: Displays drop-off versus total conversation line chart over a period of time.
+</p>
+<p><strong>Agent Transfer</strong>: Displays agent transfer versus total conversation line chart over a period of time.</p>
 Scenarios considered as  'agent hand-off' sessions:
-
-* Customers transferred to agents without completing any task with the bot - **Total Agent Transfer**.
-* Customers transferred to agents after successfully completing one or more tasks with the bot - **Sessions Transferred to Agents after Completion of 1 or More Tasks**.
-
+<ul>
+<li>Customers transferred to agents without completing any task with the bot - <strong>Total Agent Transfer</strong>.</li>
+<li>Customers transferred to agents after successfully completing one or more tasks with the bot - <strong>Sessions Transferred to Agents after Completion of 1 or More Tasks</strong>.</li>
+</ul>
    </td>
   </tr>
   <tr>
    <td>Message Trend
    </td>
-   <td>A line chart that displays the total number of messages sent by the virtual assistant versus the total number of messages received in the VA over a time period. 
-<br>
+   <td><p>A line chart that displays the total number of messages sent by the virtual assistant versus the total number of messages received in the VA over a time period.</p>
 This metric is available only for the Conversation Session.
    </td>
   </tr>
@@ -117,29 +114,21 @@ This metric is available only for the Conversation Session.
   <tr>
    <td>Most Active Hours
    </td>
-   <td>A bar chart that displays the most active hours in a day based on the number of conversations and number of messages.
-<br>
-<strong>Conversation Sessions</strong>: Displays the total number of hours for self-service, drop-off, and agent transfer sessions over a period of time.
-<br>
-<strong>Self-Service</strong>: Displays the total number of hours for self-service sessions distributed hourly. 
-<br>
-<strong>Drop-off:</strong> Displays the total number of hours for drop-off sessions distributed hourly. 
-<br>
-<strong>Agent Transfer</strong>: Displays the total number of hours for agent transfer sessions distributed hourly. 
+   <td><p>A bar chart that displays the most active hours in a day based on the number of conversations and number of messages.</p>
+<p><strong>Conversation Sessions</strong>: Displays the total number of hours for self-service, drop-off, and agent transfer sessions over a period of time.</p>
+<p><strong>Self-Service</strong>: Displays the total number of hours for self-service sessions distributed hourly.</p>
+<p><strong>Drop-off:</strong> Displays the total number of hours for drop-off sessions distributed hourly.</p>
+<p><strong>Agent Transfer</strong>: Displays the total number of hours for agent transfer sessions distributed hourly.</p> 
    </td>
   </tr>
   <tr>
    <td>Conversation Path Analysis
    </td>
-   <td>A table showing every unique conversation path between the VA and the users that has been executed over a period of time.
-<br>
-<strong>Conversation Session</strong>: Displays the most popular conversation path.
-<br>
-<strong>Self-Service</strong>: Displays the conversation path that leads to self-service.
-<br>
-<strong>Drop-off</strong>: Displays the conversation path that leads to self-service.
-<br>
-<strong>Agent Transfer</strong>: Displays the conversation path that leads to agent transfer.
+   <td><p>A table showing every unique conversation path between the VA and the users that has been executed over a period of time.</p>
+<p><strong>Conversation Session</strong>: Displays the most popular conversation path.</p>
+<p><strong>Self-Service</strong>: Displays the conversation path that leads to self-service.</p>
+<p><strong>Drop-off</strong>: Displays the conversation path that leads to self-service.</p>
+<p><strong>Agent Transfer</strong>: Displays the conversation path that leads to agent transfer.</p>
    </td>
   </tr>
   <tr>
@@ -151,8 +140,7 @@ This metric is available only for the Conversation Session.
   <tr>
    <td>Avg. Conversation per Day
    </td>
-   <td>A scorecard that displays the average number of conversation sessions per day and comparison analysis for the selected period.
-<br>
+   <td><p>A scorecard that displays the average number of conversation sessions per day and comparison analysis for the selected period.</p>
 <strong>Formula</strong>
 <br>
 Avg Conversation Per Day = Total Number of conversations / Number of days.
@@ -165,8 +153,7 @@ This metric is available only for the Conversation Session.
   <tr>
    <td>Average Conversation Per User
    </td>
-   <td>A scorecard that displays the average number of conversations by user.
-<br>
+   <td><p>A scorecard that displays the average number of conversations by user.</p>
 <strong>Formula</strong>
 <br>
 Average Conversation Per User = Total number of conversations / Total number of users.
@@ -177,8 +164,7 @@ This metric is available only for the Conversation Session.
   <tr>
    <td>Average Conversation Length
    </td>
-   <td>A scorecard that displays the average duration of a conversation (in Minutes). 
-<br>
+   <td><p>A scorecard that displays the average duration of a conversation (in Minutes).</p> 
 <strong>Formula</strong>
 <br>
 Average Conversation Length = Total conversation length / Total number of conversations.
@@ -203,8 +189,7 @@ This metric is available only for the Conversation Session.
   <tr>
    <td>Average Messages Per Session
    </td>
-   <td>A scorecard that displays the average number of messages per session.
-<br>
+   <td><p>A scorecard that displays the average number of messages per session.</p>
 <strong>Formula</strong>
 <br>
 Average Message Per Session = Total number of messages / Total number of sessions during the timeframe.
