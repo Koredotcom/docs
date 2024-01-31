@@ -43,7 +43,8 @@ To Set VA Level Amend Entity Behavior, follow the below steps:
         * _Skip display of previously displayed messages_ – messages from Message nodes alone.
     * **Resume dialog from amend identification node** – use this option to resume the dialog from the node where the amend was identified.
 5. The amend process can be extended to entities marked as _Hidden_ using the **Amend Hidden Entities** option.
-<img src="../images/amend-hidden-entities.png" alt="amend hidden entities" title="amend hidden entities" style="border: 1px solid gray; zoom:75%;">
+    
+    <img src="../images/amend-hidden-entities.png" alt="amend hidden entities" title="amend hidden entities" style="border: 1px solid gray; zoom:75%;">
 
 ### Task Level
 

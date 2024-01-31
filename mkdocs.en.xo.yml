@@ -45,7 +45,7 @@ extra:
   generator: false
   analytics:
     provider: google
-    property: G-6GL1FRPFB3
+    property: G-560BYJFH0P
     feedback:
       title: Was this page helpful?
       ratings:
@@ -198,17 +198,24 @@ nav:
         - Fields: getting-started.md
       - NLU Configuration: 
         - Engine Tuning: automation/natural-language/nlu-configurations/engine-tuning.md
-        - Multi Intent Detect: automation/natural-language/nlu-configurations/multi-intent-detection.md
+        - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
         - Amend Entity: automation/natural-language/nlu-configurations/amend-entities.md        
     - INTELLIGENCE:
+      - Introduction: automation/intelligence/intelligence-overview.md
       - Events: 
-        - Intent Events: getting-started.md 
-        - conversation Events: getting-started.md 
-        - Sentiment Events: getting-started.md
+        - Intent Events: automation/intelligence/event-handling.md
+        - Context Management: automation/intelligence/context-management.md
+        - Context Object: automation/intelligence/context-object.md
+        - Conversation Events: 
+          - Default Conversations: automation/intelligence/conversation-management/default-conversations.md
+          - Conversation Driven Dialog Builder: automation/intelligence/conversation-management/conversation-driven-dialog-builder.md
+        - Sentiment Events: 
+          - Sentiment Management: automation/intelligence/sentiment-management/sentiment-management-overview.md
+          - Tone Analysis: automation/intelligence/sentiment-management/tone-analysis.md
       - Conversation Management: 
-        - Standard Responses: getting-started.md 
-        - Manage Interruptions: getting-started.md 
-        - Ignore Words and Field Memory: getting-started.md 
+        - Standard Responses: automation/intelligence/conversation-management/standard-responses.md 
+        - Manage Interruptions: automation/intelligence/conversation-management/manage-interruptions.md
+        - Ignore Words and Field Memory: automation/intelligence/conversation-management/ignore-words-and-field-memory.md
     - TESTING:
       - Test and Debug Overview: automation/testing/test-and-debug-overview.md
       - Talk to Bot: automation/testing/talk-to-bot.md
@@ -255,26 +262,29 @@ nav:
         - API Introduction: apis/api-list.md
         - API List: apis/api-list.md           
   - Analytics:
+    - Introduction: analytics/introduction.md
+    - Dashboard Filters: analytics/dashboard-filters.md
+    - OVERVIEW:
+      - Summary Dashboard: analytics/overview/summary-dashboard.md
+      - Conversations Dashboard: analytics/overview/conversations-dashboard.md
+      - Conversations History: analytics/overview/conversations-history.md
+      - Users Dashboard: analytics/overview/users-dashboard.md
+      - Feedback Dashboard: analytics/overview/feedback-dashboard.md
     - AUTOMATION:
-      - Introduction: analytics/automation/introduction.md
-      - Dashboard Filters: analytics/automation/dashboard-filters.md
-      - Overview Dashboard: analytics/automation/overview-dashboard.md
-      - Conversations Dashboard: analytics/automation/conversations-dashboard.md
-      - Users Dashboard: analytics/automation/users-dashboard.md
       - Performance Dashboard: analytics/automation/performance-dashboard.md
+      - Conversation Insights: analytics/automation/conversation-insights.md
+      - NLP Insights: analytics/automation/nlp-insights.md
+      - Task Execution Logs: analytics/automation/task-execution-logs.md
       - Custom Dashboard:
         - Introduction: analytics/automation/custom-dashboard/introduction-to-custom-dashboard.md
         - Custom Meta Tags: analytics/automation/custom-dashboard/custom-meta-tags.md
         - Create Custom Dashboard: analytics/automation/custom-dashboard/create-custom-dashboard.md
-        - Create Custom Dashboard Filters: analytics/automation/custom-dashboard/create-custom-dashboard-filters.md  
-      - NLP Insights: analytics/automation/nlp-insights.md
-      - Task Execution Logs: analytics/automation/task-execution-logs.md
-      - Conversations History: analytics/automation/conversations-history.md
-      - Conversation Flows: analytics/automation/conversation-flows.md
-      - Conversation Insights: analytics/automation/conversation-insights.md
-      - Feedback Dashboard: analytics/automation/feedback-dashboard.md
+        - Create Custom Dashboard Filters: analytics/automation/custom-dashboard/create-custom-dashboard-filters.md
+      - Conversation Flows: analytics/automation/conversation-flows.md            
     - CONTACT CENTER:  
-      - Changelog: insiders/changelog.md
+      - Queues & Agents: analytics/contact-center/queues-and-agents.md
+      - Interactions: analytics/contact-center/interactions.md
+      - Reports: analytics/contact-center/interactions.md
   - Administration:
     - Contributing:
       - contributing/index.md

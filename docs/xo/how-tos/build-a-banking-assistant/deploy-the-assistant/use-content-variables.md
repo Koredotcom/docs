@@ -1,8 +1,8 @@
 # Use Content Variables
 
-XO platform provides a way to declare and use variables within the bot. These variables can be used to capture values that are commonly used by different tasks, nodes, and other bot elements.
+XO platform allows declaring and using variables within the bot. These variables are used to capture values that are commonly used by different tasks, nodes, and other bot elements.
 
-In this How-To, we will explore a scenario in a Banking Bot, where Bot Variables can be used. We will see how Content Variables can be used to pass language-specific messages.
+In this post, we explore a scenario in a Banking Bot, where Bot Variables can be used. We will see how Content Variables are used to pass language-specific messages.
 
 For details on what Bot Variables are and how they are implemented in the XO platform, click <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/variables/using-bot-variables/" target="_blank">here</a>. 
 

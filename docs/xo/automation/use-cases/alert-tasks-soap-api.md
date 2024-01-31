@@ -17,10 +17,10 @@ Click **Save** to save the API request settings.
 ## Define the WSDL URL
 
 1. On the **API Request** tab, expand the **WSDL URL** section.
-2. To begin the request task configuration for a SOAP request, enter the URL for your SOAP WSDL in the **WSDL URL** field.
+2. To begin the task configuration for a SOAP request, enter the URL for your SOAP WSDL in the **WSDL URL** field.
 <img src="../images/define-wsdl-url.png" alt="define wsdl url" title="efine wsdl url" style="border: 1px solid gray; zoom:75%;">
 
-3. Click **Get WSDL Description**. A list of available operators defined in the WSDL opens.
+3. Click **Get WSDL Description**. A list of the available operators defined in the WSDL is displayed.
 4. Click **Select** for the SOAP request that you want to use for your task. Kore.ai automatically populates one or more Alert Task Fields if necessary for user input.
 <img src="../images/select-soap-request.png" alt="select soap request" title="select soap request" style="border: 1px solid gray; zoom:75%;">
 
