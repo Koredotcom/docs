@@ -165,14 +165,16 @@ The following steps explain the **Train & Generate** usage with an example.
 5. Once training and regeneration of recommendations is completed, the status is displayed in the status docker.
 <img src="../images/training-and-regeneration-status.png" alt="training and regeneration status" title="training and regeneration status" style="border: 1px solid gray; zoom:75%;">
  
-6. Click the **Regenerate** button in the displayed pop-up if you want to trigger a background task that generates recommendations from the current model.
+### Regenerate
+
+Click the **Regenerate** button in the displayed pop-up if you want to trigger a background task that generates recommendations from the current model.
 <img src="../images/click-regenerate-button.png" alt="click regenerate" title="click regenerate" style="border: 1px solid gray; zoom:75%;">
  
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>While performing the refresh, you cannot trigger the task again. If you click the <b>Refresh</b> icon when the model is being trained, recommendations from the latest Validate model are generated only once the training is completed.</p></div>
 
-<ol start="7"><li>When you click the <b>Refresh</b> icon, the recommendations summary is refreshed and the count of recommendations is either increased, or decreased, or the recommendations are updated based on the latest results.
+<ol start="6"><li>When you click the <b>Refresh</b> icon, the recommendations summary is refreshed and the count of recommendations is either increased, or decreased, or the recommendations are updated based on the latest results.
 
 For example, if new utterances are added to the intent, a new recommendation may get added to the summary list. Similarly, if a recommendation is implemented, the count of recommendations decreases. In a recommendation like <i>13 intents have very short utterances, if 2 intents are fixed, then the recommendation is updated to 11 intents have very short utterances</i>.</li>
 
@@ -197,9 +199,9 @@ The following screenshot shows the confusion matrix report.
 
 If no data is available in the Confusion Matrix, you click the **Generate** button to create a report.
 
-Whenever the Validate model is updated, you can click the **Re-Run Model** to generate the latest matrix. Once you rerun the model, the platform prompts you to either <a href="https://developer.kore.ai/docs/bots/nlp/training-validations/#Train_and_Regenerate" target="_blank">Train and Regenerate</a> the recommendations if the model has unsaved changes or <a href="https://developer.kore.ai/docs/bots/nlp/training-validations/#Regenerate" target="_blank">Regenerate</a> the recommendations if the model is up to date.
+Whenever the Validate model is updated, you can click the **Re-Run Model** to generate the latest matrix. Once you rerun the model, the platform prompts you to either <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/training-validations/#train-and-regenerate" target="_blank">Train and Regenerate</a> the recommendations if the model has unsaved changes or <a href="https://developer.kore.ai/docs/bots/nlp/training-validations/#Regenerate" target="_blank">Regenerate</a> the recommendations if the model is up to date.
 
-Whenever you <a href="https://developer.kore.ai/docs/bots/nlp/training-validations/#Train_and_Regenerate" target="_blank">Train and Regenerate</a> the recommendations, the matrix will also be regenerated. Similarly, whenever you regenerate the matrix, the recommendations are updated too.
+Whenever you <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/training-validations/#train-and-regenerate" target="_blank">Train and Regenerate</a> the recommendations, the matrix will also be regenerated. Similarly, whenever you regenerate the matrix, the recommendations are updated too.
 
 #### K-Fold Cross Validation
 
