@@ -192,7 +192,7 @@ nav:
         - NLP Guidelines: automation/natural-language/nlp-guidelines.md
       - Training:
         - Introduction: automation/natural-language/training/nlp-training-overview.md
-        - Intents: getting-started.md 
+        - Intents: automation/natural-language/training/machine-learning-engine/#viewing-nlu-training-validations
         - Entities: getting-started.md 
         - Bot Synonyms: getting-started.md
         - Traits: getting-started.md
