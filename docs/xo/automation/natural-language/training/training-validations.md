@@ -37,12 +37,13 @@ The ML engine enables you to identify issues proactively in the training phase i
 
 <ol start="3"><li>Hover over the validation options and view the following recommendations:</li></ol>
 
-* Hover on the **Error** icon to view the recommendations to resolve the error.
+Hover on the **Error** icon to view the recommendations to resolve the error.
+
 <img src="../images/hover-over-error-icon.png" alt="hover over error icon" title="hover over error icon" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p>An Error is displayed when the intent has a definite problem that impacts the virtual assistant’s accuracy or intent score. Errors are high severity problems.Hover on the **Warning** icon and follow the instructions in the warning to enhance the training for ML utterances.</p></div>
+<p>An Error is displayed when the intent has a definite problem that impacts the virtual assistant’s accuracy or intent score. Errors are high severity problems.Hover on the <b>Warning</b> icon and follow the instructions in the warning to enhance the training for ML utterances.</p></div>
 
 <img src="../images/training-warning.png" alt="training warning" title="training warning" style="border: 1px solid gray; zoom:75%;">
  
@@ -102,6 +103,7 @@ To filter the recommendations summary issue, follow the steps below:
 
 3. Click the **+Utterance**, **+Pattern**, or **+Rule** link for an intent issue type to add the relevant values for training.
 4. Enter the values in the relevant textbox and click enter under the **Intent summary** window’s **Utterance/Pattern/Rule** tab. The **Intent Summary** window displays the context to resolve the filtered issue.
+
 <img src="../images/intent-summary-window.png" alt="intent summary window" title="intent summary window" style="border: 1px solid gray; zoom:75%;">
 
 5. The **utterance/pattern/rule** is created successfully and mapped to the intent.
