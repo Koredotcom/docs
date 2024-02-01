@@ -166,7 +166,7 @@ The following steps explain the **Train & Generate** usage with an example.
 
     <img src="../images/training-and-regeneration-status.png" alt="training and regeneration status" title="training and regeneration status" style="border: 1px solid gray; zoom:75%;">
  
-### Regenerate
+#### Regenerate
 
 Click the **Regenerate** button in the displayed pop-up if you want to trigger a background task that generates recommendations from the current model.
 <img src="../images/click-regenerate-button.png" alt="click regenerate" title="click regenerate" style="border: 1px solid gray; zoom:75%;">
