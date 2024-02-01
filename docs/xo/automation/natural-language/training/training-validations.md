@@ -114,8 +114,8 @@ To filter the recommendations summary issue, follow the steps below:
 
 <div class="admonition note">
 <p class="admonition-title">Important Considerations</p>
-<ul><li>The user can filter only one recommendation at a time.</li>
-<li>When a filter is selected, it applies to the <i>Intent training</i>, <i>utterance</i>, <i>rule</i>, and <i>pattern-level</i> recommendations for the selected intent type.</li></ul>
+<p><ul><li>The user can filter only one recommendation at a time.</li>
+<li>When a filter is selected, it applies to the <i>Intent training</i>, <i>utterance</i>, <i>rule</i>, and <i>pattern-level</i> recommendations for the selected intent type.</li></ul></p></div>
 
 ### Reset the Intent Recommendation Filter
 
