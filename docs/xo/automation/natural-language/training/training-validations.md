@@ -35,7 +35,7 @@ The ML engine enables you to identify issues proactively in the training phase i
 
     The errors and warnings in this screen are examples. The ML validations vary based on the error or waning recommendation as explained in the Goal-Based NLU Training Validations section above.
 
-<ol start="3"><li>Hover over the validation options and view the following recommendations:</li></ol>
+<ol start="3"><li>Hover over the validation options and view the following recommendations:</li>
 
 Hover on the **Error** icon to view the recommendations to resolve the error.
 
@@ -45,7 +45,7 @@ Hover on the **Error** icon to view the recommendations to resolve the error.
 <p class="admonition-title">Important</p>
 <p>An Error is displayed when the intent has a definite problem that impacts the virtual assistant’s accuracy or intent score. Errors are high severity problems.Hover on the <b>Warning</b> icon and follow the instructions in the warning to enhance the training for ML utterances.</p></div>
 
-<img src="../images/training-warning.png" alt="training warning" title="training warning" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/training-warning.png" alt="training warning" title="training warning" style="border: 1px solid gray; zoom:75%;"></ol>
  
 !!!note
 
