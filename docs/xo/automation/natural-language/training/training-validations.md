@@ -103,7 +103,8 @@ To filter the recommendations summary issue, follow the steps below:
 
 3. Click the **+Utterance**, **+Pattern**, or **+Rule** link for an intent issue type to add the relevant values for training.
 4. Enter the values in the relevant textbox and click enter under the **Intent summary** window’s **Utterance/Pattern/Rule** tab. The **Intent Summary** window displays the context to resolve the filtered issue.
-<img src="../images/intent-summary-window.png" alt="intent summary window" title="intent summary window" style="border: 1px solid gray; zoom:75%;">
+
+    <img src="../images/intent-summary-window.png" alt="intent summary window" title="intent summary window" style="border: 1px solid gray; zoom:75%;">
 
 5. The **utterance/pattern/rule** is created successfully and mapped to the intent.
 <img src="../images/intent-mapping.png" alt="intent mapping" title="intent mapping" style="border: 1px solid gray; zoom:75%;">
@@ -134,11 +135,11 @@ To reset the **intents recommendation** filter, follow the steps below:
 
 In the recommendation summary, you can refresh recommendations as explained in the previous section in some of the scenarios like:
 
-**Modify training data:** When the training data is modified, you can check for new recommendations.
+* **Modify training data:** When the training data is modified, you can check for new recommendations.
 
-**Implement recommendations:** When a recommendation is implemented, you can verify if it is resolved.
+* **Implement recommendations:** When a recommendation is implemented, you can verify if it is resolved.
 
-**Add new training data:** When new intents or utterances are added, you can check for new recommendations.
+* **Add new training data:** When new intents or utterances are added, you can check for new recommendations.
 
 When you click the **Refresh** icon, a timestamp of the last refresh is displayed along with the refreshed recommendations list. The timestamp is updated with every refresh.
 
@@ -163,7 +164,7 @@ The following steps explain the **Train & Generate** usage with an example.
 
 5. Once training and regeneration of recommendations is completed, the status is displayed in the status docker.
 
-<img src="../images/training-and-regeneration-status.png" alt="training and regeneration status" title="training and regeneration status" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/training-and-regeneration-status.png" alt="training and regeneration status" title="training and regeneration status" style="border: 1px solid gray; zoom:75%;">
  
 ### Regenerate
 
@@ -176,9 +177,9 @@ Click the **Regenerate** button in the displayed pop-up if you want to trigger a
 
 <ol start="6"><li><p>When you click the <b>Refresh</b> icon, the recommendations summary is refreshed and the count of recommendations is either increased, or decreased, or the recommendations are updated based on the latest results.</p>
 
-<p>For example, if new utterances are added to the intent, a new recommendation may get added to the summary list. Similarly, if a recommendation is implemented, the count of recommendations decreases. In a recommendation like <i>13 intents have very short utterances, if 2 intents are fixed, then the recommendation is updated to 11 intents have very short utterances</i>.</p></li>
+<p>For example, if new utterances are added to the intent, a new recommendation may get added to the summary list. Similarly, if a recommendation is implemented, the count of recommendations decreases. In a recommendation like <i>13 intents have very short utterances, if 2 intents are fixed, then the recommendation is updated to 11 intents have very short utterances</i>.</p>
 
-<img src="../images/recommendation-information.png" alt="recommendation information" title="recommendation information" style="border: 1px solid gray; zoom:75%;"></ol>
+<img src="../images/recommendation-information.png" alt="recommendation information" title="recommendation information" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ### NLU Validation Options
 
