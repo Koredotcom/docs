@@ -211,7 +211,7 @@ nav:
         - Co-pilot Features: app-settings/generative-ai-tools/co-pilot-features.md
         - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md
     - INTELLIGENCE:
-      - Introduction: automation/intelligence/intelligence-overview.md
+      - Overview: automation/intelligence/intelligence-overview.md
       - Events: 
         - Intent Events: automation/intelligence/event-handling.md
         - Context Management: automation/intelligence/context-management.md
@@ -227,7 +227,7 @@ nav:
         - Manage Interruptions: automation/intelligence/conversation-management/manage-interruptions.md
         - Ignore Words and Field Memory: automation/intelligence/conversation-management/ignore-words-and-field-memory.md
     - TESTING:
-      - Test and Debug Overview: automation/testing/test-and-debug-overview.md
+      - Overview: automation/testing/test-and-debug-overview.md
       - Talk to Bot: automation/testing/talk-to-bot.md
       - Utterance Testing: automation/testing/testing-your-bot-with-nlp.md 
       - Regression Testing: 
