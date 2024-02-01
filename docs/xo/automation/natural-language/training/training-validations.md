@@ -12,18 +12,18 @@ This article explains the available validations, how to view these validations, 
 
 The ML engine enables you to identify issues proactively in the training phase itself with the following set of recommendations: 
 
-* **Untrained Intents** – notifies about intents that are not trained with any utterances so that you can add the required training. 
-* **Inadequate training utterances** – notifies the intents with insufficient training utterances so that you can add more utterances to them. 
-* **Utterance does not qualify any intent (false negative)** – notifies about an utterance for which the NLP model cannot predict any intent. For example, an utterance added to Intent A is expected to predict Intent A. Whereas in some cases the model won’t be able to predict neither the trained Intent A nor any other Intents within the model. Proactively identifying such cases helps you rectify the utterance and enhance the model for prediction. 
+* **Untrained Intents** – Notifies about intents that are not trained with any utterances so that you can add the required training. 
+* **Inadequate training utterances** – Notifies the intents with insufficient training utterances so that you can add more utterances to them. 
+* **Utterance does not qualify any intent (false negative)** – Notifies about an utterance for which the NLP model cannot predict any intent. For example, an utterance added to Intent A is expected to predict Intent A. Whereas in some cases the model won’t be able to predict neither the trained Intent A nor any other Intents within the model. Proactively identifying such cases helps you rectify the utterance and enhance the model for prediction. 
 * **Utterance predicts wrong intent (false positive)** – Identifies utterances that predict intents other than the trained intent. For example, when you add an utterance similar to utterances from another intent, the model could predict a different intent rather than the intent it is trained to. Knowing this would help you to rectify the utterance and improve the model prediction.
-* **Utterance predicts intent with low confidence**– notifies about the utterances that have low confidence scores. With this recommendation, you can identify and fix such utterances to improve the confidence score during the virtual assistant creation phase.
+* **Utterance predicts intent with low confidence**– Notifies about the utterances that have low confidence scores. With this recommendation, you can identify and fix such utterances to improve the confidence score during the virtual assistant creation phase.
 * **Incorrect Patterns**– Notifies about the patterns that do not follow the right syntax along with the error. You can resolve such incorrect patterns to improve intent identification. In addition, the Platform now supports the following Non-CS languages for Virtual Assistant conversations:
     * **Polish**: Support for stop words and entity detection improvements for _Number_, _City_, _Country_, _Person_, _Date_, _Time_, _Zip Code_, _Address_, and _LoV Enumerated_.
     * **Japanese**: Support for stop words and improvements in entity detection, intent patterns, sub-intents, and bot synonyms.
     * **Arabic**: Support for stop words and improvements in phone number entity detection.
     * **Hinglish (Hindi + English)**: The support for this dual language combination is newly introduced.
-* **Wrong Entity Annotations**– notifies wrongly annotated entities. For example, in the utterance _‘I want to travel to Hyderabad on Sunday 2pm’,_. the _Travel Date_ (Date type) entity is annotated with value _‘2PM’ (Time value)_. The platform checks for such wrong annotations and notifies the issue against the utterance, which helps to re-annotate the entity with the right values and improve entity recognition.
-* **Short Utterance**– notifies about the utterances whose word count is lesser than or equal to two. It helps you to follow best practices for the length of utterances, which depicts an actual end-user query and further improves the model’s accuracy.
+* **Wrong Entity Annotations**– Notifies wrongly annotated entities. For example, in the utterance _‘I want to travel to Hyderabad on Sunday 2pm’,_. the _Travel Date_ (Date type) entity is annotated with value _‘2PM’ (Time value)_. The platform checks for such wrong annotations and notifies the issue against the utterance, which helps to re-annotate the entity with the right values and improve entity recognition.
+* **Short Utterance**– Notifies about the utterances whose word count is lesser than or equal to two. It helps you to follow best practices for the length of utterances, which depicts an actual end-user query and further improves the model’s accuracy.
 
 ## How to View NLU Training Validations
 
