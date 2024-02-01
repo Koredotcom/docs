@@ -45,7 +45,7 @@ extra:
   generator: false
   analytics:
     provider: google
-    property: G-6GL1FRPFB3
+    property: G-560BYJFH0P
     feedback:
       title: Was this page helpful?
       ratings:
