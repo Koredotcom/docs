@@ -103,7 +103,6 @@ To filter the recommendations summary issue, follow the steps below:
 
 3. Click the **+Utterance**, **+Pattern**, or **+Rule** link for an intent issue type to add the relevant values for training.
 4. Enter the values in the relevant textbox and click enter under the **Intent summary** window’s **Utterance/Pattern/Rule** tab. The **Intent Summary** window displays the context to resolve the filtered issue.
-
 <img src="../images/intent-summary-window.png" alt="intent summary window" title="intent summary window" style="border: 1px solid gray; zoom:75%;">
 
 5. The **utterance/pattern/rule** is created successfully and mapped to the intent.
@@ -163,6 +162,7 @@ The following steps explain the **Train & Generate** usage with an example.
 4. A message about training initiation is displayed.<img src="../images/training-initiation-message.png" alt="training initiation message" title="training initiation message" style="border: 1px solid gray; zoom:75%;">
 
 5. Once training and regeneration of recommendations is completed, the status is displayed in the status docker.
+
 <img src="../images/training-and-regeneration-status.png" alt="training and regeneration status" title="training and regeneration status" style="border: 1px solid gray; zoom:75%;">
  
 ### Regenerate
@@ -174,9 +174,9 @@ Click the **Regenerate** button in the displayed pop-up if you want to trigger a
 <p class="admonition-title">Note</p>
 <p>While performing the refresh, you cannot trigger the task again. If you click the <b>Refresh</b> icon when the model is being trained, recommendations from the latest Validate model are generated only once the training is completed.</p></div>
 
-<ol start="6"><li>When you click the <b>Refresh</b> icon, the recommendations summary is refreshed and the count of recommendations is either increased, or decreased, or the recommendations are updated based on the latest results.
+<ol start="6"><li><p>When you click the <b>Refresh</b> icon, the recommendations summary is refreshed and the count of recommendations is either increased, or decreased, or the recommendations are updated based on the latest results.</p>
 
-For example, if new utterances are added to the intent, a new recommendation may get added to the summary list. Similarly, if a recommendation is implemented, the count of recommendations decreases. In a recommendation like <i>13 intents have very short utterances, if 2 intents are fixed, then the recommendation is updated to 11 intents have very short utterances</i>.</li>
+<p>For example, if new utterances are added to the intent, a new recommendation may get added to the summary list. Similarly, if a recommendation is implemented, the count of recommendations decreases. In a recommendation like <i>13 intents have very short utterances, if 2 intents are fixed, then the recommendation is updated to 11 intents have very short utterances</i>.</p></li>
 
 <img src="../images/recommendation-information.png" alt="recommendation information" title="recommendation information" style="border: 1px solid gray; zoom:75%;"></ol>
 
@@ -199,7 +199,7 @@ The following screenshot shows the confusion matrix report.
 
 If no data is available in the Confusion Matrix, you click the **Generate** button to create a report.
 
-Whenever the Validate model is updated, you can click the **Re-Run Model** to generate the latest matrix. Once you rerun the model, the platform prompts you to either <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/training-validations/#train-and-regenerate" target="_blank">Train and Regenerate</a> the recommendations if the model has unsaved changes or <a href="https://developer.kore.ai/docs/bots/nlp/training-validations/#Regenerate" target="_blank">Regenerate</a> the recommendations if the model is up to date.
+Whenever the Validate model is updated, you can click the **Re-Run Model** to generate the latest matrix. Once you rerun the model, the platform prompts you to either <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/training-validations/#train-and-regenerate" target="_blank">Train and Regenerate</a> the recommendations if the model has unsaved changes or <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/training-validations/#regenerate" target="_blank">Regenerate</a> the recommendations if the model is up to date.
 
 Whenever you <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/training-validations/#train-and-regenerate" target="_blank">Train and Regenerate</a> the recommendations, the matrix will also be regenerated. Similarly, whenever you regenerate the matrix, the recommendations are updated too.
 
