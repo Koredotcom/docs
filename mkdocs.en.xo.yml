@@ -198,11 +198,11 @@ nav:
         - Bot Synonyms: automation/natural-language/training/machine-learning-engine/#bot-synonyms
         - Traits: automation/natural-language/training/traits.md
       - NLU Configuration:
-        - Fundamental Meaning Engine: automation/natural-language/training/fundamental-meaning.md
-        - Machine Learning Engine:
+        - Fundamental Meaning: automation/natural-language/training/fundamental-meaning.md
+        - Machine Learning:
           - Introduction: automation/natural-language/training/machine-learning-engine.md
           - Model Validation: automation/natural-language/training/model-validation.md
-        - Ranking and Resolver Engine: automation/natural-language/training/ranking-and-resolver.md
+        - Ranking and Resolver: automation/natural-language/training/ranking-and-resolver.md
         - Advanced NLP Configurations: automation/natural-language/nlu-configurations/engine-tuning.md
         - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
         - Amend Entity: automation/natural-language/nlu-configurations/amend-entities.md        
