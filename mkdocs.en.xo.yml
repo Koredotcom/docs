@@ -187,9 +187,10 @@ nav:
         - Digital Views: automation/use-cases/digital-skills/digital-views.md
         - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md      
     - NATURAL LANGUAGE:
-      - Training:
-        - Overview: automation/natural-language/nlp-introduction.md
+      - Natural Language Processing:
+        - NLP Overview: automation/natural-language/nlp-introduction.md
         - NLP Guidelines: automation/natural-language/nlp-guidelines.md
+      - Training:
         - Introduction: automation/natural-language/training/nlp-training-overview.md
         - Intents: getting-started.md 
         - Entities: getting-started.md 
