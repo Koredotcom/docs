@@ -37,7 +37,7 @@ The ML engine enables you to identify issues proactively in the training phase i
 
 <ol start="3"><li>Hover over the validation options and view the following recommendations:</li>
 
-Hover on the **Error** icon to view the recommendations to resolve the error.
+Hover on the <b>Error</b> icon to view the recommendations to resolve the error.
 
 <img src="../images/hover-over-error-icon.png" alt="hover over error icon" title="hover over error icon" style="border: 1px solid gray; zoom:75%;">
 
