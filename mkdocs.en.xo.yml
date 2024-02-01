@@ -199,7 +199,7 @@ nav:
         - KG Engine: answers/knowledge-ai/knowledge-graph-training.md
         - Traits Engine: automation/natural-language/training/traits.md
         - Ranking and Resolver: automation/natural-language/training/ranking-and-resolver.md
-        - Training Validations: automation/natural-language/training/ranking-and-resolver.md      
+        - Training Validations: automation/natural-language/training/training-validations.md      
       - NLU Configuration:
         - NLP Engine Configurations: automation/natural-language/nlu-configurations/engine-tuning.md
         - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
