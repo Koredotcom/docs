@@ -187,31 +187,29 @@ nav:
         - Digital Views: automation/use-cases/digital-skills/digital-views.md
         - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md      
     - NATURAL LANGUAGE:
-      - Natural Language Processing:
-        - NLP Overview: automation/natural-language/nlp-introduction.md
-        - NLP Guidelines: automation/natural-language/nlp-guidelines.md
-        - NLP Optimization: automation/natural-language/training/optimizing-bots.md
+      - Overview: automation/natural-language/nlp-introduction.md
+      - NLP Optimization: automation/natural-language/training/optimizing-bots.md
+      - NLP Guidelines: automation/natural-language/nlp-guidelines.md   
       - Training:
-        - Introduction: automation/natural-language/training/nlp-training-overview.md
-        - Intents: automation/natural-language/training/machine-learning-engine/#viewing-nlu-training-validations
-        - Entities: automation/natural-language/training/machine-learning-engine/#adding-entities-for-named-entity-recognition 
-        - Bot Synonyms: automation/natural-language/training/machine-learning-engine/#bot-synonyms
-        - Traits: automation/natural-language/training/traits.md
-      - NLU Configuration:
-        - Fundamental Meaning: automation/natural-language/training/fundamental-meaning.md
-        - Machine Learning:
-          - Introduction: automation/natural-language/training/machine-learning-engine.md
+        - Overview: automation/natural-language/training/nlp-training-overview.md
+        - ML Engine:
+          - Overview: automation/natural-language/training/machine-learning-engine.md
           - Model Validation: automation/natural-language/training/model-validation.md
+        - FM Engine: automation/natural-language/training/fundamental-meaning.md
+        - KG Engine: automation/natural-language/training/fundamental-meaning.md
+        - Traits Engine: automation/natural-language/training/traits.md
         - Ranking and Resolver: automation/natural-language/training/ranking-and-resolver.md
-        - Advanced NLP Configurations: automation/natural-language/nlu-configurations/engine-tuning.md
+        - Training Validations: automation/natural-language/training/ranking-and-resolver.md      
+      - NLU Configuration:
+        - NLP Engine Configurations: automation/natural-language/nlu-configurations/engine-tuning.md
         - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
         - Amend Entities: automation/natural-language/nlu-configurations/amend-entities.md        
-        - LLM and Generative AI:
-          - Introduction: app-settings/generative-ai-tools/introduction.md
-          - LLM Integration: app-settings/generative-ai-tools/llm-integration.md
-          - Prompts and Requests Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
-          - Co-pilot Features: app-settings/generative-ai-tools/co-pilot-features.md
-          - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md
+      - LLM and Generative AI:
+        - Overview: app-settings/generative-ai-tools/introduction.md
+        - LLM Integration: app-settings/generative-ai-tools/llm-integration.md
+        - Prompts and Requests Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
+        - Co-pilot Features: app-settings/generative-ai-tools/co-pilot-features.md
+        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md
     - INTELLIGENCE:
       - Introduction: automation/intelligence/intelligence-overview.md
       - Events: 
