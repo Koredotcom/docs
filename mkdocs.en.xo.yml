@@ -205,7 +205,7 @@ nav:
         - Ranking and Resolver: automation/natural-language/training/ranking-and-resolver.md
         - Advanced NLP Configurations: automation/natural-language/nlu-configurations/engine-tuning.md
         - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
-        - Amend Entity: automation/natural-language/nlu-configurations/amend-entities.md        
+        - Amend Entities: automation/natural-language/nlu-configurations/amend-entities.md        
       - LLM and Generative AI:
         - Introduction: app-settings/generative-ai-tools/introduction.md
         - LLM Integration: app-settings/generative-ai-tools/llm-integration.md
