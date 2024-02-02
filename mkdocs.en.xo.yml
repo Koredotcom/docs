@@ -260,6 +260,9 @@ nav:
         - General Settings: manage-assistant/general-settings.md
         - Bot Management: manage-assistant/bot-management.md
         - Manage Namespace: manage-assistant/managing-namespace.md
+    - HOW TOs:
+      - Build a Travel Planning Assistant:
+        - Travel Assistant Overview: how-tos/build-a-travel-planning-assistant/travel-assistant-overview.md      
   - Answers:
     - Overview: answers/about-answers.md 
     - KNOWLEDGE AI:
