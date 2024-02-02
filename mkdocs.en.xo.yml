@@ -234,7 +234,7 @@ nav:
         - Health and Monitoring: getting-started.md 
         - Batch Testing: getting-started.md
         - Conversation Testing: getting-started.md
-    - VA MANAGEMENT:
+    - ADVANCED TOPICS:
       - Universal Bots:
         - Introduction: universal-bots/introduction.md
         - Universal Bot Definition: universal-bots/defining-a-universal-bot.md
@@ -260,6 +260,9 @@ nav:
         - General Settings: manage-assistant/general-settings.md
         - Bot Management: manage-assistant/bot-management.md
         - Manage Namespace: manage-assistant/managing-namespace.md
+    - HOW TOs:
+      - Build a Travel Planning Assistant:
+        - Travel Assistant Overview: how-tos/build-a-travel-planning-assistant/travel-assistant-overview.md      
   - Answers:
     - Overview: answers/about-answers.md 
     - KNOWLEDGE AI:
@@ -280,11 +283,14 @@ nav:
       - Web Crawl: answers/content-sources/web-crawl.md      
   - Contact Center:
     - Overview: contactcenter/about-contact-center.md 
+    - Agent and Supervisors: 
+      - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
+      - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md
     - Configurations:
       - Default Flows: contactcenter/configurations/default-flows/configure-default-flows.md 
       - Routing: contactcenter/configurations/default-flows/configure-default-flows.md 
       - Hour of Operations: contactcenter/configurations/default-flows/configure-default-flows.md       
-  - AgentAssist:
+  - AgentAI:
     - Overview: agentassist/about-agentassist.md 
     - Agent Experience:
       - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md       
