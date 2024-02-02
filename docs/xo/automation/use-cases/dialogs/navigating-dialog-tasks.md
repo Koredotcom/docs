@@ -85,7 +85,6 @@ To clone a dialog task, follow the below steps:
 * Under **Intent Settings**,set options for the task to be independent, a **Sub-intent dialog** or **Hide it from Help.**
 * Under **Analytics - Containment type**, you can choose between **Abandonment as Self Service** and **Abandonment as Drop Off**.
 * Also optionally, you can adjust **Conversation Context**, set **Intent Preconditions** or define **Context Output**.
-* **{{Placeholder - Explore Integrations}}**
 * Click **Proceed**.  
   
     <img src="../images/clone-dialog-options.png" alt="Clone Dialog - Options" title="Clone Dialog - Options" style="border:1px solid gray; zoom=60%;">
@@ -146,7 +145,7 @@ You can access them by creating a new Dialog Task or by opening an existing one.
 
         This guide is applicable for the new, Conversation-Driven Dialog Builder. If your tasks are using the previous version, please consider upgrading.
 
-You can build Dialogs by adding and configuring [nodes](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/nodes-transitions/){:target="_blank"} in the required sequence as per business logic in the Dialog Builder.
+You can build Dialogs by adding and configuring [nodes](../node-types/nodes-transitions/){:target="_blank"} in the required sequence as per business logic in the Dialog Builder.
 
 
 ### Design the Conversation Flow
@@ -166,7 +165,7 @@ The Dialog Design process occurs in the Conversation Designer. This comes with i
 * **Test** to chat with the assistant in real-time to test recognition, performance, and flow as if it were a live session.
 * **View Warnings**
 * **Manage Zoom percentage and other visual settings**
-* **More options**, where you can access Dialog Settings, Manage Interruptions, Manage Amment behavior anf view comments.
+* **More options**, where you can access Dialog Settings, Manage Interruptions, Manage Ammend behavior and view comments.
 
 
 #### Build Business Logic - The Dialog Builder
