@@ -15,10 +15,8 @@ To retrieve the data associated with custom widgets and the reports of a bot.
    <td><strong>Endpoint</strong>
    </td>
    <td><code>https://{{host}}/api/public/bot/{{BotID}}/dashboard/</code>
-<p>
 <code>{{dashboardName}}/widget/{{widgetName}}?startDate={{startDate}}&endDate={{endDate}}&limit=-1</code>
-<p>
-<strong>Note:</strong> A POST API call is now supported to include the additional filters for querying the data. See <a href="https://developer.kore.ai/docs/bots/analyzing-your-bot/create-custom-dashboard-filters/">Custom Dashboard Filters</a> to know more about additional filters.
+<strong>Note:</strong> A POST API call is now supported to include the additional filters for querying the data. See <a href="../../analytics/automation/custom-dashboard/create-custom-dashboard-filters">Custom Dashboard Filters</a> to know more about additional filters.
    </td>
   </tr>
   <tr>
@@ -32,7 +30,7 @@ To retrieve the data associated with custom widgets and the reports of a bot.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token.</a>
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token.</a>
    </td>
   </tr>
   <tr>
@@ -178,7 +176,7 @@ values
    </td>
    <td>Required
    </td>
-   <td>To understand about the custom dashboard filters, see <a href="https://developer.kore.ai/docs/bots/analyzing-your-bot/create-custom-dashboard-filters/">Create Custom Dashboard Filters</a>.
+   <td>To understand about the custom dashboard filters, see <a href="../../analytics/automation/custom-dashboard/create-custom-dashboard-filters">Create Custom Dashboard Filters</a>.
    </td>
   </tr>
 </table>
@@ -239,3 +237,4 @@ values
         ]
     }
 }
+```

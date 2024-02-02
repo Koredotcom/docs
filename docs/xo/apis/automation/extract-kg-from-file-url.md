@@ -27,7 +27,7 @@ To extract the Knowledge Graph from the imported file or URL.
    </td>
    <td><code>auth: {{YOUR_JWT_ACCESS_TOKEN}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -45,10 +45,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
-
 ## Path Parameters
-
 
 <table>
   <tr>
@@ -77,10 +74,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
-
 ## Query Parameters
-
 
 <table>
   <tr>
@@ -101,8 +95,6 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
   </tr>
 </table>
 
-
-
 ## Sample Request (Extraction using URL)
 
 
@@ -117,10 +109,7 @@ curl --location 'https://bots.kore.ai/api/public/bot/st-2be3c498-d718-5160-853c-
  }'
 ```
 
-
-
 ## Sample Request (Extraction using File)
-
 
 ```json
 curl --location 'https://bots.kore.ai/api/public/bot/st-2be3c498-d718-5160-853c-0166b82bc41c/qna/import?language=en' \
@@ -133,10 +122,7 @@ curl --location 'https://bots.kore.ai/api/public/bot/st-2be3c498-d718-5160-853c-
 }'
 ```
 
-
-
 ## Body Parameters
-
 
 <table>
   <tr>
@@ -173,13 +159,11 @@ curl --location 'https://bots.kore.ai/api/public/bot/st-2be3c498-d718-5160-853c-
   </tr>
 </table>
 
-
-
 ## Sample Response
-
 
 ```json
 { 
       "_id": <extractionId>, 
       "status": "success"
 }
+```
