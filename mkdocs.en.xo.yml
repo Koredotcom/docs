@@ -234,6 +234,35 @@ nav:
         - Health and Monitoring: getting-started.md 
         - Batch Testing: getting-started.md
         - Conversation Testing: getting-started.md
+    - ADVANCED TOPICS:
+      - Universal Bots:
+        - Introduction: universal-bots/introduction.md
+        - Universal Bot Definition: universal-bots/defining-a-universal-bot.md
+        - Universal Bot Creation: universal-bots/creating-a-universal-bot.md
+        - Training a Universal Bot: universal-bots/training-a-universal-bot.md
+        - Universal Bot Customizations: universal-bots/customize-dialog-task.md
+        - Enabling Languages: universal-bots/enabling-languages.md
+      - Manage Assistant:
+        - Team Collaboration: manage-assistant/
+        - Authorization: manage-assistant/bot-authorization-overview.md
+        - Conversation Sessions: manage-assistant/conversation-sessions.md
+        - Multilingual Virtual Assistants:
+          - Get Started: manage-assistant/multilingual-virtual-assistants/get-started.md
+          - Supported Components & Features: manage-assistant/multilingual-virtual-assistants/supported-components-and-feature.md
+          - Manage Languages: manage-assistant/multilingual-virtual-assistants/managing-languages.md
+          - Manage Translation Services: manage-assistant/multilingual-virtual-assistants/managing-translation-services.md
+          - Multilingual Virtual Assistant Behavior: manage-assistant/multilingual-virtual-assistants/multilingual-virtual-assistant-behavior.md
+        - Feedback Survey: manage-assistant/feedbacksurvey.md
+        - Masking PII Details: manage-assistant/redacting-personally-identifiable-information.md
+        - Variables: manage-assistant/using-bot-variables.md
+        - Collections: manage-assistant/collections.md
+        - IVR Settings: manage-assistant/ivr-integration.md
+        - General Settings: manage-assistant/general-settings.md
+        - Bot Management: manage-assistant/bot-management.md
+        - Manage Namespace: manage-assistant/managing-namespace.md
+    - HOW TOs:
+      - Build a Travel Planning Assistant:
+        - Travel Assistant Overview: how-tos/build-a-travel-planning-assistant/travel-assistant-overview.md      
   - Answers:
     - Overview: answers/about-answers.md 
     - KNOWLEDGE AI:
