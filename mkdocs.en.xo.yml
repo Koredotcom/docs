@@ -262,7 +262,25 @@ nav:
         - Manage Namespace: manage-assistant/managing-namespace.md
     - HOW TOs:
       - Build a Travel Planning Assistant:
-        - Travel Assistant Overview: how-tos/build-a-travel-planning-assistant/travel-assistant-overview.md      
+        - Travel Assistant Overview: how-tos/build-a-travel-planning-assistant/travel-assistant-overview.md
+        - Create a Travel Virtual Assistant: how-tos/build-a-travel-planning-assistant/create-a-travel-virtual-assistant.md
+        - Design Conversation Skills:
+          - Create an Update Booking Task: how-tos/build-a-travel-planning-assistant/design-conversation-skills/update-booking-task.md
+          - Create a Change Flight Task: how-tos/build-a-travel-planning-assistant/design-conversation-skills/change-flight-task.md
+          - Build a Knowledge Graph: how-tos/build-a-travel-planning-assistant/design-conversation-skills/build-a-knowledge-graph.md
+          - Schedule a Smart Alert: how-tos/build-a-banking-assistant/design-conversation-skills/schedule-a-smart-alert.md
+        - Design Digital Skills:
+          - Configure Digital Forms: how-tos/build-a-travel-planning-assistant/design-digital-skills/configure-digital-forms.md
+          - Configure Digital Views: how-tos/build-a-travel-planning-assistant/design-digital-skills/configure-digital-views.md
+        - Train the Assistant:
+          - Use Traits: how-tos/build-a-travel-planning-assistant/train-the-assistant/using-traits.md
+          - Use Patterns: how-tos/build-a-travel-planning-assistant/train-the-assistant/using-patterns.md
+          - Manage Context Switching: how-tos/build-a-travel-planning-assistant/train-the-assistant/manage-context-switching.md
+        - Deploy the Assistant: 
+          - Use Bot Functions: how-tos/build-a-travel-planning-assistant/deploy-the-assistant/use-bot-functions.md
+          - Use Content Variables: how-tos/build-a-travel-planning-assistant/deploy-the-assistant/use-content-variables.md
+          - Use Global Variables: how-tos/build-a-travel-planning-assistant/deploy-the-assistant/use-global-variables.md
+          - Use Web SDK: how-tos/build-a-travel-planning-assistant/deploy-the-assistant/web-sdk-tutorial.md    
   - Answers:
     - Overview: answers/about-answers.md 
     - KNOWLEDGE AI:
