@@ -5,7 +5,7 @@ The Dialog Builder is where you can create your Dialog Tasks, from end-to-end. T
 
 ## Create a Dialog Task
 
-To create a dialog task, you must have already created an assistant to add a dialog task to. See [Create Your First Assistant](https://docsinternal-kore.github.io/docs/xo/automation/building-a-virtual-assistant){:target="_blank"} for more information.
+To create a dialog task, you must have already created an assistant to add a dialog task to. See [Create Your First Assistant](../../../building-a-virtual-assistant){:target="_blank"} for more information.
 
 To add a dialog task, follow the steps below:
 
@@ -36,7 +36,7 @@ This will open the Dialog Builder with the canvas containing the root intent. No
 
 <img src="../images/using-dialog-builder-img4-scratch-dialog-created.png" alt="Dialog Builder canvas with Root Intent" title="Dialog Builder canvas with Root Intent" style="border:1px solid gray; zoon:60%;">
 
-[Click here to know about Nodes & Connections](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/nodes-transitions/){:target="_blank"}.
+[Click here to know about Nodes & Connections](../node-types/nodes-transitions/){:target="_blank"}.
 
 ## Auto-Generated Dialog Tasks 
 
@@ -100,7 +100,7 @@ This option lets you choose the suitable dialog template that meets your require
  
     <img src="../images/using-dialog-builder-img14-create-dialog-canvas.png" alt="Dialog using template - Dialog canvas" title="Dialog using template - Dialog Canvas" style="border:1px solid gray; zoon:60%;">
 
-[Click here to know about Nodes & Connections](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/nodes-transitions/){:target="_blank"}
+[Click here to know about Nodes & Connections](../node-types/nodes-transitions/){:target="_blank"}
 
 
 ## Dialog Task Builder Overview
@@ -171,7 +171,7 @@ Click the <img src="../images/using-dialog-builder-img17-nodes-connector.png"> b
 
 You can add conditions to the node by adding **If-Else connection** in the **Transition** section of the node. This is where you can set the execution path based on the condition.
 
-To do this, hover over the **Transitions** section and click **Add New.** [Learn more](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-connections/nodes-conditions/){:target="_blank"}.
+To do this, hover over the **Transitions** section and click **Add New.** [Learn more](../node-connections/nodes-conditions/){:target="_blank"}.
 
 <img src="../images/using-dialog-builder-img16-nodes-transition.png" alt="Transitions - Add New" title="Transitions - Add New" style="border:1px solid gray; zoon:60%;">
 
@@ -182,13 +182,13 @@ Asset can be deleted by right clicking on it, and then clicking **Delete.**
 
 ## Asset Properties
 
-Clicking on an asset will open its Properties panel, which includes specific features, depending on the type of asset you are working with. Please consult the documentation on [Node Types](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/nodes-transitions/){:target="_blank"} to learn more about what is included with each. So, noting that some assets may not come with some features, here is a general overview of what is available within this panel:
+Clicking on an asset will open its Properties panel, which includes specific features, depending on the type of asset you are working with. Please consult the documentation on [Node Types](../node-types/nodes-transitions/){:target="_blank"} to learn more about what is included with each. So, noting that some assets may not come with some features, here is a general overview of what is available within this panel:
 
 * **Component Properties** such as name, type, and component-specific properties.
 * **Instance Properties** can be customized for the selected asset for the current dialog.
 * **Connection Properties** can be used for configuring transition conditions. (Only available for the bottommost asset in a node)
 * **NLP Properties** for intent and entity recognition.
-* **Voice Call Properties** for IVR channels (available for certain assets only after [IVR integration](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/){:target="_blank"}).
+* **Voice Call Properties** for IVR channels (available for certain assets only after [IVR integration](../node-types/voice-call-properties/){:target="_blank"}).
 
 <img src="../images/using-dialog-builder-img20-asset-properties.png" alt="Asset properties" title="Asset properties" style="border:1px solid gray; zoon:60%;">
 
@@ -304,7 +304,7 @@ You can delete the group using the **Delete** icon on the right, that becomes vi
 ![alt_text](images/image28.png "image_tooltip")
 
 
-If you are using the group to set up a Subintent, you can also configure it, using the **Configure**/ Gear icon, that becomes visible once you hover over the group. For additional information, please see [Grouping Nodes as Subintents](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/grouping-nodes/){:target="_blank"}.
+If you are using the group to set up a Subintent, you can also configure it, using the **Configure**/ Gear icon, that becomes visible once you hover over the group. For additional information, please see [Grouping Nodes as Subintents](../node-connections/grouping-nodes/){:target="_blank"}.
 
 <p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image29.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
@@ -318,11 +318,11 @@ If you are using the group to set up a Subintent, you can also configure it, usi
 
 Bot Action assets include the following assets, that need processing by the app without user interaction:
 
-* [Service ](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-service-node/){:target="_blank"}Asset
-* [Script ](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-script-node/){:target="_blank"}Asset
-* [Logic](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-logic-node/){:target="_blank"} Asset
-* [Webhook](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-web-hook-node/){:target="_blank"} Asset
-* [Process](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/process-nodes/){:target="_blank"} Asset
+* [Service ](../node-types/working-with-the-service-node/){:target="_blank"}Asset
+* [Script ](../node-types/working-with-the-script-node/){:target="_blank"}Asset
+* [Logic](../node-types/working-with-the-logic-node/){:target="_blank"} Asset
+* [Webhook](../node-types/working-with-the-web-hook-node/){:target="_blank"} Asset
+* [Process](../node-types/process-nodes/){:target="_blank"} Asset
 
 To access these nodes follow the steps below:
 
@@ -412,7 +412,7 @@ The **Manage Interruptions** options allow you to select if and how a user can s
 
 <img src="../images/using-dialog-builder-img27-manage-interruptions.png" alt="Manage Interruptions" title="Manage Interruptions" style="border:1px solid gray; zoon:60%;">
 
-Click here to [learn more](https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#dialog-level-settings){:target="_blank"}.
+Click here to [learn more](../../../intelligence/conversation-management/manage-interruptions/#dialog-level-settings){:target="_blank"}.
 
 
 #### Manage Ammend Behavior
@@ -421,7 +421,7 @@ Using **Amend Entity,** you can allow the users to amend entity values and also 
 
 <img src="../images/using-dialog-builder-img28-manage-ammend-behavior.png" alt="Manage Ammend behavior" title="Manage Ammend behavior" style="border:1px solid gray; zoon:60%;">
 
-Click here to [learn more.](https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/amend-entities/#task-level){:target="_blank"}
+Click here to [learn more.](../../../natural-language/nlu-configurations/amend-entities/#task-level){:target="_blank"}
 
 
 ### Display Options
