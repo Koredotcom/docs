@@ -806,7 +806,8 @@ The ML engine enables you to identify issues proactively in the training phase i
 
 ### Viewing NLU Training Validations
 1. On the virtual assistant’s **Build** menu, click **Natural Language ->** **Training.**
-2. In the **Intents** tab, you can see the set of recommendations for the Intents and ML utterances. 
+2. In the **Intents** tab, you can see the set of recommendations for the Intents and ML utterances.
+    <img src="../images/training-intents-tab.png" alt="select intents tab" title="select intents tab" style="border: 1px solid gray; zoom:75%;">
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
