@@ -5,10 +5,4 @@ The Knowledge AI or Knowledge Graph (KG) lets you turn static FAQ text into an i
 * The **Ontology-based Knowledge Graph** lets you create an ontological structure of key domain terms and associate them with context-specific questions and their alternatives, synonyms, and Machine learning-enabled traits.
 * The **Few-Shot Knowledge Graph** leverages Kore.ai’s Large Language Model (LLM) to simplify knowledge organization and KG training, letting you add FAQs to the root node without building and maintaining an ontology structure.
 
-<a href="./knowledge-graph-overview/" target="_blank">Learn more about a Knowledge Graph</a>.
-
-<a href="knowledge-graph-overview/" target="_blank">Learn more about a Knowledge Graph</a>. 
-
-<a href="../knowledge-ai/knowledge-graph-overview/" target="_blank">Learn more about a Knowledge Graph</a>.
-
-<a href="../knowledge-ai/knowledge-graph-overview/" target="_blank">Learn more about a Knowledge Graph</a>.
+[Learn more about a Knowledge Graph](./knowledge-graph-overview.md).
