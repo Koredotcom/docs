@@ -1,4 +1,4 @@
-# Add Data into Data Tables from UI Forms
+# Add Data from Digital Forms
 
 In this page, we explore a scenario in a Banking Bot where the user can create an additional account.
 
