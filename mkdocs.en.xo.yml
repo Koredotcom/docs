@@ -283,6 +283,9 @@ nav:
       - Web Crawl: answers/content-sources/web-crawl.md      
   - Contact Center:
     - Overview: contactcenter/about-contact-center.md 
+    - Agent and Supervisors: 
+      - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
+      - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md
     - Configurations:
       - Default Flows: contactcenter/configurations/default-flows/configure-default-flows.md 
       - Routing: contactcenter/configurations/default-flows/configure-default-flows.md 
