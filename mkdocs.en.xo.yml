@@ -187,21 +187,31 @@ nav:
         - Digital Views: automation/use-cases/digital-skills/digital-views.md
         - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md      
     - NATURAL LANGUAGE:
+      - Overview: automation/natural-language/nlp-introduction.md
+      - NLP Optimization: automation/natural-language/training/optimizing-bots.md
+      - NLP Guidelines: automation/natural-language/nlp-guidelines.md   
       - Training:
-        - Overview: automation/natural-language/nlp-introduction.md
-        - NLP Guidelines: automation/natural-language/nlp-guidelines.md
-        - Introduction: automation/natural-language/training/nlp-training-overview.md
-        - Intents: getting-started.md 
-        - Entities: getting-started.md 
-        - Bot Synonyms: getting-started.md
-        - Traits: getting-started.md
-        - Fields: getting-started.md
-      - NLU Configuration: 
-        - Engine Tuning: automation/natural-language/nlu-configurations/engine-tuning.md
+        - Overview: automation/natural-language/training/nlp-training-overview.md
+        - ML Engine:
+          - Overview: automation/natural-language/training/machine-learning-engine.md
+          - Model Validation: automation/natural-language/training/model-validation.md
+        - FM Engine: automation/natural-language/training/fundamental-meaning.md
+        - KG Engine: answers/knowledge-ai/knowledge-graph-training.md
+        - Traits Engine: automation/natural-language/training/traits.md
+        - Ranking and Resolver: automation/natural-language/training/ranking-and-resolver.md
+        - Training Validations: automation/natural-language/training/training-validations.md      
+      - NLU Configuration:
+        - NLP Engine Configurations: automation/natural-language/nlu-configurations/engine-tuning.md
         - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
-        - Amend Entity: automation/natural-language/nlu-configurations/amend-entities.md        
+        - Amend Entities: automation/natural-language/nlu-configurations/amend-entities.md        
+      - LLM and Generative AI:
+        - Overview: app-settings/generative-ai-tools/introduction.md
+        - LLM Integration: app-settings/generative-ai-tools/llm-integration.md
+        - Prompts and Requests Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
+        - Co-pilot Features: app-settings/generative-ai-tools/co-pilot-features.md
+        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md
     - INTELLIGENCE:
-      - Introduction: automation/intelligence/intelligence-overview.md
+      - Overview: automation/intelligence/intelligence-overview.md
       - Events: 
         - Intent Events: automation/intelligence/event-handling.md
         - Context Management: automation/intelligence/context-management.md
@@ -217,13 +227,39 @@ nav:
         - Manage Interruptions: automation/intelligence/conversation-management/manage-interruptions.md
         - Ignore Words and Field Memory: automation/intelligence/conversation-management/ignore-words-and-field-memory.md
     - TESTING:
-      - Test and Debug Overview: automation/testing/test-and-debug-overview.md
+      - Overview: automation/testing/test-and-debug-overview.md
       - Talk to Bot: automation/testing/talk-to-bot.md
       - Utterance Testing: automation/testing/testing-your-bot-with-nlp.md 
       - Regression Testing: 
         - Health and Monitoring: getting-started.md 
         - Batch Testing: getting-started.md
         - Conversation Testing: getting-started.md
+    - VA MANAGEMENT:
+      - Universal Bots:
+        - Introduction: universal-bots/introduction.md
+        - Universal Bot Definition: universal-bots/defining-a-universal-bot.md
+        - Universal Bot Creation: universal-bots/creating-a-universal-bot.md
+        - Training a Universal Bot: universal-bots/training-a-universal-bot.md
+        - Universal Bot Customizations: universal-bots/customize-dialog-task.md
+        - Enabling Languages: universal-bots/enabling-languages.md
+      - Manage Assistant:
+        - Team Collaboration: manage-assistant/
+        - Authorization: manage-assistant/bot-authorization-overview.md
+        - Conversation Sessions: manage-assistant/conversation-sessions.md
+        - Multilingual Virtual Assistants:
+          - Get Started: manage-assistant/multilingual-virtual-assistants/get-started.md
+          - Supported Components & Features: manage-assistant/multilingual-virtual-assistants/supported-components-and-feature.md
+          - Manage Languages: manage-assistant/multilingual-virtual-assistants/managing-languages.md
+          - Manage Translation Services: manage-assistant/multilingual-virtual-assistants/managing-translation-services.md
+          - Multilingual Virtual Assistant Behavior: manage-assistant/multilingual-virtual-assistants/multilingual-virtual-assistant-behavior.md
+        - Feedback Survey: manage-assistant/feedbacksurvey.md
+        - Masking PII Details: manage-assistant/redacting-personally-identifiable-information.md
+        - Variables: manage-assistant/using-bot-variables.md
+        - Collections: manage-assistant/collections.md
+        - IVR Settings: manage-assistant/ivr-integration.md
+        - General Settings: manage-assistant/general-settings.md
+        - Bot Management: manage-assistant/bot-management.md
+        - Manage Namespace: manage-assistant/managing-namespace.md
   - Answers:
     - Overview: answers/about-answers.md 
     - KNOWLEDGE AI:
