@@ -241,7 +241,7 @@ nav:
         - Universal Bot Creation: universal-bots/creating-a-universal-bot.md
         - Training a Universal Bot: universal-bots/training-a-universal-bot.md
         - Universal Bot Customizations: universal-bots/customize-dialog-task.md
-        - Enabling Languages: universal-bots/enabling-languages.md	   
+        - Enabling Languages: universal-bots/enabling-languages.md
       - Manage Assistant:
         - Team Collaboration: manage-assistant/
         - Authorization: manage-assistant/bot-authorization-overview.md
@@ -259,7 +259,7 @@ nav:
         - IVR Settings: manage-assistant/ivr-integration.md
         - General Settings: manage-assistant/general-settings.md
         - Bot Management: manage-assistant/bot-management.md
-        - Manage Namespace: manage-assistant/managing-namespace.md      
+        - Manage Namespace: manage-assistant/managing-namespace.md
   - Answers:
     - Overview: answers/about-answers.md 
     - KNOWLEDGE AI:
