@@ -6,3 +6,9 @@ The Knowledge AI or Knowledge Graph (KG) lets you turn static FAQ text into an i
 * The **Few-Shot Knowledge Graph** leverages Kore.ai’s Large Language Model (LLM) to simplify knowledge organization and KG training, letting you add FAQs to the root node without building and maintaining an ontology structure.
 
 <a href="./knowledge-graph-overview/" target="_blank">Learn more about a Knowledge Graph</a>.
+
+<a href="knowledge-graph-overview/" target="_blank">Learn more about a Knowledge Graph</a>. 
+
+<a href="../knowledge-ai/knowledge-graph-overview/" target="_blank">Learn more about a Knowledge Graph</a>.
+
+<a href="../knowledge-ai/knowledge-graph-overview/" target="_blank">Learn more about a Knowledge Graph</a>.
