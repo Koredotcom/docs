@@ -283,7 +283,7 @@ nav:
           - Use Web SDK: how-tos/build-a-travel-planning-assistant/deploy-the-assistant/web-sdk-tutorial.md
       - Build a Banking Assistant:
         - Design Conversation Skills:
-          - Create a Sample Banking Assistant: how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant.md
+          - Create a Banking Assistant: how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant.md
           - Create a Transfer Funds Task: how-tos/build-a-banking-assistant/design-conversation-skills/create-transfer-funds-task.md
           - Create an Update Balance Task: how-tos/build-a-banking-assistant/design-conversation-skills/create-balance-task.md
           - Build a Knowledge Graph: how-tos/build-a-banking-assistant/design-conversation-skills/build-a-knowledge-graph.md
