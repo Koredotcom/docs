@@ -299,6 +299,17 @@ nav:
           - Use Traits: how-tos/build-a-banking-assistant/train-the-assistant/using-traits.md
           - Use Patterns for Intents & Entities: how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities.md
           - Manage Context Switching: how-tos/build-a-banking-assistant/train-the-assistant/manage-context-switching.md
+        - Deploy the Assistant:
+          - Configure an Agent Transfer: how-tos/build-a-banking-assistant/deploy-the-assistant/configure-an-agent-transfer.md
+          - Use Assistant Functions: how-tos/build-a-banking-assistant/deploy-the-assistant/use-assistant-functions.md
+          - Use Content Variables: how-tos/build-a-banking-assistant/deploy-the-assistant/use-content-variables.md
+          - Use Global Variables: how-tos/build-a-banking-assistant/deploy-the-assistant/use-global-variables.md
+          - Intent Scoping using Group Node: how-tos/build-a-banking-assistant/deploy-the-assistant/intent-scoping-using-group-node.md
+        - Analyze the Assistant:
+          - Build a Custom Dashboard: how-tos/build-a-banking-assistant/analyse-the-assistant/create-custom-dashboard.md
+          - Using Custom Tags to filter Assistant Metrics: how-tos/build-a-banking-assistant/analyse-the-assistant/using-custom-tags-to-filter-assistant-metrics.md
+      - Migrate External Bots:
+        - Google DialogFlow Bot: how-tos/migrate-external-bots/google-dialogflow-bot.md              
   - Answers:
     - Overview: answers/about-answers.md 
     - KNOWLEDGE AI:
