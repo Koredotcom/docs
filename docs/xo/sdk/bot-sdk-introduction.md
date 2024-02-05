@@ -6,7 +6,7 @@ With just a few lines of code, you can embed our Kore.ai widget into your applic
 
 Using our BotKit SDK that resides on your servers and enables interaction between the user and the Kore.ai XO Platform, you can intercept and customize messages and influence the conversation flow.
 
-# Platform-Specific Bot SDKs
+## Platform-Specific Bot SDKs
 
 Bot SDKs are available for the following platforms:
 
@@ -18,10 +18,10 @@ To get started with Kore.ai Bot SDKs, you must have an application to embed the 
 
 You can also try out our tutorial using a Kore.ai sample assistant, a test application, and configuring your local host server for JWT generation. For more information, see the [Kore.ai Web SDK Tutorial](../tutorials/web-sdk).
 
-# BotKit SDK
+## BotKit SDK
 
 The BotKit SDK enables you to define precise control of your assistant’s interactions.For example, if you have an assistant used to book a flight, it may take some time after a user request,s and available taxis can be displayed. Using an asynchronous call, while the user waits for a response, you can display a message such as _Looking for your flight_. The asynchronous     response request enables the XO Platform to process other requests and will post the response to the user when it becomes available. There are a variety of BotKit SDK events that you can capture, and control the bot using functions.
 
-To learn more about the BotKit SDK, see [Using the BotKit SDK](https://developer.kore.ai/docs/bots/sdks/using-the-botkit-sdk/).
+To learn more about the BotKit SDK, see [Using the BotKit SDK](../using-the-botkit-sdk/).
 
-With v. 7.2 of the Platform, the Widget SDK has also been included in the BotKit SDK. To learn more about the Widget SDK, see [Using the Widget SDK](https://developer.kore.ai/docs/bots/sdks/kore-ai-widget-sdk-tutorial/).
+With v. 7.2 of the Platform, the Widget SDK has also been included in the BotKit SDK. To learn more about the Widget SDK, see [Using the Widget SDK](../tutorials/widget-sdk).
