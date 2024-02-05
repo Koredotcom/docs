@@ -1,4 +1,4 @@
-# Travel VA: Configure an Agent Transfer
+# Configure an Agent Transfer
 
 One of the frequently asked questions is how to transfer a conversation to a human agent from a Virtual Assistant? This is especially necessary if your VA is in the customer service industry. Virtual Assistants are not meant to completely replace humans. Many times the assistant will fail to answer satisfactorily or the user would just want to talk/conversation to a human from the beginning. When this happens the assistant should transfer the conversation to a human agent.
 
@@ -18,7 +18,7 @@ Apart from performing business functionality, our VA would also act as a proxy b
 
 ## Prerequisites
 
-1. A fully functional VA. See an example Travel Planning Assistant <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-travel-planning-assistant/create-a-travel-virtual-assistant/" target="_blank">here</a>.
+1. A fully functional Banking VA. <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">Learn more</a>.
 2. Download BotKit SDK from <a href="https://github.com/Koredotcom/BotKit" target="_blank">Kore’s github</a>.
 3. Download and Install the Node.js (version 10 or above). The BotKit SDK requires `node.js` to run on the same server where the SDK is installed.
     * Go to `https://nodejs.org/en/download/` and select your OS as a `.pkg` file type for Mac and `.msi` file type for Windows.

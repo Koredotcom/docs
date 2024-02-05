@@ -28,7 +28,7 @@ The Get Analytics API allows you to retrieve metrics data related to intent dete
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token.</a>
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token.</a>
    </td>
   </tr>
   <tr>
@@ -1044,7 +1044,7 @@ The ‘NLAnalysis’ object includes multiple sub-objects such as ‘intentResco
   <tr>
    <td>NLAnalysis.toneAnalysis
    </td>
-   <td>The toneAnalysis object; Contains the tone analysis of the task. <a href="https://developer.kore.ai/docs/bots/advanced-topics/working-with-tone-processing/">Learn more</a>.
+   <td>The toneAnalysis object; Contains the tone analysis of the task. <a href="../../automation/intelligence/sentiment-management/tone-analysis">Learn more</a>.
    </td>
   </tr>
   <tr>

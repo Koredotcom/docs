@@ -146,8 +146,7 @@ curl --location --request POST 'https://bots.kore.ai/api/public/bot/st-86exxx8d-
   </tr>
 </table>
 
-
-!!! note
+!!!note
     If the session ID is available, the call ID is not mandatory & vice versa. If both are present, the session ID is considered.
 
 
@@ -276,3 +275,4 @@ curl --location --request POST 'https://bots.kore.ai/api/public/bot/st-86exxx8d-
        "ConversationSummary": "agent will need to get an agent on the line to help customer with that.",
        "time": "2023-08-09T06:53:18.579Z"
    }
+```

@@ -1,7 +1,5 @@
 # Composite Entities
 
-## Introduction & Use Case 
-
 **Composite Entities** help you capture multiple entity values in a user utterance. These multiple entity values are optional and come in any order in the user utterance.
 
 Let us consider the below example:

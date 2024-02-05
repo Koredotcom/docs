@@ -479,7 +479,7 @@ function onBookingFailure(requestId) {
 
 ## sdk.getMessages
 
-This function is used to get the transcript of previous conversations between the assistant and the user. It works similar to the public API Conversation History ([see here for Conversation History API](/docs/xo/apis/conversation-history))
+This function is used to get the transcript of previous conversations between the assistant and the user. It works similar to the public API Conversation History ([see here for Conversation History API](../../apis/automation/conversation-history))
 
 **Usage**
 Fetches the conversational messages between the assistant and user in reverse chronological order. This API supports pagination. You can provide offset/skip and limit to get a certain number of messages at a time.
@@ -492,15 +492,13 @@ sdk.getMessages(requestData, callback)
 
 **Parameters:**
 
-* `requestData` – as follows: \
-`requestData.baseUrl + '/getMessages?' + "skip=" + offset + "&limit=" + limit + "&userId=" + userId+"&channelType"=channel-type \
-`where
-    * `stream_id` – Bot ID accessible from the Config Settings page of the XO Platform
-    * `user_id` – The ID of the user whose conversation history to access
-    * `skip` – The number of messages to be skipped.
-    * `limit` – The number of messages to be shown on each page.
-    * `channelType` – Optional, the channel where the conversation was hosted.
-* `callback` – The function to call at event completion used to send the message history back to the XO Platform.
+* requestData – `requestData.baseUrl + '/getMessages?' + "skip=" + offset + "&limit=" + limit + "&userId=" + userId+"&channelType"=channel-type`, where
+    * stream_id – Bot ID accessible from the Config Settings page of the XO Platform
+    * user_id – The ID of the user whose conversation history to access
+    * skip – The number of messages to be skipped.
+    * limit – The number of messages to be shown on each page.
+    * channelType – Optional, the channel where the conversation was hosted.
+* callback – The function to call at event completion used to send the message history back to the XO Platform.
 
 **Examples**
 
@@ -538,11 +536,9 @@ sdk.clearAgentSession(requestData, callback)
 
 **Parameters:**
 
-* `requestData` – as follows: \
-`requestData.baseUrl+ '/clearAgentSession/' + requestData.requestId \
-`where
-    * `requestId` – the session id
-* `callback` – The function to call at event completion.
+* requestData – `requestData.baseUrl+ '/clearAgentSession/' + requestData.requestId`, where
+    * requestId – the session id
+* callback – The function to call at event completion.
 
 **Examples**
 
@@ -609,28 +605,28 @@ sdk.startAgentSession(requestData, callback)
 //The following function call is used in the LiveChat.js for connectToAgent() function
 //Invoking the startAgentSession before invoking the initChat function will ensure that
 // the assistant detects the Agent transfer in progress
-function connectToAgent(requestId, data, cb){
+function connectToAgent(requestId, data, cb) {
     var formdata = {};
     formdata.licence_id = config.liveagentlicense;
     formdata.welcome_message = "";
     var visitorId = _.get(data, 'channel.channelInfos.from');
-    if(!visitorId){
-       visitorId = _.get(data, 'channel.from');
-      }
+    if (!visitorId) {
+        visitorId = _.get(data, 'channel.from');
+    }
     userDataMap[visitorId] = data;
-     data.message="An Agent will be assigned to you shortly!!!";
-     sdk.sendUserMessage(data, cb);
-     sdk.startAgentSession(data, cb);
-    formdata.welcome_message = "Link for user Chat history with the assistant: "+ config.app.url +"/history/index.html?visitorId=" + visitorId;
+    data.message = "An Agent will be assigned to you shortly!!!";
+    sdk.sendUserMessage(data, cb);
+    sdk.startAgentSession(data, cb);
+    formdata.welcome_message = "Link for user Chat history with the assistant: " + config.app.url + "/history/index.html?visitorId=" + visitorId;
     return api.initChat(visitorId, formdata)
-     .then(function(res){
-     _map[visitorId] = {
-     secured_session_id: res.secured_session_id,
-     visitorId: visitorId,
-     last_message_id: 0
-    };
-   });
- }
+        .then(function(res) {
+            _map[visitorId] = {
+                secured_session_id: res.secured_session_id,
+                visitorId: visitorId,
+                last_message_id: 0
+            };
+        });
+}
 ```
 
 Post the release of ver8.0 of the Platform, you can add User, Message, and Session Meta Tags. The following would be the syntax for the necessary payload:
@@ -673,9 +669,8 @@ sdk.resetBot(requestData, callback)
 
 **Parameters:**
 
-* `requestData` – as follows: \
-`requestData.resetBotUrl`
-* `callback` – The function to call at event completion.
+* requestData – `requestData.resetBotUrl`
+* callback – The function to call at event completion.
 
 **Examples**
 
@@ -705,27 +700,27 @@ sdk.extendRequestId(requestData, callback)
 
 ```javascript
 function onBotMessage(requestId, data, cb) {
-    console.log("bot message",JSON.stringify(data));
+    console.log("bot message", JSON.stringify(data));
     var visitorId = _.get(data, 'channel.from');
-     event =  schedular.scheduleJob("*/4 * * * *", function() {
-                pub.get(visitorId+':data',function(err,reply){
-                    if(err) throw err;
-                    sdk.extendRequestId(data,cb);
-                })
+    event = schedular.scheduleJob("*/4 * * * *", function() {
+        pub.get(visitorId + ':data', function(err, reply) {
+            if (err) throw err;
+            sdk.extendRequestId(data, cb);
+        })
     });
-	}
-on_user_message: function(requestId, data, callback) { 
+}
+on_user_message: function(requestId, data, callback) {
         var visitorId = _.get(data, 'channel.from');
         registerEvent(visitorId, data);
-        if(event){
+        if (event) {
             event.cancel();
-        }else{
-            console.log(new Date(),'event not found');
+        } else {
+            console.log(new Date(), 'event not found');
         }
-        event =  schedular.scheduleJob("*/4 * * * *", function() {
-            pub.get(visitorId+':data',function(err,reply){
-                if(err) throw err;
-                    sdk.extendRequestId(data,callback);
+        event = schedular.scheduleJob("*/4 * * * *", function() {
+            pub.get(visitorId + ':data', function(err, reply) {
+                if (err) throw err;
+                sdk.extendRequestId(data, callback);
             })
         });
 ```
@@ -749,8 +744,8 @@ sdk.skipBotMessage(requestData, callback)
 
 **Parameters:**
 
-* `requestData` – data
-* `callback` – The function to call at event completion.
+* requestData – data
+* callback – The function to call at event completion.
 
 **Examples**
 
@@ -846,8 +841,8 @@ sdk.closeConversationSession(requestData, callback)
 ```
 **Parameters:**
 
-* `requestData` – data
-* `callback` – The function to call at event completion.
+* requestData – data
+* callback – The function to call at event completion.
 
 **Examples**
 

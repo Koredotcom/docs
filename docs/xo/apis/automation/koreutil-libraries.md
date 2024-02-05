@@ -150,8 +150,6 @@ context.filterActive =koreUtil._.pluck(koreUtil._.filter(users, { 'age': 36, 'ac
 
 **Output:**
 
-
-
 * For context.chunkArray: *
 ```[["a","b"],["c","d"]]```
 * For context.filterActive: *
@@ -159,31 +157,30 @@ context.filterActive =koreUtil._.pluck(koreUtil._.filter(users, { 'age': 36, 'ac
 "barney" \
 ]
 ```
-
-
 ### koreUtil.getCurrentOptions
 
-koreUtil.getCurrentOptions is a platform-offered JS library that provides utility functions to get the current template for language selection standard response options. This can be used to customize the standard response. \
+koreUtil.getCurrentOptions is a platform-offered JS library that provides utility functions to get the current template for language selection standard response options. This can be used to customize the standard response. 
 Post the release of v8.1, this function has been enhanced to return the authorization URL used in the standard response when end-user authorization is requested.
 
 Following is the return format for each of the situations:
 
 
-
-* For the language selection standard response: *
-```{"list_of_languages": [`
+* For the language selection standard response:*
+```{"list_of_languages": [
       {"title": "English","value": "English"},
       {"title": "Deutsche","value": "Deutsche"},`
       {"title": "Español","value": "Español"}`
 ]}
 ```
-* For the language ambiguity standard response: \
+
+* For the language ambiguity standard response:
 `{"current_language": "Español",`
 * `      "list_of_new_languages": [`
 * `         {"title": "English","value": "English"},`
 * `         {"title": "Deutsche","value": "Deutsche"},`
 * `         {"title": "Español","value": "Español"}`
 * `  ]}`
+
 * For the language switch standard response: \
 `{"new_language": "Español","current_language": "English"}`
 * For User authorization request standard response: \
@@ -195,208 +192,197 @@ Following are the usage examples of how the above utility can be used to render 
 
 **Usage Example 1:** To get the standard response for “_Ask if the user would like to select any of the languages_”
 
-
-
-* `var info = koreUtil.getCurrentOptions();`
-* `var message = {`
-* `  "type": "template",`
-* `  "payload": {`
-* `    "template_type": "button",`
-* `    "text": "please select your laguage",`
-* `    "subText": "Button Template Description",`
-* `    "buttons": []`
-* `    }`
-* `  };`
-* `for (i = 0; i &lt; info.list_of_languages.length; i++) {`
-* `  var button = {`
-* `    "type": "postback",`
-* `    "title": info.list_of_languages[i].title,`
-* `    "payload": info.list_of_languages[i].value`
-* `    };`
-* 
-* `  message.payload.buttons.push(button);`
-* ` }`
-* `print(JSON.stringify(message));`
+```javascript
+var info = koreUtil.getCurrentOptions();
+var message = {
+   "type": "template",
+   "payload": {
+      "template_type": "button",
+      "text": "please select your laguage",
+      "subText": "Button Template Description",
+      "buttons": []
+   }
+};
+for (i = 0; i &lt; info.list_of_languages.length; i++) {
+   var button = {
+      "type": "postback",
+      "title": info.list_of_languages[i].title,
+      "payload": info.list_of_languages[i].value
+   };
+   message.payload.buttons.push(button);
+}
+print(JSON.stringify(message));
+```
 
 **Usage Example 2:** To get the standard response for “_Ask if the user would like to switch to any of the new languages detected during a conversation_”
 
-
-
-* `var info = koreUtil.getCurrentOptions();`
-* `var message = {`
-* `    "type": "template",`
-* `    "payload": {`
-* `        "template_type": "button",`
-* `        "text": "language ambiguity response for the current language" + info.current_language,`
-* `        "subText": "Button Template Description",`
-* `        "buttons": []`
-* `    }`
-* `};`
-* `for (i = 0; i &lt; info.list_of_new_languages.length; i++) {`
-* `    var button = {`
-* `        "type": "postback",`
-* `        "title": info.list_of_new_languages[i].title,`
-* `        "payload": info.list_of_new_languages[i].value`
-* `    };`
-* 
-* `    message.payload.buttons.push(button);`
-* `}`
-* `print(JSON.stringify(message));`
+```javascript
+var info = koreUtil.getCurrentOptions();
+var message = {
+   "type": "template",
+   "payload": {
+      "template_type": "button",
+      "text": "language ambiguity response for the current language" + info.current_language,
+      "subText": "Button Template Description",
+      "buttons": []
+   }
+};
+for (i = 0; i &lt; info.list_of_new_languages.length; i++) {
+   var button = {
+      "type": "postback",
+      "title": info.list_of_new_languages[i].title,
+      "payload": info.list_of_new_languages[i].value
+   };
+   message.payload.buttons.push(button);
+}
+print(JSON.stringify(message));
+```
 
 **Usage Example 3:** To get the standard response for “_Ask if the user would like to switch to any of the new languages detected during a conversation_”
 
-
-
-* `var info = koreUtil.getCurrentOptions();`
-* `var message = {`
-* `    "type": "template",`
-* `    "payload": {`
-* `        "template_type": "button",`
-* `        "text": "would you like to switch to new language detected: current language " + info.current_language + "new language : " + info.new_language,`
-* `        "subText": "Button Template Description",`
-* `        "buttons": []`
-* `    }`
-* `};`
-* `var options = ["yes", "no"]`
-* `for (i = 0; i &lt; options.length; i++) {`
-* `    var button = {`
-* `        "type": "postback",`
-* `        "title": options[i],`
-* `        "payload": options[i]`
-* `    };`
-* `    message.payload.buttons.push(button);`
-* `}`
-* `print(JSON.stringify(message));`
+```javascript
+var info = koreUtil.getCurrentOptions();
+var message = {
+   "type": "template",
+   "payload": {
+     "template_type": "button",
+     "text": "would you like to switch to new language detected: current language " + info.current_language + "new language : " + info.new_language,
+     "subText": "Button Template Description",
+     "buttons": []
+   };
+};
+var options = ["yes", "no"]
+for (i = 0; i &lt; options.length; i++) {
+   var button = {
+      "type": "postback",
+      "title": options[i],
+      "payload": options[i]
+   };
+   message.payload.buttons.push(button);
+}
+print(JSON.stringify(message));
+```
 
 **Usage Example 4:** To get the standard response for “_User needs to authorize or re-authorize_”
 
-
-
-* `var info = koreUtil.getCurrentOptions();`
-* 
-* `var message = {`
-* `    type: 'template',`
-* `    payload: {`
-* `        template_type: 'button',`
-* `        text: 'Please authorize before we continue...',`
-* `        buttons: [`
-* `            {`
-* `                type: 'url',`
-* `                title: 'Click here to authorize',`
-* `                url: info.authorizationURL`
-* `            }`
-* `        ]`
-* `    }`
-* `};`
-* 
-* `print(JSON.stringify(message));`
-
+```javascript
+var info = koreUtil.getCurrentOptions();
+var message = {
+   type: 'template',
+   payload: {
+      template_type: 'button',
+      text: 'Please authorize before we continue...',
+      buttons: [
+      {
+         type: 'url',
+         title: 'Click here to authorize',
+         url: info.authorizationURL
+      }
+      ]
+   }
+};
+print(JSON.stringify(message));`
+```
 
 ### koreUtil.getAmbiguousIntents
 
-The `koreUtil.getAmbiguousIntents` util function is used to obtain the ambiguous intents list when the [Ambiguity Intents Identified](https://developer.kore.ai/docs/bots/bot-intelligence/event-based-bot-actions/#Ambiguous_Intents_Identified_Event) event gets triggered. Along with the list of ambiguous intents, the retrieved context object contains additional details such as ambiguity reasons – ‘multiple definite intents’, ‘multiple intents with similar scores’, etc., and the engine name that detects the intent (ML, FM, or KG), the score given by the respective engines, and so on. The [Ranking and Resolver](https://developer.kore.ai/docs/bots/nlp/nlp-detection/) score is displayed wherever available.
+The `koreUtil.getAmbiguousIntents` util function is used to obtain the ambiguous intents list when the [Ambiguity Intents Identified](../../automation/intelligence/event-handling/#ambiguous-intents-identified-event) event gets triggered. Along with the list of ambiguous intents, the retrieved context object contains additional details such as ambiguity reasons – ‘multiple definite intents’, ‘multiple intents with similar scores’, etc., and the engine name that detects the intent (ML, FM, or KG), the score given by the respective engines, and so on. The [Ranking and Resolver](../../automation/natural-language/training/ranking-and-resolver) score is displayed wherever available.
 
-**Usage Example \
-**You can use the `koreUtil.getAmbiguousIntents()` function in the entity prompt or any other node to obtain the list of ambiguous intents.
+**Usage Example**
+You can use the `koreUtil.getAmbiguousIntents()` function in the entity prompt or any other node to obtain the list of ambiguous intents.
 
 **Sample Response**
 
-
-```
+```json
 {
 "intents": [
-{
-"intent": "Transfer Money",
-"name": "Transfer Money",
-"intentType": "dialog",
-"mlScore": 100,
-"rrScore": 7980,
-"identifyingEngines": {
-"ml": true
-}
-},
-{
-"intent": "Pay Bills",
-"name": "Pay Bills",
-"intentType": "dialog",
-"rrScore": 0,
-"identifyingEngines": {
-"traits": true
-}
-},
-{
-"intent": "Status of Funds Transfer",
-"name": "Status of Funds Transfer",
-"intentType": "dialog",
-"fmScore": 5330,
-"rrScore": 5330,
-"identifyingEngines": {
-"fm": true
-}
-},
-{
-"PrimaryQuestion": "How to Send Money",
-"MatchedQuestion": "How to Send Money",
-"intentType": "FAQ",
-"faqScore": 100,
-"rrScore": 7960,
-"faqDemystification": {
-"path": [
-"Money Transfer"
-]
-},
-"identifyingEngines": {
-"faq": true
-}
-}
+   {
+      "intent": "Transfer Money",
+      "name": "Transfer Money",
+      "intentType": "dialog",
+      "mlScore": 100,
+      "rrScore": 7980,
+      "identifyingEngines": {
+         "ml": true
+         }
+   },
+   {
+      "intent": "Pay Bills",
+      "name": "Pay Bills",
+      "intentType": "dialog",
+      "rrScore": 0,
+      "identifyingEngines": {
+         "traits": true
+      }
+   },
+   {
+      "intent": "Status of Funds Transfer",
+      "name": "Status of Funds Transfer",
+      "intentType": "dialog",
+      "fmScore": 5330,
+      "rrScore": 5330,
+      "identifyingEngines": {
+         "fm": true
+      }
+   },
+   {
+      "PrimaryQuestion": "How to Send Money",
+      "MatchedQuestion": "How to Send Money",
+      "intentType": "FAQ",
+      "faqScore": 100,
+      "rrScore": 7960,
+      "faqDemystification": {
+         "path": [
+            "Money Transfer"
+         ]
+      },
+      "identifyingEngines": {
+         "faq": true
+      }
+   }
 ],
 "cause": "multipleChoices",
 "userInput": "How do I make a payment or transfer"
 };
 ```
 
-
 In this response, we obtain the details of multiple ambiguous intents from different engines.
 
-The type of intent is captured in the `intentType`object. For example, `Status of Funds Transfer` is a Dialog-type intent, and `How to Send Money` is a FAQ-type intent. The identifying engine for that respective intent and the confidence scores assigned by the engines for the intents are captured. For example, for the intent `Transfer Money`, the `mlScore`is 100. The `rrScore`is the [Ranking and Resolver](https://developer.kore.ai/docs/bots/nlp/nlp-detection/) score for the winning intent. The object `faqDemystification`provides the bot path for the FAQ. The user input and the cause for the ambiguous intents are also captured.
+The type of intent is captured in the `intentType`object. For example, `Status of Funds Transfer` is a Dialog-type intent, and `How to Send Money` is a FAQ-type intent. The identifying engine for that respective intent and the confidence scores assigned by the engines for the intents are captured. For example, for the intent `Transfer Money`, the `mlScore`is 100. The `rrScore`is the [Ranking and Resolver](../../automation/natural-language/training/ranking-and-resolver) score for the winning intent. The object `faqDemystification`provides the bot path for the FAQ. The user input and the cause for the ambiguous intents are also captured.
 
 
 ### koreUtil.getSessionId
 
 koreUtil.getSessionId is a Platform offered JS library for obtaining the current conversation session Id.
 
-**Usage Example: \
-`var sessionId = koreUtil.getSessionId();`**
+**Usage Example:**
+`var sessionId = koreUtil.getSessionId();`
 
 **Output:**
 
-
-
-* For sessionId: \
+For sessionId:
 `5x54321x11xx87654321xx12`
-
 
 ### koreUtil.getSunshineConversationsMetadata
 
-The XO Platform captures and stores the metadata sent as part of the Pass control action that routes the conversation to the bot via Switchboard integration API in Zendesk. Developers can use the `koreUtil.getSunshineConversationsMetadata()` function to access the stored metadata. For more information, read the [Switchboard Integration](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-sunshine-conversations-channel/#Switchboard_Integration_for_Agent_Handoff) section.
+The XO Platform captures and stores the metadata sent as part of the Pass control action that routes the conversation to the bot via Switchboard integration API in Zendesk. Developers can use the `koreUtil.getSunshineConversationsMetadata()` function to access the stored metadata. For more information, read the [Switchboard Integration](../../channels/add-sunshine-conversations-channel/#switchboard-integration-for-agent-handoff) section.
 
 The **koreUtil.getSunshineConversationsMetadata** function can be used by a bot developer to access the metadata captured in any node.
 
-**Usage Example: \
+**Usage Example:
 `koreUtil.getSunshineConversationsMetadata();`**
 
 **Output:**
 
-
-```
+```json
 {
 "dataCapture.systemField.tags" : "TransferToBot",
 "dataCapture.systemField.priority" : "high"
 }
 ```
 
-
-**Note**: The **koreUtil.getSunshineConversationsMetadata** is supported in the Platform v10.1.9 and above versions.
+!!!note
+   The **koreUtil.getSunshineConversationsMetadata** is supported in the Platform v10.1.9 and above versions.
 
 
 ### koreUtil.ClearAuthProfiles
@@ -408,12 +394,14 @@ The `koreUtil.ClearAuthProfiles` is a Platform function to clear tokens associat
 Example : To clear one or more authorization profile:
 
 
-```
+```javascript
 koreUtil.ClearAuthProfiles([Auth_Profle_Name]);
 ```
 
-
-Example: `koreUtil.ClearAuthProfiles(["Auth_openai", "Auth_hubspot"]);`
+Example:
+```javascript
+koreUtil.ClearAuthProfiles(["Auth_openai", "Auth_hubspot"]);
+```
 
 
 ### koreUtil.ClearAllAuthProfiles
@@ -425,11 +413,9 @@ The `koreUtil.ClearAllAuthProfiles` is a Platform function to clear tokens assoc
 Example : To clear all authorization profiles:
 
 
-```
+```javascript
 koreUtil.ClearAllAuthProfiles ( );
 ```
-
-
 
 ### koreUtil.closeConversationSession
 
@@ -437,24 +423,23 @@ koreUtil.closeConversationSession is a Platform function for force closing any a
 
 **Usage Example:**
 
-
-```
+```javascript
 koreUtil.closeConversationSession();
 ```
-
-
 **Output:**
 
 No response is returned and the session ends.
 
-**Note**: The koreUtil.closeConversationSession is supported in the Platform v8.1 and above versions.
+!!!note
+   The koreUtil.closeConversationSession is supported in the Platform v8.1 and above versions.
 
 
 ### koreUtil.autoTranslate
 
-koreUtil.autotranslate is a Platform function that lets you automatically translate the virtual assistant response from a language in which the assistant is configured to the language in which the user is interacting or a language of your choice. This function uses a translation engine to translate the bot responses into user input language. For more information on how to configure a translation engine, [refer here](https://developer.kore.ai/docs/bots/advanced-topics/multi-lingual/managing-translation-services/).
+koreUtil.autotranslate is a Platform function that lets you automatically translate the virtual assistant response from a language in which the assistant is configured to the language in which the user is interacting or a language of your choice. This function uses a translation engine to translate the bot responses into user input language. For more information on how to configure a translation engine, [refer here](../../app-settings/language-management/managing-translation-services).
 
-**Note: **To use the `koreUtil.autoTranlsate`function for language translation, you must have the Access Key provided by your translation service provider, such as Google Translator, Microsoft Translator, etc.
+!!!note
+   To use the `koreUtil.autoTranlsate`function for language translation, you must have the Access Key provided by your translation service provider, such as Google Translator, Microsoft Translator, etc.
 
 Please refer below for the translation behavior:
 
@@ -501,11 +486,9 @@ You can use the AutoTranslation function inside the JavaScript to define the par
 
 **Usage Example:**
 
-
-```
+```javascript
 koreUtil.autoTranslate();
 ```
-
 
 Here are a few use-case examples for your reference:
 
@@ -514,26 +497,24 @@ Here are a few use-case examples for your reference:
 **Example:**
 
 
-```
+```javascript
 {{koreUtil.autoTranslate('Welcome! I am a virtual assistant powered by ')}} General Insurance
 ```
-
-
 **Output in Serbian**
 
 
-```
+```javascript
 Добредојдовте! Јас сум виртуелен асистент напојуван од General Insurance
 ```
-
 
 **Use Case-2:**To translate the content of a customized JavaScript template, then use koreUtil.autoTranslate as follows:
 
 **Example:**
 
-
-```
-var accountBalance = getbalance(); var message = koreUtil.autoTranslate("Your account balance is "); var message = message.concat(env.currency, ' ', accountBalance); print(message);
+```javascript
+var accountBalance = getbalance(); 
+var message = koreUtil.autoTranslate("Your account balance is "); 
+var message = message.concat(env.currency, ' ', accountBalance); print(message);
 ```
 
 
@@ -544,16 +525,15 @@ var accountBalance = getbalance(); var message = koreUtil.autoTranslate("Your ac
 Баланс вашего счета USD 5,278.00
 ```
 
-
 **Use Case-3:** To translate the bot responses in a particular language by passing the language code. An example where the assistant will respond only in German even though the user is interacting in any language:
 
 **Example**
 
 
+```javascript
+var message = koreUtil.autoTranslate("This is a sample message", "de");
+print(message);
 ```
-var message = koreUtil.autoTranslate("This is a sample message", "de");print(message);
-```
-
 
 **Output in German**
 
@@ -562,12 +542,6 @@ var message = koreUtil.autoTranslate("This is a sample message", "de");print(mes
 Dies ist eine Beispielnachricht
 ```
 
-
-
 #### Related Link
 
-
-
-* **[Script Node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-script-node/)** (Write JavaScript code in a dialog task)
-* 
-* 
+* **[Script Node](../../automation/use-cases/dialogs/node-types/working-with-the-script-node)** (Write JavaScript code in a dialog task)
