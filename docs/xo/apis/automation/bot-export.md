@@ -249,7 +249,7 @@ Usage:
 </table>
 
 
-To learn more about the optional parameters for partial import and dependent tasks, please click [here](/docs/xo/manage-assistant/bot-management/#exporting-an-assistant).
+To learn more about the optional parameters for partial import and dependent tasks, please click [here](../../manage-assistant/bot-management/#exporting-an-assistant).
 
 
 ## Sample Response
