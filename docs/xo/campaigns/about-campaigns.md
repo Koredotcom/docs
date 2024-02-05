@@ -22,7 +22,7 @@ The Campaigns module simplifies and enhances outbound marketing efforts across v
     </kr-grid-item>
     <kr-grid-item>
         <img src="../images/module-icon.svg" style="zoom:200%;"></img>
-        <kr-grid-title>Dashboard</kr-grid-title>
+        <kr-grid-title>Dashboard and Reports</kr-grid-title>
         <kr-grid-desc>Get a snapshot of all your campaigns—whether they're active, inactive, or completed. This centralized overview allows for easy monitoring and management. Dive into detailed insights with comprehensive analytics and reporting. </kr-grid-desc>
         <a href="">Learn More</a>
     </kr-grid-item>           
