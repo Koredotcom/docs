@@ -287,9 +287,20 @@ nav:
       - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
       - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md
     - Configurations:
+      - AgentAssist Settings: contactcenter/configurations/agentassist-settings/agentassiat-settings.md
       - Default Flows: contactcenter/configurations/default-flows/configure-default-flows.md 
-      - Routing: contactcenter/configurations/default-flows/configure-default-flows.md 
-      - Hour of Operations: contactcenter/configurations/default-flows/configure-default-flows.md       
+      - Email Inbox Config: contactcenter/configurations/email-inbox-config/configure-emails.md 
+      - Hours of Operation: contactcenter/configurations/hours-of-operation/manage-hours-of-operation.md
+      - Languages and Speech: contactcenter/configurations/languages-and-speech/configure-languages-and-speech.md
+      - Response Templates: contactcenter/configurations/response-templates/manage-response-templates.md
+      - Secure Forms: contactcenter/configurations/secure-forms/configure-secure-forms.md
+      - Surveys: contactcenter/configurations/surveys/configure-surveys.md
+      - Widgets: contactcenter/configurations/widgets/configure-widgets.md
+    - Flows and Routing:
+      - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
+    - Routing:
+      - Queues: contactcenter/routing/queues/queue-management.md
+      - Skills: contactcenter/routing/skills/skill-management.md
   - AgentAssist:
     - Overview: agentassist/about-agentassist.md 
     - Agent Experience:
