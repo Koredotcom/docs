@@ -27,7 +27,7 @@ To get the list of KG Extraction Questions.
    </td>
    <td><code>auth: {{YOUR_JWT_ACCESS_TOKEN}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -165,3 +165,4 @@ No body parameters are passed.
         }
     ]
 }
+```

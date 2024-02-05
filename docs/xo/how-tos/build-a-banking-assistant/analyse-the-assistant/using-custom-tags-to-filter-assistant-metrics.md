@@ -1,4 +1,4 @@
-# Using Custom Tags to filter Assistant Metrics
+# Using Custom Tags to Filter Assistant Metrics
 
 In this How-To, we will explore a scenario in a Banking Bot, where, various metrics will be used to analyze the bot performance.
 

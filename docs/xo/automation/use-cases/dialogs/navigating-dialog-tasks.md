@@ -145,7 +145,7 @@ You can access them by creating a new Dialog Task or by opening an existing one.
 
         This guide is applicable for the new, Conversation-Driven Dialog Builder. If your tasks are using the previous version, please consider upgrading.
 
-You can build Dialogs by adding and configuring [nodes](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/nodes-transitions/){:target="_blank"} in the required sequence as per business logic in the Dialog Builder.
+You can build Dialogs by adding and configuring [nodes](../node-types/nodes-transitions/){:target="_blank"} in the required sequence as per business logic in the Dialog Builder.
 
 
 ### Design the Conversation Flow
