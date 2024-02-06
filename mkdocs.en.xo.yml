@@ -343,6 +343,11 @@ nav:
       - Secure Forms: contactcenter/configurations/secure-forms/configure-secure-forms.md
       - Surveys: contactcenter/configurations/surveys/configure-surveys.md
       - Widgets: contactcenter/configurations/widgets/configure-widgets.md
+    - Flows and Routing:
+      - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
+    - Routing:
+      - Queues: contactcenter/routing/queues/queue-management.md
+      - Skills: contactcenter/routing/skills/skill-management.md
   - AgentAI:
     - Overview: agentassist/about-agentassist.md 
     - Agent Experience:
