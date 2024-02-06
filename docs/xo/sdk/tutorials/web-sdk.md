@@ -180,13 +180,13 @@ botOptions.botInfo = {name:"<bot_name>",
 
 
 
-### _Passing Mapped Identities_
+### Passing Mapped Identities
 
-_The Web/Mobile SDKs support the passing of mapped identities of the users when they switch from one identity to another while interacting with the bot. This process allows the users to continue any ongoing conversation initiated using a previous identity. \
-For example, a user may have started a conversation with the bot using an anonymous or randomly generated identity. After exchanging a few messages, the user may become an authenticated or known user by logging into your website or any application. At this point, the user’s known identity can be passed to the bot from the SDK as part of the ‘[JWT Grant API](https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/#About_JWT)’ call using the parameter identityToMerge. The Platform uses this information to merge the user identities and allows the user to resume an ongoing conversation using the new known identity._
+The Web/Mobile SDKs support the passing of mapped identities of the users when they switch from one identity to another while interacting with the bot. This process allows the users to continue any ongoing conversation initiated using a previous identity. \
+For example, a user may have started a conversation with the bot using an anonymous or randomly generated identity. After exchanging a few messages, the user may become an authenticated or known user by logging into your website or any application. At this point, the user’s known identity can be passed to the bot from the SDK as part of the ‘[JWT Grant API](../sdk-security/#about-jwe-token)’ call using the parameter identityToMerge. The Platform uses this information to merge the user identities and allows the user to resume an ongoing conversation using the new known identity.
 
 
-```
+```json
 {
  "iat": 1611810186883,
  "exp": 1611813786.883,
@@ -198,55 +198,58 @@ For example, a user may have started a conversation with the bot using an anonym
 }
 ```
 
+The following scenarios describe the bot's behavior when dealing with the new identity and merged identity:
 
-_The following scenarios describe the bot's behavior when dealing with the new identity and merged identity:_
+* When both the new and merged identities are not present in the system, then the new identity is created and a new conversation is started using new identity.
+* When the new identity is present but the merged identity is not present in the system, then the conversation is started or continued (in case of an active session) using new identity.
+* When the merged identity is present but the new identity is not present in the system, then the new identity is created and the conversation is continued using the new identity. All references to the merged identity are replaced with the new identity and the merged identity is removed.
+* When both the merged identity and the new identity are present in the system and the new identity does not have an active session, then the conversation is continued using the new identity. All references to the merged identity are replaced with the new identity and the merged identity is removed.
+* When both the merged identity and the new identity are present in the system and both have an active session, then the merged identity’s conversation is continued using the new identity. All references to the merged identity are replaced with the new identity and the merged identity is removed. The active session of the new identity is marked as “Drop-off” and closed.
 
+Due to the above-mentioned behavior in the user identity following changes can be seen:
 
+* Analytics and Chat History will be updated associating all the sessions related to the merged identity with the new identity.
+* The session data is updated replacing the merged identity with the new identity.
+* The Billing Session tracking merged identity’s conversation will be marked as a new identity.
 
-* _When both the new and merged identities are not present in the system, then the new identity is created and a new conversation is started using new identity_
-* _When the new identity is present but the merged identity is not present in the system, then the conversation is started or continued (in case of an active session) using new identity_
-* _When the merged identity is present but the new identity is not present in the system, then the new identity is created and the conversation is continued using the new identity. All references to the merged identity are replaced with the new identity and the merged identity is removed._
-* _When both the merged identity and the new identity are present in the system and the new identity does not have an active session, then the conversation is continued using the new identity. All references to the merged identity are replaced with the new identity and the merged identity is removed._
-* _When both the merged identity and the new identity are present in the system and both have an active session, then the merged identity’s conversation is continued using the new identity. All references to the merged identity are replaced with the new identity and the merged identity is removed. The active session of the new identity is marked as “Drop-off” and closed_
+### Custom Meta Tags via web SDK
 
-_Due to the above-mentioned behavior in the user identity following changes can be seen:_
-
-
-
-* _Analytics and Chat History will be updated associating all the sessions related to the merged identity with the new identity_
-* _The session data is updated replacing the merged identity with the new identity_
-* _The Billing Session tracking merged identity’s conversation will be marked as a new identity_
-
-
-### _Custom Meta Tags via web SDK_
-
-_With the release of ver8.0 of the platform, you can directly add Custom Meta Tags from all supported internal channels (Web SDK/IVR / IVRVoice / Webhook channels). You can define Session, User, and Message level meta-tags. These tags will be added to the Conversation Session as soon as it is created._
+With the release of ver8.0 of the platform, you can directly add Custom Meta Tags from all supported internal channels (Web SDK/IVR / IVRVoice / Webhook channels). You can define Session, User, and Message level meta-tags. These tags will be added to the Conversation Session as soon as it is created.
 
 
+```javascript
+botOptions.botInfo = {
+    name: "<bot_name>",
+    "_id": "<bot_id",
+    customData: {
+        "name": "John"
+    },
+    "metaTags": {
+        "messageLevelTags": [{
+            "name": "tag1",
+            value: "message"
+        }],
+        "sessionLevelTags": [{
+            "name": "tag2",
+            value: "session"
+        }],
+        "userLevelTags": [{
+            "name": "tag3",
+            value: "user"
+        }]
+    }
+};
 ```
-botOptions.botInfo = {name:"<bot_name>", "_id":"<bot_id",
-                           customData :{"name":"John"},
-                           "metaTags": { 
-                                 "messageLevelTags": [{ "name": "tag1", value: "message"}],
-                                 "sessionLevelTags": [{ "name": "tag2", value: "session"}],
-                                 "userLevelTags": [{ "name": "tag3", value: "user"}]
-                                 }  
-                          };
-```
 
+### Some commonly encountered errors
 
+* A wrong URL is given in index.html, users see a 404 error. Double-check the URL. URL changes depending on whether you are hosting the bot on your web SDK or Kore’s web SDK. If it is Kore web SDK, then the URL is `http://demo.kore.net:3000/users/sts 7`.
+If you are hosting on your in-house web SDK, then provide the respective URL.
+* `missing/Invalid jwt.sub()`: This error occurs for enterprise Bots, when the user’s email id is not given in the index.html file. Provide users identity as shown below in index.html.
+`botOptions.userIdentity = 'x@gmail.com';// Provide users email id here.`
+*`Not found`: The user sees this error when either the wrong clientID or no clientID is given. Check the correct ClientID from the Bot – API Extensions option.
+`botOptions.clientId = "{clientID}"; // secure client-id`
+*`error verifying the jwt`: the Wrong clientSecret is given in index.html: Check the correct clientSecret you get from Bot – API Extensions option
+`"clientSecret": "{clientSecret}" //provide clientSecret here`.
 
-### _Some commonly encountered errors_
-
-
-
-* _A wrong URL is given in index.html, users see a 404 error. Double-check the URL. URL changes depending on whether you are hosting the bot on your web SDK or Kore’s web SDK. If it is Kore web SDK, then the URL is <code>http://demo.kore.net:3000/users/sts 7</code>. \
-If you are hosting on your in-house web SDK, then provide the respective URL.</em>
-* <em>missing/Invalid jwt.sub(): This error occurs for enterprise Bots, when the user’s email id is not given in the index.html file. Provide users identity as shown below in index.html \
-<code>botOptions.userIdentity = 'x@gmail.com';// Provide users email id here.</code></em>
-* <em>Not found: The user sees this error when either the wrong clientID or no clientID is given. Check the correct ClientID from the Bot – API Extensions option \
-<code>botOptions.clientId = "{clientID}"; // secure client-id</code></em>
-* <em>error verifying the jwt: the Wrong clientSecret is given in index.html: Check the correct clientSecret you get from Bot – API Extensions option \
-<code>"clientSecret": "{clientSecret}" //provide clientSecret here</code></em>
-
-<em>After you install and test the Web SDK using the test application and your local host server, you can use the same concept to install and configure the Web SDK in your enterprise application. You will just need to reconfigure the file paths and URLs in the index.html file of the Web SDK to point to your website and servers and configure a Kore.ai bot for the Web/Mobile Client channel with JWT credentials for your enterprise.</em>
+After you install and test the Web SDK using the test application and your local host server, you can use the same concept to install and configure the Web SDK in your enterprise application. You will just need to reconfigure the file paths and URLs in the index.html file of the Web SDK to point to your website and servers and configure a Kore.ai bot for the Web/Mobile Client channel with JWT credentials for your enterprise.
