@@ -326,7 +326,7 @@ nav:
             - Import or Export KG: answers/knowledge-ai/import-and-export-knowledge-graph.md
             - Auto-Generate KG: answers/knowledge-ai/generate-a-knowledge-graph.md
           - KG Analysis: answers/knowledge-ai/knowledge-graph-analysis.md       
-    - Content Sources: answers/content-sources/introduction.md
+    - Content Sources:
       - Overview: answers/content-sources/introduction.md 
       - Web Crawl: answers/content-sources/web-crawl.md  
       - Directory: answers/content-sources/directory.md 
