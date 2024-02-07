@@ -6,12 +6,9 @@ You can use the score to help assess the user input and direct the flow of the c
 
 For example, if the tone score indicates a user is angry or sad, you want to transition the conversation to a live agent. In a dialog task, you can access the tone score from the `Context` object or you can configure events to be triggered, from the <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/sentiment-management/sentiment-management-overview/" target="_blank">Sentiment Management</a> option under **Intelligence**.
 
-
 ## Tones Types
 
 The Kore.ai XO Platform evaluates user inputs to find the following six possible emotions:
-
-
 
 * angry
 * disgust
@@ -54,8 +51,6 @@ For example, a user’s utterance, _I am extremely disappointed_, returns a high
 The value of the base tone and modifiers are used to calculate the final tone score for each tone emotion. The tone analyzer compiles all base tones based on the tone emotion type and then calculates the average score of each tone emotion type in the current dialog task node and the tone total score since the last reset.
 
 Tone results are returned as `Context` object variables as:
-
-
 
 * `message_tone` – An array of recognized tone emotions and scores for the current node in a dialog task.
 * `dialog_tone` – An array of average recognized tone emotions and scores for the entire conversation session. This value is reset at the end of each conversation session.
@@ -171,7 +166,7 @@ The syntax for the concept name is: ~tone-&lt;tonename>-&lt;level>, where &lt;to
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Apart from the basic tone words, sentiment analysis also uses words that can increase or decrease intensity, like "very" or "extremely". However, you don't have to add different phrases covering all the possibilities for various levels. Just add a basic tone word, and these intensifiers will adjust the level automatically.</p>
+<p>Apart from the basic tone words, sentiment analysis also uses words that can increase or decrease intensity, like "very" or "extremely." However, you don't have to add different phrases covering all the possibilities for various levels. Just add a basic tone word, and these intensifiers will adjust the level automatically.</p>
 </div>
 
 The following are some examples of words that can be mapped to relevant concepts.

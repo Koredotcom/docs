@@ -73,7 +73,7 @@ kr-grid[type="g1"] kr-grid-title{
     display: block;
     font-weight: 600;
     margin: 15px 0px 0px 0px;
-    color: #0000008a;
+    color: var(--md-default-fg-color--light);
     font-size: 18px;        
 }
 kr-grid[type="g1"] kr-grid-desc{
@@ -86,7 +86,7 @@ kr-grid[type="g1"] kr-grid-desc{
 kr-grid[type="g2"] {
     grid-gap: 0.8rem;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(auto-fit,minmax(12rem,1fr));
     margin: 1em 0;
 }
 kr-grid[type="g2"] kr-grid-item{
@@ -112,7 +112,7 @@ kr-grid[type="g2"] kr-grid-title{
     display: block;
     font-weight: 600;
     margin: 15px 0px 0px 0px;
-    color: #0000008a;
+    color: var(--md-default-fg-color--light);
     font-size: 18px;        
 }
 kr-grid[type="g2"] kr-grid-desc{
@@ -127,3 +127,12 @@ kr-grid[type="g2"] kr-grid-desc{
     max-height: 20rem;
 }
 /* end: code block max height */
+
+@media only screen and (max-device-width: 550px){
+    kr-grid[type="g2"] kr-grid-item{
+        border: 2px solid #eee;
+    }
+    kr-grid[type="g1"] kr-grid-item{
+        border: 2px solid #eee;
+    }
+}

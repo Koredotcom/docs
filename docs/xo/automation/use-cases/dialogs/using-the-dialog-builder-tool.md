@@ -5,423 +5,441 @@ The Dialog Builder is where you can create your Dialog Tasks, from end-to-end. T
 
 ## Create a Dialog Task
 
-To create a dialog task, you must have already created an assistant to add a dialog task to. See [Create Your First Assistant](https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/){:target="_blank"} for more information.
+To create a dialog task, you must have already created an assistant to add a dialog task to. See [Create Your First Assistant](../../../building-a-virtual-assistant){:target="_blank"} for more information.
 
 To add a dialog task, follow the steps below:
 
+
+
 1. Open the assistant for which you want to create the dialog task.
-2. Select the **Build** tab from the top menu.
-3. From the left menu, click **Conversational Skills > Dialog Tasks**.
-4. On the Dialog Tasks page, click the **Create Dialog** button.  
-    <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>  
-  
-    ![alt_text](images/image1.png "image_tooltip")
+2. Click the **Automation** icon on the left menu.
+3. The Automation menu opens, and the **Dialogs** page is open by default.
+4. On the Dialogs page, click the **Create Dialog** button.
 
-5. The Dialog Builder now displays the root intent component.
-6. Enter a name for the dialog task in the **Intent Name** field. As the field label states, the name should reflect the user intent you want to achieve with this Dialog Task. Optionally, you can add a **description**.
-7. You can add user utterances that should trigger this intent, using the **Intent Training** field. You may add this data later, from the user intent node that is generated within this task.
-8. If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../../../app-settings/integrations/actions/actions){:target="_blank"}.
+    <img src="../images/using-dialog-builder-img1-create-dialog.png" alt="Dialogs" title="Dialogs" style="border:1px solid gray; zoon:60%;">
 
-    1. Click and expand **More Options** to set additional options for _Intent Settings_, _Analytics – Containment Type_ and _Conversation Context_.
-    2. **Set additional options**
-        1. Set the task to be independent or a **sub-intent dialog.**
-        2. **Hide from help** requests by the user.
-        3. Specify the context tags as **intent preconditions** – this will ensure that the intent would be detected only when the context tag is present.
-        4. Set the **Context Output** and define the context tags to set when this intent is initiated.
-        5. If you are using the legacy Dialog Builder please select **Create Using the New Conversation Driven Dialog Builder** which was introduced in ve r9.0 of the Platform. This is the default setting and recommended. If you do not select this option, you will be prompted to **Upgrade** whenever you open the dialog task.
-    
-    3. Click **Proceed**.  
-        <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>  
-      
-        ![alt_text](images/image2.png "image_tooltip")
+5. The **Create Dialog** window appears; from here you can choose to **Create a dialog from scratch**, **Use Generative AI** to create a dialog, or **Choose a pre built dialog template** with integrations to create a dialog.
+6. Click on **Start From Scratch.**
 
-Now, you are ready to add nodes and establish transitions between these nodes for your workflow. [Click here to know about Nodes & Connections](../node-types/nodes-transitions/){:target="_blank"}.
+    <img src="../images/using-dialog-builder-img2-create-dialog-scratch.png" alt="Start dialog building From Scratch" title="Start dialog building From Scratch" style="border:1px solid gray; zoon:60%;">
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+7. Provide an **Intent Name** (mandatory) and **Description** (Optional).
+8. You can choose whether the new dialog will be available to the end customer **(Customer Use Case)** and/or in Agent Assist **(AgentAssist Use Case)**
+9. Under **Intent Settings**,set options for the task to be independent, a **Sub-intent dialog** or **Hide it from Help.**
+10. Under **Analytics - Containment type**, you can choose between **Abandonment as Self Service** and **Abandonment as Drop Off**.
+11. Also optionally, you can adjust **Conversation Context**, set **Intent Preconditions** or define **Context Output**.
+12. Click **Proceed**.
 
-![alt_text](images/image3.png "image_tooltip")
+    <img src="../images/using-dialog-builder-img3-create-dialog-scratch-details.png" alt="Start dialog building From Scratch - Details" title="Start dialog building From Scratch - Details" style="border:1px solid gray; zoon:60%;">
+
+This will open the Dialog Builder with the canvas containing the root intent. Now, you are ready to add nodes and establish transitions between these nodes for your workflow.
+
+<img src="../images/using-dialog-builder-img4-scratch-dialog-created.png" alt="Dialog Builder canvas with Root Intent" title="Dialog Builder canvas with Root Intent" style="border:1px solid gray; zoon:60%;">
+
+[Click here to know about Nodes & Connections](../node-types/nodes-transitions/){:target="_blank"}.
+
+## Auto-Generated Dialog Tasks 
 
 
+### Introduction
 
-### Auto-Generated Dialog Tasks 
-
-
-#### Introduction
-
-This feature auto-generates dialog flows using the VA’s purpose and intent description provided during task creation. The Platform uses LLM and generative AI to create suitable Dialog Tasks for Conversation Design, Logic Building, and Training by including the required nodes in the flow. This helps simplify and shorten the development process and suggests possible pathways that developers might not think otherwise.
-
-To enable this feature, you must turn on **[LLM and Generative AI](https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/){:target="_blank"}**, and **Automatic Dialog Task Generation** under **Buld > Natural Language > Advanced NLU Settings**.
+This feature auto-generates dialog flows using the app’s purpose and intent description provided during task creation. The Platform uses **Generative AI** or **Pre Built Templates** to create suitable Dialog Tasks for Conversation Design, Logic Building, and Training by including the required nodes in the flow. This helps simplify and shorten the development process and suggests possible pathways that developers might not think otherwise.
 
 The nodes and the flow for the Business Logic are automatically built for your conversation, and you only need to configure the flow transition.
 
 The Platform auto-defines the _Entities, Prompts, Error Prompts, Bot Action nodes, Service Tasks, Request Definition_, and other parameters.
 
 
-#### Auto-Generate Dialog Tasks 
+### Auto-Generate Dialog Tasks using Gen AI
 
-If you have enabled LM and Generative AI features and Automatic Dialog Task Generation, you will see a **Conversation Preview** window right after creating your Dialog Task. In this window, you can create mock conversations and convert them into dialog flows for every intent. 
+You will see a **Conversation Preview** window right after creating your Dialog Task. In this window, you can see mock conversations and convert them into dialog flows for every intent. 
 
-1. Start by adding a meaningful description that states the purpose of the Dialog Task and provides example intents.
-2. Click **Generate** when ready.
-    <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+1. Click the **Gen Ai** option.
 
-    ![alt_text](images/image4.png "image_tooltip")
+    <img src="../images/using-dialog-builder-img5-create-dialog-genai.png" alt="Select Gen Ai" title="Select Gen Ai" style="border:1px solid gray; zoon:60%;">
 
-3. Wait a few moments until the Platform generates dialog flows for your specified intents. When done, you see a mock conversation based on which dialog flows will be generated afterward. You can preview the conversation flow, view the Bot Actions taken, improvise the intent description, and **Regenerate** the conversation if needed.
-4. Click **Generate Dialog Task** when the mock conversation looks good.  
-    <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+2. Provide **Intent Name** (mandatory) and a meaningful **Description** that states the purpose of the Dialog Task, and click **Generate**.
 
-    ![alt_text](images/image5.png "image_tooltip")
+    <img src="../images/using-dialog-builder-img6-create-dialog-genai-generate.png" alt="Gen Ai - Generate" title="Gen Ai - Generate" style="border:1px solid gray; zoon:60%;">
 
-5. Once you generate the Dialog Task, the canvas is populated with nodes corresponding to the mock conversation. You can customize the flow per your requirements by editing the generated nodes and adding your own. You can configure the generated Dialog Tasks just like any other dialog task. Keep reading to learn more.  
-    <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+3. You can see a Preview of the AI generated dialog flow.
 
-    ![alt_text](images/image6.png "image_tooltip")
+    <img src="../images/using-dialog-builder-img7-create-dialog-genai-preview.png" alt="Preview of AI generated dialog" title="Preview of AI generated dialog" style="border:1px solid gray; zoon:60%;">
+
+4. You can regenerate the dialog by changing the description and clicking **Regenerate**.
+
+    !!! Note 
+ 
+	    Providing a relevant description is reccommended. Dialog will be generated, but with **only the error prompt,** if no description is provided. 
+ 
+    <img src="../images/using-dialog-builder-img8-create-dialog-genai-regenerate.png" alt="Regenerate AI generated dialog" title="Regenerate AI generated dialog" style="border:1px solid gray; zoon:60%;"> 
+
+5. Click **Proceed** when you are satisfied with the preview.  
+ 
+    <img src="../images/using-dialog-builder-img9-create-dialog-genai-proceed.png" alt="Gen Ai Dialog Preview - Proceed" title="Gen Ai Dialog Preview - Proceed" style="border:1px solid gray; zoon:60%;">  
+ 
+The nodes and the flow for the Business Logic are automatically built for your conversation. The Platform auto-defines the _Entities, Prompts, Error Prompts, Bot Action nodes, Service Tasks, Request Definition_, and other parameters. You can customize the flow per your requirements by editing the generated nodes and adding your own. You can configure the generated Dialog Tasks just like any other dialog task. 
+ 
+<img src="../images/using-dialog-builder-img10-create-dialog-genai-dialog-created.png" alt="Gen Ai Dialog created" title="Gen Ai Dialog created" style="border:1px solid gray; zoon:60%;">
+
+### Auto-Generate Dialog Tasks using Pre Built Templates
+
+This option lets you choose the suitable dialog template that meets your requirement as well as has the pre-established integration. You can either scroll through the entire list, or find the required template using the search box or Integrations dropdown. Out of the search results, click the template once you find one that suits your requirement. 
+ 
+<img src="../images/using-dialog-builder-img11-create-dialog-template-search.png" alt="Template search" title="Template search" style="border:1px solid gray; zoon:60%;">
+
+1. The **Create Dialog** window opens where you need to select the integration for getting a preview of the dialog. Click **Proceed** for the next step. 
+ 
+    <img src="../images/using-dialog-builder-img12-create-dialog-template-preview.png" alt="Dialog using template - preview" title="Dialog using template - preview" style="border:1px solid gray; zoon:60%;"> 
+
+2. You can edit the **Intent name, description, and customize the options** for the dialog, similar to **Create Dialog from Scratch**. After making the required changes, click **Proceed**.
+
+    <img src="../images/using-dialog-builder-img13-create-dialog-template-edit-details.png" alt="Dialog using template - Edit details" title="Dialog using template - Edit details" style="border:1px solid gray; zoon:60%;"> 
+
+3. The Dialog Builder now opens with the root intent component, and the nodes you saw in the preview. You can customize the flow per your requirements by editing the generated nodes and adding your own on the Dialog Builder canvas, as well as establish transition between the nodes.In other words, you can configure the generated Dialog Tasks just like any other dialog task. 
+ 
+    <img src="../images/using-dialog-builder-img14-create-dialog-canvas.png" alt="Dialog using template - Dialog canvas" title="Dialog using template - Dialog Canvas" style="border:1px solid gray; zoon:60%;">
+
+[Click here to know about Nodes & Connections](../node-types/nodes-transitions/){:target="_blank"}
 
 
+## Dialog Task Builder Overview
 
-### Dialog Task Builder Overview
+Before moving on, here is an overview of the Dialog Task Builder. For details, please see [Navigating the Dialog Task Builder](../navigating-dialog-tasks/){:target="_blank"}.
 
-Before moving on, here is an overview of the Dialog Task Builder. For details, please see [Navigating the Dialog Task Builder](../navigating-dialog-tasks){:target="_blank"}.
+<img src="../images/navigate-dialog-builder-canvas.png" alt="Dialog task builder" title="Dialog task builder" style="border:1px solid gray; zoon:60%;">
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+## Nodes
 
-![alt_text](images/image7.png "image_tooltip")
+In UXO, a **Node** is a building block of a dialog that contains one or more assets in the required sequence of execution.. You can divide the dialog into nodes based on sub tasks within the dialog.
+
+**_[video of node creation]_**
+
+You can set connections between two nodes; Below are the steps. Drag the connector <img src="../images/using-dialog-builder-img17-nodes-connector.png">
+ from the source node to the required destination node. Please note that by default, the connection will be from the **bottommost asset of the source node** to the **topmost asset on the destination node**.
+
+Connections can be set or changed either on the canvas by **dragging the transition arrow**, or through **Connections** settings on the **Component Properties panel**. 
+
+You can also add  a node **in-between two existing nodes**. Below are the steps to do that:
+
+* Add the new node to the canvas.
+* Set the connection between the source node to the new node
+* Set the connection between the new node to the Destination node.
+
+**_[Video of connection]_**
+
+All the nodes created can be seen on the **Nodes** tab in the left hand side menu.
+
+<img src="../images/using-dialog-builder-img18-nodes-tab.png" alt="Nodes tab" title="Nodes tab" style="border:1px solid gray; zoon:60%;">
+
+For example, in the flight booking dialog, you can have separate nodes for gathering passenger details, gathering trip details, generating pnr, etc.
+
+<img src="../images/using-dialog-builder-img19-assets-and-nodes.png" alt="Assets and Nodes" title="Assets and Nodes" style="border:1px solid gray; zoon:60%;">
+
+You can delete a node by right clicking on it and selecting **Delete** from the menu.
+
+!!! Warning
+
+	This action cannot be undone.
+
+<img src="../images/using-dialog-builder-img15-node-delete.png" alt="Delete node" title="Delete node" style="border:1px solid gray; zoon:60%;">
 
 
+## Add Assets to dialog
 
-### Add Nodes
+There are two ways to add an asset:
 
-There are three ways to add a node:
-
-1. Drag and drop nodes from the panel onto the dialog builder, [see below](#use-drag-and-drop).
+1. Drag and drop assets from the panel onto the dialog builder, [see below](#use-drag-and-drop).
 2. Using the options from the Dialog Builder Canvas, [see below](#use-the-dialog-canvas).
 
 
-#### Use Drag and Drop
+### Use Drag and Drop
 
-You can add nodes within the dialog task, by dragging the node from the panel on the left to the designated place in the dialog task, on the canvas.
+You can add assets within the dialog task, by dragging the asset from the panel on the left to the designated place in the dialog task, on the canvas. You can drop the asset within an existing node, or outside the nodes; in this case a node will get created automatically, containing the newly added asset.
 
-You can also drag and drop a node from the side panel on the left in-between two existing nodes. A connector comes up on hovering over the connecting line, and you can drop your new node on it.
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image8.gif "image_tooltip")
+**_[VIDEO Drag Drop]_**
 
 
+### Use the Dialog Canvas
 
-#### Use the Dialog Canvas
+Click the <img src="../images/using-dialog-builder-img17-nodes-connector.png"> button next to the node after which you want to add another asset. You can either add an asset directly on the canvas, in which case a new node gets created. You can then drag and drop the asset to an existing node, if that is how you wish to place it.
 
-Use the **"+"** button next to the node under which you want to add another node. You can either add a new node or connect an existing node. This existing node can be either from the current task or from a different one.
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image9.gif "image_tooltip")
-
-You can use the **Add Node** button visible on hover over the connector line, to add nodes between two existing nodes. You can create a new node or pick from the existing node list.
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image10.gif "image_tooltip")
+**_[video of adding asset on canvas]_**
 
 
+### Add If-Else Node Connections
 
-#### Add If-Else Node Connections
+You can add conditions to the node by adding **If-Else connection** in the **Transition** section of the node. This is where you can set the execution path based on the condition.
 
-To add **If-Else** connection conditions, hover over the node and click the blue **"+"** button on the bottom. [Learn more](../node-connections/nodes-conditions/){:target="_blank"}.
+To do this, hover over the **Transitions** section and click **Add New.** [Learn more](../node-connections/nodes-conditions/){:target="_blank"}.
 
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<img src="../images/using-dialog-builder-img16-nodes-transition.png" alt="Transitions - Add New" title="Transitions - Add New" style="border:1px solid gray; zoon:60%;">
 
-![alt_text](images/image11.gif "image_tooltip")
+Asset can be deleted by right clicking on it, and then clicking **Delete.**
+
+<img src="../images/using-dialog-builder-delete-asset.png" alt="Delete asset" title="Delete asset" style="border:1px solid gray; zoon:60%;">
 
 
+## Asset Properties
 
-### Node Properties
-
-Clicking on a node will open its Properties panel, which includes specific features, depending on the type of node you are working with. Please consult the documentation on [Node Types](../node-types/nodes-transitions/){:target="_blank"} to learn more about what is included with each. So, noting that some nodes may not come with some features, here is a general overview of what is available within this panel:
-
+Clicking on an asset will open its Properties panel, which includes specific features, depending on the type of asset you are working with. Please consult the documentation on [Node Types](../node-types/nodes-transitions/){:target="_blank"} to learn more about what is included with each. So, noting that some assets may not come with some features, here is a general overview of what is available within this panel:
 
 * **Component Properties** such as name, type, and component-specific properties.
-* **Instance Properties** can be customized for the selected node for the current dialog.
-* **Connection Properties** can be used for configuring transition conditions.
+* **Instance Properties** can be customized for the selected asset for the current dialog.
+* **Connection Properties** can be used for configuring transition conditions. (Only available for the bottommost asset in a node)
 * **NLP Properties** for intent and entity recognition.
-* **Voice Call Properties** for IVR channels (available for certain nodes only after [IVR integration](../../../../channels/call-properties){:target="_blank"}).
+* **Voice Call Properties** for IVR channels (available for certain assets only after [IVR integration](../node-types/voice-call-properties/){:target="_blank"}).
 
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image12.png "image_tooltip")
+<img src="../images/using-dialog-builder-img20-asset-properties.png" alt="Asset properties" title="Asset properties" style="border:1px solid gray; zoon:60%;">
 
 
+## Adding Comments, Bookmarks and Text
 
-### Node Options
+UXO provides a robust set of features within its dialog builder to enhance collaboration and organization. Here's a breakdown of the mentioned features:
 
-Hovering over a node will reveal the **Node Options** menu. Here is where you can find the following options:
+* Text
+* Comments
+* Bookmarks
 
-* **Configure** – Takes you to Node Properties, where you can configure the node.
-* **Add Comment** – Here is where you can add your comments for the selected node.
-* **Remove Node** – This option deletes the node.  
-  
-    !!! Warning
-    
-            This action cannot be undone.
+You can add, edit, move or delete text, comments or bookmarks as per need. However, please note that deletion cannot be undone.
 
+!!! Note
 
+	You can add comments, texts or bookmarks on the canvas as well as within the nodes. (Available in Phase 2)
 
+<img src="../images/using-dialog-builder-img21-text-bookmark-comment.png" alt="Text, comment, bookmark" title="Text, comment, bookmark" style="border:1px solid gray; zoon:60%;">
 
+### Text
 
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image13.png "image_tooltip")
+Adding text to a canvas for notes is a common practice in various design and collaboration tools. This allows users to provide additional context, explanations, or instructions directly on the canvas, making it a helpful reference for future work or collaboration. Here are some ways this can be beneficial:
 
 
+1. Introduction to Modules:
+    * Use text on the canvas to introduce the purpose and scope of different modules in your project.
+    * Provide a brief overview of what each module is designed to achieve.
+2. Flow Logic:
+    * Use text annotations to describe the flow logic between different modules or components.
+    * Highlight key decision points, inputs, and outputs within the overall flow.
+3. Notes for Future Reference:
+    * Include notes that provide insights or considerations for future work or modifications.
+    * Document any design decisions, constraints, or important considerations.
+4. Collaborative Documentation:
+    * If multiple users are involved, use text on the canvas to communicate ideas, suggestions, or questions directly within the design space.
+    * Tag specific users in your notes to draw attention to relevant information.
+5. Instructions for Designers:
+    * If you're working with a team of designers or collaborators, use text annotations to provide specific instructions or guidelines for designing certain elements.
 
-### Node Groups
+By incorporating text annotations directly onto the canvas, you create a visual and contextual layer of information that can enhance collaboration, provide clarity, and serve as a valuable reference for anyone working on the project in the future.
+
+**_[Video - add Text]_**
+
+
+### Comment
+
+The purpose of a comment is similar to that of a text, however additionally,  in a comment you can tag other users. 
+
+Tagging a user in a comment is a way to draw their attention to a specific part of a dialog, indicating that their input or design expertise is needed for that particular section. This facilitates smoother collaboration and enhances overall project efficiency by keeping communication focused and actionable.
+
+**_[Video - Add Comment]_**
+
+
+### Bookmark
+
+The addition of bookmarks to the dialogs is a thoughtful feature, especially in the context of complex dialog designs. Here's how the ability to add bookmarks can be advantageous:
+
+1. Navigation Efficiency:
+    * Bookmarks provide a quick and efficient way to navigate through a complex dialog structure.
+    * Users can jump directly to specific dialogs of interest without the need for extensive scrolling or searching.
+2. Focus on Key Dialogs:
+    * Users can mark and bookmark key or frequently referenced dialogs.
+    * This helps in maintaining focus on critical sections of the conversation flow, enhancing productivity during the design and review process.
+3. Project Organization:
+    * Bookmarks contribute to better project organization by allowing users to create a personalized structure for quick access.
+    * Users can categorize and group dialogs based on their relevance or importance, facilitating a more streamlined workflow.
+4. Collaborative Work:
+    * In collaborative environments, bookmarks can serve as visual indicators of significant points in the dialog flow.
+    * This aids communication among team members by creating a shared understanding of which dialogs are crucial or require attention.
+5. Time Savings:
+    * The feature saves time by eliminating the need for users to manually search for specific dialogs within a complex structure.
+    * Users can efficiently locate and revisit dialogs, reducing the overall time spent on navigation.
+6. Enhanced User Experience:
+    * Adding bookmarks enhances the overall user experience by providing a user-friendly and customizable way to interact with the dialog design interface.
+    * Users have greater control over their navigation, contributing to a more intuitive and efficient design process. 
+
+
+In summary, bookmarks offer a practical solution to the challenges associated with navigating complex dialog designs. They empower users to personalize their experience, focus on key components, and streamline collaboration within the context of intricate dialog structures.
+
+**_[Video - Add Bookmark]_**
+
+The inclusion of a dedicated Bookmark tab in the left-hand side panel further enhances the usability of the bookmark feature. The Bookmark tab on the left-hand side panel not only provides a structured and organized way to manage bookmarks but also contributes to a user-friendly interface, making it easier to navigate and interact with the bookmarked dialogs.
+
+<img src="../images/using-dialog-builder-img22-bookmark-tab.png" alt="Bookmark tab" title="Bookmark tab" style="border:1px solid gray; zoon:60%;">
+
+
+## Node Groups (Planned for Phase 2)
 
 You can group nodes to improve the user experience with follow-ups, digressions, and amending entity values. When including nodes into a group, they need to be located next to each other on the Dialog Builder Canvas.
 
 To create a group of nodes, press and hold the **Ctrl / Command** key on your keyboard, and simultaneously use **your mouse cursor to select** the canvas area where you have located the nodes to be grouped. Once grouped, the nodes will be displayed together on a separate, light yellow background. Below is a quick demo of how to do this.
 
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image26.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-![alt_text](images/image14.gif "image_tooltip")
+
+![alt_text](images/image26.gif "image_tooltip")
 
 
 You can rename the group using the **Edit** option next to the name.
 
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<p id="gdcalert27" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image27.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-![alt_text](images/image15.png "image_tooltip")
+
+![alt_text](images/image27.png "image_tooltip")
 
 
 You can delete the group using the **Delete** icon on the right, that becomes visible once you hover over the group.
 
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image16.png "image_tooltip")
+<p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image28.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-If you are using the group to set up a Subintent, you can also configure it, using the **Configure**(Gear) icon, that becomes visible once you hover over the group. For additional information, please see [Grouping Nodes as Subintents](../node-connections/grouping-nodes/){:target="_blank"}.
-
-<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image17.png "image_tooltip")
+![alt_text](images/image28.png "image_tooltip")
 
 
+If you are using the group to set up a Subintent, you can also configure it, using the **Configure**/ Gear icon, that becomes visible once you hover over the group. For additional information, please see [Grouping Nodes as Subintents](../node-connections/grouping-nodes/){:target="_blank"}.
 
-### Bot Action Nodes
+<p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image29.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-!!! Note
 
-        This node was introduced in v9.0 of the Platform as a container for nodes that are relevant to the actions your VA needs to perform.
+![alt_text](images/image29.png "image_tooltip")
 
-Bot Action nodes include the following nodes, that need processing by the VA without user interaction:
 
-* Service Node
-* Script Node
-* Logic Node
-* Webhook Node
-* Process
+
+## Bot Action Assets (Needed?)
+
+
+Bot Action assets include the following assets, that need processing by the app without user interaction:
+
+* [Service ](../node-types/working-with-the-service-node/){:target="_blank"}Asset
+* [Script ](../node-types/working-with-the-script-node/){:target="_blank"}Asset
+* [Logic](../node-types/working-with-the-logic-node/){:target="_blank"} Asset
+* [Webhook](../node-types/working-with-the-web-hook-node/){:target="_blank"} Asset
+* [Process](../node-types/process-nodes/){:target="_blank"} Asset
 
 To access these nodes follow the steps below:
 
-1. Add a **Bot Action** node to your dialog task canvas.
+1. Add a **Bot Action **node to your dialog task canvas.
 2. Click the **expand (+)** button next to the Bot Action node. The primary nodes panel will be replaced with the Bot Action nodes panel.
-3. The Bot Action Node shows all of its containing nodes as a group. Add any node from here, using either the “+” sign or drag and drop. Bot Action Nodes provide the following options: On the left side of the node there is an **Expand (+)** button if the node is collapsed, and a **Collapse (-)** button if the node is expanded. Nodes can also be collapsed using the **Close (x)** button on the top right.
+3. The Bot Action Node shows all of its containing nodes as a group. Add any node from here, using either the “+” sign or drag and drop. Bot Action Nodes provide the following options: On the left side of the node there is an **Expand (+) **button if the node is collapsed, and a **Collapse (-)** button if the node is expanded. Nodes can also be collapsed using the **Close (x)** button on the top right.
 4. Nodes inside the bot action node cannot be connected directly to any node outside the bot action.
 5. For the nodes inside the bot action node, the following connections can be configured:
     1. **Node Connections** – this option can be used to define the connection rules connecting to nodes within the bot action node. This can be configured to:
         1. **Any node within the corresponding bot action node**;
         2. **Not Connected**;
         3. **End of Bot Action** – this would take the bot flow to the node connected to the bot action node;
-    
-    2. **Bot Action Connections** – this option can be used to define the connection rules connecting to a node outside of the current Bot Action. These rules would be applied to the bot action node as a whole.  
-        <p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>  
-      
-        ![alt_text](images/image18.gif "image_tooltip")
+    2. **Bot Action Connections** – this option can be used to define the connection rules connecting to a node outside of the current Bot Action. These rules would be applied to the bot action node as a whole.
 
 
 
-## Dialog Task Training
-
-You can train your VA on a newly created task by going to the **Train** section of the Dialog Task area.
-
-<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image19.png "image_tooltip")
+<p id="gdcalert30" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image30.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert31">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-In the Train section, you can perform the following tasks:
-
-* **Auto-Generate Utterances:** If you enable LLM and Generative AI and Training Data Suggestions for your VA, you can auto-generate training utterances within this module. Your VA will use these utterances to recognize user intents.
-* **Add Utterances Manually**: You can enter utterances that the VA could use to recognize the intent you are training the VA on. 
-* **Add Patterns**: Patterns are word combinations that indicate a particular intent or entity. You can add exact word combinations that the VA will use to precisely detect the selected intent when these combinations are present in an utterance.
-* **Add Negative Patterns**: These are patterns that you don’t want the VA to recognize as relevant to the intent you are training it for. 
-* **Add Rules**: Here, you can define intent identification rules to trigger the intent you are working with. You can use [traits](../../../natural-language/training/traits){:target="_blank"} or [context tags](../../../intelligence/context-management){:target="_blank"} to create these rules.
-
-See [**Manage Patterns and Rules** ](../../../natural-language/training/fundamental-meaning/#manage-patterns-and-rules){:target="_blank"}to learn more about these training features.
-
-
-### Automatically Generate Utterance Suggestions
-
-You can use the **Suggestions** panel on the right side of the Train screen to generate training utterances automatically. This feature leverages [LLM and Generative AI](https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/){:target="_blank"} to help you virtually eliminate the guesswork regarding the queries your customers might send to your VA.
-
-To generate utterances, click **Generate** within the _Suggestions_ panel.
-
-<p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image20.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image20.png "image_tooltip")
-
-
-When the process completes, you can see a list of generated utterances you can validate or reject. Validated utterances are added to your training data. Rejected suggestions are not considered and removed from your current suggestions list but may be suggested again for reconsideration. 
-
-<p id="gdcalert21" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image21.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image21.png "image_tooltip")
-
-
-Click **Add All** to add all suggested utterances to your training data.
-
-<p id="gdcalert22" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image22.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert23">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image22.png "image_tooltip")
-
-
-Click **Generate more** to generate another batch of utterances.
-
-<p id="gdcalert23" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image23.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert24">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image23.png "image_tooltip")
-
-
-You must train your VA for any newly added utterances to be considered during interactions. Click **Train** on the notification bar to do so. 
-
-<p id="gdcalert24" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image24.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert25">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image24.png "image_tooltip")
+![alt_text](images/image30.gif "image_tooltip")
 
 
 
 ## Switch Tasks
 
-The Builder comes with a dedicated task switcher, which you can use to easily change to working on a different task within your selected Virtual Assistant. This option is located at the top left of your canvas, above the Node Types panel.
+The Builder comes with a dedicated task switcher, which you can use to easily change to working on a different task within your selected app. This option is located at the top of your canvas
 
-<p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image25.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image25.png "image_tooltip")
-
+<img src="../images/using-dialog-builder-img23-task-switcher.png" alt="Task switcher" title="Task switcher" style="border:1px solid gray; zoon:60%;">
 
 
 ## Menu Options
 
-<p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image26.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image26.png "image_tooltip")
-
+<img src="../images/dialog-top-menu.png" alt="Top Menu" title="Top Menu" style="border:1px solid gray; zoon:60%;">
 
 The top menu provides access to a variety of options which you can use while working on your Dialog Task. The following options are specific to the Logic-Driven Dialog Builder:
 
 * **Errors and Warnings** – Any potential errors and warnings in your Dialog Task will be shown here. Click this area to access information about current errors and warnings.
-    <p id="gdcalert27" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image27.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-    ![alt_text](images/image27.png "image_tooltip")
+    <img src="../images/using-dialog-builder-img24-error-and-warnings.png" alt="Errors and Warnings" title="Errors and Warnings" style="border:1px solid gray; zoon:60%;">
 
-* **Find Nodes** – This search option will look for tasks containing your keywords and highlight them onto the canvas.
-    <p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image28.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image28.gif "image_tooltip")
-
-* **Help** – Get contextual help for your Dialog Task or follow a Setup Guide. Find out more by reading [Help and Learning Resources](https://developer.kore.ai/docs/bots/chatbot-overview/help/){:target="_blank"}.
-    <p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image29.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image29.png "image_tooltip")
+* **Find Nodes** – This search option will look for tasks containing your keywords and highlight them onto the canvas. 
+ 
+**_[Video - Find Nodes]_**
 
 
 ### The ‘More Options’ Menu
 
-The More options menu, accessible at the top right of the Dialog Builder, is where you can find shortcuts to display and zoom options, where you can auto-arrange nodes access dialog settings, manage interruptions or amend behavior.,
+The More options menu, accessible at the top right of the Dialog Builder, is where you can find shortcuts to dialog settings, manage interruptions, amend behavior, and view all comments.
 
-<p id="gdcalert30" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image30.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert31">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image30.png "image_tooltip")
-
-
-#### Display Options
-
-You can use **Display Options** to reduce unnecessary node information and better utilize screen real estate.
-
-You can show or hide some or all node types, node details, or connection details displayed in the Dialog Builder.
-
-* **Show All** to show all the node information.
-* **Hide Node Type** to remove the node type.
-* **Hide Node Details** to remove node descriptions.
-* **Hide Connection Details** to remove information about node connections. .
-
-<p id="gdcalert31" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image31.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert32">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image31.png "image_tooltip")
-
-
-
-#### Zoom Controls
-
-**Zoom Options** are used to:
-
-* **Fit to Page** – Resizes Dialog Builder components and connections to fit within the display screen resolution for a single, non-scrolling page.
-* **Reset Zoom** – Resets zoom settings to actual size.
-
-<p id="gdcalert32" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image32.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert33">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image32.png "image_tooltip")
-
-
-Additional **Zoom Controls** are available in the panel at the bottom-left of the Dialog Task. These are visible when the Node Properties panel is closed. The available options are:
-
-* **Minimize Panel.**
-* **Auto-Arrange Nodes.**
-* **Zoom In.**
-* **Zoom Out.**
-* **Map.** You can click on an area of the map to be taken to the corresponding area of your conversation.
-
-<p id="gdcalert33" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image33.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert34">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image33.png "image_tooltip")
-
+<img src="../images/using-dialog-builder-img25-more-options.png" alt="More options" title="More options" style="border:1px solid gray; zoon:60%;">
 
 
 #### Dialog Settings
 
 The **Dialog Settings** panel allows you to modify the dialog task basic settings, and if desired, set the visibility of a dialog to create a hidden dialog task that is available for use, but not shown as a task. You can access Dialog Settings using the More Options Menu. 
 
-<p id="gdcalert34" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image34.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert35">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image34.png "image_tooltip")
-
+<img src="../images/using-dialog-builder-img26-dialog-settings.png" alt="Dialog settings" title="Dialog settings" style="border:1px solid gray; zoon:60%;">
 
 Add or modify the following settings for your dialog:
 
 * **Name** – The name of your dialog task, usually the main user intent. For example, _Book Ticket._
 * **Description** – An optional description of your dialog task displayed in the XO Platform.
-* **Options** – Specify the behavior of this dialog task to the end-user:
-    * **Sub intent only dialog** – The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
-    * **Hide from help** – The task is not presented as a task when the user requests help. Users can invoke this task anytime while talking to the assistant.  
-      
-        **_Note that this option is selected automatically when the previous option is selected._**
+* **More Options** – Specify the behavior of this dialog task to the end-user:
+    * **Availability of Use Case** for end customer and/or in AgentAssist
+    * **Intent Settings:**
+        * **Sub intent only dialog** – The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
+        * **Hide from help** – The task is not presented as a task when the user requests help. Users can invoke this task anytime while talking to the assistant. 
+            
+            !!! Note
+            
+                This option is selected automatically when the previous option is selected. You can manually deselect it.
 
-* **Follow-up Task** – The follow-up task array contains all the intents detected from user utterances from this dialog. You can either:
-    * Handle the follow-up tasks as part of node connections (default setting), or
-    * Let the user select the follow-up task.
+    * **Analytics - Containment Type**(Any one option can be selected):
+        * **Abundance as Self Service:** User can abandon the conversation while executing the dialog.
+        * **Abundance as Drop Off:** Conversations can be abandoned by users or due to any failure during execution of the dialog.
+    * **Follow-up Task** – The follow-up task array contains all the intents detected from user utterances from this dialog. You can either:
+        * Handle the follow-up tasks as part of node connections (default setting), or
+        * Let the user select the follow-up task.
+    * **Task Execution Failure** – Define the assistant’s behavior when there is an error in task execution. It can be set as either:
+        * Same as the Bot Level behavior
+        * Specific to this task – initiate a task, run script, or show a message.
 
-* **Task Execution Failure** – Define the assistant’s behavior when there is an error in task execution. It can be set as either:
-    * Same as the Bot Level behavior
-    * Specific to this task – initiate a task, run script, or show a message.
+
+#### Manage Interruptions
+
+The **Manage Interruptions** options allow you to select if and how a user can switch to another task, as well as the exit strategies. It can be set up at the VA, task, and node levels to ensure the configurations are layered to suit your various business requirements. You can also add conditional exceptions between tasks with the ability to pass contextual data between them.
+
+<img src="../images/using-dialog-builder-img27-manage-interruptions.png" alt="Manage Interruptions" title="Manage Interruptions" style="border:1px solid gray; zoon:60%;">
+
+Click here to [learn more](../../../intelligence/conversation-management/manage-interruptions/#dialog-level-settings){:target="_blank"}.
+
+
+#### Manage Ammend Behavior
+
+Using **Amend Entity,** you can allow the users to amend entity values and also control the post-amendment dialog behavior.
+
+<img src="../images/using-dialog-builder-img28-manage-ammend-behavior.png" alt="Manage Ammend behavior" title="Manage Ammend behavior" style="border:1px solid gray; zoon:60%;">
+
+Click here to [learn more.](../../../natural-language/nlu-configurations/amend-entities/#task-level){:target="_blank"}
+
+
+### Display Options
+
+You can use **Display Options** to better utilize screen real estate.
+
+<img src="../images/using-dialog-builder-img29-display-settings.png" alt="Display settings" title="Display serrings" style="border:1px solid gray; zoon:60%;">
+
+Display Options are used to:
+
+* **Fit to Screen** – Resizes Dialog Builder components and connections to fit within the display screen resolution for a single, non-scrolling page.
+* **Zoom Level** – is used to set the zoom level as per need.
+* **Zoom to Last Edited** – Takes you to the zoom level you have used to edit the dialog
+* **Hide/Show Mini Map** – To show or hide the mini map of the dialog.
 
 
 ## Troubleshooting
 
 In the top navigation area, you will see a real-time set of errors and warnings are available as you define your dialog task located on the top-right of the Dialog Builder. Click the information icon to display any errors or warnings as shown in the following illustration.
 
-<p id="gdcalert35" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image35.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert36">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image35.png "image_tooltip")
+<img src="../images/using-dialog-builder-img30-error-warning.png" alt="Troubleshooting - Errors and Warnings" title="Troubleshooting - Errors and Warnings" style="border:1px solid gray; zoon:60%;">

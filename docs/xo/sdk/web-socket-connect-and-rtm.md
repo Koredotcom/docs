@@ -44,37 +44,24 @@ curl 'https://{{APIHost}}/api/1.1/oAuth/token/jwtgrant' \
 
 The following sample JSON response shows the `accessToken` and the user associated with that token.
 
-```json
+```javascript
 {
-   "authorization": {
-	"accessToken": "ZdV2OL_UZ_MvHog-rs8k9KJFNWBICvquSc3jpeaRDE_-",
-                 // access token to user at /api/rtm
-	"token_type": "bearer",
-	"expiresDate": "2019-06-28T06:52:23.160Z",
-                //expiry date for access token
-	"issuedDate": "2019-02-28T06:52:23.160Z" 
-               //access token issuedDate
-	},
-   "userInfo": {
-	"userId": "u-4f6c68e0-551a-5dd9-a33a-1af3dc9cadcc", 
-                 // user id which is unique for the user and can be used at bot messages api
-	"accountId": "5c66514d09ab3565deb2e30a", 
-                 // account id in which the user is present
-	"orgId": "o-88aad7f1-0d32-5765-93d7-f40c80402114",
-                // organization id of the user
-	"identity": "cs-5b08ed1e-5fa7-5aaa-9c21-28bf8c90b739/admin1212@qakore.xyz", 
-                //identity of user from the channel perspective
-	"enrollType": "free", 
-                //Enrollment type (Free/ Paid etc)
-	"managedBy": "5c66514d09ab3565deb2e30a", 
-                //(The account id)
-	"fName": "", 
-                //first name of the user
-                // (fetched if the user is registered on the Platform)
-	"lName": "" 
-                //last name of the user
-                // (fetched if the user is registered on the Platform)
-	}
+  "authorization": {
+        "accessToken": "ZdV2OL_UZ_MvHog-rs8k9KJFNWBICvquSc3jpeaRDE_-", // access token to user at /api/rtm
+        "token_type": "bearer",
+        "expiresDate": "2019-06-28T06:52:23.160Z",       //expiry date for access token
+        "issuedDate": "2019-02-28T06:52:23.160Z"        //access token issuedDate
+    },
+    "userInfo": {
+        "userId": "u-4f6c68e0-551a-5dd9-a33a-1af3dc9cadcc",        // user id which is unique for the user and can be used at bot messages api
+        "accountId": "5c66514d09ab3565deb2e30a",        // account id in which the user is present
+        "orgId": "o-88aad7f1-0d32-5765-93d7-f40c80402114",        // organization id of the user
+        "identity": "cs-5b08ed1e-5fa7-5aaa-9c21-28bf8c90b739/admin1212@qakore.xyz",        //identity of user from the channel perspective
+        "enrollType": "free",        //Enrollment type (Free/ Paid etc)
+        "managedBy": "5c66514d09ab3565deb2e30a",        //(The account id)
+        "fName": "",        //first name of the user (fetched if the user is registered on the Platform)
+        "lName": ""        //last name of the user (fetched if the user is registered on the Platform)
+    }
 }
 ```
 
@@ -89,8 +76,7 @@ https://{{APIHost}}/api/1.1/rtm/start
 This section describes how to format the request to get the web socket URL with the `/api/1.1/rtm/start` endpoint based on the following JSON syntax.
 
 !!!note
-
-    This URL is short-lived and expires in 30 seconds. You must ensure it is used to connect before expiration.
+  This URL is short-lived and expires in 30 seconds. You must ensure it is used to connect before expiration.
 
 ```json
 {
@@ -118,7 +104,9 @@ The following sample JSON response shows the WebSocket URL.
 
 
 ```json
-{"url":"wss://xxx.yyy.com:443/rtm/bot?sid=GhKrtrEC61g7hAnmvKAVnJIHG0DS1Lzv"}
+{
+  "url":"wss://xxx.yyy.com:443/rtm/bot?sid=GhKrtrEC61g7hAnmvKAVnJIHG0DS1Lzv"
+}
 ```
 
 ## RTM Channel Events
@@ -169,6 +157,7 @@ The following payload is used to acknowledge an event from the client app.
     "type": "ack"
 }
 ```
+
 **Event Type:** `bot_response`
 
 **Description:** An acknowledgment is sent whenever a message is processed from the client app.
@@ -293,15 +282,17 @@ The following payload is used to send a response message to the XO Platform.
 { 
   "type": "form_delivered", 
   "from": "bot", 
-   "botInfo": { "chatBot": "Natasha", 
-   "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac" }, 
+   "botInfo": { 
+      "chatBot": "Natasha", 
+      "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac" 
+    }, 
    "sessionId": "642d2f34f7eb45387a7be64e", "formMetaInfo": 
-{ 
-   "isSecured": true, 
-    "formLinkExpiry": 300, 
-     "submitExpiry": 600
-}, 
-"traceId": "4a663e27051cd294" 
+      { 
+        "isSecured": true, 
+        "formLinkExpiry": 300, 
+        "submitExpiry": 600
+      }, 
+    "traceId": "4a663e27051cd294" 
 } 
 ```
 
@@ -313,19 +304,21 @@ The following payload is used to send a response message to the XO Platform.
 
 
 ```json
-{ 
-  "type": "form_submitted", 
-  "from": "bot", 
-   "botInfo": { "chatBot": "Natasha", 
-   "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac" }, 
-   "sessionId": "642d2f34f7eb45387a7be64e", "formMetaInfo": 
-{ 
-   "isSecured": true, 
-    "formLinkExpiry": 300, 
-     "submitExpiry": 600
-}, 
-"traceId": "4a663e27051cd294" 
-} 
+{
+  "type": "form_submitted",
+  "from": "bot",
+  "botInfo": {
+    "chatBot": "Natasha",
+    "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac"
+  },
+  "sessionId": "642d2f34f7eb45387a7be64e",
+  "formMetaInfo": {
+    "isSecured": true,
+    "formLinkExpiry": 300,
+    "submitExpiry": 600
+  },
+  "traceId": "4a663e27051cd294"
+}
 ```
 **Event Type:** `/form_failure`
 
@@ -334,18 +327,20 @@ The following payload is used to send a response message to the XO Platform.
 The following payload is used to send a response message to the XO Platform.
 
 ```json
-{ 
-  "type": "form_failure", 
-  "from": "bot", 
-   "botInfo": { "chatBot": "Natasha", 
-   "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac" }, 
-   "sessionId": "642d2f34f7eb45387a7be64e", "formMetaInfo": 
-{ 
-   "isSecured": true, 
-    "formLinkExpiry": 300, 
-     "submitExpiry": 600
-}, 
-"traceId": "4a663e27051cd294" 
+{
+  "type": "form_failure",
+  "from": "bot",
+  "botInfo": {
+    "chatBot": "Natasha",
+    "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac"
+  },
+  "sessionId": "642d2f34f7eb45387a7be64e",
+  "formMetaInfo": {
+    "isSecured": true,
+    "formLinkExpiry": 300,
+    "submitExpiry": 600
+  },
+  "traceId": "4a663e27051cd294"
 }
 ```
 
@@ -368,20 +363,19 @@ The session starts in the following scenarios:
 The following payload is used to send a response message to the XO Platform.
 
 ```json
-{ 
-  "type": "session_start", 
-  "from": "bot", 
-  "botInfo": 
-  { 
-    "chatBot": "jarvis_new_import", 
-    "taskBotId": "st-496bf3e4-63de-5635-8fcb-db1f9356def8", 
-"hostDomain": "http://localhost", 
-"os": "Linux", 
-"device": "Other" 
-}, 
-"sessionId": "6426bf7e916562382331ba89", 
-"traceId": "a33d81825f3b1a77" 
-} 
+{
+  "type": "session_start",
+  "from": "bot",
+  "botInfo": {
+    "chatBot": "jarvis_new_import",
+    "taskBotId": "st-496bf3e4-63de-5635-8fcb-db1f9356def8",
+    "hostDomain": "http://localhost",
+    "os": "Linux",
+    "device": "Other"
+  },
+  "sessionId": "6426bf7e916562382331ba89",
+  "traceId": "a33d81825f3b1a77"
+}
 ```
 **Event Type:** `/session_end`
 
@@ -395,20 +389,19 @@ The session ends in the following scenarios:
 The following payload is used to send a response message to the XO Platform.
 
 ```json
-{ 
-  "type": "session_end", 
-  "from": "bot", 
-  "botInfo": 
-  { 
-    "chatBot": "jarvis_new_import", 
-    "taskBotId": "st-496bf3e4-63de-5635-8fcb-db1f9356def8", 
-"hostDomain": "http://localhost", 
-"os": "Linux", 
-"device": "Other" 
-}, 
-"sessionId": "6426bf7e916562382331ba89", 
-"traceId": "a33d81825f3b1a77" 
-} 
+{
+  "type": "session_end",
+  "from": "bot",
+  "botInfo": {
+    "chatBot": "jarvis_new_import",
+    "taskBotId": "st-496bf3e4-63de-5635-8fcb-db1f9356def8",
+    "hostDomain": "http://localhost",
+    "os": "Linux",
+    "device": "Other"
+  },
+  "sessionId": "6426bf7e916562382331ba89",
+  "traceId": "a33d81825f3b1a77"
+}
 ```
 ## Agent Transfer Events
 
@@ -423,19 +416,21 @@ This section describes the Agent Transfer Event JSON responses sent to the Kore.
 The following payload is used to send a response message to the XO Platform.
 
 ```json
-{ 
-  "type": "agent_session_start", 
-  "from": "bot", 
-   "botInfo": { "chatBot": "Natasha", 
-   "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac" }, 
-   "sessionId": "642d2f34f7eb45387a7be64e", "formMetaInfo": 
-{ 
-   "isSecured": true, 
-    "formLinkExpiry": 300, 
-     "submitExpiry": 600
-}, 
-"traceId": "4a663e27051cd294" 
-} 
+{
+  "type": "agent_session_start",
+  "from": "bot",
+  "botInfo": {
+    "chatBot": "Natasha",
+    "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac"
+  },
+  "sessionId": "642d2f34f7eb45387a7be64e",
+  "formMetaInfo": {
+    "isSecured": true,
+    "formLinkExpiry": 300,
+    "submitExpiry": 600
+  },
+  "traceId": "4a663e27051cd294"
+}
 ```
 
 **Event Type:** `/agent_session_end`
@@ -445,19 +440,21 @@ The following payload is used to send a response message to the XO Platform.
 The following payload is used to send a response message to the XO Platform.
 
 ```json
-{ 
-  "type": "agent_session_end", 
-  "from": "bot", 
-   "botInfo": { "chatBot": "Natasha", 
-   "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac" }, 
-   "sessionId": "642d2f34f7eb45387a7be64e", "formMetaInfo": 
-{ 
-   "isSecured": true, 
-    "formLinkExpiry": 300, 
-     "submitExpiry": 600
-}, 
-"traceId": "4a663e27051cd294" 
-} 
+{
+  "type": "agent_session_end",
+  "from": "bot",
+  "botInfo": {
+    "chatBot": "Natasha",
+    "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac"
+  },
+  "sessionId": "642d2f34f7eb45387a7be64e",
+  "formMetaInfo": {
+    "isSecured": true,
+    "formLinkExpiry": 300,
+    "submitExpiry": 600
+  },
+  "traceId": "4a663e27051cd294"
+}
 ```
 ## User Input Event
 
@@ -472,18 +469,20 @@ This section describes the User Input Event JSON responses sent to the Kore.ai X
 The following payload is used to send a response message to the XO Platform.
 
 ```json
-{ 
-  "type": "waiting_for_user_input", 
-  "from": "bot", 
-   "botInfo": { "chatBot": "Natasha", 
-   "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac" }, 
-   "sessionId": "642d2f34f7eb45387a7be64e", "formMetaInfo": 
-{ 
-   "isSecured": true, 
-    "formLinkExpiry": 300, 
-     "submitExpiry": 600
-}, 
-"traceId": "4a663e27051cd294" 
+{
+  "type": "waiting_for_user_input",
+  "from": "bot",
+  "botInfo": {
+    "chatBot": "Natasha",
+    "taskBotId": "st-2e2663f4-bc07-583a-b244-3d8e41d3d2ac"
+  },
+  "sessionId": "642d2f34f7eb45387a7be64e",
+  "formMetaInfo": {
+    "isSecured": true,
+    "formLinkExpiry": 300,
+    "submitExpiry": 600
+  },
+  "traceId": "4a663e27051cd294"
 }
 ```
 ## Get Conversation History
@@ -512,7 +511,6 @@ curl 'https://{{APIHost}}/api/botmessages/rtm?botId={{botId}}&limit=10' \
   -H 'content-type: application/json'
 ```
 **Sample Response**
-
 
 ```json
 {
@@ -544,10 +542,7 @@ curl 'https://{{APIHost}}/api/botmessages/rtm?botId={{botId}}&limit=10' \
           "data": {
             "text": "Hi"
           },
-          "thumbnails": [
-
-
-          ]
+          "thumbnails": []
         }
       ],
       "createdOn": "2019-12-03T05:07:44.097Z",
@@ -562,18 +557,9 @@ curl 'https://{{APIHost}}/api/botmessages/rtm?botId={{botId}}&limit=10' \
       "tr_isSS": 1,
       "resourceid": "messagestore",
       "tags": {
-        "messageTags": [
-
-
-        ],
-        "userTags": [
-
-
-        ],
-        "sessionTags": [
-
-
-        ]
+        "messageTags": [],
+        "userTags": [],
+        "sessionTags": []
       }
     },
     {
@@ -594,10 +580,7 @@ curl 'https://{{APIHost}}/api/botmessages/rtm?botId={{botId}}&limit=10' \
           "data": {
             "text": "Please enter the text to comment on the issue"
           },
-          "thumbnails": [
-
-
-          ]
+          "thumbnails": []
         }
       ],
       "botId": "st-2f579dbf-9dc1-548c-972f-f19d33160a07",
@@ -614,18 +597,9 @@ curl 'https://{{APIHost}}/api/botmessages/rtm?botId={{botId}}&limit=10' \
       "sessionId": "5de5eda04cdcff145752dbf6",
       "resourceid": "messagestore",
       "tags": {
-        "messageTags": [
-
-
-        ],
-        "userTags": [
-
-
-        ],
-        "sessionTags": [
-
-
-        ]
+        "messageTags": [],
+        "userTags": [],
+        "sessionTags": []
       }
     }
   ]
@@ -698,6 +672,6 @@ This section describes the various error code responses sent to the Kore.ai XO P
   </tr>
 </table>
 
-## _Next Steps_
+## Next Steps
 
-The XO Platform API endpoints and RTM events can be used with your client app or Kore.ai Bot SDKs. For more information, see the [Kore.ai Bots SDK](https://developer.kore.ai/docs/bots/sdks/kore-web-sdk/).
+The XO Platform API endpoints and RTM events can be used with your client app or Kore.ai Bot SDKs. For more information, see the [Kore.ai Bots SDK](../tutorials/web-sdk/).

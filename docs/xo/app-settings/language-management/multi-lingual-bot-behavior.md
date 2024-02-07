@@ -465,6 +465,10 @@ Tagalog
 
 Here we will list out the NLP features and their support.
 
+!!! Note
+
+      The Spell Correction feature is not supported in Universal bots.
+
 
 <table border="1">
   <tr>

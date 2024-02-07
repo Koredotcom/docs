@@ -133,7 +133,7 @@
             margin-right: 8px;
         }
         .mdc-explore-block-action span{
-            color: var(--primary-600, #155EEF);
+            color: var(--md-typeset-a-color);
             font-size: 14px;
             font-style: normal;
             font-weight: 500;
@@ -182,7 +182,7 @@
             margin: 5px 0px 10px 0px;
         }
         .mdc-services-action{
-            color: var(--primary-500, #155EEF);
+            color: var(--md-typeset-a-color);
             font-size: 14px;
             font-weight: 500;
             line-height: 20px;
@@ -232,13 +232,14 @@
         }
         .mdc-nav-tabs .mdc-nav-item:hover .mdc-nav-link{
             background: var(--primary-50, #EFF4FF);
-            color: var(--primary-600, #155EEF);
+            color: var(--md-typeset-a-color) !important;
         }
         .mdc-nav-tabs .mdc-nav-item.active{
-            background: var(--primary-50, #EFF4FF);
+            background: var(--primary-50, #EFF4FF) !important;
         }
         .mdc-nav-tabs .mdc-nav-item.active .mdc-nav-link{
-            color: var(--primary-600, #155EEF);
+            color: var(--md-typeset-a-color) !important;
+
         }
         .mdc-offering-data{
             display: grid;
@@ -277,7 +278,7 @@
             background: var(--primary-50, #EFF4FF);
         }
         .mdc-offering-data-block:hover .mdc-filter-icon svg path{
-            fill: #155EEF !important;
+            fill: var(--md-typeset-a-color) !important;
         }
         .mdc-offering-info{
             color: var(--gray-500, #667085);
@@ -286,7 +287,7 @@
             line-height: 18px;
         }
         .mdc-offering-action{
-            color: var(--primary-600, #155EEF);
+            color: var(--md-typeset-a-color);
             font-size: 14px;
             font-weight: 400;
             line-height: 20px; 
@@ -444,7 +445,7 @@
             flex-shrink: 0;
         }
         .relase-note-action{
-            color: var(--primary-500, #2970FF);
+            color: var(--md-typeset-a-color);
             font-size: 16px;
             font-weight: 500;
             line-height: 24px;
@@ -492,7 +493,7 @@
             line-height: 24px; 
         }
         .mdc-helpline-block .mdc-helpline-action{
-            color: var(--primary-600, #155EEF);
+            color: var(--md-typeset-a-color);
             font-size: 16px;
             font-weight: 500;
             cursor: pointer;
@@ -544,6 +545,75 @@
             margin-top: 20px !important;
             gap: 10px;
           }
+          .mdc-main-banner h1{
+            font-size: 18px;
+          }
+        }
+        [data-md-color-scheme=slate] .mdc-services-block{
+            background: #2e303d;
+            border-color: var(--md-default-fg-color--light);
+        }
+        [data-md-color-scheme=slate] .mdc-services-block:hover{
+            background: #2e303d;
+            border-color: #fff;
+        }
+        [data-md-color-scheme=slate] .mdc-services-title{
+          color: var(--md-default-fg-color--light);
+        }
+        [data-md-color-scheme=slate] .mdc-services-des{
+          color: #fff;
+        }
+        [data-md-color-scheme=slate] .mdc-explore-block{
+            background: #2e303d;
+        }
+        [data-md-color-scheme=slate] .explore-content span{
+          color: var(--md-default-fg-color--light);
+        }
+        [data-md-color-scheme=slate] .explore-content{
+          color: #fff;
+        }
+        [data-md-color-scheme=slate] .mdc-browse-by-offering{
+          background: #2e303d;
+        }
+        [data-md-color-scheme=slate] .mdc-main-title, [data-md-color-scheme=slate] .mdc-heading,[data-md-color-scheme=slate] .mdc-whats-new-title,[data-md-color-scheme=slate]  .mdc-whats-new-right h4{
+            color: var(--md-default-fg-color--light);
+        }
+        [data-md-color-scheme=slate] .mdc-offering-data-block:hover{
+            border: 1px solid #fff;
+            background: #2e303d !important;
+        }
+        [data-md-color-scheme=slate]  .mdc-nav-tabs .mdc-nav-item .mdc-nav-link{
+            color: var(--md-default-fg-color--light);
+        }
+        [data-md-color-scheme=slate] .mdc-offering-data-block .mdc-offering-header{
+            color: var(--md-default-fg-color--light);
+        }
+        [data-md-color-scheme=slate] .mdc-offering-info, [data-md-color-scheme=slate] .mdc-des, [data-md-color-scheme=slate] .mdc-whats-new-des p, [data-md-color-scheme=slate] .mdc-whats-new-block span,[data-md-color-scheme=slate] .mdc-whats-new-right p{
+            color: #fff;
+        }
+        [data-md-color-scheme=slate]  .mdc-offering-data-block .mdc-filter-icon svg path{
+            fill: var(--md-default-fg-color--light) !important;
+        }
+        [data-md-color-scheme=slate] .mdc-offering-data-block:hover .mdc-filter-icon svg path{
+            fill: var(--md-typeset-a-color) !important;
+        }
+        [data-md-color-scheme=slate]  .mdc-whats-new-right{
+            background: transparent;
+           border: 1px solid var(--md-default-fg-color--light);
+        }
+        [data-md-color-scheme=slate]  .mdc-email-notifi .input-email,[data-md-color-scheme=slate]  .mdc-email-notifi .send-btn{
+            border-color: var(--md-default-fg-color--light);
+            background: transparent;
+            color: #fff;
+        }
+        [data-md-color-scheme=slate] .mdc-whats-new-title svg path{
+          fill: #fff !important;
+        }
+        [data-md-color-scheme=slate] .mdc-helpline-block .mdc-helpline-title{
+           color: var(--md-default-fg-color--light)
+        }
+        [data-md-color-scheme=slate] .mdc-helpline-block svg path{
+           color: var(--md-default-fg-color--light)
         }
         </style>
       <section class="mdx-container">
@@ -579,7 +649,7 @@
                     <div class="mdc-explore-block-action">
                         <a href="../getting-started/about-xo-platform/">
                           <span>Get Started <svg width="21" height="21" viewBox="0 0 21 21" fill="none">
-                            <path d="M4.66675 10.5948H16.3334M16.3334 10.5948L10.5001 4.76151M16.3334 10.5948L10.5001 16.4282" stroke="#155EEF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.66675 10.5948H16.3334M16.3334 10.5948L10.5001 4.76151M16.3334 10.5948L10.5001 16.4282" stroke="#6c91d5" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg></span>                            
                         </a>
                     </div>
@@ -614,7 +684,7 @@
                         <img src="assets/agentasisst.svg" alt="AgentAssist">
                     </div>
                     <div class="mdc-services-info">
-                        <h4 class="mdc-services-title">AgentAssist</h4>
+                        <h4 class="mdc-services-title">AgentAI</h4>
                         <p class="mdc-services-des">An AI-first intelligent virtual assistant to elevate your agents' productivity and experience.</p>
                         <span class="mdc-services-action">Learn More</span>
                     </div>
@@ -629,7 +699,7 @@
                         <span class="mdc-services-action">Learn More</span>
                     </div>
                 </a>
-                <a class="mdc-services-block">
+                <a  href="../campaigns/about-campaigns/" class="mdc-services-block">
                     <div class="mdc-services-icon">
                         <img src="assets/campaign.svg" alt="Campaigns">
                     </div>
@@ -680,7 +750,7 @@
                             Build conversation use cases
                         </div>
                         <a href="#" class="mdc-offering-action">View <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
-                            <path d="M4.16675 10.5949H15.8334M15.8334 10.5949L10.0001 4.76152M15.8334 10.5949L10.0001 16.4282" stroke="#155EEF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.16675 10.5949H15.8334M15.8334 10.5949L10.0001 4.76152M15.8334 10.5949L10.0001 16.4282" stroke="#6c91d5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg></a>
                     </div>
                     <div class="mdc-offering-data-block">
@@ -696,7 +766,7 @@
                             Train your virtual assistant
                         </div>
                         <a href="#" class="mdc-offering-action">View <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
-                            <path d="M4.16675 10.5949H15.8334M15.8334 10.5949L10.0001 4.76152M15.8334 10.5949L10.0001 16.4282" stroke="#155EEF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.16675 10.5949H15.8334M15.8334 10.5949L10.0001 4.76152M15.8334 10.5949L10.0001 16.4282" stroke="#6c91d5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg></a>
                     </div>
                     <div class="mdc-offering-data-block">
@@ -712,7 +782,7 @@
                             Define FAQs
                         </div>
                         <a href="#" class="mdc-offering-action">View <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
-                            <path d="M4.16675 10.5949H15.8334M15.8334 10.5949L10.0001 4.76152M15.8334 10.5949L10.0001 16.4282" stroke="#155EEF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.16675 10.5949H15.8334M15.8334 10.5949L10.0001 4.76152M15.8334 10.5949L10.0001 16.4282" stroke="#6c91d5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg></a>
                     </div>
                     <div class="mdc-offering-data-block">
@@ -728,7 +798,7 @@
                             Configure NLP, LLM, and Gen AI
                         </div>
                         <a href="#" class="mdc-offering-action">View <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
-                            <path d="M4.16675 10.5949H15.8334M15.8334 10.5949L10.0001 4.76152M15.8334 10.5949L10.0001 16.4282" stroke="#155EEF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.16675 10.5949H15.8334M15.8334 10.5949L10.0001 4.76152M15.8334 10.5949L10.0001 16.4282" stroke="#6c91d5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg></a>
                     </div>
                     <div class="mdc-offering-data-block">
@@ -744,7 +814,7 @@
                             Design rich input interface
                         </div>
                         <a href="#" class="mdc-offering-action">View <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
-                            <path d="M4.16675 10.5949H15.8334M15.8334 10.5949L10.0001 4.76152M15.8334 10.5949L10.0001 16.4282" stroke="#155EEF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.16675 10.5949H15.8334M15.8334 10.5949L10.0001 4.76152M15.8334 10.5949L10.0001 16.4282" stroke="#6c91d5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg></a>
                     </div>
                     <div class="mdc-offering-data-block">
@@ -760,7 +830,7 @@
                             Define events, standard responses, interruption behavior
                         </div>
                         <a href="#" class="mdc-offering-action">View <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
-                            <path d="M4.16675 10.5949H15.8334M15.8334 10.5949L10.0001 4.76152M15.8334 10.5949L10.0001 16.4282" stroke="#155EEF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.16675 10.5949H15.8334M15.8334 10.5949L10.0001 4.76152M15.8334 10.5949L10.0001 16.4282" stroke="#6c91d5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg></a>
                     </div>
                 </div>
