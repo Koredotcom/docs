@@ -393,7 +393,7 @@ nav:
         - SDK Events: sdk/sdk-events.md
         - SDK Functions: sdk/sdk-functions.md
         - SDK Tutorials:
-          - BotKit - Blue Prism: sdk/tutorials/blueprism.md
+          - BotKit - Blue Prism: sdk/tutorials/blue-prism.md
           - BotKit - Flight Search Sample VA: sdk/tutorials/flight-search-sample-bot.md
           - BotKit - Agent Transfer: sdk/tutorials/agent-transfer.md
           - Widget SDK Tutorial: sdk/tutorials/widget-sdk.md
