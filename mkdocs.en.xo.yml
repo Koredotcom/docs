@@ -372,7 +372,7 @@ nav:
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/api-list.md
-        - API List: apis/api-list.md
+        - API List:
           - Automation APIs: apis/api-list.md
           - Contact Center APIs: apis/api-list.md
       - SDK Reference:
