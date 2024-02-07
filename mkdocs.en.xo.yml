@@ -328,7 +328,7 @@ nav:
     - CONTENT SOURCES:
       - Directory: answers/content-sources/directory.md 
       - Web Crawl: answers/content-sources/web-crawl.md      
-  - CONTACT CENTER:
+  - Contact Center:
     - Overview: contactcenter/about-contact-center.md 
     - Agent and Supervisors: 
       - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
@@ -348,6 +348,12 @@ nav:
     - Routing:
       - Queues: contactcenter/routing/queues/queue-management.md
       - Skills: contactcenter/routing/skills/skill-management.md
+    - Console:
+      - Additional Tools: console/additional-tools/additional-tools.md
+      - Conversation Tray: console/conversation-tray/conversation-tray.md
+      - Incoming Interactions: console/incoming-interactions/managing-incoming-interactions.md
+      - Interacting With Customers: console/interacting-with-customers/interacting-with-customers.md
+      - Introduction to the Console: console/introduction-to-the-console/introduction.md
   - AgentAI:
     - Overview: agentassist/about-agentassist.md 
     - Agent Experience:
@@ -385,12 +391,6 @@ nav:
       - Queues & Agents: analytics/contact-center/queues-and-agents.md
       - Interactions: analytics/contact-center/interactions.md
       - Reports: analytics/contact-center/interactions.md
-  - CONSOLE:
-    - Additional Tools: console/additional-tools/additional-tools.md
-    - Conversation Tray: console/conversation-tray/conversation-tray.md
-    - Incoming Interactions: console/incoming-interactions/managing-incoming-interactions.md
-    - Interacting With Customers: console/interacting-with-customers/interacting-with-customers.md
-    - Introduction to the Console: console/introduction-to-the-console/introduction.md
   - Administration:
     - Contributing:
       - contributing/index.md
