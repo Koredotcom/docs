@@ -331,7 +331,7 @@ nav:
       - Web Crawl: answers/content-sources/web-crawl.md  
       - Directory: answers/content-sources/directory.md 
       - Connectors: answers/content-sources/connectors.md 
-	  - Extraction Strategy: answers/content-extraction/extraction.md
+    - Extraction Strategy: answers/content-extraction/extraction.md
 	  - Chunk Browser: answers/chunk-browser.md
 	  - Index Configuration: answers/index-configuration.md
 	  - Answer Configuration: answers/answer-configuration.md
