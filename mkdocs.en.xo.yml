@@ -378,26 +378,26 @@ nav:
       - External NLU Adapters: channels/IVR-integration.md
     - APIs and SDKs:
       - API Reference:
-        - Getting Started: apis/api-list.md
+        - Getting Started: apis/automation/api-introduction.md
         - API List:
-          - Automation APIs: apis/api-list.md
+          - Automation APIs: apis/automation/api-list.md
           - Contact Center APIs: apis/api-list.md
+        - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
-        - SDK Introduction: channels/IVR-integration.md
-        - SDK Security: channels/IVR-integration.md
-        - SDK Registration: channels/IVR-integration.md 
-        - Web Socket Connect and RTM: channels/IVR-integration.md
-        - Installing the BotKit SDK: channels/IVR-integration.md
-        - Using the BotKit SDK: channels/IVR-integration.md
-        - SDK Events: channels/IVR-integration.md
-        - SDK Functions: channels/IVR-integration.md
+        - SDK Introduction: sdk/bot-sdk-introduction.md
+        - SDK Security: sdk/sdk-security.md
+        - SDK Registration: sdk/app-registration.md 
+        - Web Socket Connect and RTM: sdk/web-socket-connect-and-rtm.md
+        - Installing the BotKit SDK: sdk/installing-the-botkit-sdk.md
+        - Using the BotKit SDK: sdk/using-the-botkit-sdk.md
+        - SDK Events: sdk/sdk-events.md
+        - SDK Functions: sdk/sdk-functions.md
         - SDK Tutorials:
-          - BotKit - Blue Prism: channels/IVR-integration.md
-          - BotKit - Flight Search Sample VA: channels/IVR-integration.md
-          - BotKit - Agent Transfer: channels/IVR-integration.md
-          - Widget SDK Tutorial: channels/IVR-integration.md
-          - Web SDK Tutorial: channels/IVR-integration.md
-      - koreUtil Libraries: channels/IVR-integration.md    
+          - BotKit - Blue Prism: sdk/tutorials/blueprism.md
+          - BotKit - Flight Search Sample VA: sdk/tutorials/flight-search-sample-bot.md
+          - BotKit - Agent Transfer: sdk/tutorials/agent-transfer.md
+          - Widget SDK Tutorial: sdk/tutorials/widget-sdk.md
+          - Web SDK Tutorial: sdk/tutorials/web-sdk.md   
   - Analytics:
     - Introduction: analytics/introduction.md
     - Dashboard Filters: analytics/dashboard-filters.md
