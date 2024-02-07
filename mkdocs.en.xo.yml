@@ -375,7 +375,7 @@ nav:
         - API List: apis/api-list.md
           - Automation APIs: apis/api-list.md
           - Contact Center APIs: apis/api-list.md
-      - SDK Reference:                  
+      - SDK Reference:
         - SDK Introduction: channels/IVR-integration.md
         - SDK Security: channels/IVR-integration.md
         - SDK Registration: channels/IVR-integration.md 
