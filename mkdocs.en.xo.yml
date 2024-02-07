@@ -332,10 +332,10 @@ nav:
       - Directory: answers/content-sources/directory.md 
       - Connectors: answers/content-sources/connectors.md 
     - Extraction Strategy: answers/content-extraction/extraction.md
-	  - Chunk Browser: answers/chunk-browser.md
-	  - Index Configuration: answers/index-configuration.md
-	  - Answer Configuration: answers/answer-configuration.md
-  	- Business Rules: answers/business-rules.md     
+    - Chunk Browser: answers/chunk-browser.md
+    - Index Configuration: answers/index-configuration.md
+    - Answer Configuration: answers/answer-configuration.md
+    - Business Rules: answers/business-rules.md     
   - Contact Center:
     - Overview: contactcenter/about-contact-center.md 
     - Agent and Supervisors: 
