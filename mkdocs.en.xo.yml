@@ -328,7 +328,7 @@ nav:
     - CONTENT SOURCES:
       - Directory: answers/content-sources/directory.md 
       - Web Crawl: answers/content-sources/web-crawl.md      
-  - Contact Center:
+  - CONTACT CENTER:
     - Overview: contactcenter/about-contact-center.md 
     - Agent and Supervisors: 
       - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
@@ -385,7 +385,7 @@ nav:
       - Queues & Agents: analytics/contact-center/queues-and-agents.md
       - Interactions: analytics/contact-center/interactions.md
       - Reports: analytics/contact-center/interactions.md
-  - Console:
+  - CONSOLE:
     - Additional Tools: console/additional-tools/additional-tools.md
     - Conversation Tray: console/conversation-tray/conversation-tray.md
     - Incoming Interactions: console/incoming-interactions/managing-incoming-interactions.md
