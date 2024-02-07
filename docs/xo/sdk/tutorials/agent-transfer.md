@@ -17,19 +17,17 @@ To complete this tutorial, you will have to set up and configure the following p
 To get your _LiveChat_ license code for your BotKit SDK configuration:
 
 1. Log into your LiveChat account and click the **Settings** icon on the left navigation bar.
-2. You will be taken to the _Website Channel Settings_ page and you will find the **License ID** right underneath the area that lets you _Install LiveChat Code Manually_, as illustrated below. 
+2. You will be taken to the _Website Channel Settings_ page and you will find the **License ID** right underneath the area that lets you _Install LiveChat Code Manually_, as illustrated below.
 ![alt_text](../images/livechat-settings.png "LiveChat Settings")
 
 !!!note
     Make sure url-template and node-schedule modules (and any other modules as referenced in js file related to LiveChat) are installed on your computer.
-```
 
 ### Installing and running _ngrok_
 
 To download the test callback server application, click [https://ngrok.com/download](https://ngrok.com/download), and then download and install the _ngrok_ file for your operating system.
 
 In a **Terminal** Window, start _ngrok_ to monitor port 8003 using the following command:
-
 
 ```json
 ngrok http 8003
@@ -66,7 +64,7 @@ To install the Airlines Travel Planning assistant
 1. Log on to XO Platform, and then click **New Bot > Start from the Store**.
 2. Point to **Airlines Airlines Travel Planning**, and then click **Install**. The Airlines _Airlines Travel Planning_KORE NAME_Instance# The installed successful_ message is displayed and the sample assistant is added to the left-hand navigation menu.
 
-Once the sample assistant is installed, create an **_Agent Transfer_** dialog task. Learn more about the [Dialog Builder](automation/use-cases/using-the-dialog-builder-tool) and with the [Agent Transfer node](automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md).
+Once the sample assistant is installed, create an **_Agent Transfer_** dialog task. Learn more about the [Dialog Builder](../../automation/use-cases/using-the-dialog-builder-tool) and with the [Agent Transfer node](../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md).
 
 ### Registering Your App and Generating Client Credentials
 
@@ -75,13 +73,13 @@ To register your BotKit SDK with the Kore.ai XO Platform, you will need to creat
 **Creating an App Registration**
 
 1. In the XO Platform, go to **Build > Integrations > BotKit**.
-!!!note:
+  !!!note:
     RS256 and RS512 JWT signing algorithms are not supported for Custom BotKit or Botkit.
 2. Click the **Add** button next to the **App name** drop-down list.
 3. Enter a name for the app and then click Next.
 4. The Client ID and Client Secret details appear. Click **Done**.
 5. In the **Callback URL** field, enter the URL for your application that you copied from the **Forwarding URL** from the _ngrok_ application that you installed and ran as part of the prerequisites, for example,  https://1bXXXXd2.ngrok.io.
-!!!note
+  !!!note
     Each running instance of ngrok will generate a session unique URL. You need to update the Callback URL field if you stop and restart ngrok._**
 6. In the **Events** section, select:
     * **OnMessage** – An event is triggered when a message from a user is received.
@@ -98,7 +96,7 @@ To configure the BotKit SDK settings, you will need to:
 
 A developer can use any installed assistant immediately for testing as it is available to the owner on save. If you only want to run and test this assistant for this tutorial, you can skip to the next section, _Installing and Configuring the BotKit SDK_.
 
-To enable the assistant for other users, you must publish it so the Admin can approve and deploy the assistant for other users. For more information, see [Publishing an Assistant](/docs/xo/deploy/publishing-bot).
+To enable the assistant for other users, you must publish it so the Admin can approve and deploy the assistant for other users. For more information, see [Publishing an Assistant](../../deploy/publishing-bot).
 
 After you publish an assistant in XO Platform, an Admin must complete one of the following deployments tasks in the Admin Console depending on whether your assistant’s **Target Audience** is set to **Enterprise Users** or the **General Public**.
 

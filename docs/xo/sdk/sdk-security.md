@@ -186,7 +186,7 @@ NOTE: Use <em>kore_sub</em> to bypass the pre-populated value for <em>sub</em> w
    </td>
    <td>The anonymous Identity that needs to be merged into known user
 <p/>
-<a href="https://developer.kore.ai/docs/bots/sdks/kore-ai-web-sdk-tutorial/#Passing_Mapped_Identities_webSDK">refer here</a> for details
+<a href="../tutorials/web-sdk/#passing-mapped-identities">refer here</a> for details
    </td>
    <td>string
    </td>
@@ -197,14 +197,18 @@ NOTE: Use <em>kore_sub</em> to bypass the pre-populated value for <em>sub</em> w
 
 In case jti claim is passed as part of the JWT payload, the Platform performs the following validations:
 
+1. Expiry to be less than or equal to 1 hour: In case of failing to meet this requirement the following response is sent:
 
-1. Expiry to be less than or equal to 1 hour: In case of failing to meet this requirement the following response is sent: \
 ```json
-{"errors":[{"msg":"error verifying the jwt: if \"jti\" claim \"exp\" must be &lt;= 1 hour(s)","code":401}]}
+{
+    "errors":[{"msg":"error verifying the jwt: if \"jti\" claim \"exp\" must be &lt;= 1 hour(s)","code":401}]
+}
 ```
-2. Restricts replay of XHR: The following response is sent in case of non-compliance: \
+2. Restricts replay of XHR: The following response is sent in case of non-compliance:
 ```json
-{"errors":[{"msg":"error verifying the jwt: possibly a replay","code":401}]}
+{
+    "errors":[{"msg":"error verifying the jwt: possibly a replay","code":401}]
+}
 ```
 
 #### Hosting the JWT Generation Web Service
@@ -214,7 +218,7 @@ The Kore.ai SDK libraries and UI widgets are integrated directly into your clien
 * For the Web SDK, the SDK libraries are run from the user’s browser.
 * For mobile SDKs, the SDK libraries are run from a user’s mobile phone.
 
-You need to host the JWT generation as a REST web service for security because the **Client Secret** or **RSA Private Key** is required for JWT generation and should not be hosted at the client application. You can make the REST web service directly available to SDK libraries or have your application call the JWT generation web service at the backend to make the JWT available to the SDK libraries. \
+You need to host the JWT generation as a REST web service for security because the **Client Secret** or **RSA Private Key** is required for JWT generation and should not be hosted at the client application. You can make the REST web service directly available to SDK libraries or have your application call the JWT generation web service at the backend to make the JWT available to the SDK libraries.
 When making the JWT generation web service available to the SDK libraries, you should keep the **Client ID**, **Client Secret**, and any key expiration logic on the server-side and expect only the user ID from the client.
 
 There are several open-source libraries available to generate JWT, for example,
@@ -223,9 +227,9 @@ There are several open-source libraries available to generate JWT, for example,
 * Java – [https://github.com/auth0/java-jwt](https://github.com/auth0/java-jwt)
 * .Net – [https://github.com/jwt-dotnet/jwt](https://github.com/jwt-dotnet/jwt)
 
-To generate credentials for your clients, you must register your client app in the XO Platform tool. For more information, see [SDK App Registration](https://developer.kore.ai/docs/bots/sdks/sdk-app-registration/).
+To generate credentials for your clients, you must register your client app in the XO Platform tool. For more information, see [SDK App Registration](../app-registration).
 
-You can also try out our tutorial using a Kore.ai sample bot, a test application, and configuring your localhost server for JWT generation. For more information, see the [Kore.ai Web SDK Tutorial](https://developer.kore.ai/docs/bots/sdks/kore-ai-web-sdk-tutorial/).
+You can also try out our tutorial using a Kore.ai sample bot, a test application, and configuring your localhost server for JWT generation. For more information, see the [Kore.ai Web SDK Tutorial](../tutorials/web-sdk).
 
 ## JSON Web Encryption (JWE)
 
@@ -268,7 +272,8 @@ Below is the decoded sample JWE header: \
 "enc": "A128CBC-HS256",
 "kid": "k-ffb4hty69-750a-44af-91c1-de0bvcf6a", 
 "typ": "JWT"
-}```
+}
+```
 
 
 #### JWE Encrypted Key (CEK)
@@ -291,7 +296,7 @@ This contains encrypted content of the payload. This is encrypted using the algo
 The Authentication tag is generated when authenticated encryption is performed using the algorithm specified in “_enc_” field of the header. This is used during decryption to ensure integrity.
 
 
-### How to Generate a JWE Token?
+### How to Generate a JWE Token
 
 Generating a JWE token involves the following steps:
 
@@ -300,11 +305,11 @@ Generating a JWE token involves the following steps:
 3. **Choose Encryption Algorithms**: Common algorithms include “RSA-OAEP” for asymmetric encryption and “A256GCM” for symmetric encryption with AES-GCM.
 4. **Generate or Obtain Encryption Keys**: You will need encryption keys depending on the chosen algorithm. For asymmetric encryption, you’ll need a public key; for symmetric encryption, you’ll need a shared secret key.
 
-**Create the JWE Token**: Use your JWE library to create the JWE token. Here’s a Python example using the `PyJWT` library: \
+**Create the JWE Token**: Use your JWE library to create the JWE token. Here’s a Python example using the `PyJWT` library:
+
 ```python
 
-import jwt`
-
+import jwt
 # Sample payload data you want to include in the JWE token
 # Use the "PrivateClaims" or "SecureCustomData" key to securely pass additional 
 # data to the Platform
@@ -328,15 +333,15 @@ jwe_token = jwt.encode(
     headers={"alg": "A256GCM"}  # Algorithm for encryption (AES-GCM)
 )
 print("JWE Token:", jwe_token)
-
 ```
+
 You can now use the generated JWE token in your application.
 
 ### Find the Kore.ai JWE Public Key
 
-The _Kore.ai Public Key_ is displayed in JWK format when you enable the JWE option while creating an SDK app. You can use this in your client library to generate JWE. \
+The _Kore.ai Public Key_ is displayed in JWK format when you enable the JWE option while creating an SDK app. You can use this in your client library to generate JWE.
 
-![alt_text](../images/publickey.png "image_tooltip")
+![Public Key](../images/publickey.png "Public key")
 
 ### Verify and Decrypt the JWE
 
@@ -346,7 +351,8 @@ Let’s see an example of how you can verify and decrypt the JWE, assuming you h
 2. **Load the Public Key**: Load the JWE public key in the form of a JSON Web Key (JWK); for example, the _Kore.ai JWE Public Key_ as shown in the previous section.
 3. **Decode and Verify**: Use the public key to verify and decrypt the JWE.
 
-**Putting it all together**: Here’s a Python example using the `PyJWT` library: \
+**Putting it all together**: Here’s a Python example using the `PyJWT` library:
+
 ```python
 import jwt
 # Sample JWE token
@@ -374,6 +380,7 @@ except jwt.DecodeError:
     print("Invalid JWE Signature or Decryption failed.")
 
 ```
+
 In this example code:
 
 * ‘jwe_token` is the JWE that you want to verify and decrypt.

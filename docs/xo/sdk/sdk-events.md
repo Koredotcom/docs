@@ -180,32 +180,32 @@ Examples: In the following example for the `on_webhook` event, two hotel names a
 In this example for the `on_webhook` event, for the _Flights Info_ node in a dialog task, either a list of departure or destination airports based on the requested date is returned based on the flow of the dialog, as a list of results displayed to the end user.
 
 ```javascript
-on_webhook : function(requestId, payload, componentId, callback) {
-    var context = payload.context;
-	if (componentName === 'FlightsInfo') {
-		var origin = context.entities.Source;
-        var destination = context.entities.Dest;
-        var departureDate = context.entities.Date;
-        findFlights(origin,destination,departureDate)
-		    .then(function(flightResults) {
-                payload.context.flightResults = flightResults;
-				callback(null, data);
-			    });
-	} else if(componentId === 'GetSourceAirports'){
-        var searchTerm = context.entities.SourceName;
-        findAirports(searchTerm)
-            .then(function(airportResults) {
-                payload.context.sourceAirports = airportResults;
-                callback(null, data);
-            });
-    } else if(componentId === 'GetDestAirports'){
-        var searchTerm = context.entities.DestName;
-        findAirports(searchTerm)
-            .then(function(airportResults) {
-                payload.context.destAirports = airportResults;
-                callback(null, data);
-            });
-    }
+on_webhook: function(requestId, payload, componentId, callback) {
+        var context = payload.context;
+        if (componentName === 'FlightsInfo') {
+            var origin = context.entities.Source;
+            var destination = context.entities.Dest;
+            var departureDate = context.entities.Date;
+            findFlights(origin, destination, departureDate)
+                .then(function(flightResults) {
+                    payload.context.flightResults = flightResults;
+                    callback(null, data);
+                });
+        } else if (componentId === 'GetSourceAirports') {
+            var searchTerm = context.entities.SourceName;
+            findAirports(searchTerm)
+                .then(function(airportResults) {
+                    payload.context.sourceAirports = airportResults;
+                    callback(null, data);
+                });
+        } else if (componentId === 'GetDestAirports') {
+            var searchTerm = context.entities.DestName;
+            findAirports(searchTerm)
+                .then(function(airportResults) {
+                    payload.context.destAirports = airportResults;
+                    callback(null, data);
+                });
+        }
 ```
 
 ## onAgentTransfer
@@ -214,7 +214,7 @@ This event is triggered when the Kore NL Engine processes an Agent Transfer node
 
 ```javascript
 function onAgentTransfer(requestId, data, callback){
-connectToAgent(requestId, data, callback);
+    connectToAgent(requestId, data, callback);
 }
 ```
 
@@ -237,40 +237,40 @@ Parameters:
 Example: The following code snippet onAgentTransfer event connects the user to a Live Agent and passing the user message, bot message, and historical chat messages of the session.
 
 ```javascript
-function connectToAgent(requestId, data, cb){
-var formdata = {}; console.log("userlog",JSON.stringify(data.context.session.UserContext._id));
-formdata.licence_id = config.liveagentlicense;
-formdata.welcome_message = "";
-var visitorId = _.get(data, 'channel.channelInfos.from');
-if(!visitorId){
-visitorId = _.get(data, 'channel.from');
+function connectToAgent(requestId, data, cb) {
+    var formdata = {};
+    console.log("userlog", JSON.stringify(data.context.session.UserContext._id));
+    formdata.licence_id = config.liveagentlicense;
+    formdata.welcome_message = "";
+    var visitorId = _.get(data, 'channel.channelInfos.from');
+    if (!visitorId) {
+        visitorId = _.get(data, 'channel.from');
+    }
+    visitorId = data.context.session.UserContext._id;
+    userDataMap[visitorId] = data;
+    data.message = "An Agent will be assigned to you shortly!!!";
+    var d = new Date();
+    data.context.session.BotUserSession.startTime = new Date().toLocaleString();
+    console.log("userlog", JSON.stringify(data.context.session));
+    sdk.sendUserMessage(data, cb);
+    formdata.welcome_message = "Link for user Chat history with the assistant : " + config.app.url + "/history/index.html?visitorId=" + visitorId;
+    return api.initChat(visitorId, formdata)
+        .then(function(res) {
+            _map[visitorId] = {
+                secured_session_id: res.secured_session_id,
+                visitorId: visitorId,
+                last_message_id: 0
+            };
+        });
 }
-visitorId = data.context.session.UserContext._id;
-userDataMap[visitorId] = data;
-data.message="An Agent will be assigned to you shortly!!!";
-var d = new Date();
-data.context.session.BotUserSession.startTime = new Date().toLocaleString();
-console.log("userlog",JSON.stringify(data.context.session));
-sdk.sendUserMessage(data, cb);
-formdata.welcome_message = "Link for user Chat history with the assistant : "+ config.app.url +"/history/index.html?visitorId=" + visitorId;
-return api.initChat(visitorId, formdata)
-.then(function(res){
-_map[visitorId] = {
-secured_session_id: res.secured_session_id,
-visitorId: visitorId,
-last_message_id: 0
-};
-});
-}
-
-
 ```
 
 ## OnEvent
 
 This event is triggered when Dialog Task or FAQ ends in the assistant and sends request ID and context to the SDK. 
 
-Syntax: on_event : function (requestId, data, callback) 
+Syntax: 
+`on_event : function (requestId, data, callback)`
 
 Parameters:
 
@@ -331,15 +331,15 @@ Parameters:
 var event = data.eventType;
 console.log("event----------->", event);
 if (first || event == "variable_update") {
-// fetch BotVariables List for published assistants
-sdk.fetchBotVariable(data, langArr, function(err, response) {
-dataStore.saveAllVariables(response, langArr);
-first = false;
-});
+    // fetch BotVariables List for published assistants
+    sdk.fetchBotVariable(data, langArr, function(err, response) {
+        dataStore.saveAllVariables(response, langArr);
+        first = false;
+    });
 } else {
-var lang = data.language;
-//update Existing BotVariables in Storage
-updateBotVariableInDataStore(botVariables, data, event, lang);
+    var lang = data.language;
+    //update Existing BotVariables in Storage
+    updateBotVariableInDataStore(botVariables, data, event, lang);
 }
 console.log(dataStore);
 ```
@@ -376,14 +376,18 @@ These events are associated with the application subscribing to botkit event typ
         “botInfo”: {“chatBot”:”&lt;bot-name>”, “taskBotId”:”&lt;bot-id>”} 
     } 
     ```
-    _Response1_: 
+
+    _Response1_:
+
     ```json
     {
         “ok”:true,
         ”type”:”ack”
     }
     ```
+
     _Response2_:
+
     ```json
     {
         “type”:”events”, “from”:”bot”, 
@@ -393,6 +397,7 @@ These events are associated with the application subscribing to botkit event typ
     ```
 
 * **User stopped typing:**
+
     _Request_:
 
     ```json
@@ -427,6 +432,7 @@ These events are associated with the application subscribing to botkit event typ
     ```
 
 * **User read the message:**
+
     _Request_:
 
     ```json 

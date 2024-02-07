@@ -34,11 +34,11 @@ All the feedback survey messages exchanged between the user and the assistant ar
 
 ### Webhooks
 
-Your BotKit SDK receives webhook events whenever the natural language processor enters the SDK [Webhook node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-web-hook-node/) in an XO Platform dialog task flow. In the following sequence diagram, flow for a user sending a message via a channel until the user response is shown.
+Your BotKit SDK receives webhook events whenever the natural language processor enters the SDK [Webhook node](../../automation/use-cases/dialogs/node-types/working-with-the-web-hook-node) in an XO Platform dialog task flow. In the following sequence diagram, flow for a user sending a message via a channel until the user response is shown.
 
 ![alt_text](../images/send-message-via-channel.png "send message via a channel")
 
-For webhook events, you should add a [Webhook node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-web-hook-node/) in the dialog task flow whenever there is a need for server-side validation, execution of business logic, or a backend server call is required. Business logic and the response is sent on the same on_webhook event. The response is an HTTP status code 202. To send response data to the XO Platform from the SDK, call the sdk.sendWebhookResponse() event.
+For webhook events, you should add a [Webhook node](../../automation/use-cases/dialogs/node-types/working-with-the-web-hook-node) in the dialog task flow whenever there is a need for server-side validation, execution of business logic, or a backend server call is required. Business logic and the response is sent on the same on_webhook event. The response is an HTTP status code 202. To send response data to the XO Platform from the SDK, call the sdk.sendWebhookResponse() event.
 
 Webhook events are received by the SDK when the Kore.ai NL Engine processes a Webhook node in a dialog task flow. The Kore.ai NLP engine processes each node, and then transitions to the next node based on the conditions defined. When a Webhook node is processed, a webhook call is executed and the XO Platform sends the on_webhook event to the SDK. The following sequence diagram shows the message flow with a webhook.
 
@@ -52,11 +52,11 @@ In the following sequence diagram, the XO Platform responds to user input direct
 
 To set up an Agent Transfer in your dialog conversation flow, you will need to:
 
-1. Create an app on the XO Platform under **Build > Integrations > BotKit** section. \
+1. Create an app on the XO Platform under **Build > Integrations > BotKit** section. 
 !!!note
     RS256 and RS512 JWT signing algorithms are not supported for Custom BotKit or BotKit.
 2. Define the **Callback URL** and generate **Client ID** and **Client Secret**, and enable **OnAgentTransferNode**.
 3. Identify the steps and define the transition conditions to meet to transfer to an agent.
 4. Add the Agent Transfer node in the dialog flow as shown in the following illustration
 
-For more information, see [BotKit SDK Tutorial – Agent Transfer](https://developer.kore.ai/docs/bots/sdks/botkit-sdk-tutorial-agent-transfer/).
+For more information, see [BotKit SDK Tutorial – Agent Transfer](../tutorials/agent-transfer).

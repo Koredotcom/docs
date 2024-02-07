@@ -16,7 +16,7 @@ To retrieve the data associated with custom widgets and the reports of a bot.
    </td>
    <td><code>https://{{host}}/api/public/bot/{{BotID}}/dashboard/</code>
 <code>{{dashboardName}}/widget/{{widgetName}}?startDate={{startDate}}&endDate={{endDate}}&limit=-1</code>
-<strong>Note:</strong> A POST API call is now supported to include the additional filters for querying the data. See <a href="../../analytics/automation/custom-dashboard/create-custom-dashboard-filters">Custom Dashboard Filters</a> to know more about additional filters.
+<strong>Note:</strong> A POST API call is now supported to include the additional filters for querying the data. See <a href="../../../analytics/automation/custom-dashboard/create-custom-dashboard-filters">Custom Dashboard Filters</a> to know more about additional filters.
    </td>
   </tr>
   <tr>
@@ -176,7 +176,7 @@ values
    </td>
    <td>Required
    </td>
-   <td>To understand about the custom dashboard filters, see <a href="../../analytics/automation/custom-dashboard/create-custom-dashboard-filters">Create Custom Dashboard Filters</a>.
+   <td>To understand about the custom dashboard filters, see <a href="../../../analytics/automation/custom-dashboard/create-custom-dashboard-filters">Create Custom Dashboard Filters</a>.
    </td>
   </tr>
 </table>

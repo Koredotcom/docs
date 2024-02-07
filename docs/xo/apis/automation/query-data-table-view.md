@@ -27,7 +27,7 @@ Used to get data from Table View.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -35,7 +35,7 @@ See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_
    </td>
    <td>Read access to the Data Table from the Data Definition in DaaS.
 <p>
-For more information, see <a href="https://developer.kore.ai/docs/bots/advanced-topics/data-table/#Assignments">app assignment for accessing the data in a table </a>and <a href="https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/#Assignments">Data as a Service </a>articles.
+For more information, see <a href="../../../administration/data/data-table">app assignment for accessing the data in a table </a>and <a href="../../../administration/data/data-as-service">Data as a Service </a>articles.
    </td>
   </tr>
 </table>
@@ -129,10 +129,6 @@ curl -X POST \
    </td>
   </tr>
 </table>
-
-
- 
-
 
 ## Sample Response
 

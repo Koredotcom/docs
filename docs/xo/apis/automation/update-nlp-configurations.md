@@ -158,7 +158,7 @@ The parameters depend on the threshold configuration that needs to be updated. T
 
 #### Machine Learning Engine
 
-This section refers to the configurations related to the Machine Learning engine. For details on the configurations, please click [here](/docs/xo/automation/natural-language/training/machine-learning-engine.md).
+This section refers to the configurations related to the Machine Learning engine. For details on the configurations, please click [here](../../../automation/natural-language/training/machine-learning-engine).
 
 
 ```json

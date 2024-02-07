@@ -49,9 +49,8 @@ Kore.ai provides ready-to-use sample assistants that you can install into your i
 
 **To install the Flight Search assistant:**
 
-
 1. Log on to XO Platform, and then click **New Bot > Start from the Store**.
-2. Find the **Flight Search** assistant and install it. 
+2. Find the **Flight Search** assistant and install it.
 
 ### Registering Your App and Generating Client Credentials
 
@@ -64,9 +63,10 @@ To register your BotKit SDK with the Kore.ai XO Platform, you will need to creat
 2. Next to the **App name **drop-down list, click **Add**.
 3. Enter a name for the app and then click **Next**.
 4. The Client ID and Client Secret details appear. Click **Done**.
-5. In the **Callback URL** field, enter the URL for your application that you copied from the **Forwarding URL** from the _ngrok_ application that you installed and ran as part of the prerequisites, for example,  https://1b47f1d2.ngrok.io. \
-**_Note: Each running instance of ngrok will generate a session unique URL. You will need to update the Callback URL field if you stop and restart ngrok._**
-6. In the **Events** section, select **OnHookNode** – An event is triggered when a [Webhook node](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-web-hook-node/) is encountered in the dialog task flow.
+5. In the **Callback URL** field, enter the URL for your application that you copied from the **Forwarding URL** from the _ngrok_ application that you installed and ran as part of the prerequisites, for example,  https://1b47f1d2.ngrok.io.
+!!!note
+  Each running instance of ngrok will generate a session unique URL. You will need to update the Callback URL field if you stop and restart ngrok._**
+6. In the **Events** section, select **OnHookNode** – An event is triggered when a [Webhook node](../../automation/use-cases/dialogs/node-types/working-with-the-web-hook-node) is encountered in the dialog task flow.
 7. Click **Save**. The _Successfully subscribed_ message is displayed.
 
 To configure the BotKit SDK settings, you will need to:
@@ -78,7 +78,7 @@ To configure the BotKit SDK settings, you will need to:
 
 A developer can use any installed assistant immediately for testing as it is available to the owner on save. If you only want to run and test this assistant for this tutorial, you can skip to the next section, _Installing and Configuring the BotKit SDK_.
 
-To enable the assistant for other users, you must publish it so the Admin can approve and deploy the assistant for users. For more information, see [Publishing Your Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/#Publishing_Tasks).
+To enable the assistant for other users, you must publish it so the Admin can approve and deploy the assistant for users. For more information, see [Publishing Your Assistant](../../deploy/publishing-bot).
 
 After you publish an assistant in the XO Platform, an Admin must complete one of the following deployments in the Admin Console depending on whether your assistant’s **Target Audience** is set to **Enterprise Users** (managed users) or **General Public** (unmanaged users):
 
@@ -87,7 +87,7 @@ After you publish an assistant in the XO Platform, an Admin must complete one of
     2. Expand the **Bot Tasks** field to view the available and deployed tasks.
     3. Select all tasks of the bot and then click **Confirm**.
     4. In the **Manage bot tasks** dialog, click **Confirm**. The _Bot status changed successfully_ message is displayed.
-    5. On the **Enterprise Bots** page, click the **Ellipses** icon for the _Flight Search assistant _that you want to assign enterprise users to, and then click **Bot & task assignments**. The **Bot & task assignments** dialog is displayed.
+    5. On the **Enterprise Bots** page, click the **Ellipses** icon for the _Flight Search assistant_that you want to assign enterprise users to, and then click **Bot & task assignments**. The **Bot & task assignments** dialog is displayed.
     6. Assign the assistant to the selected users in the enterprise.
 * **For General Public Users**
     1. In the Admin Console, in the **Bots Management** module, on the **Consumer Bots** page, click the **Ellipses** icon for the _Agent Transfer_ bot that you want to deploy, and then click **Manage bot tasks**. The **Manage Bot Tasks** dialog is displayed.
