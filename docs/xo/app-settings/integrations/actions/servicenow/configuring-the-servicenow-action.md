@@ -1,13 +1,16 @@
 # Configuring the ServiceNow Action
 
-The XO Platform lets you easily connect the ServiceNow integration to create, view, update, search and delete incidents. You can also create, view, update, search and delete requests using the pre-built templates. Click the [ServiceNow](https://www.servicenow.com/){:target="_blank"} link to know more. 
+The XO Platform lets you easily connect the ServiceNow integration to create, view, update, search and delete incidents. You can also create, view, update, search and delete requests using the pre-built templates. Click the [ServiceNow](https://www.servicenow.com/) link to know more. 
 
 This article explains how to authorize and enable the **ServiceNow** action and install the pre-built templates.
 
+!!! note
+
+    ServiceNow Actions Integration is supported for the ServiceNow cloud versions (Tokyo, Utah, and Vancouver) but not for on-premises instances.
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow a ServiceNow integration to exchange data. For more information, see [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} . 
+The Kore.ai XO Platform supports only basic authentication to allow a ServiceNow integration to exchange data. For more information, see [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication). 
 
 The Kore.ai XO Platform supports the following authorization types for the ServiceNow integration:
 
@@ -44,7 +47,7 @@ The Kore.ai XO Platform supports the following authorization types for the Servi
 
 Before enabling the ServiceNow action, complete the following prerequisites:
 
-* If you already have ServiceNow account credentials, then enter it.  Otherwise, create a developer account in the ServiceNow and note down login credentials. Use the [ServiceNow Developer Instance Documentation](https://developer.servicenow.com/dev.do#!/learn/learning-plans/rome/new_to_servicenow/app_store_learnv2_buildmyfirstapp_rome_personal_developer_instances){:target="_blank"} for more information.
+* If you already have ServiceNow account credentials, then enter it.  Otherwise, create a developer account in the ServiceNow and note down login credentials. Use the [ServiceNow Developer Instance Documentation](https://developer.servicenow.com/dev.do#!/learn/learning-plans/rome/new_to_servicenow/app_store_learnv2_buildmyfirstapp_rome_personal_developer_instances) for more information.
 * Copy the User sub domain, username/email and password of your ServiceNow account and keep them ready to enable the integration.
 
 Steps to enable the ServiceNow action:
@@ -85,8 +88,8 @@ Steps to authorize a ServiceNow action at a user level:
 
 1. Go to **Build > Integrations** and select the **Actions** menu item.
 2. Select the **ServiceNow** action in the **Available Actions** region.
-3. In the Configurations dialog, select the **Authorization** tab 
-4. Select the type of authorization mechanism. For example, select the **Basic Auth** option. To create Basic Auth profiles, see [Bot Authorization Overview ](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"}.  
+3. In the Configurations dialog, select the **Authorization** tab.
+4. Select the type of authorization mechanism. For example, select the **Basic Auth** option. To create Basic Auth profiles, see [Bot Authorization Overview ](../../../../dev-tools/bot-authorization/bot-authentication).  
 <img src="../images/servicenow-action-img4.png" alt="Auth mechanism -- Basic auth" title="Auth mechanism -- Basic auth" style="border: 1px solid gray;zoom:50%;"/>
 
 5. Create your own authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s ServiceNow app for authorization.
