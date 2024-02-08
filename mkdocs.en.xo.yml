@@ -326,16 +326,18 @@ nav:
             - Import or Export KG: answers/knowledge-ai/import-and-export-knowledge-graph.md
             - Auto-Generate KG: answers/knowledge-ai/generate-a-knowledge-graph.md
           - KG Analysis: answers/knowledge-ai/knowledge-graph-analysis.md       
-    - Content Sources:
-      - Overview: answers/content-sources/introduction.md 
-      - Web Crawl: answers/content-sources/web-crawl.md  
-      - Directory: answers/content-sources/directory.md 
-      - Connectors: answers/content-sources/connectors.md 
-    - Extraction Strategy: answers/content-extraction/extraction.md
-    - Chunk Browser: answers/chunk-browser.md
-    - Index Configuration: answers/index-configuration.md
-    - Answer Configuration: answers/answer-configuration.md
-    - Business Rules: answers/business-rules.md     
+    - Content:
+      - Sources:
+        - Overview: answers/content-sources/introduction.md 
+        - Web Crawl: answers/content-sources/web-crawl.md  
+        - Directory: answers/content-sources/directory.md 
+        - Connectors: answers/content-sources/connectors.md 
+      - Extraction Strategy: answers/content-extraction/extraction.md
+      - Chunk Browser: answers/chunk-browser.md
+      - Index Configuration: answers/index-configuration.md
+    - Configuration:
+      - Answer Configuration: answers/answer-configuration.md
+      - Business Rules: answers/business-rules.md     
   - Contact Center:
     - Overview: contactcenter/about-contact-center.md 
     - Agent and Supervisors: 
