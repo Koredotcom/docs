@@ -1,4 +1,4 @@
-# General Settings
+# App Profile
 
 To modify the general settings of a bot:
 
