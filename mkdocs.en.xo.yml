@@ -358,7 +358,7 @@ nav:
     - Routing:
       - Queues: contactcenter/routing/queues/queue-management.md
       - Skills: contactcenter/routing/skills/skill-management.md
-    - Console:
+    - Agent Console:
       - Additional Tools: console/additional-tools/additional-tools.md
       - Conversation Tray: console/conversation-tray/conversation-tray.md
       - Incoming Interactions: console/incoming-interactions/managing-incoming-interactions.md
