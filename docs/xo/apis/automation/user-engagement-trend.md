@@ -27,7 +27,7 @@ To provide the number of users who have interacted with the bot in a given perio
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token.</a>
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token.</a>
    </td>
   </tr>
   <tr>
@@ -158,10 +158,6 @@ curl -X POST \
   </tr>
 </table>
 
-
- 
-
-
 ## Sample Response
 
 
@@ -209,3 +205,4 @@ curl -X POST \
        }],
       totalResults: 2
     }
+```

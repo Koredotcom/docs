@@ -33,12 +33,7 @@ jobs:
         uses: ./
         with:
           entrypoint: mkdocs
-          args: build --config-file=mkdocs.en.xo_v10.yml  
-      - name: Build EN GALE docs
-        uses: ./
-        with:
-          entrypoint: mkdocs
-          args: build --config-file=mkdocs.en.gale.yml      
+          args: build --config-file=mkdocs.en.xo_v10.yml    
             
       # - name: Copy redirect index page
       #   run: sudo cp /index.html /site

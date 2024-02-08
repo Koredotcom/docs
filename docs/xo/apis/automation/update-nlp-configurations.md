@@ -27,7 +27,7 @@ To update the NLP thresholds and configurations.
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token</a>.
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
   <tr>
@@ -158,7 +158,7 @@ The parameters depend on the threshold configuration that needs to be updated. T
 
 #### Machine Learning Engine
 
-This section refers to the configurations related to the Machine Learning engine. For details on the configurations, please click [here](https://developer.kore.ai/docs/bots/nlp/user-utterances/#Threshold_Configurations).
+This section refers to the configurations related to the Machine Learning engine. For details on the configurations, please click [here](../../../automation/natural-language/training/machine-learning-engine).
 
 
 ```json
@@ -189,3 +189,4 @@ This section refers to the configurations related to the Machine Learning engine
          }
     }
 }
+```

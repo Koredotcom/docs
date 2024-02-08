@@ -1,4 +1,4 @@
-# Create Balance Tasks
+# Create an Update Balance Task
 
 This is document details steps in creating a sample banking bot. This bot is used in various use case scenarios presented in the How-Tos section of the developer documentation.
 

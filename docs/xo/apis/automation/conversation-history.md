@@ -46,7 +46,7 @@ This allows the server to compress the response using any of these algorithms (g
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token">How to generate the JWT Token.</a>
+See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token.</a>
    </td>
   </tr>
   <tr>
@@ -346,7 +346,8 @@ eg:2019-04-01 (or) 2019-04-01 T13:26:05.598ZIf not provided, calculated as 7 day
 </table>
 
 
-**Note**: The duration between _dateTo_ and _dateFrom_ should be less than 7 days, else an error will be thrown.
+!!!note
+  The duration between _dateTo_ and _dateFrom_ should be less than 7 days, else an error will be thrown.
 
 
 ## Request Body Parameters

@@ -4,7 +4,7 @@ The Kore.ai BotKit SDK runs as a Node.js application. You can add your own rever
 
 This section provides a high-level overview of BotKit SDK installation and configuration.
 
-For a detailed end-to-end tutorial on installation and setup using our Kore.ai Sample Assistants, see this [Kore.ai BotKit SDK Tutorial](https://developer.kore.ai/docs/bots/sdks/kore-ai-botkit-sdk-tutorial/).
+For a detailed end-to-end tutorial on installation and setup using our Kore.ai Sample Assistants, see this [Kore.ai BotKit SDK Tutorial](../tutorials/flight-search-sample-bot).
 
 To install the BotKit SDK, you will need to:
 
@@ -26,7 +26,7 @@ In the config.json file in the SDK, you will need to copy the following authenti
 * appId = ClientID
 * appKey – Client Secret
 
-For more information, see [SDK App Registration](https://developer.kore.ai/docs/bots/sdks/sdk-app-registration/).
+For more information, see [SDK App Registration](../app-registration).
 
 ## Installation and Setup
 
@@ -76,12 +76,15 @@ To configure your SDK, you must define the following keys in your config.json fi
 </table>
 
 !!!note
-    Note that the JWT token would expire in 60 seconds, by default. You can change this using the following KoreConfig setting:
-    “botkit”:{
+   By default, the JWT token would expire in 60 seconds. You can change this using the following KoreConfig setting:
+   
+   ```
+   “botkit”:{
 
         “jwt_expiry”: 300 //seconds
 
     }
+   ```
 
 To run BotKit SDK, in a **Terminal** window, enter:
 ```
