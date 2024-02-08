@@ -333,6 +333,7 @@ nav:
         - Directory: answers/content-sources/directory.md 
         - Connectors: answers/content-sources/connectors.md 
       - Extraction Strategy: answers/content-extraction/extraction.md
+      - Workbench: answers/workbench.md
       - Chunk Browser: answers/chunk-browser.md
       - Index Configuration: answers/index-configuration.md
     - Configuration:
