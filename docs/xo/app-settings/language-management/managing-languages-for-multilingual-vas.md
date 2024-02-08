@@ -74,7 +74,7 @@ If you want to enable/disable input translation, change the NLU language of the 
 
 To update an already enabled language for an assistant, follow the below steps:
 
-1. Go to ****App Settings > Configurations > Language Management****.
+1. Go to **App Settings > Configurations > Language Management**.
 2. The platform will display all the languages under the **Standard Languages** section.
 3. Click on the language that is already enabled in the VA. The _Manage Language_ dialog appears, here you can:
 
