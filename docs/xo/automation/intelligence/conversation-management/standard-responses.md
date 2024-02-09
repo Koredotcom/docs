@@ -1,4 +1,4 @@
-# Standard Responses
+# Default Standard Responses
 
 Kore.ai Bot Builder tool provides a few default text responses, Natural Language Processing, or NLP interpreter responses to user inputs or events. This section lists them and gives an explanation as to when these responses are triggered. 
 
@@ -172,7 +172,7 @@ print(JSON.stringify(message));
 </pre></li>
 <li>Click <b>Done</b> to save and close the <b>Edit Response</b> dialog and apply the new standard response.</li></ol>
 
-## Scenarios
+## Statements
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">
