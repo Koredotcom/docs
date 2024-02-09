@@ -6,10 +6,6 @@ On the Kore.ai **Single Sign-On** page, in the **Security & Control** module of 
 * Security Assertion Markup Language (SAML)
 * WS-Federation sign-on protocol.
 
-!!! Note
-
-    The ping identity SSO integration is not supported by the Kore.ai XO Platform.
-
 SSO enables easy access to the Kore.ai application using your existing identity provider. With SSO, your users can log on once, for example, to your company account, and when accessing their Kore.ai application, the same login credentials can be used automatically by the system.
 
 For example, using the _WS-Federation_ sign-on protocol, you can enable a user to sign on to the Kore.ai application using Microsoft® Active Directory® server credentials.

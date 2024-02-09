@@ -25,15 +25,10 @@ Using the AI-enhanced compose text box, agents can create customized responses t
 There are three choices available:
 <img src="../images/ai-options-compose-bar.png" alt="AI Enhanced Options" title="AI Enhanced Options" style="border: 1px solid gray; zoom:80%;">
 
-1. **Make more friendly**: This option rephrases the draft response to make it more friendly and informal. \
-For example, the formal draft response “Your mortgage appointment has been scheduled for Jun 24, 2023, 1 pm” is rephrased \
-as “Great news! We’ve scheduled your mortgage appointment for Jun 24, 2023, at 1 pm.”
-2. **Make more formal**: This option rephrases the draft response to make it more formal. For example, the draft response “Your mortgage appointment \
-has been scheduled for Jun 24, 2023, at 1 pm” is transformed into a more formal response, “We would like to inform you that your mortgage \
-appointment has been scheduled for Jun 24, 2023, at 1:00 pm.”
-3. **Expand**: This option expands the draft response. For example, the draft response “Your mortgage appointment has been scheduled for \
-Jun 24, 2023, at 1 pm” is elaborated as “We would like to notify you that your mortgage appointment has been successfully scheduled for \
-June 24, 2023. Please arrive promptly at 1:00 pm for your appointment.”
+1. **Make more friendly**: This option rephrases the draft response to make it more friendly and informal.
+For example, the formal draft response “Your mortgage appointment has been scheduled for Jun 24, 2023, 1 pm” is rephrased as “Great news! We’ve scheduled your mortgage appointment for Jun 24, 2023, at 1 pm.”
+2. **Make more formal**: This option rephrases the draft response to make it more formal. For example, the draft response “Your mortgage appointment has been scheduled for Jun 24, 2023, at 1 pm” is transformed into a more formal response, “We would like to inform you that your mortgage appointment has been scheduled for Jun 24, 2023, at 1:00 pm.”
+3. **Expand**: This option expands the draft response. For example, the draft response “Your mortgage appointment has been scheduled for Jun 24, 2023, at 1 pm” is elaborated as “We would like to notify you that your mortgage appointment has been successfully scheduled for June 24, 2023. Please arrive promptly at 1:00 pm for your appointment.”
 
 This feature can be enabled from [CONFIGURATION > Advanced Settings > Intelligent Agent Tools](https://docs.kore.ai/smartassist/configuration/intelligent-agent-tools-beta/).
 
@@ -205,7 +200,7 @@ Steps to snooze a conversation:
 
 1. Click the **Snooze** button at the top of the live interaction window.
 
-!!! Note:
+!!! Note
 
     The snooze function is not available if the conversation is overdue or a reply is due from the agent.
 <img src="../images/snooze-button.png" alt="Snooze Button" title="Snooze Button" style="border: 1px solid gray; zoom:80%;">
@@ -291,7 +286,7 @@ You can add notes on the interaction (customer feedback, key points, next action
 
 To add a new note:
 
-1. Click **Notes**.
+1. Click **Notes**.  
 <img src="../images/interactions-notes.png" alt="Notes Button" title="Notes Button" style="border: 1px solid gray; zoom:80%;">
 
 2. Click **+ Add New Note**.
@@ -494,7 +489,7 @@ Agents can choose the following options:
 
 # Behavior During Active Interactions
 
-## **If Auto-Answer Is Enabled, Transfer and End are Disabled Until the First Agent Response**
+## If Auto-Answer Is Enabled, Transfer and End are Disabled Until the First Agent Response
 
 If the Auto Answer mode is enabled in [Agent Settings](https://docs.kore.ai/smartassist/user-management/agent-settings/#Voice), the Transfer/End buttons do not display on the Live Interaction pane until the assigned agent sends the first message.
 
