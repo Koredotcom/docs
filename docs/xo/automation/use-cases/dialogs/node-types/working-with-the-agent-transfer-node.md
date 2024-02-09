@@ -48,7 +48,7 @@ For details on managing  the API integration, please see the following articles:
 
 1. [Enabling Agent Transfer API](https://developer.kore.ai/docs/bots/api-guide/enabling-agent-transfer-api/){:target="_blank"}
 2. [Configuring Agent Transfer](../../../../../app-settings/integrations/agents/how-to-configure-agent-transfer){:target="_blank"}
-3. [BotKit SDK Tutorial – Agent Transfer](https://developer.kore.ai/docs/bots/sdks/botkit-sdk-tutorial-agent-transfer/){:target="_blank"}
+3. [BotKit SDK Tutorial – Agent Transfer](../../../../../sdk/tutorials/agent-transfer/){:target="_blank"}
 
 
 ## Set Up the Agent Transfer Node
