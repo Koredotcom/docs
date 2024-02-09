@@ -19,7 +19,7 @@ You can work with this node like with any other node within Dialog Tasks and can
 
 This node is not available by default. You can enable it for all Dialog Tasks as follows:
 
-* Configure the Open AI integration and enable the GenAI Prompt feature under **Build** > **Natural Language** > **Advanced NLU Settings**. You can also select an LLM model and its settings for the features. By default, these selections are applicable across the platform for the feature. [Learn more](https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/#Enable_LLM_Features){:target="_blank"}.
+* Configure the Open AI integration and enable the GenAI Prompt feature under **Build** > **Natural Language** > **Advanced NLU Settings**. You can also select an LLM model and its settings for the features. By default, these selections are applicable across the platform for the feature. [Learn more](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#genai-prompt){:target="_blank"}.
 
 <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
