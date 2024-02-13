@@ -12,9 +12,9 @@ Apart from these, under the **Advanced NLP Configurations** section, there are a
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>The default settings for these configurations are ideal for most use cases. Do not change these settings unless you are fully acquainted with the functionality you are setting, as they might have a detrimental effect on the VA's performance if not done properly.</p>
+<br>The default settings for these configurations are ideal for most use cases. Do not change these settings unless you are fully acquainted with the functionality you are setting, as they might have a detrimental effect on the VA's performance if not done properly.</p>
 </div>
-<img src="../images/thresholds-advanced-nlu.png" alt="thresholds advanced nlu" title="thresholds advanced nlu" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/advanced-nlu-configurations.png" alt="thresholds advanced nlu" title="thresholds advanced nlu" style="border: 1px solid gray; zoom:75%;">
 
 The following table gives the details of the various configurations that can be set from this section. Apart from these you can add Custom configurations, reach out to our <a href="https://support.kore.ai/hc/en-us/" target="_blank">Support Team</a> to know how.
 
@@ -33,35 +33,35 @@ The following table gives the details of the various configurations that can be 
   </tr>
   <tr>
    <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#split-compound-words" target="_blank">Split Compound</a>
-<p>
+<br>
 <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#split-compound-words" target="_blank">Words</a> 
    </td>
    <td>The setting
-<p>
+<br>
 enables the
-<p>
+<br>
 splitting of the
-<p>
+<br>
 compound words
-<p>
+<br>
 into multiple
-<p>
+<br>
 stems and then
-<p>
+<br>
 processing the
-<p>
+<br>
 individual stem.
    </td>
    <td>ML
    </td>
-   <td>Enable,¶
-<p>
+   <td>Enable,
+<br>
 Disable
-<p>
+<br>
 (default)
    </td>
    <td>Supported only for assistants in the
-<p>
+<br>
 German language
    </td>
   </tr>
@@ -73,7 +73,7 @@ German language
    <td>ML
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>
@@ -87,17 +87,17 @@ Disable
    <td>ML
    </td>
    <td>Between 20 and 300,
-<p>
+<br>
 increments of 10
-<p>
+<br>
 (default setting 20)
    </td>
    <td>Valid only when Network Type is set to MLP-BOW,
-<p>
+<br>
 MLP-WordEmbeddings,
-<p>
+<br>
 LSTM,
-<p>
+<br>
 CNN
    </td>
   </tr>
@@ -109,17 +109,17 @@ CNN
    <td>ML
    </td>
    <td>Between 10 and 30,
-<p>
+<br>
 increments of 5
-<p>
+<br>
 (default setting 10)
    </td>
    <td>Valid only when Network Type is set to MLP-BOW,
-<p>
+<br>
 MLP-WordEmbeddings,
-<p>
+<br>
 LSTM,
-<p>
+<br>
 CNN
    </td>
   </tr>
@@ -131,17 +131,17 @@ CNN
    <td>ML
    </td>
    <td>Between 1e-4 and 1e-3,
-<p>
+<br>
 increments of 1e-2
-<p>
+<br>
 (default setting 1.00E-03)
    </td>
    <td>Valid only when Network Type is set to MLP-BOW,
-<p>
+<br>
 MLP-WordEmbeddings,
-<p>
+<br>
 LSTM,
-<p>
+<br>
 CNN
    </td>
   </tr>
@@ -153,17 +153,17 @@ CNN
    <td>ML
    </td>
    <td>Between 0 and 0.8,
-<p>
+<br>
 increments of 0.1
-<p>
+<br>
 (default setting 0)
    </td>
    <td>Valid only when Network Type is set to MLP-BOW,
-<p>
+<br>
 MLP-WordEmbeddings,
-<p>
+<br>
 LSTM,
-<p>
+<br>
 CNN
    </td>
   </tr>
@@ -175,7 +175,7 @@ CNN
    <td>ML
    </td>
    <td>count (default),
-<p>
+<br>
 tfidf
    </td>
    <td>Valid only when Network Type is set to MLP-BOW
@@ -189,15 +189,15 @@ tfidf
    <td>ML
    </td>
    <td>Between 10 and 30,
-<p>
+<br>
 increments of 5
-<p>
+<br>
 (default setting 20)
    </td>
    <td>Valid only when Network Type is set to MLP-WordEmbeddings,
-<p>
+<br>
 LSTM,
-<p>
+<br>
 CNN
    </td>
   </tr>
@@ -209,13 +209,13 @@ CNN
    <td>ML
    </td>
    <td>generated,
-<p>
+<br>
 random (default)
    </td>
    <td>Valid only when Network Type is set to MLP-WordEmbeddings,
-<p>
+<br>
 LSTM,
-<p>
+<br>
 CNN
    </td>
   </tr>
@@ -227,15 +227,15 @@ CNN
    <td>ML
    </td>
    <td>Between 100 and 400,
-<p>
+<br>
 increments of 50
-<p>
+<br>
 (default setting 300)
    </td>
    <td>Valid only when Network Type is set to MLP-WordEmbeddings,
-<p>
+<br>
 LSTM,
-<p>
+<br>
 CNN
    </td>
   </tr>
@@ -247,9 +247,9 @@ CNN
    <td>ML
    </td>
    <td>Between 2 and 10,
-<p>
+<br>
 increments of 1
-<p>
+<br>
 (default setting 2)
    </td>
    <td>
@@ -263,7 +263,7 @@ increments of 1
    <td>ML
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>
@@ -277,7 +277,7 @@ Disable
    <td>ML
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>
@@ -291,7 +291,7 @@ Disable
    <td>ML
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>Valid only when Network Type is set to MLP-BOW
@@ -305,7 +305,7 @@ Disable
    <td>ML
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>Valid only when Network Type is set to MLP-BOW
@@ -319,7 +319,7 @@ Disable
    <td>ML
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>
@@ -333,7 +333,7 @@ Disable
    <td>ML
    </td>
    <td>Enable,
-<p>
+<br>
 Disable (default)
    </td>
    <td>
@@ -341,25 +341,25 @@ Disable (default)
   </tr>
    <tr bgcolor="#FAFAFA">
    <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#lemmatization-of-kg-synonyms" target="_blank">Lemmatize KG</a>
-<p>
+<br>
 <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#lemmatization-of-kg-synonyms" target="_blank">Synonyms</a>
    </td>
    <td>Enable to use
-<p>
+<br>
 the lemmatized
-<p>
+<br>
 versions of KG
-<p>
+<br>
 Synonyms to
-<p>
+<br>
 detect intents.
    </td>
    <td>KG
    </td>
    <td>Enable
-<p>
+<br>
 (default),
-<p>
+<br>
 Disable.
    </td>
    <td>
@@ -402,19 +402,34 @@ Disable.
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#spell-correction-in-ml" target="_blank">Spell Correction in ML</a>
+   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#spell-correction-in-ml">Spell Correction in ML</a>
    </td>
    <td>Enable to support spell correction on the ML bot dictionary while predicting.
    </td>
    <td>Custom (ML)
    </td>
    <td>Enable,
-<p>
+<br>
 Disable (default)
    </td>
    <td>Applicable only for English language VAs.
    </td>
   </tr>
+  <tr>
+<td><a href="#spell-correction-version">Spell Correction Version</a></td>
+<td>Use this configuration to select the version of Spell Correction for the VA.</td>
+<td>NA</td>
+<td>Version 1,<br>
+Version 2</td>
+<td>Applicable only for English language VAs. The spell-corrected input is used by all the engines for further processing</td>
+</tr>
+<tr>
+<td><a href="#spell-correction-status">Spell Correction Status</a></td>
+<td>Use this configuration to set the status of Spell Correction for the VA.</td>
+<td>NA</td>
+<td>Enable,<br> Disable</td>
+<td>Applicable only for English language VAs. The spell-corrected input is used by all the engines for further processing</td>
+</tr>
   <tr>
    <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#intent-elimination-rules" target="_blank">Intent Elimination Rules</a>
    </td>
@@ -423,7 +438,7 @@ Disable (default)
    <td>RR
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>Applicable only for English, Spanish, French, and German language VAs.
@@ -437,7 +452,7 @@ Disable
    <td>KG
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>
@@ -451,7 +466,7 @@ Disable
    <td>KG
    </td>
    <td>Enable,
-<p>
+<br>
 Disable (default)
    </td>
    <td>
@@ -465,7 +480,7 @@ Disable (default)
    <td>KG
    </td>
    <td>Order by Hierarchy,
-<p>
+<br>
 Default Order (default)
    </td>
    <td>
@@ -479,7 +494,7 @@ Default Order (default)
    <td>KG
    </td>
    <td>Enable,
-<p>
+<br>
 Disable (default)
    </td>
    <td>
@@ -491,11 +506,11 @@ Disable (default)
    <td>Enable this option if only a full match of all the terms in the path should be considered as a path qualification.
    </td>
    <td>Custom
-<p>
+<br>
 (KG)
    </td>
    <td>Enable,
-<p>
+<br>
 Disable (default)
    </td>
    <td>
@@ -509,7 +524,7 @@ Disable (default)
    <td>FM
    </td>
    <td>any number from 0-9;
-<p>
+<br>
 set to 3 by default
    </td>
    <td>
@@ -523,7 +538,7 @@ set to 3 by default
    <td>FM
    </td>
    <td>any number from 0-5;
-<p>
+<br>
 set to 2 by default
    </td>
    <td>
@@ -537,7 +552,7 @@ set to 2 by default
    <td>FM
    </td>
    <td>First (default),
-<p>
+<br>
 Best
    </td>
    <td>
@@ -551,7 +566,7 @@ Best
    <td>FM
    </td>
    <td> any number from 0-9;
-<p>
+<br>
 set to 3 by default
    </td>
    <td>
@@ -563,7 +578,7 @@ set to 3 by default
    <td>Enable to Use Precedence, Intent Over Entity, or Entity Over Intent options for intents with ambiguous entities.</td>
    <td>FM</td>
    <td>Enable
-<p>Disable (default)</p>
+<br>Disable (default)</p>
 </td>
 <td>
    </td>
@@ -576,7 +591,7 @@ set to 3 by default
    <td>FM
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>
@@ -590,7 +605,7 @@ Disable
    <td>FM
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>
@@ -742,6 +757,9 @@ This is a **Custom** configuration, to enable follow the steps below:
 2. Enter name as *ML spell correction*
 3. Enter the value as *enabled* or *disabled*.
 
+!!! Note
+
+      This configuration is not available in Spell Correction Version 2 is enabled for the VA.
 
 ## **Ranking and Resolver Engine Settings**
 
@@ -795,7 +813,7 @@ This is a **Custom** configuration, to enable follow these steps:
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <p>Enabling this setting would add the following configurations for Term settings – Term Display Name, Auto Qualify Path, and the following configurations would not be available – Path Coverage and Minimum and Definitive Level for Knowledge Tasks. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#taxonomy-based-kg" target="_blank">Learn more</a>.</p>
+    <br>Enabling this setting would add the following configurations for Term settings – Term Display Name, Auto Qualify Path, and the following configurations would not be available – Path Coverage and Minimum and Definitive Level for Knowledge Tasks. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#taxonomy-based-kg" target="_blank">Learn more</a>.</p>
     </div>
 
 ## **Fundamental Meaning Engine Settings**
@@ -830,7 +848,7 @@ Bot designers can customize the flow on how the bot should respond when a user i
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <p>The <b>Intent over Entity</b> option implies that you think the customer is generally going to say something different other than answer the prompt. The list of item entity type includes a phrase for ignoring the entity with ambiguity and proceeding with the intent instead.</p>
+    <br>The <b>Intent over Entity</b> option implies that you think the customer is generally going to say something different other than answer the prompt. The list of item entity type includes a phrase for ignoring the entity with ambiguity and proceeding with the intent instead.</p>
     </div>      
 
 * **Entity over Intent**– Completes the ongoing dialog task normally once the user resolves the ambiguity in the intent. This option considers the customer input as an entity value, and allows the dialog task to progress to the next node. For example: If a customer intends to place an order and during the interaction changes their intent and requests to edit the order, the system continues with the ongoing intent to place the order.
@@ -846,3 +864,17 @@ When multiple patterns are identified in a sentence, define whether the FM Engin
 The <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#thresholds-configurations" target="_blank">FM Engine configuration</a> _Intent Detection using Task Name_ Words allows you to choose whether to match a task by using the words present in the task name. It is advised that this configuration be disabled if it conflicts with other training. 
 
 When disabled, the platform generates a strict pattern that does ‘exact matching’ i.e. if the user input exactly matches with the task name then it will consider as a match. The Exact Task Name Match configuration allows you to choose whether the platform should auto-generate the strict pattern when ‘Intent Detection using Task Name Words’ is Disabled.
+
+## **Spell Correction settings**
+
+When these settings are selected and enabled, the spell correction will happen after the language detection step. The spell-corrected input is used by all the engines for further processing.
+
+### Spell Correction Version
+
+This configuration lets you choose the Spell Correction Version between Version 1 and Version 2 for existing VA's that have Spell Correction enabled. For new bots and existing bots that don't have Spell Correction enabled, only the Version 2 is available.
+
+### Spell Correction Status
+
+This configuration helps you enable or disable the Spell Correction. If enabled, the spell correction happens at one or more engines individually depending on the language for Version 1, and immediately after language detection step in case of Version 2.
+
+If this configuration is disabled, Spell Correction does not happen irrespective of the selected version.
