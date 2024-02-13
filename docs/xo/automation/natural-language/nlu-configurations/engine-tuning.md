@@ -3,20 +3,20 @@ You can fine-tune intent detection for each language enabled for your Virtual As
 
 1. On the left pane, click **Natural Language** > **Training** > **Thresholds & Configurations**.
 2. Under the **Thresholds & Configurations** section, you can perform by customizing
-    * The Fundamental Meaning model – <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#thresholds-configurations" target="_blank">Learn more</a>.
-    * Machine Learning model – <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/#thresholds-configurations" target="_blank">Learn more</a>.
-    * Knowledge Graph – <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-training/#thresholds-configurations" target="_blank">Learn more</a>.
-    * Ranking & Resolver engine – <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/ranking-and-resolver/#thresholds-configuration" target="_blank">Learn more</a>.
+    * The Fundamental Meaning model – [Learn more]("https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#thresholds-configurations"){target="_blank"}.
+    * Machine Learning model – [Learn more]("https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/#thresholds-configurations"){target="_blank"}.
+    * Knowledge Graph – [Learn more]("https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-training/#thresholds-configurations"){target="_blank"}.
+    * Ranking & Resolver engine – [Learn more]("https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/ranking-and-resolver/#thresholds-configuration"){target="_blank"}.
 
 Apart from these, under the **Advanced NLP Configurations** section, there are advanced settings that you can use for specific use cases and requirements.
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<br>The default settings for these configurations are ideal for most use cases. Do not change these settings unless you are fully acquainted with the functionality you are setting, as they might have a detrimental effect on the VA's performance if not done properly.</p>
-</div>
+!!! Warning
+
+      The default settings for these configurations are ideal for most use cases. Do not change these settings unless you are fully acquainted with the functionality you are setting, as they might have a detrimental effect on the VA's performance if not done properly.
+
 <img src="../images/advanced-nlu-configurations.png" alt="thresholds advanced nlu" title="thresholds advanced nlu" style="border: 1px solid gray; zoom:75%;">
 
-The following table gives the details of the various configurations that can be set from this section. Apart from these you can add Custom configurations, reach out to our <a href="https://support.kore.ai/hc/en-us/" target="_blank">Support Team</a> to know how.
+The following table gives the details of the various configurations that can be set from this section. Apart from these you can add Custom configurations, reach out to our [Support Team]("https://support.kore.ai/hc/en-us/"){target="_blank"} to know how.
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">
@@ -32,9 +32,9 @@ The following table gives the details of the various configurations that can be 
    </td>
   </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#split-compound-words" target="_blank">Split Compound</a>
+   <td><a href="#split-compound-words">Split Compound</a>
 <br>
-<a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#split-compound-words" target="_blank">Words</a> 
+<a href="#split-compound-words">Words</a> 
    </td>
    <td>The setting
 <br>
@@ -66,7 +66,7 @@ German language
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#none-intent" target="_blank">None Intent</a> 
+   <td><a href="#none-intent">None Intent</a> 
    </td>
    <td>Once enabled, a dummy, placeholder intent is created which reduces the chances of getting a false positive for an intent match using the ML engine.
    </td>
@@ -80,7 +80,7 @@ Disable
    </td>
   </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#epochs" target="_blank">Epochs</a>
+   <td><a href="#epochs">Epochs</a>
    </td>
    <td>Number iterations for training the neural network.
    </td>
@@ -102,7 +102,7 @@ CNN
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#batch-size" target="_blank">Batch Size</a>
+   <td><a href="#batch-size">Batch Size</a>
    </td>
    <td>Number of training samples used for each batch while training
    </td>
@@ -124,7 +124,7 @@ CNN
    </td>
   </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#learning-rate" target="_blank">Learning rate</a>
+   <td><a href="#learning-rate">Learning rate</a>
    </td>
    <td>A hyper-parameter to control how much the weights of the network are adjusted with respect to the loss gradient
    </td>
@@ -146,7 +146,7 @@ CNN
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#dropout" target="_blank">Dropout</a>
+   <td><a href="#dropout">Dropout</a>
    </td>
    <td>Regularization parameter to avoid overfitting of the model
    </td>
@@ -168,7 +168,7 @@ CNN
    </td>
   </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#vectorizer" target="_blank">Vectorizer</a>
+   <td><a href="#vectorizer">Vectorizer</a>
    </td>
    <td>Feature extraction technique on training data
    </td>
@@ -182,7 +182,7 @@ tfidf
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#maximum-sequence-length" target="_blank">Maximum sequence length</a>
+   <td><a href="#maximum-sequence-length">Maximum sequence length</a>
    </td>
    <td>Length of the training sample or user input
    </td>
@@ -202,7 +202,7 @@ CNN
    </td>
   </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#embeddings-type" target="_blank">Embeddings Type</a>
+   <td><a href="#embeddings-type">Embeddings Type</a>
    </td>
    <td>Feature extraction technique on training data
    </td>
@@ -220,7 +220,7 @@ CNN
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#embeddings-dimensions" target="_blank">Embeddings Dimensions</a>
+   <td><a href="#embeddings-dimensions">Embeddings Dimensions</a>
    </td>
    <td>Embeddings Dimensions to be used in featurization
    </td>
@@ -240,7 +240,7 @@ CNN
    </td>
   </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#k-fold-cross-validation" target="_blank">K Fold</a>
+   <td><a href="#k-fold-cross-validation">K Fold</a>
    </td>
    <td>kfold parameter for Cross-validation
    </td>
@@ -256,7 +256,7 @@ increments of 1
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#fuzzy-match" target="_blank">Fuzzy Match</a>
+   <td><a href="#fuzzy-match">Fuzzy Match</a>
    </td>
    <td>This setting enables the use of the fuzzy matching algorithm for intent identification
    </td>
@@ -270,7 +270,7 @@ Disable
    </td>
   </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#negation-handling" target="_blank">Handle Negation</a>
+   <td><a href="#negation-handling">Handle Negation</a>
    </td>
    <td>This setting enables the handling of negated words in intent identification
    </td>
@@ -284,7 +284,7 @@ Disable
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#ignore-multiple-occurrences" target="_blank">Ignore Multiple Occurrences</a>
+   <td><a href="#ignore-multiple-occurrences">Ignore Multiple Occurrences</a>
    </td>
    <td>Once enabled, the frequency of the words are disregarded for vectorization
    </td>
@@ -298,7 +298,7 @@ Disable
    </td>
   </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#entity-placeholders-in-user-utterances" target="_blank">Entity Placeholders in User Utterances</a>
+   <td><a href="#entity-placeholders-in-user-utterances">Entity Placeholders in User Utterances</a>
    </td>
    <td>Enable to replace entities present in user utterances with corresponding placeholders
    </td>
@@ -312,7 +312,7 @@ Disable
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#sentence-split" target="_blank">Sentence Split</a>
+   <td><a href="#sentence-split">Sentence Split</a>
    </td>
    <td>Split the sentences in user utterance and perform intent detection using the complete user input
    </td>
@@ -326,7 +326,7 @@ Disable
    </td>
   </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#multiple-intent-model" target="_blank">Multiple Intent Models</a>
+   <td><a href="#multiple-intent-model">Multiple Intent Models</a>
    </td>
    <td>Enable separate ML models for each of the primary intents constituting all its sub-intents
    </td>
@@ -340,9 +340,9 @@ Disable (default)
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#lemmatization-of-kg-synonyms" target="_blank">Lemmatize KG</a>
+   <td><a href="#lemmatization-of-kg-synonyms">Lemmatize KG</a>
 <br>
-<a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#lemmatization-of-kg-synonyms" target="_blank">Synonyms</a>
+<a href="#lemmatization-of-kg-synonyms">Synonyms</a>
    </td>
    <td>Enable to use
 <br>
@@ -366,7 +366,7 @@ Disable.
    </td>
   </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#use-only-tagged-utterances-for-ner-training" target="_blank">Use only Tagged Utterances for NER Training</a>
+   <td><a href="#use-only-tagged-utterances-for-ner-training">Use only Tagged Utterances for NER Training</a>
    </td>
    <td>Uses only the Tagged Utterances for Named Entity Recognition (NER) Training. When enabled, the ML Engine uses the utterances with one or more NER tags, to train the NER model for entity detection.
    </td>
@@ -378,7 +378,7 @@ Disable.
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#neurons-in-hidden-layer" target="_blank">Neurons in Hidden Layer</a>
+   <td><a href="#neurons-in-hidden-layer">Neurons in Hidden Layer</a>
    </td>
    <td>Used to configure the number of Neurons used in the Hidden Layer
    </td>
@@ -390,7 +390,7 @@ Disable.
    </td>
   </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#softmax-temperature" target="_blank">Softmax Temperature</a>
+   <td><a href="#softmax-temperature">Softmax Temperature</a>
    </td>
    <td>Use to define how confidently the ML Engine should identify the winning intent from the ML Model. Temperature is a hyperparameter that is applied to logits(Model outputs) to affect the final probabilities from the softmax.
    </td>
@@ -402,7 +402,7 @@ Disable.
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#spell-correction-in-ml">Spell Correction in ML</a>
+   <td><a href="#spell-correction-in-ml">Spell Correction in ML</a>
    </td>
    <td>Enable to support spell correction on the ML bot dictionary while predicting.
    </td>
@@ -431,7 +431,7 @@ Version 2</td>
 <td>Applicable only for English language VAs. The spell-corrected input is used by all the engines for further processing</td>
 </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#intent-elimination-rules" target="_blank">Intent Elimination Rules</a>
+   <td><a href="#intent-elimination-rules">Intent Elimination Rules</a>
    </td>
    <td>Enable to apply prebuilt rules to eliminate intent matches.
    </td>
@@ -445,7 +445,7 @@ Disable
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#cosine-similarity-dampening" target="_blank">Cosine similarity dampening</a>
+   <td><a href="#cosine-similarity-dampening">Cosine similarity dampening</a>
    </td>
    <td>Avoid penalty on short length questions using Cosine Similarity Dampening
    </td>
@@ -459,7 +459,7 @@ Disable
    </td>
   </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#faq-name-as-intent-name" target="_blank">FAQ Name as Intent Name</a>
+   <td><a href="#faq-name-as-intent-name">FAQ Name as Intent Name</a>
    </td>
    <td>To use the Primary Question of the FAQ as the intent name even when the FAQ is linked to a Dialog
    </td>
@@ -473,7 +473,7 @@ Disable (default)
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#faqs-order" target="_blank">FAQs Order for Disambiguation</a>
+   <td><a href="#faqs-order">FAQs Order for Disambiguation</a>
    </td>
    <td>Configure the order in which the FAQs are to be presented for resolving the ambiguity
    </td>
@@ -487,7 +487,7 @@ Default Order (default)
    </td>
   </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#auto-qualify-faqs" target="_blank">Auto qualify FAQs from fully matched Paths</a>
+   <td><a href="#auto-qualify-faqs">Auto qualify FAQs from fully matched Paths</a>
    </td>
    <td>Automatically qualify all FAQs from the path if the path is fully matched even if no question from that path has matched the user query.
    </td>
@@ -501,7 +501,7 @@ Disable (default)
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#taxonomy-based-kg" target="_blank">Taxonomy based KG</a>
+   <td><a href="#taxonomy-based-kg">Taxonomy based KG</a>
    </td>
    <td>Enable this option if only a full match of all the terms in the path should be considered as a path qualification.
    </td>
@@ -517,7 +517,7 @@ Disable (default)
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#default-maximum-wildcards-for-intent-patterns" target="_blank">Default Max. Wildcards for Intent Patterns</a>
+   <td><a href="#default-maximum-wildcards-for-intent-patterns">Default Max. Wildcards for Intent Patterns</a>
    </td>
    <td>Use this option to define the maximum number of wildcards to be allowed by default between words for intent patterns. This does not limit you from explicitly writing patterns containing more wildcards.
    </td>
@@ -531,7 +531,7 @@ set to 3 by default
    </td>
   </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#maximum-allowed-wildcards-in-entity-patterns" target="_blank">Default Max. Wildcards for Entity Patterns</a>
+   <td><a href="#maximum-allowed-wildcards-in-entity-patterns">Default Max. Wildcards for Entity Patterns</a>
    </td>
    <td>Use this option to define the maximum number of wildcards to be allowed by default between words for entity patterns. This does not limit you from explicitly writing patterns containing more wildcards.
    </td>
@@ -545,7 +545,7 @@ set to 2 by default
    </td>
   </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#intent-pattern-matching-order" target="_blank">Matching Order of Intent Patterns</a>
+   <td><a href="#intent-pattern-matching-order">Matching Order of Intent Patterns</a>
    </td>
    <td>Choose whether to pick the first pattern match of the intent (as per the order in which patterns are defined) or to go through all the patterns defined for the intent and find the best one.
    </td>
@@ -559,7 +559,7 @@ Best
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#grading-of-pattern-matches" target="_blank">Grading of Pattern Matches</a>
+   <td><a href="#grading-of-pattern-matches">Grading of Pattern Matches</a>
    </td>
    <td>Choose whether the Pattern Matches should be classified as Probable matches, based on the number of wildcards present in the user input when compared to the pattern definition.
    </td>
@@ -573,7 +573,7 @@ set to 3 by default
    </td>
   </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#precedence-for-intents-with-ambiguous-entities" target="_blank" target="_blank">Precedence for Intents with Ambiguous Entities</a>
+   <td><a href="#precedence-for-intents-with-ambiguous-entities">Precedence for Intents with Ambiguous Entities</a>
    </td>
    <td>Enable to Use Precedence, Intent Over Entity, or Entity Over Intent options for intents with ambiguous entities.</td>
    <td>FM</td>
@@ -584,7 +584,7 @@ set to 3 by default
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#prefer-only-the-first-pattern-match-in-a-sentence" target="_blank">Prefer Only the First Pattern Match in a Sentence</a>
+   <td><a href="#prefer-only-the-first-pattern-match-in-a-sentence">Prefer Only the First Pattern Match in a Sentence</a>
    </td>
    <td>Choose whether to prefer only the first pattern match from a sentence or to pick all the pattern matches in a sentence, when multiple patterns are matched in a single sentence
    </td>
@@ -598,7 +598,7 @@ Disable
    </td>
   </tr>
   <tr>
-   <td><a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#exact-task-name-match" target="_blank">Exact Task Name Match</a>
+   <td><a href="#exact-task-name-match">Exact Task Name Match</a>
    </td>
    <td>Choose whether the system should auto-generate the strict pattern when ‘Intent Detection using Task Name Words’ is Disabled.
    </td>
@@ -689,7 +689,7 @@ The embedding dimension defines the size of the embedding vector. If the word em
 
 ### K Fold Cross-Validation
 
-Cross-validation is a resampling technique employed to assess the performance of machine learning models when working with a restricted data sample. This process involves a key parameter known as "**k**," which signifies the number of partitions into which the data sample is divided. This configuration provides you with the capability to adjust and set the value of the parameter "**k**." <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#k-fold-cross-validation" target="_blank">Learn more</a>  for more on cross-validation.
+Cross-validation is a resampling technique employed to assess the performance of machine learning models when working with a restricted data sample. This process involves a key parameter known as "**k**," which signifies the number of partitions into which the data sample is divided. This configuration provides you with the capability to adjust and set the value of the parameter "**k**." <a href="#k-fold-cross-validation" target="_blank">Learn more</a>  for more on cross-validation.
 
 ### Fuzzy Match
 
@@ -813,7 +813,7 @@ This is a **Custom** configuration, to enable follow these steps:
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <br>Enabling this setting would add the following configurations for Term settings – Term Display Name, Auto Qualify Path, and the following configurations would not be available – Path Coverage and Minimum and Definitive Level for Knowledge Tasks. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#taxonomy-based-kg" target="_blank">Learn more</a>.</p>
+    <br>Enabling this setting would add the following configurations for Term settings – Term Display Name, Auto Qualify Path, and the following configurations would not be available – Path Coverage and Minimum and Definitive Level for Knowledge Tasks. <a href="#taxonomy-based-kg" target="_blank">Learn more</a>.</p>
     </div>
 
 ## **Fundamental Meaning Engine Settings**
@@ -871,10 +871,8 @@ When these settings are selected and enabled, the spell correction will happen a
 
 ### Spell Correction Version
 
-This configuration lets you choose the Spell Correction Version between Version 1 and Version 2 for existing VA's that have Spell Correction enabled. For new bots and existing bots that don't have Spell Correction enabled, only the Version 2 is available.
+This configuration flexibility allows users to select the spell correction version that best suits their needs for existing VAs, while new bots or those without spell correction enabled will default to Version 2.
 
 ### Spell Correction Status
 
-This configuration helps you enable or disable the Spell Correction. If enabled, the spell correction happens at one or more engines individually depending on the language for Version 1, and immediately after language detection step in case of Version 2.
-
-If this configuration is disabled, Spell Correction does not happen irrespective of the selected version.
+This configuration provides users with the flexibility to control whether spell correction is active or not. Disabling this configuration ensures that spell correction does not occur, regardless of the version selected.
