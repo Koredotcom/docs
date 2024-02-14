@@ -43,7 +43,7 @@ Also, patterns can also be used in [Small Talk](../../../automation/use-cases/sm
 </tr>
 <tr>
 <td><strong>word1 word2 … wordn</strong>
-
+<br>
 This mandates all the words defined to be available in the user utterance in the same consecutive order with additional words allowed in between, before and after
 </td>
 <td>All languages
@@ -59,7 +59,7 @@ This mandates all the words defined to be available in the user utterance in the
 </tr>
 <tr>
 <td><strong>word1_word2</strong>
-
+<br>
 Enforce phrase, no additional words allowed in between word1 and word2.
 </td>
 <td>All languages
@@ -75,7 +75,7 @@ Enforce phrase, no additional words allowed in between word1 and word2.
 </tr>
 <tr>
 <td><strong>word1 * word2</strong>
-
+<br>
 0 to infinite number of additional words between the specified words/phrases
 </td>
 <td>All languages
@@ -91,7 +91,7 @@ Enforce phrase, no additional words allowed in between word1 and word2.
 </tr>
 <tr>
 <td><strong>word1 *n word2</strong>
-
+<br>
 Exactly <em>n</em> number of additional words between the specified words/phrases
 </td>
 <td>All languages
@@ -107,7 +107,7 @@ Exactly <em>n</em> number of additional words between the specified words/phrase
 </tr>
 <tr>
 <td><strong>word1 *0 word2</strong>
-
+<br>
 To disable wildcards between two tokens.
 </td>
 <td>All languages
@@ -123,7 +123,7 @@ To disable wildcards between two tokens.
 </tr>
 <tr>
 <td><strong>word1 &lt; word2</strong>
-
+<br>
 Indicates the match for word2 should start from the beginning of a sentence.
 </td>
 <td>All languages
@@ -139,7 +139,7 @@ Indicates the match for word2 should start from the beginning of a sentence.
 </tr>
 <tr>
 <td><strong>word1 > word2</strong>
-
+<br>
 Indicates the end of the sentence and no words are allowed after it.
 </td>
 <td>All languages
@@ -155,7 +155,7 @@ Indicates the end of the sentence and no words are allowed after it.
 </tr>
 <tr>
 <td><strong>!abc</strong>
-
+<br>
 Indicates the word/concept “abc” should not exist anywhere in the user utterance after this token
 </td>
 <td>All languages
@@ -171,7 +171,7 @@ Indicates the word/concept “abc” should not exist anywhere in the user utter
 </tr>
 <tr>
 <td><strong>!!abc</strong>
-
+<br>
 The very next word/concept should not be “abc”
 </td>
 <td>All languages
@@ -187,7 +187,7 @@ The very next word/concept should not be “abc”
 </tr>
 <tr>
 <td><strong>[ … ]</strong>
-
+<br>
 Used to define a group of words/concepts and the match should be against exactly one of the group declared in [ ].
 </td>
 <td>All languages
@@ -203,7 +203,7 @@ Used to define a group of words/concepts and the match should be against exactly
 </tr>
 <tr>
 <td><strong>{ … }</strong>
-
+<br>
 Used to define an optional group or words/concepts and the match would be against zero or one of the words/patterns declared in { }.
 </td>
 <td>All languages
@@ -219,7 +219,7 @@ Used to define an optional group or words/concepts and the match would be agains
 </tr>
 <tr>
 <td><strong>( … )</strong>
-
+<br>
 contain a pattern i.e when a pattern or part of a pattern is enclosed in these parentheses, we treat it as a pattern unlike [ ] and { }.
 </td>
 <td>All languages
@@ -235,7 +235,7 @@ contain a pattern i.e when a pattern or part of a pattern is enclosed in these p
 </tr>
 <tr>
 <td><strong><&lt; … >></strong>
-
+<br>
 Used to find words in any order
 </td>
 <td>All languages
@@ -251,7 +251,7 @@ Used to find words in any order
 </tr>
 <tr>
 <td><strong>‘word1</strong>
-
+<br>
 If you quote words or use words that are not in canonical form, the system will restrict itself to what you used in the pattern
 </td>
 <td>All languages
@@ -267,7 +267,7 @@ If you quote words or use words that are not in canonical form, the system will 
 </tr>
 <tr>
 <td><strong>System Concepts</strong>
-
+<br>
 Support for built-in concepts
 </td>
 <td>
@@ -337,7 +337,7 @@ Portuguese (European)
 </tr>
 <tr>
 <td><strong>Developer concepts</strong>
-
+<br>
 Support for developer-defined concepts
 </td>
 <td>
@@ -403,7 +403,7 @@ Catalan*
 </tr>
 <tr>
 <td><strong>Two-letter identifiers for Dates</strong>
-
+<br>
 Like Mo for Monday, Tu for Tuesday, etc
 </td>
 <td>
