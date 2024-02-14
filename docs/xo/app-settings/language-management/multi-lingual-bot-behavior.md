@@ -273,59 +273,59 @@ Support for built-in concepts
 <td>
 
 English,
-
+<br><br>
 German,
-
+<br><br>
 Spanish,
-
+<br><br>
 French
 </td>
 <td>
 
 Portuguese(Brazilian),
-
+<br><br>
 Italian,
-
+<br><br>
 Chinese simplified,
-
+<br><br>
 Chinese traditional,
-
+<br><br>
 Indonesian,
-
+<br><br>
 Korean,
-
+<br><br>
 Dutch,
-
+<br><br>
 Japanese,
-
+<br><br>
 Arabic,
-
+<br><br>
 Finnish,
-
+<br><br>
 Russian,
-
+<br><br>
 Polish,
-
+<br><br>
 Ukrainian,
-
+<br><br>
 Swedish,
-
+<br><br>
 Kazakh,
-
+<br><br>
 Norwegian,
-
+<br><br>
 Hindi,
-
+<br><br>
 Telugu,
-
+<br><br>
 Tamil,
-
+<br><br>
 Marathi,
-
+<br><br>
 Catalan,
-
+<br><br>
 Tagalog,
-
+<br><br>
 Portuguese (European)
 </td>
 <td>No
@@ -343,53 +343,53 @@ Support for developer-defined concepts
 <td>
 
 English,
-
+<br><br>
 German,
-
+<br><br>
 Spanish,
-
+<br><br>
 French,
-
+<br><br>
 Portuguese(Brazilian)*,
-
+<br><br>
 Italian*,
-
+<br><br>
 Chinese simplified*,
-
+<br><br>
 Chinese traditional*,
-
+<br><br>
 Indonesian*,
-
+<br><br>
 Korean*,
-
+<br><br>
 Dutch*,
-
+<br><br>
 Japanese*,
-
+<br><br>
 Arabic*,
-
+<br><br>
 Finnish*,
-
+<br><br>
 Russian*,
-
+<br><br>
 Polish*,
-
+<br><br>
 Ukrainian*,
-
+<br><br>
 Swedish*,
-
+<br><br>
 Kazakh*,
-
+<br><br>
 Norwegian*,
-
+<br><br>
 Hindi*,
-
+<br><br>
 Telugu*,
-
+<br><br>
 Tamil*,
-
+<br><br>
 Marathi*,
-
+<br><br>
 Catalan*
 </td>
 <td> –
@@ -409,59 +409,59 @@ Like Mo for Monday, Tu for Tuesday, etc
 <td>
 
 English,
-
+<br><br>
 German,
-
+<br><br>
 Spanish,
-
+<br><br>
 Portuguese(Brazilian),
-
+<br><br>
 Italian,
-
+<br><br>
 Chinese simplified,
-
+<br><br>
 Chinese traditional,
-
+<br><br>
 Indonesian,
-
+<br><br>
 Korean,
-
+<br><br>
 Dutch,
-
+<br><br>
 Japanese,
-
+<br><br>
 Arabic,
-
+<br><br>
 Finnish,
-
+<br><br>
 Russian,
-
+<br><br>
 Polish,
-
+<br><br>
 Ukrainian,
-
+<br><br>
 Swedish,
-
+<br><br>
 Kazakh,
-
+<br><br>
 Norwegian,
-
+<br><br>
 Hindi
 </td>
 <td>
 
 French,
-
+<br><br>
 Telugu,
-
+<br><br>
 Tamil,
-
+<br><br>
 Marathi,
-
+<br><br>
 Catalan,
-
+<br><br>
 Tagalog,
-
+<br><br>
 Portuguese (European)
 </td>
 <td>–
@@ -591,55 +591,55 @@ Here we will list out the NLP features and their support.
 <td>
 
 English,
-
+<br><br>
 German,
-
+<br><br>
 Spanish,
-
+<br><br>
 French,
-
+<br><br>
 Portuguese(Brazilian),
-
+<br><br>
 Portuguese (European),
-
+<br><br>
 Italian,
-
+<br><br>
 Indonesian,
-
+<br><br>
 Korean (from ver7.3),
-
+<br><br>
 Dutch,
-
+<br><br>
 Arabic,
-
+<br><br>
 Finnish,
-
+<br><br>
 Russian
-
+<br><br>
 Polish,
-
+<br><br>
 Ukrainian,
-
+<br><br>
 Swedish,
-
+<br><br>
 Kazakh,
-
+<br><br>
 Norwegian
 </td>
 <td>
 
 Chinese simplified,
-
+<br><br>
 Chinese traditional,
-
+<br><br>
 Japanese,
-
+<br><br>
 Hindi,
-
+<br><br>
 Telugu,
-
+<br><br>
 Tamil,
-
+<br><br>
 Marathi
 </td>
 <td>–
@@ -669,57 +669,57 @@ Marathi
 <td>
 
 English,
-
+<br><br>
 German,
-
+<br><br>
 Spanish,
-
+<br><br>
 French,
-
+<br><br>
 Dutch,
-
+<br><br>
 Korean (from ver7.3),
-
+<br><br>
 Japanese (from ver8.0),
-
+<br><br>
 Russian (from ver8.0),
-
+<br><br>
 Kazakh (from ver8.0),
-
+<br><br>
 Polish (from ver9.2),
-
+<br><br>
 Norwegian,
-
+<br><br>
 Portuguese (European)
 </td>
 <td>
 
 Portuguese(Brazilian),
-
+<br><br>
 Italian,
-
+<br><br>
 Chinese simplified,
-
+<br><br>
 Chinese traditional
-
+<br><br>
 Indonesian,
-
+<br><br>
 Arabic,
-
+<br><br>
 Finnish,
-
+<br><br>
 Ukrainian,
-
+<br><br>
 Swedish,
-
+<br><br>
 Hindi,
-
+<br><br>
 Telugu,
-
+<br><br>
 Tamil,
-
+<br><br>
 Marathi,
-
+<br><br>
 Catalan
 </td>
 <td>–
@@ -735,45 +735,45 @@ Catalan
 <td>
 
 English,
-
+<br><br>
 German,
-
+<br><br>
 Spanish,
-
+<br><br>
 French
 </td>
 <td>
 
 Portuguese(Brazilian),
-
+<br><br>
 Portuguese (European),
-
+<br><br>
 Italian,
-
+<br><br>
 Chinese simplified,
-
+<br><br>
 Chinese traditional
-
+<br><br>
 Indonesian,
-
+<br><br>
 Korean,
-
+<br><br>
 Dutch,
-
+<br><br>
 Japanese,
-
+<br><br>
 Arabic,
-
+<br><br>
 Finnish,
-
+<br><br>
 Russian
-
+<br><br>
 Polish,
-
+<br><br>
 Ukrainian,
-
+<br><br>
 Swedish,
-
+<br><br>
 Kazakh
 </td>
 <td>–
@@ -817,45 +817,45 @@ Kazakh
 <td>
 
 English,
-
+<br><br>
 German (from ver7.3),
-
+<br><br>
 Spanish (from ver7.3),
-
+<br><br>
 French (from ver7.3),
-
+<br><br>
 Portuguese(Brazilian) (from ver7.3),
-
+<br><br>
 Italian (from ver7.3),
-
+<br><br>
 Indonesian (from ver7.3),
-
+<br><br>
 Dutch (from ver7.3),
-
+<br><br>
 Finnish (from ver7.3),
-
+<br><br>
 Polish (from ver7.3),
-
+<br><br>
 Swedish (from ver7.3),
 </td>
 <td>
 
 Chinese simplified,
-
+<br><br>
 Chinese traditional,
-
+<br><br>
 Korean,
-
+<br><br>
 Japanese,
-
+<br><br>
 Arabic,
-
+<br><br>
 Russian,
-
+<br><br>
 Ukrainian,
-
+<br><br>
 Kazakh,
-
+<br><br>
 Portuguese (European)
 </td>
 <td>–
@@ -871,47 +871,47 @@ Portuguese (European)
 <td>
 
 English,
-
+<br><br>
 German,
-
+<br><br>
 Spanish,
-
+<br><br>
 French,
-
+<br><br>
 Portuguese(Brazilian),
-
+<br><br>
 Portuguese (European),
-
+<br><br>
 Italian,
-
+<br><br>
 Indonesian,
-
+<br><br>
 Korean,
-
+<br><br>
 Dutch,
-
+<br><br>
 Arabic,
-
+<br><br>
 Finnish,
-
+<br><br>
 Polish,
-
+<br><br>
 Swedish,
-
+<br><br>
 Ukrainian
-
+<br><br>
 Russian (from ver8.0),
-
+<br><br>
 Kazakh (from ver8.0),
-
+<br><br>
 Japanese (from ver8.0),
 </td>
 <td>
 
 Chinese simplified,
-
+<br><br>
 Chinese traditional,
-
+<br><br>
 Catalan
 </td>
 <td>–
@@ -955,47 +955,47 @@ Catalan
 <td>
 
 German (from ver7.3),
-
+<br><br>
 French (from ver7.3),
-
+<br><br>
 Italian (from ver8.0)
 </td>
 <td>
 
 English,
-
+<br><br>
 Spanish,
-
+<br><br>
 Portuguese(Brazilian),
-
+<br><br>
 Chinese simplified,
-
+<br><br>
 Chinese traditional
-
+<br><br>
 Indonesian,
-
+<br><br>
 Korean,
-
+<br><br>
 Dutch,
-
+<br><br>
 Japanese,
-
+<br><br>
 Arabic,
-
+<br><br>
 Finnish,
-
+<br><br>
 Russian
-
+<br><br>
 Polish,
-
+<br><br>
 Ukrainian,
-
+<br><br>
 Swedish,
-
+<br><br>
 Kazakh,
-
+<br><br>
 Norwegian,
-
+<br><br>
 Hindi
 </td>
 <td>–
