@@ -519,4 +519,10 @@ nav:
         - Web/Mobile SDK: app-settings/dev-tools/kore-ai-web-sdk-tutorial.md
         - API Scopes: apis/automation/api-introduction.md
         - Mock Scenes: app-settings/mock-scenes.md
+      - Variables:
+        - Using Bot Variables: app-settings/variables/using-bot-variables.md
+        - Collections: app-settings/variables/collections.md
+      - Advanced Settings:
+        - PII Settings: app-settings/advanced-settings/pii-data-masking.md
+        - Manage Sessions: app-settings/advanced-settings/bot-sessions.md
       
