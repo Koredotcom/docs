@@ -70,7 +70,7 @@ You will see a **Conversation Preview** window right after creating your Dialog 
 
     !!! Note 
  
-	    Providing a relevant description is reccommended. Dialog will be generated, but with **only the error prompt,** if no description is provided. 
+	    Providing a relevant description is reccommended. Dialog will be generated, but with **only the error prompt**, if no description is provided. 
  
     <img src="../images/using-dialog-builder-img8-create-dialog-genai-regenerate.png" alt="Regenerate AI generated dialog" title="Regenerate AI generated dialog" style="border:1px solid gray; zoon:60%;"> 
 
@@ -326,9 +326,9 @@ Bot Action assets include the following assets, that need processing by the app 
 
 To access these nodes follow the steps below:
 
-1. Add a **Bot Action **node to your dialog task canvas.
+1. Add a **Bot Action** node to your dialog task canvas.
 2. Click the **expand (+)** button next to the Bot Action node. The primary nodes panel will be replaced with the Bot Action nodes panel.
-3. The Bot Action Node shows all of its containing nodes as a group. Add any node from here, using either the “+” sign or drag and drop. Bot Action Nodes provide the following options: On the left side of the node there is an **Expand (+) **button if the node is collapsed, and a **Collapse (-)** button if the node is expanded. Nodes can also be collapsed using the **Close (x)** button on the top right.
+3. The Bot Action Node shows all of its containing nodes as a group. Add any node from here, using either the “+” sign or drag and drop. Bot Action Nodes provide the following options: On the left side of the node there is an **Expand (+)** button if the node is collapsed, and a **Collapse (-)** button if the node is expanded. Nodes can also be collapsed using the **Close (x)** button on the top right.
 4. Nodes inside the bot action node cannot be connected directly to any node outside the bot action.
 5. For the nodes inside the bot action node, the following connections can be configured:
     1. **Node Connections** – this option can be used to define the connection rules connecting to nodes within the bot action node. This can be configured to:

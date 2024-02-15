@@ -918,7 +918,7 @@ For example, consider the sales inquiries for flight bookings. Typical queries c
 
 As you can see, the virtual assistant typically needs to process a combination of details like flight class, departure city, destination city and travel date to respond to those queries.
 
-These scenarios are taken care of by the Composite Entity Type. [Refer here](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-composite-entities/){:target="_blank"} to know more about Composite Entity Types.
+These scenarios are taken care of by the Composite Entity Type. [Refer here](../../../../how-tos/build-a-banking-assistant/train-the-assistant/composite-entities/){:target="_blank"} to know more about Composite Entity Types.
 
 
 ### Date

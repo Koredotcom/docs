@@ -32,7 +32,7 @@ The option to record the test suite captures the metadata in the background whic
 
 #### Generated User Response Suggestions
 
-If you have enabled [LLM and Generative AI](https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/){:target="_blank"} for your Virtual Assistant, you will see User Response suggestions while recording a Conversation Test Case. 
+If you have enabled [LLM and Generative AI](../../../../../app-settings/generative-ai-tools/introduction/){:target="_blank"} for your Virtual Assistant, you will see User Response suggestions while recording a Conversation Test Case. 
 
 This feature provides a regression tool that creates a conversation test suite for each intent (new and old) to evaluate the impact of a change on the conversation execution. It helps check if the task or intent is robust enough to handle random user utterances. 
 

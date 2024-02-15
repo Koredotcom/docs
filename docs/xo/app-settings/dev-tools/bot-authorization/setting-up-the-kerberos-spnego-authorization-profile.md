@@ -11,7 +11,7 @@ The Kerberos SPNEGO auth profile can be configured from the following XO Platfor
 
 * [Service Node](../../../../automation/use-cases/dialogs/node-types/working-with-the-service-node){:target="_blank"}
 * [Configurations > Authorization Profile](../bot-authentication/){:target="_blank"}
-* [Generative AI & LLM > Custom LLM Integrations](https://developer.kore.ai/docs/bots/nlp/llm-integration/#Configure_Custom_LLM_Integration){:target="_blank"}
+* [Generative AI & LLM > Custom LLM Integrations](../../../generative-ai-tools/llm-integration/#configure-custom-llm-integration){:target="_blank"}
 
 
 ## Configuring Kerberos SPNEGO Authorization

@@ -85,7 +85,7 @@ You can add up to three intents (Dialog, FAQ, or Small Talk) for a test utteranc
 
 #### Generating Test Cases Automatically
 
-You can automatically generate batch test cases if you have enabled [LLM and Generative AI ](https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/){:target="_blank"} for your Virtual Assistant. You can access the feature either right after creating a new test case, as shown above, or from the test cases list.
+You can automatically generate batch test cases if you have enabled [LLM and Generative AI ](../../../../app-settings/generative-ai-tools/introduction/){:target="_blank"} for your Virtual Assistant. You can access the feature either right after creating a new test case, as shown above, or from the test cases list.
 
 <img src="../images/batch-testing-9-goto-generate-test-cases-1.png" alt="Generating test cases automatically" title="Generating test cases automatically" style="border: 1px solid gray; zoom:50%;"/> 
 

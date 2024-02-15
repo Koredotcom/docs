@@ -427,12 +427,83 @@ nav:
       - Reports: analytics/contact-center/interactions.md
   - Administration:
     - Deployment:
-      - Topic 1: analytics/contact-center/interactions.md
-      - Topic 2: analytics/contact-center/interactions.md
+      - Bot Versioning: deploy/bot-versioning.md
+      - Publishing your App: deploy/publishing-bot.md
+      - Import & Export: manage-assistant/bot-management.md
+      - Channels: channels/adding-channels-to-your-bot.md
     - App Settings:
-      - Topic 1: analytics/contact-center/interactions.md
-      - Topic 2: analytics/contact-center/interactions.md
-    - Admin Console:
-      - Topic 1: analytics/contact-center/interactions.md
-    
-   
+      - App Profile: app-settings/app-profile.md
+      - Language Management:
+        - Get Started: app-settings/language-management/building-multi-language-bots.md
+        - Supported Components & Features: app-settings/language-management/multilingual-vas-components-feature-support.md
+        - Manage Languages: app-settings/language-management/managing-languages-for-multilingual-vas.md
+        - Manage Translation Services: app-settings/language-management/managing-translation-services.md
+        - Multiingual Virtual Assistant Behavior: app-settings/language-management/multi-lingual-bot-behavior.md
+      - Integrations:
+        - Actions:
+          - Actions Overview: app-settings/integrations/actions/actions.md
+          - Asana:
+            - Configure: app-settings/integrations/actions/asana/configuring-the-asana-action.md
+            - Templates: app-settings/integrations/actions/asana/using-the-asana-action-templates.md
+          - Azure OpenAI:
+            - Configure: app-settings/integrations/actions/azure-open-ai/configuring-the-azure-openai-action.md
+            - Templates: app-settings/integrations/actions/azure-open-ai/using-the-azure-openai-action-templates.md
+          - BambooHR:
+            - Configure: app-settings/integrations/actions/bamboo-hr/configuring-the-bamboohr-action.md
+            - Templates: app-settings/integrations/actions/bamboo-hr/using-the-bamboohr-templates.md
+          - Bitly:
+            - Configure: app-settings/integrations/actions/bitly/configuring-the-bitly-action.md
+            - Templates: app-settings/integrations/actions/bitly/using-the-bitly-action-template.md
+          - Confluence:
+            - Configure: app-settings/integrations/actions/confluence/configuring-the-confluence-action.md
+            - Templates: app-settings/integrations/actions/confluence/using-the-confluence-action-templates.md
+          - DHL:
+            - Configure: app-settings/integrations/actions/dhl/configuring-the-dhl-action.md
+            - Templates: app-settings/integrations/actions/dhl/using-the-dhl-action-templates.md
+          - Freshdesk:
+            - Configure: app-settings/integrations/actions/freshdesk/configuring-the-freshdesk-action.md
+            - Templates: app-settings/integrations/actions/freshdesk/using-the-freshdesk-action-templates.md
+          - Freshservice:
+            - Configure: app-settings/integrations/actions/freshservice/configuring-the-freshservice-action.md
+            - Templates: app-settings/integrations/actions/freshservice/using-the-freshservice-itsm-action-templates.md
+          - Google Maps:
+            - Configure: app-settings/integrations/actions/google-maps/configuring-the-google-maps-action.md
+            - Templates: app-settings/integrations/actions/google-maps/using-the-google-maps-action-templates.md
+          - Here:
+            - Configure: app-settings/integrations/actions/here/configuring-the-here-action.md
+            - Templates: app-settings/integrations/actions/here/using-here-action-templates.md
+          - Hubspot:
+            - Configure: app-settings/integrations/actions/hubspot/configuring-the-hubspot-action.md
+            - Templates: app-settings/integrations/actions/hubspot/using-the-hubspot-action-templates.md
+          - JIRA:
+            - Configure: app-settings/integrations/actions/jira/configuring-the-jira-action.md
+            - Templates: app-settings/integrations/actions/jira/using-the-jira-action-templates.md
+          - Microsoft Graph:
+            - Configure: app-settings/integrations/actions/microsoft-graph/configuring-the-microsoft-graph-action.md
+            - Templates: app-settings/integrations/actions/microsoft-graph/using-the-microsoft-graph-action-templates.md
+          - OpenAI:
+            - Configure: app-settings/integrations/actions/open-ai/configuring-the-openai-action.md
+            - Templates: app-settings/integrations/actions/open-ai/using-the-openai-actions-templates.md
+          - Salesforce:
+            - Configure: app-settings/integrations/actions/salesforce/configuring-the-salesforce-crm-action.md
+            - Templates: app-settings/integrations/actions/salesforce/using-the-salesforce-crm-action-templates.md
+          - Servicenow:
+            - Configure: app-settings/integrations/actions/servicenow/configuring-the-servicenow-action.md
+            - Templates: app-settings/integrations/actions/servicenow/using-the-servicenow-action-templates.md
+          - Stripe:
+            - Configure: app-settings/integrations/actions/stripe/configuring-the-stripe-action.md
+            - Templates: app-settings/integrations/actions/stripe/using-the-stripe-action-templates.md
+          - Shopify:
+            - Configure: app-settings/integrations/actions/shopify/configuring-the-shopify-action.md
+            - Templates: app-settings/integrations/actions/shopify/using-the-shopify-action-templates.md
+          - Twilio:
+            - Configure: app-settings/integrations/actions/twilio/configuring-the-twilio-action.md
+            - Templates: app-settings/integrations/actions/twilio/using-the-twilio-action-templates.md
+          - Zendesk:
+            - Configure: app-settings/integrations/actions/zendesk/configuring-the-zendesk-action.md
+            - Templates: app-settings/integrations/actions/zendesk/using-the-zendesk-action-templates.md
+        - Agent Transfer: app-settings/integrations/agents/agent-transfer-integrations.md
+        - External NLU Adapters:
+          - Overview: app-settings/integrations/external-nlu/external-nlu-adapters.md
+          - Dialogflow Engine: app-settings/integrations/external-nlu/dialogflow-engine.md
+          - Test and Debug: app-settings/integrations/external-nlu/test-and-debug.md
