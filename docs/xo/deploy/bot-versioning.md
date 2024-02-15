@@ -29,15 +29,15 @@ This option can be accessed from the **Deploy** tab from the top menu, under the
 The version type is based on the ways in which a Bot version is created:
 
 * **User Created**: These versions are created by you as a developer, as discussed below.
-    * The maximum number of user-created versions that will be created is set to 20. Once this limit is reached new versions will be created and the oldest versions are deleted.
+    * There is a limit of 20 user-created versions. Once the limit is reached, the oldest versions are deleted to make room for any new ones.
 
 * **Auto Created**: These versions are created as part of the publishing cycle. [Learn more](../publishing-bot/){:target="_blank"}.
     * Whenever you publish a VA, the Platform creates a version automatically.
-    * This auto version includes the definition of the published copy of the assistant after the current publish request is accepted.
+    * This auto created version includes the definition of the published copy of the assistant after the current publish request is accepted.
     * In case the publish request is rejected, the version will not be created.
     * You cannot delete these versions.
     * While an auto-version creation is in-progress, you cannot raise any subsequent publish requests.
-    * The maximum number of auto-versions that will be created is set to 20. Once this limit is reached new versions will be created and the oldest versions are deleted.
+    * There is a maximum limit of 20 auto-created versions. Once the limit is reached, the oldest versions are deleted to make room for any new ones.
 
 <img src="../images/bot-versioning-img1.png" alt="Deploy - Bot Versions" title="Deploy - Bot Versions" style="border: 1px solid gray; zoom:70%;">
 
