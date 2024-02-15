@@ -502,3 +502,30 @@ nav:
           - Zendesk:
             - Configure: app-settings/integrations/actions/zendesk/configuring-the-zendesk-action.md
             - Templates: app-settings/integrations/actions/zendesk/using-the-zendesk-action-templates.md
+        - Agent Transfer: app-settings/integrations/agents/agent-transfer-integrations.md
+        - External NLU Adapters:
+          - Overview: app-settings/integrations/external-nlu/external-nlu-adapters.md
+          - Dialogflow Engine: app-settings/integrations/external-nlu/dialogflow-engine.md
+          - Test and Debug: app-settings/integrations/external-nlu/test-and-debug.md
+      - Generative AI Tools:
+        - Introduction to LLM and Generative AI: app-settings/generative-ai-tools/introduction.md
+        - Co-Pilot Features: app-settings/generative-ai-tools/co-pilot-features.md
+        - Prompts and Requests Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
+        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md
+        - LLM Integration: app-settings/generative-ai-tools/llm-integration.md
+      - Dev Tools:
+        - Bot Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
+        - Authorization Profiles: app-settings/dev-tools/bot-authorization/bot-authentication.md
+        - Web/Mobile SDK: app-settings/dev-tools/kore-ai-web-sdk-tutorial.md
+        - API Scopes: apis/automation/api-introduction.md
+        - Mock Scenes: app-settings/mock-scenes.md
+      - Variables:
+        - Using Bot Variables: app-settings/variables/using-bot-variables.md
+        - Collections: app-settings/variables/collections.md
+      - Advanced Settings:
+        - PII Settings: app-settings/advanced-settings/pii-data-masking.md
+        - Manage Sessions: app-settings/advanced-settings/bot-sessions.md
+      - Change Logs: app-settings/change-logs.md
+      - Delete App: app-settings/delete-app.md
+    - Admin Console:
+      
