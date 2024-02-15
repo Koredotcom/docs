@@ -481,8 +481,73 @@ nav:
           - Microsoft Graph:
             - Configure: app-settings/integrations/actions/microsoft-graph/configuring-the-microsoft-graph-action.md
             - Templates: app-settings/integrations/actions/microsoft-graph/using-the-microsoft-graph-action-templates.md
-          
+          - OpenAI:
+            - Configure: app-settings/integrations/actions/open-ai/configuring-the-openai-action.md
+            - Templates: app-settings/integrations/actions/open-ai/using-the-openai-actions-templates.md
+          - Salesforce:
+            - Configure: app-settings/integrations/actions/salesforce/configuring-the-salesforce-crm-action.md
+            - Templates: app-settings/integrations/actions/salesforce/using-the-salesforce-crm-action-templates.md
+          - Servicenow:
+            - Configure: app-settings/integrations/actions/servicenow/configuring-the-servicenow-action.md
+            - Templates: app-settings/integrations/actions/servicenow/using-the-servicenow-action-templates.md
+          - Stripe:
+            - Configure: app-settings/integrations/actions/stripe/configuring-the-stripe-action.md
+            - Templates: app-settings/integrations/actions/stripe/using-the-stripe-action-templates.md
+          - Shopify:
+            - Configure: app-settings/integrations/actions/shopify/configuring-the-shopify-action.md
+            - Templates: app-settings/integrations/actions/shopify/using-the-shopify-action-templates.md
+          - Twilio:
+            - Configure: app-settings/integrations/actions/twilio/configuring-the-twilio-action.md
+            - Templates: app-settings/integrations/actions/twilio/using-the-twilio-action-templates.md
+          - Zendesk:
+            - Configure: app-settings/integrations/actions/zendesk/configuring-the-zendesk-action.md
+            - Templates: app-settings/integrations/actions/zendesk/using-the-zendesk-action-templates.md
+        - Agent Transfer: app-settings/integrations/agents/agent-transfer-integrations.md
+        - External NLU Adapters:
+          - Overview: app-settings/integrations/external-nlu/external-nlu-adapters.md
+          - Dialogflow Engine: app-settings/integrations/external-nlu/dialogflow-engine.md
+          - Test and Debug: app-settings/integrations/external-nlu/test-and-debug.md
+        - Generative AI Tools:
+          - Introduction to LLM and Generative AI: app-settings/generative-ai-tools/introduction.md
+          - Co-Pilot Features: app-settings/generative-ai-tools/co-pilot-features.md
+          - Prompts and Requests Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
+          - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md
+          - LLM Integration: app-settings/generative-ai-tools/llm-integration.md
+        - Dev Tools:
+          - Bot Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
+          - Authorization Profiles: app-settings/dev-tools/bot-authorization/bot-authentication.md
+          - Web/Mobile SDK: app-settings/dev-tools/kore-ai-web-sdk-tutorial.md
+          - API Scopes: apis/automation/api-introduction.md
+          - Mock Scenes: app-settings/mock-scenes.md
+        - Variables:
+          - Using Bot Variables: app-settings/variables/using-bot-variables.md
+          - Collections: app-settings/variables/collections.md
+        - Advanced Settings:
+          - PII Settings: app-settings/advanced-settings/pii-data-masking.md
+          - Manage Sessions: app-settings/advanced-settings/bot-sessions.md
+        - Change Logs: app-settings/change-logs.md
+        - Delete App: app-settings/delete-app.md
     - Admin Console:
-      - Topic 1: analytics/contact-center/interactions.md
+      - Introduction to Admin Console: administration/adminconsole.md
+      - Administration Dashboard: administration/dashboard-bac.md
+      - User Management:
+        - Add Users: administration/user-management/managing-your-users.md
+        - Manage Groups: administration/user-management/managing-your-groups.md
+        - Manage Roles: administration/user-management/role-management.md
+      - Data Tables And Views: administration/data/manage-data-tables-and-views-in-admin-console.md
+      - Assistant Management: administration/bot-management.md
+      - Enrollment:
+        - Invite Users: administration/enrollment/enrolling-a-new-user.md
+        - Send Bulk Invites: administration/enrollment/enrolling-many-users.md
+        - Import User Data: administration/enrollment/importing-users-and-user-data.md
+        - Synchronizing Users from Active Directory: administration/enrollment/synchronizing-users-from-active-directory.md
+      - Security and Control:
+        - Invite Users:	administration/enrollment/enrolling-a-new-user.md
+        - Send Bulk Invites: administration/enrollment/enrolling-many-users.md
+        - Import User Data: administration/enrollment/importing-users-and-user-data.md
+        - Synchronizing Users from Active Directory: administration/enrollment/synchronizing-users-from-active-directory.md
+      - Cloud Connector: administration/kore-ai-connector.md
+      - Analytics for Bots Admin: administration/analytics.md
+      - Billing: administration/billing.md
     
    
