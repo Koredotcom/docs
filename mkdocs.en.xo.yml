@@ -522,4 +522,7 @@ nav:
         - Manage Sessions: app-settings/advanced-settings/bot-sessions.md
       - Change Logs: app-settings/change-logs.md
       - Delete App: app-settings/delete-app.md
-    
+    - Admin Console:
+      - Introduction to Admin Console: administration/adminconsole.md
+      - Administration Dashboard: administration/dashboard-bac.md
+      
