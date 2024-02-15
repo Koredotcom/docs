@@ -531,3 +531,8 @@ nav:
         - Manage Roles: administration/user-management/role-management.md
       - Data Tables And Views: administration/data/manage-data-tables-and-views-in-admin-console.md
       - Assistant Management: administration/bot-management.md
+      - Enrollment:
+        - Invite Users: administration/enrollment/enrolling-a-new-user.md
+        - Send Bulk Invites: administration/enrollment/enrolling-many-users.md
+        - Import User Data: administration/enrollment/importing-users-and-user-data.md
+        - Synchronizing Users from Active Directory: administration/enrollment/synchronizing-users-from-active-directory.md
