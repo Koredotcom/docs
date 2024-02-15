@@ -432,8 +432,13 @@ nav:
       - Import & Export: manage-assistant/bot-management.md
       - Channels: channels/adding-channels-to-your-bot.md
     - App Settings:
-      - Topic 1: analytics/contact-center/interactions.md
-      - Topic 2: analytics/contact-center/interactions.md
+      - App Profile: app-settings/app-profile.md
+      - Language Management:
+        - Get Started: app-settings/language-management/building-multi-language-bots.md
+        - Supported Components & Features: app-settings/language-management/multilingual-vas-components-feature-support.md
+        - Manage Languages: app-settings/language-management/managing-languages-for-multilingual-vas.md
+        - Manage Translation Services: app-settings/language-management/managing-translation-services.md
+        - Multiingual Virtual Assistant Behavior: app-settings/language-management/multi-lingual-bot-behavior.md
     - Admin Console:
       - Topic 1: analytics/contact-center/interactions.md
     
