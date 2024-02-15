@@ -529,3 +529,5 @@ nav:
         - Add Users: administration/user-management/managing-your-users.md
         - Manage Groups: administration/user-management/managing-your-groups.md
         - Manage Roles: administration/user-management/role-management.md
+      - Data Tables And Views: administration/data/manage-data-tables-and-views-in-admin-console.md
+      - Assistant Management: administration/bot-management.md
