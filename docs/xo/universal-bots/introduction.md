@@ -41,7 +41,7 @@ The following is the explanation for the above process flow:
 
 
 
-* Universal Bot checks id any eligible bots are defined.
+* Universal Bot checks if any eligible bots are defined.
 * If defined, then the list of eligible bots is obtained, else the user intent is checked against any Small Talk, etc.
 * If eligible bots not defined then all the linked bots are considered as eligible.
 * Once the linked eligible bots list is there, Universal Bot identifies the bots that qualify using the invocation phrases. ([See the bot training page for details](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/training-a-universal-bot/#Invocation_Phrases))
