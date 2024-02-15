@@ -507,5 +507,3 @@ nav:
           - Overview: app-settings/integrations/external-nlu/external-nlu-adapters.md
           - Dialogflow Engine: app-settings/integrations/external-nlu/dialogflow-engine.md
           - Test and Debug: app-settings/integrations/external-nlu/test-and-debug.md
-      - Generative AI Tools:
-        
