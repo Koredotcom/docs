@@ -513,4 +513,10 @@ nav:
         - Prompts and Requests Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
         - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md
         - LLM Integration: app-settings/generative-ai-tools/llm-integration.md
+      - Dev Tools:
+        - Bot Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
+        - Authorization Profiles: app-settings/dev-tools/bot-authorization/bot-authentication.md
+        - Web/Mobile SDK: app-settings/dev-tools/kore-ai-web-sdk-tutorial.md
+        - API Scopes: apis/automation/api-introduction.md
+        - Mock Scenes: app-settings/mock-scenes.md
       
