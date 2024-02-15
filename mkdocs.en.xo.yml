@@ -475,7 +475,7 @@ nav:
           - Hubspot:
             - Configure: app-settings/integrations/actions/hubspot/configuring-the-hubspot-action.md
             - Templates: app-settings/integrations/actions/hubspot/using-the-hubspot-action-templates.md
-          - JIRA
+          - JIRA:
             - Configure: app-settings/integrations/actions/jira/configuring-the-jira-action.md
             - Templates: app-settings/integrations/actions/jira/using-the-jira-action-templates.md
           - Microsoft Graph:
