@@ -525,4 +525,7 @@ nav:
     - Admin Console:
       - Introduction to Admin Console: administration/adminconsole.md
       - Administration Dashboard: administration/dashboard-bac.md
-      
+      - User Management:
+        - Add Users: administration/user-management/managing-your-users.md
+        - Manage Groups: administration/user-management/managing-your-groups.md
+        - Manage Roles: administration/user-management/role-management.md
