@@ -439,6 +439,49 @@ nav:
         - Manage Languages: app-settings/language-management/managing-languages-for-multilingual-vas.md
         - Manage Translation Services: app-settings/language-management/managing-translation-services.md
         - Multiingual Virtual Assistant Behavior: app-settings/language-management/multi-lingual-bot-behavior.md
+      - Integrations:
+        - Actions:
+          - Actions Overview: app-settings/integrations/actions/actions.md
+          - Asana:
+            - Configure: app-settings/integrations/actions/asana/configuring-the-asana-action.md
+            - Templates: app-settings/integrations/actions/asana/using-the-asana-action-templates.md
+          - Azure OpenAI:
+            - Configure: app-settings/integrations/actions/azure-open-ai/configuring-the-azure-openai-action.md
+            - Templates: app-settings/integrations/actions/azure-open-ai/using-the-azure-openai-action-templates.md
+          - BambooHR:
+            - Configure: app-settings/integrations/actions/bamboo-hr/configuring-the-bamboohr-action.md
+            - Templates: app-settings/integrations/actions/bamboo-hr/using-the-bamboohr-templates.md
+          - Bitly:
+            - Configure: app-settings/integrations/actions/bitly/configuring-the-bitly-action.md
+            - Templates: app-settings/integrations/actions/bitly/using-the-bitly-action-template.md
+          - Confluence:
+            - Configure: app-settings/integrations/actions/confluence/configuring-the-confluence-action.md
+            - Templates: app-settings/integrations/actions/confluence/using-the-confluence-action-templates.md
+          - DHL:
+            - Configure: app-settings/integrations/actions/dhl/configuring-the-dhl-action.md
+            - Templates: app-settings/integrations/actions/dhl/using-the-dhl-action-templates.md
+          - Freshdesk:
+            - Configure: app-settings/integrations/actions/freshdesk/configuring-the-freshdesk-action.md
+            - Templates: app-settings/integrations/actions/freshdesk/using-the-freshdesk-action-templates.md
+          - Freshservice:
+            - Configure: app-settings/integrations/actions/freshservice/configuring-the-freshservice-action.md
+            - Templates: app-settings/integrations/actions/freshservice/using-the-freshservice-itsm-action-templates.md
+          - Google Maps:
+            - Configure: app-settings/integrations/actions/google-maps/configuring-the-google-maps-action.md
+            - Templates: app-settings/integrations/actions/google-maps/using-the-google-maps-action-templates.md
+          - Here:
+            - Configure: app-settings/integrations/actions/here/configuring-the-here-action.md
+            - Templates: app-settings/integrations/actions/here/using-here-action-templates.md
+          - Hubspot:
+            - Configure: app-settings/integrations/actions/hubspot/configuring-the-hubspot-action.md
+            - Templates: app-settings/integrations/actions/hubspot/using-the-hubspot-action-templates.md
+          - JIRA
+            - Configure: app-settings/integrations/actions/jira/configuring-the-jira-action.md
+            - Templates: app-settings/integrations/actions/jira/using-the-jira-action-templates.md
+          - Microsoft Graph:
+            - Configure: app-settings/integrations/actions/microsoft-graph/configuring-the-microsoft-graph-action.md
+            - Templates: app-settings/integrations/actions/microsoft-graph/using-the-microsoft-graph-action-templates.md
+          
     - Admin Console:
       - Topic 1: analytics/contact-center/interactions.md
     
