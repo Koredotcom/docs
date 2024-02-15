@@ -427,8 +427,10 @@ nav:
       - Reports: analytics/contact-center/interactions.md
   - Administration:
     - Deployment:
-      - Topic 1: analytics/contact-center/interactions.md
-      - Topic 2: analytics/contact-center/interactions.md
+      - Bot Versioning: deploy/bot-versioning.md
+      - Publishing your App: deploy/publishing-bot.md
+      - Import & Export: manage-assistant/bot-management.md
+      - Channels: channels/adding-channels-to-your-bot.md
     - App Settings:
       - Topic 1: analytics/contact-center/interactions.md
       - Topic 2: analytics/contact-center/interactions.md
