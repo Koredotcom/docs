@@ -437,7 +437,17 @@ nav:
         - Zendesk:
           - Configure: app-settings/integrations/actions/zendesk/configuring-the-zendesk-action.md
           - Templates: app-settings/integrations/actions/zendesk/using-the-zendesk-action-templates.md
-      - Agent Transfer: app-settings/integrations/agents/agent-transfer-integrations.md
+      - Agent Transfer: 
+        - Agent Transfer Integrations: app-settings/integrations/agents/agent-transfer-integrations.md
+        - Configuring Custom Agent Integration: app-settings/integrations/agents/how-to-configure-agent-transfer.md
+        - Configuring the Drift Agent: app-settings/integrations/agents/configuring-the-drift-agent.md
+        - Configuring the Genesys Agent: app-settings/integrations/agents/configuring-the-genesys-agent.md
+        - Configuring the Intercom Agent: app-settings/integrations/agents/configuring-the-intercom-agent.md
+        - Configuring the NiceInContact: app-settings/integrations/agents/configuring-the-niceincontact.md
+        - Configuring the Salesforce Agent: app-settings/integrations/agents/configuring-the-salesforce-agent.md
+        - Configuring the ServiceNow Agent (Tokyo and Lower versions): app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent.md
+        - Configuring the ServiceNow Agent (Utah and Higher versions): app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md
+        - Adding the Unblu Channel: app-settings/integrations/agents/adding-the-unblu-channel.md
       - External NLU Adapters:
         - Overview: app-settings/integrations/external-nlu/external-nlu-adapters.md
         - Dialogflow Engine: app-settings/integrations/external-nlu/dialogflow-engine.md

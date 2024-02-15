@@ -79,11 +79,19 @@ The platform supports the following agent transfer integrations in v10.0 release
    </td>
   </tr>
   <tr>
-   <td>ServiceNow
+   <td>ServiceNow (Tokyo and Lower versions)
    </td>
-   <td>The ServiceNow agent transfer for digital workflows on a single, unified platform.
+   <td>The ServiceNow agent (Tokyo and Lower versions) transfer for digital workflows on a single, unified platform.
    </td>
-   <td><a href="../configuring-the-servicenow-agent/" target="_blank">Learn more</a>
+   <td><a href="../servicenow/configuring-the-servicenow-agent/" target="_blank">Learn more</a>
+   </td>
+  </tr>
+  <tr>
+   <td>ServiceNow (Utah and Higher versions)
+   </td>
+   <td>The ServiceNow agent (Utah and Higher versions) transfer for digital workflows on a single, unified platform.
+   </td>
+   <td><a href="../servicenow/configuring-the-servicenow-agent-utah-and-vancouver/" target="_blank">Learn more</a>
    </td>
   </tr>
   <tr>
