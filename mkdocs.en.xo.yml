@@ -507,3 +507,10 @@ nav:
           - Overview: app-settings/integrations/external-nlu/external-nlu-adapters.md
           - Dialogflow Engine: app-settings/integrations/external-nlu/dialogflow-engine.md
           - Test and Debug: app-settings/integrations/external-nlu/test-and-debug.md
+      - Generative AI Tools:
+        - Introduction to LLM and Generative AI: app-settings/generative-ai-tools/introduction.md
+        - Co-Pilot Features: app-settings/generative-ai-tools/co-pilot-features.md
+        - Prompts and Requests Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
+        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md
+        - LLM Integration: app-settings/generative-ai-tools/llm-integration.md
+      
