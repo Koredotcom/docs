@@ -28,9 +28,7 @@ To set up Naver Works as a channel, you must create a VA on Line works and enabl
 
 !!! note
 
-    Please add the registered VA in the **Admin** section to conduct thorough testing.
-
-After adding the VA, switch to Public to show all members.
+    Please add the registered VA in the **Admin** section to conduct thorough testing. After adding the VA, switch to Public to show all members.
 
 The new Virtual Assistant is listed on the **Bot** page.
 
@@ -55,13 +53,14 @@ The next step is to add a client application to integrate with the Kore.ai XO Pl
 <img src="../images/naverworks5.png" alt="naverworks client secret" title="naverworks client secret" style="border: 1px solid gray; zoom:70%;">
 
 
-5. On the Kore.ai XO Platform, navigate to **Deploy** > **Channels** > **Naver Works**.
+5. On the Kore.ai XO Platform, navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **Naver Works**.
 <img src="../images/naverworks6.png" alt="deploy naverworks" title="deploy naverworks " style="border: 1px solid gray; zoom:70%;">
 
 
 6. Click the **Configurations** tab.
+
 7. Paste these values for the **_Client ID_** and **_Client Secret_** fields.
-<img src="../images/naverworks7.png" alt="naverworks configuration" title="naverworks configuration" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/naverworks7.png" alt="naverworks configuration" title="naverworks configuration" style="border: 1px solid gray; zoom:70%;">
 
 !!! note
 
@@ -78,7 +77,6 @@ The next step is to add a client application to integrate with the Kore.ai XO Pl
 
 10. Click **Manage** for the **OAuth Scopes** field.
 11. Select the Bot API **read to and write** scope to access the app through the API on the **Select API Scope** window, and click **Save**.
-
 <img src="../images/naverworks11.png" alt="naverworks OAuth scopes" title="naverworks OAuth scopes" style="border: 1px solid gray; zoom:70%;">
 
 12. Click **Save** on the **Manage Client Apps** page.
@@ -90,7 +88,6 @@ After adding the client app, the next step is to authorize the VA to allow the i
 
 
 1. In the **Configurations** section for Naver Works on the Kore.ai XO Platform, click the **Authorize** button.
-
 <img src="../images/naverworks12.png" alt="authorize naverworks" title="authorize naverworks" style="border: 1px solid gray; zoom:70%;">
 
 2. The system redirects to the **Line Works Developer Console** to complete the VA authorization.
@@ -110,6 +107,7 @@ To add the VA to the Line Works Admin Console, follow the steps below:
 
 
 4. Set **_Public_** as the Bot visibility to make it searchable for all the users in the Naver Works Messenger with the steps below:
+
 * Click the required VA on the **Bot** page.
 * In the **Bot Info** window, click **Edit**.
 <img src="../images/naverworks15.png" alt="naverworks bot info" title="naverworks bot info" style="border: 1px solid gray; zoom:70%;">

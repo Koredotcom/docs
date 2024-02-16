@@ -58,26 +58,30 @@ To enable Glip as a channel for your Kore.ai Virtual Assistant, you must create 
 6. Enter all the required details on the **Create App – REST API App Settings** page and click **Next**.
 
 7. Enter the values to the following fields on the     **App Properties (internal-use only)** page:
- * App Name
- * App Description (optional)
- * Primary Contact
- * Select the relevant option for **Do you intend to promote this app in the RingCentral App Gallery?**
+    * App Name
+    * App Description (optional)
+    * Primary Contact
+    * Select the relevant option for **Do you intend to promote this app in the RingCentral App Gallery?**
 <img src="../images/ringcentral_glip2.png" alt="app properties" title="app properties" style="border: 1px solid gray; zoom:90%;">
 
 8. (Optional) In the **App Card panel**, enter the values for the given fields to configure how your application will be presented within our App Gallery.
 
 9. In the **Auth** panel, enter the values for the following fields to select the authentication method your app will use:
- * Select **3-legged OAuth flow authorization code**.
- * Select **Server-side web app (most common)** or **Client-side web app** based on your app type for **From what type of app will you be calling the API?**
-  <img src="../images/ringcentral_glip4.png" alt="OAuth flow" title="OAuth flow" style="border: 1px solid gray; zoom:70%;">
+    * Select **3-legged OAuth flow authorization code**.
+    * Select **Server-side web app (most common)** or **Client-side web app** based on your app type for **From what type of app will you be calling the API?**
+    <img src="../images/ringcentral_glip4.png" alt="OAuth flow" title="OAuth flow" style="border: 1px solid gray; zoom:70%;">
 
 
- * On the Kore.ai XO Platform, copy the **OAuth Redirect URI** under the **Configurations** tab in the **RingCentral Glip** window.
+    * On the Kore.ai XO Platform, copy the **OAuth Redirect URI** under the **Configurations** tab in the **RingCentral Glip** window.
 
- <img src="../images/ringcentral_glip5.png" alt="ringcentral glip configuration" title="ringcentral glip configuration" style="border: 1px solid gray; ">
+    <img src="../images/ringcentral_glip5.png" alt="ringcentral glip configuration" title="ringcentral glip configuration" style="border: 1px solid gray; ">
 
- * Paste the copied **OAuth Redirect URI** link in the **Auth** panel.
- * Select **_Yes_** for **Issue refresh tokens?**
+    * Paste the copied **OAuth Redirect URI** link in the **Auth** panel.
+    
+        !!! note
+
+             The OAuth Redirect URI now includes the streamid in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
+    * Select **_Yes_** for **Issue refresh tokens?**
 
 10. In the Security panel, to define the permissions to associate with the app, follow the steps below:
 
@@ -112,8 +116,8 @@ After creating the app for the Sandbox/Production environment, you need to confi
 2. Under **Application Credentials**, click the copy icons for the **_Client ID_** and **_Client Secret_** (tap on click to see first) fields.
 <img src="../images/ringcentral_glip9.png" alt="application credentials" title="application credentials" style="border: 1px solid gray; ">
 
-3. On the Kore.ai XO Platform, navigate to **Deploy** > **Channels** and click **RingCentral Glip**.
-<img src="../images/ringcentral_glip10.png" alt="deploy channel" title="deploy channel" style="border: 1px solid gray; zoom:70%;">
+3. On the Kore.ai XO Platform, navigate to **Channels & Flows** > **Channels** > **Digital** > **All** and click **RingCentral Glip**.
+
 
 4. In the **RingCentral Glip** window, click the **Configurations** tab.
 5. Paste the copied **_Client ID_** to the **Application Key** input field, and the **_Client Secret_** to the **_Application Secret_** input field.
@@ -136,22 +140,21 @@ The virtual assistant on the Kore.ai XO Platform must be associated with the ext
 7. Click **Add Unassigned Ext**.
 <img src="../images/ringcentral_glip13.png" alt="unassigned extension" title="unassigned extension" style="border: 1px solid gray; zoom:70%;">
 8. On the **user profile information** page, enter all the required information.
-9. Click **Save & Enable** to enable the extension.
 
 !!! note
 
     Please provide a meaningful name like _Travel Bot_ or _HR Assistant_ to the virtual assistant inside **Teams Messaging**.
 
+9. Click **Save & Enable** to enable the extension.
 
 
-Notes
 
-*  If you receive an account activation email on your registered email address, please note the username and password to authorize the virtual assistant on the Kore.ai XO Platform.
 
-* Alternatively, select the “pre-assigned credentials” option and just provide/save the password.**.
+!!! note
 
-* If you receive an account activation email on your registered email address, please note the username and password to authorize the virtual assistant on the Kore.ai XO Platform.
-* Alternatively, select the “pre-assigned credentials” option and just provide/save the password.
+    If you receive an account activation email on your registered email address, please note the username and password to authorize the virtual assistant on the Kore.ai XO Platform.
+
+    Alternatively, select the “pre-assigned credentials” option and just provide/save the password.
 
 
 ### Step 3(a): Test the Validation
@@ -174,7 +177,7 @@ On the Kore.ai XO Platform, navigate to **RingCentral Glip** > **Configurations*
 1. In the **RingCentral Glip** window, click the **Authorize** button.
 <img src="../images/ringcentral_glip15.png" alt="authorize app" title="authorize app" style="border: 1px solid gray; zoom:70%;">
 
-2. In the **Sign-in** window, click **Continue as **to sign in with the existing user’s account, or click **Use Another Account**. 
+2. In the **Sign-in** window, click **Continue as** to sign in with the existing user’s account, or click **Use Another Account**.
 <img src="../images/ringcentral_glip16.png" alt="use another account" title="use another account" style="border: 1px solid gray; zoom:70%; ">
 
 3. Click **Authorize** on the **Access Request** page.
@@ -200,7 +203,7 @@ Once your app is tested in the Sandbox environment and ready for production, fol
 Once your app is production ready, follow the steps below on the Kore.ai XO Platform:
 
 
-1. Navigate to **Deploy** > **Channels** > **RingCentral Glip**.
+1. Navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **RingCentral Glip**.
 2. Under the **Configurations** tab, select **Production for Ringcentral Environment**.
 3. Follow [these](https://developer.kore.ai/docs/bots/channel-enablement/adding-ringcentral-glip-channel/#Step_3b_Channel_Setup_on_the_Platform) steps to complete the configuration.
 

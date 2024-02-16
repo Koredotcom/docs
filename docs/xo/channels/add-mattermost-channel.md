@@ -101,7 +101,7 @@ To configure the XO Platform channel, after having completed the setup in Matter
 
 
 1. In the XO Platform, select the Assistant that you are working with.
-2. Go to **Deploy > Channels > Mattermost**.
+2. Go to **Channels & Flows** > **Channels** > **Digital** > **All** > **Mattermost**.
 3. Select the **Configuration** tab and provide the following details, which you have just generated in Mattermost:
     * Outgoing Webhook Token.
     * Incoming Webhook URL.

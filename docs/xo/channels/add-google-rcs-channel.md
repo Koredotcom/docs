@@ -14,18 +14,17 @@ Below are the steps involved in setting up the channel on Kore.ai and launching 
 
 ## Request Access
 
-**To request access to enable Google RCS Business messaging as a channel**
+    To request access to enable Google RCS Business messaging as a channel
 
 
 
 1. From the XO Platform platform, open the assistant that you want to enable Google RCS Business Messaging
-2. Navigate to **Channels** and locate the **RCS Business Messaging** from the Channel Listing.
-3. Click on the RCB icon to open the RCB Channel Configuration page.
-4. Select the **Configurations** tab.
-5. See **Request Access** to _Yes_
-6. Click **Save** button.
-7. You will receive an email from Kore.ai support team for details required to create a Bot Agent on Google RCS Business Messaging.
-8. Fill the form and send it back to the id provided therein.
+2. Navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **RCS Business Messaging**.
+3. Select the **Configurations** tab.
+4. See **Request Access** to _Yes_
+5. Click **Save** button.
+6. You will receive an email from Kore.ai support team for details required to create a Bot Agent on Google RCS Business Messaging.
+7. Fill the form and send it back to the id provided therein.
 
 
 ## Publish the Assistant
