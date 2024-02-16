@@ -455,6 +455,7 @@ nav:
     - APIs and SDKs:
       - API Reference:
         - Getting Started: apis/automation/api-introduction.md
+        - Rate Limits: apis/automation/rate-limit.md
         - API List:
           - Automation APIs: apis/automation/api-list.md
           - Contact Center APIs: apis/api-list.md
