@@ -13,10 +13,10 @@ Steps to add the email channel:
 
 
 1. In the XO Platform, select the assistant that you want to work with.
-2. Go to **Deploy > Channels > Email**.
+2. Go to **Channels & Flows** > **Channels** > **Digital** > **All** > **Email**.
 3. In the **Email** field, you can change the first portion of the address set to the VA name by default.
 4. Choose whether you want to send a contact card to all users, as part of the introduction message.
-5. Under the **Enable Channel** section, select **Yes **to enable the channel.
+5. Under the **Enable Channel** section, select **Yes** to enable the channel.
 <img src="../images/email.png" alt="email channel configuration" title="email channel configuration" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -24,11 +24,11 @@ Steps to add the email channel:
 <img src="../images/email1.png" alt="email template designer" title="email template designer" style="border: 1px solid gray; zoom:70%;">
 
 
-7. Click **Edit Header **and **Edit Footer** to configure the header and footer details.
+7. Click **Edit Header** and **Edit Footer** to configure the header and footer details.
 <img src="../images/email2.png" alt="email footer " title="email footer" style="border: 1px solid gray; zoom:70%;">
 
 
-8. In the Edit dialog window, change the header and footer details, and click **Preview **to see the changes.
+8. In the Edit dialog window, change the header and footer details, and click **Preview** to see the changes.
 <img src="../images/email3.png" alt="email preview " title="email preview " style="border: 1px solid gray; zoom:70%;">
 
 

@@ -7,19 +7,18 @@ To add the Widget SDK Channel, you must first register, or create an app in the 
 To add the Widget SDK channel
 
 1. Open the assistant to which you want to add the Widget SDK channel.
-2. Go to **Deploy > Channels > Widget SDK**.
+2. Go to **Channels & Flows** > **Channels** > **Digital** > **All** > **Widget SDK**.
 3. Navigate to the **Configurations** tab.
 4. In the **Select App** drop-down list, select your existing app or click **Create App** to create a new one.
-
 <img src="../images/sdk.png" alt="widget SDK channel configuration" title="widget sdk configuration" style="border: 1px solid gray; zoom:70%;">
 
 5. In the **Name** field, enter the name for the app registration used in the XO Platform, for example, My App Registration.
 6. Select one of these scopes for the app:
     * **Allow anonymous users to chat with the assistant**: enables anonymous users to interact with the assistant.
-    * **Auto **register** new users on Kore.ai XO Platform**: Select to control the auto-user registration in Kore.ai if the user assertion is unknown.
+    * **Auto** register **new users on Kore.ai XO Platform**: Select to control the auto-user registration in Kore.ai if the user assertion is unknown.
 7. In the JWT Signing **Algorithms Used For Client App Authentication** drop-down list, select one of the following security algorithms:
-    * **RS256/RS512: **Select to enable the **Public Key.** _The Private key, used for encryption, is provided by the user, and the Public key, used for decryption, is provided by the Platform_. Both the keys have to be used for generating the token. The Public Key is used by the XO Platform to authenticate the client application.
-    * **HS256/HS512:** Select to generate a **Secret Key **and a **Client ID**. The **Client ID** is required for app initialization, and the **Secret Key** is used by the XO Platform to authenticate the client application.
+    * **RS256/RS512**: Select to enable the **Public Key**. _The Private key, used for encryption, is provided by the user, and the Public key, used for decryption, is provided by the Platform_. Both the keys have to be used for generating the token. The Public Key is used by the XO Platform to authenticate the client application.
+    * **HS256/HS512**: Select to generate a **Secret Key** and a **Client ID**. The **Client ID** is required for app initialization, and the **Secret Key** is used by the XO Platform to authenticate the client application.
 8. Optionally, In the **Push Notifications** section, click **Enable** and then specify a URL to send the notifications to.
 9. Click **Create**. The app registration details appear.
 <img src="../images/sdk1.png" alt="enable widget SDK channel" title="enable widget SDK channel" style="border: 1px solid gray; zoom:70%;">

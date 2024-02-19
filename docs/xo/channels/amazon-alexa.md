@@ -76,7 +76,8 @@ To configure a custom Interaction Model, follow the steps below:
 3. In the **JSON Editor** window, define the intents and entities to associate with your newly created skill based on the Kore.ai XO Platform definitions.
 4. To capture the intents and entities from the Kore.ai XO Builder, follow these steps:
  * Select the virtual assistant.
- * Navigate to **Deploy** > **Channels** > **Amazon Alexa** > **Configurations**.
+ * Navigate to **Channels & Flows** > **Channels** > **Third Party Voice** > **All** >
+ **Amazon Alexa** > **Configurations**.
  * Click **Download File** under **Alexa Skill Definition JSON** to download the VA’s tasks.
   ![download file](../images/alexa-8.png "download file")
 

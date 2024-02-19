@@ -24,14 +24,14 @@ For development purposes, you may also use the WeChat Sandbox environment to int
 
 
 1. In the XO Platform, select the assistant that you want to add the WeChat channel to.
-2. Go to **Deploy > Channels**, and select **WeChat**.
+2. Go to **Channels & Flows** > **Channels** > **Digital** > **All** > **WeChat**.
 3. Navigate to the **Configurations** tab and enter the following details:
-    * **App Id** – _App Id _from the weChat Sandbox portal page
-    * **App Password** – _App Secret_ from the weChat Sandbox portal page
+    * **App Id** – _App Id_ from the weChat Sandbox portal page.
+    * **App Password** – _App Secret_ from the weChat Sandbox portal page.
 4. Make a note the following details
     * _Webhook URL_, and
     * _Access Token_
-5. Update the **WeChat Sandbox portal page** with the above URL and access token and **Save** the details
+5. Update the **WeChat Sandbox portal page** with the above URL and access token and **Save** the details.
 6. **Enable** the weChat channel from the XO Platform.
 <img src="../images/wechat.png" alt="wechat channel configuration" title="wechat channel configuration" style="border: 1px solid gray; zoom:70%;">
 
