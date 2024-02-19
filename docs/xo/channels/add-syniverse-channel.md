@@ -12,7 +12,6 @@ To create the Syniverse app, follow the steps below:
 <img src="../images/Syniverse1.png" alt="Syniverse channel" title="Syniverse channel" style="border: 1px solid gray; zoom:70%;">
 
 3. In the **Create App** screen, enter the app name, description, select account, and click **Save**.
-
 <img src="../images/Syniverse2.png" alt="Syniverse app" title="Syniverse app" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -21,8 +20,7 @@ To create the Syniverse app, follow the steps below:
 Once you create an app, to capture Auth keys, follow the steps below:
 
 1. Navigate to the created app in the **Applications** section and open the app.
-2. Use the **Auth Keys **(see the following screenshot) to complete the configuration in the Kore.ai platform and send the SMS via bot.
-
+2. Use the **Auth Keys** (see the following screenshot) to complete the configuration in the Kore.ai platform and send the SMS via bot.
 <img src="../images/Syniverse3.png" alt="Syniverse Auth Keys" title="Syniverse Auth Keys" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -31,18 +29,17 @@ Once you create an app, to capture Auth keys, follow the steps below:
 The next step is to configure how messages will be delivered via the Webhook URL configured on the XO Platform for Syniverse. To set up the delivery configurations, follow the steps below:
 
 1. Navigate to the **Event Manager** on the top menu bar and select **Delivery Configurations**.
-
 <img src="../images/Syniverse4.png" alt="Syniverse Delivery Configuration" title="Syniverse Delivery Configuration" style="border: 1px solid gray; zoom:70%;">
 
 
 2.  If you want to use an existing delivery configuration to set up the bot’s webhook URL, select one of the configurations from the displayed table (see the following screenshot), else, click **New Delivery Configuration**.
 <img src="../images/Syniverse5.png" alt="Syniverse webhook URL" title="Syniverse webhook URL" style="border: 1px solid gray; zoom:70%;">
 
-3. In the **Create Delivery Configuration **pop-up, enter the following values:
-  * Provide a **Delivery Configuration Name**.
-  * **Address: **Copy and paste the webhook URL value from the XO Platform’s Syniverse Channel **Configuration** section.
-  * Set **Is Active:** to _Yes_.
-  * Click **Create**.
+3. In the **Create Delivery Configuration** pop-up, enter the following values:
+    * Provide a **Delivery Configuration Name**.
+    * **Address**: Copy and paste the webhook URL value from the XO Platform’s Syniverse Channel **Configuration** section.
+    * Set **Is Active:** to _Yes_.
+4. Click **Create**.
 
 
 ## Subscriptions
@@ -51,18 +48,18 @@ To set up subscriptions, follow the steps below:
 
 
 1. Navigate to the **Event Manager** on the top menu bar and select **Subscriptions**.
-
 <img src="../images/Syniverse6.png" alt="Syniverse subscriptions" title="Syniverse subscriptions" style="border: 1px solid gray; zoom:70%;">  
 
 2.  If there are existing subscriptions, select one from the table to set up the event subscription (see the following screenshot), else, click **New Subscription**.
 <img src="../images/Syniverse7.png" alt="Syniverse channel" title="Syniverse channel" style="border: 1px solid gray; zoom:70%;">
 
 3. In the **New Topic Subscription **pop-up, enter the following values:
-  * **Topic:** Select **SCG Message** from the drop-down.
-  * **Event Type: **Select **mo_message_received** from the drop-down.
-  * **Delivery Configuration:** Select delivery configuration configured in the [Delivery Configurations](https://developer.kore.ai/docs/bots/channel-enablement/add-the-syniverse-channel/#DeliveryConfigs) section.
-  * **Start Date: **Select a date from when this subscription has to be active.
- * **End Date:** Select an end date. Leave it blank if you want this event subscription to work for a lifetime.
+    * **Topic**: Select **SCG Message** from the drop-down.
+    * **Event Type**: Select **mo_message_received** from the drop-down.
+    * **Delivery Configuration:** Select delivery configuration configured in the [Delivery Configurations](https://developer.kore.ai/docs/bots/channel-enablement/add-the-syniverse-channel/#DeliveryConfigs) section.
+    * **Start Date**: Select a date from when this subscription has to be active.
+    * **End Date:** Select an end date. Leave it blank if you want this event subscription to work for a lifetime.
+ 
 4. Click **Create**.
 
 
@@ -71,16 +68,15 @@ To set up subscriptions, follow the steps below:
 To ensure that messages flow between the two systems, you should obtain the **Sender ID** from Syniverse, and provide it on the XO Platform. To obtain the **_Sender ID_**, follow the steps below:
 
 
-    1. Navigate to the **Voice and Messaging Console** on the top menu bar of your Syniverse Developer Portal account, and double click **Sender ID** from the **Messaging Accounts** in the left Navigation Menu. Click **+Purchase or Migrate Sender Address** button to purchase a new Sender ID.
-    2. Scroll down to **Alias**, and copy the value.
-    <img src=".../images/Syniverse8.png" alt="Syniverse Messaging Accounts" title="Syniverse Messaging Accounts" style="border: 1px solid gray; zoom:70%;">
+1. Navigate to the **Voice and Messaging Console** on the top menu bar of your Syniverse Developer Portal account, and double click **Sender ID** from the **Messaging Accounts** in the left Navigation Menu. Click **+Purchase or Migrate Sender Address** button to purchase a new Sender ID.
+2. Scroll down to **Alias**, and copy the value.
+<img src=".../images/Syniverse8.png" alt="Syniverse Messaging Accounts" title="Syniverse Messaging Accounts" style="border: 1px solid gray; zoom:70%;">
 
-    3. Paste this value in the **Syniverse** **Configurations** panel of the Kore.ai platform.
+3. Paste this value in the **Syniverse** **Configurations** panel of the Kore.ai platform.
+ <img src=".../images/Syniverse8.png" alt="enable Syniverse channel" title="enable Syniverse channel" style="border: 1px solid gray; zoom:70%;">
 
-    <img src=".../images/Syniverse8.png" alt="enable Syniverse channel" title="enable Syniverse channel" style="border: 1px solid gray; zoom:70%;">
-
-    4. Select **_Yes_** for **Enable Channel**.
-    5. Click **Save**.
+4. Select **_Yes_** for **Enable Channel**.
+5. Click **Save**.
 
 
 ## Configuring the Request and Response
