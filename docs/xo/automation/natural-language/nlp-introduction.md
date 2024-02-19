@@ -1,6 +1,6 @@
 # Natural Language Processing
 
-Conversational VAs enable machines to interact organically with users and deliver high-quality customer experiences. The key for a conversational VA to understand human interactions lies in its ability to identify the user’s intention (Intent Detection), extract useful information (Entity Extraction), and map them to relevant actions or tasks (Dialog Task execution). <a href="hhttps://docsinternal-kore.github.io/docs/xo/virtual-assistants-overview/#how-do-conversational-virtual-assistants-work" target="_blank">Learn more</a> about how Conversational VAs work and the key components that define their functioning.
+Conversational VAs enable machines to interact organically with users and deliver high-quality customer experiences. The key for a conversational VA to understand human interactions lies in its ability to identify the user’s intention (Intent Detection), extract useful information (Entity Extraction), and map them to relevant actions or tasks (Dialog Task execution). [Learn more](../../../virtual-assistants-overview/#how-do-conversational-virtual-assistants-work){:target="_blank"} about how Conversational VAs work and the key components that define their functioning.
 
 **Natural Language Processing (NLP)** is the science of deducing the intention and related information from natural conversations. The conversation flow in Kore.ai virtual assistants passes through various Natural Language Understanding (NLU) engines and conversation engines before the VA decides upon action and response.
 
@@ -26,7 +26,7 @@ When a virtual assistant built on the XO Platform receives a user utterance, it 
 
 The Conversation Flow involves the following steps:
 
-1. **NLP Analysis**: The user utterance goes through a series of NLP engines for entity extraction and intent detection. (You can extend the out-of-the-box NLP functionality to use your own engine. You can install the <a href="https://docsinternal-kore.github.io/docs/xo/sdk/bot-sdk-introduction/" target="_blank">BotKit SDK</a> and easily integrate the virtual assistant with any 3rd party NLP engine. The output from the 3rd party NLP engine complements the outputs from Kore.ai thus adding to the efficiency and accuracy of the engine.) The engines provided by the XO Platform are as follows:
+1. **NLP Analysis**: The user utterance goes through a series of NLP engines for entity extraction and intent detection. You can extend the out-of-the-box NLP functionality to use your own engine. You can install the [BotKit SDK](../../../sdk/bot-sdk-introduction/){:target="_blank"} and easily integrate the virtual assistant with any 3rd party NLP engine. The output from the 3rd party NLP engine complements the outputs from Kore.ai thus adding to the efficiency and accuracy of the engine. The engines provided by the XO Platform are as follows:
     * **Fundamental Meaning Engine** which breaks up the utterances based on the grammar constructs;
     * **Machine Learning Engine** which classifies individual words in the utterance, using an example-based, auto-learning training process;
     * **Knowledge Collection Engine** which mostly deals with FAQ type user queries. It can also be configured to trigger tasks in response to the user query;
@@ -98,7 +98,7 @@ We have seen above that the Kore.ai XO Platform offers three main engines for NL
 * Fundamental Meaning (FM)
 * Knowledge Collection  / Knowledge Graph (KG)
 
-When do you use each engine? Each of these engines has settings and configurations. Our article on <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/optimizing-bots/" target="_blank">Optimizing NLP to Improve VA Performance</a> discusses this in more detail. Here we will list out some broad guidelines as to which engine to use when.
+When do you use each engine? Each of these engines has settings and configurations. Our article on [Optimizing NLP to Improve VA Performance](../training/optimizing-bots/){:target="_blank"} discusses this in more detail. Here we will list out some broad guidelines as to which engine to use when.
 
 ### Machine Learning Engine
 
@@ -108,24 +108,23 @@ If you have a large corpus for each intent that you are planning to implement, t
 
 The way you define a large corpus could differ depending on the intents. For example, if the intentions are very different from each other and can be understood using their sample data like “Find Flight” or “Change Sear“, then a corpus of 200-300 for each intent is sufficient. However, if intents are closer to each other (and usually start with a similar utterance, such as “Change Seat” and “Change Flight”, then the corpus should be in 1000s.
 
-Similarly, if you are planning to use Deep Neural Networks, you need a higher number of samples for better predictions of both True Positives and True Negatives, as these networks are data-hungry.  <a href="https://docsinternal-kore.github.io/docs/xo/automation/tools/intent-discovery/#train-the-utterances" target="_blank">Learn more</a>.
+Similarly, if you are planning to use Deep Neural Networks, you need a higher number of samples for better predictions of both True Positives and True Negatives, as these networks are data-hungry. [Learn more](../../tools/intent-discovery/#train-the-utterances){:target="_blank"}.
 
 ### Knowledge Graph Engine
 
 If your intents are more query-like in nature than transactional tasks or if the content is in documents and you want the VA to answer user queries from documents, then use Knowledge Collection. This engine can also be used to trigger dialog tasks in response to user queries thus incorporating other features available within the Kore.ai XO Platform.
 
-If you have a lot of Intents and do not have time to prepare alternate utterances, but you are able to manually annotate some important terms, use Knowledge Collection. It is advisable to spend some time building a corpus and going for Machine Learning since annotation in the Knowledge Graph works in a similar way to ML’s auto-learning process. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-training/" target="_blank">Learn more</a>.
+If you have a lot of Intents and do not have time to prepare alternate utterances, but you are able to manually annotate some important terms, use Knowledge Collection. It is advisable to spend some time building a corpus and going for Machine Learning since annotation in the Knowledge Graph works in a similar way to ML’s auto-learning process. [Learn more](../../../answers/knowledge-ai/knowledge-graph-training/){:target="_blank"}.
 
 ### Fundamental Meaning Engine
 
-If you have cases where users employ idiomatic sentences or command-like sentences or if you are not too strict about some false positives then use the Fundamental Meaning (FM) engine. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/" target="_blank">Learn more</a>.
+If you have cases where users employ idiomatic sentences or command-like sentences or if you are not too strict about some false positives then use the Fundamental Meaning (FM) engine. [Learn more](../training/fundamental-meaning/){:target="_blank"}.
 
 ## NLP Organization within the XO Platform
 
-To get started optimizing your VA’s NLP, you need to select the VA you’re working with, then access  **Build >** **Natural Language**. The NLP options are categorized under various headings for your convenience:
+To get started optimizing your VA’s NLP, you need to select the VA you’re working with, then access  **Automation > Natural Language**. The NLP options are categorized under various headings for your convenience:
 
 * **Training** – In the Training section, you can define how the NLP interpreter recognizes and responds to the user input for a VA, and then train the interpreter to recognize the correct user intent.
-* **Thresholds & Configurations** – In this section, you can define the recognition confidence levels required for minimum recognition actions, the confidence range for asking a user to choose from a list of possible matches, and a recognition confidence level for a positive match for the knowledge graph.
-* Modify **Advanced Settings** like auto training settings for user utterances and negative intent patterns.
+* **NLU Config** – In this section, you can define the recognition confidence levels required for minimum recognition actions, the confidence range for asking a user to choose from a list of possible matches, and a recognition confidence level for a positive match for the knowledge graph.
 
-    <img src="../images/nlp-advanced-settings.png" alt="nlp advanced settings" title="nlp advanced settings" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/nlp-optimize-settings.png" alt="Optimizing NLP" title="Optimizing NLP" style="border: 1px solid gray; zoom:75%;">

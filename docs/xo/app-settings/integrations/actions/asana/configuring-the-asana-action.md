@@ -35,7 +35,7 @@ You can authorize the integration using your credentials. The developer authoriz
 
 Steps to authorize an Asana action using developer credentials:
 
-1. Go to **Build > Integrations > Actions**.
+1. Go to **App Settings > Integrations > Actions**.
 2. Select the **Asana** from the list of **Available** actions.  
 <img src="../images/asana-action-img1.png" alt="Select Asana" title="Select Asana" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -62,7 +62,7 @@ You can authorize the integration at a user level with their login credentials. 
 
 Steps to authorize an Asana action at a user level:
 
-1. Go to **Build > Integrations > Actions** and select the **Asana** action.
+1. Go to **App Settings > Integrations > Actions** and select the **Asana** action.
 2. In the Configurations dialog, select the **Authorization** tab.
 3. Enter the following details:
     1. **Authorization Type** – Select the **Allow Users to Authorize the Integration** option, and then select the **Basic Auth** option.

@@ -13,7 +13,7 @@ The Kore.ai XO Platform offers pre-built integrations with popular business appl
 2. Enable an integration to exchange data between two systems during the dialog task execution.
 3. Enable an integration and create the dialog tasks using the preconfigured templates supported by the integration.
 
-The **Actions** module is available under the **Build > Integrations** menu.
+The **Actions** module is available under the **App Settings > Integrations** menu.
 
 
 ## Actions Enablement
