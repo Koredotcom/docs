@@ -11,7 +11,7 @@ If the new changes are not working out, for any reason, then you would want to r
 
 ## Overview
 
-Kore.ai’s **Bot Versions** option is specifically designed to meet the above requirements.
+Kore.ai’s **App Versions** option is specifically designed to meet the above requirements.
 
 Using this option, you as a developer can:
 
@@ -21,7 +21,7 @@ Using this option, you as a developer can:
 
 Versioning is supported in Standard and Universal Bots.
 
-This option can be accessed from the **Deploy** tab from the top menu, under the left menu option **Bot Management -> Bot Versions.**
+This option can be accessed from the **Deploy** option from the left menu, under the menu option **Deploy Management -> App Versions.**
 
 
 ## Version Types
@@ -39,19 +39,19 @@ The version type is based on the ways in which a Bot version is created:
     * While an auto-version creation is in-progress, you cannot raise any subsequent publish requests.
     * There is a maximum limit of 20 auto-created versions. Once the limit is reached, the oldest versions are deleted to make room for any new ones.
 
-<img src="../images/bot-versioning-img1.png" alt="Deploy - Bot Versions" title="Deploy - Bot Versions" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/bot-versioning-img1.png" alt="Deploy - App Versions" title="Deploy - App Versions" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Creating a Bot Version
 
 In this section, we discuss user created versions. Following are the steps to create such a version:
 
-1. From the **Bot Versions** page, click the **Create Version** button.
+1. From the **App Versions** page, click the **New Version** button.
 2. You will be prompted to enter:
     1. **Version Name** – enter a unique name that would ideally give an idea of a major feature of the assistant.
     2. **Description** – add in brief the changes that went into this version.
 
-3. Click **Create Version** when done. Your version is created.
+3. Click **New App Version** when done. Your version is created.
 
     <img src="../images/bot-versioning-img2.png" alt="Version created" title="Version created" style="border: 1px solid gray; zoom:70%;">
 
@@ -60,9 +60,7 @@ In this section, we discuss user created versions. Following are the steps to cr
 
 Following are the actions you can perform from the Bot Versions listing page:
 
-
-
-1. On the **Bot Versions** page, you will see a list of all versions of the assistant.
+1. On the **App Versions** page, you will see a list of all versions of the assistant.
 2. For each version you can view:
     1. **Name** of the versions
     2. **Description** of the version
