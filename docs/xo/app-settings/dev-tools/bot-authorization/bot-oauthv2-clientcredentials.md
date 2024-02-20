@@ -12,15 +12,12 @@ The Client Credentials grant type is used when applications request an access to
 To configure this authorization method for your assistant, follow these steps:
 
 1. Open the assistant for which you want to configure an Authorization profile.
-2. Select the **Build** tab from the top menu.
-3. From the left menu, click **Configurations > Authorization Profiles.**
-4. Click **Add**. The **New Authorization Mechanism** dialog opens.  
-<img src="../images/oauth-v2-clientcredentials-img1.png" alt="Auth profiles - Add" title="Auth profiles - Add" style="border: 1px solid gray;zoom:80%;"/>
+2. From the left menu, click **App Settings**, then select **Dev Tools > Authorization Profiles**.
+3. Click **New**. The **New Authorization Mechanism** dialog opens.  
+<img src="../images/basic-auth-img2.png" alt="Auth profiles - Add" title="Auth profiles - Add" style="border: 1px solid gray;zoom:80%;"/>
 
-
-
-5. In the **Authorization Type** drop-down list, select **auth v2 client credentials**.
-6. In the **Name** field, enter the name for your authorization.
+4. In the **Authorization Type** drop-down list, select **oauth v2 client credentials**.
+5. In the **Name** field, enter the name for your authorization.
 
 The following illustration shows the **oAuth v2** fields that you must define to enable authorization for your assistant.
 

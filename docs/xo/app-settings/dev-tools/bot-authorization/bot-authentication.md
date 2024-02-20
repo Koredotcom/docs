@@ -48,7 +48,7 @@ Enables enterprises to use Kerberos SPNEGO authentication flow to connect secure
 
 ## Authorization Options
 
-Each authorization you add to your assistant comes with several options which can be accessed by selecting an authorization profile under **Build > Configurations > Authorization Profiles.**
+Each authorization you add to your assistant comes with several options which can be accessed by selecting an authorization profile under **App Settings > Dev Tools > Authorization Profiles.**
 
 These options are:
 
@@ -59,7 +59,7 @@ These options are:
 * **Delete** – Click the **gear** icon correspoonding to an authorization, then select **Delete**. Confirm your choice if you are sure that you want to delete the authorization profile.
 
 !!! warning
-
-        Deleted authorization profiles cannot be restored. Please proceed with caution.
+    
+    Deleted authorization profiles cannot be restored. Please proceed with caution.
 
 <img src="../images/auth-profiles-img1.png" alt="Authorization Options" title="Authorization Options" style="border: 1px solid gray;zoom:50%;"/>
