@@ -10,7 +10,7 @@ To add the Twilio SMS channel, follow the below steps:
 2. **Setup Messaging Service** – In the Programmable Messages section, create a messaging service
 3. **Add Phone Number** – Associate a Twilio Phone Number to your bot.
 
-## **Setup Twilio Developer Account**
+## Setup Twilio Developer Account
 
 To add the Twilio Channel, follow the below steps:
 
@@ -51,7 +51,7 @@ The following procedure requires an active _Twilio_ account for developers with 
 15. Go to the **Configurations** tab in the Twilio SMS channel page to review and complete the channel setup.
 
 
-## **Edit the Twilio Channel**
+## Edit the Twilio Channel
 
 To edit the Twilio channel, follow the below steps:
 
@@ -71,10 +71,7 @@ To edit the Twilio channel, follow the below steps:
 
       This operation is permanent, and cannot be undone.
 
-
-
-## **Create a Twilio Trial Account**
-
+## Create a Twilio Trial Account
 
 1. You can sign up and create a free _Twilio_ trial account at [https://www.twilio.com/try-twilio](https://www.twilio.com/try-twilio).
 2. After you create an account, you can sign in and open the **Twilio** **Console Dashboard**.
