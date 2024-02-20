@@ -56,7 +56,7 @@ The following metrics extracted from Batch Testing results are displayed in two 
 * **Recall Score**: Defines the fraction of the relevant utterances that are successfully identified and is calculated as the ratio of true positives over actual positives (sum of true positives and false negatives).
 * **Total Test Coverage %**: The average of the Total Test Coverage scores for **Dialog Intents**, **FAQs**, **Small Talk**, **Traits**, and **Entities**.
 
-These metrics help gain actionable insights into your test cases to perform [ML Model Validation](https://developer.kore.ai/docs/bots/nlp/ml-model/){:target="_blank"}.
+These metrics help gain actionable insights into your test cases to perform [ML Model Validation](../../../../natural-language/training/model-validation/){:target="_blank"}.
 
 
 ### Flow Health Metrics
@@ -437,7 +437,7 @@ The **FAQ Summary** section displays the [recommendation scores](#health-and-mon
 
 
 
-**Viewing Additional FAQ Recommendations**: For **FAQ Details**, clicking **View Recommendations** will display the report that was already run during the previous run time. To know how to view and manage additional recommendations, please refer to this [link](https://developer.kore.ai/docs/bots/nlp/training-validations/#How_to_Use_the_NLU_Validate_Model){:target="_blank"}.  
+**Viewing Additional FAQ Recommendations**: For **FAQ Details**, clicking **View Recommendations** will display the report that was already run during the previous run time. To know how to view and manage additional recommendations, please refer to this [link](../../../../natural-language/training/training-validations/#how-to-use-the-nlu-validate-model){:target="_blank"}.  
 <img src="../images/hm-18.png" alt="Viewing Additional FAQ Recommendations" title="Viewing Additional FAQ Recommendations" style="border: 1px solid  gray; zoom:50%;"/>
 
 <img src="../images/hm-19.png" alt="Report" title="Report" style="border: 1px solid  gray; zoom:50%;"/>  

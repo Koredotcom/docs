@@ -3,7 +3,7 @@
 
 ## Prerequisites
 
-[How to Access the Kore.ai XO Platform?](https://developer.kore.ai/docs/bots/chatbot-overview/how-to-access-bot-builder/){:target="_blank"}
+[How to Access the Kore.ai XO Platform?](../../../../getting-started/accessing-the-platform/?h=how+to+access+the+platform){:target="_blank"}
 
 !!! Note
 

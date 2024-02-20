@@ -5,16 +5,16 @@ To set up Skype for Business as a channel, you must register a Bot Channel servi
 
 
 1. **Register a Bot Channel** – Log in to the Azure portal and register a bot channel.
-2. **Create Microsoft ID and Password **– You must add all the bot details and create the Microsoft ID and Password.
-3. **Enable Skype for Business **– After registering the bot, enable the channel.
-4. **Publish Channel **– After the channel is enabled and all configurations are verified, publish the bot to make it available for developers.
+2. **Create Microsoft ID and Password** – You must add all the bot details and create the Microsoft ID and Password.
+3. **Enable Skype for Business** – After registering the bot, enable the channel.
+4. **Publish Channel** – After the channel is enabled and all configurations are verified, publish the bot to make it available for developers.
 
 To add Skype for Business channel, follow the below steps:
 
 
 
 1. In the **Bots** section of the Bot Builder, click the bot you want to add the **Skype for Business** channel to.
-2. On the **Channels** tab, click the **Skype for Business **icon. The **Skype for Business Channel** page is displayed.
+2. On the **Channels** tab, click the **Skype for Business** icon. The **Skype for Business Channel** page is displayed.
 3. In a new browser tab, log in to the Azure portal to register a bot channel.
 4. On the left pane, click **+ Create a Resource**. On the search window, search and select **Bot Channels Registration**.
 5. On the new **Bot Channel Service** creation page, click **Create** and proceed to the next screen to enter the details.

@@ -8,8 +8,8 @@ To add LivePerson as a channel to your Kore.ai assistant, you must add a bot use
 
     A LivePerson account with administrator credentials is required to complete this configuration.
 
-Steps to enable the LivePerson channel:
 
+Steps to enable the LivePerson channel:
 
 ## Step 1: Create A LivePerson Account
 
@@ -72,7 +72,7 @@ Configure the LivePerson channel to start communication with the kore.ai XO Plat
 Steps to configure the LivePerson channel:
 
 
-1. In the XO Platform, select the assistant you’re working with, then go to **Deploy > Channels > LivePerson**.
+1. In the XO Platform, select the assistant you’re working with, then go to **Channels & Flows** > **Channels** > **Digital** > **All** > **LivePerson**.
 2. Go to the Configurations tab. In the **Account ID** field, enter your LivePerson account ID.
 In the **Login Name** field, enter the Login Name of the bot user from your LivePerson account.
 3. Under **Interaction Options**, select how you would like the XO Platform to interact with LivePerson – via **Chat Agent API**, **Messaging Agent SDK**, or both.
@@ -113,4 +113,4 @@ Steps to verify the LivePerson channel integration:
 <img src="../images/liveperson_channel15.png" alt="embed code" title="embed code" style="border: 1px solid gray; zoom:70%;">
 8. Send a message from the _LivePerson Chat_ console to the kore.ai XO platform VA for which you have enabled the LivePerson channel.
 9. In the XO Platform, once you receive a message from the **LivePerson Agent** console, you can send a response to start communication between the two systems, as shown below.
-<img src="../images/liveperson_channel10.png" alt="liveperson agent console" title="liveperson agent console" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/liveperson_channel16.png" alt="liveperson agent console" title="liveperson agent console" style="border: 1px solid gray; zoom:70%;">

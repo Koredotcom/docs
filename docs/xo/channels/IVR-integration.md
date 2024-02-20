@@ -39,13 +39,13 @@ To setup IVR integration, perform the following steps:
 
 ### Configure IVR Settings
 
-This section explains the IVR settings you need to configure for your Virtual Assistant (VA). As a first step, you must enable the IVR settings for the VA and define the **Transcription **options and **VXML **properties. These settings act as the default for the VA. You can override VXML properties configured at the VA level by defining custom values at the node level of the Dialog tasks.
+This section explains the IVR settings you need to configure for your Virtual Assistant (VA). As a first step, you must enable the IVR settings for the VA and define the **Transcription** options and **VXML** properties. These settings act as the default for the VA. You can override VXML properties configured at the VA level by defining custom values at the node level of the Dialog tasks.
 
 Steps to configure IVR settings for your Virtual Assistant:
 
 1. Open the VA for which you want to integrate the IVR.
-2. Go to the **Deploy **tab from the top menu.
-3. The **Channels** page is displayed. Locate and click the **IVR** under Voice Channels. \
+2. Go to the **Channels & Flows** > **Channels** > **Third Party Voice** > **All**.
+3. Locate and click the **IVR** under Voice Channels. 
   ![IVR deploy](../images/IVR-1.png "IVR deploy")
   ![voice channels](../images/IVR-2.png "voice channels")
   The IVR Panel with **Instructions** is displayed.

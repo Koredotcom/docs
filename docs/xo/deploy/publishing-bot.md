@@ -16,7 +16,7 @@ Every assistant created in the Platform has two states:
 
 The Publish Status dock item checks if the publishing is completed within the specific time period and shows the ongoing progress of the publishing process. Once the publishing is completed it shows whether the publish request is successful or failed with details.
 
-You can switch between the two states using the drop-down on the top right side of any Virtual Assistant window.
+You can switch between the two states using the drop-down on the top left side of any Virtual Assistant window.
 
 <img src="../images/publish-bot-img1.png" alt="Switch between statuses" title="Switch between statuses" style="border: 1px solid gray; zoom:70%;">
 

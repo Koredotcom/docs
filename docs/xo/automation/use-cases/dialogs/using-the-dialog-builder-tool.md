@@ -70,7 +70,7 @@ You will see a **Conversation Preview** window right after creating your Dialog 
 
     !!! Note 
  
-	    Providing a relevant description is reccommended. Dialog will be generated, but with **only the error prompt,** if no description is provided. 
+	    Providing a relevant description is reccommended. Dialog will be generated, but with **only the error prompt**, if no description is provided. 
  
     <img src="../images/using-dialog-builder-img8-create-dialog-genai-regenerate.png" alt="Regenerate AI generated dialog" title="Regenerate AI generated dialog" style="border:1px solid gray; zoon:60%;"> 
 
@@ -84,7 +84,9 @@ The nodes and the flow for the Business Logic are automatically built for your c
 
 ### Auto-Generate Dialog Tasks using Pre Built Templates
 
-This option lets you choose the suitable dialog template that meets your requirement as well as has the pre-established integration. You can either scroll through the entire list, or find the required template using the search box or Integrations dropdown. Out of the search results, click the template once you find one that suits your requirement. 
+This option lets you choose a suitable dialog template out of the list of ready-made templates targeting major industry verticals covering generic use cases related to the industry, as well as having the pre-established integration. User can update the description and generate usecases based on the purpose. Accelerates development by providing a starting point for common scenarios, ensuring consistency and efficiency.
+
+You can either scroll through the entire list, or find the required template using the search box or Integrations dropdown. Out of the search results, click the template once you find one that suits your requirement. 
  
 <img src="../images/using-dialog-builder-img11-create-dialog-template-search.png" alt="Template search" title="Template search" style="border:1px solid gray; zoon:60%;">
 
@@ -132,7 +134,7 @@ All the nodes created can be seen on the **Nodes** tab in the left hand side men
 
 <img src="../images/using-dialog-builder-img18-nodes-tab.png" alt="Nodes tab" title="Nodes tab" style="border:1px solid gray; zoon:60%;">
 
-For example, in the flight booking dialog, you can have separate nodes for gathering passenger details, gathering trip details, generating pnr, etc.
+For example, in the flight booking dialog, you can have separate nodes for gathering passenger details, gathering trip details, generating pnr, etc. Each node contains one or more components grouped into coherent sequences. Align the components logically and provide clear, descriptive names for the nodes to facilitate future reference and comprehension. 
 
 <img src="../images/using-dialog-builder-img19-assets-and-nodes.png" alt="Assets and Nodes" title="Assets and Nodes" style="border:1px solid gray; zoon:60%;">
 
@@ -152,10 +154,11 @@ There are two ways to add an asset:
 1. Drag and drop assets from the panel onto the dialog builder, [see below](#use-drag-and-drop).
 2. Using the options from the Dialog Builder Canvas, [see below](#use-the-dialog-canvas).
 
-
 ### Use Drag and Drop
 
 You can add assets within the dialog task, by dragging the asset from the panel on the left to the designated place in the dialog task, on the canvas. You can drop the asset within an existing node, or outside the nodes; in this case a node will get created automatically, containing the newly added asset.
+
+Additionally, a streamlined node panel with user-friendly categorization is provided at the bottom of the canvas. The categories, namely **Ask, Inform, Action, AI, and Integration** provide a clear organization for you to easily locate the required assets. Assets can be dragged and dropped from here too.
 
 **_[VIDEO Drag Drop]_**
 
@@ -211,7 +214,7 @@ You can add, edit, move or delete text, comments or bookmarks as per need. Howev
 
 ### Text
 
-Adding text to a canvas for notes is a common practice in various design and collaboration tools. This allows users to provide additional context, explanations, or instructions directly on the canvas, making it a helpful reference for future work or collaboration. Here are some ways this can be beneficial:
+Adding text to a canvas as notes is a common practice in various design and collaboration tools. This allows users to provide communication and feedback, summarize information, additional context, explanations, or instructions directly on the canvas, making it a helpful reference for future work or collaboration. Here are some ways this can be beneficial:
 
 
 1. Introduction to Modules:
@@ -223,29 +226,28 @@ Adding text to a canvas for notes is a common practice in various design and col
 3. Notes for Future Reference:
     * Include notes that provide insights or considerations for future work or modifications.
     * Document any design decisions, constraints, or important considerations.
-4. Collaborative Documentation:
-    * If multiple users are involved, use text on the canvas to communicate ideas, suggestions, or questions directly within the design space.
-    * Tag specific users in your notes to draw attention to relevant information.
-5. Instructions for Designers:
-    * If you're working with a team of designers or collaborators, use text annotations to provide specific instructions or guidelines for designing certain elements.
 
-By incorporating text annotations directly onto the canvas, you create a visual and contextual layer of information that can enhance collaboration, provide clarity, and serve as a valuable reference for anyone working on the project in the future.
+
+
+By incorporating text annotations directly onto the canvas, you create a visual and contextual layer of information that can enhance collaboration, provide clarity, and serve as a valuable reference for anyone working on the project in the future. 
 
 **_[Video - add Text]_**
 
 
 ### Comment
 
-The purpose of a comment is similar to that of a text, however additionally,  in a comment you can tag other users. 
+The purpose of a comment is similar to that of a text, however additionally,  in a comment you can tag other users. It enhances communication by providing a platform for feedback, suggestions, and discussions on specific elements of the design.
 
 Tagging a user in a comment is a way to draw their attention to a specific part of a dialog, indicating that their input or design expertise is needed for that particular section. This facilitates smoother collaboration and enhances overall project efficiency by keeping communication focused and actionable.
+
+If you're working with a team of designers or collaborators, you can use comments to provide specific instructions or guidelines for designing certain elements. You can also use text on the canvas to communicate ideas, suggestions, or questions directly within the design space.
 
 **_[Video - Add Comment]_**
 
 
 ### Bookmark
 
-The addition of bookmarks to the dialogs is a thoughtful feature, especially in the context of complex dialog designs. Here's how the ability to add bookmarks can be advantageous:
+Bookmarks offer the ability to organize and reference important information. You can bookmark frequently visited or crucial content in the canvas with relevant information. They help you to navigate to the bookmarked content without having to search or browse extensively. Here's how the ability to add bookmarks can be advantageous:
 
 1. Navigation Efficiency:
     * Bookmarks provide a quick and efficient way to navigate through a complex dialog structure.
@@ -326,9 +328,9 @@ Bot Action assets include the following assets, that need processing by the app 
 
 To access these nodes follow the steps below:
 
-1. Add a **Bot Action **node to your dialog task canvas.
+1. Add a **Bot Action** node to your dialog task canvas.
 2. Click the **expand (+)** button next to the Bot Action node. The primary nodes panel will be replaced with the Bot Action nodes panel.
-3. The Bot Action Node shows all of its containing nodes as a group. Add any node from here, using either the “+” sign or drag and drop. Bot Action Nodes provide the following options: On the left side of the node there is an **Expand (+) **button if the node is collapsed, and a **Collapse (-)** button if the node is expanded. Nodes can also be collapsed using the **Close (x)** button on the top right.
+3. The Bot Action Node shows all of its containing nodes as a group. Add any node from here, using either the “+” sign or drag and drop. Bot Action Nodes provide the following options: On the left side of the node there is an **Expand (+)** button if the node is collapsed, and a **Collapse (-)** button if the node is expanded. Nodes can also be collapsed using the **Close (x)** button on the top right.
 4. Nodes inside the bot action node cannot be connected directly to any node outside the bot action.
 5. For the nodes inside the bot action node, the following connections can be configured:
     1. **Node Connections** – this option can be used to define the connection rules connecting to nodes within the bot action node. This can be configured to:

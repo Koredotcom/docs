@@ -29,7 +29,7 @@ The Unblu Bot can be directly created from the Kore.ai XO Platform.
 
 
 1. Create or Open the assistant in the XO platform.
-2. Go to **Deploy > Channels** and select **Unblu**..
+2. Go to **Channels & Flows** > **Channels** > **Digital** > **All** > and select **Unblu**..
 3. Proceed to the **Configurations tab** and provide the following details for creating an assistantin your Unblu account:
     * **Unblu Host URL** -the URL of your Unblu application. For example, use [https://www.unblu.com/](https://www.unblu.com/) for the Unblu cloud.
     * **Unblu Account Username** –Provide your Unblu account username.
@@ -39,7 +39,7 @@ The Unblu Bot can be directly created from the Kore.ai XO Platform.
     * **Bot Person** – Provide a Name to represent the Unblu bot to your users
     * **Secret Key** – Provide a confidential key to secure the communication between Unblu and Kore.ai bots
     * **Named Area** – Provide the Named Area you would like to associate with your Kore.ai assistant. Kore.ai will respond only to the user chats that have originated in the Named Area that you have selected here. This field is optional if you are enabling Unblu channel for a single kore.ai assistant alone.
-    * Select to** Enable** the channel and **Save **your settings.
+    * Select to **Enable** the channel and **Save** your settings.
 4. **Enable** the channel.
 <img src="../images/unblu.png" alt="unblu integration" title="unblu integration" style="border: 1px solid gray; zoom:70%;">
 
@@ -53,7 +53,7 @@ To learn more about working with Channels within the Kore.ai XO Platform, please
 
 ## Additional Instructions
 
-For the seamless exchange of information from Unblu to Kore.ai, a few additional steps need to be performed. \
+For the seamless exchange of information from Unblu to Kore.ai, a few additional steps need to be performed.
 For a detailed document on the implementation, [refer here](https://developer.kore.ai/docs/bots/how-tos/kore-unblu-integration/).
 
 
@@ -65,7 +65,7 @@ For a detailed document on the implementation, [refer here](https://developer.ko
     * Script tag to populate the visitor information needs point to the Unblu host: `<script src="your-unblu-host>/unblu/js-api/v2/visitor/visitor-api.min.js"></script>`
     * Invoke the function `setVisitorData` to pass the visitor data to Kore.ai assistant. Note that the `visitorData` should be in string format and if you need to pass an object use Stringify.
 
-Locate the following section and populate the apiKey and serverUrl fields with the above-mentioned values. \
+Locate the following section and populate the apiKey and serverUrl fields with the above-mentioned values. 
 
 ```
   {
@@ -76,12 +76,11 @@ Locate the following section and populate the apiKey and serverUrl fields with t
             * `  }
             )`
 ```
-\
 
 In the following Script tag, add Unblu host URL and the API key: `<script type="text/javascript" defer="defer" src="your-unblu-host>/unblu/visitor.js?x-unblu-apikey=&lt;your-unblu-apikey>"></script>`
 
 The entire Unblu SDK HTML file would look like this:
-\
+
 
 ```
 <!DOCTYPE html>
@@ -124,7 +123,7 @@ src="<your-unblu-host>/unblu/visitor.js?x-unblu-apikey=<your-unblu-apikey>"></sc
 
 You can access the Visitor Data from the `usercontext.customData`  along with the user information for each message from Unblu,
 
-Following is the structure of the `usercontext.customData \
+Following is the structure of the `usercontext.customData 
 `
 
 ```
