@@ -9,27 +9,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:     
-      # - name: Copy redirect index page
-      #   run: sudo cp /index.html /site
-
-      - uses: actions/setup-python@v4
-        with:
-          python-version: 3.11
-
-      - name: Deploy docs to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
-
-      - uses: actions/cache@v2
-        with:
-          key: ${{ github.ref }}
-          path: .cache
-      - run: pip install mkdocs-material 
-      - run: pip install mike --force-reinstall --verbose
-      - run: pip install mkdocs-glightbox
+    steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
@@ -54,6 +34,26 @@ jobs:
         with:
           entrypoint: mkdocs
           args: build --config-file=mkdocs.en.xo_v10.yml    
-       
+            
+      # - name: Copy redirect index page
+      #   run: sudo cp /index.html /site
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Deploy docs to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+
+      - uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+      - run: pip install mkdocs-material 
+      - run: pip install mike --force-reinstall --verbose
+      - run: pip install mkdocs-glightbox
       # - run: mike deploy --push --update-aliases 1.0 latest --ignore
       # - run: mkdocs gh-deploy --force
