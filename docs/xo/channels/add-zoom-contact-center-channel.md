@@ -43,20 +43,20 @@ As a first step to enable the channel, associate an app on the XO Platform by se
 To create an app, follow the steps below:
 
 
-1. Navigate to **Deploy** > **Channels**.
-2. Select **Zoom Contact Center** under **Enterprise Channels**.
+1. Navigate to **Channels & Flows** > **Channels** > **Digital** > **All**.
+2. Select **Zoom Contact Center**.
 3. Click the **Configurations** tab.
 4. If you’re creating an app for the first time, click the **Create App** link. Otherwise, select **Create App** from the dropdown list or click **Add**.  
 <img src="../images/Zoom.png" alt="Zoom  channel" title="Zoom channel" style="border: 1px solid gray; zoom:100%;">
 
 5. In the **Create New Client App** window, follow the steps below:
-    * In the **Name** field, enter the name for the app registration used in Bot Builder,. Ffor example, My App Registration.
+    * In the **Name** field, enter the name for the app registration used in Bot Builder,. For example, My App Registration.
     * Select one of these scopes for the app:
         * **Allow anonymous users to chat with the bot**: Enables anonymous users to interact with the bot.
         * **Auto register new users on XO Platform**: Select to control the auto-user registration in Kore.ai if the user assertion is unknown.
     * In the **JWT Signing** **Algorithms Used For Client App Authentication** drop-down list, select one of the following security algorithms:
-        * **RS256/RS512: **Select to enable the **Public Key.** _The Private key, used for encryption, is provided by the user, and the Public key, used for decryption, is provided by the Platform_. Both the keys have to be used for generating the token. The Public Key is used by the XO Platform to authenticate the client application.
-        * **HS256/HS512:** Select to generate a **Secret Key **and a **Client ID**. The **Client ID** is required for app initialization, and the **Secret Key** is used by the XO Platform to authenticate the client application.
+        * **RS256/RS512**: Select to enable the **Public Key**. _The Private key, used for encryption, is provided by the user, and the Public key, used for decryption, is provided by the Platform_. Both the keys have to be used for generating the token. The Public Key is used by the XO Platform to authenticate the client application.
+        * **HS256/HS512**: Select to generate a **Secret Key** and a **Client ID**. The **Client ID** is required for app initialization, and the **Secret Key** is used by the XO Platform to authenticate the client application.
     * (Optional) In the **Push Notifications** section, click **Enable** and then specify a URL to send the notifications.
     <img src="../images/Zoom1.png" alt="Zoom  client ID" title="Zoom client ID" style="border: 1px solid gray; zoom:100%;">
 
@@ -93,7 +93,7 @@ To set up **Zoom Contact Center** as a channel, the bot has to be associated wit
 
 ### **Step 3: Authorize the Connector**
 
-The next step after creating a connector is to authorize it on the **Create Kore.ai Connector** page of the **Zoom App Marketplace **portal. To configure, follow the steps below:
+The next step after creating a connector is to authorize it on the **Create Kore.ai Connector** page of the **Zoom App Marketplace** portal. To configure, follow the steps below:
 
 1. Provide the following information for **Set Preferences**:
     * **Connector Name**.
@@ -103,31 +103,26 @@ The next step after creating a connector is to authorize it on the **Create Kore
 
     <img src="../images/Zoom6.png" alt="Zoom  connector details" title="Zoom connector details" style="border: 1px solid gray; zoom:100%;">
 
-  2. Provide the following information in the** Authorize** section:
+2. Provide the following information in the **Authorize** section:
     * Select the region you want the chatbot to be available from the dropdown.
     * The **Base URL** of the Kore.ai Platform to connect to the app. For example, the base URL for Kore.ai is `bots.kore.ai`.
-    * Copy and paste the **Bot ID**, **Client ID**, and **Client Secret** values from the **Channels **> **Configuration** section of the XO Platform (shown below) for **Authorization Parameters**.
-
+    * Copy and paste the **Bot ID**, **Client ID**, and **Client Secret** values from the **Channels & Flows** > **Channels** > **Digital** > **All** > **Configurred** section of the XO Platform (shown below) for **Authorization Parameters**.
     <img src=".../images/Zoom7.png" alt="Zoom  bot details" title="Zoom bot details" style="border: 1px solid gray; zoom:100%;">
 
-  3. Click **Next.
-  <img src="../images/Zoom8.png" alt="save Zoom  configuration" title="Save Zoom configuration" style="border: 1px solid gray; zoom:70%;">
+3. Click **Next**.
+<img src="../images/Zoom8.png" alt="save Zoom  configuration" title="Save Zoom configuration" style="border: 1px solid gray; zoom:70%;">
 
-  4. Copy the **Post URL** and **Access Token** values from the **Create Kore.ai Chatbot Connector** page.
+4. Copy the **Post URL** and **Access Token** values from the **Create Kore.ai Chatbot Connector** page.
+<img src="../images/Zoom9.png" alt="Zoom  URL" title="Zoom URL" style="border: 1px solid gray; zoom:100%;">
 
-  <img src="../images/Zoom9.png" alt="Zoom  URL" title="Zoom URL" style="border: 1px solid gray; zoom:100%;">
+5. Paste to the relevant fields on the Kore.ai XO Platform in the **Zoom Contact Center** > **Configurations** section.
+<img src="../images/Zoom10.png" alt="Zoom  contact center" title="Zoom contact center" style="border: 1px solid gray; zoom:100%;">
 
-  5. Paste to the relevant fields on the Kore.ai XO Platform in the **Zoom Contact Center **> **Configurations** section.
+5. Copy the **Webhook URL** from the **Zoom Contact Center** > **Configurations** section of the XO Platform.
+<img src="../images/Zoom11.png" alt="Zoom  Webhook URL" title="Zoom Webhook URL" style="border: 1px solid gray; zoom:100%;">
 
-  <img src="../images/Zoom10.png" alt="Zoom  contact center" title="Zoom contact center" style="border: 1px solid gray; zoom:100%;">
-
-  5. Copy the **Webhook URL** from the **Zoom Contact Center **> **Configurations** section of the XO Platform.
-
-  <img src="../images/Zoom11.png" alt="Zoom  Webhook URL" title="Zoom Webhook URL" style="border: 1px solid gray; zoom:100%;">
-
-  6. Paste on the **Create Kore.ai Chatbot Connector** page, and click **Next**.
-
-  <img src="../images/Zoom12.png" alt="Zoom  Kore connnector" title="Zoom Kore connector" style="border: 1px solid gray; zoom:100%;">
+6. Paste on the **Create Kore.ai Chatbot Connector** page, and click **Next**.
+<img src="../images/Zoom12.png" alt="Zoom  Kore connnector" title="Zoom Kore connector" style="border: 1px solid gray; zoom:100%;">
 
 The following message appears once the Kore.ai Chatbot connector is authorized successfully.
 <img src="../images/Zoom13.png" alt="Zoom  channel" title="Zoom channel" style="border: 1px solid gray; zoom:100%;">

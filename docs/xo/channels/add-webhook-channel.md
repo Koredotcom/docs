@@ -9,7 +9,9 @@ The Webhook Channel will continue to be available under the ‘Available Channel
 
 The platform supports two versions of the Webhook channel i.e., V1.0 and V2.0.
 
-**Note**: V2.0 is the recommended version as it provides a scalable request and response format.
+!!! note
+
+    V2.0 is the recommended version as it provides a scalable request and response format.
 
 Here are the key differences:
 
@@ -57,8 +59,12 @@ The platform supports Synchronous and Asynchronous modes of integrations for the
 
 
 
-* **Synchronous Mode**: The bot responses are directly delivered as a response to the incoming requests. The bot will execute the flow, identify the response or responses to be delivered, and provide them as the response to the incoming request. Some platform functionalities like Alert Tasks, Agent Transfer, and Proactive Session Closure messages are not supported in the Synchronous mode. You may consider using the onAlert event through BotKit, [Learn more](https://developer.kore.ai/docs/bots/sdks/sdk-events/#OnAlert). \
-**Note**: Synchronous Webhook channel requests timeout after 15 seconds. We recommend using the Asynchronous Webhook Channel if you expect the requests to take beyond 15 seconds.
+* **Synchronous Mode**: The bot responses are directly delivered as a response to the incoming requests. The bot will execute the flow, identify the response or responses to be delivered, and provide them as the response to the incoming request. Some platform functionalities like Alert Tasks, Agent Transfer, and Proactive Session Closure messages are not supported in the Synchronous mode. You may consider using the onAlert event through BotKit, [Learn more](https://developer.kore.ai/docs/bots/sdks/sdk-events/#OnAlert).
+
+    !!! note
+
+        Synchronous Webhook channel requests timeout after 15 seconds. We recommend using the Asynchronous Webhook Channel if you expect the requests to take beyond 15 seconds.
+
 * **Asynchronous Mode**: Asynchronous mode is useful if you want to deliver the bot responses to a URL other than the incoming request’s URL. You have to configure the POST_URL of your external system to enable the Async mode. The bot responses are asynchronously delivered to this POST_URL. Do note the that Kore.ai XO Platform does not provide the service to host the POST URL. You need to host a custom service or use a third-party service for this.
 
 
@@ -69,27 +75,28 @@ To associate an App, follow the below steps:
 
 
 1. In the XO Platform, select the assistant to which you want to add the channel.
-2. Go to **Deploy > Channels > Webhook**.
+2. Go to **Channels & Flows** > **Channels** > **Digital** > **All** > **Webhook**.
 3. Go to the **Configurations** tab of this page and associate this channel with an app.
 4. Enter a **Name** for the channel.
     1. Select one of these scopes for the app:
         1. Allow anonymous users to chat with the assistant: enables anonymous users to interact with the assistant.
         2. Auto register new users on Kore.ai XO Platform: Select to control the auto-user registration in Kore.ai if the user assertion is unknown.
     2. In the JWT Signing Algorithms Used For Client App Authentication drop-down list, select one of the following security algorithms:
-        3. **RS256/RS512: **Select to enable the **Public Key.** _The Private key, used for encryption, is provided by the user, and the Public key, used for decryption, is provided by the Platform_. Both the keys have to be used for generating the token. The Public Key is used by the XO Platform to authenticate the client application.
-        4. **HS256/HS512:** Select to generate a **Secret Key **and a **Client ID**. The **Client ID** is required for app initialization, and the **Secret Key** is used by the XO Platform to authenticate the client application
-    3. Click Create. The app is created, and Client ID and Client Secret are generated. Copy the Client ID and Client Secret details
+        1. **RS256/RS512**: Select to enable the **Public Key.** _The Private key, used for encryption, is provided by the user, and the Public key, used for decryption, is provided by the Platform_. Both the keys have to be used for generating the token. The Public Key is used by the XO Platform to authenticate the client application.
+        2. **HS256/HS512**: Select to generate a **Secret Key** and a **Client ID**. The **Client ID** is required for app initialization, and the **Secret Key** is used by the XO Platform to authenticate the client application
+    3. Click **Create**. The app is created, and Client ID and Client Secret are generated. Copy the Client ID and Client Secret details
 5. If you want to use the JSON Web Encryption (JWE) standard, you can view the _Public Key_ by clicking the link provided below the _Client Secret_ field.
 6. The Webhook channel supports both **synchronous** and **asynchronous** modes. Depending on your business needs, you can enable one of these modes in the **Configurations** tab.
-7. (Only for Webhook v2.0) In the **Synchronous **mode, by default, the **Enable the Polling for Webhook v2 **option is selected.
+7. (Only for Webhook v2.0) In the **Synchronous** mode, by default, the **Enable the Polling for Webhook v2** option is selected.
 <img src="../images/webhook.jpg" alt="webhook channel" title="webhook channel" style="border: 1px solid gray; zoom:70%;">
 
 
-8. Deselect the **Enable the Polling in Webhook V2** option to retrieve the complete response, all at once, without the need for polling. \
-**Note**: This option is available only in Webhook v2.0. [Learn more](https://developer.kore.ai/docs/bots/channel-enablement/adding-webhook-channel/#Webhook_V20).
+8. Deselect the **Enable the Polling in Webhook V2** option to retrieve the complete response, all at once, without the need for polling.
+    !!! note
+
+        This option is available only in Webhook v2.0. [Learn more](https://developer.kore.ai/docs/bots/channel-enablement/adding-webhook-channel/#Webhook_V20).
 9. Select **Yes **to** Enable Channel**.
 10. **Save** the configuration. The Webhook URL in this channel instance is created dynamically.
-
 <img src="../images/webhook1.jpg" alt="enable webhook channel" title="enable webhook channel" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -97,7 +104,6 @@ To associate an App, follow the below steps:
 ## Step 2: Select the Integration Mode
 
 Use the **Webhook URL** to establish integration with external communication systems. This URL is available only after enabling the channel.
-
 <img src="../images/webhook2.png" alt="add webhook URL" title="add webhook URL" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -541,9 +547,9 @@ If the bot response is a template, then the JSON object required for rendering t
   "completedTaskName": "show balance"
 }
 ```
+!!! note
 
-
-**Note**: The ‘text’ field can contain a string, object or an array of strings or objects.
+    The ‘text’ field can contain a string, object or an array of strings or objects.
 
 
 ### Sample Response for Asynchronous Mode
@@ -646,9 +652,9 @@ The Webhook V2.0 allows you to authenticate the API call with JWT token user ide
 
 
 
-* If the _userIdentity _is not present in JWT, you can validate the _userIdentity _authentication using the appId and the _from _value will be used to generate the userId in the Kore platform..
-* If the _userIdentity _is present in JWT as well as _from _but both are NOT same, then authentication will be failed and throws an error saying that Invalid access token.
-* The _userIdentity _is present in JWT, and _from_ is present in the webhook payload, and both _userIdentity _and _from_ are the same, then it will check against the authentication against the appId and proceed further.
+* If the _userIdentity_ is not present in JWT, you can validate the _userIdentity_ authentication using the appId and the _from_ value will be used to generate the userId in the Kore platform..
+* If the _userIdentity_ is present in JWT as well as _from_ but both are NOT same, then authentication will be failed and throws an error saying that Invalid access token.
+* The _userIdentity_ is present in JWT, and _from_ is present in the webhook payload, and both _userIdentity_ and _from_ are the same, then it will check against the authentication against the appId and proceed further.
 
 
 ### Request Parameters
@@ -1054,13 +1060,13 @@ The response contains the following fields:
 
 
 
-* _to_– refers to the user to whom the message is delivered to.
-* _from _– identity (Stream Id) of the bot from which the response is generated.
-* _text _– contains the response(s) from the bot. Can be a string, object or an array of strings or objects.
-* _endOfTask _– indicating whether the task was completed or not, values _true_ or _false_.
-* _endReason_– the reason for the task completion – _fulfilled_, _interrupted_, or _canceled_
-* _completedTaskId_– the _id _of the dialog task triggered.
-* _completedTaskName _– the name of the dialog task triggered.
+* _to_ – refers to the user to whom the message is delivered to.
+* _from_ – identity (Stream Id) of the bot from which the response is generated.
+* _text_ – contains the response(s) from the bot. Can be a string, object or an array of strings or objects.
+* _endOfTask_ – indicating whether the task was completed or not, values _true_ or _false_.
+* _endReason_ – the reason for the task completion – _fulfilled_, _interrupted_, or _canceled_
+* _completedTaskId_ – the _id _of the dialog task triggered.
+* _completedTaskName_ – the name of the dialog task triggered.
 
 
 ### Change Conversation Language Request
@@ -1255,7 +1261,7 @@ The messages for a ‘pollid’ are provided by the platform only once. The plat
 
 **Response when polling is disabled**
 
-When you deselect the **Enable the Polling in Webhook V2 **option in the **Configurations **tab, the platform retrieves the complete response, all at once, without the need for polling. [Learn more](https://developer.kore.ai/docs/bots/channel-enablement/adding-webhook-channel/#Step_1_Associate_an_App).
+When you deselect the **Enable the Polling in Webhook V2** option in the **Configurations** tab, the platform retrieves the complete response, all at once, without the need for polling. [Learn more](https://developer.kore.ai/docs/bots/channel-enablement/adding-webhook-channel/#Step_1_Associate_an_App).
 
 Sample Response:
 
@@ -1287,7 +1293,7 @@ Sample Response:
 
 **Response as a Request to Post URL**
 
-Then use the _pollId _from the Response#1 to get the response of the second Message node.
+Then use the _pollId_ from the Response#1 to get the response of the second Message node.
 
 Here is the sample curl to use pollId to fetch the response:
 
@@ -1392,7 +1398,7 @@ Here are sample responses for the `SESSION_CLOSURE`:
 
 ### Sample Response for Asynchronous Mode
 
-The POST_URL is the customer’s own asynchronous URL to send and receive requests. Kore.ai does not provide any POST _URL for Asynchronous setup because this URL is different from customer to customer.
+The POST_URL is the customer’s own asynchronous URL to send and receive requests. Kore.ai does not provide any POST_URL for Asynchronous setup because this URL is different from customer to customer.
 
 The following response is an example for a successful asynchronous call:
 
@@ -1483,7 +1489,7 @@ For parameter descriptions, refer to the [request parameters](https://developer.
 
 #### **Type 2:  Using fileId obtained from [file upload API](https://developer.kore.ai/docs/bots/api-guide/upload-file-api/)**
 
-You can upload a file using the **fileId **obtained from file upload API. The following example uses a webhook instance when multiple webhook channels are configured:
+You can upload a file using the **fileId** obtained from file upload API. The following example uses a webhook instance when multiple webhook channels are configured:
 
 
 ```
@@ -1595,8 +1601,9 @@ Headers: {
        }
 ```
 
+!!! note
 
-**Note**: You can also use the filename or fileID to upload a file. For example, use this syntax to upload a file with name and ID: `{ "fileName": "Kore_ai_Logo%405x.png", "fileType":"image", "fileId": "6163e17bf60e0a7e4799f423" }`.
+    You can also use the filename or fileID to upload a file. For example, use this syntax to upload a file with name and ID: `{ "fileName": "Kore_ai_Logo%405x.png", "fileType":"image", "fileId": "6163e17bf60e0a7e4799f423" }`.
 
 
 ## Handle Digital Forms
@@ -1619,8 +1626,9 @@ If your bot has a form that needs user input, the synchronous WebHook channel ge
 ```
 
 
-**FormDef \
-**(This is the complete Form definition which is used to render the Form)
+**FormDef** 
+
+(This is the complete Form definition which is used to render the Form)
 
 
 ```
@@ -1698,8 +1706,9 @@ If your bot has a form that needs user input, the synchronous WebHook channel ge
 ```
 
 
-**FormInitialization \
-**(This must be used for pre-filling Forms)
+**FormInitialization**
+
+(This must be used for pre-filling Forms)
 
 
 ```

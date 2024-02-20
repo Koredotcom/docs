@@ -7,8 +7,8 @@ To add the Twilio SMS channel, follow the below steps:
 
 
 1. **Setup Account** – Login to Twilio developer portal and set up an account.
-2. **Setup Messaging Service**– In the Programmable Messages section, create a messaging service
-3. **Add Phone Number**– Associate a Twilio Phone Number to your bot.
+2. **Setup Messaging Service** – In the Programmable Messages section, create a messaging service
+3. **Add Phone Number** – Associate a Twilio Phone Number to your bot.
 
 ## **Setup Twilio Developer Account**
 
@@ -25,32 +25,27 @@ The following procedure requires an active _Twilio_ account for developers with 
 5. Create your API credentials, if you have not already set up your account.
 6. Copy your **Account SID** and **Auth Token** and enter them in the **Configurations** tab of the Twilio channel page.
 <img src="../images/twilio.png" alt="Twilio channel" title="Twilio channel" style="border: 1px solid gray; zoom:70%;">
-
 <img src="../images/twilio1.png" alt="Twilio channel configuration" title="Twilio channel configuration" style="border: 1px solid gray; zoom:70%;">
 
 
-7. Go to the **Programmable SMS** section from the **All Products & Services **menu.
+7. Go to the **Programmable SMS** section from the **All Products & Services** menu.
 8. Click **Create New Messaging Service** option. Provide a name for your messaging service and select Use Case as **Chat Bot/Interactive 2-way**.
-
 <img src="../images/twilio2.png" alt="Twilio messaging service" title="Twilio messaging service" style="border: 1px solid gray; zoom:70%;">
-
 <img src="../images/twilio3.png" alt="Twilio programmable sms" title="Twilio programmable sms" style="border: 1px solid gray; zoom:70%;">
 
 
 9. After creating the service, make note of the **Service SID** of this service and enter it in the **Configurations** tab of the Twilio SMS channel page.
 10. Under **Inbound Settings** section, select the **Process Inbound Messages** option and update the **Request URL** and **Fallback URL** fields with the information provided in **Configurations** tab of the Twilio SMS channel page.
 11. Under **Outbound Settings**, update the **Status Callback Request URL** field with the information provided in the **Configurations** tab.
-
 <img src="../images/twilio4.png" alt="Twilio Inbound Settings" title="Twilio Inbound Settings" style="border: 1px solid gray; zoom:70%;">
 
-  !!! important
+  !!! Note
 
       The Callback URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
 
-12. Under **Copilot Features** section, make sure that **Sticky Sender**, **MMS Converter**, **Scaler**, **Short Code Reroute, **and **Country Code Geomatch** options are enabled.
+12. Under **Copilot Features** section, make sure that **Sticky Sender**, **MMS Converter**, **Scaler**, **Short Code Reroute, **and** Country Code Geomatch** options are enabled.
 13. **Save** your changes and proceed.
 14. To add a number, go to the **Numbers** section and associate a Twilio Phone Number to this bot. If you do not have a Twilio Number, you must buy one.
-
 <img src="../images/twilio5.png" alt="Twilio Phone Number" title="Twilio Phone Number" style="border: 1px solid gray; zoom:70%;">
 
 15. Go to the **Configurations** tab in the Twilio SMS channel page to review and complete the channel setup.
@@ -67,7 +62,7 @@ To edit the Twilio channel, follow the below steps:
 
 3. Select one of the following commands to modify the channel:
   * **Disable/Enable**
-    * Click **Disable** to temporarily disable the use of the Twilio SMS channel for your bot. To enable the use of the Twilio SMS channel, click **Enable.**
+    * Click **Disable** to temporarily disable the use of the Twilio SMS channel for your bot. To enable the use of the Twilio SMS channel, click **Enable**.
   * **Delete**
     * Click **Delete**.
     * On the **Delete Confirmation** dialog box, click **OK** to permanently delete the bot channel configuration.
@@ -88,8 +83,7 @@ To edit the Twilio channel, follow the below steps:
 
 4. Copy the **Account SID** and **Auth Token** and save for configuring the Twilio channel settings in Kore.ai Bot Builder. You also need a telephone number for your end users to send text message interactions to for your bot.
 5. On the **Dashboard** page, you can scroll down and click Numbers. The **Phone Numbers Dashboard** is displayed.
-6. Click **Numbers** on the left menu to display the** Numbers **page. Click **Buy a number**.
-
+6. Click **Numbers** on the left menu to display the **Numbers** page. Click **Buy a number**.
 <img src="../images/twilio8.png" alt="Twilio Phone Number Dashboard" title="Twilio Phone Number Dashboard" style="border: 1px solid gray; zoom:70%;">
 
 

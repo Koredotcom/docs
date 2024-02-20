@@ -4,9 +4,9 @@ To add Yammer as a channel to your Kore.ai bot, you must create an app in Yammer
 
 
 1. **Register an App**– To enable Yammer as a channel for your bot, create an app on Yammer. Log in to your _Yammer_ developer account to _Register a New App_. Initially, to enable the Yammer channel, you must create and register for a developer account in the Yammer Developer portal.
-2. **Enter the Redirect URL** – Copy the_ Redirect URL_ provided in the **Configurations** tab of the Yammer channel page in the Bot Builder and enter it in the **Redirect URL** field to proceed with creating an app on Yammer.
-1. **Get App Information**– Go to the App Details page to get and reserve the **Channel ID**and **Channel Secret** for your channel configuration.
-2. **Deploy Bot to your Enterprise**– To allow your enterprise users to discover the bot in the App Directory, you can deploy the bot by updating the** App Directory** section.
+2. **Enter the Redirect URL** – Copy the _Redirect URL_ provided in the **Configurations** tab of the Yammer channel page in the Bot Builder and enter it in the **Redirect URL** field to proceed with creating an app on Yammer.
+1. **Get App Information**– Go to the App Details page to get and reserve the **Channel ID** and **Channel Secret** for your channel configuration.
+2. **Deploy Bot to your Enterprise**– To allow your enterprise users to discover the bot in the App Directory, you can deploy the bot by updating the **App Directory** section.
 3. **Authorize**– You must _Authorize_ the bot from the **Configurations** tab on the Yammer Channel page in the bot builder. This allows you to generate a developer access token to enable the Kore.ai bot platform to access the app.
 4. **Enable Channel**– After setting up the Yammer app and entering configuration data in Bot Builder, enable the channel.
 
@@ -18,11 +18,11 @@ To add Yammer as a channel to your Kore.ai bot, you must create an app in Yammer
 To add the Yammer channel, follow the below steps:
 
 
-1. In the **Bots** section of the Bot Builder, click the bot you want to add the Yammer channel to.
-2. On the **Channels** tab, click the **Yammer** icon. The **Yammer Channel** page is displayed.
+1. In the XO Platform, go to **Channels & Flows** > **Channels** > **Digital** > **All**.
+2. Click the **Yammer** icon. The **Yammer Channel** page is displayed.
 3. In a new browser tab, log in to your **Yammer Developer** account and go to the **My Apps** section to register a new app.
 4. To create an app, click **Register New App**. Enter the required details in the listed fields.
-5. Copy the _Redirect URL_ from the **Configurations** tab of the Yammer Channel page and enter it in the **Redirect URL **field.
+5. Copy the _Redirect URL_ from the **Configurations** tab of the Yammer Channel page and enter it in the **Redirect URL** field.
 6. Click **Continue** to create the app.
 <img src="../images/Yammer-1.png" alt="add Yammer channel" title="add Yammer channel" style="border: 1px solid gray; zoom:70%;">
 
