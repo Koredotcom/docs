@@ -390,9 +390,9 @@ Patterns can be used in [Small Talk](../../../automation/use-cases/small-talk/#t
 <tr>
 <td>
 </td>
-<td><strong>SUPPORTED IN LANGUAGES</strong>
+<td><strong>SUPPORTED <br>IN LANGUAGES</strong>
 </td>
-<td><strong>NOT SUPPORTED IN LANGUAGES</strong>
+<td><strong>NOT SUPPORTED <br>IN LANGUAGES</strong>
 </td>
 <td>
 </td>
@@ -404,7 +404,7 @@ Patterns can be used in [Small Talk](../../../automation/use-cases/small-talk/#t
 <tr>
 <td><strong>word1 word2 … wordn</strong>
 <br>
-This mandates all the words defined to be available in the user utterance in the same consecutive order with additional words allowed in between, before and after
+This mandates all the words defined to be available in the user utterance in the same<br> consecutive order with additional words allowed in between, before and after.
 </td>
 <td>All languages
 </td>
@@ -516,7 +516,7 @@ Indicates the end of the sentence and no words are allowed after it.
 <tr>
 <td><strong>!abc</strong>
 <br>
-Indicates the word/concept “abc” should not exist anywhere in the user utterance after this token
+Indicates the word/concept “abc” should not exist anywhere in the user <br>utterance after this token
 </td>
 <td>All languages
 </td>
@@ -548,7 +548,7 @@ The very next word/concept should not be “abc”
 <tr>
 <td><strong>[ … ]</strong>
 <br>
-Used to define a group of words/concepts and the match should be against exactly one of the group declared in [ ].
+Used to define a group of words/concepts and the match should be against <br>exactly one of the group declared in [ ].
 </td>
 <td>All languages
 </td>
@@ -564,7 +564,7 @@ Used to define a group of words/concepts and the match should be against exactly
 <tr>
 <td><strong>{ … }</strong>
 <br>
-Used to define an optional group or words/concepts and the match would be against zero or one of the words/patterns declared in { }.
+Used to define an optional group or words/concepts and the match would be<br> against zero or one of the words/patterns declared in { }.
 </td>
 <td>All languages
 </td>
@@ -580,7 +580,7 @@ Used to define an optional group or words/concepts and the match would be agains
 <tr>
 <td><strong>( … )</strong>
 <br>
-contain a pattern i.e when a pattern or part of a pattern is enclosed in these parentheses, we treat it as a pattern unlike [ ] and { }.
+contain a pattern i.e when a pattern or part of a pattern is enclosed in these<br> parentheses, we treat it as a pattern unlike [ ] and { }.
 </td>
 <td>All languages
 </td>
@@ -612,7 +612,7 @@ Used to find words in any order
 <tr>
 <td><strong>‘word1</strong>
 <br>
-If you quote words or use words that are not in canonical form, the system will restrict itself to what you used in the pattern
+If you quote words or use words that are not in canonical form, the system will<br> restrict itself to what you used in the pattern
 </td>
 <td>All languages
 </td>
