@@ -21,8 +21,8 @@ Steps to configure the Authorization for your assistant with Kerberos-SPNEGO aut
 1. Open the virtual assistant (VA) for which you want to configure the Authorization profile.
 2. Select the **Build** tab from the top menu.
 3. From the left-side vertical menus, click **Configurations > Authorization Profiles**.
-4. Click **Add** to open the **New Authorization Mechanism** dialog.  
-    <img src="../images/api-key-img1.png" alt="New Authorization Mechanism - Add" title="New Authorization Mechanism - Add" style="border: 1px solid gray; zoom: 60%;">
+4. Click **New** to open the **New Authorization Mechanism** dialog.  
+    <img src="../images/basic-auth-img2.png" alt="New Authorization Mechanism - Add" title="New Authorization Mechanism - Add" style="border: 1px solid gray; zoom: 60%;">
 
 5. In the **Authorization Type** drop-down list, select the **Kerberos-SPNEGO** option.  
     <img src="../images/kerberos-img2.png" alt="Authorization Type - Kerberos-SPNEGO" title="Authorization Type - Kerberos-SPNEGO" style="border: 1px solid gray; zoom: 60%;">

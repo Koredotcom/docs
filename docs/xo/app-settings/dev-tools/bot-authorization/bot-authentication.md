@@ -48,7 +48,7 @@ Enables enterprises to use Kerberos SPNEGO authentication flow to connect secure
 
 ## Authorization Options
 
-Each authorization you add to your assistant comes with several options which can be accessed by selecting an authorization profile under **Build > Configurations > Authorization Profiles.**
+Each authorization you add to your assistant comes with several options which can be accessed by selecting an authorization profile under **App Settings > Dev Tools > Authorization Profiles.**
 
 These options are:
 
