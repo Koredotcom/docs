@@ -4,7 +4,7 @@ The Kore.ai XO Platform now allows you to add **Genesys Cloud CX Messaging** as 
 
 !!! note
 
-        This integration works only with Genesys Cloud CX Messaging channel, not the older Genesys web chat.
+    This integration works only with Genesys Cloud CX Messaging channel, not the older Genesys web chat.
 
 With the **Genesys Cloud CX Messaging** integration on the Kore.ai XO Platform, you can achieve the following:
 
