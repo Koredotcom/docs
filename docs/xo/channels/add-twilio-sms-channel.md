@@ -39,9 +39,9 @@ The following procedure requires an active _Twilio_ account for developers with 
 11. Under **Outbound Settings**, update the **Status Callback Request URL** field with the information provided in the **Configurations** tab.
 <img src="../images/twilio4.png" alt="Twilio Inbound Settings" title="Twilio Inbound Settings" style="border: 1px solid gray; zoom:70%;">
 
-  !!! Note
+!!! note
 
-      The Callback URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
+    The Callback URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.    
 
 12. Under **Copilot Features** section, make sure that **Sticky Sender**, **MMS Converter**, **Scaler**, **Short Code Reroute, **and** Country Code Geomatch** options are enabled.
 13. **Save** your changes and proceed.
