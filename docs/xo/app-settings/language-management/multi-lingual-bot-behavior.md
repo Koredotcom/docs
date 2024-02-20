@@ -483,7 +483,7 @@ Here we will list out the NLP features and their support.
 
 !!! Note
 
-   The Spell Correction feature is not supported in Universal bots.
+      The Spell Correction feature is not supported in Universal bots.
 
 
 <table border="1">
@@ -1018,7 +1018,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 <tr>
 <td><strong>PHRASE</strong>
 </td>
-<td colspan="7" ><strong>LANGUAGE SUPPORT</strong>
+<td colspan="6" ><strong>LANGUAGE SUPPORT</strong>
 </td>
 </tr>
 <tr>
@@ -1030,10 +1030,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td><strong>FRENCH</strong>
 </td>
-<td><strong>PORTUGUESE</strong>
 
-<strong>(BRAZILIAN)</strong>
-</td>
 <td><strong>ITALIAN</strong>
 </td>
 <td><strong>CHINESE</strong>
@@ -1054,8 +1051,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>Demander
 </td>
-<td>perguntar
-</td>
+
 <td>Chiedi
 </td>
 <td>问
@@ -1072,8 +1068,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>Dire
 </td>
-<td>Contar
-</td>
+
 <td>Raccontare
 </td>
 <td>告诉
@@ -1090,8 +1085,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>Chercher
 </td>
-<td>Procurar
-</td>
+
 <td>Ricerca
 </td>
 <td>搜索
@@ -1108,8 +1102,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>Ouvert
 </td>
-<td>Aberto
-</td>
+
 <td>Aperto
 </td>
 <td>打开
@@ -1126,8 +1119,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>Charge
 </td>
-<td>Carga
-</td>
+
 <td>Caricare
 </td>
 <td>加载
@@ -1144,8 +1136,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>Commencer
 </td>
-<td>Início
-</td>
+
 <td>Inizio
 </td>
 <td>开始
@@ -1162,8 +1153,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>lancement
 </td>
-<td>Lançamento
-</td>
+
 <td>Lanciare
 </td>
 <td>发射
@@ -1180,8 +1170,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>Parler à
 </td>
-<td>Falar com
-</td>
+
 <td>Parlare a
 </td>
 <td>交谈
@@ -1198,8 +1187,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>Courir
 </td>
-<td>Corre
-</td>
+
 <td>Correre
 </td>
 <td>跑
@@ -1208,8 +1196,6 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 </tr>
 <tr>
-<td>
-</td>
 <td>
 </td>
 <td>
@@ -1234,8 +1220,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>sortie
 </td>
-<td>saída
-</td>
+
 <td>uscita
 </td>
 <td>出口
@@ -1251,7 +1236,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 <tr>
 <td><strong>PHRASE</strong>
 </td>
-<td colspan="7" ><strong>LANGUAGE SUPPORT</strong>
+<td colspan="6" ><strong>LANGUAGE SUPPORT</strong>
 </td>
 </tr>
 <tr>
@@ -1265,8 +1250,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td><strong>JAPANESE</strong>
 </td>
-<td><strong>ARABIC</strong>
-</td>
+
 <td><strong>FINNISH</strong>
 </td>
 <td><strong>RUSSIAN</strong>
@@ -1283,8 +1267,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>頼みます
 </td>
-<td>يطلب
-</td>
+
 <td>Kysyä
 </td>
 <td>Спросить
@@ -1301,8 +1284,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>伝えます
 </td>
-<td>يخبار
-</td>
+
 <td>Kertoa
 </td>
 <td>сказать
@@ -1319,8 +1301,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>探す
 </td>
-<td>بحث
-</td>
+
 <td>Hae
 </td>
 <td>Поиск
@@ -1337,8 +1318,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>開いた
 </td>
-<td>افتح
-</td>
+
 <td>Avata
 </td>
 <td>открыто
@@ -1355,8 +1335,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>負荷
 </td>
-<td>حمل
-</td>
+
 <td>Ladata
 </td>
 <td>нагрузка
@@ -1373,8 +1352,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>ベギン
 </td>
-<td>ابدأ
-</td>
+
 <td>Alkaa
 </td>
 <td>Начать
@@ -1391,8 +1369,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>打ち上げ
 </td>
-<td>إطلاق
-</td>
+
 <td>Tuoda markkinoille
 </td>
 <td>запуск
@@ -1409,8 +1386,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>に話す
 </td>
-<td>تحدث الي
-</td>
+
 <td>Puhua
 </td>
 <td>Говорить с
@@ -1427,16 +1403,13 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>ラン
 </td>
-<td>يركض
-</td>
+
 <td>Juosta
 </td>
 <td>Запустить
 </td>
 </tr>
 <tr>
-<td>
-</td>
 <td>
 </td>
 <td>
@@ -1463,8 +1436,7 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>出口
 </td>
-<td>خروج
-</td>
+
 <td>poistuminen
 </td>
 <td>выход
@@ -1478,11 +1450,16 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 <tr>
 <td><strong>PHRASE</strong>
 </td>
-<td colspan="4" ><strong>LANGUAGE SUPPORT</strong>
+<td colspan="6" ><strong>LANGUAGE SUPPORT</strong>
 </td>
 </tr>
 <tr>
 <td><strong>ENGLISH</strong>
+</td>
+<td><strong>ARABIC</strong>
+</td>
+<td><strong>PORTUGUESE</strong>
+<strong>(BRAZILIAN)</strong>
 </td>
 <td><strong>POLISH</strong>
 </td>
@@ -1496,6 +1473,10 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 <tr>
 <td>Ask
 </td>
+<td>يطلب
+</td>
+<td>perguntar
+</td>
 <td>Zapytać
 </td>
 <td>запитати
@@ -1507,6 +1488,10 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </tr>
 <tr>
 <td>Tell
+</td>
+<td>يخبار
+</td>
+<td>Contar
 </td>
 <td>Powiedzieć
 </td>
@@ -1520,6 +1505,10 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 <tr>
 <td>Search
 </td>
+<td>بحث
+</td>
+<td>Procurar
+</td>
 <td>Szukaj
 </td>
 <td>Пошук
@@ -1531,6 +1520,10 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </tr>
 <tr>
 <td>Open
+</td>
+<td>افتح
+</td>
+<td>Aberto
 </td>
 <td>otwarty
 </td>
@@ -1544,6 +1537,10 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 <tr>
 <td>Load
 </td>
+<td>حمل
+</td>
+<td>Carga
+</td>
 <td>Załaduj
 </td>
 <td>навантаження
@@ -1555,6 +1552,10 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </tr>
 <tr>
 <td>Begin
+</td>
+<td>ابدأ
+</td>
+<td>Início
 </td>
 <td>Zaczynać
 </td>
@@ -1568,6 +1569,10 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 <tr>
 <td>Launch
 </td>
+<td>إطلاق
+</td>
+<td>Lançamento
+</td>
 <td>Uruchomić
 </td>
 <td>запуск
@@ -1580,6 +1585,10 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 <tr>
 <td>Talk to
 </td>
+<td>تحدث الي
+</td>
+<td>Falar com
+</td>
 <td>Mówić do
 </td>
 <td>Розмовляти з
@@ -1591,6 +1600,10 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </tr>
 <tr>
 <td>Run
+</td>
+<td>يركض
+</td>
+<td>Corre
 </td>
 <td>Biegać
 </td>
@@ -1612,9 +1625,17 @@ Here we will list out, language-wise, the trigger phrases used in training the U
 </td>
 <td>
 </td>
+<td>
+</td>
+<td>
+</td>
 </tr>
 <tr>
 <td>Exit
+</td>
+<td>خروج
+</td>
+<td>saída
 </td>
 <td>wyjście
 </td>
