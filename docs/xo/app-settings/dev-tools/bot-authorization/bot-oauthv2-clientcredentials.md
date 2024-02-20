@@ -16,7 +16,7 @@ To configure this authorization method for your assistant, follow these steps:
 3. Click **New**. The **New Authorization Mechanism** dialog opens.  
 <img src="../images/basic-auth-img2.png" alt="Auth profiles - Add" title="Auth profiles - Add" style="border: 1px solid gray;zoom:80%;"/>
 
-4. In the **Authorization Type** drop-down list, select **auth v2 client credentials**.
+4. In the **Authorization Type** drop-down list, select **oauth v2 client credentials**.
 5. In the **Name** field, enter the name for your authorization.
 
 The following illustration shows the **oAuth v2** fields that you must define to enable authorization for your assistant.
