@@ -51,7 +51,7 @@ To delete an existing strategy, go to the corresponding strategy page and click 
 
 ## Enabling/ Disabling a Strategy
 
-You can also temporarily enable or disable a strategy for testing purposes to evaluate alternative extraction strategies or when it is no longer needed. You can do so from the strategy page. 
+By default, as soon as a strategy is created, it is enabled. You can also temporarily enable or disable a strategy for testing purposes to evaluate alternative extraction strategies or when it is no longer needed. You can do so from the strategy page. 
 
 ![Disable a strategy](../images/disable-strategy.png "Disable a strategy")
 
