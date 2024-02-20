@@ -282,7 +282,7 @@ French
 </td>
 <td>
 
-Portuguese(Brazilian),
+Portuguese (Brazilian),
 <br><br>
 Italian,
 <br><br>
@@ -350,7 +350,7 @@ Spanish,
 <br><br>
 French,
 <br><br>
-Portuguese(Brazilian)*,
+Portuguese (Brazilian)*,
 <br><br>
 Italian*,
 <br><br>
@@ -414,7 +414,7 @@ German,
 <br><br>
 Spanish,
 <br><br>
-Portuguese(Brazilian),
+Portuguese (Brazilian),
 <br><br>
 Italian,
 <br><br>
@@ -598,7 +598,7 @@ Spanish,
 <br><br>
 French,
 <br><br>
-Portuguese(Brazilian),
+Portuguese (Brazilian),
 <br><br>
 Portuguese (European),
 <br><br>
@@ -694,7 +694,7 @@ Portuguese (European)
 </td>
 <td>
 
-Portuguese(Brazilian),
+Portuguese (Brazilian),
 <br><br>
 Italian,
 <br><br>
@@ -744,7 +744,7 @@ French
 </td>
 <td>
 
-Portuguese(Brazilian),
+Portuguese (Brazilian),
 <br><br>
 Portuguese (European),
 <br><br>
@@ -824,7 +824,7 @@ Spanish (from ver7.3),
 <br><br>
 French (from ver7.3),
 <br><br>
-Portuguese(Brazilian) (from ver7.3),
+Portuguese (Brazilian) (from ver7.3),
 <br><br>
 Italian (from ver7.3),
 <br><br>
@@ -878,7 +878,7 @@ Spanish,
 <br><br>
 French,
 <br><br>
-Portuguese(Brazilian),
+Portuguese (Brazilian),
 <br><br>
 Portuguese (European),
 <br><br>
@@ -966,7 +966,7 @@ English,
 <br><br>
 Spanish,
 <br><br>
-Portuguese(Brazilian),
+Portuguese (Brazilian),
 <br><br>
 Chinese simplified,
 <br><br>
