@@ -59,7 +59,7 @@ These options are:
 * **Delete** – Click the **gear** icon correspoonding to an authorization, then select **Delete**. Confirm your choice if you are sure that you want to delete the authorization profile.
 
 !!! warning
-
-        Deleted authorization profiles cannot be restored. Please proceed with caution.
+    
+    Deleted authorization profiles cannot be restored. Please proceed with caution.
 
 <img src="../images/auth-profiles-img1.png" alt="Authorization Options" title="Authorization Options" style="border: 1px solid gray;zoom:50%;"/>
