@@ -14,7 +14,15 @@ hide:
 
 <div class="grid cards" markdown>
 
--   :<img src="../images/xop-sm-uc.svg" style="zoom:200%;"></img>: { .lg .middle } __Define Use Cases__
+-   <img src="../images/xop-sm-uc.svg"></img>{ .lg .middle } __Define Use Cases__
+
+    ---
+
+    Use Cases are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent.
+
+    [:octicons-arrow-right-24: Learn more](#)
+
+-   <img src="../images/xop-sm-uc.svg"></img> **Define Use Cases**
 
     ---
 
