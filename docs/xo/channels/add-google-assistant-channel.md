@@ -2,7 +2,7 @@
 
 !!! important
 
-    Please provide a meaningful name like _Travel Bot_ or _HR Assistant_ to the virtual assistant inside **Teams Messaging**.
+    The Google Assistant Conversational Actions will be sunsetted on June 13, 2023. For details, see [Conversational Actions sunset](https://developers.google.com/assistant/ca-sunset/).
 
 
 ## Requirements

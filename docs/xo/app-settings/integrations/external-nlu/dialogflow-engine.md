@@ -146,6 +146,6 @@ The file has the layout as follows:
 
 !!! note
 
-        Save this JSON payload securely. You will not be able to access it again. The entire content of this JSON file must be copied into the private key field inside the Kore.AI External NLU adapter settings. See Adapter Configuration to know more.
+    Save this JSON payload securely. You will not be able to access it again. The entire content of this JSON file must be copied into the private key field inside the Kore.AI External NLU adapter settings. See Adapter Configuration to know more.
 
 To understand the testing and debugging of your VA, to validate the working of the DialogFlow NLU, see [Test and Debug](../test-and-debug){:target="_blank"}.
