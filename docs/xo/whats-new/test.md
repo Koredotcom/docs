@@ -14,7 +14,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   :<img src="../automation/images/xop-sm-uc.svg" style="zoom:200%;"></img>: __Define Use Cases__
+-   :<img src="../images/xop-sm-uc.svg" style="zoom:200%;"></img>: { .lg .middle } __Define Use Cases__
 
     ---
 
