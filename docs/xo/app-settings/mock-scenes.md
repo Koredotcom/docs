@@ -41,7 +41,7 @@ The Mock Scenes area allows you to perform the following actions:
 
 To create a Mock Scene, please follow the steps below:
 
-1. On the **App Settings** page, select **Mock Scenes** from the left hand side menu and click **Create Scene**. If there are no existing scenes, this button is at the bottom of the screen, otherwise it is located at the top right.
+1. On the **App Settings** page, select **Dev Tools > Mock Scenes** tab and click **Create Scene**.
 2. On the _New Scene_ dialog box that opens up, enter a name in the **Scene Name** field and a description in the **Description** field.
 3. Enter a **Status**.
 4. Click **Proceed**.
@@ -53,23 +53,20 @@ The demo below shows you the basics of creating a new Mock Scene.
 
 ## Work with the Conversation Designer
 
-After you add a scene, you are presented with a blank **Conversation View**, where you can enter the user-VA messages. This is, essentially, an adapted version of the Conversation Designer, which is used to create Dialog Tasks. Even though the look is similar, you will notice that Mock Scenes provide options that are specifically focused on developing the conversation itself, without the business logic or training. This helps create a more seamless user experience and provides VA developers with a starting point for their work. 
+After you add a scene, you are presented with a blank **Conversation View**, where you can enter the user-VA messages. Mock Scenes provide options that are specifically focused on developing the conversation itself, without the business logic or training. This helps create a more seamless user experience and provides VA developers with a starting point for their work. 
 
 <img src="../images/mock-scenes-img3-blank-scene.png" alt="Conversation view - Blank scene" title="Conversation view - Blank scene" style="border:1px solid gray; zoom=70%;">
 
-To design a mock conversation scene, you can add _Bot_ and _User_ utterances, create conversation paths,link messages and scenes, add developer notes and collaborate using comments. You can also create a conversation timeline, using tags. 
+To design a mock conversation scene, you can add _Bot_ and _User_ utterances, create conversation paths, link messages and scenes, add developer notes and collaborate using comments. You can also create a conversation timeline, using tags. 
 
 The Conversation Designer comes with the following features to help you design the conversation:
 
 
 ### User and Bot Message Tabs
 
-
 #### User Tab
 
 This tab is used to enter possible messages from users either requesting information or providing input to a request by the virtual assistant. These messages can be:
-
-
 
 * **Plain text messages**. For example, in a Travel VA, _I want to know when check in opens for my flight._
 * **Attachments**. For example, in a Travel VA, to upload a flight reservation..

@@ -60,8 +60,8 @@ Follow these steps to upload the script file to the assistant:
 
 You can add or modify functions in the custom script file by downloading the file, making changes, and then importing it back to the assistant. Importing a new custom script file replaces the existing file, which cannot be retrieved later. Therefore, we recommend you exercise caution and keep a copy of the downloaded file for backup.
 
-1. Select the **Build** tab from the top menu.
-2. From the left menu, select **Configurations > Bot Functions.**
+1. Select **App Settings** from the left menu.
+2. Select **Dev Tools** from the menu, and then the **Bot Functions** tab.
 3. Under the **Custom Script**, click **Download** to save a copy of the file on your local computer.
 4. After you make changes to the file, click **Import New**.
 5. Click **Browse** to the location of the custom script file on your local computer and then click **Import**.
