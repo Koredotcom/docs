@@ -53,8 +53,7 @@ The platform provides the following three modes to redact specified information 
 ### How to Redact
 
 * Open the bot for which you want to configure the PII settings.
-* Select the **Build** tab from the top menu.
-* From the left menu, click **Configuration** **-> PII Settings**.
+* Navigate to **App Settings > Advanced Settings > PII Settings**.
 * The PII Redaction page opens.
 * If PII Redaction isn’t enabled for the bot, toggle the switch to **Yes**. The page now shows a list of information types whose redaction settings are configured by default.
 * To activate the redaction of any of these out-of-the-box information types, toggle the switch next to them to Enable. To edit their redaction settings, click their name.
