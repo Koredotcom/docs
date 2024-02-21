@@ -71,7 +71,7 @@ Once your service account has been created, you need to manage the keys correspo
 <img src="../images/google_chat11.png" alt="create new key" title="create new key" style="border: 1px solid gray; zoom:70%;">
 
 
-A JSON file will be generated and you need to copy the _client_email, and private_key _that needs to be input into the XO Platform. .
+A JSON file will be generated and you need to copy the _client_email_, and _private_key_ that needs to be input into the XO Platform. .
 
 
 ## Step 4: Configure the Google Chat Channel
