@@ -14,6 +14,42 @@ hide:
 
 <div class="grid cards" markdown>
 
+-   :<img src="../images/xop-sm-uc.svg" style="zoom:200%;"></img>:{ .lg .middle } __Define Use Cases__
+
+    ---
+
+    Use Cases are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent.
+
+    [:octicons-arrow-right-24: Learn more](#)
+
+-   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
+
+    ---
+
+    Focus on your content and generate a responsive and searchable static site
+
+    [:octicons-arrow-right-24: Reference](#)
+
+-   :material-format-font:{ .lg .middle } __Made to measure__
+
+    ---
+
+    Change the colors, fonts, language, icons, logo and more with a few lines
+
+    [:octicons-arrow-right-24: Customization](#)
+
+-   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+
+    ---
+
+    Material for MkDocs is licensed under MIT and available on [GitHub]
+
+    [:octicons-arrow-right-24: License](#)
+
+</div>
+
+<div class="grid cards" markdown>
+
 - :fontawesome-brands-html5: __HTML__ for content and structure
 
 - :fontawesome-brands-js: __JavaScript__ for interactivity
