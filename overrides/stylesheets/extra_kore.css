@@ -91,7 +91,7 @@ kr-grid[type="g2"] {
 }
 kr-grid[type="g2"] kr-grid-item{
     padding: 10px;
-    border: 2px solid transparent;
+    border: 1px solid;
     transition: border .25s;
     border-radius: 5px;        
 }
