@@ -6,7 +6,7 @@ Kore.ai virtual assistant platform allows you to customize how these Conversatio
 
 !!! note
 
-        Conversation Sessions are different from Billing Sessions, [refer here](../../../administration/billing){:target="_blank"} for more on Billing Sessions.
+    Conversation Sessions are different from Billing Sessions, [refer here](../../../administration/billing){:target="_blank"} for more on Billing Sessions.
 
 
 ## Overview
@@ -30,16 +30,16 @@ Conversation Sessions are created for all interactions with the virtual assistan
 
 !!! note
 
-        Inclusion of non-interactive and developer interactions in conversation sessions was implemented starting from ver8.0.
+     Inclusion of non-interactive and developer interactions in conversation sessions was implemented starting from ver8.0.
 
 
 ## Manage Sessions
 
 This feature is only available post v8.0 of the platform release.
 
-You can define the Conversation Session behavior sing the **Manage Sessions** option under **Configurations** from **Build** tab.
+You can define the Conversation Session behaviors in the **Manage Sessions** tab within **App Settings > Advanced Settings** tab.
 
-<img src="../images/bot-sessions-img1.png" alt="Build - Configurations - Manage Sessions" title="Build - Configurations - Manage Sessions" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/bot-sessions-img1.png" alt="App Settings > Advanced Settings > Manage Sessions" title="App Settings > Advanced Settings > Manage Sessions" style="border: 1px solid gray;zoom:50%;"/>
 
 The following details explain the options available on the page, to define the conversation sessions.
 
