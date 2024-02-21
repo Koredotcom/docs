@@ -74,12 +74,7 @@ To import a Virtual Assistant, follow these steps:
 4. On the Import & Export page select the **Import** tab.
 5. Click the **Choose File** buttons next to the **Bot Definition File** field and **Bot Config File** field, and upload the _botDefinition.json_ and _config.json_ files respectively.
 6. Optionally, upload the custom script file from the imported assistant if any. 
-[ ](https://kore-wordpress.s3.us-east-2.amazonaws.com/developer.kore.ai/wp-content/uploads/20221003065802/fullimport.png)
-
-
-
-
-    ![alt_text](images/bm(3).png "image_tooltip")
+<    <img src="../images/bot-import-custom-script-file.png" alt="App import - Custom script file" title="App import - Custom script file" style="border:1px solid gray; zoom:70%;">
 
 7. Select one of these import options: **Full Import** or **Incremental Import**.
 8. If you select **Full import**, the bot definition in the in-development copy will be overwritten with the definition present in the import file.
