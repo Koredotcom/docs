@@ -3,11 +3,11 @@
 
 ## Prerequisites
 
-[How to Access the Kore.ai XO Platform?](../../../../getting-started/accessing-the-platform/?h=how+to+access+the+platform){:target="_blank"}
+[How to Access the Kore.ai XO Platform?](../../../../getting-started/accessing-the-platform/){:target="_blank"}
 
 !!! Note
 
-        "Virtual Assistant", "VA" and "Bot" refer to the same concept and are used interchangeably.
+  "Virtual Assistant", "VA" and "Bot" refer to the same concept and are used interchangeably.
 
 
 ## Introduction
@@ -45,7 +45,7 @@ The first page you see here is the list of existing Dialog Tasks. Let us now go 
   
     !!! Note
     
-            If a Dialog Task has been created using our legacy builder, then you will have the option to upgrade to the new, Conversation-Driven builder. In your list, such tasks come with an upgrade icon (an upward arrow inside a gear symbol).
+        If a Dialog Task has been created using our legacy builder, then you will have the option to upgrade to the new, Conversation-Driven builder. In your list, such tasks come with an upgrade icon (an upward arrow inside a gear symbol).
 
 * **Dialog Task Options** – When hovering over a task, you will see options to Edit, Clone or Delete the selected task. There is also a menu with more options, where you can View the task, configure Dialog Settings, Manage Interruptions or Amend Behavior.  
     
@@ -57,7 +57,7 @@ The first page you see here is the list of existing Dialog Tasks. Let us now go 
   
     !!! Note
     
-            Starting with version 9.0 of the Kore.ai XO Platform, newly created tasks will use the new, Conversation-Driven Builder.
+        Starting with version 9.0 of the Kore.ai XO Platform, newly created tasks will use the new, Conversation-Driven Builder.
 
 * **Quick Start Guide** – If you are just getting started using the Kore.ai XO Platform, we recommend that you take a look at this guide, which will show you the basics of working with the Dialog Builder.
 * **Test** – This is where you can easily test your VA, by simulating an interaction between a user and your VA.
@@ -111,7 +111,7 @@ If you no longer require a specific Dialog Task, you can remove it.
 
 !!! Warning
 
-        Deleted Tasks cannot be restored.
+    Deleted Tasks cannot be restored.
 
 
 To delete a Dialog Task:
@@ -143,7 +143,7 @@ You can access them by creating a new Dialog Task or by opening an existing one.
 
 !!! Note
 
-        This guide is applicable for the new, Conversation-Driven Dialog Builder. If your tasks are using the previous version, please consider upgrading.
+    This guide is applicable for the new, Conversation-Driven Dialog Builder. If your tasks are using the previous version, please consider upgrading.
 
 You can build Dialogs by adding and configuring [nodes](../node-types/nodes-transitions/){:target="_blank"} in the required sequence as per business logic in the Dialog Builder.
 

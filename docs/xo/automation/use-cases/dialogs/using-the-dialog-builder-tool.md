@@ -32,7 +32,7 @@ To add a dialog task, follow the steps below:
 
     <img src="../images/using-dialog-builder-img3-create-dialog-scratch-details.png" alt="Start dialog building From Scratch - Details" title="Start dialog building From Scratch - Details" style="border:1px solid gray; zoon:60%;">
 
-This will open the Dialog Builder with the canvas containing the root intent. Now, you are ready to add nodes and establish transitions between these nodes for your workflow.
+This will open the Dialog Builder with the canvas containing the root intent displaying the Dialog Name and Description. Now, you are ready to add nodes and establish transitions between these nodes for your workflow.
 
 <img src="../images/using-dialog-builder-img4-scratch-dialog-created.png" alt="Dialog Builder canvas with Root Intent" title="Dialog Builder canvas with Root Intent" style="border:1px solid gray; zoon:60%;">
 
