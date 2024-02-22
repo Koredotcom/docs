@@ -29,7 +29,7 @@ Before you begin, ensure that you have access to the administrative functions of
     * Choose _application/json_ as **Content Type**.
     * If you would like your bot to be available only for a specific channel, then choose the required channel from the **Channel** dropdown.
     * Provide your Kore.ai assistant Name in the **Trigger Words** field.
-    * Copy the **Callback URL** for the Kore VA (located in the **XO Platform > Deploy > Channels > Mattermost**)  and provide it in the Callback URLs field.
+    * Copy the **Callback URL** for the Kore VA (located in the **Channels & Flows** > **Channels** > **Digital** > **All** > **Mattermost**)  and provide it in the Callback URLs field.
     * Click on **Save** to complete the Outgoing Webhook setup.
     <img src="../images/mattermost2.png" alt="save mattermost configuration " title="save mattermost configuration" style="border: 1px solid gray; zoom:70%;">
 
