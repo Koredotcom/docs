@@ -149,7 +149,7 @@ You can delete a sequence by right clicking on it and selecting **Delete** from 
 
 ## Add node to dialog
 
-There are two ways to add an asset:
+There are two ways to add a node:
 
 1. Drag and drop nodes from the panel onto the dialog builder, [see below](#use-drag-and-drop).
 2. Using the options from the Dialog Builder Canvas, [see below](#use-the-dialog-canvas).
@@ -167,7 +167,7 @@ Additionally, a streamlined node panel with user-friendly categorization is prov
 
 Click the <img src="../images/using-dialog-builder-img17-nodes-connector.png"> button next to the sequence after which you want to add another node. You can either add a node directly on the canvas, in which case a new sequence gets created. You can then drag and drop the node to an existing sequence, if that is how you wish to place it.
 
-**_[video of adding asset on canvas]_**
+**_[video of adding node on canvas]_**
 
 
 ### Add If-Else Node Connections
@@ -180,7 +180,7 @@ To do this, hover over the **Transitions** section and click **Add New.** [Learn
 
 Sequence can be deleted by right clicking on it, and then clicking **Delete.**
 
-<img src="../images/using-dialog-builder-delete-asset.png" alt="Delete asset" title="Delete asset" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-delete-asset.png" alt="Delete node" title="Delete node" style="border:1px solid gray; zoon:60%;">
 
 
 ## Node Properties
@@ -191,9 +191,9 @@ Clicking on a node will open its Properties panel, which includes specific featu
 * **Instance Properties** can be customized for the selected node for the current dialog.
 * **Connection Properties** can be used for configuring transition conditions. (Only available for the bottommost node in a node)
 * **NLP Properties** for intent and entity recognition.
-* **Voice Call Properties** for IVR channels (available for certain assets only after [IVR integration](../node-types/voice-call-properties/){:target="_blank"}).
+* **Voice Call Properties** for IVR channels (available for certain nodes only after [IVR integration](../node-types/voice-call-properties/){:target="_blank"}).
 
-<img src="../images/using-dialog-builder-img20-asset-properties.png" alt="Asset properties" title="Asset properties" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-img20-asset-properties.png" alt="Node properties" title="Node properties" style="border:1px solid gray; zoon:60%;">
 
 
 ## Adding Comments, Bookmarks and Text
@@ -318,7 +318,7 @@ If you are using the group to set up a Subintent, you can also configure it, usi
 ## Bot Action Nodes (Needed?)
 
 
-Bot Action nodes include the following assets, that need processing by the app without user interaction:
+Bot Action nodes include the following nodes, that need processing by the app without user interaction:
 
 * [Service ](../node-types/working-with-the-service-node/){:target="_blank"}Asset
 * [Script ](../node-types/working-with-the-script-node/){:target="_blank"}Asset
