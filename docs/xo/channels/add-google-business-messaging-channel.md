@@ -15,12 +15,19 @@ When Google Business Messaging is configured as a Channel on the XO Platform, th
 * If you have your **own account**, you can enable conversations for brands you manage by creating Business Messages agents using Business Communications APIs.
 
 Important Information on Agents and GBM’s Messaging Infrastructure
+
 * An Agent is a conversational entity that users interact with.
+
 * You must create one agent for each brand you manage.
+
 * You can create and manage agents with the Business Communications API.
+
 * You can control messaging for your agents with the Business Messages API.
+
 An agent encompasses a brand’s business functions, such as online support, and physical locations (if any).
+
 * Each message contains the context from which the user initiated the conversation.
+
 * Your message routing infrastructure can detect if the user viewed a specific business location or looked for general support, and it can route messages to the correct destination.
 
 
@@ -60,7 +67,7 @@ You must create and register a **Google Cloud Platform (GCP)** project to enable
 
 !!! tip
 
-         Please note the project number to register as a partner.
+    Please note the project number to register as a partner.
 
 
 
@@ -89,14 +96,13 @@ To integrate with the GBM channel, you need to register as a partner for Google 
     * **Partner Website**: Your organization’s website.
     * **Region**: The region you want to host the Business Messages service.
 
-  !!! note "Important"
-    
-      Important: To launch a production agent with Business Messages, please register with a corporate email, not a personal email.
+    !!! note
+
+      To launch a production agent with Business Messages, please register with a corporate email, not a personal email.
   
 4. Review and Accept the **Business Messages Terms of Service**.
 
 5. Click **Create**.
-
 <img src="../images/GBM-2.png" alt="create business partner" title="create business partner" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -112,9 +118,9 @@ When creating an agent, you can enable the **Business Messages Helper Bot** that
 
 Also, to create an agent for your GBM Partner account, you must submit information on the brand and the agent on the **Business Communications Developer Console**.	
 
-	
+!!! note
 
-**Important**: To manage multiple brands, you must create an agent for each brand.	
+  To manage multiple brands, you must create an agent for each brand.	
 
 			
 
@@ -140,11 +146,14 @@ Also, to create an agent for your GBM Partner account, you must submit informati
 
 Once you’ve gathered the above information, to create an agent follow the steps below:
 
-**Note**: If you manage multiple brands, repeat the steps to create an agent for each brand.
+!!! note
+
+    If you manage multiple brands, repeat the steps to create an agent for each brand.
 
 
 
 1. Sign in to your account on the[ Business Communications Developer Console](https://business-communications.cloud.google.com/?utm_source=/business-communications/rcs-business-messaging/guides/get-started/first-agent&utm_medium=devsite&utm_campaign=rcs-business-messaging).
+
 2. Click **Create Agent**.
 <img src="../images/GBM-3.png" alt="create agent" title="create agent" style="border: 1px solid gray; zoom:70%;">
 
@@ -181,7 +190,6 @@ To customize your agent and how it handles messaging, you must set an agent Webh
 <img src="../images/GBM-5.png" alt="configure webhook" title="configure webhook" style="border: 1px solid gray; zoom:70%;">
 
 5. Copy the **Webhook URL** from the Kore.ai XO Platform under **Channels & Flows** > **Channels** > **Digital** > **All** > **Google Business Messaging** > **Configurations**.
-<img src="../images/GBM-6.png" alt="webhook url" title="webhook url" style="border: 1px solid gray; zoom:70%;">
 
 
 6. Paste the copied link for the **Webhook endpoint URL** field in the **Configure your webhook** window on the **Business Communications Developer** Console.
@@ -206,12 +214,11 @@ To send messages and events as your agent, you need to authenticate API calls wi
 <img src="../images/GBM-10.png" alt="create key" title="create key" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Create** on the confirmation window to download the JSON file with the **service account key**.
-
-  <img src="../images/GBM-11.png" alt="service account key" title="service account key" style="border: 1px solid gray; zoom:70%;">
-
-  <img src="../images/GBM-12.png" alt="service key" title="service key" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/GBM-11.png" alt="service account key" title="service account key" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/GBM-12.png" alt="service key" title="service key" style="border: 1px solid gray; zoom:70%;">
 
 4. Rename the downloaded file to **_rbm-agent-service-account-credentials.json_**.
+
 5. Store the key securely to recover it if required.
 
 
@@ -221,19 +228,18 @@ To configure the virtual assistant for the service account on the Kore.ai XO Pla
 
 !!! tip
 
-         For the private key, please copy only the key value within the **_BEGIN PRIVATE KEY_** and **_END PRIVATE KEY_** header tags. The XO Platform adds these tags by default.
+    For the private key, please copy only the key value within the **_BEGIN PRIVATE KEY_** and **_END PRIVATE KEY_** header tags. The XO Platform adds these tags by default.
 
 
 1. Copy the **_client_email_**, **_client_id_**, **client_token (alphanumeric value)**, and **_private_key_** values from the downloaded JSON file.
-1. Paste the values in the respective fields under **Channels & Flows** > **Channels** > **Digital** > **All** > **Google Business Messaging** > **Configurations**.
 
-    <img src="../images/GBM-13.png" alt="private key" title="private key" style="border: 1px solid gray; zoom:70%;">
-
-    <img src="../images/GBM-14.png" alt="client details" title="client details" style="border: 1px solid gray; zoom:70%;">
+2. Paste the values in the respective fields under **Channels & Flows** > **Channels** > **Digital** > **All** > **Google Business Messaging** > **Configurations**.
+<img src="../images/GBM-14.png" alt="client details" title="client details" style="border: 1px solid gray; zoom:70%;">
 
 
-2. Select **Yes** for the **Enable Channel** option.
-3. Click **Save**
+3. Select **Yes** for the **Enable Channel** option.
+
+4. Click **Save**
 
 After enabling the channel and verifying all the configurations, you can test the new channel integration by publishing your virtual assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
 
