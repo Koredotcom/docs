@@ -75,7 +75,7 @@ To improve intent identification for the dialog task, add or define the followin
 3. **Bot Synonyms** or related phrases for the user intent. [Learn more](../../../../natural-language/training/fundamental-meaning/#manage-synonyms){:target="_blank"}.
 4. **Manage Context** tags as preconditions to identify the intent and define the output context to be set when this task is initiated. [Learn more](../../../../intelligence/context-management){:target="_blank"}.
 
-<img src="../images/add-intent-node-img4-nlp-properties1.png" alt="Intent node NLP properties" title="Intent node NLP properties" style="border:1px solid gray;zoom=70%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/add-intent-node-img5-nlp-properties2.png" alt="Intent node NLP properties" title="Intent node NLP properties" style="border:1px solid gray;zoom=70%;">
+<img src="../images/add-intent-node-img4-nlp-properties1.png" alt="Intent node NLP properties" title="Intent node NLP properties" style="border:1px solid gray;zoom=45%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/add-intent-node-img5-nlp-properties2.png" alt="Intent node NLP properties" title="Intent node NLP properties" style="border:1px solid gray;zoom=45%;">
 
 
 ### Connections Properties
