@@ -7,7 +7,7 @@
 
 !!! Note
 
-  "Virtual Assistant", "VA" and "Bot" refer to the same concept and are used interchangeably.
+    "Virtual Assistant", "VA" and "Bot" refer to the same concept and are used interchangeably.
 
 
 ## Introduction
@@ -176,11 +176,11 @@ The Dialog Builder is where you can build business logic into your conversations
 
 * **The Canvas** – This represents the entire surface on which the components of your conversation are placed.
 * **The Root Intent** – This is the first component of any conversation and will be displayed on your canvas by default, whenever you create a new Dialog Task.
-* **Assets** – These are the different points at which components of your conversation intersect. For details, please see [Node Types](../node-types/nodes-transitions/){:target="_blank"}.
-* **Nodes** - These are placeholders for creating groups of assets. Each node has one or more assets added in logical sequences.
-* **Assets Panel** – Here is where you can choose which Node Type to add and simply drag and drop it to the canvas, at the desired location. You can also add notes using the ⨁ buttons within your flow.
-* **Nodes panel** -  This tab has a list of nodes created in the current dialog.
-* **Bookmarks panel** - This tab has the list of bookmarks added to assets and nodes on the canvas.
+* **Nodes** – These are the different points at which components of your conversation intersect. For details, please see [Node Types](../node-types/nodes-transitions/){:target="_blank"}.
+* **Sequences** - These are placeholders for creating groups of nodes. Each sequence has one or more nodes added in logical sequences.
+* **Assets Panel** – Here is where you can choose which Node Type to add and simply drag and drop it to the canvas, at the desired location. You can also add nodes using the ⨁ buttons within your flow.
+* **Nodes panel** -  This tab has a list of sequences created in the current dialog.
+* **Bookmarks panel** - This tab has the list of bookmarks added to sequences and nodes on the canvas.
 * **Component Configuration Panel**– This panel is available when a component is selected, and can be minimized (as shown in the screenshot above).
 * **Display Options Panel** – This panel is only available when no component is selected and allows you to configure Display and Zoom Options, to Auto-Arrange components or to turn the map on or off. The map allows you to see the general area where you are currently located within your flow.
 

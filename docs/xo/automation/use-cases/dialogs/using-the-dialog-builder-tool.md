@@ -111,34 +111,34 @@ Before moving on, here is an overview of the Dialog Task Builder. For details, p
 
 <img src="../images/navigate-dialog-builder-canvas.png" alt="Dialog task builder" title="Dialog task builder" style="border:1px solid gray; zoon:60%;">
 
-## Nodes
+## Sequences
 
-In UXO, a **Node** is a building block of a dialog that contains one or more assets in the required sequence of execution.. You can divide the dialog into nodes based on sub tasks within the dialog.
+In UXO, a **Sequence** is a building block of a dialog that contains one or more nodes in the required sequence of execution.. You can divide the dialog into sequences based on sub tasks within the dialog.
 
 **_[video of node creation]_**
 
-You can set connections between two nodes; Below are the steps. Drag the connector <img src="../images/using-dialog-builder-img17-nodes-connector.png">
- from the source node to the required destination node. Please note that by default, the connection will be from the **bottommost asset of the source node** to the **topmost asset on the destination node**.
+You can set connections between two sequences; Drag the connector <img src="../images/using-dialog-builder-img17-nodes-connector.png">
+ from the source sequence to the required destination sequence. Please note that by default, the connection will be from the **bottommost node of the source sequence** to the **topmost node on the destination sequence**.
 
 Connections can be set or changed either on the canvas by **dragging the transition arrow**, or through **Connections** settings on the **Component Properties panel**. 
 
-You can also add  a node **in-between two existing nodes**. Below are the steps to do that:
+You can also add  a sequence **in-between two existing sequences**. Below are the steps to do that:
 
-* Add the new node to the canvas.
-* Set the connection between the source node to the new node
-* Set the connection between the new node to the Destination node.
+* Add the new node directly to the canvas, a new sequence will get created containing the newly added node.
+* Set the connection between the source sequence to the new sequence.
+* Set the connection between the new sequence to the Destination sequence.
 
 **_[Video of connection]_**
 
-All the nodes created can be seen on the **Nodes** tab in the left hand side menu.
+All the sequences created can be seen on the **Nodes** tab in the left hand side menu.
 
 <img src="../images/using-dialog-builder-img18-nodes-tab.png" alt="Nodes tab" title="Nodes tab" style="border:1px solid gray; zoon:60%;">
 
-For example, in the flight booking dialog, you can have separate nodes for gathering passenger details, gathering trip details, generating pnr, etc. Each node contains one or more components grouped into coherent sequences. Align the components logically and provide clear, descriptive names for the nodes to facilitate future reference and comprehension. 
+For example, in the flight booking dialog, you can have separate sequences for gathering passenger details, gathering trip details, generating pnr, etc. Each sequence contains one or more nodes grouped into coherent sequences. Align the nodes logically and provide clear, descriptive names for the sequences to facilitate future reference and comprehension. 
 
 <img src="../images/using-dialog-builder-img19-assets-and-nodes.png" alt="Assets and Nodes" title="Assets and Nodes" style="border:1px solid gray; zoon:60%;">
 
-You can delete a node by right clicking on it and selecting **Delete** from the menu.
+You can delete a sequence by right clicking on it and selecting **Delete** from the menu.
 
 !!! Warning
 
@@ -147,49 +147,49 @@ You can delete a node by right clicking on it and selecting **Delete** from the 
 <img src="../images/using-dialog-builder-img15-node-delete.png" alt="Delete node" title="Delete node" style="border:1px solid gray; zoon:60%;">
 
 
-## Add Assets to dialog
+## Add node to dialog
 
 There are two ways to add an asset:
 
-1. Drag and drop assets from the panel onto the dialog builder, [see below](#use-drag-and-drop).
+1. Drag and drop nodes from the panel onto the dialog builder, [see below](#use-drag-and-drop).
 2. Using the options from the Dialog Builder Canvas, [see below](#use-the-dialog-canvas).
 
 ### Use Drag and Drop
 
-You can add assets within the dialog task, by dragging the asset from the panel on the left to the designated place in the dialog task, on the canvas. You can drop the asset within an existing node, or outside the nodes; in this case a node will get created automatically, containing the newly added asset.
+You can add nodes within the dialog task, by dragging the node from the panel on the left to the designated place in the dialog task, on the canvas. You can drop the node within an existing node, or outside the nodes; in this case a sequence will get created automatically, containing the newly added node.
 
-Additionally, a streamlined node panel with user-friendly categorization is provided at the bottom of the canvas. The categories, namely **Ask, Inform, Action, AI, and Integration** provide a clear organization for you to easily locate the required assets. Assets can be dragged and dropped from here too.
+Additionally, a streamlined node panel with user-friendly categorization is provided at the bottom of the canvas. The categories, namely **Ask, Inform, Action, AI, and Integration** provide a clear organization for you to easily locate the required nodes. Nodes can be dragged and dropped from here too.
 
 **_[VIDEO Drag Drop]_**
 
 
 ### Use the Dialog Canvas
 
-Click the <img src="../images/using-dialog-builder-img17-nodes-connector.png"> button next to the node after which you want to add another asset. You can either add an asset directly on the canvas, in which case a new node gets created. You can then drag and drop the asset to an existing node, if that is how you wish to place it.
+Click the <img src="../images/using-dialog-builder-img17-nodes-connector.png"> button next to the sequence after which you want to add another node. You can either add a node directly on the canvas, in which case a new sequence gets created. You can then drag and drop the node to an existing sequence, if that is how you wish to place it.
 
 **_[video of adding asset on canvas]_**
 
 
 ### Add If-Else Node Connections
 
-You can add conditions to the node by adding **If-Else connection** in the **Transition** section of the node. This is where you can set the execution path based on the condition.
+You can add conditions to the sequence by adding **If-Else connection** in the **Transition** section of the sequence. This is where you can set the execution path based on the condition.
 
 To do this, hover over the **Transitions** section and click **Add New.** [Learn more](../node-connections/nodes-conditions/){:target="_blank"}.
 
 <img src="../images/using-dialog-builder-img16-nodes-transition.png" alt="Transitions - Add New" title="Transitions - Add New" style="border:1px solid gray; zoon:60%;">
 
-Asset can be deleted by right clicking on it, and then clicking **Delete.**
+Sequence can be deleted by right clicking on it, and then clicking **Delete.**
 
 <img src="../images/using-dialog-builder-delete-asset.png" alt="Delete asset" title="Delete asset" style="border:1px solid gray; zoon:60%;">
 
 
-## Asset Properties
+## Node Properties
 
-Clicking on an asset will open its Properties panel, which includes specific features, depending on the type of asset you are working with. Please consult the documentation on [Node Types](../node-types/nodes-transitions/){:target="_blank"} to learn more about what is included with each. So, noting that some assets may not come with some features, here is a general overview of what is available within this panel:
+Clicking on a node will open its Properties panel, which includes specific features, depending on the type of node you are working with. Please consult the documentation on [Node Types](../node-types/nodes-transitions/){:target="_blank"} to learn more about what is included with each. So, noting that some nodes may not come with some features, here is a general overview of what is available within this panel:
 
 * **Component Properties** such as name, type, and component-specific properties.
-* **Instance Properties** can be customized for the selected asset for the current dialog.
-* **Connection Properties** can be used for configuring transition conditions. (Only available for the bottommost asset in a node)
+* **Instance Properties** can be customized for the selected node for the current dialog.
+* **Connection Properties** can be used for configuring transition conditions. (Only available for the bottommost node in a node)
 * **NLP Properties** for intent and entity recognition.
 * **Voice Call Properties** for IVR channels (available for certain assets only after [IVR integration](../node-types/voice-call-properties/){:target="_blank"}).
 
@@ -208,7 +208,7 @@ You can add, edit, move or delete text, comments or bookmarks as per need. Howev
 
 !!! Note
 
-	You can add comments, texts or bookmarks on the canvas as well as within the nodes. (Available in Phase 2)
+	You can add comments, texts or bookmarks on the canvas as well as within the sequences. (Available in Phase 2)
 
 <img src="../images/using-dialog-builder-img21-text-bookmark-comment.png" alt="Text, comment, bookmark" title="Text, comment, bookmark" style="border:1px solid gray; zoon:60%;">
 
@@ -315,10 +315,10 @@ If you are using the group to set up a Subintent, you can also configure it, usi
 
 
 
-## Bot Action Assets (Needed?)
+## Bot Action Nodes (Needed?)
 
 
-Bot Action assets include the following assets, that need processing by the app without user interaction:
+Bot Action nodes include the following assets, that need processing by the app without user interaction:
 
 * [Service ](../node-types/working-with-the-service-node/){:target="_blank"}Asset
 * [Script ](../node-types/working-with-the-script-node/){:target="_blank"}Asset
