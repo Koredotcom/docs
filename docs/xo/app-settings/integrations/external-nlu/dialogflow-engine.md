@@ -79,7 +79,7 @@ Follow these steps to create service account:
 
     !!! note
 
-            If you already have service accounts with credentials, you can access them from the Credentials option in the left navigation menu.
+        If you already have service accounts with credentials, you can access them from the Credentials option in the left navigation menu.
 
     <img src="../images/external-nlu-dialogflow-engine-img12.png" alt="Click 'Create Credentials'" title="Click 'Create Credentials'" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -119,7 +119,8 @@ Follow these steps to generate the private key:
 <img src="../images/external-nlu-dialogflow-engine-img22.png" alt="JSON option to create Private key" title="JSON option to create Private key" style="border: 1px solid gray;zoom:50%;"/>
 
     !!! note
-            The JSON option is by default selected.
+        
+        The JSON option is by default selected.
 
 
 A file containing the JSON Private Key information for use in the External NLU settings of Kore.ai platform, is downloaded and saved to your computer.
