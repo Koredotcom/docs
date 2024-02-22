@@ -3,11 +3,11 @@
 
 ## Prerequisites
 
-[How to Access the Kore.ai XO Platform?](../../../../getting-started/accessing-the-platform/?h=how+to+access+the+platform){:target="_blank"}
+[How to Access the Kore.ai XO Platform?](../../../../getting-started/accessing-the-platform/){:target="_blank"}
 
 !!! Note
 
-        "Virtual Assistant", "VA" and "Bot" refer to the same concept and are used interchangeably.
+    "Virtual Assistant", "VA" and "Bot" refer to the same concept and are used interchangeably.
 
 
 ## Introduction
@@ -45,7 +45,7 @@ The first page you see here is the list of existing Dialog Tasks. Let us now go 
   
     !!! Note
     
-            If a Dialog Task has been created using our legacy builder, then you will have the option to upgrade to the new, Conversation-Driven builder. In your list, such tasks come with an upgrade icon (an upward arrow inside a gear symbol).
+        If a Dialog Task has been created using our legacy builder, then you will have the option to upgrade to the new, Conversation-Driven builder. In your list, such tasks come with an upgrade icon (an upward arrow inside a gear symbol).
 
 * **Dialog Task Options** – When hovering over a task, you will see options to Edit, Clone or Delete the selected task. There is also a menu with more options, where you can View the task, configure Dialog Settings, Manage Interruptions or Amend Behavior.  
     
@@ -57,7 +57,7 @@ The first page you see here is the list of existing Dialog Tasks. Let us now go 
   
     !!! Note
     
-            Starting with version 9.0 of the Kore.ai XO Platform, newly created tasks will use the new, Conversation-Driven Builder.
+        Starting with version 9.0 of the Kore.ai XO Platform, newly created tasks will use the new, Conversation-Driven Builder.
 
 * **Quick Start Guide** – If you are just getting started using the Kore.ai XO Platform, we recommend that you take a look at this guide, which will show you the basics of working with the Dialog Builder.
 * **Test** – This is where you can easily test your VA, by simulating an interaction between a user and your VA.
@@ -111,7 +111,7 @@ If you no longer require a specific Dialog Task, you can remove it.
 
 !!! Warning
 
-        Deleted Tasks cannot be restored.
+    Deleted Tasks cannot be restored.
 
 
 To delete a Dialog Task:
@@ -143,7 +143,7 @@ You can access them by creating a new Dialog Task or by opening an existing one.
 
 !!! Note
 
-        This guide is applicable for the new, Conversation-Driven Dialog Builder. If your tasks are using the previous version, please consider upgrading.
+    This guide is applicable for the new, Conversation-Driven Dialog Builder. If your tasks are using the previous version, please consider upgrading.
 
 You can build Dialogs by adding and configuring [nodes](../node-types/nodes-transitions/){:target="_blank"} in the required sequence as per business logic in the Dialog Builder.
 
@@ -176,11 +176,11 @@ The Dialog Builder is where you can build business logic into your conversations
 
 * **The Canvas** – This represents the entire surface on which the components of your conversation are placed.
 * **The Root Intent** – This is the first component of any conversation and will be displayed on your canvas by default, whenever you create a new Dialog Task.
-* **Assets** – These are the different points at which components of your conversation intersect. For details, please see [Node Types](../node-types/nodes-transitions/){:target="_blank"}.
-* **Nodes** - These are placeholders for creating groups of assets. Each node has one or more assets added in logical sequences.
-* **Assets Panel** – Here is where you can choose which Node Type to add and simply drag and drop it to the canvas, at the desired location. You can also add notes using the ⨁ buttons within your flow.
-* **Nodes panel** -  This tab has a list of nodes created in the current dialog.
-* **Bookmarks panel** - This tab has the list of bookmarks added to assets and nodes on the canvas.
+* **Nodes** – These are the different points at which components of your conversation intersect. For details, please see [Node Types](../node-types/nodes-transitions/){:target="_blank"}.
+* **Sequences** - These are placeholders for creating groups of nodes. Each sequence has one or more nodes added in logical sequences.
+* **Assets Panel** – Here is where you can choose which Node Type to add and simply drag and drop it to the canvas, at the desired location. You can also add nodes using the ⨁ buttons within your flow.
+* **Nodes panel** -  This tab has a list of sequences created in the current dialog.
+* **Bookmarks panel** - This tab has the list of bookmarks added to sequences and nodes on the canvas.
 * **Component Configuration Panel**– This panel is available when a component is selected, and can be minimized (as shown in the screenshot above).
 * **Display Options Panel** – This panel is only available when no component is selected and allows you to configure Display and Zoom Options, to Auto-Arrange components or to turn the map on or off. The map allows you to see the general area where you are currently located within your flow.
 

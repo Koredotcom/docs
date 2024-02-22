@@ -16,7 +16,7 @@ User Intent Nodes help you add a root intent, a follow-up or sub-intents to your
 
 !!! Note
 
-        To start a new Dialog Task from an existing one, you can use the Dialog Task nodes.
+    To start a new Dialog Task from an existing one, you can use the Dialog Task nodes.
 
 Setting up a user intent node in a dialog task involves the following steps:
 
@@ -27,10 +27,7 @@ Setting up a user intent node in a dialog task involves the following steps:
 2. Add a user intent node in the designated place. For steps on adding nodes, [please read more here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
 3. The user intent window is displayed with the **Component Properties** tab selected by default.
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
+<img src="../images/add-intent-node-img1.png" alt="Add intent node" title="Add intent node" style="border:1px solid gray;zoom=70%;">
 
 
 
@@ -41,7 +38,7 @@ Setting up a user intent node in a dialog task involves the following steps:
 
 !!! Note
 
-        The configurations you set up or edit in the Component Properties tab reflects in all the dialog tasks that use this node. These settings are the same for Intent and Sub-intent nodes.
+    The configurations you set up or edit in the Component Properties tab reflects in all the dialog tasks that use this node. These settings are the same for Intent and Sub-intent nodes.
 
 On the **Component Properties** tab, under the **General Settings**, you can modify:  
 
@@ -49,9 +46,7 @@ On the **Component Properties** tab, under the **General Settings**, you can mod
 2. The **Display Name**,
 3. The **Description**.
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image2.png "image_tooltip")
+<img src="../images/add-intent-node-img2.png" alt="Intent node Instance properties" title="Intent node Instance properties" style="border:1px solid gray;zoom=70%;">
 
 
 ### Instance Properties
@@ -66,9 +61,7 @@ You can add tags to build custom profiles of your VA’s conversations. You can 
 
 Here is an example of a dialog task that is connected as a subintent in a more complex one.
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image3.png "image_tooltip")
+<img src="../images/add-intent-node-img3-instance-properties.png" alt="Intent node instance properties" title="Intent node instance properties" style="border:1px solid gray;zoom=70%;">
 
 
 ### NLP Properties
@@ -82,9 +75,7 @@ To improve intent identification for the dialog task, add or define the followin
 3. **Bot Synonyms** or related phrases for the user intent. [Learn more](../../../../natural-language/training/fundamental-meaning/#manage-synonyms){:target="_blank"}.
 4. **Manage Context** tags as preconditions to identify the intent and define the output context to be set when this task is initiated. [Learn more](../../../../intelligence/context-management){:target="_blank"}.
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image4.gif "image_tooltip")
+<img src="../images/add-intent-node-img4-nlp-properties1.png" alt="Intent node NLP properties" title="Intent node NLP properties" style="border:1px solid gray;zoom=45%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/add-intent-node-img5-nlp-properties2.png" alt="Intent node NLP properties" title="Intent node NLP properties" style="border:1px solid gray;zoom=45%;">
 
 
 ### Connections Properties
@@ -99,6 +90,4 @@ If the Intent node you are working with does not represent the primary intent wi
 
         These conditions are applicable only for this instance and will not affect this node when being used in any other dialog.
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image5.png "image_tooltip")
+<img src="../images/add-intent-node-img6.png" alt="Intent node Connection properties" title="Intent node Connection properties" style="border:1px solid gray;zoom=70%;">

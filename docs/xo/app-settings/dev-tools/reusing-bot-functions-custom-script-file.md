@@ -52,9 +52,8 @@ Follow these steps to upload the script file to the assistant:
 <img src="../images/bot-functions-img2.png" alt="Navigate to Bot Functions" title="Navigate to Bot Functions" style="border: 1px solid gray;zoom:50%;"/>
 
 3. Under **Custom Script**, click **Import**.
-4. On the _Import Custom Script_ dialog, click **Browse** and navigate to the script file in your local machine. Click **Import**.
-5. After the import is successful, click **Done**.  
-<img src="../images/bot-functions-import-function-file.gif" alt="Import Bot Functions file" title="Import Bot Functions file" style="border: 1px solid gray;zoom:50%;"/>
+4. On the _Import Custom Script_ dialog, click **Browse** and navigate to the script file in your local machine. Click **Import**. You can also drag and drop the script file from the folder on the local machine.
+5. After the import is successful, click **Done**. 
 
 # Updating the Custom Script File
 
