@@ -27,7 +27,7 @@ Setting up a user intent node in a dialog task involves the following steps:
 2. Add a user intent node in the designated place. For steps on adding nodes, [please read more here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
 3. The user intent window is displayed with the **Component Properties** tab selected by default.
 
-<img src="../images/add-intent-node-img1.png" alt="Add intent node" title="Add intent node" style="border:1px solid gray;zoom=70%;">
+<img src="../images/add-intent-node-img1.png" alt="Add intent node" title="Add intent node" style="border:1px solid gray;zoom:70%;">
 
 
 
@@ -46,7 +46,7 @@ On the **Component Properties** tab, under the **General Settings**, you can mod
 2. The **Display Name**,
 3. The **Description**.
 
-<img src="../images/add-intent-node-img2.png" alt="Intent node Instance properties" title="Intent node Instance properties" style="border:1px solid gray;zoom=70%;">
+<img src="../images/add-intent-node-img2.png" alt="Intent node Instance properties" title="Intent node Instance properties" style="border:1px solid gray;zoom:70%;">
 
 
 ### Instance Properties
@@ -61,7 +61,7 @@ You can add tags to build custom profiles of your VA’s conversations. You can 
 
 Here is an example of a dialog task that is connected as a subintent in a more complex one.
 
-<img src="../images/add-intent-node-img3-instance-properties.png" alt="Intent node instance properties" title="Intent node instance properties" style="border:1px solid gray;zoom=70%;">
+<img src="../images/add-intent-node-img3-instance-properties.png" alt="Intent node instance properties" title="Intent node instance properties" style="border:1px solid gray;zoom:70%;">
 
 
 ### NLP Properties
@@ -75,7 +75,7 @@ To improve intent identification for the dialog task, add or define the followin
 3. **Bot Synonyms** or related phrases for the user intent. [Learn more](../../../../natural-language/training/fundamental-meaning/#manage-synonyms){:target="_blank"}.
 4. **Manage Context** tags as preconditions to identify the intent and define the output context to be set when this task is initiated. [Learn more](../../../../intelligence/context-management){:target="_blank"}.
 
-<img src="../images/add-intent-node-img4-nlp-properties1.png" alt="Intent node NLP properties" title="Intent node NLP properties" style="border:1px solid gray;zoom=45%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/add-intent-node-img5-nlp-properties2.png" alt="Intent node NLP properties" title="Intent node NLP properties" style="border:1px solid gray;zoom=45%;">
+<img src="../images/add-intent-node-img4-nlp-properties1.png" alt="Intent node NLP properties" title="Intent node NLP properties" style="border:1px solid gray;zoom:60%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/add-intent-node-img5-nlp-properties2.png" alt="Intent node NLP properties" title="Intent node NLP properties" style="border:1px solid gray;zoom:60%;">
 
 
 ### Connections Properties
@@ -90,4 +90,4 @@ If the Intent node you are working with does not represent the primary intent wi
 
         These conditions are applicable only for this instance and will not affect this node when being used in any other dialog.
 
-<img src="../images/add-intent-node-img6.png" alt="Intent node Connection properties" title="Intent node Connection properties" style="border:1px solid gray;zoom=70%;">
+<img src="../images/add-intent-node-img6.png" alt="Intent node Connection properties" title="Intent node Connection properties" style="border:1px solid gray;zoom:70%;">
