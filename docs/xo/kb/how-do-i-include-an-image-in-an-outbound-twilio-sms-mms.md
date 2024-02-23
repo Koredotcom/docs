@@ -33,6 +33,6 @@ print(message.sid)
 
 **Related Links**
 
-* <a href="../add-twilio-sms-channel" target="_blank">Adding the Twilio SMS Channel</a>
+* <a href="https://docsinternal-kore.github.io/docs/xo/channels/add-twilio-sms-channel/?h=adding+a+twilio" target="_blank">Adding the Twilio SMS Channel</a>
 * [ Send SMS and MMS Messages (Twilio Doc)](https://support.twilio.com/hc/en-us/articles/223133907-Simple-Example-for-Sending-Programmable-SMS-Text-or-Picture-Messages)
 * [Simple Example for Sending Programmable SMS Text or Picture Messages (Twilio Doc)](https://support.twilio.com/hc/en-us/articles/223133907-Simple-Example-for-Sending-Programmable-SMS-Text-or-Picture-Messages)
