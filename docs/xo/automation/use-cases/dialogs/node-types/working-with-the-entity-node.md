@@ -10,7 +10,7 @@ The Kore.ai XO Platform supports ~30 [entity types](../../entity-types/){:target
 
 !!! Note
 
-        You need to follow one entity node with several other entity nodes to collect a series of user inputs to complete a transaction, such as a username, location, amount, and due date, followed by a Webhook node to process a request to an API to complete an online transaction.
+    You need to follow one entity node with several other entity nodes to collect a series of user inputs to complete a transaction, such as a username, location, amount, and due date, followed by a Webhook node to process a request to an API to complete an online transaction.
 
 
 ## Add the Node
