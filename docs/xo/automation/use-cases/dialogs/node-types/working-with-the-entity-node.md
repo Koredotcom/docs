@@ -21,9 +21,7 @@ Setting up an entity node in a dialog task involves the following steps:
 2. Add the entity node in the designated place. For information on adding nodes, [refer here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
 3. The Entity window is displayed with the **Component Properties** tab selected by default.
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image1.png "image_tooltip")
+<img src="..images/entity-node-img1.png" alt="Entity node" title="Entity node" style="border:1px solid gray;zoom:70%;">
 
 **Entity and Multilingual Bots:** If you add a new entity to a multilingual bot, the platform adds the entity for all languages, as it follows a consistent flow definition across all languages. The flow definition includes the list of nodes, transitions between the nodes, and some essential properties of nodes like node id, node type, entity type, etc. However, language-specific properties, such as prompts, error messages, lists of synonyms, etc., must have separate values for each language.
 
@@ -37,7 +35,7 @@ The Entity window allows you to configure the General Settings, User, and Error 
 
 !!! Note
 
-        The configurations you set up or modify in this section are reflected in all other dialog tasks that use this node.
+    The configurations you set up or modify in this section are reflected in all other dialog tasks that use this node.
 
 1. On the **Component Properties** tab, under the **General Settings** section, enter a **Name** and **Display Name** for the entity node. Entity names cannot include spaces.
 2. From the **Type** drop-down list, select an entity type depending on the expected user input. For example, if you want the user to type the departure date, select **Date** from the drop-down. The platform does the basic validation based upon the Type selected.  
@@ -58,23 +56,20 @@ The **Entity Type** provides the NLP Interpreter with the expected type of data 
     3. You can also reorder the error messages. To reorder,  
         * Click the **Settings** icon on the right.
         * Enable the **Present Prompts in the Order of Retries** toggle. Once you enable this option, the handlebar icon would be visible before each error     prompt message. You can use this to re-order the messages so that they will be displayed in that sequence.  
-            <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-            ![alt_text](images/image2.png "image_tooltip")
+            
+            <img src="..images/entity-node-img2.png" alt="Entity node - Reorder error messages" title="Entity node - Reorder Error messages" style="border:1px solid gray;zoom:70%;">
 
             This image corresponds to the new Dialog Builder, you will find this feature in the legacy builder at the same location: i.e. Entity node -> Component Properties.
 
 6. You can enable the **Sensitive Entity** option to redact, replace, or mask sensitive data input at the entity node level. This setting helps you secure sensitive data input during the conversation.
-    <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image3.png "image_tooltip")
+    
+    <img src="..images/entity-node-img3.png" alt="Entity node - Sensitive entity" title="Entity node - Sensitive entity" style="border:1px solid gray;zoom:70%;">
  
     By default, this setting is disabled. Once you **Enable** the **Sensitive Entity** setting, you can do the following:
     
     1. Enter a regular expression(regex) to identify the sensitive data using the custom regex pattern. To add a regex pattern, click **+Add Pattern**. For example, add the regex `[a-zA-Z]{3}[-]\d{4}` pattern to validate user input and return a sample response as: `{"regex":"NLP-1234"}`. For more information, see [write regular expressions](https://www.geeksforgeeks.org/write-regular-expressions/){:target="_blank"} and [custom entity type](../../entity-types/#custom){:target="_blank"} articles.
-        <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-        ![alt_text](images/image4.png "image_tooltip")
+        
+        <img src="..images/entity-node-img4.png" alt="Entity node - Add Regex pattern" title="Entity node - Add Regex pattern" style="border:1px solid gray;zoom:70%;">
 
     2. Select one of the following options about how you want to display the sensitive data to unauthorized users:
         * **Redaction** – Redact the sensitive data with a unique random alphanumeric value.
@@ -84,9 +79,8 @@ The **Entity Type** provides the NLP Interpreter with the expected type of data 
     For more information, see the [Redacting Personally Identifiable Information ](../../../../../app-settings/advanced-settings/pii-data-masking){:target="_blank"} article.
 
 7. You can use **Rephrase Responses** to rewrite VA replies using AI based on conversation context and user emotions. For Entity nodes, this feature helps rephrase the responses entered under _User Prompts_ and _Error Prompts_. To see this feature in your node’s Component Properties, please first enable the [OpenAI](../../../../../app-settings/integrations/actions/open-ai/configuring-the-openai-action){:target="_blank"} or [Azure-OpenAI](../../../../../app-settings/integrations/actions/azure-open-ai/configuring-the-azure-openai-action){:target="_blank"} integration and the **Dynamic Prompt and Message Rephrasing** feature under [LLM and Generative AI](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#feature-details){:target="_blank"}. This feature is disabled by default for each node. Turn on the toggle to enable Rephrase Responses. You can configure the **number of previous user inputs** to determine how many previous user messages should be sent to OpenAI as context based on which to rephrase the response sent through the node. You can choose between 0 and 5, where 0 means that no previous input is considered, while 5 means that the previous 5 responses are sent as context.
-    <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image5.png "image_tooltip")
+    
+    <img src="..images/entity-node-img5.png" alt="Entity node - Rephrase responses" title="Entity node - Rephrase responses" style="border:1px solid gray;zoom:70%;">
 
 8. In the **Variable Namespaces** section, associate the Variable Namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the bot. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace/){:target="_blank"}.
 9. Under **Redaction of PII Data**, you can configure how the value of this entity should be presented if it is identified as PII data and is used in defining any messages or responses. You can choose to de-identify PII Data or use the original values while presenting this data to the user. 
@@ -98,7 +92,7 @@ Use the Instance Properties to determine whether to make the entity value mandat
 
 !!! Note
 
-        The settings in the Instance Properties tab are specific to the current dialog task and do not reflect in the other dialog tasks that use this entity node.
+    The settings in the Instance Properties tab are specific to the current dialog task and do not reflect in the other dialog tasks that use this entity node.
 
 1. On the Entity window, click the **Instance Properties** tab.
 2. Under the **User Input** section, select one of the following options:
@@ -173,7 +167,7 @@ Use the Instance Properties to determine whether to make the entity value mandat
 
         !!! Note
 
-                When a user input results in an ambiguous entity value and an intent, you can customize how the bot should respond by configuring the setting – **Precedence for Intents with Ambiguous Entities**. [Learn more](../../../../natural-language/nlu-configurations/engine-tuning){:target="_blank"}.
+            When a user input results in an ambiguous entity value and an intent, you can customize how the bot should respond by configuring the setting – **Precedence for Intents with Ambiguous Entities**. [Learn more](../../../../natural-language/nlu-configurations/engine-tuning){:target="_blank"}.
     
     * **Custom Tags**: This is where you can define tags to build custom profiles of your VA conversations. [Click here to learn more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
@@ -192,9 +186,7 @@ When a user is prompted for input, the following is the process performed by the
 
 * If the user exceeds the retry limit, the behavior defined for exceeding retries would be triggered. Note that if this is a child task and the behavior is set to end the dialog then the parent task would also be terminated.
 
-    <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image6.gif "image_tooltip")
+    <img src="..images/entity-instance-properties-exceed-retry-behavior.gif" alt="Entity node - Behavior on exceeding retry count" title="Entity node - Behavior on exceeding retry count" style="border:1px solid gray;zoom:70%;">
 
 
 ### NLP Properties
@@ -204,18 +196,14 @@ When a user is prompted for input, the following is the process performed by the
 3. Under the **Manage Context** section, in the **Context Output** field, define the context tags to be set in the context when this entity populates.
 4. You can select **Auto emits the entity values captured** option as part of the Context Object. ([Click here to learn more about Context Management](../../../../intelligence/context-management){:target="_blank"})
 
-    <p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image7.png "image_tooltip")
+    <img src="..images/entity-node-img6.png" alt="Entity node - NLP Properties" title="Entity node - NLP Properties" style="border:1px solid gray;zoom:70%;">
 
 
 ### IVR Properties
 
 You can use this tab to define the input mode, grammar, prompts, and call behavior parameters for this node to use in IVR Channel. You can define this at the node level. [Click here for details](../../../../../channels/IVR-integration/#configure-dialog-node-ivr-properties){:target="_blank"}.
 
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image8.gif "image_tooltip")
+<img src="..images/entity-ivr-properties.gif" alt="Entity node - IVR Properties" title="Entity node - IVR Properties" style="border:1px solid gray;zoom:70%;">
 
 
 ### Connections Properties
@@ -224,15 +212,13 @@ From the node’s **Connections** tab, you can determine which node in the dialo
 
 !!! Note
 
-        These conditions are applicable only for this instance and will not affect the node when being used in any other dialog.
+    These conditions are applicable only for this instance and will not affect the node when being used in any other dialog.
 
 To set up component connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"}.
 
 If you want to delete a condition, hover over it and click the bin icon at its top right. Keep in mind that deleted conditions cannot be restored.
 
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image9.png "image_tooltip")
+<img src="..images/entity-node-img7.png" alt="Entity node - Connection Properties" title="Entity node - Connection Properties" style="border:1px solid gray;zoom:70%;">
 
 
 #### Related Links
