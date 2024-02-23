@@ -7,6 +7,9 @@ html {
 .logo{
     height: 100%;
 }
+.dark-theme-logo{
+    display: none;
+}
 .logo-img {
     height: 100%;
     display: flex;
@@ -89,6 +92,9 @@ kr-grid[type="g2"] {
     grid-template-columns: repeat(auto-fit,minmax(12rem,1fr));
     margin: 1em 0;
 }
+kr-grid[type="g2"] br{
+    display: none;
+}
 kr-grid[type="g2"] kr-grid-item{
     padding: 10px;
     border: 2px solid transparent;
@@ -135,4 +141,27 @@ kr-grid[type="g2"] kr-grid-desc{
     kr-grid[type="g1"] kr-grid-item{
         border: 2px solid #eee;
     }
+}
+[data-md-color-scheme=slate] [data-md-component="header"]{
+    background-color: #2e303d !important;
+}
+[data-md-color-scheme=slate]  .logo-title{
+    color: #fff !important;
+}
+[data-md-color-scheme=slate] .md-header .nav-links .nav-item{
+    color: var(--md-default-fg-color--light) !important;
+}
+[data-md-color-scheme=slate] .md-search__input{
+    border-color: var(--md-default-fg-color--light);
+    background: transparent;
+    color: #fff;
+}
+[data-md-color-scheme=slate]  .md-search__input+.md-search__icon{
+    color: var(--md-default-fg-color--light) !important;
+}
+[data-md-color-scheme=slate]  .dark-theme-logo{
+    display: inline-block !important;
+}
+[data-md-color-scheme=slate] .light-theme-logo{
+ display: none !important;
 }
