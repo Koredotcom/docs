@@ -18,13 +18,11 @@ Setting up a Dynamic Intent node in a dialog task involves adding the node at th
 ## Add the Node
 
 1. Open the dialog task to which you want to add the dynamic intent node.
-2. Use the **“+”** button next to the node under which you want to add the dynamic intent node, choose **Dynamic Intent**, and then click **New Dynamic Intent**.  
+2. Use the **“+”** button next to the node after which you want to add the dynamic intent node, choose **+ New Node > Dynamic Intent**.
 
 The Dynamic Intent window is displayed with the **Component Properties** tab selected by default.  
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image1.png "image_tooltip")
+<img src="../images/dynamic-intent-node-img1.png" alt="Dynamic intent node" title="Dynamic intent node" style="border:1px solid gray;zoom:70%;">
 
 
 ## Configure the Node
@@ -33,9 +31,7 @@ The Dynamic Intent window is displayed with the **Component Properties** tab sel
 
 The settings made within this section affect this node across all instances in all dialog tasks.  
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image2.png "image_tooltip")
+<img src="../images/dynamic-intent-node-img2.png" alt="Dynamic intent node - Component properties" title="Dynamic intent node - Component properties" style="border:1px solid gray;zoom:70%;">
 
 
 #### General Settings
@@ -69,9 +65,7 @@ In this section, you can select the flow of execution to be followed in case the
 
 Under the Instance Properties tab, you can configure the instance-specific fields for this Dynamic Intent intent node. These settings are applicable only for this instance and will not affect any other instances of this node.  
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image3.png "image_tooltip")
+<img src="../images/dynamic-intent-node-img3.png" alt="Dynamic intent node - Instance properties" title="Dynamic intent node - Instance properties" style="border:1px solid gray;zoom:70%;">
 
 
 #### Entity Pre-Assignments
@@ -84,7 +78,7 @@ Value: `context.path of the value which needs to be assigned to the entity`
 
 !!! Note
 
-        This setting is ignored if the target intent is FAQ.
+    This setting is ignored if the target intent is FAQ.
 
 
 #### Entity Post-Assignments
@@ -99,8 +93,6 @@ Value: `context.path of the value which needs to be assigned to the entity`
 #### Transition Options
 
 In this section, you can select the flow to be followed once the task completes. You can choose from two options:
-
-
 
 * Initiate the target intent execution from within the current context
 * End the current task and initiate the target task
@@ -121,10 +113,8 @@ For more information on custom tags, see [Custom Meta Tags](../../../../../analy
 
 Click the Connections tab and set the transition properties to determine the node in the dialog task to execute next. You can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. See [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions/){:target="_blank"} for a detailed setup guide.  
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image4.png "image_tooltip")
+<img src="../images/dynamic-intent-node-img4.png" alt="Dynamic intent node - Connection properties" title="Dynamic intent node - Connection properties" style="border:1px solid gray;zoom:70%;">
 
 !!! Note
 
-        These conditions apply only for this instance and will not affect this node when used in any other dialog.
+    These conditions apply only for this instance and will not affect this node when used in any other dialog.

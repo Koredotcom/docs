@@ -88,6 +88,6 @@ If the Intent node you are working with does not represent the primary intent wi
 
 !!! Note
 
-        These conditions are applicable only for this instance and will not affect this node when being used in any other dialog.
+    These conditions are applicable only for this instance and will not affect this node when being used in any other dialog.
 
 <img src="../images/add-intent-node-img6.png" alt="Intent node Connection properties" title="Intent node Connection properties" style="border:1px solid gray;zoom:70%;">
