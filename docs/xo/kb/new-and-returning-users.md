@@ -10,4 +10,4 @@ Bot developers can use the `isReturningUser` flag to provide personalized user e
 
 * <a href="../context-object" target="_blank">Working with Context Object</a>
 * <a href="../event-handling" target="_blank">Configure Welcome / On-Connect Event</a>
-* <a href="../Users Trend Analysis" target="_blank">users-dashboard</a>
+* <a href="../users-dashboard" target="_blank">Users Trend Analysis</a>
