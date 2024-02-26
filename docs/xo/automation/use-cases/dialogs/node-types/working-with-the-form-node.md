@@ -14,7 +14,7 @@ To add a form node to the dialog task, follow the below steps:
 1. **Open the dialog task** to which you want to add the Form node.
 2. **Add the Form node** in the designated place. To learn how to add nodes, please [click here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}. You will be shown a list of existing Digital Forms from which you can choose the one to add to this node.  
     
-    <img src="../images/form-node-img1.gif" alt="Add Form node" title="Add Form node" style="border:1px solid gray;zoom:70%;">
+    <img src="../images/form-node-gif1.gif" alt="Add Form node" title="Add Form node" style="border:1px solid gray;zoom:70%;">
 
     !!! note
 
@@ -79,16 +79,16 @@ Steps to personalize form submission prompt for **Mobile/Web SDK**:
         a. Use Submit Prompts –  The custom message added in the prompt is shown.  
         b. Use default system response –  The following confirmation is shown – {{FormName}} Form is successfully submitted.
             
-            <img src="../images/form-node-img8-submit-prompt-selection.png" alt="Select Submit prompt for Web/Mobile SDK" title="Select Submit prompt for Web/Mobile SDK" style="border:1px solid gray;zoom:70%;">
+        <img src="../images/form-node-img8-submit-prompt-selection.png" alt="Select Submit prompt for Web/Mobile SDK" title="Select Submit prompt for Web/Mobile SDK" style="border:1px solid gray;zoom:70%;">
 
     2. In the **Form Cancellation Behavior** section, select how the VA handles the conversation when the user cancels the form:  
         a. Discard the task and trigger End of Task Event – This is the default option.  
             
-            <img src="../images/form-node-img9-form-cancellation-behavior.png" alt="Form cancellation behavior - End of task" title="Form cancellation behavior - End of task" style="border:1px solid gray;zoom=70%;">
+        <img src="../images/form-node-img9-form-cancellation-behavior.png" alt="Form cancellation behavior - End of task" title="Form cancellation behavior - End of task" style="border:1px solid gray;zoom:70%;">
  
         b. Continue with this task and transition to this node – In the **Select Node** drop-down list, you can select any node present in the current dialog task.
             
-            <img src="../images/form-node-img10-form-cancellation-behavior-continue-task.png" alt="Form cancellation behavior - Continue task" title="Form cancellation behavior - Continue task" style="border:1px solid gray;zoom=70%;">
+        <img src="../images/form-node-img10-form-cancellation-behavior-continue-task.png" alt="Form cancellation behavior - Continue task" title="Form cancellation behavior - Continue task" style="border:1px solid gray;zoom:70%;">
 
     !!! Note
     
@@ -109,7 +109,7 @@ To configure this tab, please follow these steps:
 1. On the Form window, click the **Instance Properties** tab.
 2. Under the **Custom Tags** section, add tags to build custom profiles of your conversations. [Click here for more](../../../../../analytics/automations/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
-    <img src="../images/form-node-img11-instance-properties.png" alt="Form node - Instance properties" title="Form node - Instance properties" style="border:1px solid gray;zoom=70%;">
+    <img src="../images/form-node-img11-instance-properties.png" alt="Form node - Instance properties" title="Form node - Instance properties" style="border:1px solid gray;zoom:70%;">
 
 
 
@@ -123,4 +123,4 @@ From the node’s **Connections** tab, you can determine the node in the dialog 
 
 For details on how to work with connection conditions, please see[ Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions/){:target="_blank"}.
 
-<img src="../images/form-node-img12-connection-properties.png" alt="Form node - Connection properties" title="Form node - Connection properties" style="border:1px solid gray;zoom=70%;">
+<img src="../images/form-node-img12-connection-properties.png" alt="Form node - Connection properties" title="Form node - Connection properties" style="border:1px solid gray;zoom:70%;">
