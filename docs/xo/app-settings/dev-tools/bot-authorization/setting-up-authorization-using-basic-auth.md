@@ -22,23 +22,22 @@ You need to have an account with the external application which you want to auth
 To define Basic Authorization for your assistant, follow these steps:
 
 1. Open the VA for which you want to configure the Basic Authorization profile.
-2. Select the **Build** tab from the top menu.
-3. From the left menus, click **App Settings**, then select **Dev Tools > Authorization Profiles**.
-4. Click **New** to open the **New Authorization Mechanism** dialog.  
+2. From the left menus, click **App Settings**, then select **Dev Tools > Authorization Profiles**.
+3. Click **New** to open the **New Authorization Mechanism** dialog.  
 <img src="../images/basic-auth-img2.png" alt="New Auth mechanism - Add" title="New Auth mechanism - Add" style="border: 1px solid gray;zoom:50%;"/>
 
-5. In the **Authorization Type** drop-down list, select **Basic Auth**.
-6. In the **Name** field, enter the name for your **Basic Auth** type.  
+4. In the **Authorization Type** drop-down list, select **Basic Auth**.
+5. In the **Name** field, enter the name for your **Basic Auth** type.  
 <img src="../images/basic-auth-img3.png" alt="Auth Name and Type" title="Auth Name and Type" style="border: 1px solid gray;zoom:50%;"/>
 
-7. Enter the **Description** for the profile and select the API endpoint **Method**. You can select either **GET** or **POST** method.  
+6. Enter the **Description** for the profile and select the API endpoint **Method**. You can select either **GET** or **POST** method.  
 <img src="../images/basic-auth-img4.png" alt="Description and Endpoint Method" title="Description and Endpoint Method" style="border: 1px solid gray;zoom:50%;"/>
 
     !!! Note
         
             By default, the GET method is selected for the existing bots.
 
-8. Click **Save**.
+7. Click **Save**.
 
 
 ## Defining Tenancy

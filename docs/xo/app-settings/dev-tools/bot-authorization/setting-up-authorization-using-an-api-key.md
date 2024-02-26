@@ -10,12 +10,11 @@ To use the API Key **Authorization Type**, you must first register an account wi
 To define Authorization for your assistant, using an API Key, follow these steps:
 
 1. Open the assistant for which you want to configure an Authorization profile.
-2. Select the **Build** tab from the top menu.
-3. From the left menus, click **Configurations > Authorization Profile**
-4. Click **Add** to open the **New Authorization Mechanism** dialog. 
-<img src="../images/api-key-img1.png" alt="Auth profiles - Add" title="Auth profiles - Add" style="border: 1px solid gray;zoom:80%;"/>
+2. From the left menus, click **App Settings**, then select **Dev Tools > Authorization Profiles**.
+3. Click **New** to open the **New Authorization Mechanism** dialog. 
+<img src="../images/basic-auth-img2.png" alt="Auth profiles - Add" title="Auth profiles - Add" style="border: 1px solid gray;zoom:80%;"/>
 
-5. In the **Authorization Type** drop-down list, select **Api Key**.  
+4. In the **Authorization Type** drop-down list, select **Api Key**.  
 <img src="../images/api-key-img2.png" alt="Auth type - API Key" title="Auth type - API Key" style="border: 1px solid gray;zoom:80%;"/>
 
 ## Defining Tenancy

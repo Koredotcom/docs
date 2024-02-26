@@ -13,7 +13,7 @@ OAuth v1 authorization works as follows:
 2. The XO Platform redirects the user to a login dialog at the web application.
 3. The user authorizes the request token, associating it with their account.
 4. The web application redirects the user back to the XO Platform.  
-<img src="../images/oauth-v1-img1.png" alt="Auth profile - Add" title="Auth profile - Add" style="border: 1px solid gray;zoom:80%;"/>
+<img src="../images/basic-auth-img2.png" alt="Auth profile - Add" title="Auth profile - Add" style="border: 1px solid gray;zoom:80%;"/>
 
 5. The XO Platform exchanges the request token for an access token.
 6. The access token allows the XO Platform to access a protected resource at the provider, on behalf of the user.  
@@ -25,11 +25,10 @@ OAuth v1 authorization works as follows:
 To define authorization for your assistant, follow these steps:
 
 1. Open the assistant for which you want to configure an Authorization profile.
-2. Select the **Build** tab from the top menu.
-3. From the left menus, click **Configurations -> Authorization Profiles**.
-4. Click **Add** to open the **New Authorization Mechanism** dialog.
-5. In the **Authorization Type** drop-down list, select **oAuth v1**.
-6. The following illustration is an example of the **oAuth v1** authorization type fields that you must define to enable a customized authorization for your assistant.
+2. From the left menus, click **App Settings**, then select **Dev Tools > Authorization Profiles**.
+3. Click **New** to open the **New Authorization Mechanism** dialog.
+4. In the **Authorization Type** drop-down list, select **oAuth v1**.
+5. The following illustration is an example of the **oAuth v1** authorization type fields that you must define to enable a customized authorization for your assistant.
 
 
 ## Defining Configuration Fields

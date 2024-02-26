@@ -26,9 +26,7 @@ Setting up an dialog node in a dialog task involves the following steps:
 1. Open the dialog task that you want to add the node to..
 2. Add a **Dialog** node in the designated place. [Read more about adding nodes.](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image1.png "image_tooltip")
+<img src="../images/dialog-task-node-img1.png" alt="Dialog node" title="Dialog node" style="border:1px solid gray;zoom:70%;">
 
 
 ## Configure the Node
@@ -45,9 +43,7 @@ On the **Component Properties** tab, under the **General Settings**, you can mod
 2. The Display Name,
 3. The **Description**.
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image2.png "image_tooltip")
+<img src="../images/dialog-task-node-img2.png" alt="Dialog node - Component properties" title="Dialog node - Component properties" style="border:1px solid gray;zoom:70%;">
 
 
 ### NLP Properties
@@ -61,9 +57,7 @@ To improve intent identification for the dialog task, add or define the followin
 3. **Bot Synonyms** or related phrases for the user intent. [Learn more](../../../../natural-language/training/fundamental-meaning/#manage-synonyms){:target="_blank"}.
 4. **Manage Context** tags as preconditions to identify the intent and define the output context to be set when this task is initiated. [Learn more](../../../../intelligence/context-management){:target="_blank"}.
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image3.gif "image_tooltip")
+<img src="../images/dialog-task-node-img3-nlp-properties1.png" alt="Dialog node - NLP properties" title="Dialog node - NLP properties" style="border:1px solid gray;zoom:50%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/dialog-task-node-img4-nlp-properties2.png" alt="Dialog node - NLP properties" title="Dialog node - NLP properties" style="border:1px solid gray;zoom:50%;">
 
 
 ### Connections Properties
@@ -72,13 +66,11 @@ Click the **Connections** tab and set the transition properties to determine the
 
 !!! Note
 
-        The conditions configured here are applicable only for this instance and will not affect the node when being used in any other dialog.
+    The conditions configured here are applicable only for this instance and will not affect the node when being used in any other dialog.
 
 To set up component connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections.](../../node-connections/nodes-conditions/){:target="_blank"}
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image4.png "image_tooltip")
+<img src="../images/dialog-task-node-img5.png" alt="Dialog node - Connection properties" title="Dialog node - Connection properties" style="border:1px solid gray;zoom:70%;">
 
 
 ### Instance Properties
@@ -91,13 +83,11 @@ In the **Entity Post-Assignments** section, there is a list of entities availabl
 
 !!! Important Notes
 
-        This option is available only if the Transition Options is set to return to the current node on task completion.  
-                Currently, there is a limitation when using URL entity types. URL values with http as opposed to https or without the www suffix will not work. If you want to reset the values, you need to use the keyword "null", spaces would be ignored by the platform.  
-                        Many dialog transitions without user interference can lead to infinite dialog looping. To prevent such a situation, the Virtual Assistant displays the error, 'Sorry something went wrong and I cannot complete your request now,' after 25 such transitions, as shown in the following screenshot. This error is displayed when the dialog nodes are connected either in a loop or in a linear manner.
+    * This option is available only if the Transition Options is set to return to the current node on task completion.  
+    * Currently, there is a limitation when using URL entity types. URL values with http as opposed to https or without the www suffix will not work. If you want to reset the values, you need to use the keyword "null", spaces would be ignored by the platform.  
+    * Many dialog transitions without user interference can lead to infinite dialog looping. To prevent such a situation, the Virtual Assistant displays the error, 'Sorry something went wrong and I cannot complete your request now,' after 25 such transitions, as shown in the following screenshot. This error is displayed when the dialog nodes are connected either in a loop or in a linear manner.
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image5.png "image_tooltip")
+<img src="../images/dialog-task-node-img6.png" alt="Dialog node - Instance properties" title="Dialog node - Instance properties" style="border:1px solid gray;zoom:70%;">
 
 In the **Transition Options** section, you can define the flow to be followed once the task completes. You can choose from two options:
 
@@ -115,9 +105,7 @@ Click **Advanced Controls** to set up the below-listed options:
     2. **User –** Define custom tags to be added to the user’s profile information.
     3. **Session –** Define custom tags to be added to the current conversation session.
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image6.gif "image_tooltip")
+<img src="../images/dialog-task-node-img7.png" alt="Dialog node - Instance properties" title="Dialog node - Instance properties" style="border:1px solid gray;zoom:50%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/dialog-task-node-img8.png" alt="Dialog node - Instance properties" title="Dialog node - Instance properties" style="border:1px solid gray;zoom:50%;">
 
 
 #### Entity Pre-Assignments

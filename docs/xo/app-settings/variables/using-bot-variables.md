@@ -38,8 +38,8 @@ You can use the encrypted environment variable values in the following modules i
 
 
 
-* **Channel Configuration**: While configuring channels under **Deploy** > **Channels**, you can use encrypted/regular environment variable values for all the fields including access token, access key, app ID, URLs, etc.
-* **Languages**: Under **Build** > **Configurations** > **Languages** > **Translation Configurations**, while configuring the translation engine, you can use the regular/encrypted environment variable value (type `{{env.environment variable name}}`) to set up the encrypted variable name as the access key as follows:
+* **Channel Configuration**: While configuring channels under **Channels & Flows > Channels**, you can use encrypted/regular environment variable values for all the fields including access token, access key, app ID, URLs, etc.
+* **Languages**: Under **App Settings > Language Management > Translation Configurations**, while configuring the translation engine, you can use the regular/encrypted environment variable value (type `{{env.environment variable name}}`) to set up the encrypted variable name as the access key as follows:
     * The **Access Key** field for Google Translator or Microsoft Translator.  
     <img src="../images/env-and-content-variables-img1.png" alt="Translation Configurations - Access Key" title="Translation Configurations - Access Key" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -70,7 +70,7 @@ Enabling the **secure variable** setting after defining an Environment (Bot) Var
 
 
 1. Open the VA for which you want to add the variables.
-2. Navigate to **Build** > **Configurations** > **Environment Variables** on the left menu for Environment Variables or **Content Variables** to add Content Variables.
+2. Navigate to **App Settings > Variables** on the left menu, and select **Environment Variables** tab to add Environment variables, or **Content Variables** tab to add Content Variables.
 3. In the **Add Variable** panel, provide the following details:
     * **Variable Name**: Enter the environment variable name. For example, user credentials.
     * **Value**: Enter the environment variable value that is encrypted.
@@ -85,7 +85,7 @@ Enabling the **secure variable** setting after defining an Environment (Bot) Var
 <img src="../images/env-and-content-variables-img5.png" alt="Save the variable" title="Save the variable" style="border: 1px solid gray;zoom:50%;"/>
 
 
-The environment variable and its encrypted value appear in the list.  
+The variable and its encrypted value appear in the list.  
 <img src="../images/env-and-content-variables-img6.png" alt="Environment variable and its encrypted value appear" title="Environment variable and its encrypted value appear" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -96,7 +96,7 @@ To add language-specific values for content variables, you first need to switch 
 <img src="../images/env-and-content-variables-img7.png" alt="Select language" title="Select language" style="border: 1px solid gray;zoom:50%;"/>
  
 
-After switching the language, go to **Build > Configurations > Content Variables** page and click the **edit** icon next to the relevant variable. Replace the text in the **Value** field in the enabled language.
+After switching the language, go to **App Settings > Variables > Content Variables** page and click the **edit** icon next to the relevant variable. Replace the text in the **Value** field in the enabled language.
 
 
 ### Using Environment Variables
@@ -141,15 +141,15 @@ When the bot reaches this node as a part of the user interaction, the user promp
 
 You can import and export bot variables between bots.
 
-1. On any of the Bot Variables page accessible from **Build > Configurations -> (Environment/Content) Variables**,
+1. On any of the Bot Variables page accessible from **App Settings > Variables > (Environment/Content) Variables**,
 2. Click the **ellipses next to Add Variables**
 3. _To Import_: Select **Import** to import variables from a JSON or CSV file
     1. Since the import will replace the existing variables, you are advised to take a backup of the same.
     2. After taking a Backup, **Proceed** with the Import
     3. Select a JSON or CSV file to import (see below for the file format)
 
-4. _To Export_: From **Export** select the preferred format for the export file:
-    4. Bot variables are exported in the form of a JSON, CSV file based upon your selection.
+4. _To Export_: Select either **Export CSV** or **Export JSON** as the preferred format for the export file:
+    4. Bot variables are exported in the form of a JSON or CSV file based upon your selection.
     5. This file includes both environment and content variables.
 
 <img src="../images/env-and-content-variables-img14.png" alt="Bot variable import/export" title="Bot variable import/export" style="border: 1px solid gray;zoom:50%;"/>

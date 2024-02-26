@@ -4,7 +4,7 @@ Collections enable you to store multiple value sets for Environment Variables so
 
 !!! note
 
-        This feature was enabled in v8.1 of the platform and is available only for the <span style="text-decoration:underline;">on-prem installation.</span>
+    This feature was enabled in v8.1 of the platform and is available only for the <span style="text-decoration:underline;">on-prem installation.</span>
 
 Environment variables are a primary type of bot variable where you define a key-value pair and use the variable across the bot. As the variables are declared globally, they can be used at any point in the bot configuration. These can be used to manage the bot variables with environment-specific values. For example, you might have _authCode_ for authenticating a service that your bot uses. This authCode may have different values in the _test, uat,_ and _prod_ environments. The bot can be exported and imported based on the environment, and the values need to be modified at one place in the variable configuration file. [Refer here for more on Bot Variables](../using-bot-variables/#environment-variables){:target="_blank"}.
 
@@ -15,8 +15,8 @@ Using collections, you can define multiple value sets for these variables and de
 
 Following are the steps in creating Collections
 
-1. From the left navigation menu, select **Settings -> Config Settings**.
-2. Click the **Environment Variables** option.
+1. From the left navigation menu, select **App Settings > Variables**.
+2. Click the **Environment Variables** tab.
 3. On the top left click the more/ellipses to access the **Manage Collections**.  
 <img src="../images/collections-img1.png" alt="Environment Variables - Manage Collections" title="Environment Variables - Manage Collections" style="border: 1px solid gray;"/> 
 

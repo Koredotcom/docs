@@ -3,13 +3,13 @@
 The following sections describe how you can test and debug your Virtual Assistant to validate the working of External NLU.
 
 
-## Talk to Bot
+## Test
 
 After completing the steps in [Adapter Configuration](../external-nlu-adapters/#adapter-configuration){:target="_blank"} and [enabling the API](../dialogflow-engine/#enable-the-dialogflow-api){:target="_blank"}, to check if the intent identification is done by External NLU adapter or not, you can follow these steps:
 
 
 
-1. Go to your VA and click **Talk to Bot**.
+1. Go to your VA and click **Test**.
 2. Enter a user utterance which matches the intent entered in the Dialogflow Essentials page.
 3. In the **Debug Log** panel of the user conversation, you can see a message that, **intent identified using External NLU is initiated**.  
 <img src="../images/external-nlu-test-and-debug-img1.png" alt="Debug Log - intent identified using External NLU is initiated" title="Debug Log - intent identified using External NLU is initiated" style="border: 1px solid gray;zoom:50%;"/>
@@ -65,7 +65,8 @@ The test case result for True positive, False Positive, True Negative, and False
 For example, irrespective of whether the expected intent is detected by the External NLU or Kore.ai engine, the test result is TP. If the net result is a wrong intent identified, the test result should be FP. In case of no intent detected by any of the engines, it is classified as TN, when no intent was expected but some intent was detected, then it is FN.
 
 !!! note
-        There is no common base to compare the scores of all the engines, hence scores sent by the external NLU are not considered.
+    
+    There is no common base to compare the scores of all the engines, hence scores sent by the external NLU are not considered.
 
 
 For any intent detected by the external NLU, it should be considered that the thresholds have been met and in the ‘**Matched Intent Score**’ column, this is indicated as _ExtNLU (without any score against it)_ in place of ML, FM, or KG scores. This can be viewed in the downloaded CSV under NLU of Batch Testing. To know more, see [Batch Testing](../../../../automation/testing/regression-testing/batch-testing){:target="_blank"}.
@@ -80,7 +81,8 @@ If the ExtNLU returns multiple intents, the thresholds met for all those intents
 In Health and Monitoring go to **Test Cases —> Detailed Analysis** to see the Intents and Entities identified by External NLU, without any scores. The Traits engine is not dependent on the external NLU.
 
 !!! note
-        If the external NLU is enabled, some of the recommendations may not be relevant because they are for the Kore.ai NLU engines. The recommendations are displayed based on the training done on the Kore.ai Platform.
+    
+    If the external NLU is enabled, some of the recommendations may not be relevant because they are for the Kore.ai NLU engines. The recommendations are displayed based on the training done on the Kore.ai Platform.
 
 <img src="../images/external-nlu-test-and-debug-img10.png" alt="Intents and Entities identified by External NLU" title="Intents and Entities identified by External NLU" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -119,7 +121,7 @@ This list describes the conversation behavior while using external NLU adapter:
 
     !!! note
 
-            Information like the response messages and fulfillment from the external engine is ignored.
+        Information like the response messages and fulfillment from the external engine is ignored.
 
 
 * When external NLU is enabled, in the interruption handling only one behavior, “**Switch to a new task without any notification to the user and discard the current task**”, is supported. To know more information, see [Interruption Management Settings](../../../../automation/intelligence/conversation-management/manage-interruptions){:target="_blank"}.
@@ -127,7 +129,7 @@ This list describes the conversation behavior while using external NLU adapter:
 
     !!! note
 
-            The Intent and entity mapping work based on a case insensitive comparison of the names defined on the two platforms.
+        The Intent and entity mapping work based on a case insensitive comparison of the names defined on the two platforms.
 
 * For the entity identification to work properly, it is recommended to define the entity nodes in the same sequence on the XO Platform and the external engine.
 * If the external NLU fails to detect the entity, then as a fallback, an attempt is made to detect the same on the Kore.ai NLP engine.

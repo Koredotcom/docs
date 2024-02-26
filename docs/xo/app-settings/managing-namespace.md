@@ -9,9 +9,9 @@ Using **Namespaces** you can categorize variables and map them to various compon
 
 # Enabling Namespaces
 
-You can enable namespaces by going to **Build > Configurations > General Settings.** Turn on the toggle, then confirm your choice to enable the feature.
+You can enable namespaces by going to **App Settings > App Profile** Turn on the toggle, then confirm your choice to enable the feature.
 
-<img src="../images/managing-namespace-img1.png" alt="Enable namespace" title="Enable namespace" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/managing-namespace-img1.png" alt="Enable namespace" title="Enable namespace" style="border: 1px solid gray;zoom:70%;"/>
 
 
 # Implementation
@@ -43,18 +43,18 @@ Once Variable Namespaces are mapped, the following steps are implemented by the 
 
 When configuring a variable (environment or content), you have an option to **Add Namespace**. Use this option to create a namespace.
 
-<img src="../images/managing-namespace-img2.png" alt="Create namespace" title="Create namespace" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/managing-namespace-img2.png" alt="Create namespace" title="Create namespace" style="border: 1px solid gray;zoom:70%;"/>
 
 
 # Editing
 
 You also have an option **to Manage Namespaces** from under **Build > Configurations > Environment/Content Variables**.
 
-<img src="../images/managing-namespace-img3.png" alt="Manage namespace" title="Manage namespace" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/managing-namespace-img3.png" alt="Manage namespace" title="Manage namespace" style="border: 1px solid gray;zoom:70%;"/>
 
 Use this option to **view, edit,** or **delete** namespaces. Deleting a namespace that is mapped to any component is restricted. You need to unmap the namespace from all associated components before deletion. As mentioned earlier, you cannot delete the default namespace.
 
-<img src="../images/managing-namespace-img4.png" alt="Namespace actions" title="Namespace actions" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/managing-namespace-img4.png" alt="Namespace actions" title="Namespace actions" style="border: 1px solid gray;zoom:70%;"/>
 
 
 ## Variable Mapping
@@ -63,40 +63,40 @@ Once created, the namespace needs to be mapped to variables, tasks, and other co
 
 At the time of variable creation (environment and content), you can map the namespace. By default, the variables would be assigned to the **default** namespace. A variable can be mapped to multiple namespaces. You can change the mapping later by editing the variable definition.
 
-<img src="../images/managing-namespace-img5.png" alt="Variable mapping" title="Variable mapping" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/managing-namespace-img5.png" alt="Variable mapping" title="Variable mapping" style="border: 1px solid gray;zoom:70%;"/>
 
 
 ## Components
 
 All the components have a **Manage Variable Namespaces** action item which can be used to map the component with a particular namespace. Below is a list of places where you can find the **Manage Variable Namespaces** option:
 
-<img src="../images/managing-namespace-img6.png" alt="Manage variable namespace" title="EManage variable namespace" style="border: 1px solid gray;zoom:50%;"/> 
+<img src="../images/managing-namespace-img6.png" alt="Manage variable namespace" title="EManage variable namespace" style="border: 1px solid gray;zoom:70%;"/> 
 
 
 ### Nodes within Dialog Tasks
 
 You can find the option under the Component Properties section of the node. You can choose to use the Variable Namespace associated with the task or customize it for the node. 
 
-<img src="../images/managing-namespace-img7.png" alt="Variable namespace option in Component properties" title="Variable namespace option in Component properties" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/managing-namespace-img7.png" alt="Variable namespace option in Component properties" title="Variable namespace option in Component properties" style="border: 1px solid gray;zoom:70%;"/>
 
 
 ### Knowledge Graph
 
 **Conversation Skills > Knowledge Graph > More Options** menu.
 
-<img src="../images/managing-namespace-img8.png" alt="Knowledge graph" title="Knowledge graph" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/managing-namespace-img8.png" alt="Knowledge graph" title="Knowledge graph" style="border: 1px solid gray;zoom:70%;"/>
 
 
 ### Small Talk
 
 **Conversation Skills > Small Talk > Group Settings** icon.
 
-<img src="../images/managing-namespace-img9.png" alt="Small talk" title="Small talk" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/managing-namespace-img9.png" alt="Small talk" title="Small talk" style="border: 1px solid gray;zoom:70%;"/>
 
 
 ### Event Handlers
 
 **Intelligence > Event > More Options** menu.
 
-<img src="../images/managing-namespace-img10.png" alt="Event handlers" title="Event handlers" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/managing-namespace-img10.png" alt="Event handlers" title="Event handlers" style="border: 1px solid gray;zoom:70%;"/>
 
