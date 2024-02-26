@@ -14,13 +14,13 @@ Setting up a confirmation node in a dialog task involves the following steps:
 1. Open the dialog task to which you want to add the Confirmation node.
 2. Add a Confirmation node in the designated place. For steps related to adding nodes, [Learn more](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
 
-     !!! note
+    !!! note
 
         You can add a confirmation node within an existing sequence or outside any existing sequence. If you add it outside, a new, untitled sequence will automatically get created containing the new confirmation node.
 
 3. By default, the Confirmation window is displayed in the **Component Properties** tab.
     
-    <img src="../images/confirmation-node-img1-add-node" alt="Add Confirmation node" title="Add Confirmation node" style="border:1px solid gray;zoom:70%;">
+    <img src="../images/confirmation-node-img1-add-node.png" alt="Add Confirmation node" title="Add Confirmation node" style="border:1px solid gray;zoom:70%;">
 
 
 
@@ -56,7 +56,7 @@ To configure the component properties, follow the below steps:
 
 4. Add context-specific **Synonyms** for _Yes_ and _No_ within the Confirmation node to suit the dialog’s context. The Platform can identify the emojis in user utterance and consider them for confirmation/rejection, for example, a thumbs-up emoji will be taken to mean confirmation from the user.
     
-    <img src="../images/confirmation-node-img3-synonyms.png" alt="Confirmation node - Synonyms" title="Confirmation node - Synonyms" style="border:1px solid gray;zoom=70%;">
+    <img src="../images/confirmation-node-img3-synonyms.png" alt="Confirmation node - Synonyms" title="Confirmation node - Synonyms" style="border:1px solid gray;zoom:70%;">
  
     !!! Note
     
@@ -89,7 +89,7 @@ For the **Traditional Chinese** language, the Platform provides the following ad
 
 These synonyms can be configured on the confirmation node under **Component Properties > Synonyms** while building the **Dialog Task**.  
 
-<img src="../images/confirmation-node-img5-associate-synonyms" alt="Confirmation node - Synonyms" title="Confirmation node - Synonyms" style="border:1px solid gray;zoom:70%;">
+<img src="../images/confirmation-node-img5-associate-synonyms.png" alt="Confirmation node - Synonyms" title="Confirmation node - Synonyms" style="border:1px solid gray;zoom:70%;">
 
 After detecting these additional synonyms, the **Confirmation** node extracts “_yes_” or “_no_” from the user utterance.
 
