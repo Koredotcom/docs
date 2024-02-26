@@ -30,6 +30,11 @@ Setting up a Message node in a dialog task involves the following steps:
 
 1. Open the dialog task to add the Message node.
 2. Add a message node in the designated place. For steps in adding nodes, read the [Using the Dialog Builder](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"} article.
+
+    !!! note
+
+        You can add a confirmation node within an existing sequence or outside any existing sequence. If you add it outside, a new, untitled sequence will automatically get created containing the new confirmation node.
+
 3. The Message window is displayed with the **Component Properties** tab selected by default.
 
 
@@ -49,13 +54,11 @@ Setting up a Message node in a dialog task involves the following steps:
 
     !!! Note
     
-        By default, this feature is disabled  for each node. Turn on the toggle to enable Rephrase Responses.
+        By default, this feature is disabled for each node. Turn on the toggle to enable Rephrase Responses.
 
 You can configure the **number of previous user inputs** to determine how many previous user messages should be sent to OpenAI as context based on which to rephrase the response sent through the node. You can choose between 0 and 5, where 0 means that no previous input is considered, while 5 means that the previous 5 responses are sent as context.
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image1.png "image_tooltip")
+<img src="../images/message-node-img1-rephrase-response.png" alt="Message node - Rephrase Responses" title="Message node - Rephrase Responses" style="border:1px solid gray;zoom:70%;">
 
 
 ### Generate Message as Report Link (Optional)
@@ -65,11 +68,10 @@ The Message node allows you to generate links to view the information in an HTML
 To generate a report link, follow these steps:
 
 1. On the **Component Properties** tab, under the **Report URL** section, click **Generate Report Link**.
-    <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image2.png "image_tooltip")
+    
+    <img src="../images/message-node-img2-generate-report.png" alt="Message node - Generate report" title="Message node - Generate report" style="border:1px solid gray;zoom=70%;">
  
-    This image shows  the new dialog builder, you will find this feature in legacy builder at the same location i.e. **Message node -> Component Properties**.
+    This image shows the new dialog builder, you will find this feature in legacy builder at the same location i.e. **Message node - Component Properties**.
 
 2. On the Generate Report dialog box, enter the following values:
     1. **Link Title** – The link text displayed in the bot channel. For example, _View Shopping Cart_.

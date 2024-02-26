@@ -68,7 +68,7 @@ To configure the component properties, follow the below steps:
 
     !!! note
 
-        This section will be visible only if you enabe Variable Namespace in [App Profile](../../../../../app-settings/app-profile/).
+        This section will be visible only if you enable Variable Namespace in [App Profile](../../../../../app-settings/app-profile/).
 
 
 #### Additional Synonyms for Traditional Chinese Language
