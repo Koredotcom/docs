@@ -333,12 +333,15 @@ nav:
         - Directory: answers/content-sources/directory.md 
         - Connectors: answers/content-sources/connectors.md 
       - Extraction Strategy: answers/content-extraction/extraction.md
-      - Workbench: answers/workbench.md
+      - Workbench: 
+        - Introduction: answers/workbench/introduction.md
+        - Field Mapping Stage: answers/workbench/field-mapping.md
+        - Custom Script: answers/workbench/custom-script.md
+        - Exclude Document: answers/workbench/exclude-document.md
       - Chunk Browser: answers/chunk-browser.md
       - Index Configuration: answers/index-configuration.md
     - Configuration:
       - Answer Configuration: answers/answer-configuration.md
-      - Business Rules: answers/business-rules.md     
   - Contact Center:
     - Overview: contactcenter/about-contact-center.md 
     - Agent and Supervisors: 

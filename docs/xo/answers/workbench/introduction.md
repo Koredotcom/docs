@@ -1,16 +1,21 @@
 # Workbench
 
-Workbench is a tool that allows you to process the ingested content. Workbench processes data through a series of steps called stages. You can use Workbench to update content, add metadata, clean data to exclude certain pages, etc. By improving the quality of your content, you can enhance the accuracy of answers and thereby, the search experience. For example, if you do want confidential information to appear in the answers, you can set up an exclude document stage that excludes chunks containing the word ‘Confidential’ in the title or the body of the chunk.
+Workbench is a tool that allows you to process the ingested content. Workbench processes data through a series of steps called stages. You can use Workbench to update content, add metadata, clean data to exclude certain pages, etc. By improving the quality of your content, you can enhance the accuracy of answers and thereby, the search experience. For example, if you do not want confidential information to appear in the answers, you can set up an exclude document stage that excludes chunks containing the word ‘Confidential’ in the title or the body of the chunk.
 
-Workbench offers stages to perform different types of operations sequentially. Each stage performs a specific set of data transformations or enrichment before passing the content onto the next stage in Workbench. The output of one stage is given to the next stage as input. For example, if there are three stages, the input to stage 3 is the cumulative effect of processing in stage one followed by the processing in stage 2 on the extracted data. 
+Workbench offers stages to perform different types of operations sequentially. Each stage performs a specific set of data transformations or enrichment before passing the content onto the next stage in Workbench. The output of one stage is given to the next stage as input. For example, if there are three stages, the input to stage 3 is the cumulative effect of processing in stage one followed by the processing in stage 2 on the extracted data.
+
+## Features
+
+* **Pipeline Processing**: The Workbench employs a series of stages that process the ingested chunks sequentially. Each stage in the pipeline executes specific data transformations.
+* **Custom Transformation**: Each stage in the pipeline allows customization of data transformations as per your specific business needs. 
+* **Simulation Capabilities**: Workbench has an inbuilt simulator that allows you to simulate and test the behaviour of each stage individually or the cumulative impact of stages on the chunks.
+* **Stage Sequencing**: Workbench gives you the flexibility to sequence data operations per your needs. This enables you to design chunk processing efficiently.
 
 Currently, Workbench supports three stages.
 
 * **Field Mapping**: This stage can map fields in a document to a target field. The mapping is performed on the fields that satisfy the conditions defined for the mapping.
 * **Custom Script**: This stage can run a custom script on the input data.
 * **Exclude Document**: This stage can be used to exclude some documents from being indexed. The documents/pages that satisfy the conditions defined in this stage are ignored.
-
-Refer to the sections below for more details on configuring each stage.
 
 ## Adding a new stage to the Workbench
 
