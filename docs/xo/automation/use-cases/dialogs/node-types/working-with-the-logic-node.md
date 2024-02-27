@@ -10,18 +10,18 @@ This article shows you how to add and configure the Logic node.
 
 ## Add the Node
 
-Logic Nodes can only be added as part of a Bot Action node. Therefore, before you can add a Logic Node, you need to add a Bot Action node. [Read more about Bot Action Nodes](../bot-action-node/){:target="_blank"}.
-
-Keeping this in mind, the setup of a logic node in a dialog task involves the following steps:
+The setup of a logic node in a dialog task involves the following steps:
 
 1. Open the dialog task to which you want to add the Logic node.
-2. Add and/or expand a **Bot Action** Node.
-3. Add the Logic node in the designated place. For steps on adding nodes, [refer here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
-4. The Logic node is displayed with the **Component Properties** tab selected by default.
+2. Add the Logic node in the designated place. For steps on adding nodes, [refer here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
 
-    <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    !!! note
 
-    ![alt_text](images/image1.gif "image_tooltip")
+        You can add a logic node within an existing sequence or outside any existing sequence. If you add it outside, a new, untitled sequence will automatically get created containing the new logic node.
+
+3. The Logic node is displayed with the **Component Properties** tab selected by default.
+
+    <img src="../images/logic-node-img1.png" alt="Logic node - Add node" title="Logic node - Add node" style="border:1px solid gray;zoom:70%;">
 
 
 ## Configure the Node
@@ -39,9 +39,7 @@ To configure the Component Properties tab, please follow the steps below:
 2. In the **Variable Namespaces** section (v8.0), associate the variable namespaces to execute this node and its transitions. This option is visible only when the variable namespace is enabled for the assistant. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
 3. Use the **Manage Context Variables** section to set the context variables by entering a key-value pair. Use the full path of the variable in the _key_ field i.e. <code><em>context.BotUserSession.&lt;variable_name>.</em></code>
 
-    <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image2.png "image_tooltip")
+    <img src="../images/logic-node-img2-component-properties.png" alt="Logic node - Component Properties" title="Logic node - Component Properties" style="border:1px solid gray;zoom:70%;">
 
 
 ### Instance Properties
@@ -55,9 +53,7 @@ Use the Instance Properties to define any user tags that you want to set.
 1. On the Logic node properties panel, click the **Instance Properties** tab.
 2. Under the **Custom Tags** section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
-    <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image3.png "image_tooltip")
+    <img src="../images/logic-node-img3-instance-properties.png" alt="Logic node - Instance Properties" title="Logic node - Instance Properties" style="border:1px solid gray;zoom:70%;">
 
 
 ### Connections Properties
@@ -77,6 +73,4 @@ For both connection types you can write conditional statements based on the valu
 
 To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions/){:target="_blank"}
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image4.png "image_tooltip")
+<img src="../images/logic-node-img4-connection-properties.png" alt="Logic node - Connection Properties" title="Logic node - Connection Properties" style="border:1px solid gray;zoom:70%;">

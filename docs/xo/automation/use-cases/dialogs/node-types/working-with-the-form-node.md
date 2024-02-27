@@ -18,7 +18,7 @@ To add a form node to the dialog task, follow the below steps:
 
     !!! note
 
-        You can add a form node within an existing sequence or outside any existing sequence. If you add it outside, a new, untitled sequence will automatically get created with the newly added form as the topmost node.
+        You can add a form node within an existing sequence or outside any existing sequence. If you add it outside, a new, untitled sequence will automatically get created containing the new form node.
 
 3. **Choose the Form Experience**: If you are offering your Virtual Assistant on multiple channels, you can choose whether to enable the Digital Form Experience as the default experience on all these channels, or use a combination of Digital Form Experience and Conversation Experience.
     1. **Only UI Form**: Users will be presented the Digital Form Experience on all the channels that are enabled for the assistant that you are working with. This will create a Form Node and automatically open the Component Properties panel, where you can continue configuring the node.
