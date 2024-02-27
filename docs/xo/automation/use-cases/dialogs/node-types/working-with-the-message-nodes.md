@@ -33,7 +33,7 @@ Setting up a Message node in a dialog task involves the following steps:
 
     !!! note
 
-        You can add a confirmation node within an existing sequence or outside any existing sequence. If you add it outside, a new, untitled sequence will automatically get created containing the new confirmation node.
+        You can add a message node within an existing sequence or outside any existing sequence. If you add it outside, a new, untitled sequence will automatically get created containing the new message node.
 
 3. The Message window is displayed with the **Component Properties** tab selected by default.
 
