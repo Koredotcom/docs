@@ -39,7 +39,7 @@ Analytics APIs<br><a href="../find-intent/" target="_blank">Find Intent</a>, <a 
 <br>
 1800 per hour
    </td>
-   <td>Bot Definition Status APIs<br><a href="../bot-import-status/" target="_blank">Bot Import Status</a>, <a href="../bot-export-status/" target="_blank">Bot Export – Status</a>, <a href="../bot-publish-status/" target="_blank">Bot Publish Status</a>, <a href="../batch-test-execution-status/" target="_blank">Batch Test Execution Status</a>, <a href="../get-conversation-test-suite-creation-status/" target="_blank">Conversation Test Suite Creation Status</a>, and <a href="../get-test-suite-execution-status/" target="_blank">Conversation Test Suite Execution Status</a>
+   <td>Bot Definition Status APIs<br><a href="../bot-import-status/" target="_blank">Bot Import Status</a>, <a href="../bot-export-status/" target="_blank">Bot Export Status</a>, <a href="../bot-publish-status/" target="_blank">Bot Publish Status</a>, <a href="../batch-test-execution-status/" target="_blank">Batch Test Execution Status</a>, <a href="../get-conversation-test-suite-creation-status/" target="_blank">Conversation Test Suite Creation Status</a>, and <a href="../get-test-suite-execution-status/" target="_blank">Conversation Test Suite Execution Status</a>
 <br><br>
 NLP Training Status APIs<br><a href="../ml-utterances-import-status/" target="_blank">ML Utterances Import Status</a>, <a href="../ml-utterances-train-status/" target="_blank">ML Utterance Train Status</a>, <a href="../ml-utterances-export-status/" target="_blank">ML Utterances Export Status</a>, and <a href="../faq-training-status/" target="_blank">FAQ Training Status</a>
    </td>
