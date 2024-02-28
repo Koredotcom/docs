@@ -11,111 +11,72 @@ The requests are checked against both the 60-second and 1-hour limits. An applic
 
 <table>
   <tr>
-   <td><strong>API Type</strong>
+   <td><strong>ENFORCEMENT LEVEL</strong>
    </td>
-   <td><strong>Period (Seconds)</strong>
+   <td><strong>RATE LIMIT</strong>
    </td>
-   <td><strong>Rate Limit </strong>
-   </td>
-   <td><strong>Enforcement Level</strong>
+   <td><strong>API LIST</strong>
    </td>
   </tr>
   <tr>
-   <td rowspan="2" >Runtime APIs<br>
-(Proactive <a href="https://developer.kore.ai/docs/bots/api-guide/proactive-notifications-api/" target="_blank">Notification</a> and <a href="https://developer.kore.ai/docs/bots/api-guide/proactive-notification-status-api/" target="_blank">Status</a> APIs)
-   </td>
-   <td>60
-   </td>
-   <td>600
-   </td>
    <td>bot
    </td>
-  </tr>
-  <tr>
-   <td>3600
+   <td>60 per minute
+<p>
+1800 per hour
    </td>
-   <td>18000
-   </td>
-   <td>bot
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="2" >Design Time APIs<br>
-(<a href="https://developer.kore.ai/docs/bots/api-guide/api-list/#Bot_Definition_APIs">Bot Definition</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/api-list/#NLP_Training_APIs" target="_blank">NLP Training</a>, and <a href="https://developer.kore.ai/docs/bots/api-guide/api-list/#Analytics_APIs" target="_blank">Analytics APIs</a>)  
-   </td>
-   <td>60
-   </td>
-   <td>60
-   </td>
-   <td>bot
+   <td>Bot Definition APIs<br> (<a href="../upload-file/">Upload File</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/import-bot-as-a-new-bot-api/">Import Bot as a New Bot</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/import-bot-into-an-existing-bot-api/">Import Bot into an Existing Bot</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/import-bot-functions-api/">Import Bot Functions</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/install-sample-bot-api/">Install Sample Bot</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/bot-export-api/">Bot Export</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/channel-enablement-api/">Enable Channel</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/add-and-enable-a-new-language-api/">Add and Enable a New Language</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/enable-an-existing-language-api/">Enable an existing Language</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/disable-an-existing-language-api/">Disable an existing Language</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/language-updation-api/">Update a Language Configuration</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/publish-bot-api/">Publish Bot</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/bot-variables-import/">Bot Variables Import</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/batch-test-execution-api/">Batch Test Execution</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/get-batch-test-suites-api/">Get Batch Test Suites</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/export-batch-test-suite-api/">Export Batch Test Suite</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/import-batch-test-suite-api/">Import Batch Test Suite</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/delete-batch-test-suite-api/">Delete Batch Test Suite</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/delete-batch-test-suite-execution-api/">Delete Batch Test Suite Execution</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/create-a-test-suite-api/">Create (Import) a Conversation Test Suite</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/execute-a-test-suite-api/">Conversation Test Suite Execution</a>, and <a href="https://developer.kore.ai/docs/bots/api-guide/delete-a-test-suite-api/">Delete Conversation Test Suite</a>)
+<p>
+NLP Training APIs (<a href="https://developer.kore.ai/docs/bots/api-guide/ml-utterances-import-api/">ML Utterances Import</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/ml-training-api/">ML Utterance Train</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/ml-utterances-export-api/">ML Utterances Export</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/faq-training-api/">FAQ Training</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/extract-from-file-or-url-kg/">Extraction from file or URL</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/get-extracts-history-kg/">Get Extractions History</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/get-extraction-questions-kg/">Get Extraction Question</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/get-knowledgetasks-kg/">Get KnowledgeTasks</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/add-questions-from-extract-kg/">Add Questions from Extraction</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/get-faqs-kg/">Get FAQs</a>, and <a href="https://developer.kore.ai/docs/bots/api-guide/update-nlp-configurations/">Update NLP Configurations</a>)
+<p>
+Analytics APIs (<a href="https://developer.kore.ai/docs/bots/api-guide/find-intent-api/">Find Intent</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/conversation-history-api/">Conversation History</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/conversation-summary-api/">Conversation Summary</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/feedback-survey-api/">Feedback Analytics</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/debug-logs-api/">Debug Logs</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/get-changelogs-api/">Get ChangeLogs</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/sessions-api/">Sessions History</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/get-widget/">Get Dashboard Widget Data</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/get-analytics-api/">Get Analytics</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/user-engagement-trend-api/">User Engagement Trend</a>, and <a href="https://developer.kore.ai/docs/bots/api-guide/conversation-details-summary-api/">Conversation Details and Summary</a>)
    </td>
   </tr>
   <tr>
-   <td>3600
+   <td>request_id
    </td>
-   <td>1800
+   <td>60 per minute
+<p>
+1800 per hour
    </td>
-   <td>bot
+   <td>Bot Definition Status APIs (<a href="https://developer.kore.ai/docs/bots/api-guide/bot-import-status-api/">Bot Import Status</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/bot-export-status-api/">Bot Export – Status</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/bot-publish-status-api/">Bot Publish Status</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/batch-test-execution-status-api/">Batch Test Execution Status</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/get-the-creation-status-of-a-test-suite-api/">Conversation Test Suite Creation Status</a>, and <a href="https://developer.kore.ai/docs/bots/api-guide/get-the-execution-status-and-summary-of-a-test-suite-api/">Conversation Test Suite Execution Status</a>)
+<p>
+NLP Training Status APIs (<a href="https://developer.kore.ai/docs/bots/api-guide/ml-utterances-import-status-api/">ML Utterances Import Status</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/ml-training-status-api/">ML Utterance Train Status</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/ml-utterances-export-status-api/">ML Utterances Export Status</a>, and <a href="https://developer.kore.ai/docs/bots/api-guide/faq-training-status-api/">FAQ Training Status</a>)
    </td>
   </tr>
   <tr>
-   <td rowspan="2" >Design Time Admin APIs<br>
-(<a href="https://developer.kore.ai/docs/bots/api-guide/api-list/#Admin_APIs" target="_blank">Admin APIs</a>)
-   </td>
-   <td>60
-   </td>
-   <td>60
-   </td>
    <td>account
    </td>
-  </tr>
-  <tr>
-   <td>3600
+   <td>60 per minute
+<p>
+1800 per hour
    </td>
-   <td>1800
-   </td>
-   <td>account
+   <td>Admin APIs (<a href="https://developer.kore.ai/docs/bots/api-guide/get-bots-api/">Get Bots</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/import-roles-api/">Import Roles</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/get-roles-api/">Get Roles</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/get-user-roles-details-api/">Get User Roles Details</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/get-groups-api/">Get Groups</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/export-roles-api/">Export Roles</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/assign-bt-roles-api/">Assign BT Roles</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/assign-admin-roles-api/">Assign Admin Roles</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/update-user-access-api/">Update User Access</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/create-user-api/">Create Users</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/get-user-api/">Get Users Information</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/update-user-api/">Update User</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/delete-user-api/">Remove Users from Account</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/delete-customer-data-api/">Delete Customer Data</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/delete-customer-data-status-api/">Delete Customer Data Status API</a>, and <a href="https://developer.kore.ai/docs/bots/api-guide/get-audit-logs-api/">Get Admin Console Audit Logs</a>)
    </td>
   </tr>
   <tr>
-   <td rowspan="2" >Runtime Table APIs<br>
-(<a href="https://developer.kore.ai/docs/bots/api-guide/api-list/#Data_Data_Table_Access_APIs" target="_blank">Data Access APIs</a>)
+   <td>bot
    </td>
-   <td>60
+   <td>600 per minute
+<p>
+18000 per hour
    </td>
-   <td>600
-   </td>
-   <td>account + table
-   </td>
-  </tr>
-  <tr>
-   <td>3600
-   </td>
-   <td>18000
-   </td>
-   <td>account + table
+   <td>Bot Definition Notification APIs (<a href="https://developer.kore.ai/docs/bots/api-guide/proactive-notifications-api/">Proactive Notification</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/proactive-notification-status-api/">Proactive Notification Status</a>)
    </td>
   </tr>
   <tr>
-   <td rowspan="2" >Design Time Status APIs<br>
-(All design time APIs returning status)
+   <td>account+table
    </td>
-   <td>60
+   <td>600 per minute
+<p>
+18000 per hour
    </td>
-   <td>60
-   </td>
-   <td>requestid
-   </td>
-  </tr>
-  <tr>
-   <td>3600
-   </td>
-   <td>1800
-   </td>
-   <td>requestid
+   <td>Data access APIs (<a href="https://developer.kore.ai/docs/bots/api-guide/data-insert-api/">Insert Data</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/data-insert-bulk-api/">Insert Bulk Data</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/data-update-api/">Update Data</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/data-delete-api/">Delete Data</a>, <a href="https://developer.kore.ai/docs/bots/api-guide/query-data-table-api/">Get Table Data</a>, and <a href="https://developer.kore.ai/docs/bots/api-guide/query-data-view-api/">Get View Data</a>)
    </td>
   </tr>
 </table>
+
+
 
 
 

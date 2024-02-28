@@ -107,9 +107,70 @@ You can either scroll through the entire list, or find the required template usi
 
 ## Dialog Task Builder Overview
 
-Before moving on, here is an overview of the Dialog Task Builder. For details, please see [Navigating the Dialog Task Builder](../navigating-dialog-tasks/){:target="_blank"}.
+Before moving on, here is an overview of the Dialog Task Builder. For details on navigating dialog tasks, please see [Navigating the Dialog Task Builder](../navigating-dialog-tasks/){:target="_blank"}.
 
-<img src="../images/navigate-dialog-builder-canvas.png" alt="Dialog task builder" title="Dialog task builder" style="border:1px solid gray; zoon:60%;">
+<img src="images/navigate-dialog-builder.png" alt="Dialog builder" title="Dialog builder" style="border:1px solid gray;zoom:70%;">
+
+The Dialog Builder interface consists of:
+
+ * [Tool Set](#the-tool-set)
+ * [Index Panel](#the-index-panel)
+ * [Canvas](#the-canvas)
+ * [Node Panel](#the-node-panel)
+
+
+### The Tool Set
+
+<img src="../images/dialog-top-menu.png" alt="Tool Set" title="Tool Set" style="border:1px solid gray; zoom:60%;">
+
+The Dialog Design process occurs in the Conversation Designer. This comes with its specific top menu, where you can access the following features:
+
+* **Exit the Dialog Task Builder** and go back to the Dialog Tasks List - Click to exit the dialog builder and go back to the list of dialog tasks within the current app (Automation > Use Cases > Dialogs)
+* Add **Bookmarks** -  You can bookmark frequently visited or crucial content in the canvas with relevant information. They help you to navigate to the bookmarked content without having to search or browse extensively.
+* Add **Text** - You can add text on any place on the canvas to keep a note of the logic being developed in a sequence or group of sequences, or other relevant nodes about the logic building.
+* Add **Comment** - In a comment you can tag other users to enhance communication through feedback, suggestions, and discussions on specific elements of the design.
+* **Find** - You can find nodes, variables, sequences etc. Clicking this icon would open a window where you can perform a universal search, you will get a list of all the nodes, variables, sequences, API's etc grouped by type that contain the search string.
+
+    <img src="../images/tool-set-search.gif" alt="Search" title="Search" style="border:1px solid gray;zoom:70%;">
+
+* **Switch between Dialog Tasks** – Use this dropdown if you need to switch a different dialog task within the same app. You don’t have to go back to the list of dialogs to do so.
+* **Test** -  You can chat with the app in real-time to test recognition, performance, and flow as if it were a live session.
+* **View Warnings** - You can see a list of errors and warnings that might have occured during the conversation design, and do the needful to rectify them.
+* **Visual Settings** - You can manage the zoom percentage and other visual settings like Fit to Screen, Show or Hide Mini map and Zoom to Last Edited. This setting is represented on the Tool Set by The Zoom percentage.
+* **More options**, where you can access Dialog Settings, Manage Interruptions, Manage Ammend behavior and View Comments.
+* **Users in the dialog** - You can see bubbles containing names of all the users of the current dialog, like Bot Owner, Bot Developer, Conversation Designer etc.
+
+### The Index Panel
+
+<img src="../images/using-dialog-builder-index-panel.png" alt="Index Panel" title="Index Panel" style="border:1px solid gray; zoom:60%;">
+
+The Index panel consists of:
+
+* [Bookmarks](#bookmark) tab
+* [Assets](#assets) tab
+* [Nodes](#nodes) tab
+
+### Bookmark
+
+Bookmarks offer the ability to organize and reference important information. You can bookmark frequently visited or crucial content in the canvas with relevant information. They help you to navigate to the bookmarked content without having to search or browse extensively. Here's how the ability to add bookmarks can be advantageous:
+
+1. Navigation Efficiency:
+    * Bookmarks provide a quick and efficient way to navigate through a complex dialog structure.
+    * Users can jump directly to specific dialogs of interest without the need for extensive scrolling or searching.
+
+2. Time Savings:
+    * The feature saves time by eliminating the need for users to manually search for specific dialogs within a complex structure.
+    * Users can efficiently locate and revisit dialogs, reducing the overall time spent on navigation.
+    * Users have greater control over their navigation, contributing to a more intuitive and efficient design process.
+
+In summary, bookmarks offer a practical solution to the challenges associated with navigating complex dialog designs. They empower users to personalize their experience and focus on key components within the context of intricate dialog structures.
+
+**_[Video - Add Bookmark]_**
+
+The inclusion of a dedicated Bookmark tab in the left-hand side panel further enhances the usability of the bookmark feature. The Bookmark tab on the left-hand side panel not only provides a structured and organized way to manage bookmarks but also contributes to a user-friendly interface, making it easier to navigate and interact with the bookmarked dialogs.
+
+<img src="../images/using-dialog-builder-img22-bookmark-tab.png" alt="Bookmark tab" title="Bookmark tab" style="border:1px solid gray; zoon:60%;">
+
 
 ## Sequences
 
@@ -220,10 +281,13 @@ Adding text to a canvas as notes is a common practice in various design and coll
 1. Introduction to Modules:
     * Use text on the canvas to introduce the purpose and scope of different modules in your project.
     * Provide a brief overview of what each module is designed to achieve.
-2. Flow Logic:
+2. Focus on Key Dialogs:
+    * Users can make a note of frequently referenced dialogs.
+    * This helps in maintaining focus on critical sections of the conversation flow, enhancing productivity during the design and review process.
+3. Flow Logic:
     * Use text annotations to describe the flow logic between different modules or components.
     * Highlight key decision points, inputs, and outputs within the overall flow.
-3. Notes for Future Reference:
+4. Notes for Future Reference:
     * Include notes that provide insights or considerations for future work or modifications.
     * Document any design decisions, constraints, or important considerations.
 
@@ -242,40 +306,14 @@ Tagging a user in a comment is a way to draw their attention to a specific part 
 
 If you're working with a team of designers or collaborators, you can use comments to provide specific instructions or guidelines for designing certain elements. You can also use text on the canvas to communicate ideas, suggestions, or questions directly within the design space.
 
-**_[Video - Add Comment]_**
-
-
-### Bookmark
-
-Bookmarks offer the ability to organize and reference important information. You can bookmark frequently visited or crucial content in the canvas with relevant information. They help you to navigate to the bookmarked content without having to search or browse extensively. Here's how the ability to add bookmarks can be advantageous:
-
-1. Navigation Efficiency:
-    * Bookmarks provide a quick and efficient way to navigate through a complex dialog structure.
-    * Users can jump directly to specific dialogs of interest without the need for extensive scrolling or searching.
-2. Focus on Key Dialogs:
-    * Users can mark and bookmark key or frequently referenced dialogs.
-    * This helps in maintaining focus on critical sections of the conversation flow, enhancing productivity during the design and review process.
-3. Project Organization:
-    * Bookmarks contribute to better project organization by allowing users to create a personalized structure for quick access.
-    * Users can categorize and group dialogs based on their relevance or importance, facilitating a more streamlined workflow.
 4. Collaborative Work:
     * In collaborative environments, bookmarks can serve as visual indicators of significant points in the dialog flow.
     * This aids communication among team members by creating a shared understanding of which dialogs are crucial or require attention.
-5. Time Savings:
-    * The feature saves time by eliminating the need for users to manually search for specific dialogs within a complex structure.
-    * Users can efficiently locate and revisit dialogs, reducing the overall time spent on navigation.
-6. Enhanced User Experience:
-    * Adding bookmarks enhances the overall user experience by providing a user-friendly and customizable way to interact with the dialog design interface.
-    * Users have greater control over their navigation, contributing to a more intuitive and efficient design process. 
+
+**_[Video - Add Comment]_**
 
 
-In summary, bookmarks offer a practical solution to the challenges associated with navigating complex dialog designs. They empower users to personalize their experience, focus on key components, and streamline collaboration within the context of intricate dialog structures.
 
-**_[Video - Add Bookmark]_**
-
-The inclusion of a dedicated Bookmark tab in the left-hand side panel further enhances the usability of the bookmark feature. The Bookmark tab on the left-hand side panel not only provides a structured and organized way to manage bookmarks but also contributes to a user-friendly interface, making it easier to navigate and interact with the bookmarked dialogs.
-
-<img src="../images/using-dialog-builder-img22-bookmark-tab.png" alt="Bookmark tab" title="Bookmark tab" style="border:1px solid gray; zoon:60%;">
 
 
 ## Node Groups (Planned for Phase 2)

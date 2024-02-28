@@ -58,7 +58,7 @@ To configure the Component Properties tab, please follow the steps below:
 
 9. Add the sample response(s) you want the Service Node to return.
 
-    <img src="../images/service-node-img4-sample-response.png" alt="Service node - Sample response" title="Service node - Sample response" style="border:1px solid gray;zoom:70%;">
+    <img src="../images/service-node-img4-add-sample-response.png" alt="Service node - Sample response" title="Service node - Sample response" style="border:1px solid gray;zoom:70%;">
 
     Depending on the Service Type selected, refer to one of the following sections in this topic:
 

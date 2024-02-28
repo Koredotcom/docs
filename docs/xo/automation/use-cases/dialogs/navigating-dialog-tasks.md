@@ -135,7 +135,7 @@ Please see the articles linked below for information on:
 * [Manage Ammend Behavior.](../../../natural-language/nlu-configurations/amend-entities){:target="_blank"}
 
 
-## Conversation Design, Logic Building & Training
+## Dialog Builder - Conversation Design and Logic Building
 
 The Dialog Builder is where you can design, build, train and test the conversations that your VA can have with your users.
 
@@ -147,24 +147,29 @@ You can access them by creating a new Dialog Task or by opening an existing one.
 
 You can build Dialogs by adding and configuring [nodes](../node-types/nodes-transitions/){:target="_blank"} in the required sequence as per business logic in the Dialog Builder.
 
+The Dialog Builder interface consists of:
 
-### Design the Conversation Flow
+ * [Tool Set](../using-the-dialog-builder-tool/#the-tool-set)
+ * [Index Panel](../using-the-dialog-builder-tool/#the-index-panel)
+ * [Canvas](../using-the-dialog-builder-tool/#the-canvas)
+ * [Node Panel](../using-the-dialog-builder-tool/#the-node-panel)
 
+ <img src="images/navigate-dialog-builder.png" alt="Dialog builder" title="Dialog builder" style="border:1px solid gray;zoom:70%;">
 
-#### The Top Menu
+### The Tool Set
 
-<img src="../images/dialog-top-menu.png" alt="Top menu" title="Top menu" style="border:1px solid gray; zoom:60%;">
+<img src="../images/dialog-top-menu.png" alt="Tool Set" title="Tool Set" style="border:1px solid gray; zoom:60%;">
 
 
 The Dialog Design process occurs in the Conversation Designer. This comes with its specific top menu, where you can access the following features:
 
-* **Exit the Dialog Task Builder and go back to the Dialog Tasks List**.
+* **Exit the Dialog Task Builder** and go back to the Dialog Tasks List.
 * **Add Bookmarks, Text and Comments**
 * **Find** nodes, variables, sequesnces etc
 * **Switch between Dialog Tasks** – Use this dropdown if you need to work on a different task. You don’t have to go back to the list to do so.
 * **Test** to chat with the assistant in real-time to test recognition, performance, and flow as if it were a live session.
 * **View Warnings**
-* **Manage Zoom percentage and other visual settings**
+* **Manage Zoom percentage** and other visual settings
 * **More options**, where you can access Dialog Settings, Manage Interruptions, Manage Ammend behavior and view comments.
 
 
