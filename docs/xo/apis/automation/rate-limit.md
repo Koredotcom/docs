@@ -21,21 +21,21 @@ The requests are checked against both the 60-second and 1-hour limits. An applic
   <tr>
    <td>bot
    </td>
-   <td>60 per minute
+   <td>60 per minute<br>
 <br>
 1800 per hour
    </td>
-   <td>Bot Definition APIs<br> <a href="../upload-file/" target="_blank">Upload File</a>, <a href="../import-bot-as-new-bot/" target="_blank">Import Bot as a New Bot</a>, <a href="../import-bot-into-an-existing-bot/" target="_blank">Import Bot into an Existing Bot</a>,<a href="../import-bot-functions/" target="_blank">Import Bot Functions</a>, <a href="../install-sample-bot/" target="_blank">Install Sample Bot</a>, <a href="../bot-export/" target="_blank">Bot Export</a>, <a href="../channel-enablement/" target="_blank">Enable Channel</a>,<a href="../add-enable-new-language/" target="_blank">Add and Enable a New Language</a>, <a href="../enable-existing-language/" target="_blank">Enable an existing Language</a>, <a href="../disable-existing-language/" target="_blank">Disable an existing Language</a>, <a href="../language-updation/" target="_blank">Update a Language Configuration</a>, <a href="../publish-bot/" target="_blank">Publish Bot</a>, <a href="../bot-variables-import/" target="_blank">Bot Variables Import</a>,<a href="../batch-test-execution/" target="_blank">Batch Test Execution</a>, <a href="../get-batch-test-suites/" target="_blank">Get Batch Test Suites</a>, <a href="../export-batch-test-suite/" target="_blank">Export Batch Test Suite</a>, <a href="../import-batch-test-suite/" target="_blank">ImportBatch Test Suite</a>, <a href="../delete-batch-test-suite/" target="_blank">Delete Batch Test Suite</a>, <a href="../delete-batch-test-suite-execution/" target="_blank">Delete Batch Test Suite Execution</a>,<a href="../create-conversation-test-suite/" target="_blank">Create (Import) a Conversation Test Suite</a>, <a href="../execute-test-suite/" target="_blank">Conversation Test Suite Execution</a>,and <a href="../delete-a-test-suite/" target="_blank">Delete Conversation Test Suite</a>
+   <td>Bot Definition APIs<br> <a href="../upload-file/" target="_blank">Upload File</a>, <a href="../import-bot-as-new-bot/" target="_blank">Import Bot as a New Bot</a>, <a href="../import-bot-into-an-existing-bot/" target="_blank">Import Bot into an Existing Bot</a>,<a href="../import-bot-functions/" target="_blank">Import Bot Functions</a>, <a href="../install-sample-bot/" target="_blank">Install Sample Bot</a>, <a href="../bot-export/" target="_blank">Bot Export</a>, <a href="../channel-enablement/" target="_blank">Enable Channel</a>,<a href="../add-enable-new-language/" target="_blank">Add and Enable a New Language</a>, <a href="../enable-existing-language/" target="_blank">Enable an existing Language</a>, <a href="../disable-existing-language/" target="_blank">Disable an existing Language</a>, <a href="../language-updation/" target="_blank">Update a Language Configuration</a>, <a href="../publish-bot/" target="_blank">Publish Bot</a>, <a href="../bot-variables-import/" target="_blank">Bot Variables Import</a>,<a href="../batch-test-execution/" target="_blank">Batch Test Execution</a>, <a href="../get-batch-test-suites/" target="_blank">Get Batch Test Suites</a>, <a href="../export-batch-test-suite/" target="_blank">Export Batch Test Suite</a>, <a href="../import-batch-test-suite/" target="_blank">ImportBatch Test Suite</a>, <a href="../delete-batch-test-suite/" target="_blank">Delete Batch Test Suite</a>, <a href="../delete-batch-test-suite-execution/" target="_blank">Delete Batch Test Suite Execution</a>,<a href="../create-conversation-test-suite/" target="_blank">Create (Import) a Conversation Test Suite</a>, <a href="../execute-test-suite/" target="_blank">Conversation Test Suite Execution</a>,and <a href="../delete-test-suite/" target="_blank">Delete Conversation Test Suite</a>
 <br><br>
-NLP Training APIs<br><a href="../ml-utterances-import/" target="_blank">ML Utterances Import</a>, <a href="../ml-training/" target="_blank">ML Utterance Train</a>, <a href="../ml-utterances-export/" target="_blank">ML Utterances Export</a>, <a href="../faq-training/" target="_blank">FAQ Training</a>, <a href="../extract-from-file-or-url-kg/">Extraction from file or URL</a>, <a href="../get-extracts-history-kg/">Get Extractions History</a>, <a href="../get-extraction-questions-kg/">Get Extraction Question</a>, <a href="../get-knowledgetasks-kg/">Get KnowledgeTasks</a>, <a href="../add-questions-from-extract-kg/">Add Questions from Extraction</a>, <a href="../get-faqs-kg/">Get FAQs</a>, and <a href="../update-nlp-configurations/">Update NLP Configurations</a>
+NLP Training APIs<br><a href="..import-ml-utterances/" target="_blank">ML Utterances Import</a>, <a href="../ml-utterances-train/" target="_blank">ML Utterance Train</a>, <a href="../ml-utterances-export/" target="_blank">ML Utterances Export</a>, <a href="../faq-training/" target="_blank">FAQ Training</a>, <a href="../extract-kg-from-file-url/" target="_blank">Extraction from file or URL</a>, <a href="../get-kg-extracts-history/" target="_blank">Get Extractions History</a>, <a href="../get-kg-extraction-questions/" target="_blank">Get Extraction Question</a>, <a href="../get-knowledge-tasks/" target="_blank">Get Knowledge Tasks</a>, <a href="../add-questions-to-knowledgegraph/" target="_blank">Add Questions from Extraction</a>, <a href="../get-faqs-from-knowledge-task/" target="_blank">Get FAQs</a>, and <a href="../update-nlp-configurations/" target="_blank">Update NLP Configurations</a>
 <br><br>
-Analytics APIs<br><a href="../find-intent/" target="_blank">Find Intent</a>, <a href="../conversation-history/" target="_blank">Conversation History</a>, <a href="../conversation-summary/" target="_blank">Conversation Summary</a>, <a href="../feedback-survey/" target="_blank">Feedback Analytics</a>, <a href="../debug-logs/" target="_blank">Debug Logs</a>, <a href="../get-changelogs/" target="_blank">Get ChangeLogs</a>, <a href="../sessions/" target="_blank">Sessions History</a>, <a href="../get-widget/">Get Dashboard Widget Data</a>, <a href="../get-analytics/" target="_blank">Get Analytics</a>, <a href="../user-engagement-trend/" target="_blank">User Engagement Trend</a>, and <a href="../conversation-details-summary/" target="_blank">Conversation Details and Summary</a>
+Analytics APIs<br><a href="../find-intent/" target="_blank">Find Intent</a>, <a href="../conversation-history/" target="_blank">Conversation History</a>, <a href="../conversation-summary/" target="_blank">Conversation Summary</a>, <a href="../fetch-feedback-survey-scores/" target="_blank">Feedback Analytics</a>, <a href="../fetch-debug-logs/" target="_blank">Debug Logs</a>, <a href="../get-change-logs/" target="_blank">Get ChangeLogs</a>, <a href="../get-sessions-history/" target="_blank">Sessions History</a>, <a href="../get-dashboard-widget-data/" target="_blank">Get Dashboard Widget Data</a>, <a href="../get-analytics/" target="_blank">Get Analytics</a>, <a href="../user-engagement-trend/" target="_blank">User Engagement Trend</a>, and <a href="../conversation-details-and-summary/" target="_blank">Conversation Details and Summary</a>
    </td>
   </tr>
   <tr>
    <td>request_id
    </td>
-   <td>60 per minute
+   <td>60 per minute<br>
 <br>
 1800 per hour
    </td>
@@ -47,7 +47,7 @@ NLP Training Status APIs<br><a href="../ml-utterances-import-status/" target="_b
   <tr>
    <td>account
    </td>
-   <td>60 per minute
+   <td>60 per minute<br>
 <br>
 1800 per hour
    </td>
@@ -57,7 +57,7 @@ NLP Training Status APIs<br><a href="../ml-utterances-import-status/" target="_b
   <tr>
    <td>bot
    </td>
-   <td>600 per minute
+   <td>600 per minute<br>
 <br>
 18000 per hour
    </td>
@@ -67,7 +67,7 @@ NLP Training Status APIs<br><a href="../ml-utterances-import-status/" target="_b
   <tr>
    <td>account+table
    </td>
-   <td>600 per minute
+   <td>600 per minute<br>
 <br>
 18000 per hour
    </td>
@@ -95,9 +95,9 @@ NLP Training Status APIs<br><a href="../ml-utterances-import-status/" target="_b
 
 
 
-1. **12:00 PM - 12:01 PM**: The application sends 600 requests in the first minute. It has now hit the 60-second limit but is well within the 1-hour limit. The 61st-second request is evaluated against both windows. It's allowed if the total requests in the last 60 seconds are under 600 and the total requests in the last 3600 seconds are under 18,000.
+1. **12:00 PM - 12:01 PM**: The application sends 600 requests in the first minute<br>. It has now hit the 60-second limit but is well within the 1-hour limit. The 61st-second request is evaluated against both windows. It's allowed if the total requests in the last 60 seconds are under 600 and the total requests in the last 3600 seconds are under 18,000.
 2. **12:01 PM - 12:30 PM**: Each new request is checked against both limits. The requests are allowed if they don't push the total over 600 in any 60-second window or over 18,000 in the ongoing 1-hour window.
-3. **At 12:30 PM**: If the application continues to send requests at the same rate, hitting the 60-second limit each minute. By 12:30 PM, the application had sent a total of 18,000 requests (600 requests/minute multiplied by 30 minutes), thus exceeding the 1-hour limit before the hour was up. Additional requests are now denied, even if they fall within the 600 requests/minute limit because the 1-hour limit has been breached.
+3. **At 12:30 PM**: If the application continues to send requests at the same rate, hitting the 60-second limit each minute<br>. By 12:30 PM, the application had sent a total of 18,000 requests (600 requests/minute<br> multiplied by 30 minute<br>s), thus exceeding the 1-hour limit before the hour was up. Additional requests are now denied, even if they fall within the 600 requests/minute<br> limit because the 1-hour limit has been breached.
 
 
 ## Best Practices
