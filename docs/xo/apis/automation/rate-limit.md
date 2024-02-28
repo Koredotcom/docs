@@ -22,56 +22,56 @@ The requests are checked against both the 60-second and 1-hour limits. An applic
    <td>bot
    </td>
    <td>60 per minute
-<p>
+<br>
 1800 per hour
    </td>
-   <td>Bot Definition APIs<br> (<a href="../upload-file/" target="_blank">Upload File</a>, <a href="../import-bot-as-new-bot/" target="_blank">Import Bot as a New Bot</a>, <a href="../import-bot-into-an-existing-bot/" target="_blank">Import Bot into an Existing Bot</a>,<br><a href="../import-bot-functions/" target="_blank">Import Bot Functions</a>, <a href="../install-sample-bot/" target="_blank">Install Sample Bot</a>, <a href="../bot-export/" target="_blank">Bot Export</a>, <a href="../channel-enablement/" target="_blank">Enable Channel</a>, <a href="../add-and-enable-a-new-language/" target="_blank">Add and Enable a New Language</a>, <a href="../enable-an-existing-language/" target="_blank">Enable an existing Language</a>, <a href="../disable-an-existing-language/" target="_blank">Disable an existing Language</a>, <a href="../language-updation/" target="_blank">Update a Language Configuration</a>, <a href="../publish-bot/" target="_blank">Publish Bot</a>, <a href="../bot-variables-import/">Bot Variables Import</a>, <a href="../batch-test-execution/" target="_blank">Batch Test Execution</a>, <a href="../get-batch-test-suites/" target="_blank">Get Batch Test Suites</a>, <a href="../export-batch-test-suite/" target="_blank">Export Batch Test Suite</a>, <a href="../import-batch-test-suite/" target="_blank">Import Batch Test Suite</a>, <a href="../delete-batch-test-suite/" target="_blank">Delete Batch Test Suite</a>, <a href="../delete-batch-test-suite-execution/" target="_blank">Delete Batch Test Suite Execution</a>, <a href="../create-a-test-suite/" target="_blank">Create (Import) a Conversation Test Suite</a>, <a href="../execute-a-test-suite/" target="_blank">Conversation Test Suite Execution</a>, and <a href="../delete-a-test-suite/" target="_blank">Delete Conversation Test Suite</a>)
-<p>
-NLP Training APIs (<a href="../ml-utterances-import/" target="_blank">ML Utterances Import</a>, <a href="../ml-training/" target="_blank">ML Utterance Train</a>, <a href="../ml-utterances-export/" target="_blank">ML Utterances Export</a>, <a href="../faq-training/" target="_blank">FAQ Training</a>, <a href="../extract-from-file-or-url-kg/">Extraction from file or URL</a>, <a href="../get-extracts-history-kg/">Get Extractions History</a>, <a href="../get-extraction-questions-kg/">Get Extraction Question</a>, <a href="../get-knowledgetasks-kg/">Get KnowledgeTasks</a>, <a href="../add-questions-from-extract-kg/">Add Questions from Extraction</a>, <a href="../get-faqs-kg/">Get FAQs</a>, and <a href="../update-nlp-configurations/">Update NLP Configurations</a>)
-<p>
-Analytics APIs (<a href="../find-intent/" target="_blank">Find Intent</a>, <a href="../conversation-history/" target="_blank">Conversation History</a>, <a href="../conversation-summary/" target="_blank">Conversation Summary</a>, <a href="../feedback-survey/" target="_blank">Feedback Analytics</a>, <a href="../debug-logs/" target="_blank">Debug Logs</a>, <a href="../get-changelogs/" target="_blank">Get ChangeLogs</a>, <a href="../sessions/" target="_blank">Sessions History</a>, <a href="../get-widget/">Get Dashboard Widget Data</a>, <a href="../get-analytics/" target="_blank">Get Analytics</a>, <a href="../user-engagement-trend/" target="_blank">User Engagement Trend</a>, and <a href="../conversation-details-summary/" target="_blank">Conversation Details and Summary</a>)
+   <td>Bot Definition APIs<br> <a href="../upload-file/" target="_blank">Upload File</a>, <a href="../import-bot-as-new-bot/" target="_blank">Import Bot as a New Bot</a>, <a href="../import-bot-into-an-existing-bot/" target="_blank">Import Bot into an Existing Bot</a>,<br><a href="../import-bot-functions/" target="_blank">Import Bot Functions</a>, <a href="../install-sample-bot/" target="_blank">Install Sample Bot</a>, <a href="../bot-export/" target="_blank">Bot Export</a>, <a href="../channel-enablement/" target="_blank">Enable Channel</a>,<br><a href="../add-enable-new-language/" target="_blank">Add and Enable a New Language</a>, <a href="../enable-existing-language/" target="_blank">Enable an existing Language</a>, <a href="../disable-existing-language/" target="_blank">Disable an existing<br> Language</a>, <a href="../language-updation/" target="_blank">Update a Language Configuration</a>, <a href="../publish-bot/" target="_blank">Publish Bot</a>, <a href="../bot-variables-import/" target="_blank">Bot Variables Import</a>,<br><a href="../batch-test-execution/" target="_blank">Batch Test Execution</a>, <a href="../get-batch-test-suites/" target="_blank">Get Batch Test Suites</a>, <a href="../export-batch-test-suite/" target="_blank">Export Batch Test Suite</a>, <a href="../import-batch-test-suite/" target="_blank">Import<br>Batch Test Suite</a>, <a href="../delete-batch-test-suite/" target="_blank">Delete Batch Test Suite</a>, <a href="../delete-batch-test-suite-execution/" target="_blank">Delete Batch Test Suite Execution</a>,<br><a href="../create-conversation-test-suite/" target="_blank">Create (Import) a Conversation Test Suite</a>, <a href="../execute-test-suite/" target="_blank">Conversation Test Suite Execution</a>,<br>and <a href="../delete-a-test-suite/" target="_blank">Delete Conversation Test Suite</a>
+<br>
+NLP Training APIs<br><a href="../ml-utterances-import/" target="_blank">ML Utterances Import</a>, <a href="../ml-training/" target="_blank">ML Utterance Train</a>, <a href="../ml-utterances-export/" target="_blank">ML Utterances Export</a>, <a href="../faq-training/" target="_blank">FAQ Training</a>, <a href="../extract-from-file-or-url-kg/">Extraction from file or URL</a>, <a href="../get-extracts-history-kg/">Get Extractions History</a>, <a href="../get-extraction-questions-kg/">Get Extraction Question</a>, <a href="../get-knowledgetasks-kg/">Get KnowledgeTasks</a>, <a href="../add-questions-from-extract-kg/">Add Questions from Extraction</a>, <a href="../get-faqs-kg/">Get FAQs</a>, and <a href="../update-nlp-configurations/">Update NLP Configurations</a>
+<br>
+Analytics APIs<br><a href="../find-intent/" target="_blank">Find Intent</a>, <a href="../conversation-history/" target="_blank">Conversation History</a>, <a href="../conversation-summary/" target="_blank">Conversation Summary</a>, <a href="../feedback-survey/" target="_blank">Feedback Analytics</a>, <a href="../debug-logs/" target="_blank">Debug Logs</a>, <a href="../get-changelogs/" target="_blank">Get ChangeLogs</a>, <a href="../sessions/" target="_blank">Sessions History</a>, <a href="../get-widget/">Get Dashboard Widget Data</a>, <a href="../get-analytics/" target="_blank">Get Analytics</a>, <a href="../user-engagement-trend/" target="_blank">User Engagement Trend</a>, and <a href="../conversation-details-summary/" target="_blank">Conversation Details and Summary</a>
    </td>
   </tr>
   <tr>
    <td>request_id
    </td>
    <td>60 per minute
-<p>
+<br>
 1800 per hour
    </td>
-   <td>Bot Definition Status APIs (<a href="../bot-import-status/" target="_blank">Bot Import Status</a>, <a href="../bot-export-status/" target="_blank">Bot Export – Status</a>, <a href="../bot-publish-status/" target="_blank">Bot Publish Status</a>, <a href="../batch-test-execution-status/" target="_blank">Batch Test Execution Status</a>, <a href="../get-the-creation-status-of-a-test-suite/" target="_blank">Conversation Test Suite Creation Status</a>, and <a href="../get-the-execution-status-and-summary-of-a-test-suite/" target="_blank">Conversation Test Suite Execution Status</a>)
-<p>
-NLP Training Status APIs (<a href="../ml-utterances-import-status/" target="_blank">ML Utterances Import Status</a>, <a href="../ml-training-status/" target="_blank">ML Utterance Train Status</a>, <a href="../ml-utterances-export-status/" target="_blank">ML Utterances Export Status</a>, and <a href="../faq-training-status/" target="_blank">FAQ Training Status</a>)
+   <td>Bot Definition Status APIs<br><a href="../bot-import-status/" target="_blank">Bot Import Status</a>, <a href="../bot-export-status/" target="_blank">Bot Export – Status</a>, <a href="../bot-publish-status/" target="_blank">Bot Publish Status</a>, <a href="../batch-test-execution-status/" target="_blank">Batch Test Execution Status</a>, <a href="../get-the-creation-status-of-a-test-suite/" target="_blank">Conversation Test Suite Creation Status</a>, and <a href="../get-the-execution-status-and-summary-of-a-test-suite/" target="_blank">Conversation Test Suite Execution Status</a>
+<br>
+NLP Training Status APIs<br><a href="../ml-utterances-import-status/" target="_blank">ML Utterances Import Status</a>, <a href="../ml-training-status/" target="_blank">ML Utterance Train Status</a>, <a href="../ml-utterances-export-status/" target="_blank">ML Utterances Export Status</a>, and <a href="../faq-training-status/" target="_blank">FAQ Training Status</a>
    </td>
   </tr>
   <tr>
    <td>account
    </td>
    <td>60 per minute
-<p>
+<br>
 1800 per hour
    </td>
-   <td>Admin APIs (<a href="../get-bots/" target="_blank">Get Bots</a>, <a href="../import-roles/" target="_blank">Import Roles</a>, <a href="../get-roles/" target="_blank">Get Roles</a>, <a href="../get-user-roles-details/" target="_blank">Get User Roles Details</a>, <a href="../get-groups/" target="_blank">Get Groups</a>, <a href="../export-roles/" target="_blank">Export Roles</a>, <a href="../assign-bt-roles/" target="_blank">Assign BT Roles</a>, <a href="../assign-admin-roles/" target="_blank">Assign Admin Roles</a>, <a href="../update-user-access/" target="_blank">Update User Access</a>, <a href="../create-user/" target="_blank">Create Users</a>, <a href="../get-user/" target="_blank">Get Users Information</a>, <a href="../update-user/" target="_blank">Update User</a>, <a href="../delete-user/" target="_blank">Remove Users from Account</a>, <a href="../delete-customer-data/" target="_blank">Delete Customer Data</a>, <a href="../delete-customer-data-status/" target="_blank">Delete Customer Data Status API</a>, and <a href="../get-audit-logs/" target="_blank">Get Admin Console Audit Logs</a>)
+   <td>Admin APIs<br><a href="../get-bots/" target="_blank">Get Bots</a>, <a href="../import-roles/" target="_blank">Import Roles</a>, <a href="../get-roles/" target="_blank">Get Roles</a>, <a href="../get-user-roles-details/" target="_blank">Get User Roles Details</a>, <a href="../get-groups/" target="_blank">Get Groups</a>, <a href="../export-roles/" target="_blank">Export Roles</a>, <a href="../assign-bt-roles/" target="_blank">Assign BT Roles</a>, <a href="../assign-admin-roles/" target="_blank">Assign Admin Roles</a>, <a href="../update-user-access/" target="_blank">Update User Access</a>, <a href="../create-user/" target="_blank">Create Users</a>, <a href="../get-user/" target="_blank">Get Users Information</a>, <a href="../update-user/" target="_blank">Update User</a>, <a href="../delete-user/" target="_blank">Remove Users from Account</a>, <a href="../delete-customer-data/" target="_blank">Delete Customer Data</a>, <a href="../delete-customer-data-status/" target="_blank">Delete Customer Data Status API</a>, and <a href="../get-audit-logs/" target="_blank">Get Admin Console Audit Logs</a>
    </td>
   </tr>
   <tr>
    <td>bot
    </td>
    <td>600 per minute
-<p>
+<br>
 18000 per hour
    </td>
-   <td>Bot Definition Notification APIs (<a href="../proactive-notifications/" target="_blank">Proactive Notification</a>, <a href="../proactive-notification-status/" target="_blank">Proactive Notification Status</a>)
+   <td>Bot Definition Notification APIs<br><a href="../proactive-notifications/" target="_blank">Proactive Notification</a>, <a href="../proactive-notification-status/" target="_blank">Proactive Notification Status</a>
    </td>
   </tr>
   <tr>
    <td>account+table
    </td>
    <td>600 per minute
-<p>
+<br>
 18000 per hour
    </td>
-   <td>Data access APIs (<a href="../data-insert/" target="_blank">Insert Data</a>, <a href="../data-insert-bulk/" target="_blank">Insert Bulk Data</a>, <a href="../data-update/" target="_blank">Update Data</a>, <a href="../data-delete/" target="_blank">Delete Data</a>, <a href="../query-data-table/" target="_blank">Get Table Data</a>, and <a href="../query-data-view/" target="_blank">Get View Data</a>)
+   <td>Data access APIs<br><a href="../data-insert/" target="_blank">Insert Data</a>, <a href="../data-insert-bulk/" target="_blank">Insert Bulk Data</a>, <a href="../data-update/" target="_blank">Update Data</a>, <a href="../data-delete/" target="_blank">Delete Data</a>, <a href="../query-data-table/" target="_blank">Get Table Data</a>, and <a href="../query-data-view/" target="_blank">Get View Data</a>
    </td>
   </tr>
 </table>
