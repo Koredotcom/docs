@@ -41,6 +41,8 @@ For example, an e-Commerce company requiring insights on user trend-based data f
     * A returning user on 26-Jan-2022
 * If User-C has interacted with the bot on 21-Jan-2022 for the first time and again interacted with the bot on 26-Jan-2022, and the dashboard is viewed between 23-Jan-2022 to 26-Jan-2022, then, this user is considered as a returning user.
 
+[Learn more about New and Returning Users](../)
+
 The **Users Dashboard** provides insights on the following user trend metrics:
 
 
