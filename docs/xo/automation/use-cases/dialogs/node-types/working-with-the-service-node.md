@@ -4,28 +4,21 @@ The Service Node is a component type in a dialog task that you can use to add an
 
 ## Add the Node
 
-Service Nodes can only be added as part of a Bot Action node. Therefore, before you can add a Service Node, you need to add a Bot Action node. [Read more about Bot Action Nodes](../bot-action-node/){:target="_blank"}.
-
-!!! Note
-
-    Post v9.0 of the XO )Platform, the Service node is categorized under the Bot Action node. For details on the Bot Action node, [click here](../bot-action-node/){:target="_blank"}.
-
-Keeping this in mind, the setup of a Service node in a dialog task involves the following steps:
+The setup of a Service node in a dialog task involves the following steps:
 
 1. Open the dialog task to add the Service node.
-2. Create and/or expand a Bot Action node.
-3. Add a Service node in the designated place. For steps related to adding nodes, [refer here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
-4. The Service window is displayed with the **Component Properties** tab selected by default.
-5. To connect a Service node to a node outside of its containing Bot Action node, please read our article about the [Bot Action Node](../bot-action-node){:target="_blank"}.
+2. Add a Service node in the designated place. For steps related to adding nodes, [refer here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
 
-    <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    !!! note
 
-    ![alt_text](images/image1.png "image_tooltip")
+        You can add a service node within an existing sequence or outside any existing sequence. If you add it outside, a new, untitled sequence will automatically get created containing the new Service node.
 
+3. The Service window is displayed with the **Component Properties** tab selected by default.
+
+    <img src="../images/service-node-img1.png" alt="Service node - Add node" title="Service node - Add node" style="border:1px solid gray;zoom:70%;">
 
 
 ## Configure the Node
-
 
 ### Component Properties
 
@@ -44,42 +37,80 @@ To configure the Component Properties tab, please follow the steps below:
     5. **Alert Subscription Service** – Define contextually relevant alerts to be sent proactively to the user as a part of the dialog journey.
     6. **Data Service** – Define CRUD operations to query and manipulate the data for any given data table/table view.
 
-3. Based on the service type selected, select the **Type/Sub Type** from the respective drop-down lists or **Auth URL**.
-4. Under the **Request Definition** section, click **Define Request**.
-5. The **Define Request for &lt; _ServiceXXXX_ >** dialog is displayed, as shown in the following illustration.
+3. Based on the service type selected, select the **Type/Sub Type** from the respective drop-down lists or Auth URL.
+4. Define the **Pre-processor Script** to pass the input parameters dynamically for executing an Service Node’s API call. [Learn more](#pre-processor-script).
 
-    <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+5. Under the **Request Definition** section, click **Define Request**.
 
-    ![alt_text](images/image2.png "image_tooltip")
+    <img src="../images/service-node-img2-define-request.png" alt="Service node - Define request" title="Service node - Define request" style="border:1px solid gray;zoom:70%;">
 
     !!! Note
     
-        In the case of a Custom Authentication Service, the Request Definition section does not apply and you can see a Response.
+        In the case of a **Custom Authentication Service** service type, the Request Definition section does not apply and you can see a Response.
+    
+6. The **Define Request for &lt; _ServiceXXXX_ >** dialog is displayed, as shown in the following illustration.
 
-    <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    <img src="../images/service-node-img3-define-request-dialog.png" alt="Service node - Define request dialog" title="Service node - Define request dialog" style="border:1px solid gray;zoom:70%;">
 
-    ![alt_text](images/image3.png "image_tooltip")
+7. Click the **Auth** tab to create a new Authorization Profile or select an existing profile. For more information, see the [Bot Authorization Overview](../../../../../app-settings/dev-tools/bot-authorization/bot-authentication/) article.
+
+8. Define the Post-processor Script to fetch the API response parameters using the Service Node and define the dialog flow. [Learn more](#post-processor-script).
+
+9. Add the sample response(s) you want the Service Node to return.
+
+    <img src="../images/service-node-img4-add-sample-response.png" alt="Service node - Sample response" title="Service node - Sample response" style="border:1px solid gray;zoom:70%;">
 
     Depending on the Service Type selected, refer to one of the following sections in this topic:
 
-    1. [Defining a Custom Service](../working-with-the-service-node/#custom){:target="_blank"}
+    1. [Defining a Custom Service](#custom)
     2. [Defining a URL to Convert to Image](#define-a-url-to-convert-to-image)
     3. [Defining HTML to Convert to Image](#define-html-to-convert-to-image)
     4. [Defining Alert Subscription Service](#define-an-alert-subscription-service)
     5. [Defining Data Service](#define-a-data-service)
-
-6. Under **Advanced Controls**, select the maximum wait time for the **Timeout** for service node calls and decide how the bot can respond or choose an alternate path when timeout occurs. You can configure the following settings:
+  
+10. Under **Advanced Controls**, select the maximum wait time for the **Timeout** for service node calls and decide how the bot can respond or choose an alternate path when timeout occurs. You can configure the following settings:
     1. **Timeout(Seconds)**: Select the maximum wait time from the drop-down list. The timeout range can be any value between _1 Second_ to _20 Seconds_. The default value is _5 Seconds_.
     2. **Timeout error handling**: Choose how the bot should respond when the timeout occurs.
         * **Close the Task and trigger Task Execution Failure Event**, or
         * **Continue with the task and transition to this node**; select the node to which the service call can transition in the flow.
 
-        <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+        <img src="../images/service-node-img5-timeout-error-handling.png" alt="Service node - Timeout Error handling" title="Service node - Timeout Error handling" style="border:1px solid gray;zoom:70%;">
 
-        ![alt_text](images/image4.png "image_tooltip")
+11. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the VA. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
 
-7. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the VA. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
+#### Pre-processor Script
 
+The Pre-processor Script helps execute a custom JavaScript code within the Service Node to manipulate existing values or set new ones within the context and pass the input parameters dynamically for executing an API call using the Service Node. It works similarly to the Script Node. [Learn more](#configure-the-node).
+
+With the Pre-processor Script, the Platform does not have to process additional Script nodes to execute a single service node.
+
+Steps to Configure a Pre-processor Script
+
+1. Open the dialog task.
+2. In the dialog builder, click the required Service Node.
+3. In the **Component Properties** window, click **Define Script** in the Pre-processor/Post-processor Script section.
+
+    <img src="../images/service-node-img6-define-script-pre-and-post-processor.png" alt="Service node - Pre-processor script" title="Service node - Pre-processor script" style="border:1px solid gray;zoom:70%;">
+
+4. In the Add Script window, add the script you want to execute, and click **Save**.
+
+    <img src="../images/service-node-img7-add-script-to-service-node.png" alt="Service node - Add Pre-processor script" title="Service node - Add Pre-processor script" style="border:1px solid gray;zoom:70%;">
+
+!!! note
+
+    Pre-processor Script is available for all the existing service nodes (treated as an empty script node) and does not have any JavaScript defined.
+
+#### Post-processor Script
+
+The **Post-processor Script** executes the defined JavaScript code following the execution of the service node.
+
+Using this property, developers can fetch and store only the required Service Node API response parameters in the context object and define the dialog execution flow. The Post-processor Script has the same properties as the Script Node. [Learn more](#configure-the-node).
+
+The steps to configure a Post-processor Script are the same as the Pre-processor Script. Click [here](#pre-processor-script) to learn more.
+
+!!! note
+
+    Post-processor is available for all the existing service nodes (treated as an empty script node) and does not have any JavaScript defined.
 
 ### Instance Properties
 
@@ -92,21 +123,10 @@ Use the Instance Properties to define any user tags that you want to set.
 1. On the Service node properties panel, click the **Instance Properties** tab.
 2. Under the **Custom Tags** section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
-    <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image5.png "image_tooltip")
+    <img src="../images/service-node-img8-instance-properties.png" alt="Service node - Instance properties" title="Service node - Instance properties" style="border:1px solid gray;zoom:70%;">
 
 
 ### Connections Properties
-
-Since they are contained within Bot Action nodes, Service nodes cannot be connected on their own to any other nodes outside the Bot Action node to which they belong. Connections can only be made with nodes contained within the same Bot Action node. 
-
-From the node’s **Connection Properties** tab, you can configure the following:
-
-* **Service Node Connections**: The node within the Bot Action to execute next, after the Service node runs. 
-* **Bot Action Connections**, where you can update the node to trigger after the Bot Action group is executed. Updates made here will apply to all nodes within the same Bot Action. 
-
-For both connection types you can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use Intents for transitions. 
 
 !!! Note
     
@@ -114,9 +134,7 @@ For both connection types you can write conditional statements based on the valu
 
 To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions){:target="_blank"}
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image6.png "image_tooltip")
+<img src="../images/service-node-img9-connection-properties.png" alt="Service node - Connection properties" title="Service node - Connection properties" style="border:1px solid gray;zoom:70%;">
 
 
 ## Service Types
@@ -316,9 +334,7 @@ $(this).prop("disabled", true);
 
 The preceding HTML example, when table rows are added into the example, can render the following image to an end-user.
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image7.png "image_tooltip")
+<img src="../images/service-node-img10-html-to-image.png" alt="Service node - HTML to Image" title="Service node - HTML to Image" style="border:1px solid gray;zoom:70%;">
 
 
 ### Define an Alert Subscription Service
