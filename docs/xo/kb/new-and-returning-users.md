@@ -8,6 +8,6 @@ Bot developers can use the `isReturningUser` flag to provide personalized user e
 
 **Related Links**
 
-* [Working with Context Object](https://developer.kore.ai/docs/bots/bot-builder-tool/context-object/)
-* [Configure Welcome / On-Connect Event](https://developer.kore.ai/docs/bots/bot-intelligence/event-based-bot-actions/#Welcome_On_Connect_Event)
-* [Users Trend Analysis](https://developer.kore.ai/docs/bots/analyzing-your-bot/users-dashboard/)
+* [Working with Context Object](../automation/intelligence/context-object.md)
+* [Configure Welcome / On-Connect Event](../automation/intelligence/event-handling.md)
+* [Users Trend Analysis](../analytics/overview/users-dashboard.md)
