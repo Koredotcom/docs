@@ -174,7 +174,7 @@ Users can initiate VA conversations in varied ways, from a simple greeting to di
 
 To facilitate a scope for the developer to customize the response based on the user choice, the Welcome event comes with additional options when you choose _Initiate Task_ or _Show Message_ as the event configurations. For example, if the first user utterance maps to a task, should the VAexecute the event-based task or the user intent first?
 
-Post ver9.0, you can use the <code>isReturningUser</code> parameter in the **BotUserSession** context object to [identify returning users](..
+Post ver9.0, you can use the <code>isReturningUser</code> parameter in the **BotUserSession** context object to [identify returning users](../kb/new-and-returning-users.md)
  and send an appropriate welcome message. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/context-object/" target="_blank">Learn more</a>.
 
 As a developer, you can define the VA’s priority when the user starts the conversation with a greeting, task, or FAQ from the options listed below:
