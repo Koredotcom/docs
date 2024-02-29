@@ -126,9 +126,15 @@ The Dialog Builder interface consists of:
 The Dialog Design process occurs in the Conversation Designer. This comes with its specific top menu, where you can access the following features:
 
 * **Exit the Dialog Task Builder** and go back to the Dialog Tasks List - Click to exit the dialog builder and go back to the list of dialog tasks within the current app (Automation > Use Cases > Dialogs)
-* Add **Bookmarks** -  You can bookmark frequently visited or crucial content in the canvas with relevant information. They help you to navigate to the bookmarked content without having to search or browse extensively.
-* Add **Text** - You can add text on any place on the canvas to keep a note of the logic being developed in a sequence or group of sequences, or other relevant nodes about the logic building.
-* Add **Comment** - In a comment you can tag other users to enhance communication through feedback, suggestions, and discussions on specific elements of the design.
+* Add **Bookmarks** -  You can bookmark frequently visited or crucial content in the canvas with relevant information. The added bookmarks can be seen in the **Bookmarks** tab of the **Index Panel**. They help you to navigate to the bookmarked content without having to search or browse extensively.
+    <img src=../images/using-dialog-builder-add-bookmark.gif" alt="Add Bookmark" title="Add Bookmark" style="border:1px solid gray;zoom:70%;">
+
+* Add **Text** - You can add text on any place on the canvas to keep a note of the logic being developed in a sequence or group of sequences, or other relevant nodes about the logic building for future reference.
+    <img src=../images/using-dialog-builder-add-text.gif" alt="Add Text" title="Add Text" style="border:1px solid gray;zoom:70%;">
+
+* Add **Comment** - In a comment you can tag other users to enhance communication through feedback, suggestions, and discussions on specific elements of the design, or if you need another user to pitch in and help you in the conversation design with their developmental or functional expertise.
+    <img src=../images/using-dialog-builder-add-comment.gif" alt="Add Comment" title="Add Comment" style="border:1px solid gray;zoom:70%;">
+
 * **Find** - You can find nodes, variables, sequences etc. Clicking this icon would open a window where you can perform a universal search, you will get a list of all the nodes, variables, sequences, API's etc grouped by type that contain the search string.
 
     <img src="../images/tool-set-search.gif" alt="Search" title="Search" style="border:1px solid gray;zoom:70%;">
@@ -144,15 +150,21 @@ The Dialog Design process occurs in the Conversation Designer. This comes with i
 
 <img src="../images/using-dialog-builder-index-panel.png" alt="Index Panel" title="Index Panel" style="border:1px solid gray; zoom:60%;">
 
-The Index panel consists of:
+The Index panel consists of a robust set of features within its dialog builder to enhance collaboration and organization. Here's a breakdown of the mentioned features:
 
 * [Bookmarks](#bookmark) tab
 * [Assets](#assets) tab
 * [Nodes](#nodes) tab
 
-### Bookmark
+You can add, edit, move or delete text, comments or bookmarks as per need. However, please note that deletion cannot be undone
 
-Bookmarks offer the ability to organize and reference important information. You can bookmark frequently visited or crucial content in the canvas with relevant information. They help you to navigate to the bookmarked content without having to search or browse extensively. Here's how the ability to add bookmarks can be advantageous:
+#### Bookmark
+
+Bookmarks offer the ability to organize and reference important information. You can bookmark frequently visited or crucial content in the canvas with relevant information. They help you to navigate to the bookmarked content without having to search or browse extensively. 
+
+<img src="../images/using-dialog-builder-img22-bookmark-tab.png" alt="Bookmark tab" title="Bookmark tab" style="border:1px solid gray; zoon:60%;">
+
+Here's how the ability to add bookmarks can be advantageous:
 
 1. Navigation Efficiency:
     * Bookmarks provide a quick and efficient way to navigate through a complex dialog structure.
@@ -165,12 +177,47 @@ Bookmarks offer the ability to organize and reference important information. You
 
 In summary, bookmarks offer a practical solution to the challenges associated with navigating complex dialog designs. They empower users to personalize their experience and focus on key components within the context of intricate dialog structures.
 
-**_[Video - Add Bookmark]_**
-
 The inclusion of a dedicated Bookmark tab in the left-hand side panel further enhances the usability of the bookmark feature. The Bookmark tab on the left-hand side panel not only provides a structured and organized way to manage bookmarks but also contributes to a user-friendly interface, making it easier to navigate and interact with the bookmarked dialogs.
 
-<img src="../images/using-dialog-builder-img22-bookmark-tab.png" alt="Bookmark tab" title="Bookmark tab" style="border:1px solid gray; zoon:60%;">
+You can perform a textual search for bookmarks as well, that would show you the bookmarks that match the search text.
 
+#### Assets
+
+The **Assets** tab contains all the node types as expandable lists, upon expanding them you can see an option to add a new node of that type to the canvas, as well as all the nodes of that type that are created for the current app, irrespective of whether they are added to any dialog.
+
+<img src="../images/using-dialog-builder-assets-tab.png" alt="Assets tab" title="Assets tab" style="border:1px solid gray; zoon:60%;">
+
+All the created nodes you see in this tab are **reusable**. You can drag and drop them or add them using the **"+"** before, after or between existing [sequences](#sequences).
+
+You can perform a textual search for nodes as well, that would show you the nodes in the current app that match the search text, along with the node type.
+
+#### Nodes
+
+On this tab, you can see a list of **all the sequences present in the Current Dialog**. Upon clicking the sequence name, you see all the nodes present in that sequence. Hence, please note that here, you see only the nodes that are added to the canvas for the current dialog.
+
+<img src="../images/using-dialog-builder-nodes-tab.png" alt="Nodes tab" title="Nodes tab" style="border:1px solid gray; zoon:60%;">
+
+You can perform a textual search for nodes and sequences as well, that would show you the nodes/sequences in the current dialog that match the search text.
+
+### The Canvas
+
+The Canvas is where you can integrate your conversation scenarios with your business logic.
+
+<img src="../images/navigate-dialog-builder-canvas.png" alt="Dialog builder - Canvas" title="Dialog builder - Canvas" style="border:1px solid gray; zoom:60%;">
+
+The canvas would typically contain:
+
+#### The Root Intent
+
+This is the first component of any conversation and will be displayed on your canvas by default, whenever you create a new Dialog Task.
+
+<img src="../images/root-intent.png" alt="Root intent" title="Root intent" style="border:1px solid gray; zoom:60%;">
+
+You would note that 
+
+* **Nodes** – These are the different points at which components of your conversation intersect. For details, please see [Node Types](../node-types/nodes-transitions/){:target="_blank"}.
+* **Sequences** - These are placeholders for creating groups of nodes. Each sequence has one or more nodes added in logical sequences.
+* **Mini map** - A miniature representation of the visual appearance of the dialog.
 
 ## Sequences
 
@@ -257,60 +304,10 @@ Clicking on a node will open its Properties panel, which includes specific featu
 <img src="../images/using-dialog-builder-img20-asset-properties.png" alt="Node properties" title="Node properties" style="border:1px solid gray; zoon:60%;">
 
 
-## Adding Comments, Bookmarks and Text
-
-UXO provides a robust set of features within its dialog builder to enhance collaboration and organization. Here's a breakdown of the mentioned features:
-
-* Text
-* Comments
-* Bookmarks
-
-You can add, edit, move or delete text, comments or bookmarks as per need. However, please note that deletion cannot be undone.
-
-!!! Note
-
-	You can add comments, texts or bookmarks on the canvas as well as within the sequences. (Available in Phase 2)
-
-<img src="../images/using-dialog-builder-img21-text-bookmark-comment.png" alt="Text, comment, bookmark" title="Text, comment, bookmark" style="border:1px solid gray; zoon:60%;">
-
-### Text
-
-Adding text to a canvas as notes is a common practice in various design and collaboration tools. This allows users to provide communication and feedback, summarize information, additional context, explanations, or instructions directly on the canvas, making it a helpful reference for future work or collaboration. Here are some ways this can be beneficial:
-
-
-1. Introduction to Modules:
-    * Use text on the canvas to introduce the purpose and scope of different modules in your project.
-    * Provide a brief overview of what each module is designed to achieve.
-2. Focus on Key Dialogs:
-    * Users can make a note of frequently referenced dialogs.
-    * This helps in maintaining focus on critical sections of the conversation flow, enhancing productivity during the design and review process.
-3. Flow Logic:
-    * Use text annotations to describe the flow logic between different modules or components.
-    * Highlight key decision points, inputs, and outputs within the overall flow.
-4. Notes for Future Reference:
-    * Include notes that provide insights or considerations for future work or modifications.
-    * Document any design decisions, constraints, or important considerations.
 
 
 
-By incorporating text annotations directly onto the canvas, you create a visual and contextual layer of information that can enhance collaboration, provide clarity, and serve as a valuable reference for anyone working on the project in the future. 
 
-**_[Video - add Text]_**
-
-
-### Comment
-
-The purpose of a comment is similar to that of a text, however additionally,  in a comment you can tag other users. It enhances communication by providing a platform for feedback, suggestions, and discussions on specific elements of the design.
-
-Tagging a user in a comment is a way to draw their attention to a specific part of a dialog, indicating that their input or design expertise is needed for that particular section. This facilitates smoother collaboration and enhances overall project efficiency by keeping communication focused and actionable.
-
-If you're working with a team of designers or collaborators, you can use comments to provide specific instructions or guidelines for designing certain elements. You can also use text on the canvas to communicate ideas, suggestions, or questions directly within the design space.
-
-4. Collaborative Work:
-    * In collaborative environments, bookmarks can serve as visual indicators of significant points in the dialog flow.
-    * This aids communication among team members by creating a shared understanding of which dialogs are crucial or require attention.
-
-**_[Video - Add Comment]_**
 
 
 

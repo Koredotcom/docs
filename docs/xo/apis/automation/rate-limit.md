@@ -77,32 +77,7 @@ NLP Training Status APIs<br><a href="../ml-utterances-import-status/" target="_b
 </table>
 
 
-
-
-
-### An Example of Rate Limit Enforcement
-
-
-#### **Scenario**
-
-
-
-* **Runtime API Rate Limits**: 600 requests/60 seconds and 18,000 requests/3600 seconds.
-* **Starting Point**: An application begins requesting the API at 12:00 PM.
-
-
-### **Example Timeline**
-
-
-
-1. **12:00 PM - 12:01 PM**: The application sends 600 requests in the first minute<br>. It has now hit the 60-second limit but is well within the 1-hour limit. The 61st-second request is evaluated against both windows. It's allowed if the total requests in the last 60 seconds are under 600 and the total requests in the last 3600 seconds are under 18,000.
-2. **12:01 PM - 12:30 PM**: Each new request is checked against both limits. The requests are allowed if they don't push the total over 600 in any 60-second window or over 18,000 in the ongoing 1-hour window.
-3. **At 12:30 PM**: If the application continues to send requests at the same rate, hitting the 60-second limit each minute<br>. By 12:30 PM, the application had sent a total of 18,000 requests (600 requests/minute<br> multiplied by 30 minute<br>s), thus exceeding the 1-hour limit before the hour was up. Additional requests are now denied, even if they fall within the 600 requests/minute<br> limit because the 1-hour limit has been breached.
-
-
 ## Best Practices
-
-
 
 * Spread out calls evenly to avoid traffic spikes.
 * Use filters to limit the data response size and avoid calls that request overlapping data.
