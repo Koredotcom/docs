@@ -89,4 +89,4 @@ The increment/decrement of the above user metrics’ counts is displayed as perc
 
 ## Filter Criteria
 
-The Users Dashboard data can be viewed based on specific filter criteria that can be selected. Learn more.
+The Users Dashboard data can be viewed based on specific filter criteria that can be selected. [Learn more](../../analytics/dashboard-filters.md).
