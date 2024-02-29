@@ -59,7 +59,7 @@ Steps to add a user in LivePerson:
 4. Provide a **URL** for the bot avatar.
 5. Choose the Login method as **API Key**, and select the **Generate API Key** option from the **API key** drop-down list to generate a new API key.
 <img src="../images/liveperson_channel6.png" alt="generate API Key" title="generate API Key" style="border: 1px solid gray; ">
-6. Copy the **App key**, **Secret**, **Access Token**, and **Access Token Secret**, and enter them in the kore.ai **Configurations** tab of the LivePerson Channel page. For more information, see [Step 4 – Configure the LivePerson Channel in the XO Platform](/docs/xo/channels/add-live-person-channel/#step-4-configure-the-channel-in-the-xo-platform) section.
+6. Copy the **App key**, **Secret**, **Access Token**, and **Access Token Secret**, and enter them in the kore.ai **Configurations** tab of the LivePerson Channel page. For more information, see [Step 4 – Configure the LivePerson Channel in the XO Platform](/docs/xo/channels/add-live-person-channel/#step-4-configure-the-channel-in-the-xo-platform)()section.
 7. Select Agent from the **Assignment** drop-down list, set **Max no. live chats** as **Unlimited**, and then select the skill created in the previous step from the **Skills** drop-down list.
 <img src="../images/liveperson_channel7.png" alt="assignment" title="assignment" style="border: 1px solid gray; zoom:70%;">
 8. Click **Save**. For further information, see [Create and manage users](https://knowledge.liveperson.com/admin-settings-create-and-manage-users.html#Adding%20a%20user) and [Create a bot](https://developers.liveperson.com/tutorials-guides-getting-started-with-bot-building-deploy-the-bot.html#step-11-create-a-bot-user) user within LivePerson’s documentation.

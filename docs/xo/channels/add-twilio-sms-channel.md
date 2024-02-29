@@ -91,3 +91,7 @@ To edit the Twilio channel, follow the below steps:
 
 
 10. The phone number is saved and accessible from the **Home** screen on the **Dashboard**. You are now ready to configure the Twilio channel in Kore.ai Bot Builder.
+
+**Related Links**
+
+* [How do I include an Image in an Outbound Twilio SMS (MMS)?](../kb/how-do-i-include-an-image-in-an-outbound-twilio-sms-mms.md)
