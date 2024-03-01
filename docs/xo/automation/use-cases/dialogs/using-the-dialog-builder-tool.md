@@ -456,3 +456,20 @@ Click here to [learn more.](../../../natural-language/nlu-configurations/amend-e
 Through this option you can view all the [comments](#text-comments-and-bookmarks) added to the current dialog.
 
 <img src="../images/using-dialog-builder-view-all-comments.gif" alt="View all comments" title="View all comments" style="border:1px solid gray;zoom:60%;">
+
+
+## Migrating XO bot into UXO app
+
+You can migrate an XO bot into a UXO app by following the steps to [export](https://developer.kore.ai/docs/bots/bot-settings/bot-management/bot-management-2/#Exporting_an_Assistant){:target="_blank"} from XO and [import](../../../../manage-assistant/bot-management/#importing-an-assistant){:target="_blank"}  into UXO app.
+
+In XO, the dialogs are created by placing the nodes one after one in the logical sequence of execution, whereas, in UXO, the dialog is logically split into subtasks and sequences are created, one for each sub-task.
+
+When you import an XO bot into UXO app, the dialogs will get created in the below logic:
+
+* Dialogs having no conditional flow will have all the nodes within a single dialog. If you want to, you can split the dialog into multiple sequences.
+
+    **--------------------------------------SCREENSHOT---------------------------------------**
+
+* If a dialog has conditional flows, then the flow will be split into two or more paths depending on the outcome of the consition. In other words, if there are 3 different outcomes of a condition, then the flow will have 3 sequences coming out of the **Transition** that has the condition.
+
+    **--------------------------------------SCREENSHOT---------------------------------------**
