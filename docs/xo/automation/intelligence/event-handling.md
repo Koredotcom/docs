@@ -558,7 +558,7 @@ It provides the following two options:
 * **Voice Call Properties** can be set as follows:
     * Define at least one ‘Initial Prompts’
     * Prompts for _Timeout_, and _No Match_ can be defined.
-    * Under _Advanced Controls_, settings for _Timeout, No. of Retries_, and _Barge-in_ can be defined. <a href="https://docsinternal-kore.github.io/docs/xo/channels/call-properties/" target="_blank">Learn more</a>.
+    * Under _Advanced Controls_, settings for _Timeout, No. of Retries_, and _Barge-in_ can be defined. [Learn more](../../automation/use-cases/dialogs/node-types/voice-call-properties.md).
 
     <img src="../images/voice-call-properties-event-handlers.gif" alt="voice call properties" title="voice call properties" style="border: 1px solid gray; zoom:75%;">
 
