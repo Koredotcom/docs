@@ -16,12 +16,12 @@ To add a dialog task, follow the steps below:
 3. The Automation menu opens, and the **Dialogs** page is open by default.
 4. On the Dialogs page, click the **Create Dialog** button.
 
-    <img src="../images/using-dialog-builder-img1-create-dialog.png" alt="Dialogs" title="Dialogs" style="border:1px solid gray; zoon:60%;">
+    <img src="../images/using-dialog-builder-img1-create-dialog.png" alt="Dialogs" title="Dialogs" style="border:1px solid gray;zoom:60%;">
 
 5. The **Create Dialog** window appears; from here you can choose to **Create a dialog from scratch**, **Use Generative AI** to create a dialog, or **Choose a pre built dialog template** with integrations to create a dialog.
 6. Click on **Start From Scratch.**
 
-    <img src="../images/using-dialog-builder-img2-create-dialog-scratch.png" alt="Start dialog building From Scratch" title="Start dialog building From Scratch" style="border:1px solid gray; zoon:60%;">
+    <img src="../images/using-dialog-builder-img2-create-dialog-scratch.png" alt="Start dialog building From Scratch" title="Start dialog building From Scratch" style="border:1px solid gray;zoom:60%;">
 
 7. Provide an **Intent Name** (mandatory) and **Description** (Optional).
 8. You can choose whether the new dialog will be available to the end customer **(Customer Use Case)** and/or in Agent Assist **(AgentAssist Use Case)**
@@ -30,11 +30,11 @@ To add a dialog task, follow the steps below:
 11. Also optionally, you can adjust **Conversation Context**, set **Intent Preconditions** or define **Context Output**.
 12. Click **Proceed**.
 
-    <img src="../images/using-dialog-builder-img3-create-dialog-scratch-details.png" alt="Start dialog building From Scratch - Details" title="Start dialog building From Scratch - Details" style="border:1px solid gray; zoon:60%;">
+    <img src="../images/using-dialog-builder-img3-create-dialog-scratch-details.png" alt="Start dialog building From Scratch - Details" title="Start dialog building From Scratch - Details" style="border:1px solid gray;zoom:60%;">
 
 This will open the Dialog Builder with the canvas containing the root intent displaying the Dialog Name and Description. Now, you are ready to add nodes and establish transitions between these nodes for your workflow.
 
-<img src="../images/using-dialog-builder-img4-scratch-dialog-created.png" alt="Dialog Builder canvas with Root Intent" title="Dialog Builder canvas with Root Intent" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-img4-scratch-dialog-created.png" alt="Dialog Builder canvas with Root Intent" title="Dialog Builder canvas with Root Intent" style="border:1px solid gray;zoom:60%;">
 
 [Click here to know about Nodes & Connections](../node-types/nodes-transitions/){:target="_blank"}.
 
@@ -56,15 +56,15 @@ You will see a **Conversation Preview** window right after creating your Dialog 
 
 1. Click the **Gen Ai** option.
 
-    <img src="../images/using-dialog-builder-img5-create-dialog-genai.png" alt="Select Gen Ai" title="Select Gen Ai" style="border:1px solid gray; zoon:60%;">
+    <img src="../images/using-dialog-builder-img5-create-dialog-genai.png" alt="Select Gen Ai" title="Select Gen Ai" style="border:1px solid gray;zoom:60%;">
 
 2. Provide **Intent Name** (mandatory) and a meaningful **Description** that states the purpose of the Dialog Task, and click **Generate**.
 
-    <img src="../images/using-dialog-builder-img6-create-dialog-genai-generate.png" alt="Gen Ai - Generate" title="Gen Ai - Generate" style="border:1px solid gray; zoon:60%;">
+    <img src="../images/using-dialog-builder-img6-create-dialog-genai-generate.png" alt="Gen Ai - Generate" title="Gen Ai - Generate" style="border:1px solid gray;zoom:60%;">
 
 3. You can see a Preview of the AI generated dialog flow.
 
-    <img src="../images/using-dialog-builder-img7-create-dialog-genai-preview.png" alt="Preview of AI generated dialog" title="Preview of AI generated dialog" style="border:1px solid gray; zoon:60%;">
+    <img src="../images/using-dialog-builder-img7-create-dialog-genai-preview.png" alt="Preview of AI generated dialog" title="Preview of AI generated dialog" style="border:1px solid gray;zoom:60%;">
 
 4. You can regenerate the dialog by changing the description and clicking **Regenerate**.
 
@@ -72,15 +72,15 @@ You will see a **Conversation Preview** window right after creating your Dialog 
  
 	    Providing a relevant description is reccommended. Dialog will be generated, but with **only the error prompt**, if no description is provided. 
  
-    <img src="../images/using-dialog-builder-img8-create-dialog-genai-regenerate.png" alt="Regenerate AI generated dialog" title="Regenerate AI generated dialog" style="border:1px solid gray; zoon:60%;"> 
+    <img src="../images/using-dialog-builder-img8-create-dialog-genai-regenerate.png" alt="Regenerate AI generated dialog" title="Regenerate AI generated dialog" style="border:1px solid gray;zoom:60%;"> 
 
 5. Click **Proceed** when you are satisfied with the preview.  
  
-    <img src="../images/using-dialog-builder-img9-create-dialog-genai-proceed.png" alt="Gen Ai Dialog Preview - Proceed" title="Gen Ai Dialog Preview - Proceed" style="border:1px solid gray; zoon:60%;">  
+    <img src="../images/using-dialog-builder-img9-create-dialog-genai-proceed.png" alt="Gen Ai Dialog Preview - Proceed" title="Gen Ai Dialog Preview - Proceed" style="border:1px solid gray;zoom:60%;">  
  
 The nodes and the flow for the Business Logic are automatically built for your conversation. The Platform auto-defines the _Entities, Prompts, Error Prompts, Bot Action nodes, Service Tasks, Request Definition_, and other parameters. You can customize the flow per your requirements by editing the generated nodes and adding your own. You can configure the generated Dialog Tasks just like any other dialog task. 
  
-<img src="../images/using-dialog-builder-img10-create-dialog-genai-dialog-created.png" alt="Gen Ai Dialog created" title="Gen Ai Dialog created" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-img10-create-dialog-genai-dialog-created.png" alt="Gen Ai Dialog created" title="Gen Ai Dialog created" style="border:1px solid gray;zoom:60%;">
 
 ### Auto-Generate Dialog Tasks using Pre Built Templates
 
@@ -88,19 +88,19 @@ This option lets you choose a suitable dialog template out of the list of ready-
 
 You can either scroll through the entire list, or find the required template using the search box or Integrations dropdown. Out of the search results, click the template once you find one that suits your requirement. 
  
-<img src="../images/using-dialog-builder-img11-create-dialog-template-search.png" alt="Template search" title="Template search" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-img11-create-dialog-template-search.png" alt="Template search" title="Template search" style="border:1px solid gray;zoom:60%;">
 
 1. The **Create Dialog** window opens where you need to select the integration for getting a preview of the dialog. Click **Proceed** for the next step. 
  
-    <img src="../images/using-dialog-builder-img12-create-dialog-template-preview.png" alt="Dialog using template - preview" title="Dialog using template - preview" style="border:1px solid gray; zoon:60%;"> 
+    <img src="../images/using-dialog-builder-img12-create-dialog-template-preview.png" alt="Dialog using template - preview" title="Dialog using template - preview" style="border:1px solid gray;zoom:60%;"> 
 
 2. You can edit the **Intent name, description, and customize the options** for the dialog, similar to **Create Dialog from Scratch**. After making the required changes, click **Proceed**.
 
-    <img src="../images/using-dialog-builder-img13-create-dialog-template-edit-details.png" alt="Dialog using template - Edit details" title="Dialog using template - Edit details" style="border:1px solid gray; zoon:60%;"> 
+    <img src="../images/using-dialog-builder-img13-create-dialog-template-edit-details.png" alt="Dialog using template - Edit details" title="Dialog using template - Edit details" style="border:1px solid gray;zoom:60%;"> 
 
 3. The Dialog Builder now opens with the root intent component, and the nodes you saw in the preview. You can customize the flow per your requirements by editing the generated nodes and adding your own on the Dialog Builder canvas, as well as establish transition between the nodes.In other words, you can configure the generated Dialog Tasks just like any other dialog task. 
  
-    <img src="../images/using-dialog-builder-img14-create-dialog-canvas.png" alt="Dialog using template - Dialog canvas" title="Dialog using template - Dialog Canvas" style="border:1px solid gray; zoon:60%;">
+    <img src="../images/using-dialog-builder-img14-create-dialog-canvas.png" alt="Dialog using template - Dialog canvas" title="Dialog using template - Dialog Canvas" style="border:1px solid gray;zoom:60%;">
 
 [Click here to know about Nodes & Connections](../node-types/nodes-transitions/){:target="_blank"}
 
@@ -121,19 +121,19 @@ The Dialog Builder interface consists of:
 
 ### The Tool Set
 
-<img src="../images/dialog-top-menu.png" alt="Tool Set" title="Tool Set" style="border:1px solid gray; zoom:60%;">
+<img src="../images/dialog-top-menu.png" alt="Tool Set" title="Tool Set" style="border:1px solid gray;zoom:60%;">
 
 The Dialog Design process occurs in the Conversation Designer. This comes with its specific top menu, where you can access the following features:
 
 * **Exit the Dialog Task Builder** and go back to the Dialog Tasks List - Click to exit the dialog builder and go back to the list of dialog tasks within the current app (Automation > Use Cases > Dialogs)
 * Add **Bookmarks** -  You can bookmark frequently visited or crucial content in the canvas with relevant information. The added bookmarks can be seen in the **Bookmarks** tab of the **Index Panel**. They help you to navigate to the bookmarked content without having to search or browse extensively.
-    <img src=../images/using-dialog-builder-add-bookmark.gif" alt="Add Bookmark" title="Add Bookmark" style="border:1px solid gray;zoom:70%;">
+    <img src="../images/using-dialog-builder-add-bookmark.gif" alt="Add Bookmark" title="Add Bookmark" style="border:1px solid gray;zoom:70%;">
 
 * Add **Text** - You can add text on any place on the canvas to keep a note of the logic being developed in a sequence or group of sequences, or other relevant nodes about the logic building for future reference.
-    <img src=../images/using-dialog-builder-add-text.gif" alt="Add Text" title="Add Text" style="border:1px solid gray;zoom:70%;">
+    <img src="../images/using-dialog-builder-add-text.gif" alt="Add Text" title="Add Text" style="border:1px solid gray;zoom:70%;">
 
 * Add **Comment** - In a comment you can tag other users to enhance communication through feedback, suggestions, and discussions on specific elements of the design, or if you need another user to pitch in and help you in the conversation design with their developmental or functional expertise.
-    <img src=../images/using-dialog-builder-add-comment.gif" alt="Add Comment" title="Add Comment" style="border:1px solid gray;zoom:70%;">
+    <img src="../images/using-dialog-builder-add-comment.gif" alt="Add Comment" title="Add Comment" style="border:1px solid gray;zoom:70%;">
 
 * **Find** - You can find nodes, variables, sequences etc. Clicking this icon would open a window where you can perform a universal search, you will get a list of all the nodes, variables, sequences, API's etc grouped by type that contain the search string.
 
@@ -141,16 +141,16 @@ The Dialog Design process occurs in the Conversation Designer. This comes with i
 
 * **Switch between Dialog Tasks** – The Builder comes with a dedicated task switcher, which you can use to easily change to working on a different task within your selected app. This option is located at the top of your canvas
 
-<img src="../images/using-dialog-builder-img23-task-switcher.png" alt="Task switcher" title="Task switcher" style="border:1px solid gray; zoon:60%;">
+    <img src="../images/using-dialog-builder-img23-task-switcher.png" alt="Task switcher" title="Task switcher" style="border:1px solid gray;zoom:60%;">
 
 * **Test** -  You can chat with the app in real-time to test recognition, performance, and flow as if it were a live session.
 * **View Warnings** - In the top navigation area, you will see a real-time set of errors and warnings, that might have occured as you define your dialog task, located on the top-right of the Dialog Builder. Click the information icon to display any errors or warnings as shown in the following illustration.
 
-    <img src="../images/using-dialog-builder-img24-error-and-warnings.png" alt="Troubleshooting - Errors and Warnings" title="Troubleshooting - Errors and Warnings" style="border:1px solid gray; zoon:60%;">
+    <img src="../images/using-dialog-builder-img24-error-and-warnings.png" alt="Troubleshooting - Errors and Warnings" title="Troubleshooting - Errors and Warnings" style="border:1px solid gray;zoom:60%;">
 
 * **Display Options** - You can use **Display Options** to better utilize screen real estate.
 
-    <img src="../images/using-dialog-builder-img29-display-settings.png" alt="Display settings" title="Display serrings" style="border:1px solid gray; zoon:60%;">
+    <img src="../images/using-dialog-builder-img29-display-settings.png" alt="Display settings" title="Display serrings" style="border:1px solid gray;zoom:60%;">
 
     Display Options are used to:
 
@@ -164,7 +164,7 @@ The Dialog Design process occurs in the Conversation Designer. This comes with i
 
 ### The Index Panel
 
-<img src="../images/using-dialog-builder-index-panel.png" alt="Index Panel" title="Index Panel" style="border:1px solid gray; zoom:60%;">
+<img src="../images/using-dialog-builder-index-panel.png" alt="Index Panel" title="Index Panel" style="border:1px solid gray;zoom:60%;">
 
 The Index panel consists of a robust set of features within its dialog builder to enhance collaboration and organization. Here's a breakdown of the mentioned features:
 
@@ -178,7 +178,7 @@ You can add, edit, move or delete text, comments or bookmarks as per need. Howev
 
 Bookmarks offer the ability to organize and reference important information. You can bookmark frequently visited or crucial content in the canvas with relevant information. They help you to navigate to the bookmarked content without having to search or browse extensively. 
 
-<img src="../images/using-dialog-builder-img22-bookmark-tab.png" alt="Bookmark tab" title="Bookmark tab" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-img22-bookmark-tab.png" alt="Bookmark tab" title="Bookmark tab" style="border:1px solid gray;zoom:60%;">
 
 Here's how the ability to add bookmarks can be advantageous:
 
@@ -201,7 +201,7 @@ You can perform a textual search for bookmarks as well, that would show you the 
 
 The **Assets** tab contains all the node types as expandable lists, upon expanding them you can see an option to add a new node of that type to the canvas, as well as all the nodes of that type that are created for the current app, irrespective of whether they are added to any dialog.
 
-<img src="../images/using-dialog-builder-assets-tab.gif" alt="Assets tab" title="Assets tab" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-assets-tab.gif" alt="Assets tab" title="Assets tab" style="border:1px solid gray;zoom:60%;">
 
 All the created nodes you see in this tab are **reusable**. You can drag and drop them or add them using the **"+" (Connector)** before, after or between existing [sequences](#sequences).
 
@@ -211,7 +211,7 @@ You can perform a textual search for nodes as well, that would show you the node
 
 On this tab, you can see a list of **all the sequences present in the Current Dialog**. Upon clicking the sequence name, you see all the nodes present in that sequence. Hence, please note that here, you see only the nodes that are added to the canvas for the current dialog.
 
-<img src="../images/using-dialog-builder-nodes-tab.gif" alt="Nodes tab" title="Nodes tab" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-nodes-tab.gif" alt="Nodes tab" title="Nodes tab" style="border:1px solid gray;zoom:60%;">
 
 You can perform a textual search for nodes and sequences as well, that would show you the nodes/sequences in the current dialog that match the search text.
 
@@ -219,7 +219,7 @@ You can perform a textual search for nodes and sequences as well, that would sho
 
 The Canvas is where you can integrate your conversation scenarios with your business logic.
 
-<img src="../images/navigate-dialog-builder-canvas.png" alt="Dialog builder - Canvas" title="Dialog builder - Canvas" style="border:1px solid gray; zoom:60%;">
+<img src="../images/navigate-dialog-builder-canvas.png" alt="Dialog builder - Canvas" title="Dialog builder - Canvas" style="border:1px solid gray;zoom:60%;">
 
 The canvas would typically contain:
 
@@ -239,7 +239,7 @@ Like any other dialog, you can configure the component, NLP and Connection prope
 
 These are placeholders for creating groups of nodes. Each sequence has one or more nodes added in logical sequences.
 
-<img src="../images/using-dialog-builder-sequence.png" alt="Sequence" title="Sequence" style="border:1px solid gray; zoom:60%;">
+<img src="../images/using-dialog-builder-sequence.png" alt="Sequence" title="Sequence" style="border:1px solid gray;zoom:60%;">
 
 The task being designed in a dialog can be broken down into several sub-tasks. For example, if you are developing a dialog to send money from one account to another, you may break the tasks into sub-tasks like gathering account owner's details, gathering recipient account's details, transfer the money, success scenario, failure scenario etc. You can have a sequence each for each sub-task.
 
@@ -256,7 +256,7 @@ You can also add  a sequence **in-between two existing sequences**. Below are th
 * Set the connection between the source sequence to the new sequence.
 * Set the connection between the new sequence to the Destination sequence.
 
-<img src="../images/using-dialog-builder-sequence-connection.gif" alt="Sequence connection" title="Sequence connection" style="border:1px solid gray; zoom:60%;">
+<img src="../images/using-dialog-builder-sequence-connection.gif" alt="Sequence connection" title="Sequence connection" style="border:1px solid gray;zoom:60%;">
 
 You can delete a sequence by right clicking on it and selecting **Delete** from the menu.
 
@@ -264,7 +264,7 @@ You can delete a sequence by right clicking on it and selecting **Delete** from 
 
 	This action cannot be undone.
 
-<img src="../images/using-dialog-builder-img15-node-delete.png" alt="Delete sequence" title="Delete sequence" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-img15-node-delete.png" alt="Delete sequence" title="Delete sequence" style="border:1px solid gray;zoom:60%;">
 
 
 #### Nodes
@@ -304,7 +304,7 @@ It is a miniature representation of the visual appearance of the dialog design.
 
 The **Nodes panel** is a streamlined, user-friendly categorization provided at the bottom of the canvas. Click on a group to see the node types within it, and drag and drop the nodes too add them to the dialog. The nodes added from this panel will get added as reusable assets to the **Assets** tab of the **Index panel**.
 
-<img src="../images/using-dialog-builder-node-panel.png" alt="Node panel" title="Node panel" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-node-panel.png" alt="Node panel" title="Node panel" style="border:1px solid gray;zoom:60%;">
 
 The groups are:
 
@@ -326,7 +326,7 @@ There are two ways to add a node:
 You can add nodes within the dialog task, by dragging the node from the Index panel on the left, or the Node panel at the bottom, to the designated place in the dialog task, on the canvas. You can drop the node within an existing sequence, or outside the sequences; in this case a new sequence will get created automatically, containing the newly added node.
 
 
-<img src="../images/using-dialog-builder-add-nodes-drag-drop.gif" alt="Adding nodes by drag and drop" title="Adding nodes by drag and drop" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-add-nodes-drag-drop.gif" alt="Adding nodes by drag and drop" title="Adding nodes by drag and drop" style="border:1px solid gray;zoom:60%;">
 
 You can also add a node directly on the canvas, in which case a new sequence gets created. You can then drag and drop the node to an existing sequence, if that is how you wish to place it.
 
@@ -335,7 +335,7 @@ You can also add a node directly on the canvas, in which case a new sequence get
 
 Click the <img src="../images/using-dialog-builder-img17-nodes-connector.png"> button in the **Transition** node of the sequence after which you want to add another node. You will see a list of all the nodes that have been created in the current app along with the node type, and an option to create and add a new node, and can select any of these to add.
 
-<img src="../images/using-dialog-builder-add-nodes-on-canvas.gif" alt="Adding nodes by connector" title="Adding nodes by connector" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-add-nodes-on-canvas.gif" alt="Adding nodes by connector" title="Adding nodes by connector" style="border:1px solid gray;zoom:60%;">
 
 ### Add If-Else Connections
 
@@ -343,11 +343,11 @@ You can add conditions to the sequence by adding **If-Else connection** in the *
 
 To do this, hover over the **Transitions** section and click **Add New.** [Learn more](../node-connections/nodes-conditions/){:target="_blank"}.
 
-<img src="../images/using-dialog-builder-img16-nodes-transition.png" alt="Transitions - Add New" title="Transitions - Add New" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-img16-nodes-transition.png" alt="Transitions - Add New" title="Transitions - Add New" style="border:1px solid gray;zoom:60%;">
 
 You can also set connections through the **Connection Properties**.
 
-<img src="../images/using-dialog-builder-connection-properties-if-else.png" alt="Transitions - Add New connection through Connection Properties" title="Transitions - Add New connection through Connection Properties" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-connection-properties-if-else.png" alt="Transitions - Add New connection through Connection Properties" title="Transitions - Add New connection through Connection Properties" style="border:1px solid gray;zoom:60%;">
 
 
 ## Node Properties
@@ -360,9 +360,7 @@ Clicking on a node will open its Properties panel, which includes specific featu
 * **NLP Properties** for intent and entity recognition.
 * **Voice Call Properties** for IVR channels (available for certain nodes only after [IVR integration](../node-types/voice-call-properties/){:target="_blank"}).
 
-<img src="../images/using-dialog-builder-img20-asset-properties.png" alt="Node properties" title="Node properties" style="border:1px solid gray; zoon:60%;">
-
-You can learn more about how to configure the properties of different nodes by going through the documentations for each node type.
+<img src="../images/using-dialog-builder-img20-asset-properties.png" alt="Node properties" title="Node properties" style="border:1px solid gray;zoom:60%;">
 
 ## Node Groups (Planned for Phase 2)
 
@@ -404,14 +402,14 @@ If you are using the group to set up a Subintent, you can also configure it, usi
 
 The More options menu, accessible at the top right of the Dialog Builder, is where you can find shortcuts to dialog settings, manage interruptions, amend behavior, and view all comments.
 
-<img src="../images/using-dialog-builder-img25-more-options.png" alt="More options" title="More options" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-img25-more-options.png" alt="More options" title="More options" style="border:1px solid gray;zoom:60%;">
 
 
 ### Dialog Settings
 
 The **Dialog Settings** panel allows you to modify the dialog task basic settings, and if desired, set the visibility of a dialog to create a hidden dialog task that is available for use, but not shown as a task. You can access Dialog Settings using the More Options Menu. 
 
-<img src="../images/using-dialog-builder-img26-dialog-settings.png" alt="Dialog settings" title="Dialog settings" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-img26-dialog-settings.png" alt="Dialog settings" title="Dialog settings" style="border:1px solid gray;zoom:60%;">
 
 Add or modify the following settings for your dialog:
 
@@ -442,7 +440,7 @@ Add or modify the following settings for your dialog:
 
 The **Manage Interruptions** options allow you to select if and how a user can switch to another task, as well as the exit strategies. It can be set up at the VA, task, and node levels to ensure the configurations are layered to suit your various business requirements. You can also add conditional exceptions between tasks with the ability to pass contextual data between them.
 
-<img src="../images/using-dialog-builder-img27-manage-interruptions.png" alt="Manage Interruptions" title="Manage Interruptions" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-img27-manage-interruptions.png" alt="Manage Interruptions" title="Manage Interruptions" style="border:1px solid gray;zoom:60%;">
 
 Click here to [learn more](../../../intelligence/conversation-management/manage-interruptions/#dialog-level-settings){:target="_blank"}.
 
@@ -451,7 +449,7 @@ Click here to [learn more](../../../intelligence/conversation-management/manage-
 
 Using **Amend Entity,** you can allow the users to amend entity values and also control the post-amendment dialog behavior.
 
-<img src="../images/using-dialog-builder-img28-manage-ammend-behavior.png" alt="Manage Ammend behavior" title="Manage Ammend behavior" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-img28-manage-ammend-behavior.png" alt="Manage Ammend behavior" title="Manage Ammend behavior" style="border:1px solid gray;zoom:60%;">
 
 Click here to [learn more.](../../../natural-language/nlu-configurations/amend-entities/#task-level){:target="_blank"}
 
@@ -459,4 +457,4 @@ Click here to [learn more.](../../../natural-language/nlu-configurations/amend-e
 
 Through this option you can view all the [comments](#text-comments-and-bookmarks) added to the current dialog.
 
-<img src="../images/using-dialog-builder-view-all-comments.gif" alt="View all comments" title="View all comments" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-view-all-comments.gif" alt="View all comments" title="View all comments" style="border:1px solid gray;zoom:60%;">
