@@ -18,7 +18,7 @@ hide:
 
     ---
 
-    Use Cases are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent.
+    Adding a line here Use Cases are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent.
 
     [:octicons-arrow-right-24: Learn more](#)
 
