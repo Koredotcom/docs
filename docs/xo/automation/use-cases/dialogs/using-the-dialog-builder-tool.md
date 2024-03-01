@@ -109,7 +109,7 @@ You can either scroll through the entire list, or find the required template usi
 
 Before moving on, here is an overview of the Dialog Task Builder. For details on navigating dialog tasks, please see [Navigating the Dialog Task Builder](../navigating-dialog-tasks/){:target="_blank"}.
 
-<img src="images/navigate-dialog-builder.png" alt="Dialog builder" title="Dialog builder" style="border:1px solid gray;zoom:70%;">
+<img src="../images/navigate-dialog-builder.png" alt="Dialog builder" title="Dialog builder" style="border:1px solid gray;zoom:70%;">
 
 The Dialog Builder interface consists of:
 
@@ -139,11 +139,27 @@ The Dialog Design process occurs in the Conversation Designer. This comes with i
 
     <img src="../images/tool-set-search.gif" alt="Search" title="Search" style="border:1px solid gray;zoom:70%;">
 
-* **Switch between Dialog Tasks** – Use this dropdown if you need to switch a different dialog task within the same app. You don’t have to go back to the list of dialogs to do so.
+* **Switch between Dialog Tasks** – The Builder comes with a dedicated task switcher, which you can use to easily change to working on a different task within your selected app. This option is located at the top of your canvas
+
+<img src="../images/using-dialog-builder-img23-task-switcher.png" alt="Task switcher" title="Task switcher" style="border:1px solid gray; zoon:60%;">
+
 * **Test** -  You can chat with the app in real-time to test recognition, performance, and flow as if it were a live session.
-* **View Warnings** - You can see a list of errors and warnings that might have occured during the conversation design, and do the needful to rectify them.
-* **Visual Settings** - You can manage the zoom percentage and other visual settings like Fit to Screen, Show or Hide Mini map and Zoom to Last Edited. This setting is represented on the Tool Set by The Zoom percentage.
-* **More options**, where you can access Dialog Settings, Manage Interruptions, Manage Ammend behavior and View Comments.
+* **View Warnings** - In the top navigation area, you will see a real-time set of errors and warnings, that might have occured as you define your dialog task, located on the top-right of the Dialog Builder. Click the information icon to display any errors or warnings as shown in the following illustration.
+
+    <img src="../images/using-dialog-builder-img24-error-and-warnings.png" alt="Troubleshooting - Errors and Warnings" title="Troubleshooting - Errors and Warnings" style="border:1px solid gray; zoon:60%;">
+
+* **Display Options** - You can use **Display Options** to better utilize screen real estate.
+
+    <img src="../images/using-dialog-builder-img29-display-settings.png" alt="Display settings" title="Display serrings" style="border:1px solid gray; zoon:60%;">
+
+    Display Options are used to:
+
+    * **Fit to Screen** – Resizes Dialog Builder components and connections to fit within the display screen resolution for a single, non-scrolling page.
+    * **Zoom Level** – is used to set the zoom level as per need.
+    * **Zoom to Last Edited** – Takes you to the zoom level you have used to edit the dialog
+    * **Hide/Show Mini Map** – To show or hide the mini map of the dialog.
+    
+* **More options**, where you can access Dialog Settings, Manage Interruptions, Manage Ammend behavior and View Comments. [Read more...](#the-more-options-menu)
 * **Users in the dialog** - You can see bubbles containing names of all the users of the current dialog, like Bot Owner, Bot Developer, Conversation Designer etc.
 
 ### The Index Panel
@@ -185,9 +201,9 @@ You can perform a textual search for bookmarks as well, that would show you the 
 
 The **Assets** tab contains all the node types as expandable lists, upon expanding them you can see an option to add a new node of that type to the canvas, as well as all the nodes of that type that are created for the current app, irrespective of whether they are added to any dialog.
 
-<img src="../images/using-dialog-builder-assets-tab.png" alt="Assets tab" title="Assets tab" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-assets-tab.gif" alt="Assets tab" title="Assets tab" style="border:1px solid gray; zoon:60%;">
 
-All the created nodes you see in this tab are **reusable**. You can drag and drop them or add them using the **"+"** before, after or between existing [sequences](#sequences).
+All the created nodes you see in this tab are **reusable**. You can drag and drop them or add them using the **"+" (Connector)** before, after or between existing [sequences](#sequences).
 
 You can perform a textual search for nodes as well, that would show you the nodes in the current app that match the search text, along with the node type.
 
@@ -195,7 +211,7 @@ You can perform a textual search for nodes as well, that would show you the node
 
 On this tab, you can see a list of **all the sequences present in the Current Dialog**. Upon clicking the sequence name, you see all the nodes present in that sequence. Hence, please note that here, you see only the nodes that are added to the canvas for the current dialog.
 
-<img src="../images/using-dialog-builder-nodes-tab.png" alt="Nodes tab" title="Nodes tab" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-nodes-tab.gif" alt="Nodes tab" title="Nodes tab" style="border:1px solid gray; zoon:60%;">
 
 You can perform a textual search for nodes and sequences as well, that would show you the nodes/sequences in the current dialog that match the search text.
 
@@ -209,21 +225,25 @@ The canvas would typically contain:
 
 #### The Root Intent
 
-This is the first component of any conversation and will be displayed on your canvas by default, whenever you create a new Dialog Task.
+This is the first component of any conversation and will be automatically placed on your canvas by default, whenever you create a new Dialog Task.
 
-<img src="../images/root-intent.png" alt="Root intent" title="Root intent" style="border:1px solid gray; zoom:60%;">
+You would note that the display name and description of the root intent are same as the Dialog's. Please note that the Root Intent will be an independent node, and will not be a part of any sequence.
 
-You would note that 
+Like any other dialog, you can configure the component, NLP and Connection properties of Root Intent. While configuring the connection properties, you should know that:
 
-* **Nodes** – These are the different points at which components of your conversation intersect. For details, please see [Node Types](../node-types/nodes-transitions/){:target="_blank"}.
-* **Sequences** - These are placeholders for creating groups of nodes. Each sequence has one or more nodes added in logical sequences.
-* **Mini map** - A miniature representation of the visual appearance of the dialog.
+* Only one, **default** connection is available for the Root Intent.
+* You can connect a Root Intent to any node present in the canvas, but not a sequence. The node to connect can be any node, and not necessarily the first node of a sequence.
+* Creating If-Else connection paths is not possible for the Root Intent.
 
-## Sequences
+#### Sequences
 
-In UXO, a **Sequence** is a building block of a dialog that contains one or more nodes in the required sequence of execution.. You can divide the dialog into sequences based on sub tasks within the dialog.
+These are placeholders for creating groups of nodes. Each sequence has one or more nodes added in logical sequences.
 
-**_[video of node creation]_**
+<img src="../images/using-dialog-builder-sequence.png" alt="Sequence" title="Sequence" style="border:1px solid gray; zoom:60%;">
+
+The task being designed in a dialog can be broken down into several sub-tasks. For example, if you are developing a dialog to send money from one account to another, you may break the tasks into sub-tasks like gathering account owner's details, gathering recipient account's details, transfer the money, success scenario, failure scenario etc. You can have a sequence each for each sub-task.
+
+Each sequence contains one or more nodes placed in a logical sequence, and a **Transition** section in the end, through which you can either continue the flow of dialog to the next sequence, or split the flow into two or more paths based on [conditions](#add-if-else-node-connections).
 
 You can set connections between two sequences; Drag the connector <img src="../images/using-dialog-builder-img17-nodes-connector.png">
  from the source sequence to the required destination sequence. Please note that by default, the connection will be from the **bottommost node of the source sequence** to the **topmost node on the destination sequence**.
@@ -236,15 +256,7 @@ You can also add  a sequence **in-between two existing sequences**. Below are th
 * Set the connection between the source sequence to the new sequence.
 * Set the connection between the new sequence to the Destination sequence.
 
-**_[Video of connection]_**
-
-All the sequences created can be seen on the **Nodes** tab in the left hand side menu.
-
-<img src="../images/using-dialog-builder-img18-nodes-tab.png" alt="Nodes tab" title="Nodes tab" style="border:1px solid gray; zoon:60%;">
-
-For example, in the flight booking dialog, you can have separate sequences for gathering passenger details, gathering trip details, generating pnr, etc. Each sequence contains one or more nodes grouped into coherent sequences. Align the nodes logically and provide clear, descriptive names for the sequences to facilitate future reference and comprehension. 
-
-<img src="../images/using-dialog-builder-img19-assets-and-nodes.png" alt="Assets and Nodes" title="Assets and Nodes" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-sequence-connection.gif" alt="Sequence connection" title="Sequence connection" style="border:1px solid gray; zoom:60%;">
 
 You can delete a sequence by right clicking on it and selecting **Delete** from the menu.
 
@@ -252,7 +264,54 @@ You can delete a sequence by right clicking on it and selecting **Delete** from 
 
 	This action cannot be undone.
 
-<img src="../images/using-dialog-builder-img15-node-delete.png" alt="Delete node" title="Delete node" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-img15-node-delete.png" alt="Delete sequence" title="Delete sequence" style="border:1px solid gray; zoon:60%;">
+
+
+#### Nodes
+
+Nodes are the different points at which components of your conversation intersect. Each kind of node has a set of discinct features and can be used to funfill a specific purpose, like displaying a text message, provide user a digital form to provide data, gather a specific piece of data from the user, accessing data file etc.
+
+For details, please see [Node Types](../node-types/nodes-transitions/){:target="_blank"}.
+
+You can add nodes inside or outside sequences. Also, you can drag and drop nodes, or add them using the connector next to a sequence. Adding a node using connector will automatically create a new sequence containing the new node and Transition. [Read more.](#add-node-to-dialog)
+
+You can delete a node by right clicking on it and selecting **Delete** from the menu.
+
+!!! Warning
+
+	This action cannot be undone. However, the deleted node will still be available in the **Assets** tab of the **Index panel**.
+
+
+#### Text, Comments and Bookmarks
+
+UXO provides features like Text, Comments and Bookmarks to keep notes and establish collaboration between app users.
+
+You can add **Text** in order to make notes, for example, you can place texts on strategic points on the canvas and write down the introduction od the dialog, list of sun-tasks, purpuse of each sub-task on them.
+
+Using **Bookmarks** you can create navigation points in a dialog with complex structure, so that you can quickly navigate to the bookmarked points without having to manually search the entire design. You can mention the specific point of the dialog flow in the bookmarks as easy reference for other users.
+
+<img src="../images/navigate-dialog-builder-text-bookmark.png" alt="Text and Bookmark" title="Text and Bookmark" style="border:1px solid gray;zoom:70%;">
+
+**Comments** are effective to create collaborative environment. Often, in the course of development, at some point you may need help and inputs from other bot users, for example you need them to pitch in with their knowledge about the business logic or functional expertise, or need clarifications in order to proceed. In such situations you can place a comment wherein you can tag the respective user and mention your need. Note that unlike Text and Bookmarks, you can add your response to a comment.
+
+<img src="../images/using-dialog-builder-comment-response.png" alt="Comment and Response" title="Comment and Response" style="border:1px solid gray;zoom:70%;">
+
+#### Mini map
+
+It is a miniature representation of the visual appearance of the dialog design.
+
+### The Nodes Panel
+
+The **Nodes panel** is a streamlined, user-friendly categorization provided at the bottom of the canvas. Click on a group to see the node types within it, and drag and drop the nodes too add them to the dialog. The nodes added from this panel will get added as reusable assets to the **Assets** tab of the **Index panel**.
+
+<img src="../images/using-dialog-builder-node-panel.png" alt="Node panel" title="Node panel" style="border:1px solid gray; zoon:60%;">
+
+The groups are:
+
+* **Inform** - Contains the nodes that can be used to provide information to the user. Eg: Message node.
+* **Ask** - Contains the nodes that can be used to get input from user. Eg: Confirmation, Entity.
+* **Action** - Contains nodes can be used for any action that the app is expected to perform without interaction with the user. Eg: Script, Service, Process, Agent Transfer
+* **GenAI** - Contains nodes that can be used to leverage the full potential of LLMs and Generative AI models to quickly build conversations that involve complex flows and also provide human-like experiences. Eg: GenAI Node, GenAI Prompt.
 
 
 ## Add node to dialog
@@ -260,25 +319,25 @@ You can delete a sequence by right clicking on it and selecting **Delete** from 
 There are two ways to add a node:
 
 1. Drag and drop nodes from the panel onto the dialog builder, [see below](#use-drag-and-drop).
-2. Using the options from the Dialog Builder Canvas, [see below](#use-the-dialog-canvas).
+2. Using the options on the Dialog Builder Canvas using Connector, [see below](#use-the-dialog-canvas).
 
 ### Use Drag and Drop
 
-You can add nodes within the dialog task, by dragging the node from the panel on the left to the designated place in the dialog task, on the canvas. You can drop the node within an existing node, or outside the nodes; in this case a sequence will get created automatically, containing the newly added node.
+You can add nodes within the dialog task, by dragging the node from the Index panel on the left, or the Node panel at the bottom, to the designated place in the dialog task, on the canvas. You can drop the node within an existing sequence, or outside the sequences; in this case a new sequence will get created automatically, containing the newly added node.
 
-Additionally, a streamlined node panel with user-friendly categorization is provided at the bottom of the canvas. The categories, namely **Ask, Inform, Action, AI, and Integration** provide a clear organization for you to easily locate the required nodes. Nodes can be dragged and dropped from here too.
 
-**_[VIDEO Drag Drop]_**
+<img src="../images/using-dialog-builder-add-nodes-drag-drop.gif" alt="Adding nodes by drag and drop" title="Adding nodes by drag and drop" style="border:1px solid gray; zoon:60%;">
+
+You can also add a node directly on the canvas, in which case a new sequence gets created. You can then drag and drop the node to an existing sequence, if that is how you wish to place it.
 
 
 ### Use the Dialog Canvas
 
-Click the <img src="../images/using-dialog-builder-img17-nodes-connector.png"> button next to the sequence after which you want to add another node. You can either add a node directly on the canvas, in which case a new sequence gets created. You can then drag and drop the node to an existing sequence, if that is how you wish to place it.
+Click the <img src="../images/using-dialog-builder-img17-nodes-connector.png"> button in the **Transition** node of the sequence after which you want to add another node. You will see a list of all the nodes that have been created in the current app along with the node type, and an option to create and add a new node, and can select any of these to add.
 
-**_[video of adding node on canvas]_**
+<img src="../images/using-dialog-builder-add-nodes-on-canvas.gif" alt="Adding nodes by connector" title="Adding nodes by connector" style="border:1px solid gray; zoon:60%;">
 
-
-### Add If-Else Node Connections
+### Add If-Else Connections
 
 You can add conditions to the sequence by adding **If-Else connection** in the **Transition** section of the sequence. This is where you can set the execution path based on the condition.
 
@@ -286,9 +345,9 @@ To do this, hover over the **Transitions** section and click **Add New.** [Learn
 
 <img src="../images/using-dialog-builder-img16-nodes-transition.png" alt="Transitions - Add New" title="Transitions - Add New" style="border:1px solid gray; zoon:60%;">
 
-Sequence can be deleted by right clicking on it, and then clicking **Delete.**
+You can also set connections through the **Connection Properties**.
 
-<img src="../images/using-dialog-builder-delete-asset.png" alt="Delete node" title="Delete node" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-connection-properties-if-else.png" alt="Transitions - Add New connection through Connection Properties" title="Transitions - Add New connection through Connection Properties" style="border:1px solid gray; zoon:60%;">
 
 
 ## Node Properties
@@ -303,15 +362,7 @@ Clicking on a node will open its Properties panel, which includes specific featu
 
 <img src="../images/using-dialog-builder-img20-asset-properties.png" alt="Node properties" title="Node properties" style="border:1px solid gray; zoon:60%;">
 
-
-
-
-
-
-
-
-
-
+You can learn more about how to configure the properties of different nodes by going through the documentations for each node type.
 
 ## Node Groups (Planned for Phase 2)
 
@@ -349,70 +400,14 @@ If you are using the group to set up a Subintent, you can also configure it, usi
 ![alt_text](images/image29.png "image_tooltip")
 
 
-
-## Bot Action Nodes (Needed?)
-
-
-Bot Action nodes include the following nodes, that need processing by the app without user interaction:
-
-* [Service ](../node-types/working-with-the-service-node/){:target="_blank"}Asset
-* [Script ](../node-types/working-with-the-script-node/){:target="_blank"}Asset
-* [Logic](../node-types/working-with-the-logic-node/){:target="_blank"} Asset
-* [Webhook](../node-types/working-with-the-web-hook-node/){:target="_blank"} Asset
-* [Process](../node-types/process-nodes/){:target="_blank"} Asset
-
-To access these nodes follow the steps below:
-
-1. Add a **Bot Action** node to your dialog task canvas.
-2. Click the **expand (+)** button next to the Bot Action node. The primary nodes panel will be replaced with the Bot Action nodes panel.
-3. The Bot Action Node shows all of its containing nodes as a group. Add any node from here, using either the “+” sign or drag and drop. Bot Action Nodes provide the following options: On the left side of the node there is an **Expand (+)** button if the node is collapsed, and a **Collapse (-)** button if the node is expanded. Nodes can also be collapsed using the **Close (x)** button on the top right.
-4. Nodes inside the bot action node cannot be connected directly to any node outside the bot action.
-5. For the nodes inside the bot action node, the following connections can be configured:
-    1. **Node Connections** – this option can be used to define the connection rules connecting to nodes within the bot action node. This can be configured to:
-        1. **Any node within the corresponding bot action node**;
-        2. **Not Connected**;
-        3. **End of Bot Action** – this would take the bot flow to the node connected to the bot action node;
-    2. **Bot Action Connections** – this option can be used to define the connection rules connecting to a node outside of the current Bot Action. These rules would be applied to the bot action node as a whole.
-
-
-
-<p id="gdcalert30" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image30.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert31">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image30.gif "image_tooltip")
-
-
-
-## Switch Tasks
-
-The Builder comes with a dedicated task switcher, which you can use to easily change to working on a different task within your selected app. This option is located at the top of your canvas
-
-<img src="../images/using-dialog-builder-img23-task-switcher.png" alt="Task switcher" title="Task switcher" style="border:1px solid gray; zoon:60%;">
-
-
-## Menu Options
-
-<img src="../images/dialog-top-menu.png" alt="Top Menu" title="Top Menu" style="border:1px solid gray; zoon:60%;">
-
-The top menu provides access to a variety of options which you can use while working on your Dialog Task. The following options are specific to the Logic-Driven Dialog Builder:
-
-* **Errors and Warnings** – Any potential errors and warnings in your Dialog Task will be shown here. Click this area to access information about current errors and warnings.
-
-    <img src="../images/using-dialog-builder-img24-error-and-warnings.png" alt="Errors and Warnings" title="Errors and Warnings" style="border:1px solid gray; zoon:60%;">
-
-* **Find Nodes** – This search option will look for tasks containing your keywords and highlight them onto the canvas. 
- 
-**_[Video - Find Nodes]_**
-
-
-### The ‘More Options’ Menu
+## The ‘More Options’ Menu
 
 The More options menu, accessible at the top right of the Dialog Builder, is where you can find shortcuts to dialog settings, manage interruptions, amend behavior, and view all comments.
 
 <img src="../images/using-dialog-builder-img25-more-options.png" alt="More options" title="More options" style="border:1px solid gray; zoon:60%;">
 
 
-#### Dialog Settings
+### Dialog Settings
 
 The **Dialog Settings** panel allows you to modify the dialog task basic settings, and if desired, set the visibility of a dialog to create a hidden dialog task that is available for use, but not shown as a task. You can access Dialog Settings using the More Options Menu. 
 
@@ -443,7 +438,7 @@ Add or modify the following settings for your dialog:
         * Specific to this task – initiate a task, run script, or show a message.
 
 
-#### Manage Interruptions
+### Manage Interruptions
 
 The **Manage Interruptions** options allow you to select if and how a user can switch to another task, as well as the exit strategies. It can be set up at the VA, task, and node levels to ensure the configurations are layered to suit your various business requirements. You can also add conditional exceptions between tasks with the ability to pass contextual data between them.
 
@@ -452,7 +447,7 @@ The **Manage Interruptions** options allow you to select if and how a user can s
 Click here to [learn more](../../../intelligence/conversation-management/manage-interruptions/#dialog-level-settings){:target="_blank"}.
 
 
-#### Manage Ammend Behavior
+### Manage Ammend Behavior
 
 Using **Amend Entity,** you can allow the users to amend entity values and also control the post-amendment dialog behavior.
 
@@ -460,23 +455,8 @@ Using **Amend Entity,** you can allow the users to amend entity values and also 
 
 Click here to [learn more.](../../../natural-language/nlu-configurations/amend-entities/#task-level){:target="_blank"}
 
+### View All Comments
 
-### Display Options
+Through this option you can view all the [comments](#text-comments-and-bookmarks) added to the current dialog.
 
-You can use **Display Options** to better utilize screen real estate.
-
-<img src="../images/using-dialog-builder-img29-display-settings.png" alt="Display settings" title="Display serrings" style="border:1px solid gray; zoon:60%;">
-
-Display Options are used to:
-
-* **Fit to Screen** – Resizes Dialog Builder components and connections to fit within the display screen resolution for a single, non-scrolling page.
-* **Zoom Level** – is used to set the zoom level as per need.
-* **Zoom to Last Edited** – Takes you to the zoom level you have used to edit the dialog
-* **Hide/Show Mini Map** – To show or hide the mini map of the dialog.
-
-
-## Troubleshooting
-
-In the top navigation area, you will see a real-time set of errors and warnings are available as you define your dialog task located on the top-right of the Dialog Builder. Click the information icon to display any errors or warnings as shown in the following illustration.
-
-<img src="../images/using-dialog-builder-img30-error-warning.png" alt="Troubleshooting - Errors and Warnings" title="Troubleshooting - Errors and Warnings" style="border:1px solid gray; zoon:60%;">
+<img src="../images/using-dialog-builder-view-all-comments.gif" alt="View all comments" title="View all comments" style="border:1px solid gray; zoon:60%;">
