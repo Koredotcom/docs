@@ -15,21 +15,12 @@ To add a Process node, please follow the steps below:
 
 1. **Select the Virtual Assistant** that you want to work with.
 2. **Open the Dialog Task** to which you want to add the node. 
-3. **Add or expand a Bot Action node**.
+3. **Add the Process node**. The node configuration panel will open automatically, with the **Component Properties** tab selected.
 
-    <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image1.png "image_tooltip")
-
-4. **Add the Process node**. The node configuration panel will open automatically, with the **Component Properties** tab selected.
-
-    <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image2.png "image_tooltip")
+    <img src="../images/process-node.png" alt="Process node" title="Process node" style="border:1px solid gray;zoom:70%;">
 
 
 ## Configure the Node
-
 
 ### Component Properties
 
@@ -47,10 +38,8 @@ The Component Properties tab lets you modify configurations of this process acro
 3. **Choose a Process App** to connect the node to. 
 4. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the variable namespace is enabled for the bot. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespaces](../../../../../app-settings/managing-namespace){:target="_blank"}.
 
-    <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image3.png "image_tooltip")
-
+<img src="../images/process-node-component-properties.png" alt="Process node - Component properties" title="Process node - Component Properties" style="border:1px solid gray;zoom:70%;">
+    
 ### Connection Properties
 
 Since they are contained within Bot Action nodes, Process nodes cannot be connected on their own to any other nodes outside the Bot Action node to which they belong. Connections can only be made with nodes contained within the same Bot Action node.  
@@ -68,6 +57,4 @@ For both connection types you can write conditional statements based on the valu
 
 To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"}.
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image4.png "image_tooltip")
+<img src="../images/process-node-connection-properties.png" alt="Process node - Connection properties" title="Process node - Connection Properties" style="border:1px solid gray;zoom:70%;">
