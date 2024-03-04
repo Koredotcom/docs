@@ -37,7 +37,7 @@ To configure the Component Properties tab, please follow the steps below:
 
 1. On the **Component Properties** tab, under the **General Settings** section, you can modify the **Name** and **Display Name**.
 2. In the **Variable Namespaces** section (v8.0), associate the variable namespaces to execute this node and its transitions. This option is visible only when the variable namespace is enabled for the assistant. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
-3. Use the **Manage Context Variables** section to set the context variables by entering a key-value pair. Use the full path of the variable in the _key_ field i.e. <code><em>context.BotUserSession.&lt;variable_name>.</em></code>
+3. Use the **Manage Context Variables** section to set the context variables by entering a key-value pair. Use the full path of the variable in the _key_ field i.e. ```context.BotUserSession.<variable_name>.```
 
     <img src="../images/logic-node-img2-component-properties.png" alt="Logic node - Component Properties" title="Logic node - Component Properties" style="border:1px solid gray;zoom:70%;">
 
@@ -57,15 +57,6 @@ Use the Instance Properties to define any user tags that you want to set.
 
 
 ### Connections Properties
-
-Since they are contained within Bot Action nodes, Logic nodes cannot be connected on their own to any other nodes outside the Bot Action node to which they belong. Connections can only be made with nodes contained within the same Bot Action node. 
-
-From the node’s Connection Properties tab, you can configure the following:
-
-* **Logic Node Connections**: The node within the Bot Action to execute next, after the Logic node runs. 
-* **Bot Action Connections**, where you can update the node to trigger after the Bot Action group is executed. Updates made here will apply to all nodes within the same Bot Action. Please read our article about the Bot Action Node to learn more.
-
-For both connection types you can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use Intents for transitions. 
 
 !!! Note
     

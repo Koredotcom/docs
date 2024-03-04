@@ -5,11 +5,11 @@ In order to create Dialog Tasks, the [Dialog Builder](../../using-the-dialog-bui
 
 ## How do Nodes and Transitions Work?
 
-Nodes are a user-friendly approach to building conversations because they allow both conversation designers and VA developers to conceptualize and visualize the entire flow of a conversation. Placed on a canvas, nodes help create a kind of conversation map that facilitates understanding for both the humans and the VA being developed. 
+Nodes are a user-friendly approach to building conversations because they allow both conversation designers and VA developers to conceptualize and visualize the entire flow of a conversation. Placed on a canvas within sequences, nodes help create a kind of conversation map that facilitates understanding for both the humans and the VA being developed. 
 
-Transitions add logic to the map created by the nodes. This way, the conversation can flow according to particular conditions, workflows, or processes.
+Transitions add logic to the map created by the nodes and sequences. This way, the conversation can flow according to particular conditions, workflows, or processes.
 
-Both nodes and transitions work together, in context, to facilitate the creation of Virtual Assistants that can automate a wide variety of tasks without taking away from the user or customer experience.
+Sequences nodes and transitions work together, in context, to facilitate the creation of Virtual Assistants that can automate a wide variety of tasks without taking away from the user or customer experience.
 
 
 ## Node Types

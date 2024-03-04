@@ -12,9 +12,7 @@ When you test a dialog in the Bot Builder, script node errors are displayed in t
 
 ## Add the Node
 
-Script nodes can only be added as part of a Bot Action node. Therefore, before you can add a Script node, you need to add a Bot Action node. [Read more about Bot Action Nodes](../bot-action-node/){:target="_blank"}.
-
-Keeping this in mind, the setup a Script node in a dialog task involves the following steps:
+The setup a Script node in a dialog task involves the following steps:
 
 1. **Select the Virtual Assistant** you want to work with.
 2. **Open the dialog task** to add the Script node to.
@@ -22,9 +20,11 @@ Keeping this in mind, the setup a Script node in a dialog task involves the foll
 4. The Script window is displayed with the **Component Properties** tab selected by default.
 5. You can configure the **Connection Properties,** [refer here for details](#connections-properties).
 
-    <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    <img src="../images/script-node.png" alt="Script node" title="Script node" style="border:1px solid gray;zoom:70%;">
 
-    ![alt_text](images/image1.png "image_tooltip")
+!!! note
+
+        You can add a script node within an existing sequence or outside any existing sequence. If you add it outside, a new, untitled sequence will automatically get created containing the new script node.
 
 
 ## Configure the Node
@@ -42,9 +42,7 @@ To configure the Component Properties section, please follow the steps below:
 3. On the **Add Script** dialog box, enter your JavaScript; then click **Save**. [See below for JavaScript code examples](#javascript-examples).
 4. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the variable namespace is enabled for the bot. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
 
-    <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image2.png "image_tooltip")
+    <img src="../images/script-node-component-properties.png" alt="Script node - Component properties" title="Script node - Component properties" style="border:1px solid gray;zoom:70%;">
 
 
 ### Instance Properties
@@ -58,9 +56,7 @@ Use the Instance Properties to define any user tags that you want to set for the
 1. On the Script node properties panel, click the **Instance Properties** tab.
 2. Under the **Custom Tags** section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
-    <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image3.png "image_tooltip")
+    <img src="../images/script-node-instance-properties.png" alt="Script node - Instance properties" title="Script node - Instance properties" style="border:1px solid gray;zoom:70%;">
 
 
 ### Connections Properties
@@ -81,18 +77,14 @@ For both connection types you can write conditional statements based on the valu
 
 To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions){:target="_blank"}
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image4.png "image_tooltip")
+<img src="../images/script-node-connection-properties.png" alt="Script node - Connection properties" title="Script node - Connection properties" style="border:1px solid gray;zoom:70%;">
 
 
 ## JavaScript Examples
 
 Using JavaScript, you can customize your dialog task by processing data before or after an API call. For example, directing the dialog task flow. You can use the `Context` object type-ahead feature to identify and select dynamic variables as shown in the following illustration. For more information, refer to [Context Object](../../../context-object/){:target="_blank"}.
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image5.png "image_tooltip")
+<img src="../images/script-node-js-example.png" alt="Script node - Javascript Example" title="Script node - Javascript Example" style="border:1px solid gray;zoom:70%;">
 
 
 ### Manipulating Data
