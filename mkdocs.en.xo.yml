@@ -172,8 +172,8 @@ nav:
           - Process Node: automation/use-cases/dialogs/node-types/process-nodes.md
           - Agent Transfer Node: automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node.md
         - Node Connections:
-          - Node Connections Setup: automation/use-cases/dialogs/node-connections/grouping-nodes.md 
-          - Sub-Intent Scoping: automation/use-cases/dialogs/node-connections/nodes-conditions.md
+          - Node Connections Setup: automation/use-cases/dialogs/node-connections/nodes-conditions.md
+          - Sub-Intent Scoping: automation/use-cases/dialogs/node-connections/grouping-nodes.md 
         - Entity Types: automation/use-cases/dialogs/entity-types.md
         - Entity Rules: automation/use-cases/dialogs/entity-rules.md
         - User Prompts or Messages: automation/use-cases/dialogs/prompt-editor.md
