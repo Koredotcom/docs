@@ -4,9 +4,7 @@ Process nodes are used to connect a Dialog Task to a Process App that has been c
 
 In this article you will learn about working with the Process Node within a Dialog Task. Please see the [Process Assistant documentation](https://developer.kore.ai/process-assistants/){:target="_blank"} to learn more about working with this component of the XO Platform.
 
-Process nodes can only be added as part of a Bot Action node. Therefore, before you can add a Process node, you need to add a Bot Action node. [Read more about Bot Action Nodes.](../bot-action-node/){:target="_blank"}
-
-Keeping this in mind, the setup of a Process node in a Dialog Task involves the following steps:
+The setup of a Process node in a Dialog Task involves the following steps:
 
 
 ## Add the Node
@@ -42,14 +40,7 @@ The Component Properties tab lets you modify configurations of this process acro
     
 ### Connection Properties
 
-Since they are contained within Bot Action nodes, Process nodes cannot be connected on their own to any other nodes outside the Bot Action node to which they belong. Connections can only be made with nodes contained within the same Bot Action node.  
-
-From the node’s **Connection Properties** tab, you can configure the following:
-
-1. **Process Node Connections**: The node within the Bot Action to execute next, after the Process node runs. 
-2. **Bot Action Connections**, where you can update the node to trigger after the Bot Action group is executed. Updates made here will apply to all nodes within the same Bot Action. 
-
-For both connection types you can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use Intents for transitions. 
+You can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use Intents for transitions. 
 
 !!! Note
 

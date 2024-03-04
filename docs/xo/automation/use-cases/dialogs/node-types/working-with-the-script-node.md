@@ -61,14 +61,7 @@ Use the Instance Properties to define any user tags that you want to set for the
 
 ### Connections Properties
 
-Since they are contained within Bot Action nodes, Script nodes cannot be connected on their own to any other nodes outside the Bot Action node to which they belong. Connections can only be made with nodes contained within the same Bot Action node. 
-
-From the node’s **Connection Properties** tab, you can configure the following:
-
-* **Script Node Connections**: The node within the Bot Action to execute next, after the Script node runs. 
-* **Bot Action Connections**, where you can update the node to trigger after the Bot Action group is executed. Updates made here will apply to all nodes within the same Bot Action. 
-
-For both connection types you can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use Intents for transitions. 
+You can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use Intents for transitions. 
 
 !!! Note
 
