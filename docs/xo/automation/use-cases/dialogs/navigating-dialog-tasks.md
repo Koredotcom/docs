@@ -135,7 +135,7 @@ Please see the articles linked below for information on:
 * [Manage Ammend Behavior.](../../../natural-language/nlu-configurations/amend-entities){:target="_blank"}
 
 
-## Conversation Design, Logic Building & Training
+## Dialog Builder - Conversation Design and Logic Building
 
 The Dialog Builder is where you can design, build, train and test the conversations that your VA can have with your users.
 
@@ -147,47 +147,17 @@ You can access them by creating a new Dialog Task or by opening an existing one.
 
 You can build Dialogs by adding and configuring [nodes](../node-types/nodes-transitions/){:target="_blank"} in the required sequence as per business logic in the Dialog Builder.
 
+The Dialog Builder interface consists of:
 
-### Design the Conversation Flow
+ * [Tool Set](../using-the-dialog-builder-tool/#the-tool-set)
+ * [Index Panel](../using-the-dialog-builder-tool/#the-index-panel)
+ * [Canvas](../using-the-dialog-builder-tool/#the-canvas)
+ * [Node Panel](../using-the-dialog-builder-tool/#the-node-panel)
 
-
-#### The Top Menu
-
-<img src="../images/dialog-top-menu.png" alt="Top menu" title="Top menu" style="border:1px solid gray; zoom:60%;">
-
-
-The Dialog Design process occurs in the Conversation Designer. This comes with its specific top menu, where you can access the following features:
-
-* **Exit the Dialog Task Builder and go back to the Dialog Tasks List**.
-* **Add Bookmarks, Text and Comments**
-* **Find** nodes, variables, sequesnces etc
-* **Switch between Dialog Tasks** – Use this dropdown if you need to work on a different task. You don’t have to go back to the list to do so.
-* **Test** to chat with the assistant in real-time to test recognition, performance, and flow as if it were a live session.
-* **View Warnings**
-* **Manage Zoom percentage and other visual settings**
-* **More options**, where you can access Dialog Settings, Manage Interruptions, Manage Ammend behavior and view comments.
+ <img src="../images/navigate-dialog-builder.png" alt="Dialog builder" title="Dialog builder" style="border:1px solid gray;zoom:70%;">
 
 
-#### Build Business Logic - The Dialog Builder
-
-The Dialog Builder is where you can build business logic into your conversations. Here you have access to the tools you need in order to integrate your conversation scenarios with your business logic. Here is an overview of the features it provides.
-
-<img src="../images/navigate-dialog-builder-canvas.png" alt="Dialog builder" title="Dialog builder" style="border:1px solid gray; zoom:60%;">
-
-* **The Canvas** – This represents the entire surface on which the components of your conversation are placed.
-* **The Root Intent** – This is the first component of any conversation and will be displayed on your canvas by default, whenever you create a new Dialog Task.
-* **Nodes** – These are the different points at which components of your conversation intersect. For details, please see [Node Types](../node-types/nodes-transitions/){:target="_blank"}.
-* **Sequences** - These are placeholders for creating groups of nodes. Each sequence has one or more nodes added in logical sequences.
-* **Assets Panel** – Here is where you can choose which Node Type to add and simply drag and drop it to the canvas, at the desired location. You can also add nodes using the ⨁ buttons within your flow.
-* **Nodes panel** -  This tab has a list of sequences created in the current dialog.
-* **Bookmarks panel** - This tab has the list of bookmarks added to sequences and nodes on the canvas.
-* **Component Configuration Panel**– This panel is available when a component is selected, and can be minimized (as shown in the screenshot above).
-* **Display Options Panel** – This panel is only available when no component is selected and allows you to configure Display and Zoom Options, to Auto-Arrange components or to turn the map on or off. The map allows you to see the general area where you are currently located within your flow.
-
-Remember that the more you train your app and the more rigor you apply to the training data, the more effective it becomes.
-
-
-#### Related Links
+## Related Links
 
 * [Using the Dialog Builder](../using-the-dialog-builder-tool){:target="_blank"}
 * [Dialog Task – Legacy Builder](../dialog-task-legacy-builder){:target="_blank"}
