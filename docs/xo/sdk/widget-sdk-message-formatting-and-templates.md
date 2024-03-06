@@ -2,7 +2,7 @@
 
 Kore.ai Widget SDK allows you to override the default message formatting using markdown and apply templates to display custom formatted bot messages to users on the Widget SDK channel.
 
-For details on Web/Mobile SDK, [refer here](web-mobile-sdk-message-formatting-and-templates).
+For details on Web/Mobile SDK, [refer here](../web-mobile-sdk-message-formatting-and-templates).
 
 ### Button Template
 
