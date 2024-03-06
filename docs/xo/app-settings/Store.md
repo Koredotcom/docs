@@ -24,12 +24,9 @@ You can access the store as follows:
 1. As a Kore.ai platform user, you can access the store from within your account.
     1. Log into the Kore.ai XO Platform.
     2. On the landing page, click **Marketplace** at the top right.
-    <img src="../images/marketplace.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/marketplace.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:80%;">
     3. You can also access the Marketplace while creating a new assistant. Click **New Bot**, then click **Explore Templates**.
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image2.png "image_tooltip")
+    <img src="../images/explore-templates.png" alt="Explore Template" title="Explore template" style="border: 1px solid gray; zoom:100%;">
 
 ## Explore Available Assistants
 
