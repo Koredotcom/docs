@@ -412,7 +412,7 @@ print(JSON.stringify(message));
 ![Error template](../images/web-mobile-message-templates/error-template.png "Error template")
 
 
-### **Attachment Template**
+### Attachment Template
 
 Provides support to display images, render videos, links and play audio files to a user based on specified URL links.
 
@@ -422,7 +422,8 @@ The following formats are supported for attachment template:
 * video = [‘mp4’, ‘mov’, ‘3gp’, ‘flv’]
 * image = [‘png’, ‘jpg’, ‘jpeg’, ‘.GIF’]
 
-**Note**: To display images in the attachment template use the “url” of the image.
+!!!note
+  To display images in the attachment template use the “url” of the image.
 
 **Examples**
 
@@ -439,7 +440,8 @@ var message ={
 }
 print(JSON.stringify(message));
 ```
-![Attachment template](../images/web-mobile-message-templates/attachment-template.png "attachment template")
+
+![Attachment template](../images/web-mobile-message-templates/attachment-template.jpg "attachment template")
 
 
 **Image Template**
@@ -456,7 +458,7 @@ var message = {
     print(JSON.stringify(message));
 ```
 
-![Attachment template](../images/web-mobile-message-templates/attachment-template-image.png "attachment template")
+![Attachment template](../images/web-mobile-message-templates/attachment-template-image.jpg "attachment template")
 
 **Video Template**
 
@@ -474,7 +476,7 @@ var message =
   }
     print(JSON.stringify(message));
 ```
-![Attachment template](../images/web-mobile-message-templates/attachment-template-video.png "attachment template")
+![Attachment template](../images/web-mobile-message-templates/attachment-template-video.jpg "attachment template")
 
 To play the video within the assistant window, use this JS script:
 
@@ -490,7 +492,7 @@ var message =
 }
 print(JSON.stringify(message));
 ```
-![Attachment template](../images/web-mobile-message-templates/attachment-template-playback.png "attachment template")
+![Attachment template](../images/web-mobile-message-templates/attachment-template-playback.jpg "attachment template")
 
 
 ### Text Template
