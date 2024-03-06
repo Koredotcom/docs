@@ -86,12 +86,11 @@ When using a bot template from the store, you are importing it into your account
 2. You are prompted to log in to your account, if not logged in already.
 3. If you do not have a valid account, you can create it now.
 
-### From the Kore.ai XO Platform,
+### From the Kore.ai XO Platform:
 
-    1. Log in to the Kore.ai XO Platform.
-    2. On the landing page click **New Bot**, then select **Start from the Store**.
-    <img src="../images/va-landing-page-use-bot-template.png" alt="Start from the Store" title="Start from the Store" style="border: 1px solid gray; zoom:80%;">
-
-    3. Explore the template bots and click **Use Template **against the selected templated bot.
-    4. Once selected, the Bot Template will be made available for you to work with.
-    <img src="../app-settings/images/bot-template-added.png" alt="Bot Template added" title="Bot Template added" style="border: 1px solid gray; zoom:80%;">
+1. Log in to the Kore.ai XO Platform.
+2. On the landing page click **New Bot**, then select **Start from the Store**.
+<img src="../images/va-landing-page-use-bot-template.png" alt="Start from the Store" title="Start from the Store" style="border: 1px solid gray; zoom:80%;">
+3. Explore the template bots and click **Use Template **against the selected templated bot.
+4. Once selected, the Bot Template will be made available for you to work with.
+ <img src="../images/bot-template-added.png" alt="Bot Template added" title="Bot Template added" style="border: 1px solid gray; zoom:80%;">
