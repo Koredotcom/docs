@@ -360,6 +360,69 @@ Clicking on a node will open its Properties panel, which includes specific featu
 
 <img src="../images/using-dialog-builder-img20-asset-properties.png" alt="Node properties" title="Node properties" style="border:1px solid gray;zoom:60%;">
 
+## The ‘More Options’ Menu
+
+The More options menu, accessible at the top right of the Dialog Builder, is where you can find shortcuts to dialog settings, manage interruptions, amend behavior, and view all comments.
+
+<img src="../images/using-dialog-builder-img25-more-options.png" alt="More options" title="More options" style="border:1px solid gray;zoom:60%;">
+
+
+### Dialog Settings
+
+The **Dialog Settings** panel allows you to modify the dialog task basic settings, and if desired, set the visibility of a dialog to create a hidden dialog task that is available for use, but not shown as a task. You can access Dialog Settings using the More Options Menu. 
+
+<img src="../images/using-dialog-builder-img26-dialog-settings.png" alt="Dialog settings" title="Dialog settings" style="border:1px solid gray;zoom:60%;">
+
+Add or modify the following settings for your dialog:
+
+* **Name** – The name of your dialog task, usually the main user intent. For example, _Book Ticket._
+* **Description** – An optional description of your dialog task displayed in the XO Platform.
+* **More Options** – Specify the behavior of this dialog task to the end-user:
+    * **Availability of Use Case** for end customer and/or in AgentAssist
+    * **Intent Settings:**
+        * **Sub intent only dialog** – The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
+        * **Hide from help** – The task is not presented as a task when the user requests help. Users can invoke this task anytime while talking to the assistant. 
+            
+            !!! Note
+            
+                This option is selected automatically when the previous option is selected. You can manually deselect it.
+
+    * **Analytics - Containment Type**(Any one option can be selected):
+        * **Abundance as Self Service:** User can abandon the conversation while executing the dialog.
+        * **Abundance as Drop Off:** Conversations can be abandoned by users or due to any failure during execution of the dialog.
+    * **Follow-up Task** – The follow-up task array contains all the intents detected from user utterances from this dialog. You can either:
+        * Handle the follow-up tasks as part of node connections (default setting), or
+        * Let the user select the follow-up task.
+    * **Task Execution Failure** – Define the assistant’s behavior when there is an error in task execution. It can be set as either:
+        * Same as the Bot Level behavior
+        * Specific to this task – initiate a task, run script, or show a message.
+
+
+### Manage Interruptions
+
+The **Manage Interruptions** options allow you to select if and how a user can switch to another task, as well as the exit strategies. It can be set up at the VA, task, and node levels to ensure the configurations are layered to suit your various business requirements. You can also add conditional exceptions between tasks with the ability to pass contextual data between them.
+
+<img src="../images/using-dialog-builder-img27-manage-interruptions.png" alt="Manage Interruptions" title="Manage Interruptions" style="border:1px solid gray;zoom:60%;">
+
+Click here to [learn more](../../../intelligence/conversation-management/manage-interruptions/#dialog-level-settings){:target="_blank"}.
+
+
+### Manage Ammend Behavior
+
+Using **Amend Entity,** you can allow the users to amend entity values and also control the post-amendment dialog behavior.
+
+<img src="../images/using-dialog-builder-img28-manage-ammend-behavior.png" alt="Manage Ammend behavior" title="Manage Ammend behavior" style="border:1px solid gray;zoom:60%;">
+
+Click here to [learn more.](../../../natural-language/nlu-configurations/amend-entities/#task-level){:target="_blank"}
+
+### Manage Groups
+
+Using this option you can create and manage Node Groups.
+
+<img src="../images/using-dialog-builder-img28-manage-ammend-behavior.png" alt="Manage Groups" title="Manage Groups" style="border:1px solid gray;zoom:60%;">
+
+Click here to [learn more.](#node-groups-planned-for-phase-2)
+
 ## Node Groups (Planned for Phase 2)
 
 You can group nodes to improve the user experience with follow-ups, digressions, and amending entity values.
@@ -427,61 +490,6 @@ You can hover on a node to get the **Delete** option. Please note, once deleted,
 If you are using the group to set up a Subintent, you can do so, by navigating to the required node group and then clicking the **Intents** button. For additional information, please see [Grouping Nodes as Subintents](../node-connections/grouping-nodes/){:target="_blank"}.
 
 <img src="../images/using-dialog-builder-group-sub-intents.png" alt="Node groups - Sub intents" title="Node groups - Sub intents" style="border:1px solid gray;zoom:60%;">
-
-## The ‘More Options’ Menu
-
-The More options menu, accessible at the top right of the Dialog Builder, is where you can find shortcuts to dialog settings, manage interruptions, amend behavior, and view all comments.
-
-<img src="../images/using-dialog-builder-img25-more-options.png" alt="More options" title="More options" style="border:1px solid gray;zoom:60%;">
-
-
-### Dialog Settings
-
-The **Dialog Settings** panel allows you to modify the dialog task basic settings, and if desired, set the visibility of a dialog to create a hidden dialog task that is available for use, but not shown as a task. You can access Dialog Settings using the More Options Menu. 
-
-<img src="../images/using-dialog-builder-img26-dialog-settings.png" alt="Dialog settings" title="Dialog settings" style="border:1px solid gray;zoom:60%;">
-
-Add or modify the following settings for your dialog:
-
-* **Name** – The name of your dialog task, usually the main user intent. For example, _Book Ticket._
-* **Description** – An optional description of your dialog task displayed in the XO Platform.
-* **More Options** – Specify the behavior of this dialog task to the end-user:
-    * **Availability of Use Case** for end customer and/or in AgentAssist
-    * **Intent Settings:**
-        * **Sub intent only dialog** – The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
-        * **Hide from help** – The task is not presented as a task when the user requests help. Users can invoke this task anytime while talking to the assistant. 
-            
-            !!! Note
-            
-                This option is selected automatically when the previous option is selected. You can manually deselect it.
-
-    * **Analytics - Containment Type**(Any one option can be selected):
-        * **Abundance as Self Service:** User can abandon the conversation while executing the dialog.
-        * **Abundance as Drop Off:** Conversations can be abandoned by users or due to any failure during execution of the dialog.
-    * **Follow-up Task** – The follow-up task array contains all the intents detected from user utterances from this dialog. You can either:
-        * Handle the follow-up tasks as part of node connections (default setting), or
-        * Let the user select the follow-up task.
-    * **Task Execution Failure** – Define the assistant’s behavior when there is an error in task execution. It can be set as either:
-        * Same as the Bot Level behavior
-        * Specific to this task – initiate a task, run script, or show a message.
-
-
-### Manage Interruptions
-
-The **Manage Interruptions** options allow you to select if and how a user can switch to another task, as well as the exit strategies. It can be set up at the VA, task, and node levels to ensure the configurations are layered to suit your various business requirements. You can also add conditional exceptions between tasks with the ability to pass contextual data between them.
-
-<img src="../images/using-dialog-builder-img27-manage-interruptions.png" alt="Manage Interruptions" title="Manage Interruptions" style="border:1px solid gray;zoom:60%;">
-
-Click here to [learn more](../../../intelligence/conversation-management/manage-interruptions/#dialog-level-settings){:target="_blank"}.
-
-
-### Manage Ammend Behavior
-
-Using **Amend Entity,** you can allow the users to amend entity values and also control the post-amendment dialog behavior.
-
-<img src="../images/using-dialog-builder-img28-manage-ammend-behavior.png" alt="Manage Ammend behavior" title="Manage Ammend behavior" style="border:1px solid gray;zoom:60%;">
-
-Click here to [learn more.](../../../natural-language/nlu-configurations/amend-entities/#task-level){:target="_blank"}
 
 ~~### View All Comments~~
 
