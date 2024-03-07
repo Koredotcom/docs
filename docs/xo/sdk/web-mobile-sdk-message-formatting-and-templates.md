@@ -1,41 +1,31 @@
-# **Web & Mobile SDK: Message Formatting and Templates**
+# Web & Mobile SDK: Message Formatting and Templates
 
-Kore.ai SDK allows you to override the default message formatting using markdown and apply templates to display custom formatted bot messages to users. \
-This topic describes the following:
-
-
+Kore.ai SDK allows you to override the default message formatting using markdown and apply templates to display custom-formatted bot messages to users. This topic describes the following:
 
 * Supported template types
 * Template implementation details
 * The default formatting for the Web SDK
 * Supported markdown to customize messages
 
-
 ## Template Types
 
 The SDKs support the following message template types. Depending on the SDK, the JavaScript implementation may vary.
 
-
 ### Button Template
 
 Shows one of the following button choices for the end user for each option:
-
-
 
 * **URL button:** Opens a webpage in the application browser.
 * **Postback button:** Sends the payload defined by the developer to the XO Platform to initiate action, for example, opens a chat window to a live agent.
 
 **Required Parameters**
 
-
-
 * **text**: Enter the text consisting of up to 640 characters
 * **buttons**: Enter a maximum of 3 array items
 
 **Example**
 
-
-```
+```javascript
 var message={
   "type": "template",
   "payload":
@@ -59,31 +49,19 @@ var message={
 print(JSON.stringify(message));
 ```
 
-
-
-###
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
-
+![Button template](../images/web-mobile-message-templates/button-template.png "Button template")
 
 ### Quick Replies Template – Text
 
 Shows a formatted text message to the user with clickable text choices. \
 **Required Parameters**
 
-
-
 * **text**: Enter text consisting of up to 640 characters
 * **title**: Enter a title for each option
 
 **Example**
 
-
-```
+```javascript
 var message=
   {
   "type":"template",
@@ -109,15 +87,7 @@ var message=
 print(JSON.stringify(message));
 ```
 
-
-
-###
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
+![Quick Replies template](../images/web-mobile-message-templates/quick-replies-template.png "Quick replies template")
 
 
 ### Quick Replies Template – Text and Image
@@ -125,15 +95,12 @@ print(JSON.stringify(message));
 Shows formatted text to the user with clickable text and images as choices. \
 **Required Parameters**
 
-
-
 * **text**: Enter text consisting of up to 640 characters
 * **title**: Enter a title for each option
 
 **Example**
 
-
-```
+```javascript
 var message =
  {
   "type":"template",
@@ -161,8 +128,6 @@ var message =
   print(JSON.stringify(message));
 ```
 
-
-
 ### Feedback Survey Templates
 
 The Kore.ai XO Platform supports three new templates for the web/mobile client as part of the feedback module. These include **NPS**, **CSAT**, and **Like/Dislike**.
@@ -173,8 +138,6 @@ While configuring the feedback survey, when the user selects a template, it’s 
 
 **Required Parameters**
 
-
-
 * message
 * template_type
 * displayValues
@@ -182,9 +145,8 @@ While configuring the feedback survey, when the user selects a template, it’s 
 
 **Example**
 
-
-```
-var message =
+```javascript
+var message = 
 {
   "type":"template",
   "payload":
@@ -200,7 +162,7 @@ var message =
    var colors = ["#EF9AA3","#EF9AA3","#EF9AA3","#EF9AA3","#EF9AA3","#EF9AA3","#FB8460","#FB8460","#FB8460","#28A745","#28A745"];
     for(var i=0;i<=10;i++)
       {
-       var numberArray =
+       var numberArray = 
           {
             "numberId":i,
             "value": displayValues[i],
@@ -211,22 +173,14 @@ var message =
     print(JSON.stringify(message));
 ```
 
-
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
+![Feedback Survey template](../images/web-mobile-message-templates/feedback-survey-template.png "Feedback Survey template")
 
 
 **CSAT**
 
-Displays a dialog with the feedback survey question and five smiley icons, each with a different expression to capture the customer’s response. When the customer clicks an icon, it corresponds to a relevant survey score and response, which include "Highly unsatisfied,” "Unsatisfied,” "Average,” "Satisfied,” and "Highly satisfied.” Except for “Satisfied” and “Highly Satisfied,” the other responses prompt a follow-up question to the customer.
+Displays a dialog with the feedback survey question and five smiley icons, each with a different expression to capture the customer’s response. When the customer clicks an icon, it corresponds to a relevant survey score and response, which include “Highly unsatisfied,” “Unsatisfied,” “Average,” “Satisfied,” and “Highly satisfied.” Except for “Satisfied” and “Highly Satisfied,” the other responses prompt a follow-up question to the customer.
 
 **Required Parameters**
-
-
 
 * payload: text
 * template_type
@@ -235,9 +189,8 @@ Displays a dialog with the feedback survey question and five smiley icons, each 
 
 **Example**
 
-
-```
-var message =
+```javascript
+var message = 
  {
    "type":"template",
    "payload":
@@ -249,12 +202,12 @@ var message =
               "starArrays":[],
               "messageTodisplay":"Glad you liked the experience. Thanks!"
              }
-  };
+  }; 
    var displayValues = ["Highly Unsatisfied","Unsatisfied","Average","Satisfied","Highly satisfied"];
    message.payload.smileyArrays = [];
      for(var i=1;i<=5;i++)
        {
-         var smileyArray =
+         var smileyArray = 
            {
             "smileyId":i,
             "value": displayValues[i-1],
@@ -265,22 +218,13 @@ var message =
       print(JSON.stringify(message));
 ```
 
-
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
-
+![CSAT template](../images/web-mobile-message-templates/csat.png "CSAT template")
 
 **Like/Dislike**
 
 Displays a dialog with the feedback survey question and two icons to capture the customer’s response. One is the **Like** icon, and the other is the **Dislike** icon. When the customer clicks the former, a response message is displayed. When the customer clicks the latter, a prompt displays the follow-up survey question to capture the customer’s response.
 
 **Required Parameters**
-
-
 
 * payload: text
 * template_type
@@ -290,13 +234,12 @@ Displays a dialog with the feedback survey question and two icons to capture the
 
 **Example**
 
-
-```
-var message =
+```javascript
+var message = 
   {
     "type":"template",
     "payload":
-              {
+              {   
                 "text":"Would you recommend our product?",
                 "template_type":"feedbackTemplate",
                 "view":"ThumbsUpDown",
@@ -304,12 +247,12 @@ var message =
                 "starArrays":[],
                 "messageTodisplay":"Glad you liked the experience. Thanks!"
               }
-   };
+   }; 
     var displayValues = ["Extremely Unlikely","Extremely likely"];
     message.payload.thumpsUpDownArrays = [];
       for(var i=0;i<=1;i++)
       {
-        var thumpsUpDownArray =
+        var thumpsUpDownArray = 
               {
                 "thumpUpId":i,
                 "value": displayValues[i],
@@ -320,21 +263,11 @@ var message =
      print(JSON.stringify(message));
 ```
 
-
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
-
-
+![Like Dislike template](../images/web-mobile-message-templates/like-dislike-template.png "like dislike template")
 
 ### List Template
 
 Shows a formatted list of choices to the user as clickable text and images as choices. List template has the following limitations:
-
-
 
 * Maximum of four elements
 * One optional button per element
@@ -342,16 +275,13 @@ Shows a formatted list of choices to the user as clickable text and images as ch
 
 **Required Parameters**
 
-
-
 * AlwaysShowGlobalButtons: set to true if the global button needs to be displayed always, by default it is set to false ensuring that the global buttons are displayed only when the number of entries in the list exceeds 3,
 * title: Enter a title for each option
 * elements
 
 **Example**
 
-
-```
+```javascript
 var message =
 {
         "type": "template",
@@ -460,15 +390,7 @@ var message =
 print(JSON.stringify(message));
 ```
 
-
-
-###
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.png "image_tooltip")
-
+![List template](../images/web-mobile-message-templates/list-template.png "List template")
 
 
 ### Error Template
@@ -476,8 +398,7 @@ print(JSON.stringify(message));
 Shows formatted messages to an end user for validation, errors and warning messages. \
 **Example**
 
-
-```
+```javascript
 var message={
    "type":"error",
    "payload":{
@@ -488,37 +409,28 @@ var message={
 print(JSON.stringify(message));
 ```
 
+![Error template](../images/web-mobile-message-templates/error-template.png "Error template")
 
 
-###
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image7.png "image_tooltip")
-
-
-
-### **Attachment Template**
+### Attachment Template
 
 Provides support to display images, render videos, links and play audio files to a user based on specified URL links.
 
 The following formats are supported for attachment template:
 
+* audio = [‘m4a’, ‘amr’, ‘wav’, ‘aac’, ‘mp3’]
+* video = [‘mp4’, ‘mov’, ‘3gp’, ‘flv’]
+* image = [‘png’, ‘jpg’, ‘jpeg’, ‘.GIF’]
 
-
-* audio = ['m4a', 'amr', 'wav', 'aac', 'mp3']
-* video = ['mp4', 'mov', '3gp', 'flv']
-* image = ['png', 'jpg', 'jpeg', '.GIF']
-
-**Note**: To display images in the attachment template use the "url" of the image.
+!!!note
+  To display images in the attachment template use the “url” of the image.
 
 **Examples**
 
 **Audio Template:**
 
 
-```
+```javascript
 var message ={
         "type": "message",
          "payload": {
@@ -529,21 +441,14 @@ var message ={
 print(JSON.stringify(message));
 ```
 
-
-
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image8.jpg "image_tooltip")
+![Attachment template](../images/web-mobile-message-templates/attachment-template.jpg "attachment template")
 
 
 **Image Template**
 
 To view image, use the following JS script:
 
-
-```
+```javascript
 var message = {
     "type": "image",
     "payload": {
@@ -553,14 +458,7 @@ var message = {
     print(JSON.stringify(message));
 ```
 
-
-
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image9.jpg "image_tooltip")
-
+![Attachment template](../images/web-mobile-message-templates/attachment-template-image.jpg "attachment template")
 
 **Video Template**
 
@@ -568,9 +466,8 @@ You can either download or watch the video directly in the assistant window.
 
 To download and watch the video, use this JS script:
 
-
-```
-var message =
+```javascript
+var message = 
    {
       "type": "video",
       "payload": {
@@ -579,21 +476,13 @@ var message =
   }
     print(JSON.stringify(message));
 ```
-
-
-
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image10.jpg "image_tooltip")
-
+![Attachment template](../images/web-mobile-message-templates/attachment-template-video.jpg "attachment template")
 
 To play the video within the assistant window, use this JS script:
 
 
-```
-var message =
+```javascript
+var message = 
    {
        "type": "message",
       "payload": {
@@ -603,15 +492,7 @@ var message =
 }
 print(JSON.stringify(message));
 ```
-
-
-
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image11.jpg "image_tooltip")
-
+![Attachment template](../images/web-mobile-message-templates/attachment-template-playback.jpg "attachment template")
 
 
 ### Text Template
@@ -619,8 +500,7 @@ print(JSON.stringify(message));
 Shows messages to the user using XO Platform defined default formatting. \
 **Example**
 
-
-```
+```javascript
 var message=
  {
    "text" : "message"
@@ -628,14 +508,10 @@ var message=
 print(JSON.stringify(message);
 ```
 
-
-
 ### Carousel Template
 
 Shows a horizontal scrollable carousel of items, each composed of an image attachment, a short description, and buttons to request user input. \
 **Required Parameters**:
-
-
 
 * title
 * image_url
@@ -644,8 +520,7 @@ Shows a horizontal scrollable carousel of items, each composed of an image attac
 
 **Example**
 
-
-```
+```javascript
 var message = {
   "type": 'template',
   "payload":
@@ -745,31 +620,20 @@ var message = {
 print(JSON.stringify(message));
 ```
 
-
-
-###
-
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image12.png "image_tooltip")
-
-
+![Carousel template](../images/web-mobile-message-templates/carousel-template.png "carousel template")
 
 ### Piechart Template
 
-This template is supported only for Web SDK; doesn't apply for Mobile SDK.
+!!!note
+    This template is supported only for Web SDK; doesn’t apply for Mobile SDK.
 
-Shows the data in a Pie chart in one of these three variations - regular full pie, donut pie, and donut pie with legend table. If you do not specify a type, “regular’ will be considered by default \
+Shows the data in a Pie chart in one of these three variations – regular full pie, donut pie, and donut pie with legend table. If you do not specify a type, “regular’ will be considered by default \
 **Required Parameters**
-
-
 
 * template_type
 * elements
 
-
-```
+```javascript
 var message = {
   "type": "template",
   "payload":
@@ -798,26 +662,16 @@ var message = {
   }
 print(JSON.stringify(message));
 ```
-
-
-
-###
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image13.png "image_tooltip")
-
+![Piechart template](../images/web-mobile-message-templates/piechart-template.png "Piechart template")
 
 
 ### Line Chart Template
 
-This template is supported only for Web SDK; doesn't apply for Mobile SDK.
+!!!note
+    This template is supported only for Web SDK; doesn’t apply for Mobile SDK.
 
 Shows the data in a line chart. \
 **Required Parameters**
-
-
 
 * template_type
 * x_axis
@@ -825,8 +679,7 @@ Shows the data in a line chart. \
 
 **Example**
 
-
-```
+```javascript
 var message =
  {
   "type": "template",
@@ -854,26 +707,16 @@ var message =
   }
 print(JSON.stringify(message));
 ```
-
-
-
-##
-
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image14.png "image_tooltip")
-
+![Line Chart template](../images/web-mobile-message-templates/line-chart-template.png "Line chart template")
 
 
 ### Bar Chart Template
 
-This template is supported only for Web SDK; doesn't apply for Mobile SDK.
+!!!note
+    This template is supported only for Web SDK; doesn’t apply for Mobile SDK.
 
 Shows the data in a bar graph in one of these variants: a single data series simple bar graphs, multiple data series bar graphs, or stacked multiple data series bar graphs. \
 **Required Parameters**
-
-
 
 * template_type
 * x_axis
@@ -881,8 +724,7 @@ Shows the data in a bar graph in one of these variants: a single data series sim
 
 **Example**
 
-
-```
+```javascript
 var message =
  {
    "type": "template",
@@ -912,33 +754,21 @@ var message =
     }}
 print(JSON.stringify(message));
 ```
-
-
-
-##
-
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image15.png "image_tooltip")
-
-
+![Bar chart template](../images/web-mobile-message-templates/bar-chart-template.png "Bar chart template")
 
 ### Regular Table Template
 
-This template is supported only for Web SDK; doesn't apply for Mobile SDK.
+!!!note
+    This template is supported only for Web SDK; doesn’t apply for Mobile SDK.
 
 Shows the data in a regular or responsive table format. \
 **Required Parameters**
 
-
-
 * template_type
 * columns: Array of column names in the table
 
-
-```
-var m  essage =
+```javascript
+var message =
 {
   "type": "template",
   "payload":
@@ -966,34 +796,23 @@ var m  essage =
     }}
 print(JSON.stringify(message));
 ```
-
-
-
-##
-
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image16.png "image_tooltip")
-
+![Regular table template](../images/web-mobile-message-templates/regular-table-template.png "Regular table template")
 
 
 ### Mini Table Template
 
-This template is supported only for Web SDK; doesn't apply for Mobile SDK.
+!!!note
+    This template is supported only for Web SDK; doesn’t apply for Mobile SDK.
 
 For each row header in a table, this template shows column data as separate cards. This is ideally suitable for data with 3-4 columns and 4-5 rows. \
 **Required Parameters**
-
-
 
 * template_type
 * elements
 
 **Example**
 
-
-```
+```javascript
 var message = {
   "type": "template",
   "payload": {
@@ -1015,16 +834,7 @@ var message = {
   };
 print(JSON.stringify(message));
 ```
-
-
-
-##
-
-<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image17.png "image_tooltip")
-
+![Mini Table template](../images/web-mobile-message-templates/mini-table-template.png "Mini table template")
 
 
 ## BotKit SDK Message Formatting with Templates
@@ -1032,7 +842,7 @@ print(JSON.stringify(message));
 You can also apply message templates in the BotKit SDK using the sendUserMessage function by setting the `isTemplate` parameter to `true` in the payload object as shown in the following example.
 
 
-```
+```javascript
 on_user_message: function(requestId, data, callback) {
  console.log("User Message ----->", data.message);
  //console.log(JSON.stringify(data));
@@ -1066,48 +876,40 @@ on_user_message: function(requestId, data, callback) {
  }
 ```
 
-
-
 ## Standard Markdown Support
 
 You can apply your formatting directly in JavaScript using Kore.ai markdown as described.
 
-
-
-* **Bold** - *text to be bolded* Do not add spaces after or before the " * " symbol. For example, `Here is *bold*.`
-* **Italic** - ~test to be italicized~ Do not add spaces after or before the " ~ " symbol. For example, `Here is ~italics~.` Preceeding and succeeding _ will also italicise the enclosed text, i.e. `Here is _italics_.`
-* **Link** - [Text for the link here](http://myCompany.com) For example, `Here is a link to [Kore.ai.com](https://kore.ai/).`
-* **New Line** - \n One line indention.
-* **Multi Line** - \n\n\n Three line indentions.
-* **Image** - ![Text for the link here](http://myCompany.com) For example, `![My image](http://d1hqmx8kqvpnpa.cloudfront.net/f-eeca5df3-7580-5a09-9aa3-09f809b44ac4.png)`
-* **List** -
-    * **Unordered Bulleted List** - * Text for the list time  Add a space after the " * " symbol.
+* **Bold** – *text to be bolded* Do not add spaces after or before the ” * ” symbol. For example, `Here is *bold*.`
+* **Italic** – ~test to be italicized~ Do not add spaces after or before the ” ~ ” symbol. For example, `Here is ~italics~.` Preceeding and succeeding _ will also italicise the enclosed text, i.e. `Here is _italics_.`
+* **Link** – [Text for the link here](http://myCompany.com) For example, `Here is a link to [Kore.ai.com](https://kore.ai/).`
+* **New Line** – \n One line indention.
+* **Multi Line** – \n\n\n Three line indentions.
+* **Image** – ![Text for the link here](http://myCompany.com) For example, `![My image](http://d1hqmx8kqvpnpa.cloudfront.net/f-eeca5df3-7580-5a09-9aa3-09f809b44ac4.png)`
+* **List** –
+    * **Unordered Bulleted List** – * Text for the list time  Add a space after the ” * ” symbol.
         * `* This is an example of an unordered list Bullet 1.`
         * `* This is an example of an unordered list Bullet 2.`
         * `* This is an example of an unordered list Bullet 3.`
-    * **Ordered List** -
+    * **Ordered List** –
         * `1. This is an example of an ordered list Bullet 1.`
         * `2. This is an example of an ordered list Bullet 2.`
         * `3. This is an example of an ordered list Bullet 3.`
-* **Preformatted Text** - ```text``` The text between the " ``` " symbols is formatted. For example, `Here is an example of ```preformatting```.`>
-* **Paragraph Indent** - >> For example, `>>This is indented once.`
-* **Multi Indent** - >>>> For example, `>>>>This is indented twice.`
-* **Heading** - #h1, #h2, #h3, #h4, #h5, #h6 For example,
+* **Preformatted Text** – “`text“` The text between the ” “` ” symbols is formatted. For example, `Here is an example of ```preformatting```.`>
+* **Paragraph Indent** – >> For example, `>>This is indented once.`
+* **Multi Indent** – >>>> For example, `>>>>This is indented twice.`
+* **Heading** – #h1, #h2, #h3, #h4, #h5, #h6 For example,
     * `Here is an example of #h1Heading1.`
     * `Here is an example of #h2Heading2.`
     * `Here is an example of #h3Heading3.`
     * `Here is an example of #h4Heading4.`
     * `Here is an example of #h5Heading5.`
     * `Here is an example of #h6Heading6.`
-* **Horizontal Rule** - ___ Three underscores inserts a horizontal line. For example, `This is a horizontal rule line, added three times. _________`
-*
-
-
+* **Horizontal Rule** – ___ Three underscores inserts a horizontal line. For example, `This is a horizontal rule line, added three times. _________`
+* 
 ## Default Message Templates for Web SDK
 
 When custom formatting is not defined, the following default message formatting types apply to the Web SDK.
-
-
 
 * **Choice Message**
     * If the number of options is 3 or less, the _Button_ _Template_ is used.
@@ -1130,15 +932,15 @@ When custom formatting is not defined, the following default message formatting 
 
 ## Custom Templates
 
-Apart from using the above templates, you can build your own custom template.
+Apart from using the above templates, you can build your own custom template. A few custom templates are provided below for your reference.
 
-The following are the custom templates provided for you at [webSDK](https://github.com/Koredotcom/web-kore-sdk/tree/master/UI/custom) for reference to build your own templates.
+!!!note
+    You can find more custom templates on Git: [https://github.com/Koredotcom/web-kore-sdk/blob/master/UI/custom/customTemplate.js](https://github.com/Koredotcom/web-kore-sdk/blob/master/UI/custom/customTemplate.js).
 
-Drop down template \
-`var message =  {`
+Drop down template
 
-
-```
+```javascript
+var message =  {
         "type": "template",
         "payload": {
             "template_type": "dropdown_template",
@@ -1173,49 +975,29 @@ Drop down template \
             ],
         }
 };
-
+print(JSON.stringify(message));
 ```
+![Custom Drop down template](../images/web-mobile-message-templates/custom-dropdown-template.png "Custom Drop-down list template")
 
+Like-dislike template: 
 
-
-1. `print(JSON.stringify(message)); \
-`
-
-<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image18.png "image_tooltip")
-
-
-Like-dislike template: \
-`var message = {`
-
-
-```
+```javascript
+var message = {
   "type": "template",
   "payload": {
      "template_type": "like_dislike"
      }
   };
-
+print(JSON.stringify(message)) ;
 ```
+![Custom Like Dislike template](../images/web-mobile-message-templates/custom-like-dislike-template.png "Custom Drop-down list template")
 
 
 
-2. `print(JSON.stringify(message)) \
-`
+Multi-select Template:
 
-<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image19.png "image_tooltip")
-
-
-Multi-select Template: \
-`var message = {`
-
-
-```
+```javascript
+var message = {
   "type": "template",
   "payload": {
       "template_type": "multi_select",
@@ -1241,18 +1023,28 @@ Multi-select Template: \
     ]
   }
 };
-
+print(JSON.stringify(message));
 ```
 
+![Custom Multi select template](../images/web-mobile-message-templates/custom-multiselect-template.png "Custom Multiselect list template")
 
+DatePicker template:
 
-3. `print(JSON.stringify(message)) \
-`
+```javascript
+var message = {
+  "type": "template",
+  "payload": {
+      "text":"display",
+      "template_type": "dateTemplate",
+      "title":"Text to display on header",
+      "text_message":"text to display in message node",
+   // "startDate":"02-02-2020",
+   // "endDate":"05-02-2020",
+      "format":"MM-DD-YYYY"      
+  }
+};
+print(JSON.stringify(message));
+```
 
-<p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image20.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image20.png "image_tooltip")
-
-
-To understand customized JavaScript responses and channel-specific templates, refer to _[Customize JavaScript Responses](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/#Customize_JavaScript_Responses)_ in _[User Prompts](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/)._
+!!!note
+    To understand customized JavaScript responses and channel-specific templates, refer to _[Customize JavaScript Responses](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/#Customize_JavaScript_Responses)_ in _[User Prompts](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/prompt-editor/)._

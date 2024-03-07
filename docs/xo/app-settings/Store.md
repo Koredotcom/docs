@@ -24,16 +24,9 @@ You can access the store as follows:
 1. As a Kore.ai platform user, you can access the store from within your account.
     1. Log into the Kore.ai XO Platform.
     2. On the landing page, click **Marketplace** at the top right.
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image1.png "image_tooltip")
-
-    3. You can also access the Marketplace while creating a new assistant. Click **New Bot**, then click **Explore Templates**. \
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image2.png "image_tooltip")
+    <img src="../images/marketplace.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:80%;">
+    3. You can also access the Marketplace while creating a new assistant. Click **New Bot**, then click **Explore Templates**.
+    <img src="../images/explore-templates.png" alt="Explore Template" title="Explore template" style="border: 1px solid gray; zoom:100%;">
 
 ## Explore Available Assistants
 
@@ -76,18 +69,12 @@ On the preview display, click **Know More** for more details such as:
     * The **_category_** of the bot.
     * The list of **_channels,_** **_languages,_** and **_integrations_** (if any) supported.
     * The **_Related Templates_** section for bots similar to the selected template bot.
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image3.png "image_tooltip")
+    <img src="../images/bot-template-details.png" alt="Related Templates" title="Related Templates" style="border: 1px solid gray; zoom:80%;">
 
 ## Select a Template
 
 After exploring the template you can click **Use Template** if you choose to do so it.
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image4.png "image_tooltip")
+<img src="../images/use-template.png" alt="Use Template" title="Use Template" style="border: 1px solid gray; zoom:80%;">
 
 ## Use a Templates
 
@@ -99,18 +86,11 @@ When using a bot template from the store, you are importing it into your account
 2. You are prompted to log in to your account, if not logged in already.
 3. If you do not have a valid account, you can create it now.
 
-### From the Kore.ai XO Platform,
+### From the Kore.ai XO Platform:
 
-    1. Log in to the Kore.ai XO Platform.
-    2. On the landing page click **New Bot**, then select **Start from the Store**.
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image5.png "image_tooltip")
-
-    1. Explore the template bots and click **Use Template **against the selected templated bot.
-    2. Once selected, the Bot Template will be made available for you to work with. 
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image6.png "image_tooltip")
+1. Log in to the Kore.ai XO Platform.
+2. On the landing page click **New Bot**, then select **Start from the Store**.
+<img src="../images/va-landing-page-use-bot-template.png" alt="Start from the Store" title="Start from the Store" style="border: 1px solid gray; zoom:80%;">
+3. Explore the template bots and click **Use Template** against the selected templated bot.
+4. Once selected, the Bot Template will be made available for you to work with.
+ <img src="../images/bot-template-added.png" alt="Bot Template added" title="Bot Template added" style="border: 1px solid gray; zoom:80%;">
