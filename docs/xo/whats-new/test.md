@@ -16,6 +16,10 @@ hide:
 
  [:octicons-arrow-right-24: Learn more](./whats-new-in-this-release.md)
 
+ ++ctrl+alt+del++
+
+ [Subscribe to our newsletter](#){ .md-button }
+
 <div class="grid cards" markdown>
 
 -   <img src="../images/xop-sm-uc.svg"></img>{ .lg .middle } __Define Use Cases__
