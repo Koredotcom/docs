@@ -27,9 +27,9 @@ To complete this procedure, you must have or register for a new developer accoun
 8. Save the generated **Password** and the **App ID** to use later in the **Register the Bot** tab in Bot Builder for the **Skype Channel** page.
 ![generated app ID](../images/Skype-Channel3.png "generated app ID")
 
-    !!! note
+      !!! note
 
-      The only time the full password is displayed is when it is generated and displayed in the **Generate Password** dialog. Copy and save the password to a secure location until added to the **Skype Channel** page in Bot Builder.
+        The only time the full password is displayed is when it is generated and displayed in the **Generate Password** dialog. Copy and save the password to a secure location until added to the **Skype Channel** page in Bot Builder.
 
 9. Click **Finish and go back to Bot Framework**. The **Register a bot** tab is displayed.
 10. To save your settings, agree to **Privacy statement**, **Terms of Use,** and **Code of Conduct**.

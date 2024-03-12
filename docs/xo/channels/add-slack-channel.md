@@ -48,13 +48,13 @@ To complete this procedure, you must already have a _Slack_ account and be a mem
 1. To enable Interactive Components, go to the **Interactivity & Shortcuts** section and enable **Interactivity**. Copy the **Webhook URL** provided in the **Configurations** tab of this page and enter it in the **Request URL** field.
 
 2. Click **Save Changes**.
+![interactivity](../images/slack6.png "interactivity")
 
+!!! note
 
-  !!! note
+    The Webhook URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
 
-      The Webhook URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
-
-  ![interactivity](../images/slack6.png "interactivity")
+  
 
 
 ## Step 5 : Enable Events
