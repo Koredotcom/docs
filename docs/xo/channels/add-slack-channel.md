@@ -49,9 +49,10 @@ To complete this procedure, you must already have a _Slack_ account and be a mem
 
 2. Click **Save Changes**.
 
+
   !!! note
 
-    The Webhook URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
+      The Webhook URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
 
   ![interactivity](../images/slack6.png "interactivity")
 

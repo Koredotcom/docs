@@ -26,9 +26,9 @@ To set up Naver Works as a channel, you must create a VA on Line works and enabl
 
 5. Click **Save**.
 
-!!! note
+    !!! note
 
-    Please add the registered VA in the **Admin** section to conduct thorough testing. After adding the VA, switch to Public to show all members.
+        Please add the registered VA in the **Admin** section to conduct thorough testing. After adding the VA, switch to Public to show all members.
 
 The new Virtual Assistant is listed on the **Bot** page.
 
@@ -59,11 +59,10 @@ The next step is to add a client application to integrate with the Kore.ai XO Pl
 7. Paste these values for the **_Client ID_** and **_Client Secret_** fields.
     <img src="../images/naverworks7.png" alt="naverworks configuration" title="naverworks configuration" style="border: 1px solid gray; zoom:70%;">
 
-!!! note
+    !!! note
 
-    Please ensure to copy and paste the **_Bot ID_** from the **Line Works Developer Console** > **Bot** page to the Kore.ai XO Platform **Configurations** section of the **Naver Works** Channel.
-
-    <img src="../images/naverworks8.png" alt="naverworks configuration" title="naverworks configuration" style="border: 1px solid gray; zoom:70%;">
+        Please ensure to copy and paste the **_Bot ID_** from the **Line Works Developer Console** > **Bot** page to the Kore.ai XO Platform **Configurations** section of the **Naver Works** Channel.
+        <img src="../images/naverworks8.png" alt="naverworks configuration" title="naverworks configuration" style="border: 1px solid gray; zoom:70%;">
 
 8. Click the **Copy** button for the **_Redirect URL_** field.  <img src="../images/naverworks9.png" alt="enable naverworks configuration" title="enable naverworks configuration" style="border: 1px solid gray; zoom:70%;">
 
