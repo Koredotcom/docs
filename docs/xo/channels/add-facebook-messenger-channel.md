@@ -53,21 +53,18 @@ The steps to enable this channel are simple and summarized below:
 <img src="../images/fbm7.png" alt=" Facebook generate token" title="Facebook generate token" style="border: 1px solid gray; zoom:70%;">
 
 
-10. In the **Token Generated** window, select **I understand** and click **Copy** to copy the page Access Token.
-<img src="../images/fbm8.png" alt=" Facebook generated token" title="Facebook generated token" style="border: 1px solid gray; zoom:70%;">
+10. In the **Token Generated** window, select **I understand** and click **Copy** to copy the page Access Token.  <img src="../images/fbm8.png" alt=" Facebook generated token" title="Facebook generated token" style="border: 1px solid gray; zoom:70%;">
 
 
 11. Click **Done**.
-12. Copy the **Page ID** of the Facebook page.
-<img src="../images/fbm9.png" alt=" Facebook configuration" title="Facebook configuration" style="border: 1px solid gray; zoom:70%;">
+12. Copy the **Page ID** of the Facebook page.  <img src="../images/fbm9.png" alt=" Facebook configuration" title="Facebook configuration" style="border: 1px solid gray; zoom:70%;">
 
 
 
 13. On the Kore.ai XO Platform, navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **Facebook Messenger**.
 <img src="../images/fbm10.png" alt=" Facebook Messenger" title="Facebook Messenger" style="border: 1px solid gray; zoom:70%;">
 
-14. Click the **Configurations** tab, and paste the **Page Access Token** and **Page ID** values you’ve copied.
-<img src="../images/fbm11.png" alt=" Facebook page access" title="Facebook page access" style="border: 1px solid gray; zoom:70%;">
+14. Click the **Configurations** tab, and paste the **Page Access Token** and **Page ID** values you’ve copied.  <img src="../images/fbm11.png" alt=" Facebook page access" title="Facebook page access" style="border: 1px solid gray; zoom:70%;">
 
 
 15. Navigate to **Settings** > **Basic** and configure the **Privacy Policy URL** and **Terms of Service URL** fields for the app.
@@ -84,8 +81,7 @@ The steps to enable this channel are simple and summarized below:
 
 To set up the webhook URL, follow the steps below:
 
-1. Copy the **Webhook URL** and **Verify Token** from the Kore.ai XO Platform’s channel configuration panel.
-<img src="../images/fbm14.png" alt=" Facebook Webhook URL" title="Facebook Webhook URL" style="border: 1px solid gray; zoom:70%;">
+1. Copy the **Webhook URL** and **Verify Token** from the Kore.ai XO Platform’s channel configuration panel.  <img src="../images/fbm14.png" alt=" Facebook Webhook URL" title="Facebook Webhook URL" style="border: 1px solid gray; zoom:70%;">
 
 
 2. On the **Messenger Settings** page of the Facebook Developer Portal, click **Add Callback URL**.
@@ -138,11 +134,7 @@ On the Kore.ai XO Platform, enable the **Facebook Messenger** channel to complet
 
 
 1. Navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **Facebook Messenger**.
-2. Click the **Configurations** tab, and select **_YES_** for **Enable Channel**.
-
-<img src="../images/fbm21.png" alt="Enable Facebook channel" title="Enable Facebook channel" style="border: 1px solid gray; zoom:70%;">
-
-
+2. Click the **Configurations** tab, and select **_YES_** for **Enable Channel**.  <img src="../images/fbm21.png" alt="Enable Facebook channel" title="Enable Facebook channel" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Save**.
 

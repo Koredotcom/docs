@@ -25,9 +25,9 @@ To complete the following procedure, you must have an admin account in the _Face
         * **Read work profile** – Required to see any group member’s complete profile, including phone number, department, and location.
         * **Read org chart** – Needed to check a group member’s profile to see who they report to and who reports to them;
 
-!!! note
+            !!! note
 
-         You are advised to set the permissions correctly after evaluating the above-mentioned link carefully. Managing the permissions for your VA after installing the Kore.ai application on your workplace account needs you to uninstall the application on the workplace account and re-authorize it in the XO platform.        
+                You are advised to set the permissions correctly after evaluating the above-mentioned link carefully. Managing the permissions for your VA after installing the Kore.ai application on your workplace account needs you to uninstall the application on the workplace account and re-authorize it in the XO platform.        
 
 5. Click **Authorize**.
 ![workplace facebook](../images/workplace_facebook.png "image_tooltip")

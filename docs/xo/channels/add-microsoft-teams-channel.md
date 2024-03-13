@@ -26,8 +26,7 @@ Create an Azure Bot and configure it on the Kore.ai XO Platform to establish a c
 4. On the next page, review the details and check for the **Validation** status. Click **Create** to proceed.
 <img src="../images/MS_Team3.png" alt="app validation" title="app validation" style="border: 1px solid gray; zoom:70%;">
 
-5. Associate the Azure Bot with a **Microsoft App ID** and **Password**. You can choose the default option: **Auto create App Id and password**. You can also choose to **Create a new Microsoft App ID** or **Use existing app registration**. For more information, see [Microsoft Bot Framework documentation](https://docs.microsoft.com/en-gb/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-4.0#app-registration).
-<img src="../images/MS_Team4.png" alt="create app ID" title="create app ID" style="border: 1px solid gray; zoom:70%;">
+5. Associate the Azure Bot with a **Microsoft App ID** and **Password**. You can choose the default option: **Auto create App Id and password**. You can also choose to **Create a new Microsoft App ID** or **Use existing app registration**. For more information, see [Microsoft Bot Framework documentation](https://docs.microsoft.com/en-gb/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-4.0#app-registration).  <img src="../images/MS_Team4.png" alt="create app ID" title="create app ID" style="border: 1px solid gray; zoom:70%;">
 
 6. Once the deployment is completed, click **Go to resource** to view details of your resource.
 <img src="../images/MS_Team5.png" alt="view resource" title="view resource" style="border: 1px solid gray; zoom:70%;">
@@ -55,7 +54,7 @@ Generate a new App Password and Client Secret to configure the Azure Bot on the 
 
 !!! note
 
-         Make a note of the Microsoft App Id in the Azure Bot configurations page and provide it in the Configuration tab of this window.
+        Make a note of the Microsoft App Id in the Azure Bot configurations page and provide it in the Configuration tab of this window.
 
 ## Step 3: Enable Microsoft Teams Channel
 
@@ -107,8 +106,7 @@ To do so, create an MS Teams app, associate the bot with it, and then publish th
 
 1. [Log in](https://teams.microsoft.com/) to the MS Teams account with admin credentials.
 
-2. Click **Ellipsis […]** in the left navigation bar and then select the **Developer Portal** icon to launch the Apps builder.
-<img src="../images/MS_Team13.png" alt="developer portal" title="developer portal" style="border: 1px solid gray; zoom:70%;">
+2. Click **Ellipsis […]** in the left navigation bar and then select the **Developer Portal** icon to launch the Apps builder.  <img src="../images/MS_Team13.png" alt="developer portal" title="developer portal" style="border: 1px solid gray; zoom:70%;">
 
 3. On the **Developer Portal** page, select the **Apps** tab and then click the **New App** button.
 <img src="../images/MS_Team14.png" alt="new app" title="new app" style="border: 1px solid gray; zoom:70%;">
@@ -152,7 +150,7 @@ To enable Proactive Notifications, follow these steps:
 
 4. On the More Services page, search and select the **App registrations**.
 <img src="../images/MS_Team21.png" alt="app registrations" title="app registrations" style="border: 1px solid gray; zoom:70%;">
-![app registrations](../images/images/MS_Team21.png "app registrations")
+
 
 5. On the App registrations page, click **New registration**.
 <img src="../images/MS_Team21_dup.png" alt="new registration" title="new registration" style="border: 1px solid gray; zoom:70%;">

@@ -100,20 +100,18 @@ The next step after creating a connector is to authorize it on the **Create Kore
     * Select **Zoom Contact Center**.
     * Select **Chatbot** from the dropdown for **Choose Bot Type**.
     * Click **Next**.
-
     <img src="../images/Zoom6.png" alt="Zoom  connector details" title="Zoom connector details" style="border: 1px solid gray; zoom:100%;">
 
 2. Provide the following information in the **Authorize** section:
     * Select the region you want the chatbot to be available from the dropdown.
     * The **Base URL** of the Kore.ai Platform to connect to the app. For example, the base URL for Kore.ai is `bots.kore.ai`.
     * Copy and paste the **Bot ID**, **Client ID**, and **Client Secret** values from the **Channels & Flows** > **Channels** > **Digital** > **All** > **Configurred** section of the XO Platform (shown below) for **Authorization Parameters**.
-    <img src=".../images/Zoom7.png" alt="Zoom  bot details" title="Zoom bot details" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/Zoom7.png" alt="Zoom  bot details" title="Zoom bot details" style="border: 1px solid gray; zoom:100%;">
 
 3. Click **Next**.
 <img src="../images/Zoom8.png" alt="save Zoom  configuration" title="Save Zoom configuration" style="border: 1px solid gray; zoom:70%;">
 
-4. Copy the **Post URL** and **Access Token** values from the **Create Kore.ai Chatbot Connector** page.
-<img src="../images/Zoom9.png" alt="Zoom  URL" title="Zoom URL" style="border: 1px solid gray; zoom:100%;">
+4. Copy the **Post URL** and **Access Token** values from the **Create Kore.ai Chatbot Connector** page.  <img src="../images/Zoom9.png" alt="Zoom  URL" title="Zoom URL" style="border: 1px solid gray; zoom:100%;">
 
 5. Paste to the relevant fields on the Kore.ai XO Platform in the **Zoom Contact Center** > **Configurations** section.
 <img src="../images/Zoom10.png" alt="Zoom  contact center" title="Zoom contact center" style="border: 1px solid gray; zoom:100%;">

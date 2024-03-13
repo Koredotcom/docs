@@ -506,10 +506,10 @@ In XO, the dialogs are created by placing the nodes one after one in the logical
 
 When you import an XO bot into UXO app, the dialogs will get created in the below logic:
 
-* Dialogs having no conditional flow will have all the nodes within a single dialog. If you want to, you can split the dialog into multiple sequences.
+* Dialogs having no conditional flow will have all the nodes within a single sequence. If you want to, you can split that sequence into multiple sequences.
 
     **--------------------------------------SCREENSHOT---------------------------------------**
 
-* If a dialog has conditional flows, then the flow will be split into two or more paths depending on the outcome of the consition. In other words, if there are 3 different outcomes of a condition, then the flow will have 3 sequences coming out of the **Transition** that has the condition.
+* If a dialog has conditional flows, then the flow will be split into two or more paths depending on the outcome of the condition. In other words, if there are 3 different outcomes of a condition, then the flow will have 3 sequences coming out of the **Transition** that has the condition.
 
     **--------------------------------------SCREENSHOT---------------------------------------**

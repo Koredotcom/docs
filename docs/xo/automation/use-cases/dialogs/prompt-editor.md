@@ -27,15 +27,7 @@ The prompt editor has three tabs to offer the following features:
 
 Below is the JavaScript message from the _Book Flights_ VA that presents the response from a weather API to the users in a custom format:
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
-
- 
+<img src="../images/prompt-editor-user-prompt-javascript.png" alt="Response from Weather API" title="Response from Weather API" style="border:1px solid gray;zoom:70%;">
 
 In the case of **Error Prompts**, if you have enabled the _Present Prompts_ in the **Order of Retries** toggle, the handlebar icon will be visible before each error prompt message. You can use this to re-order the messages so that it is displayed in that sequence.
 
@@ -45,36 +37,42 @@ In the case of **Error Prompts**, if you have enabled the _Present Prompts_ in t
 You can add or edit the prompts or VA messages from the **Component Properties** tab of an Entity, Confirmation, or Message node.
 In the case of Entity and Confirmation nodes, you refer to Prompts whereas, for the Message node, they are referred to as Responses.
 
-
-
 1. On the dialog task builder, click the **+** icon next to the respective node for which you want to configure the prompts or responses.
 2. Select **Confirmation (or Entity or Message) > New Confirmation (or Entity or Message)** Node.
 3. The **Confirmation (or Entity or Message)** window is displayed with the **Components Properties** tab selected by default.
-4. Under the **User Prompts** (or VA Responses) section, click **Manage**.
-**Note**: If you want to make text edits to the default sample message, modify the message directly in the text box and press **Enter** without clicking **Manage**.
+4. Under the **User Prompts** (or VA Responses) section:
 
-    <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    1. If you only want to change the default sample message, howver on the message text and then click the **edit** (<img src="../images/prompt-editor-edit-icon.png">) icon. The editor appears and here you can edit the message.
 
-    ![alt_text](images/image2.png "image_tooltip")
+        <img src="../images/prompt-editor-edit-default-prompt.gif" alt="Change default message" title="Change default message" style="border:1px solid gray;zoom:70%;">
 
-5. Do one of the following:
-    1. To edit the default sample message by adding context object variables or javascript code, click the sample message. The Message editor opens.
-    2. To add a new prompt message, click **Add Prompt Message/Manage Prompts**. The Message editor opens.
+    2. To add a new prompt message, click **+ Add**. The Message editor opens.
 
-6. In the **Channel** drop-down list, **All Channels** is the default value. To create a channel-specific message, select the channel from the list.
-7. On the Message Editor, the **Plain Text** tab is the default selection. If you want to compose a Javascript message, click the **Advanced** tab.
+        <img src="../images/prompt-editor-add-new-prompt.png" alt="Add new message" title="Add new message" style="border:1px solid gray;zoom:70%;">
 
-    <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    3. In the **Channel** drop-down list, **All Channels** is the default value. To create a channel-specific message, select the channel from the list. This feature would be available for both **Add** and **Edit** message.
 
-    ![alt_text](images/image3.png "image_tooltip")
+        <img src="../images/prompt-editor-select-channel.png" alt="Select channel" title="Select channel" style="border:1px solid gray;zoom:70%;">
 
-    !!! Note
+    4. You can use one of of the several available templates to create/edit your message:
+        * [**Text**](#plain-text-prompts) - Plain textual message. This template is selected by default.
+        * [**Buttons**]() (Not available for Message node) - You can use this template if you want to let the user choose from multiple options. For example, in a Banking app, your prompt can have buttons with captions **Deposit**, **Withdrawl**, **Apply for Credit Card**, **Money Transfer** etc that can be configured to trigger the corresponding task. The buttons will be vertically aligned in the chat box.
+        * **Quick Reply** (Not available for Message node) - You can use this prompt for quick reply, i.e. a limited option of replies. For example, in a prompt that asks user whether they need any more help, you can have quick reply with options **Yes** and **No**. The options appear as horizontally aligned buttons.
+        * [**Custom JavaScript**](#javascript-prompts-or-responses) - To compose a JavaScript code.
 
-        You can use stored context variables with {{variable brackets}}. For example, ‘Hello {{context.session.UserContext.firstName}}. How can I help you?’
+        <img src="../images/prompt-editor-select-template.png" alt="Select template" title="Select template" style="border:1px solid gray;zoom:70%;">
 
-8. Compose the message and click **Save**.
+        !!! Note
 
-To add any more VA responses, repeat from step 2b.
+            You can use stored context variables with {{variable brackets}}. For example, ‘Hello {{context.session.UserContext.firstName}}. How can I help you?’
+
+    5. You can format the prompt message using the formatting options for **Text** messages.
+
+        <img src="../images/prompt-editor-text-prompt-formatting.png" alt="Formatting options for Text prompt" title="Formatting options for Text prompt" style="border:1px solid gray;zoom:70%;">
+
+5. Click **Save** after composing the message.
+
+To add any more VA responses, repeat from step 4b.
 
 
 ## Plain Text Prompts
@@ -82,7 +80,6 @@ To add any more VA responses, repeat from step 2b.
 Use the **Plain Text** tab in the editor to compose the user prompts using basic editor controls and HTML. You can enter text, and then format the text using the formatting buttons for bold, italics, header styles, hyperlinks, ordered and unordered lists, and inserting a line.
 
 The plain text tab supports the following markups:
-
 
 <table border="1">
   <tr>
@@ -232,7 +229,6 @@ new line
    </td>
   </tr>
 </table>
-
 
 Default formatting of user prompts may not be supported on all channels.
 
