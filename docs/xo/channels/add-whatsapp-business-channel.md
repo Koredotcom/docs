@@ -159,8 +159,7 @@ Once you have created a GupShup app, you need to create a **WABA** to set up the
 <img src="../images/whatsapp17.png" alt="enable gupshup app" title="enable gupshup app" style="border: 1px solid gray; zoom:70%;">
 
 3. On the **Let’s Get Started** window, select the **New Number** option under **Managed onboarding with Gupshup**.
-4. Click **Proceed**.
-<img src="../images/whatsapp18.png" alt="add gupshup number" title="add gupshup number" style="border: 1px solid gray; zoom:70%;">
+4. Click **Proceed**.  <img src="../images/whatsapp18.png" alt="add gupshup number" title="add gupshup number" style="border: 1px solid gray; zoom:70%;">
 
 
 1. Enter your details to set up your WhatsApp Business account and click **Next**.
@@ -178,8 +177,7 @@ To integrate your GupShup service using the WBM channel to the Kore.ai XO Platfo
 2. On the Kore.ai Bot Builder, navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **WhatsApp Business Messaging**.
 3. Click the **Configurations** tab on the **WhatsApp Business Messaging** window.
 4. Select **GupShup** from the dropdown list for **Messaging Partner**.
-5. Paste the copied values for **Mobile number**, **WABA ID**, and **Password** in the respective input fields.
-<img src="../images/whatsapp19.png" alt="add gupshup WABA ID" title="add gupshup WABA ID" style="border: 1px solid gray; zoom:70%;">
+5. Paste the copied values for **Mobile number**, **WABA ID**, and **Password** in the respective input fields.  <img src="../images/whatsapp19.png" alt="add gupshup WABA ID" title="add gupshup WABA ID" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -192,8 +190,7 @@ To set up the **Callback URL**, follow the steps below:
 
 1. On the Kore.ai Bot Builder, navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **WhatsApp Business Messaging**.
 2. Click the **Configurations** tab on the **WhatsApp Business Messaging** window.
-3. Ensure you have selected **GupShup** for the **Messaging Partner** field. Click **Copy** to copy the **Webhook URL**.
-<img src="../images/whatsapp20.png" alt="enter gupshup webhook" title="enter gupshup webhook" style="border: 1px solid gray; zoom:70%;">
+3. Ensure you have selected **GupShup** for the **Messaging Partner** field. Click **Copy** to copy the **Webhook URL**.  <img src="../images/whatsapp20.png" alt="enter gupshup webhook" title="enter gupshup webhook" style="border: 1px solid gray; zoom:70%;">
 
 4. Navigate to your **GupShup WhatsApp Dashboard**.
 5. Click the **Settings** icon for your app of type **Access API**.
@@ -223,7 +220,8 @@ To set up the **Callback URL**, follow the steps below:
 
 The Webhook URL used on the WhatsApp Business Messaging Channel for GupShup is a public URL that may cause security vulnerabilities. The Kore.ai XO Platform enforces an authentication mechanism by securing the webhook URL and associating it with a Kore.ai App. The **Associate an App** feature is used for this purpose.
 
-This feature is available under**Channels & Flows** > **Channels** > **Digital** > **All** > **WhatsApp Business Messaging** > **Configurations**.
+This feature is available under **Channels & Flows** > **Channels** > **Digital** > **All** > **WhatsApp Business Messaging** > **Configurations**.
+
 <img src="../images/whatsapp23.png" alt="secure gupshup integration" title="secure gupshup integration" style="border: 1px solid gray; zoom:70%;">
 
 

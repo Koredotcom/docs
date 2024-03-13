@@ -73,22 +73,23 @@ You can review and edit these Switchboard integrations for newly created or pre-
 5. Select the required option for the following integrations in the **Switchboard Configuration** window:
     1. **Default Switchboard Integration**: Select the primary contact point for users in your Sunshine Conversations application.
     2. **Next Switchboard Integration to Kore.ai**: Select the next switchboard integration to which the control of a VA conversation is passed from Kore.ai.
-    3. **Next Switchboard Integration to Agen**t: Select the next switchboard integration to which control is transferred after an agent conversation with a user. 
+    3. **Next Switchboard Integration to Agent**: Select the next switchboard integration to which control is transferred after an agent conversation with a user. 
 
         ![alt_text](images/sunshine-(3).png "image_tooltip")
 The options listed include the default mapped integrations and others available in your Sunshine Developer account.
+
 6. After selecting the above fields, click **Done**.
+
 7. On the **Zendesk Sunshine Configurations** window, follow either step below to set **Session Closure Metadata**:
     * Disable the toggle switch if you don’t want the Platform to pass the session metadata to Zendesk. 
-
         ![alt_text](images/sunshine-(4).png "image_tooltip")
-
     * Enable **SessionClosure Metadata**, and do one of the following:
         * Provide at least one **Key** and **Value** input (optional) to allow Kore.ai to capture the session metadata using the switchboard integration API and share it with Zendesk. Adding these parameters and saving the configuration will create a Zendesk ticket with the conversation details and close it.
         ![alt_text](images/sunshine-(2).png "image_tooltip")
-
         * Skip the **Key-Value** input and move to the next step. Not adding these parameters will create a Zendesk ticket with the conversation details but not close it.
+
 8. Select **_Yes_** for **Enable Channel**.
+
 9. Click **Save**.
     ![alt_text](images/sunshine-(6).png "image_tooltip")
 

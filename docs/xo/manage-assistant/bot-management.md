@@ -24,7 +24,7 @@ This feature is particularly helpful to test various versions of your assistant 
 
 
 
-Prior to this patch, this flag was part of ‘NLP Settings’ under ‘NLP Data’ in the imported bot definitions and ‘Bot Setting’ under ‘Setting’ in the exported bot definitions. This change is aimed at streamlining the functionality and might result in the failure to the incremental import of a bot from an export file generated before v8.0.)
+Prior to this patch, this flag was part of ‘NLP Settings’ under ‘NLP Data’ in the imported bot definitions and ‘Bot Setting’ under ‘Setting’ in the exported bot definitions. This change is aimed at streamlining the functionality and might result in the failure to the incremental import of a bot from an export file generated before v8.0.
 
 		
 
@@ -73,8 +73,8 @@ To import a Virtual Assistant, follow these steps:
 3. From the left menu select **Bot Management > Import & Export**.
 4. On the Import & Export page select the **Import** tab.
 5. Click the **Choose File** buttons next to the **Bot Definition File** field and **Bot Config File** field, and upload the _botDefinition.json_ and _config.json_ files respectively.
-6. Optionally, upload the custom script file from the imported assistant if any. 
-<    <img src="../images/bot-import-custom-script-file.png" alt="App import - Custom script file" title="App import - Custom script file" style="border:1px solid gray; zoom:70%;">
+6. Optionally, upload the custom script file from the imported assistant if any. The file size is limited to 500kb.
+<img src="../images/bot-import-custom-script-file.png" alt="App import - Custom script file" title="App import - Custom script file" style="border:1px solid gray; zoom:70%;">
 
 7. Select one of these import options: **Full Import** or **Incremental Import**.
 8. If you select **Full import**, the bot definition in the in-development copy will be overwritten with the definition present in the import file.
@@ -153,10 +153,10 @@ To import a VA while creating it, follow these steps:
 
 6. In the **Create New Bot** window, select **Import a Bot**.
 7. Enter a **Name**. 
-8. Select an icon or click the **+** icon to upload your own. Images should be in PNG format and should not exceed 40×40 pixels. The file size is limited to 80kb. 
+8. Select an icon or click the **+** icon to upload your own. Images should be in PNG format and should not exceed 40×40 pixels. The file size is limited to 80kb.
 9. Upload the **Bot Definition File**.
 10. Upload the **Bot Config File**.
-11. Upload the **Custom Script File**.
+11. Upload the **Custom Script File**. The file size is limited to 500kb.
 12. Click **Import** when ready. 
 
 

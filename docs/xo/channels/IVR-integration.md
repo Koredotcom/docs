@@ -49,37 +49,48 @@ Steps to configure IVR settings for your Virtual Assistant:
   ![IVR panel](../images/third-party-voice.png "IVR panel")
 4. On the **Configurations** tab, perform the following steps:
 5. Use **Kore.ai IVR Sandbox** for testing your VA. See [Sandbox Configuration ](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#ivr-sandbox)for more details.
+
+    !!! note
+
+        If you save the configuration after associating  an app without enabling IVR Settings, the  platform pre-populates the required settings for Sandbox.      
 6. Associate an App with the IVR channel, either by creating a new one or selecting an existing one. If you do not have any apps, a message is displayed as shown in the following screenshot.
  ![associate app](../images/IVR-4.png "associate app")
+
+    !!! note
+
+        If you already have created apps, then select an app from the Select App drop-down or create a new app. See Sandbox Configuration steps to know more.
+
 7. Use the **WebHook URL** provided in your external application.
+
+
 8. Enter the details to complete the setup, see [Voice Call Properties: Channel Settings](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Channel_Settings) for more information.
  ![Webhook URL](../images/IVR-5.png "Webhook URL")
 9.  From the **Voice Call Properties** tab, set the configurations.
-10. The Platform supports all UniMRCP-encoded voice-to-text services. If you select the **Enable Transcription** option for the VA, then the platform allows you to skip defining grammar during configuring IVR settings for any node (described in [Configure Dialog Node IVR Properties](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#Configure_Dialog_Node_IVR_Properties)).
-See [Voice Call Properties: Configuring Grammar](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Configuring_Grammar) for a detailed configuration for Grammar syntax.
+ ![IVR Sandbox](../images/IVR-6.png "IVR")
+ ![IVR data](../images/IVR-7.png "image_tooltip")
+  
 
-!!! note
+  !!! note
 
-    If you already have created apps, then select an app from the Select App drop-down or create a new app. See Sandbox Configuration steps to know more.
-
-!!! note
-
-    If you have enabled IVR Sandbox, the following settings are required to be configured on the platform. These are pre-populated if you do not enable the IVR settings. In case you have enabled the settings, ensure the values are the same as follows:
+      If you have enabled IVR Sandbox, the following settings are required to be configured on the platform. These are pre-populated if you do not enable the IVR settings. In case you have enabled the settings, ensure the values are the same as follows:
      – Enable Transcription set to Yes.
      – Transcription engine source set to builtin:speech/transcribe.
      – IVR Data Extraction Key set to user input.
      – ASR Confidence Threshold Key set to userinput confidence.
      – ASR Threshold Confidence set to 50.
-   ![IVR Sandbox](../images/IVR-6.png "IVR Sandbox")
-   ![IVR data](../images/IVR-7.png "image_tooltip")
+  
+
+  
+10. The Platform supports all UniMRCP-encoded voice-to-text services. If you select the **Enable Transcription** option for the VA, then the platform allows you to skip defining grammar during configuring IVR settings for any node (described in [Configure Dialog Node IVR Properties](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#Configure_Dialog_Node_IVR_Properties)).
+See [Voice Call Properties: Configuring Grammar](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/#Configuring_Grammar) for a detailed configuration for Grammar syntax.
+
+
 
 !!! note
 
     Sandbox may not respond as expected if you use different values.
 
-!!! note
 
-    If you save the configuration after associating  an app without enabling IVR Settings, the  platform pre-populates the required settings for Sandbox.
 
 Once you have enabled the IVR channel, configure the **Telephony Welcome Event** in IVR Settings. This plays a welcome message for users when they connect to the VA through the IVR channel.
 
