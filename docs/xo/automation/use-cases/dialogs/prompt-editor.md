@@ -17,19 +17,13 @@ Dialog Tasks support two types of user prompts:
 
 ## Prompt Editor
 
-The prompt editor has three tabs to offer the following features:
+You can create a user prompt or error prompt using any of the available templates (explained below).
 
+<img src="../images/prompt-editor.png" alt="Prompt editor" title="Prompt Editor" style="border:1px solid gray; zoom:70%;">
 
+In the case of **Error Prompts**, if you have enabled the _Present Prompts in the **Order of Retries**_ toggle, the handlebar icon will be visible before each error prompt message. You can use this to re-order the messages so that it is displayed in that sequence.
 
-* **Simple**: Basic editor controls and HTML to define and format the user prompt. Enter text, and then format it using buttons for bold, italics, header styles, hyperlinks, ordered and unordered lists, and inserting lines.
-* **Advanced**: Advanced JavaScript editor to define, format, and render the user prompt.
-* **Preview**: View a sample of the rendered output message with markup as displayed to the end-user.
-
-Below is the JavaScript message from the _Book Flights_ VA that presents the response from a weather API to the users in a custom format:
-
-<img src="../images/prompt-editor-user-prompt-javascript.png" alt="Response from Weather API" title="Response from Weather API" style="border:1px solid gray;zoom:70%;">
-
-In the case of **Error Prompts**, if you have enabled the _Present Prompts_ in the **Order of Retries** toggle, the handlebar icon will be visible before each error prompt message. You can use this to re-order the messages so that it is displayed in that sequence.
+<img src="../images/prompt-editor-present-prompts-in-order-of-retries.png" alt="Prompt editor - Present prompts in Order of Retries" title="Prompt Editor - Present prompts in Order of Retries" style="border:1px solid gray; zoom:70%;">
 
 
 ## Configure the User Prompt
@@ -73,6 +67,10 @@ In the case of Entity and Confirmation nodes, you refer to Prompts whereas, for 
 5. Click **Save** after composing the message.
 
 To add any more VA responses, repeat from step 4b.
+
+!!! Note
+
+    In case of **Error prompts**, Only **Text** and **Custom JavaScript** templates are available.
 
 
 ## Plain Text Prompts
@@ -127,13 +125,7 @@ The plain text tab supports the following markups:
   <tr>
    <td>“`Hello“`
    </td>
-   <td> 
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image4.png" width="" alt="alt_text" title="image_tooltip">
-
+   <td><img src="../images/prompt-editor-img-hello.png" width="" alt="alt_text" title="image_tooltip">
    </td>
   </tr>
   <tr>
@@ -157,13 +149,7 @@ The plain text tab supports the following markups:
   <tr>
    <td>![Image](https://kbob.github.io/images/sample-4.jpg)
    </td>
-   <td> 
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image5.jpg" width="" alt="alt_text" title="image_tooltip">
-
+   <td><img src="i../images/prompt-editor-sample-4.jpg" width="" alt="alt_text" title="image_tooltip">
    </td>
   </tr>
   <tr>
@@ -210,7 +196,7 @@ The plain text tab supports the following markups:
 <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-<img src="images/image6.jpg" width="" alt="alt_text" title="image_tooltip">
+<img src="../images/prompt-editor-indent.png" width="" alt="alt_text" title="image_tooltip">
 
    </td>
   </tr>
@@ -312,7 +298,7 @@ For a few channel options in the **Channel** drop-down, you can see a list of te
 
 ![alt_text](images/image8.png "image_tooltip")
 
-For more information on templates, see [Widget SDK – Message Formatting and Templates](https://developer.kore.ai/docs/bots/sdks/widget-sdk-message-formatting-and-templates/){:target="_blank"}.
+For more information on templates, see [Widget SDK – Message Formatting and Templates](../../../../sdk/widget-sdk-message-formatting-and-templates/){:target="_blank"}.
 
 The same message configuration rules and principles apply while configuring any entity prompt or KG responses too.
 
