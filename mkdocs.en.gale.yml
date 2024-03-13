@@ -120,32 +120,8 @@ copyright: |
 nav:
   - Platform : home.md
   - Getting Started:
-    - PLATFORM:
-      - About the Platform: getting-started/about-xo-platform.md
-      - Access the Platform: virtual-assistants-overview.md   
-      - Automation:
-        - About Virtual Assistant: virtual-assistants-overview.md
-        - Build a Virtual Assistant: virtual-assistants-overview.md   
-      - Answers:
-        - About Answers: virtual-assistants-overview.md
-        - Configure Answers: virtual-assistants-overview.md   
-      - AgentAssist:
-        - About AgentAssist: virtual-assistants-overview.md
-        - Set up AgentAssist: virtual-assistants-overview.md       
-      - Contact Center:
-        - About Contact Center: virtual-assistants-overview.md
-        - Set up Contact Center: virtual-assistants-overview.md       
-      - Campaigns:
-        - About Campaigns: virtual-assistants-overview.md
-        - Set up Campaign: virtual-assistants-overview.md       
-      - Quality Management:
-        - About Quality Management: virtual-assistants-overview.md
-        - Configure Quality Management: virtual-assistants-overview.md         
-    - GLOSSARY:
-      - Concepts and Terminology: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/ 
-    - FAQs: 
-      - Automation FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
-      - Contact Center FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/   
+    - Introduction: gale/introduction.md
+    - Core Capabilities of GALE: gale/core-capabilities-of-gale.md
   - Automation: 
     - Overview: automation/about-automation.md
     - USE CASES: 
