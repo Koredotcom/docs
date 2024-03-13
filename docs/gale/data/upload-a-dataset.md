@@ -1,4 +1,4 @@
-# **Upload a dataset**
+# Upload a dataset
 
 You can upload a dataset of your choice in CSV, JSON, or, JSONL format.
 
