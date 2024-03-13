@@ -10,12 +10,12 @@ You can upload a dataset of your choice in CSV, JSON, or, JSONL format.
 
     
 
-1. Click the **Upload dataset** button to upload your data from the location. The uploaded file is listed on the Data page.
+1. Click the **Upload dataset** button to upload your data from the location. The uploaded file is listed on the **Data** page.
 
     <img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
 
 
-1. When you select the Advance mode in the Prompt Playground and click the **Add dataset **option you can view and select the dataset you have added from the list as shown in the following image.
+1. When you select the Advance mode in the Prompt Playground and click the **Add dataset** option you can view and select the dataset you have added from the list as shown in the following image.
 
     <img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
 
