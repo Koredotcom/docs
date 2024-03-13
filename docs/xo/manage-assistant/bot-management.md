@@ -45,6 +45,7 @@ To import a Virtual Assistant, follow these steps:
 
 7. Select one of these import options: **Full Import** or **Incremental Import**.
 8. If you select **Full import**, the bot definition in the in-development copy will be overwritten with the definition present in the import file.
+
 * If there are one or more additional tasks or languages in the assistant, and if these are not present in the import definition, then these tasks will be marked as deleted and will be removed when the bot is published.
 * You can choose to auto-publish the assistant post-import.
 <img src="../images/bm(11).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
@@ -69,6 +70,7 @@ To import a Virtual Assistant, follow these steps:
     * **Settings**: Bot Settings, Bot Variables and Voice Call Properties.
     * **Custom Dashboards** – This is useful in case you have created custom dashboards under the Analyze section and you want to import these to the new VA as well. 
     * On the confirmation dialog that opens, click **Backup** to download the existing assistant configuration.
+
     <img src="../images/bm(8).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
 
         !!! note
@@ -412,8 +414,8 @@ You cannot delete a VA if any of the tasks are Published. Once you publish a tas
 
 To delete a Virtual Assistant:
 
-1. Open the assistant you want to delete
-2. Select the **Deploy** tab from the top menu
+1. Open the assistant you want to delete.
+2. Select the **Deploy** tab from the top menu.
 3. From the left navigation under the **Bot Management** menu, click **Delete Bot**.
 <img src="../images/bm(6).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
 
@@ -425,7 +427,7 @@ To delete a Virtual Assistant:
 
 After creating a VA, you may need to edit it for various reasons such as changing its settings, adding tasks, enabling channels, and add flows. To track all the changes made to a VA, you can view the **Change Logs**, which show a chronological list of modifications to your assistant. It consists of all the changes from the initial save of your assistant to the last update. To view the changelog for a VA, follow these steps:
 
-1. Select **Deploy** tab from the top menu
+1. Select **Deploy** tab from the top menu.
 2. From the left menu click **Change Logs**.
 <img src="../images/bm(2).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
 
