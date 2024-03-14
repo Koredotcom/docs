@@ -2,7 +2,7 @@
 
 When you add the email channel to your VA, the XO Platform automatically generates the email address for end users to communicate with your assistant. By default, the email address syntax is **_&lt; bot name >@bots.kore.com_**. 
 
-For example, **_customer-support@bots.kore.com_** Optionally, you can add a custom name, such as **_my-bot@bots.kore.com_.**
+For example, <b><i>customer-support@bots.kore.com</i></b> Optionally, you can add a custom name, such as <b><i>my-bot@bots.kore.com</i></b>.
 
 !!!note
 
@@ -35,11 +35,11 @@ When **Display Name** is not provided, the email profiles appear with the sender
 
 3. **(Optional)** Enter the value for **Display Name** to customize how the configured email address will appear to the end user.
 
-     !!!note
+!!!note
 
-        A maximum of 30 characters are allowed for the display name, including special characters, numbers, and spaces.
+    A maximum of 30 characters are allowed for the display name, including special characters, numbers, and spaces.
 
-     <img src="../images/add-display-name.png" alt="add display name" title="add display name" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/add-display-name.png" alt="add display name" title="add display name" style="border: 1px solid gray;zoom:50%;"/>
 
 <ol start="4"><li>Choose whether you want to send a contact card to all users as a part of the introduction message under <b>Send contact card (.VCF)</b>.
 <img src="../images/send-contact-card.png" alt="send contact card" title="send contact card" style="border: 1px solid gray;zoom:50%;"/></li>
