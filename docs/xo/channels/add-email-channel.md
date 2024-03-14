@@ -60,6 +60,6 @@ When **Display Name** is not provided, the email profiles appear with the sender
 <ol start="7"><li>In the <b>Email</b> window, click <b>Save</b>. The <i>Channel added successfully</i> message is displayed.
 <img src="../images/email-template-design-header-footer.png" alt="email template design header and footer" title="email template design header and footer" style="border: 1px solid gray;zoom:50%;"/></li></ol>
 
-Once the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about [Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
+Once the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about [Publishing your Virtual Assistant](https://docsinternal-kore.github.io/docs/xo/deploy/publishing-bot/).
 
-To learn more about working with Channels within the UXO Platform, please see the [Channel Enablement](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/) page.
+To learn more about working with Channels within the UXO Platform, please see the [Channel Enablement](https://docsinternal-kore.github.io/docs/xo/channels/adding-channels-to-your-bot/) page.
