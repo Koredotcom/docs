@@ -924,7 +924,7 @@ The Enriched Chat Transcript is visible on the Chat History panel.
 
 The Platform uses the`{} JavaScript` tag in the Chat History for bot messages and templates written using JavaScript. However, bot designers can now add a context-specific **Alternate Text** to JavaScript messages/templates they define and explain the purpose more clearly. The added Alternate Text is displayed alongside the JavaScript message tag in the **Chat History** window for developers to get a better understanding of the message’s intent. 
 
-The <a href="https://developer.kore.ai/docs/bots/api-guide/conversation-history-api/" target="_blank">Conversation History API</a> response includes a parameter `messages.tags.altText` which captures the **Alternate Text** value(s) configured in the JavaScript message or Web SDK template payload through the predefined function discussed below.
+The <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/conversation-history/" target="_blank">Conversation History API</a> response includes a parameter `messages.tags.altText` which captures the **Alternate Text** value(s) configured in the JavaScript message or Web SDK template payload through the predefined function discussed below.
 
 **How It Works**
 
