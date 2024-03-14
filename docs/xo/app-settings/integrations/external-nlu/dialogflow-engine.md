@@ -79,7 +79,7 @@ Follow these steps to create service account:
 
     !!! note
 
-            If you already have service accounts with credentials, you can access them from the Credentials option in the left navigation menu.
+        If you already have service accounts with credentials, you can access them from the Credentials option in the left navigation menu.
 
     <img src="../images/external-nlu-dialogflow-engine-img12.png" alt="Click 'Create Credentials'" title="Click 'Create Credentials'" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -119,7 +119,8 @@ Follow these steps to generate the private key:
 <img src="../images/external-nlu-dialogflow-engine-img22.png" alt="JSON option to create Private key" title="JSON option to create Private key" style="border: 1px solid gray;zoom:50%;"/>
 
     !!! note
-            The JSON option is by default selected.
+        
+        The JSON option is by default selected.
 
 
 A file containing the JSON Private Key information for use in the External NLU settings of Kore.ai platform, is downloaded and saved to your computer.
@@ -146,6 +147,6 @@ The file has the layout as follows:
 
 !!! note
 
-        Save this JSON payload securely. You will not be able to access it again. The entire content of this JSON file must be copied into the private key field inside the Kore.AI External NLU adapter settings. See Adapter Configuration to know more.
+    Save this JSON payload securely. You will not be able to access it again. The entire content of this JSON file must be copied into the private key field inside the Kore.AI External NLU adapter settings. See Adapter Configuration to know more.
 
 To understand the testing and debugging of your VA, to validate the working of the DialogFlow NLU, see [Test and Debug](../test-and-debug){:target="_blank"}.

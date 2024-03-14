@@ -9,8 +9,8 @@ To add the Workplace by Facebook channel to your assistant, you need a developer
 To complete the following procedure, you must have an admin account in the _Facebook Workplace Developers Portal_ (https://&lt;**_Your Domain_**>workplace.com/work/admin).
 
 
-1. In the XO Platform, under the **Bots** section, click the assistant you want to enable the Workplace by Facebook channel.
-2. On the **Channels** tab, click the **Workplace by Facebook** icon.
+1. In the XO Platform, go to **Channels & Flows** > **Channels** > **Digital** > **All**.
+2. Click the **Workplace by Facebook** icon.
 3. The **Workplace by Facebook Channel** page is displayed.
 4. Go to the **Configurations** tab:
     * In the **Communication Mode** section, select one or both of the following:
@@ -25,13 +25,13 @@ To complete the following procedure, you must have an admin account in the _Face
         * **Read work profile** – Required to see any group member’s complete profile, including phone number, department, and location.
         * **Read org chart** – Needed to check a group member’s profile to see who they report to and who reports to them;
 
+            !!! note
+
+                You are advised to set the permissions correctly after evaluating the above-mentioned link carefully. Managing the permissions for your VA after installing the Kore.ai application on your workplace account needs you to uninstall the application on the workplace account and re-authorize it in the XO platform.        
+
 5. Click **Authorize**.
-
-!!! note
-
-         You are advised to set the permissions correctly after evaluating the above-mentioned link carefully. Managing the permissions for your VA after installing the Kore.ai application on your workplace account needs you to uninstall the application on the workplace account and re-authorize it in the XO platform.
-
 ![workplace facebook](../images/workplace_facebook.png "image_tooltip")
+
 6. You are redirected to Workplace by Facebook page.
 
 7. Log in to your _Facebook Workplace_ admin account.

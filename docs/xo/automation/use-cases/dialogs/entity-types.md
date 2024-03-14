@@ -918,7 +918,7 @@ For example, consider the sales inquiries for flight bookings. Typical queries c
 
 As you can see, the virtual assistant typically needs to process a combination of details like flight class, departure city, destination city and travel date to respond to those queries.
 
-These scenarios are taken care of by the Composite Entity Type. [Refer here](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-composite-entities/){:target="_blank"} to know more about Composite Entity Types.
+These scenarios are taken care of by the Composite Entity Type. [Refer here](../../../../how-tos/build-a-banking-assistant/train-the-assistant/composite-entities/){:target="_blank"} to know more about Composite Entity Types.
 
 
 ### Date
@@ -1076,9 +1076,7 @@ Post v7.1, the following keys are added to the context object for the below-ment
 
     You can also choose to present the list of values as part of the entity prompt to the user. For this, you need to set the **Display List of Values** to _‘Yes, use channel specific standard formatting for default messages and show available list of values to end user’_. This option works only with the **Plain Text** prompts. This list will not be presented if **JavaScript** based templates are used as prompts.
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image1.png "image_tooltip")
+<img src="../images/entity-types-list-of-item-enum-display-values.png" alt="Display list of values" title="Display list of values" style="border:1px solid gray;zoom:70%;">
 
 !!! Note
 
@@ -1117,9 +1115,7 @@ This feature is not fully supported in all languages. [Click here for details](.
 * **Editor** tab – Enter the **Display Name**, **Value**, and **Synonyms** for the key.
 * **Upload File** – Click **Upload File** to locate a JSON formatted file list or a .csv file formatted list of key/value pairs. For example,  
 
-    <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image2.png "image_tooltip")
+    <img src="../images/entity-types-list-of-item-lookup-upload-file.png" alt="Upload file containing key/value pairs" title="Upload file containing key/value pairs" style="border:1px solid gray;zoom:70%;">
 
 Post v7.1, the following keys are added to the context object for the below-mentioned usage:
 
@@ -1164,9 +1160,7 @@ The external service invoked must have a provision to accept and handle the user
     4. _Synonyms Key_ – The field containing the synonyms for this field, if any. This is the value that the user refers to. For example, in response to the disambiguation question. This can be accessed using `{{context.entities.&lt;entity-name>.synonym}}`.
     5. _Matched Word Index_ – To indicate the words in the _inputData_ that were used for entity extraction (in the same format as the _usedUp_ value in the context.inputData object). This is used by the platform to mark the word as used in the user utterance.
 
-        <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-        ![alt_text](images/image3.png "image_tooltip")
+        <img src="../images/entity-types-list-of-items-lookup-setup.png" alt="List of item(Lookup) Setup" title="List of item(Lookup) Setup"style="border:1px solid gray;zoom:70%;">
 
 
 3. **Flow**: The platform will:
@@ -1531,7 +1525,7 @@ There won’t be any validations done on the user utterance for string entities 
 
 ### Time
 
-Capture time in a user utterance. For example, _Set my alarm for 6 am_, return the value of Time in ISO 8601 time format as hh:mm:ss.sZD.  
+Capture time in a user utterance. For example, _Set my alarm for 6 am_, return the value of Time in ISO 8601 time format as HH:MM:SS.sZD.  
 
 It recognizes the following denotations:
 
@@ -1580,3 +1574,4 @@ Captures a US zip code from the user utterance. For example, _What is the weathe
 {
 "ZipcodeEntity": "32746"
 }
+```

@@ -1,18 +1,20 @@
 
 # Using the Asana Action Templates
 
-You can use the **Prebuilt Action Templates** from your Asana integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
+You can use the **Prebuilt Action Templates** from your Asana integration to auto-create dialog tasks and test them using the **Test** option.
 
 Steps to create a dialog task using Asana action templates:
 
-1. Go to **Build > Conversation Skills > Dialog Tasks**.
+1. Go to **Automation > Dialogs**.
 2. Click **Create a Dialog Task**.  
 <img src="../images/asana-template-img1-create_dailog_task.png" alt="Create dialog task" title="Create dialog task" style="border: 1px solid gray;zoom:50%;"/>
 
 3. On the Dialog Task pop-up, under the **Integration**, select the **Asana** option to view the action templates.  
 <img src="../images/asana-action-img12.png" alt="Select Asana action template" title="Select Asana action template" style="border: 1px solid gray;zoom:50%;"/>  
  
-    **Note**: If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions){:target="_blank"}.  
+    !!! Note
+    
+        If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions){:target="_blank"}.  
     
     <img src="../images/asana-template-img3-create_dialog_new.png" alt="Explore integrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
 

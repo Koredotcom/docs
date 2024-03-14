@@ -32,15 +32,14 @@ Steps to configure **Infobip**:
 5. Click the **ellipses** icon under **Action** and select **Edit Configuration**.
 <img src="../images/whatsapp4.png" alt="edit infobib configuration" title="edit infobib configuration" style="border: 1px solid gray; zoom:70%;">
 
-6. On the **Edit Configuration** page, click the **edit** icon, add the **URL for incoming messages** (copy the Webhook URL from the Kore Platform under **Deploy** > **Channels** > **WhatsApp Business Messaging** > **Configurations** tab) and click **Back**.
+6. On the **Edit Configuration** page, click the **edit** icon, add the **URL for incoming messages** (copy the Webhook URL from the Kore Platform under **Channels & Flows** > **Channels** > **Digital** > **All** > **WhatsApp Business Messaging** > **Configurations** tab) and click **Back**.
 <img src="../images/whatsapp5.png" alt="deploy infobib" title="deploy infobib " style="border: 1px solid gray; zoom:70%;">
 
 7. Next, to add Infobip’s **Base URL**, follow these steps:
     * On the Kore.ai Platform, click the **Virtual Assistants** tab, and select the published virtual assistant to add the **WhatsApp Business Message** channel.
-
     <img src="../images/whatsapp6.png" alt="infobib sender" title="infobib sender" style="border: 1px solid gray; zoom:70%;">
 
-    * Under **Deploy** > **Channels**, click **WhatsApp Business Messaging**.
+    * On the Kore.ai Platform, go to **Channels & Flows** > **Channels** > **Digital** > **All** and click **WhatsApp Business Messaging**.
     * On the **WhatsApp Business Messaging** panel, click the **Configurations** tab and provide inputs for the following fields:
         * **Messaging Partner** – Select **Infobip** from the dropdown list.
         * **Phone Number** – Copy and paste the number displayed on the **Infobip** portal for your account under the **Connect** section (please refer to step 3). The Platform now supports **adding multiple phone numbers on the WhatsApp Messaging Channel** for the same Virtual Assistant. The Virtual Assistant responds to only the source number from which it receives the message rather than a common phone number. [Learn more](https://developer.kore.ai/docs/bots/channel-enablement/whatsapp-messaging-channel-support-for-multiple-phone-numbers/).
@@ -107,10 +106,11 @@ The Platform supports integration with **GupShup** to enable WhatsApp business a
 
 !!! note
 
-      The important steps in completing this channel enablement are as follows:
+      To enable WhatsApp Messaging on this channel, you must have a GupShup enterprise account.
 
+The important steps in completing this channel enablement are as follows:
 
-1. [Create a GupShup Application](/docs/xo/add-whatsapp-business-channel/#step-1-create-a-gupshup-application). \
+1. [Create a GupShup Application](/docs/xo/add-whatsapp-business-channel/#step-1-create-a-gupshup-application). 
 2. [Configure the Channel Enablement](/docs/xo/add-whatsapp-business-channel/#step-2-configure-the-channel-enablement).
 
 * [Create a WABA (WhatsApp Business Account)](/docs/xo/add-whatsapp-business-channel/#step-2a-create-a-new-whatsapp-business-account).
@@ -159,8 +159,7 @@ Once you have created a GupShup app, you need to create a **WABA** to set up the
 <img src="../images/whatsapp17.png" alt="enable gupshup app" title="enable gupshup app" style="border: 1px solid gray; zoom:70%;">
 
 3. On the **Let’s Get Started** window, select the **New Number** option under **Managed onboarding with Gupshup**.
-4. Click **Proceed**.
-<img src="../images/whatsapp18.png" alt="add gupshup number" title="add gupshup number" style="border: 1px solid gray; zoom:70%;">
+4. Click **Proceed**.  <img src="../images/whatsapp18.png" alt="add gupshup number" title="add gupshup number" style="border: 1px solid gray; zoom:70%;">
 
 
 1. Enter your details to set up your WhatsApp Business account and click **Next**.
@@ -175,11 +174,10 @@ To integrate your GupShup service using the WBM channel to the Kore.ai XO Platfo
 
 
 1. Copy the **Mobile number**, **WABA ID**, and the **Password** from the GupShup WhatsApp Dashboard.
-2. On the Kore.ai Bot Builder, navigate to **Deploy** > **Channels** > **WhatsApp Business Messaging** (under **Enterprise Channels**).
+2. On the Kore.ai Bot Builder, navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **WhatsApp Business Messaging**.
 3. Click the **Configurations** tab on the **WhatsApp Business Messaging** window.
 4. Select **GupShup** from the dropdown list for **Messaging Partner**.
-5. Paste the copied values for **Mobile number**, **WABA ID**, and &lt;b.Password in the respective input fields.
-<img src="../images/whatsapp19.png" alt="add gupshup WABA ID" title="add gupshup WABA ID" style="border: 1px solid gray; zoom:70%;">
+5. Paste the copied values for **Mobile number**, **WABA ID**, and **Password** in the respective input fields.  <img src="../images/whatsapp19.png" alt="add gupshup WABA ID" title="add gupshup WABA ID" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -190,23 +188,20 @@ To link to your bot on the Kore.ai Platform to receive inbound messages/events, 
 To set up the **Callback URL**, follow the steps below:
 
 
-1. On the Kore.ai Bot Builder, navigate to **Deploy** > **Channels** > **WhatsApp Business Messaging** (under **Enterprise Channels**).
+1. On the Kore.ai Bot Builder, navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **WhatsApp Business Messaging**.
 2. Click the **Configurations** tab on the **WhatsApp Business Messaging** window.
-3. Ensure you have selected **GupShup** for the **Messaging Partner** field. Click **Copy** to copy the **Webhook URL**.
-
-<img src="../images/whatsapp20.png" alt="enter gupshup webhook" title="enter gupshup webhook" style="border: 1px solid gray; zoom:70%;">
+3. Ensure you have selected **GupShup** for the **Messaging Partner** field. Click **Copy** to copy the **Webhook URL**.  <img src="../images/whatsapp20.png" alt="enter gupshup webhook" title="enter gupshup webhook" style="border: 1px solid gray; zoom:70%;">
 
 4. Navigate to your **GupShup WhatsApp Dashboard**.
 5. Click the **Settings** icon for your app of type **Access API**.
-
 <img src="../images/whatsapp21.png" alt="enter gupshup settings" title="enter gupshup settings" style="border: 1px solid gray; zoom:70%;">
 
-1. On the **Settings** page, scroll down to the **Test Access API and set callback URL **section.
-2. Click the **Callback URL / Link your Bot** tab.
-3. Turn on the toggle switch and paste the **Webhook URL** you copied from the Bot Builder in the **Enter your Callback URL** input field.
+6. On the **Settings** page, scroll down to the **Test Access API and set callback URL** section.
+7. Click the **Callback URL / Link your Bot** tab.
+8. Turn on the toggle switch and paste the **Webhook URL** you copied from the Bot Builder in the **Enter your Callback URL** input field.
 <img src="../images/whatsapp22.png" alt="test gupshup api" title="test gupshup api" style="border: 1px solid gray; zoom:70%;">
 
-4. Click **Set**.
+9. Click **Set**.
 
     Refer to this [link](https://www.gupshup.io/developer/docs/bot-platform/guide/whatsapp-api-documentation#setupcallbackURL) for more information on setting up the Callback/Webhook URL on the Gupshup Dashboard.
 
@@ -215,7 +210,7 @@ To set up the **Callback URL**, follow the steps below:
           Contact the Gupshup customer support team to help configure the Kore.ai webhook URL on GupShup and enable inbound messages to the bot.
 
 
-2. Once the callback is set successfully on the Kore.ai XO Platform **WhatsApp Business Messaging** window, follow the steps below:
+10. Once the callback is set successfully on the Kore.ai XO Platform **WhatsApp Business Messaging** window, follow the steps below:
     * (Optional) Enable the **Associate an App** option, if required, and follow the configuration steps.
     * Select **YES** for the **Enable Channel** option.
     * Click **Save**.
@@ -225,7 +220,7 @@ To set up the **Callback URL**, follow the steps below:
 
 The Webhook URL used on the WhatsApp Business Messaging Channel for GupShup is a public URL that may cause security vulnerabilities. The Kore.ai XO Platform enforces an authentication mechanism by securing the webhook URL and associating it with a Kore.ai App. The **Associate an App** feature is used for this purpose.
 
-This feature is available under **Deploy** > **Channels** > **WhatsApp Business Messaging** > **Configurations**.
+This feature is available under **Channels & Flows** > **Channels** > **Digital** > **All** > **WhatsApp Business Messaging** > **Configurations**.
 
 <img src="../images/whatsapp23.png" alt="secure gupshup integration" title="secure gupshup integration" style="border: 1px solid gray; zoom:70%;">
 
@@ -242,7 +237,9 @@ When **Associate an App** is enabled, the following happens:
 
 Once you enable **Associate an App**, you must manually select an app and configure it for the GupShup app (by clicking **Copy** and pasting the _Client ID_ and _Client Secret_ (shown above) from the Kore.ai XO Platform).
 
-**Note**: This channel configuration is not a part of the Bot Import/Export feature. The user should manually enable the channel for the target Bot. The integration flow remains the same even with the **App Association** feature.
+!!! note
+
+    This channel configuration is not a part of the Bot Import/Export feature. The user should manually enable the channel for the target Bot. The integration flow remains the same even with the **App Association** feature.
 
 
 ### **Messaging Templates**
@@ -258,12 +255,44 @@ You may have to switch between these message types depending on the timing and i
 
 Whether you are messaging clients inside the messaging window determines the type of message you send. When messaging customers outside of this window, you must follow pre-approved message template rules. [Learn more](https://docs.gupshup.io/docs/message-types-templates#message-templates).
 
-The Kore.ai XO Platform supports public APIs for the above WhatsApp Outbound Templates on the GupShup channel. These templates can be used during virtual assistant conversations to structure the messages exchanged.
+Message templates for outbound messages play a crucial role in ensuring businesses adhere to WhatsApp policies when initiating communications. These templates come preformatted with predefined text, providing a structured framework for messages sent to end users. Their reusability is particularly valuable when sending the same message multiple times.
 
+Instead of transmitting the actual message content, the template name serves as the identifier for the message content when sending a message template.
+
+Templates can incorporate placeholders, allowing for the inclusion of values or customized information before sending the template message. Additionally, template headers may include media that provides more detailed information. Introducing buttons to messages further enhances interactivity and engagement.
+
+Message templates typically consist of Header, Body, Footer, and Buttons. For detailed see [Gupshup docs](https://docs.gupshup.io/docs/whatsapp-message-types-outbound-templates#header)
+
+The Document with Text template is also supported for outbound messages. With this template, developers can send a document along with informative text for end users to download.
+
+A sample template script is given below:
+
+'''
+    var msg = {
+
+    "type": "document",
+
+    "message_text":"This is document caption",
+
+    "caption":"This document talks about Gupshup features",
+
+    "filename": "Developer.pdf",
+
+    "document": {"url":"http://enterprise.smsgupshup.com/help/in/EnterpriseAPIDocument.pdf"}
+
+    };
+
+    print(JSON.stringify(msg))
+
+'''
+
+Prior to submitting notifications through the WhatsApp Business Solution or the WhatsApp Cloud Business Solution, it is imperative to create and register your message templates. This step ensures that the templates comply with WhatsApp’s review requirements, facilitating effective communication within the platform.
+
+The Kore.ai XO Platform supports public APIs for the integration and utilization of WhatsApp Outbound Templates on the GupShup channel. Contact(https://kore.ai/contact-us/) our experts to learn more. 
 
 ### **Support for WhatsApp Pay**
 
-The XO Platform supports WhatsApp Pay, a digital payment service that enables instant money transfers between banks through mobile devices using the Unified Payments Interface (UPI) system for the GupShup channel. GupShup, as a WhatsApp Business integration provider, supports outbound message types **Order Details [Text]** and** Order Status** templates, which are also supported on the XO Platform via APIs.
+The XO Platform supports WhatsApp Pay, a digital payment service that enables instant money transfers between banks through mobile devices using the Unified Payments Interface (UPI) system for the GupShup channel. GupShup, as a WhatsApp Business integration provider, supports outbound message types **Order Details [Text]** and **Order Status** templates, which are also supported on the XO Platform via APIs.
 
 **How it Works**
 
@@ -274,7 +303,7 @@ The XO Platform supports WhatsApp Pay, a digital payment service that enables in
 3. The Platform automatically decides the payload to be sent to the channels after parsing Advanced Messages (JS) that include one of the following:
     * **String**: A free-form text message template is used if the JS result is a string.
     * **Object**: A message template is used if the JS result is an object.
-1. The Platform accepts this JSON object format as the **Composite **entity type and stores it in the context object under the respective entity.
+4. The Platform accepts this JSON object format as the **Composite** entity type and stores it in the context object under the respective entity.
 
 An example of a success payload is given below:
 
@@ -296,7 +325,9 @@ An example of a success payload is given below:
 
 To integrate **Karix** to your _WhatsApp Business Messaging_ channel and enable it for a bot, you’ll need to perform the following setup under the **Configuration** tab.
 
-**Note**: To complete this procedure, you must already have a _Karix _account. This is one of the messaging provider for enabling WhatsApp Business Messaging.
+!!! note
+
+    To complete this procedure, you must already have a _Karix _account. This is one of the messaging provider for enabling WhatsApp Business Messaging.
 
 
 ### Prerequisites
@@ -315,7 +346,7 @@ On the WhatsApp Business Messaging platform, follow the below steps:
 1. Select _Karix_ from the list for **Messaging Partner**.
 2. Enter the **Phone Number** to map to the WhatsApp Business Messaging channel.
 3. Provide the **Account Key** you’ve received from the Karix support team.
-4. Provide the **Webhook URL ** shared with the Karix support team.
+4. Provide the **Webhook URL** shared with the Karix support team.
 5. Select **Yes** for **Enable Channel**.
 6. Click **Save**.
 <img src="../images/whatsapp24.png" alt="configure karix" title="configure karix" style="border: 1px solid gray; zoom:70%;">

@@ -17,27 +17,13 @@ Dialog Tasks support two types of user prompts:
 
 ## Prompt Editor
 
-The prompt editor has three tabs to offer the following features:
+You can create a user prompt or error prompt using any of the available templates (explained below).
 
+<img src="../images/prompt-editor.png" alt="Prompt editor" title="Prompt Editor" style="border:1px solid gray; zoom:70%;">
 
+In the case of **Error Prompts**, if you have enabled the _Present Prompts in the **Order of Retries**_ toggle, the handlebar icon will be visible before each error prompt message. You can use this to re-order the messages so that it is displayed in that sequence.
 
-* **Simple**: Basic editor controls and HTML to define and format the user prompt. Enter text, and then format it using buttons for bold, italics, header styles, hyperlinks, ordered and unordered lists, and inserting lines.
-* **Advanced**: Advanced JavaScript editor to define, format, and render the user prompt.
-* **Preview**: View a sample of the rendered output message with markup as displayed to the end-user.
-
-Below is the JavaScript message from the _Book Flights_ VA that presents the response from a weather API to the users in a custom format:
-
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
-
- 
-
-In the case of **Error Prompts**, if you have enabled the _Present Prompts_ in the **Order of Retries** toggle, the handlebar icon will be visible before each error prompt message. You can use this to re-order the messages so that it is displayed in that sequence.
+<img src="../images/prompt-editor-present-prompts-in-order-of-retries.png" alt="Prompt editor - Present prompts in Order of Retries" title="Prompt Editor - Present prompts in Order of Retries" style="border:1px solid gray; zoom:70%;">
 
 
 ## Configure the User Prompt
@@ -45,36 +31,46 @@ In the case of **Error Prompts**, if you have enabled the _Present Prompts_ in t
 You can add or edit the prompts or VA messages from the **Component Properties** tab of an Entity, Confirmation, or Message node.
 In the case of Entity and Confirmation nodes, you refer to Prompts whereas, for the Message node, they are referred to as Responses.
 
-
-
 1. On the dialog task builder, click the **+** icon next to the respective node for which you want to configure the prompts or responses.
 2. Select **Confirmation (or Entity or Message) > New Confirmation (or Entity or Message)** Node.
 3. The **Confirmation (or Entity or Message)** window is displayed with the **Components Properties** tab selected by default.
-4. Under the **User Prompts** (or VA Responses) section, click **Manage**.
-**Note**: If you want to make text edits to the default sample message, modify the message directly in the text box and press **Enter** without clicking **Manage**.
+4. Under the **User Prompts** (or VA Responses) section:
 
-    <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    1. If you only want to change the default sample message, howver on the message text and then click the **edit** (<img src="../images/prompt-editor-edit-icon.png">) icon. The editor appears and here you can edit the message.
 
-    ![alt_text](images/image2.png "image_tooltip")
+        <img src="../images/prompt-editor-edit-default-prompt.gif" alt="Change default message" title="Change default message" style="border:1px solid gray;zoom:70%;">
 
-5. Do one of the following:
-    1. To edit the default sample message by adding context object variables or javascript code, click the sample message. The Message editor opens.
-    2. To add a new prompt message, click **Add Prompt Message/Manage Prompts**. The Message editor opens.
+    2. To add a new prompt message, click **+ Add**. The Message editor opens.
 
-6. In the **Channel** drop-down list, **All Channels** is the default value. To create a channel-specific message, select the channel from the list.
-7. On the Message Editor, the **Plain Text** tab is the default selection. If you want to compose a Javascript message, click the **Advanced** tab.
+        <img src="../images/prompt-editor-add-new-prompt.png" alt="Add new message" title="Add new message" style="border:1px solid gray;zoom:70%;">
 
-    <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    3. In the **Channel** drop-down list, **All Channels** is the default value. To create a channel-specific message, select the channel from the list. This feature would be available for both **Add** and **Edit** message.
 
-    ![alt_text](images/image3.png "image_tooltip")
+        <img src="../images/prompt-editor-select-channel.png" alt="Select channel" title="Select channel" style="border:1px solid gray;zoom:70%;">
 
-    !!! Note
+    4. You can use one of of the several available templates to create/edit your message:
+        * [**Text**](#plain-text-prompts) - Plain textual message. This template is selected by default.
+        * [**Buttons**](#button-prompts) (Not available for Message node) - You can use this template if you want to let the user choose from multiple options. For example, in a Banking app, your prompt can have buttons with captions **Deposit**, **Withdrawl**, **Apply for Credit Card**, **Money Transfer** etc that can be configured to trigger the corresponding task.
+        * **Quick Reply** (Not available for Message node) - You can use this prompt for quick reply, i.e. a limited option of replies. For example, in a prompt that asks user whether they need any more help, you can have quick reply with options **Yes** and **No**.
+        * [**Custom JavaScript**](#javascript-prompts-or-responses) - To compose a JavaScript code.
 
-        You can use stored context variables with {{variable brackets}}. For example, ‘Hello {{context.session.UserContext.firstName}}. How can I help you?’
+        <img src="../images/prompt-editor-select-template.png" alt="Select template" title="Select template" style="border:1px solid gray;zoom:70%;">
 
-8. Compose the message and click **Save**.
+        !!! Note
 
-To add any more VA responses, repeat from step 2b.
+            You can use stored context variables with {{variable brackets}}. For example, ‘Hello {{context.session.UserContext.firstName}}. How can I help you?’
+
+    5. You can format the prompt message using the formatting options for **Text** messages.
+
+        <img src="../images/prompt-editor-text-prompt-formatting.png" alt="Formatting options for Text prompt" title="Formatting options for Text prompt" style="border:1px solid gray;zoom:70%;">
+
+5. Click **Save** after composing the message.
+
+To add any more VA responses, repeat from step 4b.
+
+!!! Note
+
+    In case of **Error prompts**, Only **Text** and **Custom JavaScript** templates are available.
 
 
 ## Plain Text Prompts
@@ -82,7 +78,6 @@ To add any more VA responses, repeat from step 2b.
 Use the **Plain Text** tab in the editor to compose the user prompts using basic editor controls and HTML. You can enter text, and then format the text using the formatting buttons for bold, italics, header styles, hyperlinks, ordered and unordered lists, and inserting a line.
 
 The plain text tab supports the following markups:
-
 
 <table border="1">
   <tr>
@@ -128,15 +123,9 @@ The plain text tab supports the following markups:
    </td>
   </tr>
   <tr>
-   <td>“`Hello“`
+   <td>Pre
    </td>
-   <td> 
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image4.png" width="" alt="alt_text" title="image_tooltip">
-
+   <td><img src="../images/prompt-editor-img-hello.png" width="" alt="alt_text" title="image_tooltip">
    </td>
   </tr>
   <tr>
@@ -160,13 +149,7 @@ The plain text tab supports the following markups:
   <tr>
    <td>![Image](https://kbob.github.io/images/sample-4.jpg)
    </td>
-   <td> 
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image5.jpg" width="" alt="alt_text" title="image_tooltip">
-
+   <td><img src="../images/prompt-editor-sample-4.jpg" width="" alt="alt_text" title="image_tooltip">
    </td>
   </tr>
   <tr>
@@ -208,13 +191,7 @@ The plain text tab supports the following markups:
 <br>
 >>indented
    </td>
-   <td> 
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-<img src="images/image6.jpg" width="" alt="alt_text" title="image_tooltip">
-
+   <td> <img src="../images/prompt-editor-indent.png" width="" alt="alt_text" title="image_tooltip">
    </td>
   </tr>
   <tr>
@@ -233,8 +210,41 @@ new line
   </tr>
 </table>
 
-
 Default formatting of user prompts may not be supported on all channels.
+
+Creating a text prompt
+
+<img src="../images/prompt-editor-user-prompt-text.png" alt="Plain text user prompt - creation" title="Plain text user prompt - creation" style="border:1px solid gray;zoom:70%;">
+
+Creating a text prompt
+<br><br>
+
+The above created prompt looks like:
+
+<img src="../images/prompt-editor-text-prompt-runtime.png" alt="Plain text user prompt - Runtime" title="Plain text user prompt - Runtime" style="border:1px solid gray;zoom:70%;">
+
+## Button Prompts
+
+In cases where you wish to provide the user a limited number of distinct choices, you can use Button template.
+
+For example, a typical Banking app can perform tasks pertaining only to banking, like opening an account, issue credit card, money transfer etc. In such cases Button template is appropriate.
+
+You need to select the Button template, and then add button titles and a corresponding value that would be sent to the engine on click of the button.
+
+Here are the steps to create a prompt using Button template:
+
+<img src="../images/prompt-editor-button-prompt-creation.gif" alt="Button prompt creation" title="Button prompt creation" style="border:1px solid gray;zoom:70%;">
+
+This is how it looks at runtime:
+
+<img src="../images/prompt-editor-button-prompt-runtime.png" alt="Button prompt at Runtime" title="Button prompt at Runtime" style="border:1px solid gray;zoom:70%;">
+
+!!! Note
+
+    You can add up to a maximum of 5 buttons to a prompt.
+
+## Quick Reply template
+
 
 
 ## JavaScript Prompts or Responses
@@ -316,7 +326,7 @@ For a few channel options in the **Channel** drop-down, you can see a list of te
 
 ![alt_text](images/image8.png "image_tooltip")
 
-For more information on templates, see [Widget SDK – Message Formatting and Templates](https://developer.kore.ai/docs/bots/sdks/widget-sdk-message-formatting-and-templates/){:target="_blank"}.
+For more information on templates, see [Widget SDK – Message Formatting and Templates](../../../../sdk/widget-sdk-message-formatting-and-templates/){:target="_blank"}.
 
 The same message configuration rules and principles apply while configuring any entity prompt or KG responses too.
 

@@ -47,7 +47,7 @@ To set up the Google Chat API, you need to create credentials first, then config
 
 7. Under **Connection Settings**:
     * Select the **App URL** option.
-    * Go to the Kore.ai **XO Platform >** **Select VA > Deploy > Channels > Google Chat > Configurations** and copy the **Webhook URL**.
+    * Go to the Kore.ai **Channels & Flows** > **Channels** > **Digital** > **All** > **Google Chat** > **Configurations** and copy the **Webhook URL**.
     * Go back to **Connections Settings in Google Cloud** and paste the Webhook URL
 8. Select the appropriate option under **Permissions**.
 <img src="../images/google_chat8.png" alt="permissions" title="permissions" style="border: 1px solid gray; zoom:70%;">
@@ -61,22 +61,22 @@ Next, we will be configuring the API keys that the XO Platform will use to conne
 Once your service account has been created, you need to manage the keys corresponding to your API, as follows:
 
 
-1. Navigate to the **Credentials **page and click on **Manage service accounts**.
+1. Navigate to the **Credentials** page and click on **Manage service accounts**.
 <img src="../images/google_chat9.png" alt="Manage Service" title="Manage Service" style="border: 1px solid gray; zoom:70%;">
 
-2. From the Manage service accounts page click the **Actions **button corresponding to your newly created account, then on **Manage keys**.
+2. From the Manage service accounts page click the **Actions** button corresponding to your newly created account, then on **Manage keys**.
 <img src="../images/google_chat10.png" alt="Manage Keys" title="Manage Keys" style="border: 1px solid gray; zoom:70%;">
 
-3. From the **Manage Keys **page click on **Add Key **button, select **Create new key **from the drop down, select the JSON option, and click on **Create **button.
+3. From the **Manage Keys** page click on **Add Key** button, select **Create new key** from the drop down, select the JSON option, and click on **Create** button.
 <img src="../images/google_chat11.png" alt="create new key" title="create new key" style="border: 1px solid gray; zoom:70%;">
 
 
-A JSON file will be generated and you need to copy the _client_email, and private_key _that needs to be input into the XO Platform. .
+A JSON file will be generated and you need to copy the _client_email_, and _private_key_ that needs to be input into the XO Platform. .
 
 
 ## Step 4: Configure the Google Chat Channel
 
-In the XO Platform, select the VA you’re working with, then go to Deploy > Channels > Google Chat > Configurations.
+In the XO Platform, select the VA you’re working with, then go to **Channels & Flows** > **Channels** > **Digital** > **All** > **Google Chat** > **Configurations**.
 
 
 1. Enter the following configuration details:

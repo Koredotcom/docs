@@ -7,14 +7,14 @@ Kore.ai has one of the best NLP engines in the market including the unique Multi
 
 The Kore.ai XO Platform provides an option to configure and enable an external NLU adapter for your Virtual Assistant so that you can easily use the NLU models built and trained on the other engine. Integration with external NLU engines is provided on the platform as an additional helpful feature for Intent and Entity detection. All other functionalities are managed on the Kore.ai XO Platform. When the adapter is enabled, the external engine’s intent or entity detection takes precedence. However, Kore.ai proprietary NLU acts as a fallback, in case the external engine fails to detect an intent or entity. Additionally, you have the option to continue training intents on the XO Platform while also utilizing previously trained intents from the external engine.
 
-The **Build → Integration → External NLU** page has the list of available adapters
+The **App Settings > Integrations > External NLU** page has the list of available adapters
 
 <img src="../images/external-nlu-img1.png" alt="External NLU - Landing page" title="External NLU - Landing page" style="border: 1px solid gray;zoom:50%;"/>
 
 
 !!! note
 
-        This is a VA specific configuration. Different VAs in a workspace can use different external NLU engines. In the 10.0 release only the Dialogflow ES adapter is supported. Kore.ai Platform would extend support for other adapters soon.
+    This is a VA specific configuration. Different VAs in a workspace can use different external NLU engines. In the 10.0 release only the Dialogflow ES adapter is supported. Kore.ai Platform would extend support for other adapters soon.
 
 
 ## Adapter Configuration
@@ -55,6 +55,6 @@ Steps to configure an external NLU adapter:
 
 !!! note
 
-        External NLU is supported only for intent, Entity nodes and FAQs.
+    External NLU is supported only for intent, Entity nodes and FAQs.
 
 See [Dialogflow Engine](../dialogflow-engine/){:target="_blank"} to understand the Dialogflow usage. See [Test and Debug](../test-and-debug/){:target="_blank"} to know how to test your virtual assistant to validate the external NLU and to understand the conversation behavior.

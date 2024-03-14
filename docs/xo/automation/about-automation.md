@@ -24,11 +24,11 @@ The Automation module offers AI-powered sophisticated tools for creating virtual
         <kr-grid-title>Intelligence Management</kr-grid-title>
         <kr-grid-desc>Empower your automation workflows to handle nuances of human conversations, including interruptions, clarifications, and more. Use Cases are fundamental building blocks for automation.</kr-grid-desc>
         <a href="">Learn More</a>
-    </kr-grid-item>    
+    </kr-grid-item>
     <kr-grid-item>
         <img src="../images/xop-sm-test.svg" style="zoom:200%;"></img>
         <kr-grid-title>Test Workflows</kr-grid-title>
         <kr-grid-desc>Use an extensive suite of features to conduct rigorous testing of your automation workflows to ensure everything works as expected. Find and fix problems before they reach your users.</kr-grid-desc>
         <a href="">Learn More</a>
-    </kr-grid-item>       
+    </kr-grid-item>      
 </kr-grid>

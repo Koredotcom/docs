@@ -19,7 +19,9 @@ The steps to enable this channel are simple and summarized below:
 1. Log in to the [Facebook Developer Portal](https://developers.facebook.com/micro_site/url/?click_from_context_menu=true&country=IN&destination=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdevelopment%2Fregister&event_type=click&last_nav_impression_id=0pWTvRHj057BWQ868&max_percent_page_viewed=65&max_viewport_height_px=657&max_viewport_width_px=1366&orig_http_referrer=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdevelopment%2Fcreate-an-app%2F&orig_request_uri=https%3A%2F%2Fdevelopers.facebook.com%2Fajax%2Fdocs%2Fnav%2F%3Fpath1%3Ddevelopment%26path2%3Dcreate-an-app&region=apac&scrolled=true&session_id=0lMcuYhMqR7uUNlDe&site=developers) and click the **My Apps** top menu option.
 <img src="../images/fbm.png" alt=" Facebook app" title="Facebook app" style="border: 1px solid gray; zoom:70%;">
 
-    **Note**: New users should [register](https://developers.facebook.com/micro_site/url/?click_from_context_menu=true&country=IN&destination=https%3A%2F%2Fdevelopers.facebook.com%2Fasync%2Fregistration&event_type=click&last_nav_impression_id=0z1et1xpn4nZpYCfR&max_percent_page_viewed=30&max_viewport_height_px=657&max_viewport_width_px=1366&orig_http_referrer=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdevelopment%2Fregister%2F&orig_request_uri=https%3A%2F%2Fdevelopers.facebook.com%2Fajax%2Fdocs%2Fnav%2F%3Fpath1%3Ddevelopment%26path2%3Dregister&region=apac&scrolled=false&session_id=1SbEaGTlt1aWgLNff&site=developers) on the **Facebook Developer Portal**. [Learn more](https://developers.facebook.com/docs/development/register).
+    !!! note
+
+        New users should [register](https://developers.facebook.com/micro_site/url/?click_from_context_menu=true&country=IN&destination=https%3A%2F%2Fdevelopers.facebook.com%2Fasync%2Fregistration&event_type=click&last_nav_impression_id=0z1et1xpn4nZpYCfR&max_percent_page_viewed=30&max_viewport_height_px=657&max_viewport_width_px=1366&orig_http_referrer=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fdevelopment%2Fregister%2F&orig_request_uri=https%3A%2F%2Fdevelopers.facebook.com%2Fajax%2Fdocs%2Fnav%2F%3Fpath1%3Ddevelopment%26path2%3Dregister&region=apac&scrolled=false&session_id=1SbEaGTlt1aWgLNff&site=developers) on the **Facebook Developer Portal**. [Learn more](https://developers.facebook.com/docs/development/register).
 
 1. In the **My Apps** section, click **Create App**.
 <img src="../images/fbm1.png" alt=" Facebook My apps" title="Facebook My apps" style="border: 1px solid gray; zoom:70%;">
@@ -30,7 +32,6 @@ The steps to enable this channel are simple and summarized below:
 
 
 3. In the **Details** section, enter the required details, and click **Create App**.
-
 <img src="../images/fbm3.png" alt=" Facebook create app" title="Facebook create app" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -49,26 +50,21 @@ The steps to enable this channel are simple and summarized below:
 
 
 9. Click **Generate Token**.
-
 <img src="../images/fbm7.png" alt=" Facebook generate token" title="Facebook generate token" style="border: 1px solid gray; zoom:70%;">
 
 
-10. In the **Token Generated** window, select **I understand** and click **Copy** to copy the page Access Token.
-
-<img src="../images/fbm8.png" alt=" Facebook generated token" title="Facebook generated token" style="border: 1px solid gray; zoom:70%;">
+10. In the **Token Generated** window, select **I understand** and click **Copy** to copy the page Access Token.  <img src="../images/fbm8.png" alt=" Facebook generated token" title="Facebook generated token" style="border: 1px solid gray; zoom:70%;">
 
 
 11. Click **Done**.
-12. Copy the **Page ID** of the Facebook page.
-<img src="../images/fbm9.png" alt=" Facebook configuration" title="Facebook configuration" style="border: 1px solid gray; zoom:70%;">
+12. Copy the **Page ID** of the Facebook page.  <img src="../images/fbm9.png" alt=" Facebook configuration" title="Facebook configuration" style="border: 1px solid gray; zoom:70%;">
 
 
 
-13. On the Kore.ai XO Platform, navigate to **Deploy** > **Channels** > **Facebook Messenger**.
+13. On the Kore.ai XO Platform, navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **Facebook Messenger**.
 <img src="../images/fbm10.png" alt=" Facebook Messenger" title="Facebook Messenger" style="border: 1px solid gray; zoom:70%;">
 
-14. Click the **Configurations** tab, and paste the **Page Access Token** and **Page ID** values you’ve copied.
-<img src="../images/fbm11.png" alt=" Facebook page access" title="Facebook page access" style="border: 1px solid gray; zoom:70%;">
+14. Click the **Configurations** tab, and paste the **Page Access Token** and **Page ID** values you’ve copied.  <img src="../images/fbm11.png" alt=" Facebook page access" title="Facebook page access" style="border: 1px solid gray; zoom:70%;">
 
 
 15. Navigate to **Settings** > **Basic** and configure the **Privacy Policy URL** and **Terms of Service URL** fields for the app.
@@ -76,7 +72,6 @@ The steps to enable this channel are simple and summarized below:
 
 16. Click **Save Changes**.
 17. Enable the deployment of the app by changing **App Mode: Development** to **Live**.
-
 <img src="../images/fbm13.png" alt=" Facebook Save Changes" title="Facebook Save Changes" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -86,13 +81,10 @@ The steps to enable this channel are simple and summarized below:
 
 To set up the webhook URL, follow the steps below:
 
-1. Copy the **Webhook URL** and **Verify Token** from the Kore.ai XO Platform’s channel configuration panel.
-
-<img src="../images/fbm14.png" alt=" Facebook Webhook URL" title="Facebook Webhook URL" style="border: 1px solid gray; zoom:70%;">
+1. Copy the **Webhook URL** and **Verify Token** from the Kore.ai XO Platform’s channel configuration panel.  <img src="../images/fbm14.png" alt=" Facebook Webhook URL" title="Facebook Webhook URL" style="border: 1px solid gray; zoom:70%;">
 
 
 2. On the **Messenger Settings** page of the Facebook Developer Portal, click **Add Callback URL**.
-
 <img src="../images/fbm15.png" alt="Copy Facebook Webhook URL" title="Copy Facebook Webhook URL" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -125,7 +117,6 @@ To configure the **Client ID** and **Client Secret** for the app, follow the ste
 
 
 3. On the Kore.ai Bot Builder, navigate to the **Configurations** section of the Facebook Messenger channel and paste these values in their respective fields.
-
 <img src="../images/fbm20.png" alt="Facebook messenger channel" title="Facebook messenger channel" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -142,12 +133,8 @@ Once approved, you can enable the **Facebook Messenger** channel for your assist
 On the Kore.ai XO Platform, enable the **Facebook Messenger** channel to complete the integration. To enable follow the steps below:
 
 
-1. Navigate to **Deploy** > **Channels** > **Facebook Messenger**.
-2. Click the **Configurations** tab, and select **_YES_** for **Enable Channel**.
-
-<img src="../images/fbm21.png" alt="Enable Facebook channel" title="Enable Facebook channel" style="border: 1px solid gray; zoom:70%;">
-
-
+1. Navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **Facebook Messenger**.
+2. Click the **Configurations** tab, and select **_YES_** for **Enable Channel**.  <img src="../images/fbm21.png" alt="Enable Facebook channel" title="Enable Facebook channel" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Save**.
 

@@ -13,12 +13,11 @@ To add the Telegram channel, follow the below steps:
 <img src="../images/telegram.png" alt="telegram channel" title="telegram channel" style="border: 1px solid gray; zoom:70%;">
 
 2. Select **@BotFather** and click **START**.
-3. In the chat section, type _/newbot_ in the **Message **box and click **Send**.
+3. In the chat section, type _/newbot_ in the **Message** box and click **Send**.
 <img src="../images/telegram1.png" alt="telegram bot" title="telegram bot" style="border: 1px solid gray; zoom:70%;">
 
 4. On sending the_ /newbot_ message, _BotFather_ prompts you to enter a **Name** for the new bot to be created. Preferably, give the same name as that of the Kore.ai assistant for which the channel is enabled.
-5. After providing the name, _BotFather_ prompts for the **Username** for the new bot to be created. Provide any name that ends with_ bot_. For example, sample_bot or SampleBot.
-
+5. After providing the name, _BotFather_ prompts for the **Username** for the new bot to be created. Provide any name that ends with _bot_. For example, sample bot or SampleBot.
 <img src="../images/telegram2.png" alt="telegram configuration" title="telegram configuration" style="border: 1px solid gray; zoom:70%;">
 
 6. After providing the username, _BotFather_ displays a confirmation message and access token. Note the access token to enter in the **Configurations** tab of the Telegram Channel page.
@@ -31,8 +30,8 @@ To add the Telegram channel, follow the below steps:
 
 
 1. In the XO Platform, select the assistant that you want to enable the channel for.
-2. Go to **Deploy > Channels > Telegram**.
-3. Go to the **Configurations **tab of the Telegram Channel page, enter the** Bot Name** of your Telegram bot in the **Bot Name **field.
+2. Go to **Channels & Flows** > **Channels** > **Digital** > **All** > **Telegram**.
+3. Go to the **Configurations** tab of the Telegram Channel page, enter the **Bot Name** of your Telegram bot in the **Bot Name** field.
 4. Enter the **Access Token** that was displayed as a part of bot creation.
 5. Select **Yes** and then click **Save** to enable the Telegram Channel for your bot.
 <img src="../images/telegram4.png" alt="enable telegram channel" title="enable telegram channel" style="border: 1px solid gray; zoom:70%;">

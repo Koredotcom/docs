@@ -13,15 +13,18 @@ Setting up a confirmation node in a dialog task involves the following steps:
 
 1. Open the dialog task to which you want to add the Confirmation node.
 2. Add a Confirmation node in the designated place. For steps related to adding nodes, [Learn more](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
-3. By default, the Confirmation window is displayed in the **Component Properties** tab.
-    <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-    ![alt_text](images/image1.png "image_tooltip")
+    !!! note
+
+        You can add a confirmation node within an existing sequence or outside any existing sequence. If you add it outside, a new, untitled sequence will automatically get created containing the new confirmation node.
+
+3. By default, the Confirmation window is displayed in the **Component Properties** tab.
+    
+    <img src="../images/confirmation-node-img1-add-node.png" alt="Add Confirmation node" title="Add Confirmation node" style="border:1px solid gray;zoom:70%;">
 
 
 
 ## Configure the Node
-
 
 ### Component Properties
 
@@ -47,24 +50,25 @@ To configure the component properties, follow the below steps:
 
         In both cases, “&lt;” means the start of the sentence and “>” means the end of the sentence.  Many of these words are only treated as a _yes_ or _no_ if they appear at the start or the end of an utterance, not in the middle.
 
-3. You can use **Rephrase Responses** to rewrite VA replies using AI based on conversation context and user emotions. For Confirmation nodes, this feature helps rephrase the responses entered under _User Prompts_. To see this feature in your node’s Component Properties, enable the [OpenAI](../../../../../app-settings/integrations/actions/open-ai/configuring-the-openai-action){:target="_blank"} or [Azure-OpenAI](../../../../../app-settings/integrations/actions/azure-open-ai/configuring-the-azure-openai-action){:target="_blank"} integration and the **Dynamic Prompt and Message Rephrasing** feature under [LLM and Generative AI](https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/#Enable_LLM_Features){:target="_blank"}.  By default, this feature is disabled for each node. Turn on the toggle to enable Rephrase Responses.Configure the **number of previous user inputs** to define  how many previous user messages should be sent to OpenAI as context based on which to rephrase the response sent through the node. You can choose between 0 and 5, where 0 means that no previous input is considered, while 5 means that the previous 5 responses are sent as context.
-    <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image2.png "image_tooltip")
+3. You can use **Rephrase Responses** to rewrite VA replies using AI based on conversation context and user emotions. For Confirmation nodes, this feature helps rephrase the responses entered under _User Prompts_. To see this feature in your node’s Component Properties, enable the [OpenAI](../../../../../app-settings/integrations/actions/open-ai/configuring-the-openai-action){:target="_blank"} or [Azure-OpenAI](../../../../../app-settings/integrations/actions/azure-open-ai/configuring-the-azure-openai-action){:target="_blank"} integration and the **Dynamic Prompt and Message Rephrasing** feature under [LLM and Generative AI](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#rephrase-dialog-responses){:target="_blank"}.  By default, this feature is disabled for each node. Turn on the toggle to enable Rephrase Responses.Configure the **number of previous user inputs** to define  how many previous user messages should be sent to OpenAI as context based on which to rephrase the response sent through the node. You can choose between 0 and 5, where 0 means that no previous input is considered, while 5 means that the previous 5 responses are sent as context.
+    
+    <img src="../images/confirmation-node-img2-rephrase-response.png" alt="Confirmation node - Rephrase Responses" title="Confirmation node - Rephrase Responses" style="border:1px solid gray;zoom:70%;">
 
 4. Add context-specific **Synonyms** for _Yes_ and _No_ within the Confirmation node to suit the dialog’s context. The Platform can identify the emojis in user utterance and consider them for confirmation/rejection, for example, a thumbs-up emoji will be taken to mean confirmation from the user.
-    <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image3.png "image_tooltip")
+    
+    <img src="../images/confirmation-node-img3-synonyms.png" alt="Confirmation node - Synonyms" title="Confirmation node - Synonyms" style="border:1px solid gray;zoom:70%;">
  
     !!! Note
     
         The Platform now supports additional Synonyms for Traditional Chinese language for Yes/No confirmation. [Learn more](#additional-synonyms-for-traditional-chinese-language).
 
 5. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the **Variable Namespace** is enabled for the assistant you are working with. You can go with the task level settings or customize it for this node. For more information, refer to the [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"} article.
-    <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    
+    <img src="../images/confirmation-node-img4-associate-variable-namespace.png" alt="Confirmation node - Associate variable namespace" title="Confirmation node - Associate variable namespace" style="border:1px solid gray;zoom:70%;">
 
-    ![alt_text](images/image4.gif "image_tooltip")
+    !!! note
+
+        This section will be visible only if you enable Variable Namespace in [App Profile](../../../../../app-settings/app-profile/).
 
 
 #### Additional Synonyms for Traditional Chinese Language
@@ -83,11 +87,9 @@ For the **Traditional Chinese** language, the Platform provides the following ad
 "唔係", "冇", "無", "唔得", "唔可以", "唔使", "唔要", "唔想", "唔啱"
 ```
 
-These synonyms can be configured on the confirmation node under **Component Properties** > **Synonyms** during the **Build** stage of a **Dialog Task**.  
+These synonyms can be configured on the confirmation node under **Component Properties > Synonyms** while building the **Dialog Task**.  
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image5.png "image_tooltip")
+<img src="../images/confirmation-node-img5-associate-synonyms.png" alt="Confirmation node - Synonyms" title="Confirmation node - Synonyms" style="border:1px solid gray;zoom:70%;">
 
 After detecting these additional synonyms, the **Confirmation** node extracts “_yes_” or “_no_” from the user utterance.
 
@@ -105,14 +107,12 @@ After detecting these additional synonyms, the **Confirmation** node extracts �
     2. **Customize for this node option:** You can customize the **Interruptions Behavior** settings for this node by selecting this option and configuring it. For more information refer to the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions){:target="_blank"} article.
 
 3. Under the **Precedence** section, when the user’s input for an entity consists of a valid value for the entity and another intent, you can control the experience by choosing between _Intent over Entity_ or _Entity over Intent_ options. For example, if a _Flight Booking_ assistant prompts for the destination and the user enters, _Bangalore, how’s the weather there?_ you can define how the bot responds in such cases; pick the entity and add the intent to the follow-up intents stack or go ahead with the intent first based upon the **Interruptions Behavior** settings.
-    <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image6.png "image_tooltip")
+    
+    <img src="../images/confirmation-node-img6-precedence.png" alt="Confirmaiton node - Precedence" title="Confirmaiton node - Precedence" style="border:1px solid gray;zoom:70%;">
 
 4. Under the **Custom Tags** section, add tags to build custom profiles of your VA conversations. [Learn more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
-    <p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image7.png "image_tooltip")
+    
+    <img src="../images/confirmation-node-img7-custom-tags.png" alt="Confirmation node - Custom tags" title="Confirmation node - Custom tags" style="border:1px solid gray;zoom:70%;">
 
 
 ### IVR Properties
@@ -123,9 +123,7 @@ Use  the **IVR properties** tab on the Confirmation Node to define the initial p
 
     The Confirmation Node supports all voice call properties for the  IVR, Audio Codes, Twilio Voice, and Voice Gateway channels. Except the IVR Data Extraction Key property is not supported.
 
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image8.gif "image_tooltip")
+<img src="../images/confirmation-node-img8-1-voice-call-properties.png" alt="Confirmation node - Voice call properties" title="Confirmation node - Voice call properties" style="border:1px solid gray;zoom:50%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/confirmation-node-img8-2-grammar-properties.png" alt="Confirmation node - Grammar properties" title="Confirmation node - Grammar properties" style="border:1px solid gray;zoom:50%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/confirmation-node-img8-3-advanced-controls.png" alt="Confirmation node - Advanced controls" title="Confirmation node - Advanced controls" style="border:1px solid gray;zoom:50%;">
 
 
 ### Connections Properties
@@ -138,6 +136,4 @@ The Confirmation node’s conditional transitions go beyond the If-Else expressi
 
 For details on how to work with connection conditions,  read the [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"} article.
 
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image9.png "image_tooltip")
+<img src="../images/confirmation-node-img9-connection-properties.png" alt="Confirmation node - Connection properties" title="Confirmaiton node - Connection properties" style="border:1px solid gray;zoom:70%;">

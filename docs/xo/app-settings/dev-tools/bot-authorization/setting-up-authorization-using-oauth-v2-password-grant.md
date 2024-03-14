@@ -22,16 +22,13 @@ The oAuth v2 Password grant type authorization method allows apps to exchange a 
 
 To define Authorization for your assistant, using oAuth v2 password grant, please follow these steps:
 
-
-
 1. Open the assistant for which you want to configure an Authorization profile.
-2. Select the **Build** tab from the top menu.
-3. From the left menus, click **Configurations > Authorization Profile.**
-4. Click **Add** to open the **New Authorization Mechanism** dialog.  
-<img src="../images/oauth-v2-password-grant-img1.png" alt="Auth profile - Add" title="Auth profile - Add" style="border: 1px solid gray;zoom:80%;"/>
+2. From the left menu, click **App Settings**, then select **Dev Tools > Authorization Profiles**.
+3. Click **New** to open the **New Authorization Mechanism** dialog.  
+<img src="../images/basic-auth-img2.png" alt="Auth profile - Add" title="Auth profile - Add" style="border: 1px solid gray;zoom:80%;"/>
 
-5. In the **Authorization Type** drop-down list, select **oAuth v2 password grant type**.
-6. Enter a **Name** for your authorization, then define the fields to enable it.  
+4. In the **Authorization Type** drop-down list, select **oAuth v2 password grant type**.
+5. Enter a **Name** for your authorization, then define the fields to enable it.  
 <img src="../images/oauth-v2-password-grant-img2.png" alt="Define fields to enable auth" title="Define fields to enable auth" style="border: 1px solid gray;zoom:80%;"/>
 
 The illustration and sections below show an overview of the needed configurations.

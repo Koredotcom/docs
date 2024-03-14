@@ -12,6 +12,58 @@ hide:
     <p>Q&A_1_content</p>
     </details>
 
+<p> <a href="./whats-new-in-this-release.md"> <span class=twemoji> <svg width="16" height="17" xmlns=http://www.w3.org/2000/svg viewbox="0 0 21 22"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z" /></svg> </span> Learn more </a> </p>
+
+ [:octicons-arrow-right-24: Learn more](./whats-new-in-this-release.md)
+
+ ++ctrl+alt+del++
+
+ [Subscribe to our newsletter](#){ .md-button }
+
+<div class="grid cards" markdown>
+
+-   <img src="../images/xop-sm-uc.svg"></img>{ .lg .middle } __Define Use Cases__
+
+    ---
+
+    Adding a line here Use Cases are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent.
+
+    [:octicons-arrow-right-24: Learn more](#)
+
+-   <img src="../images/xop-sm-uc.svg"></img> **Define Use Cases**
+
+    ---
+
+    Use Cases are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent.
+
+    [:octicons-arrow-right-24: Learn more](#)
+
+-   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
+
+    ---
+
+    Focus on your content and generate a responsive and searchable static site
+
+    [:octicons-arrow-right-24: Reference](#)
+
+-   :material-format-font:{ .lg .middle } __Made to measure__
+
+    ---
+
+    Change the colors, fonts, language, icons, logo and more with a few lines
+
+    [:octicons-arrow-right-24: Customization](#)
+
+-   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+
+    ---
+
+    Material for MkDocs is licensed under MIT and available on [GitHub]
+
+    [:octicons-arrow-right-24: License](#)
+
+</div>
+
 <div class="grid cards" markdown>
 
 - :fontawesome-brands-html5: __HTML__ for content and structure

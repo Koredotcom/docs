@@ -2,9 +2,9 @@
 
 By default, your Virtual Assistant is not available to users unless you define one or more channels through which it can communicate. So, after creating a Virtual Assistant, you can add delivery channels that end-users can use to access and interact with it when deployed. For example, you can enable your assistant for use in the Kore.ai Messaging application, or allow interaction with your VA through an email address or a _Twilio_ SMS account. You can also enable your VA in third-party applications such as _Facebook_ or _Slack_. This topic describes how to add one or more delivery channels to your VA.
 
-You can add channels to your VA from the **Channels & Flows** > **Channels** > **Digital** > **All** section. Channels supported by the Kore.ai XO Platform are categorized based upon their functionality and usage.
+You can add channels to your VA from the **Channels & Flows > Channels > Digital > All** section. Channels supported by the Kore.ai XO Platform are categorized based upon their functionality and usage.
 
-<img src="../images/channel-enablement-img1-channels-list.png" alt="Channels supported by the Kore.ai XO Platform" title="Channels supported by the Kore.ai XO Platform" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/digital-channels.png" alt="digital-channels" title="digital-channels" style="border: 1px solid gray; zoom:70%;">
 
 ## Enable a Channel
 
@@ -35,7 +35,7 @@ To **test**, **disable or delete the channel**, go to **Channels & Flows** > **C
 
     Please also note that channel edits will only take effect within your live assistant after publishing the In Development version of the VA with the channel enabled. For more information, please see Publishing your Virtual Assistant.
 
-<img src="../images/channel-enablement-img3-delete-disable-channel.png" alt="Delete/Disable channel" title="Delete/Disable channel" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/test-channel.png" alt="Delete/Disable channel" title="Delete/Disable channel" style="border: 1px solid gray; zoom:70%;">
 
 ## Available Channels
 
