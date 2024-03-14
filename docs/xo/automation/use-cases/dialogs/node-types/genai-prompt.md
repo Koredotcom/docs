@@ -19,13 +19,13 @@ You can work with this node like with any other node within Dialog Tasks and can
 
 This node is not available by default. You can enable it for all Dialog Tasks as follows:
 
-* Configure the Open AI integration and enable the GenAI Prompt feature under **App Settings** > **Generative AI Tools** > **Dynamics Conversations**. You can also select an LLM model and its settings for the features. By default, these selections are applicable across the platform for the feature. [Learn more](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#genai-prompt)
+* Configure the LLM integration and enable the GenAI Prompt feature under **App Settings** > **Generative AI Tools** > **Dynamics Conversations**. You can also select an LLM model and its settings for the features. By default, these selections are applicable across the platform for the feature. [Learn more](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#genai-prompt)
 
-
+  ![alt_text](images/genai-promptf.png "image_tooltip")
 
 !!! Note
 
-        If you do not configure an LLM model and do not enable the GenAI Prompt feature, then the node will not be available within the Dialog Builder.
+    If you do not configure an LLM model and do not enable the GenAI Prompt feature, then the node will not be available within the Dialog Builder.
 
 Setting up a GenAI Prompt in a dialog task involves adding the node at the appropriate location in the dialog flow and configuring various properties of the node, as explained below.
 
@@ -37,7 +37,7 @@ Setting up a GenAI Prompt in a dialog task involves adding the node at the appro
 3. The GenAI Prompt window is displayed with the **Component Properties** tab selected by default.
 
 
-![alt_text](images/image2.png "image_tooltip")
+    ![alt_text](images/canvas.png "image_tooltip")
 
 
 ## Configure the Node
@@ -118,7 +118,7 @@ On the **Connections** tab, you can set the transition properties to determine t
 
 !!! Note
 
-        These conditions apply only for this instance and will not affect this node when used in any other dialog.
+    These conditions apply only for this instance and will not affect this node when used in any other dialog.
 
 
 ## About Responses

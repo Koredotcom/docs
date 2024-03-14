@@ -61,7 +61,7 @@ This node is not available by default. You can enable it for all Dialog Tasks, i
 
 
 
-![alt_text](images/image1.png "image_tooltip")
+    ![alt_text](images/genai-nodef.png "image_tooltip")
 
 If you do not integrate OpenAI and do not enable LLM or GenAI Node, then the node will not be available within the Dialog Builder.
 
@@ -71,10 +71,10 @@ If you do not integrate OpenAI and do not enable LLM or GenAI Node, then the nod
 To add the GenAI Node to a Dialog Task, follow these steps:
 
 1. Go to **Automation** > **Dialogs** and select the task that you are working with.  
-    ![alt_text](images/image2.png "image_tooltip")
+
 
 2. You can add the GenAI Node just like any other node. You can find it in the main list of nodes, as it does not depend on the Bot Action node.
-    ![alt_text](images/image3.png "image_tooltip")
+    ![alt_text](images/canvas.png "image_tooltip")
 
 
 
