@@ -74,11 +74,11 @@ To import a Virtual Assistant, follow these steps:
     * **Custom Dashboards** – This is useful in case you have created custom dashboards under the Analyze section and you want to import these to the new VA as well. 
     * On the confirmation dialog that opens, click **Backup** to download the existing assistant configuration.
 
-            ![alt_text](images/bm(8).png "image_tooltip")
-        
-            !!! note
+        ![alt_text](images/bm(8).png "image_tooltip")
+    
+        !!! note
 
-                While backing up is an optional choice, we strongly recommend you do so, especially when choosing Full Import, as you cannot recover the configurations after the imported assistant replaces them.
+            While backing up is an optional choice, we strongly recommend you do so, especially when choosing Full Import, as you cannot recover the configurations after the imported assistant replaces them.
 
 10. Click **Proceed** to start the import.
 11. After the import is completed, the following success message appears. Click **Done**.
