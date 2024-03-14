@@ -19,9 +19,11 @@ You can work with this node like with any other node within Dialog Tasks and can
 
 This node is not available by default. You can enable it for all Dialog Tasks as follows:
 
-* Configure the LLM integration and enable the GenAI Prompt feature under **App Settings** > **Generative AI Tools** > **Dynamics Conversations**. You can also select an LLM model and its settings for the features. By default, these selections are applicable across the platform for the feature. [Learn more](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#genai-prompt)
+1. Configure the [LLM integration](../../../../../app-settings/generative-ai-tools/llm-integration). 
 
-  ![alt_text](images/genai-promptf.png "image_tooltip")
+2. Toggle the GenAI Prompt feature under **App Settings** > **Generative AI Tools** > **Dynamics Conversations**. You can also select an LLM model and its settings for the features. By default, these selections are applicable across the platform for the feature. [Learn more](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#genai-prompt)
+
+   ![alt_text](images/genai-promptf.png "image_tooltip")
 
 !!! Note
 

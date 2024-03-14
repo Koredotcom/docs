@@ -56,8 +56,8 @@ Large Language Models come with challenges, such as potentially unwanted behavio
 
 This node is not available by default. You can enable it for all Dialog Tasks, including those created using Generative AI, as follows:
 
-1. Configure the [Open-AI](../../../../../app-settings/integrations/actions/open-ai/configuring-the-openai-action) integration.
-2. Enable LLM and the GenAI Node feature under **App Settings** > **Generative AI Tools** > **Dynamics Conversations**.
+1. Configure the [LLM integration](../../../../../app-settings/generative-ai-tools/llm-integration).
+2. Toggle GenAI Node feature under **App Settings** > **Generative AI Tools** > **Dynamics Conversations**. [Learn more](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#genai-node)
 
 
 
