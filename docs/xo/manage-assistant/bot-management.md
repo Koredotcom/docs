@@ -3,8 +3,7 @@
 
 This article discusses the main features that allow you to manage your assistant at a high level. These include Importing, Exporting, and Deleting assistants, as well as viewing change logs.
 
-To learn more about Variables and how to use them, see[ Using Bot Variables](https://developer.kore.ai/docs/bots/bot-settings/bot-management/using-bot-variables/).
-
+To learn more about Variables and how to use them, see [ Using Bot Variables](../app-settings/variables/using-bot-variables.md).
 
 ## Importing and Exporting Assistants
 
@@ -15,8 +14,6 @@ This feature is particularly helpful to test various versions of your assistant 
 !!! note
 
     Post v8.0 release, the _enableNegativePatterns_ flag will be included in ‘NLP Settings’ under ‘NLP Data’ in the exported and imported bot definitions. This flag is used to check if the Negative Patterns are enabled/disabled in the assistant.
-
-
 
 Prior to this patch, this flag was part of ‘NLP Settings’ under ‘NLP Data’ in the imported bot definitions and ‘Bot Setting’ under ‘Setting’ in the exported bot definitions. This change is aimed at streamlining the functionality and might result in the failure to the incremental import of a bot from an export file generated before v8.0.
 
@@ -48,30 +45,45 @@ To import a Virtual Assistant, follow these steps:
 
 7. Select one of these import options: **Full Import** or **Incremental Import**.
 8. If you select **Full import**, the bot definition in the in-development copy will be overwritten with the definition present in the import file.
-    * If there are one or more additional tasks or languages in the assistant, and if these are not present in the import definition, then these tasks will be marked as deleted and will be removed when the bot is published.
-    * You can choose to auto-publish the assistant post-import.
+* If there are one or more additional tasks or languages in the assistant, and if these are not present in the import definition, then these tasks will be marked as deleted and will be removed when the bot is published.
+* You can choose to auto-publish the assistant post-import.
 
-        ![alt_text](images/bm(11).png "image_tooltip")
 
-9. If you select **Incremental import**, you can also choose which components to import.
+
+
+
+    ![alt_text](images/bm(11).png "image_tooltip")
+
+
+
+
+* If you select **Incremental import**, you can also choose which components to import.
+
 
     ![alt_text](images/bm(4).png "image_tooltip")
 
-    * **Bot Tasks**: Here is where you can select to import Tasks only (with or without comments), Knowledge Graph, Small Talk or Digital Forms.
+
+ 
+
+
+
+* **Bot Tasks**: Here is where you can select to import Tasks only (with or without comments), Knowledge Graph, Small Talk or Digital Forms.
 
         !!! note
 
             If you want to import one or more Bot Tasks, also select the **NLP Data** settings, as they are linked. For example, the utterances assigned to dialog tasks are not imported if you don’t select the NLP Data settings, causing problems in identifying the dialog properly.
 
-    * **NLP Data**: This is where you can import Traits, Synonyms, Concepts, Rules, Utterances, Patterns and Standard Responses. ML Utterances and Patterns can either be Appended or Replaced.
+
+
+* **NLP Data**: This is where you can import NLP Settings, Utterances, Patterns and Standard Responses. ML Utterances and Patterns can either be Appended or Replaced.
         
-        1. **Append** can be used when the utterances present in the file should be imported into the assistant and any additional utterances in the bot should be retained (this is the default behavior).
-        2. **Replace** can be used when the utterances present in the file should be imported into the assistant. Any additional utterances will be removed.
+    1. **Append** can be used when the utterances present in the file should be imported into the assistant and any additional utterances in the bot should be retained (this is the default behavior).
+    2. **Replace** can be used when the utterances present in the file should be imported into the assistant. Any additional utterances will be removed.
     
-            In case you are importing Tasks too, the additional utterances related to tasks being imported will be removed. 
+        In case you are importing Tasks too, the additional utterances related to tasks being imported will be removed. 
 
 
-            ![alt_text](images/bm(1).png "image_tooltip")
+        ![alt_text](images/bm(1).png "image_tooltip")
 
             The imported Traits, Synonyms and Concepts will replace those in the target bot. Rules nac be imported along with their tagged dialog tasks.
 
@@ -79,8 +91,12 @@ To import a Virtual Assistant, follow these steps:
     * **Custom Dashboards** – This is useful in case you have created custom dashboards under the Analyze section and you want to import these to the new VA as well. 
     * On the confirmation dialog that opens, click **Backup** to download the existing assistant configuration.
 
-            ![alt_text](images/bm(8).png "image_tooltip")
-            !!! note
+    
+       
+
+
+        ![alt_text](images/bm(8).png "image_tooltip")
+        !!! note
 
                 While backing up is an optional choice, we strongly recommend you do so, especially when choosing Full Import, as you cannot recover the configurations after the imported assistant replaces them.
 
@@ -91,13 +107,14 @@ To import a Virtual Assistant, follow these steps:
 
         Bot import would fail if the assistant has been restored but not published after the restore. 
 
-   
-
 ### Creating a New Assistant Using the Import Option
  
 To import a VA while creating it, follow these steps: 
 
 1. On the landing page, click **New Bot**.
+
+
+
 
     ![alt_text](images/bm(7).png "image_tooltip")
 
@@ -109,6 +126,9 @@ To import a VA while creating it, follow these steps:
 11. Upload the **Custom Script File**. The file size is limited to 500kb.
 12. Click **Import** when ready. 
 
+
+
+
     ![alt_text](images/bm(5).png "image_tooltip")
 
 
@@ -116,7 +136,6 @@ To import a VA while creating it, follow these steps:
 
 
 ### Components in the Incremental Import
-
 
 <table>
   <tr>
@@ -187,16 +206,13 @@ When you export a assistant, it downloads a zipped file with the following param
 
     The assistant and its components are given unique Reference IDs during export. These IDs help the platform to identify matching tasks in the target bot and update them.
 
-
 ### Export Modes
 
 You can export assistants in two modes: **Published** and **Latest Version**. Depending on the mode that is selected, the corresponding versions of the tasks are exported. You can select specific components to export from the tasks, NLP data, and bot settings in both the modes. Further individual Tasks can also be selected.
 
-
 #### Published Mode
 
 When you export a VA in the Published mode, only the published versions of the tasks are exported, regardless of any other existing versions. For example, if a VA consists of a published version of a task and also version in Upgrade in Progress, only the published version gets exported. Refer to the table below to understand which versions of the tasks are exported in the Published mode:
-
 
 <table>
   <tr>
@@ -247,11 +263,9 @@ When you export a VA in the Published mode, only the published versions of the t
 
     In Dialog tasks, only the nodes in the Published status get exported.
 
-
 #### **Latest Version**
 
 When you export a VA in the Latest mode, the latest versions of the  tasks get exported, regardless of their publishing status. For example, if a VA consists of a published version of a task and also the version in Upgrade in Progress, the Upgrade in Progress version gets exported, whereas if it just has a Configured version, the configured version is exported. Refer to the table below to understand which versions of the tasks are exported in the Latest mode:
-
 
 <table>
   <tr>
@@ -298,11 +312,7 @@ When you export a VA in the Latest mode, the latest versions of the  tasks get e
   </tr>
 </table>
 
-
-
 #### **Steps in Exporting the Assistant**
-
-
 
 1. Open the assistant you want to export.
 2. Select **Deploy** tab from the top menu.
@@ -310,6 +320,9 @@ When you export a VA in the Latest mode, the latest versions of the  tasks get e
 4. On the Import & Export page, select the **Export** tab.
 5. In the Export tab, select either **Published** or **Latest Version** exporting mode.
 6. By default, all the components are selected for export. Deselect the items that you do not want to export.
+
+
+
 
     ![alt_text](images/bm(10).png "image_tooltip")
 
@@ -319,23 +332,26 @@ When you export a VA in the Latest mode, the latest versions of the  tasks get e
 
         If you want to export one or more Bot Tasks, also select the **NLP Data** settings, as they are linked. For example, the utterances assigned to dialog tasks are not exported if you don’t select the NLP Data settings, causing problems in identifying the dialog properly.
 
-
-
 8. You can also choose to **Include dependent tasks** or not for export. The existence of these will be checked before import and the import will fail if the dependent tasks are missing. These dependent tasks include the following:
     * Linked Dialogs i.e. dialog nodes present in the definition of another dialog;
     * Dialogs linked in defining ‘Behavior on Exceeding Retries’ for IVR Properties of any node of the dialog;
     * Dialog linked as part of sub-intent / interruption settings;
     * Any other scenario where a dialog execution could fail if a dependent task is not included;
 
+
+
+
+
         ![alt_text](images/bm(1).png "image_tooltip")
 
-9. Click **Export**. The export happens in the background and the **Download** button gets activated after it is complete. Click **Download** to download the file to your local computer.
 
+
+
+9. Click **Export**. The export happens in the background and the **Download** button gets activated after it is complete. Click **Download** to download the file to your local computer.
 
 ### Exported Bot Components
 
 When you export a VA, the following components get exported, depending on your Latest or Published Mode selection:
-
 
 <table>
   <tr>
@@ -451,37 +467,12 @@ When you export a VA, the following components get exported, depending on your L
   </tr>
 </table>
 
-
-		
-
-	
-
-	
-
-		
-
-			
-
-
 ## Universal and Child Bot Scenarios
 
 When exporting and importing universal and child VAs from a source environment to a destination environment, you should ensure the following:
 
-
-
 * All the child bots are imported before the universal bot.
 * When creating child bots, they propagate from the same source environment.
-
-		
-
-	
-
-	
-
-		
-
-			
-
 
 ## Deleting an Assistant
 
@@ -489,44 +480,22 @@ You cannot delete a VA if any of the tasks are Published. Once you publish a tas
 
 To delete a Virtual Assistant:
 
-
-
-1. Open the assistant you want to delete
-2. Select the **Deploy** tab from the top menu
+1. Open the assistant you want to delete.
+2. Select the **Deploy** tab from the top menu.
 3. From the left navigation under the **Bot Management** menu, click **Delete Bot**.
-
-
-    ![alt_text](images/bm(6).png "image_tooltip")
+<img src="../images/bm(6).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
 
 !!! warning
 
     All the configurations will be lost and there is no way to restore your assistant after deletion. Please exercise caution when using this feature.
 
-
-
-		
-
-	
-
-	
-
-		
-
-			
-
-
 ## Viewing the Change Log
 
 After creating a VA, you may need to edit it for various reasons such as changing its settings, adding tasks, enabling channels, and add flows. To track all the changes made to a VA, you can view the **Change Logs**, which show a chronological list of modifications to your assistant. It consists of all the changes from the initial save of your assistant to the last update. To view the changelog for a VA, follow these steps:
 
-
-
-1. Select **Deploy** tab from the top menu
+1. Select **Deploy** tab from the top menu.
 2. From the left menu click **Change Logs**.
-    ![alt_text](images/bm(2).png "image_tooltip")
-
-
-
+<img src="../images/bm(2).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
 
 3. On the Change Logs page, you will notice the following;
     * The list is sorted in reverse chronological order.
@@ -535,12 +504,8 @@ After creating a VA, you may need to edit it for various reasons such as changin
 
 Following actions can be performed on the logs:
 
-
-
 * Using the **search** text box, you can enter any text and the platform will search for that text in the change description and the logs fulfilling the search criteria would be displayed.
 * The **filter** option can be used to filter based on:
     * Developer Name collaborating on the assistant;
     * Date Range either past 24 hrs, past 7 days, or custom date by specifying the start and end date. By default,  changes from all developers in the past 24 hours would be displayed.
 * The **export** icon can be used to Export the changelog in CSV format. The logs displayed after applying the search and filter criteria would be downloaded.
-
-		
