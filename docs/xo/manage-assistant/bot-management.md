@@ -45,58 +45,40 @@ To import a Virtual Assistant, follow these steps:
 
 7. Select one of these import options: **Full Import** or **Incremental Import**.
 8. If you select **Full import**, the bot definition in the in-development copy will be overwritten with the definition present in the import file.
-* If there are one or more additional tasks or languages in the assistant, and if these are not present in the import definition, then these tasks will be marked as deleted and will be removed when the bot is published.
-* You can choose to auto-publish the assistant post-import.
+    * If there are one or more additional tasks or languages in the assistant, and if these are not present in the import definition, then these tasks will be marked as deleted and will be removed when the bot is published.
+    * You can choose to auto-publish the assistant post-import.
 
+        ![alt_text](images/bm(11).png "image_tooltip")
 
-
-
-
-    ![alt_text](images/bm(11).png "image_tooltip")
-
-
-
-
-* If you select **Incremental import**, you can also choose which components to import.
-
+9. If you select **Incremental import**, you can also choose which components to import.
 
     ![alt_text](images/bm(4).png "image_tooltip")
 
-
- 
-
-
-
-* **Bot Tasks**: Here is where you can select to import Tasks only (with or without comments), Knowledge Graph, Small Talk or Digital Forms.
+    * **Bot Tasks**: Here is where you can select to import Tasks only (with or without comments), Knowledge Graph, Small Talk or Digital Forms.
 
         !!! note
 
             If you want to import one or more Bot Tasks, also select the **NLP Data** settings, as they are linked. For example, the utterances assigned to dialog tasks are not imported if you don’t select the NLP Data settings, causing problems in identifying the dialog properly.
 
-
-
-* **NLP Data**: This is where you can import NLP Settings, Utterances, Patterns and Standard Responses. ML Utterances and Patterns can either be Appended or Replaced.
+    * **NLP Data**: This is where you can import NLP Settings, Utterances, Patterns and Standard Responses. ML Utterances and Patterns can either be Appended or Replaced.
+            
+        1. **Append** can be used when the utterances present in the file should be imported into the assistant and any additional utterances in the bot should be retained (this is the default behavior).
+        2. **Replace** can be used when the utterances present in the file should be imported into the assistant. Any additional utterances will be removed.
         
-    1. **Append** can be used when the utterances present in the file should be imported into the assistant and any additional utterances in the bot should be retained (this is the default behavior).
-    2. **Replace** can be used when the utterances present in the file should be imported into the assistant. Any additional utterances will be removed.
-    
-        In case you are importing Tasks too, the additional utterances related to tasks being imported will be removed. 
+            In case you are importing Tasks too, the additional utterances related to tasks being imported will be removed. 
 
 
-        ![alt_text](images/bm(1).png "image_tooltip")
+            ![alt_text](images/bm(1).png "image_tooltip")
 
-            The imported Traits, Synonyms and Concepts will replace those in the target bot. Rules nac be imported along with their tagged dialog tasks.
+        3. The imported Traits, Synonyms and Concepts will replace those in the target bot. Rules nac be imported along with their tagged dialog tasks.
 
     * **Settings**: Bot Settings, Bot Variables and Voice Call Properties.
     * **Custom Dashboards** – This is useful in case you have created custom dashboards under the Analyze section and you want to import these to the new VA as well. 
     * On the confirmation dialog that opens, click **Backup** to download the existing assistant configuration.
 
-    
-       
-
-
-        ![alt_text](images/bm(8).png "image_tooltip")
-        !!! note
+            ![alt_text](images/bm(8).png "image_tooltip")
+        
+            !!! note
 
                 While backing up is an optional choice, we strongly recommend you do so, especially when choosing Full Import, as you cannot recover the configurations after the imported assistant replaces them.
 
