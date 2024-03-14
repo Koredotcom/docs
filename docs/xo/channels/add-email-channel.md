@@ -1,6 +1,6 @@
 # Adding the Email Channel
 
-When you add the email channel to your VA, the XO Platform automatically generates the email address for end users to communicate with your assistant. By default, the email address syntax is **_&lt; bot name >@bots.kore.com_**. 
+When you add the email channel to your VA, the XO Platform automatically generates the email address for end users to communicate with your assistant. By default, the email address syntax is <code>< bot name >@bots.kore.com</code>.
 
 For example, <b><i>customer-support@bots.kore.com</i></b> Optionally, you can add a custom name, such as <b><i>my-bot@bots.kore.com</i></b>.
 
