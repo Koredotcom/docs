@@ -9,7 +9,6 @@ The **Advanced Conversation Analytics** feature provides a more detailed view of
     The **Conversations History** Dashboard is available only post the 9.3 release, i.e. post-July 24, 2022.
 
 
-
 **To view the Conversations History dashboard, follow the steps**: 
 
 1. Click the three dots on the left navigation pane and then click **Analytics**.The **Analytics** panel is displayed with the list of reports.
@@ -168,13 +167,9 @@ The following table displays each preset’s filter name, predefined configurati
   </tr>
 </table>
 
-
-
 ### Feedback Prebuilt Filter
 
 The Platform supports the **Feedback** filter on the **Filter Views** panel to create custom feedback filters. Based on the filter criteria, the system groups and displays the conversations for the following parameters:
-
-
 
 * **Feedback Survey Template Type**: Indicates if the selected type is **_NPS_**, **_CSAT_**, or **_Thumbs-up / Thumbs-down_**. Learn more.
 * **Operator**: The conditional/logical operator that applies to the Feedback filter evaluation which includes one of the following:
@@ -189,8 +184,6 @@ The Platform supports the **Feedback** filter on the **Filter Views** panel to c
 
     The conversations with different survey types can be grouped using the `OR` operator to satisfy multiple conditions.
 
-
-
 ### View Prebuilt Filters
 
 To view the prebuilt filters, follow the steps:
@@ -198,7 +191,6 @@ To view the prebuilt filters, follow the steps:
 1. On the **Conversations History** dashboard page, the prebuilt filters are categorized and listed under the **Filter Views** section.
 
     <img src="../images/view-prebuilt-filters-1.png" alt="View Prebuilt Filters-1" title="View Prebuilt Filters" style="border: 1px solid gray; zoom:80%;">
-
 
 2. Click the **Read More** link corresponding to the name of the filter type to see the configuration details of each conversation filter type. 
 
@@ -262,14 +254,9 @@ A **Conversation Filter** helps group and display selective conversation history
    <td>
     The available options include:
 <ol>
-
-<li>All
-
-<li>Active
-
-<li>Closed
-</li>
-</ol>
+<li>All</li>
+<li>Active</li>
+<li>Closed</li></ol>
    </td>
    <td>
     Select <strong><em>All</em></strong> to view all conversations, <strong><em>Active</em></strong> to view ongoing conversations, and <strong><em>Closed</em></strong> to view conversations that have ended.
@@ -283,13 +270,11 @@ A **Conversation Filter** helps group and display selective conversation history
     The available options include:
 <ol>
 
-<li>Self-service
+<li>Self-service</li>
 
-<li>User Drop-off
+<li>User Drop-off</li>
 
-<li>Agent Transfer
-</li>
-</ol>
+<li>Agent Transfer</li></ol>
    </td>
    <td>
     Select one of the following:
@@ -312,14 +297,13 @@ A **Conversation Filter** helps group and display selective conversation history
     The available selection options include:
 <ol>
 
-<li>All Channels
+<li>All Channels</li>
 
-<li>Web/Mobile Client
+<li>Web/Mobile Client</li>
 
-<li>Webhook
+<li>Webhook</li>
 
-<li>Other configured channels.
-</li>
+<li>Other configured channels.</li>
 </ol>
    </td>
    <td>
@@ -354,12 +338,11 @@ A **Conversation Filter** helps group and display selective conversation history
     The available selection options include:
 <ol>
 
-<li>All
+<li>All</li>
 
-<li>Interactive
+<li>Interactive</li>
 
-<li>Non-interactive
-</li>
+<li>Non-interactive</li>
 </ol>
    </td>
    <td>
@@ -374,10 +357,9 @@ A **Conversation Filter** helps group and display selective conversation history
     The available selection options include:
 <ol>
 
-<li>Include
+<li>Include</li>
 
-<li>Exclude
-</li>
+<li>Exclude</li>
 </ol>
    </td>
    <td>
@@ -443,24 +425,23 @@ A **Conversation Filter** helps group and display selective conversation history
     The <strong>Conditional Filter</strong> options include:
 <ol>
 
-<li>Less than
+<li>Less than</li>
 
-<li>Less than Equals to
+<li>Less than Equals to</li>
 
-<li>Greater than
+<li>Greater than</li>
 
-<li>Greater than equals to
+<li>Greater than equals to</li>
 
-<li>Equals to
+<li>Equals to</li></ol>
 <br>
 
     The <strong>Time units</strong> options include:
 <ol>
 
-<li>Seconds
+<li>Seconds</li>
 
-<li>Minutes
-</li>
+<li>Minutes</li>
 </ol>
 </li>
 </ol>
@@ -556,18 +537,18 @@ A **Conversation Filter** helps group and display selective conversation history
 <li>Thumbs-up/Down
 <br>
 
-    The <strong>Conditional Filter</strong> options include
+The <strong>Conditional Filter</strong> options include
 <ol>
 
-<li>Less than
+<li>Less than</li>
 
-<li>Less than Equals to
+<li>Less than Equals to</li>
 
-<li>Greater than
+<li>Greater than</li>
 
-<li>Greater than equals to
+<li>Greater than equals to</li>
 
-<li>Equals to
+<li>Equals to</li></ol>
 <br>
 
     The options for <strong>Score</strong> include:
@@ -612,11 +593,10 @@ A **Conversation Filter** helps group and display selective conversation history
    </td>
   </tr>
 </table>
-3. Click **Save**.
 
+<ol start="3"><li>Click <b>Save</b>.</li></ol>
 
 <img src="../images/create-conversation-filter-2.png" alt="Create Conversation Filter-2" title="Create Conversation Filter-2" style="border: 1px solid gray; zoom:80%;">
-
 
 The new custom filter is listed on the Filter Views page. The conversations are grouped and displayed Conversations History Dashboard based on the inputs provided on the Filter Views page.
 
@@ -712,7 +692,6 @@ The **Channel, Language, Date**, and **conversation duration** are displayed at 
 <img src="../images/other-conversation-parameters.png" alt="Other Conversation Parameters" title="Other Conversation Parameters" style="border: 1px solid gray; zoom:80%;">
 
 ### Conversation Summary
-
 
 * **User Messages**: The number of messages sent by the user to the virtual assistant.
 * **Bot Messages**: The number of messages sent by the bot/virtual assistant to the user.
@@ -939,8 +918,37 @@ The Enriched Chat Transcript is visible on the Chat History panel.
 
 !!! note
 
-    The **Trace ID** is retained in the logs for 30 days. Once the **Trace ID** is expired, you see a tooltip message as ‘`Trace Id: Trace records for this message are not available`‘.
+    The **Trace ID** is retained in the logs for 30 days. Once the **Trace ID** is expired, you see a tooltip message as ‘`Trace Id: Trace records for this message are not available`.
 
+### Define Alternate Text for JavaScript Messages
+
+The Platform uses the`{} JavaScript` tag in the Chat History for bot messages and templates written using JavaScript. However, bot designers can now add a context-specific **Alternate Text** to JavaScript messages/templates they define and explain the purpose more clearly. The added Alternate Text is displayed alongside the JavaScript message tag in the **Chat History** window for developers to get a better understanding of the message’s intent. 
+
+The <a href="https://developer.kore.ai/docs/bots/api-guide/conversation-history-api/" target="_blank">Conversation History API</a> response includes a parameter `messages.tags.altText` which captures the **Alternate Text** value(s) configured in the JavaScript message or Web SDK template payload through the predefined function discussed below.
+
+**How It Works**
+
+1. Developer uses a predefined function in the syntax `tags.addAlternateText("value")` to add the Alternative Text to a JavaScript message or Web SDK template on any channel, including a Webhook.
+2. The Alternate text indicating the JavaScript message/template’s purpose should be provided for the `value` parameter. For example, `tags.addAlternateText("Accounts Selection Message")`.
+
+**Usage Example**
+
+For a bank account creation task, the Platform renders a template in the end channel to prompt the user for account type selection. This requires the developer to define a JavaScript message specific to the channel.
+
+The developer can generate an Alternate text like “_Accounts Selection Message_,” in the template code to indicate that the JavaScript message is for account type selection.
+
+<img src="../images/js-editor-alternate-text.png" alt="JS template editor" title="JS template editor" style="border: 1px solid gray; zoom:75%;">
+
+After the end user selects an account type, the Alternate message appears in the Chat History above the `{} JavaScript` tag.
+
+<img src="../images/chat-history-alternate-message.png" alt="chat history alternate message" title="chat history alternate message" style="border: 1px solid gray; zoom:75%;">
+
+**Important Considerations**
+
+* You can define static and dynamic values for the alternate text.
+* Alternate text can be defined for JavaScript messages in user prompts, error prompts, Small Talk, standard responses, FAQs, and events.
+* The Platform assigns the latest to a message when you add multiple Alternate text values.
+* In the **Chat History** window, the Platform substitutes the payload label with an alternative text tag for all channel templates, excluding the SDK Template.
 
 ### Message Tags
 
