@@ -36,19 +36,17 @@ You can import tasks and configurations of a specific assistant into a new or ex
 To import a Virtual Assistant, follow these steps:
 
 1. Open the assistant you want to export.
-2. Select the **Deploy** tab from the top menu.
-3. From the left menu select **Bot Management > Import & Export**.
+2. Select the **Deploy** tab from the left menu.
+3. Select **Import & Export** under **DEPLOY MANAGEMENT**.
 4. On the Import & Export page select the **Import** tab.
 5. Click the **Choose File** buttons next to the **Bot Definition File** field and **Bot Config File** field, and upload the _botDefinition.json_ and _config.json_ files respectively.
 6. Optionally, upload the custom script file from the imported assistant if any. The file size is limited to 500kb.
     <img src="../images/bot-import-custom-script-file.png" alt="App import - Custom script file" title="App import - Custom script file" style="border:1px solid gray; zoom:70%;">
 
-7. Select one of these import options: **Full Import** or **Incremental Import**.
+7. Select one of these import options: **Full Import** or **Incremental Import**. You will get a warning to backup your assistant before performing the import.
 8. If you select **Full import**, the bot definition in the in-development copy will be overwritten with the definition present in the import file.
+    
     * If there are one or more additional tasks or languages in the assistant, and if these are not present in the import definition, then these tasks will be marked as deleted and will be removed when the bot is published.
-    * You can choose to auto-publish the assistant post-import.
-
-        ![alt_text](images/bm(11).png "image_tooltip")
 
 9. If you select **Incremental import**, you can also choose which components to import.
 
@@ -60,7 +58,7 @@ To import a Virtual Assistant, follow these steps:
 
             If you want to import one or more Bot Tasks, also select the **NLP Data** settings, as they are linked. For example, the utterances assigned to dialog tasks are not imported if you don’t select the NLP Data settings, causing problems in identifying the dialog properly.
 
-    * **NLP Data**: This is where you can import NLP Settings, Utterances, Patterns and Standard Responses. ML Utterances and Patterns can either be Appended or Replaced.
+    * **NLP Data**: This is where you can import Synonyms, Concepts, Traits, Rules, Utterances, Patterns and Standard Responses. ML Utterances and Patterns can either be Appended or Replaced.
             
         1. **Append** can be used when the utterances present in the file should be imported into the assistant and any additional utterances in the bot should be retained (this is the default behavior).
         2. **Replace** can be used when the utterances present in the file should be imported into the assistant. Any additional utterances will be removed.
@@ -70,7 +68,7 @@ To import a Virtual Assistant, follow these steps:
 
             ![alt_text](images/bm(1).png "image_tooltip")
 
-        3. The imported Traits, Synonyms and Concepts will replace those in the target bot. Rules nac be imported along with their tagged dialog tasks.
+        3. The imported Traits, Synonyms and Concepts will replace those in the target bot. Rules can be imported along with their tagged dialog tasks.
 
     * **Settings**: Bot Settings, Bot Variables and Voice Call Properties.
     * **Custom Dashboards** – This is useful in case you have created custom dashboards under the Analyze section and you want to import these to the new VA as well. 
@@ -294,11 +292,11 @@ When you export a VA in the Latest mode, the latest versions of the  tasks get e
   </tr>
 </table>
 
-#### **Steps in Exporting the Assistant**
+#### Steps in Exporting the Assistant
 
 1. Open the assistant you want to export.
-2. Select **Deploy** tab from the top menu.
-3. From the left menu select **Bot Management > Import & Export**.
+2. Select **Deploy** tab from the left menu.
+3. Select **Import & Export** under **DEPLOY MANAGEMENT**.
 4. On the Import & Export page, select the **Export** tab.
 5. In the Export tab, select either **Published** or **Latest Version** exporting mode.
 6. By default, all the components are selected for export. Deselect the items that you do not want to export.
