@@ -51,14 +51,15 @@ In the case of Entity and Confirmation nodes, you refer to Prompts whereas, for 
     4. You can use one of of the several available templates to create/edit your message:
         * [**Text**](#plain-text-prompts) - Plain textual message. This template is selected by default.
         * [**Buttons**](#button-prompts) (Not available for Message node) - You can use this template if you want to let the user choose from multiple options. For example, in a Banking app, your prompt can have buttons with captions **Deposit**, **Withdrawl**, **Apply for Credit Card**, **Money Transfer** etc that can be configured to trigger the corresponding task.
-        * **Quick Reply** (Not available for Message node) - You can use this prompt for quick reply, i.e. a limited option of replies. For example, in a prompt that asks user whether they need any more help, you can have quick reply with options **Yes** and **No**.
+        * [**Quick Reply**](#quick-reply-template) (Not available for Message node) - You can use this prompt for quick reply, i.e. a limited option of replies. For example, in a prompt that asks user whether they need any more help, you can have quick reply with options **Yes** and **No**.
         * [**Custom JavaScript**](#javascript-prompts-or-responses) - To compose a JavaScript code.
 
         <img src="../images/prompt-editor-select-template.png" alt="Select template" title="Select template" style="border:1px solid gray;zoom:70%;">
 
         !!! Note
 
-            You can use stored context variables with {{variable brackets}}. For example, ‘Hello {{context.session.UserContext.firstName}}. How can I help you?’
+            * Button and Quick Reply templates are not available for every channel.
+            * You can use stored context variables with {{variable brackets}}. For example, ‘Hello {{context.session.UserContext.firstName}}. How can I help you?’
 
     5. You can format the prompt message using the formatting options for **Text** messages.
 
@@ -229,7 +230,7 @@ In cases where you wish to provide the user a limited number of distinct choices
 
 For example, a typical Banking app can perform tasks pertaining only to banking, like opening an account, issue credit card, money transfer etc. In such cases Button template is appropriate.
 
-You need to select the Button template, and then add button titles and a corresponding value that would be sent to the engine on click of the button.
+You need to select the Button template, add a **Description** (mandatory), i.e. the text you want to appear before the quick reply buttons, and then add button titles and a corresponding value that would be sent to the engine on click of the button.
 
 Here are the steps to create a prompt using Button template:
 
@@ -245,7 +246,17 @@ This is how it looks at runtime:
 
 ## Quick Reply template
 
+Often, you may wish to provide options for user to **Quick Reply**, like Yes/No, True/False, etc. In such cases you can create prompts using Quick Reply template.
 
+You need to choose the Quick Reply template, add a **Description** (mandatory), i.e. the text you want to appear before the quick reply buttons, and then add the quick reply item titles and values.
+
+This is how you can create a quick reply prompt:
+
+<img src="../images/prompt-editor-quick-response.gif" alt="Quick Reply prompt creation" title="Quick Reply prompt creation" style="border:1px solid gray;zoom:70%;">
+
+This is how it looks at runtime:
+
+<img src="../images/prompt-editor-quick-reply-prompt-runtime.png" alt="Quick Reply prompt at Runtime" title="Quick Reply prompt at Runtime" style="border:1px solid gray;zoom:70%;">
 
 ## JavaScript Prompts or Responses
 
