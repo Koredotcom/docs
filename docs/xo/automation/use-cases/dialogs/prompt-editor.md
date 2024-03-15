@@ -307,54 +307,17 @@ print("Visibility: " + context.humidity+"\n");
 print("Humidity: " + context.visibility+"\n");
 ```
 
-
 For more information, see [Using Session and Context Variables in Tasks](../../using-session-and-context-variables){:target="_blank"}.
-
-
-### Customize JavaScript Responses
-
-JavaScript will not have any list of templates displayed (see the following screenshot), because one template/JSON may not work for ‘All’ channels.
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image7.png "image_tooltip")
-
-
-**Key Points**
-
-* If JavaScript template is used for an ‘_All channel_’ response, the template will be shown as is in JSON format and may not render correctly on the channel. You need to choose a channel-specific template for rendering a specific template for your channel.
-* If any channel-specific override is present, the platform will use that over the _‘All channel’_ response while responding on that specific channel. For example, if you have a specific message or template for MS Teams, the bot prefers that specific template while responding to a user over the MS Teams channel instead of the ‘All channel’ response.
-* You can have more than one response configured for a channel. The bot randomly chooses if more than one response is configured for any given channel. This holds true for all-channel responses too if no other channel-specific responses are configured.
-
-If your bot has multiple channels, most probably each channel has its own template.
-
-For a few channel options in the **Channel** drop-down, you can see a list of templates displayed for **JavaScript** response. For example, select the **Web/Mobile Client** channel and choose any template from the **Channel Templates** list for your response as illustrated below.
-
-
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image8.png "image_tooltip")
-
-For more information on templates, see [Widget SDK – Message Formatting and Templates](../../../../sdk/widget-sdk-message-formatting-and-templates/){:target="_blank"}.
-
-The same message configuration rules and principles apply while configuring any entity prompt or KG responses too.
-
-!!! Note
-
-    The channel template options are different for each channel. The template definitions provided in the platform are only for reference purposes. Please refer to the documentation of the channel provider to obtain the latest template definitions.
-
-
-## Preview the Prompt or Response
-
-On the **Preview** tab, you can view a sample of the rendered output message that is displayed to the end-user with markup. To render the output for the code involving context variables, define them to use the **Key** and **Value** boxes in the tab to render a valid sample output for preview.
-
 
 ## Channel-Specific User Prompts
 
 By default, the Dialog Tasks configures the standard user prompts for all channels. However, you can define a specific response for one or more channels to display to the end-user in that channel instead of the **Default** response.
-To define a channel-specific response, select a channel, for example, **Kore.ai**, and then define the user prompt on the **Advanced** tab as needed. Only one response can be defined for each channel.
+To define a channel-specific response, select the **Custom JavaScript** template, select a channel, for example, **Kore.ai**, and then define the user prompt as needed. Only one response can be defined for each channel.
+
+While configuring prompts, please note that:
+
+* You can have more than one response configured for a channel. The bot randomly chooses if more than one response is configured for any given channel. This holds true for all-channel responses too if no other channel-specific responses are configured.
+* If any channel-specific override is present, the platform will use that over the _‘All channel’_ response while responding on that specific channel. For example, if you have a specific message for MS Teams, the bot prefers that specific prompt while responding to a user over the MS Teams channel instead of the ‘All channel’ prompt.
 
 !!! Note
 
