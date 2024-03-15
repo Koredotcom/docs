@@ -14,7 +14,7 @@ Steps to enable the feature:
 
 
 
-1. Navigate to **Build** > **Natural Language** > **Generative AI & LLM** > **Co-Pilot**.
+1. Navigate to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
 2. Select the preferred model from the **Model** drop-down menu for a feature. 
 
 
@@ -60,12 +60,12 @@ Follow these steps:
 
 
 
-1. Go to **Build** > **Natural Language** > **Generative AI & LLM** > **Co-Pilot** or **Dynamic Conversation**.
+1. Go to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
 2. Hover over the feature to view the **Advance Setting** (gear) icon. 
 
     ![alt_text](images/cpf(3).png "image_tooltip" )
 
-3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed. 
+3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed.  
     ![alt_text](images/cpf(2).png )
 
 Adjusting the settings allows you to fine-tune the model’s behavior to meet your needs. The default settings work fine for most cases. You can tweak the settings and find the right balance for your use case. A few settings are common in the features, and a few are feature-specific:
@@ -97,7 +97,7 @@ Follow these steps:
 
 
 
-1. Go to **Build** > **Natural Language** > **Generative AI & LLM** >  **Co-Pilot**.
+1. Go to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
 2. Hover over the feature to view the **Setting** (gear) icon. 
 
     ![alt_text](images/cpf(4).png "image_tooltip")
