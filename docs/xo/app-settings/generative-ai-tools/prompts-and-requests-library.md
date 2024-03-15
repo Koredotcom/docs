@@ -54,8 +54,9 @@ To add a new prompt, follow the steps:
             !!! note
 
                     You have the flexibility to interchange a prompt designated for one feature with that of another, and vice versa.
+
         3. Click **Confirm** to get it imported into the JSON body.
-        
+
     2. To create a prompt from scratch, click **Start from scratch** and enter the **JSON** request the LLM. 
     ![alt_text](images/prl(8).png "image_tooltip")
 
@@ -89,6 +90,6 @@ To add a new prompt, follow the steps:
     ![alt_text](images/image1-8.png "image_tooltip")
 12. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section. 
     ![alt_text](images/prl(1).png "image_tooltip")
-13. Now proceed to enable[ Co-Pilot](../../../../../app-settings/generative-ai-tools/co-pilot-features) and[ Dynamic Conversations](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features) features.
+13. Now proceed to enable[ Co-Pilot](co-pilot-features.md) and[ Dynamic Conversations](dynamic-conversations-features.md) features.
 
 		
