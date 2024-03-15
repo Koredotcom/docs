@@ -51,7 +51,7 @@ Steps to configure a pre-built LLM:
 
     ![alt_text](images/llm-integration(11).png "image_tooltip")
 
-5. The next step is to enable[ Co-Pilot](../../../../../app-settings/generative-ai-tools/co-pilot-features) and[ Dynamic Conversations](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features) features.
+5. The next step is to enable [ Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
 
 
 ## Custom LLM Integration Framework
@@ -112,7 +112,7 @@ Steps to integrate a Custom LLM:
 
     ![alt_text](images/llm-integration(17).png "image_tooltip")
 
-9. The next step is to add[ Prompts](../../../../../app-settings/generative-ai-tools/prompts-and-requests-library/).
+9. The next step is to add[ Prompts](prompts-and-requests-library.md).
 
 ## Kore.ai XO GPT Integration
 
@@ -144,7 +144,7 @@ Steps to enable Kore.ai XO GPT Models.
 ![alt_text](images/xogpt4.png "image_tooltip")
 
 
-6. The next step is to enable[ Co-Pilot](../../../../../app-settings/generative-ai-tools/co-pilot-features) and[ Dynamic Conversations](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features) features.
+6. The next step is to enable [ Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
 
 
 

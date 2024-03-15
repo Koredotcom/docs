@@ -51,10 +51,11 @@ To add a new prompt, follow the steps:
             ![alt_text](images/prompts2hq.gif "image_tooltip")
         
         2. Select the **Feature** from the dropdown menu, select the **Model**, and select the **Prompt** (in case of custom prompts only) from the dropdown menu. Hover over and click Preview Prompt to view the prompt before importing.
-        !!! note
+            !!! note
 
-                You have the flexibility to interchange a prompt designated for one feature with that of another, and vice versa.
+                    You have the flexibility to interchange a prompt designated for one feature with that of another, and vice versa.
         3. Click **Confirm** to get it imported into the JSON body.
+        
     2. To create a prompt from scratch, click **Start from scratch** and enter the **JSON** request the LLM. 
     ![alt_text](images/prl(8).png "image_tooltip")
 

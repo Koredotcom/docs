@@ -12,7 +12,8 @@ The Kore.ai XO Platform helps enhance your bot development process and enrich en
 
 In addition to the out-of-box integration with pre-built models, the Platform supports the bring-your-own (BYO) model framework to integrate with externally hosted models by third parties as well as models hosted by the enterprises themselves. The framework allows the creation of custom prompts that are optimized for specific purposes and models. This generic framework works seamlessly with the Auth Profiles module of the Platform, enabling enterprises to use the authentication mechanism of their choice.
 
-The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. For more information, see [Kore.ai XO GPT](../../../../../app-settings/generative-ai-tools/xo-gpt-module).
+The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. For more information, see [Kore.ai XO GPT](xo-gpt-module.md).
+
 
 By leveraging LLM and Generative AI capabilities, you can create intelligent, human-like conversational experiences for your end-users.
 
@@ -78,8 +79,8 @@ LLM and Generative AI also require sharing data with third parties: OpenAI (when
 
 
 
-1. [Integrate a pre-built or custom LLM](../../../../../app-settings/generative-ai-tools/llm-integration). 
-2. (Optional – only for custom LLM model)[ Add Prompts](../../../../../app-settings/generative-ai-tools/prompts-and-requests-library).
-3. Enable[ Co-Pilot](../../../../../app-settings/generative-ai-tools/co-pilot-features) and[ Dynamic Conversations](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features) features.
+1. [Integrate a pre-built or custom LLM](llm-integration.md). 
+2. (Optional – only for custom LLM model)[ Add Prompts](prompts-and-requests-library.md).
+3. Enable[ Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
 
 		

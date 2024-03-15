@@ -13,7 +13,7 @@ Steps to enable the feature:
 
 
 
-1. Navigate to **Build** > **Natural Language** > **Generative AI & LLM** > **Dynamic Conversations**. 
+1. Navigate to **App Settings** > **Generative AI Tools** > **Dynamic Conversations**. 
 
 
     ![alt_text](images/dcf(1).jpg "image_tooltip")
@@ -32,14 +32,16 @@ Steps to enable the feature:
 			
 
 
+## Change Settings for a Model
 
+Choose the option below based on the model for which you want to change the settings:
 
 		
 
 	
 
 
-## Change Settings for a Pre-built Model
+### Change Settings for a Pre-built Model
 
 	
 
@@ -53,7 +55,7 @@ Follow these steps:
 
 
 
-1. Go to **Build** > **Natural Language** > **Generative AI & LLM** > **Dynamic Conversations**.
+1. Go to **App Settings** > **Generative AI Tools** > **Dynamic Conversations**.
 2. Hover over the feature to view the **Advance Setting** (gear) icon. 
 
 
@@ -77,7 +79,46 @@ Adjusting the settings allows you to fine-tune the model’s behavior to meet yo
 * **Similarity Threshold**: The Similarity Threshold is applicable for the Answer from Docs feature. This threshold refers to the similarity between the user utterance and the document chunks. The platform shortlists all chunks that are above the threshold and sends these chunks to the LLMs to auto-generate the responses. Define a suitable threshold that works best for your use case. Setting a higher threshold limits the number of chunks and may not generate any result. Setting a lower threshold might qualify too many chunks and might dilute the response.
 
 		
+### Change Settings for a Custom Model
 
+	
+
+		
+
+			
+
+For a custom model, you can only change the post-processor script to adjust the actual response with the expected response.
+
+Follow these steps:
+
+
+
+1. Go to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
+2. Hover over the feature to view the **Setting** (gear) icon. 
+
+    ![alt_text](images/image4-3-4.png "image_tooltip")
+
+3. Click **Edit**. The Actual Response is displayed. 
+
+
+    ![alt_text](images/cpf(5).png "image_tooltip")
+
+4. Click **Configure**. The Post Processor Script is displayed. 
+
+
+    ![alt_text](images/cpf(7).png "image_tooltip")
+
+5. Modify the script and click **Save & Test**. The Response is displayed. 
+
+
+
+
+    ![alt_text](images/cpf(6).png "image_tooltip")
+
+6. Click **Save**.
+7. (Only for GenAI Node) Enter the **Exit Scenario Key-Value** and **Virtual Assistance Response Key fields**. Click **Save**.
+The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user.
+    ![alt_text](images/image1-8.png "image_tooltip")
 	
 
 	
@@ -92,6 +133,8 @@ Adjusting the settings allows you to fine-tune the model’s behavior to meet yo
 The following table displays the Dynamic Conversation features and the supported models. 
 
 (✅ Supported | ❌ Not Supported)
+
+
 
 
 <table>
@@ -110,6 +153,8 @@ The following table displays the Dynamic Conversation features and the supported
    </td>
    <td>Repeat Responses
    </td>
+   <td>Rephrase User Query
+   </td>
   </tr>
   <tr>
    <td>Azure OpenAI – GPT 3.5 Turbo
@@ -126,6 +171,8 @@ The following table displays the Dynamic Conversation features and the supported
    </td>
    <td>✅
    </td>
+   <td>❌
+   </td>
   </tr>
   <tr>
    <td>Azure OpenAI – GPT 4
@@ -138,9 +185,11 @@ The following table displays the Dynamic Conversation features and the supported
    </td>
    <td>✅
    </td>
-   <td>❌
+   <td>✅*
    </td>
    <td>✅
+   </td>
+   <td>❌
    </td>
   </tr>
   <tr>
@@ -158,6 +207,8 @@ The following table displays the Dynamic Conversation features and the supported
    </td>
    <td>✅
    </td>
+   <td>❌
+   </td>
   </tr>
   <tr>
    <td>OpenAI – GPT 4
@@ -170,9 +221,11 @@ The following table displays the Dynamic Conversation features and the supported
    </td>
    <td>✅
    </td>
-   <td>❌
+   <td>✅*
    </td>
    <td>✅
+   </td>
+   <td>❌
    </td>
   </tr>
   <tr>
@@ -190,6 +243,8 @@ The following table displays the Dynamic Conversation features and the supported
    </td>
    <td>✅
    </td>
+   <td>❌
+   </td>
   </tr>
   <tr>
    <td>Anthropic – Claude
@@ -206,13 +261,17 @@ The following table displays the Dynamic Conversation features and the supported
    </td>
    <td>✅
    </td>
+   <td>❌
+   </td>
   </tr>
   <tr>
    <td>Custom LLM
    </td>
-   <td>❌
+   <td>✅
    </td>
    <td>❌
+   </td>
+   <td>✅
    </td>
    <td>❌
    </td>
@@ -223,8 +282,27 @@ The following table displays the Dynamic Conversation features and the supported
    <td>❌
    </td>
   </tr>
+  <tr>
+   <td>Kore.ai XO GPT
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>✅
+   </td>
+  </tr>
 </table>
 
+\*  Currently, the Zero-shot ML Model does not support batch testing when using GPT 4.
 
 !!! note
 
@@ -361,6 +439,57 @@ If this feature is disabled, the system won’t identify and display the logical
 ### Repeat Responses
 
 This feature uses LLM to reiterate the recent bot responses when the Repeat Response event is triggered. Bot developers can enable the event and customize the trigger conditions. This empowers end-users to ask the bot to repeat its recent responses at any point during the conversation. Currently, this event is supported for IVR, Audiocodes, and Twilio Voice channels.[ Learn more](https://developer.kore.ai/docs/bots/bot-intelligence/event-based-bot-actions/#Repeat_Bot_Response_Event).
+
+
+
+
+
+
+
+
+### Rephrase User Query
+
+This feature uses the[ Kore.ai XO GPT Model](xo-gpt-module.md). This model helps improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing user conversation.
+
+When a user intent and entity are split across multiple utterances or through the conversation, the feature enriches the user query by rephrasing the user’s multiple queries during runtime. This enriched user query contains all the conversation details so the bot can understand the actual meaning behind a user’s utterance. This enriched user query is fed to the natural language, improving accuracy by improving intent identification and entity extraction.
+
+**Usage**
+
+The LLM rephrases the query using one of the following methods depending on the scenario:
+
+**Completeness**: The user query should be complete based on the conversation context so that the NLP can identify the right intent. If the user query is incomplete, the system urges the user to rephrase with more information.
+
+For example: \
+ User: What is the weather forecast for New York tomorrow? \
+ Bot: It will be Sunny, with temperature ranging between 30 – 35 degrees Celsius. \
+ User: How about Orlando? \
+ Bot: Sorry, I cannot understand. Can you please rephrase?
+
+The query should be completed as “How about the weather forecast in Orlando tomorrow?”.
+
+**Co-referencing**: Coreference arises when multiple expressions or queries within text pertain to a common entity. In cases where a user’s query demonstrates incomplete coreference, the system prompts the user to rephrase the query with additional information. This enhances NLP’s ability to discern the correct intent and entities involved.
+
+For example: \
+ User: I’ve been experiencing a persistent headache for the past week. \
+ Bot: I’m sorry to hear that. Have you been taking any medication for it? \
+ User: Yes, I’ve been taking ibuprofen, but it doesn’t seem to help much. \
+ Bot: I see. How often do you take ibuprofen? \
+ User: I take it every six hours \
+ Bot: I don’t understand. Can you tell me how often you take ibuprofen?
+
+The co-reference in the user query should be expanded for NLP to identify the right intent and entities. The co-reference should be expanded as “I take ibuprofen every six hours”.
+
+**Completeness and Co-referencing**: The following example illustrates completeness and co-referencing issues with the user’s input which triggers rephrasing.
+
+For example: \
+ User: I want to apply for a personal loan. \
+ Bot: Sure, I can help you. You’re eligible to take a personal loan of up to 20,000$. \
+ User: How about a Home loan? \
+ Bot: You’re eligible to apply for a home loan as well. You can avail up to 100,000$. \
+ User: What about the interest rates of both loans?
+
+The co-reference and the query have to be completed as “What is the interest rate of personal loan and home loan?
+
 
 
 ### Few-shot ML Model
