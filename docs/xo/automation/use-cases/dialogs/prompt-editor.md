@@ -318,8 +318,6 @@ While configuring prompts, please note that:
 
 * You can have more than one response configured for a channel. The bot randomly chooses if more than one response is configured for any given channel. This holds true for all-channel responses too if no other channel-specific responses are configured.
 * If any channel-specific override is present, the platform will use that over the _‘All channel’_ response while responding on that specific channel. For example, if you have a specific message for MS Teams, the bot prefers that specific prompt while responding to a user over the MS Teams channel instead of the ‘All channel’ prompt.
-* You can have more than one response configured for a channel. The bot randomly chooses if more than one response is configured for any given channel. This holds true for all-channel responses too if no other channel-specific responses are configured.
-
 
 !!! Note
 
