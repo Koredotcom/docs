@@ -12,9 +12,12 @@ The Kore.ai XO Platform helps enhance your bot development process and enrich en
 
 In addition to the out-of-box integration with pre-built models, the Platform supports the bring-your-own (BYO) model framework to integrate with externally hosted models by third parties as well as models hosted by the enterprises themselves. The framework allows the creation of custom prompts that are optimized for specific purposes and models. This generic framework works seamlessly with the Auth Profiles module of the Platform, enabling enterprises to use the authentication mechanism of their choice.
 
+The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. For more information, see [Kore.ai XO GPT](xo-gpt-module.md).
+
+
 By leveraging LLM and Generative AI capabilities, you can create intelligent, human-like conversational experiences for your end-users.
 
-You can find Generative AI and LLM features by going to **Build** > **Natural Language** > **Generative AI & LLM**.
+You can find Generative AI and LLM features by going to **App Settings** > **Generative AI Tools**.
 
 
 
@@ -32,11 +35,13 @@ The Integration of Generative AI and LLM enables the following features:
 * Prompts & Requests Library: Complete flexibility to create fully customized prompts optimized for particular use cases using custom models.
 * Co-Pilot features:
     * **Automatic Dialog Generation**: This feature helps build production-ready dialog tasks automatically by briefly describing the task. A preview of the generated dialog is available and lets you modify the intent description and create multiple iterations of the dialog.
-    * **Training Utterance Suggestions**: Generate high-quality training data quickly and easily with our platform’s suggested utterances for each intent. Review and add the suggestions as needed to create a powerful training set for your bot.
-    * **Conversation Test Cases Suggestion**: The Platform suggests simulated user inputs covering various scenarios from an end-user perspective at every test step. You can use these suggestions to create test suites. 
+    * **Conversation Test Cases Suggestion**: The Platform suggests simulated user inputs covering various scenarios from an end-user perspective at every test step. You can use these suggestions to create test suites.
+    * **Conversation Summary**: Implements the Conversation Summary public API to fetch the details of the entire conversation between the customer and the VA or agent. This API leverages the Flan-T5 foundational model to summarize conversations.
     * **NLP Batch Test Cases Suggestion**: The Platform generates NLP test cases for every intent, including entity checks. You only need to create test suites in the Builder using the generated testing utterances.
+    * **Training Utterance Suggestions**: Generate high-quality training data quickly and easily with our platform’s suggested utterances for each intent. Review and add the suggestions as needed to create a powerful training set for your bot.
+    
     * **Use Case Suggestions**: Uses the Open AI LLM model to generate use cases during the VA (Bot) creation journey.
-    * **Conversation Summarization**:  Implements the Conversation Summary public API to fetch the details of the entire conversation between the customer and the VA or agent. This API leverages the Flan-T5 foundational model to summarize conversations.
+    summarize conversations.
 * Dynamic Conversations features:
     * **GenAI Node**: Collect Entities from end-users in a free-flowing conversation using LLM and Generative AI in the background. You can define entities to be collected as well as rules & scenarios.
     * **Answer from Documents**: Helps answer end-user queries from unstructured PDF documents without the need to extract individual FAQs and train them.
@@ -44,6 +49,7 @@ The Integration of Generative AI and LLM enables the following features:
     * **Rephrase Dialog Responses**: Enhance end-user experience with empathetic and contextual bot responses.
     * **Zero-shot ML Model**: Uses the Open AI LLM model for intent identification during run time based on semantic similarity.
     * **Repeat Responses**: Use LLM to reiterate the last bot responses when the Repeat Bot Response event is triggered.
+    * **Rephrase User Query**: Improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing conversation context.
     * **Few-shot ML Model**: Uses the Kore Ai’s hosted embeddings for intent identification during run time based on semantic similarity.
 
 
@@ -73,8 +79,8 @@ LLM and Generative AI also require sharing data with third parties: OpenAI (when
 
 
 
-1. [Integrate a pre-built or custom LLM](https://developer.kore.ai/docs/bots/nlp/llm-integration/). 
-2. (Optional – only for custom LLM model)[ Add Prompts](https://developer.kore.ai/docs/bots/nlp/prompts-and-requests-library/).
-3. Enable[ Co-Pilot](https://developer.kore.ai/docs/bots/nlp/co-pilot-features/) and[ Dynamic Conversations](https://developer.kore.ai/docs/bots/nlp/dynamic-conversations-features/) features.
+1. [Integrate a pre-built or custom LLM](llm-integration.md). 
+2. (Optional – only for custom LLM model)[ Add Prompts](prompts-and-requests-library.md).
+3. Enable[ Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
 
 		
