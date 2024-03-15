@@ -459,34 +459,34 @@ The LLM rephrases the query using one of the following methods depending on the 
 
 **Completeness**: The user query should be complete based on the conversation context so that the NLP can identify the right intent. If the user query is incomplete, the system urges the user to rephrase with more information.
 
-For example: \
- User: What is the weather forecast for New York tomorrow? \
- Bot: It will be Sunny, with temperature ranging between 30 – 35 degrees Celsius. \
- User: How about Orlando? \
- Bot: Sorry, I cannot understand. Can you please rephrase?
+For example: 
+User: What is the weather forecast for New York tomorrow? 
+Bot: It will be Sunny, with temperature ranging between 30 – 35 degrees Celsius. 
+User: How about Orlando? 
+Bot: Sorry, I cannot understand. Can you please rephrase?
 
 The query should be completed as “How about the weather forecast in Orlando tomorrow?”.
 
 **Co-referencing**: Coreference arises when multiple expressions or queries within text pertain to a common entity. In cases where a user’s query demonstrates incomplete coreference, the system prompts the user to rephrase the query with additional information. This enhances NLP’s ability to discern the correct intent and entities involved.
 
-For example: \
- User: I’ve been experiencing a persistent headache for the past week. \
- Bot: I’m sorry to hear that. Have you been taking any medication for it? \
- User: Yes, I’ve been taking ibuprofen, but it doesn’t seem to help much. \
- Bot: I see. How often do you take ibuprofen? \
- User: I take it every six hours \
- Bot: I don’t understand. Can you tell me how often you take ibuprofen?
+For example: 
+User: I’ve been experiencing a persistent headache for the past week. 
+Bot: I’m sorry to hear that. Have you been taking any medication for it? 
+User: Yes, I’ve been taking ibuprofen, but it doesn’t seem to help much. 
+Bot: I see. How often do you take ibuprofen? 
+User: I take it every six hours 
+Bot: I don’t understand. Can you tell me how often you take ibuprofen?
 
 The co-reference in the user query should be expanded for NLP to identify the right intent and entities. The co-reference should be expanded as “I take ibuprofen every six hours”.
 
 **Completeness and Co-referencing**: The following example illustrates completeness and co-referencing issues with the user’s input which triggers rephrasing.
 
-For example: \
- User: I want to apply for a personal loan. \
- Bot: Sure, I can help you. You’re eligible to take a personal loan of up to 20,000$. \
- User: How about a Home loan? \
- Bot: You’re eligible to apply for a home loan as well. You can avail up to 100,000$. \
- User: What about the interest rates of both loans?
+For example: 
+User: I want to apply for a personal loan. 
+Bot: Sure, I can help you. You’re eligible to take a personal loan of up to 20,000\$. 
+User: How about a Home loan? 
+Bot: You’re eligible to apply for a home loan as well. You can avail up to 100,000\$. 
+User: What about the interest rates of both loans?
 
 The co-reference and the query have to be completed as “What is the interest rate of personal loan and home loan?
 
