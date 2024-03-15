@@ -166,7 +166,7 @@ When you reset/delete the integration, the system does the following:
 
 !!! note
 
-        This change impacts only the in-development copy of the VA. The changes will apply to the published version when you later publish the VA with NLP configurations.
+    This change impacts only the in-development copy of the VA. The changes will apply to the published version when you later publish the VA with NLP configurations.
 
 
 ### Reset Configured Pre-build LLM Integration
