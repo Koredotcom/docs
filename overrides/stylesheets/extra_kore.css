@@ -165,3 +165,6 @@ kr-grid[type="g2"] kr-grid-desc{
 [data-md-color-scheme=slate] .light-theme-logo{
  display: none !important;
 }
+.md-grid {
+    max-width: initial;
+  }
