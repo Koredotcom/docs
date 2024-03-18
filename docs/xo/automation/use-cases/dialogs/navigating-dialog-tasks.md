@@ -64,12 +64,12 @@ The first page you see here is the list of existing Dialog Tasks. Let us now go 
 
 ### Edit
 
-Click the **Edit** (<img src="../images/navigate-dialog-builder-edit.png">) corresponding to a dialog task opens the [Dialog Builder](#dialog-builder---conversation-design-and-logic-building) wherein you can design the dialog task based on the conversation logic and business requirement. You can add and configure various components and features to build the end-to-end flow of conversation.
+Clicking the **Edit** (<img src="../images/navigate-dialog-builder-edit.png">) corresponding to a dialog task opens the [Dialog Builder](#dialog-builder---conversation-design-and-logic-building) canvas wherein you can design the dialog task based on the conversation logic and business requirement. You can add and configure various components and features to build the end-to-end flow of conversation.
 
 
 ### Clone
 
-There are scenarios where you may need to create two similar dialog tasks with minor differences. You can achieve this with the **Clone** (<img src="../images/navigate-dialog-builder-clone.png">) option available for each task, available on the Dialog Tasks page.
+There are scenarios where you may need to create two similar dialog tasks with minor differences. You can achieve this by cloning dialog tasks using the corresponding **Clone** (<img src="../images/navigate-dialog-builder-clone.png">) option on the Dialog Tasks list.
 
 To clone a dialog task, follow the below steps:
 
