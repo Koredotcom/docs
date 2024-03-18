@@ -641,6 +641,16 @@ To upload utterances in <a href="../import-ml-utterances">ML Utterances Import A
    <td>NA
    </td>
   </tr>
+  <tr>
+   <td><a href="../llm-usage-logs-api">LLM and Generative AI Usage Logs API </a>
+   </td>
+   <td>To fetch the LLM & Generative AI usage logs. 
+   </td>
+   <td>Gen AI and LLM Usage Logs
+   </td>
+   <td>API Scopes > Gen AI and LLM Usage Logs
+   </td>
+  </tr>
 </table>
 
 ## Admin APIs
