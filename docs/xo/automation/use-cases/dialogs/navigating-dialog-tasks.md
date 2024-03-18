@@ -76,10 +76,7 @@ To clone a dialog task, follow the below steps:
 * **Open the VA** in which you want to clone the dialog task.
 * Select the **Automation** option from the left menu.
 * From the left menu, click **USE CASES > Dialogs**.
-* On the Dialog Tasks page, hover over the dialog you want to clone and click the **Clone** icon.  
-  
-    <img src="../images/clone-dialog-icon.png" alt="Clone Dialog" title="Clone Dialog" style="border:1px solid gray; zoom:60%;">
-
+* On the Dialog Tasks page, hover over the dialog you want to clone and click the **Clone** icon.
 * On the **Clone a Dialog** window, enter a name in the **Intent Name** field.
 * Optionally, you can add a **Description**.
 * You can choose whether the cloned dialog will be available to the end customer **(Customer Use Case)** and/or in Agent Assist **(AgentAssist Use Case)**. 
@@ -118,10 +115,7 @@ If you no longer require a specific Dialog Task, you can remove it.
 To delete a Dialog Task:
 
 1. Hover over the task in the Dialog Tasks List.
-2. Click the **Delete** (<img src="../images/navigate-dialog-builder-delete.png">) icon.  
-  
-    <img src="../images/delete-dialog-icon.png" alt="Delete Dialog" title="Delete Dialog" style="border:1px solid gray; zoom:60%;">
-
+2. Click the **Delete** (<img src="../images/navigate-dialog-builder-delete.png">) icon. 
 3. If you are sure that you want to delete this task, then please click **Delete** in the confirmation window. Otherwise, please click **Cancel**.  
   
     <img src="../images/delete-dialog-confirmation.png" alt="Delete Dialog - Confirmation" title="Delete Dialog - Confirmation" style="border:1px solid gray; zoom:60%;">
