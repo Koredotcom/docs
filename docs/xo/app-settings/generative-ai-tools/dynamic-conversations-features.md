@@ -482,8 +482,10 @@ The co-reference in the user query should be expanded for NLP to identify the ri
 **Completeness and Co-referencing**: The following example illustrates completeness and co-referencing issues with the user’s input which triggers rephrasing.
 
 For example: 
-User: I want to apply for a personal loan. 
-Bot: Sure, I can help you. You’re eligible to take a personal loan of up to 20,000\$. 
+User: I want to apply for a personal loan.
+
+Bot: Sure, I can help you. You’re eligible to take a personal loan of up to 20,000\$.
+
 User: How about a Home loan? 
 Bot: You’re eligible to apply for a home loan as well. You can avail up to 100,000\$. 
 User: What about the interest rates of both loans?
