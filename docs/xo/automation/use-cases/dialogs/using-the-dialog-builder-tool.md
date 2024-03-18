@@ -127,7 +127,7 @@ The Dialog Design process occurs in the Conversation Designer. This comes with i
 * Add **Bookmarks** -  You can bookmark frequently visited or crucial content in the canvas with relevant information. The added bookmarks can be seen in the **Bookmarks** tab of the **Index Panel**. They help you to navigate to the bookmarked content without having to search or browse extensively.
     <img src="../images/using-dialog-builder-add-bookmark.gif" alt="Add Bookmark" title="Add Bookmark" style="border:1px solid gray;zoom:70%;">
 
-* Add **Text** - You can add text on any place on the canvas to keep a note of the logic being developed in a sequence or group of sequences, or other relevant nodes about the logic building for future reference.
+* Add **Note** - You can add a note on any place on the canvas to keep a note of the logic being developed in a sequence or group of sequences, or other relevant nodes about the logic building for future reference.
     <img src="../images/using-dialog-builder-add-text.gif" alt="Add Text" title="Add Text" style="border:1px solid gray;zoom:70%;">
 
 * Add **Comment** - In a comment you can tag other users to enhance communication through feedback, suggestions, and discussions on specific elements of the design, or if you need another user to pitch in and help you in the conversation design with their developmental or functional expertise.
@@ -170,7 +170,7 @@ The Index panel consists of a robust set of features within its dialog builder t
 * [Assets](#assets) tab
 * [Nodes](#nodes) tab
 
-You can add, edit, move or delete text, comments or bookmarks as per need. However, please note that deletion cannot be undone
+You can add, edit, move or delete notes, comments or bookmarks as per need. However, please note that deletion cannot be undone
 
 #### Bookmark
 
@@ -280,15 +280,15 @@ You can delete a node by right clicking on it and selecting **Delete** from the 
 	This action cannot be undone. However, the deleted node will still be available in the **Assets** tab of the **Index panel**.
 
 
-#### Text, Comments and Bookmarks
+#### Notes, Comments and Bookmarks
 
-UXO provides features like Text, Comments and Bookmarks to keep notes and establish collaboration between app users.
+UXO provides features like Notes, Comments and Bookmarks to keep notes and establish collaboration between app users.
 
-You can add **Text** in order to make notes, for example, you can place texts on strategic points on the canvas and write down the introduction od the dialog, list of sun-tasks, purpuse of each sub-task on them.
+You can add **Notes** in order to make notes, for example, you can place notes on strategic points on the canvas and write down the introduction of the dialog, list of sub-tasks, purpose of each sub-task on them.
 
 Using **Bookmarks** you can create navigation points in a dialog with complex structure, so that you can quickly navigate to the bookmarked points without having to manually search the entire design. You can mention the specific point of the dialog flow in the bookmarks as easy reference for other users.
 
-<img src="../images/navigate-dialog-builder-text-bookmark.png" alt="Text and Bookmark" title="Text and Bookmark" style="border:1px solid gray;zoom:70%;">
+<img src="../images/navigate-dialog-builder-text-bookmark.png" alt="Notes and Bookmark" title="Notes and Bookmark" style="border:1px solid gray;zoom:70%;">
 
 **Comments** are effective to create collaborative environment. Often, in the course of development, at some point you may need help and inputs from other bot users, for example you need them to pitch in with their knowledge about the business logic or functional expertise, or need clarifications in order to proceed. In such situations you can place a comment wherein you can tag the respective user and mention your need. Note that unlike Text and Bookmarks, you can add your response to a comment.
 
@@ -360,42 +360,6 @@ Clicking on a node will open its Properties panel, which includes specific featu
 
 <img src="../images/using-dialog-builder-img20-asset-properties.png" alt="Node properties" title="Node properties" style="border:1px solid gray;zoom:60%;">
 
-## Node Groups (Planned for Phase 2)
-
-You can group nodes to improve the user experience with follow-ups, digressions, and amending entity values. When including nodes into a group, they need to be located next to each other on the Dialog Builder Canvas.
-
-To create a group of nodes, press and hold the **Ctrl / Command** key on your keyboard, and simultaneously use **your mouse cursor to select** the canvas area where you have located the nodes to be grouped. Once grouped, the nodes will be displayed together on a separate, light yellow background. Below is a quick demo of how to do this.
-
-<p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image26.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image26.gif "image_tooltip")
-
-
-You can rename the group using the **Edit** option next to the name.
-
-<p id="gdcalert27" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image27.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image27.png "image_tooltip")
-
-
-You can delete the group using the **Delete** icon on the right, that becomes visible once you hover over the group.
-
-<p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image28.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image28.png "image_tooltip")
-
-
-If you are using the group to set up a Subintent, you can also configure it, using the **Configure**/ Gear icon, that becomes visible once you hover over the group. For additional information, please see [Grouping Nodes as Subintents](../node-connections/grouping-nodes/){:target="_blank"}.
-
-<p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image29.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image29.png "image_tooltip")
-
-
 ## The ‘More Options’ Menu
 
 The More options menu, accessible at the top right of the Dialog Builder, is where you can find shortcuts to dialog settings, manage interruptions, amend behavior, and view all comments.
@@ -451,11 +415,87 @@ Using **Amend Entity,** you can allow the users to amend entity values and also 
 
 Click here to [learn more.](../../../natural-language/nlu-configurations/amend-entities/#task-level){:target="_blank"}
 
-### View All Comments
+### Manage Groups
 
-Through this option you can view all the [comments](#text-comments-and-bookmarks) added to the current dialog.
+Using this option you can create and manage Node Groups.
 
-<img src="../images/using-dialog-builder-view-all-comments.gif" alt="View all comments" title="View all comments" style="border:1px solid gray;zoom:60%;">
+<img src="../images/using-dialog-builder-img28-manage-ammend-behavior.png" alt="Manage Groups" title="Manage Groups" style="border:1px solid gray;zoom:60%;">
+
+Click here to [learn more.](#node-groups-planned-for-phase-2)
+
+## Node Groups (Planned for Phase 2)
+
+You can group nodes to improve the user experience with follow-ups, digressions, and amending entity values.
+
+To create node groups, follow the below steps:
+
+1. On the Dialog Builder, navigate to **More Options > Manage Groups**
+
+    <img src="../images/using-dialog-builder-manage-groups.png" alt="More Options > Manage Groups" title="More Options > Manage Groups" style="border:1px solid gray; zoom:60%;">
+
+2. Click **Add** in the **My Groups** section.
+
+    <img src="../images/using-dialog-builder-group-add.png" alt="My groups > Add" title="My groups > Add" style="border:1px solid gray; zoom:60%;">
+
+3. Provide a group name.
+
+    <img src="../images/using-dialog-builder-group-name.png" alt="Group Name" title="Group Name" style="border:1px solid gray; zoom:60%;">
+
+4. You can create an empty group by clicking **Save**.
+
+    <img src="../images/using-dialog-builder-empty-group.png" alt="Empty group" title="Empty group" style="border:1px solid gray; zoom:60%;">
+
+    Or, you can add one or more nodes to the group right at the time of group creation. Perform a search for node names and click **Add**.
+
+    <img src="../images/using-dialog-builder-add-nodes-to-group.png" alt="Add nodes to group" title="Add nodes to group" style="border:1px solid gray; zoom:60%;">
+
+You can manage groups by editing the group, adding and removing nodes.
+
+### Edit the Node Group
+
+On Right-clicking on a group name, you get a menu containing **Edit** and **Delete**. 
+
+<img src="../images/using-dialog-builder-edit-group.png" alt="Edit group" title="Edit group" style="border:1px solid gray; zoom:60%;">
+
+On clicking **Edit**, you can edit the name of the node group, as well as add or remove nodes. And finally, save the changes.
+
+<img src="../images/using-dialog-builder-edit-name-nodes.png" alt="Edit group name and nodes" title="Edit group name and nodes" style="border:1px solid gray; zoom:60%;">
+
+On clicking **Delete** you get a popup warning; the group will get deleted if you click on **Confirm**.
+
+<img src="../images/using-dialog-builder-delete-group.png" alt="Delete group" title="Delete group" style="border:1px solid gray; zoom:60%;">
+
+!!! warning
+
+    You cannot undo deletion.
+
+### Add node to a group
+
+Follow the below steps to add a node to an existing group:
+
+1. In the **Manage Group** panel, click the group name to which you want to add the node, and then the **Nodes** icon. The list of nodes within the group appears with a search field.
+
+    <img src="../images/using-dialog-builder-add-node-search.png" alt="Search node to add" title="Search node to add" style="border:1px solid gray;zoom:70%;">
+
+2. Out of the nodes that appear as search results, you can select one or more nodes by checking the corresponding check boxes, and then click **Add** to add them to the group.
+
+    <img src="../images/using-dialog-builder-group-select-add-node.png" alt="Select nodes and add" title="Select nodes and add" style="border:1px solid gray;zoom:70%;">
+
+### Delete node
+
+You can hover on a node to get the **Delete** option. Please note, once deleted, the node will no longer be a part of the group, however you can add it again.
+
+### Subintent
+
+If you are using the group to set up a Subintent, you can do so, by navigating to the required node group and then clicking the **Intents** button. For additional information, please see [Grouping Nodes as Subintents](../node-connections/grouping-nodes/){:target="_blank"}.
+
+<img src="../images/using-dialog-builder-group-sub-intents.png" alt="Node groups - Sub intents" title="Node groups - Sub intents" style="border:1px solid gray;zoom:60%;">
+
+~~### View All Comments~~
+
+~~Through this option you can view all the [comments](#text-comments-and-bookmarks) added to the current dialog.~~
+
+~~<img src="../images/using-dialog-builder-view-all-comments.gif" alt="View all comments" title="View all comments" style="border:1px solid gray;zoom:60%;">~~
 
 
 ## Migrating XO bot into UXO app
@@ -466,10 +506,10 @@ In XO, the dialogs are created by placing the nodes one after one in the logical
 
 When you import an XO bot into UXO app, the dialogs will get created in the below logic:
 
-* Dialogs having no conditional flow will have all the nodes within a single dialog. If you want to, you can split the dialog into multiple sequences.
+* Dialogs having no conditional flow will have all the nodes within a single sequence. If you want to, you can split that sequence into multiple sequences.
 
     **--------------------------------------SCREENSHOT---------------------------------------**
 
-* If a dialog has conditional flows, then the flow will be split into two or more paths depending on the outcome of the consition. In other words, if there are 3 different outcomes of a condition, then the flow will have 3 sequences coming out of the **Transition** that has the condition.
+* If a dialog has conditional flows, then the flow will be split into two or more paths depending on the outcome of the condition. In other words, if there are 3 different outcomes of a condition, then the flow will have 3 sequences coming out of the **Transition** that has the condition.
 
     **--------------------------------------SCREENSHOT---------------------------------------**

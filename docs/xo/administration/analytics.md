@@ -6,14 +6,12 @@ The following illustration shows an example of the **Analytics** module with the
 
 <img src="../images/analytics-img1.png" alt="Analytics - Audit Reports" title="Analytics - Audit Reports" style="border: 1px solid gray;zoom:70%;"/>
 
-
 ## Viewing System and User Events
 
 On the **Audit Report** page in the Kore.ai Bots Admin Console in the **Analytics** module, you can view the Kore.ai system and user-generated events. For example, a system-generated event could be a periodic Microsoft® Active Directory® Sync. An example of a user-generated event could be the addition of a new user.
 Post the release of v8.1, the changes triggered by using Public APIs is also captured. For example import of roles using API etc.
 
 Using the filters on the **Audit Report** page you can select event categories, events, and time periods to drill-down and filter events as needed. Kore.ai audit reports also list error messages that can help you to troubleshoot system issues or when you create a Kore.ai service request.
-
 
 ### Using the Search Field
 
@@ -25,7 +23,6 @@ The list of entries in an admin console table can be very large depending on the
 
 To view all entries, clear the search field, and then press the **Enter** key.
 
-
 ### Filter Options
 
 You can narrow the list of events by date range, user/app, category, and name.
@@ -34,7 +31,7 @@ You can narrow the list of events by date range, user/app, category, and name.
 
 * past 24 hours – default selection;
 * past 7 days; or
-* Custom range by selecting the start and end dates. The Platform stores only the latest six months of data, and you can apply the date filter only for this date range.
+* Custom range by selecting the start and end dates.
 
 **Event Filter** can be set by clicking the Filters button and then setting:
 
@@ -44,11 +41,9 @@ You can narrow the list of events by date range, user/app, category, and name.
 
 <img src="../images/analytics-img2.png" alt="Event filter options" title="Event filter options" style="border: 1px solid gray;zoom:70%;"/>
 
-
 ### Export Options
 
 * The **export** icon can be used to Export the audit reports in CSV format.
-
 
 ### Record Details
 
@@ -62,7 +57,6 @@ By clicking on any entry you get to view further details pertaining as seen belo
 !!! Note
 
         The Audit Report contains system and user events for several Kore.ai products. To drill down further than Event Categories, use the Search for Description field, which lets you add one more criterion to the filter. To get XO Platform data, search for "Bot Builder" exactly; the Search field is case-sensitive. For more complex filtering, we recommend exporting the report and using a spreadsheet editor.
-
 
 ### Audit Report Details
 
@@ -365,8 +359,6 @@ The audit report is categorized by event category and event name. The following 
   </tr>
 </table>
 
-
-
 ## Viewing Chat History
 
 You can view Chat History for all deployed bots from the **Analytics > Bot Chat History** section of the Kore.ai Bots Admin Console.
@@ -375,13 +367,11 @@ You can view Chat History for all deployed bots from the **Analytics > Bot Chat 
 
 Click a specific chat to display the chat conversation or history. You can jump to the specific user’s previous and next conversation sessions if available.
 
-
 ### Bot Chat History Page Columns
 
 To sort the list of column values, click the **Arrow Up** <img src="../images/analytics-img6.png">icon or **Arrow Down** <img src="../images/analytics-img7.png">icon to the right of a column name.
 
 The following list describes the columns displayed in the admin console table.
-
 
 <table border="1">
   <tr>
@@ -435,17 +425,13 @@ The following list describes the columns displayed in the admin console table.
   </tr>
 </table>
 
-
-
 ### About the Action Bar
 
 This section describes the controls on the **Action** bar on the **Chat History** page.
 
-
 ##### Using the Time Zone Field
 
 The time against the chat history would be displayed in the **Time Zone** selected. By default, it is set to _Local_. You can change it using the **Change** link and then selecting the appropriate zone.
-
 
 ##### Using the Search Field
 
@@ -464,8 +450,7 @@ Set the duration for which the Chat History needs to be retrieved:
 
 * 7 Days.
 * 24 hours – default setting.
-* Custom – Select the start and end dates. The Platform stores only the latest six months of data, and you can apply this filter only for this date range.
-
+* Custom – Select the start and end dates.
 
 ##### Export
 

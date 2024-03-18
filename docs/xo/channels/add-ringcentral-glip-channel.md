@@ -81,6 +81,7 @@ To enable Glip as a channel for your Kore.ai Virtual Assistant, you must create 
         !!! note
 
              The OAuth Redirect URI now includes the streamid in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
+
     * Select **_Yes_** for **Issue refresh tokens?**
 
 10. In the Security panel, to define the permissions to associate with the app, follow the steps below:
@@ -101,7 +102,7 @@ If you do not have a **Sandbox Account** to test your app in the Sandbox environ
 
 !!! tip
 
-         The OAuth Redirect URI now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
+        The OAuth Redirect URI now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
 
 
 
@@ -141,20 +142,20 @@ The virtual assistant on the Kore.ai XO Platform must be associated with the ext
 <img src="../images/ringcentral_glip13.png" alt="unassigned extension" title="unassigned extension" style="border: 1px solid gray; zoom:70%;">
 8. On the **user profile information** page, enter all the required information.
 
-!!! note
+    !!! note
 
-    Please provide a meaningful name like _Travel Bot_ or _HR Assistant_ to the virtual assistant inside **Teams Messaging**.
+        Please provide a meaningful name like _Travel Bot_ or _HR Assistant_ to the virtual assistant inside **Teams Messaging**.
 
 9. Click **Save & Enable** to enable the extension.
 
 
 
 
-!!! note
+    !!! note
 
-    If you receive an account activation email on your registered email address, please note the username and password to authorize the virtual assistant on the Kore.ai XO Platform.
+        If you receive an account activation email on your registered email address, please note the username and password to authorize the virtual assistant on the Kore.ai XO Platform.
 
-    Alternatively, select the “pre-assigned credentials” option and just provide/save the password.
+        Alternatively, select the “pre-assigned credentials” option and just provide/save the password.
 
 
 ### Step 3(a): Test the Validation
@@ -177,15 +178,14 @@ On the Kore.ai XO Platform, navigate to **RingCentral Glip** > **Configurations*
 1. In the **RingCentral Glip** window, click the **Authorize** button.
 <img src="../images/ringcentral_glip15.png" alt="authorize app" title="authorize app" style="border: 1px solid gray; zoom:70%;">
 
-2. In the **Sign-in** window, click **Continue as** to sign in with the existing user’s account, or click **Use Another Account**.
-<img src="../images/ringcentral_glip16.png" alt="use another account" title="use another account" style="border: 1px solid gray; zoom:70%; ">
+2. In the **Sign-in** window, click **Continue as** to sign in with the existing user’s account, or click **Use Another Account**.  <img src="../images/ringcentral_glip16.png" alt="use another account" title="use another account" style="border: 1px solid gray; zoom:70%; ">
 
 3. Click **Authorize** on the **Access Request** page.
 4. Once the access token is obtained successfully, authorization is complete.
 <img src="../images/ringcentral_glip17.png" alt="access request" title="access request" style="border: 1px solid gray; ">
+
 5. On the Kore.ai XO Platform, select **_Yes_** for the **Enable Channel** option under the **RingCentral Glip** > **Configurations** tab.
 6. Click **Save** to enable the channel and Publish the Virtual Assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
-
 <img src="../images/ringcentral_glip18.png" alt="enable ringcentral" title="enable ringcentral" style="border: 1px solid gray; zoom:70%;">
 
 ## Step 4: Test the Integration

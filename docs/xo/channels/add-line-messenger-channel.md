@@ -42,8 +42,7 @@ To add the LINE channel to your Kore.ai bot, you must set up a webhook integrati
 4. Go to the XO Platform and select the assistant that you want to add the LINE channel to.
 5. Go to **Channels & Flows** > **Channels** > **Digital** > **All** > **LINE** > **Configuration**.
 6. Enter the **Channel User** ID and **Channel Secret**, retrieved from LINE.
-7. Under Enable Channel, select Yes and click Save to enable the LINE Channel for your assistant.
-<img src="../images/line3.png" alt="deploy line channel" title="deploy line channel" style="border: 1px solid gray; zoom:70%;">
+7. Under Enable Channel, select Yes and click Save to enable the LINE Channel for your assistant.  <img src="../images/line3.png" alt="deploy line channel" title="deploy line channel" style="border: 1px solid gray; zoom:70%;">
 
 
 

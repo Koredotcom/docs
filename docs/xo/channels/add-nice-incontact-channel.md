@@ -11,7 +11,7 @@ The Nice inContact as a Channel supports two chat interaction modes, **DFO** and
 
 The **Legacy Chat** supports only plain text messages. Digital forms and rich text elements like message formatting, templates, and links are not supported.
 
-Select the chat interaction mode on the **Deploy > Channels > Nice inContact > Instructions** tab.
+Select the chat interaction mode on the **Channels & Flows** > **Channels** > **Digital** > **All** > **Nice inContact** > **Instructions** tab.
 By default, DFO is selected.
 
 <img src="../images/nice-in-contact-img1.png" alt="Instructions tab" title="Instructions tab" style="border: 1px solid gray; zoom:60%;">
@@ -33,7 +33,7 @@ Perform the following steps to enable Nice inContact as a channel, download the 
 
 
 
-1. Login to the Platform and navigate to **Deploy > Channels > Nice inContact > Configurations**.  
+1. Login to the Platform and navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **Nice inContact** > **Configurations**.  
 <img src="../images/nice-in-contact-img2.png" alt="Configurations" title="Configurations" style="border: 1px solid gray; zoom:60%;">
 
 2. On the Configurations tab, Click **Download File** to download the Studio Script.
@@ -43,7 +43,7 @@ Perform the following steps to enable Nice inContact as a channel, download the 
         * The downloaded studio script varies based on the selected chat mode. The Scripts are not interchangeable between Legacy Chat and DFO modes.
         * Avoid altering the downloaded script; it could affect the channel’s communication ability.
 
-3. Select an application from the dropdown list to view the Client ID and other fields. If an application is not available, Click **Create App** to create it. For more information, see the [Add Web/Mobile Client Channel](./add-web-mobile-client){:target="_blank"}.  
+3. Select an application from the dropdown list to view the Client ID and other fields. If an application is not available, Click **Create App** to create it. For more information, see the [Add Web/Mobile Client Channel](./add-web-mobile-client).  
 <img src="../images/nice-in-contact-img3.png" alt="Nice InContact Configurations" title="Nice InContact Configurations" style="border: 1px solid gray; zoom:60%;">
 
 4. In the Enable channel, select **Yes** and then click **Save**. The configuration saved success message is displayed.  
@@ -86,7 +86,7 @@ Steps to configure the Nice inContact as a channel – **Legacy Chat**:
 1. In the Nice Studio, click **File > Import from File**.  
 <img src="../images/nice-in-contact-img7.png" alt="File - Import from File" title="File - Import from File" style="border: 1px solid gray; zoom:60%;">
 
-2. Select the Studio Script downloaded from the XO platform and then click **Open**. For example, **Chat_Script.XML.**  
+2. Select the Studio Script downloaded from the XO platform and then click **Open**. For example, **Chat_Script.XML**.  
 <img src="../images/nice-in-contact-img8.png" alt="Open Studio Script file" title="Open Studio Script file" style="border: 1px solid gray; zoom:60%;">
 
 3. In the displayed script, double-click either of the **Text Box Exchange**; For example, in the Chat_Script, double-click Textbot Exchange.  
@@ -133,7 +133,7 @@ Steps to configure the Nice inContact as a channel – **Legacy Chat**:
 
 To Interact with the Virtual Assistant in Nice Channel, create a chat POC.
 
-1. Log into the [Nice CXone](https://na1.nice-incontact.com/login/#/logout?autoLogout=true){:target="_blank"} Portal.
+1. Log into the [Nice CXone](https://na1.nice-incontact.com/login/#/logout?autoLogout=true) Portal.
 2. Click the **Applications** icon in the top left corner. Under **Omnichannel Routing**, click **ACD**.  
 <img src="../images/nice-in-contact-img20.png" alt="Omnichannel Routing - ACD" title="Omnichannel routing - ACD" style="border: 1px solid gray; zoom:60%;">
 
@@ -152,7 +152,7 @@ To Interact with the Virtual Assistant in Nice Channel, create a chat POC.
 
 ### Step 4 (for DFO): Create the Digital Routing Queue for the Agent Transfer
 
-1. Log into the [Nice CXone](https://na1.nice-incontact.com/login/#/logout?autoLogout=true){:target="_blank"} Portal.
+1. Log into the [Nice CXone](https://na1.nice-incontact.com/login/#/logout?autoLogout=true) Portal.
 2. In the left-side vertical menu, under **DFO**, click **Routing Queues**. All the available queues are displayed.  
 <img src="../images/nice-in-contact-img25.png" alt="Queues" title="Queues" style="border: 1px solid gray; zoom:60%;">
 
@@ -195,7 +195,7 @@ To interact with the Virtual Assistant in the Nice InChannel, the developer must
 
 1. Create a Campaign.  
 
-    1. Log into the [Nice CXone](https://na1.nice-incontact.com/login/#/logout?autoLogout=true){:target="_blank"} Portal. In the **Applications** menu in the top left corner, under **Omnichannel Routing**, click **ACD** (Automatic Call Distribution).  
+    1. Log into the [Nice CXone](https://na1.nice-incontact.com/login/#/logout?autoLogout=true) Portal. In the **Applications** menu in the top left corner, under **Omnichannel Routing**, click **ACD** (Automatic Call Distribution).  
     <img src="../images/nice-in-contact-img33.png" alt="Omnichannel routing - ACD" title="Omnichannel routing - ACD" style="border: 1px solid gray; zoom:60%;">
 
     2. In the left-side vertical menu, click **Contact Settings** and then click **Campaigns.** The Campaigns page is displayed.
