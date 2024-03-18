@@ -16,7 +16,7 @@ theme:
     - navigation.path
     - navigation.footer    
     - search.suggest
-    - search.highlight
+    - search.highlight    
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
