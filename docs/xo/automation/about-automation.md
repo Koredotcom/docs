@@ -14,6 +14,12 @@ The Automation module offers AI-powered sophisticated tools for creating virtual
         <a href="">Learn More</a>
     </kr-grid-item>
     <kr-grid-item>
+        <img src="../images/lm-knowledge-graph.svg" style="zoom:200%;"></img>
+        <kr-grid-title>Knowledge AI</kr-grid-title>
+        <kr-grid-desc>Extract or add FAQs to build the Virtual Assistant's knowledge base. Build an ontology structure or leverage LLM and Generative AI to simplify knowledge organization, maintenance, and training.</kr-grid-desc>
+        <a href="">Learn More</a>
+    </kr-grid-item>
+    <kr-grid-item>
         <img src="../images/xop-sm-nl.svg" style="zoom:200%;"></img>
         <kr-grid-title>Natural Language</kr-grid-title>
         <kr-grid-desc>Leverage the Platform’s NLP capabilities to train and optimize your automation workflows to handle complex use cases. Use Cases are fundamental building blocks for automation.</kr-grid-desc>
