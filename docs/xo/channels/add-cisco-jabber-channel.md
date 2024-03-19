@@ -26,6 +26,7 @@ To learn more about working with Channels within the Kore.ai XO Platform, please
 
 Following are code snippets of the payload formats for verifying the integration.
 
+[channels](adding-channels-to-your-bot.md)
 
 ## Payload for Post URL
 
