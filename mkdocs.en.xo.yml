@@ -187,6 +187,19 @@ nav:
         - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
         - Digital Views: automation/use-cases/digital-skills/digital-views.md
         - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md      
+    - Knowledge AI:
+        - Overview: answers/knowledge-ai/knowledge-ai-introduction.md
+        - Knowledge Graph (KG):
+          - Introduction: answers/knowledge-ai/knowledge-graph-overview.md
+          - Terminology: answers/knowledge-ai/knowledge-graph-terminology.md
+          - Build a KG: answers/knowledge-ai/build-a-knowledge-graph.md
+          - Manage FAQs: answers/knowledge-ai/manage-faqs.md
+          - Knowledge Extraction: answers/knowledge-ai/knowledge-extraction.md
+          - Import or Export KG:
+            - Prepare Data for Import: answers/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
+            - Import or Export KG: answers/knowledge-ai/import-and-export-knowledge-graph.md
+            - Auto-Generate KG: answers/knowledge-ai/generate-a-knowledge-graph.md
+          - KG Analysis: answers/knowledge-ai/knowledge-graph-analysis.md    
     - Natural Language:
       - Overview: automation/natural-language/nlp-introduction.md
       - NLP Optimization: automation/natural-language/training/optimizing-bots.md
@@ -313,20 +326,7 @@ nav:
       - Migrate External Bots:
         - Google DialogFlow Bot: how-tos/migrate-external-bots/google-dialogflow-bot.md              
   - Answers:
-    - Overview: answers/about-answers.md 
-    - Knowledge AI:
-        - Overview: answers/knowledge-ai/knowledge-ai-introduction.md
-        - Knowledge Graph (KG):
-          - Introduction: answers/knowledge-ai/knowledge-graph-overview.md
-          - Terminology: answers/knowledge-ai/knowledge-graph-terminology.md
-          - Build a KG: answers/knowledge-ai/build-a-knowledge-graph.md
-          - Manage FAQs: answers/knowledge-ai/manage-faqs.md
-          - Knowledge Extraction: answers/knowledge-ai/knowledge-extraction.md
-          - Import or Export KG:
-            - Prepare Data for Import: answers/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
-            - Import or Export KG: answers/knowledge-ai/import-and-export-knowledge-graph.md
-            - Auto-Generate KG: answers/knowledge-ai/generate-a-knowledge-graph.md
-          - KG Analysis: answers/knowledge-ai/knowledge-graph-analysis.md       
+    - Overview: answers/about-answers.md        
     - Content:
       - Sources:
         - Overview: answers/content-sources/introduction.md 
