@@ -14,9 +14,9 @@ theme:
     - navigation.sections
     - navigation.top
     - navigation.path
-    - navigation.footer
+    - navigation.footer    
     - search.suggest
-    - search.highlight
+    - search.highlight    
     - content.tabs.link
     - content.code.annotation
     - content.code.copy

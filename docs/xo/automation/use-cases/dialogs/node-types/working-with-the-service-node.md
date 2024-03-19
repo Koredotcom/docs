@@ -69,7 +69,7 @@ To configure the Component Properties tab, please follow the steps below:
     5. [Defining Data Service](#define-a-data-service)
   
 10. Under **Advanced Controls**, select the maximum wait time for the **Timeout** for service node calls and decide how the bot can respond or choose an alternate path when timeout occurs. You can configure the following settings:
-    1. **Timeout(Seconds)**: Select the maximum wait time from the drop-down list. The timeout range can be any value between _1 Second_ to _20 Seconds_. The default value is _5 Seconds_.
+    1. **Timeout(Seconds)**: Select the maximum wait time from the dropdown list. The timeout range can be any value between **1 Second** to **20 Seconds** for *Standard* accounts, and between **1 Second** to **30 Seconds** for *Enterprise accounts*. The default value is 5 Seconds.
     2. **Timeout error handling**: Choose how the bot should respond when the timeout occurs.
         * **Close the Task and trigger Task Execution Failure Event**, or
         * **Continue with the task and transition to this node**; select the node to which the service call can transition in the flow.
