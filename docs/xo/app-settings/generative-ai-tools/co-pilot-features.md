@@ -14,7 +14,7 @@ Steps to enable the feature:
 
 
 
-1. Navigate to **Build** > **Natural Language** > **Generative AI & LLM** > **Co-Pilot**.
+1. Navigate to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
 2. Select the preferred model from the **Model** drop-down menu for a feature. 
 
 
@@ -60,12 +60,12 @@ Follow these steps:
 
 
 
-1. Go to **Build** > **Natural Language** > **Generative AI & LLM** > **Co-Pilot** or **Dynamic Conversation**.
+1. Go to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
 2. Hover over the feature to view the **Advance Setting** (gear) icon. 
 
     ![alt_text](images/cpf(3).png "image_tooltip" )
 
-3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed. 
+3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed.  
     ![alt_text](images/cpf(2).png )
 
 Adjusting the settings allows you to fine-tune the model’s behavior to meet your needs. The default settings work fine for most cases. You can tweak the settings and find the right balance for your use case. A few settings are common in the features, and a few are feature-specific:
@@ -97,7 +97,7 @@ Follow these steps:
 
 
 
-1. Go to **Build** > **Natural Language** > **Generative AI & LLM** >  **Co-Pilot**.
+1. Go to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
 2. Hover over the feature to view the **Setting** (gear) icon. 
 
     ![alt_text](images/cpf(4).png "image_tooltip")
@@ -139,6 +139,30 @@ The following table displays the Co-Pilot features and the supported models.
 (✅ Supported | ❌ Not supported)
 
 
+<!-----
+
+
+
+Conversion time: 0.888 seconds.
+
+
+Using this Markdown file:
+
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β35
+* Fri Mar 15 2024 02:07:12 GMT-0700 (PDT)
+* Source doc: Test Migration
+* Tables are currently converted to HTML tables.
+----->
+
+
+
 <table>
   <tr>
    <td><strong>Model/Feature</strong>
@@ -146,6 +170,8 @@ The following table displays the Co-Pilot features and the supported models.
    <td>Automatic Dialog Generation
    </td>
    <td>Conversation Test Case Suggestions
+   </td>
+   <td>Conversation Summary
    </td>
    <td>NLP Batch Test Case Suggestions
    </td>
@@ -159,6 +185,8 @@ The following table displays the Co-Pilot features and the supported models.
    </td>
    <td>✅
    </td>
+   <td>❌
+   </td>
    <td>✅
    </td>
    <td>✅
@@ -170,6 +198,8 @@ The following table displays the Co-Pilot features and the supported models.
    <td>✅
    </td>
    <td>✅
+   </td>
+   <td>❌
    </td>
    <td>✅
    </td>
@@ -183,6 +213,8 @@ The following table displays the Co-Pilot features and the supported models.
    </td>
    <td>✅
    </td>
+   <td>❌
+   </td>
    <td>✅
    </td>
    <td>✅
@@ -194,6 +226,8 @@ The following table displays the Co-Pilot features and the supported models.
    <td>✅
    </td>
    <td>✅
+   </td>
+   <td>❌
    </td>
    <td>✅
    </td>
@@ -207,6 +241,8 @@ The following table displays the Co-Pilot features and the supported models.
    </td>
    <td>✅
    </td>
+   <td>❌
+   </td>
    <td>✅
    </td>
    <td>✅
@@ -218,6 +254,8 @@ The following table displays the Co-Pilot features and the supported models.
    <td>✅
    </td>
    <td>✅
+   </td>
+   <td>❌
    </td>
    <td>✅
    </td>
@@ -235,13 +273,32 @@ The following table displays the Co-Pilot features and the supported models.
    </td>
    <td>✅
    </td>
+   <td>✅
+   </td>
+  </tr>
+  <tr>
+   <td>Kore.ai XO GPT
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>✅
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
   </tr>
 </table>
+
+
 
 
 !!! note
 
     Azure OpenAI and OpenAI have officially ended support for their GPT-3 model on January 4, 2024. We recommend selecting a higher or alternate model for supported features as soon as possible.[ Learn more](https://platform.openai.com/docs/deprecations).
+
 
 
 ## Feature Details
@@ -330,6 +387,39 @@ This feature also helps you predict and simulate the end user’s behavior and c
     * Create a Test Suite after stopping the recording and validating the model.
 
 If the feature is disabled, the Platform doesn’t display the Generative AI suggestions icon and the suggestions themselves.[ Learn more.](https://developer.kore.ai/docs/bots/test-your-bot/create-a-test-suite/#Generated_User_Response_Suggestions)
+
+
+### Conversation Summarization
+
+This feature generates concise, natural language summaries of interactions between the virtual assistant, users, and human agents. It distills the key intents, entities, decisions, and outcomes into an easy-to-read synopsis. Companies can leverage conversation summarization to boost agent productivity, ensure process compliance, and create better contextual recommendations – without having to read lengthy transaction histories. It is pre-integrated with Kore.ai’s Contact Center platform. It is also extensible to third-party applications via API integration.
+!!! note
+
+    For existing bots, by default, the feature is enabled with the Kore.ai XO GPT Model. For new bots, the feature is disabled.
+
+This feature is broadly implemented in two scenarios discussed below:
+
+**Scenario 1**
+
+In a contact center environment, the customer interacting with a VA may request to transfer to a live agent. During agent handoff, the agent must have the necessary context information and interaction history to assist the customers efficiently. The system generates the conversation transcript and interaction summary and routes it to the agent for better understanding.
+
+An example of the usage: When Conversation Summary is enabled and the conversation is transferred to an agent in SmartAssist, the Conversation Summary is displayed on the Agent Console, as shown in the screenshot below.
+
+![alt_text](images/conversation-summary.png "image_tooltip")
+
+
+**Usage**
+
+The[ Conversation Summary](https://developer.kore.ai/docs/bots/api-guide/conversation-summary-api/#:~:text=The%20API%20summarizes%20the%20conversation,an%20auto%2Dgenerated%20conversation%20summary.) public API fetches the summary of the entire conversation included in the transcript. LLM and Generative AI are leveraged to provide a concise and informative conversation summary from the transcript.
+
+**Scenario 2**
+
+When closing a conversation request, contact centers require an agent to summarize the customer interaction and context in their closing notes to confirm that the issue has been resolved effectively. Closing notes help document the interactions, provide context for future interactions, support quality assurance efforts, and serve as references to deliver effective customer service.
+
+**Usage** 
+
+The system uses the[ Conversation Summary](https://developer.kore.ai/docs/bots/api-guide/conversation-summary-api/#:~:text=The%20API%20summarizes%20the%20conversation,an%20auto%2Dgenerated%20conversation%20summary.) public API to fetch the details of the entire conversation between the customer and the VA or agent. The API uses the Flan-T5 foundational model to summarize conversations using a large number of sample conversation transcripts.
+
+		
 
 
 ### NLP Batch Test Cases Suggestions
@@ -436,24 +526,3 @@ LLM and Generative AI help generate accurate suggestions automatically without c
 If you select Create without use cases when creating a bot, the system won’t provide use case suggestions for VA creation. Only the default Dialogs for Welcome and Fallback tasks are created for the VA.[ Learn more](https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/#Create_a_Standard_Virtual_Assistant).
 
 
-### Conversation Summarization
-
-Conversation Summarization is used to summarize a customer’s interaction with a VA. This feature is broadly implemented in two scenarios discussed below:
-
-**Scenario 1**
-
-In a contact center environment, the customer interacting with a VA may request to transfer to a live agent. During agent handoff, the agent must have the necessary context information and interaction history to assist the customers efficiently. The system generates the conversation transcript and interaction summary and routes it to the agent for better understanding.
-
-**Usage**
-
-The[ Conversation Summary](https://developer.kore.ai/docs/bots/api-guide/conversation-summary-api/#:~:text=The%20API%20summarizes%20the%20conversation,an%20auto%2Dgenerated%20conversation%20summary.) public API fetches the summary of the entire conversation included in the transcript. LLM and Generative AI are leveraged to provide a concise and informative conversation summary from the transcript.
-
-**Scenario 2**
-
-When closing a conversation request, contact centers require an agent to summarize the customer interaction and context in their closing notes to confirm that the issue has been resolved effectively. Closing notes help document the interactions, provide context for future interactions, support quality assurance efforts, and serve as references to deliver effective customer service.
-
-**Usage** 
-
-The system uses the[ Conversation Summary](https://developer.kore.ai/docs/bots/api-guide/conversation-summary-api/#:~:text=The%20API%20summarizes%20the%20conversation,an%20auto%2Dgenerated%20conversation%20summary.) public API to fetch the details of the entire conversation between the customer and the VA or agent. The API uses the Flan-T5 foundational model to summarize conversations using a large number of sample conversation transcripts.
-
-		

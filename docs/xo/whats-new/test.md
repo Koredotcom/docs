@@ -3,6 +3,8 @@ hide:
   - toc
 ---
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/bc3c1090458b4883ac58258ed3bba9a8?sid=dd93ecea-d587-4b74-8587-89339ac7e1b9" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 <details>
     <summary>Q&A_1</summary>
     <p>Q&A_1_content</p>

@@ -51,14 +51,15 @@ In the case of Entity and Confirmation nodes, you refer to Prompts whereas, for 
     4. You can use one of of the several available templates to create/edit your message:
         * [**Text**](#plain-text-prompts) - Plain textual message. This template is selected by default.
         * [**Buttons**](#button-prompts) (Not available for Message node) - You can use this template if you want to let the user choose from multiple options. For example, in a Banking app, your prompt can have buttons with captions **Deposit**, **Withdrawl**, **Apply for Credit Card**, **Money Transfer** etc that can be configured to trigger the corresponding task.
-        * **Quick Reply** (Not available for Message node) - You can use this prompt for quick reply, i.e. a limited option of replies. For example, in a prompt that asks user whether they need any more help, you can have quick reply with options **Yes** and **No**.
+        * [**Quick Reply**](#quick-reply-template) (Not available for Message node) - You can use this prompt for quick reply, i.e. a limited option of replies. For example, in a prompt that asks user whether they need any more help, you can have quick reply with options **Yes** and **No**.
         * [**Custom JavaScript**](#javascript-prompts-or-responses) - To compose a JavaScript code.
 
         <img src="../images/prompt-editor-select-template.png" alt="Select template" title="Select template" style="border:1px solid gray;zoom:70%;">
 
         !!! Note
 
-            You can use stored context variables with {{variable brackets}}. For example, ‘Hello {{context.session.UserContext.firstName}}. How can I help you?’
+            * Button and Quick Reply templates are not available for every channel.
+            * You can use stored context variables with {{variable brackets}}. For example, ‘Hello {{context.session.UserContext.firstName}}. How can I help you?’
 
     5. You can format the prompt message using the formatting options for **Text** messages.
 
@@ -229,7 +230,7 @@ In cases where you wish to provide the user a limited number of distinct choices
 
 For example, a typical Banking app can perform tasks pertaining only to banking, like opening an account, issue credit card, money transfer etc. In such cases Button template is appropriate.
 
-You need to select the Button template, and then add button titles and a corresponding value that would be sent to the engine on click of the button.
+You need to select the Button template, add a **Description** (mandatory), i.e. the text you want to appear before the quick reply buttons, and then add button titles and a corresponding value that would be sent to the engine on click of the button.
 
 Here are the steps to create a prompt using Button template:
 
@@ -245,7 +246,17 @@ This is how it looks at runtime:
 
 ## Quick Reply template
 
+Often, you may wish to provide options for user to **Quick Reply**, like Yes/No, True/False, etc. In such cases you can create prompts using Quick Reply template.
 
+You need to choose the Quick Reply template, add a **Description** (mandatory), i.e. the text you want to appear before the quick reply buttons, and then add the quick reply item titles and values.
+
+This is how you can create a quick reply prompt:
+
+<img src="../images/prompt-editor-quick-response.gif" alt="Quick Reply prompt creation" title="Quick Reply prompt creation" style="border:1px solid gray;zoom:70%;">
+
+This is how it looks at runtime:
+
+<img src="../images/prompt-editor-quick-reply-prompt-runtime.png" alt="Quick Reply prompt at Runtime" title="Quick Reply prompt at Runtime" style="border:1px solid gray;zoom:70%;">
 
 ## JavaScript Prompts or Responses
 
@@ -296,54 +307,17 @@ print("Visibility: " + context.humidity+"\n");
 print("Humidity: " + context.visibility+"\n");
 ```
 
-
 For more information, see [Using Session and Context Variables in Tasks](../../using-session-and-context-variables){:target="_blank"}.
-
-
-### Customize JavaScript Responses
-
-JavaScript will not have any list of templates displayed (see the following screenshot), because one template/JSON may not work for ‘All’ channels.
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image7.png "image_tooltip")
-
-
-**Key Points**
-
-* If JavaScript template is used for an ‘_All channel_’ response, the template will be shown as is in JSON format and may not render correctly on the channel. You need to choose a channel-specific template for rendering a specific template for your channel.
-* If any channel-specific override is present, the platform will use that over the _‘All channel’_ response while responding on that specific channel. For example, if you have a specific message or template for MS Teams, the bot prefers that specific template while responding to a user over the MS Teams channel instead of the ‘All channel’ response.
-* You can have more than one response configured for a channel. The bot randomly chooses if more than one response is configured for any given channel. This holds true for all-channel responses too if no other channel-specific responses are configured.
-
-If your bot has multiple channels, most probably each channel has its own template.
-
-For a few channel options in the **Channel** drop-down, you can see a list of templates displayed for **JavaScript** response. For example, select the **Web/Mobile Client** channel and choose any template from the **Channel Templates** list for your response as illustrated below.
-
-
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image8.png "image_tooltip")
-
-For more information on templates, see [Widget SDK – Message Formatting and Templates](../../../../sdk/widget-sdk-message-formatting-and-templates/){:target="_blank"}.
-
-The same message configuration rules and principles apply while configuring any entity prompt or KG responses too.
-
-!!! Note
-
-    The channel template options are different for each channel. The template definitions provided in the platform are only for reference purposes. Please refer to the documentation of the channel provider to obtain the latest template definitions.
-
-
-## Preview the Prompt or Response
-
-On the **Preview** tab, you can view a sample of the rendered output message that is displayed to the end-user with markup. To render the output for the code involving context variables, define them to use the **Key** and **Value** boxes in the tab to render a valid sample output for preview.
-
 
 ## Channel-Specific User Prompts
 
 By default, the Dialog Tasks configures the standard user prompts for all channels. However, you can define a specific response for one or more channels to display to the end-user in that channel instead of the **Default** response.
-To define a channel-specific response, select a channel, for example, **Kore.ai**, and then define the user prompt on the **Advanced** tab as needed. Only one response can be defined for each channel.
+To define a channel-specific response, select the **Custom JavaScript** template, select a channel, for example, **Kore.ai**, and then define the user prompt as needed. Only one response can be defined for each channel.
+
+While configuring prompts, please note that:
+
+* You can have more than one response configured for a channel. The bot randomly chooses if more than one response is configured for any given channel. This holds true for all-channel responses too if no other channel-specific responses are configured.
+* If any channel-specific override is present, the platform will use that over the _‘All channel’_ response while responding on that specific channel. For example, if you have a specific message for MS Teams, the bot prefers that specific prompt while responding to a user over the MS Teams channel instead of the ‘All channel’ prompt.
 
 !!! Note
 
