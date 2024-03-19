@@ -124,30 +124,27 @@ nav:
     - Platform:
       - About the Platform: getting-started/about-xo-platform.md
       - Access the Platform: virtual-assistants-overview.md   
-      - Automation:
+      - Virtual Assistant:
         - About Virtual Assistant: virtual-assistants-overview.md
         - Build a Virtual Assistant: virtual-assistants-overview.md   
-      - Answers:
+      - Search AI:
         - About Answers: virtual-assistants-overview.md
         - Configure Answers: virtual-assistants-overview.md   
-      - AgentAssist:
+      - Agent AI:
         - About AgentAssist: virtual-assistants-overview.md
         - Set up AgentAssist: virtual-assistants-overview.md       
-      - Contact Center:
+      - Contact Center AI:
         - About Contact Center: virtual-assistants-overview.md
         - Set up Contact Center: virtual-assistants-overview.md       
       - Campaigns:
         - About Campaigns: virtual-assistants-overview.md
-        - Set up Campaign: virtual-assistants-overview.md       
-      - Quality Management:
-        - About Quality Management: virtual-assistants-overview.md
-        - Configure Quality Management: virtual-assistants-overview.md         
+        - Set up Campaign: virtual-assistants-overview.md
     - Glossary:
-      - Concepts and Terminology: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/ 
+      - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md
     - FAQs: 
       - Automation FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
       - Contact Center FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/   
-  - Automation: 
+  - Virtual Assistant: 
     - Overview: automation/about-automation.md
     - Use Cases: 
       - Dialogs Tasks:
@@ -325,7 +322,7 @@ nav:
           - Using Custom Tags to filter Assistant Metrics: how-tos/build-a-banking-assistant/analyse-the-assistant/using-custom-tags-to-filter-assistant-metrics.md
       - Migrate External Bots:
         - Google DialogFlow Bot: how-tos/migrate-external-bots/google-dialogflow-bot.md              
-  - Answers:
+  - Search AI:
     - Overview: answers/about-answers.md        
     - Content:
       - Sources:
@@ -343,7 +340,7 @@ nav:
       - Index Configuration: answers/index-configuration.md
     - Configuration:
       - Answer Configuration: answers/answer-configuration.md
-  - Contact Center:
+  - Contact Center AI:
     - Overview: contactcenter/about-contact-center.md 
     - Agent and Supervisors: 
       - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
@@ -369,7 +366,7 @@ nav:
       - Incoming Interactions: console/incoming-interactions/managing-incoming-interactions.md
       - Interacting With Customers: console/interacting-with-customers/interacting-with-customers.md
       - Introduction to the Console: console/introduction-to-the-console/introduction.md
-  - AgentAI:
+  - Agent AI:
     - Overview: agentassist/about-agentassist.md 
     - Agent Experience:
       - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md       
