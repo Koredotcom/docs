@@ -215,12 +215,7 @@ nav:
         - NLP Engine Configurations: automation/natural-language/nlu-configurations/engine-tuning.md
         - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
         - Amend Entities: automation/natural-language/nlu-configurations/amend-entities.md        
-      - LLM and Generative AI:
-        - Overview: app-settings/generative-ai-tools/introduction.md
-        - LLM Integration: app-settings/generative-ai-tools/llm-integration.md
-        - Prompts and Requests Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
-        - Co-pilot Features: app-settings/generative-ai-tools/co-pilot-features.md
-        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md
+      - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md        
     - Intelligence:
       - Overview: automation/intelligence/intelligence-overview.md
       - Events: 
