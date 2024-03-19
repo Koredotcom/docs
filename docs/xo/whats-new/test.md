@@ -18,7 +18,7 @@ hide:
 
 [:octicons-arrow-right-24: Learn more](./whats-new-in-this-release.md)
 
-[Learn more](./whats-new-in-this-release.md) [:octicons-arrow-right-24:]
+[Learn more :octicons-arrow-right-24:](./whats-new-in-this-release.md)
 
  ++ctrl+alt+del++
 
