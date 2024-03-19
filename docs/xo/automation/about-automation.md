@@ -4,7 +4,7 @@ hide:
   - feedback
 ---
 # About Automation
-The Automation module offers AI-powered sophisticated tools for creating virtual assistants that handle customer interactions through intelligent automation. Define specific use cases and utilize advanced Natural Language Processing (NLP) to handle complex interactions. Empower virtual assistants to handle interruptions and provide clarifications for more natural dialogues. The module also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
+The Automation module offers AI-powered sophisticated tools for creating Virtual Assistants that handle customer interactions through intelligent automation. Define specific use cases and utilize advanced Natural Language Processing (NLP) to handle complex interactions. Empower virtual assistants to handle interruptions and provide clarifications for more natural dialogues. The module also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
 
 <kr-grid type="g2">
     <kr-grid-item>
