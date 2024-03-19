@@ -45,12 +45,9 @@ When configuring a variable (environment or content), you have an option to **Ad
 
 <img src="../images/managing-namespace-img2.png" alt="Create namespace" title="Create namespace" style="border: 1px solid gray;zoom:70%;"/>
 
-
 # Editing
 
 You also have an option **to Manage Namespaces** from under **Build > Configurations > Environment/Content Variables**.
-
-<img src="../images/managing-namespace-img3.png" alt="Manage namespace" title="Manage namespace" style="border: 1px solid gray;zoom:70%;"/>
 
 Use this option to **view, edit,** or **delete** namespaces. Deleting a namespace that is mapped to any component is restricted. You need to unmap the namespace from all associated components before deletion. As mentioned earlier, you cannot delete the default namespace.
 
