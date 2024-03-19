@@ -26,17 +26,14 @@ To set up **Genesys Cloud CX Messaging** as a channel, use your account on the [
 
 The steps to add the channel are summarized below:
 
-1. [Create a Bot Connector](#step-1-create-a-bot-connector) and [Link the Virtual Assistant to the Bot Connector](#step-1-create-a-bot-connector)
-2. [Create an App in the Kore.ai Web/Mobile Client](#step-2-create-an-app-on-the-koreai-xo-platform)
-3. [Create the OAuth Client App in the Genesys Developer Console](#step-3-create-the-oauth-client-app-on-genesys-developer-console)
+1. [Create a Bot Connector](#step-1-create-a-bot-connector) and [Link the Virtual Assistant to the Bot Connector](#step-1-create-a-bot-connector).
+2. [Create an App in the Kore.ai Web/Mobile Client](#step-2-create-an-app-on-the-koreai-xo-platform).
+3. [Create the OAuth Client App in the Genesys Developer Console](#step-3-create-the-oauth-client-app-on-genesys-developer-console).
 4. [Create an inbound message flow](#step-4-create-an-inbound-message-flow).
-5. [Configure the Messenger SDK](#step-5-configure-the-messenger-sdk)
+5. [Configure the Messenger SDK](#step-5-configure-the-messenger-sdk).
 6. [Enable the Channel](#step-6-enable-the-channel).
-7. [Publish the Bot](#step-7-publish-the-bot){:target="_blank"}.
+7. [Publish the Bot](#step-7-publish-the-bot).
 
-[xo](www.google.com){:target="_blank"}
-[xo](amazon-alexa.md#availability){:target="_blank"}
-[Publish the Bot](#step-7-publish-the-bot){:target="_blank"}.
 
 
 ## Step 1: Create a Bot Connector

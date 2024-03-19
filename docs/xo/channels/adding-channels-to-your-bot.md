@@ -58,16 +58,15 @@ Click the icon of the channel you want to add, and then configure the channel to
    <a href="../add-cisco-channel" target="_blank"><img src="../images/logo2-cisco-webex-teams.png" width="50"></a>
    </td>
 
-   <td style="width:25%;"><a href="../add-cisco-tropo-channel" target="_blank">Cisco Tropo</a>
-   <br><br><br><br>
-   <a href="../add-cisco-tropo-channel" target="_blank"><img src="../images/logo3-tropo.png" width="50"></a>
-   </td>
 
    <td style="width:25%;"><a href="../add-google-assistant-channel" target="_blank">Google<br>Assistant</a>
    <br><br><br>
    <a href="../add-google-assistant-channel" target="_blank"><img src="../images/logo4-google-assistant.png" width="50"></a>
    </td>
    <td>
+   </td>
+   
+   <td style="width:25%;">
    </td>
   </tr>
 
