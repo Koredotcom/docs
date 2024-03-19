@@ -188,9 +188,9 @@ After you’ve configured the Genesys Messenger and deployed it for your Virtual
 
 ## Step 7: Publish the Bot
 
-After enabling the channel and verifying all the configurations, you can test the new channel integration by publishing your virtual assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
 
-To learn more about working with messaging channels within the Kore.ai XO Platform, please see [Channel Enablement](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/).
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
 
 
 
