@@ -32,7 +32,7 @@ This task-wise Containment Report offers a comparative analysis of the impact of
    </td>
    <td><code>auth: {{JWT}}</code>
 <p>
-See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/" target="_blank">How to generate the JWT Token.</a>
+See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-introduction/#generating-the-jwt-token" target="_blank">How to generate the JWT Token.</a>
    </td>
   </tr>
   <tr>
@@ -236,8 +236,6 @@ curl --location
   </tr>
 </table>
 
-
-
 ## Sample Response form the Post Method
 
 Please note the value of the API Response ID “**__id_**“ in the response (as shown in the sample response below) to use in the GET method.
@@ -261,8 +259,6 @@ Please note the value of the API Response ID “**__id_**“ in the response (as
    "__v": 0
 }
 ```
-
-
 
 ## Response Body Parameters
 
