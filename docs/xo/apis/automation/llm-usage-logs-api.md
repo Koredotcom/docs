@@ -93,7 +93,9 @@ See<a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_J
 
 
 ## Sample Request
-<code> --header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy03ZWMxNmFjZS03ZGNmLTU3MjQtYjM5NS1hYTA4YmRmYTAwMzMifQ.n_Es9ZBsiCYzpzsfN4p4I1SlHK05gewJFyqAIngr4Qg' \
+
+```json
+ --header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy03ZWMxNmFjZS03ZGNmLTU3MjQtYjM5NS1hYTA4YmRmYTAwMzMifQ.n_Es9ZBsiCYzpzsfN4p4I1SlHK05gewJFyqAIngr4Qg' \
 --header 'Content-Type: application/json' \
 --data '{
     "dateFrom": "2024-03-07",
@@ -110,7 +112,9 @@ See<a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_J
         "field" : "Time Taken",
         "order" : "desc"
     }
-}'</code>
+}'
+```
+
 
 ## Body Parameters
 
@@ -202,7 +206,8 @@ See<a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_J
 
 ## Sample Response
 
-<code> [
+```json
+[
 {
 "Prompt Name": "Default",
 "Integration": "OpenAI",
@@ -289,4 +294,5 @@ See<a href="https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_J
 "Response Tokens": 74
 }
 }
-]</code>
+]
+```
