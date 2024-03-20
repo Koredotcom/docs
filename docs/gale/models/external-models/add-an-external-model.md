@@ -9,25 +9,25 @@ For example, here in this topic, you can see the process of adding the Claude-V1
 1. Click **Models** on the top navigation bar of the application. The **Models** page is displayed.
 2. Click the **External models** tab on the **Models** page.
 
-    <img src="../images/conversation-insights-5.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
 1. Click **Add a model** under the external models tab. The **Add an external model** dialog is displayed.
 
-    <img src="../images/conversation-insights-5.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
 1. Select the **Easy integration** option to integrate models from Open AI, Anthropic, Google, or Cohere and click **Next**.
 2. Select a provider to integrate with and click **Next**.
 
-    <img src="../images/conversation-insights-5.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
     A Pop-up with the list of all the Anthropic models that are supported in GALE is displayed.
 
-    <img src="../images/conversation-insights-5.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
-1. Select the required **Model **and click **Next**.
+1. Select the required **Model** and click **Next**.
 2. Enter the respective **API key** you have received from the provider in the **API key** field and click **Confirm** to start the integration.
 
-    <img src="../images/conversation-insights-5.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
     The model is integrated and is listed in the External models list.
 

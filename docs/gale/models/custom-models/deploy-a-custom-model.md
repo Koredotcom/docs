@@ -10,7 +10,7 @@ Once the fine-tuning process is completed, you can deploy your custom model.
 
     * Click the **Deploy model** button on the **Overview** page of your custom model.
 
-        <img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
 
     Or
@@ -18,11 +18,11 @@ Once the fine-tuning process is completed, you can deploy your custom model.
 
     * Click the **Deploy** tab in the left panel on the **Overview** page of your custom model.
 
-        <img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
 1. Click **Deploy model**. The deployment of your model will start and after the deployment process is complete, you can find the API endpoint created for your custom model. The API endpoint is available in 3 formats as shown in the following image. You can copy and use the same as required.
 
-    <img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
     After the model is deployed, the API endpoint is generated which implies that your custom model is ready for inferencing externally and across the other sections in GALE.
 

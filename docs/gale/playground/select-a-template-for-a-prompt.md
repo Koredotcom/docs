@@ -6,7 +6,7 @@ For example, if you select the “Writing a blog post” template from the Writi
 
 !!! note
 
-    In the simple mode, you can remove the curly braces and add the required variable, but in the advanced mode, the data comes from the dataset file that you have selected. For more information about uploading a dataset, see <span style="text-decoration:underline;">Upload a dataset file</span>.
+    In the simple mode, you can remove the curly braces and add the required variable, but in the advanced mode, the data comes from the dataset file that you have selected. For more information about uploading a dataset, see **Upload a dataset file**.
 
 
 **To select a template, follow these steps**:
@@ -14,14 +14,14 @@ For example, if you select the “Writing a blog post” template from the Writi
 
 1. On the **Prompts** experiment page, click **Templates** corresponding to the **Prompt** box.
 
-    <img src="../images/navigating-to-task-execution-logs.png" alt="Navigating to Task Execution Logs" title="Navigating to Task Execution Logs" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/select-templates.png" alt="Select Templates" title="Select Templates" style="border: 1px solid gray; zoom:80%;">
 
     
     The list of templates is displayed.
 
 1. Click the required template from the category you require. For example, you can take a template “_Text to bullet points_” and then the prompt is displayed in the **Prompt** box.
 
-    <img src="../images/navigating-to-task-execution-logs.png" alt="Navigating to Task Execution Logs" title="Navigating to Task Execution Logs" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/text-to-bullet-template.png" alt="Text to Bullet Template" title="Text to Bullet Template" style="border: 1px solid gray; zoom:80%;">
 
     
 2. Enter a value for the variables by removing the {{ }} to get the desired output as shown in the following image.
@@ -31,8 +31,8 @@ For example, if you select the “Writing a blog post” template from the Writi
     In the simple mode you must remove the {{}} and add the value in the prompt.
 
 
-    <img src="../images/navigating-to-task-execution-logs.png" alt="Navigating to Task Execution Logs" title="Navigating to Task Execution Logs" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/enter-a-prompt.png" alt="Enter a Prompt" title="Enter a Prompt" style="border: 1px solid gray; zoom:80%;">
 
     Once you generate an output, you will be able to view the output as shown in the following image.
 
-    <img src="../images/navigating-to-task-execution-logs.png" alt="Navigating to Task Execution Logs" title="Navigating to Task Execution Logs" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/output-result-from-template.png" alt="Output Result From Template" title="Output Result From Template" style="border: 1px solid gray; zoom:80%;">

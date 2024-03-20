@@ -2,7 +2,7 @@
 
 You can also perform other actions on the prompt page and use it for your reference. You can view the history of your experiment and restore the version of the prompt you like, export prompt data, and copy the experiment as a prompt or as an LLM node.
 
-<img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/explore-other-options.png" alt="Explore other Options" title="Explore other Options" style="border: 1px solid gray; zoom:80%;">
 
 
 ## **Copy a prompt**
@@ -21,7 +21,7 @@ You have 2 options to copy your prompt experiment:
 
 * On the **Prompts experiment** page, click **Copy** on the header of the page. A pop-up with options is displayed.
 
-    <img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/copy-a-prompt.png" alt="Copy a Prompt" title="Copy a Prompt" style="border: 1px solid gray; zoom:80%;">
 
 
 * Click **as prompt** or **as LLM node** as per your requirement and the experiment is copied.
@@ -33,9 +33,9 @@ You can review the timeline of prompts and their corresponding generated outputs
 
 **To restore a prompt, follow these steps**:
 
-* On the **Prompts** experiment page, click the History icon on the header of the page.
+* On the **Prompts** experiment page, click the **History** icon on the header of the page.
 
-    <img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/history-restore-option.png" alt="History Restore Option" title="History Restore Option" style="border: 1px solid gray; zoom:80%;">
 
 
     The history section is displayed with the list of all the old prompt experiments you created.
@@ -48,7 +48,7 @@ You can review the timeline of prompts and their corresponding generated outputs
 
 
     
-    <img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/restore-old-version.png" alt="Restore Old Version" title="Restore Old Version" style="border: 1px solid gray; zoom:80%;">
 
 
 * Click **Restore** to view the selected version of the prompt experiment.

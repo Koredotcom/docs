@@ -14,14 +14,14 @@ Let us now look into each step in detail.
 
 1. Click **Models** on the top navigation bar of the application. The **Models** page is displayed.
 
-    <img src="../images/conversation-insights-5.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
+    <<img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
 1. Click the **Create a custom model** button on the **Models** page. The **Create a custom model** dialog is displayed.
 2. In the **General details** section:
 
     * Enter a **Name** and **Description** for your custom model.
 
-        <img src="../images/conversation-insights-5.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
+        <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
     * Provide tags to ease the search for the model and click **Next**.
 
@@ -31,7 +31,7 @@ Let us now look into each step in detail.
 
     * Enter the **Number of Epochs** which implies the number of times the entire data set is passed through the model during the training process.
 
-        <img src="../images/conversation-insights-5.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
+        <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
     * Enter a number for **Batch size** which implies the number of training examples used in one iteration of training.
 
@@ -50,7 +50,7 @@ Let us now look into each step in detail.
     
     * Define the data for evaluation. You can use the same training data set in the evaluation process as well. In this step, you can either allocate a percentage of the training dataset to use for evaluation, or upload a new evaluation dataset, or skip the evaluation.
 
-        <img src="../images/conversation-insights-5.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
+        <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
 
     * Click **Next** to proceed to the next step.
@@ -63,8 +63,8 @@ Let us now look into each step in detail.
 
         The format accepted is JSONL, CSV, or JSON.
 
-
-       <img src="../images/conversation-insights-5.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
+    
+    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
     * Click **Next** to proceed to the next step.
 
@@ -83,7 +83,7 @@ Let us now look into each step in detail.
         You need an account with Weights and Biases. Enabling the integration with the help of an API token will share your real-time fine-tuning status with the platform and you can comprehensively monitor the fine-tuning metrics of your model. You can use the API token they provided to create an integration and then all the data related to the fine-tuning process will be sent to the account related to that API token.
 
     
-    <img src="../images/conversation-insights-5.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
     * Click **Next** to proceed to the next step.
 
@@ -94,11 +94,11 @@ Let us now look into each step in detail.
         If you want to make any modifications, you can go to the previous step by clicking the **Back** button or a particular step indicator on the left panel.
 
    
-    <img src="../images/conversation-insights-5.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
 1. Click **Start fine-tuning**. The **Overview** page of your custom model is displayed with the status “Initializing”.
 
-    <img src="../images/conversation-insights-5.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
+    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
     The different statuses that are involved in the process include:
 
@@ -142,7 +142,7 @@ You can also download the training file for your reference from this page. You a
         If you want to perform the testing again, you can click the Retry option corresponding to the Test info section on the Overview page and select a new test data set file or use the existing file and confirm to start the testing again. The status then is displayed as “Testing in Progress”.
 
 
-<img src="../images/conversation-insights-5.png" alt="Conversation Insights" title="Conversation Insights" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
 
 After the model is fine-tuned, you can deploy the custom model and use it across GALE and also for external use.

@@ -11,22 +11,22 @@ On the Prompt page, you can find a Prompt sample auto-populated based on the tem
 
 1. On the **Prompt** page, click the **Advance Mode** toggle button to shift to the advanced mode from the simple mode of output generation.
 
-    <img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/generate-output-in-advanced-mode.png" alt="Generate Output in Advanced Mode" title="Generate Output in Advanced Mode" style="border: 1px solid gray; zoom:80%;">
 
     The Prompt playground view is enhanced for you with other options to explore.
 
-   <img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
+   <img src="../images/advanced-mode-options.png" alt="Advanced Mode Options" title="Advanced Mode Options" style="border: 1px solid gray; zoom:80%;">
 
 1. Click the **+Add Dataset** link under the **Dataset** section on the **Prompt** page to upload your CSV file with data.
 
-    <img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-dataset-advanced-mode.png" alt="Add Dataset Advanced Mode" title="Add Dataset Advanced Mode" style="border: 1px solid gray; zoom:80%;">
 
-    The Dataset dialog is displayed.
+    The **Dataset** dialog is displayed.
 
 2. Click **Upload file** to upload a CSV file from your local computer and click **Upload**. You can see a preview of all the data in your CSV file. Click **Proceed** to accept the file.
 3. Click the arrow under the **Examples** section on the **Prompt** section to add a sample user input and sample AI response output.
 
-    <img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-examples-advanced-mode.png" alt="Add Examples Advanced Mode" title="Add Examples Advanced Mode" style="border: 1px solid gray; zoom:80%;">
 
     
 1. Click **Save** to save the sample examples.
@@ -39,8 +39,11 @@ On the Prompt page, you can find a Prompt sample auto-populated based on the tem
     
     For example, {{Name}} is a variable, from the file you uploaded where Name is a column in that CSV file. A maximum of 20 names or rows that you select can flow from the file to the prompt input column of the advanced mode.
 
-1. Click the + icon corresponding to the **Add Model** section to add the models you want to select and compare the generated outputs. 
-**Note**: For more information about how to add a model to the prompt, see **<span style="text-decoration:underline;">Add an external model.</span>**
+1. Click the + icon corresponding to the **Add Model** section to add the models you want to select and compare the generated outputs.
+
+    !!! note
+
+    For more information about how to add a model to the prompt, see **Add an external model**.
 
 1. Click **Generate Output** after you have added the required number of models to compare. The Generated output for comparison is displayed in the Model section of the Prompt playground space for your reference.
 
@@ -48,16 +51,16 @@ On the Prompt page, you can find a Prompt sample auto-populated based on the tem
 
     You can view the matrix in the generated output section which helps in deciding which prompt and model are better for your requirement.
 
-    <img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/generated-output-matrix.png" alt="Generated Output Matrix" title="Generated Output Matrix" style="border: 1px solid gray; zoom:80%;">
 
 
 It displays the total tokens matrix which implies how many tokens are sent to the model and how many are sent back in the response, the time taken by the model to respond with the answer, and the response and request in the JSON format. You can click the **View in JSON format** icon at the bottom of the generated output section to view the request and response generated in JSON format in a separate dialog box as shown in the following image.
 
-<img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/json-format-prompt.png" alt="Json Format Prompt" title="Json Format Prompt" style="border: 1px solid gray; zoom:80%;">
 
 
 
 If you want to view all the details of the outputs across all the models you can turn ON the toggle button by clicking the info icon on the **Models** section of the Playground space as shown in the following image. If you turn OFF the toggle, then the total token matrix is not displayed.
 
-<img src="../images/returning-users.png" alt="Returning Users" title="Returning Users" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/view-all-details-of-models.png" alt="View All Details of Models" title="View All Details of Models" style="border: 1px solid gray; zoom:80%;">
 
