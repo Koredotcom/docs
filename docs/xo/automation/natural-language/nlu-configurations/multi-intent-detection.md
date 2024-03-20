@@ -21,8 +21,6 @@ If a task fails to get executed, then the Platform will not initiate the subsequ
 
 Following are the steps to enable multi-intent detection:
 
-
-
 1. Open the VA for which you want to add multiple intents.
 2. Select the **Build** tab from the top menu.
 3. From the left menu, click **Intelligence **>** Multi Intent Detection**.

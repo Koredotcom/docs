@@ -4,11 +4,11 @@
 
 The steps to configure Naver Works are summarized below:
 
-* [Create a Virtual Assistant (VA) on the Naver Works Developer Portal](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-naver-works-channel/#Step_1_Create_a_Virtual_Assistant_on_Naver_Works).
-* [Add a Client Application on the portal](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-naver-works-channel/#Step_2_Add_a_Client_App).
-* [Authorize the Virtual Assistant](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-naver-works-channel/#Step_3_Authorize_the_Virtual_Assistant).
-* [Add the Virtual Assistant](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-naver-works-channel/#Step_4_Add_the_Virtual_Assistant_on_the_Line_Works_Admin_Console) on the [Line Works Admin Console](https://account.line.biz/login?redirectUri=https%3A%2F%2Fdevelopers.line.biz%2Fconsole%2F).
-* [Enable the channel on the Kore.ai XO Platform](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-naver-works-channel/#Step_5_Enable_the_Channel).
+* [Create a Virtual Assistant (VA) on the Naver Works Developer Portal](#step-1-create-a-virtual-assistant-on-naver-works).
+* [Add a Client Application on the portal](#step-2-add-a-client-app).
+* [Authorize the Virtual Assistant](#step-3-authorize-the-virtual-assistant).
+* [Add the Virtual Assistant](#step-4-add-the-virtual-assistant-on-the-line-works-admin-console) on the [Line Works Admin Console](https://account.line.biz/login?redirectUri=https%3A%2F%2Fdevelopers.line.biz%2Fconsole%2F).
+* [Enable the channel on the Kore.ai XO Platform](#step-5-enable-the-channel).
 
 
 ### Step 1: Create a Virtual Assistant on Naver Works
@@ -17,12 +17,10 @@ To set up Naver Works as a channel, you must create a VA on Line works and enabl
 
 
 1. Log in to [Line Works Developer Console](https://developers.worksmobile.com/) and click the **Bot** left menu item.
-2. Click the **Register** button.
-<img src="../images/naverworks.png" alt="naverworks integration" title="naverworks integration" style="border: 1px solid gray; zoom:70%;">
+2. Click the **Register** button.  <img src="../images/naverworks.png" alt="naverworks integration" title="naverworks integration" style="border: 1px solid gray; zoom:70%;">
 
 3. Enter all the mandatory fields.
-4. Select **API 2.0** for **API Interface**.
-<img src="../images/naverworks1.png" alt="naverworks API" title="naverworks API" style="border: 1px solid gray; zoom:70%;">
+4. Select **API 2.0** for **API Interface**.  <img src="../images/naverworks1.png" alt="naverworks API" title="naverworks API" style="border: 1px solid gray; zoom:70%;">
 
 5. Click **Save**.
 
@@ -41,8 +39,7 @@ The new Virtual Assistant is listed on the **Bot** page.
 The next step is to add a client application to integrate with the Kore.ai XO Platform using the app’s credentials. To add a client app, follow the steps below:
 
 1. Navigate to **API 2.0** on the left menu of the **Line Works Developer Console**.
-2. Click the **Add Client App** tab.
-<img src="../images/naverworks3.png" alt="naverworks developer console" title="naverworks developer console" style="border: 1px solid gray; zoom:70%;">
+2. Click the **Add Client App** tab.  <img src="../images/naverworks3.png" alt="naverworks developer console" title="naverworks developer console" style="border: 1px solid gray; zoom:70%;">
 
 
 3. Add the App name and click **Confirm**.  <img src="../images/naverworks4.png" alt="naverworks confirm" title="naverworks confirm" style="border: 1px solid gray; zoom:70%;">
@@ -51,7 +48,7 @@ The next step is to add a client application to integrate with the Kore.ai XO Pl
 4. On the **Manage client apps** page, copy the **_Client ID_** and **_Client Secret_** values displayed for the client app.  <img src="../images/naverworks5.png" alt="naverworks client secret" title="naverworks client secret" style="border: 1px solid gray; zoom:70%;">
 
 
-5. On the Kore.ai XO Platform, navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **Naver Works**.  <img src="../images/naverworks6.png" alt="deploy naverworks" title="deploy naverworks " style="border: 1px solid gray; zoom:70%;">
+5. On the Kore.ai XO Platform, navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **Naver Works**. 
 
 
 6. Click the **Configurations** tab.
@@ -66,10 +63,12 @@ The next step is to add a client application to integrate with the Kore.ai XO Pl
 
 8. Click the **Copy** button for the **_Redirect URL_** field.  <img src="../images/naverworks9.png" alt="enable naverworks configuration" title="enable naverworks configuration" style="border: 1px solid gray; zoom:70%;">
 
-9. Paste the value on the **Manage Client Apps** page of the Line Works Developer Console, and click **Add**.  <img src="../images/naverworks10.png" alt="manage naverworks client" title="manage naverworks client" style="border: 1px solid gray; zoom:70%;">
+9. Paste the value on the **Manage Client Apps** page of the Line Works Developer Console, and click **Add**.
+<img src="../images/naverworks10.png" alt="manage naverworks client" title="manage naverworks client" style="border: 1px solid gray; zoom:70%;">
 
 10. Click **Manage** for the **OAuth Scopes** field.
-11. Select the Bot API **read to and write** scope to access the app through the API on the **Select API Scope** window, and click **Save**.  <img src="../images/naverworks11.png" alt="naverworks OAuth scopes" title="naverworks OAuth scopes" style="border: 1px solid gray; zoom:70%;">
+11. Select the Bot API **read to and write** scope to access the app through the API on the **Select API Scope** window, and click **Save**.
+<img src="../images/naverworks11.png" alt="naverworks OAuth scopes" title="naverworks OAuth scopes" style="border: 1px solid gray; zoom:70%;">
 
 12. Click **Save** on the **Manage Client Apps** page.
 
@@ -100,9 +99,11 @@ To add the VA to the Line Works Admin Console, follow the steps below:
 
 5. Click the required VA on the **Bot** page.
 
-6.  In the **Bot Info** window, click **Edit**.  <img src="../images/naverworks15.png" alt="naverworks bot info" title="naverworks bot info" style="border: 1px solid gray; zoom:70%;">
+6.  In the **Bot Info** window, click **Edit**.
+<img src="../images/naverworks15.png" alt="naverworks bot info" title="naverworks bot info" style="border: 1px solid gray; zoom:70%;">
 
-7.  Select **_All_** for **Permission** and enable the **Visibility Setting** option.  <img src="../images/naverworks16.png" alt="naverworks permissions" title="naverworks permissions" style="border: 1px solid gray; zoom:70%;">
+7.  Select **_All_** for **Permission** and enable the **Visibility Setting** option.
+<img src="../images/naverworks16.png" alt="naverworks permissions" title="naverworks permissions" style="border: 1px solid gray; zoom:70%;">
 
 8. Click **Save**.
 
@@ -112,4 +113,5 @@ To add the VA to the Line Works Admin Console, follow the steps below:
 To complete the integration, you must enable the channel on the Kore.ai XO Platform. To enable Naver Works, follow the steps below:
 
 1. In the **Configurations** section of the **Naver Works** channel, select **_YES_** for **Enable Channel**.
-2. Click **Save**.  <img src="../images/naverworks17.png" alt="enable naverworks channel" title="enable naverworks channel" style="border: 1px solid gray; zoom:70%;">
+2. Click **Save**.
+<img src="../images/naverworks17.png" alt="enable naverworks channel" title="enable naverworks channel" style="border: 1px solid gray; zoom:70%;">

@@ -19,9 +19,7 @@ Starting with v10.1 of the XO Platform, the Few-Shot Model is the default for al
 
 If you have built your Ontology-based graph before this release, you can migrate to the new model anytime. You must upgrade to NLP V3 to use the Few-Shot Model. You can return to the Ontology model if you change your mind later.
 
-You can select your desired Knowledge Graph Type by going to **Build > Natural Language > Thresholds and Configurations > Knowledge Graph**.
-
-<img src="../images/switch-knowledge-graph.gif" alt="switch knowledge graph" title="switch knowledge graph" style="border: 1px solid gray; zoom:75%;">
+You can select your desired Knowledge Graph Type by going to **Build > Natural Language** > **Thresholds and Configurations** > **Knowledge Graph**.
 
 Changing Knowledge Graph Types is captured in the Change Logs, which you can access by going to **Deploy > Change Logs**.
 

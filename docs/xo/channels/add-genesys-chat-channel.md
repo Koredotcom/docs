@@ -26,13 +26,14 @@ To set up **Genesys Cloud CX Messaging** as a channel, use your account on the [
 
 The steps to add the channel are summarized below:
 
-1. [Create a Bot Connector](/docs/xo/channels/add-genesys-chat-channel/#step-1-create-a-bot-connector) and [Link the Virtual Assistant to the Bot Connector](/docs/xo/channels/add-genesys-chat-channel/#step-1-create-a-bot-connector)
-2. [Create an App in the Kore.ai Web/Mobile Client](/docs/xo/channels/add-genesys-chat-channel/#Step-2-Create-an-app-in-the-kore.ai-xo-platform)
-3. [Create the OAuth Client App in the Genesys Developer Console](/docs/xo/channels/add-genesys-chat-channel/#step-3-create-the-oauth-client-app-in-the-genesys-developer-console)
-4. [Create an inbound message flow](/docs/xo/channels/add-genesys-chat-channel/#step-4-create-an-inbound-message-flow).
-5. [Configure the Messenger SDK](/docs/xo/channels/add-genesys-chat-channel/#step-5-configure-the-messenger-sdk)
-6. [Enable the Channel](/docs/xo/channels/add-genesys-chat-channel/#step-6-enable-the-channel).
-7. [Publish the Bot](/docs/xo/channels/add-genesys-chat-channel/#step-7-publish-the-bot).
+1. [Create a Bot Connector](#step-1-create-a-bot-connector) and [Link the Virtual Assistant to the Bot Connector](#step-1-create-a-bot-connector).
+2. [Create an App in the Kore.ai Web/Mobile Client](#step-2-create-an-app-on-the-koreai-xo-platform).
+3. [Create the OAuth Client App in the Genesys Developer Console](#step-3-create-the-oauth-client-app-on-genesys-developer-console).
+4. [Create an inbound message flow](#step-4-create-an-inbound-message-flow).
+5. [Configure the Messenger SDK](#step-5-configure-the-messenger-sdk).
+6. [Enable the Channel](#step-6-enable-the-channel).
+7. [Publish the Bot](#step-7-publish-the-bot).
+
 
 
 ## Step 1: Create a Bot Connector
@@ -67,7 +68,7 @@ A **Bot Connector integration** enables your bot to exchange messages with the _
 
 
 
-Create an app on the Kore.ai XO platform. A JWT Token is created with the **clientId** and **clientSecret** credentials. For more information, read[ Adding the Web/Mobile Client Channel](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel/) article.
+Create an app on the Kore.ai XO platform. A JWT Token is created with the **clientId** and **clientSecret** credentials. For more information, read[ Adding the Web/Mobile Client Channel](./add-web-mobile-client.md) article.
 
 
 
@@ -188,9 +189,9 @@ After you’ve configured the Genesys Messenger and deployed it for your Virtual
 
 ## Step 7: Publish the Bot
 
-After enabling the channel and verifying all the configurations, you can test the new channel integration by publishing your virtual assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
 
-To learn more about working with messaging channels within the Kore.ai XO Platform, please see [Channel Enablement](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/).
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
 
 
 

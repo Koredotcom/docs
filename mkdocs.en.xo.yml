@@ -124,30 +124,27 @@ nav:
     - Platform:
       - About the Platform: getting-started/about-xo-platform.md
       - Access the Platform: virtual-assistants-overview.md   
-      - Automation:
+      - Virtual Assistant:
         - About Virtual Assistant: virtual-assistants-overview.md
         - Build a Virtual Assistant: virtual-assistants-overview.md   
-      - Answers:
+      - Search AI:
         - About Answers: virtual-assistants-overview.md
         - Configure Answers: virtual-assistants-overview.md   
-      - AgentAssist:
+      - Agent AI:
         - About AgentAssist: virtual-assistants-overview.md
         - Set up AgentAssist: virtual-assistants-overview.md       
-      - Contact Center:
+      - Contact Center AI:
         - About Contact Center: virtual-assistants-overview.md
         - Set up Contact Center: virtual-assistants-overview.md       
       - Campaigns:
         - About Campaigns: virtual-assistants-overview.md
-        - Set up Campaign: virtual-assistants-overview.md       
-      - Quality Management:
-        - About Quality Management: virtual-assistants-overview.md
-        - Configure Quality Management: virtual-assistants-overview.md         
+        - Set up Campaign: virtual-assistants-overview.md
     - Glossary:
-      - Concepts and Terminology: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/ 
+      - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md
     - FAQs: 
       - Automation FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
       - Contact Center FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/   
-  - Automation: 
+  - Virtual Assistant: 
     - Overview: automation/about-automation.md
     - Use Cases: 
       - Dialogs Tasks:
@@ -187,6 +184,19 @@ nav:
         - Configure Digital Forms: automation/use-cases/digital-skills/configure-digital-forms.md
         - Digital Views: automation/use-cases/digital-skills/digital-views.md
         - Configure Digital Views: automation/use-cases/digital-skills/configure-digital-views.md      
+    - Knowledge AI:
+        - Overview: automation/knowledge-ai/knowledge-ai-introduction.md
+        - Knowledge Graph (KG):
+          - Introduction: automation/knowledge-ai/knowledge-graph-overview.md
+          - Terminology: automation/knowledge-ai/knowledge-graph-terminology.md
+          - Build a KG: automation/knowledge-ai/build-a-knowledge-graph.md
+          - Manage FAQs: automation/knowledge-ai/manage-faqs.md
+          - Knowledge Extraction: automation/knowledge-ai/knowledge-extraction.md
+          - Import or Export KG:
+            - Prepare Data for Import: automation/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
+            - Import or Export KG: automation/knowledge-ai/import-and-export-knowledge-graph.md
+            - Auto-Generate KG: automation/knowledge-ai/generate-a-knowledge-graph.md
+          - KG Analysis: automation/knowledge-ai/knowledge-graph-analysis.md    
     - Natural Language:
       - Overview: automation/natural-language/nlp-introduction.md
       - NLP Optimization: automation/natural-language/training/optimizing-bots.md
@@ -205,12 +215,7 @@ nav:
         - NLP Engine Configurations: automation/natural-language/nlu-configurations/engine-tuning.md
         - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
         - Amend Entities: automation/natural-language/nlu-configurations/amend-entities.md        
-      - LLM and Generative AI:
-        - Overview: app-settings/generative-ai-tools/introduction.md
-        - LLM Integration: app-settings/generative-ai-tools/llm-integration.md
-        - Prompts and Requests Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
-        - Co-pilot Features: app-settings/generative-ai-tools/co-pilot-features.md
-        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md
+      - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md        
     - Intelligence:
       - Overview: automation/intelligence/intelligence-overview.md
       - Events: 
@@ -312,21 +317,8 @@ nav:
           - Using Custom Tags to filter Assistant Metrics: how-tos/build-a-banking-assistant/analyse-the-assistant/using-custom-tags-to-filter-assistant-metrics.md
       - Migrate External Bots:
         - Google DialogFlow Bot: how-tos/migrate-external-bots/google-dialogflow-bot.md              
-  - Answers:
-    - Overview: answers/about-answers.md 
-    - Knowledge AI:
-        - Overview: answers/knowledge-ai/knowledge-ai-introduction.md
-        - Knowledge Graph (KG):
-          - Introduction: answers/knowledge-ai/knowledge-graph-overview.md
-          - Terminology: answers/knowledge-ai/knowledge-graph-terminology.md
-          - Build a KG: answers/knowledge-ai/build-a-knowledge-graph.md
-          - Manage FAQs: answers/knowledge-ai/manage-faqs.md
-          - Knowledge Extraction: answers/knowledge-ai/knowledge-extraction.md
-          - Import or Export KG:
-            - Prepare Data for Import: answers/knowledge-ai/create-knowledge-graph-from-csv-and-json.md
-            - Import or Export KG: answers/knowledge-ai/import-and-export-knowledge-graph.md
-            - Auto-Generate KG: answers/knowledge-ai/generate-a-knowledge-graph.md
-          - KG Analysis: answers/knowledge-ai/knowledge-graph-analysis.md       
+  - Search AI:
+    - Overview: answers/about-answers.md        
     - Content:
       - Sources:
         - Overview: answers/content-sources/introduction.md 
@@ -343,7 +335,7 @@ nav:
       - Index Configuration: answers/index-configuration.md
     - Configuration:
       - Answer Configuration: answers/answer-configuration.md
-  - Contact Center:
+  - Contact Center AI:
     - Overview: contactcenter/about-contact-center.md 
     - Agent and Supervisors: 
       - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
@@ -369,7 +361,7 @@ nav:
       - Incoming Interactions: console/incoming-interactions/managing-incoming-interactions.md
       - Interacting With Customers: console/interacting-with-customers/interacting-with-customers.md
       - Introduction to the Console: console/introduction-to-the-console/introduction.md
-  - AgentAI:
+  - Agent AI:
     - Overview: agentassist/about-agentassist.md 
     - Agent Experience:
       - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md       
@@ -518,11 +510,12 @@ nav:
         - Manage Translation Services: app-settings/language-management/managing-translation-services.md
         - Multiingual Virtual Assistant Behavior: app-settings/language-management/multi-lingual-bot-behavior.md
       - Generative AI Tools:
-        - Introduction to LLM and Generative AI: app-settings/generative-ai-tools/introduction.md
-        - Co-Pilot Features: app-settings/generative-ai-tools/co-pilot-features.md
-        - Prompts and Requests Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
-        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md
+        - Introduction: app-settings/generative-ai-tools/introduction.md
         - LLM Integration: app-settings/generative-ai-tools/llm-integration.md
+        - Kore.ai XO GPT Module: app-settings/generative-ai-tools/xo-gpt-module.md
+        - Prompts & Requests Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
+        - Co-Pilot Features: app-settings/generative-ai-tools/co-pilot-features.md        
+        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md        
       - Dev Tools:
         - Bot Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
         - Authorization Profiles: app-settings/dev-tools/bot-authorization/bot-authentication.md

@@ -4,7 +4,6 @@ hide:
   - feedback
 ---
 # About Campaigns
-
 The Campaigns module simplifies and enhances outbound efforts across voice and web channels. It offers tools for creating targeted voice campaigns and proactive web campaigns, supported by easy-to-use templates and comprehensive analytics. This allows businesses to efficiently reach their audience, monitor campaign performance, and achieve their objectives with greater precision and effectiveness.
 
 <kr-grid type="g2">

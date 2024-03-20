@@ -44,17 +44,15 @@ The Unblu Bot can be directly created from the Kore.ai XO Platform.
 <img src="../images/unblu.png" alt="unblu integration" title="unblu integration" style="border: 1px solid gray; zoom:70%;">
 
 
-After the channel is enabled and all configurations are verified, you can optionally publish
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
 
-the assistant to make it available for end-users, with the new channel. Learn more about [Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
-
-To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
 
 
 ## Additional Instructions
 
 For the seamless exchange of information from Unblu to Kore.ai, a few additional steps need to be performed.
-For a detailed document on the implementation, [refer here](https://developer.kore.ai/docs/bots/how-tos/kore-unblu-integration/).
+For a detailed document on the implementation, [refer here](../app-settings/integrations/agents/kore-unblu-integration.md).
 
 
 * The _host URL_ where the Unblu SDK would be hosted needs to be added to the **Domain** section of your Unblu Account.
@@ -248,7 +246,7 @@ There are multiple functionalities that can be achieved by the integration of Un
 * When mapping a named area to a bot, _multiple named areas_ can be mapped. This way a single Kore.ai assistant has the ability to accept Unblu dialog offer requests from different origins like SDKs or namedAreas.
 * Also, the named area mapping is optional if you are enabling the Unblu channel for a single Kore.ai assistant.
 * You can redirect user conversations to agents by adding an _agent transfer_ node in the dialog flow, note that you need not enable the Agent Transfer or BotKit specifically for this Channel. Having an agent transfer node is sufficient.
-* The user information for each message from Unblu is available in the `usercontext.customData` and you can use it for further processing. This information includes _deviceInfo_, _authInfo_, _joinedTime_ of the user. [See here for how to use context object](https://developer.kore.ai/docs/bots/bot-builder-tool/context-object/).
+* The user information for each message from Unblu is available in the `usercontext.customData` and you can use it for further processing. This information includes _deviceInfo_, _authInfo_, _joinedTime_ of the user. [See here for how to use context object](../automation/intelligence/context-object.md).
 
 ## Using Unblu supported message templates
 

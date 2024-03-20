@@ -3,8 +3,8 @@ hide:
   - toc
   - feedback
 ---
-# About Contact Center
-The Contact Center module offers a conversational AI-native contact center-as-a-service solution to enhance customer experience, increase revenue, and reduce operational costs. It helps create consistent, personalized, intelligent, and effortless customer and agent experiences across channels. You can leverage Automation Use Cases and Answers to automate regular customer queries and seamlessly transfer them to a human agent as needed.
+# About Contact Center AI
+The Contact Center AI module offers a conversational AI-native contact center-as-a-service solution to enhance customer experience, increase revenue, and reduce operational costs. It helps create consistent, personalized, intelligent, and effortless customer and agent experiences across channels. You can leverage Automation Use Cases and Answers to automate regular customer queries and seamlessly transfer them to a human agent as needed.
 
 <kr-grid type="g2">
     <kr-grid-item>

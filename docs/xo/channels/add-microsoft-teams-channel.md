@@ -47,14 +47,14 @@ Generate a new App Password and Client Secret to configure the Azure Bot on the 
 2. Choose **Certificates & secrets** in the left navigation bar, and create a new client secret on the page:
     * Click the **+ New client secret** option.
     * Provide the necessary details, and then click the **Add** option.
-3. Copy the **Value** of the new client secret and provide it in the **App Password** field present on the **Configurations** tab of the Kore.ai XO Platform. Refer Step 3: Enable Microsoft Teams Channel. 
+3. Copy the **Value** of the new client secret and provide it in the **App Password** field present on the **Configurations** tab of the Kore.ai XO Platform. [Refer Step 3: Enable Microsoft Teams Channel.](#step-3-enable-microsoft-teams-channel) 
 <img src="../images/MS_Team7.png" alt="enable channel" title="enable channel" style="border: 1px solid gray; zoom:70%;">
 
 4. Close the **Certificates and secrets** section to return the **Configuration** section of the resource using the breadcrumbs.
 
 !!! note
 
-        Make a note of the Microsoft App Id in the Azure Bot configurations page and provide it in the Configuration tab of this window.
+    Make a note of the Microsoft App Id in the Azure Bot configurations page and provide it in the Configuration tab of this window.
 
 ## Step 3: Enable Microsoft Teams Channel
 
@@ -179,5 +179,6 @@ To enable Proactive Notifications, follow these steps:
 
 ### Related Links
 
-* Once the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available to end-users. Learn more about [Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
-* To learn more about working with Channels within the Kore.ai XO Platform, see[ Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
