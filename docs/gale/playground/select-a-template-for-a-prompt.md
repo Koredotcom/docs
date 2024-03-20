@@ -30,9 +30,8 @@ For example, if you select the “Writing a blog post” template from the Writi
 
     In the simple mode you must remove the {{}} and add the value in the prompt.
 
-
     <img src="../images/enter-a-prompt.png" alt="Enter a Prompt" title="Enter a Prompt" style="border: 1px solid gray; zoom:80%;">
 
     Once you generate an output, you will be able to view the output as shown in the following image.
 
-    <img src="../images/output-result-from-template.png" alt="Output Result From Template" title="Output Result From Template" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/output-result-from-template.png" alt="Output Result From Template" title="Output Result From Template" style="border: 1px solid gray; zoom:80%;">

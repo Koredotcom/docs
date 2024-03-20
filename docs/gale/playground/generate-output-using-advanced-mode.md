@@ -13,9 +13,9 @@ On the Prompt page, you can find a Prompt sample auto-populated based on the tem
 
     <img src="../images/generate-output-in-advanced-mode.png" alt="Generate Output in Advanced Mode" title="Generate Output in Advanced Mode" style="border: 1px solid gray; zoom:80%;">
 
-    The Prompt playground view is enhanced for you with other options to explore.
+The Prompt playground view is enhanced for you with other options to explore.
 
-   <img src="../images/advanced-mode-options.png" alt="Advanced Mode Options" title="Advanced Mode Options" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/advanced-mode-options.png" alt="Advanced Mode Options" title="Advanced Mode Options" style="border: 1px solid gray; zoom:80%;">
 
 1. Click the **+Add Dataset** link under the **Dataset** section on the **Prompt** page to upload your CSV file with data.
 
@@ -41,17 +41,17 @@ On the Prompt page, you can find a Prompt sample auto-populated based on the tem
 
 1. Click the + icon corresponding to the **Add Model** section to add the models you want to select and compare the generated outputs.
 
-    !!! note
+!!! note
 
     For more information about how to add a model to the prompt, see **Add an external model**.
 
 1. Click **Generate Output** after you have added the required number of models to compare. The Generated output for comparison is displayed in the Model section of the Prompt playground space for your reference.
 
-    !!! note
+!!! note
 
     You can view the matrix in the generated output section which helps in deciding which prompt and model are better for your requirement.
 
-    <img src="../images/generated-output-matrix.png" alt="Generated Output Matrix" title="Generated Output Matrix" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/generated-output-matrix.png" alt="Generated Output Matrix" title="Generated Output Matrix" style="border: 1px solid gray; zoom:80%;">
 
 
 It displays the total tokens matrix which implies how many tokens are sent to the model and how many are sent back in the response, the time taken by the model to respond with the answer, and the response and request in the JSON format. You can click the **View in JSON format** icon at the bottom of the generated output section to view the request and response generated in JSON format in a separate dialog box as shown in the following image.

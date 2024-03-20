@@ -33,7 +33,8 @@ Once you have given your prompts in the Prompt box, you can test your prompts ac
 
     <img src="../images/add-model-2.png" alt="Add Model 3" title="Add Model 3" style="border: 1px solid gray; zoom:80%;">
 
-    !!! note
+    
+!!! note
 
     You can click the response to view the expanded view of the response, click the copy icon corresponding to the response to copy and use the response, make any settings changes in the model to see a difference in the model response, and remove the model if required.
 
