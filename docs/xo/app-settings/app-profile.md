@@ -1,10 +1,10 @@
 # App Profile
 
-To modify the general settings of a bot:
+To modify the general settings of a app:
 
-1. Select the **App Settings** from the left side menu.
+1. Open the app. Click the **launcher** on top of the screen and then click on **Settings**.
 2. Click **App Profile**.  
-<img src="../images/app-prof-img1-build-configurations-general-settings.png" alt="General Settings" title="General Settings" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/app-prof-img1-build-configurations-general-settings.gif" alt="General Settings" title="General Settings" style="border: 1px solid gray;zoom:50%;"/>
 
 ## General Bot Settings
 
