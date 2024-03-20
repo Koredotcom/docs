@@ -132,31 +132,31 @@ nav:
         - Node Types:
           - Overview: automation/use-cases/dialogs/node-types/nodes-transitions.md      
   - Models: 
-    - Overview: gale/models/overview.md 
+    - Overview: models/overview.md 
     - Custom Models: 
-      - Overview: gale/models/custom-models/custom-model-overview.md
-      - Create a Custom Model: gale/models/create-a-custom-model.md
-      - Deploy a Custom Model: gale/models/custom-models/deploy-a-custom-model.md
-      - Generate a new API Key: gale/models/custom-models/generate-an-api-key.md
-      - Configure your Custom Model: gale/models/custom-models/configure-your-custom-model.md
-      - Export your Custom Model: gale/models/custom-models/export-your-custom-model.md
+      - Overview: models/custom-models/custom-model-overview.md
+      - Create a Custom Model: models/create-a-custom-model.md
+      - Deploy a Custom Model: models/custom-models/deploy-a-custom-model.md
+      - Generate a new API Key: models/custom-models/generate-an-api-key.md
+      - Configure your Custom Model: models/custom-models/configure-your-custom-model.md
+      - Export your Custom Model: models/custom-models/export-your-custom-model.md
     - Open-Source Models: 
-      - Overview: gale/models/open-source-models/open-source-models-overview.md
-      - Select and Deploy an Open-Source model: gale/models/open-source-models/select-and-deploy-an-open-source-model.md
-      - Generate a new API key: gale/models/open-source-models/generate-an-api-key-open-source.md
-      - Configure your Open-Source Model: gale/models/open-source-models/configure-your-open-source-model.md
+      - Overview: models/open-source-models/open-source-models-overview.md
+      - Select and Deploy an Open-Source model: models/open-source-models/select-and-deploy-an-open-source-model.md
+      - Generate a new API key: models/open-source-models/generate-an-api-key-open-source.md
+      - Configure your Open-Source Model: models/open-source-models/configure-your-open-source-model.md
     - External Models: 
-      - Overview: gale/models/external-models/external-models-overview.md
-      - Add an External Model: gale/models/external-models/add-an-external-model.md   
+      - Overview: models/external-models/external-models-overview.md
+      - Add an External Model: models/external-models/add-an-external-model.md   
   - Playground: 
-    - Overview: gale/playground/overview.md
-    - Create a new Prompt Experiment: gale/playground/create-a-new-prompt-experiment.md
-    - Add a model: gale/playground/add-a-model.md
-    - Select a template for a Prompt: gale/playground/select-a-template-for-a-prompt.md
-    - Generate output using an Advanced Mode: gale/playground/generate-output-using-advanced-mode.md
-    - Explore other actions to perform: gale/playground/explore-other-actions-to-perform-in-the-prompt-playground.md    
+    - Overview: playground/overview.md
+    - Create a new Prompt Experiment: playground/create-a-new-prompt-experiment.md
+    - Add a model: playground/add-a-model.md
+    - Select a template for a Prompt: playground/select-a-template-for-a-prompt.md
+    - Generate output using an Advanced Mode: playground/generate-output-using-advanced-mode.md
+    - Explore other actions to perform: playground/explore-other-actions-to-perform-in-the-prompt-playground.md    
   - Data: 
-    - Overview: gale/data/overview.md 
-    - Upload a Data set: gale/data/upload-a-dataset.md
+    - Overview: data/overview.md 
+    - Upload a Data set: data/upload-a-dataset.md
        
    
