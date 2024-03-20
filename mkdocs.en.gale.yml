@@ -119,7 +119,7 @@ copyright: |
   © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
   - Home : home.md
-  - Getting Started:
+  - Getting Started: 
     - Introduction: gale/introduction.md
     - Core Capabilities of GALE: gale/core-capabilities-of-gale.md
   - Agents: 
@@ -131,9 +131,9 @@ nav:
         - Build Dialog Tasks: automation/use-cases/dialogs/using-the-dialog-builder-tool.md
         - Node Types:
           - Overview: automation/use-cases/dialogs/node-types/nodes-transitions.md      
-  - Models:
+  - Models: 
     - Overview: gale/models/overview.md 
-    - Custom Models:
+    - Custom Models: 
         - Overview: gale/models/custom-models/custom-model-overview.md
         - Create a Custom Model: gale/models/create-a-custom-model.md
         - Deploy a Custom Model: gale/models/custom-models/deploy-a-custom-model.md
@@ -145,17 +145,17 @@ nav:
         - Select and Deploy an Open-Source model: gale/models/open-source-models/select-and-deploy-an-open-source-model.md
         - Generate a new API key: gale/models/open-source-models/generate-an-api-key-open-source.md
         - Configure your Open-Source Model: gale/models/open-source-models/configure-your-open-source-model.md
-     - External Models:
+     - External Models: 
         - Overview: gale/models/external-models/external-models-overview.md
         - Add an External Model: gale/models/external-models/add-an-external-model.md   
-  - Playground:
+  - Playground: 
     - Overview: gale/playground/overview.md
     - Create a new Prompt Experiment: gale/playground/create-a-new-prompt-experiment.md
     - Add a model: gale/playground/add-a-model.md
     - Select a template for a Prompt: gale/playground/select-a-template-for-a-prompt.md
     - Generate output using an Advanced Mode: gale/playground/generate-output-using-advanced-mode.md
     - Explore other actions to perform: gale/playground/explore-other-actions-to-perform-in-the-prompt-playground.md    
-  - Data:
+  - Data: 
     - Overview: gale/data/overview.md 
     - Upload a Data set: gale/data/upload-a-dataset.md
        
