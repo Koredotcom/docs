@@ -68,7 +68,7 @@ A **Bot Connector integration** enables your bot to exchange messages with the _
 
 
 
-Create an app on the Kore.ai XO platform. A JWT Token is created with the **clientId** and **clientSecret** credentials. For more information, read[ Adding the Web/Mobile Client Channel](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-webmobile-client-channel/) article.
+Create an app on the Kore.ai XO platform. A JWT Token is created with the **clientId** and **clientSecret** credentials. For more information, read[ Adding the Web/Mobile Client Channel](./add-web-mobile-client.md) article.
 
 
 
