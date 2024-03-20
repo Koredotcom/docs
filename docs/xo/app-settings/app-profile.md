@@ -119,28 +119,27 @@ In Bot Builder, each Bot and task contains a set of predefined error messages al
 
 There are approximately 25 HTTP Status codes defined by default for a Bot or task. **To customize an HTTP Status code**
 
-  1. Open the Bot or task in Bot Builder
-  2. Select **App Settings** from left side menu.
-  3. Click **App Profile**
-  4. Scroll down to locate the **Error Messages** section.
-  5. Click the **Edit** <img src="../images/app-prof-editicon.png" width="20" style="border: 1px solid gray;"> icon for the code that you want to customize to open the **Setup Error Message** dialog.  
+  1. Open the app or task in UXO.
+  2. Navigate to **Settings**.
+  3. On the **App Profile** screen, scroll down to locate the **Error Messages** section.
+  4. Click the **Edit** <img src="../images/app-prof-editicon.png" width="20" style="border: 1px solid gray;"> icon for the code that you want to customize to open the **Setup Error Message** dialog.  
     
       <img src="../images/app-prof-img3-general-settings-error-messages-setup.png" alt="Setup Error Message" title="Setup Error Message" style="border: 1px solid gray;zoom:50%;"/>  
       
     
-  6. In the **Message Type** field, select one of:
+  5. In the **Message Type** field, select one of:
     1. **Custom** – Displays a **Custom Message** field to define an error-specific message for the end-user.
     2. **Source** – Displays the **Error Paths** field where you can define the JSON path from the JSON response payload for HTTP Status codes other than those in the 2XX range (success messages).
 
-  7. In the **Action** field, specify the action to take when the number of consecutive errors defined in the **Error Recurrence** field is reached. Select one of:
+  6. In the **Action** field, specify the action to take when the number of consecutive errors defined in the **Error Recurrence** field is reached. Select one of:
     1. **Disable** – The task is set to **Inactive** when the error occurs. The end-user can activate the task when needed.
     2. **Reschedule** – Displays the **Retry Interval** field used to define the elapsed time in minutes after which to retry the task when the error occurs.
     3. **Disable Auth** – When the error occurs, the authorization mechanism defined for the task is disabled. Any other task that uses the same authorization mechanism is also disabled.
     4. **Notify** – Displays the error message in the end-user interface.  
   <img src="../images/app-prof-img4-general-settings-error-messages-setup-actions.png" alt="Action on Error" title="Action on Error" style="border: 1px solid gray;zoom:50%;"/>   
     
-  8. In the **Message** field (available only for the default messages), enter the text message displayed to the end-user.
-  9. In the **Error Recurrence** field, specify the number of consecutive error codes must be returned before the action is executed. By default, the **Error Recurrence** field is set to ” 1 “.
-  10. Click **Add** to save and close the **Setup Error Message** dialog for your custom error message.
+  7. In the **Message** field (available only for the default messages), enter the text message displayed to the end-user.
+  8. In the **Error Recurrence** field, specify the number of consecutive error codes must be returned before the action is executed. By default, the **Error Recurrence** field is set to ” 1 “.
+  9. Click **Add** to save and close the **Setup Error Message** dialog for your custom error message.
 
 To create a new HTTP Status code, click **Add Error Message**, define the fields for your new code as described in the preceding section, and then click **Add.**
