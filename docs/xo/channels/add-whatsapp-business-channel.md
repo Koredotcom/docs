@@ -109,9 +109,9 @@ The important steps in completing this channel enablement are as follows:
 1. [Create a GupShup Application](#step-1-create-a-gupshup-application). 
 2. [Configure the Channel Enablement](#step-2-configure-the-channel-enablement).
 
-* [Create a WABA (WhatsApp Business Account)](#step-2a-create-a-new-whatsapp-business-account).
-* [Set up the WABA Parameters on the Platform](#step-2b-set-up-the-waba-parameters-on-the-platform).
-* [Configure the Callback URL/Webhook URL](#step-2c-configure-the-callback-urlwebhook-url).
+    * [Create a WABA (WhatsApp Business Account)](#step-2a-create-a-new-whatsapp-business-account).
+    * [Set up the WABA Parameters on the Platform](#step-2b-set-up-the-waba-parameters-on-the-platform).
+    * [Configure the Callback URL/Webhook URL](#step-2c-configure-the-callback-urlwebhook-url).
 
 3. [Secure the Integration](#step-3-secure-the-integration).
 

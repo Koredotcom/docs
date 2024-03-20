@@ -32,9 +32,9 @@ The following features enable  the seamless integration of your Kore.ai VAs with
 
 To setup IVR integration, perform the following steps:
 
-1. **[Configure IVR Settings](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#Configure_IVR_Settings)**: Define IVR settings such as transcription options, welcome messages, standard responses, and VXML properties.
-2. **[Configure Dialog Node IVR Properties](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#Configure_Dialog_Node_IVR_Properties)**: Define dialog by configuring node-specific grammar, prompts, and call flow behavior like time-out, retries.
-3. **[IVR Channel Setup](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#IVR_Channel_Setup)**: Set up authentication, configure WebHook in your IVR system and enable channel.
+1. [Configure IVR Settings](#configure-ivr-settings): Define IVR settings such as transcription options, welcome messages, standard responses, and VXML properties.
+2. [Configure Dialog Node IVR Properties](#configure-dialog-node-ivr-properties): Define dialog by configuring node-specific grammar, prompts, and call flow behavior like time-out, retries.
+3. [IVR Channel Setup](#ivr-channel-setupp): Set up authentication, configure WebHook in your IVR system and enable channel.
 
 
 ### Configure IVR Settings
@@ -48,7 +48,7 @@ Steps to configure IVR settings for your Virtual Assistant:
 3. Locate and click the **IVR** under Voice Channels. The IVR Panel with **Instructions** is displayed.
   ![IVR panel](../images/third-party-voice.png "IVR panel")
 4. On the **Configurations** tab, perform the following steps:
-5. Use **Kore.ai IVR Sandbox** for testing your VA. See [Sandbox Configuration ](https://developer.kore.ai/docs/bots/advanced-topics/ivr-integration/ivr-integration/#ivr-sandbox)for more details.
+5. Use **Kore.ai IVR Sandbox** for testing your VA. See [Sandbox Configuration ](#sandbox-configuration)for more details.
 
     !!! note
 
