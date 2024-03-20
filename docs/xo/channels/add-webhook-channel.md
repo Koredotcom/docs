@@ -92,9 +92,10 @@ To associate an App, follow the below steps:
 
 
 8. Deselect the **Enable the Polling in Webhook V2** option to retrieve the complete response, all at once, without the need for polling.
-    !!! note
 
-        This option is available only in Webhook v2.0. [Learn more](https://developer.kore.ai/docs/bots/channel-enablement/adding-webhook-channel/#Webhook_V20).
+    !!! 
+
+        This option is available only in Webhook v2.0. [Learn more](#webhook-v20).
 
 9. Select **Yes** to **Enable Channel**.
 

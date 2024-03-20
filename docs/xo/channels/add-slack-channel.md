@@ -106,10 +106,7 @@ If you want to enable the public distribution of your app on Slack, you must pro
 
 The _Successfully added Slack channel_ message is displayed at the top of the XO Platform. In _Slack_, it is optional to submit your app to the Slack App Directory.
 
-After the channel is enabled and all configurations are verified, you can optionally publish
+After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about [Publishing your Virtual Assistant](../deploy/publishing-bot.md).
 
-the assistant to make it available for end-users, with the new channel. Learn more about
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
 
-[Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
-
-To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)

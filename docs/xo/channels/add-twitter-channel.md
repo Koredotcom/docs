@@ -69,11 +69,11 @@ After the application is created:
 1. In the **Bots** section of the Bot Builder, click the bot you want to add the Twitter channel to.
 2. On the **Channels** tab, click the **Twitter** icon. The **Twitter Channel** page is displayed.
 3. Go to the Configurations tab.
-4. Enter the **API key**, **API Secret Key**, **Access Token**, and **Access Token Secret** obtained from the [Keys and Tokens](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-twitter-channel/#Keys_Tokens) tab of your Twitter app.
-5. Enter the **Environment Label** as set up in the [Permissions](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-twitter-channel/#Permissions) section of the Twitter app.
+4. Enter the **API key**, **API Secret Key**, **Access Token**, and **Access Token Secret** obtained from the [Keys and Tokens](#keys--tokens) tab of your Twitter app.
+5. Enter the **Environment Label** as set up in the [Permissions](#permissions) section of the Twitter app.
 6. Click **Authorize** to register a webhook with your Twitter app and to subscribe to realtime activities.
 7. **Enable Channel** and **Save**.
-8. Your Twitter channel is set up and ready for [Publishing your Bot](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
+8. Your Twitter channel is set up and ready for [Publishing your Bot](../deploy/publishing-bot.md).
 
 
 ## Edit Twitter Channel
@@ -83,8 +83,7 @@ To edit the Twitter channel, follow the below steps:
 
 1. Hover over the channel and click to modify.
 2. You can make necessary updates to your channel configurations and save them.
-3. You can also disable or delete the channel information by clicking the **Settings** icon.
-<img src="../images/Twitter4.png" alt="Twitter settings" title="Twitter settings" style="border: 1px solid gray; zoom:70%;">
+3. You can also disable or delete the channel. [Learn more](adding-channels-to-your-bot.md#editing-testing-disabling-or-deleting-channels)
 4. Select one of the following commands to modify the channel:
 
   * **Disable/Enable** – Click **Disable** to temporarily disable the use of the Twitter channel for your bot. To enable use of Twitter, click **Enable**.

@@ -213,9 +213,9 @@ Click the icon of the channel you want to add, and then configure the channel to
    <a href="../add-line-messenger-channel" target="_blank"><img src="../images/logo27-line.png" width="50"></a>
    </td>
 
-   <td style="width:25%;"><a href="../add-skype-business-onpemise-channel" target="_blank">Skype</a>
+   <td style="width:25%;"><a href="../add-skype-channel" target="_blank">Skype</a>
    <br><br>  
-   <a href="../add-skype-business-onpemise-channel" target="_blank"><img src="../images/logo28-skype.png" width="50"></a>
+   <a href="../add-skype-channel" target="_blank"><img src="../images/logo28-skype.png" width="50"></a>
    </td>
 
    <td style="width:25%;"><a href="../add-telegram-channel" target="_blank">Telegram</a>
@@ -230,9 +230,9 @@ Click the icon of the channel you want to add, and then configure the channel to
    <a href="../add-twitter-channel" target="_blank"><img src="../images/logo30-twitter.png" width="50"></a>
    </td>
 
-   <td><a href="../add-wechat-telegram" target="_blank">WeChat</a>
+   <td><a href="../add-wechat-channel" target="_blank">WeChat</a>
    <br>  
-   <a href="../add-wechat-telegram" target="_blank"><img src="../images/logo31-we-chat.png" width="50"></a>
+   <a href="../add-wechat-channel" target="_blank"><img src="../images/logo31-we-chat.png" width="50"></a>
    </td>
 
    <td>
