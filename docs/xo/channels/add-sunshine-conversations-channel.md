@@ -46,10 +46,10 @@ For example: When you provide `SessionKey` as **key** and `apikeyvalue` as **val
 * When the Conversation is handed over to the Platform after the agent transfer, the session closure functionality works as usual.
 * For all the new bots or existing bots that do not have at least one **SessionClosure** metadata tag, the **SessionClosure** switch is turned off by default.
 * For all the existing bots that have at least one **SessionClosure** metadata tag, the switch is turned on by default.
-*  The Platform introduces the[ KoreUtil.getSunshineConversationsMetadata()](https://developer.kore.ai/docs/bots/advanced-topics/koreutil-libraries/#koreUtilgetSunshineConversationsMetadata)<span style="text-decoration:underline;"> </span>function to let a Bot developer fetch the stored metadata (Get API operation), and use it for the following:
+*  The Platform introduces the[ KoreUtil.getSunshineConversationsMetadata](../apis/automation/koreutil-libraries.md#koreutilgetsunshineconversationsmetadata) function to let a Bot developer fetch the stored metadata (Get API operation), and use it for the following:
     * Entities where JavaScript is supported like advanced messages for a prompt, script nodes, etc.
     * Simple messages like plain text prompts.
-* Any additional changes or updates to the channel configurations should go through the[ Bot Publish](https://developer.kore.ai/docs/bots/publish/publishing-bot/) cycle.
+* Any additional changes or updates to the channel configurations should go through the[ Bot Publish](../deploy/publishing-bot.md) cycle.
 
 **Selecting the Default and Next Integrations for Transferring Control**
 
