@@ -13,7 +13,7 @@ On the Prompt page, you can find a Prompt sample auto-populated based on the tem
 
     <img src="../images/generate-output-in-advanced-mode.png" alt="Generate Output in Advanced Mode" title="Generate Output in Advanced Mode" style="border: 1px solid gray; zoom:80%;">
 
-The Prompt playground view is enhanced for you with other options to explore.
+    The Prompt playground view is enhanced for you with other options to explore.
 
     <img src="../images/advanced-mode-options.png" alt="Advanced Mode Options" title="Advanced Mode Options" style="border: 1px solid gray; zoom:80%;">
 

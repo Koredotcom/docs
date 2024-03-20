@@ -15,7 +15,7 @@ Once you have given your prompts in the Prompt box, you can test your prompts ac
 
     !!! note
 
-    Follow the preceding process of adding an external model only if you are adding any model for the first time. If you have already added a model, it is automatically displayed in the pop-up list when you click the **Add model** button. For example, if you have added the Claude-v1 model from Anthropic then it is displayed in the pop-up and you click to select the model as shown in the following image.
+        Follow the preceding process of adding an external model only if you are adding any model for the first time. If you have already added a model, it is automatically displayed in the pop-up list when you click the **Add model** button. For example, if you have added the Claude-v1 model from Anthropic then it is displayed in the pop-up and you click to select the model as shown in the following image.
 
     <img src="../images/add-model-1.png" alt="Add Model 1" title="Add Model 1" style="border: 1px solid gray; zoom:80%;">
 

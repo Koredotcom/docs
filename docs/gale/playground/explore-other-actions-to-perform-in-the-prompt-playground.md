@@ -42,14 +42,13 @@ You can review the timeline of prompts and their corresponding generated outputs
 
 * Click the required old version of the experiment. The Restore option is displayed on the footer of the prompt experiment page.
 
+
     !!! note
 
-    You can import and copy the older version of the prompt experiment if required.
+        You can import and copy the older version of the prompt experiment if required.
 
-
-    
+ 
     <img src="../images/restore-old-version.png" alt="Restore Old Version" title="Restore Old Version" style="border: 1px solid gray; zoom:80%;">
-
 
 * Click **Restore** to view the selected version of the prompt experiment.
 
