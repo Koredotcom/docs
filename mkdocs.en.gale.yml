@@ -120,8 +120,8 @@ copyright: |
 nav:
   - Home : home.md
   - Getting Started: 
-    - Introduction: gale/introduction.md
-    - Core Capabilities of GALE: gale/core-capabilities-of-gale.md
+    - Introduction: introduction.md
+    - Core Capabilities of GALE: core-capabilities-of-gale.md
   - Agents: 
     - Overview: automation/about-automation.md
     - USE CASES: 
