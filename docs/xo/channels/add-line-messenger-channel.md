@@ -7,7 +7,7 @@ To add the LINE channel to your Kore.ai bot, you must set up a webhook integrati
 
 
 
-1. Log in to your [LINE Developer account portal](https://developers.line.me/), and click **Create a new provider**. If you already have a _Provider_ that you want to use for this bot, then choose the provider from the Provider_ List._
+1. Log in to your [LINE Developer account portal](https://developers.line.me/), and click **Create a new provider**. If you already have a _Provider_ that you want to use for this bot, then choose the provider from the Provider _List_.
 <img src="../images/line.png" alt="line channel" title="line channel" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -66,6 +66,6 @@ To add the LINE channel to your Kore.ai bot, you must set up a webhook integrati
 
 We recommend that you review additional options available for your LINE channels like group behavior, auto-replies, and greetings messages.
 
-After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md).

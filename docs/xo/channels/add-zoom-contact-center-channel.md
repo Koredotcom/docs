@@ -72,7 +72,7 @@ To create an app, follow the steps below:
         <img src="../images/Zoom3.png" alt="show standard messages" title="show standard messages" style="border: 1px solid gray; zoom:100%;">
 
 
-    * Click **Manage Responses** to add custom messages in the push notification. To learn more about adding responses, read articles [Default Standard Responses](https://developer.kore.ai/docs/bots/bot-intelligence/default-standard-responses/) and [Default Conversations](https://developer.kore.ai/docs/bots/bot-intelligence/default-dialog/).
+    * Click **Manage Responses** to add custom messages in the push notification. To learn more about adding responses, read articles [Default Standard Responses](../automation/intelligence/conversation-management/standard-responses.md) and [Default Conversations](../automation/intelligence/conversation-management/default-conversations.md).
     * Click **Save** and then, click **Create**.
     <img src="../images/Zoom4.png" alt="manage responses" title="manage responses" style="border: 1px solid gray; zoom:100%;">
 
