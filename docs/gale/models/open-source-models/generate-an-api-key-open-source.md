@@ -1,4 +1,4 @@
-## **Generate a new API key**
+## Generate a new API key
 
 You can generate an API key for your open-source model and share it with other trusted users. It is essential to have a secure API key when trying to connect to this open-source model in an external ecosystem.  
 

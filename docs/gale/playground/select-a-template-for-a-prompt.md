@@ -1,4 +1,4 @@
-# **Select a template for a prompt**
+# Select a template for a prompt
 
 You can use the pre-defined templates available in GALE while providing prompts to make your experience easy and save time. There are different categories of templates that you can use to get the desired output. The different categories include analyzing documents, writing and conversation, learning, and coding. In each of the categories, there are a few templates that can be used for a specific task. 
 

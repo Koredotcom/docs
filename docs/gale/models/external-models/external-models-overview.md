@@ -1,4 +1,4 @@
-# **External Models**
+# External Models
 
 GALE offers flexible options for integrating commercial models.
 

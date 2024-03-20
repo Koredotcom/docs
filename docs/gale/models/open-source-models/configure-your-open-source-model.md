@@ -1,4 +1,4 @@
-## **Configure your open-source model**
+## Configure your open-source model
 
 You can modify the general details of the open-source model if required.
 

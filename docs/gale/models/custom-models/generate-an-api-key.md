@@ -1,4 +1,4 @@
-## **Generate a new API key**
+## Generate a new API key
 
 You can generate an API for your custom model and share it with other trusted users. It is essential to have a secure API key when trying to connect to this custom model in an external environment.  
 
