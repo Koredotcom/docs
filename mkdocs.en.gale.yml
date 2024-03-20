@@ -134,20 +134,20 @@ nav:
   - Models: 
     - Overview: gale/models/overview.md 
     - Custom Models: 
-        - Overview: gale/models/custom-models/custom-model-overview.md
-        - Create a Custom Model: gale/models/create-a-custom-model.md
-        - Deploy a Custom Model: gale/models/custom-models/deploy-a-custom-model.md
-        - Generate a new API Key: gale/models/custom-models/generate-an-api-key.md
-        - Configure your Custom Model: gale/models/custom-models/configure-your-custom-model.md
-        - Export your Custom Model: gale/models/custom-models/export-your-custom-model.md
+      - Overview: gale/models/custom-models/custom-model-overview.md
+      - Create a Custom Model: gale/models/create-a-custom-model.md
+      - Deploy a Custom Model: gale/models/custom-models/deploy-a-custom-model.md
+      - Generate a new API Key: gale/models/custom-models/generate-an-api-key.md
+      - Configure your Custom Model: gale/models/custom-models/configure-your-custom-model.md
+      - Export your Custom Model: gale/models/custom-models/export-your-custom-model.md
     - Open-Source Models: 
-        - Overview: gale/models/open-source-models/open-source-models-overview.md
-        - Select and Deploy an Open-Source model: gale/models/open-source-models/select-and-deploy-an-open-source-model.md
-        - Generate a new API key: gale/models/open-source-models/generate-an-api-key-open-source.md
-        - Configure your Open-Source Model: gale/models/open-source-models/configure-your-open-source-model.md
-     - External Models: 
-        - Overview: gale/models/external-models/external-models-overview.md
-        - Add an External Model: gale/models/external-models/add-an-external-model.md   
+      - Overview: gale/models/open-source-models/open-source-models-overview.md
+      - Select and Deploy an Open-Source model: gale/models/open-source-models/select-and-deploy-an-open-source-model.md
+      - Generate a new API key: gale/models/open-source-models/generate-an-api-key-open-source.md
+      - Configure your Open-Source Model: gale/models/open-source-models/configure-your-open-source-model.md
+    - External Models: 
+      - Overview: gale/models/external-models/external-models-overview.md
+      - Add an External Model: gale/models/external-models/add-an-external-model.md   
   - Playground: 
     - Overview: gale/playground/overview.md
     - Create a new Prompt Experiment: gale/playground/create-a-new-prompt-experiment.md
