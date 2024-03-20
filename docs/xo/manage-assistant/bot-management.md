@@ -36,49 +36,52 @@ You can import tasks and configurations of a specific assistant into a new or ex
 To import a Virtual Assistant, follow these steps:
 
 1. Open the assistant you want to export.
-2. Select the **Deploy** tab from the top menu.
-3. From the left menu select **Bot Management > Import & Export**.
+2. Select the **Deploy** tab from the left menu.
+3. Select **Import & Export** under **DEPLOY MANAGEMENT**.
 4. On the Import & Export page select the **Import** tab.
 5. Click the **Choose File** buttons next to the **Bot Definition File** field and **Bot Config File** field, and upload the _botDefinition.json_ and _config.json_ files respectively.
 6. Optionally, upload the custom script file from the imported assistant if any. The file size is limited to 500kb.
-<img src="../images/bot-import-custom-script-file.png" alt="App import - Custom script file" title="App import - Custom script file" style="border:1px solid gray; zoom:70%;">
+    <img src="../images/bot-import-custom-script-file.png" alt="App import - Custom script file" title="App import - Custom script file" style="border:1px solid gray; zoom:70%;">
 
-7. Select one of these import options: **Full Import** or **Incremental Import**.
+7. Select one of these import options: **Full Import** or **Incremental Import**. You will get a warning to backup your assistant before performing the import.
 8. If you select **Full import**, the bot definition in the in-development copy will be overwritten with the definition present in the import file.
-
-* If there are one or more additional tasks or languages in the assistant, and if these are not present in the import definition, then these tasks will be marked as deleted and will be removed when the bot is published.
-* You can choose to auto-publish the assistant post-import.
-<img src="../images/bm(11).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
-
-* If you select **Incremental import**, you can also choose which components to import.
-<img src="../images/bm(4).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
-
-* **Bot Tasks**: Here is where you can select to import Tasks only (with or without comments), Knowledge Graph, Small Talk or Digital Forms.
-
-    !!! note
-
-        If you want to import one or more Bot Tasks, also select the **NLP Data** settings, as they are linked. For example, the utterances assigned to dialog tasks are not imported if you don’t select the NLP Data settings, causing problems in identifying the dialog properly.
-
-* **NLP Data**: This is where you can import NLP Settings, Utterances, Patterns and Standard Responses. ML Utterances and Patterns can either be Appended or Replaced.
-
-    1. **Append** can be used when the utterances present in the file should be imported into the assistant and any additional utterances in the bot should be retained (this is the default behavior).
-    2. **Replace** can be used when the utterances present in the file should be imported into the assistant. Any additional utterances will be removed.
     
-       In case you are importing Tasks too, the additional utterances related to tasks being imported will be removed.
-     <img src="../images/bm(1).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
+    * If there are one or more additional tasks or languages in the assistant, and if these are not present in the import definition, then these tasks will be marked as deleted and will be removed when the bot is published.
+
+9. If you select **Incremental import**, you can also choose which components to import.
+
+    ![alt_text](images/bm(4).png "image_tooltip")
+
+    * **Bot Tasks**: Here is where you can select to import Tasks only (with or without comments), Knowledge Graph, Small Talk or Digital Forms.
+
+        !!! note
+
+            If you want to import one or more Bot Tasks, also select the **NLP Data** settings, as they are linked. For example, the utterances assigned to dialog tasks are not imported if you don’t select the NLP Data settings, causing problems in identifying the dialog properly.
+
+    * **NLP Data**: This is where you can import Synonyms, Concepts, Traits, Rules, Utterances, Patterns and Standard Responses. ML Utterances and Patterns can either be Appended or Replaced.
+            
+        1. **Append** can be used when the utterances present in the file should be imported into the assistant and any additional utterances in the bot should be retained (this is the default behavior).
+        2. **Replace** can be used when the utterances present in the file should be imported into the assistant. Any additional utterances will be removed.
+        
+            In case you are importing Tasks too, the additional utterances related to tasks being imported will be removed. 
+
+
+            ![alt_text](images/bm(1).png "image_tooltip")
+
+        3. The imported Traits, Synonyms and Concepts will replace those in the target bot. Rules can be imported along with their tagged dialog tasks.
 
     * **Settings**: Bot Settings, Bot Variables and Voice Call Properties.
     * **Custom Dashboards** – This is useful in case you have created custom dashboards under the Analyze section and you want to import these to the new VA as well. 
     * On the confirmation dialog that opens, click **Backup** to download the existing assistant configuration.
 
-    <img src="../images/bm(8).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
-
+        ![alt_text](images/bm(8).png "image_tooltip")
+    
         !!! note
 
             While backing up is an optional choice, we strongly recommend you do so, especially when choosing Full Import, as you cannot recover the configurations after the imported assistant replaces them.
 
-    3. Click **Proceed** to start the import.
-    4. After the import is completed, the following success message appears. Click **Done**.
+10. Click **Proceed** to start the import.
+11. After the import is completed, the following success message appears. Click **Done**.
     
     !!! note
 
@@ -89,7 +92,11 @@ To import a Virtual Assistant, follow these steps:
 To import a VA while creating it, follow these steps: 
 
 1. On the landing page, click **New Bot**.
-<img src="../images/bm(7).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
+
+
+
+
+    ![alt_text](images/bm(7).png "image_tooltip")
 
 6. In the **Create New Bot** window, select **Import a Bot**.
 7. Enter a **Name**. 
@@ -97,8 +104,16 @@ To import a VA while creating it, follow these steps:
 9. Upload the **Bot Definition File**.
 10. Upload the **Bot Config File**.
 11. Upload the **Custom Script File**. The file size is limited to 500kb.
-12. Click **Import** when ready.
-<img src="../images/bm(5).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
+12. Click **Import** when ready. 
+
+
+
+
+    ![alt_text](images/bm(5).png "image_tooltip")
+
+
+
+
 
 ### Components in the Incremental Import
 
@@ -137,6 +152,19 @@ To import a VA while creating it, follow these steps:
    <td>Knowledge Graph, Bot Synonyms and Standard Responses
    </td>
    <td>Existing knowledge graph, bot synonyms, and standard responses in the target assistant are replaced with the imported ones.
+   </td>
+  </tr>
+  <tr>
+   <td>Synonyms, Concepts, and Traits
+   </td>
+   <td>They are imported from the source bot along with all their underlying terms, and replace the ones in the target bot.
+   </td>
+  </tr>
+  <tr>
+   <td>Rules
+   </td>
+   <td>Rules will be imported only if their tagged dialog tasks are imported.<br><br>
+    <strong>Note</strong>: On-Prem customers can import the NLP components (Synonyms, Concepts, Rules, Traits) from a source bot of a higher version to a target bot of a lower version by checking the <strong>NLP Settings</strong> checkbox. However, Rules won’t import unless the tagged dialog tasks are also imported.
    </td>
   </tr>
 </table>
@@ -264,15 +292,19 @@ When you export a VA in the Latest mode, the latest versions of the  tasks get e
   </tr>
 </table>
 
-#### **Steps in Exporting the Assistant**
+#### Steps in Exporting the Assistant
 
 1. Open the assistant you want to export.
-2. Select **Deploy** tab from the top menu.
-3. From the left menu select **Bot Management > Import & Export**.
+2. Select **Deploy** tab from the left menu.
+3. Select **Import & Export** under **DEPLOY MANAGEMENT**.
 4. On the Import & Export page, select the **Export** tab.
 5. In the Export tab, select either **Published** or **Latest Version** exporting mode.
 6. By default, all the components are selected for export. Deselect the items that you do not want to export.
-<img src="../images/bm(10).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
+
+
+
+
+    ![alt_text](images/bm(10).png "image_tooltip")
 
 7. For Tasks, you can further choose to export only select tasks. By default All Tasks are selected. Click the All Tasks link to open **Select Tasks** dialog to choose the tasks you want to export.
 
@@ -285,7 +317,15 @@ When you export a VA in the Latest mode, the latest versions of the  tasks get e
     * Dialogs linked in defining ‘Behavior on Exceeding Retries’ for IVR Properties of any node of the dialog;
     * Dialog linked as part of sub-intent / interruption settings;
     * Any other scenario where a dialog execution could fail if a dependent task is not included;
-    <img src="../images/bm(1).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
+
+
+
+
+
+        ![alt_text](images/bm(1).png "image_tooltip")
+
+
+
 
 9. Click **Export**. The export happens in the background and the **Download** button gets activated after it is complete. Click **Download** to download the file to your local computer.
 
@@ -295,7 +335,7 @@ When you export a VA, the following components get exported, depending on your L
 
 <table>
   <tr>
-   <td colspan="2" >Tasks
+   <td colspan="2" ><strong>Tasks</strong>
    </td>
   </tr>
   <tr>
@@ -320,7 +360,7 @@ When you export a VA, the following components get exported, depending on your L
    </td>
   </tr>
   <tr>
-   <td colspan="2" >NLP Data
+   <td colspan="2" ><strong>NLP Data</strong>
    </td>
   </tr>
   <tr>
@@ -335,11 +375,17 @@ When you export a VA, the following components get exported, depending on your L
 
 <li>Threshold and Configurations settings for
 
+<ul style="padding-left: 30px;">
 <li>Fundamental meaning
 
 <li>Knowledge Graph
 
 <li>Machine Learning
+</ul>
+
+<li>Concepts, Synonyms, and traits, even if no tasks are specifically selected
+
+<li>Rules, only if you are exporting the corresponding dialog tasks too.
 </li>
 </ul>
    </td>
@@ -357,7 +403,7 @@ When you export a VA, the following components get exported, depending on your L
    </td>
   </tr>
   <tr>
-   <td colspan="2" >Settings
+   <td colspan="2" ><strong>Settings</strong>
    </td>
   </tr>
   <tr>

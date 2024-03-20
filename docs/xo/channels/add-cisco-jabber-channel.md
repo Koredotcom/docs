@@ -20,11 +20,14 @@ To add the Cisco Jabber channel, follow the below steps:
 <img src="../images/add-jabber.png" alt="add jabber" title="add jabber" style="border: 1px solid gray; zoom:70%;">
 
 
-After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
+
+
 
 Following are code snippets of the payload formats for verifying the integration.
+
 
 
 ## Payload for Post URL
