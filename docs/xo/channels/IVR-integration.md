@@ -167,7 +167,7 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
             "app_root":"app.vxml"
     }'
     ```
-4. To view mandatory and optional request parameters, [click here](#mandatory-and-optional-request-parameters).
+4. For more information, see [mandatory-and-optional-request-parameters](#mandatory-and-optional-request-parameters).
 
 
     

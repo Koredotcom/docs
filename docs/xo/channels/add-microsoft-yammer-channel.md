@@ -23,8 +23,7 @@ To add the Yammer channel, follow the below steps:
 3. In a new browser tab, log in to your **Yammer Developer** account and go to the **My Apps** section to register a new app.
 4. To create an app, click **Register New App**. Enter the required details in the listed fields.
 5. Copy the _Redirect URL_ from the **Configurations** tab of the Yammer Channel page and enter it in the **Redirect URL** field.
-6. Click **Continue** to create the app.
-<img src="../images/Yammer-1.png" alt="add Yammer channel" title="add Yammer channel" style="border: 1px solid gray; zoom:70%;">
+6. Click **Continue** to create the app.  <img src="../images/Yammer-1.png" alt="add Yammer channel" title="add Yammer channel" style="border: 1px solid gray; zoom:70%;">
 
 7. After app creation, you are redirected to the **App Details** page. Capture the **Client ID** and **Client Secret** of your Yammer channel and provide them in the **Configurations** tab of LINE channel page.  <img src="../images/Yammer-2.png" alt="yammer configurations" title="yammer configurations" style="border: 1px solid gray; zoom:70%;">
 
