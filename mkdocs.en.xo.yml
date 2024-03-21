@@ -121,23 +121,24 @@ copyright: |
 nav:
   - Platform : home.md
   - Getting Started:
-    - XO Platform: getting-started/xo-platform-overview.md
-    - Accessing the Platform: getting-started/accessing-the-platform.md   
-    - Navigating the Platform: getting-started/navigating-the-platform.md
-    - Automation AI:
-      - About Virtual Assistant: virtual-assistants-overview.md
-      - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
-    - Search AI:
-      - About Answers: virtual-assistants-overview.md
-      - Configure Answers: virtual-assistants-overview.md   
-    - Agent AI:
-      - About AgentAssist: virtual-assistants-overview.md
-      - Set up AgentAssist: virtual-assistants-overview.md       
-    - Contact Center AI:
-      - About Contact Center: virtual-assistants-overview.md
-      - Set up Contact Center: virtual-assistants-overview.md     
-    - Glossary:
-      - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
+    - Overview: getting-started/xo-platform-overview.md
+    - XO Platform:
+      - Accessing the Platform: getting-started/accessing-the-platform.md   
+      - Navigating the Platform: getting-started/navigating-the-platform.md
+      - Automation AI:
+        - About Virtual Assistant: virtual-assistants-overview.md
+        - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
+      - Search AI:
+        - About Answers: virtual-assistants-overview.md
+        - Configure Answers: virtual-assistants-overview.md   
+      - Agent AI:
+        - About AgentAssist: virtual-assistants-overview.md
+        - Set up AgentAssist: virtual-assistants-overview.md       
+      - Contact Center AI:
+        - About Contact Center: virtual-assistants-overview.md
+        - Set up Contact Center: virtual-assistants-overview.md     
+     - Glossary:
+       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
   - Automation AI: 
     - Overview: automation/about-automation.md
     - Use Cases: 
