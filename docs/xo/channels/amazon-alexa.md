@@ -106,7 +106,7 @@ The `AMAZON.SearchQuery` slot type helps capture less-predictable user utterance
 To configure a custom Interaction Model for the **SearchQuery** Slot Type, follow the steps below:
 
 
-1. Follow the sequence in Step 4 of [Dialog Migration to Extract the Dialog Tasks from Kore.ai](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-amazon-alexa-channel/#Dialog_Migration_to_Extract_the_Dialog_Tasks_from_Koreai).
+1. Follow the sequence in Step 4 of [Dialog Migration to Extract the Dialog Tasks from Kore.ai](#dialog-migration-to-extract-the-dialog-tasks-from-koreai).
 2. Create a new custom intent by following these [steps](#dialog-migration-to-extract-the-dialog-tasks-from-koreai).
 3. After writing a few utterances, pick the words or phrases representing variable information as the intent’s slots; For example, “_I would like to order two iPhones_.”
 4. Create a slot for each word or phrase and replace the original word with the slot name in curly brackets **({ })**.
