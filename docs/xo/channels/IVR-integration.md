@@ -167,78 +167,10 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
             "app_root":"app.vxml"
     }'
     ```
-4. The following table provides the descriptions of all the mandatory and optional request parameters:
+4. For more information, see [mandatory-and-optional-request-parameters](#mandatory-and-optional-request-parameters).
 
 
-    <table>
-      <tr>
-      <td>
-        <strong>PARAMETER</strong>
-      </td>
-      <td>
-        <strong>REQUIRED</strong>
-      </td>
-      <td>
-        <strong>DESCRIPTION</strong>
-      </td>
-      </tr>
-      <tr>
-      <td>
-        callId
-      </td>
-      <td>
-        Y
-      </td>
-      <td>
-        Unique Id to identify or create a new user
-      </td>
-      </tr>
-      <tr>
-      <td>
-        message
-      </td>
-      <td>
-        Y
-      </td>
-      <td>
-        Message from User. If the value is empty, then the Welcome message will be triggered.
-      </td>
-      </tr>
-      <tr>
-      <td>
-        from
-      </td>
-      <td>
-        N
-      </td>
-      <td>
-        Created as a secondary user identity
-      </td>
-      </tr>
-      <tr>
-      <td>
-        app_root
-      </td>
-      <td>
-        N
-      </td>
-      <td>
-        Select any document to be the application root document. **Note**: The application root contains the file path, which is an entry point for the application.
-
-      </td>
-      </tr>
-    <tr>
-   <td>
-    token
-   </td>
-   <td>
-    N
-   </td>
-   <td>
-    The JWT token can be passed in the body if it is not provided as a query parameter.
-   </td>
-      </tr>
-    </table>
+    
 
 4. Click the **Configurations** tab.
   ![configurations](../images/IVR-18.png "configurations")
@@ -254,6 +186,71 @@ Kore.ai Virtual Assistants require a JWT token to authenticate the incoming requ
 !!! note
 
     The Webhook Payload is used to test the IVR channel configuration for your VA. It can be tested using Postman.
+
+### Mandatory and optional Request Parameters
+
+
+
+
+<table>
+  <tr>
+   <td><strong>Parameter</strong>
+   </td>
+   <td><strong>Required</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>callId
+   </td>
+   <td>Y
+   </td>
+   <td>Unique Id to identify or create a new user
+   </td>
+  </tr>
+  <tr>
+   <td>message
+   </td>
+   <td>Y
+   </td>
+   <td>Message from User. If the value is empty, then the Welcome message will be triggered.
+   </td>
+  </tr>
+  <tr>
+   <td>from
+   </td>
+   <td>N
+   </td>
+   <td>Created as a secondary user identity 
+   </td>
+  </tr>
+  <tr>
+   <td>app_root
+   </td>
+   <td>N
+   </td>
+   <td>Select any document to be the application root document
+
+
+
+<pre class="prettyprint">Note: The application root contains the file path, which is an entry point for the application.</pre>
+
+
+   </td>
+  </tr>
+  <tr>
+   <td>token
+   </td>
+   <td>N
+   </td>
+   <td>The JWT token can be passed in the body if it is not provided as a query parameter.
+   </td>
+  </tr>
+</table>
+
+
+
 
 **Generating JWT Token**
 
