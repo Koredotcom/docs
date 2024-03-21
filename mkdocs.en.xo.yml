@@ -117,14 +117,14 @@ markdown_extensions:
   - pymdownx.snippets
 
 copyright: |
-  © 2023 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+  © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
   - Platform : home.md
   - Getting Started:
-    - Platform:
+    - XO Platform:
       - About the Platform: getting-started/about-xo-platform.md
-      - Access the Platform: virtual-assistants-overview.md   
-      - Virtual Assistant:
+      - Accessing the Platform: virtual-assistants-overview.md   
+      - Automation AI:
         - About Virtual Assistant: virtual-assistants-overview.md
         - Build a Virtual Assistant: virtual-assistants-overview.md   
       - Search AI:
@@ -135,15 +135,9 @@ nav:
         - Set up AgentAssist: virtual-assistants-overview.md       
       - Contact Center AI:
         - About Contact Center: virtual-assistants-overview.md
-        - Set up Contact Center: virtual-assistants-overview.md       
-      - Campaigns:
-        - About Campaigns: virtual-assistants-overview.md
-        - Set up Campaign: virtual-assistants-overview.md
+        - Set up Contact Center: virtual-assistants-overview.md     
     - Glossary:
-      - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md
-    - FAQs: 
-      - Automation FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
-      - Contact Center FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/   
+      - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
   - Virtual Assistant: 
     - Overview: automation/about-automation.md
     - Use Cases: 
@@ -366,10 +360,7 @@ nav:
     - Agent Experience:
       - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md       
   - Integrations & APIs:
-    - Overview: channels/IVR-integration.md
-    - Channels:
-      - topic 1: channels/IVR-integration.md
-      - topic 2: channels/IVR-integration.md
+    - Overview: channels/IVR-integration.md    
     - Integrations:
       - Actions:
         - Actions Overview: app-settings/integrations/actions/actions.md
