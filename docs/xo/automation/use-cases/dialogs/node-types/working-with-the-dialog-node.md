@@ -23,8 +23,8 @@ The key features of dialog nodes are listed below:
 
 Setting up an dialog node in a dialog task involves the following steps:
 
-1. Open the dialog task that you want to add the node to..
-2. Add a **Dialog** node in the designated place. [Read more about adding nodes.](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
+1. Open the dialog task that you want to add the node to.
+2. Add a **Dialog** node in the designated place. [Read more about adding nodes](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
 
 <img src="../images/dialog-task-node-img1.png" alt="Dialog node" title="Dialog node" style="border:1px solid gray;zoom:70%;">
 
@@ -40,7 +40,7 @@ The configurations you set up or edit in the **Component Properties** tab reflec
 On the **Component Properties** tab, under the **General Settings**, you can modify
     
 1. The **Name,**
-2. The Display Name,
+2. The **Display Name**,
 3. The **Description**.
 
 <img src="../images/dialog-task-node-img2.png" alt="Dialog node - Component properties" title="Dialog node - Component properties" style="border:1px solid gray;zoom:70%;">
@@ -61,6 +61,10 @@ To improve intent identification for the dialog task, add or define the followin
 
 
 ### Connections Properties
+
+!!! Note
+
+    If the node is at the bottom in the sequence, then only the connection property is visible.
 
 Click the **Connections** tab and set the transition properties to determine the node in the dialog task to execute next. You can write the conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. If you have defined the _Transition Property_ as _End of Dialog_, then these settings are ignored.
 
@@ -98,7 +102,7 @@ Click **Advanced Controls** to set up the below-listed options:
 
 1. **Interruptions Behavior**
     1. **Use the task level _Interruptions Behavior_ Setting**: The VA refers to the **Interruptions Behavior** settings set at the dialog task level.
-    2. **Customize for this node**: By configuring this option you can customize the **Interruptions Behavior** settings for this node.Read the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions){:target="_blank"} article for more information.
+    2. **Customize for this node**: By configuring this option you can customize the **Interruptions Behavior** settings for this node. Read the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions){:target="_blank"} article for more information.
 
 2. **Custom Tags** defines tags to build custom profiles of your bot conversations. [See here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}. You can add tags for the following:
     1. **Message –** Define custom tags to be added to the current message in the conversation.
