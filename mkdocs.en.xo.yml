@@ -137,8 +137,8 @@ nav:
       - Contact Center AI:
         - About Contact Center: virtual-assistants-overview.md
         - Set up Contact Center: virtual-assistants-overview.md     
-     - Glossary:
-       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
+    - Glossary:
+      - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
   - Automation AI: 
     - Overview: automation/about-automation.md
     - Use Cases: 
