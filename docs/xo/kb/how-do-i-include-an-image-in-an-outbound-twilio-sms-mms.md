@@ -15,5 +15,5 @@ curl -XPOST https://api.twilio.com/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXX
 
 **Related Links**
 
-* [Adding the Twilio SMS Channel](../channels/add-twilio-sms-channel.md)
+* [Adding the Twilio SMS Channel](../channels/add-twilio-sms-channel.md){:target="_blank"}.
 * <a href="https://support.twilio.com/hc/en-us/articles/223133907-Simple-Example-for-Sending-Programmable-SMS-Text-or-Picture-Messages" target="_blank">Simple Example for Sending Programmable SMS Text or Picture Messages (Twilio Doc)</a>

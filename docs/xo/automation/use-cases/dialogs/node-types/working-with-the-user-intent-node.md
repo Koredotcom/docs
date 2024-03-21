@@ -82,7 +82,7 @@ To improve intent identification for the dialog task, add or define the followin
 
 !!! Note
 
-    If the node is at the bottom in the sequence, then only the connection property is visible
+    If the node is at the bottom in the sequence, then only the connection property is visible.
 
 Click the **Connections** tab and set the transition properties to determine the node in the dialog task to execute next.
 
