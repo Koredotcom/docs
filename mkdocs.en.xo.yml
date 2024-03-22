@@ -232,7 +232,7 @@ nav:
       - Talk to Bot: automation/testing/talk-to-bot.md
       - Utterance Testing: automation/testing/testing-your-bot-with-nlp.md 
       - Regression Testing: 
-        - Health and Monitoring: getting-started.md 
+        - Health and Monitoring: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
         - Batch Testing: getting-started.md
         - Conversation Testing: getting-started.md
     - Advanced Topics:

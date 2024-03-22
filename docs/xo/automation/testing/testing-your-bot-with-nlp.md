@@ -4,7 +4,6 @@ To make sure your assistant responds to user utterances with related tasks, it i
 
 You can perform all the training-related activities for a VA from the _Utterance Testing_ module. We will use a sample _Travel Planning_ assistant to provide examples within this article.
 
-
 ## Testing the Assistant
 
 Simply put, testing a VA refers to checking if it can respond to a user utterance with the most relevant task. Given the flexibility of language, users will use a wide range of phrases to express the same intent.
@@ -19,13 +18,12 @@ The first step to start testing a VA is to identify a representative sample of u
 Follow these steps to test your assistant:
 
 1. Open the assistant that you want to test.
-2. Select the **Build** tab from the top menu.
-3. From the left menu click **Testing** -> **Utterance Testing**.
-4. In the case of a multiple intent model, you can select the **Intent Model** against which you want to test the utterance. The ML Engine will detect the intents only from the selected model.
-5. In the **Type a user utterance** field, enter the utterance that you want to test. Example: _Book a flight_.
-6. The result appears with a single, multiple, or no matching intents
+2. From the left menu click **Testing** -> **Utterance Testing**.
+3. In the case of a multiple intent model, you can select the **Intent Model** against which you want to test the utterance. The ML Engine will detect the intents only from the selected model.
+4. In the **Type a user utterance** field, enter the utterance that you want to test. Example: _Book a flight_.
+5. The result appears with a single, multiple, or no matching intents.
 
-<img src="../images/utterance-testing-1.png" alt="Utterance Testing - Overview" title="Utterance Testing - Overview" style="border: 1px solid gray; zoom:50%;"/>
+<img src="../images/utterance-testing-1-window.png" alt="Utterance Testing - Overview" title="Utterance Testing - Overview" style="border: 1px solid gray; zoom:50%;"/>
 
 ### Types of Test Results
 
@@ -64,7 +62,7 @@ Below are the possible outcomes of a user utterance test:
 
 
 * **Unidentified Intent**: The user input did not match any task in any of the linked assistants. Select an intent and train it to match the user utterance.  
-<img src="../images/utterance-testing-4-nointent.png" alt="Unidentified Intent" title="Unidentified Intent" style="border: 1px solid gray; zoom:50%;"/>
+<img src="../images/utterance-testing-4-nointent-window.png" alt="Unidentified Intent" title="Unidentified Intent" style="border: 1px solid gray; zoom:50%;"/>
 
 
 
@@ -183,7 +181,7 @@ When the _Answer from Document_ feature is used in reply to a test utterance, th
 4. A similarity score between the tested utterance and the top-matched document;
 5. The content of the answer.
 
-<img src="../images/utterance-testing-12.png" alt="Answer from Document" title="Answer from Document" style="border: 1px solid gray; zoom:50%;"/>
+<img src="../images/answer-from-doc-feature.png" alt="Answer from Document" title="Answer from Document" style="border: 1px solid gray; zoom:50%;"/>
 
 
 
@@ -242,7 +240,7 @@ The **NLP Analysis** page within the **NLP Insights** dashboard displays the fol
    * The flow of Version 2 of R&R, including the ranking, identification, and marking of the winning intent as the definitive match.
    * The identification and marking of the probable match.
   
-<img src="../images/utterance-testing-15-rr-nlp.png" alt="Ranking and Resolver V2 - Details" title="Ranking and Resolver V2 - Details" style="border: 1px solid gray; zoom:50%;"/>
+<img src="../images/randr-window.png" alt="Ranking and Resolver V2 - Details" title="Ranking and Resolver V2 - Details" style="border: 1px solid gray; zoom:50%;"/>
 
 
 ### Training the Assistant
@@ -311,7 +309,7 @@ The system displays the matched training data for the following NLP engines and 
 
 
 For the intents qualified and eliminated in R&R, the system displays the elimination reason in addition to the matched utterance, processed utterance, and the winning intent.  
-<img src="../images/utterance-testing-17-rr-matched-training-data-view.png" alt="Intents qualified and eliminated" title="Intents qualified and eliminated" style="border: 1px solid gray; zoom:50%;"/>
+<img src="../images/elimination-reason.png" alt="Intents qualified and eliminated" title="Intents qualified and eliminated" style="border: 1px solid gray; zoom:50%;"/>
 
 
 
