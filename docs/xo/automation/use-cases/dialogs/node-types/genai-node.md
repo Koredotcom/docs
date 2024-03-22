@@ -69,14 +69,11 @@ To add the GenAI Node to a Dialog Task, follow these steps:
 
 1. Go to **Automation** > **Dialogs** and select the task that you are working with.  
 
-
 2. You can add the GenAI Node just like any other node. You can find it in the main list of nodes, as it does not depend on the Bot Action node.
 
      <img src="../images/canvas.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
-
 ## Configure
-
 
 ### Component Properties
 
