@@ -173,8 +173,8 @@ Users can initiate VA conversations in varied ways, from a simple greeting to di
 
 To facilitate a scope for the developer to customize the response based on the user choice, the Welcome event comes with additional options when you choose _Initiate Task_ or _Show Message_ as the event configurations. For example, if the first user utterance maps to a task, should the VAexecute the event-based task or the user intent first?
 
-Post ver9.0, you can use the <code>isReturningUser</code> parameter in the **BotUserSession** context object to [identify returning users](../../kb/new-and-returning-users.md)
- and send an appropriate welcome message. [Learn More](../intelligence/context-object.md).
+Post ver9.0, you can use the <code>isReturningUser</code> parameter in the **BotUserSession** context object to [identify returning users](../../kb/new-and-returning-users.md){target="_blank"}.
+ and send an appropriate welcome message. [Learn More](../intelligence/context-object.md){target="_blank"}.
 
 As a developer, you can define the VA’s priority when the user starts the conversation with a greeting, task, or FAQ from the options listed below:
 
@@ -429,7 +429,7 @@ A bot developer uses the **Repeat Bot Response** to allow you to repeat the resp
 5. Once Utterances are trained, you can add the following preconditions:
 
     * **Channels** – Allows you to add voice channels such as IVR, IVR Audiocodes, or Twilio Voice.
-    * **Context Tags** – Allows you to add the context objects to trigger the Repeat Bot Response event. For more information, read the [Context Object](../intelligence/context-object.md) article.
+    * **Context Tags** – Allows you to add the context objects to trigger the Repeat Bot Response event. For more information, read the [Context Object](../intelligence/context-object.md){target="_blank"} article.
     <img src="../images/channels-and context-tags.png" alt="channels and context tags" title="channels and context tags" style="border: 1px solid gray; zoom:75%;">
  
 !!!note
@@ -483,7 +483,7 @@ When you select the <b>Initiate Dialog</b> option, you can choose the task to wh
 
 When the VA cannot understand the user’s intent, this event determines the subsequent behavior. You can choose one of the following options:
 
-* **Show a standard message from the standard responses**. [Learn more](../intelligence/conversation-management/standard-responses.md).
+* **Show a standard message from the standard responses**. [Learn more](../intelligence/conversation-management/standard-responses.md){target="_blank"}.
 * **Automatically run a dialog task**. You can use the dropdown to select the task you want to run.
     <img src="../images/intent-not-available-event.png" alt="intent not available" title="intent not available" style="border: 1px solid gray; zoom:75%;">
 
@@ -534,7 +534,7 @@ To configure the Ambiguous Intents Identified event follow these steps:
 
 When the event is enabled, the interruption behavior is handled as defined at the node level, dialog level, or bot level for ambiguous intents. 
 
-The only exception is – when you select the **Continue the current task and add new task to the follow-up task list** option, the conversation continues as is with the current task, and any interrupting task will not be added to the follow-up list. [Learn more](../intelligence/conversation-management/manage-interruptions.md).
+The only exception is – when you select the **Continue the current task and add new task to the follow-up task list** option, the conversation continues as is with the current task, and any interrupting task will not be added to the follow-up list. [Learn more](../intelligence/conversation-management/manage-interruptions.md){target="_blank"}.
 
 ### Channel Events
 
@@ -557,7 +557,7 @@ It provides the following two options:
 * **Voice Call Properties** can be set as follows:
     * Define at least one ‘Initial Prompts’
     * Prompts for _Timeout_, and _No Match_ can be defined.
-    * Under _Advanced Controls_, settings for _Timeout, No. of Retries_, and _Barge-in_ can be defined. [Learn more](../../automation/use-cases/dialogs/node-types/voice-call-properties.md).
+    * Under _Advanced Controls_, settings for _Timeout, No. of Retries_, and _Barge-in_ can be defined. [Learn more](../../automation/use-cases/dialogs/node-types/voice-call-properties.md){target="_blank"}.
 
     <img src="../images/voice-call-properties-event-handlers.gif" alt="voice call properties" title="voice call properties" style="border: 1px solid gray; zoom:75%;">
 
@@ -574,6 +574,6 @@ These events trigger when receiving _opt-in_ or _opt-out_ requests from users vi
 
 You can configure Variable Namespaces for Events by going to **More Options** > **Manage Variable Namespaces** at the top of the **Events** screen.
 
-You can use the _Manage Variable Namespaces_ to associate the Variable Namespaces to be used with the Event Handler. This option will be visible only when the Variable Namespace is enabled for the VA. For more information. [Learn more](../../app-settings/managing-namespace.md).
+You can use the _Manage Variable Namespaces_ to associate the Variable Namespaces to be used with the Event Handler. This option will be visible only when the Variable Namespace is enabled for the VA. For more information. [Learn more](../../app-settings/managing-namespace.md){target="_blank"}.
 
 <img src="../images/manage-namespaces-event-handling-window.png" alt="manage namespaces" title="manage namespaces" style="border: 1px solid gray; zoom:75%;">
