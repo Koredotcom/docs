@@ -15,9 +15,9 @@ The tone or sentiment scores are stored as context and used to drive the flow of
 
 ## Configuration
 
-You can define multiple sentiment events from under **Build** > **Intelligence** > **Sentiment Management**. Click **New Event** to define an event based on which to capture the user’s emotion.
+You can define multiple sentiment events from under **Intelligence** > **Sentiment Management**. Click **New Event** to define an event based on which to capture the user’s emotion.
 
-<img src="../images/new-event.png" alt="new event" title="new event" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/new-event-window.png" alt="new event" title="new event" style="border: 1px solid gray; zoom:75%;">
 
 The following parameters can be configured for a sentiment event:
 

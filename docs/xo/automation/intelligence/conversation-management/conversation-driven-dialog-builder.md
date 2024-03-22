@@ -26,7 +26,7 @@ Conversation-driven Dialog builder automatically converts the storyboard scenes 
 
 BAs/Conversation Designers can define a dialog in _conversation view_. This view consists of a conversation flow as a series of bot messages and user messages. Where appropriate, BAs can add Action nodes that would be configured during the bot development.
 
-The **Build** -> **Conversation Skills** -> **Storyboard** gives you an exclusive conversation view with an option to switch to the conversation flow. It can also be viewed at the left bottom window from the new Dialog Builder.
+The **Conversation Skills** -> **Storyboard** gives you an exclusive conversation view with an option to switch to the conversation flow. It can also be viewed at the left bottom window from the new Dialog Builder.
 <img src="../images/conversation-view.png" alt="conversation view" title="conversation view" style="border: 1px solid gray; zoom:75%;">
 
 !!!note
@@ -39,7 +39,7 @@ The conversation view can be expanded by providing the necessary logic and fulfi
 
 The entity, message, and other nodes along with the appropriate connections are generated automatically based on the conversation designed by the BA/conversation designer. Developer can make configuration changes and add appropriate service calls etc. to make it a fully functional bot.
 
-You can access this view either by clicking **View Dialog** from the Conversation view (as seen above) or from **Build** -> **Conversation Skills** -> **Dialog Tasks**.
+You can access this view either by clicking **View Dialog** from the Conversation view (as seen above) or from **Conversation Skills** -> **Dialog Tasks**.
 
 <img src="../images/build-view.png" alt="build view" title="build view" style="border: 1px solid gray; zoom:75%;">
 
@@ -55,9 +55,8 @@ Conversation builder can be accessed in two ways:
 ### Create Scene
 
 1. Open the bot you want to design the conversation.
-2. Select the **Build** tab from the top menu.
-3. From the left menu, click **Conversation Skills -> Storyboard**.
-4. Click **New Scene** and enter the following details.
+2. From the left menu, click **Conversation Skills -> Storyboard**.
+3. Click **New Scene** and enter the following details.
     
     * **Scene Name**
     * **Description**
@@ -73,15 +72,14 @@ Conversation builder can be accessed in two ways:
 You can initiate Conversation Driven Dialog Builder from the Create Dialog flow
 
 1. Open the bot you want to design the conversation.
-2. Select the **Build** tab from the top menu.
-3. From the left menu, click **Conversation Skills** -> **Dialog Task**.
-4. Click **Create Dialog** and enter the following details:
+2. From the left menu, click **Conversation Skills** -> **Dialog Task**.
+3. Click **Create Dialog** and enter the following details:
 
     * **Intent Name**
     * **Description**
     * **Intent Training** – Enter utterances that would trigger this intent
 
-5. Select **Try Conversation Driven Dialog Builder** option. This will give you allow you to design a conversation and simultaneously view and define the corresponding dialog task.
+4. Select **Try Conversation Driven Dialog Builder** option. This will give you allow you to design a conversation and simultaneously view and define the corresponding dialog task.
 <img src="../images/try-conversation-driven-dialog-builder.png" alt="try conversation driven dialog builder" title="try conversation driven dialog builder" style="border: 1px solid gray; zoom:75%;">
 
 ### Containment Type Configuration
@@ -110,9 +108,10 @@ To configure the **Self-Service** and **Drop-off** options during dialog creatio
 2. Click the **more** option and select **Configuration Properties**.
 <img src="../images/set-configuration-properties.png" alt="set configuration properties" title="set configuration properties" style="border: 1px solid gray; zoom:75%;">
 
- * Change **Display Name** and **Node Name** if needed.
- * Add/change **Description**.
- * **Add utterance** that would trigger this intent. You can add multiple utterances. These would be in addition to the primary intent utterance.
+  * Change **Display Name** and **Node Name** if needed.
+  * Add/change **Description**.
+  * **Add utterance** that would trigger this intent. You can add multiple utterances. These would be in addition to the primary intent utterance.
+
  <img src="../images/add-utterance-trigger-intent.png" alt="add utterance trigger intent" title="add utterance trigger intent" style="border: 1px solid gray; zoom:75%;">
 
 3. You have the option to **Manage Training** which will enable you to train the intent by adding Utterances, Patterns, and Rules. [Learn more](/docs/xo/automation/testing/testing-your-bot-with-nlp/){target="_blank"}.

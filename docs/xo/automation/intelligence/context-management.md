@@ -155,7 +155,7 @@ You can configure this as follows:
 2. From the left menu, click **Natural Language > Thresholds & Configurations**.
 3. Click **Knowledge Graph**.
 4. Locate **Qualify Contextual Paths** and set it to _Yes_.
-<img src="../images/qualify-contextual-paths.png" alt="qualify contextual paths" title="qualify contextual paths" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/qualify-contextual-paths-window.png" alt="qualify contextual paths" title="qualify contextual paths" style="border: 1px solid gray; zoom:75%;">
 
 
 ### Conversation Flows

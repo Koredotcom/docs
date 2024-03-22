@@ -6,16 +6,15 @@ Developers can include words for the NLP engine to ignore when interpreting the 
 
 To manage this setting, follow the steps below:
 
-1. On the Bot Builder, select **Build** on the top menu.
-2. On the left navigation menu, click **Intelligence** > **Ignore Words & Field Memory**.
-   <img src="../images/ignore-words-edit-alert-tasks.png" alt="edit alert tasks for ignore words" title="edit alert tasks for ignore words" style="border: 1px solid gray; zoom:75%;">
+1. Click **Intelligence** > **Ignore Words & Field Memory**.
+   <img src="../images/ignore-words-edit-alert-tasks-window.png" alt="edit alert tasks for ignore words" title="edit alert tasks for ignore words" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p>This feature is available only if you create and configure an Alert/Action/Information task for the Assistant. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/alert-tasks/#general-settings/" target="_blank">Learn more</a>.</p>
 </div>
 
-<ol start="3"><li>Edit each task in the <b>Field Memory</b> settings to persist its data and pre-populate the data in another related task for the same VA. For example, for a travel planning assistant, <i>Get Wait Times for Boarding</i> task, you can pre-populate task fields into the related task, <i>Book a FastPass</i> task.</li> 
+<ol start="2"><li>Edit each task in the <b>Field Memory</b> settings to persist its data and pre-populate the data in another related task for the same VA. For example, for a travel planning assistant, <i>Get Wait Times for Boarding</i> task, you can pre-populate task fields into the related task, <i>Book a FastPass</i> task.</li> 
 
 <li>Additionally. configure words to ignore in the user input at the task level. For example, for a <i>7-day Weather Forecast</i> task, you might want days of the week, such as <i>Monday</i>, <i>Tuesday</i>, and so forth to be ignored since all weekdays are included.</li>
 

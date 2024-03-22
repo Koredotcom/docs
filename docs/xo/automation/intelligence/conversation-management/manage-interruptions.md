@@ -64,8 +64,8 @@ To customize the Interruptions settings for a dialog:
 
 The VA Level interruptions settings can be overridden at the task level as discussed above.
 
-You can access the interruption settings for your VA from under **Build > Intelligence > Manage Interruptions** page.
-<img src="../images/bot-level-settings-manageinterruptions.png" alt="bot level settings manage interruptions" title="bot level settings manage interruptions" style="border: 1px solid gray; zoom:75%;">
+You can access the interruption settings for your VA from under **Intelligence > Manage Interruptions** page.
+<img src="../images/bot-level-settings-manageinterruptions-window-1.png" alt="bot level settings manage interruptions" title="bot level settings manage interruptions" style="border: 1px solid gray; zoom:75%;">
 
 The Platform provides options for _Interruptions Behavior_ under the following three categories:
 
@@ -240,7 +240,7 @@ For example, if you specify the On Hold Quantity as 1 and if a third intent come
 
 You can choose whether FAQs should honor the interruptions settings or if FAQs should be always responded to.
 
-<img src="../images/faq-interruption-behavior.png" alt="faq interruption behavior" title="faq interruption behavior" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/faq-interruption-behavior-window.png" alt="faq interruption behavior" title="faq interruption behavior" style="border: 1px solid gray; zoom:75%;">
 
 The flag **Interruption Behavior for FAQs** will allow you to:
 
@@ -251,7 +251,7 @@ The flag **Interruption Behavior for FAQs** will allow you to:
 
 You can handle ambiguous intents during a conversation flow by setting the flag **Behavior for Ambiguous Interruptions**.
 
-<img src="../images/ambiguous-interruption-behavior.png" alt="ambiguous intent interruption behavior" title="ambiguous intent interruption behavior" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/ambiguous-interruption-behavior-window.png" alt="ambiguous intent interruption behavior" title="ambiguous intent interruption behavior" style="border: 1px solid gray; zoom:75%;">
 
 These settings allow you to do the following:
 
@@ -265,7 +265,7 @@ These settings allow you to do the following:
 
 You can handle Small Talk during a conversation flow by setting the flag **Interruption Behavior for Small Talk**. 
 
-<img src="../images/smalltalk-interruption-behavior.png" alt="small talk interruption behavior" title="small talk interruption behavior" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/smalltalk-interruption-behavior-window.png" alt="small talk interruption behavior" title="small talk interruption behavior" style="border: 1px solid gray; zoom:75%;">
 
 These settings allow you to:
 

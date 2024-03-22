@@ -21,10 +21,9 @@ curl –location -g –request POST ‘https://graph.facebook.com/v2.6/me/messen
 <p class="admonition-title">Note</p>
 <p>You must provide <code>access_token</code>, the Page access token for the specific Facebook page in the curl to run the API.</p></div>
 
-To access **Event Handlers**, navigate to **Build** > 
-**Intelligence** > **Events**.
+To access **Event Handlers**, navigate to **Intelligence** > **Events**.
 
-<img src="../images/access-event-handlers.png" alt="access event handlers" title="access event handlers" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/access-event-handlers-window.png" alt="access event handlers" title="access event handlers" style="border: 1px solid gray; zoom:75%;">
 
 ## Event Actions
 
@@ -57,7 +56,7 @@ Define a simple or advanced message to the user when the event triggers. It supp
 ## Event Types
 
 Event Handlers are classified as **Conversation Events**, **Intent Events**, and **Channel Events**.
-<img src="../images/event-types.png" alt="event types" title="event types" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/event-types-window.png" alt="event types" title="event types" style="border: 1px solid gray; zoom:75%;">
 
 You can configure the following events to trigger responses:
 
@@ -417,9 +416,9 @@ A bot developer uses the **Repeat Bot Response** to allow you to repeat the resp
 
 **Steps to Enable the Repeat Bot Response Event**
 
-1. Navigate to **Build > Intelligence > Events**.
+1. Navigate to **Intelligence > Events**.
 2. Click **Configure** to enable the **Repeat Bot Response Event**.
-<img src="../images/repeat-bot-responses.png" alt="repeat bot responses" title="repeat bot responses" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/repeat-bot-responses-window.png" alt="repeat bot responses" title="repeat bot responses" style="border: 1px solid gray; zoom:75%;">
 
 3. Click **Manage Utterance** to review the pre-trained utterances that are added to the VA by default.
 <img src="../images/manage-utterances-event.png" alt="manage utterances" title="manage utterances" style="border: 1px solid gray; zoom:75%;">
@@ -502,13 +501,13 @@ You can build custom business logic to analyze ambiguous intents, define appropr
 
 By customizing the flow, you can avoid displaying ambiguous intents to the end user and redirect the conversation to the desired task. You can use the `koreUtil.getAmbiguousIntents()` function to retrieve the list of ambiguous intents and their confidence scores. For more information on the function, click [here](/docs/xo/apis/koreutil-libraries/){target="_blank"}.
 
-<img src="../images/ambiguous-intents-event.png" alt="ambiguous intents event" title="ambiguous intents event" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/ambiguous-intents-event-window.png" alt="ambiguous intents event" title="ambiguous intents event" style="border: 1px solid gray; zoom:75%;">
 
 ##### Event Configuration
 
 To configure the Ambiguous Intents Identified event follow these steps:
 
-1. Go to **Build** → **Intelligence** → **Events** on the Platform. By default, this event is disabled for all existing and new bots.
+1. Go to **Intelligence** → **Events** on the Platform. By default, this event is disabled for all existing and new bots.
 2. Click **Configure** to enable the event.
     <img src="../images/configure-intent-events.png" alt="configure intent events" title="configure intent events" style="border: 1px solid gray; zoom:75%;">
 
@@ -577,4 +576,4 @@ You can configure Variable Namespaces for Events by going to **More Options** > 
 
 You can use the _Manage Variable Namespaces_ to associate the Variable Namespaces to be used with the Event Handler. This option will be visible only when the Variable Namespace is enabled for the VA. For more information. [Learn more](../../app-settings/managing-namespace.md).
 
-<img src="../images/manage-namespaces-event-handling.png" alt="manage namespaces" title="manage namespaces" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/manage-namespaces-event-handling-window.png" alt="manage namespaces" title="manage namespaces" style="border: 1px solid gray; zoom:75%;">

@@ -12,7 +12,7 @@ Though these are set by default by the platform, you can customize them as per y
 
 You can choose to run a dialog task or display a standard error message if the Natural Language Processor for Kore.ai cannot determine the user intent. The default setting is to display a standard error message.
 
-Under the **Build** tab, from the left menu, click **Intelligence** > **Default Dialog** to define a default dialog task.
+Click **Intelligence** > **Default Dialog** to define a default dialog task.
 
 For example, you can switch the conversation from the bot to a live agent, or run a generic dialog such as the main menu if the user intent is not determined in the bot conversation.
 
@@ -20,17 +20,16 @@ If a default dialog task is not defined, standard error messages and any customi
 
 The following illustration is an example of the **Default Dialog** section in Bot Builder configured to run the _Get Account Help_ dialog task when the user intent cannot be determined in the _Banking Portal_ bot.
 
-<img src="../images/default-dialog-configuration.png" alt="default dialog configuration" title="default dialog configuration" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/default-dialog-configuration-window.png" alt="default dialog configuration" title="default dialog configuration" style="border: 1px solid gray; zoom:75%;">
 
 ### Define a Default Dialog
 
 To complete the following procedure, you must have already defined a dialog to select as the default dialog.
 
-1. Select the **Build** tab from the top menu.
-2. From the left menu, click the **Intelligence > Default Dialog** option.
-3. In the **If user’s intent is not understood** section, select **Automatically run a dialog task**.
-4. In the **Default Dialog Task** field, select a default dialog from the list.
-5. Click **Save**.
+1. Click the **Intelligence > Default Dialog** option.
+2. In the **If user’s intent is not understood** section, select **Automatically run a dialog task**.
+3. In the **Default Dialog Task** field, select a default dialog from the list.
+4. Click **Save**.
 
 The "**Settings successfully saved**" message is displayed.
 
@@ -61,9 +60,8 @@ For example, in the SMS channel, you may only want to use short bot responses to
 
 To access and manage the default responses in bot builder, follow the below steps:
 
-1. Select the **Build** tab from the top menu
-2. From the left menu, click **Intelligence > Standard Responses**.
-    <img src="../images/default-responses.png" alt="default responses" title="default responses" style="border: 1px solid gray; zoom:75%;">
+1. Click **Intelligence > Standard Responses**.
+    <img src="../images/default-responses-window.png" alt="default responses" title="default responses" style="border: 1px solid gray; zoom:75%;">
 
     For each standard response category tab, the event or user input is listed followed by one or more NLP interpreter standard responses. 
 
