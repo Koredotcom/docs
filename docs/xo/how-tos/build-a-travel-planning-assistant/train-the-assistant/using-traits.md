@@ -1,6 +1,6 @@
 # Travel VA: Using Traits
 
-In this post, we explore a scenario for a Travel Planning Assistant where traits are used to steer the conversation flow in a more natural and predictable direction. For details on what Traits are and how they are implemented in the XO Platform, click [here](/docs/xo/automation/natural-language/training/traits/) <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/traits/" target="_blank">now ok</a>. 
+In this post, we explore a scenario for a Travel Planning Assistant where traits are used to steer the conversation flow in a more natural and predictable direction. For details on what Traits are and how they are implemented in the XO Platform, click [here](/docs/xo/automation/natural-language/training/traits/){:target="_blank"} <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/traits/" target="_blank">now ok</a>. 
 
 ## Problem Statement
 
