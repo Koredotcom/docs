@@ -143,4 +143,5 @@ The Ranking and Resolver gets input from the three NL engines and Traits to anal
 The Conversation Flow is controlled using Traits. For a Dialog, **Connection Rules** are defined using the Trait Context. This is done from the **Connection** tab under the **Properties** Panel for the Dialog.
 
 The Traits Context is accessed using `context.traits`. It returns an array of all traits matching the intent, hence the condition to be used is ‘_contains_'.
+
 <img src="../images/traits-dialog-transition.png" alt="traits dialog transition" title="traits dialog transition" style="border: 1px solid gray; zoom:75%;">
