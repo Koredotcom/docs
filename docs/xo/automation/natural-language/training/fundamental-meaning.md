@@ -130,7 +130,7 @@ The following sections show you how to add these synonyms.
 
 #### Navigate to Synonyms
 
-1. Open the VA for which you want to add synonyms and select the **Build** tab from the top menu.
+1. Open the VA for which you want to add synonyms.
 2. From the left navigation menu and click **Natural Language** -> **Training.**
 3. On the **Training** page, click one of the following tabs:
     * **Bot Synonyms** – Add and edit synonyms for the words in the bot or task names.
@@ -143,7 +143,7 @@ On the **Training** page under the **Bot Synonyms** tab, you can view and add sy
 To add a bot synonym, follow the below steps:
 
 1. On the **Training** page, select the **Bot Synonyms** tab.
-<img src="../images/add-bot-synonym.png" alt="add synonyms" title="add synonyms" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-bot-synonym-select.png" alt="add synonyms" title="add synonyms" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **New Synonym** or use the edit icon against an existing synonym, to open the synonym page.
 3. In the **Name** field, enter the name of the word (keyword) for which you want to create synonyms.
@@ -155,7 +155,7 @@ To add a bot synonym, follow the below steps:
 #### Add Entity Synonyms
 
 On the **Training** page, on the **Entities** tab, each dialog task entity is listed with any defined synonyms for that entity name.
-<img src="../images/entity-tab.png" alt="entity tab" title="entity tab" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/entity-tab-select.png" alt="entity tab" title="entity tab" style="border: 1px solid gray; zoom:75%;">
 
 To add synonyms for a dialog task entity, follow the below steps:
 
@@ -219,13 +219,13 @@ You can define a new concept the same way as you would define a Bot Synonym, but
 You can also define custom concepts using emojis.
 
 Concepts are used to define patterns. For example, the pattern _buy ~fruit_ is used to capture _buy orange_ or _buy banana_.
-<img src="../images/define-custom-concepts.png" alt="define custom concepts" title="define custom concepts" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/define-custom-concepts-window.png" alt="define custom concepts" title="define custom concepts" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 Add the <b>~disable_help</b> concept key and train the VA to disable the system help. You can train the virtual assistant (VA) to use the <b>custom_help</b> group in Smalltalk to trigger the customized help messages. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/small-talk/#add-groups" target="_blank">Learn more</a>.</p></div>
 
-<img src="../images/custom_help.png" alt="custom help" title="custom help" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/custom_help-setup.png" alt="custom help" title="custom help" style="border: 1px solid gray; zoom:75%;">
 
 ### Parallel Editing for Concepts
 
@@ -307,6 +307,7 @@ However, they do the following:
 
 The **Custom Concept Entity** on the Platform allows the selective marking of aliases using patterns. 
 In the example below, the system marks `Aston` as an alias for `Aston Martin` only if it is not followed by the word `Martin` according to the **Synonyms** pattern.
+
 <img src="../images/synonyms-example-1.png" alt="synonyms example 1" title="synonyms example 1" style="border: 1px solid gray; zoom:75%;">
  
 Similarly, in the example below, the system marks `Kelly` as the alias for `TeleHealth` only if it is followed by the word `health` (the underscore limits the marking to one word) according to the **Synonyms** pattern.
@@ -350,10 +351,10 @@ The NLP engine can recognize emojis present in the user utterance. You can inclu
 
 You can import emojis into your VA’s system concepts so that it can conduct the conversations when emojis are present in the user’s utterances. For this, follow the below steps:
 
-1. Under the **Build** top menu option, from the left menu, click **Natural Language -> Training**
+1. From the left menu, click **Natural Language -> Training**
 2. On the **Intents** tab, click the more/ellipses icon and select **Import Emojis into Concepts**.
 3. This adds all the default emojis to the system concepts for the current language. As you can see emojis are updated for the system concepts like this: ~_emohappy_, ~_emohello_, etc.
-<img src="../images/import-emoji.png" alt="import emoji" title="import emoji" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/import-emoji-concepts.png" alt="import emoji" title="import emoji" style="border: 1px solid gray; zoom:75%;">
 
 4. After importing, you may choose to review and remove any emojis that you may not want to support.
 5. If you are trying to re-import the emojis, then the current emojis are retained and any additional emojis are added.
@@ -376,7 +377,7 @@ For a quick guide towards the usage of patterns, refer to <a href="https://docsi
 
 ### Navigate to the Patterns Tab
 
-1. Open the VA for which you want to add patterns and select the **Build** tab from the top menu.
+1. Open the VA for which you want to add patterns.
 2. From the left menu click **Natural Language ->** **Training**.
 3. On the **Training** page, click one of the following tabs:
     * **Intents**– Add or edit patterns or rules for dialog task User Intent nodes.
@@ -394,7 +395,7 @@ You can also use concepts to build patterns. For example, the pattern is defined
 
 In the **Intents** section, you can view, add, and delete patterns for dialog tasks.
 
-<img src="../images/manage-patterns-for-dialog-tasks.png" alt="manage patterns for dialog tasks" title="manage patterns for dialog tasks" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/manage-patterns-for-dialog-tasks-window.png" alt="manage patterns for dialog tasks" title="manage patterns for dialog tasks" style="border: 1px solid gray; zoom:75%;">
 
 To add an intent pattern, follow the below steps:
 
@@ -408,7 +409,7 @@ To add an intent pattern, follow the below steps:
 
 You can use traits or context tags to define intent identification rules for better intent detection. You can add Traits or Context Tags and conditional rules using AND, OR operators.
 
-<img src="../images/add-rules-for-an-intent.png" alt="add rules for an intent" title="add rules for an intent" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-rules-for-an-intent-window.png" alt="add rules for an intent" title="add rules for an intent" style="border: 1px solid gray; zoom:75%;">
 
 To add an intent rule, follow the below steps:
 
@@ -445,11 +446,10 @@ The **Negative Patterns** feature helps filter matched intents that are a part o
 
 To activate Negative Patterns, follow the steps below:
 
-1. Click the **Build** top menu option.
-2. Navigate to **Natural Language** -> **Thresholds & Configurations** -> **Ranking and Resolver Engine**.
-3. Enable **Negative Patterns**.
+1. Navigate to **Natural Language** -> **Thresholds & Configurations** -> **Ranking and Resolver Engine**.
+2. Enable **Negative Patterns**.
 
-<img src="../images/enable-negative-patterns-fm.png" alt="enable negative patterns" title="enable negative patterns" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/enable-negative-patterns-fm-window.png" alt="enable negative patterns" title="enable negative patterns" style="border: 1px solid gray; zoom:75%;">
 
 1. For each of the intents in your VA, you can define negative patterns similar to how you define intent patterns. 
     * Go to **Natural Language** > **Training** > **Intents** and select the Intent to which you want to add the Negative Pattern.
@@ -461,7 +461,7 @@ To activate Negative Patterns, follow the steps below:
 
 ## Thresholds & Configurations
 
-To train and improve the performance, Threshold and Configurations can be specified for all three NLP engines – FM, KG, and ML. You can access these settings under **Build** -> **Natural Language** > **Thresholds & Configurations**.
+To train and improve the performance, Threshold and Configurations can be specified for all three NLP engines – FM, KG, and ML. You can access these settings under **Natural Language** > **Thresholds & Configurations**.
 
 The settings for the FM engine are discussed in detail in the following sections.
 
@@ -472,10 +472,9 @@ The settings for the FM engine are discussed in detail in the following sections
 To set up Thresholds and Configurations for the FM Engine, please follow the steps below:
 
 1. Open the assistant for which you want to configure thresholds.
-2. Select the **Build** tab from the top menu.
-3. From the left menu, click **Natural Language -> Thresholds & Configurations**.
-4. The **Fundamental Meaning** section allows you to set the threshold for the FM engine:
+2. From the left menu, click **Natural Language -> Thresholds & Configurations**.
+3. The **Fundamental Meaning** section allows you to set the threshold for the FM engine:
     * **Intent Detection using Task Name Words** can be disabled in case your use case requires it. This is particularly useful if you have too many tasks named – _place order_, _cancel order_, _request order_, _duplicate order_. All these tasks will be matched as intents if the user utterance has the word “_order_” in it. Instead of _trying_, _guessing_, and training for all possible utterances, disabling this option does the trick. Disabling it will not affect the intent detection using patterns. Also, an implicit pattern using the words in the Task Name will be automatically added. The implicit pattern identifies this intent only when the user input starts and ends with the exact task name. By default, it is enabled.
     * **FM Threshold** can be used to limit the number of results sent from the FM Engine to Ranking and Resolver, so as to reduce the possibility of presenting a low confidence match to the end-user. Enable this configuration and choose the _threshold percentage_ as a value between 0% and 20%. Default is 2%. Only the intent matches within the set % of the top-scoring intent will be considered and all other intents will be eliminated. This configuration is available only for English, Spanish, French and German languages.
 
-    <img src="../images/thresholds-and-configurations-enable.png" alt="thresholds and configurations" title="thresholds and configurations" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/thresholds-and-configurations-enable-window.png" alt="thresholds and configurations" title="thresholds and configurations" style="border: 1px solid gray; zoom:75%;">

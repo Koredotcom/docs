@@ -785,7 +785,7 @@ This option controls whether you see the Primary Question or Dialog Task name in
 * Utterance testing
 * Batch testing 
 In this testing, when you enable the **FAQ Name as Intent Name** setting and then export the batch test suite results, the **MatchedIntent** field shows the FAQ name. If it is disabled, the Intent name is displayed instead of FAQ name.
-<img src="../images/faq-link-as-intent-name.png" alt="faq link as intent name" title="faq link as intent name" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/faq-link-as-intent-name-window.png" alt="faq link as intent name" title="faq link as intent name" style="border: 1px solid gray; zoom:75%;">
 
 * NLP Analysis
 * Analytics (Dashboards, Custom Dashboards, Conversation Flows, and Metrics)

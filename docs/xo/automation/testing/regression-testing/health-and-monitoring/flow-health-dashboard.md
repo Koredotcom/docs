@@ -28,8 +28,8 @@ The test suite results are tracked in the _Conversation Testing,_ and the analyt
 
 To access the **Flow Health Dashboard**, follow these steps:
 
-1. Navigate to **BUILD** > **Testing > Health & Monitoring** and select the **Flow** tab.  
-<img src="../images/fh-img2.png" alt="Flow health dashboard" title="Flow health dashboard" style="border: 1px solid gray;zoom:50%;"/>
+1. Navigate to **Testing** > **Regression Testing** > **Health & Monitoring** and select the **Flow** tab.  
+<img src="../images/select-flow-tab.png" alt="Flow health dashboard" title="Flow health dashboard" style="border: 1px solid gray;zoom:50%;"/>
 
 2. Drill down to learn how to view the Dialog Intent, FAQ, and Small Talk summary sections. In these sections, you can view the intent level summaries, along with test coverage details to easily identify the transitions or intents to be covered. You can also expand to the test case results to view the execution analytics.  
   
@@ -112,7 +112,7 @@ The percentage of transitions coverage is displayed as follows:
     <img src="../images/fh-img10.png" alt="Dialog Transition" title="Dialog Transition" style="border: 1px solid gray;zoom:50%;"/>
 
 2. Click the <img src="../images/fh-tilda-icon.png"> icon beside **Not Covered** percentage to view missed transitions.  
-<img src="../images/fh-img11.png" alt="Missed Transitions" title="Missed Transitions" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/coverage-status.png" alt="Missed Transitions" title="Missed Transitions" style="border: 1px solid gray;zoom:50%;"/>
 
 3. Create a new test suite and record missed transitions to cover them. For more information, see [Conversation Testing](../../conversation-testing/conversation-testing-landing-page/){:target="_blank"}.
 

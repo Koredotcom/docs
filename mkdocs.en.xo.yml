@@ -202,7 +202,7 @@ nav:
           - Overview: automation/natural-language/training/machine-learning-engine.md
           - Model Validation: automation/natural-language/training/model-validation.md
         - FM Engine: automation/natural-language/training/fundamental-meaning.md
-        - KG Engine: answers/knowledge-ai/knowledge-graph-training.md
+        - KG Engine: automation/knowledge-ai/build-a-knowledge-graph.md
         - Traits Engine: automation/natural-language/training/traits.md
         - Ranking and Resolver: automation/natural-language/training/ranking-and-resolver.md
         - Training Validations: automation/natural-language/training/training-validations.md      
@@ -232,7 +232,7 @@ nav:
       - Talk to Bot: automation/testing/talk-to-bot.md
       - Utterance Testing: automation/testing/testing-your-bot-with-nlp.md 
       - Regression Testing: 
-        - Health and Monitoring: getting-started.md 
+        - Health and Monitoring: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
         - Batch Testing: getting-started.md
         - Conversation Testing: getting-started.md
     - Advanced Topics:

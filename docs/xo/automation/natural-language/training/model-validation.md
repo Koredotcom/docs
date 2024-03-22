@@ -11,11 +11,11 @@ The XO Platform offers the following validation methods:
 
 To choose the validation model, follow the steps below:
 
-1. Open the assistant that you want to validate the ML model and select **Build** from the top menu.
+1. Open the assistant that you want to validate the ML model.
 2. From the left menu, click **Natural Language** -> **Training**.
 3. Click the **Validate Model** drop-down list on the top-right and select the model.
 4. The results page of the corresponding validation method is displayed.
-<img src="../images/validate-model-training.png" alt="validate model" title="validate model" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/validate-model-training-window.png" alt="validate model" title="validate model" style="border: 1px solid gray; zoom:75%;">
 
 In the sections below, we will look into each of these methods in detail.
 
@@ -37,7 +37,7 @@ The XO Platform supports **K-fold Cross-Validation**. For this, you must configu
 
 To initiate the training and generate the K-fold validation report, follow the below steps:
 
-1. From the left menu under the **Build** top menu option, click **Natural Language** -> **Training**.
+1. From the left menu, click **Natural Language** -> **Training**.
 2. On the Machine Learning Utterances page, click **Validate Model** drop-down list on the top-right and select **K-fold Cross-Validation**.
 3. On the **K-fold Cross-Validation** page, click **Generate** to initiate the training and generate the K-fold validation report. Generate button appears only when you perform the cross-validation for the first time.
 4. After the report is generated, you can click the **Re-generate** button on the top right to regenerate the report when needed.
