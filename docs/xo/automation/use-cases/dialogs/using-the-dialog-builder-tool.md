@@ -177,10 +177,10 @@ For the convenience of comprehension and demonstration, let’s visualize the To
 
     Display Options are used to:
     
-        * **Fit to Screen** – Resizes Dialog Builder components and connections to fit within the display screen resolution for a single, non-scrolling page.
-        * **Zoom Level** – is used to set the zoom level as needed.
-        * **Zoom to Last Edited** – This takes you to the zoom level you have used to edit the dialog.
-        * **Hide/Show Mini Map** – To show or hide the mini-map of the dialog.
+    * **Fit to Screen** – Resizes Dialog Builder components and connections to fit within the display screen resolution for a single, non-scrolling page.
+    * **Zoom Level** – is used to set the zoom level as needed.
+    * **Zoom to Last Edited** – This takes you to the zoom level you have used to edit the dialog.
+    * **Hide/Show Mini Map** – To show or hide the mini-map of the dialog.
 
 * **More options**, where you can access Dialog Settings, Manage Interruptions, Manage Ammend behavior and View Comments. [Learn more](#the-more-options-menu).
 
@@ -199,7 +199,7 @@ The Index panel consists of tabs listing features that help enhance collaboratio
 * [Assets tab](#assets-tab)
 * [Nodes tab](#nodes-tab)
 
-You can add, edit, move or delete notes, comments, or bookmarks as needed. However, note that you cannot undo deletion.
+You can add, edit, move or delete notes, comments, or bookmarks as needed. However, note that once deleted, they cannot be restored.
 
 #### Bookmark Tab
 
@@ -275,7 +275,7 @@ To delete a sequence, right-click it and select **Delete** from the menu.
 
 !!! Warning
 
-	The delete action cannot be undone.
+	The deleted sequences cannot be restored.
 
 <img src="../images/using-dialog-builder-img15-node-delete.png" alt="Delete sequence" title="Delete sequence" style="border:1px solid gray;zoom:60%;">
 
@@ -292,7 +292,7 @@ To delete a node, right-click it and select **Delete** from the menu.
 
 !!! Warning
 
-	This action cannot be undone. However, the deleted node will still be available in the **Assets** tab of the **Index panel**.
+	Deleted nodes cannot be restored on the canvas. However, they will still be available in the **Assets** tab of the **Index panel**.
 
 
 #### Notes, Comments and Bookmarks
@@ -395,6 +395,8 @@ You can see these options by **right-clicking the note** and **clicking the 3-do
 
 You can see the following visual customization options for a sequence by right-clicking it:
 
+<img src="../images/using-dialog-builder-sequence-customization-options.png" alt="Sequence - Customization options" title="Sequence - Customization options" style="border:1px solid gray;zoom=90%;">
+
 * **Rename**: You can rename a sequence based on your preference and logic. By default, the name is **Untitled**; you can name and rename it as many times as you need.
 * **Mark as Flow Starting Point**: Using this option, you can mark a sequence as the starting point of the dialog flow. When you do so, the connector arrow from the root intent points to the first node of this sequence.
 * **Sequence Color**: You can change the color of a sequence. The platform provides six colors to choose from. This can be useful in case you need to visually indicate a split of flow, positive and negative flows, etc.
@@ -403,7 +405,7 @@ You can see the following visual customization options for a sequence by right-c
 
     <img src="../images/using-dialog-builder-sequence-color.png" alt="Visual customization of sequences - Color" title="Visual customization of sequences - Color" style="border:1px solid gray;zoom:60%;">
 
-* **Delete**: This option allows you to delete the sequence. Note that deletion cannot be undone; however, the nodes that were added to the sequence will still be available for use in the Assets tab of the Index panel.
+* **Delete**: This option allows you to delete the sequence. Note that deleted sequences cannot be restored; however, the nodes that were added to the sequence will still be available for use in the Assets tab of the Index panel.
 
 ### Connector Arrows
 
