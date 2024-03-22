@@ -58,8 +58,7 @@ To edit the Twilio channel, follow the below steps:
 
 
 1. Hover over the channel and click to modify.
-2. You can make necessary updates to your channel configurations and save them. You can also disable or delete the channel information by clicking the **Settings** icon.
-<img src="../images/twilio6.png" alt="Modify Twilio  Settings" title="Modify Twilio Inbound Settings" style="border: 1px solid gray; zoom:70%;">
+2. You can make necessary updates to your channel configurations and save them. You can also [disable or delete the channel.](./adding-channels-to-your-bot.md#editing-testing-disabling-or-deleting-channels)
 
 3. Select one of the following commands to modify the channel:
   * **Disable/Enable**

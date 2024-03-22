@@ -19,7 +19,7 @@ To add the Yammer channel, follow the below steps:
 
 
 1. In the XO Platform, go to **Channels & Flows** > **Channels** > **Digital** > **All**.
-2. Click the **Yammer** icon. The **Yammer Channel** page is displayed.
+2. Click the **Yammer**. The **Yammer Channel** page is displayed.
 3. In a new browser tab, log in to your **Yammer Developer** account and go to the **My Apps** section to register a new app.
 4. To create an app, click **Register New App**. Enter the required details in the listed fields.
 5. Copy the _Redirect URL_ from the **Configurations** tab of the Yammer Channel page and enter it in the **Redirect URL** field.
@@ -41,9 +41,7 @@ To edit the Yammer channel, follow the below steps:
 
 
 1. Hover over the channel and click to modify. You can make necessary updates to your channel configurations and save them.
-2. You can also disable or delete the channel information by clicking the **Settings** icon as shown in the image.
-<img src="../images/Yammer-4.png" alt="settings" title="settings" style="border: 1px solid gray; zoom:70%;">
-
+2. You can also [disable or delete the channel](adding-channels-to-your-bot.md#editing-testing-disabling-or-deleting-channels).
 Select one of the following commands to modify the channel:
 
   * **Disable/Enable** – Click **Disable** to temporarily disable the use of the Yammer channel for your bot. To enable the use of the Yammer channel, Click **Enable**.

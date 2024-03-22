@@ -1,12 +1,4 @@
-
-
 # Introduction to LLM and Generative AI
-
-	
-
-		
-
-			
 
 The Kore.ai XO Platform helps enhance your bot development process and enrich end-user conversational experiences by integrating pre-built (OpenAI, Azure OpenAI, Anthropic) or custom models in the backend.
 
@@ -38,8 +30,7 @@ The Integration of Generative AI and LLM enables the following features:
     * **Conversation Test Cases Suggestion**: The Platform suggests simulated user inputs covering various scenarios from an end-user perspective at every test step. You can use these suggestions to create test suites.
     * **Conversation Summary**: Implements the Conversation Summary public API to fetch the details of the entire conversation between the customer and the VA or agent. This API leverages the Flan-T5 foundational model to summarize conversations.
     * **NLP Batch Test Cases Suggestion**: The Platform generates NLP test cases for every intent, including entity checks. You only need to create test suites in the Builder using the generated testing utterances.
-    * **Training Utterance Suggestions**: Generate high-quality training data quickly and easily with our platform’s suggested utterances for each intent. Review and add the suggestions as needed to create a powerful training set for your bot.
-    
+    * **Training Utterance Suggestions**: Generate high-quality training data quickly and easily with our platform’s suggested utterances for each intent. Review and add the suggestions as needed to create a powerful training set for your bot.    
     * **Use Case Suggestions**: Uses the Open AI LLM model to generate use cases during the VA (Bot) creation journey.
     
 
@@ -58,8 +49,6 @@ The Integration of Generative AI and LLM enables the following features:
 
 All these features benefit VA developers, NLP developers, and testers as follows:
 
-
-
 * Being able to select between custom and pre-built LLM integrations.
 * Developers can create dialog tasks on the fly through the prebuilt Dialog Tasks Flow.
 * Developers can unlock the power of Generative AI with their prompts, enabling them to build creative and custom use cases.
@@ -77,11 +66,6 @@ LLM and Generative AI also require sharing data with third parties: OpenAI (when
 
 
 ## Next Steps
-
-
-
 1. [Integrate a pre-built or custom LLM](llm-integration.md). 
 2. (Optional – only for custom LLM model)[ Add Prompts](prompts-and-requests-library.md).
 3. Enable[ Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
-
-		

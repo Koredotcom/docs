@@ -28,18 +28,18 @@ When **Display Name** is not provided, the email profiles appear with the sender
 
 ## Steps to Add the Email Channel
 
-1. On the UXO Platform, go to **Deploy** > **Channels** > **Email** on the left navigation menu. 
+1. On the UX Platform, go to **Channels & Flows** > **Channels** > **Digital** > **All** > **Email** on the left navigation menu. 
 
 2. In the **Email** window, change the first portion of the address set to the VA name (default value) for **Email to this bot can be sent to the below email address**.
 <img src="../images/email-field-entry.png" alt="email field" title="email field" style="border: 1px solid gray;zoom:50%;"/>
 
 3. **(Optional)** Enter the value for **Display Name** to customize how the configured email address will appear to the end user.
 
-!!!note
+    !!!note
 
-    A maximum of 30 characters are allowed for the display name, including special characters, numbers, and spaces.
+        A maximum of 30 characters are allowed for the display name, including special characters, numbers, and spaces.
 
-<img src="../images/add-display-name.png" alt="add display name" title="add display name" style="border: 1px solid gray;zoom:50%;"/>
+    <img src="../images/add-display-name.png" alt="add display name" title="add display name" style="border: 1px solid gray;zoom:50%;"/>
 
 <ol start="4"><li>Choose whether you want to send a contact card to all users as a part of the introduction message under <b>Send contact card (.VCF)</b>.
 <img src="../images/send-contact-card.png" alt="send contact card" title="send contact card" style="border: 1px solid gray;zoom:50%;"/></li>
@@ -60,6 +60,6 @@ When **Display Name** is not provided, the email profiles appear with the sender
 <ol start="7"><li>In the <b>Email</b> window, click <b>Save</b>. The <i>Channel added successfully</i> message is displayed.
 <img src="../images/email-template-design-header-footer.png" alt="email template design header and footer" title="email template design header and footer" style="border: 1px solid gray;zoom:50%;"/></li></ol>
 
-Once the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about [Publishing your Virtual Assistant](https://docsinternal-kore.github.io/docs/xo/deploy/publishing-bot/).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
 
-To learn more about working with Channels within the UXO Platform, please see the [Channel Enablement](https://docsinternal-kore.github.io/docs/xo/channels/adding-channels-to-your-bot/) page.
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
