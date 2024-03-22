@@ -324,9 +324,9 @@ When enabled, this feature lets you add an GenAI Node to Dialog Tasks. This node
 
 **Usage**
 
-When creating or editing a Dialog Task that’s created manually or[ auto-generated](https://developer.kore.ai/docs/bots/chatbot-overview/using-the-dialog-builder-tool/#Auto-Generated_Dialog_Tasks), you can find a node called GenAI Node within your nodes list. 
+When creating or editing a Dialog Task that’s created manually or[ auto-generated](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#auto-generated-dialog-tasks), you can find a node called GenAI Node within your nodes list. 
 
-When this feature is disabled, the node is unavailable within the Dialog Builder.[ Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/genai-node/).
+When this feature is disabled, the node is unavailable within the Dialog Builder.[ Learn more](../../automation/use-cases/dialogs/node-types/genai-node.md).
 
 
 ### Answer From Documents
@@ -387,7 +387,7 @@ This feature lets you define custom user prompts based on the conversation conte
 2. When you add custom tags to the **current message**, **user profile**, and **session** under **Instance Properties**, you can build custom profiles for the bot conversation. .
 3. Configuring node connections on an instance lets you define the connection rules for the conversation using transition conditions. This lets the conversation follow specific paths based on the user’s input.
 
-If this feature is disabled, you cannot configure the ML model to build custom prompts using OpenAI for different use cases.[ Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/genai-prompt/).
+If this feature is disabled, you cannot configure the ML model to build custom prompts using OpenAI for different use cases.[ Learn more](../../automation/use-cases/dialogs/node-types/genai-prompt.md).
 
 
 ### Rephrase Dialog Responses
@@ -402,7 +402,7 @@ This feature sends all User Prompts, Error Prompts, and Bot Responses to the Gen
 
 **Usage**
 
-When configuring a[ Message](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-message-nodes/#Component_Properties),[ Entity](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-entity-node/#Component_Properties), or[ Confirmation](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-confirmation-nodes/#Component_Properties)<span style="text-decoration:underline;"> </span>node, you can enable the **Rephrase Response** feature (disabled by default). This lets you set the number of user inputs sent to OpenAI/Anthropic Claude-1 based on the selected model as context for rephrasing the response sent through the node. You can choose between 0 and 5, where 0 means that no previous input is considered, while 5 means that the previous. 5 responses are sent as context.
+When configuring a Message, Entity, or Confirmation node, you can enable the **Rephrase Response** feature (disabled by default). This lets you set the number of user inputs sent to OpenAI/Anthropic Claude-1 based on the selected model as context for rephrasing the response sent through the node. You can choose between 0 and 5, where 0 means that no previous input is considered, while 5 means that the previous. 5 responses are sent as context.
 
 When this feature is disabled, the Rephrase Response section is not visible within your node’s Component Properties.
 
@@ -433,7 +433,7 @@ Before performing utterance testing, the user selects the **Zero-shot Model with
 
 The identified intent is then displayed as the matched intent.
 
-If this feature is disabled, the system won’t identify and display the logical and matched intent during utterance testing.[ Learn more](https://developer.kore.ai/docs/bots/nlp/user-utterances/#Zero-Shot_Learning_Model_with_OpenAI).
+If this feature is disabled, the system won’t identify and display the logical and matched intent during utterance testing.[ Learn more](../../automation/natural-language/training/machine-learning-engine.md#zero-shot-learning-model-with-openai).
 
 
 ### Repeat Responses
@@ -514,6 +514,6 @@ During utterance testing, the user provides a more descriptive intent name with 
 * User utterance input
 * Intent names
 
-If this feature is disabled, the system won’t identify and display the logically matched intent during utterance testing.[ Learn more](https://developer.kore.ai/docs/bots/nlp/user-utterances/#Few-Shot_Model_Koreai_Hosted_Embeddings).
+If this feature is disabled, the system won’t identify and display the logically matched intent during utterance testing.[ Learn more](../../automation/natural-language/training/machine-learning-engine.md#few-shot-model-koreai-hosted-embeddings).
 
 		

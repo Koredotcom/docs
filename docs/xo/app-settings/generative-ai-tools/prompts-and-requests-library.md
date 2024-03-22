@@ -7,7 +7,7 @@
 
 			
 
-If you have integrated a Custom LLM, continue to add prompts. If not, skip this article and see [Co-Pilot](../../../../../app-settings/generative-ai-tools/co-pilot-features) and [Dynamic Conversations](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features) features.
+If you have integrated a Custom LLM, continue to add prompts. If not, skip this article and see [Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
 
 Effective prompts play a crucial role in enhancing response accuracy when interacting with LLMs. The new Prompts Library module empowers bot designers by allowing them to create and test suitable prompts for their specific use cases. It also displays all the newly added and default request/prompt templates for the integrated models with their status as active or inactive. The default prompts are related to the pre-built models. However, you can import any default prompt, customize it, and use it for a custom LLM model.
 
@@ -20,7 +20,7 @@ The post processor for prompts allows designers to align LLM responses perfectly
 
 ## Pre-requisites
 
-Ensure that you have Integrated a Custom LLM successfully before proceeding further. For more information, see[ Custom LLM Integration](../../../../../app-settings/generative-ai-tools/llm-integration/#Custom_LLM_Integration_Framework).
+Ensure that you have Integrated a Custom LLM successfully before proceeding further. For more information, see[ Custom LLM Integration](llm-integration.md#custom-llm-integration-framework).
 
 
 ## How to add Prompts and Requests
@@ -51,9 +51,10 @@ To add a new prompt, follow the steps:
             ![alt_text](images/prompts2hq.gif "image_tooltip")
         
         2. Select the **Feature** from the dropdown menu, select the **Model**, and select the **Prompt** (in case of custom prompts only) from the dropdown menu. Hover over and click Preview Prompt to view the prompt before importing.
-            !!! note
 
-                    You have the flexibility to interchange a prompt designated for one feature with that of another, and vice versa.
+        !!! note
+
+            You have the flexibility to interchange a prompt designated for one feature with that of another, and vice versa.
 
         3. Click **Confirm** to get it imported into the JSON body.
 
