@@ -1,6 +1,6 @@
 # Knowledge Graph Terminology
 
-This article explains the terminology for <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/build-a-knowledge-graph/" target="_blank">Building a Knowledge Graph</a> within the XO Platform. This terminology applies to both the Few-Shot and the Ontology KG Models unless otherwise specified. <a href=" https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-overview/" target="_blank">Learn more</a>.
+This article explains the terminology for <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/build-a-knowledge-graph/" target="_blank">Building a Knowledge Graph</a> within the XO Platform. This terminology applies to both the Few-Shot and the Ontology KG Models unless otherwise specified. <a href=" https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-overview/" target="_blank">Learn more</a>.
 
 ## Terms or Nodes
 
@@ -56,11 +56,11 @@ Functionally, there are three types of Terms/Nodes.
 
 ## Tags
 
-For each term/node, you can add custom <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-terminology/#tags" target="_blank">tags</a>. Tags work exactly like terms but are not displayed in the Knowledge Graph ontology to avoid clutter. You can add synonyms and traits to tags as you do to terms.
+For each term/node, you can add custom <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-terminology/#tags" target="_blank">tags</a>. Tags work exactly like terms but are not displayed in the Knowledge Graph ontology to avoid clutter. You can add synonyms and traits to tags as you do to terms.
 
 ## Synonyms
 
-The Knowledge Graph allows you to add <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-terminology/#synonyms" target="_blank">Synonyms</a> for terms to include all possible alternative forms. Adding synonyms reduces the need for training the VA with alternative questions.
+The Knowledge Graph allows you to add <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-terminology/#synonyms" target="_blank">Synonyms</a> for terms to include all possible alternative forms. Adding synonyms reduces the need for training the VA with alternative questions.
 
 For example, the reservation node in our previously-mentioned Travel Assistant may have the following synonyms added to it: booking, order, purchase, etc. 
 
