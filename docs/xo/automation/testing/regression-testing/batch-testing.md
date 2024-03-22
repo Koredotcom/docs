@@ -976,7 +976,7 @@ The XO Platform now displays Batch Test Results for Universal bots for each test
 
 You can view the individual Batch Test Run summary of a test suite by clicking the **View Summary** icon of a test as shown below.
 
-<img src="../images/batch-testing-19-view-summary.png" alt="View Summary" title="View Summary" style="border: 1px solid gray; zoom:50%;"/> 
+<img src="../images/batch-testing-run-summary.png" alt="View Summary" title="View Summary" style="border: 1px solid gray; zoom:50%;"/> 
 
 
 This displays the relevant NLP and Flow Health metrics on the **Health and Monitoring** Dashboard for intents mapped to Dialogs, FAQs, and Traits. [Learn More](../health-and-monitoring/virtual-assistants-health-and-monitoring/#test-coverage){:target="_blank"}.

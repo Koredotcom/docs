@@ -7,7 +7,7 @@ After you have defined your assistant and configured one or more tasks, you shou
 
 To test your tasks in a messaging window, click the **Talk to Bot** icon located on the lower right corner on the XO Platform. 
 
-<img src="../images/talk-to-bot-img1.png" alt="Talk to Bot" title="Talk to Bot" style="border: 1px solid gray; zoom:80%;"/>
+<img src="../images/talk-to-bot-window.png" alt="Talk to Bot" title="Talk to Bot" style="border: 1px solid gray; zoom:80%;"/>
 
 A messaging window for the assistant is displayed and connected to the NLP interpreter as shown in the following illustration for a _Flight Details Assistant_.
 
@@ -24,7 +24,7 @@ When you first open the window, the **Bot Setup Confirmation Message** field def
 
 You can open a **debug** window to view the natural language processing, logs, and session context, and variables of the chat. To open the debug, click the Debug icon <img src="../images/talk-to-bot-img3.png"> located on the top right-hand side of the Talk to Bot chat window. The Debug window consists of the following tabs: **Debug Log**, **NL Analysis**, **Session Context & Variables**. 
 
-<img src="../images/talk-to-bot-img4.png" alt="Debug window" title="Debug window" style="border: 1px solid gray; zoom:80%;"/>
+<img src="../images/talk-to-bot-debug-window.png" alt="Debug window" title="Debug window" style="border: 1px solid gray; zoom:80%;"/>
 
 The Debug window lets you explore the following:
 
@@ -41,10 +41,10 @@ The Debug window lets you explore the following:
 * _execution_: indicates execution of nodes has started. For example, script, service, and webhook execution has started.
 * _execution successful_: indicates execution of nodes is successful.For example, script, service, and webhook execution is successful.
 * _process completed_: indicates execution process for the script, service and webhook node is completed.  
-<img src="../images/talk-to-bot-img5.png" alt="Debug log - Statuses" title="Debug log - Statuses" style="border: 1px solid gray; zoom:80%;"/>
+<img src="../images/process-completed.png" alt="Debug log - Statuses" title="Debug log - Statuses" style="border: 1px solid gray; zoom:80%;"/>
 
 * _expand_: You can expand the node and click the **Show More** to view node debug log details.  
-<img src="../images/talk-to-bot-img6.png" alt="Expand to see debug log details" title="Expand to see debug log details" style="border: 1px solid gray; zoom:80%;"/>
+<img src="../images/expand-option.png" alt="Expand to see debug log details" title="Expand to see debug log details" style="border: 1px solid gray; zoom:80%;"/>
 
 * _node details_: shows the node details in the script format. You can copy, open the script in a full screen view or close the script view.  
 <img src="../images/talk-to-bot-img7.png" alt="Node details" title="Node details" style="border: 1px solid gray; zoom:80%;"/>

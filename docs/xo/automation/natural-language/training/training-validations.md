@@ -27,9 +27,9 @@ The ML engine enables you to identify issues proactively in the training phase i
 
 ## How to View NLU Training Validations
 
-1. On the virtual assistant’s **Build** menu, click **Natural Language ->** **Training.**
+1. On the virtual assistant, click **Natural Language ->** **Training.**
 2. In the **Intents** tab, you can see the set of recommendations for the Intents and ML utterances.
-<img src="../images/intent-recommendations.png" alt="intent recommendations" title="intent recommendations" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/intent-recommendations-window.png" alt="intent recommendations" title="intent recommendations" style="border: 1px solid gray; zoom:75%;">
  
 !!!note
 
@@ -39,13 +39,13 @@ The ML engine enables you to identify issues proactively in the training phase i
 
 Hover on the <b>Error</b> icon to view the recommendations to resolve the error.
 
-<img src="../images/hover-over-error-icon.png" alt="hover over error icon" title="hover over error icon" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/hover-over-error-icon-window.png" alt="hover over error icon" title="hover over error icon" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p>An Error is displayed when the intent has a definite problem that impacts the virtual assistant’s accuracy or intent score. Errors are high severity problems.Hover on the <b>Warning</b> icon and follow the instructions in the warning to enhance the training for ML utterances.</p></div>
 
-<img src="../images/training-warning.png" alt="training warning" title="training warning" style="border: 1px solid gray; zoom:75%;"></ol>
+<img src="../images/training-warning-window.png" alt="training warning" title="training warning" style="border: 1px solid gray; zoom:75%;"></ol>
  
 !!!note
 
@@ -53,7 +53,7 @@ Hover on the <b>Error</b> icon to view the recommendations to resolve the error.
 
 <ol start="4"><li>Once you click on the Intent with error or warning, hover over the <b>Bulb</b> icon to view the summary of error or warning messages as illustrated below:</li>
 
-<img src="../images/view-error-summary.png" alt="view error summary" title="view error summary" style="border: 1px solid gray; zoom:75%;"></ol>
+<img src="../images/view-error-summary-window.png" alt="view error summary" title="view error summary" style="border: 1px solid gray; zoom:75%;"></ol>
 
 ## How to Use the NLU Validate Model
 
@@ -67,12 +67,13 @@ The Recommendations Summary is available when validating your model. This featur
 
 To view the Recommendations Summary, follow the steps below:
 
-1. Navigate to **Build** > **Natural Language** and click the **Training** option on the left menu.
+1. Navigate to **Natural Language** and click the **Training** option on the left menu.
 2. On the **Training** page, click the **Validate Model** button.
-<img src="../images/validate-model-click.png" alt="click validate model" title="click validate model" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/validate-model-click-window.png" alt="click validate model" title="click validate model" style="border: 1px solid gray; zoom:75%;">
 
 3. The recommendations summary slider appears with the list of issues and the recommended actions to fix them.
-<img src="../images/recommendations-summary-slider.png" alt="recommendations summary slider" title="recommendations summary slider" style="border: 1px solid gray; zoom:75%;">
+
+<img src="../images/recommendations-summary-slider-window.png" alt="recommendations summary slider" title="recommendations summary slider" style="border: 1px solid gray; zoom:75%;">
  
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -99,6 +100,7 @@ To filter the recommendations summary issue, follow the steps below:
     <img src="../images/hover-over-issue.png" alt="hover over issue" title="hover over issue" style="border: 1px solid gray; zoom:75%;">
 
 2. In the **Training** panel, all the intents with the issue type are listed. For example, if the user selects ‘_43 Intents have no utterances_‘, the platform filters out those 43 intents from the list of all intents. A note on the filter applied displays on the panel, and an option to reset the applied filter is available as shown below:
+
 <img src="../images/training-panel-information.png" alt="training panel information" title="training panel information" style="border: 1px solid gray; zoom:75%;">
 
 3. Click the **+Utterance**, **+Pattern**, or **+Rule** link for an intent issue type to add the relevant values for training.

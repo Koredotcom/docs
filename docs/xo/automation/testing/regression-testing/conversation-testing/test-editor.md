@@ -2,10 +2,8 @@
 
 You can use the Test Editor to view the test cases and their metadata. This section explains the steps to access the test editor and use the available options:
 
-
-
 1. On the **Conversation Testing** page, click on any **Test Suite** to go to the **Test Editor**.  
-<img src="../images/te-img1.png" alt="Navigate to Test Editor" title="Navigate to Test Editor" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/te-img1-window.png" alt="Navigate to Test Editor" title="Navigate to Test Editor" style="border: 1px solid gray;zoom:50%;"/>
 
 2. In the **Test Editor**, the platform shows the validated chat along with its metadata and assertions for each test case.  
 <img src="../images/te-img2.png" alt="Test Editor" title="Test Editor" style="border: 1px solid gray;zoom:50%;"/>

@@ -126,5 +126,3 @@ To get started optimizing your VA’s NLP, you need to select the VA you’re wo
 
 * **Training** – In the Training section, you can define how the NLP interpreter recognizes and responds to the user input for a VA, and then train the interpreter to recognize the correct user intent.
 * **NLU Config** – In this section, you can define the recognition confidence levels required for minimum recognition actions, the confidence range for asking a user to choose from a list of possible matches, and a recognition confidence level for a positive match for the knowledge graph.
-
-    <img src="../images/nlp-optimize-settings.png" alt="Optimizing NLP" title="Optimizing NLP" style="border: 1px solid gray; zoom:75%;">
