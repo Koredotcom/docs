@@ -54,13 +54,13 @@ All these features benefit VA developers, NLP developers, and testers as follows
 * Developers can unlock the power of Generative AI with their prompts, enabling them to build creative and custom use cases.
 * Mundane tasks like generating dialog tasks or training utterances are automated to help developers be more productive and focus on other important tasks like enhancing conversation design, creating complex test cases, and more.
 * Testers can ensure that their intent descriptions are meaningful in the right context to generate the right content.
-* The Platform provides suggestions and nudges developers in the right direction for the better design and development of Virtual Assistants. For example, it offers curated use case suggestions while[ creating the VA](https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/#Create_a_Standard_Virtual_Assistant), including probable user inputs (simulating end-user behavior) in[ Conversation Testing](https://developer.kore.ai/docs/bots/test-your-bot/conversation-testing-landing-page/). This way, the VA can simulate the end user’s behavior at every conversation step and respond more realistically by considering error scenarios, digressions, and contextual changes.
+* The Platform provides suggestions and nudges developers in the right direction for the better design and development of Virtual Assistants. For example, it offers curated use case suggestions while[ creating the VA](../../getting-started/building-a-virtual-assistant.md#create-a-standard-virtual-assistant), including probable user inputs (simulating end-user behavior) in[ Conversation Testing](../../automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md). This way, the VA can simulate the end user’s behavior at every conversation step and respond more realistically by considering error scenarios, digressions, and contextual changes.
 * Allows enterprises and advanced users to bypass the platform’s pre-built integrations. They can establish customized connections to large language models and optimize prompts and requests for their specific use cases.
 
 
 ## Important Considerations
 
-Generative AI features are available for English and non-English NLU and VA languages on the Kore.ai XO Platform. However, custom LLM-specific features are currently limited to English. To learn more about managing languages for VAs, click[ here](https://developer.kore.ai/docs/bots/advanced-topics/multi-lingual/managing-languages-for-multilingual-vas/).
+Generative AI features are available for English and non-English NLU and VA languages on the Kore.ai XO Platform. However, custom LLM-specific features are currently limited to English. To learn more about managing languages for VAs, click[ here](../../app-settings/language-management/managing-languages-for-multilingual-vas.md).
 
 LLM and Generative AI also require sharing data with third parties: OpenAI (when using the OpenAI integration) or OpenAI and Microsoft (when using the Azure integration).
 
