@@ -78,15 +78,14 @@ The NLP module improves the performance by constantly validating the ML Engine a
 To add utterances to the Machine Learning Engine, please follow the steps below:
 
 1. Open the VA for which you want to add sample user utterances.
-2. Select the **Build** tab from the top menu.
-3. From the left menu, select the **Natural Language ->** **Training** option.
-4. By default, the tab with a list of all **Intents** would be displayed.
-5. You can use the filter option to restrict the display items to **Dialog Intents, Sub Intent Dialogs** or **Sub-Intents**. You can also choose to **Include Hidden Tasks**. 
-6. Click **Utterances > + Utterance** against the Intent for which you want to add the utterances. 
+2. From the left menu, select the **Natural Language ->** **Training** option.
+3. By default, the tab with a list of all **Intents** would be displayed.
+4. You can use the filter option to restrict the display items to **Dialog Intents, Sub Intent Dialogs** or **Sub-Intents**. You can also choose to **Include Hidden Tasks**. 
+5. Click **Utterances > + Utterance** against the Intent for which you want to add the utterances. 
 
-<img src="../images/add-utterances.png" alt="add utterance" title="add utterance" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-utterances-click.png" alt="add utterance" title="add utterance" style="border: 1px solid gray; zoom:75%;">
 
-<ol start="7"><li>The user utterance page opens.</li></ol>
+<ol start="6"><li>The user utterance page opens.</li></ol>
 
 Here is where you can enter the utterances. 
 
@@ -158,15 +157,14 @@ On the XO Platform, when auto-train is in progress, a warning message that “_u
 To set up the **Auto Train** option, follow the steps below:
 
 1. Open the VA for which you want to modify the settings.
-2. Select the **Build** top menu option.
-3. On the left navigation menu, click **Natural Language** -> **Thresholds & Configurations** -> **Machine Learning**.
-4. Select “_Yes, add the successfully identified user utterances to the ML training model (Unsupervised Training)”_ for the **Auto Training For Machine Learning** option.
+2. On the left navigation menu, click **Natural Language** -> **Thresholds & Configurations** -> **Machine Learning**.
+3. Select “_Yes, add the successfully identified user utterances to the ML training model (Unsupervised Training)”_ for the **Auto Training For Machine Learning** option.
 
-    <img src="../images/auto-train-ML.png" alt="auto train machine learning" title="auto train machine learning" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/auto-train-ML-section.png" alt="auto train machine learning" title="auto train machine learning" style="border: 1px solid gray; zoom:75%;">
 
 ## Thresholds & Configurations
 
-To train and improve the performance of your Assistant, Threshold and Configurations can be specified for all three NLP engines – FM, KG, and ML. You can access these settings by navigating to **Build** > **Natural Language** > **Thresholds & Configurations**.
+To train and improve the performance of your Assistant, Threshold and Configurations can be specified for all three NLP engines – FM, KG, and ML. You can access these settings by navigating to **Natural Language** > **Thresholds & Configurations**.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -212,7 +210,7 @@ All the primary intents of the VA will be part of the **Bot Level Intent Model**
 
 The XO Platform provides language-wise defaults for the following parameters related to the ML performance of your VA. You can customize them to suit your particular needs.
 
-<img src="../images/ml-thresholds-default-parameters.png" alt="ml thresholds default parameters" title="ml thresholds default parameters" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/ml-thresholds-default-parameters-access.png" alt="ml thresholds default parameters" title="ml thresholds default parameters" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Key Pointers on ML configurations</p>
@@ -220,7 +218,7 @@ The XO Platform provides language-wise defaults for the following parameters rel
 <li>When the multiple intent model is enabled, you can configure the individual models by selecting the Configure link against the model.</li>
 <li>While there is only one VA level intent model, you can add multiple dialog intent models using the Add New button and configure each as per your requirements.</li>
 <li>Advanced ML Configurations can be applied from here or from the Advanced NLP Configurations section.</li>
-<img src="../images/advanced-ml-configurations.png" alt="advanced ml configurations" title="advanced ml configurations" style="border: 1px solid gray; zoom:75%;"></ul>
+<img src="../images/advanced-ml-configurations-section.png" alt="advanced ml configurations" title="advanced ml configurations" style="border: 1px solid gray; zoom:75%;"></ul>
 </div>
 
 #### Network Type
@@ -301,12 +299,12 @@ For an online shopping virtual assistant, the following needs to be ensured to i
 * The intent names should be very descriptive.
 * Provide descriptive names, as the model relies heavily on intent names.
 
-When an intent is named “**_Show the status of my order_**,” for example, under **Build** > **Conversational Skills** > **Dialog Tasks**.
+When an intent is named “**_Show the status of my order_**,” for example, under **Conversational Skills** > **Dialog Tasks**.
 
 <img src="../images/intent-name-example.png" alt="intent name example" title="intent name example" style="border: 1px solid gray; zoom:75%;">
 
 
-For a new bot, under **Build** > **Natural Language** > **Training** > **Intents**, ensure that no training utterances are added for the intent.
+For a new bot, under **Natural Language** > **Training** > **Intents**, ensure that no training utterances are added for the intent.
 
 <img src="../images/intent-training-utterances.png" alt="intent training utterances" title="intent training utterances" style="border: 1px solid gray; zoom:75%;">
 
@@ -321,21 +319,22 @@ When you enable **ZSL network type** for an existing bot, the system does not id
 
 To enable the **ZSL** model, follow the steps below:
 
-1. Navigate to **Build** > **Natural Language** > **Thresholds and Configurations** > **Machine Learning**.
+1. Navigate to **Natural Language** > **Thresholds and Configurations** > **Machine Learning**.
 2. Select **_Zero-Shot Model with OpenAI_** in the dropdown list for **Network Type**, and click **Save**.
-<img src="../images/zero-shot-model-selection.png" alt="zero shot model" title="zero shot model" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/zero-shot-model-selection-window.png" alt="zero shot model" title="zero shot model" style="border: 1px solid gray; zoom:75%;">
 
 **Testing the Utterance**
 
 To test the utterance for the **Zero-Shot Learning Model with OpenAI** Network Type, follow the steps below:
 
-1. Navigate to **Build** > **Testing** > **Utterance Testing**.
+1. Navigate to **Testing** > **Utterance Testing**.
 2. Type the utterance.
 
 **Example 1**: “_I don’t want the product_.”
 <img src="../images/test-utterance-example-1.png" alt="test utterance example" title="test utterance example" style="border: 1px solid gray; zoom:75%;">
 
 **Example 2**: “_Where is my delivery?_”
+
 <img src="../images/test-utterance-example-2.png" alt="test utterance example" title="test utterance example" style="border: 1px solid gray; zoom:75%;">
 
 <ol start="3"><li>Click <b>Save & Run</b>.</li>
@@ -442,9 +441,9 @@ The model uses embeddings generated using large pre-trained language models to c
 
 To enable the **FSL** model, follow the steps below:
 
-1. Navigate to **Build** > **Natural Language** > **Thresholds and Configurations** > **Machine Learning**.
+1. Navigate to **Natural Language** > **Thresholds and Configurations** > **Machine Learning**.
 2. Select **_Few-Shot Model (Kore.ai Hosted Embeddings)_** in the dropdown list for **Network Type**, and click **Save**.
-<img src="../images/enable-few-shot-model.png" alt="enable Few-shot model" title="enable Few-shot model" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/enable-few-shot-model-option.png" alt="enable Few-shot model" title="enable Few-shot model" style="border: 1px solid gray; zoom:75%;">
 
 ### Support for Standard Bot Traits
 
@@ -457,11 +456,10 @@ The Few-shot Model is now the default model for managing Traits. This feature is
 
 To manage the Few-shot Model as the default Network Type for traits, follow the steps below:
 
-1. Click **Build** on the top menu.
-2. Navigate to **Natural Language** > **Training**, and click the **Traits** tab.
-3. Click the trait you want to configure from the list. Otherwise, add a new trait by clicking **Add Traits**.
-4. In the resulting window, click **Manage** to view the **Manage Traits** panel.
-5. The system selects **Few-shot Model (Kore.ai Hosted Embeddings)** by default as the Network Type, and the following settings appear:i. **ML Threshold** is set to the default value 0.5.ii. The **Feature Extraction** and **Sequence Length** options available for Standard Models don’t appear as they’re not applicable.
+1. Navigate to **Natural Language** > **Training**, and click the **Traits** tab.
+2. Click the trait you want to configure from the list. Otherwise, add a new trait by clicking **Add Traits**.
+3. In the resulting window, click **Manage** to view the **Manage Traits** panel.
+4. The system selects **Few-shot Model (Kore.ai Hosted Embeddings)** by default as the Network Type, and the following settings appear:i. **ML Threshold** is set to the default value 0.5.ii. The **Feature Extraction** and **Sequence Length** options available for Standard Models don’t appear as they’re not applicable.
 <img src="../images/Few-shot-trait-selection.png" alt="Few-shot traits selection" title="Few-shot traits selection" style="border: 1px solid gray; zoom:75%;">
 
 ### Support for Bot Synonyms
@@ -476,7 +474,7 @@ In this case, MPNET provides a high score (ML Threshold and ML Definitive scores
 
 **Enabling Bot Synonyms**
 
-On the Platform, you can use Bot Synonyms as part of the Few-shot model by enabling the **Bot Synonyms** option in the **Bot Level Intent Model Configurations** window (after selecting the **Few-Shot Model (Kore.ai Hosted Embeddings)** Network Type under **BUILD** > **NATURAL LANGUAGE** > **THRESHOLDS AND CONFIGURATIONS**.
+On the Platform, you can use Bot Synonyms as part of the Few-shot model by enabling the **Bot Synonyms** option in the **Bot Level Intent Model Configurations** window (after selecting the **Few-Shot Model (Kore.ai Hosted Embeddings)** Network Type under **NATURAL LANGUAGE** > **THRESHOLDS AND CONFIGURATIONS**.
 
 <img src="../images/bot-synonyms-few-shot-model.png" alt="Few-shot bot synonyms" title="Few-shot bot synonyms" style="border: 1px solid gray; zoom:75%;">
 
@@ -805,9 +803,9 @@ The ML engine enables you to identify issues proactively in the training phase i
 * **Utterance predicts intent with low confidence** – notifies about the utterances that have low confidence scores. With this recommendation, you can identify and fix such utterances to improve the confidence score during the virtual assistant creation phase itself.
 
 ### Viewing NLU Training Validations
-1. On the virtual assistant’s **Build** menu, click **Natural Language ->** **Training.**
+1. On the virtual assistant’s menu, click **Natural Language ->** **Training.**
 2. In the **Intents** tab, you can see the set of recommendations for the Intents and ML utterances.
-    <img src="../images/training-intents-tab.png" alt="select intents tab" title="select intents tab" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/training-intents-tab-select.png" alt="select intents tab" title="select intents tab" style="border: 1px solid gray; zoom:75%;">
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
@@ -830,7 +828,7 @@ The ML engine enables you to identify issues proactively in the training phase i
         <p>A warning is displayed when the issue impacts the VA's accuracy and it can be resolved. Warnings are less severe problems when compared to errors.
         </p>
         </div>
-        <img src="../images/handling-warning.png" alt="handle warning" title="handle warning" style="border: 1px solid gray; zoom:75%;">
+        <img src="../images/handling-warning-section.png" alt="handle warning" title="handle warning" style="border: 1px solid gray; zoom:75%;">
 
 Once you click on the Intent with an error or warning, hover over the **Bulb** icon to view the summary of error or warning messages as illustrated below:
 
@@ -842,7 +840,7 @@ You can import and export ML utterances of a VA into another in CSV and JSON for
 
 ### How to Export or Import ML Utterances
 
-1. On the VA’s **Build** menu, click **Natural Language** > **Training**.
+1. On the VA’s menu, click **Natural Language** > **Training**.
 2. The ‘In-Development’ version of the VA’s ML utterances open by default. If you want to see the utterances in the ‘Published’ version, toggle on the top right side of the window to **Published**. 
 
     <div class="admonition note">
@@ -854,7 +852,7 @@ You can import and export ML utterances of a VA into another in CSV and JSON for
 
     * Click **Import Utterances** and upload a CSV or JSON file with the utterances to import, or
     * Click **Export Utterances** and select CSV or JSON formats to export the utterances.
-    <img src="../images/import-export-utterances.png" alt="import export utterances" title="import export utterances" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/import-export-utterances-select.png" alt="import export utterances" title="import export utterances" style="border: 1px solid gray; zoom:75%;">
 
 ### Versioning and Behavior of Imported Utterances
 
