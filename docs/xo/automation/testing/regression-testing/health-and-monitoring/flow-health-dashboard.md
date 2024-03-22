@@ -101,8 +101,6 @@ The percentage of transitions coverage is displayed as follows:
 
 <img src="../images/fh-img9.png" alt="Transition Coverage" title="Transition Coverage" style="border: 1px solid gray;zoom:50%;"/>
 
-
-
 1. Click the <img src="../images/fh-tilda-icon.png"> icon beside the percentages to open the Dialog Transitions page and view the following details:
 
     1. **Task Name** – The name of the dialog intent. 
