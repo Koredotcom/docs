@@ -420,7 +420,7 @@ ConfigurationDefault Setting
 <li>You may need to add training utterances to identify entities by the NER model for specific scenarios.</li>
 <li>When using FSL, dialog intents and FAQs need to be treated the same.</li>
 <li>Bot Synonyms, Stop Words and a few other ML Configurations are not used by the Few-Shot Model (Kore.ai Hosted Embeddings).</li>
-<li>The new Few-Shot Model (Kore.ai Hosted Embeddings) for Traits in NLP V3 allows the NLP Engine to train and identify Traits when set as the default model. This feature is available for only the new bots that have English as the NLU language. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/?h=support+for+standard+bot#support-for-standard-bot-traits" target="_blank"> Learn more</a>.</li>
+<li>The new Few-Shot Model (Kore.ai Hosted Embeddings) for Traits in NLP V3 allows the NLP Engine to train and identify Traits when set as the default model. This feature is available for only the new bots that have English as the NLU language. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/#few-shot-model-koreai-hosted-embeddings" target="_blank"> Learn more</a>.</li>
 <li>Intents are rescored by the R&R Engine by comparing the closest training sentences (including the task name) with the user utterance.</li></ul>
 </div>
 

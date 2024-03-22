@@ -55,7 +55,7 @@ Context management involves the following steps:
 
 ### Output Context
 
-**Context Tags** are generated and stored in the **context object** to be used for managing the assistant’s behavior and user experience. The Platform creates a context object for every user intent, like dialog tasks and FAQs. [Learn more](/docs/xo/automation/use-cases/context-object/){target="_blank"}.
+**Context Tags** are generated and stored in the **context object** to be used for managing the assistant’s behavior and user experience. The Platform creates a context object for every user intent, like dialog tasks and FAQs. [Learn more](/docs/xo/automation/intelligence/context-object/){target="_blank"}.
 
 **Default Contexts Tags**
 

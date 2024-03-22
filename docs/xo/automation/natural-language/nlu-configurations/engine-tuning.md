@@ -5,7 +5,7 @@ You can fine-tune intent detection for each language enabled for your Virtual As
 2. Under the **Thresholds & Configurations** section, you can perform by customizing
     * The Fundamental Meaning model – [Learn more](/docs/xo/automation/natural-language/training/fundamental-meaning/#thresholds-configurations){target="_blank"}.
     * Machine Learning model – [Learn more](/docs/xo/automation/natural-language/training/machine-learning-engine/#thresholds-configurations){target="_blank"}.
-    * Knowledge Graph – [Learn more](/docs/xo/answers/knowledge-ai/knowledge-graph-training/#thresholds-configurations){target="_blank"}.
+    * Knowledge Graph – [Learn more](/docs/xo/automation/knowledge-ai/knowledge-graph-training/#thresholds-configurations){target="_blank"}.
     * Ranking & Resolver engine – [Learn more](/docs/xo/automation/natural-language/training/ranking-and-resolver/#thresholds-configuration){target="_blank"}.
 
 Apart from these, under the **Advanced NLP Configurations** section, there are advanced settings that you can use for specific use cases and requirements.
@@ -16,7 +16,7 @@ Apart from these, under the **Advanced NLP Configurations** section, there are a
 
 <img src="../images/advanced-nlu-configurations.png" alt="thresholds advanced nlu" title="thresholds advanced nlu" style="border: 1px solid gray; zoom:75%;">
 
-The following table gives the details of the various configurations that can be set from this section. Apart from these you can add Custom configurations, reach out to our [Support Team]("https://support.kore.ai/hc/en-us/"){target="_blank"} to know how.
+The following table gives the details of the various configurations that can be set from this section. Apart from these you can add Custom configurations.
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">
@@ -861,7 +861,7 @@ When multiple patterns are identified in a sentence, define whether the FM Engin
 
 ### Exact Task Name Match
 
-The [FM Engine configuration](/docs/xo/automation/natural-language/training/fundamental-meaning/#thresholds-configurations){:target="_blank"} _Intent Detection using Task Name_ Words allows you to choose whether to match a task by using the words present in the task name. It is advised that this configuration be disabled if it conflicts with other training. 
+The [FM Engine configuration](/docs/xo/automation/natural-language/training/fundamental-meaning/#thresholds-configurations){:target="_blank"} Intent Detection using Task Name Words allows you to choose whether to match a task by using the words present in the task name. It is advised that this configuration be disabled if it conflicts with other training. 
 
 When disabled, the platform generates a strict pattern that does ‘exact matching’ i.e. if the user input exactly matches with the task name then it will consider as a match. The Exact Task Name Match configuration allows you to choose whether the platform should auto-generate the strict pattern when ‘Intent Detection using Task Name Words’ is Disabled.
 
