@@ -59,12 +59,11 @@ This node is not available by default. You can enable it for all Dialog Tasks, i
 1. Configure the [LLM integration](../../../../../app-settings/generative-ai-tools/llm-integration).
 2. Toggle GenAI Node feature under **App Settings** > **Generative AI Tools** > **Dynamics Conversations**. [Learn more](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#genai-node)
 
-
-
     ![alt_text](images/genai-nodef.png "image_tooltip")
 
-If you do not integrate OpenAI and do not enable LLM or GenAI Node, then the node will not be available within the Dialog Builder.
+    <img src="../images/genai-nodef.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
+If you do not integrate OpenAI and do not enable LLM or GenAI Node, then the node will not be available within the Dialog Builder.
 
 ## Add to a Task
 
