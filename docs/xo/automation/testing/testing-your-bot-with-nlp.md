@@ -230,7 +230,7 @@ The **Ranking & Resolver** window displays the following:
 * The other definitive intent(s), the reason for elimination, and the ranking score.
 * The result, including the winning and eliminated intents.
 
-<img src="../images/utterance-testing-14-rr-testing.png" alt="Ranking and Resolver V2" title="Ranking and Resolver V2" style="border: 1px solid gray; zoom:50%;"/>
+<img src="../images/utterance-testing-14-rr-testing-window.png" alt="Ranking and Resolver V2" title="Ranking and Resolver V2" style="border: 1px solid gray; zoom:50%;"/>
 
 
 The **NLP Analysis** page within the **NLP Insights** dashboard displays the following:
