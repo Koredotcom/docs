@@ -8,7 +8,7 @@ The Few-Shot Knowledge Graph leverages Kore.ai’s LLM and lets you add FAQs wit
 
 The Knowledge Graph engine thus responds to users’ intents by identifying the appropriate questions within the Knowledge Graph, and then presenting the user with the appropriate response.
 
-You can find the Knowledge Graph by selecting your desired VA, then going to **Build** > **Conversation Skills** > **Knowledge Graph**.
+You can find the Knowledge Graph by selecting your desired VA, then going to **Conversation Skills** > **Knowledge Graph**.
 
 !!! note "Key Considerations for Training a Few-Shot Knowledge Graph"
     
@@ -211,7 +211,7 @@ To navigate to Thresholds and Configuration, please follow the steps below:
 2. Hover over the left pane and click **Natural Language** > **Training**.
 3. Click the **Thresholds & Configurations** tab.
 4. Below is a detailed discussion about the **Knowledge Graph** section on this page.
-<img src="../images/thresholds-configurations.png" alt="thresholds and configurations" title="thresholds and configurations" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/thresholds-configurations-window.png" alt="thresholds and configurations" title="thresholds and configurations" style="border: 1px solid gray; zoom:75%;">
 
 Here are the features that you will find in this section of the Platform:
 

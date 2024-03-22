@@ -41,8 +41,8 @@ This can be achieved by the following:
 
 To access **Traits**, follow the steps below:
 
-1. Navigate to **Build > Natural Language > Training > Traits**.
-<img src="../images/access-traits.png" alt="access traits" title="access traits" style="border: 1px solid gray; zoom:75%;">
+1. Navigate to **Natural Language > Training > Traits**.
+<img src="../images/access-traits-tab.png" alt="access traits" title="access traits" style="border: 1px solid gray; zoom:75%;">
 
 The following key features can be leveraged when defining Traits:
 
@@ -100,16 +100,16 @@ _Intent detection_ or _Dialog execution_ is achieved using traits, along with th
 
 There are multiple ways to add rules:
 
-1. From the Traits section using the **Add New Rule** link.
-<img src="../images/add-new-rule-link.png" alt="add new rule link" title="add new rule link" style="border: 1px solid gray; zoom:75%;">
+1. From the **Traits** section using the **Add New Rule** link.
+<img src="../images/add-new-rule-link-traits.png" alt="add new rule link" title="add new rule link" style="border: 1px solid gray; zoom:75%;">
 
 2. From the Intent Node using the **Rules** section under the **NLP Properties**.
 <img src="../images/add-rules-intent-node.png" alt="add rules intent node" title="add rules intent node" style="border: 1px solid gray; zoom:75%;">
 
-3. Click the **Rules** tab for a given **Intent** to view the rules under **Build > Natural Language > Training**.
-<img src="../images/view-rules.png" alt="view rules" title="view rules" style="border: 1px solid gray; zoom:75%;">
+3. Click the **Rules** tab for a given **Intent** to view the rules under **Natural Language > Training**.
+<img src="../images/view-rules-link.png" alt="view rules" title="view rules" style="border: 1px solid gray; zoom:75%;">
 
-Each rule can have one or more conditions with AND as the operator. Multiple trait rules can be defined for a given intent and the intent is considered as a definite match if any one of the rules matches.
+Each rule can have one or more conditions with **AND** as the operator. Multiple trait rules can be defined for a given intent and the intent is considered as a definite match if any one of the rules matches.
 
 ### Knowledge Graph Intents
 

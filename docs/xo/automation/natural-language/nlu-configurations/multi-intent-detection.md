@@ -25,4 +25,4 @@ Following are the steps to enable multi-intent detection:
 2. Select the **Build** tab from the top menu.
 3. From the left menu, click **Intelligence **>** Multi Intent Detection**.
 4. Turn on the toggle to enable it.
-<img src="../images/multi-intent-detection-toggle.png" alt="amend hidden entities" title="amend hidden entities" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/multi-intent-detection-toggle-window.png" alt="amend hidden entities" title="amend hidden entities" style="border: 1px solid gray; zoom:75%;">
