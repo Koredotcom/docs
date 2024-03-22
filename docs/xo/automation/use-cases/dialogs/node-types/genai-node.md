@@ -59,8 +59,6 @@ This node is not available by default. You can enable it for all Dialog Tasks, i
 1. Configure the [LLM integration](../../../../../app-settings/generative-ai-tools/llm-integration).
 2. Toggle GenAI Node feature under **App Settings** > **Generative AI Tools** > **Dynamics Conversations**. [Learn more](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#genai-node)
 
-    ![alt_text](images/genai-nodef.png "image_tooltip")
-
     <img src="../images/genai-nodef.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 If you do not integrate OpenAI and do not enable LLM or GenAI Node, then the node will not be available within the Dialog Builder.
@@ -73,8 +71,8 @@ To add the GenAI Node to a Dialog Task, follow these steps:
 
 
 2. You can add the GenAI Node just like any other node. You can find it in the main list of nodes, as it does not depend on the Bot Action node.
-    ![alt_text](images/canvas.png "image_tooltip")
 
+     <img src="../images/canvas.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Configure
@@ -89,9 +87,7 @@ The settings made within this section affect this node across all instances in a
 
 Under **General Settings**, provide a **Name** and **Display Name** for the node. The node Name cannot contain spaces.
 
-
-![alt_text](images/genai-node(4).png "image_tooltip")
-
+<img src="../images/genai-node(4).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ### Dialog Details
 
@@ -109,20 +105,18 @@ To run a pre-processor script before reaching the GenAI Node, you must define it
 1. Click the GenAI Node you want to configure.
 2. Click the **Component Properties** icon on the left menu.
 3. In the **Dialog Details** section, click **Define Script** in the **Pre-processor Script** section.
-    ![alt_text](images/genai-node(8).png "image_tooltip")
+
+    <img src="../images/genai-node(8).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 4. In the **Add Script** window, add the script you want to execute, and click **Save**.
 
-    ![alt_text](images/genai-node(10).png "image_tooltip")
-
-
+    <img src="../images/genai-node(10).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ### System Context
 
 Include a brief description of the use case context; for example: _Act like a flight booking agent_.
 
-![alt_text](images/genai-node(13).png "image_tooltip")
-
+<img src="../images/genai-node(13).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ### Entities
 
@@ -130,8 +124,7 @@ Specify the entities to be collected by LLM during runtime. Click Add Entity, en
 
 You can add a maximum of 5 entities. Most entity types are supported. Here are the exceptions: custom, composite, list of items (enumerated and lookup), and attachment. See [Entity Types](../../entity-types) for more information.
 
-![alt_text](images/genai-node(12).png "image_tooltip")
-
+<img src="../images/genai-node(12).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ### Rules
 
@@ -144,9 +137,7 @@ There is a 250-character limit to the Rules field, and you can add a maximum of 
 
 To remove a rule, click the Bin icon next to the rule.
 
-
-![alt_text](images/genai-node(14).png "image_tooltip")
-
+<img src="../images/genai-node(14).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ### Exit Scenarios
 
@@ -158,9 +149,7 @@ There is a 250-character limit to the Scenarios field, and you can add a maximum
 
 To remove a scenario, click the Bin next to the scenario.
 
-
-![alt_text](images/genai-node(9).png "image_tooltip")
-
+<img src="../images/genai-node(9).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ### Post-Processor Script
 
@@ -177,7 +166,7 @@ To define a Post-Processor script, in the **Dialog Details** section, follow the
 
 1. Click **Define Script** in the **Pre-processor Script** section.
 
-    ![alt_text](images/genai-node(5).png "image_tooltip")
+    <img src="../images/genai-node(5).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 2. Add the script you want to execute in the **Add Script** window, and click **Save**.
 
@@ -203,13 +192,11 @@ Decide whether to use autocorrect to mitigate potential user input errors:
 * **Autocorrect user input**: The input will be autocorrected for spelling and other common errors.
 * **Do not autocorrect user input**: The user input will be used without making any corrections.
 
-![alt_text](images/genai-node(15).png "image_tooltip")
-
+<img src="../images/genai-node(15).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ### Advanced Controls
 
 Configure advanced controls for this node instance as follows:
-
 
 ### Intent Detection
 
@@ -219,8 +206,7 @@ This applies only to String and Description entities: Select one of these option
 * **Prefer user input as intent and proceed with Hold & Resume settings**: The user input is considered for intent detection, and the VA proceeds according to the Hold & Resume settings.
 * **Ask the user how to proceed**: Allow the user to specify if they meant intent or entity.
 
-
-![alt_text](images/genai-node(16).png "image_tooltip")
+<img src="../images/genai-node(16).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 
 ### Interruptions Behavior
@@ -230,17 +216,13 @@ To define the interruption handling at this node. You can select from the below 
 * **Use the task level ‘Interruptions Behavior’ setting**: The VA refers to the **Interruptions Behavior** settings set at the dialog task level.
 * **Customize for this node**: You can customize the **Interruptions Behavior** settings by selecting this option and configuring it. You can choose whether to allow interruptions or not, or to allow the end user to select the behavior. You can further customize Hold and Resume behavior. Read the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions) article for more information.
 
-
-![alt_text](images/genai-node(3).png "image_tooltip")
-
+<img src="../images/genai-node(3).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ### Custom Tags
 
 Add Custom Meta Tags to the conversation flow to profile VA-user conversations and derive business-critical insights from usage and execution metrics. You can define tags to be attached to messages, users, and sessions. See [Custom Meta Tags](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"} for details.
 
-
-![alt_text](images/genai-node(7).png "image_tooltip")
-
+<img src="../images/genai-node(7).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ### Voice Call Properties
 
@@ -248,17 +230,14 @@ Configure Voice Properties to streamline the user experience on voice channels. 
 
 See [Voice Call Properties](../../../../../channels/call-properties) for more information on setting up this section of the GenAI Node.
 
-
-
-![alt_text](images/genai-node(1).png "image_tooltip")
+<img src="../images/genai-node(1).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 
 ### Connections
 
 Define the transition conditions from this node. These conditions are applicable only for this instance and will not affect this node being used in any other dialog. See [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions) for a detailed setup guide.
 
-
-![alt_text](images/genai-node(11).png "image_tooltip")
+<img src="../images/genai-node(11).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 All the entity values collected are stored in context variables. For example, `{{context.genai_node.collect_passengers_info.entities.DepartureAirport}}`. You can define transitions using the context variables.
 
