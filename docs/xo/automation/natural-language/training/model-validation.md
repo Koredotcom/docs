@@ -1,6 +1,6 @@
 # Model Validation
 
-Once you have built your virtual assistant and trained it, the XO Platform builds an ML model mapping user utterance with intents. <a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/testing-your-bot-with-nlp/" target="_blank">Learn more</a>. 
+Once you have built your virtual assistant and trained it, the XO Platform builds an ML model mapping user utterance with intents. [Learn more](/docs/xo/automation/testing/testing-your-bot-with-nlp/){:target="_blank"}.
 
 Once created, it is recommended to validate the model to understand and estimate an unbiased generalization performance of the ML model.
 
@@ -33,7 +33,7 @@ Performing Cross-Validation gives a more generalized metric on model performance
 
 ### Configuration
 
-The XO Platform supports **K-fold Cross-Validation**. For this, you must configure the **K-fold parameter** for cross-validation from the advanced NLP configurations. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/?h=validati#k-fold-cross-validation" target="_blank">Learn more</a>.
+The XO Platform supports **K-fold Cross-Validation**. For this, you must configure the **K-fold parameter** for cross-validation from the advanced NLP configurations. [Learn more](/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/?h=validati#k-fold-cross-validation){:target="_blank"}.
 
 To initiate the training and generate the K-fold validation report, follow the below steps:
 
@@ -209,6 +209,6 @@ To edit an individual utterance,
 
     You can also open this window by clicking an individual dot on the ML graph instead of the entire quadrant.
 
-To understand NLU Training Validations and NLU Validate model, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/#training-validations" target="_blank">Learn more</a>.
+To understand NLU Training Validations and NLU Validate model, click [here](/docs/xo/automation/natural-language/training/machine-learning-engine/#training-validations){:target="_blank"}.
 
 Whenever the Validate model is updated, you can click the **Re-Run Model** to generate the latest matrix. 

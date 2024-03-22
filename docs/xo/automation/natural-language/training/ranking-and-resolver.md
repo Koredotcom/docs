@@ -75,7 +75,7 @@ The wining intent is decided by the Ranking & Resolver as follows:
     * If only FM or ML engines found an Intent but probable, that’s the winning intent.
     * If only the KG engine found a probable intent and its score is > higher threshold(80%) then that’s the winning intent.
     * If only the KG engine found a probable Intent and its score is >60% but &lt;80% then that’s the winning intent, but since the confidence is low, show it as a suggestion (user will see “Did you mean”)
-    * If more than one probable intents were found. <a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/testing-your-bot-with-nlp/#analyzing-the-test-results">Learn more about model scores and resolver</a>.
+    * If more than one probable intents were found. [Learn more](/docs/xo/automation/testing/testing-your-bot-with-nlp/#analyzing-the-test-results){:target="_blank"}.
 
 ## Thresholds & Configuration
 
