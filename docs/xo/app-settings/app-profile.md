@@ -6,7 +6,7 @@ To modify the general settings of a app:
 2. Click **App Profile**.  
 <img src="../images/app-prof-img1-build-configurations-general-settings.gif" alt="General Settings" title="General Settings" style="border: 1px solid gray;zoom:50%;"/>
 
-## General Bot Settings
+## General VA Settings
 
 Modify one or more of the settings described in the following table.
 
@@ -19,21 +19,21 @@ Modify one or more of the settings described in the following table.
    </td>
   </tr>
   <tr>
-   <td>Bot Name
+   <td>VA Name
    </td>
-   <td>The name of the Bot. When a Bot is published, the <strong>Name</strong> cannot be changed. This field is required.
+   <td>The name of the VA. When a VA is published, the <strong>Name</strong> cannot be changed. This field is required.
    </td>
   </tr>
   <tr>
    <td>Description
    </td>
-   <td>The description of the Bot. This field is required.
+   <td>The description of the VA. This field is required.
    </td>
   </tr>
   <tr>
    <td>Icon
    </td>
-   <td>The icon image for the Bot displayed in Bot Builder, Bots Marketplace, and the end-user interface as shown in the previous illustration. The image format must be <strong>.png </strong>and best results are obtained using a <strong>200 x 200-pixel</strong> image. This field is required.
+   <td>The icon image for the VA displayed in VA Builder, VAs Marketplace, and the end-user interface as shown in the previous illustration. The image format must be <strong>.png </strong>and best results are obtained using a <strong>200 x 200-pixel</strong> image. This field is required.
    </td>
   </tr>
   <tr>
@@ -42,23 +42,23 @@ Modify one or more of the settings described in the following table.
    <td>
 <ul>
 
-<li>Select <strong>General Public</strong> if the bot is for public use for both managed and unmanaged users in your domain. Bot assignments are not required and when the Bots Admin deploys the bot, it is available for use by all domain users. Use this option to make a bot widely available for all user types.
+<li>Select <strong>General Public</strong> if the VA is for public use for both managed and unmanaged users in your domain. VA assignments are not required and when the Bots Admin deploys the VA, it is available for use by all domain users. Use this option to make a VA widely available for all user types.
 
 
-<li>Select <strong>Enterprise Users</strong> if the bot is for managed users only in a domain, for example, for your employees or paid customers. After the Bots Admin approves and deploys this bot, it is not available to any managed users unless explicitly assigned by the Bots Admin. Use this option when you want to control which managed users in your domain can access and set up this bot on their devices.
+<li>Select <strong>Enterprise Users</strong> if the VA is for managed users only in a domain, for example, for your employees or paid customers. After the Bots Admin approves and deploys this VA, it is not available to any managed users unless explicitly assigned by the Bots Admin. Use this option when you want to control which managed users in your domain can access and set up this VA on their devices.
 Once <strong>Target Audience</strong> is defined and saved, you cannot change them.
 </li>
 </ul>
    </td>
   </tr>
   <tr>
-   <td>Default Bot Language
+   <td>Default VA Language
    </td>
-   <td>This is uneditable and is set at the time of Bot creation.
+   <td>This is uneditable and is set at the time of VA creation.
    </td>
   </tr>
   <tr>
-   <td>Bot Id
+   <td>VA Id
    </td>
    <td>Non-editable, assigned by the platform. Can be copied for use in API calls etc..
    </td>
@@ -72,13 +72,13 @@ Once <strong>Target Audience</strong> is defined and saved, you cannot change th
   <tr>
    <td>Subdomain (aka Tenancy URL)
    </td>
-   <td>Click <strong>Yes</strong> to enable the use of tenancy. When the tenancy is defined, the end-user is prompted to enter a tenant name as part of the URL for the Bot, for example, <em>kore</em>, for the <em>www.<strong>kore</strong>.someWebService.com</em> tenant-specific URL. When enabled define the following properties:
+   <td>Click <strong>Yes</strong> to enable the use of tenancy. When the tenancy is defined, the end-user is prompted to enter a tenant name as part of the URL for the VA, for example, <em>kore</em>, for the <em>www.<strong>kore</strong>.someWebService.com</em> tenant-specific URL. When enabled define the following properties:
 <ul>
 
-<li><strong>Help Hint</strong> – The text displayed to the end-user to prompt the user to enter a tenant-specific URL for the Bot.
+<li><strong>Help Hint</strong> – The text displayed to the end-user to prompt the user to enter a tenant-specific URL for the VA.
 
 
-<li><strong>Base URL</strong> – The base URL for the Bot that the end-user must specify their company to complete the tenant-specific URL using the following syntax: <em>https://{tenant}.someWebService.com</em> where <em>{tenant}</em>, including the braces, represents the tenant name. 
+<li><strong>Base URL</strong> – The base URL for the VA that the end-user must specify their company to complete the tenant-specific URL using the following syntax: <em>https://{tenant}.someWebService.com</em> where <em>{tenant}</em>, including the braces, represents the tenant name. 
 </li>
 </ul>
    </td>
@@ -100,24 +100,24 @@ Once <strong>Target Audience</strong> is defined and saved, you cannot change th
   <tr>
    <td>Error Message(s)
    </td>
-   <td>Edit or add custom <strong>HTTP Status Codes</strong> and error messages for your Bot. For more information, see <a href="#customizing-error-messages">Customizing Error Messages</a>.
+   <td>Edit or add custom <strong>HTTP Status Codes</strong> and error messages for your VA. For more information, see <a href="#customizing-error-messages">Customizing Error Messages</a>.
    </td>
   </tr>
 </table>
 
 
-To save the Bot settings, click **Save**. The _&lt; **Bot Name** > updated successfully_ message is displayed.
+To save the VA settings, click **Save**. The _&lt; **VA Name** > updated successfully_ message is displayed.
 
 
 ## Customizing Error Messages
 
-In Bot Builder, each Bot and task contains a set of predefined error messages along with actions for standard HTTP Status codes returned for an HTTP Request method. In most cases, the default response and action are sufficient for an end-user response, however, you may need to handle other HTTP Status codes not defined by default, or customize the error message itself, or change the default response by Kore.ai in the event of an error. This topic describes how to customize and create error messages for Kore.ai Bots and tasks. When you create a Bot or a task, you can add or customize error messages for HTTP Status codes in the **Error Messages** section of the Bot or task settings. 
+In the Builder, each VA and task contains a set of predefined error messages along with actions for standard HTTP Status codes returned for an HTTP Request method. In most cases, the default response and action are sufficient for an end-user response, however, you may need to handle other HTTP Status codes not defined by default, or customize the error message itself, or change the default response by Kore.ai in the event of an error. This topic describes how to customize and create error messages for Kore.ai VAs and tasks. When you create a VA or a task, you can add or customize error messages for HTTP Status codes in the **Error Messages** section of the VA or task settings. 
 
 <img src="../images/app-prof-img2-general-settings-error-messages.png" alt="Error Messages" title="Error Messages" style="border: 1px solid gray;zoom:50%;"/>
 
 ### Custom Status Codes
 
-There are approximately 25 HTTP Status codes defined by default for a Bot or task. **To customize an HTTP Status code**
+There are approximately 25 HTTP Status codes defined by default for a VA or task. **To customize an HTTP Status code**
 
   1. Open the app or task in UXO.
   2. Navigate to **Settings**.

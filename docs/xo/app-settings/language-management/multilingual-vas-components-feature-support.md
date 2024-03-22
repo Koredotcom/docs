@@ -22,7 +22,7 @@ JSON object consisting of the following translatable elements
 </td>
 </tr>
 <tr>
-<td>Bot Name
+<td>App Name
 </td>
 <td>String
 </td>
@@ -30,7 +30,7 @@ JSON object consisting of the following translatable elements
 </td>
 </tr>
 <tr>
-<td>Bot Description
+<td>App Description
 </td>
 <td>String
 </td>
@@ -38,15 +38,15 @@ JSON object consisting of the following translatable elements
 </td>
 </tr>
 <tr>
-<td>Bot Synonyms
+<td>VA Synonyms
 </td>
 <td>Object
 </td>
-<td>Arrays of important words in the task names and their corresponding synonyms. Enter translation of the words as well as their synonyms. Refer to <a href="../../../automation/natural-language/training/fundamental-meaning/#manage-synonyms" target="_blank">Managing Synonyms</a> to learn more about bot synonyms.
+<td>Arrays of important words in the task names and their corresponding synonyms. Enter translation of the words as well as their synonyms. Refer to <a href="../../../automation/natural-language/training/fundamental-meaning/#manage-synonyms" target="_blank">Managing Synonyms</a> to learn more about VA synonyms.
 </td>
 </tr>
 <tr>
-<td>Bot Error Codes
+<td>App Error Codes
 </td>
 <td>Object
 </td>
@@ -315,9 +315,9 @@ JSON object consisting of the following translatable components in the [API Requ
 </table>
 
 
-## Bot Filters
+## App Filters
 
-JSON object consisting of the following translatable components related to Bot filters
+JSON object consisting of the following translatable components related to app filters
 
 <table border="1">
 <tr>

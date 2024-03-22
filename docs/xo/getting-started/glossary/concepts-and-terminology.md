@@ -1,4 +1,4 @@
-# Virtual Assistant Concepts and Terminology
+# XO Platform Concepts and Terminology
 
 This glossary lists the key terms and concepts related to the Kore.ai’s XO Platform.
 
