@@ -12,9 +12,9 @@ The `Context` object can also be referenced in a script node as well as for dyna
     
     We recommend you review these notifications and modify the bot definition to keep the context object size under the limit. In the upcoming releases, the platform will discard conversations if the context size exceeds the limit.
 
-The platform also creates and maintains Session Variables which can be referred to from <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/using-session-and-context-variables/" target="_blank">here</a>.
+The platform also creates and maintains Session Variables which can be referred to from [here](/docs/xo/automation/use-cases/using-session-and-context-variables/){target="_blank"}.
 
-The following table describes the `Context` object keys. These can be classified into Global and Dialog contexts based on when they are created and populated. Click <a href="https://developer.kore.ai/docs/bots/bot-settings/bot-sessions/#Implementation" target="_blank">here</a> for details.
+The following table describes the `Context` object keys. These can be classified into Global and Dialog contexts based on when they are created and populated. Click [here](/docs/bots/bot-settings/bot-sessions/#Implementation){target="_blank"} for details.
 
 <table border="1.5">
 <tr bgcolor="#ECECEC">

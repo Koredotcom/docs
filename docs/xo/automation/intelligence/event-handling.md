@@ -52,7 +52,7 @@ Define a simple or advanced message to the user when the event triggers. It supp
 * You can define language-specific messages;
 * If a message is deleted from an Event for a specific language then it will be removed from all other languages of the VA;
 * If a message is added for a language then the message would be added in all other languages using the same content;
-* If a message is modified in a language, then the modifications will be applied for that language alone. <a href="https://docsinternal-kore.github.io/docs/xo/web-mobile-SDK-message-formatting-and-templates/" target="_blank">Learn more</a>.
+* If a message is modified in a language, then the modifications will be applied for that language alone. [Learn more](/docs/xo/web-mobile-SDK-message-formatting-and-templates/){target="_blank"}.
 
 ## Event Types
 
@@ -407,7 +407,7 @@ In this conversation, the dialog has reached the end, and the last response says
 
 **Solution**
 
-If the conversation session is not closed or the call is not disconnected after the end of the dialog, the Repeat Bot Response event is triggered, and the last message of the dialog task is repeated when you configure a task in the End of Task event with a message that says `"Is there anything else I can help you with?"`. For more information, see the <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/event-handling/#end-of-conversation" target="_blank">End of Conversation</a> section.
+If the conversation session is not closed or the call is not disconnected after the end of the dialog, the Repeat Bot Response event is triggered, and the last message of the dialog task is repeated when you configure a task in the End of Task event with a message that says `"Is there anything else I can help you with?"`. For more information, see the [End of Conversation](/docs/xo/automation/intelligence/event-handling/#end-of-conversation){target="_blank"} section.
 
 Now the ‘Repeat Bot Responses’ event considers the end of dialog after the ‘Last User Input’ configuration, the repeat response will say, `"Thank you. Your flight has been booked successfully. Your booking reference number is XYZ789 and you will receive a message shortly. Is there anything else I can help you with?".`
 
@@ -474,7 +474,7 @@ When you select the <b>Initiate Dialog</b> option, you can choose the task to wh
 
 * This event is available starting with the v6.40 release.
 * By default, this event is always enabled with the _Show Message_ option. This event cannot be disabled.
-* This VA-level behavior can be overridden for specific tasks by defining task-specific failure events from the dialog task settings. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/#dialog-settings" target="_blank">Learn more</a>.
+* This VA-level behavior can be overridden for specific tasks by defining task-specific failure events from the dialog task settings. [Learn more](/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/#dialog-settings){target="_blank"}.
 
     <img src="../images/task-execution-failure-event.png" alt="task execution failure event" title="task execution failure event" style="border: 1px solid gray; zoom:75%;">
 
@@ -500,7 +500,7 @@ This default behavior is ideal for most of the use cases. However, you can custo
 
 You can build custom business logic to analyze ambiguous intents, define appropriate conversation flow using a Dialog Task, and associate it with the Ambiguous Intents Identified event. 
 
-By customizing the flow, you can avoid displaying ambiguous intents to the end user and redirect the conversation to the desired task. You can use the `koreUtil.getAmbiguousIntents()` function to retrieve the list of ambiguous intents and their confidence scores. For more information on the function, click <a href="https://docsinternal-kore.github.io/docs/xo/apis/koreutil-libraries/" target="_blank">here</a>.
+By customizing the flow, you can avoid displaying ambiguous intents to the end user and redirect the conversation to the desired task. You can use the `koreUtil.getAmbiguousIntents()` function to retrieve the list of ambiguous intents and their confidence scores. For more information on the function, click [here](/docs/xo/apis/koreutil-libraries/){target="_blank"}.
 
 <img src="../images/ambiguous-intents-event.png" alt="ambiguous intents event" title="ambiguous intents event" style="border: 1px solid gray; zoom:75%;">
 
@@ -564,7 +564,7 @@ It provides the following two options:
 
 ##### IVR Impact
 
-You may also use this event to define how and when the calls should be terminated for voice-based channels. The IVR implementation allows session/call closure only when the ‘end of conversation’ is completed. <a href="https://docsinternal-kore.github.io/docs/xo/channels/IVR-integration/" target="_blank">Learn more</a>.
+You may also use this event to define how and when the calls should be terminated for voice-based channels. The IVR implementation allows session/call closure only when the ‘end of conversation’ is completed. [Learn more](/docs/xo/channels/IVR-integration/){target="_blank"}.
 
 #### RCS Opt-In / Opt-Out Events
 
