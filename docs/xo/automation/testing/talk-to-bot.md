@@ -44,7 +44,7 @@ The Debug window lets you explore the following:
 <img src="../images/process-completed.png" alt="Debug log - Statuses" title="Debug log - Statuses" style="border: 1px solid gray; zoom:80%;"/>
 
 * _expand_: You can expand the node and click the **Show More** to view node debug log details.  
-<img src="../images/expand-option-window.png" alt="Expand to see debug log details" title="Expand to see debug log details" style="border: 1px solid gray; zoom:80%;"/>
+<img src="../images/expand-option.png" alt="Expand to see debug log details" title="Expand to see debug log details" style="border: 1px solid gray; zoom:80%;"/>
 
 * _node details_: shows the node details in the script format. You can copy, open the script in a full screen view or close the script view.  
 <img src="../images/talk-to-bot-img7.png" alt="Node details" title="Node details" style="border: 1px solid gray; zoom:80%;"/>

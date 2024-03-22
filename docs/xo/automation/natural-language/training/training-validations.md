@@ -72,6 +72,7 @@ To view the Recommendations Summary, follow the steps below:
 <img src="../images/validate-model-click-window.png" alt="click validate model" title="click validate model" style="border: 1px solid gray; zoom:75%;">
 
 3. The recommendations summary slider appears with the list of issues and the recommended actions to fix them.
+
 <img src="../images/recommendations-summary-slider-window.png" alt="recommendations summary slider" title="recommendations summary slider" style="border: 1px solid gray; zoom:75%;">
  
 <div class="admonition note">
