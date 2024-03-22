@@ -106,8 +106,8 @@ The `AMAZON.SearchQuery` slot type helps capture less-predictable user utterance
 To configure a custom Interaction Model for the **SearchQuery** Slot Type, follow the steps below:
 
 
-1. Follow the sequence in Step 4 of [Dialog Migration to Extract the Dialog Tasks from Kore.ai](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-amazon-alexa-channel/#Dialog_Migration_to_Extract_the_Dialog_Tasks_from_Koreai).
-2. Create a new custom intent by following these [steps](https://developer.amazon.com/en-US/docs/alexa/custom-skills/create-intents-utterances-and-slots.html#create-intent).
+1. Follow the sequence in Step 4 of [Dialog Migration to Extract the Dialog Tasks from Kore.ai](#dialog-migration-to-extract-the-dialog-tasks-from-koreai).
+2. Create a new custom intent by following these [steps](#dialog-migration-to-extract-the-dialog-tasks-from-koreai).
 3. After writing a few utterances, pick the words or phrases representing variable information as the intent’s slots; For example, “_I would like to order two iPhones_.”
 4. Create a slot for each word or phrase and replace the original word with the slot name in curly brackets **({ })**.
 5. To create a slot, follow the steps below:
@@ -234,6 +234,6 @@ The next step is to **validate your skills** for the model. After configuring **
 
 4. Additionally, your **Skill Builder Checklist** will display green checks for all the options.
 ![builder checklist](../images/alexa-29.png "builder checklist")
-5. After enabling the channel and verifying all the configurations, you can test the new channel integration by publishing your virtual assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
+5. After enabling the channel and verifying all the configurations, you can test the new channel integration by publishing your virtual assistant. [Learn more](../deploy/publishing-bot.md).
 
-To learn more about working with messaging channels within the Kore.ai XO Platform, please see[ Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)
+To learn more about working with messaging channels within the Kore.ai XO Platform, please see[ Channel Enablement.](../channels/adding-channels-to-your-bot.md)

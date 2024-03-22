@@ -51,10 +51,10 @@ Widgets are individual components that can communicate with the VA for presentin
 To configure widgets, follow the below steps:
 
 1. Click **Create Widget** to create a widget.
-    <img src="../../images/create-widget.png" alt="create widget" title="create widget" style="border: 1px solid gray; zoom:75%;">
+<img src="../../images/create-widget.png" alt="create widget" title="create widget" style="border: 1px solid gray; zoom:75%;">
 
 2. The New Widget dialog opens.
-    <img src="../../images/new-widget-dialog.png" alt="new widget dialog" title="new widget dialog" style="border: 1px solid gray; zoom:75%;">
+<img src="../../images/new-widget-dialog.png" alt="new widget dialog" title="new widget dialog" style="border: 1px solid gray; zoom:75%;">
 
 3. On the **New Widget** window, enter the following details:
     * **Name** of the widget
@@ -122,6 +122,7 @@ To create a panel, follow the steps below:
     * **Display Name** for the Panel.
     * **Panel Icon** to display in the chat window (URL to the location).
     * **Save** the Panel.
+    
     <img src="../../images/create-new-digital-view-panel.png" alt="create new digital view panel" title="create new digital view panel" style="border: 1px solid gray; zoom:75%;">
 
 3. After you save, the panel will be **In Development** and will be displayed on your Digital Views screen. 
@@ -140,11 +141,13 @@ You have the following options for a given panel:
 
 1. **Edit** the panel details;
 2. **Add Form** to add existing forms to the Panel. Once added, forms will behave as a widget with the source set to Digital Form;
-* **Add Widget** to add existing widgets;
-* **Panel Management** to add existing forms/widgets, or remove already added forms/widgets from the panel.
-* **Test** the individual panel – this opens the **Talk to Bot** window along with the panel listing with the current panel active and data presented. You can interact with the VA and test the panel.
-* **Delete** the Panel.
-<img src="../../images/panel-options-for-digital-views.png" alt="panel options for digital views" title="panel options for digital views" style="border: 1px solid gray; zoom:75%;">
+
+  * **Add Widget** to add existing widgets;
+  * **Panel Management** to add existing forms/widgets, or remove already added forms/widgets from the panel.
+  * **Test** the individual panel – this opens the **Talk to Bot** window along with the panel listing with the current panel active and data presented. You can interact with the VA and test the panel.
+  * **Delete** the Panel.
+
+  <img src="../../images/panel-options-for-digital-views.png" alt="panel options for digital views" title="panel options for digital views" style="border: 1px solid gray; zoom:75%;">
 
 ## Publish
 

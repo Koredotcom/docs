@@ -59,7 +59,7 @@ The platform supports Synchronous and Asynchronous modes of integrations for the
 
 
 
-* **Synchronous Mode**: The bot responses are directly delivered as a response to the incoming requests. The bot will execute the flow, identify the response or responses to be delivered, and provide them as the response to the incoming request. Some platform functionalities like Alert Tasks, Agent Transfer, and Proactive Session Closure messages are not supported in the Synchronous mode. You may consider using the onAlert event through BotKit, [Learn more](https://developer.kore.ai/docs/bots/sdks/sdk-events/#OnAlert).
+* **Synchronous Mode**: The bot responses are directly delivered as a response to the incoming requests. The bot will execute the flow, identify the response or responses to be delivered, and provide them as the response to the incoming request. Some platform functionalities like Alert Tasks, Agent Transfer, and Proactive Session Closure messages are not supported in the Synchronous mode. You may consider using the onAlert event through BotKit, [Learn more](../sdk/sdk-events.md#onvariableupdate).
 
     !!! note
 
@@ -92,9 +92,10 @@ To associate an App, follow the below steps:
 
 
 8. Deselect the **Enable the Polling in Webhook V2** option to retrieve the complete response, all at once, without the need for polling.
+
     !!! note
 
-        This option is available only in Webhook v2.0. [Learn more](https://developer.kore.ai/docs/bots/channel-enablement/adding-webhook-channel/#Webhook_V20).
+        This option is available only in Webhook v2.0. [Learn more](#webhook-v20).
 
 9. Select **Yes** to **Enable Channel**.
 
@@ -219,7 +220,7 @@ Authorization: bearer {{JWT}}
 ```
 
 
-Generate JWT using the following header and payload [from this page](https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_JWT_Token).
+Generate JWT using the following header and payload [from this page](../apis/automation/api-introduction.md#generating-the-jwt-token).
 
 
 ### Response content type
@@ -817,7 +818,7 @@ The following are the parameters required/supported in the v2.0 of the Webhook c
    </td>
    <td>Any language that is configured for the VA.
 <p>
-For the list of Supported Bot Languages, read <a href="https://developer.kore.ai/docs/bots/advanced-topics/multi-lingual/building-multi-language-bots/#Supported_Bot_Languages">Getting Started with Multilingual Virtual Assistant</a> article.
+For the list of Supported Bot Languages, read [Getting Started with Multilingual Virtual Assistant](../app-settings/language-management/building-multi-language-bots.md#supported-bot-languages)</a> article.
    </td>
   </tr>
   <tr>
@@ -1103,7 +1104,7 @@ curl -X POST 'https://bots.kore.ai/chatbot/v2/webhook/st-a77a38cd-xxxx-xxxx-81c6
 ```
 
 
-For the list of Supported Bot Languages codes, read [Getting Started with Multilingual Virtual Assistant](https://developer.kore.ai/docs/bots/advanced-topics/multi-lingual/building-multi-language-bots/#Supported_Bot_Languages) article.
+For the list of Supported Bot Languages codes, read [Getting Started with Multilingual Virtual Assistant](../app-settings/language-management/building-multi-language-bots.md#supported-bot-languages) article.
 
 
 ### Close Conversation Session Event Request
@@ -1263,7 +1264,7 @@ The messages for a ‘pollid’ are provided by the platform only once. The plat
 
 **Response when polling is disabled**
 
-When you deselect the **Enable the Polling in Webhook V2** option in the **Configurations** tab, the platform retrieves the complete response, all at once, without the need for polling. [Learn more](https://developer.kore.ai/docs/bots/channel-enablement/adding-webhook-channel/#Step_1_Associate_an_App).
+When you deselect the **Enable the Polling in Webhook V2** option in the **Configurations** tab, the platform retrieves the complete response, all at once, without the need for polling. [Learn more](#step-1-associate-an-app).
 
 Sample Response:
 
@@ -1486,10 +1487,10 @@ curl -X POST
 ```
 
 
-For parameter descriptions, refer to the [request parameters](https://developer.kore.ai/docs/bots/channel-enablement/adding-webhook-channel/#Request_Parameters) table.
+For parameter descriptions, refer to the [request parameters](#request-parameters) table.
 
 
-#### **Type 2:  Using fileId obtained from [file upload API](https://developer.kore.ai/docs/bots/api-guide/upload-file-api/)**
+#### **Type 2:  Using fileId obtained from [file upload API](../apis/automation/upload-file.md)**
 
 You can upload a file using the **fileId** obtained from file upload API. The following example uses a webhook instance when multiple webhook channels are configured:
 
@@ -1525,7 +1526,7 @@ curl -X POST
 ```
 
 
-For parameter descriptions, refer to the [request parameters](https://developer.kore.ai/docs/bots/channel-enablement/adding-webhook-channel/#Request_Parameters) table.
+For parameter descriptions, refer to the [request parameters](#request-parameters) table.
 
 
 ### Option 2: Upload Files to Kore.ai XO Platform

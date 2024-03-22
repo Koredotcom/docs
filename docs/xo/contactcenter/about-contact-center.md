@@ -36,5 +36,11 @@ The Contact Center AI module offers a conversational AI-native contact center-as
         <kr-grid-title>Agent Console</kr-grid-title>
         <kr-grid-desc>Boost agent efficiency with AI tools, secure communication, and collaborative features. Empower managers and supervisors to monitor and join calls, and allocate tasks to designated agents or queues.</kr-grid-desc>
         <a href="">Learn More</a>
+    </kr-grid-item>
+     <kr-grid-item>
+        <img src="./campaigns/images/Campaigns.svg" style="zoom:200%;"></img>
+        <kr-grid-title>Campaigns</kr-grid-title>
+        <kr-grid-desc>Creating targeted voice campaigns and proactive web campaigns, supported by easy-to-use templates and comprehensive analytics. Monitor campaign performance and objectives with greater precision and effectiveness.</kr-grid-desc>
+        <a href="">Learn More</a>
     </kr-grid-item>            
 </kr-grid>

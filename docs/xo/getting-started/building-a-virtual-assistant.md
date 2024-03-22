@@ -76,7 +76,7 @@ The general development process in the Kore.ai XO Platform involves the followin
 * Analyze and improve;
 
 
-![alt_text](images/bva(2).png "image_tooltip")
+![alt_text](../getting-started/images/bva(2).png "image_tooltip")
 
 
 
@@ -101,7 +101,7 @@ On the landing page, click **New Bot**.
 
 
 
-![alt_text](images/bva(3).png "image_tooltip")
+![alt_text](../getting-started/images/bva(3).png "image_tooltip")
 
 
 In the **Create New Bot** window, start by configuring the basic details of your new VA:
@@ -117,7 +117,7 @@ In the **Create New Bot** window, start by configuring the basic details of your
 7. Click **Proceed** when ready. 
 
 
-    ![alt_text](images/bva(4).png "image_tooltip")
+    ![alt_text](../getting-started/images/bva(4).png "image_tooltip")
 
 
 Next, decide how to create your VA – with or without generated use cases.
@@ -134,7 +134,7 @@ Generating Use Cases while creating your VA simplifies the development process b
 3. Click **Create** to create your VA with generated use cases. 
 
 
-    ![alt_text](images/bva(7).png "image_tooltip")
+    ![alt_text](../getting-started/images/bva(7).png "image_tooltip")
 
 4. Wait a few moments for your VA to be configured. Once done, you can continue developing it. 
 
@@ -145,7 +145,7 @@ By creating a VA without generating use cases, you will not have any Dialog Task
 
 After configuring the basics of your VA, you can adjust the _Bot Name_, _Purpose_, and _Description_ if required. Click **Create without Use Cases** to create your VA without any generated use cases.
 
-![alt_text](images/bva(7).png "image_tooltip")
+![alt_text](../getting-started/images/bva(7).png "image_tooltip")
 
 
 Wait a few moments for your VA to be configured. Once done, you can continue developing it.
@@ -189,14 +189,14 @@ Define one or more tasks or flows for your VA using one of the following methods
 
 * On the _Bot Summary_ page, click **+ New Task** on the _Tasks_ widget. This would allow you to add a _Dialog_ or an _Alert_ task.
 
-    ![alt_text](images/bva(5).png "image_tooltip")
+    ![alt_text](../getting-started/images/bva(5).png "image_tooltip")
 
 
 
 
 * In addition to the above-mentioned tasks, from the **Conversational Skills** menu on the left navigation, you can select a task to be added by clicking the **Create** button on the corresponding task page. The example screenshot below shows you how to create a new Dialog Task.
 
-    ![alt_text](images/bva(6).png "image_tooltip")
+    ![alt_text](../getting-started/images/bva(6).png "image_tooltip")
 
 
 Skills are VA capabilities that help achieve the end-user’s needs. These include dialog and alert tasks such as booking a flight, getting weather alerts, responding to user queries (Knowledge Graph) or even engaging the user in Small Talk.
@@ -270,6 +270,4 @@ The data collected must be used to improve the NLP and functional performance of
 
 Building great virtual assistants is not easy, but the right platform, a little bit of structure, and a willingness to test and iterate some more goes a long way in achieving success.
 
-For more information, please refer to[ Analyze your](https://developer.kore.ai/docs/bots/analyzing-your-bot/analyzing-your-bot/) Virtual Assistant.
-
-		
+For more information, please refer to[ Analyze your](https://developer.kore.ai/docs/bots/analyzing-your-bot/analyzing-your-bot/) Virtual Assistant.	

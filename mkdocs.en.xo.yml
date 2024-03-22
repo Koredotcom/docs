@@ -117,16 +117,17 @@ markdown_extensions:
   - pymdownx.snippets
 
 copyright: |
-  © 2023 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+  © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
   - Platform : home.md
   - Getting Started:
-    - Platform:
-      - About the Platform: getting-started/about-xo-platform.md
-      - Access the Platform: virtual-assistants-overview.md   
-      - Virtual Assistant:
+    - Overview: getting-started/xo-platform-overview.md
+    - XO Platform:
+      - Accessing the Platform: getting-started/accessing-the-platform.md   
+      - Navigating the Platform: getting-started/navigating-the-platform.md
+      - Automation AI:
         - About Virtual Assistant: virtual-assistants-overview.md
-        - Build a Virtual Assistant: virtual-assistants-overview.md   
+        - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
       - Search AI:
         - About Answers: virtual-assistants-overview.md
         - Configure Answers: virtual-assistants-overview.md   
@@ -135,16 +136,10 @@ nav:
         - Set up AgentAssist: virtual-assistants-overview.md       
       - Contact Center AI:
         - About Contact Center: virtual-assistants-overview.md
-        - Set up Contact Center: virtual-assistants-overview.md       
-      - Campaigns:
-        - About Campaigns: virtual-assistants-overview.md
-        - Set up Campaign: virtual-assistants-overview.md
+        - Set up Contact Center: virtual-assistants-overview.md     
     - Glossary:
-      - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md
-    - FAQs: 
-      - Automation FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/  
-      - Contact Center FAQ: https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/   
-  - Virtual Assistant: 
+      - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
+  - Automation AI: 
     - Overview: automation/about-automation.md
     - Use Cases: 
       - Dialogs Tasks:
@@ -361,15 +356,14 @@ nav:
       - Incoming Interactions: console/incoming-interactions/managing-incoming-interactions.md
       - Interacting With Customers: console/interacting-with-customers/interacting-with-customers.md
       - Introduction to the Console: console/introduction-to-the-console/introduction.md
+    - Campaigns:  
+      - Overview: contactcenter/campaigns/about-campaigns.md
   - Agent AI:
     - Overview: agentassist/about-agentassist.md 
     - Agent Experience:
       - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md       
   - Integrations & APIs:
-    - Overview: channels/IVR-integration.md
-    - Channels:
-      - topic 1: channels/IVR-integration.md
-      - topic 2: channels/IVR-integration.md
+    - Overview: channels/IVR-integration.md    
     - Integrations:
       - Actions:
         - Actions Overview: app-settings/integrations/actions/actions.md
