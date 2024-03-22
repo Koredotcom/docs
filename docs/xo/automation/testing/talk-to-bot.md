@@ -69,7 +69,7 @@ NL Analysis tab shows the task name analysis and recognition scores of each user
 
 ### Session Context and Variables
 
-The **Session Context & Variables** tab displays dynamically the populated `Context` object and session variables updated at each processed component in Dialog Builder. The following is an example of the **Session & Context Variables** panel in **Debug Log**. For more information about the parameters, see [Using Session and Context Variables in Tasks](../../use-cases/using-session-and-context-variables){:target="_blank"} and [Context Object](../../use-cases/context-object){:target="_blank"}.
+The **Session Context & Variables** tab displays dynamically the populated `Context` object and session variables updated at each processed component in Dialog Builder. The following is an example of the **Session & Context Variables** panel in **Debug Log**. For more information about the parameters, see [Using Session and Context Variables in Tasks](../../use-cases/using-session-and-context-variables){:target="_blank"} and [Context Object](/docs/xo/automation/intelligence/context-object/){:target="_blank"}.
 
 <img src="../images/talk-to-bot-img10.png" alt="Session and Context variables" title="Session and Context variables" style="border: 1px solid gray; zoom:80%;"/>
 

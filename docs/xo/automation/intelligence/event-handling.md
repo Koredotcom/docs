@@ -21,10 +21,9 @@ curl –location -g –request POST ‘https://graph.facebook.com/v2.6/me/messen
 <p class="admonition-title">Note</p>
 <p>You must provide <code>access_token</code>, the Page access token for the specific Facebook page in the curl to run the API.</p></div>
 
-To access **Event Handlers**, navigate to **Build** > 
-**Intelligence** > **Events**.
+To access **Event Handlers**, navigate to **Intelligence** > **Events**.
 
-<img src="../images/access-event-handlers.png" alt="access event handlers" title="access event handlers" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/access-event-handlers-window.png" alt="access event handlers" title="access event handlers" style="border: 1px solid gray; zoom:75%;">
 
 ## Event Actions
 
@@ -52,12 +51,12 @@ Define a simple or advanced message to the user when the event triggers. It supp
 * You can define language-specific messages;
 * If a message is deleted from an Event for a specific language then it will be removed from all other languages of the VA;
 * If a message is added for a language then the message would be added in all other languages using the same content;
-* If a message is modified in a language, then the modifications will be applied for that language alone. <a href="https://docsinternal-kore.github.io/docs/xo/web-mobile-SDK-message-formatting-and-templates/" target="_blank">Learn more</a>.
+* If a message is modified in a language, then the modifications will be applied for that language alone. [Learn more](/docs/xo/web-mobile-SDK-message-formatting-and-templates/){target="_blank"}.
 
 ## Event Types
 
 Event Handlers are classified as **Conversation Events**, **Intent Events**, and **Channel Events**.
-<img src="../images/event-types.png" alt="event types" title="event types" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/event-types-window.png" alt="event types" title="event types" style="border: 1px solid gray; zoom:75%;">
 
 You can configure the following events to trigger responses:
 
@@ -174,8 +173,8 @@ Users can initiate VA conversations in varied ways, from a simple greeting to di
 
 To facilitate a scope for the developer to customize the response based on the user choice, the Welcome event comes with additional options when you choose _Initiate Task_ or _Show Message_ as the event configurations. For example, if the first user utterance maps to a task, should the VAexecute the event-based task or the user intent first?
 
-Post ver9.0, you can use the <code>isReturningUser</code> parameter in the **BotUserSession** context object to [identify returning users](../../kb/new-and-returning-users.md)
- and send an appropriate welcome message. [Learn More](../intelligence/context-object.md).
+Post ver9.0, you can use the <code>isReturningUser</code> parameter in the **BotUserSession** context object to [identify returning users](../../kb/new-and-returning-users.md){target="_blank"}.
+ and send an appropriate welcome message. [Learn More](../intelligence/context-object.md){target="_blank"}.
 
 As a developer, you can define the VA’s priority when the user starts the conversation with a greeting, task, or FAQ from the options listed below:
 
@@ -407,7 +406,7 @@ In this conversation, the dialog has reached the end, and the last response says
 
 **Solution**
 
-If the conversation session is not closed or the call is not disconnected after the end of the dialog, the Repeat Bot Response event is triggered, and the last message of the dialog task is repeated when you configure a task in the End of Task event with a message that says `"Is there anything else I can help you with?"`. For more information, see the <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/event-handling/#end-of-conversation" target="_blank">End of Conversation</a> section.
+If the conversation session is not closed or the call is not disconnected after the end of the dialog, the Repeat Bot Response event is triggered, and the last message of the dialog task is repeated when you configure a task in the End of Task event with a message that says `"Is there anything else I can help you with?"`. For more information, see the [End of Conversation](/docs/xo/automation/intelligence/event-handling/#end-of-conversation){target="_blank"} section.
 
 Now the ‘Repeat Bot Responses’ event considers the end of dialog after the ‘Last User Input’ configuration, the repeat response will say, `"Thank you. Your flight has been booked successfully. Your booking reference number is XYZ789 and you will receive a message shortly. Is there anything else I can help you with?".`
 
@@ -417,9 +416,9 @@ A bot developer uses the **Repeat Bot Response** to allow you to repeat the resp
 
 **Steps to Enable the Repeat Bot Response Event**
 
-1. Navigate to **Build > Intelligence > Events**.
+1. Navigate to **Intelligence > Events**.
 2. Click **Configure** to enable the **Repeat Bot Response Event**.
-<img src="../images/repeat-bot-responses.png" alt="repeat bot responses" title="repeat bot responses" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/repeat-bot-responses-window.png" alt="repeat bot responses" title="repeat bot responses" style="border: 1px solid gray; zoom:75%;">
 
 3. Click **Manage Utterance** to review the pre-trained utterances that are added to the VA by default.
 <img src="../images/manage-utterances-event.png" alt="manage utterances" title="manage utterances" style="border: 1px solid gray; zoom:75%;">
@@ -430,7 +429,7 @@ A bot developer uses the **Repeat Bot Response** to allow you to repeat the resp
 5. Once Utterances are trained, you can add the following preconditions:
 
     * **Channels** – Allows you to add voice channels such as IVR, IVR Audiocodes, or Twilio Voice.
-    * **Context Tags** – Allows you to add the context objects to trigger the Repeat Bot Response event. For more information, read the [Context Object](../intelligence/context-object.md) article.
+    * **Context Tags** – Allows you to add the context objects to trigger the Repeat Bot Response event. For more information, read the [Context Object](../intelligence/context-object.md){target="_blank"} article.
     <img src="../images/channels-and context-tags.png" alt="channels and context tags" title="channels and context tags" style="border: 1px solid gray; zoom:75%;">
  
 !!!note
@@ -474,7 +473,7 @@ When you select the <b>Initiate Dialog</b> option, you can choose the task to wh
 
 * This event is available starting with the v6.40 release.
 * By default, this event is always enabled with the _Show Message_ option. This event cannot be disabled.
-* This VA-level behavior can be overridden for specific tasks by defining task-specific failure events from the dialog task settings. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/#dialog-settings" target="_blank">Learn more</a>.
+* This VA-level behavior can be overridden for specific tasks by defining task-specific failure events from the dialog task settings. [Learn more](/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/#dialog-settings){target="_blank"}.
 
     <img src="../images/task-execution-failure-event.png" alt="task execution failure event" title="task execution failure event" style="border: 1px solid gray; zoom:75%;">
 
@@ -484,7 +483,7 @@ When you select the <b>Initiate Dialog</b> option, you can choose the task to wh
 
 When the VA cannot understand the user’s intent, this event determines the subsequent behavior. You can choose one of the following options:
 
-* **Show a standard message from the standard responses**. [Learn more](../intelligence/conversation-management/standard-responses.md).
+* **Show a standard message from the standard responses**. [Learn more](../intelligence/conversation-management/standard-responses.md){target="_blank"}.
 * **Automatically run a dialog task**. You can use the dropdown to select the task you want to run.
     <img src="../images/intent-not-available-event.png" alt="intent not available" title="intent not available" style="border: 1px solid gray; zoom:75%;">
 
@@ -500,15 +499,15 @@ This default behavior is ideal for most of the use cases. However, you can custo
 
 You can build custom business logic to analyze ambiguous intents, define appropriate conversation flow using a Dialog Task, and associate it with the Ambiguous Intents Identified event. 
 
-By customizing the flow, you can avoid displaying ambiguous intents to the end user and redirect the conversation to the desired task. You can use the `koreUtil.getAmbiguousIntents()` function to retrieve the list of ambiguous intents and their confidence scores. For more information on the function, click <a href="https://docsinternal-kore.github.io/docs/xo/apis/koreutil-libraries/" target="_blank">here</a>.
+By customizing the flow, you can avoid displaying ambiguous intents to the end user and redirect the conversation to the desired task. You can use the `koreUtil.getAmbiguousIntents()` function to retrieve the list of ambiguous intents and their confidence scores. For more information on the function, click [here](/docs/xo/apis/koreutil-libraries/){target="_blank"}.
 
-<img src="../images/ambiguous-intents-event.png" alt="ambiguous intents event" title="ambiguous intents event" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/ambiguous-intents-event-window.png" alt="ambiguous intents event" title="ambiguous intents event" style="border: 1px solid gray; zoom:75%;">
 
 ##### Event Configuration
 
 To configure the Ambiguous Intents Identified event follow these steps:
 
-1. Go to **Build** → **Intelligence** → **Events** on the Platform. By default, this event is disabled for all existing and new bots.
+1. Go to **Intelligence** → **Events** on the Platform. By default, this event is disabled for all existing and new bots.
 2. Click **Configure** to enable the event.
     <img src="../images/configure-intent-events.png" alt="configure intent events" title="configure intent events" style="border: 1px solid gray; zoom:75%;">
 
@@ -535,7 +534,7 @@ To configure the Ambiguous Intents Identified event follow these steps:
 
 When the event is enabled, the interruption behavior is handled as defined at the node level, dialog level, or bot level for ambiguous intents. 
 
-The only exception is – when you select the **Continue the current task and add new task to the follow-up task list** option, the conversation continues as is with the current task, and any interrupting task will not be added to the follow-up list. [Learn more](../intelligence/conversation-management/manage-interruptions.md).
+The only exception is – when you select the **Continue the current task and add new task to the follow-up task list** option, the conversation continues as is with the current task, and any interrupting task will not be added to the follow-up list. [Learn more](../intelligence/conversation-management/manage-interruptions.md){target="_blank"}.
 
 ### Channel Events
 
@@ -558,13 +557,13 @@ It provides the following two options:
 * **Voice Call Properties** can be set as follows:
     * Define at least one ‘Initial Prompts’
     * Prompts for _Timeout_, and _No Match_ can be defined.
-    * Under _Advanced Controls_, settings for _Timeout, No. of Retries_, and _Barge-in_ can be defined. [Learn more](../../automation/use-cases/dialogs/node-types/voice-call-properties.md).
+    * Under _Advanced Controls_, settings for _Timeout, No. of Retries_, and _Barge-in_ can be defined. [Learn more](../../automation/use-cases/dialogs/node-types/voice-call-properties.md){target="_blank"}.
 
     <img src="../images/voice-call-properties-event-handlers.gif" alt="voice call properties" title="voice call properties" style="border: 1px solid gray; zoom:75%;">
 
 ##### IVR Impact
 
-You may also use this event to define how and when the calls should be terminated for voice-based channels. The IVR implementation allows session/call closure only when the ‘end of conversation’ is completed. <a href="https://docsinternal-kore.github.io/docs/xo/channels/IVR-integration/" target="_blank">Learn more</a>.
+You may also use this event to define how and when the calls should be terminated for voice-based channels. The IVR implementation allows session/call closure only when the ‘end of conversation’ is completed. [Learn more](/docs/xo/channels/IVR-integration/){target="_blank"}.
 
 #### RCS Opt-In / Opt-Out Events
 
@@ -575,6 +574,6 @@ These events trigger when receiving _opt-in_ or _opt-out_ requests from users vi
 
 You can configure Variable Namespaces for Events by going to **More Options** > **Manage Variable Namespaces** at the top of the **Events** screen.
 
-You can use the _Manage Variable Namespaces_ to associate the Variable Namespaces to be used with the Event Handler. This option will be visible only when the Variable Namespace is enabled for the VA. For more information. [Learn more](../../app-settings/managing-namespace.md).
+You can use the _Manage Variable Namespaces_ to associate the Variable Namespaces to be used with the Event Handler. This option will be visible only when the Variable Namespace is enabled for the VA. For more information. [Learn more](../../app-settings/managing-namespace.md){target="_blank"}.
 
-<img src="../images/manage-namespaces-event-handling.png" alt="manage namespaces" title="manage namespaces" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/manage-namespaces-event-handling-window.png" alt="manage namespaces" title="manage namespaces" style="border: 1px solid gray; zoom:75%;">

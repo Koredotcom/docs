@@ -1,6 +1,6 @@
 # Creating a Knowledge Graph from CSV or JSON Files
 
-The XO Platform gives you the option to create a Knowledge Graph in a spreadsheet or JSON and then  import it into the VA instead of creating the Knowledge Graph from scratch. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/import-and-export-knowledge-graph/" target="_blank">Learn more</a>.
+The XO Platform gives you the option to create a Knowledge Graph in a spreadsheet or JSON and then  import it into the VA instead of creating the Knowledge Graph from scratch. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/import-and-export-knowledge-graph/" target="_blank">Learn more</a>.
 
 The process to create a Knowledge Graph using an editor is summarized below:
 

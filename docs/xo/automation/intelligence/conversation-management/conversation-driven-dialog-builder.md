@@ -1,6 +1,6 @@
 # Conversation-driven Dialog Builder
 
-Conversation Builder is a new dialog task editor which allows you to design and build a dialog task using conversational elements. It leverages <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/dialog-tasks-overview/" target="_blank">Flow-based Dialog Task Builder</a>.
+Conversation Builder is a new dialog task editor which allows you to design and build a dialog task using conversational elements. It leverages [Flow-based Dialog Task Builder](/docs/xo/automation/use-cases/dialogs/dialog-tasks-overview/){target="_blank"}.
 
 While the Storyboard helps in designing and visualizing the user conversations, the bot needs to be developed in the Dialog Task Builder. This involves a manual effort in understanding and converting the conversation components into dialog components. 
 
@@ -26,7 +26,7 @@ Conversation-driven Dialog builder automatically converts the storyboard scenes 
 
 BAs/Conversation Designers can define a dialog in _conversation view_. This view consists of a conversation flow as a series of bot messages and user messages. Where appropriate, BAs can add Action nodes that would be configured during the bot development.
 
-The **Build** -> **Conversation Skills** -> **Storyboard** gives you an exclusive conversation view with an option to switch to the conversation flow. It can also be viewed at the left bottom window from the new Dialog Builder.
+The **Conversation Skills** -> **Storyboard** gives you an exclusive conversation view with an option to switch to the conversation flow. It can also be viewed at the left bottom window from the new Dialog Builder.
 <img src="../images/conversation-view.png" alt="conversation view" title="conversation view" style="border: 1px solid gray; zoom:75%;">
 
 !!!note
@@ -39,7 +39,7 @@ The conversation view can be expanded by providing the necessary logic and fulfi
 
 The entity, message, and other nodes along with the appropriate connections are generated automatically based on the conversation designed by the BA/conversation designer. Developer can make configuration changes and add appropriate service calls etc. to make it a fully functional bot.
 
-You can access this view either by clicking **View Dialog** from the Conversation view (as seen above) or from **Build** -> **Conversation Skills** -> **Dialog Tasks**.
+You can access this view either by clicking **View Dialog** from the Conversation view (as seen above) or from **Conversation Skills** -> **Dialog Tasks**.
 
 <img src="../images/build-view.png" alt="build view" title="build view" style="border: 1px solid gray; zoom:75%;">
 
@@ -55,9 +55,8 @@ Conversation builder can be accessed in two ways:
 ### Create Scene
 
 1. Open the bot you want to design the conversation.
-2. Select the **Build** tab from the top menu.
-3. From the left menu, click **Conversation Skills -> Storyboard**.
-4. Click **New Scene** and enter the following details.
+2. From the left menu, click **Conversation Skills -> Storyboard**.
+3. Click **New Scene** and enter the following details.
     
     * **Scene Name**
     * **Description**
@@ -73,15 +72,14 @@ Conversation builder can be accessed in two ways:
 You can initiate Conversation Driven Dialog Builder from the Create Dialog flow
 
 1. Open the bot you want to design the conversation.
-2. Select the **Build** tab from the top menu.
-3. From the left menu, click **Conversation Skills** -> **Dialog Task**.
-4. Click **Create Dialog** and enter the following details:
+2. From the left menu, click **Conversation Skills** -> **Dialog Task**.
+3. Click **Create Dialog** and enter the following details:
 
     * **Intent Name**
     * **Description**
     * **Intent Training** – Enter utterances that would trigger this intent
 
-5. Select **Try Conversation Driven Dialog Builder** option. This will give you allow you to design a conversation and simultaneously view and define the corresponding dialog task.
+4. Select **Try Conversation Driven Dialog Builder** option. This will give you allow you to design a conversation and simultaneously view and define the corresponding dialog task.
 <img src="../images/try-conversation-driven-dialog-builder.png" alt="try conversation driven dialog builder" title="try conversation driven dialog builder" style="border: 1px solid gray; zoom:75%;">
 
 ### Containment Type Configuration
@@ -110,12 +108,13 @@ To configure the **Self-Service** and **Drop-off** options during dialog creatio
 2. Click the **more** option and select **Configuration Properties**.
 <img src="../images/set-configuration-properties.png" alt="set configuration properties" title="set configuration properties" style="border: 1px solid gray; zoom:75%;">
 
- * Change **Display Name** and **Node Name** if needed.
- * Add/change **Description**.
- * **Add utterance** that would trigger this intent. You can add multiple utterances. These would be in addition to the primary intent utterance.
+  * Change **Display Name** and **Node Name** if needed.
+  * Add/change **Description**.
+  * **Add utterance** that would trigger this intent. You can add multiple utterances. These would be in addition to the primary intent utterance.
+
  <img src="../images/add-utterance-trigger-intent.png" alt="add utterance trigger intent" title="add utterance trigger intent" style="border: 1px solid gray; zoom:75%;">
 
-3. You have the option to **Manage Training** which will enable you to train the intent by adding Utterances, Patterns, and Rules. <a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/testing-your-bot-with-nlp/" target="_blank">Learn more</a>.
+3. You have the option to **Manage Training** which will enable you to train the intent by adding Utterances, Patterns, and Rules. [Learn more](/docs/xo/automation/testing/testing-your-bot-with-nlp/){target="_blank"}.
 
 ### Bot Message
 
@@ -123,12 +122,12 @@ The first thing you want to start with, in the conversation, is a message from t
 
 Bot Messages can serve one of the following purposes:
 
-* **Ask a Question** with the intention of gathering information from the user. This gets converted to an <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-entity-node/" target="_blank">Entity Node</a> in the dialog task.
+* **Ask a Question** with the intention of gathering information from the user. This gets converted to an [Entity Node](/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-entity-node/){target="_blank"} in the dialog task.
 
     * You can further specify the type of user input expected like string, number, date, etc. It gets translated to an entity type in the dialog task
     * You can format the message using simple formatting options or by selecting a template for presenting the bot message.
-* **Ask Confirmation** with the intention to decide the path of the conversation. This gets converted to a <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes/" target="_blank">Confirmation Node</a> in the dialog task.
-* **Inform the User** like a help message, welcome message, or as a response to the user query. These get converted to a <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-message-nodes/" target="_blank">Message Node</a> in the dialog task.
+* **Ask Confirmation** with the intention to decide the path of the conversation. This gets converted to a [Confirmation Node](/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes/){target="_blank"} in the dialog task.
+* **Inform the User** like a help message, welcome message, or as a response to the user query. These get converted to a [Message Node](/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-message-nodes/){target="_blank"} in the dialog task.
 
 For each of the above selections, you can either use an existing node by selecting from the list or create a new node.
 
@@ -166,7 +165,7 @@ The entity node is created whenever **Bot** -> **Ask Question** is selected.
 
 For each question you can do the following:
 
-* Define **Entity Type** – select from the drop-down list. This list includes the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/entity-types/" target="_blank">entity types</a> supported by the XO Platform.
+* Define **Entity Type** – select from the drop-down list. This list includes the  [entity types](/docs/xo/automation/use-cases/dialogs/entity-types/){target="_blank"} supported by the XO Platform.
 * Apply **Formatting Options** like bold, italics, etc.
 * Use **Templates** like buttons, carousel, etc to present the query.
 <img src="../images/define-entity-type-formatting.png" alt="define entity type formatting" title="define entity type formatting" style="border: 1px solid gray; zoom:75%;">
@@ -180,7 +179,7 @@ Once added you can **configure properties**:
 * User Prompts 
 * Error Prompts
 
-<a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-entity-node/#component-properties" target="_blank">Learn more</a> about Entity Node Component Properties.
+[Learn more](/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-entity-node/#component-properties){target="_blank"} about Entity Node Component Properties.
 
 ### Confirmation Node
 
@@ -198,7 +197,7 @@ For each confirmation you can:
     * Node name
     * User prompts
     * Display options
-    * Synonyms for yes/no. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes/#component-properties" target="_blank">Learn more</a>.
+    * Synonyms for yes/no. [Learn more](/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes/#component-properties){target="_blank"}.
 * Select the concerned user response options to continue with the appropriate path.
 <img src="../images/select-user-response-options.png" alt="user response options" title="user response options" style="border: 1px solid gray; zoom:75%;">
 
@@ -237,8 +236,8 @@ This option lets you define the bot behavior when a user utterance deviates from
 * Enter the user response that is likely to ask for another intent.
 * You can choose the intent from the available list or create a new one.
 * You can set the transition to the new intent:
-    * As Interruption to allow the user can switch to another task, you can configure additional utterances, refer <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/manage-interruptions/" target="_blank">here</a> for more on interruption handling, or
-    * As Sub-intent to allow the user to seamlessly branch into related intents, view the behavior. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/sub-intents-and-follow-up-intents/" target="_blank">Learn more</a>.
+    * As Interruption to allow the user can switch to another task, you can configure additional utterances, refer [here](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/){target="_blank"} for more on interruption handling, or
+    * As Sub-intent to allow the user to seamlessly branch into related intents, view the behavior. [Learn more](/docs/xo/automation/intelligence/sub-intents-and-follow-up-intents/){target="_blank"}.
 
     <img src="../images/set-intent.png" alt="set intent" title="set intent" style="border: 1px solid gray; zoom:75%;">
 

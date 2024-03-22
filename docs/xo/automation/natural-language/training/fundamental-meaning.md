@@ -27,7 +27,7 @@ This process expands interjections, abbreviations, misspellings, texting shortha
 
 This feature allows bot developers to add substitutions specific to their domain and vocabulary. For example, **_Chevy_** is replaced by **_Chevrolet_** by a car serving bot,
 
-Another use of this feature is on voice channels where ideally, mis-transcriptions should be corrected by the ASR software, but that isn’t always possible. In these cases, the substitution functionality allows bot developers to correct transcription errors. For example, **_our d_** is corrected to **_Audi_** by a car serving bot. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#bot-substitutions" target="_blank">Learn more</a>.
+Another use of this feature is on voice channels where ideally, mis-transcriptions should be corrected by the ASR software, but that isn’t always possible. In these cases, the substitution functionality allows bot developers to correct transcription errors. For example, **_our d_** is corrected to **_Audi_** by a car serving bot. [Learn more](/docs/xo/automation/natural-language/training/fundamental-meaning/#bot-substitutions){:target="_blank"}.
 
 ### Merging
 
@@ -118,7 +118,7 @@ Also consider misspellings, such as:
 
 When you add synonyms for a word, those synonyms are also used for other tasks or task fields. In other terms, synonyms for a word defined for a task are also applicable to the same word in another task name. For example, synonyms defined for the word _make_ in the Make a Booking  task are also used for the Make a Payment task.
 
-For more information about best practices and tips for naming tasks and task fields, see the <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlp-guidelines/" target="_blank">Natural Language Processing Guide</a>.
+For more information about best practices and tips for naming tasks and task fields, see the [Natural Language Processing Guide](/docs/xo/automation/natural-language/nlp-guidelines/){:target="_blank"}.
 
 #### Add Synonyms
 
@@ -214,7 +214,7 @@ There are two types of Concepts within the XO Platform:
 
 ### Define Custom Concepts
 
-You can define a new concept the same way as you would define a Bot Synonym, but you need to start the word with a **~**. For more details on the naming convention, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlp-guidelines/#concepts" target="_blank">here</a>.
+You can define a new concept the same way as you would define a Bot Synonym, but you need to start the word with a **~**. For more details on the naming convention, click [here](/docs/xo/automation/natural-language/nlp-guidelines/#concepts){:target="_blank"}.
 
 You can also define custom concepts using emojis.
 
@@ -229,7 +229,7 @@ Add the <b>~disable_help</b> concept key and train the VA to disable the system 
 
 ### Parallel Editing for Concepts
 
-Parallel Editing works the same for Concepts and Synonyms. Please click <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#parallel-editing-for-synonyms" target="_blank">here</a> to learn more.
+Parallel Editing works the same for Concepts and Synonyms. Please click [here](/docs/xo/automation/natural-language/training/fundamental-meaning/#parallel-editing-for-synonyms){:target="_blank"} to learn more.
 
 ## Bot Substitutions
 
@@ -273,7 +273,7 @@ Bot substitution is used to support the following patterns for user utterances:
 
 The Bots on the XO Platform can now be trained during the NL process to identify aliases or alternative spellings in utterances (during Speech-to-Text (STT) transcriptions).
 
-Alias is based on <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#marking" target="_blank">Marking</a>, the chat script-specific process of linking concepts to words to match patterns based on those concepts.
+Alias is based on [Marking](/docs/xo/automation/natural-language/training/fundamental-meaning/#marking){:target="_blank"}, the chat script-specific process of linking concepts to words to match patterns based on those concepts.
 
 For example, a user might say Alfa Romeo on a voice channel, but the STT transcribes that as `Alpha Romeo` (a known and valid word). This is because the Bot uses the custom concept defined for Bot Word Aliases, matches the custom entity, and returns `Alfa Romeo`.
 
@@ -301,7 +301,7 @@ To treat a Bot Synonym word as an Alias in an utterance, you must define a custo
 However, they do the following:
 
 * Return the normalized value for the **Custom Concept** entity.
-* Link concepts to new words (Marking). <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#marking" target="_blank">Learn more</a>.
+* Link concepts to new words (Marking). [Learn more](/docs/xo/automation/natural-language/training/fundamental-meaning/#marking){:target="_blank"}.
 
 **Alias Patterns**
 
@@ -318,7 +318,7 @@ Similarly, in the example below, the system marks `Kelly` as the alias for `Tele
 
 The XO Platform now supports **Bot Homophones** or Homonyms to identify the relevant word when two or more words are pronounced the same but have different spellings. Homonyms are a challenge on voice channels because while processing and adjusting an utterance on the Natural Language (NL) Pipeline, the Speech-to-Text (STT) engine can easily transcribe the wrong word. For example, `Write an email` can be wrongly transcribed to `Right an email`.
 
-With Bot Homophones, the system considers all the alternative homophones to check for a better, or equally valid, word choice during the NL pipeline and <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#parts-of-speech-pos-tagging" target="_blank">POS Tagging</a> processes.
+With Bot Homophones, the system considers all the alternative homophones to check for a better, or equally valid, word choice during the NL pipeline and [POS Tagging](/docs/xo/automation/natural-language/training/fundamental-meaning/#parts-of-speech-pos-tagging){:target="_blank"} processes.
 
 **How it Works**
 
@@ -371,9 +371,9 @@ In these cases, using patterns can help to improve NLP interpreter accuracy.
 
 When the NLP interpreter matches a synonym to one task or field, and a pattern to a different task or field, the pattern match is prioritized and used for positive recognition over the synonym match.
 
-To learn more about best practices and tips for optimizing NLP, refer to <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlp-guidelines/" target="_blank">NLP Guidelines</a>.
+To learn more about best practices and tips for optimizing NLP, refer to [NLP Guidelines](/docs/xo/automation/natural-language/nlp-guidelines/){:target="_blank"}. 
 
-For a quick guide towards the usage of patterns, refer to <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/" target="_blank">How to use Patterns</a>.
+For a quick guide towards the usage of patterns, refer to [How to use Patterns](/docs/xo/how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/){:target="_blank"}.
 
 ### Navigate to the Patterns Tab
 
@@ -416,7 +416,7 @@ To add an intent rule, follow the below steps:
 1. On the **Training** page, click the **Rules/+Rule** against the intent name you want to enter the patterns for.
 2. In the **Intent** pane, enter one or more traits/context tags as conditional rules using AND OR operators, and press **Enter** between traits/tags.
 
-Refer here to know more about <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/traits/" target="_blank">Traits</a>, <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/traits/#trait-association-rules" target="_blank">Trait Association Rules</a> and <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/context-management/" target="_blank">Context Tags</a>.
+Refer here to know more about [Traits](/docs/xo/automation/natural-language/training/traits/){:target="_blank"}, [Trait Association Rules](/docs/xo/automation/natural-language/training/traits/#trait-association-rules){:target="_blank"} and [Context Tags](/docs/xo/automation/intelligence/context-management/){:target="_blank"}.
 
 <img src="../images/fm-rules.png" alt="manage rules" title="manage rules" style="border: 1px solid gray; zoom:75%;">
 

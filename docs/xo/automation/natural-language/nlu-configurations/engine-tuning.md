@@ -3,10 +3,10 @@ You can fine-tune intent detection for each language enabled for your Virtual As
 
 1. On the left pane, click **Natural Language** > **Training** > **Thresholds & Configurations**.
 2. Under the **Thresholds & Configurations** section, you can perform by customizing
-    * The Fundamental Meaning model – [Learn more]("https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#thresholds-configurations"){target="_blank"}.
-    * Machine Learning model – [Learn more]("https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/#thresholds-configurations"){target="_blank"}.
-    * Knowledge Graph – [Learn more]("https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-training/#thresholds-configurations"){target="_blank"}.
-    * Ranking & Resolver engine – [Learn more]("https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/ranking-and-resolver/#thresholds-configuration"){target="_blank"}.
+    * The Fundamental Meaning model – [Learn more](/docs/xo/automation/natural-language/training/fundamental-meaning/#thresholds-configurations){target="_blank"}.
+    * Machine Learning model – [Learn more](/docs/xo/automation/natural-language/training/machine-learning-engine/#thresholds-configurations){target="_blank"}.
+    * Knowledge Graph – [Learn more](/docs/xo/automation/knowledge-ai/knowledge-graph-training/#thresholds-configurations){target="_blank"}.
+    * Ranking & Resolver engine – [Learn more](/docs/xo/automation/natural-language/training/ranking-and-resolver/#thresholds-configuration){target="_blank"}.
 
 Apart from these, under the **Advanced NLP Configurations** section, there are advanced settings that you can use for specific use cases and requirements.
 
@@ -16,7 +16,7 @@ Apart from these, under the **Advanced NLP Configurations** section, there are a
 
 <img src="../images/advanced-nlu-configurations.png" alt="thresholds advanced nlu" title="thresholds advanced nlu" style="border: 1px solid gray; zoom:75%;">
 
-The following table gives the details of the various configurations that can be set from this section. Apart from these you can add Custom configurations, reach out to our [Support Team]("https://support.kore.ai/hc/en-us/"){target="_blank"} to know how.
+The following table gives the details of the various configurations that can be set from this section. Apart from these you can add Custom configurations.
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">
@@ -631,7 +631,7 @@ To address this issue, you can prevent misclassifications by activating the **No
 
 For example, for an Airlines VA, an Intent “Book Flight Ticket” is mapped. If a customer requests to “Book a Movie Ticket” the ML tries to associate the closest intent “Book Flight Ticket” (wrong intent) as the successful intent and triggers it. This error can be eliminated by enabling the None intent.
 
-Adding an extra _None_ _Intent_ ensures classifying random input to these intents in the VA. Once enabled, the ML Model is tuned to identify these none intents when a user utterance contains the words that are not used in the VA’s training. i.e., bot vocabulary. You can define the None Intent for the Linked Bots in a Universal Bot. For more information, see <a href="https://docsinternal-kore.github.io/docs/xo/universal-bots/creating-a-universal-bot/" target="_blank">Creating a Universal Bot</a> article.
+Adding an extra _None_ _Intent_ ensures classifying random input to these intents in the VA. Once enabled, the ML Model is tuned to identify these none intents when a user utterance contains the words that are not used in the VA’s training. i.e., bot vocabulary. You can define the None Intent for the Linked Bots in a Universal Bot. For more information, see [Creating a Universal Bot](/docs/xo/universal-bots/creating-a-universal-bot/){:target="_blank"} article.
 
 ### Externalization of the ML Engine
 
@@ -641,7 +641,7 @@ Hyperparameters offer the means to further tailor the behavior of your Virtual A
 
 #### Network Type
 
-You can choose the Neural Network that you want to use. This setting is moved to the Machine Learning section post v8.1. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/#network-type" target="_blank">Learn more</a>.
+You can choose the Neural Network that you want to use. This setting is moved to the Machine Learning section post v8.1. [Learn more](/docs/xo/automation/natural-language/training/machine-learning-engine/#network-type){:target="_blank"}.
 
 #### Epochs
 
@@ -719,7 +719,7 @@ Disabling this configuration sends the original user input to ML for intent iden
 
 ### Multiple Intent Model
 
-Enabling this feature creates multiple ML intent models for your VA. All the Primary Dialog Intents will be part of the Bot Level Intent Model. Separate Dialog Level ML Models are created for each of the other Dialog Tasks and Sub Dialog Tasks, consisting of all the sub-intents used in the respective task definition. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/#the-multiple-intent-model" target="_blank">Learn more</a>.
+Enabling this feature creates multiple ML intent models for your VA. All the Primary Dialog Intents will be part of the Bot Level Intent Model. Separate Dialog Level ML Models are created for each of the other Dialog Tasks and Sub Dialog Tasks, consisting of all the sub-intents used in the respective task definition. [Learn more](/docs/xo/automation/natural-language/training/machine-learning-engine/#the-multiple-intent-model){:target="_blank"}.
 
 ### Lemmatization of KG Synonyms
 
@@ -843,7 +843,7 @@ The **Precedence for Intents with Ambiguous Entities** configuration setting all
 
 Bot designers can customize the flow on how the bot should respond when a user input results in an ambiguous entity with an intent by choosing the following options:
 
-* **Use Precedence** – Uses the **Instance Properties** setting specific to each entity, rather than global EoI/IoE settings. Applies to all Entity types except *String* and *Description* nodes. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-entity-node/#instance-properties" target="_blank">Learn more</a>.
+* **Use Precedence** – Uses the **Instance Properties** setting specific to each entity, rather than global EoI/IoE settings. Applies to all Entity types except *String* and *Description* nodes. [Learn more](/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-entity-node/#instance-properties){:target="_blank"}.
 * **Intent over Entity**–  Terminates the ongoing intent automatically by initiating a new dialog task. For example: If a customer intends to place an order and during the interaction changes their intent and requests to edit the order, the system terminates the ongoing intent (_place order_) and initiates a new intent (_edit order_).
 
     <div class="admonition note">
@@ -853,7 +853,7 @@ Bot designers can customize the flow on how the bot should respond when a user i
 
 * **Entity over Intent**– Completes the ongoing dialog task normally once the user resolves the ambiguity in the intent. This option considers the customer input as an entity value, and allows the dialog task to progress to the next node. For example: If a customer intends to place an order and during the interaction changes their intent and requests to edit the order, the system continues with the ongoing intent to place the order.
 
-    When the user’s input for an entity consists of a valid value for the entity and another intent, you can control the experience by choosing between **Intent Over Entity** or **Entity Over Intent** options. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-entity-node/#the-user-input-flow" target="_blank">Learn more</a>.
+    When the user’s input for an entity consists of a valid value for the entity and another intent, you can control the experience by choosing between **Intent Over Entity** or **Entity Over Intent** options. [Learn more](/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-entity-node/#the-user-input-flow){:target="_blank"}.
 
 ### Prefer Only the First Pattern Match in a Sentence
 
@@ -861,7 +861,7 @@ When multiple patterns are identified in a sentence, define whether the FM Engin
 
 ### Exact Task Name Match
 
-The <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#thresholds-configurations" target="_blank">FM Engine configuration</a> _Intent Detection using Task Name_ Words allows you to choose whether to match a task by using the words present in the task name. It is advised that this configuration be disabled if it conflicts with other training. 
+The [FM Engine configuration](/docs/xo/automation/natural-language/training/fundamental-meaning/#thresholds-configurations){:target="_blank"} Intent Detection using Task Name Words allows you to choose whether to match a task by using the words present in the task name. It is advised that this configuration be disabled if it conflicts with other training. 
 
 When disabled, the platform generates a strict pattern that does ‘exact matching’ i.e. if the user input exactly matches with the task name then it will consider as a match. The Exact Task Name Match configuration allows you to choose whether the platform should auto-generate the strict pattern when ‘Intent Detection using Task Name Words’ is Disabled.
 
