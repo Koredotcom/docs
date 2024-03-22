@@ -8,6 +8,7 @@ The Dialog Builder is where you can create your Dialog Tasks, from end-to-end. T
 To create a dialog task, you must have already created an assistant to add a dialog task to. See [Create Your First Assistant](../../../building-a-virtual-assistant){:target="_blank"} for more information.
 
 To add a dialog task, follow the steps below:
+
 1. Open the assistant for which you want to create the dialog task.
 2. Click the Automation icon on the left menu.
 3. The Automation menu opens, and the Dialogs page is open by default.
@@ -141,7 +142,7 @@ For the convenience of comprehension and demonstration, let’s visualize the To
 
     <img src="../images/using-dialog-builder-add-bookmark.gif" alt="Add Bookmark" title="Add Bookmark" style="border:1px solid gray;zoom:60%;">
 
-* Add **Note** (<img src="../images/using-dialog-tasks-tool-set-left-text.png">) - You can add a note anywhere on the canvas to record the logic being developed in a sequence or group of sequences or other relevant nodes about the logic building for future reference. 
+* Add **Note** (<img src="../images/using-dialog-tasks-tool-set-left-note.png">) - You can add a note anywhere on the canvas to record the logic being developed in a sequence or group of sequences or other relevant nodes about the logic building for future reference. 
 
     <img src="../images/using-dialog-builder-add-text.gif" alt="Add Note" title="Add Note" style="border:1px solid gray;zoom:60%;">
 
@@ -175,6 +176,7 @@ For the convenience of comprehension and demonstration, let’s visualize the To
     <img src="../images/using-dialog-builder-img29-display-settings.png" alt="Display settings" title="Display serrings" style="border:1px solid gray;zoom:60%;">
 
     Display Options are used to:
+    
         * **Fit to Screen** – Resizes Dialog Builder components and connections to fit within the display screen resolution for a single, non-scrolling page.
         * **Zoom Level** – is used to set the zoom level as needed.
         * **Zoom to Last Edited** – This takes you to the zoom level you have used to edit the dialog.
