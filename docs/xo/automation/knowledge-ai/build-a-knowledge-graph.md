@@ -175,7 +175,7 @@ The Knowledge Graph engine works well with the default settings, but you can fin
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <p> You can customize these settings in Natural Language > Thresholds & Configurations. See Knowledge Graph Training for details.</p>
+    <p> You can customize these settings in Natural Language > NLU Config > Engine Tuning.</p>
     </div>
 
 * **Traits** – Traits qualify nodes/terms even if the user utterance does not contain the term/node. Traits are also helpful in filtering the suggested intent list.

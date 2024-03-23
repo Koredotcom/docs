@@ -71,5 +71,5 @@ If you have cases where users employ idiomatic sentences or command-like sentenc
 To get started optimizing your VA’s NLP, you need to select the VA you’re working with, then access  **Natural Language**. The NLP options are categorized under various headings for your convenience:
 
 * **Training** – In the Training section, you can define how the NLP interpreter recognizes and responds to the user input for a VA, and then train the interpreter to recognize the correct user intent.
-* **Thresholds & Configurations** – In this section, you can define the recognition confidence levels required for minimum recognition actions, the confidence range for asking a user to choose from a list of possible matches, and a recognition confidence level for a positive match for the knowledge graph.
+* **Engine Tuning** – In this section, you can define the recognition confidence levels required for minimum recognition actions, the confidence range for asking a user to choose from a list of possible matches, and a recognition confidence level for a positive match for the knowledge graph.
 * Modify **Advanced Settings** like auto training settings for user utterances and negative intent patterns.

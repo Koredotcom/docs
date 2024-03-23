@@ -157,14 +157,14 @@ On the XO Platform, when auto-train is in progress, a warning message that “_u
 To set up the **Auto Train** option, follow the steps below:
 
 1. Open the VA for which you want to modify the settings.
-2. On the left navigation menu, click **Natural Language** -> **Thresholds & Configurations** -> **Machine Learning**.
+2. On the left navigation menu, click **Natural Language** -> **NLU Config** -> **Machine Learning**.
 3. Select “_Yes, add the successfully identified user utterances to the ML training model (Unsupervised Training)”_ for the **Auto Training For Machine Learning** option.
 
     <img src="../images/auto-train-ML-section.png" alt="auto train machine learning" title="auto train machine learning" style="border: 1px solid gray; zoom:75%;">
 
-## Thresholds & Configurations
+## NLU Config (Engine Tuning)
 
-To train and improve the performance of your Assistant, Threshold and Configurations can be specified for all three NLP engines – FM, KG, and ML. You can access these settings by navigating to **Natural Language** > **Thresholds & Configurations**.
+To train and improve the performance of your Assistant, Threshold and Configurations can be specified for all three NLP engines – FM, KG, and ML. You can access these settings by navigating to **Natural Language** > **NLU Config**.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -184,7 +184,7 @@ When the Multiple Intents Model =is enabled, the ML Engine maintains multiple in
 * **Bot level Intent Model** containing all the Primary Intents of the assistant which includes Primary Dialog Intents, and Alert Task Intents.
 * **Dialog Intent Models** – one for every primary dialog intent and sub-dialog intent which includes the Sub-intent nodes added to the dialog definition, Sub-intents scoped as part of the Group nodes and Interruption exceptions added to the dialog definition.
 
-You can configure the Thresholds and Configurations separately for each of the intent models. This includes:
+You can configure the Thresholds and Configurations separately for each of the intent models using the **NLU Config** feature. This includes:
 
 * All the configurations under Thresholds and Configurations – ML Engine as discussed in the below section;
 * All the ML Engine configurations under the Advanced NLP Configurations discussed [here](/docs/xo/automation/natural-language/nlu-configurations/engine-tuning){:target="_blank"}.
@@ -319,7 +319,7 @@ When you enable **ZSL network type** for an existing bot, the system does not id
 
 To enable the **ZSL** model, follow the steps below:
 
-1. Navigate to **Natural Language** > **Thresholds and Configurations** > **Machine Learning**.
+1. Navigate to **Natural Language** > **NLU Config** > **Machine Learning**.
 2. Select **_Zero-Shot Model with OpenAI_** in the dropdown list for **Network Type**, and click **Save**.
 <img src="../images/zero-shot-model-selection-window.png" alt="zero shot model" title="zero shot model" style="border: 1px solid gray; zoom:75%;">
 
@@ -441,7 +441,7 @@ The model uses embeddings generated using large pre-trained language models to c
 
 To enable the **FSL** model, follow the steps below:
 
-1. Navigate to **Natural Language** > **Thresholds and Configurations** > **Machine Learning**.
+1. Navigate to **Natural Language** > **NLU Config** > **Machine Learning**.
 2. Select **_Few-Shot Model (Kore.ai Hosted Embeddings)_** in the dropdown list for **Network Type**, and click **Save**.
 <img src="../images/enable-few-shot-model-option.png" alt="enable Few-shot model" title="enable Few-shot model" style="border: 1px solid gray; zoom:75%;">
 
@@ -474,7 +474,7 @@ In this case, MPNET provides a high score (ML Threshold and ML Definitive scores
 
 **Enabling Bot Synonyms**
 
-On the Platform, you can use Bot Synonyms as part of the Few-shot model by enabling the **Bot Synonyms** option in the **Bot Level Intent Model Configurations** window (after selecting the **Few-Shot Model (Kore.ai Hosted Embeddings)** Network Type under **NATURAL LANGUAGE** > **THRESHOLDS AND CONFIGURATIONS**.
+On the Platform, you can use Bot Synonyms as part of the Few-shot model by enabling the **Bot Synonyms** option in the **Bot Level Intent Model Configurations** window (after selecting the **Few-Shot Model (Kore.ai Hosted Embeddings)** Network Type under **Natural Language** > **NLU Config**.
 
 <img src="../images/bot-synonyms-few-shot-model.png" alt="Few-shot bot synonyms" title="Few-shot bot synonyms" style="border: 1px solid gray; zoom:75%;">
 
@@ -783,7 +783,7 @@ All new VAs that are created use the new ML model by default. Developers can upg
 
 If you are using a previous model of ML in the XO Platform, you can upgrade it as follows:
 
-1. Open the assistant for which you want to upgrade the ML model and go to **Natural Language** > **Thresholds & Configurations**.
+1. Open the assistant for which you want to upgrade the ML model and go to **Natural Language** > **NLU Config**.
 2. Expand **Machine Learning**. Under the ML Upgrade section, click the **Upgrade Now** button. It opens a confirmation window.
 3. Click **Upgrade and Train**. You can see new customizable options under the Machine Learning section.
 
