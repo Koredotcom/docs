@@ -6,7 +6,7 @@ Developers can include words for the NLP engine to ignore when interpreting the 
 
 To manage this setting, follow the steps below:
 
-1. Click **Intelligence** > **Ignore Words & Field Memory**.
+1. Click **Conversation Intelligence** > **Conversation Management** > **Ignore Words & Field Memory**.
    <img src="../images/ignore-words-edit-alert-tasks-window.png" alt="edit alert tasks for ignore words" title="edit alert tasks for ignore words" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition warning">
@@ -26,7 +26,7 @@ To manage this setting, follow the steps below:
 
 To modify or add a configuration for a task, follow the steps below:
 
-1. Navigate to **Intelligence** > **Ignore Words & Field Memory**.
+1. Navigate to **Conversation Intelligence** > **Conversation Management** > **Ignore Words & Field Memory**.
 2. Hover over the name of the task, and then click **Edit.** The **Edit Task** window is displayed.
 3. **Turn Off Confirmation Messages** – Select **Yes** to disable confirmation of the execution of a task when using NLP. When **No** is selected, the user is asked to confirm the task before running it.
 4. **Ignore Words** – Enter one or more ignore words for the task name. The list of words to ignore is processed by the XO Platform before interpreting the user input.

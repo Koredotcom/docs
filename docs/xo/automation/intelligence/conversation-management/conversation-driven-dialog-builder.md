@@ -52,27 +52,12 @@ Conversation builder can be accessed in two ways:
 * From storyboard by creating a new scene
 * From dialog task by creating a new dialog
 
-### Create Scene
-
-1. Open the bot you want to design the conversation.
-2. From the left menu, click **Conversation Skills -> Storyboard**.
-3. Click **New Scene** and enter the following details.
-    
-    * **Scene Name**
-    * **Description**
-    * **Status** of the scene
-    * Select **Auto-generate a Dialog Task** option. 
-    
-        This will ensure that a dialog task is automatically created in the background as you build the scene.
-
-    <img src="../images/create-new-scene.png" alt="create new scene" title="create new scene" style="border: 1px solid gray; zoom:75%;">
-
 ### Create Dialog
 
 You can initiate Conversation Driven Dialog Builder from the Create Dialog flow
 
 1. Open the bot you want to design the conversation.
-2. From the left menu, click **Conversation Skills** -> **Dialog Task**.
+2. From the left menu, click **Use Cases** -> **Dialogs**.
 3. Click **Create Dialog** and enter the following details:
 
     * **Intent Name**

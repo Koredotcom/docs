@@ -1,6 +1,6 @@
 # Sentiment Management
 
-Emotion tones are critical indicators in understanding the attitudes and opinions of users interacting with Virtual Assistants. **Sentiment Management** allows the developer to define and trigger events based on the user’s emotion or sentiment.
+Emotion tones are critical indicators in understanding the attitudes and opinions of users interacting with Virtual Assistants. **Sentiment Events** allow the developer to define and trigger events based on the user’s emotion or sentiment.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -15,7 +15,7 @@ The tone or sentiment scores are stored as context and used to drive the flow of
 
 ## Configuration
 
-You can define multiple sentiment events from under **Intelligence** > **Sentiment Management**. Click **New Event** to define an event based on which to capture the user’s emotion.
+You can define multiple sentiment events from under **Conversation Intelligence** > **Events** > **Sentiment Events**. Click **Create New Event** to define an event based on which to capture the user’s emotion.
 
 <img src="../images/new-event-window.png" alt="new event" title="new event" style="border: 1px solid gray; zoom:75%;">
 
