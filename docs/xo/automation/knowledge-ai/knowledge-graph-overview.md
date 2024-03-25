@@ -28,7 +28,7 @@ Changing Knowledge Graph Types is captured in the Change Logs, which you can acc
 <p>Before changing your Knowledge Graph Type, we recommend backing up your existing knowledge graph by either creating a new bot version or by exporting a copy of your knowledge graph as a JSON or CSV.</p>
 </div>
 
-Please continue reading to learn more about each type of knowledge graph. See <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-terminology/" target="_blank">Knowledge Graph Terminology</a> for in-depth information about Knowledge Graph features and components.
+Please continue reading to learn more about each type of knowledge graph. See <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-terminology/" target="_blank">Knowledge Graph Terminology</a> for in-depth information about Knowledge Graph features and components.
 
 ## The Ontology Knowledge Graph
 
@@ -45,8 +45,8 @@ To enable this Knowledge Graph type, go to **Build > Natural Language > Threshol
 Before enabling the Ontology Knowledge Graph model, please consider the following:
 
 1. You must build a Graph Ontology structure so the engine can qualify paths and compare them with query input. Each relevant term/node is considered while identifying the appropriate FAQ, so you must regularly maintain the node structure to facilitate optimum performance.
-2. The model supports three <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-training/#term-type" target="_blank">Type of Term</a> : _Default, Mandatory,_ and _Organizer_.
-3. The Ontology Model also supports other features such as Traits, Patterns, Path Synonyms, KG Synonyms, Bot Synonyms, Preconditions, and more. Please see the Comparison Table below for a detailed list of supported features. Also, see <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-training/" target="_blank">Knowledge Graph Training</a> for configuration details.
+2. The model supports three <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-training/#term-type" target="_blank">Type of Term</a> : _Default, Mandatory,_ and _Organizer_.
+3. The Ontology Model also supports other features such as Traits, Patterns, Path Synonyms, KG Synonyms, Bot Synonyms, Preconditions, and more. Please see the Comparison Table below for a detailed list of supported features. Also, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-training/" target="_blank">Knowledge Graph Training</a> for configuration details.
 
 ### How It Works
 

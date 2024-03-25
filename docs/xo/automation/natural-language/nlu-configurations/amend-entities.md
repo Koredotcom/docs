@@ -34,7 +34,7 @@ On the XO Platform, Amend Entity behavior is defined at two levels:
 
 To Set VA Level Amend Entity Behavior, follow the below steps:
 
-1. From the left menu, click **Intelligence** > **Amend Entity**.
+1. From the left menu, click **Natural Language** > **NLU Config** > **Amend Entity**.
 2. By default, this option s disabled.
 3. Once you **Allow amend entities**, various Dialog Resumption options are available:
     * **Re-execute dialog from amended entity** – use this option to resume the dialog by evaluating the amended entity’s connections. You can further choose to:

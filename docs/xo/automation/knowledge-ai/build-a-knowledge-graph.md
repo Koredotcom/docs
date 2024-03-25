@@ -2,7 +2,7 @@
 
 The XO Platform’s Knowledge Graph (KG) helps you turn your static FAQ text into an intelligent, personalized conversational experience. It goes beyond the usual practice of capturing FAQs as flat question-answer pairs. Instead, the Knowledge Graph enables you to create a hierarchical structure of key domain terms and associate them with context-specific questions and their alternatives, synonyms, traits, and more. 
 
-Additionally, you can opt for the LLM-based Few-Shot Knowledge Graph, which requires no ontology and reduces maintenance and training requirements. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-terminology/" target="_blank">Learn more</a>.
+Additionally, you can opt for the LLM-based Few-Shot Knowledge Graph, which requires no ontology and reduces maintenance and training requirements. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-terminology/" target="_blank">Learn more</a>.
 
 To generate a Knowledge Graph, you need to add FAQs to an existing or new VA. To open the Knowledge Graph builder, follow the below steps:
 
@@ -60,7 +60,7 @@ The next step is to add Knowledge Graph Intents which can be either:
 
 ### Add FAQs
 
-Using this option, you can add relevant question-answer sets to the nodes in the hierarchy. Note that there is a limit  of 50k FAQs over 20k nodes to avoid performance issues. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/manage-faqs/" target="_blank">Learn more</a>.
+Using this option, you can add relevant question-answer sets to the nodes in the hierarchy. Note that there is a limit  of 50k FAQs over 20k nodes to avoid performance issues. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/manage-faqs/" target="_blank">Learn more</a>.
 
 ### Run a Task
 
@@ -77,7 +77,7 @@ To leverage the capabilities of the Knowledge Graph and dialog tasks, and handle
 
 ### Manage Traits, Synonyms, and Stop Words
 
-You can improve the performance of your Knowledge Graph by adding tags, synonyms, traits, and more. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-training/" target="_blank">Learn more</a>.
+You can improve the performance of your Knowledge Graph by adding tags, synonyms, traits, and more. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-training/" target="_blank">Learn more</a>.
 
 ### Manage Variable Namespaces
 
@@ -119,7 +119,7 @@ You can move one or more Intent and Response sets between nodes in your Knowledg
 
 1. On the nodes hierarchy from the left pane, hover over the term/node you want to edit.
 2. Click the **Settings** (gear) icon. The settings window opens.
-3. You can change the name of the term, set the term types, set the term status, add traits, add or remove synonyms, and manage context. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-training/" target="_blank">Learn more</a>. 
+3. You can change the name of the term, set the term types, set the term status, add traits, add or remove synonyms, and manage context. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-training/" target="_blank">Learn more</a>. 
 
     <img src="../images/term-settings.png" alt="term settings" title="term settings" style="border: 1px solid gray; zoom:75%;">
 
@@ -175,7 +175,7 @@ The Knowledge Graph engine works well with the default settings, but you can fin
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <p> You can customize these settings in Natural Language > Thresholds & Configurations. See Knowledge Graph Training for details.</p>
+    <p> You can customize these settings in Natural Language > NLU Config > Engine Tuning.</p>
     </div>
 
 * **Traits** – Traits qualify nodes/terms even if the user utterance does not contain the term/node. Traits are also helpful in filtering the suggested intent list.

@@ -22,7 +22,7 @@ The Ranking & Resolver engine receives the outputs from the above engines and fu
 ## Enable Ranking & Resolver Version 2
 
 <p>To enable Version 2 for the Few-shot Model, follow the steps below:</p>
-<ol><li>Navigate to <b>Natural Language</b> > <b>Thresholds & Configurations</b> > <b>Ranking and Resolver Engine</b>.</li>
+<ol><li>Navigate to <b>Natural Language</b> > <b>NLU Config</b> > <b>Ranking and Resolver Engine</b>.</li>
 <li>Select <b><i>Version 2</i></b> for <b>Rank and Resolver Version</b>.</li>
 <li>Click <b>Enable Now</b> in the confirmation window.</li>
 Once enabled, you can use Utterance Testing to see your bot's behavior with R&R V2. <a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/testing-your-bot-with-nlp/#ranking-and-resolver">Learn more</a>.</ol></p>
@@ -75,14 +75,14 @@ The wining intent is decided by the Ranking & Resolver as follows:
     * If only FM or ML engines found an Intent but probable, that’s the winning intent.
     * If only the KG engine found a probable intent and its score is > higher threshold(80%) then that’s the winning intent.
     * If only the KG engine found a probable Intent and its score is >60% but &lt;80% then that’s the winning intent, but since the confidence is low, show it as a suggestion (user will see “Did you mean”)
-    * If more than one probable intents were found. <a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/testing-your-bot-with-nlp/#analyzing-the-test-results">Learn more about model scores and resolver</a>.
+    * If more than one probable intents were found. [Learn more](/docs/xo/automation/testing/testing-your-bot-with-nlp/#analyzing-the-test-results){:target="_blank"}.
 
 ## Thresholds & Configuration
 
 To set up Thresholds & Configuration for the Ranking and Resolver Engine, follow the below steps:
 
 * Open the vA for which you want to configure thresholds.
-* From the left navigation click **Natural Language** > **Thresholds & Configurations**.
+* From the left navigation click **Natural Language** > **NLU Config**.
 * The **Ranking & Resolver Engine** section allows you to set the threshold:
     * **Prefer Definitive Matches** can be used to prioritize definitive matches over probable matches so that all the matches are considered for rescoring and the end-user gets to choose the right intent in case of any ambiguity. This setting is enabled by default and you can disable it. If enabled (default behavior), definitive matches will win and the probable matches would be discarded, in case of no definitive match, then probable matches would get rescored. If disabled, all the matches – definitive and probable, would be rescored.
     * **Rescoring of Intents** can be turned off so that all the qualified intents from the different intent engines are assumed winning intents and are sent to the end-users to choose the required intent. If only one intent is qualified, then it is considered a winner, if more than one is qualified then the user will be presented with results for disambiguation.
@@ -97,7 +97,7 @@ The Platform has two models for scoring intents by the Fundamental Meaning Engin
 1. The first model predominantly relies on the presence of words, the position of words in the utterance, etc. to determine the intents and is scored solely by the Fundamental Meaning Engine. This is the default setting.
 2. The second model is based on the _dependency matrix_ where the intent detection is based on the words, their relative position, and most importantly the dependency between the keywords in the sentence. Under this model, intents are scored by the Fundamental Meaning Engine and then rescored by the Ranking and Resolver Engine.
 
-**Dependency Parsing Model** can be enabled and configured from the Ranking and Resolver section under **Natural Language >** **Training > Thresholds & Configurations**.
+**Dependency Parsing Model** can be enabled and configured from the **Ranking and Resolver** section under **Natural Language** > **NLU Config**.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>

@@ -15,7 +15,7 @@ To move data using the Knowledge Extraction service to the Knowledge Graph, foll
 1. **Extracting:** Extract the existing FAQ content from structured or unstructured sources of question-answer data such as PDF, web pages, and CSV files. This extraction can be done before or after creating a Knowledge Graph for the assistant you are working with. 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <p>The Knowledge Extraction service supports a specific content structure for each source type. Refer to the <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-extraction/#supported-formats-and-requirements">Supported formats</a> section below for details.</p>
+    <p>The Knowledge Extraction service supports a specific content structure for each source type. Refer to the <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-extraction/#supported-formats-and-requirements">Supported formats</a> section below for details.</p>
     </div>
 
 <ol start="2"><li><b>Editing</b>: Upon successful data extraction, you can edit the questions and answer text before moving it to the Knowledge Graph.</li>
@@ -45,7 +45,7 @@ The Knowledge Extractor allows you to add the extracted content to the Knowledge
 <p>The file size should not exceed 5MB.</p>
 </div>
 
-To extract content from a file, please follow the steps below. For file format details, refer to the <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-extraction/#supported-formats-and-requirements" target="_blank">Supported Formats</a> section of this article.
+To extract content from a file, please follow the steps below. For file format details, refer to the <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-extraction/#supported-formats-and-requirements" target="_blank">Supported Formats</a> section of this article.
 
 1. Open the VA to which you want to extract the content.
 2. Select the **Build** top menu item.
@@ -58,7 +58,7 @@ To extract content from a file, please follow the steps below. For file format d
 6. Click **Proceed**.
 7. For PDF files you have an option to annotate the document before extraction.
 8. After the extraction is completed successfully, a success status page is displayed.
-9. **Review & Add** the relevant questions to your Knowledge Graph. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-extraction/#add-the-extracted-content-to-the-knowledge-graph" target="_blank">Learn more</a>.
+9. **Review & Add** the relevant questions to your Knowledge Graph. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-extraction/#add-the-extracted-content-to-the-knowledge-graph" target="_blank">Learn more</a>.
 
 ### Annotate & Extract
 
