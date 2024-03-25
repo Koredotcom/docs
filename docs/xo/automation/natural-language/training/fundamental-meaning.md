@@ -446,7 +446,7 @@ The **Negative Patterns** feature helps filter matched intents that are a part o
 
 To activate Negative Patterns, follow the steps below:
 
-1. Navigate to **Natural Language** -> **Thresholds & Configurations** -> **Ranking and Resolver Engine**.
+1. Navigate to **Natural Language** -> **NLU Config** -> **Ranking and Resolver Engine**.
 2. Enable **Negative Patterns**.
 
 <img src="../images/enable-negative-patterns-fm-window.png" alt="enable negative patterns" title="enable negative patterns" style="border: 1px solid gray; zoom:75%;">
@@ -459,9 +459,9 @@ To activate Negative Patterns, follow the steps below:
 3. Once added, these patterns can be reordered, edited, and deleted.
 <img src="../images/negative-patterns-fm.png" alt="negative patterns" title="negative patterns" style="border: 1px solid gray; zoom:75%;">
 
-## Thresholds & Configurations
+## NLU Config (Engine Tuning)
 
-To train and improve the performance, Threshold and Configurations can be specified for all three NLP engines – FM, KG, and ML. You can access these settings under **Natural Language** > **Thresholds & Configurations**.
+To train and improve the performance, Threshold and Configurations can be specified for all three NLP engines – FM, KG, and ML. You can access these settings under **Natural Language** > **NLU Config**.
 
 The settings for the FM engine are discussed in detail in the following sections.
 
@@ -472,7 +472,7 @@ The settings for the FM engine are discussed in detail in the following sections
 To set up Thresholds and Configurations for the FM Engine, please follow the steps below:
 
 1. Open the assistant for which you want to configure thresholds.
-2. From the left menu, click **Natural Language -> Thresholds & Configurations**.
+2. From the left menu, click **Natural Language** > **NLU Config**.
 3. The **Fundamental Meaning** section allows you to set the threshold for the FM engine:
     * **Intent Detection using Task Name Words** can be disabled in case your use case requires it. This is particularly useful if you have too many tasks named – _place order_, _cancel order_, _request order_, _duplicate order_. All these tasks will be matched as intents if the user utterance has the word “_order_” in it. Instead of _trying_, _guessing_, and training for all possible utterances, disabling this option does the trick. Disabling it will not affect the intent detection using patterns. Also, an implicit pattern using the words in the Task Name will be automatically added. The implicit pattern identifies this intent only when the user input starts and ends with the exact task name. By default, it is enabled.
     * **FM Threshold** can be used to limit the number of results sent from the FM Engine to Ranking and Resolver, so as to reduce the possibility of presenting a low confidence match to the end-user. Enable this configuration and choose the _threshold percentage_ as a value between 0% and 20%. Default is 2%. Only the intent matches within the set % of the top-scoring intent will be considered and all other intents will be eliminated. This configuration is available only for English, Spanish, French and German languages.

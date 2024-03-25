@@ -193,9 +193,9 @@ The training fails if any single node has more than 100 questions. This limit wa
 
 When you complete creating the Knowledge Graph and training it, we recommend that you interact with the assistant and ask questions connected to the Knowledge Graph. Test the responses by using a variety of utterances so that you can identify missing terms, questions, alternative questions, synonyms, and traits. [Learn more about utterance testing](/docs/xo/automation/testing/testing-your-bot-with-nlp/){:target="_blank"}.
 
-## Thresholds & Configurations
+## NLU Config (Engine Tuning)
 
-To train and improve the performance, Thresholds and Configurations can be specified for all three NLP engines – FM, KG, and ML. You can access these settings from **Natural Language > Training > Thresholds & Configurations.**
+To train and improve the performance, Thresholds and Configurations can be specified for all three NLP engines – FM, KG, and ML. You can access these settings by clicking on **Natural Language** > **NLU Config**.
 
 !!! note
 
@@ -203,13 +203,13 @@ To train and improve the performance, Thresholds and Configurations can be speci
 
 The settings for the Knowledge Graph engine are discussed in detail in the following sections.
 
-### Explore Thresholds and Configurations
+### Explore Engine Tuning
 
 To navigate to Thresholds and Configuration, please follow the steps below: 
 
 1. Open the VA for which you want to configure Knowledge Graph settings.
-2. Hover over the left pane and click **Natural Language** > **Training**.
-3. Click the **Thresholds & Configurations** tab.
+2. On the left menu, click **Natural Language** > **NLU Config**.
+3. Click the **Engine Tuning** tab.
 4. Below is a detailed discussion about the **Knowledge Graph** section on this page.
 <img src="../images/thresholds-configurations-window.png" alt="thresholds and configurations" title="thresholds and configurations" style="border: 1px solid gray; zoom:75%;">
 

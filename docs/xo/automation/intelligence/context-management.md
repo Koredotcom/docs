@@ -152,7 +152,7 @@ The Platform consumes the output context tags and uses them for improving intent
 You can configure this as follows:
 
 1. Select the **Build** tab from the top menu
-2. From the left menu, click **Natural Language > Thresholds & Configurations**.
+2. From the left menu, click **Natural Language > NLU Config**.
 3. Click **Knowledge Graph**.
 4. Locate **Qualify Contextual Paths** and set it to _Yes_.
 <img src="../images/qualify-contextual-paths-window.png" alt="qualify contextual paths" title="qualify contextual paths" style="border: 1px solid gray; zoom:75%;">

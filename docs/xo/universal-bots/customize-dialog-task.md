@@ -88,8 +88,6 @@ Nodes that can be added to universal bot are limited compared to the standard bo
 
 Follow these steps to customize the default dialog message:
 
-
-
 1. Open the universal bot for which you want to configure the default dialog.
 2. Select the **Build** tab from the top menu.
 3. Select **Intelligence > Default Dialog**.

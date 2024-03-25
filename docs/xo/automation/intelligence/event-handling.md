@@ -21,7 +21,7 @@ curl –location -g –request POST ‘https://graph.facebook.com/v2.6/me/messen
 <p class="admonition-title">Note</p>
 <p>You must provide <code>access_token</code>, the Page access token for the specific Facebook page in the curl to run the API.</p></div>
 
-To access **Event Handlers**, navigate to **Intelligence** > **Events**.
+To access **Event Handlers**, navigate to **Conversation Intelligence** > **Events**.
 
 <img src="../images/access-event-handlers-window.png" alt="access event handlers" title="access event handlers" style="border: 1px solid gray; zoom:75%;">
 
@@ -416,7 +416,7 @@ A bot developer uses the **Repeat Bot Response** to allow you to repeat the resp
 
 **Steps to Enable the Repeat Bot Response Event**
 
-1. Navigate to **Intelligence > Events**.
+1. Navigate to **Conversation Intelligence > Events**.
 2. Click **Configure** to enable the **Repeat Bot Response Event**.
 <img src="../images/repeat-bot-responses-window.png" alt="repeat bot responses" title="repeat bot responses" style="border: 1px solid gray; zoom:75%;">
 
@@ -507,7 +507,7 @@ By customizing the flow, you can avoid displaying ambiguous intents to the end u
 
 To configure the Ambiguous Intents Identified event follow these steps:
 
-1. Go to **Intelligence** → **Events** on the Platform. By default, this event is disabled for all existing and new bots.
+1. Go to **Conversation Intelligence** → **Events** on the Platform. By default, this event is disabled for all existing and new bots.
 2. Click **Configure** to enable the event.
     <img src="../images/configure-intent-events.png" alt="configure intent events" title="configure intent events" style="border: 1px solid gray; zoom:75%;">
 

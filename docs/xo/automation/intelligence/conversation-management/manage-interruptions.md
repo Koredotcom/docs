@@ -64,7 +64,7 @@ To customize the Interruptions settings for a dialog:
 
 The VA Level interruptions settings can be overridden at the task level as discussed above.
 
-You can access the interruption settings for your VA from under **Intelligence > Manage Interruptions** page.
+You can access the interruption settings for your VA from under **Conversation Intelligence** > **Conversation Management** > **Manage Interruptions** page.
 <img src="../images/bot-level-settings-manageinterruptions-window-1.png" alt="bot level settings manage interruptions" title="bot level settings manage interruptions" style="border: 1px solid gray; zoom:75%;">
 
 The Platform provides options for _Interruptions Behavior_ under the following three categories:
