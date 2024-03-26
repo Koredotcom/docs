@@ -38,7 +38,7 @@ The Contact Center AI module offers a conversational AI-native contact center-as
         <a href="">Learn More</a>
     </kr-grid-item>
      <kr-grid-item>
-        <img src="./campaigns/images/Campaigns.svg" style="zoom:200%;"></img>
+        <img src="../images/campaigns.svg" style="zoom:200%;"></img>
         <kr-grid-title>Campaigns</kr-grid-title>
         <kr-grid-desc>Creating targeted voice campaigns and proactive web campaigns, supported by easy-to-use templates and comprehensive analytics. Monitor campaign performance and objectives with greater precision and effectiveness.</kr-grid-desc>
         <a href="">Learn More</a>
