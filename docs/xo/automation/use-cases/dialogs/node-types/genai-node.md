@@ -36,7 +36,7 @@ You can work with this node like with any other node within Dialog Tasks and can
 
 3. Exit Conditions:
     1. The platform exits from the GenAI Node when any of the defined exit conditions are met.
-    2. These conditions provide you the ability to define scenarios that need a different path in the conversation, for e.g., handing off to a human agent.
+    2. These conditions provide you the ability to define scenarios that need a different path in the conversation, for example, handing off to a human agent.
 
 4. The platform can also exit the GenAI Node when the user exceeds the maximum number of volleys (retries to capture the required entities).
 5. The platform stores the entity values in the context object, and this information can be used to define the transitions or any other part of the bot configuration.
