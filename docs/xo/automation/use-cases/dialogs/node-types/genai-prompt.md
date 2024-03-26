@@ -23,7 +23,6 @@ This node is not available by default. You can enable it for all Dialog Tasks as
 
 2. Toggle the GenAI Prompt feature under **App Settings** > **Generative AI Tools** > **Dynamics Conversations**. You can also select an LLM model and its settings for the features. By default, these selections are applicable across the platform for the feature. [Learn more](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#genai-prompt){:target="_blank"}
 
-   ![alt_text](images/genai-promptf.png "image_tooltip")
    <img src="../images/genai-promptf.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note
@@ -32,27 +31,21 @@ This node is not available by default. You can enable it for all Dialog Tasks as
 
 Setting up a GenAI Prompt in a dialog task involves adding the node at the appropriate location in the dialog flow and configuring various properties of the node, as explained below.
 
-
 ## Add the Node
 
 1. Go to **Automation** > **Dialogs** and select the task to which you want to add the GenAI Prompt.
 2. Click **Gen AI** and then click **GenAI Prompt**. Alternatively, you can drag and drop the **GenAI Prompt** node to the required location on the canvas. For more information on adding nodes, see [different ways to add a node](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
 3. The GenAI Prompt window is displayed with the **Component Properties** tab selected by default.
 
-
-    ![alt_text](images/canvas.png "image_tooltip")
-
-
+    <img src="../images/canvas.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+    
 ## Configure the Node
 
 ### Component Properties
 
 The settings made within this section affect this node across all instances in all dialog tasks.
 
-
-
-![alt_text](images/genai-propmpt(5).png "image_tooltip")
-
+<img src="../images/genai-propmpt(5).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 #### General Settings
 
@@ -61,44 +54,35 @@ In this section, you can provide **Name** and **Display Name** for the node and 
 * **Prompt**: A prompt allows you to define the request to be sent to the LLMs for generating a response. Some of the use cases for prompts include entity or topic extraction, rephrasing, or dynamic content generation. The prompt can have up to 2000 characters, and it can be defined using text, Context, Content, and Environment variables.
 * **Preview Response**: Check the preview of the OpenAI response for your prompt. When you click **Preview Response**, the Platform parses any variable used in the prompt and constructs OpenAI request using the Prompt and the Advanced Settings. If the response is not relevant, you can tweak the Prompt and the Advanced Settings to make the response better.
 
-
 #### Advanced Settings
 
 In this section, you can change the model and tweak its settings.
 
 Adjusting the settings allows you to fine-tune the model’s behavior to meet your needs. **The default settings work fine for most cases**. However, if required, you can tweak the settings and find the right balance for your use case.
 
-
-
-![alt_text](images/genai-propmpt(1).png "image_tooltip")
+<img src="../images/genai-propmpt(1).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 * **Model**: The default model for which the settings are displayed. You can choose another supported mode if it’s configured. If you select a non-default model, it’s used for this node only. If you want to change the default model, you can select the model in the drop-down list and use the **Mark Default** option shown next to its name.
 * **System Context**: Add a brief description of the use case context to guide the model.
 * **Temperature**: The setting controls the randomness of the model’s output. A higher temperature, like 0.8 or above, can result in unexpected, creative, and less relevant responses. On the other hand, a lower temperature, like 0.5 or below, makes the output more focused and relevant.
 * **Max Tokens**: It indicates the total number of tokens used in the API call to the model. It affects the cost and the time taken to receive a response. A token can be as short as one character or as long as one word, depending on the text.
 
-
 #### Advanced Controls
 
 In this section, you can select the maximum wait time to receive a response from the LLM and decide how the bot should respond when the timeout occurs.
 
-
-![alt_text](images/genai-propmpt(7).png "image_tooltip")
+<img src="../images/genai-propmpt(7).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 * **Timeout**: Select the maximum wait time from the drop-down list. The timeout range can be any value between 10 to 60, the default being 10.
 * **Timeout Error Handling**: Choose how the bot should respond when the timeout occurs:
     * Close the Task and trigger Task Execution Failure Event
     * Continue with the task and transition to this node; select the node from the drop-down list.
 
-
 ### Instance Properties
 
 On the **Instance Properties** tab, you can configure the instance-specific fields for this GenAI Prompt. These settings are applicable only for this instance and will not affect any other instances of this node.
 
-
-
-![alt_text](images/genai-propmpt(3).png "image_tooltip")
-
+<img src="../images/genai-propmpt(3).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 #### Custom Tags
 
@@ -117,9 +101,9 @@ For more information on custom tags, see [Custom Meta Tags](../../../../../analy
 
     If the node is at the bottom in the sequence, then only the connection property is visible.
 
-On the **Connections** tab, you can set the transition properties to determine the node in the dialog task to execute next. You can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. See [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions) {:target="_blank"} for a detailed setup guide.
+On the **Connections** tab, you can set the transition properties to determine the node in the dialog task to execute next. You can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. See [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"} for a detailed setup guide.
 
-![alt_text](images/genai-propmpt(2).png "image_tooltip")
+<img src="../images/genai-propmpt(2).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note
 
