@@ -19,11 +19,12 @@ You can work with this node like with any other node within Dialog Tasks and can
 
 This node is not available by default. You can enable it for all Dialog Tasks as follows:
 
-1. Configure the [LLM integration](../../../../../app-settings/generative-ai-tools/llm-integration). 
+1. Configure the [LLM integration](../../../../../app-settings/generative-ai-tools/llm-integration){:target="_blank"}.
 
-2. Toggle the GenAI Prompt feature under **App Settings** > **Generative AI Tools** > **Dynamics Conversations**. You can also select an LLM model and its settings for the features. By default, these selections are applicable across the platform for the feature. [Learn more](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#genai-prompt)
+2. Toggle the GenAI Prompt feature under **App Settings** > **Generative AI Tools** > **Dynamics Conversations**. You can also select an LLM model and its settings for the features. By default, these selections are applicable across the platform for the feature. [Learn more](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#genai-prompt){:target="_blank"}
 
    ![alt_text](images/genai-promptf.png "image_tooltip")
+   <img src="../images/genai-promptf.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note
 
@@ -35,7 +36,7 @@ Setting up a GenAI Prompt in a dialog task involves adding the node at the appro
 ## Add the Node
 
 1. Go to **Automation** > **Dialogs** and select the task to which you want to add the GenAI Prompt.
-2. Click **Gen AI** and then click **GenAI Prompt**. Alternatively, you can drag and drop the **GenAI Prompt** node to the required location on the canvas. For more information on adding nodes, see [different ways to add a node](../../using-the-dialog-builder-tool/#add-nodes).
+2. Click **Gen AI** and then click **GenAI Prompt**. Alternatively, you can drag and drop the **GenAI Prompt** node to the required location on the canvas. For more information on adding nodes, see [different ways to add a node](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
 3. The GenAI Prompt window is displayed with the **Component Properties** tab selected by default.
 
 
@@ -107,21 +108,22 @@ In this section, you can add Custom Meta Tags to the conversation flow to profil
 * **User**: Define custom tags to be added to the user’s profile information.
 * **Session**: Define custom tags to be added to the current conversation session.
 
-For more information on custom tags, see [Custom Meta Tags](../../../../../analytics/automation/custom-dashboard/custom-meta-tags).
+For more information on custom tags, see [Custom Meta Tags](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
 
 ### Connections Properties
 
-On the **Connections** tab, you can set the transition properties to determine the node in the dialog task to execute next. You can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. See [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions) for a detailed setup guide.
+!!! Note
 
+    If the node is at the bottom in the sequence, then only the connection property is visible.
 
+On the **Connections** tab, you can set the transition properties to determine the node in the dialog task to execute next. You can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. See [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions) {:target="_blank"} for a detailed setup guide.
 
 ![alt_text](images/genai-propmpt(2).png "image_tooltip")
 
 !!! Note
 
     These conditions apply only for this instance and will not affect this node when used in any other dialog.
-
 
 ## About Responses
 

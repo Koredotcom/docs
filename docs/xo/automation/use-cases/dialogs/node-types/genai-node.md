@@ -230,7 +230,7 @@ See [Voice Call Properties](../../../../../channels/call-properties){:target="_b
 <img src="../images/genai-node(1).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 
-### Connections
+### Connection Properties
 
 !!! Note
 
@@ -269,5 +269,4 @@ This node captures entities in the following structure:
             }
         }
     }
-}
 ```
