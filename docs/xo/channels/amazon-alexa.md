@@ -1,4 +1,4 @@
-# **Adding the Amazon Alexa Channel**
+# Adding the Amazon Alexa Channel
 
 The Kore.ai XO Platform supports the integration of Virtual Assistants (VA) into the **Amazon Alexa** Channel. Ensure you have an Amazon Developer account for this configuration. Additionally, Amazon Alexa should be enabled for VAs built for voice-based channels.
 
@@ -42,24 +42,24 @@ The steps to add the **Amazon Alexa** channel are given below:
 
 1. Log in to your [Amazon Developer Dashboard](https://developer.amazon.com/dashboard) and click the **Alexa** tab.
 2. Select **Alexa Skills Kit** on the menu.
-![alexa skills](./images/alexa-1.png "alexa skills")
+![alexa skills](../images/alexa-1.png "alexa skills")
 3. Click the **Skills** tab on the **Alexa Developer Console**.
 4. Click **Create Skill**.
- ![create skill](./images/alexa-2.png "create skill")
+ ![create skill](../images/alexa-2.png "create skill")
 5. Enter the **Skill Name** field information on the **Create a New Skill** page and select the **primary locale** value.
 6. Then, follow the steps below:
     * Enable the **Sync Locale** option, if required.
     * Select **Custom** (default selection) to **Choose a model to add to your skill** to create all of your skill’s interactions and map them to your custom model.
-    ![sync locale](./images/alexa-3.png "sync locale")
+    ![sync locale](../images/alexa-3.png "sync locale")
     * Under **Choose a method to host your skill’s backend resources** section, select **Alexa-hosted(Node.js)**.
     * Click **Create Skill**.
-    ![choose method](./images/alexa-4.png "choose method")
+    ![choose method](../images/alexa-4.png "choose method")
     * Select a template to add to your skill with these steps:
     * Select the **Start from Scratch** tab.
     * Click **Continue with Template**.
-    ![continue with template](./images/alexa-5.png "continue with template")
+    ![continue with template](../images/alexa-5.png "continue with template")
 7. Enter the captcha shown on the screen and click **Submit** to process and create an Amazon Alexa voice skill. Your skill is built and listed on the Developer Console.
-![alexa voice skill](./images/alexa-6.png "alexa voice skill")
+![alexa voice skill](../images/alexa-6.png "alexa voice skill")
 8. Click **Your Skills** to view the custom skill you added to the console.
 
 ## Step 2: Configure the Interaction Model
@@ -72,21 +72,22 @@ To configure a custom Interaction Model, follow the steps below:
 
 1. On the Developer Console, select the **Build** tab. Then, click the **Interaction Model** left menu option.
 2. Select the **JSON Editor** option.
-   ![JSON editor](./images/alexa-7.png "JSON editor")
+   ![JSON editor](../images/alexa-7.png "JSON editor")
 3. In the **JSON Editor** window, define the intents and entities to associate with your newly created skill based on the Kore.ai XO Platform definitions.
 4. To capture the intents and entities from the Kore.ai XO Builder, follow these steps:
  * Select the virtual assistant.
- * Navigate to **Deploy** > **Channels** > **Amazon Alexa** > **Configurations**.
+ * Navigate to **Channels & Flows** > **Channels** > **Third Party Voice** > **All** >
+ **Amazon Alexa** > **Configurations**.
  * Click **Download File** under **Alexa Skill Definition JSON** to download the VA’s tasks.
-  ![download file](./images/alexa-8.png "download file")
+  ![download file](../images/alexa-8.png "download file")
 
  * Click **Confirm** on the **Download** window.
  * Click **Drag and drop a _.json_ file** on the **JSON Editor** of the Alexa Developer Console and upload the file.
- ![developer console](./images/alexa-9.png "developer console")
+ ![developer console](../images/alexa-9.png "developer console")
  * The JSON Editor gets updated with the information in the uploaded file.
  * Click **Evaluate Model** to review and ensure that there are no errors.
  * Click **Save Model**, then click **Build Model**.
- ![evaluate model](./images/alexa-10.png "evaluate model")
+ ![evaluate model](../images/alexa-10.png "evaluate model")
 
 !!! note
 
@@ -105,27 +106,27 @@ The `AMAZON.SearchQuery` slot type helps capture less-predictable user utterance
 To configure a custom Interaction Model for the **SearchQuery** Slot Type, follow the steps below:
 
 
-1. Follow the sequence in Step 4 of [Dialog Migration to Extract the Dialog Tasks from Kore.ai](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-amazon-alexa-channel/#Dialog_Migration_to_Extract_the_Dialog_Tasks_from_Koreai).
-2. Create a new custom intent by following these [steps](https://developer.amazon.com/en-US/docs/alexa/custom-skills/create-intents-utterances-and-slots.html#create-intent).
+1. Follow the sequence in Step 4 of [Dialog Migration to Extract the Dialog Tasks from Kore.ai](#dialog-migration-to-extract-the-dialog-tasks-from-koreai).
+2. Create a new custom intent by following these [steps](#dialog-migration-to-extract-the-dialog-tasks-from-koreai).
 3. After writing a few utterances, pick the words or phrases representing variable information as the intent’s slots; For example, “_I would like to order two iPhones_.”
 4. Create a slot for each word or phrase and replace the original word with the slot name in curly brackets **({ })**.
 5. To create a slot, follow the steps below:
  * Sign in to the [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask).
  * Click the **Skills** tab.
  * In the **SKILL NAME** column, click the name of your custom skill.
- ![skill name](./images/alexa-11.png "skill name")
+ ![skill name](../images/alexa-11.png "skill name")
  * From the left menu, click **Custom** > **Interaction Model** > **Intents**.
  * Click **+Add Intent** to create a custom intent.
  * Type a _Custom Intent Name_ and click **Create custom Intent**.
- ![custom intent](./images/alexa-12.png "custom intent")
+ ![custom intent](../images/alexa-12.png "custom intent")
  * Click this intent name listed on the left menu under **Intents** to open the detail page.
  * Add the phrases or words in the **Sample Utterances** text input field.
- ![sample utterances](./images/alexa-13.png "sample utterances")
+ ![sample utterances](../images/alexa-13.png "sample utterances")
  * In the drop-down box, enter the slot name and click the **+** icon.
-  ![slot name](./images/alexa-14.png "slot name")
+  ![slot name](../images/alexa-14.png "slot name")
  * Repeat these steps for all the remaining variable words.
 6. Select `AMAZON.SearchQuery` from the dropdown list in the **SLOT TYPE** column.
-![intent slots](./images/alexa-15.png "intent slots")
+![intent slots](../images/alexa-15.png "intent slots")
 7. Click **Save Model** and **Build Model** on the top action panel.
 
 !!! note
@@ -140,7 +141,7 @@ If end-user authorization is required for making API calls to external services,
 2. Expand the **Tools** left menu, then click **Account Linking**.
 3. **Auth Code Grant** is the default _Authorization grant type_ selection on the **Account Linking** page.Enter the values for the mandatory fields under **Security Provider Information**. [Learn more](https://developer.amazon.com/en-US/docs/alexa/account-linking/configure-implicit-grant.html#config).
 4. Click **Save** to configure the **Implicit Grant** flow for Account Linking.
-![implicit grant](./images/alexa-16.png )
+![implicit grant](../images/alexa-16.png )
 
 Alexa shares the user **access tokens** with Kore.ai assistants to make API calls defined for the Service nodes.
 
@@ -148,21 +149,21 @@ Alexa shares the user **access tokens** with Kore.ai assistants to make API call
 
      Please enable **Account Linking** on the Kore.ai Platform under **Configurations** in the **Amazon Alexa** window. This allows Kore.ai assistants to use the access tokens from Alexa to make API calls defined in the Service nodes.
 
-![account linking](./images/alexa-17.png "account linking")
+![account linking](../images/alexa-17.png "account linking")
 
 ## Step 4: Enable the Webhook Integration
 
 1. On the **Alexa Developer Console**, click the **Build** tab on the top panel.
 2. Click the **Endpoint** left menu option.
 3. Select **HTTPS** as the **Service Endpoint Type**.
-   ![service endpoint type](./images/alexa-18.png "service endpoint type")
+   ![service endpoint type](../images/alexa-18.png "service endpoint type")
 
 4. On the Kore.ai XO Platform, copy the **Webhook URL** available under **Configurations** on the **Amazon Alexa** Channel window.
 5. Paste the URL for the **Default Region** field on the **Service Endpoint Type** page.
-![default region](./images/alexa-19.png "default region")
+![default region](../images/alexa-19.png "default region")
 
 6. For the **Select SSL Certificate Type** drop-down, select the option “**_My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority_**.”
-![SSL certificate](./images/alexa-20.png "SSL certificate")
+![SSL certificate](../images/alexa-20.png "SSL certificate")
 
 7. Click the **Save Endpoint** button on the top panel.
 
@@ -183,10 +184,10 @@ Once done, test the utterance integration on the **Alexa Developer Console** usi
 
 1. Click the **Test** tab.
 2. Select **Development** for the **Skill testing is enabled in** option.
-![skill testing](./images/alexa-21.png "skill testing")
+![skill testing](../images/alexa-21.png "skill testing")
 
 3. Navigate to the **Alexa Simulator** section, type an intent utterance, and click enter.
-![alexa simulator](./images/alexa-22.png )
+![alexa simulator](../images/alexa-22.png )
 
 If you get a successful response, then the integration is considered a success.
 
@@ -197,7 +198,7 @@ To publish your Alexa Skill on the **Alexa App**, follow the steps below:
 
 1. Click the **Distribution** tab on the **Alexa Developer Console**.
 2. Click **Skill Preview**.
-![skill preview](./images/alexa-23.png "skill preview")
+![skill preview](../images/alexa-23.png "skill preview")
 3. Enter the values for the required fields.
 4. Click **Save and Continue**.
 
@@ -206,7 +207,7 @@ To publish your Alexa Skill on the **Alexa App**, follow the steps below:
 On Alexa, it’s important to set up your Privacy and Compliance information before building the model. To update **Privacy and Compliance** information, follow these steps:
 
 1. Click the **Distribution** tab. Then, click the **Privacy & Compliance** left menu option.
-![privacy compliance](./images/alexa-24.png "privacy compliance")
+![privacy compliance](../images/alexa-24.png "privacy compliance")
 2. Provide all the required details.
 3. Click **Save and Continue**.
 
@@ -217,7 +218,7 @@ You will be redirected to the **Availability** page to invite your co-developers
 1. Enable the **Beta Test** option if it’s disabled.
 2. Enter the required details.
 3. Click **Save and Continue**.
-![beta test](./images/alexa-26.png "beta test")
+![beta test](../images/alexa-26.png "beta test")
 
 
 ### Validation
@@ -226,13 +227,13 @@ The next step is to **validate your skills** for the model. After configuring **
 
 1. Review and complete any required fixes based on the details displayed for the issue.
 2. Click **Run** to validate your skill.
- ![validate skill](./images/alexa-27.png "validate skill")
+ ![validate skill](../images/alexa-27.png "validate skill")
 
 3. Upon successful validation, your skill will be visible under **Alexa Skills** on Amazon App Store.
- ![alexa skills](./images/alexa-28.png "alexa skills")
+ ![alexa skills](../images/alexa-28.png "alexa skills")
 
 4. Additionally, your **Skill Builder Checklist** will display green checks for all the options.
-![builder checklist](./images/alexa-29.png "builder checklist")
-5. After enabling the channel and verifying all the configurations, you can test the new channel integration by publishing your virtual assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
+![builder checklist](../images/alexa-29.png "builder checklist")
+5. After enabling the channel and verifying all the configurations, you can test the new channel integration by publishing your virtual assistant. [Learn more](../deploy/publishing-bot.md).
 
-To learn more about working with messaging channels within the Kore.ai XO Platform, please see[ Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)
+To learn more about working with messaging channels within the Kore.ai XO Platform, please see[ Channel Enablement.](../channels/adding-channels-to-your-bot.md)

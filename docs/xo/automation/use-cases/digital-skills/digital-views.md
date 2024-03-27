@@ -1,10 +1,10 @@
-# **Digital Views**
+# Digital Views
 
 Interactions with Virtual Assistants are typically conducted using chat/messaging tools, voice channels, or other types of assistants. In the majority of the cases, the Virtual Assistants respond to the user queries only when the users have requested some information. This works well for conducting on-demand tasks that need user input for execution and the result is usually a short response, confirmation, or acknowledgment. But the need for more proactive user updates and less user input through an engaging interface has become a key requirement. 
 
-Using **Digital Views** from the Kore.ai XO Platform, you can design and launch rich visual experiences through interactive components, panels, and widgets, to proactively present relevant information to your users or customers. **Panels** are the placeholders that hold one or more widgets. **Widgets** are individual components that display information to the end-users. Your users or customers can interact with your VA either in conversation mode or directly get the required information from the widgets.
+Using **Digital Views** from the XO Platform, you can design and launch rich visual experiences through interactive components, panels, and widgets, to proactively present relevant information to your users or customers. **Panels** are the placeholders that hold one or more widgets. **Widgets** are individual components that display information to the end-users. Your users or customers can interact with your VA either in conversation mode or directly get the required information from the widgets.
 
-This article gives an overview on the working and implementation of **Panels & Widgets**. For step-by-step usage instructions, [refer to this article](https://developer.kore.ai/docs/bots/how-tos/how-to-configure-digital-views/).
+This article gives an overview on the working and implementation of **Panels & Widgets**. For step-by-step usage instructions, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/configure-digital-views/" target="_blank">here</a>.
 
 
 ## How It Works 
@@ -30,7 +30,7 @@ Here are the steps we recommend for efficient design of Digital Views:
 1. **Set up**: Panels are containers to host one or more widgets. You may create multiple panels and each panel can host widgets that present relevant information. Widgets are the interactive components that can contain information to be presented to the end-users and allow them to perform actions and follow-ups.
 2. **Configure**: Define widgets by connecting them either to your tasks or by directly defining the widget. If you have connected your widget to a Dialog Task, make sure to use a Message node to present the required information in the widget using any of the supported widget templates.
 3. **Preview & Publish**: Preview your widgets from the XO Platform to review the visual representation of the information. Enable the WidgetSDK channel and publish your panels and widgets to make them available for your end-users.
-4. **Host with Kore.ai SDK / Host Independently**: You can choose to host your widgets independently or co-host them along with the WebSDK. You can download the SDKs from the [Kore.ai GitHub page](https://github.com/Koredotcom/web-kore-sdk).
+4. **Host with Kore.ai SDK / Host Independently**: You can choose to host your widgets independently or co-host them along with the WebSDK. You can download the SDKs from the <a href="https://github.com/Koredotcom/web-kore-sdk" target="_blank">Kore.ai GitHub page</a>.
 
 ## General Setup
 
@@ -51,10 +51,10 @@ Widgets are individual components that can communicate with the VA for presentin
 To configure widgets, follow the below steps:
 
 1. Click **Create Widget** to create a widget.
-    <img src="../../images/create-widget.png" alt="create widget" title="create widget" style="border: 1px solid gray; zoom:75%;">
+<img src="../../images/create-widget.png" alt="create widget" title="create widget" style="border: 1px solid gray; zoom:75%;">
 
 2. The New Widget dialog opens.
-    <img src="../../images/new-widget-dialog.png" alt="new widget dialog" title="new widget dialog" style="border: 1px solid gray; zoom:75%;">
+<img src="../../images/new-widget-dialog.png" alt="new widget dialog" title="new widget dialog" style="border: 1px solid gray; zoom:75%;">
 
 3. On the **New Widget** window, enter the following details:
     * **Name** of the widget
@@ -122,6 +122,7 @@ To create a panel, follow the steps below:
     * **Display Name** for the Panel.
     * **Panel Icon** to display in the chat window (URL to the location).
     * **Save** the Panel.
+    
     <img src="../../images/create-new-digital-view-panel.png" alt="create new digital view panel" title="create new digital view panel" style="border: 1px solid gray; zoom:75%;">
 
 3. After you save, the panel will be **In Development** and will be displayed on your Digital Views screen. 
@@ -140,20 +141,22 @@ You have the following options for a given panel:
 
 1. **Edit** the panel details;
 2. **Add Form** to add existing forms to the Panel. Once added, forms will behave as a widget with the source set to Digital Form;
-* **Add Widget** to add existing widgets;
-* **Panel Management** to add existing forms/widgets, or remove already added forms/widgets from the panel.
-* **Test** the individual panel – this opens the **Talk to Bot** window along with the panel listing with the current panel active and data presented. You can interact with the VA and test the panel.
-* **Delete** the Panel.
-<img src="../../images/panel-options-for-digital-views.png" alt="panel options for digital views" title="panel options for digital views" style="border: 1px solid gray; zoom:75%;">
+
+  * **Add Widget** to add existing widgets;
+  * **Panel Management** to add existing forms/widgets, or remove already added forms/widgets from the panel.
+  * **Test** the individual panel – this opens the **Talk to Bot** window along with the panel listing with the current panel active and data presented. You can interact with the VA and test the panel.
+  * **Delete** the Panel.
+
+  <img src="../../images/panel-options-for-digital-views.png" alt="panel options for digital views" title="panel options for digital views" style="border: 1px solid gray; zoom:75%;">
 
 ## Publish
 
 When you publish your Virtual Assistant,  please ensure that the panels and widgets you want to include are selected.
 
-[Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/) about publishing a Virtual Assistant.
+<a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/configure-digital-views/#publish" target="_blank">Learn more</a> about publishing a Virtual Assistant.
 
 <img src="../../images/publish-digitalview.png" alt="publish digital view" title="publish digital view" style="border: 1px solid gray; zoom:75%;">
 
 ## Host
 
-The XO Platform provides the Widget SDK for hosting and managing panels and widgets. You can choose to host your widgets independently or co-host them along with the WebSDK. You can download the SDKs from the Kore.ai GitHub page. Do ensure to enable WidgetSDK as a channel. [Learn more](https://developer.kore.ai/docs/bots/sdks/kore-ai-widget-sdk-tutorial/).
+The XO Platform provides the Widget SDK for hosting and managing panels and widgets. You can choose to host your widgets independently or co-host them along with the WebSDK. You can download the SDKs from the Kore.ai GitHub page. Do ensure to enable WidgetSDK as a channel. <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/kore-ai-web-sdk-tutorial/" target="_blank">Learn more</a>.

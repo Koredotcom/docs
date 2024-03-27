@@ -1,4 +1,4 @@
-# **Skills**
+# Skills
 
 The **Skills** feature helps set up organizational classifications to route calls or chats to an agent based on the agent’s specialization, department, vertical, customer segment, and other categories. Examples of agent skills may include:
 

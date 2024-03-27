@@ -1,9 +1,9 @@
-# **Digital Skills**
+# Digital Skills
 
  Improving the user experience is a crucial aspect of developing a virtual assistant or any digital application. Digital skills are essential for efficiently handling and presenting information to users in a user-friendly and visually appealing manner.
 
 ## What are Digital Skills?
-Digital Skills are a set of features within the Kore.ai XO Platform which allow you to create interactive user interfaces that can either retrieve or present information to/from the user. These interfaces take the shape of either of the following:
+Digital Skills are a set of features within the XO Platform which allow you to create interactive user interfaces that can either retrieve or present information to/from the user. These interfaces take the shape of either of the following:
 
 * **Digital Forms**: These allow you to retrieve information from end users by showing them a form rather than configuring the assistant to ask them for each piece of information individually.
 
@@ -12,10 +12,10 @@ Digital Skills are a set of features within the Kore.ai XO Platform which allow 
      * **Panels**: A Panel is a collection of widgets. You can use Panels to present end users with the same type of information in an organized manner in one place. For example, you might have a *My Trips* Panel, which could include widgets for *Upcoming Trips*, *Completed Trips* and *Canceled Trips*.
 
 ## Digital Skills Implementation
-* You can implement Digital Forms within the Kore.ai XO Platform, by following [this article](https://developer.kore.ai/docs/bots/bot-builder-tool/digital-forms/). 
+* You can implement Digital Forms within the XO Platform, with the information <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-forms/" target="_blank">here</a>. 
 
-* You can also implement Digital Views by following the process described [here](https://developer.kore.ai/docs/bots/bot-builder-tool/digital-views/). 
+* You can also implement Digital Views by following the process described <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-views/" target="_blank">here</a>. 
 
-* Digital Views can be further enhanced using the Kore.ai Widget SDK, which you can learn more about [here](https://developer.kore.ai/docs/bots/sdks/kore-ai-widget-sdk-tutorial/). 
+* Digital Views can be further enhanced using the Kore.ai Widget SDK, which you can learn more about <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/kore-ai-web-sdk-tutorial/" target="_blank">here</a>.
 
-* You can download the Widget SDK from [Kore.ai’s GitHub profile](https://github.com/Koredotcom/web-kore-sdk).
+* You can download the Widget SDK from <a href="https://github.com/Koredotcom/web-kore-sdk" target="_blank">Kore.ai’s GitHub profile</a>.

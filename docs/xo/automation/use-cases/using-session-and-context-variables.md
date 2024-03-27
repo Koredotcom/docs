@@ -1,10 +1,10 @@
 <base target="_blank">
 
-# **Using Session and Context Variables in Tasks**
+# Using Session and Context Variables in Tasks
 
 When you define tasks, you can access session variables provided by the Bots Platform, or custom variables that you define, as well as the context object that defines the scope of the variable.
 
-For example, some API requests may require you to set session variables before request execution, or a dialog task component may need to access a session variable to transition to the next node. In addition, a dialog task can access the `context` object with additional system variables. For more information, see the [Context Object](https://developer.kore.ai/docs/bots/bot-builder-tool/context-object/).
+For example, some API requests may require you to set session variables before request execution, or a dialog task component may need to access a session variable to transition to the next node. In addition, a dialog task can access the `context` object with additional system variables. For more information, see the <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/context-object/" target="_blank">Context Object</a>.
 
 You can use session variables where you define JavaScript for the User Prompt editor in tasks under the JavaScript tab.
 
@@ -14,7 +14,7 @@ This section describes the context variables and the scope of the context variab
 
 The JavaScript syntax to GET, PUT, or DELETE a key/value pair for each context type is:
 
-```
+```js
   "EnterpriseContext" : {
        "get" : function(key){...},//get the specified key
        "put" : function(key, value, ttl){...} //put the value at the key for the specified ttl, ttl is in minutes
@@ -42,7 +42,7 @@ The JavaScript syntax to GET, PUT, or DELETE a key/value pair for each context t
 
 For example:
 
-```
+```js
 BotContext.put("topicSessionVariable","music",2000);
 UserSession.put("firstName","Mary",20000);
 UserContext.get("firstName");
@@ -59,7 +59,7 @@ The **delete()** method is used to delete only the root-level object.
 
 For example,
 
-```
+```js
 var Company = {
 
 	"name":"Kore.ai"
@@ -106,7 +106,7 @@ The following types of session variables are available on the XO Platform:
 
 * **EnterpriseContext** – A key/value pair available to all assistants and all users in an enterprise. For example, with the GitHub bot, a user will need to access one or more enterprise repositories. You can persist the repository data as **Gitrepository (Enterprise Context)** with the following JavaScript code: 
 
-    ```
+    ```js
     var userRepository = {
     "title": _labels_[repository],
     "value": repository
@@ -116,7 +116,7 @@ The following types of session variables are available on the XO Platform:
 
 * **BotContext** – A key/value pair available to all users of this specific bot. For example, you may want to set up a default currency for financial transactions for a session based on a user’s location. You can persist the default currency data as **currency (Bot Context)** with the following JavaScript code:
 
-    ```
+    ```js
     var defaultCurrency = { TODO Custom JavaScript for location-based currency }
     BotContext.put('currency', defaultCurrency, 200000);
     ```
@@ -135,14 +135,14 @@ The following types of session variables are available on the XO Platform:
         * `locked` – The user exceeded the maximum number of login attempts.
     * **UserContext.get(“jTitle”)** – The title of the user, if defined.
     * **UserContext.get(“orgId”)** – The organizational ID of the user account, if defined.
-    * **UserContext.get(“customData”)** – Use this to pass user information to web channels, currently only for webSDK. For more information, see [Kore.ai Web SDK Tutorial](https://developer.kore.ai/docs/bots/sdks/kore-ai-web-sdk-tutorial/).
+    * **UserContext.get(“customData”)** – Use this to pass user information to web channels, currently only for webSDK. For more information, click <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/kore-ai-web-sdk-tutorial/" target="_blank">here</a>.
     * **UserContext.get(“identities”)** – Alternate user IDs, if defined.
         * `val` – The alternate ID
         * `type` – The type of alternate ID.
 
     For example, you can PUT a value into the session using the `UserSession` variable where the key is defined as `fullName` based on the GET from the two `UserContext` variables.
 
-    ```
+    ```js
     var name = UserContext.get("firstName")+UserContext.get("lastName");
     UserSession.put("fullName") = name;
     ```
@@ -153,7 +153,7 @@ The following types of session variables are available on the XO Platform:
 
     You can persist default location data as **HomeLocation (UserSession)** with the following JavaScript code: 
 
-    ```
+    ```js
     var location = {
     "title": labels[location],
     "value": {
@@ -170,7 +170,7 @@ The following types of session variables are available on the XO Platform:
     
     For example, you can persist the default home and destination data as **HomeLocation (BotUserSession)** and **DestinationLocation (BotUserSession)** with the following JavaScript code:
 
-    ```
+    ```js
     var homelocation = {
     "title": labels[request.sourceLocation],
     "value": {
@@ -195,7 +195,7 @@ In addition to session and context keys, there are Kore.ai variable placeholders
 
 <ul><li><b>_labels_</b> – Used to return the friendly label in place of a GUID. For example, when user data is requested from a web service API, the ID of a project or workspace returned is a GUID. You can use the `_labels_` key to show the user-friendly name of the GUID to the end-user instead of the GUID. In Kore.ai, a drop-down control stores the response for the `_labels_` key as, for example:
 
-```
+```js
 {
     "_labels_": {
         "15379386734832": "roadlabs.com",

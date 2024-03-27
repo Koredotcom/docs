@@ -1,7 +1,6 @@
-# **Standard Responses**
+# Default Standard Responses
 
-Kore.ai Bot Builder tool provides a few default text responses. This section lists them and gives an explanation as to when these responses are triggered. For an overview on Standard Responses, click [here](https://developer.kore.ai/docs/bots/bot-intelligence/default-dialog/#Standard_Responses).
-
+Kore.ai Bot Builder tool provides a few default text responses, Natural Language Processing, or NLP interpreter responses to user inputs or events. This section lists them and gives an explanation as to when these responses are triggered. 
 
 ## Statements
 
@@ -776,7 +775,7 @@ This message is displayed when <em>Hold and Resume</em> are set to <em>Allow the
    </td>
    <td>This response is displayed when the end-user authorization or re-authorization is requested.
 <p>
-The Authorization URL required for obtaining the user’s authorization is dynamically appended to the messages defined in the Simple mode. For defining the message in Advanced Mode, you can use the <code>koreUtil.getCurrentOptions()</code> function to retrieve the Authorization URL and use it as part of the message. <a href="https://developer.kore.ai/docs/bots/advanced-topics/koreutil-libraries/#koreUtilgetCurrentOptions">Know more</a>
+The Authorization URL required for obtaining the user’s authorization is dynamically appended to the messages defined in the Simple mode. For defining the message in Advanced Mode, you can use the <code>koreUtil.getCurrentOptions()</code> function to retrieve the Authorization URL and use it as part of the message. <a href="https://docsinternal-kore.github.io/docs/xo/apis/koreutil-libraries/#koreutilgetcurrentoptions">Know more</a>.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
@@ -1492,8 +1491,6 @@ This message will be displayed if the user’s input matches with intent and the
    </td>
   </tr>
 </table>
-
-
 
 ## Greeting
 
