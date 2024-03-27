@@ -63,7 +63,7 @@ Complete the following steps to configure the ServiceNow agent for **Tokyo** and
 2. Select a Virtual Assistant for which you want to configure the ServiceNow agent. 
 3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** and click the **ServiceNow**.
 
-    <img src="../images/configuring-the-servicenow-agent-tokyo-img5.png" alt="Agent transfer - ServiceNow" title="Agent transfer - ServiceNow" style="border: 1px solid gray;zoom:80%;">
+
 
 4. On the **Configurations** tab, select your preferred authentication option (Basic vs. OAuth) and then provide the details as explained in the options below:
     
@@ -276,10 +276,9 @@ Complete the following steps to configure the ServiceNow agent for **Tokyo** and
     var response = request.execute();
 
 ```
-    
-    !!! Note 
-    
-        The code is optional. It is recommended to use the code when you face any issues during execution. This rule executes the API configured in REST Message.
+!!! note
+
+    The code is optional. It is recommended to use the code when you face any issues during execution. This rule executes the API configured in REST Message.
 
 
 ### Step 11: Testing Configuration
