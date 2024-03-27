@@ -1,6 +1,5 @@
 ---
 hide:
-  - toc
   - feedback
 ---
 # Welcome to All-new Experience Optimization Platform
@@ -9,7 +8,7 @@ Kore.ai Experience Optimization (XO) Platform is an AI-powered, end-to-end exper
 ## XO Platform Products, Features, and Services
 The unified XO Platform offers a comprehensive suite of products, features, and services to help businesses leverage conversational AI intelligence and generative AI innovations to deliver exceptional customer experiences, improve operational efficiency, and drive business growth.
 
-**Key products, features, and services offered by the XO Platform:**
+**Key Products, Features, and Services offered by the XO Platform:**
 
 <img src="../images/xo-platform-components.png" alt="New Unified XO Platform" title="New unified XO Platform">
 
@@ -20,8 +19,8 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     Key Features
 
     * **Virtual Assistant Builder**: Enables the creation of intelligent virtual assistants.
-    * Multi-Model NLU: Natural Language Understanding that uses multiple models to better understand user input.
-    * GenAI Framework: A generative AI framework to enhance automation capabilities.
+    * **Multi-Model NLU**: Natural Language Understanding that uses multiple models to better understand user input.
+    * **GenAI Framework**: A generative AI framework to enhance automation capabilities.
 
 === "Search AI"
 
@@ -29,9 +28,9 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
     Key Features
 
-    * Knowledge AI with LLM: Integrates large language models to enrich knowledge bases.
-    * Retrieval Augmented Generation: Enhances information retrieval with generative AI.
-    * Advanced RAG: An advanced version of retrieval augmented generation for improved search capabilities.
+    * **Knowledge AI with LLM**: Integrates large language models to enrich knowledge bases.
+    * **Retrieval Augmented Generation**: Enhances information retrieval with generative AI.
+    * **Advanced RAG**: An advanced version of retrieval augmented generation for improved search capabilities.
 
 === "Contact Center AI"
 
@@ -39,9 +38,9 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
     Key Features
 
-    * Routing & Experience Flows: Manages the routing of queries and the flow of customer experiences.
-    * Agent Desktop: Provides a centralized workspace for agents.
-    * Campaigns: Tools for managing voice and proactive web campaigns.
+    * **Routing & Experience Flows**: Manages the routing of queries and the flow of customer experiences.
+    * **Agent Desktop**: Provides a centralized workspace for agents.
+    * **Campaigns**: Tools for managing voice and proactive web campaigns.
 
 === "Agent AI"
 
@@ -49,9 +48,9 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
     Key Features
 
-    * Real-time AI suggestions: Offers live AI-powered guidance to agents.
-    * Auto fulfillment: Automates the completion of tasks and processes.
-    * Agent Coaching & Playbooks: Provides resources and strategies for agent training and performance.
+    * **Real-time AI suggestions**: Offers live AI-powered guidance to agents.
+    * **Auto-fulfillment**: Automates the completion of tasks and processes.
+    * **Agent Coaching & Playbooks**: Provides resources and strategies for agent training and performance.
 
 === "Analytics"
 
@@ -59,9 +58,9 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
     Key Features
 
-    * Virtual Agent - User Conversational Insights: Analyzes and provides insights on interactions between users and virtual agents.
-    * Virtual Agent Performance Insights: Monitors and evaluates the performance of virtual agents.
-    * Contact Center Quality Management Insights: Offers insights to improve contact center operations.
+    * **Virtual Agent - User Conversational Insights**: Analyzes and provides insights on interactions between users and virtual agents.
+    * **Virtual Agent Performance Insights**: Monitors and evaluates the performance of virtual agents.
+    * **Contact Center Quality Management Insights**: Offers insights to improve contact center operations.
 
 === "Platform Services"
 
@@ -69,11 +68,11 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
     Key Services
 
-    * Life Cycle Management: Tools for managing the lifecycle of apps and services, including versioning, publishing, and collaboration.
-    * Multi-lingual Support: Offers support for multiple languages.
-    * Pre-built Integrations: Provides ready-to-use integrations with other systems.
-    * Generative AI: Utilizes generative AI across the Platform.
-    * Omnichannel: Ensures a seamless experience across various communication channels.
+    * **Life Cycle Management**: Tools for managing the lifecycle of apps and services, including versioning, publishing, and collaboration.
+    * **Multi-lingual Support**: Offers support for multiple languages.
+    * **Pre-built Integrations**: Provides ready-to-use integrations with other systems.
+    * **Generative AI**: Utilizes generative AI across the Platform.
+    * **Omnichannel**: Ensures a seamless experience across various communication channels.
 
 === "Enterprise Services"
 
@@ -81,10 +80,10 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
     Key Services
 
-    * Role-based Access Controls, Audit Logs: Ensures security and accountability through access management and logging.
-    * Security, Compliance (SOC-2, PCI, FedRAMP, HIPAA, GDPR): Compliant with major security and privacy standards.
-    * Cloud and On-Premise Deployments**: Flexible deployment options.
-    * Scalability, Integrations, Authentication, and Authorization: Ensures the Platform can scale and integrate securely with other systems.
+    * **Role-based Access Controls, Audit Logs**: Ensures security and accountability through access management and logging.
+    * **Security, Compliance (SOC-2, PCI, FedRAMP, HIPAA, GDPR)**: Compliant with major security and privacy standards.
+    * **Cloud and On-Premise Deployments**: Flexible deployment options.
+    * **Scalability, Integrations, Authentication, and Authorization**: Ensures the Platform can scale and integrate securely with other systems.
 
 
 ## How Does Everything Work Together?
