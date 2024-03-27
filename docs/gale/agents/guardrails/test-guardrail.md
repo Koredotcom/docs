@@ -1,4 +1,4 @@
-## Test Guardrail
+# Test Guardrail
 
 Once you've added and configured the necessary scanner, you can verify if it adheres to the specified standards. You have the option to test the effectiveness of an individual scanner or a group of scanners.
 

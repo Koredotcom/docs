@@ -1,4 +1,4 @@
-## Add a scanner
+# Add a scanner
 
 You have the option to add an input or output scanner, facilitating the scanning and verification of a particular objective. Input scanners evaluate the inputs or prompts directed to the LLM node, while output scanners assess the responses received from the LLM.
 
@@ -19,6 +19,7 @@ You have the option to add an input or output scanner, facilitating the scanning
 1. Click **Add scanner** from the **Input Scanners** section. A pop-up with a list of options is displayed.
 
     <img src="../images/add-input-scanner.png" alt="Add Input Scanner" title="Add Input Scanner" style="border: 1px solid gray; zoom:80%;">
+    
 1. Select the required scanners and click **Done**. The selected scanner is added to the list.
 
     <img src="../images/scanner-added.png" alt="Scanner Added" title="Scanner Added" style="border: 1px solid gray; zoom:80%;">
@@ -29,7 +30,7 @@ You have the option to add an input or output scanner, facilitating the scanning
 
 1. Click the required scanner from the list of added scanners to configure that scanner. The settings displayed are different for each scanner. For example, the settings for “Toxicity” are **Threshold** and **End the flow if the risk score is above**. Similarly, the settings for the “Regex” scanner are **Enter patterns to ban**, **End the flow if the risk score is above**, and **Match type**.
 
-<img src="../images/remove-scanner.png" alt="Remove Scanner" title="Remove Scanner" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/remove-scanner.png" alt="Remove Scanner" title="Remove Scanner" style="border: 1px solid gray; zoom:80%;">
 
 !!! note
 

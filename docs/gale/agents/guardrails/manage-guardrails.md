@@ -1,4 +1,4 @@
-## Manage Guardrails
+# Manage Guardrails
 
 All the scanners have models at the back end so to initiate the necessary input and output scanners, you need to deploy a scanner. Once deployed, this scanner becomes accessible throughout GALE, allowing its utilization across all applications.
 
