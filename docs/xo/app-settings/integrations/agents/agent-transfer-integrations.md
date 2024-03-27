@@ -7,7 +7,7 @@ Kore.ai’s Agent Transfer allows you to configure the most popular integrations
 
 Agent transfer refers to the process of handing over a customer’s conversation from one agent to another within a conversational virtual assistant (VA) platform. This is typically done when the current agent is unable to assist the customer with their issue or request, or if the customer requests to speak with a different agent.
 
-Agent Transfer integrations are available under the **Build** menu. You can enable any integration by providing the required configurations. You can also enable multiple agent integrations as per your business requirement. For example, if you have a Custom integration, i.e., BotKit, and an integration with Genesys chat. You can make one of them as default and map channels to agent systems. 
+**Agent Transfer** integrations are available under the **App Settings > Integration** menu. You can enable any integration by providing the required configurations. You can also enable multiple agent integrations as per your business requirement. For example, if you have a Custom integration, i.e., BotKit, and an integration with Genesys chat. You can make one of them as default and map channels to agent systems. 
 
 You can also find these configurations as part of the Agent Transfer node. The Kore.ai XO platform hands over the conversation to an agent during the dialog execution when the conversation reaches the agent node.
 
@@ -18,7 +18,7 @@ Agent Transfer node now allows you to define the IVR properties required to hand
 
 Pre-built agent transfer integrations with contact center or agent desktop systems like Genesys or Salesforce are configured based on your channel configurations. 
 
-The platform supports the following agent transfer integrations in v10.0 released on 21st January 2023.
+The platform supports the following agent transfer integrations.
 
 
 <table border="1">
@@ -126,7 +126,7 @@ You can delete an external agent transfer integration that is configured but no 
 
 Steps to delete a configured agent transfer integration:
 
-1. To delete a configured Agent Transfer integration, hover over it in the **Configured** list and click the **Delete** icon.
+1. To delete a configured Agent Transfer integration, go to **App Settings > Integration > Agent Transfer > Configured** hover over it in the **Configured** list and click the **Delete** icon.
 
     <img src="../images/agent-transfer-integrations-img1-delete-agent.png" alt="Delete agent" title="Delete agent" style="border: 1px solid gray;zoom:80%;">
 

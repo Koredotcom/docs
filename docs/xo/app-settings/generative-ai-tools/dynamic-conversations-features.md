@@ -16,9 +16,9 @@ Steps to enable the feature:
 1. Navigate to **App Settings** > **Generative AI Tools** > **Dynamic Conversations**. 
 
 
+   
     ![alt_text](images/dcf(1).jpg  )
-
-    <img src="../images/dcf(1).png" alt="Delete/Disable channel" title="Dynamic Conversations" style="border: 1px solid gray; zoom:70%;">
+    
 
 2. Select the preferred model from the model drop-down menu for a feature. (For a pre-built model, the default prompt is used that can’t be changed.) 
 3. Turn on the Status toggle. The success message is displayed.
@@ -62,11 +62,13 @@ Follow these steps:
 
 
     ![alt_text](images/dcf(2).jpg  )
-
+   
+    
 3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed. 
 
 
     ![alt_text](images/dcf(5).png  )
+ 
 
 
 
@@ -99,11 +101,13 @@ Follow these steps:
 2. Hover over the feature to view the **Setting** (gear) icon. 
 
     ![alt_text](images/image4-3-4.png  )
+ 
 
 3. Click **Edit**. The Actual Response is displayed. 
 
 
     ![alt_text](images/cpf(5).png  )
+    
 
 4. Click **Configure**. The Post Processor Script is displayed. 
 
