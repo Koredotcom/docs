@@ -4,7 +4,7 @@ This glossary lists the key terms and concepts related to the Kore.ai’s XO Pla
 
 !!! note
 
-      "Virtual Assistant", "VA" and "Bot" refer to the same concept and are used interchangeably throughout this glossary. Please see "Virtual Assistant" for the definition. 
+      "Virtual Assistant", "VA" and "Bot" refer to the same concept and are used interchangeably throughout this glossary.
 
 
 ## A

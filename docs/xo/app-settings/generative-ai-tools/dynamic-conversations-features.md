@@ -16,7 +16,9 @@ Steps to enable the feature:
 1. Navigate to **App Settings** > **Generative AI Tools** > **Dynamic Conversations**. 
 
 
-    ![alt_text](images/dcf(1).jpg "image_tooltip")
+   
+    ![alt_text](images/dcf(1).jpg  )
+    
 
 2. Select the preferred model from the model drop-down menu for a feature. (For a pre-built model, the default prompt is used that can’t be changed.) 
 3. Turn on the Status toggle. The success message is displayed.
@@ -59,12 +61,14 @@ Follow these steps:
 2. Hover over the feature to view the **Advance Setting** (gear) icon. 
 
 
-    ![alt_text](images/dcf(2).jpg "image_tooltip")
-
+    ![alt_text](images/dcf(2).jpg  )
+   
+    
 3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed. 
 
 
-    ![alt_text](images/dcf(5).png "image_tooltip")
+    ![alt_text](images/dcf(5).png  )
+ 
 
 
 
@@ -93,32 +97,34 @@ Follow these steps:
 
 
 
-1. Go to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
+1. Go to **App Settings** > **Generative AI Tools** > **Dynamic Conversations**.
 2. Hover over the feature to view the **Setting** (gear) icon. 
 
-    ![alt_text](images/image4-3-4.png "image_tooltip")
+    ![alt_text](images/image4-3-4.png  )
+ 
 
 3. Click **Edit**. The Actual Response is displayed. 
 
 
-    ![alt_text](images/cpf(5).png "image_tooltip")
+    ![alt_text](images/cpf(5).png  )
+    
 
 4. Click **Configure**. The Post Processor Script is displayed. 
 
 
-    ![alt_text](images/cpf(7).png "image_tooltip")
+    ![alt_text](images/cpf(7).png  )
 
 5. Modify the script and click **Save & Test**. The Response is displayed. 
 
 
 
 
-    ![alt_text](images/cpf(6).png "image_tooltip")
+    ![alt_text](images/cpf(6).png  )
 
 6. Click **Save**.
 7. (Only for GenAI Node) Enter the **Exit Scenario Key-Value** and **Virtual Assistance Response Key fields**. Click **Save**.
 The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user.
-    ![alt_text](images/image1-8.png "image_tooltip")
+    ![alt_text](images/image1-8.png  )
 	
 
 	
@@ -319,7 +325,7 @@ When enabled, this feature lets you add an GenAI Node to Dialog Tasks. This node
 
 
 
-![alt_text](images/dcf(1).png "image_tooltip")
+![alt_text](images/dcf(1).png  )
 
 
 **Usage**
@@ -336,7 +342,7 @@ This feature leverages a Large Language Model (LLM) and Generative AI models fro
 
 
 
-![alt_text](images/dcf(4).png "image_tooltip")
+![alt_text](images/dcf(4).png  )
 
 
 **Usage**
@@ -374,7 +380,7 @@ This feature lets you define custom user prompts based on the conversation conte
 1. When building the Dialog Flow, click the **“+”** button, and select the **GenAI Prompt** node. 
 
 
-    ![alt_text](images/dcf(2).png "image_tooltip")
+    ![alt_text](images/dcf(2).png  )
 
 2. Configuring the Component Properties in the following sections helps set up the node:
     * **General Settings**: Provide **Name** and **Display Name** for the node and write your own OpenAI Prompt.
@@ -397,7 +403,7 @@ This feature sends all User Prompts, Error Prompts, and Bot Responses to the Gen
 
 
 
-![alt_text](images/dcf(1).gif "image_tooltip")
+![alt_text](images/dcf(1).gif  )
 
 
 **Usage**
@@ -410,7 +416,7 @@ When this feature is disabled, the Rephrase Response section is not visible with
 
 
 
-![alt_text](images/dcf(3).png "image_tooltip")
+![alt_text](images/dcf(3).png  )
 
 
 

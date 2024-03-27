@@ -10,8 +10,8 @@ The XO Platform offers **Sub Intents** that are defined at the task level, and a
 
 There are three ways to define Sub Intents:
 
-* **Add an Intent Node within the Dialog Task** – This intent is not available for any other dialog and since it is within the dialog, it is within its context. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-user-intent-node/" target="_blank">Learn more</a>.
-* **Use an existing Dialog Task** – This intent can be used over multiple dialogs. You can define the dialog as Sub Intent-only dialog and it can not be invoked by user utterance nor will it appear in the list of available tasks when the user says help. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-user-intent-node/" target="_blank">Learn more</a>.
+* **Add an Intent Node within the Dialog Task** – This intent is not available for any other dialog and since it is within the dialog, it is within its context. [Learn more](/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-user-intent-node/){target="_blank"}.
+* **Use an existing Dialog Task** – This intent can be used over multiple dialogs. You can define the dialog as Sub Intent-only dialog and it cannot be invoked by user utterance nor will it appear in the list of available tasks when the user says help. [Learn more](/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-dialog-node/){target="_blank"}.
 * **As linked Tasks** – The above two options are used when the sub intent is part of the dialog flow. For cases where the sub intent can be invoked by the user anywhere within the dialog, use the **Manage Sub Intents** and Exceptions option.
 
 ## Linked Task Exceptions 
@@ -38,7 +38,7 @@ To add exceptions to transition to a specific task, follow the steps:
 5. Define the **Hold and Resume settings** from the list of options below and click **Save**.
 6. The Manage Interruption Behavior page opens with the selected tasks listed under **Exceptions**.
 
-Click <a href=" https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/manage-interruptions/" target="_blank">here</a> to learn how to manage interruptions.
+Click [here](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/){target="_blank"} to learn how to manage interruptions.
 
 <img src="../images/add-exceptions.png" alt="add exceptions" title="add exceptions" style="border: 1px solid gray; zoom:75%;">
 

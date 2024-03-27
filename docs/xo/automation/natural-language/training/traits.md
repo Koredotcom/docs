@@ -48,7 +48,7 @@ The following key features can be leveraged when defining Traits:
 
 1. **Trait Type** is a collection of related traits like _Travel Class_ in the above example.
 
-    * Trait Type can be _ML Based_ or _Pattern Based_. Each trait of a trait type can be trained using words, phrases, utterances, or patterns based on the type. **Manage** Trait Type allows you to define the training configuration. Click [here](/docs/xo/automation/natural-language/training/traits/){:target="_blank"} for ML-based trait configuration.
+    * Trait Type can be _ML Based_ or _Pattern Based_. Each trait of a trait type can be trained using words, phrases, utterances, or patterns based on the type. **Manage** Trait Type allows you to define the training configuration. Click [here](/docs/xo/automation/natural-language/training/traits/#the-ml-model-for-traits){:target="_blank"} for ML-based trait configuration.
     * A _Trait Type_ can have one or more _Traits_.
     <img src="../images/trait-type-definition.png" alt="traits type definition" title="traits type definition" style="border: 1px solid gray; zoom:75%;">
 

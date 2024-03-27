@@ -32,7 +32,7 @@ To add an FAQ, follow the below steps:
 11. (Optional) Add a **Reference Id**. This field is used to reference any external content used as a source for this FAQ.
 <img src="../images/add-faq-form.png" alt="add faq form" title="add faq form" style="border: 1px solid gray; zoom:75%;">
 
-As you enter these questions, pay attention to terms that you can further add to your FAQ hierarchy. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-terminology/#terms-or-nodes" target="_blank">Learn more</a>.
+As you enter these questions, pay attention to terms that you can further add to your FAQ hierarchy. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-terminology/#terms-or-nodes" target="_blank">Learn more</a>.
 
 ## Manage Bot Responses
 
@@ -61,9 +61,9 @@ When the Knowledge Graph you are trying to build is large and complex, it's impo
 
 Adding FAQs from an existing source is the most effective method to implement in this case. The different ways to accomplish this include the following:
 
-* Use the Knowledge Graph Generator to generate Knowledge Graph from a FAQ list and import it to your VA. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/generate-a-knowledge-graph/" target="_blank">Learn more</a>.
-* Select the **Import** option to import a Knowledge Graph exported from another VA. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/import-and-export-knowledge-graph/#import" target="_blank">Learn more</a>.
-* Leverage an existing list of Q&As from **Knowledge Extraction** to populate the Questions and Responses. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-extraction/" target="_blank">Learn more</a>.
+* Use the Knowledge Graph Generator to generate Knowledge Graph from a FAQ list and import it to your VA. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/generate-a-knowledge-graph/" target="_blank">Learn more</a>.
+* Select the **Import** option to import a Knowledge Graph exported from another VA. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/import-and-export-knowledge-graph/#import" target="_blank">Learn more</a>.
+* Leverage an existing list of Q&As from **Knowledge Extraction** to populate the Questions and Responses. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-extraction/" target="_blank">Learn more</a>.
 
 ## Move FAQs Between Nodes
 

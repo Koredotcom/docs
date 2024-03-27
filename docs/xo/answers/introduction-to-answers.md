@@ -15,7 +15,7 @@ The answer-generation process mainly consists of the following steps.
 **<span style="text-decoration:underline;">Commonly Used Terms</span>**
 
 
-* **Chunking:**In the context of answers, Chunking is the process of segmenting large content units into smaller segments. The Answers module offers multiple chunking strategies for generating Answers. The choice of strategy depends on the format of the ingested content. 
+* **Chunking**: In the context of answers, Chunking is the process of segmenting large content units into smaller segments. The Answers module offers multiple chunking strategies for generating Answers. The choice of strategy depends on the format of the ingested content. 
 * **Chunking strategy**: Chunking Strategy refers to the rules used for chunk generation. 
     * Text-based chunking: This technique is based on the concept of tokenization. A fixed number of consecutive tokens are identified as one chunk, the next set of tokens as the next chunk, and so on.
     * Rule-based chunking: This technique uses the headers and content in a document to identify chunks. The header and the text between the header and the next header are treated as a chunk. 
