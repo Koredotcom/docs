@@ -1,11 +1,11 @@
-# **Create a Test Suite**
+# Create a Test Suite
 
 A Test Suite contains a collection of test cases grouped to simulate a specific conversation between the user and the bot and used anytime for test execution. You can know the execution status and determine and analyze the results in a test suite.
 
 In Conversation testing, you can create the test suites in the following two different ways:
 
-* [Record Conversation to Create a Test Suite](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/create-a-test-suite/#record-conversation-to-create-a-test-suite)
-* [Upload File to Create a Test Suite](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/create-a-test-suite/#upload-file-to-create-a-test-suite)
+* [Record Conversation to Create a Test Suite](#record-conversation-to-create-a-test-suite)
+* [Upload File to Create a Test Suite](#upload-file-to-create-a-test-suite)
 
 
 ## Record Conversation to Create a Test Suite
@@ -20,7 +20,7 @@ The option to record the test suite captures the metadata in the background whic
 <img src="../images/ct-create-test-suite-record1.png" alt="Start recording New Test" title="Start recording New Test" style="border: 1px solid gray;zoom:50%;"/>
 
 3. In the displayed pop-up, click **Proceed** to record the test with the On-Connect event or click the **Skip On-Connect** button.  
-<img src="../images/ct-create-test-suite-record2.png" alt="Recording Options" title="Recording Options" style="border: 1px solid gray;zoom:50%;"/>   
+<img src="../images/ct-create-test-suite-record2-window.png" alt="Recording Options" title="Recording Options" style="border: 1px solid gray;zoom:50%;"/>   
   
 **Note:** "On-Connect" is the message you receive as soon as you open the chat window, even before you enter any message. The option is displayed for VAs with an On-Connect message. If you skip it, the On-connect message does not get added as a test case. If you click Proceed, then the On-connect message is created as a separate test case.      
         
@@ -32,7 +32,7 @@ The option to record the test suite captures the metadata in the background whic
 
 #### Generated User Response Suggestions
 
-If you have enabled [LLM and Generative AI](https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/) for your Virtual Assistant, you will see User Response suggestions while recording a Conversation Test Case. 
+If you have enabled [LLM and Generative AI](../../../../../app-settings/generative-ai-tools/introduction/){:target="_blank"} for your Virtual Assistant, you will see User Response suggestions while recording a Conversation Test Case. 
 
 This feature provides a regression tool that creates a conversation test suite for each intent (new and old) to evaluate the impact of a change on the conversation execution. It helps check if the task or intent is robust enough to handle random user utterances. 
 
@@ -75,7 +75,7 @@ Using Conversation Testing, you can test the sequence of nodes executed by the V
 * Node ID, Node Name
 * Transition flow
 
-The metadata are captured in both [Record](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/create-a-test-suite/#record-conversation-to-create-a-test-suite) and [Upload](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/create-a-test-suite/#upload-file-to-create-a-test-suite) scenarios for all the VA responses of all the test suites. The details to be captured vary based on the intent type of the VA response. For more information on the details captured here, see [Test Editor](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/test-editor).
+The metadata are captured in both [Record](#record-conversation-to-create-a-test-suite) and [Upload](#upload-file-to-create-a-test-suite) scenarios for all the VA responses of all the test suites. The details to be captured vary based on the intent type of the VA response. For more information on the details captured here, see [Test Editor](../test-editor){:target="_blank"}.
 
 
 ### Create Test Suite
@@ -126,9 +126,9 @@ If an uploaded JSON file exceeds the configured size limit of 2 MB, an error is 
 
 The platform processes the uploaded file to simulate the conversation flow and capture all the metadata at each test case. When validating the test suite, there is an option to go back to Conversation testing while the test suite is being validated in the background.
 
-The steps to validate test suites are the same as in Record Test suite Flow. See [Validate Test Suite](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/create-a-test-suite/#validate-test-suite) for more information. To understand more about testing the sequence of nodes and capturing metadata, see Capture Test Suite Metadata under [Validate Test Suite](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/create-a-test-suite/#validate-test-suite).
+The steps to validate test suites are the same as in Record Test suite Flow. See [Validate Test Suite](#validate-test-suite) for more information. To understand more about testing the sequence of nodes and capturing metadata, see Capture Test Suite Metadata under [Validate Test Suite](#validate-test-suite).
 
 
 ### Create Test Suite
 
-The steps to create a test suite are the same as in Record Test suite Flow. See [Create Test Suite](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/create-a-test-suite/#create-test-suite) to know more.
+The steps to create a test suite are the same as in Record Test suite Flow. See [Create Test Suite](#create-test-suite) to know more.

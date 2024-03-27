@@ -1,4 +1,4 @@
-# **Manage Interruptions**
+# Manage Interruptions
 
 Human conversations are characterized by twists and turns, and no two directions are ever the same. Natural conversations often tend to go beyond linear intent resolution paths defined in virtual assistants. Ideally, a user allows the VA to take an intent to its logical conclusion before initiating another, but that is not always the case.
 
@@ -10,9 +10,11 @@ It includes an entity value for the assistant to proceed with the current intent
 
 VAs must account for this by allowing users to pause a task, start and complete another task, and seamlessly return to the original task without losing important contextual data and conversation continuity.
 
-Kore.ai provides you with granular control over hold and resume functionality at the VA, task, and node levels, and allows you to [control context switching](https://developer.kore.ai/docs/bots/bot-intelligence/context-management/) rules and behaviors. You can handle such interruptions in intent flows by providing a whole range of options to define the task-switching experience.
+Kore.ai provides granular control over the hold and resume functionality at the VA, task, and node levels, and allows you to [control context switching](/docs/xo/automation/intelligence/context-management){target="_blank"} rules and behaviors with the **Manage Interruptions** feature. You can handle such interruptions in intent flows by providing a whole range of options to select if and how a user can switch to another task, the exit strategies, and the task-switching experience.
 
-The **Manage Interruptions** options allow you to select if and how a user can switch to another task, as well as the exit strategies. It can be set up at the VA, task, and node levels to ensure the configurations are layered to suit your various business requirements. You can also add conditional exceptions between tasks with the ability to pass contextual data between them.
+Managing Interruptions ensures the configurations for interruptions are layered to suit your various business requirements. This includes allowing, disallowing, and letting the user manage interruptions. You can also add conditional exceptions between tasks with the ability to pass contextual data between them.
+
+Interruptions can be managed for FAQs, Small Talk, and Ambiguous intents on the UXO Platform.
 
 The following sections describe:
 
@@ -23,11 +25,11 @@ The following sections describe:
 
 Apart from defining the generic interruptions options at the VA level, you can customize these options at the dialog task or dialog node level. When you set up the Hold and Resume options in more than one levels, the order of precedence of the settings works as follows:
 
-1. Node level settings,
-2. Dialog task level settings,
-3. VA level settings.
+1. Node level settings
+2. Dialog task level settings
+3. VA level settings
 
-### Node Level Settings
+#### Node Level Settings
 
 You can customize the interruptions settings at the node level. If you customize the settings for a node, this configuration takes the highest precedence.
 
@@ -35,11 +37,11 @@ To customize the interruptions settings for a node:
 
 1. Open the dialog task and then the node to change settings.
 2. Click the **instance tab** and select **Advanced Controls**.
-3. Under the **Interruptions Behavior** section, select **Customize for this node** and make the necessary configurations. These configurations are the same as discussed above for the VA level [Interruptions Settings](https://multisite.korebots.com/bot-intelligence-bots/interruption-handling-context-switching-intents/#Interruptions).
+3. Under the **Interruptions Behavior** section, select **Customize for this node** and make the necessary configurations. These configurations are the same as discussed above for the VA level [interruptions](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/){target="_blank"}.
 
-<img src="../images/node-level-customization.gif" alt="node level customization" title="node level customization" style="border: 1px solid gray; zoom:65%;">
+   <img src="../images/node-level-customization.gif" alt="node level customization" title="node level customization" style="border: 1px solid gray; zoom:65%;">
 
-## Dialog Level Settings
+#### Dialog Level Settings
 
 The dialog level Interruptions customizations have higher priority over VA level settings but rank lower than the node level customizations or any exceptions.
 
@@ -49,7 +51,8 @@ To customize the Interruptions settings for a dialog:
 2. On the top-right of the dialog builder, click the **more options icon** and then click **Manage Interruptions**.
 <img src="../images/dialog-level-manage-interruptions.png" alt="node level customization" title="node level customization" style="border: 1px solid gray; zoom:75%;">
 
-3. Under the Interruptions Behavior section, select **Customize for this task** and make the necessary configurations. These settings are the same as discussed above for the Bot Level [Interruptions](https://developer.kore.ai/docs/bots/bot-intelligence/interruption-handling-context-switching-intents/#Allow_Interruptions).
+3. Under the Interruptions Behavior section, select **Customize for this task** and make the necessary configurations. These settings are the same as discussed above for the Bot Level [interruptions](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#allow-interruptions){target="_blank"}.
+
 <img src="../images/dialog-level-manage-interruptions.png" alt="dialog level manage interruptions" title="dialog level manage interruptions" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
@@ -57,12 +60,12 @@ To customize the Interruptions settings for a dialog:
 <p>If you do not customize Interruptions settings at the node or task level, the VA level settings apply.</p>
 </div>
 
-## Bot Level Settings
+#### Bot Level Settings
 
 The VA Level interruptions settings can be overridden at the task level as discussed above.
 
-You can access the interruption settings for your VA from under **Build > Intelligence > Manage Interruptions** page.
-<img src="../images/bot-level-settings-manageinterruptions.png" alt="bot level settings manage interruptions" title="bot level settings manage interruptions" style="border: 1px solid gray; zoom:75%;">
+You can access the interruption settings for your VA from under **Conversation Intelligence** > **Conversation Management** > **Manage Interruptions** page.
+<img src="../images/bot-level-settings-manageinterruptions-window-1.png" alt="bot level settings manage interruptions" title="bot level settings manage interruptions" style="border: 1px solid gray; zoom:75%;">
 
 The Platform provides options for _Interruptions Behavior_ under the following three categories:
 
@@ -75,7 +78,7 @@ The Platform provides options for _Interruptions Behavior_ under the following t
 <p>When the user provides input after a session has ended, i.e. after at least 15 minutes of inactivity, and if the input is within the previous session context, it is treated as an interruption scenario. If instead, the user comes back with a new utterance, then the old context is discarded and a new conversation is started.</p>
 </div>
 
-### Allow Interruptions
+##### Allow Interruptions
 
 Once you allow for task interruption, you need to specify the VA’s  behavior in such scenarios as what should happen to the current task, where should the conversation go once the interruption task has been completed, etc.
 
@@ -91,14 +94,13 @@ Following are the options under **Allow interruptions**.
   <tr>
    <td><strong>Hold the current task and resume back once the new task is completed</strong>
    </td>
-   <td>This option lets the assistant switch to a new intent as soon as it is detected irrespective of the current intent flow. When you select this option, the Resume Options section appears providing further choices to define how to resume the on-hold task once the new intent task is completed.  Refer to the <a href="https://developer.kore.ai/docs/bots/bot-intelligence/interruption-handling-context-switching-intents/#Resume_Options">Resume Options</a> section below for details.
+   <td>This option lets the assistant switch to a new intent as soon as it is detected irrespective of the current intent flow. When you select this option, the Resume Options section appears providing further choices to define how to resume the on-hold task once the new intent task is completed.  Refer to the <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#resume-options" target="_blank">Resume Options</a> section below for details.
    </td>
   </tr>
  <tr bgcolor="#FAFAFA">
    <td><strong>Discard the current task and switch to new</strong>
    </td>
-   <td>When you select this option, the VA discards the current task and switches to a new task soon after it encounters another intent. The VA sends a message to notify the user before switching to the new task and the current task would be discarded. You can customize the message from the <strong>Manage Response </strong>setting.
-   </td>
+   <td>When you select this option, the VA discards the current task and switches to a new task soon after it encounters another intent. The VA sends a message to notify the user before switching to the new task and the current task would be discarded. You can customize the response message by clicking <strong>Manage Response </strong> and setting the message for the <b>Notify the user that we have cancelled the current task to switch to another</b> option. In addition to the avalable responses, click <b>+ Add Response</b> to add a custom response text.</td>
   </tr>
   <tr>
    <td><strong>Switch to a new task without any notification to the user and discard the current task</strong>
@@ -107,25 +109,23 @@ Following are the options under **Allow interruptions**.
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
-   <td><strong>Continue with the current task and add a new task to the follow-up task list</strong>
+   <td><strong>Continue the current task and add new task to the follow-up task list.</strong>
    </td>
-   <td>When you select this option, the VA continues on the current task even if it encounters a new intent. It, however, adds the new intent to the Follow-up intents array. Refer to the <a href="https://developer.kore.ai/docs/bots/bot-intelligence/sub-intents-and-follow-up-intents/#Follow-up_Intents">Follow-up Intents</a> documentation for more information.
-   </td>
+   <td>When you select this option, the VA continues on the current task even if it encounters a new intent. It, however, adds the new intent to the Follow-up intents array. Refer to the <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/sub-intents-and-follow-up-intents/#follow-up-intents" target="_blank">Follow-up Intents</a> documentation for more information. You can customize the response message by clicking <strong>Manage Response </strong> and setting the message for the <b>Notify the user that we have cancelled the current task to switch to another</b> option. In addition to the avalable responses, click <b>+ Add Response</b> to add a custom response text.</td>
   </tr>
 </table>
 
+##### Do not allow interruptions
 
-### Do not allow interruptions
+When you select this option, the assistant-level **interruptions** are turned off. However, you may override this behavior for selected tasks, linked dialogs (exceptions), or node levels. Refer to the [Interruptions Hierarchy](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#interruptions-hierarchy){target="_blank"} section above for more information.
 
-When you select this option, the assistant-level **interruptions** are turned off. However, you may override this behavior for selected tasks, linked dialogs (exceptions), or node levels. Refer to the [Interruptions Hierarchy ](https://developer.kore.ai/docs/bots/bot-intelligence/interruption-handling-context-switching-intents/#Interruptions_Hierarchy)section above for more information.
-
-### Allow the end user to select the behavior
+##### Allow the end user to select the behavior
 
 When you select this option, the VA presents the end-user with a confirmation message asking if the user wants to switch to a new task. The VA switches to the new task only if the end-user chooses to do so. You can customize the confirmation message sent to the user by clicking the **Manage Response** link next to the option.
 
-You need to define a *Resume* option that the VA should take if the user decides to switch the task. Refer to the [Resume Options](https://developer.kore.ai/docs/bots/bot-intelligence/interruption-handling-context-switching-intents/#Resume_Options) section below for details.
+You need to define a *Resume* option that the VA should take if the user decides to switch the task. Refer to the [Resume Options](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#resume-options){target="_blank"} section below for details.
 
-### Resume Options
+##### Resume Options
 
 Once you allow the task to be put on hold and proceed with the interruption task, you must configure the _Resume_ option i.e. how the on-hold task should be handled once the interrupting task is completed.
 
@@ -224,55 +224,55 @@ In such cases, if you select this option, the assistant switches back to the tas
 </tr>
 </table>
 
-### On Hold Quantity
+##### On Hold Quantity
 
-You can select the number of tasks that you want to keep on hold from the **On Hold Quantity** field. The assistant keeps a maximum of this number of tasks on hold and ignores the tasks once this value is reached.
+You can select the number of tasks that you want to keep on hold from the **On Hold Quantity** field. The default value is <b>1</b>. The assistant keeps a maximum of this number of tasks on hold and ignores the tasks once this value is reached.
 
 For example, if you specify the On Hold Quantity as 1 and if a third intent comes into play, the VA will not allow the new task to be initiated regardless of interruptions options.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Tasks always resume in reverse chronological order. So, if you kept task 2 on hold after task 1, task 2 resumes before task 1.</p>
+<p><ul><li>Tasks always resume in reverse chronological order. So, if you kept task 2 on hold after task 1, task 2 resumes before task 1.</li>
+<li>We recommend only having one or two levels of tasks on hold to avoid confusion during user interaction.</li></ul></p>
 </div>
 
-### Manage Behavior for FAQs
+##### Manage Behavior for FAQs
 
 You can choose whether FAQs should honor the interruptions settings or if FAQs should be always responded to.
 
-<img src="../images/faq-interruption-behavior.png" alt="faq interruption behavior" title="faq interruption behavior" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/faq-interruption-behavior-window.png" alt="faq interruption behavior" title="faq interruption behavior" style="border: 1px solid gray; zoom:75%;">
 
 The flag **Interruption Behavior for FAQs** will allow you to:
 
-* Always identify and respond to FAQs when interruptions are enabled. This is the default setting.
-* Always identify FAQs when interruptions are enabled and proceed as per the Hold and Resume settings.
+* <b>Respond to FAQs and resume the on-hold task</b>: This is the default setting where first, the VA responds to the FAQs and then, resumes executing the task on hold.
+* <b>Execute the FAQs using Hold & Resume Settings</b>: The VA always identifies FAQs when interruptions are enabled and proceeds as per the Hold and Resume settings you've configured.
 
-### Manage Behavior for Ambiguous Intents
+##### Manage Behavior for Ambiguous Intents
 
 You can handle ambiguous intents during a conversation flow by setting the flag **Behavior for Ambiguous Interruptions**.
 
-<img src="../images/ambiguous-interruption-behavior.png" alt="ambiguous intent interruption behavior" title="ambiguous intent interruption behavior" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/ambiguous-interruption-behavior-window.png" alt="ambiguous intent interruption behavior" title="ambiguous intent interruption behavior" style="border: 1px solid gray; zoom:75%;">
 
-These settings allow you to:
+These settings allow you to do the following:
 
-* Present the ambiguous intents to the end-user and proceed as per the Hold and Resume Settings. In case the user selects a task and the interruptions setting is:
+* <b>Present the ambiguous intents to the end-user and proceed as per the <i>Hold and Resume</i> Settings</b>: Select this option in case the user selects a task and the interruptions setting is as follows:
     * _Continue the current task and add a new task to the follow-up task list_, then the current task will be kept on hold and the new task will be initiated.
     * _Allow the end-user to select the behavior_, then the new task will be initiated without asking the user since the selection has been already made.
     * All other _hold_ options will be applied as usual.
-* Do not present ambiguous intents to the end-users and continue on the current task. This is the default setting.
+* <b>Do not present ambiguous intents to the end users and continue on the current task</b>: This is the default setting where the VA continues with the current task without presenting the ambiguous intents to the user.
 
+##### Manage Behavior for Small Talk
 
-### Manage Behavior for Small Talk
+You can handle Small Talk during a conversation flow by setting the flag **Interruption Behavior for Small Talk**. 
 
-You can handle small talk during a conversation flow by setting the flag **Interruption Behavior for Small Talk**. 
-
-<img src="../images/smalltalk-interruption-behavior.png" alt="small talk interruption behavior" title="small talk interruption behavior" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/smalltalk-interruption-behavior-window.png" alt="small talk interruption behavior" title="small talk interruption behavior" style="border: 1px solid gray; zoom:75%;">
 
 These settings allow you to:
 
-* _Respond to Small Talk and resume the on-hold task_ – this is the default setting.
-* _Execute the Small Talk using Hold & Resume settings_.
+* <b>Respond to Small Talk and resume the on-hold task</b>: This is the default setting where the VA responds to the Small Talk message by putting the current task on hold. Then, the VA resumes the on-hold task.
+* <b>Execute the Small Talk using Hold & Resume settings</b>: Executes the Small Talk task based on your configurations for <b>Hold & Resume</b>.
 
-### Manage Behavior for User Authorization
+##### Manage Behavior for User Authorization
 
 When a user gives any input at a prompt message for authorization that is not relevant, the following flow is followed:
 

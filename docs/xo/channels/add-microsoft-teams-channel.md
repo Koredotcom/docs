@@ -1,4 +1,4 @@
-# **Adding the Microsoft Teams Channel**
+# Adding the Microsoft Teams Channel
 
 You can add Microsoft Teams as a delivery channel to your Kore.ai Virtual Assistant to allow it to interact with end-users using Microsoft Teams.
 
@@ -21,53 +21,54 @@ Create an Azure Bot and configure it on the Kore.ai XO Platform to establish a c
 2. Search and select **Azure Bot** on the page, and click **Create**.
 <img src="../images/MS_Team1.png" alt="Azure bot" title="Azure bot" style="border: 1px solid gray; zoom:70%;">
 
-3. Fill in the required details, select the **Multi Tenant **option in the **Type of App field** then click **Review + Create**.
+3. Fill in the required details, select the **Multi Tenant** option in the **Type of App field** then click **Review + Create**.
 <img src="../images/MS_Team2.png" alt="review create" title="review create" style="border: 1px solid gray; zoom:70%;">
-4. On the next page, review the details and check for the **Validation** status. Click **Create **to proceed.
+4. On the next page, review the details and check for the **Validation** status. Click **Create** to proceed.
 <img src="../images/MS_Team3.png" alt="app validation" title="app validation" style="border: 1px solid gray; zoom:70%;">
-5. Associate the Azure Bot with a **Microsoft App ID** and **Password**. You can choose the default option: **Auto create App Id and password**. You can also choose to** Create a new Microsoft App ID** or **Use existing app registration**. For more information, see [Microsoft Bot Framework documentation](https://docs.microsoft.com/en-gb/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-4.0#app-registration).
-<img src="../images/MS_Team4.png" alt="create app ID" title="create app ID" style="border: 1px solid gray; zoom:70%;">
+
+5. Associate the Azure Bot with a **Microsoft App ID** and **Password**. You can choose the default option: **Auto create App Id and password**. You can also choose to **Create a new Microsoft App ID** or **Use existing app registration**. For more information, see [Microsoft Bot Framework documentation](https://docs.microsoft.com/en-gb/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-4.0#app-registration).  <img src="../images/MS_Team4.png" alt="create app ID" title="create app ID" style="border: 1px solid gray; zoom:70%;">
+
 6. Once the deployment is completed, click **Go to resource** to view details of your resource.
 <img src="../images/MS_Team5.png" alt="view resource" title="view resource" style="border: 1px solid gray; zoom:70%;">
 
 
 !!! note
 
-         The platform supports both Single-Tenant and Multi-Tenant apps.
+    The platform supports both Single-Tenant and Multi-Tenant apps.
 
 ## Step 2: Configure the Resource App Id and Password
 
 Generate a new App Password and Client Secret to configure the Azure Bot on the Kore.ai XO Platform.
 
 
-1. On the **Configurations **tab, click the **Manage **option next to the **Microsoft App ID** field.
+1. On the **Configurations** tab, click the **Manage**  option next to the **Microsoft App ID** field.
 <img src="../images/MS_Team6.png" alt="Microsoft App ID" title="Microsoft App ID" style="border: 1px solid gray; zoom:70%;">
 
 2. Choose **Certificates & secrets** in the left navigation bar, and create a new client secret on the page:
     * Click the **+ New client secret** option.
-    * Provide the necessary details, and then click the **Add **option.
-3. Copy the **Value **of the new client secret and provide it in the **App Password** field present on the **Configurations **tab of the Kore.ai XO Platform. Refer Step 3: Enable Microsoft Teams Channel. \
+    * Provide the necessary details, and then click the **Add** option.
+3. Copy the **Value** of the new client secret and provide it in the **App Password** field present on the **Configurations** tab of the Kore.ai XO Platform. [Refer Step 3: Enable Microsoft Teams Channel.](#step-3-enable-microsoft-teams-channel) 
 <img src="../images/MS_Team7.png" alt="enable channel" title="enable channel" style="border: 1px solid gray; zoom:70%;">
 
-4. Close the** Certificates and secrets** section to return the **Configuration **section of the resource using the breadcrumbs.
+4. Close the **Certificates and secrets** section to return the **Configuration** section of the resource using the breadcrumbs.
 
 !!! note
 
-         Make a note of the Microsoft App Id in the Azure Bot configurations page and provide it in the Configuration tab of this window.
+    Make a note of the Microsoft App Id in the Azure Bot configurations page and provide it in the Configuration tab of this window.
 
 ## Step 3: Enable Microsoft Teams Channel
 
 Configure the MS Teams credentials on the Kore.ai XO Platform to establish communication between both.
 
 
-1. On the platform, select the assistant, and then go to the **Deploy **menu.
-2. Select the **Microsoft Teams** channel, click the **Configuration **tab, and then enter the following details:**Multi-Tenant Apps Configuration**
+1. On the platform, select the assistant, and then go to the **Channels & Flows** > **Channels** > **Digital** > **All** menu.
+2. Select the **Microsoft Teams** channel, click the **Configuration** tab, and then enter the following details: **Multi-Tenant Apps Configuration**
     * **Microsoft App ID** – The app ID of your Azure Bot resource.
     * **App Password** – The App password value that you find in the Certificates & Secrets page of the Azure bot.
     * **Enable Proactive Notifications (optional)** – Drag the slider to enable proactive notifications.
     * **Application (Client) ID** – The app ID of your Azure Bot resource.
     * **Client Secret** – The client secret value that you find on the Certificates & Secrets page of the Azure bot.
-    * **Delivery (tenant) ID **– The subscription ID that you can find on the Overview page of the Azure bot.
+    * **Delivery (tenant) ID** – The subscription ID that you can find on the Overview page of the Azure bot.
     <img src="../images/MS_Team8.png" alt="Multi tenant app" title="Multi tenant app" style="border: 1px solid gray; zoom:70%;">
 
 
@@ -94,7 +95,7 @@ Configure the MS Teams credentials on the Kore.ai XO Platform to establish commu
 
 !!! note
 
-         The Web Chat option of Bot Framework is not supported.
+    The Web Chat option of Bot Framework is not supported.
 
 ## Step 4: Publish Your Bot in Teams
 
@@ -104,10 +105,12 @@ To do so, create an MS Teams app, associate the bot with it, and then publish th
 
 
 1. [Log in](https://teams.microsoft.com/) to the MS Teams account with admin credentials.
-2. Click **Ellipsis […]** in the left navigation bar and then select the **Developer Portal** icon to launch the Apps builder.
-<img src="../images/MS_Team13.png" alt="developer portal" title="developer portal" style="border: 1px solid gray; zoom:70%;">
+
+2. Click **Ellipsis […]** in the left navigation bar and then select the **Developer Portal** icon to launch the Apps builder.  <img src="../images/MS_Team13.png" alt="developer portal" title="developer portal" style="border: 1px solid gray; zoom:70%;">
+
 3. On the **Developer Portal** page, select the **Apps** tab and then click the **New App** button.
 <img src="../images/MS_Team14.png" alt="new app" title="new app" style="border: 1px solid gray; zoom:70%;">
+
 4. On the **New App** dialog, enter a name for the app, copy and paste the App ID of your Azure Bot in the **App ID** field, and then click **Publish**.
 <img src="../images/MS_Team15.png" alt="app ID" title="app ID" style="border: 1px solid gray; zoom:70%;">
 
@@ -122,7 +125,7 @@ To do so, create an MS Teams app, associate the bot with it, and then publish th
 
 !!! note
 
-          The Developer Portal view is only available on the **Microsoft Teams Desktop** client.
+    The Developer Portal view is only available on the **Microsoft Teams Desktop** client.
 
 ## Step 5: Approve the MS Teams App Publish Request
 
@@ -135,7 +138,7 @@ If you want to send Proactive Notifications to your users, you need to perform a
 
 !!! note
 
-          You can skip the following sections and proceed to the Configurations tab if you do not intend to send Proactive Notifications.
+    You can skip the following sections and proceed to the Configurations tab if you do not intend to send Proactive Notifications.
 
 To enable Proactive Notifications, follow these steps:
 
@@ -147,7 +150,7 @@ To enable Proactive Notifications, follow these steps:
 
 4. On the More Services page, search and select the **App registrations**.
 <img src="../images/MS_Team21.png" alt="app registrations" title="app registrations" style="border: 1px solid gray; zoom:70%;">
-![app registrations](./images/MS_Team21.png "app registrations")
+
 
 5. On the App registrations page, click **New registration**.
 <img src="../images/MS_Team21_dup.png" alt="new registration" title="new registration" style="border: 1px solid gray; zoom:70%;">
@@ -165,7 +168,7 @@ To enable Proactive Notifications, follow these steps:
     * TeamsAppInstallation.ReadWriteForUser.All
     * User.Read.All
 
-    ![add permissions](./images/MS_Team24.png "add permissions")
+    ![add permissions](../images/MS_Team24.png "add permissions")
 
 10. Click on the **Grant admin consent** for > domain name> option to complete the granting of the permissions.
 11. Proceed to the **Certificates & secrets** section and select the **New client secret** option.
@@ -176,5 +179,6 @@ To enable Proactive Notifications, follow these steps:
 
 ### Related Links
 
-* Once the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available to end-users. Learn more about [Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
-* To learn more about working with Channels within the Kore.ai XO Platform, see[ Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

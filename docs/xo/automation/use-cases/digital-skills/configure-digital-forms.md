@@ -1,8 +1,8 @@
-# **Configure Digital Forms**
+# Configure Digital Forms
 
 In this How-To, we will explore a scenario in a Banking Bot, where the user can create an additional account. We will see how Digital Forms can be used to gather all the required information from the user and create the account.
 
-For details on what Digital Forms are and how it is implemented in the Kore.ai Bots platform, click [here](https://developer.kore.ai/docs/bots/bot-builder-tool/digital-forms/).
+For details on what Digital Forms are and how it is implemented in the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-forms/" target="_blank">here</a>.
 
 ## **Illustration with an Example**
 
@@ -174,7 +174,7 @@ We will be creating a dialog task and adding a form node to trigger the Digital 
 
     <img src="../../images/select-created-form.png" alt="select created form" title="select created form" style="border: 1px solid gray; zoom:75%;">
 
-7. You will be prompted to select the **Form Experience**. Kore.ai Bots platform allows you to gather user input both from the form and through conversation based on the channel.
+7. You will be prompted to select the **Form Experience**. XO Platform allows you to gather user input both from the form and through conversation based on the channel.
 8. For this use case, select _Only Form UI_ experience.
 9. A Form Node would be added, you can customize the form name, etc.
 10. We are changing the **Name** to _OpenAccountForm_ and **Display Name** to _Form to open account_.
@@ -191,7 +191,7 @@ Next, to capture the values returned by the Form Node using a Script node and di
 4. Select the **JavaScript** tab and enter the following code. This code would capture from the context object, the data submitted by the user in the Form and display it accordingly. 
 `var message;`
 
-```
+```js
 message = 'You have opened a '+context.forms.OpenAccount.accounttype+' account in the name of '+context.forms.OpenAccount.accountname;
 if (context.forms.OpenAccount.accounttype == 'Checkings' && context.forms.OpenAccount.cashcard == 'Yes')
   message = message + ' and opted for cash card with withdrawal limit set to '+ context.forms.OpenAccount.withdrawallimit;
@@ -207,4 +207,4 @@ Your dialog with form is ready! **Talk to bot** and trigger the above dialog. Th
 
 You can use the context object as shown above it a **Script** or **Service** nodes for further processing.
 
-Click [here](https://developer.kore.ai/docs/bots/how-tos/how-to-add-data-into-data-tables-from-digital-forms/) to learn how to add this data to a data table.
+Click <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-digital-skills/add-data-to-data-tables/" target="_blank">here</a> to learn how to add this data to a data table.

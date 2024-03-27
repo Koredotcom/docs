@@ -1,4 +1,4 @@
-# **Flow Health**
+# Flow Health
 
 
 ## Introduction 
@@ -16,10 +16,10 @@ You can also use the test result analysis to identify the issues in the dialog t
 
 In this article, the Hotel Booking virtual assistant is used as an example to understand the flow of transitions and test results analysis. The Hotel Booking VA has the _Search A Hotel_, _Book a Hotel, Get User Data, Show User Data, and Raise Complain_ dialog intents with various test cases in the test suites in the Conversation Testing module.
 
-A transition shows how a user intent is transferred from one node to another node in a dialog task. A transition is a flow of intent between two nodes. It has a **From** node and a **To** node.  For example, **“Book a Hotel”** is a user intent in a dialog task. A **city** is an entity node in the dialog flow to which the **book a hotel** user intent is transitioned, and then it transitions to the **state** node. From the **state** node, it transitions to **country** and **reservemessage** nodes. Therefore, in the **Book a Hotel** task, you have four transitions in total. For more information, see [User Intent](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-user-intent-node/).  
+A transition shows how a user intent is transferred from one node to another node in a dialog task. A transition is a flow of intent between two nodes. It has a **From** node and a **To** node.  For example, **“Book a Hotel”** is a user intent in a dialog task. A **city** is an entity node in the dialog flow to which the **book a hotel** user intent is transitioned, and then it transitions to the **state** node. From the **state** node, it transitions to **country** and **reservemessage** nodes. Therefore, in the **Book a Hotel** task, you have four transitions in total. For more information, see [User Intent](../../../../use-cases/dialogs/node-types/working-with-the-user-intent-node){:target="_blank"}.  
 <img src="../images/fh-img1.png" alt="Use case - book a hotel" title="Use case - book a hotel" style="border: 1px solid gray;zoom:50%;"/>
 
-Once you record a conversation flow, save it and run it in the _Conversation Testing_ module.  The conversation testing module helps in knowing how a dialog task performs. For example, if you have a **Get User Data** dialog task and want to see how this dialog task is performing, you can create a **Show User Data** test suite with various test cases. Run the **Show User Data** test suite and see whether it was completed _successfully_, _failed_, _paused_, or _not executed_. For more information, see the [Conversation Testing](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page/) article.
+Once you record a conversation flow, save it and run it in the _Conversation Testing_ module.  The conversation testing module helps in knowing how a dialog task performs. For example, if you have a **Get User Data** dialog task and want to see how this dialog task is performing, you can create a **Show User Data** test suite with various test cases. Run the **Show User Data** test suite and see whether it was completed _successfully_, _failed_, _paused_, or _not executed_. For more information, see the [Conversation Testing](../../conversation-testing/conversation-testing-landing-page/){:target="_blank"} article.
 
 The test suite results are tracked in the _Conversation Testing,_ and the analytics for test suites are displayed in the **Flow Health** dashboard.  
 
@@ -28,8 +28,8 @@ The test suite results are tracked in the _Conversation Testing,_ and the analyt
 
 To access the **Flow Health Dashboard**, follow these steps:
 
-1. Navigate to **BUILD** > **Testing > Health & Monitoring** and select the **Flow** tab.  
-<img src="../images/fh-img2.png" alt="Flow health dashboard" title="Flow health dashboard" style="border: 1px solid gray;zoom:50%;"/>
+1. Navigate to **Testing** > **Regression Testing** > **Health & Monitoring** and select the **Flow** tab.  
+<img src="../images/select-flow-tab.png" alt="Flow health dashboard" title="Flow health dashboard" style="border: 1px solid gray;zoom:50%;"/>
 
 2. Drill down to learn how to view the Dialog Intent, FAQ, and Small Talk summary sections. In these sections, you can view the intent level summaries, along with test coverage details to easily identify the transitions or intents to be covered. You can also expand to the test case results to view the execution analytics.  
   
@@ -44,9 +44,8 @@ View the overall percentage of the test case results in the test suites with the
 
   * **Pass** – Total Number of test cases passed across all test suites.
   * **Fail** – Total Number of Test cases failed across all test suites.
-  * **Not Executed** – Total Number of Test cases aborted or not executed before execution across all test suites.
-
-<img src="../images/fh-img3.png" alt="Flow Metrics" title="Flow Metrics" style="border: 1px solid gray;zoom:50%;"/>
+  * **Not Executed** – Total Number of Test cases aborted or not executed before execution across all test suites.  
+  <img src="../images/fh-img3.png" alt="Flow Metrics" title="Flow Metrics" style="border: 1px solid gray;zoom:50%;"/>
 
 
 1. Click the **View Test Suites** link to view all the test suites that are considered in the VA with the following details:
@@ -60,9 +59,6 @@ View the overall percentage of the test case results in the test suites with the
     8. **Pass percentage** – The overall pass percentage of the test cases.  
       
       <img src="../images/fh-img4.png" alt="View test suites" title="View test suites" style="border: 1px solid gray;zoom:50%;"/>
-
-
-
 
 2. Click the **Test Suite Name** to analyze how the test suite is performing. For example, click the **FAQ_TS_Pass** test suite to view the test results analysis as shown below:  
 <img src="../images/fh-img5.png" alt="View test results" title="View test results" style="border: 1px solid gray;zoom:50%;"/>
@@ -105,26 +101,23 @@ The percentage of transitions coverage is displayed as follows:
 
 <img src="../images/fh-img9.png" alt="Transition Coverage" title="Transition Coverage" style="border: 1px solid gray;zoom:50%;"/>
 
-
-
 1. Click the <img src="../images/fh-tilda-icon.png"> icon beside the percentages to open the Dialog Transitions page and view the following details:
 
     1. **Task Name** – The name of the dialog intent. 
     2. **From Node** – The **From** node where the conversation starts to transition.
     3. **To Node** – The **To** node from where the conversation is transferred to.
     4. **Status** – The **Status** of the transition  – covered or not covered.  
-        
     <img src="../images/fh-img10.png" alt="Dialog Transition" title="Dialog Transition" style="border: 1px solid gray;zoom:50%;"/>
 
 2. Click the <img src="../images/fh-tilda-icon.png"> icon beside **Not Covered** percentage to view missed transitions.  
-<img src="../images/fh-img11.png" alt="Missed Transitions" title="Missed Transitions" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/coverage-status.png" alt="Missed Transitions" title="Missed Transitions" style="border: 1px solid gray;zoom:50%;"/>
 
-3. Create a new test suite and record missed transitions to cover them. For more information, see [Conversation Testing](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page/).
+3. Create a new test suite and record missed transitions to cover them. For more information, see [Conversation Testing](../../conversation-testing/conversation-testing-landing-page/){:target="_blank"}.
 
 4. Click the <img src="../images/fh-down-icon.png"> icon to search and filter the dialog intent tasks for which you want to see the transitions coverage. You can filter transitions using the _From Node_, _To Node,_ and _Coverage Status_ filters.  
 
     For example, in the **Status Coverage** column, click the to select _all_, _covered_, and _not covered_ statuses, as shown below:  
-<img src="../images/fh-img12.png" alt="Filter Dialog Intent tasks" title="Filter Dialog intent tasks" style="border: 1px solid gray;zoom:50%;"/>
+    <img src="../images/fh-img12.png" alt="Filter Dialog Intent tasks" title="Filter Dialog intent tasks" style="border: 1px solid gray;zoom:50%;"/>
 
 5. Click the **X** icon to close the Dialog Transitions window.
 
@@ -137,8 +130,7 @@ The percentage of test results analysis is displayed as follows:
 
   * **Total Test Cases** – Shows the total number of test cases in a test suite.
   * **Pass, Fail, or Not Executed** – Shows the count and percentage of test case results that have passed, failed, or not executed.  
-
-    <img src="../images/fh-img13.png" alt="Conversation test result analysis" title="Conversation test result analysis" style="border: 1px solid gray;zoom:50%;"/>
+  <img src="../images/fh-img13.png" alt="Conversation test result analysis" title="Conversation test result analysis" style="border: 1px solid gray;zoom:50%;"/>
 
 
 ### View Intent Summary
@@ -169,7 +161,7 @@ To view the intent summary and identify the issues, follow these steps:
 3. In this test suite, the test case1 has failed because it has an incorrect data type selected for the **Date** field as shown below:  
 <img src="../images/fh-img19.png" alt="Sample execution result" title="Sample execution result" style="border: 1px solid gray;zoom:50%;"/>
 
-4. Text assertion fails because there is a mismatch between the _Expected_ and _Actual_ output. For more information, see [Test Case Assertion](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/test-case-assertion). 
+4. Text assertion fails because there is a mismatch between the _Expected_ and _Actual_ output. For more information, see [Test Case Assertion](../../conversation-testing/test-case-assertion){:target="_blank"}. 
 
 5. Click the **X** icon to close the Intent Details window.
 
@@ -187,7 +179,7 @@ Click **View Intent Summary** to get a drill-down view of the FAQ Intents that a
 This window gives the drill-down view of the FAQ-level details for the selected test suite. The primary objective here is to help users know the top-performing and low-performing FAQs to identify issues proactively and work on fixing them accordingly.  
 <img src="../images/fh-img21.png" alt="FAQ intent details" title="FAQ intent details" style="border: 1px solid gray;zoom:50%;"/>
 
-For more information, see [View Intent Summary](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/health-and-monitoring/flow-health-dashboard/#view-intent-summary) section.
+For more information, see [View Intent Summary](#view-intent-summary) section.
 
   * **Intent Name**: The name of the dialog intent.
   * **Path**: The node path in the Knowledge Graph.
@@ -210,7 +202,7 @@ The **Small Talk Summary** section displays the Small Talks Coverage and Convers
 Click **View Intent Summary** to view the **Small Talk Details** window that gives the drill-down view of the Small Talk level details for the selected test suite. The primary objective here is to help users know the top-performing and low-performing intents to identify issues proactively and fix them accordingly.  
 <img src="../images/fh-img23.png" alt="Small talk intent details" title="Small talk intent details" style="border: 1px solid gray;zoom:50%;"/>
 
-For more information, see [View Intent Summary](https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/health-and-monitoring/flow-health-dashboard/#view-intent-summary) section.
+For more information, see [View Intent Summary](#view-intent-summary) section.
 
   * **Intent Name**: The intent name captured in the Small Talk interaction.
   * **Group**: The group to which the Small Talk interaction is mapped.

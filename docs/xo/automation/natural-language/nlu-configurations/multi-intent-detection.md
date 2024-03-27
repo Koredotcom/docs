@@ -1,4 +1,4 @@
-# **Multi-Intent Detection**
+# Multi-Intent Detection
 
 Kore.ai’s NLP engine breaks conversations down to their essence, identifies and follows-up on multiple action items, or intents, from a single message. The virtual assistant can then execute tasks in a sequential and logical manner.
 
@@ -21,10 +21,7 @@ If a task fails to get executed, then the Platform will not initiate the subsequ
 
 Following are the steps to enable multi-intent detection:
 
-
-
 1. Open the VA for which you want to add multiple intents.
-2. Select the **Build** tab from the top menu.
-3. From the left menu, click **Intelligence **>** Multi Intent Detection**.
-4. Turn on the toggle to enable it.
-<img src="../images/multi-intent-detection-toggle.png" alt="amend hidden entities" title="amend hidden entities" style="border: 1px solid gray; zoom:75%;">
+2. From the left menu, click **Natural Language** > **NLU Config** > **Multi Intent Detection**.
+3. Turn on the toggle to enable it.
+<img src="../images/multi-intent-detection-toggle-window.png" alt="amend hidden entities" title="amend hidden entities" style="border: 1px solid gray; zoom:75%;">

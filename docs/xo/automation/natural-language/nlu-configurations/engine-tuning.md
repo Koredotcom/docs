@@ -1,23 +1,22 @@
-# **NLP Engine Tuning and Advanced Configurations**
-
+# Advanced NLP Configurations
 You can fine-tune intent detection for each language enabled for your Virtual Assistant (VA). To perform this action, follow the below steps:
 
-1. On the left pane, click **Natural Language** > **Training** > **Thresholds & Configurations**.
-2. Under the **Thresholds & Configurations** section, you can perform by customizing
-    * The Fundamental Meaning model – [Learn more.](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#config)
-    * Machine Learning model – [Learn more.](https://developer.kore.ai/docs/bots/nlp/user-utterances/#Threshold_Configurations)
-    * Knowledge Graph – [Learn more.](https://developer.kore.ai/docs/bots/nlp/knowledge-graph/#Threshold_Configurations)
-    * Ranking & Resolver engine – [Learn more.](https://developer.kore.ai/docs/bots/nlp/nlp-detection/#Thresholds_Configuration)
+1. On the left pane, click **Natural Language** > **NLU Config**.
+2. In the **Engine Tuning** section, you can perform engine tuning by customizing
+    * The Fundamental Meaning model – [Learn more](/docs/xo/automation/natural-language/training/fundamental-meaning/#thresholds-configurations){target="_blank"}.
+    * Machine Learning model – [Learn more](/docs/xo/automation/natural-language/training/machine-learning-engine/#thresholds-configurations){target="_blank"}.
+    * Knowledge Graph – [Learn more](/docs/xo/automation/knowledge-ai/knowledge-graph-training/#thresholds-configurations){target="_blank"}.
+    * Ranking & Resolver engine – [Learn more](/docs/xo/automation/natural-language/training/ranking-and-resolver/#thresholds-configuration){target="_blank"}.
 
 Apart from these, under the **Advanced NLP Configurations** section, there are advanced settings that you can use for specific use cases and requirements.
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The default settings for these configurations are ideal for most use cases. Do not change these settings unless you are fully acquainted with the functionality you are setting, as they might have a detrimental effect on the VA's performance if not done properly.</p>
-</div>
-<img src="../images/thresholds-advanced-nlu.png" alt="thresholds advanced nlu" title="thresholds advanced nlu" style="border: 1px solid gray; zoom:75%;">
+!!! Warning
 
-The following table gives the details of the various configurations that can be set from this section. Apart from these you can add Custom configurations, reach out to our [support team](https://support.kore.ai/hc/en-us/) to know how.
+      The default settings for these configurations are ideal for most use cases. Do not change these settings unless you are fully acquainted with the functionality you are setting, as they might have a detrimental effect on the VA's performance if not done properly.
+
+<img src="../images/advanced-nlu-configurations.png" alt="thresholds advanced nlu" title="thresholds advanced nlu" style="border: 1px solid gray; zoom:75%;">
+
+The following table gives the details of the various configurations that can be set from this section. Apart from these you can add Custom configurations.
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">
@@ -33,341 +32,341 @@ The following table gives the details of the various configurations that can be 
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Split_Compound_Words">Split Compound</a>
-<p>
-<a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Split_Compound_Words">Words</a>
+   <td><a href="#split-compound-words">Split Compound</a>
+<br>
+<a href="#split-compound-words">Words</a> 
    </td>
    <td>The setting
-<p>
+<br>
 enables the
-<p>
+<br>
 splitting of the
-<p>
+<br>
 compound words
-<p>
+<br>
 into multiple
-<p>
+<br>
 stems and then
-<p>
+<br>
 processing the
-<p>
+<br>
 individual stem.
    </td>
    <td>ML
    </td>
-   <td>Enable,¶
-<p>
+   <td>Enable,
+<br>
 Disable
-<p>
+<br>
 (default)
    </td>
    <td>Supported only for assistants in the
-<p>
+<br>
 German language
    </td>
   </tr>
   <tr bgcolor="#FAFAFA">
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#None_Intent">None Intent</a>
+   <td><a href="#none-intent">None Intent</a> 
    </td>
    <td>Once enabled, a dummy, placeholder intent is created which reduces the chances of getting a false positive for an intent match using the ML engine.
    </td>
    <td>ML
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#epochs">Epochs</a>
+   <td><a href="#epochs">Epochs</a>
    </td>
    <td>Number iterations for training the neural network.
    </td>
    <td>ML
    </td>
    <td>Between 20 and 300,
-<p>
+<br>
 increments of 10
-<p>
+<br>
 (default setting 20)
    </td>
    <td>Valid only when Network Type is set to MLP-BOW,
-<p>
+<br>
 MLP-WordEmbeddings,
-<p>
+<br>
 LSTM,
-<p>
+<br>
 CNN
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#batch_size">Batch Size</a>
+   <td><a href="#batch-size">Batch Size</a>
    </td>
    <td>Number of training samples used for each batch while training
    </td>
    <td>ML
    </td>
    <td>Between 10 and 30,
-<p>
+<br>
 increments of 5
-<p>
+<br>
 (default setting 10)
    </td>
    <td>Valid only when Network Type is set to MLP-BOW,
-<p>
+<br>
 MLP-WordEmbeddings,
-<p>
+<br>
 LSTM,
-<p>
+<br>
 CNN
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#learning_rate">Learning rate</a>
+   <td><a href="#learning-rate">Learning rate</a>
    </td>
    <td>A hyper-parameter to control how much the weights of the network are adjusted with respect to the loss gradient
    </td>
    <td>ML
    </td>
    <td>Between 1e-4 and 1e-3,
-<p>
+<br>
 increments of 1e-2
-<p>
+<br>
 (default setting 1.00E-03)
    </td>
    <td>Valid only when Network Type is set to MLP-BOW,
-<p>
+<br>
 MLP-WordEmbeddings,
-<p>
+<br>
 LSTM,
-<p>
+<br>
 CNN
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#dropout">Dropout</a>
+   <td><a href="#dropout">Dropout</a>
    </td>
    <td>Regularization parameter to avoid overfitting of the model
    </td>
    <td>ML
    </td>
    <td>Between 0 and 0.8,
-<p>
+<br>
 increments of 0.1
-<p>
+<br>
 (default setting 0)
    </td>
    <td>Valid only when Network Type is set to MLP-BOW,
-<p>
+<br>
 MLP-WordEmbeddings,
-<p>
+<br>
 LSTM,
-<p>
+<br>
 CNN
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#vectorizer">Vectorizer</a>
+   <td><a href="#vectorizer">Vectorizer</a>
    </td>
    <td>Feature extraction technique on training data
    </td>
    <td>ML
    </td>
    <td>count (default),
-<p>
+<br>
 tfidf
    </td>
    <td>Valid only when Network Type is set to MLP-BOW
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#max_seq_len">Maximum sequence length</a>
+   <td><a href="#maximum-sequence-length">Maximum sequence length</a>
    </td>
    <td>Length of the training sample or user input
    </td>
    <td>ML
    </td>
    <td>Between 10 and 30,
-<p>
+<br>
 increments of 5
-<p>
+<br>
 (default setting 20)
    </td>
    <td>Valid only when Network Type is set to MLP-WordEmbeddings,
-<p>
+<br>
 LSTM,
-<p>
+<br>
 CNN
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#embed_type">Embeddings Type</a>
+   <td><a href="#embeddings-type">Embeddings Type</a>
    </td>
    <td>Feature extraction technique on training data
    </td>
    <td>ML
    </td>
    <td>generated,
-<p>
+<br>
 random (default)
    </td>
    <td>Valid only when Network Type is set to MLP-WordEmbeddings,
-<p>
+<br>
 LSTM,
-<p>
+<br>
 CNN
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#embed_dim">Embeddings Dimensions</a>
+   <td><a href="#embeddings-dimensions">Embeddings Dimensions</a>
    </td>
    <td>Embeddings Dimensions to be used in featurization
    </td>
    <td>ML
    </td>
    <td>Between 100 and 400,
-<p>
+<br>
 increments of 50
-<p>
+<br>
 (default setting 300)
    </td>
    <td>Valid only when Network Type is set to MLP-WordEmbeddings,
-<p>
+<br>
 LSTM,
-<p>
+<br>
 CNN
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#K_Fold_Cross-Validation">K Fold</a>
+   <td><a href="#k-fold-cross-validation">K Fold</a>
    </td>
    <td>kfold parameter for Cross-validation
    </td>
    <td>ML
    </td>
    <td>Between 2 and 10,
-<p>
+<br>
 increments of 1
-<p>
+<br>
 (default setting 2)
    </td>
    <td>
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Fuzzy_Match">Fuzzy Match</a>
+   <td><a href="#fuzzy-match">Fuzzy Match</a>
    </td>
    <td>This setting enables the use of the fuzzy matching algorithm for intent identification
    </td>
    <td>ML
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Negation_Handling">Handle Negation</a>
+   <td><a href="#negation-handling">Handle Negation</a>
    </td>
    <td>This setting enables the handling of negated words in intent identification
    </td>
    <td>ML
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Ignore_Multiple_Occurences">Ignore Multiple Occurences</a>
+   <td><a href="#ignore-multiple-occurrences">Ignore Multiple Occurrences</a>
    </td>
    <td>Once enabled, the frequency of the words are disregarded for vectorization
    </td>
    <td>ML
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>Valid only when Network Type is set to MLP-BOW
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Entity_Placeholders_in_User_Utterances">Entity Placeholders in User Utterances</a>
+   <td><a href="#entity-placeholders-in-user-utterances">Entity Placeholders in User Utterances</a>
    </td>
    <td>Enable to replace entities present in user utterances with corresponding placeholders
    </td>
    <td>ML
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>Valid only when Network Type is set to MLP-BOW
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Sentence_Split">Sentence Split</a>
+   <td><a href="#sentence-split">Sentence Split</a>
    </td>
    <td>Split the sentences in user utterance and perform intent detection using the complete user input
    </td>
    <td>ML
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Multiple_Intent_Model">Multiple Intent Models</a>
+   <td><a href="#multiple-intent-model">Multiple Intent Models</a>
    </td>
    <td>Enable separate ML models for each of the primary intents constituting all its sub-intents
    </td>
    <td>ML
    </td>
    <td>Enable,
-<p>
+<br>
 Disable (default)
    </td>
    <td>
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#h_9700419902871664469022322">Lemmatize KG</a>
-<p>
-<a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#h_9700419902871664469022322">Synonyms</a>
+   <td><a href="#lemmatization-of-kg-synonyms">Lemmatize KG</a>
+<br>
+<a href="#lemmatization-of-kg-synonyms">Synonyms</a>
    </td>
    <td>Enable to use
-<p>
+<br>
 the lemmatized
-<p>
+<br>
 versions of KG
-<p>
+<br>
 Synonyms to
-<p>
+<br>
 detect intents.
    </td>
    <td>KG
    </td>
    <td>Enable
-<p>
+<br>
 (default),
-<p>
+<br>
 Disable.
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Use_only_Tagged_Utterances_for_NER_Training">Use only Tagged Utterances for NER Training</a>
+   <td><a href="#use-only-tagged-utterances-for-ner-training">Use only Tagged Utterances for NER Training</a>
    </td>
    <td>Uses only the Tagged Utterances for Named Entity Recognition (NER) Training. When enabled, the ML Engine uses the utterances with one or more NER tags, to train the NER model for entity detection.
    </td>
@@ -379,7 +378,7 @@ Disable.
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Neurons_in_Hidden_Layer">Neurons in Hidden Layer</a>
+   <td><a href="#neurons-in-hidden-layer">Neurons in Hidden Layer</a>
    </td>
    <td>Used to configure the number of Neurons used in the Hidden Layer
    </td>
@@ -391,7 +390,7 @@ Disable.
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Softmax_Temperature">Softmax Temperature</a>
+   <td><a href="#softmax-temperature">Softmax Temperature</a>
    </td>
    <td>Use to define how confidently the ML Engine should identify the winning intent from the ML Model. Temperature is a hyperparameter that is applied to logits(Model outputs) to affect the final probabilities from the softmax.
    </td>
@@ -403,195 +402,210 @@ Disable.
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Spell_Correction_in_ML">Spell Correction for ML</a>
+   <td><a href="#spell-correction-in-ml">Spell Correction in ML</a>
    </td>
    <td>Enable to support spell correction on the ML bot dictionary while predicting.
    </td>
    <td>Custom (ML)
    </td>
    <td>Enable,
-<p>
+<br>
 Disable (default)
    </td>
    <td>Applicable only for English language VAs.
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Intent_Elimination_Rules">Intent Elimination Rules</a>
+<td><a href="#spell-correction-version">Spell Correction Version</a></td>
+<td>Use this configuration to select the version of Spell Correction for the VA.</td>
+<td>NA</td>
+<td>Version 1,<br>
+Version 2</td>
+<td>Applicable only for English language VAs. The spell-corrected input is used by all the engines for further processing</td>
+</tr>
+<tr>
+<td><a href="#spell-correction-status">Spell Correction Status</a></td>
+<td>Use this configuration to set the status of Spell Correction for the VA.</td>
+<td>NA</td>
+<td>Enable,<br> Disable</td>
+<td>Applicable only for English language VAs. The spell-corrected input is used by all the engines for further processing</td>
+</tr>
+  <tr>
+   <td><a href="#intent-elimination-rules">Intent Elimination Rules</a>
    </td>
    <td>Enable to apply prebuilt rules to eliminate intent matches.
    </td>
    <td>RR
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>Applicable only for English, Spanish, French, and German language VAs.
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Cosine_Similarity_Dampening">Cosine similarity dampening</a>
+   <td><a href="#cosine-similarity-dampening">Cosine similarity dampening</a>
    </td>
    <td>Avoid penalty on short length questions using Cosine Similarity Dampening
    </td>
    <td>KG
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#FAQ_Name_as_Intent_Name">FAQ Name as Intent Name</a>
+   <td><a href="#faq-name-as-intent-name">FAQ Name as Intent Name</a>
    </td>
    <td>To use the Primary Question of the FAQ as the intent name even when the FAQ is linked to a Dialog
    </td>
    <td>KG
    </td>
    <td>Enable,
-<p>
+<br>
 Disable (default)
    </td>
    <td>
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#FAQs_Order">FAQs Order for Disambiguation</a>
+   <td><a href="#faqs-order">FAQs Order for Disambiguation</a>
    </td>
    <td>Configure the order in which the FAQs are to be presented for resolving the ambiguity
    </td>
    <td>KG
    </td>
    <td>Order by Hierarchy,
-<p>
+<br>
 Default Order (default)
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Auto_qualify_FAQs">Auto qualify FAQs from fully matched Paths</a>
+   <td><a href="#auto-qualify-faqs">Auto qualify FAQs from fully matched Paths</a>
    </td>
    <td>Automatically qualify all FAQs from the path if the path is fully matched even if no question from that path has matched the user query.
    </td>
    <td>KG
    </td>
    <td>Enable,
-<p>
+<br>
 Disable (default)
    </td>
    <td>
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Taxonomy_based_KG">Taxonomy based KG</a>
+   <td><a href="#taxonomy-based-kg">Taxonomy based KG</a>
    </td>
    <td>Enable this option if only a full match of all the terms in the path should be considered as a path qualification.
    </td>
    <td>Custom
-<p>
+<br>
 (KG)
    </td>
    <td>Enable,
-<p>
+<br>
 Disable (default)
    </td>
    <td>
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Default_Maximum_Wildcards_for_Intent_Patterns">Default Max. Wildcards for Intent Patterns</a>
+   <td><a href="#default-maximum-wildcards-for-intent-patterns">Default Max. Wildcards for Intent Patterns</a>
    </td>
    <td>Use this option to define the maximum number of wildcards to be allowed by default between words for intent patterns. This does not limit you from explicitly writing patterns containing more wildcards.
    </td>
    <td>FM
    </td>
    <td>any number from 0-9;
-<p>
+<br>
 set to 3 by default
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Maximum_Allowed_Wildcards_in_Entity_Patterns">Default Max. Wildcards for Entity Patterns</a>
+   <td><a href="#maximum-allowed-wildcards-in-entity-patterns">Default Max. Wildcards for Entity Patterns</a>
    </td>
    <td>Use this option to define the maximum number of wildcards to be allowed by default between words for entity patterns. This does not limit you from explicitly writing patterns containing more wildcards.
    </td>
    <td>FM
    </td>
    <td>any number from 0-5;
-<p>
+<br>
 set to 2 by default
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Intent_Pattern_Matching_Order">Matching Order of Intent Patterns</a>
+   <td><a href="#intent-pattern-matching-order">Matching Order of Intent Patterns</a>
    </td>
    <td>Choose whether to pick the first pattern match of the intent (as per the order in which patterns are defined) or to go through all the patterns defined for the intent and find the best one.
    </td>
    <td>FM
    </td>
    <td>First (default),
-<p>
+<br>
 Best
    </td>
    <td>
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Grading_of_Pattern_Matches">Grading of Pattern Matches</a>
+   <td><a href="#grading-of-pattern-matches">Grading of Pattern Matches</a>
    </td>
    <td>Choose whether the Pattern Matches should be classified as Probable matches, based on the number of wildcards present in the user input when compared to the pattern definition.
    </td>
    <td>FM
    </td>
    <td> any number from 0-9;
-<p>
+<br>
 set to 3 by default
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Precedence_Intents">Precedence for Intents with Ambiguous Entities</a>
+   <td><a href="#precedence-for-intents-with-ambiguous-entities">Precedence for Intents with Ambiguous Entities</a>
    </td>
    <td>Enable to Use Precedence, Intent Over Entity, or Entity Over Intent options for intents with ambiguous entities.</td>
    <td>FM</td>
    <td>Enable
-<p>Disable (default)</p>
+<br>Disable (default)</p>
 </td>
 <td>
    </td>
   </tr>
    <tr bgcolor="#FAFAFA">
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Prefer_Only_the_First_Pattern_Match_in_a_Sentence">Prefer Only the First Pattern Match in a Sentence</a>
+   <td><a href="#prefer-only-the-first-pattern-match-in-a-sentence">Prefer Only the First Pattern Match in a Sentence</a>
    </td>
    <td>Choose whether to prefer only the first pattern match from a sentence or to pick all the pattern matches in a sentence, when multiple patterns are matched in a single sentence
    </td>
    <td>FM
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.kore.ai/docs/bots/nlp/advanced-nlp-configurations/#Exact_Task_Name_Match">Exact Task Name Match</a>
+   <td><a href="#exact-task-name-match">Exact Task Name Match</a>
    </td>
    <td>Choose whether the system should auto-generate the strict pattern when ‘Intent Detection using Task Name Words’ is Disabled.
    </td>
    <td>FM
    </td>
    <td>Enable (default),
-<p>
+<br>
 Disable
    </td>
    <td>
@@ -613,11 +627,11 @@ This configuration is employed to specify how compound words should be handled. 
 
 The Machine Learning (ML) engine is responsible for analyzing and assessing user inputs to construct and refine a model. The ML model's primary goal is to categorize user inputs into predefined intents for which it has been trained. Nonetheless, when confronted with out-of-context utterances, the ML system may erroneously attempt to associate them with the incorrect intent.
 
-To address this issue, you can prevent misclassifications by activating the **None Intent** option in the **Training** > **Thresholds & Configurations** section for various languages. The **None intent** serves as a temporary category that safeguards against the ML model assigning untrained or ambiguous utterances to inappropriate intents. This safeguard is enabled by default for newly created virtual assistants.
+To address this issue, you can prevent misclassifications by activating the **None Intent** option in the **Natural Language** > **NLU Config** > **Engine Tuning** > **Machine Learning** section for various languages. The **None intent** serves as a temporary category that safeguards against the ML model assigning untrained or ambiguous utterances to inappropriate intents. This safeguard is enabled by default for newly created virtual assistants.
 
 For example, for an Airlines VA, an Intent “Book Flight Ticket” is mapped. If a customer requests to “Book a Movie Ticket” the ML tries to associate the closest intent “Book Flight Ticket” (wrong intent) as the successful intent and triggers it. This error can be eliminated by enabling the None intent.
 
-Adding an extra _None_ _Intent_ ensures classifying random input to these intents in the VA. Once enabled, the ML Model is tuned to identify these none intents when a user utterance contains the words that are not used in the VA’s training. i.e., bot vocabulary. You can define the None Intent for the Linked Bots in a Universal Bot. For more information, see [Creating a Universal Bot](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/creating-a-universal-bot/#Step_3_Training) article.
+Adding an extra _None_ _Intent_ ensures classifying random input to these intents in the VA. Once enabled, the ML Model is tuned to identify these none intents when a user utterance contains the words that are not used in the VA’s training. i.e., bot vocabulary. You can define the None Intent for the Linked Bots in a Universal Bot. For more information, see [Creating a Universal Bot](/docs/xo/universal-bots/creating-a-universal-bot/){:target="_blank"} article.
 
 ### Externalization of the ML Engine
 
@@ -627,7 +641,7 @@ Hyperparameters offer the means to further tailor the behavior of your Virtual A
 
 #### Network Type
 
-You can choose the Neural Network that you want to use. This setting is moved to the Machine Learning section post v8.1. [Learn more](https://developer.kore.ai/docs/bots/nlp/user-utterances/#Threshold_Configurations).
+You can choose the Neural Network that you want to use. This setting is moved to the Machine Learning section post v8.1. [Learn more](/docs/xo/automation/natural-language/training/machine-learning-engine/#network-type){:target="_blank"}.
 
 #### Epochs
 
@@ -675,7 +689,7 @@ The embedding dimension defines the size of the embedding vector. If the word em
 
 ### K Fold Cross-Validation
 
-Cross-validation is a resampling technique employed to assess the performance of machine learning models when working with a restricted data sample. This process involves a key parameter known as "**k**," which signifies the number of partitions into which the data sample is divided. This configuration provides you with the capability to adjust and set the value of the parameter "**k**." [Learn more](https://developer.kore.ai/docs/bots/nlp/ml-model/) for more on cross-validation.
+Cross-validation is a resampling technique employed to assess the performance of machine learning models when working with a restricted data sample. This process involves a key parameter known as "**k**," which signifies the number of partitions into which the data sample is divided. This configuration provides you with the capability to adjust and set the value of the parameter "**k**." <a href="#k-fold-cross-validation" target="_blank">Learn more</a>  for more on cross-validation.
 
 ### Fuzzy Match
 
@@ -705,7 +719,7 @@ Disabling this configuration sends the original user input to ML for intent iden
 
 ### Multiple Intent Model
 
-Enabling this feature creates multiple ML intent models for your VA. All the Primary Dialog Intents will be part of the Bot Level Intent Model. Separate Dialog Level ML Models are created for each of the other Dialog Tasks and Sub Dialog Tasks, consisting of all the sub-intents used in the respective task definition. [Learn more](https://developer.kore.ai/docs/bots/nlp/user-utterances/#Threshold_Configurations).
+Enabling this feature creates multiple ML intent models for your VA. All the Primary Dialog Intents will be part of the Bot Level Intent Model. Separate Dialog Level ML Models are created for each of the other Dialog Tasks and Sub Dialog Tasks, consisting of all the sub-intents used in the respective task definition. [Learn more](/docs/xo/automation/natural-language/training/machine-learning-engine/#the-multiple-intent-model){:target="_blank"}.
 
 ### Lemmatization of KG Synonyms
 
@@ -743,6 +757,9 @@ This is a **Custom** configuration, to enable follow the steps below:
 2. Enter name as *ML spell correction*
 3. Enter the value as *enabled* or *disabled*.
 
+!!! Note
+
+      This configuration is not available in Spell Correction Version 2 is enabled for the VA.
 
 ## **Ranking and Resolver Engine Settings**
 
@@ -768,7 +785,7 @@ This option controls whether you see the Primary Question or Dialog Task name in
 * Utterance testing
 * Batch testing 
 In this testing, when you enable the **FAQ Name as Intent Name** setting and then export the batch test suite results, the **MatchedIntent** field shows the FAQ name. If it is disabled, the Intent name is displayed instead of FAQ name.
-<img src="../images/faq-link-as-intent-name.png" alt="faq link as intent name" title="faq link as intent name" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/faq-link-as-intent-name-window.png" alt="faq link as intent name" title="faq link as intent name" style="border: 1px solid gray; zoom:75%;">
 
 * NLP Analysis
 * Analytics (Dashboards, Custom Dashboards, Conversation Flows, and Metrics)
@@ -796,7 +813,7 @@ This is a **Custom** configuration, to enable follow these steps:
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <p>Enabling this setting would add the following configurations for Term settings – Term Display Name, Auto Qualify Path, and the following configurations would not be available – Path Coverage and Minimum and Definitive Level for Knowledge Tasks. <a href="https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/taxonomy-based-kg/">Learn more</a>.</p>
+    <br>Enabling this setting would add the following configurations for Term settings – Term Display Name, Auto Qualify Path, and the following configurations would not be available – Path Coverage and Minimum and Definitive Level for Knowledge Tasks. <a href="#taxonomy-based-kg" target="_blank">Learn more</a>.</p>
     </div>
 
 ## **Fundamental Meaning Engine Settings**
@@ -826,17 +843,17 @@ The **Precedence for Intents with Ambiguous Entities** configuration setting all
 
 Bot designers can customize the flow on how the bot should respond when a user input results in an ambiguous entity with an intent by choosing the following options:
 
-* **Use Precedence** – Uses the **Instance Properties** setting specific to each entity, rather than global EoI/IoE settings. Applies to all Entity types except *String* and *Description* nodes. [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-entity-node/#Instance_Properties).
+* **Use Precedence** – Uses the **Instance Properties** setting specific to each entity, rather than global EoI/IoE settings. Applies to all Entity types except *String* and *Description* nodes. [Learn more](/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-entity-node/#instance-properties){:target="_blank"}.
 * **Intent over Entity**–  Terminates the ongoing intent automatically by initiating a new dialog task. For example: If a customer intends to place an order and during the interaction changes their intent and requests to edit the order, the system terminates the ongoing intent (_place order_) and initiates a new intent (_edit order_).
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <p>The <b>Intent over Entity</b> option implies that you think the customer is generally going to say something different other than answer the prompt. The list of item entity type includes a phrase for ignoring the entity with ambiguity and proceeding with the intent instead.</p>
+    <br>The <b>Intent over Entity</b> option implies that you think the customer is generally going to say something different other than answer the prompt. The list of item entity type includes a phrase for ignoring the entity with ambiguity and proceeding with the intent instead.</p>
     </div>      
 
 * **Entity over Intent**– Completes the ongoing dialog task normally once the user resolves the ambiguity in the intent. This option considers the customer input as an entity value, and allows the dialog task to progress to the next node. For example: If a customer intends to place an order and during the interaction changes their intent and requests to edit the order, the system continues with the ongoing intent to place the order.
 
-    When the user’s input for an entity consists of a valid value for the entity and another intent, you can control the experience by choosing between **Intent Over Entity** or **Entity Over Intent** options. [Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/working-with-the-entity-node/#The_User_Input_Flow).
+    When the user’s input for an entity consists of a valid value for the entity and another intent, you can control the experience by choosing between **Intent Over Entity** or **Entity Over Intent** options. [Learn more](/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-entity-node/#the-user-input-flow){:target="_blank"}.
 
 ### Prefer Only the First Pattern Match in a Sentence
 
@@ -844,6 +861,18 @@ When multiple patterns are identified in a sentence, define whether the FM Engin
 
 ### Exact Task Name Match
 
-The FM Engine configuration _Intent Detection using Task Name_ Words ([see here for details](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Threshold_Configurations)) allows you to choose whether to match a task by using the words present in the task name. It is advised that this configuration be disabled if it conflicts with other training. 
+The [FM Engine configuration](/docs/xo/automation/natural-language/training/fundamental-meaning/#thresholds-configurations){:target="_blank"} Intent Detection using Task Name Words allows you to choose whether to match a task by using the words present in the task name. It is advised that this configuration be disabled if it conflicts with other training. 
 
 When disabled, the platform generates a strict pattern that does ‘exact matching’ i.e. if the user input exactly matches with the task name then it will consider as a match. The Exact Task Name Match configuration allows you to choose whether the platform should auto-generate the strict pattern when ‘Intent Detection using Task Name Words’ is Disabled.
+
+## **Spell Correction settings**
+
+When these settings are selected and enabled, the spell correction will happen after the language detection step. The spell-corrected input is used by all the engines for further processing.
+
+### Spell Correction Version
+
+This configuration flexibility allows users to select the spell correction version that best suits their needs for existing VAs, while new bots or those without spell correction enabled will default to Version 2.
+
+### Spell Correction Status
+
+This configuration provides users with the flexibility to control whether spell correction is active or not. Disabling this configuration ensures that spell correction does not occur, regardless of the version selected.

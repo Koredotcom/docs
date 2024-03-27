@@ -1,4 +1,4 @@
-# **Ranking and Resolver**
+# Ranking and Resolver Engine
 
 The Kore.ai NLP engine uses Machine Learning, Fundamental Meaning, and Knowledge Graph (if any) models to match intents. All the three Kore.ai engines finally deliver their findings to the Kore.ai Ranking and Resolver component as either exact matches or probable matches. **Ranking and Resolver** determines the final winner of the entire NLP computation.
 
@@ -22,11 +22,10 @@ The Ranking & Resolver engine receives the outputs from the above engines and fu
 ## Enable Ranking & Resolver Version 2
 
 <p>To enable Version 2 for the Few-shot Model, follow the steps below:</p>
-<ol><li>Navigate to <b>Build</b> > <b>Natural Language</b> > <b>Thresholds & Configurations</b> > <b>Ranking and Resolver Engine</b>.</li>
+<ol><li>Navigate to <b>Natural Language</b> > <b>NLU Config</b> > <b>Ranking and Resolver Engine</b>.</li>
 <li>Select <b><i>Version 2</i></b> for <b>Rank and Resolver Version</b>.</li>
-<li>Click <b>Enable Now</b> in the confirmation window.
-    <img src="../images/ranking-and-resolver-engine-thresholds.png" alt="ranking and resolver engine thresholds" title="ranking and resolver engine thresholds" style="border: 1px solid gray; zoom:75%;"></li>
-Once enabled, you can use Utterance Testing to see your bot's behavior with R&R V2. <a href="https://developer.kore.ai/docs/bots/test-your-bot/testing-your-bot-with-nlp/#Ranking_and_Resolver">Learn more</a>.</ol></p>
+<li>Click <b>Enable Now</b> in the confirmation window.</li>
+Once enabled, you can use Utterance Testing to see your bot's behavior with R&R V2. <a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/testing-your-bot-with-nlp/#ranking-and-resolver">Learn more</a>.</ol></p>
 
 ## How Ranking and Resolver Works for Different NLP Engines
 
@@ -76,21 +75,20 @@ The wining intent is decided by the Ranking & Resolver as follows:
     * If only FM or ML engines found an Intent but probable, that’s the winning intent.
     * If only the KG engine found a probable intent and its score is > higher threshold(80%) then that’s the winning intent.
     * If only the KG engine found a probable Intent and its score is >60% but &lt;80% then that’s the winning intent, but since the confidence is low, show it as a suggestion (user will see “Did you mean”)
-    * If more than one probable intents were found. [Learn more about model scores and resolver](https://developer.kore.ai/docs/bots/test-your-bot/testing-your-bot-with-nlp/#Analyzing_the_Test_Results).
+    * If more than one probable intents were found. [Learn more](/docs/xo/automation/testing/testing-your-bot-with-nlp/#analyzing-the-test-results){:target="_blank"}.
 
 ## Thresholds & Configuration
 
 To set up Thresholds & Configuration for the Ranking and Resolver Engine, follow the below steps:
 
 * Open the vA for which you want to configure thresholds.
-* Select the **Build** tab from the top menu.
-* From the left navigation click **Natural Language** > **Thresholds & Configurations**.
+* From the left navigation click **Natural Language** > **NLU Config**.
 * The **Ranking & Resolver Engine** section allows you to set the threshold:
     * **Prefer Definitive Matches** can be used to prioritize definitive matches over probable matches so that all the matches are considered for rescoring and the end-user gets to choose the right intent in case of any ambiguity. This setting is enabled by default and you can disable it. If enabled (default behavior), definitive matches will win and the probable matches would be discarded, in case of no definitive match, then probable matches would get rescored. If disabled, all the matches – definitive and probable, would be rescored.
     * **Rescoring of Intents** can be turned off so that all the qualified intents from the different intent engines are assumed winning intents and are sent to the end-users to choose the required intent. If only one intent is qualified, then it is considered a winner, if more than one is qualified then the user will be presented with results for disambiguation.
     * **Negative Patterns** When enabled, uses negative patterns to eliminate intents detected by Fundamental Meaning or Machine Learning models.
     * **Proximity of Probable Matches** which defines the maximum difference to be allowed between top-scoring and immediate next probable intents to consider them as equally important. Before v7.3 of the Platform, this setting was under the Fundamental Meaning section.
-    <img src="../images/ranking-and-resolver-engine-thresholds.png" alt="ranking and resolver engine thresholds" title="ranking and resolver engine thresholds" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/ranking-and-resolver-engine-thresholds-window.png" alt="ranking and resolver engine thresholds" title="ranking and resolver engine thresholds" style="border: 1px solid gray; zoom:75%;">
 
 ### Dependency Parsing Model
 
@@ -99,7 +97,7 @@ The Platform has two models for scoring intents by the Fundamental Meaning Engin
 1. The first model predominantly relies on the presence of words, the position of words in the utterance, etc. to determine the intents and is scored solely by the Fundamental Meaning Engine. This is the default setting.
 2. The second model is based on the _dependency matrix_ where the intent detection is based on the words, their relative position, and most importantly the dependency between the keywords in the sentence. Under this model, intents are scored by the Fundamental Meaning Engine and then rescored by the Ranking and Resolver Engine.
 
-**Dependency Parsing Model** can be enabled and configured from the Ranking and Resolver section under **Build > Natural Language >** **Training > Thresholds & Configurations**.
+**Dependency Parsing Model** can be enabled and configured from the **Ranking and Resolver** section under **Natural Language** > **NLU Config**.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -109,7 +107,7 @@ The Dependency Parsing Model can be configured as follows:
 
 * **Minimum Match Score** to define the minimum score to qualify an intent as a probable match. It can be set to a value between 0.0 to 1.0 with the default set to 0.5.
 * **Advanced Configurations** are used to customize the model by changing the weights and scores associated with various parameters. This opens a JSON editor where you can enter the valid code. You can click the **restore to default configurations** to get the default threshold settings in a JSON structure, you can change the settings provided you are aware of the consequences.
-<img src="../images/configure-dependency-parsing-model.png" alt="configure dependency parsing model" title="configure dependency parsing model" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/configure-dependency-parsing-model-window.png" alt="configure dependency parsing model" title="configure dependency parsing model" style="border: 1px solid gray; zoom:75%;">
 
 ## NLP Detection
 
@@ -134,13 +132,13 @@ In this example, the following occurs:
 * An intent using the same verb form has been eliminated. , so the FM model termed it a _Definitive match_.
 * The Knowledge Graph engine has also considered the utterance as a Probable match to the question: _How do I book my flight?_
 
-    <img src="../images/fm-identifying-a-definitive-match.png" alt="fm Identifying a definitive match" title="fm Identifying a definitive match" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/fm-identifying-a-definitive-match-window.png" alt="fm Identifying a definitive match" title="fm Identifying a definitive match" style="border: 1px solid gray; zoom:75%;">
 
 ### Scenario 2 – ML Identifying a Definitive Match
 
 In this example, both the FM and ML models show this intent as a match – Definitive and Probable respectively. 
 
-<img src="../images/ml-identifying-a-definitive-match.png" alt="ml Identifying a definitive match" title="ml Identifying a definitive match" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/ml-identifying-a-definitive-match-window.png" alt="ml Identifying a definitive match" title="ml Identifying a definitive match" style="border: 1px solid gray; zoom:75%;">
 
 ### Scenario 3 – KG Identifying a Definitive Match
 
@@ -150,7 +148,7 @@ This scenario can be explained as follows:
 * The user utterance contains all the terms required to match it to the _How do I book my flight_ question.
 * As 100% path term matched the path was qualified. As part of confidence scoring, the terms in the user query are similar to that of the actual Knowledge Graph question. Thus, it returns a score of 100. As such, the intent is marked as _a Definitive match_ and selected.
 * The ML and FM models also found a Probable Match to the Book Flight intent.
-<img src="../images/kg-Identifying-a-definitive-match.png" alt="kg Identifying a definitive match" title="kg Identifying a definitive match" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/kg-Identifying-a-definitive-match-window.png" alt="kg Identifying a definitive match" title="kg Identifying a definitive match" style="border: 1px solid gray; zoom:75%;">
 
 ### Scenario 4 – Multiple Engines Returning a Probable Match
 
@@ -179,5 +177,5 @@ In this final example, there is no match for the utterance:
 * None of the engines could identify any trained intent or Knowledge Graph intent.
 * The default intent is triggered.
 
-    <img src="../images/no-match-identified.png" alt="no match identified" title="no match identified" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/no-match-identified-window.png" alt="no match identified" title="no match identified" style="border: 1px solid gray; zoom:75%;">
 

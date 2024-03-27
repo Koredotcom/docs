@@ -1,10 +1,10 @@
-# **Configure Digital Views**
+# Configure Digital Views
 
 In this help document, we will explore how a user can view his/her account details using digital views. We will see how a Digital View can be presented using Panels and Widgets. Widgets can be used to trigger Dialog Tasks and display appropriate messages and Panel can be used to hold these Widgets.
 
 We will also see how the Panel can be hosted on Web/Mobile Client using the Widget SDK.
 
-For details on what Digital Views are and how it is implemented in the Kore.ai Bots platform, [refer here](https://developer.kore.ai/docs/bots/bot-builder-tool/digital-views/).
+For details on what Digital Views are and how it is implemented on the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-views/" target="_blank">here</a>.
 
 ## Illustration with an Example
 
@@ -18,8 +18,8 @@ This document gives a detailed step-by-step approach to achieving all the above-
 ## Prerequisites
 
 * Bot building knowledge
-* A [Banking Bot](https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/) with a dialog as mentioned below:
-* **[Get Balance](https://developer.kore.ai/docs/bots/how-tos/creating-a-banking-bot/#Get_Balance_Intent)** – Dialog task prompting the user for their Account Number and Account Type and displaying the available balance in the account.
+* A <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">Banking Bot</a> with a dialog as mentioned below:
+* <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-balance-task/" target="_blank">Get Balance</a> – Dialog task prompting the user for their Account Number and Account Type and displaying the available balance in the account.
     
     <img src="../../images/get-balance-dialog-task.png" alt="get balance" title="get balance" style="border: 1px solid gray; zoom:75%;">
     
@@ -118,7 +118,7 @@ We will see how to create Widgets with static JSON content. We will use a JSON t
 
     <img src="../../images/new-widget-data-entry.png" alt="new widget data" title="new widget data" style="border: 1px solid gray; zoom:75%;">
 
-4. Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, click [here](https://developer.kore.ai/docs/bots/sdks/widget-sdk-message-formatting-and-templates/). 
+4. Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, click <a href="https://docsinternal-kore.github.io/docs/xo/channels/add-wigdet-sdk-channel/" target="_blank">here</a>. 
 
 ```
 {     "templateType": "piechart",
@@ -162,9 +162,9 @@ To publish the Bot first enable channels:
 
 ## Hosting
 
-We will be hosting the Panels in the web/mobile client. [See here](https://developer.kore.ai/docs/bots/sdks/kore-ai-widget-sdk-tutorial/) for more details on the Widget SDK usage.
+We will be hosting the Panels in the web/mobile client. Click <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/kore-ai-web-sdk-tutorial/" target="_blank">here</a> for more details on the Widget SDK usage.
 
-1. Download the Kore.ai Widget SDK, go to [https://github.com/Koredotcom/web-kore-sdk](https://github.com/Koredotcom/web-kore-sdk), and then click **Download**.
+1. Download the Kore.ai Widget SDK, go to this <a href="https://github.com/Koredotcom/web-kore-sdk" target="_blank">link</a>, and then click **Download**.
 2. Extract all files to the _…/SDKApp/sdk_ folder.
 3. Open the above SDK folder, and traverse to _UI_ folder.
 4. Open the `kore-config.js`

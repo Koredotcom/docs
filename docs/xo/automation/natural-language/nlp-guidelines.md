@@ -1,4 +1,4 @@
-# **NLP Settings and Guidelines**
+# NLP Settings and Guidelines
 
 This article provides you with some essential guidelines to help you optimize your workflow with the XO Platform’s NLP, and thus improve your VA’s performance. Please refer to the guidance below before before intent naming, ML training, and handling entities, concepts, and synonyms.
 
@@ -70,7 +70,7 @@ While using synonyms is great for words used in the name, users may sometimes re
 
 For example, a task name might be _Get Current Weather_, but the user inputs, _What’s happening with today’s rain situation?_. In such cases, none of the words used in the task name are used, yet the input has the same meaning. To optimize the accuracy and recognition of the NLP interpreter for your VA, you can create patterns.
 
-When the [NLP](https://kore.ai/platform/design-and-build/natural-language-processing/) interpreter matches a synonym to one task or field, and a pattern to a different task or field, the pattern match is prioritized and used for recognition over the synonym match.
+When the [NLP](/docs/xo/automation/natural-language/nlp-introduction/){:target="_blank"} interpreter matches a synonym to one task or field, and a pattern to a different task or field, the pattern match is prioritized and used for recognition over the synonym match.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -90,7 +90,7 @@ The following are some general guideline for creating intent patterns:
 * Don’t use special characters such as () & / \ $ [ ] + *.
 * Don’t use punctuation such as – , . ! ? ‘ “.
 
-For a quick guide towards the usage of patterns, refer to [How to use Patterns](https://developer.kore.ai/docs/bots/how-tos/how-to-use-patterns-for-intents-entities/).
+For a quick guide towards the usage of patterns, refer to [How to use Patterns](/docs/xo/how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/){:target="_blank"}.
 
 ### Pattern Operators
 
@@ -156,7 +156,7 @@ _ToFlight_ & _FromFlight_ are captured from user utterance _change flight  from 
 * **Pattern**: ~concept *n – pattern built using concepts. 
 pattern for entity ToFlight–  _to *1_ the pattern for entity FromFlight –  _~from *1_, where _from_ is a concept as (using) (from) _ToFlight_ & _FromFlight_ are captured from user utterance _change flight from XYZ321 to ABC123_ and _change flight  to ABC123 using XYZ321_ but not from _change flight for ABC123 using XYZ321._
 
-For more information on how to add patterns, refer to [Managing Patterns](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Patterns_and_Rules).
+For more information on how to add patterns, refer to [Manage Patterns](/docs/xo/automation/natural-language/training/fundamental-meaning/#manage-patterns-and-rules){:target="_blank"}.
 
 ### Negative Patterns
 
@@ -214,7 +214,7 @@ A match between the user input and synonym for entity (only for List of Values a
 <p>Synonyms can be added to identify intents as well as entities. Entity identification is triggered only after an Intent is identified.</p>
 </div>
 
-For more information on how to add synonyms, refer to [Managing Synonyms](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Synonyms).
+For more information on how to add synonyms, refer to [Managing Synonyms](/docs/xo/automation/natural-language/training/fundamental-meaning/#manage-synonyms){:target="_blank"}.
 
 ## Concepts
 
@@ -247,8 +247,8 @@ Examples of invalid concepts names:
 
 You can also define custom concepts using emojis.
 
-For more information, refer to [Custom Concepts](https://developer.kore.ai/docs/bots/nlp/fundamental-meaning/#Manage_Concepts).
-
+For more information, refer to [Custom Concepts](/docs/xo/automation/natural-language/training/fundamental-meaning/#manage-concepts){:target="_blank"}
+.
 ## Standard Responses
 
 Standard Responses are template messages that the Platform uses to respond to specific situations during a conversation. Examples of these situations include resolution of ambiguous user inputs, requisition for authorization, obtaining confirmations, informing about interruptions and resumptions, and more. Standard Responses are categorized into the following:

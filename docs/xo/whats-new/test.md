@@ -3,6 +3,8 @@ hide:
   - toc
 ---
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/bc3c1090458b4883ac58258ed3bba9a8?sid=dd93ecea-d587-4b74-8587-89339ac7e1b9" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 <details>
     <summary>Q&A_1</summary>
     <p>Q&A_1_content</p>
@@ -11,6 +13,60 @@ hide:
     <summary>Q&A_1</summary>
     <p>Q&A_1_content</p>
     </details>
+
+<p> <a href="./whats-new-in-this-release.md"> <span class=twemoji> <svg width="16" height="17" xmlns=http://www.w3.org/2000/svg viewbox="0 0 21 22"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z" /></svg> </span> Learn more </a> </p>
+
+[:octicons-arrow-right-24: Learn more](./whats-new-in-this-release.md)
+
+[Learn more :octicons-arrow-right-24:](./whats-new-in-this-release.md)
+
+ ++ctrl+alt+del++
+
+ [Subscribe to our newsletter](#){ .md-button }
+
+<div class="grid cards" markdown>
+
+-   <img src="../images/xop-sm-uc.svg"></img>{ .lg .middle } __Define Use Cases__
+
+    ---
+
+    Adding a line here Use Cases are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent.
+
+    [:octicons-arrow-right-24: Learn more](#)
+
+-   <img src="../images/xop-sm-uc.svg"></img> **Define Use Cases**
+
+    ---
+
+    Use Cases are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent.
+
+    [:octicons-arrow-right-24: Learn more](#)
+
+-   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
+
+    ---
+
+    Focus on your content and generate a responsive and searchable static site
+
+    [:octicons-arrow-right-24: Reference](#)
+
+-   :material-format-font:{ .lg .middle } __Made to measure__
+
+    ---
+
+    Change the colors, fonts, language, icons, logo and more with a few lines
+
+    [:octicons-arrow-right-24: Customization](#)
+
+-   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+
+    ---
+
+    Material for MkDocs is licensed under MIT and available on [GitHub]
+
+    [:octicons-arrow-right-24: License](#)
+
+</div>
 
 <div class="grid cards" markdown>
 
@@ -124,22 +180,56 @@ Material for MkDocs is licensed under MIT and available on [GitHub]
 :fontawesome-brands-css3: __CSS__ for text running out of boxes
 { .card }
 
-> :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
+> :fontawesome-brands-internet-explorer: __Internet Explorer New__ ... huh?
 
 </div>
 
 
-
+<kr-grid type="g1" >
+    <kr-grid-item>
+        <img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04052752/Message-Chart-Circle-Icon.svg"></img>
+        <kr-grid-title>Virtual Assistant Integration</kr-grid-title>
+        <kr-grid-desc>The platform offers robust integration capabilities, enabling seamless connection with various systems and services. This ensures that your virtual assistant can work in harmony with your existing tools and infrastructure.</kr-grid-desc>
+        <a href="https://kore.ai/platform/platform-services/">Learn More</a>
+    </kr-grid-item>
+    <kr-grid-item>
+        <img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04051942/Message-Chat-Icon.svg"></img>
+        <kr-grid-title>Omnichannel Capabilities</kr-grid-title>
+        <kr-grid-desc>The platform provides omnichannel support, allowing your virtual assistant to engage with users across multiple channels such as web, mobile, and messaging apps. This ensures consistent and efficient customer interactions.</kr-grid-desc>
+        <a href="https://kore.ai/platform/platform-services/">Learn More</a>
+    </kr-grid-item>
+    <kr-grid-item>
+        <img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04052034/Data-Flow-Icon.svg"></img>
+        <kr-grid-title>Multilingual Support</kr-grid-title>
+        <kr-grid-desc>Kore.ai’s virtual assistant is equipped with multilingual capabilities, enabling it to understand and communicate in different languages. This feature helps you cater to a diverse user base and expand your global reach.</kr-grid-desc>
+        <a href="https://kore.ai/platform/platform-services/">Learn More</a>
+    </kr-grid-item>
+</kr-grid>
 
 
 
 === "Tab 1"
 
-    <div class="grid cards" markdown>
-
-    one
-    
-    </div>
+    <kr-grid type="g1" >
+        <kr-grid-item>
+            <img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04052752/Message-Chart-Circle-Icon.svg"></img>
+            <kr-grid-title>Virtual Assistant Integration</kr-grid-title>
+            <kr-grid-desc>The platform offers robust integration capabilities, enabling seamless connection with various systems and services. This ensures that your virtual assistant can work in harmony with your existing tools and infrastructure.</kr-grid-desc>
+            <a href="https://kore.ai/platform/platform-services/">Learn More</a>
+        </kr-grid-item>
+        <kr-grid-item>
+            <img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04051942/Message-Chat-Icon.svg"></img>
+            <kr-grid-title>Omnichannel Capabilities</kr-grid-title>
+            <kr-grid-desc>The platform provides omnichannel support, allowing your virtual assistant to engage with users across multiple channels such as web, mobile, and messaging apps. This ensures consistent and efficient customer interactions.</kr-grid-desc>
+            <a href="https://kore.ai/platform/platform-services/">Learn More</a>
+        </kr-grid-item>
+        <kr-grid-item>
+            <img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04052034/Data-Flow-Icon.svg"></img>
+            <kr-grid-title>Multilingual Support</kr-grid-title>
+            <kr-grid-desc>Kore.ai’s virtual assistant is equipped with multilingual capabilities, enabling it to understand and communicate in different languages. This feature helps you cater to a diverse user base and expand your global reach.</kr-grid-desc>
+            <a href="https://kore.ai/platform/platform-services/">Learn More</a>
+        </kr-grid-item>
+    </kr-grid>
 
 === "Tab 2"
 
@@ -163,3 +253,20 @@ Material for MkDocs is licensed under MIT and available on [GitHub]
             <a href="https://kore.ai">Reference</a>
         </kr-grid-item>
     </kr-grid>
+
+<p style="display:inline-block;">
+    <img src="../images/xop-sm-uc.svg" style="zoom:100%;"> 
+    <b>Define Use Cases:</b> Use Cases are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent. <a href="">Learn More</a>
+</p>
+<p style="display:inline-block;">
+    <img src="../images/xop-sm-nl.svg" style="zoom:100%;"> 
+    <b>Leverage Natural Language:</b> Leverage the Platform’s NLP capabilities to train and optimize your automation workflows to handle complex use cases. <a href="">Learn More</a>
+</p>
+<p style="display:inline-block;">
+    <img src="../images/xop-sm-inteligence.svg" style="zoom:100%;"> 
+    <b>Intelligence Management:</b> Empower your automation workflows to handle nuances of human conversations, including interruptions, clarifications, and more. <a href="">Learn More</a>
+</p>
+<p style="display:inline-block;">
+    <img src="../images/xop-sm-test.svg" style="zoom:100%;"> 
+    <b>Test Workflows:</b> Use an extensive suite of features to conduct rigorous testing of your automation workflows to ensure everything works as expected. Find and fix problems before they reach your users. <a href="">Learn More</a>  
+</p>

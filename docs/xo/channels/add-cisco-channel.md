@@ -1,8 +1,8 @@
-# **Adding the Cisco Webex Teams**
+# Adding the Cisco Webex Teams
 
 To add the Cisco Webex Teams (formerly Cisco Webex) channel to your VA, the developer must create a dedicated VA app and an integration app in Cisco Webex Teams.
 
-Adding the Cisco Webex Teams channel to your Kore.ai VA is a four-step process to allow end-users to interact with it using their _Webex _accounts.
+Adding the Cisco Webex Teams channel to your Kore.ai VA is a four-step process to allow end-users to interact with it using their _Webex_ accounts.
 
 
 ## Step 1: Create a Bot with Cisco Webex Team
@@ -24,7 +24,7 @@ To create a Bot from within Cisco Webex Teams, please follow the steps below:
 
 
 1. In the XO Platform, select the assistant you want to add the channel to.
-2. Go to **Deploy > Channels**, and select **Cisco Webex Teams**. The channel window opens.
+2. Go to **Channels & Flows** > **Channels** > **Digital** > **All**, and select **Cisco Webex Teams**. The channel window opens.
 3. Enter the **Bot Username** and **Access Token** from the previous step.
 4. Make a note of the **Redirect URL**.
 
@@ -56,6 +56,6 @@ To create a Bot from within Cisco Webex Teams, please follow the steps below:
 3. **Save** the configuration.
 <img src="../images/cisco3.png" alt="enable cisco channel" title="enable cisco channel" style="border: 1px solid gray; zoom:70%;">
 
-After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

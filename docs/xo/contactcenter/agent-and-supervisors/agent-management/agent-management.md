@@ -1,4 +1,4 @@
-# **Agent Management**
+# Agent Management
 
 ## Agents
 
@@ -99,7 +99,7 @@ You can add a user to Contact Center by following the steps below:
     1. **Profile**: Provide the user’s profile information. This section opens by default.
     2. **Settings**: Configure settings related to the Chat and Voice Experience.
     3. **Queues & Skills**: Assign the user to specific queues and skills.
-    <img src="../images/new-user-tabs.png" alt="New User Window Tabs" title="New User Window Tabs" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/new-user-tabs.png" alt="New User Window Tabs" title="New User Window Tabs" style="border: 1px solid gray; zoom:100%;">
 
 ### Profile
 
@@ -118,7 +118,7 @@ In the profile section, configure the following:
 
 * **Custom ID**: This optional field lets you enter a custom ID for each user. The field supports up to 15 alphanumeric characters and cannot include space or special characters. You can use this field via API while [adding ](https://docs.kore.ai/smartassist/api/create-an-agent/)or [editing ](https://docs.kore.ai/smartassist/api/update-a-specific-agent/)a user.
 * **Desktop Layout**: Choose the layout with which the user will work within the Agent Console. See [Manage Layout](https://docs.kore.ai/smartassist/console/manage-layout/) for details.
-<img src="../images/new-user-profile.png" alt="New User Profile" title="New User Profile" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/new-user-profile.png" alt="New User Profile" title="New User Profile" style="border: 1px solid gray; zoom:100%;">
 
 ### Settings
 
@@ -131,7 +131,7 @@ To configure the digital experience, follow these steps:
 1. **Enable** or **Disable** the digital experience using the toggle switch.
 2. **CAPACITY BY CHANNEL TYPE** – This lets you set the maximum number of sessions an agent can handle simultaneously in a specific channel (Digital, Email, or Message).
 3. **Language Support** – Allows you to enable or disable the languages known by the user and sets the proficiency level (_Novice, Average_, _Good, or Expert_). To add more languages, see  [System Setup > Languages & Speech](https://docs.kore.ai/smartassist/settings/general-settings/language-management/#). 
-<img src="../images/new-user-settings.png" alt="New User Settings" title="New User Settings" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/new-user-settings.png" alt="New User Settings" title="New User Settings" style="border: 1px solid gray; zoom:100%;">
 
 #### Voice Experience
 
@@ -714,7 +714,7 @@ By default, the Allow Virtual Assistant to Pause/Resume feature is disabled. How
 
 Recorded calls are accessible to supervisors on the Dashboard’s [Interactions](https://docs.kore.ai/smartassist/dashboard/interactions/#Call_Recording) tab. The interactions are not recorded in the interactions tab for the duration that the recording was stopped/paused.
 
-Changes to the Call Recording Control settings are logged on the [Kore.ai Bots Admin Console](https://bots.kore.ai/admin/#_login) > Analytics > [Audit Report page](https://docs.kore.ai/smartassist/bot-administration/audit-report/).
+Changes to the Call Recording Control settings are logged on the [Kore.ai Bots Admin Console](https://bots.kore.ai/admin/#_login) > Analytics > [Audit Report page](https://docs.kore.ai/smartassist/administration/audit-report/).
 
 ## Transfers
 
