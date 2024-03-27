@@ -1,4 +1,4 @@
-e23# AgentAssist Playbook (Beta)
+# AgentAssist Playbook (Beta)
 
 
 ## Overview
@@ -34,24 +34,15 @@ AgentAssist lets you create two types of playbooks:
 
 
 
-1. Sign in to [https://agentassist.kore.ai/koreagentassist/](https://agentassist.kore.ai/koreagentassist/).
-2. Click **Configuration** > **Playbook**. \
+1. Sign in to the XO Platform.
+2. Click **AgentAI** > **EXPERIENCE** > **Agent Playbook**.
+<img src="../playbookimages/agent-playbook-path.png" alt="agent-playbook-path" title="agent-playbook-path" style="border: 1px solid gray;">
 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
+    
 3. Click **+New Playbook**.
-4. Enter and select the following details in the **General Settings** page: \
+4. Enter and select the following details in the **General Settings** page:
+**Screenshot-2**
 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
- \
 
     1. Enter a name in the **Playbook Name** field.
     2. Enter a short description in the **Description** field.
@@ -60,13 +51,9 @@ AgentAssist lets you create two types of playbooks:
     5. Select an option about how the steps should progress in the **Step Progression** field.
     6. Select a channel under the **Channels** section. \
 For help, refer to the [Field Description](https://docs.google.com/document/d/1S7ZYdqUF8Ejed9HcZFQ8LAfSor8gUvWnDBfKr16-9HQ/edit#heading=h.82nx891p1oqh) section.
-5. Click **Save**. The new Primary Playbook appears with the default creation of two stages (Open and Close) and a few steps under each stage. \
+5. Click **Save**. The new Primary Playbook appears with the default creation of two stages (Open and Close) and a few steps under each stage.
 
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
+**Screenshot-3**
 
 6. Click **Done** to complete the process.
 
@@ -75,7 +62,7 @@ For help, refer to the [Field Description](https://docs.google.com/document/d/1S
 
 
 
-1. Sign in to [https://agentassist.kore.ai/koreagentassist/](https://agentassist.kore.ai/koreagentassist/).
+1. Sign in to the XO Platform.
 2. Click **Configuration** > **Playbook**.
 3. Follow steps 3 and 4 of [Steps to Create a Primary Playbook](https://docs.google.com/document/d/1S7ZYdqUF8Ejed9HcZFQ8LAfSor8gUvWnDBfKr16-9HQ/edit#heading=h.8v6swxaclwq2), but select **Dynamic** in the **Type** field. A new menu, **Triggers**, appears on the top-left of the **General Settings** page. \
 
@@ -107,7 +94,7 @@ For help, refer to the [Field Description](https://docs.google.com/document/d/1S
         2. Select the utterances from the list, as required.
         3. Click **Add**.
     2. If you select **By Dialog Execution**:
-        4. Select an option from the **Automation** list. This list includes all available[ Dialog tasks](https://docs.kore.ai/agentassist/use-cases/dialogues-creation/).
+        4. Select an option from the **Automation** list. This list includes all available Dialog tasks.
         5. Select an option under the **Wait for Dialog Execution** section:
             1. **Initiated**: Select **Initiated** to indicate the playbook should trigger once the Dialog task is initiated.
             2. **Completed**: Select **Completed** to indicate the playbook should trigger once the Dialog task is completed.
@@ -241,7 +228,7 @@ The system dynamically determines an agent’s step adherence through one of the
 * **By Utterance**: The system determines an agent’s compliance/adherence to a step completion by listening to some specific utterances from the agent or the customer that indicate completion of a step. Utterances can be of two types:
     * Agent Utterance: Agent’s utterances that indicate completion of a step.
     * Customer Utterance: Customer’s utterances that indicate completion of a step.
-* **By Dialog Execution**: The system determines an agent’s compliance/adherence to a step by watching a Dialog Task execution run by the agent in the AgentAssist widget. To learn more about Dialog Tasks, refer to [https://docs.kore.ai/agentassist/use-cases/dialogues-creation/](https://docs.kore.ai/agentassist/use-cases/dialogues-creation/).
+* **By Dialog Execution**: The system determines an agent’s compliance/adherence to a step by watching a Dialog Task execution run by the agent in the AgentAssist widget.
 
 
 #### Steps to set up Step Adherence
@@ -304,7 +291,7 @@ This section explains the process of editing and deleting an existing playbook. 
 
 
 
-1. Sign in to [https://agentassist.kore.ai/koreagentassist/](https://agentassist.kore.ai/koreagentassist/).
+1. Sign in to the XO Platform.
 2. Click **Configuration** > **Playbook**.
 3. Click the **Edit** button against the playbook you want to edit. \
 
@@ -323,7 +310,7 @@ This section explains the process of editing and deleting an existing playbook. 
 
 
 
-1. Sign in to [https://agentassist.kore.ai/koreagentassist/](https://agentassist.kore.ai/koreagentassist/).
+1. Sign in to the XO Platform.
 2. Click **Configuration** > **Playbook**.
 3. Click the **Delete** button against the playbook you want to delete. \
 
@@ -345,7 +332,7 @@ You can edit and delete an existing step, as required. This process is the same 
 
 
 
-1. Sign in to [https://agentassist.kore.ai/koreagentassist/](https://agentassist.kore.ai/koreagentassist/).
+1. Sign in to the XO Platform.
 2. Click **Configuration **>** Playbook**.
 3. Click the **Edit** button against the playbook for which you want to edit a step.
 4. Click the step you want to edit.
@@ -357,7 +344,7 @@ You can edit and delete an existing step, as required. This process is the same 
 
 
 
-1. Sign in to [https://agentassist.kore.ai/koreagentassist/](https://agentassist.kore.ai/koreagentassist/).
+1. Sign in to the XO Platform.
 2. Click **Configuration** > **Playbook**.
 3. Click the **Edit** button against the playbook for which you want to delete a step.
 4. Go to the step you want to delete and click the **Delete** button against it. \
