@@ -36,12 +36,12 @@ AgentAssist lets you create two types of playbooks:
 
 1. Sign in to the XO Platform.
 2. Click **AgentAI** > **EXPERIENCE** > **Agent Playbook**.
-<img src="../playbookimages/agent-playbook-path.png" alt="agent-playbook-path" title="agent-playbook-path" style="border: 1px solid gray;">
+<img src="../playbook-images/agent-playbook-path.png" alt="agent-playbook-path" title="agent-playbook-path" style="border: 1px solid gray;">
 
     
 3. Click **+New Playbook**.
 4. Enter and select the following details in the **General Settings** page:
-**Screenshot-2**
+
 
 
     1. Enter a name in the **Playbook Name** field.
