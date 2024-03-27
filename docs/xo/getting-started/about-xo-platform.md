@@ -3,46 +3,148 @@ hide:
   - toc
   - feedback
 ---
-# Experience Optimization Platform
-Learn how to use the Experience Optimization (XO) Platform that seamlessly blends conversational AI intelligence and generative AI innovation, offering you the tools to create scalable and memorable customer experiences. It empowers businesses with advanced capabilities to build engaging conversations with customers and employees. The platform is recognized as the world's most secure, credible, and scalable solution for generative and conversational AI. Using this no-code platform, you can construct intelligent virtual assistants, integrating both large language models (LLM) and generative AI capabilities to enhance customer engagement through everlasting conversations in their chosen language and communication channels.
+# Welcome to All-new Experience Optimization Platform
+Kore.ai Experience Optimization (XO) Platform is an AI-powered, end-to-end experience optimization Platform for enterprises of any scale to offer best-in-class conversational experiences for customers, employees, and agents. The Platform seamlessly blends conversational AI intelligence and generative AI innovation, offering the tools to create scalable and memorable customer experiences. The Platform is recognized as the world's most secure, credible, and scalable solution for generative and conversational AI. The Platform's business user-friendly, no-code interface allows businesses to construct intelligent virtual assistants, incorporating large language models and generative AI to foster meaningful and continuous conversations in users' preferred languages and channels.
 
-<kr-grid type="g1">
-    <kr-grid-item>
-        <img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04052752/Message-Chart-Circle-Icon.svg"></img>
-        <kr-grid-title>Virtual Assistant Integration</kr-grid-title>
-        <kr-grid-desc>The Platform offers robust integration capabilities, enabling seamless connection with various systems and services. This ensures that your virtual assistant can work in harmony with your existing tools and infrastructure.</kr-grid-desc>
-        <a href="">Learn More</a>
-    </kr-grid-item>
-    <kr-grid-item>
-        <img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04051942/Message-Chat-Icon.svg"></img>
-        <kr-grid-title>Omnichannel Capabilities</kr-grid-title>
-        <kr-grid-desc>The Platform provides omnichannel support, allowing your virtual assistant to engage with users across multiple channels such as web, mobile, and messaging apps. This ensures consistent and efficient customer interactions.</kr-grid-desc>
-        <a href="">Learn More</a>
-    </kr-grid-item>
-    <kr-grid-item>
-        <img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04052034/Data-Flow-Icon.svg"></img>
-        <kr-grid-title>Multilingual Support</kr-grid-title>
-        <kr-grid-desc>Kore.ai’s virtual assistant is equipped with multilingual capabilities, enabling it to understand and communicate in different languages. This feature helps you cater to a diverse user base and expand your global reach.</kr-grid-desc>
-        <a href="">Learn More</a>
-    </kr-grid-item>
-</kr-grid>
-<kr-grid type="g1">
-    <kr-grid-item>
-        <img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04063645/FAQ-Icon.svg"></img>
-        <kr-grid-title>Lifecycle Management</kr-grid-title>
-        <kr-grid-desc>The Platform offers comprehensive lifecycle management tools for your virtual assistant. This includes features for development, testing, deployment, and ongoing maintenance, ensuring your virtual assistant remains efficient and up-to-date.</kr-grid-desc>
-        <a href="">Learn More</a>
-    </kr-grid-item>
-    <kr-grid-item>
-        <img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04052559/Laptop-Icon.svg"></img>
-        <kr-grid-title>Open and Extensible</kr-grid-title>
-        <kr-grid-desc>The Platform is designed to be open and extensible, allowing for customization and integration with third-party services and tools. This flexibility empowers you to tailor your virtual assistant to your specific needs.</kr-grid-desc>
-        <a href="">Learn More</a>
-    </kr-grid-item>
-    <kr-grid-item>
-        <img src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/10/04051929/Annotation-Alert-Icon.svg"></img>
-        <kr-grid-title>Flexible Deployment</kr-grid-title>
-        <kr-grid-desc>The Platform offers various deployment options, making it suitable for a variety of business setups. Whether you need a cloud-based solution or on-premises deployment, the platform can accommodate your preferences.</kr-grid-desc>
-        <a href="">Learn More</a>
-    </kr-grid-item>
-</kr-grid>
+## XO Platform Products, Features, and Services
+The unified XO Platform offers a comprehensive suite of products, features, and services to help businesses leverage conversational AI intelligence and generative AI innovations to deliver exceptional customer experiences, improve operational efficiency, and drive business growth.
+
+**Key products, features, and services offered by the XO Platform:**
+
+<img src="../images/xo-platform-components.png" alt="New Unified XO Platform" title="New unified XO Platform">
+
+=== "Automation AI"
+
+    Automation AI offers sophisticated AI-powered tools for creating Virtual Assistants to handle customer interactions through intelligent automation. You can define specific use cases and utilize advanced Natural Language Processing (NLP) to handle complex interactions. You can also empower virtual assistants to handle interruptions and provide clarifications for more natural dialogues. It also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
+
+    Key Features
+
+    * Virtual Assistant Builder: Enables the creation of intelligent virtual assistants.
+    * Multi-Model NLU: Natural Language Understanding that uses multiple models to better understand user input.
+    * GenAI Framework: A generative AI framework to enhance automation capabilities.
+
+=== "Search AI"
+
+    Search AI offers AI-powered conversational search tools to quickly and accurately retrieve information from vast datasets and offer the most relevant piece of information to users. You can add multiple data sources to build your answer index, including website crawlers, structured data, unstructured documents, catalogs, and knowledge bases. You can also enrich and enhance your content to meet the specific needs of your users in accordance with your business needs. By combining Automation AI Use Cases and Search AI, businesses can create an exceptional, seamless conversational experience for their users.
+
+    Key Features
+
+    * Knowledge AI with LLM: Integrates large language models to enrich knowledge bases.
+    * Retrieval Augmented Generation: Enhances information retrieval with generative AI.
+    * Advanced RAG: An advanced version of retrieval augmented generation for improved search capabilities.
+
+=== "Contact Center AI"
+
+    Contact Center AI offers a conversational AI-native Contact Center-as-a-service solution to enhance customer experience, increase revenue, and reduce operational costs. It helps create consistent, personalized, intelligent, and effortless customer and agent experiences across channels. You can leverage Automation AI Use Cases and Search AI to automate regular customer queries and seamlessly transfer them to a human agent as needed. The new Campaigns module helps streamline outbound voice and web campaigns. It provides templates and analytics to easily create targeted campaigns, reach audiences efficiently, track performance, and achieve goals more effectively.
+
+    Key Features
+
+    * Routing & Experience Flows: Manages the routing of queries and the flow of customer experiences.
+    * Agent Desktop: Provides a centralized workspace for agents.
+    * Campaigns: Tools for managing voice and proactive web campaigns.
+
+=== "Agent AI"
+
+    Agent AI is your agent’s personal intelligent Virtual Assistant. It offers AI-native agent assistance to boost your contact center agents’ productivity and customer satisfaction. You can set up AI-powered automation workflows to empower your agents to deliver exceptional customer service by offering real-time assistance, the next best action, built-in Knowledge AI, automated assistance, and real-time guidance.
+
+    Key Features
+
+    * Real-time AI suggestions: Offers live AI-powered guidance to agents.
+    * Auto fulfillment: Automates the completion of tasks and processes.
+    * Agent Coaching & Playbooks: Provides resources and strategies for agent training and performance.
+
+=== "Analytics"
+
+    The Analytics Module provides a comprehensive 360-degree view of all voice and digital conversations across channels. It offers insightful dashboards, including containment information, conversation history, automation analytics, generative AI logs and analytics, search analytics, and contact center analytics. The module empowers your teams with data-driven insights, enabling them to make informed decisions to meet their targets.
+
+    Key Features
+
+    * Virtual Agent - User Conversational Insights: Analyzes and provides insights on interactions between users and virtual agents.
+    * Virtual Agent Performance Insights: Monitors and evaluates the performance of virtual agents.
+    * Contact Center Quality Management Insights: Offers insights to improve contact center operations.
+
+=== "Platform Services"
+
+    Common services help manage the entire lifecycle of products and services easily. You can configure the settings and the services once and use them across the Platform for all products and services.
+
+    Key Services
+
+    * Life Cycle Management: Tools for managing the lifecycle of apps and services, including versioning, publishing, and collaboration.
+    * Multi-lingual Support: Offers support for multiple languages.
+    * Pre-built Integrations: Provides ready-to-use integrations with other systems.
+    * Generative AI: Utilizes generative AI across the Platform.
+    * Omnichannel: Ensures a seamless experience across various communication channels.
+
+=== "Enterprise Services"
+
+    The Platform empowers enterprise customers with additional services.   
+
+    Key Services
+
+    * Role-based Access Controls, Audit Logs: Ensures security and accountability through access management and logging.
+    * Security, Compliance (SOC-2, PCI, FedRAMP, HIPAA, GDPR): Compliant with major security and privacy standards.
+    * Cloud and On-Premise Deployments**: Flexible deployment options.
+    * Scalability, Integrations, Authentication, and Authorization: Ensures the Platform can scale and integrate securely with other systems.
+
+
+### Automation AI
+Automation AI offers sophisticated AI-powered tools for creating Virtual Assistants to handle customer interactions through intelligent automation. You can define specific use cases and utilize advanced Natural Language Processing (NLP) to handle complex interactions. You can also empower virtual assistants to handle interruptions and provide clarifications for more natural dialogues. It also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
+
+#### Key Features
+* **Virtual Assistant Builder**: Enables the creation of intelligent virtual assistants.
+* **Multi-Model NLU**: Natural Language Understanding that uses multiple models to better understand user input.
+* **GenAI Framework**: A generative AI framework to enhance automation capabilities.
+
+### Search AI
+Search AI offers AI-powered conversational search tools to quickly and accurately retrieve information from vast datasets and offer the most relevant piece of information to users. You can add multiple data sources to build your answer index, including website crawlers, structured data, unstructured documents, catalogs, and knowledge bases. You can also enrich and enhance your content to meet the specific needs of your users in accordance with your business needs. By combining Automation AI Use Cases and Search AI, businesses can create an exceptional, seamless conversational experience for their users.
+
+#### Key Features
+* **Knowledge AI with LLM**: Integrates large language models to enrich knowledge bases.
+* **Retrieval Augmented Generation**: Enhances information retrieval with generative AI.
+* **Advanced RAG**: An advanced version of retrieval augmented generation for improved search capabilities.
+
+### Contact Center AI
+Contact Center AI offers a conversational AI-native Contact Center-as-a-service solution to enhance customer experience, increase revenue, and reduce operational costs. It helps create consistent, personalized, intelligent, and effortless customer and agent experiences across channels. You can leverage Automation AI Use Cases and Search AI to automate regular customer queries and seamlessly transfer them to a human agent as needed. The new Campaigns module helps streamline outbound voice and web campaigns. It provides templates and analytics to easily create targeted campaigns, reach audiences efficiently, track performance, and achieve goals more effectively.
+
+#### Key Features
+* **Routing & Experience Flows**: Manages the routing of queries and the flow of customer experiences.
+* **Agent Desktop**: Provides a centralized workspace for agents.
+* **Campaigns**: Tools for managing voice and proactive web campaigns.
+
+### Agent AI
+Agent AI is your agent’s personal intelligent Virtual Assistant. It offers AI-native agent assistance to boost your contact center agents’ productivity and customer satisfaction. You can set up AI-powered automation workflows to empower your agents to deliver exceptional customer service by offering real-time assistance, the next best action, built-in Knowledge AI, automated assistance, and real-time guidance.
+
+#### Key Features
+* **Real-time AI suggestions**: Offers live AI-powered guidance to agents.
+* **Auto fulfillment**: Automates the completion of tasks and processes.
+* **Agent Coaching & Playbooks**: Provides resources and strategies for agent training and performance.
+
+### Analytics
+The Analytics Module provides a comprehensive 360-degree view of all voice and digital conversations across channels. It offers insightful dashboards, including containment information, conversation history, automation analytics, generative AI logs and analytics, search analytics, and contact center analytics. The module empowers your teams with data-driven insights, enabling them to make informed decisions to meet their targets.
+
+#### Key Features
+* **Virtual Agent - User Conversational Insights**: Analyzes and provides insights on interactions between users and virtual agents.
+* **Virtual Agent Performance Insights**: Monitors and evaluates the performance of virtual agents.
+* **Contact Center Quality Management Insights**: Offers insights to improve contact center operations.
+
+### Platform Services
+Common services help manage the entire lifecycle of products and services easily. You can configure the settings and the services once and use them across the Platform for all products and services.
+
+#### Key Services
+* **Life cycle management**: Tools for managing the lifecycle of apps and services, including versioning, publishing, and collaboration.
+* **Multi-lingual Support**: Offers support for multiple languages.
+* **Pre-built Integrations**: Provides ready-to-use integrations with other systems.
+* **Generative AI**: Utilizes generative AI across the Platform.
+* **Omnichannel**: Ensures a seamless experience across various communication channels.
+
+### Enterprise Services
+The Platform empowers enterprise customers with additional services.   
+
+#### Key Services
+* **Role-based Access Controls, Audit Logs**: Ensures security and accountability through access management and logging.
+* **Security, Compliance (SOC-2, PCI, FedRAMP, HIPAA, GDPR)**: Compliant with major security and privacy standards.
+* **Cloud and On-Premise Deployments**: Flexible deployment options.
+* **Scalability, Integrations, Authentication, and Authorization**: Ensures the Platform can scale and integrate securely with other systems.
+
+## How Does Everything Work Together?
+<img src="../images/xo-platform-components-flow.png">
