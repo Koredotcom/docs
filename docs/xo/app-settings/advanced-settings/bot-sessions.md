@@ -83,14 +83,14 @@ Conversation Sessions are created for all interactions:
 
 !!! Note
 
-    Discard and Discard all commands only stop the ongoing chat and do not end the Conversation Session.
+    **Discard** and **Discard all** commands only stop the ongoing chat and do not end the Conversation Session.
 
-    For discard all:
+    For **discard all**:
 
     * The Dialog context, Current and Historic Tags are cleared;
     * The Sentiment Tones are reset
 
-    For discard:
+    For **discard**:
 
     * The current Dialog context will be cleared;
     * The Current Tags will be replaced with the last updated ‘tags’ in the Historic Tags, and the Historic Tags would be cleared
