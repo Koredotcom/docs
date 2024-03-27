@@ -18,7 +18,7 @@ Steps to enable the feature:
 2. Select the preferred model from the **Model** drop-down menu for a feature. 
 
 
-    ![alt_text](images/cpf(1).jpg "image_tooltip")
+    ![alt_text](images/cpf(1).jpg  )
 
 3. For a pre-built model, the default prompt is used. For a custom model, you can select the prompt from the **Prompt** drop-down menu. 
 
@@ -63,7 +63,7 @@ Follow these steps:
 1. Go to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
 2. Hover over the feature to view the **Advance Setting** (gear) icon. 
 
-    ![alt_text](images/cpf(3).png "image_tooltip" )
+    ![alt_text](images/cpf(3).png   )
 
 3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed.  
     ![alt_text](images/cpf(2).png )
@@ -100,24 +100,24 @@ Follow these steps:
 1. Go to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
 2. Hover over the feature to view the **Setting** (gear) icon. 
 
-    ![alt_text](images/cpf(4).png "image_tooltip")
+    ![alt_text](images/cpf(4).png  )
 
 3. Click **Edit**. The Actual Response is displayed. 
 
 
-    ![alt_text](images/cpf(5).png "image_tooltip")
+    ![alt_text](images/cpf(5).png  )
 
 4. Click **Configure**. The Post Processor Script is displayed. 
 
 
-    ![alt_text](images/cpf(7).png "image_tooltip")
+    ![alt_text](images/cpf(7).png  )
 
 5. Modify the script and click **Save & Test**. The Response is displayed. 
 
 
 
 
-    ![alt_text](images/cpf(6).png "image_tooltip")
+    ![alt_text](images/cpf(6).png  )
 
 6. Click **Save**.
 
@@ -139,27 +139,6 @@ The following table displays the Co-Pilot features and the supported models.
 (✅ Supported | ❌ Not supported)
 
 
-<!-----
-
-
-
-Conversion time: 0.888 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β35
-* Fri Mar 15 2024 02:07:12 GMT-0700 (PDT)
-* Source doc: Test Migration
-* Tables are currently converted to HTML tables.
------>
 
 
 
@@ -319,7 +298,7 @@ The Platform auto-defines the Entities, Prompts, Error Prompts, Bot Action nodes
 
 
 
-![alt_text](images/cpf(1).gif "image_tooltip")
+![alt_text](images/cpf(1).gif  )
 
 
 **Usage**
@@ -352,7 +331,7 @@ This feature provides a regression tool or a Playbook that creates a conversatio
 
 
 
-![alt_text](images/cpf(2).gif "image_tooltip")
+![alt_text](images/cpf(2).gif  )
 
 
 You can view input/utterance suggestions at every conversation step simulating the various input types and scenarios. This feature helps check if the task/intent is robust enough to handle random user utterances.
@@ -404,12 +383,12 @@ In a contact center environment, the customer interacting with a VA may request 
 
 An example of the usage: When Conversation Summary is enabled and the conversation is transferred to an agent in SmartAssist, the Conversation Summary is displayed on the Agent Console, as shown in the screenshot below.
 
-![alt_text](images/conversation-summary.png "image_tooltip")
+![alt_text](images/conversation-summary.png  )
 
 
 **Usage**
 
-The[ Conversation Summary](../../apis/automation/conversation-summary.md.) public API fetches the summary of the entire conversation included in the transcript. LLM and Generative AI are leveraged to provide a concise and informative conversation summary from the transcript.
+The[ Conversation Summary](../../apis/automation/conversation-summary.md) public API fetches the summary of the entire conversation included in the transcript. LLM and Generative AI are leveraged to provide a concise and informative conversation summary from the transcript.
 
 **Scenario 2**
 
@@ -460,7 +439,7 @@ This feature generates a list of suggested training utterances and NER annotatio
 
 
 
-![alt_text](images/cpf(3).gif "image_tooltip")
+![alt_text](images/cpf(3).gif  )
 
 
 **Usage**
@@ -521,7 +500,7 @@ LLM and Generative AI help generate accurate suggestions automatically without c
 
 
 
-    ![alt_text](images/cpf(1).png "image_tooltip")
+    ![alt_text](images/cpf(1).png  )
 
 
 
