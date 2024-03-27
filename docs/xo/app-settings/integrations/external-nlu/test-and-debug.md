@@ -35,7 +35,7 @@ This is displayed only if an external NLU is enabled. If the API call fails, it 
 
 ### NLP Analysis
 
-By using **NL analysis**, you can see whether the intent was identified or not by an external NLU engine. This works from all the workflows that provide the NLP analysis. For example – **[Talk to Bot](#talk-to-bot), [Utterance Testing](#utterance-testing), [Batch Testing](#batch-testing), [Health and Monitoring](#health-and-monitoring)**, and **[NLP Insights](#nlp-insights)**.
+By using **NL analysis**, you can see whether the intent was identified or not by an external NLU engine. This works from all the workflows that provide the NLP analysis. For example – [Talk to Bot](#test), [Utterance Testing](#utterance-testing), [Batch Testing](#batch-testing), [Health and Monitoring](#health-and-monitoring), and [NLP Insights](#nlp-insights).
 
 See the following sections to understand more details.
  
@@ -78,7 +78,7 @@ If the ExtNLU returns multiple intents, the thresholds met for all those intents
 
 ## Health and Monitoring
 
-In Health and Monitoring go to **Test Cases —> Detailed Analysis** to see the Intents and Entities identified by External NLU, without any scores. The Traits engine is not dependent on the external NLU.
+In Health and Monitoring go to **Test Cases > Detailed Analysis** to see the Intents and Entities identified by External NLU, without any scores. The Traits engine is not dependent on the external NLU.
 
 !!! note
     
