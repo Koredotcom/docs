@@ -72,7 +72,7 @@ To set up the retrieve the verification token, follow these steps:
 
 1. Log in to the Kore.ai XO Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
 2. Select a Virtual Assistant for which you want to configure the Drift agent.
-3. Navigate to **App Settings > Integration > Agent Transfer** and click the **Drift** button.
+3. Navigate to **App Settings > Integration > Agent Transfer** and click the **Drift**.
  
 
 4. Click the Configurations tab and enter the following credentials for the Drift Agent:

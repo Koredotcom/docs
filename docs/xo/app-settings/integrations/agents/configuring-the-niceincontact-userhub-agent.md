@@ -65,9 +65,9 @@ To enable the NiceInContact, follow these steps:
 
 1. Log in to the Kore.ai XO Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
 2. Select a Virtual Assistant for which you want to configure the NiceInContact agent.
-3. Navigate to **Build > Integrations > Agent Transfer** and click the **Nice In Contact(UserHub)** button.
+3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** and click the **Nice In Contact(UserHub)**..
 
-    <img src="../images/configuring-the-niceincontact-userhub-img1.png" alt="Agent transfer - NiceInContact" title="Connection established between Intercom agent and user" style="border: 1px solid gray;">
+
 
 4. Click the **Configurations** tab and enter the following credentials for the NiceInContact Agent:
     1. **Application Client ID**: The client Id of the API application you copied earlier (in Step 2).
