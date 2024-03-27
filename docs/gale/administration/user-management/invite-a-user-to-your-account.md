@@ -21,6 +21,6 @@ As the owner of the account in GALE, you have the authority to invite any user a
 
     An Email is sent to the invitee and the user can access the product now.
 
-!!! note
+    !!! note
 
-    Once the user clicks the **Open Invite** button from the email, the Sign-up page of GALE is displayed. The new user can add a **Full name** and **Password** and create a new account.
+        Once the user clicks the **Open Invite** button from the email, the Sign-up page of GALE is displayed. The new user can add a **Full name** and **Password** and create a new account.
