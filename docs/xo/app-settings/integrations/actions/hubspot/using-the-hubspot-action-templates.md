@@ -6,7 +6,7 @@ Steps to create a dialog task using HubSpot action templates:
 
 1. Ensure that you have [configured HubSpot](configuring-the-hubspot-action.md) and [installed templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates) successfully.
 If you have configured HubSpot and skipped installing the templates, see [Marketplace](../marketplace.md) to install the templates.
-2. Go to **Automation AI** >**Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed. <img src="../images/hubspot-integration-img15.1.png" alt="Auto-created dialog task for each template" title="Auto-created dialog task for each template" style="border: 1px solid gray;zoom:50%;"/>
+2. Go to **Automation AI** >**Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
 2. Click the auto-created dialog. The the canvas opens with all required entity nodes, service nodes, and message scripts.
 
 
@@ -575,7 +575,9 @@ Steps to delete a deal in HubSpot:
 5. Follow the prompts in the VA console to delete a deal as shown below:  
 <img src="../images/hubspot-tem-img26.png" alt="VA prompt to delete deal" title="VA prompt to delete deal" style="border: 1px solid gray;zoom:50%;"/>
 
-**Note**: If you enter an incorrect ID, the _404 – No Record Found_ error message is displayed.
+!!! note
+
+    If you enter an incorrect ID, the _404 – No Record Found_ error message is displayed.
 
 
 ### Create a Contact
@@ -928,4 +930,6 @@ Steps to delete a contact in HubSpot:
 
 3. Refer the step 3 to [train and talk to bot ](#create-a-deal)section and learn how to delete the contact.
 
-**Note**: If you enter an incorrect ID, the _404 – No Record Found_ error message is displayed.
+!!! note
+
+    If you enter an incorrect ID, the _404 – No Record Found_ error message is displayed.
