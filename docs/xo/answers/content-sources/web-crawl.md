@@ -92,7 +92,8 @@ Search AI web crawling supports the two types of authentication - **Basic Authen
 
 **Basic HTTP authentication**: Basic HTTP authentication requires auth credentials and other optional auth parameters to be validated to access the website. The authentication URL may or may not be the same as the source URL. So, to enable access to a website,  provide the values for the following fields.
 ![Basic Auth](../images/basic-auth.png "Basic Auth")
-
+<table>
+  <tr>
   <td>**Field**
 
    </td>
