@@ -1,4 +1,4 @@
-# **Interactions**
+# Interactions Dashboard
 
 
 Interactions store the bot interactions. You can use the logs to review your bot’s performance and troubleshoot issues with conversations. 
@@ -41,7 +41,7 @@ Interactions store the bot interactions. You can use the logs to review your bot
     * Completed: Completed refers to a chat conversation where the task is completed, and the conversation ends.
 
 
-### **Supervisor Actions**
+### Supervisor Actions
 
 Supervisors can view ongoing interactions on the Interactions tab. They can intervene as a supervisor, similar to the Monitor tab, and join, reassign, or change the queue of any interaction visible on the Interactions tab. 
 
@@ -66,7 +66,7 @@ Supervisors can view ongoing interactions on the Interactions tab. They can inte
         <img src="../images/supervisor-actions-2.png" alt="Supervisor Actions 2" title="Supervisor Actions 2" style="border: 1px solid gray; zoom:80%;">
 
 
-## **Search Interactions**
+## Search Interactions
 
 You can find the search field on the top right side of the Interactions tab.
 
@@ -116,12 +116,12 @@ The interaction data can be exported as a .csv file and downloaded to the local 
 
 2. A status message is displayed at the start of the export. On completion, the file is downloaded. 
 
-## **Filters**
+## Filters
 
 To avoid repeatedly filtering your choices, you can create and save multiple filters on the Interactions tab.
 
 
-### **Create Filter**
+### Create Filter
 
 
 
@@ -151,7 +151,7 @@ To avoid repeatedly filtering your choices, you can create and save multiple fil
 A confirmation message is displayed, and the filter is created.
 
 
-#### **Filter for Custom Tags [Beta]**
+#### Filter for Custom Tags [Beta]
 
 You can filter conversations using custom tags. 
 
@@ -186,7 +186,7 @@ Clicking the (-) button deletes a clause.
 The interactions that fulfill the criteria selected in the clauses are displayed.
 
 
-### **Edit Filter**
+### Edit Filter
 
 **Steps to edit a filter**:
 
@@ -209,7 +209,7 @@ A confirmation message is displayed, and the filter is updated.
 
 
 
-### **Copy Filter**
+### Copy Filter
 
 1. Click the **Duplicate** button.
 
@@ -223,7 +223,7 @@ A confirmation message is displayed, and the filter is updated.
  
 A confirmation is displayed and a copy of the filter is created. 
 
-### **Mark as Default**
+### Mark as Default
 
 
 
@@ -236,7 +236,7 @@ A confirmation is displayed and a copy of the filter is created.
     <img src="../images/mark-as-default-2.png" alt="Mark as Default 2" title="Mark as Default 2" style="border: 1px solid gray; zoom:80%;">
 
 
-### **Delete Filter**
+### Delete Filter
 
 
 
@@ -252,7 +252,7 @@ A confirmation is displayed and a copy of the filter is created.
 A confirmation message is displayed and the filter is deleted. 
 
 
-## **Insights to Logs**
+## Insights to Logs
 
 The Insights to Logs section provides details of the conversation between the contact and the agent and is detailed under the CHAT HISTORY tab.
 
@@ -275,7 +275,7 @@ Additionally, you can view media files of the following formats, shared during t
     Clicking the information icon displays the Call ID, Session ID, Conversation ID, Agents, Queues, Status, Mode, CSAT, Disposition, Start time, and End time of the conversation.
 
 
-## **Call Recording**
+## Call Recording
 
 The call recording feature available under CHAT HISTORY can play past conversations between a contact and an agent and is recorded by the system. It is helpful for conversational quality analysis and auditing purposes.  The recorded audio stream is available under CHAT HISTORY in the Insights to Logs panel.
 
