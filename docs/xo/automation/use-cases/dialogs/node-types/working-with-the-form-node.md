@@ -96,7 +96,7 @@ Use the Instance Properties to define any user tags that you want to set.
 To configure this tab, please follow these steps:
 
 1. On the Form window, click the **Instance Properties** tab.
-2. Under the **Custom Tags** section, add tags to build custom profiles of your conversations. [Click here for more](../../../../../analytics/automations/custom-dashboard/custom-meta-tags){:target="_blank"}.
+2. Under the **Custom Tags** section, add tags to build custom profiles of your conversations. [Click here for more](../../../../../xo/analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
 
     <img src="../images/form-node-img11-instance-properties.png" alt="Form node - Instance properties" title="Form node - Instance properties" style="border:1px solid gray;zoom:70%;">
 
