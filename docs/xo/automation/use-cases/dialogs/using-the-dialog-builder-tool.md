@@ -10,9 +10,9 @@ To create a dialog task, you must have already created an assistant to add a dia
 To add a dialog task, follow the steps below:
 
 1. Open the assistant for which you want to create the dialog task.
-2. Click the Automation icon on the left menu.
-3. The Automation menu opens, and the Dialogs page is open by default.
-4. On the Dialogs page, click the Create Dialog button.
+2. Click the **Automation** icon on the left menu.
+3. The Automation menu opens, and the **Dialogs** page is open by default.
+4. On the Dialogs page, click the **Create Dialog** button.
 
     <img src="../images/using-dialog-builder-img1-create-dialog.png" alt="Dialogs" title="Dialogs" style="border:1px solid gray;zoom:60%;">
 
@@ -83,13 +83,13 @@ The nodes and the flow for the Business Logic are automatically built for your c
  
 <img src="../images/using-dialog-builder-img10-create-dialog-genai-dialog-created.png" alt="Gen Ai Dialog created" title="Gen Ai Dialog created" style="border:1px solid gray;zoom:60%;">
 
-### Auto-Generate Dialog Tasks using Pre Built Templates (Draft)
+### Auto-Generate Dialog Tasks using Pre Built Templates (Marketplace)
 
-This option provides you ready-made templates targeting major industry verticals, covering generic use cases related to the industry, and having pre-established integration, and lets you choose a suitable dialog template. You can update the description and generate use cases based on the purpose. This option accelerates development by providing a starting point for common scenarios, ensuring consistency and efficiency. 
+This option provides you ready-made templates targeting major industry verticals, covering generic use cases related to the industry, having pre-established integration, and lets you choose a suitable dialog template. You can update the description and generate use cases based on the purpose. This option accelerates development by providing a starting point for common scenarios, ensuring consistency and efficiency. 
  
-~~1. Click the **Marketplace** option. The **Marketplace** page opens with lists of categories and integrations.~~
+1. Click the **Marketplace** option. The **Marketplace** page opens with lists of categories and integrations.
 
-    ~~<img src="../images/using-dialog-builder-img11-create-dialog-template-search.gif" alt="Template search" title="Template search" style="border:1px solid gray;zoom:60%;">~~
+    <img src="../images/using-dialog-builder-img11-create-dialog-template-search.gif" alt="Template search" title="Template search" style="border:1px solid gray;zoom:60%;">
 
 ~~2. Select the required categories or integrations. The integrations appear in the **Integrations** section.~~
  

@@ -79,9 +79,23 @@ Conversation Sessions are created for all interactions:
 **When does a Conversation Session close?**
 
 * The platform proactively closes inactive sessions after the specified time of inactivity set in the [Manage Sessions ](#manage-sessions)option.
-* When the following utterances are detected – _“Discard”_
 * When the chat window is refreshed ie _“refresh: true”_ is detected.
 
+!!! Note
+
+    **Discard** and **Discard all** commands only stop the ongoing chat and do not end the Conversation Session.
+
+    For **discard all**:
+
+    * The Dialog context, Current and Historic Tags are cleared;
+    * The Sentiment Tones are reset
+
+    For **discard**:
+
+    * The current Dialog context will be cleared;
+    * The Current Tags will be replaced with the last updated ‘tags’ in the Historic Tags, and the Historic Tags would be cleared
+
+    
 **What happens when a Conversation Session closes?**
 
 * Post-session closure, the following information or variables will be cleared:
@@ -93,12 +107,3 @@ Conversation Sessions are created for all interactions:
 * For “_refresh: true_”:
     * Complete session information is cleared;
     * A new conversation session is created.
-
-* For “_discard all_”
-    * The Dialog context, Current and Historic Tags are cleared;
-    * The Sentiment Tones are reset;
-    * The same Conversation Session will be continued
-
-* For “_discard_”
-    * The current Dialog context will be cleared;
-    * The Current Tags will be replaced with the last updated ‘tags’ in the Historic Tags, and the Historic Tags would be cleared.

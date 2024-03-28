@@ -49,32 +49,27 @@ Displays a message from the bot to a user, such as, _Is there anything else I ca
 While any dialog starts at the Intent Node, it is advisable to end it with a Message Node to give a sense of closure to the user as well as to the bot internally.
 
 
-### Bot Action Node
-
-The Bot Action Node can be used for any action that the Virtual Assistant is expected to perform without interaction with the user. Adding a Bot Action Node allows you to use five additional nodes, through which you can add a [service](../working-with-the-service-node/){:target="_blank"}, [script](../working-with-the-script-node/){:target="_blank"}, [webhook](../working-with-the-web-hook-node/){:target="_blank"}, [logic](../working-with-the-logic-node/){:target="_blank"} or [process](../process-nodes/){:target="_blank"}, using dedicated nodes.
-
-
-#### Service Node
+### Service Node
 
 Allows you to call an API. You can also use cURL to build the API request. For more information, refer to [Working with the Service Node](../working-with-the-service-node/){:target="_blank"}.
 
 
-#### Script Node
+### Script Node
 
 The Script Node is used to write custom Javascript JS code in the dialog task. For more information, refer to [Working with the Script Node](../working-with-the-script-node/){:target="_blank"}.
 
 
-#### Logic Node
+### Logic Node
 
 The Logic Node allows developers to use context variables and define complex transition conditions within Bot Action nodes and Dialog Tasks overall. For more details, please refer to  [Working with the Logic Node](../working-with-the-logic-node/){:target="_blank"}.
 
 
-#### WebHook Node
+### WebHook Node
 
 This node is used for server-side validation, executing business logic, or making backend server API calls. To use this node, you must have installed the SDK Tool Kit. For more information, refer to [Working with the WebHook Node](../working-with-the-web-hook-node/){:target="_blank"}.
 
 
-#### Process Node
+### Process Node
 
 Process nodes allow you to connect a Dialog Task to a Process App that you have built within the Kore.ai XO Platform. [Learn more about Process Nodes](../process-nodes/){:target="_blank"}.
 
@@ -119,5 +114,3 @@ Environment Variables are global, reusable components which can be used in multi
 * To define and manage the bot response that is repeated within the bot configuration as variables.
 * Authorization Token
 * Channel-related tokens and URLs
-
-Post the release of v8.1 of the platform, for <span style="text-decoration:underline;">on-prem installations</span>, multiple value sets can be stored for these environment variables using Collections, [refer here for more](../../../../../app-settings/variables/collections){:target="_blank"}.
