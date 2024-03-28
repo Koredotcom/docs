@@ -1,8 +1,8 @@
 
-# What’s New in XO V11.0
+# What’s New in This Release
 
 Learn about the new features and enhancements included in v11.0 of the Kore.ai Experience Optimization (XO) Platform.
-
+<hr>
 The new unified XO platform offers a comprehensive suite of products, features, and services to help businesses leverage conversational AI intelligence and generative AI innovations to deliver exceptional customer experiences, improve operational efficiency, and drive business growth.
 
 Key features and enhancements included in this release are summarized below.
