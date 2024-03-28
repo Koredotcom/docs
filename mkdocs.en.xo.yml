@@ -115,6 +115,17 @@ nav:
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md   
       - Navigating the Platform: getting-started/navigating-the-platform.md
+      - Flows and Channels:
+        - Flows: 
+          - Introduction: channels-and-flows/flows/flows.md
+          - Start Flows: channels-and-flows/flows/flows.md
+          - Exit Flows: channels-and-flows/flows/flows.md
+        - Channels:
+          - Digital:
+            - Channel Enablement: channels/adding-channels-to-your-bot.md  
+          - Voice: 
+            - Kore Voice Gateway: channels-and-flows/flows/flows.md
+            - Third Party Voice:  channels-and-flows/flows/flows.md          
       - Automation AI:
         - About Virtual Assistant: virtual-assistants-overview.md
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
@@ -126,18 +137,7 @@ nav:
         - Set up Contact Center: virtual-assistants-overview.md     
       - Agent AI:
         - About AgentAssist: virtual-assistants-overview.md
-        - Set up AgentAssist: virtual-assistants-overview.md         
-      - Flows and Channels:
-        - Experience Flows: 
-          - Introduction: channels-and-flows/flows/flows.md
-          - Start Flows: channels-and-flows/flows/flows.md
-          - Exit Flows: channels-and-flows/flows/flows.md
-        - Channels:
-          - Digital:
-            - Channel Enablement: channels/adding-channels-to-your-bot.md  
-          - Voice: 
-            - Kore Voice Gateway: channels-and-flows/flows/flows.md
-            - Third Party Voice:  channels-and-flows/flows/flows.md          
+        - Set up AgentAssist: virtual-assistants-overview.md               
     - Release Notes: 
       - What's New in XO v11.0: release-notes/whats-new-in-xo-v11.md
     - Glossary:
