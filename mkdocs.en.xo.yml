@@ -160,7 +160,6 @@ nav:
           - Confirmation Node: automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes.md
           - Message Node: automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md
           - Logic Node: automation/use-cases/dialogs/node-types/working-with-the-logic-node.md
-          - Bot Action Node: automation/use-cases/dialogs/node-types/bot-action-node.md
           - Service Node: automation/use-cases/dialogs/node-types/working-with-the-service-node.md
           - Webhook Node: automation/use-cases/dialogs/node-types/working-with-the-web-hook-node.md
           - Script Node: automation/use-cases/dialogs/node-types/working-with-the-script-node.md
@@ -455,7 +454,8 @@ nav:
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md
         - SDK Security: sdk/sdk-security.md
-        - SDK Registration: sdk/app-registration.md 
+        - SDK Registration: sdk/app-registration.md
+        - SDK Configurations: sdk/sdk-configuration.md
         - Web Socket Connect and RTM: sdk/web-socket-connect-and-rtm.md
         - Installing the BotKit SDK: sdk/installing-the-botkit-sdk.md
         - Using the BotKit SDK: sdk/using-the-botkit-sdk.md

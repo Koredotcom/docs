@@ -5,7 +5,7 @@ You can use the WebHook node to subscribe to a message and to WebHook events tha
 
 ## Create and Register an App
 
-To get access to WebHook events and use WebHook nodes in your dialog task, you need to subscribe and configure an app in the **Deploy > Integrations** tab of your Virtual Assistant. For more information, refer to [SDK Configuration](https://developer.kore.ai/docs/bots/sdks/sdk-configuration/){:target="_blank"}. Let us use the example of an Agent Transfer app.
+To get access to WebHook events and use WebHook nodes in your dialog task, you need to subscribe and configure an app. Let us use the example of an Agent Transfer app.
 
 1. Select the **Deploy** tab from the top menu
 2. On the left menu, click **Integrations > Agent Transfer**.
@@ -86,6 +86,10 @@ Use the Instance Properties to define any user tags that you want to set for the
 
 
 ### Connections Properties
+
+!!! Note
+
+    Connection properties can be seen and accessed only if this is the bottommost node of a sequence.
 
 Since they are contained within Bot Action nodes, Webhook nodes cannot be connected on their own to any other nodes outside the Bot Action node to which they belong. Connections can only be made with nodes contained within the same Bot Action node. 
 
