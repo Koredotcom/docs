@@ -107,9 +107,9 @@ To retrieve the Button ID, follow these steps:
 
 1. Log in to the Kore.ai XO Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
 2. Select a Virtual Assistant for which you want to configure the Salesforce agent.
-3. Navigate to **Build > Integrations > Agent Transfer** and click the **Salesforce** button.
+3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** and click the **Salesforce**.
 
-    <img src="../images/configuring-the-salesforce-agent-img10.png" alt="Agent transfer - Salesforce" title="Agent transfer - Salesforce" style="border: 1px solid gray;zoom:80%;"/>
+   
 
 4. Click the Configurations tab and enter the following credentials for the Salesforce Agent:
     1. **Live Agent URL**: The live agent URL endpoint for the Salesforce, which was copied in step 2.
