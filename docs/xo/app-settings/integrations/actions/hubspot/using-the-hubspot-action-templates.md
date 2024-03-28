@@ -5,8 +5,8 @@ You can use the **Prebuilt Action Templates** from your HubSpot integration to a
 Steps to create a dialog task using HubSpot action templates:
 
 1. Ensure that you have [configured HubSpot](configuring-the-hubspot-action.md) and [installed templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates) successfully.
-If you have configured HubSpot and skipped installing the templates, see [Marketplace](create a page and link it) to install the templates.
-2. Go to **Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed. <img src="../images/hubspot-integration-img15.1.png" alt="Auto-created dialog task for each template" title="Auto-created dialog task for each template" style="border: 1px solid gray;zoom:50%;"/>
+If you have configured HubSpot and skipped installing the templates, see [Marketplace](../marketplace.md) to install the templates.
+2. Go to **Automation AI** >**Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed. <img src="../images/hubspot-integration-img15.1.png" alt="Auto-created dialog task for each template" title="Auto-created dialog task for each template" style="border: 1px solid gray;zoom:50%;"/>
 2. Click the auto-created dialog. The the canvas opens with all required entity nodes, service nodes, and message scripts.
 
 
