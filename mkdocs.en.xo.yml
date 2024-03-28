@@ -121,12 +121,20 @@ nav:
       - Search AI:
         - About Answers: virtual-assistants-overview.md
         - Configure Answers: virtual-assistants-overview.md   
-      - Agent AI:
-        - About AgentAssist: virtual-assistants-overview.md
-        - Set up AgentAssist: virtual-assistants-overview.md       
       - Contact Center AI:
         - About Contact Center: virtual-assistants-overview.md
         - Set up Contact Center: virtual-assistants-overview.md     
+      - Agent AI:
+        - About AgentAssist: virtual-assistants-overview.md
+        - Set up AgentAssist: virtual-assistants-overview.md         
+      - Channels and Flows:
+        - Experience Flows: channels-and-flows/flows/flows.md
+        - Channels:
+          - Digital:
+            - Channel Enablement: channels/adding-channels-to-your-bot.md  
+          - Voice: 
+            - Kore Voice Gateway: channels-and-flows/flows/flows.md
+            - Third Party Voice:  channels-and-flows/flows/flows.md          
     - Release Notes: 
       - What's New in XO v11.0: release-notes/whats-new-in-xo-v11.md
     - Glossary:
@@ -264,8 +272,6 @@ nav:
       - Index Configuration: answers/index-configuration.md
     - Configuration:
       - Answer Configuration: answers/answer-configuration.md
-  - Channels and Flows:
-    - Introduction to Flows: channels-and-flows/flows/flows.md
   - Contact Center AI:
     - Overview: contactcenter/about-contact-center.md 
     - Agent and Supervisors: 
