@@ -50,7 +50,7 @@ Steps to authorize an Asana action using developer credentials:
 5. Click **Save**. When you configure the action for the first time, the Integration Successful pop-up is displayed.  
 <img src="../images/asana-action-img4.png" alt="Save" title="Save" style="border: 1px solid gray;zoom:50%;"/>
 
-!!! note
+    !!! note
 
         The Asana action is moved from Available to Configured region.
 
@@ -101,12 +101,7 @@ Steps to install action templates:
 2. In the Integration Templates dialog, click the **Install** button for a template to begin the installation.  
 <img src="../images/asana-action-img10.png" alt="Install template" title="Install template" style="border: 1px solid gray;zoom:50%;"/>
 
-3. Once the template is installed, click the **Go to Dialog** button to view the dialog task.
-4. A dialog task is automatically created for each installed template.  
-<img src="../images/asana-action-img11.png" alt="Dialog task created" title="Dialog task created" style="border: 1px solid gray;zoom:50%;"/>
+3. Once the template is installed, the associated dialog task is auto-created and displayed on the Dialogs page.  Click **Go to Dialog** or go to **Automation AI** >**Virtual Assistant** > **Use Cases** > **Dialogs**.
 
-5. Alternatively, you can create a new dialog task and select the Asana integration to select the dialog task from the templates and click **Proceed**. For example, select the **Get Task by Id** task.  
-<img src="../images/asana-action-img12.png" alt="Select task" title="Select task" style="border: 1px solid gray;zoom:50%;"/>
+4. To start using the templates, see [Using Asana Templates](using-the-asana-action-templates.md).  
 
-6. Once you click **Proceed**, the dialog task is auto-created, and the canvas opens with all required entity nodes, service nodes, and message scripts.  
-<img src="../images/asana-action-img13.png" alt="Dialog task canvas" title="Dialog task canvas" style="border: 1px solid gray;zoom:50%;"/>
