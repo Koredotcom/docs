@@ -70,7 +70,7 @@ After completing the above configurations, make the required changes in the &lt;
 4. Under the Unblu section, make the below changes:
 
     1. Paste Unblu credentials under the **Unblu credentials** section.
-    2. Under the **external_messenger**section, enter the name, description, etc., you want to display in the chat.  
+    2. Under the **external_messenger** section, enter the name, description, etc., you want to display in the chat.  
       
         To access the external messenger details,
         
