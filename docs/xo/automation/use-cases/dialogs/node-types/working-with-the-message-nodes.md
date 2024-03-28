@@ -50,15 +50,10 @@ Setting up a Message node in a dialog task involves the following steps:
 2. Under the **Bot Responses** section, compose and format the bot response either as plain text or as a JavaScript message. A default message is set by the platform, you can customize it.
 3.  Enter channel-specific messages for bot responses using the **Manage** link. For more information, read the [Using the Prompt Editor](../../prompt-editor/){:target="_blank"} article.
 4. To add more bot responses, click **Add Bot Response** and repeat the above steps.
-5. Use the **Rephrase Responses** to rewrite VA replies using AI based on conversation,context and user emotions. For Message nodes, this feature helps rephrase the responses entered under _Bot Responses_. To see this feature in your node’s Component Properties, enable the [OpenAI](../../../../../app-settings/integrations/actions/open-ai/configuring-the-openai-action){:target="_blank"} or [Azure-OpenAI](../../../../../app-settings/integrations/actions/azure-open-ai/configuring-the-azure-openai-action){:target="_blank"} integration and the **Dynamic Prompt and Message Rephrasing** feature under [LLM and Generative AI](https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/#Enable_LLM_Features){:target="_blank"}.
-
-    !!! Note
-    
-        By default, this feature is disabled for each node. Turn on the toggle to enable Rephrase Responses.
-
+5. Use the **Rephrase Responses** to rewrite VA replies using AI based on conversation,context and user emotions. For Message nodes, this feature helps rephrase the responses entered under _Bot Responses_. To see this feature in your node’s Component Properties, enable the [OpenAI](../../../../../app-settings/integrations/actions/open-ai/configuring-the-openai-action){:target="_blank"} or [Azure-OpenAI](../../../../../app-settings/integrations/actions/azure-open-ai/configuring-the-azure-openai-action){:target="_blank"} integration and the **Dynamic Prompt and Message Rephrasing** feature under [LLM and Generative AI](https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/#Enable_LLM_Features){:target="_blank"}. By default, this feature is disabled for each node. Turn on the toggle to enable Rephrase Responses.
 Adjusting the settings allows you to fine-tune the model’s behavior to meet your needs. **The default settings work fine for most cases**. However, if required, you can tweak the settings and find the right balance for your use case.
     
-    <img src="../images/message-node-img1-rephrase-response.png" alt="Message node - Rephrase Responses" title="Message node - Rephrase Responses" style="border:1px solid gray;zoom:70%;">
+     <img src="../images/message-node-img1-rephrase-response.png" alt="Message node - Rephrase Responses" title="Message node - Rephrase Responses" style="border:1px solid gray;zoom:70%;">
     
     * **Model**: The default model for which the settings are displayed. You can choose another supported mode if it’s configured. If you select a non-default model, it’s used for this node only. If you want to change the default model, you can select the model in the drop-down list and use the **Mark Default** option shown next to its name.
     * **No of previous user inputs**: Configure the **number of previous user inputs** to define  how many previous user messages should be sent to OpenAI as context based on which to rephrase the response sent through the node. You can choose between 0 and 5, where 0 means that no previous input is considered, while 5 means that the previous 5 responses are sent as context.
@@ -66,6 +61,7 @@ Adjusting the settings allows you to fine-tune the model’s behavior to meet yo
     * **Temperature**: The setting controls the randomness of the model’s output. A higher temperature, like 0.8 or above, can result in unexpected, creative, and less relevant responses. On the other hand, a lower temperature, like 0.5 or below, makes the output more focused and relevant.
     * **Max Tokens**: It indicates the total number of tokens used in the API call to the model. It affects the cost and the time taken to receive a response. A token can be as short as one character or as long as one word, depending on the text.
     * **Fallback Behaviour**: If the rephrase response fails, use the original user query. 
+
 
 ### Generate Message as Report Link (Optional)
 
