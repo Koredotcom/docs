@@ -4,8 +4,8 @@ You can use the **Prebuilt Action Templates** from your HubSpot integration to a
 
 Steps to create a dialog task using HubSpot action templates:
 
-1. Go to **Build > Conversation Skills**, and then click the **Dialog Tasks**.
-2. Click **Create a Dialog Task**.  
+1. Go to **Virtual Assitant** > **Use Cases** > **Dialogs**.
+2. Click **Create Dialog**.  
 <img src="../images/hubspot-tem-img1.png" alt="Create a Dialog Task" title="Create a Dialog Task" style="border: 1px solid gray;zoom:50%;"/>
 
 3. On the Dialog Task pop-up, under the **Integration**, select the **HubSpot** option to view the action templates.  
