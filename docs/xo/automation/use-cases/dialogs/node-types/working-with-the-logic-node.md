@@ -60,7 +60,8 @@ Use the Instance Properties to define any user tags that you want to set.
 
 !!! Note
     
-    The conditions configured here are applicable only for this instance and will not affect this node when being used in any other dialog.
+    * Connection properties can be seen and accessed only if this is the bottommost node of a sequence.
+    * The conditions configured here are applicable only for this instance and will not affect this node when being used in any other dialog.
 
 To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions/){:target="_blank"}
 
