@@ -436,10 +436,9 @@ nav:
       - Interactions: analytics/contact-center/interactions.md    
   - Administration:
     - Deployment:
-      - Channel Enablement: channels/adding-channels-to-your-bot.md
       - App Versioning: deploy/bot-versioning.md
       - Publishing your App: deploy/publishing-bot.md
-      - Import & Export: manage-assistant/bot-management.md      
+      - Import & Export App: manage-assistant/bot-management.md      
     - App Settings:
       - App Profile: app-settings/app-profile.md
       - Language Management:
