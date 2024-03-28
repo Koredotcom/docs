@@ -117,9 +117,9 @@ nav:
       - Navigating the Platform: getting-started/navigating-the-platform.md
       - Flows and Channels:
         - Flows: 
-          - Introduction: flows/flows/flows.md
-          - Start Flows: flows/flows.md
-          - Exit Flows: flows/flows.md
+          - Introduction: flows/introduction-to-flows.md
+          - Start Flows: flows/introduction-to-flows.md
+          - Exit Flows: flows/introduction-to-flows.md
         - Channels:
           - Digital:
             - Channel Enablement: channels/adding-channels-to-your-bot.md  
