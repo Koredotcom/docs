@@ -50,7 +50,7 @@ The Form Component Properties allow you to configure a variety of settings and p
 3. In the **Error Prompts** text box, review the default error message, and if required modify it. For more information, refer to [Using the Prompt Editor](../../prompt-editor/){:target="_blank"}.
 4. In the **Submit Prompts** text box, review the default message that is displayed after successful submission of the form, and if required, modify it. This message is applicable only when the UI Form is opened in a browser tab.  
 Steps to personalize form submission prompt for **Mobile/Web SDK**:
-    1. In the **Submit Prompts** section, click **Add a prompt  **.  
+    1. In the **Submit Prompts** section, click **Add a prompt**.  
         
         <img src="../images/form-node-img5-add-submit-prompt.png" alt="Add submit prompt" title="Add submit prompt" style="border:1px solid gray;zoom:70%;">
 
@@ -58,7 +58,7 @@ Steps to personalize form submission prompt for **Mobile/Web SDK**:
        
     3. Write or change the message as appropriate.
 
-       <img src="../images/form-node-img7-change-message.png" alt="Change message" title="Change message" style="border:1px solid gray;zoom:70%;">
+         <img src="../images/form-node-img7-change-message.png" alt="Change message" title="Change message" style="border:1px solid gray;zoom:70%;">
 
     For more information, refer to [Using the Prompt Editor](../../prompt-editor/){:target="_blank"}.
 
