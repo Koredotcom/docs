@@ -264,6 +264,8 @@ nav:
       - Index Configuration: answers/index-configuration.md
     - Configuration:
       - Answer Configuration: answers/answer-configuration.md
+  - Channels and Flows:
+    - Introduction to Flows: channels-and-flows/flows/flows.md
   - Contact Center AI:
     - Overview: contactcenter/about-contact-center.md 
     - Agent and Supervisors: 
