@@ -127,8 +127,11 @@ nav:
       - Agent AI:
         - About AgentAssist: virtual-assistants-overview.md
         - Set up AgentAssist: virtual-assistants-overview.md         
-      - Channels and Flows:
-        - Experience Flows: channels-and-flows/flows/flows.md
+      - Flows and Channels:
+        - Experience Flows: 
+          - Introduction: channels-and-flows/flows/flows.md
+          - Start Flows: channels-and-flows/flows/flows.md
+          - Exit Flows: channels-and-flows/flows/flows.md
         - Channels:
           - Digital:
             - Channel Enablement: channels/adding-channels-to-your-bot.md  
