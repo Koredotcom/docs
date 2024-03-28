@@ -22,6 +22,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     * **Virtual Assistant Builder**: Enables the creation of intelligent virtual assistants.
     * **Multi-Model NLU**: Natural Language Understanding that uses multiple models to better understand user input.
     * **GenAI Framework**: A generative AI framework to enhance automation capabilities.  
+    
     [Learn more about Automation AI features :octicons-arrow-right-24:](../automation/about-automation.md)
 
 === "Search AI"
@@ -33,6 +34,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     * **Knowledge AI with LLM**: Integrates large language models to enrich knowledge bases.
     * **Retrieval Augmented Generation**: Enhances information retrieval with generative AI.
     * **Advanced RAG**: An advanced version of retrieval augmented generation for improved search capabilities.  
+    
     [Learn more about Search AI features :octicons-arrow-right-24:](../answers/about-answers.md)
 
 === "Contact Center AI"
@@ -44,6 +46,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     * **Routing & Experience Flows**: Manages the routing of queries and the flow of customer experiences.
     * **Agent Desktop**: Provides a centralized workspace for agents.
     * **Campaigns**: Tools for managing voice and proactive web campaigns.  
+    
     [Learn more about Contact Center features :octicons-arrow-right-24:](../contactcenter/about-contact-center.md)
 
 === "Agent AI"
@@ -55,6 +58,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     * **Real-time AI suggestions**: Offers live AI-powered guidance to agents.
     * **Auto-fulfillment**: Automates the completion of tasks and processes.
     * **Agent Coaching & Playbooks**: Provides resources and strategies for agent training and performance.  
+    
     [Learn more about Agent AI features :octicons-arrow-right-24:](../agentassist/about-agentassist.md)
 
 === "Analytics"
@@ -66,6 +70,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     * **Virtual Agent - User Conversational Insights**: Analyzes and provides insights on interactions between users and virtual agents.
     * **Virtual Agent Performance Insights**: Monitors and evaluates the performance of virtual agents.
     * **Contact Center Quality Management Insights**: Offers insights to improve contact center operations.  
+    
     [Learn more about Analytics features :octicons-arrow-right-24:](../analytics/introduction.md)
 
 === "Platform Services"
@@ -79,6 +84,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     * **Pre-built Integrations**: Provides ready-to-use integrations with other systems.
     * **Generative AI**: Utilizes generative AI across the Platform.
     * **Omnichannel**: Ensures a seamless experience across various communication channels.  
+    
     [Learn more about Common Services :octicons-arrow-right-24:](../app-settings/app-profile.md)
 
 === "Enterprise Services"
@@ -91,6 +97,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     * **Security, Compliance (SOC-2, PCI, FedRAMP, HIPAA, GDPR)**: Compliant with major security and privacy standards.
     * **Cloud and On-Premise Deployments**: Flexible deployment options.
     * **Scalability, Integrations, Authentication, and Authorization**: Ensures the Platform can scale and integrate securely with other systems.  
+    
     [Learn more about Enterprise Services :octicons-arrow-right-24:](../administration/adminconsole.md)
     
 <hr>
