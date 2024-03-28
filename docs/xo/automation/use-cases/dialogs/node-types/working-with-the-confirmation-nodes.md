@@ -60,6 +60,8 @@ Adjusting the settings allows you to fine-tune the model’s behavior to meet yo
     * **Additional Instruction**: Add a brief description of the use case context to guide the model.
     * **Temperature**: The setting controls the randomness of the model’s output. A higher temperature, like 0.8 or above, can result in unexpected, creative, and less relevant responses. On the other hand, a lower temperature, like 0.5 or below, makes the output more focused and relevant.
     * **Max Tokens**: It indicates the total number of tokens used in the API call to the model. It affects the cost and the time taken to receive a response. A token can be as short as one character or as long as one word, depending on the text.
+    * **Fallback Behaviour**: If the rephrase response fails, use the original user query. 
+
 
 4. Add context-specific **Synonyms** for _Yes_ and _No_ within the Confirmation node to suit the dialog’s context. The Platform can identify the emojis in user utterance and consider them for confirmation/rejection, for example, a thumbs-up emoji will be taken to mean confirmation from the user.
     
