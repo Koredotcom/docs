@@ -3,8 +3,8 @@ hide:
   - toc
   - feedback
 ---
-# About Answers
-The Answers module offers AI-powered conversational search tools to quickly and accurately retrieve information from vast datasets and offer the most relevant piece of information to users. Add multiple data sources for building your answer index, including website crawlers, structured data, unstructured documents, catalogs, and knowledge bases. Enrich and enhance your content to meet the specific needs of your users in accordance with your business needs. By combining automation Use Cases and Answers, you can create an exceptional, seamless conversational experience for your users.
+# About Search AI
+Search AI offers AI-powered conversational search tools to quickly and accurately retrieve information from vast datasets and offer the most relevant piece of information to users. Add multiple data sources for building your answer index, including website crawlers, structured data, unstructured documents, catalogs, and knowledge bases. Enrich and enhance your content to meet the specific needs of your users in accordance with your business needs. By combining automation Use Cases and Answers, you can create an exceptional, seamless conversational experience for your users.
 
 <kr-grid type="g2">
     <kr-grid-item>

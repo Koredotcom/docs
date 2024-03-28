@@ -22,6 +22,7 @@ To access webhooks and messages in Dialog tasks, you need to subscribe to an app
     <img src="../images/sdk-config-img2-create-jwt-app.png" alt="Create JWT App" title="Create JWT App" style="border:1px solid gray;zoom:70%;">
 
 3. The **App Created Successfully** message appears along with the **Client ID** and the **Client Secret**. Click **Done.**
+
     <img src="../images/sdk-config-img3-jwt-app-client-id-secret.png" alt="Client ID and Client Secret" title="Client ID and Client Secret" style="border:1px solid gray;zoom:70%;">
 
 4. The following fields appear:
