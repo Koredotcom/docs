@@ -92,73 +92,64 @@ Search AI web crawling supports the two types of authentication - **Basic Authen
 
 **Basic HTTP authentication**: Basic HTTP authentication requires auth credentials and other optional auth parameters to be validated to access the website. The authentication URL may or may not be the same as the source URL. So, to enable access to a website,  provide the values for the following fields.
 ![Basic Auth](../images/basic-auth.png "Basic Auth")
+
 <table>
   <tr>
-  <td>**Field**
-
+   <td><strong>Field</strong>
    </td>
-   <td>**Description**
-
+   <td><strong>Description</strong>
    </td>
+  </tr>
   <tr>
-   <td>**Username or email**
-
+   <td><strong>Username or email</strong>
    </td>
    <td>Username or email address, whichever is used to identify the user.
-
    </td>
   </tr>
   <tr>
-   <td>**Password**
-
+   <td><strong>Password</strong>
    </td>
    <td>Password corresponding to the username specified above.
-
    </td>
   </tr>
   <tr>
-   <td>**Authorization Field**
-
+   <td><strong>Authorization Field</strong>
    </td>
    <td>Additional field, if any, required by the authentication site for authorization. This is an optional field. You can add one or more auth fields. You can also choose how to send the field and its value in the request like as part of the request header, payload, query string, or as a path parameter. These fields can be used when the authentication URL requires additional fields than the standard ones. For example, if a URL requires an employee ID along with the username and password, add the employee ID to the request using the auth field. 
-
    </td>
   </tr>
   <tr>
-   <td>**Authentication URL**
-
+   <td><strong>Authentication URL</strong>
    </td>
    <td>Provide the authentication URL where the identity is to be authenticated. This may or may not be the same as the source URL. 
-
    </td>
   </tr>
   <tr>
-   <td>**Test Type**
-
+   <td><strong>Test Type</strong>
    </td>
    <td>The type of test to be performed on the response from the authentication URL upon sending the auth request. This field can take one of the following three values:
+<ul>
 
+<li><strong>Text Presence</strong>: When a specific keyword or text is expected to be returned in the response.
 
+<li><strong>Redirection to</strong>: When successful authentication is expected to redirect the user to another URL in response.  
 
-* **Text Presence**: When a specific keyword or text is expected to be returned in the response.
-* **Redirection to**: When successful authentication is expected to redirect the user to another URL in response.  
-* **Status Code**: When the response is expected to have a particular value of HTTP status code. 
+<li><strong>Status Code</strong>: When the response is expected to have a particular value of HTTP status code. 
+</li>
+</ul>
    </td>
   </tr>
   <tr>
-   <td>
-**Test value**
-
+   <td><strong>Test value</strong>
    </td>
-   <td>Expected response from the authentication URL on sending the auth request. This value depends upon the value of the Test Type. For example, if you set Test Type to **_Status code_**, set this to appropriate status code values like 200 (OK), 201(Created), etc. Similarly, if you expect certain keywords or text in the response, set Test Type to **_Text Presence_** and provide the expected value in Test Value. 
-
+   <td>Expected response from the authentication URL on sending the auth request. This value depends upon the value of the Test Type. For example, if you set Test Type to <strong><em>Status code</em></strong>, set this to appropriate status code values like 200 (OK), 201(Created), etc. Similarly, if you expect certain keywords or text in the response, set Test Type to <strong><em>Text Presence</em></strong> and provide the expected value in Test Value. 
    </td>
   </tr>
-Note: 
+</table>
 
 
-
-* For increased security, ensure that the websites use a secure communication protocol (HTTPS). 
+!!!note
+    For increased security, ensure that the websites use a secure communication protocol (HTTPS). 
 
 **Form-based authentication**: In this type of authentication,  auth information is required in the form of fields in a form. On the first successful authentication, the session is maintained, and used for subsequent requests.  Enter the values for the following fields to configure form-based authentication.
 
@@ -219,7 +210,6 @@ Note:
    </td>
   </tr>
 </table>
-
 
 ## Updating an existing web crawler
 
