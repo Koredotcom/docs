@@ -60,16 +60,6 @@ extra:
           note: >- 
             Thanks for your feedback! Help us improve this page by
             using our <a href="https://community.kore.ai/" target="_blank" rel="noopener">feedback form</a>.  
-  alternate:
-    - name: en - English 
-      link: https://docsinternal-kore.github.io/docs/en
-      lang: en
-    - name: ja - 日本語 
-      link: https://docsinternal-kore.github.io/docs/ja
-      lang: ja  
-    - name: ko - 한국어 
-      link: https://docsinternal-kore.github.io/docs/ko
-      lang: jako   
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -138,7 +128,7 @@ nav:
         - About Contact Center: virtual-assistants-overview.md
         - Set up Contact Center: virtual-assistants-overview.md     
     - Release Notes: 
-      - What's New in XO v11.0: virtual-assistants-overview.md
+      - What's New in XO v11.0: release-notes/whats-new-in-xo-v11.md
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
   - Automation AI: 
