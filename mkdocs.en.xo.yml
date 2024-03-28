@@ -119,24 +119,25 @@ markdown_extensions:
 copyright: |
   © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
-  - Platform : home.md
-  - Getting Started:
+  - Home : home.md
+  - Platform:
     - Overview: getting-started/about-xo-platform.md
-    - XO Platform:
-      - Accessing the Platform: getting-started/accessing-the-platform.md   
-      - Navigating the Platform: getting-started/navigating-the-platform.md
-      - Automation AI:
-        - About Virtual Assistant: virtual-assistants-overview.md
-        - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
-      - Search AI:
-        - About Answers: virtual-assistants-overview.md
-        - Configure Answers: virtual-assistants-overview.md   
-      - Agent AI:
-        - About AgentAssist: virtual-assistants-overview.md
-        - Set up AgentAssist: virtual-assistants-overview.md       
-      - Contact Center AI:
-        - About Contact Center: virtual-assistants-overview.md
-        - Set up Contact Center: virtual-assistants-overview.md     
+    - Accessing the Platform: getting-started/accessing-the-platform.md   
+    - Navigating the Platform: getting-started/navigating-the-platform.md
+    - Automation AI:
+      - About Virtual Assistant: virtual-assistants-overview.md
+      - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
+    - Search AI:
+      - About Answers: virtual-assistants-overview.md
+      - Configure Answers: virtual-assistants-overview.md   
+    - Agent AI:
+      - About AgentAssist: virtual-assistants-overview.md
+      - Set up AgentAssist: virtual-assistants-overview.md       
+    - Contact Center AI:
+      - About Contact Center: virtual-assistants-overview.md
+      - Set up Contact Center: virtual-assistants-overview.md     
+    - Release Notes: 
+      - What's New in XO v11.0: virtual-assistants-overview.md
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
   - Automation AI: 
