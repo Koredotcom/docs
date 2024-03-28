@@ -57,6 +57,7 @@ Steps to personalize form submission prompt for **Mobile/Web SDK**:
     2. In the additional prompt editor, select **Web/Mobile Client**.
        
     3. Write or change the message as appropriate.
+    
        <img src="../images/form-node-img7-change-message.png" alt="Change message" title="Change message" style="border:1px solid gray;zoom:70%;">
 
     For more information, refer to [Using the Prompt Editor](../../prompt-editor/){:target="_blank"}.
