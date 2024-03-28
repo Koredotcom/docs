@@ -47,7 +47,7 @@ AgentAssist lets you create two types of playbooks:
     4. Enter a tag name in the **Tags** field and then press the **Enter** key to save a new tag. For existing tags, click the **Tags** field to select.
     5. Select an option about how the steps should progress in the **Step Progression** field.
     6. Select a channel under the **Channels** section.
-For help, refer to the [Field Description-General Settings](#field-description-–-general-settings) section.
+For help, refer to the [Field Description](#field-description-general-settings) section.
 5. Click **Save**. The new Primary Playbook appears with the default creation of two stages (Open and Close) and a few steps under each stage.
 <img src="../playbook-images/primary-playbook-creation-process-completion.png" alt="primary-playbook-creation-process-completion" title="primary-playbook-creation-process-completion" style="border: 1px solid gray; zoom:80%;">
 
