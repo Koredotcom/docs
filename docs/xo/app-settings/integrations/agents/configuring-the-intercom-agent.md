@@ -1,6 +1,6 @@
 # Configuring the Intercom Agent
 
-Intercom is a Customer Communications Platform. It shows you who is using your product or website and makes it easy to communicate . Kore.ai XO Platform’s Intercom Agent integration allows you to seamlessly hand-off the virtual assistant conversations to your live agents on Intercom. 
+Intercom is a Customer Communications Platform. It shows you who is using your product or website and makes it easy to communicate. Kore.ai XO Platform’s Intercom Agent integration allows you to seamlessly hand-off the virtual assistant conversations to your live agents on Intercom. 
 
 This post provides the configuration steps to be followed to enable the Intercom Agent integration. Use the configurations provided below as general guidelines as there could be some differences based on the version of the Intercom that you are using. 
 
@@ -71,9 +71,7 @@ To set up Intercom to receive messages, you will first need to create an app in 
 
 1. Log in to the Kore.ai XO Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}
 2. Select a Virtual Assistant for which you want to configure the Intercom agent. 
-3. Navigate to **Build > Integrations > Agent Transfer** and click the **Intercom** button.
-
-    <img src="../images/configuring-the-intercom-agent-img4.png" alt="Agent Transfer - Intercom" title="Agent Transfer - Intercom" style="border: 1px solid gray;">
+3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** and click the **Intercom**.
 
 4. Click the **Configurations** tab and enter the following credentials for the Intercom Agent:
     1. **Access Token**: The access token ID for the Intercom, which was copied step 2.

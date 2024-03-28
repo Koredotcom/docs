@@ -55,9 +55,9 @@ Before enabling the HubSpot CRM actions, complete the following prerequisites:
 
 Steps to enable the HubSpot action:
 
-1. Go to **Build > Integrations** and select the **Actions** menu item.
-2. Once you click the **Actions** menu, all integrations are shown in the **Available** region. Select the **HubSpot** action.  
-<img src="../images/hubspot-integration-img1.png" alt="Available actions-Hubspot" title="Available actions-Hubspot" style="border: 1px solid gray;zoom:50%;"/>
+1. Go to **App Settings** > **Integrations** > **Actions**.
+2. In the **Available** section, select the **HubSpot**.  
+
 
 ### Pre-authorize the Integration
 
@@ -67,7 +67,7 @@ You can authorize the integration using developer credentials. The developer aut
 
 Steps to authorize a HubSpot action using developer credentials:
 
-* Go to **Build > Integrations** and select the **Actions** menu item.
+* Go to **App Settings** > **Integrations** > **Actions**
 * Select the **HubSpot** action in the **Available Actions** region.
 * In the **Configurations** dialog, select the **Authorization** tab 
 * Enter the following details:
@@ -122,7 +122,9 @@ Steps to authorize a HubSpot action using developer credentials:
     * Click **Enable**. When you configure the action for the first time, the **Integration Successful**  pop-up is displayed.  
     <img src="../images/hubspot-integration-img9.png" alt="Enable integration" title="Enable integration" style="border: 1px solid gray;zoom:50%;"/>
 
-**Note**: You will notice the HubSpot action is moved from _Available_ to _Configured_ region.
+!!! note
+
+    You will notice the HubSpot action is moved from _Available_ to _Configured_ region.
 
 
 ### Allow End User to Authorize
@@ -133,7 +135,7 @@ Steps to authorize a HubSpot action at a user level:
 
 
 
-1. Go to **Build > Integrations** and select the **Actions** menu item.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Select the **HubSpot** action in the **Available Actions** region.
 3. In the Configurations dialog, select the **Authorization** tab 
 4. Enter the following details: 
@@ -170,16 +172,14 @@ Once you have configured a HubSpot CRM Integration, you can explore and install 
 Steps to install action templates:
 
 1. On the Integration Successful dialog, click the **Explore Templates** button to view the templates.  
-<img src="../images/hubspot-integration-img13.png" alt="Explore templates" title="Explore templates" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/hubspot-integration-img9.png" alt="Explore templates" title="Explore templates" style="border: 1px solid gray;zoom:50%;"/>
 
 2. In the Integration Templates dialog, click the **Install** button to begin the installation.  
 <img src="../images/hubspot-integration-img14.png" alt="Begin template installation" title="Begin template installation" style="border: 1px solid gray;zoom:50%;"/>
 
-3. Once the template is installed, click the **Go to Dialog** button to open the dialog task.
-4. Once all templates are installed, a dialog task for each template is auto-created.  
-<img src="../images/hubspot-integration-img15.png" alt="Auto-created dialog task for each template" title="Auto-created dialog task for each template" style="border: 1px solid gray;zoom:50%;"/>
+3. Once the template is installed, the dialog task is auto-created and displayed on the Dialogs page.  Click **Go to Dialog**.
 
-5. You can also select the desired dialog task from the templates, and click **Proceed**. For example, select the **Create a Deal** task.  
-<img src="../images/hubspot-integration-img16.png" alt="Select desired dialog task to integrate" title="Select desired dialog task to integrate" style="border: 1px solid gray;zoom:50%;"/>
+4. To start using the templates, see [Using HubSpot Templates](using-the-hubspot-action-templates.md).  
 
-6. Once you click **Proceed**, the dialog task is auto-created and the canvas opens with all required entity nodes, service nodes, and message scripts.
+
+

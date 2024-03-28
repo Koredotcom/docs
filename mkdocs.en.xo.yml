@@ -119,10 +119,10 @@ markdown_extensions:
 copyright: |
   © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owners.
 nav:
-  - Platform : home.md
-  - Getting Started:
-    - Overview: getting-started/xo-platform-overview.md
-    - XO Platform:
+  - Home : home.md
+  - Platform:
+    - Overview: getting-started/about-xo-platform.md
+    - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md   
       - Navigating the Platform: getting-started/navigating-the-platform.md
       - Automation AI:
@@ -137,6 +137,8 @@ nav:
       - Contact Center AI:
         - About Contact Center: virtual-assistants-overview.md
         - Set up Contact Center: virtual-assistants-overview.md     
+    - Release Notes: 
+      - What's New in XO v11.0: virtual-assistants-overview.md
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
   - Automation AI: 
