@@ -4,10 +4,9 @@ The Form node lets you integrate [Digital Forms](https://docsinternal-kore.githu
 
 The primary purpose of the Form node is to represent a UI Form in the dialog task and make the form available for end-users on their channel. For example, let us consider a travel assistant that has a form to capture the customer details to make a new booking. During this process, you may want to use the form instead of prompting for each and every entity value.
 
-
 ## Add the Node
 
-Before you can begin setting up a Form node, you need to have previously created a Digital Form to use within the node. 
+Before you can begin setting up a Form node, you need to have previously created a Digital Form to use within the node.
 
 To add a form node to the dialog task, follow the below steps:
 
@@ -35,11 +34,9 @@ To add a form node to the dialog task, follow the below steps:
 
     ![alt_text](images/image4.png "image_tooltip")
 
-
 ## Configure the Node
 
 This configuration applies to the Form Node Type – regardless of whether it is standalone by selecting Only UI Form during setup, or whether it is part of a Form & Conversation Experience.
-
 
 ### Component Properties
 
@@ -47,7 +44,7 @@ This configuration applies to the Form Node Type – regardless of whether it is
 
     The configurations you set up or modify in this section are reflected in all other dialog tasks that use this node.
 
-The Form Component Properties allow you to configure a variety of settings and prompts related to your Form Node, as follows: 
+The Form Component Properties allow you to configure a variety of settings and prompts related to your Form Node, as follows:
 
 1. On the **Component Properties** tab, under the **General Settings** section, enter a **Name** and **Display Name** for the form node. Node names cannot contain spaces, but the Display Name can.
 2. In the **User Prompts** text box, enter the prompt message that you want the user to see for this form. It should instruct the user to click on the link to initiate the form. It is not recommended to change the context variable reference (of the form {{context.form_node.formLink}})coded therein. You can enter channel-specific messages for user prompts. For more information, refer to [Using the Prompt Editor](../../prompt-editor/){:target="_blank"}.
@@ -94,8 +91,6 @@ Steps to personalize form submission prompt for **Mobile/Web SDK**:
     
         The target node has to be in the same dialog, you cannot make a jump to a target node outside the current dialog. The list of target nodes only shows the local nodes. If the target node is not present during runtime, the platform presents the error Error in continuing the conversation, and the task should get discarded.
 
-
-
 ### Instance Properties
 
 Use the Instance Properties to define any user tags that you want to set.
@@ -111,9 +106,11 @@ To configure this tab, please follow these steps:
 
     <img src="../images/form-node-img11-instance-properties.png" alt="Form node - Instance properties" title="Form node - Instance properties" style="border:1px solid gray;zoom:70%;">
 
-
-
 ### Connections Properties
+
+!!! Note
+
+    If the node is at the bottom in the sequence, then only the connection property is visible.
 
 From the node’s **Connections** tab, you can determine the node in the dialog task to execute next. You can write the conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions.
 
