@@ -1,26 +1,21 @@
 # Using the HubSpot Action Templates
 
-You can use the **Prebuilt Action Templates** from your HubSpot integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
+You can use the **Prebuilt Action Templates** from your HubSpot integration to auto-create dialog tasks and test them using the **Talk to Bot** option. 
 
 Steps to create a dialog task using HubSpot action templates:
 
-1. Go to **Virtual Assitant** > **Use Cases** > **Dialogs**.
-2. Click **Create Dialog**.  
-<img src="../images/hubspot-tem-img1.png" alt="Create a Dialog Task" title="Create a Dialog Task" style="border: 1px solid gray;zoom:50%;"/>
-
-3. On the Dialog Task pop-up, under the **Integration**, select the **HubSpot** option to view the action templates.  
-<img src="../images/hubspot-tem-img2.png" alt="Integration - Hubspot" title="Integration - Hubspot" style="border: 1px solid gray;zoom:50%;"/>
+1. Ensure that you have [configured HubSpot](configuring-the-hubspot-action.md) and [installed templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates) successfully.
+If you have configured HubSpot and skipped installing the templates, see [Marketplace] to install the templates.
+2. Go to **Virtual Assistant** > **Use Cases** > **Dialogs**.  <img src="../images/hubspot-integration-img15.1.png" alt="Auto-created dialog task for each template" title="Auto-created dialog task for each template" style="border: 1px solid gray;zoom:50%;"/>
+2. Click the installed template. The dialog task is auto-created and the canvas opens with all required entity nodes, service nodes, and message scripts.
 
 
-**Note**: If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.
 
-
-<img src="../images/hubspot-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
 ## HubSpot Actions 
 
-The following HubSpot actions are supported in this release:
+The following HubSpot actions are supported.
 
 
 <table border="1">

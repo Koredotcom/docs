@@ -177,10 +177,10 @@ Steps to install action templates:
 2. In the Integration Templates dialog, click the **Install** button to begin the installation.  
 <img src="../images/hubspot-integration-img14.png" alt="Begin template installation" title="Begin template installation" style="border: 1px solid gray;zoom:50%;"/>
 
-3. Once the template is installed, click the **Go to Dialog** to open the dialog task.
+3. Once the template is installed, click the **Go to Dialog**.
 
-4. All the installed and default templates are displayed. [Learn More](using-the-hubspot-action-templates.md).  
-<img src="../images/hubspot-integration-img15.1.png" alt="Auto-created dialog task for each template" title="Auto-created dialog task for each template" style="border: 1px solid gray;zoom:50%;"/>
+4. All the installed templates are displayed. To start using the templates, see [Using HubSpot Templates](using-the-hubspot-action-templates.md).  
+
 
 
 
