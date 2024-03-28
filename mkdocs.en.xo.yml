@@ -138,8 +138,6 @@ nav:
       - Agent AI:
         - About AgentAssist: virtual-assistants-overview.md
         - Set up AgentAssist: virtual-assistants-overview.md               
-    - Release Notes: 
-      - What's New in XO v11.0: release-notes/whats-new-in-xo-v11.md
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
   - Automation AI: 
