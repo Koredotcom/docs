@@ -5,7 +5,9 @@ You can use the WebHook node to subscribe to a message and to WebHook events tha
 
 ## Create and Register an App
 
-To get access to WebHook events and use WebHook nodes in your dialog task, you need to subscribe and configure an app. Let us use the example of an Agent Transfer app.
+To get access to WebHook events and use WebHook nodes in your dialog task, you need to [subscribe and configure an app](../../../../../sdk/sdk-configuration/){:target="_blank"}. 
+
+Let us use the example of an Agent Transfer app.
 
 1. Select the **Deploy** tab from the top menu
 2. On the left menu, click **Integrations > Agent Transfer**.
