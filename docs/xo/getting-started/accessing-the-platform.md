@@ -102,7 +102,7 @@ After you sign in to Kore.ai’s XO Platform, you are directed to the landing pa
 * **New App** – Create a new App or import an existing App.
 
 
-![alt_text](../images/xo-home.png "image_tooltip")
+<img src="../images/xo-home.png" alt="XO Platform Homepage" title="XO Platform Homepage" style="border: 1px solid gray; zoom:80%;">
 
 
 
