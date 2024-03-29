@@ -1,4 +1,4 @@
-# Bot Versioning
+# App Versioning
 
 Very often, as part of the development process, you may want to mark specific stages as versions. The reasons could be as varied as:
 

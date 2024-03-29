@@ -102,5 +102,5 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     
 <hr>
 
-## Simplified Information Hierarchy
+## Integrated Architecture for Omnichannel Customer Engagement
 <img src="../images/xo-platform-components-flow.png">

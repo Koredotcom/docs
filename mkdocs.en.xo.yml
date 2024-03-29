@@ -60,16 +60,6 @@ extra:
           note: >- 
             Thanks for your feedback! Help us improve this page by
             using our <a href="https://community.kore.ai/" target="_blank" rel="noopener">feedback form</a>.  
-  alternate:
-    - name: en - English 
-      link: https://docsinternal-kore.github.io/docs/en
-      lang: en
-    - name: ja - 日本語 
-      link: https://docsinternal-kore.github.io/docs/ja
-      lang: ja  
-    - name: ko - 한국어 
-      link: https://docsinternal-kore.github.io/docs/ko
-      lang: jako   
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -125,20 +115,29 @@ nav:
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md   
       - Navigating the Platform: getting-started/navigating-the-platform.md
+      - Flows and Channels:
+        - Flows: 
+          - Introduction: flows/introduction-to-flows.md
+          - Start Flows: flows/introduction-to-flows.md
+          - Exit Flows: flows/introduction-to-flows.md
+        - Channels:
+          - Digital:
+            - Channel Enablement: channels/adding-channels-to-your-bot.md  
+          - Voice: 
+            - Kore Voice Gateway: channels-and-flows/flows/flows.md
+            - Third Party Voice:  channels-and-flows/flows/flows.md          
       - Automation AI:
         - About Virtual Assistant: virtual-assistants-overview.md
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
       - Search AI:
         - About Answers: virtual-assistants-overview.md
         - Configure Answers: virtual-assistants-overview.md   
-      - Agent AI:
-        - About AgentAssist: virtual-assistants-overview.md
-        - Set up AgentAssist: virtual-assistants-overview.md       
       - Contact Center AI:
         - About Contact Center: virtual-assistants-overview.md
         - Set up Contact Center: virtual-assistants-overview.md     
-    - Release Notes: 
-      - What's New in XO v11.0: virtual-assistants-overview.md
+      - Agent AI:
+        - About AgentAssist: virtual-assistants-overview.md
+        - Set up AgentAssist: virtual-assistants-overview.md               
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
   - Automation AI: 
@@ -257,23 +256,27 @@ nav:
         - Bot Management: manage-assistant/bot-management.md
         - Manage Namespace: manage-assistant/managing-namespace.md               
   - Search AI:
-    - Overview: answers/about-answers.md        
+    - Overview: answers/about-answers.md
+    - Getting Started: answers/introduction-to-answers.md
     - Content:
-      - Sources:
-        - Overview: answers/content-sources/introduction.md 
-        - Web Crawl: answers/content-sources/web-crawl.md  
-        - Directory: answers/content-sources/directory.md 
-        - Connectors: answers/content-sources/connectors.md 
-      - Extraction Strategy: answers/content-extraction/extraction.md
-      - Workbench: 
-        - Introduction: answers/workbench/introduction.md
-        - Field Mapping Stage: answers/workbench/field-mapping.md
-        - Custom Script: answers/workbench/custom-script.md
-        - Exclude Document: answers/workbench/exclude-document.md
-      - Chunk Browser: answers/chunk-browser.md
-      - Index Configuration: answers/index-configuration.md
+        - Sources:
+            - Overview: answers/content-sources/introduction.md
+            - Web Crawl: answers/content-sources/web-crawl.md
+            - Directory: answers/content-sources/directory.md
+            - Connectors:
+                - Introduction: answers/content-sources/connectors.md
+                - ServiceNow Connector: answers/content-sources/servicenow.md
+        - Extraction Strategy: answers/content-extraction/extraction.md
+        - Workbench:
+            - Introduction: answers/workbench/introduction.md
+            - Field Mapping Stage: answers/workbench/field-mapping.md
+            - Custom Script: answers/workbench/custom-script.md
+            - Exclude Document: answers/workbench/exclude-document.md
+            - Workbench Simulator: answers/workbench/simulation.md
+        - Chunk Browser: answers/chunk-browser.md
+        - Index Configuration: answers/index-configuration.md
     - Configuration:
-      - Answer Configuration: answers/answer-configuration.md
+        - Answer Configuration: answers/answer-configuration.md
   - Contact Center AI:
     - Overview: contactcenter/about-contact-center.md 
     - Agent and Supervisors: 
@@ -435,10 +438,9 @@ nav:
       - Interactions: analytics/contact-center/interactions.md    
   - Administration:
     - Deployment:
-      - Channel Enablement: channels/adding-channels-to-your-bot.md
       - App Versioning: deploy/bot-versioning.md
       - Publishing your App: deploy/publishing-bot.md
-      - Import & Export: manage-assistant/bot-management.md      
+      - Import & Export App: manage-assistant/bot-management.md      
     - App Settings:
       - App Profile: app-settings/app-profile.md
       - Language Management:
