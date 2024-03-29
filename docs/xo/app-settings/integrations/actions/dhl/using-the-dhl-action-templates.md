@@ -4,16 +4,12 @@ You can use the **Prebuilt Action Templates** from your DHL integration to auto-
 
 Steps to create a dialog task using the DHL action templates:
 
-1. Go to **Build > Conversation Skills > Dialog Tasks**.
-2. Click **Create a Dialog Task**.  
-<img src="../images/dhl-tem-img1.png" alt="Create a Dialog Task" title="Create a Dialog Task" style="border: 1px solid gray;zoom:50%;"/>
+1. Ensure that you have configured [DHL](configuring-the-dhl-action.md){:target="_blank"} and [installed templates](configuring-the-dhl-action.md#step-2-install-the-dhl-action-templates){:target="_blank"} successfully.
+If you have configured it and skipped installing the templates, see [Marketplace](../marketplace.md){:target="_blank"} to install the templates.
 
-3. On the Dialog Task pop-up, under the Integration, select the DHL option to view the action templates.
-4. Select any of the dialog task templates and click **Proceed**. For example, select the **Track Shipment** item.  
-<img src="../images/dhl-action-img11-tem-img2.png" alt="Select Dialog Task" title="Select Dialog Task" style="border: 1px solid gray;zoom:50%;"/>
+2. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
 
-5. If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the Actions page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
-<img src="../images/dhl-tem-img3.png" alt="Explore integrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
+3. Click the auto-created dialog. The the canvas opens with all required entity nodes, service nodes, and message scripts.
 
 ## DHL Actions
 

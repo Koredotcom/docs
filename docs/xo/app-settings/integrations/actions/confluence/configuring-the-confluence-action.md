@@ -14,7 +14,9 @@ The Kore.ai XO Platform supports the following authorization types for the Confl
 * **Pre-Authorize the Integration** – To make the integration process smoother for developers and customers, you can pre-authorize it by providing the necessary authorization credentials to obtain the access token.
 * **Allow Users to Authorize the Integration** – This method requires the end user to provide credentials during the conversation for authorization. This authorization process involves requesting permission for Kore.ai’s Confluence app to access an access token at runtime.
 
-**NOTE**: The Confluence integration can be authorized only for the Developer and the Enterprise editions. You cannot authorize Confluence’s Trial edition. To learn more about Confluence, see [Confluence documentation](https://support.atlassian.com/confluence-cloud/docs/configure-confluence-cloud/){:target="_blank"}.
+!!! note
+
+    The Confluence integration can be authorized only for the Developer and the Enterprise editions. You cannot authorize Confluence’s Trial edition. To learn more about Confluence, see [Confluence documentation](https://support.atlassian.com/confluence-cloud/docs/configure-confluence-cloud/){:target="_blank"}.
 
 <table border="1">
   <tr>
@@ -52,9 +54,8 @@ Before enabling the Confluence actions, complete the following prerequisites:
 
 **Steps to enable the Confluence action:**
 
-1. Go to **Build > Integrations > Actions**.
-2. Once you click the **Actions** menu, all integrations are shown in the **Available** region. Select the **Confluence** action.  
-<img src="../images/confluence-action-img1.png" alt="Confluence" title="Confluence" style="border: 1px solid gray;zoom:50%;"/>
+1. Go to **App Settings** > **Integrations** > **Actions**.
+2. Select the **Confluence** action.  
 
 
 ### Pre-authorize the Integration
@@ -65,7 +66,7 @@ You can authorize the integration using developer credentials. The developer aut
 
 Steps to authorize a Confluence action using developer credentials:
 
-1. Go to **Build > Integrations > Actions** and select the **Confluence** action.
+1. Go to **App Settings** > **Integrations** > **Actions** and select the **Confluence** action.
 2. In the **Configurations** dialog, select the **Authorization** tab.
 3. Enter the following details:
 
@@ -116,7 +117,9 @@ Steps to authorize a Confluence action using developer credentials:
 8. Click **Save**. When you configure the action for the first time, the Integration Successful pop-up is displayed.  
 <img src="../images/confluence-action-img7.png" alt="Save authorization" title="Save authorization" style="border: 1px solid gray;zoom:50%;"/>
 
-    **Note**: The Confluence action is moved from _Available_ to _Configured_ region.
+    !!! note
+
+        The Confluence action is moved from _Available_ to _Configured_ region.
 
 9. You can also click the **Skip for Now** button to install the Dialog Task templates later. To learn how to use action templates, read the [Using the Confluence Action Templates](../using-the-confluence-action-templates/){:target="_blank"} article.
 
@@ -127,7 +130,7 @@ You can authorize the integration at a user level with their login credentials. 
 
 Steps to authorize a Confluence action at a user level:
 
-1. Go to **Build > Integrations > Actions** and select the **Confluence** action.
+1. Go to **App Settings** > **Integrations** > **Actions** and select the **Confluence** action.
 2. In the Configurations dialog, select the **Authorization** tab.
 3. Enter the following details:
     * **Authorization Type** – Select the **Allow Users to Authorize the Integration** option, and then select the **OAuth** option.  
@@ -166,12 +169,6 @@ Steps to install action templates:
 2. In the Integration Templates dialog, click the **Install** button for a template to begin the installation.  
 <img src="../images/confluence-action-img11.png" alt="Begin template installation" title="Begin template installation" style="border: 1px solid gray;zoom:50%;"/>
 
-3. Once the template is installed, click the **Go to Dialog** button to view the dialog task.
-4. Once all templates are installed, a dialog task for each template is auto-created.  
-<img src="../images/confluence-action-img12.png" alt="Dialog tasks auto-created for installed templates" title="Dialog tasks auto-created for installed templates" style="border: 1px solid gray;zoom:50%;"/>
+3. Once the template is installed, the associated dialog task is auto-created and displayed on the Dialogs page. Click **Go to Dialog** or go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
 
-5. Select the desired dialog task from the templates and click **Proceed**. For example, select the **Create Content** task.  
-<img src="../images/confluence-action-img13-tem-img2.png" alt="Select dialog task" title="Select dialog task" style="border: 1px solid gray;zoom:50%;"/>
-
-6. Once you click **Proceed**, the dialog task is auto-created, and the canvas opens with all required entity nodes, service nodes, and message scripts.  
-<img src="../images/confluence-action-img14-tem-img4.png" alt="Dialog task canvas" title="Dialog task canvas" style="border: 1px solid gray;zoom:50%;"/>
+4. To start using the templates, see [Using Confluence Templates.](using-the-confluence-action-templates.md){:target="_blank"}
