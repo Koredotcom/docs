@@ -1,10 +1,10 @@
 # Adding IF-Else Conditions to Sequence Connections
 
-When working with [Dialog Task nodes](../../node-types/nodes-transitions){:target="_blank"}, the Kore.ai XO Platform allows you to use If-Else conditions to configure node connections. You may want to use such conditions when you want the conversation to follow specific paths depending on specific information.
+The Kore.ai XO Platform allows you to use If-Else conditions to configure node connections. You may want to use such conditions when you want the conversation to follow specific paths depending on specific information.
 
-For example, if you are working with a travel Virtual Assistant and are setting up a _Book a Flight_ dialog task, you might want to provide a specific offer for group reservations. So, if during the conversation, the VA detects a certain number of passengers, you may want to direct the conversation to one path or another, depending on that number. Say for instance, if the passenger count is greater than 5, present the standard offer; else (otherwise) present a promotional offer.
+For example, if you are working with a travel Virtual Assistant and are setting up a _Book a Flight_ dialog task, you might want to provide a specific offer for group reservations. So, if during the conversation, the VA detects a certain number of passengers, you may want to direct the conversation to one path or another, depending on that number. Say for instance, if the passenger count is 5 or less, present the standard offer; otherwise present a promotional offer.
 
-This is a simple example – you can use the conditions feature to design complex conversation paths based on the criteria that suit your business.
+This is a simple example; you can use the conditions feature to design complex conversation paths based on the criteria that suit your business.
 
 This article, therefore, takes you to the options available within the XO Platform that allow you to configure sequence connection conditions.
 
