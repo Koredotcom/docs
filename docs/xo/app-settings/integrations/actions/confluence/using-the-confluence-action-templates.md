@@ -9,6 +9,8 @@ If you have configured it and skipped installing the templates, see [Marketplace
 
 2. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
 
+3. Click the auto-created dialog. The the canvas opens with all required entity nodes, service nodes, and message scripts.
+
 ## Confluence Actions
 
 The following Confluence action is supported in the latest version of the XO Platform:

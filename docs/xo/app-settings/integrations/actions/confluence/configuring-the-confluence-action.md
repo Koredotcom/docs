@@ -16,7 +16,7 @@ The Kore.ai XO Platform supports the following authorization types for the Confl
 
 !!! note
 
-  The Confluence integration can be authorized only for the Developer and the Enterprise editions. You cannot authorize Confluence’s Trial edition. To learn more about Confluence, see [Confluence documentation](https://support.atlassian.com/confluence-cloud/docs/configure-confluence-cloud/){:target="_blank"}.
+    The Confluence integration can be authorized only for the Developer and the Enterprise editions. You cannot authorize Confluence’s Trial edition. To learn more about Confluence, see [Confluence documentation](https://support.atlassian.com/confluence-cloud/docs/configure-confluence-cloud/){:target="_blank"}.
 
 <table border="1">
   <tr>
@@ -117,9 +117,9 @@ Steps to authorize a Confluence action using developer credentials:
 8. Click **Save**. When you configure the action for the first time, the Integration Successful pop-up is displayed.  
 <img src="../images/confluence-action-img7.png" alt="Save authorization" title="Save authorization" style="border: 1px solid gray;zoom:50%;"/>
 
-  !!! note
+    !!! note
 
-    The Confluence action is moved from _Available_ to _Configured_ region.
+        The Confluence action is moved from _Available_ to _Configured_ region.
 
 9. You can also click the **Skip for Now** button to install the Dialog Task templates later. To learn how to use action templates, read the [Using the Confluence Action Templates](../using-the-confluence-action-templates/){:target="_blank"} article.
 
