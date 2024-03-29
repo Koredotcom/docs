@@ -50,7 +50,7 @@ html {
 kr-grid[type="g1"] {
     grid-gap: 0.8rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
     margin: 1em 0;
 }
 kr-grid[type="g1"] kr-grid-item{
@@ -165,3 +165,6 @@ kr-grid[type="g2"] kr-grid-desc{
 [data-md-color-scheme=slate] .light-theme-logo{
  display: none !important;
 }
+.md-grid {
+    max-width: 1224px;
+  }
