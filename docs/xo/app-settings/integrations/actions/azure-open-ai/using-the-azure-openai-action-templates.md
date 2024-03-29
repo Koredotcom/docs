@@ -4,15 +4,13 @@ You can use the **Prebuilt Action Templates** from your Azure OpenAI integration
 
 Steps to create a dialog task using the Azure OpenAI action templates:
 
-1. Go to **Build > Conversation Skills > Dialog Tasks**.
-2. Click **Create a Dialog Task**.  
-<img src="../images/azure-temp-img1-create-dailog-task.png" alt="Create dialog task" title="Create dialog task" style="border: 1px solid gray;zoom:50%;"/>
+1. Ensure that you have configured [Azure OpenAI](configuring-the-azure-openai-action.md){:target="_blank"} and [installed templates](configuring-the-azure-openai-action.md#step-3-install-the-azure-openai-action-templates){:target="_blank"} successfully.
+If you have configured it and skipped installing the templates, see [Marketplace](../marketplace.md){:target="_blank"} to install the templates.
 
-3. On the Dialog Task pop-up, under the Integration, select the Azure OpenAI option to view the action templates.  
-<img src="../images/configure-azure-img20-azure-action9.png" alt="Select Azure OpenAI" title="Select Azure OpenAI" style="border: 1px solid gray;zoom:50%;"/>
+2. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
 
-4. If you have not configured any integration for your virtual assistant, you will see the Explore Integrations option. Once you click this option, you will be redirected to the Actions page to configure an integration for your VA. For more information, see [Actions Overview](../../actions){:target="_blank"}.  
-<img src="../images/azure-temp-img3-create-dialog-new.png" alt="Configure Integration" title="Configure Integration" style="border: 1px solid gray;zoom:50%;"/>
+
+3. Click the auto-created dialog. The the canvas opens with all required entity nodes, service nodes, and message scripts.
 
 
 ## Azure OpenAI Actions
