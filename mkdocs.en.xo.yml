@@ -256,23 +256,27 @@ nav:
         - Bot Management: manage-assistant/bot-management.md
         - Manage Namespace: manage-assistant/managing-namespace.md               
   - Search AI:
-    - Overview: answers/about-answers.md        
+    - Overview: answers/about-answers.md
+    - Getting Started: answers/introduction-to-answers.md
     - Content:
-      - Sources:
-        - Overview: answers/content-sources/introduction.md 
-        - Web Crawl: answers/content-sources/web-crawl.md  
-        - Directory: answers/content-sources/directory.md 
-        - Connectors: answers/content-sources/connectors.md 
-      - Extraction Strategy: answers/content-extraction/extraction.md
-      - Workbench: 
-        - Introduction: answers/workbench/introduction.md
-        - Field Mapping Stage: answers/workbench/field-mapping.md
-        - Custom Script: answers/workbench/custom-script.md
-        - Exclude Document: answers/workbench/exclude-document.md
-      - Chunk Browser: answers/chunk-browser.md
-      - Index Configuration: answers/index-configuration.md
+        - Sources:
+            - Overview: answers/content-sources/introduction.md
+            - Web Crawl: answers/content-sources/web-crawl.md
+            - Directory: answers/content-sources/directory.md
+            - Connectors:
+                - Introduction: answers/content-sources/connectors.md
+                - ServiceNow Connector: answers/content-sources/servicenow.md
+        - Extraction Strategy: answers/content-extraction/extraction.md
+        - Workbench:
+            - Introduction: answers/workbench/introduction.md
+            - Field Mapping Stage: answers/workbench/field-mapping.md
+            - Custom Script: answers/workbench/custom-script.md
+            - Exclude Document: answers/workbench/exclude-document.md
+            - Workbench Simulator: answers/workbench/simulation.md
+        - Chunk Browser: answers/chunk-browser.md
+        - Index Configuration: answers/index-configuration.md
     - Configuration:
-      - Answer Configuration: answers/answer-configuration.md
+        - Answer Configuration: answers/answer-configuration.md
   - Contact Center AI:
     - Overview: contactcenter/about-contact-center.md 
     - Agent and Supervisors: 
