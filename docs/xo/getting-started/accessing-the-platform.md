@@ -94,7 +94,7 @@ After you sign in to Kore.ai’s XO Platform, you are directed to the landing pa
 
 
 * **Apps and Related Options** - Lists all the available apps. You can filter the apps by Pinned, Shared, My Apps, or All apps.   
-* **Data** – Define Data Tables, Table Views, and manipulate them from your Virtual Assistants and Process Apps. Thus taking care of your data needs, without having to depend on external services. See[ here](https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/) for more information.
+* **Data** – Define Data Tables, Table Views, and manipulate them from your Virtual Assistants and Process Apps.Thus taking care of your data needs, without having to depend on external services.
 * **Invite Users** – You can invite members to collaborate on the App creation journey.
 * **Help** – Find useful resources and support methods to help you develop your App.
 * **Account Switcher** – If you are part of more than one organization, you can switch between accounts.
