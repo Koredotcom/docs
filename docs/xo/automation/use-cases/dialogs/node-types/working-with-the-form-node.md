@@ -30,9 +30,8 @@ To add a form node to the dialog task, follow the below steps:
     <img src="../images/form-node-img3-channels.png" alt="Choose channels to offer form experience" title="Choose channels to offer form experience" style="border:1px solid gray;zoom:70%;">
 
 5. **By following this process, the Platform will automatically add a _Form Experience Transition_ (Bot Action) node group,** which ramifies into the necessary Dialog Task and Form Node, to allow you to further customize the Form Experience and Conversation Experience for your channel selection. This Transition is composed of individual nodes, which you will need to configure separately, according to their respective node types.
-    <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-    ![alt_text](images/image4.png "image_tooltip")
+    <img src="../images/form-node-img4.png" alt="tool tip" title="tool tip" style="border:1px solid gray;zoom:70%;">
 
 ## Configure the Node
 
@@ -51,19 +50,15 @@ The Form Component Properties allow you to configure a variety of settings and p
 3. In the **Error Prompts** text box, review the default error message, and if required modify it. For more information, refer to [Using the Prompt Editor](../../prompt-editor/){:target="_blank"}.
 4. In the **Submit Prompts** text box, review the default message that is displayed after successful submission of the form, and if required, modify it. This message is applicable only when the UI Form is opened in a browser tab.  
 Steps to personalize form submission prompt for **Mobile/Web SDK**:
-    1. In the **Submit Prompts** section, click **+Add**.  
+    1. In the **Submit Prompts** section, click **Add a prompt**.  
         
         <img src="../images/form-node-img5-add-submit-prompt.png" alt="Add submit prompt" title="Add submit prompt" style="border:1px solid gray;zoom:70%;">
 
-    2. In the additional prompt editor, select **Web/Mobile Client** from the Channels dropdown.
-        <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-        ![alt_text](images/image6.png "image_tooltip")
-
+    2. In the additional prompt editor, select **Web/Mobile Client**.
+       
     3. Write or change the message as appropriate.
-        <p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-        ![alt_text](images/image7.png "image_tooltip")
+         <img src="../images/form-node-img7-change-message.png" alt="Change message" title="Change message" style="border:1px solid gray;zoom:70%;">
 
     For more information, refer to [Using the Prompt Editor](../../prompt-editor/){:target="_blank"}.
 
@@ -102,7 +97,7 @@ Use the Instance Properties to define any user tags that you want to set.
 To configure this tab, please follow these steps:
 
 1. On the Form window, click the **Instance Properties** tab.
-2. Under the **Custom Tags** section, add tags to build custom profiles of your conversations. [Click here for more](../../../../../analytics/automations/custom-dashboard/custom-meta-tags){:target="_blank"}.
+2. Under the **Custom Tags** section, add tags to build custom profiles of your conversations. [Click here for more](../../../../../xo/analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
     <img src="../images/form-node-img11-instance-properties.png" alt="Form node - Instance properties" title="Form node - Instance properties" style="border:1px solid gray;zoom:70%;">
 
