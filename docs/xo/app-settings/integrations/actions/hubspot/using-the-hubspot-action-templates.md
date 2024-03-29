@@ -4,7 +4,7 @@ You can use the **Prebuilt Action Templates** from your HubSpot integration to a
 
 Steps to create a dialog task using HubSpot action templates:
 
-1. Ensure that you have [configured HubSpot](configuring-the-hubspot-action.md){:target="_blank"} and [installed templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} successfully.
+1. Ensure that you have configured [HubSpot](configuring-the-hubspot-action.md){:target="_blank"} and [installed templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates){:target="_blank"} successfully.
 If you have configured it and skipped installing the templates, see [Marketplace](../marketplace.md){:target="_blank"} to install the templates.
 
 2. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed.

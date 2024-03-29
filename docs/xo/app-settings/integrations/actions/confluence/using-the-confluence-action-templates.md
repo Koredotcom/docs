@@ -4,17 +4,10 @@ You can use the **Prebuilt Action Templates** from your Confluence integration t
 
 Steps to create a dialog task using Confluence action templates:
 
-1. Go to **Build > Conversation Skills > Dialog Tasks**.
-2. Click **Create a Dialog Task**.  
-<img src="../images/confluence-tem-img1-create-dailog-task.png" alt="Create a Dialog Task" title="Create a Dialog Task" style="border: 1px solid gray;zoom:50%;"/>
+1. Ensure that you have configured [Confluence](configuring-the-confluence-action.md){:target="_blank"} and [installed templates](configuring-the-confluence-action.md#step-2-install-the-confluence-action-templates){:target="_blank"} successfully.
+If you have configured it and skipped installing the templates, see [Marketplace](../marketplace.md){:target="_blank"} to install the templates.
 
-3. On the Dialog Task pop-up, under the **Integration**, select the **Confluence** option to view the action templates.  
-<img src="../images/confluence-action-img13-tem-img2.png" alt="Integration - Confluence" title="Integration - Confluence" style="border: 1px solid gray;zoom:50%;"/>
-
-
-**Note**: If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.
-
-<img src="../images/conflu-tem-img3-create-dialog-new.png" alt="Explore integrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
+2. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
 
 ## Confluence Actions
 

@@ -4,15 +4,13 @@ You can use the **Prebuilt Action Templates** from your BambooHR integration to 
 
 Steps to create a dialog task using the BambooHR action templates:
 
-1. Go to **Build > Conversation Skills** and then click the **Dialog Tasks**.
-2. Click the **Create a Dialog Task** to create a new task.  
-<img src="../images/bamboo-hr-tem-img1-create-dailog-task.png" alt="Create new task" title="Create new task" style="border: 1px solid gray;zoom:50%;"/>
+1. Ensure that you have configured [Bamboo HR](configuring-the-bamboohr-action.md){:target="_blank"} and [installed templates](configuring-the-bamboohr-action.md#step-2-install-the-bamboohr-action-templates){:target="_blank"} successfully.
+If you have configured it and skipped installing the templates, see [Marketplace](../marketplace.md){:target="_blank"} to install the templates.
 
-3. On the Dialog Task pop-up, under the Integration, select the BambooHR option to view the action templates.  
-<img src="../images/bamboo-hr-tem-img2.png" alt="Select BambooHR" title="Select BambooHR" style="border: 1px solid gray;zoom:50%;"/>
+2. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
 
-**Note**: If you have not configured any integration for your virtual assistant, you will see the Explore Integrations option. Once you click this option, you will be redirected to the Actions page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
-<img src="../images/bamboo-hr-tem-img3-explore-integrations.png" alt="Explore integrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
+
+3. Click the auto-created dialog. The the canvas opens with all required entity nodes, service nodes, and message scripts.
 
 ## Bamboo HR Actions
 
