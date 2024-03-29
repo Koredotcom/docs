@@ -11,12 +11,6 @@ To add a node group to the dialog task, follow the below steps:
 
 1. **Open the Dialog Task** where you want to add the Group node.
 2. **Group the nodes**. For steps in grouping nodes, [refer here](../../using-the-dialog-builder-tool/#node-groups){:target="_blank"}.
-3. Once created, you cannot add or remove specific nodes from the group.
-    1. Any node you add is added outside the group.
-    2. Any node you delete is deleted from the entire dialog.
-    3. Deleting a group will not delete the nodes within the group from the dialog.
-    4. If you want to change the nodes contained within a group, you need to delete the respective group, then to recreate it.
-
 
 ## Configure a Node Group
 

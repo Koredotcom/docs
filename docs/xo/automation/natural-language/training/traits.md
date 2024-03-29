@@ -41,14 +41,14 @@ This can be achieved by the following:
 
 To access **Traits**, follow the steps below:
 
-1. Navigate to **Build > Natural Language > Training > Traits**.
-<img src="../images/access-traits.png" alt="access traits" title="access traits" style="border: 1px solid gray; zoom:75%;">
+1. Navigate to **Natural Language > Training > Traits**.
+<img src="../images/access-traits-tab.png" alt="access traits" title="access traits" style="border: 1px solid gray; zoom:75%;">
 
 The following key features can be leveraged when defining Traits:
 
 1. **Trait Type** is a collection of related traits like _Travel Class_ in the above example.
 
-    * Trait Type can be _ML Based_ or _Pattern Based_. Each trait of a trait type can be trained using words, phrases, utterances, or patterns based on the type. **Manage** Trait Type allows you to define the training configuration. Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/traits/#the-ml-model-for-traits" target="_blank">here</a> for ML-based trait configuration.
+    * Trait Type can be _ML Based_ or _Pattern Based_. Each trait of a trait type can be trained using words, phrases, utterances, or patterns based on the type. **Manage** Trait Type allows you to define the training configuration. Click [here](/docs/xo/automation/natural-language/training/traits/#the-ml-model-for-traits){:target="_blank"} for ML-based trait configuration.
     * A _Trait Type_ can have one or more _Traits_.
     <img src="../images/trait-type-definition.png" alt="traits type definition" title="traits type definition" style="border: 1px solid gray; zoom:75%;">
 
@@ -100,16 +100,16 @@ _Intent detection_ or _Dialog execution_ is achieved using traits, along with th
 
 There are multiple ways to add rules:
 
-1. From the Traits section using the **Add New Rule** link.
-<img src="../images/add-new-rule-link.png" alt="add new rule link" title="add new rule link" style="border: 1px solid gray; zoom:75%;">
+1. From the **Traits** section using the **Add New Rule** link.
+<img src="../images/add-new-rule-link-traits.png" alt="add new rule link" title="add new rule link" style="border: 1px solid gray; zoom:75%;">
 
 2. From the Intent Node using the **Rules** section under the **NLP Properties**.
 <img src="../images/add-rules-intent-node.png" alt="add rules intent node" title="add rules intent node" style="border: 1px solid gray; zoom:75%;">
 
-3. Click the **Rules** tab for a given **Intent** to view the rules under **Build > Natural Language > Training**.
-<img src="../images/view-rules.png" alt="view rules" title="view rules" style="border: 1px solid gray; zoom:75%;">
+3. Click the **Rules** tab for a given **Intent** to view the rules under **Natural Language > Training**.
+<img src="../images/view-rules-link.png" alt="view rules" title="view rules" style="border: 1px solid gray; zoom:75%;">
 
-Each rule can have one or more conditions with AND as the operator. Multiple trait rules can be defined for a given intent and the intent is considered as a definite match if any one of the rules matches.
+Each rule can have one or more conditions with **AND** as the operator. Multiple trait rules can be defined for a given intent and the intent is considered as a definite match if any one of the rules matches.
 
 ### Knowledge Graph Intents
 
@@ -143,4 +143,5 @@ The Ranking and Resolver gets input from the three NL engines and Traits to anal
 The Conversation Flow is controlled using Traits. For a Dialog, **Connection Rules** are defined using the Trait Context. This is done from the **Connection** tab under the **Properties** Panel for the Dialog.
 
 The Traits Context is accessed using `context.traits`. It returns an array of all traits matching the intent, hence the condition to be used is ‘_contains_'.
+
 <img src="../images/traits-dialog-transition.png" alt="traits dialog transition" title="traits dialog transition" style="border: 1px solid gray; zoom:75%;">

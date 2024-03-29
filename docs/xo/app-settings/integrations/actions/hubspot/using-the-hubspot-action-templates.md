@@ -1,26 +1,21 @@
 # Using the HubSpot Action Templates
 
-You can use the **Prebuilt Action Templates** from your HubSpot integration to auto-create dialog tasks and test them using the **Talk to Bot** option.
+You can use the **Prebuilt Action Templates** from your HubSpot integration to auto-create dialog tasks and test them using the **Talk to Bot** option. 
 
 Steps to create a dialog task using HubSpot action templates:
 
-1. Go to **Build > Conversation Skills**, and then click the **Dialog Tasks**.
-2. Click **Create a Dialog Task**.  
-<img src="../images/hubspot-tem-img1.png" alt="Create a Dialog Task" title="Create a Dialog Task" style="border: 1px solid gray;zoom:50%;"/>
-
-3. On the Dialog Task pop-up, under the **Integration**, select the **HubSpot** option to view the action templates.  
-<img src="../images/hubspot-tem-img2.png" alt="Integration - Hubspot" title="Integration - Hubspot" style="border: 1px solid gray;zoom:50%;"/>
+1. Ensure that you have [configured HubSpot](configuring-the-hubspot-action.md) and [installed templates](configuring-the-hubspot-action.md#step-2-install-the-hubspot-action-templates) successfully.
+If you have configured HubSpot and skipped installing the templates, see [Marketplace](../marketplace.md) to install the templates.
+2. Go to **Automation AI** >**Virtual Assistant** > **Use Cases** > **Dialogs**. All the dialogs are displayed.
+2. Click the auto-created dialog. The the canvas opens with all required entity nodes, service nodes, and message scripts.
 
 
-**Note**: If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.
 
-
-<img src="../images/hubspot-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
 ## HubSpot Actions 
 
-The following HubSpot actions are supported in this release:
+The following HubSpot actions are supported.
 
 
 <table border="1">
@@ -580,7 +575,9 @@ Steps to delete a deal in HubSpot:
 5. Follow the prompts in the VA console to delete a deal as shown below:  
 <img src="../images/hubspot-tem-img26.png" alt="VA prompt to delete deal" title="VA prompt to delete deal" style="border: 1px solid gray;zoom:50%;"/>
 
-**Note**: If you enter an incorrect ID, the _404 – No Record Found_ error message is displayed.
+!!! note
+
+    If you enter an incorrect ID, the _404 – No Record Found_ error message is displayed.
 
 
 ### Create a Contact
@@ -933,4 +930,6 @@ Steps to delete a contact in HubSpot:
 
 3. Refer the step 3 to [train and talk to bot ](#create-a-deal)section and learn how to delete the contact.
 
-**Note**: If you enter an incorrect ID, the _404 – No Record Found_ error message is displayed.
+!!! note
+
+    If you enter an incorrect ID, the _404 – No Record Found_ error message is displayed.

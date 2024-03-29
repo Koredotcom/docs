@@ -48,12 +48,13 @@ To complete this procedure, you must already have a _Slack_ account and be a mem
 1. To enable Interactive Components, go to the **Interactivity & Shortcuts** section and enable **Interactivity**. Copy the **Webhook URL** provided in the **Configurations** tab of this page and enter it in the **Request URL** field.
 
 2. Click **Save Changes**.
+![interactivity](../images/slack6.png "interactivity")
 
-  !!! note
+!!! note
 
-      The Webhook URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
+    The Webhook URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
 
-  ![interactivity](../images/slack6.png "interactivity")
+  
 
 
 ## Step 5 : Enable Events
@@ -105,10 +106,7 @@ If you want to enable the public distribution of your app on Slack, you must pro
 
 The _Successfully added Slack channel_ message is displayed at the top of the XO Platform. In _Slack_, it is optional to submit your app to the Slack App Directory.
 
-After the channel is enabled and all configurations are verified, you can optionally publish
+After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about [Publishing your Virtual Assistant](../deploy/publishing-bot.md).
 
-the assistant to make it available for end-users, with the new channel. Learn more about
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
 
-[Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
-
-To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)

@@ -21,8 +21,6 @@ To get started optimizing your Virtual Assistant and tasks, you need to access t
 
 * **NLU Config** – In this section, you can define the recognition confidence levels required for minimum recognition actions, the confidence range for asking a user to choose from a list of possible matches, and a recognition confidence level for a positive match for the knowledge graph.
 
-    <img src="../../images/nlp-optimize-settings.png" alt="select natural language" title="select natural language" style="border: 1px solid gray; zoom:75%;">
-
 ## NLP Version 3
 
 Version 10.0 of the XO Platform includes a new version of the NLP Engine (Version 3) that comes with many advantages:

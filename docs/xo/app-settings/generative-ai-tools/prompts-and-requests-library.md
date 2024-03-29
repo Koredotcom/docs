@@ -7,20 +7,20 @@
 
 			
 
-If you have integrated a Custom LLM, continue to add prompts. If not, skip this article and see[ Co-Pilot](https://developer.kore.ai/docs/bots/nlp/co-pilot-features/) and[ Dynamic Conversations](https://developer.kore.ai/docs/bots/nlp/dynamic-conversations-features/) features.
+If you have integrated a Custom LLM, continue to add prompts. If not, skip this article and see [Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
 
-Effective prompts play a crucial role in enhancing response accuracy when interacting with LLMs. The new Prompts Library module empowers bot designers by allowing them to create and test suitable prompts for their specific use cases. It also displays all the newly added and default request/prompt templates for the integrated models with their status as active or inactive. The default prompts are related to the pre-built models and cannot be modified. However, you can import any default prompt, customize it, and use it for a custom LLM model.
+Effective prompts play a crucial role in enhancing response accuracy when interacting with LLMs. The new Prompts Library module empowers bot designers by allowing them to create and test suitable prompts for their specific use cases. It also displays all the newly added and default request/prompt templates for the integrated models with their status as active or inactive. The default prompts are related to the pre-built models. However, you can import any default prompt, customize it, and use it for a custom LLM model.
 
 The post processor for prompts allows designers to align LLM responses perfectly with Platform expectations. Designers can modify the LLM response to guarantee the correct behavior and high-quality interactions during runtime.
 
 !!! note
 
-    Currently, the custom LLM integration and prompt creation are available only in English and for the following Co-Pilot features: Automatic Dialog Generation, Conversation Test Cases Suggestions, NLP Batch Test Cases Suggestions, and Training Utterance Suggestions.
+    Currently, the custom LLM integration and prompt creation are available only in English.
 
 
 ## Pre-requisites
 
-Ensure that you have Integrated a Custom LLM successfully before proceeding further. For more information, see[ Custom LLM Integration](https://developer.kore.ai/docs/bots/nlp/llm-integration/#Custom_LLM_Integration_Framework).
+Ensure that you have Integrated a Custom LLM successfully before proceeding further. For more information, see[ Custom LLM Integration](llm-integration.md#custom-llm-integration-framework).
 
 
 ## How to add Prompts and Requests
@@ -29,7 +29,7 @@ To add a new prompt, follow the steps:
 
 
 
-1. Go to **Build** > **Natural Language** > **Generative AI & LLM**. 
+1. Go to **App Settings** > **Generative AI Tools**. 
 
 
     ![alt_text](images/prl(10).png "image_tooltip")
@@ -47,9 +47,17 @@ To add a new prompt, follow the steps:
 5. In the Request section, you can either create a request from scratch or import the existing prompt from the Library to modify as needed. 
     ![alt_text](images/prl(9).png "image_tooltip")
     1. To import an existing prompt, do the following:
-        1. Click **Import from Prompts and Requests Library**. All the available default prompts are displayed. 
-            ![alt_text](images/prl(7).png "image_tooltip")
-        2. Double-click the prompt to get it imported into the JSON body.
+        1. Click **Import from Prompts and Requests Library**. All the prompts related to the pre-built LLM are displayed without integrating them. In the case of custom prompts, all the added prompts are displayed. 
+            ![alt_text](images/prompts2hq.gif "image_tooltip")
+        
+        2. Select the **Feature** from the dropdown menu, select the **Model**, and select the **Prompt** (in case of custom prompts only) from the dropdown menu. Hover over and click Preview Prompt to view the prompt before importing.
+
+        !!! note
+
+            You have the flexibility to interchange a prompt designated for one feature with that of another, and vice versa.
+
+        3. Click **Confirm** to get it imported into the JSON body.
+
     2. To create a prompt from scratch, click **Start from scratch** and enter the **JSON** request the LLM. 
     ![alt_text](images/prl(8).png "image_tooltip")
 
@@ -79,8 +87,10 @@ To add a new prompt, follow the steps:
                 ![alt_text](images/prl(4).png "image_tooltip")
         3. Click **Save**. The actual response and expected response turn green.
 
-11. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section. 
+11. (Only for GenAI Node) Enter the **Exit Scenario Key-Value fields** and **Virtual Assistance Response Key**. The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user.
+    ![alt_text](images/image1-8.png "image_tooltip")
+12. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section. 
     ![alt_text](images/prl(1).png "image_tooltip")
-12. Now proceed to enable[ Co-Pilot Features](https://developer.kore.ai/docs/bots/nlp/co-pilot-features/).
+13. Now proceed to enable[ Co-Pilot](co-pilot-features.md) and[ Dynamic Conversations](dynamic-conversations-features.md) features.
 
 		

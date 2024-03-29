@@ -3,8 +3,8 @@ hide:
   - toc
   - feedback
 ---
-# About Contact Center
-The Contact Center module offers a conversational AI-native contact center-as-a-service solution to enhance customer experience, increase revenue, and reduce operational costs. It helps create consistent, personalized, intelligent, and effortless customer and agent experiences across channels. You can leverage Automation Use Cases and Answers to automate regular customer queries and seamlessly transfer them to a human agent as needed.
+# About Contact Center AI
+Contact Center AI offers a conversational AI-native contact center-as-a-service solution to enhance customer experience, increase revenue, and reduce operational costs. It helps create consistent, personalized, intelligent, and effortless customer and agent experiences across channels. You can leverage Automation Use Cases and Answers to automate regular customer queries and seamlessly transfer them to a human agent as needed.
 
 <kr-grid type="g2">
     <kr-grid-item>
@@ -35,6 +35,12 @@ The Contact Center module offers a conversational AI-native contact center-as-a-
         <img src="../images/sa-agent-console.svg" style="zoom:200%;"></img>
         <kr-grid-title>Agent Console</kr-grid-title>
         <kr-grid-desc>Boost agent efficiency with AI tools, secure communication, and collaborative features. Empower managers and supervisors to monitor and join calls, and allocate tasks to designated agents or queues.</kr-grid-desc>
+        <a href="">Learn More</a>
+    </kr-grid-item>
+     <kr-grid-item>
+        <img src="../images/campaigns.svg" style="zoom:200%;"></img>
+        <kr-grid-title>Campaigns</kr-grid-title>
+        <kr-grid-desc>Creating targeted voice campaigns and proactive web campaigns, supported by easy-to-use templates and comprehensive analytics. Monitor campaign performance and objectives with greater precision and effectiveness.</kr-grid-desc>
         <a href="">Learn More</a>
     </kr-grid-item>            
 </kr-grid>

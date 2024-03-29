@@ -22,11 +22,8 @@ This dashboard lets you achieve the following:
 
 To navigate to the **Health and Monitoring** dashboard, follow these steps:
 
-1. Click the **Build** tab on the top menu of the Virtual Assistant dashboard.
-2. Click **Health & Monitoring** under **Testing** in the left navigation menu.  
+1. Click **Health & Monitoring** tab under **Testing** > **Regression Testing** in the left navigation menu.  
 <img src="../images/hm-1.png" alt="Health and Monitoring dashboard" title="Health and Monitoring dashboard" style="border: 1px solid gray; zoom:50%;"/>
-
-
 
 ## Dashboard Sections and Components
 

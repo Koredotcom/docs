@@ -61,9 +61,9 @@ Complete the following steps to configure the ServiceNow agent for **Tokyo** and
 
 1. Log in to the Kore.ai XO Platform: [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}
 2. Select a Virtual Assistant for which you want to configure the ServiceNow agent. 
-3. Navigate to **Build > Integrations > Agent Transfer** and click the **ServiceNow** button.
+3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** and click the **ServiceNow**.
 
-    <img src="../images/configuring-the-servicenow-agent-tokyo-img5.png" alt="Agent transfer - ServiceNow" title="Agent transfer - ServiceNow" style="border: 1px solid gray;zoom:80%;">
+
 
 4. On the **Configurations** tab, select your preferred authentication option (Basic vs. OAuth) and then provide the details as explained in the options below:
     
@@ -268,15 +268,17 @@ Complete the following steps to configure the ServiceNow agent for **Tokyo** and
 
 4. Click the **Advanced** tab, add the code below and click **Submit**:
 
-    <code>var request;
+```
+    var request;
     request = new sn_ws.RESTMessageV2('Platform - Agent Integrations', 'Platform - Agent Integrations');
     request.setRequestBody("{\"group\":\""+current.group+"\","formatted_message\":\""+GlideStringUtil.escapeForHomePage(current.formatted_message)+"\","sys_created_by\":\""+current.sys_created_by+"\",\"last_message\":\""+current.last_message+"\","sys_id\":\""+current.sys_id+"\"}");
     request.setRequestHeader("Content-Type", "application/json");
-    var response = request.execute();</code>
-    
-    !!! Note 
-    
-        The code is optional. It is recommended to use the code when you face any issues during execution. This rule executes the API configured in REST Message.
+    var response = request.execute();
+
+```
+!!! note
+
+    The code is optional. It is recommended to use the code when you face any issues during execution. This rule executes the API configured in REST Message.
 
 
 ### Step 11: Testing Configuration

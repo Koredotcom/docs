@@ -28,7 +28,7 @@ Also, once V2 is enabled, the following old spell correction-specific settings a
 ### Impact on New and Existing Bots
 
 * **For the new bots and the existing bots in which spell correction is not enabled** in configured or published copy for both ML and KG engines, only Spell Correction V2 is supported. (Choose the configurations and enable the setting as explained in the previous section.)
-* **For all the existing bots in which the spell correction is enabled** in either configured or published copy in either of ML or KG engine, both the Spell Correction versions are supported. The Platform displays an **upgrade banner** on the **Thresholds & Configurations** screen. You can initiate the upgrade from the banner, and the Platform will automatically configure and enable the required settings.
+* **For all the existing bots in which the spell correction is enabled** in either configured or published copy in either of ML or KG engine, both the Spell Correction versions are supported. The Platform displays an **upgrade banner** on the **NLU Config** screen. You can initiate the upgrade from the banner, and the Platform will automatically configure and enable the required settings.
 
     <img src="../images/upgrade-spell-version-banner.png" alt="Spell Correction Version Upgrade banner" title="Spell Correction Version Upgrade banner"  style="border:1px solid gray; zoom:60%;">
 

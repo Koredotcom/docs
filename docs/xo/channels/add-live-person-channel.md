@@ -59,7 +59,7 @@ Steps to add a user in LivePerson:
 4. Provide a **URL** for the bot avatar.
 5. Choose the Login method as **API Key**, and select the **Generate API Key** option from the **API key** drop-down list to generate a new API key.
 <img src="../images/liveperson_channel6.png" alt="generate API Key" title="generate API Key" style="border: 1px solid gray; ">
-6. Copy the **App key**, **Secret**, **Access Token**, and **Access Token Secret**, and enter them in the kore.ai **Configurations** tab of the LivePerson Channel page. For more information, see [Step 4 – Configure the LivePerson Channel in the XO Platform](/docs/xo/channels/add-live-person-channel/#step-4-configure-the-channel-in-the-xo-platform) section.
+6. Copy the **App key**, **Secret**, **Access Token**, and **Access Token Secret**, and enter them in the kore.ai **Configurations** tab of the LivePerson Channel page. For more information, see [Step 4 – Configure the LivePerson Channel in the XO Platform](#step-4-configure-the-channel-in-the-xo-platform)section.
 7. Select Agent from the **Assignment** drop-down list, set **Max no. live chats** as **Unlimited**, and then select the skill created in the previous step from the **Skills** drop-down list.
 <img src="../images/liveperson_channel7.png" alt="assignment" title="assignment" style="border: 1px solid gray; zoom:70%;">
 8. Click **Save**. For further information, see [Create and manage users](https://knowledge.liveperson.com/admin-settings-create-and-manage-users.html#Adding%20a%20user) and [Create a bot](https://developers.liveperson.com/tutorials-guides-getting-started-with-bot-building-deploy-the-bot.html#step-11-create-a-bot-user) user within LivePerson’s documentation.
@@ -78,14 +78,14 @@ In the **Login Name** field, enter the Login Name of the bot user from your Live
 3. Under **Interaction Options**, select how you would like the XO Platform to interact with LivePerson – via **Chat Agent API**, **Messaging Agent SDK**, or both.
 <img src="../images/liveperson_channel8.png" alt="chat agent API " title="chat agent API" style="border: 1px solid gray; zoom:70%;">
 
-4. Enter the details of the **API Key**, **Secret**, **Access Token**, and **Access Token Secret** values of your LivePerson user account, which you copied in [Step 3](/docs/xo/channels/add-live-person-channel/#step-3-add-a-user-in-liveperson).
+4. Enter the details of the **API Key**, **Secret**, **Access Token**, and **Access Token Secret** values of your LivePerson user account, which you copied in [Step 3](#step-3-add-a-user-in-liveperson).
 <img src="../images/liveperson_channel9.png" alt="access token" title="access token" style="border: 1px solid gray; zoom:70%;">
 
 5. In the **Enable Channel** section, select **Yes** to activate the channel, and then click **Save** to complete the user creation process.
 
-After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users with the new channel. Learn more about [Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
 
 
 ## Step 5: Verify the LivePerson Channel Integration
@@ -112,5 +112,4 @@ Steps to verify the LivePerson channel integration:
 7. On the Web Tag page, copy the **embed code** and paste it into the html page you use to interact with the Kore.ai XO Platform Virtual Assistant (VA).
 <img src="../images/liveperson_channel15.png" alt="embed code" title="embed code" style="border: 1px solid gray; zoom:70%;">
 8. Send a message from the _LivePerson Chat_ console to the kore.ai XO platform VA for which you have enabled the LivePerson channel.
-9. In the XO Platform, once you receive a message from the **LivePerson Agent** console, you can send a response to start communication between the two systems, as shown below.
-<img src="../images/liveperson_channel16.png" alt="liveperson agent console" title="liveperson agent console" style="border: 1px solid gray; zoom:70%;">
+9. In the XO Platform, once you receive a message from the **LivePerson Agent** console, you can send a response to start communication between the two systems, as shown below.  <img src="../images/liveperson_channel16.png" alt="liveperson agent console" title="liveperson agent console" style="border: 1px solid gray; zoom:70%;">

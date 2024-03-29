@@ -10,7 +10,7 @@ It includes an entity value for the assistant to proceed with the current intent
 
 VAs must account for this by allowing users to pause a task, start and complete another task, and seamlessly return to the original task without losing important contextual data and conversation continuity.
 
-Kore.ai provides granular control over the hold and resume functionality at the VA, task, and node levels, and allows you to <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/context-management" target="_blank">control context switching</a> rules and behaviors with the **Manage Interruptions** feature. You can handle such interruptions in intent flows by providing a whole range of options to select if and how a user can switch to another task, the exit strategies, and the task-switching experience.
+Kore.ai provides granular control over the hold and resume functionality at the VA, task, and node levels, and allows you to [control context switching](/docs/xo/automation/intelligence/context-management){target="_blank"} rules and behaviors with the **Manage Interruptions** feature. You can handle such interruptions in intent flows by providing a whole range of options to select if and how a user can switch to another task, the exit strategies, and the task-switching experience.
 
 Managing Interruptions ensures the configurations for interruptions are layered to suit your various business requirements. This includes allowing, disallowing, and letting the user manage interruptions. You can also add conditional exceptions between tasks with the ability to pass contextual data between them.
 
@@ -37,7 +37,7 @@ To customize the interruptions settings for a node:
 
 1. Open the dialog task and then the node to change settings.
 2. Click the **instance tab** and select **Advanced Controls**.
-3. Under the **Interruptions Behavior** section, select **Customize for this node** and make the necessary configurations. These configurations are the same as discussed above for the VA level <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/manage-interruptions/" target="_blank">interruptions</a>.
+3. Under the **Interruptions Behavior** section, select **Customize for this node** and make the necessary configurations. These configurations are the same as discussed above for the VA level [interruptions](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/){target="_blank"}.
 
    <img src="../images/node-level-customization.gif" alt="node level customization" title="node level customization" style="border: 1px solid gray; zoom:65%;">
 
@@ -51,7 +51,8 @@ To customize the Interruptions settings for a dialog:
 2. On the top-right of the dialog builder, click the **more options icon** and then click **Manage Interruptions**.
 <img src="../images/dialog-level-manage-interruptions.png" alt="node level customization" title="node level customization" style="border: 1px solid gray; zoom:75%;">
 
-3. Under the Interruptions Behavior section, select **Customize for this task** and make the necessary configurations. These settings are the same as discussed above for the Bot Level <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#allow-interruptions" target="_blank">interruptions</a>.
+3. Under the Interruptions Behavior section, select **Customize for this task** and make the necessary configurations. These settings are the same as discussed above for the Bot Level [interruptions](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#allow-interruptions){target="_blank"}.
+
 <img src="../images/dialog-level-manage-interruptions.png" alt="dialog level manage interruptions" title="dialog level manage interruptions" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
@@ -63,8 +64,8 @@ To customize the Interruptions settings for a dialog:
 
 The VA Level interruptions settings can be overridden at the task level as discussed above.
 
-You can access the interruption settings for your VA from under **Build > Intelligence > Manage Interruptions** page.
-<img src="../images/bot-level-settings-manageinterruptions.png" alt="bot level settings manage interruptions" title="bot level settings manage interruptions" style="border: 1px solid gray; zoom:75%;">
+You can access the interruption settings for your VA from under **Conversation Intelligence** > **Conversation Management** > **Manage Interruptions** page.
+<img src="../images/bot-level-settings-manageinterruptions-window-1.png" alt="bot level settings manage interruptions" title="bot level settings manage interruptions" style="border: 1px solid gray; zoom:75%;">
 
 The Platform provides options for _Interruptions Behavior_ under the following three categories:
 
@@ -116,13 +117,13 @@ Following are the options under **Allow interruptions**.
 
 ##### Do not allow interruptions
 
-When you select this option, the assistant-level **interruptions** are turned off. However, you may override this behavior for selected tasks, linked dialogs (exceptions), or node levels. Refer to the <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#interruptions-hierarchy" target="_blank">Interruptions Hierarchy</a> section above for more information.
+When you select this option, the assistant-level **interruptions** are turned off. However, you may override this behavior for selected tasks, linked dialogs (exceptions), or node levels. Refer to the [Interruptions Hierarchy](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#interruptions-hierarchy){target="_blank"} section above for more information.
 
 ##### Allow the end user to select the behavior
 
 When you select this option, the VA presents the end-user with a confirmation message asking if the user wants to switch to a new task. The VA switches to the new task only if the end-user chooses to do so. You can customize the confirmation message sent to the user by clicking the **Manage Response** link next to the option.
 
-You need to define a *Resume* option that the VA should take if the user decides to switch the task. Refer to the <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#resume-options" target="_blank">Resume Options</a> section below for details.
+You need to define a *Resume* option that the VA should take if the user decides to switch the task. Refer to the [Resume Options](/docs/xo/automation/intelligence/conversation-management/manage-interruptions/#resume-options){target="_blank"} section below for details.
 
 ##### Resume Options
 
@@ -239,7 +240,7 @@ For example, if you specify the On Hold Quantity as 1 and if a third intent come
 
 You can choose whether FAQs should honor the interruptions settings or if FAQs should be always responded to.
 
-<img src="../images/faq-interruption-behavior.png" alt="faq interruption behavior" title="faq interruption behavior" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/faq-interruption-behavior-window.png" alt="faq interruption behavior" title="faq interruption behavior" style="border: 1px solid gray; zoom:75%;">
 
 The flag **Interruption Behavior for FAQs** will allow you to:
 
@@ -250,7 +251,7 @@ The flag **Interruption Behavior for FAQs** will allow you to:
 
 You can handle ambiguous intents during a conversation flow by setting the flag **Behavior for Ambiguous Interruptions**.
 
-<img src="../images/ambiguous-interruption-behavior.png" alt="ambiguous intent interruption behavior" title="ambiguous intent interruption behavior" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/ambiguous-interruption-behavior-window.png" alt="ambiguous intent interruption behavior" title="ambiguous intent interruption behavior" style="border: 1px solid gray; zoom:75%;">
 
 These settings allow you to do the following:
 
@@ -264,7 +265,7 @@ These settings allow you to do the following:
 
 You can handle Small Talk during a conversation flow by setting the flag **Interruption Behavior for Small Talk**. 
 
-<img src="../images/smalltalk-interruption-behavior.png" alt="small talk interruption behavior" title="small talk interruption behavior" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/smalltalk-interruption-behavior-window.png" alt="small talk interruption behavior" title="small talk interruption behavior" style="border: 1px solid gray; zoom:75%;">
 
 These settings allow you to:
 

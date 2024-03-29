@@ -49,9 +49,9 @@ Before enabling the Zendesk action, complete the following prerequisites:
 
 Steps to enable the Zendesk action:
 
-1. Go to **Build > Integrations** and select the **Actions** menu item.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Once you click the **Actions** menu, all integrations are shown in the **Available** region. Select the **Zendesk** action.  
-<img src="../images/zendesk-action-img1.png" alt="Actions - Zendesk" title="Actions - Zendesk" style="border: 1px solid gray;zoom:50%;"/>
+
 
 
 ### Pre-authorize the Integration
@@ -62,23 +62,28 @@ You can authorize the integration using your credentials. The developer authoriz
 
 Steps to authorize a Zendesk action using developer credentials:
 
-1. Go to **Build > Integrations** and select the **Actions** menu item.
-2. Select the **Zendesk** action in the **Available Actions** region.
+1. Go to **App Settings** > **Integrations** > **Actions**.
+2. Select the **Zendesk** action in the **Available** region.
 3. In the **Configurations** dialog, select the **Authorization** tab 
 4. Enter the following details:
     1. **Authorization Type** – Select the **Pre-authorize the Integration** option, and then select the **_Basic Auth_** option.  
     <img src="../images/zendesk-action-img2.png" alt="Auth type - Basic auth" title="Auth type - Basic auth" style="border: 1px solid gray;zoom:50%;"/>
 
     2. **User Sub Domain** – The instance name of the Zendesk account.
-    3. **Username or Email** – The username or email of the Zendesk account.  
-        **Note**: You must enter **/token** after the email address to authenticate the Zendesk account. For example, `john@example.com/token`.
+    3. **Username or Email** – The username or email of the Zendesk account.
+            !!! note
+
+                You must enter **/token** after the email address to authenticate the Zendesk account. For example, `john@example.com/token`.
 
     4. **API Token** – The password token of the Zendesk account.  
     <img src="../images/zendesk-action-img3.png" alt="Details to authorize the integration" title="Details to authorize the integration" style="border: 1px solid gray;zoom:50%;"/>
 
     5. Click **Save**. When you configure the action for the first time, the **Integration Successful**  pop-up is displayed.  
-    <img src="../images/zendesk-action-img4.png" alt="Integration successful" title="Integration successful" style="border: 1px solid gray;zoom:50%;"/>  
-    **Note**: The Zendesk action is moved from _Available_ to _Configured_ region.
+    <img src="../images/zendesk-action-img4.png" alt="Integration successful" title="Integration successful" style="border: 1px solid gray;zoom:50%;"/> 
+
+        !!! note
+
+            The Zendesk action is moved from _Available_ to _Configured_ region.
 
     6. You can also click the **Skip for Now** button to install the Dialog Task templates later. To learn how to use action templates, read the [Using the Zendesk action templates](../using-the-zendesk-action-templates/){:target="_blank"} article.  
     <img src="../images/zendesk-action-img5.png" alt="Skip for now" title="Skip for now" style="border: 1px solid gray;zoom:50%;"/>  
@@ -90,7 +95,7 @@ You can authorize the integration at a user level with their login credentials. 
 
 Steps to authorize a Zendesk action at a user level:
 
-1. Go to **Build > Integrations** and select the **Actions** menu item.
+1. Go to **App Settings** > **Integrations** > **Actions**..
 2. Select the **Zendesk** action in the **Available Actions** region.
 3. In the Configurations dialog, select the **Authorization** tab.
 4. Enter the following details:
@@ -102,7 +107,7 @@ Steps to authorize a Zendesk action at a user level:
         2. **Authorization Type** – Select the **Allow Users to Authorize the Integration** option, and then select the **_Basic Auth_** option.
         3. Enter the following authentication credentials for the Basic Auth mechanism:
             * **Name** – Enter the name for the Basic Auth profile.
-            * Select the option – **Yes, some tasks will have tenancy URLs and the user will need to provide that to successfully authenticate.**
+            * Select the option – **Yes**, some tasks will have tenancy URLs and the user will need to provide that to successfully authenticate.
             * **Base URL** – Enter the base tenant URL for Zendesk instance.
             * **Authorization Check URL** – Enter the authorization check URL for your Zendesk instance.
             * **Description** – Enter the description of the basic authentication profile.  

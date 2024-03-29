@@ -29,8 +29,8 @@ To add the Widget SDK channel
 
 The _Channel Information updated successfully_ message is displayed on the top-right corner of the page.
 
-Once enabled [see here](https://developer.kore.ai/docs/bots/sdks/kore-ai-widget-sdk-tutorial/) for steps to integrate your VA and your web application.
+Once enabled [see here](../sdk/tutorials/widget-sdk.md) for steps to integrate your VA and your web application.
 
-After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

@@ -80,6 +80,10 @@ To improve intent identification for the dialog task, add or define the followin
 
 ### Connections Properties
 
+!!! Note
+
+    If the node is at the bottom in the sequence, then only the connection property is visible.
+
 Click the **Connections** tab and set the transition properties to determine the node in the dialog task to execute next.
 
 Primary Intent nodes only allow you to select the next node to trigger.

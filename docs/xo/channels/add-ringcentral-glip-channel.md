@@ -20,16 +20,16 @@ After the integration, you can do the following:
 * Have VAs post and respond to messages in Glip conversations.
 * Have VAs handle incoming notifications from your apps into Glip teams so you don’t have to check different sites for updates.
 
-To start the integration, you must register an application on RingCentral to gain access to the API and to integrate RingCentral into the Kore.ai XO Platform. To set up **Glip** as a channel, you must create an app in **[RingCentral’s Developer Portal](https://developers.ringcentral.com/)** and enable a **webhook** for the platform to receive messages.
+To start the integration, you must register an application on RingCentral to gain access to the API and to integrate RingCentral into the Kore.ai XO Platform. To set up **Glip** as a channel, you must create an app in [RingCentral’s Developer Portal](https://developers.ringcentral.com/) and enable a **webhook** for the platform to receive messages.
 
 The steps to add the channel are summarized below:
 
 
-1. [Create a RingCentral App](/docs/xo/add-ringcentral-glip-channel/#step-1-create-a-ringcentral-app)
-2. [App Set Up on the Kore.ai XO Platform using the Application Key and App secret](/docs/xo/add-ringcentral-glip-channel/#step-2-application-set-up-on-the-koreai-xo-platform)
-3. [Authorize a valid extension (user) of your RingCentral account to generate the developer access token, access the Glip APIs, and enable the channel](/docs/xo/add-ringcentral-glip-channel/#step-3-authorize-extension-user-of-your-ringcentral-sandbox-account)
-4. [Test the integration](/docs/xo/add-ringcentral-glip-channel/#step-4-test-the-integration)
-5. [(Recommended) Apply for Production](/docs/xo/add-ringcentral-glip-channel/#recommended-step-5-apply-for-production)
+1. [Create a RingCentral App](#step-1-create-a-ringcentral-app)
+2. [App Set Up on the Kore.ai XO Platform using the Application Key and App secret](#step-2-application-set-up-on-the-koreai-xo-platform)
+3. [Authorize a valid extension (user) of your RingCentral account to generate the developer access token, access the Glip APIs, and enable the channel](#step-3-authorize-extension-user-of-your-ringcentral-sandbox-account)
+4. [Test the integration](#step-4-test-the-integration)
+5. [(Recommended) Apply for Production](#recommended-step-5-apply-for-production)
 
 
 ## Step 1: Create a RingCentral App
@@ -73,7 +73,6 @@ To enable Glip as a channel for your Kore.ai Virtual Assistant, you must create 
 
 
     * On the Kore.ai XO Platform, copy the **OAuth Redirect URI** under the **Configurations** tab in the **RingCentral Glip** window.
-
     <img src="../images/ringcentral_glip5.png" alt="ringcentral glip configuration" title="ringcentral glip configuration" style="border: 1px solid gray; ">
 
     * Paste the copied **OAuth Redirect URI** link in the **Auth** panel.
@@ -81,6 +80,7 @@ To enable Glip as a channel for your Kore.ai Virtual Assistant, you must create 
         !!! note
 
              The OAuth Redirect URI now includes the streamid in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
+
     * Select **_Yes_** for **Issue refresh tokens?**
 
 10. In the Security panel, to define the permissions to associate with the app, follow the steps below:
@@ -101,7 +101,7 @@ If you do not have a **Sandbox Account** to test your app in the Sandbox environ
 
 !!! tip
 
-         The OAuth Redirect URI now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
+        The OAuth Redirect URI now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
 
 
 
@@ -141,20 +141,20 @@ The virtual assistant on the Kore.ai XO Platform must be associated with the ext
 <img src="../images/ringcentral_glip13.png" alt="unassigned extension" title="unassigned extension" style="border: 1px solid gray; zoom:70%;">
 8. On the **user profile information** page, enter all the required information.
 
-!!! note
+    !!! note
 
-    Please provide a meaningful name like _Travel Bot_ or _HR Assistant_ to the virtual assistant inside **Teams Messaging**.
+        Please provide a meaningful name like _Travel Bot_ or _HR Assistant_ to the virtual assistant inside **Teams Messaging**.
 
 9. Click **Save & Enable** to enable the extension.
 
 
 
 
-!!! note
+    !!! note
 
-    If you receive an account activation email on your registered email address, please note the username and password to authorize the virtual assistant on the Kore.ai XO Platform.
+        If you receive an account activation email on your registered email address, please note the username and password to authorize the virtual assistant on the Kore.ai XO Platform.
 
-    Alternatively, select the “pre-assigned credentials” option and just provide/save the password.
+        Alternatively, select the “pre-assigned credentials” option and just provide/save the password.
 
 
 ### Step 3(a): Test the Validation
@@ -183,9 +183,9 @@ On the Kore.ai XO Platform, navigate to **RingCentral Glip** > **Configurations*
 3. Click **Authorize** on the **Access Request** page.
 4. Once the access token is obtained successfully, authorization is complete.
 <img src="../images/ringcentral_glip17.png" alt="access request" title="access request" style="border: 1px solid gray; ">
-5. On the Kore.ai XO Platform, select **_Yes_** for the **Enable Channel** option under the **RingCentral Glip** > **Configurations** tab.
-6. Click **Save** to enable the channel and Publish the Virtual Assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
 
+5. On the Kore.ai XO Platform, select **_Yes_** for the **Enable Channel** option under the **RingCentral Glip** > **Configurations** tab.
+6. Click **Save** to enable the channel and Publish the Virtual Assistant. [Learn more](../deploy/publishing-bot.md)
 <img src="../images/ringcentral_glip18.png" alt="enable ringcentral" title="enable ringcentral" style="border: 1px solid gray; zoom:70%;">
 
 ## Step 4: Test the Integration
@@ -205,6 +205,6 @@ Once your app is production ready, follow the steps below on the Kore.ai XO Plat
 
 1. Navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **RingCentral Glip**.
 2. Under the **Configurations** tab, select **Production for Ringcentral Environment**.
-3. Follow [these](https://developer.kore.ai/docs/bots/channel-enablement/adding-ringcentral-glip-channel/#Step_3b_Channel_Setup_on_the_Platform) steps to complete the configuration.
+3. Follow [these](#step-3b-channel-setup-on-the-platform) steps to complete the configuration.
 
-Congratulations! You have now completed the **Glip by RingCentral** channel enablement. To learn how to enable other business messaging channels, click [here](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/).
+Congratulations! You have now completed the **Glip by RingCentral** channel enablement. To learn how to enable other business messaging channels, click [here](adding-channels-to-your-bot.md).

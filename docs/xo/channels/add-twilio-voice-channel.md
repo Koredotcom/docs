@@ -68,7 +68,7 @@ To enable the Twilio Voice Channel, follow the below steps:
     <img src="../images/twilio-voice-img3.png" alt="Enable channel" title="Enable channel" style="border: 1px solid gray; zoom:70%;">
 
 
-4. From the **Voice Call Properties** tab, enter the details to configure the channel level voice properties, [click here for more details](./call-properties#channel-settings).
+4. From the **Voice Call Properties** tab, enter the details to configure the channel level voice properties, [click here for more details](../automation/use-cases/dialogs/node-types/voice-call-properties.md#channel-settings).
 
 5. Once you have enabled the Twilio channel, it is recommended to configure the **Telephony Welcome Event** for Voice Call Settings. This plays a welcome message for users when they connect to the VA through the Twilio channel. For this:  
 
@@ -78,6 +78,8 @@ To enable the Twilio Voice Channel, follow the below steps:
 
 For details regarding the configuration of voice properties at the Dialog Task level, please , refer to [Configuring Voice Call Settings for a Node](../../automation/use-cases/dialogs/node-types/voice-call-properties/#dialog-node-settings).
 
-After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. 
+After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel.Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
+
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
 
 

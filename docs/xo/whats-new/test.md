@@ -3,6 +3,8 @@ hide:
   - toc
 ---
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/bc3c1090458b4883ac58258ed3bba9a8?sid=dd93ecea-d587-4b74-8587-89339ac7e1b9" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 <details>
     <summary>Q&A_1</summary>
     <p>Q&A_1_content</p>
@@ -11,6 +13,16 @@ hide:
     <summary>Q&A_1</summary>
     <p>Q&A_1_content</p>
     </details>
+
+<p> <a href="./whats-new-in-this-release.md"> <span class=twemoji> <svg width="16" height="17" xmlns=http://www.w3.org/2000/svg viewbox="0 0 21 22"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z" /></svg> </span> Learn more </a> </p>
+
+[:octicons-arrow-right-24: Learn more](./whats-new-in-this-release.md)
+
+[Learn more :octicons-arrow-right-24:](./whats-new-in-this-release.md)
+
+ ++ctrl+alt+del++
+
+ [Subscribe to our newsletter](#){ .md-button }
 
 <div class="grid cards" markdown>
 
@@ -18,7 +30,7 @@ hide:
 
     ---
 
-    Use Cases are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent.
+    Adding a line here Use Cases are fundamental building blocks for automation. Build use cases to help specific audiences navigate well-defined steps that solve a clear intent.
 
     [:octicons-arrow-right-24: Learn more](#)
 
