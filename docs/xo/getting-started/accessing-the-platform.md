@@ -2,9 +2,9 @@
 
 # How to Access the Platform
 
-The Kore.ai XO Platform enables you to launch enterprise-grade, AI-enabled conversational Virtual Assistants using an intuitive graphical interface for building, training, testing, and monitoring virtual assistants.
+Kore.ai Experience Optimization (XO) Platform is an AI-powered, end-to-end experience optimization Platform for enterprises of any scale to offer best-in-class conversational experiences for customers, employees, and agents. 
 
-Whether you are looking to build a complex VA that has to make multiple calls to your backend systems with conditional routing, or a VA that sends contextual notifications to your users, or even a VA that responds to their queries, creating VAs has never been easier.
+The unified XO Platform offers a comprehensive suite of products, features, and services to help businesses leverage conversational AI intelligence and generative AI innovations.
 
 This post takes you through the basics you need to know to successfully access the Kore.ai’s Experience Optimization Platform.
 
@@ -16,7 +16,7 @@ Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Int
 
 ## Access the XO Platform
 
-To access the Kore.ai XO Platform, visit[ https://bots.kore.ai/](https://bots.kore.ai/). You will be directed to the login page.
+To access the Kore.ai XO Platform, visit [XO Platform Homepage](https://platform.kore.ai/). You will be directed to the login page.
 
 You can sign up for Kore.ai XO Platform in any of the following two ways:
 
@@ -35,17 +35,13 @@ To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
 
 
 
-1. Go to[ https://bots.kore.ai/botbuilder/login](https://bots.kore.ai/botbuilder/login).
+1. Visit [XO Platform Homepage](https://platfom.kore.ai/).
 2. On the Sign-up page, enter the email ID in the **Email ID** field.
 
     !!! note
 
         If the email address is already registered, the platform prompts you to sign-in  and to enter the password.
   
-
-
-
-
 
 3. Enter all the other details to create the account.
 
@@ -54,11 +50,7 @@ To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
         The account you create is identified by the email domain. When you invite other users to the account, the email includes this name.
         
 
-
-
-
 4. On creating an account, a confirmation email is sent to the provided email address, with a verification link and a verification code, to sign in to the new account. 
-
 
 
     ![alt_text](images/accplatform(2).png "image_tooltip")
@@ -77,8 +69,6 @@ To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
 
 
 
-
-
 ![alt_text](images/accplatform(7).png "image_tooltip")
  
  Alternatively, you can sign up to the Kore.ai XO Platform using the Google, Microsoft Office or LinkedIn profiles. 
@@ -89,8 +79,6 @@ To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
 !!! note
 
     Kore.ai XO Platform uses SAML-based authentication for completing the sign up and sign in flows.
-
-
 
 
 ## Sign in to the Platform
@@ -105,24 +93,22 @@ With Single Sign-on (SSO), you can sign in securely (after authentication) by us
 After you sign in to Kore.ai’s XO Platform, you are directed to the landing page. From this page you can access various offerings as follows:
 
 
-
-* **Virtual Assistants** – Design, build, test, and deploy AI-powered virtual assistants. This is selected by default. See[ here](https://developer.kore.ai/docs/bots/chatbot-overview/getting-started-bots/) for more information.
-* **Process Apps** – Build multi-step and multi-user workflows for automating internal and external processes, for example, expense reimbursement, leave approval, etc. See[ here](https://developer.kore.ai/docs/process-apps/introduction/)<span style="text-decoration:underline;"> </span>for more information.
+* **Apps and Related Options** - Lists all the available apps. You can filter the apps by Pinned, Shared, My Apps, or All apps.   
 * **Data** – Define Data Tables, Table Views, and manipulate them from your Virtual Assistants and Process Apps. Thus taking care of your data needs, without having to depend on external services. See[ here](https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/) for more information.
-* **Explore Store** – Explore and import virtual assistants templates from Kore.ai’s online marketplace that runs on the Kore.ai platform. See[ here](https://developer.kore.ai/docs/bots/bot-store/store/) for more information.
-* **Help** – Here is where you can find useful resources and support methods to help you develop your VA.
-* **Account Switcher** – If you are part of more than one organization, here is where you can switch between accounts.
-* **Profile** – Here is where you can see your profile details, set the platform’s language and log out.
+* **Invite Users** – You can invite members to collaborate on the App creation journey.
+* **Help** – Find useful resources and support methods to help you develop your App.
+* **Account Switcher** – If you are part of more than one organization, you can switch between accounts.
+* **Profile** – Your profile details, set the platform’s language and log out options.
+* **New App** – Create a new App or import an existing App.
+
+
+![alt_text](../images/xo-home.png "image_tooltip")
 
 
 
-![alt_text](images/accplatform(11).png "image_tooltip")
+## Invite Users to your App
 
-
-
-## Invite Users to your Virtual Assistant
-
-Account administrators can add other enterprise users to the virtual assistant account by inviting them from the Bots Admin portal.
+Account administrators can add other enterprise users to the App account by inviting them from the Bots Admin portal.
 
 To invite users to your Kore.ai XO Platform account, follow these steps:
 
@@ -186,14 +172,7 @@ After a user is invited to an account, the administrator can enable the XO Platf
 
 
 		
-
 	
-
-	
-
-		
-
-			
 
 
 ## Using Workspace
