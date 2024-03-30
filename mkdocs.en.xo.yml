@@ -60,16 +60,6 @@ extra:
           note: >- 
             Thanks for your feedback! Help us improve this page by
             using our <a href="https://community.kore.ai/" target="_blank" rel="noopener">feedback form</a>.  
-  alternate:
-    - name: en - English 
-      link: https://docsinternal-kore.github.io/docs/en
-      lang: en
-    - name: ja - 日本語 
-      link: https://docsinternal-kore.github.io/docs/ja
-      lang: ja  
-    - name: ko - 한국어 
-      link: https://docsinternal-kore.github.io/docs/ko
-      lang: jako   
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -125,20 +115,29 @@ nav:
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md   
       - Navigating the Platform: getting-started/navigating-the-platform.md
+      - Flows and Channels:
+        - Flows: 
+          - Introduction: flows/introduction-to-flows.md
+          - Start Flows: flows/introduction-to-flows.md
+          - Exit Flows: flows/introduction-to-flows.md
+        - Channels:
+          - Digital:
+            - Channel Enablement: channels/adding-channels-to-your-bot.md  
+          - Voice: 
+            - Kore Voice Gateway: channels-and-flows/flows/flows.md
+            - Third Party Voice:  channels-and-flows/flows/flows.md          
       - Automation AI:
         - About Virtual Assistant: virtual-assistants-overview.md
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
       - Search AI:
         - About Answers: virtual-assistants-overview.md
         - Configure Answers: virtual-assistants-overview.md   
-      - Agent AI:
-        - About AgentAssist: virtual-assistants-overview.md
-        - Set up AgentAssist: virtual-assistants-overview.md       
       - Contact Center AI:
         - About Contact Center: virtual-assistants-overview.md
         - Set up Contact Center: virtual-assistants-overview.md     
-    - Release Notes: 
-      - What's New in XO v11.0: virtual-assistants-overview.md
+      - Agent AI:
+        - About AgentAssist: virtual-assistants-overview.md
+        - Set up AgentAssist: virtual-assistants-overview.md               
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
   - Automation AI: 
@@ -160,7 +159,6 @@ nav:
           - Confirmation Node: automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes.md
           - Message Node: automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md
           - Logic Node: automation/use-cases/dialogs/node-types/working-with-the-logic-node.md
-          - Bot Action Node: automation/use-cases/dialogs/node-types/bot-action-node.md
           - Service Node: automation/use-cases/dialogs/node-types/working-with-the-service-node.md
           - Webhook Node: automation/use-cases/dialogs/node-types/working-with-the-web-hook-node.md
           - Script Node: automation/use-cases/dialogs/node-types/working-with-the-script-node.md
@@ -238,13 +236,6 @@ nav:
         - Batch Testing: getting-started.md
         - Conversation Testing: getting-started.md
     - Advanced Topics:
-      - Universal Bots:
-        - Introduction: universal-bots/introduction.md
-        - Universal Bot Definition: universal-bots/defining-a-universal-bot.md
-        - Universal Bot Creation: universal-bots/creating-a-universal-bot.md
-        - Training a Universal Bot: universal-bots/training-a-universal-bot.md
-        - Universal Bot Customizations: universal-bots/customize-dialog-task.md
-        - Enabling Languages: universal-bots/enabling-languages.md
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
         - Team Collaboration: manage-assistant/
@@ -263,75 +254,29 @@ nav:
         - IVR Settings: manage-assistant/ivr-integration.md
         - General Settings: manage-assistant/general-settings.md
         - Bot Management: manage-assistant/bot-management.md
-        - Manage Namespace: manage-assistant/managing-namespace.md
-    - How-To Topics:
-      - Build a Travel Planning Assistant:
-        - Travel Assistant Overview: how-tos/build-a-travel-planning-assistant/travel-assistant-overview.md
-        - Create a Travel Virtual Assistant: how-tos/build-a-travel-planning-assistant/create-a-travel-virtual-assistant.md
-        - Design Conversation Skills:
-          - Create an Update Booking Task: how-tos/build-a-travel-planning-assistant/design-conversation-skills/update-booking-task.md
-          - Create a Change Flight Task: how-tos/build-a-travel-planning-assistant/design-conversation-skills/change-flight-task.md
-          - Build a Knowledge Graph: how-tos/build-a-travel-planning-assistant/design-conversation-skills/build-a-knowledge-graph.md
-          - Schedule a Smart Alert: how-tos/build-a-travel-planning-assistant/design-conversation-skills/schedule-a-smart-alert.md
-        - Design Digital Skills:
-          - Configure Digital Forms: how-tos/build-a-travel-planning-assistant/design-digital-skills/configure-digital-forms.md
-          - Configure Digital Views: how-tos/build-a-travel-planning-assistant/design-digital-skills/configure-digital-views.md
-        - Train the Assistant:
-          - Use Traits: how-tos/build-a-travel-planning-assistant/train-the-assistant/using-traits.md
-          - Use Patterns: how-tos/build-a-travel-planning-assistant/train-the-assistant/using-patterns.md
-          - Manage Context Switching: how-tos/build-a-travel-planning-assistant/train-the-assistant/manage-context-switching.md
-        - Deploy the Assistant: 
-          - Use Bot Functions: how-tos/build-a-travel-planning-assistant/deploy-the-assistant/use-bot-functions.md
-          - Use Content Variables: how-tos/build-a-travel-planning-assistant/deploy-the-assistant/use-content-variables.md
-          - Use Global Variables: how-tos/build-a-travel-planning-assistant/deploy-the-assistant/use-global-variables.md
-          - Use Web SDK: how-tos/build-a-travel-planning-assistant/deploy-the-assistant/web-sdk-tutorial.md
-      - Build a Banking Assistant:
-        - Design Conversation Skills:
-          - Create a Banking Assistant: how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant.md
-          - Create a Transfer Funds Task: how-tos/build-a-banking-assistant/design-conversation-skills/create-transfer-funds-task.md
-          - Create an Update Balance Task: how-tos/build-a-banking-assistant/design-conversation-skills/create-balance-task.md
-          - Build a Knowledge Graph: how-tos/build-a-banking-assistant/design-conversation-skills/build-a-knowledge-graph.md
-          - Schedule a Smart Alert: how-tos/build-a-banking-assistant/design-conversation-skills/schedule-a-smart-alert.md
-        - Design Digital Skills:
-          - Configure Digital Forms: how-tos/build-a-banking-assistant/design-digital-skills/configure-digital-forms.md
-          - Configure Digital Views: how-tos/build-a-banking-assistant/design-digital-skills/configure-digital-views.md
-          - Add Data to Data Tables: how-tos/build-a-banking-assistant/design-digital-skills/add-data-to-data-tables.md
-          - Update Data in Data Tables: how-tos/build-a-banking-assistant/design-digital-skills/update-data-in-data-tables.md
-          - Add Data from Digital Forms: how-tos/build-a-banking-assistant/design-digital-skills/add-data-into-data-tables-from-ui-forms.md
-        - Train the Assistant: 
-          - Composite Entities: how-tos/build-a-banking-assistant/train-the-assistant/composite-entities.md
-          - Use Traits: how-tos/build-a-banking-assistant/train-the-assistant/using-traits.md
-          - Use Patterns for Intents & Entities: how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities.md
-          - Manage Context Switching: how-tos/build-a-banking-assistant/train-the-assistant/manage-context-switching.md
-        - Deploy the Assistant:
-          - Configure an Agent Transfer: how-tos/build-a-banking-assistant/deploy-the-assistant/configure-an-agent-transfer.md
-          - Use Assistant Functions: how-tos/build-a-banking-assistant/deploy-the-assistant/use-assistant-functions.md
-          - Use Content Variables: how-tos/build-a-banking-assistant/deploy-the-assistant/use-content-variables.md
-          - Use Global Variables: how-tos/build-a-banking-assistant/deploy-the-assistant/use-global-variables.md
-          - Intent Scoping using Group Node: how-tos/build-a-banking-assistant/deploy-the-assistant/intent-scoping-using-group-node.md
-        - Analyze the Assistant:
-          - Build a Custom Dashboard: how-tos/build-a-banking-assistant/analyse-the-assistant/create-custom-dashboard.md
-          - Using Custom Tags to filter Assistant Metrics: how-tos/build-a-banking-assistant/analyse-the-assistant/using-custom-tags-to-filter-assistant-metrics.md
-      - Migrate External Bots:
-        - Google DialogFlow Bot: how-tos/migrate-external-bots/google-dialogflow-bot.md              
+        - Manage Namespace: manage-assistant/managing-namespace.md               
   - Search AI:
-    - Overview: answers/about-answers.md        
+    - Overview: answers/about-answers.md
+    - Getting Started: answers/introduction-to-answers.md
     - Content:
-      - Sources:
-        - Overview: answers/content-sources/introduction.md 
-        - Web Crawl: answers/content-sources/web-crawl.md  
-        - Directory: answers/content-sources/directory.md 
-        - Connectors: answers/content-sources/connectors.md 
-      - Extraction Strategy: answers/content-extraction/extraction.md
-      - Workbench: 
-        - Introduction: answers/workbench/introduction.md
-        - Field Mapping Stage: answers/workbench/field-mapping.md
-        - Custom Script: answers/workbench/custom-script.md
-        - Exclude Document: answers/workbench/exclude-document.md
-      - Chunk Browser: answers/chunk-browser.md
-      - Index Configuration: answers/index-configuration.md
+        - Sources:
+            - Overview: answers/content-sources/introduction.md
+            - Web Crawl: answers/content-sources/web-crawl.md
+            - Directory: answers/content-sources/directory.md
+            - Connectors:
+                - Introduction: answers/content-sources/connectors.md
+                - ServiceNow Connector: answers/content-sources/servicenow.md
+        - Extraction Strategy: answers/content-extraction/extraction.md
+        - Workbench:
+            - Introduction: answers/workbench/introduction.md
+            - Field Mapping Stage: answers/workbench/field-mapping.md
+            - Custom Script: answers/workbench/custom-script.md
+            - Exclude Document: answers/workbench/exclude-document.md
+            - Workbench Simulator: answers/workbench/simulation.md
+        - Chunk Browser: answers/chunk-browser.md
+        - Index Configuration: answers/index-configuration.md
     - Configuration:
-      - Answer Configuration: answers/answer-configuration.md
+        - Answer Configuration: answers/answer-configuration.md
   - Contact Center AI:
     - Overview: contactcenter/about-contact-center.md 
     - Agent and Supervisors: 
@@ -455,7 +400,8 @@ nav:
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md
         - SDK Security: sdk/sdk-security.md
-        - SDK Registration: sdk/app-registration.md 
+        - SDK Registration: sdk/app-registration.md
+        - SDK Configurations: sdk/sdk-configuration.md
         - Web Socket Connect and RTM: sdk/web-socket-connect-and-rtm.md
         - Installing the BotKit SDK: sdk/installing-the-botkit-sdk.md
         - Using the BotKit SDK: sdk/using-the-botkit-sdk.md
@@ -489,14 +435,12 @@ nav:
       - Conversation Flows: analytics/automation/conversation-flows.md            
     - Contact Center:  
       - Queues & Agents: analytics/contact-center/queues-and-agents.md
-      - Interactions: analytics/contact-center/interactions.md
-      - Reports: analytics/contact-center/interactions.md
+      - Interactions: analytics/contact-center/interactions.md    
   - Administration:
     - Deployment:
-      - Bot Versioning: deploy/bot-versioning.md
+      - App Versioning: deploy/bot-versioning.md
       - Publishing your App: deploy/publishing-bot.md
-      - Import & Export: manage-assistant/bot-management.md
-      - Channels: channels/adding-channels-to-your-bot.md
+      - Import & Export App: manage-assistant/bot-management.md      
     - App Settings:
       - App Profile: app-settings/app-profile.md
       - Language Management:
@@ -504,7 +448,7 @@ nav:
         - Supported Components & Features: app-settings/language-management/multilingual-vas-components-feature-support.md
         - Manage Languages: app-settings/language-management/managing-languages-for-multilingual-vas.md
         - Manage Translation Services: app-settings/language-management/managing-translation-services.md
-        - Multiingual Virtual Assistant Behavior: app-settings/language-management/multi-lingual-bot-behavior.md
+        - Multilingual Virtual Assistant Behavior: app-settings/language-management/multi-lingual-bot-behavior.md
       - Generative AI Tools:
         - Introduction: app-settings/generative-ai-tools/introduction.md
         - LLM Integration: app-settings/generative-ai-tools/llm-integration.md

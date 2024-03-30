@@ -4,10 +4,9 @@ The Form node lets you integrate [Digital Forms](https://docsinternal-kore.githu
 
 The primary purpose of the Form node is to represent a UI Form in the dialog task and make the form available for end-users on their channel. For example, let us consider a travel assistant that has a form to capture the customer details to make a new booking. During this process, you may want to use the form instead of prompting for each and every entity value.
 
-
 ## Add the Node
 
-Before you can begin setting up a Form node, you need to have previously created a Digital Form to use within the node. 
+Before you can begin setting up a Form node, you need to have previously created a Digital Form to use within the node.
 
 To add a form node to the dialog task, follow the below steps:
 
@@ -31,15 +30,12 @@ To add a form node to the dialog task, follow the below steps:
     <img src="../images/form-node-img3-channels.png" alt="Choose channels to offer form experience" title="Choose channels to offer form experience" style="border:1px solid gray;zoom:70%;">
 
 5. **By following this process, the Platform will automatically add a _Form Experience Transition_ (Bot Action) node group,** which ramifies into the necessary Dialog Task and Form Node, to allow you to further customize the Form Experience and Conversation Experience for your channel selection. This Transition is composed of individual nodes, which you will need to configure separately, according to their respective node types.
-    <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-    ![alt_text](images/image4.png "image_tooltip")
-
+    <img src="../images/form-node-img4.png" alt="tool tip" title="tool tip" style="border:1px solid gray;zoom:70%;">
 
 ## Configure the Node
 
 This configuration applies to the Form Node Type – regardless of whether it is standalone by selecting Only UI Form during setup, or whether it is part of a Form & Conversation Experience.
-
 
 ### Component Properties
 
@@ -47,26 +43,22 @@ This configuration applies to the Form Node Type – regardless of whether it is
 
     The configurations you set up or modify in this section are reflected in all other dialog tasks that use this node.
 
-The Form Component Properties allow you to configure a variety of settings and prompts related to your Form Node, as follows: 
+The Form Component Properties allow you to configure a variety of settings and prompts related to your Form Node, as follows:
 
 1. On the **Component Properties** tab, under the **General Settings** section, enter a **Name** and **Display Name** for the form node. Node names cannot contain spaces, but the Display Name can.
 2. In the **User Prompts** text box, enter the prompt message that you want the user to see for this form. It should instruct the user to click on the link to initiate the form. It is not recommended to change the context variable reference (of the form {{context.form_node.formLink}})coded therein. You can enter channel-specific messages for user prompts. For more information, refer to [Using the Prompt Editor](../../prompt-editor/){:target="_blank"}.
 3. In the **Error Prompts** text box, review the default error message, and if required modify it. For more information, refer to [Using the Prompt Editor](../../prompt-editor/){:target="_blank"}.
 4. In the **Submit Prompts** text box, review the default message that is displayed after successful submission of the form, and if required, modify it. This message is applicable only when the UI Form is opened in a browser tab.  
 Steps to personalize form submission prompt for **Mobile/Web SDK**:
-    1. In the **Submit Prompts** section, click **+Add**.  
+    1. In the **Submit Prompts** section, click **Add a prompt**.  
         
         <img src="../images/form-node-img5-add-submit-prompt.png" alt="Add submit prompt" title="Add submit prompt" style="border:1px solid gray;zoom:70%;">
 
-    2. In the additional prompt editor, select **Web/Mobile Client** from the Channels dropdown.
-        <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-        ![alt_text](images/image6.png "image_tooltip")
-
+    2. In the additional prompt editor, select **Web/Mobile Client**.
+       
     3. Write or change the message as appropriate.
-        <p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-        ![alt_text](images/image7.png "image_tooltip")
+         <img src="../images/form-node-img7-change-message.png" alt="Change message" title="Change message" style="border:1px solid gray;zoom:70%;">
 
     For more information, refer to [Using the Prompt Editor](../../prompt-editor/){:target="_blank"}.
 
@@ -94,8 +86,6 @@ Steps to personalize form submission prompt for **Mobile/Web SDK**:
     
         The target node has to be in the same dialog, you cannot make a jump to a target node outside the current dialog. The list of target nodes only shows the local nodes. If the target node is not present during runtime, the platform presents the error Error in continuing the conversation, and the task should get discarded.
 
-
-
 ### Instance Properties
 
 Use the Instance Properties to define any user tags that you want to set.
@@ -107,13 +97,15 @@ Use the Instance Properties to define any user tags that you want to set.
 To configure this tab, please follow these steps:
 
 1. On the Form window, click the **Instance Properties** tab.
-2. Under the **Custom Tags** section, add tags to build custom profiles of your conversations. [Click here for more](../../../../../analytics/automations/custom-dashboard/custom-meta-tags){:target="_blank"}.
+2. Under the **Custom Tags** section, add tags to build custom profiles of your conversations. [Click here for more](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
 
     <img src="../images/form-node-img11-instance-properties.png" alt="Form node - Instance properties" title="Form node - Instance properties" style="border:1px solid gray;zoom:70%;">
 
-
-
 ### Connections Properties
+
+!!! Note
+
+    If the node is at the bottom in the sequence, then only the connection property is visible.
 
 From the node’s **Connections** tab, you can determine the node in the dialog task to execute next. You can write the conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions.
 
@@ -121,6 +113,6 @@ From the node’s **Connections** tab, you can determine the node in the dialog 
 
     These conditions are applicable only for this instance and will not affect the node when being used in any other dialog.
 
-For details on how to work with connection conditions, please see[ Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions/){:target="_blank"}.
+For details on how to work with connection conditions, please see[ Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions/){:target="_blank"}
 
 <img src="../images/form-node-img12-connection-properties.png" alt="Form node - Connection properties" title="Form node - Connection properties" style="border:1px solid gray;zoom:70%;">

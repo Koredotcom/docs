@@ -83,29 +83,121 @@ The nodes and the flow for the Business Logic are automatically built for your c
  
 <img src="../images/using-dialog-builder-img10-create-dialog-genai-dialog-created.png" alt="Gen Ai Dialog created" title="Gen Ai Dialog created" style="border:1px solid gray;zoom:60%;">
 
-### Auto-Generate Dialog Tasks using Pre Built Templates (Marketplace)
+<!-----
 
-This option provides you ready-made templates targeting major industry verticals, covering generic use cases related to the industry, having pre-established integration, and lets you choose a suitable dialog template. You can update the description and generate use cases based on the purpose. This option accelerates development by providing a starting point for common scenarios, ensuring consistency and efficiency. 
+You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
+* ERRORs: 0
+* WARNINGs: 0
+* ALERTS: 12
+
+Conversion time: 4.512 seconds.
+
+
+Using this Markdown file:
+
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β35
+* Thu Mar 28 2024 04:19:29 GMT-0700 (PDT)
+* Source doc: Using the Dialog Builder (NEW)
+* This is a partial selection. Check to make sure intra-doc links work.
+* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
+
+----->
+
+
+<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 12.</p>
+<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
+
+<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
+<a href="#gdcalert2">alert2</a>
+<a href="#gdcalert3">alert3</a>
+<a href="#gdcalert4">alert4</a>
+<a href="#gdcalert5">alert5</a>
+<a href="#gdcalert6">alert6</a>
+<a href="#gdcalert7">alert7</a>
+<a href="#gdcalert8">alert8</a>
+<a href="#gdcalert9">alert9</a>
+<a href="#gdcalert10">alert10</a>
+<a href="#gdcalert11">alert11</a>
+<a href="#gdcalert12">alert12</a>
+
+<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
+
+
+
+### Auto-Generate Dialog Tasks using Pre Built Templates
+
+This option provides you ready-made templates targeting major industry verticals, covering generic use cases related to the industry, and having pre-established integration, and lets you choose a suitable dialog template. You can update the description and generate use cases based on the purpose. This option accelerates development by providing a starting point for common scenarios, ensuring consistency and efficiency.
+
+!!! Note
+
+    You can avail this feature only if the integration is configured in your VA. You must go through the installation journey to access the integrations and templates.
+
+1. Click the **Marketplace** option. The **Marketplace** page opens with lists of **Categories** and **Integrations**. You can see a list of the most popular integrations and recommended templates.
+
+    <img src="../images/using-dialog-builder-img11-create-dialog-template-search.gif" alt="Marketplace" title="Marketplace" style="border:1px solid gray;zoom:70%;">
+
+2. Select the required categories or integrations. The corresponding integrations and available dialog templates appear. The integrations configured in your VA are labeled as **Installed**.
+
+    <img src="../images/using-dialog-builder-marketplace-actions-and-templates.png" alt="Integrations and Dialog Templates" title="Integrations and Dialog Templates" style="border:1px solid gray;zoom:70%;">
+
+3. To create a dialog using the available **Action Templates** of an integration:
+    1. Click the suitable integration. You will get a popup window containing the available **Action Templates** for the selected integration.
+
+        <img src="../images/using-dialog-builder-click-required-integration.png" alt="Select the required integration" title="Select the required integration" style="border:1px solid gray;zoom:70%;">
+
+    2. Install the required action template(s) by clicking the corresponding **Install →.**
+
+        <img src="../images/using-dialog-builder-select-required-action-template.png" alt="Install required action templates" title="Install required action templates" style="border:1px solid gray;zoom:70%;">
+
+    3. You will see the dialog task(s) added to the list of dialogs.
+    
+        <img src="../images/using-dialog-builder-dialog-task-using-action.png" alt="Dialog task added" title="Dialog task added" style="border:1px solid gray;zoom:70%;">
+
+    4. You can edit and customize the dialog design as per your requirements by opening it in the dialog builder.
+        
+        <img src="../images/using-dialog-builder-dialog-task-using-action-edit.png" alt="Dialog design" title="Dialog design" style="border:1px solid gray;zoom:70%;">
+
+4. To create a dialog using **Dialog Template** (if available):
+
+    !!! Note
+    
+        Dialog templates are not available for every integration.
+    
+    1. Click the required Dialog Template.
+    
+        <img src="../images/using-dialog-builder-click-required-dialog-template.png" alt="Select required dialog template" title="Select required dialog template" style="border:1px solid gray;zoom:70%;">
+
+        You can also select the required Dialog Template by clicking on an integration and exploring the options.
+
+        <img src="../images/using-dialog-builder-integration-explore-options.png" alt="Explore options of an integration" title="Explore options of an integration" style="border:1px solid gray;zoom:70%;">
+
+    2. Click the tile containing the required Dialog Template to see the **description**, **highlights**, and **preview** of the dialog in a popup window.
+
+        <img src="../images/using-dialog-builder-dialog-template-details.png" alt="Dialog template details" title="Dialog template details" style="border:1px solid gray;zoom:70%;">
+
+    3. Click **Install** on the popup. You can modify the name and description of the dialog on the next screen. Make the required edits and click **Next**.
+
+        <img src="../images/using-dialog-builder-dialog template-name-description.png" alt="Dialog name and description" title="Dialog name and description" style="border:1px solid gray;zoom:70%;">
+
+    4. The next few screens help you with the below setup:
+        1. Utterances to identify this intent
+        2. Channel experience
+        3. Other setup points pertaining to the intent. For example, information points to be captured for Lead Capture intent.
+    
+    5. The template is installed after you finish the setup. Click **Finish**.
+
+        <img src="../images/using-dialog-builder-dialog-template-finish-install.png" alt="Finish dialog template installation" title="Finish dialog template installation" style="border:1px solid gray;zoom:70%;">
  
-1. Click the **Marketplace** option. The **Marketplace** page opens with lists of categories and integrations.
+The dialog task is created and opens in the Dialog Builder. You can make required changes like any other dialog by adding, removing and configuring nodes as per need.
 
-    <img src="../images/using-dialog-builder-img11-create-dialog-template-search.gif" alt="Template search" title="Template search" style="border:1px solid gray;zoom:60%;">
-
-~~2. Select the required categories or integrations. The integrations appear in the **Integrations** section.~~
- 
-    ~~<img src="../images/using-dialog-builder-img12-create-dialog-template-preview.png" alt="Dialog using template - preview" title="Dialog using template - preview" style="border:1px solid gray;zoom:60%;">~~
-
-~~3. Click the suitable integration. You will get a popup window containing the available action templates for the selected integration.~~
-
-    ~~<img src="../images/using-dialog-builder-img13-create-dialog-template-edit-details.png" alt="Dialog using template - Edit details" title="Dialog using template - Edit details" style="border:1px solid gray;zoom:60%;">~~ 
-
-    ~~!!! Note~~
-
-        ~~The Action Templates will be visible only if the selected integration is installed on the platform. You need to go through the installation journey to avail the templates.~~
-
-~~4. Install the required Action Template(s).~~
- 
-    <img src="../images/using-dialog-builder-img14-create-dialog-canvas.png" alt="Dialog using template - Dialog canvas" title="Dialog using template - Dialog Canvas" style="border:1px solid gray;zoom:60%;">
+<img src="../images/using-dialog-builder-dialog-template-dialog-created.png" alt="Dialog creation completed" title="Dialog creation completed" style="border:1px solid gray;zoom:70%;">
 
 [Click here to know about Nodes & Connections](../node-types/nodes-transitions/){:target="_blank"}
 
