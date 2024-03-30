@@ -193,6 +193,7 @@ The following updates have been added at the feature level:
 
 ## New Tab addition - Settings Tab
 The **Settings** tab in V3 lets you to:
+
 * Turn on/off the **Proactive mode**.
 * Navigate to the **Documentation**, **FAQ**, and the **Kore Academy**.
 * Select a language.
