@@ -81,18 +81,18 @@ The Assist tab features the following:
 
 
 
-    * **Running Playbook stages: **Shows the total and adhered stages of a running playbook. For example, 1/3 means 1 out of 3 stages of a playbook has been adhered to.
-    * **Proceed to Close:** This button is available when a playbook is running. Clicking this button leads to a change in the playbook running status from Open to Close, and agents are prompted to ask if the customer needs any other help before ending the call.
-    * **Playbook adherence button**: If a Playbook is running, adherence to a step happens automatically when the agent’s utterance matches exactly with the Playbook step adherence utterance. If it doesn’t match, the agent can click this button to indicate a step has been completed (adhered).
-    * **Send/Copy buttons**: These two buttons appear for Playbooks (if enabled) and Dialog Tasks. Click **Send** to send the exact message appearing on the widget, or click **Copy** to customize the message before sending it to the customer.
-    * **Resume button**: This button applies to the Playbooks and appears while switching to another playbook while one is already running.
-    * **List View**: This is an entity list button. When clicked, a pop-up displays a list of all entity entries present in the conversation.
-    * **Restart button**: When clicked, this button provides agents with two options: "Start over" and "Restart with Captured Inputs." These options allow agents to either restart the Dialog Task or continue it by providing input for each entity before restarting.
-    * **Termination button**: This button provides agents options to handle ongoing interactions effectively, allowing them to either terminate, cancel, or continue, which involves manual input of customer responses for entity responses.
-        * **Option 1: Yes, Terminate**: Terminates the running Dialog Task and provides feedback.
-        * **Option 2: No, Cancel**: Closes the pop-up with no actions taken.
-        * **Option 3: Continue with Override Mode**: Agents manually enter the response to the customer’s conversation.
-    * **Maximize/Minimize button**: This button maximizes/minimizes the displayed page section.
+ * **Running Playbook stages: **Shows the total and adhered stages of a running playbook. For example, 1/3 means 1 out of 3 stages of a playbook has been adhered to.
+ * **Proceed to Close:** This button is available when a playbook is running. Clicking this button leads to a change in the playbook running status from Open to Close, and agents are prompted to ask if the customer needs any other help before ending the call.
+* **Playbook adherence button**: If a Playbook is running, adherence to a step happens automatically when the agent’s utterance matches exactly with the Playbook step adherence utterance. If it doesn’t match, the agent can click this button to indicate a step has been completed (adhered).
+* **Send/Copy buttons**: These two buttons appear for Playbooks (if enabled) and Dialog Tasks. Click * * **Send** to send the exact message appearing on the widget, or click **Copy** to customize the message before sending it to the customer.
+* **Resume button**: This button applies to the Playbooks and appears while switching to another playbook while one is already running.
+* **List View**: This is an entity list button. When clicked, a pop-up displays a list of all entity entries present in the conversation.
+* **Restart button**: When clicked, this button provides agents with two options: "Start over" and "Restart with Captured Inputs." These options allow agents to either restart the Dialog Task or continue it by providing input for each entity before restarting.
+* **Termination button**: This button provides agents options to handle ongoing interactions effectively, allowing them to either terminate, cancel, or continue, which involves manual input of customer responses for entity responses.
+* **Option 1: Yes, Terminate**: Terminates the running Dialog Task and provides feedback.
+* **Option 2: No, Cancel**: Closes the pop-up with no actions taken.
+* **Option 3: Continue with Override Mode**: Agents manually enter the response to the customer’s conversation.
+* **Maximize/Minimize button**: This button maximizes/minimizes the displayed page section.
 
 
 ### **Transcript Tab**
@@ -164,7 +164,6 @@ The following UI updates are done:
 
 <img src="../widget-images/agent-assist-widget-v3.png" alt="agent-assist-widget-v3.png" title="agent-assist-widget-v3.png" style="border: 1px solid gray; zoom:80%;">
 
-
 ## Differences at the Feature/Tab level
 
 The following updates have been added at the feature level:
@@ -194,6 +193,6 @@ The following updates have been added at the feature level:
 
 ## New Tab addition - Settings Tab
 The **Settings** tab in V3 lets you to:
-* Turn on/off the **Proactive mode**.
-* Navigate to the **Documentation**, **FAQ**, and the **Kore Academy**.
-* Select a language.
+*  Turn on/off the **Proactive mode**.
+*  Navigate to the **Documentation**, **FAQ**, and the **Kore Academy**.
+*  Select a language.
