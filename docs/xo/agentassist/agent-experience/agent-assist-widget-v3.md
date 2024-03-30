@@ -1,4 +1,4 @@
-# **AgentAssist **
+# **AgentAssist Widget**
 
 The AgentAssist is an AI powered virtual assistant to optimize contact center agent performance. It offers seamless assistance, promoting enhanced productivity and improved customer satisfaction. Its user-friendly interface and real-time support capabilities let agents effortlessly solve complex customer interactions.
 
@@ -6,13 +6,13 @@ The following features are available in the AgentAssist widget:
 
 
 
-* **Dialog Tasks**: Configured Use Cases that trigger when a customer’s utterance matches the content of a Dialog Task. Designed to help agents minimize manual typing by copy-pasting the relevant answers from the Dialog Tasks. [Learn more](https://docs.kore.ai/agentassist/use-cases/dialogues-creation/).
-* **Playbooks**: Contact center agents are expected to provide the best customer experience despite high call volumes and complex interactions. To empower agents in this endeavor, AgentAssist introduces the Playbook feature—a standard tool offering structured guidance for handling customer interactions. [Learn more](https://docs.kore.ai/agentassist/agent/agentassist-playbook/).
-* **Real-time Agent Coaching**: Real-time coaching for the agents based on the analysis of agent utterances and speech. You can set up specific utterances and speech patterns for AgentAssist to take relevant actions, such as providing hints and nudges or emailing the manager when those patterns occur. [Learn more](https://docs.kore.ai/agentassist/agent/agent-coaching/).
-* **Real-time Sentiment Analysis**: Provides a continuous, time-based graph that displays the customer’s sentiment fluctuations. Agents get immediate visibility of the evolving emotional tone of the conversation and take proactive and empathetic responses. [Learn more](https://docs.kore.ai/agentassist/agent/bot-override-and-automation/#Sentiment_Analysis).
+* **Dialog Tasks**: Configured Use Cases that trigger when a customer’s utterance matches the content of a Dialog Task. Designed to help agents minimize manual typing by copy-pasting the relevant answers from the Dialog Tasks.
+* **Playbooks**: Contact center agents are expected to provide the best customer experience despite high call volumes and complex interactions. To empower agents in this endeavor, AgentAssist introduces the Playbook feature—a standard tool offering structured guidance for handling customer interactions.
+* **Real-time Agent Coaching**: Real-time coaching for the agents based on the analysis of agent utterances and speech. You can set up specific utterances and speech patterns for AgentAssist to take relevant actions, such as providing hints and nudges or emailing the manager when those patterns occur.
+* **Real-time Sentiment Analysis**: Provides a continuous, time-based graph that displays the customer’s sentiment fluctuations. Agents get immediate visibility of the evolving emotional tone of the conversation and take proactive and empathetic responses.
 * **Transcription**: Enhances agent accessibility and context by providing accurate transcriptions of user and agent voices during interactions. Offers a conversation overview and serves as the basis for automated Quality Assessment (QA). Agents receive a visual indicator when an intent is identified, improving real-time understanding and response.
 * **Auto Summarization**: Automatically shortens lengthy information into concise summaries, enabling agents to respond promptly to customer inquiries. It helps agents quickly understand and make decisions.
-* **PII Redaction**: Securely removes Personally Identifiable Information (PII) from the agent's view and transcripts, ensuring a safe environment for customer interactions and compliance with privacy regulations. [Learn more](https://developer.kore.ai/docs/bots/bot-settings/pii-data-masking/).
+* **PII Redaction**: Securely removes Personally Identifiable Information (PII) from the agent's view and transcripts, ensuring a safe environment for customer interactions and compliance with privacy regulations.
 * **Feedback**: Empowers agents to provide real-time feedback on suggestions. This continuous process forms a dynamic loop, allowing Machine Learning (ML) algorithms to continuously enhance and customize recommendations for accurate and contextually relevant outcomes.
 * **Next Best Action**: Enhances the product by enabling seamless execution of Dialog Tasks for swift customer query resolution. The generative AI nodes and script nodes integration equips the system to efficiently communicate with external systems through API calls. This leads to improved customer experience and reduced necessity for frequent screen changes for agents. This allows agents to deliver contextually relevant next-best responses, contributing to a more streamlined and effective contact center operation.
 * **Multi-language Support**: Provides multiple language support, enabling agents to switch between languages instantaneously. It ensures seamless communication with users in diverse linguistic environments. Agents can engage with customers in their preferred language, providing a more personalized and efficient support experience.
@@ -24,6 +24,7 @@ The following features are available in the AgentAssist widget:
 The widget consists of five tabs–Search, My Bot, Assist, Transcript, and Settings–to help the agents perform different tasks and activities.
 
 **AgentAssist tabs:**
+
 <img src="../widget-images/agent-assist-widget-tabs.png" alt="agent-assist-widget-tabs.png" title="agent-assist-widget-tabs.png" style="border: 1px solid gray; zoom:80%;">
 
 ### **Search Tab**
@@ -60,7 +61,8 @@ My bot functionality can be used in multiple circumstances (but not limited to):
 
 The Assist tab is the primary interface for the agents. AgentAssist actively monitors conversations and offers assistance to agents. Through the Assist tab, customer intents in the form of Dialog Tasks, FAQs, KnowledgeAI, and Playbook are identified. Agents can run automation processes and send FAQs, Playbook body text, and Dialog Task text to users. The Assist tab displays Dialog Tasks, Playbooks, and Agent Coaching progression. For these features to be available, they should be configured on your device. This section also displays a “bulb” icon if there is a Dynamic Playbook match.
 
-<img src="../widget-images/assist-tab-png" alt="assist-tab-png" title="assist-tab-png" style="border: 1px solid gray; zoom:80%;">
+
+<img src="../widget-images/assist-tab.png" alt="assist-tab" title="assist-tab" style="border: 1px solid gray; zoom:80%;">
 
 The Assist tab facilitates the following:
 
@@ -106,7 +108,7 @@ The Transcript functionality transcribes the audio for the agent and the custome
 
 The Settings tab gives you access to set the listening mode of the bot, available documents and FAQs, and the option to choose a language.
 
-<img src="../widget-images/transcript-tab.png" alt="transcript-tab.png" title="transcript-tab.png" style="border: 1px solid gray; zoom:80%;">
+<img src="../widget-images/settings-tab.png" alt="settings-tab.png" title="settings-tab.png" style="border: 1px solid gray; zoom:80%;">
 
 
 #### Proactive Mode
@@ -169,31 +171,29 @@ The following updates have been added at the feature level:
 
 
 
-* **Dialog Task execution**: The Dialog Tasks in V2 had **Terminate** and **Override Input** buttons, but V3 has **List View**, **Restart**, **Terminate**, and **Maximize** functionality as symbols. \
- \
-AgentAssist V2
+* **Dialog Task execution**: The Dialog Tasks in V2 had **Terminate** and **Override Input** buttons, but V3 has **List View**, **Restart**, **Terminate**, and **Maximize** functionality as symbols.
 
-<img src="../widget-images/agentassist-widget-v2-features-1.png" alt="agentassist-widget-v2-features-1" title="agentassist-widget-v2-features-1" style="border: 1px solid gray; zoom:80%;">
+**AgentAssist V2**
 
-    AgentAssist V3 \
+<img src="../widget-images/agentassist-v2-features-1.png" alt="agentassist-v2-features-1" title="agentassist-v2-features-1" style="border: 1px solid gray; zoom:80%;">
 
-<img src="../widget-images/agentassist-v3-features-2.png" alt="agentassist-v3-features-2" title="agentassist-v3-features-2" style="border: 1px solid gray; zoom:80%;">
+**AgentAssist V3**
+
+<img src="../widget-images/agent-assist-v3-features-tab-1.png" alt="agentassist-v3-features-2" title="agentassist-v3-features-2" style="border: 1px solid gray; zoom:80%;">
 
 * The **Override Input** button in V2 and the input field under the running Dialog Task in V3 have the same functionality - prevent the widget from capturing the customer’s input. This functionality is useful when the agent has multiple conversations going on simultaneously. \
 
 **AgentAssist V2**
 
 <img src="../widget-images/agent-assist-v2-features-2.png" alt="agent-assist-v2-features-2" title="agent-assist-v2-features-2" style="border: 1px solid gray; zoom:80%;">
+
 **AgentAssist V3**
+
 <img src="../widget-images/agentassist-v3-features-2.png" alt="agentassist-v3-features-2" title="agentassist-v3-features-2" style="border: 1px solid gray; zoom:80%;">
 
 
-## 
-    New Tab addition - Settings Tab
-
-
-    The **Settings** tab in V3 lets you to:
-
+## New Tab addition - Settings Tab
+The **Settings** tab in V3 lets you to:
 * Turn on/off the **Proactive mode**.
-* Navigate to the [Documentation](https://docs.kore.ai/agentassist/), [FAQ](https://docs.kore.ai/agentassist/frequently-asked-questions/faq/), and the [Kore Academy](https://academy.kore.ai/).
+* Navigate to the **Documentation**, **FAQ**, and the **Kore Academy**.
 * Select a language.
