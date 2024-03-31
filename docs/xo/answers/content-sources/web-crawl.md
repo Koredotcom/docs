@@ -9,7 +9,7 @@ Websites usually provide detailed information about an organization's products a
 * You can define crawl rules to enable or disable specific pages to be crawled. 
 * There is authentication support to allow a crawler to access restricted content. 
 
-To manage the data ingested through web pages or to add new web sources, go to the**Web Crawl tab**under the **Sources**page.
+To manage the data ingested through web pages or to add new web sources, go to the **Web Crawl tab** under the **Sources** page.
 
 ![Web Crawl](../images/webcrawlhome.png "Web Crawl")
 
@@ -29,15 +29,15 @@ Enter the following details of the web domain to be crawled on the **Configurati
 
 **Source Title** – Provide a unique name for the web source. 
 
-**Description—**Enter a description of the source. This field can contain any information about the source, such as the data it offers and the reason for adding it as a source. 
+**Description** - Enter a description of the source. This field can contain any information about the source, such as the data it offers and the reason for adding it as a source. 
 
 **Crawl Sources** – There are three ways to initiate crawling for a web domain. 
 
 
 
-1. **URL **– Provide the base URL of the web domain to be crawled. When a URL is provided, the crawler automatically goes through the web pages that are discoverable through this URL in the domain based on the **crawl configuration** discussed below. 
+1. **URL** – Provide the base URL of the web domain to be crawled. When a URL is provided, the crawler automatically goes through the web pages that are discoverable through this URL in the domain based on the **crawl configuration** discussed below.
 2. **Upload Sitemap** – Provide a list of sitemaps as a CSV file and a Base URL. The base URL is used to validate the URLs in the sitemaps.  It crawls through all the web pages listed in each sitemap in the CSV file, for which the URL matches the Base URL. If a URL in the sitemap does not match the base URL, the crawler skips that URL and does not crawl it. The crawl options are used to refine the URLs further for crawling. You can use the sample sitemap CSV to learn the format of the CSV file.  
-3. **Upload URL**– Provide a list of URLs to crawl in the form of a CSV file and a base URL. The base URL is used to validate the URLs in the CSV file.  In this case, the crawler goes through all the pages listed in the CSV file that match the Base URL. The URLs that match the base URL are crawled, and those that do not match are skipped. The crawl options are used to refine the URLs further for crawling. In this case, crawl depth and max URL crawl options are not required.  Use the _Sample URL CSV _to learn about the format of the CSV file. 
+3. **Upload URL**– Provide a list of URLs to crawl in the form of a CSV file and a base URL. The base URL is used to validate the URLs in the CSV file.  In this case, the crawler goes through all the pages listed in the CSV file that match the Base URL. The URLs that match the base URL are crawled, and those that do not match are skipped. The crawl options are used to refine the URLs further for crawling. In this case, crawl depth and max URL crawl options are not required.  Use the *Sample URL CSV* to learn about the format of the CSV file. 
 
 **Crawl Configuration**—This is the Crawl configuration for the source. This is used to further refine the pages to be crawled.
 
@@ -55,12 +55,12 @@ Enter the following details of the web domain to be crawled on the **Configurati
 
 You can use any of the following types of conditions to choose the URLs:
 
-* **Equals to -** when the URL exactly matches the given value. 
-* **Not equal to **- when the URL does not match the given value. 
+* **Equals to** - when the URL exactly matches the given value. 
+* **Not equal to** - when the URL does not match the given value. 
 * **Contains** - when a given string is found in the URL. 
-* **Does not contain **- When a given string value is not found in the URL. 
+* **Does not contain** - When a given string value is not found in the URL. 
 * **Begins with** - when a given string is found at the beginning of the URL.
-* **Ends with -** when a given string is found at the end of the URL.
+* **Ends with** - when a given string is found at the end of the URL.
 
 You can **add any number of rules** to selectively choose the URLs from the web domain in the above two options. 
 
@@ -76,7 +76,7 @@ You can **add any number of rules** to selectively choose the URLs from the web 
 
 **Crawl depth** – Each website contains multiple levels of the hierarchy of pages and subpages. The source URL is considered to be at the top of the hierarchy, and other pages linked to the source URL create nested layers. Crawl depth refers to the maximum number of nested levels that the crawler should go to. Set to 0 to indicate no limit. If no value is provided for the field, the default crawl depth is set to 5. 
 
-**Max URL Limit_ –_** This field refers to the maximum number of URLs to crawl. Set to 0 to indicate no limit. If no value is provided, this field uses the default value of 10. 
+**Max URL Limit** - This field refers to the maximum number of URLs to crawl. Set to 0 to indicate no limit. If no value is provided, this field uses the default value of 10. 
 
 **Set Schedule Timer** - Enable this field to schedule the crawling at a particular date and time. You can also set a frequency for recrawling the web domain at regular intervals. 
 
@@ -220,11 +220,11 @@ You can edit the configuration for any crawl source at any time. This can be use
 
 Any changes made to the configuration come into effect either when you manually recrawl the domain after making the changes or at the next scheduled recrawl time.  
 
-To make any changes in the source configuration, click the source title from the list of configured sources and make appropriate changes under the _Configuration _tab. ![Update a web source](../images/update-websource.png "Updating a web source")
+To make any changes in the source configuration, click the source title from the list of configured sources and make appropriate changes under the **Configuration** tab. ![Update a web source](../images/update-websource.png "Updating a web source")
 
 ## View execution status and crawled pages
 
-Crawling a web domain takes time depending on the crawl options set for the source. For example, if all the URLs are to be crawled and the crawl depth and max URLs are set to maximum, it may take longer than a configuration where the crawl depth is set to 2 and the max URLs are set to 10. When a new web source is added, you can choose to execute the crawling process in the background. Also, the scheduled recrawls which run at specific times are automatically run in the background. To view the pages crawled in a web source, go to its **Pages**tab.
+Crawling a web domain takes time depending on the crawl options set for the source. For example, if all the URLs are to be crawled and the crawl depth and max URLs are set to maximum, it may take longer than a configuration where the crawl depth is set to 2 and the max URLs are set to 10. When a new web source is added, you can choose to execute the crawling process in the background. Also, the scheduled recrawls which run at specific times are automatically run in the background. To view the pages crawled in a web source, go to its **Pages** tab.
 ![Crawled pages](../images/crawled-pages.png "crawled pages")
 
 It lists the pages crawled in the last update, the user who initiated the crawl, and the URL of the crawled page. You can also recrawl a given page or delete it using the actions for the page. 
@@ -243,13 +243,13 @@ It shows the current status of the web crawl, the timestamp of the most recent c
 
 ## Recrawling a web source
 
-Recrawling is required to keep up with the changes in the source. You can either schedule recrawling of the website at regular intervals using the scheduler or you can manually perform a recrawl operation as and when required. To manually recrawl a web source, click the **recrawl **action against the name of the source.
+Recrawling is required to keep up with the changes in the source. You can either schedule recrawling of the website at regular intervals using the scheduler or you can manually perform a recrawl operation as and when required. To manually recrawl a web source, click the **recrawl** action against the name of the source.
 ![Recrawl Web Source](../images/recrawl-websource.png "recrawl web source")
 
-You can also use the Re-Crawl on the configuration page of the web source. ![Recrawl](..images/recrawl-websource-via-config-page.png "recrawl")
+You can also use the Re-Crawl on the configuration page of the web source. ![Recrawl](../images/recrawl-websource-via-config-page.png "recrawl")
 
 
-You can also recrawl selected pages of the source when you know the specific pages that have been updated. This can avoid the unnecessary crawling of the whole source. Go to the **Pages**tab of the source and click the **Recrawl** link under **Actions** for the page to be crawled.![Recrawl a page](../images/page-actions.png "recrawl a page")
+You can also recrawl selected pages of the source when you know the specific pages that have been updated. This can avoid the unnecessary crawling of the whole source. Go to the **Pages** tab of the source and click the **Recrawl** link under **Actions** for the page to be crawled.![Recrawl a page](../images/page-actions.png "recrawl a page")
 
 ## Deleting an existing web crawler
 
@@ -281,4 +281,4 @@ There can be various scenarios when the application either fails to crawl a web 
 
 3.**Web Crawl Takes Too Long:**
 
-* Verify if the web pages are JavaScript-rendered and enable the option if necessary. This situation may arise when many pages on the website being crawled return no content because they are JavaScript-rendered. The crawler continues to crawl the next pages until it crawls the specified number of pages (defined by ‘max URLs’).
+* Verify if the web pages are JavaScript-rendered and enable the option if necessary. This situation may arise when many pages on the website being crawled return no content because they are JavaScript-rendered. The crawler continues to crawl the next pages until it crawls the specified number of pages (defined by *‘max URLs’* ).

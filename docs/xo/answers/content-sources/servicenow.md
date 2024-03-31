@@ -47,21 +47,11 @@ Set up an OAuth endpoint in your ServiceNow instance. Refer to[ this documentati
 
 ![ServiceNow Authorization](../images/connectors/servicenow/authorization-tab.png "ServiceNow Authorization")
 
-    **Name** - Give a unique name to the connector. 
+**Name** - Give a unique name to the connector. 
+**Client ID** - The auto-generated unique ID of the application.
+**Client Secret**- The secret generated while configuring the OAuth 
+**Host URL**- Host of your ServiceNow instance
+**Username**- Username to authenticate with the instance
+**Password** - Password to authenticate with the instance
 
-    **Client ID** - The auto-generated unique ID of the application.
-
-
-    **Client Secret**- The secret generated while configuring the OAuth 
-
-
-    **Host URL **- Host of your ServiceNow instance
-
-
-    **Username **- Username to authenticate with the instance
-
-
-    **Password ** - Password to authenticate with the instance
-
-
-    Click the **Connect** button to initiate authorization with the application. 
+Click the **Connect** button to initiate authorization with the application. 
