@@ -197,7 +197,7 @@ This option provides you ready-made templates targeting major industry verticals
  
 The dialog task is created and opens in the Dialog Builder. You can make required changes like any other dialog by adding, removing and configuring nodes as per need.
 
-<img src="../images/using-dialog-builder-dialog-template-dialog-created.png" alt="Dialog creation completed" title="Dialog creation completed style="border:1px solid gray;zoom:70%;">
+<img src="../images/using-dialog-builder-dialog-template-dialog-created.png" alt="Dialog creation completed" title="Dialog creation completed" style="border:1px solid gray;zoom:70%;">
 
 [Click here to know about Nodes & Connections](../node-types/nodes-transitions/){:target="_blank"}
 
