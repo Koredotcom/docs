@@ -31,6 +31,6 @@ This section is used to configure the type of answers to be presented to the use
     * **Response Length**- This is the expected length of the answer, in tokens. 
 * **Generative Answers**: The top chunks retrieved in response to the user query are sent to the configured LLM which generates a paraphrased answer from the content in the chunks. Use the following fields to configure Generative Answers. 
     * **LLM Model**: Select the LLM Model to be used for Answer Generation. Refer to [this](../../app-settings/generative-ai-tools/llm-integration) to learn more about how to integrate the application with an LLM. 
-    * **Answer Prompt**: Select the answer prompt to be sent to the LLM along with the chunks. The prompt can influence the accuracy and relevance of the generated response. Refer to [this](../../app-settings/generative-ai-tools/prompts-and-request-library) to learn more about how to write and edit prompts. 
+    * **Answer Prompt**: Select the answer prompt to be sent to the LLM along with the chunks. The prompt can influence the accuracy and relevance of the generated response. Refer to [this](../../app-settings/generative-ai-tools/prompts-and-requests-library) to learn more about how to write and edit prompts. 
     * **Temperatures**: This parameter controls the randomness or creativity of the generated text. The higher the temperature, the more the randomness. 
     * **Response Length**: The number of tokens in the generated response. 
