@@ -35,80 +35,47 @@ To configure the Component Properties tab, please follow the steps below:
 1. On the **Component Properties** tab, under the **General Settings** section, enter the **Name** and **Display Name** of your Webhook node. 
 2. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the VA. You can use the task-level settings or customize them for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
-![alt_text](images/image2.png "image_tooltip")
-
-
-
-
-<&lt;webhook-node-img3-component-properties-sdk-not-configured.png>>
+<img src="../images/webhook-node-img3-component-properties-sdk-not-configured.png" alt="Webhook node - SDK not configured" title="Webhook node - SDK Not configured" style="border:1px solid gray;zoom:70%;">
+    
 **SDK not configured**
 
-If the SDK is configured, you can see the configuration details i.e.** Events, Client ID, Callback URL** and** Timeout** in the Component Properties tab.
+If the SDK is configured, you can see the configuration details i.e. **Events, Client ID, Callback URL** and **Timeout** in the Component Properties tab.
 
+<img src="../images/webhook-node-img3-component-properties-sdk-configured.png" alt="Webhook node - SDK configured" title="Webhook node - SDK configured" style="border:1px solid gray;zoom:70%;">
 
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-
-
-<&lt;webhook-node-img3-component-properties-sdk-configured.png>>
+**SDK Configured**
 
 
 ### Instance Properties
 
 Use the Instance Properties to define any user tags that you want to set for the Webhook node.
 
+!!! Note
 
-```
-Note: The settings in the Instance Properties tab are specific to the current dialog task and do not reflect in other dialog tasks that use this node.
-```
-
-
-
+    The settings in the Instance Properties tab are specific to the current dialog task and do not reflect in other dialog tasks that use this node.
 
 1.  On the Webhook node properties panel, click the **Instance Properties** tab.
-2. Under the **Custom** **Tags **section, add tags to build custom profiles of your VA’s conversations. [Click here for more](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/custom-meta-tags/).
+2. Under the **Custom** **Tags **section, add tags to build custom profiles of your VA’s conversations. [Click here for more](../../../../../analytics/automation/custom-dashboard/custom-meta-tags/){:target="_blank"}.
 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
-
-
-<&lt;webhook-node-img4-instance-properties.png>>
+<img src="../images/webhook-node-img4-instance-properties.png" alt="Webhook node - Instance properties" title="Webhook node - Instance properties" style="border:1px solid gray;zoom:70%;">
 
 
 ### Connections Properties
 
-**Note:** Connection properties are available for the node only if it is the bottommost node of a sequence. 
+!!! Note
+
+    Connection properties are available for the node only if it is the bottommost node of a sequence. 
 
 From the node’s **Connections** tab, you can determine which node in the dialog task to execute next. You can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions.
 
+!!! Note
 
-```
-Note: The conditions configured here are applicable only for this instance and will not affect this node when being used in any other dialog.
-```
-
-
- 
-
-To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/nodes-conditions/). 
+    The conditions configured here are applicable only for this instance and will not affect this node when being used in any other dialog.
 
 
+To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions){:target="_blank"}.
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<img src="../images/webhook-node-img5-connections-properties.png" alt="Webhook node - Connection properties" title="Webhook node - Connection properties" style="border:1px solid gray;zoom:70%;">
 
-
-![alt_text](images/image5.png "image_tooltip")
-
-
-<&lt;webhook-node-img5-connections-properties.png>>
-
-Please [click here](https://community.kore.ai/t/example-of-how-to-use-web-hook-node-for-response-which-takes-more-than-20-seconds/989) for a working example of using the Webhook node.
+Please [click here](https://community.kore.ai/t/example-of-how-to-use-web-hook-node-for-response-which-takes-more-than-20-seconds/989) for a working example using the Webhook node.
