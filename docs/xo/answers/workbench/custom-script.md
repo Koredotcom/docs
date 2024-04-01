@@ -1,6 +1,6 @@
 # Custom Script
 
-Custom Script gives you the flexibility to implement custom changes to the Workbench, allowing you to process the data according to your specific business needs. For example, if you wish to prepend the chunk title of all the chunks extracted from a particular file, you can write a **Painless script **to do the same. 
+Custom Script gives you the flexibility to implement custom changes to the Workbench, allowing you to process the data according to your specific business needs. For example, if you wish to prepend the chunk title of all the chunks extracted from a particular file, you can write a **Painless script** to do the same. 
 
 
 ## **Custom Script Configuration**
