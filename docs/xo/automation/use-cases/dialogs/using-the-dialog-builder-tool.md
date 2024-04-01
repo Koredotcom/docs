@@ -210,10 +210,10 @@ Before moving on, here is an overview of the Dialog Task Builder. For details on
 
 The Dialog Builder interface consists of:
 
- * [Tool Set](#the-tool-set)
- * [Index Panel](#the-index-panel)
- * [Canvas](#the-canvas)
- * [Node Panel](#the-node-panel)
+1. [Tool Set](#the-tool-set)
+2. [Index Panel](#the-index-panel)
+3. [Node Panel](#the-node-panel)
+4. [Canvas](#the-canvas)
 
 
 ### The Tool Set
@@ -321,6 +321,19 @@ On this tab, you can see a list of all the sequences present in the Current Dial
 
 You can also search for nodes and sequences, which will show you the nodes/sequences in the current dialog that match the search text.
 
+### The Nodes Panel
+
+The **Nodes panel** is a streamlined, user-friendly categorization provided at the bottom of the canvas. Click a group to see the node types within it, and drag and drop the nodes to add them to the dialog. The nodes added from this panel will get added as reusable assets to the **Assets** tab of the **Index panel**.
+
+<img src="../images/using-dialog-builder-node-panel.png" alt="Node panel" title="Node panel" style="border:1px solid gray;zoom:60%;">
+
+Node type groups in the panel:
+
+* **Inform** - Contains the nodes that can be used to provide information to the user. For example, Message node.
+* **Ask** - Contains the nodes that can be used to get input from the user. For example, Confirmation or Entity node.
+* **Action** - Contains nodes that can be used for any action that the app is expected to perform without interaction with the user. For example, Script, Service, Process, or Agent Transfer node.
+* **GenAI** - Contains nodes that can be used to leverage the full potential of LLMs and Generative AI models to quickly build conversations that involve complex flows and also provide human-like experiences. For example, GenAI Node and GenAI Prompt.
+
 ### The Canvas
 
 The Canvas is where you can integrate your conversation scenarios with your business logic.
@@ -404,20 +417,6 @@ Using **Bookmarks**, you can create navigation points in a dialog with a complex
 #### Mini map
 
 It is a miniature representation of the visual appearance of the dialog design.
-
-### The Nodes Panel
-
-The **Nodes panel** is a streamlined, user-friendly categorization provided at the bottom of the canvas. Click a group to see the node types within it, and drag and drop the nodes to add them to the dialog. The nodes added from this panel will get added as reusable assets to the **Assets** tab of the **Index panel**.
-
-<img src="../images/using-dialog-builder-node-panel.png" alt="Node panel" title="Node panel" style="border:1px solid gray;zoom:60%;">
-
-Node type groups in the panel:
-
-* **Inform** - Contains the nodes that can be used to provide information to the user. For example, Message node.
-* **Ask** - Contains the nodes that can be used to get input from the user. For example, Confirmation or Entity node.
-* **Action** - Contains nodes that can be used for any action that the app is expected to perform without interaction with the user. For example, Script, Service, Process, or Agent Transfer node.
-* **GenAI** - Contains nodes that can be used to leverage the full potential of LLMs and Generative AI models to quickly build conversations that involve complex flows and also provide human-like experiences. For example, GenAI Node and GenAI Prompt.
-
 
 ## Add node to dialog
 
