@@ -8,7 +8,7 @@ The Workbench comes with a built-in simulator that provides an interactive previ
 * If multiple stages are configured, the simulator enables testing the cumulative effect of all stages on the result.
 * You can test changes on any type of data source, ensuring versatility in testing scenarios.
 
-Click the **_Simulate _**button at any point to test the changes made to the source data due to the workbench stages. 
+Click the **Simulate** button at any point to test the changes made to the source data due to the workbench stages. 
 
 ![Simulator](../images/simulate-option.png "Simulator")
 
@@ -18,6 +18,6 @@ The simulation is performed on a sample set of documents. The output of the simu
 ![Simulator Output](../images/simulator-output.png "Simulator Output")
 
 
-The simulator shows the changes made to the source data through various stages of Workbench in the order in which they are listed, starting from the first stage. When you click the Simulate option on a particular stage, the simulator shows the changes made through the workbench pipeline till that stage. For example, if there are three stages in the Workbench pipeline and you click the **Simulate**button while on the second stage, the simulation will show the cumulative effect of changes made through Stage One and Stage Two. 
+The simulator shows the changes made to the source data through various stages of Workbench in the order in which they are listed, starting from the first stage. When you click the Simulate option on a particular stage, the simulator shows the changes made through the workbench pipeline till that stage. For example, if there are three stages in the Workbench pipeline and you click the **Simulate** button while on the second stage, the simulation will show the cumulative effect of changes made through Stage one and Stage two. 
 
 You can also **test individual stages** of the pipeline by disabling the other stages temporarily.

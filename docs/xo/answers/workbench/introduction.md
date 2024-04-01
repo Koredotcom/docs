@@ -1,17 +1,19 @@
+# Workbench Overview
+
 Workbench is a tool that allows you to process and enhance the ingested content. Workbench transforms data through a series of steps called **Stages**. You can use Workbench to update content, add metadata, clean data to exclude certain pages, etc. By improving the quality of your content, you can enhance the accuracy of answers and thereby, the search experience. For example, if you do not want confidential information to appear in the answers, you can set up an exclude document stage that excludes chunks containing the word ‘Confidential’ in the title or the body of the chunk.
 
 Workbench offers stages to perform different types of operations sequentially. Each stage performs a specific set of data transformations or enrichment before passing the content onto the next stage in Workbench. The output of one stage is given to the next stage as input. For example, if there are three stages, the input to stage three is the cumulative effect of processing in stage one followed by the processing in stage two on the extracted data. 
 
 
-# Features
+## Features
 
-* **Pipeline Processing:**The Workbench employs a series of stages that process the ingested chunks sequentially. Each stage in the pipeline executes specific data transformations.
+* **Pipeline Processing:** The Workbench employs a series of stages that process the ingested chunks sequentially. Each stage in the pipeline executes specific data transformations.
 * **Custom Transformation:** Each stage in the pipeline allows customization of data transformations as per your specific business needs. 
 * **Simulation Capabilities:** Workbench has an inbuilt simulator that allows you to simulate and test the behavior of each stage individually or the cumulative impact of stages on the chunks.
 * **Flexible Stage Sequencing:** Workbench gives you the flexibility to sequence data operations per your needs. This enables you to design chunk processing efficiently. 
 
 
-# Workbench Stages
+## Workbench Stages
 
 Currently, Workbench supports three stages. 
 
@@ -26,7 +28,7 @@ Currently, Workbench supports three stages.
 
 Adding a new stage requires defining the type of stage, the condition that selects the data on which the processing is to be done, and the outcome of the stage. 
 
- To add a new stage, go to the **Workbench**page under **Content**and click **+New Stage**. 
+ To add a new stage, go to the **Workbench** page under **Content** and click **+New Stage**. 
 
 
 ![Add a new stage](../images/workbench-home.png "add a new stage")
@@ -43,7 +45,7 @@ Enter a unique name for the stage, the condition for the stage to select content
 
 * You can have **one or more conditions** to select the content. 
 * You can define **one or more outcomes** for the stage. 
-* By default, a new stage is **enabled**at the time of creation.  
+* By default, a new stage is **enabled** at the time of creation.  
 * You can add any number of workbench stages. 
 
 
@@ -66,9 +68,6 @@ To enable or disable a stage, use the **Stage Status toggle button** on the stag
 
 ## Deleting a stage
 
-Deleting a stage removes it permanently from the Workbench. Use the Delete button at the bottom of the page to delete the stage. 
+Deleting a stage removes it permanently from the Workbench. Use the **Delete** button at the bottom of the page to delete the stage. 
 
 ![Delete Stage](../images/delete-stage.png "Delete Stage")
-
-## Simulation and Testing
-Coming Soon!
