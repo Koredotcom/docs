@@ -78,4 +78,7 @@ To set up node connection conditions, please follow the steps outlined in [Addin
 
 <img src="../images/webhook-node-img5-connections-properties.png" alt="Webhook node - Connection properties" title="Webhook node - Connection properties" style="border:1px solid gray;zoom:70%;">
 
+
+**Related Links:**
+
 Please [click here](https://community.kore.ai/t/example-of-how-to-use-web-hook-node-for-response-which-takes-more-than-20-seconds/989) for a working example using the Webhook node.
