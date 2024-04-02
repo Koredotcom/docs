@@ -29,7 +29,7 @@ Automation AI offers AI-powered sophisticated tools for creating Virtual Assista
         <img src="../images/xop-sm-inteligence.svg" style="zoom:200%;"></img>
         <kr-grid-title>Intelligence Management</kr-grid-title>
         <kr-grid-desc>Empower your automation workflows to handle nuances of human conversations, including interruptions, clarifications, and more. Use Cases are fundamental building blocks for automation.</kr-grid-desc>
-        <a href="../intelligence/intelligence-overview.md">Learn More</a>
+        [Learn more about Intelligence Management :octicons-arrow-right-24:](./intelligence/intelligence-overview.md)
     </kr-grid-item>
     <kr-grid-item>
         <img src="../images/xop-sm-test.svg" style="zoom:200%;"></img>
