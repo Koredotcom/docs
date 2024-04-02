@@ -30,9 +30,9 @@ Before enabling the Freshservice action, complete the following prerequisites:
 
 Steps to enable the Freshservice action:
 
-1. Go to **Build > Integrations > Actions**.
-2. Once you click the **Actions** menu, all integrations are shown in the **Available** region. Select the **Freshservice** action.  
-<img src="../images/freshservice-action-img1.png" alt="Freshservice" title="Freshservice" style="border: 1px solid gray;zoom:50%;"/>
+1. Go to **App Settings** > **Integrations** > **Actions**.
+2. Select the **Freshservice** action.  
+
 
 
 ### Pre-authorize the Integration
@@ -43,7 +43,7 @@ You can authorize the integration using your credentials. The developer authoriz
 
 Steps to authorize a Freshservice action using developer credentials:
 
-1. Go to **Build > Integrations > Actions** and select the **Freshservice** action.
+1. Go to **App Settings** > **Integrations** > **Actions** and select the **Freshservice** action.
 2. In the **Configurations** dialog, select the **Authorization** tab.
 3. Enter the following details:
     1. **Authorization Type** – Select the **Pre-authorize the Integration** option, and then select the **Basic Auth** option.  
@@ -55,7 +55,9 @@ Steps to authorize a Freshservice action using developer credentials:
 4. Click **Enable**. When you configure the action for the first time, the Integration Successful pop-up is displayed.  
 <img src="../images/freshservice-action-img3.png" alt="Enable integration" title="Enable integration" style="border: 1px solid gray;zoom:50%;"/>
 
-**Note**: The Freshservice action is moved from Available to Configured region.
+!!! note
+
+    The Freshservice action is moved from Available to Configured region.
 
 
 ### Allow End User to Authorize
@@ -64,7 +66,7 @@ You can authorize the integration at a user level with their login credentials. 
 
 Steps to authorize a Freshservice action at a user level:
 
-1. Go to **Build > Integrations > Actions** and select the **Freshservice** action.
+1. Go to **App Settings** > **Integrations** > **Actions** and select the **Freshservice** action.
 2. In the Configurations dialog, select the **Authorization** tab.
 3. Enter the following details:
     1. **Authorization Type** – Select the **Allow Users to Authorize the Integration** option, and then select the **Basic Auth** option.

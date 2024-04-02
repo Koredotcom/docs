@@ -25,22 +25,10 @@ The Kore.ai XO Platform allows you to design and create feedback surveys for pro
 
 ## Navigating to Feedback Survey
 
-To navigate to the Feedback Survey feature, follow the steps below:
+Navigate to **Automation AI > Virtual Assistant > Feedback Survey** on the platform.
 
-1. On the Bot Builder, click the **Build** tab.
-2. Navigate to **Configurations** > **Feedback Survey** on the left navigation menu.
-
-    ![alt_text](images/fs5.png "image_tooltip")
+<img src="../images/navigate-to-feedback-survey.png" alt="Navigate to Feedback Survey" title="Navigate to Feedback Survey" style="border:1px solid gray;zoom:70%;">
  		
-
-	
-
-	
-
-		
-
-			
-
 
 ## Feedback Template Types
 
@@ -88,17 +76,6 @@ Known as the **_New Promoter Score_**, this is a standard customer experience me
 </table>
 
 
-		
-
-	
-
-	
-
-		
-
-			
-
-
 ### CSAT Score Categorization
 
 **CSAT** or **Customer SATisfaction** is a customer experience metric that measures or quantifies how happy the customer is with a Virtual Assistant interaction. The customer is asked to rate on a **five-point scale**, **1** meaning very satisfied and **5** meaning very unsatisfied, for a survey question like “_How satisfied were you with the conversation?_” The response score is mapped to the relevant category as shown below:
@@ -144,45 +121,22 @@ Known as the **_New Promoter Score_**, this is a standard customer experience me
 </table>
 
 
- 
-
-
 ### Like/Dislike
 
 The customer is asked to respond to the feedback survey by clicking a **Like** or **Dislike** icon. **Like** or **Extremely Likely** denotes the customer’s positive experience and is allocated a score of 1 internally. **Dislike** or **Extremely Unlikely** indicates a negative customer experience, and is allocated a score of 0 internally.
-
-		
-
-	
-
-	
-
-		
-
-			
-
 
 ## Feedback Survey Creation and Definition
 
 To create a Feedback Survey on the Bot Builder, follow the steps below:
 
+1. Navigate to **Automation AI > Virtual Assistant > Feedback Survey**.
+2. If this is your first feedback survey, click **Add Feedback Survey** available on the **Feedback Survey** screen. 
 
+    <img src="../images/add-feedback-survey-btn.png" alt="Add Feedback Survey" title="Add Feedback Survey" style="border:1px solid gray;zoom:70%;">
 
-1. Navigate to **Build** > **Configurations** > **Feedback Survey**.
-2. If this is your first feedback survey, click **Add Feedback** on the **Feedback Survey** screen. 
+    If surveys have been created previously, click the available **New Survey** button (Add Feedback Survey button wont be present in this case). 
 
-
-
-
-    ![alt_text](images/fs8.png "image_tooltip")
- 
-    Otherwise, click **New Survey**. 
-
-
-
-
-
-    ![alt_text](images/fs4.png "image_tooltip")
+    <img src="../images/new-survey-btn.png" alt="New Survey" title="New Survey" style="border:1px solid gray;zoom:70%;">
 
 3. In the **Add Feedback Survey** window, define the survey details and design, and launch the survey to be visible to customers.
 
@@ -193,22 +147,15 @@ The Feedback Survey definition and design flow steps are given below:
 
 In this section, you can define a survey name and the type you want to use. To define the survey details, follow the steps below:
 
-
-
 1. Enter the **Survey Name** in the relevant text area.
 2. Select the **Survey Type** as either **NPS**, **CSAT**, or **Like/Dislike**. Based on your selection, the survey definition changes.
 3. Click **Next** to move to the next step.
 
-
-    ![alt_text](images/fs13.png "image_tooltip")
-
-
+<img src="../images/feedback-survey-name-type.png" alt="Feedback Survey - Name and Type" title="Feedback Survey - Name and Type" style="border:1px solid gray; zoom:70%;">
 
 ### Step 2: Define the Survey Design
 
 You can define how to present the survey in the **Survey Design** stage which includes the following:
-
-
 
 * Gathering the customer’s feedback using one of the out-of-the-box default templates.
 * Defining the primary question that will be posed to the customer when the system triggers the feedback survey.
@@ -216,135 +163,84 @@ You can define how to present the survey in the **Survey Design** stage which in
 
 To define the survey design, follow the steps below:
 
-
-
 1. Select the relevant option in the **Add Feedback Survey** window based on how you want to create the survey.
 2. If you want to create a new Feedback Survey along with a **Dialog Task** (customizable) which will have the flow required to collect the feedback and capture the analytics, select **Create a survey with a New Dialog** and follow the steps below:
+
     * Enter the **Dialog Name** in the text area.
 
-
-
-        ![alt_text](images/fs16.png "image_tooltip")
+        <img src="../images/feedback-survey-dialog-name.png" alt="Feedback survey with New dialog" title="Feedback survey with New dialog" style="border:1px solid gray;zoom:70%;">
 
     * Set the default **Primary Question** to be posed to the customer for the selected survey type when it’s triggered.
 
-
-
-
-    ![alt_text](images/fs10.png "image_tooltip")
+        <img src="../images/feedback-survey-primary-question.png" alt="Feedback survey - Primary question" title="Feedback survey - Primary question" style="border:1px solid gray;zoom:70%;">
 
     * Alternatively, modify/change the **Primary Question** in the text area.
     * The **Primary Question** response options the customer will see are displayed below based on the selected survey type:
 
     **NPS**
 
-
-    ![alt_text](images/fs6.png "image_tooltip")
+    <img src="../images/feedback-survey-primary-question-nps.png" alt="Feedback survey - Primary question - NPS" title="Feedback survey - Primary question - NPS" style="border:1px solid gray;zoom:70%;">
 
 
     **CSAT**
 
-
-
-    ![alt_text](images/fs19.png "image_tooltip")
-
+    <img src="../images/feedback-survey-primary-question-csat.png" alt="Feedback survey - Primary question - CSAT" title="Feedback survey - Primary question - CSAT" style="border:1px solid gray;zoom:70%;">
 
     **Like/Dislike**
 
-
-
-    ![alt_text](images/fs17.png "image_tooltip")
+    <img src="../images/feedback-survey-primary-question-like-dislike.png" alt="Feedback survey - Primary question - Like/Dislike" title="Feedback survey - Primary question - Like/Dislike" style="border:1px solid gray;zoom:70%;">
 
 
     !!! note
     
-
         The default response names provided for **CSAT** and the **Like/Dislike** types are editable; however, the scores set in the system cannot be changed for any survey type.
 
+3. To create your own flow, select **Create Survey without Dialog** and click **Next**. 
 
+    <img src="../images/feedback-survey-without-dialog.png" alt="Feedback survey - Without dialog" title="Feedback survey - Without dialog" style="border:1px solid gray;zoom:70%;">
 
-1. To create your flow, select **Create Survey without Dialog** and click **Next**. 
-
-
-
-    ![alt_text](images/fs1.png "image_tooltip")
-
-2. Optional Step: To capture additional details from the customer for negative feedback, configure the **follow-up question** with the steps below:
+4. Optional Step: To capture additional details from the customer for negative feedback, configure the **follow-up question** with the steps below:
     * Enable the **Follow-up Question** option (default setting). 
 
-
-
-
-
-        ![alt_text](images/fs11.png "image_tooltip")
+        <img src="../images/feedback-survey-follow-up-question.png" alt="Feedback survey - Follow-up question" title="Feedback survey - Follow-up question" style="border:1px solid gray;zoom:70%;">
 
     * Define when to post the follow-up question by configuring the **IF condition**, where you must select the conditional option from the list for **User Score**. 
 
-
-
-        ![alt_text](images/fs9.png "image_tooltip")
+        <img src="../images/feedback-survey-follow-up-question-condition.png" alt="Feedback survey - Follow-up question Condition" title="Feedback survey - Follow-up question Condition" style="border:1px solid gray;zoom:70%;">
 
     * Next, increment or decrement the **feedback score counter** for the selected condition to set the validation criterion. 
 
-
-
-
-
-        ![alt_text](images/fs2.png "image_tooltip")
+        <img src="../images/feedback-survey-score-counter.png" alt="Feedback survey - Score counter" title="Feedback survey - Score counter" style="border:1px solid gray;zoom:70%;">
 
     * Either edit the default follow-up question in the text area provided for the **THEN** clause or keep it unchanged. 
 
+        <img src="../images/feedback-survey-then-clause.png" alt="Feedback survey - THEN clause" title="Feedback survey - THEN clause" style="border:1px solid gray;zoom:70%;">
 
+5. Modify the **Acknowledgement Message** in the text area or retain the default message to acknowledge the customer’s effort in taking the survey. 
 
-        ![alt_text](images/fs14.png "image_tooltip")
+    <img src="../images/feedback-survey-acknowledgement.png" alt="Feedback survey - Acknowledgement Message" title="Feedback survey - Acknowledgement Message" style="border:1px solid gray;zoom:70%;">
 
-1. Modify the **Acknowledgement Message** in the text area or retain the default message to acknowledge the customer’s effort in taking the survey. 
-
-
-    ![alt_text](images/fs12.png "image_tooltip")
-
-2. Click **Next** to move to the survey launch configuration.
+6. Click **Next** to move to the survey launch configuration.
 
 
 ### Step 3: Define Launch Configuration
 
 After defining the survey, you can choose how and when to launch the survey in one of the following ways with the **Launch Configuration**:
 
-
-
 1. Associate the survey with the end-of-task (conversation) event.
 2. Add the survey task as a sub-dialog to other primary tasks.
 
 To configure the feedback survey launch, follow the steps below:
 
-
-
 1. Select one of the following options:
-    * **Launch after End of Task**: The dialog task is considered as the ‘_End of Task_‘ event, and the survey is triggered at the end of every conversation. When selected, **_End of Task_** (**End of Conversation** Event) under **Intelligence** > **Events** > **End Of Task** will be overridden and the feedback survey is launched. Through the survey dialog you’ve created in the previous step.
+    * **Launch after End of Task**: The dialog task is considered as the ‘_End of Task_‘ event, and the survey is triggered at the end of every conversation. When selected, **_End of Task_** (**End of Conversation** Event) under **Automation AI > Events > Conversation Events > End Of Task** will be overridden and the feedback survey is launched. Through the survey dialog you’ve created in the previous step.
     * **I will decide how to launch the Survey**: You can manually initiate the feedback survey at any time by using the associated dialog task in the Kore.ai XO platform. A dialog task will be made available under Build → Conversational Skills. This allows you to control when the survey is launched and gather feedback at your own convenience.
 
+        <img src="../images/feedback-survey-when-to-launch.png" alt="Feedback survey - When to launch" title="Feedback survey - When to launch" style="border:1px solid gray;zoom:70%;">
 
+2. Click **Create** to launch the feedback survey. A success confirmation message, as shown below, is displayed with your survey details.
 
-
-        ![alt_text](images/fs1.png "image_tooltip")
-
-1. Click **Create** to launch the feedback survey. A success confirmation message, as shown below, is displayed with your survey details.
-
-
-
-
-    ![alt_text](images/fs15.png "image_tooltip")
-
-
-		
-
-	
-
-	
-
-		
-
-			
+    <img src="../images/feedback-survey-created.png" alt="Feedback survey Successfully Created" title="Feedback survey Successfully Created" style="border:1px solid gray;zoom:70%;">
 
 
 ## Feedback Survey Dialog Flow
@@ -357,18 +253,11 @@ You can customize the dialog flow as per your need by changing the dialog flow d
 
 **Important**
 
-
-
 * **Feedback Service** is introduced as the new **Service Type** option under **General Settings**. You can use this service to submit feedback on the surveys you may have captured using your custom flows. 
 
-
-
-    ![alt_text](images/fs3.png "image_tooltip")
+    <img src="../images/feedback-survey-dialog.png" alt="Feedback survey Dialog" title="Feedback survey Dialog" style="border:1px solid gray;zoom:70%;">
 
 * You can invoke feedback as a sub-dialog from any other point in the conversation where you would like to capture the feedback.
 
-
-
-
-    ![alt_text](images/fs7.png "image_tooltip")
+    <img src="../images/feedback-survey-as-sub-dialog.png" alt="Feedback survey as Sub Dialog" title="Feedback survey as Sub Dialog" style="border:1px solid gray;zoom:70%;">
 		
