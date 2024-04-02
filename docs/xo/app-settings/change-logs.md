@@ -4,7 +4,7 @@ Change Logs keep track of all the changes that take place in your Process App. T
 
 
 
-1. Click the **Settings** tab on the top.
+1. Navigate to **Settings**.
 2. By default, the **General Settings** page is displayed.
 3. On the left pane, click **Change Logs**.
 4. On the Change Logs page, you can find the log files. It gives a detailed information of the logs like _time, performed by, action, what changed,_ and _details_. You can also filter the log files based on a time frame.
