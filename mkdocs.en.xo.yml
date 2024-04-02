@@ -256,27 +256,27 @@ nav:
         - Bot Management: manage-assistant/bot-management.md
         - Manage Namespace: manage-assistant/managing-namespace.md               
   - Search AI:
-    - Overview: answers/about-answers.md
-    - Getting Started: answers/introduction-to-answers.md
+    - Overview: searchai/about-answers.md
+    - Getting Started: searchai/introduction-to-answers.md
     - Content:
         - Sources:
-            - Overview: answers/content-sources/introduction.md
-            - Web Crawl: answers/content-sources/web-crawl.md
-            - Directory: answers/content-sources/directory.md
+            - Overview: searchai/content-sources/introduction.md
+            - Web Crawl: searchai/content-sources/web-crawl.md
+            - Directory: searchai/content-sources/directory.md
             - Connectors:
-                - Introduction: answers/content-sources/connectors.md
-                - ServiceNow Connector: answers/content-sources/servicenow.md
-        - Extraction Strategy: answers/content-extraction/extraction.md
+                - Introduction: searchai/content-sources/connectors.md
+                - ServiceNow Connector: searchai/content-sources/servicenow.md
+        - Extraction Strategy: searchai/content-extraction/extraction.md
         - Workbench:
-            - Introduction: answers/workbench/introduction.md
-            - Field Mapping Stage: answers/workbench/field-mapping.md
-            - Custom Script: answers/workbench/custom-script.md
-            - Exclude Document: answers/workbench/exclude-document.md
-            - Workbench Simulator: answers/workbench/simulation.md
-        - Chunk Browser: answers/chunk-browser.md
-        - Index Configuration: answers/index-configuration.md
+            - Introduction: searchai/workbench/introduction.md
+            - Field Mapping Stage: searchai/workbench/field-mapping.md
+            - Custom Script: searchai/workbench/custom-script.md
+            - Exclude Document: searchai/workbench/exclude-document.md
+            - Workbench Simulator: searchai/workbench/simulation.md
+        - Chunk Browser: searchai/chunk-browser.md
+        - Index Configuration: searchai/index-configuration.md
     - Configuration:
-        - Answer Configuration: answers/answer-configuration.md
+        - Answer Configuration: searchai/answer-configuration.md
   - Contact Center AI:
     - Overview: contactcenter/about-contact-center.md 
     - Agent and Supervisors: 
@@ -306,9 +306,9 @@ nav:
     - Campaigns:  
       - Overview: contactcenter/campaigns/about-campaigns.md
   - Agent AI:
-    - Overview: agentassist/about-agentassist.md 
+    - Overview: agentai/about-agentassist.md 
     - Agent Experience:
-      - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md       
+      - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md       
   - Integrations & APIs:
     - Overview: channels/IVR-integration.md    
     - Integrations:
