@@ -47,7 +47,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     * **Agent Desktop**: Provides a centralized workspace for agents.
     * **Campaigns**: Tools for managing voice and proactive web campaigns.  
     
-    [Learn more about Contact Center features :octicons-arrow-right-24:](../contactcenter/about-contact-center.md)
+    [Learn more about Contact Center AI features :octicons-arrow-right-24:](../contactcenter/about-contact-center.md)
 
 === "Agent AI"
 
