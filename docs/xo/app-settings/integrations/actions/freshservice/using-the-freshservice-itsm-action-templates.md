@@ -6,7 +6,7 @@ Steps to create a dialog task using Freshservice action templates:
 
 1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
-<img src="../images/freshservice-tem-img1.png" alt="Create 
+
 
 3. On the Dialog Task pop-up, under the Integration, select the **Freshservice** option to view the action templates.  
 <img src="../images/freshservice-action-img11-tem-img2.png" alt="view Freshservice action template" title="view Freshservice action template" style="border: 1px solid gray;zoom:50%;"/>

@@ -51,7 +51,7 @@ Steps to authorize a Freshdesk action using developer credentials:
 5. Click **Enable**. When you configure the action for the first time, the Integration Successful pop-up is displayed.  
 <img src="../images/freshdesk-action-img3.png" alt="Enable integration" title="Enable integration" style="border: 1px solid gray;zoom:50%;"/>
 
-!!!
+!!! note
 
     The Freshdesk action is moved from _Available_ to _Configured_ region.
 
