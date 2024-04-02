@@ -4,7 +4,8 @@ Business information is available in a variety of formats and at various locatio
 
 Search AI allows you to **upload one or more files or directories from the local device or a given URL**. The uploaded files are organized into directories in the application. A default directory is always present to store files. Once a file is successfully uploaded to the application, it is automatically indexed, and the file data is readily available to answer user queries.
 
-Search AI supports files in various formats - PDF, DOCX, PPT, XLSX, JPEG, PNG, and TXT. However, currently, scanned PDFs and password-protected files are not supported.  
+!!!note
+    Search AI supports files in the following formats - PDF, DOCX, PPT, XLSX, JPEG, PNG, and TXT. However, currently, scanned PDFs and password-protected files are not supported.  
 
 ## Viewing Files and Directories
 
@@ -14,7 +15,7 @@ Go to the **Sources** page and click the **Directory** tab. This lists all the d
 
 For each directory, it lists the number of files present in the directory, its owner, the timestamp of the last update made to the directory, and the status of file uploads to the directory. By default, the **Default Directory** always exists. You can upload files to this default directory or create new directories and upload files to those directories. 
 
-Click any of the directories in the list to view the details. The**Directory Details** page shows the properties of the directory, and the **Files**tab lists the files in the directory along with their type and number of pages in the file. 
+Click any of the directories in the list to view the details. The **Directory Details** page shows the properties of the directory, and the **Files** tab lists the files in the directory along with their type and number of pages in the file. 
 
 ![Directory Details](../images/directory/directory-details.png "Directory Details")
 
