@@ -4,9 +4,9 @@ You can use the **Prebuilt Action Templates** from your Freshdesk integration to
 
 Steps to create a dialog task using the Freshdesk action templates:
 
-1. Go to **Build > Conversation Skills > Dialog Tasks**.
-2. Click **Create a Dialog Task**.  
-<img src="../images/freshdesk-tem-img1.png" alt="Create dialog task" title="Create dialog task" style="border: 1px solid gray;zoom:50%;"/>
+1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
+2. Click **Create Dialog**.  
+
 
 3. On the Dialog Task pop-up, under the Integration, select the Freshdesk option to view the action templates.  
 <img src="../images/freshdesk-action-img10-tem-img2.png" alt="select Freshdesk" title="Select Freshdesk" style="border: 1px solid gray;zoom:50%;"/>
