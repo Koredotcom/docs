@@ -17,7 +17,7 @@ Currently, Search AI provides a connector for ServiceNow. The list will continue
 
 ## Adding a content source using Connector
 
-To configure a new connector, go to the **Connectors**tab under the **Sources **page. For a new connector, click on the +**Connect** button.
+To configure a new connector, go to the **Connectors** tab under the **Sources** page. For a new connector, click on the **+Connect** button.
 ![Connector Home](../images/connectors/connector-home.png "connector home")
 
 The following page shows the list of available connectors. Choose the connector corresponding to the third-party application that you want to connect to and configure it. For detailed instructions on configuring connectors, refer to the respective documentation.
@@ -39,14 +39,14 @@ To view or edit the connector configuration, i.e., connection settings, sync sch
 
 **Content**
 
-The **_Content _**tab lists all the pages crawled from the connector source along with their URL and timestamp of the last update. 
+The **Content** tab lists all the pages crawled from the connector source along with their URL and timestamp of the last update. 
 
-**_Jobs_**
+**Jobs**
 
-This**_ _**tab lists the synchronization-related tasks initiated by Search AI on the connector. 
+This tab lists the synchronization-related tasks initiated by Search AI on the connector. 
 ![Connector Details](../images/connectors/jobs-tab.png "Connector Details")
 
 ## Removing the content source integrated using Connector 
 
-To permanently remove a content source and corresponding connector from Search AI, go to the **_Authorization tab _**and click the**_ Remove Source_** button. This will also **delete any data in Search AI indexed from the content source**.
+To permanently remove a content source and corresponding connector from Search AI, go to the **Authorization tab** and click the **Remove Source** button. This will also **delete any data in Search AI indexed from the content source**.
 ![Delete Connector](../images/connectors/delete-connector.png "Delete Connector")

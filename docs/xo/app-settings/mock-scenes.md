@@ -34,7 +34,7 @@ The Mock Scenes area allows you to perform the following actions:
     * **Export** the scene into CSV format.
     * **Delete** the scene.
 
-<img src="../images/mock-scenes-img1-mock-scene-options.png" alt="Mock scene options" title="Mock scene options" style="border:1px solid gray; zoom=70%;">  
+<img src="../images/mock-scenes-img1-mock-scene-options.png" alt="Mock scene options" title="Mock scene options" style="border:1px solid gray; zoom:70%;">  
 
 
 ## Create a Mock Scene
@@ -48,14 +48,14 @@ To create a Mock Scene, please follow the steps below:
 
 The demo below shows you the basics of creating a new Mock Scene.
 
-<img src="../images/mock-scenes-img2-new-mock-scene.gif" alt="Create new scene" title="Create new scene" style="border:1px solid gray; zoom=70%;"> 
+<img src="../images/mock-scenes-img2-new-mock-scene.gif" alt="Create new scene" title="Create new scene" style="border:1px solid gray; zoom:70%;"> 
 
 
 ## Work with the Conversation Designer
 
 After you add a scene, you are presented with a blank **Conversation View**, where you can enter the user-VA messages. Mock Scenes provide options that are specifically focused on developing the conversation itself, without the business logic or training. This helps create a more seamless user experience and provides VA developers with a starting point for their work. 
 
-<img src="../images/mock-scenes-img3-blank-scene.png" alt="Conversation view - Blank scene" title="Conversation view - Blank scene" style="border:1px solid gray; zoom=70%;">
+<img src="../images/mock-scenes-img3-blank-scene.png" alt="Conversation view - Blank scene" title="Conversation view - Blank scene" style="border:1px solid gray; zoom:70%;">
 
 To design a mock conversation scene, you can add _Bot_ and _User_ utterances, create conversation paths, link messages and scenes, add developer notes and collaborate using comments. You can also create a conversation timeline, using tags. 
 
@@ -79,11 +79,11 @@ This tab is used to design messages that the Virtual Assistant sends to users as
 * **Plain text messages** with options to mark text as bold, italic, indent, multi-line, and lists – ordered and unordered.
 * **Rich messages** using predefined templates such as buttons, list, quick reply, etc,. ([see below](#bot-messages-and-templates) for a list of supported templates).
 
-    <img src="../images/mock-scenes-img4-bot-message-templates.png" alt="Bot message templates" title="Bot message templates" style="border:1px solid gray; zoom=50%;">
+    <img src="../images/mock-scenes-img4-bot-message-templates.png" alt="Bot message templates" title="Bot message templates" style="border:1px solid gray; zoom:50%;">
 
 * **Notes**: These are used to add text between messages describing an action or a section of the conversation.
 
-    <img src="../images/mock-scenes-img5-scene-notes.png" alt="Scene Notes" title="Scene Notes" style="border:1px solid gray; zoom=70%;">
+    <img src="../images/mock-scenes-img5-scene-notes.png" alt="Scene Notes" title="Scene Notes" style="border:1px solid gray; zoom:70%;">
 
 * Notes also provide an option to define the timeline of the conversation by using _hashtags_. Thus, defined notes help denote an important state in the conversation that is displayed on the left of the conversation under the **Story Timeline**. You can move to the relevant place in the conversation by clicking the tag on the timeline.You can define your own _custom tags_ or use one of the _predefined tags_. Each of these predefined tags is depicted by a unique symbol in the timeline indicating its purpose. These predefined tags include:
     * \#Start_< intent-name >
@@ -93,13 +93,13 @@ This tab is used to design messages that the Virtual Assistant sends to users as
 
 * With the _tag_ option, you can **classify notes** using an existing tag or by creating a new custom tag. These tags are color-coded for reference.
 
-    <img src="../images/mock-scenes-img6-create-custom-tag.png" alt="Create Custom tag" title="Create Custom tag" style="border:1px solid gray; zoom=70%;">
+    <img src="../images/mock-scenes-img6-create-custom-tag.png" alt="Create Custom tag" title="Create Custom tag" style="border:1px solid gray; zoom:70%;">
 
 
 * **Paths**: Paths are different flows that the conversations might follow, based on the options provided by the VA or the user. For example, a Virtual Assistant expects a _yes_ or _no_ response from the user, and the path differs based upon the user response. Using the bot message, the template defines the number of alternate paths allowed. The business logic can also decide the number of paths.
     * To continue the scene along a specific path, you can select the path either using the **Previous Path** (**&lt;-**) and **Next Path** (**->**) or select the options given to the user. You can also add additional paths using the **New Path** (**+**) option.
 
-        <img src="../images/mock-scenes-img7-scene-conv-path.png" alt="Select Path" title="Select Path" style="border:1px solid gray; zoom=70%;">
+        <img src="../images/mock-scenes-img7-scene-conv-path.png" alt="Select Path" title="Select Path" style="border:1px solid gray; zoom:70%;">
 
 
 ### Message Options
@@ -120,7 +120,7 @@ When you hover over a message you can find the following options:
     * Unlink: Click **Unlink** to unlink the scene.
 * **Edit**: Allows you to edit the message.
 
-<img src="../images/mock-scenes-img8-scene-message-options.png" alt="Message Options" title="Message Options" style="border:1px solid gray; zoom=50%;">
+<img src="../images/mock-scenes-img8-scene-message-options.png" alt="Message Options" title="Message Options" style="border:1px solid gray; zoom:50%;">
 
 
 ### Comments
@@ -129,11 +129,11 @@ Comments are a very useful collaborative tool. The Storyboard Scenes area allows
 
 To add a comment, click the **message options** icon, then select **Comment**. 
 
-<img src="../images/mock-scenes-img9-scene-add-comment.png" alt="Add Comment" title="Add Comment" style="border:1px solid gray; zoom=50%;">
+<img src="../images/mock-scenes-img9-scene-add-comment.png" alt="Add Comment" title="Add Comment" style="border:1px solid gray; zoom:50%;">
 
 When a message has a comment attached, you will see a comment icon next to it, as shown below.
 
-<img src="../images/mock-scenes-img10-scene-marked-comment-on-message.png" alt="Marked comment on message" title="Marked comment on message" style="border:1px solid gray; zoom=50%;">
+<img src="../images/mock-scenes-img10-scene-marked-comment-on-message.png" alt="Marked comment on message" title="Marked comment on message" style="border:1px solid gray; zoom:50%;">
 
 You can access the full comment history using the comments icon at the scene level. This section provides the following options:
 
@@ -143,26 +143,26 @@ You can access the full comment history using the comments icon at the scene lev
 * **Delete** any comments you have made.
 * **Reply** to comments.
 
-<img src="../images/mock-scenes-img11-scene-comment-history.png" alt="Comment history" title="comment history" style="border:1px solid gray; zoom=50%;">
+<img src="../images/mock-scenes-img11-scene-comment-history.png" alt="Comment history" title="comment history" style="border:1px solid gray; zoom:50%;">
 
 
 ### Scene Options
 
 From the Scene page, you can perform the following actions:
 
-<img src="../images/mock-scenes-img12-scene-options.png" alt="Scene Options" title="Scene Options" style="border:1px solid gray; zoom=50%;">
+<img src="../images/mock-scenes-img12-scene-options.png" alt="Scene Options" title="Scene Options" style="border:1px solid gray; zoom:50%;">
 
 * **Preview**: It is used to see how the conversation flows on your website. This opens in a mock website with the chat window. You can **Play/Pause, Restart, Customize,** and **Exit** the preview.
 
-<img src="../images/mock-scenes-img13-scene-preview-1.png" alt="Scene Preview" title="Scene Preview" style="border:1px solid gray; zoom=50%;">
+<img src="../images/mock-scenes-img13-scene-preview-1.png" alt="Scene Preview" title="Scene Preview" style="border:1px solid gray; zoom:50%;">
 
 * **Share**: This option gives you a URL that you can share with others. This URL presents the scene preview, so you can provide the various stakeholders with a glimpse of what to expect and take their feedback. You can secure the scene preview URL with a password.
 
-<img src="../images/mock-scenes-img14-share-scene.png" alt="Share scene" title="Share scene" style="border:1px solid gray; zoom=70%;">
+<img src="../images/mock-scenes-img14-share-scene.png" alt="Share scene" title="Share scene" style="border:1px solid gray; zoom:70%;">
 
 The shared link allows the viewer to add comments that are communicated back to the developer for further action.
 
-<img src="../images/mock-scenes-img15-scene-comment-button.png" alt="Add Comments" title="Add Comments" style="border:1px solid gray; zoom=50%;">
+<img src="../images/mock-scenes-img15-scene-comment-button.png" alt="Add Comments" title="Add Comments" style="border:1px solid gray; zoom:50%;">
 
 * Click the **More** icon to perform the actions listed below. Most of these actions are also available on the Storyboard page.
     * **Edit**: Edit the name, description, and status of the scene.
@@ -190,7 +190,7 @@ The shared link allows the viewer to add comments that are communicated back to 
 
 The conversation Preview area provides a Customize option, which allows you to personalize the look and feel of your preview, in accordance with your website and brand.
 
-<img src="../images/mock-scenes-img16-customize-preview.gif" alt="Preview Customization" title="Preview Customization" style="border:1px solid gray; zoom=70%;">
+<img src="../images/mock-scenes-img16-customize-preview.gif" alt="Preview Customization" title="Preview Customization" style="border:1px solid gray; zoom:70%;">
 
 This feature allows you to use one of the default themes, with either a Light or Dark background, or to create your own theme, save it, and use it across the scenes in your storyboard. There are four aspects of the conversation widget that you can customize:
 
@@ -380,7 +380,7 @@ For each List Item:
 
 After you design, switch to the **Flow View** to see the scene in a flowchart.
 
-<img src="../images/mock-scenes-img17-flow-view.png" alt="Flow view" title="Flow view" style="border:1px solid gray; zoom=70%;">
+<img src="../images/mock-scenes-img17-flow-view.png" alt="Flow view" title="Flow view" style="border:1px solid gray; zoom:70%;">
 
 All the Scene Options mentioned in the previous section are available with the following exceptions:
 

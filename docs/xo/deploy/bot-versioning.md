@@ -1,4 +1,4 @@
-# Bot Versioning
+# App Versioning
 
 Very often, as part of the development process, you may want to mark specific stages as versions. The reasons could be as varied as:
 
@@ -71,7 +71,7 @@ Following are the actions you can perform from the Bot Versions listing page:
 3. You can perform the following actions on each version:
     1. **Restore** to a specific version;
     2. **Export** a specific version;
-    3. **Delete** a specific version (not applicable for auto-versions).
+    3. **Delete** a specific version (not applicable for **Auto Created** versions).
 
 4. You can also **Compare** versions to track changes.
 
@@ -93,7 +93,7 @@ To compare versions, follow the below steps:
 
 1. On the _Bot Versions_ page, you can find a list of existing versions.
 2. Hover over the version you want to compare and click **Compare**.
-3. On the **Select Another Version to Compare** window, you can find the selected version (source) of your assistant and a list that contains different versions (target). Select a version from the list to compare to.
+3. On the **New Version** window, you can find the selected version (source) of your assistant and a list that contains different versions (target). Select a version from the list to compare to.
 4. Click **Proceed**.
 
     <img src="../images/bot-versioning-img4.png" alt="Compare versions" title="Compare versions" style="border: 1px solid gray; zoom:70%;">

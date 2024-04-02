@@ -34,9 +34,9 @@ You can authorize the integration using your credentials. The developer authoriz
 
 Steps to authorize a DHL action using developer credentials:
 
-1. Go to **Build > Integrations > Actions**.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Select the **DHL** from the list of **Available actions**.  
-<img src="../images/dhl-action-img1.png" alt="DHL" title="DHL" style="border: 1px solid gray;zoom:50%;"/>
+
 
 3. In the **Configurations** dialog, select the **Authorization** tab.
 4. Enter the following details:
@@ -46,7 +46,10 @@ Steps to authorize a DHL action using developer credentials:
     2. **API Key** – The secret API key of your DHL account.
 5. Click **Enable**. When you configure the action for the first time, the Integration Successful pop-up is displayed.
 
-    **Note**: The DHL action is moved from _Available_ to _Configured_ region.
+    !!! note
+
+        The DHL action is moved from _Available_ to _Configured_ region.
+
 6. You can also click the **Skip for Now** button to install the Dialog Task templates later. To learn how to use action templates, read the [Using the DHL action templates](../using-the-dhl-action-templates/){:target="_blank"} article.  
 <img src="../images/dhl-action-img4.png" alt="Skip for now" title="Skip for now" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -56,7 +59,7 @@ You can authorize the integration at a user level with their login credentials. 
 
 Steps to authorize a DHL action at a user level:
 
-1. Go to **Build > Integrations > Actions** and select the **DHL** action.
+1. Go to **App Settings** > **Integrations** > **Actions** and select the **DHL** action.
 2. In the Configurations dialog, select the **Authorization** tab.
 3. Enter the following details:
     1. **Authorization Type** – Select the **Allow Users to Authorize the Integration** option, and then select the **Basic Auth** option.
@@ -91,12 +94,6 @@ Steps to install action templates:
 2. In the Integration Templates dialog, click the **Install** button to begin the installation.  
 <img src="../images/dhl-action-img9.png" alt="Begin installation" title="Begin installation" style="border: 1px solid gray;zoom:50%;"/>
 
-3. Once the template is installed, click the **Go to Dialog** button to view the dialog task.
-4. A dialog task is automatically created for each installed template.  
-<img src="../images/dhl-action-img10.png" alt="Dialog task created for installed templates" title="Dialog tasks created for installed templates" style="border: 1px solid gray;zoom:50%;"/>
+3. Once the template is installed, the associated dialog task is auto-created and displayed on the Dialogs page. Click **Go to Dialog** or go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
 
-5. Alternatively, you can create a new dialog task and select the DHL integration to select the dialog task from the templates and click **Proceed**. For example, select the **Track Shipment** task.  
-<img src="../images/dhl-action-img11-tem-img2.png" alt="Create new dialog and integrate" title="Create new dialog and integrate" style="border: 1px solid gray;zoom:50%;"/>
-
-6. Once you click **Proceed**, the dialog task is auto-created, and the canvas opens with all required entity nodes, service nodes, and message scripts.  
-<img src="../images/dhl-action-img12-tem-img4.png" alt="Canvas for new dialog task" title="Canvas for new dialog task" style="border: 1px solid gray;zoom:50%;"/>
+4. To start using the templates, see [Using DHL Templates.](using-the-dhl-action-templates.md){:target="_blank"}

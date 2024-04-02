@@ -101,7 +101,7 @@ Steps to install action templates:
 2. In the Integration Templates dialog, click the **Install** button for a template to begin the installation.  
 <img src="../images/asana-action-img10.png" alt="Install template" title="Install template" style="border: 1px solid gray;zoom:50%;"/>
 
-3. Once the template is installed, the associated dialog task is auto-created and displayed on the Dialogs page.  Click **Go to Dialog** or go to **Automation AI** >**Virtual Assistant** > **Use Cases** > **Dialogs**.
+3. Once the template is installed, the associated dialog task is auto-created and displayed on the Dialogs page.  Click **Go to Dialog** or go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
 
-4. To start using the templates, see [Using Asana Templates](using-the-asana-action-templates.md).  
+4. To start using the templates, see [Using Asana Templates.](using-the-asana-action-templates.md){:target="_blank"} 
 

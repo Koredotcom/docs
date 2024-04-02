@@ -83,54 +83,6 @@ The nodes and the flow for the Business Logic are automatically built for your c
  
 <img src="../images/using-dialog-builder-img10-create-dialog-genai-dialog-created.png" alt="Gen Ai Dialog created" title="Gen Ai Dialog created" style="border:1px solid gray;zoom:60%;">
 
-<!-----
-
-You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
-* ERRORs: 0
-* WARNINGs: 0
-* ALERTS: 12
-
-Conversion time: 4.512 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β35
-* Thu Mar 28 2024 04:19:29 GMT-0700 (PDT)
-* Source doc: Using the Dialog Builder (NEW)
-* This is a partial selection. Check to make sure intra-doc links work.
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 12.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-<a href="#gdcalert6">alert6</a>
-<a href="#gdcalert7">alert7</a>
-<a href="#gdcalert8">alert8</a>
-<a href="#gdcalert9">alert9</a>
-<a href="#gdcalert10">alert10</a>
-<a href="#gdcalert11">alert11</a>
-<a href="#gdcalert12">alert12</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
 ### Auto-Generate Dialog Tasks using Pre Built Templates
 
 This option provides you ready-made templates targeting major industry verticals, covering generic use cases related to the industry, and having pre-established integration, and lets you choose a suitable dialog template. You can update the description and generate use cases based on the purpose. This option accelerates development by providing a starting point for common scenarios, ensuring consistency and efficiency.
@@ -197,7 +149,7 @@ This option provides you ready-made templates targeting major industry verticals
  
 The dialog task is created and opens in the Dialog Builder. You can make required changes like any other dialog by adding, removing and configuring nodes as per need.
 
-<img src="../images/using-dialog-builder-dialog-template-dialog-created.png" alt="Dialog creation completed" title="Dialog creation completed style="border:1px solid gray;zoom:70%;">
+<img src="../images/using-dialog-builder-dialog-template-dialog-created.png" alt="Dialog creation completed" title="Dialog creation completed" style="border:1px solid gray;zoom:70%;">
 
 [Click here to know about Nodes & Connections](../node-types/nodes-transitions/){:target="_blank"}
 
@@ -210,10 +162,10 @@ Before moving on, here is an overview of the Dialog Task Builder. For details on
 
 The Dialog Builder interface consists of:
 
- * [Tool Set](#the-tool-set)
- * [Index Panel](#the-index-panel)
- * [Canvas](#the-canvas)
- * [Node Panel](#the-node-panel)
+1. [Tool Set](#the-tool-set)
+2. [Index Panel](#the-index-panel)
+3. [Node Panel](#the-node-panel)
+4. [Canvas](#the-canvas)
 
 
 ### The Tool Set
@@ -321,6 +273,19 @@ On this tab, you can see a list of all the sequences present in the Current Dial
 
 You can also search for nodes and sequences, which will show you the nodes/sequences in the current dialog that match the search text.
 
+### The Nodes Panel
+
+The **Nodes panel** is a streamlined, user-friendly categorization provided at the bottom of the canvas. Click a group to see the node types within it, and drag and drop the nodes to add them to the dialog. The nodes added from this panel will get added as reusable assets to the **Assets** tab of the **Index panel**.
+
+<img src="../images/using-dialog-builder-node-panel.png" alt="Node panel" title="Node panel" style="border:1px solid gray;zoom:60%;">
+
+Node type groups in the panel:
+
+* **Inform** - Contains the nodes that can be used to provide information to the user. For example, Message node.
+* **Ask** - Contains the nodes that can be used to get input from the user. For example, Confirmation or Entity node.
+* **Action** - Contains nodes that can be used for any action that the app is expected to perform without interaction with the user. For example, Script, Service, Process, or Agent Transfer node.
+* **GenAI** - Contains nodes that can be used to leverage the full potential of LLMs and Generative AI models to quickly build conversations that involve complex flows and also provide human-like experiences. For example, GenAI Node and GenAI Prompt.
+
 ### The Canvas
 
 The Canvas is where you can integrate your conversation scenarios with your business logic.
@@ -404,20 +369,6 @@ Using **Bookmarks**, you can create navigation points in a dialog with a complex
 #### Mini map
 
 It is a miniature representation of the visual appearance of the dialog design.
-
-### The Nodes Panel
-
-The **Nodes panel** is a streamlined, user-friendly categorization provided at the bottom of the canvas. Click a group to see the node types within it, and drag and drop the nodes to add them to the dialog. The nodes added from this panel will get added as reusable assets to the **Assets** tab of the **Index panel**.
-
-<img src="../images/using-dialog-builder-node-panel.png" alt="Node panel" title="Node panel" style="border:1px solid gray;zoom:60%;">
-
-Node type groups in the panel:
-
-* **Inform** - Contains the nodes that can be used to provide information to the user. For example, Message node.
-* **Ask** - Contains the nodes that can be used to get input from the user. For example, Confirmation or Entity node.
-* **Action** - Contains nodes that can be used for any action that the app is expected to perform without interaction with the user. For example, Script, Service, Process, or Agent Transfer node.
-* **GenAI** - Contains nodes that can be used to leverage the full potential of LLMs and Generative AI models to quickly build conversations that involve complex flows and also provide human-like experiences. For example, GenAI Node and GenAI Prompt.
-
 
 ## Add node to dialog
 
