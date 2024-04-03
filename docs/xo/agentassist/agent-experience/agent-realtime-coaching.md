@@ -47,10 +47,9 @@ You can add utterances in two ways:
 
 1. Sign in to XO Platform.
 2. Click **AgentAssist **> **Experience **>** Agent Coaching**.
-3. Click the **edit** button against a **Pre-built, None Intent** rule under **Actions**. \
+3. Click the **edit** button against a **Pre-built, None Intent** rule under **Actions**.
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](agent-coaching-images/image1.png "image_tooltip")
