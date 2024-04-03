@@ -77,7 +77,7 @@ The available Actions/Integrations are listed in the table below. Go to **Settin
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="../azure-open-ai/configuring-the-azure-openai-action" target="_blank">Learn more</a>
+   <td> [Learn more](./azure-open-ai/configuring-the-azure-openai-action.md){:target="_blank"} 
    </td>
   </tr>
   <tr>
@@ -301,12 +301,11 @@ You can delete an external integration that is no longer in use.
 2. Choose the option to **Delete** the action/integration.  
 <img src="../images/actions-img5-integrations_delete.png" alt="Delete integration" title="Delete integration" style="border: 1px solid gray;zoom:50%;"/>
 
-!!! note "Warning"
+!!! Warning
 
     Deletion is permanent and cannot be undone. You are asked to confirm your choice, so make sure this is exactly what you want to do. Once an action is **Deleted**, all authorization configurations related to that particular integration are deleted.
 
-[!Warning]
-This is test warning
+
 
 ## More Like This
 
