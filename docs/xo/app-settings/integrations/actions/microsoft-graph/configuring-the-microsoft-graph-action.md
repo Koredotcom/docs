@@ -13,9 +13,9 @@ The Kore.ai XO Platform supports the following authorization types for the Micro
 * **Pre-Authorize the Integration** – To make the integration process smoother for developers and customers, you can pre-authorize it by providing the necessary authorization credentials to obtain the access token..
 * **Allow Users to Authorize the Integration** – This method requires the end user to provide credentials during the conversation for authorization. This authorization process involves requesting permission for Kore.ai’s Microsoft Graph app to access an access token at runtime.
 
-    !!! note
+!!! note
 
-      The Microsoft Graph integration can be authorized only for the Developer and the Enterprise editions. You cannot authorize Microsoft Graph’s Trial edition. To learn more about Microsoft Graph account types, see [Microsoft Graph documentation](https://developer.microsoft.com/en-us/graph/graph-explorer){:target="_blank"}.
+    The Microsoft Graph integration can be authorized only for the Developer and the Enterprise editions. You cannot authorize Microsoft Graph’s Trial edition. To learn more about Microsoft Graph account types, see [Microsoft Graph documentation](https://developer.microsoft.com/en-us/graph/graph-explorer){:target="_blank"}.
 
 <table border="1">
   <tr>
