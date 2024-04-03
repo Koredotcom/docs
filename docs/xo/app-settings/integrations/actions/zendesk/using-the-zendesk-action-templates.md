@@ -4,9 +4,9 @@ You can use the **Prebuilt Action Templates** from your Zendesk integration to a
 
 Steps to create a dialog task using the Zendesk action templates:
 
-1. Go to **Build > Conversation Skills > Dialog Tasks**.
+1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
-<img src="../images/zendesk-tem-img1.png" alt="Create a Dialog Task" title="Create a Dialog Task" style="border: 1px solid gray;zoom:50%;"/>
+
 
 3. On the Create Dialog Task pop-up, under the Integration, select the Zendesk option to view the action templates.  
 <img src="../images/zendesk-tem-img2.png" alt="Integration - Zendesk" title="Integration - Zendesk" style="border: 1px solid gray;zoom:50%;"/>

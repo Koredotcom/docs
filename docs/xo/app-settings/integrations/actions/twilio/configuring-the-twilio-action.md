@@ -26,9 +26,9 @@ Before enabling the Twilio Verify action, complete the following prerequisites:
 
 Steps to enable the Twilio Verify action:
 
-1. Go to **Build > Integrations > Actions**.
-2. Once you click the **Actions** menu, all integrations are shown in the Available region. Select the **Twilio Verify** action.  
-<img src="../images/twilio-action-img1.png" alt="Actions - Twilio Verify" title="Actions - Twilio Verify" style="border: 1px solid gray;zoom:50%;"/>
+1. Go to **App Settings** > **Integrations** > **Actions**.
+2. Select the **Twilio Verify** action.  
+
 
 
 ### Pre-authorize the Integration
@@ -39,7 +39,7 @@ You can authorize the integration using your credentials. The developer authoriz
 
 Steps to authorize a Twilio Verify action using developer credentials:
 
-1. Go to **Build > Integrations > Actions**.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Select the **Twilio Verify** action in the **Available Actions** region.
 3. In the Configurations dialog, select the **Authorization** tab.
 4. Enter the following details:
@@ -53,7 +53,9 @@ Steps to authorize a Twilio Verify action using developer credentials:
 5. Click **Enable**. When you configure the action for the first time, the Integration Successful pop-up is displayed.  
 <img src="../images/twilio-action-img4.png" alt="Integration successful" title="Integration successful" style="border: 1px solid gray;zoom:50%;"/>
 
-**Note**: The Twilio Verify action is moved from _Available_ to _Configured_ region.
+!!! note
+
+    The Twilio Verify action is moved from _Available_ to _Configured_ region.
 
 
 ### Allow the End User to Authorize
@@ -64,7 +66,7 @@ Steps to authorize a Twilio Verify action at a user level:
 
 
 
-1. Go to **Build > Integrations > Actions**.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Select the **Twilio Verify** action in the **Available Actions** region.
 3. In the **Configurations** dialog, select the **Authorization** tab.
 4. Enter the following details:
