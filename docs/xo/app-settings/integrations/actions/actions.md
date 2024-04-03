@@ -52,7 +52,7 @@ The email template which is sent to the bot developer upon token expiry is as fo
 
 ## Available Actions and How to Configure Them
 
-The available Actions/Integrations are listed in the table below. Go to **Settings > Integrations > Actions** and click the **Action** you want to configure in the Kore.ai XO platform. The page with Instructions and Configuration settings will slide out. For step-by-step instructions on how to configure an action, click the Learn more link for the action in the table below.
+The available Actions/Integrations are listed in the table below. Go to **App Settings > Integrations > Actions** and click the **Action** you want to configure in the Kore.ai XO platform. The page with Instructions and Configuration settings will slide out. For step-by-step instructions on how to configure an action, click the Learn more link for the action in the table below.
 
 
 <table border="1">
