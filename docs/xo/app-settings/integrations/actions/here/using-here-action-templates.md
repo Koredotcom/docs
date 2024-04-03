@@ -11,9 +11,9 @@ Steps to create a dialog task using Here action templates:
 3. On the Dialog Task pop-up, under the **Integration**, select the **Here** option to view the action templates.  
 <img src="../images/here-action-img11-tem-img2.png" alt="Integration-Here" title="Integration-Here" style="border: 1px solid gray;zoom:50%;"/>
 
-!!! note
 
-  If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions){:target="_blank"}.
+
+If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions){:target="_blank"}.
 
 
   <img src="../images/here-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>

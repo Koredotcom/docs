@@ -71,9 +71,10 @@ Steps to authorize a Zendesk action using developer credentials:
 
     2. **User Sub Domain** – The instance name of the Zendesk account.
     3. **Username or Email** – The username or email of the Zendesk account.
-            !!! note
+    
+        !!! note
 
-                You must enter **/token** after the email address to authenticate the Zendesk account. For example, `john@example.com/token`.
+            You must enter **/token** after the email address to authenticate the Zendesk account. For example, `john@example.com/token`.
 
     4. **API Token** – The password token of the Zendesk account.  
     <img src="../images/zendesk-action-img3.png" alt="Details to authorize the integration" title="Details to authorize the integration" style="border: 1px solid gray;zoom:50%;"/>

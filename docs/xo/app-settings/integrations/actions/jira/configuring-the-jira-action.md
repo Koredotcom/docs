@@ -11,8 +11,11 @@ The Kore.ai XO Platform supports basic authentication to allow a JIRA integratio
 The Kore.ai XO Platform supports the following authorization types for the JIRA integration:
 
 * **Pre-Authorize the Integration** – To make the integration process smoother for developers and customers, you can pre-authorize it by providing the necessary authorization credentials to obtain the access token.
-* **Allow Users to Authorize the Integration** – This method requires the end user to provide credentials during the conversation for authorization. This authorization process involves requesting permission for Kore.ai’s JIRA app to access an access token at runtime.  
-  **NOTE**: The JIRA integration can be authorized only for the Developer and the Enterprise editions. You cannot authorize JIRA’s Trial edition. To learn more about JIRA account types, see [JIRA documentation](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#overview){:target="_blank"}.
+* **Allow Users to Authorize the Integration** – This method requires the end user to provide credentials during the conversation for authorization. This authorization process involves requesting permission for Kore.ai’s JIRA app to access an access token at runtime.
+
+!!! note
+
+    The JIRA integration can be authorized only for the Developer and the Enterprise editions. You cannot authorize JIRA’s Trial edition. To learn more about JIRA account types, see [JIRA documentation](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#overview){:target="_blank"}.
 
 <table border="1">
   <tr>
