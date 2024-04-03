@@ -36,18 +36,16 @@ You can add utterances in two ways:
 1. Sign in to XO Platform.
 2. Click **AgentAssist** > **Experience** > **Agent Coaching**.
 3. Click the **edit** button against a **Pre-built, None Intent** rule under **Actions**.
-
-<img src="../agent-coaching-images/edit-none-intent-rule-1.png" alt="edit-none-intent-rule" title="edit-none-intent-rule" style="border: 1px solid gray; zoom:80%;">
+    <img src="../agent-coaching-images/edit-none-intent-rule-1.png" alt="edit-none-intent-rule" title="edit-none-intent-rule" style="border: 1px solid gray; zoom:80%;">
 4. Click **Add Utterance(s)**.
 5. Select **AI Assist** or **Input Utterances Manually**.
-
-Follow these steps if you select **AI Assist**:
+    Follow these steps if you select **AI Assist**:
     1. Select **AI Assist**.
-    
-    **Note**: To avail the **AI Assist** feature, enable **OpenAI** in the **App Settings** > **Generative AI Tools**, and enable **Generating Opposite…** in the **Co-Pilots** section.
+        !!! note "Note"
+            To avail the **AI Assist** feature, enable **OpenAI** in the **App Settings** > **Generative AI Tools**, and enable **Generating Opposite…** in the **Co-Pilots** section.
     
     2. Select rules, as required, from the **Add Rules** list and click **Add**.
-    <img src="../agent-coaching-images\select-none-intent-rules-2.png" alt="select-none-intent-rules" title="select-none-intent-rules" style="border: 1px solid gray; zoom:80%;">
+        <img src="../agent-coaching-images\select-none-intent-rules-2.png" alt="select-none-intent-rules" title="select-none-intent-rules" style="border: 1px solid gray; zoom:80%;">
 
     3. All added rules are displayed on the left, and the AI starts searching for more utterances that are similar in meaning to the utterances of your selected rules.
 
@@ -59,11 +57,8 @@ Follow these steps if you select **Input Utterances Manually**:
 
 1. Select **Input Utterances Manually**.
 2. Enter your utterance in the **Utterances** field and press the **Enter** key.
-
-<img src="../agent-coaching-images/add-utterances-manually-3.png" alt="add-utterances-manually" title="add-utterances-manually" style="border: 1px solid gray; zoom:80%;"> 
-
+    <img src="../agent-coaching-images/add-utterances-manually-3.png" alt="add-utterances-manually" title="add-utterances-manually" style="border: 1px solid gray; zoom:80%;"> 
 Following this step, you can add multiple utterances.
-
 3. Click **Save**.
     1. The new utterance gets added to the list of utterances.
 
