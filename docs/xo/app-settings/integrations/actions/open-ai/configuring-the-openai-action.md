@@ -27,9 +27,9 @@ Before enabling the OpenAI action, complete the following prerequisites:
 Steps to enable the OpenAI action:
 
 
-1. Go to **Build > Integrations** and select the **Actions** menu item.
-2. Once you click the **Actions** menu, all integrations are shown in the **Available** region. Select the **OpenAI** action.  
-<img src="../images/open-ai-action-img1.png" alt="Actions - OpenAI" title="Actions - OpenAI" style="border: 1px solid gray;zoom:50%;"/>
+1. Go to **App Settings** > **Integrations** > **Actions**.
+2. Select the **OpenAI** action.  
+
 
 ### Pre-authorize the Integration
 
@@ -45,14 +45,18 @@ Steps to authorize an OpenAI action using developer credentials:
 4. Enter the following details:
     1. **Authorization Type** – Select the **Pre-authorize the Integration** option, and then select the **Basic Auth** option.
     2. **API Key** – The secret API key of your OpenAI account.  
-    <img src="../images/open-ai-action-img2.png" alt="Auth Type and API Key" title="Auth type and API key" style="border: 1px solid gray;zoom:50%;"/>  
-      
-      **Note**: The Platform uses the configured API Key to authorize and generate the suggestions from OpenAI.
+    <img src="../images/open-ai-action-img2.png" alt="Auth Type and API Key" title="Auth type and API key" style="border: 1px solid gray;zoom:50%;"/>
+
+    !!! note
+
+        The Platform uses the configured API Key to authorize and generate the suggestions from OpenAI.
 
 5. Click **Enable**. When you configure the action for the first time, the **Integration Successful**  pop-up is displayed.  
 <img src="../images/open-ai-action-img3.png" alt="Enable integration" title="Enable integration" style="border: 1px solid gray;zoom:50%;"/>
 
-**Note**: You will notice the OpenAI action is moved from _Available_ to _Configured_ region.
+!!! note
+
+     You will notice the OpenAI action is moved from _Available_ to _Configured_ region.
 
 
 ### Allow End User to Authorize
@@ -61,7 +65,7 @@ You can authorize the integration at a user level with their login credentials. 
 
 Steps to authorize an OpenAI action at a user level:
 
-1. Go to **Build > Integrations** and select the **Actions** menu item.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Select the **OpenAI** action in the **Available Actions** region.
 3. In the Configurations dialog, select the **Authorization** tab
 4. **Authorization Type** – Select the **Allow Users to Authorize the Integration** option, and then select the **Basic Auth** option.  

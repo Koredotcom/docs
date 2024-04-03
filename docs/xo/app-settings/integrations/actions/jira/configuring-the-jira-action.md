@@ -111,7 +111,7 @@ Steps to authorize a JIRA action using developer credentials:
 
 !!! note
 
-  The JIRA action is moved from _Available_ to _Configured_ region.
+    The JIRA action is moved from _Available_ to _Configured_ region.
 
 
 ### Allow End User to Authorize
