@@ -50,7 +50,7 @@ Before enabling the Zendesk action, complete the following prerequisites:
 Steps to enable the Zendesk action:
 
 1. Go to **App Settings** > **Integrations** > **Actions**.
-2. Once you click the **Actions** menu, all integrations are shown in the **Available** region. Select the **Zendesk** action.  
+2. Select the **Zendesk** action.  
 
 
 

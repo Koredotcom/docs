@@ -6,9 +6,9 @@ Steps to create a dialog task using the Twilio Verify action templates:
 
 
 
-1. Go to **Build > Conversation Skills > Dialog Tasks**.
+1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
-<img src="../images/twilio-tem-img1.png" alt="Create a Dialog Task" title="Create a Dialog Task" style="border: 1px solid gray;zoom:50%;"/>
+
 
 3. On the Dialog Task pop-up, under the Integration, select the Twilio Verify option to view the action templates.  
 <img src="../images/twilio-tem-img2.png" alt="Integration - Twilio Verify" title="Integration - Twilio Verify" style="border: 1px solid gray;zoom:50%;"/>
@@ -123,7 +123,9 @@ Steps to send an sms to a phone number using the Twilio Verify integration:
 6. Enter an sms message when prompted by the VA as shown below:  
 <img src="../images/twilio-tem-img7.png" alt="VA prompt to Send SMS" title="VA prompt to Send SMS" style="border: 1px solid gray;zoom:50%;"/>
 
-    **Note**: You must add the country code before the receiver's phone number to deliver the SMS. For example, to send an SMS to a phone number in the United States, add the country code as +1.
+    !!! note
+
+        You must add the country code before the receiver's phone number to deliver the SMS. For example, to send an SMS to a phone number in the United States, add the country code as +1.
     
 7. You will notice an sms is sent to the number from the Twilio number.
 
