@@ -107,7 +107,7 @@ In the **Variable Namespaces** section, associate the variable namespaces to exe
     1. **Use the task level ‘Interruptions Behavior’ setting**: The bot refers to the Interruptions Behavior settings set at the dialog task level.
     2. **Customize for this node option:** You can customize the Interruptions Behavior settings for this node by selecting this option and configuring the same. For more information, refer to the [Interruption Handling and Context Switching](../../../../intelligence/conversation-management/manage-interruptions){:target="_blank"} article.
 
-3. Under the **Custom Tags** section, add tags to build custom profiles of your bot conversations. [Click here for more](../../../../../xo/automation/){:target="_blank"}.
+3. Under the **Custom Tags** section, add tags to build custom profiles of your bot conversations. [Click here for more](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
 
 
 ### IVR Properties

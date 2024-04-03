@@ -48,9 +48,9 @@ Before enabling the JIRA actions, complete the following prerequisites:
 
 Steps to enable the JIRA action:
 
-1. Go to **Build > Integrations > Actions**.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Once you click the **Actions** menu, all integrations are shown in the **Available** region. Select the **JIRA** action.  
-<img src="../images/jira-action-img1.png" alt="Available actions-JIRA" title="Available actions-JIRA" style="border: 1px solid gray;zoom:50%;"/>
+
 
 ### Pre-authorize the Integration
 
@@ -60,7 +60,7 @@ You can authorize the integration using developer credentials. The developer aut
 
 Steps to authorize a JIRA action using developer credentials:
 
-1. Go to **Build > Integrations > Actions** and select the **JIRA** action.
+1. Go to **App Settings** > **Integrations** > **Actions** and select the **JIRA** action.
 2. In the **Configurations** dialog, select the **Authorization** tab.
 3. **Authorization Type** – Select the **Pre-authorize the Integration** option, and then select the **OAuth** option.  
 <img src="../images/jira-action-img2.png" alt="Authorization Type-OAuth" title="Authorization Type-OAuth" style="border: 1px solid gray;zoom:50%;"/>
@@ -109,7 +109,9 @@ Steps to authorize a JIRA action using developer credentials:
 10. Click **Enable**. When you configure the action for the first time, the Integration Successful pop-up is displayed.  
 <img src="../images/jira-action-img7.png" alt="Enable integration" title="Enable integration" style="border: 1px solid gray;zoom:50%;"/>
 
-**Note**: The JIRA action is moved from _Available_ to _Configured_ region.
+!!! note
+
+    The JIRA action is moved from _Available_ to _Configured_ region.
 
 
 ### Allow End User to Authorize
@@ -118,7 +120,7 @@ You can authorize the integration at a user level with their login credentials. 
 
 Steps to authorize a JIRA action at a user level:
 
-1. Go to **Build > Integrations > Actions** and select the **JIRA** action.
+1. Go to **App Settings** > **Integrations** > **Actions** and select the **JIRA** action.
 2. In the Configurations dialog, select the **Authorization** tab.
 3. **Authorization Type** – Select the **Allow Users to Authorize the Integration** option, and then select **OAuth** option.  
 <img src="../images/jira-action-img8.png" alt="Authorization Type-OAuth" title="Authorization Type-OAuth" style="border: 1px solid gray;zoom:50%;"/>

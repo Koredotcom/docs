@@ -4,9 +4,9 @@ You can use the **Prebuilt Action Templates** from your JIRA integration to auto
 
 Step to create a dialog task using the JIRA action templates:
 
-1. Go to **Build > Conversation Skills > Dialog Tasks**.
+1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
-<img src="../images/jira-tem-img1.png" alt="Create a Dialog Task" title="Create a Dialog Task" style="border: 1px solid gray;zoom:50%;"/>
+
 
 3. On the Dialog Task pop-up, under the Integration, select the Jira option to view the action templates.  
 <img src="../images/jira-action-img14-tem-img2.png" alt="Integration - JIRA" title="Integration - JIRA" style="border: 1px solid gray;zoom:50%;"/>
@@ -553,7 +553,9 @@ Steps to update an issue in the JIRA integration:
 
 ### Delete an Issue
 
-**Note**: You can delete an issue only if the JIRA admin or owner of the JIRA project assigns you the permission to delete it. Otherwise, you will not be able to perform this action.
+!!! note
+
+    You can delete an issue only if the JIRA admin or owner of the JIRA project assigns you the permission to delete it. Otherwise, you will not be able to perform this action.
 
 Steps to delete an issue in the JIRA integration:
 

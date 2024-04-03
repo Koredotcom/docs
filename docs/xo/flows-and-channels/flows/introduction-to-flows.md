@@ -19,7 +19,7 @@ There are a few benefits to using the Flow Designer:
 * This open visual canvas lets you drag nodes, link them together, and create clear customer experience flows without coding.
 * You can build experiences based on whether you want customers to interact with a bot or be transferred to an agent.
 * It allows you to create waiting experiences for situations when customers wait for an agent to accept the conversation request.
-* It lets you design default flows and define how the application behaves in regular scenarios. 
+* It lets you design default flows and define how the application behaves in regular scenarios.
 
 ## The Flows Live Board
 
