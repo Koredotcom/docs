@@ -34,27 +34,36 @@ You can add utterances in two ways:
 ##### Steps to add none intent utterances
 
 1. Sign in to XO Platform.
-2. Click **AgentAssist **> **Experience **>** Agent Coaching**.
+2. Click **AgentAssist** > **Experience** > **Agent Coaching**.
 3. Click the **edit** button against a **Pre-built, None Intent** rule under **Actions**.
+
 <img src="../agent-coaching-images/edit-none-intent-rule-1.png" alt="edit-none-intent-rule" title="edit-none-intent-rule" style="border: 1px solid gray; zoom:80%;">
 4. Click **Add Utterance(s)**.
 5. Select **AI Assist** or **Input Utterances Manually**.
+
 Follow these steps if you select **AI Assist**:
-    1. Select **AI Assist**. \
-**Note**: To avail the **AI Assist** feature, enable **OpenAI** in the **App Settings** > **Generative AI Tools**, and enable **Generating Opposite…** in the **Co-Pilots** section.
+    1. Select **AI Assist**.
+    
+    **Note**: To avail the **AI Assist** feature, enable **OpenAI** in the **App Settings** > **Generative AI Tools**, and enable **Generating Opposite…** in the **Co-Pilots** section.
+    
     2. Select rules, as required, from the **Add Rules** list and click **Add**.
-    <img src="../agent-coaching-images\select-none-intent-rules-2.png" alt="select-none-intent-rules" title="select-none-intent-rules" style="border: 1px solid gray; zoom:80%;">    
+    <img src="../agent-coaching-images\select-none-intent-rules-2.png" alt="select-none-intent-rules" title="select-none-intent-rules" style="border: 1px solid gray; zoom:80%;">
+
     3. All added rules are displayed on the left, and the AI starts searching for more utterances that are similar in meaning to the utterances of your selected rules.
+
     4. Select utterances, as required, and then click **Add Selected**.
+
     5. Click **Save** to complete the process.
 
 Follow these steps if you select **Input Utterances Manually**:
 
 1. Select **Input Utterances Manually**.
 2. Enter your utterance in the **Utterances** field and press the **Enter** key.
+
 <img src="../agent-coaching-images/add-utterances-manually-3.png" alt="add-utterances-manually" title="add-utterances-manually" style="border: 1px solid gray; zoom:80%;"> 
 
 Following this step, you can add multiple utterances.
+
 3. Click **Save**.
     1. The new utterance gets added to the list of utterances.
 
@@ -72,7 +81,8 @@ This is a predefined rule with conditions and actions that come with Agent Coach
 * **Assigned to**: All Agents
 
 The following screenshot displays the **Price Objection** rule:
-<img src="../agent-coaching-images/price-objection-identification-4.png" alt="price-objection-identification" title="price-objection-identification" style="border: 1px solid gray; zoom:80%;"> 
+
+<img src="../agent-coaching-images/price-objection-identification-4.png" alt="price-objection-identification" title="price-objection-identification" style="border: 1px solid gray; zoom:80%;">
 
 For information on rule functionalities, refer to the section [Create, Publish, Edit, Delete, and Disable Rules](https://docs.kore.ai/agentassist/agent/agent-coaching/#Create_Publish_Edit_Delete_and_Disable_Rules). 
 
@@ -90,23 +100,33 @@ From time to time, depending on newer or different situations, you can create ne
 2. Click **AgentAssist **>** Experience **>** Agent Coaching**.
 3. Click **+New Rule**.
 4. Enter a name for the new rule in the **Name** field.
-5. Enter a short description about the rule in the **Description** field. \
+5. Enter a short description about the rule in the **Description** field.
+
 To read how to form a rule description, hover over the “i” button beside the **Description** field.
+
 <img src="../agent-coaching-images/rule-description-criterion-5.png" alt="rule-description-criterion" title="rule-description-criterion" style="border: 1px solid gray; zoom:80%;"> 
 
 Rule description should be concise and include keywords and conditions. It trains the AI for real-time assistance.
+
 6. Enter a tag in the **Tag** field and then press the **Enter** key to add the tag.
+
 7. Click **Voice** or **Live Chat** or both in the **Channels** field.
     1. **Voice**: Choose **Voice** if you want this rule to take input utterance only through the voice (voice calls) medium.
     2. **Live Chat**: Choose **Live Chat** if you want this rule to take input utterance only through the live chat (text messages) medium.
     3. **Both**: Choose both **Voice** and **Live Chat** if you want this rule to take input utterance through both these mediums.
+
 8. Click **Apply** to complete the rule creation process:
+
 <img src="../agent-coaching-images/completing-rule-creation-process-6.png" alt="completing-rule-creation-process" title="completing-rule-creation-process" style="border: 1px solid gray; zoom:80%;"> 
 
 A message shows up to confirm a new rule creation.
+
 9. Click **+Add a trigger** under **When…** to add a trigger condition for the rule. For more information, refer to the [Agent Coaching Rule Triggers](https://docs.kore.ai/agentassist/agent/agent-coaching/#Agent_Coaching_Rule_Triggers_When%E2%80%A6) section.
+
 10. Click **+Add an action** under **Then do…** to add an action for the rule. For more info, refer to the [Agent Coaching Actions](https://docs.kore.ai/agentassist/agent/agent-coaching/#Agent_Real-time_Coaching_Actions_Then_do%E2%80%A6) section.
+
 11. Click **Add agents, groups** under **Assign this to…** to add agents or groups you want to assign this rule to. For more info, refer to the [Assign this to](https://docs.kore.ai/agentassist/agent/agent-coaching/#Assign_This_To) section.
+
 12. Click **Save**.
 
 ### **Editing a Rule**
