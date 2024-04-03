@@ -57,10 +57,9 @@ extra:
         - icon: material/thumb-down-outline
           name: This page could be improved
           data: 0
-          note: >- 
-            https://docsinternal-kore.github.io/docs/xo/feedback/feedback-form/?title=[Feedback]+{title}+-+{url}          
+          note: >-                       
             Thanks for your feedback! Help us improve this page by
-            using our <a href="https://forms.office.com/r/DgfNmaDCdm?origin=lprLink" target="_blank" rel="noopener">feedback form<a>.
+            using our <a href="https://docsinternal-kore.github.io/docs/xo/feedback/feedback-form/?title=[Feedback]+{url}" target="_blank" rel="noopener">feedback form<a>.
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -142,7 +141,7 @@ nav:
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
   - Automation AI: 
-    - Overview: automation/about-automation.md
+    - Overview: automation/about-automation-ai.md
     - Use Cases: 
       - Dialogs Tasks:
         - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
@@ -257,7 +256,7 @@ nav:
         - Bot Management: manage-assistant/bot-management.md
         - Manage Namespace: manage-assistant/managing-namespace.md               
   - Search AI:
-    - Overview: searchai/about-answers.md
+    - Overview: searchai/about-search-ai.md
     - Getting Started: searchai/introduction-to-answers.md
     - Content:
         - Sources:
@@ -279,7 +278,7 @@ nav:
     - Configuration:
         - Answer Configuration: searchai/answer-configuration.md
   - Contact Center AI:
-    - Overview: contactcenter/about-contact-center.md 
+    - Overview: contactcenter/about-contact-center-ai.md 
     - Agent and Supervisors: 
       - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
       - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md
@@ -307,7 +306,7 @@ nav:
     - Campaigns:  
       - Overview: contactcenter/campaigns/about-campaigns.md
   - Agent AI:
-    - Overview: agentai/about-agentassist.md 
+    - Overview: agentai/about-agent-ai.md 
     - Agent Experience:
       - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md       
   - Integrations & APIs:
