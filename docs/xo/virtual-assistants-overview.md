@@ -10,8 +10,6 @@ AI-driven, NLP-based chat, and voice Conversational Virtual Assistants are the l
 
 ![Human to Machine Interaction](../assets/images/ConversationalBot.png)
 
-
-
 ## What are Conversational Assistants?
 
 A Conversational Virtual Assistant (VA) acts as an intelligent intermediary between people, digital systems, and internet-enabled things. It replaces the traditional Graphical User Interfaces (GUIs) of an application or website with a Conversational User Interface (CUI). It is a paradigm shift from the earlier communications achieved either by entering syntax-specific commands or clicking icons.
