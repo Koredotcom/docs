@@ -23,8 +23,8 @@ There are a few benefits to using the Flow Designer:
 
 ## The Flows Live Board
 
-You can find the Flows by navigating to **Automation AI**/**Contact Center AI**/**Agent AI** > **Channels & Flows** > **FLOWS**.
-<img src="../images/channels-and-flows-page.png" alt="Channels & Flows Page" title="Channels & Flows Page" style="border: 1px solid gray; zoom:70%;">
+You can find the Flows by navigating to **Automation AI**/**Contact Center AI**/**Agent AI** > **Flows & Channels** > **FLOWS**.
+<img src="../images/channels-and-flows-page.png" alt="Flows & Channels Page" title="Flows & Channels Page" style="border: 1px solid gray; zoom:70%;">
 
 <table>
   <tr>
