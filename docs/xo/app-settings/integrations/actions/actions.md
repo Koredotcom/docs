@@ -13,7 +13,7 @@ The Kore.ai XO Platform offers pre-built integrations with popular business appl
 2. Enable an integration to exchange data between two systems during the dialog task execution.
 3. Enable an integration and create the dialog tasks using the preconfigured templates supported by the integration.
 
-The **Actions** module is available under the **Settings > Integrations** menu.
+The **Actions** module is available under the **App Settings** > **Integrations** menu.
 
 
 ## Actions Enablement
@@ -275,7 +275,8 @@ Disabling the integration action will change its status from enabled to disabled
 
 **Steps to disable an integration.**
 
-1. To **disable** the integration, hover over it in the actions list and click the **Settings** icon in the top right corner.
+1. Go to **App Settings** > **Integrations** > **Actions**.
+2. To **disable** the integration, hover over it and click the **Settings** icon in the top right corner.
 2. If the action/integration is enabled, you will have the option to **Disable** it, and vice versa.  
 <img src="../images/actions-img2-integrations_disable.png" alt="Disable integration" title="Disable integration" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -295,13 +296,17 @@ You can delete an external integration that is no longer in use.
 
 **Steps to delete an integration:**
 
-1. To **delete** the integration, hover over it in the actions list and click the **Settings** icon in the top right corner.
+1. Go to **App Settings** > **Integrations** > **Actions**.
+2. To **delete** the integration, hover over it and click the **Settings** icon in the top right corner.
 2. Choose the option to **Delete** the action/integration.  
 <img src="../images/actions-img5-integrations_delete.png" alt="Delete integration" title="Delete integration" style="border: 1px solid gray;zoom:50%;"/>
 
+!!! note "Warning"
 
-**Warning**: Deletion is permanent and cannot be undone. You are asked to confirm your choice, so make sure this is exactly what you want to do. Once an action is **Deleted**, all authorization configurations related to that particular integration are deleted.
+    Deletion is permanent and cannot be undone. You are asked to confirm your choice, so make sure this is exactly what you want to do. Once an action is **Deleted**, all authorization configurations related to that particular integration are deleted.
 
+[!Warning]
+This is test warning
 
 ## More Like This
 
