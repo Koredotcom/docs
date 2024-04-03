@@ -52,9 +52,8 @@ Before enabling the ServiceNow action, complete the following prerequisites:
 
 Steps to enable the ServiceNow action:
 
-1. Go to **Build > Integrations** and select the **Actions** menu item.
-2. Once you click the **Actions** menu, all integrations are shown in the **Available** region. Select the **ServiceNow** action.  
-<img src="../images/servicenow-action-img1.png" alt="Actions - Servicenow" title="Actions - Servicenow" style="border: 1px solid gray;zoom:50%;"/>
+1. Go to **App Settings** > **Integrations** > **Actions**.
+2. Select the **ServiceNow** action.  
 
 
 ### Pre-authorize the Integration
@@ -65,7 +64,7 @@ You can authorize the integration using your credentials. The developer authoriz
 
 Steps to authorize a ServiceNow action using developer credentials:
 
-1. Go to **Build > Integrations** and select the **Actions** menu item.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Select the **ServiceNow** action in the **Available Actions** region.
 3. In the **Configurations** dialog, select the **Authorization** tab 
 4. Enter the following details:
@@ -86,7 +85,7 @@ You can authorize the integration at a user level with their login credentials. 
 
 Steps to authorize a ServiceNow action at a user level:
 
-1. Go to **Build > Integrations** and select the **Actions** menu item.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Select the **ServiceNow** action in the **Available Actions** region.
 3. In the Configurations dialog, select the **Authorization** tab.
 4. Select the type of authorization mechanism. For example, select the **Basic Auth** option. To create Basic Auth profiles, see [Bot Authorization Overview ](../../../../dev-tools/bot-authorization/bot-authentication).  

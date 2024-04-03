@@ -49,17 +49,17 @@ extra:
     feedback:
       title: Was this page helpful?
       ratings:
-        - icon: material/emoticon-happy-outline
+        - icon: material/thumb-up-outline
           name: This page was helpful
           data: 1
           note: >-
             Thanks for your feedback!
-        - icon: material/emoticon-sad-outline
+        - icon: material/thumb-down-outline
           name: This page could be improved
           data: 0
           note: >- 
             Thanks for your feedback! Help us improve this page by
-            using our <a href="https://community.kore.ai/" target="_blank" rel="noopener">feedback form</a>.  
+            using our feedback form: <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScS7Iv0uIYXSdxhZtwzxVZi4K0pg0-7dX23xIQ0CF56YvIAzg/viewform?embedded=true" width="640" height="748" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>.  
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
