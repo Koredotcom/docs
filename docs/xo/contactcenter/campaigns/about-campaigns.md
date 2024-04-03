@@ -8,7 +8,7 @@ The Campaigns module simplifies and enhances outbound efforts across voice and w
 
 <kr-grid type="g2">
     <kr-grid-item>
-        <img src="../images/campaigns.svg" style="zoom:200%;"></img>
+        <img src="../images/Campaigns.svg" style="zoom:200%;"></img>
         <kr-grid-title>Voice Campaigns</kr-grid-title>
         <kr-grid-desc>Harness the power of voice technology to connect with your audience through personalized messages or interactive experiences. Setting up a new campaign is easy—begin with a targeted contact list to ensure your message resonates with the right audience.</kr-grid-desc>
         <a href="">Learn More</a>
