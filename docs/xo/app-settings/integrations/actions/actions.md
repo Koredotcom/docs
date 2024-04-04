@@ -56,9 +56,9 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
 
 [Learn more](./azure-open-ai/configuring-the-azure-openai-action.md){:target="_blank"}
 
-[hey](www.google.com)
+[Google](www.google.com){:target="_blank"}
 
-<a href="./azure-open-ai/configuring-the-azure-openai-action.md" target="_blank">Learn more</a>
+<a href="./azure-open-ai/configuring-the-azure-openai-action.md"  target="_blank">Learn more2</a>
 
 
 <table border="1">
@@ -83,9 +83,9 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
    </td>
    <td>Basic Auth
    </td>
-   <td> <a href=./azure-open-ai/configuring-the-azure-openai-action.md target="_blank">Learn more</a>
+   <td> <a href="../actions/azure-open-ai/configuring-the-azure-openai-action.md" target="_blank">Learn more</a>
    
-   [Click Here](../actions/azure-open-ai/configuring-the-azure-openai-action.md) </td>
+  </td>
    
   </tr>
   <tr>
