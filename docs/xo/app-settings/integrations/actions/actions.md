@@ -54,6 +54,12 @@ The email template which is sent to the bot developer upon token expiry is as fo
 
 The available Actions/Integrations are listed in the table below. Go to **App Settings > Integrations > Actions** and click the **Action** you want to configure in the Kore.ai XO platform. The page with Instructions and Configuration settings will slide out. For step-by-step instructions on how to configure an action, click the Learn more link for the action in the table below.
 
+[Learn more](./azure-open-ai/configuring-the-azure-openai-action.md){:target="_blank"}
+
+[hey](www.google.com)
+
+<a href="./azure-open-ai/configuring-the-azure-openai-action.md" target="_blank">Learn more</a>
+
 
 <table border="1">
   <tr>
@@ -77,8 +83,10 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
    </td>
    <td>Basic Auth
    </td>
-   <td> [Learn more](./azure-open-ai/configuring-the-azure-openai-action.md){:target="_blank"} 
-   </td>
+   <td> <a href=./azure-open-ai/configuring-the-azure-openai-action.md target="_blank">Learn more</a>
+   
+   [Click Here](../actions/azure-open-ai/configuring-the-azure-openai-action.md) </td>
+   
   </tr>
   <tr>
    <td>BambooHR
