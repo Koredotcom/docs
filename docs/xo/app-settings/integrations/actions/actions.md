@@ -54,19 +54,30 @@ The email template which is sent to the bot developer upon token expiry is as fo
 
 The available Actions/Integrations are listed in the table below. Go to **App Settings > Integrations > Actions** and click the **Action** you want to configure in the Kore.ai XO platform. The page with Instructions and Configuration settings will slide out. For step-by-step instructions on how to configure an action, click the Learn more link for the action in the table below.
 
+
+
+
+
 [Learn more](./azure-open-ai/configuring-the-azure-openai-action.md){:target="_blank"}
 
-[Google](www.google.com){:target="_blank"}
+[Google](https://www.google.com){:target="_blank"}
 
 <a href="./azure-open-ai/configuring-the-azure-openai-action.md"  target="_blank">Learn more2</a>
 
-| [Learn more](./azure-open-ai/configuring-the-azure-openai-action.md) |
 
+<a href="../actions/azure-open-ai/configuring-the-azure-openai-action.md" target="_blank">Learn more3</a>
+
+| [Learn more4](./azure-open-ai/configuring-the-azure-openai-action.md){:target="_blank"} |
 
 | Document Name | Cross-reference Link             | fd |
-| ------------- | --------------------------------| --- |
-| Document A    | [Learn more](./azure-open-ai/configuring-the-azure-openai-action.md) |-- |
-| Document B    | [Link to Document A](./azure-open-ai/using-the-azure-openai-action-templates.md#azure-openai-actions) | Hello world |
+| ------- | --------------------------------| --- |
+| Document A    | [Learn more](./azure-open-ai/configuring-the-azure-openai-action.md){:target="_blank"} |-- |
+| Document B    | [Link to Document A](./azure-open-ai/using-the-azure-openai-action-templates.md#azure-openai-actions){:target="_blank"} | Hello world |
+
+
+
+
+
 
 <table border="1">
   <tr>
@@ -90,7 +101,7 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
    </td>
    <td>Basic Auth
    </td>
-   <td> <a href="./azure-open-ai/configuring-the-azure-openai-action.md" target="_blank">Learn more</a>
+   <td> <a href="../actions/azure-open-ai/configuring-the-azure-openai-action.md" target="_blank">Learn more</a>
    
   </td>
    
@@ -104,7 +115,7 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="../bamboo-hr/configuring-the-bamboohr-action" target="_blank">Learn more</a>
+   <td><a href="../actions/bamboo-hr/configuring-the-bamboohr-action.md" target="_blank">Learn more</a>
    </td>
   
   </tr>
