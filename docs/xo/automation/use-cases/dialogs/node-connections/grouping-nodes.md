@@ -10,7 +10,7 @@ Node groups can be used to improve the user experience with follow-ups, digressi
 To add a node group to the dialog task, follow the below steps:
 
 1. **Open the Dialog Task** where you want to add the Group node.
-2. **Group the nodes**. For steps in grouping nodes, [refer here](../../using-the-dialog-builder-tool/#node-groups){:target="_blank"}.
+2. **Group the nodes**. For steps in grouping nodes, [refer here](../../using-the-dialog-builder-tool/#manage-groups){:target="_blank"}.
 
 ## Configure a Node Group
 
