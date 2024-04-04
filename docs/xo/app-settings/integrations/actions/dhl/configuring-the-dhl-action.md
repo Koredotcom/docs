@@ -7,7 +7,7 @@ This document explains how to authorize and enable the DHL action and install th
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow DHL integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} article.
+The Kore.ai XO Platform supports basic authentication to allow DHL integration to exchange data. For more information, read the [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the DHL integration:
 

@@ -7,7 +7,7 @@ This article explains how to authorize and enable the **HubSpot** action and ins
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports OAuth 2.0 authentication to allow a HubSpot integration to exchange data. For more information, see [Setting Up Authorization Using OAuth v2](../../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2/){:target="_blank"} article. 
+The Kore.ai XO Platform supports OAuth 2.0 authentication to allow a HubSpot integration to exchange data. For more information, see [Setting Up Authorization Using OAuth v2](../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2.md){:target="_blank"} article. 
 
 The Kore.ai XO Platform supports the following authorization types for the HubSpot CRM integration:
 

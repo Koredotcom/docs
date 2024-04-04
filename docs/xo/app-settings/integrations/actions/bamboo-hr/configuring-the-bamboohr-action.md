@@ -7,7 +7,7 @@ This document explains how to enable, authorize, configure, and install the Bamb
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow BambooHR integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} article.
+The Kore.ai XO Platform supports basic authentication to allow BambooHR integration to exchange data. For more information, read the [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the BambooHR integration:
 
