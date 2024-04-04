@@ -199,20 +199,15 @@ Utterances are inputs from either the customers or the agents. In Utterance Trig
     <img src="../agent-coaching-images/trigger-based-on-times-of-utterance-appearance-9.png" alt="trigger-based-on-times-of-utterance-appearance" title="trigger-based-on-times-of-utterance-appearance" style="border: 1px solid gray; zoom:80%;">
 
 14. Click the default time frame, in conversation, to change it if you want to select other options.
-    <img src="../agent-coaching-images/trigger-based-on-utterance-time-frame-10.png" alt="trigger-based-on-utterance-timeframe" title="trigger-based-on-utterance-timeframe" style="border: 1px solid gray; zoom:80%;">
-
+    <img src="../agent-coaching-images/trigger-based-on-utterance-timeframe-10.png" alt="trigger-based-on-utterance-timeframe" title="trigger-based-on-utterance-timeframe" style="border: 1px solid gray; zoom:80%;"> 
     1. If you select **Anytime in conversation**, the following screen appears:
         <img src="../agent-coaching-images/utterance-trigger-any-time-in-conversation-11.png" alt="utterance-trigger-any-time-in-conversation" title="utterance-trigger-any-time-in-conversation" style="border: 1px solid gray; zoom:80%;"> 
     2. If you select **By time**, the following screen appears:
-       <img src="../agent-coaching-images/utterance-trigger-by-time-12.png" alt="utterance-trigger-by-time" title="utterance-trigger-by-time" style="border: 1px solid gray; zoom:80%;">
-
-       From the dropdown, select **first** or **within** and enter the time in seconds.
-
+        <img src="../agent-coaching-images/utterance-trigger-by-time-12.png" alt="utterance-trigger-by-time" title="utterance-trigger-by-time" style="border: 1px solid gray; zoom:80%;">
+        From the dropdown, select **first** or **within** and enter the time in seconds.
     3. If you select **By number of messages**, the following screen appears:
-       <img src="../agent-coaching-images/utterance-trigger-by-number-of-messages-13.png" alt="utterance-trigger-by-number-of-messages" title="utterance-trigger-by-number-of-messages" style="border: 1px solid gray; zoom:80%;">
-        
-       From the dropdown, select **first** or **within** and enter a number in the messages field.
-
+        <img src="../agent-coaching-images/utterance-trigger-by-number-of-messages-13.png" alt="utterance-trigger-by-number-of-messages" title="utterance-trigger-by-number-of-messages" style="border: 1px solid gray; zoom:80%;">
+        From the dropdown, select **first** or **within** and enter a number in the messages field.
 15. Press the **Enter** key to complete the process.
 
 ### **Speech Analysis Triggers**
@@ -496,11 +491,8 @@ The Nudge Agent actions are the small messages that pop up on the agent’s scre
       1. Positive Nudges
 
          <img src="../agent-coaching-images/positive-nudge-in-widget-52.png" alt="positive-nudge-in-widget" title="positive-nudge-in-widget" style="border: 1px solid gray; zoom:80%;">
-         
       2. Neutral Nudges
-      
-      <img src="../agent-coaching-images/neutral-nudge-widget-53.png" alt="neutral-nudge-widget" title="neutral-nudge-widget" style="border: 1px solid gray; zoom:80%;">
-
+         <img src="../agent-coaching-images/neutral-nudge-widget-53.png" alt="neutral-nudge-widget" title="neutral-nudge-widget" style="border: 1px solid gray; zoom:80%;">
       3. Warning Nudges
 
          <img src="../agent-coaching-images/warning-nudge-widget-54.png" alt="warning-nudge-widget" title="warning-nudge-widget" style="border: 1px solid gray; zoom:80%;">
