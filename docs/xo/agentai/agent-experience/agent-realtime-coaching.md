@@ -42,13 +42,12 @@ You can add utterances in two ways:
     Follow these steps if you select **AI Assist**:
     1. Select **AI Assist**.
 
-    !!! note "Note"
-        To avail the **AI Assist** feature, enable **OpenAI** in the **App Settings** > **Generative AI Tools**, and enable **Generating Opposite…** in the **Co-Pilots** section.
-        
+        !!! note "Note"
+            To avail the **AI Assist** feature, enable **OpenAI** in the **App Settings** > **Generative AI Tools**, and enable **Generating Opposite…** in the **Co-Pilots** section.
     2. Select rules, as required, from the **Add Rules** list and click **Add**.
-
-       <img src="../agent-coaching-images\select-none-intent-rules-2.png" alt="select-none-intent-rules" title="select-none-intent-rules" style="border: 1px solid gray; zoom:80%;">
     
+       <img src="../agent-coaching-images\select-none-intent-rules-2.png" alt="select-none-intent-rules" title="select-none-intent-rules" style="border: 1px solid gray; zoom:80%;">
+       
     3. All added rules are displayed on the left, and the AI starts searching for more utterances that are similar in meaning to the utterances of your selected rules.
     
     4. Select utterances, as required, and then click **Add Selected**.
@@ -546,9 +545,9 @@ The Hint Agent actions are small pop-up messages that advise agents to take furt
     <img src="../agent-coaching-images/hint-agent-add-adherence-64.png" alt="hint-agent-add-adherence" title="hint-agent-add-adherence" style="border: 1px solid gray; zoom:80%;">
 
     1. If you select **Acknowledge Pressed**, the following screen is displayed:
-
-    <img src="../agent-coaching-images/add-adherence-acknowledge-pressed-65.png" alt="add-adherence-acknowledge-pressed" title="add-adherence-acknowledge-pressed" style="border: 1px solid gray; zoom:80%;">
-
+    
+       <img src="../agent-coaching-images/add-adherence-acknowledge-pressed-65.png" alt="add-adherence-acknowledge-pressed" title="add-adherence-acknowledge-pressed" style="border: 1px solid gray; zoom:80%;">
+       
     2. If you select **Utterance**, follow steps 9-12 of [Steps to set up the Nudge Agent actions](#steps-to-set-up-the-nudge-agent-actions) to complete the process.
 
 The agent gets screens similar to the following on their system for:
