@@ -11,8 +11,11 @@ The Kore.ai XO Platform supports basic authentication to allow a JIRA integratio
 The Kore.ai XO Platform supports the following authorization types for the JIRA integration:
 
 * **Pre-Authorize the Integration** – To make the integration process smoother for developers and customers, you can pre-authorize it by providing the necessary authorization credentials to obtain the access token.
-* **Allow Users to Authorize the Integration** – This method requires the end user to provide credentials during the conversation for authorization. This authorization process involves requesting permission for Kore.ai’s JIRA app to access an access token at runtime.  
-  **NOTE**: The JIRA integration can be authorized only for the Developer and the Enterprise editions. You cannot authorize JIRA’s Trial edition. To learn more about JIRA account types, see [JIRA documentation](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#overview){:target="_blank"}.
+* **Allow Users to Authorize the Integration** – This method requires the end user to provide credentials during the conversation for authorization. This authorization process involves requesting permission for Kore.ai’s JIRA app to access an access token at runtime.
+
+!!! note
+
+    The JIRA integration can be authorized only for the Developer and the Enterprise editions. You cannot authorize JIRA’s Trial edition. To learn more about JIRA account types, see [JIRA documentation](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#overview){:target="_blank"}.
 
 <table border="1">
   <tr>
@@ -48,9 +51,9 @@ Before enabling the JIRA actions, complete the following prerequisites:
 
 Steps to enable the JIRA action:
 
-1. Go to **Build > Integrations > Actions**.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Once you click the **Actions** menu, all integrations are shown in the **Available** region. Select the **JIRA** action.  
-<img src="../images/jira-action-img1.png" alt="Available actions-JIRA" title="Available actions-JIRA" style="border: 1px solid gray;zoom:50%;"/>
+
 
 ### Pre-authorize the Integration
 
@@ -60,7 +63,7 @@ You can authorize the integration using developer credentials. The developer aut
 
 Steps to authorize a JIRA action using developer credentials:
 
-1. Go to **Build > Integrations > Actions** and select the **JIRA** action.
+1. Go to **App Settings** > **Integrations** > **Actions** and select the **JIRA** action.
 2. In the **Configurations** dialog, select the **Authorization** tab.
 3. **Authorization Type** – Select the **Pre-authorize the Integration** option, and then select the **OAuth** option.  
 <img src="../images/jira-action-img2.png" alt="Authorization Type-OAuth" title="Authorization Type-OAuth" style="border: 1px solid gray;zoom:50%;"/>
@@ -109,7 +112,9 @@ Steps to authorize a JIRA action using developer credentials:
 10. Click **Enable**. When you configure the action for the first time, the Integration Successful pop-up is displayed.  
 <img src="../images/jira-action-img7.png" alt="Enable integration" title="Enable integration" style="border: 1px solid gray;zoom:50%;"/>
 
-**Note**: The JIRA action is moved from _Available_ to _Configured_ region.
+!!! note
+
+    The JIRA action is moved from _Available_ to _Configured_ region.
 
 
 ### Allow End User to Authorize
@@ -118,7 +123,7 @@ You can authorize the integration at a user level with their login credentials. 
 
 Steps to authorize a JIRA action at a user level:
 
-1. Go to **Build > Integrations > Actions** and select the **JIRA** action.
+1. Go to **App Settings** > **Integrations** > **Actions** and select the **JIRA** action.
 2. In the Configurations dialog, select the **Authorization** tab.
 3. **Authorization Type** – Select the **Allow Users to Authorize the Integration** option, and then select **OAuth** option.  
 <img src="../images/jira-action-img8.png" alt="Authorization Type-OAuth" title="Authorization Type-OAuth" style="border: 1px solid gray;zoom:50%;"/>

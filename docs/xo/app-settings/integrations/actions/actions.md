@@ -13,7 +13,7 @@ The Kore.ai XO Platform offers pre-built integrations with popular business appl
 2. Enable an integration to exchange data between two systems during the dialog task execution.
 3. Enable an integration and create the dialog tasks using the preconfigured templates supported by the integration.
 
-The **Actions** module is available under the **Settings > Integrations** menu.
+The **Actions** module is available under the **App Settings** > **Integrations** menu.
 
 
 ## Actions Enablement
@@ -52,8 +52,21 @@ The email template which is sent to the bot developer upon token expiry is as fo
 
 ## Available Actions and How to Configure Them
 
-The available Actions/Integrations are listed in the table below. Go to **Settings > Integrations > Actions** and click the **Action** you want to configure in the Kore.ai XO platform. The page with Instructions and Configuration settings will slide out. For step-by-step instructions on how to configure an action, click the Learn more link for the action in the table below.
+The available Actions/Integrations are listed in the table below. Go to **App Settings > Integrations > Actions** and click the **Action** you want to configure in the Kore.ai XO platform. The page with Instructions and Configuration settings will slide out. For step-by-step instructions on how to configure an action, click the Learn more link for the action in the table below.
 
+[Learn more](./azure-open-ai/configuring-the-azure-openai-action.md){:target="_blank"}
+
+[Google](www.google.com){:target="_blank"}
+
+<a href="./azure-open-ai/configuring-the-azure-openai-action.md"  target="_blank">Learn more2</a>
+
+| [Learn more](./azure-open-ai/configuring-the-azure-openai-action.md) |
+
+
+| Document Name | Cross-reference Link             | fd |
+| ------------- | --------------------------------| --- |
+| Document A    | [Learn more](./azure-open-ai/configuring-the-azure-openai-action.md) |-- |
+| Document B    | [Link to Document A](./azure-open-ai/using-the-azure-openai-action-templates.md#azure-openai-actions) | Hello world |
 
 <table border="1">
   <tr>
@@ -77,8 +90,10 @@ The available Actions/Integrations are listed in the table below. Go to **Settin
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="../azure-open-ai/configuring-the-azure-openai-action" target="_blank">Learn more</a>
-   </td>
+   <td> <a href="./azure-open-ai/configuring-the-azure-openai-action.md" target="_blank">Learn more</a>
+   
+  </td>
+   
   </tr>
   <tr>
    <td>BambooHR
@@ -91,6 +106,7 @@ The available Actions/Integrations are listed in the table below. Go to **Settin
    </td>
    <td><a href="../bamboo-hr/configuring-the-bamboohr-action" target="_blank">Learn more</a>
    </td>
+  
   </tr>
   <tr>
    <td>DHL
@@ -275,7 +291,8 @@ Disabling the integration action will change its status from enabled to disabled
 
 **Steps to disable an integration.**
 
-1. To **disable** the integration, hover over it in the actions list and click the **Settings** icon in the top right corner.
+1. Go to **App Settings** > **Integrations** > **Actions**.
+2. To **disable** the integration, hover over it and click the **Settings** icon in the top right corner.
 2. If the action/integration is enabled, you will have the option to **Disable** it, and vice versa.  
 <img src="../images/actions-img2-integrations_disable.png" alt="Disable integration" title="Disable integration" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -295,12 +312,15 @@ You can delete an external integration that is no longer in use.
 
 **Steps to delete an integration:**
 
-1. To **delete** the integration, hover over it in the actions list and click the **Settings** icon in the top right corner.
+1. Go to **App Settings** > **Integrations** > **Actions**.
+2. To **delete** the integration, hover over it and click the **Settings** icon in the top right corner.
 2. Choose the option to **Delete** the action/integration.  
 <img src="../images/actions-img5-integrations_delete.png" alt="Delete integration" title="Delete integration" style="border: 1px solid gray;zoom:50%;"/>
 
+!!! Warning
 
-**Warning**: Deletion is permanent and cannot be undone. You are asked to confirm your choice, so make sure this is exactly what you want to do. Once an action is **Deleted**, all authorization configurations related to that particular integration are deleted.
+    Deletion is permanent and cannot be undone. You are asked to confirm your choice, so make sure this is exactly what you want to do. Once an action is **Deleted**, all authorization configurations related to that particular integration are deleted.
+
 
 
 ## More Like This

@@ -49,17 +49,17 @@ extra:
     feedback:
       title: Was this page helpful?
       ratings:
-        - icon: material/emoticon-happy-outline
+        - icon: material/thumb-up-outline
           name: This page was helpful
           data: 1
           note: >-
             Thanks for your feedback!
-        - icon: material/emoticon-sad-outline
+        - icon: material/thumb-down-outline
           name: This page could be improved
           data: 0
-          note: >- 
+          note: >-                       
             Thanks for your feedback! Help us improve this page by
-            using our <a href="https://community.kore.ai/" target="_blank" rel="noopener">feedback form</a>.  
+            using our <a href="https://docsinternal-kore.github.io/docs/xo/feedback/feedback-form/?title=[Feedback]+{url}" target="_blank" rel="noopener">feedback form<a>.
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -141,7 +141,7 @@ nav:
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
   - Automation AI: 
-    - Overview: automation/about-automation.md
+    - Overview: automation/about-automation-ai.md
     - Use Cases: 
       - Dialogs Tasks:
         - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
@@ -256,29 +256,29 @@ nav:
         - Bot Management: manage-assistant/bot-management.md
         - Manage Namespace: manage-assistant/managing-namespace.md               
   - Search AI:
-    - Overview: answers/about-answers.md
-    - Getting Started: answers/introduction-to-answers.md
+    - Overview: searchai/about-search-ai.md
+    - Getting Started: searchai/introduction-to-answers.md
     - Content:
         - Sources:
-            - Overview: answers/content-sources/introduction.md
-            - Web Crawl: answers/content-sources/web-crawl.md
-            - Directory: answers/content-sources/directory.md
+            - Overview: searchai/content-sources/introduction.md
+            - Web Crawl: searchai/content-sources/web-crawl.md
+            - Directory: searchai/content-sources/directory.md
             - Connectors:
-                - Introduction: answers/content-sources/connectors.md
-                - ServiceNow Connector: answers/content-sources/servicenow.md
-        - Extraction Strategy: answers/content-extraction/extraction.md
+                - Introduction: searchai/content-sources/connectors.md
+                - ServiceNow Connector: searchai/content-sources/servicenow.md
+        - Extraction Strategy: searchai/content-extraction/extraction.md
         - Workbench:
-            - Introduction: answers/workbench/introduction.md
-            - Field Mapping Stage: answers/workbench/field-mapping.md
-            - Custom Script: answers/workbench/custom-script.md
-            - Exclude Document: answers/workbench/exclude-document.md
-            - Workbench Simulator: answers/workbench/simulation.md
-        - Chunk Browser: answers/chunk-browser.md
-        - Index Configuration: answers/index-configuration.md
+            - Introduction: searchai/workbench/introduction.md
+            - Field Mapping Stage: searchai/workbench/field-mapping.md
+            - Custom Script: searchai/workbench/custom-script.md
+            - Exclude Document: searchai/workbench/exclude-document.md
+            - Workbench Simulator: searchai/workbench/simulation.md
+        - Chunk Browser: searchai/chunk-browser.md
+        - Index Configuration: searchai/index-configuration.md
     - Configuration:
-        - Answer Configuration: answers/answer-configuration.md
+        - Answer Configuration: searchai/answer-configuration.md
   - Contact Center AI:
-    - Overview: contactcenter/about-contact-center.md 
+    - Overview: contactcenter/about-contact-center-ai.md 
     - Agent and Supervisors: 
       - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
       - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md
@@ -306,9 +306,9 @@ nav:
     - Campaigns:  
       - Overview: contactcenter/campaigns/about-campaigns.md
   - Agent AI:
-    - Overview: agentassist/about-agentassist.md 
+    - Overview: agentai/about-agent-ai.md 
     - Agent Experience:
-      - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md       
+      - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md       
   - Integrations & APIs:
     - Overview: channels/IVR-integration.md    
     - Integrations:
