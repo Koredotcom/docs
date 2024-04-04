@@ -4,14 +4,14 @@ You can use the **Prebuilt Action Templates** from your ServiceNow integration t
 
 Steps to create a dialog task using ServiceNow action templates:
 
-1. Go to **Build > Conversation Skills**, and then click the **Dialog Tasks**.
+1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
-<img src="../images/servicenow-tem-img1.png" alt="Create dialog task" title="Create dialog task" style="border: 1px solid gray;zoom:50%;"/>
+
 
 3. On the Dialog Task pop-up, under the **Integration**, select the **ServiceNow** option to view the action templates.  
 <img src="../images/servicenow-tem-img2.png" alt="Integration - Servicenow" title="Integration - Servicenow" style="border: 1px solid gray;zoom:50%;"/>
 
-**Note**: If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
+If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions/){:target="_blank"}.  
 <img src="../images/servicenow-tem-img3.png" alt="Explore integrations" title="Explore integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -578,7 +578,9 @@ Steps to delete an incident in ServiceNow:
 5. Follow the prompts in the VA console to delete an incident as shown below:  
 <img src="../images/servicenow-tem-img22.png" alt="VA prompt to delete an incident" title="VA prompt to delete an incident" style="border: 1px solid gray;zoom:50%;"/>
 
-**Note**: If you enter an incorrect ID, the _404 – No Record Found_ error message is displayed.
+!!! note
+
+    If you enter an incorrect ID, the _404 – No Record Found_ error message is displayed.
 
 
 ### Create a Request
@@ -978,4 +980,6 @@ Steps to delete a request in ServiceNow:
 
 3. Click the **Talk to Bot** icon ad follow the prompts in the VA console to learn how to delete a request. For more information, see step # 3 in the [Create an Incident](#create-an-incident) section.
 
-    **Note**: If you enter an incorrect ID, the _404 – No Record Found_ error message is displayed.
+!!! note
+
+    If you enter an incorrect ID, the _404 – No Record Found_ error message is displayed.
