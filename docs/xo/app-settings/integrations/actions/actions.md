@@ -60,7 +60,6 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
 
 [Learn more](./azure-open-ai/configuring-the-azure-openai-action.md){:target="_blank"}
 
-[Google](https://www.google.com){:target="_blank"}
 
 <a href="./azure-open-ai/configuring-the-azure-openai-action.md"  target="_blank">Learn more2</a>
 
@@ -75,6 +74,10 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
 | Document B    | [Link to Document A](./azure-open-ai/using-the-azure-openai-action-templates.md#azure-openai-actions){:target="_blank"} | Hello world |
 
 
+| Document Name | Image with Link                                      |
+| ------------- | ----------------------------------------------------- |
+| Azure    | [![Azure](./azure-open-ai/images/azure-temp-img1-create-dailog-task.png)](./azure-open-ai/configuring-the-azure-openai-action.md){:target="_blank"} |
+| [Azure](./azure-open-ai/configuring-the-azure-openai-action.md){:target="_blank"}    | [![Azure](./azure-open-ai/images/azure-temp-img3-create-dialog-new.png)](./azure-open-ai/configuring-the-azure-openai-action.md){:target="_blank"} |
 
 
 
