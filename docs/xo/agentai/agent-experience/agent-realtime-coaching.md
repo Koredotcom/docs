@@ -43,7 +43,6 @@ You can add utterances in two ways:
     1. Select **AI Assist**.
     !!! note "Note"
         To avail the **AI Assist** feature, enable **OpenAI** in the **App Settings** > **Generative AI Tools**, and enable **Generating Opposite…** in the **Co-Pilots** section.
-    
     2. Select rules, as required, from the **Add Rules** list and click **Add**.
         <img src="../agent-coaching-images\select-none-intent-rules-2.png" alt="select-none-intent-rules" title="select-none-intent-rules" style="border: 1px solid gray; zoom:80%;">
 
@@ -207,6 +206,7 @@ Utterances are inputs from either the customers or the agents. In Utterance Trig
         <img src="../agent-coaching-images/utterance-trigger-by-time-12.png" alt="utterance-trigger-by-time" title="utterance-trigger-by-time" style="border: 1px solid gray; zoom:80%;">
 
         From the dropdown, select **first** or **within** and enter the time in seconds.
+
     3. If you select **By number of messages**, the following screen appears:
         <img src="../agent-coaching-images/utterance-trigger-by-number-of-messages-13.png" alt="utterance-trigger-by-number-of-messages" title="utterance-trigger-by-number-of-messages" style="border: 1px solid gray; zoom:80%;">
 
@@ -496,6 +496,7 @@ The Nudge Agent actions are the small messages that pop up on the agent’s scre
          <img src="../agent-coaching-images/positive-nudge-in-widget-52.png" alt="positive-nudge-in-widget" title="positive-nudge-in-widget" style="border: 1px solid gray; zoom:80%;">
 
       2. Neutral Nudges
+
          <img src="../agent-coaching-images/neutral-nudge-widget-53.png" alt="neutral-nudge-widget" title="neutral-nudge-widget" style="border: 1px solid gray; zoom:80%;">
 
       3. Warning Nudges
