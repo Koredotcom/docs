@@ -7,7 +7,7 @@ This article explains how to authorize and enable the **OpenAI** action and inst
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow OpenAI integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} article.
+The Kore.ai XO Platform supports basic authentication to allow OpenAI integration to exchange data. For more information, read the [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the OpenAI integration:
 
@@ -39,7 +39,7 @@ You can authorize the integration using your credentials. The developer authoriz
 
 Steps to authorize an OpenAI action using developer credentials:
 
-1. Go to **Build > Integrations** and select the **Actions** menu item.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Select the **OpenAI** action in the **Available Actions** region.
 3. In the **Configurations** dialog, select the **Authorization** tab.
 4. Enter the following details:

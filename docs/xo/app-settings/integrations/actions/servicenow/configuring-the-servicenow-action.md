@@ -10,7 +10,7 @@ This article explains how to authorize and enable the **ServiceNow** action and 
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports only basic authentication to allow a ServiceNow integration to exchange data. For more information, see [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication). 
+The Kore.ai XO Platform supports only basic authentication to allow a ServiceNow integration to exchange data. For more information, see [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md). 
 
 The Kore.ai XO Platform supports the following authorization types for the ServiceNow integration:
 
@@ -97,7 +97,7 @@ Steps to authorize a ServiceNow action at a user level:
 
     2. **Authorization Type** – Select the **Allow Users to Authorize the Integration** option, and then select the **_Basic Auth_** option.
     3. Enter the following authentication credentials for the Basic Auth mechanism:
-        * **Name**– Enter the name for the Basic Auth profile.
+        * **Name** – Enter the name for the Basic Auth profile.
         * Select the _Yes, some tasks will have tenancy URLs and the user will need to provide that to successfully authenticate_ option.
         * **Base URL** – Enter the base tenant URL for ServiceNow instance.
         * **Authorization Check URL** – Enter the authorization check URL for your ServiceNow instance.
@@ -106,7 +106,7 @@ Steps to authorize a ServiceNow action at a user level:
 
     4. Click **Save Auth** to save authorization profile.
 
-6. Select the new **Authorization Profile,** which you created to complete integration.  
+6. Select the new **Authorization Profile**, which you created to complete integration.  
 <img src="../images/servicenow-action-img7.png" alt="Select Auth profile" title="Select Auth profile" style="border: 1px solid gray;zoom:50%;"/>
 
 7. Click **Enable**. When you configure the action for the first time, the **Integration Successful**  pop-up is displayed.

@@ -75,9 +75,10 @@ Steps to generate answers from context task using the OpenAI integration:
         "presence_penalty": 0
         }
         ```
+        
         !!! note
 
-          You can enter a maximum of 1500 words with no line breaks, single or double quotes in the content.
+            You can enter a maximum of 1500 words with no line breaks, single or double quotes in the content.
 
         To add one or more responses, scroll down and click the **+Add Response** button:  
         <img src="../images/open-ai-tem-img6.png" alt="Add response" title="Add response" style="border: 1px solid gray;zoom:50%;"/>
@@ -144,9 +145,10 @@ Steps to extract skills from the resume using OpenAI integration:
         "stop": "Q:"
         }
         ```
+
         !!! note
 
-          You can enter a maximum of 1500 words with no line breaks, single or double quotes in the content.
+            You can enter a maximum of 1500 words with no line breaks, single or double quotes in the content.
 
         To add one or more responses, scroll down and click the **+Add Response** button:  
         <img src="../images/open-ai-tem-img11.png" alt="Add response" title="Add response" style="border: 1px solid gray;zoom:50%;"/>

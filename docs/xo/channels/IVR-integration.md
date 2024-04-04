@@ -24,7 +24,7 @@ The following features enable  the seamless integration of your Kore.ai VAs with
 
 * **Native VXML Support**: Built-in support to parse and generate World Wide Web Consortium (W3C) compliant Voice Extensible Markup Language(VXML) files.
 * **Hybrid integration**: Flexibility to build use cases or dialogs on the  Kore.ai Experience Optimization (XO) Platform, which can work in sync with the IVR dialogs.
-* **Discourse Analyzer**: Kore.ai’s discourse analyzer helps enterprises generate conversation flows using historical chat or call transcripts. Chat and call transcripts are analyzed using neural network-based machine learning models to identify intents and discourse patterns to fulfill a specific intent. This is an out-of-the-box feature that is in Beta state. Contact our [support team](http://support.kore.ai/) if you want to try this feature.
+* **Discourse Analyzer**: Kore.ai’s discourse analyzer helps enterprises generate conversation flows using historical chat or call transcripts. Chat and call transcripts are analyzed using neural network-based machine learning models to identify intents and discourse patterns to fulfill a specific intent. This is an out-of-the-box feature that is in Beta state. Contact our [support team](http://support.kore.ai/){:target="_blank"} if you want to try this feature.
 * **Granular Call Flow Support**: Ability to define all the call flow elements such as grammar, prompts, retry and time-out periods. Kore.ai supports call termination handlers, and allows you to end calls or invoke dialogs in case of exceptions.
 
 
@@ -48,38 +48,35 @@ Steps to configure IVR settings for your Virtual Assistant:
 3. Locate and click the **IVR** under Voice Channels. The IVR Panel with **Instructions** is displayed.
   ![IVR panel](../images/third-party-voice.png "IVR panel")
 4. On the **Configurations** tab, perform the following steps:
-5. Use **Kore.ai IVR Sandbox** for testing your VA. See [Sandbox Configuration ](#sandbox-configuration)for more details.
 
-    !!! note
+    1. Use **Kore.ai IVR Sandbox** for testing your VA. See [Sandbox Configuration ](#sandbox-configuration)for more details.
 
-        If you save the configuration after associating  an app without enabling IVR Settings, the  platform pre-populates the required settings for Sandbox.
+        !!! note
 
-6. Associate an App with the IVR channel, either by creating a new one or selecting an existing one. If you do not have any apps, a message is displayed as shown in the following screenshot.
- ![associate app](../images/IVR-4.png "associate app")
+            If you save the configuration after associating  an app without enabling IVR Settings, the  platform pre-populates the required settings for Sandbox.
 
-    !!! note
+    2. Associate an App with the IVR channel, either by creating a new one or selecting an existing one. If you do not have any apps, a message is displayed as shown in the following screenshot.
+    ![associate app](../images/IVR-4.png "associate app")
 
-        If you already have created apps, then select an app from the Select App drop-down or create a new app. See Sandbox Configuration steps to know more.
+        !!! note
 
-7. Use the **WebHook URL** provided in your external application.
+            If you already have created apps, then select an app from the Select App drop-down or create a new app. See Sandbox Configuration steps to know more.
 
-
-8. Enter the details to complete the setup, see [Voice Call Properties: Channel Settings](../automation/use-cases/dialogs/node-types/voice-call-properties.md#channel-settings]) for more information.
- ![Webhook URL](../images/IVR-5.png "Webhook URL")
+    3. Use the **WebHook URL** provided in your external application.  Enter the details to complete the setup, see [Voice Call Properties: Channel Settings](../automation/use-cases/dialogs/node-types/voice-call-properties.md#channel-settings) for more information.
+    ![Webhook URL](../images/IVR-5.png "Webhook URL")
 
 9.  From the **Voice Call Properties** tab, set the configurations.
  ![IVR Sandbox](../images/IVR-6.png "IVR")
-
  ![IVR data](../images/IVR-7.png "image_tooltip")
 
-!!! note
+    !!! note
 
-    If you have enabled IVR Sandbox, the following settings are required to be configured on the platform. These are pre-populated if you do not enable the IVR settings. In case you have enabled the settings, ensure the values are the same as follows:
-    * Enable Transcription set to Yes.
-    * Transcription engine source set to builtin:speech/transcribe.
-    * IVR Data Extraction Key set to user input.
-    * ASR Confidence Threshold Key set to userinput confidence.
-    * ASR Threshold Confidence set to 50.
+        If you have enabled IVR Sandbox, the following settings are required to be configured on the platform. These are pre-populated if you do not enable the IVR settings. In case you have enabled the settings, ensure the values are the same as follows:
+          * Enable Transcription set to Yes.
+          * Transcription engine source set to builtin:speech/transcribe.
+          * IVR Data Extraction Key set to user input.
+          * ASR Confidence Threshold Key set to userinput confidence.
+          * ASR Threshold Confidence set to 50.
   
 
   
@@ -88,9 +85,9 @@ See [Voice Call Properties: Configuring Grammar](../automation/use-cases/dialogs
 
 
 
-!!! note
+    !!! note
 
-    Sandbox may not respond as expected if you use different values.
+        Sandbox may not respond as expected if you use different values.
 
 
 
