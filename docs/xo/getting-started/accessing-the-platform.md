@@ -97,7 +97,7 @@ To invite users to your Kore.ai XO Platform account, follow these steps:
 
 
 
-1. Sign in to the **Bots Admin** **portal**, at[ https://bots.kore.ai/admin](https://bots.kore.ai/admin). 
+1. Sign in to the **Bots Admin** **portal**, at[ https://bots.kore.ai/admin](https://bots.kore.ai/admin){:target="_blank"}. 
 
     ![alt_text](images/accplatform(6).png "image_tooltip")
 
