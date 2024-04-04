@@ -118,7 +118,7 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="./azure-open-ai/configuring-the-azure-openai-action.md" target="_blank">Learn more</a>
+   <td><a href="./azure-open-ai/configuring-the-azure-openai-action/" target="_blank">Learn more</a>
    </td>
   
   </tr>
