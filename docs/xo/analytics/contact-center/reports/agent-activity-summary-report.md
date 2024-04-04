@@ -12,13 +12,14 @@ To generate Agent Activity Summary report:
 4. Select a Time Period.
 5. Select Data Filters.
 6. Select Report Generation and choose from the following options:
+
+    * Schedule
+        * Run On Demand
         * Schedule
-            * Run On Demand
-            * Schedule
-        * Select Format
-            * PDF
-            * CSV
-        * Send To (single email address or a mailing list)
+    * Select Format
+        * PDF
+        * CSV
+    * Send To (single email address or a mailing list)
 7. Click **Create**.
 8. An instance of the Agent Activity Summary report is created.
 <img src="../images/agent=activity-summary-report-created.png" alt="Agent Activity Summary Report Created" title="Agent Activity Summary Report Created" style="border: 1px solid gray; zoom:70%;">
