@@ -212,7 +212,7 @@ Associate the Variable Namespaces to be used to execute this task. The system wi
 
 <img src="../images/alert-task-associate-namespace.png" alt="Associate Namespace" title="Associate Namespace" style="border:1px solid gray;zoom:70%;">
 
-This option is only available if you have enabled Namespaces. [Learn more](../../../app-settings/managing-namespace/){}:target="_blank"}.
+This option is only available if you have enabled Namespaces. [Learn more](../../../app-settings/managing-namespace/){:target="_blank"}.
 
 <img src="../images/version-namespaces.png" alt="version namespaces" title="version namespaces" style="border: 1px solid gray; zoom:75%;"> 
 
