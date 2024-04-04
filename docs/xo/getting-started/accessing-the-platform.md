@@ -2,38 +2,30 @@
 
 # How to Access the Platform
 
-Kore.ai Experience Optimization (XO) Platform is an AI-powered, end-to-end experience optimization Platform for enterprises of any scale to offer best-in-class conversational experiences for customers, employees, and agents. 
+Kore.ai Experience Optimization (XO) Platform is an AI-powered, end-to-end experience optimization Platform for enterprises of any scale to offer best-in-class conversational experiences for customers, employees, and agents.
 
 The unified XO Platform offers a comprehensive suite of products, features, and services to help businesses leverage conversational AI intelligence and generative AI innovations.
 
 This post takes you through the basics you need to know to successfully access the Kore.ai’s Experience Optimization Platform.
 
-
 ## Supported Browsers
 
 Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Internet Explorer mode in Microsoft Edge is not supported.
 
-
 ## Access the XO Platform
 
-To access the Kore.ai XO Platform, visit [XO Platform Homepage](https://platform.kore.ai/). You will be directed to the login page.
+To access the Kore.ai XO Platform, visit [XO Platform Homepage](https://platform.kore.ai/){:target="_blank"}. You will be directed to the login page.
 
 You can sign up for Kore.ai XO Platform in any of the following two ways:
-
-
 
 * **Create a new account**: The Kore.ai’s XO Platform allows any user to sign up for the platform using their email address. You can sign up to create a personal account or even take the lead in setting up your enterprise’s account in Kore.ai. After you sign up for the account, you automatically become the account’s Admin, which allows you to invite other users to the account.
 * **Join an existing enterprise account:** If your enterprise is already on Kore.ai, you can become a part of the account in one of the following ways:
     * Your enterprise account’s Bots Admin sends you an invite. If you haven’t already received the invitation email, reach out to them for access.
     * You can sign up using your enterprise email account and you are prompted to either join the enterprise network or create your own personal account. 
 
-
-
 ## New Account Sign-up
 
 To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
-
-
 
 1. Visit [XO Platform Homepage](https://platfom.kore.ai/).
 2. On the Sign-up page, enter the email ID in the **Email ID** field.
@@ -48,10 +40,8 @@ To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
     !!! note
         
         The account you create is identified by the email domain. When you invite other users to the account, the email includes this name.
-        
 
 4. On creating an account, a confirmation email is sent to the provided email address, with a verification link and a verification code, to sign in to the new account. 
-
 
     ![alt_text](images/accplatform(2).png "image_tooltip")
 
@@ -60,19 +50,15 @@ To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
 
     ![alt_text](images/accplatform(8).png "image_tooltip")
 
-
 !!! note
 
     The platform sends reminder emails with the verification link and the code to the users who have not completed the sign up. The emails are sent to the email id provided by you during sign up, at periodic intervals as per the configurations done at the application level (Kore config level), with a new verification link and code upon expiry of the old ones.
 
     If the verification link or code expires or is invalid, the system displays a message to you, to request a new link and a code to complete the verification process.
 
-
-
 ![alt_text](images/accplatform(7).png "image_tooltip")
  
- Alternatively, you can sign up to the Kore.ai XO Platform using the Google, Microsoft Office or LinkedIn profiles. 
-
+ Alternatively, you can sign up to the Kore.ai XO Platform using the Google, Microsoft Office or LinkedIn profiles.
 
 ![alt_text](images/accplatform(10).png "image_tooltip")
 
@@ -80,18 +66,15 @@ To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
 
     Kore.ai XO Platform uses SAML-based authentication for completing the sign up and sign in flows.
 
-
 ## Sign in to the Platform
 
 The Kore.ai XO Platform allows you to sign in to your account using your registered email ID and password.
 
 With Single Sign-on (SSO), you can sign in securely (after authentication) by using just one set of credentials. Now, the Kore.ai XO Platform offers an additional layer of security beyond username and password during account sign-in with **Two-Factor Authentication (2FA)**. Enabling 2FA prompts for a security code verification after you’ve entered your username and password.
 
-
 ## The Platform Landing Page
 
 After you sign in to Kore.ai’s XO Platform, you are directed to the landing page. From this page you can access various offerings as follows:
-
 
 * **Apps and Related Options** - Lists all the available apps. You can filter the apps by Pinned, Shared, My Apps, or All apps.   
 * **Data** – Define Data Tables, Table Views, and manipulate them from your Virtual Assistants and Process Apps.Thus taking care of your data needs, without having to depend on external services.
