@@ -91,7 +91,6 @@ This section explains how to create, tag, publish, edit, delete, and disable rul
 From time to time, depending on newer or different situations, you can create new rules to help agents with newer issues. This section explains the steps to create a new rule.
 
 #### **Steps to create a new rule:**
-
 1. Sign in to **XO Platform**.
 2. Click **AgentAssist** > **Experience** > **Agent Coaching**.
 3. Click **+New Rule**.
@@ -180,8 +179,8 @@ Utterances are inputs from either the customers or the agents. In Utterance Trig
     * There may be other matching utterances the AI suggests:
 9. Select the **AI-suggested utterances**, as required.
 
-!!! note "Note"
-    AI suggests utterances that match with what you have entered based on conversation history. It also shows the appearance percentage of utterances.
+   !!! note "Note"
+       AI suggests utterances that match with what you have entered based on conversation history. It also shows the appearance percentage of utterances.
 
 10. Click **Add**. (The appearance of this button is based on the number of utterances entered by you plus the number of AI-suggested utterances you have selected. In this example, it’s 1+3. So, it’s displayed as Add 4.)
 
@@ -192,25 +191,23 @@ Utterances are inputs from either the customers or the agents. In Utterance Trig
 !!! note "Note"
     Before clicking the **Save** button, you can delete any utterance you would have added by mistake or think is irrelevant.
 
-    * The following screen appears:
+* The following screen appears:
       <img src="../agent-coaching-images/saving-and-removing-utterances-8.png" alt="saving-and-removing-utterances" title="saving-and-removing-utterances" style="border: 1px solid gray; zoom:80%;">
+
 13. Click **1 time** to select the number of times any of these utterances appear. The default selection is **1 time**. For example, a customer may use any of these utterances once by mistake and to be sure, you want the customer to use them twice or thrice. You need to select **2 times** or **3 times** for such situations.
 
-    <img src="../agent-coaching-images/trigger-based-on-times-of-utterance-appearance-9.png" alt="trigger-based-on-times-of-utterance-appearance" title="trigger-based-on-times-of-utterance-appearance" style="border: 1px solid gray; zoom:80%;"> 
-14. Click the default time frame, in conversation, to change it if you want to select other options.
-    <img src="../agent-coaching-images/trigger-based-on-utterance-timeframe-10.png" alt="trigger-based-on-utterance-timeframe" title="trigger-based-on-utterance-timeframe" style="border: 1px solid gray; zoom:80%;">
+    <img src="../agent-coaching-images/trigger-based-on-times-of-utterance-appearance-9.png" alt="trigger-based-on-times-of-utterance-appearance" title="trigger-based-on-times-of-utterance-appearance" style="border: 1px solid gray; zoom:80%;">
 
+14. Click the default time frame, in conversation, to change it if you want to select other options.
+    <img src="../agent-coaching-images/trigger-based-on-utterance-timeframe-10.png" alt="trigger-based-on-utterance-timeframe" title="trigger-based-on-utterance-timeframe" style="border: 1px solid gray; zoom:80%;"> 
     1. If you select **Anytime in conversation**, the following screen appears:
         <img src="../agent-coaching-images/utterance-trigger-any-time-in-conversation-11.png" alt="utterance-trigger-any-time-in-conversation" title="utterance-trigger-any-time-in-conversation" style="border: 1px solid gray; zoom:80%;"> 
     2. If you select **By time**, the following screen appears:
         <img src="../agent-coaching-images/utterance-trigger-by-time-12.png" alt="utterance-trigger-by-time" title="utterance-trigger-by-time" style="border: 1px solid gray; zoom:80%;">
-
         From the dropdown, select **first** or **within** and enter the time in seconds.
     3. If you select **By number of messages**, the following screen appears:
         <img src="../agent-coaching-images/utterance-trigger-by-number-of-messages-13.png" alt="utterance-trigger-by-number-of-messages" title="utterance-trigger-by-number-of-messages" style="border: 1px solid gray; zoom:80%;">
-        
         From the dropdown, select **first** or **within** and enter a number in the messages field.
-
 15. Press the **Enter** key to complete the process.
 
 ### **Speech Analysis Triggers**
@@ -421,9 +418,9 @@ AgentAssist allows you to add multiple rule triggers. It lets you set different 
 
 !!! note "Note"
     For creating multiple rule triggers, it is mandatory to choose **And** or **Or**. When you choose “And,” the rule triggers add up. When you choose “Or,” the rule triggers set to either of the rules. Here’s an example of this functionality:
-
+    
     <img src="../agent-coaching-images/and-or-condition-explanation-37.png" alt="and-or-condition-explanation" title="and-or-codition-explanation" style="border: 1px solid gray; zoom:80%;">
-
+    
     The **And** condition ensures that rule triggers **1** and **2** are combined, and the **Or** condition ensures that either the combination of the first two rule triggers (**1+2**) or the third rule trigger (**3**) becomes applicable.
 
 ## **Agent Real-time Coaching Actions (Then do…)**
@@ -494,14 +491,14 @@ The Nudge Agent actions are the small messages that pop up on the agent’s scre
       1. Positive Nudges
 
          <img src="../agent-coaching-images/positive-nudge-in-widget-52.png" alt="positive-nudge-in-widget" title="positive-nudge-in-widget" style="border: 1px solid gray; zoom:80%;">
-
       2. Neutral Nudges
          <img src="../agent-coaching-images/neutral-nudge-widget-53.png" alt="neutral-nudge-widget" title="neutral-nudge-widget" style="border: 1px solid gray; zoom:80%;">
-
       3. Warning Nudges
+
          <img src="../agent-coaching-images/warning-nudge-widget-54.png" alt="warning-nudge-widget" title="warning-nudge-widget" style="border: 1px solid gray; zoom:80%;">
 
       4. Critical Nudges
+
          <img src="../agent-coaching-images/critical-nudge-widget-55.png" alt="critical-nudge-widget" title="critical-nudge-widget" style="border: 1px solid gray; zoom:80%;">
 
 ### **Hint Agent**
