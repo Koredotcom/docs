@@ -519,4 +519,6 @@ Click here to [learn more.](../../../natural-language/nlu-configurations/amend-e
 
 Using this option you can create and manage Node Groups.
 
-<img src="../images/using-dialog-builder-img28-manage-ammend-behavior.png" alt="Manage Groups" title="Manage Groups" style="border:1px solid gray;zoom:60%;">
+Follow the below steps to create a node group:
+
+1. Open the VA in which you need to create 
