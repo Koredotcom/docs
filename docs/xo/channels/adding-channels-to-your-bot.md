@@ -45,6 +45,11 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 ### Enterprise Channels
 
+
+
+
+
+
 <table style="table-layout: fixed; width: 100%;">
   
   <tr>
@@ -276,3 +281,7 @@ Click the icon of the channel you want to add, and then configure the channel to
   
   </tr>
 </table>
+
+
+|[Email](./add-email-channel.md)   [![](./images/logo37-email.png)](add-email-channel.md)|[Twilio SMS](./add-twilio-sms-channel.md)      [![](./images/logo35-twilio.png)](./add-twilio-sms-channel.md)|[Web/MobileClient](./add-web-mobile-client.md)      [![](./images/logo39-webmobile.png)](../add-web-mobile-client)|[Webhook](../add-webhook-channel)      [![](./images/logo40-webhook.png)](./add-webhook-channel.md)|[Widget SDK](./add-widget-sdk-channel.md)      [![](./images/logo39-webmobile.png)](./add-widget-sdk-channel.md)|
+|:----|:----|:----|:----|:----|
