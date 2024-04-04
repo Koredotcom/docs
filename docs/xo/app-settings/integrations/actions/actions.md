@@ -60,7 +60,6 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
 
 [Learn more](./azure-open-ai/configuring-the-azure-openai-action.md){:target="_blank"}
 
-[Google](https://www.google.com){:target="_blank"}
 
 <a href="./azure-open-ai/configuring-the-azure-openai-action.md"  target="_blank">Learn more2</a>
 
@@ -75,6 +74,10 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
 | Document B    | [Link to Document A](./azure-open-ai/using-the-azure-openai-action-templates.md#azure-openai-actions){:target="_blank"} | Hello world |
 
 
+| Document Name | Image with Link                                      |
+| ------------- | ----------------------------------------------------- |
+| Azure    | [![Azure](./azure-open-ai/images/azure-temp-img1-create-dailog-task.png)](./azure-open-ai/configuring-the-azure-openai-action.md){:target="_blank"} |
+| [Azure](./azure-open-ai/configuring-the-azure-openai-action.md){:target="_blank"}    | [![Azure](./azure-open-ai/images/azure-temp-img3-create-dialog-new.png)](./azure-open-ai/configuring-the-azure-openai-action.md){:target="_blank"} |
 
 
 
@@ -101,7 +104,7 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
    </td>
    <td>Basic Auth
    </td>
-   <td> <a href="../actions/azure-open-ai/configuring-the-azure-openai-action.md" target="_blank">Learn more</a>
+   <td> <a href="../actions/azure-open-ai/configuring-the-azure-openai-action/" target="_blank">Learn more</a>
    
   </td>
    
@@ -115,7 +118,7 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
    </td>
    <td>Basic Auth
    </td>
-   <td><a href="./azure-open-ai/configuring-the-azure-openai-action.md" target="_blank">Learn more</a>
+   <td><a href="./azure-open-ai/configuring-the-azure-openai-action/" target="_blank">Learn more</a>
    </td>
   
   </tr>
@@ -289,6 +292,26 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
   </tr>
 </table>
 
+
+|     |     |     |     |     |
+| --- | --- | --- | --- | --- |
+| **Actions** | **Descriptions** | **Supported Templates** | **Authorization Type** | **More Information** |
+| Azure OpenAi | Integrates with Azure OpenAI instance to find answers to your general queries.. | 1   | Basic Auth | [Learn more](./azure-open-ai/configuring-the-azure-openai-action.md) |
+| BambooHR | Integrates with BambooHR software for small and medium businesses and those who work in them. | 7   | Basic Auth | [Learn more](./azure-open-ai/configuring-the-azure-openai-action.md) |
+| DHL | Integrates with DHL system to find information regarding DHL Locations and Track Shipments. | 2   | Basic Auth | [Learn more](../dhl/configuring-the-dhl-action) |
+| Freshdesk | Integrates with Freshdesk to create, view, update, search and delete tickets. | 6   | Basic Auth | [Learn more](../freshdesk/configuring-the-freshdesk-action) |
+| Freshservice ITSM | Integrates with Freshservice ITSM to create, view, update, search and delete tickets. | 6   | Basic Auth | [Learn more](../freshservice/configuring-the-freshservice-action) |
+| Google Maps | Integrates with Google Maps to find information regarding accurate Locations and places. | 2   | Basic Auth | [Learn more](../google-maps/configuring-the-google-maps-action) |
+| HubSpot | Integrates with HubSpot CRM to customize the lead details through a virtual assistant. | 10  | Dev OAuth and OAuth | [Learn more](../hubspot/configuring-the-hubspot-action) |
+| JIRA | Integrates with JIRA to create, view, update and delete issues. | 5   | Basic Auth | [Learn more](../jira/configuring-the-jira-action) |
+| Microsoft Graph | Integrates with Microsoft Graph to create, view, and update events and to-do lists, and send emails to users. | 5   | Basic Auth | [Learn more](../microsoft-graph/configuring-the-microsoft-graph-action) |
+| OpenAI | Integrates with OpenAI ChatGPT to generate answers from context and extract skills from the resume through a virtual assistant. | 2   | API Key OAuth | [Learn more](../open-ai/configuring-the-openai-action) |
+| Salesforce CRM | Integrates with Salesforce CRM to power your conversations to create Leads / Opportunities and other functions. | 7   | Dev OAuth and OAuth | [Learn more](../salesforce/configuring-the-salesforce-crm-action) |
+| Shopify | Integrates with Shopify Shop instance to find information regarding Customers, Products, and Orders. | 6   | Basic OAuth | [Learn more](../shopify/configuring-the-shopify-action/) |
+| ServiceNow | Integrates with ServiceNow to build the digital workflows on a single, unified platform. | 10  | Basic OAuth | [Learn more](../servicenow/configuring-the-servicenow-action/) |
+| Stripe | Integrates with Stripe to accept payments, send payouts, and manage the payment to complete payment-related tasks. | 5   | Basic OAuth | [Learn more](../stripe/configuring-the-stripe-action/) |
+| Twilio Verify | Integrates with Twilio Verify to send SMS, start verification and check verification. | 3   | Basic OAuth | [Learn more](../twilio/configuring-the-twilio-action/) |
+| Zendesk | Integrates with Zendesk instance to create ticket, view all tickets, search tickets with IDs and search ticket with keywords. | 5   | Basic OAuth | [Learn more](../zendesk/configuring-the-zendesk-action/) |
 
 
 ## Disabling or Deleting Actions/Integrations
