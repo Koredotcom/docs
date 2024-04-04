@@ -60,6 +60,13 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
 
 <a href="./azure-open-ai/configuring-the-azure-openai-action.md"  target="_blank">Learn more2</a>
 
+| [Learn more](./azure-open-ai/configuring-the-azure-openai-action.md) |
+
+
+| Document Name | Cross-reference Link             | fd |
+| ------------- | --------------------------------| --- |
+| Document A    | [Learn more](./azure-open-ai/configuring-the-azure-openai-action.md) |-- |
+| Document B    | [Link to Document A](./azure-open-ai/using-the-azure-openai-action-templates.md#azure-openai-actions) | Hello world |
 
 <table border="1">
   <tr>
@@ -83,7 +90,7 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
    </td>
    <td>Basic Auth
    </td>
-   <td> <a href="../actions/azure-open-ai/configuring-the-azure-openai-action.md" target="_blank">Learn more</a>
+   <td> <a href="./azure-open-ai/configuring-the-azure-openai-action.md" target="_blank">Learn more</a>
    
   </td>
    
@@ -99,6 +106,7 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
    </td>
    <td><a href="../bamboo-hr/configuring-the-bamboohr-action" target="_blank">Learn more</a>
    </td>
+  
   </tr>
   <tr>
    <td>DHL
