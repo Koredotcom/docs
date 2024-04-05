@@ -40,22 +40,20 @@ A Digital Form includes a definition and various components to capture user inpu
 To create forms, follow the steps below:
 
 1. Under **Automation AI > Virtual Assistant > Digital Skills**, select **Digital Forms**.
-
 2. On the **Digital Forms** screen, click **New Form**.
-
 3. On the **New Form** page, enter the following:
    
-   * **Name** of the Form.
-   * **Display Name** for the Form.
-   * **Description** of the Form.
+      * **Name** of the Form.
+      * **Display Name** for the Form.
+      * **Description** of the Form.
 
-   <img src="../../images/create-new-form.png" alt="Create New Form" title="Create New Form" style="border: 1px solid gray; zoom:75%;">
+      <img src="../../images/create-new-form.png" alt="Create New Form" title="Create New Form" style="border: 1px solid gray; zoom:75%;">
 
 4. **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. Click the card to select the style. If it has a logo, you can upload an image file (jpg or png) for the logo.
 
-   !!! Note
+      !!! Note
 
-      During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
+            During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
 
 5. Turn on the **Description** toggle if you want to show a description of the form in the header.
 
@@ -106,14 +104,14 @@ If you are working with a longer and more complex form, you can split it into se
 From the Forms Listing page, you can:
 
 * Create a **New Form**, as seen above.
-* [Edit](#edit) the Form.
+* **[Edit](#edit)** the Form.
 * Use the **[Branding](#branding)** option to customize a form.
 * **[Test](#test)** forms.
 * **Delete** forms.
 
 <img src="../../images/form-actions.png" alt="form actions" title="form actions" style="border: 1px solid gray; zoom:75%;">
 
-### Edit
+#### Edit
 
 You can use the **Edit** option from the form listing to edit the form. The following actions are performed on the Form in edit mode:
 
@@ -134,7 +132,7 @@ You can use the **Edit** option from the form listing to edit the form. The foll
    * Use the **Component Docker** to dock/undock the settings pane to the screen.
    * Use the **Component Selector** to navigate through the components on the Form.
 
-### Branding
+#### Branding
 
 Use the **Branding** option to change the look and feel of the form to reflect your organization’s standards. 
 
@@ -144,7 +142,7 @@ An instant preview gives you an idea of how the form would look with the new col
 
 <img src="../../images/branding-flight-search.gif" alt="branding" title="branding" style="border: 1px solid gray; zoom:75%;">
 
-### Test
+#### Test
 
 **Test** the form to see a preview of what it would look like to the end user. You can do this at any point while you work on the form.
 
@@ -199,7 +197,7 @@ To invoke a form from a dialog task, follow the below steps:
 
       !!! Note
       
-         We urge you not to make changes to the connection settings as this affects the VA's performance.
+            We urge you not to make changes to the connection settings as this affects the VA's performance.
 
    * **Sub-dialog Node** is configured as a normal [Dialog Node](../../dialogs/node-types/working-with-the-dialog-node/"){:target="_blank"} as follows:
 
@@ -228,7 +226,7 @@ To invoke a form using Widgets and Panels, follow the below steps:
 5. Select the **Dialog to Invoke on Submit** from the drop-down list.
 6. Click **Save**.
 
-   <img src="../../images/invoke-form-in-widget.png" alt="invoke form in widget" title="invoke form in widget" style="border: 1px solid gray; zoom:75%;">
+      <img src="../../images/invoke-form-in-widget.png" alt="invoke form in widget" title="invoke form in widget" style="border: 1px solid gray; zoom:75%;">
 
 7. **Add the Widget** to an existing panel or create a new panel. 
 You can add a form directly to a panel, it creates a widget by default.
@@ -237,7 +235,7 @@ You can add a form directly to a panel, it creates a widget by default.
 
    !!! Note
 
-      While a Digital Form is used to define multiple Widgets and also add to multiple panels, it will be associated with a single Dialog Task across all Widgets and Panels.
+         While a Digital Form is used to define multiple Widgets and also add to multiple panels, it will be associated with a single Dialog Task across all Widgets and Panels.
 
 ## The User Experience
 
@@ -355,7 +353,7 @@ As with any assistant, the Digital Forms exist in the following states:
 
    !!! Note
    
-      If any edits are done to the Digital Form while it is In Development, the changes would be reflected in the Published version as soon as you publish the form.
+         If any edits are done to the Digital Form while it is In Development, the changes would be reflected in the Published version as soon as you publish the form.
 
 * **_Suspended_** when a published form is suspended by the admin.
 
@@ -502,7 +500,7 @@ The following are the properties that can be set for each of the components.
 
 !!! Note
 
-   Not all the properties are valid for all the components, refer to the [Property Matrix](#component-properties) for the mapping.
+      Not all the properties are valid for all the components, refer to the [Property Matrix](#component-properties) for the mapping.
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">
