@@ -6,7 +6,8 @@ In a standard Dialog Task, this scenario is designed by placing a series of Enti
 
 **Digital Forms** provide a range of input fields that allow your assistant to capture the required details from end-users. After the users complete the form, the input is submitted to the VA to proceed with the task at hand.
 
-In this article, we discuss the features and implementation of Digital Forms in the XO Platform. For a use case example and a step-by-step implementation of a Digital Form click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/configure-digital-forms/" target="_blank">here</a>.
+* Provision to define rules for input validations and visibility suiting your use case.
+In this article, we discuss the features and implementation of Digital Forms in the XO Platform. For a use case example and a step-by-step implementation of a Digital Form click [here](../configure-digital-forms/){:target="_blank"}.
 
 ## Features
 * Improved user experience with a single interface for input collection.
@@ -17,7 +18,7 @@ In this article, we discuss the features and implementation of Digital Forms in 
 
 ## General Setup
 
-You can access **Digital Forms** from the **Build** top menu under **Digital Skills > Digital Forms**.
+You can access **Digital Forms** from **Automation AI > Virtual Assistant > Digital Skills**.
 
 <img src="../../images/access-digital-forms.png" alt="Access Digital Forms" title="Access Digital Forms" style="border: 1px solid gray; zoom:75%;">
 
@@ -36,9 +37,9 @@ A Digital Form includes a definition and various components to capture user inpu
 
 To create forms, follow the steps below:
 
-1. Under the **Build** top menu, select **Digital Skills**.
+1. Under **Automation AI > Virtual Assistant**, select **Digital Skills**.
 
-2. Click **Digital Forms > New Form**.
+2. On the **Digital Forms** screen, click **New Form**.
 
 3. On the **New Form** page, enter the following:
     * **Name** of the Form.
@@ -48,21 +49,30 @@ To create forms, follow the steps below:
       <img src="../../images/create-new-form.png" alt="Create New Form" title="Create New Form" style="border: 1px solid gray; zoom:75%;">
 
 4. **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. Click the card to select the style. If it has a logo, you can upload an image file (jpg or png) for the logo.
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.</p>
-</div>
 
-<ol start="5"><li>Turn on the <b>Description</b> toggle if you want to show a description of the form in the header.
-<img src="../../images/description-toggle-turn-on.png" alt="Description Toggle" title="Description Toggle" style="border: 1px solid gray; zoom:75%;"></li>
-<li><b>Form Security</b> – Enable <b>Secure Form Data</b> to redact form data from the Bot Context, Debug Logs, Service Calls, Agent Transfer, and the Bot Kit.
-<img src="../../images/secure-form-data.png" alt="secure form data" title="secure form data" style="border: 1px solid gray; zoom:75%;">
-   <p>While enabling, you can also choose whether to display the <b>Secure Form icon</b> to your end users.</p>
+   !!! Note
+
+      During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
+
+5. Turn on the **Description** toggle if you want to show a description of the form in the header.
+
+   <img src="../../images/description-toggle-turn-on.png" alt="Description Toggle" title="Description Toggle" style="border: 1px solid gray; zoom:75%;">
+
+6. **Form Security** – Enable **Secure Form Data** to redact form data from the Bot Context, Debug Logs, Service Calls, Agent Transfer, and the Bot Kit.
+
+   <img src="../../images/secure-form-data.png" alt="secure form data" title="secure form data" style="border: 1px solid gray; zoom:75%;">
+   
+   While enabling, you can also choose whether to display the **Secure Form icon** to your end users.
+
    <img src="../../images/enable-redact-form-data.png" alt="enable redact form data" title="enable redact form data" style="border: 1px solid gray; zoom:75%;">
-   <p>Once enabled, the Platform will replace the user input with a unique random system-generated alphanumeric value in all the modules. Also, the <b>Secure Form</b> icon and a tip will be displayed, notifying the user that the form is secure.</p>
+   
+   Once enabled, the Platform will replace the user input with a unique random system-generated alphanumeric value in all the modules. Also, the **Secure Form** icon and a tip will be displayed, notifying the user that the form is secure.
+
    <img src="../../images/secure-form-icon.png" alt="secure form icon" title="secure form icon" style="border: 1px solid gray; zoom:75%;"></li>
-<li>Click <b>Save & Proceed</b>.
-<img src="../../images/save-digital-form.png" alt="save digital form" title="save digital form" style="border: 1px solid gray; zoom:75%;"></li></ol>
+
+7. Click **Save & Proceed**.
+
+   <img src="../../images/save-digital-form.png" alt="save digital form" title="save digital form" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ### Add Components
 
@@ -119,9 +129,13 @@ You can use the **Edit** option from the form listing to edit the form. The foll
 
 ### Branding
 
-Use the **Branding** option to change the look and feel of the form to reflect your organization’s standards. An instant preview gives you an idea of how the form would look with the new colors and you have the option to **Save** or **Restore Default** scheme.
+Use the **Branding** option to change the look and feel of the form to reflect your organization’s standards. 
 
-<img src="../../images/branding-flight-search.png" alt="branding" title="branding" style="border: 1px solid gray; zoom:75%;">
+<img src="../../images/digital-form-branding.png" alt="branding" title="branding" style="border: 1px solid gray; zoom:75%;">
+
+An instant preview gives you an idea of how the form would look with the new colors and you have the option to **Save** or **Restore Default** scheme.
+
+<img src="../../images/branding-flight-search.gif" alt="branding" title="branding" style="border: 1px solid gray; zoom:75%;">
 
 ### Test
 
@@ -195,7 +209,7 @@ Digital Forms are rendered in Digital Views by configuring Widgets & Panels. <a 
 
 To invoke a form using Widgets and Panels, follow the below steps:
 
-1. Create a widget to invoke the Digital Form from **Build -> Digital Skills -> Digital Views** option.
+1. **Create a widget** to invoke the Digital Form within **Digital Views** from **Automation AI > Virtual Assistant > Digital Skills**.
 2. Enter the name.
 3. Select _Digital Forms_ as the **Source.**
 4. **Add a Form** by selecting it from the drop-down list.
