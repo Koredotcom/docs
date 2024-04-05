@@ -33,7 +33,7 @@ You can add utterances in two ways:
 
 ##### Steps to add none intent utterances
 
-1. Sign in to XO Platform.
+1. Sign in to **XO Platform**.
 2. Click **AgentAssist** > **Experience** > **Agent Coaching**.
 3. Click the **edit** button against a **Pre-built, None Intent** rule under **Actions**.
     <img src="../agent-coaching-images/edit-none-intent-rule-1.png" alt="edit-none-intent-rule" title="edit-none-intent-rule" style="border: 1px solid gray; zoom:80%;">
@@ -41,16 +41,15 @@ You can add utterances in two ways:
 5. Select **AI Assist** or **Input Utterances Manually**.
     Follow these steps if you select **AI Assist**:
     1. Select **AI Assist**.
-        !!! note "Note"
-            To avail the **AI Assist** feature, enable **OpenAI** in the **App Settings** > **Generative AI Tools**, and enable **Generating Opposite…** in the **Co-Pilots** section.
-    
+       !!! note "Note"
+           To avail the **AI Assist** feature, enable **OpenAI** in the **App Settings** > **Generative AI Tools**, and enable **Generating Opposite…** in the **Co-Pilots** section.
     2. Select rules, as required, from the **Add Rules** list and click **Add**.
-        <img src="../agent-coaching-images\select-none-intent-rules-2.png" alt="select-none-intent-rules" title="select-none-intent-rules" style="border: 1px solid gray; zoom:80%;">
-
+      <img src="../agent-coaching-images\select-none-intent-rules-2.png" alt="select-none-intent-rules" title="select-none-intent-rules" style="border: 1px solid gray; zoom:80%;">
+       
     3. All added rules are displayed on the left, and the AI starts searching for more utterances that are similar in meaning to the utterances of your selected rules.
-
+    
     4. Select utterances, as required, and then click **Add Selected**.
-
+    
     5. Click **Save** to complete the process.
 
 Follow these steps if you select **Input Utterances Manually**:
@@ -60,7 +59,8 @@ Follow these steps if you select **Input Utterances Manually**:
     <img src="../agent-coaching-images/add-utterances-manually-3.png" alt="add-utterances-manually" title="add-utterances-manually" style="border: 1px solid gray; zoom:80%;"> 
 Following this step, you can add multiple utterances.
 3. Click **Save**.
-    1. The new utterance gets added to the list of utterances.
+    
+    The new utterance gets added to the list of utterances.
 
 ### **Price Objection**
 
@@ -79,7 +79,7 @@ The following screenshot displays the **Price Objection** rule:
 
 <img src="../agent-coaching-images/price-objection-identification-4.png" alt="price-objection-identification" title="price-objection-identification" style="border: 1px solid gray; zoom:80%;">
 
-For information on rule functionalities, refer to the section [Create, Publish, Edit, Delete, and Disable Rules](https://docs.kore.ai/agentassist/agent/agent-coaching/#Create_Publish_Edit_Delete_and_Disable_Rules). 
+For information on rule functionalities, refer to the section [Create, Publish, Edit, Delete, and Disable Rules](#create-publish-edit-delete-and-disable-rules).
 
 ## **Create, Publish, Edit, Delete, and Disable Rules**
 
@@ -92,7 +92,7 @@ From time to time, depending on newer or different situations, you can create ne
 #### **Steps to create a new rule:**
 
 1. Sign in to **XO Platform**.
-2. Click **AgentAssist **>** Experience **>** Agent Coaching**.
+2. Click **AgentAssist** > **Experience** > **Agent Coaching**.
 3. Click **+New Rule**.
 4. Enter a name for the new rule in the **Name** field.
 5. Enter a short description about the rule in the **Description** field.
@@ -111,16 +111,15 @@ Rule description should be concise and include keywords and conditions. It train
     3. **Both**: Choose both **Voice** and **Live Chat** if you want this rule to take input utterance through both these mediums.
 
 8. Click **Apply** to complete the rule creation process:
-
-<img src="../agent-coaching-images/completing-rule-creation-process-6.png" alt="completing-rule-creation-process" title="completing-rule-creation-process" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../agent-coaching-images/completing-rule-creation-process-6.png" alt="completing-rule-creation-process" title="completing-rule-creation-process" style="border: 1px solid gray; zoom:80%;"> 
 
 A message shows up to confirm a new rule creation.
 
-9. Click **+Add a trigger** under **When…** to add a trigger condition for the rule. For more information, refer to the [Agent Coaching Rule Triggers](https://docs.kore.ai/agentassist/agent/agent-coaching/#Agent_Coaching_Rule_Triggers_When%E2%80%A6) section.
+9. Click **+Add a trigger** under **When…** to add a trigger condition for the rule. For more information, refer to the [Agent Coaching Rule Triggers When...](#agent-coaching-rule-triggers-when) section.
 
-10. Click **+Add an action** under **Then do…** to add an action for the rule. For more info, refer to the [Agent Coaching Actions](https://docs.kore.ai/agentassist/agent/agent-coaching/#Agent_Real-time_Coaching_Actions_Then_do%E2%80%A6) section.
+10. Click **+Add an action** under **Then do…** to add an action for the rule. For more info, refer to the [Agent Real time Coaching Actions Then do...](#agent-real-time-coaching-actions-then-do) section.
 
-11. Click **Add agents, groups** under **Assign this to…** to add agents or groups you want to assign this rule to. For more info, refer to the [Assign this to](https://docs.kore.ai/agentassist/agent/agent-coaching/#Assign_This_To) section.
+11. Click **Add agents, groups** under **Assign this to…** to add agents or groups you want to assign this rule to. For more info, refer to the [Assign This to](#assign-this-to) section.
 
 12. Click **Save**.
 
@@ -130,13 +129,14 @@ You can add to or change an existing rule based on the requirements.
 
 #### **Steps to edit a rule**
 
-1. Sign in to XO Platform.
-2. Click **AgentAssist **>** Experience **>** Agent Coaching**.
+1. Sign in to **XO Platform**.
+2. Click **AgentAssist** > **Experience** > **Agent Coaching**.
 3. Locate the rule you want to edit–either from the displayed list or by partially entering the rule name in the **Search** box.
     1. As you enter the rule name in the **Search** box, matching rule names appear on the screen.
 4. Click the **edit** button beside a rule name that you want to edit.
 
-**Note**: Co-editing a rule is not allowed–if you edit a rule, it’s locked, and no one else can edit or delete it simultaneously. AgentAssist will notify you if you attempt to co-edit a rule. If a rule is locked for editing, but the user has not performed any editing for 15 minutes or left the Rules Configuration screen, AgentAssist unlocks the rule for editing by another user.
+!!! note "Note"
+    Co-editing a rule is not allowed–if you edit a rule, it’s locked, and no one else can edit or delete it simultaneously. AgentAssist will notify you if you attempt to co-edit a rule. If a rule is locked for editing, but the user has not performed any editing for 15 minutes or left the Rules Configuration screen, AgentAssist unlocks the rule for editing by another user.
 
 ### **Deleting a Rule**
 
@@ -144,7 +144,7 @@ You can delete a rule due to irrelevance or other reasons. AgentAssist lets you 
 
 #### **Steps to delete a rule**
 
-1. Go to the **AgentAssist **>** Experience **>** Agent Coaching** main page.
+1. Go to the **AgentAssist** > **Experience** > **Agent Coaching** main page.
 2. Click the **delete** button beside a rule name that you want to delete.
 3. Click **Yes** in the confirmation popup window.
 
@@ -154,12 +154,13 @@ If you don’t want to use a rule temporarily, you can disable it.
 
 #### **Steps to disable a rule**
 
-1. Go to the **AgentAssist **>** Experience **>** Agent Coaching **main page.
+1. Go to the **AgentAssist** > **Experience** > **Agent Coaching** main page.
 2. In the **Enabled** column, use the toggle to disable or enable a rule.
     1. The **Configuration has been Saved** message appears on the screen.
 
 ## **Agent Coaching Rule Triggers (When…)**
 Trigger setting is essential to rule creation. You can’t have a rule without a trigger. Triggers define the conditions for a rule to come into effect. This section explains how to set up triggers for new rules. The available triggers are:
+
 * Utterance Triggers
 * Speech Analysis Triggers
 
@@ -167,7 +168,7 @@ Trigger setting is essential to rule creation. You can’t have a rule without a
 Utterances are inputs from either the customers or the agents. In Utterance Triggers, you set up conditions like input from the customer or agent, the number of times the input came, and the time frame within which the input came to set off the trigger.
 
 #### **Steps to set up Utterance Triggers:**
-1. Go to the rule trigger creation page. For help, refer to [Steps to create a new rule](https://docs.kore.ai/agentassist/agent/agent-coaching/#Steps_to_create_a_new_rule). 
+1. Go to the rule trigger creation page. For help, refer to [Steps to create a new rule](#steps-to-create-a-new-rule). 
 2. Under **When**, click the **+ Add a trigger** button.
 3. Select **Utterance**.
 4. Click **{select person}**.
@@ -175,46 +176,58 @@ Utterances are inputs from either the customers or the agents. In Utterance Trig
 6. Click **set utterances**.
 7. Enter an utterance that the user (customer or agent) may use in the **Utterances** box.
 8. Select the utterance you have entered.
-    1.  There may be other matching utterances the AI suggests:
-9. Select the **AI-suggested utterances**, as required. \
-**Note**: AI suggests utterances that match with what you have entered based on conversation history. It also shows the appearance percentage of utterances.  
+    * There may be other matching utterances the AI suggests:
+9. Select the **AI-suggested utterances**, as required.
+
+   !!! note "Note"
+       AI suggests utterances that match with what you have entered based on conversation history. It also shows the appearance percentage of utterances.
+
 10. Click **Add**. (The appearance of this button is based on the number of utterances entered by you plus the number of AI-suggested utterances you have selected. In this example, it’s 1+3. So, it’s displayed as Add 4.)
-<img src="../agent-coaching-images/manually-added-and-ai-suggested-utterances-7.png" alt="manually-added-and-ai-suggested-utterances" title="manually-added-and-ai-suggested-utterances" style="border: 1px solid gray; zoom:80%;"> 
+
+    <img src="../agent-coaching-images/manually-added-and-ai-suggested-utterances-7.png" alt="manually-added-and-ai-suggested-utterances" title="manually-added-and-ai-suggested-utterances" style="border: 1px solid gray; zoom:80%;">
+
 11. Click **Okay**.
 12. Click **Save**.
 !!! note "Note"
     Before clicking the **Save** button, you can delete any utterance you would have added by mistake or think is irrelevant.
-    1. The following screen appears:
-    <img src="../agent-coaching-images/saving-and-removing-utterances-8.png" alt="saving-and-removing-utterances" title="saving-and-removing-utterances" style="border: 1px solid gray; zoom:80%;">
+
+* The following screen appears:
+      <img src="../agent-coaching-images/saving-and-removing-utterances-8.png" alt="saving-and-removing-utterances" title="saving-and-removing-utterances" style="border: 1px solid gray; zoom:80%;">
+
 13. Click **1 time** to select the number of times any of these utterances appear. The default selection is **1 time**. For example, a customer may use any of these utterances once by mistake and to be sure, you want the customer to use them twice or thrice. You need to select **2 times** or **3 times** for such situations.
-<img src="../agent-coaching-images/trigger-based-on-times-of-utterance-appearance-9.png" alt="trigger-based-on-times-of-utterance-appearance" title="trigger-based-on-times-of-utterance-appearance" style="border: 1px solid gray; zoom:80%;"> 
+
+    <img src="../agent-coaching-images/trigger-based-on-times-of-utterance-appearance-9.png" alt="trigger-based-on-times-of-utterance-appearance" title="trigger-based-on-times-of-utterance-appearance" style="border: 1px solid gray; zoom:80%;">
+
 14. Click the default time frame, in conversation, to change it if you want to select other options.
-<img src="../agent-coaching-images/trigger-based-on-utterance-timeframe-10.png" alt="trigger-based-on-utterance-timeframe" title="trigger-based-on-utterance-timeframe" style="border: 1px solid gray; zoom:80%;"> 
+    <img src="../agent-coaching-images/trigger-based-on-utterance-time-frame-10.png" alt="trigger-based-on-utterance-timeframe" title="trigger-based-on-utterance-timeframe" style="border: 1px solid gray; zoom:80%;"> 
     1. If you select **Anytime in conversation**, the following screen appears:
-    <img src="../agent-coaching-images/utterance-trigger-any-time-in-conversation-11.png" alt="utterance-trigger-any-time-in-conversation" title="utterance-trigger-any-time-in-conversation" style="border: 1px solid gray; zoom:80%;"> 
+        <img src="../agent-coaching-images/utterance-trigger-any-time-in-conversation-11.png" alt="utterance-trigger-any-time-in-conversation" title="utterance-trigger-any-time-in-conversation" style="border: 1px solid gray; zoom:80%;"> 
     2. If you select **By time**, the following screen appears:
-    <img src="../agent-coaching-images/utterance-trigger-by-time-12.png" alt="utterance-trigger-by-time" title="utterance-trigger-by-time" style="border: 1px solid gray; zoom:80%;">
-    From the dropdown, select **first** or **within** and enter the time in seconds.
+        <img src="../agent-coaching-images/utterance-trigger-by-time-12.png" alt="utterance-trigger-by-time" title="utterance-trigger-by-time" style="border: 1px solid gray; zoom:80%;">
+
+        From the dropdown, select **first** or **within** and enter the time in seconds.
+
     3. If you select **By number of messages**, the following screen appears:
-    <img src="../agent-coaching-images/utterance-trigger-by-number-of-messages-13.png" alt="utterance-trigger-by-number-of-messages" title="utterance-trigger-by-number-of-messages" style="border: 1px solid gray; zoom:80%;">
-    From the dropdown, select **first** or **within** and enter a number in the messages field.
+        <img src="../agent-coaching-images/utterance-trigger-by-number-of-messages-13.png" alt="utterance-trigger-by-number-of-messages" title="utterance-trigger-by-number-of-messages" style="border: 1px solid gray; zoom:80%;">
+
+        From the dropdown, select **first** or **within** and enter a number in the messages field.
 15. Press the **Enter** key to complete the process.
 
 ### **Speech Analysis Triggers**
 This feature analyzes the speech pattern or event of both the customer and the agent and provides real-time feedback and coaching to improve customer-agent conversation quality. This section explains the steps to set up the Speech Analysis Triggers feature.
 
 #### **Steps to set up Speech Analysis Triggers**
-1. Select **Speech Analysis** after clicking **When **>** +Add a trigger**.
-<img src="../agent-coaching-images/speech-analysis-trigger-selection-14.png" alt="speech-analysis-trigger-selection" title="speech-analysis-trigger-selection" style="border: 1px solid gray; zoom:80%;">
+1. Select **Speech Analysis** after clicking **When**> **+Add a trigger**.
+    <img src="../agent-coaching-images/speech-analysis-trigger-selection-14.png" alt="speech-analysis-trigger-selection" title="speech-analysis-trigger-selection" style="border: 1px solid gray; zoom:80%;">
 2. Click **{speech type}** and select a type for analysis.
-<img src="../agent-coaching-images/speech-type-trigger-15.png" alt="speech-type-trigger" title="speech-type-trigger" style="border: 1px solid gray; zoom:80%;"> 
-    1. If you select **Cross Talk**, the following screen appears:
-    <img src="../agent-coaching-images/cross-talk-speech-type-trigger-16.png" alt="cross-talk-speech-type-trigger" title="cross-talk-speech-type-trigger" style="border: 1px solid gray; zoom:80%;">
+    <img src="../agent-coaching-images/speech-type-trigger-15.png" alt="speech-type-trigger" title="speech-type-trigger" style="border: 1px solid gray; zoom:80%;"> 
+    * If you select **Cross Talk**, the following screen appears:
+      <img src="../agent-coaching-images/cross-talk-speech-type-trigger-16.png" alt="cross-talk-speech-type-trigger" title="cross-talk-speech-type-trigger" style="border: 1px solid gray; zoom:80%;">
         1. Click **30** to enter the duration in seconds–30 seconds is the default value.
         2. Enter the duration in seconds and then press the **Enter** key.
-        <img src="../agent-coaching-images/cross-talk-duration-trigger-17.png" alt="cross-talk-duration-trigger" title="cross-talk-duration-trigger" style="border: 1px solid gray; zoom:80%;">
+            <img src="../agent-coaching-images/cross-talk-duration-trigger-17.png" alt="cross-talk-duration-trigger" title="cross-talk-duration-trigger" style="border: 1px solid gray; zoom:80%;">
         3. Click **1 time** to update the number of times crosstalk happened in a conversation.
-        <img src="../agent-coaching-images/cross-talk-frequency-trigger-18.png" alt="cross-talk-frequency-trigger" title="cross-talk-frequency-trigger" style="border: 1px solid gray; zoom:80%;">
+            <img src="../agent-coaching-images/cross-talk-frequency-trigger-18.png" alt="cross-talk-frequency-trigger" title="cross-talk-frequency-trigger" style="border: 1px solid gray; zoom:80%;">
         4. Click to select the number of times, as required.
         5. Click **in conversation** to update when crosstalk happened; **in conversation** is the default value.
         <img src="../agent-coaching-images/cross-talk-timing-trigger-19.png" alt="free text" title="free text" style="border: 1px solid gray; zoom:80%;">
@@ -226,45 +239,48 @@ This feature analyzes the speech pattern or event of both the customer and the a
                 2. Press the **Enter** key to save the new values.
                 !!! note "Note"
                 If the configured crosstalk time duration is less than the selected conversation time period or if the trigger setup is incomplete, a validation error is displayed, as highlighted in the screenshot.
-* If you select **Dead Air**, the following screen appears:
-<img src="../agent-coaching-images/dead-air-trigger-22.png" alt="dead-air-trigger" title="dead-air-trigger" style="border: 1px solid gray; zoom:80%;">
-    1. Click **30** to enter the duration in seconds, and then press the **Enter** key to save it.
-    <img src="../agent-coaching-images/dead-air-duration-trigger-23.png" alt="dead-air-duration-trigger" title="dead-air-duration-trigger" style="border: 1px solid gray; zoom:80%;">
-    2. Click **{select person}** to select the user.
-    <img src="../agent-coaching-images/dead-air-source-trigger-24.png" alt="dead-air-source-trigger" title="dead-air-source-trigger" style="border: 1px solid gray; zoom:80%;">
-    3. Click **1 time** to select the frequency.
-    4. Click **In conversation** to select a time frame.
-    <img src="../agent-coaching-images/dead-air-timing-trigger-25.png" alt="dead-air-timing-trigger" title="dead-air-timing-trigger" style="border: 1px solid gray; zoom:80%;">
-        1. From the dropdown list, select **first** or **within** and enter the time in seconds.
-        2. Press the **Enter** key to save the new values.
-!!! note "Note"
-    A validation error is displayed, as highlighted in the screenshot, either if the configured Dead Air duration is lesser than the selected conversation time period or if the trigger setup is incomplete.
-* If you select **Speech Speed**, the following screen appears:
-<img src="../agent-coaching-images/speech-speed-trigger-26.png" alt="speech-speed-trigger" title="speech-speed-trigger" style="border: 1px solid gray; zoom:80%;">
-    5. Click **{select person}** to select either Agent or Customer.
-    <img src="../agent-coaching-images/speech-speed-source-trigger-27.png" alt="speech-speed-source-trigger" title="speech-speed-source-trigger" style="border: 1px solid gray; zoom:80%;">
-    6. Click **180** to enter words per minute–**180 words per minute** is the default value.
-    7. Enter the number of words per minute and then press the **Enter** key to save it.
-    8. Click **1 time** to select the frequency.
-    9. Click **In conversation** to select a time frame.
-* If you select **Talk Ratio**, the following screen appears:
-<img src="../agent-coaching-images/talk-ratio-trigger-28.png" alt="talk-ratio-trigger" title="talk-ratio-trigger" style="border: 1px solid gray; zoom:80%;">
-    10. Click **{Comparator}** to select a value comparison.
-    <img src="../agent-coaching-images/talk-ratio-comparator-trigger-29.png" alt="talk-ratio-comparator-trigger" title="talk-ratio-comparator-trigger" style="border: 1px solid gray; zoom:80%;">
-        1. If you select **Less than** or **Greater than**, a screen similar to the following appears:
-        <img src="../agent-coaching-images/talk-ratio-less-than-trigger-30.png" alt="talk-ratio-less-than-trigger" title="talk-ratio-less-than-trigger" style="border: 1px solid gray; zoom:80%;">
-        2. If you select **In between**, the following screen appears:
-        <img src="../agent-coaching-images/talk-ratio-comparator-in-between-trigger-31.png" alt="talk-ratio-comparator-in-between-trigger" title="talk-ratio-comparator-in-between-trigger" style="border: 1px solid gray; zoom:80%;">
-    11. Click **{Value}** to enter a percentage value.
-    <img src="../agent-coaching-images/talk-ratio-comparator-in-between-percentage-32.png" alt="talk-ratio-comparator-in-between-percentage" title="talk-ratio-comparator-in-between-percentage" style="border: 1px solid gray; zoom:80%;">
+    * If you select **Dead Air**, the following screen appears:
+      <img src="../agent-coaching-images/dead-air-trigger-22.png" alt="dead-air-trigger" title="dead-air-trigger" style="border: 1px solid gray; zoom:80%;">
+        1. Click **30** to enter the duration in seconds, and then press the **Enter** key to save it.
+           <img src="../agent-coaching-images/dead-air-duration-trigger-23.png" alt="dead-air-duration-trigger" title="dead-air-duration-trigger" style="border: 1px solid gray; zoom:80%;">
+        2. Click **{select person}** to select the user.
+           <img src="../agent-coaching-images/dead-air-source-trigger-24.png" alt="dead-air-source-trigger" title="dead-air-source-trigger" style="border: 1px solid gray; zoom:80%;">
+        3. Click **1 time** to select the frequency.
+        4. Click **In conversation** to select a time frame.
+           <img src="../agent-coaching-images/dead-air-timing-trigger-25.png" alt="dead-air-timing-trigger" title="dead-air-timing-trigger" style="border: 1px solid gray; zoom:80%;">
+            1. From the dropdown list, select **first** or **within** and enter the time in seconds.
+            2. Press the **Enter** key to save the new values.
+            !!! note "Note"
+                A validation error is displayed, as highlighted in the screenshot, either if the configured Dead Air duration is lesser than the selected conversation time period or if the trigger setup is incomplete.
+    * If you select **Speech Speed**, the following screen appears:
+      <img src="../agent-coaching-images/speech-speed-trigger-26.png" alt="speech-speed-trigger" title="speech-speed-trigger" style="border: 1px solid gray; zoom:80%;">
+        1. Click **{select person}** to select either Agent or Customer.
+           <img src="../agent-coaching-images/speech-speed-source-trigger-27.png" alt="speech-speed-source-trigger" title="speech-speed-source-trigger" style="border: 1px solid gray; zoom:80%;">
+        2. Click **180** to enter words per minute–**180 words per minute** is the default value.
+        3. Enter the number of words per minute and then press the **Enter** key to save it.
+        4. Click **1 time** to select the frequency.
+        5. Click **In conversation** to select a time frame.
+    * If you select **Talk Ratio**, the following screen appears:
+      <img src="../agent-coaching-images/talk-ratio-trigger-28.png" alt="talk-ratio-trigger" title="talk-ratio-trigger" style="border: 1px solid gray; zoom:80%;">
+        1. Click **{Comparator}** to select a value comparison.
+           <img src="../agent-coaching-images/talk-ratio-comparator-trigger-29.png" alt="talk-ratio-comparator-trigger" title="talk-ratio-comparator-trigger" style="border: 1px solid gray; zoom:80%;">
+            1. If you select **Less than** or **Greater than**, a screen similar to the following appears:
+               <img src="../agent-coaching-images/talk-ratio-less-than-trigger-30.png" alt="talk-ratio-less-than-trigger" title="talk-ratio-less-than-trigger" style="border: 1px solid gray; zoom:80%;">
+            2. If you select **In between**, the following screen appears:
+                <img src="../agent-coaching-images/talk-ratio-comparator-in-between-trigger-31.png" alt="talk-ratio-comparator-in-between-trigger" title="talk-ratio-comparator-in-between-trigger" style="border: 1px solid gray; zoom:80%;">
+        2. Click **{Value}** to enter a percentage value.
+           <img src="../agent-coaching-images/talk-ratio-comparator-in-between-percentage-32.png" alt="talk-ratio-comparator-in-between-percentage" title="talk-ratio-comparator-in-between-percentage" style="border: 1px solid gray; zoom:80%;">
 
-    If you have selected **In between**, you must enter the values twice and click the **tick mark**, as highlighted in the following screenshot:
-    <img src="../agent-coaching-images/talk-ratio-comparator-in-between-percentage-33.png" alt="talk-ratio-comparator-in-between-percentage" title="talk-ratio-comparator-in-between-percentage" style="border: 1px solid gray; zoom:80%;">
-    12. Click **in conversation** to select a time duration. By default, **Anytime in conversation** is selected.
-    <img src="../agent-coaching-images/talk-ratio-comparator-in-between-percentage-duration-34.png" alt="talk-ratio-comparator-in-between-percentage-duration" title="talk-ratio-comparator-in-between-percentage-duration" style="border: 1px solid gray; zoom:80%;">
-        1. Click **By time** to indicate a selected time frame for talk ratio measurement.
-        2. Enter time in minutes and press the **Enter** key.
-        <img src="../agent-coaching-images/talk-ratio-in-between-by-time-35.png" alt="talk-ratio-in-between-by-time" title="talk-ratio-in-between-by-time" style="border: 1px solid gray; zoom:80%;">
+            If you have selected **In between**, you must enter the values twice and click the **tick mark**, as highlighted in the following screenshot:
+            <img src="../agent-coaching-images/talk-ratio-comparator-in-between-percentage-33.png" alt="talk-ratio-comparator-in-between-percentage" title="talk-ratio-comparator-in-between-percentage" style="border: 1px solid gray; zoom:80%;">
+
+        3. Click **in conversation** to select a time duration. By default, **Anytime in conversation** is selected.
+           <img src="../agent-coaching-images/talk-ratio-comparator-in-between-percentage-duration-34.png" alt="talk-ratio-comparator-in-between-percentage-duration" title="talk-ratio-comparator-in-between-percentage-duration" style="border: 1px solid gray; zoom:80%;">
+
+            1. Click **By time** to indicate a selected time frame for talk ratio measurement.
+
+            2. Enter time in minutes and press the **Enter** key.
+               <img src="../agent-coaching-images/talk-ratio-in-between-by-time-35.png" alt="talk-ratio-in-between-by-time" title="talk-ratio-in-between-by-time" style="border: 1px solid gray; zoom:80%;">
 
 **Coaching Rule:**
 <table>
@@ -401,9 +417,11 @@ AgentAssist allows you to add multiple rule triggers. It lets you set different 
 1. Click **+Add a trigger** in the rule trigger creation page to create a new trigger.
 2. Click **+Add a trigger** again to create a new rule trigger.
 3. Select **And** or **Or**.
-<img src="../agent-coaching-images/and-or-condition-36.png" alt="and-or-condition" title="and-or-condition" style="border: 1px solid gray; zoom:80%;">
+   <img src="../agent-coaching-images/and-or-condition-36.png" alt="and-or-condition" title="and-or-condition" style="border: 1px solid gray; zoom:80%;">
+
 !!! note "Note"
     For creating multiple rule triggers, it is mandatory to choose **And** or **Or**. When you choose “And,” the rule triggers add up. When you choose “Or,” the rule triggers set to either of the rules. Here’s an example of this functionality:
+    
 <img src="../agent-coaching-images/and-or-condition-explanation-37.png" alt="and-or-condition-explanation" title="and-or-codition-explanation" style="border: 1px solid gray; zoom:80%;">
 
 The **And** condition ensures that rule triggers **1** and **2** are combined, and the **Or** condition ensures that either the combination of the first two rule triggers (**1+2**) or the third rule trigger (**3**) becomes applicable.
@@ -428,7 +446,7 @@ You have two types of adherences to choose from:
 * **Utterance**: Choosing this option sends an acknowledgment that the agent will take further action within a specified time frame during a session. An example would be when you ask the agent to offer a discount to the customer, and the agent acknowledges that they will perform this action within the next few messages, a few minutes, or anytime during the session. The following screenshot is displayed when this option is selected:
 <img src="../agent-coaching-images/adherence-utterance-39.png" alt="adherence-utterance" title="adherence-utterance" style="border: 1px solid gray; zoom:80%;"> 
 
-For practical examples of this feature, refer to steps 7-8 of [Steps to set up the Nudge Agent actions](https://docs.kore.ai/agentassist/agent/agent-coaching/#Steps_to_set_up_the_Nudge_Agent_actions).
+For practical examples of this feature, refer to steps 7-8 of [Steps to set up the Nudge Agent actions](#steps-to-set-up-the-nudge-agent-actions).
 
 ### **Nudge Agent**
 The Nudge Agent actions are the small messages that pop up on the agent’s screen while communicating with the customers. They are disappearing messages, which stay on the agent’s screen for 5 seconds. The agent can close these messages anytime after their appearance. Through these messages, you either compliment the agents for a good job or direct them to take other appropriate actions to serve the customers in the best way possible. Here are the following four nudges that you can choose from:
@@ -439,47 +457,55 @@ The Nudge Agent actions are the small messages that pop up on the agent’s scre
 
 #### **Steps to set up the Nudge Agent actions:**
 1. Go to the rule action setup page.
-2. Click **+ Add an action** under the **Then do…**section.
-<img src="../agent-coaching-images/then-do-add-an-action-40.png" alt="then-do-add-an-action" title="then-do-add-an-action" style="border: 1px solid gray; zoom:80%;"> 
+2. Click **+ Add an action** under the **Then do…** section.
+   <img src="../agent-coaching-images/then-do-add-an-action-40.png" alt="then-do-add-an-action" title="then-do-add-an-action" style="border: 1px solid gray; zoom:80%;"> 
 3. Click the **Nudge Agent** option in the **Choose an Action** window.
-<img src="../agent-coaching-images/then-do-nudge-agent-41.png" alt="then-do-nudge-agent" title="then-do-nudge-agent" style="border: 1px solid gray; zoom:80%;"> 
+   <img src="../agent-coaching-images/then-do-nudge-agent-41.png" alt="then-do-nudge-agent" title="then-do-nudge-agent" style="border: 1px solid gray; zoom:80%;"> 
 
-4. Click **{tChoose}** to select one of the sentiment messages, as displayed in the following screen:
-<img src="../agent-coaching-images/then-do-nudge-type-42.png" alt="then-do-nudge-type" title="then-do-nudge-type" style="border: 1px solid gray; zoom:80%;"> 
+4. Click **{Choose}** to select one of the sentiment messages, as displayed in the following screen:
+   <img src="../agent-coaching-images/then-do-nudge-type-42.png" alt="then-do-nudge-type" title="then-do-nudge-type" style="border: 1px solid gray; zoom:80%;"> 
 
 5. Click **{Choose}** to enter a message, as displayed in the following screen:
-<img src="../agent-coaching-images/nudge-message-43.png" alt="nudge-message" title="nudge-message" style="border: 1px solid gray; zoom:80%;">
+   <img src="../agent-coaching-images/nudge-message-43.png" alt="nudge-message" title="nudge-message" style="border: 1px solid gray; zoom:80%;">
 6. Enter a message in the **Nudge Message** box, and then click the **tick** mark to save it.
 7. Click **+Add Adherence** to set an adherence for the agent.
-<img src="../agent-coaching-images/nudge-add-adherence-44.png" alt="nudge-add-adherence" title="nudge-add-adherence" style="border: 1px solid gray; zoom:80%;"> 
+   <img src="../agent-coaching-images/nudge-add-adherence-44.png" alt="nudge-add-adherence" title="nudge-add-adherence" style="border: 1px solid gray; zoom:80%;"> 
 8. Select **Utterance** in the **Choose a Trigger** window.
-<img src="../agent-coaching-images/choose-a-trigger-utterance-45.png" alt="choose-a-trigger-utterance" title="choose-a-trigger-utterance" style="border: 1px solid gray; zoom:80%;">
+   <img src="../agent-coaching-images/choose-a-trigger-utterance-45.png" alt="choose-a-trigger-utterance" title="choose-a-trigger-utterance" style="border: 1px solid gray; zoom:80%;">
 9. Click **{set utterances}** to enter the agent’s utterance.
-<img src="../agent-coaching-images/then-do-nudge-agent-utterance-46.png" alt="then-do-nudge-agent-utterance" title="then-do-nudge-agent-utterance" style="border: 1px solid gray; zoom:80%;"> 
+   <img src="../agent-coaching-images/then-do-nudge-agent-utterance-46.png" alt="then-do-nudge-agent-utterance" title="then-do-nudge-agent-utterance" style="border: 1px solid gray; zoom:80%;"> 
 
 10. Type and select the utterance. You can select similar utterances from the **Utterances** list.
-<img src="../agent-coaching-images/then-do-nudge-agent-utterance-selection-47.png" alt="then-do-nudge-agent-utterance-selection" title="then-do-nudge-agent-utterance-selection" style="border: 1px solid gray; zoom:80%;">
+    <img src="../agent-coaching-images/then-do-nudge-agent-utterance-selection-47.png" alt="then-do-nudge-agent-utterance-selection" title="then-do-nudge-agent-utterance-selection" style="border: 1px solid gray; zoom:80%;">
 11. Click **Add** > **Save**.
-<img src="../agent-coaching-images/then-do-nudge-add-agent-utterance-48.png" alt="then-do-nudge-add-agent-utterance" title="then-do-nudge-add-agent-utterance" style="border: 1px solid gray; zoom:80%;">
+    <img src="../agent-coaching-images/then-do-nudge-add-agent-utterance-48.png" alt="then-do-nudge-add-agent-utterance" title="then-do-nudge-add-agent-utterance" style="border: 1px solid gray; zoom:80%;">
 12. Click **Anytime** on the next screen to select one of the options.
-<img src="../agent-coaching-images/adherence-agent-utterance-anytime-49.png" alt="adherence-agent-utterance-anytime" title="adherence-agent-utterance-anytime" style="border: 1px solid gray; zoom:80%;">
+    <img src="../agent-coaching-images/adherence-agent-utterance-anytime-49.png" alt="adherence-agent-utterance-anytime" title="adherence-agent-utterance-anytime" style="border: 1px solid gray; zoom:80%;">
 
-If you select **Within next (n) messages**, the following screen appears:
-<img src="../agent-coaching-images/adherence-agent-utterance-within-next-messages-50.png" alt="adherence-agent-utterance-within-next-messages" title="adherence-agent-utterance-within-next-messages" style="border: 1px solid gray; zoom:80%;"> 
+    * If you select **Within next (n) messages**, the following screen appears:
+      <img src="../agent-coaching-images/adherence-agent-utterance-within-next-messages-50.png" alt="adherence-agent-utterance-within-next-messages" title="adherence-agent-utterance-within-next-messages" style="border: 1px solid gray; zoom:80%;"> 
 
-You can change the number of messages, as required, by clicking the highlighted area. If you select **Within next (n) minutes**, the following screen appears:
-<img src="../agent-coaching-images/adherence-within-next-minutes-51.png" alt="adherence-within-next-minutes" title="adherence-within-next-minutes" style="border: 1px solid gray; zoom:80%;"> 
+      You can change the number of messages, as required, by clicking the highlighted area. If you select **Within next (n) minutes**, the following screen appears:
+      <img src="../agent-coaching-images/adherence-within-next-minutes-51.png" alt="adherence-within-next-minutes" title="adherence-within-next-minutes" style="border: 1px solid gray; zoom:80%;"> 
 
-You can change the time in minutes, as required, by clicking the highlighted area.
-The agent gets screens similar to the following on their system for:
-    1. Positive Nudges
-    <img src="../agent-coaching-images/positive-nudge-in-widget-52.png" alt="positive-nudge-in-widget" title="positive-nudge-in-widget" style="border: 1px solid gray; zoom:80%;">
-    2. Neutral Nudges
-    <img src="../agent-coaching-images/neutral-nudge-widget-53.png" alt="neutral-nudge-widget" title="neutral-nudge-widget" style="border: 1px solid gray; zoom:80%;">
-    3. Warning Nudges
-    <img src="../agent-coaching-images/warning-nudge-widget-54.png" alt="warning-nudge-widget" title="warning-nudge-widget" style="border: 1px solid gray; zoom:80%;">
-    4. Critical Nudges
-    <img src="../agent-coaching-images/critical-nudge-widget-55.png" alt="critical-nudge-widget" title="critical-nudge-widget" style="border: 1px solid gray; zoom:80%;">
+      You can change the time in minutes, as required, by clicking the highlighted area.
+      The agent gets screens similar to the following on their system for:
+
+      1. Positive Nudges
+
+         <img src="../agent-coaching-images/positive-nudge-in-widget-52.png" alt="positive-nudge-in-widget" title="positive-nudge-in-widget" style="border: 1px solid gray; zoom:80%;">
+
+      2. Neutral Nudges
+
+         <img src="../agent-coaching-images/neutral-nudge-widget-53.png" alt="neutral-nudge-widget" title="neutral-nudge-widget" style="border: 1px solid gray; zoom:80%;">
+
+      3. Warning Nudges
+
+         <img src="../agent-coaching-images/warning-nudge-widget-54.png" alt="warning-nudge-widget" title="warning-nudge-widget" style="border: 1px solid gray; zoom:80%;">
+
+      4. Critical Nudges
+
+         <img src="../agent-coaching-images/critical-nudge-widget-55.png" alt="critical-nudge-widget" title="critical-nudge-widget" style="border: 1px solid gray; zoom:80%;">
 
 ### **Hint Agent**
 The Hint Agent actions are small pop-up messages that advise agents to take further action. They appear on the agent’s screen while communicating with the customers and may or may not auto-close based on how you set them. Through these messages, you also compliment the agents for a good job. Here are the four hint types that you can choose from:
@@ -490,7 +516,7 @@ The Hint Agent actions are small pop-up messages that advise agents to take furt
 
 #### **Steps to set up the Hint Agent actions:**
 1. Go to the rule action setup page.
-2. Click **+ Add an action** under the **Then do…**section.
+2. Click **+ Add an action** under the **Then do…** section.
 3. Click the **Hint Agent** option in the **Choose an Action** window.
 <img src="../agent-coaching-images/then-do-hint-agent-56.png" alt="then-do-hint-agent" title="then-do-hint-agent" style="border: 1px solid gray; zoom:80%;"> 
 4. Click **{Choose}** and select one of the message types, as highlighted in the following screenshot:
@@ -508,25 +534,33 @@ The Hint Agent actions are small pop-up messages that advise agents to take furt
      Click the default value of **5 seconds** to update it, as required. After entering the value, press the **Enter** key to update the new entry.
     2. If you select **Does not auto close**, the following screen displays:
     <img src="../agent-coaching-images/hint-agent-message-does-not-auto-close-62.png" alt="hint-agent-message-does-not-auto-close" title="hint-agent-message-does-not-auto-close" style="border: 1px solid gray; zoom:80%;">
+
 10. Click **+Add Adherence** to set up agent adherence of the rule action.
 <img src="../agent-coaching-images/hint-agent-adherence-63.png" alt="hint-agent-adherence" title="hint-agent-adherence" style="border: 1px solid gray; zoom:80%;">
+
 11. Select an adherence trigger:
-<img src="../agent-coaching-images/hint-agent-add-adherence-64.png" alt="hint-agent-add-adherence" title="hint-agent-add-adherence" style="border: 1px solid gray; zoom:80%;">
+    <img src="../agent-coaching-images/hint-agent-add-adherence-64.png" alt="hint-agent-add-adherence" title="hint-agent-add-adherence" style="border: 1px solid gray; zoom:80%;">
+    
     1. If you select **Acknowledge Pressed**, the following screen is displayed:
-    <img src="../agent-coaching-images/add-adherence-acknowledge-pressed-65.png" alt="add-adherence-acknowledge-pressed" title="add-adherence-acknowledge-pressed" style="border: 1px solid gray; zoom:80%;">
-    2. If you select **Utterance**, follow steps 9-12 of [Steps to set up the Nudge Agent actions](https://docs.kore.ai/agentassist/agent/agent-coaching/#Steps_to_set_up_the_Nudge_Agent_actions) to complete the process.
+       <img src="../agent-coaching-images/add-adherence-acknowledge-pressed-65.png" alt="add-adherence-acknowledge-pressed" title="add-adherence-acknowledge-pressed" style="border: 1px solid gray; zoom:80%;">
+    2. If you select **Utterance**, follow steps 9-12 of [Steps to set up the Nudge Agent actions](#steps-to-set-up-the-nudge-agent-actions) to complete the process.
 
 The agent gets screens similar to the following on their system for:
+
 * Positive Hints
+
 <img src="../agent-coaching-images/positive-hints-widget-66.png" alt="positive-hints-widget" title="positive-hints-widget" style="border: 1px solid gray; zoom:80%;">
 
 * Neutral Hints
+
 <img src="../agent-coaching-images/neutral-hint-widget-67.png" alt="neutral-hint-widget" title="neutral-hint-widget" style="border: 1px solid gray; zoom:80%;"> 
 
 * Warning Hints
+
 <img src="../agent-coaching-images/warning-hint-widget-68.png" alt="warning-hint-widget" title="warning-hint-widget" style="border: 1px solid gray; zoom:80%;">
 
 * Critical Hints
+
 <img src="../agent-coaching-images/critical-hint-widget-69.png" alt="critical-hint-widget" title="critical-hint-widget" style="border: 1px solid gray; zoom:80%;"> 
 
 ### **Email Manager**
@@ -534,7 +568,7 @@ This feature lets you set a push notification alert to the manager’s desktop. 
 
 #### **Steps to set up the Email Manager action:**
 1. Go to the rule action setup page.
-2. Click **+ Add an action** under the **Then do…**section.
+2. Click **+ Add an action** under the **Then do…** section.
 3. Click the **Email Manager** option in the **Choose an Action** window.
 <img src="../agent-coaching-images/then-do-email-manager-70.png" alt="then-do-email-manager" title="then-do-email-manager" style="border: 1px solid gray; zoom:80%;">
 
@@ -554,8 +588,8 @@ This feature lets you set a push notification alert to the manager’s desktop. 
 This feature lets you assign the rule to the intended agents or groups. Currently, by default, this feature is assigned for all agents.
 
 ### **Steps to assign rules to agents or groups**
-1. Go to the rule action setup page. For help, refer to steps 1 and 2 of [Steps to create a new rule](https://docs.kore.ai/agentassist/agent/agent-coaching/#Steps_to_create_a_new_rule).
-2. Click **+Add agents, groups** under the **Assign this to…**section. \
+1. Go to the rule action setup page. For help, refer to steps 1 and 2 of [Steps to create a new rule](#steps-to-create-a-new-rule).
+2. Click **+Add agents, groups** under the **Assign this to…** section.
 The following screen shows the default selection of **All Agents**:
 <img src="../agent-coaching-images/assign-this-to-all-agents-74.png" alt="assign-this-to-all-agents" title="assign-this-to-all-agents" style="border: 1px solid gray; zoom:80%;">
 3. Click **Save** from the top-right corner of the screen.

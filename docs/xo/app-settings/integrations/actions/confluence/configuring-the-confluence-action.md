@@ -7,7 +7,7 @@ This article explains how to authorize and enable the **Confluence** action and 
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports OAuth v2.0 authentication to allow a Confluence integration to exchange data. For more information, see [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"}. 
+The Kore.ai XO Platform supports OAuth v2.0 authentication to allow a Confluence integration to exchange data. For more information, see [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}. 
 
 The Kore.ai XO Platform supports the following authorization types for the Confluence integration:
 

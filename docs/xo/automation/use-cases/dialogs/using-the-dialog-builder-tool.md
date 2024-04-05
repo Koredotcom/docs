@@ -312,6 +312,12 @@ These are placeholders for creating groups of nodes. Each sequence has one or mo
 
 <img src="../images/using-dialog-builder-sequence.png" alt="Sequence" title="Sequence" style="border:1px solid gray;zoom:60%;">
 
+A sequence gets **automatically created** when you add a node to the canvas. Once a sequence gets created, you can either add more nodes to that sequence, or, you can add nodes outside any existing sequence, in which case a new sequence will get created.
+
+To add a node to an existing sequence, drag the node on the sequence. You will see placeholders labeled **Drop here** appearing between nodes. You can drop the node on any of these placeholders; the node will get added on that spot in the sequence.
+
+<img src="../images/using-dialog-builder-creating-sequence.gif" alt="Creating sequence" title="Creating sequence" style="border:1px solid gray;zoom:60%;">
+
 The task being designed in a dialog can be broken down into several sub-tasks. For example, if you are developing a dialog to send money from one account to another, you may break the tasks into subtasks like gathering the account owner's details, gathering the recipient account's details, transferring the money, success scenario, failure scenario, etc. You can have a sequence for each sub-task.
 
 Each sequence contains one or more nodes placed in a logical sequence and a **Transition** section at the end, through which you can either continue the flow of dialog to the next sequence or split the flow into two or more paths based on [conditions](#add-if-else-node-connections).
@@ -515,8 +521,95 @@ Using **Amend Entity,** you can allow the users to amend entity values and contr
 
 Click here to [learn more.](../../../natural-language/nlu-configurations/amend-entities/#task-level){:target="_blank"}
 
+
 ### Manage Groups
 
-Using this option you can create and manage Node Groups.
+Using this option, you can create and manage Node Groups.
 
-<img src="../images/using-dialog-builder-img28-manage-ammend-behavior.png" alt="Manage Groups" title="Manage Groups" style="border:1px solid gray;zoom:60%;">
+Click here to [learn more.](#node-groups)
+
+
+## Node Groups
+
+You can use group nodes to improve the user experience with follow-ups and digressions and amend entity values.
+
+To create node groups, follow the below steps:
+
+1. On the Dialog Builder, navigate to **More Options > Manage Groups**
+
+    <img src="../images/using-dialog-builder-manage-groups.png" alt="Manage Groups" title="Manage Groups" style="border:1px solid gray; zoom:70%;">
+
+2. Click **+Add**.
+
+    <img src="../images/using-dialog-builder-group-add.png" alt="Add group" title="Add group" style="border:1px solid gray; zoom:70%;">
+
+3. Provide a group name.
+
+    <img src="../images/using-dialog-builder-group-name.png" alt="Group name" title="Group name" style="border:1px solid gray; zoom:70%;">
+
+4. You can either create an empty group by clicking **Save**,
+
+    <img src="../images/using-dialog-builder-empty-group.png" alt="Empty group" title="Empty group" style="border:1px solid gray; zoom:70%;">
+
+    Or you can also add one or more nodes to the group right at the time of group creation. Perform a search for node names and click **Add**.
+
+    <img src="../images/using-dialog-builder-add-nodes-to-group.png" alt="Add nodes to group" title="Add nodes to group" style="border:1px solid gray; zoom:70%;">
+
+    You can manage groups by editing the group, and adding and removing nodes.
+
+
+### Edit the Node Group
+
+On Right-clicking on a group name, you get a menu containing **Edit** and **Delete**.
+
+<img src="../images/using-dialog-builder-edit-group.png" alt="Edit group" title="Edit group" style="border:1px solid gray; zoom:70%;">
+
+On clicking **Edit**, you can edit the name of the node group, as well as add or remove nodes. And finally, save the changes.
+
+<img src="../images/using-dialog-builder-edit-name-nodes.png" alt="Edit name and nodes" title="Edit name and nodes" style="border:1px solid gray; zoom:70%;">
+
+On clicking **Delete**, you get a popup warning; the group will be deleted if you click **Confirm**.
+
+<img src="../images/using-dialog-builder-group-delete-confirmation.png" alt="Delete group" title="Delete group" style="border:1px solid gray; zoom:70%;">
+
+!!! Warning
+
+    You cannot undo the deletion.
+
+
+### Add node to a group
+
+Follow the below steps to add a node to an existing group:
+
+1. In the **Manage Group** panel, click the group name to which you want to add the node and then the **Nodes** icon. The list of nodes within the group appears with a search field.
+
+    <img src="../images/using-dialog-builder-add-node-search.png" alt="Search nodes for adding to group" title="Search nodes for adding to group" style="border:1px solid gray; zoom:70%;">
+
+2. Out of the nodes that appear as search results, you can select one or more nodes by checking the corresponding check boxes and then click **Add** to add them to the group.
+
+    <img src="../images/using-dialog-builder-group-select-add-node.png" alt="Select and add nodes" title="Select and add nodes" style="border:1px solid gray; zoom:70%;">
+
+
+### Highlight Nodes
+
+You can locate a node that is added to a group on the canvas. Click on the arrowhead icon (<img src="../images/using-dialog-builder-group-arrowhead.png">) corresponding to a node, and the sequence containing that node will be highlighted.
+
+<img src="../images/using-dialog-builder-group-highlight-node.gif" alt="Highlight nodes" title="Highlight nodes" style="border:1px solid gray; zoom:70%;">
+
+
+### Delete node
+
+You can hover over a node to get the **Delete** option. Once deleted, the node will no longer be a part of the group; however, you can add it again.
+
+
+### Subintent
+
+If you are using the group to set up a Subintent, you can do so by navigating to the required node group and clicking the **Intents** button. For additional information, please see [Grouping Nodes as Subintents](../node-connections/grouping-nodes/){:target="_blank"}.
+
+<img src="../images/using-dialog-builder-group-sub-intents.png" alt="Sub intent" title="Sub intent" style="border:1px solid gray; zoom:70%;">
+
+### View All Comments
+
+Through this option, you can view all the [comments](#notes-comments-and-bookmarks) added to the current dialog.
+
+<img src="../images/using-dialog-builder-view-all-comments.gif" alt="View all comments" title="View all comments" style="border:1px solid gray; zoom:70%;">
