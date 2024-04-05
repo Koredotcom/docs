@@ -6,10 +6,10 @@ In a standard Dialog Task, this scenario is designed by placing a series of Enti
 
 **Digital Forms** provide a range of input fields that allow your assistant to capture the required details from end-users. After the users complete the form, the input is submitted to the VA to proceed with the task at hand.
 
-* Provision to define rules for input validations and visibility suiting your use case.
 In this article, we discuss the features and implementation of Digital Forms in the XO Platform. For a use case example and a step-by-step implementation of a Digital Form click [here](../configure-digital-forms/){:target="_blank"}.
 
 ## Features
+
 * Improved user experience with a single interface for input collection.
 * Easy form creation using simple drag and drop actions.
 * Vast component library to cater to all your form requirements.
@@ -26,27 +26,30 @@ Here is the overall usage process for Digital Forms within the XO Platform
 
 * **Form Creation**: Define a Digital Form by adding components and configuring their properties.
 * **Form Invocation**: Forms are invoked from inside a task or process:
-    * A form is included as a component in the task. The dialog task offers a Form Experience and Conversation Experience based on the channel of interaction. Learn more by reading about the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-form-node/" target="_blank">Form Node</a>.
-    * A Digital Form is added to a Digital View with a dialog task triggered when a form is submitted from there.
+   * A form is included as a component in the task. The dialog task offers a Form Experience and Conversation Experience based on the channel of interaction. Learn more by reading about the [Form Node](../../dialogs/node-types/working-with-the-form-node/{:target="_blank"}.
+   * A Digital Form is added to a Digital View with a dialog task triggered when a form is submitted from there.
+
 * **Form Submission**: When it is submitted, the component values are validated and any errors are highlighted. Based on the mode of invocation, post successful validation:
-    * The VA execution proceeds as per dialog flow in case of dialog task invocation.
-    * The selected task is triggered.
+   * The VA execution proceeds as per dialog flow in case of dialog task invocation.
+   * The selected task is triggered.
 
 ## Create a Form
+
 A Digital Form includes a definition and various components to capture user input.
 
 To create forms, follow the steps below:
 
-1. Under **Automation AI > Virtual Assistant**, select **Digital Skills**.
+1. Under **Automation AI > Virtual Assistant > Digital Skills**, select **Digital Forms**.
 
 2. On the **Digital Forms** screen, click **New Form**.
 
 3. On the **New Form** page, enter the following:
-    * **Name** of the Form.
-    * **Display Name** for the Form.
-    * **Description** of the Form.
+   
+   * **Name** of the Form.
+   * **Display Name** for the Form.
+   * **Description** of the Form.
 
-      <img src="../../images/create-new-form.png" alt="Create New Form" title="Create New Form" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/create-new-form.png" alt="Create New Form" title="Create New Form" style="border: 1px solid gray; zoom:75%;">
 
 4. **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. Click the card to select the style. If it has a logo, you can upload an image file (jpg or png) for the logo.
 
@@ -103,14 +106,15 @@ If you are working with a longer and more complex form, you can split it into se
 From the Forms Listing page, you can:
 
 * Create a **New Form**, as seen above.
-* <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-forms/#edit" target="_blank">Edit</a> the Form.
-* Use the **Branding** option to customize a form.
-* **Test** forms.
+* [Edit](#edit) the Form.
+* Use the **[Branding](#branding)** option to customize a form.
+* **[Test](#test)** forms.
 * **Delete** forms.
 
 <img src="../../images/form-actions.png" alt="form actions" title="form actions" style="border: 1px solid gray; zoom:75%;">
 
 ### Edit
+
 You can use the **Edit** option from the form listing to edit the form. The following actions are performed on the Form in edit mode:
 
 <img src="../../images/form-editor.png" alt="form editor" title="form editor" style="border: 1px solid gray; zoom:75%;">
@@ -119,13 +123,16 @@ You can use the **Edit** option from the form listing to edit the form. The foll
 * Use the **View Toggler** to switch between **Desktop View** and **Mobile View**.
 * Use the Move Component _Handle Bar_ against each of the components to change its location by a simple drag and drop action;
 * Use *Form Actions* to:
-    * **Test** the form to see the preview of the Digital Form in the XO Platform.
-    * **Delete** the Form. Please keep in mind that deleted forms cannot be restored.
-    * Change the Form **Settings** such as name, display name, and description.
+
+   * **Test** the form to see the preview of the Digital Form in the XO Platform.
+   * **Delete** the Form. Please keep in mind that deleted forms cannot be restored.
+   * Change the Form **Settings** such as name, display name, and description.
+
 * Use the **Component Actions** to access the **Settings**, **Duplicate,** and **Delete** options for each of the form’s components.
 * You can change the components’ properties from the **Component Settings** popup:
-    * Use the **Component Docker** to dock/undock the settings pane to the screen.
-    * Use the **Component Selector** to navigate through the components on the Form.
+   
+   * Use the **Component Docker** to dock/undock the settings pane to the screen.
+   * Use the **Component Selector** to navigate through the components on the Form.
 
 ### Branding
 
@@ -165,47 +172,52 @@ To invoke a form from a dialog task, follow the below steps:
 
    <img src="../../images/configuration-form-node.png" alt="configure form node" title="configure form node" style="border: 1px solid gray; zoom:75%;">
 
- * **Only Form UI** – This creates a Form Node and associates it with the Digital Form selected. This is the default option.
+   * **Only Form UI** – This creates a Form Node and associates it with the Digital Form selected. This is the default option.
 
-   <img src="../../images/only-ui.png" alt="only form ui" title="only form ui" style="border: 1px solid gray; zoom:75%;">
+      <img src="../../images/only-ui.png" alt="only form ui" title="only form ui" style="border: 1px solid gray; zoom:75%;">
 
-* **Both Form UI and Conversation Experience** – This further prompts you to choose a channel. When a user is using one of the selected channels they are presented with a Form UI, the rest of the channel users get a conversation experience. 
-This option creates:
-* A **Bot Action Node** to determine the transitions to the Form Node and the Sub-dialog Node based on the channels selected.
-* A **Form Node** for the Digital Form, same as was generated for the Only Form UI above.
-* A **Sub-dialog Node** to capture the required entities (as defined in the Digital Form using components) for the conversational experience. 
-* A **Group** encompassing the following nodes. This grouping can be renamed and/or deleted. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-connections/grouping-nodes/#add-a-node-group" target="_blank">Learn more</a>.
+   * **Both Form UI and Conversation Experience (DRAFT)** – This further prompts you to choose a channel. When a user is using one of the selected channels they are presented with a Form UI, the rest of the channel users get a conversation experience. 
 
-   <img src="../../images/form-experience-nodes.png" alt="form experience node" title="form experience node" style="border: 1px solid gray; zoom:75%;">
+      This option creates:
+   
+      * A **Bot Action Node** to determine the transitions to the Form Node and the Sub-dialog Node based on the channels selected.
+      * A **Form Node** for the Digital Form, same as was generated for the Only Form UI above.
+      * A **Sub-dialog Node** to capture the required entities (as defined in the Digital Form using components) for the conversational experience. 
+      * A **Group** encompassing the following nodes. This grouping can be renamed and/or deleted. [Learn more](../../dialogs/node-connections/grouping-nodes/#add-a-node-group){:target="_blank"}.
+
+      <img src="../../images/form-experience-nodes.png" alt="form experience node" title="form experience node" style="border: 1px solid gray; zoom:75%;">
 
 5. You can set the **Properties** for each of the nodes added.
-* The <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-form-node/" target="_blank">Form Node</a>. 
-Of special interest are the following Component Properties:
-* **Submit Message** – Message displayed to the end-user on successful submission of the form
-* **Web/Mobile SDK Form Behavior** – Using this option you can either have the form displayed *inline* the chat window or *open on a full page*. Also, you can either go ahead with the default submit prompt or configure the setting to display a custom and more specific message to be shown in chat. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-form-node/#component-properties" target="_blank">Learn more</a> about the configuration.
-* **Bot Action Node,** in case of the conversation experience flow, can also be configured in the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-logic-node/" target="_blank">Logic Node</a> as follows:
 
-   * **Manage Context Variables** is used to create and set values for the context variables. Remember to use the full path of the variable in the _key_ field ie. ```context.BotUserSession.<variable_name>```
+   * The [Form Node](../../dialogs/node-types/working-with-the-form-node/){:target="_blank"}. 
+   Of special interest are the following Component Properties:
+   * **Submit Message** – Message displayed to the end-user on successful submission of the form
+   * **Web/Mobile SDK Form Behavior** – Using this option you can either have the form displayed *inline* the chat window or *open on a full page*. Also, you can either go ahead with the default submit prompt or configure the setting to display a custom and more specific message to be shown in chat. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-form-node/#component-properties" target="_blank">Learn more</a> about the configuration.
+   * **Bot Action Node,** in case of the conversation experience flow, can also be configured in the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-logic-node/" target="_blank">Logic Node</a> as follows:
 
-   <div class="admonition note">
-   <p class="admonition-title">Note</p>
-   <p>We urge you not to make changes to the connection settings as this affects the V's performance.</p></div>
+      * **Manage Context Variables** is used to create and set values for the context variables. Remember to use the full path of the variable in the _key_ field ie. ```context.BotUserSession.<variable_name>```
 
-* **Sub-dialog Node** is configured as a normal <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-dialog-node/" target="_blank">Dialog Node</a> as follows:
+      !!! Note
+      
+         We urge you not to make changes to the connection settings as this affects the VA's performance.
 
- * Use the **Entity Post-assignment** to capture the user input.
-* In case you modify the sub-dialog or the source form, you are presented with an option to **Regenerate Dialog**. This ensures that the changes are reflected in the task without having to rebuild the entire task. Be aware that the changes are reflected in all places this sub-dialog is used.
+   * **Sub-dialog Node** is configured as a normal [Dialog Node](../../dialogs/node-types/working-with-the-dialog-node/"){:target="_blank"} as follows:
 
-   <img src="../../images/subdialog-node-configuration.png" alt="sub dialog node" title="sub dialog node" style="border: 1px solid gray; zoom:75%;">
+      * Use the **Entity Post-assignment** to capture the user input.
+      * In case you modify the sub-dialog or the source form, you are presented with an option to **Regenerate Dialog**. This ensures that the changes are reflected in the task without having to rebuild the entire task. Be aware that the changes are reflected in all places this sub-dialog is used.
+
+         <img src="../../images/subdialog-node-configuration.png" alt="sub dialog node" title="sub dialog node" style="border: 1px solid gray; zoom:75%;">
 
 6. The user input can be accessed as follows:
-    * Form component values are accessed from the Context Object using ```{{context.forms.form_name.component_name}}```
-    * In the case of the sub-dialog, the variables used in the post-assignment settings as ```{{context.<variable_name>}}```
+
+   * Form component values are accessed from the Context Object using ```{{context.forms.form_name.component_name}}```
+   * In the case of the sub-dialog, the variables used in the post-assignment settings as ```{{context.<variable_name>}}```
+
 7. You can continue with the Dialog Task as per your business needs. For example, you can use the Form Component values as input to a **Service Node** to update the data or use the **Script Node** to process it further. If you are using the conversation experience too, remember to connect the auto-generated sub-dialog to the process flow.
 
 ### Invocation from Panels
 
-Digital Forms are rendered in Digital Views by configuring Widgets & Panels. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-views/" target="_blank">Learn more</a>.
+Digital Forms are rendered in Digital Views by configuring Widgets & Panels. [Learn more](../digital-views/){:target="_blank"}.
 
 To invoke a form using Widgets and Panels, follow the below steps:
 
@@ -221,17 +233,19 @@ To invoke a form using Widgets and Panels, follow the below steps:
 7. **Add the Widget** to an existing panel or create a new panel. 
 You can add a form directly to a panel, it creates a widget by default.
 8. You can **Test** the panel.
-9. Follow the steps provided <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/kore-ai-web-sdk-tutorial/" target="_blank">here</a> to publish and host the panels.
+9. Follow the steps provided [here](../../../../app-settings/dev-tools/kore-ai-web-sdk-tutorial/){:target="_blank"} to publish and host the panels.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>While a Digital Form is used to define multiple Widgets and also add to multiple panels, it will be associated with a single Dialog Task across all Widgets and Panels.</p></div>
+   !!! Note
+
+      While a Digital Form is used to define multiple Widgets and also add to multiple panels, it will be associated with a single Dialog Task across all Widgets and Panels.
 
 ## The User Experience
+
 When the end-user initiates the dialog and reaches the node connecting to the Form node, the following events take place. Depending upon the experience selected at design time and the channel of invocation, the flow is the following:
 
 ### Form Experience
-A **link to the form** is presented to the user. Note that for a synchronous WebHook channel, instead of a link the complete form definition is sent <a href="https://docsinternal-kore.github.io/docs/xo/channels/add-webhook-channel/" target="_blank">here</a>.
+
+A **link to the form** is presented to the user. Note that for a synchronous WebHook channel, instead of a link the complete form definition is sent [here](../../../../channels/add-webhook-channel/){:target="_blank"}.
 
 <img src="../../images/UIForms-linkmessage.png" alt="link to form message" title="link to form message" style="border: 1px solid gray; zoom:75%;">
 
@@ -265,7 +279,9 @@ Following is the user experience in Conversation mode:
 <img src="../../images/conversation-experience.png" alt="user experience" title="user experience" style="border: 1px solid gray; zoom:75%;">
 
 ### Exceptions
+
 When exceptions are encountered during the dialog execution with a Form Node, they are handled as follows:
+
 <table border="1.5">
   <tr bgcolor="#ECECEC">
    <td><strong>EXCEPTION</strong>
@@ -289,7 +305,7 @@ When exceptions are encountered during the dialog execution with a Form Node, th
    <td>The user closes the form or browser without submitting responses.
    </td>
    <td>If the bot is configured to cancel the ongoing task, the form displays a warning message that the task will be canceled. If the user accepts, the form will be closed, and a message is displayed saying that the previous task is canceled.
-<p>
+<br>
 Otherwise, the ongoing task goes on, and based on the configuration, the user is taken to the next step of the task.
    </td>
   </tr>
@@ -313,7 +329,8 @@ Users can access the form using **Panels & Widgets**. The experience is the same
 
 Once the form is validated and submitted, the values are available in the context variable and accessed using the following code: context.forms.<form_name>.<component_name>
 
-## **Manage VAs with Digital Forms**
+## Manage VAs with Digital Forms
+
 ### Publish
 
 The publishing flow for a VA with Digital Forms has the following special cases:
@@ -336,9 +353,9 @@ As with any assistant, the Digital Forms exist in the following states:
    <img src="../../images/va-status-search.png" alt="va status search" title="va status search" style="border: 1px solid gray; zoom:75%;">
  
 
-   <div class="admonition note">
-   <p class="admonition-title">Note</p>
-   <p>If any edits are done to the Digital Form while it is In Development, the changes would be reflected in the Published version as soon as you publish the form.</p></div>
+   !!! Note
+   
+      If any edits are done to the Digital Form while it is In Development, the changes would be reflected in the Published version as soon as you publish the form.
 
 * **_Suspended_** when a published form is suspended by the admin.
 
@@ -362,7 +379,8 @@ While the dependencies are published together, chances are that all the dependen
 * The Task Failure Event and the corresponding behavior is invoked or
 * A relevant Standard Response is displayed and
 * Logged as Failed Task in Analytics.
-    * Digital Form is in a published state, but the Dialog Task is not available then on Form submission, the end-user is presented with the Form’s Error Message.
+   
+   * Digital Form is in a published state, but the Dialog Task is not available then on Form submission, the end-user is presented with the Form’s Error Message.
 
 ### Import
 
@@ -388,11 +406,12 @@ The Bot Export option is available for Digital Forms with a status of *In Develo
 * Choose the option to _Include dependent dialogs_ to export Dialog Tasks that are integrated with the selected Digital Forms to define widgets. 
 **_Note that this does not include the Sub-dialog Tasks generated using Digital Forms._**
 * Complete information for each of the selected forms are available in the export file and this includes:
-    * Fields
-    * Field properties
-    * Form integrations
+   
+   * Fields
+   * Field properties
+   * Form integrations
 
-# **Form Component Details**
+## Form Component Details
 
 ### Components List
 
@@ -400,91 +419,90 @@ Following is a list of the available components.
 
 **BASIC**
 
-**Text Field** – used for single-line input.
+* **Text Field** – used for single-line input.
 
-<img src="../../images/text-field-input.png" alt="text field" title="text field" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/text-field-input.png" alt="text field" title="text field" style="border: 1px solid gray; zoom:75%;">
 
-**Text Area** – used for multi-line entry.
+* **Text Area** – used for multi-line entry.
 
-<img src="../../images/text-area.png" alt="text area" title="text area" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/text-area.png" alt="text area" title="text area" style="border: 1px solid gray; zoom:75%;">
 
-**Number** – used for numerical entries.
+* **Number** – used for numerical entries.
 
-<img src="../../images/number-field.png" alt="number field" title="number field" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/number-field.png" alt="number field" title="number field" style="border: 1px solid gray; zoom:75%;">
 
-**Radio Button** – used as a selection option from a given list.
+* **Radio Button** – used as a selection option from a given list.
 
-<img src="../../images/radio-button.png" alt="radio button" title="radio button" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/radio-button.png" alt="radio button" title="radio button" style="border: 1px solid gray; zoom:75%;">
 
-**Dropdown** – Used as a selection option from a given list; can be multi-select.
+* **Dropdown** – Used as a selection option from a given list; can be multi-select.
 
-<img src="../../images/dropdown-list.png" alt="dropdown list" title="dropdown list" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/dropdown-list.png" alt="dropdown list" title="dropdown list" style="border: 1px solid gray; zoom:75%;">
 
-**Checkbox** – Used for multi-select option from a given list.
+* **Checkbox** – Used for multi-select option from a given list.
 
-<img src="../../images/checkbox.png" alt="checkbox" title="checkbox" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/checkbox.png" alt="checkbox" title="checkbox" style="border: 1px solid gray; zoom:75%;">
 
-**Date** – Used for date entries, gives a date picker for the user to choose the date.
+* **Date** – Used for date entries, gives a date picker for the user to choose the date.
 
-<img src="../../images/date-calendar.png" alt="date" title="date" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/date-calendar.png" alt="date" title="date" style="border: 1px solid gray; zoom:75%;">
 
-**Date & Time** – Used for date & time entries. The system displays a date and time picker for the user to choose the date and time.
-Use the **Date component** and set the <em>Time option</em> to <em>yes</em>; choose from <em>12</em> or <em>24-hour</em> format.
+* **Date & Time** – Used for date & time entries. The system displays a date and time picker for the user to choose the date and time.
+Use the **Date component** and set the _Time option_ to _yes_; choose from _12_ or _24-hour_ format.
 
-<img src="../../images/date-time.png" alt="date and time" title="date and time" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/date-time.png" alt="date and time" title="date and time" style="border: 1px solid gray; zoom:75%;">
 
-**Phone Number** – Used for phone number entries, allows the user to choose the country code.
+* **Phone Number** – Used for phone number entries, allows the user to choose the country code.
 
-<img src="../../images/phone-number.png" alt="phone number" title="phone number" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/phone-number.png" alt="phone number" title="phone number" style="border: 1px solid gray; zoom:75%;">
 
-**Email** – Used for email address entries, validates for <em>xxx@uuu.com</em> format.
+* **Email** – Used for email address entries, validates for _xxx@uuu.com_ format.
 
-<img src="../../images/email-field.png" alt="email" title="email" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/email-field.png" alt="email" title="email" style="border: 1px solid gray; zoom:75%;">
 
-**Toggle** – Used for switching between two values, ideal for yes/no type of inputs.
+* **Toggle** – Used for switching between two values, ideal for yes/no type of inputs.
 
-<img src="../../images/toggle-field.png" alt="toggle" title="toggle" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/toggle-field.png" alt="toggle" title="toggle" style="border: 1px solid gray; zoom:75%;">
 
-**Address** – Used for address entries.
+* **Address** – Used for address entries.
 
-<img src="../../images/address-field.png" alt="address" title="address" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/address-field.png" alt="address" title="address" style="border: 1px solid gray; zoom:75%;">
 
-**URL** – Used for web URL entries, validates for <em>xxx.com</em> format.
+* **URL** – Used for web URL entries, validates for _xxx.com_ format.
 
-<img src="../../images/url-field.png" alt="url" title="url" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/url-field.png" alt="url" title="url" style="border: 1px solid gray; zoom:75%;">
 
-**Range Slider** – Value selection between specified min and max values; can be represented as a percentage.
+* **Range Slider** – Value selection between specified min and max values; can be represented as a percentage.
 
-<img src="../../images/range-slider.png" alt="range slider" title="range slider" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/range-slider.png" alt="range slider" title="range slider" style="border: 1px solid gray; zoom:75%;">
 
-**Password** - Used to display passwords in their masked form ```*****```
+* **Password** - Used to display passwords in their masked form ```*****```
 
 **ADVANCED**
 
-**Button** – Used as a clickable component to submit reset, or open an external URL the form. Choose from <em>Primary</em>, <em>Secondary</em>, <em>Tertiary</em>, <em>Ghost,</em> or <em>Danger</em>.
+* **Button** – Used as a clickable component to submit reset, or open an external URL the form. Choose from _Primary_, _Secondary_, _Tertiary_, _Ghost,_ or _Danger_.
 
-<img src="../../images/button-field.png" alt="button" title="button" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/button-field.png" alt="button" title="button" style="border: 1px solid gray; zoom:75%;">
 
-**Label** – Used to display a static text box, no action required from the user.
+* **Label** – Used to display a static text box, no action required from the user.
 
-<img src="../../images/label-field.png" alt="label" title="label" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/label-field.png" alt="label" title="label" style="border: 1px solid gray; zoom:75%;">
 
-**Protip** – Used to mark important information for the end-user, no user action required.
+* **Protip** – Used to mark important information for the end-user, no user action required.
 
-<img src="../../images/protip-field.png" alt="protip" title="protip" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/protip-field.png" alt="protip" title="protip" style="border: 1px solid gray; zoom:75%;">
 
-**Note** - Used to mark information for the end-user, no user action required.
+* **Note** - Used to mark information for the end-user, no user action required.
 
-<img src="../../images/note-field.png" alt="note" title="note" style="border: 1px solid gray; zoom:75%;">
+   <img src="../../images/note-field.png" alt="note" title="note" style="border: 1px solid gray; zoom:75%;">
 
 ### Component Properties
 
 The following are the properties that can be set for each of the components.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p> Not all the properties are valid for all the components, refer to the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-forms/#component-properties">Property Matrix</a> for the mapping.</p>
-</div>
+!!! Note
+
+   Not all the properties are valid for all the components, refer to the [Property Matrix](#component-properties) for the mapping.
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">
@@ -603,7 +621,7 @@ The following are the properties that can be set for each of the components.
   </tr>
    <tr bgcolor="#FAFAFA">
    <td><strong>Time Format</strong>
-<p>
+<br>
 Used in conjunction with the above Time property
    </td>
    <td>Time format to be presented to the end-user can be 12 hrs or 24 hrs
@@ -623,7 +641,7 @@ Used in conjunction with the above Time property
   </tr>
   <tr>
    <td><strong>Masking Type</strong>
-<p>
+<br>
 Available only when Secure Field Data is enabled
    </td>
    <td>Choose how to display the redacted data in the Bot Context, Debug Logs, Service Calls, Agent Transfer and the Bot Kit. Following actions are available:
@@ -640,7 +658,7 @@ Available only when Secure Field Data is enabled
   </tr>
    <tr bgcolor="#FAFAFA">
    <td><strong>Mask Input</strong>
-<p>
+<br>
 Available only when Secure Field Data is enabled
    </td>
    <td>Enable this option to mask the end-user’s input for this field in the chat window.
@@ -709,7 +727,7 @@ Available only when Secure Field Data is enabled
 
 <li>Comparison  With – the value or component name or type, as per the above selection
 
-<p>
+<br>
 Multiple rules added to an existing rule would be taken as an AND condition, whereas a new rule would be an OR condition. You can add multiple Simple rules or a single Advanced rule by toggling between Simple and Advanced Modes
 </li>
 </ul>
@@ -750,7 +768,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
  
 <li>Comparison  With – the value or component name or type, as per the above selection
 
-<p>
+<br>
 Multiple rules added to an existing rule would be taken as an AND condition, whereas a new rule would be an OR condition. You can add multiple Simple rules or a single Advanced rule by toggling between Simple and Advanced Modes
 </li> 
 </ul>
@@ -783,9 +801,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
   </tr>
 </table>
 
-### Component Mappings
-
-### Properties
+### Component Mapping Properties
 
 #### Basic
 
@@ -802,11 +818,11 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
    <td><strong>RADIO BUTTON</strong>
    </td>
    <td><strong>CHECK</strong>
-<p>
+<br>
 <strong>BOX</strong>
    </td>
    <td><strong>DROP</strong>
-<p>
+<br>
 <strong>DOWN</strong>
    </td>
    <td><strong>DATE</strong>
@@ -1142,7 +1158,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
   </tr>
   <tr>
    <td><strong>Time &</strong>
-<p>
+<br>
 <strong>Time Format</strong>
    </td>
    <td>No
@@ -2016,7 +2032,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
   </tr>
 </table>
 
-### Advanced
+#### Advanced
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">
@@ -2206,7 +2222,7 @@ Multiple rules added to an existing rule would be taken as an AND condition, whe
   </tr>
 </table>
 
-### Dialog Node
+#### Dialog Node
 
 The following mapping gives the type of entities included in the sub-dialog when it is auto-generated from a Digital Form.
 
@@ -2249,7 +2265,7 @@ The following mapping gives the type of entities included in the sub-dialog when
    <td><strong>DIGITAL FORM COMPONENT TYPE</strong>
    </td>
    <td><strong>DIALOG TASK</strong>
-<p>
+<br>
 <strong>NODE TYPE</strong>
    </td>
   </tr>
@@ -2281,7 +2297,7 @@ The following mapping gives the type of entities included in the sub-dialog when
    <td>Dropdown
    </td>
    <td>LoI (Enum) with each of the values in the dropdown list copied as list items.
-<p>
+<br>
 Multi-select would be enabled based on the ‘is multi-select’ option of the Form Component
    </td>
   </tr>
@@ -2289,7 +2305,7 @@ Multi-select would be enabled based on the ‘is multi-select’ option of the F
    <td>Checkbox
    </td>
    <td>LoI (Enum) with each of the options in the checkbox group copied as list items
-<p>
+<br>
 Multi-select is enabled by default
    </td>
   </tr>
@@ -2359,7 +2375,7 @@ Multi-select is enabled by default
   </tr>
 </table>
 
-### Context Object
+#### Context Object
 
 The following mapping gives the context object to capture the component value along with a sample context object.
 
@@ -2410,7 +2426,7 @@ The following mapping gives the context object to capture the component value al
    <td>Date
    </td>
    <td><code>context.forms.<form_name>.<component_name></code>
-<p>
+<br>
 In mm/dd/yyyy format
    </td>
   </tr>
@@ -2418,7 +2434,7 @@ In mm/dd/yyyy format
    <td>Date & Time
    </td>
    <td><code>context.forms.<form_name>.<component_name></code>
-<p>
+<br>
 In mm/dd/yyyy hh:mm AM/PM format
    </td>
   </tr>
@@ -2426,7 +2442,7 @@ In mm/dd/yyyy hh:mm AM/PM format
    <td>Phone Number
    </td>
    <td><code>context.forms.<form_name>.<component_name></code>
-<p>
+<br>
 prefixed with the area code of the country selected by the user
    </td>
   </tr>
@@ -2452,7 +2468,7 @@ prefixed with the area code of the country selected by the user
    <td>Toggle
    </td>
    <td><code>context.forms.<form_name>.<component_name></code>
-<p>
+<br>
 Yes/No values
    </td>
   </tr>
@@ -2516,14 +2532,16 @@ context.prefillForms = {
 };
 ```
 
-## **Limitations**
+## Limitations
 
 * Digital Forms will not work as expected on the following channels:
-    * Amazon Alexa
-    * Cisco Jabber
-    * Google Assistant
-    * IVR Voice
-    * Twilio Voice
+   
+   * Amazon Alexa
+   * Cisco Jabber
+   * Google Assistant
+   * IVR Voice
+   * Twilio Voice
+
 * You are advised to choose the Conversation Experience for these channels.
 * Digital Forms created in the parent bot are not inherited into **Smart Bots**.
 * The Digital Forms functionality is not applicable for **Universal Bots**.
