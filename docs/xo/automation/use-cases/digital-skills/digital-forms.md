@@ -40,9 +40,7 @@ A Digital Form includes a definition and various components to capture user inpu
 To create forms, follow the steps below:
 
 1. Under **Automation AI > Virtual Assistant > Digital Skills**, select **Digital Forms**.
-
 2. On the **Digital Forms** screen, click **New Form**.
-
 3. On the **New Form** page, enter the following:
    
       * **Name** of the Form.
