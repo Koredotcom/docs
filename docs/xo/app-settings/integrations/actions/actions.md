@@ -70,7 +70,7 @@ The available Actions/Integrations are listed in the table below. Go to **App Se
 | Bitly | Integrates with Bitly instance to shorten any long URLs. | 1  | Basic Auth | [Learn more](./bitly/configuring-the-bitly-action.md){:target="_blank"} |
 | Confluence | Integrates with Confluence instance to create, and view pages or blogs on the Confluence space. | 1   | Basic Auth | [Learn more](./confluence/configuring-the-confluence-action.md){:target="_blank"} |
 | DHL | Integrates with DHL system to find information regarding DHL Locations and Track Shipments. | 2   | Basic Auth | [Learn more](./dhl/configuring-the-dhl-action.md){:target="_blank"} |
-| Freshdesk | Integrates with Freshdesk to create, view, update, search and delete tickets. | 6   | Basic Auth | [Learn more](../freshdesk/configuring-the-freshdesk-action) |
+| Freshdesk | Integrates with Freshdesk to create, view, update, search and delete tickets. | 6   | Basic Auth | [Learn more](../freshdesk/configuring-the-freshdesk-action){:target="_blank"} |
 | Freshservice ITSM | Integrates with Freshservice ITSM to create, view, update, search and delete tickets. | 6   | Basic Auth | [Learn more](./freshservice/configuring-the-freshservice-action.md){:target="_blank"} |
 | Google Maps | Integrates with Google Maps to find information regarding accurate Locations and places. | 2   | Basic Auth | [Learn more](./google-maps/configuring-the-google-maps-action.md){:target="_blank"} |
 | Here | Integrates with Here instance to find locations by text. | 1   | Basic Auth | [Learn more](./here/configuring-the-here-action.md){:target="_blank"} |

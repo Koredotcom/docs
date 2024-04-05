@@ -7,7 +7,7 @@ This article explains how to authorize and enable the **Zendesk** action and ins
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform allows you to integrate with Zendesk using basic authorization. For more information, see [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"}.
+The Kore.ai XO Platform allows you to integrate with Zendesk using basic authorization. For more information, see [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}.
 
 The Kore.ai XO Platform supports the following authorization types for the Zendesk integration:
 
