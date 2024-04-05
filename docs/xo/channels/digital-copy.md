@@ -55,7 +55,7 @@
 
 
 
-|[Mattermost](./add-mattermost-channel.md)  <br>   <br>[![](./images/logo10-mattermost.png)](./add-mattermost-channel.md) | [Microsoft Teams](./add-microsoft-teams-channel.md)  <br>  <br>[![](./images/logo11-ms-teams.png)](./add-microsoft-teams-channel.md) | [Naver Works](./add-naver-works-channel.md)    <br>[![](./images/logo12-naver.png)](./add-naver-works-channel.md) | [Nice inContact](./add-nice-incontact-channel.md)   <br>  <br>[![](./images/logo13-nice.png)](./add-nice-incontact-channel.md) 
+|[Mattermost](./add-mattermost-channel.md)  <br>   <br>[![](./images/logo10-mattermost.png)](./add-mattermost-channel.md) | [Microsoft Teams](./add-microsoft-teams-channel.md)  <br>  <br>[![](./images/logo11-ms-teams.png)](./add-microsoft-teams-channel.md) | [Naver Works](./add-naver-works-channel.md)    <br>[![](./images/logo12-naver.png)](./add-naver-works-channel.md) | [Nice inContact](./add-nice-incontact-channel.md)   <br>  <br>[![](./images/logo13-nice.png)](./add-nice-incontact-channel.md) |
 | --- | --- | --- | --- |
 |[**RCS Business Messaging**](./add-google-rcs-channel.md)<br>  <br>[![](./images/logo14-rcs.png)](./add-google-rcs-channel.md)| [**Glip by RingCentral**](./add-ringcentral-glip-channel.md)  <br><br>[![](./images/logo15-glip.png)](./add-ringcentral-glip-channel.md) | [**RingCentral  Engage**](./add-ringcentral-engage-channel.md)   <br><br>[![](./images/logo16-ring-central.png)](./add-ringcentral-engage-channel.md) | [**Skype for Business**](./add-skype-business-channel.md)  <br> <br>[![](./images/logo17-skype-business.png)](./add-skype-business-channel.md) |
 
