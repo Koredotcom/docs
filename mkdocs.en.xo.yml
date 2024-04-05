@@ -136,8 +136,8 @@ nav:
         - About Contact Center: virtual-assistants-overview.md
         - Set up Contact Center: virtual-assistants-overview.md     
       - Agent AI:
-        - About AgentAssist: virtual-assistants-overview.md
-        - Set up AgentAssist: virtual-assistants-overview.md               
+        - About Agent AI: virtual-assistants-overview.md
+        - Set up Agent AI: virtual-assistants-overview.md               
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
   - Automation AI: 
