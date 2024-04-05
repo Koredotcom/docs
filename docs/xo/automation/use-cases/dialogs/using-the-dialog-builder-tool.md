@@ -312,6 +312,12 @@ These are placeholders for creating groups of nodes. Each sequence has one or mo
 
 <img src="../images/using-dialog-builder-sequence.png" alt="Sequence" title="Sequence" style="border:1px solid gray;zoom:60%;">
 
+A sequence gets **automatically created** when you add a node to the canvas. Once a sequence gets created, you can either add more nodes to that sequence, or, you can add nodes outside any existing sequence, in which case a new sequence will get created.
+
+To add a node to an existing sequence, drag the node on the sequence. You will see placeholders labeled **Drop here** appearing between nodes. You can drop the node on any of these placeholders; the node will get added on that spot in the sequence.
+
+<img src="../images/using-dialog-builder-creating-sequence.gif" alt="Creating sequence" title="Creating sequence" style="border:1px solid gray;zoom:60%;">
+
 The task being designed in a dialog can be broken down into several sub-tasks. For example, if you are developing a dialog to send money from one account to another, you may break the tasks into subtasks like gathering the account owner's details, gathering the recipient account's details, transferring the money, success scenario, failure scenario, etc. You can have a sequence for each sub-task.
 
 Each sequence contains one or more nodes placed in a logical sequence and a **Transition** section at the end, through which you can either continue the flow of dialog to the next sequence or split the flow into two or more paths based on [conditions](#add-if-else-node-connections).
