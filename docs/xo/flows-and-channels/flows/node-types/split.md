@@ -36,7 +36,7 @@ Click the **General Settings** icon and set up the following conditions:
     The condition setup in Contact Center AI is similar to that of the Automation AI process. [Learn more](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-connections/nodes-conditions/).
 
 You can delete a condition by clicking on the **Delete** (bin) icon next to it.
-<img src="../images/delete-branch.png" alt="Delete Branch" title="Delete Branch" style="border: 1px solid gray; zoom:70%;">
+<img src="./../images/delete-branch.png" alt="Delete Branch" title="Delete Branch" style="border: 1px solid gray; zoom:70%;">
 
 ### Error Handling
 
@@ -46,11 +46,11 @@ Use this section to handle system errors during customer interactions.
     * **Text to speech**: This option allows you to transcribe text to speech. Type the text to be transcribed in the textbox or select an already configured message.
         * Create a new prompt message to be played out for the **Text to Speech** message type by clicking **+ Create New**. Enter a name for your message, and type its contents.
         * Define multiple message types for the prompt message to be played to the customer by clicking **+ Add Another**. In this case, one message will be randomly selected and played during runtime.  
-    <img src="../images/error-handling-spilt.png" alt="Text-to-Speech" title="Text-to-Speech" style="border: 1px solid gray; zoom:70%;">
+    <img src="./../images/error-handling-spilt.png" alt="Text-to-Speech" title="Text-to-Speech" style="border: 1px solid gray; zoom:70%;">
     * **Audio File**: In the text field, type a new message to be played to the customer or click **+ Upload New** to upload an audio file (.mp3 or .wav format) with the message to be played.
-    <img src="../images/audio-file-spilt.png" alt="Audio File" title="Audio" style="border: 1px solid gray; zoom:70%;">
+    <img src="./../images/audio-file-spilt.png" alt="Audio File" title="Audio" style="border: 1px solid gray; zoom:70%;">
     * **Link**: Click **+ Create New** to add the text of the message you want to play to the customer and insert the URL of an audio file in .mp3 or .wav format. Click **+ Add Another** to add another message URL.  
-    <img src="../images/link-spilt.png" alt="Link" title="Link" style="border: 1px solid gray; zoom:70%;">
+    <img src="./../images/link-spilt.png" alt="Link" title="Link" style="border: 1px solid gray; zoom:70%;">
 
 * **Go to node**: Select the node to which you want to direct the error handling flow and define the system behavior. You can create a new node by selecting a node type or identifying and selecting an existing node.  
-<img src="../images/go-to-node-spilt.png" alt="Go to Node" title="Go to Node" style="border: 1px solid gray; zoom:70%;">
+<img src="./../images/go-to-node-spilt.png" alt="Go to Node" title="Go to Node" style="border: 1px solid gray; zoom:70%;">

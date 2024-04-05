@@ -127,7 +127,7 @@ nav:
             - Kore Voice Gateway: channels-and-flows/flows/flows.md
             - Third Party Voice:  channels-and-flows/flows/flows.md          
       - Automation AI:
-        - About Virtual Assistant: virtual-assistants-overview.md
+        - About Virtual Assistant: getting-started/virtual-assistants-overview.md
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
       - Search AI:
         - About Answers: virtual-assistants-overview.md
@@ -136,8 +136,8 @@ nav:
         - About Contact Center: virtual-assistants-overview.md
         - Set up Contact Center: virtual-assistants-overview.md     
       - Agent AI:
-        - About AgentAssist: virtual-assistants-overview.md
-        - Set up AgentAssist: virtual-assistants-overview.md               
+        - About Agent AI: virtual-assistants-overview.md
+        - Set up Agent AI: virtual-assistants-overview.md               
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
   - Automation AI: 

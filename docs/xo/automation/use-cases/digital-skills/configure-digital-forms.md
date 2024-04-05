@@ -55,11 +55,13 @@ Create a form to gather the following information:
     * **Display Name** for the form, say _Open an Account_
     * **Description** of the form.
         **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. 
+
         Click the card to select the style. If it has a logo, you can upload an image file (png or jpg) for the logo.
-        <div class="admonition note">
-        <p class="admonition-title">Note</p>
-        <p>During the Export of the Bot, the logo is not exported along with Digital Forms. So, while importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.</p>
-        </div>
+        
+        !!! Note
+
+            During the Export of the Bot, the logo is not exported along with Digital Forms. So, while importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
+        
 5. **Description**: Turn on the toggle to show a description of the form in the header.
 6. **Save & Proceed** to the next step.
     
@@ -93,6 +95,7 @@ Create a form to gather the following information:
     * **Name** used for internal reference, say _cashcard_.
     * **Description** of the field. In this case, the question, _Want a cash card?_
     * **Value** as _Yes_ when selected and _No_ when deselected.
+
 10. Scroll and locate **Visibility Settings.** This component should be visible only when the account type is set to Checkings.
 11. Add **Visibility Rules – Rule 1** for the field to be **Visible**, select **accounttype** field, _=(Equal To)_ operator, _Value_ comparison with, _Checkings_ value.
 
@@ -103,6 +106,7 @@ Create a form to gather the following information:
     * **Name** used for internal reference, say _withdrawallimit._
     * **Description** of the field.
     * **Placeholder** value to be displayed in the field when blank, say, _Set the withdrawal limit_.
+
 13. Deselect **Is Percentage**
 14. Select **Value** as _100_ for Min and _1000_ for Max.
 15. Under **Data Settings** you can set the **Default Value** to be 150, this would be pre-selected.
@@ -118,21 +122,23 @@ Create a form to gather the following information:
     * **Name** used for internal reference, say _cardtype_.
     * **Description** of the field.
     * **Placeholder** value to be displayed in the field when blank, say, _Choose the type of credit card_.
-21. Under **Data Settings**, set the **Radio values** to be _Platinum, Gold, Silver, and _Basic_.
- 22. Scroll and locate **Visibility Settings.** This component should be visible only when the account type is set to Credit Card.
 
-* Set **Is visible** flag to _Yes_.
-* Add **Visibility Rules – Rule 1** for the filed to be **Visible**, select **accounttype** _field, _=(Equal To)_ operator, _Value_ comparison with, _Credit Card_ value.
+21. Under **Data Settings**, set the **Radio values** to be _Platinum, Gold, Silver, and _Basic_.
+22. Scroll and locate **Visibility Settings.** This component should be visible only when the account type is set to Credit Card.
+
+    * Set **Is visible** flag to _Yes_.
+    * Add **Visibility Rules – Rule 1** for the filed to be **Visible**, select **accounttype** _field, _=(Equal To)_ operator, _Value_ comparison with, _Credit Card_ value.
 
     <img src="../../images/data-settings.png" alt="data settings" title="data settings" style="border: 1px solid gray; zoom:75%;">
 
 23. Finally, the Pro-Tip, when user selects a Platinum card. Drag and drop a **Pro Tip** component onto the form and set the following values:
-* Set **Display Name** as _Platinum Tip._
-* **Name** used for internal reference, mention _platinumtip._
-* **Description** would be the tip you want to display, eg. _Additional charges will apply_.
+    * Set **Display Name** as _Platinum Tip._
+    * **Name** used for internal reference, mention _platinumtip._
+    * **Description** would be the tip you want to display, eg. _Additional charges will apply_.
+
 24. Scroll and locate **Visibility Settings.** This component should be visible only when the account type is set to Credit Card.
-* Set **Is visible** flag to _Yes_
-* Add **Visibility Rules – Rule 1** for the field to be **Visible** select **accounttype** field, _=(Equal To)_ operator, _Value_ comparison with, _Credit Card_ value AND selecting **cardtype** field, _=(Equal To)_ operator, _Value_ comparison with, _Platinum_ value.
+    * Set **Is visible** flag to _Yes_
+    * Add **Visibility Rules – Rule 1** for the field to be **Visible** select **accounttype** field, _=(Equal To)_ operator, _Value_ comparison with, _Credit Card_ value AND selecting **cardtype** field, _=(Equal To)_ operator, _Value_ comparison with, _Platinum_ value.
     
     <img src="../../images/view-visibility-settings.png" alt="visibility settings" title="visibility settings" style="border: 1px solid gray; zoom:75%;">
 
@@ -149,11 +155,11 @@ Your form is ready. You can toggle between Desktop View and Mobile View to see h
 
     <img src="../../images/select-node-dropdown.png" alt="select node dropdown" title="select node dropdown" style="border: 1px solid gray; zoom:75%;">
 
-    <div class="admonition note">
-    <p class="admonition-title">Note</p>
-    <p>The target node has to be in the same dialog, you cannot make a jump to a target node outside the current dialog. The list of target nodes only shows the local nodes.
-    If the target node is not present during runtime, the platform presents the error Error in continuing the conversation, and the task should get discarded.</p>
-    </div>
+    !!! Note
+    
+        The target node has to be in the same dialog, you cannot make a jump to a target node outside the current dialog. The list of target nodes only shows the local nodes.
+
+        If the target node is not present during runtime, the platform presents the error Error in continuing the conversation, and the task should get discarded.
 
 28. Use the **Test** button to see a preview.
 
@@ -168,6 +174,7 @@ We will be creating a dialog task and adding a form node to trigger the Digital 
 3. Click the **+** against the **Dialog Tasks** to create a new Task
     * Enter **IntentName**, say, _OpenAccount_
     * Click **Create & Proceed** to open the dialog builder page.
+
 4. Retain the Intent Node default settings, and close the Intent Node.
 5. Click the **+** next to the intent node and select the **Form** option.
 6. From the dropdown list select the form (_OpenAccount_) we created earlier.
@@ -207,4 +214,4 @@ Your dialog with form is ready! **Talk to bot** and trigger the above dialog. Th
 
 You can use the context object as shown above it a **Script** or **Service** nodes for further processing.
 
-Click <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-digital-skills/add-data-to-data-tables/" target="_blank">here</a> to learn how to add this data to a data table.
+Click [here](../../../../how-tos/build-a-banking-assistant/design-digital-skills/add-data-to-data-tables/){:target="_blank"} to learn how to add this data to a data table.

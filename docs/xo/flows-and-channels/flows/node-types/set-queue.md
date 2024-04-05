@@ -7,7 +7,7 @@ Queues are the holding areas for digital and voice interactions waiting to be as
 ### General Settings
 
 Click the **General Settings** icon and provide the following information:
-<img src="../images/error-handling-set-queue.png" alt="Set Queue" title="Set Queue" style="border: 1px solid gray; zoom:70%;">
+<img src="./../images/error-handling-set-queue.png" alt="Set Queue" title="Set Queue" style="border: 1px solid gray; zoom:70%;">
 
 1. A **Custom Name** to identify the node.
 2. Select the **Integration Type**: Static List or Script:
@@ -20,7 +20,7 @@ Click the **General Settings** icon and provide the following information:
             With the ability to prioritize, conversations will shuffle in the queue. This means that the number in the queue and wait time calculations will change for the customer as the priority of their conversation changes. Consider this scenario if you decide to play queue positions and wait time calculations in the waiting experience.
 
 If you select **Script**, you can define the queue or conversation priority.
-<img src="../images/script-set-queue.png" alt="Script" title="Script" style="border: 1px solid gray; zoom:70%;">
+<img src="./../images/script-set-queue.png" alt="Script" title="Script" style="border: 1px solid gray; zoom:70%;">
 
 Set the Queue as in the following example:
 
@@ -52,15 +52,15 @@ For example, if the Go to node is set to CheckBusinessHours, you can set the act
 ### Error Handling
 
 Use this section to handle system errors during customer interactions.
-<img src="../images/error-handling-set-queue.png" alt="Error Handling" title="Error Handling" style="border: 1px solid gray; zoom:70%;">
+<img src="./../images/error-handling-set-queue.png" alt="Error Handling" title="Error Handling" style="border: 1px solid gray; zoom:70%;">
 
 * **Your Message to User**: The message that will be played to the customer via the IVR. Select one of the following options from under **Choose your message type**:
     * **Text to speech**: This option allows you to transcribe text to speech. Type the text to be transcribed in the textbox or select an already configured message.
         * Click **+ Create New** to create a new prompt for the text-to-speech message type. Enter a name for your message and type its contents.
         * Click **+ Add Another** to define multiple message types for the prompt message to be played to the customer. In this case, one message will be randomly selected and played during runtime.  
-    <img src="../images/text-to-speech-set-queue.png" alt="Text to Speech" title="Text to Speech" style="border: 1px solid gray; zoom:70%;">
+    <img src="./../images/text-to-speech-set-queue.png" alt="Text to Speech" title="Text to Speech" style="border: 1px solid gray; zoom:70%;">
     * **Audio File**: You can type a new message to be played to the customer in the text field or click **+ Upload New** to upload an audio file (.mp3 or .wav format) with the message to be played;
-    <img src="../images/audio-file-set-queue.png" alt="Audio File" title="Audio File" style="border: 1px solid gray; zoom:70%;">
+    <img src="./../images/audio-file-set-queue.png" alt="Audio File" title="Audio File" style="border: 1px solid gray; zoom:70%;">
     * **Link**: Click **+ Create New** to add the text of the message you want to play to the customer and insert the URL of an audio file in .mp3 or .wav format. Click **+ Add Another** to add another message URL.
-    <img src="../images/link-set-queue.png" alt="Link" title="General Settings" style="border: 1px solid gray; zoom:70%;">
+    <img src="./../images/link-set-queue.png" alt="Link" title="General Settings" style="border: 1px solid gray; zoom:70%;">
 * **Go to node**: Select the node to which you want to direct the error handling flow and define the system behavior. You can create a new node by selecting a node type or identifying and selecting an existing node.

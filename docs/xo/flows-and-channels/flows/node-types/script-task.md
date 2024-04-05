@@ -12,7 +12,7 @@ This node allows you to define a script for processing any context variables or 
 ### General Settings
 
 In the **General Settings** section, provide the following information:
-<img src="../images/general-settings-script-task.png" alt="General Settings" title="General Settings" style="border: 1px solid gray; zoom:70%;">
+<img src="./../images/general-settings-script-task.png" alt="General Settings" title="General Settings" style="border: 1px solid gray; zoom:70%;">
 
 1. A **Custom Name** to identify the node.
 2. Under **Define a Script**, use the Javascript editor to input the script that you want to run.
@@ -23,4 +23,4 @@ Click the **Connection Rules** icon and select the Go to node you want the node 
 
 * For **On Success**, the selected Go to node defines how the bot handles a successful script
 * For **On Error**, the selected Go to node defines how the bot handles a failed script.  
-<img src="../images/connection-rules-script-task.png" alt="Connection Rules" title="Connection Rules" style="border: 1px solid gray; zoom:70%;">
+<img src="./../images/connection-rules-script-task.png" alt="Connection Rules" title="Connection Rules" style="border: 1px solid gray; zoom:70%;">

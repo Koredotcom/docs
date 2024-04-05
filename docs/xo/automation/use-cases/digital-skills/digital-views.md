@@ -4,7 +4,7 @@ Interactions with Virtual Assistants are typically conducted using chat/messagin
 
 Using **Digital Views** from the XO Platform, you can design and launch rich visual experiences through interactive components, panels, and widgets, to proactively present relevant information to your users or customers. **Panels** are the placeholders that hold one or more widgets. **Widgets** are individual components that display information to the end-users. Your users or customers can interact with your VA either in conversation mode or directly get the required information from the widgets.
 
-This article gives an overview on the working and implementation of **Panels & Widgets**. For step-by-step usage instructions, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/configure-digital-views/" target="_blank">here</a>.
+This article gives an overview on the working and implementation of **Panels & Widgets**. For step-by-step usage instructions, click [here](../configure-digital-views/){:target="_blank"}.
 
 
 ## How It Works 
@@ -17,9 +17,10 @@ This article gives an overview on the working and implementation of **Panels & W
     * Upcoming Trips
     * Completed Bookings
     * Canceled Bookings
+
     <img src="../../images/access-digitalviews.png" alt="access digital views" title="access digital views" style="border: 1px solid gray; zoom:75%;">
 
-You can access Digital Views by selecting the VA you want to work with then going to **Build > Digital Skills > Digital Views**. 
+You can access Digital Views by selecting the VA you want to work with then going to **Automation AI > Virtual Assistant > Digital Skills > Digital Views**. 
 
 ## How to use Digital Views?
 
@@ -51,10 +52,12 @@ Widgets are individual components that can communicate with the VA for presentin
 To configure widgets, follow the below steps:
 
 1. Click **Create Widget** to create a widget.
-<img src="../../images/create-widget.png" alt="create widget" title="create widget" style="border: 1px solid gray; zoom:75%;">
+
+    <img src="../../images/create-widget.png" alt="create widget" title="create widget" style="border: 1px solid gray; zoom:75%;">
 
 2. The New Widget dialog opens.
-<img src="../../images/new-widget-dialog.png" alt="new widget dialog" title="new widget dialog" style="border: 1px solid gray; zoom:75%;">
+
+    <img src="../../images/new-widget-dialog.png" alt="new widget dialog" title="new widget dialog" style="border: 1px solid gray; zoom:75%;">
 
 3. On the **New Widget** window, enter the following details:
     * **Name** of the widget
@@ -116,7 +119,7 @@ Panel refers to containers that hold one or more widgets. You can add an existin
 
 To create a panel, follow the steps below:
 
-1. Click **Create Panel** to create a panel.
+1. Click **Create Panel** on the Digital Views screen to create a panel.
 2. On the **New Panel** window, enter the following details:
     * **Name** of the Panel.
     * **Display Name** for the Panel.
