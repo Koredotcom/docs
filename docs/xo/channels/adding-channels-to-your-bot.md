@@ -252,11 +252,6 @@ Click the icon of the channel you want to add, and then configure the channel to
 </table>
 
 
-
-
-
-
-
 ### Other Channels
 
 <table style="table-layout: fixed; width: 100%;">
@@ -288,4 +283,3 @@ Click the icon of the channel you want to add, and then configure the channel to
   
   </tr>
 </table>
-
