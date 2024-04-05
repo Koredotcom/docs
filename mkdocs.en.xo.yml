@@ -127,7 +127,7 @@ nav:
             - Kore Voice Gateway: channels-and-flows/flows/flows.md
             - Third Party Voice:  channels-and-flows/flows/flows.md          
       - Automation AI:
-        - About Virtual Assistant: virtual-assistants-overview.md
+        - About Virtual Assistant: getting-started/virtual-assistants-overview.md
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
       - Search AI:
         - About Answers: virtual-assistants-overview.md
