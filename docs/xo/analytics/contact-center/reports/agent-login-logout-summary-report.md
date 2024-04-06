@@ -20,10 +20,10 @@ To generate Agent Login Logout Summary Report:
         * CSV
     * Send To (single email address or a mailing list)
 7. Click **Create**.
-8. An instance of the Agent Login Logout Summary report is generated.
+8. An instance of the **Agent Login Logout Summary Report** is generated.
 <img src="../images/agent-login-logout-report-created.png" alt="Agent Login Logout Summary Report Created" title="Agent Login Logout Summary Report Created" style="border: 1px solid gray; zoom:70%;">
 
-9. Click the Run icon as shown below to generate the report.
+9. Click the **Run** icon as shown below to generate the report.
 <img src="../images/run-login-logout-summary-report.png" alt="Run Agent Login Logout Summary Report" title="Create Agent Login Logout Summary Report" style="border: 1px solid gray; zoom:70%;">
 
 While generating reports you have two options, Run On Demand and Schedule.

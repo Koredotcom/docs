@@ -20,7 +20,7 @@ To generate Agent Activity Summary report:
         * CSV
     * Send To (single email address or a mailing list)
 7. Click **Create**.
-8. An instance of the Agent Activity Summary report is created.
+8. An instance of the **Agent Activity Summary Report** is created.
 <img src="../images/agent-activity-summary-report-created.png" alt="Agent Activity Summary Report Created" title="Agent Activity Summary Report Created" style="border: 1px solid gray; zoom:70%;">
 
 9. Click the **Run** icon as shown below to generate the report.
