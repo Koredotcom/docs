@@ -23,7 +23,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     * **Multi-Model NLU**: Natural Language Understanding that uses multiple models to better understand user input.
     * **GenAI Framework**: A generative AI framework to enhance automation capabilities.  
     
-    [Learn more about Automation AI features :octicons-arrow-right-24:](../automation/about-automation.md)
+    [Learn more about Automation AI features :octicons-arrow-right-24:](../automation/about-automation-ai.md)
 
 === "Search AI"
 
@@ -47,7 +47,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     * **Agent Desktop**: Provides a centralized workspace for agents.
     * **Campaigns**: Tools for managing voice and proactive web campaigns.  
     
-    [Learn more about Contact Center AI features :octicons-arrow-right-24:](../contactcenter/about-contact-center.md)
+    [Learn more about Contact Center AI features :octicons-arrow-right-24:](../contactcenter/about-contact-center-ai.md)
 
 === "Agent AI"
 
@@ -59,7 +59,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     * **Auto-fulfillment**: Automates the completion of tasks and processes.
     * **Agent Coaching & Playbooks**: Provides resources and strategies for agent training and performance.  
     
-    [Learn more about Agent AI features :octicons-arrow-right-24:](../agentassist/about-agentassist.md)
+    [Learn more about Agent AI features :octicons-arrow-right-24:](../agentai/about-agent-ai.md)
 
 === "Analytics"
 
