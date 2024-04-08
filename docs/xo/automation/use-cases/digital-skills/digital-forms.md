@@ -50,34 +50,30 @@ To create forms, follow the steps below:
       <img src="../../images/create-new-form.png" alt="Create New Form" title="Create New Form" style="border: 1px solid gray; zoom:75%;">
 
 4. **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. Click the card to select the style. If it has a logo, you can upload an image file (jpg or png) for the logo.
+    
+    !!! Note
 
-    !!! Note 
- 
-	    Providing a relevant description is recommended. If no description is provided, a dialog will be generated, but only with **the error prompt**.
-
-   !!! Note
-
-      During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
+        During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
 
 5. Turn on the **Description** toggle if you want to show a description of the form in the header.
 
-   <img src="../../images/description-toggle-turn-on.png" alt="Description Toggle" title="Description Toggle" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/description-toggle-turn-on.png" alt="Description Toggle" title="Description Toggle" style="border: 1px solid gray; zoom:75%;">
 
 6. **Form Security** – Enable **Secure Form Data** to redact form data from the Bot Context, Debug Logs, Service Calls, Agent Transfer, and the Bot Kit.
 
-   <img src="../../images/secure-form-data.png" alt="secure form data" title="secure form data" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/secure-form-data.png" alt="secure form data" title="secure form data" style="border: 1px solid gray; zoom:75%;">
    
-   While enabling, you can also choose whether to display the **Secure Form icon** to your end users.
+    While enabling, you can also choose whether to display the **Secure Form icon** to your end users.
 
-   <img src="../../images/enable-redact-form-data.png" alt="enable redact form data" title="enable redact form data" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/enable-redact-form-data.png" alt="enable redact form data" title="enable redact form data" style="border: 1px solid gray; zoom:75%;">
    
-   Once enabled, the Platform will replace the user input with a unique random system-generated alphanumeric value in all the modules. Also, the **Secure Form** icon and a tip will be displayed, notifying the user that the form is secure.
+    Once enabled, the Platform will replace the user input with a unique random system-generated alphanumeric value in all the modules. Also, the **Secure Form** icon and a tip will be displayed, notifying the user that the form is secure.
 
-   <img src="../../images/secure-form-icon.png" alt="secure form icon" title="secure form icon" style="border: 1px solid gray; zoom:75%;"></li>
+    <img src="../../images/secure-form-icon.png" alt="secure form icon" title="secure form icon" style="border: 1px solid gray; zoom:75%;"></li>
 
 7. Click **Save & Proceed**.
 
-   <img src="../../images/save-digital-form.png" alt="save digital form" title="save digital form" style="border: 1px solid gray; zoom:75%;"></li></ol>
+    <img src="../../images/save-digital-form.png" alt="save digital form" title="save digital form" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ### Add Components
 
@@ -126,15 +122,15 @@ You can use the **Edit** option from the form listing to edit the form. The foll
 * Use the Move Component _Handle Bar_ against each of the components to change its location by a simple drag and drop action;
 * Use *Form Actions* to:
 
-   * **Test** the form to see the preview of the Digital Form in the XO Platform.
-   * **Delete** the Form. Please keep in mind that deleted forms cannot be restored.
-   * Change the Form **Settings** such as name, display name, and description.
+     * **Test** the form to see the preview of the Digital Form in the XO Platform.
+     * **Delete** the Form. Please keep in mind that deleted forms cannot be restored.
+     * Change the Form **Settings** such as name, display name, and description.
 
 * Use the **Component Actions** to access the **Settings**, **Duplicate,** and **Delete** options for each of the form’s components.
 * You can change the components’ properties from the **Component Settings** popup:
    
-   * Use the **Component Docker** to dock/undock the settings pane to the screen.
-   * Use the **Component Selector** to navigate through the components on the Form.
+     * Use the **Component Docker** to dock/undock the settings pane to the screen.
+     * Use the **Component Selector** to navigate through the components on the Form.
 
 #### Branding
 
@@ -172,43 +168,43 @@ To invoke a form from a dialog task, follow the below steps:
 3. Select the **Digital Form** option and then the form from the list. You can choose to add a Digital Form directly or use an existing Form Node.
 4. You are prompted to select the **Form Experience**, it can be:
 
-   <img src="../../images/configuration-form-node.png" alt="configure form node" title="configure form node" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/configuration-form-node.png" alt="configure form node" title="configure form node" style="border: 1px solid gray; zoom:75%;">
 
-   * **Only Form UI** – This creates a Form Node and associates it with the Digital Form selected. This is the default option.
+    * **Only Form UI** – This creates a Form Node and associates it with the Digital Form selected. This is the default option.
 
-      <img src="../../images/only-ui.png" alt="only form ui" title="only form ui" style="border: 1px solid gray; zoom:75%;">
+        <img src="../../images/only-ui.png" alt="only form ui" title="only form ui" style="border: 1px solid gray; zoom:75%;">
 
-   * **Both Form UI and Conversation Experience (DRAFT)** – This further prompts you to choose a channel. When a user is using one of the selected channels they are presented with a Form UI, the rest of the channel users get a conversation experience. 
+    * **Both Form UI and Conversation Experience (DRAFT)** – This further prompts you to choose a channel. When a user is using one of the selected channels they are presented with a Form UI, the rest of the channel users get a conversation experience. 
 
-      This option creates:
+        This option creates:
    
-      * A **Bot Action Node** to determine the transitions to the Form Node and the Sub-dialog Node based on the channels selected.
-      * A **Form Node** for the Digital Form, same as was generated for the Only Form UI above.
-      * A **Sub-dialog Node** to capture the required entities (as defined in the Digital Form using components) for the conversational experience. 
-      * A **Group** encompassing the following nodes. This grouping can be renamed and/or deleted. [Learn more](../../dialogs/node-connections/grouping-nodes/#add-a-node-group){:target="_blank"}.
+        * A **Bot Action Node** to determine the transitions to the Form Node and the Sub-dialog Node based on the channels selected.
+        * A **Form Node** for the Digital Form, same as was generated for the Only Form UI above.
+        * A **Sub-dialog Node** to capture the required entities (as defined in the Digital Form using components) for the conversational experience. 
+        * A **Group** encompassing the following nodes. This grouping can be renamed and/or deleted. [Learn more](../../dialogs/node-connections/grouping-nodes/#add-a-node-group){:target="_blank"}.
 
-      <img src="../../images/form-experience-nodes.png" alt="form experience node" title="form experience node" style="border: 1px solid gray; zoom:75%;">
+        <img src="../../images/form-experience-nodes.png" alt="form experience node" title="form experience node" style="border: 1px solid gray; zoom:75%;">
 
 5. You can set the **Properties** for each of the nodes added.
 
-   * The [Form Node](../../dialogs/node-types/working-with-the-form-node/){:target="_blank"}. 
-   Of special interest are the following Component Properties:
-   * **Submit Message** – Message displayed to the end-user on successful submission of the form
-   * **Web/Mobile SDK Form Behavior** – Using this option you can either have the form displayed *inline* the chat window or *open on a full page*. Also, you can either go ahead with the default submit prompt or configure the setting to display a custom and more specific message to be shown in chat. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-form-node/#component-properties" target="_blank">Learn more</a> about the configuration.
-   * **Bot Action Node,** in case of the conversation experience flow, can also be configured in the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-logic-node/" target="_blank">Logic Node</a> as follows:
+    * The [Form Node](../../dialogs/node-types/working-with-the-form-node/){:target="_blank"}. Following Component Properties are of special interest:
+        * **Submit Message** – Message displayed to the end-user on successful submission of the form
+        * **Web/Mobile SDK Form Behavior** – Using this option you can either have the form displayed *inline* the chat window or *open on a full page*. Also, you can either go ahead with the default submit prompt or configure the setting to display a custom and more specific message to be shown in chat. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-form-node/#component-properties" target="_blank">Learn more</a> about the configuration.
+    
+    * **Bot Action Node,** in case of the conversation experience flow, can also be configured in the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-logic-node/" target="_blank">Logic Node</a> as follows:
 
-      * **Manage Context Variables** is used to create and set values for the context variables. Remember to use the full path of the variable in the _key_ field ie. ```context.BotUserSession.<variable_name>```
+        * **Manage Context Variables** is used to create and set values for the context variables. Remember to use the full path of the variable in the _key_ field ie. ```context.BotUserSession.<variable_name>```
 
-      !!! Note
+            !!! Note
       
-            We urge you not to make changes to the connection settings as this affects the VA's performance.
+                We urge you not to make changes to the connection settings as this affects the VA's performance.
 
-   * **Sub-dialog Node** is configured as a normal [Dialog Node](../../dialogs/node-types/working-with-the-dialog-node/"){:target="_blank"} as follows:
+    * **Sub-dialog Node** is configured as a normal [Dialog Node](../../dialogs/node-types/working-with-the-dialog-node/"){:target="_blank"} as follows:
 
-      * Use the **Entity Post-assignment** to capture the user input.
-      * In case you modify the sub-dialog or the source form, you are presented with an option to **Regenerate Dialog**. This ensures that the changes are reflected in the task without having to rebuild the entire task. Be aware that the changes are reflected in all places this sub-dialog is used.
+        * Use the **Entity Post-assignment** to capture the user input.
+        * In case you modify the sub-dialog or the source form, you are presented with an option to **Regenerate Dialog**. This ensures that the changes are reflected in the task without having to rebuild the entire task. Be aware that the changes are reflected in all places this sub-dialog is used.
 
-         <img src="../../images/subdialog-node-configuration.png" alt="sub dialog node" title="sub dialog node" style="border: 1px solid gray; zoom:75%;">
+        <img src="../../images/subdialog-node-configuration.png" alt="sub dialog node" title="sub dialog node" style="border: 1px solid gray; zoom:75%;">
 
 6. The user input can be accessed as follows:
 
@@ -237,9 +233,9 @@ You can add a form directly to a panel, it creates a widget by default.
 8. You can **Test** the panel.
 9. Follow the steps provided [here](../../../../app-settings/dev-tools/kore-ai-web-sdk-tutorial/){:target="_blank"} to publish and host the panels.
 
-   !!! Note
+    !!! Note
 
-         While a Digital Form is used to define multiple Widgets and also add to multiple panels, it will be associated with a single Dialog Task across all Widgets and Panels.
+        While a Digital Form is used to define multiple Widgets and also add to multiple panels, it will be associated with a single Dialog Task across all Widgets and Panels.
 
 ## The User Experience
 
@@ -344,20 +340,20 @@ As with any assistant, the Digital Forms exist in the following states:
 * **_Rejected_** when the Publish request is rejected by the admin.
 * **_Published_** In the XO Platform, the status of a Digital Form remains In Development even after publishing.
 
-   <img src="../../images/publish-status.png" alt="publish status" title="publish status" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/publish-status.png" alt="publish status" title="publish status" style="border: 1px solid gray; zoom:75%;">
 
-   On publishing the form, you can see the form listed under **Publish Status → View Publishing Summary**, but the status on the Digital Forms main page remains as _In Development_.
+    On publishing the form, you can see the form listed under **Publish Status → View Publishing Summary**, but the status on the Digital Forms main page remains as _In Development_.
 
-   <img src="../../images/form-status.png" alt="form status" title="form status" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/form-status.png" alt="form status" title="form status" style="border: 1px solid gray; zoom:75%;">
 
-   The _In Development_ and _Published_ versions of the VA can be viewed by toggling between the respective statuses in the top search-bar.
+    The _In Development_ and _Published_ versions of the VA can be viewed by toggling between the respective statuses in the top search-bar.
 
-   <img src="../../images/va-status-search.png" alt="va status search" title="va status search" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/va-status-search.png" alt="va status search" title="va status search" style="border: 1px solid gray; zoom:75%;">
  
 
-   !!! Note
+    !!! Note
    
-         If any edits are done to the Digital Form while it is In Development, the changes would be reflected in the Published version as soon as you publish the form.
+        If any edits are done to the Digital Form while it is In Development, the changes would be reflected in the Published version as soon as you publish the form.
 
 * **_Suspended_** when a published form is suspended by the admin.
 
@@ -382,7 +378,7 @@ While the dependencies are published together, chances are that all the dependen
 * A relevant Standard Response is displayed and
 * Logged as Failed Task in Analytics.
    
-   * Digital Form is in a published state, but the Dialog Task is not available then on Form submission, the end-user is presented with the Form’s Error Message.
+    * Digital Form is in a published state, but the Dialog Task is not available then on Form submission, the end-user is presented with the Form’s Error Message.
 
 ### Import
 
@@ -409,9 +405,9 @@ The Bot Export option is available for Digital Forms with a status of *In Develo
 **_Note that this does not include the Sub-dialog Tasks generated using Digital Forms._**
 * Complete information for each of the selected forms are available in the export file and this includes:
    
-   * Fields
-   * Field properties
-   * Form integrations
+    * Fields
+    * Field properties
+    * Form integrations
 
 ## Form Component Details
 
@@ -423,60 +419,60 @@ Following is a list of the available components.
 
 * **Text Field** – used for single-line input.
 
-   <img src="../../images/text-field-input.png" alt="text field" title="text field" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/text-field-input.png" alt="text field" title="text field" style="border: 1px solid gray; zoom:75%;">
 
 * **Text Area** – used for multi-line entry.
 
-   <img src="../../images/text-area.png" alt="text area" title="text area" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/text-area.png" alt="text area" title="text area" style="border: 1px solid gray; zoom:75%;">
 
 * **Number** – used for numerical entries.
 
-   <img src="../../images/number-field.png" alt="number field" title="number field" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/number-field.png" alt="number field" title="number field" style="border: 1px solid gray; zoom:75%;">
 
 * **Radio Button** – used as a selection option from a given list.
 
-   <img src="../../images/radio-button.png" alt="radio button" title="radio button" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/radio-button.png" alt="radio button" title="radio button" style="border: 1px solid gray; zoom:75%;">
 
 * **Dropdown** – Used as a selection option from a given list; can be multi-select.
 
-   <img src="../../images/dropdown-list.png" alt="dropdown list" title="dropdown list" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/dropdown-list.png" alt="dropdown list" title="dropdown list" style="border: 1px solid gray; zoom:75%;">
 
 * **Checkbox** – Used for multi-select option from a given list.
 
-   <img src="../../images/checkbox.png" alt="checkbox" title="checkbox" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/checkbox.png" alt="checkbox" title="checkbox" style="border: 1px solid gray; zoom:75%;">
 
 * **Date** – Used for date entries, gives a date picker for the user to choose the date.
 
-   <img src="../../images/date-calendar.png" alt="date" title="date" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/date-calendar.png" alt="date" title="date" style="border: 1px solid gray; zoom:75%;">
 
 * **Date & Time** – Used for date & time entries. The system displays a date and time picker for the user to choose the date and time.
 Use the **Date component** and set the _Time option_ to _yes_; choose from _12_ or _24-hour_ format.
 
-   <img src="../../images/date-time.png" alt="date and time" title="date and time" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/date-time.png" alt="date and time" title="date and time" style="border: 1px solid gray; zoom:75%;">
 
 * **Phone Number** – Used for phone number entries, allows the user to choose the country code.
 
-   <img src="../../images/phone-number.png" alt="phone number" title="phone number" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/phone-number.png" alt="phone number" title="phone number" style="border: 1px solid gray; zoom:75%;">
 
 * **Email** – Used for email address entries, validates for _xxx@uuu.com_ format.
 
-   <img src="../../images/email-field.png" alt="email" title="email" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/email-field.png" alt="email" title="email" style="border: 1px solid gray; zoom:75%;">
 
 * **Toggle** – Used for switching between two values, ideal for yes/no type of inputs.
 
-   <img src="../../images/toggle-field.png" alt="toggle" title="toggle" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/toggle-field.png" alt="toggle" title="toggle" style="border: 1px solid gray; zoom:75%;">
 
 * **Address** – Used for address entries.
 
-   <img src="../../images/address-field.png" alt="address" title="address" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/address-field.png" alt="address" title="address" style="border: 1px solid gray; zoom:75%;">
 
 * **URL** – Used for web URL entries, validates for _xxx.com_ format.
 
-   <img src="../../images/url-field.png" alt="url" title="url" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/url-field.png" alt="url" title="url" style="border: 1px solid gray; zoom:75%;">
 
 * **Range Slider** – Value selection between specified min and max values; can be represented as a percentage.
 
-   <img src="../../images/range-slider.png" alt="range slider" title="range slider" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/range-slider.png" alt="range slider" title="range slider" style="border: 1px solid gray; zoom:75%;">
 
 * **Password** - Used to display passwords in their masked form ```*****```
 
@@ -484,19 +480,19 @@ Use the **Date component** and set the _Time option_ to _yes_; choose from _12_ 
 
 * **Button** – Used as a clickable component to submit reset, or open an external URL the form. Choose from _Primary_, _Secondary_, _Tertiary_, _Ghost,_ or _Danger_.
 
-   <img src="../../images/button-field.png" alt="button" title="button" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/button-field.png" alt="button" title="button" style="border: 1px solid gray; zoom:75%;">
 
 * **Label** – Used to display a static text box, no action required from the user.
 
-   <img src="../../images/label-field.png" alt="label" title="label" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/label-field.png" alt="label" title="label" style="border: 1px solid gray; zoom:75%;">
 
 * **Protip** – Used to mark important information for the end-user, no user action required.
 
-   <img src="../../images/protip-field.png" alt="protip" title="protip" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/protip-field.png" alt="protip" title="protip" style="border: 1px solid gray; zoom:75%;">
 
 * **Note** - Used to mark information for the end-user, no user action required.
 
-   <img src="../../images/note-field.png" alt="note" title="note" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/note-field.png" alt="note" title="note" style="border: 1px solid gray; zoom:75%;">
 
 ### Component Properties
 
@@ -504,7 +500,7 @@ The following are the properties that can be set for each of the components.
 
 !!! Note
 
-      Not all the properties are valid for all the components, refer to the [Property Matrix](#component-properties) for the mapping.
+    Not all the properties are valid for all the components, refer to the [Property Matrix](#component-properties) for the mapping.
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">
