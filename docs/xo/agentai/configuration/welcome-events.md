@@ -44,16 +44,16 @@ In this section, you can customize greeting messages at the beginning of the con
    
 7. Click **Copy from Chat** to copy existing messages in **Chat**.
 
-!!! note "Note"
-    **Copy from Voice** appears for the Chat channel and **Copy from Chat** appears for the Voice channel.
+    !!! note "Note"
+        **Copy from Voice** appears for the Chat channel and **Copy from Chat** appears for the Voice channel.
 
-   <img src="../welcome-events-images/copying-from-chat-messages-4.png" alt="copying-from-chat-messages" title="copying-from-chat-messages" style="border: 1px solid gray; zoom:80%;">
+    <img src="../welcome-events-images/copying-from-chat-messages-4.png" alt="copying-from-chat-messages" title="copying-from-chat-messages" style="border: 1px solid gray; zoom:80%;">
    
    1. Select the **Welcome Messages** button to select all the existing messages or select individual messages one by one.
    
    2. Click **Confirm**.
    
-   All selected messages appear in the list of existing messages.
+      All selected messages appear in the list of existing messages.
    
 8. Click **Display Random Message** to enable all configured messages and randomly display any three on the agent’s screen.
 
