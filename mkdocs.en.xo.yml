@@ -118,8 +118,23 @@ nav:
       - Flows and Channels:
         - Flows: 
           - Introduction: flows/introduction-to-flows.md
-          - Start Flows: flows/introduction-to-flows.md
-          - Exit Flows: flows/introduction-to-flows.md
+          - Create Flows: flows/create-flows.md
+          - Navigate the Flow Designer: flows/navigate-the-flow-designer.md
+          - Node Types:
+            - Introduction to Flow Nodes: flows/flow-types/introduction-to-flow-nodes.md
+            - Agent Transfer: flows/node-types/agent-transfer.md
+            - Automation: flows/node-types/automation.md
+            - Check Agent Availability: flows/node-types/check-agent-availability.md
+            - Check Business Hours: flows/node-types/check-business-hours.md
+            - Connect to API: flows/node-types/connect-to-api.md
+            - End Flow: flows/node-types/end-flow.md
+            - Go to Flow: flows/node-types/go-to-flow.md
+            - IVR Digit Input: flows/node-types/ivr-digit-input.md
+            - IVR Menu: flows/node-types/ivr-menu.md
+            - Message Prompt: flows/node-types/message-prompt.md
+            - Script Task: flows/node-types/script-task.md
+            - Set Queue: flows/node-types/set-queue.md
+            - Split: flows/node-types/split.md
         - Channels:
           - Digital:
             - Channel Enablement: channels/adding-channels-to-your-bot.md  
