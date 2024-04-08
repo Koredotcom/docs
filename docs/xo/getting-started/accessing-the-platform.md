@@ -83,7 +83,7 @@ After you sign in to Kore.ai’s XO Platform, you are directed to the landing pa
 
 ## Invite Users to your App
 
-Account administrators can add other enterprise users to the App account by inviting them from the Bots Admin portal.
+Account administrators can add other enterprise users to the App account by inviting them from the Apps Admin portal.
 
 To invite users to your Kore.ai XO Platform account, follow these steps:
 
@@ -117,7 +117,7 @@ After a user is invited to an account, the administrator can enable the XO Platf
 
 1. Sign in to the Apps Admin portal at [https://platform.kore.ai/admin](https://platform.kore.ai/admin){:target="_blank"}.
 2. On the left pane, select **User Management > Users**.
-3. On the _Manage Users_ window, **select the users** to whom you want to grant access. 
+3. On the _Manage Users_ window, **select the users** to whom you want to grant access.
 
     <img src="../images/accplatform(4).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
@@ -145,7 +145,6 @@ Some of the common scenarios where you can join or sign up to a workspace includ
 7. Additional users can be invited to a workspace using the ‘Invite Team’ option or inviting users to a particular assistant.
 8. A user can belong to multiple workspaces.
 
-
 ### Join a Workspace
 
 Before setting up your Workspace, you need to sign up to the Kore.ai XO Platform.
@@ -153,7 +152,6 @@ Before setting up your Workspace, you need to sign up to the Kore.ai XO Platform
 If your email domain matches existing Workspaces within the XO Platform, then it means that your organization is already working on projects you may want to join. The Platform lists matching Workspaces and you can **Request Access** to them as soon as you sign up. If you are part of a team, but you are not managing it, then this is the recommended way to proceed.
 
 <img src="../images/accplatform(1).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
-
 
 ### Create Your Workspace
 
