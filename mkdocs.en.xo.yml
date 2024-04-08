@@ -140,23 +140,16 @@ nav:
             - Channel Enablement: channels/adding-channels-to-your-bot.md  
           - Voice: 
             - Kore Voice Gateway: channels-and-flows/flows/flows.md
-            - Third Party Voice:  channels-and-flows/flows/flows.md          
-      - Automation AI:
-        - About Virtual Assistant: getting-started/virtual-assistants-overview.md
-        - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
-      - Search AI:
-        - About Answers: virtual-assistants-overview.md
-        - Configure Answers: virtual-assistants-overview.md   
-      - Contact Center AI:
-        - About Contact Center: virtual-assistants-overview.md
-        - Set up Contact Center: virtual-assistants-overview.md     
-      - Agent AI:
-        - About Agent AI: virtual-assistants-overview.md
-        - Set up Agent AI: virtual-assistants-overview.md               
+            - Third Party Voice:  channels-and-flows/flows/flows.md                     
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
+    - Release Notes:
+      - What's new in XO v11: getting-started/glossary/concepts-and-terminology.md 
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
+    - Getting Started:
+        - About Virtual Assistant: getting-started/virtual-assistants-overview.md
+        - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
     - Use Cases: 
       - Dialogs Tasks:
         - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
@@ -294,6 +287,9 @@ nav:
         - Answer Configuration: searchai/answer-configuration.md
   - Contact Center AI:
     - Overview: contactcenter/about-contact-center-ai.md 
+    - Getting Started:
+        - About Contact Center: contactcenter/about-contact-center-ai.md
+        - Set up Contact Center: contactcenter/about-contact-center-ai.md    
     - Agent and Supervisors: 
       - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
       - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md
@@ -322,6 +318,9 @@ nav:
       - Overview: contactcenter/campaigns/about-campaigns.md
   - Agent AI:
     - Overview: agentai/about-agent-ai.md 
+    - Getting Started:
+        - About Agent AI: agentai/about-agent-ai.md
+        - Set up Agent AI: agentai/about-agent-ai.md              
     - Agent Experience:
       - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md
       - Agent Playbook: agentai/agent-experience/playbook.md       
