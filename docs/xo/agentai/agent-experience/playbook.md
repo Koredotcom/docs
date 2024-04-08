@@ -53,10 +53,7 @@ For help, refer to the [Field Description](#field-description-general-settings) 
 
 6. Click **Done** to complete the process.
 
-
 ### Steps to Create a Dynamic Playbook
-
-
 
 1. Sign in to the XO Platform.
 2. Click **Configuration** > **Playbook**.
@@ -86,7 +83,6 @@ For help, refer to the [Field Description](#field-description-general-settings) 
 
 
 ### Field Description – General Settings
-
 
 <table>
   <tr>
@@ -154,8 +150,6 @@ For help, refer to the [Field Description](#field-description-general-settings) 
   </tr>
 </table>
 
-
-
 ## Playbook Configuration
 
 The Playbook Configuration section explains the setup process of a playbook. A playbook has two main categories–Stages and Steps–with Stages as the primary and Steps as the secondary category. By default, Stages are available as Open and Close. There can be multiple steps inside each stage, and you can choose how step progression (sequential or random) takes place.
@@ -165,9 +159,7 @@ The Playbook Configuration section explains the setup process of a playbook. A p
 
 Steps are the secondary categories that reside under Stages. By default, the Primary playbooks have three steps under the Open stage and two steps under the Close stage. You can add more steps based on the requirement.
 
-
 #### Creating a Step in Primary Playbooks
-
 
 
 1. Create a **Primary** playbook. For help, refer to [Steps to create a Primary Playbook](#steps-to-create-a-primary-playbook).
@@ -190,7 +182,6 @@ Steps are the secondary categories that reside under Stages. By default, the Pri
 
 
 #### Creating a Step in Dynamic Playbooks
-
 
 
 1. Create a Dynamic playbook. For help, refer to the [Steps to Create a Dynamic Playbook](#steps-to-create-a-dynamic-playbook) section.
@@ -217,8 +208,6 @@ The system dynamically determines an agent’s step adherence through one of the
 
 #### Steps to set up Step Adherence
 
-
-
 1. Create a playbook. For help, refer to [Steps to create a Primary Playbook](#steps-to-create-a-primary-playbook).
 2. Click **+ Add Step**. The **Step Configuration** page appears.
 3. Click the **Step Adherence** button.
@@ -236,21 +225,15 @@ The system dynamically determines an agent’s step adherence through one of the
 
 5. Click **Apply**.
 
-
-
 ## Assigning a Playbook
 
 This section deals with the process of assigning the playbooks. Here, you can choose the intended agents who can see the playbook. The following options are available:
-
-
 
 * **Trigger for all Interactions**: The Playbook will be visible for all interactions and all agents.
 * **Trigger for Selected Agents**: The Playbook will only be visible to the selected agents or groups.
 
 
 ### Steps to Assign a Playbook
-
-
 
 1. Create a playbook. For help, refer to [Steps to create a Primary Playbook](#steps-to-create-a-primary-playbook).
 2. Click the **Assign** button in the **General Settings** page.
@@ -262,10 +245,7 @@ This section deals with the process of assigning the playbooks. Here, you can ch
 
 This section explains the process of editing and deleting an existing playbook. This process is the same for both Primary and Dynamic playbooks.
 
-
 ### Steps to Edit a Playbook
-
-
 
 1. Sign in to the XO Platform.
 2. Click **Configuration** > **Playbook**.
@@ -279,8 +259,6 @@ This section explains the process of editing and deleting an existing playbook. 
 
 
 ### Steps to Delete a Playbook
-
-
 
 1. Sign in to the XO Platform.
 2. Click **Configuration** > **Playbook**.
@@ -298,8 +276,6 @@ You can edit and delete an existing step, as required. This process is the same 
 
 ### Editing a Step
 
-
-
 1. Sign in to the XO Platform.
 2. Click **Configuration **>** Playbook**.
 3. Click the **Edit** button against the playbook for which you want to edit a step.
@@ -308,9 +284,7 @@ You can edit and delete an existing step, as required. This process is the same 
 6. Click **Update** to complete the process.
 
 
-## **Deleting a Step**
-
-
+## Deleting a Step
 
 1. Sign in to the XO Platform.
 2. Click **Configuration** > **Playbook**.
