@@ -143,6 +143,8 @@ nav:
             - Third Party Voice:  channels-and-flows/flows/flows.md                     
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
+    - Release Notes:
+      - What's new in XO v11: getting-started/glossary/concepts-and-terminology.md 
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:
