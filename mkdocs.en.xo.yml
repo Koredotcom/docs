@@ -323,7 +323,8 @@ nav:
   - Agent AI:
     - Overview: agentai/about-agent-ai.md 
     - Agent Experience:
-      - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md       
+      - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md
+      - Agent Playbook: agentai/agent-experience/playbook.md       
   - Integrations & APIs:
     - Overview: channels/IVR-integration.md    
     - Integrations:

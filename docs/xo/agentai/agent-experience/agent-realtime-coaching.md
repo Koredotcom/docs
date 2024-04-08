@@ -1,6 +1,6 @@
 # Agent Real-time Coaching (Beta)
 
-## **Introduction**
+## Introduction
 Contact center agents are often under pressure to provide better customer experiences. Dealing with high call volumes and complex conversations can make it challenging for agents to meet or exceed customer expectations without sufficient support, guidance, and tools.
 
 The Real-time Agent Coaching feature enables real-time coaching based on the analysis of agent utterances and speech. You can set up specific utterances and speech patterns for AgentAssist to take relevant actions, such as providing hints and nudges or emailing the manager when those patterns occur.
@@ -9,7 +9,7 @@ As a contact center supervisor, you can view triggered utterances, including the
 
 This document is meant for the contact center supervisors and explains everything about the Real-time Agent Coaching feature, including rules, associated triggers, and actions.
 
-## **Rules**
+## Rules
 
 Rules are a combination of triggers and actions to solve an issue. Each rule is an independent entity that you can edit, delete, tag, untag, enable, or disable. For easy identification, you can label all relevant rules with the same tag. You can use multiple tags for one rule and one tag for multiple rules. Real-time Agent Coaching has two types of rules:
 
@@ -18,13 +18,13 @@ Rules are a combination of triggers and actions to solve an issue. Each rule is 
 
 Currently, the pre-built rules section has two rules – None Intent and Price Objection.
 
-### **None Intent**
+### None Intent
 
 The None Intent rule contains utterances that are used to prevent false positives during intent identification. By using these utterances, you can train the system to differentiate between a positive (trained) and a false-positive (wrong, untrained, ambiguous) utterance. For example, an utterance “I need help with my account” is a positive intent and the system has to act accordingly, but the utterance “It is too expensive” is a false-positive intent wherein the system should not take any action.
 
 This rule is enabled by default, and you can’t disable or delete it. You can, however, add more utterances to make this rule more effective.
 
-#### **Adding None Intent Utterances**
+#### Adding None Intent Utterances
 
 You can add utterances in two ways:
 
@@ -62,7 +62,7 @@ Following this step, you can add multiple utterances.
     
     The new utterance gets added to the list of utterances.
 
-### **Price Objection**
+### Price Objection
 
 This is a predefined rule with conditions and actions that come with Agent Coaching. You can customize the conditions and actions, but can’t edit or delete the rule name. However, you can disable this rule, if needed. It contains a customer’s price objection utterance and defines the actions agents should take in response. The predefined conditions and actions are:
 
@@ -81,15 +81,15 @@ The following screenshot displays the **Price Objection** rule:
 
 For information on rule functionalities, refer to the section [Create, Publish, Edit, Delete, and Disable Rules](#create-publish-edit-delete-and-disable-rules).
 
-## **Create, Publish, Edit, Delete, and Disable Rules**
+## Create, Publish, Edit, Delete, and Disable Rules
 
 This section explains how to create, tag, publish, edit, delete, and disable rules.
 
-### **Creating a New Rule**
+### Creating a New Rule
 
 From time to time, depending on newer or different situations, you can create new rules to help agents with newer issues. This section explains the steps to create a new rule.
 
-#### **Steps to create a new rule:**
+#### Steps to create a new rule:
 
 1. Sign in to **XO Platform**.
 2. Click **AgentAssist** > **Experience** > **Agent Coaching**.
@@ -123,11 +123,11 @@ A message shows up to confirm a new rule creation.
 
 12. Click **Save**.
 
-### **Editing a Rule**
+### Editing a Rule
 
 You can add to or change an existing rule based on the requirements.
 
-#### **Steps to edit a rule**
+#### Steps to edit a rule
 
 1. Sign in to **XO Platform**.
 2. Click **AgentAssist** > **Experience** > **Agent Coaching**.
@@ -138,36 +138,36 @@ You can add to or change an existing rule based on the requirements.
 !!! note "Note"
     Co-editing a rule is not allowed–if you edit a rule, it’s locked, and no one else can edit or delete it simultaneously. AgentAssist will notify you if you attempt to co-edit a rule. If a rule is locked for editing, but the user has not performed any editing for 15 minutes or left the Rules Configuration screen, AgentAssist unlocks the rule for editing by another user.
 
-### **Deleting a Rule**
+### Deleting a Rule
 
 You can delete a rule due to irrelevance or other reasons. AgentAssist lets you delete an existing rule with the click of a button.
 
-#### **Steps to delete a rule**
+#### Steps to delete a rule
 
 1. Go to the **AgentAssist** > **Experience** > **Agent Coaching** main page.
 2. Click the **delete** button beside a rule name that you want to delete.
 3. Click **Yes** in the confirmation popup window.
 
-### **Disabling a Rule**
+### Disabling a Rule
 
 If you don’t want to use a rule temporarily, you can disable it.
 
-#### **Steps to disable a rule**
+#### Steps to disable a rule
 
 1. Go to the **AgentAssist** > **Experience** > **Agent Coaching** main page.
 2. In the **Enabled** column, use the toggle to disable or enable a rule.
     1. The **Configuration has been Saved** message appears on the screen.
 
-## **Agent Coaching Rule Triggers (When…)**
+## Agent Coaching Rule Triggers (When…)
 Trigger setting is essential to rule creation. You can’t have a rule without a trigger. Triggers define the conditions for a rule to come into effect. This section explains how to set up triggers for new rules. The available triggers are:
 
 * Utterance Triggers
 * Speech Analysis Triggers
 
-### **Utterance Triggers**
+### Utterance Triggers
 Utterances are inputs from either the customers or the agents. In Utterance Triggers, you set up conditions like input from the customer or agent, the number of times the input came, and the time frame within which the input came to set off the trigger.
 
-#### **Steps to set up Utterance Triggers:**
+#### Steps to set up Utterance Triggers:
 1. Go to the rule trigger creation page. For help, refer to [Steps to create a new rule](#steps-to-create-a-new-rule). 
 2. Under **When**, click the **+ Add a trigger** button.
 3. Select **Utterance**.
@@ -213,10 +213,10 @@ Utterances are inputs from either the customers or the agents. In Utterance Trig
         From the dropdown, select **first** or **within** and enter a number in the messages field.
 15. Press the **Enter** key to complete the process.
 
-### **Speech Analysis Triggers**
+### Speech Analysis Triggers
 This feature analyzes the speech pattern or event of both the customer and the agent and provides real-time feedback and coaching to improve customer-agent conversation quality. This section explains the steps to set up the Speech Analysis Triggers feature.
 
-#### **Steps to set up Speech Analysis Triggers**
+#### Steps to set up Speech Analysis Triggers
 1. Select **Speech Analysis** after clicking **When**> **+Add a trigger**.
     <img src="../agent-coaching-images/speech-analysis-trigger-selection-14.png" alt="speech-analysis-trigger-selection" title="speech-analysis-trigger-selection" style="border: 1px solid gray; zoom:80%;">
 2. Click **{speech type}** and select a type for analysis.
@@ -410,10 +410,10 @@ Valid values to choose from:
   </tr>
 </table>
 
-### **And/Or Condition**
+### And/Or Condition
 AgentAssist allows you to add multiple rule triggers. It lets you set different conditions like combining multiple rules or choosing one or a set of rules against another or a different set of rules. You can even choose or combine rules from different trigger types like Utterance and Speech Analysis triggers.
 
-#### **Steps to select And/Or condition**
+#### Steps to select And/Or condition
 1. Click **+Add a trigger** in the rule trigger creation page to create a new trigger.
 2. Click **+Add a trigger** again to create a new rule trigger.
 3. Select **And** or **Or**.
@@ -426,7 +426,7 @@ AgentAssist allows you to add multiple rule triggers. It lets you set different 
 
 The **And** condition ensures that rule triggers **1** and **2** are combined, and the **Or** condition ensures that either the combination of the first two rule triggers (**1+2**) or the third rule trigger (**3**) becomes applicable.
 
-## **Agent Real-time Coaching Actions (Then do…)**
+## Agent Real-time Coaching Actions (Then do…)
 After setting up rule triggers, you must set up actions for those triggers. Here, you configure what actions AgentAssist should take if the conditions you set up are met. You can set up three different actions:
 * Nudge Agent
 * Hint Agent
@@ -434,10 +434,10 @@ After setting up rule triggers, you must set up actions for those triggers. Here
 
 You can also set up adherence, which is like an acknowledgment, to ensure the agent has followed the instructions.
 
-### **Add Adherence**
+### Add Adherence
 The Add Adherence feature lets you know the agent’s adherence to the instructions in the form of nudges and hints. Later, you can use this acknowledgment to measure agent performance in the Dashboard. This feature is applicable only for the Nudge and Hint Agent actions. 
 
-#### **Add Adherence Types**
+#### Add Adherence Types
 You have two types of adherences to choose from:
 
 * **Acknowledge Pressed**: Choosing this option sends an acknowledgment that the agent understood your instructions. The agent doesn’t need to take any other action except acknowledging your message. An example would be a compliment to the agent for a job well done. The following screenshot is displayed when this option is used:
@@ -448,14 +448,14 @@ You have two types of adherences to choose from:
 
 For practical examples of this feature, refer to steps 7-8 of [Steps to set up the Nudge Agent actions](#steps-to-set-up-the-nudge-agent-actions).
 
-### **Nudge Agent**
+### Nudge Agent
 The Nudge Agent actions are the small messages that pop up on the agent’s screen while communicating with the customers. They are disappearing messages, which stay on the agent’s screen for 5 seconds. The agent can close these messages anytime after their appearance. Through these messages, you either compliment the agents for a good job or direct them to take other appropriate actions to serve the customers in the best way possible. Here are the following four nudges that you can choose from:
 * Positive
 * Neutral
 * Alert
 * Critical
 
-#### **Steps to set up the Nudge Agent actions:**
+#### Steps to set up the Nudge Agent actions:
 1. Go to the rule action setup page.
 2. Click **+ Add an action** under the **Then do…** section.
    <img src="../agent-coaching-images/then-do-add-an-action-40.png" alt="then-do-add-an-action" title="then-do-add-an-action" style="border: 1px solid gray; zoom:80%;"> 
@@ -507,14 +507,14 @@ The Nudge Agent actions are the small messages that pop up on the agent’s scre
 
          <img src="../agent-coaching-images/critical-nudge-widget-55.png" alt="critical-nudge-widget" title="critical-nudge-widget" style="border: 1px solid gray; zoom:80%;">
 
-### **Hint Agent**
+### Hint Agent
 The Hint Agent actions are small pop-up messages that advise agents to take further action. They appear on the agent’s screen while communicating with the customers and may or may not auto-close based on how you set them. Through these messages, you also compliment the agents for a good job. Here are the four hint types that you can choose from:
 * Positive
 * Neutral
 * Alert
 * Critical
 
-#### **Steps to set up the Hint Agent actions:**
+#### Steps to set up the Hint Agent actions:
 1. Go to the rule action setup page.
 2. Click **+ Add an action** under the **Then do…** section.
 3. Click the **Hint Agent** option in the **Choose an Action** window.
@@ -563,10 +563,10 @@ The agent gets screens similar to the following on their system for:
 
 <img src="../agent-coaching-images/critical-hint-widget-69.png" alt="critical-hint-widget" title="critical-hint-widget" style="border: 1px solid gray; zoom:80%;"> 
 
-### **Email Manager**
+### Email Manager
 This feature lets you set a push notification alert to the manager’s desktop. You can set who should receive this notification and customize the title and the body of the message. It applies to the customer’s actions, such as using profanity or too many cross-talks. Instead of nudges and hints, the system can send an alert notification to the manager in these situations.
 
-#### **Steps to set up the Email Manager action:**
+#### Steps to set up the Email Manager action:
 1. Go to the rule action setup page.
 2. Click **+ Add an action** under the **Then do…** section.
 3. Click the **Email Manager** option in the **Choose an Action** window.
@@ -584,10 +584,10 @@ This feature lets you set a push notification alert to the manager’s desktop. 
 <img src="../agent-coaching-images/email-message-body-73.png" alt="email-message-body" title="email-message-body" style="border: 1px solid gray; zoom:80%;"> 
 9. Enter the notification content and then click the **tick** mark to save it.
 
-## **Assign This To**
+## Assign This To
 This feature lets you assign the rule to the intended agents or groups. Currently, by default, this feature is assigned for all agents.
 
-### **Steps to assign rules to agents or groups**
+### Steps to assign rules to agents or groups
 1. Go to the rule action setup page. For help, refer to steps 1 and 2 of [Steps to create a new rule](#steps-to-create-a-new-rule).
 2. Click **+Add agents, groups** under the **Assign this to…** section.
 The following screen shows the default selection of **All Agents**:
