@@ -127,9 +127,9 @@ This audio is played to the customers on hold. Select the audio you wish to play
 These messages are played periodically to the customers waiting in the queue or put on hold. To configure them, follow these steps:
 
 1. Set the number of seconds within which the periodic message should play;
-2. Set the play order as either _random _or _sequential_;
-3. Select the type of playback – either _once _or _looped_;
-4. Edit the message and change the language, as needed, by clicking one of the language options at the top of the editor. Click ✔ **Done** to save or click **x** **Close** to discard your changes;
+2. Set the play order as either _random_ or _sequential_;
+3. Select the type of playback – either _once_ or _looped_;
+4. Edit the message and change the language, as needed, by clicking one of the language options at the top of the editor. Click **✔** **Done** to save or click **x** **Close** to discard your changes;
 5. To add another message, click **+ Add Another**;
 6. To delete a message, click the **Delete** icon next to it.
 <img src="../images/periodic-messages.png" alt="Periodic Messages" title="Periodic Messages" style="border: 1px solid gray; zoom:80%;">
@@ -147,7 +147,7 @@ If the wait time exceeds a set limit, you can offer or force a callback for wait
 
 1. **Enable** the option to activate it;
 2. Set the **digit key** that customers should press to be redirected to the callback service. Waiting customers can either be offered or **forced** to receive a callback based on the settings configured here;
-3. **Edit the chat deflection message** in the textbox. Use the language tab to change languages. Click ✔ **Done** to save or click **x** **Close** to discard your changes.
+3. **Edit the chat deflection message** in the textbox. Use the language tab to change languages. Click **✔** **Done** to save or click **x** **Close** to discard your changes.
 <img src="../images/callback-option.png" alt="Call Back Option" title="Call Back Option" style="border: 1px solid gray; zoom:80%;">
 
 #### Voicemail
@@ -162,7 +162,7 @@ Steps to offer or force voicemail:
 
 1. **Enable** the option to activate it;
 2. Set the **digit key** that customers should press to be redirected to the voicemail service. Customers waiting in the queue can either be **offered** or **forced** to receive a callback based on the settings configured here;
-3. **Edit the message** in the textbox. Use the language tab to change languages. Click ✔ **Done** to save or click **x** **Close** to discard your changes.
+3. **Edit the message** in the textbox. Use the language tab to change languages. Click **✔** **Done** to save or click **x** **Close** to discard your changes.
 <img src="../images/voicemail.png" alt="Voicemail" title="Voicemail" style="border: 1px solid gray; zoom:80%;">
 
 ### Chat Experience
@@ -176,7 +176,7 @@ In the Chat Experience section, you can configure the following settings:
 
 This message will be displayed to the contact waiting in the queue. By default, the initial message is enabled.
 
-To edit this message text and language, type your custom message in the textbox, and then select a language. Click ✔ **Done** to save or click **x** **Close** to discard your changes.
+To edit this message text and language, type your custom message in the textbox, and then select a language. Click **✔** **Done** to save or click **x** **Close** to discard your changes.
 <img src="../images/initial-message-chat.png" alt="Initial Message Chat" title="Initial Message Chat" style="border: 1px solid gray; zoom:80%;">
 
 #### Agent Transfers
