@@ -7,7 +7,7 @@ This article explains how to authorize and enable the **Freshdesk** action and i
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow Freshdesk integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} article.
+The Kore.ai XO Platform supports basic authentication to allow Freshdesk integration to exchange data. For more information, read the [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the Freshdesk integration:
 

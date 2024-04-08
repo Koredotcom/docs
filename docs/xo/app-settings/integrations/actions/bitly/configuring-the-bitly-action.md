@@ -7,7 +7,7 @@ This document explains how to authorize and enable the Bitly action and install 
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports API key authentication to allow Bitly integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} article.
+The Kore.ai XO Platform supports API key authentication to allow Bitly integration to exchange data. For more information, read the [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the Bitly integration:
 

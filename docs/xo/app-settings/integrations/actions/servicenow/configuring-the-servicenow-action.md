@@ -10,7 +10,7 @@ This article explains how to authorize and enable the **ServiceNow** action and 
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports only basic authentication to allow a ServiceNow integration to exchange data. For more information, see [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication). 
+The Kore.ai XO Platform supports only basic authentication to allow a ServiceNow integration to exchange data. For more information, see [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md). 
 
 The Kore.ai XO Platform supports the following authorization types for the ServiceNow integration:
 

@@ -212,25 +212,9 @@ Associate the Variable Namespaces to be used to execute this task. The system wi
 
 <img src="../images/alert-task-associate-namespace.png" alt="Associate Namespace" title="Associate Namespace" style="border:1px solid gray;zoom:70%;">
 
-This option is only available if you have enabled Namespaces. [Learn more](../../../app-settings/managing-namespace/){}:target="_blank"}.
+This option is only available if you have enabled Namespaces. [Learn more](../../../app-settings/managing-namespace/){:target="_blank"}.
 
 <img src="../images/version-namespaces.png" alt="version namespaces" title="version namespaces" style="border: 1px solid gray; zoom:75%;"> 
-
-## Version History
-
-You may need to troubleshoot alert tasks that have been upgraded. In the Kore.ai XO Platform , you can view version changes of each alert task to determine if, and how many times an alert task was upgraded.
-
-In the **Alert Tasks** section, click the **Settings** (gear) icon for the task to view versions for, and then click **Version History**.
-<img src="../images/version-history.png" alt="version history" title="version history" style="border: 1px solid gray; zoom:75%;"> 
-
-The **Version History** page contains the following columns:
-
-* **Version Number** – The version number of the upgrade as a minor upgrade, using X.X.syntax, for example, 1.3 where 1 is the major version upgrade number, and 3 is the minor version upgrade number.
-* **Changed By** – The username of the developer of the bot that made the upgrade changes.
-* **Changed Date** – The date that the bot was approved and published by the Enterprise Admin.
-* **Comments** – The **Upgrade Comments** provided by the developer that made the changes to the bot for an upgrade.
-
-The following illustration is an example of the **Version History** page for a bot with three minor upgrades, and one major upgrade to version 2.
 
 ## View Logs
 
