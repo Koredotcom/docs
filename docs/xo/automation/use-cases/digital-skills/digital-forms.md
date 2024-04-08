@@ -51,9 +51,13 @@ To create forms, follow the steps below:
 
 4. **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. Click the card to select the style. If it has a logo, you can upload an image file (jpg or png) for the logo.
 
-      !!! Note
+    !!! Note 
+ 
+	    Providing a relevant description is recommended. If no description is provided, a dialog will be generated, but only with **the error prompt**.
 
-            During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
+   !!! Note
+
+      During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
 
 5. Turn on the **Description** toggle if you want to show a description of the form in the header.
 
