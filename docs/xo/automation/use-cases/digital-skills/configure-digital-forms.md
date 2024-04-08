@@ -2,17 +2,17 @@
 
 In this How-To, we will explore a scenario in a Banking Bot, where the user can create an additional account. We will see how Digital Forms can be used to gather all the required information from the user and create the account.
 
-For details on what Digital Forms are and how it is implemented in the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-forms/" target="_blank">here</a>.
+For details on what Digital Forms are and how it is implemented in the XO Platform, click [here](../../digital-skills/digital-forms/){:target="_blank"}.
 
-## **Illustration with an Example**
+## Illustration with an Example
 
 Consider a Banking Bot trying to address the following scenarios:
 
 1. An already registered user wants to open an additional account.
 2. There are three types of accounts that are available, each with further options:
-* Savings Account.
-* Checking Account with an option to opt for a Cash Card and set the miniumum balance.
-* Credit Card with an option to choose the type of card to be Platinum, Gold, Silver or Basic.
+    * Savings Account.
+    * Checking Account with an option to opt for a Cash Card and set the miniumum balance.
+    * Credit Card with an option to choose the type of card to be Platinum, Gold, Silver or Basic.
     
     <img src="../../images/banking-form.png" alt="banking form" title="banking form" style="border: 1px solid gray; zoom:75%;">
 
@@ -21,7 +21,7 @@ Consider a Banking Bot trying to address the following scenarios:
 * Bot building knowledge.
 * A configured Banking Bot.
 
-## **Configurations**
+## Configurations
 
 Let us consider each of the following scenarios:
 
@@ -44,15 +44,15 @@ Create a form to gather the following information:
         * Gold
         * Silver
         * Basic
+    * **Trading** - Identity proof required.
 
 ### Form Creation
 
 1. From the Kore.ai Bot Builder platform, open the Banking Bot.
-2. Select the **Build** tab from the top menu.
-3. From the left navigation menu, select **Digital Skills -> Digital Forms** to access the Digital Forms page.
-4. Click **New Form** and enter the following:
-    * **Name** – name to the form, say _OpenAccount_
-    * **Display Name** for the form, say _Open an Account_
+2. Navigate to **Automation AI > Virtual Assistant > Digital Skills > Digital Forms** to access the Digital Forms page.
+3. Click **New Form** and enter the following:
+    * **Name** – name of the form that will be used by the engine, let's set as _OpenAccount_
+    * **Display Name** for the form, let's set as _Open an Account_
     * **Description** of the form.
         **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. 
 
@@ -62,8 +62,8 @@ Create a form to gather the following information:
 
             During the Export of the Bot, the logo is not exported along with Digital Forms. So, while importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
         
-5. **Description**: Turn on the toggle to show a description of the form in the header.
-6. **Save & Proceed** to the next step.
+4. **Description**: Turn on the toggle to show a description of the form in the header.
+5. **Save & Proceed** to the next step.
     
     <img src="../../images/form-creation-next-step.png" alt="form creation next step" title="form creation next step" style="border: 1px solid gray; zoom:75%;">
 
@@ -74,25 +74,25 @@ Create a form to gather the following information:
 3. Drag and drop a **Text Field** component onto the form.
 4. As soon as you drag and drop a component, its property settings panel will be displayed.
 5. In that panel set the following values:
-    * **Display Name** say _Name._
-    * **Name** used for internal reference, say _accountname._
+    * **Display Name** set as _Name._
+    * **Name** used for internal reference, set as _accountname._
     * **Description** of the field.
-    * **Placeholder** value to be displayed in the field when blank, say, _Enter the name of the account holder_.
+    * **Placeholder** value to be displayed in the field when blank, set as, _Enter the name of the account holder_.
       <img src="../../images/form-editor-panel.png" alt="form editor panel" title="form editor panel" style="border: 1px solid gray; zoom:75%;">
 
 6. Next, a selection box for the type of account to be opened. Drag and drop a **Dropdown** component onto the form and set the following values:
-    * **Display Name** say _Type._
-    * **Name** used for internal reference, say _accounttype._
+    * **Display Name** set as _Account Type._
+    * **Name** used for internal reference, set as _accounttype._
     * **Description** of the field.
-    * **Placeholder** value to be displayed in the field when blank, say, _Select the type of account you want to open_.
+    * **Placeholder** value to be displayed in the field when blank, set as, _Select the type of account you want to open_.
 7. Scroll and locate **Data Settings**, and deselect **Multi Select** option.
-8. Against **Dropdown values** click **Add Values** to enter the values – _Checkings, Savings, Credit Card._ You can mark one value, _Savings_, as default. This would be selected by default at the time of execution.
+8. Against **Dropdown values** click **Add Values** to enter the values – _Checking, Savings, Credit Card, Trading._ You can mark one value, _Savings_, as default. This would be selected by default at the time of execution.
 
     <img src="../../images/data-settings-add-value.png" alt="data settings add value" title="data settings add value" style="border: 1px solid gray; zoom:75%;">
 
 9. Next, for the Cash Card option when the account type is selected to be a Checkings account. Drag and drop a **Toggle** component onto the form and set the following values:
-    * **Display Name** say _Cash Card._
-    * **Name** used for internal reference, say _cashcard_.
+    * **Display Name** set as _Cash Card._
+    * **Name** used for internal reference, set as _cashcard_.
     * **Description** of the field. In this case, the question, _Want a cash card?_
     * **Value** as _Yes_ when selected and _No_ when deselected.
 
@@ -102,13 +102,13 @@ Create a form to gather the following information:
     <img src="../../images/visibility-rules.png" alt="visibility rules" title="visibility rules" style="border: 1px solid gray; zoom:75%;">
 
 12. If the user opts for cash card, then the withdrawal limit needs to be set on the same. Drag and drop a **Range Slider** component onto the form and set the following values:
-    * **Display Name** say _Withdrawal Limit._
-    * **Name** used for internal reference, say _withdrawallimit._
+    * **Display Name** set as _Withdrawal Limit._
+    * **Name** used for internal reference, set as _withdrawallimit._
     * **Description** of the field.
-    * **Placeholder** value to be displayed in the field when blank, say, _Set the withdrawal limit_.
+    * **Placeholder** value to be displayed in the field when blank, set as, _Set the withdrawal limit_.
 
 13. Deselect **Is Percentage**
-14. Select **Value** as _100_ for Min and _1000_ for Max.
+14. Select **Value** as _100_ for Min and _10000_ for Max.
 15. Under **Data Settings** you can set the **Default Value** to be 150, this would be pre-selected.
 16. **Visibility Rules** would be a compound rule – account type is checkings and cash card is selected.
 17. Scroll and locate **Visibility Settings.** This component should be visible only when the account type is set to Checkings and the Cash Card is opted.
@@ -118,10 +118,10 @@ Create a form to gather the following information:
     <img src="../../images/switch-to-advanced-mode.png" alt="switch to advanced mode" title="switch to advanced mode" style="border: 1px solid gray; zoom:75%;">
 
 20. For the Credit Card option,you need to further select the type of card. Drag and drop a **Radio Button** component onto the form and set the following values:
-    * **Display Name** say _Card Type._
-    * **Name** used for internal reference, say _cardtype_.
+    * **Display Name** set as _Card Type._
+    * **Name** used for internal reference, set as _cardtype_.
     * **Description** of the field.
-    * **Placeholder** value to be displayed in the field when blank, say, _Choose the type of credit card_.
+    * **Placeholder** value to be displayed in the field when blank, set as, _Choose the type of credit card_.
 
 21. Under **Data Settings**, set the **Radio values** to be _Platinum, Gold, Silver, and _Basic_.
 22. Scroll and locate **Visibility Settings.** This component should be visible only when the account type is set to Credit Card.
@@ -172,7 +172,7 @@ We will be creating a dialog task and adding a form node to trigger the Digital 
 1. Select the **Build** tab from the top menu
 2. From the left navigation menu, select **Conversational Skills -> Dialog Tasks.**
 3. Click the **+** against the **Dialog Tasks** to create a new Task
-    * Enter **IntentName**, say, _OpenAccount_
+    * Enter **IntentName**, set as, _OpenAccount_
     * Click **Create & Proceed** to open the dialog builder page.
 
 4. Retain the Intent Node default settings, and close the Intent Node.
@@ -193,20 +193,22 @@ Next, to capture the values returned by the Form Node using a Script node and di
 1. Add a **Message Node** to the form node.
 2. Set the **Name** to _FormMessage_ and **Display Name** to _Form Message_.
 3. Click **MANAGE RESPONSES** to open the message editor.
-<img src="../../images/click-manage-responses.png" alt="select js" title="select js" style="border: 1px solid gray; zoom:75%;">
+
+    <img src="../../images/click-manage-responses.png" alt="select js" title="select js" style="border: 1px solid gray; zoom:75%;">
 
 4. Select the **JavaScript** tab and enter the following code. This code would capture from the context object, the data submitted by the user in the Form and display it accordingly. 
-`var message;`
 
-```js
-message = 'You have opened a '+context.forms.OpenAccount.accounttype+' account in the name of '+context.forms.OpenAccount.accountname;
-if (context.forms.OpenAccount.accounttype == 'Checkings' && context.forms.OpenAccount.cashcard == 'Yes')
-  message = message + ' and opted for cash card with withdrawal limit set to '+ context.forms.OpenAccount.withdrawallimit;
-if (context.forms.OpenAccount.accounttype == 'Credit Card')
-  message = message + ' and opted for a '+ context.forms.OpenAccount.cardtype+' card';
-print(message);
-```
-<img src="../../images/select-javascript.png" alt="select js" title="select js" style="border: 1px solid gray; zoom:75%;">
+    ```
+    var message;
+    message = 'You have opened a '+context.forms.OpenAccount.accounttype+' account in the name of '+context.forms.OpenAccount.accountname;
+    if (context.forms.OpenAccount.accounttype == 'Checkings' && context.forms.OpenAccount.cashcard == 'Yes')
+    message = message + ' and opted for cash card with withdrawal limit set to '+ context.forms.OpenAccount.withdrawallimit;
+    if (context.forms.OpenAccount.accounttype == 'Credit Card')
+    message = message + ' and opted for a '+ context.forms.OpenAccount.cardtype+' card';
+    print(message);
+    ```
+    
+    <img src="../../images/select-javascript.png" alt="select js" title="select js" style="border: 1px solid gray; zoom:75%;">
 
 Your dialog with form is ready! **Talk to bot** and trigger the above dialog. The form will be displayed, enter the values and click Submit, the message would be displayed. 
 
