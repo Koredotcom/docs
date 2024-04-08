@@ -25,7 +25,7 @@ Twilio Voice must be enabled for assistants that are specifically built to work 
 To set up the integration:
 
 1. From Twilio’s main menu, select **Phone Numbers > Manage > TwiML Apps**, then click **Create New TwiML App**.
-2. Enter a name for the app and copy the **Webhook URL** from the **Configurations** tab of the Twilio Voice Channel page (**XO Platform Assistant** > **Channels & Flows** > **Channels** > **Third Party Voice** > **All** > **Twilio Voice**) and enter in the **Request URL** for **Voice**.
+2. Enter a name for the app and copy the **Webhook URL** from the **Configurations** tab of the Twilio Voice Channel page (**Automation AI** > **Channels & Flows** > **Channels** > **Third Party Voice** > **All** > **Twilio Voice**) and enter in the **Request URL** for **Voice**.
 3. Click **Save** to complete the app creation.  
 <img src="../images/twilio-voice-img1.png" alt="Create new TwiML App" title="Create new TwiML App" style="border: 1px solid gray; zoom:70%;">
 
@@ -68,7 +68,7 @@ To enable the Twilio Voice Channel, follow the below steps:
     <img src="../images/twilio-voice-img3.png" alt="Enable channel" title="Enable channel" style="border: 1px solid gray; zoom:70%;">
 
 
-4. From the **Voice Call Properties** tab, enter the details to configure the channel level voice properties, [click here for more details](../automation/use-cases/dialogs/node-types/voice-call-properties.md#channel-settings).
+4. From the **Voice Call Properties** tab, enter the details to configure the channel level voice properties, [click here for more details](../automation/use-cases/dialogs/node-types/voice-call-properties.md#channel-settings){:target="_blank"}.
 
 5. Once you have enabled the Twilio channel, it is recommended to configure the **Telephony Welcome Event** for Voice Call Settings. This plays a welcome message for users when they connect to the VA through the Twilio channel. For this:  
 
@@ -76,7 +76,7 @@ To enable the Twilio Voice Channel, follow the below steps:
     2. Click **Use Voice Call Properties** to open the Voice Call settings section.
     3. Under the **Initial Prompts** text box, enter the message that needs to be played when the user connects to the VA.
 
-For details regarding the configuration of voice properties at the Dialog Task level, please , refer to [Configuring Voice Call Settings for a Node](../../automation/use-cases/dialogs/node-types/voice-call-properties/#dialog-node-settings).
+For details regarding the configuration of voice properties at the Dialog Task level, please , refer to [Configuring Voice Call Settings for a Node](../automation/use-cases/dialogs/node-types/voice-call-properties.md#dialog-node-settings).
 
 After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel.Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
 

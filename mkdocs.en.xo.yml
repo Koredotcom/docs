@@ -118,8 +118,23 @@ nav:
       - Flows and Channels:
         - Flows: 
           - Introduction: flows/introduction-to-flows.md
-          - Start Flows: flows/introduction-to-flows.md
-          - Exit Flows: flows/introduction-to-flows.md
+          - Create Flows: flows/create-flows.md
+          - Navigate the Flow Designer: flows/navigate-the-flow-designer.md
+          - Node Types:
+            - Introduction to Flow Nodes: flows/flow-types/introduction-to-flow-nodes.md
+            - Agent Transfer: flows/node-types/agent-transfer.md
+            - Automation: flows/node-types/automation.md
+            - Check Agent Availability: flows/node-types/check-agent-availability.md
+            - Check Business Hours: flows/node-types/check-business-hours.md
+            - Connect to API: flows/node-types/connect-to-api.md
+            - End Flow: flows/node-types/end-flow.md
+            - Go to Flow: flows/node-types/go-to-flow.md
+            - IVR Digit Input: flows/node-types/ivr-digit-input.md
+            - IVR Menu: flows/node-types/ivr-menu.md
+            - Message Prompt: flows/node-types/message-prompt.md
+            - Script Task: flows/node-types/script-task.md
+            - Set Queue: flows/node-types/set-queue.md
+            - Split: flows/node-types/split.md
         - Channels:
           - Digital:
             - Channel Enablement: channels/adding-channels-to-your-bot.md  
@@ -127,7 +142,7 @@ nav:
             - Kore Voice Gateway: channels-and-flows/flows/flows.md
             - Third Party Voice:  channels-and-flows/flows/flows.md          
       - Automation AI:
-        - About Virtual Assistant: virtual-assistants-overview.md
+        - About Virtual Assistant: getting-started/virtual-assistants-overview.md
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
       - Search AI:
         - About Answers: virtual-assistants-overview.md
@@ -136,8 +151,8 @@ nav:
         - About Contact Center: virtual-assistants-overview.md
         - Set up Contact Center: virtual-assistants-overview.md     
       - Agent AI:
-        - About AgentAssist: virtual-assistants-overview.md
-        - Set up AgentAssist: virtual-assistants-overview.md               
+        - About Agent AI: virtual-assistants-overview.md
+        - Set up Agent AI: virtual-assistants-overview.md               
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
   - Automation AI: 

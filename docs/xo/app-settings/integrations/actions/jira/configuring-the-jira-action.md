@@ -6,7 +6,7 @@ This article explains how to authorize and enable the **JIRA** action and instal
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow a JIRA integration to exchange data. For more information, see [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"}. 
+The Kore.ai XO Platform supports basic authentication to allow a JIRA integration to exchange data. For more information, see [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"}. 
 
 The Kore.ai XO Platform supports the following authorization types for the JIRA integration:
 
