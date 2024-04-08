@@ -115,7 +115,7 @@ To invite users to your Kore.ai XO Platform account, follow these steps:
 
 After a user is invited to an account, the administrator can enable the XO Platform access to these users. To give XO Platform access to an account user, follow these steps:
 
-1. Sign in to the Apps Admin portal at [https://bots.kore.ai/admin](https://bots.kore.ai/admin){:target="_blank"}.
+1. Sign in to the Apps Admin portal at [https://platform.kore.ai/admin](https://platform.kore.ai/admin){:target="_blank"}.
 2. On the left pane, select **User Management > Users**.
 3. On the _Manage Users_ window, **select the users** to whom you want to grant access. 
 
