@@ -123,12 +123,12 @@ This section lists the supported languages and lets you select a language of you
 # 
 
 
-# AgentAssist V2 vs V3 - Key Differences
+## AgentAssist V2 vs V3 - Key Differences
 
 AgentAssist V3 introduces many additional features and updates over AgentAssist V2. This document highlights the differences visible on the user interface (UI) and at the feature-level.
 
 
-## Difference in the UI
+### Difference in the UI
 
 The following UI updates are done:
 
@@ -156,7 +156,7 @@ The following UI updates are done:
 
 <img src="./../widget-images/agent-assist-widget-v3.png" alt="agent-assist-widget-v3.png" title="agent-assist-widget-v3.png" style="border: 1px solid gray; zoom:80%;">
 
-## Differences at the Feature/Tab level
+### Differences at the Feature/Tab level
 
 The following updates have been added at the feature level:
 
@@ -183,7 +183,7 @@ The following updates have been added at the feature level:
 <img src="./../widget-images/agentassist-v3-features-2.png" alt="agentassist-v3-features-2" title="agentassist-v3-features-2" style="border: 1px solid gray; zoom:80%;">
 
 
-## New Tab addition - Settings Tab
+### New Tab addition - Settings Tab
 The **Settings** tab in V3 lets you to:
 
 * Turn on/off the **Proactive mode**.
