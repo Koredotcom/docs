@@ -57,23 +57,23 @@ To create forms, follow the steps below:
 
 5. Turn on the **Description** toggle if you want to show a description of the form in the header.
 
-   <img src="../../images/description-toggle-turn-on.png" alt="Description Toggle" title="Description Toggle" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/description-toggle-turn-on.png" alt="Description Toggle" title="Description Toggle" style="border: 1px solid gray; zoom:75%;">
 
 6. **Form Security** – Enable **Secure Form Data** to redact form data from the Bot Context, Debug Logs, Service Calls, Agent Transfer, and the Bot Kit.
 
-   <img src="../../images/secure-form-data.png" alt="secure form data" title="secure form data" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/secure-form-data.png" alt="secure form data" title="secure form data" style="border: 1px solid gray; zoom:75%;">
    
-   While enabling, you can also choose whether to display the **Secure Form icon** to your end users.
+    While enabling, you can also choose whether to display the **Secure Form icon** to your end users.
 
-   <img src="../../images/enable-redact-form-data.png" alt="enable redact form data" title="enable redact form data" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/enable-redact-form-data.png" alt="enable redact form data" title="enable redact form data" style="border: 1px solid gray; zoom:75%;">
    
-   Once enabled, the Platform will replace the user input with a unique random system-generated alphanumeric value in all the modules. Also, the **Secure Form** icon and a tip will be displayed, notifying the user that the form is secure.
+    Once enabled, the Platform will replace the user input with a unique random system-generated alphanumeric value in all the modules. Also, the **Secure Form** icon and a tip will be displayed, notifying the user that the form is secure.
 
-   <img src="../../images/secure-form-icon.png" alt="secure form icon" title="secure form icon" style="border: 1px solid gray; zoom:75%;"></li>
+    <img src="../../images/secure-form-icon.png" alt="secure form icon" title="secure form icon" style="border: 1px solid gray; zoom:75%;"></li>
 
 7. Click **Save & Proceed**.
 
-   <img src="../../images/save-digital-form.png" alt="save digital form" title="save digital form" style="border: 1px solid gray; zoom:75%;"></li></ol>
+    <img src="../../images/save-digital-form.png" alt="save digital form" title="save digital form" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ### Add Components
 
