@@ -7,12 +7,11 @@ Agent Activity Summary report is a summary of agent time by status, calculated d
 To generate Agent Activity Summary report:
 
 1. On the Reports tab, click **New Report**.
-2. In the list of reports, choose the Agent activity summary report.
-3. Enter the Report Name and Report Description.
-4. Select a Time Period.
-5. Select Data Filters.
+2. In the list of reports, Select the Agent activity summary report.
+3. Enter the **Report Name** and **Report Description**.
+4. Select a **Time Period**.
+5. Select **Data Filters**.
 6. Select Report Generation and choose from the following options:
-
     * Schedule
         * Run On Demand
         * Schedule
@@ -21,15 +20,15 @@ To generate Agent Activity Summary report:
         * CSV
     * Send To (single email address or a mailing list)
 7. Click **Create**.
-8. An instance of the Agent Activity Summary report is created.
-<img src="../images/agent=activity-summary-report-created.png" alt="Agent Activity Summary Report Created" title="Agent Activity Summary Report Created" style="border: 1px solid gray; zoom:70%;">
+8. An instance of the **Agent Activity Summary Report** is created.
+<img src="../images/agent-activity-summary-report-created.png" alt="Agent Activity Summary Report Created" title="Agent Activity Summary Report Created" style="border: 1px solid gray; zoom:70%;">
 
 9. Click the **Run** icon as shown below to generate the report.
 <img src="../images/run-report.png" alt="Run Agent Activity Summary Report" title="Run Agent Activity Summary Report" style="border: 1px solid gray; zoom:70%;">
 
 While generating reports you have two options, Run On Demand and Schedule.
 
-R**un On Demand**: While creating a new report or editing an existing report, the schedule of the report can be set to run on demand.
+**Run On Demand**: While creating a new report or editing an existing report, the schedule of the report can be set to run on demand.
 
 **Schedule**: While creating a new report or editing an existing report, the schedule of the report can be changed. The use of the schedule is the standard way to generate a report. If the report is scheduled for later then it will automatically be generated on the scheduled day and time without the need to click Run.
 
