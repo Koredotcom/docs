@@ -27,7 +27,7 @@ You can sign up for Kore.ai XO Platform in any of the following two ways:
 
 To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
 
-1. Visit [XO Platform Homepage](https://platfom.kore.ai/).
+1. Visit [XO Platform Homepage](https://platform.kore.ai/){:target="_blank"}.
 2. On the Sign-up page, enter the email ID in the **Email ID** field.
 
     !!! note
@@ -118,7 +118,7 @@ To invite users to your Kore.ai XO Platform account, follow these steps:
 
 
 5. When the invited user accepts the invitation, they are redirected to the Sign-up page.
-    * If the user is new to the platform, they need to enter the required details to complete the registration. See[ New Account Sign-up](https://developer.kore.ai/docs/bots/chatbot-overview/how-to-access-bot-builder/#New_Account_Sign-up) to know more.
+    * If the user is new to the platform, they need to enter the required details to complete the registration. See [New Account Sign-up](../getting-started/accessing-the-platform.md#new-account-sign-up) to know more.
     * If the user’s email address is already registered on the platform, the user is prompted to enter the password to sign in.
 
 !!! note
@@ -135,18 +135,14 @@ After a user is invited to an account, the administrator can enable the XO Platf
 
 
 
-1. Sign in to the Bots Admin portal at[ https://bots.kore.ai/admin](https://bots.kore.ai/admin)
+1. Sign in to the Bots Admin portal at[ https://bots.kore.ai/admin](https://bots.kore.ai/admin){:target="_blank"}.
 2. On the left pane, select **User Management > Users**.
 3. On the _Manage Users_ window, **select the users** to whom you want to grant access. 
 
-
-
-
     ![alt_text](images/accplatform(4).png "image_tooltip")
 
-4. From the _Actions_ drop-down list, select **XO Platform** Access and click Apply.
+4. From the _Actions_ drop-down list, select **XO Platform** Access and click **Apply**.
     ![alt_text](images/accplatform(14).png "image_tooltip")
-
 
 !!! note
 
