@@ -233,9 +233,9 @@ You can add a form directly to a panel, it creates a widget by default.
 8. You can **Test** the panel.
 9. Follow the steps provided [here](../../../../app-settings/dev-tools/kore-ai-web-sdk-tutorial/){:target="_blank"} to publish and host the panels.
 
-   !!! Note
+    !!! Note
 
-         While a Digital Form is used to define multiple Widgets and also add to multiple panels, it will be associated with a single Dialog Task across all Widgets and Panels.
+        While a Digital Form is used to define multiple Widgets and also add to multiple panels, it will be associated with a single Dialog Task across all Widgets and Panels.
 
 ## The User Experience
 
@@ -340,7 +340,7 @@ As with any assistant, the Digital Forms exist in the following states:
 * **_Rejected_** when the Publish request is rejected by the admin.
 * **_Published_** In the XO Platform, the status of a Digital Form remains In Development even after publishing.
 
-   <img src="../../images/publish-status.png" alt="publish status" title="publish status" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/publish-status.png" alt="publish status" title="publish status" style="border: 1px solid gray; zoom:75%;">
 
    On publishing the form, you can see the form listed under **Publish Status → View Publishing Summary**, but the status on the Digital Forms main page remains as _In Development_.
 
