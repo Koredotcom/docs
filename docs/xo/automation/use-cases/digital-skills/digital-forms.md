@@ -55,9 +55,9 @@ To create forms, follow the steps below:
  
 	    Providing a relevant description is recommended. If no description is provided, a dialog will be generated, but only with **the error prompt**.
 
-   !!! Note
+    !!! Note
 
-      During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
+       During the Export of the Bot, the logo is not exported along with Digital Forms. So, when importing this Bot, you need to separately copy the logo image file and then manually reupload the logo.
 
 5. Turn on the **Description** toggle if you want to show a description of the form in the header.
 
