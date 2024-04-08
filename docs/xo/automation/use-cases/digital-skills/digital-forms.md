@@ -122,15 +122,15 @@ You can use the **Edit** option from the form listing to edit the form. The foll
 * Use the Move Component _Handle Bar_ against each of the components to change its location by a simple drag and drop action;
 * Use *Form Actions* to:
 
-   * **Test** the form to see the preview of the Digital Form in the XO Platform.
-   * **Delete** the Form. Please keep in mind that deleted forms cannot be restored.
-   * Change the Form **Settings** such as name, display name, and description.
+     * **Test** the form to see the preview of the Digital Form in the XO Platform.
+     * **Delete** the Form. Please keep in mind that deleted forms cannot be restored.
+     * Change the Form **Settings** such as name, display name, and description.
 
 * Use the **Component Actions** to access the **Settings**, **Duplicate,** and **Delete** options for each of the form’s components.
 * You can change the components’ properties from the **Component Settings** popup:
    
-   * Use the **Component Docker** to dock/undock the settings pane to the screen.
-   * Use the **Component Selector** to navigate through the components on the Form.
+     * Use the **Component Docker** to dock/undock the settings pane to the screen.
+     * Use the **Component Selector** to navigate through the components on the Form.
 
 #### Branding
 
@@ -168,29 +168,29 @@ To invoke a form from a dialog task, follow the below steps:
 3. Select the **Digital Form** option and then the form from the list. You can choose to add a Digital Form directly or use an existing Form Node.
 4. You are prompted to select the **Form Experience**, it can be:
 
-   <img src="../../images/configuration-form-node.png" alt="configure form node" title="configure form node" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/configuration-form-node.png" alt="configure form node" title="configure form node" style="border: 1px solid gray; zoom:75%;">
 
-   * **Only Form UI** – This creates a Form Node and associates it with the Digital Form selected. This is the default option.
+    * **Only Form UI** – This creates a Form Node and associates it with the Digital Form selected. This is the default option.
 
-      <img src="../../images/only-ui.png" alt="only form ui" title="only form ui" style="border: 1px solid gray; zoom:75%;">
+        <img src="../../images/only-ui.png" alt="only form ui" title="only form ui" style="border: 1px solid gray; zoom:75%;">
 
-   * **Both Form UI and Conversation Experience (DRAFT)** – This further prompts you to choose a channel. When a user is using one of the selected channels they are presented with a Form UI, the rest of the channel users get a conversation experience. 
+    * **Both Form UI and Conversation Experience (DRAFT)** – This further prompts you to choose a channel. When a user is using one of the selected channels they are presented with a Form UI, the rest of the channel users get a conversation experience. 
 
-      This option creates:
+        This option creates:
    
-      * A **Bot Action Node** to determine the transitions to the Form Node and the Sub-dialog Node based on the channels selected.
-      * A **Form Node** for the Digital Form, same as was generated for the Only Form UI above.
-      * A **Sub-dialog Node** to capture the required entities (as defined in the Digital Form using components) for the conversational experience. 
-      * A **Group** encompassing the following nodes. This grouping can be renamed and/or deleted. [Learn more](../../dialogs/node-connections/grouping-nodes/#add-a-node-group){:target="_blank"}.
+        * A **Bot Action Node** to determine the transitions to the Form Node and the Sub-dialog Node based on the channels selected.
+        * A **Form Node** for the Digital Form, same as was generated for the Only Form UI above.
+        * A **Sub-dialog Node** to capture the required entities (as defined in the Digital Form using components) for the conversational experience. 
+        * A **Group** encompassing the following nodes. This grouping can be renamed and/or deleted. [Learn more](../../dialogs/node-connections/grouping-nodes/#add-a-node-group){:target="_blank"}.
 
-      <img src="../../images/form-experience-nodes.png" alt="form experience node" title="form experience node" style="border: 1px solid gray; zoom:75%;">
+        <img src="../../images/form-experience-nodes.png" alt="form experience node" title="form experience node" style="border: 1px solid gray; zoom:75%;">
 
 5. You can set the **Properties** for each of the nodes added.
 
-   * The [Form Node](../../dialogs/node-types/working-with-the-form-node/){:target="_blank"}. 
+    * The [Form Node](../../dialogs/node-types/working-with-the-form-node/){:target="_blank"}. 
    Of special interest are the following Component Properties:
-   * **Submit Message** – Message displayed to the end-user on successful submission of the form
-   * **Web/Mobile SDK Form Behavior** – Using this option you can either have the form displayed *inline* the chat window or *open on a full page*. Also, you can either go ahead with the default submit prompt or configure the setting to display a custom and more specific message to be shown in chat. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-form-node/#component-properties" target="_blank">Learn more</a> about the configuration.
+    * **Submit Message** – Message displayed to the end-user on successful submission of the form
+    * **Web/Mobile SDK Form Behavior** – Using this option you can either have the form displayed *inline* the chat window or *open on a full page*. Also, you can either go ahead with the default submit prompt or configure the setting to display a custom and more specific message to be shown in chat. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-form-node/#component-properties" target="_blank">Learn more</a> about the configuration.
    * **Bot Action Node,** in case of the conversation experience flow, can also be configured in the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-logic-node/" target="_blank">Logic Node</a> as follows:
 
       * **Manage Context Variables** is used to create and set values for the context variables. Remember to use the full path of the variable in the _key_ field ie. ```context.BotUserSession.<variable_name>```
