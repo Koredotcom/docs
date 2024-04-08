@@ -39,9 +39,7 @@ In this section, you can customize greeting messages at the beginning of the con
    <img src="../welcome-events-images/adding-new-greeting-messages-2.png" alt="adding-new-greeting-messages" title="adding-new-greeting-messages" style="border: 1px solid gray; zoom:80%;"> 
 6. Enter the new greeting message in the **Message** box and click **Add**.
    <img src="../welcome-events-images/configure-and-add-new-greeting-message-3.png" alt="configure-and-add-new-greeting-message" title="configure-and-add-new-greeting-message" style="border: 1px solid gray; zoom:60%;">
-   
    The new greeting message gets added to the list of existing messages.
-
 7. Click **Copy from Chat** to copy existing messages in **Chat**.
 !!! note "Note"
     **Copy from Voice** appears for the Chat channel and **Copy from Chat** appears for the Voice channel.
@@ -55,9 +53,8 @@ In this section, you can customize greeting messages at the beginning of the con
        All selected messages appear in the list of existing messages.
 
 8. Click **Display Random Message** to enable all configured messages and randomly display any three on the agent’s screen.
-
    <img src="../welcome-events-images/display-random-message-and-select-message-language-5.png" alt="display-random-message-and-select-message-language" title="display-random-message-and-select-message-language" style="border: 1px solid gray; zoom:80%;">
-
+   
 9. Click the **down-arrow** to change message language.
 
 10. Click the **edit** button against an existing message to modify it.
