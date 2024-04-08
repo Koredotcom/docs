@@ -189,9 +189,9 @@ To invoke a form from a dialog task, follow the below steps:
 
     * The [Form Node](../../dialogs/node-types/working-with-the-form-node/){:target="_blank"}. Following Component Properties are of special interest:
         * **Submit Message** – Message displayed to the end-user on successful submission of the form
-        * **Web/Mobile SDK Form Behavior** – Using this option you can either have the form displayed *inline* the chat window or *open on a full page*. Also, you can either go ahead with the default submit prompt or configure the setting to display a custom and more specific message to be shown in chat. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-form-node/#component-properties" target="_blank">Learn more</a> about the configuration.
+        * **Web/Mobile SDK Form Behavior** – Using this option you can either have the form displayed *inline* the chat window or *open on a full page*. Also, you can either go ahead with the default submit prompt or configure the setting to display a custom and more specific message to be shown in chat. [Learn more](../../dialogs/node-types/working-with-the-form-node/#component-properties/){:target="_blank"}.
     
-    * **Bot Action Node,** in case of the conversation experience flow, can also be configured in the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-logic-node/" target="_blank">Logic Node</a> as follows:
+        * **Bot Action Node,** in case of the conversation experience flow, can also be configured in the [Logic Node](../../dialogs/node-types/working-with-the-logic-node/){:target="_blank"} as follows:
 
         * **Manage Context Variables** is used to create and set values for the context variables. Remember to use the full path of the variable in the _key_ field ie. ```context.BotUserSession.<variable_name>```
 
@@ -2534,11 +2534,11 @@ context.prefillForms = {
 
 * Digital Forms will not work as expected on the following channels:
    
-   * Amazon Alexa
-   * Cisco Jabber
-   * Google Assistant
-   * IVR Voice
-   * Twilio Voice
+    * Amazon Alexa
+    * Cisco Jabber
+    * Google Assistant
+    * IVR Voice
+    * Twilio Voice
 
 * You are advised to choose the Conversation Experience for these channels.
 * Digital Forms created in the parent bot are not inherited into **Smart Bots**.
