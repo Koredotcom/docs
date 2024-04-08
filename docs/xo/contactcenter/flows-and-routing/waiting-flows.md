@@ -95,7 +95,7 @@ Define the configuration rules for the **Skill Group** and **Skill** waiting que
 2. Click the row-wise **+Add** button to add a new row to the existing **Routing Rule** (OR) condition and the Delete icon to delete a row;
 3. Configure the **AND/OR** conditional logic by hovering over a rule row and toggling between the tabs, as shown in the demo below;
 4. To configure the _AND_ condition, click the **+ Add** button below the _OR/AND_ section;
-5. To remove a rule row, click the **Delete (ⓧ)** icon next to the row. To delete a rule section, click the **Delete (bin) **icon next to it.
+5. To remove a rule row, click the **Delete (ⓧ)** icon next to the row. To delete a rule section, click the **Delete (bin)** icon next to it.
 <img src="../images/routing-rules.gif" alt="Routing Rules" title="Routing Rules" style="border: 1px solid gray; zoom:80%;">
 
 Below is an example configuration for Routing Rules:
@@ -107,7 +107,7 @@ In this example, customers are mapped to a specific agent as follows:
 
 ### Call Experience
 
-To set the call waiting experience, click **Call Experience** for customers contacting you using the voice channel.
+To set the call waiting experience, click **Call Experience** for customers contacting you using the voice channel.  
 <img src="../images/call-experience.gif" alt="Call Experience" title="Call Experience" style="border: 1px solid gray; zoom:80%;">
 
 In the **Call Experience** page, configure the settings below:

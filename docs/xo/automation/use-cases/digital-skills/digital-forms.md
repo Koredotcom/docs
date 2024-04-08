@@ -233,9 +233,9 @@ You can add a form directly to a panel, it creates a widget by default.
 8. You can **Test** the panel.
 9. Follow the steps provided [here](../../../../app-settings/dev-tools/kore-ai-web-sdk-tutorial/){:target="_blank"} to publish and host the panels.
 
-   !!! Note
+    !!! Note
 
-         While a Digital Form is used to define multiple Widgets and also add to multiple panels, it will be associated with a single Dialog Task across all Widgets and Panels.
+        While a Digital Form is used to define multiple Widgets and also add to multiple panels, it will be associated with a single Dialog Task across all Widgets and Panels.
 
 ## The User Experience
 
@@ -340,20 +340,20 @@ As with any assistant, the Digital Forms exist in the following states:
 * **_Rejected_** when the Publish request is rejected by the admin.
 * **_Published_** In the XO Platform, the status of a Digital Form remains In Development even after publishing.
 
-   <img src="../../images/publish-status.png" alt="publish status" title="publish status" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/publish-status.png" alt="publish status" title="publish status" style="border: 1px solid gray; zoom:75%;">
 
-   On publishing the form, you can see the form listed under **Publish Status → View Publishing Summary**, but the status on the Digital Forms main page remains as _In Development_.
+    On publishing the form, you can see the form listed under **Publish Status → View Publishing Summary**, but the status on the Digital Forms main page remains as _In Development_.
 
-   <img src="../../images/form-status.png" alt="form status" title="form status" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/form-status.png" alt="form status" title="form status" style="border: 1px solid gray; zoom:75%;">
 
-   The _In Development_ and _Published_ versions of the VA can be viewed by toggling between the respective statuses in the top search-bar.
+    The _In Development_ and _Published_ versions of the VA can be viewed by toggling between the respective statuses in the top search-bar.
 
-   <img src="../../images/va-status-search.png" alt="va status search" title="va status search" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/va-status-search.png" alt="va status search" title="va status search" style="border: 1px solid gray; zoom:75%;">
  
 
-   !!! Note
+    !!! Note
    
-         If any edits are done to the Digital Form while it is In Development, the changes would be reflected in the Published version as soon as you publish the form.
+        If any edits are done to the Digital Form while it is In Development, the changes would be reflected in the Published version as soon as you publish the form.
 
 * **_Suspended_** when a published form is suspended by the admin.
 
@@ -378,7 +378,7 @@ While the dependencies are published together, chances are that all the dependen
 * A relevant Standard Response is displayed and
 * Logged as Failed Task in Analytics.
    
-   * Digital Form is in a published state, but the Dialog Task is not available then on Form submission, the end-user is presented with the Form’s Error Message.
+    * Digital Form is in a published state, but the Dialog Task is not available then on Form submission, the end-user is presented with the Form’s Error Message.
 
 ### Import
 
@@ -405,9 +405,9 @@ The Bot Export option is available for Digital Forms with a status of *In Develo
 **_Note that this does not include the Sub-dialog Tasks generated using Digital Forms._**
 * Complete information for each of the selected forms are available in the export file and this includes:
    
-   * Fields
-   * Field properties
-   * Form integrations
+    * Fields
+    * Field properties
+    * Form integrations
 
 ## Form Component Details
 
@@ -419,60 +419,60 @@ Following is a list of the available components.
 
 * **Text Field** – used for single-line input.
 
-   <img src="../../images/text-field-input.png" alt="text field" title="text field" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/text-field-input.png" alt="text field" title="text field" style="border: 1px solid gray; zoom:75%;">
 
 * **Text Area** – used for multi-line entry.
 
-   <img src="../../images/text-area.png" alt="text area" title="text area" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/text-area.png" alt="text area" title="text area" style="border: 1px solid gray; zoom:75%;">
 
 * **Number** – used for numerical entries.
 
-   <img src="../../images/number-field.png" alt="number field" title="number field" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/number-field.png" alt="number field" title="number field" style="border: 1px solid gray; zoom:75%;">
 
 * **Radio Button** – used as a selection option from a given list.
 
-   <img src="../../images/radio-button.png" alt="radio button" title="radio button" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/radio-button.png" alt="radio button" title="radio button" style="border: 1px solid gray; zoom:75%;">
 
 * **Dropdown** – Used as a selection option from a given list; can be multi-select.
 
-   <img src="../../images/dropdown-list.png" alt="dropdown list" title="dropdown list" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/dropdown-list.png" alt="dropdown list" title="dropdown list" style="border: 1px solid gray; zoom:75%;">
 
 * **Checkbox** – Used for multi-select option from a given list.
 
-   <img src="../../images/checkbox.png" alt="checkbox" title="checkbox" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/checkbox.png" alt="checkbox" title="checkbox" style="border: 1px solid gray; zoom:75%;">
 
 * **Date** – Used for date entries, gives a date picker for the user to choose the date.
 
-   <img src="../../images/date-calendar.png" alt="date" title="date" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/date-calendar.png" alt="date" title="date" style="border: 1px solid gray; zoom:75%;">
 
 * **Date & Time** – Used for date & time entries. The system displays a date and time picker for the user to choose the date and time.
 Use the **Date component** and set the _Time option_ to _yes_; choose from _12_ or _24-hour_ format.
 
-   <img src="../../images/date-time.png" alt="date and time" title="date and time" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/date-time.png" alt="date and time" title="date and time" style="border: 1px solid gray; zoom:75%;">
 
 * **Phone Number** – Used for phone number entries, allows the user to choose the country code.
 
-   <img src="../../images/phone-number.png" alt="phone number" title="phone number" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/phone-number.png" alt="phone number" title="phone number" style="border: 1px solid gray; zoom:75%;">
 
 * **Email** – Used for email address entries, validates for _xxx@uuu.com_ format.
 
-   <img src="../../images/email-field.png" alt="email" title="email" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/email-field.png" alt="email" title="email" style="border: 1px solid gray; zoom:75%;">
 
 * **Toggle** – Used for switching between two values, ideal for yes/no type of inputs.
 
-   <img src="../../images/toggle-field.png" alt="toggle" title="toggle" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/toggle-field.png" alt="toggle" title="toggle" style="border: 1px solid gray; zoom:75%;">
 
 * **Address** – Used for address entries.
 
-   <img src="../../images/address-field.png" alt="address" title="address" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/address-field.png" alt="address" title="address" style="border: 1px solid gray; zoom:75%;">
 
 * **URL** – Used for web URL entries, validates for _xxx.com_ format.
 
-   <img src="../../images/url-field.png" alt="url" title="url" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/url-field.png" alt="url" title="url" style="border: 1px solid gray; zoom:75%;">
 
 * **Range Slider** – Value selection between specified min and max values; can be represented as a percentage.
 
-   <img src="../../images/range-slider.png" alt="range slider" title="range slider" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/range-slider.png" alt="range slider" title="range slider" style="border: 1px solid gray; zoom:75%;">
 
 * **Password** - Used to display passwords in their masked form ```*****```
 
@@ -480,19 +480,19 @@ Use the **Date component** and set the _Time option_ to _yes_; choose from _12_ 
 
 * **Button** – Used as a clickable component to submit reset, or open an external URL the form. Choose from _Primary_, _Secondary_, _Tertiary_, _Ghost,_ or _Danger_.
 
-   <img src="../../images/button-field.png" alt="button" title="button" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/button-field.png" alt="button" title="button" style="border: 1px solid gray; zoom:75%;">
 
 * **Label** – Used to display a static text box, no action required from the user.
 
-   <img src="../../images/label-field.png" alt="label" title="label" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/label-field.png" alt="label" title="label" style="border: 1px solid gray; zoom:75%;">
 
 * **Protip** – Used to mark important information for the end-user, no user action required.
 
-   <img src="../../images/protip-field.png" alt="protip" title="protip" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/protip-field.png" alt="protip" title="protip" style="border: 1px solid gray; zoom:75%;">
 
 * **Note** - Used to mark information for the end-user, no user action required.
 
-   <img src="../../images/note-field.png" alt="note" title="note" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/note-field.png" alt="note" title="note" style="border: 1px solid gray; zoom:75%;">
 
 ### Component Properties
 
@@ -500,7 +500,7 @@ The following are the properties that can be set for each of the components.
 
 !!! Note
 
-      Not all the properties are valid for all the components, refer to the [Property Matrix](#component-properties) for the mapping.
+    Not all the properties are valid for all the components, refer to the [Property Matrix](#component-properties) for the mapping.
 
 <table border="1.5">
   <tr bgcolor="#ECECEC">
