@@ -35,7 +35,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     * **Retrieval Augmented Generation**: Enhances information retrieval with generative AI.
     * **Advanced RAG**: An advanced version of retrieval augmented generation for improved search capabilities.  
     
-    [Learn more about Search AI features :octicons-arrow-right-24:](../answers/about-answers.md)
+    [Learn more about Search AI features :octicons-arrow-right-24:](../searchai/about-search-ai.md)
 
 === "Contact Center AI"
 
