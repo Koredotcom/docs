@@ -321,9 +321,12 @@ nav:
     - Getting Started:
         - About Agent AI: agentai/about-agent-ai.md
         - Set up Agent AI: agentai/about-agent-ai.md              
-    - Agent Experience:
+    - Set up Agent AI:
       - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md
       - Agent Playbook: agentai/agent-experience/playbook.md       
+    - Agent Experience:
+      - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
+      - Bot Override and Automation: agentai/agent-experience/agent-assist-widget-v3.md       
   - Integrations & APIs:
     - Overview: channels/IVR-integration.md    
     - Integrations:
