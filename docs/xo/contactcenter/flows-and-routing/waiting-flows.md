@@ -141,16 +141,7 @@ You can configure the following variables:
 * **Queue Wait Time**: {{queue.waitTime}} min
 * **Queue Position**: {{queue.position}}
 
-**Chat Deflection**
-
-You can configure the following _call to chat deflection_ when the wait time exceeds a set limit:
-
-1. **Enable** the option to activate it;
-2. Set the **digit key** that customers should press for deflection; then **set the time** after which the chat deflection should occur. For example, deflect from call to chat if the estimated wait time exceeds 3 minutes, and ask customers to press #7;
-3. **Edit the chat deflection message** in the textbox. Use the language tab to change languages. Click ✔ **Done** to save or click  **x** **Close** to discard your changes.
-<img src="../images/chat-deflection.png" alt="Chat Deflection" title="Chat Deflection" style="border: 1px solid gray; zoom:80%;">
-
-**CallBack Option** 
+#### CallBack Option
 
 If the wait time exceeds a set limit, you can offer or force a callback for waiting customers as follows:
 
@@ -159,7 +150,7 @@ If the wait time exceeds a set limit, you can offer or force a callback for wait
 3. **Edit the chat deflection message** in the textbox. Use the language tab to change languages. Click ✔ **Done** to save or click **x** **Close** to discard your changes.
 <img src="../images/callback-option.png" alt="Call Back Option" title="Call Back Option" style="border: 1px solid gray; zoom:80%;">
 
-**Voicemail**
+#### Voicemail
 
 You can offer or force a voicemail for waiting customers in the following scenarios:
 
@@ -187,6 +178,13 @@ This message will be displayed to the contact waiting in the queue. By default, 
 
 To edit this message text and language, type your custom message in the textbox, and then select a language. Click ✔ **Done** to save or click **x** **Close** to discard your changes.
 <img src="../images/initial-message-chat.png" alt="Initial Message Chat" title="Initial Message Chat" style="border: 1px solid gray; zoom:80%;">
+
+#### Agent Transfers
+
+This message will be displayed when the customer is transferred to an agent or a queue. By default, agent transfers is enabled.
+
+To edit this message text and language, type your custom message in the textbox, and then select a language. Click **✔** **Done** to save or click **x** **Close** to discard your changes.
+<img src="../images/agent-transfers.png" alt="Initial Message Chat" title="Initial Message Chat" style="border: 1px solid gray; zoom:80%;">
 
 #### Periodic Messages
 
