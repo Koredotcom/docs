@@ -1,7 +1,7 @@
 # Building a Virtual Assistant
 This document describes the process of implementing a Virtual Assistant using the Kore.ai XO Platform.
 
-If you are new to the Kore.ai XO Platform and want to familiarize yourself with the terms and concepts we use, please refer to[ Concepts and Terminology](https://developer.kore.ai/docs/bots/chatbot-overview/about-bots/).
+If you are new to the Kore.ai XO Platform and want to familiarize yourself with the terms and concepts we use, please refer to[ Concepts and Terminology](./glossary/concepts-and-terminology.md).
 
 !!! Disclaimer
 
@@ -86,9 +86,8 @@ Based on the requirements, select the type of Virtual Assistant you want to crea
 
 
 
-* **Standard VA** – Standard VAs are the most common type of virtual assistant. Using these, you can create dialogs, alerts, actions, information tasks, and knowledge graphs, as well as flows that map one task to another. For more information, refer to[ Defining a Standard Bot](https://developer.kore.ai/docs/bots/bot-builder-tool/bot-creation/defining-a-standard-bot/).
-* **Universal VA** – Universal VAs facilitate a scalable, modular approach to VA building by helping you link several Standard VAs into one. The universal VA executes the tasks and functions of the linked VAs by routing relevant utterances to them. Once you publish a universal virtual assistant, changes made in the linked VAs automatically reflect in the universal VA. As a creator or developer of a virtual assistant, you can add any VAs (published and configured) to a universal VA and access their underlying tasks and functions. When you publish a universal virtual assistant, the end users can only access the tasks that are published in the linked VAs. For more information, refer to[ Defining Universal Virtual Assistants](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/defining-universal-bots/).
-* **Template VA** – You can install one or more fully functional, end-to-end Kore.ai template VAs from the Template Store, then customize and publish to understand how to configure virtual assistants. For more information, refer to[ Bot Store](https://developer.kore.ai/docs/bots/bot-store/store/).
+* **Standard VA** – Standard VAs are the most common type of virtual assistant. Using these, you can create dialogs, alerts, actions, information tasks, and knowledge graphs, as well as flows that map one task to another.
+* **Template VA** – You can install one or more fully functional, end-to-end Kore.ai template VAs from the Template Store, then customize and publish to understand how to configure virtual assistants.
 
 Within this document we will use a Standard VA as a working example.
 
