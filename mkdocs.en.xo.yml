@@ -111,7 +111,7 @@ copyright: |
 nav:
   - Home : home.md
   - Platform:
-    - Overview: getting-started/about-xo-platform.md
+    - What's New in XO Platform: getting-started\what's-new-in-xo-platform.md
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md   
       - Navigating the Platform: getting-started/navigating-the-platform.md
@@ -142,9 +142,7 @@ nav:
             - Kore Voice Gateway: channels-and-flows/flows/flows.md
             - Third Party Voice:  channels-and-flows/flows/flows.md                     
     - Glossary:
-      - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
-    - Release Notes:
-      - What's new in XO v11: getting-started/glossary/concepts-and-terminology.md 
+      - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:
@@ -286,10 +284,7 @@ nav:
     - Configuration:
         - Answer Configuration: searchai/answer-configuration.md
   - Contact Center AI:
-    - Overview: contactcenter/about-contact-center-ai.md 
-    - Getting Started:
-        - About Contact Center: contactcenter/about-contact-center-ai.md
-        - Set up Contact Center: contactcenter/about-contact-center-ai.md    
+    - Overview: contactcenter/about-contact-center-ai.md    
     - Agent and Supervisors: 
       - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
       - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md
@@ -317,10 +312,7 @@ nav:
     - Campaigns:  
       - Overview: contactcenter/campaigns/about-campaigns.md
   - Agent AI:
-    - Overview: agentai/about-agent-ai.md 
-    - Getting Started:
-        - About Agent AI: agentai/about-agent-ai.md
-        - Set up Agent AI: agentai/about-agent-ai.md              
+    - Overview: agentai/about-agent-ai.md           
     - Set up Agent AI:
       - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md
       - Agent Playbook: agentai/agent-experience/playbook.md       
@@ -328,7 +320,7 @@ nav:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
       - Bot Override and Automation: agentai/agent-experience/agent-assist-widget-v3.md       
   - Integrations & APIs:
-    - Overview: channels/IVR-integration.md    
+    - Overview: app-settings/integrations/actions/actions.md   
     - Integrations:
       - Actions:
         - Actions Overview: app-settings/integrations/actions/actions.md

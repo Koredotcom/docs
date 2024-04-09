@@ -1,9 +1,11 @@
 ---
 hide:
-  - toc
   - feedback
 ---
-# All-new Experience Optimization Platform
+# What's New in XO Platform
+Learn about the new features and enhancements included in v11 of Kore.ai Experience Optimization Platform.
+
+## All-new Experience Optimization Platform
 Kore.ai Experience Optimization (XO) Platform is an AI-powered, end-to-end experience optimization Platform for enterprises of any scale to offer best-in-class conversational experiences for customers, employees, and agents. The Platform seamlessly blends conversational AI intelligence and generative AI innovation, offering the tools to create scalable and memorable customer experiences. The Platform is recognized as the world's most secure, credible, and scalable solution for generative and conversational AI. The Platform's business user-friendly, no-code interface allows businesses to construct intelligent virtual assistants, incorporating large language models and generative AI to foster meaningful and continuous conversations in users' preferred languages and channels.
 
 ## Comprehensive Suite of Products and Services
