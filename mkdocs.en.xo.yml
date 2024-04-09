@@ -113,8 +113,7 @@ nav:
   - Platform:
     - What's New in XO Platform: getting-started/whats-new-in-xo-platform.md
     - Getting Started:
-      - Accessing the Platform: getting-started/accessing-the-platform.md
-      - Building a Virtual Assistant: getting-started/building-a-virtual-assistant.md    
+      - Accessing the Platform: getting-started/accessing-the-platform.md          
       - Flows and Channels:
         - Flows: 
           - Introduction: flows/introduction-to-flows.md
