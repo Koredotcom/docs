@@ -107,7 +107,7 @@ markdown_extensions:
   - pymdownx.snippets
 
 copyright: |
-  © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+  © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owner(s).
 nav:
   - Home : home.md
   - Platform:
