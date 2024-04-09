@@ -136,10 +136,7 @@ nav:
             - Split: flows/node-types/split.md
         - Channels:
           - Digital:
-            - Channel Enablement: channels/adding-channels-to-your-bot.md  
-          - Voice: 
-            - Kore Voice Gateway: channels-and-flows/flows/flows.md
-            - Third Party Voice:  channels-and-flows/flows/flows.md                     
+            - Channel Enablement: channels/adding-channels-to-your-bot.md                             
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
   - Automation AI: 
