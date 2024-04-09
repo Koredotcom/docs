@@ -96,7 +96,7 @@ In the **Entity Post-Assignments** section, there is a list of entities availabl
 In the **Transition Options** section, you can define the flow to be followed once the task completes. You can choose from two options:
 
 * Initiate the linked Dialog Task, and once complete, return to this node.
-* End the current task and initiate the linked Dialog Task..
+* End the current task and initiate the linked Dialog Task.
 
 Click **Advanced Controls** to set up the below-listed options:
 

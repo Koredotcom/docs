@@ -97,7 +97,7 @@ Use the Instance Properties to define any user tags that you want to set.
 To configure this tab, please follow these steps:
 
 1. On the Form window, click the **Instance Properties** tab.
-2. Under the **Custom Tags** section, add tags to build custom profiles of your conversations. [Click here for more](../../../../../xo/analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
+2. Under the **Custom Tags** section, add tags to build custom profiles of your conversations. [Click here for more](../../../../analytics/automation/custom-dashboard/custom-meta-tags.md){:target="_blank"}.
 
     <img src="../images/form-node-img11-instance-properties.png" alt="Form node - Instance properties" title="Form node - Instance properties" style="border:1px solid gray;zoom:70%;">
 
@@ -113,6 +113,6 @@ From the node’s **Connections** tab, you can determine the node in the dialog 
 
     These conditions are applicable only for this instance and will not affect the node when being used in any other dialog.
 
-For details on how to work with connection conditions, please see[ Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions/){:target="_blank"}.
+For details on how to work with connection conditions, please see[ Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions/){:target="_blank"}
 
 <img src="../images/form-node-img12-connection-properties.png" alt="Form node - Connection properties" title="Form node - Connection properties" style="border:1px solid gray;zoom:70%;">

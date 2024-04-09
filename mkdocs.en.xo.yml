@@ -49,17 +49,17 @@ extra:
     feedback:
       title: Was this page helpful?
       ratings:
-        - icon: material/emoticon-happy-outline
+        - icon: material/thumb-up-outline
           name: This page was helpful
           data: 1
           note: >-
             Thanks for your feedback!
-        - icon: material/emoticon-sad-outline
+        - icon: material/thumb-down-outline
           name: This page could be improved
           data: 0
-          note: >- 
+          note: >-                       
             Thanks for your feedback! Help us improve this page by
-            using our <a href="https://community.kore.ai/" target="_blank" rel="noopener">feedback form</a>.  
+            using our <a href="https://docsinternal-kore.github.io/docs/xo/feedback/feedback-form/?title=[Feedback]+{url}" target="_blank" rel="noopener">feedback form<a>.
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -107,41 +107,43 @@ markdown_extensions:
   - pymdownx.snippets
 
 copyright: |
-  © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+  © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owner(s).
 nav:
   - Home : home.md
   - Platform:
-    - Overview: getting-started/about-xo-platform.md
+    - What's New in the XO Platform: getting-started/whats-new-in-xo-platform.md
     - Getting Started:
-      - Accessing the Platform: getting-started/accessing-the-platform.md   
-      - Navigating the Platform: getting-started/navigating-the-platform.md
+      - Accessing the Platform: getting-started/accessing-the-platform.md          
       - Flows and Channels:
         - Flows: 
           - Introduction: flows/introduction-to-flows.md
-          - Start Flows: flows/introduction-to-flows.md
-          - Exit Flows: flows/introduction-to-flows.md
+          - Create Flows: flows/create-flows.md
+          - Navigate the Flow Designer: flows/navigate-the-flow-designer.md
+          - Node Types:
+            - Introduction to Flow Nodes: flows/flow-types/introduction-to-flow-nodes.md
+            - Agent Transfer: flows/node-types/agent-transfer.md
+            - Automation: flows/node-types/automation.md
+            - Check Agent Availability: flows/node-types/check-agent-availability.md
+            - Check Business Hours: flows/node-types/check-business-hours.md
+            - Connect to API: flows/node-types/connect-to-api.md
+            - End Flow: flows/node-types/end-flow.md
+            - Go to Flow: flows/node-types/go-to-flow.md
+            - IVR Digit Input: flows/node-types/ivr-digit-input.md
+            - IVR Menu: flows/node-types/ivr-menu.md
+            - Message Prompt: flows/node-types/message-prompt.md
+            - Script Task: flows/node-types/script-task.md
+            - Set Queue: flows/node-types/set-queue.md
+            - Split: flows/node-types/split.md
         - Channels:
           - Digital:
-            - Channel Enablement: channels/adding-channels-to-your-bot.md  
-          - Voice: 
-            - Kore Voice Gateway: channels-and-flows/flows/flows.md
-            - Third Party Voice:  channels-and-flows/flows/flows.md          
-      - Automation AI:
-        - About Virtual Assistant: virtual-assistants-overview.md
-        - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
-      - Search AI:
-        - About Answers: virtual-assistants-overview.md
-        - Configure Answers: virtual-assistants-overview.md   
-      - Contact Center AI:
-        - About Contact Center: virtual-assistants-overview.md
-        - Set up Contact Center: virtual-assistants-overview.md     
-      - Agent AI:
-        - About AgentAssist: virtual-assistants-overview.md
-        - Set up AgentAssist: virtual-assistants-overview.md               
+            - Channel Enablement: channels/adding-channels-to-your-bot.md                             
     - Glossary:
-      - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md      
+      - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
   - Automation AI: 
-    - Overview: automation/about-automation.md
+    - Overview: automation/about-automation-ai.md
+    - Getting Started:
+        - About Virtual Assistant: getting-started/virtual-assistants-overview.md
+        - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
     - Use Cases: 
       - Dialogs Tasks:
         - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
@@ -256,25 +258,29 @@ nav:
         - Bot Management: manage-assistant/bot-management.md
         - Manage Namespace: manage-assistant/managing-namespace.md               
   - Search AI:
-    - Overview: answers/about-answers.md        
+    - Overview: searchai/about-search-ai.md
+    - Getting Started: searchai/introduction-to-answers.md
     - Content:
-      - Sources:
-        - Overview: answers/content-sources/introduction.md 
-        - Web Crawl: answers/content-sources/web-crawl.md  
-        - Directory: answers/content-sources/directory.md 
-        - Connectors: answers/content-sources/connectors.md 
-      - Extraction Strategy: answers/content-extraction/extraction.md
-      - Workbench: 
-        - Introduction: answers/workbench/introduction.md
-        - Field Mapping Stage: answers/workbench/field-mapping.md
-        - Custom Script: answers/workbench/custom-script.md
-        - Exclude Document: answers/workbench/exclude-document.md
-      - Chunk Browser: answers/chunk-browser.md
-      - Index Configuration: answers/index-configuration.md
+        - Sources:
+            - Overview: searchai/content-sources/introduction.md
+            - Web Crawl: searchai/content-sources/web-crawl.md
+            - Directory: searchai/content-sources/directory.md
+            - Connectors:
+                - Introduction: searchai/content-sources/connectors.md
+                - ServiceNow Connector: searchai/content-sources/servicenow.md
+        - Extraction Strategy: searchai/content-extraction/extraction.md
+        - Workbench:
+            - Introduction: searchai/workbench/introduction.md
+            - Field Mapping Stage: searchai/workbench/field-mapping.md
+            - Custom Script: searchai/workbench/custom-script.md
+            - Exclude Document: searchai/workbench/exclude-document.md
+            - Workbench Simulator: searchai/workbench/simulation.md
+        - Chunk Browser: searchai/chunk-browser.md
+        - Index Configuration: searchai/index-configuration.md
     - Configuration:
-      - Answer Configuration: answers/answer-configuration.md
+        - Answer Configuration: searchai/answer-configuration.md
   - Contact Center AI:
-    - Overview: contactcenter/about-contact-center.md 
+    - Overview: contactcenter/about-contact-center-ai.md    
     - Agent and Supervisors: 
       - Agent Management: contactcenter/agent-and-supervisors/agent-management/agent-management.md
       - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md
@@ -302,11 +308,15 @@ nav:
     - Campaigns:  
       - Overview: contactcenter/campaigns/about-campaigns.md
   - Agent AI:
-    - Overview: agentassist/about-agentassist.md 
+    - Overview: agentai/about-agent-ai.md           
+    - Set up Agent AI:
+      - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md
+      - Agent Playbook: agentai/agent-experience/playbook.md       
     - Agent Experience:
-      - Agent Coaching: agentassist/agent-experience/agent-realtime-coaching.md       
+      - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
+      - Bot Override and Automation: agentai/agent-experience/agent-assist-widget-v3.md       
   - Integrations & APIs:
-    - Overview: channels/IVR-integration.md    
+    - Overview: app-settings/integrations/actions/actions.md   
     - Integrations:
       - Actions:
         - Actions Overview: app-settings/integrations/actions/actions.md

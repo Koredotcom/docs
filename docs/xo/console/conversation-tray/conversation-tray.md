@@ -1,6 +1,6 @@
 # Conversation Tray
 
-The conversation tray helps agents track their workload by displaying all conversations that are currently assigned to them.
+The conversation tray helps agents track their workload by displaying all conversations that are currently assigned to them.  
 <img src="../images/conversation-tray.png" alt="Conversation Tray" title="Conversation Tray" style="border: 1px solid gray; zoom:80%;">
 
 # Conversation Status

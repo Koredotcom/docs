@@ -75,7 +75,7 @@ In this section, you can select the maximum wait time to receive a response from
 
 * **Timeout**: Select the maximum wait time from the drop-down list. The timeout range can be any value between 10 to 60, the default being 10.
 * **Timeout Error Handling**: Choose how the bot should respond when the timeout occurs:
-    * Close the Task and trigger Task Execution Failure Event
+    * Close the Task and trigger Task Execution Failure Event.
     * Continue with the task and transition to this node; select the node from the drop-down list.
 
 ### Instance Properties

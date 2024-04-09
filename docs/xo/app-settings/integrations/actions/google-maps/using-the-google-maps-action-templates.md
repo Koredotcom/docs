@@ -4,9 +4,9 @@ You can use the **Prebuilt Action Templates** from your Google Maps integration 
 
 Steps to create a dialog task using the Google Maps action templates:
 
-1. Go to **Build > Conversation Skills > Dialog Tasks**.
+1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
-<img src="../images/google-maps-tem-img1.png" alt="Create a Dialog Task" title="Create a Dialog Task" style="border: 1px solid gray;zoom:50%;"/>
+
 
 3. On the Dialog Task pop-up, under the Integration, select the Google Maps option to view the action templates.
 4. Select any of the dialog task templates and click **Proceed**. For example, select the **Get locations by coordinates** item.  

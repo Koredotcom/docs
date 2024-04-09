@@ -45,6 +45,11 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 ### Enterprise Channels
 
+
+
+
+
+
 <table style="table-layout: fixed; width: 100%;">
   
   <tr>
@@ -199,6 +204,9 @@ Click the icon of the channel you want to add, and then configure the channel to
   
 </table>
 
+
+
+
 ### Social Channels
 
 <table style="table-layout:fixed; width:100%;">
@@ -242,7 +250,6 @@ Click the icon of the channel you want to add, and then configure the channel to
    </td>
   </tr>
 </table>
-
 
 
 ### Other Channels

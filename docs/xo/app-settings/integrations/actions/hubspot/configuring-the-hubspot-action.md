@@ -7,7 +7,7 @@ This article explains how to authorize and enable the **HubSpot** action and ins
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports OAuth 2.0 authentication to allow a HubSpot integration to exchange data. For more information, see [Setting Up Authorization Using OAuth v2](../../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2/){:target="_blank"} article. 
+The Kore.ai XO Platform supports OAuth 2.0 authentication to allow a HubSpot integration to exchange data. For more information, see [Setting Up Authorization Using OAuth v2](../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2.md){:target="_blank"} article. 
 
 The Kore.ai XO Platform supports the following authorization types for the HubSpot CRM integration:
 
@@ -177,9 +177,9 @@ Steps to install action templates:
 2. In the Integration Templates dialog, click the **Install** button to begin the installation.  
 <img src="../images/hubspot-integration-img14.png" alt="Begin template installation" title="Begin template installation" style="border: 1px solid gray;zoom:50%;"/>
 
-3. Once the template is installed, the associated dialog task is auto-created and displayed on the Dialogs page.  Click **Go to Dialog** or go to **Automation AI** >**Virtual Assistant** > **Use Cases** > **Dialogs**.
+3. Once the template is installed, the associated dialog task is auto-created and displayed on the Dialogs page.  Click **Go to Dialog** or go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
 
-4. To start using the templates, see [Using HubSpot Templates](using-the-hubspot-action-templates.md).  
+4. To start using the templates, see [Using HubSpot Templates.](using-the-hubspot-action-templates.md){:target="_blank"}  
 
 
 

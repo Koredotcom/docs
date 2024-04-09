@@ -7,7 +7,7 @@ This document explains how to authorize and enable the Google Maps action and in
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow Google Maps integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} article.
+The Kore.ai XO Platform supports basic authentication to allow Google Maps integration to exchange data. For more information, read the [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the Google Maps integration:
 
@@ -34,9 +34,9 @@ You can authorize the integration using your credentials. The developer authoriz
 
 Steps to authorize a Google Maps action using developer credentials:
 
-1. Go to **Build > Integrations > Actions**.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Select the **Google Maps** from the list of **Available actions**.  
-<img src="../images/google-maps-action-img1.png" alt="Available actions-Google Maps" title="Available actions-Google Maps" style="border: 1px solid gray;zoom:50%;"/>
+
 
 3. In the **Configurations** dialog, select the **Authorization** tab.
 4. Enter the following details:
@@ -47,9 +47,11 @@ Steps to authorize a Google Maps action using developer credentials:
 
 
 5. Click **Enable**. When you configure the action for the first time, the Integration Successful pop-up is displayed.  
-<img src="../images/google-maps-action-img3.png" alt="Enable integration" title="Enable integration" style="border: 1px solid gray;zoom:50%;"/>  
-  
-    **Note**: The Google Maps action is moved from Available to Configured region.
+<img src="../images/google-maps-action-img3.png" alt="Enable integration" title="Enable integration" style="border: 1px solid gray;zoom:50%;"/>
+
+    !!! note
+
+        The Google Maps action is moved from Available to Configured region.
 
 6. You can also click the **Skip for Now** button to install the Dialog Task templates later. To learn how to use action templates, read the [Using the Google Maps action templates](../using-the-google-maps-action-templates/){:target="_blank"} article.  
 <img src="../images/google-maps-action-img4.png" alt="Skip for now" title="Skip for now" style="border: 1px solid gray;zoom:50%;"/>
@@ -61,7 +63,7 @@ You can authorize the integration at a user level with their login credentials. 
 
 Steps to authorize a Google Maps action at a user level:
 
-1. Go to **Build > Integrations > Actions** and select the **Google Maps** action.
+1. Go to **App Settings** > **Integrations** > **Actions** and select the **Google Maps** action.
 2. In the Configurations dialog, select the **Authorization** tab.
 3. Enter the following details:
     1. **Authorization Type** – Select the **Allow Users to Authorize the Integration** option, and then select the **Basic Auth** option.

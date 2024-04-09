@@ -6,9 +6,8 @@ Steps to create a dialog task using the Stripe action templates:
 
 
 
-1. Go to **Build > Conversation Skills > Dialog Tasks**.
+1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
-<img src="../images/stripe-tem-img1.png" alt="Create a Dialog Task" title="Create a Dialog Task" style="border: 1px solid gray;zoom:50%;"/>
 
 3. On the Dialog Task pop-up, under the Integration, select the Stripe option to view the action templates.  
 <img src="../images/stripe-tem-img2.png" alt="Integration - Stripe" title="Integration - Stripe" style="border: 1px solid gray;zoom:50%;"/>

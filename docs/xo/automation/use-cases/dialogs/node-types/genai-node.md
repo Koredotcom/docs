@@ -71,7 +71,7 @@ To add the GenAI Node to a Dialog Task, follow these steps:
 
 2. You can add the GenAI Node just like any other node. You can find it in the main list of nodes, as it does not depend on the Bot Action node.
 
-     <img src="../images/canvas.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+     <img src="../images/canvas-GenAI Node.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ## Configure
 
@@ -225,7 +225,7 @@ Add Custom Meta Tags to the conversation flow to profile VA-user conversations a
 
 Configure Voice Properties to streamline the user experience on voice channels. You can define prompts, grammar, and other call behavior parameters for the node. This node does not require Initial Prompts, Error Prompts, and grammar configuration.
 
-See [Voice Call Properties](../../../../../channels/call-properties){:target="_blank"} for more information on setting up this section of the GenAI Node.
+See [Voice Call Properties](../../../use-cases/dialogs/node-types/voice-call-properties.md){:target="_blank"} for more information on setting up this section of the GenAI Node.
 
 <img src="../images/genai-node(1).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 

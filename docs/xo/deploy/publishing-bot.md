@@ -51,7 +51,7 @@ To publish a VA, please follow the steps below:
 1. Select **Deploy** from the top menu
 2. From the left menu select **Publish**.
 3. The _Publish_ page opens with all the components selected by default.  
-<img src="../images/publish-bot-img2.png" alt="Publish page" title="Publish page" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/publish-bot-img2.gif" alt="Publish page" title="Publish page" style="border: 1px solid gray; zoom:70%;">
 
 4. Clear the checkboxes of any components you do not want to publish, and then click **Next**.
 5. Enter any useful **comments** for the Admin and click **Confirm**.
@@ -67,11 +67,24 @@ Every component that impacts end-user interactions or experience goes through th
 
 <table border="1">
   <tr>
-   <td colspan="3" ><strong>TASKS & LANGUAGES</strong>
+   <td colspan="3" ><strong>FLOWS, TASKS & LANGUAGES</strong>
    </td>
   </tr>
+
   <tr>
-   <td>Tasks (Dialog, Alert,, Panels, Widgets, Digital Forms, and Small Talk)
+   <td>Flows (Start flows, Conditional flows)
+   </td>
+   <td>
+     <ul>
+        <li><strong>Flows </strong>without published versions
+        <li><strong>Upgraded versions</strong> of the published flows.
+        </li>
+     </ul>
+   </td>
+  </tr>
+
+  <tr>
+   <td>Tasks (Dialog, Alert, Panels, Widgets, Digital Forms, and Small Talk)
    </td>
    <td>
      <ul>
