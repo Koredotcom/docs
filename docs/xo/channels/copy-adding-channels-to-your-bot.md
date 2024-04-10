@@ -1,4 +1,4 @@
-# Channel Enablement
+# Copy of Channel Enablement - DO NOT PUBLISH
 
 By default, your Virtual Assistant is not available to users unless you define one or more channels through which it can communicate. So, after creating a Virtual Assistant, you can add delivery channels that end-users can use to access and interact with it when deployed. For example, you can enable your assistant for use in the Kore.ai Messaging application, or allow interaction with your VA through an email address or a _Twilio_ SMS account. You can also enable your VA in third-party applications such as _Facebook_ or _Slack_. This topic describes how to add one or more delivery channels to your VA.
 
@@ -283,3 +283,38 @@ Click the icon of the channel you want to add, and then configure the channel to
   
   </tr>
 </table>
+
+
+
+### Third Party Voice Channels
+
+<table style="table-layout: fixed; width: 100%;">
+ <tr>
+   <td style="width:20%;"><a href="../amazon-alexa" target="_blank">Amazon Alexa</a>
+   <br>
+   <a href="../amazon-alexa" target="_blank"><img src="../images/logo32-alexa.png" width="50"></a>
+   </td>
+
+   <td style="width:20%;"><a href="../ivr-audio-codes" target="_blank">IVR–AudioCodes</a>
+   <br>
+   <a href="../ivr-audio-codes" target="_blank"><img src="../images/logo33-audiocodes.png" width="50"></a>
+   </td>
+
+   <td style="width:20%;"><a href="../IVR-integration" target="_blank">IVR</a>
+   <br><br>
+   <a href="../IVR-integration" target="_blank"><img src="../images/logo34-ivr.png" width="50"></a>
+   </td>
+
+   <td style="width:20%;"><a href="../add-twilio-voice-channel" target="_blank">Twilio Voice</a>
+   <br><br>
+   <a href="../add-twilio-voice-channel" target="_blank"><img src="../images/logo35-twilio.png" width="50"></a>
+   </td>
+
+   <td style="width:20%;"><a href="../smart-assist-gateway" target="_blank">SmartAssist<br>Gateway</a>
+   <br>  
+   <a href="../smart-assist-gateway" target="_blank"><img src="../images/logo36-smart-assist.png" width="90"></a>
+   </td>
+  </tr>
+  
+</table>
+
