@@ -91,6 +91,10 @@ Steps to create an In Queue Transfer Flow:
 5. In the **Waiting Experience** tab, select a flow from the In Queue Flow dropdown menu.
 <img src="../images/waiting-experience-in-queue-flow.png" alt="In Queue Flow" title="In Queue Flow" style="border: 1px solid gray; zoom:70%;">
 
+!!! Note
+
+    You can create your own Conditional Flows for No Agents Available and Out of Hours by following steps 1-4.
+
 ## Update Conditional Flows
 
 To update a conditional flow, click the (**⋮**) icon and then click **Update**.

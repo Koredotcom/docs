@@ -312,6 +312,7 @@ nav:
       - Campaign Management: contactcenter/campaigns/campaign-management/campaigns.md
       - List Management: contactcenter/campaigns/list-management/list-management.md
       - Settings: contactcenter/campaigns/settings/global-settings.md
+      - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
   - Agent AI:
     - Overview: agentai/about-agent-ai.md           
     - Set up Agent AI:
