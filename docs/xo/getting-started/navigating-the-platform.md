@@ -6,7 +6,8 @@
 
 ## Prerequisites
 
-[How to Access the Kore.ai XO Platform?](./accessing-the-platform.md)
+
+[How to Access the Kore.ai XO Platform?](../getting-started/accessing-the-platform.md){:target="_blank"}.
 
 
 ## Introduction
@@ -15,38 +16,26 @@ This article takes you through the main sections and menu items you will be usin
 
 Throughout this article and within the Kore.ai XO Platform itself, a _Virtual Assistant_ is also called a _Bot_. 
 
-To get started navigating the XO Platform, log into your account and select the **Virtual Assistants** tab.
-
+To get started navigating the XO Platform, log into your account.
 
 ## Explore The Landing Page
 
-After you sign in, you are directed to the landing page, which is, essentially, your account homepage.  This page preselects the **Virtual Assistants** tab.
+After you sign in, you are directed to the landing page, which is, essentially, your account homepage.
 
-
-
-
-![alt_text](images/ntp(1).png "image_tooltip")
-
-
+ <img src="../images/ntp(1).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ### The Top Menu
 
 The top menu available on the landing page provides access to the following options:
 
-
-
-1. Access the **Virtual Assistants** in your account:
-2. Reach your[ Process Apps,](https://developer.kore.ai/docs/process-apps/introduction/)
-3. Access the[ Data section](https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/),
-4. **Invite Members** to your account,
-5. Access the Contextual **Help** section.
-6. **Switch Workspace**, if you are part of more than one team.
-7. Access the **Profile** section, which allows you to reach the following features:
-    * View and edit your **Profile**;.
-    * Set the **App Language** – to switch the platform’s language;.
+1. Access the [Data section](https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/),
+2. **Invite Members** to your account,
+3. Access the Contextual **Help** section.
+4. **Switch Workspace**, if you are part of more than one team.
+5. Access the **Profile** section, which allows you to reach the following features:
+    * View and edit your **Profile**.
     * Access the **Admin Console** – only if you are an Administrator. This is where you can manage your account and associated assets.
     * **Log out**.
-
 
 ### The Bots List
 
