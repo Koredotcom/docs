@@ -295,6 +295,7 @@ nav:
       - Surveys: contactcenter/configurations/surveys/configure-surveys.md
       - Widgets: contactcenter/configurations/widgets/configure-widgets.md
     - Flows and Routing:
+      - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
     - Routing:
       - Queues: contactcenter/routing/queues/queue-management.md
@@ -307,6 +308,11 @@ nav:
       - Introduction to the Console: console/introduction-to-the-console/introduction.md
     - Campaigns:  
       - Overview: contactcenter/campaigns/about-campaigns.md
+      - Dashboard: contactcenter/campaigns/dashboard/campaign-dashboard.md
+      - Campaign Management: contactcenter/campaigns/campaign-management/campaigns.md
+      - List Management: contactcenter/campaigns/list-management/list-management.md
+      - Settings: contactcenter/campaigns/settings/global-settings.md
+      - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
   - Agent AI:
     - Overview: agentai/about-agent-ai.md           
     - Set up Agent AI:
