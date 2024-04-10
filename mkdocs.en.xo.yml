@@ -295,6 +295,7 @@ nav:
       - Surveys: contactcenter/configurations/surveys/configure-surveys.md
       - Widgets: contactcenter/configurations/widgets/configure-widgets.md
     - Flows and Routing:
+      - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
     - Routing:
       - Queues: contactcenter/routing/queues/queue-management.md
