@@ -38,17 +38,19 @@ In this section, you can customize greeting messages at the beginning of the con
 5. Click **+ Add Message** > **New Messages** to add a new greeting message.
    <img src="../welcome-events-images/adding-new-greeting-messages-2.png" alt="adding-new-greeting-messages" title="adding-new-greeting-messages" style="border: 1px solid gray; zoom:80%;"> 
 6. Enter the new greeting message in the **Message** box and click **Add**.
-   <img src="../welcome-events-images/configure-and-add-new-greeting-message-3.png" alt="configure-and-add-new-greeting-message" title="configure-and-add-new-greeting-message" style="border: 1px solid gray; zoom:80%;">
-The new greeting message gets added to the list of existing messages.
+   <img src="../welcome-events-images/configure-and-add-new-greeting-message-3.png" alt="configure-and-add-new-greeting-message" title="configure-and-add-new-greeting-message" style="border: 1px solid gray; zoom:60%;">
+   The new greeting message gets added to the list of existing messages.
 7. Click **Copy from Chat** to copy existing messages in **Chat**.
-!!! note "Note"
-    **Copy from Voice** appears for the Chat channel and **Copy from Chat** appears for the Voice channel.
-<img src="../welcome-events-images/copying-from-chat-messages-4.png" alt="copying-from-chat-messages" title="copying-from-chat-messages" style="border: 1px solid gray; zoom:80%;">
-    1. Select the **Welcome Messages** button to select all the existing messages or select individual messages one by one.
-    2. Click **Confirm**.
-All selected messages appear in the list of existing messages.
-8. Click **Display Random Message** to enable all configured messages and randomly display any three on the agent’s screen.
-   <img src="../welcome-events-images/display-random-message-and-select-message-language-5.png" alt="display-random-message-and-select-message-language" title="display-random-message-and-select-message-language" style="border: 1px solid gray; zoom:80%;"> 
+
+    !!! note "Note"
+        **Copy from Voice** appears for the Chat channel and **Copy from Chat** appears for the Voice channel.
+
+    <img src="../welcome-events-images/copying-from-chat-messages-4.png" alt="copying-from-chat-messages" title="copying-from-chat-messages" style="border: 1px solid gray; zoom:80%;">
+   1. Select the **Welcome Messages** button to select all the existing messages or select individual messages one by one.
+   2. Click **Confirm**.
+      All selected messages appear in the list of existing messages.
+8. Click **Display Random Message** to enable all configured messages and randomly display any three on the agent’s screen.  
+   <img src="../welcome-events-images/display-random-message-and-select-message-language-5.png" alt="display-random-message-and-select-message-language" title="display-random-message-and-select-message-language" style="border: 1px solid gray; zoom:80%;">
 9. Click the **down-arrow** to change message language.
 10. Click the **edit** button against an existing message to modify it.
 11. Make the changes and click **Update**.
@@ -64,7 +66,6 @@ In this section, you can select what to run first between the dialog tasks and g
 
 1. Click **CONFIGURATION** > **Welcome Events**.
 2. Click to expand the **Priority Settings** section.
-3. Select the radio button **On-Connect Dialog Task** or **Greeting Messages**.
-
+3. Select the radio button **On-Connect Dialog Task** or **Greeting Messages**
    <img src="../welcome-events-images/priority-settings-6.png" alt="priority-settings" title="priority-settings" style="border: 1px solid gray; zoom:80%;">  
 4. Click **Save**.
