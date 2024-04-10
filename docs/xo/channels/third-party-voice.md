@@ -52,14 +52,8 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 | [Amazon Alexa](./amazon-alexa.md)<br>  <br>[![](./images/logo32-alexa.png)](./amazon-alexa.md) | [IVR–AudioCodes](./ivr-audio-codes.md) <br> <br>[![](./images/logo33-audiocodes.png)](./ivr-audio-codes.md) | [IVR](./ivr-integration.md) <br>  <br>[![](./images/logo34-ivr.png)](./ivr-integration.md) | [Twilio Voice](./add-twilio-voice-channel.md) <br>   <br>[![](./images/logo35-twilio.png)](./add-twilio-voice-channel.md) |  
 |:---:|:---:|:---:|:---:|
+  
 
 
 
-| [Amazon Alexa](./amazon-alexa.md)<br>  <br>[![](./images/logo32-alexa.png)](./amazon-alexa.md) | [IVR–AudioCodes](./ivr-audio-codes.md) <br> <br>[![](./images/logo33-audiocodes.png)](./ivr-audio-codes.md) | [IVR](./ivr-integration.md) <br>  <br>[![](./images/logo34-ivr.png)](./ivr-integration.md) |  
-|:---:|:---:|:---:|
-|[**Twilio Voice**](./add-twilio-voice-channel.md) <br>   <br>[![](./images/logo35-twilio.png)](./add-twilio-voice-channel.md) |
 
-
-| [Amazon Alexa](./amazon-alexa.md)<br>  <br>[![](./images/logo32-alexa.png)](./amazon-alexa.md) | [IVR–AudioCodes](./ivr-audio-codes.md) <br> <br>[![](./images/logo33-audiocodes.png)](./ivr-audio-codes.md) |  
-|:---:|:---:|
-|[**IVR**](./ivr-integration.md) <br>  <br>[![](./images/logo34-ivr.png)](./ivr-integration.md) | [**Twilio Voice**](./add-twilio-voice-channel.md) <br>   <br>[![](./images/logo35-twilio.png)](./add-twilio-voice-channel.md) |
