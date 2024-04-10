@@ -87,7 +87,7 @@ Steps to create an In Queue Transfer Flow:
 2. Enter the **Conditional Flow Name** and **Description** in the **New Outbound Flow** window.
 3. Select **In Queue Transfer Flow** from the **Flow Type** dropdown menu.
 4. Select the Channel (Voice/Chat) and click **Create & Continue to Flow Design**.  
-<img src="../images/new-outbound-flow.png" alt="New BOutbound Flow Window" title="New Outbound Flow Window" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/new-outbound-flow.png" alt="New Outbound Flow Window" title="New Outbound Flow Window" style="border: 1px solid gray; zoom:70%;">
 5. In the **Waiting Experience** tab, select a flow from the In Queue Flow dropdown menu.
 <img src="../images/waiting-experience-in-queue-flow.png" alt="In Queue Flow" title="In Queue Flow" style="border: 1px solid gray; zoom:70%;">
 
