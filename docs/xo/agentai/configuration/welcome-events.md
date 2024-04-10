@@ -56,7 +56,7 @@ In this section, you can customize greeting messages at the beginning of the con
 
 8. Click **Display Random Message** to enable all configured messages and randomly display any three on the agent’s screen.
 
-   <img src="../welcome-events-images/display-random-message-and-select-message-language-5.png" alt="display-random-message-and-select-message-language" title="display-random-message-and-select-message-language" style="border: 1px solid gray; zoom:80%;">
+      <img src="../welcome-events-images/display-random-message-and-select-message-language-5.png" alt="display-random-message-and-select-message-language" title="display-random-message-and-select-message-language" style="border: 1px solid gray; zoom:80%;">
 
 9. Click the **down-arrow** to change message language.
 
