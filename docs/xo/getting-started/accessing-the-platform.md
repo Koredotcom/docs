@@ -171,7 +171,7 @@ After the Workspace has been created, Administrators can invite new members usin
 
     By default, the **Invite Members** option at the Builder level is visible for the admins with the ‘Master Admin’ role. For admins with custom administrator roles, the **Invite** permission should be enabled in the role management.
  
-![alt_text](images/accplatform(1).gif "image_tooltip")
+<img src="../images/accplatform(15).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ### Switch Workspaces
 
@@ -183,4 +183,4 @@ Team members can switch workspaces, using the switcher at the top right, next to
 
 Team members can also **Browse Workspaces** to see those that are active within your organization, and to which access can be requested. This option lists Workspaces based on the email domain.
 
-![alt_text](images/accplatform(2).gif "image_tooltip")
+<img src="../images/accplatform(16).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
