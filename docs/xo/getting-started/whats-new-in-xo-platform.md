@@ -1,10 +1,13 @@
 ---
 hide:
-  - toc
   - feedback
+  - toc
 ---
-# All-new Experience Optimization Platform
-Kore.ai Experience Optimization (XO) Platform is an AI-powered, end-to-end experience optimization Platform for enterprises of any scale to offer best-in-class conversational experiences for customers, employees, and agents. The Platform seamlessly blends conversational AI intelligence and generative AI innovation, offering the tools to create scalable and memorable customer experiences. The Platform is recognized as the world's most secure, credible, and scalable solution for generative and conversational AI. The Platform's business user-friendly, no-code interface allows businesses to construct intelligent virtual assistants, incorporating large language models and generative AI to foster meaningful and continuous conversations in users' preferred languages and channels.
+# What's New in the XO Platform
+Learn about the new features and enhancements included in v11 of Kore.ai Experience Optimization Platform.
+
+## All-new Experience Optimization Platform
+Kore.ai all-new Experience Optimization (XO) Platform is an AI-powered, end-to-end experience optimization Platform for enterprises of any scale to offer best-in-class conversational experiences for customers, employees, and agents. The Platform seamlessly blends conversational AI intelligence and generative AI innovation, offering the tools to create scalable and memorable customer experiences. The Platform is recognized as the world's most secure, credible, and scalable solution for generative and conversational AI. The Platform's business user-friendly, no-code interface allows businesses to construct intelligent virtual assistants, incorporating large language models and generative AI to foster meaningful and continuous conversations in users' preferred languages and channels.
 
 ## Comprehensive Suite of Products and Services
 The unified XO Platform offers a comprehensive suite of products, features, and services to help businesses leverage conversational AI intelligence and generative AI innovations to deliver exceptional customer experiences, improve operational efficiency, and drive business growth.
@@ -23,7 +26,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     * **Multi-Model NLU**: Natural Language Understanding that uses multiple models to better understand user input.
     * **GenAI Framework**: A generative AI framework to enhance automation capabilities.  
     
-    [Learn more about Automation AI features :octicons-arrow-right-24:](../automation/about-automation.md)
+    [Learn more about Automation AI features :octicons-arrow-right-24:](../automation/about-automation-ai.md)
 
 === "Search AI"
 
@@ -47,7 +50,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     * **Agent Desktop**: Provides a centralized workspace for agents.
     * **Campaigns**: Tools for managing voice and proactive web campaigns.  
     
-    [Learn more about Contact Center AI features :octicons-arrow-right-24:](../contactcenter/about-contact-center.md)
+    [Learn more about Contact Center AI features :octicons-arrow-right-24:](../contactcenter/about-contact-center-ai.md)
 
 === "Agent AI"
 
@@ -59,7 +62,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     * **Auto-fulfillment**: Automates the completion of tasks and processes.
     * **Agent Coaching & Playbooks**: Provides resources and strategies for agent training and performance.  
     
-    [Learn more about Agent AI features :octicons-arrow-right-24:](../agentassist/about-agentassist.md)
+    [Learn more about Agent AI features :octicons-arrow-right-24:](../agentai/about-agent-ai.md)
 
 === "Analytics"
 

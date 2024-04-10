@@ -11,12 +11,12 @@ Search AI offers AI-powered conversational search tools to quickly and accuratel
         <img src="../images/lm-answer-content.svg" style="zoom:200%;"></img>
         <kr-grid-title>Content</kr-grid-title>
         <kr-grid-desc>Add content from web pages, files, and other sources. Define strategies for extracting chunks, generate vectors from the extracted chunks, and create the knowledge index.</kr-grid-desc>
-        <a href="">Learn More</a>
+        [Learn more :octicons-arrow-right-24:](./content-sources/introduction.md)
     </kr-grid-item>
     <kr-grid-item>
         <img src="../images/lm-answer-configuration.svg" style="zoom:200%;"></img>
         <kr-grid-title>Configurations</kr-grid-title>
         <kr-grid-desc>Configure the similarity score for the closer match, set the number of chunks for answer generation, and choose an LLM to get paraphrased answers for user queries.</kr-grid-desc>
-        <a href="">Learn More</a>
+        [Learn more :octicons-arrow-right-24:](./answer-configuration.md)
     </kr-grid-item>           
 </kr-grid>

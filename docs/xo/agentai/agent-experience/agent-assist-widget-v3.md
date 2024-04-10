@@ -1,4 +1,4 @@
-# **AgentAssist Widget**
+# AgentAssist Widget
 
 The AgentAssist is an AI powered virtual assistant to optimize contact center agent performance. It offers seamless assistance, promoting enhanced productivity and improved customer satisfaction. Its user-friendly interface and real-time support capabilities let agents effortlessly solve complex customer interactions.
 
@@ -19,7 +19,8 @@ The following features are available in the AgentAssist widget:
 * **Knowledge AI**: Allows customization of Knowledge AI search result displays with control over search results presentation, the option to display auto suggestions in the Ask AgentAssist search bar, and optimization of the search experience through advanced Knowledge AI API configuration, offering both Basic and Advanced options.
 
 <img src="./../widget-images/agent-assist-widget-v3-appearance.png" alt="agent-assist-widget-v3-appearance.png" title="agent-assist-widget-v3-appearance.png" style="border: 1px solid gray; zoom:80%;">
-## **Widget Tabs**
+
+## Widget Tabs
 
 The widget consists of five tabs–Search, My Bot, Assist, Transcript, and Settings–to help the agents perform different tasks and activities.
 
@@ -27,7 +28,7 @@ The widget consists of five tabs–Search, My Bot, Assist, Transcript, and Setti
 
 <img src="./../widget-images/agent-assist-widget-tabs.png" alt="agent-assist-widget-tabs.png" title="agent-assist-widget-tabs.png" style="border: 1px solid gray; zoom:80%;">
 
-### **Search Tab**
+### Search Tab
 
 This tab shows all configured Dialog Tasks at the bot level and also gives search capabilities wherein agents can search Dialog Tasks, frequently asked questions (FAQs), Generative AI answers, web pages, files, and more. The content in this section dynamically updates based on all agent interactions. The agents can scroll through the list to get visibility of all the automations that are readily available to execute. If you click the ellipsis and select "Run with Agent’s input", the dialog moves to the My Bot section, and you can run the dialog from there.
 
@@ -35,13 +36,11 @@ This tab shows all configured Dialog Tasks at the bot level and also gives searc
 
 The following buttons are available in this section:
 
-
-
 * **Run button**: For Dialog Tasks. Click to run a configured Dialog Task.
 * **Run with Agent’s input**: Click this button to run a Dialog Task with agent’s input. The agent can customize the content and decide whether to send a dialog or not. Selecting this option automatically moves you to the My Bot section.
 
 
-### **My Bot Tab**
+### My Bot Tab
 
 My Bot functionality allows agents to run the entire automation by themselves. Agents provide inputs to the bot and obtain the desired results.
 
@@ -51,13 +50,11 @@ My Bot tab displays the list of “next best action” suggestions for the agent
 
 My bot functionality can be used in multiple circumstances (but not limited to): 
 
-
-
 * If Automation fails, the agent can rerun it by providing inputs manually, which helps to reduce the average handle time (AHT) and makes it less frustrating for customers as they don’t have to repeat the same information.
 * Agents can run MyBot automation in parallel and seek information directly from the bot.
 
 
-### **Assist Tab**
+### Assist Tab
 
 The Assist tab is the primary interface for the agents. AgentAssist actively monitors conversations and offers assistance to agents. Through the Assist tab, customer intents in the form of Dialog Tasks, FAQs, KnowledgeAI, and Playbook are identified. Agents can run automation processes and send FAQs, Playbook body text, and Dialog Task text to users. The Assist tab displays Dialog Tasks, Playbooks, and Agent Coaching progression. For these features to be available, they should be configured on your device. This section also displays a “bulb” icon if there is a Dynamic Playbook match.
 
@@ -65,8 +62,6 @@ The Assist tab is the primary interface for the agents. AgentAssist actively mon
 <img src="./../widget-images/assist-tab.png" alt="assist-tab" title="assist-tab" style="border: 1px solid gray; zoom:80%;">
 
 The Assist tab facilitates the following:
-
-
 
 * Guide agents through conversations by providing the best response suggestions.
 * Automatic retrieval of information from knowledge base (KB) based on user intent.
@@ -78,8 +73,6 @@ The Assist tab facilitates the following:
 * Feedback for Dialog Task and Knowledge AI
 
 The Assist tab features the following:
-
-
 
  * **Running Playbook stages:** Shows the total and adhered stages of a running playbook. For example, 1/3 means 1 out of 3 stages of a playbook has been adhered to.
  * **Proceed to Close:** This button is available when a playbook is running. Clicking this button leads to a change in the playbook running status from Open to Close, and agents are prompted to ask if the customer needs any other help before ending the call.
@@ -95,7 +88,7 @@ The Assist tab features the following:
 * **Maximize/Minimize button**: This button maximizes/minimizes the displayed page section.
 
 
-### **Transcript Tab**
+### Transcript Tab
 
 The Transcript feature is available specifically for voice calls.
 
@@ -104,7 +97,7 @@ When a voice call begins, the Transcript tab shows the transcripts. This informa
 The Transcript functionality transcribes the audio for the agent and the customer in real-time. Once transcribed, the messages are readily available for the agent throughout the session. Also, it allows the agent to have a historical view for referring back whenever needed.
 <img src="./../widget-images/transcript-tab.png" alt="transcript-tab.png" title="transcript-tab.png" style="border: 1px solid gray; zoom:80%;">
 
-### **Settings**
+### Settings
 
 The Settings tab gives you access to set the listening mode of the bot, available documents and FAQs, and the option to choose a language.
 
@@ -130,15 +123,14 @@ This section lists the supported languages and lets you select a language of you
 # 
 
 
-# AgentAssist V2 vs V3 - Key Differences
+## AgentAssist V2 vs V3 - Key Differences
 
 AgentAssist V3 introduces many additional features and updates over AgentAssist V2. This document highlights the differences visible on the user interface (UI) and at the feature-level.
 
 
-## Difference in the UI
+### Difference in the UI
 
 The following UI updates are done:
-
 
 
 * **Tab Configuration**:
@@ -164,7 +156,7 @@ The following UI updates are done:
 
 <img src="./../widget-images/agent-assist-widget-v3.png" alt="agent-assist-widget-v3.png" title="agent-assist-widget-v3.png" style="border: 1px solid gray; zoom:80%;">
 
-## Differences at the Feature/Tab level
+### Differences at the Feature/Tab level
 
 The following updates have been added at the feature level:
 
@@ -191,7 +183,7 @@ The following updates have been added at the feature level:
 <img src="./../widget-images/agentassist-v3-features-2.png" alt="agentassist-v3-features-2" title="agentassist-v3-features-2" style="border: 1px solid gray; zoom:80%;">
 
 
-## New Tab addition - Settings Tab
+### New Tab addition - Settings Tab
 The **Settings** tab in V3 lets you to:
 
 * Turn on/off the **Proactive mode**.
