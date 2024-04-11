@@ -447,7 +447,10 @@ nav:
       - Conversation Flows: analytics/automation/conversation-flows.md            
     - Contact Center:  
       - Queues & Agents: analytics/contact-center/queues-and-agents.md
-      - Interactions: analytics/contact-center/interactions.md    
+      - Interactions: analytics/contact-center/interactions.md  
+      - Reports:
+        - Introduction: analytics/contact-center/reports/introduction-to-reports.md
+        - Reports List: analytics/contact-center/reports/reports-list.md
   - Administration:
     - Deployment:
       - App Versioning: deploy/bot-versioning.md
