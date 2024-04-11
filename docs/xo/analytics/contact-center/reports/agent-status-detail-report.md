@@ -4,7 +4,7 @@
 
 The Agent Status Detail Report is a detailed report on all status transitions over a date range.  
 
-To generate the Agent Status Detail Report:
+Steps to generate the Agent Status Detail Report:
 
 1. On the Reports tab, click **New Report**.
 2. In the list of reports, choose the **Agent Status Detail Report**.
@@ -33,7 +33,7 @@ While generating reports you have two options, Run On Demand and Schedule.
 **Schedule**: While creating a new report or editing an existing report, the schedule of the report can be changed. The use of the schedule is the standard way to generate a report. If the report is scheduled for later then it will automatically be generated on the scheduled day and time without the need to click Run.
 
 10. Click the **PDF/Page** icon to download the report.
-<img src="../reports/images/pdf-agent-status-detail-report.png" alt="Agent Status Detail Report PDF" title="Agent Status Detail Report PDF" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/pdf-agent-status-detail-report.png" alt="Agent Status Detail Report PDF" title="Agent Status Detail Report PDF" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note
 

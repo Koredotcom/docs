@@ -4,7 +4,7 @@
 
 The Agent Metrics Daily Report is a daily summary of agent performance metrics, by channel.
 
-To generate an Agent Metrics Daily Report:
+Steps to generate the Agent Metrics Daily Report:
 
 1. On the Reports tab, click **New Report**.
 2. In the list of reports, choose the **Agent Metrics Daily Report**.
