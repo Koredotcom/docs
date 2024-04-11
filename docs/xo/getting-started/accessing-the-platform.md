@@ -60,6 +60,7 @@ To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
 !!! note
 
     Kore.ai XO Platform uses SAML-based authentication for completing the sign up and sign in flows.
+    
 
 ## Sign in to the Platform
 
