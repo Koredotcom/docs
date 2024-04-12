@@ -293,7 +293,6 @@ nav:
       - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md
     - Configurations:
       - AgentAssist Settings: contactcenter/configurations/agentassist-settings/agentassist-settings.md
-      - Default Flows: contactcenter/configurations/default-flows/configure-default-flows.md 
       - Email Inbox Config: contactcenter/configurations/email-inbox-config/configure-emails.md
       - Hours of Operation: contactcenter/configurations/hours-of-operation/manage-hours-of-operation.md
       - Languages and Speech: contactcenter/configurations/languages-and-speech/configure-languages-and-speech.md
