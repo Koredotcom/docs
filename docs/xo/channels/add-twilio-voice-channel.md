@@ -72,7 +72,7 @@ To enable the Twilio Voice Channel, follow the below steps:
 
 5. Once you have enabled the Twilio channel, it is recommended to configure the **Telephony Welcome Event** for Voice Call Settings. This plays a welcome message for users when they connect to the VA through the Twilio channel. For this:  
 
-    1. From **Natural Language > Default Conversation > Event Handlers** configure **Telephony Welcome Event**.
+    1. Go to **Virtual Assistant** > **Conversation Intelligence** > **Events** > **Conversation Events** and configure **Telephony Welcome Event**. 
     2. Click **Use Voice Call Properties** to open the Voice Call settings section.
     3. Under the **Initial Prompts** text box, enter the message that needs to be played when the user connects to the VA.
 

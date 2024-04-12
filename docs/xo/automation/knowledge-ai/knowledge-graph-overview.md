@@ -19,16 +19,16 @@ Starting with v10.1 of the XO Platform, the Few-Shot Model is the default for al
 
 If you have built your Ontology-based graph before this release, you can migrate to the new model anytime. You must upgrade to NLP V3 to use the Few-Shot Model. You can return to the Ontology model if you change your mind later.
 
-You can select your desired Knowledge Graph Type by going to **Build > Natural Language** > **Thresholds and Configurations** > **Knowledge Graph**.
+You can select your desired Knowledge Graph Type by going to **Automation AI** > **Virtual Assistant** > **Knowledge AI**.
 
-Changing Knowledge Graph Types is captured in the Change Logs, which you can access by going to **Deploy > Change Logs**.
+Changing Knowledge Graph Types is captured in the Change Logs, which you can access by going to **App Settings** > **Change Logs**.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Before changing your Knowledge Graph Type, we recommend backing up your existing knowledge graph by either creating a new bot version or by exporting a copy of your knowledge graph as a JSON or CSV.</p>
 </div>
 
-Please continue reading to learn more about each type of knowledge graph. See <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-terminology/" target="_blank">Knowledge Graph Terminology</a> for in-depth information about Knowledge Graph features and components.
+Please continue reading to learn more about each type of knowledge graph. See [Knowledge Graph Terminology](./knowledge-graph-terminology.md) for in-depth information about Knowledge Graph features and components.
 
 ## The Ontology Knowledge Graph
 
@@ -40,13 +40,13 @@ You can also add completely different alternative questions to the FAQ and provi
 
 ### Enable the Ontology Knowledge Graph
 
-To enable this Knowledge Graph type, go to **Build > Natural Language > Thresholds and Configurations > Knowledge Graph**, and select **Ontology Model** as the Knowledge Graph Type.
+To enable this Knowledge Graph type, go to **Virtual Assistant** > **Natural Language** > **NLU Configuration** > **Engine Tunning** > **Knowledge Graph**, and select **Ontology Model** as the Knowledge Graph Type.
 
 Before enabling the Ontology Knowledge Graph model, please consider the following:
 
 1. You must build a Graph Ontology structure so the engine can qualify paths and compare them with query input. Each relevant term/node is considered while identifying the appropriate FAQ, so you must regularly maintain the node structure to facilitate optimum performance.
-2. The model supports three <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-training/#term-type" target="_blank">Type of Term</a> : _Default, Mandatory,_ and _Organizer_.
-3. The Ontology Model also supports other features such as Traits, Patterns, Path Synonyms, KG Synonyms, Bot Synonyms, Preconditions, and more. Please see the Comparison Table below for a detailed list of supported features. Also, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-training/" target="_blank">Knowledge Graph Training</a> for configuration details.
+2. The model supports three [Type of Term](knowledge-graph-training.md#term-type) : _Default, Mandatory,_ and _Organizer_.
+3. The Ontology Model also supports other features such as Traits, Patterns, Path Synonyms, KG Synonyms, Bot Synonyms, Preconditions, and more. Please see the Comparison Table below for a detailed list of supported features. Also, see [Knowledge Graph Training](./knowledge-graph-training.md) for configuration details.
 
 ### How It Works
 
@@ -66,11 +66,11 @@ Training the Ontology Knowledge Graph Model involves the following steps:
 
 ## The Few-Shot Knowledge Graph
 
-This Knowledge Graph type uses Kore.ai’s Large Language Model (LLM) to identify the appropriate FAQ for a query based on semantic similarity and <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/" target="_blank">Pattern Recognition</a>. This model only uses Mandatory and Organizer terms and does not perform path qualification, so you are not required to build an ontology. All you need to do is add all FAQs to the root node/term. It significantly reduces the complexity of building and maintaining an ontology structure.
+This Knowledge Graph type uses Kore.ai’s Large Language Model (LLM) to identify the appropriate FAQ for a query based on semantic similarity and [Pattern Recognition](../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities.md). This model only uses Mandatory and Organizer terms and does not perform path qualification, so you are not required to build an ontology. All you need to do is add all FAQs to the root node/term. It significantly reduces the complexity of building and maintaining an ontology structure.
 
 ### Enable the Few-Shot Knowledge Graph
 
-To enable the Few-Shot Knowledge Graph, go to **Build > Natural Language > Thresholds and Configurations > Knowledge Graph**, and select **Few-Shot Model** as the Knowledge Graph Type.
+To enable the Few-Shot Knowledge Graph, go to **Virtual Assistant** > **Natural Language** > **NLU Configuration** > **Engine Tunning** > **Knowledge Graph**, and select **Few-Shot Model** as the Knowledge Graph Type.
 
 Before enabling the Few-Shot Knowledge Graph, please consider the following:
 
@@ -80,7 +80,7 @@ Before enabling the Few-Shot Knowledge Graph, please consider the following:
 
 ### How It Works
 
-When a new utterance reaches the Few-Shot Knowledge Graph, the Large Language Model determines possible and definitive intent matches. The model uses semantic similarity, and when similarity crosses the threshold, then <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/" target="_blank">Pattern Recognition</a> is used. The identified intents are sent to Ranking and Resolver, where the winning intent is identified. Once this process completes, the assistant responds to the query.
+When a new utterance reaches the Few-Shot Knowledge Graph, the Large Language Model determines possible and definitive intent matches. The model uses semantic similarity, and when similarity crosses the threshold, then [Pattern Recognition](../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities.md) is used. The identified intents are sent to Ranking and Resolver, where the winning intent is identified. Once this process completes, the assistant responds to the query.
 
 Training this model mainly involves adding tags and alternative questions to FAQs. Other training features, such as term synonyms, traits, context, etc., are optional but still recommended to improve performance for specific use cases where the LLM cannot identify the intent.
 
