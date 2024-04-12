@@ -17,6 +17,6 @@ Agent AI is your agent’s personal intelligent Virtual Assistant. It offers AI-
         <img src="../images/Iconsettings.svg" style="zoom:200%;"></img>
         <kr-grid-title>Events and Widget Configuration</kr-grid-title>
         <kr-grid-desc>Configure Welcome Events for a consistent start-of-the-conversation experience. Set up the Agent AI widget, enabling agents to collaborate one-on-one with Agent AI during live conversations with customers.</kr-grid-desc>
-        [Learn more :octicons-arrow-right-24:](./agent-experience/agent-realtime-coaching.md)
+        [Learn more :octicons-arrow-right-24:](./configuration/welcome-events.md)
     </kr-grid-item>             
 </kr-grid>

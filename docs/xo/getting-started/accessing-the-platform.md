@@ -1,6 +1,6 @@
 
 
-# How to Access the Platform
+# Accessing the Platform
 
 Kore.ai Experience Optimization (XO) Platform is an AI-powered, end-to-end experience optimization Platform for enterprises of any scale to offer best-in-class conversational experiences for customers, employees, and agents.
 

@@ -111,7 +111,7 @@ copyright: |
 nav:
   - Home : home.md
   - Platform:
-    - What's New in the XO Platform: getting-started/whats-new-in-xo-platform.md
+    - What's New in XO 11: getting-started/whats-new-in-xo-platform.md
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md          
       - Flows and Channels:

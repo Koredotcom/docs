@@ -1,17 +1,6 @@
 
 # Navigating the Kore.ai XO Platform
 
- 
-
-
-## Prerequisites
-
-
-[How to Access the Kore.ai XO Platform?](../getting-started/accessing-the-platform.md){:target="_blank"}.
-
-
-## Introduction
-
 This article takes you through the main sections and menu items you will be using while working with the XO Platform. 
 
 Throughout this article and within the Kore.ai XO Platform itself, a _Virtual Assistant_ is also called a _Bot_. 
