@@ -30,7 +30,7 @@ If disabled, the Playbook tab doesn’t appear in the widget, but you have the A
 ### Steps to set channel specific preferences
 
 1. Sign in to XO Platform.
-2. Go to **CONFIGURATION **>** SYSTEM SETUP **>** Widget Settings**.
+2. Go to **CONFIGURATION** > **SYSTEM SETUP** > **Widget Settings**.
 3. Click to expand the **AgentAssist Channel Specific Settings** section on the **AgentAssist Settings** page.
 4. Select a **channel** in the **Select channel** list.
 5. Click the **toggle** against **AgentAssist Channel Specific Settings** to enable it (if **Disabled**).
@@ -38,7 +38,6 @@ If disabled, the Playbook tab doesn’t appear in the widget, but you have the A
 7. Select or clear the **Submit** button under the **Auto Summarization** section.
 8. Select an option from the list against the **Widget Landing Tab** section.
 9. Click **Save** to save your settings.
-
    <img src="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" alt="agentassist-channel-specific-settings-page" title="agentassist-channel-specific-settings-page" style="border: 1px solid gray; zoom:80%;">
 
 ## Knowledge AI
@@ -60,29 +59,25 @@ This section lets you gain access to the Knowledge AI features within the AgentA
 4. Click the toggle against **Knowledge Settings** to enable it (if **Disabled**).
 5. Select the options under the **Search Results**, **Show Auto Suggestions**, and **API Integration** sections.
 6. Click **Save** to save your settings.
-
    <img src="../widget-settings-images/knowledge-ai-settings-page-2.png" alt="knowledge-ai-settings-page" title="knowledge-ai-settings-page" style="border: 1px solid gray; zoom:80%;">
 
 ### **AgentAssist General Settings**
 
 This section lets you set up the general features of the AgentAssist widget. Here, you can turn on or off the event-not-found event trigger and control the URL opening behavior.
+* **Honor Bot Event – Intent not found**: Here, you can turn on or off the Honor Bot Event – Intent not found toggle. When turned on, the configured intent-not-found event triggers if AgentAssist doesn’t understand the user’s intent.
 
 * **URL opening behavior**: Here, you can customize the behavior for URL opening in the AgentAssist widget for desktop applications. The following options are available:
     * **Default System Behavior**: The AgentAssist widget uses the system’s default approach for URL opening – the link/page opens in a new window.
     * **Post Event**: When a URL is clicked within the AgentAssist widget, it initiates an event named “AgentAssist.UrlClickedMessage.” This event enables the desktop application to manage the URL’s opening behavior, as defined in the agreement between AgentAssist and the agent desktop application. The following screenshot depicts the actions in the widget when you click a URL:
-
     <img src="../widget-settings-images/post-event-url-opening-behavior-3.png" alt="post-event-url-opening-behavior" title="post-event-url-opening-behavior" style="border: 1px solid gray; zoom:80%;">
     
     As in the above image, when you click a link in the widget the AgentAssist.UrlClickedMessage event is triggered and a log opens on the right showing the URL. Desktop applications can take this URL and customize its opening behavior.
 
-* **Honor Bot Event – Intent not found**: Here, you can turn on or off the Honor Bot Event – Intent not found toggle. When turned on, the configured intent-not-found event triggers if AgentAssist doesn’t understand the user’s intent.
-
 ### Steps to set AgentAssist General Settings
 
-1. Go to **CONFIGURATION **>** SYSTEM SETUP **>** Widget Settings**.
+1. Go to **CONFIGURATION** > **SYSTEM SETUP**> **Widget Settings**.
 2. Click to expand the **AgentAssist General Settings** section.
 3. Enable or Disable the **Honor Bot Event - Intent not found** toggle, as required.
 4. Select **Default System Behavior** or **Post Event** under the **URL opening behavior** section.
 5. Click **Save** to save your settings.
-
    <img src="../widget-settings-images/agentassist-general-settings-page-4.png" alt="agentassist-general-settings-page" title="agentassist-general-settings-page" style="border: 1px solid gray; zoom:80%;">
