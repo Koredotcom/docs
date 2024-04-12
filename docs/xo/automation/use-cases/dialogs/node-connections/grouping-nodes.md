@@ -29,7 +29,7 @@ Using Node Groups you can scope the sub-intents that are to be allowed to be ide
 
 1. Open the dialog task. Navigate to **More Options >  Manage Groups**.
 
-    <img src="../images/using-dialog-builder-manage-groups.png" alt="More Options -  Manage Groups" title="More Options -  Manage Groups" style="border:1px solid gray; zoom:70%;">
+    <img src="../../images/using-dialog-builder-manage-groups.png" alt="More Options -  Manage Groups" title="More Options -  Manage Groups" style="border:1px solid gray; zoom:70%;">
 
 2. Click the Node Group you want to scope the intents for.
 3. Click the **Sub Intent** icon.
