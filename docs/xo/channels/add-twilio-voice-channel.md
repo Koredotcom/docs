@@ -83,4 +83,3 @@ After the channel is enabled and all configurations are verified, you can option
 To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)
 
 
-Go to **Virtual Assistant** > **Conversation Intelligence** > **Events** > **Conversation Events** and configure **Telephony Welcome Event**.

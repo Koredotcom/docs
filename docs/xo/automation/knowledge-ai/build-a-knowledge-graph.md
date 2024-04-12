@@ -2,16 +2,13 @@
 
 The XO Platform’s Knowledge Graph (KG) helps you turn your static FAQ text into an intelligent, personalized conversational experience. It goes beyond the usual practice of capturing FAQs as flat question-answer pairs. Instead, the Knowledge Graph enables you to create a hierarchical structure of key domain terms and associate them with context-specific questions and their alternatives, synonyms, traits, and more. 
 
-Additionally, you can opt for the LLM-based Few-Shot Knowledge Graph, which requires no ontology and reduces maintenance and training requirements. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-terminology/" target="_blank">Learn more</a>.
+Additionally, you can opt for the LLM-based Few-Shot Knowledge Graph, which requires no ontology and reduces maintenance and training requirements. [Learn more](knowledge-graph-terminology.md).
 
 To generate a Knowledge Graph, you need to add FAQs to an existing or new VA. To open the Knowledge Graph builder, follow the below steps:
 
 1. Log in to the XO Platform and open the VA to which you want to add the Knowledge Graph.
-2. Select the **Build** tab from the top menu.
-3. On the left menu, select **Conversation Skills** and click **Knowledge Graph**.
-4. You will notice that there is already a Knowledge Graph with the name of your assistant.
+2. Go to **Virtual Assistant** > **Knowledge AI** > **FAQs**.
 
-    <img src="../images/access-existing-knowledge-graph.png" alt="access existing knowledge graph" title="access existing knowledge graph" style="border: 1px solid gray; zoom:75%;">
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
