@@ -4,7 +4,7 @@
 
 Agent Activity Summary report is a summary of agent time by status, calculated daily.
 
-To generate Agent Activity Summary report:
+Steps to generate Agent Activity Summary report:
 
 1. On the Reports tab, click **New Report**.
 2. In the list of reports, Select the Agent activity summary report.

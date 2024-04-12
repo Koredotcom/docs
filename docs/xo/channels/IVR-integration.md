@@ -311,19 +311,20 @@ To extract the metadata from the ASR transcription, follow these steps:
 
  In this example, the parameters like **ASR Confidence**, **score**,**input mode**, **utterance**, etc. are extracted in the syntax shown below:
 
-     ```
 
-     data:
-     {
-     "text":
-     {
-       "confidence": "0.810000",
-       "Inputmode": "voice",
-       "interpretation": "Login.",
-       "utterance": "Login.""
-     }
-     
-     ```
+```
+data: {
+  
+"text":
+{
+  "confidence": "0.810000",
+  "Inputmode": "voice",
+  "interpretation": "Login.",
+  "utterance": "Login.""
+}
+}
+```
+
 
 !!! note
 

@@ -51,7 +51,7 @@ Create a form to gather the following information:
 1. From the Kore.ai Bot Builder platform, open the Banking Bot.
 2. Navigate to **Automation AI > Virtual Assistant > Digital Skills > Digital Forms** to access the Digital Forms page.
 3. Click **New Form** and enter the following:
-    * **Name** – name of the form that will be used by the engine, let's set as _OpenAccount_
+    * **Name** – name of the form that will be used by the engine, let's set as _OpenNewAccount_
     * **Display Name** for the form, let's set as _Open an Account_
     * **Description** of the form.
         **Select form’s Header Style**: You can choose a specific header style from the listed illustrations – the circle indicates the position of logo/icon with respect to the title of the form in the header. 
@@ -142,26 +142,27 @@ Create a form to gather the following information:
     
     <img src="../../images/view-visibility-settings.png" alt="visibility settings" title="visibility settings" style="border: 1px solid gray; zoom:75%;">
 
-Your form is ready. You can toggle between Desktop View and Mobile View to see how it looks in those devices. 
+    Your form is ready. You can toggle between Desktop View and Mobile View to see how it looks in those devices. 
 
-<img src="../../images/toggle-views.png" alt="toggle views" title="toggle views" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/toggle-views.png" alt="toggle views" title="toggle views" style="border: 1px solid gray; zoom:75%;">
 
 25. You can select how the VA handles the conversation when the user cancels the form. You can choose from two options:
-26. **Discard the task and trigger End of Task Event**: This is the default option.
-
-    <img src="../../images/discard-task.png" alt="discard task" title="discard task" style="border: 1px solid gray; zoom:75%;">
- 
-27. Continue with this task and transition to this node: In the **Select Node** drop-down list, you can select any node present in the current dialog task.
-
-    <img src="../../images/select-node-dropdown.png" alt="select node dropdown" title="select node dropdown" style="border: 1px solid gray; zoom:75%;">
-
-    !!! Note
     
-        The target node has to be in the same dialog, you cannot make a jump to a target node outside the current dialog. The list of target nodes only shows the local nodes.
+    * **Discard the task and trigger End of Task Event**: This is the default option.
 
-        If the target node is not present during runtime, the platform presents the error Error in continuing the conversation, and the task should get discarded.
+        <img src="../../images/discard-task.png" alt="discard task" title="discard task" style="border: 1px solid gray; zoom:75%;">
+ 
+    * **Continue with this task and transition to this node**: In the **Select Node** drop-down list, you can select any node present in the current dialog task.
 
-28. Use the **Test** button to see a preview.
+        <img src="../../images/select-node-dropdown.png" alt="select node dropdown" title="select node dropdown" style="border: 1px solid gray; zoom:75%;">
+
+        !!! Note
+    
+            The target node has to be in the same dialog, you cannot make a jump to a target node outside the current dialog. The list of target nodes only shows the local nodes.
+
+            If the target node is not present during runtime, the platform presents the error Error in continuing the conversation, and the task should get discarded.
+
+26. Use the **Test** button to see a preview.
 
 ### Dialog Task Configuration
 
@@ -169,34 +170,34 @@ We will be creating a dialog task and adding a form node to trigger the Digital 
 
 ### Create Dialog Task
 
-1. Select the **Build** tab from the top menu
-2. From the left navigation menu, select **Conversational Skills -> Dialog Tasks.**
-3. Click the **+** against the **Dialog Tasks** to create a new Task
-    * Enter **IntentName**, set as, _OpenAccount_
-    * Click **Create & Proceed** to open the dialog builder page.
+1. Navigate to **Automation AI > Virtual Assistant > Dialog Tasks.**
+2. Click the **Create Dialog** button to create a new Task.
+3. Select the **Start from Scratch** option.
+4. Provide below details:
+    * Enter **IntentName**, set as, _Open Bank Account_
+    * Click **Proceed** to open the dialog builder page.
 
-4. Retain the Intent Node default settings, and close the Intent Node.
-5. Click the **+** next to the intent node and select the **Form** option.
-6. From the dropdown list select the form (_OpenAccount_) we created earlier.
+5. Retain the Root Intent Node's default settings.
+6. Click the **+** next to the Root intent node and select the form (_OpenNewAccount_) that we created earlier from the list. Note that the form name will contain numeric suffix in the form of 001, 002 and so on depending on the number of its instances already added to the VA. 
 
     <img src="../../images/select-created-form.png" alt="select created form" title="select created form" style="border: 1px solid gray; zoom:75%;">
 
 7. You will be prompted to select the **Form Experience**. XO Platform allows you to gather user input both from the form and through conversation based on the channel.
 8. For this use case, select _Only Form UI_ experience.
-9. A Form Node would be added, you can customize the form name, etc.
+9. A New sequence containing the Form Node would be added, you can customize the form name, etc.
 10. We are changing the **Name** to _OpenAccountForm_ and **Display Name** to _Form to open account_.
 
-**Capture Form Node Values**
+### Capture Form Node Values
 
 Next, to capture the values returned by the Form Node using a Script node and displaying the same, follow the steps below:
 
-1. Add a **Message Node** to the form node.
-2. Set the **Name** to _FormMessage_ and **Display Name** to _Form Message_.
-3. Click **MANAGE RESPONSES** to open the message editor.
+1. Add a **Message Node** in the sequence under the form node.
+2. Set the **Name** to _FormDataMessage_ and **Display Name** to _Form Data Message_.
+3. Hover on the **Sample Bot Response for All Channels** and **Edit** icon to open the message editor.
 
     <img src="../../images/click-manage-responses.png" alt="select js" title="select js" style="border: 1px solid gray; zoom:75%;">
 
-4. Select the **JavaScript** tab and enter the following code. This code would capture from the context object, the data submitted by the user in the Form and display it accordingly. 
+4. Select the **Custom JavaScript** option and enter the following code. This code would capture from the context object, the data submitted by the user in the Form and display it accordingly. 
 
     ```
     var message;
@@ -210,7 +211,7 @@ Next, to capture the values returned by the Form Node using a Script node and di
     
     <img src="../../images/select-javascript.png" alt="select js" title="select js" style="border: 1px solid gray; zoom:75%;">
 
-Your dialog with form is ready! **Talk to bot** and trigger the above dialog. The form will be displayed, enter the values and click Submit, the message would be displayed. 
+Your dialog with form is ready! **Test** and trigger the above dialog. The form will be displayed, enter the values and click Submit, the message would be displayed. 
 
 <img src="../../images/talk-to-bot.png" alt="talk to bot" title="talk to bot" style="border: 1px solid gray; zoom:75%;">
 

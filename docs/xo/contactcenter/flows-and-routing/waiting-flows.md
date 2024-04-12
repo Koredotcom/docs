@@ -162,12 +162,12 @@ Steps to offer or force voicemail:
 
 1. **Enable** the option to activate it;
 2. Set the **digit key** that customers should press to be redirected to the voicemail service. Customers waiting in the queue can either be **offered** or **forced** to receive a callback based on the settings configured here;
-3. **Edit the message** in the textbox. Use the language tab to change languages. Click **✔** **Done** to save or click **x** **Close** to discard your changes.
+3. **Edit the message** in the textbox. Use the language tab to change languages. Click **✔** **Done** to save or click **x** **Close** to discard your changes.  
 <img src="../images/voicemail.png" alt="Voicemail" title="Voicemail" style="border: 1px solid gray; zoom:80%;">
 
 ### Chat Experience
 
-Click the **Chat Experience** tab to start configuring the waiting experience for customers contacting you via chat.
+Click the **Chat Experience** tab to start configuring the waiting experience for customers contacting you via chat.  
 <img src="../images/chat-experience.png" alt="Chat Experience" title="Chat Experience" style="border: 1px solid gray; zoom:80%;">
 
 In the Chat Experience section, you can configure the following settings:

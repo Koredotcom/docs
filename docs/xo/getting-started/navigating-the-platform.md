@@ -1,73 +1,40 @@
 
 # Navigating the Kore.ai XO Platform
 
- 
-
-
-## Prerequisites
-
-[How to Access the Kore.ai XO Platform?](./accessing-the-platform.md)
-
-
-## Introduction
-
 This article takes you through the main sections and menu items you will be using while working with the XO Platform. 
 
 Throughout this article and within the Kore.ai XO Platform itself, a _Virtual Assistant_ is also called a _Bot_. 
 
-To get started navigating the XO Platform, log into your account and select the **Virtual Assistants** tab.
-
+To get started navigating the XO Platform, log into your account.
 
 ## Explore The Landing Page
 
-After you sign in, you are directed to the landing page, which is, essentially, your account homepage.  This page preselects the **Virtual Assistants** tab.
+After you sign in, you are directed to the landing page, which is, essentially, your account homepage.
 
-
-
-
-![alt_text](images/ntp(1).png "image_tooltip")
-
-
+ <img src="../images/ntp(1).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ### The Top Menu
 
 The top menu available on the landing page provides access to the following options:
 
-
-
-1. Access the **Virtual Assistants** in your account:
-2. Reach your[ Process Apps,](https://developer.kore.ai/docs/process-apps/introduction/)
-3. Access the[ Data section](https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/),
-4. **Invite Members** to your account,
-5. Access the Contextual **Help** section.
-6. **Switch Workspace**, if you are part of more than one team.
-7. Access the **Profile** section, which allows you to reach the following features:
-    * View and edit your **Profile**;.
-    * Set the **App Language** – to switch the platform’s language;.
+1. Access the [Data section](https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/),
+2. **Invite Members** to your account,
+3. Access the Contextual **Help** section,
+4. **Switch Workspace**, if you are part of more than one team.
+5. Access the **Profile** section, which allows you to reach the following features:
+    * View and edit your **Profile**.
     * Access the **Admin Console** – only if you are an Administrator. This is where you can manage your account and associated assets.
     * **Log out**.
 
+### The Apps List
+The Apps list is where you can find all the available apps being developed within your account. You can filter the apps by Pinned, Shared with me, My Apps, or All apps. Shared with me are the Apps shared with you for development by co-developers who are part of your organization’s account.
+Within this area, you can:
 
-### The Bots List
-
-The bots list is where you can find all the VAs being developed within your account. It provides access to the following:
-
-
-
-* View **All Bots** which includes **My Bots** i.e bots developed by you and **_Shared Bots_** i.e virtual assistants shared with you for development by co-developers  who are part of your organization’s account (These are marked with a _Shared_ icon.). Within this area, you can:
-    * Search your list of Virtual Assistants.
-    * Filter the list restricting it to VAs created by you or shared with you;
-    * Sort the list either ascending or descending by name, creation date, date modified, bot owner name;
-    * Toggle between _Tile View_ or _List View_.
-
-**Create a _New Virtual Assistant_**
-
-
-
-1. [From Scratch](https://developer.kore.ai/docs/bots/bot-builder-tool/bot-creation/defining-a-standard-bot/#Step_1_Create_a_Standard_Bot), 
-2. [By installing a template,](https://developer.kore.ai/docs/bots/bot-store/store/)
-3. [By importing a Bot.](https://developer.kore.ai/docs/bots/bot-settings/bot-management/bot-management-2/#Importing_a_Bot)
-
+* Search your list of Apps.
+* Filter the apps by Pinned, Shared with me, My Apps, or All apps.
+* Sort the list either ascending or descending by app name, last opened, creation date, date modified, and owner name.
+* Toggle between _Tile View_ or _List View_.
+* Create a new App or import an existing App.
 
 ## Explore The XO Platform 
 
@@ -83,7 +50,7 @@ This navigation menu has been significantly updated, starting with version 9.0 o
 ![alt_text](images/ntp(5).png "image_tooltip")
 
 
-All the actions available within the Kore.ai XO Platform can be accessed from this menu, which is organized as follows: 
+All the actions available within the Kore.ai XO Platform can be accessed from this menu, which is organized as follows:
 
 
 

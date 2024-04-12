@@ -14,7 +14,7 @@ You can find Generative AI and LLM features by going to **App Settings** > **Gen
 
 
 
-![alt_text](images/llm-intro.png "image_tooltip")
+![alt_text](images/llm-intro.png )
 
 
 
