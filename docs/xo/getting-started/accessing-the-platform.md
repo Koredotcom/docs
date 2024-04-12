@@ -78,7 +78,7 @@ After signing up, users are guided through the onboarding process as follows:
 
 5. Click **Next** at the bottom-right corner, and follow the onscreen instructions to complete the onboarding journey.
 
-6. At the end of the journey, your Virtual Assistant will be ready. Finish and jump into XO.
+6. At the end of the journey, your Virtual Assistant will be ready. **Finish and jump into XO**.
  <img src="../images/accplatform(21).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ## Sign in to the Platform
@@ -160,7 +160,7 @@ Some of the common scenarios where you can join or sign up to a workspace includ
 2. If your enterprise administrator adds you to your enterprise workspace through SSO or API.
 3. If you use a business email address to sign up, you can join any other workspace that matches your email domain. In such cases, the system only creates a User identity for you and adds you to the selected workspace.
 4. If you sign up using Single Sign-On (SSO) options like Google or Office 365, the platform will use your email domain as the Workspace name. For example, if your email address is john@doe.com, your workspace will be created as ‘doe.com’. You can always change the Workspace name from the Profile menu.
-5. If you sign up using the email address verification option, you can define your workspace name during signup.
+5. If you sign up using the email address verification option, you can define your workspace name during sign up.
 6. If you are the first user of a workspace, i.e., if you have created the workspace, you will automatically become the Workspace Owner.
 7. Additional users can be invited to a workspace using the ‘Invite Team’ option or inviting users to a particular assistant.
 8. A user can belong to multiple workspaces.
