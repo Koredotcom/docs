@@ -142,26 +142,27 @@ Create a form to gather the following information:
     
     <img src="../../images/view-visibility-settings.png" alt="visibility settings" title="visibility settings" style="border: 1px solid gray; zoom:75%;">
 
-Your form is ready. You can toggle between Desktop View and Mobile View to see how it looks in those devices. 
+    Your form is ready. You can toggle between Desktop View and Mobile View to see how it looks in those devices. 
 
-<img src="../../images/toggle-views.png" alt="toggle views" title="toggle views" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/toggle-views.png" alt="toggle views" title="toggle views" style="border: 1px solid gray; zoom:75%;">
 
 25. You can select how the VA handles the conversation when the user cancels the form. You can choose from two options:
-26. **Discard the task and trigger End of Task Event**: This is the default option.
-
-    <img src="../../images/discard-task.png" alt="discard task" title="discard task" style="border: 1px solid gray; zoom:75%;">
- 
-27. Continue with this task and transition to this node: In the **Select Node** drop-down list, you can select any node present in the current dialog task.
-
-    <img src="../../images/select-node-dropdown.png" alt="select node dropdown" title="select node dropdown" style="border: 1px solid gray; zoom:75%;">
-
-    !!! Note
     
-        The target node has to be in the same dialog, you cannot make a jump to a target node outside the current dialog. The list of target nodes only shows the local nodes.
+    * **Discard the task and trigger End of Task Event**: This is the default option.
 
-        If the target node is not present during runtime, the platform presents the error Error in continuing the conversation, and the task should get discarded.
+        <img src="../../images/discard-task.png" alt="discard task" title="discard task" style="border: 1px solid gray; zoom:75%;">
+ 
+    * **Continue with this task and transition to this node**: In the **Select Node** drop-down list, you can select any node present in the current dialog task.
 
-28. Use the **Test** button to see a preview.
+        <img src="../../images/select-node-dropdown.png" alt="select node dropdown" title="select node dropdown" style="border: 1px solid gray; zoom:75%;">
+
+        !!! Note
+    
+            The target node has to be in the same dialog, you cannot make a jump to a target node outside the current dialog. The list of target nodes only shows the local nodes.
+
+            If the target node is not present during runtime, the platform presents the error Error in continuing the conversation, and the task should get discarded.
+
+26. Use the **Test** button to see a preview.
 
 ### Dialog Task Configuration
 
