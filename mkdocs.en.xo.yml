@@ -136,7 +136,14 @@ nav:
             - Split: flows/node-types/split.md
         - Channels:
           - Digital:
-            - Channel Enablement: channels/adding-channels-to-your-bot.md                             
+            - Enable Channels: channels/adding-channels-to-your-bot.md
+          - Voice:
+            - Kore.ai Voice Gateway: channels/amazon-alexa.md
+            - Third-Party Voice:
+              - Amazon Alexa: channels/amazon-alexa.md
+              - Twilio Voice: channels/add-twilio-voice-channel.md
+              - AudioCodes: channels/ivr-audio-codes.md
+              - IVR: channels/IVR-integration.md            
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
   - Automation AI: 
@@ -317,7 +324,11 @@ nav:
     - Overview: agentai/about-agent-ai.md           
     - Set up Agent AI:
       - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md
-      - Agent Playbook: agentai/agent-experience/playbook.md       
+      - Agent Playbook: agentai/agent-experience/playbook.md
+      - Configurations:
+        - Welcome Events: agentai/configuration/welcome-events.md
+        - Answers Configuration: agentai/configuration/answers-configuration.md
+        - Widget Settings: agentai/configuration/answers-configuration.md
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
       - Bot Override and Automation: agentai/agent-experience/agent-assist-widget-v3.md       

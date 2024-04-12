@@ -1,8 +1,8 @@
-# Channel Enablement
+# Enable Digital Channels
 
 By default, your Virtual Assistant is not available to users unless you define one or more channels through which it can communicate. So, after creating a Virtual Assistant, you can add delivery channels that end-users can use to access and interact with it when deployed. For example, you can enable your assistant for use in the Kore.ai Messaging application, or allow interaction with your VA through an email address or a _Twilio_ SMS account. You can also enable your VA in third-party applications such as _Facebook_ or _Slack_. This topic describes how to add one or more delivery channels to your VA.
 
-You can add channels to your VA from the **Channels & Flows > Channels > Digital > All** section. Channels supported by the Kore.ai XO Platform are categorized based upon their functionality and usage.
+You can add channels to your VA from the **Flows & Channels > Channels > Digital > All** section. Channels supported by the Kore.ai XO Platform are categorized based upon their functionality and usage.
 
 <img src="../images/digital-channels.png" alt="digital-channels" title="digital-channels" style="border: 1px solid gray; zoom:70%;">
 
@@ -11,7 +11,7 @@ You can add channels to your VA from the **Channels & Flows > Channels > Digital
 To enable one or more channels for your VA, follow the below steps:
 
 1. Open the assistant for which you want to add the channels.
-2. Go to **Channels & Flows** > **Channels** > **Digital** > **All**.
+2. Go to **Flows & Channels** > **Channels** > **Digital** > **All**.
 3. Click the channel you want to add. This opens the instructions page to install the channel.
 4. Click **Next** or the **Configuration** tab to open the configuration page for the channel. This image below shows the configuration page of the Skype for Business channel.  
 <img src="../images/channel-enablement-img2-instructions.png" alt="Channel Configuration page" title="Channel Configuration page" style="border: 1px solid gray; zoom:70%;">
@@ -22,9 +22,9 @@ To enable one or more channels for your VA, follow the below steps:
 
 ## Editing, Testing,  Disabling or Deleting Channels
 
-To **edit a channel** configuration, go to **Channels & Flows** > **Channels** > **Digital** > **Configured** list, the channel, make your changes and save.
+To **edit a channel** configuration, go to **Flows & Channels** > **Channels** > **Digital** > **Configured** list, the channel, make your changes and save.
 
-To **test**, **disable or delete the channel**, go to **Channels & Flows** > **Channels** > **Digital** > **Configured** list, hover over the channel and click more option in the top right corner. The Test, Disable, or Delete as required and follow the instructions.
+To **test**, **disable or delete the channel**, go to **Flows & Channels** > **Channels** > **Digital** > **Configured** list, hover over the channel and click more option in the top right corner. The Test, Disable, or Delete as required and follow the instructions.
 
 
 !!! Warning
