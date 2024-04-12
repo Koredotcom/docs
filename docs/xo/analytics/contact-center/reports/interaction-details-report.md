@@ -4,7 +4,7 @@
 
 Interaction Details Report is a comprehensive report covering how all interactions were processed, by whom, and their final dispositions. This report contains the meta-data of each conversation, except the recording or transcript. A comma-separated list of all Disposition Codes assigned to that conversation is included in the CSV output file of the Interaction Details Report.
 
-To generate Interaction Details Report:
+Steps to generate the Interaction Details Report:
 
 1. On the Reports tab, click **New Report**.
 2. In the list of reports, choose the Interaction Details report.

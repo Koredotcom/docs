@@ -4,7 +4,7 @@
 
 Agent Login Logout Summary Report is a detailed report of an agent’s login and logout events.
 
-To generate Agent Login Logout Summary Report:
+Steps to generate the Agent Login Logout Summary Report:
 
 1. On the Reports tab, click **New Report**.
 2. In the list of reports, Select the Agent Login Logout Summary Report.
