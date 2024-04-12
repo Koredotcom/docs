@@ -1,9 +1,6 @@
-# Introduction
+#  Campaign Management
 
 Outbound campaigns are reshaping how businesses connect with their audience. These campaigns proactively reach out to a curated list of individuals, following predefined rules. At the core of this process, calls are orchestrated based on the information available in a contact list. Outbound campaigns infuse a personalized touch by crafting scripts that shape the agent's interaction.
-
-
-# Campaign Management
 
 You can find the **Campaign Management** tab on the left panel.
 
@@ -127,7 +124,7 @@ When the campaign runs, you can pause or stop it. You can also rerun a completed
 
 
 
-# Frequently Asked Questions (FAQs)
+## Frequently Asked Questions (FAQs)
 
 
 1. What is the difference in the resumption behavior of a paused campaign and a completed campaign when using the 'Rerun' icon?  

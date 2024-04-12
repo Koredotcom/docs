@@ -19,13 +19,13 @@ Before adding a skill, you need a skill group. See [Skill Groups](https://docs.k
 To add skills to a skill group, follow these steps:
 
 1. Click the respective skill group to get the drill-down view of associated **Skills**;
-2. Click the **+ New Skill** button.
+2. Click the **+ New Skill** button.  
 <img src="../images/new-skill-button.png" alt="New Skill Button" title="New Skill Button" style="border: 1px solid gray; zoom:70%;">
 
 3. Enter the following details in the **Add New Skill** window:
     1. **Skill Name**: Enter the name to identify the skill by.
     2. **Description**: Enter a brief description of the skill or its purpose.
-    3. **Agent Assignments**: Associate agents to the skill and provide the proficiency level (Novice, Average, Good, and Expert);
+    3. **Agent Assignments**: Associate agents to the skill and provide the proficiency level (Novice, Average, Good, and Expert).  
     <img src="../images/add-new-skill.png" alt="Add New Skill" title="Add New Skill" style="border: 1px solid gray; zoom:60%;">
 
     4. Click **Create** to complete the process. SmartAssist creates the new skill, adds it to the list, and displays a success confirmation message.
