@@ -36,7 +36,7 @@ To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
 
 3. Enter all the other details to create the account.
 
-    !!! note       
+    !!! note 
         The account you create is identified by the email domain. When you invite other users to the account, the email includes this name.
 
 4. On creating an account, a confirmation email is sent to the provided email address, with a verification link and a verification code, to sign in to the new account. 
