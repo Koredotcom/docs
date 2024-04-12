@@ -43,7 +43,7 @@ Steps to create Voice campaigns:
         * The contact list is automatically scrubbed against the DNC list after the Campaign is saved.
         * Select the Priority from the drop-down list.
         * Select the Dialing mode from the drop-down list.
-3. Under the** Outreach Strategy **tab, enter the following details:
+3. Under the **Outreach Strategy** tab, enter the following details:
     * **Contactable Timings**: Add the contactable timings (day of the week/time) when the dialer will dial the calls.  
     **NOTE**: Calls will be dialed to contacts based on the calling hours and timezone configured here, irrespective of the campaign's start and stop time.
     * **Dialing Order**: Choose the order of dialing the phone numbers.
@@ -65,7 +65,7 @@ Steps to create a campaign when Agentless Dialing Mode is selected:
 
 
 
-1. Select the** Experience Flow** associated with the campaign.
+1. Select the **Experience Flow** associated with the campaign.
 2. Select the **Dialing Rate** and click **Save**. The campaign is created.  
 **NOTE**: You can toggle on Answering Machine Detection if you want the system to determine whether the outbound call was received by an answering machine.
 
@@ -115,7 +115,7 @@ Steps to delete a campaign:
 
 
 
-1. Click the **Ellipsis **(**⋮**) icon beside the campaign name and click **Delete**.
+1. Click the **Ellipsis**(**⋮**) icon beside the campaign name and click **Delete**.
 2. A **Delete Campaign** confirmation pop-up window is displayed. Click **Delete**.
 3. The campaign is deleted.
 
@@ -156,27 +156,28 @@ Assigning percentages to campaigns facilitates managing campaigns with varying p
 A Campaign Manager can oversee multiple campaigns with similar or different priorities. The campaign management system is capable of selecting and transferring contacts to the dialer automatically.  
 **Priority Percentage** = (Sum of Priority Value of each Campaign / Number of Campaigns) *100
 
-    **Scenario 1:** Two campaigns with priorities 5 and 3 respectively
+**Scenario 1:** Two campaigns with priorities 5 and 3 respectively
+
     percentage allocation to campaign 1 = (5/ (5+3))*100 = 62.5%
     percentage allocation to campaign 2 = (3/ (5+3))*100 = 37.5%
 
 
-    **Execution in this case:
-    **62.5% of calls will be picked from campaign 1 and given to campaign 1 hopper.
-    37.5% of calls will be picked from campaign 2 and given to campaign  2 hopper.
-From each campaign’s hopper, the calls will be given to the Master Hopper.
-Dialer will randomly dial from the 62.5% of calls of camp1 and the 37.5% of calls of campaign 2.
+**Execution in this case:**
+    62.5% of calls will be picked from campaign 1 and given to campaign 1 hopper.  
+    37.5% of calls will be picked from campaign 2 and given to campaign  2 hopper.  
+    From each campaign’s hopper, the calls will be given to the Master Hopper.  
+    Dialer will randomly dial from the 62.5% of calls of camp1 and the 37.5% of calls of campaign 2.
 
 
-    **Scenario 2:** Two campaigns with the same priorities of 5.
+**Scenario 2:** Two campaigns with the same priorities of 5.
 
 
     percentage allocation to campaign 1 = (5/ (5+5))*100 = 50% 
     percentage allocation to campaign 2 = (5/ (5+5))*100 = 50%
 
 
-    **Execution in this case:
-    **50% of calls will be picked from camp1 and given to the hopper.
-    50% of calls will be picked from camp2 and given to the hopper.
-    From each campaign’s hopper, the calls will be given to the Master Hooper
-    Dialer will randomly dial from the 50% of calls of campaign 1 and the 50% of calls of campaign 2
+**Execution in this case:**
+    50% of calls will be picked from camp1 and given to the hopper.  
+    50% of calls will be picked from camp2 and given to the hopper.  
+    From each campaign’s hopper, the calls will be given to the Master Hooper  
+    Dialer will randomly dial from the 50% of calls of campaign 1 and the 50% of calls of campaign 2.

@@ -12,9 +12,9 @@ You can view lists by going to **Campaign** > **PROACTIVE OUTREACH** > **List Ma
 
 ## Contact Lists
 
-To view the Contact Lists, click the **Contact Lists **tab.
+To view the Contact Lists, click the **Contact Lists** tab.
 
-The following details are displayed in Contact Lists: \
+The following details are displayed in Contact Lists:
 
 **Contact Lists** - Name of the list. For example: Contact List 1.
 
@@ -57,8 +57,8 @@ Steps to edit a contact list:
 Steps to delete a contact list:
 
 
-1. Click the **Edit **icon beside the contact list name and click the **Delete **icon at the bottom left corner of the edit window. 
- **Note**: You cannot delete a contact list if it is associated with any campaign. 
+1. Click the **Edit** icon beside the contact list name and click the **Delete** icon at the bottom left corner of the edit window.  
+**Note**: You cannot delete a contact list if it is associated with any campaign.
 2. A confirmation message is displayed. Click **Delete**.
 The contact list is deleted.
 
@@ -68,7 +68,7 @@ The contact list is deleted.
 
 ### Create a DNC List
 
-To create a DNC List, click the **DNC Lists **tab.
+To create a DNC List, click the **DNC Lists** tab.
 
 Steps to create a new DNC list:
 
