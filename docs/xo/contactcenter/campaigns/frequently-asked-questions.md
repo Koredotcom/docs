@@ -46,25 +46,23 @@ Assigning percentages to campaigns facilitates managing campaigns with varying p
 
 A Campaign Manager can oversee multiple campaigns with similar or different priorities. The campaign management system can automatically select and transfer contacts to the dialer.
 
-**Priority Percentage** = (Sum of Priority Value of each Campaign / Number of Campaigns) *100
+**Priority Percentage** = (Sum of Priority Value of each Campaign / Number of Campaigns) * 100
 
 **Scenario 1:** Two campaigns with priorities 5 and 3 respectively
 
-percentage allocation to campaign 1 = (5/ (5+3))*100 = 62.5%
+Percentage allocation to campaign 1 = (5 / (5+3)) * 100 = 62.5%
 
-percentage allocation to campaign 2 = (3/ (5+3))*100 = 37.5%
+Percentage allocation to campaign 2 = (3 / (5+3)) * 100 = 37.5%
 
 **Execution in this case**: 62.5% of calls will be picked from campaign 1 and 37.5% of calls will be picked from campaign 2.
-Dialer will randomly dial from the 62.5% of calls of camp1 and the 37.5% of calls of campaign 2.
+Dialer will randomly dial from the 62.5% of calls from campaign 1 and the 37.5% of calls from campaign 2.
 
 **Scenario 2:** Two campaigns with the same priorities of 5.
 
-percentage allocation to campaign 1 = (5/ (5+5))*100 = 50%
+Percentage allocation to campaign 1 = (5 / (5+5)) * 100 = 50%
 
-percentage allocation to campaign 2 = (5/ (5+5))*100 = 50%
+Percentage allocation to campaign 2 = (5 / (5+5)) * 100 = 50%
 
-**Execution in this case**: 50% of calls will be picked from campaign 1
+**Execution in this case**: 50% of calls will be picked from campaign 1 and 50% of calls will be picked from campaign 2.
 
-50% of calls will be picked from campaign 2
-
-Dialer will randomly dial from the 50% of calls of campaign 1 and the 50% of calls of campaign 2.
+Dialer will randomly dial from the 50% of calls from campaign 1 and 50% of calls from campaign 2.

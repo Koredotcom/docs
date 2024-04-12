@@ -30,33 +30,22 @@ The top menu available on the landing page provides access to the following opti
 
 1. Access the [Data section](https://developer.kore.ai/docs/bots/advanced-topics/data-as-a-service/),
 2. **Invite Members** to your account,
-3. Access the Contextual **Help** section.
+3. Access the Contextual **Help** section,
 4. **Switch Workspace**, if you are part of more than one team.
 5. Access the **Profile** section, which allows you to reach the following features:
     * View and edit your **Profile**.
     * Access the **Admin Console** – only if you are an Administrator. This is where you can manage your account and associated assets.
     * **Log out**.
 
-### The Bots List
+### The Apps List
+The Apps list is where you can find all the available apps being developed within your account. You can filter the apps by Pinned, Shared with me, My Apps, or All apps. Shared with me are the Apps shared with you for development by co-developers who are part of your organization’s account.
+Within this area, you can:
 
-The bots list is where you can find all the VAs being developed within your account. It provides access to the following:
-
-
-
-* View **All Bots** which includes **My Bots** i.e bots developed by you and **_Shared Bots_** i.e virtual assistants shared with you for development by co-developers  who are part of your organization’s account (These are marked with a _Shared_ icon.). Within this area, you can:
-    * Search your list of Virtual Assistants.
-    * Filter the list restricting it to VAs created by you or shared with you;
-    * Sort the list either ascending or descending by name, creation date, date modified, bot owner name;
-    * Toggle between _Tile View_ or _List View_.
-
-**Create a _New Virtual Assistant_**
-
-
-
-1. [From Scratch](https://developer.kore.ai/docs/bots/bot-builder-tool/bot-creation/defining-a-standard-bot/#Step_1_Create_a_Standard_Bot), 
-2. [By installing a template,](https://developer.kore.ai/docs/bots/bot-store/store/)
-3. [By importing a Bot.](https://developer.kore.ai/docs/bots/bot-settings/bot-management/bot-management-2/#Importing_a_Bot)
-
+* Search your list of Apps.
+* Filter the apps by Pinned, Shared with me, My Apps, or All apps.
+* Sort the list either ascending or descending by app name,last opened, creation date, date modified,owner name.
+* Toggle between _Tile View_ or _List View_.
+* Create a new App or import an existing App.
 
 ## Explore The XO Platform 
 
