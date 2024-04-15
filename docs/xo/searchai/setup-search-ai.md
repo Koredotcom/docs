@@ -1,4 +1,5 @@
 # Set up your Search AI application
+Search AI empowers you to efficiently manage and utilize vast amounts of data from various sources to provide the users a seamless experience in locating and accessing relevant information. This documentation will guide you through the various steps involved in setting up your Search AI experience.
 
 ##  Step 1: Content Ingestion
 
@@ -34,7 +35,7 @@ The next step is to train the application. Training allows Search AI to generate
 
 To Test Answers, go to the **Answer Configuration** page and use the **Test Answers** option. Enter a query and verify the application's answers. Use the debug option to understand the application's behavior and the generated answers.
 
-With these steps, your Search AI setup is complete and ready to provide answers to your users. For specific details and scenarios, refer to the detailed documentation on different topics. 
+With these steps, your Search AI setup is complete and ready to provide answers to your users. For specific details and scenarios, refer to the detailed documentation on different topics. Note that the virtual assistant uses SearchAI to answer user queries based on a specific fallback setting discussed below. 
 
 ## Virtual Assistant Fallback Configuration
 
