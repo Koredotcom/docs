@@ -28,7 +28,9 @@ On this page, the following details of the voice campaigns are shown in a table:
 
 The Campaigns module enables you to create **Voice** and **Proactive Web** campaigns.
 
-## Create Voice Campaigns
+## Voice
+
+### Create Voice Campaigns
 
 Steps to create Voice campaigns:
 
@@ -68,11 +70,11 @@ Steps to create Voice campaigns:
     <img src="../images/contactable-timings.png" alt="Contactable Timings" title="Contactable Timings" style="border: 1px solid gray; zoom:100%;">
 
     !!! Note
-    
+
         Calls will be dialed to contacts based on the calling hours and timezone configured here, irrespective of the campaign's start and stop time.
 4. Click **Save**. The campaign is created.
 
-### Agentless Dialer
+#### Agentless Dialer
 
 Agentless Dialer maintains a queue of leads to be dialed and can automatically dial a new phone number. The dialer initiates an outbound call to the selected phone number and when a call is answered, the dialer connects the call to the configured voice experience flow. The dialer can detect answering machines or voicemail and reschedule the call by sending the call status to the campaign manager. If a call goes unanswered or reaches a voicemail with Answering Machine Detection (AMD) turned on, the dialer disconnects the call and automatically dials the following number on the list.
 
@@ -89,7 +91,7 @@ To create a campaign when Agentless Dialing Mode is selected:
 
  You can toggle on Answering Machine Detection if you want the system to determine whether the outbound call was received by an answering machine.
 
-## Edit a Voice Campaign
+### Edit a Voice Campaign
 
 Editing a voice campaign allows you to make changes to the campaign as per your needs.
 
@@ -105,7 +107,7 @@ Steps to edit a campaign:
 
     You cannot edit a campaign that in Active status. For campaigns in other statuses, you can edit limited fields.
 
-## Clone a Voice Campaign
+### Clone a Voice Campaign
 
 Cloning a voice campaign creates a replica of the original campaign. This is useful when two or more similar campaigns are run simultaneously.
 
@@ -116,7 +118,7 @@ Steps to clone a campaign:
 2. A cloned copy of the original campaign is created.
 <img src="../images/cloned-campaigns.png" alt="Cloned Campaign" title="Cloned Campaign" style="border: 1px solid gray; zoom:100%;">
 
-## Stop a Voice Campaign
+### Stop a Voice Campaign
 
 Stopping a voice campaign resets the data, and a new instance of the campaign is created when you rerun the campaign.
 
@@ -128,7 +130,7 @@ Steps to stop a campaign:
 2. A **Stop Campaign** confirmation pop-up window is displayed. Click **Stop**.
 <img src="../images/stop-campaign-confirmation.png" alt="Stop Campaign Confirmation" title="Stop Campaign Confirmation" style="border: 1px solid gray; zoom:100%;">
 
-## Delete a Voice Campaign
+### Delete a Voice Campaign
 
 You can delete a voice campaign if the campaign has served its purpose or is no longer required.
 
@@ -141,7 +143,7 @@ Steps to delete a campaign:
 <img src="../images/delete-campaign-confirmation.png" alt="Delete Campaign Confirmation" title="Delete Campaign Confirmation" style="border: 1px solid gray; zoom:100%;">
 3. The campaign is deleted.
 
-## Run Voice Campaigns
+### Run Voice Campaigns
 
 You can run a voice campaign by clicking the **Play** button.
 <img src="../images/run-campaign-button.png" alt="Run Campaign" title="Run Campaign" style="border: 1px solid gray; zoom:100%;">
