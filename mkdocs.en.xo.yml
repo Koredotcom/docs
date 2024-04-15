@@ -264,10 +264,10 @@ nav:
         - General Settings: manage-assistant/general-settings.md
         - Bot Management: manage-assistant/bot-management.md
         - Manage Namespace: manage-assistant/managing-namespace.md               
- - Search AI:
+  - Search AI:
     - Overview: searchai/about-search-ai.md
     - Getting Started: searchai/introduction-to-answers.md
-    - Setup Search AI application: searchai/setup-search-ai.md
+    - Setup Search AI: searchai/setup-search-ai.md
     - Content:
         - Sources:
             - Overview: searchai/content-sources/introduction.md
