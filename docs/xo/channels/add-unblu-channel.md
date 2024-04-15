@@ -29,7 +29,7 @@ The Unblu Bot can be directly created from the Kore.ai XO Platform.
 
 
 1. Create or Open the assistant in the XO platform.
-2. Go to **Channels & Flows** > **Channels** > **Digital** > **All** > and select **Unblu**..
+2. Go to **Channels & Flows** > **Channels** > **Digital** > **All** > and select **Unblu**.
 3. Proceed to the **Configurations tab** and provide the following details for creating an assistantin your Unblu account:
     * **Unblu Host URL** -the URL of your Unblu application. For example, use [https://www.unblu.com/](https://www.unblu.com/) for the Unblu cloud.
     * **Unblu Account Username** –Provide your Unblu account username.
