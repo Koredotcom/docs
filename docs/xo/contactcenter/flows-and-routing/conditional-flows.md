@@ -1,4 +1,4 @@
-# **Conditional Flows**
+# Conditional Flows
 
 The **Conditional Flows** feature lets you customize experiences for common events like welcome, transfer, or an unknown Intent.
 

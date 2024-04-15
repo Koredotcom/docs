@@ -135,7 +135,7 @@ You can call the customer as follows:
 
 ## Chat Co-Browse
 
-During chat interactions, agents can use Co-Browse, a collaboration tool that allows them to browse the customer application and offer real-time assistance. To initiate a co-browse session, agents need to click the Co-Browse icon.
+During chat interactions, agents can use Co-Browse, a collaboration tool that allows them to browse the customer application and offer real-time assistance. To initiate a co-browse session, agents need to click the Co-Browse icon.  
 <img src="../images/chat-cobrowse.png" alt="Chat Co-Browse" title="Chat Co-Browse" style="border: 1px solid gray; zoom:80%;">
 
 ## Voice Co-Browse
@@ -205,7 +205,7 @@ Steps to snooze a conversation:
     The snooze function is not available if the conversation is overdue or a reply is due from the agent.
 <img src="../images/snooze-button.png" alt="Snooze Button" title="Snooze Button" style="border: 1px solid gray; zoom:80%;">
 
-2. On the **Snooze Conversation Until** pop-up window, select the snooze duration from the available options or select a custom snooze duration.
+2. On the **Snooze Conversation Until** pop-up window, select the snooze duration from the available options or select a custom snooze duration.  
 <img src="../images/snooze-duration.png" alt="Snooze Duration" title="Snooze Duration" style="border: 1px solid gray; zoom:80%;">
 
 3. To select a custom snooze duration, turn on the **Custom Snooze** toggle, configure your required snooze duration, and set the snooze duration.

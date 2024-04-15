@@ -111,7 +111,7 @@ copyright: |
 nav:
   - Home : home.md
   - Platform:
-    - What's New in the XO Platform: getting-started/whats-new-in-xo-platform.md
+    - What's New in XO 11: getting-started/whats-new-in-xo-platform.md
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md          
       - Flows and Channels:
@@ -136,7 +136,14 @@ nav:
             - Split: flows/node-types/split.md
         - Channels:
           - Digital:
-            - Channel Enablement: channels/adding-channels-to-your-bot.md                             
+            - Enable Channels: channels/adding-channels-to-your-bot.md
+          - Voice:
+            - Kore.ai Voice Gateway: channels/amazon-alexa.md
+            - Third-Party Voice:
+              - Amazon Alexa: channels/amazon-alexa.md
+              - Twilio Voice: channels/add-twilio-voice-channel.md
+              - AudioCodes: channels/ivr-audio-codes.md
+              - IVR: channels/IVR-integration.md            
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
   - Automation AI: 
@@ -257,9 +264,10 @@ nav:
         - General Settings: manage-assistant/general-settings.md
         - Bot Management: manage-assistant/bot-management.md
         - Manage Namespace: manage-assistant/managing-namespace.md               
-  - Search AI:
+ - Search AI:
     - Overview: searchai/about-search-ai.md
     - Getting Started: searchai/introduction-to-answers.md
+    - Setup Search AI application: searchai/setup-search-ai.md
     - Content:
         - Sources:
             - Overview: searchai/content-sources/introduction.md
@@ -286,7 +294,6 @@ nav:
       - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md
     - Configurations:
       - AgentAssist Settings: contactcenter/configurations/agentassist-settings/agentassist-settings.md
-      - Default Flows: contactcenter/configurations/default-flows/configure-default-flows.md 
       - Email Inbox Config: contactcenter/configurations/email-inbox-config/configure-emails.md
       - Hours of Operation: contactcenter/configurations/hours-of-operation/manage-hours-of-operation.md
       - Languages and Speech: contactcenter/configurations/languages-and-speech/configure-languages-and-speech.md
@@ -317,7 +324,11 @@ nav:
     - Overview: agentai/about-agent-ai.md           
     - Set up Agent AI:
       - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md
-      - Agent Playbook: agentai/agent-experience/playbook.md       
+      - Agent Playbook: agentai/agent-experience/playbook.md
+      - Configurations:
+        - Welcome Events: agentai/configuration/welcome-events.md
+        - Answers Configuration: agentai/configuration/answers-configuration.md
+        - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
       - Bot Override and Automation: agentai/agent-experience/agent-assist-widget-v3.md       

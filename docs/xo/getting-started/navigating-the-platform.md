@@ -1,17 +1,6 @@
 
 # Navigating the Kore.ai XO Platform
 
- 
-
-
-## Prerequisites
-
-
-[How to Access the Kore.ai XO Platform?](../getting-started/accessing-the-platform.md){:target="_blank"}.
-
-
-## Introduction
-
 This article takes you through the main sections and menu items you will be using while working with the XO Platform. 
 
 Throughout this article and within the Kore.ai XO Platform itself, a _Virtual Assistant_ is also called a _Bot_. 
@@ -43,7 +32,7 @@ Within this area, you can:
 
 * Search your list of Apps.
 * Filter the apps by Pinned, Shared with me, My Apps, or All apps.
-* Sort the list either ascending or descending by app name,last opened, creation date, date modified,owner name.
+* Sort the list either ascending or descending by app name, last opened, creation date, date modified, and owner name.
 * Toggle between _Tile View_ or _List View_.
 * Create a new App or import an existing App.
 
@@ -61,7 +50,7 @@ This navigation menu has been significantly updated, starting with version 9.0 o
 ![alt_text](images/ntp(5).png "image_tooltip")
 
 
-All the actions available within the Kore.ai XO Platform can be accessed from this menu, which is organized as follows: 
+All the actions available within the Kore.ai XO Platform can be accessed from this menu, which is organized as follows:
 
 
 
