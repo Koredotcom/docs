@@ -28,7 +28,6 @@ In this section, you can select a pre-configured dialog task and channel and cho
 
 In this section, you can customize greeting messages at the beginning of the conversation. Also, you can add new greeting messages and copy existing greeting messages for agents to use when communicating with customers through the AgentAssist widget. You can edit, delete, enable, or disable existing messages.
 
-
 #### Steps to Configure Greeting Messages
 
 1. Click **CONFIGURATION** > **Welcome Events**.
@@ -40,7 +39,7 @@ In this section, you can customize greeting messages at the beginning of the con
 6. Enter the new greeting message in the **Message** box and click **Add**.
    <img src="../welcome-events-images/configure-and-add-new-greeting-message-3.png" alt="configure-and-add-new-greeting-message" title="configure-and-add-new-greeting-message" style="border: 1px solid gray; zoom:60%;">
 
-      The new greeting message gets added to the list of existing messages.
+   The new greeting message gets added to the list of existing messages.
 
 7. Click **Copy from Chat** to copy existing messages in **Chat**.
    
@@ -56,7 +55,7 @@ In this section, you can customize greeting messages at the beginning of the con
 
 8. Click **Display Random Message** to enable all configured messages and randomly display any three on the agent’s screen.
 
-      <img src="../welcome-events-images/display-random-message-and-select-message-language-5.png" alt="display-random-message-and-select-message-language" title="display-random-message-and-select-message-language" style="border: 1px solid gray; zoom:80%;">
+   <img src="../welcome-events-images/display-random-message-and-select-message-language-5.png" alt="display-random-message-and-select-message-language" title="display-random-message-and-select-message-language" style="border: 1px solid gray; zoom:80%;">
 
 9. Click the **down-arrow** to change message language.
 
