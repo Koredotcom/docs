@@ -1,6 +1,6 @@
 
 
-# How to Access the Platform
+# Accessing the Platform
 
 Kore.ai Experience Optimization (XO) Platform is an AI-powered, end-to-end experience optimization Platform for enterprises of any scale to offer best-in-class conversational experiences for customers, employees, and agents.
 
@@ -36,7 +36,7 @@ To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
 
 3. Enter all the other details to create the account.
 
-    !!! note       
+    !!! note 
         The account you create is identified by the email domain. When you invite other users to the account, the email includes this name.
 
 4. On creating an account, a confirmation email is sent to the provided email address, with a verification link and a verification code, to sign in to the new account. 
@@ -52,7 +52,6 @@ To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
     The platform sends reminder emails with the verification link and the code to the users who have not completed the sign up. The emails are sent to the email id provided by you during sign up, at periodic intervals as per the configurations done at the application level (Kore config level), with a new verification link and code upon expiry of the old ones.
 
     If the verification link or code expires or is invalid, the system displays a message to you, to request a new link and a code to complete the verification process.
- 
  Alternatively, you can sign up to the Kore.ai XO Platform using the Google, Microsoft Office or LinkedIn profiles.
 
  <img src="../images/accplatform(10).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
@@ -61,6 +60,27 @@ To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
 
     Kore.ai XO Platform uses SAML-based authentication for completing the sign up and sign in flows.
 
+After signing up, users are guided through the onboarding process as follows:
+
+1. Provide the workspace name and invite additional users by entering their Email IDs. Click **Continue** to proceed.
+ <img src="../images/accplatform(17).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
+
+2. Select the relevant option related to your company from the drop-down list and click **Next**. This will expedite the onboarding process.
+ <img src="../images/accplatform(18).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+
+3. To initiate the onboarding journey, select one of the following options and then click **Next**:
+    1. Create an interactive virtual agent (IVA)
+    2. Build your AI-native contact center.
+<img src="../images/accplatform(19).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+
+4. Select your onboarding experience - **Guided Onboarding** is recommended and pre-selected.
+ <img src="../images/accplatform(20).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+
+5. Click **Next** at the bottom-right corner, and follow the onscreen instructions to complete the onboarding journey.
+
+6. At the end of the journey, your Virtual Assistant will be ready. **Finish and jump into XO**.
+
+ <img src="../images/accplatform(21).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 ## Sign in to the Platform
 
 The Kore.ai XO Platform allows you to sign in to your account using your registered email ID and password.
@@ -140,7 +160,7 @@ Some of the common scenarios where you can join or sign up to a workspace includ
 2. If your enterprise administrator adds you to your enterprise workspace through SSO or API.
 3. If you use a business email address to sign up, you can join any other workspace that matches your email domain. In such cases, the system only creates a User identity for you and adds you to the selected workspace.
 4. If you sign up using Single Sign-On (SSO) options like Google or Office 365, the platform will use your email domain as the Workspace name. For example, if your email address is john@doe.com, your workspace will be created as ‘doe.com’. You can always change the Workspace name from the Profile menu.
-5. If you sign up using the email address verification option, you can define your workspace name during signup.
+5. If you sign up using the email address verification option, you can define your workspace name during sign up.
 6. If you are the first user of a workspace, i.e., if you have created the workspace, you will automatically become the Workspace Owner.
 7. Additional users can be invited to a workspace using the ‘Invite Team’ option or inviting users to a particular assistant.
 8. A user can belong to multiple workspaces.
@@ -171,7 +191,7 @@ After the Workspace has been created, Administrators can invite new members usin
 
     By default, the **Invite Members** option at the Builder level is visible for the admins with the ‘Master Admin’ role. For admins with custom administrator roles, the **Invite** permission should be enabled in the role management.
  
-![alt_text](images/accplatform(1).gif "image_tooltip")
+<img src="../images/accplatform(15).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ### Switch Workspaces
 
@@ -183,4 +203,4 @@ Team members can switch workspaces, using the switcher at the top right, next to
 
 Team members can also **Browse Workspaces** to see those that are active within your organization, and to which access can be requested. This option lists Workspaces based on the email domain.
 
-![alt_text](images/accplatform(2).gif "image_tooltip")
+<img src="../images/accplatform(16).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">

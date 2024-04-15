@@ -4,7 +4,7 @@
 
 An **Agent Group** is a collection of agents based on skills, scopes, roles, functionalities, etc. Agents are assigned to groups to streamline customer service within Contact Center.
 
-To find _Agent Groups_, go to **Contact Center > AGENT & SUPERVISORS > Agent Management**. All groups are visible on this page by default.
+To find _Agent Groups_, go to **Contact Center > AGENT & SUPERVISORS > Agent Management**. All groups are visible on this page by default.  
 <img src="../images/agent-groups-tab.png" alt="Agent Groups Tab" title="Agent Groups Tab" style="border: 1px solid gray; zoom:80%;">
 
 ### Agent Group Section Features
@@ -91,9 +91,8 @@ To create a new agent status, follow these steps:
     1. **Status Name** – Enter the status name.
     2. **Status Type** – Select the status type: _Away_ or _Busy_.
     3. **Description** – Type in a brief description of the status.
-3. Click **Add & Exit** to create the status and exit the window or click **Add & Stay** to create the status and continue to a new one. 
+3. Click **Add & Exit** to create the status and exit the window or click **Add & Stay** to create the status and continue to a new one.  
 <img src="../images/new-status-dialog-box.png" alt="New Status Dialog Box" title="New Status Dialog Box" style="border: 1px solid gray; zoom:100%;">
-
 4. The **_status created successfully_** success message is displayed on-screen and the new status is added to the **Agent Status** list. 
 <img src="../images/status-created.png" alt="New Status Created" title="New Status Created" style="border: 1px solid gray; zoom:80%;">
 

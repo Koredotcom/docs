@@ -4,7 +4,7 @@
 
 Queue Metrics Summary Report is a summary of queue load, and performance information calculated daily.
 
-To generate Queue Metrics Summary Report:
+Steps to generate the Queue Metrics Summary Report:
 
 1. On the Reports tab, click **New Report**.
 2. In the list of reports, choose the Queue Metrics Summary Report.

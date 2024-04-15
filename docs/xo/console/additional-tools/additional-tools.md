@@ -57,7 +57,7 @@ As an agent, you can initiate an Internal Chat conversation if you face a challe
 1. Click the **Internal Chat** icon from the upper right corner of the Agent Console.  
 <img src="../images/internal-chat.png" alt="Internal Chat Icon" title="Internal Chat Icon" style="border: 1px solid gray; zoom:80%;">
 
-2. A pop-up window will display the list of available agents. Select an agent by clicking the agent’s name to initiate an internal chat.
+2. A pop-up window will display the list of available agents. Select an agent by clicking the agent’s name to initiate an internal chat.  
 <img src="../images/internal-chat-window.png" alt="Internal Chat Window" title="RInternal Chat Window" style="border: 1px solid gray; zoom:80%;">
 
 3. You can now use the internal chat to call and message another agent and send attachments.

@@ -111,7 +111,7 @@ copyright: |
 nav:
   - Home : home.md
   - Platform:
-    - What's New in the XO Platform: getting-started/whats-new-in-xo-platform.md
+    - What's New in XO 11: getting-started/whats-new-in-xo-platform.md
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md          
       - Flows and Channels:
@@ -136,7 +136,14 @@ nav:
             - Split: flows/node-types/split.md
         - Channels:
           - Digital:
-            - Channel Enablement: channels/adding-channels-to-your-bot.md                             
+            - Enable Channels: channels/adding-channels-to-your-bot.md
+          - Voice:
+            - Kore.ai Voice Gateway: channels/amazon-alexa.md
+            - Third-Party Voice:
+              - Amazon Alexa: channels/amazon-alexa.md
+              - Twilio Voice: channels/add-twilio-voice-channel.md
+              - AudioCodes: channels/ivr-audio-codes.md
+              - IVR: channels/IVR-integration.md            
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
   - Automation AI: 
@@ -286,7 +293,6 @@ nav:
       - Dispositions: contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md
     - Configurations:
       - AgentAssist Settings: contactcenter/configurations/agentassist-settings/agentassist-settings.md
-      - Default Flows: contactcenter/configurations/default-flows/configure-default-flows.md 
       - Email Inbox Config: contactcenter/configurations/email-inbox-config/configure-emails.md
       - Hours of Operation: contactcenter/configurations/hours-of-operation/manage-hours-of-operation.md
       - Languages and Speech: contactcenter/configurations/languages-and-speech/configure-languages-and-speech.md
@@ -295,6 +301,7 @@ nav:
       - Surveys: contactcenter/configurations/surveys/configure-surveys.md
       - Widgets: contactcenter/configurations/widgets/configure-widgets.md
     - Flows and Routing:
+      - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
     - Routing:
       - Queues: contactcenter/routing/queues/queue-management.md
@@ -307,11 +314,20 @@ nav:
       - Introduction to the Console: console/introduction-to-the-console/introduction.md
     - Campaigns:  
       - Overview: contactcenter/campaigns/about-campaigns.md
+      - Dashboard: contactcenter/campaigns/dashboard/campaign-dashboard.md
+      - Campaign Management: contactcenter/campaigns/campaign-management/campaigns.md
+      - List Management: contactcenter/campaigns/list-management/list-management.md
+      - Settings: contactcenter/campaigns/settings/global-settings.md
+      - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
   - Agent AI:
     - Overview: agentai/about-agent-ai.md           
     - Set up Agent AI:
       - Agent Coaching: agentai/agent-experience/agent-realtime-coaching.md
-      - Agent Playbook: agentai/agent-experience/playbook.md       
+      - Agent Playbook: agentai/agent-experience/playbook.md
+      - Configurations:
+        - Welcome Events: agentai/configuration/welcome-events.md
+        - Answers Configuration: agentai/configuration/answers-configuration.md
+        - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
       - Bot Override and Automation: agentai/agent-experience/agent-assist-widget-v3.md       
@@ -441,7 +457,10 @@ nav:
       - Conversation Flows: analytics/automation/conversation-flows.md            
     - Contact Center:  
       - Queues & Agents: analytics/contact-center/queues-and-agents.md
-      - Interactions: analytics/contact-center/interactions.md    
+      - Interactions: analytics/contact-center/interactions.md  
+      - Reports:
+        - Introduction: analytics/contact-center/reports/introduction-to-reports.md
+        - Reports List: analytics/contact-center/reports/reports-list.md
   - Administration:
     - Deployment:
       - App Versioning: deploy/bot-versioning.md
