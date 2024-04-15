@@ -37,8 +37,9 @@ In this section, you can customize greeting messages at the beginning of the con
 5. Click **+ Add Message** > **New Messages** to add a new greeting message.
    <img src="../welcome-events-images/adding-new-greeting-messages-2.png" alt="adding-new-greeting-messages" title="adding-new-greeting-messages" style="border: 1px solid gray; zoom:80%;"> 
 6. Enter the new greeting message in the **Message** box and click **Add**.
+   
    <img src="../welcome-events-images/configure-and-add-new-greeting-message-3.png" alt="configure-and-add-new-greeting-message" title="configure-and-add-new-greeting-message" style="border: 1px solid gray; zoom:60%;">
-
+   
    The new greeting message gets added to the list of existing messages.
 
 7. Click **Copy from Chat** to copy existing messages in **Chat**.
@@ -47,7 +48,6 @@ In this section, you can customize greeting messages at the beginning of the con
        **Copy from Voice** appears for the Chat channel and **Copy from Chat** appears for the Voice channel.
        
        <img src="../welcome-events-images/copying-from-chat-messages-4.png" alt="copying-from-chat-messages" title="copying-from-chat-messages" style="border: 1px solid gray; zoom:80%;">
-    
        a. Select the **Welcome Messages** button to select all the existing messages or select individual messages one by one.
        b. Click **Confirm**.
 
