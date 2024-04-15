@@ -327,7 +327,7 @@ nav:
       - Configurations:
         - Welcome Events: agentai/configuration/welcome-events.md
         - Answers Configuration: agentai/configuration/answers-configuration.md
-        - Widget Settings: agentai/configuration/answers-configuration.md
+        - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
       - Bot Override and Automation: agentai/agent-experience/agent-assist-widget-v3.md       

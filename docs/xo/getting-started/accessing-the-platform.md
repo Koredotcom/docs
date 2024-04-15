@@ -36,7 +36,7 @@ To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
 
 3. Enter all the other details to create the account.
 
-    !!! note       
+    !!! note 
         The account you create is identified by the email domain. When you invite other users to the account, the email includes this name.
 
 4. On creating an account, a confirmation email is sent to the provided email address, with a verification link and a verification code, to sign in to the new account. 
@@ -79,8 +79,8 @@ After signing up, users are guided through the onboarding process as follows:
 5. Click **Next** at the bottom-right corner, and follow the onscreen instructions to complete the onboarding journey.
 
 6. At the end of the journey, your Virtual Assistant will be ready. **Finish and jump into XO**.
- <img src="../images/accplatform(21).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
+ <img src="../images/accplatform(21).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 ## Sign in to the Platform
 
 The Kore.ai XO Platform allows you to sign in to your account using your registered email ID and password.

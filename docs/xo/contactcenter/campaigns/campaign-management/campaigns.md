@@ -1,18 +1,16 @@
-# Introduction
+# Campaign Management
 
 Outbound campaigns are reshaping how businesses connect with their audience. These campaigns proactively reach out to a curated list of individuals, following predefined rules. At the core of this process, calls are orchestrated based on the information available in a contact list. Outbound campaigns infuse a personalized touch by crafting scripts that shape the agent's interaction.
 
+You can access Campaigns by going to **Contact Center AI** > **Campaigns** > **Proactive Outreach** > **Campaign Management**.
 
-# Campaign Management
-
-You can find the **Campaign Management** tab on the left panel.
 
 On this page, the following details of the voice campaigns are shown in a table:
 
 * **Campaign** - Campaign name and Type.
 * **Actions** - Play/Pause/Replay, Stop, Edit, Clone campaign.
 * **Priority** - Priority of the campaign from 1 to 10 (1 being the lowest). The default priority is 1.
-* **Status** - Status of the campaign 
+* **Status** - Status of the campaign.
     * **Ready**: When a manual campaign is saved and ready to run.
     * **Active**: The campaign is started and running.
     * **Paused**: The campaign is paused.
@@ -23,7 +21,7 @@ On this page, the following details of the voice campaigns are shown in a table:
 * **Connection** - The following details are displayed based on the dialer type:
     * **Agentless dialer**- The Experience Flow name selected while creating or editing a campaign is shown. For example: Default Conversational Input voice Flow.
 
-**Note**: The Campaigns module is only available on accounts configured with Kore Gateway. If an account is configured with AudioCodes or the mapped gateway is switched from AudioCodes to Kore Gateway, then the Campaigns module is unavailable. 
+**Note**: The Campaigns module is only available on accounts configured with Kore Gateway. If an account is configured with AudioCodes or the mapped gateway is switched from AudioCodes to Kore Gateway, then the Campaigns module is unavailable.
 
 
 ## Create Voice Campaigns
@@ -124,60 +122,3 @@ Steps to delete a campaign:
 
 You can run a voice campaign by clicking the **Play** button.
 When the campaign runs, you can pause or stop it. You can also rerun a completed campaign.
-
-
-
-# Frequently Asked Questions (FAQs)
-
-
-1. What is the difference in the resumption behavior of a paused campaign and a completed campaign when using the 'Rerun' icon?  
-When you pause and resume a running campaign, it will restart from where it left off. However, if a campaign has dialed the last record and is then resumed by clicking the 'Rerun' icon, it will start dialing from the beginning of the dial list and will be a new instance of the same campaign. The new instance will not maintain data of the previous run.
-2. How does the system handle contact lists in campaigns, and what are the limitations when it comes to sharing contact lists or running campaigns concurrently with the same list?  
-Each campaign can have its contact list. Campaigns also can share contact lists. However, it is not possible for campaigns to simultaneously operate with the same contact list.
-3. Is there a limit to the number of call lists per campaign?  
-A campaign can have a maximum of 10 Call Lists.
-4. Is there a limit on the number of Do Not Contact (DNC)  lists per campaign?  
-The maximum number of DNC lists per campaign is one.
-5. How many contact lists are permitted to be created?  
-Each account can create a maximum of 1000 contact lists.
-6. What are the limitations on DNC lists in terms of the number of records allowed per DNC list and per account?  
-There is a limit of one million records for each DNC list and a total limit of two million DNC records for each account.
-7. How many DNC lists are permitted to be created?  
-Each account can create a maximum of 1000 DNC lists.
-8. How many voice campaigns can be run concurrently?  
-You can run a maximum of 50 voice campaigns concurrently.
-9. What is the maximum number of contacts per account?  
-Each account can have a maximum of five million contacts.
-10. What is the maximum number of contacts that can be added to a contact list?  
-Each contact list can contain a maximum of one million contacts, or up to a 5 MB file size limit.
-11. How does priority work in Voice Campaigns?  
-Assigning percentages to campaigns facilitates managing campaigns with varying priorities. A higher percentage implies more contacts will be dialed for that specific campaign. However, it's important to note that a higher priority doesn't guarantee that the campaign will be completed first.  
-
-A Campaign Manager can oversee multiple campaigns with similar or different priorities. The campaign management system is capable of selecting and transferring contacts to the dialer automatically.  
-**Priority Percentage** = (Sum of Priority Value of each Campaign / Number of Campaigns) *100
-
-**Scenario 1:** Two campaigns with priorities 5 and 3 respectively
-
-    percentage allocation to campaign 1 = (5/ (5+3))*100 = 62.5%
-    percentage allocation to campaign 2 = (3/ (5+3))*100 = 37.5%
-
-
-**Execution in this case:**
-    62.5% of calls will be picked from campaign 1 and given to campaign 1 hopper.  
-    37.5% of calls will be picked from campaign 2 and given to campaign  2 hopper.  
-    From each campaign’s hopper, the calls will be given to the Master Hopper.  
-    Dialer will randomly dial from the 62.5% of calls of camp1 and the 37.5% of calls of campaign 2.
-
-
-**Scenario 2:** Two campaigns with the same priorities of 5.
-
-
-    percentage allocation to campaign 1 = (5/ (5+5))*100 = 50% 
-    percentage allocation to campaign 2 = (5/ (5+5))*100 = 50%
-
-
-**Execution in this case:**
-    50% of calls will be picked from camp1 and given to the hopper.  
-    50% of calls will be picked from camp2 and given to the hopper.  
-    From each campaign’s hopper, the calls will be given to the Master Hooper  
-    Dialer will randomly dial from the 50% of calls of campaign 1 and the 50% of calls of campaign 2.
