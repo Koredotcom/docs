@@ -57,7 +57,7 @@ The next step is to add Knowledge Graph Intents which can be either:
 
 ### Add FAQs
 
-Using this option, you can add relevant question-answer sets to the nodes in the hierarchy. Note that there is a limit  of 50k FAQs over 20k nodes to avoid performance issues. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/manage-faqs/" target="_blank">Learn more</a>.
+Using this option, you can add relevant question-answer sets to the nodes in the hierarchy. Note that there is a limit  of 50k FAQs over 20k nodes to avoid performance issues. [Learn more](manage-faqs.md).
 
 ### Run a Task
 
@@ -74,7 +74,7 @@ To leverage the capabilities of the Knowledge Graph and dialog tasks, and handle
 
 ### Manage Traits, Synonyms, and Stop Words
 
-You can improve the performance of your Knowledge Graph by adding tags, synonyms, traits, and more. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-training/" target="_blank">Learn more</a>.
+You can improve the performance of your Knowledge Graph by adding tags, synonyms, traits, and more. [Learn more](knowledge-graph-training.md).
 
 ### Manage Variable Namespaces
 

@@ -1,9 +1,9 @@
 
 # Navigating the Kore.ai XO Platform
 
-This article takes you through the main sections and menu items you will be using while working with the XO Platform. 
+This article takes you through the main sections and menu items you will be using while working with the XO Platform.
 
-Throughout this article and within the Kore.ai XO Platform itself, a _Virtual Assistant_ is also called a _Bot_. 
+Throughout this article and within the Kore.ai XO Platform itself, a _Virtual Assistant_ is also called a _Bot_.
 
 To get started navigating the XO Platform, log into your account.
 
@@ -45,31 +45,25 @@ The following sections describe the menu options that are available once you ope
 
 This navigation menu has been significantly updated, starting with version 9.0 of the platform. For a comparative list between the 9.0 and earlier versions, please see [Where to find what](href="https://developer.kore.ai/docs/bots/chatbot-overview/where-to-find-what/).
 
-
-
-![alt_text](images/ntp(5).png "image_tooltip")
-
+<img src="../images/ntp(5).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 All the actions available within the Kore.ai XO Platform can be accessed from this menu, which is organized as follows:
 
+1. **Product Switcher icon** –   Product Switcher lets you effortlessly switch between different products on your XO Platform.
+    * Automation AI
+    * Contact Center AI
+    * Search AI
+    * Agent AI
+    * Generic Modules
 
-
-1. **Landing page icon** – You can use this icon to reach the main VA tab landing page.
-2. **VA implementation actions**:
-    * **Build** - This section is where you can work on building your Virtual Assistant.
-    * **Deploy** - Here is where you can configure channels, publish your VA, integrate it with other services, etc.
-    * **Analyze** – This is where you can find data on your VA’s conversations and performance, as well as NLP, usage and containment metrics.
-    * **Manage** – Here is where you can manage the team of developers working on your VA, view your Platform plan, usage and invoices. 
-3. **VA dropdown list** – Lets you switch between the various versions of the current virtual assistant; You can also search and switch to any virtual assistant within your account;
-4. **Search** for a feature or menu item;
-5. **Status tracker** icon;
-6. **Language** icon to switch the VA’s language;
-7. **Help** area, where you can access a comprehensive support section that will help you get started. There are links to learning tools and resources, as well as contextual help, which shows you valuable links and content, depending on where you are within the Platform. Please see[ Help and Learning Resources](https://developer.kore.ai/docs/bots/chatbot-overview/help/) for details.
-8. **Switch Accounts**: If you are part of more than one account, then you can switch between them here.
-9. **Profile picture** to access your profile.
-
- 
-
+2. **App dropdown list** – Lets you switch between the various versions of the current virtual assistant; You can also search and switch to any virtual assistant within your account;
+3. **Status Docker** icon;
+4. **Language** icon to switch the VA’s language;
+5. **Search** for a feature or menu item;
+6. **Help** area, where you can access a comprehensive support section that will help you get started. There are links to learning tools and resources, as well as contextual help, which shows you valuable links and content, depending on where you are within the Platform. Please see [Help and Learning Resources](https://developer.kore.ai/docs/bots/chatbot-overview/help/) for details.
+7. **Switch Accounts**: If you are part of more than one account, then you can switch between them here.
+8. **Profile picture** to access your profile.
+9. **Test**: 
 
 ### The Left Navigation Menu
 
