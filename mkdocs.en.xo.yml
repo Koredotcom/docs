@@ -238,12 +238,12 @@ nav:
         - Ignore Words and Field Memory: automation/intelligence/conversation-management/ignore-words-and-field-memory.md
     - Testing:
       - Overview: automation/testing/test-and-debug-overview.md
-      - Talk to Bot: automation/testing/talk-to-bot.md
+      - Test (Talk to Bot): automation/testing/talk-to-bot.md
       - Utterance Testing: automation/testing/testing-your-bot-with-nlp.md 
       - Regression Testing: 
         - Health and Monitoring: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
-        - Batch Testing: getting-started.md
-        - Conversation Testing: getting-started.md
+        - Batch Testing: https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/batch-testing.md
+        - Conversation Testing: https://docsinternal-kore.github.io/docs/xo/automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md
     - Advanced Topics:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
