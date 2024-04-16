@@ -20,8 +20,8 @@ To import a Knowledge Graph, follow the steps below:
 3. Click **Import** option on the respective Knowledge Graph.
     ![alt_text](images/kg-more.png )
 
-4. Click **Import**.
-5. In the **Import** dialog, do one of the following based on the scenario:
+
+5. In the **Import FAQs** dialog, do one of the following based on the scenario:
     * For a new Knowledge Graph, click **Proceed**.
     * For an existing Knowledge Graph, take a backup CSV or JSON file, and then click **Proceed**.
      ![alt_text](images/import-faq.png )
