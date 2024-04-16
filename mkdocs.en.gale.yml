@@ -158,10 +158,10 @@ nav:
     - Deploy an Agent: agents/deploy-an-agent.md
     - Create a new API Key: agents/create-a-new-api-key.md 
     - Guardrails: 
-        - Overview: agents/guardrails/overview.md
-        - Add a  Scanner: agents/guardrails/add-a-scanner.md
-        - Test Guardrail: agents/guardrails/test-guardrail.md
-        - Manage Guardrails: agents/guardrails/manage-guardrails.md
+      - Overview: agents/guardrails/overview.md
+      - Add a  Scanner: agents/guardrails/add-a-scanner.md
+      - Test Guardrail: agents/guardrails/test-guardrail.md
+      - Manage Guardrails: agents/guardrails/manage-guardrails.md
     - Configure an Agent: agents/configure-an-agent.md
   - Models: 
     - Overview: models/overview.md 
