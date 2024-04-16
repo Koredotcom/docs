@@ -86,7 +86,7 @@ Under the SIP Transfer tab, you can configure the network IPs and domains, DID n
 
 Steps to configure SIP Transfer:
 
-1. Click **Configure SIP Transfer**. \
+1. Click **Configure SIP Transfer**.
 <img src="../images/add-start-flow.png" alt="Add Start Flow" title="Add Start Flow" style="border: 1px solid gray; zoom:100%;">
 
 2. On the **Transfer from IVR** page, configure the following:
