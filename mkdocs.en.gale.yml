@@ -123,14 +123,46 @@ nav:
     - Introduction: introduction.md
     - Core Capabilities of GALE: core-capabilities-of-gale.md
   - Agents: 
-    - Overview: automation/about-automation.md
-    - USE CASES: 
-      - Dialogs Tasks:
-        - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
-        - Navigating Dialog Tasks: automation/use-cases/dialogs/navigating-dialog-tasks.md
-        - Build Dialog Tasks: automation/use-cases/dialogs/using-the-dialog-builder-tool.md
-        - Node Types:
-          - Overview: automation/use-cases/dialogs/node-types/nodes-transitions.md      
+    - Overview: agents/overview.md
+    - Create a new Agent: agents/create-a-new-agent.md
+    - Agent Flows:
+      - Flows Overview: agents/agents-flows/flows-overview.md
+      - Manage Flow Nodes: agents/agents-flows/manage-flow-nodes.md
+      - Types of Nodes: 
+        - Overview of Nodes: agents/agents-flows/types-of-nodes/overview-of-nodes.md
+        - API Node: 
+          - API Node Overview: agents/agents-flows/types-of-nodes/api-node/api-node-overview.md
+          - Add a new API Node: agents/agents-flows/types-of-nodes/api-node/add-a-new-api-node.md
+          - Configure the API Node: agents/agents-flows/types-of-nodes/api-node/configure-api-node.md
+        - Gen AI Node: 
+          - Gen AI Node Overview: agents/agents-flows/types-of-nodes/gen-ai-node/gen-ai-node-overview.md
+          - Add a new Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node/add-a-new-gen-ai-node.md
+          - Configure Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node/configure-gen-ai-node.md
+        - Function Node:
+          - Function Node Overview: agents/agents-flows/types-of-nodes/function-node/function-node-overview.md
+          - Add a new Function Node: agents/agents-flows/types-of-nodes/function-node/add-a-new-function-node.md
+          - Configure a Function Node: agents/agents-flows/types-of-nodes/function-node/configure-a-function-node.md
+        - Condition Node: 
+          - Condition Node Overview: agents/agents-flows/types-of-nodes/condition-node/condition-node-overview.md
+          - Add a new Condition Node: agents/agents-flows/types-of-nodes/condition-node/add-a-new-condition-node.md
+          - Configure a Condition Node: agents/agents-flows/types-of-nodes/condition-node/configure-a-condition-node.md
+        - End Node:
+          - End Node Overview: agents/agents-flows/types-of-nodes/end-node/end-node-overview.md
+          - Add a new End Node: agents/agents-flows/types-of-nodes/end-node/add-a-new-end-node.md
+          - Configure an End Node: agents/agents-flows/types-of-nodes/end-node/configure-an-end-node.md
+      - Perform other actions on the Flow Builder:
+        - Manage Input and Output: agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
+        - Run the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
+        - Create a new version of the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
+    - Manage User Roles and Permissions:  agents/manage-user-roles-and-permissions.md
+    - Deploy an Agent: agents/deploy-an-agent.md
+    - Create a new API Key: agents/create-a-new-api-key.md 
+    - Guardrails: 
+      - Overview: agents/guardrails/overview.md
+      - Add a  Scanner: agents/guardrails/add-a-scanner.md
+      - Test Guardrail: agents/guardrails/test-guardrail.md
+      - Manage Guardrails: agents/guardrails/manage-guardrails.md
+    - Configure an Agent: agents/configure-an-agent.md
   - Models: 
     - Overview: models/overview.md 
     - Custom Models: 
