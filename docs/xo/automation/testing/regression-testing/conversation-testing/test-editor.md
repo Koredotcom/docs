@@ -30,7 +30,7 @@ A  test case consists of:
       
             !!! note
             
-                    The **OneOf** operator is used to test randomization scenarios where a node can have multiple bot responses. For any node in which multiple responses are configured, the operator is activated by default. If one of the multiple responses is obtained from the VA during the test execution, then the assertion will be passed.  
+                The **OneOf** operator is used to test randomization scenarios where a node can have multiple bot responses. For any node in which multiple responses are configured, the operator is activated by default. If one of the multiple responses is obtained from the VA during the test execution, then the assertion will be passed.  
 
 
         <img src="../images/te-img5.png" alt="Response" title="Response" style="border: 1px solid gray;zoom:50%;"/>
@@ -44,11 +44,14 @@ A  test case consists of:
         * Flow (Enabled by default)  
         * Text (Enabled by default)  
         * Context  
-    <img src="../images/te-img6.png" alt="Navigate to Test Editor" title="Navigate to Test Editor" style="border: 1px solid gray;zoom:50%;"/>  
-      
-            <img src="../images/te-img7.png" alt="Navigate to Test Editor" title="Navigate to Test Editor" style="border: 1px solid gray;zoom:50%;"/>  
+    
+    <img src="../images/te-img6.png" alt="Navigate to Test Editor" title="Navigate to Test Editor" style="border: 1px solid gray;zoom:50%;"/>
+
+    <img src="../images/te-img7.png" alt="Navigate to Test Editor" title="Navigate to Test Editor" style="border: 1px solid gray;zoom:50%;"/>  
 
 6. You can export the entire test suite to your local directory as a **JSON** file. The downloaded test suites include the user inputs and VA responses.  
 <img src="../images/te-img8.png" alt="Test suite operations" title="Test suite operations" style="border: 1px solid gray;zoom:50%;"/>  
   
-      **Note:** You can also clone the test suite or delete it as per the requirement.
+    !!! Note
+    
+        You can also clone the test suite or delete it as per the requirement.

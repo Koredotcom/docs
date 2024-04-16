@@ -13,7 +13,7 @@ A messaging window for the assistant is displayed and connected to the NLP inter
 
 !!! Note
 
-    The **Talk to Bot** icon is not enabled until and unless at least one task is created.
+    The **Test** icon is not enabled until and unless at least one task is created.
 
 <img src="../images/talk-to-bot-img2.png" alt="Talk to Bot - Messaging window" title="Talk to Bot - Messaging window" style="border: 1px solid gray; zoom:80%;"/>
 
