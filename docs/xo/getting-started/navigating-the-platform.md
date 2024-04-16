@@ -49,7 +49,13 @@ This navigation menu has been significantly updated, starting with version 9.0 o
 
 All the actions available within the Kore.ai XO Platform can be accessed from this menu, which is organized as follows:
 
-1. **Product Switcher icon** –  Product Switcher lets you switch between different products on your XO Platform.
+1. **Product Switcher icon** –   Product Switcher lets you effortlessly switch between different products on your XO Platform.
+    * Automation AI
+    * Contact Center AI
+    * Search AI
+    * Agent AI
+    * Generic Modules
+
 2. **App dropdown list** – Lets you switch between the various versions of the current virtual assistant; You can also search and switch to any virtual assistant within your account;
 3. **Status Docker** icon;
 4. **Language** icon to switch the VA’s language;
@@ -58,9 +64,6 @@ All the actions available within the Kore.ai XO Platform can be accessed from th
 7. **Switch Accounts**: If you are part of more than one account, then you can switch between them here.
 8. **Profile picture** to access your profile.
 9. **Test**: 
-
- 
-
 
 ### The Left Navigation Menu
 

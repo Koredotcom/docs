@@ -100,6 +100,7 @@ Define the configuration rules for the **Skill Group** and **Skill** waiting que
 
 Below is an example configuration for Routing Rules:
 <img src="../images/routing-rules-example.png" alt="Routing Rules Example" title="Routing Rules Example" style="border: 1px solid gray; zoom:80%;">
+
 In this example, customers are mapped to a specific agent as follows:
     1. If the **skill group _Languages_** and **skill** is _English OR_,
     2. If the **skill group** is _Languages_ and **skill** is _Spanish_, _AND_,
