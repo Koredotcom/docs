@@ -29,7 +29,7 @@ The Knowledge Extractor allows you to add the extracted content to the Knowledge
 ## Extract from a Website
 
 1. Open the VA to which you want to extract the content.
-2. Go to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **more icon(three dots)** > **Manage Extracts**.
+2. Go to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **more** (three dots) > **Manage Extracts**.
 4. Click **Extract from URL**.
 5. Enter a **Name** for the extraction.
 6. Enter the **URL** of the page, and then click **Proceed**.
@@ -47,7 +47,7 @@ The Knowledge Extractor allows you to add the extracted content to the Knowledge
 To extract content from a file, please follow the steps below. For file format details, refer to the [Supported Formats](#supported-formats-and-requirements).
 
 1. Open the VA to which you want to extract the content.
-2. Go to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **more icon(three dots)** > **Manage Extracts**.
+2. Go to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **more** (three dots) > **Manage Extracts**.
 4. Click **Extract from file**.
 5. Click **Browse** to locate the file (PDF or CSV).
 
@@ -70,8 +70,8 @@ You might have all the FAQs related to your business in a PDF file but not in th
 
 1. Select a new or previously extracted PDF file. Note that you can use a previously extracted file provided no questions from that file are added to the Knowledge Graph.
 2. Click **Annotate & Extract** to make annotation on a newly uploaded file.
+    ![alt_text](images/annotate-andextract-pdf.png "text")
 
-    <img src="<../images/annotate-and-extract-pdf.png>" alt="annotate and extract" title="annotate and extract" style="border: 1px solid gray; zoom:75%;">
 
 3. The PDF document is loaded into the Annotation Tool allowing you to annotate the various sections in the document.
 4. To annotate, select the text and tag it as follows:
@@ -104,11 +104,9 @@ You might have all the FAQs related to your business in a PDF file but not in th
 ### Edit the Extracted Content
 
 1. Open the VA.
-2. Got to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **Manage KG**
-3. From the left pane, click **Conversational Skills** > **Knowledge Graph**.
-4. The **Knowledge Extraction** section displays the list of all extractions.
+2. Got to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **more** (three dots) > **Manage Extracts**.
+4. The **Manage Extracts** section displays the list of all extractions.
 
-    <img src="../images/knowledge-extraction-section.png" alt="knowledge extraction section" title="knowledge extraction sections" style="border: 1px solid gray; zoom:75%;">
 
 5. Click the name of a successful extract you want to edit.
 
@@ -127,9 +125,8 @@ There are two ways to add the extracted content to the Knowledge Graph.
 To add the content from the **Extracts** section, follow the steps below:
 
 1. Open the VA.
-2. Select the **Build** top menu item.
-3. From the left menu, click **Conversational Skills** > **Knowledge Graph**.
-4. From the **Knowledge Extraction** section, select the name of a successful extract you want to add.
+2. Got to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **more** (three dots) > **Manage Extracts**.
+4. From the **Manage Extracts** section, select the name of a successful extract you want to add.
 5. Drag and drop the required Q&A to the node/term you want to add. As you drag and drop, the child nodes will be expanded.
 6. You can select multiple Q&As and perform a bulk move.
 

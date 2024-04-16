@@ -17,7 +17,7 @@ Follow the instructions below to build your Knowledge Graph in a spreadsheet.
 ### Download the Sample File
 
 1. Select the VA to work with and go to **Virtual Assistant** > **Knowledge AI** > **FAQs**.
-2. In the top right corner, click **more** icon.
+2. In the top right corner, click **more** icon (three dots).
 3. You can find the **Import** option on the respective Knowledge Graph.
 4. You are prompted to **back up** the Knowledge Graph before proceeding. Choose the CSV or JSON format for the backup.
 5. After backup, click **Proceed**.
@@ -137,7 +137,7 @@ Follow the instructions below to build your Knowledge Graph using JSON:
 ### Download the Sample File
 
 1. Select the VA to work with and go to **Virtual Assistant** > **Knowledge AI** > **FAQs**.
-2. In the top right corner, click **more** icon.
+2. In the top right corner, click **more** icon (three dots).
 3. You are prompted to **back up** the Knowledge Graph before proceeding. Choose the CSV or JSON format for the backup.
 4. After backup, click **Proceed**.
 5. On the corresponding dialog box, click **Sample JSON**. The JSON file is downloaded to your local computer.
