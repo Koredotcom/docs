@@ -286,8 +286,9 @@ Follow these steps to train the linked bots in a universal bot:
 
 After you have defined, trained, and saved a new configuration for a Universal Bot, it becomes visible on the Bot Builder home page. It is not available to users other than the developers of the bot until it is published and approved by the Bots Admin.
 
- !!! note
-     If you change a linked bot, you must publish the universal bot. Otherwise, the change will not be reflected in the universal bot.
+!!! note
+
+    If you change a linked bot, you must publish the universal bot. Otherwise, the change will not be reflected in the universal bot.
 
 
 #### Universal Bot Statuses
