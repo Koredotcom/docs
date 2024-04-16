@@ -298,8 +298,8 @@ The Platform auto-defines the Entities, Prompts, Error Prompts, Bot Action nodes
 
 
 
-![alt_text](images/cpf(1).gif  )
 
+<img src="../images/cpf(1).gif" alt="Automatic Dialog Generation" title="Automatic Dialog Generation" style="border: 1px solid gray; zoom:70%;">
 
 **Usage**
 
@@ -328,10 +328,10 @@ If this feature is disabled, you will not have the option to auto-generate a dia
 This feature provides a regression tool or a Playbook that creates a conversation test suite for each intent (new and old) in English or Non-English Bot language to evaluate the impact of the change on the conversation execution.
 
 
+<img src="../images/cpf(2).gif" alt="Conversation Test Cases Suggestions" title="Conversation Test Cases Suggestions" style="border: 1px solid gray; zoom:70%;">
 
 
 
-![alt_text](images/cpf(2).gif  )
 
 
 You can view input/utterance suggestions at every conversation step simulating the various input types and scenarios. This feature helps check if the task/intent is robust enough to handle random user utterances.
@@ -436,10 +436,10 @@ This feature generates a list of suggested training utterances and NER annotatio
 
 
 
+<img src="../images/cpf(3).gif" alt="Training Utterance Suggestions" title="Training Utterance Suggestions" style="border: 1px solid gray; zoom:70%;">
 
 
 
-![alt_text](images/cpf(3).gif  )
 
 
 **Usage**
