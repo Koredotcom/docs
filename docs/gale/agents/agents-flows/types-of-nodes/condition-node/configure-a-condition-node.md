@@ -8,11 +8,12 @@ This node helps you to trigger path flows based on the conditions you set.
 2. Click the **Condition node** and the general properties dialog for the node is displayed on the right side of the page as shown in the following image.
 
     <img src="../images/configure-the-condition-node.png" alt="Configure the Condition Node" title="Configure the Condition Node" style="border: 1px solid gray; zoom:80%;">
+    
 1. Enter a **Custom Name** for the node.
 2. Define the IF/ELSE-IF/ELSE conditions using context variables and the AND/OR operator.
 3. In the **IF section** select the following:
 
-    * Select the **Context **object you want to use.
+    * Select the **Context** object you want to use.
  
     * Select an **Operator** from the drop-down list such as, exists, does not exist, equal to, greater than or equal to, less than or equal to, not equal to, greater than, less than, does not contain, and contains.
 

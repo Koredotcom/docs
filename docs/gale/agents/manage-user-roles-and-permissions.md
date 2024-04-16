@@ -25,7 +25,7 @@ The owner of each respective application holds the authority to extend invitatio
 
     !!! note
 
-    Only the account owners can view the Invite button and invite other users.
+        Only the account owners can view the Invite button and invite other users.
     
     <img src="../images/invite-users.png" alt="Invite Users" title="Invite Users" style="border: 1px solid gray; zoom:80%;">
 

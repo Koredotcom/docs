@@ -24,6 +24,6 @@
 
     !!! note
 
-    The start node is displayed by default on the flow builder.
+        The start node is displayed by default on the flow builder.
 
     <img src="../images/connect-start-to-gen-ai.png" alt="Connect Start to Gen AI" title="Connect Start to Gen AI" style="border: 1px solid gray; zoom:80%;">
