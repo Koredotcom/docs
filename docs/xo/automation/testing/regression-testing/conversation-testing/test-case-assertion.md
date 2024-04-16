@@ -26,11 +26,11 @@ If the virtual assistant’s response is from a Dialog node, then the following 
     * This section shows the summary on the right side of the Test Suite panel:
         * **Expected Response**: Contains all possible responses/variations with the annotated dynamic values.  
 
-          <img src="../images/tca-img2.png" alt="Text Assertion" title="Text Assertion" style="border: 1px solid gray;zoom:50%;"/>  
-      
-          !!! note
-          
-              In case of text assertion, if the expected output has dynamic values, then it should be annotated using [Dynamic Text Marking](#dynamic-text-marking). If not marked, the text assertion fails and eventually leads to failure of the test case. For the test case to pass, the text for that specific output must be dynamically marked.  
+            <img src="../images/tca-img2.png" alt="Text Assertion" title="Text Assertion" style="border: 1px solid gray;zoom:50%;"/>  
+        
+        !!! note
+            
+            In case of text assertion, if the expected output has dynamic values, then it should be annotated using [Dynamic Text Marking](#dynamic-text-marking). If not marked, the text assertion fails and eventually leads to failure of the test case. For the test case to pass, the text for that specific output must be dynamically marked.  
       
     For example, in the following test case, the city name entered by the user can be different every time. It is marked as dynamic for that specific test case to pass.  
     <img src="../images/tca-img3.png" alt="Example-Test case details" title="Example-Test case details" style="border: 1px solid gray;zoom:50%;"/>  
