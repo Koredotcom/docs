@@ -14,6 +14,7 @@ This article gives an overview on the working and implementation of **Panels & W
 3. Each of the panels gives access to various functions.
 4. The end-user accesses these panels for information pertaining to each of the functions and performs follow-up actions.
 5. As an example, a Panel within a travel VA  could have multiple widgets showing:
+
     * Upcoming Trips
     * Completed Bookings
     * Canceled Bookings
@@ -31,7 +32,7 @@ Here are the steps we recommend for efficient design of Digital Views:
 1. **Set up**: Panels are containers to host one or more widgets. You may create multiple panels and each panel can host widgets that present relevant information. Widgets are the interactive components that can contain information to be presented to the end-users and allow them to perform actions and follow-ups.
 2. **Configure**: Define widgets by connecting them either to your tasks or by directly defining the widget. If you have connected your widget to a Dialog Task, make sure to use a Message node to present the required information in the widget using any of the supported widget templates.
 3. **Preview & Publish**: Preview your widgets from the XO Platform to review the visual representation of the information. Enable the WidgetSDK channel and publish your panels and widgets to make them available for your end-users.
-4. **Host with Kore.ai SDK / Host Independently**: You can choose to host your widgets independently or co-host them along with the WebSDK. You can download the SDKs from the <a href="https://github.com/Koredotcom/web-kore-sdk" target="_blank">Kore.ai GitHub page</a>.
+4. **Host with Kore.ai SDK / Host Independently**: You can choose to host your widgets independently or co-host them along with the WebSDK. You can download the SDKs from the [Kore.ai GitHub page](https://github.com/Koredotcom/web-kore-sdk){:target="_blank"}.
 
 ## General Setup
 
@@ -60,10 +61,12 @@ To configure widgets, follow the below steps:
     <img src="../../images/new-widget-dialog.png" alt="new widget dialog" title="new widget dialog" style="border: 1px solid gray; zoom:75%;">
 
 3. On the **New Widget** window, enter the following details:
+    
     * **Name** of the widget
     * **Display Name** for the widget
     * **Auto Refresh** to set the frequency with which this widget needs a poll for fresh data. The refresh is applicable only when the panel containing the widget is active.
     * **Source** for a widget can be set either from the execution of Dialog Task, from JavaScript by defining a JSON, or by linking an existing Digital Form.
+
 4. Click **Save**.
 
 ### Configure Widget Sources
@@ -76,16 +79,16 @@ The **Dialog Task** option allows you to trigger a task and present the output i
 
 The **Select Dialog Task** drop-down will list all available tasks in the current VA. Select the task you want to trigger using this widget.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>In the connected Dialog Task make sure to use a Message node to present the required information in the widget using any of the supported widget templates.</p>
-</div>
+!!! Note
+
+    In the connected Dialog Task make sure to use a Message node to present the required information in the widget using any of the supported widget templates.
 
 You can use the icon next to the Dialog Task to open the Dialog Task for checking the task details like entity names etc.
 
 Any entities used by the selected Dialog Task need to be pre-populated with values by mapping **Entity Name** with **Entity Values**.
 
 If the selected Dialog Task has any **Authorization Profile** defined, it is displayed here.
+
 <img src="../../images/dialog-task-source.png" alt="dialog task source" title="dialog task source" style="border: 1px solid gray; zoom:75%;">
 
 ### JSON
@@ -98,21 +101,24 @@ When selecting JSON as the source, you will be presented with a Javascript edito
 
 When selecting **Digital Form** as a widget source, you  can select the Digital Form, and the Dialog Task to trigger on submission.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>A Digital Form can be used to define multiple Widgets and can also be added to multiple Panels. However, it will be associated with the same Dialog Task across all Widgets and Panels.</p></div>
+!!! Note
+
+    A Digital Form can be used to define multiple Widgets and can also be added to multiple Panels. However, it will be associated with the same Dialog Task across all Widgets and Panels.
 
 <img src="../../images/digital-form-as-source.png" alt="digital form as source" title="digital form as source" style="border: 1px solid gray; zoom:75%;">
 
 ### Edit, Run & Preview a Widget
 
 After you save, the widget will be **In Development** state. You can **Edit** or **Delete** the widget.
+
 <img src="../../images/widget-saved.png" alt="widget saved" title="widget saved" style="border: 1px solid gray; zoom:75%;">
 
 When you select **Edit** widget, apart from being able to modify any of the above fields, you will have the option to **Run & Preview** the widget. You can save the preview as the thumbnail display for the widget.
+
 <img src="../../images/run-widget-preview.png" alt="widget preview" title="widget preview" style="border: 1px solid gray; zoom:75%;">
 
 ## Configure Panels
+
 Panel refers to containers that hold one or more widgets. You can add an existing widget to the panel or create new widgets within it.
 
 ### Create a Panel
@@ -121,6 +127,7 @@ To create a panel, follow the steps below:
 
 1. Click **Create Panel** on the Digital Views screen to create a panel.
 2. On the **New Panel** window, enter the following details:
+    
     * **Name** of the Panel.
     * **Display Name** for the Panel.
     * **Panel Icon** to display in the chat window (URL to the location).
@@ -133,7 +140,9 @@ To create a panel, follow the steps below:
 ### Add Widgets
 
 1. Click **Add Widget** to add widgets to the panel.
+
    <img src="../../images/panel-add-widget.png" alt="add widget to panel" title="add widget to panel" style="border: 1px solid gray; zoom:75%;">
+
 2. Select widgets from the drop-down list and click **Add**. You can add multiple widgets to the same panel.
     
     <img src="../../images/select-widgets-from-dropdown-list.png" alt="select widgets from dropdown" title="select widgets from dropdown" style="border: 1px solid gray; zoom:75%;">
@@ -145,10 +154,10 @@ You have the following options for a given panel:
 1. **Edit** the panel details;
 2. **Add Form** to add existing forms to the Panel. Once added, forms will behave as a widget with the source set to Digital Form;
 
-  * **Add Widget** to add existing widgets;
-  * **Panel Management** to add existing forms/widgets, or remove already added forms/widgets from the panel.
-  * **Test** the individual panel – this opens the **Talk to Bot** window along with the panel listing with the current panel active and data presented. You can interact with the VA and test the panel.
-  * **Delete** the Panel.
+    * **Add Widget** to add existing widgets;
+    * **Panel Management** to add existing forms/widgets, or remove already added forms/widgets from the panel.
+    * **Test** the individual panel – this opens the **Talk to Bot** window along with the panel listing with the current panel active and data presented. You can interact with the VA and test the panel.
+    * **Delete** the Panel.
 
   <img src="../../images/panel-options-for-digital-views.png" alt="panel options for digital views" title="panel options for digital views" style="border: 1px solid gray; zoom:75%;">
 
@@ -156,10 +165,10 @@ You have the following options for a given panel:
 
 When you publish your Virtual Assistant,  please ensure that the panels and widgets you want to include are selected.
 
-<a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/configure-digital-views/#publish" target="_blank">Learn more</a> about publishing a Virtual Assistant.
+[Learn more](../configure-digital-views/#publish){:target="_blank"} about publishing a Virtual Assistant.
 
 <img src="../../images/publish-digitalview.png" alt="publish digital view" title="publish digital view" style="border: 1px solid gray; zoom:75%;">
 
 ## Host
 
-The XO Platform provides the Widget SDK for hosting and managing panels and widgets. You can choose to host your widgets independently or co-host them along with the WebSDK. You can download the SDKs from the Kore.ai GitHub page. Do ensure to enable WidgetSDK as a channel. <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/kore-ai-web-sdk-tutorial/" target="_blank">Learn more</a>.
+The XO Platform provides the Widget SDK for hosting and managing panels and widgets. You can choose to host your widgets independently or co-host them along with the WebSDK. You can download the SDKs from the Kore.ai GitHub page. Do ensure to enable WidgetSDK as a channel. [Learn more](../../../../app-settings/dev-tools/kore-ai-web-sdk-tutorial){:target="_blank"}.

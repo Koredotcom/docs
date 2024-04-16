@@ -12,7 +12,7 @@ Each campaign can have its contact list. Campaigns also can share contact lists.
 
 A campaign can have a maximum of 10 Call Lists.
 
-4. **Is there a limit on the number of Do Not Contact (DNC)  lists per campaign?**
+4. **Is there a limit on the number of Do Not Contact (DNC) lists per campaign?**
 
 The maximum number of DNC lists per campaign is one.
 
