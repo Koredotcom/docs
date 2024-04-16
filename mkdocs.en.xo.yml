@@ -7,6 +7,7 @@ repo_url: https://github.com/Koredotcom/docs
 extra_css:
     - stylesheets/extra_kore.css
 theme:
+  favicon: images/kore_favicon.svg
   name: material
   custom_dir: overrides
   features:
