@@ -21,8 +21,6 @@ For an overall understanding of Universal Bots[ click here](https://developer.ko
 
 To create a Universal Bot, follow the steps below: 
 
-
-
 1. On the landing page, click **New Bot**.
 
 
@@ -64,12 +62,6 @@ To create a Universal Bot, follow the steps below:
 ![alt_text](images/image13.png "image_tooltip")
 
 
-	
-
-		
-
-			
-
 
 ## Step 2: Add Linked Bots
 
@@ -77,10 +69,10 @@ After you create a universal bot, link one or more existing bots to it. Since a 
 
 **Important Notes**:
 
-
-
-* Linking a standard Bot does not give the owner or the developers of the universal Bot access to the linked Bot’s tasks and functions.
-* The universal Bot does not clone the tasks in the linked Bots but performs them via the linked Bot. So, any changes made to the linked Bot reflect the universal Bot’s functionality.
+* Linking a standard bot does not give the owner or the developers of the universal bot access to the linked Bot’s tasks and functions.
+* The universal bot does not clone the tasks in the linked bots but performs them via the linked bot. So, any changes made to the linked bot reflect the universal bot’s functionality.
+* The universal bot must be published for any changes made to a linked bot.
+* Adding or linking a third-party bot as a standard/child bot to a universal bot is not supported.
 
 Follow these steps to add linked bots to the Universal Bot:
 
@@ -140,21 +132,9 @@ If you want to unlink a linked bot, follow these steps:
 
 Remember to Publish the bot for the changes to be reflected in the published bot.
 
-		
-
-	
-
-	
-
-		
-
-			
-
-
 ## Step 3: Training
 
-Universal Bot functionality enables training of the bot. If your bot is trained in one or more languages that use NLP Version 2, you will see a banner notifying you about the upcoming[ auto-upgrade to NLP Version 3](https://developer.kore.ai/docs/bots/nlp/optimizing-bots/#NLP_Version_3). This section details the steps in training the bot, for more details on training[ refer here](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/training-a-universal-bot/).
-
+Universal Bot functionality enables training of the bot. If your bot is trained in one or more languages that use NLP Version 2, you will see a banner notifying you about the upcoming[ auto-upgrade to NLP Version 3](https://developer.kore.ai/docs/bots/nlp/optimizing-bots/#NLP_Version_3). This section details the steps in training the bot, for more details on training [refer here](https://developer.kore.ai/docs/bots/advanced-topics/universal-bot/training-a-universal-bot/).
 
 
 1. Open the universal bot that you want to train. This bot should have bots linked to it.
@@ -207,16 +187,6 @@ Universal Bot functionality enables training of the bot. If your bot is trained 
 
 10. **Train** the bot to activate these above changes.
 
-		
-
-	
-
-	
-
-		
-
-			
-
 
 ## Step 4: Configure the Channels
 
@@ -228,8 +198,6 @@ This article assumes that you understand the fundamentals of configuring channel
 
 **Important Notes**:
 
-
-
 * The Universal Bot is available only on the channels enabled for it, regardless of the enabled channels for the linked Bots.
 * If a channel is configured for both linked and universal Bots, the message delivered to the user follows the channel-specific messages and formatting configured at the linked Bot.
 * If a channel enabled for the universal Bot is not enabled for the linked Bot, the universal Bot responds with the default messages defined for the linked Bot’s functionality.
@@ -237,8 +205,6 @@ This article assumes that you understand the fundamentals of configuring channel
 * Alerts configured from the universal Bot will be delivered via the universal Bot.
 
 **Steps in Configuring a Channel**
-
-
 
 1. Open the universal bot for which you want to configure new channels.
 2. Select the **Deploy** tab from the top menu.
@@ -251,17 +217,6 @@ This article assumes that you understand the fundamentals of configuring channel
 
 
     ![alt_text](images/image11.png "image_tooltip")
-
-
-		
-
-	
-
-	
-
-		
-
-			
 
 
 ## Step 5: Testing
@@ -277,8 +232,6 @@ This article assumes that you understand the fundamentals of testing bots in the
 **Steps in Testing a User Utterance**
 
 Follow these steps to test user utterances for universal bots:
-
-
 
 1. Open the universal bot for which you want to test the user utterances.
 2. Select the **Build** tab from the top menu.
@@ -298,8 +251,6 @@ Follow these steps to test user utterances for universal bots:
 
 The result for test utterances falls into one of these three categories:
 
-
-
 * **Single Matched Intent**: A task or user intent of one of the linked bots matches the input.
     * If it is a correct match, you can provide additional training for the same task in the same bot to enhance its score, or you can also train a different task from another bot to recognize the utterance.
     * If it is an incorrect match, click the **Mark as Incorrect Match** link next to the matched intent. Clicking the link allows you to select the task or intent from the same or another bot that should match.
@@ -312,8 +263,6 @@ The result for test utterances falls into one of these three categories:
 You can train the universal bot for more efficient and accurate functioning. Though you train the linked bot from the universal bot windows, the training is saved directly at the linked bot.
 
 Follow these steps to train the linked bots in a universal bot:
-
-
 
 1. On the Utterance Testing window for the universal bot, select an intent.
 2. It opens the following fields that enable you to train the task using machine-learning utterances, synonyms, and patterns. 
@@ -332,20 +281,14 @@ Follow these steps to train the linked bots in a universal bot:
     ![alt_text](images/image14.png "image_tooltip")
 
 
-		
-
-	
-
-	
-
-		
-
-			
-
 
 ## Step 6: Publishing
 
 After you have defined, trained, and saved a new configuration for a Universal Bot, it becomes visible on the Bot Builder home page. It is not available to users other than the developers of the bot until it is published and approved by the Bots Admin.
+
+!!! note
+
+    If you change a linked bot, you must publish the universal bot. Otherwise, the change will not be reflected in the universal bot.
 
 
 #### Universal Bot Statuses

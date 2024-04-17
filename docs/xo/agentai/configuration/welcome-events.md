@@ -41,11 +41,9 @@ In this section, you can customize greeting messages at the beginning of the con
 
       The new greeting message gets added to the list of existing messages.
 
-7. Click **Copy from Chat** to copy existing messages in **Chat**.
-   
-      **Note** : **Copy from Voice** appears for the Chat channel and **Copy from Chat** appears for the Voice channel.
-
-      <img src="../welcome-events-images/copying-from-chat-messages-4.png" alt="copying-from-chat-messages" title="copying-from-chat-messages" style="border: 1px solid gray; zoom:80%;">
+7. Click **Copy from Chat** to copy existing messages in **Chat**.  
+**Note** : **Copy from Voice** appears for the Chat channel and **Copy from Chat** appears for the Voice channel.  
+    <img src="../welcome-events-images/copying-from-chat-messages-4.png" alt="copying-from-chat-messages" title="copying-from-chat-messages" style="border: 1px solid gray; zoom:80%;">
       
       a. Select the **Welcome Messages** button to select all the existing messages or select individual messages one by one.
       
@@ -53,9 +51,8 @@ In this section, you can customize greeting messages at the beginning of the con
 
       All selected messages appear in the list of existing messages.
 
-8. Click **Display Random Message** to enable all configured messages and randomly display any three on the agent’s screen.
-
-   <img src="../welcome-events-images/display-random-message-and-select-message-language-5.png" alt="display-random-message-and-select-message-language" title="display-random-message-and-select-message-language" style="border: 1px solid gray; zoom:80%;">
+8. Click **Display Random Message** to enable all configured messages and randomly display any three on the agent’s screen.  
+<img src="../welcome-events-images/display-random-message-and-select-message-language-5.png" alt="display-random-message-and-select-message-language" title="display-random-message-and-select-message-language" style="border: 1px solid gray; zoom:80%;">
 9. Click the **down-arrow** to change message language.
 10. Click the **edit** button against an existing message to modify it.
 11. Make the changes and click **Update**.

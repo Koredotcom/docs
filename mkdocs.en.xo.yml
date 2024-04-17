@@ -7,6 +7,7 @@ repo_url: https://github.com/Koredotcom/docs
 extra_css:
     - stylesheets/extra_kore.css
 theme:
+  favicon: images/kore_favicon.svg
   name: material
   custom_dir: overrides
   features:
@@ -138,7 +139,7 @@ nav:
           - Digital:
             - Enable Channels: channels/adding-channels-to-your-bot.md
           - Voice:
-            - Kore.ai Voice Gateway: channels/amazon-alexa.md
+            - Kore.ai Voice Gateway: channels/kore.ai-voice-gateway/kore-voice-gateway.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
               - Twilio Voice: channels/add-twilio-voice-channel.md
@@ -238,12 +239,12 @@ nav:
         - Ignore Words and Field Memory: automation/intelligence/conversation-management/ignore-words-and-field-memory.md
     - Testing:
       - Overview: automation/testing/test-and-debug-overview.md
-      - Talk to Bot: automation/testing/talk-to-bot.md
+      - Test (Talk to Bot): automation/testing/talk-to-bot.md
       - Utterance Testing: automation/testing/testing-your-bot-with-nlp.md 
       - Regression Testing: 
         - Health and Monitoring: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
-        - Batch Testing: getting-started.md
-        - Conversation Testing: getting-started.md
+        - Batch Testing: automation/testing/regression-testing/batch-testing.md
+        - Conversation Testing: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md
     - Advanced Topics:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
@@ -266,8 +267,9 @@ nav:
         - Manage Namespace: manage-assistant/managing-namespace.md               
   - Search AI:
     - Overview: searchai/about-search-ai.md
-    - Getting Started: searchai/introduction-to-answers.md
-    - Setup Search AI: searchai/setup-search-ai.md
+    - Getting Started:
+      - About Answers in Search AI: searchai/introduction-to-answers.md
+      - Setup Search AI: searchai/setup-search-ai.md
     - Content:
         - Sources:
             - Overview: searchai/content-sources/introduction.md
