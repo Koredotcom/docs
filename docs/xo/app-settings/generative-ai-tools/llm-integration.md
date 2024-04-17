@@ -185,6 +185,7 @@ Steps to reset an integration:
 
 3. Click **Reset** in the confirmation dialog.  
 <img src="../images/llm-integration(6).png" alt="Reset Configuration" title="Reset Configuration" style="border: 1px solid gray; zoom:70%;"> 
+![alt_text](images/llm-integration(6).png  )
 
 
 4. The success message is displayed.
@@ -203,6 +204,7 @@ Steps to delete an integration:
 
 3. Click **Delete** in the confirmation dialog.  
 <img src="../images/llm-integration(16).png" alt="Delete Configuration" title="Delete Configuration" style="border: 1px solid gray; zoom:70%;">
+![alt_text](images/llm-integration(16).png  )
 
 
 
@@ -224,6 +226,7 @@ Steps to reset an integration:
 
 3. Click Reset in the confirmation dialog.  
 <img src="../images/image7-6.png" alt="Reset Configuration" title="Reset Configuration" style="border: 1px solid gray; zoom:70%;">
+![alt_text](images/image7-6.png  )
 
 
 4. The success message is displayed.
