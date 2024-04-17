@@ -256,7 +256,7 @@ The following options are available for the Actions:
     2. **Rules**: Rules establish guidelines and standards to govern the execution of online marketing initiatives, ensuring effectiveness and compliance. Click the **+ Add Rule** button and select the rules. You can select from the following rules:
 
         * User, Is, known/anonymous.
-        * Country, Is/Not “name of the country”.
+        * Country, Is/Not, “name of the country”.
         * City, Is/Not, “name of the city”.
         * Page Visit Count, Equals To, “count”.
         * Time Spent, Equals To, no.of Seconds.
