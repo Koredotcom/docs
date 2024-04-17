@@ -18,7 +18,6 @@ Clicking any campaign displays detailed information related to the selected camp
 <img src="../images/campaign-dashboard-detailed.png" alt="Campaign Metrics" title="Campaign Metrics" style="border: 1px solid gray; zoom:80%;">
 
 ## Agentless Dialer
-<img src="../images/dashboard-agentless-dialer.png" alt="Waiting Flows Page" title="Waiting Flows Page" style="border: 1px solid gray; zoom:80%;">
 
 ### Overview
 
