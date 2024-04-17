@@ -51,6 +51,7 @@ Steps to create Voice campaigns:
 
             * Only 1 DNC list can be selected per campaign.
             * The contact list is automatically scrubbed against the DNC list after the Campaign is saved.
+
     * Select the **Priority** from the drop-down list.
     <img src="../images/priority-list.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:100%;">
     * Select the **Dialing Mode** from the drop-down list.

@@ -14,8 +14,8 @@ The following details related to campaigns are displayed on the dashboard:
 5. **Campaign Start Date and Time** - Date and Time when the campaign started. For example: Started on Sep 29th, 2023 11:03 am
 <img src="../images/campaign-details-dashboard.png" alt="Campaign Details" title="Campaign Details" style="border: 1px solid gray; zoom:80%;">
 
-Clicking any campaign displays detailed information related to the selected campaign.
-<img src="../images/campaign-dashboard-detailed.png" alt="Campaign Metrics" title="Campaign Metrics" style="border: 1px solid gray; zoom:80%;">
+    Clicking any campaign displays detailed information related to the selected campaign.
+    <img src="../images/campaign-dashboard-detailed.png" alt="Campaign Metrics" title="Campaign Metrics" style="border: 1px solid gray; zoom:80%;">
 
 ## Agentless Dialer
 

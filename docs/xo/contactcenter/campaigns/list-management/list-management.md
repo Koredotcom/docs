@@ -106,12 +106,14 @@ Steps to create a new DNC list:
     !!! Note
 
         As of now, the default DNC List Type is Internal.
+
 3. Click **Select a CSV file to upload** a CSV file.
 <img src="../images/upload-dnc-call-list.png" alt="Upload DNC List" title="DeUpload DNC List" style="border: 1px solid gray; zoom:100%;">
 
     !!! Note
 
         You can download the template for the CSV file by clicking the CSV Template.
+
 4. The file upload progress is displayed.
 <img src="../images/dnc-list-progress.png" alt="DNC List Upload Progress" title="DNC List Upload Progress" style="border: 1px solid gray; zoom:100%;">
 
@@ -130,6 +132,7 @@ Steps to edit a DNC list:
     !!! Note
 
         You cannot delete a DNC list when it is “In use”.
+
 2. Upload the DNC list and click **Save** when the list is appended.
 <img src="../images/edit-dnc-list.png" alt="Edit DNC List" title="Edit DNC List" style="border: 1px solid gray; zoom:100%;">
 
@@ -143,6 +146,7 @@ Steps to delete a DNC list:
     !!! Note
 
         You cannot delete a DNC list when it is “In use”.
+
 2. A confirmation message is displayed. Click **Delete**.
 <img src="../images/delete-dnc-list-confirmation.png" alt="Delete DNC List Confirmation" title="Delete DNC List Confirmation" style="border: 1px solid gray; zoom:100%;">
 
