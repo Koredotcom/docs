@@ -87,9 +87,9 @@ To create a campaign when Agentless Dialing Mode is selected:
 * Select the **Start Flow** associated with the campaign. Learn more.
 <img src="../images/start-flow.png" alt="Start Flow" title="Start Flow" style="border: 1px solid gray; zoom:100%;">
 
-!!! Note
+    !!! Note
 
- You can toggle on Answering Machine Detection if you want the system to determine whether the outbound call was received by an answering machine.
+        You can toggle on Answering Machine Detection if you want the system to determine whether the outbound call was received by an answering machine.
 
 ### Edit a Voice Campaign
 
@@ -103,9 +103,9 @@ Steps to edit a campaign:
 2. A pop-up window is displayed. Do the required changes and click **Save**.
 <img src="../images/edit-campaign-window.png" alt="Edit and Save Campaign" title="Edit and save Campaign" style="border: 1px solid gray; zoom:100%;">
 
-!!! Note
+    !!! Note
 
-    You cannot edit a campaign that in Active status. For campaigns in other statuses, you can edit limited fields.
+        You cannot edit a campaign that in Active status. For campaigns in other statuses, you can edit limited fields.
 
 ### Clone a Voice Campaign
 
@@ -151,8 +151,6 @@ You can run a voice campaign by clicking the **Play** button.
 When the campaign runs, you can pause or stop it. You can also rerun a completed campaign.
 
 ## Proactive Web Campaigns
-
-### Introduction
 
 Web campaigns are online strategic initiatives to promote a product, service, cause, or brand. They harness the power of web engagement to reach and engage target audiences effectively. Their utility lies in their ability to amplify visibility, generate leads, foster brand awareness, and ultimately, achieve predefined objectives with precision and measurable outcomes.
 
@@ -243,7 +241,7 @@ The following options are available for the Actions:
     3. **Dismiss** - Dismiss the proactive chat offer.
 
 6. Under the **Appearance** section, select the **Message Bubble Alignment**, **Bubble Alignment**, and **Dark Shadow**.
-<img src="..images/appearance.png" alt="Appearance" title="Appearance" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/appearance.png" alt="Appearance" title="Appearance" style="border: 1px solid gray; zoom:100%;">
 
 7. The **Preview Section** on the left side shows the configured layout.
 <img src="../images/preview-section.png" alt="Preview Setion" title="Preview Section" style="border: 1px solid gray; zoom:100%;">
@@ -252,7 +250,7 @@ The following options are available for the Actions:
     1. **Website**: Click the **+ Add Website** button and select the **URL**/**Page Name**. URLs are crucial for directing users to specific web pages, tracking campaign performance, and optimizing user experience, ultimately enhancing audience engagement and conversion rates. Select the URL and the condition about what the URL contains.
     <img src="../images/engagemet-strategy.png" alt="Engagement Stategy" title="Engagement Strategy" style="border: 1px solid gray; zoom:100%;">
 
-    5. **Rules**: Rules establish guidelines and standards to govern the execution of online marketing initiatives, ensuring effectiveness and compliance. Click the **+ Add Rule** button and select the rules. You can select from the following rules:
+    2. **Rules**: Rules establish guidelines and standards to govern the execution of online marketing initiatives, ensuring effectiveness and compliance. Click the **+ Add Rule** button and select the rules. You can select from the following rules:
 
         * User, Is, known/anonymous.
         * Country, Is/Not “name of the country”.
