@@ -87,123 +87,58 @@ Under the SIP Transfer tab, you can configure the network IPs and domains, DID n
 Steps to configure SIP Transfer:
 
 1. Click **Configure SIP Transfer**.
-<img src="../images/add-start-flow.png" alt="Add Start Flow" title="Add Start Flow" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/configure-sip-transfer.png" alt="Configure SIP Transfer" title="Configure SIP Transfer" style="border: 1px solid gray; zoom:100%;">
 
 2. On the **Transfer from IVR** page, configure the following:
-    1. **SIP URI**: This is a preconfigured field.
+    1. **SIP URI**: This is a pre-configured field.
     2. **Network**: To configure the Network, you can select one of the following:
-        1. Under **List of IP Address**, type the values for Incoming IP Address in the textbox. \
-
-
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image15.png "image_tooltip")
+        1. Under **List of IP Address**, type the values for Incoming IP Address in the textbox.
+        <img src="../images/sip-transfer-setup.png" alt="SIP Transfer Setup" title="SIP Transfer Setup" style="border: 1px solid gray; zoom:100%;">
 
         2. Under **Domain Name**, provide the following:
     3. **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone.
-    4. **DNS Resolve Method** (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose A-record, SRV, NAPTR, or MS-SYNC. \
-
-
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image16.png "image_tooltip")
+    4. **DNS Resolve Method** (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose A-record, SRV, NAPTR, or MS-SYNC.
+    <img src="../images/dns-resolve-method.png" alt="DNS Resolve Method" title="DNS Resolve Method" style="border: 1px solid gray; zoom:100%;">
 
     5. Under **Direct Inward Dialing (DID) number**, you can enable virtual phone numbers (SIP trunk numbers) from which calls will be routed to the existing telephone lines.
-    6. Select an option from the list for **SIP Transport Type**. This field will set a protocol to route SIP traffic to servers and other endpoints. The available options are _TCP, UDF_, and _TLS_.
+    6. Select an option from the list for **SIP Transport Type**. This field will set a protocol to route SIP traffic to servers and other endpoints. The available options are _TCP_, _UDF_, and _TLS_.
     7. (Optional) Set the **SIP Credentials** (username and password) to access your SIP transfer setup account.
-    8. Click **Next**. \
-
-
-<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image17.png "image_tooltip")
+    8. Click **Next**.
+    <img src="../images/did-number.png" alt="DID Number" title="DID Number" style="border: 1px solid gray; zoom:100%;">
 
     9. On the **Forward to Phone Number** window, reserve the phone numbers for **Inbound Calls**, **Outbound Calls**, or both by selecting the appropriate options.
-    10. Click **Save**. \
+    10. Click **Save**.
+    <img src="../images/reserve-number.png" alt="Reserve Number" title="Reserve Number" style="border: 1px solid gray; zoom:100%;">
 
-
-<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image18.png "image_tooltip")
-
-    11. The selected information appears on the Channels page. \
-
-
-<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image19.png "image_tooltip")
-
-
+    11. The selected information appears on the Channels page.
+    <img src="../images/sip-numbers-added.png" alt="SIP Numbers Added" title="SIP Numbers Added" style="border: 1px solid gray; zoom:100%;">
 
 ### Attach Flow
 
 Steps to attach a flow to the SIP Number:
 
+1. Click **+ Attach Flow**. Hovering over the link icon displays "**No Flow Attached**".
+<img src="../images/attach-flow-sip.png" alt="Attach FLows SIP" title="Attach Flows SIP" style="border: 1px solid gray; zoom:100%;">
 
+2. Select a **Start Flow** to add to individual numbers and click **Done**. You can add a start flow by clicking **+ New Start Flow**. [Learn more](https://docs.kore.ai/smartassist/experience-flows/create-experience-flows/#Experience_Flow_Types).
 
-1. Click **+ Attach Flow**. Hovering over the link icon displays “**No Flow Attached”**. \
-
-
-<p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image20.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image20.png "image_tooltip")
-
-2. Select a **Start Flow** to add to individual numbers and click **Done**. You can add a start flow by clicking **+ New Start Flow**. Learn more. \
-
-
-<p id="gdcalert21" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image21.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image21.png "image_tooltip")
-
-3. The attached flows appear. A pie icon appears below the attached flows. Hovering over the pie icon displays “**Configured**”. \
-
-
-<p id="gdcalert22" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image22.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert23">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image22.png "image_tooltip")
-
-
+3. The attached flows appear. A pie icon appears below the attached flows. Hovering over the pie icon displays "**Configured**".
+<img src="../images/flow-attached-sip.png" alt="FLows Attached SIP" title="Flows Attached SIP" style="border: 1px solid gray; zoom:100%;">
 
 ### Edit a SIP Number
 
 Steps to edit a previously added SIP number:
 
+1. Click the ellipsis (**︙**) and select **Update**.  
+<img src="../images/update-sip-number.png" alt="Update Button SIP Number" title="Update Button SIP Number" style="border: 1px solid gray; zoom:100%;">
 
+2. Make the necessary changes on the Transfer from IVR page, and click **Next**.
+<img src="../images/edit-sip-transfer.png" alt="Edit SIP Number" title="Edit Button SIP Number" style="border: 1px solid gray; zoom:100%;">
 
-1. Click the ellipsis (**︙**) and select **Update**. \
-
-
-<p id="gdcalert23" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image23.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert24">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image23.png "image_tooltip")
-
-2. Make the necessary changes on the Transfer from IVR page, and click **Next**. \
-
-
-<p id="gdcalert24" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image24.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert25">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image24.png "image_tooltip")
-
-3. Make the necessary changes on the Forward to Phone Number page, and click **Save**. \
-
-
-<p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image25.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image25.png "image_tooltip")
+3. Make the necessary changes on the Forward to Phone Number page, and click **Save**.
+<img src="../images/edit-forward-to-phone-number-page.png" alt="Edit Forward to Phone Number" title="Edit Forward to Phone Number" style="border: 1px solid gray; zoom:100%;">
 
 4. A success confirmation message is displayed when the phone number is updated.
-
 
 ### Delete a SIP Number
 
@@ -211,82 +146,42 @@ Deleting a SIP number means stopping all services associated with it.
 
 Steps to delete a SIP number:
 
+1. Click the ellipsis (**︙**) and select **Delete**.  
+<img src="../images/delete-sip-number.png" alt="Delete Button SIP" title="Delete Button SIP" style="border: 1px solid gray; zoom:100%;">
 
-
-1. Click the ellipsis (**︙**) and select **Delete**. \
-
-
-<p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image26.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image26.png "image_tooltip")
-
-2. The following pop-up is displayed. Click **Delete** to confirm your choice. \
-
-
-<p id="gdcalert27" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image27.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image27.png "image_tooltip")
+2. The following pop-up is displayed. Click **Delete** to confirm your choice.
+<img src="../images/delete-confirmation-sip.png" alt="Delete SIP Number" title="Delete SIP Number" style="border: 1px solid gray; zoom:100%;">
 
 3. The sip number is deleted.
-
 
 ## Voice Preferences
 
 You can configure the voice preferences to personalize the ASR Engine and the voice that plays for your TTS conversions by going to the Voice Preferences tab and clicking **Manage**.
-
-
-
-<p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image28.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image28.png "image_tooltip")
-
-
+<img src="../images/voice-preferences.png" alt="Voice Preferences" title="Voice Preferences" style="border: 1px solid gray; zoom:100%;">
 
 ### Text-to-Speech Engine
 
 Steps to configure the TTS engine:
 
-
-
 1. In the Voice Preferences window, select a text-to-speech engine: Google Cloud Text-to-Speech, Microsoft Azure Speech Services, or AWS Amazon Polly.
-2. Enter **Sample Text** to preview your voice selection. You can play, navigate through the audio (Back/Forward), and adjust the preview volume. Clicking the More Options (⋮) button reveals options to change the **Playback Speed** and **Download** the voice preview.
+2. Enter **Sample Text** to preview your voice selection. You can play, navigate through the audio (Back/Forward), and adjust the preview volume. Clicking the More Options (**⋮**) button reveals options to change the **Playback Speed** and **Download** the voice preview.
 3. Click the **Play** button next to any available voice to preview it. Voices are available for all TTS engines, but each has its voice options.
-4. Select a different Voice Language if required. \
-
-
-<p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image29.gif). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image29.gif "image_tooltip")
- \
-
-
+4. Select a different Voice Language if required.
+<img src="../images/tts-engine.gif" alt="TTS Engine" title="TTS Engine" style="border: 1px solid gray; zoom:100%;">
 
 ### Automated Speech Recognition Engine
 
 Steps to configure the ASR Engine:
 
+1. Select an **Automated Speech Recognition Engine**: Google Cloud Speech-to-Text, Microsoft Azure Speech Services, AmiVoice, or NVIDIA Riva.
+2. Select the Dialect and click **Done** once you have completed configuring your voice preferences.
+<img src="../images/asr-engine.png" alt="ASR Engine" title="ASR Engine" style="border: 1px solid gray; zoom:100%;">
 
-
-1. Select an **Automated Speech Recognition Engine**: Google Cloud Speech-to-Text, Microsoft Azure Speech Services, AmiVoice, or NVIDIA Riva. 
-2. Select the Dialect and click **Done** once you have completed configuring your voice preferences. \
-
-
-<p id="gdcalert30" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image30.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert31">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image30.png "image_tooltip")
- \
 The set voice, language, and dialect apply to automated customer responses that use text-to-speech.
-
 
 #### List of Supported Dialects
 
 The following dialects are supported:
-
 
 <table>
   <tr>
@@ -339,152 +234,65 @@ The following dialects are supported:
   </tr>
 </table>
 
-
-
 ## Voice Call Properties
 
 Voice call properties are fundamental aspects that define the quality and reliability of communication over Kore.ai Voice Gateway. These properties include End of Task Behavior, Event Configuration, Call Termination Handler, Call Control Parameters, Timeout Prompt, Barge-in, Timeout, and No. of Retries, which collectively determine the user experience during a voice call. Configuring these properties is crucial for ensuring seamless and effective voice communication over network infrastructures.
 
-You can configure the voice call properties by going to the Voice Preferences tab and clicking **Configure** on the **Voice Call Properties **section. \
+You can configure the voice call properties by going to the Voice Preferences tab and clicking **Configure** on the **Voice Call Properties** section.
+<img src="../images/configure-voice-call-properties.png" alt="Configure Voice Call Properties" title="Configure Voice Call Properties" style="border: 1px solid gray; zoom:100%;">
 
-
-<p id="gdcalert31" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image31.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert32">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image31.png "image_tooltip")
-
-
-The Voice Call Properties window is displayed. \
-
-
-<p id="gdcalert32" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image32.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert33">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image32.png "image_tooltip")
-
-
+The Voice Call Properties window is displayed.
+<img src="../images/voice-call-properties-window.png" alt="Voice Call Properties Window" title="Voice Call Properties Window" style="border: 1px solid gray; zoom:100%;">
 
 ### End of Task Behavior
 
 Define the bot's behavior when reaching the end of a task. You can choose the following actions:
 
-
-
 * Trigger End of Task Event
-* Terminate Call \
-
-
-<p id="gdcalert33" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image33.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert34">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image33.png "image_tooltip")
-
-
+* Terminate Call
+<img src="../images/end-of-task-behavior.png" alt="End of Task Behavior" title="End of Task Behavior" style="border: 1px solid gray; zoom:100%;">
 
 ### Event Configuration
 
 Define how to proceed when this event is detected. You can choose the following actions:
 
-
-
-* **Initiate Task**: Select a task from the dropdown menu to be initiated when the event is detected. \
-
-
-<p id="gdcalert34" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image34.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert35">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image34.png "image_tooltip")
+* **Initiate Task**: Select a task from the dropdown menu to be initiated when the event is detected.
+<img src="../images/initiate-task.png" alt="Initiate Task" title="Initiate Task" style="border: 1px solid gray; zoom:100%;">
 
 * **Run Script**: Enter the script to be run when the event is detected.
+<img src="../images/run-script.png" alt="Run Script" title="Run Script" style="border: 1px solid gray; zoom:100%;">
 
-    
-
-<p id="gdcalert35" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image35.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert36">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image35.png "image_tooltip")
-
-
-* **Show Message**: Click **+ Add Response**, enter the message to be displayed when the event is detected, and click **Done**. \
-
-
-<p id="gdcalert36" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image36.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert37">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image36.png "image_tooltip")
-
-
+* **Show Message**: Click **+ Add Response**, enter the message to be displayed when the event is detected, and click **Done**.
+<img src="../images/add-response.png" alt="Add Response" title="Add Response" style="border: 1px solid gray; zoom:100%;">
 
 ### Call Termination Handler
 
-Specify the intent (dialog) to handle the call termination event from the dropdown. \
-
-
-<p id="gdcalert37" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image37.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert38">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image37.png "image_tooltip")
-
-
+Specify the intent (dialog) to handle the call termination event from the dropdown.
+<img src="../images/call-termination-handler.png" alt="Call Termination Handler" title="Call Termination Handler" style="border: 1px solid gray; zoom:100%;">
 
 ### Call Control Parameters
 
-Define the parameters to control the call behavior. Click **Add Parameter**, enter the **Parameter Name** and **Value**, and click **Save**. \
-
-
-<p id="gdcalert38" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image38.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert39">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image38.png "image_tooltip")
-
-
+Define the parameters to control the call behavior. Click **Add Parameter**, enter the **Parameter Name** and **Value**, and click **Save**.
+<img src="../images/add-parameter.png" alt="Add Parameter" title="Add Parameter" style="border: 1px solid gray; zoom:100%;">
 
 ### Timeout Prompt
 
-Define prompt to be played when user input is not received within the time-out period. \
-
-
-<p id="gdcalert39" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image39.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert40">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image39.png "image_tooltip")
-
-
+Define prompt to be played when user input is not received within the time-out period.
+<img src="../images/timeout-prompt.png" alt="Timeout Prompt" title="Timeout Prompt" style="border: 1px solid gray; zoom:100%;">
 
 ### Barge-in
 
-Define whether user input will be allowed while a prompt is in progress. By default, this option is disabled. \
-
-
-<p id="gdcalert40" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image40.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert41">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image40.png "image_tooltip")
-
-
+Define whether user input will be allowed while a prompt is in progress. By default, this option is disabled.
+<img src="../images/barge-in.png" alt="Barge In" title="Barge In" style="border: 1px solid gray; zoom:100%;">
 
 ### Timeout
 
-Define the maximum wait time to receive user input. The maximum wait time is 60 seconds. \
-
-
-<p id="gdcalert41" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image41.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert42">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image41.png "image_tooltip")
-
-
+Define the maximum wait time to receive user input. The maximum wait time is 60 seconds.
+<img src="../images/timeout.png" alt="Timeout" title="Timeout" style="border: 1px solid gray; zoom:100%;">
 
 ### No. of Retries
 
 Define the maximum number of retries allowed.
+<img src="../images/no-of-retries.png" alt="No.of Retries" title="No.of Retries" style="border: 1px solid gray; zoom:100%;">
 
-
-
-<p id="gdcalert42" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image42.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert43">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image42.png "image_tooltip")
-
-
-Click **Save**. A success message is displayed, and the voice call properties are saved. 
+Click **Save**. A success message is displayed, and the voice call properties are saved.
