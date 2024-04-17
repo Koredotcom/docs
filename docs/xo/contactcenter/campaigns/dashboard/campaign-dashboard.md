@@ -23,13 +23,13 @@ The following details related to campaigns are displayed on the dashboard:
 
 This section displays the following information:
 
-**Progress** - Progress of the campaign.
+* **Progress** - Progress of the campaign.
 
-**Connected Calls** - Count and percentage of connected calls.
+* **Connected Calls** - Count and percentage of connected calls.
 
-**Unconnected Calls** - Count and percentage of unconnected calls, including calls that go into the retry state.
+* **Unconnected Calls** - Count and percentage of unconnected calls, including calls that go into the retry state.
 
-**Avg. Call Duration** - Average Duration of all the connected calls in the campaign.
+* **Avg. Call Duration** - Average Duration of all the connected calls in the campaign.
 
 ### Disposition
 

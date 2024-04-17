@@ -40,9 +40,9 @@ Steps to add a contact list:
 5. Select the **Mapping Fields** and click **Save**.  
 <img src="../images/mapping-fields-contact-list.png" alt="Mapping Fields" title="Mapping Fields" style="border: 1px solid gray; zoom:100%;">
 
-!!! Note
+    !!! Note
 
-    Phone Number is mandatory for voice campaigns.
+        Phone Number is mandatory for voice campaigns.
 
 The Contact List is created.
 
@@ -69,9 +69,9 @@ Steps to edit a contact list:
 2. Upload the call list and click **Save** when the list is appended.
 <img src="../images/append-contact-list.png" alt="Append Contact List" title="Append Contact List" style="border: 1px solid gray; zoom:100%;">
 
-!!! Note
+    !!! Note
 
-    You can only append a contact list, you cannot edit an existing contact list.
+        You can only append a contact list, you cannot edit an existing contact list.
 
 ### Delete a Contact List
 
@@ -131,7 +131,7 @@ Steps to edit a DNC list:
 
     !!! Note
 
-        You cannot delete a DNC list when it is “In use”.
+        You cannot delete a DNC list when it is "In use".
 
 2. Upload the DNC list and click **Save** when the list is appended.
 <img src="../images/edit-dnc-list.png" alt="Edit DNC List" title="Edit DNC List" style="border: 1px solid gray; zoom:100%;">
@@ -145,7 +145,7 @@ Steps to delete a DNC list:
 
     !!! Note
 
-        You cannot delete a DNC list when it is “In use”.
+        You cannot delete a DNC list when it is "In use".
 
 2. A confirmation message is displayed. Click **Delete**.
 <img src="../images/delete-dnc-list-confirmation.png" alt="Delete DNC List Confirmation" title="Delete DNC List Confirmation" style="border: 1px solid gray; zoom:100%;">
