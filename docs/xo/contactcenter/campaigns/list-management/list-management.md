@@ -15,11 +15,15 @@ To view the Contact Lists, click the **Contact Lists** tab.
 The following details are displayed in Contact Lists:
 <img src="../images/contact-lists-table.png" alt="Contact Lists Table" title="Contact Lists Table" style="border: 1px solid gray; zoom:100%;">
 
-**Contact Lists** - Name of the list. For example, Contact List 1.
-**Actions** - Edit and Delete lists.
-**Status** - Shows the status of the list. For example, Validating, Validated, and Invalid.
-**Contacts** - Shows the total count of contacts in the list. For example, 288.
-**Campaigns** - Name of the Campaign. For example, Post Sales Survey.
+* **Contact Lists** - Name of the list. For example, Contact List 1.
+
+* **Actions** - Edit and Delete lists.
+
+* **Status** - Shows the status of the list. For example, Validating, Validated, and Invalid.
+
+* **Contacts** - Shows the total count of contacts in the list. For example, 288.
+
+* **Campaigns** - Name of the Campaign. For example, Post Sales Survey.
 
 ### Create a Contact List
 
