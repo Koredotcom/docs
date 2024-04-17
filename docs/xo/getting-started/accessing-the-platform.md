@@ -123,6 +123,7 @@ To invite users to your Kore.ai XO Platform account, follow these steps:
 
 5. When the invited user accepts the invitation, they are redirected to the Sign-up page.
     * If the user is new to the platform, they need to enter the required details to complete the registration. See [New Account Sign-up](../getting-started/accessing-the-platform.md#new-account-sign-up) to know more.
+    
     * If the user’s email address is already registered on the platform, the user is prompted to enter the password to sign in.
 
 !!! note
