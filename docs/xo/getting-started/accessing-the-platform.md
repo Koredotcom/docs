@@ -31,8 +31,7 @@ You can sign up for Kore.ai XO Platform in any of the following two ways:
     * An app within a workspace can be shared with one or more users.
     * A user can be part of one or more apps.
     * A user can be part of one or more workspaces.
-    * Users can start a trial of Automation AI or Contact Center to create an app. To try other products, users can follow the Contact Us option.
-
+    * Users can start a trial of Automation AI or Contact Center AI to create an app. To try other products, users can follow the Contact Us option.
 
 
 ## New Account Sign-up
