@@ -21,7 +21,7 @@ The following details are displayed in Contact Lists:
 **Contacts** - Shows the total count of contacts in the list. For example, 288.
 **Campaigns** - Name of the Campaign. For example, Post Sales Survey.
 
-### Add a Contact List
+### Create a Contact List
 
 Steps to add a contact list:
 

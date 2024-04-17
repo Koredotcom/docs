@@ -72,6 +72,8 @@ Steps to create Voice campaigns:
     !!! Note
 
         Calls will be dialed to contacts based on the calling hours and timezone configured here, irrespective of the campaign's start and stop time.
+    
+    
 4. Click **Save**. The campaign is created.
 
 #### Agentless Dialer
@@ -157,7 +159,7 @@ Web campaigns are online strategic initiatives to promote a product, service, ca
 You can access the Proactive Web Campaigns by going to **Campaign Management** > **Proactive Web**.
 <img src="../images/campaign-management-page.png" alt="Proactive Web Page" title="Proactive Web" style="border: 1px solid gray; zoom:100%;">
 
-## Proactive Web Campaign Types
+### Proactive Web Campaign Types
 
 <table>
   <tr>
@@ -266,7 +268,8 @@ The following options are available for the Actions:
                 !!! Note
 
                     The above steps are specific to Chrome browser and might vary for other web browsers.
-            <img src="../images/rules.png" alt="Rules" title="Rules" style="border: 1px solid gray; zoom:100%;">            
+
+        <img src="../images/rules.png" alt="Rules" title="Rules" style="border: 1px solid gray; zoom:100%;">            
 
 9. **Goals**: The purpose is to provide clear objectives and measurable targets to guide the campaign's strategy and assess its effectiveness in achieving desired outcomes. Click the **+ Add Goal** button and select the goals.
 <img src="../images/goal.png" alt="Goals" title="Goals" style="border: 1px solid gray; zoom:100%;">
