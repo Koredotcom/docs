@@ -383,7 +383,8 @@ In a contact center environment, the customer interacting with a VA may request 
 
 An example of the usage: When Conversation Summary is enabled and the conversation is transferred to an agent in SmartAssist, the Conversation Summary is displayed on the Agent Console, as shown in the screenshot below.
 
-![alt_text](images/conversation-summary.png  )
+
+<img src="../images/conversation-summary.png" alt="Conversation Summary" title="Conversation Summary" style="border: 1px solid gray; zoom:70%;">
 
 
 **Usage**
