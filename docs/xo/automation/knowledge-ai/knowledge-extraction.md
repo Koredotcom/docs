@@ -15,7 +15,7 @@ To move data using the Knowledge Extraction service to the Knowledge Graph, foll
 1. **Extracting**: Extract the existing FAQ content from structured or unstructured sources of question-answer data such as PDF, web pages, and CSV files. This extraction can be done before or after creating a Knowledge Graph for the assistant you are working with. 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <p>The Knowledge Extraction service supports a specific content structure for each source type. Refer to the[Supported formats](#supported-formats-and-requirements).
+    <p>The Knowledge Extraction service supports a specific content structure for each source type. Refer to the [Supported formats](#supported-formats-and-requirements).
     </div>
 
 <ol start="2"><li><b>Editing</b>: Upon successful data extraction, you can edit the questions and answer text before moving it to the Knowledge Graph.</li>

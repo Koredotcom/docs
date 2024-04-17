@@ -48,7 +48,8 @@ To add a new prompt, follow the steps:
     ![alt_text](images/prl(9).png  )
     1. To import an existing prompt, do the following:
         1. Click **Import from Prompts and Requests Library**. All the prompts related to the pre-built LLM are displayed without integrating them. In the case of custom prompts, all the added prompts are displayed. 
-            ![alt_text](images/prompts2hq.gif  )
+            
+            <img src="../images/import-from-library.gif" alt="Import from Prompts and Requests Library" title="Import from Prompts and Requests Library" style="border: 1px solid gray; zoom:70%;"> 
         
         2. Select the **Feature** from the dropdown menu, select the **Model**, and select the **Prompt** (in case of custom prompts only) from the dropdown menu. Hover over and click Preview Prompt to view the prompt before importing.
 
