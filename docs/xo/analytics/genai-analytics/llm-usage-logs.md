@@ -23,7 +23,7 @@ To access the logs, Go to **Analytics** > **Gen AI Analytics** > **Usage Logs**.
 
 
 
-## **Field Description**
+## Field Description
 
 You can sort the data by either Newest to Oldest or Oldest to Newest. Click the click to view the **Summary** and **Payload Details**.
 
