@@ -20,6 +20,21 @@ You can sign up for Kore.ai XO Platform in any of the following two ways:
 * **Join an existing enterprise account:** If your enterprise is already on Kore.ai, you can become a part of the account in one of the following ways:
     * Your enterprise account’s Apps Admin sends you an invite. If you haven’t already received the invitation email, reach out to them for access.
     * You can sign up using your enterprise email account and you are prompted to either join the enterprise network or create your own personal account.
+
+!!! note "Important Points"
+
+    * The XO Platform offers two types of workspaces/accounts:
+        * Standard Workspace: By default, every new workspace created is a Standard Workspace.
+        * Enterprise Workspace: A Standard Workspace can be upgraded to an Enterprise Workspace by a Kore.ai representative.  
+    * Workspaces or accounts are interchangeably used.
+    * A workspace can have one or more apps.
+    * An app within a workspace can be shared with one or more users.
+    * A user can be part of one or more apps.
+    * A user can be part of one or more workspaces.
+    * Automation AI and Contact Center AI will have ‘Try Now’ buttons to start the trial for a new app. Other products have the Contact Us path to request a trial.
+
+
+
 ## New Account Sign-up
 
 To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
@@ -203,7 +218,7 @@ Team members can also **Browse Workspaces** to see those that are active within 
 
 <img src="../images/accplatform(16).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
-## Inviting users to a specific app in your workspace
+## Inviting Users to a Specific App in your Workspace
 
 App owners can invite users to a specific app.
 
