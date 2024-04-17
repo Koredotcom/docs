@@ -28,7 +28,7 @@ On this page, the following details of the voice campaigns are shown in a table:
 
 The Campaigns module enables you to create **Voice** and **Proactive Web** campaigns.
 
-## Voice
+## Voice Campaigns
 
 ### Create Voice Campaigns
 
