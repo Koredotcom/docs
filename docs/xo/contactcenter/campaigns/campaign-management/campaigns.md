@@ -47,14 +47,15 @@ Steps to create Voice campaigns:
     * Select the **DNC List** from the drop-down.
     <img src="../images/dnc-list.png" alt="DNC List" title="DNC List" style="border: 1px solid gray; zoom:100%;">
 
-    !!! Notes
+        !!! Notes
 
-        * Only 1 DNC list can be selected per campaign.
-        * The contact list is automatically scrubbed against the DNC list after the Campaign is saved.
+            * Only 1 DNC list can be selected per campaign.
+            * The contact list is automatically scrubbed against the DNC list after the Campaign is saved.
     * Select the **Priority** from the drop-down list.
     <img src="../images/priority-list.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:100%;">
     * Select the **Dialing Mode** from the drop-down list.
     <img src="../images/dialing-mode.png" alt="Dialing Mode" title="Dialing Mode" style="border: 1px solid gray; zoom:100%;">
+
 3. Under the **Outreach Strategy** tab, enter the following details:
     * **Caller ID**: Select the caller ID to be displayed for the campaign.
     <img src="../images/caller-id.png" alt="Caller ID" title="Caller ID" style="border: 1px solid gray; zoom:100%;">
@@ -69,11 +70,10 @@ Steps to create Voice campaigns:
     * **Contactable Timings**: Add the contactable timings (day of the week/time) when the dialer will dial the calls.
     <img src="../images/contactable-timings.png" alt="Contactable Timings" title="Contactable Timings" style="border: 1px solid gray; zoom:100%;">
 
-    !!! Note
+        !!! Note
 
-        Calls will be dialed to contacts based on the calling hours and timezone configured here, irrespective of the campaign's start and stop time.
-    
-    
+            Calls will be dialed to contacts based on the calling hours and timezone configured here, irrespective of the campaign's start and stop time.
+
 4. Click **Save**. The campaign is created.
 
 #### Agentless Dialer
@@ -271,16 +271,16 @@ The following options are available for the Actions:
 
         <img src="../images/rules.png" alt="Rules" title="Rules" style="border: 1px solid gray; zoom:100%;">            
 
-9. **Goals**: The purpose is to provide clear objectives and measurable targets to guide the campaign's strategy and assess its effectiveness in achieving desired outcomes. Click the **+ Add Goal** button and select the goals.
+    3. **Goals**: The purpose is to provide clear objectives and measurable targets to guide the campaign's strategy and assess its effectiveness in achieving desired outcomes. Click the **+ Add Goal** button and select the goals
 <img src="../images/goal.png" alt="Goals" title="Goals" style="border: 1px solid gray; zoom:100%;">
 
-10. **Channel**: The purpose of channels in a web campaign is to designate a medium through which the campaign's message is disseminated, facilitating targeted outreach and engagement with the intended audience. Select the channel for the campaign from the dropdown.
-<img src="../images/channel-selected.png" alt="Channel" title="Channel" style="border: 1px solid gray; zoom:100%;">
+    4. **Channel**: The purpose of channels in a web campaign is to designate a medium through which the campaign's message is disseminated, facilitating targeted outreach and engagement with the intended audience. Select the channel for the campaign from the dropdown.
+    <img src="../images/channel-selected.png" alt="Channel" title="Channel" style="border: 1px solid gray; zoom:100%;">
 
-11. **Engagement Hours**: Select the time duration for running the campaign. You can select from the following:
-    1. **Anytime**: The campaign will be visible 24 hours, 7 days a week.
-    2. **Custom**: The campaign will be visible in the chosen time zone only during the set days and times.
-    <img src="../images/engagement-hours.png" alt="Engagement Hours" title="Engagement Hours" style="border: 1px solid gray; zoom:100%;"> 
+    5. **Engagement Hours**: Select the time duration for running the campaign. You can select from the following:
+        1. **Anytime**: The campaign will be visible 24 hours, 7 days a week.
+        2. **Custom**: The campaign will be visible in the chosen time zone only during the set days and times.
+        <img src="../images/engagement-hours.png" alt="Engagement Hours" title="Engagement Hours" style="border: 1px solid gray; zoom:100%;"> 
 
 12. Click **Save**.
 
@@ -327,7 +327,7 @@ The following options are available for the Actions:
 4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Goal**, **Channel**, and **Engagement Hours**. Learn more.
 5. Click **Save**.
 
-## Templates
+### Templates
 
 The purpose of using templates in web campaigns is to streamline and expedite the creation of consistent and visually appealing content. Templates provide a structured framework that enables you to easily plug in content elements, ensuring uniformity across various campaign materials. By using templates, marketers can save time, maintain brand coherence, and efficiently produce engaging content tailored to different platforms and audience segments. Additionally, templates facilitate collaboration among team members and allow for swift adjustments and iterations based on campaign performance and feedback. Overall, templates enhance productivity, brand consistency, and campaign effectiveness in the dynamic landscape of digital marketing.
 
