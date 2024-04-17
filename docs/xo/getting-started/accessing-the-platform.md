@@ -175,11 +175,11 @@ If your email domain matches existing Workspaces within the XO Platform, then it
 
 If you are managing a team, as part of your organization’s VA development projects, then you may want to create your own Workspace. You can do so by choosing **Create New**, rather than requesting access to an existing Workspace.
 
-![alt_text](images/accplatform(3).png "image_tooltip")
+<img src="../images/accplatform(3).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 To create your Workspace, you will need to provide a **Name**, and invite the first members by entering their email addresses. Those who accept your invitation will gain access to this Workspace exclusively.
 
-![alt_text](images/accplatform(12).png "image_tooltip")
+<img src="../images/accplatform(12).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 ### Invite Members to your Workspace
 
