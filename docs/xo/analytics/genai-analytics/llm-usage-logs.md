@@ -18,7 +18,8 @@ To access the logs, Go to **Analytics** > **Gen AI Analytics** > **Usage Logs**.
 
 
 
-![alt_text](images/logs1.gif "usage logs")
+
+<img src="../images/usage-logs.gif" alt="Usage Logs" title="Usage Logs" style="border: 1px solid gray; zoom:70%;">
 
 
 
