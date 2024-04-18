@@ -2,7 +2,8 @@
 
 The GALE platform boasts a multitude of capabilities that address the rapid changes in the dynamic landscape of Language Models (LLMs). The ever-evolving nature of LLMs presents challenges, and GALE is a versatile toolkit to navigate and harness the opportunities arising from these swift transformations.
 
-The following are a few capabilities GALE has to offer: 
+The following are a few capabilities GALE has to offer:
+ 
 * **Data privacy**: When you train your LLM, you have greater control over the data used in the training process. This is crucial for organizations dealing with sensitive information, as it mitigates the risks associated with sharing proprietary or confidential data with external models. Keeping the training process in-house allows you to adhere to strict privacy regulations and safeguard sensitive information.
 
 * **Tailored to Domain-Specific Requirements**: In many cases, off-the-shelf models may not fully address the intricacies of specific industries or domains. By training your LLM, you can incorporate domain-specific knowledge and nuances, ensuring the model is finely tuned to excel in tasks relevant to your organization's field.
