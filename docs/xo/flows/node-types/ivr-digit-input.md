@@ -25,8 +25,8 @@ Click the **General Settings** icon and provide the following information:
 Conditions allow you to set the parameters based on which the digit input is recorded. Click the **Condition** icon to define the input conditions by providing values for the following fields:
 
 * **Maximum length of digit**: Define the limit for the number of digits a caller can input, after which the conditional message is played.
-* **Ending Keypress**: Define the key to delimit or indicate the end of the caller’s input. For example, when “#” is pressed, it indicates that the caller has completed keying in their input.
-* Define the **On success** flow by selecting a node from the **Go to node** dropdown list. If the condition is satisfied, the flow is directed to the selected node from the current node.
+* **Ending Keypress**: Define the key to delimit or indicate the end of the caller’s input. For example, when “**#**” is pressed, it indicates that the caller has completed keying in their input.
+* Define the **On success** flow by selecting a node from the **Go to node** dropdown list. If the condition is satisfied, the flow is directed to the selected node from the current node.  
 <img src="./../images/condition.png" alt="Condition" title="Condition" style="border: 1px solid gray; zoom:70%;">
 
 ### Timeout
@@ -69,7 +69,7 @@ The Context Variable syntax is the following:
 Context.steps.<<context_node_name>>
 ```
 
-For example:
+For example,
 
 ```
 context.steps.IVRDigitInput
@@ -79,5 +79,5 @@ To define the script task that will store the input from this IVR Digit Input no
 
 1. Under the _IVR Digit Input_ node, add a Script Task node.
 2. Under **General Settings** > **Define** a script, add `steps.nodename`
-(For example: `steps.IVRDigitInput`).
+(For example, `steps.IVRDigitInput`).
 <img src="./../images/script-task-ivr-digit.png" alt="Script Task" title="Script" style="border: 1px solid gray; zoom:70%;">

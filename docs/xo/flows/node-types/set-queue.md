@@ -38,7 +38,9 @@ Priority should be a valid number between 0 and 10 (both are inclusive). If an I
 **Examples**:
 
 _agentUtils.setPriority(0); // priority of 0 (highest priority) will be set_.
+
 _agentUtils.setPriority(10); //  priority of 10 (Lowest Priority) will be set_.
+
 _agentUtils.setPriority(7); // priority of 7 will be set_.
 
 Under **Inside working hours**, select the **Go to node** that the node should take once it runs successfully during working hours. For this, set the node that should trigger after setting the queue.

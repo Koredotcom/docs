@@ -136,4 +136,4 @@ For a detailed navigation guide, please see [Navigate the Flow Designer](../flow
 
 ## Publish a Flow
 
-When the Flow is published, it becomes available to end-users. [Learn More](../deploy/publishing-bot.md#publishing-components).
+When the Flow is published, it becomes available to end-users. [Learn more](../deploy/publishing-bot.md#publishing-components).

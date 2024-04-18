@@ -40,7 +40,7 @@ The index panel consists of all the nodes you can add on the canvas to build the
 
 ## The Nodes Panel
 
-The nodes panel groups the nodes into categories for easy identification.
+The nodes panel groups the nodes into categories for easy identification.  
 <img src="../images/nodes-panel.png" alt="Nodes Panel" title="Nodes Panel" style="border: 1px solid gray; zoom:70%;">
 
 ## The Mini Map
