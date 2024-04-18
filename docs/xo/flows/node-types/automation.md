@@ -57,7 +57,7 @@ Use this section to handle system errors during customer interactions.
 * **Your Message to User**: The message that will be played or displayed to the customer. Select one of the following options from under **Choose your message type**:
     * **Text to speech**: This option allows you to transcribe text to speech. Type the text to be transcribed in the textbox or select an already configured message.
         * Create a new prompt message to be played out for the Text to Speech message type by clicking **+ Create New**. Enter a name for your message, and type its contents.
-        * Define multiple message types for the prompt to be played to the customer by clicking **+ Add Another**. In this case, one message will be randomly selected and played during runtime.
+        * Define multiple message types for the prompt to be played to the customer by clicking **+ Add Another**. In this case, one message will be randomly selected and played during runtime.  
     <img src="./../images/text-to-speech-automation.png" alt="Text to Speech" title="Text to Speech" style="border: 1px solid gray; zoom:70%;">
 
     * **Audio File**: In the text field, type a new message to be played to the customer or click **+ Upload New** to upload an audio file (.mp3 or .wav format) with the message to be played.

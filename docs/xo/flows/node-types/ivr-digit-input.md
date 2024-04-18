@@ -1,4 +1,4 @@
-# **IVR Digit Input Node**
+# IVR Digit Input Node
 
 The IVR Digit Input node records a non-IVR menu interaction. It is used during dynamic interactions when the caller needs to provide input such as a phone number or the last four digits of their credit card to proceed. You can configure the condition for receiving the input, the _Go to node_ if the condition is satisfied (success flow), the timeout value in seconds for the contact’s response/input, and the error-handling use cases. You can implement this node within your Flows.
 
@@ -14,7 +14,9 @@ Click the **General Settings** icon and provide the following information:
     * **Text to speech**: This option allows you to transcribe text to speech. Type the text to be transcribed in the textbox or select an already configured message.
         * Create a new prompt message to be played out for the **Text to Speech** message type by clicking **+ Create New**. Enter a name for your message, and type its contents.
         * Define multiple message types for the prompt message to be played to the customer by clicking **+ Add Another**. In this case, one message will be randomly selected and played during runtime.  
-    <img src="./../images/text-to-speech-ivr-digit.png" alt="Text-to-Speech" title="Text-to-Speech" style="border: 1px solid gray; zoom:70%;">
+
+        <img src="./../images/text-to-speech-ivr-digit.png" alt="Text-to-Speech" title="Text-to-Speech" style="border: 1px solid gray; zoom:70%;">
+
     * **Audio File**: In the text field, type a new message to be played to the customer or click **+ Upload New** to upload an audio file (.mp3 or .wav format) with the message to be played.
     <img src="./../images/audio-file-ivr-digit.png" alt="Audio File" title="Audio File" style="border: 1px solid gray; zoom:70%;">
     * **Link**: Click **+ Create New** to add the text of the message you want to play to the customer and insert the URL of an audio file in .mp3 or .wav format. Click **+ Add Another** to add another message URL.  
