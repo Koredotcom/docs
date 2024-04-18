@@ -4,7 +4,7 @@
 
 The Start node is the starting point of any flow and is available by default. You can drag and drop the Start node (as well as any other nodes) anywhere on the canvas.
 
-**To add a node to the flow builder canvas, follow these steps**:
+**Steps to add a node to the flow builder canvas**:
 
 * Do one of the following:
     * Click the “+” icon and select a node from the pop-up menu.
@@ -13,12 +13,11 @@ The Start node is the starting point of any flow and is available by default. Yo
 
     * Drag nodes from within the **Assets** panel on the left navigation bar onto the canvas.
 
-
 ### Rename a node
 
 You can rename and set a desired name of your preference.
 
-**To rename a node, follow these steps**:
+**Steps to rename a node**:
 
 * Right-click on the required node. A pop-up with a list of options is displayed.
 
@@ -58,7 +57,7 @@ Node connections are either made within the configuration of each node or by dra
 
 ### Delete a node connections
 
-**To delete a node connection, follow these steps**:
+**Steps to delete a node connection**:
 
 1. To delete node connections, click the line connecting two nodes and a Delete icon is displayed.
 2. Click the **Delete** icon to delete the connection.
@@ -70,7 +69,7 @@ Node connections are either made within the configuration of each node or by dra
 
 You can delete a node if you no longer require it.
 
-**To delete a node, follow these steps**:
+**Steps to delete a node**:
 
 * Right-click on the required node. A pop-up with a list of options is displayed.
 * Click **Delete** from the list of options and the node is deleted.
