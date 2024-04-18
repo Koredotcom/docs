@@ -71,7 +71,7 @@ The platform performs the assertions tagged to each VA response of a test case. 
 
 !!! note
 
-        The test case result is determined as Pass only when all the assertions of all the VA responses of the test case are passed.
+    The test case result is determined as Pass only when all the assertions of all the VA responses of the test case are passed.
 
 
 ## Past Test Executions

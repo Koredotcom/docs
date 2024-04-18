@@ -24,9 +24,9 @@ The **message** component includes the following details:
 
 
 ```
-curl --location 'https://bots.kore.ai/api/public/bot/st-f91ad74e-0f23-5f8f-909f-3a384b1c91b7/notify' \
+curl --location 'https://bots.kore.ai/api/public/bot/{{BotID}}/notify' \
 --header 'Content-Type: application/json' \
---header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy04NWU4Y2ZhNS04YjdiLTVjZmUtYWMxMC05ZTllYjc0YzcwMzIifQ.UEWnD_YLY1RjEGv2gdA5DNhzzn7vwf4FyhJ-XYt6ppQ' \
+--header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
 --data-raw '{
     "channel": "msteams",
     "userIdentityType": "resolve",

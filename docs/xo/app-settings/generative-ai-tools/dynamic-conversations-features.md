@@ -342,7 +342,7 @@ This feature leverages a Large Language Model (LLM) and Generative AI models fro
 
 
 
-![alt_text](images/dcf(4).png  )
+
 
 
 **Usage**
@@ -403,8 +403,8 @@ This feature sends all User Prompts, Error Prompts, and Bot Responses to the Gen
 
 
 
-![alt_text](images/dcf(1).gif  )
 
+<img src="../images/dcf(1).gif" alt="Rephrase Dialog Responses" title="Rephrase Dialog Responses" style="border: 1px solid gray; zoom:70%;">
 
 **Usage**
 
