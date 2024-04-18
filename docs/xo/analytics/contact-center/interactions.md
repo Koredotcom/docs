@@ -1,7 +1,6 @@
 # Interactions Dashboard
 
-
-Interactions store the bot interactions. You can use the logs to review your bot’s performance and troubleshoot issues with conversations. 
+Interactions store the bot interactions. You can use the logs to review your bot’s performance and troubleshoot issues with conversations.
 
 **To view the Interactions dashboard, follow the steps:**
 
@@ -10,7 +9,7 @@ Interactions store the bot interactions. You can use the logs to review your bot
 
     <img src="../images/navigation-interactions-report.png" alt="Navigation Interactions Report" title="Navigation Interactions Report" style="border: 1px solid gray; zoom:80%;">
 
-3. On this page, the following details of the logs are displayed in a table: 
+3. On this page, the following details of the logs are displayed in a table:
 
   * CUSTOMER: The contact who initiated the conversation.
      * Direction (Icon): The direction of the conversation –  Inbound or Outbound.
@@ -322,4 +321,3 @@ The following recording settings can be configured:
 !!! note
 
     If you enable the Pause/Resume Call Recording feature, the system does not record the duration of any paused voice interaction.
-

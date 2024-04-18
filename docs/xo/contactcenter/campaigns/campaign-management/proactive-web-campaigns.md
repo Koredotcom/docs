@@ -1,166 +1,11 @@
-# Campaign Management
-
-Outbound campaigns are reshaping how businesses connect with their audience. These campaigns proactively reach out to a curated list of individuals, following predefined rules. At the core of this process, calls are orchestrated based on the information available in a contact list. Outbound campaigns infuse a personalized touch by crafting scripts that shape the agent's interaction.
-
-You can access Campaigns by going to **Contact Center AI** > **Campaigns** > **Proactive Outreach** > **Campaign Management**.
-<img src="../images/campaigns-page-main.png" alt="Campaigns Main Page" title="Campaigns Main Page" style="border: 1px solid gray; zoom:100%;">
-
-On this page, the following details of the voice campaigns are shown in a table:
-<img src="../images/campaigns-top-panel.png" alt="Campaigns Table Top Panel" title="Campaigns Table Top Panel" style="border: 1px solid gray; zoom:100%;">
-
-* **Campaign** - Campaign name and Type.
-* **Actions** - Play/Pause/Replay, Stop, Edit, Clone campaign.
-* **Priority** - Priority of the campaign from 1 to 10 (1 being the lowest). The default priority is 1.
-* **Status** - Status of the campaign.
-    * **Ready**: When a manual campaign is saved and ready to run.
-    * **Active**: The campaign is started and running.
-    * **Paused**: The campaign is paused.
-    * **Rerun**: Rerun the campaign.
-    * **Completed**: The campaign has exhausted calling all numbers or the campaign has reached its scheduled end date.
-* **Progress** - Progress of the campaign. The count refreshes every 5 seconds.
-* **Contact List** - The call list that will be dialed.
-* **Connection** - The following details are displayed based on the dialer type:
-    * **Agentless dialer**- The Experience Flow name selected while creating or editing a campaign is shown. For example, Default Conversational Input voice Flow.
-
-    !!! Note
-    
-        The Campaigns module is only available on accounts configured with Kore Gateway. If an account is configured with AudioCodes or the mapped gateway is switched from AudioCodes to Kore Gateway, then the Campaigns module is unavailable. 
-
-The Campaigns module enables you to create **Voice** and **Proactive Web** campaigns.
-
-## Voice Campaigns
-
-### Create Voice Campaigns
-
-Steps to create Voice campaigns:
-
-1. On the **Voice** tab, click **+ New Campaign**.
-<img src="../images/new-campaign-button.png" alt="New Campaign Button" title="New Campaign Button" style="border: 1px solid gray; zoom:100%;">
-
-2. The **New Voice Campaign** dialog box is displayed. Under the **General** tab, enter the following details:
-    * **Campaign Name**: Enter a name for the campaign.
-    <img src="../images/campaign-name.png" alt="Campaign Name" title="Campaign Name" style="border: 1px solid gray; zoom:100%;">
-    * **Description**: A description of the campaign.
-    <img src="../images/description.png" alt="Campaign Description" title="Campaign Description" style="border: 1px solid gray; zoom:100%;">
-    * **Contact Lists**: Select the **Contact Lists** that will be dialed, for the campaign from the drop-down list and then click **Done**.
-    <img src="../images/contact-list.png" alt="Select Contact Lists" title="Select Contact Lists" style="border: 1px solid gray; zoom:100%;">
-    * Select the **DNC List** from the drop-down.
-    <img src="../images/dnc-list.png" alt="DNC List" title="DNC List" style="border: 1px solid gray; zoom:100%;">
-
-        !!! Notes
-
-            * Only 1 DNC list can be selected per campaign.
-            * The contact list is automatically scrubbed against the DNC list after the Campaign is saved.
-
-    * Select the **Priority** from the drop-down list.
-    <img src="../images/priority-list.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:100%;">
-    * Select the **Dialing Mode** from the drop-down list.
-    <img src="../images/dialing-mode.png" alt="Dialing Mode" title="Dialing Mode" style="border: 1px solid gray; zoom:100%;">
-
-3. Under the **Outreach Strategy** tab, enter the following details:
-    * **Caller ID**: Select the caller ID to be displayed for the campaign.
-    <img src="../images/caller-id.png" alt="Caller ID" title="Caller ID" style="border: 1px solid gray; zoom:100%;">
-    * **Dialing Order**: Choose the order of dialing the phone numbers.
-    <img src="../images/dialing-order.png" alt="Dialing Order" title="Dialing Order" style="border: 1px solid gray; zoom:100%;">
-    * **Max Attempts Per Contact**: Enter the count for the maximum number of attempts by the dialer to call each phone number in the campaign.
-    <img src="../images/max-attempts-per-contact.png" alt="Max Attempts Per Contact" title="Max Attempts Per Contact" style="border: 1px solid gray; zoom:100%;">
-    * **Default Retry Period**: Select the retry duration (in minutes) in case of an unsuccessful connection with a contact.
-    <img src="../images/default-retry-period.png" alt="Default Retry Period" title="Defult Retry Period" style="border: 1px solid gray; zoom:100%;">
-    * **Max Ring Time**: Select the duration (in seconds) that a call will ring until it is disconnected.
-    <img src="../images/max-ring-time.png" alt="Max Ring Time" title="Max Ring Time" style="border: 1px solid gray; zoom:100%;">
-    * **Contactable Timings**: Add the contactable timings (day of the week/time) when the dialer will dial the calls.
-    <img src="../images/contactable-timings.png" alt="Contactable Timings" title="Contactable Timings" style="border: 1px solid gray; zoom:100%;">
-
-        !!! Note
-
-            Calls will be dialed to contacts based on the calling hours and timezone configured here, irrespective of the campaign's start and stop time.
-
-4. Click **Save**. The campaign is created.
-
-#### Agentless Dialer
-
-Agentless Dialer maintains a queue of leads to be dialed and can automatically dial a new phone number. The dialer initiates an outbound call to the selected phone number and when a call is answered, the dialer connects the call to the configured voice experience flow. The dialer can detect answering machines or voicemail and reschedule the call by sending the call status to the campaign manager. If a call goes unanswered or reaches a voicemail with Answering Machine Detection (AMD) turned on, the dialer disconnects the call and automatically dials the following number on the list.
-
-Metrics and call statistics, such as the number of calls made, call duration, and call outcomes are generated for monitoring and reporting purposes.
-
-Campaign managers can customize the dialing pace, allowing them to set the number of simultaneous calls dialed at any time.
-
-To create a campaign when Agentless Dialing Mode is selected:
-
-* Select the **Start Flow** associated with the campaign. [Learn more](../../../flows/create-flows.md#the-start-flows).
-<img src="../images/start-flow.png" alt="Start Flow" title="Start Flow" style="border: 1px solid gray; zoom:100%;">
-
-    !!! Note
-
-        You can toggle on Answering Machine Detection if you want the system to determine whether the outbound call was received by an answering machine.
-
-### Edit a Voice Campaign
-
-Editing a voice campaign allows you to make changes to the campaign as per your needs.
-
-Steps to edit a campaign:
-
-1. Click the **Ellipsis** (**⋮**) icon beside the campaign name and click **Edit**.
-<img src="../images/edit-campaign-button.png" alt="Edit Campaign Button" title="Edit Campaign Button" style="border: 1px solid gray; zoom:100%;">
-
-2. A pop-up window is displayed. Do the required changes and click **Save**.
-<img src="../images/edit-campaign-window.png" alt="Edit and Save Campaign" title="Edit and save Campaign" style="border: 1px solid gray; zoom:100%;">
-
-    !!! Note
-
-        You cannot edit a campaign that in Active status. For campaigns in other statuses, you can edit limited fields.
-
-### Clone a Voice Campaign
-
-Cloning a voice campaign creates a replica of the original campaign. This is useful when two or more similar campaigns are run simultaneously.
-
-Steps to clone a campaign:
-
-1. Click the **Ellipsis** (**⋮**) icon beside the campaign name and click **Clone**.
-<img src="../images/clone-campaign.png" alt="Clone Campaign Button" title="Clone Campaign Button" style="border: 1px solid gray; zoom:100%;">
-2. A cloned copy of the original campaign is created.
-<img src="../images/cloned-campaigns.png" alt="Cloned Campaign" title="Cloned Campaign" style="border: 1px solid gray; zoom:100%;">
-
-### Stop a Voice Campaign
-
-Stopping a voice campaign resets the data, and a new instance of the campaign is created when you rerun the campaign.
-
-Steps to stop a campaign:
-
-1. Click the **Stop** button under **ACTIONS** for the campaign you want to stop.
-<img src="../images/stop-campaign-button.png" alt="Stop Campaign Button" title="Stop Campaign Button" style="border: 1px solid gray; zoom:100%;">
-
-2. A **Stop Campaign** confirmation pop-up window is displayed. Click **Stop**.
-<img src="../images/stop-campaign-confirmation.png" alt="Stop Campaign Confirmation" title="Stop Campaign Confirmation" style="border: 1px solid gray; zoom:100%;">
-
-### Delete a Voice Campaign
-
-You can delete a voice campaign if the campaign has served its purpose or is no longer required.
-
-Steps to delete a campaign:
-
-1. Click the **Ellipsis**(**⋮**) icon beside the campaign name and click **Delete**.
-<img src="../images/delete-campaign-button.png" alt="Delete Campaign Button" title="Delete Campaign Button" style="border: 1px solid gray; zoom:100%;">
-
-2. A **Delete Campaign** confirmation pop-up window is displayed. Click **Delete**.
-<img src="../images/delete-campaign-confirmation.png" alt="Delete Campaign Confirmation" title="Delete Campaign Confirmation" style="border: 1px solid gray; zoom:100%;">
-3. The campaign is deleted.
-
-### Run Voice Campaigns
-
-You can run a voice campaign by clicking the **Play** button.
-<img src="../images/run-campaign-button.png" alt="Run Campaign" title="Run Campaign" style="border: 1px solid gray; zoom:100%;">
-
-When the campaign runs, you can pause or stop it. You can also rerun a completed campaign.
-
-## Proactive Web Campaigns
+# Proactive Web Campaigns
 
 Web campaigns are online strategic initiatives to promote a product, service, cause, or brand. They harness the power of web engagement to reach and engage target audiences effectively. Their utility lies in their ability to amplify visibility, generate leads, foster brand awareness, and ultimately, achieve predefined objectives with precision and measurable outcomes.
 
 You can access the Proactive Web Campaigns by going to **Campaign Management** > **Proactive Web**.
 <img src="../images/campaign-management-page.png" alt="Proactive Web Page" title="Proactive Web" style="border: 1px solid gray; zoom:100%;">
 
-### Proactive Web Campaign Types
+## Proactive Web Campaign Types
 
 <table>
   <tr>
@@ -209,7 +54,7 @@ On this page, the following details of the web campaigns are shown in a table:
 * **Sent** -  The count of proactive messages sent to website visitors.
 * **Goals** - The count of campaign goals achieved.
 
-### Create Proactive Web Campaigns
+## Create Proactive Web Campaigns
 
 Creating proactive web campaigns involves strategizing and implementing initiatives to anticipate and address user needs before they arise, enhancing user experience and engagement. Campaign managers are crucial in orchestrating these efforts, utilizing data-driven insights and innovative techniques to craft compelling content and optimize campaign performance.
 
@@ -220,7 +65,7 @@ Steps to create a proactive web campaign:
 You can access the Proactive Web Campaigns by going to **Campaign Management** > **Proactive Web**.
 <img src="../images/new-campaign-button-proactive.png" alt="New Campaign Button" title="New Campaign Button" style="border: 1px solid gray; zoom:100%;">
 
-#### Chat
+### Chat
 
 1. On the **New Proactive Web Campaign** page, click **Chat**.
 <img src="../images/chat.png" alt="Chat Button" title="Chat Button" style="border: 1px solid gray; zoom:100%;">
@@ -272,8 +117,8 @@ The following options are available for the Actions:
 
         <img src="../images/rules.png" alt="Rules" title="Rules" style="border: 1px solid gray; zoom:100%;">            
 
-    3. **Goals**: The purpose is to provide clear objectives and measurable targets to guide the campaign's strategy and assess its effectiveness in achieving desired outcomes. Click the **+ Add Goal** button and select the goals
-<img src="../images/goal.png" alt="Goals" title="Goals" style="border: 1px solid gray; zoom:100%;">
+    3. **Goals**: The purpose is to provide clear objectives and measurable targets to guide the campaign's strategy and assess its effectiveness in achieving desired outcomes. Click the **+ Add Goal** button and select the goals.
+    <img src="../images/goal.png" alt="Goals" title="Goals" style="border: 1px solid gray; zoom:100%;">
 
     4. **Channel**: The purpose of channels in a web campaign is to designate a medium through which the campaign's message is disseminated, facilitating targeted outreach and engagement with the intended audience. Select the channel for the campaign from the dropdown.
     <img src="../images/channel-selected.png" alt="Channel" title="Channel" style="border: 1px solid gray; zoom:100%;">
@@ -285,36 +130,36 @@ The following options are available for the Actions:
 
 12. Click **Save**.
 
-#### Post
+### Post
 
 1. On the **New Proactive Web Campaign** page, click **Post**.
 <img src="../images/post.png" alt="Post Button" title="Post Button" style="border: 1px solid gray; zoom:100%;"> 
 
-2. Click the **General** tab, and enter the **Campaign Name** and **Description**. [Learn more](#create-proactive-web-campaigns).
+2. Click the **General** tab, and enter the **Campaign Name** and **Description**. Steps to add the name and description are same for all proactive web campaign types. [Learn more](#chat).
 3. Click the **Layout Design** tab. Click the **Edit** icon under **Message,** enter a message to be displayed, and click **Save**. You can use the options available in the editor to design the layout. Under **Appearance**, select the **Size**.
 <img src="../images/layout-design-post.png" alt="Layout Design Post" title="Layout Design Post" style="border: 1px solid gray; zoom:100%;"> 
 
-4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Goal**, **Channel**, and **Engagement Hours**. [Learn more](#create-proactive-web-campaigns).
+4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Goal**, **Channel**, and **Engagement Hours**. Steps to configure the engagement strategy are same for all proactive web campaign types. [Learn more](#chat).
 5. Click **Save**.
 
-#### Banner
+### Banner
 
 1. On the **New Proactive Web Campaign** page, click **Banner**.
 <img src="../images/banner.png" alt="Banner Button" title="Banner Button" style="border: 1px solid gray; zoom:100%;"> 
 
-2. Click the **General** tab, and enter the **Campaign Name** and **Description**. [Learn more](#create-proactive-web-campaigns).
+2. Click the **General** tab, and enter the **Campaign Name** and **Description**. Steps to add the name and description are same for all proactive web campaign types. [Learn more](#chat).
 3. Click the **Layout Design** tab. Click the **Edit** icon under **Message,** enter a message to be displayed, and click **Save**. You can use the options available in the editor to design the layout. Under **Appearance**, select the **Pattern** (**Sticky**/**Floating**), **Placement** (**Top**/**Bottom**), **Background**, and **Text Color**.
 <img src="../images/banner-layout design.png" alt="Layout Design Banner" title="Layout Design Banner" style="border: 1px solid gray; zoom:100%;"> 
 
-4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Goal**, **Channel**, and **Engagement Hours**. [Learn more](#create-proactive-web-campaigns).
+4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Goal**, **Channel**, and **Engagement Hours**. Steps to configure the engagement strategy are same for all proactive web campaign types. [Learn more](#chat).
 5. Click **Save**.
 
-#### Button
+### Button
 
 1. On the **New Proactive Web Campaign** page, click **Button**.
 <img src="../images/button.png" alt="Button" title="Button" style="border: 1px solid gray; zoom:100%;"> 
 
-2. Click the **General** tab, and enter the **Campaign Name** and **Description**. Learn more.
+2. Click the **General** tab, and enter the **Campaign Name** and **Description**. Steps to add the name and description are same for all proactive web campaign types. [Learn more](#chat).
 3. Click the **Layout Design** tab. Click the **Edit** icon on the right corner and do the following:
     1. Enter the **Text** that will be displayed on the button.
     2. Select the **Action** (Send to URL/Slide Out Message) to be performed when the button is clicked.
@@ -325,10 +170,10 @@ The following options are available for the Actions:
     7. Select the **Placement** of the button (Left/Right).
     <img src="../images/slide-out.gif" alt="Layout Design Button" title="Layout Design Button" style="border: 1px solid gray; zoom:100%;"> 
 
-4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Goal**, **Channel**, and **Engagement Hours**. [Learn more](#create-proactive-web-campaigns).
+4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Goal**, **Channel**, and **Engagement Hours**. Steps to configure the engagement strategy are same for all proactive web campaign types. [Learn more](#chat).
 5. Click **Save**.
 
-### Templates
+## Templates
 
 The purpose of using templates in web campaigns is to streamline and expedite the creation of consistent and visually appealing content. Templates provide a structured framework that enables you to easily plug in content elements, ensuring uniformity across various campaign materials. By using templates, marketers can save time, maintain brand coherence, and efficiently produce engaging content tailored to different platforms and audience segments. Additionally, templates facilitate collaboration among team members and allow for swift adjustments and iterations based on campaign performance and feedback. Overall, templates enhance productivity, brand consistency, and campaign effectiveness in the dynamic landscape of digital marketing.
 
