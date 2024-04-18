@@ -208,6 +208,10 @@ You can use this tab to define the input mode, grammar, prompts, and call behavi
 
 ### Connections Properties
 
+!!! Note
+
+    If the node is at the bottom in the sequence, then only the connection property is visible.
+
 From the node’s **Connections** tab, you can determine which node in the dialog task to execute next. You can write the conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions.
 
 !!! Note

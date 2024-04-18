@@ -802,7 +802,6 @@ The following steps guide you on how to run a batch test on your bot and get a d
 
     Before testing, it is essential to add and train your bot with a considerable number of utterances using Machine Learning.
 
-
 <img src="../images/batch-testing-14-batch-testing-menu.png" alt="Batch Testing" title="Batch Testing" style="border: 1px solid gray; zoom:50%;"/>
 
 To run a Test Suite, follow the steps below:
@@ -814,21 +813,49 @@ Note that **Developer Defined Utterances** and **Successful User Utterances** ar
 <img src="../images/batch-testing-15-run-test-suite-in-dev.png" alt="Run Test Suite" title="Run Test Suite" style="border: 1px solid gray; zoom:50%;"/> 
 
 
-
-
 #### Execution of Newly Created Batch Test Suites
 
 Once you create a new test batch test suite, by default, the system automatically initiates test run execution for both **_In-development_** and **_Published_** VA versions. This makes it convenient to assess test results while the VA is in development and once a VA is published following a production release.
 
-<img src="../images/batch-testing-16-batch-testing-run-publish.png" alt="Execution of Newly Created Batch Test Suites" title="Execution of Newly Created Batch Test Suites" style="border: 1px solid gray; zoom:50%;"/> 
+<img src="../images/batch-testing-16-batch-testing-run-publish.png" alt="Execution of Newly Created Batch Test Suites" title="Execution of Newly Created Batch Test Suites" style="border: 1px solid gray; zoom:75%;"/> 
 
+#### Add Notes and Comments to Batch Testing
+
+You can add notes or reasons to record the purpose or changes made for each test run when executing a batch test.
+
+**Steps to Add and Update a Batch Test Note**
+
+1. Click **Run Test Suite** to start batch test execution.
+<img src="../images/run-test-suite.png" alt="run test suite" title="run test suite" style="border: 1px solid gray; zoom:75%;">
+
+2. When a batch test is running or completed, click the **Notes** icon for the required test run. 
+<img src="../images/notes-icon-batch-test.png" alt="notes icon" title="notes icon" style="border: 1px solid gray; zoom:75%;">
+
+3. Type your comment in the text window. 
+
+**Add a New Note**
+
+Type your comments in the **Add Notes** pop-up window and click **Save**. 
+
+<img src="../images/add-notes-batch-test.png" alt="add notes for batch test" title="add notes for batch test" style="border: 1px solid gray; zoom:75%;">
+
+!!!note
+
+    You can add up to 1024 characters.
+
+**Update an Existing Note**
+
+Modify the text in the **Notes** window and click **Update**. 
+
+<img src="../images/update-batch-test-note.png" alt="update batch test note" title="update batch test note" style="border: 1px solid gray; zoom:75%;">
+
+After the test run is complete, you can click the **Notes** icon to view the new or updated comment.
 
 #### Cancel an Ongoing Batch Test Execution
 
 You can cancel an ongoing batch test execution in either **_Published_** or **_In-Development_** mode. This feature allows you to make changes, intervene, or start another batch test suite execution without waiting for the ongoing test run to complete.
 
 **Steps to Cancel an Ongoing Batch Test Execution:**
-
 
 1. Navigate to **Automation > Testing > Regression Testing**, select **Batch Testing** tab on the Bot Builder.
 2. When the required test suite is running, click the **Cancel** icon.  
@@ -949,7 +976,7 @@ The XO Platform now displays Batch Test Results for Universal bots for each test
 
 You can view the individual Batch Test Run summary of a test suite by clicking the **View Summary** icon of a test as shown below.
 
-<img src="../images/batch-testing-19-view-summary.png" alt="View Summary" title="View Summary" style="border: 1px solid gray; zoom:50%;"/> 
+<img src="../images/batch-testing-run-summary.png" alt="View Summary" title="View Summary" style="border: 1px solid gray; zoom:50%;"/> 
 
 
 This displays the relevant NLP and Flow Health metrics on the **Health and Monitoring** Dashboard for intents mapped to Dialogs, FAQs, and Traits. [Learn More](../health-and-monitoring/virtual-assistants-health-and-monitoring/#test-coverage){:target="_blank"}.

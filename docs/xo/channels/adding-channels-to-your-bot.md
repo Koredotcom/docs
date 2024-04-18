@@ -1,8 +1,8 @@
-# Channel Enablement
+# Enable Digital Channels
 
 By default, your Virtual Assistant is not available to users unless you define one or more channels through which it can communicate. So, after creating a Virtual Assistant, you can add delivery channels that end-users can use to access and interact with it when deployed. For example, you can enable your assistant for use in the Kore.ai Messaging application, or allow interaction with your VA through an email address or a _Twilio_ SMS account. You can also enable your VA in third-party applications such as _Facebook_ or _Slack_. This topic describes how to add one or more delivery channels to your VA.
 
-You can add channels to your VA from the **Channels & Flows > Channels > Digital > All** section. Channels supported by the Kore.ai XO Platform are categorized based upon their functionality and usage.
+You can add channels to your VA from the **Flows & Channels > Channels > Digital > All** section. Channels supported by the Kore.ai XO Platform are categorized based upon their functionality and usage.
 
 <img src="../images/digital-channels.png" alt="digital-channels" title="digital-channels" style="border: 1px solid gray; zoom:70%;">
 
@@ -11,7 +11,7 @@ You can add channels to your VA from the **Channels & Flows > Channels > Digital
 To enable one or more channels for your VA, follow the below steps:
 
 1. Open the assistant for which you want to add the channels.
-2. Go to **Channels & Flows** > **Channels** > **Digital** > **All**.
+2. Go to **Flows & Channels** > **Channels** > **Digital** > **All**.
 3. Click the channel you want to add. This opens the instructions page to install the channel.
 4. Click **Next** or the **Configuration** tab to open the configuration page for the channel. This image below shows the configuration page of the Skype for Business channel.  
 <img src="../images/channel-enablement-img2-instructions.png" alt="Channel Configuration page" title="Channel Configuration page" style="border: 1px solid gray; zoom:70%;">
@@ -22,9 +22,9 @@ To enable one or more channels for your VA, follow the below steps:
 
 ## Editing, Testing,  Disabling or Deleting Channels
 
-To **edit a channel** configuration, go to **Channels & Flows** > **Channels** > **Digital** > **Configured** list, the channel, make your changes and save.
+To **edit a channel** configuration, go to **Flows & Channels** > **Channels** > **Digital** > **Configured** list, the channel, make your changes and save.
 
-To **test**, **disable or delete the channel**, go to **Channels & Flows** > **Channels** > **Digital** > **Configured** list, hover over the channel and click more option in the top right corner. The Test, Disable, or Delete as required and follow the instructions.
+To **test**, **disable or delete the channel**, go to **Flows & Channels** > **Channels** > **Digital** > **Configured** list, hover over the channel and click more option in the top right corner. The Test, Disable, or Delete as required and follow the instructions.
 
 
 !!! Warning
@@ -45,265 +45,40 @@ Click the icon of the channel you want to add, and then configure the channel to
 
 ### Enterprise Channels
 
-<table style="table-layout: fixed; width: 100%;">
-  
-  <tr>
-   <td style="width:25%;"><a href="../add-cisco-jabber-channel" target="_blank">Cisco Jabber</a>
-   <br><br><br><br>
-   <a href="../add-cisco-jabber-channel" target="_blank"><img src="../images/logo1-jabber.png" width="50"></a>
-   </td>
 
-   <td style="width:25%;"><a href="../add-cisco-channel" target="_blank">Cisco Webex<br>Teams<br>(formerly<br>Cisco Spark)</a>
-   <br>
-   <a href="../add-cisco-channel" target="_blank"><img src="../images/logo2-cisco-webex-teams.png" width="50"></a>
-   </td>
+| [Cisco Jabber](./add-cisco-jabber-channel.md) <br><br> [![](./images/logo1-jabber.png)](./add-cisco-jabber-channel.md) | [Cisco Webex Teams<br>(formerly  Cisco Spark)](./add-cisco-channel.md)  <br>[![](./images/logo2-cisco-webex-teams.png)](./add-cisco-channel.md) | [Google Assistant](./add-google-assistant-channel.md) <br><br> [![](./images/logo4-google-assistant.png)](./add-google-assistant-channel.md)| [Genesys Cloud  <br>CX Messaging](./add-genesys-chat-channel.md)   <br> [![](./images/logo5-genesys-chat-new-logo.png)](./add-genesys-chat-channel.md)|
+|:---:|:---:|:---:|:---:|
+[**Google Business Messaging**](./add-google-business-messaging-channel.md)  <br>[![](./images/logo6-gbm.png)](./add-google-business-messaging-channel.md) | [**Google Chat**](./add-google-chat.md) <br> <br>[![](./images/logo7-google-chat.png)](./add-google-chat.md) | [**Kore.ai**](./add-kore-channel.md)  <br>  <br>[![](./images/logo8-kore-ai.png)](./add-kore-channel.md) | [**Live Person**](./add-live-person-channel.md) <br>  <br>[![](./images/logo9-live-person.png)](./add-live-person-channel.md)
 
-   <td style="width:25%;"><a href="../add-cisco-tropo-channel" target="_blank">Cisco Tropo</a>
-   <br><br><br><br>
-   <a href="../add-cisco-tropo-channel" target="_blank"><img src="../images/logo3-tropo.png" width="50"></a>
-   </td>
 
-   <td style="width:25%;"><a href="../add-google-assistant-channel" target="_blank">Google<br>Assistant</a>
-   <br><br><br>
-   <a href="../add-google-assistant-channel" target="_blank"><img src="../images/logo4-google-assistant.png" width="50"></a>
-   </td>
-   <td>
-   </td>
-  </tr>
 
-  <tr>
-   <td><a href="../add-genesys-chat-channel" target="_blank">Genesys Cloud<br>CX Messaging</a>
-   <br><br>
-   <a href="../add-genesys-chat-channel" target="_blank"><img src="../images/logo5-genesys-chat-new-logo.png" width="90"></a>
-   </td>
+|[Mattermost](./add-mattermost-channel.md)  <br>   <br>[![](./images/logo10-mattermost.png)](./add-mattermost-channel.md) | [Microsoft Teams](./add-microsoft-teams-channel.md)  <br>  <br>[![](./images/logo11-ms-teams.png)](./add-microsoft-teams-channel.md) | [Naver Works](./add-naver-works-channel.md)    <br>[![](./images/logo12-naver.png)](./add-naver-works-channel.md) | [Nice inContact](./add-nice-incontact-channel.md)   <br>  <br>[![](./images/logo13-nice.png)](./add-nice-incontact-channel.md) |
+|:---:|:---:|:---:|:---:|
+|[**RCS Business Messaging**](./add-google-rcs-channel.md)<br>  <br>[![](./images/logo14-rcs.png)](./add-google-rcs-channel.md)| [**Glip by RingCentral**](./add-ringcentral-glip-channel.md)  <br><br>[![](./images/logo15-glip.png)](./add-ringcentral-glip-channel.md) | [**RingCentral  Engage**](./add-ringcentral-engage-channel.md)   <br><br>[![](./images/logo16-ring-central.png)](./add-ringcentral-engage-channel.md) | [**Skype for Business**](./add-skype-business-channel.md)  <br> <br>[![](./images/logo17-skype-business.png)](./add-skype-business-channel.md) |
 
-   <td><a href="../add-google-business-messaging-channel" target="_blank">Google Business<br>Messaging</a>
-   <br>
-   <a href="../add-google-business-messaging-channel" target="_blank"><img src="../images/logo6-gbm.png" width="50"></a>
-   </td>
 
-   <td><a href="../add-google-chat" target="_blank">Google<br>Chat</a>
-   <br><br>  
-   <a href="../add-google-chat" target="_blank"><img src="../images/logo7-google-chat.png" width="50"></a>
-   </td>
+| [Slack](./add-slack-channel.md) <br>  <br>[![](./images/logo18-slack.png)](./add-slack-channel.md) | [Sunshine Conversations](./add-sunshine-conversations-channel.md)   <br><br>[![](./images/logo19-sunshine-conversations.png)](./add-sunshine-conversations-channel.md) | [Syniverse](./add-syniverse-channel.md)  <br>  <br>[![](./images/logo20-syniverse.png)](./add-syniverse-channel.md) | [Unblu](./add-unblu-channel.md)  <br>  <br>[![](./images/logo21-unblu.png)](./add-unblu-channel.md) |
+|:---:|:---:|:---:|:---:|
+| [**WhatsApp Business<br>Messaging**](./add-whatsapp-business-channel.md)  <br><br>[![](./images/logo22-whatsapp-business.png)](./add-whatsapp-business-channel.md) | [**Workplace By Facebook**](./add-workplace-by-facebook-channel.md) <br> <br>[![](./images/logo23-wp-facebook.png)](./add-workplace-by-facebook-channel.md) | [**Yammer**](./add-microsoft-yammer-channel.md) <br>  <br>[![](./images/logo24-yammer.png)](./add-microsoft-yammer-channel.md) | [**Zoom Contact Center**](./add-zoom-contact-center-channel) <br> <br>[![](./images/logo25-zoom.png)](./add-zoom-contact-center-channel.md) | 
 
-   <td><a href="../add-kore-channel" target="_blank">Kore.ai</a>
-   <br><br><br>  
-   <a href="../add-kore-channel" target="_blank"><img src="../images/logo8-kore-ai.png" width="50"></a>
-   </td>
 
-   <td><a href="../add-live-person-channel" target="_blank">Live Person</a>
-   <br><br>  
-   <a href="../add-live-person-channel" target="_blank"><img src="../images/logo9-live-person.png" width="50"></a>
-   </td>
-  </tr>
 
-  <tr>
-   <td><a href="../add-mattermost-channel" target="_blank">Mattermost</a>
-   <br><br><br>
-   <a href="../add-mattermost-channel" target="_blank"><img src="../images/logo10-mattermost.png" width="50"></a>
-   </td>
 
-   <td><a href="../add-microsoft-teams-channel" target="_blank">Microsoft Teams</a>
-   <br><br>
-   <a href="../add-microsoft-teams-channel" target="_blank"><img src="../images/logo11-ms-teams.png" width="50"></a>
-   </td>
 
-   <td><a href="../add-naver-works-channel" target="_blank">Naver Works</a>
-   <br><br><br>
-   <a href="../add-naver-works-channel" target="_blank"><img src="../images/logo12-naver.png" width="50"></a>
-   </td>
 
-   <td><a href="../add-nice-incontact-channel" target="_blank">Nice inContact</a>
-   <br><br><br>
-   <a href="../add-nice-incontact-channel" target="_blank"><img src="../images/logo13-nice.png" width="50"></a>
-   </td>
 
-   <td><a href="../add-google-rcs-channel" target="_blank">RCS Business<br>Messaging</a>
-   <br>
-   <a href="../add-google-rcs-channel" target="_blank"><img src="../images/logo14-rcs.png" width="50"></a>
-   </td>
-  </tr>
 
-  <tr>
-   <td><a href="../add-ringcentral-glip-channel" target="_blank">Glip by<br>RingCentral</a>
-   <br>
-   <a href="../add-ringcentral-glip-channel" target="_blank"><img src="../images/logo15-glip.png" width="50"></a>
-   </td>
-
-   <td><a href="../add-ringcentral-engage-channel" target="_blank">Ringcentral<br>Engage</a>
-   <br>
-   <a href="../add-ringcentral-engage-channel" target="_blank"><img src="../images/logo16-ring-central.png" width="50"></a>
-   </td>
-
-   <td><a href="../add-skype-business-channel" target="_blank">Skype for<br>Business</a>
-   <br>  
-   <a href="../add-skype-business-channel" target="_blank"><img src="../images/logo17-skype-business.png" width="50"></a>
-   </td>
-
-   <td><a href="../add-slack-channel" target="_blank">Slack</a>
-   <br><br>
-   <a href="../add-slack-channel" target="_blank"><img src="../images/logo18-slack.png" width="50"></a>
-   </td>
-
-   <td>
-   </td>
-  </tr>
-
-  <tr>
-   <td><a href="../add-sunshine-conversations-channel" target="_blank">Sunshine<br>Conversations</a>
-   <br><br>  
-   <a href="../add-sunshine-conversations-channel" target="_blank"><img src="../images/logo19-sunshine-conversations.png" width="65"></a>
-   </td>
-
-   <td><a href="../add-syniverse-channel" target="_blank">Syniverse</a>
-   <br><br><br>
-   <a href="../add-syniverse-channel" target="_blank"><img src="../images/logo20-syniverse.png" width="65"></a>
-   </td>
-
-   <td><a href="../add-unblu-channel" target="_blank">Unblu</a>
-   <br><br><br>
-   <a href="../add-unblu-channel" target="_blank"><img src="../images/logo21-unblu.png" width="50"></a>
-   </td>
-
-   <td><a href="../add-whatsapp-business-channel" target="_blank">WhatsApp<br>Business<br>Messaging</a>
-   <br>  
-   <a href="../add-whatsapp-business-channel" target="_blank"><img src="../images/logo22-whatsapp-business.png" width="50"></a>
-   </td>
-
-   <td>
-   </td>
-  </tr>
-  
-  <tr>
-   <td><a href="../add-workplace-by-facebook-channel" target="_blank">Workplace By<br>Facebook</a>
-   <br>
-   <a href="../add-workplace-by-facebook-channel" target="_blank"><img src="../images/logo23-wp-facebook.png" width="50"></a>
-   </td>
-
-   <td><a href="../add-microsoft-yammer-channel" target="_blank">Yammer</a>
-   <br><br>  
-   <a href="../add-microsoft-yammer-channel" target="_blank"><img src="../images/logo24-yammer.png" width="50"></a>
-   </td>
-
-   <td><a href="../add-zoom-contact-center-channel" target="_blank">Zoom Contact<br>Center</a>
-   <br>  
-   <a href="../add-zoom-contact-center-channel" target="_blank"><img src="../images/logo25-zoom.png" width="50"></a>
-   </td>
-
-   <td>
-   </td>
-
-   <td>
-   </td>
-  </tr>
-  
-</table>
 
 ### Social Channels
 
-<table style="table-layout:fixed; width:100%;">
-  <tr>
-   <td style="width:25%;"><a href="../add-facebook-messenger-channel" target="_blank">Facebook<br>Messenger</a>
-   <br>  
-   <a href="../add-facebook-messenger-channel" target="_blank"><img src="../images/logo26-fb-messenger.png" width="50"></a>
-   </td>
+|[Facebook<br>Messenger](./add-facebook-messenger-channel.md)     <br> [![](./images/logo26-fb-messenger.png)](./add-facebook-messenger-channel.md)|[Line](./add-line-messenger-channel.md) <br>  <br>   [![](./images/logo27-line.png)](./add-line-messenger-channel.md)|[Skype](./add-skype-channel.md) <br> <br>    [![](./images/logo28-skype.png)](./add-skype-channel.md)|[Twitter](./add-twitter-channel.md)<br><br>[![](./images/logo30-twitter.png)](./add-twitter-channel.md)|[Telegram](./add-telegram-channel.md)   <br>  <br> [![](./images/logo29-telegram.png)](./add-telegram-channel.md) |
+|:--------:|:----:|:----:|:----:|:----:|
+|[**WeChat**](./add-wechat-channel.md)   <br> <br>  [![](./images/logo31-we-chat.png)](./add-wechat-channel.md)|
 
-   <td style="width:25%;"><a href="../add-line-messenger-channel" target="_blank">Line</a>
-   <br><br>  
-   <a href="../add-line-messenger-channel" target="_blank"><img src="../images/logo27-line.png" width="50"></a>
-   </td>
 
-   <td style="width:25%;"><a href="../add-skype-business-onpemise-channel" target="_blank">Skype</a>
-   <br><br>  
-   <a href="../add-skype-business-onpemise-channel" target="_blank"><img src="../images/logo28-skype.png" width="50"></a>
-   </td>
-
-   <td style="width:25%;"><a href="../add-telegram-channel" target="_blank">Telegram</a>
-   <br><br>  
-   <a href="../add-telegram-channel" target="_blank"><img src="../images/logo29-telegram.png" width="50"></a>
-   </td>
-  </tr>
-
-  <tr>
-   <td><a href="../add-twitter-channel" target="_blank">Twitter</a>
-   <br>  
-   <a href="../add-twitter-channel" target="_blank"><img src="../images/logo30-twitter.png" width="50"></a>
-   </td>
-
-   <td><a href="../add-wechat-telegram" target="_blank">WeChat</a>
-   <br>  
-   <a href="../add-wechat-telegram" target="_blank"><img src="../images/logo31-we-chat.png" width="50"></a>
-   </td>
-
-   <td>
-   </td>
-
-   <td>
-   </td>
-  </tr>
-</table>
-
-### Voice Channels
-
-<table style="table-layout: fixed; width: 100%;">
- <tr>
-   <td style="width:20%;"><a href="../amazon-alexa" target="_blank">Amazon Alexa</a>
-   <br>
-   <a href="../amazon-alexa" target="_blank"><img src="../images/logo32-alexa.png" width="50"></a>
-   </td>
-
-   <td style="width:20%;"><a href="../ivr-audio-codes" target="_blank">IVR–AudioCodes</a>
-   <br>
-   <a href="../ivr-audio-codes" target="_blank"><img src="../images/logo33-audiocodes.png" width="50"></a>
-   </td>
-
-   <td style="width:20%;"><a href="../IVR-integration" target="_blank">IVR</a>
-   <br><br>
-   <a href="../IVR-integration" target="_blank"><img src="../images/logo34-ivr.png" width="50"></a>
-   </td>
-
-   <td style="width:20%;"><a href="../add-twilio-voice-channel" target="_blank">Twilio Voice</a>
-   <br><br>
-   <a href="../add-twilio-voice-channel" target="_blank"><img src="../images/logo35-twilio.png" width="50"></a>
-   </td>
-
-   <td style="width:20%;"><a href="../smart-assist-gateway" target="_blank">SmartAssist<br>Gateway</a>
-   <br>  
-   <a href="../smart-assist-gateway" target="_blank"><img src="../images/logo36-smart-assist.png" width="90"></a>
-   </td>
-  </tr>
-  
-</table>
 
 ### Other Channels
 
-<table style="table-layout: fixed; width: 100%;">
-<tr>
-   <td style="width:20%;"><a href="../add-email-channel" target="_blank">Email</a>
-   <br><br>
-   <a href="../add-email-channel" target="_blank"><img src="../images/logo37-email.png" width="50"></a>
-   </td>
-
-   <td style="width:20%;"><a href="../add-twilio-sms-channel" target="_blank">Twilio SMS</a>
-   <br>
-   <a href="../add-twilio-sms-channel" target="_blank"><img src="../images/logo35-twilio.png" width="50"></a>
-   </td>
-
-   <td style="width:20%;"><a href="../add-web-mobile-client" target="_blank">Web/Mobile<br>Client</a>
-   <br>
-   <a href="../add-web-mobile-client" target="_blank"><img src="../images/logo39-webmobile.png" width="50"></a>
-   </td>
-
-   <td style="width:20%;"><a href="../add-webhook-channel" target="_blank">Webhook</a>
-   <br><br>
-   <a href="../add-webhook-channel" target="_blank"><img src="../images/logo40-webhook.png" width="50"></a>
-   </td>
-
-   <td style="width:20%;"><a href="../add-widget-sdk-channel" target="_blank">Widget SDK</a>
-   <br>
-   <a href="../add-widget-sdk-channel" target="_blank"><img src="../images/logo39-webmobile.png" width="50"></a>
-   </td>
-  
-  </tr>
-</table>
+|[Email](./add-email-channel.md)<br>[![](./images/logo37-email.png)](./add-email-channel.md)|[Twilio SMS](./add-twilio-sms-channel.md)<br> [![](./images/logo35-twilio.png)](./add-twilio-sms-channel.md)|[Web/MobileClient](./add-web-mobile-client.md)<br> [![](./images/logo39-webmobile.png)](./add-web-mobile-client.md)|[Webhook](./add-webhook-channel.md)<br> [![](./images/logo40-webhook.png)](./add-webhook-channel.md)|
+|:---:|:---:|:---:|:---:|
+|[**Widget SDK**](./add-widget-sdk-channel.md)<br> [![](./images/logo39-webmobile.png)](./add-widget-sdk-channel.md)|

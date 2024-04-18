@@ -15,16 +15,16 @@ If you want to build a Multilingual VA, there are a few points to keep in mind:
   4. Translation can be automated using pre-built translation services from providers such as Microsoft or Google; or custom services, including any that you may build in-house. Read [here](../managing-translation-services/){:target="_blank"} to learn more.
 
 
-## The Conversation (Bot) Language
+## The Conversation (VA) Language
 
-Enabling a language requires you to train the model to understand the user’s input and present the responses in the user’s language. To achieve this, the platform allows you to choose a **Conversation (Bot) Language** and **NLU Language** for every language that you would like to enable. In most cases, the Conversation Language can be the same as the NLU Language.
+Enabling a language requires you to train the model to understand the user’s input and present the responses in the user’s language. To achieve this, the platform allows you to choose a **Conversation (VA) Language** and **NLU Language** for every language that you would like to enable. In most cases, the Conversation Language can be the same as the NLU Language.
 
 Conversation Language is the one that users use to interact with the assistant. You can choose any of the over 100 languages as the Conversation Language. You can define the responses (prompts, messages. etc.,) in the Conversation Language. 
 
 You can also use the automatic response translation feature when you or your team does not have expertise in the user’s language. You can write the responses in your preferred language and the platform will automatically translate them to the user’s language during the conversation. 
 
 
-### Supported Bot Languages
+### Supported VA Languages
 
 The following are the Conversation Languages supported by the Platform:
 
@@ -457,9 +457,11 @@ If the assistant fails to detect a user’s language with high confidence, it re
 
 1. The virtual assistant identifies user language from every utterance. In case a change is detected, it will get a confirmation from the user regarding the switch and will proceed as per the user response.  These standard responses can be customized using the getCurrentOptions utility, [see here for more](../../../apis/koreutil-libraries/#koreutilgetcurrentoptions){target="_blank"}.  
   
-    **Note:** The current conversation will be discarded in case the user wants to switch languages.
+    !!! Note
+    
+        The current conversation will be discarded in case the user wants to switch languages.
 
-2. Language selection settings – In addition, you may want to configure the language selection options. From the **App Settings** , click **Configurations -> Language Management** Under **Language Selection Logic** (scroll down for the option), for **language selection time frame**, set to one of the following:
+2. Language selection settings – In addition, you may want to configure the language selection options. From the **Settings** , click **Configurations -> Language Management**. Under **Language Selection Logic** (scroll down for the option), for **language selection time frame**, set to one of the following:
     1. **Lifetime**: The auto-detected language will be set as the user’s preferred language and used for all subsequent communications until the user interacts in another enabled language anytime later. If the user starts to talk in another enabled language, the virtual assistant changes to that language.
     2. **Per Session**: Detects the user’s language at the beginning of every session and responds accordingly.
     3. **Every User Message**: Identifies the user’s language from every utterance. In case a change is detected, the VA will get a confirmation from the user regarding the switch and proceed as per the user response.  

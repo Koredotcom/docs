@@ -11,14 +11,16 @@ This article explains how to authorize and enable the **Salesforce CRM** action 
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports OAuth 2.0 authentication to allow a Salesforce integration to exchange data. For more information, see [Setting Up Authorization Using OAuth v2](../../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2/){:target="_blank"} article. 
+The Kore.ai XO Platform supports OAuth 2.0 authentication to allow a Salesforce integration to exchange data. For more information, see [Setting Up Authorization Using OAuth v2](../../../dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2.md){:target="_blank"} article. 
 
 The Kore.ai XO Platform supports the following authorization types for the Salesforce CRM integration:
 
 * **Pre-Authorize the Integration** – To make the integration process smoother for developers and customers, you can pre-authorize it by providing the necessary authorization credentials to obtain the access token. 
 * **Allow Users to Authorize the Integration** – This method requires the end user to provide credentials during the conversation for authorization. This authorization process involves requesting permission for Kore.ai’s Salesforce app to access an access token at runtime.
 
-**NOTE**: The Salesforce CRM integration can be authorized only for the _Developer_ and _Enterprise_ editions because Rest API integration is enabled for these editions. You cannot authorize Salesforce’s _Trial_ edition. To learn more about Salesforce account types, see [Salesforce documentation](https://help.salesforce.com/s/articleView?id=sf.accounts.htm&type=5){:target="_blank"}.
+!!! note
+
+    The Salesforce CRM integration can be authorized only for the _Developer_ and _Enterprise_ editions because Rest API integration is enabled for these editions. You cannot authorize Salesforce’s _Trial_ edition. To learn more about Salesforce account types, see [Salesforce documentation](https://help.salesforce.com/s/articleView?id=sf.accounts.htm&type=5){:target="_blank"}.
 
 
 <table border="1">
@@ -61,9 +63,9 @@ Before enabling the Salesforce CRM actions, complete the following prerequisites
 
 Steps to enable the Salesforce action:
 
-1. Go to **Build > Integrations** and select the **Actions** menu item.
-2. Once you click the **Actions** menu, all integrations are shown in the **Available** region. Select the **Salesforce** action.  
-<img src="../images/salesforce-action-img1.png" alt="Actions - Salesforce" title="Actions - Salesforce" style="border: 1px solid gray;zoom:50%;"/>
+1. Go to **App Settings** > **Integrations** > **Actions**.
+2. Select the **Salesforce** action.  
+
 
 
 ### Pre-authorize the Integration
@@ -74,7 +76,7 @@ You can authorize the integration using developer credentials. The developer aut
 
 Steps to authorize a Salesforce action using developer credentials:
 
-1. Go to **Build > Integrations** and select the **Actions** menu item.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Select the **Salesforce** action in the **Available Actions** region.
 3. In the **Configurations** dialog, select the **Authorization** tab 
 4. **Authorization Type** – Select the **Pre-authorize the Integration** option, and then select the **_OAuth_** option.  
@@ -127,7 +129,9 @@ Steps to authorize a Salesforce action using developer credentials:
     * Click **Enable**. When you configure the action for the first time, the **Integration Successful**  pop-up is displayed.  
     <img src="../images/salesforce-action-img8.png" alt="Integration successful" title="Integration successful" style="border: 1px solid gray;zoom:50%;"/>
 
-**Note**: You will notice the Salesforce action is moved from _Available_ to _Configured_ region.
+!!! note
+
+    You will notice the Salesforce action is moved from _Available_ to _Configured_ region.
 
 
 ### Allow End User to Authorize
@@ -138,7 +142,7 @@ Steps to authorize a Salesforce action at a user level:
 
 
 
-1. Go to **Build > Integrations** and select the **Actions** menu item.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Select the **Salesforce** action in the **Available Actions** region.
 3. In the Configurations dialog, select the **Authorization** tab 
 4. **Authorization Type** – Select the **Allow Users to Authorize the Integration** option, and then select **_OAuth_** option.  

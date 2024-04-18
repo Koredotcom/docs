@@ -32,9 +32,8 @@ Complete the following steps to configure the ServiceNow agent for **Utah** and 
 
 1. Log in to the Kore.ai XO Platform: [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}
 2. Select a Virtual Assistant for which you want to configure the ServiceNow agent. 
-3. Navigate to **Build > Integrations > Agent Transfer** and click the **ServiceNow** button.
+3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** and click the **ServiceNow**.
 
-    <img src="../images/configuring-the-servicenow-agent-utah-and-vancouver-img1.png" alt="Agent Transfer - ServiceNow" title="Agent Transfer - ServiceNow" style="border: 1px solid gray;zoom=60%;">
 
 4. On the **Configurations** tab, select your preferred authentication option (Basic vs. OAuth) and then provide the details as explained in the options below.
 

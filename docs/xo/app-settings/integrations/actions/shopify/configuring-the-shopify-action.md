@@ -7,7 +7,7 @@ This document explains how to authorize and enable the Shopify action and instal
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow Shopify integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} article.
+The Kore.ai XO Platform supports basic authentication to allow Shopify integration to exchange data. For more information, read the [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the Shopify integration:
 
@@ -44,9 +44,8 @@ You can authorize the integration using your credentials. The developer authoriz
 
 Steps to authorize a Shopify action using developer credentials:
 
-1. Go to **Build > Integrations > Actions**.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Select the **Shopify** action in the Available Actions.  
-<img src="../images/shopify-action-img1.png" alt="Actions - Shopify" title="Actions - Shopify" style="border: 1px solid gray;zoom:50%;"/>
 
 3. In the **Configurations** dialog, select the **Authorization** tab.
 4. Enter the following details:
@@ -59,7 +58,9 @@ Steps to authorize a Shopify action using developer credentials:
 5. Click **Enable**. When you configure the action for the first time, the Integration Successful pop-up is displayed.  
 <img src="../images/shopify-action-img3.png" alt="Integration successful" title="Integration successful" style="border: 1px solid gray;zoom:50%;"/>
 
-**Note**: The Shopify action is moved from _Available_ to _Configured_ region.
+!!! note
+
+    The Shopify action is moved from _Available_ to _Configured_ region.
 
 
 ### Allow End User to Authorize
@@ -68,7 +69,7 @@ You can authorize the integration at a user level with their login credentials. 
 
 Steps to authorize a Shopify action at a user level:
 
-1. Go to **Build > Integrations > Actions** and select the **Shopify** action.
+1. Go to **App Settings** > **Integrations** > **Actions** and select the **Shopify** action.
 2. In the Configurations dialog, select the **Authorization** tab.
 3. Enter the following details:
 

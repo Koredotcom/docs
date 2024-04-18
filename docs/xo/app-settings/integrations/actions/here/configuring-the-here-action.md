@@ -7,7 +7,7 @@ This document explains how to authorize and enable the Here action and install t
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports API key authentication to allow Here integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} article.
+The Kore.ai XO Platform supports API key authentication to allow Here integration to exchange data. For more information, read the [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the Here integration:
 
@@ -34,9 +34,9 @@ You can authorize the integration using your credentials. The developer authoriz
 
 Steps to authorize an Here action using developer credentials:
 
-1. Go to **Build > Integrations > Actions**.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Select the **Here** from the list of **Available** actions.  
-<img src="../images/here-action-img1.png" alt="Available actions-Here" title="Available actions-Here" style="border: 1px solid gray;zoom:50%;"/>
+
 
 3. In the **Configurations** dialog, select the **Authorization** tab.
 4. Enter the following details:
@@ -47,9 +47,11 @@ Steps to authorize an Here action using developer credentials:
     <img src="../images/here-action-img3.png" alt="API key for Here account" title="API key for Here account" style="border: 1px solid gray;zoom:50%;"/>
 
 5. Click **Save**. When you configure the action for the first time, the Integration Successful pop-up is displayed.  
-<img src="../images/here-action-img4.png" alt="Save integration" title="Save integration" style="border: 1px solid gray;zoom:50%;"/>  
-  
-    The Here action is moved from _Available_ to _Configured_ region on the Actions page.
+<img src="../images/here-action-img4.png" alt="Save integration" title="Save integration" style="border: 1px solid gray;zoom:50%;"/>
+
+    !!! note
+
+        The Here action is moved from _Available_ to _Configured_ region on the Actions page.
 
 6. You can also click the **Skip for Now** button to install the Dialog Task templates later. To learn how to use action templates, read the [Using the Here action templates](../using-here-action-templates/){:target="_blank"} article.  
 <img src="../images/here-action-img5.png" alt="Skip for now" title="Skip for now" style="border: 1px solid gray;zoom:50%;"/>
@@ -61,7 +63,7 @@ You can authorize the integration at a user level with their login credentials. 
 
 Steps to authorize an Here action at a user level:
 
-1. Go to **Build > Integrations > Actions** and select the **Here** action.
+1. Go to **App Settings** > **Integrations** > **Actions** and select the **Here** action.
 2. In the Configurations dialog, select the **Authorization** tab.
 3. Enter the following details:
     1. **Authorization Type** – Select the **Allow Users to Authorize the Integration** option, and then select the **Basic Auth** option.

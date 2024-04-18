@@ -45,6 +45,7 @@ To create your own app, follow these steps:
 
     * Click **Manage Responses** to add custom messages in the push notification. To learn more about adding responses, see [Default Standard Responses](https://developer.kore.ai/docs/bots/bot-intelligence/default-standard-responses/) and [Default Conversations](https://developer.kore.ai/docs/bots/bot-intelligence/default-dialog/).
     <img src="../images/Web_Mobile3.png" alt="manage responses" title="manage responses" style="border: 1px solid gray; zoom:70%;">
+
 10. Click **Save** and then **Create**. The app registration details appear.
  <img src="../images/Web_Mobile4.png" alt="create web app" title="create web app" style="border: 1px solid gray; zoom:70%;">
 11. To copy the app registration details to the clipboard for your application, you can click **Copy** for **Bot Name**, **Bot ID**, and **Client ID**. For **Client Secret**, click **View**, and then click **Copy**.
@@ -57,7 +58,7 @@ To create your own app, follow these steps:
 
 The _Channel Information updated successfully_ message is displayed on the top-right of the page.
 
-Once enabled [click here](https://developer.kore.ai/docs/bots/sdks/kore-ai-web-sdk-tutorial/) for steps to integrate your bot into your web application.
+Once enabled [click here](../app-settings/dev-tools/kore-ai-web-sdk-tutorial.md) for steps to integrate your bot into your web application.
 
 
 ## Choose Deployment Options
@@ -89,8 +90,7 @@ To choose deployment options, follow these steps:
 To edit the Web/Mobile Client channel, follow the below steps:
 
 
-1. Hover over the channel to modify, and then click the **Settings** icon displayed to view the command menu, as shown in the screenshot below.
-<img src="../images/Web_Mobile9.png" alt="whitelist domains" title="whitelist domains" style="border: 1px solid gray;">
+1. You can edit, test, disable or delete the channel. [Learn more](adding-channels-to-your-bot.md#editing-testing-disabling-or-deleting-channels)
 
 2. Select one of the following commands to modify the channel:
   *  **Edit** – Click to open the Web/Mobile Client channel setup page.

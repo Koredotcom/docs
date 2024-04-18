@@ -95,7 +95,7 @@ Define the configuration rules for the **Skill Group** and **Skill** waiting que
 2. Click the row-wise **+Add** button to add a new row to the existing **Routing Rule** (OR) condition and the Delete icon to delete a row;
 3. Configure the **AND/OR** conditional logic by hovering over a rule row and toggling between the tabs, as shown in the demo below;
 4. To configure the _AND_ condition, click the **+ Add** button below the _OR/AND_ section;
-5. To remove a rule row, click the **Delete (ⓧ)** icon next to the row. To delete a rule section, click the **Delete (bin) **icon next to it.
+5. To remove a rule row, click the **Delete (ⓧ)** icon next to the row. To delete a rule section, click the **Delete (bin)** icon next to it.
 <img src="../images/routing-rules.gif" alt="Routing Rules" title="Routing Rules" style="border: 1px solid gray; zoom:80%;">
 
 Below is an example configuration for Routing Rules:
@@ -107,7 +107,7 @@ In this example, customers are mapped to a specific agent as follows:
 
 ### Call Experience
 
-To set the call waiting experience, click **Call Experience** for customers contacting you using the voice channel.
+To set the call waiting experience, click **Call Experience** for customers contacting you using the voice channel.  
 <img src="../images/call-experience.gif" alt="Call Experience" title="Call Experience" style="border: 1px solid gray; zoom:80%;">
 
 In the **Call Experience** page, configure the settings below:
@@ -127,9 +127,9 @@ This audio is played to the customers on hold. Select the audio you wish to play
 These messages are played periodically to the customers waiting in the queue or put on hold. To configure them, follow these steps:
 
 1. Set the number of seconds within which the periodic message should play;
-2. Set the play order as either _random _or _sequential_;
-3. Select the type of playback – either _once _or _looped_;
-4. Edit the message and change the language, as needed, by clicking one of the language options at the top of the editor. Click ✔ **Done** to save or click **x** **Close** to discard your changes;
+2. Set the play order as either _random_ or _sequential_;
+3. Select the type of playback – either _once_ or _looped_;
+4. Edit the message and change the language, as needed, by clicking one of the language options at the top of the editor. Click **✔** **Done** to save or click **x** **Close** to discard your changes;
 5. To add another message, click **+ Add Another**;
 6. To delete a message, click the **Delete** icon next to it.
 <img src="../images/periodic-messages.png" alt="Periodic Messages" title="Periodic Messages" style="border: 1px solid gray; zoom:80%;">
@@ -141,25 +141,16 @@ You can configure the following variables:
 * **Queue Wait Time**: {{queue.waitTime}} min
 * **Queue Position**: {{queue.position}}
 
-**Chat Deflection**
-
-You can configure the following _call to chat deflection_ when the wait time exceeds a set limit:
-
-1. **Enable** the option to activate it;
-2. Set the **digit key** that customers should press for deflection; then **set the time** after which the chat deflection should occur. For example, deflect from call to chat if the estimated wait time exceeds 3 minutes, and ask customers to press #7;
-3. **Edit the chat deflection message** in the textbox. Use the language tab to change languages. Click ✔ **Done** to save or click  **x** **Close** to discard your changes.
-<img src="../images/chat-deflection.png" alt="Chat Deflection" title="Chat Deflection" style="border: 1px solid gray; zoom:80%;">
-
-**CallBack Option** 
+#### CallBack Option
 
 If the wait time exceeds a set limit, you can offer or force a callback for waiting customers as follows:
 
 1. **Enable** the option to activate it;
 2. Set the **digit key** that customers should press to be redirected to the callback service. Waiting customers can either be offered or **forced** to receive a callback based on the settings configured here;
-3. **Edit the chat deflection message** in the textbox. Use the language tab to change languages. Click ✔ **Done** to save or click **x** **Close** to discard your changes.
+3. **Edit the chat deflection message** in the textbox. Use the language tab to change languages. Click **✔** **Done** to save or click **x** **Close** to discard your changes.
 <img src="../images/callback-option.png" alt="Call Back Option" title="Call Back Option" style="border: 1px solid gray; zoom:80%;">
 
-**Voicemail**
+#### Voicemail
 
 You can offer or force a voicemail for waiting customers in the following scenarios:
 
@@ -171,12 +162,12 @@ Steps to offer or force voicemail:
 
 1. **Enable** the option to activate it;
 2. Set the **digit key** that customers should press to be redirected to the voicemail service. Customers waiting in the queue can either be **offered** or **forced** to receive a callback based on the settings configured here;
-3. **Edit the message** in the textbox. Use the language tab to change languages. Click ✔ **Done** to save or click **x** **Close** to discard your changes.
+3. **Edit the message** in the textbox. Use the language tab to change languages. Click **✔** **Done** to save or click **x** **Close** to discard your changes.  
 <img src="../images/voicemail.png" alt="Voicemail" title="Voicemail" style="border: 1px solid gray; zoom:80%;">
 
 ### Chat Experience
 
-Click the **Chat Experience** tab to start configuring the waiting experience for customers contacting you via chat.
+Click the **Chat Experience** tab to start configuring the waiting experience for customers contacting you via chat.  
 <img src="../images/chat-experience.png" alt="Chat Experience" title="Chat Experience" style="border: 1px solid gray; zoom:80%;">
 
 In the Chat Experience section, you can configure the following settings:
@@ -185,8 +176,15 @@ In the Chat Experience section, you can configure the following settings:
 
 This message will be displayed to the contact waiting in the queue. By default, the initial message is enabled.
 
-To edit this message text and language, type your custom message in the textbox, and then select a language. Click ✔ **Done** to save or click **x** **Close** to discard your changes.
+To edit this message text and language, type your custom message in the textbox, and then select a language. Click **✔** **Done** to save or click **x** **Close** to discard your changes.
 <img src="../images/initial-message-chat.png" alt="Initial Message Chat" title="Initial Message Chat" style="border: 1px solid gray; zoom:80%;">
+
+#### Agent Transfers
+
+This message will be displayed when the customer is transferred to an agent or a queue. By default, agent transfers is enabled.
+
+To edit this message text and language, type your custom message in the textbox, and then select a language. Click **✔** **Done** to save or click **x** **Close** to discard your changes.
+<img src="../images/agent-transfers.png" alt="Initial Message Chat" title="Initial Message Chat" style="border: 1px solid gray; zoom:80%;">
 
 #### Periodic Messages
 

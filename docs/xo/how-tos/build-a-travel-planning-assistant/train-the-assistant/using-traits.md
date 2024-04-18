@@ -1,6 +1,6 @@
 # Travel VA: Using Traits
 
-In this post, we explore a scenario for a Travel Planning Assistant where traits are used to steer the conversation flow in a more natural and predictable direction. For details on what Traits are and how they are implemented in the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/traits/" target="_blank">here</a>. 
+In this post, we explore a scenario for a Travel Planning Assistant where traits are used to steer the conversation flow in a more natural and predictable direction. For details on what Traits are and how they are implemented in the XO Platform, click [here](/docs/xo/automation/natural-language/training/traits/){:target="_blank"}. 
 
 ## Problem Statement
 
@@ -31,26 +31,25 @@ We will be using Trait to steer the conversation to “Issue Resolution” when 
 
 **Steps to add a New Trait**
 
-1. Select **Build** tab from the top menu
-2. From **Natural Language** -> **Training** select the **Traits** tab.
-3. Click **Add New Trait** We will be using a trait to identify the existence of the word ‘issue’ in the user utterance.
+1. From **Natural Language** -> **Training** select the **Traits** tab.
+2. Click **Add New Trait** We will be using a trait to identify the existence of the word ‘issue’ in the user utterance.
     * Add a **Trait Type** as _Problem Statement_ and **Traits** as _issue_. A given Trait Type can have multiple Traits grouped together logically.
     * Optionally you can add utterances for Issues as _‘problem’, ‘unable to’_, and _‘not working’_. These are the alternate words that users might use to indicate an issue.
     <img src="../images/optional-add-utterance.png" alt="optionally add utterance" title="optionally add utterance" style="border: 1px solid gray; zoom:75%;">  
 
     * **Save & Add Rule**
-4. We will be defining the intent that needs to be triggered in the presence of this Issue trait.
+3. We will be defining the intent that needs to be triggered in the presence of this Issue trait.
     * **Select Intent** – _Issue Resolution_ to be triggered in the presence of this trait.
     * Add the **Trait Rules** – _issue_ as the trait that should trigger the above selected intent.
     <img src="../images/add-trait-rule.png" alt="add trait rule" title="add trait rule" style="border: 1px solid gray; zoom:75%;">  
 
     * **Save** the Trait Mapping.
 
-5. **Train** the Traits.
-6. Open the Issue Resolution Intent to see the Trait **Rules** under the **NLP** properties panel updated with the _issue_ trait.
+4. **Train** the Traits.
+5. Open the Issue Resolution Intent to see the Trait **Rules** under the **NLP** properties panel updated with the _issue_ trait.
 <img src="../images/issue-resolution-intent.png" alt="issue resolution intent" title="issue resolution intent" style="border: 1px solid gray; zoom:75%;">  
 
-7. **Talk to the Bot** and see the conversation flow. As you can see in the illustration below, rather than detect the _Make a Booking_ intent, the VA uses the Issue Resolution task to transfer the conversation to an agent. This is despite the fact that the user utterance contains the full _Make a Booking_ sentence. The VA picks up on the presence of an utterance which we have set up under the _Issue_ trait – the word _problem_ – and thus triggers the intent that we selected as the rule, rather than the other one.
+6. **Talk to the Bot** and see the conversation flow. As you can see in the illustration below, rather than detect the _Make a Booking_ intent, the VA uses the Issue Resolution task to transfer the conversation to an agent. This is despite the fact that the user utterance contains the full _Make a Booking_ sentence. The VA picks up on the presence of an utterance which we have set up under the _Issue_ trait – the word _problem_ – and thus triggers the intent that we selected as the rule, rather than the other one.
 <img src="../images/traits-talk-to-bot.png" alt="talk to bot" title="talk to bot" style="border: 1px solid gray; zoom:75%;">  
 
 ### Knowledge Intent using Traits

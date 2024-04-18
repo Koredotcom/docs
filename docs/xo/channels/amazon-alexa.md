@@ -106,8 +106,8 @@ The `AMAZON.SearchQuery` slot type helps capture less-predictable user utterance
 To configure a custom Interaction Model for the **SearchQuery** Slot Type, follow the steps below:
 
 
-1. Follow the sequence in Step 4 of [Dialog Migration to Extract the Dialog Tasks from Kore.ai](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-amazon-alexa-channel/#Dialog_Migration_to_Extract_the_Dialog_Tasks_from_Koreai).
-2. Create a new custom intent by following these [steps](https://developer.amazon.com/en-US/docs/alexa/custom-skills/create-intents-utterances-and-slots.html#create-intent).
+1. Follow the sequence in Step 4 of [Dialog Migration to Extract the Dialog Tasks from Kore.ai](#dialog-migration-to-extract-the-dialog-tasks-from-koreai).
+2. Create a new custom intent by following these [steps](#dialog-migration-to-extract-the-dialog-tasks-from-koreai).
 3. After writing a few utterances, pick the words or phrases representing variable information as the intent’s slots; For example, “_I would like to order two iPhones_.”
 4. Create a slot for each word or phrase and replace the original word with the slot name in curly brackets **({ })**.
 5. To create a slot, follow the steps below:
@@ -177,6 +177,7 @@ Before testing your assistant on **Alexa**, complete the channel setup with thes
 1. Click the **Configurations** in the Amazon Alexa window on the Kore.ai XO Platform.
 2. Select **Yes** for **Enable Channel**.
 3. Click **Save** to complete the configuration.
+![skill testing](../images/alexa-21.png "skill testing")
 
 ## Step 6: Test the Integration
 
@@ -184,10 +185,10 @@ Once done, test the utterance integration on the **Alexa Developer Console** usi
 
 1. Click the **Test** tab.
 2. Select **Development** for the **Skill testing is enabled in** option.
-![skill testing](../images/alexa-21.png "skill testing")
+![skill testing](../images/alexa-22.png "skill testing")
 
 3. Navigate to the **Alexa Simulator** section, type an intent utterance, and click enter.
-![alexa simulator](../images/alexa-22.png )
+![alexa simulator](../images/alexa-23.png )
 
 If you get a successful response, then the integration is considered a success.
 
@@ -198,7 +199,7 @@ To publish your Alexa Skill on the **Alexa App**, follow the steps below:
 
 1. Click the **Distribution** tab on the **Alexa Developer Console**.
 2. Click **Skill Preview**.
-![skill preview](../images/alexa-23.png "skill preview")
+![skill preview](../images/alexa-24.png "skill preview")
 3. Enter the values for the required fields.
 4. Click **Save and Continue**.
 
@@ -207,7 +208,7 @@ To publish your Alexa Skill on the **Alexa App**, follow the steps below:
 On Alexa, it’s important to set up your Privacy and Compliance information before building the model. To update **Privacy and Compliance** information, follow these steps:
 
 1. Click the **Distribution** tab. Then, click the **Privacy & Compliance** left menu option.
-![privacy compliance](../images/alexa-24.png "privacy compliance")
+![privacy compliance](../images/alexa-26.png "privacy compliance")
 2. Provide all the required details.
 3. Click **Save and Continue**.
 
@@ -218,7 +219,7 @@ You will be redirected to the **Availability** page to invite your co-developers
 1. Enable the **Beta Test** option if it’s disabled.
 2. Enter the required details.
 3. Click **Save and Continue**.
-![beta test](../images/alexa-26.png "beta test")
+![beta test](../images/alexa-27.png "beta test")
 
 
 ### Validation
@@ -227,13 +228,13 @@ The next step is to **validate your skills** for the model. After configuring **
 
 1. Review and complete any required fixes based on the details displayed for the issue.
 2. Click **Run** to validate your skill.
- ![validate skill](../images/alexa-27.png "validate skill")
+ ![validate skill](../images/alexa-28.png "validate skill")
 
 3. Upon successful validation, your skill will be visible under **Alexa Skills** on Amazon App Store.
- ![alexa skills](../images/alexa-28.png "alexa skills")
+ ![alexa skills](../images/alexa-29.png "alexa skills")
 
 4. Additionally, your **Skill Builder Checklist** will display green checks for all the options.
-![builder checklist](../images/alexa-29.png "builder checklist")
-5. After enabling the channel and verifying all the configurations, you can test the new channel integration by publishing your virtual assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
+![builder checklist](../images/alexa-30.png "builder checklist")
+5. After enabling the channel and verifying all the configurations, you can test the new channel integration by publishing your virtual assistant. [Learn more](../deploy/publishing-bot.md).
 
-To learn more about working with messaging channels within the Kore.ai XO Platform, please see[ Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)
+To learn more about working with messaging channels within the Kore.ai XO Platform, please see[ Channel Enablement.](../channels/adding-channels-to-your-bot.md)

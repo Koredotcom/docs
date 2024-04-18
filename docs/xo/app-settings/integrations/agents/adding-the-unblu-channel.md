@@ -24,7 +24,7 @@ A assistant should be created in your Unblu account for integrating it with your
 The Unblu Bot can be directly created from the Kore.ai XO Platform.
 
 1. Create or Open the assistant in the XO platform.
-2. Go to **Deploy > Channels** and select **Unblu**..
+2. Go to **App Settings** > **Integrations** > **Agent Transfer** and select **Unblu**..
 3. Proceed to the **Configurations tab** and provide the following details for creating an assistantin your Unblu account:
     1. **Unblu Host URL** -the URL of your Unblu application. For example, use [https://www.unblu.com/](https://www.unblu.com/){:target="_blank"} for the Unblu cloud.
     2. **Unblu Account Username** –Provide your Unblu account username.
@@ -253,7 +253,7 @@ There are multiple functionalities that can be achieved by the integration of Un
 * When mapping named area to a bot, _multiple named areas_ can be mapped. This way a single Kore.ai assistant has the ability to accept Unblu dialog offer requests from different origins like SDKs or namedAreas.
 * Also, the named area mapping is optional if you are enabling the Unblu channel for a single Kore.ai assistant. 
 * You can redirect user conversations to agents by adding an _agent transfer_ node in the dialog flow, note that you need not enable the Agent Transfer or BotKit specifically for this Channel. Having an agent transfer node is sufficient.
-* The user information for each message from Unblu is available in the `usercontext.customData` and you can use it for further processing. This information includes _deviceInfo_, _authInfo_, _joinedTime_ of the user. [See here for how to use context object](../../../../automation/use-cases/context-object){:target="_blank"}.
+* The user information for each message from Unblu is available in the `usercontext.customData` and you can use it for further processing. This information includes _deviceInfo_, _authInfo_, _joinedTime_ of the user. [See here for how to use context object](../../../automation/intelligence/context-object.md){:target="_blank"}.
 
 
 ## Using Unblu supported message templates

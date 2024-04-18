@@ -7,14 +7,14 @@ Using **Namespaces** you can categorize variables and map them to various compon
 [Learn more about Variables.](../variables/using-bot-variables/){:target="_blank"}
 
 
-# Enabling Namespaces
+## Enabling Namespaces
 
-You can enable namespaces by going to **App Settings > App Profile** Turn on the toggle, then confirm your choice to enable the feature.
+You can enable namespaces by going to **Automation AI > App Settings > App Profile** Turn on the toggle, then confirm your choice to enable the feature.
 
 <img src="../images/managing-namespace-img1.png" alt="Enable namespace" title="Enable namespace" style="border: 1px solid gray;zoom:70%;"/>
 
 
-# Implementation
+## Implementation
 
 Once the Variable Namespaces feature is enabled:
 
@@ -39,25 +39,22 @@ Once Variable Namespaces are mapped, the following steps are implemented by the 
 3. The same logic applies to Bot functions used within the tasks.
 
 
-# Creating Namespaces
+## Creating Namespaces
 
 When configuring a variable (environment or content), you have an option to **Add Namespace**. Use this option to create a namespace.
 
 <img src="../images/managing-namespace-img2.png" alt="Create namespace" title="Create namespace" style="border: 1px solid gray;zoom:70%;"/>
 
+## Editing
 
-# Editing
-
-You also have an option **to Manage Namespaces** from under **Build > Configurations > Environment/Content Variables**.
-
-<img src="../images/managing-namespace-img3.png" alt="Manage namespace" title="Manage namespace" style="border: 1px solid gray;zoom:70%;"/>
+You also have an option **to Manage Namespaces** from under **Automation AI > App Settings > Variables > Environment/Content Variables**.
 
 Use this option to **view, edit,** or **delete** namespaces. Deleting a namespace that is mapped to any component is restricted. You need to unmap the namespace from all associated components before deletion. As mentioned earlier, you cannot delete the default namespace.
 
 <img src="../images/managing-namespace-img4.png" alt="Namespace actions" title="Namespace actions" style="border: 1px solid gray;zoom:70%;"/>
 
 
-## Variable Mapping
+### Variable Mapping
 
 Once created, the namespace needs to be mapped to variables, tasks, and other components. This will ensure that only the variables that belong to the namespace mapped to a component would be loaded at the time of execution.
 
@@ -66,37 +63,38 @@ At the time of variable creation (environment and content), you can map the name
 <img src="../images/managing-namespace-img5.png" alt="Variable mapping" title="Variable mapping" style="border: 1px solid gray;zoom:70%;"/>
 
 
-## Components
+### Components
 
 All the components have a **Manage Variable Namespaces** action item which can be used to map the component with a particular namespace. Below is a list of places where you can find the **Manage Variable Namespaces** option:
 
 <img src="../images/managing-namespace-img6.png" alt="Manage variable namespace" title="EManage variable namespace" style="border: 1px solid gray;zoom:70%;"/> 
 
 
-### Nodes within Dialog Tasks
+#### Nodes within Dialog Tasks
 
 You can find the option under the Component Properties section of the node. You can choose to use the Variable Namespace associated with the task or customize it for the node. 
 
 <img src="../images/managing-namespace-img7.png" alt="Variable namespace option in Component properties" title="Variable namespace option in Component properties" style="border: 1px solid gray;zoom:70%;"/>
 
 
-### Knowledge Graph
+#### Knowledge Graph
 
-**Conversation Skills > Knowledge Graph > More Options** menu.
+Navigate to **Automation AI > Virtual Assistant > FAQs**. Click **Manage KG**.
+
+On the **Knowledge Graph** screen, click the 3-dot menu icon and select **Manage Variable Namespaces**.
 
 <img src="../images/managing-namespace-img8.png" alt="Knowledge graph" title="Knowledge graph" style="border: 1px solid gray;zoom:70%;"/>
 
 
-### Small Talk
+#### Small Talk
 
-**Conversation Skills > Small Talk > Group Settings** icon.
+Navigate to **Automation AI > Virtual Assistant > Small Talk**. Click the 3-dot menu icon on any of the groups.
 
 <img src="../images/managing-namespace-img9.png" alt="Small talk" title="Small talk" style="border: 1px solid gray;zoom:70%;"/>
 
 
-### Event Handlers
+#### Event Handlers
 
-**Intelligence > Event > More Options** menu.
+Navigate to **Automation AI > Virtual Assistant > Events**. Click the 3-dot menu icon.
 
-<img src="../images/managing-namespace-img10.png" alt="Event handlers" title="Event handlers" style="border: 1px solid gray;zoom:70%;"/>
-
+<img src="../images/managing-namespace-img10.gif" alt="Event handlers" title="Event handlers" style="border: 1px solid gray;zoom:70%;"/>

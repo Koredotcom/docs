@@ -75,7 +75,7 @@ This section is available in _Simple_ and _Advanced Routing_ modes and allows yo
 
 ## Assignments
 
-This section is available in _Simple_ and _Advanced Routing_ modes and allows you to assign agents, agent groups, or both to the queue.
+This section is available in _Simple_ and _Advanced Routing_ modes and allows you to assign agents, agent groups, or both to the queue.  
 <img src="../images/assignments.png" alt="Assignments" title="Assignments" style="border: 1px solid gray; zoom:70%;">
 
 ### Assign Agents
@@ -83,7 +83,7 @@ This section is available in _Simple_ and _Advanced Routing_ modes and allows yo
 Follow these steps to assign agents to a queue: 
 
 1. Click **Add Agent**;
-2. **Click the checkbox next to an agent’s name** to select it. You can use the _Search_ field at the top of the list to find a specific person.
+2. **Click the checkbox next to an agent’s name** to select it. You can use the _Search_ field at the top of the list to find a specific person.  
 <img src="../images/assign-agents.gif" alt="Assign Agents" title="Assign Agents" style="border: 1px solid gray; zoom:70%;">
 
 ### Assign Agent Groups
@@ -102,10 +102,10 @@ From the monitor screen, you can see the consolidated list of agents that are pa
 
 In the **Preferred** tab, you can assign preferred agents to the queue.
 
-1. Under **Preferred Agents**, find the agent you need in the list. You can use the _Search_ field for this purpose. Select the corresponding **Preferred** checkbox to set the agent as preferred.
+1. Under **Preferred Agents**, find the agent you need in the list. You can use the _Search_ field for this purpose. Select the corresponding **Preferred** checkbox to set the agent as preferred.  
 <img src="../images/preferred-agents.png" alt="Preferred Agents Tab" title="Preferred Agents Tab" style="border: 1px solid gray; zoom:70%;">
 
-2. Under **Advanced Settings**, configure the preferred agent timeout. During a preferred agent check, skills are ignored. If a preferred agent is not assigned and the preferred agent timeout expires, the check expands to the full agent list, and skills match to select the best available agent for the conversation.
+2. Under **Advanced Settings**, configure the preferred agent timeout. During a preferred agent check, skills are ignored. If a preferred agent is not assigned and the preferred agent timeout expires, the check expands to the full agent list, and skills match to select the best available agent for the conversation.  
 <img src="../images/advanced-settings.png" alt="Advanced Settings" title="Advanced Settings" style="border: 1px solid gray; zoom:70%;">
 
 ### Skills

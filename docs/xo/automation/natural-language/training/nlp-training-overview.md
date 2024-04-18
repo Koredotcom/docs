@@ -44,7 +44,7 @@ The XO Platform offers the following primary NLU engines for bot training and op
 * Traits Engine
 * Ranking and Resolver
 
-When do you use each engine? Each of these engines has settings and configurations for <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/nlp-training-overview/#nlp-optimization-within-the-xo-platform" target="_blank">Optimizing NLP to Improve VA Performance</a>. Here we will list out guidelines and scenarios to leverage each type of NLP engine.
+When do you use each engine? Each of these engines has settings and configurations for [Optimizing NLP to Improve VA Performance](/docs/xo/automation/natural-language/training/nlp-training-overview/#nlp-optimization-within-the-xo-platform){:target="_blank"}. Here we will list out guidelines and scenarios to leverage each type of NLP engine.
 
 ### Machine Learning Engine
 
@@ -54,22 +54,22 @@ If you have a large corpus for each intent that you are planning to implement, t
 
 The way you define a large corpus could differ depending on the intents. For example, if the intentions are very different from each other and can be understood using their sample data like “Find Flight” or “Change Sear“, then a corpus of 200-300 for each intent is sufficient. However, if intents are closer to each other (and usually start with a similar utterance, such as “Change Seat” and “Change Flight”, then the corpus should be in 1000s.
 
-Similarly, if you are planning to use Deep Neural Networks, you need a higher number of samples for better predictions of both True Positives and True Negatives, as these networks are data-hungry. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/" target="_blank">Learn more</a>.
+Similarly, if you are planning to use Deep Neural Networks, you need a higher number of samples for better predictions of both True Positives and True Negatives, as these networks are data-hungry. [Learn more](/docs/xo/automation/natural-language/training/machine-learning-engine/){:target="_blank"}.
 
 ### Knowledge Graph Engine
 
 If your intents are more query-like in nature than transactional tasks or if the content is in documents and you want the VA to answer user queries from documents, then use Knowledge Collection. This engine can also be used to trigger dialog tasks in response to user queries thus incorporating other features available within the XO Platform.
 
-If you have a lot of Intents and do not have time to prepare alternate utterances, but you are able to manually annotate some important terms, use Knowledge Collection. It is advisable to spend some time building a corpus and going for Machine Learning since annotation in the Knowledge Graph works in a similar way to ML’s auto-learning process. <a href="https://docsinternal-kore.github.io/docs/xo/answers/knowledge-ai/knowledge-graph-overview/" target="_blank">Learn more</a>.
+If you have a lot of Intents and do not have time to prepare alternate utterances, but you are able to manually annotate some important terms, use Knowledge Collection. It is advisable to spend some time building a corpus and going for Machine Learning since annotation in the Knowledge Graph works in a similar way to ML’s auto-learning process. [Learn more](/docs/xo/answers/knowledge-ai/knowledge-graph-overview/){:target="_blank"}.
 
 ### Fundamental Meaning Engine
 
-If you have cases where users employ idiomatic sentences or command-like sentences or if you are not too strict about some false positives then use the Fundamental Meaning (FM) engine. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/" target="_blank">Learn more</a>.
+If you have cases where users employ idiomatic sentences or command-like sentences or if you are not too strict about some false positives then use the Fundamental Meaning (FM) engine. [Learn more](/docs/xo/automation/natural-language/training/fundamental-meaning/){:target="_blank"}.
 
 ## NLP Optimization within the XO Platform
 
-To get started optimizing your VA’s NLP, you need to select the VA you’re working with, then access  **Build** > **Natural Language**. The NLP options are categorized under various headings for your convenience:
+To get started optimizing your VA’s NLP, you need to select the VA you’re working with, then access  **Natural Language**. The NLP options are categorized under various headings for your convenience:
 
 * **Training** – In the Training section, you can define how the NLP interpreter recognizes and responds to the user input for a VA, and then train the interpreter to recognize the correct user intent.
-* **Thresholds & Configurations** – In this section, you can define the recognition confidence levels required for minimum recognition actions, the confidence range for asking a user to choose from a list of possible matches, and a recognition confidence level for a positive match for the knowledge graph.
+* **Engine Tuning** – In this section, you can define the recognition confidence levels required for minimum recognition actions, the confidence range for asking a user to choose from a list of possible matches, and a recognition confidence level for a positive match for the knowledge graph.
 * Modify **Advanced Settings** like auto training settings for user utterances and negative intent patterns.

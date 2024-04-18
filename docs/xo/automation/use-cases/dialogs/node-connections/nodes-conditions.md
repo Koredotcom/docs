@@ -1,12 +1,12 @@
-# Adding IF-Else Conditions to Node Connections
+# Adding IF-Else Conditions to Sequence Connections
 
-When working with [Dialog Task nodes](../../node-types/nodes-transitions){:target="_blank"}, the Kore.ai XO Platform allows you to use If-Else conditions to configure node connections. You may want to use such conditions when you want the conversation to follow specific paths depending on specific information.
+The Kore.ai XO Platform allows you to use If-Else conditions to configure node connections. You may want to use such conditions when you want the conversation to follow specific paths depending on specific information.
 
-For example, if you are working with a travel Virtual Assistant and are setting up a _Book a Flight_ dialog task, you might want to provide a specific offer for group reservations. So, if during the conversation, the VA detects a certain number of passengers, you may want to direct the conversation to one path or another, depending on that number. Say for instance, if the passenger count is greater than 5, present the standard offer; else (otherwise) present a promotional offer.
+For example, if you are working with a travel Virtual Assistant and are setting up a _Book a Flight_ dialog task, you might want to provide a specific offer for group reservations. So, if during the conversation, the VA detects a certain number of passengers, you may want to direct the conversation to one path or another, depending on that number. Say for instance, if the passenger count is 5 or less, present the standard offer; otherwise present a promotional offer.
 
-This is a simple example – you can use the conditions feature to design complex conversation paths based on the criteria that suit your business.
+This is a simple example; you can use the conditions feature to design complex conversation paths based on the criteria that suit your business.
 
-This article, therefore, takes you to the options available within the XO Platform that allow you to configure node connection conditions.
+This article, therefore, takes you to the options available within the XO Platform that allow you to configure sequence connection conditions.
 
 
 ## Types of Conditions
@@ -24,15 +24,17 @@ For example, in the travel VA, you might want to present a group promotion if mo
 * **ELSE** connect to the next _Standard Flight Booking_ node. (If there are neither more than 5 passengers, nor is London the flight destination, then connect to the next node in the standard flight booking process.)
 
 
-## Navigate to Node Connection Conditions
+## Navigate to Sequence Connection Conditions
 
-Node connection conditions are available within the node configuration panel of all node types, under the **Connection Properties** tab.
+Sequence connection conditions are available within the node configuration panel of all node types, under the **Connection Properties** tab.
+
+!!! note
+
+    Connection properties are available **only for the bottommost node** of any sequence.
 
 Below is an example from the Entity node type.
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image1.png "image_tooltip")
+<img src="../images/node-conditions-connection-properties.png" alt="Connection Properties" title="Connection Properties" style="border:1px solid gray;zoom:70%;">
 
 
 ## Add _If / Else_ Connection Conditions
@@ -57,9 +59,7 @@ If these parameters are met, then the condition is successful and the node conne
 
 For example, _PassengerCount (entity) greater than (operator) 5 (specified value)._
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image2.png "image_tooltip")
+<img src="../images/node-conditions-entity-node-if.png" alt="Entity node - If condition" title="Entity node - If condition" style="border:1px solid gray;zoom:70%;">
 
 
 ### Context
@@ -76,9 +76,7 @@ If these parameters are met, then the condition is successful and the node conne
 
 For example, if the _Passenger Type_ (context object – entity) _equals to_(operator) _Infant_(value), then trigger a node that manages the booking process that is specific to infant passengers.
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image3.png "image_tooltip")
+<img src="../images/node-conditions-on-context.png" alt="Setting condition on context" title="Setting condition on context" style="border:1px solid gray;zoom:70%;">
 
 
 #### Add And/Or Logic
@@ -90,10 +88,7 @@ You can configure multiple context-based if conditions using and/or logic. Withi
 
 To add either an _AND_ or an _OR_ logical operator, click the corresponding button within the Context condition criterion.
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image4.png "image_tooltip")
-
+<img src="../images/node-conditions-on-context-and-or-logic.png" alt="Add And/Or logic in Context based condition" title="Add And/Or logic in Context based condition" style="border:1px solid gray;zoom:70%;">
 
 Once you do so, you will be able to add the next criterion that the condition should meet. You can add multiple AND/OR criteria by clicking +AND or +OR.
 
@@ -101,9 +96,7 @@ You can delete an existing AND/OR criterion by clicking the **“-”** sign on 
 
 For example: If the _Passenger Type_(context object – entity) _equals to_(operator) _Infant_(value) OR if _Passenger Age_(context object – entity) _is less than or equal to_(operator) _5_(value), then trigger the node that manages the booking process for infants.
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image5.png "image_tooltip")
+<img src="../images/node-conditions-on-context-and-or-logic-example.png" alt="Example - And/Or logic in Context based condition" title="Example - And/Or logic in Context based condition" style="border:1px solid gray;zoom:70%;">
 
 
 ### Intent
@@ -112,25 +105,19 @@ For Entity nodes, this criterion allows you to select a follow up intent that ma
 
 The _context.FollowupIntents_ parameter is preselected and you can choose to connect to a specific node if a followup intent exists or if it contains a specific value. If any of these is met, then the condition is successful and the connecting node you set in _Then go to_, is triggered.
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image6.png "image_tooltip")
+<img src="../images/node-conditions-follow-up-intent.png" alt="Select Follow-up intent" title="Select Follow-up intent" style="border:1px solid gray;zoom:70%;">
   
 
 For message nodes, you can either choose context.followupintent as described above, or select to wait for user input. Under the Equals dropdown, you can select which user input the VA should wait for before connecting to the node you set under _Then go to_.
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image7.png "image_tooltip")
+<img src="../images/node-conditions-follow-up-intent-wait-for-user-input.png" alt="Follow-up intent - Wait for User Input" title="Follow-up intent - Wait for User Input" style="border:1px solid gray;zoom:70%;">
 
 
 ### Delete Conditions
 
 If you no longer require a specific condition, you can hover over it and click the **bin icon** on the top right.
 
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image8.png "image_tooltip")
+<img src="../images/node-conditions-delete-condition.png" alt="Delete condition" title="Delete condition" style="border:1px solid gray;zoom:70%;">
 
 
 ## Node Type Applicability
