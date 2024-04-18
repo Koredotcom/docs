@@ -18,7 +18,7 @@
 
     * Click **Gen** **AI** from the bottom bar of the Agents page.
 
-    <img src="../images/add-a-new-gen-ai-node.png" alt="Add a New Gen AI Node" title="Add a New Gen AI Node" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-a-new-gen-ai-node.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
 
     The Gen AI node is created on the canvas and you can now define the node's properties by clicking on the node. You can drag and move a node to any location on the canvas.
 
@@ -26,4 +26,4 @@
 
         The start node is displayed by default on the flow builder.
 
-    <img src="../images/connect-start-to-gen-ai.png" alt="Connect Start to Gen AI" title="Connect Start to Gen AI" style="border: 1px solid gray; zoom:80%;">
+    <img src="../gen-ai-node/images/connect-start-to-gen-ai.png" alt="Connect Start to Gen AI" title="Connect Start to Gen AI" style="border: 1px solid gray; zoom:80%;">

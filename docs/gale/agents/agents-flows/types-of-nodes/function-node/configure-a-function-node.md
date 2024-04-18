@@ -18,7 +18,7 @@
 
 1. Enter a **script** in the script box. Context variables are available for you to use while writing the script.
 
-    <img src="../images/Enter a Script.png" alt="Enter a Script" title="Enter a Script" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/enter-a-script.png" alt="Enter a Script" title="Enter a Script" style="border: 1px solid gray; zoom:80%;">
 
 1. Click the **Copy** icon if you want to copy the code.
 2. Click the **Run** button to test the script. Once the script is resolved successfully, you will be able to see the results in the **Log** section of the **Edit Script** page. You can provide the input for the script node to execute in the **Input** section and the output of the script execution along with the variable generated is displayed in the **Output** section. You can debug the issues based on the log report and re-run the script.

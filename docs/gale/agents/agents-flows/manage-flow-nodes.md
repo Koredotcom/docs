@@ -23,7 +23,7 @@ You can rename and set a desired name of your preference.
 
 * Right-click on the required node. A pop-up with a list of options is displayed.
 
-    <img src="../images/Rename a Node.png" alt="Rename a Node" title="Rename a Node" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/rename-a-node.png" alt="Rename a Node" title="Rename a Node" style="border: 1px solid gray; zoom:80%;">
 
 * Click the **Rename** option from the list of options to modify the name.
 
@@ -36,7 +36,7 @@ To rearrange nodes on your canvas, drag and drop them to the desired location as
 
     Only the node that you are dragging will change position. Any connecting nodes will remain in place, regardless of the direction of their connection.
 
-<img src="../images/rearrange-a-node.png" alt="Rearrange a Node" title="Rearrange a Node" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/rearrange-a-node.gif" alt="Rearrange a Node" title="Rearrange a Node" style="border: 1px solid gray; zoom:80%;">
 
 !!! note
 
@@ -55,7 +55,7 @@ Node connections are either made within the configuration of each node or by dra
 3. A line is drawn between the nodes, with an arrow indicating the direction of the node connection.
 4. You can change the destination node by clicking the grey dot on top of the initial destination node and then dragging the connection line to the grey dot on top of the new destination node.
 
-    <img src="../images/connect-nodes.png" alt="Connect Nodes" title="Connect Nodes" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/connect-nodes.gif" alt="Connect Nodes" title="Connect Nodes" style="border: 1px solid gray; zoom:80%;">
 
 
 ### Delete a node connections
