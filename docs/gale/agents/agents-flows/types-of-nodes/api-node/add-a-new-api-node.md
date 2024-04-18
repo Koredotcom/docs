@@ -18,7 +18,7 @@
 
     * Click **API** from the bottom bar of the **Agents** page.
 
-    <img src="../images/add-a-new-api-node.png" alt="Add a New API Node" title="Add a New API Node" style="border: 1px solid gray; zoom:80%;">
+    <img src="../image/add-a-new-api-node.png" alt="Add a New API Node" title="Add a New API Node" style="border: 1px solid gray; zoom:80%;">
 
 
 The API node is created on the canvas, and you can now define the node's properties by clicking on the node. You can drag and move a node to any location on the canvas.
