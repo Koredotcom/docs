@@ -87,7 +87,7 @@ Campaign managers can customize the dialing pace, allowing them to set the numbe
 
 To create a campaign when Agentless Dialing Mode is selected:
 
-* Select the **Start Flow** associated with the campaign. Learn more.
+* Select the **Start Flow** associated with the campaign. [Learn more](../../../flows/introduction-to-flows.md).
 <img src="../images/start-flow.png" alt="Start Flow" title="Start Flow" style="border: 1px solid gray; zoom:100%;">
 
     !!! Note
