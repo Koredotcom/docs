@@ -1,4 +1,3 @@
-
 # Navigating the Kore.ai XO Platform
 
 This article takes you through the main sections and menu items you will be using while working with the XO Platform.
@@ -27,6 +26,7 @@ The top menu available on the landing page provides access to the following opti
     * **Log out**.
 
 ### The Apps List
+
 The Apps list is where you can find all the available apps being developed within your account. You can filter the apps by Pinned, Shared with me, My Apps, or All apps. Shared with me are the Apps shared with you for development by co-developers who are part of your organization’s account.
 Within this area, you can:
 
@@ -36,10 +36,9 @@ Within this area, you can:
 * Toggle between _Tile View_ or _List View_.
 * Create a new App or import an existing App.
 
-## Explore The XO Platform 
+## Explore The XO Platform
 
 The following sections describe the menu options that are available once you open any virtual assistant from your account.
-
 
 ### The Top Menu
 
@@ -63,114 +62,103 @@ All the actions available within the Kore.ai XO Platform can be accessed from th
 6. **Help** area, where you can access a comprehensive support section that will help you get started. There are links to learning tools and resources, as well as contextual help, which shows you valuable links and content, depending on where you are within the Platform. Please see [Help and Learning Resources](https://developer.kore.ai/docs/bots/chatbot-overview/help/) for details.
 7. **Switch Accounts**: If you are part of more than one account, then you can switch between them here.
 8. **Profile picture** to access your profile.
-9. **Test**: 
+9. **Test**:
 
 ### The Left Navigation Menu
 
-The Left Navigation Menu is different, depending on the section you select within the Top Menu. 
+The Left Navigation Menu is different, depending on the section you select.
 
 !!! note
 
-     You can pin a frequently used menu item to the top of the left menu using the pin icon, next to the corresponding menu item.
+     You can pin a frequently used menu item using the pin icon, next to the corresponding menu item.
 
+Here is what the Left Navigation Menu looks like within each section:
 
+**Setup guide**: This helps to Get Started. The user is required to take the key steps for getting the Contact Center up and running.
 
- 
+**Flows & Channels**: This section includes:
 
-Here is what the Left Navigation Menu looks like within each section of the builder:
+1. [Flows](../flows/create-flows.md):
+    1. Start Flows
+    2. Exit Flows
+2. Channels:
+    1. [Kore.ai Voice Gateway](../channels/kore.ai-voice-gateway/kore-voice-gateway.md)
+    2. [Third Party Voice](../channels/third-party-voice.md)
+    3. Digital
 
+<img src="../images/ntp(2).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
-#### **Build**
+**Virtual Assistant** This section includes:
 
-**[Summary](https://developer.kore.ai/docs/bots/analyzing-your-bot/dashboard/#Bot_Summary)** for a bird’s eye view of all the VA configuration and capabilities.
+1.  USE CASES
+    1. [Dialogs](../automation/use-cases/dialogs/managing-dialogs.md)a full conversational flow between a user and a VA
+    2. [Small Talk](../automation/use-cases/small-talk.md) - for the casual conversations that a VA can have with the end-users.
+    3. [Digital Skills-](../automation/use-cases/digital-skills/digital-skills-overview.md)
+        1. [Digital Forms](../automation/use-cases/digital-skills/digital-forms.md) – for an interactive User Interface for easy and efficient capture of all the information from the user will be ideal.
+        2. [Digital Views ](../automation/use-cases/digital-skills/digital-views.md) – to design interactive components, panels, and widgets, to proactively present relevant information to your customers.
+    4. [Feedback Survey](../manage-assistant/feedbacksurvey.md) - Gather feedback from customers by using our out of the box survey templates or push feedback against a survey using our public API experiences.
+1. [KNOWLEDGE AI](../automation/knowledge-ai/knowledge-ai-introduction.md)
+    5. [FAQs](../automation/knowledge-ai/manage-faqs.md) - FAQs allow you to add question-answer sets to your Knowledge Graph and map them to related ontology terms.
+2. Natural Language
+    6. [Training](../automation/natural-language/training/nlp-training-overview.md) - Train the intents, entities, synonyms, and traits of the Virtual Assistant.
+    7. [NLU Config](../automation/natural-language/training/machine-learning-engine.md) - Fine-tune intent and entity detection by customizing the Machine Learning, Fundamental Meaning, and Knowledge Graph models. Machine Learning, and Knowledge Graph models for each of the enabled languages.
+3. Conversation Intelligence
+    8. Event- Customize the user experience by defining the behavior of the Virtual Assistant
+    9. Conversation Management- Modify the standard responses the Virtual Assistant should use to handle common scenarios that occur during user interaction. Also, define how interruptions identified during ongoing task execution should be handled.
+4. Testing
+    10. [Utterance Testing](../automation/testing/testing-your-bot-with-nlp.md) - Test & Train your app to understand different user utterances and match them with intents and entities.
+    11. Regression Testing- A one-stop place to view the summary of test coverage, performance, and training recommendations. 
 
-**Conversation Skills** – basic tools for building your VA’s conversational skills:
+<img src="../images/ntp(3).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
-
-
-* [Storyboard](https://developer.kore.ai/docs/bots/bot-builder-tool/bot-creation/storyboard/) – an intuitive conversation designer and builder
-* [Dialog Tasks](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/dialog-tasks/) – a full conversational flow between a user and a VA
-* [Knowledge Graph](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/knowledge-ontology/) – to turn your static FAQ text into an intelligent, personalized conversational experience
-* [Small Talk](https://developer.kore.ai/docs/bots/bot-builder-tool/small-talk/) – for the casual conversations that a VA can have with the end-users.
-* [Alert Tasks](https://developer.kore.ai/docs/bots/bot-builder-tool/alert/notification-tasks/) – to deliver timely, relevant, and personalized information from enterprise systems to customers and employees
-
-**Digital Skills**
-
-
-
-* [Digital Forms](https://developer.kore.ai/docs/bots/bot-builder-tool/ui-forms/) – for an interactive User Interface for easy and efficient capture of all the information from the user will be ideal.
-* [Digital Views](https://developer.kore.ai/docs/bots/bot-builder-tool/digital-views/)  – to design interactive components, panels, and widgets, to proactively present relevant information to your customers
-
-**[Natural Language](https://developer.kore.ai/docs/bots/nlp/optimizing-bots/)** for all aspects related to VA training, and related settings. 
-
-**[Intelligence](https://developer.kore.ai/docs/bots/bot-intelligence/bot-intelligence/)** to handle nuances related to human conversations, including events, interruptions,  entity amendments, multi-intent detection, sentiment management, standard responses, etc.
-
-**Testing** to include[ Utterance Testing](https://developer.kore.ai/docs/bots/test-your-bot/testing-your-bot-with-nlp/),[ Batch Testing](https://developer.kore.ai/docs/bots/test-your-bot/batch-testing/batch-testing/) and[ Conversation Testing](https://developer.kore.ai/docs/bots/test-your-bot/conversation-testing/).
-
-**[Configurations](https://developer.kore.ai/docs/bots/bot-settings/general-settings/)**, including general settings, languages, functions, authorisations, variables, etc. 
-
-
-
-
-![alt_text](images/ntp(6).png "image_tooltip")
-
-
-
-#### **Deploy**
-
-The Deploy section is used to make the VA available to others. This section includes:
-
-
-
-1. **[Channels; ](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)**
-2. **[Publish](https://developer.kore.ai/docs/bots/publish/publishing-bot/)** – A quick-access option to take your VA live.
-3. **Integrations**, including:[ Agent Transfer](https://developer.kore.ai/docs/bots/how-tos/how-to-configure-agent-transfer/),[ Botkit](https://developer.kore.ai/docs/bots/sdks/using-the-botkit-sdk/),[ Web/Mobile SDK](https://developer.kore.ai/docs/bots/sdks/kore-ai-web-sdk-tutorial/), Apps and Scopes;
-4. **Bot Management**, including:[ Versioning, Import & Export, and Delete](https://developer.kore.ai/docs/bots/bot-settings/bot-management/bot-management-2/);
-5. **[Change Logs](https://developer.kore.ai/docs/process-apps/settings/change-logs/)** to track the changes being made to the VA.
-
-
-
-![alt_text](images/ntp(2).png "image_tooltip")
-
-
-
-#### **Analyze**
+**Analytics**
 
 This section is used to analyze and gain insight into your VA’s activity. It includes:
 
+1. **Overview**
+    1. [Summary](../analytics/overview/summary-dashboard.md) helps see a general overview of your VA’s activity.
+    2. [Conversations Dashboard](../analytics/overview/conversations-dashboard.md) to access conversation related statistics.
+    3. [Conversations History](../analytics/overview/conversations-history.md) to view conversation related statistics.
+    4. [Users Dashboard](../analytics/overview/users-dashboard.md) to monitor user activity within your VA.
+    5. [Feedback Dashboard](../analytics/overview/feedback-dashboard.md) to constantly monitor and analyze customer responses, feedback survey scores, and trends over a given period.
+2. **GEN AI ANALYTICS**
+    1. [Usage Logs](../analytics/genai-analytics/llm-usage-logs.md) to track the general usage of your VA.
+3. **VIRTUAL ASSISTANT**
+    1. [Performance Dashboard](../analytics/automation/performance-dashboard.md) to view statistics related to intent identification, goal completion, or successful API and script execution.
+    2. [Conversation Insights](../analytics/automation/conversation-insights.md) to simplify performance analysis by clustering utterances based on semantic meaning, streamlining intent identification, and saving time for app designers.
+    3. [NLP Insights](../analytics/automation/nlp-insights.md) to track intent detection and make appropriate corrections in the training model.
+    4. [Task Execution Logs](../analytics/automation/task-execution-logs.md) to gain in-depth insights into the task execution-related data and assess the virtual assistant’s performance in executing tasks.
+    5. [Custom Dashboards](../analytics/automation/custom-dashboard/introduction-to-custom-dashboard.md) to build your analytics and reports.
+    6. [Conversation Flows](../analytics/automation/conversation-flows.md) to visualize the journey of various VA-user interactions across conversation sessions in a given time period.
+<img src="../images/ntp(4).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
+**Deploy**
 
-1. **[Overview Dashboard](https://developer.kore.ai/docs/bots/analyzing-your-bot/overview-dashboard/)** that helps see a general overview of your VA’s activity.
-2. **[Conversation Dashboard](https://developer.kore.ai/docs/bots/analyzing-your-bot/conversations-dashboard/)** to access conversation related statistics.
-3. **[Users Dashboard](https://developer.kore.ai/docs/bots/analyzing-your-bot/users-dashboard/)** to monitor user activity within your VA.
-4. **[Performance Dashboard](https://developer.kore.ai/docs/bots/analyzing-your-bot/performance-dashboard/)** to view statistics related to intent identification, goal completion or successful API and script execution.
-5. **[Custom Dashboard](https://developer.kore.ai/docs/bots/analyzing-your-bot/custom-dashboard/)** to build your own analytics and reports
-6. **[NLP Insights](https://developer.kore.ai/docs/bots/analyzing-your-bot/bot-analysis/)** to track intent detection and make appropriate corrections in the training model.
-7. **[Conversation History](https://developer.kore.ai/docs/bots/analyzing-your-bot/conversation-history-dashboard/)** to view conversation related statistics.
-8. **[Conversation Flows](https://developer.kore.ai/docs/bots/analyzing-your-bot/conversation-flow/)** to visualize the journey of various VA-user interactions across conversation sessions in a given time period.
-9. **[Usage Metrics](https://developer.kore.ai/docs/bots/analyzing-your-bot/dashboard/#Usage_Metrics)** to track the general usage of your VA. 
-10. **[Containment Metrics](https://developer.kore.ai/docs/bots/analyzing-your-bot/dashboard/#Containment_Metrics)** for insights into how effectively customers are engaging with the VA vs. transferring to agents or dropping off.
+This section includes:
 
+1. Deploy Management
+    1. [Publish](../deploy/publishing-bot.md) – A quick-access option to take your VA live.
+    2. [App Version](../deploy/bot-versioning.md) – Create and manage versions of the Virtual Assistant definition, and restore to a previous version.
+    3. Import and Export – Import or export the current App definition as a JSON file.
+<img src="../images/ntp(6).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
+**App Settings**
 
-![alt_text](images/ntp(3).png "image_tooltip")
+1. Configuration - Manage generic App details, App languages, variables, advance settings, etc.
+    1. [App Profile](../app-settings/app-profile.md) - Manage generic App details like App Name, error codes, fallback module behaviour, and other settings.
+    2. [Language Management](../app-settings/language-management/managing-languages-for-multilingual-vas.md) - Manage the App languages that should be supported for Virtual Assistant Automation and Agent Supported languages.
+    3. [Integrations](../app-settings/integrations/actions/actions.md) - Pre-built integrations with business systems to securely exchange the data using auto-generated conversation flows for popular use cases.
+    4. [Generative AI Tools](../app-settings/generative-ai-tools/introduction.md) - Enable integration with LLM and Generative AI models, unlock new capabilities, and modify additional NLP settings such as auto training, negative patterns, prompt and request Library.
+    5. [Dev Tools](../app-settings/dev-tools/bot-authorization/bot-authentication.md) - Define custom script with reusable functions that can be invoked from anywhere in the Virtual Assistant.
+    6. [Variables](../app-settings/variables/using-bot-variables.md) - Use Environment variables to define reusable values and configurations that change from one environment to another.
+    7. [Advanced Settings](../app-settings/advanced-settings/pii-data-masking.md) - Define rules to handle PII data shared with your Virtual Assistant.
+    8. [Change Logs](../app-settings/change-logs.md) - Track the detailed log of the changes done to your App's Automation Module
+    9. [Delete Apps](../app-settings/delete-app.md) 
 
+<img src="../images/ntp(7).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
+**Marketplace**
 
-### Manage
+It is an online collection of templates that run on the Kore.ai XO Platform. It allows you to find predefined app templates that you can use to develop your  Virtual Assistant faster.
 
-
-##### This section provides access to the following:
-
-
-
-1. [Team](https://developer.kore.ai/docs/bots/advanced-topics/collaborative-development/sharing-bots-for-development/) </span>– to manage the team working on your VA,
-2. [Plan & usage details](https://developer.kore.ai/docs/bots/bot-settings/plan-usage/plans-overview/) – to view information about your plan and the way it’s being used,
-3. [Invoices](https://developer.kore.ai/docs/bots/bot-settings/plan-usage/invoices/) – access your invoices.
-
-
-
-
-
-![alt_text](images/ntp(4).png "image_tooltip")
-
+<img src="../images/ntp(8).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
