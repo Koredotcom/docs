@@ -1,6 +1,5 @@
 # Manage Agent's flow nodes
 
-
 ### Add a new node
 
 The Start node is the starting point of any flow and is available by default. You can drag and drop the Start node (as well as any other nodes) anywhere on the canvas.
@@ -48,7 +47,6 @@ To rearrange nodes on your canvas, drag and drop them to the desired location as
 Node connections are either made within the configuration of each node or by dragging and dropping the nodes on the canvas You can also connect nodes from the property panel of the node while defining the settings for success and failure. That will also automatically connect the nodes.
 
 **The steps are the following**:
-
 
 1. Click the grey dot that displays next to the node.
 2. Drag your cursor over the grey dot displayed on top of the connecting node and release.
