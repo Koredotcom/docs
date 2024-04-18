@@ -17,7 +17,7 @@
         <link rel="next" href="../../campaign-management/campaigns/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../images/kore_favicon.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
@@ -1490,7 +1490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../channels/amazon-alexa/" class="md-nav__link">
+      <a href="../../../../channels/kore.ai-voice-gateway/kore-voice-gateway/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4211,7 +4211,7 @@
         
   
   <span class="md-ellipsis">
-    Talk to Bot
+    Test (Talk to Bot)
   </span>
   
 
@@ -4310,7 +4310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../getting-started.md" class="md-nav__link">
+      <a href="../../../../automation/testing/regression-testing/batch-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4331,7 +4331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../getting-started.md" class="md-nav__link">
+      <a href="../../../../automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4936,16 +4936,85 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../searchai/introduction-to-answers/" class="md-nav__link">
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Getting Started
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../searchai/introduction-to-answers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Answers in Search AI
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../searchai/setup-search-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Search AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -12099,19 +12168,30 @@
 <li><strong>Campaign type</strong> - Agentless.</li>
 <li><strong>Progress</strong> - Progress of the campaign. For example: 3 of 10.</li>
 <li><strong>Status</strong> - Ready, Active, Paused, Rerun, or Completed.</li>
-<li><strong>Campaign Start Date and Time</strong> - Date and Time when the campaign started. For example: Started on Sep 29<sup>th</sup>, 2023 11:03 am
-<a class="glightbox" href="../images/campaign-details-dashboard.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/campaign-details-dashboard.png" alt="Campaign Details" title="Campaign Details" style="border: 1px solid gray; zoom:80%;"></a></li>
-</ol>
+<li>
+<p><strong>Campaign Start Date and Time</strong> - Date and Time when the campaign started. For example: Started on Sep 29<sup>th</sup>, 2023 11:03 am
+<a class="glightbox" href="../images/campaign-details-dashboard.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/campaign-details-dashboard.png" alt="Campaign Details" title="Campaign Details" style="border: 1px solid gray; zoom:80%;"></a></p>
 <p>Clicking any campaign displays detailed information related to the selected campaign.
 <a class="glightbox" href="../images/campaign-dashboard-detailed.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/campaign-dashboard-detailed.png" alt="Campaign Metrics" title="Campaign Metrics" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+</ol>
 <h2 id="agentless-dialer">Agentless Dialer<a class="headerlink" href="#agentless-dialer" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="../images/dashboard-agentless-dialer.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/dashboard-agentless-dialer.png" alt="Waiting Flows Page" title="Waiting Flows Page" style="border: 1px solid gray; zoom:80%;"></a></p>
 <h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h3>
 <p>This section displays the following information:</p>
+<ul>
+<li>
 <p><strong>Progress</strong> - Progress of the campaign.</p>
+</li>
+<li>
 <p><strong>Connected Calls</strong> - Count and percentage of connected calls.</p>
+</li>
+<li>
 <p><strong>Unconnected Calls</strong> - Count and percentage of unconnected calls, including calls that go into the retry state.</p>
+</li>
+<li>
 <p><strong>Avg. Call Duration</strong> - Average Duration of all the connected calls in the campaign.</p>
+</li>
+</ul>
 <h3 id="disposition">Disposition<a class="headerlink" href="#disposition" title="Permanent link">&para;</a></h3>
 <p>This section displays the following information:</p>
 <p><strong>Outbound Dialer System Disposition</strong> - The following dispositions are assigned by the dialer system:</p>

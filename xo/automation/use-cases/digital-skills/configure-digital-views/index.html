@@ -17,7 +17,7 @@
         <link rel="next" href="../../../knowledge-ai/knowledge-ai-introduction/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../images/kore_favicon.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
@@ -1490,7 +1490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../channels/amazon-alexa/" class="md-nav__link">
+      <a href="../../../../channels/kore.ai-voice-gateway/kore-voice-gateway/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2883,7 +2883,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Widgets Configuration">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#dialog-task-widgets" class="md-nav__link">
@@ -2891,6 +2892,11 @@
       Dialog Task Widgets
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -4376,7 +4382,7 @@
         
   
   <span class="md-ellipsis">
-    Talk to Bot
+    Test (Talk to Bot)
   </span>
   
 
@@ -4475,7 +4481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../getting-started.md" class="md-nav__link">
+      <a href="../../../testing/regression-testing/batch-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4496,7 +4502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../getting-started.md" class="md-nav__link">
+      <a href="../../../testing/regression-testing/conversation-testing/conversation-testing-landing-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5104,16 +5110,85 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../searchai/introduction-to-answers/" class="md-nav__link">
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Getting Started
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../searchai/introduction-to-answers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Answers in Search AI
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../searchai/setup-search-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Search AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -12150,7 +12225,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Widgets Configuration">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#dialog-task-widgets" class="md-nav__link">
@@ -12158,6 +12234,11 @@
       Dialog Task Widgets
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -12223,7 +12304,7 @@
 <h1 id="configure-digital-views">Configure Digital Views<a class="headerlink" href="#configure-digital-views" title="Permanent link">&para;</a></h1>
 <p>In this help document, we will explore how a user can view his/her account details using digital views. We will see how a Digital View can be presented using Panels and Widgets. Widgets can be used to trigger Dialog Tasks and display appropriate messages and Panel can be used to hold these Widgets.</p>
 <p>We will also see how the Panel can be hosted on Web/Mobile Client using the Widget SDK.</p>
-<p>For details on what Digital Views are and how it is implemented on the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-views/" target="_blank">here</a>.</p>
+<p>For details on what Digital Views are and how it is implemented on the XO Platform, click <a href="../digital-views/" target="_blank">here</a>.</p>
 <h2 id="illustration-with-an-example">Illustration with an Example<a class="headerlink" href="#illustration-with-an-example" title="Permanent link">&para;</a></h2>
 <p>Consider a Banking Bot trying to address the following scenarios:</p>
 <video src="../../images/bank-bot.mp4" controls="controls" style="max-width: 730px;">
@@ -12233,9 +12314,9 @@
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Bot building knowledge</li>
-<li>A <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">Banking Bot</a> with a dialog as mentioned below:</li>
+<li>A <a href="../../../../how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant" target="_blank">Banking Bot</a> with a <strong>Get Balance</strong> dialog as mentioned below.</li>
 <li>
-<p><a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-balance-task/" target="_blank">Get Balance</a> – Dialog task prompting the user for their Account Number and Account Type and displaying the available balance in the account.</p>
+<p><a href="../../../../how-tos/build-a-banking-assistant/design-conversation-skills/create-balance-task/" target="_blank">Get Balance</a> – Dialog task prompting the user for their Account Number and Account Type and displaying the available balance in the account.</p>
 <p><a class="glightbox" href="../../images/get-balance-dialog-task.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/get-balance-dialog-task.png" alt="get balance" title="get balance" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 </ul>
@@ -12264,16 +12345,17 @@
 </span></code></pre></div>
 <h3 id="widgets-configuration">Widgets Configuration<a class="headerlink" href="#widgets-configuration" title="Permanent link">&para;</a></h3>
 <p>You can configure the following widget types:</p>
-<h3 id="dialog-task-widgets">Dialog Task Widgets<a class="headerlink" href="#dialog-task-widgets" title="Permanent link">&para;</a></h3>
+<h4 id="dialog-task-widgets">Dialog Task Widgets<a class="headerlink" href="#dialog-task-widgets" title="Permanent link">&para;</a></h4>
 <p>We will be creating two Widgets to trigger a Dialog Task.</p>
 <p><strong>Current Account:</strong></p>
 <p>First, let us see how to configure a Widget to display balance from the current account of the user with the steps below:</p>
 <ol>
-<li>Ensure that <strong>Build</strong> is selected from the top menu.</li>
-<li>From under <strong>Digital Skills</strong> open <strong>Digital Views</strong>.</li>
+<li>Navigate to <strong>Virtual Assistant &gt; Automation AI &gt; Digital Skills &gt; Digital Views</strong>.</li>
 <li>Click the <strong>Create Widget</strong> button.</li>
 <li>Give a Widget Name and a Display Name.</li>
-<li>Set the <strong>Source</strong>, we are triggering Dialog Task, hence select <em>Dialog Task</em>.</li>
+<li>
+<p>Set the <strong>Source</strong>, we are triggering Dialog Task, hence select <em>Dialog Task</em>.</p>
+<ul>
 <li><strong>Select Dialog Task</strong> as <em>Get Balance</em>, as per our use case</li>
 <li>
 <p>In the <strong>Entity Assignment</strong>, set the following entities (you can select from the drop box that appears as you type) as per the Dialog Task requirement:</p>
@@ -12284,14 +12366,16 @@
 <p>You can use the <strong>Open Dialog Task</strong> icon, next to the select Dialog Task drop down, to open the dialog and check the entities needed.</p>
 <p><a class="glightbox" href="../../images/open-dialog-task.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/open-dialog-task.png" alt="open dialog task" title="open dialog task" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
+</ul>
+</li>
 <li>
 <p><strong>Save</strong> the widget.</p>
 </li>
 <li><strong>Edit</strong> the widget and click <strong>Run &amp; Preview</strong> to see the widget output.</li>
 <li><strong>Save as preview</strong> will set the output as the thumbnail against the widget.</li>
 </ol>
-<p><strong>Savings Account</strong>
-Repeat the above steps for Account View from <em>savings</em> account of the same account number. </p>
+<p><strong>Savings Account</strong></p>
+<p>Repeat the above steps for Account View from <em>savings</em> account of the same account number. </p>
 <p><a class="glightbox" href="../../images/account-view.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/account-view.png" alt="account view" title="account view" style="border: 1px solid gray; zoom:75%;"></a></p>
 <h3 id="panel-configuration">Panel Configuration<a class="headerlink" href="#panel-configuration" title="Permanent link">&para;</a></h3>
 <p>The Widgets thus created need to be attached to a Panel for runtime display and execution.</p>
@@ -12303,6 +12387,7 @@ Repeat the above steps for Account View from <em>savings</em> account of the sam
 </li>
 <li>
 <p>Click the <strong>Add Widget</strong> button to open the <strong>Panel Management</strong> window.</p>
+<p><a class="glightbox" href="../../images/panel-management.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/panel-management.png" alt="Panel Management - Add Widget" title="Panel Management - Add Widget" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 <li>
 <p>Use the <strong>Add Widget</strong> to select and add the Widgets that we want to display, in this case Account Balance and Current Account widgets.</p>
@@ -12326,38 +12411,38 @@ Repeat the above steps for Account View from <em>savings</em> account of the sam
 <p><a class="glightbox" href="../../images/new-widget-data-entry.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/new-widget-data-entry.png" alt="new widget data" title="new widget data" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 <li>
-<p>Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, click <a href="https://docsinternal-kore.github.io/docs/xo/channels/add-wigdet-sdk-channel/" target="_blank">here</a>. </p>
-</li>
-</ol>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{     &quot;templateType&quot;: &quot;piechart&quot;,
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>      &quot;pie_type&quot;: &quot;regular&quot;,
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>      &quot;title&quot;: &quot;Summary&quot;,
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>      &quot;description&quot;: &quot;monthly report&quot;,
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>      &quot;elements&quot;: [
+<p>Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, click <a href="../../../../channels/add-wigdet-sdk-channel/" target="_blank">here</a>. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{   &quot;templateType&quot;: &quot;piechart&quot;,
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    &quot;pie_type&quot;: &quot;regular&quot;,
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    &quot;title&quot;: &quot;Summary&quot;,
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    &quot;description&quot;: &quot;monthly report&quot;,
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    &quot;elements&quot;: [
 </span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>        {
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>          &quot;title&quot;: &quot;Airlines&quot;,
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>          &quot;value&quot;: &quot;1264.0&quot;,
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>          &quot;displayValue&quot;: &quot;$ 1,234&quot;
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>        &quot;title&quot;: &quot;Airlines&quot;,
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        &quot;value&quot;: &quot;1264.0&quot;,
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>        &quot;displayValue&quot;: &quot;$ 1,234&quot;
 </span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        },
 </span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        {
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>          &quot;title&quot;: &quot;Hotels&quot;,
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>          &quot;value&quot;: &quot;568.10&quot;,
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>          &quot;displayValue&quot;: &quot;$ 568&quot;
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        &quot;title&quot;: &quot;Hotels&quot;,
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>        &quot;value&quot;: &quot;568.10&quot;,
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>        &quot;displayValue&quot;: &quot;$ 568&quot;
 </span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>        },
 </span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>        {
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>          &quot;title&quot;: &quot;Food&quot;,
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>          &quot;value&quot;: &quot;324.50&quot;,
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>          &quot;displayValue&quot;: &quot;$ 324&quot;
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>        &quot;title&quot;: &quot;Food&quot;,
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>        &quot;value&quot;: &quot;324.50&quot;,
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>        &quot;displayValue&quot;: &quot;$ 324&quot;
 </span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>        }
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>      ]
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    ]
 </span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>    };
 </span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>print(JSON.stringify(message));
 </span></code></pre></div>
-<ol start="5"><li> Test the panel and you will see both the <b>Panel</b> icons.</li>
+<ul>
+<li>Test the panel and you will see both the <strong>Panel</strong> icons.</li>
 <li>Click on each to see them in action.</li>
-<a class="glightbox" href="../../images/test-panel.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/test-panel.png" alt="test panel" title="test panel" style="border: 1px solid gray; zoom:75%;"></a>
+</ul>
+<p><a class="glightbox" href="../../images/test-panel.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/test-panel.png" alt="test panel" title="test panel" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
 </ol>
-
 <h2 id="publish">Publish<a class="headerlink" href="#publish" title="Permanent link">&para;</a></h2>
 <p>To publish the Bot first enable channels:</p>
 <ol>
@@ -12367,13 +12452,15 @@ Repeat the above steps for Account View from <em>savings</em> account of the sam
 <li><strong>Proceed</strong> with the Publish.</li>
 </ol>
 <h2 id="hosting">Hosting<a class="headerlink" href="#hosting" title="Permanent link">&para;</a></h2>
-<p>We will be hosting the Panels in the web/mobile client. Click <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/kore-ai-web-sdk-tutorial/" target="_blank">here</a> for more details on the Widget SDK usage.</p>
+<p>We will be hosting the Panels in the web/mobile client. Click <a href="../../../../app-settings/dev-tools/kore-ai-web-sdk-tutorial/" target="_blank">here</a> for more details on the Widget SDK usage.</p>
 <ol>
 <li>Download the Kore.ai Widget SDK, go to this <a href="https://github.com/Koredotcom/web-kore-sdk" target="_blank">link</a>, and then click <strong>Download</strong>.</li>
 <li>Extract all files to the <em>…/SDKApp/sdk</em> folder.</li>
 <li>Open the above SDK folder, and traverse to <em>UI</em> folder.</li>
 <li>Open the <code>kore-config.js</code></li>
-<li>Configure your <code>botOptions</code> with the ‘<em>web/mobile client</em>’ channel configurations copied  in  above  section.<ul>
+<li>
+<p>Configure your <code>botOptions</code> with the ‘<em>web/mobile client</em>’ channel configurations copied  in  above  section.</p>
+<ul>
 <li><code>botOptions.botInfo</code></li>
 <li><code>botOptions.clientId</code></li>
 <li><code>botOptions.clientSecret</code></li>
@@ -12386,7 +12473,9 @@ Repeat the above steps for Account View from <em>savings</em> account of the sam
 <li>
 <p>Open the <code>kore-widgets-config.js</code></p>
 </li>
-<li>Configure your <code>botOptionsWiz</code> with the ‘<em>Widget SDK</em>’ channel configurations copied  in  above  section.<ul>
+<li>
+<p>Configure your <code>botOptionsWiz</code> with the ‘<em>Widget SDK</em>’ channel configurations copied  in  above  section.</p>
+<ul>
 <li><code>botOptionsWiz.botInfo</code></li>
 <li><code>botOptionsWiz.clientId</code></li>
 <li><code>botOptionsWiz.clientSecret</code></li>

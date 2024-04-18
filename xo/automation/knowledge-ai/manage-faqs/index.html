@@ -17,7 +17,7 @@
         <link rel="next" href="../knowledge-extraction/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../images/kore_favicon.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
@@ -1490,7 +1490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../channels/amazon-alexa/" class="md-nav__link">
+      <a href="../../../channels/kore.ai-voice-gateway/kore-voice-gateway/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4325,7 +4325,7 @@
         
   
   <span class="md-ellipsis">
-    Talk to Bot
+    Test (Talk to Bot)
   </span>
   
 
@@ -4424,7 +4424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started.md" class="md-nav__link">
+      <a href="../../testing/regression-testing/batch-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4445,7 +4445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started.md" class="md-nav__link">
+      <a href="../../testing/regression-testing/conversation-testing/conversation-testing-landing-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5053,16 +5053,85 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../searchai/introduction-to-answers/" class="md-nav__link">
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Getting Started
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../searchai/introduction-to-answers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Answers in Search AI
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../searchai/setup-search-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Search AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -12135,7 +12204,7 @@
 <h2 id="add-faqs">Add FAQs<a class="headerlink" href="#add-faqs" title="Permanent link">&para;</a></h2>
 <p>To add an FAQ, follow the below steps:</p>
 <ol>
-<li>On the left pane of the <strong>Knowledge Graph</strong> window, click the node to which you want to add questions.</li>
+<li>Go to <strong>Virtual Assistant</strong> &gt; <strong>Knowledge AI</strong> &gt; <strong>FAQs</strong> &gt; <strong>Manage KG</strong> and click the node to which you want to add questions.</li>
 <li>
 <p>Click <strong>Add Intent</strong> on the top-right.
 <a class="glightbox" href="../images/add-faq-intent.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-faq-intent.png" alt="add faq intent" title="add faq intent" style="border: 1px solid gray; zoom:75%;"></a></p>
@@ -12146,16 +12215,16 @@
 <li>(Optional) Enter a <strong>Display Name</strong> to represent the FAQ to the end-users.</li>
 <li>In the <strong>Add Question</strong> field, enter the question that describes the user’s query.</li>
 <li>(Optional) If there are alternatives to the same question, add them in the <strong>Add Alternate FAQ</strong> field. Repeat the step for all the alternative questions you want to add.</li>
-<li>(Optional) Use patterns to define the FAQs. This can be done by preceding the pattern with || (two vertical bars) in the alternate question field. The Platform marks these as patterns and evaluates them accordingly. <a href=" https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/" target="_blank">Learn more</a>.</li>
+<li>(Optional) Use patterns to define the FAQs. This can be done by preceding the pattern with || (two vertical bars) in the alternate question field. The Platform marks these as patterns and evaluates them accordingly. <a href="../../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/" target="_blank">Learn more</a>.</li>
 <li>(Optional) Add terms that enable the Knowledge Graph Engine to identify questions more effectively.</li>
 <li>(Optional) Enable or disable the <strong>Intent Status</strong> for the FAQ intents. The Knowledge Graph does not use the FAQs intents that are enabled. These intents do not participate in the intent recognition process during testing and end-user interaction.</li>
 <li>(Optional) Enable or disable the <strong>Term Status</strong>. The Knowledge Graph uses only the enabled terms. The disabled terms and all their FAQ intents do not participate in the intent recognition process during testing and end-user interaction.</li>
 <li>(Optional) Add a <strong>Reference Id</strong>. This field is used to reference any external content used as a source for this FAQ.
 <a class="glightbox" href="../images/add-faq-form.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-faq-form.png" alt="add faq form" title="add faq form" style="border: 1px solid gray; zoom:75%;"></a></li>
 </ol>
-<p>As you enter these questions, pay attention to terms that you can further add to your FAQ hierarchy. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-terminology/#terms-or-nodes" target="_blank">Learn more</a>.</p>
+<p>As you enter these questions, pay attention to terms that you can further add to your FAQ hierarchy. <a href="../knowledge-graph-terminology/">Learn more</a>.</p>
 <h2 id="manage-bot-responses">Manage Bot Responses<a class="headerlink" href="#manage-bot-responses" title="Permanent link">&para;</a></h2>
-<p>For the FAQ Response, you can compose a simple or complex channel-specific reply. The editor is like any other prompt editor on the Platform, for example, messages for dialog nodes. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/prompt-editor/#prompt-editor" target="_blank">Learn more</a>.</p>
+<p>For the FAQ Response, you can compose a simple or complex channel-specific reply. The editor is like any other prompt editor on the Platform, for example, messages for dialog nodes. <a href="../../use-cases/dialogs/prompt-editor/#prompt-editor" target="_blank">Learn more</a>.</p>
 <p>You can add channel-specific responses to questions in your Knowledge Graph. By creating varying responses with different language and formatting options, you can leverage the dynamic responses on the selected channels. </p>
 <p>To add a channel-specific response, select the channel from the channels list before typing the response.</p>
 <div class="admonition note">
@@ -12177,9 +12246,9 @@
 <p>When the Knowledge Graph you are trying to build is large and complex, it's important to have all the FAQs in one place and Import or Extract them as required. </p>
 <p>Adding FAQs from an existing source is the most effective method to implement in this case. The different ways to accomplish this include the following:</p>
 <ul>
-<li>Use the Knowledge Graph Generator to generate Knowledge Graph from a FAQ list and import it to your VA. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/generate-a-knowledge-graph/" target="_blank">Learn more</a>.</li>
-<li>Select the <strong>Import</strong> option to import a Knowledge Graph exported from another VA. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/import-and-export-knowledge-graph/#import" target="_blank">Learn more</a>.</li>
-<li>Leverage an existing list of Q&amp;As from <strong>Knowledge Extraction</strong> to populate the Questions and Responses. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-extraction/" target="_blank">Learn more</a>.</li>
+<li>Use the Knowledge Graph Generator to generate Knowledge Graph from a FAQ list and import it to your VA. <a href="../generate-a-knowledge-graph/" target="_blank">Learn more</a>.</li>
+<li>Select the <strong>Import</strong> option to import a Knowledge Graph exported from another VA. <a href="../import-and-export-knowledge-graph/#import" target="_blank">Learn more</a>.</li>
+<li>Leverage an existing list of Q&amp;As from <strong>Knowledge Extraction</strong> to populate the Questions and Responses. <a href="../knowledge-extraction/" target="_blank">Learn more</a>.</li>
 </ul>
 <h2 id="move-faqs-between-nodes">Move FAQs Between Nodes<a class="headerlink" href="#move-faqs-between-nodes" title="Permanent link">&para;</a></h2>
 <p>You can move one or more Questions and Response sets between nodes in your Knowledge Graph, with the steps below:</p>

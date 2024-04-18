@@ -13,7 +13,7 @@
       
       
       
-      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../images/kore_favicon.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
@@ -1484,7 +1484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../channels/amazon-alexa/" class="md-nav__link">
+      <a href="../../../../../channels/kore.ai-voice-gateway/kore-voice-gateway/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4205,7 +4205,7 @@
         
   
   <span class="md-ellipsis">
-    Talk to Bot
+    Test (Talk to Bot)
   </span>
   
 
@@ -4304,7 +4304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../getting-started.md" class="md-nav__link">
+      <a href="../../batch-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4325,7 +4325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../getting-started.md" class="md-nav__link">
+      <a href="../conversation-testing-landing-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4930,16 +4930,85 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../searchai/introduction-to-answers/" class="md-nav__link">
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Getting Started
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../searchai/introduction-to-answers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Answers in Search AI
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../searchai/setup-search-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Search AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -12040,12 +12109,15 @@
 <li>
 <p>This section shows the summary on the right side of the Test Suite panel:</p>
 <ul>
-<li><strong>Expected Response</strong>: Contains all possible responses/variations with the annotated dynamic values.  </li>
-</ul>
+<li>
+<p><strong>Expected Response</strong>: Contains all possible responses/variations with the annotated dynamic values.  </p>
 <p><a class="glightbox" href="../images/tca-img2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/tca-img2.png" alt="Text Assertion" title="Text Assertion" style="border: 1px solid gray;zoom:50%;"/></a>  </p>
-<p>!!! note</p>
-<div class="language-text highlight"><pre><span></span><code>  In case of text assertion, if the expected output has dynamic values, then it should be annotated using [Dynamic Text Marking](#dynamic-text-marking). If not marked, the text assertion fails and eventually leads to failure of the test case. For the test case to pass, the text for that specific output must be dynamically marked.
-</code></pre></div>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In case of text assertion, if the expected output has dynamic values, then it should be annotated using <a href="#dynamic-text-marking">Dynamic Text Marking</a>. If not marked, the text assertion fails and eventually leads to failure of the test case. For the test case to pass, the text for that specific output must be dynamically marked.  </p>
+</div>
 </li>
 </ul>
 <p>For example, in the following test case, the city name entered by the user can be different every time. It is marked as dynamic for that specific test case to pass.<br />
@@ -12085,18 +12157,20 @@ If the VA response is from a <strong>FAQ</strong> or <strong>Small Talk or Stand
 <p>During test execution, the annotated portion of the text is ignored by the platform for text assertion. You can view all the added annotations of VA’s responses and be able to remove them.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<div class="language-text highlight"><pre><span></span><code>Even if the value of the specific marked text is different, the test cases are marked as a success during execution. This feature is handy when different values are expected every time you interact with the bot.
-</code></pre></div>
+<p>Even if the value of the specific marked text is different, the test cases are marked as a success during execution. This feature is handy when different values are expected every time you interact with the bot.</p>
 </div>
 <p>The following steps explain the dynamic text marking with an example:</p>
 <ol>
 <li>Click any Test Suite on the Conversation Testing page.</li>
 <li>In the <strong>Test Editor</strong> tab, navigate to the <strong>Test Suite Details</strong> Panel.</li>
 <li>
-<p>In the <strong>Test Suite Details</strong> panel, select a text in the <strong>Expected Output</strong> for a test case and click the Dynamic Marker icon (see the following screenshots).<br />
-<a class="glightbox" href="../images/tca-img8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/tca-img8.png" alt="Test suite details-Expected output" title="Test suite details-Expected output" style="border: 1px solid gray;zoom:50%;"/></a>  </p>
+<p>In the <strong>Test Suite Details</strong> panel, select a text in the <strong>Expected Output</strong> for a test case and click the Dynamic Marker icon (see the following screenshots).</p>
+<p><a class="glightbox" href="../images/tca-img8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/tca-img8.png" alt="Test suite details-Expected output" title="Test suite details-Expected output" style="border: 1px solid gray;zoom:50%;"/></a>  </p>
 <p><a class="glightbox" href="../images/tca-img9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/tca-img9.png" alt="Clicked Dynamic marker" title="Clicked Dynamic marker" style="border: 1px solid gray;zoom:50%;"/></a>  </p>
-<p><strong>Note:</strong> The selected state variable in the Expected Output is annotated and highlighted in blue. One or multiple words can be marked as dynamic text.  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The selected state variable in the Expected Output is annotated and highlighted in blue. One or multiple words can be marked as dynamic text.  </p>
+</div>
 </li>
 <li>
 <p>You can again click the Dynamic Marker icon to deselect the text and remove the dynamic marking.</p>
@@ -12131,8 +12205,7 @@ If the VA response is from a <strong>FAQ</strong> or <strong>Small Talk or Stand
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<div class="language-text highlight"><pre><span></span><code>If you delete the node transition in a particular intent, then such transitions are displayed as Not Valid in the Coverage Status column.
-</code></pre></div>
+<p>If you delete the node transition in a particular intent, then such transitions are displayed as Not Valid in the Coverage Status column.</p>
 </div>
 <p><strong>Intent Coverage</strong></p>
 <p>All the intents and their transition coverage details are displayed in this section.  </p>
@@ -12154,12 +12227,12 @@ If the VA response is from a <strong>FAQ</strong> or <strong>Small Talk or Stand
 <p><a class="glightbox" href="../images/tca-img14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/tca-img14.png" alt="Node Transitions" title="Node Transitions" style="border: 1px solid gray;zoom:50%;"/></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<div class="language-text highlight"><pre><span></span><code>A transition must have one of the following three values displayed in the Coverage Status column:
-
-  - Covered  
-  - Not Covered  
-  - Not Valid
-</code></pre></div>
+<p>A transition must have one of the following three values displayed in the Coverage Status column:</p>
+<ul>
+<li>Covered  </li>
+<li>Not Covered  </li>
+<li>Not Valid</li>
+</ul>
 </div>
 <p>You can sort, search, and filter the data for all the columns in the Intent coverage grid.  </p>
 <p><a class="glightbox" href="../images/tca-img15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/tca-img15.png" alt="Intent Coverage Operations" title="Intent Coverage Operations" style="border: 1px solid gray;zoom:50%;"/></a></p>
@@ -12176,8 +12249,7 @@ If the VA response is from a <strong>FAQ</strong> or <strong>Small Talk or Stand
 <p><a class="glightbox" href="../images/tca-img17.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/tca-img17.png" alt="Small talk" title="Small talk" style="border: 1px solid gray;zoom:50%;"/></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<div class="language-text highlight"><pre><span></span><code>You can filter and sort the details displayed in the Small Talks grid.
-</code></pre></div>
+<p>You can filter and sort the details displayed in the Small Talks grid.</p>
 </div>
 <p>On the main page, the Test Suite is marked as <strong>Passed</strong> only when all the test cases are passed; else, it is marked as <strong>Failed</strong>.</p>
 

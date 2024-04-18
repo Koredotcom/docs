@@ -17,7 +17,7 @@
         <link rel="next" href="../../dev-tools/reusing-bot-functions-custom-script-file/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../images/kore_favicon.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
@@ -1492,7 +1492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../channels/amazon-alexa/" class="md-nav__link">
+      <a href="../../../channels/kore.ai-voice-gateway/kore-voice-gateway/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4213,7 +4213,7 @@
         
   
   <span class="md-ellipsis">
-    Talk to Bot
+    Test (Talk to Bot)
   </span>
   
 
@@ -4312,7 +4312,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started.md" class="md-nav__link">
+      <a href="../../../automation/testing/regression-testing/batch-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4333,7 +4333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started.md" class="md-nav__link">
+      <a href="../../../automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4938,16 +4938,85 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../searchai/introduction-to-answers/" class="md-nav__link">
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Getting Started
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../searchai/introduction-to-answers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Answers in Search AI
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../searchai/setup-search-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Search AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -12525,7 +12594,6 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 <p>When this feature is disabled, the node is unavailable within the Dialog Builder.<a href="../../../automation/use-cases/dialogs/node-types/genai-node/"> Learn more</a>.</p>
 <h3 id="answer-from-documents">Answer From Documents<a class="headerlink" href="#answer-from-documents" title="Permanent link">&para;</a></h3>
 <p>This feature leverages a Large Language Model (LLM) and Generative AI models from OpenAI to generate answers for FAQs by processing uploaded documents in an unstructured PDF format and user queries.</p>
-<p><a class="glightbox" href="../images/dcf%284%29.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt_text" src="../images/dcf%284%29.png" /></a></p>
 <p><strong>Usage</strong></p>
 <p>After redacting personally identifiable information, the uploaded documents and the end-user queries are shared with OpenAI to curate the answers.</p>
 <p>Once you meet the prerequisites and enable the feature:</p>
@@ -12572,7 +12640,7 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 <p>If this feature is disabled, you cannot configure the ML model to build custom prompts using OpenAI for different use cases.<a href="../../../automation/use-cases/dialogs/node-types/genai-prompt/"> Learn more</a>.</p>
 <h3 id="rephrase-dialog-responses">Rephrase Dialog Responses<a class="headerlink" href="#rephrase-dialog-responses" title="Permanent link">&para;</a></h3>
 <p>This feature sends all User Prompts, Error Prompts, and Bot Responses to the Generative AI along with the conversation context, which depends on the configured number of user inputs. Responses are rephrased in English or the selected Non-English Bot Language based on the context and user emotion, providing a more empathetic, natural, and contextual conversation experience to the end-user. You can give instructions (additional instructions) in English or any other bot language you select.</p>
-<p><a class="glightbox" href="../images/dcf%281%29.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt_text" src="../images/dcf%281%29.gif" /></a></p>
+<p><a class="glightbox" href="../images/dcf(1).gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/dcf(1).gif" alt="Rephrase Dialog Responses" title="Rephrase Dialog Responses" style="border: 1px solid gray; zoom:70%;"></a></p>
 <p><strong>Usage</strong></p>
 <p>When configuring a Message, Entity, or Confirmation node, you can enable the <strong>Rephrase Response</strong> feature (disabled by default). This lets you set the number of user inputs sent to OpenAI/Anthropic Claude-1 based on the selected model as context for rephrasing the response sent through the node. You can choose between 0 and 5, where 0 means that no previous input is considered, while 5 means that the previous. 5 responses are sent as context.</p>
 <p>When this feature is disabled, the Rephrase Response section is not visible within your node’s Component Properties.</p>

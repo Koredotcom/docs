@@ -13,7 +13,7 @@
       
       
       
-      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../images/kore_favicon.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
@@ -1484,7 +1484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../channels/amazon-alexa/" class="md-nav__link">
+      <a href="../../../../../channels/kore.ai-voice-gateway/kore-voice-gateway/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4205,7 +4205,7 @@
         
   
   <span class="md-ellipsis">
-    Talk to Bot
+    Test (Talk to Bot)
   </span>
   
 
@@ -4304,7 +4304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../getting-started.md" class="md-nav__link">
+      <a href="../../batch-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4325,7 +4325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../getting-started.md" class="md-nav__link">
+      <a href="../conversation-testing-landing-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4930,16 +4930,85 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../searchai/introduction-to-answers/" class="md-nav__link">
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Getting Started
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../searchai/introduction-to-answers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Answers in Search AI
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../searchai/setup-search-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Search AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -12083,14 +12152,20 @@
 <li>
 <p>In the displayed pop-up, click <strong>Proceed</strong> to record the test with the On-Connect event or click the <strong>Skip On-Connect</strong> button.<br />
 <a class="glightbox" href="../images/ct-create-test-suite-record2-window.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/ct-create-test-suite-record2-window.png" alt="Recording Options" title="Recording Options" style="border: 1px solid gray;zoom:50%;"/></a>   </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>"On-Connect" is the message you receive as soon as you open the chat window, even before you enter any message. The option is displayed for VAs with an On-Connect message. If you skip it, the On-connect message does not get added as a test case. If you click Proceed, then the On-connect message is created as a separate test case.      </p>
+</div>
+</li>
+<li>
+<p>The Chat window is displayed. The chat transcript is recorded and the recording status is displayed at the top. You can click <strong>Stop</strong> to stop the recording.<br />
+<a class="glightbox" href="../images/ct-create-test-suite-record-chat.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/ct-create-test-suite-record-chat.png" alt="Chat Recording Status" title="Chat Recording Status" style="border: 1px solid gray;zoom:50%;"/></a>  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If there is an error while recording due to any limitation set on the platform, it is displayed on the page.</p>
+</div>
 </li>
 </ol>
-<p><strong>Note:</strong> "On-Connect" is the message you receive as soon as you open the chat window, even before you enter any message. The option is displayed for VAs with an On-Connect message. If you skip it, the On-connect message does not get added as a test case. If you click Proceed, then the On-connect message is created as a separate test case.      </p>
-<ol>
-<li>The Chat window is displayed. The chat transcript is recorded and the recording status is displayed at the top. You can click <strong>Stop</strong> to stop the recording.<br />
-<a class="glightbox" href="../images/ct-create-test-suite-record-chat.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/ct-create-test-suite-record-chat.png" alt="Chat Recording Status" title="Chat Recording Status" style="border: 1px solid gray;zoom:50%;"/></a>  </li>
-</ol>
-<p><strong>Note:</strong> If there is an error while recording due to any limitation set on the platform, it is displayed on the page.</p>
 <h4 id="generated-user-response-suggestions">Generated User Response Suggestions<a class="headerlink" href="#generated-user-response-suggestions" title="Permanent link">&para;</a></h4>
 <p>If you have enabled <a href="../../../../../app-settings/generative-ai-tools/introduction/" target="_blank">LLM and Generative AI</a> for your Virtual Assistant, you will see User Response suggestions while recording a Conversation Test Case. </p>
 <p>This feature provides a regression tool that creates a conversation test suite for each intent (new and old) to evaluate the impact of a change on the conversation execution. It helps check if the task or intent is robust enough to handle random user utterances. </p>
@@ -12113,14 +12188,20 @@
 <li>
 <p>If you click <strong>Continue in Background</strong>, you can see the status in the top right corner of the landing page by clicking the <strong>Draft</strong> icon.<br />
 <a class="glightbox" href="../images/ct-create-test-suite-draft.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/ct-create-test-suite-draft.png" alt="Continue in Background" title="Continue in Background" style="border: 1px solid gray;zoom:50%;"/></a>  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>On-Connect</strong> is the message you receive as soon as you open the chat window, even before you enter any message. The option is displayed for VAs with an On-Connect message. If you skip it, the On-connect message does not get added as a test case. If you click Proceed, then the On-connect message is created as a separate test case.  </p>
+</div>
+</li>
+<li>
+<p>The Chat window is displayed. The chat transcript is recorded and the recording status is displayed at the top. You can click <strong>Stop</strong> to stop the recording.<br />
+<a class="glightbox" href="../images/ct-create-test-suite-validate-ts.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/ct-create-test-suite-validate-ts.png" alt="Validate Test Suite" title="Validate Test Suite" style="border: 1px solid gray;zoom:50%;"/></a>  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If there is an error while recording due to any limitation set on the platform, it is displayed on the page.  </p>
+</div>
 </li>
 </ol>
-<p><strong>Note:</strong> "On-Connect" is the message you receive as soon as you open the chat window, even before you enter any message. The option is displayed for VAs with an On-Connect message. If you skip it, the On-connect message does not get added as a test case. If you click Proceed, then the On-connect message is created as a separate test case.  </p>
-<ol>
-<li>The Chat window is displayed. The chat transcript is recorded and the recording status is displayed at the top. You can click <strong>Stop</strong> to stop the recording.<br />
-<a class="glightbox" href="../images/ct-create-test-suite-validate-ts.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/ct-create-test-suite-validate-ts.png" alt="Validate Test Suite" title="Validate Test Suite" style="border: 1px solid gray;zoom:50%;"/></a>  </li>
-</ol>
-<p><strong>Note:</strong> If there is an error while recording due to any limitation set on the platform, it is displayed on the page.  </p>
 <h4 id="capture-test-suite-metadata">Capture Test Suite Metadata<a class="headerlink" href="#capture-test-suite-metadata" title="Permanent link">&para;</a></h4>
 <p>Using Conversation Testing, you can test the sequence of nodes executed by the VA for user input(s) and capture the following metadata at the time of test suite creation to verify if the VA is executing the conversation flows as expected:</p>
 <ul>
@@ -12172,7 +12253,10 @@
 <a class="glightbox" href="../images/ct-create-test-suite-create-upload-file.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/ct-create-test-suite-create-upload-file.png" alt="Browse for the JSON file" title="Browse for the JSON file" style="border: 1px solid gray;zoom:50%;"/></a>  </p>
 </li>
 </ol>
-<p><strong>Note:</strong> Only JSON files can be uploaded. The maximum file size allowed for upload is 2MB. You can also download a sample JSON file by clicking the Download JSON Sample button.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only JSON files can be uploaded. The maximum file size allowed for upload is 2MB. You can also download a sample JSON file by clicking the Download JSON Sample button.</p>
+</div>
 <p>If there is an error during upload due to any limitation set on the platform, an error is displayed as follows.
 <a class="glightbox" href="../images/ct-create-test-suite-file-error.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/ct-create-test-suite-file-error.png" alt="JSON file upload error" title="JSON file upload error" style="border: 1px solid gray;zoom:50%;"/></a> </p>
 <p>If an uploaded JSON file exceeds the configured size limit of 2 MB, an error is displayed as shown below.
@@ -12181,7 +12265,7 @@
 <p>The platform processes the uploaded file to simulate the conversation flow and capture all the metadata at each test case. When validating the test suite, there is an option to go back to Conversation testing while the test suite is being validated in the background.</p>
 <p>The steps to validate test suites are the same as in Record Test suite Flow. See <a href="#validate-test-suite">Validate Test Suite</a> for more information. To understand more about testing the sequence of nodes and capturing metadata, see Capture Test Suite Metadata under <a href="#validate-test-suite">Validate Test Suite</a>.</p>
 <h3 id="create-test-suite_1">Create Test Suite<a class="headerlink" href="#create-test-suite_1" title="Permanent link">&para;</a></h3>
-<p>The steps to create a test suite are the same as in Record Test suite Flow. See <a href="#create-test-suite">Create Test Suite</a> to know more.</p>
+<p>The steps to create a test suite are the same as in Record Test suite Flow. See <a href="#record-test-suite">Record Test Suite</a> to know more.</p>
 
 
 

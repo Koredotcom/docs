@@ -17,7 +17,7 @@
         <link rel="next" href="../configure-digital-views/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../images/kore_favicon.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
@@ -1490,7 +1490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../channels/amazon-alexa/" class="md-nav__link">
+      <a href="../../../../channels/kore.ai-voice-gateway/kore-voice-gateway/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4427,7 +4427,7 @@
         
   
   <span class="md-ellipsis">
-    Talk to Bot
+    Test (Talk to Bot)
   </span>
   
 
@@ -4526,7 +4526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../getting-started.md" class="md-nav__link">
+      <a href="../../../testing/regression-testing/batch-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4547,7 +4547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../getting-started.md" class="md-nav__link">
+      <a href="../../../testing/regression-testing/conversation-testing/conversation-testing-landing-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5155,16 +5155,85 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../searchai/introduction-to-answers/" class="md-nav__link">
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Getting Started
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../searchai/introduction-to-answers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Answers in Search AI
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../searchai/setup-search-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Search AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -12383,7 +12452,9 @@
 <li><strong>Source</strong> for a widget can be set either from the execution of Dialog Task, from JavaScript by defining a JSON, or by linking an existing Digital Form.</li>
 </ul>
 </li>
-<li>Click <strong>Save</strong>.</li>
+<li>
+<p>Click <strong>Save</strong>.</p>
+</li>
 </ol>
 <h3 id="configure-widget-sources">Configure Widget Sources<a class="headerlink" href="#configure-widget-sources" title="Permanent link">&para;</a></h3>
 <p>For the widget input data, you must configure one of the following sources and complete the configuration.</p>
@@ -12394,11 +12465,10 @@
 <p class="admonition-title">Note</p>
 <p>In the connected Dialog Task make sure to use a Message node to present the required information in the widget using any of the supported widget templates.</p>
 </div>
-
 <p>You can use the icon next to the Dialog Task to open the Dialog Task for checking the task details like entity names etc.</p>
 <p>Any entities used by the selected Dialog Task need to be pre-populated with values by mapping <strong>Entity Name</strong> with <strong>Entity Values</strong>.</p>
-<p>If the selected Dialog Task has any <strong>Authorization Profile</strong> defined, it is displayed here.
-<a class="glightbox" href="../../images/dialog-task-source.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/dialog-task-source.png" alt="dialog task source" title="dialog task source" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>If the selected Dialog Task has any <strong>Authorization Profile</strong> defined, it is displayed here.</p>
+<p><a class="glightbox" href="../../images/dialog-task-source.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/dialog-task-source.png" alt="dialog task source" title="dialog task source" style="border: 1px solid gray; zoom:75%;"></a></p>
 <h3 id="json">JSON<a class="headerlink" href="#json" title="Permanent link">&para;</a></h3>
 <p>When selecting JSON as the source, you will be presented with a Javascript editor, where you can add your code, as shown below:</p>
 <p><a class="glightbox" href="../../images/json-source-file.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/json-source-file.png" alt="json file upload" title="json file upload" style="border: 1px solid gray; zoom:75%;"></a></p>
@@ -12406,14 +12476,14 @@
 <p>When selecting <strong>Digital Form</strong> as a widget source, you  can select the Digital Form, and the Dialog Task to trigger on submission.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>A Digital Form can be used to define multiple Widgets and can also be added to multiple Panels. However, it will be associated with the same Dialog Task across all Widgets and Panels.</p></div>
-
+<p>A Digital Form can be used to define multiple Widgets and can also be added to multiple Panels. However, it will be associated with the same Dialog Task across all Widgets and Panels.</p>
+</div>
 <p><a class="glightbox" href="../../images/digital-form-as-source.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/digital-form-as-source.png" alt="digital form as source" title="digital form as source" style="border: 1px solid gray; zoom:75%;"></a></p>
 <h3 id="edit-run-preview-a-widget">Edit, Run &amp; Preview a Widget<a class="headerlink" href="#edit-run-preview-a-widget" title="Permanent link">&para;</a></h3>
-<p>After you save, the widget will be <strong>In Development</strong> state. You can <strong>Edit</strong> or <strong>Delete</strong> the widget.
-<a class="glightbox" href="../../images/widget-saved.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/widget-saved.png" alt="widget saved" title="widget saved" style="border: 1px solid gray; zoom:75%;"></a></p>
-<p>When you select <strong>Edit</strong> widget, apart from being able to modify any of the above fields, you will have the option to <strong>Run &amp; Preview</strong> the widget. You can save the preview as the thumbnail display for the widget.
-<a class="glightbox" href="../../images/run-widget-preview.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/run-widget-preview.png" alt="widget preview" title="widget preview" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>After you save, the widget will be <strong>In Development</strong> state. You can <strong>Edit</strong> or <strong>Delete</strong> the widget.</p>
+<p><a class="glightbox" href="../../images/widget-saved.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/widget-saved.png" alt="widget saved" title="widget saved" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>When you select <strong>Edit</strong> widget, apart from being able to modify any of the above fields, you will have the option to <strong>Run &amp; Preview</strong> the widget. You can save the preview as the thumbnail display for the widget.</p>
+<p><a class="glightbox" href="../../images/run-widget-preview.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/run-widget-preview.png" alt="widget preview" title="widget preview" style="border: 1px solid gray; zoom:75%;"></a></p>
 <h2 id="configure-panels">Configure Panels<a class="headerlink" href="#configure-panels" title="Permanent link">&para;</a></h2>
 <p>Panel refers to containers that hold one or more widgets. You can add an existing widget to the panel or create new widgets within it.</p>
 <h3 id="create-a-panel">Create a Panel<a class="headerlink" href="#create-a-panel" title="Permanent link">&para;</a></h3>
@@ -12436,8 +12506,10 @@
 </ol>
 <h3 id="add-widgets">Add Widgets<a class="headerlink" href="#add-widgets" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Click <strong>Add Widget</strong> to add widgets to the panel.
-   <a class="glightbox" href="../../images/panel-add-widget.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/panel-add-widget.png" alt="add widget to panel" title="add widget to panel" style="border: 1px solid gray; zoom:75%;"></a></li>
+<li>Click <strong>Add Widget</strong> to add widgets to the panel.</li>
+</ol>
+<p><a class="glightbox" href="../../images/panel-add-widget.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/panel-add-widget.png" alt="add widget to panel" title="add widget to panel" style="border: 1px solid gray; zoom:75%;"></a></p>
+<ol>
 <li>
 <p>Select widgets from the drop-down list and click <strong>Add</strong>. You can add multiple widgets to the same panel.</p>
 <p><a class="glightbox" href="../../images/select-widgets-from-dropdown-list.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/select-widgets-from-dropdown-list.png" alt="select widgets from dropdown" title="select widgets from dropdown" style="border: 1px solid gray; zoom:75%;"></a></p>
@@ -12449,21 +12521,21 @@
 <li><strong>Edit</strong> the panel details;</li>
 <li>
 <p><strong>Add Form</strong> to add existing forms to the Panel. Once added, forms will behave as a widget with the source set to Digital Form;</p>
-</li>
-<li>
-<p><strong>Add Widget</strong> to add existing widgets;</p>
-</li>
+<ul>
+<li><strong>Add Widget</strong> to add existing widgets;</li>
 <li><strong>Panel Management</strong> to add existing forms/widgets, or remove already added forms/widgets from the panel.</li>
 <li><strong>Test</strong> the individual panel – this opens the <strong>Talk to Bot</strong> window along with the panel listing with the current panel active and data presented. You can interact with the VA and test the panel.</li>
 <li><strong>Delete</strong> the Panel.</li>
+</ul>
+</li>
 </ol>
 <p><a class="glightbox" href="../../images/panel-options-for-digital-views.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/panel-options-for-digital-views.png" alt="panel options for digital views" title="panel options for digital views" style="border: 1px solid gray; zoom:75%;"></a></p>
 <h2 id="publish">Publish<a class="headerlink" href="#publish" title="Permanent link">&para;</a></h2>
 <p>When you publish your Virtual Assistant,  please ensure that the panels and widgets you want to include are selected.</p>
-<p><a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/configure-digital-views/#publish" target="_blank">Learn more</a> about publishing a Virtual Assistant.</p>
+<p><a href="../configure-digital-views/#publish" target="_blank">Learn more</a> about publishing a Virtual Assistant.</p>
 <p><a class="glightbox" href="../../images/publish-digitalview.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../images/publish-digitalview.png" alt="publish digital view" title="publish digital view" style="border: 1px solid gray; zoom:75%;"></a></p>
 <h2 id="host">Host<a class="headerlink" href="#host" title="Permanent link">&para;</a></h2>
-<p>The XO Platform provides the Widget SDK for hosting and managing panels and widgets. You can choose to host your widgets independently or co-host them along with the WebSDK. You can download the SDKs from the Kore.ai GitHub page. Do ensure to enable WidgetSDK as a channel. <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/kore-ai-web-sdk-tutorial/" target="_blank">Learn more</a>.</p>
+<p>The XO Platform provides the Widget SDK for hosting and managing panels and widgets. You can choose to host your widgets independently or co-host them along with the WebSDK. You can download the SDKs from the Kore.ai GitHub page. Do ensure to enable WidgetSDK as a channel. <a href="../../../../app-settings/dev-tools/kore-ai-web-sdk-tutorial" target="_blank">Learn more</a>.</p>
 
 
 

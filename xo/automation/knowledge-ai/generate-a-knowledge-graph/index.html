@@ -17,7 +17,7 @@
         <link rel="next" href="../knowledge-graph-analysis/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../images/kore_favicon.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
@@ -1490,7 +1490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../channels/amazon-alexa/" class="md-nav__link">
+      <a href="../../../channels/kore.ai-voice-gateway/kore-voice-gateway/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4318,7 +4318,7 @@
         
   
   <span class="md-ellipsis">
-    Talk to Bot
+    Test (Talk to Bot)
   </span>
   
 
@@ -4417,7 +4417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started.md" class="md-nav__link">
+      <a href="../../testing/regression-testing/batch-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4438,7 +4438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started.md" class="md-nav__link">
+      <a href="../../testing/regression-testing/conversation-testing/conversation-testing-landing-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5046,16 +5046,85 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../searchai/introduction-to-answers/" class="md-nav__link">
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Getting Started
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../searchai/introduction-to-answers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Answers in Search AI
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../searchai/setup-search-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Search AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -12104,7 +12173,7 @@
 
 <h1 id="generate-a-knowledge-graph">Generate a Knowledge Graph<a class="headerlink" href="#generate-a-knowledge-graph" title="Permanent link">&para;</a></h1>
 <p>The performance of the  Knowledge Graph is based on its organization which is influenced by the key domain terms, and the established hierarchy.</p>
-<p>Building the FAQ is easy when you start fresh with the Knowledge Graph, but in case you have a list of questions-answer pairs, converting them into a fully-functional Knowledge Graph is tedious.</p>
+<p>Building the FAQ is easy when you start fresh with the Knowledge Graph, but in case you have a list of questions-answer pairs, converting them into a fully-functional Knowledge Graph is tedious task.</p>
 <p>The XO Platform provides a Knowledge Graph Generator that automatically extracts terms from FAQ, defines the hierarchy between these terms, and also associates the FAQ to the right terms. You can then import the output file from the generator to your VA’s Knowledge Graph without worrying about the hierarchy. </p>
 <p>You can also edit the hierarchy after import to suit your needs. It is highly recommended to review and make changes as the Knowledge Graph generated is only a suggestion.</p>
 <div class="admonition note">
@@ -12124,7 +12193,7 @@
 </ul>
 </li>
 <li>A file containing the FAQs in <em>JSON</em> or <em>CSV</em> format. You can obtain this file in two ways:<ul>
-<li>Export the Knowledge Graph from XO Platform, <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/import-and-export-knowledge-graph/" target="_blank">Learn more</a>.</li>
+<li>Export the Knowledge Graph from XO Platform. <a href="../import-and-export-knowledge-graph/">Learn more</a>.</li>
 <li>Build the Knowledge Graph in a tabular form with questions in the first column and answers in the corresponding second column and save the file in <em>CSV</em> format.</li>
 </ul>
 </li>
@@ -12218,7 +12287,7 @@
 <h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
 <p>The output JSON file is generated and placed under the project root directory with the name <code>ao_output.json</code></p>
 <p>The output JSON file can directly be imported to Knowledge Graph in the bot. </p>
-<p>Please refer to this <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/import-and-export-knowledge-graph/#import" target="_blank">link</a> for steps to import Knowledge Graph.</p>
+<p>See <a href="../import-and-export-knowledge-graph/">steps to import Knowledge Graph</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When you try to import the Knowledge Graph it replaces the existing one. We recommend you take a back up before importing.</p>

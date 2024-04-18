@@ -13,7 +13,7 @@
       
       
       
-      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../images/kore_favicon.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
@@ -1484,7 +1484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../channels/amazon-alexa/" class="md-nav__link">
+      <a href="../../../../../channels/kore.ai-voice-gateway/kore-voice-gateway/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4205,7 +4205,7 @@
         
   
   <span class="md-ellipsis">
-    Talk to Bot
+    Test (Talk to Bot)
   </span>
   
 
@@ -4304,7 +4304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../getting-started.md" class="md-nav__link">
+      <a href="../../batch-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4325,7 +4325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../getting-started.md" class="md-nav__link">
+      <a href="../conversation-testing-landing-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4930,16 +4930,85 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../searchai/introduction-to-answers/" class="md-nav__link">
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Getting Started
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../searchai/introduction-to-answers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Answers in Search AI
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../searchai/setup-search-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Search AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -11985,8 +12054,7 @@ A  test case consists of: </p>
 <p>If a node has more than one variation, then the OneOf operator is added by default  </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<div class="language-text highlight"><pre><span></span><code>The **OneOf** operator is used to test randomization scenarios where a node can have multiple bot responses. For any node in which multiple responses are configured, the operator is activated by default. If one of the multiple responses is obtained from the VA during the test execution, then the assertion will be passed.
-</code></pre></div>
+<p>The <strong>OneOf</strong> operator is used to test randomization scenarios where a node can have multiple bot responses. For any node in which multiple responses are configured, the operator is activated by default. If one of the multiple responses is obtained from the VA during the test execution, then the assertion will be passed.  </p>
 </div>
 </li>
 </ul>
@@ -12003,19 +12071,20 @@ A  test case consists of: </p>
 <li>Assertions  <ul>
 <li>Flow (Enabled by default)  </li>
 <li>Text (Enabled by default)  </li>
-<li>
-<p>Context<br />
-<a class="glightbox" href="../images/te-img6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/te-img6.png" alt="Navigate to Test Editor" title="Navigate to Test Editor" style="border: 1px solid gray;zoom:50%;"/></a>  </p>
+<li>Context  </li>
+</ul>
+</li>
+</ul>
+<p><a class="glightbox" href="../images/te-img6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/te-img6.png" alt="Navigate to Test Editor" title="Navigate to Test Editor" style="border: 1px solid gray;zoom:50%;"/></a></p>
 <p><a class="glightbox" href="../images/te-img7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/te-img7.png" alt="Navigate to Test Editor" title="Navigate to Test Editor" style="border: 1px solid gray;zoom:50%;"/></a>  </p>
-</li>
-</ul>
-</li>
-</ul>
 </li>
 <li>
 <p>You can export the entire test suite to your local directory as a <strong>JSON</strong> file. The downloaded test suites include the user inputs and VA responses.<br />
 <a class="glightbox" href="../images/te-img8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/te-img8.png" alt="Test suite operations" title="Test suite operations" style="border: 1px solid gray;zoom:50%;"/></a>  </p>
-<p><strong>Note:</strong> You can also clone the test suite or delete it as per the requirement.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can also clone the test suite or delete it as per the requirement.</p>
+</div>
 </li>
 </ol>
 

@@ -17,7 +17,7 @@
         <link rel="next" href="../model-validation/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../images/kore_favicon.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
@@ -1490,7 +1490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../channels/amazon-alexa/" class="md-nav__link">
+      <a href="../../../../channels/kore.ai-voice-gateway/kore-voice-gateway/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4738,7 +4738,7 @@
         
   
   <span class="md-ellipsis">
-    Talk to Bot
+    Test (Talk to Bot)
   </span>
   
 
@@ -4837,7 +4837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../getting-started.md" class="md-nav__link">
+      <a href="../../../testing/regression-testing/batch-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4858,7 +4858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../getting-started.md" class="md-nav__link">
+      <a href="../../../testing/regression-testing/conversation-testing/conversation-testing-landing-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5466,16 +5466,85 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../searchai/introduction-to-answers/" class="md-nav__link">
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Getting Started
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../searchai/introduction-to-answers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Answers in Search AI
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../searchai/setup-search-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Search AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -12963,17 +13032,23 @@
 <h3 id="ml-output">ML Output<a class="headerlink" href="#ml-output" title="Permanent link">&para;</a></h3>
 <p>The ML Engine runs the classification against the user utterance and generates the following scores output which Ranking and Resolver uses for identifying the correct intent:</p>
 <ul>
-<li><strong>The probability Score</strong> for each class/intent, can be interpreted as follows<ul>
+<li>
+<p><strong>The probability Score</strong> for each class/intent, can be interpreted as follows</p>
+<ul>
 <li>Definitive Match/Perfect Match: If the probability score &gt;0.95 (default and adjustable) </li>
 <li>Possible match: If the score is &lt;0.95%, it becomes eligible for ranking against other intents which may have been found by other engines.</li>
 </ul>
 </li>
-<li><strong>The fuzzy score</strong> for each of the traits/intents which are greater than the Threshold score(default is 0.3) – Fuzzy logic goes through each utterance of a given intent and compares it against the user input to see how close the user input and the utterance are. The scores are usually from 0-100 and can be interpreted as follows:<ul>
+<li>
+<p><strong>The fuzzy score</strong> for each of the traits/intents which are greater than the Threshold score(default is 0.3) – Fuzzy logic goes through each utterance of a given intent and compares it against the user input to see how close the user input and the utterance are. The scores are usually from 0-100 and can be interpreted as follows:</p>
+<ul>
 <li>Definite Match/Perfect Match: If the score is above 95%(default  &amp; adjustable) </li>
 <li>Possible match: If the score is &lt;95%, becomes eligible for Ranking against other intents which may have been found by other engines.</li>
 </ul>
 </li>
-<li><strong>CR Sentences</strong>– The ML engine also sends the top 5 ML utterances for each of those Intents which have qualified using the Threshold score. These 5 ML utterances are derived using the Fuzzy score. Ranking &amp; Resolver uses these CR sentences to Rescore and choose the best of these utterances (compares each utterance against user input and chooses an utterance with topmost score)</li>
+<li>
+<p><strong>CR Sentences</strong>– The ML engine also sends the top 5 ML utterances for each of those Intents which have qualified using the Threshold score. These 5 ML utterances are derived using the Fuzzy score. Ranking &amp; Resolver uses these CR sentences to Rescore and choose the best of these utterances (compares each utterance against user input and chooses an utterance with topmost score)</p>
+</li>
 </ul>
 <h3 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">&para;</a></h3>
 <p>Though the ML model is very thorough, it has its own limitations, as follows:</p>
@@ -12989,8 +13064,12 @@
 <h3 id="training-overview">Training Overview<a class="headerlink" href="#training-overview" title="Permanent link">&para;</a></h3>
 <p>The Machine Learning Engine builds a model, based on training through intent detection and entity extraction, as follows: </p>
 <ul>
-<li>The <strong>intent prediction</strong> model is trained using statistical modeling and neural networks.  Intent classification tags the user utterance to a specific intent. The classification algorithm learns from the set of sample utterances that are labeled on how they should be interpreted. Training utterance preparation and curation is one of the most significant aspects of building a robust Machine learning model. </li>
-<li><strong>Entity Detection</strong> involves recognizing System Entities (Out Of the Box, Rule-based model), predicting Custom Entities (Custom-trainable Rules-based Model), and Named Entity Recognition (NER). System Entities are defined using built-in rules. However, using the NER approach, any named entity can be trained using Machine Learning by simply choosing the value from the ML training utterances and tagging them against the named entity. </li>
+<li>
+<p>The <strong>intent prediction</strong> model is trained using statistical modeling and neural networks.  Intent classification tags the user utterance to a specific intent. The classification algorithm learns from the set of sample utterances that are labeled on how they should be interpreted. Training utterance preparation and curation is one of the most significant aspects of building a robust Machine learning model. </p>
+</li>
+<li>
+<p><strong>Entity Detection</strong> involves recognizing System Entities (Out Of the Box, Rule-based model), predicting Custom Entities (Custom-trainable Rules-based Model), and Named Entity Recognition (NER). System Entities are defined using built-in rules. However, using the NER approach, any named entity can be trained using Machine Learning by simply choosing the value from the ML training utterances and tagging them against the named entity. </p>
+</li>
 </ul>
 <p><strong>Training the ML Engine involves the following steps:</strong></p>
 <ol>
@@ -13006,26 +13085,27 @@
 <p>To add utterances to the Machine Learning Engine, please follow the steps below:</p>
 <ol>
 <li>Open the VA for which you want to add sample user utterances.</li>
-<li>From the left menu, select the <strong>Natural Language -&gt;</strong> <strong>Training</strong> option.</li>
+<li>From the left menu, select the <strong>Natural Language &gt; Training</strong> option.</li>
 <li>By default, the tab with a list of all <strong>Intents</strong> would be displayed.</li>
 <li>You can use the filter option to restrict the display items to <strong>Dialog Intents, Sub Intent Dialogs</strong> or <strong>Sub-Intents</strong>. You can also choose to <strong>Include Hidden Tasks</strong>. </li>
-<li>Click <strong>Utterances &gt; + Utterance</strong> against the Intent for which you want to add the utterances. </li>
-</ol>
+<li>
+<p>Click <strong>Utterances &gt; + Utterance</strong> against the Intent for which you want to add the utterances. </p>
 <p><a class="glightbox" href="../images/add-utterances-click.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-utterances-click.png" alt="add utterance" title="add utterance" style="border: 1px solid gray; zoom:75%;"></a></p>
-<ol start="6"><li>The user utterance page opens.</li></ol>
-
+</li>
+<li>
+<p>The user utterance page opens.</p>
 <p>Here is where you can enter the utterances. </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Utterances greater than 3,000 characters in length are not allowed.</p>
 </div>
-
 <p><a class="glightbox" href="../images/enter-utterance.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enter-utterance.png" alt="enter utterance value" title="enter utterance value" style="border: 1px solid gray; zoom:75%;"></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Utterances should be unique, but in the case of multiple intent models, the same utterance can be used across different models. Read more about multiple intent models below.</p>
 </div>
-
+</li>
+</ol>
 <p>The negation of trained intents will be ignored by the Platform.</p>
 <p>For example, consider a Travel Assistant trained on the <em>Book a Flight</em> utterance. A user might say: <em>Your app takes me to the booking screen, but I don’t want to book a flight.</em> In this case, the <em>Book a Flight</em> intent will not trigger.</p>
 <h4 id="adding-entities-for-named-entity-recognition">Adding Entities for Named Entity Recognition<a class="headerlink" href="#adding-entities-for-named-entity-recognition" title="Permanent link">&para;</a></h4>
@@ -13042,23 +13122,27 @@
 <p><a class="glightbox" href="../images/utterance-display-confidence-score.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/utterance-display-confidence-score.png" alt="display confidence score for utterances" title="display confidence score for utterances" style="border: 1px solid gray; zoom:75%;"></a></p>
 <p>Further, if you have enabled Entity Placeholders, the Platform will replace the entity values in the training utterance with entity name placeholders for training the ML model. Using actual entity values as well as multiple additions of an utterance with just a change in the entity value will have an adverse impact on the ML training model. The name of entities also starts contributing highly to the intent detection model.</p>
 <h4 id="using-negative-patterns">Using Negative Patterns<a class="headerlink" href="#using-negative-patterns" title="Permanent link">&para;</a></h4>
-<p>Negative patterns can be used to eliminate intents detected by the Fundamental Meaning or Machine Learning models. <a href="/docs/xo/automation/natural-language/training/fundamental-meaning/#negative-patterns" target="_blank">Learn more</a>.</p>
+<p>Negative patterns can be used to eliminate intents detected by the Fundamental Meaning or Machine Learning models. <a href="../fundamental-meaning/#negative-patterns" target="_blank">Learn more</a>.</p>
 <h2 id="training-your-assistant">Training your Assistant<a class="headerlink" href="#training-your-assistant" title="Permanent link">&para;</a></h2>
 <p>After you added user utterances, you should train the Kore.ai interpreter to recognize the utterances and the associated user intent. When you have untrained utterances in your VA, the following message is displayed:</p>
 <p><em>“You have untrained utterances in your ML model. Train your VA to update with all your utterances.”</em></p>
-<p>Click <strong>Train</strong>. A status bar is displayed to show progress for utterance training. When complete, the <em>Utterances trained successfully</em> message is displayed. The user utterances are added to the Machine Learning Database. You can further configure the ML engine, identify the dummy intents when a user utterance contains the words that are not used in the VA’s training i.e. vocabulary, <a href="/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/" target="_blank">Learn more</a>.</p>
-<p>Once you have trained your VA, you can test it on the newly trained data. <a href="/docs/xo/automation/testing/testing-your-bot-with-nlp/" target="_blank">Learn</a> how to test your assistant.</p>
+<p>Click <strong>Train</strong>. A status bar is displayed to show progress for utterance training. When complete, the <em>Utterances trained successfully</em> message is displayed. The user utterances are added to the Machine Learning Database. You can further configure the ML engine, identify the dummy intents when a user utterance contains the words that are not used in the VA’s training i.e. vocabulary, <a href="../../nlu-configurations/engine-tuning/" target="_blank">Learn more</a>.</p>
+<p>Once you have trained your VA, you can test it on the newly trained data. <a href="../../../testing/testing-your-bot-with-nlp/" target="_blank">Learn</a> how to test your assistant.</p>
 <h3 id="auto-training">Auto-Training<a class="headerlink" href="#auto-training" title="Permanent link">&para;</a></h3>
 <p>By default, machine learning is automatically trained for any defined user utterances whenever a task is:</p>
 <ul>
-<li>Updated with a new<ul>
+<li>
+<p>Updated with a new</p>
+<ul>
 <li>Task name or intent name,</li>
 <li>Entity name or parameter name,</li>
 <li>Entity type,</li>
 <li>VA name</li>
 </ul>
 </li>
-<li>Published</li>
+<li>
+<p>Published</p>
+</li>
 <li>Suspended by the Admin.</li>
 <li>Deleted by the Admin.</li>
 </ul>
@@ -13066,7 +13150,7 @@
 <p>To set up the <strong>Auto Train</strong> option, follow the steps below:</p>
 <ol>
 <li>Open the VA for which you want to modify the settings.</li>
-<li>On the left navigation menu, click <strong>Natural Language</strong> -&gt; <strong>NLU Config</strong> -&gt; <strong>Machine Learning</strong>.</li>
+<li>On the left navigation menu, click <strong>Natural Language &gt; NLU Config &gt; Machine Learning</strong>.</li>
 <li>
 <p>Select “<em>Yes, add the successfully identified user utterances to the ML training model (Unsupervised Training)”</em> for the <strong>Auto Training For Machine Learning</strong> option.</p>
 <p><a class="glightbox" href="../images/auto-train-ML-section.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/auto-train-ML-section.png" alt="auto train machine learning" title="auto train machine learning" style="border: 1px solid gray; zoom:75%;"></a></p>
@@ -13078,12 +13162,11 @@
 <p class="admonition-title">Note</p>
 <p>If your VA is multilingual, you can set the Thresholds differently for different languages. If not set, the Default Settings will be used for all languages.</p>
 </div>
-
 <p>The Threshold &amp; Configurations for the ML engine are discussed in detail in the following sections.</p>
 <h3 id="machine-learning-model-configuration-overview">Machine Learning Model Configuration Overview<a class="headerlink" href="#machine-learning-model-configuration-overview" title="Permanent link">&para;</a></h3>
 <p>The XO  Platform ver 6.3 upgraded its Machine Learning (ML) model to v3. This includes a host of improvements and also allows developers to fine-tune the model using parameters to suit business requirements. The developers can change parameters like stop word usage, synonym usage, thresholds, and n-grams, as well as opt between <a href="https://en.wikipedia.org/wiki/Deep_learning#Deep_neural_networks" target="_blank">Deep Neural Network</a> or <a href="https://en.wikipedia.org/wiki/Conditional_random_field" target="_blank">Conditional Random Field-based</a> algorithms for the <a href="https://en.wikipedia.org/wiki/Named-entity_recognition" target="_blank">Named-Entity Recognition</a> model.</p>
-<p>In v8.0 of the Platform, provision has been enabled to use the v5 of the ML intent model and externalize several hyperparameters. This can be achieved through the Advanced NLP Configuration. <a href="/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/" target="_blank">Learn more</a>.</p>
-<p>When the Multiple Intents Model =is enabled, the ML Engine maintains multiple intent models for the VA as follows:</p>
+<p>In v8.0 of the Platform, provision has been enabled to use the v5 of the ML intent model and externalize several hyperparameters. This can be achieved through the Advanced NLP Configuration. <a href="../../nlu-configurations/engine-tuning/" target="_blank">Learn more</a>.</p>
+<p>When the Multiple Intents Model is enabled, the ML Engine maintains multiple intent models for the VA as follows:</p>
 <ul>
 <li><strong>Bot level Intent Model</strong> containing all the Primary Intents of the assistant which includes Primary Dialog Intents, and Alert Task Intents.</li>
 <li><strong>Dialog Intent Models</strong> – one for every primary dialog intent and sub-dialog intent which includes the Sub-intent nodes added to the dialog definition, Sub-intents scoped as part of the Group nodes and Interruption exceptions added to the dialog definition.</li>
@@ -13091,49 +13174,61 @@
 <p>You can configure the Thresholds and Configurations separately for each of the intent models using the <strong>NLU Config</strong> feature. This includes:</p>
 <ul>
 <li>All the configurations under Thresholds and Configurations – ML Engine as discussed in the below section;</li>
-<li>All the ML Engine configurations under the Advanced NLP Configurations discussed <a href="/docs/xo/automation/natural-language/nlu-configurations/engine-tuning" target="_blank">here</a>.</li>
+<li>All the ML Engine configurations under the Advanced NLP Configurations discussed <a href="../../nlu-configurations/engine-tuning" target="_blank">here</a>.</li>
 </ul>
 <h4 id="the-multiple-intent-model">The Multiple Intent Model<a class="headerlink" href="#the-multiple-intent-model" title="Permanent link">&para;</a></h4>
 <p>Training of “similar intents” with different purposes is usually difficult as the training given for an intent can add noise or conflict with the training given to the other intent. This is more evident in cases where the intents have a contextually different meaning or purpose.</p>
 <p>Consider the following case: A user is in the <strong>Make a Booking</strong> task, so any query related to the Booking refund policy should be answered within this context. However, the query can also trigger FAQs from <strong>Cancel a Booking</strong>. </p>
-<p><a class="glightbox" href="../images/multiple-intent-model-example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/multiple-intent-model-example.png" alt="multiple intent model example" title="multiple intent model example" style="border: 1px solid gray; zoom:75%;"></a></p>
-<p>Enabling the Multiple Intent Models from the <a href="/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/" target="_blank">Advanced NLP Configurations</a> allows you to have a dedicated ML model only for the primary intents and separate ML Models for each of the dialogs with their associated sub-intents so that the intent detection of sub-intents gets preferential treatment.</p>
+<p><a class="glightbox" href="../images/multiple-intent-model-example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/multiple-intent-model-example.png" alt="multiple intent model example" title="multiple intent model example" style="border: 1px solid gray; zoom:55%;"></a></p>
+<p>Enabling the Multiple Intent Models from the <a href="../../nlu-configurations/engine-tuning/" target="_blank">Advanced NLP Configurations</a> allows you to have a dedicated ML model only for the primary intents and separate ML Models for each of the dialogs with their associated sub-intents so that the intent detection of sub-intents gets preferential treatment.</p>
 <p>Continuing with the above example, with a Multiple Intent Model, you can define a separate <em>context-based</em> FAQ and ensure a proper response to the user.</p>
 <p><a class="glightbox" href="../images/context-based-faq.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/context-based-faq.png" alt="context-based faq" title="context-based faq" style="border: 1px solid gray; zoom:75%;"></a></p>
 <p>All the primary intents of the VA will be part of the <strong>Bot Level Intent Model</strong>. Each of the Dialog tasks will have its own ML Model consisting of all the sub-intents added to it. The Thresholds and Configurations can be individually configured for each of the models. For example, the Bot Level Intent Model can use ‘Standard’ Network Type and a specific Dialog’s intent model can use ‘LSTM’ Network Type.</p>
 <h3 id="configuring-machine-learning-parameters">Configuring Machine Learning Parameters<a class="headerlink" href="#configuring-machine-learning-parameters" title="Permanent link">&para;</a></h3>
 <p>The XO Platform provides language-wise defaults for the following parameters related to the ML performance of your VA. You can customize them to suit your particular needs.</p>
 <p><a class="glightbox" href="../images/ml-thresholds-default-parameters-access.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/ml-thresholds-default-parameters-access.png" alt="ml thresholds default parameters" title="ml thresholds default parameters" style="border: 1px solid gray; zoom:75%;"></a></p>
-<div class="admonition note">
-<p class="admonition-title">Key Pointers on ML configurations</p>
-<ul><li>The illustration below shows the list of all possible configurations and these are available for both single and multiple intent models.</li>
-<li>When the multiple intent model is enabled, you can configure the individual models by selecting the Configure link against the model.</li>
-<li>While there is only one VA level intent model, you can add multiple dialog intent models using the Add New button and configure each as per your requirements.</li>
-<li>Advanced ML Configurations can be applied from here or from the Advanced NLP Configurations section.</li>
-<a class="glightbox" href="../images/advanced-ml-configurations-section.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/advanced-ml-configurations-section.png" alt="advanced ml configurations" title="advanced ml configurations" style="border: 1px solid gray; zoom:75%;"></a></ul>
+<div class="admonition key pointers on ml configurations">
+<p class="admonition-title">Key</p>
+<ul>
+<li>
+<p>The illustration below shows the list of all possible configurations and these are available for both single and multiple intent models.</p>
+</li>
+<li>
+<p>When the multiple intent model is enabled, you can configure the individual models by selecting the Configure link against the model.</p>
+</li>
+<li>
+<p>While there is only one VA level intent model, you can add multiple dialog intent models using the Add New button and configure each as per your requirements.</p>
+</li>
+<li>
+<p>Advanced ML Configurations can be applied from here or from the Advanced NLP Configurations section.</p>
+</li>
+</ul>
+<p><a class="glightbox" href="../images/advanced-ml-configurations-section.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/advanced-ml-configurations-section.png" alt="advanced ml configurations" title="advanced ml configurations" style="border: 1px solid gray; zoom:75%;"></a></p>
 </div>
-
 <h4 id="network-type">Network Type<a class="headerlink" href="#network-type" title="Permanent link">&para;</a></h4>
 <p>You can choose the Neural Network that you would like to use to train the intent models. This setting has been moved to Machine Learning from Advanced NLP Configurations in v8.1.</p>
-<p>You can choose between the following types. Based on the selection additional configurations can be done from the Advanced NLP Configurations section. <a href="/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/#network-type" target="_blank">Learn more</a>.</p>
+<p>You can choose between the following types. Based on the selection additional configurations can be done from the Advanced NLP Configurations section. <a href="../../nlu-configurations/engine-tuning/#network-type" target="_blank">Learn more</a>.</p>
 <ul>
 <li><strong>Standard.</strong></li>
 <li><strong>MLP-BOW</strong> – The bag-of-words model is a simplifying representation used in natural language processing and information retrieval. In this model, a text is represented as the bag of its words, disregarding grammar and even word order but keeping multiplicity.</li>
 <li><strong>MLP-WordEmbeddings</strong> – Word embedding is the collective name for a set of language modeling and feature learning techniques in natural language processing where words or phrases from the vocabulary are mapped to vectors of real numbers.</li>
 <li><strong>LSTM</strong> (Long Short-Term Memory) is an artificial recurrent neural network (RNN) architecture used in the field of deep learning. LSTM has feedback connections and hence has the ability to capture long-term dependencies for texts of any length and is well suited for longer texts.</li>
 <li><strong>CNN</strong> (convolutional neural networks) is a class of deep neural networks in deep learning most commonly applied to analyzing visual imagery. It makes use of the word order for a specific region size and has achieved remarkable results on various text classification tasks.</li>
-<li><strong>Transformers</strong> use a Universal Sentence encoder in the vectorization stage of the Training pipeline. The output of the sentence encoder is fed to a Multi-Layer perceptron network for training. SentenceEncoder has an inbuilt capability of understanding the semantic similarity between sentences taking into account the synonyms and various usage patterns of the same sentence. 
-The Universal Sentence Encoder encodes text into high-dimensional vectors that can be used for text classification, semantic similarity, clustering, and other natural language tasks. The model is trained and optimized for greater-than-word length text, such as sentences, phrases, or short paragraphs. It is trained on a variety of data sources and a variety of tasks with the aim of dynamically accommodating a wide variety of natural language understanding tasks. The input is the variable-length English text and the output is a 512-dimensional vector.</li>
-<li><strong>KAEN</strong> (Kore Advanced Embeddings Network) – Models trained with Sentence Embeddings alone can not understand the domain-specific terminology especially if the words from training are non-dictionary words. Kore.ai provides a model which can understand the meaning of the sentence and at the same time give importance to the domain-specific terminology. There are two parallel layers in work in this model – one to optimize the weights against the sentence embeddings and the other to optimize the word importance for a given sentence.  The activation function used for these two layers is RReLU (Randomized Leaky Rectified Linear Unit, <a href="https://arxiv.org/pdf/1505.00853.pdf" target="_blank">Learn more</a>.</li>
+<li>
+<p><strong>Transformers</strong> use a Universal Sentence encoder in the vectorization stage of the Training pipeline. The output of the sentence encoder is fed to a Multi-Layer perceptron network for training. SentenceEncoder has an inbuilt capability of understanding the semantic similarity between sentences taking into account the synonyms and various usage patterns of the same sentence. </p>
+<p>The Universal Sentence Encoder encodes text into high-dimensional vectors that can be used for text classification, semantic similarity, clustering, and other natural language tasks. The model is trained and optimized for greater-than-word length text, such as sentences, phrases, or short paragraphs. It is trained on a variety of data sources and a variety of tasks with the aim of dynamically accommodating a wide variety of natural language understanding tasks. The input is the variable-length English text and the output is a 512-dimensional vector.</p>
+</li>
+<li>
+<p><strong>KAEN</strong> (Kore Advanced Embeddings Network) – Models trained with Sentence Embeddings alone can not understand the domain-specific terminology especially if the words from training are non-dictionary words. Kore.ai provides a model which can understand the meaning of the sentence and at the same time give importance to the domain-specific terminology. There are two parallel layers in work in this model – one to optimize the weights against the sentence embeddings and the other to optimize the word importance for a given sentence.  The activation function used for these two layers is RReLU (Randomized Leaky Rectified Linear Unit, <a href="https://arxiv.org/pdf/1505.00853.pdf" target="_blank">Learn more</a>).</p>
+</li>
 <li><strong>Zero-Shot Model with OpenAI</strong>: Helps define descriptive intents that the VA identifies in the user utterance based on semantic similarity without requiring training data.</li>
 <li><strong>Few-shot Model (Kore.ai Hosted Embeddings)</strong>: Helps define more number of granular intents that describe the user’s intention in the utterance more accurately with limited training requirement.</li>
 </ul>
 <h3 id="zero-shot-learning-model-with-openai">Zero-Shot Learning Model with OpenAI<a class="headerlink" href="#zero-shot-learning-model-with-openai" title="Permanent link">&para;</a></h3>
-<div class="admonition warning">
+<div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Before using this feature, enable the <a href="https://developer.kore.ai/docs/bots/nlp/llm-and-generative-ai/#Integration_Setup" target="_blank">OpenAI Integration</a>.</p>
+<p>Before using this feature, enable the <a href="../../../../app-settings/integrations/actions/open-ai/configuring-the-openai-action/" target="_blank">OpenAI Integration</a></p>
 </div>
-
 <p>The XO platform allows developers to create a Natural Language Understanding (NLU) model through <strong>OpenAI integration</strong> integration for use in a virtual assistant. The <strong>Zero-Shot Learning (ZSL) Model</strong> allows developers to quickly create the model without needing training data. </p>
 <p>Instead, it relies on a pre-trained language model and a logic learning machine (LLM) to identify the intention of a user through the utterance based on semantic similarity. </p>
 <p>This feature uses the intent name to map or identify the intent name’s similarity with the user input to predict the utterances accurately. </p>
@@ -13144,33 +13239,37 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
 <li>Uses <strong>OpenAI’s LLM &amp; Generative AI models</strong> to identify the intent names by comparing the user utterance.</li>
 <li>The user must only provide a descriptive intent name to leverage this functionality.</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Important Considerations</p>
-<ul><li>This model identifies and defines granular intents describing the purpose of the user interaction, and not what the virtual assistant can do.</li>
+<div class="admonition important considerations">
+<p class="admonition-title">Important</p>
+<ul>
+<li>This model identifies and defines granular intents describing the purpose of the user interaction, and not what the virtual assistant can do.</li>
 <li>ZSL works well when the virtual assistant has good intent coverage.</li>
 <li>Utterances are required to train entities.</li>
 <li>Intent names and user utterances will be shared with OpenAI.</li>
-<li>Bot Designer should enable the integration with <b>OpenAI</b> by providing the <b>API Key</b>.</li>
+<li>Bot Designer should enable the integration with <strong>OpenAI</strong> by providing the <strong>API Key</strong>.</li>
 <li>When using ZSL, dialog intents and FAQs need to be treated the same.</li>
-<li>The <b>ZSL network type</b> applies only to the ML engine and not the FM, KG, and Traits engines. The Platform continues to use Patterns for Intent matching by the FM engine.</li>
+<li>The <strong>ZSL network type</strong> applies only to the ML engine and not the FM, KG, and Traits engines. The Platform continues to use Patterns for Intent matching by the FM engine.</li>
 <li>There is no option to tweak the training if something does not work.</li>
 <li>ZSL is available in the bot-level model configuration and not in the dialog intent model.</li>
-<li>Multiple intent models are not supported when <b>Zero-Shot</b> is enabled.</li>
+<li>Multiple intent models are not supported when <strong>Zero-Shot</strong> is enabled.</li>
 <li>Bot Synonyms and stop words are not used for intent detection.</li>
 <li>When ZSL is enabled, all the matches from the ML engine are definite.</li>
-<li>The <b>Definite Score</b> is changed to 80% by default for ZSL based on the NLP performance and accuracy.</li>
-<li>Only the <b><i>Incorrect Patterns</i></b> and <b><i>Wrong Entity Annotation</i></b> goal-driven validations are enabled when <b><i>Zero-Shot Learning Model with OpenAI</i></b> is enabled.</li></ul>
+<li>The <strong>Definite Score</strong> is changed to 80% by default for ZSL based on the NLP performance and accuracy.</li>
+<li>Only the <strong><em>Incorrect Patterns</em></strong> and <strong><em>Wrong Entity Annotation</em></strong> goal-driven validations are enabled when <strong><em>Zero-Shot Learning Model with OpenAI</em></strong> is enabled.</li>
+</ul>
 </div>
-
 <p><strong>How it works</strong></p>
 <ol>
-<li>The user defines the intent to be identified by the system. For example, in the banking use case, instead of saying “<em>I see invalid transactions</em>“, the intent you provide has to be more descriptive within a subject, object, and nouns. It should be something more descriptive like “<em>I received an alert on my phone about transactions that I have not done.</em>“. This helps the virtual assistant correctly identify the intent “<em>Dispute credit card Transaction.</em>“</li>
-</ol>
+<li>
+<p>The user defines the intent to be identified by the system. For example, in the banking use case, instead of saying “<em>I see invalid transactions</em>“, the intent you provide has to be more descriptive within a subject, object, and nouns. It should be something more descriptive like “<em>I received an alert on my phone about transactions that I have not done.</em>“. This helps the virtual assistant correctly identify the intent “<em>Dispute credit card Transaction.</em>“</p>
 <p><a class="glightbox" href="../images/user-defines-intent.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/user-defines-intent.png" alt="user defines intent" title="user defines intent" style="border: 1px solid gray; zoom:75%;"></a></p>
 <p>If required, the user can add dialogs for the intents.</p>
-<ol start="2"><li>The user should enable the <b>Zero-Shot Network Type</b> under <b>Training</b>.</li>
-<li>The system identifies the most logical intent by matching the user utterance with the defined intent names (without training utterances). It then responds with the relevant intent. Intents identified by the <b>Zero-Shot</b> model are considered definitive matches.</li></ol>
-
+</li>
+<li>
+<p>The user should enable the <strong>Zero-Shot Network Type</strong> under <strong>Training</strong></p>
+</li>
+<li>The system identifies the most logical intent by matching the user utterance with the defined intent names (without training utterances). It then responds with the relevant intent. Intents identified by the <strong>Zero-Shot</strong> model are considered definitive matches.</li>
+</ol>
 <p><strong>Rescoring of Intents for Definitive Matches</strong></p>
 <p>When <strong>Prefer Definite Matches</strong> is disabled, and <strong>Rescoring of Intents</strong> is enabled, the platform continues rescoring for definite matches based on the similarity between the training data and user utterance to discover the winning intent(s). However, enabling Prefer Definite Matches is recommended to rescore for definitive matches based on the similarity between the intent names and user utterances.</p>
 <p><strong>Demonstrating with an Example</strong></p>
@@ -13179,40 +13278,46 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
 <li>The intent names should be very descriptive.</li>
 <li>Provide descriptive names, as the model relies heavily on intent names.</li>
 </ul>
-<p>When an intent is named “<strong><em>Show the status of my order</em></strong>,” for example, under <strong>Conversational Skills</strong> &gt; <strong>Dialog Tasks</strong>.</p>
+<p>When an intent is named “<strong><em>Show the status of my order</em></strong>,” for example, <strong>Dialogs</strong> under <strong>Virtual Assistant &gt; USE CASES</strong>.</p>
 <p><a class="glightbox" href="../images/intent-name-example.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/intent-name-example.png" alt="intent name example" title="intent name example" style="border: 1px solid gray; zoom:75%;"></a></p>
 <p>For a new bot, under <strong>Natural Language</strong> &gt; <strong>Training</strong> &gt; <strong>Intents</strong>, ensure that no training utterances are added for the intent.</p>
 <p><a class="glightbox" href="../images/intent-training-utterances.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/intent-training-utterances.png" alt="intent training utterances" title="intent training utterances" style="border: 1px solid gray; zoom:75%;"></a></p>
 <p>When you enable <strong>ZSL network type</strong> for an existing bot, the system does not identify the intent for its training data/utterances.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For more descriptive intent names like “<i>I want to place an order</i>” and “<i>Will I be able to place an order?</i>”, the system considers the punctuation and the case (upper or lower) to identify the intent.</p>
+<p>For more descriptive intent names like <em>“I want to place an order”</em> and <em>“Will I be able to place an order?”</em>, the system considers the punctuation and the case (upper or lower) to identify the intent.</p>
 </div>
-
 <p><strong>Enable the Zero-Shot Learning Network Type</strong></p>
 <p>To enable the <strong>ZSL</strong> model, follow the steps below:</p>
 <ol>
-<li>Navigate to <strong>Natural Language</strong> &gt; <strong>NLU Config</strong> &gt; <strong>Machine Learning</strong>.</li>
-<li>Select <strong><em>Zero-Shot Model with OpenAI</em></strong> in the dropdown list for <strong>Network Type</strong>, and click <strong>Save</strong>.
-<a class="glightbox" href="../images/zero-shot-model-selection-window.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/zero-shot-model-selection-window.png" alt="zero shot model" title="zero shot model" style="border: 1px solid gray; zoom:75%;"></a></li>
+<li>Navigate to <strong>Natural Language &gt; NLU Config &gt; Machine Learning</strong>.</li>
+<li>
+<p>Select <strong><em>Zero-Shot Model with OpenAI</em></strong> in the dropdown list for <strong>Network Type</strong>, and click <strong>Save</strong>.</p>
+<p><a class="glightbox" href="../images/zero-shot-model-selection-window.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/zero-shot-model-selection-window.png" alt="zero shot model" title="zero shot model" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
 </ol>
 <p><strong>Testing the Utterance</strong></p>
 <p>To test the utterance for the <strong>Zero-Shot Learning Model with OpenAI</strong> Network Type, follow the steps below:</p>
 <ol>
 <li>Navigate to <strong>Testing</strong> &gt; <strong>Utterance Testing</strong>.</li>
-<li>Type the utterance.</li>
-</ol>
-<p><strong>Example 1</strong>: “<em>I don’t want the product</em>.”
-<a class="glightbox" href="../images/test-utterance-example-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/test-utterance-example-1.png" alt="test utterance example" title="test utterance example" style="border: 1px solid gray; zoom:75%;"></a></p>
+<li>
+<p>Type the utterance.</p>
+<p><strong>Example 1</strong>: “<em>I don’t want the product</em>.”</p>
+<p><a class="glightbox" href="../images/test-utterance-example-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/test-utterance-example-1.png" alt="test utterance example" title="test utterance example" style="border: 1px solid gray; zoom:75%;"></a></p>
 <p><strong>Example 2</strong>: “<em>Where is my delivery?</em>”</p>
 <p><a class="glightbox" href="../images/test-utterance-example-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/test-utterance-example-2.png" alt="test utterance example" title="test utterance example" style="border: 1px solid gray; zoom:75%;"></a></p>
-<ol start="3"><li>Click <b>Save & Run</b>.</li>
-<li>The Machine Learning Model identifies and displays the following intents in the <b>NLP Analysis</b> window for each example.</li></ol>
-
-<p><strong>Example 1</strong>: <strong><em>Cancel My Order</em></strong> for “<em>I don’t want the product</em>.”
-<a class="glightbox" href="../images/cancel-my-order.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/cancel-my-order.png" alt="cancel order" title="cancel order" style="border: 1px solid gray; zoom:75%;"></a></p>
-<p><strong>Example 2</strong>: <strong><em>Show the status of my order</em></strong> for “<em>Where is my delivery?</em>”
-<a class="glightbox" href="../images/Show-the-status-of-my-order.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Show-the-status-of-my-order.png" alt="Show the status of my order" title="Show the status of my order" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>Click <strong>Save &amp; Run</strong>.</p>
+</li>
+<li>
+<p>The Machine Learning Model identifies and displays the following intents in the <b>NLP Analysis</b> window for each example.</p>
+<p><strong>Example 1</strong>: <strong><em>Cancel My Order</em></strong> for “<em>I don’t want the product</em>.”</p>
+<p><a class="glightbox" href="../images/cancel-my-order.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/cancel-my-order.png" alt="cancel order" title="cancel order" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p><strong>Example 2</strong>: <strong><em>Show the status of my order</em></strong> for “<em>Where is my delivery?</em>”</p>
+<p><a class="glightbox" href="../images/Show-the-status-of-my-order.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Show-the-status-of-my-order.png" alt="Show the status of my order" title="Show the status of my order" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+</ol>
 <p>The most relevant intent is identified and considered a definitive match.</p>
 <h3 id="few-shot-model-koreai-hosted-embeddings">Few-Shot Model (Kore.ai Hosted Embeddings)<a class="headerlink" href="#few-shot-model-koreai-hosted-embeddings" title="Permanent link">&para;</a></h3>
 <p>The Few-shot model allows you to train your virtual assistants using the task names and a few training utterances if required. Kore.ai uses <strong>custom NLU models pre-trained with large datasets</strong> to identify the intents based on their semantic similarity in the user utterance. This model works in the same manner as the <strong>ZSL</strong> Model except that more intents are considered while identifying the user’s intention in the utterances through LLMs hosted by the Platform. This model does not share any data externally and needs no additional enablement or costs.</p>
@@ -13272,28 +13377,29 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
 <li>Provides consistent responses with improved predictability.</li>
 <li>Easy to scale performance with additional training.</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Important Considerations</p>
-<ul><li>It is important to give descriptive names for your tasks so that the model finds the semantic similarity between the task names and the user utterances.</li>
+<div class="admonition important considerations">
+<p class="admonition-title">Important</p>
+<ul>
+<li>It is important to give descriptive names for your tasks so that the model finds the semantic similarity between the task names and the user utterances.</li>
 <li>This model identifies and defines granular intents describing the purpose of the user interaction, and not what the virtual assistant can do.</li>
 <li>Works well when the virtual assistant has good intent coverage.</li>
 <li>You may need to add training utterances to identify entities by the NER model for specific scenarios.</li>
 <li>When using FSL, dialog intents and FAQs need to be treated the same.</li>
 <li>Bot Synonyms, Stop Words and a few other ML Configurations are not used by the Few-Shot Model (Kore.ai Hosted Embeddings).</li>
-<li>The new Few-Shot Model (Kore.ai Hosted Embeddings) for Traits in NLP V3 allows the NLP Engine to train and identify Traits when set as the default model. This feature is available for only the new bots that have English as the NLU language. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/#few-shot-model-koreai-hosted-embeddings" target="_blank"> Learn more</a>.</li>
-<li>Intents are rescored by the R&R Engine by comparing the closest training sentences (including the task name) with the user utterance.</li></ul>
+<li>The new Few-Shot Model (Kore.ai Hosted Embeddings) for Traits in NLP V3 allows the NLP Engine to train and identify Traits when set as the default model. This feature is available for only the new bots that have English as the NLU language. <a href="#few-shot-model-koreai-hosted-embeddings">Learn more</a>.</li>
+<li>Intents are rescored by the R&amp;R Engine by comparing the closest training sentences (including the task name) with the user utterance.</li>
+</ul>
 </div>
-
 <p><strong>How it works</strong></p>
 <p>The model uses embeddings generated using large pre-trained language models to compare the similarity between the training data and the user utterances.</p>
 <ol>
 <li>
-<p>You can start by just creating intents with descriptive names. Post-testing the performance of the intent, you can consider adding a few utterances only for the failed variations. For example, in the banking use case, when the utterance “<em>I forgot my pin</em>” (which is very straightforward) is given, the virtual assistant correctly identifies the intent “<em>reset credit card pin</em>.”
-<a class="glightbox" href="../images/few-shot-model-create-intent.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/few-shot-model-create-intent.png" alt="Few-shot model create intent" title="Few-shot model create intent" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>You can start by just creating intents with descriptive names. Post-testing the performance of the intent, you can consider adding a few utterances only for the failed variations. For example, in the banking use case, when the utterance “<em>I forgot my pin</em>” (which is very straightforward) is given, the virtual assistant correctly identifies the intent “<em>reset credit card pin</em>.”</p>
+<p><a class="glightbox" href="../images/few-shot-model-create-intent.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/few-shot-model-create-intent.png" alt="Few-shot model create intent" title="Few-shot model create intent" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 <li>
-<p>However, for a more complex utterance like “<em>I received an alert on my phone about transactions that I have not done.</em>“, the virtual assistant identifies the intent “<em>Dispute credit card Transaction</em>” correctly only when a training utterance like “<em>Unidentified Transactions</em>” is added to nudge the model in the right direction.
-<a class="glightbox" href="../images/few-shot-model-complex-utterance.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/few-shot-model-complex-utterance.png" alt="Few-shot model complex utterance" title="Few-shot model complex utterance" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>However, for a more complex utterance like “<em>I received an alert on my phone about transactions that I have not done.</em>“, the virtual assistant identifies the intent “<em>Dispute credit card Transaction</em>” correctly only when a training utterance like “<em>Unidentified Transactions</em>” is added to nudge the model in the right direction.</p>
+<p><a class="glightbox" href="../images/few-shot-model-complex-utterance.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/few-shot-model-complex-utterance.png" alt="Few-shot model complex utterance" title="Few-shot model complex utterance" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 <li>
 <p>This behavior varies from scenario to scenario where the correct intent can be identified accurately based on the training utterance you provide.</p>
@@ -13303,9 +13409,11 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
 <p><strong>Enable the Few-Shot Network Type</strong></p>
 <p>To enable the <strong>FSL</strong> model, follow the steps below:</p>
 <ol>
-<li>Navigate to <strong>Natural Language</strong> &gt; <strong>NLU Config</strong> &gt; <strong>Machine Learning</strong>.</li>
-<li>Select <strong><em>Few-Shot Model (Kore.ai Hosted Embeddings)</em></strong> in the dropdown list for <strong>Network Type</strong>, and click <strong>Save</strong>.
-<a class="glightbox" href="../images/enable-few-shot-model-option.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enable-few-shot-model-option.png" alt="enable Few-shot model" title="enable Few-shot model" style="border: 1px solid gray; zoom:75%;"></a></li>
+<li>Navigate to <strong>Natural Language &gt; NLU Config</strong>.</li>
+<li>
+<p>Under <strong>Machine Learning</strong> in the <strong>Engine Tuning</strong> tab Select <strong><em>Few-Shot Model (Kore.ai Hosted Embeddings)</em></strong> in the dropdown list for <strong>Network Type</strong>, and Confirm.</p>
+<p><a class="glightbox" href="../images/enable-few-shot-model-option.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enable-few-shot-model-option.png" alt="enable Few-shot model" title="enable Few-shot model" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
 </ol>
 <h3 id="support-for-standard-bot-traits">Support for Standard Bot Traits<a class="headerlink" href="#support-for-standard-bot-traits" title="Permanent link">&para;</a></h3>
 <p>The Few-shot Model is now the default model for managing Traits. This feature is only available for the new bots created in NLP V3.</p>
@@ -13313,14 +13421,17 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
 <p class="admonition-title">Note</p>
 <p>All the older bots on NLP V3 will continue to use the Standard ML Model as the default traits model instead of the Few-shot model.</p>
 </div>
-
 <p>To manage the Few-shot Model as the default Network Type for traits, follow the steps below:</p>
 <ol>
-<li>Navigate to <strong>Natural Language</strong> &gt; <strong>Training</strong>, and click the <strong>Traits</strong> tab.</li>
+<li>Navigate to <strong>Natural Language &gt; Training</strong>, and click the <strong>Traits</strong> tab.</li>
 <li>Click the trait you want to configure from the list. Otherwise, add a new trait by clicking <strong>Add Traits</strong>.</li>
 <li>In the resulting window, click <strong>Manage</strong> to view the <strong>Manage Traits</strong> panel.</li>
-<li>The system selects <strong>Few-shot Model (Kore.ai Hosted Embeddings)</strong> by default as the Network Type, and the following settings appear:i. <strong>ML Threshold</strong> is set to the default value 0.5.ii. The <strong>Feature Extraction</strong> and <strong>Sequence Length</strong> options available for Standard Models don’t appear as they’re not applicable.
-<a class="glightbox" href="../images/Few-shot-trait-selection.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Few-shot-trait-selection.png" alt="Few-shot traits selection" title="Few-shot traits selection" style="border: 1px solid gray; zoom:75%;"></a></li>
+<li>
+<p>The system selects <strong>Few-shot Model (Kore.ai Hosted Embeddings)</strong> by default as the Network Type, and the following settings appear:</p>
+<p>i. <strong>ML Threshold</strong> is set to the default value 0.5.
+ii. The <strong>Feature Extraction</strong> and <strong>Sequence Length</strong> options available for Standard Models don’t appear as they’re not applicable.</p>
+<p><a class="glightbox" href="../images/Few-shot-trait-selection.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Few-shot-trait-selection.png" alt="Few-shot traits selection" title="Few-shot traits selection" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
 </ol>
 <h3 id="support-for-bot-synonyms">Support for Bot Synonyms<a class="headerlink" href="#support-for-bot-synonyms" title="Permanent link">&para;</a></h3>
 <p>The Few-Shot model supports Bot synonyms where a specific word in the user utterance including an abbreviation, acronym, or enterprise-specific word like “<em>A/C</em>” is replaced by the relevant term or word (<em>Account</em>) which will enable better intent recognition.</p>
@@ -13328,7 +13439,7 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
 <p>When the <strong>User utterance</strong> is “<em>Check my a/c balance</em>,” the <strong>Training data</strong> matched is “<em>Check my account balance</em>.”</p>
 <p>In this case, MPNET provides a high score (ML Threshold and ML Definitive scores) where the intent/entity/question is understood by the Virtual Assistant and matched to the training data. This support is helpful for migrating the solution-specific bots to the LLM approach.</p>
 <p><strong>Enabling Bot Synonyms</strong></p>
-<p>On the Platform, you can use Bot Synonyms as part of the Few-shot model by enabling the <strong>Bot Synonyms</strong> option in the <strong>Bot Level Intent Model Configurations</strong> window (after selecting the <strong>Few-Shot Model (Kore.ai Hosted Embeddings)</strong> Network Type under <strong>Natural Language</strong> &gt; <strong>NLU Config</strong>.</p>
+<p>On the Platform, you can use Bot Synonyms as part of the Few-shot model by enabling the <strong>Bot Synonyms</strong> option within <strong>Engine Tuning &gt; Machine Learning</strong> window (after selecting the <strong>Few-Shot Model (Kore.ai Hosted Embeddings)</strong> Network Type under <strong>Natural Language &gt; NLU Config</strong>).</p>
 <p><a class="glightbox" href="../images/bot-synonyms-few-shot-model.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/bot-synonyms-few-shot-model.png" alt="Few-shot bot synonyms" title="Few-shot bot synonyms" style="border: 1px solid gray; zoom:75%;"></a></p>
 <p>When the <strong>Bot Synonyms</strong> option is enabled, the following happens:</p>
 <ul>
@@ -13337,7 +13448,7 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
 <li>The modified sentence is used for intent identification (generation of embedding as well as similarity checks).</li>
 </ul>
 <h3 id="nlu-language-selection">NLU Language Selection<a class="headerlink" href="#nlu-language-selection" title="Permanent link">&para;</a></h3>
-<p>When you select the <strong>Zero-shot Model with OpenAI</strong> or <strong>Few-shot Model</strong> Network Types to train the intent models (on the <strong><em>Bot Level Intent Model Configurations</em></strong> page), you must ensure that the NLU Language enabled is <strong><em>English</em></strong> (default) under <strong>Configurations</strong> &gt; <strong>Languages</strong>.</p>
+<p>When you select the <strong>Zero-shot Model with OpenAI</strong> or <strong>Few-shot Model</strong> Network Types to train the intent models (on the <strong><em>Engine Tuning &gt; Machine Learning</em></strong> page), you must ensure that the NLU Language enabled is <strong><em>English</em></strong> (default) under <strong>Configurations</strong> &gt; <strong>Languages</strong>.</p>
 <p>If you enable another language, the system does not allow selecting these two network types, and displays an error message as shown below:</p>
 <p><a class="glightbox" href="../images/nlu-non-english-language-selection.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/nlu-non-english-language-selection.png" alt="nlu non-english language selection" title="nlu non-english language selection" style="border: 1px solid gray; zoom:75%;"></a></p>
 <h3 id="ml-threshold">ML Threshold<a class="headerlink" href="#ml-threshold" title="Permanent link">&para;</a></h3>
@@ -13370,7 +13481,7 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
    <td><strong>B</strong>
    </td>
    <td><code>"bardziej","bardzo","bez","bo","bowiem","by","byli","bym","bynajmniej","być",</code>
-<p>
+<br>
 <code>"był","była","było","były","będzie","będą"</code>
    </td>
   </tr>
@@ -13378,7 +13489,7 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
    <td><strong>C</strong>
    </td>
    <td><code>"cali","cała","cały","chce","choć","ci","ciebie","cię","co","cokolwiek","coraz",</code>
-<p>
+<br>
 <code>"coś","czasami","czasem","czemu","czy","czyli","często"</code>
    </td>
   </tr>
@@ -13386,7 +13497,7 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
    <td><strong>D</strong>
    </td>
    <td><code>"daleko","dla","dlaczego","dlatego","do","dobrze","dokąd","dość","dr","dużo","dwa",</code>
-<p>
+<br>
 <code>"dwaj","dwie","dwoje","dzisiaj","dziś"</code>
    </td>
   </tr>
@@ -13412,9 +13523,9 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
    <td><strong>J</strong>
    </td>
    <td><code>"ja","jak","jakaś","jakby","jaki","jakichś","jakie","jakiś","jakiż","jakkolwiek","jako",</code>
-<p>
+<br>
 <code>"jakoś","je","jeden","jedna","jednak","jednakże","jedno","jednym","jedynie","jego",</code>
-<p>
+<br>
 <code>"jej","jemu","jest","jestem","jeszcze","jeśli","jeżeli","już","ją"</code>
    </td>
   </tr>
@@ -13422,7 +13533,7 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
    <td><strong>K</strong>
    </td>
    <td><code>"każdy","kiedy","kierunku","kilka","kilku","kimś","kto","ktokolwiek","ktoś","która","które",</code>
-<p>
+<br>
 <code>"którego","której","który","których","którym","którzy","ku"</code>
    </td>
   </tr>
@@ -13436,7 +13547,7 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
    <td><strong>M</strong>
    </td>
    <td><code>"ma","mają","mam","mamy","mało","mgr","mi","miał","mimo","między","mnie","mną","mogą","moi",</code>
-<p>
+<br>
 <code>"moim","moja","moje","może","możliwe","można","mu","musi","my","mój"</code>
    </td>
   </tr>
@@ -13444,9 +13555,9 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
    <td><strong>N</strong>
    </td>
    <td><code>"na","nad","nam","nami","nas","nasi","nasz","nasza","nasze","naszego","naszych","natomiast",</code>
-<p>
+<br>
 <code>"natychmiast","nawet","nic","nich","nie","niech","niego","niej","niemu","nigdy","nim","nimi",</code>
-<p>
+<br>
 <code>"nią","niż","no","nowe","np","nr"</code>
    </td>
   </tr>
@@ -13460,7 +13571,7 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
    <td><strong>P</strong>
    </td>
    <td><code>"pan","pana","pani","pl","po","pod","podczas","pomimo","ponad","ponieważ","powinien","powinna",</code>
-<p>
+<br>
 <code>"powinni","powinno","poza","prawie","prof","przecież","przed","przede","przedtem","przez","przy"</code>
    </td>
   </tr>
@@ -13480,9 +13591,9 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
    <td><strong>T</strong>
    </td>
    <td><code>"ta","tak","taka","taki","takich","takie","także","tam","te","tego","tej","tel","temu",</code>
-<p>
+<br>
 <code>"ten","teraz","też","to","tobie","tobą","toteż","trzeba","tu","tutaj","twoi","twoim","twoja",</code>
-<p>
+<br>
 <code>"twoje","twym","twój","ty","tych","tylko","tym","tys",tzw","tę"</code>
    </td>
   </tr>
@@ -13502,7 +13613,7 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
    <td><strong>W</strong>
    </td>
    <td><code>"w","wam","wami","was","wasi","wasz","wasza","wasze","we","według","wie","wiele","wielu","więc",</code>
-<p>
+<br>
 <code>"więcej","wszyscy","wszystkich","wszystkie","wszystkim","wszystko","wtedy","www","wy","właśnie","wśród"</code>
    </td>
   </tr>
@@ -13516,7 +13627,7 @@ The Universal Sentence Encoder encodes text into high-dimensional vectors that c
    <td><strong>Z</strong>
    </td>
    <td><code>"z","za","zapewne","zawsze","zaś","ze","znowu","znów","został","zł","żaden","żadna","żadne",</code>
-<p>
+<br>
 <code>"żadnych","że","żeby"</code>
    </td>
   </tr>
@@ -13545,27 +13656,30 @@ You can set the n-gram using the <strong>n-gram Sequence Length –</strong> The
 <p class="admonition-title">Note</p>
 <p>The CRF model supports all languages and the Deep Neural Network model supports English, Spanish, German, and French. This option appears on the screen only when the selected VA language is supported by the Deep Neural Network model.</p>
 </div>
-
 <h3 id="ner-threshold">NER Threshold<a class="headerlink" href="#ner-threshold" title="Permanent link">&para;</a></h3>
 <p><strong>NER Threshold</strong> is a user-configurable parameter to set the minimum confidence score required for the system to identify and return only entity values above the set threshold. An entity with a confidence score below the set threshold is considered a <em>Probable Match</em> and one with a score that is equal to or above the threshold is considered an <em>Exact Match</em>.</p>
 <p>This setting helps filter out low-confidence recognitions and remove false positive results. This is beneficial for improving the accuracy of Named Entity Recognition (NER) results by excluding less reliable or uncertain identifications.</p>
 <p><a class="glightbox" href="../images/NER-threshold.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/NER-threshold.png" alt="NER threshold" title="NER threshold" style="border: 1px solid gray; zoom:75%;"></a></p>
-<div class="admonition note">
-<p class="admonition-title">Important Considerations</p>
-While using the <b>NER Threshold</b> setting, the following considerations should be made:
-<ul><li>This feature is useful for identifying NER entities for CRF and DNN methods.</li>
-<li>The user can set the threshold value between 0 and 1 in <b>multiples of 0.01</b>.</li>
-<li>For all the existing bots and languages, the default threshold value is <b>0</b>, for all new bots, the default value is configurable. To <b>0.3</b> currently.</li>
+<div class="admonition important considerations">
+<p class="admonition-title">Important</p>
+<p>While using the <strong>NER Threshold</strong> setting, the following considerations should be made:</p>
+<ul>
+<li>This feature is useful for identifying NER entities for CRF and DNN methods.</li>
+<li>The user can set the threshold value between 0 and 1 in <strong>multiples of 0.01</strong></li>
+<li>For all the existing bots and languages, the default threshold value is <strong>0</strong>, for all new bots, the default value is configurable. To <strong>0.3</strong> currently.</li>
 <li>During runtime, the system returns only the matched entity values with a confidence score above the threshold.</li>
 <li>The confidence score based on this setting is reflected in the following locations:</li>
-    <ul><li><b>Utterance Testing</b>: On the left panel.</li>
-    <li><b>Batch Testing</b>: In the CSV file and <b>More Details</b> section of the <b>Test Case Details</b> screen.
-    </li>
-    <li><b>Health and Monitoring Dashboard</b>: In the <b>More Details</b> section of the <b>Test Case Details</b> screen.</li></ul>
-<li>In scenarios where multiple entity values are identified for an entity, the system compares the confidence scores and returns the entity value with the maximum confidence score.</li>
-<li>When multiple entities are identified for a value, the system compares the confidence scores and qualifies the entity with the maximum confidence.</li></ul>
+<li><strong>Utterance Testing</strong>: On the left panel.</li>
+<li><strong>Batch Testing</strong>: In the CSV file and <b>More Details</b> section of the <strong>Test Case Details</strong> screen.</li>
+<li>
+<p><strong>Health and Monitoring Dashboard</strong>: In the <strong>More Details</strong> section of the <strong>Test Case Details</strong> screen.</p>
+</li>
+<li>
+<p>In scenarios where multiple entity values are identified for an entity, the system compares the confidence scores and returns the entity value with the maximum confidence score.</p>
+</li>
+<li>When multiple entities are identified for a value, the system compares the confidence scores and qualifies the entity with the maximum confidence.</li>
+</ul>
 </div>
-
 <p><strong>Example of NER Identification</strong></p>
 <p>For a flight booking service, when you set the <strong>NER Threshold</strong> value for the following entities:</p>
 <ul>
@@ -13592,17 +13706,15 @@ While using the <b>NER Threshold</b> setting, the following considerations shoul
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Enabling this flag reduces scores contributed by entity values.</p>
-</p>
 </div>
-
 <p><strong><em>Example</em></strong>: I want to fly to London tomorrow.</p>
-<p>In the above example, we don’t want the engine to learn that “London” and “tomorrow” are important features. Hence they are replaced with their Placeholders once NER is done and the Entity Placeholders flag is enabled. Training utterance becomes “I want to fly &lt;to&gt; on &lt;date&gt;.</p>
+<p>In the above example, we don’t want the engine to learn that “London” and “tomorrow” are important features. Hence they are replaced with their Placeholders once NER is done and the Entity Placeholders flag is enabled. Training utterance becomes “I want to fly &lt;to&gt; on &lt;date&gt;".</p>
 <p>This option is not valid when <em>Network Type</em> is set to <em>Transformer</em>.</p>
 <h3 id="upgrading-the-ml-model-for-old-vas">Upgrading the ML Model (for old VAs)<a class="headerlink" href="#upgrading-the-ml-model-for-old-vas" title="Permanent link">&para;</a></h3>
 <p>All new VAs that are created use the new ML model by default. Developers can upgrade the ML model for old VAs or downgrade the model for the VAs using the new model.</p>
 <p>If you are using a previous model of ML in the XO Platform, you can upgrade it as follows:</p>
 <ol>
-<li>Open the assistant for which you want to upgrade the ML model and go to <strong>Natural Language</strong> &gt; <strong>NLU Config</strong>.</li>
+<li>Open the assistant for which you want to upgrade the ML model and go to <strong>Natural Language &gt; NLU Config</strong>.</li>
 <li>Expand <strong>Machine Learning</strong>. Under the ML Upgrade section, click the <strong>Upgrade Now</strong> button. It opens a confirmation window.</li>
 <li>Click <strong>Upgrade and Train</strong>. You can see new customizable options under the Machine Learning section.</li>
 </ol>
@@ -13610,7 +13722,6 @@ While using the <b>NER Threshold</b> setting, the following considerations shoul
 <p class="admonition-title">Note</p>
 <p>If a VA is exported using the older model (V2) and imported as a new VA, it continues to be in the V2 model until you upgrade it.</p>
 </div>
-
 <h2 id="training-validations">Training Validations<a class="headerlink" href="#training-validations" title="Permanent link">&para;</a></h2>
 <p>The ML engine enables you to identify issues proactively in the training phase itself with the following set of recommendations: </p>
 <ul>
@@ -13622,33 +13733,32 @@ While using the <b>NER Threshold</b> setting, the following considerations shoul
 </ul>
 <h3 id="viewing-nlu-training-validations">Viewing NLU Training Validations<a class="headerlink" href="#viewing-nlu-training-validations" title="Permanent link">&para;</a></h3>
 <ol>
-<li>On the virtual assistant’s menu, click <strong>Natural Language -&gt;</strong> <strong>Training.</strong></li>
+<li>On the virtual assistant’s menu, click <strong>Natural Language &gt; Training.</strong></li>
 <li>
-<p>In the <strong>Intents</strong> tab, you can see the set of recommendations for the Intents and ML utterances.
-    <a class="glightbox" href="../images/training-intents-tab-select.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/training-intents-tab-select.png" alt="select intents tab" title="select intents tab" style="border: 1px solid gray; zoom:75%;"></a></p>
-<p><div class="admonition note">
+<p>In the <strong>Intents</strong> tab, you can see the set of recommendations for the Intents and ML utterances.</p>
+<p><a class="glightbox" href="../images/training-intents-tab-select.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/training-intents-tab-select.png" alt="select intents tab" title="select intents tab" style="border: 1px solid gray; zoom:75%;"></a></p>
+<div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The errors and warnings in this screen are examples. The ML validations vary based on the error or warning recommendation as explained in the Goal-Based NLU Training Validations section above.</p>
-</div></p>
+</div>
 </li>
 <li>
 <p>Hover over the validation options and view the following recommendations:</p>
 <ul>
 <li>
 <p>Hover on the <strong>Error</strong> icon to view the recommendations to resolve the error.</p>
-<p><div class="admonition note">
+<div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>An Error is displayed when the intent has a definite problem that impacts the virtual assistant's accuracy or intent score. Errors are high severity problems.</p>
-</div></p>
+</div>
 </li>
 <li>
 <p>Hover on the <strong>Warning</strong> icon and follow the instructions in the warning to enhance the training for ML utterances. </p>
-<p><div class="admonition note">
+<div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>A warning is displayed when the issue impacts the VA's accuracy and it can be resolved. Warnings are less severe problems when compared to errors.
-</p>
+<p>A warning is displayed when the issue impacts the VA's accuracy and it can be resolved. Warnings are less severe problems when compared to errors.</p>
 </div>
-<a class="glightbox" href="../images/handling-warning-section.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/handling-warning-section.png" alt="handle warning" title="handle warning" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p><a class="glightbox" href="../images/handling-warning-section.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/handling-warning-section.png" alt="handle warning" title="handle warning" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 </ul>
 </li>
@@ -13662,17 +13772,19 @@ While using the <b>NER Threshold</b> setting, the following considerations shoul
 <li>On the VA’s menu, click <strong>Natural Language</strong> &gt; <strong>Training</strong>.</li>
 <li>
 <p>The ‘In-Development’ version of the VA’s ML utterances open by default. If you want to see the utterances in the ‘Published’ version, toggle on the top right side of the window to <strong>Published</strong>. </p>
-<p><div class="admonition note">
+<div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The export of ML utterances varies based on this selection as explained in the Versioning and Behavior of the Exported Utterances section below.</p>
-</div></p>
+</div>
 </li>
 <li>
 <p>Click the options icon and select an option:</p>
 <ul>
 <li>Click <strong>Import Utterances</strong> and upload a CSV or JSON file with the utterances to import, or</li>
-<li>Click <strong>Export Utterances</strong> and select CSV or JSON formats to export the utterances.
-<a class="glightbox" href="../images/import-export-utterances-select.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/import-export-utterances-select.png" alt="import export utterances" title="import export utterances" style="border: 1px solid gray; zoom:75%;"></a></li>
+<li>
+<p>Click <strong>Export Utterances</strong> and select CSV or JSON formats to export the utterances.</p>
+<p><a class="glightbox" href="../images/import-export-utterances-select.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/import-export-utterances-select.png" alt="import export utterances" title="import export utterances" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
 </ul>
 </li>
 </ol>

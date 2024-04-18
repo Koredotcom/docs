@@ -17,7 +17,7 @@
         <link rel="next" href="../create-knowledge-graph-from-csv-and-json/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../images/kore_favicon.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
@@ -1490,7 +1490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../channels/amazon-alexa/" class="md-nav__link">
+      <a href="../../../channels/kore.ai-voice-gateway/kore-voice-gateway/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4394,7 +4394,7 @@
         
   
   <span class="md-ellipsis">
-    Talk to Bot
+    Test (Talk to Bot)
   </span>
   
 
@@ -4493,7 +4493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started.md" class="md-nav__link">
+      <a href="../../testing/regression-testing/batch-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4514,7 +4514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started.md" class="md-nav__link">
+      <a href="../../testing/regression-testing/conversation-testing/conversation-testing-landing-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5122,16 +5122,85 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../searchai/introduction-to-answers/" class="md-nav__link">
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Getting Started
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../searchai/introduction-to-answers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Answers in Search AI
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../searchai/setup-search-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Search AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -12260,14 +12329,13 @@
 <p>The <strong>Knowledge Graph Extraction</strong> service enables you to effortlessly move your enterprise’s Frequently Asked Questions (FAQ) content into a Knowledge Graph that trains your assistant based on these questions.</p>
 <p>The feature supports the extraction of knowledge from unstructured content such as web pages and PDF documents, and structured content like CSV files.</p>
 <p>After completing the extraction, you can edit the question and answers using an easy-to-use interface and organize them under the relevant Knowledge Graph nodes.</p>
-<p><a class="glightbox" href="../images/knowledge-extraction.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/knowledge-extraction.png" alt="knowledge extraction" title="knowledge extraction" style="border: 1px solid gray; zoom:75%;"></a></p>
 <h2 id="the-extraction-process">The Extraction Process<a class="headerlink" href="#the-extraction-process" title="Permanent link">&para;</a></h2>
 <p>To move data using the Knowledge Extraction service to the Knowledge Graph, follow the process below:</p>
 <ol>
-<li><strong>Extracting:</strong> Extract the existing FAQ content from structured or unstructured sources of question-answer data such as PDF, web pages, and CSV files. This extraction can be done before or after creating a Knowledge Graph for the assistant you are working with. 
+<li><strong>Extracting</strong>: Extract the existing FAQ content from structured or unstructured sources of question-answer data such as PDF, web pages, and CSV files. This extraction can be done before or after creating a Knowledge Graph for the assistant you are working with. 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <p>The Knowledge Extraction service supports a specific content structure for each source type. Refer to the <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-extraction/#supported-formats-and-requirements">Supported formats</a> section below for details.</p>
+    <p>The Knowledge Extraction service supports a specific content structure for each source type. Refer to the <a href="#supported-formats-and-requirements">Supported formats</a>.
     </div></li>
 </ol>
 <ol start="2"><li><b>Editing</b>: Upon successful data extraction, you can edit the questions and answer text before moving it to the Knowledge Graph.</li>
@@ -12281,14 +12349,13 @@
 <h2 id="extract-from-a-website">Extract from a Website<a class="headerlink" href="#extract-from-a-website" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Open the VA to which you want to extract the content.</li>
-<li>Select the <strong>Build</strong> top menu item.</li>
-<li>From the left menu, click <strong>Conversational Skills</strong> &gt; <strong>Knowledge Graph</strong>.</li>
-<li>Under the <strong>Extracts</strong> section, click <strong>Extract from URL</strong>.</li>
+<li>Go to <strong>Virtual Assistant</strong> &gt; <strong>Knowledge AI</strong> &gt; <strong>FAQs</strong> &gt; <strong>more</strong> (three dots) &gt; <strong>Manage Extracts</strong>.</li>
+<li>Click <strong>Extract from URL</strong>.</li>
 <li>Enter a <strong>Name</strong> for the extraction.</li>
 <li>Enter the <strong>URL</strong> of the page, and then click <strong>Proceed</strong>.
 <a class="glightbox" href="../images/extract-url.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/extract-url.png" alt="extract url" title="extract url" style="border: 1px solid gray; zoom:75%;"></a></li>
 <li>Once the extraction is completed successfully, a success status page appears.</li>
-<li><strong>Review &amp; Add</strong> the relevant questions to your Knowledge Graph,</li>
+<li><strong>Review &amp; Add</strong> the relevant questions to your Knowledge Graph.</li>
 </ol>
 <h2 id="extract-from-a-file">Extract from a File<a class="headerlink" href="#extract-from-a-file" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
@@ -12296,12 +12363,11 @@
 <p>The file size should not exceed 5MB.</p>
 </div>
 
-<p>To extract content from a file, please follow the steps below. For file format details, refer to the <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-extraction/#supported-formats-and-requirements" target="_blank">Supported Formats</a> section of this article.</p>
+<p>To extract content from a file, please follow the steps below. For file format details, refer to the <a href="#supported-formats-and-requirements">Supported Formats</a>.</p>
 <ol>
 <li>Open the VA to which you want to extract the content.</li>
-<li>Select the <strong>Build</strong> top menu item.</li>
-<li>From the left menu, click <strong>Conversational Skills</strong> &gt; <strong>Knowledge Graph</strong>.</li>
-<li>Under the <strong>Extracts</strong> section, click <strong>Extract from URL</strong>.</li>
+<li>Go to <strong>Virtual Assistant</strong> &gt; <strong>Knowledge AI</strong> &gt; <strong>FAQs</strong> &gt; <strong>more</strong> (three dots) &gt; <strong>Manage Extracts</strong>.</li>
+<li>Click <strong>Extract from file</strong>.</li>
 <li>
 <p>Click <strong>Browse</strong> to locate the file (PDF or CSV).</p>
 <p><a class="glightbox" href="../images/drag-and-drop-file.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/drag-and-drop-file.png" alt="locate file" title="locate file" style="border: 1px solid gray; zoom:75%;"></a></p>
@@ -12311,14 +12377,9 @@
 </li>
 <li>For PDF files you have an option to annotate the document before extraction.</li>
 <li>After the extraction is completed successfully, a success status page is displayed.</li>
-<li><strong>Review &amp; Add</strong> the relevant questions to your Knowledge Graph. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-extraction/#add-the-extracted-content-to-the-knowledge-graph" target="_blank">Learn more</a>.</li>
+<li><strong>Review &amp; Add</strong> the relevant questions to your Knowledge Graph.</li>
 </ol>
 <h3 id="annotate-extract">Annotate &amp; Extract<a class="headerlink" href="#annotate-extract" title="Permanent link">&para;</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This feature has been introduced in v8.0 of the Platform.</p>
-</div>
-
 <p>You might have all the FAQs related to your business in a PDF file but not in the XO Platform compatible format. Versions prior to 8.0 of the XO Platform did not allow incompatible files. The introduction of the Annotation tool helps annotate documents, identifying the key sections of the content. The Knowledge Extraction engine uses this information to extract the FAQs from the document.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -12328,8 +12389,8 @@
 <ol>
 <li>Select a new or previously extracted PDF file. Note that you can use a previously extracted file provided no questions from that file are added to the Knowledge Graph.</li>
 <li>
-<p>Click <strong>Annotate &amp; Extract</strong> to make annotation on a newly uploaded file.</p>
-<p>&lt;img src="&lt;../images/annotate-and extract-pdf.png&gt;" alt="annotate and extract" title="annotate and extract" style="border: 1px solid gray; zoom:75%;"&gt;</p>
+<p>Click <strong>Annotate &amp; Extract</strong> to make annotation on a newly uploaded file.
+    <a class="glightbox" href="../images/annotate-andextract-pdf.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt_text" src="../images/annotate-andextract-pdf.png" title="text" /></a></p>
 </li>
 <li>
 <p>The PDF document is loaded into the Annotation Tool allowing you to annotate the various sections in the document.</p>
@@ -12340,9 +12401,9 @@
 <li><strong>Footer</strong> – Text thus marked is ignored. Text marked as Footers is used to train the model to identify and ignore such text. Same as the Header, random marking of texts as footers must be avoided as marking text such as header or paragraphs as the footer invalidates the backend ML model, and will not produce optimal results.</li>
 <li><strong>Exclude</strong> – This text is not used for extraction.</li>
 <li><strong>Ignore Page</strong> – Pages marked as ignored are not used for extraction.</li>
+<li>You can use <strong>Remove Annotation</strong> to rectify any incorrect annotations.</li>
 </ul>
 </li>
-<li>You can use <strong>Remove Annotation</strong> to rectify any incorrect annotations.</li>
 <li>The Knowledge Graph Engine uses the headings, headers, and footers in the extraction process. Since the model is trained by the KG Engine, annotating the entire document is not necessary. You can annotate a couple of pages with headings, headers, and footers, extract and review the questions. If satisfied, you can proceed with adding questions to the Knowledge Graph, else repeat the annotation process till you get satisfactory results.</li>
 <li>Additional document information is provided:<ul>
 <li><strong>Document Info</strong> – Name, Size, and the Number of Pages of the document.</li>
@@ -12374,11 +12435,9 @@
 <h3 id="edit-the-extracted-content">Edit the Extracted Content<a class="headerlink" href="#edit-the-extracted-content" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Open the VA.</li>
-<li>Select the <strong>Build</strong> top menu item.</li>
-<li>From the left pane, click <strong>Conversational Skills</strong> &gt; <strong>Knowledge Graph</strong>.</li>
+<li>Got to <strong>Virtual Assistant</strong> &gt; <strong>Knowledge AI</strong> &gt; <strong>FAQs</strong> &gt; <strong>more</strong> (three dots) &gt; <strong>Manage Extracts</strong>.</li>
 <li>
-<p>The <strong>Knowledge Extraction</strong> section displays the list of all extractions.</p>
-<p><a class="glightbox" href="../images/knowledge-extraction-section.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/knowledge-extraction-section.png" alt="knowledge extraction section" title="knowledge extraction sections" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>The <strong>Manage Extracts</strong> section displays the list of all extractions.</p>
 </li>
 <li>
 <p>Click the name of a successful extract you want to edit.</p>
@@ -12397,9 +12456,8 @@
 <p>To add the content from the <strong>Extracts</strong> section, follow the steps below:</p>
 <ol>
 <li>Open the VA.</li>
-<li>Select the <strong>Build</strong> top menu item.</li>
-<li>From the left menu, click <strong>Conversational Skills</strong> &gt; <strong>Knowledge Graph</strong>.</li>
-<li>From the <strong>Knowledge Extraction</strong> section, select the name of a successful extract you want to add.</li>
+<li>Got to <strong>Virtual Assistant</strong> &gt; <strong>Knowledge AI</strong> &gt; <strong>FAQs</strong> &gt; <strong>more</strong> (three dots) &gt; <strong>Manage Extracts</strong>.</li>
+<li>From the <strong>Manage Extracts</strong> section, select the name of a successful extract you want to add.</li>
 <li>Drag and drop the required Q&amp;A to the node/term you want to add. As you drag and drop, the child nodes will be expanded.</li>
 <li>You can select multiple Q&amp;As and perform a bulk move.</li>
 </ol>
