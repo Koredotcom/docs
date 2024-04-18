@@ -5,7 +5,9 @@ Outbound campaigns are reshaping how businesses connect with their audience. The
 You can access Campaigns by going to **Contact Center AI** > **Campaigns** > **Proactive Outreach** > **Campaign Management**.
 <img src="../images/campaigns-page-main.png" alt="Campaigns Main Page" title="Campaigns Main Page" style="border: 1px solid gray; zoom:100%;">
 
-On this page, the following details of the voice campaigns are shown in a table:
+## Voice Campaigns
+
+The following details of the voice campaigns are shown in a table:
 <img src="../images/campaigns-top-panel.png" alt="Campaigns Table Top Panel" title="Campaigns Table Top Panel" style="border: 1px solid gray; zoom:100%;">
 
 * **Campaign** - Campaign name and Type.
@@ -20,15 +22,11 @@ On this page, the following details of the voice campaigns are shown in a table:
 * **Progress** - Progress of the campaign. The count refreshes every 5 seconds.
 * **Contact List** - The call list that will be dialed.
 * **Connection** - The following details are displayed based on the dialer type:
-    * **Agentless dialer**- The Experience Flow name selected while creating or editing a campaign is shown. For example, Default Conversational Input voice Flow.
+    * **Agentless dialer**- The Flow name selected while creating or editing a campaign is shown. For example, Default Conversational Input voice Flow.
 
     !!! Note
-    
-        The Campaigns module is only available on accounts configured with Kore Gateway. If an account is configured with AudioCodes or the mapped gateway is switched from AudioCodes to Kore Gateway, then the Campaigns module is unavailable. 
 
-The Campaigns module enables you to create **Voice** and **Proactive Web** campaigns.
-
-## Voice
+        The Campaigns module is only available on accounts configured with Kore Gateway. If an account is configured with AudioCodes or the mapped gateway is switched from AudioCodes to Kore Gateway, then the Campaigns module is unavailable.
 
 ### Create Voice Campaigns
 
@@ -45,16 +43,18 @@ Steps to create Voice campaigns:
     * **Contact Lists**: Select the **Contact Lists** that will be dialed, for the campaign from the drop-down list and then click **Done**.
     <img src="../images/contact-list.png" alt="Select Contact Lists" title="Select Contact Lists" style="border: 1px solid gray; zoom:100%;">
     * Select the **DNC List** from the drop-down.
-    <img src="..images/dnc-list.png" alt="DNC List" title="DNC List" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/dnc-list.png" alt="DNC List" title="DNC List" style="border: 1px solid gray; zoom:100%;">
 
-    !!! Notes
+        !!! Notes
 
-        * Only 1 DNC list can be selected per campaign.
-        * The contact list is automatically scrubbed against the DNC list after the Campaign is saved.
+            * Only 1 DNC list can be selected per campaign.
+            * The contact list is automatically scrubbed against the DNC list after the Campaign is saved.
+
     * Select the **Priority** from the drop-down list.
     <img src="../images/priority-list.png" alt="Priority" title="Priority" style="border: 1px solid gray; zoom:100%;">
     * Select the **Dialing Mode** from the drop-down list.
     <img src="../images/dialing-mode.png" alt="Dialing Mode" title="Dialing Mode" style="border: 1px solid gray; zoom:100%;">
+
 3. Under the **Outreach Strategy** tab, enter the following details:
     * **Caller ID**: Select the caller ID to be displayed for the campaign.
     <img src="../images/caller-id.png" alt="Caller ID" title="Caller ID" style="border: 1px solid gray; zoom:100%;">
@@ -69,9 +69,10 @@ Steps to create Voice campaigns:
     * **Contactable Timings**: Add the contactable timings (day of the week/time) when the dialer will dial the calls.
     <img src="../images/contactable-timings.png" alt="Contactable Timings" title="Contactable Timings" style="border: 1px solid gray; zoom:100%;">
 
-    !!! Note
+        !!! Note
 
-        Calls will be dialed to contacts based on the calling hours and timezone configured here, irrespective of the campaign's start and stop time.
+            Calls will be dialed to contacts based on the calling hours and timezone configured here, irrespective of the campaign's start and stop time.
+
 4. Click **Save**. The campaign is created.
 
 #### Agentless Dialer
@@ -84,12 +85,12 @@ Campaign managers can customize the dialing pace, allowing them to set the numbe
 
 To create a campaign when Agentless Dialing Mode is selected:
 
-* Select the **Start Flow** associated with the campaign. [Learn more](https://docs.kore.ai/smartassist/experience-flows/flow-designer-components/).
+* Select the **Start Flow** associated with the campaign. [Learn more](../../../flows/create-flows.md#the-start-flows).
 <img src="../images/start-flow.png" alt="Start Flow" title="Start Flow" style="border: 1px solid gray; zoom:100%;">
 
-!!! Note
+    !!! Note
 
- You can toggle on Answering Machine Detection if you want the system to determine whether the outbound call was received by an answering machine.
+        You can toggle on Answering Machine Detection if you want the system to determine whether the outbound call was received by an answering machine.
 
 ### Edit a Voice Campaign
 
@@ -103,9 +104,9 @@ Steps to edit a campaign:
 2. A pop-up window is displayed. Do the required changes and click **Save**.
 <img src="../images/edit-campaign-window.png" alt="Edit and Save Campaign" title="Edit and save Campaign" style="border: 1px solid gray; zoom:100%;">
 
-!!! Note
+    !!! Note
 
-    You cannot edit a campaign that in Active status. For campaigns in other statuses, you can edit limited fields.
+        You cannot edit a campaign that in Active status. For campaigns in other statuses, you can edit limited fields.
 
 ### Clone a Voice Campaign
 
