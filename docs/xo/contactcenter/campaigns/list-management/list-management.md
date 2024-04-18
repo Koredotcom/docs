@@ -15,11 +15,15 @@ To view the Contact Lists, click the **Contact Lists** tab.
 The following details are displayed in Contact Lists:
 <img src="../images/contact-lists-table.png" alt="Contact Lists Table" title="Contact Lists Table" style="border: 1px solid gray; zoom:100%;">
 
-**Contact Lists** - Name of the list. For example, Contact List 1.
-**Actions** - Edit and Delete lists.
-**Status** - Shows the status of the list. For example, Validating, Validated, and Invalid.
-**Contacts** - Shows the total count of contacts in the list. For example, 288.
-**Campaigns** - Name of the Campaign. For example, Post Sales Survey.
+* **Contact Lists** - Name of the list. For example, Contact List 1.
+
+* **Actions** - Edit and Delete lists.
+
+* **Status** - Shows the status of the list. For example, Validating, Validated, and Invalid.
+
+* **Contacts** - Shows the total count of contacts in the list. For example, 288.
+
+* **Campaigns** - Name of the Campaign. For example, Post Sales Survey.
 
 ### Create a Contact List
 
@@ -40,9 +44,9 @@ Steps to add a contact list:
 5. Select the **Mapping Fields** and click **Save**.  
 <img src="../images/mapping-fields-contact-list.png" alt="Mapping Fields" title="Mapping Fields" style="border: 1px solid gray; zoom:100%;">
 
-!!! Note
+    !!! Note
 
-    Phone Number is mandatory for voice campaigns.
+        Phone Number is mandatory for voice campaigns.
 
 The Contact List is created.
 
@@ -69,9 +73,9 @@ Steps to edit a contact list:
 2. Upload the call list and click **Save** when the list is appended.
 <img src="../images/append-contact-list.png" alt="Append Contact List" title="Append Contact List" style="border: 1px solid gray; zoom:100%;">
 
-!!! Note
+    !!! Note
 
-    You can only append a contact list, you cannot edit an existing contact list.
+        You can only append a contact list, you cannot edit an existing contact list.
 
 ### Delete a Contact List
 
@@ -106,12 +110,14 @@ Steps to create a new DNC list:
     !!! Note
 
         As of now, the default DNC List Type is Internal.
+
 3. Click **Select a CSV file to upload** a CSV file.
 <img src="../images/upload-dnc-call-list.png" alt="Upload DNC List" title="DeUpload DNC List" style="border: 1px solid gray; zoom:100%;">
 
     !!! Note
 
         You can download the template for the CSV file by clicking the CSV Template.
+
 4. The file upload progress is displayed.
 <img src="../images/dnc-list-progress.png" alt="DNC List Upload Progress" title="DNC List Upload Progress" style="border: 1px solid gray; zoom:100%;">
 
@@ -129,7 +135,8 @@ Steps to edit a DNC list:
 
     !!! Note
 
-        You cannot delete a DNC list when it is “In use”.
+        You cannot delete a DNC list when it is "In use".
+
 2. Upload the DNC list and click **Save** when the list is appended.
 <img src="../images/edit-dnc-list.png" alt="Edit DNC List" title="Edit DNC List" style="border: 1px solid gray; zoom:100%;">
 
@@ -142,7 +149,8 @@ Steps to delete a DNC list:
 
     !!! Note
 
-        You cannot delete a DNC list when it is “In use”.
+        You cannot delete a DNC list when it is "In use".
+
 2. A confirmation message is displayed. Click **Delete**.
 <img src="../images/delete-dnc-list-confirmation.png" alt="Delete DNC List Confirmation" title="Delete DNC List Confirmation" style="border: 1px solid gray; zoom:100%;">
 
