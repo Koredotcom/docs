@@ -85,7 +85,6 @@ Example
 
 ```
 setCallFlowVariable("user_id", context.UserContext._id)
-
 var userId =  getCallFlowVariable("user_id")
 ```
 
