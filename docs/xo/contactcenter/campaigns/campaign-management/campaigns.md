@@ -290,11 +290,11 @@ The following options are available for the Actions:
 1. On the **New Proactive Web Campaign** page, click **Post**.
 <img src="../images/post.png" alt="Post Button" title="Post Button" style="border: 1px solid gray; zoom:100%;"> 
 
-2. Click the **General** tab, and enter the **Campaign Name** and **Description**. Learn more.
+2. Click the **General** tab, and enter the **Campaign Name** and **Description**. [Learn more](#create-proactive-web-campaigns).
 3. Click the **Layout Design** tab. Click the **Edit** icon under **Message,** enter a message to be displayed, and click **Save**. You can use the options available in the editor to design the layout. Under **Appearance**, select the **Size**.
 <img src="../images/layout-design-post.png" alt="Layout Design Post" title="Layout Design Post" style="border: 1px solid gray; zoom:100%;"> 
 
-4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Goal**, **Channel**, and **Engagement Hours**. Learn more.
+4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Goal**, **Channel**, and **Engagement Hours**. [Learn more](#create-proactive-web-campaigns).
 5. Click **Save**.
 
 #### Banner
@@ -302,11 +302,11 @@ The following options are available for the Actions:
 1. On the **New Proactive Web Campaign** page, click **Banner**.
 <img src="../images/banner.png" alt="Banner Button" title="Banner Button" style="border: 1px solid gray; zoom:100%;"> 
 
-2. Click the **General** tab, and enter the **Campaign Name** and **Description**. Learn more.
+2. Click the **General** tab, and enter the **Campaign Name** and **Description**. [Learn more](#create-proactive-web-campaigns).
 3. Click the **Layout Design** tab. Click the **Edit** icon under **Message,** enter a message to be displayed, and click **Save**. You can use the options available in the editor to design the layout. Under **Appearance**, select the **Pattern** (**Sticky**/**Floating**), **Placement** (**Top**/**Bottom**), **Background**, and **Text Color**.
 <img src="../images/banner-layout design.png" alt="Layout Design Banner" title="Layout Design Banner" style="border: 1px solid gray; zoom:100%;"> 
 
-4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Goal**, **Channel**, and **Engagement Hours**. Learn more.
+4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Goal**, **Channel**, and **Engagement Hours**. [Learn more](#create-proactive-web-campaigns).
 5. Click **Save**.
 
 #### Button
@@ -325,7 +325,7 @@ The following options are available for the Actions:
     7. Select the **Placement** of the button (Left/Right).
     <img src="../images/slide-out.gif" alt="Layout Design Button" title="Layout Design Button" style="border: 1px solid gray; zoom:100%;"> 
 
-4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Goal**, **Channel**, and **Engagement Hours**. Learn more.
+4. Click the **Engagement Strategy** tab and configure the **Website**, **Rules**, **Goal**, **Channel**, and **Engagement Hours**. [Learn more](#create-proactive-web-campaigns).
 5. Click **Save**.
 
 ### Templates
