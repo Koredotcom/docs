@@ -318,7 +318,9 @@ nav:
     - Campaigns:  
       - Overview: contactcenter/campaigns/about-campaigns.md
       - Dashboard: contactcenter/campaigns/dashboard/campaign-dashboard.md
-      - Campaign Management: contactcenter/campaigns/campaign-management/campaigns.md
+      - Campaign Management:
+        - Voice Campaigns: contactcenter/campaigns/campaign-management/voice-campaigns.md
+        - Proactive Web Campaigns: contactcenter/campaigns/campaign-management/proactive-web-campaigns.md
       - List Management: contactcenter/campaigns/list-management/list-management.md
       - Settings: contactcenter/campaigns/settings/global-settings.md
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md

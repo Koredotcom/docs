@@ -5,7 +5,7 @@ List Management section consist of essential contact details for the campaigns. 
 1. **Contact Lists**: Contact lists contain vital information about individuals, enabling targeted and effective communication. It is a collection of names, and contact numbers necessary for running a campaign.
 2. **DNC (Do Not Contact) Lists**: These are contacts who have opted for "Do Not Contact" (DNC) or have registered on the national DNC facility, indicating their preference not to receive unsolicited calls. The DNC Lists Contacts count comprises contacts from both uploaded CSV files and contacts added directly through the bot or agent.
 
-You can view the lists by going to **Contact Center** > **Campaigns** > **Proactive Outreach** > **List Management**.
+You can view the lists by going to **Contact Center** > **Campaigns** > **List Management**.
 <img src="../images/contact-lists-main-page.png" alt="List Management Page" title="List Management Page" style="border: 1px solid gray; zoom:100%;">
 
 ## Contact Lists
@@ -16,13 +16,9 @@ The following details are displayed in Contact Lists:
 <img src="../images/contact-lists-table.png" alt="Contact Lists Table" title="Contact Lists Table" style="border: 1px solid gray; zoom:100%;">
 
 * **Contact Lists** - Name of the list. For example, Contact List 1.
-
 * **Actions** - Edit and Delete lists.
-
 * **Status** - Shows the status of the list. For example, Validating, Validated, and Invalid.
-
 * **Contacts** - Shows the total count of contacts in the list. For example, 288.
-
 * **Campaigns** - Name of the Campaign. For example, Post Sales Survey.
 
 ### Create a Contact List
