@@ -10,7 +10,7 @@ The Start node is the starting point of any flow and is available by default. Yo
 * Do one of the following:
     * Click the “+” icon and select a node from the pop-up menu.
 
-        <img src="../images/add-a-new-node.png" alt="Add a New Node" title="Add a New Node" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/add-a-new-node.png" alt="Add a new Node" title="Add a new Node" style="border: 1px solid gray; zoom:80%;">
 
     * Drag nodes from within the **Assets** panel on the left navigation bar onto the canvas.
 
