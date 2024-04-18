@@ -1,4 +1,4 @@
-# Create a new prompt experiment
+# Create a New Prompt Experiment
 
 A prompt experiment is a process of testing and comparing the performance of different AI models using a specific input called a prompt. The prompt can be a phrase, a question, or a paragraph of data, and the AI model generates an output based on the input.
 

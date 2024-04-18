@@ -1,4 +1,4 @@
-# Create a new version of the flow
+# Create a New Version of the Flow
 
 You can save versions of your flows, restore the older versions, and delete a version if required. Once you have deployed a flow it will be shown as Deployed version.
 

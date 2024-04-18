@@ -1,4 +1,4 @@
-# Add a new Gen AI Node
+# Add a New Gen AI Node
 
 **To add a Gen** **AI node, follow these steps**:
 

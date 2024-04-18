@@ -1,4 +1,4 @@
-# Add a new End node
+# Add a New End node
 
 **To add an End node, follow these steps**:
 

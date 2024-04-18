@@ -1,4 +1,4 @@
-# Select and deploy an open-source model
+# Select and Deploy an Open-Source Model
 
 Currently, we support thirty-plus open-source models and provide them as a service to our users.
 

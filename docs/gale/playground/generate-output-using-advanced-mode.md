@@ -1,4 +1,4 @@
-# Generate output using advanced mode
+# Generate Output using Advanced Mode
 
 While using the prompt playground, you can upload a dataset in advanced mode as input. You can add and pre-view the existing or newly uploaded datasets. You can also replace one dataset with another based on the requirement for a particular prompt and generate multiple outputs simultaneously. 
 

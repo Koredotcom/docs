@@ -1,4 +1,4 @@
-# Add an external model
+# Add an External Model
 
 You can select one option from the 2 options provided to add an external model.
 

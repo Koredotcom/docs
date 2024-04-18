@@ -1,4 +1,4 @@
-# Create a new Agent
+# Create a New Agent
 
 You can develop fresh agents tailored to your specific needs, integrate it as a logical business flow, and then launch it as API endpoint. When crafting your agents, it's essential to determine the prompts and base models it will utilize. For instance, you could design an app focused on job descriptions, offering a multitude of descriptions tailored to various roles within an enterprise. You can view all the agents you have created under the My Agents tab on the Agents page and all the apps that are shared with you under the Shared Agents.
 

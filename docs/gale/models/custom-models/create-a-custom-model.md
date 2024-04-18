@@ -1,4 +1,4 @@
-# Create a custom model
+# Create a Custom Model
 
 You can create a custom model in the Create a custom model wizard, which involves the following 5 steps:
 

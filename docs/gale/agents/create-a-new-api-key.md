@@ -1,4 +1,4 @@
-# Create a new API Key
+# Create a New API Key
 
 You can generate an API for your agents and share it with other trusted users.  It is essential to have a secure API key when trying to connect to these agents in an external environment. 
 

@@ -1,4 +1,4 @@
-# Run the flow
+# Run the Flow
 
 You can run a flow and test it to see how it works. Once you click the Run, a debug log opens and context variable data are generated. Every node in the flow has a context temporary storage where you can view what is the context object at each node level.
 

@@ -1,4 +1,4 @@
-# Configure your custom model
+# Configure your Custom Model
 
 You can modify the general details of your custom model if required.
 

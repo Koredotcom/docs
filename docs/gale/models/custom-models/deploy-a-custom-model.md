@@ -1,4 +1,4 @@
-# Deploy a custom model
+# Deploy a Custom Model
 
 Once the fine-tuning process is completed, you can deploy your custom model.
 

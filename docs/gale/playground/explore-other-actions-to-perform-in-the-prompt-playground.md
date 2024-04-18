@@ -1,4 +1,4 @@
-# Explore other actions to perform in the prompt playground
+# Explore Other Actions to Perform in the Prompt Playground
 
 You can also perform other actions on the prompt page and use it for your reference. You can view the history of your experiment and restore the version of the prompt you like, export prompt data, and copy the experiment as a prompt or as an LLM node.
 

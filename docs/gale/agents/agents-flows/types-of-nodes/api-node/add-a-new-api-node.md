@@ -1,4 +1,4 @@
-# Add a new API Node
+# Add a New API Node
 
 **To add an API node, follow these steps**:
 

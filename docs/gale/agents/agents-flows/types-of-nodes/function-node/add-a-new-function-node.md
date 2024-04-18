@@ -1,4 +1,4 @@
-# Add a new Functions Node
+# Add a New Functions Node
 
 **To add a Function node, follow these steps**:
 
