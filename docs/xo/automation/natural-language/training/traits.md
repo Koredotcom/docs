@@ -111,7 +111,7 @@ Each rule can have one or more conditions with **AND** as the operator. Multiple
 
 The Knowledge Graph can also be part of the discovery process using Traits. For this, each term or node can be associated with a trait. A given term can be associated with a single Trait. 
 
-Navigate to **Virtual Assistant > Knowledge AI > FAQs**, and click **Manage KG**. On the **Knowledge Graph** screen, click the **Settings** (Gear icon).
+Navigate to **Virtual Assistant > Knowledge AI > FAQs**, and click **Manage KG**. On the **Knowledge Graph** screen, click the **Settings** (Gear icon) corresponding to the parent or any of the child nodes.
 
 <img src="../images/navigate-to-manage-kg.png" alt="Navigate to Manage KG" title="Navigate to Manage KG" style="border: 1px solid gray; zoom:75%;">
 
