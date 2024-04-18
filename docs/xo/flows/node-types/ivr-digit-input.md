@@ -34,10 +34,10 @@ Conditions allow you to set the parameters based on which the digit input is rec
 Set up the **Timeout** flow by defining the following fields:
 
 1. Under **Timeout**, type the wait time in seconds, after which a timeout event will occur.
-    1. **Your Message to User**: From the **Choose your message type** dropdown list, select an option from _Text to Speech, Link, or audio_; then, type the message, and upload an audio file (.mp3 and .wav formats are only supported for audio files), or provide a URL to the error message to be played to the customer when a timeout event occurs. See General Settings for details on these options.
+    1. **Your Message to User**: From the **Choose your message type** dropdown list, select an option from _Text to Speech, Link, or audio_; then, type the message, and upload an audio file (.mp3 and .wav formats are only supported for audio files), or provide a URL to the error message to be played to the customer when a timeout event occurs. See [General Settings](#general-settings) for details on these options.
 2. Under **Advanced Control**, configure the following:
     2. **Number of Tries**: Type the limit for the maximum number of retries allowed for a customer to key in the input.
-    3. **Action after Exceeding Retries**: Select the node to direct the flow to after a timeout has occurred.
+    3. **Action after Exceeding Retries**: Select the node to direct the flow to after a timeout has occurred.  
 <img src="./../images/timeout-ivr-digit.png" alt="Timeout" title="Timeout" style="border: 1px solid gray; zoom:70%;">
 
 ### Wrong Input

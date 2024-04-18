@@ -39,7 +39,7 @@ For this, select the digit/key and the node to which it needs to be mapped. When
 * Alternatively, you can identify and select an existing node; in this case, the IVR Menu node will be connected to the selected node.  
 <img src="./../images/custom-exits.png" alt="Custom Exits" title="Custom Exits" style="border: 1px solid gray; zoom:70%;">
 * You can add multiple custom exits by clicking **+ Add Another** and selecting the required digit and the node.
-* You can delete a custom exit by clicking the **Delete** (bin) icon on the right.
+* You can delete a custom exit by clicking the **Delete** (bin) icon on the right.  
 <img src="./../images/delete-ivr-input.png" alt="Delete Custom Exit" title="Delete Custom Exit" style="border: 1px solid gray; zoom:70%;">
 
 ### Timeout
@@ -48,7 +48,7 @@ Click the **Timeout** icon to set up the timeout flow with the following fields:
 
 * **TIMEOUT**: Type the wait time in seconds, after which a timeout event will occur.
 * **Your Message to User**: From the **Choose your message type** dropdown list, select an option from _Text to Speech, Link, or audio_; then, type the message, and upload an audio file (.mp3 and .wav formats are only supported for audio files), or provide a URL to the error message to be played out to the customer when a timeout event occurs.
-See General Settings for a detailed explanation of these features.
+See [General Settings](#general-settings) for a detailed explanation of these features.
 * Set the value for **Advanced Control** > **Number of Tries** by typing the maximum number of retries or the allowed limit for a customer to key in the input.
 * Set the value for **Advanced Control** > **Action after Exceeding Retries** by selecting the node to direct the flow after a timeout has occurred.  
 <img src="./../images/timeout-ivr-menu.png" alt="TIMEOUT" title="TIMEOUT" style="border: 1px solid gray; zoom:70%;">
@@ -65,6 +65,6 @@ This tab allows you to configure the flow when the caller provides a wrong input
 
 Error Handling is available under the **Wrong Input** tab. Use this section to handle system errors that occur during a call. Define the following fields that determine how system errors will be handled during runtime:
 
-* **Your Message to User**: Choose the message type from _Text to Speech, Link, or audio_; then, type the message, upload an audio file (mp3 and .wav formats are only supported for audio files), or provide a URL to the error message that will be played out to the caller when a system error occurs. See General Settings for a detailed explanation of these features.
+* **Your Message to User**: Choose the message type from _Text to Speech, Link, or audio_; then, type the message, upload an audio file (mp3 and .wav formats are only supported for audio files), or provide a URL to the error message that will be played out to the caller when a system error occurs. See [General Settings](#general-settings) for a detailed explanation of these features.
 * **Go to node**: Select the node where you want to direct the error handling flow and define the system behavior. You can create a new node by selecting a node type or identifying and selecting an existing node.  
 <img src="./../images/error-handling-ivr-menu.png" alt="Error Handling" title="Error Handling" style="border: 1px solid gray; zoom:70%;">

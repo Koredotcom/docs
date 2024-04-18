@@ -13,7 +13,7 @@ There are two types of Flows:
 
 ### The Start Flows
 
-Start flows represent the most complex flow type, providing access to all node types. This flow type allows you to create experiences for inbound calls and chats.
+Start flows represent the most complex flow type, providing access to all [node types](../flows/node-types/introduction-to-flow-nodes.md). This flow type allows you to create experiences for inbound calls and chats.
 
 ### The Exit Flows
 
@@ -42,6 +42,7 @@ Steps to create a Start Flow:
 
 * The _Phone Number_ window is displayed as shown below. You can configure a custom local or toll-free number by clicking **Get New Phone Number**:
 <img src="../images/get-new-phone-number.png" alt="Get New Phone Number" title="Get New Phone Number" style="border: 1px solid gray; zoom:100%;">
+
 * Select the **Country**.
 * Select either the **Local** or **Toll-Free Number** option.
 * Select the **State**.
@@ -53,6 +54,7 @@ Steps to create a Start Flow:
 * Click the **Get Number** button.
 * Review the number on the _Forward to Phone Number_ page, select whether the number will be used for Inbound, Outbound Calls, or both, and click **Done**. A success confirmation message is displayed, and the phone number is added.
 <img src="../images/forward-to-phone-number.png" alt="Reserve Phone Number" title="Reserve Phone Number" style="border: 1px solid gray; zoom:100%;">
+
 * You can now use this number for your Start Flow.
 
 4. Select an **ASR Speech Recognition Engine**. You can choose from the following:
@@ -130,8 +132,8 @@ Steps to create an Exit Flow:
 Once you reach the Flow Designer, you can create your flow using the canvas and nodes. The visual guide below gives you an overview of the tools you will be working with.
 <img src="../images/flow-designer-page.png" alt="Flow Designer Page" title="Flow Designer Page" style="border: 1px solid gray; zoom:100%;">
 
-For a detailed navigation guide, please see [Navigate the Flow Designer](https://docs.kore.ai/smartassist/experience-flows/navigate-the-experience-flow-designer/).
+For a detailed navigation guide, please see [Navigate the Flow Designer](../flows/navigate-the-flow-designer.md).
 
 ## Publish a Flow
 
-When the Flow is published, it becomes available to end-users. [Learn more](https://docsinternal-kore.github.io/docs/xo/deploy/publishing-bot/#publishing-components).
+When the Flow is published, it becomes available to end-users. [Learn More](../deploy/publishing-bot.md#publishing-components).
