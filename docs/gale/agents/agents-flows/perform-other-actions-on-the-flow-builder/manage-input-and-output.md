@@ -31,7 +31,7 @@ You can initiate a fresh agent flow and specify the inputs required to initializ
 
 1. Click the **+ Add output variable** button under the **Output** tab.
 
-    The **Enter Output variable** dialog is displayed.
+    The **Enter output variable** dialog is displayed.
 
     <img src="../images/enter-output-variable.png" alt="Enter Output Variable" title="Enter Output Variable" style="border: 1px solid gray; zoom:80%;">
 

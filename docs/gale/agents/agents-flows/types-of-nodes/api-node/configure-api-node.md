@@ -39,7 +39,7 @@
 
     * **GET** – Returns the content of an existing target resource.
 
-1. Paste your **API call URL** in the text field and click **Test**. To use entity node values as parameters, use the following syntax for accessing the Context object: _https://myDomain.com/{{context.entities.topic}} for the context.entities.topic_.
+1. Paste your **API call URL** in the text field and click **Test**. To use entity node values as parameters, use the following syntax for accessing the Context object: https://myDomain.com/{{context.entities.topic}} for the context.entities.topic.
 
     You must use the double brackets {{ context.object }}.
 
