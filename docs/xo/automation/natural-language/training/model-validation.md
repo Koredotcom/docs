@@ -1,6 +1,6 @@
 # Model Validation
 
-Once you have built your virtual assistant and trained it, the XO Platform builds an ML model mapping user utterance with intents. <a href="https://docsinternal-kore.github.io/docs/xo/automation/testing/testing-your-bot-with-nlp/" target="_blank">Learn more</a>. 
+Once you have built your virtual assistant and trained it, the XO Platform builds an ML model mapping user utterance with intents. [Learn more](/docs/xo/automation/testing/testing-your-bot-with-nlp/){:target="_blank"}.
 
 Once created, it is recommended to validate the model to understand and estimate an unbiased generalization performance of the ML model.
 
@@ -11,11 +11,11 @@ The XO Platform offers the following validation methods:
 
 To choose the validation model, follow the steps below:
 
-1. Open the assistant that you want to validate the ML model and select **Build** from the top menu.
+1. Open the assistant that you want to validate the ML model.
 2. From the left menu, click **Natural Language** -> **Training**.
 3. Click the **Validate Model** drop-down list on the top-right and select the model.
 4. The results page of the corresponding validation method is displayed.
-<img src="../images/validate-model-training.png" alt="validate model" title="validate model" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/validate-model-training-window.png" alt="validate model" title="validate model" style="border: 1px solid gray; zoom:75%;">
 
 In the sections below, we will look into each of these methods in detail.
 
@@ -33,11 +33,11 @@ Performing Cross-Validation gives a more generalized metric on model performance
 
 ### Configuration
 
-The XO Platform supports **K-fold Cross-Validation**. For this, you must configure the **K-fold parameter** for cross-validation from the advanced NLP configurations. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/?h=validati#k-fold-cross-validation" target="_blank">Learn more</a>.
+The XO Platform supports **K-fold Cross-Validation**. For this, you must configure the **K-fold parameter** for cross-validation from the advanced NLP configurations. [Learn more](/docs/xo/automation/natural-language/nlu-configurations/engine-tuning/?h=validati#k-fold-cross-validation){:target="_blank"}.
 
 To initiate the training and generate the K-fold validation report, follow the below steps:
 
-1. From the left menu under the **Build** top menu option, click **Natural Language** -> **Training**.
+1. From the left menu, click **Natural Language** -> **Training**.
 2. On the Machine Learning Utterances page, click **Validate Model** drop-down list on the top-right and select **K-fold Cross-Validation**.
 3. On the **K-fold Cross-Validation** page, click **Generate** to initiate the training and generate the K-fold validation report. Generate button appears only when you perform the cross-validation for the first time.
 4. After the report is generated, you can click the **Re-generate** button on the top right to regenerate the report when needed.
@@ -209,6 +209,6 @@ To edit an individual utterance,
 
     You can also open this window by clicking an individual dot on the ML graph instead of the entire quadrant.
 
-To understand NLU Training Validations and NLU Validate model, see <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/machine-learning-engine/#training-validations" target="_blank">Learn more</a>.
+To understand NLU Training Validations and NLU Validate model, click [here](/docs/xo/automation/natural-language/training/machine-learning-engine/#training-validations){:target="_blank"}.
 
 Whenever the Validate model is updated, you can click the **Re-Run Model** to generate the latest matrix. 

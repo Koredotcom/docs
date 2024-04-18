@@ -4,7 +4,7 @@
 
 When you define tasks, you can access session variables provided by the Bots Platform, or custom variables that you define, as well as the context object that defines the scope of the variable.
 
-For example, some API requests may require you to set session variables before request execution, or a dialog task component may need to access a session variable to transition to the next node. In addition, a dialog task can access the `context` object with additional system variables. For more information, see the <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/context-object/" target="_blank">Context Object</a>.
+For example, some API requests may require you to set session variables before request execution, or a dialog task component may need to access a session variable to transition to the next node. In addition, a dialog task can access the `context` object with additional system variables. For more information, see the <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/context-object/" target="_blank">Context Object</a>.
 
 You can use session variables where you define JavaScript for the User Prompt editor in tasks under the JavaScript tab.
 

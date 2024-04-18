@@ -34,17 +34,16 @@ On the XO Platform, Amend Entity behavior is defined at two levels:
 
 To Set VA Level Amend Entity Behavior, follow the below steps:
 
-1. Select the **Build** tab from the top menu
-2. From the left menu, click **Intelligence** > **Amend Entity**.
-3. By default, this option s disabled.
-4. Once you **Allow amend entities**, various Dialog Resumption options are available:
+1. From the left menu, click **Natural Language** > **NLU Config** > **Amend Entity**.
+2. By default, this option s disabled.
+3. Once you **Allow amend entities**, various Dialog Resumption options are available:
     * **Re-execute dialog from amended entity** – use this option to resume the dialog by evaluating the amended entity’s connections. You can further choose to:
         * _Clear entity values captured downstream_ – to clear all entities captured between the identified entity and the amend
         * _Skip display of previously displayed messages_ – messages from Message nodes alone.
     * **Resume dialog from amend identification node** – use this option to resume the dialog from the node where the amend was identified.
-5. The amend process can be extended to entities marked as _Hidden_ using the **Amend Hidden Entities** option.
+4. The amend process can be extended to entities marked as _Hidden_ using the **Amend Hidden Entities** option.
     
-    <img src="../images/amend-hidden-entities.png" alt="amend hidden entities" title="amend hidden entities" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/amend-hidden-entities-window.png" alt="amend hidden entities" title="amend hidden entities" style="border: 1px solid gray; zoom:75%;">
 
 ### Task Level
 
@@ -52,7 +51,7 @@ Amend entity behavior is set at the Task level also. The configurations defined 
 
 To set Task Level Amend Entity Behavior, follow the below steps:
 
-1. Go to **Build > Conversation Skills > Dialog Tasks** and select the task that you want to configure.
+1. Go to **Conversation Skills > Dialog Tasks** and select the task that you want to configure.
 2. On the Dialog Task page, click the **More Options** icon and select the **Manage Amend Behavior**.
 
     <img src="../images/manage-amend-behavior.png" alt="manage amend behavior" title="manage amend behavior" style="border: 1px solid gray; zoom:75%;">

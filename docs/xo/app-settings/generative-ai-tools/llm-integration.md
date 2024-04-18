@@ -22,36 +22,36 @@ Steps to configure a pre-built LLM:
 
 
 
-1. Go to **Build** > **Natural Language** > **Generative AI & LLM** > **LLM Integrations**.
+1. Go to **App Settings** > **Generative AI Tools** > **LLM Integrations**.
 
 
-    ![alt_text](images/llm-integration(9).png "image_tooltip")
+    ![alt_text](images/llm-intro.png  )
 
 2. Choose the LLM you want to configure.
     1. Steps to configure Azure OpenAI:
         1. Click **Configure Now** for Azure OpenAI. 
-            ![alt_text](images/llm-integration(12).png "image_tooltip")
+            ![alt_text](images/llm-integration(12).png  )
         2. On the **Authorization** tab, enter the details like **API Key** and the **User Sub Doman**. Toggle on the required **model** and enter **Deployment ID**.
         3. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
     2. Steps to configure OpenAI:
         1. Click **Configure Now** for OpenAI. 
-            ![alt_text](images/llm-integration(5).png "image_tooltip")
+            ![alt_text](images/llm-integration(5).png  )
         2. On the **Authorization** tab, enter the **API Key**.
         3. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
     3. Steps to configure Anthropic:
         1. Click **Configure Now** for Anthropic. 
-            ![alt_text](images/llm-integration(1).png "image_tooltip")
+            ![alt_text](images/llm-integration(1).png  )
         2. On the **Authorization** tab, enter the **API Key**.
         3. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
 
 3. The configured model is listed in the LLM Integrations section. The status changed to _X/Y_ models configured, where _X_ is the number of the model(s) configured, and _Y_ is the number of model(s) supported. 
-    ![alt_text](images/llm-integration(10).png "image_tooltip")
+    ![alt_text](images/llm-integration(10).png  )
 
 4. If you want to configure another model, click **+New Integration** and select the model. 
 
-    ![alt_text](images/llm-integration(11).png "image_tooltip")
+    ![alt_text](images/llm-integration(11).png  )
 
-5. The next step is to enable[ Co-Pilot](https://developer.kore.ai/docs/bots/nlp/co-pilot-features/) and[ Dynamic Conversations](https://developer.kore.ai/docs/bots/nlp/dynamic-conversations-features/) features.
+5. The next step is to enable [ Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
 
 
 ## Custom LLM Integration Framework
@@ -71,32 +71,29 @@ Steps to integrate a Custom LLM:
 
 
 
-1. Go to **Build** > **Natural Language** > **Generative AI & LLM** > **LLM Integrations**.
+1. Go to **App Settings** > **Generative AI Tools** > **LLM Integrations**.
 2. Click **Custom LLM**. 
 
 
-    ![alt_text](images/llm-integration(4).png "image_tooltip")
+    ![alt_text](images/llm-intro.png  )
 
     If you have already configured a model, click **New Integration** > **Custom Integration**. 
 
 
 
-    ![alt_text](images/llm-integration(3).png "image_tooltip")
+    ![alt_text](images/llm-integration(3).png  )
 
 3. On the **Configuration** tab, enter the details like **Integration Name**, **Model Name**, **Endpoint**, and **Headers**. 
 
 
-    ![alt_text](images/llm-integration(8).png "image_tooltip")
+    ![alt_text](images/llm-integration(8).png  )
 
 4. On the **Auth** tab, select an existing authorization profile from the drop-down or create a new profile  to use for this request. For more information, see the[ Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/) article. 
- 
+    ![alt_text](images/llm-integration(15).png  )
 
+    !!! note
 
-    ![alt_text](images/llm-integration(15).png "image_tooltip")
- 
- 
-
-       **Note**: OAuthv2.0 and Kerberos SPNEGO auth profiles are supported for the Custom LLM integration. 
+         OAuthv2.0 and Kerberos SPNEGO auth profiles are supported for the Custom LLM integration. 
 
 5. Click **Test**. The Request Body to test LLM Connection pop-up is displayed. 
 
@@ -104,18 +101,55 @@ Steps to integrate a Custom LLM:
 
 
 
-    ![alt_text](images/llm-integration(2).png "image_tooltip")
+    ![alt_text](images/llm-integration(2).png  )
 
 6. Enter the test payload and then click **Test** to check the connection. If the LLM connection is successful during the test call, it displays a confirmation message. If not, it shows an error message. 
 
-    ![alt_text](images/llm-integration(7).png "image_tooltip")
+    ![alt_text](images/llm-integration(7).png  )
 
 7. Please **Read Policy Guidelines**, select the check box, and then click **Save**.
 8. The success confirmation message is displayed on the screen. The configured model is listed in the LLM Integration section. The status changed to _X/Y_ models configured, where _X_ is the number of the model(s) configured, and _Y_ is the number of model(s) supported. 
 
-    ![alt_text](images/llm-integration(17).png "image_tooltip")
+    ![alt_text](images/llm-integration(17).png  )
 
-9. The next step is to add[ Prompts](https://developer.kore.ai/docs/bots/nlp/prompts-and-requests-library/).
+9. The next step is to add[ Prompts](prompts-and-requests-library.md).
+
+## Kore.ai XO GPT Integration
+
+The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. Initial capabilities include Conversation Summarization and User Query Rephrasing.
+
+!!! note
+
+    The Kore.ai XO GPT Module is currently available only for English language interactions. The respective models are available only in our global deployment (US Cloud – https://bots.kore.ai).
+
+
+### Enable Kore.ai XO GPT Integration
+Steps to enable Kore.ai XO GPT Models.
+
+1. Go to **App Settings** > **Generative AI Tools** > **LLM Integrations**..
+
+2. Click **Enable Now** for Kore.ai XO GPT.
+![alt_text](images/llm-intro.png  )
+
+    If you have already configured a model, click **+New Integration > Kore.ai XO GPT**.
+
+    ![alt_text](images/xogpt2.png  )
+ 
+3. On the **Models** tab, toggle on the models as required.
+![alt_text](images/xogpt3.png  )
+
+
+4. Read the Policy Guidelines, select the checkbox, and click Save.
+5. The success confirmation message is displayed on the screen. The configured model is listed in the LLM Integration section. The status changed to X/Y models configured, where X is the number of the model(s) configured, and Y is the number of model(s) supported.
+![alt_text](images/xogpt4.png  )
+
+
+6. The next step is to enable [ Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
+
+
+
+
+
 
 
 ## Reset/Delete the Configured LLM Integration
@@ -141,17 +175,17 @@ Steps to reset an integration:
 
 
 
-1. Go to **Build** > **Natural Language** > **Generative AI & LLM**.
+1. Go to **App Settings** > **Generative AI Tools** > **LLM Integrations**.
 2. In the **LLM Integration** section, click three dots (more icons) and then click the **Reset Configuration** for the integration you want to reset. 
 
 
 
 
-    ![alt_text](images/llm-integration(14).png "image_tooltip")
+    ![alt_text](images/llm-integration(14).png  )
 
 3. Click **Reset** in the confirmation dialog. 
 
-    ![alt_text](images/llm-integration(6).png "image_tooltip")
+    ![alt_text](images/llm-integration(6).png  )
 
 4. The success message is displayed.
 
@@ -162,16 +196,34 @@ Steps to delete an integration:
 
 
 
-1. Go to **Build** > **Natural Language** > **Generative AI & LLM**.
+1. Go to **App Settings** > **Generative AI Tools** > **LLM Integrations**.
 2. In the **LLM Integration** section, click three dots (more icons) and then click **Delete** for the integration you want to delete. 
 
-    ![alt_text](images/llm-integration(13).png "image_tooltip")
+    ![alt_text](images/llm-integration(13).png  )
 
 3. Click **Delete** in the confirmation dialog. 
 
 
-    ![alt_text](images/llm-integration(16).png "image_tooltip")
+    ![alt_text](images/llm-integration(16).png  )
 
 4. The success message is displayed.
 
 		
+
+
+
+### Reset Configured Kore.ai XO GPT Integration
+Steps to reset an integration:
+
+1. Go to **App Settings** > **Generative AI Tools** > **LLM Integrations**..
+2. In the **LLM Integration section**, click three dots (more icons) for Kore.ai XO GPT and then click the **Reset Configuration** for the integration you want to reset.
+![alt_text](images/xogpt5.png  )
+
+
+
+3. Click Reset in the confirmation dialog.
+![alt_text](images/image7-6.png  )
+
+
+
+4. The success message is displayed.

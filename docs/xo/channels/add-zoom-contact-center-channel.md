@@ -30,13 +30,13 @@ Please ensure you have the following before enabling this channel:
 The important steps to set up the ZCC channel are summarized below:
 
 
-1. [Associate an App to the channel](/docs/xo/channels/add-zoom-contact-center-channel/#step-1-associate-an-app).
-2. [Create a Bot Connector instance](/docs/xo/channels/add-zoom-contact-center-channel/#step-2-add-koreai-chatbot-connector-instance) on [Zoom App Marketplace](https://marketplace.zoom.us/apps) to associate a virtual assistant.
-3. [Authorize the connector by configuring the required parameters](/docs/xo/channels/add-zoom-contact-center-channel/#step-3-authorize-the-connector).
-4. [Enable the channel on the XO Platform](/docs/xo/channels/add-zoom-contact-center-channel/#step-4-enable-the-channel).
+1. [Associate an App to the channel](#step-1-associate-an-app).
+2. [Create a Bot Connector instance](#step-2-add-koreai-chatbot-connector-instance) on [Zoom App Marketplace](https://marketplace.zoom.us/apps) to associate a virtual assistant.
+3. [Authorize the connector by configuring the required parameters](#step-3-authorize-the-connector).
+4. [Enable the channel on the XO Platform](#step-4-enable-the-channel).
 
 
-### **Step 1: Associate an App**
+### Step 1: Associate an App
 
 As a first step to enable the channel, associate an app on the XO Platform by selecting an app from the list or creating a new one.
 
@@ -72,13 +72,13 @@ To create an app, follow the steps below:
         <img src="../images/Zoom3.png" alt="show standard messages" title="show standard messages" style="border: 1px solid gray; zoom:100%;">
 
 
-    * Click **Manage Responses** to add custom messages in the push notification. To learn more about adding responses, read articles [Default Standard Responses](https://developer.kore.ai/docs/bots/bot-intelligence/default-standard-responses/) and [Default Conversations](https://developer.kore.ai/docs/bots/bot-intelligence/default-dialog/).
+    * Click **Manage Responses** to add custom messages in the push notification. To learn more about adding responses, read articles [Default Standard Responses](../automation/intelligence/conversation-management/standard-responses.md) and [Default Conversations](../automation/intelligence/conversation-management/default-conversations.md).
     * Click **Save** and then, click **Create**.
     <img src="../images/Zoom4.png" alt="manage responses" title="manage responses" style="border: 1px solid gray; zoom:100%;">
 
 
 
-### **Step 2: Add Kore.ai Chatbot Connector Instance**
+### Step 2: Add Kore.ai Chatbot Connector Instance
 
 To set up **Zoom Contact Center** as a channel, the bot has to be associated with the instance of the Kore.ai Chat bot connector available in the Zoom app marketplace. To create a Chatbot Connector, follow the steps below:
 
@@ -91,7 +91,7 @@ To set up **Zoom Contact Center** as a channel, the bot has to be associated wit
 <img src="../images/Zoom5.png" alt="Zoom  connector" title="Zoom connector" style="border: 1px solid gray; zoom:100%;">
 
 
-### **Step 3: Authorize the Connector**
+### Step 3: Authorize the Connector
 
 The next step after creating a connector is to authorize it on the **Create Kore.ai Connector** page of the **Zoom App Marketplace** portal. To configure, follow the steps below:
 
@@ -100,20 +100,18 @@ The next step after creating a connector is to authorize it on the **Create Kore
     * Select **Zoom Contact Center**.
     * Select **Chatbot** from the dropdown for **Choose Bot Type**.
     * Click **Next**.
-
     <img src="../images/Zoom6.png" alt="Zoom  connector details" title="Zoom connector details" style="border: 1px solid gray; zoom:100%;">
 
 2. Provide the following information in the **Authorize** section:
     * Select the region you want the chatbot to be available from the dropdown.
     * The **Base URL** of the Kore.ai Platform to connect to the app. For example, the base URL for Kore.ai is `bots.kore.ai`.
     * Copy and paste the **Bot ID**, **Client ID**, and **Client Secret** values from the **Channels & Flows** > **Channels** > **Digital** > **All** > **Configurred** section of the XO Platform (shown below) for **Authorization Parameters**.
-    <img src=".../images/Zoom7.png" alt="Zoom  bot details" title="Zoom bot details" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/Zoom7.png" alt="Zoom  bot details" title="Zoom bot details" style="border: 1px solid gray; zoom:100%;">
 
 3. Click **Next**.
 <img src="../images/Zoom8.png" alt="save Zoom  configuration" title="Save Zoom configuration" style="border: 1px solid gray; zoom:70%;">
 
-4. Copy the **Post URL** and **Access Token** values from the **Create Kore.ai Chatbot Connector** page.
-<img src="../images/Zoom9.png" alt="Zoom  URL" title="Zoom URL" style="border: 1px solid gray; zoom:100%;">
+4. Copy the **Post URL** and **Access Token** values from the **Create Kore.ai Chatbot Connector** page.  <img src="../images/Zoom9.png" alt="Zoom  URL" title="Zoom URL" style="border: 1px solid gray; zoom:100%;">
 
 5. Paste to the relevant fields on the Kore.ai XO Platform in the **Zoom Contact Center** > **Configurations** section.
 <img src="../images/Zoom10.png" alt="Zoom  contact center" title="Zoom contact center" style="border: 1px solid gray; zoom:100%;">
@@ -129,15 +127,14 @@ The following message appears once the Kore.ai Chatbot connector is authorized s
 
 
 
-### **Step 4: Enable the Channel**
+### Step 4: Enable the Channel
 
 The final step in the setup is to enable the channel on the XO Platform. To enable, follow the steps below:
 
 
 1. On the XO Platform, under **Zoom Contact Center** > **Configurations**, select **Yes** for **Enable Channel**.
 2. Click **Save**.
-
 <img src="../images/Zoom14.png" alt="enable Zoom  channel" title=" enable Zoom channel" style="border: 1px solid gray; zoom:100%;">
 
 
-You’re now ready to test the new channel integration by publishing your virtual assistant. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
+You’re now ready to test the new channel integration by publishing your virtual assistant. [Learn more](../deploy/publishing-bot.md).

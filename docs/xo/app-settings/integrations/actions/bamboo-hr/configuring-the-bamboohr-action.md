@@ -7,7 +7,7 @@ This document explains how to enable, authorize, configure, and install the Bamb
 
 ## Authorizations Supported
 
-The Kore.ai XO Platform supports basic authentication to allow BambooHR integration to exchange data. For more information, read the [Bot Authorization Overview](../../../../dev-tools/bot-authorization/bot-authentication){:target="_blank"} article.
+The Kore.ai XO Platform supports basic authentication to allow BambooHR integration to exchange data. For more information, read the [Bot Authorization Overview](../../../dev-tools/bot-authorization/bot-authentication.md){:target="_blank"} article.
 
 The Kore.ai XO Platform supports the following authorization types for the BambooHR integration:
 
@@ -26,9 +26,9 @@ Before enabling the BambooHR action, complete the following prerequisites:
 
 Steps to enable the BambooHR action:
 
-1. Go to **Build > Integrations > Actions**.
-2. Once you click the **Actions** menu, all integrations are shown in the **Available** region. Select the **BambooHR** action.
-<img src="../images/bamboo-hr-img1.png" alt="BambooHR" title="BambooHR" style="border: 1px solid gray;zoom:50%;"/>
+1. Go to **App Settings** > **Integrations** > **Actions**.
+2. Select the **BambooHR** action.
+
 
 ### Pre-authorize the Integration
 
@@ -38,7 +38,7 @@ You can authorize the integration using your credentials. The developer authoriz
 
 Steps to authorize a BambooHR action using developer credentials:
 
-1. Go to **Build > Integrations > Actions**.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Select the **BambooHR** action in the **Available Actions** region.
 3. In the **Configurations** dialog, select the **Authorization** tab.
 4. Enter the following details:
@@ -49,7 +49,9 @@ Steps to authorize a BambooHR action using developer credentials:
 5. Click **Enable**. When you configure the action for the first time, the **Integration Successful**  pop-up is displayed.  
 <img src="../images/bamboo-hr-img3.png" alt="Integration Successful" title="Integration Successful" style="border: 1px solid gray;zoom:50%;"/>
 
-**Note**: You will notice the BambooHR action is moved from _Available_ to _Configured_ region.
+!!! note
+
+    You will notice the BambooHR action is moved from _Available_ to _Configured_ region.
 
 
 ### Allow End User to Authorize
@@ -58,7 +60,7 @@ You can authorize the integration at a user level with their login credentials. 
 
 Steps to authorize a BambooHR action at a user level:
 
-1. Go to **Build > Integrations > Actions**.
+1. Go to **App Settings** > **Integrations** > **Actions**.
 2. Select the **BambooHR** action in the **Available Actions** region.
 3. In the Configurations dialog, select the **Authorization** tab.
 4. Enter the following details:
@@ -96,12 +98,6 @@ Steps to install action templates:
 2. In the Integration Templates dialog, click the **Install** button to begin the installation.  
 <img src="../images/bamboo-hr-img9.png" alt="Begin installation" title="Begin installation" style="border: 1px solid gray;zoom:50%;"/>
 
-3. Once the template is installed, click the **Go to Dialog** button to view the dialog task.
-4. Once all templates are installed, a dialog task for each template is auto-created.  
-<img src="../images/bamboo-hr-img10.png" alt="Dialog tasks created for installed templates" title="Dialog tasks created for installed templates" style="border: 1px solid gray;zoom:50%;"/>
+3. Once the template is installed, the associated dialog task is auto-created and displayed on the Dialogs page. Click **Go to Dialog** or go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
 
-5. You can also select the desired dialog task from the templates and click **Proceed**. For example, select the **Create an employee** task.  
-<img src="../images/bamboo-hr-img11.png" alt="Select task and proceed" title="Select task and proceed" style="border: 1px solid gray;zoom:50%;"/>
-
-6. Once you click **Proceed**, the dialog task is auto-created, and the canvas opens with all required entity nodes, service nodes, and message scripts.  
-<img src="../images/bamboo-hr-img12.png" alt="Canvas for new task" title="Canvas for new task" style="border: 1px solid gray;zoom:50%;"/>
+4. To start using the templates, see [Using BambooHR Action Templates.](using-the-bamboohr-templates.md){:target="_blank"}

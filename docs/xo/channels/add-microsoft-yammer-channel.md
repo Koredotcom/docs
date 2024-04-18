@@ -12,22 +12,20 @@ To add Yammer as a channel to your Kore.ai bot, you must create an app in Yammer
 
 !!! note
 
-         The Callback/Redirect URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
+    The Callback/Redirect URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.
 
 
 To add the Yammer channel, follow the below steps:
 
 
 1. In the XO Platform, go to **Channels & Flows** > **Channels** > **Digital** > **All**.
-2. Click the **Yammer** icon. The **Yammer Channel** page is displayed.
+2. Click the **Yammer**. The **Yammer Channel** page is displayed.
 3. In a new browser tab, log in to your **Yammer Developer** account and go to the **My Apps** section to register a new app.
 4. To create an app, click **Register New App**. Enter the required details in the listed fields.
 5. Copy the _Redirect URL_ from the **Configurations** tab of the Yammer Channel page and enter it in the **Redirect URL** field.
-6. Click **Continue** to create the app.
-<img src="../images/Yammer-1.png" alt="add Yammer channel" title="add Yammer channel" style="border: 1px solid gray; zoom:70%;">
+6. Click **Continue** to create the app.  <img src="../images/Yammer-1.png" alt="add Yammer channel" title="add Yammer channel" style="border: 1px solid gray; zoom:70%;">
 
-7. After app creation, you are redirected to the **App Details** page. Capture the **Client ID** and **Client Secret** of your Yammer channel and provide them in the **Configurations** tab of LINE channel page.
-<img src="../images/Yammer-2.png" alt="yammer configurations" title="yammer configurations" style="border: 1px solid gray; zoom:70%;">
+7. After app creation, you are redirected to the **App Details** page. Capture the **Client ID** and **Client Secret** of your Yammer channel and provide them in the **Configurations** tab of LINE channel page.  <img src="../images/Yammer-2.png" alt="yammer configurations" title="yammer configurations" style="border: 1px solid gray; zoom:70%;">
 
 8. To deploy bot to your enterprise, go to the **App Directory** section and enter the required information in the respective fields.
 9. Click **Deploy** to deploy the bot to your enterprise users.
@@ -43,9 +41,7 @@ To edit the Yammer channel, follow the below steps:
 
 
 1. Hover over the channel and click to modify. You can make necessary updates to your channel configurations and save them.
-2. You can also disable or delete the channel information by clicking the **Settings** icon as shown in the image.
-<img src="../images/Yammer-4.png" alt="settings" title="settings" style="border: 1px solid gray; zoom:70%;">
-
+2. You can also [disable or delete the channel](adding-channels-to-your-bot.md#editing-testing-disabling-or-deleting-channels).
 Select one of the following commands to modify the channel:
 
   * **Disable/Enable** – Click **Disable** to temporarily disable the use of the Yammer channel for your bot. To enable the use of the Yammer channel, Click **Enable**.
@@ -53,4 +49,4 @@ Select one of the following commands to modify the channel:
 
 !!! warning
 
-           This operation is permanent and cannot be undone.
+    This operation is permanent and cannot be undone.

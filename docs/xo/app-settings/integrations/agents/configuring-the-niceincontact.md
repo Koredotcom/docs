@@ -73,9 +73,9 @@ To enable the NiceInContact, follow these steps:
 
 1. Log in to the Kore.ai XO Platform [https://bots.kore.ai/botbuilder](https://bots.kore.ai/botbuilder){:target="_blank"}.
 2. Select a Virtual Assistant for which you want to configure the NiceInContact agent.
-3. Navigate to **Build > Integrations > Agent Transfer** and click the **NiceInContact** button.
+3. Navigate to **App Settings** > **Integrations** > **Agent Transfer** and click the **NiceInContact**.
 
-    <img src="../images/configuring-the-niceincontact-img6.png" alt="Agent Transfer - NiceInContact" title="Agent Transfer - NiceInContact" style="border: 1px solid gray;">
+    
 
 4. Click the **Configurations** tab and enter the following credentials for the NiceInContact Agent:
     1. **Application Name**: The name of the API application.

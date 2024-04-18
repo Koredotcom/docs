@@ -27,7 +27,7 @@ This process expands interjections, abbreviations, misspellings, texting shortha
 
 This feature allows bot developers to add substitutions specific to their domain and vocabulary. For example, **_Chevy_** is replaced by **_Chevrolet_** by a car serving bot,
 
-Another use of this feature is on voice channels where ideally, mis-transcriptions should be corrected by the ASR software, but that isn’t always possible. In these cases, the substitution functionality allows bot developers to correct transcription errors. For example, **_our d_** is corrected to **_Audi_** by a car serving bot. <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#bot-substitutions" target="_blank">Learn more</a>.
+Another use of this feature is on voice channels where ideally, mis-transcriptions should be corrected by the ASR software, but that isn’t always possible. In these cases, the substitution functionality allows bot developers to correct transcription errors. For example, **_our d_** is corrected to **_Audi_** by a car serving bot. [Learn more](/docs/xo/automation/natural-language/training/fundamental-meaning/#bot-substitutions){:target="_blank"}.
 
 ### Merging
 
@@ -118,7 +118,7 @@ Also consider misspellings, such as:
 
 When you add synonyms for a word, those synonyms are also used for other tasks or task fields. In other terms, synonyms for a word defined for a task are also applicable to the same word in another task name. For example, synonyms defined for the word _make_ in the Make a Booking  task are also used for the Make a Payment task.
 
-For more information about best practices and tips for naming tasks and task fields, see the <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlp-guidelines/" target="_blank">Natural Language Processing Guide</a>.
+For more information about best practices and tips for naming tasks and task fields, see the [Natural Language Processing Guide](/docs/xo/automation/natural-language/nlp-guidelines/){:target="_blank"}.
 
 #### Add Synonyms
 
@@ -130,7 +130,7 @@ The following sections show you how to add these synonyms.
 
 #### Navigate to Synonyms
 
-1. Open the VA for which you want to add synonyms and select the **Build** tab from the top menu.
+1. Open the VA for which you want to add synonyms.
 2. From the left navigation menu and click **Natural Language** -> **Training.**
 3. On the **Training** page, click one of the following tabs:
     * **Bot Synonyms** – Add and edit synonyms for the words in the bot or task names.
@@ -143,7 +143,7 @@ On the **Training** page under the **Bot Synonyms** tab, you can view and add sy
 To add a bot synonym, follow the below steps:
 
 1. On the **Training** page, select the **Bot Synonyms** tab.
-<img src="../images/add-bot-synonym.png" alt="add synonyms" title="add synonyms" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-bot-synonym-select.png" alt="add synonyms" title="add synonyms" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **New Synonym** or use the edit icon against an existing synonym, to open the synonym page.
 3. In the **Name** field, enter the name of the word (keyword) for which you want to create synonyms.
@@ -155,7 +155,7 @@ To add a bot synonym, follow the below steps:
 #### Add Entity Synonyms
 
 On the **Training** page, on the **Entities** tab, each dialog task entity is listed with any defined synonyms for that entity name.
-<img src="../images/entity-tab.png" alt="entity tab" title="entity tab" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/entity-tab-select.png" alt="entity tab" title="entity tab" style="border: 1px solid gray; zoom:75%;">
 
 To add synonyms for a dialog task entity, follow the below steps:
 
@@ -214,22 +214,22 @@ There are two types of Concepts within the XO Platform:
 
 ### Define Custom Concepts
 
-You can define a new concept the same way as you would define a Bot Synonym, but you need to start the word with a **~**. For more details on the naming convention, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlp-guidelines/#concepts" target="_blank">here</a>.
+You can define a new concept the same way as you would define a Bot Synonym, but you need to start the word with a **~**. For more details on the naming convention, click [here](/docs/xo/automation/natural-language/nlp-guidelines/#concepts){:target="_blank"}.
 
 You can also define custom concepts using emojis.
 
 Concepts are used to define patterns. For example, the pattern _buy ~fruit_ is used to capture _buy orange_ or _buy banana_.
-<img src="../images/define-custom-concepts.png" alt="define custom concepts" title="define custom concepts" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/define-custom-concepts-window.png" alt="define custom concepts" title="define custom concepts" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 Add the <b>~disable_help</b> concept key and train the VA to disable the system help. You can train the virtual assistant (VA) to use the <b>custom_help</b> group in Smalltalk to trigger the customized help messages. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/small-talk/#add-groups" target="_blank">Learn more</a>.</p></div>
 
-<img src="../images/custom_help.png" alt="custom help" title="custom help" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/custom_help-setup.png" alt="custom help" title="custom help" style="border: 1px solid gray; zoom:75%;">
 
 ### Parallel Editing for Concepts
 
-Parallel Editing works the same for Concepts and Synonyms. Please click <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#parallel-editing-for-synonyms" target="_blank">here</a> to learn more.
+Parallel Editing works the same for Concepts and Synonyms. Please click [here](/docs/xo/automation/natural-language/training/fundamental-meaning/#parallel-editing-for-synonyms){:target="_blank"} to learn more.
 
 ## Bot Substitutions
 
@@ -273,7 +273,7 @@ Bot substitution is used to support the following patterns for user utterances:
 
 The Bots on the XO Platform can now be trained during the NL process to identify aliases or alternative spellings in utterances (during Speech-to-Text (STT) transcriptions).
 
-Alias is based on <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#marking" target="_blank">Marking</a>, the chat script-specific process of linking concepts to words to match patterns based on those concepts.
+Alias is based on [Marking](/docs/xo/automation/natural-language/training/fundamental-meaning/#marking){:target="_blank"}, the chat script-specific process of linking concepts to words to match patterns based on those concepts.
 
 For example, a user might say Alfa Romeo on a voice channel, but the STT transcribes that as `Alpha Romeo` (a known and valid word). This is because the Bot uses the custom concept defined for Bot Word Aliases, matches the custom entity, and returns `Alfa Romeo`.
 
@@ -301,12 +301,13 @@ To treat a Bot Synonym word as an Alias in an utterance, you must define a custo
 However, they do the following:
 
 * Return the normalized value for the **Custom Concept** entity.
-* Link concepts to new words (Marking). <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#marking" target="_blank">Learn more</a>.
+* Link concepts to new words (Marking). [Learn more](/docs/xo/automation/natural-language/training/fundamental-meaning/#marking){:target="_blank"}.
 
 **Alias Patterns**
 
 The **Custom Concept Entity** on the Platform allows the selective marking of aliases using patterns. 
 In the example below, the system marks `Aston` as an alias for `Aston Martin` only if it is not followed by the word `Martin` according to the **Synonyms** pattern.
+
 <img src="../images/synonyms-example-1.png" alt="synonyms example 1" title="synonyms example 1" style="border: 1px solid gray; zoom:75%;">
  
 Similarly, in the example below, the system marks `Kelly` as the alias for `TeleHealth` only if it is followed by the word `health` (the underscore limits the marking to one word) according to the **Synonyms** pattern.
@@ -317,7 +318,7 @@ Similarly, in the example below, the system marks `Kelly` as the alias for `Tele
 
 The XO Platform now supports **Bot Homophones** or Homonyms to identify the relevant word when two or more words are pronounced the same but have different spellings. Homonyms are a challenge on voice channels because while processing and adjusting an utterance on the Natural Language (NL) Pipeline, the Speech-to-Text (STT) engine can easily transcribe the wrong word. For example, `Write an email` can be wrongly transcribed to `Right an email`.
 
-With Bot Homophones, the system considers all the alternative homophones to check for a better, or equally valid, word choice during the NL pipeline and <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/fundamental-meaning/#parts-of-speech-pos-tagging" target="_blank">POS Tagging</a> processes.
+With Bot Homophones, the system considers all the alternative homophones to check for a better, or equally valid, word choice during the NL pipeline and [POS Tagging](/docs/xo/automation/natural-language/training/fundamental-meaning/#parts-of-speech-pos-tagging){:target="_blank"} processes.
 
 **How it Works**
 
@@ -350,10 +351,10 @@ The NLP engine can recognize emojis present in the user utterance. You can inclu
 
 You can import emojis into your VA’s system concepts so that it can conduct the conversations when emojis are present in the user’s utterances. For this, follow the below steps:
 
-1. Under the **Build** top menu option, from the left menu, click **Natural Language -> Training**
+1. From the left menu, click **Natural Language -> Training**
 2. On the **Intents** tab, click the more/ellipses icon and select **Import Emojis into Concepts**.
 3. This adds all the default emojis to the system concepts for the current language. As you can see emojis are updated for the system concepts like this: ~_emohappy_, ~_emohello_, etc.
-<img src="../images/import-emoji.png" alt="import emoji" title="import emoji" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/import-emoji-concepts.png" alt="import emoji" title="import emoji" style="border: 1px solid gray; zoom:75%;">
 
 4. After importing, you may choose to review and remove any emojis that you may not want to support.
 5. If you are trying to re-import the emojis, then the current emojis are retained and any additional emojis are added.
@@ -370,13 +371,13 @@ In these cases, using patterns can help to improve NLP interpreter accuracy.
 
 When the NLP interpreter matches a synonym to one task or field, and a pattern to a different task or field, the pattern match is prioritized and used for positive recognition over the synonym match.
 
-To learn more about best practices and tips for optimizing NLP, refer to <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/nlp-guidelines/" target="_blank">NLP Guidelines</a>.
+To learn more about best practices and tips for optimizing NLP, refer to [NLP Guidelines](/docs/xo/automation/natural-language/nlp-guidelines/){:target="_blank"}. 
 
-For a quick guide towards the usage of patterns, refer to <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/" target="_blank">How to use Patterns</a>.
+For a quick guide towards the usage of patterns, refer to [How to use Patterns](/docs/xo/how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/){:target="_blank"}.
 
 ### Navigate to the Patterns Tab
 
-1. Open the VA for which you want to add patterns and select the **Build** tab from the top menu.
+1. Open the VA for which you want to add patterns.
 2. From the left menu click **Natural Language ->** **Training**.
 3. On the **Training** page, click one of the following tabs:
     * **Intents**– Add or edit patterns or rules for dialog task User Intent nodes.
@@ -394,7 +395,7 @@ You can also use concepts to build patterns. For example, the pattern is defined
 
 In the **Intents** section, you can view, add, and delete patterns for dialog tasks.
 
-<img src="../images/manage-patterns-for-dialog-tasks.png" alt="manage patterns for dialog tasks" title="manage patterns for dialog tasks" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/manage-patterns-for-dialog-tasks-window.png" alt="manage patterns for dialog tasks" title="manage patterns for dialog tasks" style="border: 1px solid gray; zoom:75%;">
 
 To add an intent pattern, follow the below steps:
 
@@ -408,14 +409,14 @@ To add an intent pattern, follow the below steps:
 
 You can use traits or context tags to define intent identification rules for better intent detection. You can add Traits or Context Tags and conditional rules using AND, OR operators.
 
-<img src="../images/add-rules-for-an-intent.png" alt="add rules for an intent" title="add rules for an intent" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/add-rules-for-an-intent-window.png" alt="add rules for an intent" title="add rules for an intent" style="border: 1px solid gray; zoom:75%;">
 
 To add an intent rule, follow the below steps:
 
 1. On the **Training** page, click the **Rules/+Rule** against the intent name you want to enter the patterns for.
 2. In the **Intent** pane, enter one or more traits/context tags as conditional rules using AND OR operators, and press **Enter** between traits/tags.
 
-Refer here to know more about <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/traits/" target="_blank">Traits</a>, <a href="https://docsinternal-kore.github.io/docs/xo/automation/natural-language/training/traits/#trait-association-rules" target="_blank">Trait Association Rules</a> and <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/context-management/" target="_blank">Context Tags</a>.
+Refer here to know more about [Traits](/docs/xo/automation/natural-language/training/traits/){:target="_blank"}, [Trait Association Rules](/docs/xo/automation/natural-language/training/traits/#trait-association-rules){:target="_blank"} and [Context Tags](/docs/xo/automation/intelligence/context-management/){:target="_blank"}.
 
 <img src="../images/fm-rules.png" alt="manage rules" title="manage rules" style="border: 1px solid gray; zoom:75%;">
 
@@ -445,11 +446,10 @@ The **Negative Patterns** feature helps filter matched intents that are a part o
 
 To activate Negative Patterns, follow the steps below:
 
-1. Click the **Build** top menu option.
-2. Navigate to **Natural Language** -> **Thresholds & Configurations** -> **Ranking and Resolver Engine**.
-3. Enable **Negative Patterns**.
+1. Navigate to **Natural Language** -> **NLU Config** -> **Ranking and Resolver Engine**.
+2. Enable **Negative Patterns**.
 
-<img src="../images/enable-negative-patterns-fm.png" alt="enable negative patterns" title="enable negative patterns" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/enable-negative-patterns-fm-window.png" alt="enable negative patterns" title="enable negative patterns" style="border: 1px solid gray; zoom:75%;">
 
 1. For each of the intents in your VA, you can define negative patterns similar to how you define intent patterns. 
     * Go to **Natural Language** > **Training** > **Intents** and select the Intent to which you want to add the Negative Pattern.
@@ -459,9 +459,9 @@ To activate Negative Patterns, follow the steps below:
 3. Once added, these patterns can be reordered, edited, and deleted.
 <img src="../images/negative-patterns-fm.png" alt="negative patterns" title="negative patterns" style="border: 1px solid gray; zoom:75%;">
 
-## Thresholds & Configurations
+## NLU Config (Engine Tuning)
 
-To train and improve the performance, Threshold and Configurations can be specified for all three NLP engines – FM, KG, and ML. You can access these settings under **Build** -> **Natural Language** > **Thresholds & Configurations**.
+To train and improve the performance, Threshold and Configurations can be specified for all three NLP engines – FM, KG, and ML. You can access these settings under **Natural Language** > **NLU Config**.
 
 The settings for the FM engine are discussed in detail in the following sections.
 
@@ -472,10 +472,9 @@ The settings for the FM engine are discussed in detail in the following sections
 To set up Thresholds and Configurations for the FM Engine, please follow the steps below:
 
 1. Open the assistant for which you want to configure thresholds.
-2. Select the **Build** tab from the top menu.
-3. From the left menu, click **Natural Language -> Thresholds & Configurations**.
-4. The **Fundamental Meaning** section allows you to set the threshold for the FM engine:
+2. From the left menu, click **Natural Language** > **NLU Config**.
+3. The **Fundamental Meaning** section allows you to set the threshold for the FM engine:
     * **Intent Detection using Task Name Words** can be disabled in case your use case requires it. This is particularly useful if you have too many tasks named – _place order_, _cancel order_, _request order_, _duplicate order_. All these tasks will be matched as intents if the user utterance has the word “_order_” in it. Instead of _trying_, _guessing_, and training for all possible utterances, disabling this option does the trick. Disabling it will not affect the intent detection using patterns. Also, an implicit pattern using the words in the Task Name will be automatically added. The implicit pattern identifies this intent only when the user input starts and ends with the exact task name. By default, it is enabled.
     * **FM Threshold** can be used to limit the number of results sent from the FM Engine to Ranking and Resolver, so as to reduce the possibility of presenting a low confidence match to the end-user. Enable this configuration and choose the _threshold percentage_ as a value between 0% and 20%. Default is 2%. Only the intent matches within the set % of the top-scoring intent will be considered and all other intents will be eliminated. This configuration is available only for English, Spanish, French and German languages.
 
-    <img src="../images/thresholds-and-configurations-enable.png" alt="thresholds and configurations" title="thresholds and configurations" style="border: 1px solid gray; zoom:75%;">
+    <img src="../images/thresholds-and-configurations-enable-window.png" alt="thresholds and configurations" title="thresholds and configurations" style="border: 1px solid gray; zoom:75%;">

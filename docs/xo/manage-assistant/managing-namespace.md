@@ -137,7 +137,7 @@ You can find the option under the Component Properties section of the node. You 
 
 #### Event Handlers
 
-**Intelligence > Event > More Options** menu.
+**Conversation Intelligence > Events** menu.
 
 
 

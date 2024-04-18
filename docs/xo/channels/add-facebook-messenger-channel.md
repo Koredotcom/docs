@@ -6,11 +6,11 @@ The steps to enable this channel are simple and summarized below:
 
 
 
-1. [Create and set up a Facebook Messenger App](/docs/xo/channels/add-facebook-messenger-channel/#step-1-create-and-set-up-a-facebook-messenger-app).
-2. [Configure the Webhook or Callback URL to send and receive messages](/docs/xo/channels/add-facebook-messenger-channel/#step-2-configure-the-webhookcallback-url).
-3. [Subscribe to the app on the Facebook page using the Client ID and Client Secret](/docs/xo/channels/add-facebook-messenger-channel/#step-3-set-up-app-id-and-secret).
-4. [Submit the App for Approval.](/docs/xo/channels/add-facebook-messenger-channel/#step-4-submit-the-app-for-approval)
-5. [Enable the channel and complete the configuration on the Kore.ai XO Platform](/docs/xo/channels/add-facebook-messenger-channel/#step-5-enable-the-channel).
+1. [Create and set up a Facebook Messenger App](#step-1-create-and-set-up-a-facebook-messenger-app).
+2. [Configure the Webhook or Callback URL to send and receive messages](#step-2-configure-the-webhookcallback-url).
+3. [Subscribe to the app on the Facebook page using the Client ID and Client Secret](#step-3-set-up-app-id-and-secret).
+4. [Submit the App for Approval.](#step-4-submit-the-app-for-approval)
+5. [Enable the channel and complete the configuration on the Kore.ai XO Platform](#step-5-enable-the-channel).
 
 
 ## Step 1: Create and Set up a Facebook Messenger App
@@ -53,21 +53,17 @@ The steps to enable this channel are simple and summarized below:
 <img src="../images/fbm7.png" alt=" Facebook generate token" title="Facebook generate token" style="border: 1px solid gray; zoom:70%;">
 
 
-10. In the **Token Generated** window, select **I understand** and click **Copy** to copy the page Access Token.
-<img src="../images/fbm8.png" alt=" Facebook generated token" title="Facebook generated token" style="border: 1px solid gray; zoom:70%;">
+10. In the **Token Generated** window, select **I understand** and click **Copy** to copy the page Access Token.  <img src="../images/fbm8.png" alt=" Facebook generated token" title="Facebook generated token" style="border: 1px solid gray; zoom:70%;">
 
 
 11. Click **Done**.
-12. Copy the **Page ID** of the Facebook page.
-<img src="../images/fbm9.png" alt=" Facebook configuration" title="Facebook configuration" style="border: 1px solid gray; zoom:70%;">
+12. Copy the **Page ID** of the Facebook page.  <img src="../images/fbm9.png" alt=" Facebook configuration" title="Facebook configuration" style="border: 1px solid gray; zoom:70%;">
 
 
 
 13. On the Kore.ai XO Platform, navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **Facebook Messenger**.
-<img src="../images/fbm10.png" alt=" Facebook Messenger" title="Facebook Messenger" style="border: 1px solid gray; zoom:70%;">
 
-14. Click the **Configurations** tab, and paste the **Page Access Token** and **Page ID** values you’ve copied.
-<img src="../images/fbm11.png" alt=" Facebook page access" title="Facebook page access" style="border: 1px solid gray; zoom:70%;">
+14. Click the **Configurations** tab, and paste the **Page Access Token** and **Page ID** values you’ve copied.  <img src="../images/fbm11.png" alt=" Facebook page access" title="Facebook page access" style="border: 1px solid gray; zoom:70%;">
 
 
 15. Navigate to **Settings** > **Basic** and configure the **Privacy Policy URL** and **Terms of Service URL** fields for the app.
@@ -138,14 +134,10 @@ On the Kore.ai XO Platform, enable the **Facebook Messenger** channel to complet
 
 
 1. Navigate to **Channels & Flows** > **Channels** > **Digital** > **All** > **Facebook Messenger**.
-2. Click the **Configurations** tab, and select **_YES_** for **Enable Channel**.
-
-<img src="../images/fbm21.png" alt="Enable Facebook channel" title="Enable Facebook channel" style="border: 1px solid gray; zoom:70%;">
-
-
+2. Click the **Configurations** tab, and select **_YES_** for **Enable Channel**.  <img src="../images/fbm21.png" alt="Enable Facebook channel" title="Enable Facebook channel" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Save**.
 
-After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. [Learn more](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
 
-To learn more about adding other Channels to your Bot, please see [Channel Enablement](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/).
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

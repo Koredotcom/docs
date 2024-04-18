@@ -203,7 +203,7 @@ The use case is as follows:
 
 In the second question, the word _charges_ is in the context of the credit card. To enable it, all you need is set a flag, rest the platform takes care. For each question answered the Context tags are set automatically, we just instruct the platform to use them appropriately.
 
-1. Go to **Natural Language** > **Thresholds & Configurations**.
+1. Go to **Natural Language** > **NLU Config**.
 2. Expand the **Knowledge Collection** tab.
 3. Scroll down and set the **Qualify Contextual Paths** tag. With this setting, the KG engine will qualify a question if any of the available context tags are part of that particular FAQ path.
 4. Run the bot and see the effect.
@@ -225,7 +225,7 @@ The default setting for the Interruption Behavior for FAQs will ensure that the 
 But this will not solve the use case described. It would answer the direct question – “_What are the transfer rates_” but not “_What are the rates_”. The reason being the FAQ not picking the context. To ensure that the context is picked by the FAQ:
 
 1. The **Transfer Amount** task is already emitting the _transfer_ tag, the same will be used in this case.
-2. Go to **Natural Language** > **Thresholds & Configurations**.
+2. Go to **Natural Language** > **NLU Config**.
 3. Expand the **Knowledge Collection** tab.
 4. Scroll down and set the **Qualify Contextual Paths** tag (if not already set as per previous use case).
 5. Run the Bot and see the changes taking effect.

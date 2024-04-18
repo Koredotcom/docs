@@ -19,7 +19,7 @@ The Webhook URL associated with this assistant should be configured in your Audi
 
 ## Step 3: Configure Voice Call Properties
 
-Make sure to configure the properties under the Voice Call Properties tab for defining the default voice interaction experience for your customers. [Learn more about configuring Voice Call Properties](https://developer.kore.ai/docs/bots/bot-builder-tool/dialog-task/voice-call-properties/).
+Make sure to configure the properties under the Voice Call Properties tab for defining the default voice interaction experience for your customers. [Learn more about configuring Voice Call Properties](../automation/use-cases/dialogs/node-types/voice-call-properties.md).
 
  ![configure voice call properties](../images/ivr-audio-codes1.png "configure voice call properties")
 
@@ -29,6 +29,6 @@ On the Configurations tab, select Yes, then Save your configuration in order to 
 
  ![enable ivr audio codes channel](../images/ivr-audio-codes2.png "enable ivr audio codes channel")
 
-After the channel is enabled and all configurations are verified, you can optionally publish the assistant to make it available for end-users, with the new channel. Learn more about[ Publishing your Virtual Assistant](https://developer.kore.ai/docs/bots/publish/publishing-bot/).
+After enabling the channel and verifying all the configurations, you can optionally publish the assistant for the new channel. Learn more about[ Publishing your Virtual Assistant](../deploy/publishing-bot.md).
 
-To learn more about working with Channels within the Kore.ai XO Platform, please see[ Channel Enablement.](https://developer.kore.ai/docs/bots/channel-enablement/adding-channels-to-your-bot/)
+To learn more about working with Channels within the Kore.ai XO Platform, please see [Channel Enablement.](../channels/adding-channels-to-your-bot.md)

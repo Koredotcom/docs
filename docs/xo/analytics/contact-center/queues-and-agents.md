@@ -1,4 +1,4 @@
-# **Queues & Agents**
+# Queues & Agents Dashboard
 
 The Queues & Agents dashboard displays the Overview, Efficiency, Agent Performance, and Queue Performance metrics for the selected period.
 
@@ -18,12 +18,12 @@ You can filter Queues & Agents data for a specific time range. You can choose a 
 
 
 
-## **Filters**
+## Filters
 
 To avoid repeatedly filtering your choices, you can create and save multiple filters on the Queues & Agents tab.
 
 
-### **Create Filter**
+### Create Filter
 
 
 1. Click the **Filter** button.
@@ -57,7 +57,7 @@ Select from the below available options:
 A confirmation message is displayed, and the filter is created.
 
 
-### **Edit Filter**
+### Edit Filter
 
 Steps to edit a filter:
 
@@ -77,7 +77,7 @@ Steps to edit a filter:
 A confirmation message is displayed, and the filter is updated. 
 
 
-### **Copy Filter**
+### Copy Filter
 
 
 
@@ -93,7 +93,7 @@ A confirmation message is displayed, and the filter is updated.
 A confirmation is displayed and a copy of the filter is created.
 
 
-### **Mark as Default**
+### Mark as Default
 
 1. Click the **Mark as Default** button.
 
@@ -104,7 +104,7 @@ A confirmation is displayed and a copy of the filter is created.
 
     <img src="../images/mark-as-default-2.png" alt="Mark as Default 2" title="Mark as Default 2" style="border: 1px solid gray; zoom:80%;">
 
-### **Delete Filter**
+### Delete Filter
 
 1. Click the **Delete** button.
 
@@ -116,7 +116,7 @@ A confirmation is displayed and a copy of the filter is created.
 A confirmation message is displayed and the filter is deleted.
 
 
-# **Overview of Incoming Conversations**
+## Overview of Incoming Conversations
 
 This section displays the metrics for all conversations (phone, chat, and email):
 
@@ -169,7 +169,7 @@ Resolved Rate – Percentage of resolved conversations.
 <img src="../images/resolved-rate.png" alt="Resolved Rate" title="Resolved Rate" style="border: 1px solid gray; zoom:80%;">
 
 
-# **Efficiency**
+## Efficiency
 
 This section displays individual metrics for all conversations (call, chat, email):
 
@@ -240,7 +240,7 @@ Customer Satisfaction by Channel: This section displays channel-wise customer sa
 <img src="../images/customer-satisfaction-by-channel.png" alt="Customer Satisfaction by Channel" title="Customer Satisfaction by Channel" style="border: 1px solid gray; zoom:80%;">
 
 
-# **Agent Performance**
+## Agent Performance
 
 This section displays agent performance metrics for all conversations (call, chat, e-mail).
 
@@ -248,7 +248,7 @@ This section displays agent performance metrics for all conversations (call, cha
 <img src="../images/agent-performance.png" alt="Agent Performance" title="Agent Performance" style="border: 1px solid gray; zoom:80%;">
 
 
-# **Queue Performance**
+## Queue Performance
 
 This section displays queue performance metrics for all conversations (call, chat, e-mail).
 
@@ -256,7 +256,7 @@ This section displays queue performance metrics for all conversations (call, cha
 <img src="../images/queue-performance.png" alt="Q ueue Performance" title="Queue Performance" style="border: 1px solid gray; zoom:80%;">
 
 
-#  **About Queues and Agents Fields**
+## About Queues and Agents Fields
 
 
 <table>

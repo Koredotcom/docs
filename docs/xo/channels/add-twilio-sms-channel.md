@@ -39,11 +39,12 @@ The following procedure requires an active _Twilio_ account for developers with 
 11. Under **Outbound Settings**, update the **Status Callback Request URL** field with the information provided in the **Configurations** tab.
 <img src="../images/twilio4.png" alt="Twilio Inbound Settings" title="Twilio Inbound Settings" style="border: 1px solid gray; zoom:70%;">
 
-!!! note
 
-    The Callback URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.    
+    !!! note
 
-12. Under **Copilot Features** section, make sure that **Sticky Sender**, **MMS Converter**, **Scaler**, **Short Code Reroute, **and** Country Code Geomatch** options are enabled.
+        The Callback URL now includes the **_streamid_** in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.    
+
+12. Under **Copilot Features** section, make sure that **Sticky Sender**, **MMS Converter**, **Scaler**, **Short Code Reroute,** and **Country Code Geomatch** options are enabled.
 13. **Save** your changes and proceed.
 14. To add a number, go to the **Numbers** section and associate a Twilio Phone Number to this bot. If you do not have a Twilio Number, you must buy one.
 <img src="../images/twilio5.png" alt="Twilio Phone Number" title="Twilio Phone Number" style="border: 1px solid gray; zoom:70%;">
@@ -57,8 +58,7 @@ To edit the Twilio channel, follow the below steps:
 
 
 1. Hover over the channel and click to modify.
-2. You can make necessary updates to your channel configurations and save them. You can also disable or delete the channel information by clicking the **Settings** icon.
-<img src="../images/twilio6.png" alt="Modify Twilio  Settings" title="Modify Twilio Inbound Settings" style="border: 1px solid gray; zoom:70%;">
+2. You can make necessary updates to your channel configurations and save them. You can also [disable or delete the channel.](./adding-channels-to-your-bot.md#editing-testing-disabling-or-deleting-channels)
 
 3. Select one of the following commands to modify the channel:
   * **Disable/Enable**
@@ -91,3 +91,7 @@ To edit the Twilio channel, follow the below steps:
 
 
 10. The phone number is saved and accessible from the **Home** screen on the **Dashboard**. You are now ready to configure the Twilio channel in Kore.ai Bot Builder.
+
+**Related Links**
+
+* [How do I include an Image in an Outbound Twilio SMS (MMS)?](../kb/how-do-i-include-an-image-in-an-outbound-twilio-sms-mms.md)
