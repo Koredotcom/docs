@@ -17,7 +17,7 @@ As the owner of the account in GALE, you have the authority to invite any user a
 
 1. Enter the **Email ID** of the user to add to the account and click **Invite**.
 
-    <img src="../images/add-user-id-to-invite.png" alt="Add User ID to Invite" title="Add User ID to Invite" style="border: 1px solid gray; zoom:80%;">
+    <img src="..images/add-user-id-to-invite.png" alt="Add User ID to Invite" title="Add User ID to Invite" style="border: 1px solid gray; zoom:80%;">
 
     An Email is sent to the invitee and the user can access the product now.
 

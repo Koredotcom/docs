@@ -8,6 +8,6 @@
     <img src="../images/configure-end-node.png" alt="Configure End Node" title="Configure End Node" style="border: 1px solid gray; zoom:80%;">
 
 1. Enter a **Custom Name** to the end node.
-2. Select a **Name (key)** from the drop-down list. The list of all the keys that are defined in the Manage Output section are displayed here. You can select a required variable and map a value to it. For more information about Adding a new key, see the **Manage Input and Output variable**.
+2. Select a **Name (key)** from the drop-down list. The list of all the keys that are defined in the Manage Output section are displayed here. You can select a required variable and map a value to it. For more information about Adding a new key, see [Manage Input and Output variable](../../perform-other-actions-on-the-flow-builder/manage-input-and-output.md).
 3. Enter any **Value** to the selected key. You can provide any context object value or context related to any node or the input variable value.
 4. Click the **+ADD A KEY** option to add multiple outputs at once.

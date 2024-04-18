@@ -26,7 +26,7 @@ You have the option to add an input or output scanner, facilitating the scanning
 
     !!! note
 
-        You must deploy the required scanner first and only then it will be listed in this pop-up list. For more about Deploying a scanner, see Manage Guardrails.
+        You must deploy the required scanner first and only then it will be listed in this pop-up list. For more about Deploying a scanner, see .
 
 1. Click the required scanner from the list of added scanners to configure that scanner. The settings displayed are different for each scanner. For example, the settings for “Toxicity” are **Threshold** and **End the flow if the risk score is above**. Similarly, the settings for the “Regex” scanner are **Enter patterns to ban**, **End the flow if the risk score is above**, and **Match type**.
 

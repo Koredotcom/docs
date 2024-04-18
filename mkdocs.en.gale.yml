@@ -192,7 +192,7 @@ nav:
     - Upload a Data set: data/upload-a-dataset.md
   - Administration:
     - User Management: 
-        - Overview: data/user-management/overview.md
-        - Invite a User to your account: data/user-management/invite-a-user-to-your-account.md
+        - Overview: administration/user-management/overview.md
+        - Invite a User to your account: administration/user-management/invite-a-user-to-your-account.md
         
    

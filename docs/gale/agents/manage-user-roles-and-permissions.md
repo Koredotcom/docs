@@ -4,8 +4,7 @@ The owner of each respective application holds the authority to extend invitatio
 
 !!! note
 
-    You can only invite those users to an application, who have access to your account. If you want to provide access to your account, see Invite a user to you.
-
+    You can only invite those users to an application, who have access to your account.
 
 **To manage user roles and permissions, follow these steps**:
 

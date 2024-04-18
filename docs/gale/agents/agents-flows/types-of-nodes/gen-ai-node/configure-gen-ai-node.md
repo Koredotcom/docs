@@ -10,7 +10,7 @@ You can configure a Gen AI node and connect to any model.
     <img src="../images/configure-gen-ai-node.png" alt="Configure Gen AI Node" title="Configure Gen AI Node" style="border: 1px solid gray; zoom:80%;">
 
 1. Enter a **Custom name** for the node.
-2. Select a model from the list. You can see the AI models that you have already configured in the Models section of GALE. For more information about configuring a model, see Model Studio.
+2. Select a model from the list. You can see the AI models that you have already configured in the Models section of GALE. For more information about configuring a model, see [Model Studio](../../../../models/overview.md).
 3. Enter a **System prompt** and the **Prompt** you want to test with your selected model.
 4. Click the arrow in the **Examples** section on the **AI node settings **dialog to add a sample user input and sample AI response output.
 5. Select the required **Hyperparameters**. The parameters that are displayed are based on the AI model you selected.
