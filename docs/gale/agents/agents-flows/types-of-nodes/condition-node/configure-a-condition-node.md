@@ -1,4 +1,4 @@
-# Configure the Condition node
+# Configure the Condition Node
 
 This node helps you to trigger path flows based on the conditions you set.
 

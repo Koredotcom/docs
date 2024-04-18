@@ -1,4 +1,4 @@
-# Add a scanner
+# Add a Scanner
 
 You have the option to add an input or output scanner, facilitating the scanning and verification of a particular objective. Input scanners evaluate the inputs or prompts directed to the LLM node, while output scanners assess the responses received from the LLM.
 

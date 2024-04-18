@@ -1,4 +1,4 @@
-# Deploy an agent
+# Deploy an Agent
 
 Once the flow-building process is completed and you have tested your flow, you can deploy your agents.
 

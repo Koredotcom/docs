@@ -1,4 +1,4 @@
-# Configure the API node
+# Configure the API Node
 
 **To configure the API node, follow these steps**:
 

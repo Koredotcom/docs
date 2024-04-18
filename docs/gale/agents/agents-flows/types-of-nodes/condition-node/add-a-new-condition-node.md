@@ -1,4 +1,4 @@
-# Add a new Condition node
+# Add a new Condition Node
 
 **To add a Condition node, follow these steps**:
 

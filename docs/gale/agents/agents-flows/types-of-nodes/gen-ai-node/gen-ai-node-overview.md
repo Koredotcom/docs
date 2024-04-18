@@ -1,4 +1,4 @@
-# Gen AI node
+# Gen AI Node
 
 Using the Gen AI node, you can establish connections to any model that you have configured within the Model Studio.
 

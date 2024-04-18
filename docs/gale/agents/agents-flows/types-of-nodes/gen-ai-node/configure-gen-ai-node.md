@@ -1,4 +1,4 @@
-# Configure the GenAI node
+# Configure the GenAI Node
 
 You can configure a Gen AI node and connect to any model.
 

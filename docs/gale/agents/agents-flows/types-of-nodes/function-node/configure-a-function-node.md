@@ -1,4 +1,4 @@
-# Configure the Function node
+# Configure the Function Node
 
 **To configure the Function node, follow these steps**:
 

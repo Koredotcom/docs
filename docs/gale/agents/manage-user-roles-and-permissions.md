@@ -1,4 +1,4 @@
-# Manage user roles and permissions
+# Manage User Roles and Permissions
 
 The owner of each respective application holds the authority to extend invitations to any number of individual users, customizing their capabilities in alignment with the unique requirements of each application.
 

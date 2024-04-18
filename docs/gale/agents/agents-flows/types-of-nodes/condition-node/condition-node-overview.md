@@ -1,4 +1,4 @@
-# Condition node
+# Condition Node
 
 This node is used to create branches in a workflow, where different actions or paths are taken depending on whether certain conditions are met or not. They help control the flow of execution within a process or application.
 

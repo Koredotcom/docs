@@ -1,4 +1,4 @@
-# Configure the End node
+# Configure the End Node
 
 **To configure the End node, follow these steps**:
 

@@ -1,4 +1,4 @@
-# Manage Agent's flow nodes
+# Manage Agent's Flow Nodes
 
 ### Add a new node
 
