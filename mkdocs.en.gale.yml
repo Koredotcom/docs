@@ -1,0 +1,194 @@
+site_name: Kore ai Docs
+site_author: Rajasekhar Balla
+docs_dir: 'docs/gale/'
+site_dir: 'site/gale/'
+repo_name: Koredotcom/docs
+repo_url: https://github.com/Koredotcom/docs
+extra_css:
+    - stylesheets/extra_kore.css
+theme:
+  name: material
+  custom_dir: overrides.en.gale
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.path
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - header.autohide
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: indigo
+      accent: indigo
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: indigo
+      accent: lime
+plugins:
+  - search:
+      lang: tr
+  - glightbox   
+extra:
+  version:
+    provider: mike
+  generator: false
+  analytics:
+    provider: google
+    property: G-560BYJFH0P
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://community.kore.ai/" target="_blank" rel="noopener">feedback form</a>.  
+  alternate:
+    - name: en - English 
+      link: https://docsinternal-kore.github.io/docs/en
+      lang: en
+    - name: ja - 日本語 
+      link: https://docsinternal-kore.github.io/docs/ja
+      lang: ja  
+    - name: ko - 한국어 
+      link: https://docsinternal-kore.github.io/docs/ko
+      lang: jako   
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js #?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: On this Page
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+copyright: |
+  © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+nav:
+  - Home : home.md
+  - Getting Started: 
+    - Introduction: introduction.md
+    - Core Capabilities of GALE: core-capabilities-of-gale.md
+  - Agents: 
+    - Overview: agents/overview.md
+    - Create a new Agent: agents/create-a-new-agent.md
+    - Agent Flows:
+      - Flows Overview: agents/agents-flows/flows-overview.md
+      - Manage Flow Nodes: agents/agents-flows/manage-flow-nodes.md
+      - Types of Nodes: 
+        - Overview of Nodes: agents/agents-flows/types-of-nodes/overview-of-nodes.md
+        - API Node: 
+          - API Node Overview: agents/agents-flows/types-of-nodes/api-node/api-node-overview.md
+          - Add a new API Node: agents/agents-flows/types-of-nodes/api-node/add-a-new-api-node.md
+          - Configure the API Node: agents/agents-flows/types-of-nodes/api-node/configure-api-node.md
+        - Gen AI Node: 
+          - Gen AI Node Overview: agents/agents-flows/types-of-nodes/gen-ai-node/gen-ai-node-overview.md
+          - Add a new Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node/add-a-new-gen-ai-node.md
+          - Configure Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node/configure-gen-ai-node.md
+        - Function Node:
+          - Function Node Overview: agents/agents-flows/types-of-nodes/function-node/function-node-overview.md
+          - Add a new Function Node: agents/agents-flows/types-of-nodes/function-node/add-a-new-function-node.md
+          - Configure a Function Node: agents/agents-flows/types-of-nodes/function-node/configure-a-function-node.md
+        - Condition Node: 
+          - Condition Node Overview: agents/agents-flows/types-of-nodes/condition-node/condition-node-overview.md
+          - Add a new Condition Node: agents/agents-flows/types-of-nodes/condition-node/add-a-new-condition-node.md
+          - Configure a Condition Node: agents/agents-flows/types-of-nodes/condition-node/configure-a-condition-node.md
+        - End Node:
+          - End Node Overview: agents/agents-flows/types-of-nodes/end-node/end-node-overview.md
+          - Add a new End Node: agents/agents-flows/types-of-nodes/end-node/add-a-new-end-node.md
+          - Configure an End Node: agents/agents-flows/types-of-nodes/end-node/configure-an-end-node.md
+      - Perform other actions on the Flow Builder:
+        - Manage Input and Output: agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
+        - Run the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
+        - Create a new version of the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
+    - Manage User Roles and Permissions:  agents/manage-user-roles-and-permissions.md
+    - Deploy an Agent: agents/deploy-an-agent.md
+    - Create a new API Key: agents/create-a-new-api-key.md 
+    - Guardrails: 
+      - Overview: agents/guardrails/overview.md
+      - Add a  Scanner: agents/guardrails/add-a-scanner.md
+      - Test Guardrail: agents/guardrails/test-guardrail.md
+      - Manage Guardrails: agents/guardrails/manage-guardrails.md
+    - Configure an Agent: agents/configure-an-agent.md
+  - Models: 
+    - Overview: models/overview.md 
+    - Custom Models: 
+      - Overview: models/custom-models/custom-model-overview.md
+      - Create a Custom Model: models/custom-models/create-a-custom-model.md
+      - Deploy a Custom Model: models/custom-models/deploy-a-custom-model.md
+      - Generate a new API Key: models/custom-models/generate-an-api-key.md
+      - Configure your Custom Model: models/custom-models/configure-your-custom-model.md
+      - Export your Custom Model: models/custom-models/export-your-custom-model.md
+    - Open-Source Models: 
+      - Overview: models/open-source-models/open-source-models-overview.md
+      - Select and Deploy an Open-Source model: models/open-source-models/select-and-deploy-an-open-source-model.md
+      - Generate a new API key: models/open-source-models/generate-an-api-key-open-source.md
+      - Configure your Open-Source Model: models/open-source-models/configure-your-open-source-model.md
+    - External Models: 
+      - Overview: models/external-models/external-models-overview.md
+      - Add an External Model: models/external-models/add-an-external-model.md   
+  - Playground: 
+    - Overview: playground/overview.md
+    - Create a new Prompt Experiment: playground/create-a-new-prompt-experiment.md
+    - Add a model: playground/add-a-model.md
+    - Select a template for a Prompt: playground/select-a-template-for-a-prompt.md
+    - Generate output using an Advanced Mode: playground/generate-output-using-advanced-mode.md
+    - Explore other actions to perform: playground/explore-other-actions-to-perform-in-the-prompt-playground.md    
+  - Data: 
+    - Overview: data/overview.md 
+    - Upload a Data set: data/upload-a-dataset.md
+       
+   
