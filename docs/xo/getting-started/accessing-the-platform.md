@@ -20,6 +20,20 @@ You can sign up for Kore.ai XO Platform in any of the following two ways:
 * **Join an existing enterprise account:** If your enterprise is already on Kore.ai, you can become a part of the account in one of the following ways:
     * Your enterprise account’s Apps Admin sends you an invite. If you haven’t already received the invitation email, reach out to them for access.
     * You can sign up using your enterprise email account and you are prompted to either join the enterprise network or create your own personal account.
+
+!!! note "Important Points"
+
+    * The XO Platform offers two types of workspaces/accounts:
+        * Standard Workspace: Every new workspace is created as a Standard Workspace by default.
+        * Enterprise Workspace: A Standard Workspace can be upgraded to an Enterprise Workspace by a Kore.ai representative.  
+    * Workspaces or accounts are interchangeably used.
+    * A workspace can have one or more apps.
+    * An app within a workspace can be shared with one or more users.
+    * A user can be part of one or more apps.
+    * A user can be part of one or more workspaces.
+    * Users can start a trial of Automation AI or Contact Center AI to create an app. To try other products, users can follow the Contact Us option.
+
+
 ## New Account Sign-up
 
 To sign up for a new account on the Kore.ai’s XO Platform, follow these steps:
@@ -123,6 +137,7 @@ To invite users to your Kore.ai XO Platform account, follow these steps:
 
 5. When the invited user accepts the invitation, they are redirected to the Sign-up page.
     * If the user is new to the platform, they need to enter the required details to complete the registration. See [New Account Sign-up](../getting-started/accessing-the-platform.md#new-account-sign-up) to know more.
+    
     * If the user’s email address is already registered on the platform, the user is prompted to enter the password to sign in.
 
 !!! note
@@ -154,14 +169,13 @@ Team members can join one or multiple Workspaces, or they can create their own. 
 
 Some of the common scenarios where you can join or sign up to a workspace include the following:
 
-1. If you are invited by someone to join their workspace.
-2. If your enterprise administrator adds you to your enterprise workspace through SSO or API.
-3. If you use a business email address to sign up, you can join any other workspace that matches your email domain. In such cases, the system only creates a User identity for you and adds you to the selected workspace.
-4. If you sign up using Single Sign-On (SSO) options like Google or Office 365, the platform will use your email domain as the Workspace name. For example, if your email address is john@doe.com, your workspace will be created as ‘doe.com’. You can always change the Workspace name from the Profile menu.
-5. If you sign up using the email address verification option, you can define your workspace name during sign up.
-6. If you are the first user of a workspace, i.e., if you have created the workspace, you will automatically become the Workspace Owner.
-7. Additional users can be invited to a workspace using the ‘Invite Team’ option or inviting users to a particular assistant.
-8. A user can belong to multiple workspaces.
+* If you are invited by someone to join their workspace.
+* If your enterprise administrator adds you to your enterprise workspace through SSO or API.
+* If you use a business email address to sign up, you can join any other workspace that matches your email domain. In such cases, the system only creates a User identity for you and adds you to the selected workspace.
+* If you sign up using Single Sign-On (SSO) options like Google or Office 365, the platform will use your email domain as the Workspace name. For example, if your email address is john@doe.com, your workspace will be created as ‘doe.com’. You can always change the Workspace name from the Profile menu.
+* If you sign up using the email address verification option, you can define your workspace name during sign up.
+* If you are the first user of a workspace, i.e., if you have created the workspace, you will automatically become the Workspace Owner. The email address of the Workspace Owner is used as the workspace’s unique identifier.
+* Additional users can be invited to a workspace using the ‘Invite Team’ option or inviting users to a particular assistant. A user can belong to multiple workspaces.
 
 ### Join a Workspace
 
@@ -203,7 +217,7 @@ Team members can also **Browse Workspaces** to see those that are active within 
 
 <img src="../images/accplatform(16).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
-## Inviting users to a specific app in your workspace
+## Inviting Users to a Specific App in your Workspace
 
 App owners can invite users to a specific app.
 
