@@ -101,7 +101,9 @@ This section includes
     * [Dialogs](../automation/use-cases/dialogs/managing-dialogs.md) a full conversational flow between a user and a VA
     * [Small Talk](../automation/use-cases/small-talk.md) - for the casual conversations that a VA can have with the end-users.
     * [Digital Skills-](../automation/use-cases/digital-skills/digital-skills-overview.md)
+
          [Digital Forms](../automation/use-cases/digital-skills/digital-forms.md) – for an interactive User Interface for easy and efficient capture of all the information from the user will be ideal.
+         
          [Digital Views ](../automation/use-cases/digital-skills/digital-views.md) – to design interactive components, panels, and widgets, to proactively present relevant information to your customers.
     * [Feedback Survey](../manage-assistant/feedbacksurvey.md) - Gather feedback from customers by using our out of the box survey templates or push feedback against a survey using our public API experiences.
 2. [KNOWLEDGE AI](../automation/knowledge-ai/knowledge-ai-introduction.md)
