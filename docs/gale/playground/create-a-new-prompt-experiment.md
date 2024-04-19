@@ -2,7 +2,7 @@
 
 A prompt experiment is a process of testing and comparing the performance of different AI models using a specific input called a prompt. The prompt can be a phrase, a question, or a paragraph of data, and the AI model generates an output based on the input.
 
-In a prompt experiment, you can create experiments in either a simple or an advanced mode. In the simple mode, you can easily input prompts and select pre-trained models to automatically generate outputs. In an advanced mode, you have more control over the experiment, allowing you to define your own data sets, add example prompts, and result prompts, and experiment to get the optimized results. 
+In a prompt experiment, you can create experiments in either a simple or an advanced mode. In the simple mode, you can easily input prompts and select from configured to automatically generate outputs. In an advanced mode, you have more control over the experiment, allowing you to link your own data sets, add few shot examples, and system prompts, to get the optimized results. 
 
 Prompt experiments are useful for testing and comparing AI models for specific use cases and applications. 
 

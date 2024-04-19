@@ -6,7 +6,7 @@ Once you have given your prompts in the Prompt box, you can test your prompts ac
 
 
 1. Click the required **Experiment** from the **Experiments** page. The **Prompt experiments** page is displayed.
-2. Click **Add Model** on the **Prompts** page under the **Data Model** section. A pop-up with a list of options is displayed.
+2. Click **Add Model** in the model response section. A pop-up with a list of options is displayed.
 1. Click **Manage models** from the list of options.
 
     <img src="../images/add-model.png" alt="Add Model" title="Add Model" style="border: 1px solid gray; zoom:80%;">

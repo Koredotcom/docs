@@ -1,6 +1,6 @@
 # Generate Output using Advanced Mode
 
-While using the prompt playground, you can upload a dataset in advanced mode as input. You can add and pre-view the existing or newly uploaded datasets. You can also replace one dataset with another based on the requirement for a particular prompt and generate multiple outputs simultaneously. 
+While using the prompt playground, you have to upload a dataset in advanced mode as input. You can add and pre-view the existing or newly uploaded datasets. You can also replace one dataset with another based on the requirement for a particular prompt and generate multiple outputs simultaneously. 
 
 The advanced mode option helps you improve the prompt creation and testing process more easily and efficiently. You can define a prompt to send to the models, add a few examples for the model to understand the output you are expecting, and upload a data set with inputs. In this mode, you can tweak and refine your prompts, generate the outputs for the selected models, and review the generated responses.   
 
@@ -35,29 +35,30 @@ On the Prompt page, you can find a Prompt sample auto-populated based on the tem
 
 3. The value for the variables in the {{}} braces is populated from the uploaded CSV file. You can add variables to the prompt by opening the brackets. For example, {{ xyz }} is a variable in the prompt box. 
 
-    The value of the variable is populated from the dataset or file you have uploaded. To make sure the value is mapped correctly between the variable and the file, for the data to flow, you need to make the column name a variable within those curly braces. 
+    The value of the variable is populated from the dataset or file you have uploaded. To make sure the value is mapped correctly between the variable and the file, for the data to flow, you need to make the column name a variable within those curly braces.
+
+    <img src="../images/generated-output-variable-mapping.png" alt="Generated Output Variable Mapping" title="Generated Output Variable Mapping" style="border: 1px solid gray; zoom:80%;">
     
     For example, {{Name}} is a variable, from the file you uploaded where Name is a column in that CSV file. A maximum of 20 names or rows that you select can flow from the file to the prompt input column of the advanced mode.
 
 1. Click the + icon corresponding to the **Add Model** section to add the models you want to select and compare the generated outputs.
 
-!!! note
+    !!! note
 
-    For more information about how to add a model to the prompt, see **Add an external model**.
+        For more information about how to add a model to the prompt, see **Add an external model**.
 
 1. Click **Generate Output** after you have added the required number of models to compare. The Generated output for comparison is displayed in the Model section of the Prompt playground space for your reference.
 
-!!! note
+    !!! note
 
-    You can view the matrix in the generated output section which helps in deciding which prompt and model are better for your requirement.
+        You can view the matrix in the generated output section which helps in deciding which prompt and model are better for your requirement.
 
-<img src="../images/generated-output-matrix.png" alt="Generated Output Matrix" title="Generated Output Matrix" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/generated-output-matrix.png" alt="Generated Output Matrix" title="Generated Output Matrix" style="border: 1px solid gray; zoom:80%;">
 
 
-It displays the total tokens matrix which implies how many tokens are sent to the model and how many are sent back in the response, the time taken by the model to respond with the answer, and the response and request in the JSON format. You can click the **View in JSON format** icon at the bottom of the generated output section to view the request and response generated in JSON format in a separate dialog box as shown in the following image.
+It displays the total tokens metric which implies how many tokens are sent to the model and how many are sent back in the response, the time taken by the model to respond with the answer, and the response and request in the JSON format. You can click the **View in JSON format** icon at the bottom of the generated output section to view the request and response generated in JSON format in a separate dialog box as shown in the following image.
 
 <img src="../images/json-format-prompt.png" alt="Json Format Prompt" title="Json Format Prompt" style="border: 1px solid gray; zoom:80%;">
-
 
 
 If you want to view all the details of the outputs across all the models you can turn ON the toggle button by clicking the info icon on the **Models** section of the Playground space as shown in the following image. If you turn OFF the toggle, then the total token matrix is not displayed.

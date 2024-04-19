@@ -13,8 +13,8 @@ You have 2 options to copy your prompt experiment:
 
 
 
-* **Copy as a prompt**: If you select the copy as a prompt option, then the user prompt, a few short examples, and the system prompt are all copied. 
-* **Copy as LLM node**: If you select the copy as LLM node option, then along with the user prompt, a few short examples, and the system prompt, the bookmarked model and the settings of the model section are also copied. Once it is copied you can paste it as an LLM node in the Flow builder canvas as an auto-populated LLM node. 
+* **Copy as a prompt**: If you select the copy as a prompt option, then the user prompt, the few shot examples, and the system prompt are all copied. 
+* **Copy as Gen AI node**: If you select the copy as Gen AI node option, then along with the user prompt, the few shot examples, and the system prompt, the bookmarked model and the settings applied to the model are also copied. Once it is copied you can paste it as an Gen AI node in the Flow builder canvas. 
 
 **To copy a prompt, follow these steps**:
 
@@ -24,7 +24,7 @@ You have 2 options to copy your prompt experiment:
     <img src="../images/copy-a-prompt.png" alt="Copy a Prompt" title="Copy a Prompt" style="border: 1px solid gray; zoom:80%;">
 
 
-* Click **as prompt** or **as LLM node** as per your requirement and the experiment is copied.
+* Click **as prompt** or **as Gen AI node** as per your requirement and the experiment is copied.
 
 
 ## Restore a prompt version using the history
@@ -42,15 +42,9 @@ You can review the timeline of prompts and their corresponding generated outputs
 
 * Click the required old version of the experiment. The Restore option is displayed on the footer of the prompt experiment page.
 
-
-    !!! note
-
-        You can import and copy the older version of the prompt experiment if required.
-
- 
     <img src="../images/restore-old-version.png" alt="Restore Old Version" title="Restore Old Version" style="border: 1px solid gray; zoom:80%;">
 
-* Click **Restore** to view the selected version of the prompt experiment.
+* Click **Restore** to work on the selected version of the prompt.
 
 
 ## Export prompt data
