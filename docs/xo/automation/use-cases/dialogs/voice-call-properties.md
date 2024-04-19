@@ -99,13 +99,9 @@ The following sections provide detailed descriptions of each IVR setting, includ
    <td>Initial Prompts
    </td>
    <td>Prompts that are played when the IVR first executes the node. If you 
-<br>
 do not enter a prompt for a node, the default user prompt for the node 
-<br>
 plays by default. If you do not enter a prompt for Standard Responses 
-<br>
 and Welcome Message, the default Standard Response and Welcome
-<br>
  Message are played by default.
    </td>
    <td>- Entity,
@@ -137,13 +133,13 @@ You can <strong>Customize Retries Behavior</strong> for the Timeout Prompts and
  define the number of retries to configure the number of times the user
  would be prompted for this entity value by setting the number of
  <strong>Allowed Retries</strong> to any value between 1 and 10. The default is 3.
-
+<br><br>
 Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong>; this
  can be set to trigger <em>Invoke Call Termination Handler, Initiate Dialog</em>
 <em> Task,</em> or <em>Jump to specific node in current task</em>. When you select
  <em>Initiate Dialog</em> or <em>Jump to a specific node in the current task</em> option,
  you are prompted to select the dialog task or task within the node.
-<br>
+<br><br>
 <strong>Note</strong>: The <strong>Customize Retries Behavior</strong> function is supported only for
  the <strong>IVR</strong> channel at the Entity, Confirmation, and Message nodes.
    </td>
@@ -166,37 +162,24 @@ Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong
    <td>No Match Prompts
    </td>
    <td>Prompts that are played on the IVR channel when the user’s input has
-<br>
  not matched any value in the defined grammar. If you do not enter a
-<br>
  prompt here or select <strong>No Grammar</strong> option for an Entity or
-<br>
  Confirmation node, the default Error Prompt of the node is played.
-<br>
  Standard Responses and Welcomes have a default No Match Prompt
-<br>
  that plays if you do not enter it.
-<br>
+ <br><br>
 You can <strong>Customize Retries Behavior</strong> for the No Match Prompts and
-<br>
  define the number of retries to configure the number of times the user
-<br>
  would be prompted for this entity value by setting the number of
-<br>
  <strong>Allowed Retries</strong> to any value between 1 and 10. The default is 3.
-<br>
+<br><br>
 Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong>; this
-<br>
  can be set to trigger <em>Invoke Call Termination Handler, Initiate Dialog</em>
-<br>
 <em> Task,</em> or <em>Jump to specific node in current task</em>. When you select
-<br>
  <em>Initiate Dialog</em> or <em>Jump to a specific node in the current task</em> option,
-<br>
  you are prompted to select the dialog task or task within the node.
-<br>
+<br><br>
 <strong>Note</strong>: The <strong>Customize Retries Behavior</strong> function is supported only for
-<br>
  the <strong>IVR</strong> channel at the Entity, Confirmation, and Message nodes.
    </td>
    <td>- Entity,
@@ -212,32 +195,22 @@ Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong
    <td>Error Prompts
    </td>
    <td>Prompts that are played on the IVR channel when user input is an
-<br>
  invalid Entity type. If you do not enter a prompt here, the default Error
-<br>
  Prompt of the node is played.
-<br>
+<br><br>
 You can <strong>Customize Retries Behavior</strong> for the Error Prompts and
-<br>
  define the number of retries to configure the number of times the user
-<br>
  would be prompted for this entity value by setting the number of
-<br>
  <strong>Allowed Retries</strong> to any value between 1 and 10. The default is 3.
-<br>
+<br><br>
 Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong>, this
-<br>
  can be set to trigger <em>Invoke Call Termination Handler, Initiate Dialog</em>
-<br>
 <em> Task,</em> or <em>Jump to specific node in current task</em>. When you select
-<br>
  <em>Initiate Dialog</em> or <em>Jump to a specific node in the current task</em> option,
-<br>
  you are prompted to select the dialog task or task within the node.
-<br>
+<br><br>
 <strong>Note</strong>: The <strong>Customize Retries Behavior</strong> function is supported only for
-<br>
- the <strong>IVR</strong> channel at the Entity, Confirmation, and Message nodes..
+ the <strong>IVR</strong> channel at the Entity, Confirmation, and Message nodes.
    </td>
    <td>- Entity,
 <br>
@@ -257,19 +230,17 @@ Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong
    </td>
    <td>Define the grammar that should be used to detect a user’s utterance
 <br>
-* The input type can be Speech or DTMF
-<br>
-* Source of grammar can be Custom or Link
-<br>
-* For Custom, write VXML grammar in the textbox.
-<br>
-* For Link, enter the URL of the grammar. Ideally, the URL should be
-<br>
+   * The input type can be Speech or DTMF
+   <br>
+   * Source of grammar can be Custom or Link
+   <br>
+   * For Custom, write VXML grammar in the textbox.
+   <br>
+   * For Link, enter the URL of the grammar. Ideally, the URL should be
  accessible to the IVR system so that the resource can be accessed
-<br>
  while executing the calls at runtime
 <br>
-<a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/voice-call-properties/#configuring-grammar">See below for a detailed configuration for Grammar syntax</a>.
+[See below for a detailed configuration for Grammar syntax](#configuring-grammar).
 <br>
 <strong>Note</strong>: If the <strong>Enable Transcription</strong> option is enabled for the VA along
 <br>
