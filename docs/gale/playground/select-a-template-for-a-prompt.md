@@ -6,7 +6,7 @@ For example, if you select the “Writing a blog post” template from the Writi
 
 !!! note
 
-    In the simple mode, you can remove the curly braces and add the required variable, but in the advanced mode, the data comes from the dataset file that you have selected. For more information about uploading a dataset, see **Upload a dataset file**.
+    In the simple mode, you just input the required variable without the curly braces. In advanced mode, data is taken from the selected dataset file. For more information about uploading a dataset, see **Upload a dataset file**.
 
 
 **To select a template, follow these steps**:

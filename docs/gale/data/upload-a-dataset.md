@@ -25,5 +25,5 @@ You can upload a dataset of your choice in CSV, JSON, or, JSONL format.
 
 !!! note
 
-    Click the three dots icon corresponding to the name of the dataset and select Delete to delete the dataset if you no longer require it and select Download to download the dataset. However, if you are using a data file in the Playground section and delete the file from the Data page the Playground experiments are impacted, and an error message is displayed. You can
+    Click the three dots icon corresponding to the name of the dataset and select Delete to delete the dataset if you no longer require it and select Download to download the dataset. However, if you are using a data file in the Playground section and delete the file from the Data page the Playground experiments are impacted, and an error message is displayed. 
 

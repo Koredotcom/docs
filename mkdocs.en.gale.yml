@@ -183,13 +183,13 @@ nav:
   - Playground: 
     - Overview: playground/overview.md
     - Create a New Prompt Experiment: playground/create-a-new-prompt-experiment.md
-    - Add a model: playground/add-a-model.md
+    - Add a Model: playground/add-a-model.md
     - Select a Template for a Prompt: playground/select-a-template-for-a-prompt.md
-    - Generate Output using an Advanced Mode: playground/generate-output-using-advanced-mode.md
+    - Generate Output using Advanced Mode: playground/generate-output-using-advanced-mode.md
     - Explore Other Actions to Perform: playground/explore-other-actions-to-perform-in-the-prompt-playground.md    
   - Data: 
     - Overview: data/overview.md 
-    - Upload a Data Set: data/upload-a-dataset.md
+    - Upload a Dataset: data/upload-a-dataset.md
   - Administration:
     - User Management: 
         - Overview: administration/user-management/overview.md

@@ -45,7 +45,7 @@ On the Prompt page, you can find a Prompt sample auto-populated based on the tem
 
     !!! note
 
-        For more information about how to add a model to the prompt, see **Add an external model**.
+        Currently, you can add only a maximum of 3 models in the playground. For more information about how to add a model to the prompt, see **Add an external model**.
 
 1. Click **Generate Output** after you have added the required number of models to compare. The Generated output for comparison is displayed in the Model section of the Prompt playground space for your reference.
 
@@ -61,7 +61,7 @@ It displays the total tokens metric which implies how many tokens are sent to th
 <img src="../images/json-format-prompt.png" alt="Json Format Prompt" title="Json Format Prompt" style="border: 1px solid gray; zoom:80%;">
 
 
-If you want to view all the details of the outputs across all the models you can turn ON the toggle button by clicking the info icon on the **Models** section of the Playground space as shown in the following image. If you turn OFF the toggle, then the total token matrix is not displayed.
+If you want to view all the details of the outputs across all the models you can turn ON the toggle button by clicking the info icon on the **Models** section of the Playground space as shown in the following image. If you turn OFF the toggle, then the metrics is not displayed.
 
 <img src="../images/view-all-details-of-models.png" alt="View All Details of Models" title="View All Details of Models" style="border: 1px solid gray; zoom:80%;">
 

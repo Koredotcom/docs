@@ -1,4 +1,4 @@
-# Add Model
+# Add a Model
 
 Once you have given your prompts in the Prompt box, you can test your prompts across different AI model(s) and decide on the required model.
 

@@ -5,7 +5,7 @@ You can also perform other actions on the prompt page and use it for your refere
 <img src="../images/explore-other-options.png" alt="Explore other Options" title="Explore other Options" style="border: 1px solid gray; zoom:80%;">
 
 
-## **Copy a prompt**
+## **Copy a Prompt**
 
 You can copy a prompt experiment and use it for your reference for easy access to the other sections in the product.
 
@@ -13,7 +13,7 @@ You have 2 options to copy your prompt experiment:
 
 
 
-* **Copy as a prompt**: If you select the copy as a prompt option, then the user prompt, the few shot examples, and the system prompt are all copied. 
+* **Copy as a Prompt**: If you select the copy as a prompt option, then the user prompt, the few shot examples, and the system prompt are all copied. 
 * **Copy as Gen AI node**: If you select the copy as Gen AI node option, then along with the user prompt, the few shot examples, and the system prompt, the bookmarked model and the settings applied to the model are also copied. Once it is copied you can paste it as an Gen AI node in the Flow builder canvas. 
 
 **To copy a prompt, follow these steps**:
@@ -27,7 +27,7 @@ You have 2 options to copy your prompt experiment:
 * Click **as prompt** or **as Gen AI node** as per your requirement and the experiment is copied.
 
 
-## Restore a prompt version using the history
+## Restore a Prompt Version using the History
 
 You can review the timeline of prompts and their corresponding generated outputs, complete with date and time stamps. Additionally, you can restore a prompt from this section, enabling you to utilize it and implement any necessary modifications, thereby saving considerable time compared to creating a new prompt from scratch.
 
@@ -47,7 +47,7 @@ You can review the timeline of prompts and their corresponding generated outputs
 * Click **Restore** to work on the selected version of the prompt.
 
 
-## Export prompt data
+## Export Prompt Data
 
 You can download the prompt and the related experiment data and export it as a CSV file which can be used for later reference. 
 
