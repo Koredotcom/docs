@@ -64,6 +64,7 @@ All the actions available within the Kore.ai XO Platform for a product can be ac
 The Left Navigation Menu shows options, depending on the product and features you select. The top menu has the Product Specific features and the bottom menu has the Related Products features.
 Product specific features and common features applicable to each products are shown below:
 
+
 <img src="../images/ntp(21).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
 
 #### Product Specific Options
@@ -111,13 +112,13 @@ The left navigation of Products of the XO Platform are:
    </td>
    <td>[Learn More about Contact Center AI](../../xo/contactcenter/about-contact-center-ai.md)
    </td>
-   <td>[Learn More about Agent AI](../../xo/agentai/about-agent-ai.md)
+   <td> [Learn More about Agent AI](../../xo/agentai/about-agent-ai.md)
    </td>
   </tr>
 </table>
 
 #### Common Features
-The left navigation of common features of XO Platform are:
+The left navigation of common features of the XO Platform are:
 
 <table>
   <tr>
