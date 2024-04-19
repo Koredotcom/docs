@@ -78,7 +78,7 @@ To edit the field values of an existing skill, follow these steps:
 
 1. Click the desired skill group to get the associated skills list;
 2. Click the **Edit** icon corresponding to the skill you want to update;
-<img src="../skills/images/edit-skill-button.png" alt="Edit Skill Button" title="Edit Skill Button" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/edit-skill-button.png" alt="Edit Skill Button" title="Edit Skill Button" style="border: 1px solid gray; zoom:70%;">
 
 3. Make your changes in the **Edit Skill** window;
 4. Click **Save**. A success confirmation message is displayed once the skill details are updated.
@@ -95,11 +95,11 @@ To delete a skill, follow these steps:
     3. Click the **Delete** button on the confirmation pop-up for each agent. Once deleting all the agents under _Agent Assignments_, click **Save**.
     4. Click the **Delete Skill** icon.
     5. Click the **Delete** button on the confirmation pop-up to confirm your choice.
-    <img src="../images/delete-skill-button.png" alt="Delete Skill Button" title="Delete Skill Button" style="border: 1px solid gray; zoom:70%;">
 
-     !!! Note
+          !!! Note
 
-          You cannot restore deleted Skills.
+               You cannot restore deleted Skills.
+          <img src="../images/delete-skill-button.png" alt="Delete Skill Button" title="Delete Skill Button" style="border: 1px solid gray; zoom:70%;">
 
 ## Skill Groups
 
@@ -122,11 +122,12 @@ Steps to add a new skill group:
 <img src="../images/create-new-skill-group.png" alt="Create Skill Group" title="Create Skill Group" style="border: 1px solid gray; zoom:70%;">
 
 4. A success confirmation message is displayed once the new skill group is created. You can now [add skills](#add-a-skill) to the group.
-<img src="../images/skill-group-created.png" alt="Skill Group Created" title="Skill Group Created" style="border: 1px solid gray; zoom:70%;">
 
      !!! Note
 
           Skill Groups and Skills can have identical names if required. You can add skills with the same name to different groups. Within the same group, skill names must be unique.
+
+     <img src="../images/skill-group-created.png" alt="Skill Group Created" title="Skill Group Created" style="border: 1px solid gray; zoom:70%;">
 
 ### Edit a Skill Group
 
@@ -158,8 +159,9 @@ Follow these steps to delete a Skill Group:
     1. Click the Edit icon corresponding to the group you want to edit;
     2. In the _Edit Skill Group_ window, click Delete Skill Group;
     3. Confirm your choice.  
-    <img src="../images/delete-skill-group.png" alt="Delete Skill Group" title="Delete Skill Group" style="border: 1px solid gray; zoom:70%;">
-    
-     !!! Note
-    
-          You cannot restore deleted Skill Groups.
+
+          !!! Note
+
+               You cannot restore deleted Skill Groups.
+
+          <img src="../images/delete-skill-group.png" alt="Delete Skill Group" title="Delete Skill Group" style="border: 1px solid gray; zoom:70%;">
