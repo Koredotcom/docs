@@ -129,35 +129,22 @@ Message nodes;
    <td>Timeout Prompts
    </td>
    <td>Prompts that are played on the IVR channel when the user has not 
-<br>
 given any input within the specified time. If you do not enter a prompt
-<br>
  for a node, the default Error Prompt of the node is played. Standard
-<br>
  Responses and Welcomes have a default Timeout Prompt that plays if
-<br>
  you don’t define No Match Prompts.
-<br>
 You can <strong>Customize Retries Behavior</strong> for the Timeout Prompts and
-<br>
  define the number of retries to configure the number of times the user
-<br>
  would be prompted for this entity value by setting the number of
-<br>
  <strong>Allowed Retries</strong> to any value between 1 and 10. The default is 3.
-<br>
+
 Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong>; this
-<br>
  can be set to trigger <em>Invoke Call Termination Handler, Initiate Dialog</em>
-<br>
 <em> Task,</em> or <em>Jump to specific node in current task</em>. When you select
-<br>
  <em>Initiate Dialog</em> or <em>Jump to a specific node in the current task</em> option,
-<br>
  you are prompted to select the dialog task or task within the node.
 <br>
 <strong>Note</strong>: The <strong>Customize Retries Behavior</strong> function is supported only for
-<br>
  the <strong>IVR</strong> channel at the Entity, Confirmation, and Message nodes.
    </td>
    <td>- Entity,
