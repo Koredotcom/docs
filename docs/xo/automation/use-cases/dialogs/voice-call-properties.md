@@ -76,29 +76,498 @@ The following sections provide detailed descriptions of each IVR setting, includ
     * You can enter more than one prompt message of different types. You can define their order of sequence by dragging and dropping them.
     * Multiple prompts are useful in scenarios where the prompt has to be played more than once, to avoid repetition, since the prompts are played in order.
 
+<table border="1">
+  <tr>
+   <td><strong>Field</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+   <td><strong>Applicable</strong>
+<br>
+<strong>to</strong>
+<br>
+<strong>Nodes</strong>
+   </td>
+   <td><strong>Applicable</strong>
+<br>
+<strong>to</strong>
+<br>
+<strong>Channel</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Initial Prompts
+   </td>
+   <td>Prompts that are played when the IVR first executes the node. If you 
+<br>
+do not enter a prompt for a node, the default user prompt for the node 
+<br>
+plays by default. If you do not enter a prompt for Standard Responses 
+<br>
+and Welcome Message, the default Standard Response and Welcome
+<br>
+ Message are played by default.
+   </td>
+   <td>- Entity,
+<br>
+- Confirmation,
+<br>
+Message nodes;
+<br>
+- Standard Responses<br>and Welcome Message
+   </td>
+   <td>- IVR,
+<br>
+- Twilio,
+<br>
+- AudioCodes,
+<br>
+- Kore.ai Voice Gateway
+   </td>
+  </tr>
+  <tr>
+   <td>Timeout Prompts
+   </td>
+   <td>Prompts that are played on the IVR channel when the user has not 
+<br>
+given any input within the specified time. If you do not enter a prompt
+<br>
+ for a node, the default Error Prompt of the node is played. Standard
+<br>
+ Responses and Welcomes have a default Timeout Prompt that plays if
+<br>
+ you don’t define No Match Prompts.
+<br>
+You can <strong>Customize Retries Behavior</strong> for the Timeout Prompts and
+<br>
+ define the number of retries to configure the number of times the user
+<br>
+ would be prompted for this entity value by setting the number of
+<br>
+ <strong>Allowed Retries</strong> to any value between 1 and 10. The default is 3.
+<br>
+Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong>; this
+<br>
+ can be set to trigger <em>Invoke Call Termination Handler, Initiate Dialog</em>
+<br>
+<em> Task,</em> or <em>Jump to specific node in current task</em>. When you select
+<br>
+ <em>Initiate Dialog</em> or <em>Jump to a specific node in the current task</em> option,
+<br>
+ you are prompted to select the dialog task or task within the node.
+<br>
+<strong>Note</strong>: The <strong>Customize Retries Behavior</strong> function is supported only for
+<br>
+ the <strong>IVR</strong> channel at the Entity, Confirmation, and Message nodes.
+   </td>
+   <td>- Entity,
+<br>
+- Confirmation,
+<br>
+- Standard Responses<br>and Welcome Message
+   </td>
+   <td>- IVR,
+<br>
+- Twilio,
+<br>
+- AudioCodes,
+<br>
+- Kore.ai Voice Gateway
+   </td>
+  </tr>
+  <tr>
+   <td>No Match Prompts
+   </td>
+   <td>Prompts that are played on the IVR channel when the user’s input has
+<br>
+ not matched any value in the defined grammar. If you do not enter a
+<br>
+ prompt here or select <strong>No Grammar</strong> option for an Entity or
+<br>
+ Confirmation node, the default Error Prompt of the node is played.
+<br>
+ Standard Responses and Welcomes have a default No Match Prompt
+<br>
+ that plays if you do not enter it.
+<br>
+You can <strong>Customize Retries Behavior</strong> for the No Match Prompts and
+<br>
+ define the number of retries to configure the number of times the user
+<br>
+ would be prompted for this entity value by setting the number of
+<br>
+ <strong>Allowed Retries</strong> to any value between 1 and 10. The default is 3.
+<br>
+Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong>; this
+<br>
+ can be set to trigger <em>Invoke Call Termination Handler, Initiate Dialog</em>
+<br>
+<em> Task,</em> or <em>Jump to specific node in current task</em>. When you select
+<br>
+ <em>Initiate Dialog</em> or <em>Jump to a specific node in the current task</em> option,
+<br>
+ you are prompted to select the dialog task or task within the node.
+<br>
+<strong>Note</strong>: The <strong>Customize Retries Behavior</strong> function is supported only for
+<br>
+ the <strong>IVR</strong> channel at the Entity, Confirmation, and Message nodes.
+   </td>
+   <td>- Entity,
+<br>
+- Confirmation,
+<br>
+- Standard Responses<br>and Welcome Message
+   </td>
+   <td>IVR
+   </td>
+  </tr>
+  <tr>
+   <td>Error Prompts
+   </td>
+   <td>Prompts that are played on the IVR channel when user input is an
+<br>
+ invalid Entity type. If you do not enter a prompt here, the default Error
+<br>
+ Prompt of the node is played.
+<br>
+You can <strong>Customize Retries Behavior</strong> for the Error Prompts and
+<br>
+ define the number of retries to configure the number of times the user
+<br>
+ would be prompted for this entity value by setting the number of
+<br>
+ <strong>Allowed Retries</strong> to any value between 1 and 10. The default is 3.
+<br>
+Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong>, this
+<br>
+ can be set to trigger <em>Invoke Call Termination Handler, Initiate Dialog</em>
+<br>
+<em> Task,</em> or <em>Jump to specific node in current task</em>. When you select
+<br>
+ <em>Initiate Dialog</em> or <em>Jump to a specific node in the current task</em> option,
+<br>
+ you are prompted to select the dialog task or task within the node.
+<br>
+<strong>Note</strong>: The <strong>Customize Retries Behavior</strong> function is supported only for
+<br>
+ the <strong>IVR</strong> channel at the Entity, Confirmation, and Message nodes..
+   </td>
+   <td>- Entity,
+<br>
+- Confirmation,
+   </td>
+   <td>- IVR,
+<br>
+- Twilio,
+<br>
+- AudioCodes,
+<br>
+- Kore.ai Voice Gateway
+   </td>
+  </tr>
+  <tr>
+   <td>Grammar
+   </td>
+   <td>Define the grammar that should be used to detect a user’s utterance
+<br>
+* The input type can be Speech or DTMF
+<br>
+* Source of grammar can be Custom or Link
+<br>
+* For Custom, write VXML grammar in the textbox.
+<br>
+* For Link, enter the URL of the grammar. Ideally, the URL should be
+<br>
+ accessible to the IVR system so that the resource can be accessed
+<br>
+ while executing the calls at runtime
+<br>
+<a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/voice-call-properties/#configuring-grammar">See below for a detailed configuration for Grammar syntax</a>.
+<br>
+<strong>Note</strong>: If the <strong>Enable Transcription</strong> option is enabled for the VA along
+<br>
+ with specifying the source of the transcription engine, defining
+<br>
+ grammar isn’t mandatory.
+   </td>
+   <td>Confirmation;
+<br>
+- Standard Responses<br>and Welcome Message
+   </td>
+   <td>- IVR,
+<br>
+- Twilio
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Advanced Controls</strong>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>These properties override the properties set<br> in the VA IVR Settings page and apply to the<br> Dialog Task that you are currently working with.
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Timeout
+   </td>
+   <td>Select the maximum wait time to receive user input from the
+<br>
+ drop-down list, from 1 second up to 60 seconds. The default value is
+<br>
+ the same as defined in the VA IVR Settings page.
+   </td>
+   <td>N/A
+   </td>
+   <td>- IVR,
+<br>
+- Twilio,
+<br>
+- AudioCodes,
+<br>
+- Kore.ai Voice Gateway
+   </td>
+  </tr>
+  <tr>
+   <td>No. of Retries
+   </td>
+   <td>Select the maximum number of retries to allow. You can select from
+<br>
+ just 1 retry up to 10 retries.
+<br>
+The default value is the same as defined in the VA IVR Settings page.
+   </td>
+   <td>N/A
+   </td>
+   <td>- IVR,
+<br>
+- Twilio,
+<br>
+- AudioCodes,
+<br>
+- Kore.ai Voice Gateway
+   </td>
+  </tr>
+  <tr>
+   <td>Behavior on Exceeding Retries
+   </td>
+   <td>Define behavior when either the timeout or number of retry attempts
+<br>
+ exceed the specified limit.
+<br>
+You can <strong>Customize Retries Behavior</strong> for the standard number of
+<br>
+ retries to configure the number of times the user would be prompted
+<br>
+ for this entity value by setting the number of <strong>Allowed Retries</strong> to any
+<br>
+ value between 1 and 10. The default is 3.
+<br>
+Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong>, this
+<br>
+ can be set to trigger <em>Invoke Call Termination Handler, Initiate Dialog</em>
+<br>
+<em> Task,</em> or <em>Jump to specific node in current task</em>. When you select
+<br>
+ <em>Initiate Dialog</em> or <em>Jump to a specific node in the current task</em> option,
+<br>
+ you are prompted to select the dialog task or task within the node.
+<br>
+<strong>Note</strong>: The <strong>Customize Retries Behavior</strong> function is supported only for
+<br>
+ the <strong>IVR</strong> channel at the Entity, Confirmation, and Message nodes.
+   </td>
+   <td>N/A
+   </td>
+   <td>- IVR,
+<br>
+- Twilio,
+<br>
+- AudioCodes,
+<br>
+- Kore.ai Voice Gateway
+   </td>
+  </tr>
+  <tr>
+   <td>Barge-In
+   </td>
+   <td>Select whether you want to allow a user input while a prompt is in
+<br>
+ progress. If you select no, the user input is not considered until the
+<br>
+ prompt is completed. The default value is <strong>No</strong>.
+   </td>
+   <td>N/A
+   </td>
+   <td>- IVR,
+<br>
+- Twilio,
+<br>
+- AudioCodes,
+<br>
+- Kore.ai Voice Gateway
+   </td>
+  </tr>
+  <tr>
+   <td>Call Control Parameters
+   </td>
+   <td>Click <strong>Add Property.</strong> Enter property names and values to use in
+<br>
+ defining the VXML definition in the IVR system and Session
+<br>
+ Parameters in AudioCodes channel. These values defined for a node
+<br>
+ or a standard response override the global Call Control Parameters
+<br>
+ defined in the VA IVR /AudioCodes settings page.
+   </td>
+   <td>N/A
+   </td>
+   <td>- IVR,
+<br>
+- AudioCodes,
+<br>
+- Kore.ai Voice Gateway
+   </td>
+  </tr>
+  <tr>
+   <td>Log
+   </td>
+   <td>Select <strong>Yes</strong> if you want to send the chat log to the IVR system. The
+<br>
+ default value is <strong>No</strong>.
+   </td>
+   <td>N/A
+   </td>
+   <td>IVR
+   </td>
+  </tr>
+  <tr>
+   <td>Locale Definition
+   </td>
+   <td>Enable the <strong>Locale Definition</strong> property to define the <strong><em>(xml:lang =</em></strong>
+<br>
+<strong><em> “&lt;value>”)</em></strong> attribute in the VXML file by enabling the <strong>Locale</strong>
+<br>
+<strong> Definition</strong> property. Automatic Speech Recognition engines use the
+<br>
+ language attribute to enhance speech recognition.
+<br>
+Once the property is enabled, you can see one or more language
+<br>
+ codes corresponding to the bot languages. Enter the locale code for a
+<br>
+ specific bot language in the <strong>Locale Value</strong> field. For example, enter
+<br>
+ ‘<strong>US</strong>‘ or ‘<strong>UK</strong>‘ as the Locale Value for the English (EN) bot language.
+<br>
 
-| **Field** | **Description** | **Applicable**<br>**to**<br>**Nodes** | **Applicable**<br>**to**<br>**Channel** |
-| --- | -------------------- | --- | --- |
-| Initial Prompts | Prompts that are played when the IVR first executes the node. If you do not enter a prompt for a node, the default user prompt for the node plays by default. If you do not enter a prompt for Standard Responses and Welcome Message, the default Standard Response and Welcome Message are played by default. | Entity,<br>Confirmation,<br>Message nodes;<br>Standard Responses and Welcome Message | IVR,<br>Twilio,<br>AudioCodes,<br>Kore.ai Voice Gateway |
-| Timeout Prompts | Prompts that are played on the IVR channel when the user has not given any input within the specified time. If you do not enter a prompt for a node, the default Error Prompt of the node is played. Standard Responses and Welcomes have a default Timeout Prompt that plays if you don’t define No Match Prompts.<br><br>You can **Customize Retries Behavior** for the Timeout Prompts and define the number of retries to configure the number of times the user would be prompted for this entity value by setting the number of **Allowed Retries** to any value between 1 and 10. The default is 3.<br><br>Further, you can define the VA’s **Behavior on Exceeding Retries**; this can be set to trigger _Invoke Call Termination Handler, Initiate Dialog Task,_ or _Jump to specific node in current task_. When you select _Initiate Dialog_ or _Jump to a specific node in the current task_ option, you are prompted to select the dialog task or task within the node.<br><br>**Note**: The **Customize Retries Behavior** function is supported only for the **IVR** channel at the Entity, Confirmation, and Message nodes. | Entity,<br>Confirmation;<br>Standard Responses and Welcome Message | IVR,<br>Twilio,<br>AudioCodes,<br>Kore.ai Voice Gateway |
-| No Match Prompts | Prompts that are played on the IVR channel when the user’s input has not matched any value in the defined grammar. If you do not enter a prompt here or select **No Grammar** option for an Entity or Confirmation node, the default Error Prompt of the node is played. Standard Responses and Welcomes have a default No Match Prompt that plays if you do not enter it.<br><br>You can **Customize Retries Behavior** for the No Match Prompts and define the number of retries to configure the number of times the user would be prompted for this entity value by setting the number of **Allowed Retries** to any value between 1 and 10. The default is 3.<br><br>Further, you can define the VA’s **Behavior on Exceeding Retries**; this can be set to trigger _Invoke Call Termination Handler, Initiate Dialog Task,_ or _Jump to specific node in current task_. When you select _Initiate Dialog_ or _Jump to a specific node in the current task_ option, you are prompted to select the dialog task or task within the node.<br><br>**Note**: The **Customize Retries Behavior** function is supported only for the **IVR** channel at the Entity, Confirmation, and Message nodes. | Entity,<br>Confirmation;<br>Standard Responses and Welcome Message | IVR |
-| Error Prompts | Prompts that are played on the IVR channel when user input is an invalid Entity type. If you do not enter a prompt here, the default Error Prompt of the node is played.<br><br>You can **Customize Retries Behavior** for the Error Prompts and define the number of retries to configure the number of times the user would be prompted for this entity value by setting the number of **Allowed Retries** to any value between 1 and 10. The default is 3.<br><br>Further, you can define the VA’s **Behavior on Exceeding Retries**, this can be set to trigger _Invoke Call Termination Handler, Initiate Dialog Task,_ or _Jump to specific node in current task_. When you select _Initiate Dialog_ or _Jump to a specific node in the current task_ option, you are prompted to select the dialog task or task within the node.<br><br>**Note**: The **Customize Retries Behavior** function is supported only for the **IVR** channel at the Entity, Confirmation, and Message nodes.. | Entity,<br>Confirmation; | IVR,<br>Twilio,<br>AudioCodes,<br>Kore.ai Voice Gateway |
-| Grammar | Define the grammar that should be used to detect a user’s utterance<br><br>* The input type can be Speech or DTMF<br>* Source of grammar can be Custom or Link<br>    * For Custom, write VXML grammar in the textbox.<br>    * For Link, enter the URL of the grammar. Ideally, the URL should be accessible to the IVR system so that the resource can be accessed while executing the calls at runtime<br>        <br>        [See below for a detailed configuration for Grammar syntax](#configuring-grammar). <br> **Note**: If the **Enable Transcription** option is enabled for the VA along with specifying the source of the transcription engine, defining grammar isn’t mandatory. | Confirmation;<br>Standard Responses and Welcome Message | IVR,<br>Twilio |
-| **Advanced Controls** |     |     |     |
-| These properties override the properties set in the VA IVR Settings page and apply to the Dialog Task that you are currently working with. |     |     |     |
-| Timeout | Select the maximum wait time to receive user input from the drop-down list, from 1 second up to 60 seconds. The default value is the same as defined in the VA IVR Settings page. | N/A | IVR,<br>Twilio,<br>AudioCodes,<br>Kore.ai Voice Gateway |
-| No. of Retries | Select the maximum number of retries to allow. You can select from just 1 retry up to 10 retries.<br><br>The default value is the same as defined in the VA IVR Settings page. | N/A | IVR,<br>Twilio,<br>AudioCodes,<br>Kore.ai Voice Gateway |
-| Behavior on Exceeding Retries | Define behavior when either the timeout or number of retry attempts exceed the specified limit.<br><br>You can **Customize Retries Behavior** for the standard number of retries to configure the number of times the user would be prompted for this entity value by setting the number of **Allowed Retries** to any value between 1 and 10. The default is 3.<br><br>Further, you can define the VA’s **Behavior on Exceeding Retries**, this can be set to trigger _Invoke Call Termination Handler, Initiate Dialog Task,_ or _Jump to specific node in current task_. When you select _Initiate Dialog_ or _Jump to a specific node in the current task_ option, you are prompted to select the dialog task or task within the node.<br><br>**Note**: The **Customize Retries Behavior** function is supported only for the **IVR** channel at the Entity, Confirmation, and Message nodes. | N/A | IVR,<br>Twilio,<br>AudioCodes,<br>Kore.ai Voice Gateway |
-| Barge-In | Select whether you want to allow a user input while a prompt is in progress. If you select no, the user input is not considered until the prompt is completed. The default value is **No**. | N/A | IVR,<br>Twilio,<br>AudioCodes,<br>Kore.ai Voice Gateway |
-| Call Control Parameters | Click **Add Property.** Enter property names and values to use in defining the VXML definition in the IVR system and Session Parameters in AudioCodes channel. These values defined for a node or a standard response override the global Call Control Parameters defined in the VA IVR /AudioCodes settings page. | N/A | IVR,<br>AudioCodes,<br>Kore.ai Voice Gateway |
-| Log | Select **Yes** if you want to send the chat log to the IVR system. The default value is **No**. | N/A | IVR |
-| Locale Definition | Enable the **Locale Definition** property to define the **_(xml:lang = “&lt;value&gt;”)_** attribute in the VXML file by enabling the **Locale Definition** property. Automatic Speech Recognition engines use the language attribute to enhance speech recognition.<br><br>Once the property is enabled, you can see one or more language codes corresponding to the bot languages. Enter the locale code for a specific bot language in the **Locale Value** field. For example, enter ‘**US**‘ or ‘**UK**‘ as the Locale Value for the English (EN) bot language.<br><br> ![alt_text](images/locale_definition.png )<br><br>**Note**: By default, the **Locale Definition** property is disabled for all virtual assistants. | N/A | IVR |
-| Document Type Definitions | The Document Type Definition (DTD) typically refers to a specific syntax used to define the structure and constraints of a Voice Extensible Markup Language (VXML) document. The DTD settings help the VXML to understand the response.<br><br>You can use the **Default** DTD settings defined in the Status, Public ID, and System ID fields for the VXML. If you want to modify settings, click **Customize** to change the values.<br><br>**Note**: If the **Status** field is set to _Include_, you can enter the Public and System ID. If it is set to _Exclude_, you cannot view those fields. | N/A | IVR |
-| Fallback Redirection | A Fallback Redirection is an alternative path that the IVR system uses to handoff the conversation whenever the call hangs up<br><br>You can add an URL to redirect the conversation whenever the call hangs up.<br><br>By default, the **Fallback Redirection** is disabled. If you want to enable the Fallback Redirection, click **Customize**.<br><br>**Note**: The Fallback Redirection is supported by both standard and universal bots. | N/A | IVR |
-| Propagate Values to Link Bots | Enable this option to propagate the Voice Call Properties from the Universal Bot to all its linked bots. It helps you to leverage the UB properties when a linked bot’s execution is in progress. The Voice Call Properties of the linked bot are used when the conversation is happening directly with the bot as a Standard bot.<br><br>By default this option is disabled. | N/A | IVR |
-| Recording | Define the state of recording to be initiated. The default value is **Stop**. | N/A | IVR |
+
+<img src="../images/locale_definition.png alt="Locale Definition" style="border:1px solid gray;zoom:50%;">
 
 
+<br>
+<strong>Note</strong>: By default, the <strong>Locale Definition</strong> property is disabled for all
+<br>
+ virtual assistants.
+   </td>
+   <td>N/A
+   </td>
+   <td>IVR
+   </td>
+  </tr>
+  <tr>
+   <td>Document Type Definitions
+   </td>
+   <td>The Document Type Definition (DTD) typically refers to a specific
+<br>
+ syntax used to define the structure and constraints of a Voice
+<br>
+ Extensible Markup Language (VXML) document. The DTD settings
+<br>
+ help the VXML to understand the response.
+<br>
+You can use the <strong>Default</strong> DTD settings defined in the Status, Public ID,
+<br>
+ and System ID fields for the VXML. If you want to modify settings,
+<br>
+ click <strong>Customize</strong> to change the values.
+<br>
+<strong>Note</strong>: If the <strong>Status</strong> field is set to <em>Include</em>, you can enter the Public and
+<br>
+ System ID. If it is set to <em>Exclude</em>, you cannot view those fields.
+   </td>
+   <td>N/A
+   </td>
+   <td>IVR
+   </td>
+  </tr>
+  <tr>
+   <td>Fallback Redirection
+   </td>
+   <td>A Fallback Redirection is an alternative path that the IVR system uses
+<br>
+ to handoff the conversation whenever the call hangs up
+<br>
+You can add an URL to redirect the conversation whenever the call
+<br>
+ hangs up.
+<br>
+By default, the <strong>Fallback Redirection</strong> is disabled. If you want to enable
+<br>
+ the Fallback Redirection, click <strong>Customize</strong>.
+<br>
+<strong>Note</strong>: The Fallback Redirection is supported by both standard and
+<br>
+ universal bots.
+   </td>
+   <td>N/A
+   </td>
+   <td>IVR
+   </td>
+  </tr>
+  <tr>
+   <td>Propagate Values to Link Bots
+   </td>
+   <td>Enable this option to propagate the Voice Call Properties from the
+<br>
+ Universal Bot to all its linked bots. It helps you to leverage the UB
+<br>
+ properties when a linked bot’s execution is in progress. The Voice Call
+<br>
+ Properties of the linked bot are used when the conversation is
+<br>
+ happening directly with the bot as a Standard bot.
+<br>
+By default this option is disabled.
+   </td>
+   <td>N/A
+   </td>
+   <td>IVR
+   </td>
+  </tr>
+  <tr>
+   <td>Recording
+   </td>
+   <td>Define the state of recording to be initiated. The default value is <strong>Stop</strong>.
+   </td>
+   <td>N/A
+   </td>
+   <td>IVR
+   </td>
+  </tr>
+</table>
 
 
 
