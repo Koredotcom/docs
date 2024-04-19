@@ -17,10 +17,9 @@ Click the **General Settings** icon and provide the following information:
 2. In the **Choose Skills** drop-down, specify the skills or skill groups which you want to check agent availability for.
 3. Select the **Check for specific agents** checkbox to search for specific agents in the text field. This will restrict the node to only checking availability among the selected agents.
 
-!!!Note
+    !!!Note
 
-    You can check agent availability either based on skills or agents. Both criteria cannot be used together.
-
+        You can check agent availability either based on skills or agents. Both criteria cannot be used together.
 4. Under **Output**, you can select nodes to define the following:
     1. **The success path (If an agent is available)**: The flow is directed to the selected node from the current node if an available is found, according to the criteria set above.
     2. **The failure path (If no agent is available)**: The flow is directed to the selected node from the current node if an available agent is not found, according to the criteria set above.
@@ -40,7 +39,7 @@ Use this section to handle system errors during customer interactions.
     <img src="./../images/text-to-speech-agent-availability.png" alt="Text to Speech" title="Text to Speech" style="border: 1px solid gray; zoom:70%;">
     * **Audio File**: You can type a new message to be played to the customer in the text field or click **+ Upload New** to upload an audio file (.mp3 or .wav format) with the message to be played.
     <img src="./../images/audio-file-check-agent-availability.png" alt="Audio File" title="Audio File" style="border: 1px solid gray; zoom:70%;">
-    * **Link**: Click **+ Create New** to add the text of the message you want to play to the customer and insert the URL of an audio file in .mp3 or .wav format. Click** + Add Another** to add another message URL.  
+    * **Link**: Click **+ Create New** to add the text of the message you want to play to the customer and insert the URL of an audio file in .mp3 or .wav format. Click **+ Add Another** to add another message URL.  
     <img src="./../images/link-agent-availability.png" alt="Link" title="Link" style="border: 1px solid gray; zoom:70%;">
 
 * **Go to node**: Select the node to which you want to direct the error handling flow and define the system behavior. You can create a new node by selecting a node type or identifying and selecting an existing node.  

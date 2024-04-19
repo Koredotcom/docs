@@ -35,12 +35,12 @@ The toolbar provides access to the following:
 
 ## The Index Panel
 
-The index panel consists of all the nodes you can add on the canvas to build the flow. The search bar on the index panel allows you to search for a node.  
+The index panel consists of all the nodes you can add on the canvas to build the flow. The search bar on the index panel allows you to search for a node. [Learn more](../flows/node-types/introduction-to-flow-nodes.md).  
 <img src="../images/index-panel.png" alt="Index Panel" title="Index Panel" style="border: 1px solid gray; zoom:70%;">
 
 ## The Nodes Panel
 
-The nodes panel groups the nodes into categories for easy identification. [Learn more](https://docs.kore.ai/smartassist/experience-flows/flow-designer-components/).
+The nodes panel groups the nodes into categories for easy identification.  
 <img src="../images/nodes-panel.png" alt="Nodes Panel" title="Nodes Panel" style="border: 1px solid gray; zoom:70%;">
 
 ## The Mini Map
