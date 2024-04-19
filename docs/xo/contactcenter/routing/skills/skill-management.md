@@ -14,7 +14,7 @@ The Skills section is organized by Skill Groups. Click a group to expand it and 
 
 ### Add a Skill
 
-Before adding a skill, you need a skill group. See [Skill Groups](#skill-groups) for details. SmartAssist comes pre-configured with a Default Skill Group to which you can add skills.
+Before adding a skill, you need a skill group. See [Skill Groups](#skill-groups) for details. Contact Center AI comes pre-configured with a Default Skill Group to which you can add skills.
 
 To add skills to a skill group, follow these steps:
 
