@@ -258,23 +258,7 @@ Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong
    </td>
   </tr>
   <tr>
-   <td><strong>Advanced Controls</strong>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>These properties override the properties set<br> in the VA IVR Settings page and apply to the<br> Dialog Task that you are currently working with.
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
+   <td colspan="4"><strong>Advanced Controls</strong> - These properties override the properties set in the VA IVR Settings page and apply to the Dialog Task that you are currently working with.
    </td>
   </tr>
   <tr>
@@ -526,7 +510,6 @@ By default this option is disabled.
    </td>
   </tr>
 </table>
-
 
 
 Below is a demo of the IVR Properties section, within the Component Properties panel of a Dialog Task node.
