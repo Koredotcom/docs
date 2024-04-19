@@ -9,9 +9,9 @@ To create a dialog task, you must have already created an assistant to add a dia
 
 To add a dialog task, follow the steps below:
 
-1. Open the assistant for which you want to create the dialog task.
-2. Click the **Automation** icon on the left menu.
-3. The Automation menu opens, and the **Dialogs** page is open by default.
+1. Open the app for which you want to create the dialog task.
+2. Navigate to **Automation AI > Virtual Assistant** icon on the left menu.
+3. The Virtual Assistant menu opens, and the **Dialogs** page is open by default.
 4. On the Dialogs page, click the **Create Dialog** button.
 
     <img src="../images/using-dialog-builder-img1-create-dialog.png" alt="Dialogs" title="Dialogs" style="border:1px solid gray;zoom:60%;">
@@ -492,7 +492,9 @@ Add or modify the following settings for your dialog:
     * **Intent Settings:**
         * **Sub intent only dialog** – The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
         * **Hide from help** – The task is not presented as a task when the user requests help. Users can invoke this task anytime while talking to the assistant.
-        * **Note: **This option is selected automatically when the previous option is selected. You can manually deselect it.
+            
+            **Note:** This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
+    
     * **Analytics - Containment Type**(Any one option can be selected):
         * **Abundance as Self Service:** Users can abandon the conversation while executing the dialog.
         * **Abundance as Drop Off:** Conversations can be abandoned by users or due to any failure during dialog execution.
