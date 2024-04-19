@@ -160,6 +160,6 @@ Follow these steps to delete a Skill Group:
     3. Confirm your choice.  
           <img src="../images/delete-skill-group.png" alt="Delete Skill Group" title="Delete Skill Group" style="border: 1px solid gray; zoom:70%;">
           
-          !!!Note
+          !!!note
           
-           You cannot restore deleted flow skills. Please proceed with caution.
+             You cannot restore deleted flow skills. Please proceed with caution.
