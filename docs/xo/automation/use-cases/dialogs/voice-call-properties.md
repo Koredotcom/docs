@@ -104,21 +104,21 @@ plays by default. If you do not enter a prompt for Standard Responses
 and Welcome Message, the default Standard Response and Welcome
  Message are played by default.
    </td>
-   <td>- Entity,
+   <td>Entity,
 <br>
-- Confirmation,
+Confirmation,
 <br>
 Message nodes;
 <br>
-- Standard Responses<br>and Welcome Message
+Standard Responses<br>and Welcome Message
    </td>
-   <td>- IVR,
+   <td>IVR,
 <br>
-- Twilio,
+Twilio,
 <br>
-- AudioCodes,
+AudioCodes,
 <br>
-- Kore.ai Voice Gateway
+Kore.ai Voice Gateway
    </td>
   </tr>
   <tr>
@@ -143,19 +143,19 @@ Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong
 <strong>Note</strong>: The <strong>Customize Retries Behavior</strong> function is supported only for
  the <strong>IVR</strong> channel at the Entity, Confirmation, and Message nodes.
    </td>
-   <td>- Entity,
+   <td>Entity,
 <br>
-- Confirmation,
+Confirmation,
 <br>
-- Standard Responses<br>and Welcome Message
+Standard Responses<br>and Welcome Message
    </td>
-   <td>- IVR,
+   <td>IVR,
 <br>
-- Twilio,
+Twilio,
 <br>
-- AudioCodes,
+AudioCodes,
 <br>
-- Kore.ai Voice Gateway
+Kore.ai Voice Gateway
    </td>
   </tr>
   <tr>
@@ -182,11 +182,11 @@ Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong
 <strong>Note</strong>: The <strong>Customize Retries Behavior</strong> function is supported only for
  the <strong>IVR</strong> channel at the Entity, Confirmation, and Message nodes.
    </td>
-   <td>- Entity,
+   <td>Entity,
 <br>
-- Confirmation,
+Confirmation,
 <br>
-- Standard Responses<br>and Welcome Message
+Standard Responses<br>and Welcome Message
    </td>
    <td>IVR
    </td>
@@ -212,17 +212,17 @@ Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong
 <strong>Note</strong>: The <strong>Customize Retries Behavior</strong> function is supported only for
  the <strong>IVR</strong> channel at the Entity, Confirmation, and Message nodes.
    </td>
-   <td>- Entity,
+   <td>Entity,
 <br>
-- Confirmation,
+Confirmation,
    </td>
-   <td>- IVR,
+   <td>IVR,
 <br>
-- Twilio,
+Twilio,
 <br>
-- AudioCodes,
+AudioCodes,
 <br>
-- Kore.ai Voice Gateway
+Kore.ai Voice Gateway
    </td>
   </tr>
   <tr>
@@ -240,7 +240,7 @@ Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong
  accessible to the IVR system so that the resource can be accessed
  while executing the calls at runtime
 <br>
-[See below for a detailed configuration for Grammar syntax](#configuring-grammar).
+<a href="#configuring-grammar">See below for a detailed configuration for Grammar syntax</a>.
 <br>
 <strong>Note</strong>: If the <strong>Enable Transcription</strong> option is enabled for the VA along
 <br>
@@ -250,11 +250,11 @@ Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong
    </td>
    <td>Confirmation;
 <br>
-- Standard Responses<br>and Welcome Message
+Standard Responses<br>and Welcome Message
    </td>
-   <td>- IVR,
+   <td>IVR,
 <br>
-- Twilio
+Twilio
    </td>
   </tr>
   <tr>
@@ -272,13 +272,13 @@ Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong
    </td>
    <td>N/A
    </td>
-   <td>- IVR,
+   <td>IVR,
 <br>
-- Twilio,
+Twilio,
 <br>
-- AudioCodes,
+AudioCodes,
 <br>
-- Kore.ai Voice Gateway
+Kore.ai Voice Gateway
    </td>
   </tr>
   <tr>
@@ -292,13 +292,13 @@ The default value is the same as defined in the VA IVR Settings page.
    </td>
    <td>N/A
    </td>
-   <td>- IVR,
+   <td>IVR,
 <br>
-- Twilio,
+Twilio,
 <br>
-- AudioCodes,
+AudioCodes,
 <br>
-- Kore.ai Voice Gateway
+Kore.ai Voice Gateway
    </td>
   </tr>
   <tr>
@@ -332,13 +332,13 @@ Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong
    </td>
    <td>N/A
    </td>
-   <td>- IVR,
+   <td>IVR,
 <br>
-- Twilio,
+Twilio,
 <br>
-- AudioCodes,
+AudioCodes,
 <br>
-- Kore.ai Voice Gateway
+Kore.ai Voice Gateway
    </td>
   </tr>
   <tr>
@@ -352,13 +352,13 @@ Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong
    </td>
    <td>N/A
    </td>
-   <td>- IVR,
+   <td>IVR,
 <br>
-- Twilio,
+Twilio,
 <br>
-- AudioCodes,
+AudioCodes,
 <br>
-- Kore.ai Voice Gateway
+Kore.ai Voice Gateway
    </td>
   </tr>
   <tr>
@@ -376,11 +376,11 @@ Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong
    </td>
    <td>N/A
    </td>
-   <td>- IVR,
+   <td>IVR,
 <br>
-- AudioCodes,
+AudioCodes,
 <br>
-- Kore.ai Voice Gateway
+Kore.ai Voice Gateway
    </td>
   </tr>
   <tr>
