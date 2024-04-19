@@ -98,27 +98,27 @@ This section includes:
 This section includes
 
 1.  USE CASES
-    * [Dialogs](../automation/use-cases/dialogs/managing-dialogs.md) a full conversational flow between a user and a VA
-    * [Small Talk](../automation/use-cases/small-talk.md) - for the casual conversations that a VA can have with the end-users.
+    * [Dialogs](../automation/use-cases/dialogs/managing-dialogs.md)- a full conversational flow between a user and a VA
+    * [Small Talk](../automation/use-cases/small-talk.md)- for the casual conversations that a VA can have with the end-users.
     * [Digital Skills-](../automation/use-cases/digital-skills/digital-skills-overview.md)
 
-         [Digital Forms](../automation/use-cases/digital-skills/digital-forms.md) – for an interactive User Interface for easy and efficient capture of all the information from the user will be ideal.
-         
-         [Digital Views ](../automation/use-cases/digital-skills/digital-views.md) – to design interactive components, panels, and widgets, to proactively present relevant information to your customers.
-    * [Feedback Survey](../manage-assistant/feedbacksurvey.md) - Gather feedback from customers by using our out of the box survey templates or push feedback against a survey using our public API experiences.
+         [Digital Forms](../automation/use-cases/digital-skills/digital-forms.md)- for an interactive User Interface for easy and efficient capture of all the information from the user will be ideal.
+
+         [Digital Views ](../automation/use-cases/digital-skills/digital-views.md)- to design interactive components, panels, and widgets, to proactively present relevant information to your customers.
+    * [Feedback Survey](../manage-assistant/feedbacksurvey.md)-  Gather feedback from customers by using our out of the box survey templates or push feedback against a survey using our public API experiences.
 2. [KNOWLEDGE AI](../automation/knowledge-ai/knowledge-ai-introduction.md)
     * [FAQs](../automation/knowledge-ai/manage-faqs.md) - FAQs allow you to add question-answer sets to your Knowledge Graph and map them to related ontology terms.
 3. Natural Language
-    * [Training](../automation/natural-language/training/nlp-training-overview.md) - Train the intents, entities, synonyms, and traits of the Virtual Assistant.
-    * [NLU Config](../automation/natural-language/training/machine-learning-engine.md) - Fine-tune intent and entity detection by customizing the Machine Learning, Fundamental Meaning, and Knowledge Graph models. Machine Learning, and Knowledge Graph models for each of the enabled languages.
+    * [Training](../automation/natural-language/training/nlp-training-overview.md)- Train the intents, entities, synonyms, and traits of the Virtual Assistant.
+    * [NLU Config](../automation/natural-language/training/machine-learning-engine.md)- Fine-tune intent and entity detection by customizing the Machine Learning, Fundamental Meaning, and Knowledge Graph models. Machine Learning, and Knowledge Graph models for each of the enabled languages.
 4. Conversation Intelligence
     * Event- Customize the user experience by defining the behavior of the Virtual Assistant
     * Conversation Management- Modify the standard responses the Virtual Assistant should use to handle common scenarios that occur during user interaction. Also, define how interruptions identified during ongoing task execution should be handled.
 5. Testing
-    * [Utterance Testing](../automation/testing/testing-your-bot-with-nlp.md) - Test & Train your app to understand different user utterances and match them with intents and entities.
-    * Regression Testing- A one-stop place to view the summary of test coverage, performance, and training recommendations. 
+    * [Utterance Testing](../automation/testing/testing-your-bot-with-nlp.md)- Test & Train your app to understand different user utterances and match them with intents and entities.
+    * Regression Testing- A one-stop place to view the summary of test coverage, performance, and training recommendations.
 6. Tools
-    * Intent Discovery- With this you can upload User-Agent interaction Transcripts and discover Intents that are to be created as Dialog Tasks to be Automated
+    * Intent Discovery- With this you can upload User-Agent interaction Transcripts and discover Intents that are to be created as Dialog Tasks to be Automated.
 
 <img src="../images/ntp(3).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
@@ -127,20 +127,20 @@ This section includes
 This section is used to analyze and gain insight into your VA’s activity. It includes:
 
 1. **Overview**
-    * [Summary](../analytics/overview/summary-dashboard.md) helps see a general overview of your VA’s activity.
-    * [Conversations Dashboard](../analytics/overview/conversations-dashboard.md) to access conversation related statistics.
-    * [Conversations History](../analytics/overview/conversations-history.md) to view conversation related statistics.
-    * [Users Dashboard](../analytics/overview/users-dashboard.md) to monitor user activity within your VA.
-    * [Feedback Dashboard](../analytics/overview/feedback-dashboard.md) to constantly monitor and analyze customer responses, feedback survey scores, and trends over a given period.
+    * [Summary](../analytics/overview/summary-dashboard.md)- helps see a general overview of your VA’s activity.
+    * [Conversations Dashboard](../analytics/overview/conversations-dashboard.md)- to access conversation related statistics.
+    * [Conversations History](../analytics/overview/conversations-history.md)- to view conversation related statistics.
+    * [Users Dashboard](../analytics/overview/users-dashboard.md)- to monitor user activity within your VA.
+    * [Feedback Dashboard](../analytics/overview/feedback-dashboard.md)- to constantly monitor and analyze customer responses, feedback survey scores, and trends over a given period.
 2. **GEN AI ANALYTICS**
-    * [Usage Logs](../analytics/genai-analytics/llm-usage-logs.md) to track the general usage of your VA.
+    * [Usage Logs](../analytics/genai-analytics/llm-usage-logs.md)- to track the general usage of your VA.
 3. **VIRTUAL ASSISTANT**
-    * [Performance Dashboard](../analytics/automation/performance-dashboard.md) to view statistics related to intent identification, goal completion, or successful API and script execution.
-    * [Conversation Insights](../analytics/automation/conversation-insights.md) to simplify performance analysis by clustering utterances based on semantic meaning, streamlining intent identification, and saving time for app designers.
-    * [NLP Insights](../analytics/automation/nlp-insights.md) to track intent detection and make appropriate corrections in the training model.
-    * [Task Execution Logs](../analytics/automation/task-execution-logs.md) to gain in-depth insights into the task execution-related data and assess the virtual assistant’s performance in executing tasks.
-    * [Custom Dashboards](../analytics/automation/custom-dashboard/introduction-to-custom-dashboard.md) to build your analytics and reports.
-    * [Conversation Flows](../analytics/automation/conversation-flows.md) to visualize the journey of various VA-user interactions across conversation sessions in a given time period.
+    * [Performance Dashboard](../analytics/automation/performance-dashboard.md)- to view statistics related to intent identification, goal completion, or successful API and script execution.
+    * [Conversation Insights](../analytics/automation/conversation-insights.md)- to simplify performance analysis by clustering utterances based on semantic meaning, streamlining intent identification, and saving time for app designers.
+    * [NLP Insights](../analytics/automation/nlp-insights.md)- to track intent detection and make appropriate corrections in the training model.
+    * [Task Execution Logs](../analytics/automation/task-execution-logs.md)- to gain in-depth insights into the task execution-related data and assess the virtual assistant’s performance in executing tasks.
+    * [Custom Dashboards](../analytics/automation/custom-dashboard/introduction-to-custom-dashboard.md)- to build your analytics and reports.
+    * [Conversation Flows](../analytics/automation/conversation-flows.md)- to visualize the journey of various VA-user interactions across conversation sessions in a given time period.
 
 <img src="../images/ntp(4).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
@@ -149,29 +149,29 @@ This section is used to analyze and gain insight into your VA’s activity. It i
 This section includes:
 
 1. Deploy Management
-    * [Publish](../deploy/publishing-bot.md) – A quick-access option to take your VA live.
-    * [App Version](../deploy/bot-versioning.md) – Create and manage versions of the Virtual Assistant definition, and restore to a previous version.
-    * Import and Export – Import or export the current App definition as a JSON file.
+    * [Publish](../deploy/publishing-bot.md)- A quick-access option to take your VA live.
+    * [App Version](../deploy/bot-versioning.md)- Create and manage versions of the Virtual Assistant definition, and restore to a previous version.
+    * Import and Export- Import or export the current App definition as a JSON file.
 
 <img src="../images/ntp(6).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 #### App Settings
 
 1. Configuration - Manage generic App details, App languages, variables, advance settings, etc.
-    * [App Profile](../app-settings/app-profile.md) - Manage generic App details like App Name, error codes, fallback module behaviour, and other settings.
-    * [Language Management](../app-settings/language-management/managing-languages-for-multilingual-vas.md) - Manage the App languages that should be supported for Virtual Assistant Automation and Agent Supported languages.
-    * [Integrations](../app-settings/integrations/actions/actions.md) - Pre-built integrations with business systems to securely exchange the data using auto-generated conversation flows for popular use cases.
-    * [Generative AI Tools](../app-settings/generative-ai-tools/introduction.md) - Enable integration with LLM and Generative AI models, unlock new capabilities, and modify additional NLP settings such as auto training, negative patterns, prompt and request Library.
-    * [Dev Tools](../app-settings/dev-tools/bot-authorization/bot-authentication.md) - Define custom script with reusable functions that can be invoked from anywhere in the Virtual Assistant.
-    * [Variables](../app-settings/variables/using-bot-variables.md) - Use Environment variables to define reusable values and configurations that change from one environment to another.
-    * [Advanced Settings](../app-settings/advanced-settings/pii-data-masking.md) - Define rules to handle PII data shared with your Virtual Assistant.
-    * [Change Logs](../app-settings/change-logs.md) - Track the detailed log of the changes done to your App's Automation Module
-    * [Delete Apps](../app-settings/delete-app.md) 
+    * [App Profile](../app-settings/app-profile.md)- Manage generic App details like App Name, error codes, fallback module behaviour, and other settings.
+    * [Language Management](../app-settings/language-management/managing-languages-for-multilingual-vas.md)- Manage the App languages that should be supported for Virtual Assistant Automation and Agent Supported languages.
+    * [Integrations](../app-settings/integrations/actions/actions.md)- Pre-built integrations with business systems to securely exchange the data using auto-generated conversation flows for popular use cases.
+    * [Generative AI Tools](../app-settings/generative-ai-tools/introduction.md)- Enable integration with LLM and Generative AI models, unlock new capabilities, and modify additional NLP settings such as auto training, negative patterns, prompt and request Library.
+    * [Dev Tools](../app-settings/dev-tools/bot-authorization/bot-authentication.md)- Define custom script with reusable functions that can be invoked from anywhere in the Virtual Assistant.
+    * [Variables](../app-settings/variables/using-bot-variables.md)- Use Environment variables to define reusable values and configurations that change from one environment to another.
+    * [Advanced Settings](../app-settings/advanced-settings/pii-data-masking.md)- Define rules to handle PII data shared with your Virtual Assistant.
+    * [Change Logs](../app-settings/change-logs.md)- Track the detailed log of the changes done to your App's Automation Module
+    * [Delete Apps](../app-settings/delete-app.md)
 
 <img src="../images/ntp(7).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 #### Marketplace
 
-It is an online collection of templates that run on the Kore.ai XO Platform. It allows you to find predefined app templates that you can use to develop your  Virtual Assistant faster.
+It is an online collection of templates that run on the Kore.ai XO Platform. It allows you to find predefined app templates that you can use to develop yourn Virtual Assistant faster.
 
 <img src="../images/ntp(8).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
