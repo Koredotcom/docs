@@ -1,10 +1,8 @@
 # Voice Call Properties
 
-You can enable voice interaction with your virtual assistant, i.e., users can talk to the virtual assistant. For this, you need to enable one of the voice channels like [IVR](../../../../channels/ivr-integration.md), [Twilio](../../../../channels/add-twilio-voice-channel.md), [IVR-AudioCodes](../../../../channels/ivr-audio-codes.md), [kore.ai Voice Gateway](../../../../channels/kore.ai-voice-gateway/kore-voice-gateway.md) etc and publish the VA on those channels.
+You can enable voice interaction with your virtual assistant, i.e., users can talk to the virtual assistant. For this, you need to enable one of the voice channels like [IVR](../../../../channels/ivr-integration){:target="_blank"}, [Twilio](../../../../channels/add-twilio-voice-channel){:target="_blank"}, [IVR-AudioCodes](../../../../channels/ivr-audio-codes){:target="_blank"}, [kore.ai Voice Gateway](../../../../channels/kore.ai-voice-gateway/kore-voice-gateway){:target="_blank"} etc and publish the VA on those channels.
 
 There are some Voice Properties you can configure to streamline the user experience across the above-mentioned channels. These configurations can be done at multiple levels:
-
-
 
 * VA level – at the time of channel enablement;
 * Component level – once you enable the voice properties at the VA level, then you can define the behavior for various components like:
@@ -16,10 +14,7 @@ There are some Voice Properties you can configure to streamline the user experie
 
 IVR Properties are accessible by going to a Dialog Task, selecting an _Entity, Message_ or _Confirmation_ Node, then by accessing the IVR Properties section.
 
-
 <img src="../images/access-ivr.png" alt="IVR Properties" title="IVR Properties" style="border: 1px solid gray; zoom:70%;">
-
-
 
 This document details the voice call properties and how they vary across various channels.
 
@@ -165,6 +160,3 @@ In case you want to use grammar syntax rules from Voximal or UniMRCP, you need t
     2. for UniMRCP, enter _“builtin:grammar/transcribe”_
 3. You can leave the **Grammar** section blank, the above transcription source URL will handle the syntax and grammar vetting of the speech.
 4. **Save** the settings.
-
-
-[def]: ../../

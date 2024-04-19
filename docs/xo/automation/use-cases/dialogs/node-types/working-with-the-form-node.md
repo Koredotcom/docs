@@ -29,7 +29,7 @@ To add a form node to the dialog task, follow the below steps:
 
     <img src="../images/form-node-img3-channels.png" alt="Choose channels to offer form experience" title="Choose channels to offer form experience" style="border:1px solid gray;zoom:70%;">
 
-5. **By following this process, the Platform will automatically add a _Form Experience Transition_ (Bot Action) node group,** which ramifies into the necessary Dialog Task and Form Node, to allow you to further customize the Form Experience and Conversation Experience for your channel selection. This Transition is composed of individual nodes, which you will need to configure separately, according to their respective node types.
+5. **By following this process, the Platform will automatically add a _Form Experience Transition_ node group,** which ramifies into the necessary Dialog Task and Form Node, to allow you to further customize the Form Experience and Conversation Experience for your channel selection. This Transition is composed of individual nodes, which you will need to configure separately, according to their respective node types.
 
     <img src="../images/form-node-img4.png" alt="tool tip" title="tool tip" style="border:1px solid gray;zoom:70%;">
 
