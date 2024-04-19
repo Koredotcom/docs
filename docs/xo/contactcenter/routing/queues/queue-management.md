@@ -31,7 +31,7 @@ All conversations will get assigned to queues as they come in. This process is b
 
 ## The Queues Live Board
 
-To access _Queues_, go to **Contact Center AI** > **Queues**.
+To access _Queues_, go to **Contact Center AI** > **ROUTING** > **Queues**.
 <img src="../images/queues-page.png" alt="Queues Page" title="Queues Page" style="border: 1px solid gray; zoom:80%;">
 
 This section displays the following:
@@ -61,7 +61,7 @@ This section is available in _Simple_ and _Advanced Routing_ modes and allows yo
 3. **Hours of Operation**: Select from the available [Hours of Operation](../../configurations/hours-of-operation/).
 <img src="../images/queue-settings.png" alt="Queue Settings" title="Queue Settings" style="border: 1px solid gray; zoom:70%;">
 
-4. **Transfer Rules:** This feature lets you limit the agents’ ability to transfer from one queue to another. If this feature is enabled, you can select the specific queues to which agents can transfer customers. If disabled, agents can transfer to any queue from the current one. Turn on the Transfer Rules toggle, select a Queue and click **Done**.
+4. **Transfer Rules:** This feature lets you limit the agents’ ability to transfer from one queue to another. If this feature is enabled, you can select the specific queues to which agents can transfer customers. If disabled, agents can transfer to any queue from the current one. Turn on the Transfer Rules toggle, select a Queue and click **Done**.  
 <img src="../images/transfer-rules.png" alt="Transfer Rules" title="Transfer Rules" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
@@ -80,13 +80,13 @@ This section is available in _Simple_ and _Advanced Routing_ modes and allows yo
 
     2. **Timed Slot Release**: Agents are required to complete the disposition within a pre-set time duration, during which the slot will remain occupied. A default 30-second timer appears by default, which administrators can modify. The configurable time duration ranges between a minimum of 10 seconds and a maximum of 15 minutes. If the timer field is blank, an alert message is displayed to enter a timeout value ranging between 10 seconds and 15 minutes for the timed slot release.
 
-        You can edit the ‘Is Required?’ and ‘Assignment’ fields for disposition sets, including the default [disposition sets](../../agent-and-supervisors/dispositions/manage-dispositions.md#disposition-sets). This allows existing users to switch any configured disposition set to an optional mode.
+        You can edit the ‘Is Required?’ and ‘Assignment’ fields for disposition sets, including the default [disposition sets](../../agent-and-supervisors/dispositions/manage-dispositions.md#disposition-sets). This allows existing users to switch any configured disposition set to an optional mode.  
         <img src="../images/timed-slot-release.png" alt="Maximum Wait Time" title="Maximum Wait Time" style="border: 1px solid gray; zoom:70%;">
 
-    3. **Indefinite Slot Release**: If selected, the slot remains occupied until the agent submits the disposition.
+    3. **Indefinite Slot Release**: If selected, the slot remains occupied until the agent submits the disposition.  
     <img src="../images/indefinite-slot-release.png" alt="Maximum Wait Time" title="Maximum Wait Time" style="border: 1px solid gray; zoom:70%;">
 
-7. **Advanced Routing**: If enabled, preferred agents and skill dropoffs will be available if you enable this option.
+7. **Advanced Routing**: If enabled, preferred agents and skill dropoffs will be available if you enable this option.  
 <img src="../images/advanced-routing.png" alt="Advanced Routing" title="Advanced Routing" style="border: 1px solid gray; zoom:100%;">
 
 8. Click **Save**.
@@ -99,7 +99,7 @@ This section is available in _Simple_ and _Advanced Routing_ modes and allows yo
 
 Follow these steps to assign agents to a queue:
 
-1. Click **Add Agent**;
+1. Click **Add Agent**;  
 <img src="../images/add-agent-button.png" alt="Add Agent Button" title="Add Agent Button" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the checkbox next to an agent’s name to select it and click **Done**. You can use the _Search_ field at the top of the list to find a specific person.  
@@ -107,7 +107,7 @@ Follow these steps to assign agents to a queue:
 
 #### Assign Agent Groups
 
-1. Click **Add Agent Group**;
+1. Click **Add Agent Group**;  
 <img src="../images/add-agent-group-button.png" alt="Add Agent Group Button" title="Assign Agent Group Button" style="border: 1px solid gray; zoom:70%;">
 
 2. Click the checkbox next to the name of a group to select it and click **Done**. You can use the _Search_ field at the top of the list to find a specific group.
@@ -138,7 +138,7 @@ In the **Preferred** tab, you can assign preferred agents to the queue.
     When you are ready to save the Queue, click **Create**. The new Queue is then listed among your available queues. You must configure at least the _Settings_ and _Assignment_ tabs to save a queue.
     <img src="../images/create-queue.png" alt="Create Queue" title="Create Queue" style="border: 1px solid gray; zoom:70%;">
 
-## **Edit a Queue**
+## Edit a Queue
 
 1. Click the **Edit** icon corresponding to the queue you want to edit.
 <img src="../images/edit-queue-button.png" alt="Edit Queue Button" title="Edit Queue Button" style="border: 1px solid gray; zoom:70%;">
@@ -153,7 +153,8 @@ To delete a queue, follow these steps:
 2. Click the **Delete (bin)** button on the bottom left side.
 <img src="../images/delete-queue-button.png" alt="Delete Queue Button" title="Delete Queue Button" style="border: 1px solid gray; zoom:70%;">
 
-3. Click **Delete** to confirm your choice.
+3. Click **Delete** to confirm your choice.  
+<img src="../images/confirm-delete.png" alt="Delete Queue Button" title="Delete Queue Button" style="border: 1px solid gray; zoom:70%;">
 
     !!! Note
 
