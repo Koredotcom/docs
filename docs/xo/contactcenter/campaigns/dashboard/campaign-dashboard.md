@@ -1,6 +1,6 @@
 # Dashboard
 
-The campaign dashboard allows contact center supervisors to track the progress and other essential metrics related to campaigns.
+The campaign dashboard allows campaign managers to track the progress and other essential metrics related to campaigns.
 
 To access dashboards, go to **Contact Center AI** > **Campaigns** > **Dashboard**.
 <img src="../images/dashboard-main-page.png" alt="Dashboard Page" title="Dashboard Page" style="border: 1px solid gray; zoom:80%;">
