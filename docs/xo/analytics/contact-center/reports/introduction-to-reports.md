@@ -17,11 +17,11 @@ You can segregate the reports as follows:
 
 To create a new report:
 
-1. Go to **Contact Center AI** > **Go to Analytics** > **CONTACT CENTER** > **Reports**.
+1. Go to **Contact Center AI** > **Analytics** > **CONTACT CENTER** > **Reports**.
 2. Click **New Report**.
 <img src="../images/reports-tab.png" alt="New Report Button" title="New Report Button" style="border: 1px solid gray; zoom:70%;">
 
-3. A new report page opens.
+3. A new report page opens.  
 <img src="../images/new-reports-page.png" alt="New Reports Page" title="New Reports Page" style="border: 1px solid gray; zoom:70%;">
 
 You can choose different report types from the list, for example, the Agent Activity Summary.
@@ -43,7 +43,8 @@ When generating a new report, you have the option to select from a list of avail
 * Agent Chat Metrics Report,
 * Queue Dispositions Report,
 * Queue Chat Metrics Interval Report,
-* Total Volumes Report.
+* Total Volumes Report,
+* IVR Containment Report.
 
 By clicking the New Report button, you can choose the desired report type from the above list.
 
@@ -70,7 +71,7 @@ Steps to revise the access:
 
 You can make the report public by following the above steps and clicking **Switch to Public**. The report is then accessible to everyone.
 
-    !!! Note
+    !!!Note
 
         A private report is not visible to other users on the REPORTS tab.
 
@@ -86,7 +87,7 @@ When generating reports, you have the choice to either Run On Demand or Schedule
 
 When creating a new report or editing an existing report, you can schedule the report to run on demand as shown below:
 
-* Select **Run On Demand**.
+* Select **Run On Demand**.  
 <img src="../images/run-on-demand.png" alt="Run on Demand" title="Run on Demand" style="border: 1px solid gray; zoom:70%;">
 
 ### Schedule
@@ -111,10 +112,10 @@ When creating a new report or editing an existing report, you can change the rep
 1. Click **+ Add Filter**.  
 <img src="../images/data-filters.png" alt="Data Filters" title="Data Filters" style="border: 1px solid gray; zoom:100%;">
 
-2. Select the required filters.
+2. Select the required filters.  
 <img src="../images/data-filters-filled.png" alt="Data Filters Selected" title="Data Filters Selected" style="border: 1px solid gray; zoom:100%;">
 
-3. Click the (-) sign to remove filters.
+3. Click the (**-**) sign to remove filters.
 <img src="../images/minus-sign.png" alt="Remove Filter" title="Remove Filter" style="border: 1px solid gray; zoom:100%;">
 
 **Formats**: You have the option to choose either a PDF or CSV output format for your report.  
@@ -160,7 +161,7 @@ For each report, the following actions are allowed:
 * **View History**  
 <img src="../images/view-history.png" alt="View History Button" title="View History Button" style="border: 1px solid gray; zoom:100%;">
 
-* **Clone/Favorite/Unfavorite/Switch to/Delete (⋮) Ellipses button**
+* **Clone/Favorite/Unfavorite/Switch to/Delete (⋮) Ellipses button**  
 <img src="../images/ellipsis.png" alt="Ellipses Button" title="Ellipses Button" style="border: 1px solid gray; zoom:70%;">
 
 ### Edit
