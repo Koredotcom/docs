@@ -97,9 +97,9 @@ To delete a skill, follow these steps:
     5. Click the **Delete** button on the confirmation pop-up to confirm your choice.  
           <img src="../images/delete-skill-button.png" alt="Delete Skill Button" title="Delete Skill Button" style="border: 1px solid gray; zoom:70%;">
 
-          !!!Note
+     !!!Note
 
-               You cannot restore deleted flow skills. Please proceed with caution.
+          You cannot restore deleted flow skills. Please proceed with caution.
 
 ## Skill Groups
 
@@ -121,9 +121,9 @@ Steps to add a new skill group:
 3. Click **Create** to complete the process;  
 <img src="../images/create-new-skill-group.png" alt="Create Skill Group" title="Create Skill Group" style="border: 1px solid gray; zoom:70%;">
 
-     !!!Note
+!!!Note
 
-          Skill Groups and Skills can have identical names if required. You can add skills with the same name to different groups. Within the same group, skill names must be unique.
+     Skill Groups and Skills can have identical names if required. You can add skills with the same name to different groups. Within the same group, skill names must be unique.
 
 4. A success confirmation message is displayed once the new skill group is created. You can now [add skills](#add-a-skill) to the group.
 <img src="../images/skill-group-created.png" alt="Skill Group Created" title="Skill Group Created" style="border: 1px solid gray; zoom:70%;">
@@ -160,7 +160,6 @@ Follow these steps to delete a Skill Group:
     3. Confirm your choice.  
           <img src="../images/delete-skill-group.png" alt="Delete Skill Group" title="Delete Skill Group" style="border: 1px solid gray; zoom:70%;">
 
-          !!! Note
+     !!! Note
 
-           You cannot restore deleted flow skills. Please proceed with caution.
-          
+          You cannot restore deleted flow skills group. Please proceed with caution.
