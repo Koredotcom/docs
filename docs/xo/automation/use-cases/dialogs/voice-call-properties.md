@@ -141,10 +141,9 @@ IVR-AudioCodes
          <li>For Link, enter the URL of the grammar. Ideally, the URL should be accessible to the IVR system so that the resource can be accessed while executing the calls at runtime</li>
       </ul>
 
-
-[See below for a detailed configuration for Grammar syntax](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/voice-call-properties/#configuring-grammar).
-
-**Note**: If the **Enable Transcription** option is enabled for the VA along with specifying the source of the transcription engine, defining grammar isn’t mandatory.
+      <a href="#configuring-grammar">See below for a detailed configuration for Grammar syntax</a>.
+      <br>
+      <strong>Note</strong>: If the <strong>Enable Transcription</strong> option is enabled for the VA along with specifying the source of the transcription engine, defining grammar isn’t mandatory.
 
    </td>
    <td>IVR
@@ -155,7 +154,7 @@ IVR-AudioCodes
    <td>No Match Prompt
 
    </td>
-   <td>Enter the default prompt text to play when user input is not present in the defined grammar. If you do not specify a _No Match Prompt_ for any node, this prompt takes its place.
+   <td>Enter the default prompt text to play when user input is not present in the defined grammar. If you do not specify a <em>>No Match Prompt</em> for any node, this prompt takes its place.
 
    </td>
    <td>IVR
