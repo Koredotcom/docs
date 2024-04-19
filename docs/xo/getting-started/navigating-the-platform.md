@@ -105,18 +105,30 @@ This section includes
          [Digital Forms](../automation/use-cases/digital-skills/digital-forms.md)- for an interactive User Interface for easy and efficient capture of all the information from the user will be ideal.
 
          [Digital Views ](../automation/use-cases/digital-skills/digital-views.md)- to design interactive components, panels, and widgets, to proactively present relevant information to your customers.
+
     * [Feedback Survey](../manage-assistant/feedbacksurvey.md)-  Gather feedback from customers by using our out of the box survey templates or push feedback against a survey using our public API experiences.
+
 2. [KNOWLEDGE AI](../automation/knowledge-ai/knowledge-ai-introduction.md)
+
     * [FAQs](../automation/knowledge-ai/manage-faqs.md) - FAQs allow you to add question-answer sets to your Knowledge Graph and map them to related ontology terms.
+
 3. Natural Language
+
     * [Training](../automation/natural-language/training/nlp-training-overview.md)- Train the intents, entities, synonyms, and traits of the Virtual Assistant.
+
     * [NLU Config](../automation/natural-language/training/machine-learning-engine.md)- Fine-tune intent and entity detection by customizing the Machine Learning, Fundamental Meaning, and Knowledge Graph models. Machine Learning, and Knowledge Graph models for each of the enabled languages.
+
 4. Conversation Intelligence
+
     * Event- Customize the user experience by defining the behavior of the Virtual Assistant
+
     * Conversation Management- Modify the standard responses the Virtual Assistant should use to handle common scenarios that occur during user interaction. Also, define how interruptions identified during ongoing task execution should be handled.
+
 5. Testing
     * [Utterance Testing](../automation/testing/testing-your-bot-with-nlp.md)- Test & Train your app to understand different user utterances and match them with intents and entities.
+
     * Regression Testing- A one-stop place to view the summary of test coverage, performance, and training recommendations.
+
 6. Tools
     * Intent Discovery- With this you can upload User-Agent interaction Transcripts and discover Intents that are to be created as Dialog Tasks to be Automated.
 
@@ -126,15 +138,15 @@ This section includes
 
 This section is used to analyze and gain insight into your VA’s activity. It includes:
 
-1. **Overview**
+1. Overview
     * [Summary](../analytics/overview/summary-dashboard.md)- helps see a general overview of your VA’s activity.
     * [Conversations Dashboard](../analytics/overview/conversations-dashboard.md)- to access conversation related statistics.
     * [Conversations History](../analytics/overview/conversations-history.md)- to view conversation related statistics.
     * [Users Dashboard](../analytics/overview/users-dashboard.md)- to monitor user activity within your VA.
     * [Feedback Dashboard](../analytics/overview/feedback-dashboard.md)- to constantly monitor and analyze customer responses, feedback survey scores, and trends over a given period.
-2. **GEN AI ANALYTICS**
+2. GEN AI ANALYTICS
     * [Usage Logs](../analytics/genai-analytics/llm-usage-logs.md)- to track the general usage of your VA.
-3. **VIRTUAL ASSISTANT**
+3. VIRTUAL ASSISTANT
     * [Performance Dashboard](../analytics/automation/performance-dashboard.md)- to view statistics related to intent identification, goal completion, or successful API and script execution.
     * [Conversation Insights](../analytics/automation/conversation-insights.md)- to simplify performance analysis by clustering utterances based on semantic meaning, streamlining intent identification, and saving time for app designers.
     * [NLP Insights](../analytics/automation/nlp-insights.md)- to track intent detection and make appropriate corrections in the training model.
