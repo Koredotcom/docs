@@ -27,7 +27,7 @@ Here are a few other ways in which the Dialog Builder can benefit your organizat
 
 ## Explore Dialog Tasks
 
-You can access Dialog Tasks from **Automation > USE CASES > Dialogs**.
+You can access Dialog Tasks from **Automation AI > Virtual Assistant > USE CASES > Dialogs**.
 
 <img src="../images/navigate-dialog.png" alt="Navigate to Dialogs" title="Navigate to Dialogs" style="border:1px solid gray; zoom:60%;">
 
@@ -66,8 +66,11 @@ In some scenarios, you may need to create two similar dialog tasks with minor di
 
 To clone a dialog task, follow the below steps:
 
-* **Open the VA** in which you want to clone the dialog task.
-* Select the **Automation** option from the left menu.
+* **Open the App** in which you want to clone the dialog task.
+* Select the **Automation AI > Virtual Assitant** option from the left menu.
+
+    <img src="../images/automationai-va-navigation.gif" alt="Navigate to Virtual Assistant" title="Navigate to Virtual Assistant" style="border:1px solid gray; zoom:60%;">
+    
 * From the left menu, click **USE CASES > Dialogs**.
 * On the Dialog Tasks page, hover over the dialog you want to clone and click the **Clone** icon.
 * On the **Clone a Dialog** window, enter a name in the **Intent Name** field.
