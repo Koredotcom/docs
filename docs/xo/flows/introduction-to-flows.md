@@ -86,6 +86,6 @@ You can access the following features on the Flows Live Board:
 * To delete a flow, click **Delete**.
 <img src="../images/delete-flow.png" alt="Delete Flow" title="Delete Flow" style="border: 1px solid gray; zoom:100%;">
 
-!!! Note
+!!!Note
 
     You cannot restore deleted flow entries. Please proceed with caution.

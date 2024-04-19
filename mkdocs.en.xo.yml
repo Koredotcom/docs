@@ -121,7 +121,7 @@ nav:
           - Create Flows: flows/create-flows.md
           - Navigate the Flow Designer: flows/navigate-the-flow-designer.md
           - Node Types:
-            - Introduction to Flow Nodes: flows/flow-types/introduction-to-flow-nodes.md
+            - Introduction to Flow Nodes: flows/node-types/introduction-to-flow-nodes.md
             - Agent Transfer: flows/node-types/agent-transfer.md
             - Automation: flows/node-types/automation.md
             - Check Agent Availability: flows/node-types/check-agent-availability.md
