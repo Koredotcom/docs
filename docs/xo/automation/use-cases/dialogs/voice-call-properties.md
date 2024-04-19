@@ -1,6 +1,6 @@
 # Voice Call Properties
 
-You can enable voice interaction with your virtual assistant, i.e., users can talk to the virtual assistant. For this, you need to enable one of the voice channels like [IVR](../../../../channels/ivr-integration){:target="_blank"}, [Twilio](../../../../channels/add-twilio-voice-channel){:target="_blank"}, [IVR-AudioCodes](../../../../channels/ivr-audio-codes){:target="_blank"}, [kore.ai Voice Gateway](../../../../channels/kore.ai-voice-gateway/kore-voice-gateway){:target="_blank"} etc and publish the VA on those channels.
+You can enable voice interaction with your virtual assistant, i.e., users can talk to the virtual assistant. For this, you need to enable one of the voice channels like [IVR](../../../../channels/IVR-integration){:target="_blank"}, [Twilio](../../../../channels/add-twilio-voice-channel){:target="_blank"}, [IVR-AudioCodes](../../../../channels/ivr-audio-codes){:target="_blank"}, [kore.ai Voice Gateway](../../../../channels/kore.ai-voice-gateway/kore-voice-gateway){:target="_blank"} etc and publish the VA on those channels.
 
 There are some Voice Properties you can configure to streamline the user experience across the above-mentioned channels. These configurations can be done at multiple levels:
 
@@ -134,14 +134,13 @@ IVR-AudioCodes
 
    </td>
    <td>Define the grammar that should be used to detect user’s utterance
+      <ul>
+         <li> The input type can be Speech or DTMF</li>
+         <li> Source of grammar can be Custom or Link</li>
+         <li> For Custom, write VXML grammar in the textbox.</li>
+         <li>For Link, enter the URL of the grammar. Ideally, the URL should be accessible to the IVR system so that the resource can be accessed while executing the calls at runtime</li>
+      </ul>
 
-* The input type can be Speech or DTMF
-
-* Source of grammar can be Custom or Link
-
-* For Custom, write VXML grammar in the textbox.
-
-* For Link, enter the URL of the grammar. Ideally, the URL should be accessible to the IVR system so that the resource can be accessed while executing the calls at runtime
 
 [See below for a detailed configuration for Grammar syntax](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/voice-call-properties/#configuring-grammar).
 
@@ -397,22 +396,18 @@ Kore.ai Voice Gateway
    <td>Grammar
    </td>
    <td>Define the grammar that should be used to detect a user’s utterance
-<br>
-
-* The input type can be Speech or DTMF
-
-* Source of grammar can be Custom or Link
-
-* For Custom, write VXML grammar in the textbox.
-
-* For Link, enter the URL of the grammar. Ideally, the URL should be accessible to the IVR system so that the resource can be accessed while executing the calls at runtime
-
-<br>
-<a href="#configuring-grammar">See below for a detailed configuration for Grammar syntax</a>.
-<br><br>
-<strong>Note</strong>: If the <strong>Enable Transcription</strong> option is enabled for the VA along
- with specifying the source of the transcription engine, defining
- grammar isn’t mandatory.
+      <br>
+      <ul>
+         <li> The input type can be Speech or DTMF</li>
+         <li> Source of grammar can be Custom or Link</li>
+         <li> For Custom, write VXML grammar in the textbox.</li>
+         <li> For Link, enter the URL of the grammar. Ideally, the URL should be accessible to the IVR system so that the resource can be accessed while executing the calls at runtime</li>
+      </ul>
+      <a href="#configuring-grammar">See below for a detailed configuration for Grammar syntax</a>.
+      <br><br>
+      <strong>Note</strong>: If the <strong>Enable Transcription</strong> option is enabled for the VA along
+      with specifying the source of the transcription engine, defining
+      grammar isn’t mandatory.
    </td>
    <td>Confirmation;
 <br>
@@ -450,7 +445,7 @@ Kore.ai Voice Gateway
    </td>
    <td>Select the maximum number of retries to allow. You can select from
  just 1 retry up to 10 retries.
- <br><br>
+ <br>
 The default value is the same as defined in the VA IVR Settings page.
    </td>
    <td>N/A
@@ -555,7 +550,7 @@ Once the property is enabled, you can see one or more language
  ‘<strong>US</strong>‘ or ‘<strong>UK</strong>‘ as the Locale Value for the English (EN) bot language.
 <br><br>
 
-<img src="../images/locale_definition.png alt="Locale Definition" style="border:1px solid gray;zoom:50%;">
+<img src="../images/locale_definition.png" alt="Locale Definition" style="border:1px solid gray;zoom:50%;">
 
 <br>
 <strong>Note</strong>: By default, the <strong>Locale Definition</strong> property is disabled for all
