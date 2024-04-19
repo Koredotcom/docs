@@ -16,6 +16,10 @@ context.intent.<< intent name >>
 
 Context variables are managed via the Kore.ai XO Platform. [Learn more](../../automation/intelligence/context-object.md).
 
+!!! Note
+
+    The split node is designed to support a maximum of 10 branches.
+
 ## Configure the Node
 
 ### General Settings
