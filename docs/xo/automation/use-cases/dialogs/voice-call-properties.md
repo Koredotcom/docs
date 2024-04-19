@@ -21,26 +21,194 @@ This document details the voice call properties and how they vary across various
 
 ## Channel Settings
 
-| **Field** | **Description** | **Applicable**<br>**to**<br>**Channel** |
-| --- | --- | --- |
-| IVR Data Extraction Key | Specify the syntax to extract the filled data<br><br>For Entity and Confirmation nodes, you can define the extraction rule overriding the channel level setting. This is particularly helpful with ASR engines that provide transcription results in a different format based on the input type. For example, VXML can contain the word format of the credit card in one key and the number format in another key | IVR |
-| End of Conversation Behavior | This property can be used to define the VA behavior at the end of the conversation. The options are:<br><br>* Trigger End of Conversation Behavior and configure the Task, Script or Message to be initiated. [See here for details](../../../intelligence/event-handling.md#end-of-conversation).<br>* Terminate the call.<br>    <br>    **Note**: Selecting the **Terminate call** option under **IVR Channel – Voice Call Properties – End of Task Behavior** no longer turns off the End of Task event at the bot level. | IVR,<br>Twilio,<br>IVR-AudioCodes,<br>Kore.ai Voice Gateway |
-| Call Termination Handler | Select the name of the Dialog task that you want to use as the call termination handler when the call ends in error. | IVR,<br>Twilio,<br>IVR-AudioCodes,<br>Kore.ai Voice Gateway |
-| Call Control Parameters | Click **Add Parameter**. Enter property names and values to use in defining the call behavior.<br><br>**Note**: You should use these properties and values in the VXML files for all call flows in the IVR system and Session Parameters in AudioCodes channel. | IVR,<br>IVR-AudioCodes |
-| ASR Confidence Threshold |     |     |
-| Threshold Key | This is the variable where the ASR confidence levels are stored. This field is pre-populated, do not change it unless you are aware of the internal working of VXML. | IVR |
-| Define ASR threshold confidence | In the range between 0 to 1.0 which defines when the IVR system hands over the control to the VA. | IVR |
-| Timeout Prompt | Enter the default prompt text to play when the user doesn’t provide the input within the timeout period. If you do not specify a Timeout Prompt for any node, this prompt takes its place. | IVR,<br>Twilio,<br>IVR-AudioCodes,<br>Kore.ai Voice Gateway |
-| Grammar | Define the grammar that should be used to detect user’s utterance<br><br>* The input type can be Speech or DTMF<br>* Source of grammar can be Custom or Link<br>    * For Custom, write VXML grammar in the textbox.<br>    * For Link, enter the URL of the grammar. Ideally, the URL should be accessible to the IVR system so that the resource can be accessed while executing the calls at runtime<br>        <br>        [See below for a detailed configuration for Grammar syntax](#configuring-grammar). <br>  **Note**: If the **Enable Transcription** option is enabled for the VA along with specifying the source of the transcription engine, defining grammar isn’t mandatory. | IVR |
-| No Match Prompt | Enter the default prompt text to play when user input is not present in the defined grammar. If you do not specify a _No Match Prompt_ for any node, this prompt takes its place. | IVR |
-| Barge-In | Select whether you want to allow a user input while a prompt is in progress. If you select no, the user cannot provide input until IVR completes the prompt. | IVR,<br>Twilio,<br>IVR-AudioCodes,<br>Kore.ai Voice Gateway |
-| Timeout | Select the maximum wait time to receive user input from the drop-down list, from 1 second up to 60 seconds. | IVR,<br>Twilio,<br>IVR-AudioCodes,<br>Kore.ai Voice Gateway |
-| No. of Retries | Select the maximum number of retries to allow. You can select from just 1 retry up to 10 retries. | IVR,<br>Twilio,<br>IVR-AudioCodes |
-| Log | Select **Yes** if you want to send the chat log to the IVR system. | IVR |
+<table>
+   <td><strong>Field</strong>
 
+   </td>
+   <td><strong>Description</strong>
 
+   </td>
+   <td><strong>Applicable to  Channel</strong>
 
+   </td>
+  <tr>
+   <td>IVR Data Extraction Key
 
+   </td>
+   <td>Specify the syntax to extract the filled data
+
+For Entity and Confirmation nodes, you can define the extraction rule overriding the channel level setting. This is particularly helpful with ASR engines that provide transcription results in a different format based on the input type. For example, VXML can contain the word format of the credit card in one key and the number format in another key
+
+   </td>
+   <td>IVR
+
+   </td>
+  </tr>
+  <tr>
+   <td>End of Conversation Behavior
+
+   </td>
+   <td>This property can be used to define the VA behavior at the end of the conversation. The options are:
+<ul>
+<li> Trigger End of Conversation Behavior and configure the Task, Script or Message to be initiated. <a href="../../../intelligence/event-handling/#end-of-conversation" target="_blank">See here for details</a>.</li>
+
+<li> Terminate the call.</li>
+</ul>
+<strong>Note</strong>: Selecting the <strong>Terminate call</strong> option under <strong>IVR Channel – Voice Call Properties – End of Task Behavior</strong> no longer turns off the End of Task event at the bot level.
+
+   </td>
+   <td>
+      IVR, <br>Twilio, <br>IVR-AudioCodes, <br>Kore.ai Voice Gateway
+   </td>
+  </tr>
+  <tr>
+   <td>Call Termination Handler
+
+   </td>
+   <td>Select the name of the Dialog task that you want to use as the call termination handler when the call ends in error.
+
+   </td>
+   <td>
+      IVR, <br>Twilio, <br>IVR-AudioCodes, <br>Kore.ai Voice Gateway
+   </td>
+  </tr>
+  <tr>
+   <td>Call Control Parameters
+
+   </td>
+   <td>Click <strong>Add Parameter</strong>. Enter property names and values to use in defining the call behavior.
+
+<strong>Note</strong>: You should use these properties and values in the VXML files for all call flows in the IVR system and Session Parameters in AudioCodes channel.
+
+   </td>
+   <td>IVR,
+
+IVR-AudioCodes
+
+   </td>
+  </tr>
+  <tr>
+   <td>ASR Confidence Threshold
+
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Threshold Key
+
+   </td>
+   <td>This is the variable where the ASR confidence levels are stored. This field is pre-populated, do not change it unless you are aware of the internal working of VXML.
+
+   </td>
+   <td>IVR
+
+   </td>
+  </tr>
+  <tr>
+   <td>Define ASR threshold confidence
+
+   </td>
+   <td>In the range between 0 to 1.0 which defines when the IVR system hands over the control to the VA.
+
+   </td>
+   <td>IVR
+
+   </td>
+  </tr>
+  <tr>
+   <td>Timeout Prompt
+
+   </td>
+   <td>Enter the default prompt text to play when the user doesn’t provide the input within the timeout period. If you do not specify a Timeout Prompt for any node, this prompt takes its place.
+
+   </td>
+   <td>
+      IVR, <br>Twilio, <br>IVR-AudioCodes, <br>Kore.ai Voice Gateway
+   </td>
+  </tr>
+  <tr>
+   <td>Grammar
+
+   </td>
+   <td>Define the grammar that should be used to detect user’s utterance
+
+* The input type can be Speech or DTMF
+
+* Source of grammar can be Custom or Link
+
+* For Custom, write VXML grammar in the textbox.
+
+* For Link, enter the URL of the grammar. Ideally, the URL should be accessible to the IVR system so that the resource can be accessed while executing the calls at runtime
+
+[See below for a detailed configuration for Grammar syntax](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/voice-call-properties/#configuring-grammar).
+
+**Note**: If the **Enable Transcription** option is enabled for the VA along with specifying the source of the transcription engine, defining grammar isn’t mandatory.
+
+   </td>
+   <td>IVR
+
+   </td>
+  </tr>
+  <tr>
+   <td>No Match Prompt
+
+   </td>
+   <td>Enter the default prompt text to play when user input is not present in the defined grammar. If you do not specify a _No Match Prompt_ for any node, this prompt takes its place.
+
+   </td>
+   <td>IVR
+
+   </td>
+  </tr>
+  <tr>
+   <td>Barge-In
+
+   </td>
+   <td>Select whether you want to allow a user input while a prompt is in progress. If you select no, the user cannot provide input until IVR completes the prompt.
+
+   </td>
+   <td>
+      IVR, <br>Twilio, <br>IVR-AudioCodes, <br>Kore.ai Voice Gateway
+   </td>
+  </tr>
+  <tr>
+   <td>Timeout
+
+   </td>
+   <td>Select the maximum wait time to receive user input from the drop-down list, from 1 second up to 60 seconds.
+
+   </td>
+   <td>
+      IVR, <br>Twilio, <br>IVR-AudioCodes, <br>Kore.ai Voice Gateway
+   </td>
+  </tr>
+  <tr>
+   <td>No. of Retries
+
+   </td>
+   <td>Select the maximum number of retries to allow. You can select from just 1 retry up to 10 retries.
+
+   </td>
+      
+   <td>
+      IVR, <br>Twilio, <br>IVR-AudioCodes
+   </td>
+  </tr>
+  <tr>
+   <td>Log
+
+   </td>
+   <td>Select <strong>Yes</strong> if you want to send the chat log to the IVR system.
+
+   </td>
+   <td>IVR
+
+   </td>
+  </tr>
+ </table> 
 
 
 ## Dialog Node Settings
@@ -230,22 +398,20 @@ Kore.ai Voice Gateway
    </td>
    <td>Define the grammar that should be used to detect a user’s utterance
 <br>
-   * The input type can be Speech or DTMF
-   <br>
-   * Source of grammar can be Custom or Link
-   <br>
-   * For Custom, write VXML grammar in the textbox.
-   <br>
-   * For Link, enter the URL of the grammar. Ideally, the URL should be
- accessible to the IVR system so that the resource can be accessed
- while executing the calls at runtime
+
+* The input type can be Speech or DTMF
+
+* Source of grammar can be Custom or Link
+
+* For Custom, write VXML grammar in the textbox.
+
+* For Link, enter the URL of the grammar. Ideally, the URL should be accessible to the IVR system so that the resource can be accessed while executing the calls at runtime
+
 <br>
 <a href="#configuring-grammar">See below for a detailed configuration for Grammar syntax</a>.
-<br>
+<br><br>
 <strong>Note</strong>: If the <strong>Enable Transcription</strong> option is enabled for the VA along
-<br>
  with specifying the source of the transcription engine, defining
-<br>
  grammar isn’t mandatory.
    </td>
    <td>Confirmation;
@@ -265,9 +431,7 @@ Twilio
    <td>Timeout
    </td>
    <td>Select the maximum wait time to receive user input from the
-<br>
  drop-down list, from 1 second up to 60 seconds. The default value is
-<br>
  the same as defined in the VA IVR Settings page.
    </td>
    <td>N/A
@@ -285,9 +449,8 @@ Kore.ai Voice Gateway
    <td>No. of Retries
    </td>
    <td>Select the maximum number of retries to allow. You can select from
-<br>
  just 1 retry up to 10 retries.
-<br>
+ <br><br>
 The default value is the same as defined in the VA IVR Settings page.
    </td>
    <td>N/A
@@ -305,29 +468,20 @@ Kore.ai Voice Gateway
    <td>Behavior on Exceeding Retries
    </td>
    <td>Define behavior when either the timeout or number of retry attempts
-<br>
  exceed the specified limit.
-<br>
+<br><br>
 You can <strong>Customize Retries Behavior</strong> for the standard number of
-<br>
  retries to configure the number of times the user would be prompted
-<br>
  for this entity value by setting the number of <strong>Allowed Retries</strong> to any
-<br>
  value between 1 and 10. The default is 3.
-<br>
+<br><br>
 Further, you can define the VA’s <strong>Behavior on Exceeding Retries</strong>, this
-<br>
  can be set to trigger <em>Invoke Call Termination Handler, Initiate Dialog</em>
-<br>
 <em> Task,</em> or <em>Jump to specific node in current task</em>. When you select
-<br>
  <em>Initiate Dialog</em> or <em>Jump to a specific node in the current task</em> option,
-<br>
  you are prompted to select the dialog task or task within the node.
-<br>
+<br><br>
 <strong>Note</strong>: The <strong>Customize Retries Behavior</strong> function is supported only for
-<br>
  the <strong>IVR</strong> channel at the Entity, Confirmation, and Message nodes.
    </td>
    <td>N/A
@@ -345,9 +499,7 @@ Kore.ai Voice Gateway
    <td>Barge-In
    </td>
    <td>Select whether you want to allow a user input while a prompt is in
-<br>
  progress. If you select no, the user input is not considered until the
-<br>
  prompt is completed. The default value is <strong>No</strong>.
    </td>
    <td>N/A
@@ -365,13 +517,9 @@ Kore.ai Voice Gateway
    <td>Call Control Parameters
    </td>
    <td>Click <strong>Add Property.</strong> Enter property names and values to use in
-<br>
  defining the VXML definition in the IVR system and Session
-<br>
  Parameters in AudioCodes channel. These values defined for a node
-<br>
  or a standard response override the global Call Control Parameters
-<br>
  defined in the VA IVR /AudioCodes settings page.
    </td>
    <td>N/A
@@ -387,7 +535,6 @@ Kore.ai Voice Gateway
    <td>Log
    </td>
    <td>Select <strong>Yes</strong> if you want to send the chat log to the IVR system. The
-<br>
  default value is <strong>No</strong>.
    </td>
    <td>N/A
@@ -399,29 +546,19 @@ Kore.ai Voice Gateway
    <td>Locale Definition
    </td>
    <td>Enable the <strong>Locale Definition</strong> property to define the <strong><em>(xml:lang =</em></strong>
-<br>
 <strong><em> “&lt;value>”)</em></strong> attribute in the VXML file by enabling the <strong>Locale</strong>
-<br>
 <strong> Definition</strong> property. Automatic Speech Recognition engines use the
-<br>
  language attribute to enhance speech recognition.
-<br>
 Once the property is enabled, you can see one or more language
-<br>
  codes corresponding to the bot languages. Enter the locale code for a
-<br>
  specific bot language in the <strong>Locale Value</strong> field. For example, enter
-<br>
  ‘<strong>US</strong>‘ or ‘<strong>UK</strong>‘ as the Locale Value for the English (EN) bot language.
-<br>
-
+<br><br>
 
 <img src="../images/locale_definition.png alt="Locale Definition" style="border:1px solid gray;zoom:50%;">
 
-
 <br>
 <strong>Note</strong>: By default, the <strong>Locale Definition</strong> property is disabled for all
-<br>
  virtual assistants.
    </td>
    <td>N/A
@@ -433,21 +570,15 @@ Once the property is enabled, you can see one or more language
    <td>Document Type Definitions
    </td>
    <td>The Document Type Definition (DTD) typically refers to a specific
-<br>
  syntax used to define the structure and constraints of a Voice
-<br>
  Extensible Markup Language (VXML) document. The DTD settings
-<br>
  help the VXML to understand the response.
-<br>
+<br><br>
 You can use the <strong>Default</strong> DTD settings defined in the Status, Public ID,
-<br>
  and System ID fields for the VXML. If you want to modify settings,
-<br>
  click <strong>Customize</strong> to change the values.
-<br>
+<br><br>
 <strong>Note</strong>: If the <strong>Status</strong> field is set to <em>Include</em>, you can enter the Public and
-<br>
  System ID. If it is set to <em>Exclude</em>, you cannot view those fields.
    </td>
    <td>N/A
@@ -459,19 +590,14 @@ You can use the <strong>Default</strong> DTD settings defined in the Status, Pub
    <td>Fallback Redirection
    </td>
    <td>A Fallback Redirection is an alternative path that the IVR system uses
-<br>
  to handoff the conversation whenever the call hangs up
-<br>
 You can add an URL to redirect the conversation whenever the call
-<br>
  hangs up.
 <br>
 By default, the <strong>Fallback Redirection</strong> is disabled. If you want to enable
-<br>
  the Fallback Redirection, click <strong>Customize</strong>.
-<br>
+<br><br>
 <strong>Note</strong>: The Fallback Redirection is supported by both standard and
-<br>
  universal bots.
    </td>
    <td>N/A
@@ -483,13 +609,9 @@ By default, the <strong>Fallback Redirection</strong> is disabled. If you want t
    <td>Propagate Values to Link Bots
    </td>
    <td>Enable this option to propagate the Voice Call Properties from the
-<br>
  Universal Bot to all its linked bots. It helps you to leverage the UB
-<br>
  properties when a linked bot’s execution is in progress. The Voice Call
-<br>
  Properties of the linked bot are used when the conversation is
-<br>
  happening directly with the bot as a Standard bot.
 <br>
 By default this option is disabled.
