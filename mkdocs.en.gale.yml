@@ -59,17 +59,8 @@ extra:
           data: 0
           note: >- 
             Thanks for your feedback! Help us improve this page by
-            using our <a href="https://community.kore.ai/" target="_blank" rel="noopener">feedback form</a>.  
-  alternate:
-    - name: en - English 
-      link: https://docsinternal-kore.github.io/docs/en
-      lang: en
-    - name: ja - 日本語 
-      link: https://docsinternal-kore.github.io/docs/ja
-      lang: ja  
-    - name: ko - 한국어 
-      link: https://docsinternal-kore.github.io/docs/ko
-      lang: jako   
+            using our <a href="https://community.kore.ai/" target="_blank" rel="noopener">feedback form</a>. 
+            
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
