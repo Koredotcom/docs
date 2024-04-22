@@ -17,7 +17,7 @@ There are some Voice Properties you can configure to streamline the user experie
 IVR Properties are accessible by going to a Dialog Task, selecting an _Entity, Message_ or _Confirmation_ Node, then by accessing the IVR Properties section.
 
 
-<img src="./images/access-ivr.png" alt="IVR Properties" title="IVR Properties" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/access-ivr.png" alt="IVR Properties" title="IVR Properties" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -65,7 +65,7 @@ Voice Call Properties apply only for the following nodes and message types:
     Most settings are the same for all nodes, with a few exceptions.
 
 
-<img src="./images/timeout_prompts.png" alt="Timeout Prompts" title="Timeout Prompts" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/timeout_prompts.png" alt="Timeout Prompts" title="Timeout Prompts" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -109,7 +109,7 @@ The following sections provide detailed descriptions of each IVR setting, includ
 
 Below is a demo of the IVR Properties section, within the Component Properties panel of a Dialog Task node.
 
-<img src="./images/ivr-properties.gif" alt="IVR Properties" title="IVR Properties" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/ivr-properties.gif" alt="IVR Properties" title="IVR Properties" style="border: 1px solid gray; zoom:70%;">
 
 
 
