@@ -239,14 +239,17 @@ Additionally, this  change will reflect under the **Results** column against the
 ### Train a Dialog task
 
 1. Click the **Add/Train** dropdown across the intent, then select the **Dialog Task** option under **Train**. The **Train Dialog Task** dialog box for the intent is displayed.  
-<img src="../images/train-dialog-task.png" alt="Choose to Train Dialog Task" title="Choose to Train Dialog Task" style="border: 1px solid gray; zoom:50%;">  
-  <img src="../images/train-dialog-task-st1.png" alt="Train dialog task - Dialog Tasks list" title="Train dialog task - Dialog Tasks list" style="border: 1px solid gray; zoom:50%;">  
+  <img src="../images/train-dialog-task.png" alt="Choose to Train Dialog Task" title="Choose to Train Dialog Task" style="border: 1px solid gray; zoom:50%;">  
+  
+  <img src="../images/train-dialog-task-st1.png" alt="Train dialog task - Dialog Tasks list" title="Train dialog task - Dialog Tasks list" style="border: 1px solid gray; zoom:30%;">  
   
 2. Select the dialog task to be trained from the **Intent** drop-down and select all the required utterances from the table below. Click **Add Utterances**.  
-<img src="../images/train-dialog-task-st2.png" alt="Train dialog task - Select dialog task" title="Train dialog task - Select dialog task" style="border: 1px solid gray; zoom:50%;">  
+
+  <img src="../images/train-dialog-task-st2.png" alt="Train dialog task - Select dialog task" title="Train dialog task - Select dialog task" style="border: 1px solid gray; zoom:50%;">  
 
 3. Once the existing Dialog task is trained with the selected Utterances, a confirmation message is shown.  
-<img src="../images/train-dialog-task-st2.png" alt="Train dialog task - Confirmation" title="Train dialog task - Confirmation" style="border: 1px solid gray; zoom:50%;">  
+
+  <img src="../images/train-dialog-task-st2.png" alt="Train dialog task - Confirmation" title="Train dialog task - Confirmation" style="border: 1px solid gray; zoom:50%;">  
 
 
 The **Actions** column text for the intent will reflect the training of a new dialog task. For example:
