@@ -17,8 +17,8 @@ After you sign in, you are directed to the landing page, which is, essentially, 
 The top menu available on the landing page provides access to the following options:
 
 1. Access the **Data** Section.
-2. **Invite Members** to your account.
-3. Access the Contextual **Help** section.
+2. Access the Contextual **Help** section.
+3. **Invite Members** to your account.
 4. **Switch Workspace**, if you are part of more than one team.
 5. Access the **Profile** section, which allows you to reach the following features:
     * View and edit your **Profile**.
@@ -48,7 +48,7 @@ All the actions available within the Kore.ai XO Platform for a product can be ac
 
 1. **Product Switcher icon** Product Switcher lets you effortlessly switch between different products on your XO Platform.
 
-  <img src="../images/ntp(20).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
+    <img src="../images/ntp(20).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
 
 2. **App dropdown list** Lets you switch between the various versions of the current virtual assistant; You can also search and switch to any virtual assistant within your account;
 3. **Status Docker** icon;
