@@ -73,7 +73,9 @@ The left navigation of Products of the XO Platform are:
 | AUTOMATION AI | SEARCH AI | CONTACT CENTER AI | AGENT AI |
 | --- | --- | --- | --- |
 | ![image_tooltip](./images/ntp(10).png "image_tooltip") | ![image_tooltip](./images/ntp(12).png "image_tooltip") | ![image_tooltip](./images/ntp(11).png "image_tooltip") | ![image_tooltip](./images/ntp(13).png "image_tooltip") |
-| [Learn More about Automation AI](../automation/about-automation-ai.md) | [Learn More about Search AI](../../xo/searchai/about-search-ai.md) | [Learn More about Contact Center AI](../../xo/contactcenter/about-contact-center-ai.md) | [Learn More about Agent AI](../../xo/agentai/about-agent-ai.md) |
+| [Learn More about Automation AI](./../automation/about-automation-ai.md) | [Learn More about Search AI](./../searchai/about-search-ai.md) | [Learn More about Contact Center AI](../../xo/contactcenter/about-contact-center-ai.md) | [Learn More about Agent AI](../../xo/agentai/about-agent-ai.md) |
+
+
 #### Common Features
 The left navigation of common features of the XO Platform are:
 
