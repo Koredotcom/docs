@@ -30,8 +30,7 @@ Setting up a confirmation node in a dialog task involves the following steps:
 
 !!! Notes 
 
-    The configurations you set up or edit in these sections reflect in all other dialog tasks that use this node.  
-    This article works with the new dialog builder, you will find this feature in legacy builder at the same location i.e. Confirmation node -> Component Properties.
+    The configurations you set up or edit in these sections reflect in all other dialog tasks that use this node.
 
 To configure the component properties, follow the below steps:
 

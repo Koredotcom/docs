@@ -410,7 +410,5 @@ Define the expected behavior of this alert if an upgraded version of the underly
 
 ## Next Steps
 
-For the Service Node you set up, you might want to:
-
-* Implement Custom Authentication, [refer here](../../implementing-custom-authentication){:target="_blank"}; or
-* Enable 2-way SSL, [refer here](../../enabling-2-way-ssl-for-service-nodes/){:target="_blank"}.
+* [Implement Custom Authentication for the Service Node](./../implementing-custom-authentication.md) or
+* [Enable 2-way SSL for the Service node](./../enabling-2-way-ssl-for-service-nodes.md)
