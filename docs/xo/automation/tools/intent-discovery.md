@@ -16,11 +16,11 @@ The Intent Discovery journey consists of the following steps:
 
 ## Create a Project
 
-1. Go to **Build > Tools > Intent Discovery**.  
+1. Go to **Automation AI > Virtual Assistant > Tools > Intent Discovery**.  
 <img src="../images/intent-discovery-home.png" alt="Click Intent Discovery" title="Click Intent Discovery" style="border: 1px solid gray; zoom:50%;"/>  
 
 2. Click the **Create Project** button.
-3. Enter a name and a brief description of the project. Note that the character limit for Project Name is 256, and Description is 1000. Click **Proceed**.  
+3. Enter a name and a brief description of the project. **Note** that the character limit for Project Name is 256, and Description is 1000. Click **Proceed**.  
 <img src="../images/intent-discovery-project.png" alt="Project name and description" title="Project name and description" style="border: 1px solid gray; zoom:50%;"/>  
 
 4. The new project is created. You see the Intent Discovery page with the header **‘Projects / {{New Project’s Name}}’**.  
@@ -40,14 +40,14 @@ The status of a project can be any of the following, displayed in the Status col
 
 !!! note
 
-        You can create a maximum of 10 projects per VA. You can change an existing project’s name and description anytime.
+    You can create a maximum of 10 projects per VA. You can change an existing project’s name and description anytime.
 
 
 ## Upload Transcripts
 
 On the Intent Discovery page for the new project, you can see a button to initiate the upload of the transcript file(s) and a link to download a sample transcript file.
 
-<img src="../images/upload-transcript.png" alt="Upload Transcripts" title="Upload Transcripts" style="border: 1px solid gray; zoom:50%;"/>  
+<img src="../images/upload-transcript-button-click.png" alt="Upload Transcripts" title="Upload Transcripts" style="border: 1px solid gray; zoom:50%;"/>  
 
 
 You can download the sample CSV file by clicking the link. Ensure to upload transcripts in the format specified in the sample file. Please note that **all the columns in the file must be filled**.
@@ -126,12 +126,12 @@ table, th, td {
 ### Steps to upload the transcripts:
 
 1. Click the **Upload Transcript** button, and then browse and select the transcripts files (CSV format). The selected files are uploaded, and you see a prompt to manage the transcripts on the next page.  
-<img src="../images/browse-for-transcript.png" alt="Browse for Transcript" title="Browse for Transcript" style="border: 1px solid gray; zoom:50%;"/>  
-  
-    <img src="../images/upload-transcript-confirmation.png" alt="Transcript upload confirmation" title="Upload transcript confirmation" style="border: 1px solid gray; zoom:50%;"/>  
+    
+    <img src="../images/browse-for-transcript.png" alt="Browse for Transcript" title="Browse for Transcript" style="border: 1px solid gray; zoom:50%;"/>    
 
 2. If some transcript files are uploaded but No intents extracted so far, the **Manage Transcripts** button is displayed as shown in the screenshot below.  
-<img src="../images/manage-transcripts.png" alt="Manage Transcript" title="Manage Transcript" style="border: 1px solid gray; zoom:50%;"/>
+    
+    <img src="../images/manage-transcripts.png" alt="Manage Transcript" title="Manage Transcript" style="border: 1px solid gray; zoom:50%;"/>
     
 3. On clicking **Manage Transcripts**, you can see the **Transcripts** dialog box with the list of all the transcript files. Below details are displayed on the window:
     1. File Name: Name of the transcript file uploaded
@@ -178,12 +178,6 @@ Click the **Extract Intents** button on the Transcripts dialog box. You can see 
 
 After the intent extraction is completed, you can see the list of extracted intents along with session count, qualified utterances, and actions.  
 <img src="../images/intents-extracted.png" alt="Intents Extracted" title="Intents extracted" style="border: 1px solid gray; zoom:50%;"/>
-
-You can view the details of the intent action by clicking the **View** icon under the Actions column next to the text.  
-<img src="../images/click-view-on-intent.png" alt="Click View on Images" title="Click View on Images" style="border: 1px solid gray; zoom:50%;"/>  
-  
- <img src="../images/view-intent-activity.png" alt="Intent Activity" title="Intent Activity" style="border: 1px solid gray; zoom:50%;"/>
-
 
 
 ### Extracted Intent Details
@@ -316,11 +310,18 @@ Additionally, the training will reflect under the **Results** column against the
 * If **Trained ‘n’ new FAQs** tag/text is existing, then the count increases by 1. For example: **Trained 1 new FAQs** will be changed to **Trained 2 new FAQs**.
 * If there are no Dialog tasks created so far, then the text becomes **Trained 1 new FAQ**. 
 
+You can view the details of the intent action by clicking the **View** icon under the Actions column next to the text.  
+
+<img src="../images/click-view-on-intent.png" alt="Click View on Images" title="Click View on Images" style="border: 1px solid gray; zoom:50%;"/>  
+  
+<img src="../images/view-intent-activity.png" alt="Intent Activity" title="Intent Activity" style="border: 1px solid gray; zoom:50%;"/>
 
 ### Change the status of utterances
 
 You can change the status of utterances between **Yet to Review** and **Reviewed** on the 
 [Extracted Intent Details](#extracted-intent-details) dialog box. You can change the status of one or multiple utterances in a go as per requirement.
+
+<img src="../images/change-utterance-status.png" alt="Change status of utterance" title="Change status of utterance" style="border: 1px solid gray; zoom:50%;"/>
 
 
 ## Reusing an existing project
