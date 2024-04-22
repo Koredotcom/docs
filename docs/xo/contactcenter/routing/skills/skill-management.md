@@ -14,7 +14,7 @@ The Skills section is organized by Skill Groups. Click a group to expand it and 
 
 ### Add a Skill
 
-Before adding a skill, you need a skill group. See [Skill Groups](#skill-groups)for details. SmartAssist comes pre-configured with a Default Skill Group to which you can add skills.
+Before adding a skill, you need a skill group. See [Skill Groups](#skill-groups) for details. Contact Center AI comes pre-configured with a Default Skill Group to which you can add skills.
 
 To add skills to a skill group, follow these steps:
 
@@ -78,7 +78,7 @@ To edit the field values of an existing skill, follow these steps:
 
 1. Click the desired skill group to get the associated skills list;
 2. Click the **Edit** icon corresponding to the skill you want to update;
-<img src="../skills/images/edit-skill-button.png" alt="Edit Skill Button" title="Edit Skill Button" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/edit-skill-button.png" alt="Edit Skill Button" title="Edit Skill Button" style="border: 1px solid gray; zoom:70%;">
 
 3. Make your changes in the **Edit Skill** window;
 4. Click **Save**. A success confirmation message is displayed once the skill details are updated.
@@ -94,12 +94,12 @@ To delete a skill, follow these steps:
     2. Click the **Delete** icon for all the agents mapped to the skill.
     3. Click the **Delete** button on the confirmation pop-up for each agent. Once deleting all the agents under _Agent Assignments_, click **Save**.
     4. Click the **Delete Skill** icon.
-    5. Click the **Delete** button on the confirmation pop-up to confirm your choice.
-    <img src="../images/delete-skill-button.png" alt="Delete Skill Button" title="Delete Skill Button" style="border: 1px solid gray; zoom:70%;">
+    5. Click the **Delete** button on the confirmation pop-up to confirm your choice.  
+          <img src="../images/delete-skill-button.png" alt="Delete Skill Button" title="Delete Skill Button" style="border: 1px solid gray; zoom:70%;">
 
-     !!! Note
+!!! Note
 
-          You cannot restore deleted Skills.
+     You cannot restore deleted skills. Please proceed with caution.
 
 ## Skill Groups
 
@@ -118,15 +118,15 @@ Steps to add a new skill group:
     2. Description: The skill group description to understand its context.
     3. Color: Associate a color to the group for easier identification. You can use Hex to choose a specific color, use the color picker or select from the preset color palette;
 
-3. Click **Create** to complete the process;
+3. Click **Create** to complete the process;  
 <img src="../images/create-new-skill-group.png" alt="Create Skill Group" title="Create Skill Group" style="border: 1px solid gray; zoom:70%;">
+
+!!! Note
+
+     Skill Groups and Skills can have identical names if required. You can add skills with the same name to different groups. Within the same group, skill names must be unique.
 
 4. A success confirmation message is displayed once the new skill group is created. You can now [add skills](#add-a-skill) to the group.
 <img src="../images/skill-group-created.png" alt="Skill Group Created" title="Skill Group Created" style="border: 1px solid gray; zoom:70%;">
-
-     !!! Note
-
-          Skill Groups and Skills can have identical names if required. You can add skills with the same name to different groups. Within the same group, skill names must be unique.
 
 ### Edit a Skill Group
 
@@ -158,8 +158,8 @@ Follow these steps to delete a Skill Group:
     1. Click the Edit icon corresponding to the group you want to edit;
     2. In the _Edit Skill Group_ window, click Delete Skill Group;
     3. Confirm your choice.  
-    <img src="../images/delete-skill-group.png" alt="Delete Skill Group" title="Delete Skill Group" style="border: 1px solid gray; zoom:70%;">
-    
-     !!! Note
-    
-          You cannot restore deleted Skill Groups.
+          <img src="../images/delete-skill-group.png" alt="Delete Skill Group" title="Delete Skill Group" style="border: 1px solid gray; zoom:70%;">
+
+!!! Note
+
+     You cannot restore deleted skill groups. Please proceed with caution.
