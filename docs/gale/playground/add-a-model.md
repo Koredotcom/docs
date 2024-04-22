@@ -11,7 +11,7 @@ Once you have given your prompts in the Prompt box, you can test your prompts ac
 
     <img src="../images/add-model.png" alt="Add Model" title="Add Model" style="border: 1px solid gray; zoom:80%;">
     
-    You will be redirected to the External models page to add a model. For more information about how to add an external model, see [Add an external model](../models/external-models/add-an-external-model.md).
+    You will be redirected to the External models page to add a model. For more information about how to add an external model, see [Add an external model](../models/external-models/add-an-external-model-using-easy-integration.md).
 
     !!! note
 

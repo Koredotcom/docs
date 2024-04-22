@@ -1,11 +1,13 @@
 # Create a Fine-Tuned Model
 
-You can create a fine-tuned model in the Create a custom model wizard, which involves the following 5 steps:
+You can create a fine-tuned model in the Create a fine-tune model wizard, which involves the following 5 steps:
 
 * General details
+* Selecting a Base model
 * Fine-tuning configuration
 * Adding the training and evaluation datasets
 * Adding the test dataset (optional)
+* Selecting a hardware
 * Integrating with Weights & Biases (optional)
 
 Let us now look into each step in detail.
@@ -14,7 +16,7 @@ Let us now look into each step in detail.
 
 1. Click **Models** on the top navigation bar of the application. The **Models** page is displayed.
 
-    <<img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
 1. Click the **Create a fine-tuned model** button on the **Models** page. The **Create a fine-tuned model** dialog is displayed.
 2. In the **General details** section:
@@ -26,9 +28,10 @@ Let us now look into each step in detail.
     * Provide tags to ease the search for the model and click **Next**.
 
     In the **Base** model section, do one of the following:
+
     * Select form the Kore hosted models.
 
-        Or
+    Or
 
     * Select Hugging Face connection. For more information about how to connect to Hugging Face account, see [How to Connect to your Hugging Face Account](../../integrations/how-to-to-connect-to-your-hugging-face-account.md).
 
@@ -85,7 +88,7 @@ Let us now look into each step in detail.
     
 1. In the **Weights & Biases** section:
 
-    * Select your **WandB connection** from the drop-down list. If you don't have an WandB connection, you can click the **+ New connection** that is available in the drop-down list. Fo more information about how to create the WandB account, see [How-to-Integrate-with-WandB](../../integrations/how-to-integrate-with-wandb.md).
+    * Select your **WandB connection** from the drop-down list. If you don't have an WandB connection, you can click the **+ New connection** that is available in the drop-down list. For more information about how to create the WandB account, see [How-to-Integrate-with-WandB](../../integrations/how-to-integrate-with-wandb.md).
 
     !!! note
 
@@ -128,7 +131,7 @@ Let us now look into each step in detail.
         You can stop the process if required in the middle and resume it later, then the status is changed to “Stopped”. Then a Re-trigger button is displayed to initiate the fine-tuning process again from the beginning. If the fine-tuning process fails, then the status is changed to “Failed” and you can view the reason for failure. You can make the required changes, and click the Re-trigger button to start the fine-tuning again.
 
 
-    Once the Fine-tuning is triggered, you can check the progress in real-time on the **Overview** page. You can click any model name from the list of Fine-tuned models and the Overview page of the model is displayed.
+    Once the fine-tuning is triggered, you can check the progress in real-time on the **Overview** page. You can click any model name from the list of fine-tuned models and the Overview page of the model is displayed.
 
 
     This page displays the following sections:
@@ -158,6 +161,6 @@ After the model is fine-tuned, you can deploy the fine-tuned model and use it ac
 
 !!! note
 
-    When fine-tuning is completed, you can use it to create another custom or fine-tuned model on top of this model.
+    When fine-tuning is completed, you can use it to create another fine-tuned model on top of this model.
 
 

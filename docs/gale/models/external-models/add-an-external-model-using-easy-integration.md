@@ -1,8 +1,7 @@
-# Add an External Model
+# Add an External Model using Easy Integration
 
-You can select one option from the 2 options provided to add an external model.
 
-For example, here in this topic, you can see the process of adding the Claude-V1 LLM model from the provider Anthropic.
+In this topic, you can see the process of adding the Claude-V1 LLM model from the provider Anthropic.
 
 **To add an external model, follow these steps**:
 
@@ -34,4 +33,4 @@ For example, here in this topic, you can see the process of adding the Claude-V1
 !!! note
 
     * You can click the 3 dots icon corresponding to the Model name in the list of external models and edit or delete the model.
-    * You can set the Inference option using the toggle button corresponding to the Model name. If the Inferencing toggle is ON, you can use this model across GALE. If the toggle button is OFF, it means you cannot infer it anywhere in GALE. For example, in the playground, an error message is displayed that the model is not active even though you have added it in the external models tab.
+    * You can set the Inference option using the toggle button corresponding to the Model name. If the Inferencing toggle is ON, you can use this model across GALE. If the toggle button is OFF, it means you cannot infer it anywhere in GALE. For example, if you turn OFF the toggle button, then in the playground, an error message is displayed that the model is not active even though you have added it in the external models tab.
