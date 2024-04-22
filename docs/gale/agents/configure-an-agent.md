@@ -15,7 +15,7 @@ You can modify and manage the general details of your agent if required and add 
 2. The **Create environment variable** dialog box is displayed. Click **Add** or **Add variable**.
 3. Specify the following information on the **Add variable** dialog box:
 
-    <img src="..images/add-varaible.png" alt="Add a Varaible" title="Add a Varaible" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-varaible.png" alt="Add a Varaible" title="Add a Varaible" style="border: 1px solid gray; zoom:80%;">
 
     * **Variable name**: Provide a descriptive name for the variable.
     * **Secure variable**: Use the toggle to enable security for the variable. (If you are enabling the security, read the onscreen information carefully to understand the impact.)

@@ -7,7 +7,7 @@ Currently, we support thirty-plus open-source models and provide them as a servi
 1. Click **Models** on the top navigation bar of the application. The **Models** page is displayed.
 2. Click the **Open-source models** tab on the Models page.
 
-    <img src="../deploy-a-model.png" alt="Deploy a Model" title="Deploy a Model" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/deploy-a-model.png" alt="Deploy a Model" title="Deploy a Model" style="border: 1px solid gray; zoom:80%;">
 
 1. Click the **Deploy a model** button. A pop-up with a list of available models is displayed.
 
