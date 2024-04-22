@@ -42,7 +42,7 @@ The first page is a list of existing Dialog Tasks. Now, let us review the featur
     
     !!! Note
     
-        If a Dialog Task has been created using our legacy builder, then you will have the option to upgrade to the new, Conversation-Driven builder. In your list, such tasks come with an upgrade icon (an upward arrow inside a gear symbol).
+        If a Dialog Task has been created using the legacy builder, then you will have the option to upgrade to the new, Conversation-Driven builder. In your list, such tasks come with an upgrade icon (an upward arrow inside a gear symbol).
 
 * **Dialog Task Options** – When hovering over a task, you will see options to **Edit**, **Clone** or **Delete** the selected task. There is also a menu with **More Options**, where you can View the task, configure Dialog Settings, Manage Interruptions, or Amend Behavior.
 
@@ -155,5 +155,4 @@ The Dialog Builder interface consists of:
 **Related Links**
 
 * [Using the Dialog Builder](../using-the-dialog-builder-tool){:target="_blank"}
-* [Dialog Task – Legacy Builder](../dialog-task-legacy-builder){:target="_blank"}
 * [Help and Learning Resources](https://developer.kore.ai/docs/bots/chatbot-overview/help/){:target="_blank"}
