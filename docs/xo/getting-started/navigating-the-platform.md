@@ -57,7 +57,7 @@ All the actions available within the Kore.ai XO Platform for a product can be ac
 6. **Help** area, where you can access a comprehensive support section that will help you get started. There are links to learning tools and resources, as well as contextual help, which shows you valuable links and content, depending on where you are within the Platform.
 7. **Switch Accounts** If you are part of more than one account, then you can switch between them here.
 8. **Profile picture** to access your profile.
-9. **Test**
+9. **Test** for testing the flow.
 
 ### The Left Navigation Menu
 
@@ -70,94 +70,15 @@ Product specific features and common features applicable to each products are sh
 #### Product Specific Options
 The left navigation of Products of the XO Platform are:
 
-<table>
-  <tr>
-   <td>AUTOMATION AI
-   </td>
-   <td>SEARCH AI 
-   </td>
-   <td>CONTACT CENTER AI
-   </td>
-   <td>AGENT AI
-   </td>
-  </tr>
-  <tr>
-   <td>
-
-<img src="../images/ntp(10).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
-
-   </td>
-   <td>
-
-<img src="../images/ntp(12).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
-
-   </td>
-   <td>
-
-<img src="../images/ntp(11).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
-
-   </td>
-   <td>
-
-<img src="../images/ntp(13).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
-
-   </td>
-  </tr>
-  <tr>
-   <td>
-    [Learn More about Automation AI](../automation/about-automation-ai.md)
-   </td>
-   <td>
-   [Learn More about Search AI](../../xo/searchai/about-search-ai.md)
-   </td>
-   <td>[Learn More about Contact Center AI](../../xo/contactcenter/about-contact-center-ai.md)
-   </td>
-   <td> [Learn More about Agent AI](../../xo/agentai/about-agent-ai.md)
-   </td>
-  </tr>
-</table>
+| AUTOMATION AI | SEARCH AI | CONTACT CENTER AI | AGENT AI |
+| --- | --- | --- | --- |
+| ![image_tooltip](./images/ntp(10).png "image_tooltip") | ![image_tooltip](./images/ntp(12).png "image_tooltip") | ![image_tooltip](./images/ntp(11).png "image_tooltip") | ![image_tooltip](./images/ntp(13).png "image_tooltip") |
+| [Learn More about Automation AI](../automation/about-automation-ai.md) | [Learn More about Search AI](../../xo/searchai/about-search-ai.md) | [Learn More about Contact Center AI](../../xo/contactcenter/about-contact-center-ai.md) | [Learn More about Agent AI](../../xo/agentai/about-agent-ai.md) |
 
 #### Common Features
 The left navigation of common features of the XO Platform are:
 
-<table>
-  <tr>
-   <td>User Management
-   </td>
-   <td>Deploy
-   </td>
-   <td>Billing
-   </td>
-   <td>Settings
-   </td>
-   <td>Marketplace
-   </td>
-  </tr>
-  <tr>
-   <td>
 
-<img src="../images/ntp(14).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
-
-   </td>
-   <td>
-
-<img src="../images/ntp(15).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
-
-   </td>
-   <td>
-
-<img src="../images/ntp(16).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
-
-   </td>
-   <td>
-
-<img src="../images/ntp(17).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
-
-   </td>
-   <td>
-
-<img src="../images/ntp(18).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
-
-   </td>
-  </tr>
-</table>
+| User Management | Deploy | Billing | Settings | Marketplace |
+| --- | --- | --- | --- | --- |
+| ![image_tooltip](./images/ntp(14).png "image_tooltip") | ![image_tooltip](./images/ntp(15).png "image_tooltip") | ![image_tooltip](./images/ntp(16).png "image_tooltip") | ![image_tooltip](./images/ntp(17).png "image_tooltip") | ![image_tooltip](./images/ntp(18).png "image_tooltip") |
