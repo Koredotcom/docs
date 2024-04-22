@@ -181,7 +181,7 @@ nav:
         - Entity Types: automation/use-cases/dialogs/entity-types.md
         - Entity Rules: automation/use-cases/dialogs/entity-rules.md
         - User Prompts or Messages: automation/use-cases/dialogs/prompt-editor.md
-        - Voice Call Properties: automation/use-cases/dialogs/voice-call-properties.md
+        - Voice Call Properties: automation/use-cases/dialogs/node-types/voice-call-properties.md        
       - Alert Tasks: automation/use-cases/alert-tasks.md
       - Small Talk: automation/use-cases/small-talk.md
       - Digital Skills: 
