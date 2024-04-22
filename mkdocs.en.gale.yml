@@ -155,13 +155,13 @@ nav:
     - Configure an Agent: agents/configure-an-agent.md
   - Models: 
     - Overview: models/overview.md 
-    - Custom Models: 
-      - Overview: models/custom-models/custom-model-overview.md
-      - Create a Custom Model: models/custom-models/create-a-custom-model.md
-      - Deploy a Custom Model: models/custom-models/deploy-a-custom-model.md
-      - Generate a New API Key: models/custom-models/generate-an-api-key.md
-      - Configure your Custom Model: models/custom-models/configure-your-custom-model.md
-      - Export your Custom Model: models/custom-models/export-your-custom-model.md
+    - Fine-tune Models: 
+      - Overview: models/custom-models/fine-tune-models-overview.md
+      - Create a Custom Model: models/fine-tune-models/create-a-fine-tuned-model.md
+      - Deploy a Custom Model: models/fine-tune-models/deploy-a-fine-tuned-model.md
+      - Generate a New API Key: models/fine-tune-models/generate-an-api-key.md
+      - Configure your Custom Model: models/fine-tune-models/configure-your-fine-tuned-model.md
+      - Export your Custom Model: models/fine-tune-models/export-your-fine-tuned-model.md
     - Open-Source Models: 
       - Overview: models/open-source-models/open-source-models-overview.md
       - Select and Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
