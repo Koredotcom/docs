@@ -7,16 +7,18 @@ Currently, we support thirty-plus open-source models and provide them as a servi
 1. Click **Models** on the top navigation bar of the application. The **Models** page is displayed.
 2. Click the **Open-source models** tab on the Models page.
 
-    <img src="../images/deploy-a-model.png.png" alt="Deploy a Model" title="Deploy a Model" style="border: 1px solid gray; zoom:80%;">
+    <img src="../deploy-a-model.png" alt="Deploy a Model" title="Deploy a Model" style="border: 1px solid gray; zoom:80%;">
 
 1. Click the **Deploy a model** button. A pop-up with a list of available models is displayed.
 
-    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/select-an-open-source-model.png" alt="Select an Open Source Model" title="Select an Open Source Model" style="border: 1px solid gray; zoom:80%;">
 
 1. Select and click a model from the list. The **Deploy** dialog is displayed.
 1. In the **General details** section:
 
     * Enter a **Deployment name** and **Description** for your model.
+
+        <img src="../images/deploy-model-general-details-section.png" alt="Deploy Model General Details Section" title="Deploy Model General Details Section" style="border: 1px solid gray; zoom:80%;">
 
     * Provide tags to ease the search for the model and click **Next**.
 
@@ -42,19 +44,22 @@ Currently, we support thirty-plus open-source models and provide them as a servi
 
     * Select the **Scale down replicas (in seconds)** which is how long to wait before scaling down replicas.
 
+        <img src="../images/deploy-model-parameters-section.png" alt="Deploy Model Parameters Section" title="Deploy Model Parameters Section" style="border: 1px solid gray; zoom:80%;">
+
 1. Click **Next**.
 2. In the **Hardware** section:
     * Select the **Hardware name** required for the deployment and click **Next**.
 
+        <img src="../images/deploy-model-hardware-section.png" alt="Deploy Model Hardware Section" title="Deploy Model Hardware Section" style="border: 1px solid gray; zoom:80%;">
+
 9. In the **Review** step, verify all the details that you provided earlier. Select the **I accept all the terms and conditions** check box.
 
-    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/deploy-model-review-section.png" alt="Deploy Model Review Section" title="Deploy Model Review Section" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
 
         If you want to make any modifications, you can go to the previous step by clicking the **Back** button or a particular step indicator on the left panel.
     
-    **Note**: 
 
 1. Click **Deploy**.
 
@@ -66,18 +71,18 @@ After the deployment process is complete the status is changed to “Deployed”
 
 !!! note
 
-        You will receive an email notification after your model deployment is completed and an API is generated, and it is ready to use.
+    You will receive an email notification after your model deployment is completed and an API is generated, and it is ready to use.
 
 
 You can click the required model from the model listing as shown in the preceding image and go to the **Manage** page. You can find the API endpoint created for this open-source model. To use this model as a service, the generated code is helpful. You can copy it easily as shown in the following image.
 
-<img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/deplyed-model-end-point.png" alt="Deplyed Model End Point" title="Deplyed Model End Point" style="border: 1px solid gray; zoom:80%;">
 
-    !!! note
+!!! note
 
-        Click the three dots icon corresponding to the **Model name** under the **Open-source models** tab on the Models page. A pop-up with a list of options is displayed. If you choose the API endpoint option, it will navigate you to the API keys section of the Model and if you select the Configurations option, it will take you to the Configurations section of the Model.
+    Click the three dots icon corresponding to the **Model name** under the Open-source models tab on the Models page. A pop-up with a list of options is displayed. If you choose the API endpoint option, it will navigate you to the API keys section of the Model and if you select the Configurations option, it will take you to the Configurations section of the Model.
 
-<img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/three-dots-options-for-model.png" alt="Three Dots Options for Model" title="Three Dots Options for Model" style="border: 1px solid gray; zoom:80%;">
 
 
 Click the **Deployment history** tab on the Deploy page to see view the history. This can be particularly useful for auditing and accountability purpose.
