@@ -1,8 +1,8 @@
-# Navigating the Kore.ai XO Platform
+# Navigating the XO Platform
 
 This article takes you through the main sections and menu items you will be using while working with the XO Platform.
 
-To get started navigating the XO Platform, log into your account.
+To get started navigating the XO Platform, [log into your account](https://platform.kore.ai/){:target="_blank"}.
 
 ## Explore The Landing Page
 
