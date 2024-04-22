@@ -12,8 +12,10 @@ You can generate an API key for your open-source model and share it with other t
 
     <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
-1. Enter a **Name** for the key and click the **Generate key** button. Your API key is now generated. You can copy the key and share it with others if required.
+1. Enter a **Name** for the key and click the **Generate key** button. Click **Copy and close** button to copy your API key and share it with others if required.
 
-    All the generated API keys are listed in the API key section. You can hover over any key and find the copy icon corresponding to the name of the key. Click the icon and copy the key to share it with others if required to use your open-source model.
+    <img src="../images/copy-and-close-api-key.png" alt="Copy API Key" title="Copy API Key" style="border: 1px solid gray; zoom:80%;">
 
-    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+    All the generated API keys are listed in the API key section. You can hover over any key and find the delete icon corresponding to the name of the key if you want to delete the key.
+
+   

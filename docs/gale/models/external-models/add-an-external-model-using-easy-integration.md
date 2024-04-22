@@ -1,7 +1,7 @@
 # Add an External Model using Easy Integration
 
 
-In this topic, you can see the process of adding the Claude-V1 LLM model from the provider Anthropic.
+In this topic, you can see the process of adding the Claude-V1 model from the provider Anthropic.
 
 **To add an external model, follow these steps**:
 

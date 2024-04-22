@@ -169,8 +169,8 @@ nav:
       - Configure your Open-Source Model: models/open-source-models/configure-your-open-source-model.md
     - External Models: 
       - Overview: models/external-models/external-models-overview.md
-      - Add an External Model: models/external-models/add-an-external-model-using-easy-integration.md
-      - Add an External Model: models/external-models/add-an-external-model-using-api-integration.md
+      - Add an External Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
+      - Add an External Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
   - Playground: 
     - Overview: playground/overview.md
     - Create a New Prompt Experiment: playground/create-a-new-prompt-experiment.md

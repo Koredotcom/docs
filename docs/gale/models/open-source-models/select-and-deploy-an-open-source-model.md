@@ -1,44 +1,98 @@
-# Select and Deploy an Open-Source Model
+# Select and deploy an open-source model
 
 Currently, we support thirty-plus open-source models and provide them as a service to our users.
 
 **To select and deploy a model, follow these steps**:
 
-
 1. Click **Models** on the top navigation bar of the application. The **Models** page is displayed.
-2. Click the **Open-source models** tab on the **Models** page.
+2. Click the **Open-source models** tab on the Models page.
 
-    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+    <img src="../open-source-models/images/deploy-a-model.png.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
 1. Click the **Deploy a model** button. A pop-up with a list of available models is displayed.
 
     <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
-1. Select a model from the list. For example, you can select the “_google/flan-t5-small_” model and click the model name. A deployment status alert is displayed stating that there will be inference charges once your deployment starts. Click **OK** to confirm with deployment.  
-2. As you click the model name the deployment process of the model begins automatically, and the status is displayed as “Deploying” in the list of open-source models.
+1. Select and click a model from the list. The **Deploy** dialog is displayed.
+1. In the **General details** section:
+
+    * Enter a **Deployment name** and **Description** for your model.
+
+    * Provide tags to ease the search for the model and click **Next**.
+
+1. In the **Parameters** section:
+
+    * Select the Sampling **Temperature** to use for deployment.
+
+    * Select the **Maximum length** which implies the maximum number of tokens to generate.
+
+    * Select the **Top p** which is an alternative to sampling with temperature where the model considers the results of the tokens with top_p probability mass.
+
+    * Select the **Top k** value which is the number of highest probability vocabulary tokens to keep for top-k-filtering.
+
+    * Enter the **Stop sequences** which implies that where the model will stop generating further tokens.
+
+    * Enter the **Inference batch size** which is used to batch the concurrent requests at the time of model inferencing.
+
+    * Select the **Min replicas** which is the minimum number of model replicas to be deployed.
+
+    * Select the **Max replicas** which is the maximum number of model replicas to auto-scale.
+
+    * Select the **Scale up delay (in seconds)** which is how long to wait before scaling-up replicas.
+
+    * Select the **Scale down replicas (in seconds)** which is how long to wait before scaling down replicas.
+
+1. Click **Next**.
+2. In the **Hardware** section:
+    * Select the **Hardware name** required for the deployment and click **Next**.
+
+9. In the **Review** step, verify all the details that you provided earlier. Select the **I accept all the terms and conditions** check box.
 
     <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
-!!! note
+    !!! note
 
-    You will be charged for deployment and inferencing-related costs for each open-source model.
+        If you want to make any modifications, you can go to the previous step by clicking the **Back** button or a particular step indicator on the left panel.
+    
+    **Note**: 
 
+1. Click **Deploy**.
 
+    !!! note
+
+        You will be charged for deployment and inferencing-related costs for each open-source model.
+    
 After the deployment process is complete the status is changed to “Deployed”. You can now infer this model across GALE and externally.
 
 !!! note
 
-    You will receive an email notification after your model deployment is completed and an API is generated, and it is ready to use.
+        You will receive an email notification after your model deployment is completed and an API is generated, and it is ready to use.
 
 
 You can click the required model from the model listing as shown in the preceding image and go to the **Manage** page. You can find the API endpoint created for this open-source model. To use this model as a service, the generated code is helpful. You can copy it easily as shown in the following image.
 
 <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
 
+    !!! note
+
+        Click the three dots icon corresponding to the **Model name** under the **Open-source models** tab on the Models page. A pop-up with a list of options is displayed. If you choose the API endpoint option, it will navigate you to the API keys section of the Model and if you select the Configurations option, it will take you to the Configurations section of the Model.
+
+<img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+
+
+Click the **Deployment history** tab on the Deploy page to see view the history. This can be particularly useful for auditing and accountability purpose.
+
+
+### **Re-deploy a Deployed Model**
+
+After initially deploying a model, if you want you can modify some parameter values and redeploy the updated model.
 
 !!! note
 
-    Click the three dots icon corresponding to the **Model name** under the **Open-source models** tab on the **Models** page. A pop-up with a list of options is displayed as shown in the following image. If you choose the API endpoint option, it will navigate you to the API keys section of the Model and if you select the Configurations option, it will take you to the Configurations section of the Model.
+    To re-deploy a model you must first undeploy the existing model and then deploy the updated one. This means there will be some downtime when the model is unavailable.
 
+**To re-deploy a deployed model, follow these steps**:
 
-<img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+1. Click the required model name from the Open-source models list.
+2. Click the **Deploy model** button. The **Model Configuration** page is displayed.
+3. Modify the required fields and click the Deploy button. The model is deployed and status is “Deployed”.
