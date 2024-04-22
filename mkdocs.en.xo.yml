@@ -114,7 +114,8 @@ nav:
   - Platform:
     - What's New in XO 11: getting-started/whats-new-in-xo-platform.md
     - Getting Started:
-      - Accessing the Platform: getting-started/accessing-the-platform.md          
+      - Accessing the Platform: getting-started/accessing-the-platform.md   
+      - Navigating the Platform: getting-started/navigating-the-platform.md       
       - Flows and Channels:
         - Flows: 
           - Introduction: flows/introduction-to-flows.md
