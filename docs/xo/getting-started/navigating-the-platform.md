@@ -78,7 +78,6 @@ The left navigation of Products of the XO Platform are:
 #### Common Features
 The left navigation of common features of the XO Platform are:
 
-
 | User Management | Deploy | Billing | Settings | Marketplace |
 | --- | --- | --- | --- | --- |
 | ![image_tooltip](./images/ntp(14).png "image_tooltip") | ![image_tooltip](./images/ntp(15).png "image_tooltip") | ![image_tooltip](./images/ntp(16).png "image_tooltip") | ![image_tooltip](./images/ntp(17).png "image_tooltip") | ![image_tooltip](./images/ntp(18).png "image_tooltip") |
