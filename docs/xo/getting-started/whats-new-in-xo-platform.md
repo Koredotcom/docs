@@ -1,7 +1,7 @@
 ---
 hide:
   - feedback
-  - toc
+  
 ---
 # What's New in XO 11
 Learn about the new features and enhancements included in v11 of Kore.ai Experience Optimization Platform.
@@ -125,7 +125,7 @@ Various components and their interactions within the XO platform:
 * **Analytics** gathers data to provide insights into user interactions and system performance.
 * **App Management** supports the entire platform with functionalities for publishing, importing/exporting apps, user management, collaboration, billing, etc.
 
-### Key Changes to Navigation
+### Key Navigation Changes
 
 **Ease of Access to All Products and Services**
 
@@ -154,7 +154,7 @@ Earlier, incoming conversations were handled by events such as OnConnect/Welcome
 
 XO11 has an all-new super intuitive dialog builder. 
 
- <img src="../images/xo-platform-Dialog Builder.png" alt="Dialog builder" title="Dialog Builder">
+ <img src="../images/xo-platform-Dialogbuilder.png" alt="Dialog builder" title="Dialog Builder">
 
 ### Talk to Bot Moved to Header
 
