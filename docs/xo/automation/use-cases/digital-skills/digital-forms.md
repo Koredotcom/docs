@@ -26,7 +26,7 @@ Here is the overall usage process for Digital Forms within the XO Platform
 
 * **Form Creation**: Define a Digital Form by adding components and configuring their properties.
 * **Form Invocation**: Forms are invoked from inside a task or process:
-   * A form is included as a component in the task. The dialog task offers a Form Experience and Conversation Experience based on the channel of interaction. Learn more by reading about the [Form Node](../../dialogs/node-types/working-with-the-form-node/{:target="_blank"}.
+   * A form is included as a component in the task. The dialog task offers a Form Experience and Conversation Experience based on the channel of interaction. Learn more by reading about the [Form Node](../../dialogs/node-types/working-with-the-form-node/){:target="_blank"}.
    * A Digital Form is added to a Digital View with a dialog task triggered when a form is submitted from there.
 
 * **Form Submission**: When it is submitted, the component values are validated and any errors are highlighted. Based on the mode of invocation, post successful validation:
@@ -79,7 +79,7 @@ To create forms, follow the steps below:
 
 Once you configure the basic details for your form, the Platform takes you to the form builder, where you can add the components you require.
 
-You can drag and drop the components available on the left pane to the canvas and configure their properties to build the form. For details of the available components & their properties.
+You can drag and drop the components available on the left pane to the canvas and configure their properties to build the form. For details of the available components & their properties [see here](../configure-digital-forms/#form-editor){:target="_blank"}.
 
 <img src="../../images/drag-component.gif" alt="Drag and drop component" title="Drag and drop component" style="border: 1px solid gray; zoom:75%;">
 
