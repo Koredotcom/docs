@@ -125,21 +125,17 @@ Various components and their interactions within the XO platform:
 * **Analytics** gathers data to provide insights into user interactions and system performance.
 * **App Management** supports the entire platform with functionalities for publishing, importing/exporting apps, user management, collaboration, billing, etc.
 
-### Key Navigation Changes
+## Key Navigation Changes
 
 **Ease of Access to All Products and Services**
 
-* A new guided onboarding journey helps you create your first app in record time. To start the journey, click **Create New** on the home page. 
-    <img src="../images/xo-platform-homepage.png" alt="New Unified XO Platform Homepage" title="New unified XO Platform Homepage">
+* A new guided onboarding journey helps you quickly create your first app. To start the journey, click **Create New** for your product on the home page and follow the guided steps.  
+<img src="../images/xo-platform-homepage.png" alt="New Unified XO Platform Homepage" title="New unified XO Platform Homepage">
 
-* Follow the guided steps to create the app. 
-
-    <img src="../images/xo-platform-Onboarding-experience.png" alt="Onboarding Experience" title="Onboarding Experience">
-
-* Easy access to the Setup Guide allows you to quickly change anything inside your app later.
+* Easy access to the **Setup Guide** from the left navigation allows you to quickly change anything inside your app later.
      <img src="../images/xo-platform-setupguide.png" alt="Setup Guide" title="Setup Guide">
 
-* Quickly switch to your favorite product using the **Product Switcher**.  
+* The **Product Switcher** at the top of the left navigation enables easy switching between your favorite products.
      <img src="../images/xo-platform-productswitcher.png" alt="Product Switcher" title="Product Switcher">
 
 ## Key Differences Between XO11 and XO10
@@ -200,13 +196,13 @@ The Analytics module is logically regrouped to address various audience needs. A
 
 <img src="../images/xo-platform-analytics.png" alt="Analytics" title="Analytics">
 
-### Introducing Fallback Behaviour
+### Fallback Behaviour
 
 We have a new setting where users can configure where every user utterance should go first:  Automation AI (Virtual Assistant) or Search AI (Answers) to get the response. 
 
 <img src="../images/xo-platform-fallback-behaviour.png" alt="Fallback Behaviour" title="Fallback Behaviour">
 
-### Introducing New Marketplace
+### New Marketplace
 
 The New Marketplace is available inside the App (previously, it was on the bot's homepage). It allows users to search for prebuilt templates and filter them by integration type, provider, domain, etc.
 
