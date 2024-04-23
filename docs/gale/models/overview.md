@@ -4,6 +4,6 @@ The Model Studio provides the capability to augment base models by integrating t
 
 GALE provides you with 3 different options as part of the model studio:
 
-1. **Fine-tuning model**: This section, enables you to perform fine-tuning on an existing model, allowing you to create customized models tailored to your specific needs.
+1. **Fine-tuned model**: This section, enables you to perform fine-tuning on an existing model, allowing you to create customized models tailored to your specific needs.
 2. **Open-source model**: In this section, you can can either choose to deploy from a curated list of 30+ most popular open-source models or bring in any text generation model of your choice from Hugging Face.
 3. **External models**: In this section, you can add external models models such as Open AI, Anthropic, Azure Open AI, Cohere, and Google. Moreover, if you've hosted any models and wish to integrate them into GALE using API connections, this can be seamlessly achieved in this section.

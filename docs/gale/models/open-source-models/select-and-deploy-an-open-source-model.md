@@ -1,4 +1,4 @@
-# Select and deploy an open-source model
+# Select and Deploy an Open-Source Model
 
 Currently, we support thirty-plus open-source models and provide them as a service to our users.
 
@@ -85,7 +85,7 @@ You can click the required model from the model listing as shown in the precedin
 <img src="../images/three-dots-options-for-model.png" alt="Three Dots Options for Model" title="Three Dots Options for Model" style="border: 1px solid gray; zoom:80%;">
 
 
-Click the **Deployment history** tab on the Deploy page to see view the history. This can be particularly useful for auditing and accountability purpose.
+Click the **Deployment history** tab on the Deploy page to view the history. This can be particularly useful for auditing and accountability purpose.
 
 
 ### **Re-deploy a Deployed Model**

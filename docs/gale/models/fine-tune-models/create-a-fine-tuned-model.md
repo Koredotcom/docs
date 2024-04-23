@@ -36,7 +36,7 @@ Let us now look into each step in detail.
     * Select Hugging Face connection. For more information about how to connect to Hugging Face account, see [How to Connect to your Hugging Face Account](../../integrations/how-to-to-connect-to-your-hugging-face-account.md).
 
 
-    <img src="../images/general-details-section.png" alt="Base Model Section" title="Base Model Section" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/base-model-section.png" alt="Base Model Section" title="Base Model Section" style="border: 1px solid gray; zoom:80%;">
 
 1. In the **Fine-Tuning configuration** section:
 

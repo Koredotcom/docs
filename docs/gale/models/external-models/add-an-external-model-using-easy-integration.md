@@ -12,7 +12,7 @@ In this topic, you can see the process of adding the Claude-V1 model from the pr
 
 1. Click **Add a model** under the **External models** tab. The **Add an external model** dialog is displayed.
 
-    <img src="../images/navigate-to-data-module.png" alt="Add External Model Easy Integration" title="Add External Model Easy Integration" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-external-model-easy-integration.png" alt="Add External Model Easy Integration" title="Add External Model Easy Integration" style="border: 1px solid gray; zoom:80%;">
 
 1. Select the **Easy integration** option to integrate models from Open AI, Anthropic, Google, or Cohere and click **Next**.
 2. Select a provider to integrate with and click **Next**.

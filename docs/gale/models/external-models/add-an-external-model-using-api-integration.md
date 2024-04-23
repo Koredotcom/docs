@@ -16,7 +16,7 @@ Custom API Integration in GALE enables extensibility of use, where it allows you
 
 1. Select the **Custom integration** option to connect models via API integration, and click **Next**.
 
-    The **Custom API Integration** dialog is displayed.
+    The **Custom API integration** dialog is displayed.
 
 1. Enter a **Model name** and **Model endpoint URL** in the respective fields.
 
@@ -41,6 +41,7 @@ Custom API Integration in GALE enables extensibility of use, where it allows you
 1. In the **Body** section, request body of the model you are trying to connect with in GALE.
 
     <img src="../images/custom-api-integration-body.png" alt="Custom API Integration Body" title="Custom API Integration Body" style="border: 1px solid gray; zoom:80%;">
+
 1. In the **Test response** section, you need to provide a test response from the model:
 
     * Click the **Test** button under the **Test** section on the **Custom API Integration** dialog.
@@ -50,7 +51,7 @@ Custom API Integration in GALE enables extensibility of use, where it allows you
 
     * Enter a **Prompt**, **Sample prompt**, and **Examples** in the respective fields.
 
-1. Once the response is generated after the Test, you can configure the **JSON path** to capture the output path, Input tokens, and Output tokens.
+1. Once the response is generated after the Test, you can configure the **JSON path** to capture the Output path, Input tokens, and Output tokens.
     
     !!! note
 
