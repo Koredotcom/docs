@@ -111,6 +111,10 @@ For more information on custom tags, see [Custom Meta Tags](../../../../../analy
 
 ### Connections Properties
 
+!!! Note
+
+    Connection properties can be seen and accessed only if this is the bottommost node of a sequence.
+
 Click the Connections tab and set the transition properties to determine the node in the dialog task to execute next. You can write conditional statements based on the values of any Entity or Context Objects in the dialog task, or you can use intents for transitions. See [Adding IF-Else Conditions to Node Connections](../../node-connections/nodes-conditions/){:target="_blank"} for a detailed setup guide.  
 
 <img src="../images/dynamic-intent-node-img4.png" alt="Dynamic intent node - Connection properties" title="Dynamic intent node - Connection properties" style="border:1px solid gray;zoom:70%;">

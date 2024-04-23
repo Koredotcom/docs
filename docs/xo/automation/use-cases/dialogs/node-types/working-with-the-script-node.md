@@ -7,9 +7,6 @@ The **Script Node** allows you to write JavaScript code in a dialog task.You can
 * Display custom error messages to the user.
 * Make decisions based on complex business rules.
 
-When you test a dialog in the Bot Builder, script node errors are displayed in the **Error in Script Node** dialog with the line number and column number, along with the associated Context object. You can update and test the script directly in the **Error in Script Node** dialog as shown in the following illustration.
-
-
 ## Add the Node
 
 The setup a Script node in a dialog task involves the following steps:
@@ -24,7 +21,7 @@ The setup a Script node in a dialog task involves the following steps:
 
 !!! note
 
-        You can add a script node within an existing sequence or outside any existing sequence. If you add it outside, a new, untitled sequence will automatically get created containing the new script node.
+    You can add a script node within an existing sequence or outside any existing sequence. If you add it outside, a new, untitled sequence will automatically get created containing the new script node.
 
 
 ## Configure the Node
@@ -65,7 +62,8 @@ You can write conditional statements based on the values of any Entity or Contex
 
 !!! Note
 
-    The conditions configured here are applicable only for this instance and will not affect this node when being used in any other dialog.
+    * The conditions configured here are applicable only for this instance and will not affect this node when being used in any other dialog.
+    * The connection properties would be present only if this is the bottommost node of a sequence.
 
 
 To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions){:target="_blank"}
@@ -140,6 +138,6 @@ while (context.accdata.length - i) {
 context.canProceed = valid;
 ```
 
-#### Related Link
+**Related Link**
 
 * [**koreUtil libraries**](../../../../../apis/koreutil-libraries){:target="_blank"} (Pre-written JavaScript functions to make common or complex tasks easy to implement)

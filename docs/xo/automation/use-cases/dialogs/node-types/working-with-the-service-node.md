@@ -130,7 +130,8 @@ Use the Instance Properties to define any user tags that you want to set.
 
 !!! Note
     
-    The conditions configured here are applicable only for this instance and will not affect this node when being used in any other dialog.
+    * The conditions configured here are applicable only for this instance and will not affect this node when being used in any other dialog.
+    * The connection properties would be present only if this is the bottommost node of a sequence.
 
 To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions){:target="_blank"}
 
@@ -409,7 +410,5 @@ Define the expected behavior of this alert if an upgraded version of the underly
 
 ## Next Steps
 
-For the Service Node you set up, you might want to:
-
-* Implement Custom Authentication, [refer here](../../implementing-custom-authentication){:target="_blank"}; or
-* Enable 2-way SSL, [refer here](../../enabling-2-way-ssl-for-service-nodes/){:target="_blank"}.
+* [Implement Custom Authentication for the Service Node](./../implementing-custom-authentication.md) or
+* [Enable 2-way SSL for the Service node](./../enabling-2-way-ssl-for-service-nodes.md)

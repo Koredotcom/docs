@@ -30,8 +30,7 @@ Setting up a confirmation node in a dialog task involves the following steps:
 
 !!! Notes 
 
-    The configurations you set up or edit in these sections reflect in all other dialog tasks that use this node.  
-    This article works with the new dialog builder, you will find this feature in legacy builder at the same location i.e. Confirmation node -> Component Properties.
+    The configurations you set up or edit in these sections reflect in all other dialog tasks that use this node.
 
 To configure the component properties, follow the below steps:
 
@@ -50,9 +49,18 @@ To configure the component properties, follow the below steps:
 
         In both cases, “&lt;” means the start of the sentence and “>” means the end of the sentence.  Many of these words are only treated as a _yes_ or _no_ if they appear at the start or the end of an utterance, not in the middle.
 
-3. You can use **Rephrase Responses** to rewrite VA replies using AI based on conversation context and user emotions. For Confirmation nodes, this feature helps rephrase the responses entered under _User Prompts_. To see this feature in your node’s Component Properties, enable the [OpenAI](../../../../../app-settings/integrations/actions/open-ai/configuring-the-openai-action){:target="_blank"} or [Azure-OpenAI](../../../../../app-settings/integrations/actions/azure-open-ai/configuring-the-azure-openai-action){:target="_blank"} integration and the **Dynamic Prompt and Message Rephrasing** feature under [LLM and Generative AI](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#rephrase-dialog-responses){:target="_blank"}.  By default, this feature is disabled for each node. Turn on the toggle to enable Rephrase Responses.Configure the **number of previous user inputs** to define  how many previous user messages should be sent to OpenAI as context based on which to rephrase the response sent through the node. You can choose between 0 and 5, where 0 means that no previous input is considered, while 5 means that the previous 5 responses are sent as context.
+3. You can use **Rephrase Responses** to rewrite VA replies using AI based on conversation context and user emotions. For Confirmation nodes, this feature helps rephrase the responses entered under _User Prompts_. To see this feature in your node’s Component Properties, enable the [OpenAI](../../../../../app-settings/integrations/actions/open-ai/configuring-the-openai-action){:target="_blank"} or [Azure-OpenAI](../../../../../app-settings/integrations/actions/azure-open-ai/configuring-the-azure-openai-action){:target="_blank"} integration and the **Dynamic Prompt and Message Rephrasing** feature under [LLM and Generative AI](../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#rephrase-dialog-responses){:target="_blank"}. By default, this feature is disabled for each node. Turn on the toggle to enable Rephrase Responses.
+Adjusting the settings allows you to fine-tune the model’s behavior to meet your needs. **The default settings work fine for most cases**. However, if required, you can tweak the settings and find the right balance for your use case.
     
     <img src="../images/confirmation-node-img2-rephrase-response.png" alt="Confirmation node - Rephrase Responses" title="Confirmation node - Rephrase Responses" style="border:1px solid gray;zoom:70%;">
+    
+    * **Model**: The default model for which the settings are displayed. You can choose another supported mode if it’s configured. If you select a non-default model, it’s used for this node only. If you want to change the default model, you can select the model in the drop-down list and use the **Mark Default** option shown next to its name.
+    * **No of previous user inputs**: Configure the **number of previous user inputs** to define  how many previous user messages should be sent to OpenAI as context based on which to rephrase the response sent through the node. You can choose between 0 and 5, where 0 means that no previous input is considered, while 5 means that the previous 5 responses are sent as context.
+    * **Additional Instruction**: Add a brief description of the use case context to guide the model.
+    * **Temperature**: The setting controls the randomness of the model’s output. A higher temperature, like 0.8 or above, can result in unexpected, creative, and less relevant responses. On the other hand, a lower temperature, like 0.5 or below, makes the output more focused and relevant.
+    * **Max Tokens**: It indicates the total number of tokens used in the API call to the model. It affects the cost and the time taken to receive a response. A token can be as short as one character or as long as one word, depending on the text.
+    * **Fallback Behaviour**: If the rephrase response fails, use the original user query. 
+
 
 4. Add context-specific **Synonyms** for _Yes_ and _No_ within the Confirmation node to suit the dialog’s context. The Platform can identify the emojis in user utterance and consider them for confirmation/rejection, for example, a thumbs-up emoji will be taken to mean confirmation from the user.
     
@@ -127,6 +135,10 @@ Use  the **IVR properties** tab on the Confirmation Node to define the initial p
 
 
 ### Connections Properties
+
+!!! Note
+
+    If the node is at the bottom in the sequence, then only the connection property is visible.
 
 The Confirmation node’s conditional transitions go beyond the If-Else expressions used for the other nodes. You can define conditional expression based on a context object value, else a user assertion (yes), or else user negation (no). Beyond the three, you can define a fallback _Else_ condition to trigger. 
 

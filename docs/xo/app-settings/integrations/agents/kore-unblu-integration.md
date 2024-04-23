@@ -10,7 +10,7 @@ Here, the bot is the core of the entire solution. Apart from performing all its 
 
 * **Bot**: Chat Bot that the user interacts with.
 * **Users**: Users are the customers who are using this bot.
-* **Agent**: Agents are humans who chat with users. The agent will also need a chat window. For this, you can use _Unblu _software.
+* **Agent**: Agents are humans who chat with users. The agent will also need a chat window. For this, you can use _Unblu_ software.
 
 
 ## Prerequisites
@@ -30,7 +30,7 @@ To perform the Kore-Unblu integration, follow the below steps:
 
 1. Log in to the Kore bots platform with valid credentials.
 2. Select the **Build** tab from the top menu
-3. From **Integrations** select the **Agent Transfer** option
+3. Go to **Integrations** select the **Agent Transfer** option
 4. On the Agent Transfer page, next to **App Name**, click **Add** (you can select an existing app from the drop-down if you have already created one)
 5. On the Create Client App window, enter the app name in the **Name** field.
 6. You can choose to enforce JTI or JWE encryption or both. For this use case we will ignore them.
@@ -70,7 +70,7 @@ After completing the above configurations, make the required changes in the &lt;
 4. Under the Unblu section, make the below changes:
 
     1. Paste Unblu credentials under the **Unblu credentials** section.
-    2. Under the **external_messenger**section, enter the name, description, etc., you want to display in the chat.  
+    2. Under the **external_messenger** section, enter the name, description, etc., you want to display in the chat.  
       
         To access the external messenger details,
         

@@ -2,9 +2,7 @@
 
 The Kore.ai XO Platform offers a Custom Integration using the BotKit to configure agent transfer integrations for any system.
 
-!!! NOTE
 
-    The **Agent Transfer** and **BotKit** features are moved from **Deploy > Integrations** menu to **Build > Integrations > Agent Transfer** menu. Kore.ai’s Botkit is now renamed to _Custom Integration_.
 
 Custom Agent Transfer Integration refers to the process of integrating a custom-built agent (such as a virtual assistant) into a larger system or workflow. This typically involves connecting the agent to external APIs or databases and configuring it to interact with other systems or users in a specific way. The custom integration allows the custom agent to seamlessly interact with other components of the system and to provide a more complete and efficient solution for the end user.
 
@@ -55,7 +53,7 @@ Let’s understand how the custom agent can be integrated and how it can improve
 
 4. Enter a _Name (LiveChat)_ and _Description_ and **Save**.
 5. You will see a message ‘_SDK is not currently configured/Subscribed. Please go to API Extensions to configure the SDK._’. For now ignore this message as we will see how to configure SDK later in this article.
-6. From the Bot Builder screen, go to **Build > Integrations > Agent Transfer > Custom (BotKit)**.
+6. From the Bot Builder screen, go to **App Settings > Integration > Agent Transfer > Custom (BotKit)**.
 7. In the **App Name** section, select an existing app from the list or use the Create App option to create a new app.
     
     !!! Note

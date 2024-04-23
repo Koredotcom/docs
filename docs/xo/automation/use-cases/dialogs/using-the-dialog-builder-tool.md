@@ -9,10 +9,10 @@ To create a dialog task, you must have already created an assistant to add a dia
 
 To add a dialog task, follow the steps below:
 
-1. Open the assistant for which you want to create the dialog task.
-2. Click the Automation icon on the left menu.
-3. The Automation menu opens, and the Dialogs page is open by default.
-4. On the Dialogs page, click the Create Dialog button.
+1. Open the app for which you want to create the dialog task.
+2. Navigate to **Automation AI > Virtual Assistant** icon on the left menu.
+3. The Virtual Assistant menu opens, and the **Dialogs** page is open by default.
+4. On the Dialogs page, click the **Create Dialog** button.
 
     <img src="../images/using-dialog-builder-img1-create-dialog.png" alt="Dialogs" title="Dialogs" style="border:1px solid gray;zoom:60%;">
 
@@ -83,29 +83,73 @@ The nodes and the flow for the Business Logic are automatically built for your c
  
 <img src="../images/using-dialog-builder-img10-create-dialog-genai-dialog-created.png" alt="Gen Ai Dialog created" title="Gen Ai Dialog created" style="border:1px solid gray;zoom:60%;">
 
-### Auto-Generate Dialog Tasks using Pre Built Templates (Draft)
+### Auto-Generate Dialog Tasks using Pre Built Templates
 
-This option provides you ready-made templates targeting major industry verticals, covering generic use cases related to the industry, and having pre-established integration, and lets you choose a suitable dialog template. You can update the description and generate use cases based on the purpose. This option accelerates development by providing a starting point for common scenarios, ensuring consistency and efficiency. 
+This option provides you ready-made templates targeting major industry verticals, covering generic use cases related to the industry, and having pre-established integration, and lets you choose a suitable dialog template. You can update the description and generate use cases based on the purpose. This option accelerates development by providing a starting point for common scenarios, ensuring consistency and efficiency.
+
+!!! Note
+
+    You can avail this feature only if the integration is configured in your VA. You must go through the installation journey to access the integrations and templates.
+
+1. Click the **Marketplace** option. The **Marketplace** page opens with lists of **Categories** and **Integrations**. You can see a list of the most popular integrations and recommended templates.
+
+    <img src="../images/using-dialog-builder-img11-create-dialog-template-search.gif" alt="Marketplace" title="Marketplace" style="border:1px solid gray;zoom:70%;">
+
+2. Select the required categories or integrations. The corresponding integrations and available dialog templates appear. The integrations configured in your VA are labeled as **Installed**.
+
+    <img src="../images/using-dialog-builder-marketplace-actions-and-templates.png" alt="Integrations and Dialog Templates" title="Integrations and Dialog Templates" style="border:1px solid gray;zoom:70%;">
+
+3. To create a dialog using the available **Action Templates** of an integration:
+    1. Click the suitable integration. You will get a popup window containing the available **Action Templates** for the selected integration.
+
+        <img src="../images/using-dialog-builder-click-required-integration.png" alt="Select the required integration" title="Select the required integration" style="border:1px solid gray;zoom:70%;">
+
+    2. Install the required action template(s) by clicking the corresponding **Install →.**
+
+        <img src="../images/using-dialog-builder-select-required-action-template.png" alt="Install required action templates" title="Install required action templates" style="border:1px solid gray;zoom:70%;">
+
+    3. You will see the dialog task(s) added to the list of dialogs.
+    
+        <img src="../images/using-dialog-builder-dialog-task-using-action.png" alt="Dialog task added" title="Dialog task added" style="border:1px solid gray;zoom:70%;">
+
+    4. You can edit and customize the dialog design as per your requirements by opening it in the dialog builder.
+        
+        <img src="../images/using-dialog-builder-dialog-task-using-action-edit.png" alt="Dialog design" title="Dialog design" style="border:1px solid gray;zoom:70%;">
+
+4. To create a dialog using **Dialog Template** (if available):
+
+    !!! Note
+    
+        Dialog templates are not available for every integration.
+    
+    1. Click the required Dialog Template.
+    
+        <img src="../images/using-dialog-builder-click-required-dialog-template.png" alt="Select required dialog template" title="Select required dialog template" style="border:1px solid gray;zoom:70%;">
+
+        You can also select the required Dialog Template by clicking on an integration and exploring the options.
+
+        <img src="../images/using-dialog-builder-integration-explore-options.png" alt="Explore options of an integration" title="Explore options of an integration" style="border:1px solid gray;zoom:70%;">
+
+    2. Click the tile containing the required Dialog Template to see the **description**, **highlights**, and **preview** of the dialog in a popup window.
+
+        <img src="../images/using-dialog-builder-dialog-template-details.png" alt="Dialog template details" title="Dialog template details" style="border:1px solid gray;zoom:70%;">
+
+    3. Click **Install** on the popup. You can modify the name and description of the dialog on the next screen. Make the required edits and click **Next**.
+
+        <img src="../images/using-dialog-builder-dialog template-name-description.png" alt="Dialog name and description" title="Dialog name and description" style="border:1px solid gray;zoom:70%;">
+
+    4. The next few screens help you with the below setup:
+        1. Utterances to identify this intent
+        2. Channel experience
+        3. Other setup points pertaining to the intent. For example, information points to be captured for Lead Capture intent.
+    
+    5. The template is installed after you finish the setup. Click **Finish**.
+
+        <img src="../images/using-dialog-builder-dialog-template-finish-install.png" alt="Finish dialog template installation" title="Finish dialog template installation" style="border:1px solid gray;zoom:70%;">
  
-~~1. Click the **Marketplace** option. The **Marketplace** page opens with lists of categories and integrations.~~
+The dialog task is created and opens in the Dialog Builder. You can make required changes like any other dialog by adding, removing and configuring nodes as per need.
 
-    ~~<img src="../images/using-dialog-builder-img11-create-dialog-template-search.gif" alt="Template search" title="Template search" style="border:1px solid gray;zoom:60%;">~~
-
-~~2. Select the required categories or integrations. The integrations appear in the **Integrations** section.~~
- 
-    ~~<img src="../images/using-dialog-builder-img12-create-dialog-template-preview.png" alt="Dialog using template - preview" title="Dialog using template - preview" style="border:1px solid gray;zoom:60%;">~~
-
-~~3. Click the suitable integration. You will get a popup window containing the available action templates for the selected integration.~~
-
-    ~~<img src="../images/using-dialog-builder-img13-create-dialog-template-edit-details.png" alt="Dialog using template - Edit details" title="Dialog using template - Edit details" style="border:1px solid gray;zoom:60%;">~~ 
-
-    ~~!!! Note~~
-
-        ~~The Action Templates will be visible only if the selected integration is installed on the platform. You need to go through the installation journey to avail the templates.~~
-
-~~4. Install the required Action Template(s).~~
- 
-    <img src="../images/using-dialog-builder-img14-create-dialog-canvas.png" alt="Dialog using template - Dialog canvas" title="Dialog using template - Dialog Canvas" style="border:1px solid gray;zoom:60%;">
+<img src="../images/using-dialog-builder-dialog-template-dialog-created.png" alt="Dialog creation completed" title="Dialog creation completed" style="border:1px solid gray;zoom:70%;">
 
 [Click here to know about Nodes & Connections](../node-types/nodes-transitions/){:target="_blank"}
 
@@ -118,10 +162,10 @@ Before moving on, here is an overview of the Dialog Task Builder. For details on
 
 The Dialog Builder interface consists of:
 
- * [Tool Set](#the-tool-set)
- * [Index Panel](#the-index-panel)
- * [Canvas](#the-canvas)
- * [Node Panel](#the-node-panel)
+1. [Tool Set](#the-tool-set)
+2. [Index Panel](#the-index-panel)
+3. [Node Panel](#the-node-panel)
+4. [Canvas](#the-canvas)
 
 
 ### The Tool Set
@@ -229,6 +273,19 @@ On this tab, you can see a list of all the sequences present in the Current Dial
 
 You can also search for nodes and sequences, which will show you the nodes/sequences in the current dialog that match the search text.
 
+### The Nodes Panel
+
+The **Nodes panel** is a streamlined, user-friendly categorization provided at the bottom of the canvas. Click a group to see the node types within it, and drag and drop the nodes to add them to the dialog. The nodes added from this panel will get added as reusable assets to the **Assets** tab of the **Index panel**.
+
+<img src="../images/using-dialog-builder-node-panel.png" alt="Node panel" title="Node panel" style="border:1px solid gray;zoom:60%;">
+
+Node type groups in the panel:
+
+* **Inform** - Contains the nodes that can be used to provide information to the user. For example, Message node.
+* **Ask** - Contains the nodes that can be used to get input from the user. For example, Confirmation or Entity node.
+* **Action** - Contains nodes that can be used for any action that the app is expected to perform without interaction with the user. For example, Script, Service, Process, or Agent Transfer node.
+* **GenAI** - Contains nodes that can be used to leverage the full potential of LLMs and Generative AI models to quickly build conversations that involve complex flows and also provide human-like experiences. For example, GenAI Node and GenAI Prompt.
+
 ### The Canvas
 
 The Canvas is where you can integrate your conversation scenarios with your business logic.
@@ -254,6 +311,12 @@ Like any other dialog, you can configure the component, NLP, and Connection prop
 These are placeholders for creating groups of nodes. Each sequence has one or more nodes added in logical sequences.
 
 <img src="../images/using-dialog-builder-sequence.png" alt="Sequence" title="Sequence" style="border:1px solid gray;zoom:60%;">
+
+A sequence gets **automatically created** when you add a node to the canvas. Once a sequence gets created, you can either add more nodes to that sequence, or, you can add nodes outside any existing sequence, in which case a new sequence will get created.
+
+To add a node to an existing sequence, drag the node on the sequence. You will see placeholders labeled **Drop here** appearing between nodes. You can drop the node on any of these placeholders; the node will get added on that spot in the sequence.
+
+<img src="../images/using-dialog-builder-creating-sequence.gif" alt="Creating sequence" title="Creating sequence" style="border:1px solid gray;zoom:60%;">
 
 The task being designed in a dialog can be broken down into several sub-tasks. For example, if you are developing a dialog to send money from one account to another, you may break the tasks into subtasks like gathering the account owner's details, gathering the recipient account's details, transferring the money, success scenario, failure scenario, etc. You can have a sequence for each sub-task.
 
@@ -312,20 +375,6 @@ Using **Bookmarks**, you can create navigation points in a dialog with a complex
 #### Mini map
 
 It is a miniature representation of the visual appearance of the dialog design.
-
-### The Nodes Panel
-
-The **Nodes panel** is a streamlined, user-friendly categorization provided at the bottom of the canvas. Click a group to see the node types within it, and drag and drop the nodes to add them to the dialog. The nodes added from this panel will get added as reusable assets to the **Assets** tab of the **Index panel**.
-
-<img src="../images/using-dialog-builder-node-panel.png" alt="Node panel" title="Node panel" style="border:1px solid gray;zoom:60%;">
-
-Node type groups in the panel:
-
-* **Inform** - Contains the nodes that can be used to provide information to the user. For example, Message node.
-* **Ask** - Contains the nodes that can be used to get input from the user. For example, Confirmation or Entity node.
-* **Action** - Contains nodes that can be used for any action that the app is expected to perform without interaction with the user. For example, Script, Service, Process, or Agent Transfer node.
-* **GenAI** - Contains nodes that can be used to leverage the full potential of LLMs and Generative AI models to quickly build conversations that involve complex flows and also provide human-like experiences. For example, GenAI Node and GenAI Prompt.
-
 
 ## Add node to dialog
 
@@ -443,7 +492,9 @@ Add or modify the following settings for your dialog:
     * **Intent Settings:**
         * **Sub intent only dialog** – The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
         * **Hide from help** – The task is not presented as a task when the user requests help. Users can invoke this task anytime while talking to the assistant.
-        * **Note: **This option is selected automatically when the previous option is selected. You can manually deselect it.
+            
+            **Note:** This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
+    
     * **Analytics - Containment Type**(Any one option can be selected):
         * **Abundance as Self Service:** Users can abandon the conversation while executing the dialog.
         * **Abundance as Drop Off:** Conversations can be abandoned by users or due to any failure during dialog execution.
@@ -472,8 +523,95 @@ Using **Amend Entity,** you can allow the users to amend entity values and contr
 
 Click here to [learn more.](../../../natural-language/nlu-configurations/amend-entities/#task-level){:target="_blank"}
 
+
 ### Manage Groups
 
-Using this option you can create and manage Node Groups.
+Using this option, you can create and manage Node Groups.
 
-<img src="../images/using-dialog-builder-img28-manage-ammend-behavior.png" alt="Manage Groups" title="Manage Groups" style="border:1px solid gray;zoom:60%;">
+Click here to [learn more.](#node-groups)
+
+
+## Node Groups
+
+You can use group nodes to improve the user experience with follow-ups and digressions and amend entity values.
+
+To create node groups, follow the below steps:
+
+1. On the Dialog Builder, navigate to **More Options > Manage Groups**
+
+    <img src="../images/using-dialog-builder-manage-groups.png" alt="Manage Groups" title="Manage Groups" style="border:1px solid gray; zoom:70%;">
+
+2. Click **+Add**.
+
+    <img src="../images/using-dialog-builder-group-add.png" alt="Add group" title="Add group" style="border:1px solid gray; zoom:70%;">
+
+3. Provide a group name.
+
+    <img src="../images/using-dialog-builder-group-name.png" alt="Group name" title="Group name" style="border:1px solid gray; zoom:70%;">
+
+4. You can either create an empty group by clicking **Save**,
+
+    <img src="../images/using-dialog-builder-empty-group.png" alt="Empty group" title="Empty group" style="border:1px solid gray; zoom:70%;">
+
+    Or you can also add one or more nodes to the group right at the time of group creation. Perform a search for node names and click **Add**.
+
+    <img src="../images/using-dialog-builder-add-nodes-to-group.png" alt="Add nodes to group" title="Add nodes to group" style="border:1px solid gray; zoom:70%;">
+
+    You can manage groups by editing the group, and adding and removing nodes.
+
+
+### Edit the Node Group
+
+On Right-clicking on a group name, you get a menu containing **Edit** and **Delete**.
+
+<img src="../images/using-dialog-builder-edit-group.png" alt="Edit group" title="Edit group" style="border:1px solid gray; zoom:70%;">
+
+On clicking **Edit**, you can edit the name of the node group, as well as add or remove nodes. And finally, save the changes.
+
+<img src="../images/using-dialog-builder-edit-name-nodes.png" alt="Edit name and nodes" title="Edit name and nodes" style="border:1px solid gray; zoom:70%;">
+
+On clicking **Delete**, you get a popup warning; the group will be deleted if you click **Confirm**.
+
+<img src="../images/using-dialog-builder-group-delete-confirmation.png" alt="Delete group" title="Delete group" style="border:1px solid gray; zoom:70%;">
+
+!!! Warning
+
+    You cannot undo the deletion.
+
+
+### Add node to a group
+
+Follow the below steps to add a node to an existing group:
+
+1. In the **Manage Group** panel, click the group name to which you want to add the node and then the **Nodes** icon. The list of nodes within the group appears with a search field.
+
+    <img src="../images/using-dialog-builder-add-node-search.png" alt="Search nodes for adding to group" title="Search nodes for adding to group" style="border:1px solid gray; zoom:70%;">
+
+2. Out of the nodes that appear as search results, you can select one or more nodes by checking the corresponding check boxes and then click **Add** to add them to the group.
+
+    <img src="../images/using-dialog-builder-group-select-add-node.png" alt="Select and add nodes" title="Select and add nodes" style="border:1px solid gray; zoom:70%;">
+
+
+### Highlight Nodes
+
+You can locate a node that is added to a group on the canvas. Click on the arrowhead icon (<img src="../images/using-dialog-builder-group-arrowhead.png">) corresponding to a node, and the sequence containing that node will be highlighted.
+
+<img src="../images/using-dialog-builder-group-highlight-node.gif" alt="Highlight nodes" title="Highlight nodes" style="border:1px solid gray; zoom:70%;">
+
+
+### Delete node
+
+You can hover over a node to get the **Delete** option. Once deleted, the node will no longer be a part of the group; however, you can add it again.
+
+
+### Subintent
+
+If you are using the group to set up a Subintent, you can do so by navigating to the required node group and clicking the **Intents** button. For additional information, please see [Grouping Nodes as Subintents](../node-connections/grouping-nodes/){:target="_blank"}.
+
+<img src="../images/using-dialog-builder-group-sub-intents.png" alt="Sub intent" title="Sub intent" style="border:1px solid gray; zoom:70%;">
+
+### View All Comments
+
+Through this option, you can view all the [comments](#notes-comments-and-bookmarks) added to the current dialog.
+
+<img src="../images/using-dialog-builder-view-all-comments.gif" alt="View all comments" title="View all comments" style="border:1px solid gray; zoom:70%;">

@@ -15,7 +15,7 @@ The setup of a logic node in a dialog task involves the following steps:
 1. Open the dialog task to which you want to add the Logic node.
 2. Add the Logic node in the designated place. For steps on adding nodes, [refer here](../../using-the-dialog-builder-tool/#add-nodes){:target="_blank"}.
 
-    !!! note
+    !!! note    
 
         You can add a logic node within an existing sequence or outside any existing sequence. If you add it outside, a new, untitled sequence will automatically get created containing the new logic node.
 
@@ -60,7 +60,8 @@ Use the Instance Properties to define any user tags that you want to set.
 
 !!! Note
     
-    The conditions configured here are applicable only for this instance and will not affect this node when being used in any other dialog.
+    * Connection properties can be seen and accessed only if this is the bottommost node of a sequence.
+    * The conditions configured here are applicable only for this instance and will not affect this node when being used in any other dialog.
 
 To set up node connection conditions, please follow the steps outlined in [Adding IF-Else Conditions to Node Connections. ](../../node-connections/nodes-conditions/){:target="_blank"}
 

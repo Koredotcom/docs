@@ -2,16 +2,13 @@
 
 The XO Platform’s Knowledge Graph (KG) helps you turn your static FAQ text into an intelligent, personalized conversational experience. It goes beyond the usual practice of capturing FAQs as flat question-answer pairs. Instead, the Knowledge Graph enables you to create a hierarchical structure of key domain terms and associate them with context-specific questions and their alternatives, synonyms, traits, and more. 
 
-Additionally, you can opt for the LLM-based Few-Shot Knowledge Graph, which requires no ontology and reduces maintenance and training requirements. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-terminology/" target="_blank">Learn more</a>.
+Additionally, you can opt for the LLM-based Few-Shot Knowledge Graph, which requires no ontology and reduces maintenance and training requirements. [Learn more](knowledge-graph-terminology.md).
 
 To generate a Knowledge Graph, you need to add FAQs to an existing or new VA. To open the Knowledge Graph builder, follow the below steps:
 
 1. Log in to the XO Platform and open the VA to which you want to add the Knowledge Graph.
-2. Select the **Build** tab from the top menu.
-3. On the left menu, select **Conversation Skills** and click **Knowledge Graph**.
-4. You will notice that there is already a Knowledge Graph with the name of your assistant.
+2. Go to **Virtual Assistant** > **Knowledge AI** > **FAQs**.
 
-    <img src="../images/access-existing-knowledge-graph.png" alt="access existing knowledge graph" title="access existing knowledge graph" style="border: 1px solid gray; zoom:75%;">
 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
@@ -28,7 +25,7 @@ By default, the name of the VA becomes the root node of the hierarchy and you ca
 
 To create nodes, follow the below steps:
 
-1. Open the Knowledge Graph.
+1. Go to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **Manage KG**.
 2. On the top left of the Knowledge Graph window, hover over the root node.
 3. Click the **+** icon. A text box appears below to **Add Node**. For better performance, there is a restriction of 50k FAQs spread across 20k maximum allowed number of nodes.
 4. Type the name of the node in the text box and press **Enter**. A warning would be displayed in case you enter a duplicate node name, i.e. if a child node with the same name already exists under the parent node.
@@ -60,13 +57,13 @@ The next step is to add Knowledge Graph Intents which can be either:
 
 ### Add FAQs
 
-Using this option, you can add relevant question-answer sets to the nodes in the hierarchy. Note that there is a limit  of 50k FAQs over 20k nodes to avoid performance issues. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/manage-faqs/" target="_blank">Learn more</a>.
+Using this option, you can add relevant question-answer sets to the nodes in the hierarchy. Note that there is a limit  of 50k FAQs over 20k nodes to avoid performance issues. [Learn more](manage-faqs.md).
 
 ### Run a Task
 
 To leverage the capabilities of the Knowledge Graph and dialog tasks, and handle FAQs that involve complex conversations, you must link a dialog task to a Knowledge Graph Intent 
 
-1. On the Intent window, under the **Intent** section, select **Task**.
+1. Go to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **Manage KG** > **Add Intent** select **Task**.
 2. Optionally, enter a **Display Name.** This name will be used for presenting the FAQ to the end-users in case of ambiguity.
 3. Select a task from the drop-down list. You can **Add Utterance** that triggers this task.
 4. If multiple utterances mean the same, **Add Alternate Utterance**.
@@ -77,11 +74,11 @@ To leverage the capabilities of the Knowledge Graph and dialog tasks, and handle
 
 ### Manage Traits, Synonyms, and Stop Words
 
-You can improve the performance of your Knowledge Graph by adding tags, synonyms, traits, and more. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-training/" target="_blank">Learn more</a>.
+You can improve the performance of your Knowledge Graph by adding tags, synonyms, traits, and more. [Learn more](knowledge-graph-training.md).
 
 ### Manage Variable Namespaces
 
-**Manage Variable Namespaces** section (introduced in v8.0) allows you to associate the Variable Namespaces to use with this Knowledge Graph. This option is visible only when the Variable Namespace is enabled for the VA. For more information, refer to <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/managing-namespace/" target="_blank">Managing Namespace</a>.
+**Manage Variable Namespaces** section (introduced in v8.0) allows you to associate the Variable Namespaces to use with this Knowledge Graph. This option is visible only when the Variable Namespace is enabled for the VA. For more information, refer to [Managing Namespace](../../app-settings/managing-namespace.md).
 
 <img src="../images/variable-namespaces-select.png" alt="variable namespaces select" title="variable namespaces select" style="border: 1px solid gray; zoom:75%;">
 
@@ -119,7 +116,7 @@ You can move one or more Intent and Response sets between nodes in your Knowledg
 
 1. On the nodes hierarchy from the left pane, hover over the term/node you want to edit.
 2. Click the **Settings** (gear) icon. The settings window opens.
-3. You can change the name of the term, set the term types, set the term status, add traits, add or remove synonyms, and manage context. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-training/" target="_blank">Learn more</a>. 
+3. You can change the name of the term, set the term types, set the term status, add traits, add or remove synonyms, and manage context. [Learn more](knowledge-graph-training.md). 
 
     <img src="../images/term-settings.png" alt="term settings" title="term settings" style="border: 1px solid gray; zoom:75%;">
 
@@ -173,10 +170,7 @@ The Knowledge Graph engine works well with the default settings, but you can fin
     * **The proximity of Suggested Matches** – Define the maximum difference to allow between top-scoring and immediate next suggested questions to consider as equally important. 
     * **Qualify Contextual Paths** – This ensures that the bot context is populated and retained with the terms/nodes of the matched intent. This further enhances the user experience.
 
-    <div class="admonition note">
-    <p class="admonition-title">Note</p>
-    <p> You can customize these settings in Natural Language > NLU Config > Engine Tuning.</p>
-    </div>
+  
 
 * **Traits** – Traits qualify nodes/terms even if the user utterance does not contain the term/node. Traits are also helpful in filtering the suggested intent list.
 

@@ -1,3 +1,13 @@
+<script>
+
+    var link = document.createElement("link");
+    link.setAttribute("rel", "icon");
+    link.setAttribute("href", "../images/kore_favicon.svg");
+    
+    var head = document.getElementsByTagName("head")[0];
+    head.appendChild(link);
+    
+    </script>
 <div class="kore-home-cntr">
     {% extends "main.html" %}
 
@@ -654,7 +664,7 @@
                         </div>
                     </div>
                     <div class="mdc-explore-block-action">
-                        <a href="../getting-started/about-xo-platform/">
+                        <a href="../getting-started/whats-new-in-xo-platform/">
                           <span>Get Started <svg width="21" height="21" viewBox="0 0 21 21" fill="none">
                             <path d="M4.66675 10.5948H16.3334M16.3334 10.5948L10.5001 4.76151M16.3334 10.5948L10.5001 16.4282" stroke="#6c91d5" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg></span>                            
@@ -666,7 +676,7 @@
     
              <!--Services section start-->
             <section class="mdc-services">
-                <a href="../automation/about-automation/"  class="mdc-services-block">
+                <a href="../automation/about-automation-ai/"  class="mdc-services-block">
                     <div class="mdc-services-icon">
                         <img src="assets/uxo-landing-product-va.svg" alt="Virtual Assistant" style="zoom:60%;">
                     </div>
@@ -676,7 +686,7 @@
                         <span class="mdc-services-action">Learn More</span>
                     </div>
                 </a>
-                <a href="../answers/about-answers/" class="mdc-services-block">
+                <a href="../searchai/about-search-ai/" class="mdc-services-block">
                     <div class="mdc-services-icon">
                         <img src="assets/uxo-landing-product-sa.svg " alt="Search AI" style="zoom:60%;">
                     </div>
@@ -686,17 +696,7 @@
                         <span class="mdc-services-action">Learn More</span>
                     </div>
                 </a>
-                <a href="../agentassist/about-agentassist/"  class="mdc-services-block">
-                    <div class="mdc-services-icon">
-                        <img src="assets/uxo-landing-product-ai.svg" alt="Agent AI" style="zoom:60%">
-                    </div>
-                    <div class="mdc-services-info">
-                        <h4 class="mdc-services-title">Agent AI</h4>
-                        <p class="mdc-services-des">An AI-first intelligent virtual assistant to elevate your agents' productivity and experience.</p>
-                        <span class="mdc-services-action">Learn More</span>
-                    </div>
-                </a>
-                <a  href="../contactcenter/about-contact-center/" class="mdc-services-block">
+                <a  href="../contactcenter/about-contact-center-ai/" class="mdc-services-block">
                     <div class="mdc-services-icon">
                         <img src="assets/uxo-landing-product-cc.svg" alt="Contact Center AI" style="zoom:60%;">
                     </div>
@@ -705,7 +705,17 @@
                         <p class="mdc-services-des">Deliver an Exceptional Customer Experience using our AI-Native Contact Center as a Service.</p>
                         <span class="mdc-services-action">Learn More</span>
                     </div>
-                </a>                              
+                </a>
+                <a href="../agentai/about-agent-ai/"  class="mdc-services-block">
+                    <div class="mdc-services-icon">
+                        <img src="assets/uxo-landing-product-ai.svg" alt="Agent AI" style="zoom:60%">
+                    </div>
+                    <div class="mdc-services-info">
+                        <h4 class="mdc-services-title">Agent AI</h4>
+                        <p class="mdc-services-des">An AI-first intelligent virtual assistant to elevate your agents' productivity and experience.</p>
+                        <span class="mdc-services-action">Learn More</span>
+                    </div>
+                </a>                                              
             </section>
             <!--Services section end-->
     
@@ -715,40 +725,31 @@
             <section class="mdc-whats-new">
                 <div class="mdc-whats-new-left">
                     <h2 class="mdc-heading">What's New</h2>
-                    <p class="mdc-des">Explore the most recent changes, enhancements, and bug fixes with our latest release notes. Stay up-to-date with our software's evolving features and improvements</p>
+                    <p class="mdc-des">Explore the most recent changes, enhancements, and bug fixes in our latest release:</p>
                     <div class="mdc-whats-new-block">
-                        <h4 class="mdc-whats-new-title">Enhanced Bot Creation Journey with Use Case Suggestions <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+                        <h4 class="mdc-whats-new-title">Comprehensive Suite of Products and Services <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
                             <path d="M4.16675 10.5949H15.8334M15.8334 10.5949L10.0001 4.76152M15.8334 10.5949L10.0001 16.4282" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg></h4>
                         <div class="mdc-whats-new-des">
-                            <p>Create Virtual Assistants faster with the new bot creation process that lets you generate use cases automatically.</p>
-                            <span>12th September 2023</span>
+                            <p>The unified XO Platform offers a comprehensive suite of products, features, and services to help businesses leverage conversational AI intelligence and generative AI innovations.</p>
+                            <span>10th April 2024</span>
                         </div>
                      </div>
                      <div class="mdc-whats-new-block">
-                        <h4 class="mdc-whats-new-title">Enhanced Bot Creation Journey with Use Case Suggestions <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+                        <h4 class="mdc-whats-new-title">Integrated Architecture for Omnichannel Customer Engagement <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
                             <path d="M4.16675 10.5949H15.8334M15.8334 10.5949L10.0001 4.76152M15.8334 10.5949L10.0001 16.4282" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg></h4>
                         <div class="mdc-whats-new-des">
-                            <p>Create Virtual Assistants faster with the new bot creation process that lets you generate use cases automatically.</p>
-                            <span>12th September 2023</span>
+                            <p>The various components of XO platform work together as an integrated system to support customer engagement across multiple channels.</p>
+                            <span>10th April 2024</span>
                         </div>
                      </div>
-                     <a href="https://docsinternal-kore.github.io/docs/xo/whats-new/whats-new-in-this-release/ " class="relase-note-action">View Recent Release Notes </a>
+                     <a href="../getting-started/whats-new-in-xo-platform/" class="relase-note-action">Explore What's New in the Recent Release</a>
                 </div>
-                <div class="mdc-whats-new-right">
-                    <div class="arrow-image"></div>
-                    <h4>Stay informed with our latest announcements and updates</h4>
-                    <p>We're continuously adding and improving features, simplifying workflows, and fixing bugs.</p>
-                    <div class="mdc-email-notifi">
-                        <input type="email" class="input-email"/>
-                        <button class="send-btn">Subscribe</button>
-                    </div>
-                </div>
+                
             </section>
              <!--Whats new section End-->
-    
-            <!-- <div class="mdc-spacing"></div> -->
+             <!-- <div class="mdc-spacing"></div> -->
     
             <!--Documentation help start-->
             <section class="mdc-help-wrapper">
@@ -761,7 +762,7 @@
                           <path d="M9.59 9.59485C9.8251 8.92652 10.2892 8.36296 10.9 8.00398C11.5108 7.64501 12.2289 7.51379 12.9272 7.63356C13.6255 7.75333 14.2588 8.11637 14.7151 8.65838C15.1713 9.20038 15.4211 9.88637 15.42 10.5948C15.42 12.5948 12.42 13.5948 12.42 13.5948M12.5 17.5948H12.51M22.5 12.5948C22.5 18.1177 18.0228 22.5948 12.5 22.5948C6.97715 22.5948 2.5 18.1177 2.5 12.5948C2.5 7.072 6.97715 2.59485 12.5 2.59485C18.0228 2.59485 22.5 7.072 22.5 12.5948Z" stroke="#101828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <h4 class="mdc-helpline-title">Need help</h4>
-                        <span class="mdc-helpline-action">Contact Support</span>
+                        <span class="mdc-helpline-action"><a href="https://support.kore.ai/">Contact Support</a></span>
                     </div>
                     <div class="mdc-helpline-block">
                         <svg  width="25" height="25" viewBox="0 0 25 25" fill="none">
@@ -769,14 +770,14 @@
                             <path d="M2.5 10.3948C2.5 8.71469 2.5 7.87461 2.82698 7.23288C3.1146 6.66839 3.57354 6.20945 4.13803 5.92183C4.77976 5.59485 5.61984 5.59485 7.3 5.59485H12.7C14.3802 5.59485 15.2202 5.59485 15.862 5.92183C16.4265 6.20945 16.8854 6.66839 17.173 7.23288C17.5 7.87461 17.5 8.71469 17.5 10.3948V14.7948C17.5 16.475 17.5 17.3151 17.173 17.9568C16.8854 18.5213 16.4265 18.9802 15.862 19.2679C15.2202 19.5948 14.3802 19.5948 12.7 19.5948H7.3C5.61984 19.5948 4.77976 19.5948 4.13803 19.2679C3.57354 18.9802 3.1146 18.5213 2.82698 17.9568C2.5 17.3151 2.5 16.475 2.5 14.7948V10.3948Z" stroke="#101828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg>
                         <h4 class="mdc-helpline-title">Watch our</h4>
-                        <span class="mdc-helpline-action">Developer tutorials</span>
+                        <span class="mdc-helpline-action"><a href="https://academy.kore.ai/">Developer tutorials</a></span>
                     </div>
                     <div class="mdc-helpline-block">
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
                           <path d="M9.59 9.59485C9.8251 8.92652 10.2892 8.36296 10.9 8.00398C11.5108 7.64501 12.2289 7.51379 12.9272 7.63356C13.6255 7.75333 14.2588 8.11637 14.7151 8.65838C15.1713 9.20038 15.4211 9.88637 15.42 10.5948C15.42 12.5948 12.42 13.5948 12.42 13.5948M12.5 17.5948H12.51M22.5 12.5948C22.5 18.1177 18.0228 22.5948 12.5 22.5948C6.97715 22.5948 2.5 18.1177 2.5 12.5948C2.5 7.072 6.97715 2.59485 12.5 2.59485C18.0228 2.59485 22.5 7.072 22.5 12.5948Z" stroke="#101828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <h4 class="mdc-helpline-title">Questions?</h4>
-                        <span class="mdc-helpline-action">Contact Sales</span>
+                        <span class="mdc-helpline-action"><a href="https://kore.ai/contact-us/">Contact Sales</a></span>
                     </div>
                 </div>
             </section>

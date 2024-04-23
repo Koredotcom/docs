@@ -4,14 +4,14 @@ You can use the **Prebuilt Action Templates** from your OpenAI integration to au
 
 Steps to create a dialog task using OpenAI action templates:
 
-1. Go to **Build > Conversation Skills > Dialog Tasks**.
+1. Go to **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
 2. Click **Create a Dialog Task**.  
-<img src="../images/open-ai-tem-img1.png" alt="Create a dialog task" title="Create a dialog task" style="border: 1px solid gray;zoom:50%;"/>
+
 
 2. On the Dialog Task pop-up, under the **Integration**, select the **OpenAI** option to view the action templates.  
 <img src="../images/open-ai-tem-img2.png" alt="Integration -- OpenAI" title="Integration -- OpenAI" style="border: 1px solid gray;zoom:50%;"/>  
   
-  **Note**: If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions){:target="_blank"}.  
+If you have not configured any integration for your virtual assistant, you will see the **Explore Integrations** option. Once you click this option, you will be redirected to the **Actions** page to configure an integration for your VA. For more information, see [Actions Overview](../../actions){:target="_blank"}.  
   <img src="../images/open-ai-tem-img3.png" alt="Explore Integrations" title="Explore Integrations" style="border: 1px solid gray;zoom:50%;"/>
 
 
@@ -48,7 +48,7 @@ The following OpenAI actions are supported in this release:
 
 
 
-### **Generate Answers from Context**
+### Generate Answers from Context
 
 Steps to generate answers from context task using the OpenAI integration:
 
@@ -75,8 +75,10 @@ Steps to generate answers from context task using the OpenAI integration:
         "presence_penalty": 0
         }
         ```
+        
+        !!! note
 
-        **Note**: You can enter a maximum of 1500 words with no line breaks, single or double quotes in the content.
+            You can enter a maximum of 1500 words with no line breaks, single or double quotes in the content.
 
         To add one or more responses, scroll down and click the **+Add Response** button:  
         <img src="../images/open-ai-tem-img6.png" alt="Add response" title="Add response" style="border: 1px solid gray;zoom:50%;"/>
@@ -119,7 +121,7 @@ Steps to generate answers from context task using the OpenAI integration:
 7. You will notice an answer is generated from the context for your question.
 
 
-### **Extract Skills from Resume**
+### Extract Skills from Resume
 
 Steps to extract skills from the resume using OpenAI integration:
 
@@ -144,7 +146,9 @@ Steps to extract skills from the resume using OpenAI integration:
         }
         ```
 
-        **Note**: You can enter a maximum of 1500 words with no line breaks, single or double quotes in the content.
+        !!! note
+
+            You can enter a maximum of 1500 words with no line breaks, single or double quotes in the content.
 
         To add one or more responses, scroll down and click the **+Add Response** button:  
         <img src="../images/open-ai-tem-img11.png" alt="Add response" title="Add response" style="border: 1px solid gray;zoom:50%;"/>
