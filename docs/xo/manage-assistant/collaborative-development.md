@@ -1,45 +1,37 @@
 
 # Collaborative Development
 
-Kore.ai allows cross-domain Bot sharing. You can share your Bot with one or more developers from the same or different enterprises enabling them to edit the shared Bot tasks, channels, and other settings.
+Kore.ai allows cross-domain App sharing. You can share your app with one or more developers from the same or different enterprises enabling them to edit the shared app tasks, channels, and other settings.
 
 		
-
-	
-
-
 ## Sharing Bots
 
-There are two ways of sharing a Bot with your co-developers – from Bot Builder or from Bot Admin Console (as Account Admin).
+There are two ways of sharing an app with your co-developers – from Builder or from Admin Console (as Account Admin).
 
 
-### From the Bot Builder
+### From the Builder
 
+1. To share the app with another Developer, log on to the **platform** and select the app you want to share.
+2. Select **Manage > Users** through the **Product Switcher**.
 
+    <img src="../images/manage-users.png" alt="Navigate to User Management" title="Navigate to User Management" style="border:1px solid gray;zoom:60%;">
 
-1. To share the bot with another Bot Developer, log on to the **Bot Builder** and select the Bot you want to share.
-2. Select the **Manage** tab from the top menu.
-3. From the left menu click **Team**. Developers who have access to any of the ‘Bot Admin’ permissions, can invite new developers. 
+3. From the left menu click **Manage Users**. Developers who have access to any of the ‘App Admin’ permissions, can invite new developers. The App Owner's details are present on this page by default.
 
+    <img src="../images/manage-users.png" alt="Navigate to User Management" title="Navigate to User Management" style="border:1px solid gray;zoom:60%;">
 
-    ![alt_text](images/image3.png "image_tooltip")
+4. Click the **Invite Users** button on the right side of the page. Enter the details of the developer, the role and click **+ Add**. You can add more than one developer at a time. 
 
-4. Click the **Invite** button on the right side of the page. Enter the name of the developer, the list of developers will drop down and you can select from the list. You can add more than one developer at a time.
-5. Select the groups to which you want to assign the developer and select the  Role.
+    <img src="../images/add-users.png" alt="Add Users" title="Add Users" style="border:1px solid gray;zoom:60%;">
 
+    You can assign Group and Role to the user on the **User Attributes** popup. This can be accessed by clicking the <img src="../images/user-attrib-button.png"> icon corresponding to each user. **Note** that you need to select a role to be able to access user attributes.
 
+    <img src="../images/user-attributes.png" alt="User Attributes" title="User Attributes" style="border:1px solid gray;zoom:60%;">
 
+5. Confirm by selecting **Share Invites** to add and share your app with one or more developers.
+6. You can also use the **Invite User** option from the Dashboard to add a user to your account. 
 
-
-    ![alt_text](images/image2.png "image_tooltip")
-
-6. Confirm by selecting **Invite** to add and share your bot with one or more developers.
-7. You can also use the **Invite Members** option from the Dashboard to add a user to your account. 
-
-
-
-
-    ![alt_text](images/image1.png "image_tooltip")
+    <img src="../images/invite-user.png" alt="Invite user to account" title="Invite user to account" style="border:1px solid gray;zoom:60%;">
  
 To add users to workspace and invite them to access your virtual assistant from the Bot Builder, read the[ Invite Members](https://developer.kore.ai/docs/bots/chatbot-overview/how-to-access-bot-builder/#Invite_Members) section in the Using Workspace article.
 
