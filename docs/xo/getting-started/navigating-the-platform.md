@@ -51,7 +51,7 @@ All the actions available within the Kore.ai XO Platform for a product can be ac
 
     <img src="../images/ntp(20).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
 
-2. **App dropdown list** Lets you switch between the various versions of the current virtual assistant; You can also search and switch to any virtual assistant within your account.
+2. **App dropdown list** Lets you switch between the various versions of the current virtual assistant. You can also search and switch to any virtual assistant within your account.
 3. **Status Docker** icon.
 4. **Language** icon to switch the App's language.
 5. **Search** for a feature or menu item.
