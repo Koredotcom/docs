@@ -51,10 +51,10 @@ All the actions available within the Kore.ai XO Platform for a product can be ac
 
     <img src="../images/ntp(20).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
 
-2. **App dropdown list** Lets you switch between the various versions of the current virtual assistant; You can also search and switch to any virtual assistant within your account;
-3. **Status Docker** icon;
-4. **Language** icon to switch the App's language;
-5. **Search** for a feature or menu item;
+2. **App dropdown list** Lets you switch between the various versions of the current virtual assistant; You can also search and switch to any virtual assistant within your account.
+3. **Status Docker** icon.
+4. **Language** icon to switch the App's language.
+5. **Search** for a feature or menu item.
 6. **Help** area, where you can access a comprehensive support section that will help you get started. There are links to learning tools and resources, as well as contextual help, which shows you valuable links and content, depending on where you are within the Platform.
 7. **Switch Accounts** If you are part of more than one account, then you can switch between them here.
 8. **Profile picture** to access your profile.
@@ -63,7 +63,7 @@ All the actions available within the Kore.ai XO Platform for a product can be ac
 ### The Left Navigation Menu
 
 The Left Navigation Menu shows options, depending on the product and features you select. The top menu has the Product Specific features and the bottom menu has the Related Products features.
-Product specific features and common features applicable to each products are shown below:
+Product specific features and Common features applicable to each products are shown below:
 
 
 <img src="../images/ntp(21).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
