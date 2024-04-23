@@ -80,7 +80,7 @@ You can click the required model from the model listing as shown in the precedin
 
 !!! note
 
-    Click the three dots icon corresponding to the **Model name** under the Open-source models tab on the Models page. A pop-up with a list of options is displayed. If you choose the API endpoint option, it will navigate you to the API keys section of the Model and if you select the Configurations option, it will take you to the Configurations section of the Model.
+    Click the three dots icon corresponding to the **Model name** under the **Open-source models** tab on the Models page. A pop-up with a list of options is displayed. If you choose the API endpoint option, it will navigate you to the API keys section of the Model and if you select the Configurations option, it will take you to the Configurations section of the Model.
 
 <img src="../images/three-dots-options-for-model.png" alt="Three Dots Options for Model" title="Three Dots Options for Model" style="border: 1px solid gray; zoom:80%;">
 

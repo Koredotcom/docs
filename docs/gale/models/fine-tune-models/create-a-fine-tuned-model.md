@@ -16,14 +16,14 @@ Let us now look into each step in detail.
 
 1. Click **Models** on the top navigation bar of the application. The **Models** page is displayed.
 
-    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-fine-tune-model.png" alt="Create Fine-Tune Model" title="Create Fine-Tune Model" style="border: 1px solid gray; zoom:80%;">
 
 1. Click the **Create a fine-tuned model** button on the **Models** page. The **Create a fine-tuned model** dialog is displayed.
 2. In the **General details** section:
 
     * Enter a **Name** and **Description** for your fine-tuned model.
 
-        <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/general-details-section.png" alt="General Details Section" title="General Details Section" style="border: 1px solid gray; zoom:80%;">
 
     * Provide tags to ease the search for the model and click **Next**.
 
@@ -35,13 +35,16 @@ Let us now look into each step in detail.
 
     * Select Hugging Face connection. For more information about how to connect to Hugging Face account, see [How to Connect to your Hugging Face Account](../../integrations/how-to-to-connect-to-your-hugging-face-account.md).
 
+
+    <img src="../images/general-details-section.png" alt="Base Model Section" title="Base Model Section" style="border: 1px solid gray; zoom:80%;">
+
 1. In the **Fine-Tuning configuration** section:
 
     * Select a **Fine-tuning type** that you want to fine-tune for your requirements.
 
     * Enter the **Number of Epochs** which implies the number of times the entire data set is passed through the model during the training process.
 
-        <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/fine-tuning-configuration-section.png" alt="Fine-Tuning Configuration Section" title="Fine-Tuning Configuration Section" style="border: 1px solid gray; zoom:80%;">
 
     * Enter a number for **Batch size** which implies the number of training examples used in one iteration of training.
 
@@ -60,7 +63,7 @@ Let us now look into each step in detail.
     
     * Define the data for evaluation. You can use the same training data set in the evaluation process as well. In this step, you can either allocate a percentage of the training dataset to use for evaluation, or upload a new evaluation dataset, or skip the evaluation.
 
-        <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/dataset-section.png" alt="Dataset Section" title="Dataset Section" style="border: 1px solid gray; zoom:80%;">
 
 
     * Click **Next** to proceed to the next step.
@@ -71,10 +74,10 @@ Let us now look into each step in detail.
 
     !!! note
 
-        The format accepted is JSONL, CSV, or JSON.
+        The format accepted is JSONL, CSV, or JSON. 
 
     
-    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/test-data-section.png" alt=" Test Data Section" title="Test Data Section" style="border: 1px solid gray; zoom:80%;">
 
     * Click **Next** to proceed to the next step.
 
@@ -85,17 +88,18 @@ Let us now look into each step in detail.
     In the **Hardware** section:
 
     * Select the hardware required for fine-tuning your model.
+
+        <img src="../images/hardware-section.png" alt="Hardware Section" title="Hardware Section" style="border: 1px solid gray; zoom:80%;">
     
 1. In the **Weights & Biases** section:
 
-    * Select your **WandB connection** from the drop-down list. If you don't have an WandB connection, you can click the **+ New connection** that is available in the drop-down list. For more information about how to create the WandB account, see [How-to-Integrate-with-WandB](../../integrations/how-to-integrate-with-wandb.md).
+    * Select your **WandB connection** from the drop-down list. If you don't have a WandB connection, you can click the **+ New connection** that is available in the drop-down list. For more information about how to create the WandB account, see [How-to-Integrate-with-WandB](../../integrations/how-to-integrate-with-wandb.md).
 
-    !!! note
+        !!! note
 
-        You need an account with Weights and Biases. Enabling the integration with the help of an API token will share your real-time fine-tuning status with the platform and you can comprehensively monitor the fine-tuning metrics of your model. You can use the API token they provided to create an integration and then all the data related to the fine-tuning process will be sent to the account related to that API token.
+            You need an account with Weights and Biases. Enabling the integration with the help of an API token will share your real-time fine-tuning status with the platform and you can comprehensively monitor the fine-tuning metrics of your model. You can use the API token they provided to create an integration and then all the data related to the fine-tuning process will be sent to the account related to that API token.
 
-    
-    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/wandb-section.png" alt="WandB Section" title="WandB Section" style="border: 1px solid gray; zoom:80%;">
 
     * Click **Next** to proceed to the next step.
 
@@ -106,11 +110,11 @@ Let us now look into each step in detail.
         If you want to make any modifications, you can go to the previous step by clicking the **Back** button or a particular step indicator on the left panel.
 
    
-    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/review-section.png" alt="Review Section" title="Review Section" style="border: 1px solid gray; zoom:80%;">
 
 1. Click **Start fine-tuning**. The **Overview** page of your fine-tuned model is displayed with the status “Initializing”.
 
-    <img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/initializing-status.png" alt="Initializing Status" title="Initializing Status" style="border: 1px solid gray; zoom:80%;">
 
     The different statuses that are involved in the process include:
 
@@ -130,9 +134,7 @@ Let us now look into each step in detail.
 
         You can stop the process if required in the middle and resume it later, then the status is changed to “Stopped”. Then a Re-trigger button is displayed to initiate the fine-tuning process again from the beginning. If the fine-tuning process fails, then the status is changed to “Failed” and you can view the reason for failure. You can make the required changes, and click the Re-trigger button to start the fine-tuning again.
 
-
     Once the fine-tuning is triggered, you can check the progress in real-time on the **Overview** page. You can click any model name from the list of fine-tuned models and the Overview page of the model is displayed.
-
 
     This page displays the following sections:
 
@@ -154,7 +156,7 @@ You can also download the training file for your reference from this page. You a
     If you want to perform the testing again, you can click the Retry option corresponding to the Test info section on the Overview page and select a new test data set file or use the existing file and confirm to start the testing again. The status then is displayed as “Testing in Progress”.
 
 
-<img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/overview-page.png" alt="Overview Page" title="Overview Page" style="border: 1px solid gray; zoom:80%;">
 
 
 After the model is fine-tuned, you can deploy the fine-tuned model and use it across GALE and also externally via the API endpoint that is generated after deploying the model.
