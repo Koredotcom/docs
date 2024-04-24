@@ -233,17 +233,10 @@ Users can add comments and feedback directly within the dialogue builder. Enhanc
 
 Bookmarks allow users to organize and reference important information. Users can bookmark frequently visited or crucial content in the canvas with relevant information. Bookmarks help users navigate to content without having to search or browse extensively.
 
-<img src="../getting-started/images/xo-platform-AutomationAI-Bookmark.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:70%;">
-
+<img src="../images/xo-platform-AutomationAI-Bookmark.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:70%;">
 
 #### Notes
 
 Add notes to highlight key points or summarize information. Notes can also be used for communication and feedback.
 
 <img src="../images/xo-platform-AutomationAI-note.png" alt="Notes" title="Notes" style="border: 1px solid gray; zoom:70%;">
-
-
-
-
-
- 
