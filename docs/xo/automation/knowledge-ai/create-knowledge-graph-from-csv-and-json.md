@@ -1,6 +1,6 @@
 # Creating a Knowledge Graph from CSV or JSON Files
 
-The XO Platform gives you the option to create a Knowledge Graph in a spreadsheet or JSON and then  import it into the VA instead of creating the Knowledge Graph from scratch. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/import-and-export-knowledge-graph/" target="_blank">Learn more</a>.
+The XO Platform gives you the option to create a Knowledge Graph in a spreadsheet or JSON and then  import it into the VA instead of creating the Knowledge Graph from scratch. [Learn more](import-and-export-knowledge-graph.md).
 
 The process to create a Knowledge Graph using an editor is summarized below:
 
@@ -16,8 +16,8 @@ Follow the instructions below to build your Knowledge Graph in a spreadsheet.
 
 ### Download the Sample File
 
-1. Select the VA to work with and go to **Build**.
-2. On the left pane, click **Conversation Skills**> **Knowledge Graph**.
+1. Select the VA to work with and go to **Virtual Assistant** > **Knowledge AI** > **FAQs**.
+2. In the top right corner, click **more** icon (three dots).
 3. You can find the **Import** option on the respective Knowledge Graph.
 4. You are prompted to **back up** the Knowledge Graph before proceeding. Choose the CSV or JSON format for the backup.
 5. After backup, click **Proceed**.
@@ -136,8 +136,8 @@ Follow the instructions below to build your Knowledge Graph using JSON:
 
 ### Download the Sample File
 
-1. On the left pane, click **Conversational Skills** > **Knowledge Graph**.
-2. You can find the **Import** option on the respective Knowledge Graph.
+1. Select the VA to work with and go to **Virtual Assistant** > **Knowledge AI** > **FAQs**.
+2. In the top right corner, click **more** icon (three dots).
 3. You are prompted to **back up** the Knowledge Graph before proceeding. Choose the CSV or JSON format for the backup.
 4. After backup, click **Proceed**.
 5. On the corresponding dialog box, click **Sample JSON**. The JSON file is downloaded to your local computer.
@@ -232,7 +232,7 @@ Follow the instructions below to build your Knowledge Graph using JSON:
 </table>
 
 
-For a Taxonomy Based KG, the following fields can be included if there are one or more faqs linked to another faq in the KG. :
+For a Taxonomy Based KG, the following fields can be included if there are one or more faqs linked to another faq in the KG:
 
 * **faqLinkedTo**: To identify the source faq.
 * **faqLinkedBy**: To identify the linked faqs.

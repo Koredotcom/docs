@@ -14,7 +14,11 @@ For example, _intent_ is a context variable that defines the customer’s intent
 context.intent.<< intent name >>
 ```
 
-Context variables are managed via the Kore.ai XO Platform. [Learn more](https://docsinternal-kore.github.io/docs/xo/automation/intelligence/context-object/?h=context+object).
+Context variables are managed via the Kore.ai XO Platform. [Learn more](../../automation/intelligence/context-object.md).
+
+!!! Note
+
+    The split node is designed to support a maximum of 10 branches.
 
 ## Configure the Node
 
@@ -31,9 +35,9 @@ Click the **General Settings** icon and set up the following conditions:
 4. Click **_Add ELSE-IF_** to add another set of criteria to be met if the previous ones are not.
 5. Under the second **Action** dropdown, select the branch name corresponding to the **_ELSE_** condition. The flow will route to this branch if the _IF/ELSE_-IF criteria are not met.
 
-!!!Note
+    !!!Note
 
-    The condition setup in Contact Center AI is similar to that of the Automation AI process. [Learn more](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-connections/nodes-conditions/).
+        The condition setup in Contact Center AI is similar to that of the Automation AI process. [Learn more](../../automation/use-cases/dialogs/node-connections/nodes-conditions.md).
 
 You can delete a condition by clicking on the **Delete** (bin) icon next to it.
 <img src="./../images/delete-branch.png" alt="Delete Branch" title="Delete Branch" style="border: 1px solid gray; zoom:70%;">

@@ -7,6 +7,7 @@ repo_url: https://github.com/Koredotcom/docs
 extra_css:
     - stylesheets/extra_kore.css
 theme:
+  favicon: images/kore_favicon.svg
   name: material
   custom_dir: overrides
   features:
@@ -111,16 +112,17 @@ copyright: |
 nav:
   - Home : home.md
   - Platform:
-    - What's New in XO 11: getting-started/whats-new-in-xo-platform.md
+    - Overview: getting-started/xo-platform-overview.md    
     - Getting Started:
-      - Accessing the Platform: getting-started/accessing-the-platform.md          
+      - Accessing the Platform: getting-started/accessing-the-platform.md   
+      - Navigating the Platform: getting-started/navigating-the-platform.md       
       - Flows and Channels:
         - Flows: 
           - Introduction: flows/introduction-to-flows.md
           - Create Flows: flows/create-flows.md
           - Navigate the Flow Designer: flows/navigate-the-flow-designer.md
           - Node Types:
-            - Introduction to Flow Nodes: flows/flow-types/introduction-to-flow-nodes.md
+            - Introduction to Flow Nodes: flows/node-types/introduction-to-flow-nodes.md
             - Agent Transfer: flows/node-types/agent-transfer.md
             - Automation: flows/node-types/automation.md
             - Check Agent Availability: flows/node-types/check-agent-availability.md
@@ -138,7 +140,7 @@ nav:
           - Digital:
             - Enable Channels: channels/adding-channels-to-your-bot.md
           - Voice:
-            - Kore.ai Voice Gateway: channels/amazon-alexa.md
+            - Kore.ai Voice Gateway: channels/kore.ai-voice-gateway/kore-voice-gateway.md
             - Third-Party Voice:
               - Amazon Alexa: channels/amazon-alexa.md
               - Twilio Voice: channels/add-twilio-voice-channel.md
@@ -146,6 +148,8 @@ nav:
               - IVR: channels/IVR-integration.md            
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
+    - Release Notes:
+      - What's New in XO 11: getting-started/whats-new-in-xo-platform.md  
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:
@@ -179,7 +183,9 @@ nav:
         - Entity Types: automation/use-cases/dialogs/entity-types.md
         - Entity Rules: automation/use-cases/dialogs/entity-rules.md
         - User Prompts or Messages: automation/use-cases/dialogs/prompt-editor.md
-        - Voice Call Properties: automation/use-cases/dialogs/voice-call-properties.md  
+        - Voice Call Properties: automation/use-cases/dialogs/node-types/voice-call-properties.md 
+        - Custom Authentication via Service Nodes: automation/use-cases/dialogs/implementing-custom-authentication.md
+        - 2-way SSL for Service Nodes: automation/use-cases/dialogs/enabling-2-way-ssl-for-service-nodes.md       
       - Alert Tasks: automation/use-cases/alert-tasks.md
       - Small Talk: automation/use-cases/small-talk.md
       - Digital Skills: 
@@ -238,16 +244,16 @@ nav:
         - Ignore Words and Field Memory: automation/intelligence/conversation-management/ignore-words-and-field-memory.md
     - Testing:
       - Overview: automation/testing/test-and-debug-overview.md
-      - Talk to Bot: automation/testing/talk-to-bot.md
+      - Test (Talk to Bot): automation/testing/talk-to-bot.md
       - Utterance Testing: automation/testing/testing-your-bot-with-nlp.md 
       - Regression Testing: 
         - Health and Monitoring: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
-        - Batch Testing: getting-started.md
-        - Conversation Testing: getting-started.md
+        - Batch Testing: automation/testing/regression-testing/batch-testing.md
+        - Conversation Testing: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md
     - Advanced Topics:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
-        - Team Collaboration: manage-assistant/
+        - Team Collaboration: manage-assistant/collaborative-development.md
         - Authorization: manage-assistant/bot-authorization-overview.md
         - Conversation Sessions: manage-assistant/conversation-sessions.md
         - Multilingual Virtual Assistants:
@@ -266,8 +272,9 @@ nav:
         - Manage Namespace: manage-assistant/managing-namespace.md               
   - Search AI:
     - Overview: searchai/about-search-ai.md
-    - Getting Started: searchai/introduction-to-answers.md
-    - Setup Search AI: searchai/setup-search-ai.md
+    - Getting Started:
+      - About Answers in Search AI: searchai/introduction-to-answers.md
+      - Setup Search AI: searchai/setup-search-ai.md
     - Content:
         - Sources:
             - Overview: searchai/content-sources/introduction.md
@@ -316,7 +323,9 @@ nav:
     - Campaigns:  
       - Overview: contactcenter/campaigns/about-campaigns.md
       - Dashboard: contactcenter/campaigns/dashboard/campaign-dashboard.md
-      - Campaign Management: contactcenter/campaigns/campaign-management/campaigns.md
+      - Campaign Management:
+        - Voice Campaigns: contactcenter/campaigns/campaign-management/voice-campaigns.md
+        - Proactive Web Campaigns: contactcenter/campaigns/campaign-management/proactive-web-campaigns.md
       - List Management: contactcenter/campaigns/list-management/list-management.md
       - Settings: contactcenter/campaigns/settings/global-settings.md
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md

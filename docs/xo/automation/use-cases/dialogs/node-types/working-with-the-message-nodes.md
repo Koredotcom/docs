@@ -73,8 +73,6 @@ To generate a report link, follow these steps:
     
     <img src="../images/message-node-img2-generate-report.png" alt="Message node - Generate report" title="Message node - Generate report" style="border:1px solid gray;zoom=70%;">
  
-    This image shows the new dialog builder, you will find this feature in legacy builder at the same location i.e. **Message node - Component Properties**.
-
 2. On the Generate Report dialog box, enter the following values:
     1. **Link Title** – The link text displayed in the bot channel. For example, _View Shopping Cart_.
     2. **Header** – The title of the report. For example, _These are the items in your Shopping Cart_.

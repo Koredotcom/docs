@@ -99,6 +99,9 @@ The Widgets thus created need to be attached to a Panel for runtime display and 
     <img src="../../images/add-panel-name.png" alt="add panel name" title="add panel name" style="border: 1px solid gray; zoom:75%;">
 
 3. Click the **Add Widget** button to open the **Panel Management** window.
+
+    <img src="../../images/panel-management.png" alt="Panel Management - Add Widget" title="Panel Management - Add Widget" style="border: 1px solid gray; zoom:75%;">
+
 4. Use the **Add Widget** to select and add the Widgets that we want to display, in this case Account Balance and Current Account widgets.
 
     <img src="../../images/add-widget-to-panel.png" alt="add widget to panel" title="add widget to panel" style="border: 1px solid gray; zoom:75%;">

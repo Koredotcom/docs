@@ -1,8 +1,8 @@
 # Dashboard
 
-The campaign dashboard allows contact center supervisors to track the progress and other essential metrics related to campaigns.
+The campaign dashboard allows campaign managers to track the progress and other essential metrics related to campaigns.
 
-To access dashboards, go to **Contact Center AI** > **Campaigns** > **PROACTIVE OUTREACH** > **Dashboard**.
+To access dashboards, go to **Contact Center AI** > **Campaigns** > **Dashboard**.
 <img src="../images/dashboard-main-page.png" alt="Dashboard Page" title="Dashboard Page" style="border: 1px solid gray; zoom:80%;">
 
 The following details related to campaigns are displayed on the dashboard:
@@ -14,23 +14,22 @@ The following details related to campaigns are displayed on the dashboard:
 5. **Campaign Start Date and Time** - Date and Time when the campaign started. For example: Started on Sep 29th, 2023 11:03 am
 <img src="../images/campaign-details-dashboard.png" alt="Campaign Details" title="Campaign Details" style="border: 1px solid gray; zoom:80%;">
 
-Clicking any campaign displays detailed information related to the selected campaign.
-<img src="../images/campaign-dashboard-detailed.png" alt="Campaign Metrics" title="Campaign Metrics" style="border: 1px solid gray; zoom:80%;">
+    Clicking any campaign displays detailed information related to the selected campaign.
+    <img src="../images/campaign-dashboard-detailed.png" alt="Campaign Metrics" title="Campaign Metrics" style="border: 1px solid gray; zoom:80%;">
 
 ## Agentless Dialer
-<img src="../images/dashboard-agentless-dialer.png" alt="Waiting Flows Page" title="Waiting Flows Page" style="border: 1px solid gray; zoom:80%;">
 
 ### Overview
 
 This section displays the following information:
 
-**Progress** - Progress of the campaign.
+* **Progress** - Progress of the campaign.
 
-**Connected Calls** - Count and percentage of connected calls.
+* **Connected Calls** - Count and percentage of connected calls.
 
-**Unconnected Calls** - Count and percentage of unconnected calls, including calls that go into the retry state.
+* **Unconnected Calls** - Count and percentage of unconnected calls, including calls that go into the retry state.
 
-**Avg. Call Duration** - Average Duration of all the connected calls in the campaign.
+* **Avg. Call Duration** - Average Duration of all the connected calls in the campaign.
 
 ### Disposition
 
@@ -45,3 +44,7 @@ This section displays the following information:
 * **Canceled**: If the call was canceled by the customer.
 * **Completed**: If the call is answered, then disconnected by the agent, and a disposition is included.
 * **Agent Disposition (Top 5)**- Top 5 dispositions selected by agents.
+
+Related Link
+
+* [Dialer Campaign History Report](../../../analytics/contact-center/reports/dialer-campaign-history-report.md)
