@@ -1,7 +1,7 @@
 ---
 hide:
   - feedback
-  - toc
+  
 ---
 # What's New in XO 11
 Learn about the new features and enhancements included in v11 of Kore.ai Experience Optimization Platform.
@@ -125,26 +125,22 @@ Various components and their interactions within the XO platform:
 * **Analytics** gathers data to provide insights into user interactions and system performance.
 * **App Management** supports the entire platform with functionalities for publishing, importing/exporting apps, user management, collaboration, billing, etc.
 
-### Key Changes to Navigation
+## Key Navigation Changes
 
 **Ease of Access to All Products and Services**
 
 * A new guided onboarding journey helps you create your first app in record time. To start the journey, click **Create New** on the home page. 
-
-    <img src="../images/xo-platform-homepage.png" alt="xo-platform-homepage" title="xo-platform-homepage" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/xo-platform-homepage.png" alt="New Unified XO Platform Homepage" title="New unified XO Platform Homepage">
 
 * Follow the guided steps to create the app. 
 
-    <img src="../images/xo-platform-Onboarding-experience.png" alt="Onboarding Experience" title="Onboarding Experience" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/xo-platform-Onboarding-experience.png" alt="Onboarding Experience" title="Onboarding Experience">
 
 * Easy access to the Setup Guide allows you to quickly change anything inside your app later.
-
-     <img src="../images/xo-platform-setupguide.png" alt="Setup Guide" title="Setup Guide" style="border: 1px solid gray; zoom:70%;">
+     <img src="../images/xo-platform-setupguide.png" alt="Setup Guide" title="Setup Guide">
 
 * Quickly switch to your favorite product using the **Product Switcher**.  
-    
-
-     <img src="../images/xo-platform-productswitcher.png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:70%;">
+     <img src="../images/xo-platform-productswitcher.png" alt="Product Switcher" title="Product Switcher">
 
 ## Key Differences Between XO11 and XO10
 
@@ -158,7 +154,7 @@ Earlier, incoming conversations were handled by events such as OnConnect/Welcome
 
 XO11 has an all-new super intuitive dialog builder. 
 
- <img src="../images/xo-platform-Dialogbuilder.png" alt="Dialog builder" title="Dialog builder" style="border: 1px solid gray; zoom:70%;">
+ <img src="../images/xo-platform-Dialog Builder.png" alt="Dialog builder" title="Dialog Builder">
 
 ### Talk to Bot Moved to Header
 
@@ -184,45 +180,43 @@ All the configurations applicable across the app have been moved to a separate m
 
 All the LLM integrations can be managed in one place in an app and used across the products on the Platform. For example, Agent Response Rephrasing applies to both Contact Center AI and Agent AI.
 
-<img src="../images/xo-platform-LLM&generativeAI.png" alt="LLM & GenerativeAI" title="LLM & GenerativeAI" style="border: 1px solid gray; zoom:70%;">
+ <img src="../images/xo-platform-LLM&generativeAI.png" alt="LLM & GenerativeAI" title="LLM & GenerativeAI">
 
 ### Global User Management
 
 User Management is now applicable across the modules. You can set permissions, manage agent-related Permissions, Create a new Role, and Assign a role to a new or existing user. You can also assign a role to User groups (but the creation of User Groups is still in the Admin Console Page).
 
-<img src="../images/xo-platform-manageuser.png" alt="User Management" title="User Management" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/xo-platform-manageuser.png" alt="User Management" title="User Management">
 
 ### App Level Publishing and Version Management
 
 Be it Publishing Dialogs or Flows, everything is now done in one place. The Platform supports all variants of publishing (partial, full), version control, and Import and export in one centralized place.
 
-<img src="../images/xo-platform-deploy.png" alt="Deploy" title="Deploy" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/xo-platform-deploy.png" alt="Deploy" title="Deploy">
 
 ### Reorganized Analytics
 
 The Analytics module is logically regrouped to address various audience needs. A session starts from Channel through Flows, can go to Automation AI (Virtual Assistant), and then transfer to Agent. The module offers unified analytics across all conversations.
 
-<img src="../images/xo-platform-analytics.png" alt="Analytics" title="Analytics" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/xo-platform-analytics.png" alt="Analytics" title="Analytics">
 
-### Introducing Fallback Behaviour
+### Fallback Behaviour
 
 We have a new setting where users can configure where every user utterance should go first:  Automation AI (Virtual Assistant) or Search AI (Answers) to get the response. 
 
 <img src="../images/xo-platform-fallback-behaviour.png" alt="Fallback Behaviour" title="Fallback Behaviour">
 
-<img src="../images/xo-platform-fallback-behaviour.png" alt="Fallback Behaviour" title="Fallback Behaviour" style="border: 1px solid gray; zoom:70%;">
-
-### Introducing New Marketplace
+### New Marketplace
 
 The New Marketplace is available inside the App (previously, it was on the bot's homepage). It allows users to search for prebuilt templates and filter them by integration type, provider, domain, etc.
 
-<img src="../images/xo-platform-marketplace.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/xo-platform-marketplace.png" alt="Marketplace" title="Marketplace">
   
 ### New Billing Page
 
 The billing definition has been changed to accommodate the various price offerings we are providing in UXO. The Billing Session definition for Automation is 15 minutes of Interaction, and for Contact Center, it's 15 minutes of ideal time. The Platform offers various plans, and users can choose the plan for each product individually. Note that if users want to be Enterprise customers, then they have to choose enterprise plans for all the products.
 
-<img src="../images/xo-platform-billingpage.png" alt="Billing Page" title="Billing Page" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/xo-platform-billingpage.png" alt="Billing Page" title="Billing Page">
 
 ### Other Changes
 

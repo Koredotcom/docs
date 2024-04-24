@@ -251,7 +251,7 @@ nav:
     - Advanced Topics:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
-        - Team Collaboration: manage-assistant/
+        - Team Collaboration: manage-assistant/collaborative-development.md
         - Authorization: manage-assistant/bot-authorization-overview.md
         - Conversation Sessions: manage-assistant/conversation-sessions.md
         - Multilingual Virtual Assistants:

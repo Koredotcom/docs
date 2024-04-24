@@ -90,7 +90,9 @@ To create a campaign when Agentless Dialing Mode is selected:
 
     !!! Note
 
-        You can toggle on Answering Machine Detection if you want the system to determine whether the outbound call was received by an answering machine.
+        * You can toggle on Answering Machine Detection if you want the system to determine whether the outbound call was received by an answering machine.
+
+        * Using the agentless dialer, you can configure the [Automation Node](../../../flows/node-types/automation.md) making this dialer a differentiator from our competitors. 
 
 ### Edit a Voice Campaign
 
