@@ -140,19 +140,18 @@ Various components and their interactions within the XO platform:
 
 ## Key Differences Between XO11 and XO10
 
-=== "Welcome Events Replaced with Welcome Flows"
+<details>
+    <summary>Welcome Events Replaced with Welcome Flows</summary>
+    <p>Earlier, incoming conversations were handled by events such as OnConnect/Welcome events. These events are now replaced with Flows. Flows are designed to replace the Welcome or OnConnect Message, Trigger a Dialog Task, or Run a Script.  
+   <img src="../images/
+    xo-platform-welcomeflow.png" alt="Welcome flow" title="Welcome flow" style="border: 1px solid gray; zoom:70%;"></p>
+    </details>
 
-    Earlier, incoming conversations were handled by events such as OnConnect/Welcome events. These events are now replaced with Flows. Flows are designed to replace the Welcome or OnConnect Message, Trigger a Dialog Task, or Run a Script.  
-
-    <img src="../images/
-    xo-platform-welcomeflow.png" alt="Welcome flow" title="Welcome flow" style="border: 1px solid gray; zoom:70%;"
-
-
-=== "Dialog Builder Upgrade"
-
-    XO11 has an all-new super intuitive dialog builder.  
-<img src="../images/xo-platform-Dialogbuilder.png" alt="Dialog Builder" title="Dialog Builder" style="border: 1px solid gray; zoom:70%;">
-
+<details>
+    <summary>Dialog Builder Upgrade</summary>
+    <p>XO11 has an all-new super intuitive dialog builder.  
+    <img src="../images/xo-platform-Dialogbuilder.png" alt="Dialog Builder" title="Dialog Builder" style="border: 1px solid gray; zoom:70%;"></p>
+    </details>
 
 ### Talk to Bot Moved to Header
 
@@ -168,18 +167,18 @@ You can now use Gen AI to create a dialog from scratch. You can also install pre
 
 ### Bot Configurations Moved to App Settings
 
-All the configurations applicable across the app have been moved to a separate menu item - App Settings.  |
+All the configurations applicable across the app have been moved to a separate menu item - App Settings.
 <img src="../images/xo-platform-appsetting.png" alt="App Setting" title="App Setting" style="border: 1px solid gray; zoom:70%;">
 
 ### Shared LLM & Generative Settings for All Products
 
 All the LLM integrations can be managed in one place in an app and used across the products on the Platform. For example, Agent Response Rephrasing applies to both Contact Center AI and Agent AI.  
-<img src="../getting-started/images/xo-platform-LLM&generativeAI.png" alt="LLM & GenerativeAI" title="LLM & GenerativeAI" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/xo-platform-LLM&generativeAI.png" alt="LLM & GenerativeAI" title="LLM & GenerativeAI" style="border: 1px solid gray; zoom:70%;">
 
 ### Global User Management
 
 User Management is now applicable across the modules. You can set permissions, manage agent-related Permissions, Create a new Role, and Assign a role to a new or existing user. You can also assign a role to User groups (but the creation of User Groups is still in the Admin Console Page).  
-<img src="../getting-started/images/xo-platform-manageuser.png" alt="User Management" title="User Management" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/xo-platform-manageuser.png" alt="User Management" title="User Management" style="border: 1px solid gray; zoom:70%;">
 
 ### App Level Publishing and Version Management
 
