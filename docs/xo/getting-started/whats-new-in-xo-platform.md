@@ -129,23 +129,14 @@ Various components and their interactions within the XO platform:
 
 **Ease of Access to All Products and Services**
 
-* A new guided onboarding journey helps you create your first app in record time. To start the journey, click **Create New** on the home page. 
+* A new guided onboarding journey helps you create your first app in record time. To start the journey, click **Create New** on the home page and follow the guided steps to create the app.
+<img src="../images/xo-platform-homepage.png" alt="New unified XO Platform" title="New unified XO Platform" style="border: 1px solid gray; zoom:70%;">
 
-    <img src="../images/xo-platform-homepage.png" alt="New unified XO Platform" title="New unified XO Platform" style="border: 1px solid gray; zoom:70%;">
-
-
-* Follow the guided steps to create the app. 
-
-    <img src="../images/xo-platform-Onboarding-experience.png" alt="Onboarding Experience" title="Onboarding Experience" style="border: 1px solid gray; zoom:70%;">
-
-* Easy access to the Setup Guide allows you to quickly change anything inside your app later.
-
-     <img src="../images/xo-platform-setupguide.png" alt="Setup Guide" title="Setup Guide" style="border: 1px solid gray; zoom:70%;">
-    
+* Easy access to the Setup Guide allows you to quickly change anything inside your app later.  
+<img src="../images/xo-platform-setupguide.png" alt="Setup Guide" title="Setup Guide" style="border: 1px solid gray; zoom:70%;">    
 
 * Quickly switch to your favorite product using the **Product Switcher**.  
-
-     <img src="../images/xo-platform-productswitcher.png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/xo-platform-productswitcher.png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:70%;">
 
 ## Key Differences Between XO11 and XO10
 
