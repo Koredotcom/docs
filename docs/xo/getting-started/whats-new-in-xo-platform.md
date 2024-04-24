@@ -105,26 +105,6 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
 <hr>
 
-## Integrated Architecture for Omnichannel Customer Engagement
-The image below provides a high-level understanding of the XO platform's capabilities, the integrated nature of its components, and how they work together as an integrated system to support customer engagement across multiple channels.
-
-<img src="../images/xo-platform-components-flow.png">
-
-Various components and their interactions within the XO platform:
-
-* At the top, it has different **Channels** or entry points: Digital, Voice Gateway, and 3rd Party IVR.
-* These channels feed into the **Start / Exit Flows** component, which handles the interactions' initial and final stages. From there, the flow can branch out into other components based on the implementation.
-* Automation flow: 
-    - **Intelligent Virtual Assistant**: The interaction is sent to the Virtual Assistant. It can handle complex interactions via Automation AI use cases and natural language processing.
-    - **Search AI**: In addition to Automation AI use cases, you can use Search AI to retrieve information from vast datasets and feed the most relevant information to users via the Virtual Assistant. 
-* Agent transfer flow:
-    - **Contact Center / Agent Desktop**: The request is sent to Contact Center AI or Agent Desktop for live agent interactions.
-    - **Agent AI**: Provides AI-powered assistance and recommendations to human agents during interactions via Agent Desktop.
-    - **Third-Party Contact Center / Agent Desktop**: The request can be sent to external contact center solutions for live agent interactions.
-* **Campaigns** can interact with the Contact Center to help you manage and execute marketing and customer outreach efforts via outbound voice and web campaigns.
-* **Analytics** gathers data to provide insights into user interactions and system performance.
-* **App Management** supports the entire platform with functionalities for publishing, importing/exporting apps, user management, collaboration, billing, etc.
-
 ## Key Navigation Changes
 
 **Ease of Access to All Products and Services**
