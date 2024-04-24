@@ -226,7 +226,6 @@ The new Universal search (CMD+K) quickly helps find out components, nodes, seque
 
 Users can add comments and feedback directly within the dialogue builder. Enhances communication by providing a platform for feedback, suggestions, and discussions on specific elements of the design.
 
-![alt_text](images/image24.png "image_tooltip")
 <img src="../images/xo-platform-Automation-Comment.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 #### Bookmarks
