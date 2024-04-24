@@ -140,6 +140,12 @@ Various components and their interactions within the XO platform:
 
 ## Key Differences Between XO11 and XO10
 
+???+ abstract "Welcome Events Replaced with Welcome Flows"
+
+     Earlier, incoming conversations were handled by events such as OnConnect/Welcome events. These events are now replaced with Flows. Flows are designed to replace the Welcome or OnConnect Message, Trigger a Dialog Task, or Run a Script.  
+     <img src="../images/xo-platform-welcomeflow.png" alt="Welcome flow" title="Welcome flow" style="border: 1px solid gray; zoom:70%;">
+
+
 <details>
     <summary>Welcome Events Replaced with Welcome Flows</summary>
     <p>Earlier, incoming conversations were handled by events such as OnConnect/Welcome events. These events are now replaced with Flows. Flows are designed to replace the Welcome or OnConnect Message, Trigger a Dialog Task, or Run a Script.  
@@ -218,8 +224,8 @@ Various components and their interactions within the XO platform:
     <summary>Other Changes
 </summary>
     <p>
-    * Languages are now at the App level. Users can add a language globally and access it inside a specific module. For example, a New Agent language assignment is only done if it is added globally at the App level.  
-    * Dev tools offer all the developer-related menus, such as BotKit, API scopes, Auth profiles, etc., across the products. </p>
+     * Languages are now at the App level. Users can add a language globally and access it inside a specific module. For example, a New Agent language assignment is only done if it is added globally at the App level.
+     * Dev tools offer all the developer-related menus, such as BotKit, API scopes, Auth profiles, etc., across the products. </p>
     </details>
 
 
