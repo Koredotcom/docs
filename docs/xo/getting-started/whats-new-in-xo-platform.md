@@ -130,17 +130,22 @@ Various components and their interactions within the XO platform:
 **Ease of Access to All Products and Services**
 
 * A new guided onboarding journey helps you create your first app in record time. To start the journey, click **Create New** on the home page. 
-    <img src="../images/xo-platform-homepage.png" alt="New Unified XO Platform Homepage" title="New unified XO Platform Homepage">
+
+    <img src="../images/xo-platform-homepage.png" alt="New unified XO Platform" title="New unified XO Platform" style="border: 1px solid gray; zoom:70%;">
+
 
 * Follow the guided steps to create the app. 
 
-    <img src="../images/xo-platform-Onboarding-experience.png" alt="Onboarding Experience" title="Onboarding Experience">
+    <img src="../images/xo-platform-Onboarding-experience.png" alt="Onboarding Experience" title="Onboarding Experience" style="border: 1px solid gray; zoom:70%;">
 
 * Easy access to the Setup Guide allows you to quickly change anything inside your app later.
-     <img src="../images/xo-platform-setupguide.png" alt="Setup Guide" title="Setup Guide">
+
+     <img src="../images/xo-platform-setupguide.png" alt="Setup Guide" title="Setup Guide" style="border: 1px solid gray; zoom:70%;">
+    
 
 * Quickly switch to your favorite product using the **Product Switcher**.  
-     <img src="../images/xo-platform-productswitcher.png" alt="Product Switcher" title="Product Switcher">
+
+     <img src="../images/xo-platform-productswitcher.png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:70%;">
 
 ## Key Differences Between XO11 and XO10
 
@@ -154,7 +159,7 @@ Earlier, incoming conversations were handled by events such as OnConnect/Welcome
 
 XO11 has an all-new super intuitive dialog builder. 
 
- <img src="../images/xo-platform-Dialog Builder.png" alt="Dialog builder" title="Dialog Builder">
+ <img src="../images/xo-platform-Dialogbuilder.png" alt="Dialog Builder" title="Dialog Builder" style="border: 1px solid gray; zoom:70%;">
 
 ### Talk to Bot Moved to Header
 
