@@ -9,7 +9,7 @@ Vectors or Embeddings are multi-dimensional numerical representations of the chu
 * You can select from a range of supported embedding models such as MPNet, LaBSE, e5, and more. This gives you flexibility and ensures compatibility with diverse requirements and preferences.
 * You have the autonomy to choose the specific chunk fields on which embeddings are to be generated. This selection allows you to focus on fields that hold higher relevance to your particular use case.
 
-Index Configuration requires you to set up and configure Generative AI Tools. 
+Index Configuration requires you to set up and configure Generative AI Tools.
 ![LLM Configuration](../images/configure-llm.png "LLM Configuration")
 
 As a prerequisite, go to the **App settings** and configure  Kore XO GPT LLM and enable Vector Generation Model.
