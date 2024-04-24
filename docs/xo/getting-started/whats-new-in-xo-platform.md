@@ -140,90 +140,127 @@ Various components and their interactions within the XO platform:
 
 ## Key Differences Between XO11 and XO10
 
-???+ abstract "Welcome Events Replaced with Welcome Flows"
+### Welcome Events Replaced with Welcome Flows"
 
-     Earlier, incoming conversations were handled by events such as OnConnect/Welcome events. These events are now replaced with Flows. Flows are designed to replace the Welcome or OnConnect Message, Trigger a Dialog Task, or Run a Script.  
-     <img src="../images/xo-platform-welcomeflow.png" alt="Welcome flow" title="Welcome flow" style="border: 1px solid gray; zoom:70%;">
-
-??? abstract "Welcome Events Replaced with Welcome Flows"
-
-    Earlier, incoming conversations were handled by events such as OnConnect/Welcome events. These events are now replaced with Flows. Flows are designed to replace the Welcome or OnConnect Message, Trigger a Dialog Task, or Run a Script.  
-    <img src="../images/xo-platform-welcomeflow.png" alt="Welcome flow" title="Welcome flow" style="border: 1px solid gray; zoom:70%;">
+ Earlier, incoming conversations were handled by events such as OnConnect/Welcome events. These events are now replaced with Flows. Flows are designed to replace the Welcome or OnConnect Message, Trigger a Dialog Task, or Run a Script.  
+ <img src="../images/xo-platform-welcomeflow.png" alt="Welcome flow" title="Welcome flow" style="border: 1px solid gray; zoom:70%;">
   
-??? abstract "Dialog Builder Upgrade"
+### Dialog Builder Upgrade
 
-     XO11 has an all-new super intuitive dialog builder.  
-    <img src="../images/xo-platform-Dialogbuilder.png" alt="Dialog Builder" title="Dialog Builder" style="border: 1px solid gray; zoom:70%;">
+XO11 has an all-new super intuitive dialog builder.  
+<img src="../images/xo-platform-Dialogbuilder.png" alt="Dialog Builder" title="Dialog Builder" style="border: 1px solid gray; zoom:70%;">
 
-??? abstract "Talk to Bot Moved to Header"
+### Talk to Bot Moved to Header
 
-    Talk to Bot has been renamed to **Test**. Users can Test Voice or Digital Conversation using Talk to Bot. Also, users can now see the current state of your conversation in the Talk-to-Bot (Test/Resume/Stop).  
-    <img src="../images/Talk-to-bot.png" alt="Talk to bot" title="Talk to bot" style="border: 1px solid gray; zoom:70%;">  
-    <img src="../images/xo-platform-test.png" alt="Test" title="Test" style="border: 1px solid gray; zoom:70%;"></p>
-    </details> 
+Talk to Bot has been renamed to **Test**. Users can Test Voice or Digital Conversation using Talk to Bot. Also, users can now see the current state of your conversation in the Talk-to-Bot (Test/Resume/Stop).  
+<img src="../images/Talk-to-bot.png" alt="Talk to bot" title="Talk to bot" style="border: 1px solid gray; zoom:70%;">  
+<img src="../images/xo-platform-test.png" alt="Test" title="Test" style="border: 1px solid gray; zoom:70%;">
    
-    
-<details>
-    <summary>Create Dialog Enhanced with Generative AI</summary>
-    <p>You can now use Gen AI to create a dialog from scratch. You can also install pre-built Integration Templates directly from the all-new Marketplace as Dialog Tasks.  
-    <img src="../images/xo-platform-createdialog.png" alt="Create Dialog" title="Create Dialog" style="border: 1px solid gray; zoom:70%;"></p>
-    </details>
+### Create Dialog Enhanced with Generative AI
 
-<details>
-    <summary>Bot Configurations Moved to App Settings</summary>
-    <p>All the configurations applicable across the app have been moved to a separate menu item - App Settings.    
-    <img src="../images/xo-platform-appsetting.png" alt="App Setting" title="App Setting" style="border: 1px solid gray; zoom:70%;"></p>
-    </details>
+You can now use Gen AI to create a dialog from scratch. You can also install pre-built Integration Templates directly from the all-new Marketplace as Dialog Tasks.  
+<img src="../images/xo-platform-createdialog.png" alt="Create Dialog" title="Create Dialog" style="border: 1px solid gray; zoom:70%;">
 
-<details>
-    <summary>Shared LLM & Generative Settings for All Products</summary>
-    <p>All the LLM integrations can be managed in one place in an app and used across the products on the Platform. For example, Agent Response Rephrasing applies to both Contact Center AI and Agent AI.  
-    <img src="../images/xo-platform-LLM&generativeAI.png" alt="LLM & GenerativeAI" title="LLM & GenerativeAI" style="border: 1px solid gray; zoom:70%;"></p>
-    </details>
+### Bot Configurations Moved to App Settings
 
-<details>
-    <summary>Global User Management</summary>
-    <p>User Management is now applicable across the modules. You can set permissions, manage agent-related Permissions, Create a new Role, and Assign a role to a new or existing user. You can also assign a role to User groups (but the creation of User Groups is still in the Admin Console Page).  
-    <img src="../images/xo-platform-manageuser.png" alt="User Management" title="User Management" style="border: 1px solid gray; zoom:70%;"></p>
-    </details>  
+All the configurations applicable across the app have been moved to a separate menu item - App Settings.    
+<img src="../images/xo-platform-appsetting.png" alt="App Setting" title="App Setting" style="border: 1px solid gray; zoom:70%;">
 
-<details>
-    <summary>App Level Publishing and Version Management</summary>
-    <p>Be it Publishing Dialogs or Flows, everything is now done in one place. The Platform supports all variants of publishing (partial, full), version control, and Import and export in one centralized place.  
-    <img src="../images/xo-platform-deploy.png" alt="Deploy" title="Deploy" style="border: 1px solid gray; zoom:70%;"></p>
-    </details>
+### Shared LLM & Generative Settings for All Products
 
-<details>
-    <summary>Reorganized Analytics</summary>
-    <p>The Analytics module is logically regrouped to address various audience needs. A session starts from Channel through Flows, can go to Automation AI (Virtual Assistant), and then transfer to Agent. The module offers unified analytics across all conversations.  
-    <img src="../images/xo-platform-analytics.png" alt="Analytics" title="Analytics" style="border: 1px solid gray; zoom:70%;"></p>
-    </details>
+All the LLM integrations can be managed in one place in an app and used across the products on the Platform. For example, Agent Response Rephrasing applies to both Contact Center AI and Agent AI.  
+<img src="../images/xo-platform-LLM&generativeAI.png" alt="LLM & GenerativeAI" title="LLM & GenerativeAI" style="border: 1px solid gray; zoom:70%;">
 
-<details>
-    <summary>Fallback Behaviour</summary>
-    <p>We have a new setting where users can configure where every user utterance should go first:  Automation AI (Virtual Assistant) or Search AI (Answers) to get the response.  
-    <img src="../images/xo-platform-fallback-behaviour.png" alt="Fallback Behaviour" title="Fallback BehaviourI" style="border: 1px solid gray; zoom:70%;"></p>
-    </details>
+### Global User Management
 
-<details>
-    <summary>New Marketplace</summary>
-    <p>The New Marketplace is available inside the App (previously, it was on the bot's homepage). It allows users to search for prebuilt templates and filter them by integration type, provider, domain, etc.  
-    <img src="../images/xo-platform-marketplace.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:70%;"></p>
-    </details>
+User Management is now applicable across the modules. You can set permissions, manage agent-related Permissions, Create a new Role, and Assign a role to a new or existing user. You can also assign a role to User groups (but the creation of User Groups is still in the Admin Console Page).  
+<img src="../images/xo-platform-manageuser.png" alt="User Management" title="User Management" style="border: 1px solid gray; zoom:70%;">
 
-<details>
-    <summary>New Billing Page</summary>
-    <p>The billing definition has been changed to accommodate the various price offerings we are providing in UXO. The Billing Session definition for Automation is 15 minutes of Interaction, and for Contact Center, it's 15 minutes of ideal time. The Platform offers various plans, and users can choose the plan for each product individually. Note that if users want to be Enterprise customers, then they have to choose enterprise plans for all the products.  
-    <img src="../images/xo-platform-billingpage.png" alt="Billing Page" title="Billing Page" style="border: 1px solid gray; zoom:70%;"></p>
-    </details>
+### App Level Publishing and Version Management
 
-<details>
-    <summary>Other Changes
-</summary>
-    <p>
-     * Languages are now at the App level. Users can add a language globally and access it inside a specific module. For example, a New Agent language assignment is only done if it is added globally at the App level.
-     * Dev tools offer all the developer-related menus, such as BotKit, API scopes, Auth profiles, etc., across the products. </p>
-    </details>
+Be it Publishing Dialogs or Flows, everything is now done in one place. The Platform supports all variants of publishing (partial, full), version control, and Import and export in one centralized place.  
+<img src="../images/xo-platform-deploy.png" alt="Deploy" title="Deploy" style="border: 1px solid gray; zoom:70%;">
+
+### Reorganized Analytics
+
+The Analytics module is logically regrouped to address various audience needs. A session starts from Channel through Flows, can go to Automation AI (Virtual Assistant), and then transfer to Agent. The module offers unified analytics across all conversations.  
+<img src="../images/xo-platform-analytics.png" alt="Analytics" title="Analytics" style="border: 1px solid gray; zoom:70%;">
+
+### Fallback Behaviour
+
+We have a new setting where users can configure where every user utterance should go first:  Automation AI (Virtual Assistant) or Search AI (Answers) to get the response.  
+<img src="../images/xo-platform-fallback-behaviour.png" alt="Fallback Behaviour" title="Fallback BehaviourI" style="border: 1px solid gray; zoom:70%;">
+
+### New Marketplace
+
+The New Marketplace is available inside the App (previously, it was on the bot's homepage). It allows users to search for prebuilt templates and filter them by integration type, provider, domain, etc.  
+<img src="../images/xo-platform-marketplace.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:70%;">
+
+### New Billing Page
+
+The billing definition has been changed to accommodate the various price offerings we are providing in UXO. The Billing Session definition for Automation is 15 minutes of Interaction, and for Contact Center, it's 15 minutes of ideal time. The Platform offers various plans, and users can choose the plan for each product individually. Note that if users want to be Enterprise customers, then they have to choose enterprise plans for all the products.  
+<img src="../images/xo-platform-billingpage.png" alt="Billing Page" title="Billing Page" style="border: 1px solid gray; zoom:70%;">
+
+### Other Changes
+
+* Languages are now at the App level. Users can add a language globally and access it inside a specific module. For example, a New Agent language assignment is only done if it is added globally at the App level.
+* Dev tools offer all the developer-related menus, such as BotKit, API scopes, Auth profiles, etc., across the products.
+
+## Automation AI Updates
+
+### All-new Dialog Builder 
+
+The all-new dialog builder is super intuitive, user-friendly, and visually appealing.  
+
+
+#### Intuitive Graphical User Interface
+
+An intuitive and graphical user interface that allows users to design conversational flows by dragging and dropping components onto a canvas. This simplifies the process of constructing dialogues, allowing users to visually structure and customize interactions between the AI system and users. It empowers developers and non-technical users alike to design and create conversational flows effortlessly. 
+
+* **Free-flow Designing** empowers users to easily design the flow without worrying too much about the logic at the beginning. The ability to easily connect nodes without having to fully define the transition rule. The transition rule can start with a simple description and can be enforced at the later stages while testing/publishing.
+* **Infinite Canvas** allows designers to logically arrange the flow (based on purpose, objective, etc.) as needed, making it easy for them to review and audit the flows.
+* **Customizable Connectors** featuring options for color, width, and style to enhance clarity, readability, and emphasis.
+* **Seamless drag and drop** of nodes for a smooth experience.
+
+<img src="../images/xo-platform-Graphic-user-interface.png" alt="Graphical User Interface" title="Graphical User Interface" style="border: 1px solid gray; zoom:70%;">
+
+#### Node Categorization
+
+A streamlined node panel with user-friendly categorization—Ask, Inform, AI, and Integration—provides clear organization for users.
+
+<img src="../images/xo-platform-AutomationAI-nodecategorisation.png" alt="Node Categorization" title="Node Categorization" style="border: 1px solid gray; zoom:70%;">
+
+#### Sequencing
+
+Enhance organization through the grouping of nodes into coherent sequences. Align nodes logically and provide clear, descriptive names for the sequences to facilitate future reference and comprehension. Provide the ability to clearly read and write the key information like name type, prompts/messages, and transition conditions. Enhance visibility and distinguishability by customizing sequences with color codes. 
+<img src="../images/xo-platform-AutomationAI-sequencing.png" alt="Sequencing" title="Sequencing" style="border: 1px solid gray; zoom:70%;">
+
+#### Universal Search
+
+The new Universal search (CMD+K) quickly helps find out components, nodes, sequences, variables, etc.
+
+<img src="../images/xo-platform-AutomationAI-Universal Search.png" alt="Universal Search" title="Universal Search" style="border: 1px solid gray; zoom:70%;">
+
+
+#### Comments
+
+Users can add comments and feedback directly within the dialogue builder. Enhances communication by providing a platform for feedback, suggestions, and discussions on specific elements of the design.
+
+![alt_text](images/image24.png "image_tooltip")
+<img src="../images/xo-platform-Automation-Comment.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+
+#### Bookmarks
+
+Bookmarks allow users to organize and reference important information. Users can bookmark frequently visited or crucial content in the canvas with relevant information. Bookmarks help users navigate to content without having to search or browse extensively.
+
+<img src="../getting-started/images/xo-platform-AutomationAI-Bookmark.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:70%;">
+
+
+#### Notes
+
+Add notes to highlight key points or summarize information. Notes can also be used for communication and feedback.
+
+<img src="../images/xo-platform-AutomationAI-note.png" alt="Notes" title="Notes" style="border: 1px solid gray; zoom:70%;">
 
 
 
