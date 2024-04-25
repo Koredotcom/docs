@@ -197,14 +197,12 @@ The all-new intuitive graphical user interface allows users to design conversati
 * **Free-flow Designing** empowers users to easily design the flow without worrying too much about the logic at the beginning. The ability to easily connect nodes without having to fully define the transition rule. The transition rule can start with a simple description and can be enforced at the later stages while testing/publishing.
 * **Infinite Canvas** allows designers to logically arrange the flow (based on purpose, objective, etc.) as needed, making it easy for them to review and audit the flows.
 * **Customizable Connectors** featuring options for color, width, and style to enhance clarity, readability, and emphasis.
-* **Seamless drag and drop** of nodes for a smooth experience.
-
+* **Seamless drag and drop** of nodes for a smooth experience.  
 <img src="../images/xo-platform-Graphic-user-interface.png" alt="Graphical User Interface" title="Graphical User Interface" style="border: 1px solid gray; zoom:70%;">
 
 #### Node Categorization
 
-A streamlined node panel with user-friendly categorization—Ask, Inform, AI, and Integration—provides clear organization for users.
-
+A streamlined node panel with user-friendly categorization—Ask, Inform, AI, and Integration—provides clear organization for users.  
 <img src="../images/xo-platform-AutomationAI-nodecategorisation.png" alt="Node Categorization" title="Node Categorization" style="border: 1px solid gray; zoom:70%;">
 
 #### Sequencing
@@ -214,28 +212,77 @@ Enhance organization through the grouping of nodes into coherent sequences. Alig
 
 #### Universal Search
 
-The new Universal search (CMD+K) quickly helps find out components, nodes, sequences, variables, etc.
-
+The new Universal search (CMD+K) quickly helps find out components, nodes, sequences, variables, etc.  
 <img src="../images/xo-platform-AutomationAI-Universal Search.png" alt="Universal Search" title="Universal Search" style="border: 1px solid gray; zoom:70%;">
-
 
 #### Comments
 
-Users can add comments and feedback directly within the dialogue builder. Enhances communication by providing a platform for feedback, suggestions, and discussions on specific elements of the design.
-
+Users can add comments and feedback directly within the dialogue builder. Enhances communication by providing a platform for feedback, suggestions, and discussions on specific elements of the design.  
 <img src="../images/xo-platform-Automation-Comment.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
 #### Bookmarks
 
-Bookmarks allow users to organize and reference important information. Users can bookmark frequently visited or crucial content in the canvas with relevant information. Bookmarks help users navigate to content without having to search or browse extensively.
-
+Bookmarks allow users to organize and reference important information. Users can bookmark frequently visited or crucial content in the canvas with relevant information. Bookmarks help users navigate to content without having to search or browse extensively.  
 <img src="../images/xo-platform-AutomationAI-Bookmark.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:70%;">
 
 #### Notes
 
-Add notes to highlight key points or summarize information. Notes can also be used for communication and feedback.
-
+Add notes to highlight key points or summarize information. Notes can also be used for communication and feedback.  
 <img src="../images/xo-platform-AutomationAI-note.png" alt="Notes" title="Notes" style="border: 1px solid gray; zoom:70%;">
+
+## Search AI Updates
+
+Kore.ai’s SearchAssist capabilities are now available under Search AI on the XO Platform. Search AI offers AI-powered conversational search tools to quickly and accurately retrieve information from vast datasets and offer the most relevant piece of information to users. Add multiple data sources for building your answer index, including website crawlers, structured data, unstructured documents, catalogs, and knowledge bases. By combining Automation AI (Use Cases) and Search AI (Answers), businesses can create an exceptional, seamless conversational experience for their users.
+
+Key Search AI (Answers) capabilities are summarized below. 
+
+### Content Extraction Strategies
+
+To generate answers using the source data, the ingested data is segmented into smaller segments or chunks to understand better, organize, and efficiently retrieve the most relevant set of data when required. Selecting the most appropriate strategy requires considering several factors, like the type of content, the embedding model to store chunks, the expected length and complexity of user queries and answers, etc.
+
+The application supports various chunk-generation strategies. You have the flexibility to select and customize the strategies based on the format and structure of the ingested data or as per the answers required. You can configure multiple strategies to apply to different types of content. This improves the precision of answers by aligning the strategy to the document characteristics and gives you flexibility and granular control over the answers generated.  
+<img src="../images/xo-platform-Content-Extraction- Strategies.png" alt="Content Extraction Strategies" title="Content Extraction Strategies" style="border: 1px solid gray; zoom:70%;">
+
+#### Chunk Browser
+
+The Chunk Browser provides a tool for observing the extracted chunks from the source data. It gives insight into the extraction process's output and enables subsequent actions like editing and rectifying the chunks. 
+
+* **Observation and Verification:** You can use the Chunk Browser to inspect and verify the extracted chunks. This step is crucial for ensuring the correctness of the extraction process, the accuracy of the chunks generated, and the preservation of data.  
+<img src="../images/xo-platform-Chunk Browser.png" alt="Chunk Browser" title="Chunk Browser" style="border: 1px solid gray; zoom:70%;">
+
+* **Editing of Chunks**: You can edit the chunk information directly within the browser interface. This capability can help you add any missed information, edit inaccurate information, or simply enrich the extracted information.  
+<img src="../images/xo-platform-Chunk Viewer.png" alt="Chunk Viewe" title="Chunk Viewe" style="border: 1px solid gray; zoom:70%;">
+
+
+#### Index Configuration
+
+Indexing is the process of generating vectors or embeddings from the extracted chunks and creating a knowledge Index that can be used to generate answers. Vectors or Embeddings are multidimensional numerical representations of the chunks that carry their semantic information. Embedding Models are algorithms that can translate data into vectors. The XO platform supports various embedding models, such as MPNet, LaBSE, and e5, and allows you to choose a model according to your specific needs.  
+<img src="../images/xo-platform-Index.png" alt="Index" title="Index" style="border: 1px solid gray; zoom:70%;">
+
+### Answer Generation Strategies
+
+Search AI uses LLM to generate answers from the ingested chunks. The efficacy of the response depends on the Chunk Retrieval method and the Answer Generation configuration.
+
+#### Chunk Retrieval Strategy
+
+Choose the preferred chunk retrieval strategy for retrieving answer chunks from the answer index for a given query. Search AI supports **Vector Retrieval**, which uses cosine similarity scores, and **Hybrid Retrieval**, which considers patterns and structures in the text. The choice between using vector retrieval and hybrid retrieval depends on various factors, including the nature of the data, the specific requirements of the application, and the available resources.  
+<img src="../images/xo-platform-Chunk Retrieval.png" alt="Notes" title="Notes" style="border: 1px solid gray; zoom:70%;">
+
+* **Vector Retrieval**: In this type of retrieval, we compute the cosine similarity between the query vector and each chunk vector at the time of query, and the resulting scores are used to filter and sort the results. The score ranges from 0 to 1, where 0 indicates no match, and 1 represents a complete match.
+* **Hybrid Retrieval**: In this type of retrieval, multiple approaches are used to find the most relevant chunk corresponding to the query.
+
+#### Answers Generation
+
+Configure the type of answers to be presented to the users:
+
+* **Extractive Answers**: The topmost chunk retrieved in response to the user query is directly presented to the user as answers. The extractive answers are exact content retrieved from the chunks without any change in text.
+* **Generative Answers**: The top chunks retrieved in response to the user query are sent to the configured LLM, which generates a paraphrased answer from the content in the chunks. Use the following fields to configure Generative Answers.  
+<img src="../images/xo-platform-Generative Answers.png" alt="Generative Answer" title="Generative Answer" style="border: 1px solid gray; zoom:70%;">
+
+### Search vs. Automation Setting
+
+You can either keep Automation First and Answers as a fallback or otherwise.  
+<img src="../images/xo-platform-Search vs. Automation Setting.png" alt="Search vs. Automation Setting" title="Search vs. Automation Setting" style="border: 1px solid gray; zoom:70%;">
 
 ## Contact Center AI Updates
 
