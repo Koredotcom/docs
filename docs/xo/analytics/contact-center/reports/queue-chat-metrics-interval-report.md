@@ -96,19 +96,19 @@ The Queue Chat Metrics Interval Report is generated and is available for downloa
   <tr>
    <td>Avg Messages
    </td>
-   <td>Total number of messages between callers and agents/number of calls accepted (average for summary)
+   <td>Total number of messages between callers and agents / number of calls accepted (average for summary)
    </td>
   </tr>
   <tr>
    <td>Avg Use Saved
    </td>
-   <td>Total number of saved messages on all calls/number of calls accepted (average for the summary)
+   <td>Total number of saved messages on all calls / number of calls accepted (average for the summary)
    </td>
   </tr>
   <tr>
    <td>CSAT
    </td>
-   <td>Avg CSAT on all calls/number of calls with CSAT info. (average for summary)
+   <td>Avg CSAT on all calls / number of calls with CSAT info. (average for summary)
    </td>
   </tr>
   <tr>
