@@ -348,7 +348,7 @@ Managing DNC Lists:
 #### Dashboard
 
 The campaign dashboard allows campaign managers to obtain an overview of all their campaigns, including their status—whether they're active, inactive, or completed. This centralized snapshot facilitates effortless monitoring and management.  
-<img src="../getting-started/images/xo-platform-cc-dashboard.png" alt="Dashboard" title="Dashboard" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/xo-platform-cc-dashboard.png" alt="Dashboard" title="Dashboard" style="border: 1px solid gray; zoom:70%;">
 
 You can drill down individual campaigns to get detailed insights.  
 <img src="../images/xo-platform-cc-overview.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:70%;">
@@ -356,6 +356,6 @@ You can drill down individual campaigns to get detailed insights.
 #### Settings
 
 The settings allow campaign managers to decide the maximum number of concurrent calls that can be dialed.  
-<img src="../getting-started/images/xo-platform-cc-setting.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/xo-platform-cc-setting.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:70%;">
 
 
