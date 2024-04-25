@@ -100,7 +100,7 @@ The Queue Chat Metrics Interval Report is generated and is available for downloa
    </td>
   </tr>
   <tr>
-   <td>Avg Use Saved 
+   <td>Avg Use Saved
    </td>
    <td>Total number of saved messages on all calls/number of calls accepted (average for the summary)
    </td>
