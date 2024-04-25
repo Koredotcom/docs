@@ -63,9 +63,7 @@ All the actions available within the Kore.ai XO Platform for a product can be ac
 ### The Left Navigation Menu
 
 The Left Navigation Menu shows options, depending on the product and features you select. The top menu has the Product Specific features and the bottom menu has the Related Products features.
-Product specific features and Common features applicable to each products are shown below:
-
-
+Product specific features and Common features applicable to each products are shown below:  
 <img src="../images/ntp(21).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"> 
 
 #### Product Specific Options
