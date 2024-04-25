@@ -112,11 +112,11 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 * A new guided onboarding journey helps you create your first app in record time. To start the journey, click **Create New** on the home page and follow the guided steps to create the app.  
 <img src="../images/xo-platform-homepage.png" alt="New unified XO Platform" title="New unified XO Platform" style="border: 1px solid gray; zoom:70%;">   
 
-* The Product Switcher at the top of the left navigation lets you effortlessly switch between different products on the XO Platform. 
+* The Product Switcher at the top of the left navigation lets you effortlessly switch between different products on the XO Platform.  
 <img src="../images/xo-platform-productswitcher.png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:70%;">
 
 * The Left Navigation Menu shows options for the selected product and feature(s). In top-down order, product-specific options are shown first, and related products or features are shown at the bottom.  
-<img src="../getting-started/images/ntp(21).png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/ntp(21).png" alt="The Left Navigation Menu" title="The Left Navigation Menu" style="border: 1px solid gray; zoom:70%;">
 
 ## Key Differences Between XO11 and XO10
 
