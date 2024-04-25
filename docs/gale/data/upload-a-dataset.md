@@ -16,7 +16,7 @@ You can upload a dataset of your choice in CSV, JSON, or, JSONL format.
 
     !!! note
 
-        When you Upload a file in the Playground and the fine-tuning wizard the uploaded file is saved under the Data tab and can be used later.
+        When you Upload a file in the Playground and the fine-tuning wizard the uploaded file is saved under the Data tab and can be used later. Also, the dataset you upload here is displayed for you to choose in the training dataset section of the fine-tuning wizard.
 
 
 1. When you select the Advance mode in the Prompt Playground and click the **Add dataset** option you can view and select the dataset you have added from the list as shown in the following image.

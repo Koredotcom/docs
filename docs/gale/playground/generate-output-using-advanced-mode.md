@@ -65,3 +65,11 @@ If you want to view all the details of the outputs across all the models you can
 
 <img src="../images/view-all-details-of-models.png" alt="View All Details of Models" title="View All Details of Models" style="border: 1px solid gray; zoom:80%;">
 
+You can collect feedback on the model's responses to refine its performance. Feedback is collected through simple Thumbs Up or Down on responses in the playground. Giving feedback is optional and does not hinder generating more responses. Thumbs up is for good responses. Thumbs down is for incorrect, hypothetical, or disliked responses. When you click Thumbs down icon a pop-up is displayed and you can additional feedback if required.
+
+!!! note
+
+    This feedback option is only applicable for fine-tuned and open-source models.
+
+
+<img src="../images/rlhf-feedback-icons.png" alt="RLHF Feedback Icons" title="RLHF Feedback Icons" style="border: 1px solid gray; zoom:80%;">
