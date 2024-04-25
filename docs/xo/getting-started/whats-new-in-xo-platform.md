@@ -254,53 +254,40 @@ To reduce confusion, the OnConnect/Welcome Events have now been merged into the 
 
 #### Updated Flow Builder
 
-The Flow Builder interface has been revamped to provide a smoother, more intuitive user experience. The interface is similar to the Dialog Builder, making the transition seamless and effortless.
-
+The Flow Builder interface has been revamped to provide a smoother, more intuitive user experience. The interface is similar to the Dialog Builder, making the transition seamless and effortless.  
 <img src="../images/xo-platform-Flow Builder.png" alt="Updated Flow Builders" title="Updated Flow Builder" style="border: 1px solid gray; zoom:70%;">
 
 #### Enhanced Automation: Conversational Input and Run Automation Nodes Merged, Deflect to Chat Deprecated
 
-The automation process is simplified by merging Conversational Input and Run Automation Nodes into a single entity: **Automation**. This consolidation streamlines bot invocation and aligns with usage patterns observed from existing customers and demo scenarios. \
-
-![alt_text](images/image28.png "image_tooltip")
-
+The automation process is simplified by merging Conversational Input and Run Automation Nodes into a single entity: **Automation**. This consolidation streamlines bot invocation and aligns with usage patterns observed from existing customers and demo scenarios.  
+<img src="../images/xo-platform-contact-center-Automation.png" alt="Automation" title="Automation" style="border: 1px solid gray; zoom:70%;">
 
 Deflect to Chat is no longer supported. This change is driven by the limited usage observed among customers, but we remain committed to addressing relevant needs and exploring adding support based on internal use cases.
 
 
 ### Centralized Publish Module
 
-To ensure consistency, simplify workflow management, and centralize management tasks, we've introduced a centralized Publish Module. All flows can be published from this module.
-
-
-![alt_text](images/image29.png "image_tooltip")
-
+To ensure consistency, simplify workflow management, and centralize management tasks, we've introduced a centralized Publish Module. All flows can be published from this module.  
+<img src="../images/xo-platform-Centralised-Publish-Module.png" alt="Centralized Publish Module" title="Centralized Publish Module" style="border: 1px solid gray; zoom:70%;">
 
 ### Channels
 
-
 #### Omni-channel Setup
 
-With Contact Center AI, you can seamlessly integrate various channels, including voice, chat, email, social media, and custom SDKs, to provide a unified experience for your customers and ensure effortless omnichannel communication.  \
-
-
-![alt_text](images/image30.png "image_tooltip")
-
+With Contact Center AI, you can seamlessly integrate various channels, including voice, chat, email, social media, and custom SDKs, to provide a unified experience for your customers and ensure effortless omnichannel communication.  
+<img src="../images/xo-platform-omnichannel-setup.png" alt="Omni-channel Setup" title="Omni-channel Setup" style="border: 1px solid gray; zoom:70%;">
 
 #### Kore.ai Voice Gateway
 
 Expand your reach by enabling voice interactions through the Kore.ai Voice Gateway. It helps configure how Contact Center AI handles automation for inbound voice calls. Customers can engage with your contact center using natural language voice commands.
 
-
 #### Selective Routing
 
 One significant enhancement is the ability to selectively choose whether to direct customers to automation or human assistance. This feature empowers you to optimize customer journeys considering complexity, urgency, or preference.
 
-
 #### Support for Digital Channels
 
 Our platform is extended to support digital channels such as social media platforms, enterprise messaging apps, and custom SDKs. This allows you to engage with customers wherever they are, enhancing accessibility and convenience.
-
 
 #### Integration with 3rd Party IVR Systems
 
@@ -309,11 +296,9 @@ Contact Center AI seamlessly integrates with third-party IVR systems, enabling y
 
 ### Role and User Management
 
-
 #### App Level User Definitions
 
 Users can be defined at the app level and assigned necessary roles, providing granular control over access and permissions.
-
 
 #### Contact Center Attributes 
 
@@ -336,53 +321,41 @@ The new Campaigns module simplifies and enhances outbound efforts across voice a
 
 #### Voice Campaigns
 
-Use the power of voice technology to connect with your audience through personalized messages or interactive experiences. Setting up a new voice campaign is easy—begin with a targeted contact list to ensure your message resonates with the right audience.
-
-![alt_text](images/image31.png "image_tooltip")
+Use the power of voice technology to connect with your audience through personalized messages or interactive experiences. Setting up a new voice campaign is easy—begin with a targeted contact list to ensure your message resonates with the right audience.  
+<img src="../images/xo-platform-voicecampaign.png" alt="Voice Campaigns" title="Voice Campaigns" style="border: 1px solid gray; zoom:70%;">
 
 #### Proactive Web Campaigns
 
-Elevate your online presence with proactive web campaigns to promote your products, services, or brand. Utilizing digital channels, these campaigns are crafted to increase visibility, generate leads, and build brand awareness, ensuring measurable success.
+Elevate your online presence with proactive web campaigns to promote your products, services, or brand. Utilizing digital channels, these campaigns are crafted to increase visibility, generate leads, and build brand awareness, ensuring measurable success.  
+<img src="../images/xo-platform-proactive-web-campaign.png" alt="Proactive Web Campaigns" title="Proactive Web Campaigns" style="border: 1px solid gray; zoom:70%;">
 
-![alt_text](images/image32.png "image_tooltip")
- 
-You can create proactive web campaigns from scratch in various formats: \
+You can create proactive web campaigns from scratch in various formats:  
+<img src="../images/xo-platform-formats.png" alt="formats" title="formats" style="border: 1px solid gray; zoom:70%;">
 
-![alt_text](images/image33.png "image_tooltip")
-
-
-You can also create proactive web campaigns using pre-defined templates. These templates save time and effort while ensuring consistency and brand identity. They are cost-effective, user-friendly, and offer flexibility for customization.
-
-![alt_text](images/image34.png "image_tooltip")
+You can also create proactive web campaigns using pre-defined templates. These templates save time and effort while ensuring consistency and brand identity. They are cost-effective, user-friendly, and offer flexibility for customization.  
+<img src="../images/xo-platform-templates.png" alt="Templates" title="Templates" style="border: 1px solid gray; zoom:70%;">
 
 #### List Management
 
 List management involves organizing and maintaining targeted Contact Lists for efficient outreach while adhering to Do Not Contact (DNC) regulations.
 
-Managing Contact Lists: 
+Managing Contact Lists:  
+<img src="../images/xo-platform-managing-contact-list.png" alt="Managing Contact Lists" title="Managing Contact Lists" style="border: 1px solid gray; zoom:70%;">
 
-
-![alt_text](images/image35.png "image_tooltip")
- 
-Managing DNC Lists:
-
-
-![alt_text](images/image36.png "image_tooltip")
-
+Managing DNC Lists:  
+<img src="../images/xo-platform-managing-DNC-List.png" alt="Managing DNC Lists" title="Managing DNC Lists" style="border: 1px solid gray; zoom:70%;">
 
 #### Dashboard
 
-The campaign dashboard allows campaign managers to obtain an overview of all their campaigns, including their status—whether they're active, inactive, or completed. This centralized snapshot facilitates effortless monitoring and management.
+The campaign dashboard allows campaign managers to obtain an overview of all their campaigns, including their status—whether they're active, inactive, or completed. This centralized snapshot facilitates effortless monitoring and management.  
+<img src="../getting-started/images/xo-platform-cc-dashboard.png" alt="Dashboard" title="Dashboard" style="border: 1px solid gray; zoom:70%;">
 
-![alt_text](images/image37.png "image_tooltip")
-
-You can drill down individual campaigns to get detailed insights.
-
-![alt_text](images/image38.png "image_tooltip")
+You can drill down individual campaigns to get detailed insights.  
+<img src="../images/xo-platform-cc-overview.png" alt="Overview" title="Overview" style="border: 1px solid gray; zoom:70%;">
 
 #### Settings
 
-The settings allow campaign managers to decide the maximum number of concurrent calls that can be dialed.
+The settings allow campaign managers to decide the maximum number of concurrent calls that can be dialed.  
+<img src="../getting-started/images/xo-platform-cc-setting.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:70%;">
 
-![alt_text](images/image39.png "image_tooltip")
 
