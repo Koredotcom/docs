@@ -239,3 +239,153 @@ Bookmarks allow users to organize and reference important information. Users can
 Add notes to highlight key points or summarize information. Notes can also be used for communication and feedback.
 
 <img src="../images/xo-platform-AutomationAI-note.png" alt="Notes" title="Notes" style="border: 1px solid gray; zoom:70%;">
+
+## Contact Center AI Updates
+
+Contact Center AI (previously Kore.ai SmartAssist) is now a part of the unified XO Platform v11. You can now leverage Automation AI Use Cases and Search AI Answers to automate regular customer queries and seamlessly transfer them to a human agent as needed. The new Campaigns module helps streamline outbound voice and web campaigns. It provides templates and analytics to easily create targeted campaigns, reach audiences efficiently, track performance, and achieve goals more effectively.
+
+The key features and experience changes are summarized below.
+
+
+### Experience Flows
+
+
+#### Improved Experience Flows 
+
+To reduce confusion, the OnConnect/Welcome Events have now been merged into the new Experience Flows. With XO11, the logic typically written in these events can now be easily managed via experience flows.
+
+
+#### Updated Flow Builder
+
+The Flow Builder interface has been revamped to provide a smoother, more intuitive user experience. The interface is similar to the Dialog Builder, making the transition seamless and effortless.
+
+<img src="../images/xo-platform-Flow Builder.png" alt="Updated Flow Builders" title="Updated Flow Builder" style="border: 1px solid gray; zoom:70%;">
+
+#### Enhanced Automation: Conversational Input and Run Automation Nodes Merged, Deflect to Chat Deprecated
+
+The automation process is simplified by merging Conversational Input and Run Automation Nodes into a single entity: **Automation**. This consolidation streamlines bot invocation and aligns with usage patterns observed from existing customers and demo scenarios. \
+
+![alt_text](images/image28.png "image_tooltip")
+
+
+Deflect to Chat is no longer supported. This change is driven by the limited usage observed among customers, but we remain committed to addressing relevant needs and exploring adding support based on internal use cases.
+
+
+### Centralized Publish Module
+
+To ensure consistency, simplify workflow management, and centralize management tasks, we've introduced a centralized Publish Module. All flows can be published from this module.
+
+
+![alt_text](images/image29.png "image_tooltip")
+
+
+### Channels
+
+
+#### Omni-channel Setup
+
+With Contact Center AI, you can seamlessly integrate various channels, including voice, chat, email, social media, and custom SDKs, to provide a unified experience for your customers and ensure effortless omnichannel communication.  \
+
+
+![alt_text](images/image30.png "image_tooltip")
+
+
+#### Kore.ai Voice Gateway
+
+Expand your reach by enabling voice interactions through the Kore.ai Voice Gateway. It helps configure how Contact Center AI handles automation for inbound voice calls. Customers can engage with your contact center using natural language voice commands.
+
+
+#### Selective Routing
+
+One significant enhancement is the ability to selectively choose whether to direct customers to automation or human assistance. This feature empowers you to optimize customer journeys considering complexity, urgency, or preference.
+
+
+#### Support for Digital Channels
+
+Our platform is extended to support digital channels such as social media platforms, enterprise messaging apps, and custom SDKs. This allows you to engage with customers wherever they are, enhancing accessibility and convenience.
+
+
+#### Integration with 3rd Party IVR Systems
+
+Contact Center AI seamlessly integrates with third-party IVR systems, enabling you to leverage existing investments and infrastructure while benefiting from our advanced capabilities.
+
+
+### Role and User Management
+
+
+#### App Level User Definitions
+
+Users can be defined at the app level and assigned necessary roles, providing granular control over access and permissions.
+
+
+#### Contact Center Attributes 
+
+Additional contact center attributes can now be added under the Contact Center section, enhancing customization and tailoring the application to your specific requirements.
+
+
+#### Administrator / Admin Role Deprecated
+
+The Administrator/Admin role is deprecated. Existing accounts will seamlessly transition to a new custom role with equivalent permissions on Contact Center AI, ensuring continuity and preserving access levels.
+
+
+### Updated Bot Architecture
+
+Instance and Automation bots are merged into a single bot. New accounts will require managing only one bot. However, existing accounts that will be migrated will continue to have separate instance and automation bots.
+
+
+### New Campaigns Module
+
+The new Campaigns module simplifies and enhances outbound efforts across voice and web channels. It offers tools for creating targeted voice campaigns and proactive web campaigns, supported by easy-to-use templates and comprehensive analytics. This allows businesses to efficiently reach their audience, monitor campaign performance, and achieve their objectives with greater precision and effectiveness.
+
+#### Voice Campaigns
+
+Use the power of voice technology to connect with your audience through personalized messages or interactive experiences. Setting up a new voice campaign is easy—begin with a targeted contact list to ensure your message resonates with the right audience.
+
+![alt_text](images/image31.png "image_tooltip")
+
+#### Proactive Web Campaigns
+
+Elevate your online presence with proactive web campaigns to promote your products, services, or brand. Utilizing digital channels, these campaigns are crafted to increase visibility, generate leads, and build brand awareness, ensuring measurable success.
+
+![alt_text](images/image32.png "image_tooltip")
+ 
+You can create proactive web campaigns from scratch in various formats: \
+
+![alt_text](images/image33.png "image_tooltip")
+
+
+You can also create proactive web campaigns using pre-defined templates. These templates save time and effort while ensuring consistency and brand identity. They are cost-effective, user-friendly, and offer flexibility for customization.
+
+![alt_text](images/image34.png "image_tooltip")
+
+#### List Management
+
+List management involves organizing and maintaining targeted Contact Lists for efficient outreach while adhering to Do Not Contact (DNC) regulations.
+
+Managing Contact Lists: 
+
+
+![alt_text](images/image35.png "image_tooltip")
+ 
+Managing DNC Lists:
+
+
+![alt_text](images/image36.png "image_tooltip")
+
+
+#### Dashboard
+
+The campaign dashboard allows campaign managers to obtain an overview of all their campaigns, including their status—whether they're active, inactive, or completed. This centralized snapshot facilitates effortless monitoring and management.
+
+![alt_text](images/image37.png "image_tooltip")
+
+You can drill down individual campaigns to get detailed insights.
+
+![alt_text](images/image38.png "image_tooltip")
+
+#### Settings
+
+The settings allow campaign managers to decide the maximum number of concurrent calls that can be dialed.
+
+![alt_text](images/image39.png "image_tooltip")
+
