@@ -77,7 +77,7 @@ After the deployment process is complete the status is changed to “Deployed”
     You will receive an email notification after your model deployment is completed and an API is generated, and it is ready to use.
 
 
-You can click the required model from the model listing as shown in the preceding image and go to the **Manage** page. You can find the API endpoint created for this open-source model. To use this model as a service, the generated code is helpful. You can copy it easily as shown in the following image.
+You can click the required model from the model listing as shown in the preceding image and go to the **Manage** page. The API endpoint created for this open-source model is displaed there. To use this model as a service, the generated code is helpful. You can copy it easily as shown in the following image.
 
 <img src="../images/deplyed-model-end-point.png" alt="Deplyed Model End Point" title="Deplyed Model End Point" style="border: 1px solid gray; zoom:80%;">
 

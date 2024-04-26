@@ -141,7 +141,7 @@ nav:
           - End Node Overview: agents/agents-flows/types-of-nodes/end-node/end-node-overview.md
           - Add a New End Node: agents/agents-flows/types-of-nodes/end-node/add-a-new-end-node.md
           - Configure an End Node: agents/agents-flows/types-of-nodes/end-node/configure-an-end-node.md
-      - Perform other actions on the Flow Builder:
+      - Perform other Actions on the Flow Builder:
         - Manage Input and Output: agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
         - Run the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
         - Create a New Version of the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md

@@ -2,12 +2,12 @@
 
 **To configure the API node, follow these steps**:
 
-1. Add an API node to the canvas as shown in the preceding procedure.
+1. Add an API node to the canvas.
 2. Click the **API node** and the general properties dialog for the node is displayed on the right side of the page as shown in the following image.
 
     <img src="../image/configure-api-node.png" alt="Configure API Node" title="Configure API Node" style="border: 1px solid gray; zoom:80%;">
 
-1. Enter a **Custom name** for the node.
+1. Enter a **Custom Name** for the node.
 2. Select the API **Type** from the drop-down list.
 
     * **REST:** A REST API conforms to the constraints of the REST API architecture and allows interaction with RESTful web services.

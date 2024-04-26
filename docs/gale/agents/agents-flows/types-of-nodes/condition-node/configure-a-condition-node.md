@@ -4,7 +4,7 @@ This node helps you to trigger path flows based on the conditions you set.
 
 **To configure the Condition node, follow these steps**:
 
-1. Add a Condition node to the canvas as shown in the preceding procedure.
+1. Add a Condition node to the canvas.
 2. Click the **Condition node** and the general properties dialog for the node is displayed on the right side of the page as shown in the following image.
 
     <img src="../images/configure-the-condition-node.png" alt="Configure the Condition Node" title="Configure the Condition Node" style="border: 1px solid gray; zoom:80%;">

@@ -2,7 +2,7 @@
 
 **To add a Gen** **AI node, follow these steps**:
 
-1. Open the required agents from the list of agents to create the flow.
+1. Open the required agent from the list of agents to create the flow.
 2. Click **Agent flow** from the left navigation bar. The **Agent** flow page is displayed.
 3. Click **Go to flow** to open the flow builder page.
 

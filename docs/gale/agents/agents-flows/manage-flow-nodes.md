@@ -38,7 +38,7 @@ To rearrange nodes on your canvas, drag and drop them to the desired location as
 
 !!! note
 
-    You right-click anywhere on the canvas and can perform some other actions on the canvas such as Changing the background color of the canvas, Show /Hide UI, and Show /Hide Grid by.
+    You can right-click anywhere on the canvas and perform some other actions on the canvas such as Changing the background color of the canvas, Show/Hide UI, and Show/Hide Grid by.
 
 
 ### Connect nodes
@@ -59,7 +59,7 @@ Node connections are either made within the configuration of each node or by dra
 
 **Steps to delete a node connection**:
 
-1. To delete node connections, click the line connecting two nodes and a Delete icon is displayed.
+1. To delete node connections, click the line connecting two nodes and a **Delete** icon is displayed.
 2. Click the **Delete** icon to delete the connection.
 
     The nodes remain on the canvas but will not be connected anymore. To ensure a working flow, you must create another connection between the nodes.

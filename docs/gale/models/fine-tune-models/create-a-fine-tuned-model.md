@@ -3,7 +3,7 @@
 You can create a fine-tuned model in the Create a fine-tune model wizard, which involves the following 5 steps:
 
 * General details
-* Selecting a Base model
+* Selecting a base model
 * Fine-tuning configuration
 * Adding the training and evaluation datasets
 * Adding the test dataset (optional)
@@ -21,7 +21,7 @@ Let us now look into each step in detail.
 1. Click the **Create a fine-tuned model** button on the **Models** page. The **Create a fine-tuned model** dialog is displayed.
 2. In the **General details** section:
 
-    * Enter a **Name** and **Description** for your fine-tuned model.
+    * Enter a **Model name** and **Description** for your fine-tuned model.
 
         <img src="../images/general-details-section.png" alt="General Details Section" title="General Details Section" style="border: 1px solid gray; zoom:80%;">
 
@@ -33,12 +33,12 @@ Let us now look into each step in detail.
 
     Or
 
-    * Select Hugging Face connection. For more information about how to connect to Hugging Face account, see [How to Connect to your Hugging Face Account](../../integrations/how-to-to-connect-to-your-hugging-face-account.md).
+    * Select Hugging Face connection to use. For more information about how to connect to Hugging Face account, see [How to Connect to your Hugging Face Account](../../integrations/how-to-to-connect-to-your-hugging-face-account.md).
 
 
     <img src="../images/base-model-section.png" alt="Base Model Section" title="Base Model Section" style="border: 1px solid gray; zoom:80%;">
 
-1. In the **Fine-Tuning configuration** section:
+1. In the **Fine-tuning configuration** section:
 
     * Select a **Fine-tuning type** that you want to fine-tune for your requirements.
 

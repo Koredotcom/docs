@@ -6,4 +6,4 @@ Each flow within GALE features an essential input node and output node. Informat
 
 After completing the flow development, you can proceed to test it and assess whether the application satisfies its intended function.
 
-As an illustration, you could develop an application tailored to a retail business setting, focusing on gathering data related to retail performance, investment activities, and gross margins. Employ the model to evaluate pivotal metrics like Return on Investment (ROI) and produce improvement recommendations based on the assessment.
+As an illustration, you could develop an agent tailored to a retail business setting, focusing on gathering data related to retail performance, investment activities, and gross margins. Employ the model to evaluate pivotal metrics like Return on Investment (ROI) and produce improvement recommendations based on the assessment.
