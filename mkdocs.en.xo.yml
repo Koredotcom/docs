@@ -150,6 +150,8 @@ nav:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
     - Release Notes:
       - What's New in XO 11: getting-started/whats-new-in-xo-platform.md  
+      - Latest Updates: release-notes/latest-updates.md
+
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:
