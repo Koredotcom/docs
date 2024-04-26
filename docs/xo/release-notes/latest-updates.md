@@ -1,5 +1,7 @@
 # 11.0.x Release Notes
 
+This document provides information on the various releases and the corresponding feature updates and enhancements introduced in version 11.0.x of the Kore.ai Experience Optimization Platform.
+
 ## v11.0.1 April 27, 2024
 
 **Minor Release**
