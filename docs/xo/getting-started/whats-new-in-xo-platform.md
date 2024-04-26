@@ -120,7 +120,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
 ## Key Differences Between XO11 and XO10
 
-### Welcome Events Replaced with Welcome Flows"
+### Welcome Events Replaced with Welcome Flows
 
  Earlier, incoming conversations were handled by events such as OnConnect/Welcome events. These events are now replaced with Flows. Flows are designed to replace the Welcome or OnConnect Message, Trigger a Dialog Task, or Run a Script.  
  <img src="../images/xo-platform-welcomeflow.png" alt="Welcome flow" title="Welcome flow" style="border: 1px solid gray; zoom:70%;">
@@ -251,7 +251,7 @@ The Chunk Browser provides a tool for observing the extracted chunks from the so
 <img src="../images/xo-platform-Chunk Browser.png" alt="Chunk Browser" title="Chunk Browser" style="border: 1px solid gray; zoom:70%;">
 
 * **Editing of Chunks**: You can edit the chunk information directly within the browser interface. This capability can help you add any missed information, edit inaccurate information, or simply enrich the extracted information.  
-<img src="../images/xo-platform-Chunk Viewer.png" alt="Chunk Viewe" title="Chunk Viewe" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/xo-platform-Chunk Viewer.png" alt="Chunk Viewer" title="Chunk Viewer" style="border: 1px solid gray; zoom:70%;">
 
 
 #### Index Configuration
