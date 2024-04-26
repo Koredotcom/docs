@@ -1,4 +1,4 @@
-# **How to Enable Hugging Face**
+# How to Enable Hugging Face
 
 GALE seamlessly integrates with the Hugging Face platform, allowing you to incorporate cutting-edge text generation and text-to-text generation models. Any publicly available Hugging Face model can be swiftly deployed via GALE with minimal effort. To utilize private or exclusive Hugging Face models, you can effortlessly establish a connection by supplying your Hugging Face access tokens. This facilitates GALE in unleashing the complete capabilities of your Hugging Face account, regardless of whether you possess public or private assets.
 
@@ -49,7 +49,7 @@ You can test your connection after you provide the details to verify the accurac
 
      <img src="../images/manage-hugging-face-connection.png" alt="Manage Hugging Face Connection" title="Manage Hugging Face Connection" style="border: 1px solid gray; zoom:80%;">
 
-     !!! note
+    !!! note
 
         Once the Hugging Face connection is completed, you can see your connection name in the drop-down box while selecting and deploying an Open-source model.  For more information about selecting and deploying, see [Select and Deploy an Open-Source Model](../models/open-source-models/select-and-deploy-an-open-source-model.md)
 
