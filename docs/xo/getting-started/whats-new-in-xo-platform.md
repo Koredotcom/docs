@@ -351,16 +351,13 @@ Users can be defined at the app level and assigned necessary roles, providing gr
 
 Additional contact center attributes can now be added under the Contact Center section, enhancing customization and tailoring the application to your specific requirements.
 
-
 #### Administrator / Admin Role Deprecated
 
 The Administrator/Admin role is deprecated. Existing accounts will seamlessly transition to a new custom role with equivalent permissions on Contact Center AI, ensuring continuity and preserving access levels.
 
-
 ### Updated Bot Architecture
 
 Instance and Automation bots are merged into a single bot. New accounts will require managing only one bot. However, existing accounts that will be migrated will continue to have separate instance and automation bots.
-
 
 ### New Campaigns Module
 
@@ -405,4 +402,44 @@ You can drill down individual campaigns to get detailed insights.
 The settings allow campaign managers to decide the maximum number of concurrent calls that can be dialed.  
 <img src="../images/xo-platform-cc-setting.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:70%;">
 
+## Agent AI Updates
 
+Agent AI (previously Kore.ai AgentAssist) is now a part of the unified XO Platform v11. 
+
+It is an AI-powered virtual assistant for contact centers that enhances agent efficiency and service quality. It automates repetitive tasks like information retrieval and transactions and provides real-time customer insights and suggestions. By using Kore.ai's NLP and AI/ML technologies, AgentAI understands customer intent and offers contextually appropriate responses and FAQs. AgentAI operates as a widget within popular contact center platforms, supporting both voice and chat interactions.
+
+The key features and experience changes are summarized below.
+
+### Single Configuration Screen
+
+You don’t need different configuration screens for third-party contact centers and SmartAssist. For third-party integrations, navigate to **Channels** and use the **bot details** to establish a connection.
+
+### SearchAssist / Answers
+
+SearchAssist provides an intelligent, contextual, and personalized experience in every interaction across web and mobile channels. You can enhance Agent AI's search capabilities by integrating it with the Search AI application. You can utilize LLM and Gen AI to generate answers, but that section applies only to automation.  
+<img src="../images/xo-platform-Knowledge AI.png" alt="Knowledge AI" title="Knowledge AI" style="border: 1px solid gray; zoom:70%;">
+
+* Search Results: Gives you the control over Knowledge AI search results. Agents can select between Always Show, Show with XO Results, and Show as a Fallback event.
+* Show Auto Suggestions: When On, auto suggestions are available in the Ask AgentAssist search bar. 
+* API Integration: You can optimize your search experience with the advanced Knowledge AI API configuration. Choose Basic to use the default Knowledge AI configurations or Advanced to configure how you want to use the Knowledge AI. The Advanced option lets you use your own API. The default selection is Basic.
+* Control expand behavior of Answers: You can now customize the number of answers that appear for your Knowledge AI search in the AgentAssist widget. For example, if you select “3” on the AgentAssist Settings page, only three answers will appear in the widget. By default, “4” is selected.
+
+
+### Settings
+
+
+#### Channel-specific Setting 
+
+This section lets you set your preferences based on the channels. It has three channels – Chat, Voice, and Email – with a channel-specific default selection of options.  
+<img src="../images/Agent-Assist-Setting.png" alt="Channel-specific Setting " title="Channel-specific Setting " style="border: 1px solid gray; zoom:70%;">
+
+The available options are as follows:
+
+* **Proactive Mode**: This widget automates intent identification, entity extraction, and transcript generation. It also allows for automatic (proactive) transcript logging and intent suggestions. By default, this widget is enabled for all three channels.
+* **Agent Coaching**: This widget enables real-time agent coaching based on analyzing agent utterances and speech. You can set up specific utterances and speech patterns for AgentAssist to take relevant actions, such as providing hints and nudges or emailing the manager when those patterns occur. By default, it is disabled for all channels and is only available for chat and voice channels.
+* **Agent Playbook**: This widget provides agents with structured guidance and helps streamline task management. Supervisors can define stages and steps to follow, choose step progression (sequential or random), mark whether the steps are completed manually or automatically, and set adherence notifications. They can leverage this feature to gain valuable insights into agent adherence to specific playbook steps and use this data to enhance agents’ ability to handle interactions and significantly improve customer satisfaction. By default, this widget is disabled, but you can enable it for all three channels.
+* **Send Button**: This option controls the accessibility of the Send button functionality for AgentAssist responses. By default, it’s enabled for Voice and Chat channels.
+* **Copy Button**: This option controls the accessibility of the Copy button functionality for AgentAssist responses. By default, it’s enabled for all three channels.
+* **Transcript Tab**: This option controls the appearance of the Transcript tab in the AgentAssist widget. By default, this widget is enabled and available for the Chat channel only.
+* **Auto Summarization**: This option controls the automatic generation of a summary of the conversation when it ends. Agents can copy the summary and save it into the Notes or Remark field while closing the conversation. By default, it’s enabled for Voice and Chat channels only, and it also has the option to select the Submit button.
+* **Widget Landing Tab**: This option allows you to select the default landing page for your selected channel and is available for all three channels.
