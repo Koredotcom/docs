@@ -150,11 +150,7 @@ nav:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
     - Release Notes:
       - What's New in XO 11: getting-started/whats-new-in-xo-platform.md  
-      - Latest Updates:
-        - Automation AI: release-notes/latest-updates/automation-ai.md
-        - Contact Center AI: release-notes/latest-updates/contact-center-ai.md
-        - Search AI: release-notes/latest-updates/search-ai.md
-        - Agent AI: release-notes/latest-updates/agent-ai.md
+      - Latest Updates: release-notes/latest-updates.md
 
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
