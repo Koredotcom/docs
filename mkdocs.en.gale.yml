@@ -182,6 +182,10 @@ nav:
   - Data: 
     - Overview: data/overview.md 
     - Upload a Dataset: data/upload-a-dataset.md
+  - Integrations: 
+    - How to Enable Hugging Face: integrations/how-to-enable-hugging-face.md
+    - How to Integrate with S3 Bucket: integrations/how-to-integrate-with-s3-bucket.md
+    - How to Integrate with Weights & Biases: integrations/how-to-integrate-with-wandb.md
   - Administration:
     - User Management: 
         - Overview: administration/user-management/overview.md
