@@ -20,7 +20,7 @@ The simulator also provides a **debugger**. The debug option is enabled after th
 
 ![Debugger](../images/testing/debug-option.png "Debugger")
 
-The **Debugger**is displayed on the left of the preview widget. The debug information is available under the following tabs:
+The **Debugger** is displayed on the left of the preview widget. The debug information is available under the following tabs:
 
 **Qualified Chunks:** This tab provides information about the chunks used in the answer generation.  
 

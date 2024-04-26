@@ -41,7 +41,8 @@ Defining a business rule involves specifying the **conditions** to trigger the r
 
 Enter a **name** for the rule. 
 
-Use the **Condition** section to specify the criteria for triggering the rule. Conditions are based on the different types of context information available and the parameter values set. Provide the context variable to be used in the Select Context textbox. This field offers dynamic suggestions about the different variables available for use. 
+
+Use the **Condition** section to specify the criteria for triggering the rule. These conditions are formulated based on various types of contextual information and the values assigned to parameters. Specify the relevant context variable in the designated **Select Context** textbox. This feature provides dynamic suggestions, presenting the available variables that can be used to define conditions.
 
 Use the **Outcome** section to specify the actions to be performed when the conditions are met. 
 
