@@ -36,7 +36,7 @@ This node helps you to trigger path flows based on the conditions you set.
 
         !!! note
 
-            You can add multiple AND/OR criteria by clicking +AND or +OR. If you start with AND condition then you can only add ADD similarly if you add OR condition, then you can add only OR. You cannot add both in the same node. You can delete an existing AND/OR criterion by clicking the “-” sign on its left.
+            You can add multiple AND/OR criteria by clicking +AND or +OR. If you start with AND condition then you can only add AND similarly if you add OR condition, then you can add only OR. You cannot add both in the same node. You can delete an existing AND/OR criterion by clicking the “-” sign on its left.
 
 
 1. In the **Else section**, select the node you want to trigger if the If condition fails.

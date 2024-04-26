@@ -13,7 +13,7 @@ Once the fine-tuning process is completed, you can deploy your fine-tuned model.
 
     Or
 
-    * Click the **Deploy** tab in the left panel on the **Overview** page of your fine-tune model.
+    * Click the **Model Endpoint** from the left panel on the of your fine-tune model and then click **Deploy model** button.
 
         <img src="../images/deploy-fine-tuned-model-from-overview.png" alt="Deploy Fine-Tuned Model from Overview" title="Deploy Fine-Tuned Model from Overview" style="border: 1px solid gray; zoom:80%;">
 
@@ -94,4 +94,4 @@ Once the fine-tuning process is completed, you can deploy your fine-tuned model.
     * In the Prompt Playground to compare prompts against commercial, open-source, or any other fine-tune model.
 
 
-    * In the agents flow builder via the Gen AI Node.
+    * In an agent in the agent flow builder via the Gen AI Node.
