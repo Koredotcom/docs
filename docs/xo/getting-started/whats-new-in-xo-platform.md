@@ -177,7 +177,7 @@ The New Marketplace is available inside the App (previously, it was on the bot's
 <img src="../images/xo-platform-marketplace.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:70%;">
 
 Also, the Marketplace offers pre-built dialogue templates for each integration. These templates are expertly designed by Kore, leveraging the available APIs from the integrated system. When a user installs a template, it is added as a dialogue task to the virtual assistant's use case section, enabling users to create rich and engaging conversational experiences with minimal effort.  
-<img src="../getting-started/images/xo-platform-marketplace 2.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/xo-platform-marketplace 2.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:70%;">
 
 ### New Billing Page
 
