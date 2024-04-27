@@ -51,9 +51,4 @@ GALE provides enterprise-grade features to deploy AI at scale:
 
 With GALE's enterprise-ready capabilities, you can confidently scale your AI adoption while ensuring data security, reliable performance, and deployment flexibility to suit your unique business needs.
 
-[Sign up for Beta Testing](https://info.kore.ai/gale-beta-signup) { .md-button } {:target="_blank"} 
-
-
-
-
-
+[Sign up for Beta Testing](https://info.kore.ai/gale-beta-signup) {:target="_blank"} { .md-button }
