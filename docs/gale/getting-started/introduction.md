@@ -1,7 +1,9 @@
 # Introducing All-new GALE Platform
 
-Kore.ai is excited to launch the beta version of GALE! This initial release focuses on core functionality to provide value to our early customers. [Sign up for Beta Testing](https://info.kore.ai/gale-beta-signup){ .md-button }  
-GALE is a new platform for building LLM-powered AI agents. It provides tools to integrate all the pieces necessary to power modern AI agents that can be seamlessly integrated into your existing systems and workflows, enabling you to quickly unlock the benefits of AI.  
+Kore.ai is excited to launch the beta version of GALE! This initial release focuses on core functionality to provide value to our early customers.
+
+GALE is a new platform for building LLM-powered AI agents. It provides tools to integrate all the pieces necessary to power modern AI agents that can be seamlessly integrated into your existing systems and workflows, enabling you to quickly unlock the benefits of AI.
+
 <img src="../images/gale-arch.png" alt="Gale Architecture" title="Gale Architecture" style="border: 1px solid gray; zoom:100%;">
 
 You don't need to be an AI expert or write complex code. The platform provides ready-to-use AI models and intuitive tools to create custom AI solutions quickly.
@@ -16,7 +18,8 @@ Models, Playground, and Agents are the key components of GALE that work together
 
 ### Models
 
-Models are the core of GALE. Based on your needs, you can choose from fine-tuned, commercial, or open-source AI models. Once you've selected the right models, you can easily integrate them into your AI agents. Guardrails ensure the models generate outputs responsibly and follow defined constraints. Additionally, you can deploy these AI agents via API endpoints and integrate them with your existing systems as required.  
+Models are the core of GALE. Based on your needs, you can choose from fine-tuned, commercial, or open-source AI models. Once you've selected the right models, you can easily integrate them into your AI agents. Guardrails ensure the models generate outputs responsibly and follow defined constraints. Additionally, you can deploy these AI agents via API endpoints and integrate them with your existing systems as required. 
+
 <img src="../images/gale-componenets.png" alt="Models" title="Models" style="border: 1px solid gray; zoom:100%;">
 
 [Learn more about Models :octicons-arrow-right-24:](../models/overview.md)
@@ -31,11 +34,12 @@ Agents allow you to create AI-powered workflows and automation with little to no
 ### Playground
 
 GALE's Prompt Playground allows you to experiment and refine prompts to get the best performance from AI models. You can test different prompts across various models - external, fine-tuned, or open-source. The Playground helps you identify the ideal model and configurations for each prompt through an iterative process. This streamlined workspace enables you to optimize prompts rapidly for maximum model effectiveness.  
-<img src="./images/playground.png" alt="Prompt Playground" title="Prompt Playground" style="border: 1px solid gray; zoom:100%;">
+
+<img src="../images/playground.png" alt="Prompt Playground" title="Prompt Playground" style="border: 1px solid gray; zoom:100%;">
 
 [Learn more about Playground :octicons-arrow-right-24:](../playground/overview.md)
 
-## Deploy AI at Scale
+## Deployment AI at Scale
 
 GALE provides enterprise-grade features to deploy AI at scale:
 
@@ -44,6 +48,8 @@ GALE provides enterprise-grade features to deploy AI at scale:
 * **Flexible Deployment**: Based on your organization's preferences, you can deploy AI models on the cloud or on-premises infrastructure.
 
 With GALE's enterprise-ready capabilities, you can confidently scale your AI adoption while ensuring data security, reliable performance, and deployment flexibility to suit your unique business needs.
+
+ [Sign up for Beta Testing](https://info.kore.ai/gale-beta-signup){ .md-button }  
 
 
 
