@@ -15,31 +15,33 @@ Once your AI agent is ready, GALE simplifies the deployment process via API, all
 
 ## Key Components of GALE
 
-Models, Playground, and Agents are the key components of GALE that work together to enable businesses to leverage AI capabilities effectively.
+Agents, Models, and Playground are the key components of GALE that work together to enable businesses to leverage AI capabilities effectively.
 
-### Models
+=== "Agents"
 
-Models are the core of GALE. Based on your needs, you can choose from fine-tuned, commercial, or open-source AI models. Once you've selected the right models, you can easily integrate them into your AI agents. Guardrails ensure the models generate outputs responsibly and follow defined constraints. Additionally, you can deploy these AI agents via API endpoints and integrate them with your existing systems as required. 
+    Agents allow you to create AI-powered workflows and automation with little to no coding required. Using a visual drag-and-drop interface, you can easily configure settings and combine multiple complex workflows. Guardrails ensure the models within these workflows operate responsibly, adhering to societal norms and your business requirements. The agents can seamlessly integrate with AWS and other products like Search AI, expanding the range of use cases. This user-friendly approach empowers you to leverage AI capabilities across various applications without extensive technical expertise.  
 
-<img src="../images/gale-componenets.png" alt="Models" title="Models" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/agents.png" alt="Agents" title="Agents" style="border: 1px solid gray; zoom:100%;">
 
-[Learn more about Models :octicons-arrow-right-24:](../models/overview.md)
+    [Learn more about Agents :octicons-arrow-right-24:](../agents/overview.md)
 
-### Agents
+=== "Models"
 
-Agents allow you to create AI-powered workflows and automation with little to no coding required. Using a visual drag-and-drop interface, you can easily configure settings and combine multiple complex workflows. Guardrails ensure the models within these workflows operate responsibly, adhering to societal norms and your business requirements. The agents can seamlessly integrate with AWS and other products like Search AI, expanding the range of use cases. This user-friendly approach empowers you to leverage AI capabilities across various applications without extensive technical expertise.  
+    Models are the core of GALE. Based on your needs, you can choose from fine-tuned, commercial, or open-source AI models. Once you've selected the right models, you can easily integrate them into your AI agents. Guardrails ensure the models generate outputs responsibly and follow defined constraints. Additionally, you can deploy these AI agents via API endpoints and integrate them with your existing systems as required. 
 
-<img src="../images/agents.png" alt="Agents" title="Agents" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/gale-componenets.png" alt="Models" title="Models" style="border: 1px solid gray; zoom:100%;">
 
-[Learn more about Agents :octicons-arrow-right-24:](../agents/overview.md)
+    [Learn more about Models :octicons-arrow-right-24:](../models/overview.md)
 
-### Playground
+=== "Playground"
 
-GALE's Prompt Playground allows you to experiment and refine prompts to get the best performance from AI models. You can test different prompts across various models - external, fine-tuned, or open-source. The Playground helps you identify the ideal model and configurations for each prompt through an iterative process. This streamlined workspace enables you to optimize prompts rapidly for maximum model effectiveness.  
+    GALE's Prompt Playground allows you to experiment and refine prompts to get the best performance from AI models. You can test different prompts across various models - external, fine-tuned, or open-source. The Playground helps you identify the ideal model and configurations for each prompt through an iterative process. This streamlined workspace enables you to optimize prompts rapidly for maximum model effectiveness.  
 
-<img src="../images/playground.png" alt="Prompt Playground" title="Prompt Playground" style="border: 1px solid gray; zoom:100%;">
+    <img src="../images/playground.png" alt="Prompt Playground" title="Prompt Playground" style="border: 1px solid gray; zoom:100%;">
 
-[Learn more about Playground :octicons-arrow-right-24:](../playground/overview.md)
+    [Learn more about Playground :octicons-arrow-right-24:](../playground/overview.md)
+
+<hr>
 
 ## Deployment of AI at Scale
 
@@ -51,4 +53,4 @@ GALE provides enterprise-grade features to deploy AI at scale:
 
 With GALE's enterprise-ready capabilities, you can confidently scale your AI adoption while ensuring data security, reliable performance, and deployment flexibility to suit your unique business needs.
 
-[Sign up for Beta Testing](https://info.kore.ai/gale-beta-signup) {:target="_blank"} { .md-button }
+[Sign up for Beta Testing :octicons-arrow-right-24:](https://info.kore.ai/gale-beta-signup) {:target="_blank"}
