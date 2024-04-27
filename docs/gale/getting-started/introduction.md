@@ -2,7 +2,8 @@
 
 Welcome to the beta launch of GALE by Kore.ai! This initial release focuses on delivering key features to provide value to our early customers.
 
-Introducing All-new GALE Platform
+## Introducing All-new GALE Platform
+
 GALE is a new platform for building LLM-powered AI agents. It provides tools to integrate all the pieces necessary to power Gen AI agents that can be seamlessly integrated into your existing systems and workflows, enabling you to quickly unlock the benefits of Gen AI.
 
 <img src="../images/gale-arch.png" alt="Gale Architecture" title="Gale Architecture" style="border: 1px solid gray; zoom:100%;">
@@ -54,6 +55,6 @@ GALE provides enterprise-grade features to deploy AI at scale:
 With GALE's enterprise-ready capabilities, you can confidently scale your AI adoption while ensuring data security, reliable performance, and deployment flexibility to suit your unique business needs.
 
 ## Sign up for Beta Testing
-The GALE beta program is now open and accepting applications. Beta testers can use our no-code toolset to build and deploy AI applications. While GALE offers a wide range of effective AI models for diverse services this beta program may not be ideal for every use case. Use the form below to tell us a bit about what you plan to build with GALE. We will consider each application to ensure the beta program fits well with the goals of each project. We appreciate your interest in GALE and look forward to collaborating with you.
+The GALE beta program is now open and accepting applications. Beta testers can use our no-code toolset to build and deploy AI applications. While GALE offers a wide range of effective AI models for diverse services this beta program may not be ideal for every use case. Use the link below to tell us a bit about what you plan to build with GALE. We will consider each application to ensure the beta program fits well with the goals of each project. We appreciate your interest in GALE and look forward to collaborating with you.
 
 [Sign up for Beta Testing :octicons-arrow-right-24:](https://info.kore.ai/gale-beta-signup#Application-Form){:target="_blank"}
