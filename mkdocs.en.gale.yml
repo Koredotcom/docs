@@ -111,8 +111,8 @@ copyright: |
 nav:
   - Home : home.md
   - Getting Started: 
-    - Introduction: introduction.md
-    - Core Capabilities of GALE: core-capabilities-of-gale.md
+    - Introduction: getting-started/introduction.md
+    - Core Capabilities of GALE: getting-started/core-capabilities-of-gale.md
   - Agents: 
     - Overview: agents/overview.md
     - Create a New Agent: agents/create-a-new-agent.md
