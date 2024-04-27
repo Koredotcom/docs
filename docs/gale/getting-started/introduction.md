@@ -1,8 +1,8 @@
-# Introducing All-new GALE Platform
+# Welcome to GALE (Beta)
 
-Kore.ai is excited to launch the beta version of GALE! This initial release focuses on core functionality to provide value to our early customers.
-<hr>
+Welcome to the beta launch of GALE by Kore.ai! This initial release focuses on delivering key features to provide value to our early customers.
 
+Introducing All-new GALE Platform
 GALE is a new platform for building LLM-powered AI agents. It provides tools to integrate all the pieces necessary to power Gen AI agents that can be seamlessly integrated into your existing systems and workflows, enabling you to quickly unlock the benefits of Gen AI.
 
 <img src="../images/gale-arch.png" alt="Gale Architecture" title="Gale Architecture" style="border: 1px solid gray; zoom:100%;">
