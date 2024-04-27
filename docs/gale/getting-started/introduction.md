@@ -3,15 +3,15 @@
 Kore.ai is excited to launch the beta version of GALE! This initial release focuses on core functionality to provide value to our early customers.
 <hr>
 
-GALE is a new platform for building LLM-powered AI agents. It provides tools to integrate all the pieces necessary to power modern AI agents that can be seamlessly integrated into your existing systems and workflows, enabling you to quickly unlock the benefits of AI.
+GALE is a new platform for building LLM-powered AI agents. It provides tools to integrate all the pieces necessary to power Gen AI agents that can be seamlessly integrated into your existing systems and workflows, enabling you to quickly unlock the benefits of Gen AI.
 
 <img src="../images/gale-arch.png" alt="Gale Architecture" title="Gale Architecture" style="border: 1px solid gray; zoom:100%;">
 
-You don't need to be an AI expert or write complex code. The platform provides ready-to-use AI models and intuitive tools to create custom AI solutions quickly.
+You don't need to be an AI expert or write complex code. The platform provides ready-to-use AI models and intuitive tools to create custom Gen AI solutions quickly.
 
 With GALE's user-friendly drag-and-drop interface, you can easily prototype, customize, and deploy AI agents tailored to your specific needs. The platform offers a range of popular open-source and commercial AI models that you can fine-tune as required. You can also chain together workflows, manage inputs/outputs, and implement guardrails - all without the need for coding expertise.
 
-Once your AI agent is ready, GALE simplifies the deployment process via API, allowing you to seamlessly integrate it into your existing systems and applications. This streamlined approach to leveraging AI capabilities makes GALE the perfect solution for any business looking to accelerate their AI adoption.
+Once your AI agent is ready, GALE simplifies the deployment process via API, allowing you to seamlessly integrate it into your existing systems and applications. This streamlined approach to leveraging Gen AI capabilities makes GALE the perfect solution for any business looking to accelerate their AI adoption.
 
 ## Key Components of GALE
 
@@ -57,5 +57,3 @@ With GALE's enterprise-ready capabilities, you can confidently scale your AI ado
 The GALE beta program is now open and accepting applications. Beta testers can use our no-code toolset to build and deploy AI applications. While GALE offers a wide range of effective AI models for diverse services this beta program may not be ideal for every use case. Use the form below to tell us a bit about what you plan to build with GALE. We will consider each application to ensure the beta program fits well with the goals of each project. We appreciate your interest in GALE and look forward to collaborating with you.
 
 [Sign up for Beta Testing :octicons-arrow-right-24:](https://info.kore.ai/gale-beta-signup#Application-Form){:target="_blank"}
-
-[Sign up for Beta Testing](https://info.kore.ai/gale-beta-signup#Application-Form){ .md-button }{:target="_blank"}
