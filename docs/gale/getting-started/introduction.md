@@ -1,6 +1,7 @@
 # Introducing All-new GALE Platform
 
 Kore.ai is excited to launch the beta version of GALE! This initial release focuses on core functionality to provide value to our early customers.
+<hr>
 
 GALE is a new platform for building LLM-powered AI agents. It provides tools to integrate all the pieces necessary to power modern AI agents that can be seamlessly integrated into your existing systems and workflows, enabling you to quickly unlock the benefits of AI.
 
@@ -27,6 +28,7 @@ Models are the core of GALE. Based on your needs, you can choose from fine-tuned
 ### Agents
 
 Agents allow you to create AI-powered workflows and automation with little to no coding required. Using a visual drag-and-drop interface, you can easily configure settings and combine multiple complex workflows. Guardrails ensure the models within these workflows operate responsibly, adhering to societal norms and your business requirements. The agents can seamlessly integrate with AWS and other products like Search AI, expanding the range of use cases. This user-friendly approach empowers you to leverage AI capabilities across various applications without extensive technical expertise.  
+
 <img src="../images/agents.png" alt="Agents" title="Agents" style="border: 1px solid gray; zoom:100%;">
 
 [Learn more about Agents :octicons-arrow-right-24:](../agents/overview.md)
@@ -39,7 +41,7 @@ GALE's Prompt Playground allows you to experiment and refine prompts to get the 
 
 [Learn more about Playground :octicons-arrow-right-24:](../playground/overview.md)
 
-## Deployment AI at Scale
+## Deployment of AI at Scale
 
 GALE provides enterprise-grade features to deploy AI at scale:
 
@@ -49,7 +51,7 @@ GALE provides enterprise-grade features to deploy AI at scale:
 
 With GALE's enterprise-ready capabilities, you can confidently scale your AI adoption while ensuring data security, reliable performance, and deployment flexibility to suit your unique business needs.
 
- [Sign up for Beta Testing](https://info.kore.ai/gale-beta-signup){ .md-button }  
+[Sign up for Beta Testing](https://info.kore.ai/gale-beta-signup) { .md-button } {:target="_blank"} 
 
 
 
