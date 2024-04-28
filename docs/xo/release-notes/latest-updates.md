@@ -33,7 +33,7 @@ A new permission for Outbound Email is added in the Flows & Routing section with
 
 Learn more.
 
-### Campaigns 
+### Campaigns
 
 (Available in: v11.0.1)
 
