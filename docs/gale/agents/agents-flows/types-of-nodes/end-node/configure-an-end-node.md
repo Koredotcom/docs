@@ -14,5 +14,6 @@
     Enter the value in this format:
     
     {{context.steps.xxxx.xxxx}} On Success or display an error message on Failure.
+    
 4. Click the **+ADD A KEY** option to add multiple outputs at once. 
 The details are autosaved.

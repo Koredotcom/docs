@@ -30,13 +30,13 @@ You can configure a Gen AI node and connect to any model.
     
     * **Top P**: This parameter, also known as nucleus sampling, controls the diversity of the model's output. It sets a threshold where the model will only consider the top tokens whose cumulative probability exceeds the threshold. A high top P (for example, 0.9) will make the model's output more diverse, while a low top P (for example, 0.1) will make the output more deterministic.
 
-You can access the output of GenAI by writing: 
+    You can access the output of GenAI by writing: 
 
-{{context.steps.YOURGENAINODENAME.output}}. 
+    {{context.steps.YOURGENAINODENAME.output}}. 
 
-Also, GALE has been integrated in such a way that it can auto recognize variables / outputs. 
+    Also, GALE has been integrated in such a way that it can auto recognize variables / outputs. 
 
-Type "context.steps." and it displays the possible context variables / nodes and then their outputs, and so on.
+    Type "context.steps." and it displays the possible context variables / nodes and then their outputs, and so on.
 
 6. Click the **Actions** icon and select the actions that you want the node to trigger when the Gen AI node is successful or when it fails.
 

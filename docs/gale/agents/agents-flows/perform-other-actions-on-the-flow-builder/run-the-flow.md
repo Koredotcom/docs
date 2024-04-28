@@ -1,6 +1,6 @@
 # Run the Flow
 
-You can run a flow and test it to see how it works. Once you click the Run, a debug log opens and context variable data are generated. Every node in the flow has a context temporary storage where you can view what is the context object at each node level.
+You can run a flow and test it to see how it works. Once you click the Run, a debug log opens and a context object is generated. Every node in the flow has a context temporary storage where you can view what is the context object at each node level.
 
 The output shows the start, end, elapsed time taken to run the flow, and if any unresolved issues are displayed.
 
@@ -10,7 +10,7 @@ The output shows the start, end, elapsed time taken to run the flow, and if any 
 
     <img src="../images/run-the-flow.png" alt="Run the Flow" title="Run the Flow" style="border: 1px solid gray; zoom:80%;">
 
-    The debug log is opened with output results is started.
+    The debug log is opened and output results are started.
 
 1. Click the **Debug** icon on the top of the output dialog to open the **Debug** log as shown in the following image.
 

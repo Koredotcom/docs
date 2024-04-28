@@ -18,11 +18,13 @@
 
 1. Enter a **script** in the script box. Context variables are available for you to use while writing the script.
 
-    For example:
+    Syntax for Java:
 
     context.js_fact20 = 1
 
     for(var i=1;i&lt;21;i++)
+
+    Syntax for Python:
 
     {
 
