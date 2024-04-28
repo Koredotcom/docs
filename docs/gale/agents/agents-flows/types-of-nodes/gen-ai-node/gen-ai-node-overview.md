@@ -2,4 +2,4 @@
 
 Using the Gen AI node, you can establish connections to any model that you have configured within the Model Studio.
 
-Using the Gen AI nodes helps address these situations by removing the necessity to predict and script every complex scenario within predefined rules and conditions. This approach enables more fluid and natural conversations, ultimately enhancing the end-user experience.
+You can harness the power of expansive language models such as ChatGPT for tasks such as content creation, summarization, translation, and so on.

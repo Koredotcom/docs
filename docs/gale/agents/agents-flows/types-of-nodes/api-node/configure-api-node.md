@@ -39,11 +39,13 @@
 
     * **GET** – Returns the content of an existing target resource.
 
-1. Paste your **API call URL** in the text field and click **Test**. To use entity node values as parameters, use the following syntax for accessing the Context object: https://myDomain.com/{{context.entities.topic}} for the context.entities.topic.
+1. Paste your **API call URL** in the text field and click **Test**. It triggers the process of creating and sending an HTTP request to that URL, allowing you to interact with the corresponding API endpoint and inspect the response.
 
-    You must use the double brackets {{ context.object }}.
+1. In the **Headers** tab, specify the details of the header for the Header Key and Value pair if required to access the specified request URL.
 
-1. In the **Headers** tab, specify the details of the header for the Header Key and Value pair if required to access the specified request URL. You can add a new pair by typing it in the empty fields. You can delete a pair by clicking the Delete (Bin) icon next to it as shown in the following image.
+    For example: Key : Content-Type  Value: application/json
+
+    You can add a new pair by typing it in the empty fields. You can delete a pair by clicking the **Delete (Bin)** icon next to it as shown in the following image.
 
     <img src="../image/add-headers.png" alt="Add Headers" title="Add Headers" style="border: 1px solid gray; zoom:80%;">
 

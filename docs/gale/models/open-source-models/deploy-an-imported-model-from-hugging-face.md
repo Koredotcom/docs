@@ -19,7 +19,7 @@ You can deploy an open-source model by selecting the Hugging Face option in the 
 
     * Enter a **Deployment name** and **Description** for your model.
 
-        <img src="..images/deploy-hugging-face-general-details-section.png" alt="Deploy Hugging Face General Details Section" title="Deploy Hugging Face General Details Section" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/deploy-hugging-face-general-details-section.png" alt="Deploy Hugging Face General Details Section" title="Deploy Hugging Face General Details Section" style="border: 1px solid gray; zoom:80%;">
 
     * Provide tags to ease the search for the model and click **Next**.
 
@@ -28,7 +28,7 @@ You can deploy an open-source model by selecting the Hugging Face option in the 
     * Select the **Hugging Face connection to use** from the drop-down list. For more information about How to enable Hugging Face in GALE, see [How to add a connection with Hugging Face](../../integrations/how-to-enable-hugging-face.md).
 
 
-        <img src="..images/deploy-hugging-face-import-model-section.png" alt="Deploy Hugging Face Import Model Section" title="Deploy Hugging Face Import Model Section" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/deploy-hugging-face-import-model-section.png" alt="Deploy Hugging Face Import Model Section" title="Deploy Hugging Face Import Model Section" style="border: 1px solid gray; zoom:80%;">
 
     * Enter the **Hugging Face model name** from Hugging Face that you wish to import and click **Next**.
 

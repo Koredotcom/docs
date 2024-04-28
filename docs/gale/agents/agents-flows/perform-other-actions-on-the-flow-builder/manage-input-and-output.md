@@ -14,13 +14,13 @@ You can initiate a fresh agent flow and specify the inputs required to initializ
 
 1. Click the **+ Add input variable** button under the **Input** tab.
 
-    The **Enter input variable** dialog is displayed.
+    The **Enter input variable** dialog is displayed. 
 
     <img src="../images/enter-input-variable.png" alt="Enter Input Variable" title="Enter Input Variable" style="border: 1px solid gray; zoom:80%;">
 
-1. Enter a **Name(key)** to the input variable.
+1. Enter a **Name(key)** to the input variable. For example, Product_ID.
 2. Select a data type from the **Type** drop-down list. If you want to make the data type mandatory, then move the **Mandatory** toggle button.
-3. You can Enable the **Default value** toggle button to add a Default value for the input variable. You can set a default value for this input variable. If the value is not provided, then the flow automatically selects this default value.
+3. You can Enable the **Default value** toggle button to add a Default value for the input variable. You can set a default value for this input variable. If the value is not provided, then the flow automatically selects this default value. For example, Default Value - 9393JAS
 4. Click **Save**. The Input variable is displayed in the list on the **Manage Input & Output** dialog.
 
 **To manage output variables, follow these steps**:
