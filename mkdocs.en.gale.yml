@@ -165,6 +165,7 @@ nav:
     - Open-Source Models: 
       - Overview: models/open-source-models/open-source-models-overview.md
       - Select and Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
+      - Deploy an Imported Model from Hugging Face: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
       - Generate a New API Key: models/open-source-models/generate-an-api-key-open-source.md
       - Configure your Open-Source Model: models/open-source-models/configure-your-open-source-model.md
     - External Models: 

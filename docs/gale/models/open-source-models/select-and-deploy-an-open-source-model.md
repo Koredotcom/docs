@@ -13,7 +13,7 @@ Currently, we support thirty-plus open-source models and provide them as a servi
 
     <img src="../images/select-an-open-source-model.png" alt="Select an Open Source Model" title="Select an Open Source Model" style="border: 1px solid gray; zoom:80%;">
 
-1. Select and click a model from the list. You can select Hugging Face also from the list of options. For more information about Hugging Face, see [How to Enable Hugging Face](../../integrations/how-to-enable-hugging-face.md).
+1. Select and click a model from the list. You can select Hugging Face also from the list of options. For more information about Hugging Face, see [Deploy an Imported Model from Hugging Face](../../models/open-source-models/deploy-an-imported-model-from-hugging-face.md).
 
     The **Deploy** dialog is displayed.
 
