@@ -20,7 +20,7 @@ Steps to generate the Queue Metrics Summary Report:
         * CSV
     * Send To (single email address or a mailing list).
 7. Click **Create**.
-8. An instance of the **Queue Metrics Summary Report** is generated.
+8. The **Queue Metrics Summary Report** is generated.
 <img src="../images/queue-metrics-summary-report-created.png" alt="Queue Metrics Summary Report Created" title="Queue Metrics Summary Report Created" style="border: 1px solid gray; zoom:100%;">
 
 9. Click the **Run** icon next to the instance of the report.
@@ -37,7 +37,7 @@ While generating reports you have two options, Run On Demand and Schedule.
 
     !!! Note
 
-        The red dot beside the report indicates that the report has been generated within the last 24 hours. You can download the report and save and view it in pdf format.
+        The red dot beside the report indicates that it was generated within the last 24 hours. You can download, save, and view the report in PDF format.
 
 The Queue Metrics Summary Report is generated and is available for download.
 <img src="../images/queue-metrics-summary-report-output.png" alt="Queue Metrics Summary Report Output" title="Queue Metrics Summary Report Output" style="border: 1px solid gray; zoom:100%;">

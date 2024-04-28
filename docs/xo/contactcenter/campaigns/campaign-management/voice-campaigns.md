@@ -75,6 +75,58 @@ Steps to create Voice campaigns:
 
 4. Click **Save**. The campaign is created.
 
+### Schedule Voice Campaigns
+
+Scheduling allows precise control over when your messages will be delivered. You can seamlessly plan campaigns to coincide with peak engagement times, ensuring maximum impact. Whether daily, weekly, Monthly, or Yearly, tailor your schedule to optimize outreach and enhance audience responsiveness. Scheduling a campaign will activate the campaign at a designated date and time.
+
+Steps to schedule a Campaign:
+
+1. Click the **Schedule** tab and turn on the **Schedule Campaign** toggle.
+<img src="../images/schedule-campaign-toggle.png" alt="Schedule campaign Toggle" title="Schedule Campaign Toggle" style="border: 1px solid gray; zoom:100%;">
+
+2. Select the campaign **Start Date & Time**. **End Date & Time** is optional.
+<img src="../images/start-and-end-time.png" alt="Start & End time" title="Start & End Time" style="border: 1px solid gray; zoom:100%;">
+
+3. Select the **Time Zone** in which the campaign will be dialed.
+<img src="../images/timezone-dropdown.png" alt="Timezone" title="Timezone" style="border: 1px solid gray; zoom:100%;">
+
+4. Turn on the Recurrence toggle if you want the campaign to recur at defined intervals. You can select from the following options:
+    1. Daily,
+    2. Weekly,
+    3. Monthly,
+    4. Yearly.
+
+    **Every “Enter Value” day(s)** is a subset of what you select, Daily, Weekly, Monthly, or Yearly.
+
+    !!! Note
+
+        When a Scheduled campaign completes the first occurrence, it considers that run as complete so on the next recurrence it will start reaching the contacts freshly.
+        For example, If a Campaign is scheduled to run every week on Monday then on the first occurrence of Monday, the dialer will dial as many contacts as it can and then treat the contact list as completed. The next Monday the dialer will again consider dialing all contacts in the list.
+
+5. Turning on the Allow Recurrence Precedence toggle will give the recurrence start and end time precedence over Contactable timings.
+For example, if Contactable Timings are 9:00 AM to 6:00 PM but the user selects Recurrence Start Time as 8:00 AM, the campaign will start contacting from 8:00 AM.
+<img src="../images/allow-recurrence-precedence.png" alt="Allow Recurrence Precedence" title="Allow Recurrence Precedence" style="border: 1px solid gray; zoom:100%;">
+
+6. Click **Save**. A campaign is created as per the configured schedule.
+
+    !!! Notes
+
+        * When a timezone is selected in the 'Contactable Timings' section, it automatically becomes the default timezone for scheduling in the 'Schedule' section. However, campaign managers can still choose a different timezone from the dropdown if necessary.
+        
+        * Once a campaign is scheduled, it will become active at the specified date and time. However, the contacts will be dialed according to the 'Contactable Timings' time and timezone settings.
+        
+        * To ensure accuracy, the contacts are scrubbed again 15 minutes before the scheduled time of a campaign.
+        
+        * A scheduled campaign will automatically run at the scheduled date/time but the contacts are dialed as per the contactable timings and timezone. Clicking the Run button for a scheduled campaign displays an error message.
+
+### Stop a Scheduled Campaign
+
+Click the **Stop** button under actions. Stopping a scheduled campaign will end the instance of that campaign.
+<img src="../images/stop-scheduled-campaign.png" alt="Stop Button" title="Stop Button" style="border: 1px solid gray; zoom:100%;">
+
+A confirmation message is displayed. Click **Stop**.
+<img src="../images/stop-scheduled-campaign-confirmation.png" alt="Stop Scheduled campaign Confirmation" title="Stop Scheduled Campaign Confirmation" style="border: 1px solid gray; zoom:100%;">
+
 #### Agentless Dialer
 
 Agentless Dialer maintains a queue of leads to be dialed and can automatically dial a new phone number. The dialer initiates an outbound call to the selected phone number and when a call is answered, the dialer connects the call to the configured voice experience flow. The dialer can detect answering machines or voicemail and reschedule the call by sending the call status to the campaign manager. If a call goes unanswered or reaches a voicemail with Answering Machine Detection (AMD) turned on, the dialer disconnects the call and automatically dials the following number on the list.

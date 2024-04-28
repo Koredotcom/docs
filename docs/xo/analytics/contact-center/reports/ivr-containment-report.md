@@ -18,7 +18,7 @@ To generate the IVR Containment Report:
         * CSV
     * Send To (single email address or a mailing list)
 7. Click **Create**.
-8. An instance of the IVR Containment Report is generated.
+8. The IVR Containment Report is generated.
 <img src="../images/ivr-containment-report-generated.png" alt="IVR Containment Report Generated" title="IVR Containment Report Generated" style="border: 1px solid gray; zoom:100%;">
 
 9. Click the **Run** icon next to the instance of the report.
@@ -36,7 +36,7 @@ While generating reports you have two options, Run On Demand and Schedule.
     !!! Note
 
         * The IVR containment report is available only in CSV format.
-        * The red dot beside the report indicates that the report has been generated within the last 24 hours.
+        * The red dot beside the report indicates that it was generated within the last 24 hours.
 
 11. The IVR Containment Report is generated and is available for download.
 <img src="../images/ivr-containment-report-output.png" alt="IVR Containment Report Output" title="IVR Containment Report Output" style="border: 1px solid gray; zoom:100%;">

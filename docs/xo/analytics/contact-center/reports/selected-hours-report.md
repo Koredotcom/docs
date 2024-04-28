@@ -18,7 +18,7 @@ To generate the Selected Hours Report:
         4. CSV
     3. Send To (single email address or a mailing list)
 7. Click **Create**.
-8. An instance of the **Selected Hours Report** is generated.
+8. The **Selected Hours Report** is generated.
 <img src="../images/selected-hours-report-created.png" alt="Selected Hours Report Created" title="Selected Hours Report Created" style="border: 1px solid gray; zoom:100%;">
 
 9. Click the **Run** icon next to the instance of the report.
@@ -35,7 +35,7 @@ While generating reports, you have two options - Run On Demand and Schedule.
 
     !!! Note
 
-        The red dot beside the report indicates that the report has been generated within the last 24 hours. You can download the report and save and view it in pdf format.
+        The red dot beside the report indicates that it was generated within the last 24 hours. You can download, save, and view the report in PDF format.
 
 The Selected Hours Report is generated and is available for download.
 <img src="../images/selected-hours-report-output.png" alt="Run Selected Hours Report" title="Run Selected Hours Report" style="border: 1px solid gray; zoom:100%;">
