@@ -1,4 +1,4 @@
-# Overview
+# About Models
 
 The Model Studio provides the capability to augment base models by integrating the proprietary data from your enterprise and fine-tuning them directly within the product. This streamlined process enables the base model's fine-tuning to easily achieve task-specific performance. You can seamlessly bring in models from external sources and open-source models, expanding the range of available models to address your needs.
 

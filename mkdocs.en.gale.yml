@@ -111,13 +111,12 @@ copyright: |
 nav:
   - Home : home.md
   - Getting Started: 
-    - Introduction: introduction.md
-    - Core Capabilities of GALE: core-capabilities-of-gale.md
+    - Welcome to GALE (Beta): getting-started/introduction.md    
   - Agents: 
-    - Overview: agents/overview.md
+    - About Agents: agents/overview.md
     - Create a New Agent: agents/create-a-new-agent.md
     - Agent Flows:
-      - Flows Overview: agents/agents-flows/flows-overview.md
+      - About Flows: agents/agents-flows/flows-overview.md
       - Manage Flow Nodes: agents/agents-flows/manage-flow-nodes.md
       - Types of Nodes: 
         - Overview of Nodes: agents/agents-flows/types-of-nodes/overview-of-nodes.md
@@ -149,13 +148,13 @@ nav:
     - Deploy an Agent: agents/deploy-an-agent.md
     - Create a New API Key: agents/create-a-new-api-key.md 
     - Guardrails: 
-      - Overview: agents/guardrails/overview.md
+      - About Guardrails: agents/guardrails/overview.md
       - Add a  Scanner: agents/guardrails/add-a-scanner.md
       - Test Guardrail: agents/guardrails/test-guardrail.md
       - Manage Guardrails: agents/guardrails/manage-guardrails.md
     - Configure an Agent: agents/configure-an-agent.md
   - Models: 
-    - Overview: models/overview.md 
+    - About Models: models/overview.md 
     - Fine-Tune Models: 
       - Overview: models/fine-tune-models/fine-tune-models-overview.md
       - Create a Fine-Tuned Model: models/fine-tune-models/create-a-fine-tuned-model.md
@@ -173,14 +172,14 @@ nav:
       - Add an External Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
       - Add an External Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
   - Playground: 
-    - Overview: playground/overview.md
+    - About Playground: playground/overview.md
     - Create a New Prompt Experiment: playground/create-a-new-prompt-experiment.md
     - Add a Model: playground/add-a-model.md
     - Select a Template for a Prompt: playground/select-a-template-for-a-prompt.md
     - Generate Output using Advanced Mode: playground/generate-output-using-advanced-mode.md
     - Explore Other Actions to Perform: playground/explore-other-actions-to-perform-in-the-prompt-playground.md    
   - Data: 
-    - Overview: data/overview.md 
+    - About Data: data/overview.md 
     - Upload a Dataset: data/upload-a-dataset.md
   - Integrations: 
     - How to Enable Hugging Face: integrations/how-to-enable-hugging-face.md
@@ -188,7 +187,7 @@ nav:
     - How to Integrate with Weights & Biases: integrations/how-to-integrate-with-wandb.md
   - Administration:
     - User Management: 
-        - Overview: administration/user-management/overview.md
+        - About User Management: administration/user-management/overview.md
         - Invite a User to your Account: administration/user-management/invite-a-user-to-your-account.md
         
    
