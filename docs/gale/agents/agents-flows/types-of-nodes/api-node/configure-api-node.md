@@ -43,7 +43,10 @@
 
 1. In the **Headers** tab, specify the details of the header for the Header Key and Value pair if required to access the specified request URL.
 
-    For example: Key : Content-Type  Value: application/json
+    **Syntax**: 
+    
+    Key : Content-Type  
+    Value: application/json
 
     You can add a new pair by typing it in the empty fields. You can delete a pair by clicking the **Delete (Bin)** icon next to it as shown in the following image.
 
