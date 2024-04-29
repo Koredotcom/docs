@@ -80,18 +80,3 @@ Once the fine-tuning process is completed, you can deploy your fine-tuned model.
     After the deployment process is complete the status is changed to “Deployed”. You can now infer this model across GALE and externally. The deployment of your model will start and after the deployment process is complete, you can find the API endpoint created for your fine-tuned model.
 
 
-1. The API endpoint is available in 3 formats. You can copy and use the same as required.
-
-    After the model is deployed, the API endpoint is generated which implies that your fine-tuned model is ready for inferencing externally and across the other sections in GALE.
-
-    !!! note
-
-        You will receive an email notification after your model deployment is completed and an API is generated and ready to use.
-    
-    You can use the deployed fine-tuned model in GALE for the following use cases:
-
-
-    * In the Prompt Playground to compare prompts against commercial, open-source, or any other fine-tune model.
-
-
-    * In an agent in the agent flow builder via the Gen AI Node.
