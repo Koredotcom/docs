@@ -12,7 +12,7 @@ This document provides information on the various releases and the corresponding
 
 #### Updated Default Start Flow
 
-All fields of the default Start Flows can now be edited except Channels. [Learn more](../flows/create-flows.md#the-start-flows).
+All fields of the default Start Flows can now be edited except the associated channel. [Learn more](../flows/create-flows.md#the-start-flows).
 
 ## Contact Center AI
 
