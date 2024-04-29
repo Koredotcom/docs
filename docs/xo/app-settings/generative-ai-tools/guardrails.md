@@ -8,7 +8,7 @@ Large language models (LLMs) are powerful AI systems that can be leveraged to of
 Guardrails enable responsible and ethical AI practices by allowing platform users to easily enable/disable rules and configure settings for different features using LLMs. Additionally, the users can design and implement fallback behaviors for a feature, such as triggering specific events, if a guardrail detects content that violates set standards.
 
 The XO Platform leverages the open-source models tailored for conversational AI applications. Each guardrail is powered by a different model, that has been fine-tuned specifically to validate text for toxicity, bias, filter topics, etc. Kore.ai hosts these models and periodically updates them through training to detect emerging threats and prompt injection patterns effectively. These small models reside within the platform, ensuring swift performance during runtime.
-<img src="./images/guardrails-home.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/guardrails-home.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Types of Guardrails
@@ -149,7 +149,7 @@ Steps to disable a Guardrail:
 
 
 1. Navigate to **App Settings** > **Generative AI Tools** > **Guardrails**.
-2. Turn off the **Status** toggle for the respective guardrail. The disable guardrail popup is displayed.  <img src="../images/guardrails(1).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:50%;">
+2. Turn off the **Status** toggle for the respective guardrail. The disable guardrail popup is displayed.  <img src="../images/guardrails(1).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:45%;">
 3. Click **Disable**. The success message is displayed.
 
 
@@ -228,7 +228,7 @@ Steps to change the fallback behavior:
 
 
 1. Go to **App Settings** > **Generative AI Tools** > **Dynamic Conversation** > **GenAI Node** > **Advance Settings**.  
-<img src="../images/guardrails(3).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/guardrails(3).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:50%;">
 
 2. Select the fallback behavior as required.
 3. Click **Save**.
