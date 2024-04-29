@@ -6,6 +6,16 @@ This document provides information on the various releases and the corresponding
 
 **Minor Release**
 
+## LLM and Generative AI
+
+### Custom LLM Integration Support for Rephrase Dialog Responses  
+
+Rephrase Dialog Responses now supports Custom LLMs in addition to commercial LLMs. This allows platform users to use the rephrasing feature with their own custom-trained language models and create customized prompts tailored to their specific use cases, models, and linguistic contexts, providing greater flexibility and control over the rephrasing process and conversational experiences. [Learn more](../app-settings/generative-ai-tools/dynamic-conversations-features.md#rephrase-dialog-responses).
+
+### Custom LLM Integration Support for Answer Generation 
+
+In addition to pre-built commercial LLMs, the Answer Generation now supports Custom LLMs. It allows platform users to craft personalized prompts to unlock the full potential of the Answer Generation and deliver uniquely tailored conversation experiences for their users. [Learn more](../app-settings/generative-ai-tools/dynamic-conversations-features.md#answer-generation).
+
 ## Automation AI
 
 ### Flows & Channels

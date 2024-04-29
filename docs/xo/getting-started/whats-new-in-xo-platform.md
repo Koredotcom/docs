@@ -326,7 +326,6 @@ The automation process is simplified by merging Conversational Input and Run Aut
 
 Deflect to Chat is no longer supported. This change is driven by the limited usage observed among customers, but we remain committed to addressing relevant needs and exploring adding support based on internal use cases.
 
-
 ### Centralized Publish Module
 
 To ensure consistency, simplify workflow management, and centralize management tasks, we've introduced a centralized Publish Module. All flows can be published from this module.  

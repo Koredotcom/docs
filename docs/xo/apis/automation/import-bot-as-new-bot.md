@@ -1,6 +1,7 @@
 # Import Bot as a New Bot API
 
 To create a new bot in the account owner’s Builder Tool using the _File IDs_ generated when uploading the files to the local server.
+You can import a bot using either individual Definition, Config, Functions and Icon files, or you can directly use the zip file that is creating while performing bot export. In this case you will need to upload the zip file and use the File ID thus generated.
 
 Please refer to the [Upload File API](../upload-file) for uploading and obtaining the **_File Id_**.
 
@@ -31,7 +32,7 @@ Please refer to the [Upload File API](../upload-file) for uploading and obtainin
    <td><strong>Authorization</strong>
    </td>
    <td><code>auth: {{JWT}}</code>
-<p>
+<br>
 See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
@@ -65,7 +66,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   <tr>
    <td>host
    </td>
-   <td>The environment URL. For example, <code>https://bots.kore.ai</code>
+   <td>The environment URL. For example, <code>https://platform.kore.ai</code>
    </td>
    <td>Required
    </td>
@@ -73,6 +74,8 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 </table>
 
 ## Sample Request
+
+Case 1: JSON
 
 ```json
 curl -X POST \
@@ -84,6 +87,22 @@ curl -X POST \
   "configInfo" : "5bxxxxxxxxxxxxx4fa",
   "botFunctions":["5bxxxxxxxxxxxxxea6"],
   "icon":"5bxxxxxxxxxxxxxxxx4fb"
+  "name":"gallahad4",
+  "uploadMode":"JSON"
+}'
+```
+
+Case 2: ZIP file
+
+```json
+curl -X POST \
+  https://{{host}}/api/public/bot/import \
+  -H 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
+   -H 'content-type: application/json' \
+   -d '{
+  "zipInfo" : "661e717ffad890b38442ea39",
+  "name":"volkihar",
+  "uploadMode":"ZIP"
 }'
 ```
 
@@ -98,12 +117,20 @@ curl -X POST \
    <td><strong>MANDATE</strong>
    </td>
   </tr>
+   <tr>
+   <td><strong>uploadMode</strong>
+   </td>
+   <td>“Mode of Upload (JSON/ZIP)”
+   </td>
+   <td>Required
+   </td>
+  </tr>
   <tr>
    <td><strong>botDefinition</strong>
    </td>
    <td>“Bot definition file id”
    </td>
-   <td>Required
+   <td>Required (If uploadMode is **JSON**)
    </td>
   </tr>
   <tr>
@@ -111,7 +138,7 @@ curl -X POST \
    </td>
    <td>“Bot configuration file id”
    </td>
-   <td>Required
+   <td>Required (If uploadMode is **JSON**)
    </td>
   </tr>
   <tr>
@@ -119,7 +146,7 @@ curl -X POST \
    </td>
    <td>“Bot functions File id”
    </td>
-   <td>Optional
+   <td>Optional (If uploadMode is **JSON**)
    </td>
   </tr>
   <tr>
@@ -127,14 +154,22 @@ curl -X POST \
    </td>
    <td>“Bot icon File id”
    </td>
-   <td>Required
+   <td>Required (If uploadMode is **JSON**)
+   </td>
+  </tr>
+  <tr>
+   <td><strong>zipInfo</strong>
+   </td>
+   <td>“Zip file id”
+   </td>
+   <td>Required (If uploadMode is **ZIP**)
    </td>
   </tr>
   <tr>
    <td><strong>name</strong>
    </td>
    <td>“Bot name”
-<p>
+<br>
 – If not provided, it is fetched from the existing bot’s copy.
    </td>
    <td>Optional
@@ -144,7 +179,7 @@ curl -X POST \
    <td><strong>purpose</strong>
    </td>
    <td>“customer”/”employee”
-<p>
+<br>
 – If not provided, it is fetched from the existing bot’s copy.
    </td>
    <td>Optional
@@ -156,19 +191,19 @@ curl -X POST \
 
 ```json
 {
+    "_id": "bir-034fc180-4f84-5c54-a963-5d85b76a36dc",
+    "streamRefId": "46d82741-1edc-536b-92aa-7e58ead9deed",
     "status": "pending",
-    ""streamId": "st-xxxxx-xxx-xxx-xxx-xxxxx",
     "statusLogs": [
         {
             "taskType": "importRequest",
-            "taskName": "Welcome",
+            "taskName": "volkihar",
             "status": "success"
         }
     ],
-    "createdBy": "u-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx",
     "requestType": "Botimport",
-    "bir": "bir-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-    "createdOn": "2022-07-29T07:24:17.496Z",
+    "createdBy": "u-ed453f8f-131a-5d6f-86fe-03405203199d",
+    "createdOn": "2024-04-29T11:09:25.312Z",
     "__v": 0
 }
 ```
