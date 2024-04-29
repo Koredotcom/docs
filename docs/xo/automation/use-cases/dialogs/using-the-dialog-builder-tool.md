@@ -368,9 +368,49 @@ Using **Bookmarks**, you can create navigation points in a dialog with a complex
 
 <img src="../images/navigate-dialog-builder-text-bookmark.png" alt="Notes and Bookmark" title="Notes and Bookmark" style="border:1px solid gray;zoom:70%;">
 
-**Comments** are effective in creating a collaborative environment. Often, in the course of development, at some point, you may need help and input from other bot users. For example, you need them to pitch in with their knowledge about the business logic or functional expertise or need clarifications in order to proceed. In such situations, you can place a comment wherein you can tag the respective user and mention your need. You can also add your response to a comment.
+**Comments** are effective in creating a collaborative environment. Often, in the course of development, at some point, you may need help and input from other bot users. For example, you need them to pitch in with their knowledge about the business logic or functional expertise or need clarifications in order to proceed. In such situations, you can place a comment wherein you can tag the respective user and mention your need.
 
-<img src="../images/using-dialog-builder-comment-response.png" alt="Comment and Response" title="Comment and Response" style="border:1px solid gray;zoom:70%;">
+Below action can be performed:
+
+* Add new comment: You can add a comment by selecting the comments icon available in the header and placing the comment anywhere on the canvas. You can also right click on canvas to add comments. A text area opens where you can type in the comment.
+* View comment: You can see a user icon and reply count where the comment has been posted. Mouse hover on the icon displays the preview of the first comment. Clicking on the comment icon opens the comments panel with the selected comment’s thread.
+* Respond to a comment: You can respond to the comment from the individual comments thread.
+* Resolve Comment: You can resolve the comment by clicking the <img src="../images/using-dialog-builder-resolve-comment-icon.png"> icon once discussion in the thread is closed. The Resolve option is available in the View Comments panel too.
+* Delete comment/reply: You can delete the comment or a reply. Note that you can delete a comment or reply only if it is posted by you. Also, deleting the main comment will delete all the responses too.
+* Edit comment/reply: You can edit the comment or a reply. Note that you can edit comments or replies only if they are posted by you.
+* Other Options (At thread level)
+    * Mark as Unread - You can mark a comment as Read
+    * Copy link - Clicking on this option,you can copy the link of the comment. When you access the link, you are panned to the relevant comment
+    * Delete Thread - You can delete the entire thread if the main comment is posted by you
+
+    <img src="../images/using-dialog-builder-comment-thread-level-option.png" alt="Comments - Thread level options" title="Comments - Thread level options" style="border:1px solid gray;zoom:70%;">
+
+* Mention and Notification: You mention others in comments using **@** followed by their name, triggering notifications to ensure that the mentioned team members are aware of the discussion.
+* Other Features:
+    * Zoom Out Preview - When canvas is zoomed out, the nearby comment icons are clubbed and displayed with the count.
+        
+        <img src="../images/using-dialog-builder-comment-zoom-in-view.png" alt="Comments - Zoom In view" title="Comments - Zoom In view" style="border:1px solid gray;zoom:70%;">
+        
+        Zoom In view
+
+        <img src="../images/using-dialog-builder-comment-zoom-out-view.png" alt="Comments - Zoom Out view" title="Comments - Zoom Out view" style="border:1px solid gray;zoom:70%;">
+        
+        Zoom Out view
+
+    * Timestamp - Time stamp will be displayed in the comment thread as well as the comments panel. It will be shown as “relative time indicators” and the complete timestamp will be displayed on hover
+
+* Options in the Comments Panel
+    * Show/Hide All comments (Default - Show)
+    * Show/Hide Resolved comments (Default - Hide)
+    * Mark all as read
+    * Textual Search 
+    * Filtering
+        * All
+        * Unread
+        * My Mentions
+        * My comments
+
+        <img src="../images/using-dialog-builder-comment-panel.png" alt="Comments panel" title="Comments panel" style="border:1px solid gray;zoom:70%;">
 
 #### Mini map
 
