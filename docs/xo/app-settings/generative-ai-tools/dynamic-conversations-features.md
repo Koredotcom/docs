@@ -297,7 +297,7 @@ The following table displays the Dynamic Conversation features and the supported
    </td>
    <td>❌
    </td>
-   <td>❌
+   <td>✅
    </td>
    <td>❌
    </td>
