@@ -78,7 +78,7 @@ This node empowers you to create a script for handling context variables or othe
 
 3. Click the **Actions** icon and select the actions that you want the node to trigger when the Functions node is successful or when it fails.
 
-    <img src="../images/actions-for-function-node.png" alt="Actions for Function Node" title="Actions for Function Node" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-a-new-function-node.png" alt="Actions for Function Node" title="Actions for Function Node" style="border: 1px solid gray; zoom:80%;">
 
 1. Select the **Go to Node** under the **On Success** section of the Function node configuration dialog. Based on the node you selected a respective new node is added to the canvas.
 2. Select the **Go to Node** under the **On Failure** section of the Function node configuration dialog. Based on the node you selected a respective new node is added to the canvas.
