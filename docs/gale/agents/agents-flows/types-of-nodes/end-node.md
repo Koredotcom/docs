@@ -26,9 +26,9 @@ This node allows you to define the message displayed to the user when the experi
 
     The End node is created on the canvas and you can now define the properties of the node by clicking on the node. You can drag and move a node to any location on the canvas.
 
-!!! note
+    !!! note
 
-    The start node is displayed by default on the flow builder.
+        The start node is displayed by default on the flow builder.
 
 ## Configure the End Node
 

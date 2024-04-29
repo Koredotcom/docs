@@ -26,9 +26,9 @@ This node empowers you to create a script for handling context variables or othe
 
         The Function node is created on the canvas and you can now define the properties of the node by clicking on the node. You can drag and move a node to any location on the canvas.
 
-!!! note
+    !!! note
 
-    The start node is displayed by default on the flow builder.
+        The start node is displayed by default on the flow builder.
 
 
 ## Configure the Function Node
@@ -41,15 +41,17 @@ This node empowers you to create a script for handling context variables or othe
     <img src="../images/configure-the-function-node.png" alt="Configure the Function Node" title="Configure the Function Node" style="border: 1px solid gray; zoom:80%;">
 
 1. Enter a **Custom Name** by which you will identify the node later.
-2. Click the **Define a Script** box, and the **Edit script** dialog is displayed. Script node is used to process/parse the given input or the output of the previous node in a python or JavaScript.
+2. Click the **Define a Script** box, and the **Edit script** dialog is displayed. Script node is used to process/parse the given input or the output of the previous node in Python or JavaScript.
 
     <img src="../images/edit-script-box.png" alt="Edit Script Box" title="Edit Script Box" style="border: 1px solid gray; zoom:80%;">
 
-1. Select **Java** or **Python** from the drop-down list of the **Edit script** dialog.
+1. Select **JavaScript** or **Python** from the drop-down list of the **Edit script** dialog.
 
     <img src="../images/select-javascript.png" alt="Select Javascript" title="Select Javascript" style="border: 1px solid gray; zoom:80%;">
 
 1. Enter a **Script** in the script box. Context variables are available for you to use while writing the script.
+
+    For example, 
 
     **Syntax for Java**:
 

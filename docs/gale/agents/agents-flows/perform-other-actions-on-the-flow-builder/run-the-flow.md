@@ -41,6 +41,6 @@ The output shows the start, end, elapsed time taken to run the flow, and if any 
 
         <img src="../images/error-in-the-debug-report.png" alt="Error in the Debug Report" title="Error in the Debug Report" style="border: 1px solid gray; zoom:80%;">
 
-!!! note
+    !!! note
 
-    You can stop the flow in the middle of a flow and restart the execution by clicking the **Run** icon again.
+        You can stop the flow in the middle of a flow and restart the execution by clicking the **Run** icon again.
