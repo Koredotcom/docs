@@ -20,7 +20,7 @@ Steps to generate Agent Activity Summary report:
         * CSV
     * Send To (single email address or a mailing list)
 7. Click **Create**.
-8. An instance of the **Agent Activity Summary Report** is created.
+8. The **Agent Activity Summary Report** is generated.
 <img src="../images/agent-activity-summary-report-created.png" alt="Agent Activity Summary Report Created" title="Agent Activity Summary Report Created" style="border: 1px solid gray; zoom:100%;">
 
 9. Click the **Run** icon as shown below to generate the report.
@@ -38,7 +38,7 @@ Click the **PDF/Page** icon to download the report.
 
     !!! Note
 
-        The red dot beside the report indicates that the report has been     generated within the last 24 hours. You can download the report and save and view it in pdf format.
+        The red dot beside the report indicates that it was generated within the last 24 hours. You can download, save, and view the report in PDF format.
 
 The Agent Activity Report is generated and is available for download.
 <img src="../images/agent-activity-summary-report-output.png" alt="Agent Activity Summary Report Output" title="Agent Activity Summary Report Output" style="border: 1px solid gray; zoom:100%;">

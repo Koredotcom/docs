@@ -20,7 +20,7 @@ Steps to generate the Queue Chat Metrics Report:
         * CSV
     * Send To (single email address or a mailing list)
 7. Click **Create**.
-8. An instance of the Queue Chat Metrics Interval Report is generated.
+8. The Queue Chat Metrics Interval Report is generated.
 <img src="../images/queue-chat-metrics-interval-report-created.png" alt="Queue Chat Metrics Interval Report Created" title="Queue Chat Metrics Interval Report Created" style="border: 1px solid gray; zoom:100%;">
 
 9. Click the **Run** icon next to the instance of the report.
@@ -37,10 +37,87 @@ While generating reports you have two options, Run On Demand and Schedule.
 
     !!! Note
 
-        The red dot beside the report indicates that the report has been generated within the last 24 hours. You can download the report and save and view it in PDF format.
+        The red dot beside the report indicates that it was generated within the last 24 hours. You can download, save, and view the report in PDF format.
 
 The Queue Chat Metrics Interval Report is generated and is available for download.
 <img src="../images/queue-chat-metrics-interval-report-output.png" alt="Queue Chat Metrics Interval Report Output" title="Queue Chat Metrics Interval Report Output" style="border: 1px solid gray; zoom:100%;">
+
+### About Queue Chat Metrics Interval Report
+
+<table>
+  <tr>
+   <td>Column Name
+   </td>
+   <td>Description
+   </td>
+  </tr>
+  <tr>
+   <td>Date
+   </td>
+   <td>Date of the conversation
+   </td>
+  </tr>
+  <tr>
+   <td>Incoming
+   </td>
+   <td>Number of calls (add for summary)
+   </td>
+  </tr>
+  <tr>
+   <td>Accepted
+   </td>
+   <td>Number of calls (add for summary)
+   </td>
+  </tr>
+  <tr>
+   <td>Abandoned
+   </td>
+   <td>Number of calls (add for summary)
+   </td>
+  </tr>
+  <tr>
+   <td>Transferred
+   </td>
+   <td>Number of calls (add for summary)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg Duration
+   </td>
+   <td>Total time of call (no ACW)/number of calls accepted (average for summary)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg ACW
+   </td>
+   <td>Total time of ACW / number of calls accepted (average for summary)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg Messages
+   </td>
+   <td>Total number of messages between callers and agents / number of calls accepted (average for summary)
+   </td>
+  </tr>
+  <tr>
+   <td>Avg Use Saved
+   </td>
+   <td>Total number of saved messages on all calls / number of calls accepted (average for the summary)
+   </td>
+  </tr>
+  <tr>
+   <td>CSAT
+   </td>
+   <td>Avg CSAT on all calls / number of calls with CSAT info. (average for summary)
+   </td>
+  </tr>
+  <tr>
+   <td>Concurrency
+   </td>
+   <td>Total handle time of all chats/total actual time spent on all chats
+   </td>
+  </tr>
+</table>
 
 #### Related Link
 

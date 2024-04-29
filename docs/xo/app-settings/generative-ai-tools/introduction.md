@@ -35,8 +35,8 @@ The Integration of Generative AI and LLM enables the following features:
     
 
 * Dynamic Conversations features:
+    * **Answer Generation**: This feature helps generate an answer to the user question based on the data ingested into the Search AI application.
     * **GenAI Node**: Collect Entities from end-users in a free-flowing conversation using LLM and Generative AI in the background. You can define entities to be collected as well as rules & scenarios.
-    * **Answer from Documents**: Helps answer end-user queries from unstructured PDF documents without the need to extract individual FAQs and train them.
     * **GenAI Prompt:** Leverage this node to unlock the power of Generative AI with your prompts, enabling you to build creative and custom use cases.
     * **Rephrase Dialog Responses**: Enhance end-user experience with empathetic and contextual bot responses.
     * **Zero-shot ML Model**: Uses the Open AI LLM model for intent identification during run time based on semantic similarity.

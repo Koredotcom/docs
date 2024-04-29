@@ -15,6 +15,10 @@ There are two types of Flows:
 
 Start flows represent the most complex flow type, providing access to all [node types](../flows/node-types/introduction-to-flow-nodes.md). This flow type allows you to create experiences for inbound calls and chats.
 
+!!! Note
+
+    All fields of the default Start Flows can be edited except Channels. [Learn more](#edit-a-start-flow).
+
 ### The Exit Flows
 
 This flow type runs when a call gets disconnected and is useful in gathering customer data during post-call analytics, clean-up, or updates in other systems after a call ends. Conversational context can be passed from the main experience flow into the _Exit Flows._
@@ -111,6 +115,30 @@ Selecting chat will display all the chat channels configured in the channels sec
 
 6. Click **Update & Continue to Flow Design**, you are taken to the Flow Designer, where you can work on the Flow itself.
 
+## Edit a Start Flow
+
+Steps to edit a start flow:
+
+1. Click the Ellipsis (**⋮**) beside the Description and click **Update**.
+<img src="../images/update-start-flow.png" alt="Update Start Flow" title="Update Start Flow" style="border: 1px solid gray; zoom:100%;">
+
+2. Make the changes and click **Update**.
+<img src="../images/edit-flow-experience.png" alt="Update Button" title="Update Button" style="border: 1px solid gray; zoom:100%;">
+
+## Delete a Start Flow
+
+Steps to delete a start flow:
+
+1. Click the Ellipsis (**⋮**) beside the Description and click **Delete**.
+<img src="../images/delete-start-flow.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:100%;">
+
+2. A confirmation is displayed. Click **Delete**.
+<img src="../images/confirm-delete.png" alt="Delete Confirm" title="Delete Confirm" style="border: 1px solid gray; zoom:100%;">
+
+    !!! Note
+
+        You cannot delete default start flows.
+
 ## Create an Exit Flow
 
 Steps to create an Exit Flow:
@@ -126,6 +154,26 @@ Steps to create an Exit Flow:
     <img src="../images/exit-flow-fields.png" alt="Exit Flow Fields" title="Exit Flow Fields" style="border: 1px solid gray; zoom:100%;">
 
 4. Click **Update & Continue to Flow Design**, you are taken to the Flow Designer, where you can work on the flow.
+
+## Edit an Exit Flow
+
+Steps to edit an exit flow:
+
+1. Click the Ellipsis (**⋮**) beside the Description and click **Update**.
+<img src="../images/update-exit-flow.png" alt="Update Exit Flow" title="Update Exit Flow" style="border: 1px solid gray; zoom:100%;">
+
+2. Make the changes and click **Update**.
+<img src="../images/update-button-exit-flow.png" alt="Update Button" title="Update Button" style="border: 1px solid gray; zoom:100%;">
+
+## Delete an Exit Flow
+
+Steps to delete an exit flow:
+
+1. Click the Ellipsis (**⋮**) beside the Description and click **Delete**.
+<img src="../images/delete-exit-flow.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:100%;">
+
+2. A confirmation is displayed. Click **Delete**.
+<img src="../images/confirm-delete-exit-flow.png" alt="Delete Confirm" title="Delete Confirm" style="border: 1px solid gray; zoom:100%;">
 
 ## Navigate the Flow Designer
 

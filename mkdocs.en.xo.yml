@@ -112,7 +112,7 @@ copyright: |
 nav:
   - Home : home.md
   - Platform:
-    - What's New in XO 11: getting-started/whats-new-in-xo-platform.md
+    - Overview: getting-started/xo-platform-overview.md    
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md   
       - Navigating the Platform: getting-started/navigating-the-platform.md       
@@ -148,6 +148,10 @@ nav:
               - IVR: channels/IVR-integration.md            
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
+    - Release Notes:
+      - What's New in XO 11: getting-started/whats-new-in-xo-platform.md  
+      - Latest Updates: release-notes/latest-updates.md
+
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:
@@ -290,7 +294,9 @@ nav:
         - Chunk Browser: searchai/chunk-browser.md
         - Index Configuration: searchai/index-configuration.md
     - Configuration:
+        - Business Rules: searchai/business-rules.md
         - Answer Configuration: searchai/answer-configuration.md
+        - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
   - Contact Center AI:
     - Overview: contactcenter/about-contact-center-ai.md    
     - Agent and Supervisors: 
@@ -424,7 +430,8 @@ nav:
         - Rate Limits: apis/automation/rate-limit.md
         - API List:
           - Automation APIs: apis/automation/api-list.md
-          - Contact Center APIs: apis/api-list.md
+          - Contact Center APIs:
+            - API List: apis/contact-center/contact-center-api-list.md
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md

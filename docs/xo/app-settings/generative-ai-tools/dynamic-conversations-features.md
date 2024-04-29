@@ -147,9 +147,9 @@ The following table displays the Dynamic Conversation features and the supported
   <tr>
    <td><strong>Model</strong>
    </td>
-   <td>GenAI Node
+   <td>Answer Generation
    </td>
-   <td>Answer From Documents
+   <td>GenAI Node
    </td>
    <td>GenAI Prompt
    </td>
@@ -275,11 +275,11 @@ The following table displays the Dynamic Conversation features and the supported
    </td>
    <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
    <td>✅
    </td>
-   <td>❌
+   <td>✅
    </td>
    <td>❌
    </td>
@@ -317,6 +317,9 @@ The following table displays the Dynamic Conversation features and the supported
 
 ## Feature Details
 
+### Answer Generation
+
+This feature helps generate an answer to the user question based on the data ingested into the Search AI application. The relevant data with a user query is inserted into the prompt, and the configured LLM responds with the answer. This answer is then formatted appropriately and presented to the user. [Learn more](../../searchai/answer-configuration.md#answers-generation).
 
 ### GenAI Node
 
@@ -333,38 +336,6 @@ When enabled, this feature lets you add an GenAI Node to Dialog Tasks. This node
 When creating or editing a Dialog Task that’s created manually or[ auto-generated](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#auto-generated-dialog-tasks), you can find a node called GenAI Node within your nodes list. 
 
 When this feature is disabled, the node is unavailable within the Dialog Builder.[ Learn more](../../automation/use-cases/dialogs/node-types/genai-node.md).
-
-
-### Answer From Documents
-
-This feature leverages a Large Language Model (LLM) and Generative AI models from OpenAI to generate answers for FAQs by processing uploaded documents in an unstructured PDF format and user queries.
-
-
-
-
-
-
-
-**Usage**
-
-After redacting personally identifiable information, the uploaded documents and the end-user queries are shared with OpenAI to curate the answers.
-
-Once you meet the prerequisites and enable the feature:
-
-
-
-1. You should[ upload the PDF document(s)](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/#Upload_PDF_Documents) to be shared with the third-party system (OpenAI). You can upload a maximum of 10 documents with a size of not more than 5 MB.
-2. The uploaded documents are listed under the **Answer from Documents** section with the following details:
-    * Upload Name
-    * Uploaded by
-    * Uploaded on
-    * Status (Active/Inactive)
-    * Actions (View and Delete File)
-1. A good practice is to test the answer generation by asking the VA a question directly related to the contents of your uploaded documents.[ Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/#Test_Answer_Generation).
-2. You can view, delete, and disable the uploaded documents.
-3. The VA provides answers only from uploaded documents that are active, whereas disabled documents are ignored.
-
-If the feature is disabled, you won’t be able to send queries to LLMs as a fallback.[ Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/#Disable_Answer_from_Documents).
 
 
 ### GenAI Prompt

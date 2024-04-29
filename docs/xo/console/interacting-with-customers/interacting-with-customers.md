@@ -234,7 +234,7 @@ These settings can be configured from [Agent settings](https://docs.kore.ai/smar
 
 <img src="../images/email-distribution-list.png" alt="Email Distribution  List" title="Email Distribution List" style="border: 1px solid gray; zoom:80%;">
 
-**Standard Responses**: 
+**Standard Responses**:
 You can choose from a library of configured standard responses.
 
 1. Click the **Standard Response** icon at the bottom of the email compose bar. The count of response templates in each category is displayed.
@@ -266,6 +266,80 @@ To add a new note:
 
 4. **Drafts**: If you click the **Close** button on the email editor and there’s content inside, the mail is preserved as a draft. Drafts are accessible at the bottom of the console.
 <img src="../images/draft.png" alt="Drafts" title="Drafts" style="border: 1px solid gray; zoom:80%;">
+
+### Outbound Email
+
+Outbound email functionality is a key feature within SmartAssist designed to streamline communication between agents and customers through email channels. It is crucial to reach out to customers proactively and provide personalized interactions based on their needs and preferences. Expanding omnichannel capabilities allows customers to be reached through various channels to address their needs. This allows seamless follow-up after interactions to guarantee satisfaction and provide timely support whenever required.
+
+#### Send Outbound Email
+
+Steps to send an outbound email:
+
+1. Click the **+** button on the top right corner of the conversation tray.
+<img src="../images/button.png" alt="+ Button" title="+ Button" style="border: 1px solid gray; zoom:80%;">
+
+2. Click the **New Mail** button.
+<img src="../images/new-outbound-email.png" alt="New Email Button" title="New Email Button" style="border: 1px solid gray; zoom:80%;">
+
+3. The email panel is displayed, and an email conversation appears on the conversation tray. Enter the recipients' Email addresses, such as john.doe@xyz.com.
+<img src="../images/email-panel.png" alt="Email Panel" title="Email Panel" style="border: 1px solid gray; zoom:80%;">
+
+4. Select a **Queue** from the dropdown.
+<img src="../images/select-queue.png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:80%;">
+
+5. Enter the **Subject** and body of the email. The email address appears on the conversation tray and the subject appears as the email thread header.
+<img src="../images/email-body.png" alt="Email Body" title="Email Body" style="border: 1px solid gray; zoom:80%;">
+
+6. You can perform the following actions:
+
+**Send**:
+
+* Click the **Send** Button to send the email.
+<img src="../images/send-button.png" alt="Send Button" title="Send Button" style="border: 1px solid gray; zoom:80%;">
+
+    A confirmation is displayed, and the email is sent.
+    <img src="../images/email-sent-confirmation.png" alt="Email sent Confirmation" title="Email Sent Confirmation" style="border: 1px solid gray; zoom:80%;">
+
+**Send & Close**:
+
+Click the down arrow button ”**V**” beside Send and click **Send & Close**.
+<img src="../images/send-and-close.png" alt="Send & Close Button" title="Send & Close Button" style="border: 1px solid gray; zoom:80%;">
+
+A confirmation is displayed, and the email is sent. A disposition window appears. Select a disposition and click **Close**.
+<img src="../images/disposition-sent-mail.png" alt="Disposition Sent Mail" title="Disposition Sent Mail" style="border: 1px solid gray; zoom:80%;">
+
+!!! Note
+
+    * The send button is activated when all mandatory fields (recipient, subject, queue, and email body) are filled. Sent conversations remain in the agent's conversation tray until closed.
+
+    * Sending an email consumes one slot from the agent's allocation and appears on the Monitor tab.
+
+    * Outbound emails occupy the same slots as any other configured email. Agents can create as many outbound emails as their allocated email slots allow.
+
+**Draft**:
+
+Click the **X** on the top right corner of the email editor window.
+<img src="../images/x-button.png" alt="X-Button" title="X-Button" style="border: 1px solid gray; zoom:80%;">
+
+The editor window is minimized, and the mail is saved as a draft.
+<img src="../images/draft-mimized.png" alt="Draft Minimized" title="Draft Minimized" style="border: 1px solid gray; zoom:80%;">
+
+Drafts are automatically saved and remain accessible in the following scenarios:
+
+1. After an agent logout and subsequent login.
+2. Network interruptions and subsequent reconnections.
+3. The current email content is saved as a draft if the editor is closed.
+4. Drafts are saved only after the mandatory fields (recipient, subject, queue, and email body) are updated.
+
+Multiple drafts can be saved for individual email conversations. Each draft is easily identifiable and accessible within its respective email thread.
+
+**Delete**:
+
+Click the **Delete** (bin) icon on the bottom left corner of the editor.
+<img src="../images/delete-button.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
+
+A confirmation message is displayed. Click **Delete**. The email is deleted.
+<img src="../images/delete-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:80%;">
 
 ## Color Codes
 
