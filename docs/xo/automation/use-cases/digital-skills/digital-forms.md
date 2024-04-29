@@ -69,11 +69,14 @@ To create forms, follow the steps below:
    
     Once enabled, the Platform will replace the user input with a unique random system-generated alphanumeric value in all the modules. Also, the **Secure Form** icon and a tip will be displayed, notifying the user that the form is secure.
 
-    <img src="../../images/secure-form-icon.png" alt="secure form icon" title="secure form icon" style="border: 1px solid gray; zoom:75%;"></li>
+    <img src="../../images/secure-form-icon.png" alt="secure form icon" title="secure form icon" style="border: 1px solid gray; zoom:75%;">
+
+    Secure Form feature ensures data security at form level. You can achieve securing data at component level too. [Read here](../configure-digital-forms/#form-editor){:target="_blank"} to know more.
+
 
 7. Click **Save & Proceed**.
 
-    <img src="../../images/save-digital-form.png" alt="save digital form" title="save digital form" style="border: 1px solid gray; zoom:75%;"></li></ol>
+    <img src="../../images/save-digital-form.png" alt="save digital form" title="save digital form" style="border: 1px solid gray; zoom:75%;">
 
 ### Add Components
 
@@ -444,6 +447,10 @@ Following is a list of the available components.
 * **Date** – Used for date entries, gives a date picker for the user to choose the date.
 
     <img src="../../images/date-calendar.png" alt="date" title="date" style="border: 1px solid gray; zoom:75%;">
+
+    **Note** : The Date picker displays the month and week names in Japanese characters if the VA language is Japanese. This support will be extended to more languages in the future.
+
+    <img src="../../images/digital-forms-date-picker-japanese.png" alt="date picker - Japanese" title="date picker - Japanese" style="border: 1px solid gray; zoom:75%;">
 
 * **Date & Time** – Used for date & time entries. The system displays a date and time picker for the user to choose the date and time.
 Use the **Date component** and set the _Time option_ to _yes_; choose from _12_ or _24-hour_ format.
