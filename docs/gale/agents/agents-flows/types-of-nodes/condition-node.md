@@ -66,8 +66,10 @@ This node helps you to trigger path flows based on the conditions you set.
 3. In the **IF section** select the following:
 
     * Select the **Context** object you want to use. 
-    For example, {{context.steps.Start0001.xxxxxx}}.
- 
+    For example, 
+    ```
+    {{context.steps.Start0001.xxxxxx}}.
+    ```
     * Select an **Operator** from the drop-down list such as, exists, does not exist, equal to, greater than or equal to, less than or equal to, not equal to, greater than, less than, does not contain, and contains.
 
     * Enter a value in the **Value** field.

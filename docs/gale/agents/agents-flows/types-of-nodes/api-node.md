@@ -79,8 +79,8 @@ The API node is created on the canvas, and you can now define the node's propert
 
     **Syntax**: 
     
-    Key : Content-Type  
-    Value: application/json
+    **Key** : Content-Type  
+    **Value**: application/json
 
     You can add a new pair by typing it in the empty fields. You can delete a pair by clicking the **Delete (Bin)** icon next to it as shown in the following image.
 

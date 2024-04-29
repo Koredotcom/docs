@@ -45,8 +45,10 @@ This node allows you to define the message displayed to the user when the experi
 
     Enter the value in this format:
     
+    ```
     {{context.steps.xxxx.xxxx}}
-    
+    ```
+
 4. Click the **+ADD A KEY** option to add multiple outputs at once. 
 The details are autosaved.
 

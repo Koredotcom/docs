@@ -69,7 +69,9 @@ You can configure a Gen AI node and connect to any model.
 
         You can access the output of GenAI with the syntax: 
 
+        ```
         {{context.steps.YOURGENAINODENAME.output}}. 
+        ```
 
         Also, GALE has been integrated in such a way that it can auto recognize variables / outputs. 
 

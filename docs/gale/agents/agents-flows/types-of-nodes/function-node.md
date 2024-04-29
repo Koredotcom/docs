@@ -49,21 +49,23 @@ This node empowers you to create a script for handling context variables or othe
 
     <img src="../images/select-javascript.png" alt="Select Javascript" title="Select Javascript" style="border: 1px solid gray; zoom:80%;">
 
-1. Enter a **script** in the script box. Context variables are available for you to use while writing the script.
+1. Enter a **Script** in the script box. Context variables are available for you to use while writing the script.
 
     **Syntax for Java**:
 
+    ```
     context.js_fact20 = 1
 
     for(var i=1;i&lt;21;i++)
+    ```
 
     **Syntax for Python**:
 
+    ```
     {
-
-    context.js_fact20 = context.js_fact20*i    #context[“js_fact20”] in python
-
+    context.js_fact20 = context.js_fact20*i    #context[“js_fact20”]
     }
+    ```
 
     <img src="../images/enter-a-script.png" alt="Enter a Script" title="Enter a Script" style="border: 1px solid gray; zoom:80%;">
 
