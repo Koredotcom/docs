@@ -72,14 +72,10 @@ Currently, we support thirty-plus open-source models and provide them as a servi
     
 After the deployment process is complete the status is changed to “Deployed”. You can now infer this model across GALE and externally.
 
-!!! note
 
-    Click the three dots icon corresponding to the **Model name** under the **Open-source models** tab on the Models page. A pop-up with a list of options is displayed. If you choose the API endpoint option, it will navigate you to the API keys section of the Model and if you select the Configurations option, it will take you to the Configurations section of the Model.
+Click the three dots icon corresponding to the **Model name** under the **Open-source models** tab on the Models page. A pop-up with a list of options is displayed. If you choose the API endpoint option, it will navigate you to the API keys section of the Model and if you select the Configurations option, it will take you to the Configurations section of the Model.
 
 <img src="../images/three-dots-options-for-model.png" alt="Three Dots Options for Model" title="Three Dots Options for Model" style="border: 1px solid gray; zoom:80%;">
-
-
-Click the **Deployment history** tab on the Deploy page to view the history. This can be particularly useful for auditing and accountability purpose.
 
 
 ### **Re-deploy a Deployed Model**

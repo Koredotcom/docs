@@ -45,7 +45,13 @@ This node allows you to define the message displayed to the user when the experi
 
     Enter the value in this format:
     
-    {{context.steps.xxxx.xxxx}} On Success or display an error message on Failure.
+    {{context.steps.xxxx.xxxx}}
     
 4. Click the **+ADD A KEY** option to add multiple outputs at once. 
 The details are autosaved.
+
+## Status Codes
+
+**Errors**
+
+* When the value for the o/p variable is not defined then list of unresolved outputs are displayed.

@@ -32,7 +32,7 @@ The API node is created on the canvas, and you can now define the node's propert
 
     The start node is displayed by default on the flow builder.
 
-# Configure the API Node
+## Configure the API Node
 
 **To configure the API node, follow these steps**:
 
@@ -51,7 +51,7 @@ The API node is created on the canvas, and you can now define the node's propert
 
 1. Configure the API request under **Request Definition**. Define the GET, PUT, POST, or DELETE service request, along with the API call and parameters to pass. To create a new request, click **+ Define Request**.
 
-    <img src="../images/define-request.png" alt="Define Request" title="Define Request" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/define-request.png" alt="Define Request" title="Define Request" style="border: 1px solid gray; zoom:60%;">
 
     The **Edit Request** window is displayed.
 
@@ -107,5 +107,20 @@ The API node is created on the canvas, and you can now define the node's propert
 
     <img src="../images/actions-icon.png" alt="Actions Icon" title="Actions Icon" style="border: 1px solid gray; zoom:80%;">
     
-1. Select the **Go to Node** under the **On Success** section of the API node configuration dialog. Based on the node you selected a respective new node is added to the canvas.
-2. Select the **Go to Node** under the **On Failure** section of the API node configuration dialog. Based on the node you selected a respective new node is added to the canvas.
+
+## Status Codes
+
+**Errors**
+
+* 400 Bad Request: The server cannot process the request due to a client error (e.g., malformed request syntax, invalid parameters).
+* 401 Unauthorized: The client must authenticate itself to get the requested response.
+* 403 Forbidden: The client does not have permission to access the requested resource.
+* 404 Not Found: The server cannot find the requested resource. 
+* 500 Internal Server Error: The server encountered an unexpected condition that prevented it from fulfilling the request.
+* 504 Gateway Timeout: The server, acting as a gateway or proxy, did not receive a timely response from an upstream server it needed to access in order to complete the request. 
+* Status code 200:  It means that the request made was successful.
+
+**Connection**:
+
+* **On Success**: On successful execution of the current node this connection can be linked with another node such as Gen AI node, Function node, Condition node, API node, or an End node.
+* **On Failure**: On failure in execution of the current node this connection should be linked with an End node to display the custom error message from the API node.

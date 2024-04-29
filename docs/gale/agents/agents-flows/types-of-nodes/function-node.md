@@ -78,7 +78,16 @@ This node empowers you to create a script for handling context variables or othe
 
 3. Click the **Actions** icon and select the actions that you want the node to trigger when the Functions node is successful or when it fails.
 
-    <img src="../images/add-a-new-function-node.png" alt="Actions for Function Node" title="Actions for Function Node" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/actions-for-function-node.png" alt="Actions for Function Node" title="Actions for Function Node" style="border: 1px solid gray; zoom:80%;">
 
-1. Select the **Go to Node** under the **On Success** section of the Function node configuration dialog. Based on the node you selected a respective new node is added to the canvas.
-2. Select the **Go to Node** under the **On Failure** section of the Function node configuration dialog. Based on the node you selected a respective new node is added to the canvas.
+## Status Codes
+
+**Errors**:
+
+* Compilation and runtime errors.
+
+**Connection**:
+
+* **On Success**: On successful execution of the current node this connection can be linked with another node such as Gen AI node, Function node, Condition node, API node, or an End node.
+* **On Failure**: On failure in execution of the current node this connection should be linked with an End node to display the custom error message from the Function node. 
+

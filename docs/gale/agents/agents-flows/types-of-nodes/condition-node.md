@@ -65,13 +65,14 @@ This node helps you to trigger path flows based on the conditions you set.
 2. Define the IF/ELSE-IF/ELSE conditions using context variables and the AND/OR operator.
 3. In the **IF section** select the following:
 
-    * Select the **Context** object you want to use. For example, {{context.steps.Start0001.xxxxxx}}.
+    * Select the **Context** object you want to use. 
+    For example, {{context.steps.Start0001.xxxxxx}}.
  
     * Select an **Operator** from the drop-down list such as, exists, does not exist, equal to, greater than or equal to, less than or equal to, not equal to, greater than, less than, does not contain, and contains.
 
     * Enter a value in the **Value** field.
 
-        <img src="../images/if-condition.png" alt="If Condition" title="If Condition" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/if-condition.png" alt="If Condition" title="If Condition" style="border: 1px solid gray; zoom:60%;">
 
 
     * In the **Then go to** dropdown, choose the node to connect to if the condition is met.
@@ -84,7 +85,7 @@ This node helps you to trigger path flows based on the conditions you set.
 
         * **OR** – When using OR it means that you want the condition to meet either one or another of the set criteria.
 
-        <img src="../images/and-or-logic-in -if-condition.png" alt="And or Logic in If Condition" title="And or Logic in If Condition" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/and-or-logic-in -if-condition.png" alt="And or Logic in If Condition" title="And or Logic in If Condition" style="border: 1px solid gray; zoom:60%;">
 
         !!! note
 
@@ -93,4 +94,15 @@ This node helps you to trigger path flows based on the conditions you set.
 
 1. In the **Else section**, select the node you want to trigger if the If condition fails.
 
-    <img src="../images/else-select-node-in-condition-node.png" alt="Else Select Node in Condition Node" title="Else Select Node in Condition Node" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/else-select-node-in-condition-node.png" alt="Else Select Node in Condition Node" title="Else Select Node in Condition Node" style="border: 1px solid gray; zoom:60%;">
+
+## Status Codes
+
+**Errors**
+
+* If the condition is true or false and does not have a node to go to, then an error will be displayed “Path not defined. Please check the flow.”
+
+**Connection**:
+
+* **On Success**: On successful execution of the current node this connection can be linked with another node such as Gen AI node, Function node, Condition node, API node, or an End node.
+* **On Failure**: On failure in execution of the current node this connection should be linked with an End node to display the custom error message from the Condition node.
