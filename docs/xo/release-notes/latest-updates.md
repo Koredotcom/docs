@@ -22,7 +22,7 @@ In addition to pre-built commercial LLMs, the Answer Generation now supports Cus
 
 #### Updated Default Start Flow
 
-All fields of the default Start Flows can now be edited except Channels. [Learn more](../flows/create-flows.md#the-start-flows).
+All fields of the default Start Flows can now be edited except the associated channel. [Learn more](../flows/create-flows.md#the-start-flows).
 
 ## Contact Center AI
 
