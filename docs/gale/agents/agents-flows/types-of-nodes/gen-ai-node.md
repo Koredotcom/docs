@@ -52,7 +52,11 @@ You can configure a Gen AI node and connect to any model.
        
     **System prompt example**: Create a prompt which asks the user their name and age which can create a workout routine.
 
-    **Prompt example**: {{context.variable_name}}
+    **Prompt example**: 
+    ~~~
+    {{context.variable_name}}
+    ~~~
+
 
 4. Click the arrow in the **Examples** section on the **AI node settings** dialog to write an example user Input and an expected AI output for a model to create/generate based on the example given here.
 5. Select the required **Hyperparameters**. The parameters that are displayed are based on the AI model you selected. For a given LLM used in the GenAI node, you can configure different hyperparameter attributes which alter the result of the GenAI node.

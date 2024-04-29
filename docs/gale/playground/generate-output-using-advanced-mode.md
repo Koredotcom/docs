@@ -45,7 +45,7 @@ On the Prompt page, you can find a Prompt sample auto-populated based on the tem
 
     !!! note
 
-        Currently, you can add only a maximum of 3 models in the playground. For more information about how to add a model to the prompt, see [Add an external model](../models/external-models/add-an-external-model.md).
+        Currently, you can add only a maximum of 3 models in the playground. For more information about how to add a model to the prompt, see [Add an external model](../models/external-models/add-an-external-model-using-easy-integration.md).
 
 1. Click **Generate Output** after you have added the required number of models to compare. The Generated output for comparison is displayed in the Model section of the Prompt playground space for your reference.
 

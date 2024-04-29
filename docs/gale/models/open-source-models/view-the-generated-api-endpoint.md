@@ -22,3 +22,5 @@ The API endpoint is available in 3 formats.
 
     Click the **Deployment history** tab on the Deploy page to view the history. This can be particularly useful for auditing and accountability purpose.
 
+
+You can either embed the curl or the code that is generated into your own applications or use it externally. 
