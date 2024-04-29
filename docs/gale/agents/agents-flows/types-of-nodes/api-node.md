@@ -10,7 +10,7 @@ This node enables you to initiate requests via SOAP or REST API calls, facilitat
 2. Click **Agent flow** from the left navigation bar. The **Agent flow** page is displayed.
 3. Click **Go to flow** to open the flow builder page.
 
-    <img src="../image/go-to-flow-canvas.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/go-to-flow-canvas.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
 
     The **Agents Flow** canvas is displayed, and you can start creating a new flow.
 

@@ -122,6 +122,9 @@ nav:
         - Overview of Nodes: agents/agents-flows/types-of-nodes/overview-of-nodes.md
         - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md
         - API Node: agents/agents-flows/types-of-nodes/api-node.md
+        - Gen Ai Node: agents/agents-flows/types-of-nodes/gen-ai-node.md
+        - Function Node: agents/agents-flows/types-of-nodes/function-node.md
+        - End Node: agents/agents-flows/types-of-nodes/end-node.md
       - Perform other Actions on the Flow Builder:
         - Manage Input and Output: agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
         - Run the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
