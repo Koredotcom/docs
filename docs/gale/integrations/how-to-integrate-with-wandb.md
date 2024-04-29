@@ -16,7 +16,7 @@ Connecting with Weights and Biases (WandB) allows users to link to the platform,
 
 1. Click **Add connection**. The **Weights & Biases** dialog is displayed.
 
-    <img src="../images/wandb-connection.png" alt="WandB Connection" title="WandB Connection" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/wandb-connection.png" alt="WandB Connection" title="WandB Connection" style="border: 1px solid gray; zoom:60%;">
 
 1. Enter the following details in the dialog to create a connection:
     * Provide a **Connection name**.
@@ -32,7 +32,7 @@ You can test your connection after you provide the details to verify the accurac
 
 1. Click the **Test** button on the **Weights & Biases** dialog.
 
-    <img src="../images/test-wandb-connection.png" alt="Test WandB Connection" title="Test WandB Connection" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/test-wandb-connection.png" alt="Test WandB Connection" title="Test WandB Connection" style="border: 1px solid gray; zoom:60%;">
 
     Once the connection is tested, you will receive feedback information.
 

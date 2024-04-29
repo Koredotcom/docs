@@ -24,7 +24,7 @@ You can harness the power of expansive language models such as ChatGPT for tasks
 
     * Click **Gen** **AI** from the bottom bar of the Agents page.
 
-    <img src="../images/go-to-flow-canvas.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
+    <img src="../types-of-nodes/gen-ai-node.png" alt="Add a New Gen AI Node" title="Add a New Gen AI Node" style="border: 1px solid gray; zoom:80%;">
 
     The Gen AI node is created on the canvas and you can now define the node's properties by clicking on the node. You can drag and move a node to any location on the canvas.
 
@@ -47,7 +47,7 @@ You can configure a Gen AI node and connect to any model.
     <img src="../images/configure-gen-ai-node.png" alt="Configure Gen AI Node" title="Configure Gen AI Node" style="border: 1px solid gray; zoom:80%;">
 
 1. Enter a **Custom Name** for the node.
-2. Select a model from the list. You can see the AI models that you have already configured in the Models section of GALE. For more information about configuring a model, see [Model Studio](../../../../models/overview.md).
+2. Select a model from the list. You can see the AI models that you have already configured in the Models section of GALE. For more information about configuring a model, see [Model Studio](../../../models/overview.md).
 3. Enter a **System prompt** and the **Prompt** you want to test with your selected model. The System Prompt is the custom prompt based on your use case for an LLM to generate text or translate and so on. The Prompt allows you to pass the variables to the system prompt.
        
     **System prompt example**: Create a prompt which asks the user their name and age which can create a workout routine.
@@ -77,10 +77,12 @@ You can configure a Gen AI node and connect to any model.
 
 6. Click the **Actions** icon and select the actions that you want the node to trigger when the Gen AI node is successful or when it fails.
 
-    * **On Success**: On successful execution of the current node this connection can be linked with another node such as Gen AI node, Function node, Condition node, API node, or an End node.
-    
-    * **On Failure**: On failure in execution of the current node this connection should be linked with an End node to display the custom error message from the Gen AI node.
 
-
-    <img src="../images/gen-ai-actions.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/gen-ai-actions.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:50%;">
     
+## Status Codes
+
+**Connection**:
+
+* **On Success**: On successful execution of the current node this connection can be linked with another node such as Gen AI node, Function node, Condition node, API node, or an End node.
+* **On Failure**: On failure in execution of the current node this connection should be linked with an End node to display the custom error message from the Gen AI node.

@@ -10,9 +10,9 @@ You can generate an API for your fine-tuned model and share it with other truste
 
 1. Click the **Create a new API key** button. The **Create new API key** dialog is displayed.
 
-    <img src="../images/generate-api-key.png" alt="Generate API Key" title="Generate API Key" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/generate-api-key.png" alt="Generate API Key" title="Generate API Key" style="border: 1px solid gray; zoom:60%;">
 
 1. Enter a **Name** for the key and click the **Generate key** button. Your API key is now generated. Click **Copy and close** button to copy your API key and share it with others if required. 
 
     
-    <img src="../images/copy-api-key.png" alt="Copy API Key" title="Copy API Key" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/copy-api-key.png" alt="Copy API Key" title="Copy API Key" style="border: 1px solid gray; zoom:60%;">

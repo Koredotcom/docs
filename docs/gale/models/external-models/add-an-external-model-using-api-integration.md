@@ -12,7 +12,7 @@ Custom API Integration in GALE enables extensibility of use, where it allows you
 
 1. Click **Add a model** under the **External models** tab. The **Add an external model** dialog is displayed.
 
-    <img src="../images/add-external-model-api-integration.png" alt="Add External Model API Integration" title="Add External Model API Integration" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-external-model-api-integration.png" alt="Add External Model API Integration" title="Add External Model API Integration" style="border: 1px solid gray; zoom:60%;">
 
 1. Select the **Custom integration** option to connect models via API integration, and click **Next**.
 
@@ -35,7 +35,7 @@ Custom API Integration in GALE enables extensibility of use, where it allows you
 
     The Add custom variable dialog is displayed. Enter the **Variable name**, and **Display name** and select the **Data type**.
 
-    <img src="../images/add-custom-variable.png" alt="Add Custom Variable" title="Add Custom Variable" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-custom-variable.png" alt="Add Custom Variable" title="Add Custom Variable" style="border: 1px solid gray; zoom:60%;">
 
 
 1. In the **Body** section, request body of the model you are trying to connect with in GALE.
@@ -47,7 +47,7 @@ Custom API Integration in GALE enables extensibility of use, where it allows you
     * Click the **Test** button under the **Test** section on the **Custom API Integration** dialog.
    The **Sample Input** dialog is displayed.
 
-    <img src="../images/test-sample.png" alt="Test Sample" title="Test Sample" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/test-sample.png" alt="Test Sample" title="Test Sample" style="border: 1px solid gray; zoom:60%;">
 
     * Enter a **Prompt**, **Sample prompt**, and **Examples** in the respective fields.
 

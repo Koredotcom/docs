@@ -26,7 +26,7 @@ On the Prompt page, you can find a Prompt sample auto-populated based on the tem
 2. Click **Upload file** to upload a CSV file from your local computer and click **Upload**. You can see a preview of all the data in your CSV file. Click **Proceed** to accept the file.
 3. Click the arrow under the **Examples** section on the **Prompt** section to add a sample user input and sample AI response output.
 
-    <img src="../images/add-examples-advanced-mode.png" alt="Add Examples Advanced Mode" title="Add Examples Advanced Mode" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-examples-advanced-mode.png" alt="Add Examples Advanced Mode" title="Add Examples Advanced Mode" style="border: 1px solid gray; zoom:60%;">
 
     
 1. Click **Save** to save the sample examples.

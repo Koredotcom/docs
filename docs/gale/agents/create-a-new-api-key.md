@@ -10,11 +10,11 @@ You can generate an API for your agents and share it with other trusted users.  
 
 1. Click the **Create a new API key** button. The **Create new API key** dialog is displayed.
 
-    <img src="../images/generate-new-api-key.png" alt="Generate new API Key" title="Generate new API Key" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/generate-new-api-key.png" alt="Generate new API Key" title="Generate new API Key" style="border: 1px solid gray; zoom:60%;">
 
 1. Enter a **Name** for the key and click the **Generate key** button. The API key is displayed in the **Create new API key** dialog as shown in the following image:
 
-    <img src="../images/copy-and-close-api-key.png" alt="Copy and Close API Key" title="Copy and Close API Key" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/copy-and-close-api-key.png" alt="Copy and Close API Key" title="Copy and Close API Key" style="border: 1px solid gray; zoom:60%;">
     
 1. Click the **Copy and close** button. You can copy the key and share it with others if required.
 

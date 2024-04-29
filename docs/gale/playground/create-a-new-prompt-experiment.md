@@ -16,7 +16,7 @@ Prompt experiments are useful for testing and comparing AI models for specific u
 
 2. Click the **Create experiment** button. The **New experiment** dialog is displayed.
 
-    <img src="../images/create-new-experiment.png" alt="Create New Experiment" title="Create New Experiment" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/create-new-experiment.png" alt="Create New Experiment" title="Create New Experiment" style="border: 1px solid gray; zoom:60%;">
 
 
 3. Enter a name for your experiment in the **Experiment name** field.

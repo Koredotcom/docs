@@ -33,7 +33,7 @@ Let us now look into each step in detail.
 
     Or
 
-    * Select Hugging Face connection to use. For more information about how to connect to Hugging Face account, see [How to Connect to your Hugging Face Account](../../integrations/how-to-to-connect-to-your-hugging-face-account.md).
+    * Select Hugging Face connection to use. For more information about how to connect to Hugging Face account, see [How to Connect to your Hugging Face Account](../../integrations/how-to-enable-hugging-face.md).
 
 
     <img src="../images/base-model-section.png" alt="Base Model Section" title="Base Model Section" style="border: 1px solid gray; zoom:80%;">

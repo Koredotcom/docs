@@ -16,7 +16,7 @@ You can initiate a fresh agent flow and specify the inputs required to initializ
 
     The **Enter input variable** dialog is displayed. 
 
-    <img src="../images/enter-input-variable.png" alt="Enter Input Variable" title="Enter Input Variable" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/enter-input-variable.png" alt="Enter Input Variable" title="Enter Input Variable" style="border: 1px solid gray; zoom:50%;">
 
 1. Enter a **Name(key)** to the input variable. For example, Product_ID.
 2. Select a data type from the **Type** drop-down list. If you want to make the data type mandatory, then move the **Mandatory** toggle button.

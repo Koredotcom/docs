@@ -14,7 +14,7 @@ GALE seamlessly integrates with the Hugging Face platform, allowing you to incor
 
 1. Click **Add connection**. The **Hugging Face** dialog is displayed.
 
-    <img src="../images/hugging-face-connection.png" alt="Hugging Face Connection" title="Hugging Face Connection" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/hugging-face-connection.png" alt="Hugging Face Connection" title="Hugging Face Connection" style="border: 1px solid gray; zoom:60%;">
 
 1. Enter the following details in the dialog to create a connection:
     * Provide a **Connection name**.
@@ -30,7 +30,7 @@ You can test your connection after you provide the details to verify the accurac
 
 1. Click the **Test** button on the **Hugging Face** dialog.
 
-    <img src="../images/test-hugging-face-connection.png" alt="Test Hugging Face Connection" title="Test Hugging Face Connection" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/test-hugging-face-connection.png" alt="Test Hugging Face Connection" title="Test Hugging Face Connection" style="border: 1px solid gray; zoom:60%;">
 
     Once the connection is tested, you will receive feedback information.
 

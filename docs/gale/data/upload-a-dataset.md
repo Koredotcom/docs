@@ -12,7 +12,7 @@ You can upload a dataset of your choice in CSV, JSON, or, JSONL format.
 
 1. Click the **Upload dataset** button to upload your data from the location. The uploaded file is listed on the **Data** page.
 
-    <img src="../images/uploaded-dataset.png" alt="Uploaded Dataset" title="Uploaded Dataset" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/uploaded-dataset.png" alt="Uploaded Dataset" title="Uploaded Dataset" style="border: 1px solid gray; zoom:60%;">
 
     !!! note
 
