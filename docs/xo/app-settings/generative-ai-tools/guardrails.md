@@ -2,13 +2,13 @@
 # Guardrails
 
 
-## Overview
 
 Large language models (LLMs) are powerful AI systems that can be leveraged to offer human-like conversational experiences. The Kore.ai XO Platform offers a wide range of features to leverage the power of LLMs. LLMs are usually pre-trained with a vast corpus of public data sources, and the content is not fully reviewed and curated for correctness and acceptability for enterprise needs. This results in generating harmful, biased, or inappropriate content at times. The XO Platform's Guardrail framework mitigates these risks by validating LLM requests and responses to enforce safety and appropriateness standards.
 
 Guardrails enable responsible and ethical AI practices by allowing platform users to easily enable/disable rules and configure settings for different features using LLMs. Additionally, the users can design and implement fallback behaviors for a feature, such as triggering specific events, if a guardrail detects content that violates set standards.
 
 The XO Platform leverages the open-source models tailored for conversational AI applications. Each guardrail is powered by a different model, that has been fine-tuned specifically to validate text for toxicity, bias, filter topics, etc. Kore.ai hosts these models and periodically updates them through training to detect emerging threats and prompt injection patterns effectively. These small models reside within the platform, ensuring swift performance during runtime.
+<img src="./images/guardrails-home.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Types of Guardrails
@@ -149,7 +149,7 @@ Steps to disable a Guardrail:
 
 
 1. Navigate to **App Settings** > **Generative AI Tools** > **Guardrails**.
-2. Turn off the **Status** toggle for the respective guardrail. The disable guardrail popup is displayed.  <img src="../images/guardrails(1).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+2. Turn off the **Status** toggle for the respective guardrail. The disable guardrail popup is displayed.  <img src="../images/guardrails(1).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:50%;">
 3. Click **Disable**. The success message is displayed.
 
 
@@ -162,7 +162,7 @@ Steps to edit a Guardrail:
 1. Navigate to **App Settings** > **Generative AI Tools** > **Guardrails**.
 2. Click **more** (three dots) and click **Edit**. The advanced settings are displayed.  <img src="../images/guardrails(4).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
-3. Toggle on/off the **LLM Input** and **LLM Output** as required.  <img src="../images/guardrails(2).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+3. Toggle on/off the **LLM Input** and **LLM Output** as required.  <img src="../images/guardrails(2).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:60%;">
 
 4. Click **Save**. The success message is displayed.
 
@@ -227,10 +227,8 @@ Steps to change the fallback behavior:
 
 
 
-1. Go to **App Settings** > **Generative AI Tools** > **Dynamic Conversation** > **GenAI Node** > **Advance Settings**.  <img src="../images/guardrails(3).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
-
-
-
+1. Go to **App Settings** > **Generative AI Tools** > **Dynamic Conversation** > **GenAI Node** > **Advance Settings**.  
+<img src="../images/guardrails(3).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 2. Select the fallback behavior as required.
 3. Click **Save**.
@@ -239,5 +237,5 @@ Steps to change the fallback behavior:
 
 ### Fallback Behavior for Rephrase Dialog Response
 
-By default, when the guardrail is violated, the system uses the "Send the original query" option.  <img src="../images/guardrails(8).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">>
+By default, when the guardrail is violated, the system uses the "Send the original query" option.  <img src="../images/guardrails(8).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:50%;">>
 
