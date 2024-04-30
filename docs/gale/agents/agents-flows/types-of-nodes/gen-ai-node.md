@@ -88,6 +88,10 @@ You can configure a Gen AI node and connect to any model.
     
 ## Status Codes
 
+**Errors**
+
+* “Proper data needs to be provided in the LLM node” error is displayed when the Model/prompt is not selected.
+
 **Connection**:
 
 * **On Success**: On successful execution of the current node this connection can be linked with another node such as Gen AI node, Function node, Condition node, API node, or an End node.

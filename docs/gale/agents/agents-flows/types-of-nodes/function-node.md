@@ -74,7 +74,7 @@ This node empowers you to create a script for handling context variables or othe
 1. Click the **Copy** icon if you want to copy the code.
 2. Click the **Run** button to test the script. Once the script is resolved successfully, you will be able to see the results in the **Log** section of the **Edit Script** page.
 
-    For example to read input variable “email_content”, use below notation:
+    For example, to read input variable “email_content”, use below notation:
     ~~~
     context.<variable-name> = context.steps.<startNode-Name>.<inputVariable-name>
     ~~~
