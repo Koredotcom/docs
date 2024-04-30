@@ -58,7 +58,7 @@ The Users section includes the features in the table below.
 
 You can add a user to Contact Center AI by following the steps below:
 
-1. Click **Invite Users**.
+1. Click **Invite Users**.  
 <img src="../images/invite-user-button.png" alt="Invite Users Button" title="Invite Users Button" style="border: 1px solid gray; zoom:70%;">
 
 2. The Invite User window displays. Here, you can configure the following:
@@ -137,11 +137,11 @@ To save the user, click the **Invite User** button at the bottom of the New User
 
 !!! Notes
 
-   The minimum requirements to save a user record are the following:
+      The minimum requirements to save a user record are the following:
 
-   1. The mandatory fields email, first name, and role;
-   2. Enable at least one channel (Chat or Voice);
-   3. Assign at least one language to the channel you enable.
+      1. The mandatory fields email, first name, and role;
+      2. Enable at least one channel (Chat or Voice);
+      3. Assign at least one language to the channel you enable.
 
 ## Edit a User
 
@@ -157,7 +157,7 @@ To edit a user, follow these steps:
 To promote a user to owner, follow these steps:
 
 1. On the Manage Users page, click the **Ellipsis** icon (⋮) corresponding to the user you want to promote to owner.  
-<img src="../contactcenter/images/promote-as-owner.png" alt="Promote As Owner" title="Promote As Owner" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/promote-as-owner.png" alt="Promote As Owner" title="Promote As Owner" style="border: 1px solid gray; zoom:70%;">
 
 2. On the Promote app owner pop-up window, select the role and click **Save**.
 
@@ -165,7 +165,7 @@ To promote a user to owner, follow these steps:
 
 To change the app owner, follow these steps:
 
-1. On the Manage Users page, click the **Ellipsis** icon (⋮) corresponding to the App Owner.
+1. On the Manage Users page, click the **Ellipsis** icon (**⋮**) corresponding to the App Owner.
 <img src="../images/change-owner-button.png" alt="Change Owner Button" title="Change Owner Button" style="border: 1px solid gray; zoom:70%;">
 
 2. On the Promote app owner pop-up window, select the role and click **Save**.  
@@ -175,7 +175,7 @@ To change the app owner, follow these steps:
 
 To delete a user, follow these steps:
 
-1. On the Manage Users page, click the **Ellipsis** icon (⋮) corresponding to the user you want to delete.
+1. On the Manage Users page, click the **Ellipsis** icon (**⋮**) corresponding to the user you want to delete.
 2. Click **Delete**.  
 <img src="../images/delete-user.png" alt="Delete User" title="Delete User" style="border: 1px solid gray; zoom:70%;">
 
@@ -192,7 +192,7 @@ To delete a user, follow these steps:
 
 You can add a group by following the steps below:
 
-1. Click **Invite Users**.
+1. Click **Invite Users**.  
 <img src="../images/invite-user-button.png" alt="Invite Users Button" title="Invite Users Button" style="border: 1px solid gray; zoom:70%;">
 
 2. The Invite User window displays. Here, you can configure the following:

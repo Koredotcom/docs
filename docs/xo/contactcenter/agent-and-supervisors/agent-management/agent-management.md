@@ -88,7 +88,7 @@ Here you can see a list of existing statuses, along with the following informati
 
 **System Busy**: When all the slots assigned to an agent are occupied, the agent’s status automatically changes to system busy.
 
-!!! Note:
+!!! Note
 
     System Away and System Busy statuses are enabled by default for new accounts. To enable them for existing accounts, contact Kore Support. 
 
