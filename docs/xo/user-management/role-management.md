@@ -3019,11 +3019,9 @@ Full Access
   </tr>
   <tr>
    <td>API
-<p>
 Manage API setup and configuration
    </td>
    <td>View
-<p>
 None
 Full Access
    </td>
