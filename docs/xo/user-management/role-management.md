@@ -3118,8 +3118,9 @@ Steps to delete a custom role:
 2. A confirmation message is displayed. Click **Yes**.
 <img src="../images/delete-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:100%;">
 
+3. A confirmation message is displayed and the custom role is deleted.
 
-    !!!Notes
+    !!! Notes
 
         * You cannot delete default roles (App Owner, App Developer, App Tester, Supervisor, and Agent).
         * You cannot restore deleted roles.
