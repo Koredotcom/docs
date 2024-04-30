@@ -2210,282 +2210,282 @@ The table below shows the permissions available within the XO Platform and their
       </td>
    </tr>
    <tr>
-      <td>Agent Status
+      <td><strong>Agent Status</strong>
+
    Create and manage agent status types
       </td>
-      <td>None
-      </td>
+      <td>None</td>
    </tr>
    <tr>
-      <td>Agent Settings
+      <td><strong>Agent Settings</strong>
+
    Modify global agent settings
       </td>
-      <td>None
-      </td>
+      <td>None</td>
    </tr>
    <tr>
-      <td>Skill Management
+      <td><strong>Skill Management</strong>
+
    Create and manage agent skills & skill groups
       </td>
-      <td>None
-      </td>
+      <td>None</td>
    </tr>
    <tr>
-      <td>Agent Group Management
+      <td><strong>Agent Group Management</strong>
+
    Create and manage agent groups
       </td>
-      <td>None
-      </td>
+      <td>None</td>
    </tr>
    <tr>
-      <td>Change User Role
+      <td><strong>Change User Role</strong>
+
    Allow user roles to be modified
       </td>
-      <td>No
+      <td>No</td>
+   </tr>
+   <tr>
+      <td colspan="2" ><strong>Agent & Supervisor Experience</strong>
       </td>
    </tr>
    <tr>
-      <td colspan="2" >Agent & Supervisor Experience
-      </td>
-   </tr>
-   <tr>
-      <td>Agent Desktop Console
+      <td><strong>Agent Desktop Console</strong>
+
    Access and use the agent desktop console
       </td>
-      <td>Yes
-      </td>
+      <td>Yes</td>
    </tr>
    <tr>
-      <td>Widget Management
+      <td><strong>Widget Management</strong>
+
    Create and manage custom widgets
       </td>
-      <td>None
-      </td>
+      <td>None</td>
    </tr>
    <tr>
-      <td>Survey Management
+      <td><strong>Survey Management</strong>
+
    Create and manage surveys
       </td>
-      <td>None
-      </td>
+      <td>None</td>
    </tr>
    <tr>
-      <td>Disposition Management
+      <td><strong>Disposition Management</strong>
+
    Create and manage dispositions
       </td>
-      <td>None
-      </td>
+      <td>None</td>
    </tr>
    <tr>
-      <td>Interactions
+      <td><strong>Interactions</strong>
+
    Access to interactions in the Dashboard
       </td>
-      <td>Yes
-      </td>
+      <td>Yes</td>
    </tr>
    <tr>
-      <td>Access to each agent's personal dashboard
+      <td><strong>Access to each agent's personal dashboard</strong>
+
    Define My Dashboard accessibility to Agents
       </td>
-      <td>Yes
-      </td>
+      <td>Yes</td>
    </tr>
    <tr>
-      <td>Standard Responses
+      <td><strong>Standard Responses</strong>
+
    Create and manage standard responses
       </td>
-      <td>None
-      </td>
+      <td>None</td>
    </tr>
    <tr>
-      <td>Internal Chat
+      <td><strong>Internal Chat</strong>
+
    Chat internally with others in the account
       </td>
-      <td>Yes
-      </td>
+      <td>Yes</td>
    </tr>
    <tr>
-      <td>Audio calls in messaging conversations
+      <td><strong>Audio calls in messaging conversations</strong>
+
    Allow agents to add audio calls to a messaging interaction
       </td>
-      <td>Yes
-      </td>
+      <td>Yes</td>
    </tr>
    <tr>
-      <td>Video calls in messaging conversations
+      <td><strong>Video calls in messaging conversations</strong>
+
    Allow agents to add video calls to a messaging interaction
       </td>
-      <td>Yes
-      </td>
+      <td>Yes</td>
    </tr>
    <tr>
-      <td>Access to Agent metrics in the Dashboard
+      <td><strong>Access to Agent metrics in the Dashboard</strong>
+
    Access to dashboard
       </td>
-      <td>Yes
-      </td>
+      <td>Yes</td>
    </tr>
    <tr>
-      <td>Secure Form Management
+      <td><strong>Secure Form Management</strong>
+
    Create and manage secure forms
       </td>
-      <td>None
-      </td>
+      <td>None</td>
    </tr>
    <tr>
-      <td>Secure Form Data View
+      <td><strong>Secure Form Data View</strong>
+
    View filled-out secure forms and data
       </td>
-      <td>No
-      </td>
+      <td>No</td>
    </tr>
    <tr>
-      <td>Desktop Layout Creation
+      <td><strong>Desktop Layout Creation</strong>
+
    Create custom desktop layouts in the console
       </td>
-      <td>No
-      </td>
+      <td>No</td>
    </tr>
    <tr>
-      <td>Desktop Layout Publishing
+      <td><strong>Desktop Layout Publishing</strong>
+
    Publish custom layouts for account-wide use
       </td>
-      <td>No
-      </td>
+      <td>No</td>
    </tr>
    <tr>
-      <td>Monitor Console
+      <td><strong>Monitor Console</strong>
+
    Access to the monitor tab for live interactions
       </td>
-      <td>No
-      </td>
+      <td>No</td>
    </tr>
    <tr>
-      <td>Reports
+      <td><strong>Reports</strong>
+
    Create, view, and run reports
       </td>
-      <td>None
-      </td>
+      <td>None</td>
    </tr>
    <tr>
-      <td>Join Conversation
+      <td><strong>Join Conversation</strong>
+
    Allow user to join a conversation
       </td>
-      <td>No
-      </td>
+      <td>No</td>
    </tr>
    <tr>
-      <td>Voice Campaigns
+      <td><strong>Voice Campaigns</strong>
+
    Access to Voice campaigns under Campaigns module
       </td>
-      <td>None
-      </td>
+      <td>None</td>
    </tr>
    <tr>
-      <td>Proactive Web Campaigns
+      <td><strong>Proactive Web Campaigns</strong>
+
    Access to Proactive Web campaigns under Campaigns module
       </td>
-      <td>None
-      </td>
+      <td>None</td>
    </tr>
    <tr>
-      <td>Direct Outward Dialing
+      <td><strong>Direct Outward Dialing</strong>
+
    Users can make direct outward calls
       </td>
-      <td>No
-      </td>
+      <td>No</td>
    </tr>
    <tr>
-      <td>Queue Visibility and Access
+      <td><strong>Queue Visibility and Access</strong>
+
    Decide which queues are available for access in the Monitor
       </td>
-      <td>None
-      </td>
+      <td>None</td>
    </tr>
    <tr>
-      <td>Dashboard Content
+      <td><strong>Dashboard Content</strong>
+
    Whose interactions should he have access to
       </td>
-      <td>Own
-      </td>
+      <td>Own</td>
    </tr>
    <tr>
-      <td>Outbound Email
+      <td><strong>Outbound Email</strong>
+
    Make outbound emails if enabled for the account
       </td>
-      <td>No
+      <td>No</td>
+   </tr>
+   <tr>
+      <td colspan="2" ><strong>System</strong>
       </td>
    </tr>
    <tr>
-      <td colspan="2" >System
-      </td>
-   </tr>
-   <tr>
-      <td>Channel Management
+      <td><strong>Channel Management</strong>
+
    Manage communication channels
       </td>
-      <td>None
-      </td>
+      <td>None</td>
    </tr>
    <tr>
-      <td>Billing
+      <td><strong>Billing</strong>
+
    Manage account-level billing preferences
       </td>
-      <td>None
-      </td>
+      <td>None</td>
    </tr>
    <tr>
-      <td>API
+      <td><strong>API</strong>
+
    Manage API setup and configuration
       </td>
-      <td>None
-      </td>
+      <td>None</td>
    </tr>
    <tr>
-      <td>Language & Speech Control
+      <td><strong>Language & Speech Control</strong>
+
    Manage ASR/TTS voice preferences
       </td>
-      <td>None
-      </td>
+      <td>None</td>
    </tr>
    <tr>
-      <td>WFM Configuration Management
+      <td><strong>WFM Configuration Management</strong>
+
    Can Manage WFM Configurations.
       </td>
-      <td>No
+      <td>No</td>
+   </tr>
+   <tr>
+      <td colspan="2" ><strong>Other Modules</strong>
       </td>
    </tr>
    <tr>
-      <td colspan="2" >Other Modules
-      </td>
-   </tr>
-   <tr>
-      <td>Answers Module
+      <td><strong>Answers Module</strong>
+
    Allow users to Access and Manage Answers Module
       </td>
-      <td>No
-      </td>
+      <td>No</td>
    </tr>
    <tr>
-      <td>Campaign Module
+      <td><strong>Campaign Module</strong>
+
    Allow users to Access and Manage the Campaigns Module
       </td>
-      <td>No
-      </td>
+      <td>No</td>
    </tr>
    <tr>
-      <td>AgentAssist Module
+      <td><strong>AgentAssist Module</strong>
+
    Allow user to Access and Manage AgentAssist Module
       </td>
-      <td>No
-      </td>
+      <td>No</td>
    </tr>
    <tr>
-      <td>Quality Management
+      <td><strong>Quality Management</strong>
+
    Allow users to Access and Manage Quality Management Module
       </td>
-      <td>No
-      </td>
+      <td>No</td>
    </tr>
    </table>
 
@@ -2493,594 +2493,595 @@ The table below shows the permissions available within the XO Platform and their
 
    <table>
    <tr>
-      <td colspan="2" >Automation
+      <td colspan="2" ><strong>Automation</strong>
       </td>
    </tr>
    <tr>
-      <td>Tasks
+      <td><strong>Tasks</strong>
+
    Create and manage dialog, action, alert, information, and flow tasks.
       </td>
       <td>Full
    View
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Natural Language
+      <td><strong>Natural Language</strong>
+
    Manage natural language training data (utterances, patterns, synonyms etc.), configurations and thresholds.
       </td>
       <td>Full
    View
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Knowledge Graph
+      <td><strong>Knowledge Graph</strong>
+
    Manage knowledge collection and associated training (Questions, Alternate Questions, Synonyms, and Class)
       </td>
       <td>Full
    View
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Testing
+      <td><strong>Testing</strong>
+
    Manage Batch Testing and Conversation Testing.
       </td>
       <td>Full
    View
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Bot Developers
+      <td><strong>Bot Developers</strong>
+
    Manage Bot Owners and co-developers of a bot.
       </td>
       <td>Full
    View
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Bot Settings
+      <td><strong>Bot Settings</strong>
+
    Manage General Settings, Language Management, Authorization Profiles, PII Settings, IVR Settings, Bot Variables, Bot Versions etc.
       </td>
       <td>Full
    View
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Dashboard
+      <td><strong>Dashboard</strong>
+
    View and export dashboard data
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Custom Dashboards
+      <td><strong>Custom Dashboards</strong>
+
    Manage custom dashboards, widgets, and definitions
       </td>
       <td>Full
    View
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Storyboard
+      <td><strong>Storyboard</strong>
+
    View and Create Scenes
       </td>
       <td>Full
    View
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Bot Builder API Scopes
+      <td><strong>Bot Builder API Scopes</strong>
+
    Manage API Scopes for accessing various platform APIs.
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Integrations & Extensions
+      <td><strong>Integrations & Extensions</strong>
+
    Manage BotKit, WebSDK, Agent Transfer, Actions, External NLU, etc.
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Publish bot
+      <td><strong>Publish bot</strong>
+
    Raise request to publish the bot
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Bot Analytics
+      <td><strong>Bot Analytics</strong>
+
    View and export bot Analytics
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Bot Import
+      <td><strong>Bot Import</strong>
+
    Upgrade a bot by importing a new bot definition file or restoring a version
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>IntentDiscovery
+      <td><strong>IntentDiscovery<strong>
+
    Manage Intent Discovery.
       </td>
       <td>Full
    View
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Use Case Management
+      <td><strong>Use Case Management</strong>
+
    Create and manage FAQs and conversations
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Automations DashBoard
+      <td><strong>Automations DashBoard</strong>
+
    Access to automation metrics in Dashboard
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Automations Tab
+      <td><strong>Automations Tab</strong>
+
    Access to the automations tab and XO Platform
       </td>
       <td>Yes
-   No
+   No</td>
+   </tr>
+   <tr>
+      <td colspan="2" ><strong>Flows & Routing</strong>
       </td>
    </tr>
    <tr>
-      <td colspan="2" >Flows & Routing
-      </td>
-   </tr>
-   <tr>
-      <td>Waiting Experience
+      <td><strong>Waiting Experience</strong>
+
    Create and manage waiting experiences
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Hours of Operation
+      <td><strong>Hours of Operation</strong>
+
    Create and manage hours of operation
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Queue Settings
+      <td><strong>Queue Settings</strong>
+
    Create and manage queues
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Flow Management
+      <td><strong>Flow Management</strong>
+
    Create and manage experience flows
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Default Flows
+      <td><strong>Default Flows</strong>
+
    No ability to manage default flow properties
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Transfer Routing Rules
+      <td><strong>Transfer Routing Rules</strong>
+
    Configure global transfer rules for chat/voice
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Agent Playbook - Configuration
+      <td><strong>Agent Playbook - Configuration</strong>
+
    Manage the accessibility of agent playbook feature
       </td>
       <td>None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>AgentAssist Settings
+      <td><strong>AgentAssist Settings</strong>
+
    Define AgentAssist Widgets accessibility to Agents
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Agent Coaching - Configuration
+      <td><strong>Agent Coaching - Configuration</strong>
+
    Manage the accessibility of real-time coaching feature
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Service Level - Configuration
+      <td><strong>Service Level - Configuration</strong>
+
    Manage the accessibility of service level feature
       </td>
       <td>View
    None
-   Full Access
+   Full Access</td>
+   </tr>
+   <tr>
+      <td colspan="2" ><strong>User Management</strong>
       </td>
    </tr>
    <tr>
-      <td colspan="2" >User Management
-      </td>
-   </tr>
-   <tr>
-      <td>Agent Status
+      <td><strong>Agent Status</strong>
+
    Create and manage agent status types
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Agent Settings
+      <td><strong>Agent Settings</strong>
+
    Modify global agent settings
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Skill Management
+      <td><strong>Skill Management</strong>
+
    Create and manage agent skills & skill groups
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Agent Group Management
+      <td><strong>Agent Group Management</strong>
+
    Create and manage agent groups
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Change User Role
+      <td><strong>Change User Role</strong>
+
    Allow user roles to be modified
       </td>
       <td>Yes
-   No
+   No</td>
+   </tr>
+   <tr>
+      <td colspan="2" ><strong>Agent & Supervisor Experience</strong>
       </td>
    </tr>
    <tr>
-      <td colspan="2" >Agent & Supervisor Experience
-      </td>
-   </tr>
-   <tr>
-      <td>Agent Desktop Console
+      <td><strong>Agent Desktop Console</strong>
+
    Access and use the agent desktop console
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Widget Management
+      <td><strong>Widget Management</strong>
+
    Create and manage custom widgets
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Survey Management
+      <td><strong>Survey Management</strong>
+
    Create and manage surveys
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Disposition Management
+      <td><strong>Disposition Management</strong>
+
    Create and manage dispositions
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Interactions
+      <td><strong>Interactions</strong>
+
    Access to interactions in the Dashboard
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Access to each agent's personal dashboard
+      <td><strong>Access to each agent's personal dashboard</strong>
+
    Define My Dashboard accessibility to Agents
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Standard Responses
+      <td><strong>Standard Responses</strong>
+
    Create and manage standard responses
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Internal Chat
+      <td><strong>Internal Chat</strong>
    Chat internally with others in the account
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Audio calls in messaging conversations
+      <td><strong>Audio calls in messaging conversations</strong>
+
    Allow agents to add audio calls to a messaging interaction
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Video calls in messaging conversations
+      <td><strong>Video calls in messaging conversations</strong>
+
    Allow agents to add video calls to a messaging interaction
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Access to Agent metrics in the Dashboard
+      <td><strong>Access to Agent metrics in the Dashboard</strong>
+
    Access to dashboard
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Secure Form Management
+      <td><strong>Secure Form Management</strong>
+
    Create and manage secure forms
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Secure Form Data View
+      <td><strong>Secure Form Data View</strong>
+
    View filled-out secure forms and data
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Desktop Layout Creation
+      <td><strong>Desktop Layout Creation</strong>
+
    Create custom desktop layouts in the console
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Desktop Layout Publishing
+      <td><strong>Desktop Layout Publishing</strong>
+
    Publish custom layouts for account-wide use
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Monitor Console
+      <td><strong>Monitor Console</strong>
+
    Access to the monitor tab for live interactions
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Reports
+      <td><strong>Reports</strong>
+
    Create, view, and run reports
       </td>
       <td>None
    View & Run
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Join Conversation
+      <td><strong>Join Conversation</strong>
+
    Allow user to join a conversation
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Voice Campaigns
+      <td><strong>Voice Campaigns</strong>
+
    Access to Voice campaigns under Campaigns module
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Proactive Web Campaigns
+      <td><strong>Proactive Web Campaigns</strong>
+
    Access to Proactive Web campaigns under Campaigns module
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Direct Outward Dialing
+      <td><strong>Direct Outward Dialing</strong>
+
    Users can make direct outward calls
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Queue Visibility and Access
+      <td><strong>Queue Visibility and Access</strong>
+
    Decide which queues are available for access in the Monitor
       </td>
       <td>All
    Self
-   None
-      </td>
+   None</td>
    </tr>
    <tr>
-      <td>Dashboard Content
+      <td><strong>Dashboard Content</strong>
+
    Whose interactions should he have access to
       </td>
       <td>Own
-   All
-      </td>
+   All</td>
    </tr>
    <tr>
-      <td>Outbound Email
+      <td><strong>Outbound Email</strong>
+
    Make outbound emails if enabled for the account
       </td>
       <td>Yes
-   No
+   No</td>
+   </tr>
+   <tr>
+      <td colspan="2" ><strong>System</strong>
       </td>
    </tr>
    <tr>
-      <td colspan="2" >System
-      </td>
-   </tr>
-   <tr>
-      <td>Channel Management
+      <td><strong>Channel Management</strong>
+
    Manage communication channels
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Billing
+      <td><strong>Billing</strong>
+
    Manage account-level billing preferences
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>API
+      <td><strong>API</strong>
+
    Manage API setup and configuration
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>Language & Speech Control
+      <td><strong>Language & Speech Control</strong>
+
    Manage ASR/TTS voice preferences
       </td>
       <td>View
    None
-   Full Access
-      </td>
+   Full Access</td>
    </tr>
    <tr>
-      <td>WFM Configuration Management
+      <td><strong>WFM Configuration Management</strong>
+
    Can Manage WFM Configurations.
       </td>
       <td>Yes
-   No
+   No</td>
+   </tr>
+   <tr>
+      <td colspan="2" ><strong>Other Modules</strong>
       </td>
    </tr>
    <tr>
-      <td colspan="2" >Other Modules
-      </td>
-   </tr>
-   <tr>
-      <td>Answers Module
+      <td><strong>Answers Module</strong>
+
    Allow users to Access and Manage Answers Module
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Campaign Module
+      <td><strong>Campaign Module</strong>
+
    Allow users to Access and Manage the Campaigns Module
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>AgentAssist Module
+      <td><strong>AgentAssist Module</strong>
+
    Allow user to Access and Manage AgentAssist Module
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    <tr>
-      <td>Quality Management
+      <td><strong>Quality Management</strong>
+
    Allow users to Access and Manage Quality Management Module
       </td>
       <td>Yes
-   No
-      </td>
+   No</td>
    </tr>
    </table>
+
+<hr>
 
 ## Custom Roles
 
