@@ -9,7 +9,7 @@ You can find the **Users** section on the left menu by going to **Manage** > **U
 
 This section lets you create, search (by name), and manage user roles; and lists existing roles along with the following information:
 
-1. **Role Name**: The name of the user role, available throughout SmartAssist.
+1. **Role Name**: The name of the user role, available throughout XO Platform.
 2. **Actions**: Let you edit or delete a role.
 3. **Description**: A short description of the role.
 4. **Type**: Lists the role type: _System_ is assigned to default, preconfigured roles, while _Custom_ is assigned to custom roles.
@@ -3170,7 +3170,7 @@ The table below shows the permissions available within the XO Platform and their
    </tr>
    <tr>
       <td><strong>Quality Management</strong>  
-      
+
    Allow users to Access and Manage Quality Management Module
       </td>
       <td>Yes
@@ -3193,7 +3193,7 @@ Steps to add a new role:
 <img src="../images/new-role.png" alt="New Role" title="New Role" style="border: 1px solid gray; zoom:100%;">
 
 2. In the New Role window, fill out the following fields:
-    1. **Role Name**: This name is assigned to the user role across SmartAssist. For example, Experience Designer.
+    1. **Role Name**: This name is assigned to the user role across XO Platform. For example, Experience Designer.
     2. **Description**: Add other information on the role, responsibilities, or access level.
     3. **Permissions**: Set the access permissions by selecting one of the available options within the dropdown next to each permission.
     4. Click **Save**.  
