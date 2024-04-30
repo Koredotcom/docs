@@ -10,7 +10,7 @@ This document provides information on the various releases and the corresponding
 
 ## v11.1.0 April 27, 2024
 
-**Minor Release**
+<u>Minor Release</u>
 
 Key updates to products and features are summarized below. Click the corresponding tab to see the details.
 
@@ -42,8 +42,9 @@ Key updates to products and features are summarized below. Click the correspondi
 
     The Platform now offers native support for threaded conversations in the Slack channel. Users can initiate a new thread from any message within a Slack channel or direct message group.
 
-    Additionally, the platform provides extended functionality for developers. It can automatically create a new thread whenever a user "@mentions" the virtual assistant in a Slack channel. This behavior is configurable, giving developers control over this feature.  
+    Additionally, the platform provides extended functionality for developers. It can automatically create a new thread whenever a user \@mentions the virtual assistant in a Slack channel. This behavior is configurable, giving developers control over this feature.  
     <img src="../images/slack-channel-customize.png" alt="Slack Channel Configuration" title="Slack Channel Configuration" style="border: 1px solid gray; zoom:70%;">
+
     [Learn more :octicons-arrow-right-24:](../channels/add-slack-channel-new.md)
 
 === "Automation AI"
@@ -129,7 +130,7 @@ Key updates to products and features are summarized below. Click the correspondi
     The Agent AI widget now shows the “No Search Result Found. Could you rephrase your question or ask something else?” message when an agent’s search query on the search bar doesn’t show any results.
     If no dialog tasks are configured for an account, the message “No dialog tasks enabled for library” appears in the Library/Search tab.
 
-    ### Updates to the Override Mode of the AgentAI widget
+    ### Updates to the Override Mode of the Agent AI widget
 
     **Override Mode Off**
         
