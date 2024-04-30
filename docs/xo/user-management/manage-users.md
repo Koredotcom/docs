@@ -183,10 +183,10 @@ To delete a user, follow these steps:
 
 !!! Notes
 
-   1. You cannot delete your own user.
-   2. You cannot delete the Contact Center AI app owner.
-   3. Reports, dashboards, and APIs will display deleted agents as long as interactions and metrics contain data associated with the deleted agents.
-   4. After deleting a user record, the respective user can no longer sign into Contact Center AI. If you want to temporarily restrict users from handling customer conversations, you can turn off their access to chat and voice channels, or add them to the [Unassigned group](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#pre-configured-groups).
+      1. You cannot delete your own user.
+      2. You cannot delete the Contact Center AI app owner.
+      3. Reports, dashboards, and APIs will display deleted agents as long as interactions and metrics contain data associated with the deleted agents.
+      4. After deleting a user record, the respective user can no longer sign into Contact Center AI. If you want to temporarily restrict users from handling customer conversations, you can turn off their access to chat and voice channels, or add them to the [Unassigned group](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#pre-configured-groups).
 
 ## Add a Group
 
