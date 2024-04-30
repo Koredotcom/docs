@@ -37,36 +37,35 @@ The table below shows the permissions available within the XO Platform and their
 
 === "APP OWNER"
 
-
-   <table>
-   <tr>
-      <td colspan="2" ><strong>Automation</strong>
-      </td>
-   </tr>
-   <tr>
-      <td><strong>Tasks</strong>
+      <table>
+      <tr>
+         <td colspan="2" ><strong>Automation</strong>
+         </td>
+      </tr>
+      <tr>
+         <td><strong>Tasks</strong>
    
-   Create and manage dialog, action, alert, information, and flow tasks.
-      </td>
-      <td>Full Access</td>
-   </tr>
-   <tr>
-      <td><strong>Natural Language</strong>
+      Create and manage dialog, action, alert, information, and flow tasks.
+         </td>
+         <td>Full Access</td>
+      </tr>
+      <tr>
+         <td><strong>Natural Language</strong>
    
-   Manage natural language training data (utterances, patterns, synonyms etc.), configurations and thresholds.
-      </td>
-      <td>Full Access</td>
-   </tr>
-   <tr>
-      <td><strong>Knowledge Graph</strong>
+      Manage natural language training data (utterances, patterns, synonyms etc.), configurations and thresholds.
+         </td>
+         <td>Full Access</td>
+      </tr>
+      <tr>
+         <td><strong>Knowledge Graph</strong>
    
-   Manage knowledge collection and associated training (Questions, Alternate Questions, Synonyms, and Class)
-      </td>
-      <td>Full Access</td>
-   </tr>
-   <tr>
-      <td><strong>Testing</strong>
-   
+      Manage knowledge collection and associated training (Questions, Alternate Questions, Synonyms, and Class)
+         </td>
+         <td>Full Access</td>
+      </tr>
+      <tr>
+         <td><strong>Testing</strong>
+      
    Manage Batch Testing and Conversation Testing.
       </td>
       <td>Full Access</td>
