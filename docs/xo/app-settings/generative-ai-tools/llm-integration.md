@@ -2,12 +2,6 @@
 
 # LLM Integration
 
-	
-
-		
-
-			
-
 To use LLM and Generative AI features, you must configure the integration with a pre-built or custom LLM.
 
 
@@ -116,7 +110,7 @@ Steps to integrate a Custom LLM:
 
 ## Kore.ai XO GPT Integration
 
-The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. Initial capabilities include Conversation Summarization and User Query Rephrasing.
+The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. Current capabilities include Conversation Summarization, User Query Rephrasing, Vector Generation and Answer Generation.
 
 !!! note
 
@@ -136,20 +130,15 @@ Steps to enable Kore.ai XO GPT Models.
     ![alt_text](images/xogpt2.png  )
  
 3. On the **Models** tab, toggle on the models as required.
-![alt_text](images/xogpt3.png  )
+![alt_text](images/xo-gpt-models.png  )
 
 
 4. Read the Policy Guidelines, select the checkbox, and click Save.
-5. The success confirmation message is displayed on the screen. The configured model is listed in the LLM Integration section. The status changed to X/Y models configured, where X is the number of the model(s) configured, and Y is the number of model(s) supported.
+5. The success confirmation message is displayed on the screen. The configured model is listed in the LLM Integration section. The status changes to X/Y models configured, where X is the number of the model(s) configured, and Y is the number of model(s) supported.
 ![alt_text](images/xogpt4.png  )
 
 
-6. The next step is to enable [ Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
-
-
-
-
-
+6. You can now use these models in [ Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
 
 
 ## Reset/Delete the Configured LLM Integration

@@ -112,7 +112,7 @@ copyright: |
 nav:
   - Home : home.md
   - Platform:
-    - What's New in XO 11: getting-started/whats-new-in-xo-platform.md
+    - Overview: getting-started/xo-platform-overview.md    
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md   
       - Navigating the Platform: getting-started/navigating-the-platform.md       
@@ -148,6 +148,10 @@ nav:
               - IVR: channels/IVR-integration.md            
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
+    - Release Notes:
+      - What's New in XO 11: getting-started/whats-new-in-xo-platform.md  
+      - Latest Updates: release-notes/version-11-1-x.md
+
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:
@@ -232,7 +236,6 @@ nav:
         - Context Object: automation/intelligence/context-object.md
         - Conversation Events: 
           - Default Conversations: automation/intelligence/conversation-management/default-conversations.md
-          - Conversation Driven Dialog Builder: automation/intelligence/conversation-management/conversation-driven-dialog-builder.md
         - Sentiment Events: 
           - Sentiment Management: automation/intelligence/sentiment-management/sentiment-management-overview.md
           - Tone Analysis: automation/intelligence/sentiment-management/tone-analysis.md
@@ -251,7 +254,7 @@ nav:
     - Advanced Topics:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
-        - Team Collaboration: manage-assistant/
+        - Team Collaboration: manage-assistant/collaborative-development.md
         - Authorization: manage-assistant/bot-authorization-overview.md
         - Conversation Sessions: manage-assistant/conversation-sessions.md
         - Multilingual Virtual Assistants:
@@ -291,7 +294,9 @@ nav:
         - Chunk Browser: searchai/chunk-browser.md
         - Index Configuration: searchai/index-configuration.md
     - Configuration:
+        - Business Rules: searchai/business-rules.md
         - Answer Configuration: searchai/answer-configuration.md
+        - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
   - Contact Center AI:
     - Overview: contactcenter/about-contact-center-ai.md    
     - Agent and Supervisors: 
@@ -425,7 +430,8 @@ nav:
         - Rate Limits: apis/automation/rate-limit.md
         - API List:
           - Automation APIs: apis/automation/api-list.md
-          - Contact Center APIs: apis/api-list.md
+          - Contact Center APIs:
+            - API List: apis/contact-center/contact-center-api-list.md
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md
@@ -488,7 +494,9 @@ nav:
         - Kore.ai XO GPT Module: app-settings/generative-ai-tools/xo-gpt-module.md
         - Prompts & Requests Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
         - Co-Pilot Features: app-settings/generative-ai-tools/co-pilot-features.md        
-        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md        
+        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md 
+        - PII and Sensitive Data: app-settings/generative-ai-tools/pii-and-sensitive-data.md
+        - Guardrails: app-settings/generative-ai-tools/guardrails.md       
       - Dev Tools:
         - Bot Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
         - Authorization Profiles: app-settings/dev-tools/bot-authorization/bot-authentication.md

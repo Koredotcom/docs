@@ -39,16 +39,28 @@ To import a Virtual Assistant, follow these steps:
 2. Select the **Deploy** tab from the left menu.
 3. Select **Import & Export** under **DEPLOY MANAGEMENT**.
 4. On the Import & Export page select the **Import** tab.
-5. Click the **Choose File** buttons next to the **Bot Definition File** field and **Bot Config File** field, and upload the _botDefinition.json_ and _config.json_ files respectively.
-6. Optionally, upload the custom script file from the imported assistant if any. The file size is limited to 500kb.
-    <img src="../images/bot-import-custom-script-file.png" alt="App import - Custom script file" title="App import - Custom script file" style="border:1px solid gray; zoom:70%;">
+5. You can choose one of the below import options:
 
-7. Select one of these import options: **Full Import** or **Incremental Import**. You will get a warning to backup your assistant before performing the import.
-8. If you select **Full import**, the bot definition in the in-development copy will be overwritten with the definition present in the import file.
+    * Import by uploading **individual JSON file**s:
+        1. Choose the **JSON Files** radio button.
+        2. Click the **Choose File** buttons next to the **Bot Definition File** field and **Bot Config File** field, and upload the _botDefinition.json_ and _config.json_ files respectively.
+        3. Optionally, upload the custom script file from the imported assistant if any. The file size is limited to 500kb.
+        4. Optionally, upload the custom script file from the imported assistant if any. The file size is limited to 500kb.
+        
+        <img src="../images/bot-import-custom-script-file1.png" alt="App import - JSON files" title="App import - JSON files" style="border:1px solid gray; zoom:70%;">
+
+    * Import by uploading **ZIP file**:
+        1. Choose the Zip File radio button.
+        2. Through the Choose File button, browse and import the Zip file. Using this option you can import an app by directly importing the zip file created at the time of Export, without having to unzip.
+
+        <img src="../images/bot-import-zip-file.png" alt="App import - ZIP file" title="App import - ZIP file" style="border:1px solid gray; zoom:70%;">
+
+6. Select one of these import options: **Full Import** or **Incremental Import**. You will get a warning to backup your assistant before performing the import.
+7. If you select **Full import**, the bot definition in the in-development copy will be overwritten with the definition present in the import file.
     
     * If there are one or more additional tasks or languages in the assistant, and if these are not present in the import definition, then these tasks will be marked as deleted and will be removed when the bot is published.
 
-9. If you select **Incremental import**, you can also choose which components to import.
+8. If you select **Incremental import**, you can also choose which components to import.
 
     ![alt_text](images/bm(4).png "image_tooltip")
 
@@ -80,8 +92,8 @@ To import a Virtual Assistant, follow these steps:
 
             While backing up is an optional choice, we strongly recommend you do so, especially when choosing Full Import, as you cannot recover the configurations after the imported assistant replaces them.
 
-10. Click **Proceed** to start the import.
-11. After the import is completed, the following success message appears. Click **Done**.
+9. Click **Proceed** to start the import.
+10. After the import is completed, the following success message appears. Click **Done**.
     
     !!! note
 

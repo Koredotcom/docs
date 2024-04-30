@@ -26,7 +26,7 @@ Here is the overall usage process for Digital Forms within the XO Platform
 
 * **Form Creation**: Define a Digital Form by adding components and configuring their properties.
 * **Form Invocation**: Forms are invoked from inside a task or process:
-   * A form is included as a component in the task. The dialog task offers a Form Experience and Conversation Experience based on the channel of interaction. Learn more by reading about the [Form Node](../../dialogs/node-types/working-with-the-form-node/{:target="_blank"}.
+   * A form is included as a component in the task. The dialog task offers a Form Experience and Conversation Experience based on the channel of interaction. Learn more by reading about the [Form Node](../../dialogs/node-types/working-with-the-form-node/){:target="_blank"}.
    * A Digital Form is added to a Digital View with a dialog task triggered when a form is submitted from there.
 
 * **Form Submission**: When it is submitted, the component values are validated and any errors are highlighted. Based on the mode of invocation, post successful validation:
@@ -69,17 +69,20 @@ To create forms, follow the steps below:
    
     Once enabled, the Platform will replace the user input with a unique random system-generated alphanumeric value in all the modules. Also, the **Secure Form** icon and a tip will be displayed, notifying the user that the form is secure.
 
-    <img src="../../images/secure-form-icon.png" alt="secure form icon" title="secure form icon" style="border: 1px solid gray; zoom:75%;"></li>
+    <img src="../../images/secure-form-icon.png" alt="secure form icon" title="secure form icon" style="border: 1px solid gray; zoom:75%;">
+
+    Secure Form feature ensures data security at form level. You can achieve securing data at component level too. [Read here](../configure-digital-forms/#form-editor){:target="_blank"} to know more.
+
 
 7. Click **Save & Proceed**.
 
-    <img src="../../images/save-digital-form.png" alt="save digital form" title="save digital form" style="border: 1px solid gray; zoom:75%;"></li></ol>
+    <img src="../../images/save-digital-form.png" alt="save digital form" title="save digital form" style="border: 1px solid gray; zoom:75%;">
 
 ### Add Components
 
 Once you configure the basic details for your form, the Platform takes you to the form builder, where you can add the components you require.
 
-You can drag and drop the components available on the left pane to the canvas and configure their properties to build the form. For details of the available components & their properties.
+You can drag and drop the components available on the left pane to the canvas and configure their properties to build the form. For details of the available components & their properties [see here](../configure-digital-forms/#form-editor){:target="_blank"}.
 
 <img src="../../images/drag-component.gif" alt="Drag and drop component" title="Drag and drop component" style="border: 1px solid gray; zoom:75%;">
 
@@ -444,6 +447,10 @@ Following is a list of the available components.
 * **Date** – Used for date entries, gives a date picker for the user to choose the date.
 
     <img src="../../images/date-calendar.png" alt="date" title="date" style="border: 1px solid gray; zoom:75%;">
+
+    **Note** : The Date picker displays the month and week names in Japanese characters if the VA language is Japanese. This support will be extended to more languages in the future.
+
+    <img src="../../images/digital-forms-date-picker-japanese.png" alt="date picker - Japanese" title="date picker - Japanese" style="border: 1px solid gray; zoom:75%;">
 
 * **Date & Time** – Used for date & time entries. The system displays a date and time picker for the user to choose the date and time.
 Use the **Date component** and set the _Time option_ to _yes_; choose from _12_ or _24-hour_ format.
