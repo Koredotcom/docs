@@ -3091,14 +3091,14 @@ You can create custom user roles within the XO Platform to suit your business ne
 
 Steps to add a new role:
 
-1. Click **+ New Role**.
+1. Click **+ New Role**.  
 <img src="../images/new-role.png" alt="New Role" title="New Role" style="border: 1px solid gray; zoom:100%;">
 
 2. In the New Role window, fill out the following fields:
     1. **Role Name**: This name is assigned to the user role across SmartAssist. For example, Experience Designer.
     2. **Description**: Add other information on the role, responsibilities, or access level.
     3. **Permissions**: Set the access permissions by selecting one of the available options within the dropdown next to each permission.
-    4. Click **Save**.
+    4. Click **Save**.  
     <img src="../images/configure-permissions.png" alt="Configure Permissions" title="Configure Permissions" style="border: 1px solid gray; zoom:100%;">
 
 ### Edit a Role
@@ -3114,10 +3114,10 @@ Steps to edit an existing role:
 
 Steps to delete a custom role:
 
-1. Click the **Ellipsis** icon (**⋮**) for the role you want to update and click **Delete**.
+1. Click the **Ellipsis** icon (**⋮**) for the role you want to update and click **Delete**.  
 <img src="../images/delete-button.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:100%;">
 
-2. A confirmation message is displayed. Click **Yes**.
+2. A confirmation message is displayed. Click **Yes**.  
 <img src="../images/delete-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:100%;">
 
 3. A confirmation message is displayed and the custom role is deleted.
