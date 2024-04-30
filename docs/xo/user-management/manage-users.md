@@ -59,7 +59,7 @@ The Users section includes the features in the table below.
 You can add a user to Contact Center AI by following the steps below:
 
 1. Click **Invite Users**.  
-<img src="../images/invite-user-button.png" alt="Invite Users Button" title="Invite Users Button" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/invite-user-button.png" alt="Invite Users Button" title="Invite Users Button" style="border: 1px solid gray; zoom:100%;">
 
 2. The Invite User window displays. Here, you can configure the following:
     1. **Email**: Enter the users email ID.
