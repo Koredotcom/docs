@@ -17,7 +17,7 @@ Additionally, the Platform allows developers to configure how the Slack channel 
 
 To enable this integration, you must already have a _Slack_ account and be a member of a _Slack_ organization space.
 
-**Setup Flow**
+**Channel Setup Summary**
 
 To set up Slack as a channel, the developer should associate the VA with a Slack app, set up a bot user, and enable interactive components for this app. The important steps include:
 
@@ -76,7 +76,7 @@ To set up Slack as a channel, the developer should associate the VA with a Slack
 1. Navigate to **Interactivity & Shortcuts** and enable **Interactivity**.
 2. On the XO Platform, copy the **Webhook URL** from the Slack channel’s **Configurations** tab and enter it in the **Request URL** field on Slack.
 
-    <div class="admonition caution">
+    <div class="admonition warning">
     <p class="admonition-title">Important</p>
     <p>The Webhook URL now includes the <b><i>streamid</i></b> in the API request to identify the virtual assistant being accessed. When an incoming request is qualified with this identifier, it helps with traceability, troubleshooting, and remediation at the network level during anomalies like malicious calls or unusual bot activity.</p>
     </div>
