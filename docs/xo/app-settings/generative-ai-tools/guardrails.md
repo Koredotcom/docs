@@ -128,13 +128,13 @@ Steps to enable a Guardrail:
 
 
 
-1. Navigate to **App Settings** > **Generative AI Tools** > **Guardrails**.  <img src="../images/guardrails(6).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+1. Navigate to **App Settings** > **Generative AI Tools** > **Guardrails**.  <img src="../images/guardrails6.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
-2. Turn on the **Status** toggle for the required guardrail. The advanced settings are displayed.  <img src="../images/guardrails(2).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+2. Turn on the **Status** toggle for the required guardrail. The advanced settings are displayed.  <img src="../images/guardrails2.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 3. Turn on the **Enable All** toggle or the individual feature **LLM Input** and **LLM Output** toggles as required. 
 
-    * In the Filter Responses, add one or more regular expressions to specify which LLM responses you want to filter out or remove.  <img src="../images/guardrails(5).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+    * In the Filter Responses, add one or more regular expressions to specify which LLM responses you want to filter out or remove.  <img src="../images/guardrails5.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 
 4. Click **Save**. The success message is displayed.
@@ -149,7 +149,7 @@ Steps to disable a Guardrail:
 
 
 1. Navigate to **App Settings** > **Generative AI Tools** > **Guardrails**.
-2. Turn off the **Status** toggle for the respective guardrail. The disable guardrail popup is displayed.  <img src="../images/guardrails(1).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:45%;">
+2. Turn off the **Status** toggle for the respective guardrail. The disable guardrail popup is displayed.  <img src="../images/guardrails1.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:45%;">
 3. Click **Disable**. The success message is displayed.
 
 
@@ -160,9 +160,9 @@ Steps to edit a Guardrail:
 
 
 1. Navigate to **App Settings** > **Generative AI Tools** > **Guardrails**.
-2. Click **more** (three dots) and click **Edit**. The advanced settings are displayed.  <img src="../images/guardrails(4).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+2. Click **more** (three dots) and click **Edit**. The advanced settings are displayed.  <img src="../images/guardrails4.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
-3. Toggle on/off the **LLM Input** and **LLM Output** as required.  <img src="../images/guardrails(2).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:60%;">
+3. Toggle on/off the **LLM Input** and **LLM Output** as required.  <img src="../images/guardrails2.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:60%;">
 
 4. Click **Save**. The success message is displayed.
 
@@ -205,7 +205,7 @@ All LLM requests and responses, as well as guardrail validation results, are rec
 
 For example, the debug logs show five entries if a specific node has two input and three output guardrails enabled, as shown in the screenshot below.
 
-<img src="../images/guardrails(7).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/guardrails7.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -228,7 +228,7 @@ Steps to change the fallback behavior:
 
 
 1. Go to **App Settings** > **Generative AI Tools** > **Dynamic Conversation** > **GenAI Node** > **Advance Settings**.  
-<img src="../images/guardrails(3).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:40%;">
+<img src="../images/guardrails3.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:40%;">
 
 2. Select the fallback behavior as required.
 3. Click **Save**.
@@ -237,5 +237,5 @@ Steps to change the fallback behavior:
 
 ### Fallback Behavior for Rephrase Dialog Response
 
-By default, when the guardrail is violated, the system uses the "Send the original query" option.  <img src="../images/guardrails(8).png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:40%;">>
+By default, when the guardrail is violated, the system uses the "Send the original query" option.  <img src="../images/guardrails8.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:40%;">>
 
