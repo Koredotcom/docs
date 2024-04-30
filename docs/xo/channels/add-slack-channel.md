@@ -155,11 +155,11 @@ To enable Slack on the XO Platform, follow the steps below:
 
 <li>(Optional) Enable <b>Proactive Notifications</b> to send notifications from your Process Apps to your bot users via Slack. Please refer to Step 2 <a href="https://docsinternal-kore.github.io/docs/xo/channels/add-slack-channel-new/#step-3-install-the-app" target="_blank">here</a>.
 
-<img src="../images/proactive-notifications.png" alt="proactive notfications" title="proactive notfications" style="border: 1px solid gray; zoom:65%;">
+<img src="../images/proactive-notifications.png" alt="proactive notfications" title="proactive notfications" style="border: 1px solid gray; zoom:65%;"></li>
  
-Once enabled, select the required Process Apps from the list for your VA, and click <b>Authorize</b>.</li>
+Once enabled, select the required Process Apps from the list for your VA, and click <b>Authorize</b>.</ol>
 
-<li>Under <b>Enable Channel</b>, select <b>Yes</b> and click <b>Save</b> to enable the Slack channel.
+<ol start="7"><li>Under <b>Enable Channel</b>, select <b>Yes</b> and click <b>Save</b> to enable the Slack channel.
 <img src="../images/enable-slack-channel.png" alt="enable slack channel" title="enable slack channel" style="border: 1px solid gray; zoom:65%;"></li></ol>
 
 The Slack channel is added successfully. In Slack, it is optional to submit your app to the Slack App Directory.
