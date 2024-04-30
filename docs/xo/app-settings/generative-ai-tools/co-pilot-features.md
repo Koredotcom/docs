@@ -144,7 +144,7 @@ The following table displays the Co-Pilot features and the supported models.
 
 <table>
   <tr>
-   <td><strong>Model/Feature</strong>
+   <td><strong>Model</strong>
    </td>
    <td>Automatic Dialog Generation
    </td>

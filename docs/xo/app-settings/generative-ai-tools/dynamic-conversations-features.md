@@ -143,15 +143,15 @@ The following table displays the Dynamic Conversation features and the supported
 
 <table>
   <tr>
-    <td><strong>Model</strong></td>
-    <td><strong>Answer Generation</strong></td>
-    <td><strong>GenAI Node</strong></td>
-    <td><strong>GenAI Prompt</strong></td>
-    <td><strong>Rephrase Dialog Responses</strong></td>
-    <td><strong>Rephrase User Query</strong></td>
-    <td><strong>Repeat Responses</strong></td>
-    <td><strong>Vector Generation</strong></td>
-    <td><strong>Zero-shot ML Model</strong></td>
+    <td><strong> Model </strong> </td>
+    <td> Answer Generation  </td>
+    <td> GenAI Node  </td>
+    <td> GenAI Prompt  </td>
+    <td> Rephrase Dialog Responses  </td>
+    <td> Rephrase User Query  </td>
+    <td> Repeat Responses  </td>
+    <td> Vector Generation  </td>
+    <td> Zero-shot ML Model  </td>
   </tr>
   <tr>
     <td>Azure OpenAI – GPT 3.5 Turbo</td>
