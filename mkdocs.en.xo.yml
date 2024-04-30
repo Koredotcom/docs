@@ -537,3 +537,6 @@ nav:
       - Cloud Connector: administration/kore-ai-connector.md
       - Analytics for Bots Admin: administration/analytics.md
       - Billing: administration/billing.md    
+  - Users:
+    - Manage Users: user-management/manage-users.md
+    - Role Management: user-management/role-management.md

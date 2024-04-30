@@ -92,6 +92,7 @@ Key updates to products and features are summarized below. Click the correspondi
     * App Tester – No
     * Agent – No
     * Custom Role – No (Default)
+    [Learn more](../user-management/role-management.md#permissions)
 
     ## Campaigns
 
