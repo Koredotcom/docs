@@ -1,11 +1,10 @@
-# Manage user roles and permissions
+# Manage User Roles and Permissions
 
 The owner of each respective application holds the authority to extend invitations to any number of individual users, customizing their capabilities in alignment with the unique requirements of each application.
 
 !!! note
 
-    You can only invite those users to an application, who have access to your account. If you want to provide access to your account, see Invite a user to you.
-
+    You can only invite those users to an application, who have access to your account.
 
 **To manage user roles and permissions, follow these steps**:
 

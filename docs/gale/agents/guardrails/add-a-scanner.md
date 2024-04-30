@@ -1,4 +1,4 @@
-# Add a scanner
+# Add a Scanner
 
 You have the option to add an input or output scanner, facilitating the scanning and verification of a particular objective. Input scanners evaluate the inputs or prompts directed to the LLM node, while output scanners assess the responses received from the LLM.
 
@@ -26,14 +26,14 @@ You have the option to add an input or output scanner, facilitating the scanning
 
     !!! note
 
-        You must deploy the required scanner first and only then it will be listed in this pop-up list. For more about Deploying a scanner, see Manage Guardrails.
+        You must deploy the required scanner first and only then it will be listed in this pop-up list.
 
 1. Click the required scanner from the list of added scanners to configure that scanner. The settings displayed are different for each scanner. For example, the settings for “Toxicity” are **Threshold** and **End the flow if the risk score is above**. Similarly, the settings for the “Regex” scanner are **Enter patterns to ban**, **End the flow if the risk score is above**, and **Match type**.
 
-    <img src="../images/remove-scanner.png" alt="Remove Scanner" title="Remove Scanner" style="border: 1px solid gray; zoom:80%;">
-
-!!! note
+    
+    !!! note
 
         You can remove a scanner if you don’t want to be charged if not in use, by clicking the **Remove** icon corresponding to the scanner name from the list of scanners as shown in the following image.
     
 
+    <img src="../images/remove-scanner.png" alt="Remove Scanner" title="Remove Scanner" style="border: 1px solid gray; zoom:80%;">

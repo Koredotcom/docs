@@ -1,3 +1,13 @@
+<script>
+
+    var link = document.createElement("link");
+    link.setAttribute("rel", "icon");
+    link.setAttribute("href", "../images/gale_favicon.svg");
+    
+    var head = document.getElementsByTagName("head")[0];
+    head.appendChild(link);
+    
+    </script>
 <div class="kore-home-cntr gale">
     {% extends "main.html" %}
 
@@ -148,15 +158,15 @@
         /* Services section styles start */
         .mdc-services{
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-gap: 24px;
-            margin-top: 24px;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            grid-gap: 14px;
+            margin-top: 14px;
             justify-content: space-between;
         }
         .mdc-services-block{
             display: flex;
             border-radius: var(--radius-md, 8px);
-            padding: 18px;
+            padding: 14px;
             border: 1px solid var(--gray-200, #EAECF0);
             background: var(--base-white, #FFF);
             box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);
@@ -171,7 +181,7 @@
             color: var(--gray-900, #0000008a);
             font-size: 14px;
             font-weight: 600;
-            line-height: 20px;
+            line-height: 18px;
             margin: 0;
         }
         .mdc-services-des{
@@ -643,11 +653,11 @@
                             </svg>
                         </div>
                         <div class="explore-content">
-                           <span>GALE</span>Generative AI Language Model platform for Enterprises for creating applications powered by LLM technology.
+                           <span>GALE</span>a platform that empowers enterprises to build Gen AI agents.
                         </div>
                     </div>
                     <div class="mdc-explore-block-action">
-                        <a href="../introduction/">
+                        <a href="../getting-started/introduction/">
                           <span>Get Started <svg width="21" height="21" viewBox="0 0 21 21" fill="none">
                             <path d="M4.66675 10.5948H16.3334M16.3334 10.5948L10.5001 4.76151M16.3334 10.5948L10.5001 16.4282" stroke="#6c91d5" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg></span>                            
@@ -665,7 +675,7 @@
                     </div>
                     <div  class="mdc-services-info">
                         <h4 class="mdc-services-title">Agents</h4>
-                        <p class="mdc-services-des">Automate processes, streamline workflows, and generate valuable insights.</p>
+                        <p class="mdc-services-des">By harnessing AI technology, agents can automate processes, streamline workflows, and yield valuable insights.</p>
                         <span class="mdc-services-action">Learn More</span>
                     </div>
                 </a>
@@ -675,7 +685,7 @@
                     </div>
                     <div class="mdc-services-info">
                         <h4 class="mdc-services-title">Models</h4>
-                        <p class="mdc-services-des">Provides the capability to augment base models by integrating the proprietary data from your enterprise and fine-tuning them directly within the product.</p>
+                        <p class="mdc-services-des">Effortlessly integrate, fine-tune, and access both base and hosted models within GALE for seamless utilization.</p>
                         <span class="mdc-services-action">Learn More</span>
                     </div>
                 </a>
@@ -685,7 +695,7 @@
                     </div>
                     <div class="mdc-services-info">
                         <h4 class="mdc-services-title">Playground</h4>
-                        <p class="mdc-services-des">A playground to experiment with your prompts and test the performance of different AI models.</p>
+                        <p class="mdc-services-des">A platform to explore prompts and assess the efficacy of the various AI models.</p>
                         <span class="mdc-services-action">Learn More</span>
                     </div>
                 </a>
@@ -695,7 +705,7 @@
                     </div>
                     <div class="mdc-services-info">
                         <h4 class="mdc-services-title">Data</h4>
-                        <p class="mdc-services-des">Streamlines data management by allowing you to store your datasets in the application.</p>
+                        <p class="mdc-services-des">Streamlines data management by allowing users to store datasets in the application.</p>
                         <span class="mdc-services-action">Learn More</span>
                     </div>
                 </a>
@@ -708,35 +718,7 @@
             <!-- <div class="mdc-spacing"></div> -->
     
             <!--Documentation help start-->
-            <section class="mdc-help-wrapper">
-                <!-- <div class="mdc-help-title">
-                    <img src="assets/kore-logo.svg" alt="Kore.ai"/>Documentation
-                </div> -->
-                <div class="mdc-helpline-centers">
-                    <div class="mdc-helpline-block">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
-                          <path d="M9.59 9.59485C9.8251 8.92652 10.2892 8.36296 10.9 8.00398C11.5108 7.64501 12.2289 7.51379 12.9272 7.63356C13.6255 7.75333 14.2588 8.11637 14.7151 8.65838C15.1713 9.20038 15.4211 9.88637 15.42 10.5948C15.42 12.5948 12.42 13.5948 12.42 13.5948M12.5 17.5948H12.51M22.5 12.5948C22.5 18.1177 18.0228 22.5948 12.5 22.5948C6.97715 22.5948 2.5 18.1177 2.5 12.5948C2.5 7.072 6.97715 2.59485 12.5 2.59485C18.0228 2.59485 22.5 7.072 22.5 12.5948Z" stroke="#101828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <h4 class="mdc-helpline-title">Need help</h4>
-                        <span class="mdc-helpline-action">Contact Support</span>
-                    </div>
-                    <div class="mdc-helpline-block">
-                        <svg  width="25" height="25" viewBox="0 0 25 25" fill="none">
-                            <path d="M22.5 9.52622C22.5 8.9204 22.5 8.6175 22.3802 8.47723C22.2763 8.35553 22.1203 8.29094 21.9608 8.3035C21.7769 8.31797 21.5627 8.53216 21.1343 8.96053L17.5 12.5948L21.1343 16.2292C21.5627 16.6575 21.7769 16.8717 21.9608 16.8862C22.1203 16.8988 22.2763 16.8342 22.3802 16.7125C22.5 16.5722 22.5 16.2693 22.5 15.6635V9.52622Z" stroke="#101828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M2.5 10.3948C2.5 8.71469 2.5 7.87461 2.82698 7.23288C3.1146 6.66839 3.57354 6.20945 4.13803 5.92183C4.77976 5.59485 5.61984 5.59485 7.3 5.59485H12.7C14.3802 5.59485 15.2202 5.59485 15.862 5.92183C16.4265 6.20945 16.8854 6.66839 17.173 7.23288C17.5 7.87461 17.5 8.71469 17.5 10.3948V14.7948C17.5 16.475 17.5 17.3151 17.173 17.9568C16.8854 18.5213 16.4265 18.9802 15.862 19.2679C15.2202 19.5948 14.3802 19.5948 12.7 19.5948H7.3C5.61984 19.5948 4.77976 19.5948 4.13803 19.2679C3.57354 18.9802 3.1146 18.5213 2.82698 17.9568C2.5 17.3151 2.5 16.475 2.5 14.7948V10.3948Z" stroke="#101828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                          </svg>
-                        <h4 class="mdc-helpline-title">Watch our</h4>
-                        <span class="mdc-helpline-action">Developer tutorials</span>
-                    </div>
-                    <div class="mdc-helpline-block">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
-                          <path d="M9.59 9.59485C9.8251 8.92652 10.2892 8.36296 10.9 8.00398C11.5108 7.64501 12.2289 7.51379 12.9272 7.63356C13.6255 7.75333 14.2588 8.11637 14.7151 8.65838C15.1713 9.20038 15.4211 9.88637 15.42 10.5948C15.42 12.5948 12.42 13.5948 12.42 13.5948M12.5 17.5948H12.51M22.5 12.5948C22.5 18.1177 18.0228 22.5948 12.5 22.5948C6.97715 22.5948 2.5 18.1177 2.5 12.5948C2.5 7.072 6.97715 2.59485 12.5 2.59485C18.0228 2.59485 22.5 7.072 22.5 12.5948Z" stroke="#101828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <h4 class="mdc-helpline-title">Questions?</h4>
-                        <span class="mdc-helpline-action">Contact Sales</span>
-                    </div>
-                </div>
-            </section>
+            
             <!--Documentation help end-->
         </main>
       </section>

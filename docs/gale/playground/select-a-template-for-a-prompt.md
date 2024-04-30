@@ -1,4 +1,4 @@
-# Select a template for a prompt
+# Select a Template for a Prompt
 
 You can use the pre-defined templates available in GALE while providing prompts to make your experience easy and save time. There are different categories of templates that you can use to get the desired output. The different categories include analyzing documents, writing and conversation, learning, and coding. In each of the categories, there are a few templates that can be used for a specific task. 
 
@@ -6,7 +6,7 @@ For example, if you select the “Writing a blog post” template from the Writi
 
 !!! note
 
-    In the simple mode, you can remove the curly braces and add the required variable, but in the advanced mode, the data comes from the dataset file that you have selected. For more information about uploading a dataset, see **Upload a dataset file**.
+    In the simple mode, you input the required variable without the curly braces. In advanced mode, data is taken from the selected dataset file. For more information about uploading a dataset, see [Upload a dataset file](../data/upload-a-dataset.md).
 
 
 **To select a template, follow these steps**:

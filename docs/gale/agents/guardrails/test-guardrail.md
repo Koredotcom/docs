@@ -16,8 +16,8 @@ Once you've added and configured the necessary scanner, you can verify if it adh
 
 1. Click **Test**. You can review the results that are displayed under the **Scores and Results** section.  It displays the details such as:
 
-    * Validity: It implies that the prompt is valid or not.
+    * **Validity**: It implies that the prompt is valid or not.
 
-    * Risk Score: It implies the score of risk that the prompt holds based on the risk score value you have configured in the **End the flow if the risk score is above** field in the scanner settings section.
+    * **Risk Score**: It implies the score of risk that the prompt holds based on the risk score value you have configured in the **End the flow if the risk score is above** field in the scanner settings section.
 
-    * Duration: It displays the time taken by the scanner to execute a particular prompt.
+    * **Duration**: It displays the time taken by the scanner to execute a particular prompt.

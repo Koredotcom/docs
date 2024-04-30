@@ -7,6 +7,7 @@ repo_url: https://github.com/Koredotcom/docs
 extra_css:
     - stylesheets/extra_kore.css
 theme:
+  favicon: images/gale_favicon.svg
   name: material
   custom_dir: overrides.en.gale
   features:
@@ -49,27 +50,17 @@ extra:
     feedback:
       title: Was this page helpful?
       ratings:
-        - icon: material/emoticon-happy-outline
+        - icon: material/thumb-up-outline
           name: This page was helpful
           data: 1
           note: >-
             Thanks for your feedback!
-        - icon: material/emoticon-sad-outline
+        - icon: material/thumb-down-outline
           name: This page could be improved
           data: 0
           note: >- 
-            Thanks for your feedback! Help us improve this page by
-            using our <a href="https://community.kore.ai/" target="_blank" rel="noopener">feedback form</a>.  
-  alternate:
-    - name: en - English 
-      link: https://docsinternal-kore.github.io/docs/en
-      lang: en
-    - name: ja - 日本語 
-      link: https://docsinternal-kore.github.io/docs/ja
-      lang: ja  
-    - name: ko - 한국어 
-      link: https://docsinternal-kore.github.io/docs/ko
-      lang: jako   
+            Thanks for your feedback!
+            
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -120,75 +111,71 @@ copyright: |
 nav:
   - Home : home.md
   - Getting Started: 
-    - Introduction: introduction.md
-    - Core Capabilities of GALE: core-capabilities-of-gale.md
+    - Welcome to GALE (Beta): getting-started/introduction.md    
   - Agents: 
-    - Overview: agents/overview.md
-    - Create a new Agent: agents/create-a-new-agent.md
+    - About Agents: agents/overview.md
+    - Create a New Agent: agents/create-a-new-agent.md
     - Agent Flows:
-      - Flows Overview: agents/agents-flows/flows-overview.md
+      - About Flows: agents/agents-flows/flows-overview.md
       - Manage Flow Nodes: agents/agents-flows/manage-flow-nodes.md
       - Types of Nodes: 
         - Overview of Nodes: agents/agents-flows/types-of-nodes/overview-of-nodes.md
-        - API Node: 
-          - API Node Overview: agents/agents-flows/types-of-nodes/api-node/api-node-overview.md
-          - Add a new API Node: agents/agents-flows/types-of-nodes/api-node/add-a-new-api-node.md
-          - Configure the API Node: agents/agents-flows/types-of-nodes/api-node/configure-api-node.md
-        - Gen AI Node: 
-          - Gen AI Node Overview: agents/agents-flows/types-of-nodes/gen-ai-node/gen-ai-node-overview.md
-          - Add a new Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node/add-a-new-gen-ai-node.md
-          - Configure Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node/configure-gen-ai-node.md
-        - Function Node:
-          - Function Node Overview: agents/agents-flows/types-of-nodes/function-node/function-node-overview.md
-          - Add a new Function Node: agents/agents-flows/types-of-nodes/function-node/add-a-new-function-node.md
-          - Configure a Function Node: agents/agents-flows/types-of-nodes/function-node/configure-a-function-node.md
-        - Condition Node: 
-          - Condition Node Overview: agents/agents-flows/types-of-nodes/condition-node/condition-node-overview.md
-          - Add a new Condition Node: agents/agents-flows/types-of-nodes/condition-node/add-a-new-condition-node.md
-          - Configure a Condition Node: agents/agents-flows/types-of-nodes/condition-node/configure-a-condition-node.md
-        - End Node:
-          - End Node Overview: agents/agents-flows/types-of-nodes/end-node/end-node-overview.md
-          - Add a new End Node: agents/agents-flows/types-of-nodes/end-node/add-a-new-end-node.md
-          - Configure an End Node: agents/agents-flows/types-of-nodes/end-node/configure-an-end-node.md
-      - Perform other actions on the Flow Builder:
+        - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md
+        - API Node: agents/agents-flows/types-of-nodes/api-node.md
+        - Gen Ai Node: agents/agents-flows/types-of-nodes/gen-ai-node.md
+        - Function Node: agents/agents-flows/types-of-nodes/function-node.md
+        - End Node: agents/agents-flows/types-of-nodes/end-node.md
+      - Perform other Actions on the Flow Builder:
         - Manage Input and Output: agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
         - Run the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
-        - Create a new version of the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
+        - Create a New Version of the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
     - Manage User Roles and Permissions:  agents/manage-user-roles-and-permissions.md
     - Deploy an Agent: agents/deploy-an-agent.md
-    - Create a new API Key: agents/create-a-new-api-key.md 
+    - Create a New API Key: agents/create-a-new-api-key.md 
     - Guardrails: 
-      - Overview: agents/guardrails/overview.md
+      - About Guardrails: agents/guardrails/overview.md
       - Add a  Scanner: agents/guardrails/add-a-scanner.md
       - Test Guardrail: agents/guardrails/test-guardrail.md
       - Manage Guardrails: agents/guardrails/manage-guardrails.md
     - Configure an Agent: agents/configure-an-agent.md
   - Models: 
-    - Overview: models/overview.md 
-    - Custom Models: 
-      - Overview: models/custom-models/custom-model-overview.md
-      - Create a Custom Model: models/custom-models/create-a-custom-model.md
-      - Deploy a Custom Model: models/custom-models/deploy-a-custom-model.md
-      - Generate a new API Key: models/custom-models/generate-an-api-key.md
-      - Configure your Custom Model: models/custom-models/configure-your-custom-model.md
-      - Export your Custom Model: models/custom-models/export-your-custom-model.md
+    - About Models: models/overview.md 
+    - Fine-Tune Models: 
+      - About Fine-Tuned Models: models/fine-tune-models/fine-tune-models-overview.md
+      - Create a Fine-Tuned Model: models/fine-tune-models/create-a-fine-tuned-model.md
+      - Deploy a Fine-Tuned Model: models/fine-tune-models/deploy-a-fine-tuned-model.md
+      - View the Generated API Endpoint: models/fine-tune-models/view-the-generated-api-endpoint.md
+      - Generate a New API Key: models/fine-tune-models/generate-an-api-key.md
+      - Configure your Fine-Tuned Model: models/fine-tune-models/configure-your-fine-tuned-model.md
+      - Export your Fine-Tuned Model: models/fine-tune-models/export-your-fine-tuned-model.md
     - Open-Source Models: 
-      - Overview: models/open-source-models/open-source-models-overview.md
-      - Select and Deploy an Open-Source model: models/open-source-models/select-and-deploy-an-open-source-model.md
-      - Generate a new API key: models/open-source-models/generate-an-api-key-open-source.md
+      - About Open-Source Models: models/open-source-models/open-source-models-overview.md
+      - Select and Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
+      - Deploy an Imported Model from Hugging Face: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
+      - View the Generated API Endpoint: models/open-source-models/view-the-generated-api-endpoint.md
+      - Generate a New API Key: models/open-source-models/generate-an-api-key-open-source.md
       - Configure your Open-Source Model: models/open-source-models/configure-your-open-source-model.md
     - External Models: 
-      - Overview: models/external-models/external-models-overview.md
-      - Add an External Model: models/external-models/add-an-external-model.md   
+      - About External Models: models/external-models/external-models-overview.md
+      - Add an External Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
+      - Add an External Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
   - Playground: 
-    - Overview: playground/overview.md
-    - Create a new Prompt Experiment: playground/create-a-new-prompt-experiment.md
-    - Add a model: playground/add-a-model.md
-    - Select a template for a Prompt: playground/select-a-template-for-a-prompt.md
-    - Generate output using an Advanced Mode: playground/generate-output-using-advanced-mode.md
-    - Explore other actions to perform: playground/explore-other-actions-to-perform-in-the-prompt-playground.md    
+    - About Playground: playground/overview.md
+    - Create a New Prompt Experiment: playground/create-a-new-prompt-experiment.md
+    - Add a Model: playground/add-a-model.md
+    - Select a Template for a Prompt: playground/select-a-template-for-a-prompt.md
+    - Generate Output using Advanced Mode: playground/generate-output-using-advanced-mode.md
+    - Explore Other Actions to Perform: playground/explore-other-actions-to-perform-in-the-prompt-playground.md    
   - Data: 
-    - Overview: data/overview.md 
-    - Upload a Data set: data/upload-a-dataset.md
-       
+    - About Data: data/overview.md 
+    - Upload a Dataset: data/upload-a-dataset.md
+  - Integrations: 
+    - How to Enable Hugging Face: integrations/how-to-enable-hugging-face.md
+    - How to Integrate with S3 Bucket: integrations/how-to-integrate-with-s3-bucket.md
+    - How to Integrate with Weights & Biases: integrations/how-to-integrate-with-wandb.md
+  - Administration:
+    - User Management: 
+        - About User Management: administration/user-management/overview.md
+        - Invite a User to your Account: administration/user-management/invite-a-user-to-your-account.md
+        
    

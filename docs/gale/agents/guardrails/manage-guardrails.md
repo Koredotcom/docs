@@ -5,7 +5,7 @@ All the scanners have models at the back end so to initiate the necessary input 
 **To deploy a scanner, follow these steps**:
 
 1. Click the **Settings** icon on the top navigation bar of the application. The **Settings** page is displayed.
-2. Click the **Manage Guardrails** tab from the left navigation pane. The **Manage Guardrail models** are displayed on the right side of the page.
+2. Click the **Manage Guardrails** tab from the left navigation pane. The **Manage guardrail models** are displayed on the right side of the page.
 
     <img src="../images/manage-guardrails.png" alt="Manage Guardrails" title="Manage Guardrails" style="border: 1px solid gray; zoom:80%;">
 

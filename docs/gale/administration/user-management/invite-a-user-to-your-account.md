@@ -1,4 +1,4 @@
-# Invite a user to your account
+# Invite a User to your Account
 
 As the owner of the account in GALE, you have the authority to invite any user and grant them access to your account for viewing and working in GALE. When you send an invitation to a user, they receive an invitation email through which they can access the product.
 
