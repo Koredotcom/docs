@@ -1,7 +1,7 @@
 ---
 hide:
   - feedback
-  
+  - toc  
 ---
 # Key Differences Between XO11 and XO10
 Key differences Between XO11 and XO10 are summarized below.
