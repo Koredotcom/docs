@@ -65,11 +65,14 @@ This node helps you to trigger path flows based on the conditions you set.
 2. Define the IF/ELSE-IF/ELSE conditions using context variables and the AND/OR operator.
 3. In the **IF section** select the following:
 
-    * Select the **Context** object you want to use. 
+    * Select the **Context object** you want to use. 
     For example, 
     ```
-    {{context.steps.Start0001.xxxxxx}}.
+    {{context.steps.Start0001.Product_ID}}.
     ```
+
+    Here, Product_ID is the input variable/key name.
+    
     * Select an **Operator** from the drop-down list such as, exists, does not exist, equal to, greater than or equal to, less than or equal to, not equal to, greater than, less than, does not contain, and contains.
 
     * Enter a value in the **Value** field.
