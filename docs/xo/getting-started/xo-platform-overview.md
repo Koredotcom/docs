@@ -13,7 +13,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
 <img src="../images/xo-platform-components.png" alt="New Unified XO Platform" title="New unified XO Platform">
 
-=== "**Automation AI**"
+=== "Automation AI"
 
     Automation AI offers sophisticated AI-powered tools for creating Virtual Assistants to handle customer interactions through intelligent automation. You can define specific use cases and utilize advanced Natural Language Processing (NLP) to handle complex interactions. You can also empower virtual assistants to handle interruptions and provide clarifications for more natural dialogues. It also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
     
