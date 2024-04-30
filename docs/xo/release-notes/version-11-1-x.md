@@ -12,11 +12,12 @@ This document provides information on the various releases and the corresponding
 
 **Minor Release**
 
-Key features and enhancements included in this release are summarized below.
+Key updates to products and features are summarized below. Click the corresponding tab to see the details.
 
 === "LLM and Generative AI"
-
     
+    Key features and enhancements included in this release:
+
     ## Custom LLM Integration Support for Rephrase Dialog Responses  
 
     Rephrase Dialog Responses now supports Custom LLMs in addition to commercial LLMs. This allows platform users to use the rephrasing feature with their own custom-trained language models and create customized prompts tailored to their specific use cases, models, and linguistic contexts, providing greater flexibility and control over the rephrasing process and conversational experiences.  
@@ -29,11 +30,13 @@ Key features and enhancements included in this release are summarized below.
 
     ## Kore.ai XO GPT Supports Vector Generation and Answer Generation (Beta)
 
-    Kore.ai XO GPT now supports Answer Generation and Vector Generation. The XO GPT provides a range of models, including the fine-tuned Mistral-Answers Model for Answer Generation and E5, Labse, and MPNet embedding models for Vector Generation.
+    Kore.ai XO GPT now supports Answer Generation and Vector Generation. The XO GPT provides a range of models, including the fine-tuned Mistral-Answers Model for Answer Generation and E5, Labse, and MPNet embedding models for Vector Generation.  
+    [Learn more :octicons-arrow-right-24:](../app-settings/generative-ai-tools/xo-gpt-module.md)
 
 === "Flows & Channels"
 
-    
+    Key features and enhancements included in this release:
+
     ## Updated Default Start Flow
 
     All fields of the default Start Flows can now be edited except the associated channel.  
@@ -43,36 +46,41 @@ Key features and enhancements included in this release are summarized below.
 
     The Platform now offers native support for threaded conversations in the Slack channel. Users can initiate a new thread from any message within a Slack channel or direct message group.
 
-    Additionally, the platform provides extended functionality for developers. It can automatically create a new thread whenever a user @mentions the virtual assistant in a Slack channel. This behavior is configurable, giving developers control over this feature.  
+    Additionally, the platform provides extended functionality for developers. It can automatically create a new thread whenever a user "@mentions" the virtual assistant in a Slack channel. This behavior is configurable, giving developers control over this feature.  
     <img src="../images/slack-channel-customize.png" alt="Slack Channel Configuration" title="Slack Channel Configuration" style="border: 1px solid gray; zoom:70%;">
+    [Learn more :octicons-arrow-right-24:](../channels/add-slack-channel-new.md)
 
 === "Automation AI"
 
-
-
+    Key features and enhancements included in this release:
 
     ## Digital Forms
 
-    * Enable the "Off-the-Record Information" Flag for Digital Forms: On a digital form, when the field’s “Off the record” flag is enabled, the field data is cleared at the end of the user session and not stored in databases or logs. 
+    * Enable the "Off-the-Record Information" Flag for Digital Forms: On a digital form, when the field’s “Off the record” flag is enabled, the field data is cleared at the end of the user session and not stored in databases or logs.  
+    [Learn more :octicons-arrow-right-24:](../automation/use-cases/digital-skills/configure-digital-forms.md#form-editor) 
     * Digital Forms Date Picker Supports Japanese: The digital form’s Date Picker now supports the Japanese language if the bot language is Japanese.
 
     ## Export/Import
 
     ### Enable App Import Functionality via Zip File Upload
 
-    Platform users can now import apps by uploading a ZIP file containing the app's data. This eliminates the need to extract and manually import JSON files. The ZIP file import works for both new and existing apps.
+    Platform users can now import apps by uploading a ZIP file containing the app's data. This eliminates the need to extract and manually import JSON files. The ZIP file import works for both new and existing apps.  
+     [Learn more :octicons-arrow-right-24:](../manage-assistant/bot-management.md#steps-in-importing-to-an-existing-assistant)
 
     The corresponding APIs have also been updated to support this change: Import New VA and Import Existing VA.
 
 === "Search AI"
 
+    Key features and enhancements included in this release:
 
     ## Business Rules Support
 
-    Business Rules Support allows users to define custom rules that modify the answers provided by the AI search system. By using contextual data specific to their needs, users can create tailored rules to refine the AI's responses. The system also suggests relevant context variables dynamically to assist in defining these rules.
+    Business Rules Support allows users to define custom rules that modify the answers provided by the AI search system. By using contextual data specific to their needs, users can create tailored rules to refine the AI's responses. The system also suggests relevant context variables dynamically to assist in defining these rules.   
+    [Learn more :octicons-arrow-right-24:](../searchai/business-rules.md)
 
 === "Contact Center AI"
 
+    Key features and enhancements included in this release:
 
     ## Agent Console
 
@@ -124,6 +132,7 @@ Key features and enhancements included in this release are summarized below.
 
 === "Agent AI"
 
+    Key features and enhancements included in this release:
 
     ## Agent AI Widget Updates
 

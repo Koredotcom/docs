@@ -67,7 +67,7 @@ Also, the Marketplace offers pre-built dialogue templates for each integration. 
 
 ## New Billing Page
 
-The billing definition has been changed to accommodate the various price offerings we are providing in UXO. The Billing Session definition for Automation is 15 minutes of Interaction, and for Contact Center, it's 15 minutes of ideal time. The Platform offers various plans, and users can choose the plan for each product individually. Note that if users want to be Enterprise customers, then they have to choose enterprise plans for all the products.  
+The billing definition has been changed to accommodate the various price offerings we are providing in XO11. The Billing Session definition for Automation is 15 minutes of Interaction, and for Contact Center, it's 15 minutes of ideal time. The Platform offers various plans, and users can choose the plan for each product individually. Note that if users want to be Enterprise customers, then they have to choose enterprise plans for all the products.  
 <img src="../images/xo-platform-billingpage.png" alt="Billing Page" title="Billing Page" style="border: 1px solid gray; zoom:70%;">
 
 ## Other Changes
