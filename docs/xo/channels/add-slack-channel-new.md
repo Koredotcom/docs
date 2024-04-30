@@ -10,7 +10,7 @@ Additionally, the Platform allows developers to configure how the Slack channel 
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>To use Slack <b>Threads</b> for your Virtual Assistant deployed on the Slack Channel, add the Bot token Scope <code>chat:write.public</code> to the existing Slack app under <b>OAuth & Permissions</b> > <b>Scopes</b> > <b>Bot Token Scopes</b>. <a href="https://docsinternal-kore.github.io/docs/xo/channels/add-slack-channel/?h=slack#step-2-set-redirect-url-and-scopes">Learn more</a>.</p>
+<p>To use Slack <b>Threads</b> for your Virtual Assistant deployed on the Slack Channel, add the Bot token Scope <code>chat:write.public</code> to the existing Slack app under <b>OAuth & Permissions</b> > <b>Scopes</b> > <b>Bot Token Scopes</b>. <a href="https://docsinternal-kore.github.io/docs/xo/channels/add-slack-channel/?h=slack#step-2-set-redirect-url-and-scopes" target="_blank">Learn more</a>.</p>
 </div>
 
 **Prerequisites**
@@ -113,7 +113,7 @@ To enable the public distribution of your app on Slack, do the following:
 1. Navigate to **Manage Distribution** and click **Remove Hard Coded Information**.
 2. Select **I’ve reviewed and removed any hard-coded information** and click **Activate Public Distribution.**.
 
-<img src="../images/manage-distribution.png" alt="manage distribution" title="manage distribution" style="border: 1px solid gray; zoom:65%;">
+  <img src="../images/manage-distribution.png" alt="manage distribution" title="manage distribution" style="border: 1px solid gray; zoom:65%;">
 
 ## Step 9: Enable the Channel
 
@@ -122,30 +122,30 @@ To enable Slack on the XO Platform, follow the steps below:
 1. Navigate to **Channels** > **Slack**, and click the **Configurations** tab.
 2. Copy the below information and use it to define the app properties on Slack:
 
-* Bot Name
-* Redirect URL
-* Webhook URL
+ * Bot Name
+ * Redirect URL
+ * Webhook URL
 
-<img src="../images/slack-configurations-uxo.png" alt="slack configuration" title="slack configuration" style="border: 1px solid gray; zoom:65%;">
+   <img src="../images/slack-configurations-uxo.png" alt="slack configuration" title="slack configuration" style="border: 1px solid gray; zoom:65%;">
 
-3. Copy and paste the following information from the Slack app:
+<ol start="3"><li>Copy and paste the following information from the Slack app:</li></ol>
 
-* Client ID
-* Client Secret
-* Verification Token
+<ul><li>Client ID</li>
+<li>Client Secret</li>
+<li>Verification Token</li></ul>
 
-4. Click **Authorize**.
+<ol start="4"><li>Click <b>Authorize</b>.</li>
 
-<img src="../images/authorize-client-id-client-secret.png" alt="authorize client credentials" title="authorize client credentials" style="border: 1px solid gray; zoom:65%;">
+<img src="../images/authorize-client-id-client-secret.png" alt="authorize client credentials" title="authorize client credentials" style="border: 1px solid gray; zoom:65%;"></ol>
 
-5. In the **Customize Slack Channel’s Conversations** section, select one of the following options to define the conversation behavior of the virtual assistant in a Slack channel when the user @mentions the VA:
-* **_Continue the conversation with the Virtual Assistant in the channel:_**: This is the default selection. It maintains the current behavior for DM and group messages. However, if a user intentionally starts a thread with the virtual assistant, the conversation will continue within that thread.
-* **_Create a new thread for every user message(@mentioned to the Virtual assistant) in the channel_**: For every user message that is _@mentioned_ to the Virtual assistant in the channel (both DM and Channel conversations), the Platform does the following:
-    * Creates a new thread and replies to the user message in the thread.
-    * Treats each conversation thread as a separate session whenever it is created in the channel, maintaining context isolation
-    * Treats each conversation thread as a new user conversation whenever it is created for Slack DM.
+<ol start="5"><li>In the <b>Customize Slack Channel’s Conversations</b> section, select one of the following options to define the conversation behavior of the virtual assistant in a Slack channel when the user @mentions the VA:</li>
+<ul><li><b>Continue the conversation with the Virtual Assistant in the channel</b>: This is the default selection. It maintains the current behavior for DM and group messages. However, if a user intentionally starts a thread with the virtual assistant, the conversation will continue within that thread.</li>
+<li><b>Create a new thread for every user message(@mentioned to the Virtual assistant) in the channel</b>: For every user message that is <code>@mentioned</code> to the Virtual assistant in the channel (both DM and Channel conversations), the Platform does the following:</li>
+    <ul><li>Creates a new thread and replies to the user message in the thread.</li>
+    <li>Treats each conversation thread as a separate session whenever it is created in the channel, maintaining context isolation.</li>
+    <li>Treats each conversation thread as a new user conversation whenever it is created for Slack DM.</li></ul>
 
-<img src="../images/customize-slack-conversations.png" alt="customize slack conversation" title="customize slack conversation" style="border: 1px solid gray; zoom:65%;">
+<img src="../images/customize-slack-conversations.png" alt="customize slack conversation" title="customize slack conversation" style="border: 1px solid gray; zoom:65%;"></ul>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -153,13 +153,13 @@ To enable Slack on the XO Platform, follow the steps below:
 <li>The existing bots default to the first option, ensuring zero disruptions to current deployments.</li></ul></p>
 </div>
 
-6. _(Optional)_ Enable **Proactive Notifications** to send notifications from your Process Apps to your bot users via Slack. Please refer to Step2 [here](/docs/xo/channels/add-slack-channel/#step-3-install-the-app).
+<li>(Optional) Enable <b>Proactive Notifications</b> to send notifications from your Process Apps to your bot users via Slack. Please refer to Step 2 <a href="https://docsinternal-kore.github.io/docs/xo/channels/add-slack-channel-new/#step-3-install-the-app" target="_blank">here</a>.
 <img src="../images/proactive-notifications.png" alt="proactive notfications" title="proactive notfications" style="border: 1px solid gray; zoom:65%;">
  
-Once enabled, select the required Process Apps from the list for your VA, and click **Authorize**.
+Once enabled, select the required Process Apps from the list for your VA, and click <b>Authorize</b>.</li>
 
-7. Under **Enable Channel**, select **Yes** and click **Save** to enable the Slack channel.
-<img src="../images/enable-slack-channel.png" alt="enable slack channel" title="enable slack channel" style="border: 1px solid gray; zoom:65%;">
+<li>Under <b>Enable Channel</b>, select <b>Yes</b> and click <b>Save</b> to enable the Slack channel.
+<img src="../images/enable-slack-channel.png" alt="enable slack channel" title="enable slack channel" style="border: 1px solid gray; zoom:65%;"></li></ol>
 
 The Slack channel is added successfully. In Slack, it is optional to submit your app to the Slack App Directory.
 
