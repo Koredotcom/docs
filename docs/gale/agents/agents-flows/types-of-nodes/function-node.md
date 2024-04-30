@@ -72,13 +72,31 @@ This node empowers you to create a script for handling context variables or othe
     <img src="../images/enter-a-script.png" alt="Enter a Script" title="Enter a Script" style="border: 1px solid gray; zoom:80%;">
 
 1. Click the **Copy** icon if you want to copy the code.
-2. Click the **Run** button to test the script. Once the script is resolved successfully, you will be able to see the results in the **Log** section of the **Edit Script** page. 
+2. Click the **Run** button to test the script. Once the script is resolved successfully, you will be able to see the results in the **Log** section of the **Edit Script** page.
 
+    For example to read input variable “email_content”, use below notation:
+    ~~~
+    context.<variable-name> = context.steps.<startNode-Name>.<inputVariable-name>
+    ~~~
+
+    **To call a function**:
+
+    ~~~
+    context.<UserDefined-Variable-Name>= UserDefined-Function-Name(context.steps.<startNode-Name>.<inputVariable-name>
+    ~~~
+
+    In the Function node, GALE provides a console I/O feature. This feature can be used when there is a requirement of a variable coming from the previous node or when testing a function.
     * **Context input**: You can provide some input for the script node to execute in the Context input section.
     * **Context output**: To find the results of the function from the given input. The output of the script execution along with the variable generated is displayed in the Context output section. You can debug the issues based on the log report and re-run the script.
     * **Log**: Status of the function can be monitored and you can view the values.
 
     <img src="../images/context-input-context-output.png" alt="Context Input Context Output" title="Context Input Context Output" style="border: 1px solid gray; zoom:80%;">
+
+    In the Function node, you can utilize pre-existing libraries such as pandas, NumPy and so on. This allows you to perform various data operations efficiently within your workflow.
+
+    !!! note
+
+        We cannot import packages in Function Node.
 
 3. Click the **Actions** icon and select the actions that you want the node to trigger when the Functions node is successful or when it fails.
 
