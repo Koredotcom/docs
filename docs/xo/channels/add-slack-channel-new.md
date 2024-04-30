@@ -91,6 +91,7 @@ To set up Slack as a channel, the developer should associate the VA with a Slack
 2. On the XO Platform, copy the _Webhook URL_ from the Slack channel’s _Configurations_ section and paste it in the **Request URL** field in the **Enable Subscriptions** section.
 3. In the **Subscribe to Bot Events** section, add <code><em>app_mention</em></code>, and <code><em>message.im</em></code> events.
 4. Click <strong>Save Changes</strong>.
+
 <img src="../images/events-and-subscriptions.png" alt="events subscriptions" title="events subscriptions" style="border: 1px solid gray; zoom:65%;">
 
 ## Step 6: Enable Interactions from the Messages tab
@@ -111,6 +112,7 @@ To enable the public distribution of your app on Slack, do the following:
 
 1. Navigate to **Manage Distribution** and click **Remove Hard Coded Information**.
 2. Select **I’ve reviewed and removed any hard-coded information** and click **Activate Public Distribution.**.
+
 <img src="../images/manage-distribution.png" alt="manage distribution" title="manage distribution" style="border: 1px solid gray; zoom:65%;">
 
 ## Step 9: Enable the Channel
@@ -119,6 +121,7 @@ To enable Slack on the XO Platform, follow the steps below:
 
 1. Navigate to **Channels** > **Slack**, and click the **Configurations** tab.
 2. Copy the below information and use it to define the app properties on Slack:
+
 * Bot Name
 * Redirect URL
 * Webhook URL
@@ -126,6 +129,7 @@ To enable Slack on the XO Platform, follow the steps below:
 <img src="../images/slack-configurations-uxo.png" alt="slack configuration" title="slack configuration" style="border: 1px solid gray; zoom:65%;">
 
 3. Copy and paste the following information from the Slack app:
+
 * Client ID
 * Client Secret
 * Verification Token
@@ -149,7 +153,7 @@ To enable Slack on the XO Platform, follow the steps below:
 <li>The existing bots default to the first option, ensuring zero disruptions to current deployments.</li></ul></p>
 </div>
 
-6. _(Optional)_ Enable **Proactive Notifications** to send notifications from your Process Apps to your bot users via Slack. Please refer to Step2 [here](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-slack-channel/#Step_3_Install_the_App).
+6. _(Optional)_ Enable **Proactive Notifications** to send notifications from your Process Apps to your bot users via Slack. Please refer to Step2 [here](/docs/xo/channels/add-slack-channel/#step-3-install-the-app).
 <img src="../images/proactive-notifications.png" alt="proactive notfications" title="proactive notfications" style="border: 1px solid gray; zoom:65%;">
  
 Once enabled, select the required Process Apps from the list for your VA, and click **Authorize**.
