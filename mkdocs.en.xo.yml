@@ -112,16 +112,17 @@ copyright: |
 nav:
   - Home : home.md
   - Platform:
-    - What's New in XO 11: getting-started/whats-new-in-xo-platform.md
+    - Overview: getting-started/xo-platform-overview.md    
     - Getting Started:
-      - Accessing the Platform: getting-started/accessing-the-platform.md          
+      - Accessing the Platform: getting-started/accessing-the-platform.md   
+      - Navigating the Platform: getting-started/navigating-the-platform.md       
       - Flows and Channels:
         - Flows: 
           - Introduction: flows/introduction-to-flows.md
           - Create Flows: flows/create-flows.md
           - Navigate the Flow Designer: flows/navigate-the-flow-designer.md
           - Node Types:
-            - Introduction to Flow Nodes: flows/flow-types/introduction-to-flow-nodes.md
+            - Introduction to Flow Nodes: flows/node-types/introduction-to-flow-nodes.md
             - Agent Transfer: flows/node-types/agent-transfer.md
             - Automation: flows/node-types/automation.md
             - Check Agent Availability: flows/node-types/check-agent-availability.md
@@ -147,6 +148,10 @@ nav:
               - IVR: channels/IVR-integration.md            
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
+    - Release Notes:
+      - What's New in XO11: getting-started/whats-new-in-xo-platform.md  
+      - XO11 vs. XO10: getting-started/key-differences-between-xo11-and-xo10.md
+      - Latest Updates: release-notes/version-11-1-x.md
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:
@@ -180,7 +185,9 @@ nav:
         - Entity Types: automation/use-cases/dialogs/entity-types.md
         - Entity Rules: automation/use-cases/dialogs/entity-rules.md
         - User Prompts or Messages: automation/use-cases/dialogs/prompt-editor.md
-        - Voice Call Properties: automation/use-cases/dialogs/voice-call-properties.md  
+        - Voice Call Properties: automation/use-cases/dialogs/node-types/voice-call-properties.md 
+        - Custom Authentication via Service Nodes: automation/use-cases/dialogs/implementing-custom-authentication.md
+        - 2-way SSL for Service Nodes: automation/use-cases/dialogs/enabling-2-way-ssl-for-service-nodes.md       
       - Alert Tasks: automation/use-cases/alert-tasks.md
       - Small Talk: automation/use-cases/small-talk.md
       - Digital Skills: 
@@ -229,7 +236,6 @@ nav:
         - Context Object: automation/intelligence/context-object.md
         - Conversation Events: 
           - Default Conversations: automation/intelligence/conversation-management/default-conversations.md
-          - Conversation Driven Dialog Builder: automation/intelligence/conversation-management/conversation-driven-dialog-builder.md
         - Sentiment Events: 
           - Sentiment Management: automation/intelligence/sentiment-management/sentiment-management-overview.md
           - Tone Analysis: automation/intelligence/sentiment-management/tone-analysis.md
@@ -248,7 +254,7 @@ nav:
     - Advanced Topics:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
-        - Team Collaboration: manage-assistant/
+        - Team Collaboration: manage-assistant/collaborative-development.md
         - Authorization: manage-assistant/bot-authorization-overview.md
         - Conversation Sessions: manage-assistant/conversation-sessions.md
         - Multilingual Virtual Assistants:
@@ -288,7 +294,9 @@ nav:
         - Chunk Browser: searchai/chunk-browser.md
         - Index Configuration: searchai/index-configuration.md
     - Configuration:
+        - Business Rules: searchai/business-rules.md
         - Answer Configuration: searchai/answer-configuration.md
+        - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
   - Contact Center AI:
     - Overview: contactcenter/about-contact-center-ai.md    
     - Agent and Supervisors: 
@@ -318,7 +326,9 @@ nav:
     - Campaigns:  
       - Overview: contactcenter/campaigns/about-campaigns.md
       - Dashboard: contactcenter/campaigns/dashboard/campaign-dashboard.md
-      - Campaign Management: contactcenter/campaigns/campaign-management/campaigns.md
+      - Campaign Management:
+        - Voice Campaigns: contactcenter/campaigns/campaign-management/voice-campaigns.md
+        - Proactive Web Campaigns: contactcenter/campaigns/campaign-management/proactive-web-campaigns.md
       - List Management: contactcenter/campaigns/list-management/list-management.md
       - Settings: contactcenter/campaigns/settings/global-settings.md
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
@@ -420,7 +430,8 @@ nav:
         - Rate Limits: apis/automation/rate-limit.md
         - API List:
           - Automation APIs: apis/automation/api-list.md
-          - Contact Center APIs: apis/api-list.md
+          - Contact Center APIs:
+            - API List: apis/contact-center/contact-center-api-list.md
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md
@@ -483,7 +494,9 @@ nav:
         - Kore.ai XO GPT Module: app-settings/generative-ai-tools/xo-gpt-module.md
         - Prompts & Requests Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
         - Co-Pilot Features: app-settings/generative-ai-tools/co-pilot-features.md        
-        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md        
+        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md 
+        - PII and Sensitive Data: app-settings/generative-ai-tools/pii-and-sensitive-data.md
+        - Guardrails: app-settings/generative-ai-tools/guardrails.md       
       - Dev Tools:
         - Bot Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
         - Authorization Profiles: app-settings/dev-tools/bot-authorization/bot-authentication.md

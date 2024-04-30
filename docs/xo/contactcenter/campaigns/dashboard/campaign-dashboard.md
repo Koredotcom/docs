@@ -1,8 +1,8 @@
 # Dashboard
 
-The campaign dashboard allows contact center supervisors to track the progress and other essential metrics related to campaigns.
+The campaign dashboard allows campaign managers to track the progress and other essential metrics related to campaigns.
 
-To access dashboards, go to **Contact Center AI** > **Campaigns** > **PROACTIVE OUTREACH** > **Dashboard**.
+To access dashboards, go to **Contact Center AI** > **Campaigns** > **Dashboard**.
 <img src="../images/dashboard-main-page.png" alt="Dashboard Page" title="Dashboard Page" style="border: 1px solid gray; zoom:80%;">
 
 The following details related to campaigns are displayed on the dashboard:
@@ -44,3 +44,7 @@ This section displays the following information:
 * **Canceled**: If the call was canceled by the customer.
 * **Completed**: If the call is answered, then disconnected by the agent, and a disposition is included.
 * **Agent Disposition (Top 5)**- Top 5 dispositions selected by agents.
+
+Related Link
+
+* [Dialer Campaign History Report](../../../analytics/contact-center/reports/dialer-campaign-history-report.md)

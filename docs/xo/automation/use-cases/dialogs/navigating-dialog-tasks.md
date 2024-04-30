@@ -27,7 +27,7 @@ Here are a few other ways in which the Dialog Builder can benefit your organizat
 
 ## Explore Dialog Tasks
 
-You can access Dialog Tasks from **Automation > USE CASES > Dialogs**.
+You can access Dialog Tasks from **Automation AI > Virtual Assistant > USE CASES > Dialogs**.
 
 <img src="../images/navigate-dialog.png" alt="Navigate to Dialogs" title="Navigate to Dialogs" style="border:1px solid gray; zoom:60%;">
 
@@ -42,7 +42,7 @@ The first page is a list of existing Dialog Tasks. Now, let us review the featur
     
     !!! Note
     
-        If a Dialog Task has been created using our legacy builder, then you will have the option to upgrade to the new, Conversation-Driven builder. In your list, such tasks come with an upgrade icon (an upward arrow inside a gear symbol).
+        If a Dialog Task has been created using the legacy builder, then you will have the option to upgrade to the new, Conversation-Driven builder. In your list, such tasks come with an upgrade icon (an upward arrow inside a gear symbol).
 
 * **Dialog Task Options** – When hovering over a task, you will see options to **Edit**, **Clone** or **Delete** the selected task. There is also a menu with **More Options**, where you can View the task, configure Dialog Settings, Manage Interruptions, or Amend Behavior.
 
@@ -66,8 +66,11 @@ In some scenarios, you may need to create two similar dialog tasks with minor di
 
 To clone a dialog task, follow the below steps:
 
-* **Open the VA** in which you want to clone the dialog task.
-* Select the **Automation** option from the left menu.
+* **Open the App** in which you want to clone the dialog task.
+* Select the **Automation AI > Virtual Assitant** option from the left menu.
+
+    <img src="../images/automationai-va-navigation.gif" alt="Navigate to Virtual Assistant" title="Navigate to Virtual Assistant" style="border:1px solid gray; zoom:60%;">
+    
 * From the left menu, click **USE CASES > Dialogs**.
 * On the Dialog Tasks page, hover over the dialog you want to clone and click the **Clone** icon.
 * On the **Clone a Dialog** window, enter a name in the **Intent Name** field.
@@ -152,5 +155,4 @@ The Dialog Builder interface consists of:
 **Related Links**
 
 * [Using the Dialog Builder](../using-the-dialog-builder-tool){:target="_blank"}
-* [Dialog Task – Legacy Builder](../dialog-task-legacy-builder){:target="_blank"}
 * [Help and Learning Resources](https://developer.kore.ai/docs/bots/chatbot-overview/help/){:target="_blank"}

@@ -9,9 +9,9 @@ To create a dialog task, you must have already created an assistant to add a dia
 
 To add a dialog task, follow the steps below:
 
-1. Open the assistant for which you want to create the dialog task.
-2. Click the **Automation** icon on the left menu.
-3. The Automation menu opens, and the **Dialogs** page is open by default.
+1. Open the app for which you want to create the dialog task.
+2. Navigate to **Automation AI > Virtual Assistant** icon on the left menu.
+3. The Virtual Assistant menu opens, and the **Dialogs** page is open by default.
 4. On the Dialogs page, click the **Create Dialog** button.
 
     <img src="../images/using-dialog-builder-img1-create-dialog.png" alt="Dialogs" title="Dialogs" style="border:1px solid gray;zoom:60%;">
@@ -99,7 +99,7 @@ This option provides you ready-made templates targeting major industry verticals
 
     <img src="../images/using-dialog-builder-marketplace-actions-and-templates.png" alt="Integrations and Dialog Templates" title="Integrations and Dialog Templates" style="border:1px solid gray;zoom:70%;">
 
-3. To create a dialog using the available **Action Templates** of an integration:
+3. **Dialog Action Templates** contain the required nodes to make **API calls** to perform particular actions. You would notice that every Action Template has an API method mentioned in the brick. To create a dialog using the available **Dialog Action Templates** of an integration:
     1. Click the suitable integration. You will get a popup window containing the available **Action Templates** for the selected integration.
 
         <img src="../images/using-dialog-builder-click-required-integration.png" alt="Select the required integration" title="Select the required integration" style="border:1px solid gray;zoom:70%;">
@@ -116,7 +116,7 @@ This option provides you ready-made templates targeting major industry verticals
         
         <img src="../images/using-dialog-builder-dialog-task-using-action-edit.png" alt="Dialog design" title="Dialog design" style="border:1px solid gray;zoom:70%;">
 
-4. To create a dialog using **Dialog Template** (if available):
+4. **Dialog Templates** are pre-created templates of dialog tasks to perform a particular task. To create a dialog using **Dialog Template** (if available):
 
     !!! Note
     
@@ -194,9 +194,9 @@ For the convenience of comprehension and demonstration, let’s visualize the To
 
     <img src="../images/using-dialog-builder-add-comment.gif" alt="Add Comment" title="Add Comment" style="border:1px solid gray;zoom:60%;">
 
-* **Find** (<img src="../images/using-dialog-tasks-tool-set-left-find.png">) - You can find nodes, variables, sequences, etc. Clicking this icon opens a window where you can perform a universal search. You will get a list of all the nodes, variables, sequences, APIs, etc. grouped by type that contain the search string.
+* **Find** (<img src="../images/using-dialog-tasks-tool-set-left-find.png">) - You can search for nodes, variables, Bookmarks and sequences at Dialog level. Clicking this icon opens a window where you can perform a universal search. You will get a list of all the nodes, variables, sequences and bookmarks grouped by type that contain the search string. Additionally, individual tabs are present for each type wherein all items of those types are listed.
 
-    <img src="../images/using-dialog-tasks-tool-set-left-search.gif" alt="Find" title="Find" style="border:1px solid gray;zoom:60%;">
+    <img src="../images/using dialog-builder-tool-set-left-search.png" alt="Find" title="Find" style="border:1px solid gray;zoom:60%;">
 
 
 **Features in the Middle of the Tool set**
@@ -312,7 +312,7 @@ These are placeholders for creating groups of nodes. Each sequence has one or mo
 
 <img src="../images/using-dialog-builder-sequence.png" alt="Sequence" title="Sequence" style="border:1px solid gray;zoom:60%;">
 
-A sequence gets **automatically created** when you add a node to the canvas. Once a sequence gets created, you can either add more nodes to that sequence, or, you can add nodes outside any existing sequence, in which case a new sequence will get created.
+A sequence gets **automatically created** when you add a node to the canvas. By default it is named **Sequence [x]** where **x** depends on the number of unnamed sequences already present on the canvas. Once a sequence gets created, you can either add more nodes to that sequence, or, you can add nodes outside any existing sequence, in which case a new sequence will get created.
 
 To add a node to an existing sequence, drag the node on the sequence. You will see placeholders labeled **Drop here** appearing between nodes. You can drop the node on any of these placeholders; the node will get added on that spot in the sequence.
 
@@ -320,7 +320,7 @@ To add a node to an existing sequence, drag the node on the sequence. You will s
 
 The task being designed in a dialog can be broken down into several sub-tasks. For example, if you are developing a dialog to send money from one account to another, you may break the tasks into subtasks like gathering the account owner's details, gathering the recipient account's details, transferring the money, success scenario, failure scenario, etc. You can have a sequence for each sub-task.
 
-Each sequence contains one or more nodes placed in a logical sequence and a **Transition** section at the end, through which you can either continue the flow of dialog to the next sequence or split the flow into two or more paths based on [conditions](#add-if-else-node-connections).
+Each sequence contains one or more nodes placed in a logical sequence and a **Transition** section at the end, through which you can either continue the flow of dialog to the next sequence or split the flow into two or more paths based on [conditions](https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/#add-if-else-node-connections).
 
 You can set connections between two sequences; Drag the connector <img src="../images/using-dialog-builder-img17-nodes-connector.png"> from the source sequence to the required destination sequence. Please note that by default, the connection will be from the **last node of the source sequence** to the **topmost node on the destination sequence**.
 
@@ -368,9 +368,49 @@ Using **Bookmarks**, you can create navigation points in a dialog with a complex
 
 <img src="../images/navigate-dialog-builder-text-bookmark.png" alt="Notes and Bookmark" title="Notes and Bookmark" style="border:1px solid gray;zoom:70%;">
 
-**Comments** are effective in creating a collaborative environment. Often, in the course of development, at some point, you may need help and input from other bot users. For example, you need them to pitch in with their knowledge about the business logic or functional expertise or need clarifications in order to proceed. In such situations, you can place a comment wherein you can tag the respective user and mention your need. You can also add your response to a comment.
+**Comments** are effective in creating a collaborative environment. Often, in the course of development, at some point, you may need help and input from other bot users. For example, you need them to pitch in with their knowledge about the business logic or functional expertise or need clarifications in order to proceed. In such situations, you can place a comment wherein you can tag the respective user and mention your need.
 
-<img src="../images/using-dialog-builder-comment-response.png" alt="Comment and Response" title="Comment and Response" style="border:1px solid gray;zoom:70%;">
+Below action can be performed:
+
+* Add new comment: You can add a comment by selecting the comments icon available in the header and placing the comment anywhere on the canvas. You can also right click on canvas to add comments. A text area opens where you can type in the comment.
+* View comment: You can see a user icon and reply count where the comment has been posted. Mouse hover on the icon displays the preview of the first comment. Clicking on the comment icon opens the comments panel with the selected comment’s thread.
+* Respond to a comment: You can respond to the comment from the individual comments thread.
+* Resolve Comment: You can resolve the comment by clicking the <img src="../images/using-dialog-builder-resolve-comment-icon.png"> icon once discussion in the thread is closed. The Resolve option is available in the View Comments panel too.
+* Delete comment/reply: You can delete the comment or a reply. Note that you can delete a comment or reply only if it is posted by you. Also, deleting the main comment will delete all the responses too.
+* Edit comment/reply: You can edit the comment or a reply. Note that you can edit comments or replies only if they are posted by you.
+* Other Options (At thread level)
+    * Mark as Unread - You can mark a comment as Read
+    * Copy link - Clicking on this option,you can copy the link of the comment. When you access the link, you are panned to the relevant comment
+    * Delete Thread - You can delete the entire thread if the main comment is posted by you
+
+    <img src="../images/using-dialog-builder-comment-thread-level-option.png" alt="Comments - Thread level options" title="Comments - Thread level options" style="border:1px solid gray;zoom:70%;">
+
+* Mention and Notification: You mention others in comments using **@** followed by their name, triggering notifications to ensure that the mentioned team members are aware of the discussion.
+* Other Features:
+    * Zoom Out Preview - When canvas is zoomed out, the nearby comment icons are clubbed and displayed with the count.
+        
+        <img src="../images/using-dialog-builder-comment-zoom-in-view.png" alt="Comments - Zoom In view" title="Comments - Zoom In view" style="border:1px solid gray;zoom:70%;">
+        
+        Zoom In view
+
+        <img src="../images/using-dialog-builder-comment-zoom-out-view.png" alt="Comments - Zoom Out view" title="Comments - Zoom Out view" style="border:1px solid gray;zoom:70%;">
+        
+        Zoom Out view
+
+    * Timestamp - Time stamp will be displayed in the comment thread as well as the comments panel. It will be shown as “relative time indicators” and the complete timestamp will be displayed on hover
+
+* Options in the Comments Panel
+    * Show/Hide All comments (Default - Show)
+    * Show/Hide Resolved comments (Default - Hide)
+    * Mark all as read
+    * Textual Search 
+    * Filtering
+        * All
+        * Unread
+        * My Mentions
+        * My comments
+
+        <img src="../images/using-dialog-builder-comment-panel.png" alt="Comments panel" title="Comments panel" style="border:1px solid gray;zoom:70%;">
 
 #### Mini map
 
@@ -387,7 +427,7 @@ There are two ways to add a node:
 
 You can add nodes within the dialog task by dragging them from the Index panel on the left or the Node panel at the bottom to the designated place on the canvas. You can drop the node within an existing sequence or outside the existing sequences; in this case, a new sequence will be created automatically, containing the newly added node.
 
-<img src="../images/using-dialog-builder-add-nodes-drag-drop.gif" alt="Adding nodes by drag and drop" title="Adding nodes by drag and drop" style="border:1px solid gray;zoom:60%;">
+<img src="../images/using-dialog-builder-creating-sequence.gif" alt="Adding nodes by drag and drop" title="Adding nodes by drag and drop" style="border:1px solid gray;zoom:60%;">
 
 You can also add a node directly on the canvas, creating a new sequence.  You can then drag and drop the node to an existing sequence, if required.
 
@@ -448,11 +488,17 @@ You can see the following visual customization options for a sequence by right-c
 
 * **Rename**: You can rename a sequence based on your preference and logic. By default, the name is **Untitled**; you can name and rename it as many times as you need.
 * **Mark as Flow Starting Point**: Using this option, you can mark a sequence as the starting point of the dialog flow. When you do so, the connector arrow from the root intent points to the first node of this sequence.
-* **Sequence Color**: You can change the color of a sequence. The platform provides six colors to choose from. This can be useful in case you need to visually indicate a split of flow, positive and negative flows, etc.
+* **Sequence Color**: You can change the color scheme (Border and Fill colors) of a sequence. The platform provides six default color schemes to choose from. This can be useful in case you need to visually indicate a split of flow, positive and negative flows, etc.
 
     For example, in the image below, green and red colors have been used for sequences that contain the positive and negative flows, respectively.
 
     <img src="../images/using-dialog-builder-sequence-color.png" alt="Visual customization of sequences - Color" title="Visual customization of sequences - Color" style="border:1px solid gray;zoom:60%;">
+
+    You cannot change the default color schemes, however, you can add your own custom colors or edit the custom colors available on the palette. The border color is auto-populated based on the color you select.
+
+    Custom colors are saved at Dialog level.
+
+    <img src="../images/using-dialog-builder-custom-colors.png" alt="Custom colors" title="Custom colors" style="border:1px solid gray; zoom:65%;">
 
 * **Delete**: This option allows you to delete the sequence. Note that deleted sequences cannot be restored; however, the nodes that were added to the sequence will still be available for use in the Assets tab of the Index panel.
 
@@ -492,7 +538,9 @@ Add or modify the following settings for your dialog:
     * **Intent Settings:**
         * **Sub intent only dialog** – The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
         * **Hide from help** – The task is not presented as a task when the user requests help. Users can invoke this task anytime while talking to the assistant.
-        * **Note: **This option is selected automatically when the previous option is selected. You can manually deselect it.
+            
+            **Note:** This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
+    
     * **Analytics - Containment Type**(Any one option can be selected):
         * **Abundance as Self Service:** Users can abandon the conversation while executing the dialog.
         * **Abundance as Drop Off:** Conversations can be abandoned by users or due to any failure during dialog execution.

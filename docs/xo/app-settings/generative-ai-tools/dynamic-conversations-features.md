@@ -141,172 +141,108 @@ The following table displays the Dynamic Conversation features and the supported
 (✅ Supported | ❌ Not Supported)
 
 
-
-
 <table>
   <tr>
-   <td><strong>Model</strong>
-   </td>
-   <td>GenAI Node
-   </td>
-   <td>Answer From Documents
-   </td>
-   <td>GenAI Prompt
-   </td>
-   <td>Rephrase Dialog Responses
-   </td>
-   <td>Zero-shot ML Model
-   </td>
-   <td>Repeat Responses
-   </td>
-   <td>Rephrase User Query
-   </td>
+    <td><strong> Model </strong> </td>
+    <td> Answer Generation  </td>
+    <td> GenAI Node  </td>
+    <td> GenAI Prompt  </td>
+    <td> Rephrase Dialog Responses  </td>
+    <td> Rephrase User Query  </td>
+    <td> Repeat Responses  </td>
+    <td> Vector Generation  </td>
+    <td> Zero-shot ML Model  </td>
   </tr>
   <tr>
-   <td>Azure OpenAI – GPT 3.5 Turbo
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>❌
-   </td>
+    <td>Azure OpenAI – GPT 3.5 Turbo</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
   </tr>
   <tr>
-   <td>Azure OpenAI – GPT 4
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅*
-   </td>
-   <td>✅
-   </td>
-   <td>❌
-   </td>
+    <td>Azure OpenAI – GPT 4</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅*</td>
   </tr>
   <tr>
-   <td>OpenAI – GPT 3.5 Turbo
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>❌
-   </td>
+    <td>OpenAI – GPT 3.5 Turbo</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
   </tr>
   <tr>
-   <td>OpenAI – GPT 4
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅*
-   </td>
-   <td>✅
-   </td>
-   <td>❌
-   </td>
+    <td>OpenAI – GPT 4</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅*</td>
   </tr>
   <tr>
-   <td>Anthropic – Claude Instant
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>❌
-   </td>
-   <td>✅
-   </td>
-   <td>❌
-   </td>
+    <td>Anthropic – Claude Instant</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
   </tr>
   <tr>
-   <td>Anthropic – Claude
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>❌
-   </td>
-   <td>✅
-   </td>
-   <td>❌
-   </td>
+    <td>Anthropic – Claude</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
   </tr>
   <tr>
-   <td>Custom LLM
-   </td>
-   <td>✅
-   </td>
-   <td>❌
-   </td>
-   <td>✅
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
+    <td>Custom LLM</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
   </tr>
   <tr>
-   <td>Kore.ai XO GPT
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
-   <td>✅
-   </td>
+    <td>Kore.ai XO GPT</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
   </tr>
 </table>
+
 
 \*  Currently, the Zero-shot ML Model does not support batch testing when using GPT 4.
 
@@ -317,6 +253,9 @@ The following table displays the Dynamic Conversation features and the supported
 
 ## Feature Details
 
+### Answer Generation
+
+This feature helps generate an answer to the user question based on the data ingested into the Search AI application. The relevant data with a user query is inserted into the prompt, and the configured LLM responds with the answer. This answer is then formatted appropriately and presented to the user. [Learn more](../../searchai/answer-configuration.md#answers-generation).
 
 ### GenAI Node
 
@@ -333,38 +272,6 @@ When enabled, this feature lets you add an GenAI Node to Dialog Tasks. This node
 When creating or editing a Dialog Task that’s created manually or[ auto-generated](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#auto-generated-dialog-tasks), you can find a node called GenAI Node within your nodes list. 
 
 When this feature is disabled, the node is unavailable within the Dialog Builder.[ Learn more](../../automation/use-cases/dialogs/node-types/genai-node.md).
-
-
-### Answer From Documents
-
-This feature leverages a Large Language Model (LLM) and Generative AI models from OpenAI to generate answers for FAQs by processing uploaded documents in an unstructured PDF format and user queries.
-
-
-
-
-
-
-
-**Usage**
-
-After redacting personally identifiable information, the uploaded documents and the end-user queries are shared with OpenAI to curate the answers.
-
-Once you meet the prerequisites and enable the feature:
-
-
-
-1. You should[ upload the PDF document(s)](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/#Upload_PDF_Documents) to be shared with the third-party system (OpenAI). You can upload a maximum of 10 documents with a size of not more than 5 MB.
-2. The uploaded documents are listed under the **Answer from Documents** section with the following details:
-    * Upload Name
-    * Uploaded by
-    * Uploaded on
-    * Status (Active/Inactive)
-    * Actions (View and Delete File)
-1. A good practice is to test the answer generation by asking the VA a question directly related to the contents of your uploaded documents.[ Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/#Test_Answer_Generation).
-2. You can view, delete, and disable the uploaded documents.
-3. The VA provides answers only from uploaded documents that are active, whereas disabled documents are ignored.
-
-If the feature is disabled, you won’t be able to send queries to LLMs as a fallback.[ Learn more](https://developer.kore.ai/docs/bots/bot-builder-tool/knowledge-task/answer-from-documents/#Disable_Answer_from_Documents).
 
 
 ### GenAI Prompt
@@ -396,6 +303,12 @@ This feature lets you define custom user prompts based on the conversation conte
 If this feature is disabled, you cannot configure the ML model to build custom prompts using OpenAI for different use cases.[ Learn more](../../automation/use-cases/dialogs/node-types/genai-prompt.md).
 
 
+### Repeat Responses
+
+This feature uses LLM to reiterate the recent bot responses when the Repeat Response event is triggered. Bot developers can enable the event and customize the trigger conditions. This empowers end-users to ask the bot to repeat its recent responses at any point during the conversation. Currently, this event is supported for IVR, Audiocodes, and Twilio Voice channels.[ Learn more](https://developer.kore.ai/docs/bots/bot-intelligence/event-based-bot-actions/#Repeat_Bot_Response_Event).
+
+
+
 ### Rephrase Dialog Responses
 
 This feature sends all User Prompts, Error Prompts, and Bot Responses to the Generative AI along with the conversation context, which depends on the configured number of user inputs. Responses are rephrased in English or the selected Non-English Bot Language based on the context and user emotion, providing a more empathetic, natural, and contextual conversation experience to the end-user. You can give instructions (additional instructions) in English or any other bot language you select.
@@ -417,39 +330,6 @@ When this feature is disabled, the Rephrase Response section is not visible with
 
 
 ![alt_text](images/dcf(3).png  )
-
-
-
-### Zero-shot ML Model
-
-This feature uses a Azure OpenAI or OpenAI LLM models to help the ML Engine identify the relevant intents from user utterances based on semantic similarity. By identifying the logical intent during run time, this feature eliminates the need for training data. The Zero-shot ML model requires well-defined intents to work well. This training approach is well-suited for virtual assistants with relatively fewer intents and distinct use cases.
-
-!!! note
-
-    The Zero-shot model is production-ready in English but experimental in other languages. We advise caution before using it in production for non-English languages.
-
-**Usage**
-
-Before performing utterance testing, the user selects the **Zero-shot Model with OpenAI** Network Type. During utterance testing, the user provides a more descriptive input with a subject, object, and nouns. Once the test runs, the system identifies the most logical intent as the definitive match by comparing the following:
-
-
-
-* User utterance input
-* Intent names
-
-The identified intent is then displayed as the matched intent.
-
-If this feature is disabled, the system won’t identify and display the logical and matched intent during utterance testing.[ Learn more](../../automation/natural-language/training/machine-learning-engine.md#zero-shot-learning-model-with-openai).
-
-
-### Repeat Responses
-
-This feature uses LLM to reiterate the recent bot responses when the Repeat Response event is triggered. Bot developers can enable the event and customize the trigger conditions. This empowers end-users to ask the bot to repeat its recent responses at any point during the conversation. Currently, this event is supported for IVR, Audiocodes, and Twilio Voice channels.[ Learn more](https://developer.kore.ai/docs/bots/bot-intelligence/event-based-bot-actions/#Repeat_Bot_Response_Event).
-
-
-
-
-
 
 
 
@@ -497,6 +377,44 @@ Bot: You’re eligible to apply for a home loan as well. You can avail up to 100
 User: What about the interest rates of both loans?
 
 The co-reference and the query have to be completed as “What is the interest rate of personal loan and home loan?
+
+
+
+### Vector Generation
+
+This feature helps create vector embeddings for all the ingested data in the Search AI application. When the user inputs a query, the query is converted into an embedding, and then a vector search is performed to get a list of relevant data from the ingested data. This relevant data is then sent to the answer generation feature.
+
+
+
+### Zero-shot ML Model
+
+This feature uses a Azure OpenAI or OpenAI LLM models to help the ML Engine identify the relevant intents from user utterances based on semantic similarity. By identifying the logical intent during run time, this feature eliminates the need for training data. The Zero-shot ML model requires well-defined intents to work well. This training approach is well-suited for virtual assistants with relatively fewer intents and distinct use cases.
+
+!!! note
+
+    The Zero-shot model is production-ready in English but experimental in other languages. We advise caution before using it in production for non-English languages.
+
+**Usage**
+
+Before performing utterance testing, the user selects the **Zero-shot Model with OpenAI** Network Type. During utterance testing, the user provides a more descriptive input with a subject, object, and nouns. Once the test runs, the system identifies the most logical intent as the definitive match by comparing the following:
+
+
+
+* User utterance input
+* Intent names
+
+The identified intent is then displayed as the matched intent.
+
+If this feature is disabled, the system won’t identify and display the logical and matched intent during utterance testing.[ Learn more](../../automation/natural-language/training/machine-learning-engine.md#zero-shot-learning-model-with-openai).
+
+
+
+
+
+
+
+
+
 
 
 

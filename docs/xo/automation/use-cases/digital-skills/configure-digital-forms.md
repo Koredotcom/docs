@@ -73,12 +73,24 @@ Create a form to gather the following information:
 2. By default, a **Submit button** is added to the form. This would trigger the submit event which would capture the user input and save in context object.
 3. Drag and drop a **Text Field** component onto the form.
 4. As soon as you drag and drop a component, its property settings panel will be displayed.
-5. In that panel set the following values:
+5. In that panel congigure the following settings:
     * **Display Name** set as _Name._
     * **Name** used for internal reference, set as _accountname._
     * **Description** of the field.
     * **Placeholder** value to be displayed in the field when blank, set as, _Enter the name of the account holder_.
       <img src="../../images/form-editor-panel.png" alt="form editor panel" title="form editor panel" style="border: 1px solid gray; zoom:75%;">
+
+    * **Mask User Input/Secure Field Data** is a toggle under **Data Settings** that enables securing of the input data. The label of this toggle varies as below:
+        * If **Secure Form Data** is enabled, the caption of this toggle is **Mask User Input**. At runtime, the input data is masked.
+        * If **Secure Form Data** is disabled, the caption of this toggle is **Secure Field Data**. At runtime, the data of this field will be redacted. This would be a component level setting for data redaction.
+
+    * **Transient Input** is a toggle under **Data Settings** which, if enabled, ensures that the data provided in this field is not stored anywhere after the session ends. This would mean that the data won't be available in the database or logs as well.
+
+        <img src="../../images/mask-data-and-transient-input.png" alt="Field data securing and Transient data" title="Field data securing and Transient data" style="border:1px solid gray;">
+
+    !!! Note
+
+        **Mask User Input/Secure Field Data** and **Transient Input** toggles are available for all the components, and need to be set on component level. Settings of one component will have no impact on others.
 
 6. Next, a selection box for the type of account to be opened. Drag and drop a **Dropdown** component onto the form and set the following values:
     * **Display Name** set as _Account Type._

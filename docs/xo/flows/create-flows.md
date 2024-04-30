@@ -13,7 +13,11 @@ There are two types of Flows:
 
 ### The Start Flows
 
-Start flows represent the most complex flow type, providing access to all node types. This flow type allows you to create experiences for inbound calls and chats.
+Start flows represent the most complex flow type, providing access to all [node types](../flows/node-types/introduction-to-flow-nodes.md). This flow type allows you to create experiences for inbound calls and chats.
+
+!!! Note
+
+    All fields of the default Start Flows can be edited except Channels. [Learn more](#edit-a-start-flow).
 
 ### The Exit Flows
 
@@ -42,6 +46,7 @@ Steps to create a Start Flow:
 
 * The _Phone Number_ window is displayed as shown below. You can configure a custom local or toll-free number by clicking **Get New Phone Number**:
 <img src="../images/get-new-phone-number.png" alt="Get New Phone Number" title="Get New Phone Number" style="border: 1px solid gray; zoom:100%;">
+
 * Select the **Country**.
 * Select either the **Local** or **Toll-Free Number** option.
 * Select the **State**.
@@ -53,6 +58,7 @@ Steps to create a Start Flow:
 * Click the **Get Number** button.
 * Review the number on the _Forward to Phone Number_ page, select whether the number will be used for Inbound, Outbound Calls, or both, and click **Done**. A success confirmation message is displayed, and the phone number is added.
 <img src="../images/forward-to-phone-number.png" alt="Reserve Phone Number" title="Reserve Phone Number" style="border: 1px solid gray; zoom:100%;">
+
 * You can now use this number for your Start Flow.
 
 4. Select an **ASR Speech Recognition Engine**. You can choose from the following:
@@ -109,6 +115,30 @@ Selecting chat will display all the chat channels configured in the channels sec
 
 6. Click **Update & Continue to Flow Design**, you are taken to the Flow Designer, where you can work on the Flow itself.
 
+## Edit a Start Flow
+
+Steps to edit a start flow:
+
+1. Click the Ellipsis (**⋮**) beside the Description and click **Update**.
+<img src="../images/update-start-flow.png" alt="Update Start Flow" title="Update Start Flow" style="border: 1px solid gray; zoom:100%;">
+
+2. Make the changes and click **Update**.
+<img src="../images/edit-flow-experience.png" alt="Update Button" title="Update Button" style="border: 1px solid gray; zoom:100%;">
+
+## Delete a Start Flow
+
+Steps to delete a start flow:
+
+1. Click the Ellipsis (**⋮**) beside the Description and click **Delete**.
+<img src="../images/delete-start-flow.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:100%;">
+
+2. A confirmation is displayed. Click **Delete**.
+<img src="../images/confirm-delete.png" alt="Delete Confirm" title="Delete Confirm" style="border: 1px solid gray; zoom:100%;">
+
+    !!! Note
+
+        You cannot delete default start flows.
+
 ## Create an Exit Flow
 
 Steps to create an Exit Flow:
@@ -125,13 +155,33 @@ Steps to create an Exit Flow:
 
 4. Click **Update & Continue to Flow Design**, you are taken to the Flow Designer, where you can work on the flow.
 
+## Edit an Exit Flow
+
+Steps to edit an exit flow:
+
+1. Click the Ellipsis (**⋮**) beside the Description and click **Update**.
+<img src="../images/update-exit-flow.png" alt="Update Exit Flow" title="Update Exit Flow" style="border: 1px solid gray; zoom:100%;">
+
+2. Make the changes and click **Update**.
+<img src="../images/update-button-exit-flow.png" alt="Update Button" title="Update Button" style="border: 1px solid gray; zoom:100%;">
+
+## Delete an Exit Flow
+
+Steps to delete an exit flow:
+
+1. Click the Ellipsis (**⋮**) beside the Description and click **Delete**.
+<img src="../images/delete-exit-flow.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:100%;">
+
+2. A confirmation is displayed. Click **Delete**.
+<img src="../images/confirm-delete-exit-flow.png" alt="Delete Confirm" title="Delete Confirm" style="border: 1px solid gray; zoom:100%;">
+
 ## Navigate the Flow Designer
 
 Once you reach the Flow Designer, you can create your flow using the canvas and nodes. The visual guide below gives you an overview of the tools you will be working with.
 <img src="../images/flow-designer-page.png" alt="Flow Designer Page" title="Flow Designer Page" style="border: 1px solid gray; zoom:100%;">
 
-For a detailed navigation guide, please see [Navigate the Flow Designer](https://docs.kore.ai/smartassist/experience-flows/navigate-the-experience-flow-designer/).
+For a detailed navigation guide, please see [Navigate the Flow Designer](../flows/navigate-the-flow-designer.md).
 
 ## Publish a Flow
 
-When the Flow is published, it becomes available to end-users. [Learn more](https://docsinternal-kore.github.io/docs/xo/deploy/publishing-bot/#publishing-components).
+When the Flow is published, it becomes available to end-users. [Learn more](../deploy/publishing-bot.md#publishing-components).

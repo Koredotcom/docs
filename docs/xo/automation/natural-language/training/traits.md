@@ -48,29 +48,27 @@ The following key features can be leveraged when defining Traits:
 
 1. **Trait Type** is a collection of related traits like _Travel Class_ in the above example.
 
-    * Trait Type can be _ML Based_ or _Pattern Based_. Each trait of a trait type can be trained using words, phrases, utterances, or patterns based on the type. **Manage** Trait Type allows you to define the training configuration. Click [here](/docs/xo/automation/natural-language/training/traits/#the-ml-model-for-traits){:target="_blank"} for ML-based trait configuration.
+    * Trait Type can be _ML Based_ or _Pattern Based_. Each trait of a trait type can be trained using words, phrases, utterances, or patterns based on the type. **Manage** Trait Type allows you to define the training configuration. Click [here](#the-ml-model-for-traits) for ML-based trait configuration.
     * A _Trait Type_ can have one or more _Traits_.
     <img src="../images/trait-type-definition.png" alt="traits type definition" title="traits type definition" style="border: 1px solid gray; zoom:75%;">
 
-2. **Traits** **names** should be unique in a group. But traits with the same name can be present in multiple groups.
+2. **Traits names** should be unique in a group. But traits with the same name can be present in multiple groups.
 
     * For ML-based Traits, you can define the words, phrases, or utterances that identify the trait. One trait per trait type is detected for ML-based trait types.
     * For Pattern-based Traits, you can define the patterns associated with the given trait. There is a possibility of multiple traits getting detected for pattern-based trait types. Ordering of Traits within the Trait Type signifies the importance of a trait in a trait type and detects only one trait.
 
-        <div class="admonition note">
-        <p class="admonition-title">Note</p>
-        <p>The latest version of the Platform supports a <b>new patterns engine flag</b> for performance optimization. It offers better response times for pattern evaluation after the virtual assistant training is done.</p>
-        </div> 
-    
-3. Once added, <b>Train</b> the assistant for the Traits to be detected from user utterances.
+        !!! Note
 
-<div class="admonition note">
-<p class="admonition-title">Key Considerations</p>
-<ul><li>You can add language-specific traits in the case of multi-lingual assistants.</li>
-<li>When a trait name is modified, ensure that all the rules defined using that trait are corrected. This has to be done manually, the Platform will not handle it automatically.</li>
-<li>The trait name must be unique in a group.</li>
-<li>Traits with the same name can be present in multiple groups, but distinguishing them in trait rules or trait detection results is difficult.</li></ul>
-</div>
+            The latest version of the Platform supports a **new patterns engine flag** for performance optimization. It offers better response times for pattern evaluation after the virtual assistant training is done. 
+    
+3. Once added, **Train** the assistant for the Traits to be detected from user utterances.
+
+!!! Key Considerations
+
+    * You can add language-specific traits in the case of multi-lingual assistants.
+    * When a trait name is modified, ensure that all the rules defined using that trait are corrected. This has to be done manually, the Platform will not handle it automatically.
+    * The trait name must be unique in a group.
+    * Traits with the same name can be present in multiple groups, but distinguishing them in trait rules or trait detection results is difficult.
 
 ## The ML Model for Traits
 
@@ -84,11 +82,9 @@ From v8.0 of the platform, an option is included to skip or use the n-gram model
     * _Sequence Length_ specifying the number of words to be included in a non-consecutive sequence. It is set to 2 by default and it can take any integer value between 2 and 4.
     * _Maximum Skip Distance_ for the number of words that can be skipped to form a non-consecutive sequence of words. This value is set to 1 by default and can take any integer value from 1 to 3.
 
-     <div class="admonition note">
-     <p class="admonition-title">Note</p>
-     <p>While the settings are same for all languages (in case of multilingual bot), for some languages like Chinese and Korean sequence of characters from grams and for other (Latin-based) languages are word grams.
-    </p>
-    </div>
+    !!! Note
+
+        While the settings are same for all languages (in case of multilingual bot), for some languages like Chinese and Korean sequence of characters from grams and for other (Latin-based) languages are word grams.
 
 ### Trait Association Rules
 
@@ -113,7 +109,13 @@ Each rule can have one or more conditions with **AND** as the operator. Multiple
 
 ### Knowledge Graph Intents
 
-The Knowledge Graph can also be part of the discovery process using Traits. For this, each term or node can be associated with a trait. A given term can be associated with a single Trait.
+The Knowledge Graph can also be part of the discovery process using Traits. For this, each term or node can be associated with a trait. A given term can be associated with a single Trait. 
+
+Navigate to **Virtual Assistant > Knowledge AI > FAQs**, and click **Manage KG**. On the **Knowledge Graph** screen, click the **Settings** (Gear icon) corresponding to the parent or any of the child nodes.
+
+<img src="../images/navigate-to-manage-kg.png" alt="Navigate to Manage KG" title="Navigate to Manage KG" style="border: 1px solid gray; zoom:75%;">
+
+<img src="../images/settings-click.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:75%;">
 
 <img src="../images/kg-intents.png" alt="kg intents" title="kg intents" style="border: 1px solid gray; zoom:75%;">
 

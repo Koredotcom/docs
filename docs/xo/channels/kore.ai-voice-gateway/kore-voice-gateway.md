@@ -42,7 +42,7 @@ Steps to attach a flow to the phone number:
 1. Click **+ Attach Flow**. Hovering over the pie icon displays "**No Flow Attached**".
 <img src="../images/attach-flow.png" alt="Attach Flow" title="Attach Flow" style="border: 1px solid gray; zoom:100%;">
 
-2. Select a **Start Flow** you want to add to this number and click **Done**. You can add a start flow by clicking **+ New Start Flow**. [Learn more](https://docs.kore.ai/smartassist/experience-flows/create-experience-flows/#Experience_Flow_Types).
+2. Select a **Start Flow** you want to add to this number and click **Done**. You can add a start flow by clicking **+ New Start Flow**. [Learn more](../../flows/create-flows.md#create-a-start-flow).
 <img src="../images/add-start-flow.png" alt="Add Start Flow" title="Add Start Flow" style="border: 1px solid gray; zoom:100%;">
 
 3. The attached flow appears. Hovering over the pie icon displays "**Configured**".
@@ -120,7 +120,7 @@ Steps to attach a flow to the SIP Number:
 1. Click **+ Attach Flow**. Hovering over the link icon displays "**No Flow Attached**".
 <img src="../images/attach-flow-sip.png" alt="Attach FLows SIP" title="Attach Flows SIP" style="border: 1px solid gray; zoom:100%;">
 
-2. Select a **Start Flow** to add to individual numbers and click **Done**. You can add a start flow by clicking **+ New Start Flow**. [Learn more](https://docs.kore.ai/smartassist/experience-flows/create-experience-flows/#Experience_Flow_Types).
+2. Select a **Start Flow** to add to individual numbers and click **Done**. You can add a start flow by clicking **+ New Start Flow**. [Learn more](../../flows/create-flows.md#create-a-start-flow).
 
 3. The attached flows appear. A pie icon appears below the attached flows. Hovering over the pie icon displays "**Configured**".
 <img src="../images/flow-attached-sip.png" alt="FLows Attached SIP" title="Flows Attached SIP" style="border: 1px solid gray; zoom:100%;">
