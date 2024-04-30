@@ -134,16 +134,6 @@ Key features and enhancements included in this release are summarized below.
     The Selected Hours Report shows daily totals of every agent's productive hours. Productive hours are determined by built-in and custom statuses selected by users.  
     [Learn more :octicons-arrow-right-24:](../analytics/contact-center/reports/selected-hours-report.md)
 
-    ## API
-
-    ### Agent Status Details API (v2) Update
-
-    Two new fields, **startDate** and **endDate** are added to the request body. This change applies only to the version 2 (v2).
-
-    * The “dateFilter.startDate” field accepts date-time in YYYY-MM-DDTHH24:MM:SS format. If the user specifies only the date for the startDate field, the time will be taken as “00:00:00”.
-    * The “dateFilter.endDate” field accepts date-time in YYYY-MM-DDTHH24:MM:SS format. If the user specifies only the date for the endDate field, the time will be taken as “23:59:59”. 
-    * If the user specifies both the old “dateFilter.date”, and either/both of the new “dateFilter.startDate” or the “dateFilter.endDate” fields, then an error message is displayed.
-
 === "Agent AI"
 
 
