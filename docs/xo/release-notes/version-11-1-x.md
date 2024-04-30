@@ -16,14 +16,15 @@ Key features and enhancements included in this release are summarized below.
 
 === "LLM and Generative AI"
 
+    
     ## Custom LLM Integration Support for Rephrase Dialog Responses  
 
-    Rephrase Dialog Responses now supports Custom LLMs in addition to commercial LLMs. This allows platform users to use the rephrasing feature with their own custom-trained language models and create customized prompts tailored to their specific use cases, models, and linguistic contexts, providing greater flexibility and control over the rephrasing process and conversational experiences.
+    Rephrase Dialog Responses now supports Custom LLMs in addition to commercial LLMs. This allows platform users to use the rephrasing feature with their own custom-trained language models and create customized prompts tailored to their specific use cases, models, and linguistic contexts, providing greater flexibility and control over the rephrasing process and conversational experiences.  
     [Learn more :octicons-arrow-right-24:](../app-settings/generative-ai-tools/dynamic-conversations-features.md#rephrase-dialog-responses)
 
     ## Custom LLM Integration Support for Answer Generation 
 
-    In addition to pre-built commercial LLMs, the Answer Generation now supports Custom LLMs. It allows platform users to craft personalized prompts to unlock the full potential of the Answer Generation and deliver uniquely tailored conversation experiences for their users. 
+    In addition to pre-built commercial LLMs, the Answer Generation now supports Custom LLMs. It allows platform users to craft personalized prompts to unlock the full potential of the Answer Generation and deliver uniquely tailored conversation experiences for their users.  
     [Learn more :octicons-arrow-right-24:](../app-settings/generative-ai-tools/dynamic-conversations-features.md#answer-generation)
 
     ## Kore.ai XO GPT Supports Vector Generation and Answer Generation (Beta)
@@ -32,9 +33,10 @@ Key features and enhancements included in this release are summarized below.
 
 === "Flows & Channels"
 
+    
     ## Updated Default Start Flow
 
-    All fields of the default Start Flows can now be edited except the associated channel. 
+    All fields of the default Start Flows can now be edited except the associated channel.  
     [Learn more :octicons-arrow-right-24:](../flows/create-flows.md#the-start-flows)
 
     ## Support for Thread Handling for Virtual Assistants in Slack Channels
@@ -45,6 +47,7 @@ Key features and enhancements included in this release are summarized below.
     <img src="../images/slack-channel-customize.png" alt="Slack Channel Configuration" title="Slack Channel Configuration" style="border: 1px solid gray; zoom:70%;">
 
 === "Automation AI"
+
 
     ## NLP
 
@@ -75,17 +78,19 @@ Key features and enhancements included in this release are summarized below.
 
 === "Search AI"
 
+
     ## Business Rules Support
 
     Business Rules Support allows users to define custom rules that modify the answers provided by the AI search system. By using contextual data specific to their needs, users can create tailored rules to refine the AI's responses. The system also suggests relevant context variables dynamically to assist in defining these rules.
 
 === "Contact Center AI"
 
+
     ## Agent Console
 
     ### Outbound Emails
 
-    Outbound email functionality is a key feature within Contact Center AI designed to streamline communication between agents and customers through email channels. Agents can now send outbound emails from the agent console. The outbound emails are independent of the ongoing conversations. 
+    Outbound email functionality is a key feature within Contact Center AI designed to streamline communication between agents and customers through email channels. Agents can now send outbound emails from the agent console. The outbound emails are independent of the ongoing conversations.  
     [Learn more :octicons-arrow-right-24:](../console/interacting-with-customers/interacting-with-customers.md#outbound-email)
 
     A new permission for Outbound Email is added in the Agent & Supervisor Experience section with the following details:
@@ -107,26 +112,27 @@ Key features and enhancements included in this release are summarized below.
 
     ### Schedule Voice Campaigns
 
-    Scheduling allows precise control over when your messages will be delivered. You can now seamlessly plan campaigns to coincide with peak engagement times, ensuring maximum impact. 
+    Scheduling allows precise control over when your messages will be delivered. You can now seamlessly plan campaigns to coincide with peak engagement times, ensuring maximum impact.  
     [Learn more :octicons-arrow-right-24:](../contactcenter/campaigns/campaign-management/voice-campaigns.md#schedule-voice-campaigns)
 
     ## Agents & Supervisors
 
     ### System Busy and System Away Status Enabled by Default
 
-    System Away and System Busy statuses are enabled by default for new accounts. For existing accounts, contact Kore Support. 
+    System Away and System Busy statuses are enabled by default for new accounts. For existing accounts, contact Kore Support.  
     [Learn more :octicons-arrow-right-24:](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#system-away-and-system-busy-status)
 
     ### Enable/Disable Resolution Disposition Sets
 
-    The **Resolution** Disposition Set comes prebuilt. App Owners can now enable/disable and edit the resolution disposition set. 
+    The **Resolution** Disposition Set comes prebuilt. App Owners can now enable/disable and edit the resolution disposition set.  
     [Learn more :octicons-arrow-right-24:](../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#disposition-sets)
 
     ## Analytics and Reporting
 
     ### Selected Hours Report
 
-    The Selected Hours Report shows daily totals of every agent's productive hours. Productive hours are determined by built-in and custom statuses selected by users. [Learn more :octicons-arrow-right-24:](../analytics/contact-center/reports/selected-hours-report.md)
+    The Selected Hours Report shows daily totals of every agent's productive hours. Productive hours are determined by built-in and custom statuses selected by users.  
+    [Learn more :octicons-arrow-right-24:](../analytics/contact-center/reports/selected-hours-report.md)
 
     ## API
 
@@ -139,6 +145,7 @@ Key features and enhancements included in this release are summarized below.
     * If the user specifies both the old “dateFilter.date”, and either/both of the new “dateFilter.startDate” or the “dateFilter.endDate” fields, then an error message is displayed.
 
 === "Agent AI"
+
 
     ## Agent AI Widget Updates
 
