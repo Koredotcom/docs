@@ -1398,3 +1398,295 @@ In case you want to use grammar syntax rules from Voximal or UniMRCP, you need t
 
 
 [def]: ../../
+
+
+
+<table>
+  <tr>
+    <td><strong>Model</strong></td>
+    <td><strong>Answer Generation</strong></td>
+    <td><strong>GenAI Node</strong></td>
+    <td><strong>GenAI Prompt</strong></td>
+    <td><strong>Rephrase Dialog Responses</strong></td>
+    <td><strong>Rephrase User Query</strong></td>
+    <td><strong>Repeat Responses</strong></td>
+    <td><strong>Vector Generation</strong></td>
+    <td><strong>Zero-shot ML Model</strong></td>
+  </tr>
+  <tr>
+    <td>Azure OpenAI – GPT 3.5 Turbo</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>Azure OpenAI – GPT 4</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅*</td>
+  </tr>
+  <tr>
+    <td>OpenAI – GPT 3.5 Turbo</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>OpenAI – GPT 4</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅*</td>
+  </tr>
+  <tr>
+    <td>Anthropic – Claude Instant</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>Anthropic – Claude</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>Custom LLM</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
+  </tr>
+  <tr>
+    <td>Kore.ai XO GPT</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+  </tr>
+</table>
+
+
+
+## Original Table
+
+
+<table>
+  <tr>
+   <td><strong>Model</strong>
+   </td>
+   <td>Answer Generation
+   </td>
+   <td>GenAI Node
+   </td>
+   <td>GenAI Prompt
+   </td>
+   <td>Rephrase Dialog Responses
+   </td>
+   <td>Zero-shot ML Model
+   </td>
+   <td>Repeat Responses
+   </td>
+   <td>Rephrase User Query
+   </td>
+   <td>Vector Generation
+   </td>
+  </tr>
+  <tr>
+   <td>Azure OpenAI – GPT 3.5 Turbo
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td>Azure OpenAI – GPT 4
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅*
+   </td>
+   <td>✅
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td>OpenAI – GPT 3.5 Turbo
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td>OpenAI – GPT 4
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅*
+   </td>
+   <td>✅
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td>Anthropic – Claude Instant
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>❌
+   </td>
+   <td>✅
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td>Anthropic – Claude
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>❌
+   </td>
+   <td>✅
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td>Custom LLM
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+  </tr>
+  <tr>
+   <td>Kore.ai XO GPT
+   </td>
+   <td>✅
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>✅
+   </td>
+   <td>❌
+   </td>
+   <td>❌
+   </td>
+   <td>✅
+   </td>
+   <td>✅
+   </td>
+  </tr>
+</table>
