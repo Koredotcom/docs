@@ -22,11 +22,11 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     
     Key Automation AI updates are summaried below.
 
-   **All-new Dialog Builder**
+    All-new Dialog Builder
 
     The all-new dialog builder is super intuitive, user-friendly, and visually appealing.
 
-   **Intuitive Graphical User Interface**
+    Intuitive Graphical User Interface
 
     The all-new intuitive graphical user interface allows users to design conversational flows by dragging and dropping components onto a canvas. This simplifies the process of constructing dialogues, allowing users to visually structure and customize interactions between the AI system and users. It empowers developers and non-technical users alike to design and create conversational flows effortlessly. 
 
@@ -36,47 +36,47 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     * **Seamless drag and drop** of nodes for a smooth experience.  
     <img src="../images/xo-platform-Graphic-user-interface.png" alt="Graphical User Interface" title="Graphical User Interface" style="border: 1px solid gray; zoom:70%;">
 
-   **Node Categorization**
+    Node Categorization
 
     A streamlined node panel with user-friendly categorization—Ask, Inform, AI, and Integration—provides clear organization for users.  
     <img src="../images/xo-platform-AutomationAI-nodecategorisation.png" alt="Node Categorization" title="Node Categorization" style="border: 1px solid gray; zoom:70%;">
 
-   **Sequencing**
+    Sequencing
 
     Enhance organization through the grouping of nodes into coherent sequences. Align nodes logically and provide clear, descriptive names for the sequences to facilitate future reference and comprehension. Provide the ability to clearly read and write the key information like name type, prompts/messages, and transition conditions. Enhance visibility and distinguishability by customizing sequences with color codes. 
     <img src="../images/xo-platform-AutomationAI-sequencing.png" alt="Sequencing" title="Sequencing" style="border: 1px solid gray; zoom:70%;">
 
-   **Universal Search**
+    Universal Search
 
     The new Universal search (CMD+K) quickly helps find out components, nodes, sequences, variables, etc.  
     <img src="../images/xo-platform-AutomationAI-Universal Search.png" alt="Universal Search" title="Universal Search" style="border: 1px solid gray; zoom:70%;">
 
-   **Comments**
+    Comments
 
     Users can add comments and feedback directly within the dialogue builder. Enhances communication by providing a platform for feedback, suggestions, and discussions on specific elements of the design.  
     <img src="../images/xo-platform-Automation-Comment.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
 
-   **Bookmarks**
+    Bookmarks
 
     Bookmarks allow users to organize and reference important information. Users can bookmark frequently visited or crucial content in the canvas with relevant information. Bookmarks help users navigate to content without having to search or browse extensively.  
-    <img src="../images/xo-platform-AutomationAI-Bookmark.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:70%;">
+ <img src="../images/xo-platform-AutomationAI-Bookmark.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:70%;">
 
-  **Notes**
+    Notes
 
     Add notes to highlight key points or summarize information. Notes can also be used for communication and feedback.  
     <img src="../images/xo-platform-AutomationAI-note.png" alt="Notes" title="Notes" style="border: 1px solid gray; zoom:70%;">
 
-   **LLM and Generative AI Framework**
+    LLM and Generative AI Framework
 
     Key Updates to LLM & Generative AI Framework are summarized below.
 
-     **Guardrails**
+     Guardrails
 
     Large language models (LLMs) are powerful AI systems that can be leveraged to offer human-like conversational experiences. The Kore.ai XO Platform offers a wide range of features to leverage the power of LLMs. LLMs are usually pre-trained with a vast corpus of public data sources, and the content is not fully reviewed and curated for correctness and acceptability for enterprise needs. This results in generating harmful, biased, or inappropriate content at times. The XO Platform's Guardrail framework mitigates these risks by validating LLM requests and responses to enforce safety and appropriateness standards.
 
     Guardrails enable responsible and ethical AI practices by allowing developers to easily enable/disable rules and configure settings for different features using LLMs. Additionally, platform users can design and implement fallback behaviors for a feature, such as triggering specific events, if a guardrail detects content that violates set standards.
     
-[Learn more.](../app-settings/generative-ai-tools/guardrails.md)
+  [Learn more.](../app-settings/generative-ai-tools/guardrails.md)
 
     Monitoring
 
