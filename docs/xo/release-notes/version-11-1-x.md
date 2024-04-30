@@ -49,19 +49,7 @@ Key features and enhancements included in this release are summarized below.
 === "Automation AI"
 
 
-    ## NLP
 
-    ### New Pre-trained MPNet Few-shot Model for Intent Detection
-
-    The few-shot model now supports the Pre-trained MPNet embedding model for intent detection.
-    The Pre-trained MPNet model is the advanced version of MPNet. It has been pre-trained and fine-tuned for superior accuracy and precision in intent identification compared to MPNet.
-
-    Advantages of using the Pre-trained MPNet Model:
-
-    * **Understanding Negations**: Pre-trained models get negations like "not" or "don't" easily, unlike MPNet, which might mix things up. So, when you say, "I want to transfer funds," and "I do not want to transfer funds," pre-trained models know the difference, making them better at understanding what you really mean.
-    * **Clear Intent Differentiation**: Pre-trained models are great at telling apart similar things, which can be tricky for MPNet. For example, if you say, "I want to unblock a card," or "I want to block a card," pre-trained models can confidently tell the difference between wanting to block or unblock a card, unlike MPNet, which might get confused.
-    * **Staying on Topic**: Pre-trained models are good at sticking to the topic at hand. So, if you talk about increasing your credit card limit, they won't start suggesting things unrelated to credit cards, unlike MPNet, which might go off track.
-    * **Easier Training**: Pre-trained models need less training data compared to MPNet. This means the model can learn the same things with fewer examples, making the training process faster and simpler.
 
     ## Digital Forms
 
