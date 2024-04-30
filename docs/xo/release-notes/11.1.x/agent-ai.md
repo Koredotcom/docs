@@ -1,4 +1,4 @@
-# 11.1.x Agent AI Updates
+# Agent AI Updates
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.1.x releases.
 

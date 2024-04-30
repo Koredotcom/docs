@@ -1,4 +1,4 @@
-# 11.1.x Search AI Updates
+# Search AI Updates
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.1.x releases.
 

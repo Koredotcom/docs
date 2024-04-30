@@ -1,4 +1,4 @@
-# 11.1.x Common Modules Updates
+# Common Modules Updates
 
 This document provides information on the feature updates and enhancements introduced in the **Common Modules** of XO v11.1.x releases.
 

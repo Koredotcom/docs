@@ -1,4 +1,4 @@
-# 11.1.x Automation AI Updates
+# Automation AI Updates
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.1.x releases.
 

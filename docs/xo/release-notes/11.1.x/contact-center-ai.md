@@ -1,4 +1,4 @@
-# 11.1.x Contact Center AI Updates
+# Contact Center AI Updates
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.1.x releases.
 
