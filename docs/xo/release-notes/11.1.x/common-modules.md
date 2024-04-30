@@ -39,4 +39,4 @@ The Platform now offers native support for threaded conversations in the Slack c
 Additionally, the platform provides extended functionality for developers. It can automatically create a new thread whenever a user \@mentions the virtual assistant in a Slack channel. This behavior is configurable, giving developers control over this feature.  
 <img src="../images/slack-channel-customize.png" alt="Slack Channel Configuration" title="Slack Channel Configuration" style="border: 1px solid gray; zoom:70%;">
 
-[Learn more :octicons-arrow-right-24:](../../channels/add-slack-channel-new.md)
+[Learn more :octicons-arrow-right-24:](../../channels/add-slack-channel.md)
