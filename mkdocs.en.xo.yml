@@ -150,7 +150,7 @@ nav:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
     - Release Notes:
       - What's New in XO 11: getting-started/whats-new-in-xo-platform.md  
-      - Latest Updates: release-notes/latest-updates.md
+      - Latest Updates: release-notes/version-11-1-x.md
 
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
@@ -494,7 +494,9 @@ nav:
         - Kore.ai XO GPT Module: app-settings/generative-ai-tools/xo-gpt-module.md
         - Prompts & Requests Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
         - Co-Pilot Features: app-settings/generative-ai-tools/co-pilot-features.md        
-        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md        
+        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md 
+        - PII and Sensitive Data: app-settings/generative-ai-tools/pii-and-sensitive-data.md
+        - Guardrails: app-settings/generative-ai-tools/guardrails.md       
       - Dev Tools:
         - Bot Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
         - Authorization Profiles: app-settings/dev-tools/bot-authorization/bot-authentication.md
