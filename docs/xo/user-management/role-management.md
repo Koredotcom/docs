@@ -35,7 +35,7 @@ The table below shows the permissions available within the XO Platform and their
 
     The Monitor Console permission is restricted to the Queues that the user is assigned to.
 
-=== "APP OWNER"
+### APP OWNER
 
 
    <table>
@@ -527,7 +527,7 @@ The table below shows the permissions available within the XO Platform and their
    </tr>
    </table>
 
-=== "APP DEVELOPER"
+### APP DEVELOPER
 
    <table>
    <tr>
@@ -1018,7 +1018,7 @@ The table below shows the permissions available within the XO Platform and their
    </tr>
    </table>
 
-=== "APP TESTER"
+### APP TESTER
 
    <table>
    <tr>
@@ -1509,7 +1509,7 @@ The table below shows the permissions available within the XO Platform and their
    </tr>
    </table>
 
-=== "SUPERVISOR"
+### SUPERVISOR
 
    <table>
    <tr>
@@ -2000,7 +2000,7 @@ The table below shows the permissions available within the XO Platform and their
    </tr>
    </table>
 
-=== "AGENT"
+### AGENT
 
    <table>
    <tr>
@@ -2491,7 +2491,7 @@ The table below shows the permissions available within the XO Platform and their
    </tr>
    </table>
 
-=== "CUSTOM ROLE"
+### CUSTOM ROLE
 
    <table>
    <tr>
