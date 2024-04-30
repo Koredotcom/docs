@@ -49,7 +49,7 @@ The API node is created on the canvas, and you can now define the node's propert
 
     * **SOAP**: A SOAP API uses the Simple Object Access Protocol (SOAP), which is a messaging protocol for interchanging data in a decentralized and distributed environment.
 
-1. Configure the API request under **Request Definition**. Define the GET, PUT, POST, or DELETE service request, along with the API call and parameters to pass. To create a new request, click **+ Define Request**.
+1. Configure the API request under **Request Definition**. Define the GET, PUT, POST, or DELETE service request, along with the API call and parameters to pass. To create a new request, click **Define Request**.
 
     <img src="../images/define-request.png" alt="Define Request" title="Define Request" style="border: 1px solid gray; zoom:50%;">
 

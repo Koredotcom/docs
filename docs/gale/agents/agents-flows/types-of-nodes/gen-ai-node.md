@@ -6,7 +6,7 @@ You can harness the power of expansive language models such as ChatGPT for tasks
 
 ## Add a New Gen AI Node
 
-**To add a Gen** **AI node, follow these steps**:
+**To add a Gen AI** node, follow these steps:
 
 1. Open the required agent from the list of agents to create the flow.
 2. Click **Agent flow** from the left navigation bar. The **Agent** flow page is displayed.
@@ -18,11 +18,11 @@ You can harness the power of expansive language models such as ChatGPT for tasks
 
 1. You can add a new node in 2 ways:
 
-    * Click the down arrow corresponding to the node from the **Assets** section from the left navigation bar of the Agents page and then click **+New Gen** **AI**.
+    * Click the down arrow corresponding to the node from the **Assets** section from the left navigation bar of the Agents page and then click **+New Gen AI**.
 
     Or
 
-    * Click **Gen** **AI** from the bottom bar of the Agents page.
+    * Click **Gen AI** from the bottom bar of the Agents page.
 
     <img src="../images/add-a-new-gen-ai-node.png" alt="Add a New Gen AI Node" title="Add a New Gen AI Node" style="border: 1px solid gray; zoom:80%;">
 
@@ -35,14 +35,14 @@ You can harness the power of expansive language models such as ChatGPT for tasks
     <img src="../images/connect-start-to-gen-ai.png" alt="Connect Start to Gen AI" title="Connect Start to Gen AI" style="border: 1px solid gray; zoom:80%;">
 
 
-## Configure the GenAI Node
+## Configure the Gen AI Node
 
 You can configure a Gen AI node and connect to any model.
 
-**To configure the AI node, follow these steps:**
+**To configure the Gen AI node, follow these steps:**
 
 1. Add a Gen AI node to the canvas.
-2. Click the **Gen AI node** and the general properties dialog for the node is displayed on the right side of the page as shown in the following image.
+2. Click the **Gen AI** node and the general properties dialog for the node is displayed on the right side of the page as shown in the following image.
 
     <img src="../images/configure-gen-ai-node.png" alt="Configure Gen AI Node" title="Configure Gen AI Node" style="border: 1px solid gray; zoom:80%;">
 
@@ -59,7 +59,7 @@ You can configure a Gen AI node and connect to any model.
 
 
 4. Click the arrow in the **Examples** section on the **AI node settings** dialog to write an example user Input and an expected AI output for a model to create/generate based on the example given here.
-5. Select the required **Hyperparameters**. The parameters that are displayed are based on the AI model you selected. For a given LLM used in the GenAI node, you can configure different hyperparameter attributes which alter the result of the GenAI node.
+5. Select the required **Hyperparameters**. The parameters that are displayed are based on the AI model you selected. For a given LLM used in the Gen AI node, you can configure different hyperparameter attributes which alter the result of the Gen AI node.
 
     * **Temperature**: This parameter controls the randomness of the model's responses. A high temperature (e.g., 0.7) results in more random outputs, while a low temperature (for example, 0.2) makes the model's outputs more deterministic and focused on the most likely completion.
     
@@ -71,7 +71,7 @@ You can configure a Gen AI node and connect to any model.
     
     * **Top P**: This parameter, also known as nucleus sampling, controls the diversity of the model's output. It sets a threshold where the model will only consider the top tokens whose cumulative probability exceeds the threshold. A high top P (for example, 0.9) will make the model's output more diverse, while a low top P (for example, 0.1) will make the output more deterministic.
 
-        You can access the output of GenAI with the syntax: 
+        You can access the output of Gen AI with the syntax: 
 
         ```
         {{context.steps.YOURGENAINODENAME.output}}. 
@@ -87,6 +87,10 @@ You can configure a Gen AI node and connect to any model.
     <img src="../images/gen-ai-actions.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:50%;">
     
 ## Status Codes
+
+**Errors**
+
+* “Proper data needs to be provided in the LLM node” error is displayed when the Model/prompt is not selected.
 
 **Connection**:
 
