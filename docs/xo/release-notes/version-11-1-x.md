@@ -16,8 +16,6 @@ Key updates to products and features are summarized below. Click the correspondi
 
 === "LLM and Generative AI"
     
-    Key features and enhancements included in this release:
-
     ## Custom LLM Integration Support for Rephrase Dialog Responses  
 
     Rephrase Dialog Responses now supports Custom LLMs in addition to commercial LLMs. This allows platform users to use the rephrasing feature with their own custom-trained language models and create customized prompts tailored to their specific use cases, models, and linguistic contexts, providing greater flexibility and control over the rephrasing process and conversational experiences.  
@@ -35,8 +33,6 @@ Key updates to products and features are summarized below. Click the correspondi
 
 === "Flows & Channels"
 
-    Key features and enhancements included in this release:
-
     ## Updated Default Start Flow
 
     All fields of the default Start Flows can now be edited except the associated channel.  
@@ -51,8 +47,6 @@ Key updates to products and features are summarized below. Click the correspondi
     [Learn more :octicons-arrow-right-24:](../channels/add-slack-channel-new.md)
 
 === "Automation AI"
-
-    Key features and enhancements included in this release:
 
     ## Digital Forms
 
@@ -71,16 +65,12 @@ Key updates to products and features are summarized below. Click the correspondi
 
 === "Search AI"
 
-    Key features and enhancements included in this release:
-
     ## Business Rules Support
 
     Business Rules Support allows users to define custom rules that modify the answers provided by the AI search system. By using contextual data specific to their needs, users can create tailored rules to refine the AI's responses. The system also suggests relevant context variables dynamically to assist in defining these rules.   
     [Learn more :octicons-arrow-right-24:](../searchai/business-rules.md)
 
 === "Contact Center AI"
-
-    Key features and enhancements included in this release:
 
     ## Agent Console
 
@@ -131,8 +121,6 @@ Key updates to products and features are summarized below. Click the correspondi
     [Learn more :octicons-arrow-right-24:](../analytics/contact-center/reports/selected-hours-report.md)
 
 === "Agent AI"
-
-    Key features and enhancements included in this release:
 
     ## Agent AI Widget Updates
 
