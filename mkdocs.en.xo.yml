@@ -149,10 +149,9 @@ nav:
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
     - Release Notes:
-      - What's New in XO 11: getting-started/whats-new-in-xo-platform.md  
+      - What's New in XO11: getting-started/whats-new-in-xo-platform.md  
       - XO11 vs. XO10: getting-started/key-differences-between-xo11-and-xo10.md
       - Latest Updates: release-notes/version-11-1-x.md
-
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:

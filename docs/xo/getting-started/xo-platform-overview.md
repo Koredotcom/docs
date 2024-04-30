@@ -13,15 +13,15 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
 <img src="../images/xo-platform-components.png" alt="New Unified XO Platform" title="New unified XO Platform">
 
-=== "Automation AI"
+=== "**Automation AI**"
 
     Automation AI offers sophisticated AI-powered tools for creating Virtual Assistants to handle customer interactions through intelligent automation. You can define specific use cases and utilize advanced Natural Language Processing (NLP) to handle complex interactions. You can also empower virtual assistants to handle interruptions and provide clarifications for more natural dialogues. It also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
     
     Key Features
     
-    * **Virtual Assistant Builder**: Enables the creation of intelligent virtual assistants.
-    * **Multi-Model NLU**: Natural Language Understanding that uses multiple models to better understand user input.
-    * **GenAI Framework**: A generative AI framework to enhance automation capabilities.  
+    * Virtual Assistant Builder: Enables the creation of intelligent virtual assistants.
+    * Multi-Model NLU: Natural Language Understanding that uses multiple models to better understand user input.
+    * GenAI Framework: A generative AI framework to enhance automation capabilities.  
     
     [Learn more about Automation AI features :octicons-arrow-right-24:](../automation/about-automation-ai.md)
 
@@ -31,9 +31,9 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     
     Key Features
     
-    * **Knowledge AI with LLM**: Integrates large language models to enrich knowledge bases.
-    * **Retrieval Augmented Generation**: Enhances information retrieval with generative AI.
-    * **Advanced RAG**: An advanced version of retrieval augmented generation for improved search capabilities.  
+    * Knowledge AI with LLM: Integrates large language models to enrich knowledge bases.
+    * Retrieval Augmented Generation: Enhances information retrieval with generative AI.
+    * Advanced RAG: An advanced version of retrieval augmented generation for improved search capabilities.  
     
     [Learn more about Search AI features :octicons-arrow-right-24:](../searchai/about-search-ai.md)
 
@@ -43,9 +43,9 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     
     Key Features
     
-    * **Routing & Experience Flows**: Manages the routing of queries and the flow of customer experiences.
-    * **Agent Desktop**: Provides a centralized workspace for agents.
-    * **Campaigns**: Tools for managing voice and proactive web campaigns.  
+    * Routing & Experience Flows: Manages the routing of queries and the flow of customer experiences.
+    * Agent Desktop: Provides a centralized workspace for agents.
+    * Campaigns: Tools for managing voice and proactive web campaigns.  
     
     [Learn more about Contact Center AI features :octicons-arrow-right-24:](../contactcenter/about-contact-center-ai.md)
 
@@ -55,9 +55,9 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     
     Key Features
     
-    * **Real-time AI suggestions**: Offers live AI-powered guidance to agents.
-    * **Auto-fulfillment**: Automates the completion of tasks and processes.
-    * **Agent Coaching & Playbooks**: Provides resources and strategies for agent training and performance.  
+    * Real-time AI suggestions: Offers live AI-powered guidance to agents.
+    * Auto-fulfillment: Automates the completion of tasks and processes.
+    * Agent Coaching & Playbooks: Provides resources and strategies for agent training and performance.  
     
     [Learn more about Agent AI features :octicons-arrow-right-24:](../agentai/about-agent-ai.md)
 
@@ -67,9 +67,9 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     
     Key Features
     
-    * **Virtual Agent - User Conversational Insights**: Analyzes and provides insights on interactions between users and virtual agents.
-    * **Virtual Agent Performance Insights**: Monitors and evaluates the performance of virtual agents.
-    * **Contact Center Quality Management Insights**: Offers insights to improve contact center operations.  
+    * Virtual Agent - User Conversational Insights: Analyzes and provides insights on interactions between users and virtual agents.
+    * Virtual Agent Performance Insights: Monitors and evaluates the performance of virtual agents.
+    * Contact Center Quality Management Insights: Offers insights to improve contact center operations.  
     
     [Learn more about Analytics features :octicons-arrow-right-24:](../analytics/introduction.md)
 
@@ -79,11 +79,11 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     
     Key Services
     
-    * **Life Cycle Management**: Tools for managing the lifecycle of apps and services, including versioning, publishing, and collaboration.
-    * **Multi-lingual Support**: Offers support for multiple languages.
-    * **Pre-built Integrations**: Provides ready-to-use integrations with other systems.
-    * **Generative AI**: Utilizes generative AI across the Platform.
-    * **Omnichannel**: Ensures a seamless experience across various communication channels.  
+    * Life Cycle Management: Tools for managing the lifecycle of apps and services, including versioning, publishing, and collaboration.
+    * Multi-lingual Support: Offers support for multiple languages.
+    * Pre-built Integrations: Provides ready-to-use integrations with other systems.
+    * Generative AI: Utilizes generative AI across the Platform.
+    * Omnichannel: Ensures a seamless experience across various communication channels.  
     
     [Learn more about Common Services :octicons-arrow-right-24:](../app-settings/app-profile.md)
 
@@ -93,10 +93,10 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
     
     Key Services
     
-    * **Role-based Access Controls, Audit Logs**: Ensures security and accountability through access management and logging.
-    * **Security, Compliance (SOC-2, PCI, FedRAMP, HIPAA, GDPR)**: Compliant with major security and privacy standards.
-    * **Cloud and On-Premise Deployments**: Flexible deployment options.
-    * **Scalability, Integrations, Authentication, and Authorization**: Ensures the Platform can scale and integrate securely with other systems.  
+    * Role-based Access Controls, Audit Logs: Ensures security and accountability through access management and logging.
+    * Security, Compliance (SOC-2, PCI, FedRAMP, HIPAA, GDPR): Compliant with major security and privacy standards.
+    * Cloud and On-Premise Deployments**: Flexible deployment options.
+    * Scalability, Integrations, Authentication, and Authorization: Ensures the Platform can scale and integrate securely with other systems.  
     
     [Learn more about Enterprise Services :octicons-arrow-right-24:](../administration/adminconsole.md)
 
