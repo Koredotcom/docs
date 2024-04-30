@@ -99,7 +99,7 @@ This option provides you ready-made templates targeting major industry verticals
 
     <img src="../images/using-dialog-builder-marketplace-actions-and-templates.png" alt="Integrations and Dialog Templates" title="Integrations and Dialog Templates" style="border:1px solid gray;zoom:70%;">
 
-3. To create a dialog using the available **Action Templates** of an integration:
+3. **Dialog Action Templates** contain the required nodes to make **API calls** to perform particular actions. You would notice that every Action Template has an API method mentioned in the brick. To create a dialog using the available **Dialog Action Templates** of an integration:
     1. Click the suitable integration. You will get a popup window containing the available **Action Templates** for the selected integration.
 
         <img src="../images/using-dialog-builder-click-required-integration.png" alt="Select the required integration" title="Select the required integration" style="border:1px solid gray;zoom:70%;">
@@ -116,7 +116,7 @@ This option provides you ready-made templates targeting major industry verticals
         
         <img src="../images/using-dialog-builder-dialog-task-using-action-edit.png" alt="Dialog design" title="Dialog design" style="border:1px solid gray;zoom:70%;">
 
-4. To create a dialog using **Dialog Template** (if available):
+4. **Dialog Templates** are pre-created templates of dialog tasks to perform a particular task. To create a dialog using **Dialog Template** (if available):
 
     !!! Note
     
