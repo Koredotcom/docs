@@ -86,8 +86,11 @@ This node empowers you to create a script for handling context variables or othe
     ~~~
 
     In the Function node, GALE provides a console I/O feature. This feature can be used when there is a requirement of a variable coming from the previous node or when testing a function.
+
     * **Context input**: You can provide some input for the script node to execute in the Context input section.
+
     * **Context output**: To find the results of the function from the given input. The output of the script execution along with the variable generated is displayed in the Context output section. You can debug the issues based on the log report and re-run the script.
+    
     * **Log**: Status of the function can be monitored and you can view the values.
 
     <img src="../images/context-input-context-output.png" alt="Context Input Context Output" title="Context Input Context Output" style="border: 1px solid gray; zoom:80%;">
