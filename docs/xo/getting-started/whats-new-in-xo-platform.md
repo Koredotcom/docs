@@ -20,19 +20,73 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
     Automation AI offers sophisticated AI-powered tools for creating Virtual Assistants to handle customer interactions through intelligent automation. You can define specific use cases and utilize advanced Natural Language Processing (NLP) to handle complex interactions. You can also empower virtual assistants to handle interruptions and provide clarifications for more natural dialogues. It also offers testing tools to ensure a smooth and reliable user experience by identifying and fixing issues before deployment.
     
-    Key Features
+    Key Automation AI updates are summaried below.
+
+    All-new Dialog Builder
+
+    The all-new dialog builder is super intuitive, user-friendly, and visually appealing.
+
+    Intuitive Graphical User Interface
+
+    The all-new intuitive graphical user interface allows users to design conversational flows by dragging and dropping components onto a canvas. This simplifies the process of constructing dialogues, allowing users to visually structure and customize interactions between the AI system and users. It empowers developers and non-technical users alike to design and create conversational flows effortlessly. 
+
+    * **Free-flow Designing** empowers users to easily design the flow without worrying too much about the logic at the beginning. The ability to easily connect nodes without having to fully define the transition rule. The transition rule can start with a simple description and can be enforced at the later stages while testing/publishing.
+    * **Infinite Canvas** allows designers to logically arrange the flow (based on purpose, objective, etc.) as needed, making it easy for them to review and audit the flows.
+    * **Customizable Connectors** featuring options for color, width, and style to enhance clarity, readability, and emphasis.
+    * **Seamless drag and drop** of nodes for a smooth experience.  
+    <img src="../images/xo-platform-Graphic-user-interface.png" alt="Graphical User Interface" title="Graphical User Interface" style="border: 1px solid gray; zoom:70%;">
+
+    Node Categorization
+
+    A streamlined node panel with user-friendly categorization—Ask, Inform, AI, and Integration—provides clear organization for users.  
+    <img src="../images/xo-platform-AutomationAI-nodecategorisation.png" alt="Node Categorization" title="Node Categorization" style="border: 1px solid gray; zoom:70%;">
+
+    Sequencing
+
+    Enhance organization through the grouping of nodes into coherent sequences. Align nodes logically and provide clear, descriptive names for the sequences to facilitate future reference and comprehension. Provide the ability to clearly read and write the key information like name type, prompts/messages, and transition conditions. Enhance visibility and distinguishability by customizing sequences with color codes. 
+    <img src="../images/xo-platform-AutomationAI-sequencing.png" alt="Sequencing" title="Sequencing" style="border: 1px solid gray; zoom:70%;">
+
+    Universal Search
+
+    The new Universal search (CMD+K) quickly helps find out components, nodes, sequences, variables, etc.  
+    <img src="../images/xo-platform-AutomationAI-Universal Search.png" alt="Universal Search" title="Universal Search" style="border: 1px solid gray; zoom:70%;">
+
+    Comments
+
+    Users can add comments and feedback directly within the dialogue builder. Enhances communication by providing a platform for feedback, suggestions, and discussions on specific elements of the design.  
+    <img src="../images/xo-platform-Automation-Comment.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
+
+    Bookmarks
+
+    Bookmarks allow users to organize and reference important information. Users can bookmark frequently visited or crucial content in the canvas with relevant information. Bookmarks help users navigate to content without having to search or browse extensively.  
+ <img src="../images/xo-platform-AutomationAI-Bookmark.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:70%;">
+
+    Notes
+
+    Add notes to highlight key points or summarize information. Notes can also be used for communication and feedback.  
+    <img src="../images/xo-platform-AutomationAI-note.png" alt="Notes" title="Notes" style="border: 1px solid gray; zoom:70%;">
+
+    LLM and Generative AI Framework
+
+    Key Updates to LLM & Generative AI Framework are summarized below.
+
+     Guardrails
+
+    Large language models (LLMs) are powerful AI systems that can be leveraged to offer human-like conversational experiences. The Kore.ai XO Platform offers a wide range of features to leverage the power of LLMs. LLMs are usually pre-trained with a vast corpus of public data sources, and the content is not fully reviewed and curated for correctness and acceptability for enterprise needs. This results in generating harmful, biased, or inappropriate content at times. The XO Platform's Guardrail framework mitigates these risks by validating LLM requests and responses to enforce safety and appropriateness standards.
+
+    Guardrails enable responsible and ethical AI practices by allowing developers to easily enable/disable rules and configure settings for different features using LLMs. Additionally, platform users can design and implement fallback behaviors for a feature, such as triggering specific events, if a guardrail detects content that violates set standards.
     
-    * **Virtual Assistant Builder**: Enables the creation of intelligent virtual assistants.
-    * **Multi-Model NLU**: Natural Language Understanding that uses multiple models to better understand user input.
-    * **GenAI Framework**: A generative AI framework to enhance automation capabilities.  
-    
-    [Learn more about Automation AI features :octicons-arrow-right-24:](../automation/about-automation-ai.md)
+  [Learn more.](../app-settings/generative-ai-tools/guardrails.md)
+
+    Monitoring
+
+    It offers comprehensive insights into utilizing Large Language Models (LLMs) and Generative AI features. The framework collects, analyzes, and presents comprehensive data on user interactions, request-response dynamics, and payload details. It enables platform users to track and compare usage across various LLM features and refine prompts and settings to boost performance and user experience.
 
 === "Search AI"
 
     Search AI offers AI-powered conversational search tools to quickly and accurately retrieve information from vast datasets and offer the most relevant piece of information to users. You can add multiple data sources to build your answer index, including website crawlers, structured data, unstructured documents, catalogs, and knowledge bases. You can also enrich and enhance your content to meet the specific needs of your users in accordance with your business needs. By combining Automation AI Use Cases and Search AI, businesses can create an exceptional, seamless conversational experience for their users.
     
-    Key Features
+    Key Search AI updates are summaried below.
     
     * **Knowledge AI with LLM**: Integrates large language models to enrich knowledge bases.
     * **Retrieval Augmented Generation**: Enhances information retrieval with generative AI.
@@ -44,7 +98,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
     Contact Center AI offers a conversational AI-native Contact Center-as-a-service solution to enhance customer experience, increase revenue, and reduce operational costs. It helps create consistent, personalized, intelligent, and effortless customer and agent experiences across channels. You can leverage Automation AI Use Cases and Search AI to automate regular customer queries and seamlessly transfer them to a human agent as needed. The new Campaigns module helps streamline outbound voice and web campaigns. It provides templates and analytics to easily create targeted campaigns, reach audiences efficiently, track performance, and achieve goals more effectively.
     
-    Key Features
+    Key Contact Center AI updates are summaried below.
     
     * **Routing & Experience Flows**: Manages the routing of queries and the flow of customer experiences.
     * **Agent Desktop**: Provides a centralized workspace for agents.
@@ -56,7 +110,7 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 
     Agent AI is your agent’s personal intelligent Virtual Assistant. It offers AI-native agent assistance to boost your contact center agents’ productivity and customer satisfaction. You can set up AI-powered automation workflows to empower your agents to deliver exceptional customer service by offering real-time assistance, the next best action, built-in Knowledge AI, automated assistance, and real-time guidance.
     
-    Key Features
+    Key Agent AI updates are summaried below.
     
     * **Real-time AI suggestions**: Offers live AI-powered guidance to agents.
     * **Auto-fulfillment**: Automates the completion of tasks and processes.
@@ -118,135 +172,6 @@ The unified XO Platform offers a comprehensive suite of products, features, and 
 * The Left Navigation Menu shows options for the selected product and feature(s). In top-down order, product-specific options are shown first, and related products or features are shown at the bottom.  
 <img src="../images/ntp(21).png" alt="The Left Navigation Menu" title="The Left Navigation Menu" style="border: 1px solid gray; zoom:70%;">
 
-## Key Differences Between XO11 and XO10
-
-### Welcome Events Replaced with Welcome Flows
-
- Earlier, incoming conversations were handled by events such as OnConnect/Welcome events. These events are now replaced with Flows. Flows are designed to replace the Welcome or OnConnect Message, Trigger a Dialog Task, or Run a Script.  
- <img src="../images/xo-platform-welcomeflow.png" alt="Welcome flow" title="Welcome flow" style="border: 1px solid gray; zoom:70%;">
-  
-### Dialog Builder Upgrade
-
-XO11 has an all-new super intuitive dialog builder.  
-<img src="../images/xo-platform-Dialogbuilder.png" alt="Dialog Builder" title="Dialog Builder" style="border: 1px solid gray; zoom:70%;">
-
-### Talk to Bot Moved to Header
-
-Talk to Bot has been renamed to **Test**. Users can Test Voice or Digital Conversation using Talk to Bot. Also, users can now see the current state of your conversation in the Talk-to-Bot (Test/Resume/Stop).  
-<img src="../images/Talk-to-bot.png" alt="Talk to bot" title="Talk to bot" style="border: 1px solid gray; zoom:70%;">  
-<img src="../images/xo-platform-test.png" alt="Test" title="Test" style="border: 1px solid gray; zoom:70%;">
-   
-### Create Dialog Enhanced with Generative AI
-
-You can now use Gen AI to create a dialog from scratch. You can also install pre-built Integration Templates directly from the all-new Marketplace as Dialog Tasks.  
-<img src="../images/xo-platform-createdialog.png" alt="Create Dialog" title="Create Dialog" style="border: 1px solid gray; zoom:70%;">
-
-### Bot Configurations Moved to App Settings
-
-All the configurations applicable across the app have been moved to a separate menu item - App Settings.    
-<img src="../images/xo-platform-appsetting.png" alt="App Setting" title="App Setting" style="border: 1px solid gray; zoom:70%;">
-
-### Shared LLM & Generative Settings for All Products
-
-All the LLM integrations can be managed in one place in an app and used across the products on the Platform. For example, Agent Response Rephrasing applies to both Contact Center AI and Agent AI.  
-<img src="../images/xo-platform-LLM&generativeAI.png" alt="LLM & GenerativeAI" title="LLM & GenerativeAI" style="border: 1px solid gray; zoom:70%;">
-
-### Global User Management
-
-User Management is now applicable across the modules. You can set permissions, manage agent-related Permissions, Create a new Role, and Assign a role to a new or existing user. You can also assign a role to User groups (but the creation of User Groups is still in the Admin Console Page).  
-<img src="../images/xo-platform-manageuser.png" alt="User Management" title="User Management" style="border: 1px solid gray; zoom:70%;">
-
-### App Level Publishing and Version Management
-
-Be it Publishing Dialogs or Flows, everything is now done in one place. The Platform supports all variants of publishing (partial, full), version control, and Import and export in one centralized place.  
-<img src="../images/xo-platform-deploy.png" alt="Deploy" title="Deploy" style="border: 1px solid gray; zoom:70%;">
-
-### Reorganized Analytics
-
-The Analytics module is logically regrouped to address various audience needs. A session starts from Channel through Flows, can go to Automation AI (Virtual Assistant), and then transfer to Agent. The module offers unified analytics across all conversations.  
-<img src="../images/xo-platform-analytics.png" alt="Analytics" title="Analytics" style="border: 1px solid gray; zoom:70%;">
-
-### Automation vs. Search (Answers) Fallback Behavior
-
-We have a new setting where users can configure where every user utterance should go first: Automation AI (Virtual Assistant) or Search AI (Answers) to get the response.  
-<img src="../images/xo-platform-fallback-behaviour.png" alt="Fallback Behaviour" title="Fallback BehaviourI" style="border: 1px solid gray; zoom:70%;">
-
-### New Marketplace
-
-The New Marketplace is available inside the App (previously, it was on the bot's homepage). The Marketplace empowers you to enhance your virtual assistant's capabilities by seamlessly integrating third-party systems. With pre-built integrations across various domains, you can extend your assistant's functionality effortlessly. The Marketplace streamlines the integration process by providing pre-configured actions and dialogue tasks, saving you valuable development time and effort. Additionally, you can leverage the expertly designed, pre-built dialogue templates tailored for each integration, allowing you to incorporate rich conversational flows with minimal setup. 
-<img src="../images/xo-platform-marketplace.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:70%;">
-
-Also, the Marketplace offers pre-built dialogue templates for each integration. These templates are expertly designed by Kore, leveraging the available APIs from the integrated system. When a user installs a template, it is added as a dialogue task to the virtual assistant's use case section, enabling users to create rich and engaging conversational experiences with minimal effort.  
-<img src="../images/xo-platform-marketplace 2.png" alt="Marketplace" title="Marketplace" style="border: 1px solid gray; zoom:70%;">
-
-### New Billing Page
-
-The billing definition has been changed to accommodate the various price offerings we are providing in UXO. The Billing Session definition for Automation is 15 minutes of Interaction, and for Contact Center, it's 15 minutes of ideal time. The Platform offers various plans, and users can choose the plan for each product individually. Note that if users want to be Enterprise customers, then they have to choose enterprise plans for all the products.  
-<img src="../images/xo-platform-billingpage.png" alt="Billing Page" title="Billing Page" style="border: 1px solid gray; zoom:70%;">
-
-### Other Changes
-
-* Languages are now at the App level. Users can add a language globally and access it inside a specific module. For example, a New Agent language assignment is only done if it is added globally at the App level.
-* Dev tools offer all the developer-related menus, such as BotKit, API scopes, Auth profiles, etc., across the products.
-
-## Automation AI Updates
-
-### All-new Dialog Builder 
-
-#### Intuitive Graphical User Interface
-
-The all-new intuitive graphical user interface allows users to design conversational flows by dragging and dropping components onto a canvas. This simplifies the process of constructing dialogues, allowing users to visually structure and customize interactions between the AI system and users. It empowers developers and non-technical users alike to design and create conversational flows effortlessly. 
-
-* **Free-flow Designing** empowers users to easily design the flow without worrying too much about the logic at the beginning. The ability to easily connect nodes without having to fully define the transition rule. The transition rule can start with a simple description and can be enforced at the later stages while testing/publishing.
-* **Infinite Canvas** allows designers to logically arrange the flow (based on purpose, objective, etc.) as needed, making it easy for them to review and audit the flows.
-* **Customizable Connectors** featuring options for color, width, and style to enhance clarity, readability, and emphasis.
-* **Seamless drag and drop** of nodes for a smooth experience.  
-<img src="../images/xo-platform-Graphic-user-interface.png" alt="Graphical User Interface" title="Graphical User Interface" style="border: 1px solid gray; zoom:70%;">
-
-#### Node Categorization
-
-A streamlined node panel with user-friendly categorization—Ask, Inform, AI, and Integration—provides clear organization for users.  
-<img src="../images/xo-platform-AutomationAI-nodecategorisation.png" alt="Node Categorization" title="Node Categorization" style="border: 1px solid gray; zoom:70%;">
-
-#### Sequencing
-
-Enhance organization through the grouping of nodes into coherent sequences. Align nodes logically and provide clear, descriptive names for the sequences to facilitate future reference and comprehension. Provide the ability to clearly read and write the key information like name type, prompts/messages, and transition conditions. Enhance visibility and distinguishability by customizing sequences with color codes. 
-<img src="../images/xo-platform-AutomationAI-sequencing.png" alt="Sequencing" title="Sequencing" style="border: 1px solid gray; zoom:70%;">
-
-#### Universal Search
-
-The new Universal search (CMD+K) quickly helps find out components, nodes, sequences, variables, etc.  
-<img src="../images/xo-platform-AutomationAI-Universal Search.png" alt="Universal Search" title="Universal Search" style="border: 1px solid gray; zoom:70%;">
-
-#### Comments
-
-Users can add comments and feedback directly within the dialogue builder. Enhances communication by providing a platform for feedback, suggestions, and discussions on specific elements of the design.  
-<img src="../images/xo-platform-Automation-Comment.png" alt="Comments" title="Comments" style="border: 1px solid gray; zoom:70%;">
-
-#### Bookmarks
-
-Bookmarks allow users to organize and reference important information. Users can bookmark frequently visited or crucial content in the canvas with relevant information. Bookmarks help users navigate to content without having to search or browse extensively.  
-<img src="../images/xo-platform-AutomationAI-Bookmark.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:70%;">
-
-#### Notes
-
-Add notes to highlight key points or summarize information. Notes can also be used for communication and feedback.  
-<img src="../images/xo-platform-AutomationAI-note.png" alt="Notes" title="Notes" style="border: 1px solid gray; zoom:70%;">
-
-### LLM and Generative AI Framework
-
-Key Updates to LLM & Generative AI Framework are summarized below.
-
-#### Guardrails
-
-Large language models (LLMs) are powerful AI systems that can be leveraged to offer human-like conversational experiences. The Kore.ai XO Platform offers a wide range of features to leverage the power of LLMs. LLMs are usually pre-trained with a vast corpus of public data sources, and the content is not fully reviewed and curated for correctness and acceptability for enterprise needs. This results in generating harmful, biased, or inappropriate content at times. The XO Platform's Guardrail framework mitigates these risks by validating LLM requests and responses to enforce safety and appropriateness standards.
-
-Guardrails enable responsible and ethical AI practices by allowing developers to easily enable/disable rules and configure settings for different features using LLMs. Additionally, platform users can design and implement fallback behaviors for a feature, such as triggering specific events, if a guardrail detects content that violates set standards.
-[Learn more.](../app-settings/generative-ai-tools/guardrails.md)
-
-#### Monitoring
-
-It offers comprehensive insights into utilizing Large Language Models (LLMs) and Generative AI features. The framework collects, analyzes, and presents comprehensive data on user interactions, request-response dynamics, and payload details. It enables platform users to track and compare usage across various LLM features and refine prompts and settings to boost performance and user experience.
 
 ## Search AI Updates
 
@@ -270,7 +195,6 @@ The Chunk Browser provides a tool for observing the extracted chunks from the so
 
 * **Editing of Chunks**: You can edit the chunk information directly within the browser interface. This capability can help you add any missed information, edit inaccurate information, or simply enrich the extracted information.  
 <img src="../images/xo-platform-Chunk Viewer.png" alt="Chunk Viewer" title="Chunk Viewer" style="border: 1px solid gray; zoom:70%;">
-
 
 #### Index Configuration
 
@@ -438,9 +362,7 @@ SearchAssist provides an intelligent, contextual, and personalized experience in
 * API Integration: You can optimize your search experience with the advanced Knowledge AI API configuration. Choose Basic to use the default Knowledge AI configurations or Advanced to configure how you want to use the Knowledge AI. The Advanced option lets you use your own API. The default selection is Basic.
 * Control expand behavior of Answers: You can now customize the number of answers that appear for your Knowledge AI search in the AgentAssist widget. For example, if you select “3” on the AgentAssist Settings page, only three answers will appear in the widget. By default, “4” is selected.
 
-
 ### Settings
-
 
 #### Channel-specific Setting 
 
