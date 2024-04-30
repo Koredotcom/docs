@@ -2501,8 +2501,10 @@ The table below shows the permissions available within the XO Platform and their
 
    Create and manage dialog, action, alert, information, and flow tasks.
       </td>
-      <td>Full
+      <td>Full Access
+   
    View
+   
    No</td>
    </tr>
    <tr>
@@ -2510,8 +2512,10 @@ The table below shows the permissions available within the XO Platform and their
 
    Manage natural language training data (utterances, patterns, synonyms etc.), configurations and thresholds.
       </td>
-      <td>Full
+      <td>Full Access
+   
    View
+   
    No</td>
    </tr>
    <tr>
@@ -2519,8 +2523,10 @@ The table below shows the permissions available within the XO Platform and their
 
    Manage knowledge collection and associated training (Questions, Alternate Questions, Synonyms, and Class)
       </td>
-      <td>Full
+      <td>Full Access
+   
    View
+   
    No</td>
    </tr>
    <tr>
@@ -2528,8 +2534,10 @@ The table below shows the permissions available within the XO Platform and their
 
    Manage Batch Testing and Conversation Testing.
       </td>
-      <td>Full
+      <td>Full Access
+   
    View
+   
    No</td>
    </tr>
    <tr>
@@ -2537,8 +2545,10 @@ The table below shows the permissions available within the XO Platform and their
 
    Manage Bot Owners and co-developers of a bot.
       </td>
-      <td>Full
+      <td>Full Access
+   
    View
+   
    No</td>
    </tr>
    <tr>
@@ -2546,8 +2556,10 @@ The table below shows the permissions available within the XO Platform and their
 
    Manage General Settings, Language Management, Authorization Profiles, PII Settings, IVR Settings, Bot Variables, Bot Versions etc.
       </td>
-      <td>Full
+      <td>Full Access
+   
    View
+   
    No</td>
    </tr>
    <tr>
@@ -2556,6 +2568,7 @@ The table below shows the permissions available within the XO Platform and their
    View and export dashboard data
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2563,8 +2576,10 @@ The table below shows the permissions available within the XO Platform and their
 
    Manage custom dashboards, widgets, and definitions
       </td>
-      <td>Full
+      <td>Full Access
+   
    View
+   
    No</td>
    </tr>
    <tr>
@@ -2572,8 +2587,10 @@ The table below shows the permissions available within the XO Platform and their
 
    View and Create Scenes
       </td>
-      <td>Full
+      <td>Full Access
+   
    View
+   
    No</td>
    </tr>
    <tr>
@@ -2582,6 +2599,7 @@ The table below shows the permissions available within the XO Platform and their
    Manage API Scopes for accessing various platform APIs.
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2590,6 +2608,7 @@ The table below shows the permissions available within the XO Platform and their
    Manage BotKit, WebSDK, Agent Transfer, Actions, External NLU, etc.
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2598,6 +2617,7 @@ The table below shows the permissions available within the XO Platform and their
    Raise request to publish the bot
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2606,6 +2626,7 @@ The table below shows the permissions available within the XO Platform and their
    View and export bot Analytics
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2614,6 +2635,7 @@ The table below shows the permissions available within the XO Platform and their
    Upgrade a bot by importing a new bot definition file or restoring a version
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2621,8 +2643,10 @@ The table below shows the permissions available within the XO Platform and their
 
    Manage Intent Discovery.
       </td>
-      <td>Full
+      <td>Full Access
+   
    View
+   
    No</td>
    </tr>
    <tr>
@@ -2631,7 +2655,9 @@ The table below shows the permissions available within the XO Platform and their
    Create and manage FAQs and conversations
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2640,6 +2666,7 @@ The table below shows the permissions available within the XO Platform and their
    Access to automation metrics in Dashboard
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2648,6 +2675,7 @@ The table below shows the permissions available within the XO Platform and their
    Access to the automations tab and XO Platform
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2660,7 +2688,9 @@ The table below shows the permissions available within the XO Platform and their
    Create and manage waiting experiences
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2669,7 +2699,9 @@ The table below shows the permissions available within the XO Platform and their
    Create and manage hours of operation
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2678,7 +2710,9 @@ The table below shows the permissions available within the XO Platform and their
    Create and manage queues
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2687,7 +2721,9 @@ The table below shows the permissions available within the XO Platform and their
    Create and manage experience flows
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2696,7 +2732,9 @@ The table below shows the permissions available within the XO Platform and their
    No ability to manage default flow properties
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2706,6 +2744,7 @@ The table below shows the permissions available within the XO Platform and their
       </td>
       <td>View
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2714,6 +2753,7 @@ The table below shows the permissions available within the XO Platform and their
    Manage the accessibility of agent playbook feature
       </td>
       <td>None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2722,7 +2762,9 @@ The table below shows the permissions available within the XO Platform and their
    Define AgentAssist Widgets accessibility to Agents
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2731,7 +2773,9 @@ The table below shows the permissions available within the XO Platform and their
    Manage the accessibility of real-time coaching feature
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2740,7 +2784,9 @@ The table below shows the permissions available within the XO Platform and their
    Manage the accessibility of service level feature
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2753,7 +2799,9 @@ The table below shows the permissions available within the XO Platform and their
    Create and manage agent status types
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2762,7 +2810,9 @@ The table below shows the permissions available within the XO Platform and their
    Modify global agent settings
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2771,7 +2821,9 @@ The table below shows the permissions available within the XO Platform and their
    Create and manage agent skills & skill groups
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2780,7 +2832,9 @@ The table below shows the permissions available within the XO Platform and their
    Create and manage agent groups
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2789,6 +2843,7 @@ The table below shows the permissions available within the XO Platform and their
    Allow user roles to be modified
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2801,6 +2856,7 @@ The table below shows the permissions available within the XO Platform and their
    Access and use the agent desktop console
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2809,7 +2865,9 @@ The table below shows the permissions available within the XO Platform and their
    Create and manage custom widgets
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2818,7 +2876,9 @@ The table below shows the permissions available within the XO Platform and their
    Create and manage surveys
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2827,7 +2887,9 @@ The table below shows the permissions available within the XO Platform and their
    Create and manage dispositions
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2836,6 +2898,7 @@ The table below shows the permissions available within the XO Platform and their
    Access to interactions in the Dashboard
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2844,6 +2907,7 @@ The table below shows the permissions available within the XO Platform and their
    Define My Dashboard accessibility to Agents
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2852,7 +2916,9 @@ The table below shows the permissions available within the XO Platform and their
    Create and manage standard responses
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2860,6 +2926,7 @@ The table below shows the permissions available within the XO Platform and their
    Chat internally with others in the account
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2868,6 +2935,7 @@ The table below shows the permissions available within the XO Platform and their
    Allow agents to add audio calls to a messaging interaction
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2876,6 +2944,7 @@ The table below shows the permissions available within the XO Platform and their
    Allow agents to add video calls to a messaging interaction
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2884,6 +2953,7 @@ The table below shows the permissions available within the XO Platform and their
    Access to dashboard
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2892,7 +2962,9 @@ The table below shows the permissions available within the XO Platform and their
    Create and manage secure forms
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2901,6 +2973,7 @@ The table below shows the permissions available within the XO Platform and their
    View filled-out secure forms and data
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2909,6 +2982,7 @@ The table below shows the permissions available within the XO Platform and their
    Create custom desktop layouts in the console
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2917,6 +2991,7 @@ The table below shows the permissions available within the XO Platform and their
    Publish custom layouts for account-wide use
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2925,6 +3000,7 @@ The table below shows the permissions available within the XO Platform and their
    Access to the monitor tab for live interactions
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2933,7 +3009,9 @@ The table below shows the permissions available within the XO Platform and their
    Create, view, and run reports
       </td>
       <td>None
+   
    View & Run
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2942,6 +3020,7 @@ The table below shows the permissions available within the XO Platform and their
    Allow user to join a conversation
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2950,7 +3029,9 @@ The table below shows the permissions available within the XO Platform and their
    Access to Voice campaigns under Campaigns module
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2959,7 +3040,9 @@ The table below shows the permissions available within the XO Platform and their
    Access to Proactive Web campaigns under Campaigns module
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -2968,6 +3051,7 @@ The table below shows the permissions available within the XO Platform and their
    Users can make direct outward calls
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -2976,7 +3060,9 @@ The table below shows the permissions available within the XO Platform and their
    Decide which queues are available for access in the Monitor
       </td>
       <td>All
+   
    Self
+   
    None</td>
    </tr>
    <tr>
@@ -2985,6 +3071,7 @@ The table below shows the permissions available within the XO Platform and their
    Whose interactions should he have access to
       </td>
       <td>Own
+   
    All</td>
    </tr>
    <tr>
@@ -2993,6 +3080,7 @@ The table below shows the permissions available within the XO Platform and their
    Make outbound emails if enabled for the account
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -3005,7 +3093,9 @@ The table below shows the permissions available within the XO Platform and their
    Manage communication channels
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -3014,7 +3104,9 @@ The table below shows the permissions available within the XO Platform and their
    Manage account-level billing preferences
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -3023,7 +3115,9 @@ The table below shows the permissions available within the XO Platform and their
    Manage API setup and configuration
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -3032,7 +3126,9 @@ The table below shows the permissions available within the XO Platform and their
    Manage ASR/TTS voice preferences
       </td>
       <td>View
+   
    None
+   
    Full Access</td>
    </tr>
    <tr>
@@ -3041,6 +3137,7 @@ The table below shows the permissions available within the XO Platform and their
    Can Manage WFM Configurations.
       </td>
       <td>Yes
+
    No</td>
    </tr>
    <tr>
@@ -3053,6 +3150,7 @@ The table below shows the permissions available within the XO Platform and their
    Allow users to Access and Manage Answers Module
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -3061,6 +3159,7 @@ The table below shows the permissions available within the XO Platform and their
    Allow users to Access and Manage the Campaigns Module
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    <tr>
@@ -3069,6 +3168,7 @@ The table below shows the permissions available within the XO Platform and their
    Allow user to Access and Manage AgentAssist Module
       </td>
       <td>Yes
+  
    No</td>
    </tr>
    <tr>
@@ -3077,6 +3177,7 @@ The table below shows the permissions available within the XO Platform and their
    Allow users to Access and Manage Quality Management Module
       </td>
       <td>Yes
+   
    No</td>
    </tr>
    </table>
