@@ -4,6 +4,7 @@ hide:
   
 ---
 # Key Differences Between XO11 and XO10
+Key differences Between XO11 and XO10 are summarized below.
 
 ## Welcome Events Replaced with Welcome Flows
 
