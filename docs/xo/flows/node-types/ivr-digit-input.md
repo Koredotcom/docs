@@ -46,7 +46,7 @@ Set up the **Timeout** flow by defining the following fields:
 
 This tab allows you to configure the flow when the caller provides a wrong digit input.
 
-1. **Your Message to User**: From the **Choose your message type** dropdown list, select an option from _Text to Speech, Link, or audio_; then, type the message, and upload an audio file ( .mp3 and .wav formats are only supported for audio files), or provide a URL to the error message to be played to the customer when a timeout event occurs. See General Settings for details on these options.
+1. **Your Message to User**: From the **Choose your message type** dropdown list, select an option from _Text to Speech, Link, or audio_; then, type the message, and upload an audio file ( .mp3 and .wav formats are only supported for audio files), or provide a URL to the error message to be played to the customer when a timeout event occurs. See [General Settings](#general-settings) for details on these options.
 2. Under **Advanced Control** > **Number of Tries**, type the maximum number of retries or the allowed limit for a customer to key in the correct input.
 3. Under **Advanced Control** > **Action after Exceeding Retries**, select the node to direct the flow after the wrong input retries have exceeded. Select a node type to create the node or identify and select an existing node.  
 <img src="./../images/wrong-input-ivr-digit.png" alt="Wrong Input" title="Wrong Input" style="border: 1px solid gray; zoom:70%;">
@@ -57,7 +57,7 @@ Error Handling is available under the **Wrong Input** tab. Use this section to h
 
 Define the following fields that determine how system errors will be handled during runtime:
 
-* **Your Message to User**: Choose the message type from _Text to Speech, Link, or audio_; then, type the message, upload an audio file (mp3 and .wav formats are only supported for audio files), or provide a URL to the error message that will be played out to the caller when a system error occurs. See General Settings for a detailed explanation of these features.
+* **Your Message to User**: Choose the message type from _Text to Speech, Link, or audio_; then, type the message, upload an audio file (mp3 and .wav formats are only supported for audio files), or provide a URL to the error message that will be played out to the caller when a system error occurs. See [General Settings](#general-settings) for a detailed explanation of these features.
 * **Go to node**: Select the node to which you want to direct the error handling flow and define the system behavior. You can create a new node by selecting a node type or identifying and selecting an existing node.  
 <img src="./../images/error-handling-ivr-digit.png" alt="Error Handling" title="Error Handling" style="border: 1px solid gray; zoom:70%;">
 
