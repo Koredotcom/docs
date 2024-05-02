@@ -259,8 +259,7 @@ nav:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
         - Team Collaboration: manage-assistant/collaborative-development.md
-        - Feedback Survey: manage-assistant/feedbacksurvey.md
-        - Manage Namespace: manage-assistant/managing-namespace.md               
+        - Feedback Survey: manage-assistant/feedbacksurvey.md             
   - Search AI:
     - Overview: searchai/about-search-ai.md
     - Getting Started:
@@ -465,6 +464,9 @@ nav:
         - Introduction: analytics/contact-center/reports/introduction-to-reports.md
         - Reports List: analytics/contact-center/reports/reports-list.md
   - Administration:
+    - Users:
+      - Manage Users: user-management/manage-users.md
+      - Manage Role and Permissions: user-management/role-management.md
     - Deployment:
       - App Versioning: deploy/bot-versioning.md
       - Publishing your App: deploy/publishing-bot.md
@@ -492,9 +494,8 @@ nav:
         - Web/Mobile SDK: app-settings/dev-tools/kore-ai-web-sdk-tutorial.md
         - API Scopes: apis/automation/api-introduction.md
         - Mock Scenes: app-settings/mock-scenes.md
-      - Variables:
-        - Using Bot Variables: app-settings/variables/using-bot-variables.md
-        - Collections: app-settings/variables/collections.md
+      - Using Bot Variables: app-settings/variables/using-bot-variables.md
+      - Managing Namespaces: app-settings/managing-namespace.md
       - Advanced Settings:
         - PII Settings: app-settings/advanced-settings/pii-data-masking.md
         - Manage Sessions: app-settings/advanced-settings/bot-sessions.md
@@ -520,7 +521,4 @@ nav:
         - Security Settings: administration/security-and-control/security-settings.md
       - Cloud Connector: administration/kore-ai-connector.md
       - Analytics for Bots Admin: administration/analytics.md
-      - Billing: administration/billing.md    
-  - Users:
-    - Manage Users: user-management/manage-users.md
-    - Role Management: user-management/role-management.md
+      - Billing: administration/billing.md

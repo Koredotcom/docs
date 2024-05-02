@@ -67,7 +67,7 @@ You can add a user to Contact Center AI by following the steps below:
     3. **Last Name**: Enter the Last Name.
     4. **Role**: Select whether the new users will be App Developer, App Tester, Agent, or Supervisor.
        * Users with “Change User Role”  and permission selected as “Yes” will be able to modify the role of an existing user.
-       * Users with “Change User Role”  and permission selected as “No” will not be able to modify the role of an existing user. See [Role Management](../user-management/role-management.md#permissions) for details.
+       * Users with “Change User Role”  and permission selected as “No” will not be able to modify the role of an existing user. See [Role Management](./role-management.md#permissions) for details.
     5. **Attributes**: You can edit the user details or delete the users.
 
 ## Attributes
