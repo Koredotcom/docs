@@ -494,6 +494,7 @@ nav:
       - Variables:
         - Using Bot Variables: app-settings/variables/using-bot-variables.md
         - Collections: app-settings/variables/collections.md
+      - Managing Namespaces: app-settings/managing-namespace.md
       - Advanced Settings:
         - PII Settings: app-settings/advanced-settings/pii-data-masking.md
         - Manage Sessions: app-settings/advanced-settings/bot-sessions.md
