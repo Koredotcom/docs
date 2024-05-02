@@ -35,7 +35,7 @@ The table below shows the permissions available within the XO Platform and their
 
     The Monitor Console permission is restricted to the Queues that the user is assigned to.
 
-### APP OWNER
+=== "APP OWNER"
 
    <table>
    <tr>
