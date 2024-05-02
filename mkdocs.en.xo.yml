@@ -259,15 +259,7 @@ nav:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
         - Team Collaboration: manage-assistant/collaborative-development.md
-        - Authorization: manage-assistant/bot-authorization-overview.md
-        - Conversation Sessions: manage-assistant/conversation-sessions.md
         - Feedback Survey: manage-assistant/feedbacksurvey.md
-        - Masking PII Details: manage-assistant/redacting-personally-identifiable-information.md
-        - Variables: manage-assistant/using-bot-variables.md
-        - Collections: manage-assistant/collections.md
-        - IVR Settings: manage-assistant/ivr-integration.md
-        - General Settings: manage-assistant/general-settings.md
-        - Bot Management: manage-assistant/bot-management.md
         - Manage Namespace: manage-assistant/managing-namespace.md               
   - Search AI:
     - Overview: searchai/about-search-ai.md
@@ -476,7 +468,7 @@ nav:
     - Deployment:
       - App Versioning: deploy/bot-versioning.md
       - Publishing your App: deploy/publishing-bot.md
-      - Import & Export App: manage-assistant/bot-management.md      
+      - Import & Export App: deploy/bot-management.md      
     - App Settings:
       - App Profile: app-settings/app-profile.md
       - Language Management:
