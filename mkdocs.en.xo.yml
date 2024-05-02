@@ -259,8 +259,7 @@ nav:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
         - Team Collaboration: manage-assistant/collaborative-development.md
-        - Feedback Survey: manage-assistant/feedbacksurvey.md
-        - Manage Namespace: manage-assistant/managing-namespace.md               
+        - Feedback Survey: manage-assistant/feedbacksurvey.md             
   - Search AI:
     - Overview: searchai/about-search-ai.md
     - Getting Started:
