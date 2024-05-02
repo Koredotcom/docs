@@ -464,6 +464,9 @@ nav:
         - Introduction: analytics/contact-center/reports/introduction-to-reports.md
         - Reports List: analytics/contact-center/reports/reports-list.md
   - Administration:
+    - Users:
+      - Manage Users: user-management/manage-users.md
+      - Manage Role and Permissions: user-management/role-management.md
     - Deployment:
       - App Versioning: deploy/bot-versioning.md
       - Publishing your App: deploy/publishing-bot.md
@@ -518,7 +521,4 @@ nav:
         - Security Settings: administration/security-and-control/security-settings.md
       - Cloud Connector: administration/kore-ai-connector.md
       - Analytics for Bots Admin: administration/analytics.md
-      - Billing: administration/billing.md    
-  - Users:
-    - Manage Users: user-management/manage-users.md
-    - Role Management: user-management/role-management.md
+      - Billing: administration/billing.md
