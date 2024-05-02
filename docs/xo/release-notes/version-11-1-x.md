@@ -10,7 +10,7 @@ This document provides information on the various releases and the corresponding
 
 ## v11.1.0 April 27, 2024
 
-**Minor Release**
+<u>Minor Release</u>
 
 Key updates to products and features are summarized below. Click the corresponding tab to see the details.
 
@@ -42,8 +42,9 @@ Key updates to products and features are summarized below. Click the correspondi
 
     The Platform now offers native support for threaded conversations in the Slack channel. Users can initiate a new thread from any message within a Slack channel or direct message group.
 
-    Additionally, the platform provides extended functionality for developers. It can automatically create a new thread whenever a user "@mentions" the virtual assistant in a Slack channel. This behavior is configurable, giving developers control over this feature.  
+    Additionally, the platform provides extended functionality for developers. It can automatically create a new thread whenever a user \@mentions the virtual assistant in a Slack channel. This behavior is configurable, giving developers control over this feature.  
     <img src="../images/slack-channel-customize.png" alt="Slack Channel Configuration" title="Slack Channel Configuration" style="border: 1px solid gray; zoom:70%;">
+
     [Learn more :octicons-arrow-right-24:](../channels/add-slack-channel-new.md)
 
 === "Automation AI"
@@ -65,10 +66,8 @@ Key updates to products and features are summarized below. Click the correspondi
 
 === "Search AI"
 
-    ## Business Rules Support
-
-    Business Rules Support allows users to define custom rules that modify the answers provided by the AI search system. By using contextual data specific to their needs, users can create tailored rules to refine the AI's responses. The system also suggests relevant context variables dynamically to assist in defining these rules.   
-    [Learn more :octicons-arrow-right-24:](../searchai/business-rules.md)
+    This update includes only bug fixes.
+    
 
 === "Contact Center AI"
 
@@ -93,6 +92,7 @@ Key updates to products and features are summarized below. Click the correspondi
     * App Tester – No
     * Agent – No
     * Custom Role – No (Default)
+    [Learn more](../user-management/role-management.md#permissions)
 
     ## Campaigns
 
@@ -129,7 +129,7 @@ Key updates to products and features are summarized below. Click the correspondi
     The Agent AI widget now shows the “No Search Result Found. Could you rephrase your question or ask something else?” message when an agent’s search query on the search bar doesn’t show any results.
     If no dialog tasks are configured for an account, the message “No dialog tasks enabled for library” appears in the Library/Search tab.
 
-    ### Updates to the Override Mode of the AgentAI widget
+    ### Updates to the Override Mode of the Agent AI widget
 
     **Override Mode Off**
         
@@ -140,10 +140,8 @@ Key updates to products and features are summarized below. Click the correspondi
         
     * The green “tick” mark that appeared after receiving the customer’s input is removed.
     * The Entity Display Name appears with a cursor to indicate editing mode.
-    * Introduced the Cross and Check icons:
-        * Cross: Click to go back to Override Mode off status.
-        * Check: Click to save the input. You can also press the “Enter” button on the keyboard.
-    * The “keyboard” icon is replaced with the “agent” icon to indicate the agent’s input.
+    * Introduced the Cross and Check icons.
+    * The “keyboard” icon is replaced with the “agent” icon to indicate agent input.
 
     ## Agent AI Configuration with OpenAI GPT-3.5
 
@@ -163,15 +161,10 @@ Key updates to products and features are summarized below. Click the correspondi
 
     ## Conversation Transfer Experience (Third-Party Agent Desktop)
 
-    The conversation transfer behavior of the Agent AI widget is now defined and categorized based on the transfer type and channels. It applies only to the third-party configurations where appropriate transfer events are transmitted.
-
-    * Cold Transfer: It is defined as a conversation handover that happens between two agents and is applicable to all three channels - Voice, Chat, and Email. The conversation summary is generated again for the receiving agent, and this summary, along with the feedback options, gets added to the transferor agent’s Assist tab. The transferee agent can change the summary feedback for voice and email channels.
-
-    The Cold Transfer has the following options to choose from:
-
-    * Scroll up to the First Message: The chat history page scrolls up to the top of the page (first message).
-    * Continue from the Last Message: The chat history page scrolls down to the bottom of the page (last message).
-    * Configure Dialog Task: The user has to select one of the dialog tasks associated with a bot from the list. If a dialogue task of fetching a summary of agent 1 and the customer is selected, agent 2 will see it automatically when the conversation is transferred to him/her.
+    Agent AI has introduced the Conversation Transfer feature to customize the transfer functionality of the Agent AI widget. This feature is applicable only to the third-party configurations where appropriate transfer events are transmitted. The Cold Transfer type applies to all three channels - Chat, Voice, and Email and has the following options to choose from:
+    * Scroll up to the First Message
+    * Continue from the Last Message
+    * Configure Dialog Task
 
     ## Configure your own Auto Summarization Model (Third-Party Agent Desktop)
 
@@ -192,6 +185,17 @@ Key updates to products and features are summarized below. Click the correspondi
 
     After submission, the summary appears under the “.ai CONVERSATION SUMMARY” title with a **Copy** button at the bottom-right corner.
 
+    ## Updated Summarization Feature
+
+    Agent AI has improved the Summarization feature of its widget. The latest version comes up with improved summary accuracy and advanced handling of various scenarios in conversations between agents and users. Currently, this update is available only for the US PROD environment and supports English. It is not yet available for DE, JP, EU, AU, and IND environments.  
+
+    **Key Highlights**
+    
+    * Improved Summary Accuracy: The summary accuracy has been significantly improved through the implementation of a new model, and Agent AI is fine tuning it for specific use cases.
+    * Summary for Small Conversations: Agent AI has effectively addressed issues related to agent transfer scenarios between bots and users, ensuring seamless communication and comprehension.
+    * Handling Incomplete Summaries: The new model handles incomplete summaries more effectively, providing more comprehensive and useful insights even when the conversation is not fully concluded.
+    * Handling Longer Calls: The new model handles longer calls extending up to 20 minutes. The previous model would generate incomplete summaries for such extended conversations.
+
     ## Agent Coaching Updates
 
     In Agent Coaching > Utterance Trigger section, **Anytime in conversation** is now a default selection for the “in conversation” field.
@@ -202,14 +206,8 @@ Key updates to products and features are summarized below. Click the correspondi
 
     The AgentAI dashboard has been updated to include a detailed summary of Agent Feedback for dialog tasks, including "Not Helpful" feedback and additional comments. Users can now get a detailed view of the “Not Helpful” feedback with Responses, Additional Comments, and Counts.
 
-    * Click the “eye-like” icon in Additional Comments to access all comments linked to their conversation IDs.
-    * Click the Conversation ID link to go to the respective conversation.
-    * Click the Counts number to access the Conversation ID, Date, Time, and Agent Name/ID.
-    * Use the “search” button to find conversations by agent name, agent ID, or conversation ID.
-    * If the agent's name is provided, the agent column appears for searching; otherwise, the conversation ID is available.
-
     ### Average Widget Usage (Third-Party Agent Desktop)
 
-    The Dashboard has been updated to include the Average Widget Usage feature. This feature gives a graphical representation of the average amount of time agents spend on the AgentAI widget. Admins can customize the dates—yesterday, Last 7 Days, Last 15 Days, Last 30 Days, Custom Range—and view a graph that depicts the average widget usage time by agents during the selected time period. This is applicable only to third-party agent desktops.
+    The Dashboard has been updated to include the Average Widget Usage feature. This feature gives a graphical representation of the average amount of time agents spend on the AgentAI widget.
 
 <hr>

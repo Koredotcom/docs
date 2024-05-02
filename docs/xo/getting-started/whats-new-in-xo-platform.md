@@ -75,11 +75,13 @@ Key updates to products and features are summarized below. Click the correspondi
     Large language models (LLMs) are powerful AI systems that can be leveraged to offer human-like conversational experiences. The Kore.ai XO Platform offers a wide range of features to leverage the power of LLMs. LLMs are usually pre-trained with a vast corpus of public data sources, and the content is not fully reviewed and curated for correctness and acceptability for enterprise needs. This results in generating harmful, biased, or inappropriate content at times. The XO Platform's Guardrail framework mitigates these risks by validating LLM requests and responses to enforce safety and appropriateness standards.
 
     Guardrails enable responsible and ethical AI practices by allowing developers to easily enable/disable rules and configure settings for different features using LLMs. Additionally, platform users can design and implement fallback behaviors for a feature, such as triggering specific events, if a guardrail detects content that violates set standards.  
-    [Learn more.](../app-settings/generative-ai-tools/guardrails.md)
+    [Learn more :octicons-arrow-right-24:](../app-settings/generative-ai-tools/guardrails.md)
 
     ### Monitoring
 
     It offers comprehensive insights into utilizing Large Language Models (LLMs) and Generative AI features. The framework collects, analyzes, and presents comprehensive data on user interactions, request-response dynamics, and payload details. It enables platform users to track and compare usage across various LLM features and refine prompts and settings to boost performance and user experience.  
+    [Learn more :octicons-arrow-right-24:](../analytics/genai-analytics/llm-usage-logs.md)
+    
     [Learn more about Automation AI features :octicons-arrow-right-24:](../automation/about-automation-ai.md/)
 
 === "Search AI"
@@ -134,6 +136,7 @@ Key updates to products and features are summarized below. Click the correspondi
 
     You can either keep Automation First and Answers as a fallback or otherwise.  
     <img src="../images/xo-platform-Search vs. Automation Setting.png" alt="Search vs. Automation Setting" title="Search vs. Automation Setting" style="border: 1px solid gray; zoom:70%;">  
+    
     [Learn more about Search AI features :octicons-arrow-right-24:](../searchai/about-search-ai.md)
 
     
@@ -250,6 +253,7 @@ Key updates to products and features are summarized below. Click the correspondi
     The settings allow campaign managers to decide the maximum number of concurrent calls that can be dialed.  
     <img src="../images/xo-platform-cc-setting.png" alt="Settings" title="Settings" style="border: 1px solid gray; zoom:70%;"> 
     
+
     [Learn more about Contact Center AI features :octicons-arrow-right-24:](../contactcenter/about-contact-center-ai.md)
 
 === "Agent AI"
@@ -290,8 +294,8 @@ Key updates to products and features are summarized below. Click the correspondi
     * **Copy Button**: This option controls the accessibility of the Copy button functionality for AgentAssist responses. By default, it’s enabled for all three channels.
     * **Transcript Tab**: This option controls the appearance of the Transcript tab in the AgentAssist widget. By default, this widget is enabled and available for the Chat channel only.
     * **Auto Summarization**: This option controls the automatic generation of a summary of the conversation when it ends. Agents can copy the summary and save it into the Notes or Remark field while closing the conversation. By default, it’s enabled for Voice and Chat channels only, and it also has the option to select the Submit button.
-    * **Widget Landing Tab**: This option allows you to select the default landing page for your selected channel and is available for all three channels. 
-    
+    * **Widget Landing Tab**: This option allows you to select the default landing page for your selected channel and is available for all three channels.
+
     [Learn more about Agent AI features :octicons-arrow-right-24:](../agentai/about-agent-ai.md)
 
 <hr>
