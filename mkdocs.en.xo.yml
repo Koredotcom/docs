@@ -260,9 +260,6 @@ nav:
       - Manage Assistant:
         - Team Collaboration: manage-assistant/collaborative-development.md
         - Feedback Survey: manage-assistant/feedbacksurvey.md
-        - Collections: manage-assistant/collections.md
-        - IVR Settings: manage-assistant/ivr-integration.md
-        - Bot Management: manage-assistant/bot-management.md
         - Manage Namespace: manage-assistant/managing-namespace.md               
   - Search AI:
     - Overview: searchai/about-search-ai.md
@@ -471,7 +468,7 @@ nav:
     - Deployment:
       - App Versioning: deploy/bot-versioning.md
       - Publishing your App: deploy/publishing-bot.md
-      - Import & Export App: manage-assistant/bot-management.md      
+      - Import & Export App: deploy/bot-management.md      
     - App Settings:
       - App Profile: app-settings/app-profile.md
       - Language Management:
