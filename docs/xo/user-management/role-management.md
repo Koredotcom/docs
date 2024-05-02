@@ -1,4 +1,4 @@
-# Role Management
+# Manage Role and Permissions
 
 The XO Platform provides role-based user access to features. As such, Roles designate the users’ permissions and access level. The Role Management section lets you create and customize permissions for each.
 

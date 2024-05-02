@@ -1,4 +1,4 @@
-# Users
+# Manage Users
 
 In the XO Platform, the term User refers to the App Owner, App Developer, App Tester (customer support representatives), to supervisors, and administrators with an account within Contact Center AI. To serve customers, you must add users to Contact Center and provide them with the necessary access. You can create user profiles, assign them to voice, chat, or both channels, and specific skills or queues.
 
