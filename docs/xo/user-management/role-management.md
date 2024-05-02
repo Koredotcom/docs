@@ -1,6 +1,6 @@
 # Role Management
 
-XO Platform provides role-based user access to features. As such, Roles designate the users’ permissions and access level. The Role Management section lets you create and customize permissions for each.
+The XO Platform provides role-based user access to features. As such, Roles designate the users’ permissions and access level. The Role Management section lets you create and customize permissions for each.
 
 You can find the **Users** section on the left menu by going to **Manage** > **Users** > **Role Management**.  
 <img src="../images/product-switcher.png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:70%;">
@@ -35,7 +35,7 @@ The table below shows the permissions available within the XO Platform and their
 
     The Monitor Console permission is restricted to the Queues that the user is assigned to.
 
-=== "APP OWNER"
+### APP OWNER
 
    <table>
    <tr>
@@ -592,7 +592,7 @@ The table below shows the permissions available within the XO Platform and their
    </tr>
    </table>
 
-=== "APP DEVELOPER"
+### APP DEVELOPER
 
    <table>
    <tr>
@@ -1083,7 +1083,7 @@ The table below shows the permissions available within the XO Platform and their
    </tr>
    </table>
 
-=== "APP TESTER"
+### APP TESTER
 
    <table>
    <tr>
@@ -1574,7 +1574,7 @@ The table below shows the permissions available within the XO Platform and their
    </tr>
    </table>
 
-=== "SUPERVISOR"
+### SUPERVISOR
 
    <table>
    <tr>
@@ -2065,7 +2065,7 @@ The table below shows the permissions available within the XO Platform and their
    </tr>
    </table>
 
-=== "AGENT"
+### AGENT
 
    <table>
    <tr>
@@ -2556,7 +2556,7 @@ The table below shows the permissions available within the XO Platform and their
    </tr>
    </table>
 
-=== "CUSTOM ROLE"
+### CUSTOM ROLE
 
    <table>
    <tr>
@@ -3250,7 +3250,6 @@ The table below shows the permissions available within the XO Platform and their
    </tr>
    </table>
 
-<hr>
 
 ## Custom Roles
 
