@@ -342,7 +342,7 @@ nav:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
       - Bot Override and Automation: agentai/agent-experience/agent-assist-widget-v3.md       
   - Integrations & APIs:
-    - Overview: app-settings/integrations/actions/actions.md   
+    - Overview: app-settings/integrations/about-integration.md
     - Integrations:
       - Actions:
         - Actions Overview: app-settings/integrations/actions/actions.md
