@@ -20,7 +20,7 @@ Agents, Models, and Playground are the key components of GALE that work together
 
 === "Agents"
 
-    Agents allow you to create AI-powered workflows and automation with little to no coding required. Using a visual drag-and-drop interface, you can easily configure settings and combine multiple complex workflows. Guardrails ensure the models within these workflows operate responsibly, adhering to societal norms and your business requirements. The agents can seamlessly integrate with AWS and other products like Search AI, expanding the range of use cases. This user-friendly approach empowers you to leverage AI capabilities across various applications without extensive technical expertise.  
+    Agents allow you to create AI-powered workflows and automation with little to no coding required. Using a visual drag-and-drop interface, you can easily configure settings and combine multiple complex workflows. Guardrails ensure the models within these workflows operate responsibly, adhering to societal norms and your business requirements. The agents can seamlessly integrate with AWS, expanding the range of use cases. This user-friendly approach empowers you to leverage AI capabilities across various applications without extensive technical expertise.  
 
     <img src="../images/agents.png" alt="Agents" title="Agents" style="border: 1px solid gray; zoom:100%;">
 
