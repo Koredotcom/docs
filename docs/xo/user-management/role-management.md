@@ -2498,7 +2498,8 @@ The table below shows the permissions available within the XO Platform and their
       </td>
    </tr>
    <tr>
-      <td><strong>Tasks</strong>  
+      <td><strong>Tasks</strong> 
+      <br>
       
    Create and manage dialog, action, alert, information, and flow tasks.
       </td>
@@ -2512,7 +2513,7 @@ The table below shows the permissions available within the XO Platform and their
       <td><strong>Natural Language</strong>  
 
    Manage natural language training data (utterances, patterns, synonyms etc.), configurations and thresholds.
-      </td>
+    </td>
       <td>Full Access
    
    View
