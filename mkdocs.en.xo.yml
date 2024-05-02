@@ -149,10 +149,14 @@ nav:
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
     - Release Notes:
-      - What's New in XO 11: getting-started/whats-new-in-xo-platform.md  
+      - What's New in XO11: getting-started/whats-new-in-xo-platform.md  
       - XO11 vs. XO10: getting-started/key-differences-between-xo11-and-xo10.md
-      - Latest Updates: release-notes/version-11-1-x.md
-
+      - XO11.1.x Updates:
+        - Common Modules: release-notes/11.1.x/common-modules.md
+        - Automation AI: release-notes/11.1.x/automation-ai.md
+        - Search AI: release-notes/11.1.x/search-ai.md
+        - Contact Center AI: release-notes/11.1.x/contact-center-ai.md
+        - Agent AI: release-notes/11.1.x/agent-ai.md
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:
@@ -295,7 +299,6 @@ nav:
         - Chunk Browser: searchai/chunk-browser.md
         - Index Configuration: searchai/index-configuration.md
     - Configuration:
-        - Business Rules: searchai/business-rules.md
         - Answer Configuration: searchai/answer-configuration.md
         - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
   - Contact Center AI:
@@ -533,3 +536,6 @@ nav:
       - Cloud Connector: administration/kore-ai-connector.md
       - Analytics for Bots Admin: administration/analytics.md
       - Billing: administration/billing.md    
+  - Users:
+    - Manage Users: user-management/manage-users.md
+    - Role Management: user-management/role-management.md
