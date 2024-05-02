@@ -112,7 +112,7 @@ copyright: |
 nav:
   - Home : home.md
   - Platform:
-    - Overview: getting-started/xo-platform-overview.md    
+    - Overview: getting-started/about-xo-platform.md    
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md   
       - Navigating the Platform: getting-started/navigating-the-platform.md       
@@ -152,11 +152,11 @@ nav:
       - What's New in XO11: getting-started/whats-new-in-xo-platform.md  
       - XO11 vs. XO10: getting-started/key-differences-between-xo11-and-xo10.md
       - XO11.x Updates:
-        - Common Modules: release-notes/11.1.x/common-modules.md
-        - Automation AI: release-notes/11.1.x/automation-ai.md
-        - Search AI: release-notes/11.1.x/search-ai.md
-        - Contact Center AI: release-notes/11.1.x/contact-center-ai.md
-        - Agent AI: release-notes/11.1.x/agent-ai.md
+        - Platform Services: release-notes/11.x/common-modules.md
+        - Automation AI: release-notes/11.x/automation-ai.md
+        - Search AI: release-notes/11.x/search-ai.md
+        - Contact Center AI: release-notes/11.x/contact-center-ai.md
+        - Agent AI: release-notes/11.x/agent-ai.md
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:
