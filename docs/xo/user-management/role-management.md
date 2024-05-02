@@ -2498,8 +2498,7 @@ The table below shows the permissions available within the XO Platform and their
       </td>
    </tr>
    <tr>
-      <td><strong>Tasks</strong> 
-      <br>
+      <td><strong>Tasks</strong>
       
    Create and manage dialog, action, alert, information, and flow tasks.
       </td>
