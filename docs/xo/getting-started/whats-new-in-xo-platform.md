@@ -3,7 +3,7 @@ hide:
   - feedback
   - toc  
 ---
-# What's New in XO 11
+# What's New in XO11
 Learn about the new features and enhancements included in v11 of Kore.ai Experience Optimization Platform.
 
 ## All-new Experience Optimization Platform
@@ -75,7 +75,7 @@ Key updates to products and features are summarized below. Click the correspondi
     Large language models (LLMs) are powerful AI systems that can be leveraged to offer human-like conversational experiences. The Kore.ai XO Platform offers a wide range of features to leverage the power of LLMs. LLMs are usually pre-trained with a vast corpus of public data sources, and the content is not fully reviewed and curated for correctness and acceptability for enterprise needs. This results in generating harmful, biased, or inappropriate content at times. The XO Platform's Guardrail framework mitigates these risks by validating LLM requests and responses to enforce safety and appropriateness standards.
 
     Guardrails enable responsible and ethical AI practices by allowing developers to easily enable/disable rules and configure settings for different features using LLMs. Additionally, platform users can design and implement fallback behaviors for a feature, such as triggering specific events, if a guardrail detects content that violates set standards.  
-    [Learn more.](../app-settings/generative-ai-tools/guardrails.md)
+    [Learn more :octicons-arrow-right-24:](../app-settings/generative-ai-tools/guardrails.md)
 
     ### Monitoring
 
