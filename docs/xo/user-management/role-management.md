@@ -157,7 +157,7 @@ Upgrade a bot by importing a new bot definition file or restoring a version
 <tr>
    <td><strong>IntentDiscovery</strong>
    <br>
-Manage Intent Discovery.
+Manage Intent Discovery
    </td>
    <td>Full Access
    </td>
@@ -700,7 +700,7 @@ Upgrade a bot by importing a new bot definition file or restoring a version
 <tr>
    <td><strong>IntentDiscovery</strong>
    <br>
-Manage Intent Discovery.
+Manage Intent Discovery
    </td>
    <td>Full Access</td>
 </tr>
@@ -1191,7 +1191,7 @@ Upgrade a bot by importing a new bot definition file or restoring a version
 <tr>
    <td><strong>IntentDiscovery</strong>
    <br>
-Manage Intent Discovery.
+Manage Intent Discovery
    </td>
    <td>Full Access</td>
 </tr>
@@ -1682,7 +1682,7 @@ Upgrade a bot by importing a new bot definition file or restoring a version
 <tr>
    <td><strong>IntentDiscovery</strong>
    <br>
-Manage Intent Discovery.
+Manage Intent Discovery
    </td>
    <td>No</td>
 </tr>
@@ -2173,7 +2173,7 @@ Upgrade a bot by importing a new bot definition file or restoring a version
 <tr>
    <td><strong>IntentDiscovery</strong>
    <br>
-Manage Intent Discovery.
+Manage Intent Discovery
    </td>
    <td>No</td>
 </tr>
@@ -2706,9 +2706,9 @@ Upgrade a bot by importing a new bot definition file or restoring a version
 No</td>
 </tr>
 <tr>
-   <td><strong>IntentDiscovery<strong>
+   <td><strong>IntentDiscovery</strong>
    <br>
-Manage Intent Discovery.
+Manage Intent Discovery
    </td>
    <td>Full Access
    <br>
