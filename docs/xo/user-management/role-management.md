@@ -37,7 +37,6 @@ The table below shows the permissions available within the XO Platform and their
 
 ### APP OWNER
 
-
    <table>
    <tr>
       <td colspan="2" ><strong>Automation</strong>
@@ -2500,11 +2499,13 @@ The table below shows the permissions available within the XO Platform and their
    </tr>
    <tr>
       <td><strong>Tasks</strong>  
-
+      
    Create and manage dialog, action, alert, information, and flow tasks.
       </td>
       <td>Full Access
+
    View
+   
    No</td>
    </tr>
    <tr>
@@ -2513,7 +2514,9 @@ The table below shows the permissions available within the XO Platform and their
    Manage natural language training data (utterances, patterns, synonyms etc.), configurations and thresholds.
       </td>
       <td>Full Access
+   
    View
+
    No</td>
    </tr>
    <tr>
@@ -2522,7 +2525,9 @@ The table below shows the permissions available within the XO Platform and their
    Manage knowledge collection and associated training (Questions, Alternate Questions, Synonyms, and Class)
       </td>
       <td>Full Access
+
    View
+   
    No</td>
    </tr>
    <tr>
