@@ -3,7 +3,7 @@ hide:
   - feedback
   - toc  
 ---
-# What's New in XO 11
+# What's New in XO11
 Learn about the new features and enhancements included in v11 of Kore.ai Experience Optimization Platform.
 
 ## All-new Experience Optimization Platform

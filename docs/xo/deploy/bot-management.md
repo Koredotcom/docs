@@ -41,7 +41,7 @@ To import a Virtual Assistant, follow these steps:
 4. On the Import & Export page select the **Import** tab.
 5. You can choose one of the below import options:
 
-    * Import by uploading **individual JSON file**s:
+    * Import by uploading **individual JSON files**:
         1. Choose the **JSON Files** radio button.
         2. Click the **Choose File** buttons next to the **Bot Definition File** field and **Bot Config File** field, and upload the _botDefinition.json_ and _config.json_ files respectively.
         3. Optionally, upload the custom script file from the imported assistant if any. The file size is limited to 500kb.

@@ -1,6 +1,6 @@
-# Users
+# Manage Users
 
-In XO Platform,the term User refers to the App Owner, App Developer, App Tester (customer support representatives), to supervisors, and administrators with an account within Contact Center AI. To serve customers, you must add users to Contact Center and provide them with the necessary access. You can create user profiles, assign them to voice, chat, or both channels, and specific skills or queues.
+In the XO Platform, the term User refers to the App Owner, App Developer, App Tester (customer support representatives), to supervisors, and administrators with an account within Contact Center AI. To serve customers, you must add users to Contact Center and provide them with the necessary access. You can create user profiles, assign them to voice, chat, or both channels, and specific skills or queues.
 
 You can find the _Users_ section on the left menu by going to **Manage** > **Users** > **Manage Users**.  
 <img src="../images/product-switcher.png" alt="Users Menu" title="Users Menu" style="border: 1px solid gray; zoom:100%;">
@@ -59,16 +59,16 @@ The Users section includes the features in the table below.
 You can add a user to Contact Center AI by following the steps below:
 
 1. Click **Invite Users**.  
-<img src="../images/invite-user-button.png" alt="Invite Users Button" title="Invite Users Button" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/invite-user-button.png" alt="Invite Users Button" title="Invite Users Button" style="border: 1px solid gray; zoom:100%;">
 
 2. The Invite User window displays. Here, you can configure the following:
-    1. Email: Enter the users email ID.
-    2. First Name: Enter the First Name.
-    3. Last Name: Enter the Last Name.
-    4. Role: Select whether the new users will be App Developer, App Tester, Agent, or Supervisor.
+    1. **Email**: Enter the users email ID.
+    2. **First Name**: Enter the First Name.
+    3. **Last Name**: Enter the Last Name.
+    4. **Role**: Select whether the new users will be App Developer, App Tester, Agent, or Supervisor.
        * Users with “Change User Role”  and permission selected as “Yes” will be able to modify the role of an existing user.
-       * Users with “Change User Role”  and permission selected as “No” will not be able to modify the role of an existing user. See [Role Management](https://docs.kore.ai/smartassist/agent/rolemanagement-overview/) for details.
-    5. Attributes: You can edit the user details or delete the users.
+       * Users with “Change User Role”  and permission selected as “No” will not be able to modify the role of an existing user. See [Role Management](./role-management.md#permissions) for details.
+    5. **Attributes**: You can edit the user details or delete the users.
 
 ## Attributes
 
@@ -183,10 +183,10 @@ To delete a user, follow these steps:
 
 !!! Notes
 
-   1. You cannot delete your own user.
-   2. You cannot delete the Contact Center AI app owner.
-   3. Reports, dashboards, and APIs will display deleted agents as long as interactions and metrics contain data associated with the deleted agents.
-   4. After deleting a user record, the respective user can no longer sign into Contact Center AI. If you want to temporarily restrict users from handling customer conversations, you can turn off their access to chat and voice channels, or add them to the [Unassigned group](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#pre-configured-groups).
+      1. You cannot delete your own user.
+      2. You cannot delete the Contact Center AI app owner.
+      3. Reports, dashboards, and APIs will display deleted agents as long as interactions and metrics contain data associated with the deleted agents.
+      4. After deleting a user record, the respective user can no longer sign into Contact Center AI. If you want to temporarily restrict users from handling customer conversations, you can turn off their access to chat and voice channels, or add them to the [Unassigned group](../contactcenter/agent-and-supervisors/agent-management/agent-management.md#pre-configured-groups).
 
 ## Add a Group
 
