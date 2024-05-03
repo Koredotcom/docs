@@ -155,7 +155,7 @@ nav:
         - Search AI: release-notes/11.x/search-ai.md
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
         - Agent AI: release-notes/11.x/agent-ai.md
-        - Platform Services: release-notes/11.x/common-modules.md
+        - Platform Services: release-notes/11.x/platform-services.md
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:
@@ -283,6 +283,7 @@ nav:
         - Chunk Browser: searchai/chunk-browser.md
         - Index Configuration: searchai/index-configuration.md
     - Configuration:
+        - Business Rules: searchai/business-rules.md
         - Answer Configuration: searchai/answer-configuration.md
         - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
   - Contact Center AI:

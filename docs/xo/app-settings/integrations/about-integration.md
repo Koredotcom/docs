@@ -1,8 +1,3 @@
----
-hide:
-  - toc
-  - feedback
----
 # About Integrations & APIs
 The Kore.ai XO Platform offers robust integration capabilities that allow you to seamlessly connect your virtual assistant with popular business applications, external NLU engines, and agent handoff systems. The platform provides pre-built integrations, low-code tools, and APIs that streamline the integration process. With these powerful features, you can exchange data, enable agent transfers, leverage external NLU models, and develop custom integrations using secure APIs and SDKs. This section covers all the integration options and APIs available within the Kore.ai XO Platform, empowering you to create highly interoperable and extensible virtual assistants tailored to your specific business needs.
 
