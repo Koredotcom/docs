@@ -14,4 +14,4 @@ XO11 currently has a few notable limitations, which are listed below. We’re wo
 ##### Related Links
 
 * [What's New in XO11](../getting-started/whats-new-in-xo-platform.md)
-* [Key Differences - XO11 vs. XO10](./key-differences-between-xo11-and-xo10.md)
+* [Key Differences - XO11 vs. XO10](../getting-started/key-differences-between-xo11-and-xo10.md)

@@ -88,3 +88,10 @@ The platform offers different plans, and you can choose the plan for each produc
 
 * Languages are now at the App level. Users can add a language globally and access it inside a specific module. For example, a New Agent language assignment is only done if it is added globally at the App level.
 * Dev tools offer all the developer-related menus, such as BotKit, API scopes, Auth profiles, etc., across the products.
+
+<hr>
+
+##### Related Links
+
+* [What's New in XO11](./whats-new-in-xo-platform.md)
+* [Current Limitations](../release-notes/current-limitations.md)

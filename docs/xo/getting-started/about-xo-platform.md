@@ -126,5 +126,6 @@ Various components and their interactions within the XO platform:
 
 ##### Related Links
 
+* [What's New in XO11](./whats-new-in-xo-platform.md)
 * [Key Differences - XO11 vs. XO10](./key-differences-between-xo11-and-xo10.md)
 * [Current Limitations](../release-notes/current-limitations.md)
