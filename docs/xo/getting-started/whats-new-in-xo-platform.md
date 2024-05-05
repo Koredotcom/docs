@@ -403,3 +403,10 @@ During the upgrade, the bot goes through an automated publishing process:
     * If errors are found, the upgrade is stopped, and the user is notified.
 2. Assuming no errors, the new XO11 features are added to the bot.
 3. Finally, the upgraded bot, now an XO11 app with the new capabilities, is published again.
+
+<hr>
+
+##### Related Links
+
+* [Key Differences - XO11 vs. XO10](./key-differences-between-xo11-and-xo10.md)
+* [Current Limitations](../release-notes/current-limitations.md)
