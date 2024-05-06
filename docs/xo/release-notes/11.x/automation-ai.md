@@ -10,7 +10,7 @@ Key features and enhancements included in this release are summarized below.
 
 ### Dialog Builder
 
-#### Enhancements in the Comments functionality
+#### Enhancement to the Comments Functionality
 
 The Comments feature now includes comment and thread actions, user mentions and notifications, timestamps, and filtering options. These enhancements make Comments a powerful tool for collaboration.
 
