@@ -13,6 +13,13 @@ Key differences Between XO11 and XO10 are summarized below.
 * A new guided onboarding journey helps you create your first app in record time. To start the journey, click **Create New** on the home page and follow the guided steps to create the app.  
 <img src="../images/xo-platform-homepage.png" alt="New unified XO Platform" title="New unified XO Platform" style="border: 1px solid gray; zoom:70%;">   
 
+* During the onboarding process, the OpenAI credentials provided by Kore.ai is used to enable access to AI features, such as app name suggestions, alternate question suggestions, generating agent use cases, etc.
+
+* A new "Setup guide" feature has been introduced to facilitate faster app building for platform users. It offers a guided, step-by-step process that provides a comprehensive overview of all features in XO. Once the setup guide is completed, it will be moved to the help section under the header for future reference.  
+<img src="../getting-started/images/xo-platform-setupguide.png" alt="Setup Guide" title="Setup Guide" style="border: 1px solid gray; zoom:70%;">   
+
+* Apps created using the Guided Onboarding journey will be automatically published with the WebSDK channel enabled. However, the apps created through the Custom Journey will not be published automatically.
+
 * The Product Switcher at the top of the left navigation lets you effortlessly switch between different products on the XO Platform.  
 <img src="../images/xo-platform-productswitcher.png" alt="Product Switcher" title="Product Switcher" style="border: 1px solid gray; zoom:70%;">
 
@@ -21,13 +28,21 @@ Key differences Between XO11 and XO10 are summarized below.
 
 ## Welcome Events Replaced with Welcome Flows
 
- Earlier, incoming conversations were handled by events such as OnConnect/Welcome events. These events are now replaced with Flows. Flows are designed to replace the Welcome or OnConnect Message, Trigger a Dialog Task, or Run a Script.  
+ * Earlier, incoming conversations were handled by events such as OnConnect/Welcome events. These events are now replaced with Flows. Flows are designed to replace the Welcome or OnConnect Message, Trigger a Dialog Task, or Run a Script.  
  <img src="../images/xo-platform-welcomeflow.png" alt="Welcome flow" title="Welcome flow" style="border: 1px solid gray; zoom:70%;">
+
+ * The dialog builder now has a new "Return to Flow" option. This option allows the conversation to return to the Flow after completing an Automation node and continue executing the next connected nodes in the Flow. This option is in addition to the existing "Not connected" and "End of dialog" options.  
+ <img src="../getting-started/images/return-to-flow.png" alt="Return to flow" title="Return to flow" style="border: 1px solid gray; zoom:70%;">
   
+ * The new flow builder supports JavaScript, Templates, and VXML (IVR channels).
+
 ## Dialog Builder Upgrade
 
 XO11 has an all-new super intuitive dialog builder.  
 <img src="../images/xo-platform-Dialogbuilder.png" alt="Dialog Builder" title="Dialog Builder" style="border: 1px solid gray; zoom:70%;">
+
+The "Train" button appears whenever changes are made to the Dialogs, FAQs, and Training page (including utterances, patterns, traits, etc.), and when adding sources in Search AI.  
+<img src="../getting-started/images/xo-platform-train.png" alt="Train" title="Train" style="border: 1px solid gray; zoom:70%;">
 
 ## Talk to Bot Moved to Header
 
@@ -52,7 +67,7 @@ All the LLM integrations can be managed in one place in an app and used across t
 
 ## Global User Management
 
-User Management is now applicable across the modules. You can set permissions, manage agent-related Permissions, Create a new Role, and Assign a role to a new or existing user. You can also assign a role to User groups (but the creation of User Groups is still in the Admin Console Page).  
+User Management is now applicable across the modules. You can set permissions, manage agent-related Permissions, Create a new Role, and Assign a role to a new or existing user. You can also assign a role to User groups (but the creation of User Groups is still on the Admin Console page).  
 <img src="../images/xo-platform-manageuser.png" alt="User Management" title="User Management" style="border: 1px solid gray; zoom:70%;">
 
 ## App Level Publishing and Version Management
@@ -88,6 +103,8 @@ The platform offers different plans, and you can choose the plan for each produc
 
 * Languages are now at the App level. Users can add a language globally and access it inside a specific module. For example, a New Agent language assignment is only done if it is added globally at the App level.
 * Dev tools offer all the developer-related menus, such as BotKit, API scopes, Auth profiles, etc., across the products.
+* Now you can customize the WebSDK to align with your brand identity, including options such as color schemes, fonts, logos, headers, homepage design, etc.
+* Standard account users won't have access to the Knowledge Graph feature but can still define FAQs by adding questions and answers. Enterprise account users will have access to the Knowledge Graph, allowing them to add tags, graphs, and other elements, similar to the functionality in XO10.
 
 <hr>
 
