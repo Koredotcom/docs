@@ -8,6 +8,12 @@ This document provides information on the feature updates and enhancements intro
 
 Key features and enhancements included in this release are summarized below.
 
+### Enhancements in the Comments functionality
+
+The Comments feature now includes comment and thread actions, user mentions and notifications, timestamps, and filtering options. These enhancements make Comments a powerful tool for collaboration.
+
+[Learn more :octicons-arrow-right-24:](../../../automation/use-cases/dialogs/using-the-dialog-builder-tool/#notes-comments-and-bookmarks)
+
 ### Digital Forms
 
 * Enable the "Off-the-Record Information" Flag for Digital Forms: On a digital form, when the field’s “Off the record” flag is enabled, the field data is cleared at the end of the user session and not stored in databases or logs.  
@@ -22,10 +28,4 @@ Platform users can now import apps by uploading a ZIP file containing the app's 
 [Learn more :octicons-arrow-right-24:](../../manage-assistant/bot-management.md#steps-in-importing-to-an-existing-assistant)
 
 The corresponding APIs have also been updated to support this change: Import New VA and Import Existing VA.
-
-### Enhancements in the Comments functionality
-
-The Comments feature now includes comment and thread actions, user mentions and notifications, timestamps, and filtering options. These enhancements make Comments a powerful tool for collaboration.
-
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool/#notes-comments-and-bookmarks)
 
