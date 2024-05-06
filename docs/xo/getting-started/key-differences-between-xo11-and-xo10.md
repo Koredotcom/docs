@@ -80,10 +80,18 @@ Also, the Marketplace offers pre-built dialogue templates for each integration. 
 
 ## New Billing Page
 
-The billing definition has been changed to accommodate the various price offerings we are providing in XO11. The Billing Session definition for Automation is 15 minutes of Interaction, and for Contact Center, it's 15 minutes of ideal time. The Platform offers various plans, and users can choose the plan for each product individually. Note that if users want to be Enterprise customers, then they have to choose enterprise plans for all the products.  
+Billing has been updated in XO11 to accommodate various price offerings. For Automation AI, the billing session is defined as 15 minutes of interaction. For Contact Center AI, billing is based on the number of agent seats. You can start with a trial plan for either Automation AI or Contact Center AI, then subscribe to additional products as needed.  
+The platform offers different plans, and you can choose the plan for each product individually. However, if you want Enterprise offerings, you must choose enterprise plans for all the products.  
 <img src="../images/xo-platform-billingpage.png" alt="Billing Page" title="Billing Page" style="border: 1px solid gray; zoom:70%;">
 
 ## Other Changes
 
 * Languages are now at the App level. Users can add a language globally and access it inside a specific module. For example, a New Agent language assignment is only done if it is added globally at the App level.
 * Dev tools offer all the developer-related menus, such as BotKit, API scopes, Auth profiles, etc., across the products.
+
+<hr>
+
+##### Related Links
+
+* [What's New in XO11](./whats-new-in-xo-platform.md)
+* [Current Limitations](../release-notes/current-limitations.md)

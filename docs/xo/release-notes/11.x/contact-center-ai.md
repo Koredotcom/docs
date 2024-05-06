@@ -28,8 +28,8 @@ A new permission for Outbound Email is added in the Agent & Supervisor Experienc
 * Supervisor – Yes
 * App Tester – No
 * Agent – No
-* Custom Role – No (Default)
-[Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions).
+* Custom Role – No (Default)  
+[Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
 
 ### Campaigns
 
