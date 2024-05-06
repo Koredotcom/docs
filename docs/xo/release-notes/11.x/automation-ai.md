@@ -22,3 +22,10 @@ Platform users can now import apps by uploading a ZIP file containing the app's 
 [Learn more :octicons-arrow-right-24:](../../manage-assistant/bot-management.md#steps-in-importing-to-an-existing-assistant)
 
 The corresponding APIs have also been updated to support this change: Import New VA and Import Existing VA.
+
+### Enhancements in the Comments functionality
+
+The Comments feature now includes comment and thread actions, user mentions and notifications, timestamps, and filtering options. These enhancements make Comments a powerful tool for collaboration.
+
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool/#notes-comments-and-bookmarks)
+
