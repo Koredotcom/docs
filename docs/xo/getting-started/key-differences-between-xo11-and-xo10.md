@@ -16,7 +16,7 @@ Key differences Between XO11 and XO10 are summarized below.
 * During the onboarding process, the OpenAI credentials provided by Kore.ai is used to enable access to AI features, such as app name suggestions, alternate question suggestions, generating agent use cases, etc.
 
 * A new "Setup guide" feature has been introduced to facilitate faster app building for platform users. It offers a guided, step-by-step process that provides a comprehensive overview of all features in XO. Once the setup guide is completed, it will be moved to the help section under the header for future reference.  
-<img src="../getting-started/images/xo-platform-setupguide.png" alt="Setup Guide" title="Setup Guide" style="border: 1px solid gray; zoom:70%;">   
+<img src="../images/xo-platform-setupguide.png" alt="Setup Guide" title="Setup Guide" style="border: 1px solid gray; zoom:70%;">   
 
 * Apps created using the Guided Onboarding journey will be automatically published with the WebSDK channel enabled. However, the apps created through the Custom Journey will not be published automatically.
 
@@ -32,7 +32,7 @@ Key differences Between XO11 and XO10 are summarized below.
  <img src="../images/xo-platform-welcomeflow.png" alt="Welcome flow" title="Welcome flow" style="border: 1px solid gray; zoom:70%;">
 
  * The dialog builder now has a new "Return to Flow" option. This option allows the conversation to return to the Flow after completing an Automation node and continue executing the next connected nodes in the Flow. This option is in addition to the existing "Not connected" and "End of dialog" options.  
- <img src="../getting-started/images/return-to-flow.png" alt="Return to flow" title="Return to flow" style="border: 1px solid gray; zoom:70%;">
+ <img src="../images/return-to-flow.png" alt="Return to flow" title="Return to flow" style="border: 1px solid gray; zoom:70%;">
   
  * The new flow builder supports JavaScript, Templates, and VXML (IVR channels).
 
@@ -42,7 +42,7 @@ XO11 has an all-new super intuitive dialog builder.
 <img src="../images/xo-platform-Dialogbuilder.png" alt="Dialog Builder" title="Dialog Builder" style="border: 1px solid gray; zoom:70%;">
 
 The "Train" button appears whenever changes are made to the Dialogs, FAQs, and Training page (including utterances, patterns, traits, etc.), and when adding sources in Search AI.  
-<img src="../getting-started/images/xo-platform-train.png" alt="Train" title="Train" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/xo-platform-train.png" alt="Train" title="Train" style="border: 1px solid gray; zoom:70%;">
 
 ## Talk to Bot Moved to Header
 
