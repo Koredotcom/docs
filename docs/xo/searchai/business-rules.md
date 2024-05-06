@@ -18,7 +18,7 @@ In the context of the Search AI application, when a user query is received, the 
 
 ## Defining Business Rules
 
-Search AI allows you to define **Contextual Rules**that use the context information available to the application to specify the conditions under which certain actions should be taken, like the user profile, geography, search history, etc. 
+Search AI allows you to define **Contextual Rules** that use the context information available to the application to specify the conditions under which certain actions should be taken, like the user profile, geography, search history, etc. 
 
 Search AI offers a dedicated interface for managing business rules, allowing users to organize, monitor, and adjust rules as needed. You can manage the rules from the **Business Rules** page under the **Configuration** tab. 
 

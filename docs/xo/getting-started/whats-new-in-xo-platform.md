@@ -3,7 +3,7 @@ hide:
   - feedback
   - toc  
 ---
-# What's New in XO 11
+# What's New in XO11
 Learn about the new features and enhancements included in v11 of Kore.ai Experience Optimization Platform.
 
 ## All-new Experience Optimization Platform
@@ -299,3 +299,114 @@ Key updates to products and features are summarized below. Click the correspondi
     [Learn more about Agent AI features :octicons-arrow-right-24:](../agentai/about-agent-ai.md)
 
 <hr>
+
+## Migration Path for Existing Customers - Upgrade Journey
+
+Users will see a banner on the current bots.kore.ai platform prompting them to try the new XO11 platform at platform.kore.ai, which is the new home for existing bots and creating XO11 apps with enhanced capabilities.
+Existing bots open in the old UI on platform.kore.ai and have the same functionality, such as creating dialogs, configurations, publishing, etc. Also, a banner appears inside the bot, allowing users to upgrade it to an XO11 app.
+
+The upgrade journey involves user consent, downloading a bot backup, a multi-step process to add new capabilities, and a success/failure output with a retry option if needed.
+Upgrades are currently not allowed for paid bots on standard accounts. Free trial bot periods are transferred to the new app with updated trial conditions.
+
+### Upgrade Journey Steps
+
+#### 1. Addition of Flows
+
+Flows act as entry points for conversations received through channel adapters. For each channel, a unique Welcome Flow is linked to define the user experience. Out of the box, there are predefined Welcome Chat Flow and Welcome Voice Flow options. Flows contain nodes like message nodes to greet users, script nodes to run JavaScript, IVR nodes for voice experience, and more.
+
+For bots being upgraded to XO11, existing On-connect and Welcome events (like Welcome Event, Facebook Welcome Event, etc.) will be retained. These will be present in the Start Flows (Welcome Chat Flow) as an option called "Use existing event configurations". Users can either honor the existing events or choose to execute the Welcome Chat/Voice Flow by turning off those events.
+
+#### 2. Dialog Builder Upgrade
+
+The Dialog Builder used to create Dialog Tasks will be upgraded to the latest version V3. Existing published Dialog Tasks will remain viewable in their original V2 or V1 versions. However, if users want to edit any of those existing Dialog Tasks, they will need to upgrade them to the new V3 Dialog Builder version before making changes.
+
+#### 3. Addition of Search AI
+
+For standard accounts, the Basic and Advanced RAG features of Search AI come bundled with the Automation AI module. For enterprise customers, a separate Enterprise Search AI plan purchase is required to access the Search AI product, which is not included by default.
+
+A new "Fallback configuration" is available in App Settings -> App Profile:
+
+* Set Automation AI as the first option, with Search AI as the fallback.
+* Set Search AI as the first option, with Automation AI as the fallback.
+
+Based on this configuration, NLP will route user utterances to either Automation AI or Search AI as the primary option, falling back to the other product if needed.
+
+#### 4. Addition of Contact Center AI
+
+While upgrading a bot to an XO11 app, default Contact Center AI components are automatically created behind the scenes: default queue, conditional flows, skill group, agent group, and hours of operation.
+For standard accounts, these defaults are accessible only if the Contact Center AI product is activated within that app. If not activated, users are prompted for a free trial when clicking  Contact Center AI from the product switcher.
+
+For enterprise accounts having a Contact Center AI license, the product and defaults will automatically be available in all apps.
+
+#### 5. Addition of Campaigns Module
+
+The Campaigns Module is unavailable immediately after the bot-to-app upgrade. For Standard accounts, users can activate Proactive Web Campaigns by purchasing a paid Contact Center AI subscription. For Enterprise accounts,  the Campaigns Module is automatically enabled once they subscribe to the Contact Center AI product.
+
+#### 6. Addition of Agent AI
+
+Agent AI is not available by default for standard accounts. Users must first have an Automation AI subscription, and then Agent AI can be added as a paid add-on. Users who are interested in only Agent AI without Automation AI must contact the sales team to initiate the process.
+
+During the bot-to-app upgrade, the following default Agent AI components are created but kept inactive until the product is activated:
+
+* Default playbooks
+* Default agent coaching
+* Agent Assist channel
+
+#### 7. User Role Management Module
+
+When upgrading a bot to an XO11 app, there are several changes to user roles and permission - updated role names aligned to "App", consolidation of permissions, the addition of new system roles like Agent/Supervisor, and the ability for App Owners to create new account roles.
+
+System Roles:
+
+* Master Admin remains the same
+* Bot Owner becomes App Owner (role type "App")
+* Bot Developer becomes App Developer (role type "App") 
+* Bot Tester becomes App Tester (role type "App")
+* New roles added: Agent (role type "App"), Supervisor (role type "App")
+* Custom roles remain unchanged
+
+Bot Admin Console (BAC) Changes:
+
+* The "Bot" role type is renamed to "App"
+* All permissions across products consolidated into one list
+* Existing role permissions remain, with additional permissions for other products in the same app
+* Users can enable these new cross-product permissions for roles
+
+App Owner Roles:
+
+* New option for admins to allow App Owners to create new account-level roles from the XO11 app
+
+#### 8. Pricing and Billing Management
+
+All accounts start as Standard, with billing managed at the app level. Users can activate and pay for specific products per app based on their chosen plan.
+
+Enterprise accounts are upgraded from Standard by Kore.ai based on signed agreements. Billing is then handled at the account level, with access provided to the signed products and custom limits.
+
+When upgrading bots to XO11 apps:
+
+* Standard accounts retain their existing XO10 trial period, provisions (2000 sessions, 2000 voice minutes, 10,000 Search requests), and pay per app.
+* Enterprise accounts continue accessing their pre-purchased products and custom limits.
+
+#### 9. Addition of Marketplace
+
+With the upgrade to XO11, users will gain access to a new Marketplace. Here, they can install Dialog Templates and Actions, enable pre-built integrations, and browse various categories for available templates.
+
+#### 10. Addition of Setup Guide
+
+After upgrading to the XO11 platform, a new "Setup Guide" option will be available. This feature provides a step-by-step guide to help new users quickly set up their Virtual Assistant.
+
+#### 11. Implicit Publishing of the App
+
+During the upgrade, the bot goes through an automated publishing process:
+
+1. The current in-development version is published to check for errors.
+    * If errors are found, the upgrade is stopped, and the user is notified.
+2. Assuming no errors, the new XO11 features are added to the bot.
+3. Finally, the upgraded bot, now an XO11 app with the new capabilities, is published again.
+
+<hr>
+
+##### Related Links
+
+* [Key Differences - XO11 vs. XO10](./key-differences-between-xo11-and-xo10.md)
+* [Current Limitations](../release-notes/current-limitations.md)

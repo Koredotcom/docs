@@ -112,7 +112,7 @@ copyright: |
 nav:
   - Home : home.md
   - Platform:
-    - Overview: getting-started/xo-platform-overview.md    
+    - Overview: getting-started/about-xo-platform.md    
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md   
       - Navigating the Platform: getting-started/navigating-the-platform.md       
@@ -137,8 +137,7 @@ nav:
             - Set Queue: flows/node-types/set-queue.md
             - Split: flows/node-types/split.md
         - Channels:
-          - Digital:
-            - Enable Channels: channels/adding-channels-to-your-bot.md
+          - Digital: channels/adding-channels-to-your-bot.md
           - Voice:
             - Kore.ai Voice Gateway: channels/kore.ai-voice-gateway/kore-voice-gateway.md
             - Third-Party Voice:
@@ -151,12 +150,13 @@ nav:
     - Release Notes:
       - What's New in XO11: getting-started/whats-new-in-xo-platform.md  
       - XO11 vs. XO10: getting-started/key-differences-between-xo11-and-xo10.md
+      - Current Limitations: release-notes/current-limitations.md
       - XO11.x Updates:
-        - Common Modules: release-notes/11.1.x/common-modules.md
-        - Automation AI: release-notes/11.1.x/automation-ai.md
-        - Search AI: release-notes/11.1.x/search-ai.md
-        - Contact Center AI: release-notes/11.1.x/contact-center-ai.md
-        - Agent AI: release-notes/11.1.x/agent-ai.md
+        - Automation AI: release-notes/11.x/automation-ai.md
+        - Search AI: release-notes/11.x/search-ai.md
+        - Contact Center AI: release-notes/11.x/contact-center-ai.md
+        - Agent AI: release-notes/11.x/agent-ai.md
+        - Platform Services: release-notes/11.x/platform-services.md
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:
@@ -260,22 +260,7 @@ nav:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
         - Team Collaboration: manage-assistant/collaborative-development.md
-        - Authorization: manage-assistant/bot-authorization-overview.md
-        - Conversation Sessions: manage-assistant/conversation-sessions.md
-        - Multilingual Virtual Assistants:
-          - Get Started: manage-assistant/multilingual-virtual-assistants/get-started.md
-          - Supported Components & Features: manage-assistant/multilingual-virtual-assistants/supported-components-and-feature.md
-          - Manage Languages: manage-assistant/multilingual-virtual-assistants/managing-languages.md
-          - Manage Translation Services: manage-assistant/multilingual-virtual-assistants/managing-translation-services.md
-          - Multilingual Virtual Assistant Behavior: manage-assistant/multilingual-virtual-assistants/multilingual-virtual-assistant-behavior.md
-        - Feedback Survey: manage-assistant/feedbacksurvey.md
-        - Masking PII Details: manage-assistant/redacting-personally-identifiable-information.md
-        - Variables: manage-assistant/using-bot-variables.md
-        - Collections: manage-assistant/collections.md
-        - IVR Settings: manage-assistant/ivr-integration.md
-        - General Settings: manage-assistant/general-settings.md
-        - Bot Management: manage-assistant/bot-management.md
-        - Manage Namespace: manage-assistant/managing-namespace.md               
+        - Feedback Survey: manage-assistant/feedbacksurvey.md             
   - Search AI:
     - Overview: searchai/about-search-ai.md
     - Getting Started:
@@ -299,6 +284,7 @@ nav:
         - Chunk Browser: searchai/chunk-browser.md
         - Index Configuration: searchai/index-configuration.md
     - Configuration:
+        - Business Rules: searchai/business-rules.md
         - Answer Configuration: searchai/answer-configuration.md
         - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
   - Contact Center AI:
@@ -349,7 +335,7 @@ nav:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
       - Bot Override and Automation: agentai/agent-experience/agent-assist-widget-v3.md       
   - Integrations & APIs:
-    - Overview: app-settings/integrations/actions/actions.md   
+    - Overview: app-settings/integrations/about-integration.md
     - Integrations:
       - Actions:
         - Actions Overview: app-settings/integrations/actions/actions.md
@@ -480,10 +466,13 @@ nav:
         - Introduction: analytics/contact-center/reports/introduction-to-reports.md
         - Reports List: analytics/contact-center/reports/reports-list.md
   - Administration:
+    - Users:
+      - Manage Users: user-management/manage-users.md
+      - Manage Role and Permissions: user-management/role-management.md
     - Deployment:
       - App Versioning: deploy/bot-versioning.md
       - Publishing your App: deploy/publishing-bot.md
-      - Import & Export App: manage-assistant/bot-management.md      
+      - Import & Export App: deploy/bot-management.md      
     - App Settings:
       - App Profile: app-settings/app-profile.md
       - Language Management:
@@ -507,9 +496,8 @@ nav:
         - Web/Mobile SDK: app-settings/dev-tools/kore-ai-web-sdk-tutorial.md
         - API Scopes: apis/automation/api-introduction.md
         - Mock Scenes: app-settings/mock-scenes.md
-      - Variables:
-        - Using Bot Variables: app-settings/variables/using-bot-variables.md
-        - Collections: app-settings/variables/collections.md
+      - Using Bot Variables: app-settings/variables/using-bot-variables.md
+      - Managing Namespaces: app-settings/managing-namespace.md
       - Advanced Settings:
         - PII Settings: app-settings/advanced-settings/pii-data-masking.md
         - Manage Sessions: app-settings/advanced-settings/bot-sessions.md
@@ -535,7 +523,4 @@ nav:
         - Security Settings: administration/security-and-control/security-settings.md
       - Cloud Connector: administration/kore-ai-connector.md
       - Analytics for Bots Admin: administration/analytics.md
-      - Billing: administration/billing.md    
-  - Users:
-    - Manage Users: user-management/manage-users.md
-    - Role Management: user-management/role-management.md
+      - Billing: administration/billing.md

@@ -42,7 +42,7 @@ Steps to attach a flow to the phone number:
 1. Click **+ Attach Flow**. Hovering over the pie icon displays "**No Flow Attached**".
 <img src="../images/attach-flow.png" alt="Attach Flow" title="Attach Flow" style="border: 1px solid gray; zoom:100%;">
 
-2. Select a **Start Flow** you want to add to this number and click **Done**. You can add a start flow by clicking **+ New Start Flow**. [Learn more](../../flows/create-flows.md#create-a-start-flow).
+2. Select a **Start Flow** you want to add to this number and click **Done**. You can add a start flow by clicking **+ New Start Flow**. [Learn more](../../flows/create-flows.md#create-a-start-flow).  
 <img src="../images/add-start-flow.png" alt="Add Start Flow" title="Add Start Flow" style="border: 1px solid gray; zoom:100%;">
 
 3. The attached flow appears. Hovering over the pie icon displays "**Configured**".
@@ -71,7 +71,7 @@ Steps to delete an existing phone number:
 <img src="../images/delete-phone-number.png" alt="Delete Phone Number" title="Delete Phone Number" style="border: 1px solid gray; zoom:100%;">
 
 2. The following pop-up is displayed. Click **Delete** to confirm your choice.
-<img src="../delete-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:100%;">
+<img src="../images/delete-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:100%;">
 
 3. Alternatively, click **Update**, go to the **Forward to Phone Number** window, and click **Remove**. You will need to confirm your choice.
 <img src="../images/remove-phone-number.png" alt="Remove Phone Number" title="Remove Phone Number" style="border: 1px solid gray; zoom:100%;">
