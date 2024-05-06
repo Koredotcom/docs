@@ -491,12 +491,12 @@ nav:
         - PII and Sensitive Data: app-settings/generative-ai-tools/pii-and-sensitive-data.md
         - Guardrails: app-settings/generative-ai-tools/guardrails.md       
       - Dev Tools:
-        - Bot Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
+        - App Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
         - Authorization Profiles: app-settings/dev-tools/bot-authorization/bot-authentication.md
         - Web/Mobile SDK: app-settings/dev-tools/kore-ai-web-sdk-tutorial.md
         - API Scopes: apis/automation/api-introduction.md
         - Mock Scenes: app-settings/mock-scenes.md
-      - Using Bot Variables: app-settings/variables/using-bot-variables.md
+      - Using Variables: app-settings/variables/using-bot-variables.md
       - Managing Namespaces: app-settings/managing-namespace.md
       - Advanced Settings:
         - PII Settings: app-settings/advanced-settings/pii-data-masking.md
