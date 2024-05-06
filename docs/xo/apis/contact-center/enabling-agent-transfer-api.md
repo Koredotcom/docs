@@ -2,14 +2,40 @@
 
 This API is used to configure the Botkit Url, App, and events.
 
-!!! Note
+<table>
+  <tr>
+   <td>Method
+   </td>
+   <td>PUT
+   </td>
+  </tr>
+  <tr>
+   <td>Endpoints
+   </td>
+   <td><code>https://{{host}}/api/public/bot/{{BotID}}/sdkSubscription</code>
+   </td>
+  </tr>
+  <tr>
+   <td>Content Type
+   </td>
+   <td><code>application/json</code>
+   </td>
+  </tr>
+  <tr>
+   <td>Authorization
+   </td>
+   <td><code>auth: {{JWT}}</code><br>
+See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
+   </td>
+  </tr>
+  <tr>
+   <td>API Scope
+   </td>
+   <td>BotKit
+   </td>
+  </tr>
+</table>
 
-    To use this API, app needs the XO Platform API scope of BotKit.
-
-
-## Syntax
-
-**PUT `https://{{host}}/api/public/bot/{{BotID}}/sdkSubscription`**
 
 
 ## Query Parameters
@@ -79,23 +105,6 @@ This API is used to configure the Botkit Url, App, and events.
   </tr>
 </table>
 
-
-
-## Authorization
-
-Invoke the API with JWT in the header with the following syntax:
-
-```
-auth: {{JWT}}
-```
-
-
-
-## Response Content Type
-
-```
-application/json
-```
 
 
 ## Sample Request
