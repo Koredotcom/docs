@@ -11,6 +11,7 @@ Several APIs are available from the SmartAssist Platform. Based on the functiona
 * [Import/Export Data APIs](#importexport-data-apis)
 * [Call Recording API](#call-recording-api)
 * [Outbound Calling API](#outbound-calling-api)
+* [Transfer Conversation to a Specific Agent API](#transfer-conversation-to-a-specific-agent-api)
 * [Queue Management APIs](#queue-management-apis)
 
 ### Analytics and Reporting APIs
