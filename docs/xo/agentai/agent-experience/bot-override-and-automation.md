@@ -23,8 +23,11 @@ To provide a better experience to the customer, you can intervene and correct th
 The Terminate Automation option allows you to stop ongoing automation anytime.
 
 There can be multiple reasons to terminate:
+
 * Accidental automation clicks.
+
 * Unexpected behavior.
+
 * Customer doesn’t want to proceed with the intent anymore. 
 
 **Steps for terminating an automation**:
@@ -54,7 +57,9 @@ The Search function allows you to search for FAQs/automations directly from the 
 ## Run Automation with Agent Inputs
 
 There are two ways to perform automations:
-* Customer Inputs  
+
+* Customer Inputs
+
 * Agent Inputs (Bot override)
 
 Automation with the customer inputs feature introduces the capability where agents give the inputs to the bot allowing the agents to have control over the entire automation process. The agents can run this automation in parallel and provide the customer with the final results.
@@ -69,7 +74,9 @@ The **Run with agent inputs** feature allows an agent to run automation independ
 
 ## Library of Automation
 The library has two sections:
+
 * Frequently-used automation
+
 * All the automations
 
 With time, you will become familiar with the types of queries users ask. You can run automations directly from the Library section.
