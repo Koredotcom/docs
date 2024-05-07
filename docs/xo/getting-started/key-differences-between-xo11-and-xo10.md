@@ -3,8 +3,8 @@ hide:
   - feedback
   - toc  
 ---
-# Key Differences Between XO11 and XO10
-Key differences Between XO11 and XO10 are summarized below.
+# Key Differences Between XO v11 and v10
+Key differences Between XO v11 and v10 are summarized below.
 
 ## Key Navigation Changes
 
@@ -38,7 +38,7 @@ Key differences Between XO11 and XO10 are summarized below.
 
 ## Dialog Builder Upgrade
 
-XO11 has an all-new super intuitive dialog builder.  
+XO v11 has an all-new super intuitive dialog builder.  
 <img src="../images/xo-platform-Dialogbuilder.png" alt="Dialog Builder" title="Dialog Builder" style="border: 1px solid gray; zoom:70%;">
 
 The "Train" button appears whenever changes are made to the Dialogs, FAQs, and Training page (including utterances, patterns, traits, etc.), and when adding sources in Search AI.  
@@ -95,7 +95,7 @@ Also, the Marketplace offers pre-built dialogue templates for each integration. 
 
 ## New Billing Page
 
-Billing has been updated in XO11 to accommodate various price offerings. For Automation AI, the billing session is defined as 15 minutes of interaction. For Contact Center AI, billing is based on the number of agent seats. You can start with a trial plan for either Automation AI or Contact Center AI, then subscribe to additional products as needed.  
+Billing has been updated in v11 to accommodate various price offerings. For Automation AI, the billing session is defined as 15 minutes of interaction. For Contact Center AI, billing is based on the number of agent seats. You can start with a trial plan for either Automation AI or Contact Center AI, then subscribe to additional products as needed.  
 The platform offers different plans, and you can choose the plan for each product individually. However, if you want Enterprise offerings, you must choose enterprise plans for all the products.  
 <img src="../images/xo-platform-billingpage.png" alt="Billing Page" title="Billing Page" style="border: 1px solid gray; zoom:70%;">
 
@@ -110,5 +110,5 @@ The platform offers different plans, and you can choose the plan for each produc
 
 ##### Related Links
 
-* [What's New in XO11](./whats-new-in-xo-platform.md)
+* [What's New in XO v11](./whats-new-in-xo-platform.md)
 * [Current Limitations](../release-notes/current-limitations.md)
