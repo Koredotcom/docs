@@ -8,9 +8,12 @@ During the execution of automation, there might be an occurrence where the bot d
 If the error occurs multiple times, the agent (being aware of the input format) can intervene to correct the input.
 
 **Steps to override Bot inputs**:
+
 1. Below the automation step, click **Override Input**.
 <img src="../bot-override-and-automation-images/override-input-1.png" alt="override-input" title="override-input" style="border: 1px solid gray; zoom:80%;">
-2. Enter the required value in the **Enter Value input** box.\
+
+2. Enter the required value in the **Enter Value input** box.
+
 <img src="../bot-override-and-automation-images/enter-value-2.png" alt="enter-value" title="enter-value" style="border: 1px solid gray; zoom:80%;">
 
 The path is corrected, and the control gets back to the user.
@@ -35,7 +38,7 @@ A single agent may serve multiple customers at a given time, and it requires swi
 
 The bot continuously assesses the customer’s sentiment based on their messages and lets you know it in real-time.
 
-The customer sentiment is placed at the bottom of the automation.\
+The customer sentiment is placed at the bottom of the automation.
 <img src="../bot-override-and-automation-images/cus-sentiment-4.png" alt="cus-sentiment" title="cus-sentiment" style="border: 1px solid gray; zoom:80%;">
 
 ## Search or Ask AgentAssist
@@ -44,7 +47,7 @@ The Search function allows you to search for FAQs/automations directly from the 
 
 **Steps for searching/asking Agent AI**:
 1. In the **Ask AgentAssist** search bar, type the question you want to ask the bot.
-2. Press the **Enter** key on the keyboard. Agent AI shows related search results. You can use the search results to respond to the customer.\
+2. Press the **Enter** key on the keyboard. Agent AI shows related search results. You can use the search results to respond to the customer.
 <img src="../bot-override-and-automation-images/ask-agent-assist-5.png" alt="ask-agent-assist" title="ask-agent-assist" style="border: 1px solid gray; zoom:80%;">
 
 ## Run Automation with Agent Inputs
@@ -59,6 +62,7 @@ Automation with the customer inputs feature introduces the capability where agen
 * Click **Run with agent inputs**. The automation starts on the **My Bot** tab. Automation is a parallel session dedicated to the agent, and it won’t impact customer interaction.
 
 The **Run with agent inputs** feature allows an agent to run automation independently and helps agents retrieve information directly and give the final result to the customer, thereby decreasing the AHT drastically.
+
 <img src="../bot-override-and-automation-images/run-with-agent-input-6.png" alt="run-with-agent-input" title="run-with-agent-input" style="border: 1px solid gray; zoom:80%;">
 
 ## Library of Automation
@@ -69,8 +73,11 @@ The library has two sections:
 With time, you will become familiar with the types of queries users ask. You can run automations directly from the Library section.
 
 **Steps to access the Library tab**:
+
 1. On the **Library** tab (represented by the **Folder** icon), click **RUN** to initiate automation.
-2. Click the **ellipses (…)**, and a screen tip displays the message **Run with Agent inputs**.\
+2. Click the **ellipses (…)**, and a screen tip displays the message **Run with Agent inputs**.
+
 <img src="../bot-override-and-automation-images/run-with-agentinputs-7.png" alt="run-with-agent-input" title="run-with-agent-input" style="border: 1px solid gray; zoom:80%;">
-3. In the **My Bot** tab, enter the input in the **Enter Value** box.\
+3. In the **My Bot** tab, enter the input in the **Enter Value** box.
+
 <img src="../bot-override-and-automation-images/my-bot-tab-value-8.png" alt="my-bot-tab-value" title="my-bot-tab-value" style="border: 1px solid gray; zoom:80%;">
