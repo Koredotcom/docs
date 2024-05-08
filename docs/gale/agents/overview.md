@@ -12,7 +12,7 @@ GALE's agent builder allows you to create AI-powered workflows and automations u
 
 <kr-grid type="g2">
     <kr-grid-item>
-        <img src="../images/dataflow.svg" style="zoom:200%;"></img>
+        <img src="../images/dataflow.svg" style="zoom:150%;"></img>
         <kr-grid-title>Agent Flow</kr-grid-title>
         <kr-grid-desc>A visual no-code/low-code builder for creating and managing agent flows and versions. It uses nodes and transitions to help you automate end-to-end tasks without writing complex code.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](./create-a-new-agent.md)
