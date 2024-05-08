@@ -1017,7 +1017,7 @@ This message indicates using free credits. You can further explore the Platform 
 		
 !!! note
 
-      The attribution to Kore.ai does not apply to Enterprise and standard accounts with paid credits.
+      If you're using a standard account with free credit, all your bots will display attribution to Kore.ai or Watermark (Powered by Kore.ai). To remove it, add paid credit to your bot or upgrade to an enterprise account.
 
 	
 
