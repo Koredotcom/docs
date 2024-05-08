@@ -6,9 +6,7 @@ hide:
 
 # About Agents
 
-Agents can automate processes, streamline workflows, generate insights, and create outputs like deal summaries or emails. Integrating these applications into existing systems maximizes their benefits, saving time, reducing errors, and allowing employees to focus on strategic tasks. 
-
-GALE's agent builder allows you to create AI-powered workflows and automations using a visual drag-and-drop interface with little to no coding required. You can easily configure settings, combine multiple workflows, and integrate with systems like AWS.
+Agents can automate processes, streamline workflows, generate insights, and create outputs like deal summaries or emails. Integrating these applications into existing systems maximizes their benefits, saving time, reducing errors, and allowing employees to focus on strategic tasks. GALE's agent builder empowers you to create AI-powered workflows and automations using a visual drag-and-drop interface with little to no coding required. You can easily configure settings, combine multiple workflows, and integrate with systems like AWS.
 
 <kr-grid type="g2">
     <kr-grid-item>
