@@ -89,6 +89,9 @@ kr-grid[type="g2"] {
     grid-template-columns: repeat(auto-fit,minmax(12rem,1fr));
     margin: 1em 0;
 }
+kr-grid[type="g2"] br{
+    display: none;
+}
 kr-grid[type="g2"] kr-grid-item{
     padding: 10px;
     border: 2px solid transparent;
