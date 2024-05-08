@@ -1,6 +1,8 @@
+---
 hide:
   - feedback
   - toc  
+---
 
 # About Agents
 
