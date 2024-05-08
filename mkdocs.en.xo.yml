@@ -333,7 +333,7 @@ nav:
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
-      - Bot Override and Automation: agentai/agent-experience/agent-assist-widget-v3.md       
+      - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
   - Integrations & APIs:
     - Overview: app-settings/integrations/about-integration.md
     - Integrations:
