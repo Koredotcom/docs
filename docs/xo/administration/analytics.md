@@ -568,7 +568,7 @@ Click on any chat history to see these options. Following are the user informati
   <tr>
    <td>Last 30 Days Goal Completion Rate
    </td>
-   <td>(Tasks success tasks / (Total success tasks + total failed tasks) ) * 100 for the tasks over the last 30 days.
+   <td>(Total success tasks / (Total success tasks + total failed tasks) ) * 100 for the tasks over the last 30 days.
    </td>
   </tr>
   <tr>
