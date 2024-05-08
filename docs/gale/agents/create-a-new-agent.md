@@ -4,8 +4,6 @@ You can develop fresh agents tailored to your specific needs, integrate it as a 
 
 **To create a new agent, follow these steps**:
 
-1.  On the **Agents** page, click **Create new agent**. The **New agent** dialog is displayed.
-
-    <img src="../images/create-a-new-agent.png" alt="Create a New Agent" title="Create a New Agent" style="border: 1px solid gray; zoom:60%;">
-
-1. Enter an **Agent name** and **Description** for the new agent and click **Create**. Your new agent is ready, and you can now start developing and managing your agent flows and their versions.
+1. On the **Agents** page, click **Create new agent**. The **New agent** dialog is displayed.  
+<img src="../images/create-a-new-agent.png" alt="Create a New Agent" title="Create a New Agent" style="border: 1px solid gray; zoom:60%;">
+2. Enter an **Agent name** and **Description** for the new agent and click **Create**. Your new agent is ready, and you can now start developing and managing your agent flows and their versions.
