@@ -32,10 +32,11 @@ A Bot is now replaced with an App. Each App can have four products, with common 
 
 ## Welcome Events Replaced with Welcome Flows
 
- * Earlier, incoming conversations were handled by events such as OnConnect/Welcome events. These events are now replaced with Flows. Flows are designed to replace the Welcome or OnConnect Message, Trigger a Dialog Task, or Run a Script. In XO11, Flows are the ones that receive the conversation. We can define the user experience using Start Flows. By creating and linking a Start flow to a channel users will experience what you have defined in the flow.Also, the Experience Flows are now split into 3 variants:
-  * Start Flows
-  * Exit Flows
-  * Conditional Flows
+ * Earlier, incoming conversations were handled by events such as OnConnect/Welcome events. These events are now replaced with Flows. Flows are designed to replace the Welcome or OnConnect Message, Trigger a Dialog Task, or Run a Script. In XO11, Flows are the ones that receive the conversation. We can define the user experience using Start Flows. By creating and linking a Start flow to a channel users will experience what you have defined in the flow.  
+ Also, the Experience Flows are now split into 3 variants:
+    * Start Flows
+    * Exit Flows
+    * Conditional Flows
 
  <img src="../images/xo-platform-welcomeflow.png" alt="Welcome flow" title="Welcome flow" style="border: 1px solid gray; zoom:70%;">
 
