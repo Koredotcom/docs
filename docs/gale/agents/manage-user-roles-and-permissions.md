@@ -1,6 +1,6 @@
 # Manage User Roles and Permissions
 
-Account owners can invite users to collaborate on specific Agents. Invited users can access the Models and Data modules for the invited account but can only see the Agents they are invited to. Also, the Playground experiments are visible only to the user who created them.
+Account owners can invite users to collaborate on specific Agents. Invited users can access the Models and Data modules for the invited account but can only see the Agents they are invited to.
 
 !!! note
 
