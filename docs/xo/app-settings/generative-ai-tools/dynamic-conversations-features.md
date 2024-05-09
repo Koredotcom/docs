@@ -263,6 +263,15 @@ The following table displays the Dynamic Conversation features and the supported
 
 ## Feature Details
 
+### Agent Response Rephrasing
+Agents will be able to choose the LLM to rephrase their responses in the following tones.
+
+* **Formalize**: Allows agents to elevate the formality of their writing, making it suitable for business or any other formal contexts.
+* **Friendly**: Offers suggestions and improvements to promote a friendly and approachable tone in text.
+* **Expand**: Allows agents to elevate the formality of their writing, making it suitable for business or any other formal contexts.
+* **Rephrase**: Allows agents to elevate the formality of their writing, making it suitable for business or any other formal contexts.
+
+
 ### Answer Generation
 
 This feature helps generate an answer to the user question based on the data ingested into the Search AI application. The relevant data with a user query is inserted into the prompt, and the configured LLM responds with the answer. This answer is then formatted appropriately and presented to the user. [Learn more](../../searchai/answer-configuration.md#answers-generation).
