@@ -163,7 +163,7 @@ nav:
         - About Virtual Assistant: getting-started/virtual-assistants-overview.md
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
     - Use Cases: 
-      - Dialogs Tasks:
+      - Dialog Tasks:
         - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
         - Navigating Dialog Tasks: automation/use-cases/dialogs/navigating-dialog-tasks.md
         - Build Dialog Tasks: automation/use-cases/dialogs/using-the-dialog-builder-tool.md
@@ -333,7 +333,7 @@ nav:
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
-      - Bot Override and Automation: agentai/agent-experience/agent-assist-widget-v3.md       
+      - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
   - Integrations & APIs:
     - Overview: app-settings/integrations/about-integration.md
     - Integrations:
