@@ -94,12 +94,13 @@ kr-grid[type="g2"] br{
 }
 kr-grid[type="g2"] kr-grid-item{
     padding: 10px;
-    border: 2px solid transparent;
-    transition: border .25s;
-    border-radius: 5px;        
+    border: 1px solid var(--gray-200, #EAECF0);
+    border-radius: var(--radius-md, 8px);        
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);
+    cursor: pointer;
 }
 kr-grid[type="g2"] kr-grid-item:hover{
-    border: 2px solid #eee;
+    background: #e9f2ff47;
 }
 kr-grid[type="g2"] kr-grid-item img{
     width: 100%;
@@ -116,7 +117,8 @@ kr-grid[type="g2"] kr-grid-title{
     font-weight: 600;
     margin: 15px 0px 0px 0px;
     color: var(--md-default-fg-color--light);
-    font-size: 18px;        
+    text-align: center;
+    font-size: 16px;        
 }
 kr-grid[type="g2"] kr-grid-desc{
     display: block;
