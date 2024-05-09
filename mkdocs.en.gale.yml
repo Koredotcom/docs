@@ -114,7 +114,7 @@ nav:
     - Welcome to GALE (Beta): getting-started/introduction.md    
   - Agents: 
     - About Agents: agents/overview.md
-    - Create a New Agent: agents/create-a-new-agent.md
+    - Create an Agent: agents/create-a-new-agent.md
     - Agent Flows:
       - About Flows: agents/agents-flows/flows-overview.md
       - Manage Flow Nodes: agents/agents-flows/manage-flow-nodes.md
@@ -125,19 +125,23 @@ nav:
         - Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node.md
         - Function Node: agents/agents-flows/types-of-nodes/function-node.md
         - End Node: agents/agents-flows/types-of-nodes/end-node.md
-      - Perform other Actions on the Flow Builder:
+      - Other Actions in the Flow Builder:
         - Manage Input and Output: agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
         - Run the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
-        - Create a New Version of the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
-    - Manage User Roles and Permissions:  agents/manage-user-roles-and-permissions.md
-    - Deploy an Agent: agents/deploy-an-agent.md
-    - Create a New API Key: agents/create-a-new-api-key.md 
+        - Create a Version of the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
+    - Sharing & Permissions: 
+      - Manage User Roles and Permissions:  agents/manage-user-roles-and-permissions.md
+    - Agent Endpoint: 
+      - Deploy an Agent: agents/deploy-an-agent.md
+    - API Keys: 
+      - Create an API Key: agents/create-a-new-api-key.md 
     - Guardrails: 
       - About Guardrails: agents/guardrails/overview.md
-      - Add a  Scanner: agents/guardrails/add-a-scanner.md
+      - Add a Scanner: agents/guardrails/add-a-scanner.md
       - Test Guardrail: agents/guardrails/test-guardrail.md
       - Manage Guardrails: agents/guardrails/manage-guardrails.md
-    - Configure an Agent: agents/configure-an-agent.md
+    - Configurations:
+      - Configure an Agent: agents/configure-an-agent.md
   - Models: 
     - About Models: models/overview.md 
     - Fine-Tune Models: 
