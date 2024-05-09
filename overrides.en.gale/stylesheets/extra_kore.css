@@ -103,7 +103,7 @@ kr-grid[type="g2"] kr-grid-item:hover{
 kr-grid[type="g2"] kr-grid-item img{
     width: 100%;
     border-radius: 2px 2px 0px 0px;
-    height: 15px;
+    height: 20px;
     align-items: center;
     object-fit: none;
 }
