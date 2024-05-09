@@ -32,7 +32,7 @@ A Bot is now replaced with an App. Each App can have four products, with common 
 
 ## Welcome Events Replaced with Welcome Flows
 
- * Earlier, incoming conversations were handled by events such as OnConnect/Welcome events. These events are now replaced with Flows. Flows are designed to replace the Welcome or OnConnect Message, Trigger a Dialog Task, or Run a Script. In XO11, Flows are the ones that receive the conversation. We can define the user experience using Start Flows. By creating and linking a Start flow to a channel users will experience what you have defined in the flow.  
+ * Earlier, incoming conversations were handled by events such as OnConnect/Welcome events. These events are now replaced with Flows. Flows are designed to replace the Welcome or OnConnect Message, Trigger a Dialog Task, or Run a Script. In XO v11, Flows are the ones that receive the conversation. We can define the user experience using Start Flows. By creating and linking a Start flow to a channel users will experience what you have defined in the flow.  
  Also, the Experience Flows are now split into 3 variants:
     * Start Flows
     * Exit Flows
@@ -130,7 +130,7 @@ The platform offers different plans, and you can choose the plan for each produc
 * Languages are now at the App level. Users can add a language globally and access it inside a specific module. For example, a New Agent language assignment is only done if it is added globally at the App level.
 * Dev tools offer all the developer-related menus, such as BotKit, API scopes, Auth profiles, etc., across the products.
 * Now you can customize the WebSDK to align with your brand identity, including options such as color schemes, fonts, logos, headers, homepage design, etc.
-* Standard account users won't have access to the Knowledge Graph feature but can still define FAQs by adding questions and answers. Enterprise account users will have access to the Knowledge Graph, allowing them to add tags, graphs, and other elements, similar to the functionality in XO10.
+* Standard account users won't have access to the Knowledge Graph feature but can still define FAQs by adding questions and answers. Enterprise account users will have access to the Knowledge Graph, allowing them to add tags, graphs, and other elements, similar to the functionality in XO v11.
 * The ASR and TTS configurations provided in the Kore Voice Gateway are designed as default settings. Platform users have the option to customize them on a per-flow if required.
 
 <hr>
