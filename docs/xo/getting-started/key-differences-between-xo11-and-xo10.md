@@ -28,12 +28,14 @@ Key differences Between XO v11 and v10 are summarized below.
 
 ## Bots Replaced with Apps
 A Bot is now replaced with an App. Each App can have four products, with common modules kept separate.  
-<img src="../getting-started/images/" alt="The Left Navigation Menu" title="The Left Navigation Menu" style="border: 1px solid gray; zoom:70%;">
-
 
 ## Welcome Events Replaced with Welcome Flows
 
- * Earlier, incoming conversations were handled by events such as OnConnect/Welcome events. These events are now replaced with Flows. Flows are designed to replace the Welcome or OnConnect Message, Trigger a Dialog Task, or Run a Script.  
+ * Earlier, incoming conversations were handled by events such as OnConnect/Welcome events. These events are now replaced with Flows. Flows are designed to replace the Welcome or OnConnect Message, Trigger a Dialog Task, or Run a Script. In XO11, Flows are the ones that receive the conversation. We can define the user experience using Start Flows. By creating and linking a Start flow to a channel users will experience what you have defined in the flow.Also, the Experience Flows are now split into 3 variants:
+  * Start Flows
+  * Exit Flows
+  * Conditional Flows
+
  <img src="../images/xo-platform-welcomeflow.png" alt="Welcome flow" title="Welcome flow" style="border: 1px solid gray; zoom:70%;">
 
  * The dialog builder now has a new "Return to Flow" option. This option allows the conversation to return to the Flow after completing an Automation node and continue executing the next connected nodes in the Flow. This option is in addition to the existing "Not connected" and "End of dialog" options.  
@@ -41,13 +43,29 @@ A Bot is now replaced with an App. Each App can have four products, with common 
   
  * The new flow builder supports JavaScript, Templates, and VXML (IVR channels).
 
+ * Default Flows are introduced for both Chat and Voice functionalities. You can test any Chat using the RTM channel for simulation, and any Voice using the SBC channel for simulation.
+
+ * In XO v11, Agent Transfer is a placeholder that needs to be defined in the Flow builder. The agent skills specified in the Agent Transfer node of the Dialog Builder will be added to the agent skills defined in the corresponding node of the Flow builder.
+
+## Streamlined Automation: Conversational Input and Run Automation Nodes Merged, Deflect to Chat Deprecated
+
+Conversational Input and Run Automation Nodes are now combined into a single "Automation" node. The Automation Node passes the conversation to the NLP engine for processing. Platform users can either:
+
+* Prompt users with a message and use their response to trigger an NLP task, or
+* Predefine the Dialog Task to be triggered within the Automation Node.
+
+The Agent Transfer node must be added within the Automation Node. Also, the "Deflect to Chat" feature has been deprecated in this release.  
+<img src="../images/xo-platform-contact-center-Automation.png" alt="Dialog Builder" title="Dialog Builder" style="border: 1px solid gray; zoom:70%;">
+
 ## Dialog Builder Upgrade
 
-XO v11 has an all-new super intuitive dialog builder.  
+* XO v11 has an all-new super intuitive dialog builder.  
 <img src="../images/xo-platform-Dialogbuilder.png" alt="Dialog Builder" title="Dialog Builder" style="border: 1px solid gray; zoom:70%;">
 
-The "Train" button appears whenever changes are made to the Dialogs, FAQs, and Training page (including utterances, patterns, traits, etc.); and when adding sources in Search AI.  
+* The "Train" button appears whenever changes are made to the Dialogs, FAQs, and Training page (including utterances, patterns, traits, etc.); and while adding sources in Search AI.  
 <img src="../images/xo-platform-train.png" alt="Train" title="Train" style="border: 1px solid gray; zoom:70%;">
+
+* Use Cases are no longer available  in the Agent AI or Contact Center AI modules. They are merged into Dialog Tasks in Automation AI. When creating a dialog, users can select if the dialog is meant for agent, customer or both, by turning on a toggle.
 
 ## Talk to Bot Moved to Header
 
@@ -67,12 +85,13 @@ All the configurations applicable across the app have been moved to a separate m
 
 ## Shared LLM & Generative Settings for All Products
 
-All the LLM integrations can be managed in one place in an app and used across the products on the Platform. For example, Agent Response Rephrasing applies to both Contact Center AI and Agent AI.  
+All the LLM integrations can be managed in one place in an app and used across the products on the Platform. For example, Agent Response Rephrasing applies to both Contact Center AI and Agent AI.
+[Learn more](../app-settings/generative-ai-tools/introduction.md#key-features)  
 <img src="../images/xo-platform-LLM&generativeAI.png" alt="LLM & GenerativeAI" title="LLM & GenerativeAI" style="border: 1px solid gray; zoom:70%;">
 
 ## Global User Management
 
-User Management is now applicable across the modules. You can set permissions, manage agent-related Permissions, Create a new Role, and Assign a role to a new or existing user. You can also assign a role to User groups (but the creation of User Groups is still on the Admin Console page).  
+User Management is now applicable across the modules, app level. You can set permissions, manage agent-related Permissions, Create a new Role, and Assign a role to a new or existing user. You can also assign a role to User groups (but the creation of User Groups is still on the Admin Console page). [Learn more](../getting-started/whats-new-in-xo-platform.md#7-user-role-management-module)  
 <img src="../images/xo-platform-manageuser.png" alt="User Management" title="User Management" style="border: 1px solid gray; zoom:70%;">
 
 ## App Level Publishing and Version Management
@@ -110,6 +129,7 @@ The platform offers different plans, and you can choose the plan for each produc
 * Dev tools offer all the developer-related menus, such as BotKit, API scopes, Auth profiles, etc., across the products.
 * Now you can customize the WebSDK to align with your brand identity, including options such as color schemes, fonts, logos, headers, homepage design, etc.
 * Standard account users won't have access to the Knowledge Graph feature but can still define FAQs by adding questions and answers. Enterprise account users will have access to the Knowledge Graph, allowing them to add tags, graphs, and other elements, similar to the functionality in XO10.
+* The ASR and TTS configurations provided in the Kore Voice Gateway are designed as default settings. Platform users have the option to customize them on a per-flow if required.
 
 <hr>
 
