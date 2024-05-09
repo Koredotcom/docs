@@ -22,9 +22,13 @@ This section lets you set your preferences based on the channels. It has three c
 * **Agent Playbook**: This widget provides agents with structured guidance and helps streamline task management. Supervisors can define stages and steps to follow, choose step progression (sequential or random), mark whether the steps are completed manually or automatically, and set adherence notifications. They can leverage this feature to gain valuable insights into agent adherence to specific playbook steps and use this data to enhance agents’ ability to handle interactions and significantly improve customer satisfaction.
 
 If disabled, the Playbook tab doesn’t appear in the widget, but you have the Assist tab and the welcome messages in the Assist tab. However, if Playbook is enabled, then welcome messages become a part of the Playbooks step, and nothing appears in the Assist tab. By default, this widget is disabled, but you can enable it for all three channels.
+
 * **Send Button**: This widget lets you control the accessibility of the Send button functionality for AgentAssist responses. By default, this widget is enabled for Voice and Chat channels only.
+
 * **Copy Button**: This widget lets you control the accessibility of the Copy button functionality for AgentAssist responses. By default, this widget is enabled for all three channels.
+
 * **Auto Summarization**: This widget lets you automatically generate a summary of the conversation when it ends. Agents can copy the summary and save it into the Notes or Remark field while closing the conversation. By default, this widget is enabled for Voice and Chat channels only, and it also has the option to select the Submit button.
+
 * **Widget Landing Tab**: This widget allows you to select the default landing page for your selected channel and is available for all three channels. Note that the Transcription option appears here for selection only when the Transcript Tab widget is enabled.
 
 ### Steps to set channel specific preferences
@@ -61,9 +65,10 @@ This section lets you gain access to the Knowledge AI features within the AgentA
 6. Click **Save** to save your settings.
    <img src="../widget-settings-images/knowledge-ai-settings-page-2.png" alt="knowledge-ai-settings-page" title="knowledge-ai-settings-page" style="border: 1px solid gray; zoom:80%;">
 
-### **AgentAssist General Settings**
+## **AgentAssist General Settings**
 
 This section lets you set up the general features of the AgentAssist widget. Here, you can turn on or off the event-not-found event trigger and control the URL opening behavior.
+
 * **Honor Bot Event – Intent not found**: Here, you can turn on or off the Honor Bot Event – Intent not found toggle. When turned on, the configured intent-not-found event triggers if AgentAssist doesn’t understand the user’s intent.
 
 * **URL opening behavior**: Here, you can customize the behavior for URL opening in the AgentAssist widget for desktop applications. The following options are available:
