@@ -13,7 +13,7 @@ Key differences Between XO v11 and v10 are summarized below.
 * A new guided onboarding journey helps you create your first app in record time. To start the journey, click **Create New** on the home page and follow the guided steps to create the app.  
 <img src="../images/xo-platform-homepage.png" alt="New unified XO Platform" title="New unified XO Platform" style="border: 1px solid gray; zoom:70%;">   
 
-* During the onboarding process, the OpenAI credentials provided by Kore.ai is used to enable access to AI features, such as app name suggestions, alternate question suggestions, generating agent use cases, etc.
+* During the onboarding process, the OpenAI credential provided by Kore.ai is used to enable access to AI features, such as app name suggestions, alternate question suggestions, generating agent use cases, etc.
 
 * A new "Setup guide" feature has been introduced to facilitate faster app building for platform users. It offers a guided, step-by-step process that provides a comprehensive overview of all features in XO. Once the setup guide is completed, it will be moved to the help section under the header for future reference.  
 <img src="../images/xo-platform-setupguide.png" alt="Setup Guide" title="Setup Guide" style="border: 1px solid gray; zoom:70%;">   
@@ -25,6 +25,11 @@ Key differences Between XO v11 and v10 are summarized below.
 
 * The Left Navigation Menu shows options for the selected product and feature(s). In top-down order, product-specific options are shown first, and related products or features are shown at the bottom.  
 <img src="../images/ntp(21).png" alt="The Left Navigation Menu" title="The Left Navigation Menu" style="border: 1px solid gray; zoom:70%;">
+
+## Bots Replaced with Apps
+A Bot is now replaced with an App. Each App can have four products, with common modules kept separate.  
+<img src="../getting-started/images/" alt="The Left Navigation Menu" title="The Left Navigation Menu" style="border: 1px solid gray; zoom:70%;">
+
 
 ## Welcome Events Replaced with Welcome Flows
 
@@ -41,7 +46,7 @@ Key differences Between XO v11 and v10 are summarized below.
 XO v11 has an all-new super intuitive dialog builder.  
 <img src="../images/xo-platform-Dialogbuilder.png" alt="Dialog Builder" title="Dialog Builder" style="border: 1px solid gray; zoom:70%;">
 
-The "Train" button appears whenever changes are made to the Dialogs, FAQs, and Training page (including utterances, patterns, traits, etc.), and when adding sources in Search AI.  
+The "Train" button appears whenever changes are made to the Dialogs, FAQs, and Training page (including utterances, patterns, traits, etc.); and when adding sources in Search AI.  
 <img src="../images/xo-platform-train.png" alt="Train" title="Train" style="border: 1px solid gray; zoom:70%;">
 
 ## Talk to Bot Moved to Header
