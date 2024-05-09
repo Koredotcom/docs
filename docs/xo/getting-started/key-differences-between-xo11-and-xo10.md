@@ -27,8 +27,8 @@ Key differences Between XO v11 and v10 are summarized below.
 <img src="../images/ntp(21).png" alt="The Left Navigation Menu" title="The Left Navigation Menu" style="border: 1px solid gray; zoom:70%;">
 
 ## Bots Replaced with Apps
-A Bot is now replaced with an App. Each App can have four products, with common modules kept separate.
-<img src="../getting-started/images/" alt="The Left Navigation Menu" title="The Left Navigation Menu" style="border: 1px solid gray; zoom:70%;">  
+A Bot is now replaced with an App. Each App can have four products, with common modules kept separate.  
+<img src="../images/xo-platform-apps.png" alt="Apps" title="Apps" style="border: 1px solid gray; zoom:70%;">  
 
 ## Welcome Events Replaced with Welcome Flows
 
