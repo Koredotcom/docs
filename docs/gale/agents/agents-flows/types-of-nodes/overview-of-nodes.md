@@ -4,8 +4,8 @@ In GALE's Agent Flow builder, nodes are the building blocks that connect differe
 
 You can add the following nodes to an Agent flow, based on your requirements:
 
-* **Gen AI node**: It contains the desired AI model, which will serve as your agent's core intelligence. [Learn more](../types-of-nodes/gen-ai-node.md).
-* **API node**: It allows you to make requests to external systems using SOAP or REST API calls, query information, and manipulate data to meet your requirements. Learn more. [Learn more](../types-of-nodes/api-node.md).
-* **Function node**: It lets you define a script using JavaScript or Python to process context variables or other variables used in the flow. [Learn more](../types-of-nodes/function-node.md).
-* **Condition node**: It helps create branches in the workflow based on specific conditions, controlling the execution flow. [Learn more](../types-of-nodes/condition-node.md).
-* **End node**: It helps define the message displayed when the flow ends and maps the outputs sent out of the flow or agent. [Learn more](../types-of-nodes/end-node.md).
+* **Gen AI Node**: It contains the desired AI model, which will serve as your agent's core intelligence. [Learn more](../types-of-nodes/gen-ai-node.md).
+* **API Node**: It allows you to make requests to external systems using SOAP or REST API calls, query information, and manipulate data to meet your requirements. Learn more. [Learn more](../types-of-nodes/api-node.md).
+* **Function Node**: It lets you define a script using JavaScript or Python to process context variables or other variables used in the flow. [Learn more](../types-of-nodes/function-node.md).
+* **Condition Node**: It helps create branches in the workflow based on specific conditions, controlling the execution flow. [Learn more](../types-of-nodes/condition-node.md).
+* **End Node**: It helps define the message displayed when the flow ends and maps the outputs sent out of the flow or agent. [Learn more](../types-of-nodes/end-node.md).
