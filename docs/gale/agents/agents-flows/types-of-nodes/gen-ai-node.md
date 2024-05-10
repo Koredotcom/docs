@@ -57,7 +57,7 @@ Steps to add and configure the node:
     The error “Proper data needs to be provided in the LLM node” appears when the Model is not selected, the prompt details are not provided, or both.
 
 
-## Access the Output of Gen AI Node
+## Access the Output of the Gen AI Node
 
 The output of the Gen AI node is stored in a context variable and can be accessed via 
 ~~~
