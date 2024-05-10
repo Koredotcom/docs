@@ -31,13 +31,13 @@ Each entry in this tray includes the following information:
 
 You can use the Dialer to call external contacts, as follows:
 
-1. Click the **Dialer** icon on the Conversation Tray to display the **Outbound Call** window.  
+1. Click the **+** icon on the Conversation Tray and click **Outbound Call**.  
 <img src="../images/dialer.png" alt="Dialer" title="Dialer" style="border: 1px solid gray; zoom:80%;">
 
 2. To initiate an outbound call using the **Dialer** tab, select the country, dial any phone number, and click the **Call** button.  
-<img src="../images/outbound_call_dialer.png" alt="Outbound Call Dialer" title="Outbound Call Dialer" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/outbound-call-dialer.png" alt="Outbound Call Dialer" title="Outbound Call Dialer" style="border: 1px solid gray; zoom:80%;">
 
-3. The **Contacts** tab is a public directory (published by Administrators using [Public APIs](https://docs.kore.ai/smartassist/api/apis-list/#Contacts_Public_APIs)) where you can view saved contacts – **Name** and **Phone Number**.
+3. The **Contacts** tab is a public directory (published by Administrators using [Public APIs](../../apis/contact-center/contact-center-api-list.md#contacts-public-apis)) where you can view saved contacts – **Name** and **Phone Number**.
 4. You can search for a specific name and click the **Call** button to initiate an Outbound Call with the selected contact.  
 <img src="../images/contacts.png" alt="Contacts" title="Contacts" style="border: 1px solid gray; zoom:80%;">
 
@@ -45,7 +45,7 @@ You can use the Dialer to call external contacts, as follows:
 
 To view the Outbound Call History, follow these steps:
 
-1. Click the **Dialpad** icon to display the **Outbound Call** window.
+1. Click the **+** icon to display the **Outbound Call** window.
 2. Click the **Call History** tab to view the following:
     * Name
     * Phone Number

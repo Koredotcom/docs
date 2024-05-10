@@ -3,7 +3,7 @@
 In the Contact Center, Agent Forms provide a range of input fields that allow capturing required information from customers. Agent Forms work based on the Kore.ai XO Platform.
 
 To reach the _Agent Forms_ section, go to **Contact Center AI > CONFIGURATIONS > Agent Forms**. Here, you can view and search existing forms and create new ones.
-<img src="../images/secure-forms-page.png" alt="
+<img src="../images/agent-forms-page.png" alt="
 Agent Forms Page" title="Agent Forms Page" style="border: 1px solid gray; zoom:80%;">
 
 # The Agent Forms Live Board
@@ -17,7 +17,7 @@ You can access the following features and information within the Agent Forms sec
     1. **In-development** displays when a form is created and is still being worked on. This status is also shown for previously published forms modified after publishing.
     2. **Published** displays when a form has been approved and published.
 5. **Last Updated**: Displays the date and time when the form was last updated.
-<img src="../images/secure-forms-columns.png" alt="
+<img src="../images/agent-form-columns.png" alt="
 Agent Forms Columns" title="Agent Forms Columns" style="border: 1px solid gray; zoom:80%;">
 
 # Create an Agent Form
@@ -39,7 +39,7 @@ Add New Form Button" title="Add New Form Button" style="border: 1px solid gray; 
 
 # Build an Agent Form
 
-You can build Agent Forms by adding individual components, such as text fields, checkboxes, radio buttons, date fields, etc. Please see the form-building process explained in detail in [Digital Forms](https://developer.kore.ai/docs/bots/bot-builder-tool/digital-forms/#Add_Components) within the XO Platform documentation.
+You can build Agent Forms by adding individual components, such as text fields, checkboxes, radio buttons, date fields, etc. Please see the form-building process explained in detail in [Digital Forms](../../../automation/use-cases/digital-skills/configure-digital-forms.md) within the XO Platform documentation.
 
 # Edit an Agent Form
 
@@ -65,9 +65,9 @@ There are two ways to edit form settings (Name, Description, Form Data Security 
 
 # Publish an Agent Form
 
-Publishing a form means making it available for agents to select within the Agent Console and send to customers, as shown below. See [Agent Console](https://docs.kore.ai/smartassist/console/agent-console/) for detail.
+Publishing a form means making it available for agents to select within the Agent Console and send to customers, as shown below. See [Agent Forms for Handling Sensitive Information](../../../console/interacting-with-customers/interacting-with-customers.md#agent-forms-for-handling-sensitive-information) for detail.
 
-<img src="../images/secure-form-console.png" alt="Send Agent Form" title="Send Agent Form" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/agent-form-console.png" alt="Send Agent Form" title="Send Agent Form" style="border: 1px solid gray; zoom:80%;">
 
 Steps to publish a form:
 
