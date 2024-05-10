@@ -45,7 +45,7 @@ Steps to add and configure the node:
 
         * **Top P**: Controls the diversity of the model's output by considering only the top tokens whose cumulative probability exceeds a threshold. Higher values produce more diverse outputs, while lower values result in more deterministic outputs.
 
-5. Click the **Connections** icon and select the actions that you want the node to trigger when the Gen AI node is successful or when it fails.  
+5. Click the **Connections** icon and select the **Go to Node** for both success and failure conditions.  
 <img src="../images/gen-ai-actions.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:50%;">
 
     1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a Gen AI node, Function node, Condition node, API node, or End node.
