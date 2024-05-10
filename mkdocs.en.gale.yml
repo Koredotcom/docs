@@ -117,18 +117,18 @@ nav:
     - Create an Agent: agents/create-a-new-agent.md
     - Agent Flows:
       - About Flows: agents/agents-flows/flows-overview.md
-      - Manage Flow Nodes: agents/agents-flows/manage-flow-nodes.md
-      - Types of Nodes: 
-        - About Nodes: agents/agents-flows/types-of-nodes/overview-of-nodes.md
-        - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md
-        - API Node: agents/agents-flows/types-of-nodes/api-node.md
-        - Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node.md
-        - Function Node: agents/agents-flows/types-of-nodes/function-node.md
-        - End Node: agents/agents-flows/types-of-nodes/end-node.md
-      - Other Actions in the Flow Builder:
+      - Manage Flows: 
+        - Manage Nodes in Flows: agents/agents-flows/manage-flow-nodes.md
         - Manage Input and Output: agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
         - Run the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
         - Create a Version of the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
+      - Types of Nodes: 
+        - Overview: agents/agents-flows/types-of-nodes/overview-of-nodes.md
+        - Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node.md
+        - API Node: agents/agents-flows/types-of-nodes/api-node.md
+        - Function Node: agents/agents-flows/types-of-nodes/function-node.md
+        - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md        
+        - End Node: agents/agents-flows/types-of-nodes/end-node.md        
     - Sharing & Permissions: 
       - Manage User Roles and Permissions:  agents/manage-user-roles-and-permissions.md
     - Agent Endpoint: 

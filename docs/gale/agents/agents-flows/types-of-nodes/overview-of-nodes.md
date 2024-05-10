@@ -1,9 +1,8 @@
-# About Nodes
+# Nodes Overview
 
 In GALE's Agent Flow builder, nodes are the building blocks that connect different stages to execute end-to-end use cases. Transitions between nodes provide the logic that ties the flow together. 
 
-
-Types of available nodes:
+You can add the following nodes to an Agent flow, based on your requirements:
 
 * **Gen AI node**: It contains the desired AI model, which will serve as your agent's core intelligence. [Learn more](../types-of-nodes/gen-ai-node.md).
 * **API node**: It allows you to make requests to external systems using SOAP or REST API calls, query information, and manipulate data to meet your requirements. Learn more. [Learn more](../types-of-nodes/api-node.md).
