@@ -1,13 +1,12 @@
-# Overview of Nodes
+# About Nodes
 
-In the flow builder, nodes serve as connector stages that, when positioned appropriately, enable you to execute complete end-to-end use cases. Each node functions as a fundamental building block for the agents, contributing to its overall functionality and structure.
+In GALE's Agent Flow builder, nodes are the building blocks that connect different stages to execute end-to-end use cases. Transitions between nodes provide the logic that ties the flow together. 
 
-Nodes contribute to constructing a framework that enhances comprehension, while transitions imbue this framework with logic. The synergy between nodes and transitions enables the development of agents capable of automating diverse tasks seamlessly, without compromising the user experience.
 
-You can use the following types of nodes, based on your requirements:
+Types of available nodes:
 
-* **Gen AI node**: This node contains the desired model for you. It serves as the core or one of the cores of your application's internal intelligence. For more information, see [Gen AI node](../types-of-nodes/gen-ai-node.md).
-* **API node**: This node lets you make requests using SOAP or REST API calls. You can query or get information from an external system by defining a service request that includes configuring the APIs and passing the parameters. This data is necessary for the prompt or agent to operate effectively. Additionally, this node features a processing function that enables you to manipulate the data to meet your specific requirements. For more information, see [API node](../types-of-nodes/api-node.md).
-* **Function node**: This node allows you to define a script for processing any context variables or other variables that are used in building the experience flow. You can use a JavaScript or Python editor to develop the script. For more information, see [Function node](../types-of-nodes/function-node.md).
-* **Condition node**: This node is used to create branches in a workflow, where different actions or paths are taken depending on whether certain conditions are met or not. They help control the flow of execution within a process or application. For more information, see [Condition node](../types-of-nodes/condition-node.md).
-* **End node**: This node allows you to define the message displayed to the user when the experience flow ends. This node allows you to map the outputs sent out of the flow or the agent. For more information, see [End node](../types-of-nodes/end-node.md) .
+* **Gen AI node**: It contains the desired AI model, which will serve as your agent's core intelligence. [Learn more](../types-of-nodes/gen-ai-node.md).
+* **API node**: It allows you to make requests to external systems using SOAP or REST API calls, query information, and manipulate data to meet your requirements. Learn more. [Learn more](../types-of-nodes/api-node.md).
+* **Function node**: It lets you define a script using JavaScript or Python to process context variables or other variables used in the flow. [Learn more](../types-of-nodes/function-node.md).
+* **Condition node**: It helps create branches in the workflow based on specific conditions, controlling the execution flow. [Learn more](../types-of-nodes/condition-node.md).
+* **End node**: It helps define the message displayed when the flow ends and maps the outputs sent out of the flow or agent. [Learn more](../types-of-nodes/end-node.md).
