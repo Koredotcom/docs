@@ -372,6 +372,22 @@ Several APIs are available from the SmartAssist Platform. Based on the functiona
    <td>SmartAssist Recordings
    </td>
   </tr>
+  <tr>
+   <td><a href="../fetch-call-recording">Fetch Call Recording</a>
+   </td>
+   <td>To retrieve the recording of a specific call using either the user Id or session Id.
+   </td>
+   <td>SmartAssist Recordings
+   </td>
+  </tr>
+  <tr>
+   <td><a href="../contact-center/delete-call-recording">Delete Call Recording</a>
+   </td>
+   <td>This API is used to delete Voice Call Recordings. The response varies based on whether the execution is successful or not.
+   </td>
+   <td>Delete Recordings
+   </td>
+  </tr>
 </table>
 
 ### Outbound Calling API

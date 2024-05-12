@@ -2,6 +2,28 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.1.x releases.
 
+## v11.1.1 May 11, 2024
+
+<u>Patch Release</u>
+
+This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
+
+### Voice Gateway
+
+#### Play HT Streaming Support
+
+Streaming for Play HT Text-to-Speech (TTS) is now supported. With streaming support, the voice gateway does not wait for the entire prompt audio to be generated before playback begins. This means reduced latency and a smoother user experience when playing prompts.
+
+#### Voice Chat for Kore.ai Voice Gateway Accounts
+
+Voice chat functionality can be set up on accounts configured with Kore.ai Voice Gateway. [Learn more](../../flows/node-types/utils.md#set-voice-chat-on-koreai-voice-gateway-account).
+
+### API
+
+#### Delete Call Recording API
+
+Applications with relevant access can delete call recordings using a Session ID for storage management while complying with privacy regulations. [Learn more](../../apis/contact-center/delete-call-recording.md).
+
 ## v11.1.0 April 27, 2024
 
 <u>Minor Release</u>
