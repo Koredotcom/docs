@@ -14,10 +14,6 @@ This update includes feature enhancements and bug fixes. Key features and enhanc
 
 Streaming for Play HT Text-to-Speech (TTS) is now supported. With streaming support, the voice gateway does not wait for the entire prompt audio to be generated before playback begins. This means reduced latency and a smoother user experience when playing prompts.
 
-#### Voice Chat for Kore.ai Voice Gateway Accounts
-
-Voice chat functionality can be set up on accounts configured with Kore.ai Voice Gateway. [Learn more](../../flows/node-types/utils.md#set-voice-chat-on-koreai-voice-gateway-account).
-
 ### API
 
 #### Delete Call Recording API
