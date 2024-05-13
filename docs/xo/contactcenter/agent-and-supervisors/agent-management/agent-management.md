@@ -82,6 +82,16 @@ Here you can see a list of existing statuses, along with the following informati
 * **Description**: A short description of the status.
 <img src="../images/agent-status-page.png" alt="Agent Status Page" title="Agent Status Page" style="border: 1px solid gray; zoom:80%;">
 
+### System Away and System Busy Status
+
+**System Away**: When an agent does not accept or respond to an interaction within the configured acceptance timeout, the agent’s status automatically changes to system away.
+
+**System Busy**: When all the slots assigned to an agent are occupied, the agent’s status automatically changes to system busy.
+
+!!! Note
+
+    System Away and System Busy statuses are enabled by default for new accounts. To enable them for existing accounts, contact Kore Support. 
+
 ### Create an Agent Status
 
 To create a new agent status, follow these steps:

@@ -45,8 +45,14 @@ Fine-tuning is an iterative process of taking a pre-trained LLM and adapting it 
 
 The Kore.ai XO GPT module supports the following features:
 
-
-
-* **Rephrase User Query**: This XO GPT model utilizes the bot domain knowledge and conversation history to expand and rephrase user queries for improved understanding by downstream NLP components. This includes better recognition of contextual intents, entity co-referencing, and more. [Learn more](dynamic-conversations-features.md 'Rephrase User Query').
 * **Conversation Summary**: This model generates concise, natural language summaries of interactions between the virtual assistant, users, and human agents. It distills the key intents, entities, decisions, and outcomes into an easy-to-read synopsis. Companies can leverage conversation summarization to boost agent productivity, ensure process compliance, and create better contextual recommendations – without having to read lengthy transaction histories. It is pre-integrated with Kore.ai’s Contact Center platform. It is also extensible to third-party applications via API integration. [Learn more](co-pilot-features.md#conversation-summarization).
 
+* **Answer Generation**: This feature helps generate an answer to the user question based on the data ingested into the Search AI application. The relevant data with a user query is inserted into the prompt, and the configured LLM responds with the answer. This answer is then formatted appropriately and presented to the user. [Learn more](dynamic-conversations-features.md#answer-generation).
+
+* **Rephrase Dialog Responses**: This feature sends all User Prompts, Error Prompts, and Bot Responses to the configured LLM with the conversation context, which depends on the configured number of user inputs. Responses are rephrased based on the context and user emotion, providing the end user with a more empathetic, natural, and contextual conversation experience. [Learn more](dynamic-conversations-features.md#rephrase-dialog-responses).
+
+* **Rephrase User Query**: This XO GPT model utilizes the bot domain knowledge and conversation history to expand and rephrase user queries for improved understanding by downstream NLP components. This includes better recognition of contextual intents, entity co-referencing, and more. [Learn more](dynamic-conversations-features.md 'Rephrase User Query').
+
+
+
+* **Vector Generation**: This feature helps create vector embeddings for all the ingested data in the Search AI application. When the user inputs a query, the query is converted into an embedding, and then a vector search is performed to get a list of relevant data from the ingested data. This relevant data is then sent to the answer generation feature. [Learn more](dynamic-conversations-features.md#vector-generation).

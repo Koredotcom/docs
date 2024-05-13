@@ -6,7 +6,7 @@ Kore.ai virtual assistant platform allows you to customize how these Conversatio
 
 !!! note
 
-    Conversation Sessions are different from Billing Sessions, [refer here](../../../administration/billing){:target="_blank"} for more on Billing Sessions.
+    Conversation Sessions are different from Billing Sessions, [refer here](../../administration/billing){:target="_blank"} for more on Billing Sessions.
 
 
 ## Overview
@@ -60,7 +60,7 @@ The following details explain the options available on the page, to define the c
 * **Run Custom Script** – You can use the custom script to invoke koreUtil.ClearAuthProfiles function to clear the authorization profile and associated session variables for that particular profile.For example, if you have enable multiple authorization profiles for a session, you can use the `koreUtil.ClearAuthProfiles` to disable a particular authorization profile that is not needed for this session using this custom script:  
 `koreUtil.ClearAuthProfiles ( [Auth_Profile_Name] )
 `You can also clear all authorization profile using this script:
-`koreUtil.ClearAllAuthProfiles ( )` For more information, see [kore.UtilLibraries ](../../../apis/koreutil-libraries){:target="_blank"}article.  
+`koreUtil.ClearAllAuthProfiles ( )` For more information, see [kore.UtilLibraries ](../../apis/automation/koreutil-libraries/){:target="_blank"}article.  
 <img src="../images/bot-sessions-img4.png" alt="Run Custom Script" title="Run Custom Script" style="border: 1px solid gray;zoom:50%;"/>
 
 

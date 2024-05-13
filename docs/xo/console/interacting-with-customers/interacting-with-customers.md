@@ -17,7 +17,7 @@ Agents can type their responses in the compose bar and send the message by click
 Agents can send a standard response to the customer from a pre-configured library. Press **/** in the compose bar to display the standard response templates window.
 <img src="../images/standard-response-prompt.png" alt="Standard Response Library" title="Standard Response Library" style="border: 1px solid gray; zoom:80%;">
 
-Pressing **Escape **after typing “**/**” closes the standard response window.
+Pressing **Escape** after typing “**/**” closes the standard response window.
 
 ### AI-enhanced Compose Text Box
 
@@ -96,7 +96,6 @@ Agents can request the customer for an audio or video call during the chat conve
 
     The initial interaction and the phone call interaction must be closed separately, with corresponding dispositions.
 
-
 ### Manual Outbound Call
 
 Agents can make outbound calls to the customers as follows:
@@ -112,9 +111,9 @@ Agents can make outbound calls to the customers as follows:
 
 ## Voicemail
 
-If auto answer mode is enabled in [Agent Settings](https://docs.kore.ai/smartassist/user-management/agent-settings/#Voice), the transcript and recording appear automatically in the conversation tray of the agent.
+If auto answer mode is enabled in [Agent Settings](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings), the transcript and recording appear automatically in the conversation tray of the agent.
 
-If manual mode is enabled, a notification is displayed on the [Next in Queue Notification](https://docs.kore.ai/smartassist/console/incoming-interactions/#Next_Customer_Notifications) panel. The agent must accept the voicemail, although no inbound conversation slots are consumed.
+If manual mode is enabled, a notification is displayed on the [Next in Queue Notification](../incoming-interactions/managing-incoming-interactions.md#next-in-queue-notifications) panel. The agent must accept the voicemail, although no inbound conversation slots are consumed.
 <img src="../images/next-in-queue-voicemail.png" alt="Next in Queue (Voicemail)" title="Next in Queue (Voicemail)" style="border: 1px solid gray; zoom:50%;">
 
 When the agent accepts the voicemail, the transcript and recording are displayed on the interaction pane. The agent can play, transfer, call (outbound), and download the voicemail from the interaction pane.
@@ -132,6 +131,128 @@ You can call the customer as follows:
 
 3. The agent can continue the conversation.
 <img src="../images/call-connected.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:80%;">
+
+### Consult Call, Conference Call, and Warm Transfer for Voice Calls
+
+Agents can initiate Consult calls, Conference calls, and Warm Transfer voice calls while interacting with customers. It increases agent efficiency by allowing the initiating agent to share relevant context with the receiving agent before transferring the call. To ensure effective call handling, the receiving agent provides the necessary information, leading to smoother transitions and improved customer outcomes. Additionally, this feature enables seeking expert opinions during customer calls.
+
+Selecting an agent from the transfer list activates the consult and subsequent merge to a conference call. Consult functionality will not be available if the conversation is being transferred to a queue.
+
+The agent chosen for consultation must be available and have zero load occupation. If an agent is brought in for consultation, their slots remain occupied throughout the consultation and conference call.
+
+During the consult call, the system automatically places the customer on hold, allowing internal agents to communicate with each other. All calls are recorded if recording is enabled. Calls can be transferred to external agents by pre-saving their phone numbers through an API.
+
+The initiating agent can switch to the original customer call if needed, and vice versa, using the Swap functionality. The initiating agent can merge the two calls, converting them into a conference call.
+
+Following the consult or conference call, the initiating agent can proceed with a warm transfer by clicking the “**Forward**” button.
+
+### Call Transfer
+
+Steps to initiate a Call Transfer:
+
+1. Click the **Transfer** button to initiate the transfer.
+<img src="../images/transfer-consult-call.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
+
+Recent transfer results are displayed.
+<img src="../images/transfer-results.png" alt="Recent Transfer Results" title="Recent Transfer Results" style="border: 1px solid gray; zoom:80%;">
+
+2. You can search for an **Agent** or **Queue** to transfer the call.
+<img src="../images/agent-queue-transfer.png" alt="Agent/Queue Transfer" title="Agent/Queue Transfer" style="border: 1px solid gray; zoom:80%;">
+
+### Agent Transfer
+
+* The following options are displayed when an agent is selected:
+<img src="../images/transfer-options.png" alt="Agent Transfer Options" title="Agent Transfer Options" style="border: 1px solid gray; zoom:30%;">
+
+* Click **Transfer** to directly transfer the call to another agent.  
+<img src="../images/transfer-agent.png" alt="Agent Transfer" title="Agent Transfer" style="border: 1px solid gray; zoom:30%;">
+
+### Consult Call
+
+* Click **Consult** to initiate a call with another agent while the external call progresses.
+<img src="../images/consult-button.png" alt="Consult Button" title="Consult Button" style="border: 1px solid gray; zoom:30%;">
+
+* A consult call is initiated, and the external call is placed on hold.  
+<img src="../images/connecting-consult-call.png" alt="Initiate Consult Call" title="Initiate Consult Call" style="border: 1px solid gray; zoom:80%;">
+
+* The consult call is displayed on the conversation tray of the receiving agent.
+<img src="../images/accept-consult-call.png" alt="Conversation Tray" title="Conversation Tray" style="border: 1px solid gray; zoom:80%;">
+
+* On accepting the call it appears on the Live Interaction pane of the receiving agent.
+<img src="../images/consult-call-connected.png" alt="Consult Call Connected" title="Consult Call Connected" style="border: 1px solid gray; zoom:60%;">
+
+* The initiating agent can continue the conversation with the receiving agent. The following options are available to the initiating agent.  
+<img src="../images/customer-on-hold-Consult.png" alt="Agent Options Consult Call" title="Agent Options Consult Call" style="border: 1px solid gray; zoom:50%;">
+
+* Click the **Swap** button to swap between the external and internal (consult) calls. When switching to the external call, the internal call is placed on hold and the recording is paused.
+<img src="../images/swap-button.png" alt="Swap Button" title="Swap Button" style="border: 1px solid gray; zoom:40%;">
+
+### Conference Call
+
+* Click the **Merge** button to initiate a Conference Call with the customer.
+<img src="../images/merge-button.png" alt="Merge Button" title="Merge Button" style="border: 1px solid gray; zoom:50%;">
+
+* The conference call appears on the conversation tray of the receiving agent and a notification is displayed on the top right corner of the agent console.
+<img src="../images/initiate-conference-call.png" alt="Initiate Conference Call" title="Initiate Conference Call" style="border: 1px solid gray; zoom:60%;">
+
+* On accepting the call, the conference call is connected and the agents can no longer interact privately.  
+<img src="../images/conference-call-connected.png" alt="Conference Call Connected" title="Conference Call Connected" style="border: 1px solid gray; zoom:60%;">
+
+* A notification is displayed on the top right corner of the console if the customer drops off during a conference call.  
+<img src="../images/conference-call-terminated.png" alt="Conference Call Terminated" title="Conference Call Terminated" style="border: 1px solid gray; zoom:60%;">
+
+### Warm Transfer
+
+* Click the **Forward** button to transfer the conversation to another agent.
+<img src="../images/forward-button.png" alt="Forward Button" title="Forward Button" style="border: 1px solid gray; zoom:40%;">
+
+* The initiating agent is disconnected and the conversation appears on the conversation tray of the receiving agent. A notification is displayed on the top right corner of the agent console.
+<img src="../images/initiate-call-forwarding.png" alt="Initiate Call Forwarding" title="Initiate Call Forwarding" style="border: 1px solid gray; zoom:50%;">
+
+* On accepting, the call is transferred to the receiving agent.
+<img src="../images/call-transferred.png" alt="Call Transferred" title="Call Transferred" style="border: 1px solid gray; zoom:70%;">
+
+### Queue Transfer
+
+* The following options are displayed when a queue is selected:
+<img src="../images/queue-transfer-options.png" alt="Queue Transfer Options" title="Queue Transfer Options" style="border: 1px solid gray; zoom:50%;">
+
+* Click **Transfer** to directly transfer the call to another queue.
+<img src="../images/transfer-queue.png" alt="Transfer Queue" title="Transfer Queue" style="border: 1px solid gray; zoom:50%;">
+
+### External Consult and Conference During an Ongoing Interaction
+
+While interacting with a customer, if an agent needs to seek external consultation, they can initiate an outbound call as follows:
+
+1. Click the **Dialpad** icon.  
+<img src="../images/dialpad.png" alt="Dialpad" title="Dialpad" style="border: 1px solid gray; zoom:60%;">
+
+2. The **External Consultation Call** window appears. The external call can be dialed in two ways:
+    1. **Manual Dialer**:
+        1. Click the **Dialer** tab and select the country code from the dropdown.
+        <img src="../images/outbound-dialer.png" alt="Outbound Dialer" title="Outbound Dialer" style="border: 1px solid gray; zoom:50%;">
+
+        2. Enter the phone number using the keypad and click the 🕻 button to initiate an external outbound call.  
+        <img src="../images/dial-number.png" alt="Dial Phone Number" title="Dial Phone Number" style="border: 1px solid gray; zoom:80%;">
+
+    2. **Contacts Tab**:
+        1. Click the **Contacts** tab, enter the name of the contact in the search bar, and press **enter**.
+        <img src="../images/contacts-tab.png" alt="Contacts Tab" title="Contacts Tab" style="border: 1px solid gray; zoom:70%;">
+
+        2. The search results are displayed. Click the **🕻** button to initiate an external outbound call.
+        <img src="../images/call-button.png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:70%;">
+
+3. The external consult call is connected and the customer is placed on hold. The following options are available with agents during the external consult call:
+    1. **Mute** – Mute the conversation.
+    2. **Hold** – Place the external consult call on hold.
+    3. **Merge** – Merge the external call with the existing inbound call (conference).
+    4. **Forward** – Forward the call to another agent.
+    5. **Swap** – Swap between the customer and the external call.
+    6. **End** – End the external consult call.  
+    <img src="../images/consult-call-options.png" alt="Consult Call Options" title="Consult call Options" style="border: 1px solid gray; zoom:60%;">
+
+The Call History tab contains records of the outbound calls.  
+<img src="../images/call-history-tab.png" alt="Call History Tab" title="Call History Tab" style="border: 1px solid gray; zoom:60%;">
 
 ## Chat Co-Browse
 
@@ -162,7 +283,7 @@ Agents can initiate a co-browsing session during voice calls.
 
 ### Initiate Co-browse on the Console When Connected to an External System
 
-When the agent and user connect through an external system (for example, Genesys) and need to initiate a co-browse session using the SmartAssist console, they can achieve this using this feature.
+When the agent and user connect through an external system (for example, Genesys) and need to initiate a co-browse session using the Agent console, they can achieve this using this feature.
 
 Steps to initiate co-browse session:
 
@@ -185,16 +306,28 @@ During a conversation, agents can click the **Emoji** icon to react to the conve
 During a conversation, agents can click the **Attachments** icon to share attachments with customers.
 <img src="../images/attachment-icon.png" alt="Attachment Button" title="Attachment Button" style="border: 1px solid gray; zoom:80%;">
 
-## Secure Forms for Handling Sensitive Information
+## Agent Forms for Handling Sensitive Information
 
-Agents can guide customers to fill in data using secure forms. The secure forms option is an additional security layer that helps customers provide information faster while maintaining confidentiality.
-<img src="../images/secure-forms-button.png" alt="Secure Forms Button" title="Secure Forms Button" style="border: 1px solid gray; zoom:80%;">
+Agents can guide customers to fill in data using agent forms. The agent forms option is an additional security layer that helps customers provide information faster while maintaining confidentiality.
+<img src="../images/secure-forms-button.png" alt="Agent Forms Button" title="Agent Forms Button" style="border: 1px solid gray; zoom:80%;">
+
+When a user submits information on an agent form, the agent cannot directly view the submitted information when trying to open the data in their console.
+While the form headers are visible, the data is redacted. The information is revealed to the agents when they click the **view** button.
+
+There are two ways to secure the agent form:
+
+1. The entire form is secured by turning on a toggle at [form creation](../../contactcenter/configurations/agent-forms/configure-agent-forms.md#create-an-agent-form). In this case, the **view** icon appears to view masked data in the header with the agent form text.
+All headers are visible, and only submitted data is masked.
+<img src="../images/agent-form-masked.png" alt="Agent Form Masked" title="Agent Form Masked" style="border: 1px solid gray; zoom:60%;">
+
+2. Only specific fields are masked, retaining the redaction as per the configuration for that field. The data is unmasked when the agent clicks the unmask button.
+<img src="../images/unmask-button.png" alt="Unmask Form" title="Unmask Form" style="border: 1px solid gray; zoom:60%;">
 
 ## Snooze
 
 Waiting for customer responses or time spent on information retrieval can result in prolonged conversations and negatively impact agents’ performance metrics like Average Handle Time (AHT). Snooze allows agents to pause the conversation timer and resume it when the agent responds while freeing up slots for additional conversations.
 
-Administrators can configure the snooze functionality from the [Agent Settings](https://docs.kore.ai/smartassist/user-management/agent-settings/#Snooze).
+Administrators can configure the snooze functionality from the [Agent Settings](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#snooze).
 
 Steps to snooze a conversation:
 
@@ -227,14 +360,14 @@ Agents can view and respond to emails on the console. The emails appear on the c
 **Collapsible email tiles**: This allows agents to minimize or expand email threads as needed, reducing clutter and improving the organization of the email inbox.
 <img src="../images/collapsible-email-tiles.png" alt="Collpsible Email Tiles" title="Collpsible Email Tiles" style="border: 1px solid gray; zoom:80%;">
 
-These settings can be configured from [Agent settings](https://docs.kore.ai/smartassist/user-management/agent-settings/).
+These settings can be configured from [Agent settings](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings).
 
 **Distribution**: You can distribute emails to multiple recipients using CC (Carbon Copy) and BCC (Blind Carbon Copy) fields.
 <img src="../images/cc-and-bcc-email.png" alt="CC and BCC" title="CC and BCC" style="border: 1px solid gray; zoom:80%;">
 
 <img src="../images/email-distribution-list.png" alt="Email Distribution  List" title="Email Distribution List" style="border: 1px solid gray; zoom:80%;">
 
-**Standard Responses**: 
+**Standard Responses**:
 You can choose from a library of configured standard responses.
 
 1. Click the **Standard Response** icon at the bottom of the email compose bar. The count of response templates in each category is displayed.
@@ -267,6 +400,80 @@ To add a new note:
 4. **Drafts**: If you click the **Close** button on the email editor and there’s content inside, the mail is preserved as a draft. Drafts are accessible at the bottom of the console.
 <img src="../images/draft.png" alt="Drafts" title="Drafts" style="border: 1px solid gray; zoom:80%;">
 
+### Outbound Email
+
+Outbound email functionality is a key feature within Contact Center AI designed to streamline communication between agents and customers through email channels. It is crucial to reach out to customers proactively and provide personalized interactions based on their needs and preferences. Expanding omnichannel capabilities allows customers to be reached through various channels to address their needs. This allows seamless follow-up after interactions to guarantee satisfaction and provide timely support whenever required.
+
+#### Send Outbound Email
+
+Steps to send an outbound email:
+
+1. Click the **+** button on the top right corner of the conversation tray.
+<img src="../images/button.png" alt="+ Button" title="+ Button" style="border: 1px solid gray; zoom:80%;">
+
+2. Click the **New Mail** button.
+<img src="../images/new-outbound-email.png" alt="New Email Button" title="New Email Button" style="border: 1px solid gray; zoom:80%;">
+
+3. The email panel is displayed, and an email conversation appears on the conversation tray. Enter the recipients' Email addresses, such as john.doe@xyz.com.
+<img src="../images/email-panel.png" alt="Email Panel" title="Email Panel" style="border: 1px solid gray; zoom:80%;">
+
+4. Select a **Queue** from the dropdown.
+<img src="../images/select-queue.png" alt="Select Queue" title="Select Queue" style="border: 1px solid gray; zoom:80%;">
+
+5. Enter the **Subject** and body of the email. The email address appears on the conversation tray and the subject appears as the email thread header.
+<img src="../images/email-body.png" alt="Email Body" title="Email Body" style="border: 1px solid gray; zoom:80%;">
+
+6. You can perform the following actions:
+
+**Send**:
+
+* Click the **Send** Button to send the email.
+<img src="../images/send-button.png" alt="Send Button" title="Send Button" style="border: 1px solid gray; zoom:80%;">
+
+    A confirmation is displayed, and the email is sent.
+    <img src="../images/email-sent-confirmation.png" alt="Email sent Confirmation" title="Email Sent Confirmation" style="border: 1px solid gray; zoom:80%;">
+
+**Send & Close**:
+
+Click the down arrow button ”**V**” beside Send and click **Send & Close**.
+<img src="../images/send-and-close.png" alt="Send & Close Button" title="Send & Close Button" style="border: 1px solid gray; zoom:80%;">
+
+A confirmation is displayed, and the email is sent. A disposition window appears. Select a disposition and click **Close**.
+<img src="../images/disposition-sent-mail.png" alt="Disposition Sent Mail" title="Disposition Sent Mail" style="border: 1px solid gray; zoom:80%;">
+
+!!! Note
+
+    * The send button is activated when all mandatory fields (recipient, subject, queue, and email body) are filled. Sent conversations remain in the agent's conversation tray until closed.
+
+    * Sending an email consumes one slot from the agent's allocation and appears on the Monitor tab.
+
+    * Outbound emails occupy the same slots as any other configured email. Agents can create as many outbound emails as their allocated email slots allow.
+
+**Draft**:
+
+Click the **X** on the top right corner of the email editor window.
+<img src="../images/x-button.png" alt="X-Button" title="X-Button" style="border: 1px solid gray; zoom:80%;">
+
+The editor window is minimized, and the mail is saved as a draft.
+<img src="../images/draft-mimized.png" alt="Draft Minimized" title="Draft Minimized" style="border: 1px solid gray; zoom:80%;">
+
+Drafts are automatically saved and remain accessible in the following scenarios:
+
+1. After an agent logout and subsequent login.
+2. Network interruptions and subsequent reconnections.
+3. The current email content is saved as a draft if the editor is closed.
+4. Drafts are saved only after the mandatory fields (recipient, subject, queue, and email body) are updated.
+
+Multiple drafts can be saved for individual email conversations. Each draft is easily identifiable and accessible within its respective email thread.
+
+**Delete**:
+
+Click the **Delete** (bin) icon on the bottom left corner of the editor.
+<img src="../images/delete-button.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
+
+A confirmation message is displayed. Click **Delete**. The email is deleted.
+<img src="../images/delete-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:80%;">
+
 ## Color Codes
 
 Color codes help in easy identification and better readability of conversations on digital channels.
@@ -296,7 +503,7 @@ To add a new note:
 
 ## Modify Skills in Interactions
 
-To modify skills in a live interaction when the Live Interaction option is selected in [Skill Modification](https://docs.kore.ai/smartassist/user-management/agent-settings/#Skill_Modification):
+To modify skills in a live interaction when the Live Interaction option is selected in [Skill Modification](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#skill-modification):
 
 1. Click the **Add Skills** option on the Skills bar.
 <img src="../images/add-skills-button.png" alt="Add Skills Button" title="Add Skills Button" style="border: 1px solid gray; zoom:80%;">
@@ -306,11 +513,11 @@ To modify skills in a live interaction when the Live Interaction option is selec
 
 ## Transfer Interactions
 
-SmartAssist allows agents to transfer ongoing conversations to other queues, other agents, or both. The Agent Console displays transfer options according to the [Transfer Destinations](https://docs.kore.ai/smartassist/user-management/agent-settings/#Transfer_Destinations) setting. In the example screenshots below, both queues and agents are enabled for transfers.
+Contact Center AI allows agents to transfer ongoing conversations to other queues, other agents, or both. The Agent Console displays transfer options according to the [Transfer Destinations](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#transfer-destinations) setting. In the example screenshots below, both queues and agents are enabled for transfers.
 
 **Transfer to Another Queue**
 
-To transfer a conversation to another queue when the [Enforce Skill Match for Transfers](https://docs.kore.ai/smartassist/user-management/agent-settings/#Enforce_Skill_Match_for_Transfers) setting is enabled:
+To transfer a conversation to another queue when the [Enforce Skill Match for Transfers](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#enforce-skill-match-for-transfers) setting is enabled:
 
 1. Click **Transfer** at the top of the Conversation space.
 <img src="../images/transfer-button.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
@@ -328,7 +535,7 @@ To transfer a conversation to another queue when the [Enforce Skill Match for Tr
     * The system verifies the valid hours of operation and displays the online queues.
     * If the skill match option is enabled, the destination queue must have agents with the right skills based on the skill match rules. If there are no agents with the required skills, the conversation will wait for the maximum wait period assigned to the destination queue and then timeout to the no agents available scenario.
 
-To transfer a conversation to another queue when the [Skill Modification](https://docs.kore.ai/smartassist/user-management/agent-settings/#Skill_Modification) setting is enabled:
+To transfer a conversation to another queue when the [Skill Modification](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#skill-modification) setting is enabled:
 
 1. Click **Transfer** at the top of the Conversation space.
 <img src="../images/transfer-interaction.png" alt="Transfer Button" title="Transfer Button" style="border: 1px solid gray; zoom:80%;">
@@ -357,11 +564,11 @@ To transfer a conversation to another agent:
 
 !!! Note
 
-    If the customer ends the chat before the agent completes the transfer, SmartAssist will drop the transfer, and the conversation will not be assigned to any queue or agent. Kore WebSdk v1.0 supports this feature only for chat conversations.
+    If the customer ends the chat before the agent completes the transfer, Contact Center AI will drop the transfer, and the conversation will not be assigned to any queue or agent. Kore WebSdk v1.0 supports this feature only for chat conversations.
 
 **Transfer to External Contacts**
 
-An agent can transfer the call to an external contact during a voice interaction. An administrator must enable this feature in [Agent Settings](https://docs.kore.ai/smartassist/user-management/agent-settings/) to allow
+An agent can transfer the call to an external contact during a voice interaction. An administrator must enable this feature in [Agent Settings](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-settings) to allow
 
 external transfer of ongoing customer calls. To transfer a conversation to an external contact from the Agent Console, follow these steps:
 
@@ -379,7 +586,7 @@ external transfer of ongoing customer calls. To transfer a conversation to an ex
     * For the agent, the call ends like other interactions. 
     * The agent must add a disposition and perform After Call Work (ACW).
 
-## **End Interactions**
+## End Interactions
 
 1. To end an interaction session, click the **End** button at the top right of the _Live Interaction_ pane.
 <img src="../images/end-button.png" alt="End Interaction Button" title="End Interaction Button" style="border: 1px solid gray; zoom:80%;">
@@ -423,7 +630,7 @@ To set the disposition and close the conversation, follow these steps:
     * **Resolved**: Select when the customer query is resolved.
     * **Abandoned**: Select if the customer has abandoned the conversation and is no longer responding.
     * **Pending**: Select if the query is still pending resolution.
-    * **Custom**: Administrators can [create custom disposition codes ](https://docs.kore.ai/smartassist/disposition-codes/disposition-codes/#Custom_Disposition_Codes)to address specific business needs. Select according to your use case.
+    * **Custom**: Administrators can [create custom disposition codes ](../../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#custom-disposition-codes)to address specific business needs. Select according to your use case.
 * Optionally, type a **Description** of your reason for selecting the disposition.
 * Click **_Close_** to close the conversation.
 
@@ -473,7 +680,7 @@ Refer to the[ installation instructions](https://github.com/Koredotcom/web-kore-
 
 # Behavior When Login Prep Status is Enabled
 
-A message appears on the console for the duration configured on the [Agent Status](https://docs.kore.ai/smartassist/settings/agent-status/agent-status/#) page. This status allows an agent to prepare themselves before they start receiving interactions.
+A message appears on the console for the duration configured on the [Agent Status](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#agent-status-management) page. This status allows an agent to prepare themselves before they start receiving interactions.
 <img src="../images/login-prep-status.png" alt="Login Prep Status Enabled" title="Login Prep Status Enabled" style="border: 1px solid gray; zoom:80%;">
 
 <img src="../images/login-prep.png" alt="Login Prep Status" title="Login Prep Status" style="border: 1px solid gray; zoom:80%;">
@@ -491,7 +698,7 @@ Agents can choose the following options:
 
 ## If Auto-Answer Is Enabled, Transfer and End are Disabled Until the First Agent Response
 
-If the Auto Answer mode is enabled in [Agent Settings](https://docs.kore.ai/smartassist/user-management/agent-settings/#Voice), the Transfer/End buttons do not display on the Live Interaction pane until the assigned agent sends the first message.
+If the Auto Answer mode is enabled in [Agent Settings](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#voice), the Transfer/End buttons do not display on the Live Interaction pane until the assigned agent sends the first message.
 
 Below is what the Agent Console looks like **before the first message** from the agent:
 <img src="../images/before-first-message-from-agent.png" alt="Before First Message From Agent" title="Marked as Away" style="border: 1px solid gray; zoom:80%;">
@@ -506,9 +713,9 @@ A warning message displays if an agent changes their status to **_Away_** or a c
 
 ## Behavior When an Agent Tries Logging Out
 
-SmartAssist does not permit agents to log out during an ongoing conversation.
+Contact Center AI does not permit agents to log out during an ongoing conversation.
 
-If an agent tries to log out during an ongoing conversation, SmartAssist prevents the agent from logging out without transferring or closing the conversation. A pop-up window is displayed along with the following message:
+If an agent tries to log out during an ongoing conversation, Contact Center AI prevents the agent from logging out without transferring or closing the conversation. A pop-up window is displayed along with the following message:
 
 If an agent logs out suddenly (the browser is closed or the system crashes, for example), then the counter for Agent inactivity starts and after the threshold, any active conversations are assigned back to the Queue.
 <img src="../images/logout-restricted.png" alt="Logout Restricted" title="Logout Restricted" style="border: 1px solid gray; zoom:80%;">
@@ -518,3 +725,28 @@ If an agent logs out suddenly (the browser is closed or the system crashes, for 
 If an agent does not accept/send a response within a specified time, the system automatically changes the status to **Away (Idle)**.
 This status is not available for selection by an agent.
 <img src="../images/away-idle.png" alt="Away (Idle)" title="Away (Idle)" style="border: 1px solid gray; zoom:80%;">
+
+## CSAT Survey
+
+The CSAT (Customer Satisfaction) survey is essential for contact centers because it provides valuable feedback on customer satisfaction levels, enabling continuous improvement of service quality.
+
+CSAT surveys can be triggered based on the scenarios configured by administrators/supervisors while [Creating a Survey](../../contactcenter/configurations/surveys/configure-surveys.md#create-a-survey):
+
+* **Show to Everyone**: If the “Show to Everyone” scenario is configured while creating the survey, the survey is triggered automatically for every interaction that concludes between an agent and a customer on digital or voice channels.
+* **Show to Every nth User**: If the “Show to nth User” scenario is configured while creating the survey, the survey is triggered automatically for the nth interaction that concludes between an agent and a customer on digital or voice channels. For example: If the frequency is set to 2, then the survey is triggered for every second customer.
+* **Agents can trigger**: If the “Agents can trigger” scenario is configured while creating the survey, the survey can be triggered by agents at any point during the interaction as follows:
+    * Click the **Send Survey** button on the right corner above the compose bar. The send survey button is highlighted and a survey icon appears on the **End** button at the top right corner of the live interaction pane.
+    <img src="../images/csat-button.png" alt="CSAT Button" title="CSAT Button" style="border: 1px solid gray; zoom:70%;">
+
+    * The survey is triggered to the customer when the agent clicks the End button with the survey selected.
+
+For the above scenarios where the agent actively participates in interactions and the interactions end, the feedback from surveys contributes to their CSAT scores.
+
+CSAT surveys can also be triggered in scenarios when there are no active participants:
+
+* Outside hours of operation
+* No Agents Available flow
+* Agent/Customer side terminations or system terminations due to user inactivity
+* Subflows (No agents flow/Out of hours flow)
+
+For these scenarios, the CSAT scores are assigned to the interaction.

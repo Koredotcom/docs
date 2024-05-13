@@ -15,12 +15,14 @@ To configure an Agent Transfer node in your dialog task, you need to create an a
 
 Follow the below steps to register your Agent Transfer app:
 
-1. Go to **Deploy > Integrations > Agent Transfer**.
-2. On the Agent Transfer page, click **Add** next to the **App Name** drop-down list.
+1. Go to **App Settings > Integrations > Agent Transfer** in **Automation AI**.
+2. On the Agent Transfer page, click the **Custom (BotKit)** tile.
 
-    <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    <img src="../images/agent-transfer-node-img1-custom-botkit.png" alt="Custom (BotKit) to create app" title="Custom (BotKit) to create app" style="border:1px solid gray; zoom:60%;">
+    
+3. Click **Add** next to the **App Name** drop-down list.
 
-    ![alt_text](images/image1.png "image_tooltip")
+    <img src="../images/add-app.png" alt="Add app" title="Add app" style="border:1px solid gray; zoom:60%;">
 
 3. On the **Create Client App** window, enter the app name in the **Name** field. For example, _Agent Transfer_.
 
@@ -39,14 +41,12 @@ Follow the below steps to register your Agent Transfer app:
 7. Under the **Access Using a Connector** section, indicate if your URL is behind a firewall and a _Connector_ has to be used.
 8. Click **Save**.
 
-    <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image2.png "image_tooltip")
+    <img src="../images/save-new-app.png" alt="Save new app" title="Save new app" style="border:1px solid gray; zoom:60%;">
 
 
 For details on managing  the API integration, please see the following articles:
 
-1. [Enabling Agent Transfer API](https://developer.kore.ai/docs/bots/api-guide/enabling-agent-transfer-api/){:target="_blank"}
+1. [Enabling Agent Transfer API](../../../../../apis/automation/enabling-agent-transfer-api/){:target="_blank"}
 2. [Configuring Agent Transfer](../../../../../app-settings/integrations/agents/how-to-configure-agent-transfer){:target="_blank"}
 3. [BotKit SDK Tutorial – Agent Transfer](../../../../../sdk/tutorials/agent-transfer/){:target="_blank"}
 
@@ -60,9 +60,7 @@ Setting up an Agent Transfer node in a dialog task involves the following steps:
 3. Click the **+** icon next to the node under which you want to add the Agent Transfer node.Select **Agent Transfer > New Agent Transfer Node**. Alternatively, use drag and drop to add the node from the left side nodes panel.
 4. On the Agent Transfer window, by default, the **Component Properties** tab is displayed.
 
-    <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image3.png "image_tooltip")
+    <img src="../images/agent-transfer-node-component-properties.png" alt="Agent Transfer node" title="Agent Transfer node" style="border:1px solid gray; zoom:60%;">
 
 
 ### Component Properties
@@ -72,28 +70,20 @@ Setting up an Agent Transfer node in a dialog task involves the following steps:
     1. **Mark as Agent Transfer** –  To hand-off conversations to an agent when the VA is configured to transfer the conversation session to an agent transfer integration or custom integration. Indicates that the conversation was transferred to a live agent using the Agent Transfer node in the Dialog Flow. [Learn more](../../../../../app-settings/integrations/agents/agent-transfer-integrations){:target="_blank"}.
     2. **Mark as Self Service** – To mark conversations as self-service when the session reaches this node. Indicates that the conversation (initiated by the user) with a VA was successfully completed or informs that VA is not trained to handle a user’s request. [Learn more](../../../../../analytics/automation/conversations-history/#conversations-history-dashboard){:target="_blank"}.
 
-        <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-        ![alt_text](images/image4.png "image_tooltip")
+        <img src="../images/agent-transfer-node-component-properties-panel.png" alt="Agent Transfer node-Component properties" title="Agent Transfer node-Component properties" style="border:1px solid gray; zoom:60%;">
 
 3. In the **Chat Settings** section, click the **View Config** link to view agent transfer settings for each agent transfer integration that are configured.
 
-    <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image5.png "image_tooltip")
+    <img src="../images/agent-transfer-node-chat-settings.png" alt="Agent Transfer node-Chat settings" title="Agent Transfer node-Chat settings" style="border:1px solid gray; zoom:60%;">
 
 4. In the **View Config** page, you can view the agent configuration details.
 
-    <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image6.png "image_tooltip")
+    <img src="../images/agent-transfer-node-chat-settings-view-config.png" alt="Agent Transfer node-Chat settings-View Config" title="Agent Transfer node-Chat settings-View Config" style="border:1px solid gray; zoom:60%;">
 
 5. Click **Close** to return to the Agent Transfer Node settings page.
 6. In the **Voice Settings** section, click the **Configure** link to configure the IVR Channel Voice Call Properties. [Learn more](../../../../../channels/call-properties){:target="_blank"}.
 
-    <p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-    ![alt_text](images/image7.png "image_tooltip")
+    <img src="../images/agent-transfer-ivr-settings.png" alt="Agent Transfer node-Chat settings-IVR" title="Agent Transfer node-Chat settings-IVR" style="border:1px solid gray; zoom:60%;">
 
 7. In the **Variable Namespaces** section, associate the Variable Namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the VA. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../../app-settings/managing-namespace){:target="_blank"}.
 
@@ -108,6 +98,4 @@ This is where you can configure the instance specific fields for this agent tran
 
 For Agent Transfer node instances, you can configure tags to build custom profiles of your VAs conversations. Read more about [Custom Tags](../../../../../analytics/automation/custom-dashboard/custom-meta-tags){:target="_blank"}.
 
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image8.png "image_tooltip")
+<img src="../images/agent-transfer-node-instance-properties.png" alt="Agent Transfer node-Instance properties" title="Agent Transfer node-Instance properties" style="border:1px solid gray; zoom:60%;">

@@ -112,7 +112,7 @@ copyright: |
 nav:
   - Home : home.md
   - Platform:
-    - Overview: getting-started/xo-platform-overview.md    
+    - Overview: getting-started/about-xo-platform.md    
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md   
       - Navigating the Platform: getting-started/navigating-the-platform.md       
@@ -137,8 +137,7 @@ nav:
             - Set Queue: flows/node-types/set-queue.md
             - Split: flows/node-types/split.md
         - Channels:
-          - Digital:
-            - Enable Channels: channels/adding-channels-to-your-bot.md
+          - Digital: channels/adding-channels-to-your-bot.md
           - Voice:
             - Kore.ai Voice Gateway: channels/kore.ai-voice-gateway/kore-voice-gateway.md
             - Third-Party Voice:
@@ -149,16 +148,22 @@ nav:
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
     - Release Notes:
-      - What's New in XO 11: getting-started/whats-new-in-xo-platform.md  
-      - Latest Updates: release-notes/latest-updates.md
-
+      - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
+      - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
+      - Current Limitations: release-notes/current-limitations.md
+      - XO v11.x Updates:
+        - Automation AI: release-notes/11.x/automation-ai.md
+        - Search AI: release-notes/11.x/search-ai.md
+        - Contact Center AI: release-notes/11.x/contact-center-ai.md
+        - Agent AI: release-notes/11.x/agent-ai.md
+        - Platform Services: release-notes/11.x/platform-services.md
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:
         - About Virtual Assistant: getting-started/virtual-assistants-overview.md
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
     - Use Cases: 
-      - Dialogs Tasks:
+      - Dialog Tasks:
         - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
         - Navigating Dialog Tasks: automation/use-cases/dialogs/navigating-dialog-tasks.md
         - Build Dialog Tasks: automation/use-cases/dialogs/using-the-dialog-builder-tool.md
@@ -236,7 +241,6 @@ nav:
         - Context Object: automation/intelligence/context-object.md
         - Conversation Events: 
           - Default Conversations: automation/intelligence/conversation-management/default-conversations.md
-          - Conversation Driven Dialog Builder: automation/intelligence/conversation-management/conversation-driven-dialog-builder.md
         - Sentiment Events: 
           - Sentiment Management: automation/intelligence/sentiment-management/sentiment-management-overview.md
           - Tone Analysis: automation/intelligence/sentiment-management/tone-analysis.md
@@ -256,22 +260,7 @@ nav:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
         - Team Collaboration: manage-assistant/collaborative-development.md
-        - Authorization: manage-assistant/bot-authorization-overview.md
-        - Conversation Sessions: manage-assistant/conversation-sessions.md
-        - Multilingual Virtual Assistants:
-          - Get Started: manage-assistant/multilingual-virtual-assistants/get-started.md
-          - Supported Components & Features: manage-assistant/multilingual-virtual-assistants/supported-components-and-feature.md
-          - Manage Languages: manage-assistant/multilingual-virtual-assistants/managing-languages.md
-          - Manage Translation Services: manage-assistant/multilingual-virtual-assistants/managing-translation-services.md
-          - Multilingual Virtual Assistant Behavior: manage-assistant/multilingual-virtual-assistants/multilingual-virtual-assistant-behavior.md
-        - Feedback Survey: manage-assistant/feedbacksurvey.md
-        - Masking PII Details: manage-assistant/redacting-personally-identifiable-information.md
-        - Variables: manage-assistant/using-bot-variables.md
-        - Collections: manage-assistant/collections.md
-        - IVR Settings: manage-assistant/ivr-integration.md
-        - General Settings: manage-assistant/general-settings.md
-        - Bot Management: manage-assistant/bot-management.md
-        - Manage Namespace: manage-assistant/managing-namespace.md               
+        - Feedback Survey: manage-assistant/feedbacksurvey.md             
   - Search AI:
     - Overview: searchai/about-search-ai.md
     - Getting Started:
@@ -344,9 +333,9 @@ nav:
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
-      - Bot Override and Automation: agentai/agent-experience/agent-assist-widget-v3.md       
+      - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
   - Integrations & APIs:
-    - Overview: app-settings/integrations/actions/actions.md   
+    - Overview: app-settings/integrations/about-integration.md
     - Integrations:
       - Actions:
         - Actions Overview: app-settings/integrations/actions/actions.md
@@ -431,7 +420,8 @@ nav:
         - Rate Limits: apis/automation/rate-limit.md
         - API List:
           - Automation APIs: apis/automation/api-list.md
-          - Contact Center APIs: apis/api-list.md
+          - Contact Center APIs:
+            - API List: apis/contact-center/contact-center-api-list.md
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md
@@ -476,10 +466,13 @@ nav:
         - Introduction: analytics/contact-center/reports/introduction-to-reports.md
         - Reports List: analytics/contact-center/reports/reports-list.md
   - Administration:
+    - Users:
+      - Manage Users: user-management/manage-users.md
+      - Manage Role and Permissions: user-management/role-management.md
     - Deployment:
       - App Versioning: deploy/bot-versioning.md
       - Publishing your App: deploy/publishing-bot.md
-      - Import & Export App: manage-assistant/bot-management.md      
+      - Import & Export App: deploy/bot-management.md      
     - App Settings:
       - App Profile: app-settings/app-profile.md
       - Language Management:
@@ -494,16 +487,17 @@ nav:
         - Kore.ai XO GPT Module: app-settings/generative-ai-tools/xo-gpt-module.md
         - Prompts & Requests Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
         - Co-Pilot Features: app-settings/generative-ai-tools/co-pilot-features.md        
-        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md        
+        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md 
+        - PII and Sensitive Data: app-settings/generative-ai-tools/pii-and-sensitive-data.md
+        - Guardrails: app-settings/generative-ai-tools/guardrails.md       
       - Dev Tools:
-        - Bot Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
+        - App Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
         - Authorization Profiles: app-settings/dev-tools/bot-authorization/bot-authentication.md
         - Web/Mobile SDK: app-settings/dev-tools/kore-ai-web-sdk-tutorial.md
         - API Scopes: apis/automation/api-introduction.md
         - Mock Scenes: app-settings/mock-scenes.md
-      - Variables:
-        - Using Bot Variables: app-settings/variables/using-bot-variables.md
-        - Collections: app-settings/variables/collections.md
+      - Using Variables: app-settings/variables/using-bot-variables.md
+      - Managing Namespaces: app-settings/managing-namespace.md
       - Advanced Settings:
         - PII Settings: app-settings/advanced-settings/pii-data-masking.md
         - Manage Sessions: app-settings/advanced-settings/bot-sessions.md
@@ -529,4 +523,4 @@ nav:
         - Security Settings: administration/security-and-control/security-settings.md
       - Cloud Connector: administration/kore-ai-connector.md
       - Analytics for Bots Admin: administration/analytics.md
-      - Billing: administration/billing.md    
+      - Billing: administration/billing.md

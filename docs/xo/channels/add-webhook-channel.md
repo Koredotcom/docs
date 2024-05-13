@@ -1066,10 +1066,14 @@ The response contains the following fields:
 * _to_ – refers to the user to whom the message is delivered to.
 * _from_ – identity (Stream Id) of the bot from which the response is generated.
 * _text_ – contains the response(s) from the bot. Can be a string, object or an array of strings or objects.
-* _endOfTask_ – indicating whether the task was completed or not, values _true_ or _false_.
 * _endReason_ – the reason for the task completion – _fulfilled_, _interrupted_, or _canceled_
 * _completedTaskId_ – the _id _of the dialog task triggered.
 * _completedTaskName_ – the name of the dialog task triggered.
+* _endOfTask_ – indicates whether the task is completed or not in the asynchronous mode. It gets added to the response after executing a dialog or fallback task. Possible values are _true_ or _false_.
+* _endOfMessage_ – indicates the last message of a session and is added in the asynchronous mode. It is added whenever a Smalltalk, Standard Response, or SessionClosure Event message is triggered, or after the execution of the entity node in the flow.
+* _partialMessage_ – indicates that the message node is executed within the flow in the asynchronous mode.
+* _createdOn_ - indicates the response is from a regular dialog node in a synchronous mode.
+
 
 
 ### Change Conversation Language Request

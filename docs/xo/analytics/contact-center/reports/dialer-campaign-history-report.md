@@ -20,7 +20,7 @@ Steps to generate the Dialer Campaign History Report:
         * CSV
     * Send To (single email address or a mailing list)
 7. Click **Create**.
-8. An instance of the Dialer Campaign History Report is generated.
+8. The Dialer Campaign History Report is generated.
 <img src="../images/dialer-campaign-history-report-created.png" alt="Dialer Campaign History Report Created" title="Dialer Campaign History Report Created" style="border: 1px solid gray; zoom:100%;">
 
 9. Click the **Run** icon next to the instance of the report.
@@ -37,7 +37,7 @@ While generating reports you have two options, Run On Demand and Schedule.
 
     !!! Note
 
-        The red dot beside the report indicates that the report has been generated within the last 24 hours. You can download the report and save and view it in pdf format.
+        The red dot beside the report indicates that it was generated within the last 24 hours. You can download, save, and view the report in PDF format.
 
 The Agent Activity Report is generated and is available for download.
 

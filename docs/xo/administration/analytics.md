@@ -56,7 +56,7 @@ By clicking on any entry you get to view further details pertaining as seen belo
 
 !!! Note
 
-        The Audit Report contains system and user events for several Kore.ai products. To drill down further than Event Categories, use the Search for Description field, which lets you add one more criterion to the filter. To get XO Platform data, search for "Bot Builder" exactly; the Search field is case-sensitive. For more complex filtering, we recommend exporting the report and using a spreadsheet editor.
+    The Audit Report contains system and user events for several Kore.ai products. To drill down further than Event Categories, use the Search for Description field, which lets you add one more criterion to the filter. To get XO Platform data, search for "Bot Builder" exactly; the Search field is case-sensitive. For more complex filtering, we recommend exporting the report and using a spreadsheet editor.
 
 ### Audit Report Details
 
@@ -439,7 +439,7 @@ The list of entries in an admin console table can be very large depending on the
 
 !!! Note
 
-        The number of search terms in a search query is unlimited, however, no more than the first 20 characters of each search term is used to return search results.
+    The number of search terms in a search query is unlimited, however, no more than the first 20 characters of each search term is used to return search results.
 
 To view all entries, clear the search field, and then press the **Enter** key.
 
@@ -489,9 +489,9 @@ Chat History provides visibility into the user information with the inclusion of
 
 !!! Note
 
-        The Trace ID is retained in the logs for 30 days. Once the Trace ID is expired, you see a tooltip message as 
+    The Trace ID is retained in the logs for 30 days. Once the Trace ID is expired, you see a tooltip message as 
         
-        ‘`Trace Id: Trace records for this message are not available`‘.
+    ‘`Trace Id: Trace records for this message are not available`‘.
 
 Click on any chat history to see these options. Following are the user information details provided:
 
@@ -568,7 +568,7 @@ Click on any chat history to see these options. Following are the user informati
   <tr>
    <td>Last 30 Days Goal Completion Rate
    </td>
-   <td>(Tasks success tasks / (Total success tasks + total failed tasks) ) * 100 for the tasks over the last 30 days.
+   <td>(Total success tasks / (Total success tasks + total failed tasks) ) * 100 for the tasks over the last 30 days.
    </td>
   </tr>
   <tr>

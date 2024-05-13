@@ -15,6 +15,10 @@ There are two types of Flows:
 
 Start flows represent the most complex flow type, providing access to all [node types](../flows/node-types/introduction-to-flow-nodes.md). This flow type allows you to create experiences for inbound calls and chats.
 
+!!! Note
+
+    All fields of the default Start Flows can be edited except Channels. [Learn more](#edit-a-start-flow).
+
 ### The Exit Flows
 
 This flow type runs when a call gets disconnected and is useful in gathering customer data during post-call analytics, clean-up, or updates in other systems after a call ends. Conversational context can be passed from the main experience flow into the _Exit Flows._

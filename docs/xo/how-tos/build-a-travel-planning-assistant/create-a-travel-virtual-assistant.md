@@ -363,7 +363,7 @@ For this, you can add an Event Handler to initiate this task every time a new co
 4. In the **On Connect** window, by default, the **Initiate Task** option is selected for _Define how to proceed when this event is detected_.
 5. From the drop-down list, select the **Get Flight Status** task.
 6. Click **Save**.
-<img src="../images/add-events.png" alt="add event" title="add event" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/on-connect-window.png" alt="add event" title="add event" style="border: 1px solid gray; zoom:75%;">
 
 ## Test the Assistant
 

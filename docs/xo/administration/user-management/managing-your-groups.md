@@ -60,7 +60,7 @@ The list of entries in an admin console table can be very large depending on the
 
 !!! Note
 
-        The number of search terms in a search query is unlimited, however, no more than the first 20 characters of each search term is used to return search results.
+    The number of search terms in a search query is unlimited, however, no more than the first 20 characters of each search term is used to return search results.
 
 To view all entries, clear the search field, and then press the **Enter** key.
 

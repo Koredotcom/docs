@@ -2,9 +2,9 @@
 
 To modify the general settings of a app:
 
-1. Open the app. Click the **launcher** on top of the screen and then click on **Settings**.
-2. Click **App Profile**.  
-<img src="../images/app-prof-img1-build-configurations-general-settings.gif" alt="General Settings" title="General Settings" style="border: 1px solid gray;zoom:50%;"/>
+1. Open the app.
+2.  Navigate to **App Settings > App Profile**.  
+<img src="../images/app-prof-img1-build-configurations-general-settings.png" alt="General Settings" title="General Settings" style="border: 1px solid gray;zoom:50%;"/>
 
 ## General VA Settings
 

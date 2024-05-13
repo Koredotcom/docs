@@ -88,6 +88,19 @@ setCallFlowVariable("user_id", context.UserContext._id)
 var userId =  getCallFlowVariable("user_id")
 ```
 
+## Set Voice Chat on Kore.ai Voice Gateway Account
+
+Using the following Utils method/script inside the script node, you can set up voice chat in accounts configured with Kore.ai Voice Gateway.
+
+**Syntax**:
+
+```
+userSessionUtils.setConversationType('voiceChat');
+userSessionUtils.setLanguageTranslationAPIKey("AIzaSyBnk4hBmHuLjeIzScNAxAdhy0RExxxx");
+userSessionUtils.setVoiceChatAgentLang("en");
+userSessionUtils.setVoiceChatUserLang("de");
+```
+
 ## Agent Utils
 
 Agent Utils is a library available for any programmatic modifications or updates you (the developer) may want to make.
