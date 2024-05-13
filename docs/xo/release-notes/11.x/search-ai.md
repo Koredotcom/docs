@@ -6,7 +6,7 @@ This document provides information on the feature updates and enhancements intro
 
 <u>Patch Release</u>
 
-This update includes feature enhancements and bug fixes.
+This update includes feature enhancements and bug fixes. Key enhancement included in this release is summarized below.
 
 ### Extended Connector Support
 
@@ -18,7 +18,7 @@ In addition to the existing ServiceNow connector, Search AI now supports more kn
 
 <u>Minor Release</u>
 
-Key features included in this release is summarized below.
+This update includes feature enhancements and bug fixes. Key feature included in this release is summarized below.
 
 ### Business Rules Support
 
