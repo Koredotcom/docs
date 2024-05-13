@@ -359,7 +359,7 @@ Once created, you can assign roles to individual users or to user groups. You ca
 
 !!! Note
 
-        The default Master Admin role can be assigned to users (not groups) by the Primary Master Admin.
+    The default Master Admin role can be assigned to users (not groups) by the Primary Master Admin.
 
 
 ## Bot Roles
@@ -669,7 +669,7 @@ After creating a custom role, you can access more information about that role, c
 You can assign roles to individual users or to user groups. You can add and edit the roles from the Bot Admin Console. Also, you can assign a bot role to a user while sharing the bot with them from the Bots Platform.
 
 
-##### Assign Bot Role to a User from the Bots Admin Console
+**Assign Bot Role to a User from the Bots Admin Console**
 
 1. Open the Bots Admin Console.
 2. On the Admin menu, select **User Management > Users**.
@@ -681,7 +681,7 @@ You can assign roles to individual users or to user groups. You can add and edit
 <img src="../images/user-assignment.png" alt="Assign Bot Role to a User from the Bots Admin Console" title="Assign Bot Role to a User from the Bots Admin Console" style="border: 1px solid gray;zoom:50%;"/> 
 
 
-##### Assign Bot Role to a User Group
+**Assign Bot Role to a User Group**
 
 1. Open the Bots Admin Console.
 2. On the Admin menu, select **User Management > Role Management**.
@@ -693,7 +693,7 @@ You can assign roles to individual users or to user groups. You can add and edit
 <img src="../images/user-groups.png" alt="Assign Bot Role to a User Group" title="Assign Bot Role to a User Group" style="border: 1px solid gray;zoom:50%;"/> 
 
 
-##### Assign Bot Role from the Bot Builder
+**Assign Bot Role from the Bot Builder**
 
 1. On the Bot Builder top menu, select **Manage** tab
 2. From the left menu, select **Team**

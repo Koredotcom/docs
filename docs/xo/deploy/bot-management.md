@@ -1,35 +1,35 @@
 
-# Bot Management
+# VA Management
 
-This article discusses the main features that allow you to manage your assistant at a high level. These include Importing, Exporting, and Deleting assistants, as well as viewing change logs.
+This article discusses the main features that allow you to manage your Virtual Assistant (VA) at a high level. These include Importing, Exporting, and Deleting assistants, as well as viewing change logs.
 
 To learn more about Variables and how to use them, see [ Using Bot Variables](../app-settings/variables/using-bot-variables.md).
 
 ## Importing and Exporting Assistants
 
-Kore.ai allows you to export and import assistant tasks and associated configurations into another assistant. This feature helps you in the migration of bot definitions, cloning of assistants, or maintaining a periodic backup of bot definitions.
+Kore.ai allows you to export and import assistant tasks and associated configurations into another assistant. This feature helps you in the migration of VA definitions, cloning of assistants, or maintaining a periodic backup of VA definitions.
 
 This feature is particularly helpful to test various versions of your assistant at different stages of the development process before it is released for end users. The articles in this section help you understand how the _Export_ and _Import_ features work and how to perform them.
 
 !!! note
 
-    Post v8.0 release, the _enableNegativePatterns_ flag will be included in ‘NLP Settings’ under ‘NLP Data’ in the exported and imported bot definitions. This flag is used to check if the Negative Patterns are enabled/disabled in the assistant.
+    Post v8.0 release, the _enableNegativePatterns_ flag will be included in ‘NLP Settings’ under ‘NLP Data’ in the exported and imported VA definitions. This flag is used to check if the Negative Patterns are enabled/disabled in the assistant.
 
-Prior to this patch, this flag was part of ‘NLP Settings’ under ‘NLP Data’ in the imported bot definitions and ‘Bot Setting’ under ‘Setting’ in the exported bot definitions. This change is aimed at streamlining the functionality and might result in the failure to the incremental import of a bot from an export file generated before v8.0.
+Prior to this patch, this flag was part of ‘NLP Settings’ under ‘NLP Data’ in the imported VA definitions and ‘Bot Setting’ under ‘Setting’ in the exported VA definitions. This change is aimed at streamlining the functionality and might result in the failure to the incremental import of a VA from an export file generated before v8.0.
 
 ### Importing an Assistant
 
 You can import tasks and configurations of a specific assistant into a new or existing assistant using one of these import types:
 
-* **Full import**: Replaces the existing assistant with the imported configurations. Any additional configurations in the target assistant that are not present in the import definition will be deleted. An exception to this rule is the webhook channel, which will be retained even if not present in the import bot definition.
+* **Full import**: Replaces the existing assistant with the imported configurations. Any additional configurations in the target assistant that are not present in the import definition will be deleted. An exception to this rule is the webhook channel, which will be retained even if not present in the import VA definition.
 
     !!! note
 
         We strongly recommend you exercise caution and take a backup of the target assistant before importing using this option. 
 
-* **Incremental import**: Upgrades the current assistant with the configurations available in the import file. Any additional configurations available in the target or imported bot are retained. You can select specific bot components to import from the bot tasks, NLP data, and bot settings. Refer to the Bot Items in the Incremental Import table at the end of the article to learn how the imported bot items replace the target bot’s items in incremental import.
+* **Incremental import**: Upgrades the current assistant with the configurations available in the import file. Any additional configurations available in the target or imported VA are retained. You can select specific VA components to import from the VA tasks, NLP data, and VA settings. Refer to the Bot Items in the Incremental Import table at the end of the article to learn how the imported VA items replace the target VA’s items in incremental import.
 
-**Before you Begin** The _config.json_ file consists of bot variables that need values for the target assistant. Share the file with the relevant developers or enter suitable values yourself for the variables before importing the bot definition into a new bot.
+**Before you Begin** The _config.json_ file consists of variables that need values for the target assistant. Share the file with the relevant developers or enter suitable values yourself for the variables before importing the VA definition into a new VA.
 
 #### Steps in Importing to an Existing Assistant
 
@@ -43,26 +43,25 @@ To import a Virtual Assistant, follow these steps:
 
     * Import by uploading **individual JSON files**:
         1. Choose the **JSON Files** radio button.
-        2. Click the **Choose File** buttons next to the **Bot Definition File** field and **Bot Config File** field, and upload the _botDefinition.json_ and _config.json_ files respectively.
+        2. Click the **Choose File** buttons next to the **Bot Definition File** field and **Bot Config File** field, and upload the _appDefinition.json_ and _config.json_ files respectively.
         3. Optionally, upload the custom script file from the imported assistant if any. The file size is limited to 500kb.
-        4. Optionally, upload the custom script file from the imported assistant if any. The file size is limited to 500kb.
         
         <img src="../images/bot-import-custom-script-file1.png" alt="App import - JSON files" title="App import - JSON files" style="border:1px solid gray; zoom:70%;">
 
     * Import by uploading **ZIP file**:
-        1. Choose the Zip File radio button.
-        2. Through the Choose File button, browse and import the Zip file. Using this option you can import an app by directly importing the zip file created at the time of Export, without having to unzip.
+        1. Choose the **Zip File** radio button.
+        2. Through the **Choose File** button, browse and import the Zip file. Using this option you can import an app by directly importing the zip file created at the time of Export, without having to unzip.
 
         <img src="../images/bot-import-zip-file.png" alt="App import - ZIP file" title="App import - ZIP file" style="border:1px solid gray; zoom:70%;">
 
 6. Select one of these import options: **Full Import** or **Incremental Import**. You will get a warning to backup your assistant before performing the import.
-7. If you select **Full import**, the bot definition in the in-development copy will be overwritten with the definition present in the import file.
+7. If you select **Full import**, the VA definition in the in-development copy will be overwritten with the definition present in the import file.
     
-    * If there are one or more additional tasks or languages in the assistant, and if these are not present in the import definition, then these tasks will be marked as deleted and will be removed when the bot is published.
+    * If there are one or more additional tasks or languages in the assistant, and if these are not present in the import definition, then these tasks will be marked as deleted and will be removed when the VA is published.
 
 8. If you select **Incremental import**, you can also choose which components to import.
 
-    ![alt_text](images/bm(4).png "image_tooltip")
+    <img src="../images/bm(4).png" alt="Incremental import" title="Incremental import" style="border:1px solid gray; zoom:60%;">
 
     * **Bot Tasks**: Here is where you can select to import Tasks only (with or without comments), Knowledge Graph, Small Talk or Digital Forms.
 
@@ -72,21 +71,21 @@ To import a Virtual Assistant, follow these steps:
 
     * **NLP Data**: This is where you can import Synonyms, Concepts, Traits, Rules, Utterances, Patterns and Standard Responses. ML Utterances and Patterns can either be Appended or Replaced.
             
-        1. **Append** can be used when the utterances present in the file should be imported into the assistant and any additional utterances in the bot should be retained (this is the default behavior).
+        1. **Append** can be used when the utterances present in the file should be imported into the assistant and any additional utterances in the VA should be retained (this is the default behavior).
         2. **Replace** can be used when the utterances present in the file should be imported into the assistant. Any additional utterances will be removed.
         
             In case you are importing Tasks too, the additional utterances related to tasks being imported will be removed. 
 
+            <img src="../images/bm(1).png" alt="App import" title="App import" style="border:1px solid gray; zoom:60%;">
 
-            ![alt_text](images/bm(1).png "image_tooltip")
 
-        3. The imported Traits, Synonyms and Concepts will replace those in the target bot. Rules can be imported along with their tagged dialog tasks.
+        3. The imported Traits, Synonyms and Concepts will replace those in the target VA. Rules can be imported along with their tagged dialog tasks.
 
     * **Settings**: Bot Settings, Bot Variables and Voice Call Properties.
     * **Custom Dashboards** – This is useful in case you have created custom dashboards under the Analyze section and you want to import these to the new VA as well. 
     * On the confirmation dialog that opens, click **Backup** to download the existing assistant configuration.
 
-        ![alt_text](images/bm(8).png "image_tooltip")
+        <img src="../images/bm(8).png" alt="Backup notification" title="Backup notification" style="border:1px solid gray; zoom:60;">
     
         !!! note
 
@@ -103,28 +102,29 @@ To import a Virtual Assistant, follow these steps:
  
 To import a VA while creating it, follow these steps: 
 
-1. On the landing page, click **New Bot**.
+1. On the landing page, click **New App**. Select **Import App** from the popup menu.
 
+    <img src="../images/bm(7)-new.png" alt="New app button" title="New app button" style="border:1px solid gray; zoom:60;">
 
+2. The **Get Started** screen appears. Select **Automation AI** by clicking the **Try now** button on the tile.
 
+    <img src="../images/bm-import-automation-ai.png" alt="Import - Atomation AI" title="Import - Automation AI" style="border:1px solid gray; zoom:60;">
 
-    ![alt_text](images/bm(7).png "image_tooltip")
+3. Enter an **App Name**. Optionally, set an app icon.
+4. You can choose one of the below import options:
 
-6. In the **Create New Bot** window, select **Import a Bot**.
-7. Enter a **Name**. 
-8. Select an icon or click the **+** icon to upload your own. Images should be in PNG format and should not exceed 40×40 pixels. The file size is limited to 80kb.
-9. Upload the **Bot Definition File**.
-10. Upload the **Bot Config File**.
-11. Upload the **Custom Script File**. The file size is limited to 500kb.
-12. Click **Import** when ready. 
+    * Import by uploading **individual JSON files**:
+        1. Choose the **JSON Files** radio button.
+        2. Click the **Choose File** buttons next to the **Bot Definition File** field and **Bot Config File** field, and upload the _appDefinition.json_ and _config.json_ files respectively.
+        3. Optionally, upload the custom script file from the imported assistant if any. The file size is limited to 500kb.
 
+    * Import by uploading **ZIP file**:
+        1. Choose the **Zip File** radio button.
+        2. Through the **Choose File** button, browse and import the Zip file. Using this option you can import an app by directly importing the zip file created at the time of Export, without having to unzip. 
 
+5. Click **Create App** when ready. 
 
-
-    ![alt_text](images/bm(5).png "image_tooltip")
-
-
-
+    <img src="../images/bm(5).png" alt="Create app using import" title="Create app using import" style="border:1px solid gray; zoom:60%;">
 
 
 ### Components in the Incremental Import
@@ -163,44 +163,46 @@ To import a VA while creating it, follow these steps:
   <tr>
    <td>Knowledge Graph, Bot Synonyms and Standard Responses
    </td>
-   <td>Existing knowledge graph, bot synonyms, and standard responses in the target assistant are replaced with the imported ones.
+   <td>Existing knowledge graph, VA synonyms, and standard responses in the target assistant are replaced with the imported ones.
    </td>
   </tr>
   <tr>
    <td>Synonyms, Concepts, and Traits
    </td>
-   <td>They are imported from the source bot along with all their underlying terms, and replace the ones in the target bot.
+   <td>They are imported from the source VA along with all their underlying terms, and replace the ones in the target VA.
    </td>
   </tr>
   <tr>
    <td>Rules
    </td>
    <td>Rules will be imported only if their tagged dialog tasks are imported.<br><br>
-    <strong>Note</strong>: On-Prem customers can import the NLP components (Synonyms, Concepts, Rules, Traits) from a source bot of a higher version to a target bot of a lower version by checking the <strong>NLP Settings</strong> checkbox. However, Rules won’t import unless the tagged dialog tasks are also imported.
+    <strong>Note</strong>: On-Prem customers can import the NLP components (Synonyms, Concepts, Rules, Traits) from a source VA of a higher version to a target VA of a lower version by checking the <strong>NLP Settings</strong> checkbox. However, Rules won’t import unless the tagged dialog tasks are also imported.
    </td>
   </tr>
 </table>
 
 ## Exporting an Assistant
 
-You can export a bot’s definition and configuration using the Export option.
+You can export a VA’s definition and configuration using the Export option.
 
-**Important**: Export from a lower (not an end-of-life) version to a higher supported version is allowed for all the virtual assistants. However, a VA export from a higher environment and import to an environment running a lower version or lower patch is not supported.
+!!! Note
+
+    **Forward Compatibility is NOT SUPPORTED**. That is, Export from a lower (not an end-of-life) version to a higher supported version is allowed for all the virtual assistants. However, a VA export from a higher environment and import to an environment running a lower version or lower patch is not supported.
 
 When you export a assistant, it downloads a zipped file with the following parameters:
 
-* **botDefinition.json**: Includes metadata, tasks, bot and task-level synonyms, utterances, patterns, knowledge graph, standard responses, flows, and IDPs. You can select specific items to export from tasks, NLP data – NLP settings, utterances, standard responses – and Settings – bot settings, variables, IVR settings- while exporting the assistant.
-* **config.json**: Includes bot settings, bot variables, and IVR settings.
+* **appDefinition.json**: Includes metadata, tasks, VA and task-level synonyms, utterances, patterns, knowledge graph, standard responses, flows, and IDPs. You can select specific items to export from tasks, NLP data – NLP settings, utterances, standard responses – and Settings – VA settings, variables, IVR settings- while exporting the assistant.
+* **config.json**: Includes VA settings, VA variables, and IVR settings.
 * **Icon.png**: Includes the assistant icon.
 * **&lt;_Custom ScriptFile Name_.js> (if available)**: Includes a script file with JavaScript functions. When you upload this file, you can access the functions in the file from anywhere in the assistant.
 
 !!! note
 
-    The assistant and its components are given unique Reference IDs during export. These IDs help the platform to identify matching tasks in the target bot and update them.
+    The assistant and its components are given unique Reference IDs during export. These IDs help the platform to identify matching tasks in the target VA and update them.
 
 ### Export Modes
 
-You can export assistants in two modes: **Published** and **Latest Version**. Depending on the mode that is selected, the corresponding versions of the tasks are exported. You can select specific components to export from the tasks, NLP data, and bot settings in both the modes. Further individual Tasks can also be selected.
+You can export assistants in two modes: **Published** and **Latest Version**. Depending on the mode that is selected, the corresponding versions of the tasks are exported. You can select specific components to export from the tasks, NLP data, and VA settings in both the modes. Further individual Tasks can also be selected.
 
 #### Published Mode
 
@@ -255,7 +257,7 @@ When you export a VA in the Published mode, only the published versions of the t
 
     In Dialog tasks, only the nodes in the Published status get exported.
 
-#### **Latest Version**
+#### Latest Version
 
 When you export a VA in the Latest mode, the latest versions of the  tasks get exported, regardless of their publishing status. For example, if a VA consists of a published version of a task and also the version in Upgrade in Progress, the Upgrade in Progress version gets exported, whereas if it just has a Configured version, the configured version is exported. Refer to the table below to understand which versions of the tasks are exported in the Latest mode:
 
@@ -313,10 +315,7 @@ When you export a VA in the Latest mode, the latest versions of the  tasks get e
 5. In the Export tab, select either **Published** or **Latest Version** exporting mode.
 6. By default, all the components are selected for export. Deselect the items that you do not want to export.
 
-
-
-
-    ![alt_text](images/bm(10).png "image_tooltip")
+    <img src="../images/bm(10).png" alt=App export" title="App export" style="border:1px solid gray; zoom:60%;">
 
 7. For Tasks, you can further choose to export only select tasks. By default All Tasks are selected. Click the All Tasks link to open **Select Tasks** dialog to choose the tasks you want to export.
 
@@ -330,14 +329,7 @@ When you export a VA in the Latest mode, the latest versions of the  tasks get e
     * Dialog linked as part of sub-intent / interruption settings;
     * Any other scenario where a dialog execution could fail if a dependent task is not included;
 
-
-
-
-
-        ![alt_text](images/bm(1).png "image_tooltip")
-
-
-
+        <img src="../images/bm(1).png" alt="App export" title="App export" style="border:1px solid gray; zoom:60%;">
 
 9. Click **Export**. The export happens in the background and the **Download** button gets activated after it is complete. Click **Download** to download the file to your local computer.
 
@@ -426,7 +418,7 @@ When you export a VA, the following components get exported, depending on your L
 
 <li>General Settings
 
-<li>Bot name, description, and bot synonyms for each enabled language
+<li>Bot name, description, and VA synonyms for each enabled language
 
 <li>Language selection time frame (Bot Settings > Language Management)
 
@@ -459,13 +451,6 @@ When you export a VA, the following components get exported, depending on your L
   </tr>
 </table>
 
-## Universal and Child Bot Scenarios
-
-When exporting and importing universal and child VAs from a source environment to a destination environment, you should ensure the following:
-
-* All the child bots are imported before the universal bot.
-* When creating child bots, they propagate from the same source environment.
-
 ## Deleting an Assistant
 
 You cannot delete a VA if any of the tasks are Published. Once you publish a task, the Bots Admin must approve and assign it to users. The developer cannot delete assigned tasks. To delete a published task, the Bots Admin needs to suspend the task. Also, you cannot delete a VA if it is part of a published flow. You must delete the flow or remove the assistant from the flow before attempting to delete it.
@@ -485,9 +470,10 @@ To delete a Virtual Assistant:
 
 After creating a VA, you may need to edit it for various reasons such as changing its settings, adding tasks, enabling channels, and add flows. To track all the changes made to a VA, you can view the **Change Logs**, which show a chronological list of modifications to your assistant. It consists of all the changes from the initial save of your assistant to the last update. To view the changelog for a VA, follow these steps:
 
-1. Select **Deploy** tab from the top menu.
+1. Select **App Settings** from the left side menu.
 2. From the left menu click **Change Logs**.
-<img src="../images/bm(2).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
+
+    <img src="../images/bm(2).png" alt="image_tooltip" title="image_tooltip" style="border:1px solid gray; zoom:70%;">
 
 3. On the Change Logs page, you will notice the following;
     * The list is sorted in reverse chronological order.

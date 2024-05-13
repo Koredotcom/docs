@@ -2,7 +2,7 @@
 
 !!! Note
 
-        This page refers to the Dashboard page of the Admin Console, for information on the Analytics Dashboard of the XO Platform refer here.
+    This page refers to the Dashboard page of the Admin Console, for information on the Analytics Dashboard of the XO Platform refer here.
 
 Upon accessing the [Admin Console](../adminconsole){:target="_blank"}, you will be directed to its Dashboard page.
 
@@ -61,7 +61,7 @@ Post ver7.1 release of the XO Platform, you can filter the dashboard using meta 
 
 !!! Note
 
-        This option is available only when one assistant is selected. Tag selection will be reset if you change the selection.
+    This option is available only when one assistant is selected. Tag selection will be reset if you change the selection.
 
 The following table provides the widget-wise applicability of meta tags on the dashboard.
 

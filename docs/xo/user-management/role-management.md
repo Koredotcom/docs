@@ -36,7 +36,6 @@ The table below shows the permissions available within the XO Platform and their
     The Monitor Console permission is restricted to the Queues that the user is assigned to.
 
 ### APP OWNER
-### APP OWNER
 
 <table>
 <tr>
@@ -593,7 +592,6 @@ Allow users to Access and Manage Quality Management Module
 </tr>
 </table>
 
-### APP DEVELOPER
 ### APP DEVELOPER
 
 <table>
@@ -1086,7 +1084,6 @@ Allow users to Access and Manage Quality Management Module
 </table>
 
 ### APP TESTER
-### APP TESTER
 
 <table>
 <tr>
@@ -1577,7 +1574,6 @@ Allow users to Access and Manage Quality Management Module
 </tr>
 </table>
 
-### SUPERVISOR
 ### SUPERVISOR
 
 <table>
@@ -2070,7 +2066,6 @@ Allow users to Access and Manage Quality Management Module
 </table>
 
 ### AGENT
-### AGENT
 
 <table>
 <tr>
@@ -2561,7 +2556,6 @@ Allow users to Access and Manage Quality Management Module
 </tr>
 </table>
 
-### CUSTOM ROLE
 ### CUSTOM ROLE
 
 <table>

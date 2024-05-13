@@ -143,15 +143,16 @@ The following table displays the Dynamic Conversation features and the supported
 
 <table>
   <tr>
-    <td><strong> Model </strong> </td>
-    <td> Answer Generation  </td>
-    <td> GenAI Node  </td>
-    <td> GenAI Prompt  </td>
-    <td> Rephrase Dialog Responses  </td>
-    <td> Rephrase User Query  </td>
-    <td> Repeat Responses  </td>
-    <td> Vector Generation  </td>
-    <td> Zero-shot ML Model  </td>
+    <td><strong>Model</strong></td>
+    <td>Agent Response Rephrasing</td>
+    <td>Answer Generation</td>
+    <td>GenAI Node</td>
+    <td>GenAI Prompt</td>
+    <td>Repeat Responses</td>
+    <td>Rephrase Dialog Responses</td>
+    <td>Rephrase User Query</td>
+    <td>Vector Generation</td>
+    <td>Zero-shot ML Model</td>
   </tr>
   <tr>
     <td>Azure OpenAI – GPT 3.5 Turbo</td>
@@ -159,19 +160,21 @@ The following table displays the Dynamic Conversation features and the supported
     <td>✅</td>
     <td>✅</td>
     <td>✅</td>
-    <td>❌</td>
     <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
     <td>❌</td>
     <td>✅</td>
   </tr>
   <tr>
     <td>Azure OpenAI – GPT 4</td>
+    <td>❌</td>
+    <td>✅</td>
     <td>✅</td>
     <td>✅</td>
     <td>✅</td>
     <td>✅</td>
     <td>❌</td>
-    <td>✅</td>
     <td>❌</td>
     <td>✅*</td>
   </tr>
@@ -181,19 +184,21 @@ The following table displays the Dynamic Conversation features and the supported
     <td>✅</td>
     <td>✅</td>
     <td>✅</td>
-    <td>❌</td>
     <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
     <td>❌</td>
     <td>✅</td>
   </tr>
   <tr>
     <td>OpenAI – GPT 4</td>
+    <td>❌</td>
+    <td>✅</td>
     <td>✅</td>
     <td>✅</td>
     <td>✅</td>
     <td>✅</td>
     <td>❌</td>
-    <td>✅</td>
     <td>❌</td>
     <td>✅*</td>
   </tr>
@@ -201,10 +206,11 @@ The following table displays the Dynamic Conversation features and the supported
     <td>Anthropic – Claude Instant</td>
     <td>❌</td>
     <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
     <td>✅</td>
     <td>✅</td>
     <td>❌</td>
-    <td>✅</td>
     <td>❌</td>
     <td>❌</td>
   </tr>
@@ -212,36 +218,40 @@ The following table displays the Dynamic Conversation features and the supported
     <td>Anthropic – Claude</td>
     <td>❌</td>
     <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
     <td>✅</td>
     <td>✅</td>
     <td>❌</td>
-    <td>✅</td>
     <td>❌</td>
     <td>❌</td>
   </tr>
   <tr>
     <td>Custom LLM</td>
-    <td>✅</td>
+    <td>❌</td>
     <td>✅</td>
     <td>✅</td>
     <td>✅</td>
     <td>❌</td>
+    <td>✅</td>
     <td>❌</td>
     <td>❌</td>
     <td>❌</td>
   </tr>
   <tr>
     <td>Kore.ai XO GPT</td>
+    <td>❌</td>
     <td>✅</td>
     <td>❌</td>
     <td>❌</td>
-    <td>✅</td>
-    <td>✅</td>
     <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
     <td>✅</td>
     <td>❌</td>
   </tr>
 </table>
+
 
 
 \*  Currently, the Zero-shot ML Model does not support batch testing when using GPT 4.
@@ -252,6 +262,15 @@ The following table displays the Dynamic Conversation features and the supported
 
 
 ## Feature Details
+
+### Agent Response Rephrasing
+Agents will be able to choose the LLM to rephrase their responses in the following tones.
+
+* **Formalize**: Allows agents to elevate the formality of their writing, making it suitable for business or any other formal contexts.
+* **Friendly**: Offers suggestions and improvements to promote a friendly and approachable tone in text.
+* **Expand**: Allows agents to elevate the formality of their writing, making it suitable for business or any other formal contexts.
+* **Rephrase**: Allows agents to elevate the formality of their writing, making it suitable for business or any other formal contexts.
+
 
 ### Answer Generation
 

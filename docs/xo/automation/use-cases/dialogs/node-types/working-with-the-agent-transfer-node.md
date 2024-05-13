@@ -46,7 +46,7 @@ Follow the below steps to register your Agent Transfer app:
 
 For details on managing  the API integration, please see the following articles:
 
-1. [Enabling Agent Transfer API](https://developer.kore.ai/docs/bots/api-guide/enabling-agent-transfer-api/){:target="_blank"}
+1. [Enabling Agent Transfer API](../../../../../apis/automation/enabling-agent-transfer-api/){:target="_blank"}
 2. [Configuring Agent Transfer](../../../../../app-settings/integrations/agents/how-to-configure-agent-transfer){:target="_blank"}
 3. [BotKit SDK Tutorial – Agent Transfer](../../../../../sdk/tutorials/agent-transfer/){:target="_blank"}
 

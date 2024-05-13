@@ -21,5 +21,5 @@ When the **manual answer mode** is enabled, agents can click **Accept** to inter
 
 ### Auto-Answer Mode
 
-If you have enabled **auto-answer** mode, the Live Interaction section will automatically display and accept the interaction. For more information, refer to [Agent Settings > Answer Mode](https://docs.kore.ai/smartassist/user-management/agent-settings/#Answer_Mode).  
-<img src="../incoming-interactions/images/auto-answer.png" alt="Auto Answer" title="Auto Answer" style="border: 1px solid gray; zoom:80%;">
+If you have enabled **auto-answer** mode, the Live Interaction section will automatically display and accept the interaction. For more information, refer to [Agent Settings > Answer Mode](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#answer-mode).  
+<img src="../images/auto-answer.png" alt="Auto Answer" title="Auto Answer" style="border: 1px solid gray; zoom:80%;">
