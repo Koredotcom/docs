@@ -16,12 +16,10 @@ Currently, Search AI provides a connector for ServiceNow. The list will continue
 Search AI supports two types of authorization mechanisms. 
 
 1. **Basic**: Basic Authorization involves sending a username and password with each request. These credentials are encoded and sent as a Base64-encoded string in the request header.
-
 To use this type of authorization, provide your **username** and **password**. 
 
 2. **OAuth 2.0**: The OAuth 2.0 framework allows third-party applications to access resources on behalf of a user without sharing the credentials. It involves the exchange of access tokens between the client application and the authorization server. 
-
-**To use this type of authorization mechanism, register Search AI as an Inbound OAuth client in your backend application.**
+To use this type of authorization mechanism, **register Search AI as an Inbound OAuth client in your backend application.**
 
 OAuth 2.0 protocol defines several grant types for different use cases. Each grant type is designed to address specific authorization scenarios. 
 
@@ -29,7 +27,7 @@ Currently, SearchAI supports the following two grant types:
 
 1. **Client credentials Grant Type**: In this type, the client application(SearchAI, here) directly accesses the resources from the backend application. The client sends the client ID and client secret and gets an access token to access the resources directly. 
 
-For this type of authentication, provide the **client ID** and **client secret** generated after registering Search AI as an OAuth client application. 
+    For this type of authentication, provide the **client ID** and **client secret** generated after registering Search AI as an OAuth client application. 
 
 2. **Authorization Code Grant Type**: In the type, the client application(SearchAI) accesses the resources on behalf of a user. When the client communicates with the backend application, after verification of the client ID and client secret, it is redirected to the login process when the user needs to log in and provide consent to access the resources.
 
