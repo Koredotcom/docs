@@ -62,7 +62,7 @@ For detailed information and step-by-step instructions, refer to [this](https://
 
 To complete the integration, do the following configuration in the connector. 
 
-1. Go to **_Connectors _**under the **_Sources_** tab. 
+1. Go to **Connectors**under the **Sources** tab. 
 2. On the authorization tab, provide the config parameters. 
     * For Basic Auth, provide the connector name, username, password, and Confluence server host URL.
     * For OAuth 2.0 Authentication, enter the connector name, Client ID, Client Secret (as generated in the previous step), and Confluence server base URL and domain name.

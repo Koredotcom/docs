@@ -37,7 +37,6 @@ To configure Zendesk as a content source, it requires:
 The first step is to set up an OAuth client in Zendesk and generate OAuth credentials that SearchAI can use to authenticate the requests sent to Zendesk.  
 
 1. Go to the **Admin Center** in your Zendesk application.
-
 ![Admin Center](../images/zendesk/admin-center.png "Admin Center")
 
 2. Register Search AI as OAuth Client. Refer to [this documentation](https://support.zendesk.com/hc/en-us/articles/4408845965210-Using-OAuth-authentication-with-your-application#topic_s21_lfs_qk) for information about the fields required in the configuration.  Set the **_Redirect URLs _**field to point to your SearchAssist instance. You can use one of the following callback URLs as per your region.

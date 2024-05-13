@@ -1,4 +1,4 @@
-# **Dropbox Connector**
+# Dropbox Connector
 
 If you are using Dropbox to store and manage your content, you can easily search through that content using the Dropbox connector provided by Search AI. 
 
@@ -34,7 +34,7 @@ To configure the Dropbox Connector:
 * Configure the Dropbox connector in the SearchAssist application.
 
 
-# Step 1: Configure an application in the Dropbox Account
+## Step 1: Configure an application in the Dropbox Account
 
 To create an application in the Dropbox account, log in to the [Dropbox Developer Portal](https://www.dropbox.com/developers/apps). Create a new app. On the Create app widget, under Choose an API, select Scoped access and select the type of access you need. 
 
@@ -50,7 +50,7 @@ Enable the following minimum permissions.
 * files.content.read
 * sharing.read
 
-![Permissions](../images/dropbox/permission-types.png "Permissions")
+![Permissions](../images/dropbox/permissions-types.png "Permissions")
 
 
 Set the Redirect URIs under the Settings tab to the following URL.
@@ -66,7 +66,7 @@ Save the **App key** and **App secret** displayed on this page. These credential
 
 
 
-# Step 2: Configuring the Dropbox connector in the SearchAssist application
+## Step 2: Configuring the Dropbox connector in the SearchAssist application
 
 To complete the integration, log in to your Search AI application. Go to the Connectors under the Sources and select **Dropbox** connector.  Provide the following config parameters on the **Authorization** tab and click Connect. 
 
