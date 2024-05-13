@@ -39,11 +39,11 @@ If you are using Basic authentication, skip this step. To use OAuth 2.0 for auth
 
 ![ServiceNow Authorization](../images/connectors/servicenow/authorization-tab.png "ServiceNow Authorization")
 
-**Name** - Give a unique name to the connector.
-**Client ID** - The auto-generated unique ID of the application.
-**Client Secret**- The secret generated while configuring the OAuth.
-**Host URL**- Host of your ServiceNow instance.
-**Username**- Username to authenticate with the instance.
-**Password** - Password to authenticate with the instance.
+* **Name** - Give a unique name to the connector.
+* **Client ID** - The auto-generated unique ID of the application.
+* **Client Secret**- The secret generated while configuring the OAuth.
+* **Host URL**- Host of your ServiceNow instance.
+* **Username**- Username to authenticate with the instance.
+* **Password** - Password to authenticate with the instance.
 
 Click the **Connect** button to initiate authorization with the application. 
