@@ -18,7 +18,7 @@ Streaming for Play HT Text-to-Speech (TTS) is now supported. With streaming supp
 
 #### Delete Call Recording API
 
-Applications with relevant access can delete call recordings using a Session ID for storage management while complying with privacy regulations. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/delete-call-recording.md).
+Applications with relevant access can delete call recordings using a Session ID for storage management while complying with privacy regulations. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/delete-call-recording.md)
 
 <hr>
 
