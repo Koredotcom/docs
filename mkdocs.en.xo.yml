@@ -274,6 +274,10 @@ nav:
             - Connectors:
                 - Introduction: searchai/content-sources/connectors.md
                 - ServiceNow Connector: searchai/content-sources/servicenow.md
+                - Dropbox Connector: searchai/content-sources/connectors/dropbox.md
+                - Google Drive Connector: searchai/content-sources/connectors/googledrive.md
+                - Zendesk Connector: searchai/content-sources/connectors/zendesk.md
+                - Confluence Server Connector: searchai/content-sources/connectors/confluence-server.md
         - Extraction Strategy: searchai/content-extraction/extraction.md
         - Workbench:
             - Introduction: searchai/workbench/introduction.md
