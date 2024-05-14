@@ -19,17 +19,11 @@ A Conversation-driven Dialog builder automatically converts conversation compone
 * Improved usability and intuitiveness.
 * Automatic sync between the views i.e changes to one view updates the other.
 
-## Conversation View
-
-BAs/Conversation Designers can define a dialog in _conversation view_. This view consists of a conversation flow as a series of bot messages and user messages. Where appropriate, BAs can add Action nodes that would be configured during the bot development.
-
 !!!note
 
     This document lists the features available exclusively in the conversation builder. This is in addition to the features available on Storyboard that are common to both storyboard and conversation builder. For the common features refer here.
 
-## Build View
-
-The conversation view can be expanded by providing the necessary logic and fulfillment elements in the Build View. 
+## New Dialog Builder
 
 This is the new dialog builder with the options to drag and drop or add the necessary nodes. The entity, message, and other nodes along with the appropriate connections are generated automatically based on the conversation designed by the BA/conversation designer.
 
@@ -39,7 +33,7 @@ You can access this view by clicking **Virtual Assistant** > **Use Cases** > **D
 
 <img src="../images/access-dialogs.png" alt="access dialogs" title="access dialogs" style="border: 1px solid gray; zoom:75%;">
 
-## Conversation Builder
+## Create and Configure a Dialog
 
 You can initiate a Conversation-driven Dialog Builder with the following steps:
 
