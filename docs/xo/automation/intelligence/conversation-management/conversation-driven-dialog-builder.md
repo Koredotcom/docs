@@ -36,25 +36,25 @@ You can initiate a Conversation-driven Dialog Builder with the following steps:
 
 4. Configure the fields based on the option you select:
 
-  **(Option A)**: **Start From Scratch**
+**(Option A): Start From Scratch**
     
   Enter the following and click **Proceed**.
- * **Intent Name**: For example, "*Create Savings Account*."
- * **Description**: Provide a description based on the intent for the dialog you're creating.
- * **Intent Training** – Enter utterances that would trigger this intent.
- * **More Options**: You can set the following options:
-   * **Customer Use Case**: Enable this option to make the use case available to the customer.
-   * **Agent AI Use Case**: Enable this option to make the use case available on Agent AI for an agent and select one the following scenarios based on your requirement:
-     * **During Chats**: To manually or automatically trigger a use case by the agent when engaged with a customer in a chat based channel.
-     * **During Email**: To manually or automatically trigger a use case by the agent when engaged with a customer in an email channel.
-     * **During Calls**: To manually or automatically trigger a use case by the agent when engaged with a customer on a phone call.
-     * **Launch By Menu**: To list the use case in the AgentAssist library allowing the agent to browse and find use case to trigger it.
-    * **Intent Settings**: You can set how the dialog task will be presented to the bot based on the intent by selecting one of these options:
-    * **Sub intent dialog**: Task can be invoked only as a sub-task when another task is in progress. Task will not be presented as a bot task when user requests for help.
-    * **Hide from help**: Task will not be presented as a bot task when the user requests for help. Users can invoke this task anytime while talking to the bot.
-    * **Analytics - Containment Type**: When you leave a conversation without providing an input, then the platform considers that conversation as a **Drop Off**. Drop off also results in scenarios where the virtual assistant asks input for feedback or when it asks if there is  ‘anything else’ with which it can help you. At times even if the tasks are helper tasks, they still lead to higher drop-off rates. To prevent this, while creating a dialog task you are provided with an option to configure the containment type as either drop-off or a self-service, when the user abandons the conversation. Based on the user abandonment type, select one of the following:
-    * **Abandonment as Self-Service**: Conversations abandoned by users while executing this Dialog are considered 'Self-service Conversations'. Other failures are considered 'Drop-off Conversations'.
-    * **Abandonment as Drop Off**: Conversations abandoned by users or any failures during execution of this Dialog will be considered as Drop off.
+<ul><li><b>Intent Name</b>: For example, "<i>Create Savings Account</i>."</li>
+<li><b>Description</b>: Provide a description based on the intent for the dialog you're creating.</li>
+<li><b>Intent Training</b> – Enter utterances that would trigger this intent.</li>
+<li><b>More Options</b>: You can set the following options:</li>
+     <ul><li><b>Customer Use Case</b>: Enable this option to make the use case available to the customer.</li>
+     <li><b>Agent AI Use Case</b>: Enable this option to make the use case available on Agent AI for an agent and select one the following scenarios based on your requirement:</li>
+       <ul><li><b>During Chats</b>: To manually or automatically trigger a use case by the agent when engaged with a customer in a chat based channel.</li>
+       <li><b>During Email</b>: To manually or automatically trigger a use case by the agent when engaged with a customer in an email channel.</li>
+       <li><b>During Calls</b>: To manually or automatically trigger a use case by the agent when engaged with a customer on a phone call.</li>
+       <li><b>Launch By Menu</b>: To list the use case in the AgentAssist library allowing the agent to browse and find use case to trigger it.</li></ul>
+     <li><b>Intent Settings</b>: You can set how the dialog task will be presented to the bot based on the intent by selecting one of these options:</li>
+       <ul><li><b>Sub intent dialog</b>: Task can be invoked only as a sub-task when another task is in progress. Task will not be presented as a bot task when user requests for help.</li>
+      <li><b>Hide from help</b>: Task will not be presented as a bot task when the user requests for help. Users can invoke this task anytime while talking to the bot.</li>
+      <li><b>Analytics - Containment Type</b>: When you leave a conversation without providing an input, then the platform considers that conversation as a <b>Drop Off</b>. Drop off also results in scenarios where the virtual assistant asks input for feedback or when it asks if there is  ‘anything else’ with which it can help you. At times even if the tasks are helper tasks, they still lead to higher drop-off rates. To prevent this, while creating a dialog task you are provided with an option to configure the containment type as either drop-off or a self-service, when the user abandons the conversation. Based on the user abandonment type, select one of the following:</li>
+    <ul><li><b>Abandonment as Self-Service</b>: Conversations abandoned by users while executing this Dialog are considered 'Self-service Conversations'. Other failures are considered 'Drop-off Conversations'.</li>
+    <li><b>Abandonment as Drop Off</b>: Conversations abandoned by users or any failures during execution of this Dialog will be considered as Drop off.</li></ul></ul></ul>
 
 !!!note
 
@@ -63,7 +63,7 @@ You can initiate a Conversation-driven Dialog Builder with the following steps:
 
 <img src="../images/create-custom-dialog.png" alt="create custom dialog" title="create custom dialog" style="border: 1px solid gray; zoom:75%;">
 
-**(Option B)**: **Gen AI** 
+**(Option B): Gen AI** 
 
 Uses Gen AI to generate a dialog task from a preexisting template based on the intent you provide. Enter the following to generate the dialog and click **Generate**.
 * **Intent Name**: For example, "*Create Savings Account*."
