@@ -61,13 +61,18 @@ You can initiate a Conversation-driven Dialog Builder with the following steps:
 <p>By default  'Abandonment as Drop Off' is selected as an option for Analytics – Containment Type. In this case, any conversation abandoned by the user is considered a drop-off during dialog execution.
 If you select Abandonment as Self-Service, then any conversation abandoned by the user is considered a self-service conversation.  However, any script, service or any other failures are considered as drop-off conversations.</p></div>
 
-<img src="../images/create-custom-dialog.png" alt="create custom dialog" title="create custom dialog" style="border: 1px solid gray; zoom:75%;"></ul></ul>
+<li><b>Conversation Context</b>: Define the conversation context based on the intent detection by choosing one of the following options:
+<ul><li><b>Intent Preconditions</b>: The intent will be detected only if any of the context tags specified as pre-conditions are available in the context at the time of intent detection. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/context-management/#intent-preconditions" target="_blank">Learn more</a>.</li>
+<li><b>Context Output</b>: Define the context tags to be set in the context when this intent is initiated.</li></ul>
+<img src="../images/create-custom-dialog.png" alt="create custom dialog" title="create custom dialog" style="border: 1px solid gray; zoom:75%;">
+</ul></ul>
 
 **(Option B): Gen AI**
 
 Uses Gen AI to generate a dialog task from a preexisting template based on the intent you provide. Enter the following to generate the dialog and click **Generate**.
-* **Intent Name**: For example, "*Create Savings Account*."
-* **Description**: Provide a description based on the intent for the dialog you're creating.
+
+<ul><li><b>Intent Name</b>: For example, "<i>Create Savings Account</i>."
+<li><b>Description</b>: Provide a description based on the intent for the dialog you're creating.</li></ul>
     
 <img src="../images/gen-ai-based-dialog.png" alt="gen ai dialog" title="gen ai dialog" style="border: 1px solid gray; zoom:75%;">
 
