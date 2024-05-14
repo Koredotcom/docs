@@ -36,7 +36,9 @@ You can initiate a Conversation-driven Dialog Builder with the following steps:
 
 4. Configure the fields based on the option you select:
 
-  * **(Option A)**: For **Start From Scratch**, enter the following and click **Proceed**.
+    **(Option A)**: **Start From Scratch**
+    
+    Enter the following and click **Proceed**.
     * **Intent Name**: For example, "*Create Savings Account*."
     * **Description**: Provide a description based on the intent for the dialog you're creating.
     * **Intent Training** – Enter utterances that would trigger this intent.
@@ -61,15 +63,19 @@ You can initiate a Conversation-driven Dialog Builder with the following steps:
 
 <img src="../images/create-custom-dialog.png" alt="create custom dialog" title="create custom dialog" style="border: 1px solid gray; zoom:75%;">
 
-* **(Option B)**: **Gen AI** uses Gen AI to generate a dialog task from a preexisting template based on the intent you provide. Enter the following to generate the dialog and click **Generate**.
-    * **Intent Name**: For example, "*Create Savings Account*."
-    * **Description**: Provide a description based on the intent for the dialog you're creating.
+**(Option B)**: **Gen AI** 
+
+Uses Gen AI to generate a dialog task from a preexisting template based on the intent you provide. Enter the following to generate the dialog and click **Generate**.
+* **Intent Name**: For example, "*Create Savings Account*."
+* **Description**: Provide a description based on the intent for the dialog you're creating.
     
-    <img src="../images/gen-ai-based-dialog.png" alt="gen ai dialog" title="gen ai dialog" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/gen-ai-based-dialog.png" alt="gen ai dialog" title="gen ai dialog" style="border: 1px solid gray; zoom:75%;">
 
-    A preview of the auto-generated dialog flow appears on the right pane. You can either click **Proceed** to create the dialog, or **Regenerate** to generate another dialog flow based on your intent.
+A preview of the auto-generated dialog flow appears on the right pane. You can either click **Proceed** to create the dialog, or **Regenerate** to generate another dialog flow based on your intent.
 
-    <img src="../images/preview-gen-a-dalog.png" alt="gen ai dialog preview" title="gen ai dialog preview" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/preview-gen-a-dalog.png" alt="gen ai dialog preview" title="gen ai dialog preview" style="border: 1px solid gray; zoom:75%;">
 
-* **(Option C)**:To find and install a third-party dialog template out of 150+ categories and 30+ integrations, select **Marketplace**.
+**(Option C): Marketplace**
+
+To find and install a third-party dialog template out of 150+ categories and 30+ integrations, select **Marketplace**.
 <img src="../images/market-place-dialogs.png" alt="marketplace dialogs" title="marketplace dialogs" style="border: 1px solid gray; zoom:75%;">
