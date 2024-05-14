@@ -36,7 +36,7 @@ You can initiate a Conversation-driven Dialog Builder with the following steps:
 
 4. Configure the fields based on the option you select:
 
-  * **(Option A)**: For **Start From Scratch**, enter the following:
+  * **(Option A)**: For **Start From Scratch**, enter the following and click **Proceed**.
     * **Intent Name**: For example, "*Create Savings Account*."
     * **Description**: Provide a description based on the intent for the dialog you're creating.
     * **Intent Training** – Enter utterances that would trigger this intent.
@@ -58,8 +58,6 @@ You can initiate a Conversation-driven Dialog Builder with the following steps:
 
     By default  'Abandonment as Drop Off' is selected as an option for Analytics – Containment Type. In this case, any conversation abandoned by the user is considered a drop-off during dialog execution.
     If you select Abandonment as Self-Service, then any conversation abandoned by the user is considered a self-service conversation.  However, any script, service or any other failures are considered as drop-off conversations.
-
-Click **Proceed**.
 
 <img src="../images/create-custom-dialog.png" alt="create custom dialog" title="create custom dialog" style="border: 1px solid gray; zoom:75%;">
 
