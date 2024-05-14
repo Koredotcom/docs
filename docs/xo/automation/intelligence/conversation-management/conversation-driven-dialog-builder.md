@@ -26,15 +26,9 @@ You can access this view by clicking **Virtual Assistant** > **Use Cases** > **D
 
 ## Create and Configure a Dialog
 
-You can initiate a Conversation-driven Dialog Builder with the following steps:
+You can initiate a Conversation-driven Dialog Builder with the steps mentioned [here](/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/#create-a-dialog-task){target="_blank"}.
 
-1. Select the bot you want to design the conversation
-2. From the left menu, click **Virtual Assistant** > **Use Cases** > **Dialogs**.
-3. Click **Create Dialog** and select the required option based on whether you want to create a custom dialog or use AI for the same.
-<img src="../images/create-new-dialog.png" alt="create new dialog" title="create new dialog" style="border: 1px solid gray; zoom:75%;">
-<img src="../images/select-dialog-option.png" alt="select dialog option" title="select dialog option" style="border: 1px solid gray; zoom:75%;">
-
-4. Configure the fields based on the option you select:
+Configure the fields based on the option you select:
 
 **(Option A): Start From Scratch**
     
@@ -84,3 +78,15 @@ A preview of the auto-generated dialog flow appears on the right pane. You can e
 
 To find and install a third-party dialog template out of 150+ categories and 30+ integrations, select **Marketplace**.
 <img src="../images/market-place-dialogs.png" alt="marketplace dialogs" title="marketplace dialogs" style="border: 1px solid gray; zoom:75%;">
+
+## Navigating Dialog Tasks
+
+Please click [here](/docs/xo/automation/use-cases/dialogs/navigating-dialog-tasks/){target="_blank"} to learn more.
+
+## Dialog Builder Components
+
+To learn more about the components available on the Dialog Builder Panel, click [here](/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/#dialog-task-builder-overview){target="_blank"}.
+
+## Node Types
+
+Please click [here](/docs/xo/automation/use-cases/dialogs/node-types/nodes-transitions/#node-types){target="_blank"} to learn more about the node types supported on UXO Platform's Dialog Builder.
