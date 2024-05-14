@@ -6,7 +6,11 @@ This document provides information on the feature updates and enhancements intro
 
 <u>Patch Release</u>
 
-This update includes bug fixes.
+This update includes feature enhancements and bug fixes. Key enhancement included in this release is summarized below.
+
+### Extended Connector Support
+
+In addition to the existing ServiceNow connector, Search AI now supports more knowledge base connectors, including Zendesk, Confluence Server, Google Drive, and Dropbox. The new connectors make it easier to integrate Search AI with these platforms, helping users quickly find and access information to boost productivity. [Learn more :octicons-arrow-right-24:](../../searchai/content-sources/connectors.md)
 
 <hr>
 
