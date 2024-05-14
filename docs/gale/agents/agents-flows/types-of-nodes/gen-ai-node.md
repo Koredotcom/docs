@@ -66,5 +66,5 @@ The output of the Gen AI node is stored in a context variable and can be accesse
 
 !!! note 
     
-    GALE can automatically recognize variables/outputs. To do this, just type "context.steps." and you will see possible context variables/nodes and then their outputs, etc.
+    GALE can automatically recognize variables/outputs. To do this, just type "context.steps." and you will see available context variables/nodes, including the nodes' outputs.
 
