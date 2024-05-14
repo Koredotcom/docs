@@ -26,21 +26,19 @@ Steps to add and configure the node:
     * **System Prompt**: Enter the System Prompt for your use case. 
     For example, “Go through the conversation and identify the intent of the conversation.”
 
-    * **Prompt**: It allows you to pass a variable to the system prompt. For example, you can store the conversation transcript in a variable named “transcript” and pass that on to identify the intent. 
+    * **Prompt**: It allows you to pass a variable to the system prompt. For example, you can store the conversation transcript in a variable named “transcript” and pass that on to identify the intent.  
     Format: 
-    
-    ~~~
-    {{context.variable_name}}
-    ~~~
-
-    Example:
-    
-    ~~~
-    {{context.transcript}}
-    ~~~
-    <img src="../images/gen-ai-detect-intent-node.png" alt="Configure System Prompt and Prompt" title="Configure System Prompt and Prompt" style="border: 1px solid gray; zoom:80%;">
-
-    * **Examples**: Add a few relevant examples to guide the model. Click the arrow to add examples of User input and expected AI output. 
+        ~~~
+        {{context.variable_name}}
+        ~~~
+ 
+        Example:     
+        ~~~
+        {{context.transcript}}
+        ~~~  
+   
+    * **Examples**: Add a few relevant examples to guide the model. Click the arrow to add examples of User input and expected AI output.  
+    <img src="../images/gen-ai-detect-intent-node.png" alt="Configure System Prompt and Prompt" title="Configure System Prompt and Prompt" style="border: 1px solid gray; zoom:80%;"> 
 
     * **Hyperparameters**: Hyperparameters allow you to fine-tune the AI model's behavior to suit your needs. While the default settings work well for most cases, you can adjust them to find the right balance for your use case.
 
