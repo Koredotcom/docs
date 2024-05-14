@@ -1,98 +1,80 @@
 # Gen AI Node
 
-Using the Gen AI node, you can establish connections to any model that you have configured within the Model Studio.
+The Gen AI node allows you to use LLM and Generative AI models to create custom prompts for your specific use case. You can choose a model, adjust its settings, and view the generated response.
 
-You can harness the power of expansive language models such as ChatGPT for tasks such as content creation, summarization, translation, and so on.
+## Add and Configure a Gen AI Node
 
-## Add a New Gen AI Node
+Setting up a Gen AI node in an Agent Flow involves adding the node at the appropriate location in the flow and configuring various properties of the node, as explained below.
 
-**To add a Gen AI** node, follow these steps:
+Steps to add and configure the node:
 
-1. Open the required agent from the list of agents to create the flow.
-2. Click **Agent flow** from the left navigation bar. The **Agent** flow page is displayed.
-3. Click **Go to flow** to open the flow builder page.
+1. Open the Agent Flow to which you want to add the node: go to **Agents** > **Agent Flow** > **Go to Flow**.  
+<img src="../images/go-to-flow-canvas.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
 
-    <img src="../images/go-to-flow-canvas.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
+2. The Agent Flow opens in the Flow Builder. Click the “**+**” icon on the **Start** node or any existing node on the canvas and select **Gen AI** from the pop-up menu. (Alternatively, you can drag the **Gen AI** node from the Assets panel onto the canvas.)  
+<img src="../images/connect-start-to-gen-ai.png" alt="Connect Start to Gen AI" title="Connect Start to Gen AI" style="border: 1px solid gray; zoom:80%;">
 
-    The **Agents Flow** canvas is displayed, and you can start creating a new flow.
+3. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
+<img src="../images/configure-gen-ai-node.png" alt="Configure Gen AI Node" title="Configure Gen AI Node" style="border: 1px solid gray; zoom:80%;">
 
-1. You can add a new node in 2 ways:
+4. Enter or select the following **General Settings**:
 
-    * Click the down arrow corresponding to the node from the **Assets** section from the left navigation bar of the Agents page and then click **+New Gen AI**.
-
-    Or
-
-    * Click **Gen AI** from the bottom bar of the Agents page.
-
-    <img src="../images/add-a-new-gen-ai-node.png" alt="Add a New Gen AI Node" title="Add a New Gen AI Node" style="border: 1px solid gray; zoom:80%;">
-
-    The Gen AI node is created on the canvas and you can now define the node's properties by clicking on the node. You can drag and move a node to any location on the canvas.
-
-    !!! note
-
-        The start node is displayed by default on the flow builder.
-
-    <img src="../images/connect-start-to-gen-ai.png" alt="Connect Start to Gen AI" title="Connect Start to Gen AI" style="border: 1px solid gray; zoom:80%;">
-
-
-## Configure the Gen AI Node
-
-You can configure a Gen AI node and connect to any model.
-
-**To configure the Gen AI node, follow these steps:**
-
-1. Add a Gen AI node to the canvas.
-2. Click the **Gen AI** node and the general properties dialog for the node is displayed on the right side of the page as shown in the following image.
-
-    <img src="../images/configure-gen-ai-node.png" alt="Configure Gen AI Node" title="Configure Gen AI Node" style="border: 1px solid gray; zoom:80%;">
-
-1. Enter a **Custom Name** for the node.
-2. Select a model from the list. You can see the AI models that you have already configured in the Models section of GALE. For more information about configuring a model, see [Model Studio](../../../models/overview.md).
-3. Enter a **System prompt** and the **Prompt** you want to test with your selected model. The System Prompt is the custom prompt based on your use case for an LLM to generate text or translate and so on. The Prompt allows you to pass the variables to the system prompt.
-       
-    **System prompt example**: Create a prompt which asks the user their name and age which can create a workout routine.
-
-    **Prompt example**: 
-    ~~~
-    {{context.variable_name}}
-    ~~~
-
-
-4. Click the arrow in the **Examples** section on the **AI node settings** dialog to write an example user Input and an expected AI output for a model to create/generate based on the example given here.
-5. Select the required **Hyperparameters**. The parameters that are displayed are based on the AI model you selected. For a given LLM used in the Gen AI node, you can configure different hyperparameter attributes which alter the result of the Gen AI node.
-
-    * **Temperature**: This parameter controls the randomness of the model's responses. A high temperature (e.g., 0.7) results in more random outputs, while a low temperature (for example, 0.2) makes the model's outputs more deterministic and focused on the most likely completion.
+    * **Custom Name**: Enter an appropriate name for the node.
     
-    * **Max Tokens**: This parameter sets the maximum length of the model's output. If you set max tokens to a low value, the model will generate a shorter response. If you set it to a high value, the model will generate a longer response. 
+    * **Select Model**: Select a model from the list of configured models. (For more information on models, see Model Studio.)
+
+    * **System Prompt**: Enter the System Prompt for your use case. 
+    For example, “Go through the conversation and identify the intent of the conversation.”
+
+    * **Prompt**: It allows you to pass a variable to the system prompt. For example, you can store the conversation transcript in a variable named “transcript” and pass that on to identify the intent.  
+    Format: 
+        ~~~
+        {{context.variable_name}}
+        ~~~
+ 
+        Example:     
+        ~~~
+        {{context.transcript}}
+        ~~~  
+   
+    * **Examples**: Add a few relevant examples to guide the model. Click the arrow to add examples of User input and expected AI output.  
+    <img src="../images/gen-ai-detect-intent-node.png" alt="Configure System Prompt and Prompt" title="Configure System Prompt and Prompt" style="border: 1px solid gray; zoom:80%;"> 
+
+    * **Hyperparameters**: Hyperparameters allow you to fine-tune the AI model's behavior to suit your needs. While the default settings work well for most cases, you can adjust them to find the right balance for your use case.
+
+        * **Temperature**: Controls the randomness of the model's responses. Higher values lead to more random outputs, while lower values result in more focused outputs.
+
+        * **Max Tokens**: Sets the maximum length of the model's output. Lower values generate shorter responses, while higher values produce longer responses.
+
+        * **Frequency Penalty**: Penalizes common or frequent tokens, making the model's output less generic. Higher values produce more unique outputs, while lower values result in more common outputs.
+
+        * **Presence Penalty**: Penalizes new or rare tokens, making the model's output more common. Higher values lead to more common outputs, while lower values result in more unique outputs.
+
+        * **Top P**: Controls the diversity of the model's output by considering only the top tokens whose cumulative probability exceeds a threshold. Higher values produce more diverse outputs, while lower values result in more deterministic outputs.
+
+5. Click the **Connections** icon and select the **Go to Node** for both success and failure conditions.  
+<img src="../images/gen-ai-actions.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:50%;">
+
+    1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a Gen AI node, Function node, Condition node, API node, or End node.
+
+    2. **On Failure** > **Go to Node**: If the execution of the current node fails, go to the End node to display any custom error message from the Gen AI node.
+
+6. Finally, test the flow and fix any issues found. Click the **Run Flow** button at the top-right corner of the flow builder.
+
+!!! failure "Standard Error"
+
+    When the Model is not selected, the prompt details are not provided, or both, the following error message is displayed: “Proper data needs to be provided in the LLM node”.
+
+
+## Access the Output of the Gen AI Node
+
+The output of the Gen AI node is stored in a context variable and can be accessed via 
+~~~
+{{context.steps.GenAINodeName.output}}
+~~~
+
+!!! note 
     
-    * **Frequency Penalty**: This parameter penalizes common or frequent tokens, making the model's output less generic. A high frequency penalty (for example, 0.8) will make the model's output more unique, while a low frequency penalty (for example, 0.2) will make the output more common. 
-    
-    * **Presence Penalty**: This parameter penalizes new or rare tokens, making the model's output more common. A high presence penalty (for example, 0.8) will make the model's output more common, while a low presence penalty (for example, 0.2) will make the output more unique.
-    
-    * **Top P**: This parameter, also known as nucleus sampling, controls the diversity of the model's output. It sets a threshold where the model will only consider the top tokens whose cumulative probability exceeds the threshold. A high top P (for example, 0.9) will make the model's output more diverse, while a low top P (for example, 0.1) will make the output more deterministic.
-
-        You can access the output of Gen AI with the syntax: 
-
-        ```
-        {{context.steps.YOURGENAINODENAME.output}}. 
-        ```
-
-        Also, GALE has been integrated in such a way that it can auto recognize variables / outputs. 
-
-        Type "context.steps." and it displays the possible context variables / nodes and then their outputs, and so on.
-
-6. Click the **Actions** icon and select the actions that you want the node to trigger when the Gen AI node is successful or when it fails.
+    GALE can automatically recognize variables/outputs. To do this, just type "context.steps." and you will see available context variables/nodes, including the nodes' outputs.
 
 
-    <img src="../images/gen-ai-actions.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:50%;">
-    
-## Status Codes
-
-**Errors**
-
-* “Proper data needs to be provided in the LLM node” error is displayed when the Model/prompt is not selected.
-
-**Connection**:
-
-* **On Success**: On successful execution of the current node this connection can be linked with another node such as Gen AI node, Function node, Condition node, API node, or an End node.
-* **On Failure**: On failure in execution of the current node this connection should be linked with an End node to display the custom error message from the Gen AI node.
