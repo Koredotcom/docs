@@ -499,7 +499,7 @@ This default behavior is ideal for most of the use cases. However, you can custo
 
 You can build custom business logic to analyze ambiguous intents, define appropriate conversation flow using a Dialog Task, and associate it with the Ambiguous Intents Identified event. 
 
-By customizing the flow, you can avoid displaying ambiguous intents to the end user and redirect the conversation to the desired task. You can use the `koreUtil.getAmbiguousIntents()` function to retrieve the list of ambiguous intents and their confidence scores. For more information on the function, click [here](/docs/xo/apis/koreutil-libraries/){target="_blank"}.
+By customizing the flow, you can avoid displaying ambiguous intents to the end user and redirect the conversation to the desired task. You can use the `koreUtil.getAmbiguousIntents()` function to retrieve the list of ambiguous intents and their confidence scores. For more information on the function, click [here](/docs/xo/apis/automation/koreutil-libraries/#koreutilgetambiguousintents){target="_blank"}.
 
 <img src="../images/ambiguous-intents-event-window.png" alt="ambiguous intents event" title="ambiguous intents event" style="border: 1px solid gray; zoom:75%;">
 
