@@ -6,11 +6,6 @@ Developing the Dialog Task Builder involves manual effort in understanding and c
 
 A Conversation-driven Dialog builder automatically converts conversation components into a Dialog Task. Designers can focus on visualizing the end-user conversation before building the dialog. Since the conversation flow is automatically generated, developers can focus on the more technical aspects. This not only reduces the development effort but also ensures that the bot is closer to the actual design.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This feature was released with v9.0 of the platform and is in  (beta) state.</p>
-</div>
-
 ## Features
 
 * An integrated approach for conversation designers (or business analysts) and developers to collaboratively build a dialog.
@@ -18,10 +13,6 @@ A Conversation-driven Dialog builder automatically converts conversation compone
 * Auto-generation of tasks, fine tuning the configurations and expand on top of the conversation flow to provide the necessary logic and fulfillment elements leading to a fully functional bot.
 * Improved usability and intuitiveness.
 * Automatic sync between the views i.e changes to one view updates the other.
-
-!!!note
-
-    This document lists the features available exclusively in the conversation builder. This is in addition to the features available on Storyboard that are common to both storyboard and conversation builder. For the common features refer here.
 
 ## New Dialog Builder
 
