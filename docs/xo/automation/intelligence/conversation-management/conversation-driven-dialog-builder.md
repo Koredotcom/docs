@@ -36,7 +36,7 @@ You can initiate a Conversation-driven Dialog Builder with the following steps:
 
 4. Configure the fields based on the option you select:
 
-    **(Option A)**: **Start From Scratch**
+   **(Option A)**: **Start From Scratch**
     
     Enter the following and click **Proceed**.
     * **Intent Name**: For example, "*Create Savings Account*."
