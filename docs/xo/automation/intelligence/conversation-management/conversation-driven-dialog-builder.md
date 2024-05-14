@@ -44,7 +44,8 @@ You can initiate a Conversation-driven Dialog Builder with the following steps:
 <img src="../images/select-dialog-option.png" alt="select dialog option" title="select dialog option" style="border: 1px solid gray; zoom:75%;">
 
 4. Configure the fields based on the option you select:
- * **(Option A)**: For **Start From Scratch**, enter the following:
+
+* **(Option A)**: For **Start From Scratch**, enter the following:
     * **Intent Name**: For example, "*Create Savings Account*."
     * **Description**: Provide a description based on the intent for the dialog you're creating.
     * **Intent Training** – Enter utterances that would trigger this intent.
@@ -78,7 +79,7 @@ Click **Proceed**.
     Click **Generate**.
     <img src="../images/gen-ai-based-dialog.png" alt="gen ai dialog" title="gen ai dialog" style="border: 1px solid gray; zoom:75%;">
 
-    A preview of the auto-generated dialog flow appears on the right pane. You can either click **Proceed** to continue, or click **Regenerate** to generate another dialog flow based on your intent.
+    A preview of the auto-generated dialog flow appears on the right pane. You can either click **Proceed** to create the dialog, or **Regenerate** to generate another dialog flow based on your intent.
 
     <img src="../images/preview-gen-a-dalog.png" alt="gen ai dialog preview" title="gen ai dialog preview" style="border: 1px solid gray; zoom:75%;">
 * **(Option C)**:To find and install a third-party dialog template out of 150+ categories and 30+ integrations, select **Marketplace**.
