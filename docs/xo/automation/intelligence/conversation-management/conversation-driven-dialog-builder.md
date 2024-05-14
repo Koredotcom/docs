@@ -51,19 +51,19 @@ You can initiate a Conversation-driven Dialog Builder with the following steps:
        <li><b>Launch By Menu</b>: To list the use case in the AgentAssist library allowing the agent to browse and find use case to trigger it.</li></ul>
      <li><b>Intent Settings</b>: You can set how the dialog task will be presented to the bot based on the intent by selecting one of these options:</li>
        <ul><li><b>Sub intent dialog</b>: Task can be invoked only as a sub-task when another task is in progress. Task will not be presented as a bot task when user requests for help.</li>
-      <li><b>Hide from help</b>: Task will not be presented as a bot task when the user requests for help. Users can invoke this task anytime while talking to the bot.</li>
+      <li><b>Hide from help</b>: Task will not be presented as a bot task when the user requests for help. Users can invoke this task anytime while talking to the bot.</li></ul>
       <li><b>Analytics - Containment Type</b>: When you leave a conversation without providing an input, then the platform considers that conversation as a <b>Drop Off</b>. Drop off also results in scenarios where the virtual assistant asks input for feedback or when it asks if there is  ‘anything else’ with which it can help you. At times even if the tasks are helper tasks, they still lead to higher drop-off rates. To prevent this, while creating a dialog task you are provided with an option to configure the containment type as either drop-off or a self-service, when the user abandons the conversation. Based on the user abandonment type, select one of the following:</li>
     <ul><li><b>Abandonment as Self-Service</b>: Conversations abandoned by users while executing this Dialog are considered 'Self-service Conversations'. Other failures are considered 'Drop-off Conversations'.</li>
-    <li><b>Abandonment as Drop Off</b>: Conversations abandoned by users or any failures during execution of this Dialog will be considered as Drop off.</li></ul></ul></ul>
+    <li><b>Abandonment as Drop Off</b>: Conversations abandoned by users or any failures during execution of this Dialog will be considered as Drop off.</li></ul>
 
-!!!note
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By default  'Abandonment as Drop Off' is selected as an option for Analytics – Containment Type. In this case, any conversation abandoned by the user is considered a drop-off during dialog execution.
+If you select Abandonment as Self-Service, then any conversation abandoned by the user is considered a self-service conversation.  However, any script, service or any other failures are considered as drop-off conversations.</p></div>
 
-    By default  'Abandonment as Drop Off' is selected as an option for Analytics – Containment Type. In this case, any conversation abandoned by the user is considered a drop-off during dialog execution.
-    If you select Abandonment as Self-Service, then any conversation abandoned by the user is considered a self-service conversation.  However, any script, service or any other failures are considered as drop-off conversations.
+<img src="../images/create-custom-dialog.png" alt="create custom dialog" title="create custom dialog" style="border: 1px solid gray; zoom:75%;"></ul></ul>
 
-<img src="../images/create-custom-dialog.png" alt="create custom dialog" title="create custom dialog" style="border: 1px solid gray; zoom:75%;">
-
-**(Option B): Gen AI** 
+**(Option B): Gen AI**
 
 Uses Gen AI to generate a dialog task from a preexisting template based on the intent you provide. Enter the following to generate the dialog and click **Generate**.
 * **Intent Name**: For example, "*Create Savings Account*."
