@@ -18,7 +18,9 @@ Streaming for Play HT Text-to-Speech (TTS) is now supported. With streaming supp
 
 #### Delete Call Recording API
 
-Applications with relevant access can delete call recordings using a Session ID for storage management while complying with privacy regulations. [Learn more](../../apis/contact-center/delete-call-recording.md).
+Applications with relevant access can delete call recordings using a Session ID for storage management while complying with privacy regulations. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/delete-call-recording.md)
+
+<hr>
 
 ## v11.1.0 April 27, 2024
 
@@ -53,25 +55,21 @@ A new permission for Outbound Email is added in the Agent & Supervisor Experienc
 
 #### Schedule Voice Campaigns
 
-Scheduling allows precise control over when your messages will be delivered. You can now seamlessly plan campaigns to coincide with peak engagement times, ensuring maximum impact.  
-[Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#schedule-voice-campaigns)
+Scheduling allows precise control over when your messages will be delivered. You can now seamlessly plan campaigns to coincide with peak engagement times, ensuring maximum impact. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#schedule-voice-campaigns)
 
 ### Agents & Supervisors
 
 #### System Busy and System Away Status Enabled by Default
 
-System Away and System Busy statuses are enabled by default for new accounts. For existing accounts, contact Kore Support.  
-[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#system-away-and-system-busy-status)
+System Away and System Busy statuses are enabled by default for new accounts. For existing accounts, contact Kore Support. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#system-away-and-system-busy-status)
 
 #### Enable/Disable Resolution Disposition Sets
 
-The **Resolution** Disposition Set comes prebuilt. App Owners can now enable/disable and edit the resolution disposition set.  
-[Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#disposition-sets)
+The **Resolution** Disposition Set comes prebuilt. App Owners can now enable/disable and edit the resolution disposition set. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md#disposition-sets)
 
 ### Analytics and Reporting
 
 #### Selected Hours Report
 
-The Selected Hours Report shows daily totals of every agent's productive hours. Productive hours are determined by built-in and custom statuses selected by users.  
-[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/selected-hours-report.md)
+The Selected Hours Report shows daily totals of every agent's productive hours. Productive hours are determined by built-in and custom statuses selected by users. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/selected-hours-report.md)
 
