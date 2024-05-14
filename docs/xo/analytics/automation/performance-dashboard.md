@@ -84,7 +84,7 @@ The following fields are displayed:
 
 ### Goal Completion Rate
 
-The goal completion metrics provide insights as to how many tasks were completed in a period by a virtual assistant. This metric shows all types of tasks which include completed tasks, abandoned tasks, incomplete tasks, and failed tasks.
+The goal completion metrics show how many tasks a virtual assistant completes and fails within a selected time. The [failed tasks](task-execution-logs.md#failed-task) include both abandoned and incomplete tasks. The task is any interaction like Dailog, FAQs, or alerts. [Learn more.](../../administration/analytics.md#chat-history-details)
 
 Listed below are the widgets that could help in providing information about these details:
 

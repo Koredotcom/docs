@@ -11,6 +11,7 @@ Several APIs are available from the SmartAssist Platform. Based on the functiona
 * [Import/Export Data APIs](#importexport-data-apis)
 * [Call Recording API](#call-recording-api)
 * [Outbound Calling API](#outbound-calling-api)
+* [Transfer Conversation to a Specific Agent API](#transfer-conversation-to-a-specific-agent-api)
 * [Queue Management APIs](#queue-management-apis)
 
 ### Analytics and Reporting APIs
@@ -369,6 +370,22 @@ Several APIs are available from the SmartAssist Platform. Based on the functiona
    <td>To retrieve the recording of a specific call using either the user Id or session Id.
    </td>
    <td>SmartAssist Recordings
+   </td>
+  </tr>
+  <tr>
+   <td><a href="../fetch-call-recording-(v2)">Fetch Call Recording (v2)</a>
+   </td>
+   <td>This API facilitates the downloading of voice call recordings. The API provides an S3-hosted URL where the recording can be accessed.
+   </td>
+   <td>SmartAssist Recordings
+   </td>
+  </tr>
+  <tr>
+   <td><a href="../delete-call-recording">Delete Call Recording</a>
+   </td>
+   <td>This API is used to delete Voice Call Recordings. The response varies based on whether the execution is successful or not.
+   </td>
+   <td>Delete Recordings
    </td>
   </tr>
 </table>

@@ -148,10 +148,10 @@ nav:
     - Glossary:
       - Concepts and Terminology: getting-started/glossary/concepts-and-terminology.md    
     - Release Notes:
-      - What's New in XO11: getting-started/whats-new-in-xo-platform.md  
-      - XO11 vs. XO10: getting-started/key-differences-between-xo11-and-xo10.md
+      - What's New in XO v11: getting-started/whats-new-in-xo-platform.md  
+      - XO v11 vs. v10: getting-started/key-differences-between-xo11-and-xo10.md
       - Current Limitations: release-notes/current-limitations.md
-      - XO11.x Updates:
+      - XO v11.x Updates:
         - Automation AI: release-notes/11.x/automation-ai.md
         - Search AI: release-notes/11.x/search-ai.md
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
@@ -163,7 +163,7 @@ nav:
         - About Virtual Assistant: getting-started/virtual-assistants-overview.md
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
     - Use Cases: 
-      - Dialogs Tasks:
+      - Dialog Tasks:
         - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
         - Navigating Dialog Tasks: automation/use-cases/dialogs/navigating-dialog-tasks.md
         - Build Dialog Tasks: automation/use-cases/dialogs/using-the-dialog-builder-tool.md
@@ -273,7 +273,7 @@ nav:
             - Directory: searchai/content-sources/directory.md
             - Connectors:
                 - Introduction: searchai/content-sources/connectors.md
-                - ServiceNow Connector: searchai/content-sources/servicenow.md
+                - ServiceNow: searchai/content-sources/servicenow.md                                
         - Extraction Strategy: searchai/content-extraction/extraction.md
         - Workbench:
             - Introduction: searchai/workbench/introduction.md
@@ -333,7 +333,7 @@ nav:
         - AgentAssist Widget Settings: agentai/configuration/widget-settings.md
     - Agent Experience:
       - Agent AI Widget: agentai/agent-experience/agent-assist-widget-v3.md
-      - Bot Override and Automation: agentai/agent-experience/agent-assist-widget-v3.md       
+      - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
   - Integrations & APIs:
     - Overview: app-settings/integrations/about-integration.md
     - Integrations:
@@ -491,12 +491,12 @@ nav:
         - PII and Sensitive Data: app-settings/generative-ai-tools/pii-and-sensitive-data.md
         - Guardrails: app-settings/generative-ai-tools/guardrails.md       
       - Dev Tools:
-        - Bot Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
+        - App Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
         - Authorization Profiles: app-settings/dev-tools/bot-authorization/bot-authentication.md
         - Web/Mobile SDK: app-settings/dev-tools/kore-ai-web-sdk-tutorial.md
         - API Scopes: apis/automation/api-introduction.md
         - Mock Scenes: app-settings/mock-scenes.md
-      - Using Bot Variables: app-settings/variables/using-bot-variables.md
+      - Using Variables: app-settings/variables/using-bot-variables.md
       - Managing Namespaces: app-settings/managing-namespace.md
       - Advanced Settings:
         - PII Settings: app-settings/advanced-settings/pii-data-masking.md

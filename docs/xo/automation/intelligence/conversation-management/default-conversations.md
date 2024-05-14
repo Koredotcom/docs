@@ -2,21 +2,11 @@
 
 There are multiple places where the platform responds to user utterances without the developer having to code the details. Examples include:
 
-* **Default Dialog** when the user intent is not found or understood by the bot.
+* **Intent not Identified** when the user intent is not found or understood by the bot. [Learn more](../../event-handling/#intent-not-available-event){:target="_blank"}.
 * **Standard Responses** to certain questions, greetings, error and warning scenarios, etc.
 * **Event Handlers** for certain common bot events can be defined. [Learn more](/docs/xo/automation/intelligence/event-handling/){target="_blank"}.
 
 Though these are set by default by the platform, you can customize them as per your business requirements. In this document, we look into such customizations.
-
-## Default Dialog
-
-You can choose to run a dialog task or display a standard error message if the Natural Language Processor cannot determine the user intent. The default setting is to display a standard error message.
-
-Click **Use Cases** > **Dialogs** to define a default dialog task.
-
-For example, you can switch the conversation from the bot to a live agent, or run a generic dialog such as the main menu if the user intent is not determined in the bot conversation.
-
-If a default dialog task is not defined, standard error messages and any customizations defined in the **Standard Responses** section are used.
 
 ## Standard Responses
 

@@ -1,17 +1,17 @@
-# Using Bot Variables
+# Using Variables
 
-**Bot variables** help you capture values that are commonly used by different tasks, nodes, and other bot elements. You can configure a bot variable as a key-value pair once in the bot settings and substitute key with value at runtime during the conversation flow. By capturing frequently used values in a single place, bot variables provide the advantages of reusability and consistency. For example, let’s say you are testing a flight booking bot using a staging endpoint. If you configure the endpoint as a variable, it helps you to call the API from several places quickly. When you want to change the staging endpoint to production while publishing the bot, it is easy. Similarly, variables can be used to externalize content for messages and prompts from the dialog flow definition. Kore.ai platform allows bot developers to define two types of variables – Environment and Content.
+**Variables** help you capture values that are commonly used by different tasks, nodes, and other VA elements. You can configure a variable as a key-value pair once in the VA settings and substitute key with value at runtime during the conversation flow. By capturing frequently used values in a single place, variables provide the advantages of reusability and consistency. For example, let’s say you are testing a flight booking app using a staging endpoint. If you configure the endpoint as a variable, it helps you to call the API from several places quickly. When you want to change the staging endpoint to production while publishing the VA, it is easy. Similarly, variables can be used to externalize content for messages and prompts from the dialog flow definition. Kore.ai platform allows VA developers to define two types of variables – Environment and Content.
 
 
 ### Environment Variables
 
-Environment Variables are global, reusable components which can be used in multiple places to define the bot configuration. Every Environment Variable is a key-value pair. The Variable Keys can be used at various places in the bot configuration. The platform will resolve/replace the Variable Keys with Variables Values during the conversation. Some of the typical use cases where a developer can use environment variables are:
+Environment Variables are global, reusable components which can be used in multiple places to define the VA configuration. Every Environment Variable is a key-value pair. The Variable Keys can be used at various places in the VA configuration. The platform will resolve/replace the Variable Keys with Variables Values during the conversation. Some of the typical use cases where a developer can use environment variables are:
 
 
 
-* To manage the bot across environments having different endpoint URLs. The bot can be exported and imported based on the environment, and the infrastructure team will need to modify only the variable configuration file.
+* To manage the app across environments having different endpoint URLs. The app can be exported and imported based on the environment, and the infrastructure team will need to modify only the variable configuration file.
 * To manage **Conditions** in the **Dialog Node** Transitions. Only the left-hand side of the transition condition uses Environment Variables. The right-hand side of the transition conditions does not use Environment Variables
-* To define and manage the bot response that is repeated within the bot configuration as variables.
+* To define and manage theapp response that is repeated within the app configuration as variables.
 * Authorization Token
 * Channel-related tokens and URLs
 
@@ -60,7 +60,7 @@ The availability of the environment variables has been extended to the **Field K
 
 ### Content Variables
 
-Bot building essentially requires extensive content management efforts. When it comes to multi-language bots, it also involves tedious coordination efforts between the developers and globally-distributed content authors or copyright team. Content variables enable you to overcome that by abstracting bot flow development efforts from authoring or editing the content. Using Content Variables, programmers can avoid hard-coding the bot content, such as prompts, messages, or any data presented to the user, into bot components, and instead point to specific variables in centrally managed Content Variables files for each bot language. You can export the language-specific content variable files to content editors, without exposing any bot configurations. The writers can author the content in the exported file, which you can import back into the bot.
+Bot building essentially requires extensive content management efforts. When it comes to multi-language VAs, it also involves tedious coordination efforts between the developers and globally-distributed content authors or copyright team. Content variables enable you to overcome that by abstracting VA flow development efforts from authoring or editing the content. Using Content Variables, programmers can avoid hard-coding the VA content, such as prompts, messages, or any data presented to the user, into VA components, and instead point to specific variables in centrally managed Content Variables files for each app language. You can export the language-specific content variable files to content editors, without exposing any app configurations. The writers can author the content in the exported file, which you can import back into the app.
 
 
 ### Defining Bot Variables and Securing Them
@@ -91,7 +91,7 @@ The variable and its encrypted value appear in the list.
 
 ### Entering Language-Specific Values
 
-To add language-specific values for content variables, you first need to switch the bot language. You can switch the language by clicking the name of the currently-enabled language from the top-right corner of the bot’s page and then selecting another language as follows:
+To add language-specific values for content variables, you first need to switch the app language. You can switch the language by clicking the name of the currently-enabled language from the top-right corner of the app’s page and then selecting another language as follows:
 
 <img src="../images/env-and-content-variables-img7.png" alt="Select language" title="Select language" style="border: 1px solid gray;zoom:50%;"/>
  
@@ -101,9 +101,9 @@ After switching the language, go to **App Settings > Variables > Content Variabl
 
 ### Using Environment Variables
 
-You can invoke an environment variable in plain text mode (Standard editor) using the following syntax: `{{env.variableName}}` If you are using it in JavaScript mode, it is _env.variableName_ Here’s an example from a bot that uses two environment variables called _botType_ and _parameters_ to determine different bot environments such as development, testing, and production. The following script node in one of the bot’s tasks captures the _base URL_ of the bot, depending on the current bot environment.
+You can invoke an environment variable in plain text mode (Standard editor) using the following syntax: `{{env.variableName}}` If you are using it in JavaScript mode, it is _env.variableName_ Here’s an example from a app that uses two environment variables called _botType_ and _parameters_ to determine different app environments such as development, testing, and production. The following script node in one of the app’s tasks captures the _base URL_ of the app, depending on the current app environment.
 
-<img src="../images/env-and-content-variables-img8.png" alt="Script to capture Base URL of bot" title="Script to capture Base URL of bot" style="border: 1px solid gray;zoom:50%;"/>
+<img src="../images/env-and-content-variables-img8.png" alt="Script to capture Base URL of app" title="Script to capture Base URL of app" style="border: 1px solid gray;zoom:50%;"/>
 
 
 The URL in the following service node changes based on the captured URL
@@ -130,16 +130,16 @@ The new encrypted secure variable value is updated in the list as shown below:
 
 ### Using Content Variables
 
-You can invoke a content variable in plain text mode (Standard editor) using the following syntax. `{{content.variableName}}` If you are using it in JavaScript mode, it is _content.variableName_ Here’s an entity node of a multi-language flight booking bot that captures the source airport of the users. It uses a content variable instead of a hard-coded user prompt.
+You can invoke a content variable in plain text mode (Standard editor) using the following syntax. `{{content.variableName}}` If you are using it in JavaScript mode, it is _content.variableName_ Here’s an entity node of a multi-language flight booking app that captures the source airport of the users. It uses a content variable instead of a hard-coded user prompt.
 
 <img src="../images/env-and-content-variables-img13.png" alt="Entity node containing content variable" title="Entity node containing content variable" style="border: 1px solid gray;zoom:50%;"/>
 
-When the bot reaches this node as a part of the user interaction, the user prompt changes depending on the language of the interaction (provided you entered the respective variable values for all the enabled languages).
+When the app reaches this node as a part of the user interaction, the user prompt changes depending on the language of the interaction (provided you entered the respective variable values for all the enabled languages).
 
 
 ### Importing and Exporting
 
-You can import and export bot variables between bots.
+You can import and export variables between apps.
 
 1. On any of the Bot Variables page accessible from **App Settings > Variables > (Environment/Content) Variables**,
 2. Click the **ellipses next to Add Variables**
@@ -184,8 +184,8 @@ The **Bot Variable file** contains the following information, the same needs to 
 ```
 [
   {"key":"hosturl",
-   "value":"https://bots.kore.ai",
-   "hint":"This is the URL of environment which can be used across the endpoints configured in the bot",
+   "value":"https://platform.kore.ai",
+   "hint":"This is the URL of environment which can be used across the endpoints configured in the app",
    "audioTag":"",
    "variableType":"env",
    "scope":"prePopulated",
