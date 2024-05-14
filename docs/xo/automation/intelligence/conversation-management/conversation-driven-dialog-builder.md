@@ -14,8 +14,8 @@ A Conversation-driven Dialog builder automatically converts conversation compone
 ## Features
 
 * An integrated approach for conversation designers (or business analysts) and developers to collaboratively build a dialog.
-* Ability to define a dialog in a _conversation view_ – conversation designers or BAs can design the bot in this view as a series of bot messages and user messages.
-* Auto-generation of tasks in the _build view_ – the developers can fine-tune the configurations and expand on top of the conversation flow to provide the necessary logic and fulfillment elements leading to a fully functional bot.
+* Ability to define a custom, Gen-AI driven, or third-party based dialog template by providing just the intent name.
+* Auto-generation of tasks, fine tuning the configurations and expand on top of the conversation flow to provide the necessary logic and fulfillment elements leading to a fully functional bot.
 * Improved usability and intuitiveness.
 * Automatic sync between the views i.e changes to one view updates the other.
 
