@@ -23,15 +23,28 @@ To use this type of authorization mechanism, **register Search AI as an Inbound 
 
 OAuth 2.0 protocol defines several grant types for different use cases. Each grant type is designed to address specific authorization scenarios. 
 
-Currently, SearchAI supports the following two grant types:
+Currently, SearchAI supports the following grant types:
 
 1. **Client credentials Grant Type**: In this type, the client application(SearchAI, here) directly accesses the resources from the backend application. The client sends the client ID and client secret and gets an access token to access the resources directly. 
-
     For this type of authentication, provide the **client ID** and **client secret** generated after registering Search AI as an OAuth client application. 
 
-2. **Authorization Code Grant Type**: In the type, the client application(SearchAI) accesses the resources on behalf of a user. When the client communicates with the backend application, after verification of the client ID and client secret, it is redirected to the login process when the user needs to log in and provide consent to access the resources.
+2. **Authorization Code Grant Type**: In the type, the client application(SearchAI) accesses the resources on behalf of a user. Here’s how it works:
+    * The client application (in this case, Search AI) initiates the OAuth flow by redirecting the user to the authorization server's authorization endpoint, where the user is prompted to log in to the authorization server.
+    * If the login is successful, the authorization server redirects the user back to the client application's redirect URI, along with an authorization code.
+    * Upon receiving the authorization code, the client application makes a POST request to the authorization server's token endpoint.
+    * The authorization server verifies the authorization code, client credentials, and a redirect URI and responds with an access token and optionally a refresh token in the body of the response.
+    * The client application can now use the access token to make authorized requests to the resources.
+    * When an access token expires, the client application can use the refresh token to obtain the new token. 
+    
+    For this type of authentication, provide the **client credentials,** and on the consent screen, log in with your user credentials to access the resources.
 
-    For this type of authentication, both the **client credentials** as well as the **user credentials** are required to access the resources. 
+3. **Password Grant Type**: This type of authorization allows the client application to exchange the user's credentials for an access token. Here’s how it works:
+    * The client application authenticates itself to the authorization server by sending its client ID and client secret to the token endpoint.
+    * The resource owner provides their credentials (username and password) directly to the client application. The client application sends a POST request to the authorization server's token endpoint, including the user's credentials.
+    * If the user's credentials are valid and authorized to access the requested resources, the authorization server responds with an access token.
+    * The client application can now use the access token to make authorized requests to the resource server on behalf of the user.
+
+    For this type of authorization, provide the **client credentials** as well as **user credentials** with access to the required resources. 
 
 ## Managing Connectors
 
