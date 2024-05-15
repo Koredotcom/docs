@@ -54,7 +54,7 @@ Go to the **Connectors**under the _Sources_ page and select **_Zendesk_**. Go to
 
 * **Name**: Unique name for the connector.
 * **Authorization Type**: Search AI supports only **OAuth 2.0 authorization with Zendesk**.
-* **Grant Type**: Method of obtaining access token in OAuth 2.0 authentication. SearchAI supports the **Authorization Code grant type for Zendesk**  Refer to [this for more information on Grant types](../connector.md).
+* **Grant Type**: Method of obtaining access token in OAuth 2.0 authentication. SearchAI supports the **Authorization Code grant type for Zendesk**  Refer to [this for more information on Grant types](../../connector.md).
 * **Client ID**: The client ID generated after registering SearchAI for OAuth authentication.  
 * **Client Secret**: The secret generated while configuring the OAuth authentication.
 * **Host URL**: URL pointing to your Zendesk instance.

@@ -82,7 +82,7 @@ You can use one of the following URLs as per your region.
 2. Configure the authorization parameters for the connector and click **Connect**.
     * **Name**- Unique name for the connector.
     * **Authorization Type** - Search AI supports **OAuth 2.0 for Google Drive.** Set this field accordingly.
-    * **Grant Type** - Method of obtaining access token in OAuth 2.0 authentication. SearchAI supports **Authorization Code Grant Type for Google Drive**. Refer to [this for more information on Grant types](../connectors.md).
+    * **Grant Type** - Method of obtaining access token in OAuth 2.0 authentication. SearchAI supports **Authorization Code Grant Type for Google Drive**. Refer to [this for more information on Grant types](../../connectors.md).
     * **Client ID** - The client ID generated after registering SearchAI for OAuth authentication. 
     * **Client Secret**- The secret generated after registering SearchAI for OAuth authentication.  
 

@@ -34,7 +34,7 @@ There are two ways to authorize and set up communication between Confluence Serv
 * Using Basic Auth
 * Using OAuth 2.0
 
-For more information on auth types, refer to [this](../connector.md). 
+For more information on auth types, refer to [this](../../connector.md). 
 
 If you are setting up **OAuth** auth mechanism, you need to 
 
@@ -64,7 +64,7 @@ To complete the integration, do the following configuration in the connector.
 1. Go to **_Connectors _**under the **_Sources _**tab. 
 2. On the authorization tab, provide the config parameters. 
     * Authorization Type: Basic or OAuth 2.0
-    * Grant Type: Enter the Grant type for OAuth 2.0-based authentication. For Confluence Server, Search AI supports two types: **Authorization Code grant type** and **Client Credentials** grant type. For more details, refer to [this](../connectors.md). 
+    * Grant Type: Enter the Grant type for OAuth 2.0-based authentication. For Confluence Server, Search AI supports two types: **Authorization Code grant type** and **Client Credentials** grant type. For more details, refer to [this](../../connectors.md). 
     * For Basic Auth, provide the connector name, username, password, and Confluence server host URL.
     * For OAuth 2.0 Authentication,  enter the connector name, Client ID, Client Secret (as generated in the previous step), and Confluence server base URL and domain name.
 
