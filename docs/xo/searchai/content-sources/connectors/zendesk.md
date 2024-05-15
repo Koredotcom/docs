@@ -26,12 +26,12 @@ You can easily configure SearchAI to connect to the Zendesk application to enabl
   </tr>
 </table>
 
+## Authorization Support 
 
-To configure Zendesk as a content source, it requires:
+Search AI supports **OAuth 2.0 Authorization Code Grant Type** mechanism for Zendesk. To configure Zendesk as a content source, it requires:
 
 * Adding an OAuth client in Zendesk
-* Configuring the Zendesk connector in SearchAssist
-
+* Configuring the Zendesk connector in Search AI
 
 ## Step 1: Setup an OAuth client in Zendesk
 The first step is to set up an OAuth client in Zendesk and generate OAuth credentials that SearchAI can use to authenticate the requests sent to Zendesk.  
@@ -39,7 +39,7 @@ The first step is to set up an OAuth client in Zendesk and generate OAuth creden
 1. Go to the **Admin Center** in your Zendesk application.
 ![Admin Center](../images/zendesk/admin-center.png "Admin Center")
 
-2. Register Search AI as OAuth Client. Refer to [this documentation](https://support.zendesk.com/hc/en-us/articles/4408845965210-Using-OAuth-authentication-with-your-application#topic_s21_lfs_qk) for information about the fields required in the configuration.  Set the **_Redirect URLs _**field to point to your SearchAssist instance. You can use one of the following callback URLs as per your region.
+2. Register Search AI as OAuth Client. Refer to [this documentation](https://support.zendesk.com/hc/en-us/articles/4408845965210-Using-OAuth-authentication-with-your-application#topic_s21_lfs_qk) for information about the fields required in the configuration.  Set the **Redirect URLs** field to point to one of the following callback URLs as per your region.
 
     * JP Region Callback URLs:[ https://jp-bots-idp.kore.ai/workflows/callback](https://jp-bots-idp.kore.ai/workflows/callback)
     * DE Region Callback URLs:[ https://de-bots-idp.kore.ai/workflows/callback](https://de-bots-idp.kore.ai/workflows/callback)
@@ -53,12 +53,10 @@ On saving the details, a pre-populated Secret field appears on the page. This is
 Go to the **Connectors**under the _Sources_ page and select **_Zendesk_**. Go to the **Authorization** tab, enter the following details, and click **Connect**.
 
 * **Name**: Unique name for the connector.
-* **Authorization Type**: Search AI supports only ** OAuth 2.0 authorization **with Zendesk**.
-* **Grant Type**: Method of obtaining access token in OAuth 2.0 authentication. SearchAI supports the **Authorization Code grant type for Zendesk**  Refer to [this for more information on Grant types](https://docs.google.com/document/d/1U-fxzFd9f2sGUZYq7HmI4HO1Tu3p9AvXBwSVRrVNDkw/edit#heading=h.gtcwm1lgykmp).
-* **Client ID**: The client ID generated after registering SearchAI for OAuth authentication. Not needed for Basic auth. 
-* **Client Secret**: The secret generated while configuring the OAuth authentication.  Not needed for Basic auth. 
-* **Username**: Username for authorization. Only required when GrantType is set to Authorization code.
-* **Password**: Password for authorization. Only required when GrantType is set to Authorization code. 
-* **Host URL**: URL pointing to your Zendesk instance. 
+* **Authorization Type**: Search AI supports only **OAuth 2.0 authorization with Zendesk**.
+* **Grant Type**: Method of obtaining access token in OAuth 2.0 authentication. SearchAI supports the **Authorization Code grant type for Zendesk**  Refer to [this for more information on Grant types](../connector.md).
+* **Client ID**: The client ID generated after registering SearchAI for OAuth authentication.  
+* **Client Secret**: The secret generated while configuring the OAuth authentication.
+* **Host URL**: URL pointing to your Zendesk instance.
 
 After a successful connection, the content can be ingested from Zendesk using the **Sync Now** option under the **Configuration** tab.
