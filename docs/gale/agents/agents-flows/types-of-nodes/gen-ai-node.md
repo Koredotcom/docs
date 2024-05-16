@@ -9,10 +9,8 @@ Setting up a Gen AI node in an Agent Flow involves adding the node at the approp
 Steps to add and configure the node:
 
 1. Open the Agent Flow to which you want to add the node: go to **Agents** > **Agent Flow** > **Go to Flow**.  
-<img src="../images/go-to-flow-canvas.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:100%;">
 
-2. The Agent Flow opens in the Flow Builder. Click the “**+**” icon on the **Start** node or any existing node on the canvas and select **Gen AI** from the pop-up menu. (Alternatively, you can drag the **Gen AI** node from the Assets panel onto the canvas.)  
-<img src="../images/connect-start-to-gen-ai.png" alt="Connect Start to Gen AI" title="Connect Start to Gen AI" style="border: 1px solid gray; zoom:20%;">
+2. The Agent Flow opens in the Flow Builder. Click the “**+**” icon on any existing node on the canvas and and select **Gen AI** from the pop-up menu. (Alternatively, you can drag the **Gen AI** node from the Assets panel onto the canvas.)  
 
 3. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
 <img src="../images/configure-gen-ai-node.png" alt="Configure Gen AI Node" title="Configure Gen AI Node" style="border: 1px solid gray; zoom:20%;">
