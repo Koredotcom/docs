@@ -13,14 +13,14 @@ Steps to add and configure the node:
 2. The Agent Flow opens in the Flow Builder. Click the “**+**” icon on any existing node on the canvas and select **Function** from the pop-up menu. (Alternatively, you can drag the **Function** node from the Assets panel onto the canvas.)
 
 3. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
-<img src="./images/configure-function-node.png" alt="Configure Function Node" title="Configure Function Node" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/configure-function-node.png" alt="Configure Function Node" title="Configure Function Node" style="border: 1px solid gray; zoom:80%;">
 
 4. Enter or select the following information:
     
     * **Custom Name**: Enter an appropriate name for the node.
     
     * **Define a Script**: You can define a script using Javascript or Python to process/parse the given input or the output of the previous node. Click anywhere in the Define a Script box to open the Script Editor dialog box.  
-    <img src="./images/function-node-script-editor.png" alt="Configure Function Node" title="Configure Function Node" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/function-node-script-editor.png" alt="Configure Function Node" title="Configure Function Node" style="border: 1px solid gray; zoom:80%;">
 
         1. In the top-left corner, choose the appropriate scripting language - **Javascript** or **Python**. Enter the script in the box. Note that you can use variables or context variables here. For example:
             To read an input variable:
@@ -33,7 +33,7 @@ Steps to add and configure the node:
             ~~~
 
             !!! note
-                    You cannot import packages in the Function node. However, you can use pre-existing libraries such as pandas or  NumPy.
+                You cannot import packages in the Function node. However, you can use pre-existing libraries such as pandas or  NumPy.
 
         2.  You can use the Context input/output feature to use a variable from the previous node or when testing a function.
             * **Context Input**: Add the required variable; also, dummy input values can be given to test the defined function.
@@ -44,7 +44,7 @@ Steps to add and configure the node:
         4. Close the Script Editor.
 
 5. Click the **Connections** icon in the left navigation and select the **Go to Node** for both success and failure conditions.  
-<img src="./images/function-node-connections.png" alt="Configure Connection Settings" title="Configure Connection Settings" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/function-node-connections.png" alt="Configure Connection Settings" title="Configure Connection Settings" style="border: 1px solid gray; zoom:80%;">
     1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can go to a Gen AI node to use the processed data from the Function node. 
     2. **On Failure** > **Go to Node**: If the execution of the current node fails, go to an appropriate node having a custom error message configured for this node.
 
