@@ -12,7 +12,7 @@ The following details of the voice campaigns are shown in a table:
 
 * **Campaign** - Campaign name and Type.
 * **Actions** - Play/Pause/Replay, Stop, Edit, Clone campaign.
-* **Priority** - Priority of the campaign from 1 to 10 (1 being the lowest). The default priority is 1.
+* **Priority** - Priority of the campaign from 1 to 5 (1 being the lowest). The default priority is 5.
 * **Status** - Status of the campaign.
     * **Ready**: When a manual campaign is saved and ready to run.
     * **Active**: The campaign is started and running.
