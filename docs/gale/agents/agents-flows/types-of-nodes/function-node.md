@@ -22,7 +22,7 @@ Steps to add and configure the node:
     * **Define a Script**: You can define a script using Javascript or Python to process/parse the given input or the output of the previous node. Click anywhere in the Define a Script box to open the Script Editor dialog box.  
     <img src="../images/function-node-script-editor.png" alt="Configure Function Node" title="Configure Function Node" style="border: 1px solid gray; zoom:80%;">
 
-        1. In the top-left corner, choose the appropriate scripting language - **Javascript** or **Python**. Enter the script in the box. Note that you can use variables or context variables here. For example:
+        1. In the top-left corner, choose the appropriate scripting language - **Javascript** or **Python**. Enter the script in the box. You can use variables or context variables in the Script Editor. For example:
             
             To read an input variable:
             ~~~
