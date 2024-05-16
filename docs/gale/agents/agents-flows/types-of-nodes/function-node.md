@@ -23,6 +23,7 @@ Steps to add and configure the node:
     <img src="../images/function-node-script-editor.png" alt="Configure Function Node" title="Configure Function Node" style="border: 1px solid gray; zoom:80%;">
 
         1. In the top-left corner, choose the appropriate scripting language - **Javascript** or **Python**. Enter the script in the box. Note that you can use variables or context variables here. For example:
+            
             To read an input variable:
             ~~~
             context.<variable-name> = context.steps.<startNode-Name>.<inputVariable-name>
