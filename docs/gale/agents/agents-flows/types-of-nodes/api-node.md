@@ -1,126 +1,62 @@
 # API Node
 
-This node enables you to initiate requests via SOAP or REST API calls, facilitating connections to third-party systems housing enterprise data. By defining a service request, which involves configuring APIs and passing parameters, you can retrieve information or perform queries from an external system.
+The API Node lets you connect to external systems and retrieve data by making SOAP or REST API calls. You can configure the APIs and pass the necessary parameters to fetch the required information.
 
-## Add a New API Node
+## Add and Configure an API Node
 
-**To add an API node, follow these steps**:
+Setting up an API node in an Agent Flow involves adding the node at the appropriate location in the flow and configuring various node properties, as explained below.
 
-1. Open the required agent from the list of agents to create the flow.
-2. Click **Agent flow** from the left navigation bar. The **Agent flow** page is displayed.
-3. Click **Go to flow** to open the flow builder page.
+Steps to add and configure the node:
 
-    <img src="../images/go-to-flow-canvas.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
+1. Open the Agent Flow to which you want to add the node: go to **Agents** > **Agent Flow** > **Go to Flow**.
 
-    The **Agents Flow** canvas is displayed, and you can start creating a new flow.
+2. The Agent Flow opens in the Flow Builder. Click the “**+**” icon on any existing node on the canvas and select **API** from the pop-up menu. (Alternatively, you can drag the **API** node from the Assets panel onto the canvas.)
 
-1. You can add a new node in 2 ways:
+3. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
+<img src="./images/api-node-general-settings.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
 
-    * Click the down arrow corresponding to the node from the **Assets** section from the left navigation bar of the **Agents** page and then click **+New API**.
+4. Enter or select the following information:
 
-        Or
+    * **Custom Name**: Enter an appropriate name for the node.
+    * **Type**: Select the API type from the drop-down list - REST or SOAP.
+    * **Request Definition**: Define the details of the service request to make the call and fetch the data. Click **Define Request** and enter or select the following details in the Edit Request dialog box:  
+    <img src="./images/api-node-edit-request.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
+        1. Select the request type from the list - GET, PUT, POST, PATCH, or DELETE.
+        2. Paste your API Endpoint URL or cURL in the text field.
+        3. In the **Headers** tab, specify the details of the Key and Value pair. For example, 
+        Key: Content-Type
+        Value: application/json
+        4. The **Body** tab is displayed for all request types except GET. Select the body content type from the drop-down list:
+            * application/x-www-form-urlencoded: Allows file uploads through HTTP POST requests. Add key/value pairs encoded by the platform.
+            * application/json: Transmits data between servers and web applications using JSON format without processing.
+            * application/xml: Sends XML payload for SOAP services via POST methods, with the option to include entity node values.
+            * Custom: Allows sending request payload in non-standard formats, such as for handling blogs or custom variables. 
+        5. Click the Test button at the top-right corner of the dialog. The API response will appear on the **Response** tab.
+        6. Click **Save** at the top-right corner of the dialog.
 
-    * Click **API** from the bottom bar of the **Agents** page.
+5. Click the Connections icon and select the Go to Node for both success and failure conditions.  
+<img src="./images/api-node-connections.png" alt="API node Connections Properties" title="API node Connections Properties" style="border: 1px solid gray; zoom:80%;">
 
-    <img src="../images/add-a-new-api-node.png" alt="Add a New API Node" title="Add a New API Node" style="border: 1px solid gray; zoom:80%;">
+    1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can process the data from this node into a Function node and then use it further. In this case, select the Function node. 
+    
+    2. **On Failure** > **Go to Node**: If the execution of the current node fails, go to an appropriate node having a custom error message configured.
 
-
-The API node is created on the canvas, and you can now define the node's properties by clicking on the node. You can drag and move a node to any location on the canvas.
+6. Finally, test the flow and fix any issues found. Click the **Run Flow** button at the top-right corner of the flow builder.
 
 
 !!! note
-
-    The start node is displayed by default on the flow builder.
-
-## Configure the API Node
-
-**To configure the API node, follow these steps**:
-
-1. Add an API node to the canvas.
-2. Click the **API node** and the general properties dialog for the node is displayed on the right side of the page as shown in the following image.
-
-    <img src="../images/configure-api-node.png" alt="Configure API Node" title="Configure API Node" style="border: 1px solid gray; zoom:80%;">
-
-1. Enter a **Custom Name** for the node.
-2. Select the API **Type** from the drop-down list.
-
-    * **REST:** A REST API conforms to the constraints of the REST API architecture and allows interaction with RESTful web services.
-
-
-    * **SOAP**: A SOAP API uses the Simple Object Access Protocol (SOAP), which is a messaging protocol for interchanging data in a decentralized and distributed environment.
-
-1. Configure the API request under **Request Definition**. Define the GET, PUT, POST, or DELETE service request, along with the API call and parameters to pass. To create a new request, click **Define Request**.
-
-    <img src="../images/define-request.png" alt="Define Request" title="Define Request" style="border: 1px solid gray; zoom:50%;">
-
-    The **Edit Request** window is displayed.
-
-    <img src="../images/edit-request.png" alt="Edit Request" title="Edit Request" style="border: 1px solid gray; zoom:80%;">
-
-1. Select the **HTTP Method** call from the list.
-
-    * **POST** – Sends data to the server. For example, customer information, file upload, and so forth using HTML forms.
-
-
-    * **PUT** – Replaces the content of the target resource with the content sent.
-
-
-    * **PATCH** – Appends the content of an existing target resource with the content sent.
-
-
-    * **DELETE** – Deletes the content of an existing target resource.
-
-
-    * **GET** – Returns the content of an existing target resource.
-
-1. Paste your **API call URL** in the text field and click **Test**. It triggers the process of creating and sending an HTTP request to that URL, allowing you to interact with the corresponding API endpoint and inspect the response.
-
-1. In the **Headers** tab, specify the details of the header for the Header Key and Value pair if required to access the specified request URL.
-
-    **Syntax**: 
     
-    **Key** : Content-Type  
-    **Value**: application/json
+    The API node can be accessed using 
+    ~~~
+    {{context.steps.Start.APINODENAME}}
+    ~~~
 
-    You can add a new pair by typing it in the empty fields. You can delete a pair by clicking the **Delete (Bin)** icon next to it as shown in the following image.
+## API Status Codes
 
-    <img src="../images/add-headers.png" alt="Add Headers" title="Add Headers" style="border: 1px solid gray; zoom:80%;">
-
-1. In the **Body** tab, select the body content type. You can select:
-
-    * **application/x-www-form-urlencoded** – Also known as Multipart/Form-data, which is an encoding type that allows files to be sent through an HTTP POST request method if you want to allow a user to upload a file from a form. You can add key/value pairs that are encoded by the XO Platform.
-
-
-    * **application/json** – Use JSON to transmit data between the Kore.ai servers and your VA’s web application. Any JSON is sent with the request without any processing.
-
-
-    * **application/xml** – For SOAP services, pass XML payload using POST methods. You can pass entity node values as part of the XML.
-
-    <img src="../images/add-body.png" alt="Add Body" title="Add Body" style="border: 1px solid gray; zoom:80%;">
-
-1. Click the **Test** button to send your API request URL using the specified Auth type, HTTP headers, if defined.
-
-    The response is displayed in the **Response** tab.
-
-1. Click **Save** to save the test response as the sample response for this node. The request for the service node is saved and the **Define Request for &lt; Service Node Name >** dialog is closed.
-2. Click the **Actions** icon and select the actions that you want the node to trigger when the API call is successful or when it fails.
-
-    <img src="../images/actions-icon.png" alt="Actions Icon" title="Actions Icon" style="border: 1px solid gray; zoom:80%;">
-    
-
-## Status Codes
-
-**Errors**
-
-* 400 Bad Request: The server cannot process the request due to a client error (e.g., malformed request syntax, invalid parameters).
-* 401 Unauthorized: The client must authenticate itself to get the requested response.
-* 403 Forbidden: The client does not have permission to access the requested resource.
-* 404 Not Found: The server cannot find the requested resource. 
-* 500 Internal Server Error: The server encountered an unexpected condition that prevented it from fulfilling the request.
-* 504 Gateway Timeout: The server, acting as a gateway or proxy, did not receive a timely response from an upstream server it needed to access in order to complete the request. 
-* Status code 200:  It means that the request made was successful.
-
-**Connection**:
-
-* **On Success**: On successful execution of the current node this connection can be linked with another node such as Gen AI node, Function node, Condition node, API node, or an End node.
-* **On Failure**: On failure in execution of the current node this connection should be linked with an End node to display the custom error message from the API node.
+* 200: Request successful
+* 400: Client error, cannot process request
+* 401: Authentication required
+* 403: Access denied
+* 404: Resource not found
+* 500: Unexpected server error
+* 504: Gateway timeout, no timely response from the upstream server
