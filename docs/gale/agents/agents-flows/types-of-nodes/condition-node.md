@@ -19,7 +19,7 @@ Steps to add and configure the node:
 2. The Agent Flow opens in the Flow Builder. Click the “**+**” icon on any existing node on the canvas and select **Condition** from the pop-up menu. (Alternatively, you can drag the **Condition** node from the Assets panel onto the canvas.)
 
 3. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
-<img src="../images/condition-node-settings-to-be-filled.png" alt="Condition Node Settings" title="Condition Node Settings" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/condition-node-settings-to-be-filled.png" alt="Condition Node Settings" title="Condition Node Settings" style="border: 1px solid gray; zoom:60%;">
 
 4. Enter or select the following information:
     
@@ -42,7 +42,7 @@ Steps to add and configure the node:
         4. Additionally, you can use an **AND**/**OR** logical operator to add more criteria to the condition.
         5. In the **Then Go To** drop-down list, select the node to connect to if the condition is met.
         6. In the **ELSE** section, select the node you want to trigger if the IF condition fails.  
-        <img src="../images/condition-node-settings-filled.png" alt="Condition Node's Settings" title="Condition Node's Settings" style="border: 1px solid gray; zoom:80%;">
+        <img src="../images/condition-node-settings-filled.png" alt="Condition Node's Settings" title="Condition Node's Settings" style="border: 1px solid gray; zoom:60%;">
 
 5. Finally, test the flow and fix any issues found. Click the **Run Flow** button at the top-right corner of the flow builder.
 
