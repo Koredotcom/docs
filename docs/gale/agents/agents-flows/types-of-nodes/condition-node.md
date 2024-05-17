@@ -32,15 +32,20 @@ Steps to add and configure the node:
             ~~~
             {{context.ambiguous_sub_categories}}
             ~~~
+        
         2. Select an appropriate Operator from the drop-down list. For example, **Contains**.
+
         3. Enter the value for the condition. If you want to use a context variable, start entering "{{context." and then select the node/variable, and then close the braces with "}}".
             
             For example:
             ~~~
             {{context.steps.Sub_Category_Detection.output}}   
             ~~~
+        
         4. Additionally, you can use an **AND**/**OR** logical operator to add more criteria to the condition.
+
         5. In the **Then Go To** drop-down list, select the node to connect to if the condition is met.
+
         6. In the **ELSE** section, select the node you want to trigger if the IF condition fails.  
         <img src="../images/condition-node-settings-filled.png" alt="Condition Node's Settings" title="Condition Node's Settings" style="border: 1px solid gray; zoom:60%;">
 
