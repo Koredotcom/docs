@@ -56,7 +56,7 @@ Steps to add and configure the node:
 
     2. **On Failure** > **Go to Node**: If the execution of the current node fails, go to the End node to display any custom error message from the Gen AI node.
 
-6. Finally, test the flow and fix any issues found. Click the **Run Flow** button at the top-right corner of the flow builder.
+6. Finally, test the flow and fix any issues found: Click the **Run Flow** button at the top-right corner of the flow builder.
 
 !!! failure "Standard Error"
 

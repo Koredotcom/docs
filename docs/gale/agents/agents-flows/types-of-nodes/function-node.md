@@ -49,7 +49,7 @@ Steps to add and configure the node:
     1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can go to a Gen AI node to use the processed data from the Function node. 
     2. **On Failure** > **Go to Node**: If the execution of the current node fails, go to an appropriate node having a custom error message configured for this node.
 
-6. Finally, test the flow and fix any issues found. Click the **Run Flow** button at the top-right corner of the flow builder.
+6. Finally, test the flow and fix any issues found: Click the **Run Flow** button at the top-right corner of the flow builder.
 
 !!! failure "Standard Errors"
 
