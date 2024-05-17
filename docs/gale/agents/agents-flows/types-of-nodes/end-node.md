@@ -38,4 +38,3 @@ Steps to add and configure the node:
 
     When the value for the output variable is not defined, a list of unresolved outputs is displayed.
 
-
