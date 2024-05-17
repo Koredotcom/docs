@@ -49,7 +49,7 @@ Steps to add and configure the node:
         6. In the **ELSE** section, select the node you want to trigger if the IF condition fails.  
         <img src="../images/condition-node-settings-filled.png" alt="Condition Node's Settings" title="Condition Node's Settings" style="border: 1px solid gray; zoom:60%;">
 
-5. Finally, test the flow and fix any issues found. Click the **Run Flow** button at the top-right corner of the flow builder.
+5. Finally, test the flow and fix any issues found: Click the **Run Flow** button at the top-right corner of the flow builder.
 
 !!! failure "Standard Error"
     If a condition is true or false but has no connected node, the following error message is displayed: "Path not defined. Please check the flow."
