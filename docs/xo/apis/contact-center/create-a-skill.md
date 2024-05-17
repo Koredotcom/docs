@@ -2,76 +2,20 @@
 
 To add a skill with the given Stream Id and Skill Group ID.
 
-<table>
-  <tr>
-   <td>Method
-   </td>
-   <td>POST
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoint
-   </td>
-   <td><code>https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups/{{skillGroupId}}/skills</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>SmartAssist Analytics
-   </td>
-  </tr>
-</table>
+| **METHOD**      | **POST**                                                        |
+|-------------|-------------------------------------------------------------|
+| **Endpoint**    | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups/{{skillGroupId}}/skills` |
+| **Content Type**| `application/json`                                          |
+| **Authorization** | `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token)                                             |
+| **API Scope**   | SmartAssist Analytics                                       |
 
 ## Path Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL, for example, https://smartassist.kore.ai
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>BotId
-   </td>
-   <td>BotId or StreamId. You can access it from the General Settings page of the bot.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>skillGroupId
-   </td>
-   <td>Id of the Skill Group.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-</table>
+| **PARAMETER**      | **DESCRIPTION**                                                        | **TYPE**          |
+|----------------|--------------------------------------------------------------------|---------------|
+| host           | Environment URL, for example, https://platform.kore.ai          | string, required |
+| BotId          | BotId or StreamId. You can access it from the General Settings page of the bot. | string, required |
+| skillGroupId   | Id of the Skill Group.                                             | string, required |
 
 ## Sample Request
 
@@ -80,7 +24,7 @@ curl --location --request POST \
      'https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups/{{skillGroupId}}/skills'
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
-      --data-raw '{
+      --data-raw '
     {
 
 
@@ -98,67 +42,14 @@ curl --location --request POST \
 
 ## Body Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>name
-   </td>
-   <td>Name of the skill.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>description
-   </td>
-   <td>Brief description of the skill up to 200 characters.
-   </td>
-   <td>String, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>skillGroupId
-   </td>
-   <td>Id of the skill Group which you can find with <a href="https://docs.kore.ai/smartassist/api/get-a-skill-group/">GET /skill-groups</a>.
-Example: sg-4372
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>agents
-   </td>
-   <td>An Array of Objects with the following details
-   </td>
-   <td>Optional
-   </td>
-  </tr>
-  <tr>
-   <td>userId
-   </td>
-   <td>This is the user Id that you can find with <a href="https://docs.kore.ai/smartassist/api/list-all-agents/">GET /agents</a> .
-   </td>
-   <td>String, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>proficiencyLevel
-   </td>
-   <td>The Proficiency level can be:
-expert, novice, average, good
-Example: ‘expert’
-   </td>
-   <td>String, Optional
-   </td>
-  </tr>
-</table>
+| **PARAMETER**       | **DESCRIPTION**                                                        | **TYPE**          |
+|-----------------|--------------------------------------------------------------------|---------------|
+| name            | Name of the skill.                                                 | string, required |
+| description     | Brief description of the skill up to 200 characters.               | string, optional |
+| skillGroupId    | Id of the skill Group which you can find with [GET /skill-groups](../contact-center/get-a-skill-group.md). For example, sg-4372 | string, required |
+| agents          | An Array of Objects with the following details                     | array, optional      |
+| userId          | This is the user Id that you can find with [GET /agents](../contact-center/list-all-agents.md). | string, optional |
+| proficiencyLevel | The Proficiency level can be: expert, novice, average, good. Example: ‘expert’ | string, optional |
 
 ## Sample Response
 
