@@ -1,4 +1,4 @@
-# **koreUtil Libraries**
+# koreUtil Libraries
 
 **koreUtil libraries** provide pre-written JavaScript functions which makes common or complex tasks easy to implement. These libraries often target specific tasks such as setting up recurring rules for calendars, parsing, and manipulation of dates, conversion of dates between timezones, tools to simplify programming with strings, numbers, arrays, functions, and objects, etc.
 
@@ -541,6 +541,8 @@ print(message);
 ```
 Dies ist eine Beispielnachricht
 ```
+
+<img src="../images/kore-util-auto-translate.png" alt="Auto translate service as Bot Response" title="Auto translate service as Bot Response" style="border:1px solid gray; zoom:60%;">
 
 #### Related Link
 
