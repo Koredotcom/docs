@@ -108,16 +108,13 @@ context.sydney = koreUtil.moment().tz('Australia/Sydney').format('ha z');
 
 **Output:**
 
-* For context.newyork:
-
+* For context.newyork:  
    ```5am PDT```
 
-* For context.tokyo:
-
+* For context.tokyo:  
    ```7pm JST```
 
-* For context.sydney:
-
+* For context.sydney:  
    ```9pm AEDT```
 
 
@@ -125,9 +122,11 @@ context.sydney = koreUtil.moment().tz('Australia/Sydney').format('ha z');
 
 koreUtil.xml2js is a Platform-offered JS library for parsing XML to JSON and vice versa.
 
-**Usage Example:**
-```var obj = {name: "John", Surname: "Doe", age: 23}; \
-var builder = new koreUtil.xml2js.Builder(); \
+**Usage Example:**  
+
+```
+var obj = {name: "John", Surname: "Doe", age: 23};
+var builder = new koreUtil.xml2js.Builder();
 context.xml = builder.buildObject(obj);
 ```
 
