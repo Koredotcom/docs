@@ -1,59 +1,40 @@
 # End Node
 
-This node allows you to define the message displayed to the user when the experience flow ends. This node allows you to map the outputs to be sent out of the flow or the agent.
+End nodes allow you to show the agent’s/flow's outputs on success or an error message on failure.   
 
-## Add a New End Node
+## Add and Configure an End Node
 
-**To add an End node, follow these steps**:
+Setting up an End node in an Agent Flow involves adding the node at the appropriate location in the flow and configuring various node properties, as explained below.
 
-1. Open the required agents from the list of agents to create the flow.
-2. Click **Agent flow** from the left navigation bar. The **Agent flow** page is displayed.
-3. Click **Go to flow** to open the flow builder page.
+Steps to add and configure the node:
 
-    <img src="../images/go-to-flow-canvas.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
+1. Open the Agent Flow to which you want to add the node: go to **Agents** > **Agent Flow** > **Go to Flow**.
 
-    The Agents Flow canvas is displayed, and you can create a new flow.
+2. The Agent Flow opens in the Flow Builder. Click the “**+**” icon on any existing node on the canvas and select **End** from the pop-up menu. (Alternatively, you can drag the **End** node from the Assets panel onto the canvas.)
 
-1. You can add a new node in 2 ways:
+3. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
+<img src="../images/end-node-configure.png" alt="Configure End Node" title="Configure End Node" style="border: 1px solid gray; zoom:80%;">
 
-    * Click the down arrow corresponding to the node from the **Assets** section from the left navigation bar of the **Agents** page and then click **+New End**.
+4. Enter or select the following information:
 
-    Or
-
-    * Click **End** from the bottom bar of the **Agents** page.
-
-    <img src="../images/add-a-new-end-node.png" alt="Add a New End Node" title="Add a New End Node" style="border: 1px solid gray; zoom:80%;">
-
-    The End node is created on the canvas and you can now define the properties of the node by clicking on the node. You can drag and move a node to any location on the canvas.
-
-    !!! note
-
-        The start node is displayed by default on the flow builder.
-
-## Configure the End Node
-
-**To configure the End node, follow these steps**:
-
-1. Add an **End** node to the canvas as shown in the preceding procedure.
-2. Click the **End** node and the general properties dialog for the node is displayed on the right side of the page as shown in the following image.
-
-    <img src="../images/configure-end-node.png" alt="Configure End Node" title="Configure End Node" style="border: 1px solid gray; zoom:80%;">
-
-1. Enter a **Custom Name** to the end node.
-2. Select a **Name (key)** from the drop-down list. The list of all the keys that are defined in the Manage Output section are displayed here. You can select a required variable and map a value to it. For more information about Adding a new key, see [Manage Input and Output variable](../../agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md).
-3. Enter any **Value** to the selected key. You can provide any context object value or context related to any node or the input variable value. 
-
-    Enter the value in this format:
+    * **Custom Name**: Enter an appropriate name for the node.
     
-    ```
-    {{context.steps.<startNode-Name>.<inputVariable-name>}}
-    ```
+    * **Name (key)**: Select a key from the drop-down list. All defined keys in the Manage Output section are displayed here. You can select a variable and assign a value to it. (You can also add a new key. For more information, see [Manage Input and Output variable](../../agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md).)  
+    <img src="../images/select-a-key.png" alt="Select a Key" title="Select a Key" style="border: 1px solid gray; zoom:80%;">
+    
+    * **Value**: Select an appropriate variable or node as the value. Enter “{{context.” and select the node/variable from the list and then close the braces with “}}”.
+    
+        For example:
+        ~~~
+        {{context.steps.summarization.output}}
+        ~~~  
+        <img src="../images/end-node-success-output.png" alt="Configure End Node" title="Configure End Node" style="border: 1px solid gray; zoom:80%;">
 
-4. Click the **+ADD A KEY** option to add multiple outputs at once. 
-The details are autosaved.
+    * If you want to show multiple outputs/messages, click **Add a Key** to add the key and value details for the same.
 
-## Status Codes
+5. Finally, test the flow and fix any issues found: Click the **Run Flow** button at the top-right corner of the flow builder.
 
-**Errors**
+!!! failure "Standard Error"
 
-* When the value for the o/p variable is not defined then list of unresolved outputs are displayed.
+    When the value for the output variable is not defined, a list of unresolved outputs is displayed.
+

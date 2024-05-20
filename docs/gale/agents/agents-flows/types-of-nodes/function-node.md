@@ -1,118 +1,57 @@
 # Function Node
 
-This node empowers you to create a script for handling context variables or other variables essential in constructing the experience flow. Utilizing a JavaScript or Python editor, you can develop and customize the script according to your requirements.
+Function nodes allow you to write custom scripts using JavaScript or Python to process context variables or other variables used in building the experience flow.
 
-## Add a New Functions Node
+## Add and Configure a Function Node
 
-**To add a Function node, follow these steps**:
+Setting up a Function node in an Agent Flow involves adding the node at the appropriate location in the flow and configuring various node properties, as explained below.
 
-1. Open the required agent from the list of agents to create the flow.
-2. Click **Agent flow** from the left navigation bar. The **Agent flow** page is displayed.
-3. Click **Go to flow** to open the flow builder page.
+Steps to add and configure the node:
 
-    <img src="../images/go-to-flow-canvas.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;">
+1. Open the Agent Flow to which you want to add the node: go to **Agents** > **Agent Flow** > **Go to Flow**.
 
-    The Agents Flow canvas is displayed, and you can start creating a new flow.
+2. The Agent Flow opens in the Flow Builder. Click the “**+**” icon on any existing node on the canvas and select **Function** from the pop-up menu. (Alternatively, you can drag the **Function** node from the Assets panel onto the canvas.)
+
+3. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
+<img src="../images/configure-function-node.png" alt="Configure Function Node" title="Configure Function Node" style="border: 1px solid gray; zoom:80%;">
+
+4. Enter or select the following information:
     
-1. You can add a new node in 2 ways:
-
-    * Click the down arrow corresponding to the node from the **Assets** section from the left navigation bar of the **Agents** page and then click **+New Function**.
-
-    Or
-
-    * Click **Function** from the bottom bar of the **Agents** page.
-
-        <img src="../images/add-a-new-function-node.png" alt="Add a New Function Node" title="Add a New Function Node" style="border: 1px solid gray; zoom:80%;">
-
-        The Function node is created on the canvas and you can now define the properties of the node by clicking on the node. You can drag and move a node to any location on the canvas.
-
-    !!! note
-
-        The start node is displayed by default on the flow builder.
-
-
-## Configure the Function Node
-
-**To configure the Function node, follow these steps**:
-
-1. Add a **Function** node to the canvas.
-2. Click the **Function** node and the general properties dialog for the node is displayed on the right side of the page as shown in the following image.
-
-    <img src="../images/configure-the-function-node.png" alt="Configure the Function Node" title="Configure the Function Node" style="border: 1px solid gray; zoom:80%;">
-
-1. Enter a **Custom Name** by which you will identify the node later.
-2. Click the **Define a Script** box, and the **Edit script** dialog is displayed. Script node is used to process/parse the given input or the output of the previous node in Python or JavaScript.
-
-    <img src="../images/edit-script-box.png" alt="Edit Script Box" title="Edit Script Box" style="border: 1px solid gray; zoom:80%;">
-
-1. Select **JavaScript** or **Python** from the drop-down list of the **Edit script** dialog.
-
-    <img src="../images/select-javascript.png" alt="Select Javascript" title="Select Javascript" style="border: 1px solid gray; zoom:80%;">
-
-1. Enter a **Script** in the script box. Context variables are available for you to use while writing the script.
-
-    For example, 
-
-    **Syntax for Java**:
-
-    ```
-    context.js_fact20 = 1
-
-    for(var i=1;i&lt;21;i++)
-    ```
-
-    **Syntax for Python**:
-
-    ```
-    {
-    context.js_fact20 = context.js_fact20*i    #context[“js_fact20”]
-    }
-    ```
-
-    <img src="../images/enter-a-script.png" alt="Enter a Script" title="Enter a Script" style="border: 1px solid gray; zoom:80%;">
-
-1. Click the **Copy** icon if you want to copy the code.
-2. Click the **Run** button to test the script. Once the script is resolved successfully, you will be able to see the results in the **Log** section of the **Edit Script** page.
-
-    For example, to read input variable “email_content”, use below notation:
-    ~~~
-    context.<variable-name> = context.steps.<startNode-Name>.<inputVariable-name>
-    ~~~
-
-    **To call a function**:
-
-    ~~~
-    context.<UserDefined-Variable-Name>= UserDefined-Function-Name(context.steps.<startNode-Name>.<inputVariable-name>
-    ~~~
-
-    In the Function node, GALE provides a console I/O feature. This feature can be used when there is a requirement of a variable coming from the previous node or when testing a function.
-
-    * **Context input**: You can provide some input for the script node to execute in the Context input section.
-
-    * **Context output**: To find the results of the function from the given input. The output of the script execution along with the variable generated is displayed in the Context output section. You can debug the issues based on the log report and re-run the script.
+    * **Custom Name**: Enter an appropriate name for the node.
     
-    * **Log**: Status of the function can be monitored and you can view the values.
+    * **Define a Script**: You can define a script using Javascript or Python to process/parse the given input or the output of the previous node. Click anywhere in the **Define a Script** field to open the **Script Editor** dialog box.  
+    <img src="../images/function-node-script-editor.png" alt="Configure Function Node" title="Configure Function Node" style="border: 1px solid gray; zoom:80%;">
 
-    <img src="../images/context-input-context-output.png" alt="Context Input Context Output" title="Context Input Context Output" style="border: 1px solid gray; zoom:80%;">
+        1. In the top-left corner, choose the appropriate scripting language - **Javascript** or **Python**. Enter the script in the box. You can use variables or context variables in the Script Editor. For example:
+            
+            To read an input variable:
+            ~~~
+            context.<variable-name> = context.steps.<startNode-Name>.<inputVariable-name>
+            ~~~
+            To call a function:
+            ~~~
+            context.<UserDefined-Variable-Name>= UserDefined-Function-Name(context.steps.<startNode-Name>.<inputVariable-name>
+            ~~~
 
-    In the Function node, you can utilize pre-existing libraries such as pandas, NumPy and so on. This allows you to perform various data operations efficiently within your workflow.
+            !!! note
+                You cannot import packages in the Function node. However, you can use pre-existing libraries such as pandas or  NumPy.
 
-    !!! note
+        2.  You can use the Context input/output feature to use a variable from the previous node or when testing a function.
+            * **Context Input**: Add the required variable; also, dummy input values can be given to test the defined function.
+            * **Context Output**: Shows the results of the function from the given input.
+            * **Log**: Monitor the state of the function and view the values.
+        
+        3. Click the **Run** button to test the script. Once the script is resolved successfully, the results are displayed in the Log section.
+        4. Close the Script Editor.
 
-        We cannot import packages in Function Node.
+5. Click the **Connections** icon in the left navigation and select the **Go to Node** for both success and failure conditions.  
+<img src="../images/function-node-connections.png" alt="Configure Connection Settings" title="Configure Connection Settings" style="border: 1px solid gray; zoom:80%;">
+    1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can go to a Gen AI node to use the processed data from the Function node. 
+    2. **On Failure** > **Go to Node**: If the execution of the current node fails, go to an appropriate node having a custom error message configured for this node.
 
-3. Click the **Actions** icon and select the actions that you want the node to trigger when the Functions node is successful or when it fails.
+6. Finally, test the flow and fix any issues found: Click the **Run Flow** button at the top-right corner of the flow builder.
 
-    <img src="../images/actions-for-function-node.png" alt="Actions for Function Node" title="Actions for Function Node" style="border: 1px solid gray; zoom:50%;">
+!!! failure "Standard Errors"
 
-## Status Codes
-
-**Errors**:
-
-* Compilation and runtime errors.
-
-**Connection**:
-
-* **On Success**: On successful execution of the current node this connection can be linked with another node such as Gen AI node, Function node, Condition node, API node, or an End node.
-* **On Failure**: On failure in execution of the current node this connection should be linked with an End node to display the custom error message from the Function node. 
+    You can see compilation and runtime errors, if any, during the execution of the script/node.
 

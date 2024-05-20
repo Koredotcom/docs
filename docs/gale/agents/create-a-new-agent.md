@@ -5,5 +5,5 @@ You can create a new agent to leverage models, build flows, and later deploy it 
 Steps to create an agent:
 
 1. On the **Agents** page, click **Create new agent**. The **New agent** dialog box is displayed.  
-<img src="../images/create-a-new-agent.png" alt="Create a New Agent" title="Create a New Agent" style="border: 1px solid gray; zoom:60%;">
+<img src="../images/audio-transcription-solution-agent.png" alt="Create a New Agent" title="Create a New Agent" style="border: 1px solid gray; zoom:60%;">
 2. Enter a name and a brief description for the agent and click **Create**. The agent is created, and the **Agent Flow** option is displayed. You can start creating your agent flow now.
