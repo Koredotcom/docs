@@ -139,137 +139,110 @@ The following table displays the Co-Pilot features and the supported models.
 (✅ Supported | ❌ Not supported)
 
 
-
-
-
 <table>
   <tr>
-   <td><strong>Model</strong>
-   </td>
-   <td>Automatic Dialog Generation
-   </td>
-   <td>Conversation Test Case Suggestions
-   </td>
-   <td>Conversation Summary
-   </td>
-   <td>NLP Batch Test Case Suggestions
-   </td>
-   <td>Training Utterance Suggestions
-   </td>
+    <td><strong>Model</strong></td>
+    <td>Automatic Dialog Generation</td>
+    <td>Conversation Test Case Suggestions</td>
+    <td>Conversation Summary</td>
+    <td>Generating Opposite Utterance Suggestions</td>
+    <td>Generating Similar Answer Suggestions</td>
+    <td>Generating Similar Utterance Suggestions</td>
+    <td>NLP Batch Test Case Suggestions</td>
+    <td>Training Utterance Suggestions</td>
   </tr>
   <tr>
-   <td>Azure OpenAI – GPT 3.5 Turbo
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>❌
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
+    <td>Azure OpenAI – GPT 3.5 Turbo</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
   </tr>
   <tr>
-   <td>Azure OpenAI – GPT 4
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>❌
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
+    <td>Azure OpenAI – GPT 4</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
   </tr>
   <tr>
-   <td>OpenAI – GPT 3.5 Turbo
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>❌
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
+    <td>OpenAI – GPT 3.5 Turbo</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
   </tr>
   <tr>
-   <td>OpenAI – GPT 4
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>❌
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
+    <td>OpenAI – GPT 4</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
   </tr>
   <tr>
-   <td>Anthropic – Claude Instant
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>❌
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
+    <td>Anthropic – Claude Instant</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
   </tr>
   <tr>
-   <td>Anthropic – Claude
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>❌
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
+    <td>Anthropic – Claude</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
   </tr>
   <tr>
-   <td>Custom LLM
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
+    <td>Custom LLM</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
   </tr>
   <tr>
-   <td>Kore.ai XO GPT
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
-   <td>✅
-   </td>
-   <td>❌
-   </td>
-   <td>❌
-   </td>
+    <td>Kore.ai XO GPT</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td>❌</td>
   </tr>
 </table>
+
+
+
 
 
 
@@ -399,7 +372,14 @@ When closing a conversation request, contact centers require an agent to summari
 
 The system uses the[ Conversation Summary](../../apis/automation/conversation-summary.md.) public API to fetch the details of the entire conversation between the customer and the VA or agent. The API uses the Flan-T5 foundational model to summarize conversations using a large number of sample conversation transcripts.
 
-		
+### Generating Opposite Utterance Suggestions
+Use LLM models for generating opposite utterances during design time.
+
+### Generating Similar Answer Suggestions
+Use LLM models for generating similar answers during design time based on semantic similarity.
+
+### Generating Similar Utterance Suggestions
+Use LLM models for generating similar utterances during design time based on semantic similarity.
 
 
 ### NLP Batch Test Cases Suggestions

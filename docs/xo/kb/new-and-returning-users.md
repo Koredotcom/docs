@@ -8,6 +8,5 @@ Bot developers can use the `isReturningUser` flag to provide personalized user e
 
 **Related Links**
 
-* [Working with Context Object](../automation/intelligence/context-object.md){:target="_blank"}.
-* [Configure Welcome / On-Connect Event](../automation/intelligence/event-handling.md){:target="_blank"}.
-* [Users Trend Analysis](../analytics/overview/users-dashboard.md){:target="_blank"}.
+* [Working with Context Object](../automation/intelligence/context-object.md).
+* [Users Trend Analysis](../analytics/overview/users-dashboard.md#user-trends-considerations).
