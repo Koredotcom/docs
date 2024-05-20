@@ -6,7 +6,7 @@ To delete the particular skill with the given Stream Id and Agent Id.
 |--------------|---------------------------------------------------------------------------------------------|
 | **Endpoint** | `<code>https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups/{{skillGroupId}}/skills/{{skillId}}</code>` |
 | **Content Type** | `<code>application/json</code>`                                                            |
-| **Authorization** | `<code>auth: {{JWT}}</code>` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
+| **Authorization** | `<code>auth: {{JWT}}</code>` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope** | SmartAssist Analytics                                                                       |
 
 ## Path Parameters
