@@ -258,43 +258,58 @@ Key updates to products and features are summarized below. Click the correspondi
 
 === "Agent AI"
 
-    Agent AI (previously Kore.ai AgentAssist) is now a part of the unified XO Platform v11. 
+Agent AI (previously Kore.ai AgentAssist) is now a part of the unified XO Platform v11. 
 
-    It is an AI-powered virtual assistant for contact centers that enhances agent efficiency and service quality. It automates repetitive tasks like information retrieval and transactions and provides real-time customer insights and suggestions. By using Kore.ai's NLP and AI/ML technologies, AgentAI understands customer intent and offers contextually appropriate responses and FAQs. AgentAI operates as a widget within popular contact center platforms, supporting both voice and chat interactions.
+It is an AI-powered virtual assistant for contact centers that enhances agent efficiency and service quality. It automates repetitive tasks like information retrieval and transactions and provides real-time customer insights and suggestions. By using Kore.ai's NLP and AI/ML technologies, AgentAI understands customer intent and offers contextually appropriate responses and FAQs. AgentAI operates as a widget within popular contact center platforms, supporting both voice and chat interactions.
 
-    The key features and experience changes are summarized below.
+The key features and experience changes are summarized below.
 
-    ## Single Configuration Screen
+## Configuration
 
-    You don’t need different configuration screens for third-party contact centers and SmartAssist. For third-party integrations, navigate to **Channels** and use the **bot details** to establish a connection.
+The Configuration section lets users customize the various aspects of Agent AI. This section includes:
 
-    ## SearchAssist / Answers
+* **Welcome Events** that let you design how the initial interactions with customers are handled.
+* **Answer Configuration** that allows you to fine-tune how the responses are generated and delivered.
+* **Widget Settings** that offer options to customize the appearance and functionality of the Agent AI widget.
 
-    SearchAssist provides an intelligent, contextual, and personalized experience in every interaction across web and mobile channels. You can enhance Agent AI's search capabilities by integrating it with the Search AI application. You can utilize LLM and Gen AI to generate answers, but that section applies only to automation.  
-    <img src="../images/xo-platform-Knowledge AI.png" alt="Knowledge AI" title="Knowledge AI" style="border: 1px solid gray; zoom:70%;">
+### Welcome Events
 
-    * Search Results: Gives you the control over Knowledge AI search results. Agents can select between Always Show, Show with XO Results, and Show as a Fallback event.
-    * Show Auto Suggestions: When On, auto suggestions are available in the Ask AgentAssist search bar. 
-    * API Integration: You can optimize your search experience with the advanced Knowledge AI API configuration. Choose Basic to use the default Knowledge AI configurations or Advanced to configure how you want to use the Knowledge AI. The Advanced option lets you use your own API. The default selection is Basic.
-    * Control expand behavior of Answers: You can now customize the number of answers that appear for your Knowledge AI search in the AgentAssist widget. For example, if you select “3” on the AgentAssist Settings page, only three answers will appear in the widget. By default, “4” is selected.
+Welcome Events are pre-configured messages or prompts that are automatically triggered when a conversation is assigned to an agent in Agent AI. Welcome Events guide agents to handle inquiries effectively by streamlining workflows, lowering their Average Handle Times (AHT), reducing repetition, and contributing to enhanced customer satisfaction. [Learn more](https://docsinternal-kore.github.io/docs/xo/agentai/configuration/welcome-events/).
 
-    ## Settings
+### Answer Configuration
 
-    ### Channel-specific Setting 
+SearchAssist provides an intelligent, contextual, and personalized experience in every interaction across web and mobile channels. You can enhance the search capabilities of Agent AI by integrating it with the SearchAssist application. [Learn more](https://docsinternal-kore.github.io/docs/xo/agentai/configuration/answers-configuration/).
 
-    This section lets you set your preferences based on the channels. It has three channels – Chat, Voice, and Email – with a channel-specific default selection of options.  
-    <img src="../images/Agent-Assist-Setting.png" alt="Channel-specific Setting " title="Channel-specific Setting " style="border: 1px solid gray; zoom:70%;">
+### Widget Settings
 
-    The available options are as follows:
+The Agent AI Settings page lets users set the Agent AI widget’s appearance. On this page, users can decide what features they want on the widget, how the widget’s search functionality should work, the channel-specific settings, the landing page, and the URL opening behavior. [Learn more](https://docsinternal-kore.github.io/docs/xo/agentai/configuration/widget-settings/).
 
-    * **Proactive Mode**: This widget automates intent identification, entity extraction, and transcript generation. It also allows for automatic (proactive) transcript logging and intent suggestions. By default, this widget is enabled for all three channels.
-    * **Agent Coaching**: This widget enables real-time agent coaching based on analyzing agent utterances and speech. You can set up specific utterances and speech patterns for AgentAssist to take relevant actions, such as providing hints and nudges or emailing the manager when those patterns occur. By default, it is disabled for all channels and is only available for chat and voice channels.
-    * **Agent Playbook**: This widget provides agents with structured guidance and helps streamline task management. Supervisors can define stages and steps to follow, choose step progression (sequential or random), mark whether the steps are completed manually or automatically, and set adherence notifications. They can leverage this feature to gain valuable insights into agent adherence to specific playbook steps and use this data to enhance agents’ ability to handle interactions and significantly improve customer satisfaction. By default, this widget is disabled, but you can enable it for all three channels.
-    * **Send Button**: This option controls the accessibility of the Send button functionality for AgentAssist responses. By default, it’s enabled for Voice and Chat channels.
-    * **Copy Button**: This option controls the accessibility of the Copy button functionality for AgentAssist responses. By default, it’s enabled for all three channels.
-    * **Transcript Tab**: This option controls the appearance of the Transcript tab in the AgentAssist widget. By default, this widget is enabled and available for the Chat channel only.
-    * **Auto Summarization**: This option controls the automatic generation of a summary of the conversation when it ends. Agents can copy the summary and save it into the Notes or Remark field while closing the conversation. By default, it’s enabled for Voice and Chat channels only, and it also has the option to select the Submit button.
-    * **Widget Landing Tab**: This option allows you to select the default landing page for your selected channel and is available for all three channels.
+## Channels
+
+### Kore.ai Voice Gateway
+
+Kore.ai Voice Gateway (VG) helps configure how Contact Center AI handles automation for inbound voice calls.
+
+By going to **Automation AI** > **Flows & Channels** > **Channels** > **Kore.ai Voice Gateway**, you can add phone numbers, set up SIP Transfer, and configure the voice preferences to personalize the Automatic Speech Recognition (ASR) Engine and the voice that plays for your Text-to-Speech (TTS) conversions. In this section, you can enable the virtual assistant on the Voice channel using the built-in voice gateway that allows you to purchase a new phone number or use your existing phone number (with SIP transfer). [Learn more](https://docsinternal-kore.github.io/docs/xo/channels/kore.ai-voice-gateway/kore-voice-gateway/).
+
+### Web/Mobile Client
+
+To use any Kore.ai Bot SDKs, you must first register your app to get the authentication credentials to communicate between the Kore.ai bot and your application hosting the bot. The Kore.ai bot SDKs can be used to add a chat widget to your company application that enables users to chat with the application using natural language input. The Kore.ai bots platform interprets the user input, processes the request, and responds to the user. In this section, you can enable the virtual assistant to be on digital channels, including live chat platforms, third-party messengers, and more. [Learn more](https://docsinternal-kore.github.io/docs/xo/channels/add-web-mobile-client/).
+
+## Experience
+
+### Agent Coaching
+
+The Real-time Agent Coaching feature enables real-time coaching based on the analysis of agent utterances and speech. You can set up specific utterances and speech patterns for Agent AI to take relevant actions, such as providing hints and nudges or emailing the manager when those patterns occur. In this section, you can create and manage Agent Coaching Rules to be triggered during User-Agent Interactions. [Learn more](https://docsinternal-kore.github.io/docs/xo/agentai/agent-experience/agent-realtime-coaching/).
+
+### Agent Playbook
+
+Contact center agents are expected to provide the best customer experience despite high call volumes and complex interactions. To empower agents in this endeavor, AgentAssist introduces the Playbook feature—a standard tool offering structured guidance for handling customer interactions. In this section, you can create and manage the adherence checklist to be triggered for an Agent in a conversation with the user. [Learn more](https://docsinternal-kore.github.io/docs/xo/agentai/agent-experience/playbook/).
+
+## Dashboard
+
+The Agent AI Dashboard provides the Agent AI Widget’s performance data and the end user’s (agents and customers) behavioral trends. You can filter data by channel or time period. You can also view the total number of sessions and widget suggestions, the average number of widget suggestions used per session, which automations helped agents resolve customer issues, what the agents are searching for, automation performance results, and agent feedback in the form of likes and dislikes. [Learn more](https://docsinternal-kore.github.io/docs/xo/analytics/contact-center/agentai-dashboard/).
+
 
     [Learn more about Agent AI features :octicons-arrow-right-24:](../agentai/about-agent-ai.md)
 
