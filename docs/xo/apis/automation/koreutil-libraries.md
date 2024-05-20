@@ -158,7 +158,8 @@ koreUtil._ is a Platform-offered JS library that provides utility functions for 
 
 **Usage Example:**
 
-```context.chunkArray = koreUtil._.chunk(['a', 'b', 'c', 'd'], 2); 
+```
+context.chunkArray = koreUtil._.chunk(['a', 'b', 'c', 'd'], 2); 
 var users = [ 
 { 'user': 'barney', 'age': 36, 'active': true }, 
 { 'user': 'fred', 'age': 40, 'active': false } 
@@ -168,12 +169,10 @@ context.filterActive =koreUtil._.pluck(koreUtil._.filter(users, { 'age': 36, 'ac
 
 **Output:**
 
-* For context.chunkArray:
-
+* For context.chunkArray:  
    ```[["a","b"],["c","d"]]```
 
-* For context.filterActive:
-
+* For context.filterActive:  
    ```
    [
    "barney"
@@ -188,8 +187,7 @@ Post the release of v8.1, this function has been enhanced to return the authoriz
 Following is the return format for each of the situations:
 
 
-* For the language selection standard response:
-
+* For the language selection standard response:  
    ```
    {"list_of_languages": [
          {"title": "English","value": "English"},
@@ -198,8 +196,7 @@ Following is the return format for each of the situations:
    ]}
    ```
 
-* For the language ambiguity standard response:
-
+* For the language ambiguity standard response:  
    ```
    {"current_language": "Español",
       "list_of_new_languages": [
@@ -209,12 +206,10 @@ Following is the return format for each of the situations:
       ]}
    ```
 
-* For the language switch standard response:
-
+* For the language switch standard response:  
    `{"new_language": "Español","current_language": "English"}`
 
-* For User authorization request standard response:
-
+* For User authorization request standard response:  
    ```
    {
       "authorizationURL": "https:///r/xxxxxxxxxxxxx"
@@ -407,14 +402,14 @@ The **koreUtil.getSunshineConversationsMetadata** function can be used by a bot 
 
 **Usage Example:**
 
-`koreUtil.getSunshineConversationsMetadata();`**
+`koreUtil.getSunshineConversationsMetadata();`
 
 **Output:**
 
 ```json
 {
-"dataCapture.systemField.tags" : "TransferToBot",
-"dataCapture.systemField.priority" : "high"
+   "dataCapture.systemField.tags" : "TransferToBot",
+   "dataCapture.systemField.priority" : "high"
 }
 ```
 
@@ -578,6 +573,6 @@ Dies ist eine Beispielnachricht
 
 <img src="../images/kore-util-auto-translate.png" alt="Auto translate service as Bot Response" title="Auto translate service as Bot Response" style="border:1px solid gray; zoom:60%;">
 
-#### Related Link
+** Related Link
 
 * **[Script Node](../../automation/use-cases/dialogs/node-types/working-with-the-script-node)** (Write JavaScript code in a dialog task)
