@@ -17,8 +17,7 @@ Steps to invite users to your Agent:
 
     !!! note
 
-        Only the account owners can view the Invite button and invite other users.
- 
-    <img src="../images/invite-users.png" alt="Invite Users" title="Invite Users" style="border: 1px solid gray; zoom:80%;">
+        Only the account owners can view the Invite button and invite other users.    
 
-4. Enter users’ email addresses to invite them and click **Invite** to grant them access to collaborate on the Agent.
+4. Enter users’ email addresses to invite them and click **Invite** to grant them access to collaborate on the Agent.  
+<img src="../images/invite-users.png" alt="Invite Users" title="Invite Users" style="border: 1px solid gray; zoom:80%;">
