@@ -32,6 +32,8 @@ To enable automatic translation using Google Translation Services, please follow
 
 <img src="../images/mts-img2-google-translation-config-1.png" alt="Translation configurations - Google" title="Translation Configurations - Google" style="border: 1px solid gray;zoom:50%;"/>
 
+To know how to use the service, please visit [KoreUtil Libraries – autoTranslate.](../../../apis/automation/koreutil-libraries/#koreutilautotranslate){:target="_blank"}
+
 
 ## Configuring Custom Translation Service
 
