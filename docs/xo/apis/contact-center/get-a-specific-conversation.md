@@ -5,7 +5,7 @@ Get a particular conversation by providing the Conversation Id.
 | **Method**       | GET                                                                                          |
 |--------------|----------------------------------------------------------------------------------------------|
 | **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/conversations/{{conversation-id}}` |
-| **Content-Type** | `application/json`                                                                          |
+| **Content Type** | `application/json`                                                                          |
 | **Authorization** | `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token)                                                                           |
 | **API Scope**    | SmartAssist Analytics                                                                       |
 

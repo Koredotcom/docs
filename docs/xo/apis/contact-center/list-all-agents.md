@@ -2,108 +2,29 @@
 
 To retrieve the list of all agents with the given Stream Id.
 
-<table>
-  <tr>
-   <td>Method
-   </td>
-   <td>GET
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoint
-   </td>
-   <td><code>https://smartassist.kore.ai/agentassist/api/v1/public/{StreamId}/organizations/{OrgID}/agents?page=1&includeQueues=True</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content-Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>SmartAssist Analytics
-   </td>
-  </tr>
-</table>
+| **Method**       | GET                                                     |
+|--------------|---------------------------------------------------------|
+| **Endpoint**     | `https://smartassist.kore.ai/agentassist/api/v1/public/{StreamId}/organizations/{OrgID}/agents?page=1&includeQueues=True` |
+| **Content Type** | `application/json`                                      |
+| **Authorization**| `auth: {{JWT}}` <br>See [How to generate the JWT Token](https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token) |
+| **API Scope**    | SmartAssist Analytics                                   |
 
 ## Path Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL, for example, https://smartassist.kore.ai
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>BotId
-   </td>
-   <td>BotId or StreamId. You can access it from the General Settings page of the bot.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>OrgId
-   </td>
-   <td>The Organization Id.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-</table>
+| **PARAMETER** | **DESCRIPTION**                                                             | **TYPE**          |
+|-----------|-------------------------------------------------------------------------|---------------|
+| host      | Environment URL, for example, https://platform.kore.ai               | string, required |
+| BotId     | BotId or StreamId. You can access it from the General Settings page of the bot. | string, required |
+| OrgId     | The Organization Id.                                                    | string, required |
 
 ## Query Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>page
-   </td>
-   <td>The page number to return. The default is 1.
-   </td>
-   <td>Integer, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>includeQueues
-   </td>
-   <td>Whether to include queues in response.
-   </td>
-   <td>Boolean, Optional
-   </td>
-  </tr>
-</table>
+| **PARAMETER**      | **DESCRIPTION**                            | **TYPE**           |
+|----------------|----------------------------------------|----------------|
+| page           | The page number to return. Default is 1. | integer, optional |
+| includeQueues  | Whether to include queues in the response. | boolean, optional |
 
 ## Sample Request
-
 
 ```
 curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organizations/{{OrgID}}/agents?page=1&includeQueues=True' \
@@ -118,18 +39,18 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
     "results": [
         {
             "status": "ACTIVE",
-            "userId": "u-c8a51563-bae4-5730-bc2e-4a83889892f6",
-            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3994e",
-            "accountId": "6201eaad257a163e989ad095",
+            "userId": "u-c8a51563-bae4-5730-bc2e-4a838898xxxx",
+            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3xxxx",
+            "accountId": "6201eaad257a163e989axxxx",
             "agentGroups": [
                 {
-                    "groupId": "ag-b6a6178-e35e-47cc-9a40-900956c08499",
+                    "groupId": "ag-b6a6178-e35e-47cc-9a40-900956c0xxxx",
                     "accessLevel": "full",
                     "role": "manager",
                     "groupName": "Default Group"
                 },
                 {
-                    "groupId": "ag-30ecdc8-19d2-40e8-a0b9-e938731997a3",
+                    "groupId": "ag-30ecdc8-19d2-40e8-a0b9-e9387319xxxx",
                     "accessLevel": "full",
                     "role": "manager",
                     "groupName": "New Group"
@@ -172,33 +93,33 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
                     "proficiency": "expert"
                 }
             ],
-            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a83889892f6",
+            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a838898xxxx",
             "onlineStatus": "Offline",
             "onlineStatusType": "OFFLINE",
-            "hoursOfOperationId": "6201ead21e06473c153c5c98",
-            "roleId": "6201eaad257a163e989ad0a4",
+            "hoursOfOperationId": "6201ead21e06473c153cxxxx",
+            "roleId": "6201eaad257a163e989axxxx",
             "createdAt": "2022-02-08T04:00:19.156Z",
             "updatedAt": "2023-05-11T07:29:25.278Z",
             "lastOnlineAt": "2023-05-11T07:29:25.278Z",
             "desktopLayouts": [
                 {
                     "isDefault": false,
-                    "id": "ly-ca5231e-9b44-4b39-ac8d-0b36202a3b8d"
+                    "id": "ly-ca5231e-9b44-4b39-ac8d-0b36202axxxx"
                 },
                 {
                     "isDefault": true,
-                    "id": "ly-92d92b7-4798-419a-a719-07aab1a6ebb1"
+                    "id": "ly-92d92b7-4798-419a-a719-07aab1a6xxxx"
                 },
                 {
                     "isDefault": false,
-                    "id": "ly-b0ed0dc-7dec-4d7c-8933-78797a222a4a"
+                    "id": "ly-b0ed0dc-7dec-4d7c-8933-78797a22xxxx"
                 }
             ],
             "attachmentsEnabled": true,
             "emojisEnabled": true,
             "isAccountOwner": true,
             "sipURI": "sip:supportuat94@smartassist-agent-np.kore.ai:5060",
-            "id": "a-1353078-d362-4d5e-95ed-554056e71750",
+            "id": "a-1353078-d362-4d5e-95ed-554056e7xxxx",
             "emailId": "john.doe@domain.com",
             "firstName": "John",
             "lastName": "Doe",
@@ -207,34 +128,34 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "profImage": "no-avatar",
             "skills": [
                 {
-                    "userId": "u-c8a51563-bae4-5730-bc2e-4a83889892f6",
-                    "skillId": "641847bf731b5d4baa2d991f",
+                    "userId": "u-c8a51563-bae4-5730-bc2e-4a838898xxxx",
+                    "skillId": "641847bf731b5d4baa2dxxxx",
                     "proficiencyLevel": "average",
                     "name": "Blue Skill",
-                    "skillGroupId": "6201ead21e06473c153c5c97",
+                    "skillGroupId": "6201ead21e06473c153cxxxx",
                     "skillGroupName": "Default SkillGroup",
                     "skillGroupColor": "#D2000D",
-                    "id": "641847bf731b5d4baa2d991f"
+                    "id": "641847bf731b5d4baa2dxxxx"
                 },
                 {
-                    "userId": "u-c8a51563-bae4-5730-bc2e-4a83889892f6",
-                    "skillId": "641847d1731b5d4baa2ded62",
+                    "userId": "u-c8a51563-bae4-5730-bc2e-4a838898xxxx",
+                    "skillId": "641847d1731b5d4baa2dxxxx",
                     "proficiencyLevel": "average",
                     "name": "Red Skill",
-                    "skillGroupId": "6201ead21e06473c153c5c97",
+                    "skillGroupId": "6201ead21e06473c153cxxxx",
                     "skillGroupName": "Default SkillGroup",
                     "skillGroupColor": "#D2000D",
-                    "id": "641847d1731b5d4baa2ded62"
+                    "id": "641847d1731b5d4baa2dxxxx"
                 },
                 {
-                    "skillId": "6201ead31e06473c153c5c99",
-                    "userId": "u-c8a51563-bae4-5730-bc2e-4a83889892f6",
+                    "skillId": "6201ead31e06473c153cxxxx",
+                    "userId": "u-c8a51563-bae4-5730-bc2e-4a838898xxxx",
                     "proficiencyLevel": "expert",
                     "name": "Default Skill",
-                    "skillGroupId": "6201ead21e06473c153c5c97",
+                    "skillGroupId": "6201ead21e06473c153cxxxx",
                     "skillGroupName": "Default SkillGroup",
                     "skillGroupColor": "#D2000D",
-                    "id": "6201ead31e06473c153c5c99"
+                    "id": "6201ead31e06473c153cxxxx"
                 }
             ],
             "queues": [
@@ -244,53 +165,53 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
                     "agents": [
                         {
                             "isPreferredAgent": true,
-                            "userId": "u-c8a51563-bae4-5730-bc2e-4a83889892f6"
+                            "userId": "u-c8a51563-bae4-5730-bc2e-4a838898xxxx"
                         }
                     ],
-                    "id": "qu-53c78e9-d249-477e-a472-9426e25d6cb4"
+                    "id": "qu-53c78e9-d249-477e-a472-9426e25dxxxx"
                 },
                 {
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-c8a51563-bae4-5730-bc2e-4a83889892f6"
+                            "userId": "u-c8a51563-bae4-5730-bc2e-4a838898xxxx"
                         }
                     ],
                     "name": "Test Queue",
                     "description": "121242",
-                    "id": "qu-3066a40-5b85-4ee5-9a8e-6bd800287e3b"
+                    "id": "qu-3066a40-5b85-4ee5-9a8e-6bd8002xxxx"
                 },
                 {
                     "agentGroups": [],
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-c8a51563-bae4-5730-bc2e-4a83889892f6"
+                            "userId": "u-c8a51563-bae4-5730-bc2e-4a838898xxxx"
                         }
                     ],
                     "name": "Test Queue 6090",
-                    "id": "qu-b3b13c5-271a-4599-ab38-9e44acc46989"
+                    "id": "qu-b3b13c5-271a-4599-ab38-9e44acc4xxxx"
                 },
                 {
                     "agentGroups": [],
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-c8a51563-bae4-5730-bc2e-4a83889892f6"
+                            "userId": "u-c8a51563-bae4-5730-bc2e-4a838898xxxx"
                         }
                     ],
                     "name": "Sample Queue4",
-                    "id": "qu-d937893-c788-45d0-9da8-23490287b689"
+                    "id": "qu-d937893-c788-45d0-9da8-23490287xxxx"
                 }
             ],
             "role": "Administrator"
         },
         {
             "status": "ACTIVE",
-            "hoursOfOperationId": "6201ead21e06473c153c5c98",
+            "hoursOfOperationId": "6201ead21e06473c153cxxxx",
             "canSupportChat": true,
             "maxChatSupport": 20,
-            "roleId": "6389e47741afba5c08bfd48e",
+            "roleId": "6389e47741afba5c08bfxxxx",
             "chatLanguageSupport": [
                 {
                     "isActive": true,
@@ -316,13 +237,13 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
                     "proficiency": "expert"
                 }
             ],
-            "userId": "u-70b19d34-e795-5059-b687-484c0bc1f795",
-            "accountId": "6201eaad257a163e989ad095",
-            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a83889892f6",
-            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3994e",
+            "userId": "u-70b19d34-e795-5059-b687-484c0bcxxxx",
+            "accountId": "6201eaad257a163e989axxxx",
+            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a838898xxxx",
+            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3xxxx",
             "agentGroups": [
                 {
-                    "groupId": "ag-b6a6178-e35e-47cc-9a40-900956c08499",
+                    "groupId": "ag-b6a6178-e35e-47cc-9a40-900956c0xxxx",
                     "role": "manager",
                     "accessLevel": "view",
                     "groupName": "Default Group"
@@ -335,7 +256,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "lastOnlineAt": "2023-03-06T05:55:20.517Z",
             "attachmentsEnabled": true,
             "emojisEnabled": true,
-            "id": "a-898331c-c9e6-4918-9501-6c2626198b32",
+            "id": "a-898331c-c9e6-4918-9501-6c262619xxxx",
             "emailId": "jane.doe@domain.com",
             "firstName": "Jane",
             "lastName": "Doe",
@@ -349,32 +270,32 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-70b19d34-e795-5059-b687-484c0bc1f795"
+                            "userId": "u-70b19d34-e795-5059-b687-484c0bc1xxxx"
                         }
                     ],
                     "name": "Test Queue 6090",
-                    "id": "qu-b3b13c5-271a-4599-ab38-9e44acc46989"
+                    "id": "qu-b3b13c5-271a-4599-ab38-9e44accxxxx"
                 },
                 {
                     "agentGroups": [],
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-70b19d34-e795-5059-b687-484c0bc1f795"
+                            "userId": "u-70b19d34-e795-5059-b687-484c0bc1xxxx
                         }
                     ],
                     "name": "Sample Queue4",
-                    "id": "qu-d937893-c788-45d0-9da8-23490287b689"
+                    "id": "qu-d937893-c788-45d0-9da8-23490287xxxx"
                 }
             ],
             "role": "Agent"
         },
         {
             "status": "ACTIVE",
-            "hoursOfOperationId": "6201ead21e06473c153c5c98",
+            "hoursOfOperationId": "6201ead21e06473c153cxxxx",
             "canSupportChat": true,
             "maxChatSupport": 5,
-            "roleId": "6389e47741afba5c08bfd48e",
+            "roleId": "6389e47741afba5c08bfxxxx",
             "chatLanguageSupport": [
                 {
                     "isActive": true,
@@ -400,13 +321,13 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
                     "proficiency": "expert"
                 }
             ],
-            "userId": "u-16a7d3ce-1545-51a0-aa34-ce9de87304f2",
-            "accountId": "6201eaad257a163e989ad095",
-            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a83889892f6",
-            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3994e",
+            "userId": "u-16a7d3ce-1545-51a0-aa34-ce9de873xxxx",
+            "accountId": "6201eaad257a163e989xxxx",
+            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a838898xxxx",
+            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3xxxx",
             "agentGroups": [
                 {
-                    "groupId": "ag-b6a6178-e35e-47cc-9a40-900956c08499",
+                    "groupId": "ag-b6a6178-e35e-47cc-9a40-900956c0xxxx",
                     "role": "agent",
                     "groupName": "Default Group"
                 }
@@ -418,7 +339,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "lastOnlineAt": "2023-03-06T05:55:20.583Z",
             "attachmentsEnabled": true,
             "emojisEnabled": true,
-            "id": "a-9c4b773-14ba-4295-8cc1-569036a80b92",
+            "id": "a-9c4b773-14ba-4295-8cc1-569036a8xxxx",
             "emailId": "john.smith@domain.com",
             "firstName": "John",
             "lastName": "Smith",
@@ -427,14 +348,14 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "profImage": "no-avatar",
             "skills": [
                 {
-                    "skillId": "6201ead31e06473c153c5c99",
-                    "userId": "u-16a7d3ce-1545-51a0-aa34-ce9de87304f2",
+                    "skillId": "6201ead31e06473c153cxxxx",
+                    "userId": "u-16a7d3ce-1545-51a0-aa34-ce9de87xxxx",
                     "proficiencyLevel": "expert",
                     "name": "Default Skill",
-                    "skillGroupId": "6201ead21e06473c153c5c97",
+                    "skillGroupId": "6201ead21e06473c153cxxxx",
                     "skillGroupName": "Default SkillGroup",
                     "skillGroupColor": "#D2000D",
-                    "id": "6201ead31e06473c153c5c99"
+                    "id": "6201ead31e06473c153xxxx"
                 }
             ],
             "queues": [
@@ -443,32 +364,32 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-16a7d3ce-1545-51a0-aa34-ce9de87304f2"
+                            "userId": "u-16a7d3ce-1545-51a0-aa34-ce9de873xxxx"
                         }
                     ],
                     "name": "Test Queue 6090",
-                    "id": "qu-b3b13c5-271a-4599-ab38-9e44acc46989"
+                    "id": "qu-b3b13c5-271a-4599-ab38-9e44acc4xxxx"
                 },
                 {
                     "agentGroups": [],
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-16a7d3ce-1545-51a0-aa34-ce9de87304f2"
+                            "userId": "u-16a7d3ce-1545-51a0-aa34-ce9de873xxxx"
                         }
                     ],
                     "name": "Sample Queue4",
-                    "id": "qu-d937893-c788-45d0-9da8-23490287b689"
+                    "id": "qu-d937893-c788-45d0-9da8-23490287xxxx"
                 }
             ],
             "role": "Agent"
         },
         {
             "status": "ACTIVE",
-            "hoursOfOperationId": "6201ead21e06473c153c5c98",
+            "hoursOfOperationId": "6201ead21e06473c153cxxxx",
             "canSupportChat": true,
             "maxChatSupport": 5,
-            "roleId": "6389e47741afba5c08bfd48e",
+            "roleId": "6389e47741afba5c08bxxxx",
             "chatLanguageSupport": [
                 {
                     "isActive": true,
@@ -494,13 +415,13 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
                     "proficiency": "expert"
                 }
             ],
-            "userId": "u-1a97d394-5cba-5c8b-93be-599c548d311b",
-            "accountId": "6201eaad257a163e989ad095",
-            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a83889892f6",
-            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3994e",
+            "userId": "u-1a97d394-5cba-5c8b-93be-599c548dxxxx",
+            "accountId": "6201eaad257a163e989axxxx",
+            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a83889xxxx",
+            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bfxxxx",
             "agentGroups": [
                 {
-                    "groupId": "ag-b6a6178-e35e-47cc-9a40-900956c08499",
+                    "groupId": "ag-b6a6178-e35e-47cc-9a40-900956c0xxxx",
                     "role": "agent",
                     "groupName": "Default Group"
                 }
@@ -512,7 +433,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "lastOnlineAt": "2023-03-06T05:55:20.610Z",
             "attachmentsEnabled": true,
             "emojisEnabled": true,
-            "id": "a-397ca96-3c55-4b85-ab36-2b707d243125",
+            "id": "a-397ca96-3c55-4b85-ab36-2b707d2xxxx",
             "emailId": "clark.kent@domain.com",
             "firstName": "Clark",
             "lastName": "Kent",
@@ -521,14 +442,14 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "profImage": "no-avatar",
             "skills": [
                 {
-                    "skillId": "6201ead31e06473c153c5c99",
-                    "userId": "u-1a97d394-5cba-5c8b-93be-599c548d311b",
+                    "skillId": "6201ead31e06473c153xxxxx",
+                    "userId": "u-1a97d394-5cba-5c8b-93be-599c548xxxx",
                     "proficiencyLevel": "expert",
                     "name": "Default Skill",
-                    "skillGroupId": "6201ead21e06473c153c5c97",
+                    "skillGroupId": "6201ead21e06473c153cxxxx",
                     "skillGroupName": "Default SkillGroup",
                     "skillGroupColor": "#D2000D",
-                    "id": "6201ead31e06473c153c5c99"
+                    "id": "6201ead31e06473c153xxxx"
                 }
             ],
             "queues": [
@@ -538,53 +459,53 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-1a97d394-5cba-5c8b-93be-599c548d311b"
+                            "userId": "u-1a97d394-5cba-5c8b-93be-599c548dxxxx"
                         }
                     ],
-                    "id": "qu-53c78e9-d249-477e-a472-9426e25d6cb4"
+                    "id": "qu-53c78e9-d249-477e-a472-9426e25dxxxx"
                 },
                 {
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-1a97d394-5cba-5c8b-93be-599c548d311b"
+                            "userId": "u-1a97d394-5cba-5c8b-93be-599c548dxxxx"
                         }
                     ],
                     "name": "Test Queue",
                     "description": "121242",
-                    "id": "qu-3066a40-5b85-4ee5-9a8e-6bd800287e3b"
+                    "id": "qu-3066a40-5b85-4ee5-9a8e-6bd80028xxxx"
                 },
                 {
                     "agentGroups": [],
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-1a97d394-5cba-5c8b-93be-599c548d311b"
+                            "userId": "u-1a97d394-5cba-5c8b-93be-599c548dxxxx"
                         }
                     ],
                     "name": "Test Queue 6090",
-                    "id": "qu-b3b13c5-271a-4599-ab38-9e44acc46989"
+                    "id": "qu-b3b13c5-271a-4599-ab38-9e44acc4xxxx"
                 },
                 {
                     "agentGroups": [],
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-1a97d394-5cba-5c8b-93be-599c548d311b"
+                            "userId": "u-1a97d394-5cba-5c8b-93be-599c548dxxxx"
                         }
                     ],
                     "name": "Sample Queue4",
-                    "id": "qu-d937893-c788-45d0-9da8-23490287b689"
+                    "id": "qu-d937893-c788-45d0-9da8-23490287xxxx"
                 }
             ],
             "role": "Agent"
         },
         {
             "status": "ACTIVE",
-            "hoursOfOperationId": "6201ead21e06473c153c5c98",
+            "hoursOfOperationId": "6201ead21e06473c153cxxxx",
             "canSupportChat": true,
             "maxChatSupport": 5,
-            "roleId": "6389e47741afba5c08bfd48e",
+            "roleId": "6389e47741afba5c08bfxxxx",
             "chatLanguageSupport": [
                 {
                     "isActive": true,
@@ -620,13 +541,13 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
                     "proficiency": "expert"
                 }
             ],
-            "userId": "u-fd23bb5e-9d3b-50c6-83d0-a73857d9edb7",
-            "accountId": "6201eaad257a163e989ad095",
-            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a83889892f6",
-            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3994e",
+            "userId": "u-fd23bb5e-9d3b-50c6-83d0-a73857d9xxxx",
+            "accountId": "6201eaad257a163e989axxxx",
+            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a838898xxxx",
+            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3xxxx",
             "agentGroups": [
                 {
-                    "groupId": "ag-b6a6178-e35e-47cc-9a40-900956c08499",
+                    "groupId": "ag-b6a6178-e35e-47cc-9a40-900956c0xxxx",
                     "role": "manager",
                     "accessLevel": "full",
                     "groupName": "Default Group"
@@ -640,20 +561,20 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "desktopLayouts": [
                 {
                     "isDefault": true,
-                    "id": "ly-ca5231e-9b44-4b39-ac8d-0b36202a3b8d"
+                    "id": "ly-ca5231e-9b44-4b39-ac8d-0b36202axxxx"
                 },
                 {
                     "isDefault": false,
-                    "id": "ly-4c5be1d-6ca9-49ac-ac54-578e0e097e79"
+                    "id": "ly-4c5be1d-6ca9-49ac-ac54-578e0e09xxxx"
                 },
                 {
                     "isDefault": false,
-                    "id": "ly-9e304bb-cb55-443e-96ab-14640b754a35"
+                    "id": "ly-9e304bb-cb55-443e-96ab-14640b75xxxx"
                 }
             ],
             "attachmentsEnabled": true,
             "emojisEnabled": true,
-            "id": "a-5978284-a164-41d2-b1d5-b22b1d91ad4d",
+            "id": "a-5978284-a164-41d2-b1d5-b22b1d91xxxx",
             "emailId": "lois.lane@domain.com",
             "firstName": "Lois",
             "lastName": "Lane",
@@ -662,14 +583,14 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "profImage": "no-avatar",
             "skills": [
                 {
-                    "skillId": "6201ead31e06473c153c5c99",
-                    "userId": "u-fd23bb5e-9d3b-50c6-83d0-a73857d9edb7",
+                    "skillId": "6201ead31e06473c153cxxxx",
+                    "userId": "u-fd23bb5e-9d3b-50c6-83d0-a73857d9xxxx",
                     "proficiencyLevel": "expert",
                     "name": "Default Skill",
-                    "skillGroupId": "6201ead21e06473c153c5c97",
+                    "skillGroupId": "6201ead21e06473c153cxxxx",
                     "skillGroupName": "Default SkillGroup",
                     "skillGroupColor": "#D2000D",
-                    "id": "6201ead31e06473c153c5c99"
+                    "id": "6201ead31e06473c153cxxxx"
                 }
             ],
             "queues": [
@@ -679,32 +600,32 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-fd23bb5e-9d3b-50c6-83d0-a73857d9edb7"
+                            "userId": "u-fd23bb5e-9d3b-50c6-83d0-a73857d9xxxx"
                         }
                     ],
-                    "id": "qu-53c78e9-d249-477e-a472-9426e25d6cb4"
+                    "id": "qu-53c78e9-d249-477e-a472-9426e25xxxx"
                 },
                 {
                     "agents": [
                         {
                             "isPreferredAgent": true,
-                            "userId": "u-fd23bb5e-9d3b-50c6-83d0-a73857d9edb7"
+                            "userId": "u-fd23bb5e-9d3b-50c6-83d0-a73857d9xxxx"
                         }
                     ],
                     "name": "Test Queue",
                     "description": "121242",
-                    "id": "qu-3066a40-5b85-4ee5-9a8e-6bd800287e3b"
+                    "id": "qu-3066a40-5b85-4ee5-9a8e-6bd80028xxxx"
                 },
                 {
                     "agentGroups": [],
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-fd23bb5e-9d3b-50c6-83d0-a73857d9edb7"
+                            "userId": "u-fd23bb5e-9d3b-50c6-83d0-a73857d9xxxx"
                         }
                     ],
                     "name": "Sample Queue4",
-                    "id": "qu-d937893-c788-45d0-9da8-23490287b689"
+                    "id": "qu-d937893-c788-45d0-9da8-23490287xxxx"
                 }
             ],
             "role": "Agent"
@@ -713,7 +634,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "status": "ACTIVE",
             "canSupportChat": true,
             "maxChatSupport": 5,
-            "roleId": "6389e47741afba5c08bfd48e",
+            "roleId": "6389e47741afba5c08bfxxxx",
             "chatLanguageSupport": [
                 {
                     "isActive": true,
@@ -750,13 +671,13 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
                 }
             ],
             "desktopLayouts": [],
-            "userId": "u-13d6ff42-13ae-5f6c-a430-c46ad25c9575",
-            "accountId": "6201eaad257a163e989ad095",
-            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a83889892f6",
-            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3994e",
+            "userId": "u-13d6ff42-13ae-5f6c-a430-c46ad25cxxxx",
+            "accountId": "6201eaad257a163e989xxxx",
+            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a838898xxxx",
+            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3xxxx",
             "agentGroups": [
                 {
-                    "groupId": "ag-b6a6178-e35e-47cc-9a40-900956c08499",
+                    "groupId": "ag-b6a6178-e35e-47cc-9a40-900956c0xxxx",
                     "role": "agent",
                     "groupName": "Default Group"
                 }
@@ -768,7 +689,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "onlineStatusType": "OFFLINE",
             "attachmentsEnabled": true,
             "emojisEnabled": true,
-            "id": "a-4088962-3642-40ae-88dc-c578d48c793d",
+            "id": "a-4088962-3642-40ae-88dc-c578d48cxxxx",
             "emailId": "henry.higgins@domain.com",
             "firstName": "Henry",
             "lastName": "Higgins",
@@ -777,11 +698,11 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "profImage": "no-avatar",
             "skills": [
                 {
-                    "skillId": "6201ead31e06473c153c5c99",
-                    "userId": "u-13d6ff42-13ae-5f6c-a430-c46ad25c9575",
+                    "skillId": "6201ead31e06473c153cxxxx",
+                    "userId": "u-13d6ff42-13ae-5f6c-a430-c46ad25xxxx",
                     "proficiencyLevel": "expert",
                     "name": "Default Skill",
-                    "skillGroupId": "6201ead21e06473c153c5c97",
+                    "skillGroupId": "6201ead21e06473c153cxxxx",
                     "skillGroupName": "Default SkillGroup",
                     "skillGroupColor": "#D2000D",
                     "id": "6201ead31e06473c153c5c99"
@@ -794,43 +715,43 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-13d6ff42-13ae-5f6c-a430-c46ad25c9575"
+                            "userId": "u-13d6ff42-13ae-5f6c-a430-c46ad25cxxxx"
                         }
                     ],
-                    "id": "qu-53c78e9-d249-477e-a472-9426e25d6cb4"
+                    "id": "qu-53c78e9-d249-477e-a472-9426e25dxxxx"
                 },
                 {
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-13d6ff42-13ae-5f6c-a430-c46ad25c9575"
+                            "userId": "u-13d6ff42-13ae-5f6c-a430-c46ad25cxxxx"
                         }
                     ],
                     "name": "Test Queue",
                     "description": "121242",
-                    "id": "qu-3066a40-5b85-4ee5-9a8e-6bd800287e3b"
+                    "id": "qu-3066a40-5b85-4ee5-9a8e-6bd80028xxxx"
                 },
                 {
                     "agentGroups": [],
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-13d6ff42-13ae-5f6c-a430-c46ad25c9575"
+                            "userId": "u-13d6ff42-13ae-5f6c-a430-c46ad25cxxxx"
                         }
                     ],
                     "name": "Test Queue 6090",
-                    "id": "qu-b3b13c5-271a-4599-ab38-9e44acc46989"
+                    "id": "qu-b3b13c5-271a-4599-ab38-9e44acc4xxxx"
                 },
                 {
                     "agentGroups": [],
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-13d6ff42-13ae-5f6c-a430-c46ad25c9575"
+                            "userId": "u-13d6ff42-13ae-5f6c-a430-c46ad25cxxxx"
                         }
                     ],
                     "name": "Sample Queue4",
-                    "id": "qu-d937893-c788-45d0-9da8-23490287b689"
+                    "id": "qu-d937893-c788-45d0-9da8-23490287xxxx"
                 }
             ],
             "role": "Agent"
@@ -839,7 +760,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "status": "ACTIVE",
             "canSupportChat": true,
             "maxChatSupport": 5,
-            "roleId": "6389e47741afba5c08bfd48e",
+            "roleId": "6389e47741afba5c08bfxxxx",
             "chatLanguageSupport": [
                 {
                     "isActive": true,
@@ -878,16 +799,16 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "desktopLayouts": [
                 {
                     "isDefault": false,
-                    "id": "ly-9e304bb-cb55-443e-96ab-14640b754a35"
+                    "id": "ly-9e304bb-cb55-443e-96ab-14640b75xxxx"
                 }
             ],
-            "userId": "u-62ae8e9d-2768-56a3-bc92-7abbc4be949f",
-            "accountId": "6201eaad257a163e989ad095",
-            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a83889892f6",
-            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3994e",
+            "userId": "u-62ae8e9d-2768-56a3-bc92-7abbc4bexxxx",
+            "accountId": "6201eaad257a163e989axxxx",
+            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a838898xxxx",
+            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bfxxxx",
             "agentGroups": [
                 {
-                    "groupId": "ag-30ecdc8-19d2-40e8-a0b9-e938731997a3",
+                    "groupId": "ag-30ecdc8-19d2-40e8-a0b9-e9387319xxxx",
                     "role": "agent",
                     "groupName": "New Group"
                 }
@@ -899,7 +820,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "onlineStatusType": "OFFLINE",
             "attachmentsEnabled": true,
             "emojisEnabled": true,
-            "id": "a-1aba421-7d05-41a5-a47a-daa450655bb0",
+            "id": "a-1aba421-7d05-41a5-a47a-daa45065xxxx",
             "emailId": "ann_chovey@domain.com",
             "firstName": "Ann",
             "lastName": "Chovey",
@@ -907,14 +828,14 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "profImage": "no-avatar",
             "skills": [
                 {
-                    "skillId": "6201ead31e06473c153c5c99",
-                    "userId": "u-62ae8e9d-2768-56a3-bc92-7abbc4be949f",
+                    "skillId": "6201ead31e06473c153cxxxx",
+                    "userId": "u-62ae8e9d-2768-56a3-bc92-7abbc4bexxxx",
                     "proficiencyLevel": "expert",
                     "name": "Default Skill",
-                    "skillGroupId": "6201ead21e06473c153c5c97",
+                    "skillGroupId": "6201ead21e06473c153cxxxx",
                     "skillGroupName": "Default SkillGroup",
                     "skillGroupColor": "#D2000D",
-                    "id": "6201ead31e06473c153c5c99"
+                    "id": "6201ead31e06473c153cxxxx"
                 }
             ],
             "queues": [
@@ -924,44 +845,44 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-62ae8e9d-2768-56a3-bc92-7abbc4be949f"
+                            "userId": "u-62ae8e9d-2768-56a3-bc92-7abbc4bexxxx"
                         }
                     ],
-                    "id": "qu-53c78e9-d249-477e-a472-9426e25d6cb4"
+                    "id": "qu-53c78e9-d249-477e-a472-9426e25dxxxx"
                 },
                 {
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-62ae8e9d-2768-56a3-bc92-7abbc4be949f"
+                            "userId": "u-62ae8e9d-2768-56a3-bc92-7abbc4bexxxx"
                         }
                     ],
                     "name": "Test Queue",
                     "description": "121242",
-                    "id": "qu-3066a40-5b85-4ee5-9a8e-6bd800287e3b"
+                    "id": "qu-3066a40-5b85-4ee5-9a8e-6bd80028xxxx"
                 },
                 {
                     "agentGroups": [],
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-62ae8e9d-2768-56a3-bc92-7abbc4be949f"
+                            "userId": "u-62ae8e9d-2768-56a3-bc92-7abbc4bexxxx"
                         }
                     ],
                     "name": "Sample Queue4",
-                    "id": "qu-d937893-c788-45d0-9da8-23490287b689"
+                    "id": "qu-d937893-c788-45d0-9da8-23490287xxxx"
                 }
             ],
             "role": "Agent"
         },
         {
             "status": "ACTIVE",
-            "userId": "u-81191025-27fa-574b-b5ce-f91aa5b47094",
-            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3994e",
-            "accountId": "6201eaad257a163e989ad095",
+            "userId": "u-81191025-27fa-574b-b5ce-f91aa5b4xxxx",
+            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3xxxx",
+            "accountId": "6201eaad257a163e989axxxx",
             "agentGroups": [
                 {
-                    "groupId": "ag-b6a6178-e35e-47cc-9a40-900956c08499",
+                    "groupId": "ag-b6a6178-e35e-47cc-9a40-900956c0xxxx",
                     "role": "agent",
                     "groupName": "Default Group"
                 }
@@ -983,18 +904,18 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
                     "proficiency": "expert"
                 }
             ],
-            "createdBy": "u-81191025-27fa-574b-b5ce-f91aa5b47094",
+            "createdBy": "u-81191025-27fa-574b-b5ce-f91aa5b4xxxx",
             "onlineStatus": "Offline",
             "onlineStatusType": "OFFLINE",
-            "hoursOfOperationId": "6201ead21e06473c153c5c98",
-            "roleId": "6389e47741afba5c08bfd48e",
+            "hoursOfOperationId": "6201ead21e06473c153cxxxx",
+            "roleId": "6389e47741afba5c08bxxxx",
             "lastOnlineAt": "2023-03-06T05:55:20.644Z",
             "desktopLayouts": [],
             "createdAt": "2022-11-07T08:45:02.797Z",
             "updatedAt": "2023-03-06T05:55:20.644Z",
             "attachmentsEnabled": true,
             "emojisEnabled": true,
-            "id": "a-e53ad77-1b44-424c-933e-30474ad3d9c6",
+            "id": "a-e53ad77-1b44-424c-933e-30474ad3xxxx",
             "emailId": "rita_book@domain.com",
             "firstName": "Rita",
             "lastName": "Book",
@@ -1002,14 +923,14 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "profImage": "no-avatar",
             "skills": [
                 {
-                    "skillId": "6201ead31e06473c153c5c99",
-                    "userId": "u-81191025-27fa-574b-b5ce-f91aa5b47094",
+                    "skillId": "6201ead31e06473c153cxxxx",
+                    "userId": "u-81191025-27fa-574b-b5ce-f91aa5b4xxxx",
                     "proficiencyLevel": "expert",
                     "name": "Default Skill",
-                    "skillGroupId": "6201ead21e06473c153c5c97",
+                    "skillGroupId": "6201ead21e06473c153cxxxx",
                     "skillGroupName": "Default SkillGroup",
                     "skillGroupColor": "#D2000D",
-                    "id": "6201ead31e06473c153c5c99"
+                    "id": "6201ead31e06473c153cxxxx"
                 }
             ],
             "queues": [
@@ -1019,32 +940,32 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-81191025-27fa-574b-b5ce-f91aa5b47094"
+                            "userId": "u-81191025-27fa-574b-b5ce-f91aa5b4xxxx"
                         }
                     ],
-                    "id": "qu-53c78e9-d249-477e-a472-9426e25d6cb4"
+                    "id": "qu-53c78e9-d249-477e-a472-9426e25dxxxx"
                 },
                 {
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-81191025-27fa-574b-b5ce-f91aa5b47094"
+                            "userId": "u-81191025-27fa-574b-b5ce-f91aa5b4xxxx"
                         }
                     ],
                     "name": "Test Queue",
                     "description": "121242",
-                    "id": "qu-3066a40-5b85-4ee5-9a8e-6bd800287e3b"
+                    "id": "qu-3066a40-5b85-4ee5-9a8e-6bd80028xxxxx"
                 },
                 {
                     "agentGroups": [],
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-81191025-27fa-574b-b5ce-f91aa5b47094"
+                            "userId": "u-81191025-27fa-574b-b5ce-f91aa5b4xxxx"
                         }
                     ],
                     "name": "Sample Queue4",
-                    "id": "qu-d937893-c788-45d0-9da8-23490287b689"
+                    "id": "qu-d937893-c788-45d0-9da8-23490287xxxx"
                 }
             ],
             "role": "Agent"
@@ -1053,7 +974,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "status": "ACTIVE",
             "canSupportChat": true,
             "maxChatSupport": 5,
-            "roleId": "6201eaad257a163e989ad0a4",
+            "roleId": "6201eaad257a163e989axxxx",
             "chatLanguageSupport": [
                 {
                     "isActive": true,
@@ -1092,16 +1013,16 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "desktopLayouts": [
                 {
                     "isDefault": true,
-                    "id": "ly-86ed061-3a2e-4aa0-bcb8-3ec129599d1d"
+                    "id": "ly-86ed061-3a2e-4aa0-bcb8-3ec12959xxxx"
                 }
             ],
-            "userId": "u-8f00dfd6-bcc3-5b60-ad3f-f644d51d957e",
-            "accountId": "6201eaad257a163e989ad095",
-            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a83889892f6",
-            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3994e",
+            "userId": "u-8f00dfd6-bcc3-5b60-ad3f-f644d51xxxx",
+            "accountId": "6201eaad257a163e989axxxx",
+            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a838898xxxx",
+            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3xxxx",
             "agentGroups": [
                 {
-                    "groupId": "ag-30ecdc8-19d2-40e8-a0b9-e938731997a3",
+                    "groupId": "ag-30ecdc8-19d2-40e8-a0b9-e938731xxxx",
                     "role": "agent",
                     "groupName": "New Group"
                 }
@@ -1113,7 +1034,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "onlineStatusType": "OFFLINE",
             "attachmentsEnabled": true,
             "emojisEnabled": true,
-            "id": "a-b62392d-80c9-4569-9e93-bc286e906647",
+            "id": "a-b62392d-80c9-4569-9e93-bc286e90xxxx",
             "emailId": "marsh_mellow@domain.com",
             "firstName": "Marsh",
             "lastName": "Mello",
@@ -1127,32 +1048,32 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-8f00dfd6-bcc3-5b60-ad3f-f644d51d957e"
+                            "userId": "u-8f00dfd6-bcc3-5b60-ad3f-f644d51dxxxx"
                         }
                     ],
-                    "id": "qu-53c78e9-d249-477e-a472-9426e25d6cb4"
+                    "id": "qu-53c78e9-d249-477e-a472-9426e25dxxxx"
                 },
                 {
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-8f00dfd6-bcc3-5b60-ad3f-f644d51d957e"
+                            "userId": "u-8f00dfd6-bcc3-5b60-ad3f-f644d51xxxx"
                         }
                     ],
                     "name": "Test Queue",
                     "description": "121242",
-                    "id": "qu-3066a40-5b85-4ee5-9a8e-6bd800287e3b"
+                    "id": "qu-3066a40-5b85-4ee5-9a8e-6bd80028xxxx"
                 },
                 {
                     "agentGroups": [],
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-8f00dfd6-bcc3-5b60-ad3f-f644d51d957e"
+                            "userId": "u-8f00dfd6-bcc3-5b60-ad3f-f644d51dxxxx"
                         }
                     ],
                     "name": "Sample Queue4",
-                    "id": "qu-d937893-c788-45d0-9da8-23490287b689"
+                    "id": "qu-d937893-c788-45d0-9da8-23490287xxxx"
                 }
             ],
             "role": "Administrator"
@@ -1161,7 +1082,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "status": "ACTIVE",
             "canSupportChat": true,
             "maxChatSupport": 5,
-            "roleId": "6201eaad257a163e989ad0a4",
+            "roleId": "6201eaad257a163e989axxxx",
             "chatLanguageSupport": [
                 {
                     "isActive": true,
@@ -1200,16 +1121,16 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "desktopLayouts": [
                 {
                     "isDefault": true,
-                    "id": "ly-83307ec-0d70-42c7-bd72-7bb36be9587e"
+                    "id": "ly-83307ec-0d70-42c7-bd72-7bb36be9xxxx"
                 }
             ],
-            "userId": "u-954811d9-92b5-50f5-aa00-b6d6640b4050",
-            "accountId": "6201eaad257a163e989ad095",
-            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a83889892f6",
-            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3994e",
+            "userId": "u-954811d9-92b5-50f5-aa00-b6d6640bxxxx",
+            "accountId": "6201eaad257a163e989axxxx",
+            "createdBy": "u-c8a51563-bae4-5730-bc2e-4a838898xxxx",
+            "orgId": "o-0b9c4fa7-6f16-5605-abb7-62c46bf3xxxx",
             "agentGroups": [
                 {
-                    "groupId": "ag-30ecdc8-19d2-40e8-a0b9-e938731997a3",
+                    "groupId": "ag-30ecdc8-19d2-40e8-a0b9-e9387319xxxx",
                     "role": "agent",
                     "groupName": "New Group"
                 }
@@ -1221,7 +1142,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
             "onlineStatusType": "OFFLINE",
             "attachmentsEnabled": true,
             "emojisEnabled": true,
-            "id": "a-d647ca1-1e2a-4663-8457-32a89ec3132b",
+            "id": "a-d647ca1-1e2a-4663-8457-32a89ec3xxxx",
             "emailId": "melody.sunshine@domain.com",
             "firstName": "Melody",
             "lastName": "Sunshine",
@@ -1236,32 +1157,32 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-954811d9-92b5-50f5-aa00-b6d6640b4050"
+                            "userId": "u-954811d9-92b5-50f5-aa00-b6d6640bxxxx"
                         }
                     ],
-                    "id": "qu-53c78e9-d249-477e-a472-9426e25d6cb4"
+                    "id": "qu-53c78e9-d249-477e-a472-9426e25xxxx"
                 },
                 {
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-954811d9-92b5-50f5-aa00-b6d6640b4050"
+                            "userId": "u-954811d9-92b5-50f5-aa00-b6d6640xxxx"
                         }
                     ],
                     "name": "Test Queue",
                     "description": "121242",
-                    "id": "qu-3066a40-5b85-4ee5-9a8e-6bd800287e3b"
+                    "id": "qu-3066a40-5b85-4ee5-9a8e-6bd80028xxxx"
                 },
                 {
                     "agentGroups": [],
                     "agents": [
                         {
                             "isPreferredAgent": false,
-                            "userId": "u-954811d9-92b5-50f5-aa00-b6d6640b4050"
+                            "userId": "u-954811d9-92b5-50f5-aa00-b6d6640bxxxx"
                         }
                     ],
                     "name": "Sample Queue4",
-                    "id": "qu-d937893-c788-45d0-9da8-23490287b689"
+                    "id": "qu-d937893-c788-45d0-9da8-23490287xxxx"
                 }
             ],
             "role": "Administrator"
@@ -1277,61 +1198,11 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{StreamId}}/organiz
 
 ## Response Body Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>id
-   </td>
-   <td>The ID of the agent.
-   </td>
-   <td>String
-   </td>
-  </tr>
-  <tr>
-   <td>name
-   </td>
-   <td>The name of the agent.
-   </td>
-   <td>String
-   </td>
-  </tr>
-  <tr>
-   <td>email
-   </td>
-   <td>The email address of the agent.
-   </td>
-   <td>String
-   </td>
-  </tr>
-  <tr>
-   <td>phoneNumber
-   </td>
-   <td>The phone number of the agent.
-   </td>
-   <td>String
-   </td>
-  </tr>
-  <tr>
-   <td>isActive
-   </td>
-   <td>Whether the agent is active or not.
-   </td>
-   <td>Boolean
-   </td>
-  </tr>
-  <tr>
-   <td>queues
-   </td>
-   <td>A list of queues the agent is assigned, if ‘includeQueues’ is set to true in the request.
-   </td>
-   <td>Object (Optional)
-   </td>
-  </tr>
-</table>
+| **PARAMETER**   | **DESCRIPTION**                            | **TYPE**            |
+|-------------|----------------------------------------|-----------------|
+| id          | The ID of the agent.                   | string          |
+| name        | The name of the agent.                 | string          |
+| email       | The email address of the agent.        | string          |
+| phoneNumber | The phone number of the agent.         | string          |
+| isActive    | Whether the agent is active or not.    | boolean         |
+| queues      | A list of queues the agent is assigned, if ‘includeQueues’ is set to true in the request. | object (Optional) |
