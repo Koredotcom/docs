@@ -310,8 +310,7 @@ Contact center agents are expected to provide the best customer experience despi
 
 The Agent AI Dashboard provides the Agent AI Widget’s performance data and the end user’s (agents and customers) behavioral trends. You can filter data by channel or time period. You can also view the total number of sessions and widget suggestions, the average number of widget suggestions used per session, which automations helped agents resolve customer issues, what the agents are searching for, automation performance results, and agent feedback in the form of likes and dislikes. [Learn more](https://docsinternal-kore.github.io/docs/xo/analytics/contact-center/agentai-dashboard/).
 
-
-    [Learn more about Agent AI features :octicons-arrow-right-24:](../agentai/about-agent-ai.md)
+[Learn more about Agent AI features :octicons-arrow-right-24:](../agentai/about-agent-ai.md)
 
 <hr>
 
