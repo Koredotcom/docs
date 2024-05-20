@@ -251,9 +251,7 @@
     
     <div class="nav-links md-d-none">
       <a class="nav-item" 
-          target="_blank" 
-          href="https://docs.kore.ai/gale/getting-started/introduction/"
-      >Release Notes</a>
+        href="https://docs.kore.ai/gale/getting-started/introduction/">Release Notes</a>
 
       <!-- <a class="nav-item"
           target="_blank" 
@@ -407,9 +405,7 @@
    <nav class="md-more-links">
     <div class="nav-links">
       <a class="nav-item" 
-          target="_blank" 
-          href="https://galeadmin-kore.github.io/docs/gale/introduction/"
-      >Release Notes</a>
+          href="https://galeadmin-kore.github.io/docs/gale/introduction/">Release Notes</a>
 
       <!-- <a class="nav-item"
           target="_blank" 
@@ -1255,27 +1251,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#add-a-new-end-node" class="md-nav__link">
+  <a href="#add-and-configure-an-end-node" class="md-nav__link">
     <span class="md-ellipsis">
-      Add a New End Node
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-the-end-node" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure the End Node
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#status-codes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Status Codes
+      Add and Configure an End Node
     </span>
   </a>
   
@@ -2822,27 +2800,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#add-a-new-end-node" class="md-nav__link">
+  <a href="#add-and-configure-an-end-node" class="md-nav__link">
     <span class="md-ellipsis">
-      Add a New End Node
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-the-end-node" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure the End Node
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#status-codes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Status Codes
+      Add and Configure an End Node
     </span>
   </a>
   
@@ -2867,62 +2827,51 @@
 
 
 <h1 id="end-node">End Node<a class="headerlink" href="#end-node" title="Permanent link">&para;</a></h1>
-<p>This node allows you to define the message displayed to the user when the experience flow ends. This node allows you to map the outputs to be sent out of the flow or the agent.</p>
-<h2 id="add-a-new-end-node">Add a New End Node<a class="headerlink" href="#add-a-new-end-node" title="Permanent link">&para;</a></h2>
-<p><strong>To add an End node, follow these steps</strong>:</p>
+<p>End nodes allow you to show the agent’s/flow's outputs on success or an error message on failure.   </p>
+<h2 id="add-and-configure-an-end-node">Add and Configure an End Node<a class="headerlink" href="#add-and-configure-an-end-node" title="Permanent link">&para;</a></h2>
+<p>Setting up an End node in an Agent Flow involves adding the node at the appropriate location in the flow and configuring various node properties, as explained below.</p>
+<p>Steps to add and configure the node:</p>
 <ol>
-<li>Open the required agents from the list of agents to create the flow.</li>
-<li>Click <strong>Agent flow</strong> from the left navigation bar. The <strong>Agent flow</strong> page is displayed.</li>
 <li>
-<p>Click <strong>Go to flow</strong> to open the flow builder page.</p>
-<p><a class="glightbox" href="../images/go-to-flow-canvas.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/go-to-flow-canvas.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;"></a></p>
-<p>The Agents Flow canvas is displayed, and you can create a new flow.</p>
+<p>Open the Agent Flow to which you want to add the node: go to <strong>Agents</strong> &gt; <strong>Agent Flow</strong> &gt; <strong>Go to Flow</strong>.</p>
 </li>
 <li>
-<p>You can add a new node in 2 ways:</p>
+<p>The Agent Flow opens in the Flow Builder. Click the “<strong>+</strong>” icon on any existing node on the canvas and select <strong>End</strong> from the pop-up menu. (Alternatively, you can drag the <strong>End</strong> node from the Assets panel onto the canvas.)</p>
+</li>
+<li>
+<p>Click the added node to open its properties dialog box. The General Settings for the node are displayed.<br />
+<a class="glightbox" href="../images/end-node-configure.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/end-node-configure.png" alt="Configure End Node" title="Configure End Node" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>Enter or select the following information:</p>
 <ul>
-<li>Click the down arrow corresponding to the node from the <strong>Assets</strong> section from the left navigation bar of the <strong>Agents</strong> page and then click <strong>+New End</strong>.</li>
-</ul>
-<p>Or</p>
-<ul>
-<li>Click <strong>End</strong> from the bottom bar of the <strong>Agents</strong> page.</li>
-</ul>
-<p><a class="glightbox" href="../images/add-a-new-end-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-a-new-end-node.png" alt="Add a New End Node" title="Add a New End Node" style="border: 1px solid gray; zoom:80%;"></a></p>
-<p>The End node is created on the canvas and you can now define the properties of the node by clicking on the node. You can drag and move a node to any location on the canvas.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The start node is displayed by default on the flow builder.</p>
-</div>
-</li>
-</ol>
-<h2 id="configure-the-end-node">Configure the End Node<a class="headerlink" href="#configure-the-end-node" title="Permanent link">&para;</a></h2>
-<p><strong>To configure the End node, follow these steps</strong>:</p>
-<ol>
-<li>Add an <strong>End</strong> node to the canvas as shown in the preceding procedure.</li>
 <li>
-<p>Click the <strong>End</strong> node and the general properties dialog for the node is displayed on the right side of the page as shown in the following image.</p>
-<p><a class="glightbox" href="../images/configure-end-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/configure-end-node.png" alt="Configure End Node" title="Configure End Node" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><strong>Custom Name</strong>: Enter an appropriate name for the node.</p>
 </li>
 <li>
-<p>Enter a <strong>Custom Name</strong> to the end node.</p>
+<p><strong>Name (key)</strong>: Select a key from the drop-down list. All defined keys in the Manage Output section are displayed here. You can select a variable and assign a value to it. (You can also add a new key. For more information, see <a href="../../perform-other-actions-on-the-flow-builder/manage-input-and-output/">Manage Input and Output variable</a>.)<br />
+<a class="glightbox" href="../images/select-a-key.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/select-a-key.png" alt="Select a Key" title="Select a Key" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
-<li>Select a <strong>Name (key)</strong> from the drop-down list. The list of all the keys that are defined in the Manage Output section are displayed here. You can select a required variable and map a value to it. For more information about Adding a new key, see <a href="../../perform-other-actions-on-the-flow-builder/manage-input-and-output/">Manage Input and Output variable</a>.</li>
 <li>
-<p>Enter any <strong>Value</strong> to the selected key. You can provide any context object value or context related to any node or the input variable value. </p>
-<p>Enter the value in this format:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{{context.steps.&lt;startNode-Name&gt;.&lt;inputVariable-name&gt;}}
+<p><strong>Value</strong>: Select an appropriate variable or node as the value. Enter “{{context.” and select the node/variable from the list and then close the braces with “}}”.</p>
+<p>For example:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{{context.steps.summarization.output}}
 </span></code></pre></div>
+<a class="glightbox" href="../images/end-node-success-output.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/end-node-success-output.png" alt="Configure End Node" title="Configure End Node" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>Click the <strong>+ADD A KEY</strong> option to add multiple outputs at once. 
-The details are autosaved.</p>
+<p>If you want to show multiple outputs/messages, click <strong>Add a Key</strong> to add the key and value details for the same.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Finally, test the flow and fix any issues found: Click the <strong>Run Flow</strong> button at the top-right corner of the flow builder.</p>
 </li>
 </ol>
-<h2 id="status-codes">Status Codes<a class="headerlink" href="#status-codes" title="Permanent link">&para;</a></h2>
-<p><strong>Errors</strong></p>
-<ul>
-<li>When the value for the o/p variable is not defined then list of unresolved outputs are displayed.</li>
-</ul>
+<div class="admonition failure">
+<p class="admonition-title">Standard Error</p>
+<p>When the value for the output variable is not defined, a list of unresolved outputs is displayed.</p>
+</div>
 
 
 

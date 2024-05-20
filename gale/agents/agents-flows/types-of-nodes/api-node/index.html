@@ -251,9 +251,7 @@
     
     <div class="nav-links md-d-none">
       <a class="nav-item" 
-          target="_blank" 
-          href="https://docs.kore.ai/gale/getting-started/introduction/"
-      >Release Notes</a>
+        href="https://docs.kore.ai/gale/getting-started/introduction/">Release Notes</a>
 
       <!-- <a class="nav-item"
           target="_blank" 
@@ -407,9 +405,7 @@
    <nav class="md-more-links">
     <div class="nav-links">
       <a class="nav-item" 
-          target="_blank" 
-          href="https://galeadmin-kore.github.io/docs/gale/introduction/"
-      >Release Notes</a>
+          href="https://galeadmin-kore.github.io/docs/gale/introduction/">Release Notes</a>
 
       <!-- <a class="nav-item"
           target="_blank" 
@@ -1192,27 +1188,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#add-a-new-api-node" class="md-nav__link">
+  <a href="#add-and-configure-an-api-node" class="md-nav__link">
     <span class="md-ellipsis">
-      Add a New API Node
+      Add and Configure an API Node
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-the-api-node" class="md-nav__link">
+  <a href="#api-status-codes" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure the API Node
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#status-codes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Status Codes
+      API Status Codes
     </span>
   </a>
   
@@ -2822,27 +2809,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#add-a-new-api-node" class="md-nav__link">
+  <a href="#add-and-configure-an-api-node" class="md-nav__link">
     <span class="md-ellipsis">
-      Add a New API Node
+      Add and Configure an API Node
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-the-api-node" class="md-nav__link">
+  <a href="#api-status-codes" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure the API Node
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#status-codes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Status Codes
+      API Status Codes
     </span>
   </a>
   
@@ -2867,137 +2845,77 @@
 
 
 <h1 id="api-node">API Node<a class="headerlink" href="#api-node" title="Permanent link">&para;</a></h1>
-<p>This node enables you to initiate requests via SOAP or REST API calls, facilitating connections to third-party systems housing enterprise data. By defining a service request, which involves configuring APIs and passing parameters, you can retrieve information or perform queries from an external system.</p>
-<h2 id="add-a-new-api-node">Add a New API Node<a class="headerlink" href="#add-a-new-api-node" title="Permanent link">&para;</a></h2>
-<p><strong>To add an API node, follow these steps</strong>:</p>
+<p>The API Node lets you connect to external systems and retrieve data by making SOAP or REST API calls. You can configure the APIs and pass the necessary parameters to fetch the required information.</p>
+<h2 id="add-and-configure-an-api-node">Add and Configure an API Node<a class="headerlink" href="#add-and-configure-an-api-node" title="Permanent link">&para;</a></h2>
+<p>Setting up an API node in an Agent Flow involves adding the node at the appropriate location in the flow and configuring various node properties, as explained below.</p>
+<p>Steps to add and configure the node:</p>
 <ol>
-<li>Open the required agent from the list of agents to create the flow.</li>
-<li>Click <strong>Agent flow</strong> from the left navigation bar. The <strong>Agent flow</strong> page is displayed.</li>
 <li>
-<p>Click <strong>Go to flow</strong> to open the flow builder page.</p>
-<p><a class="glightbox" href="../images/go-to-flow-canvas.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/go-to-flow-canvas.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;"></a></p>
-<p>The <strong>Agents Flow</strong> canvas is displayed, and you can start creating a new flow.</p>
+<p>Open the Agent Flow to which you want to add the node: go to <strong>Agents</strong> &gt; <strong>Agent Flow</strong> &gt; <strong>Go to Flow</strong>.</p>
 </li>
 <li>
-<p>You can add a new node in 2 ways:</p>
+<p>The Agent Flow opens in the Flow Builder. Click the “<strong>+</strong>” icon on any existing node on the canvas and select <strong>API</strong> from the pop-up menu. (Alternatively, you can drag the <strong>API</strong> node from the Assets panel onto the canvas.)</p>
+</li>
+<li>
+<p>Click the added node to open its properties dialog box. The General Settings for the node are displayed.<br />
+<a class="glightbox" href="../images/api-node-general-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/api-node-general-settings.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>Enter or select the following information:</p>
 <ul>
-<li>
-<p>Click the down arrow corresponding to the node from the <strong>Assets</strong> section from the left navigation bar of the <strong>Agents</strong> page and then click <strong>+New API</strong>.</p>
-<p>Or</p>
+<li><strong>Custom Name</strong>: Enter an appropriate name for the node.</li>
+<li><strong>Type</strong>: Select the API type from the drop-down list - REST or SOAP.</li>
+<li><strong>Request Definition</strong>: Define the details of the service request to make the call and fetch the data. Click <strong>Define Request</strong> and enter or select the following details in the Edit Request dialog box:<br />
+<a class="glightbox" href="../images/api-node-edit-request.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/api-node-edit-request.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;"></a><ol>
+<li>Select the request type from the list - GET, PUT, POST, PATCH, or DELETE.</li>
+<li>Paste your API Endpoint URL or cURL in the text field.</li>
+<li>In the <strong>Headers</strong> tab, specify the details of the Key and Value pair. For example, 
+Key: Content-Type
+Value: application/json</li>
+<li>The <strong>Body</strong> tab is displayed for all request types except GET. Select the body content type from the drop-down list:<ul>
+<li>application/x-www-form-urlencoded: Allows file uploads through HTTP POST requests. Add key/value pairs encoded by the platform.</li>
+<li>application/json: Transmits data between servers and web applications using JSON format without processing.</li>
+<li>application/xml: Sends XML payload for SOAP services via POST methods, with the option to include entity node values.</li>
+<li>Custom: Allows sending request payload in non-standard formats, such as for handling blogs or custom variables. </li>
+</ul>
 </li>
-<li>
-<p>Click <strong>API</strong> from the bottom bar of the <strong>Agents</strong> page.</p>
+<li>Click the <strong>Test</strong> button at the top-right corner of the dialog. The API response will appear on the <strong>Response</strong> tab.</li>
+<li>Click <strong>Save</strong> at the top-right corner of the dialog.</li>
+</ol>
 </li>
 </ul>
-<p><a class="glightbox" href="../images/add-a-new-api-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-a-new-api-node.png" alt="Add a New API Node" title="Add a New API Node" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>Click the <strong>Connections</strong> icon in the left navigation and select the <strong>Go to Node</strong> for both success and failure conditions.<br />
+<a class="glightbox" href="../images/api-node-connections.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/api-node-connections.png" alt="API node Connections Properties" title="API node Connections Properties" style="border: 1px solid gray; zoom:80%;"></a></p>
+<ol>
+<li>
+<p><strong>On Success</strong> &gt; <strong>Go to Node</strong>: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can process the data from this node into a Function node and then use it further. In this case, select the Function node. </p>
+</li>
+<li>
+<p><strong>On Failure</strong> &gt; <strong>Go to Node</strong>: If the execution of the current node fails, go to an appropriate node having a custom error message configured.</p>
 </li>
 </ol>
-<p>The API node is created on the canvas, and you can now define the node's properties by clicking on the node. You can drag and move a node to any location on the canvas.</p>
+</li>
+<li>
+<p>Finally, test the flow and fix any issues found: Click the <strong>Run Flow</strong> button at the top-right corner of the flow builder.</p>
+</li>
+</ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The start node is displayed by default on the flow builder.</p>
+<p>To access an API node using the context variable, use the following format: 
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{{context.steps.Start.APINodeName}}
+</span></code></pre></div></p>
 </div>
-<h2 id="configure-the-api-node">Configure the API Node<a class="headerlink" href="#configure-the-api-node" title="Permanent link">&para;</a></h2>
-<p><strong>To configure the API node, follow these steps</strong>:</p>
-<ol>
-<li>Add an API node to the canvas.</li>
-<li>
-<p>Click the <strong>API node</strong> and the general properties dialog for the node is displayed on the right side of the page as shown in the following image.</p>
-<p><a class="glightbox" href="../images/configure-api-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/configure-api-node.png" alt="Configure API Node" title="Configure API Node" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
-<li>
-<p>Enter a <strong>Custom Name</strong> for the node.</p>
-</li>
-<li>
-<p>Select the API <strong>Type</strong> from the drop-down list.</p>
+<h2 id="api-status-codes">API Status Codes<a class="headerlink" href="#api-status-codes" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p><strong>REST:</strong> A REST API conforms to the constraints of the REST API architecture and allows interaction with RESTful web services.</p>
-</li>
-<li>
-<p><strong>SOAP</strong>: A SOAP API uses the Simple Object Access Protocol (SOAP), which is a messaging protocol for interchanging data in a decentralized and distributed environment.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Configure the API request under <strong>Request Definition</strong>. Define the GET, PUT, POST, or DELETE service request, along with the API call and parameters to pass. To create a new request, click <strong>Define Request</strong>.</p>
-<p><a class="glightbox" href="../images/define-request.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/define-request.png" alt="Define Request" title="Define Request" style="border: 1px solid gray; zoom:50%;"></a></p>
-<p>The <strong>Edit Request</strong> window is displayed.</p>
-<p><a class="glightbox" href="../images/edit-request.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/edit-request.png" alt="Edit Request" title="Edit Request" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
-<li>
-<p>Select the <strong>HTTP Method</strong> call from the list.</p>
-<ul>
-<li>
-<p><strong>POST</strong> – Sends data to the server. For example, customer information, file upload, and so forth using HTML forms.</p>
-</li>
-<li>
-<p><strong>PUT</strong> – Replaces the content of the target resource with the content sent.</p>
-</li>
-<li>
-<p><strong>PATCH</strong> – Appends the content of an existing target resource with the content sent.</p>
-</li>
-<li>
-<p><strong>DELETE</strong> – Deletes the content of an existing target resource.</p>
-</li>
-<li>
-<p><strong>GET</strong> – Returns the content of an existing target resource.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Paste your <strong>API call URL</strong> in the text field and click <strong>Test</strong>. It triggers the process of creating and sending an HTTP request to that URL, allowing you to interact with the corresponding API endpoint and inspect the response.</p>
-</li>
-<li>
-<p>In the <strong>Headers</strong> tab, specify the details of the header for the Header Key and Value pair if required to access the specified request URL.</p>
-<p><strong>Syntax</strong>: </p>
-<p><strong>Key</strong> : Content-Type<br />
-<strong>Value</strong>: application/json</p>
-<p>You can add a new pair by typing it in the empty fields. You can delete a pair by clicking the <strong>Delete (Bin)</strong> icon next to it as shown in the following image.</p>
-<p><a class="glightbox" href="../images/add-headers.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-headers.png" alt="Add Headers" title="Add Headers" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
-<li>
-<p>In the <strong>Body</strong> tab, select the body content type. You can select:</p>
-<ul>
-<li>
-<p><strong>application/x-www-form-urlencoded</strong> – Also known as Multipart/Form-data, which is an encoding type that allows files to be sent through an HTTP POST request method if you want to allow a user to upload a file from a form. You can add key/value pairs that are encoded by the XO Platform.</p>
-</li>
-<li>
-<p><strong>application/json</strong> – Use JSON to transmit data between the Kore.ai servers and your VA’s web application. Any JSON is sent with the request without any processing.</p>
-</li>
-<li>
-<p><strong>application/xml</strong> – For SOAP services, pass XML payload using POST methods. You can pass entity node values as part of the XML.</p>
-</li>
-</ul>
-<p><a class="glightbox" href="../images/add-body.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-body.png" alt="Add Body" title="Add Body" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
-<li>
-<p>Click the <strong>Test</strong> button to send your API request URL using the specified Auth type, HTTP headers, if defined.</p>
-<p>The response is displayed in the <strong>Response</strong> tab.</p>
-</li>
-<li>
-<p>Click <strong>Save</strong> to save the test response as the sample response for this node. The request for the service node is saved and the <strong>Define Request for &lt; Service Node Name &gt;</strong> dialog is closed.</p>
-</li>
-<li>
-<p>Click the <strong>Actions</strong> icon and select the actions that you want the node to trigger when the API call is successful or when it fails.</p>
-<p><a class="glightbox" href="../images/actions-icon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/actions-icon.png" alt="Actions Icon" title="Actions Icon" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
-</ol>
-<h2 id="status-codes">Status Codes<a class="headerlink" href="#status-codes" title="Permanent link">&para;</a></h2>
-<p><strong>Errors</strong></p>
-<ul>
-<li>400 Bad Request: The server cannot process the request due to a client error (e.g., malformed request syntax, invalid parameters).</li>
-<li>401 Unauthorized: The client must authenticate itself to get the requested response.</li>
-<li>403 Forbidden: The client does not have permission to access the requested resource.</li>
-<li>404 Not Found: The server cannot find the requested resource. </li>
-<li>500 Internal Server Error: The server encountered an unexpected condition that prevented it from fulfilling the request.</li>
-<li>504 Gateway Timeout: The server, acting as a gateway or proxy, did not receive a timely response from an upstream server it needed to access in order to complete the request. </li>
-<li>Status code 200:  It means that the request made was successful.</li>
-</ul>
-<p><strong>Connection</strong>:</p>
-<ul>
-<li><strong>On Success</strong>: On successful execution of the current node this connection can be linked with another node such as Gen AI node, Function node, Condition node, API node, or an End node.</li>
-<li><strong>On Failure</strong>: On failure in execution of the current node this connection should be linked with an End node to display the custom error message from the API node.</li>
+<li>200: Request successful</li>
+<li>400: Client error, cannot process request</li>
+<li>401: Authentication required</li>
+<li>403: Access denied</li>
+<li>404: Resource not found</li>
+<li>500: Unexpected server error</li>
+<li>504: Gateway timeout, no timely response from the upstream server</li>
 </ul>
 
 

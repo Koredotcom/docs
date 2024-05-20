@@ -251,9 +251,7 @@
     
     <div class="nav-links md-d-none">
       <a class="nav-item" 
-          target="_blank" 
-          href="https://docs.kore.ai/gale/getting-started/introduction/"
-      >Release Notes</a>
+        href="https://docs.kore.ai/gale/getting-started/introduction/">Release Notes</a>
 
       <!-- <a class="nav-item"
           target="_blank" 
@@ -407,9 +405,7 @@
    <nav class="md-more-links">
     <div class="nav-links">
       <a class="nav-item" 
-          target="_blank" 
-          href="https://galeadmin-kore.github.io/docs/gale/introduction/"
-      >Release Notes</a>
+          href="https://galeadmin-kore.github.io/docs/gale/introduction/">Release Notes</a>
 
       <!-- <a class="nav-item"
           target="_blank" 
@@ -1234,36 +1230,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#types-of-conditions" class="md-nav__link">
+  <a href="#add-and-configure-a-condition-node" class="md-nav__link">
     <span class="md-ellipsis">
-      Types of Conditions:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-a-new-condition-node" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add a New Condition Node
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-the-condition-node" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure the Condition Node
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#status-codes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Status Codes
+      Add and Configure a Condition Node
     </span>
   </a>
   
@@ -2831,36 +2800,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#types-of-conditions" class="md-nav__link">
+  <a href="#add-and-configure-a-condition-node" class="md-nav__link">
     <span class="md-ellipsis">
-      Types of Conditions:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-a-new-condition-node" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add a New Condition Node
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-the-condition-node" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure the Condition Node
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#status-codes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Status Codes
+      Add and Configure a Condition Node
     </span>
   </a>
   
@@ -2885,123 +2827,72 @@
 
 
 <h1 id="condition-node">Condition Node<a class="headerlink" href="#condition-node" title="Permanent link">&para;</a></h1>
-<p>This node is used to create branches in a workflow, where different actions or paths are taken depending on whether certain conditions are met or not. They help control the flow of execution within a process or application.</p>
-<p>For example, if you are creating an app for a fitness industry you can create a flow using the conditions and then it could suggest different exercises based on whether someone is a beginner, intermediate, or advanced. For beginners, it might recommend simple workouts. Intermediate users might get suggestions for more varied workouts with basic equipment, and advanced users might receive high-intensity workouts tailored to their goals. This way, you can provide personalized fitness advice for everyone.</p>
-<h2 id="types-of-conditions">Types of Conditions:<a class="headerlink" href="#types-of-conditions" title="Permanent link">&para;</a></h2>
-<p>There are three types of available conditions:</p>
+<p>Condition Nodes allow you to create branches in a workflow, directing actions based on whether certain conditions are met. This helps control the flow’s execution.</p>
+<p>The node can handle three types of conditions:</p>
 <ul>
-<li>
-<p><strong>If</strong> – This condition is used to direct the flow on a specific path if specific criteria are met. The If condition lets you configure Entity, Context, and Value.</p>
-</li>
-<li>
-<p><strong>Else</strong> – This condition allows you to set the node connection that will occur when no condition is met. The Else condition only allows you to configure the next node to connect to.</p>
-</li>
-<li>
-<p><strong>Else If</strong> – This condition allows you to configure another set of criteria to be met by the flow when the criteria in the initial If condition are not met. The else if condition lets you configure Entity, Context, and Value.</p>
-</li>
+<li><strong>If</strong>: Directs the flow to a specific path if certain criteria (Entity, Context, or Value) are met.</li>
+<li><strong>Else</strong>: Sets the node connection when no condition is met, allowing you to configure the next node to connect to.</li>
+<li><strong>Else If</strong>: Allows you to configure another set of criteria (Entity, Context, or Value) to be met when the initial If condition is not satisfied.</li>
 </ul>
-<p>For example, in our fitness industry example mentioned earlier in this article,</p>
-<ul>
-<li>The if statement checks if the user's fitness level is "beginner". If it is, it displays a suggestion for beginner-level exercises.</li>
-<li>The else if statement checks if the user's fitness level is "intermediate". If it is, it displays suggestions for intermediate-level exercises.</li>
-<li>Another else if statement checks if the user's fitness level is "advanced". If it is, it displays suggestions for advanced-level exercises.</li>
-<li>If the user enters a fitness level that doesn't match any of the specified options (i.e., neither "beginner", "intermediate", nor "advanced"), the else statement displays an error message indicating invalid input.</li>
-</ul>
-<h2 id="add-a-new-condition-node">Add a New Condition Node<a class="headerlink" href="#add-a-new-condition-node" title="Permanent link">&para;</a></h2>
-<p><strong>To add a Condition node, follow these steps</strong>:</p>
+<h2 id="add-and-configure-a-condition-node">Add and Configure a Condition Node<a class="headerlink" href="#add-and-configure-a-condition-node" title="Permanent link">&para;</a></h2>
+<p>Setting up a Condition node in an Agent Flow involves adding the node at the appropriate location in the flow and configuring various node properties, as explained below.</p>
+<p>Steps to add and configure the node:</p>
 <ol>
-<li>Open the required agent from the list of agents to create the flow.</li>
-<li>Click <strong>Agent flow</strong> from the left navigation bar. The <strong>Agent flow</strong> page is displayed.</li>
 <li>
-<p>Click <strong>Go to flow</strong> to open the flow builder page.</p>
-<p><a class="glightbox" href="../images/go-to-flow-canvas.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/go-to-flow-canvas.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;"></a></p>
-<p>The Agents Flow canvas is displayed, and you can start creating a new flow.</p>
+<p>Open the Agent Flow to which you want to add the node: go to <strong>Agents</strong> &gt; <strong>Agent Flow</strong> &gt; <strong>Go to Flow</strong>.</p>
 </li>
 <li>
-<p>You can add a new node in 2 ways:</p>
+<p>The Agent Flow opens in the Flow Builder. Click the “<strong>+</strong>” icon on any existing node on the canvas and select <strong>Condition</strong> from the pop-up menu. (Alternatively, you can drag the <strong>Condition</strong> node from the Assets panel onto the canvas.)</p>
+</li>
+<li>
+<p>Click the added node to open its properties dialog box. The General Settings for the node are displayed.<br />
+<a class="glightbox" href="../images/condition-node-settings-to-be-filled.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/condition-node-settings-to-be-filled.png" alt="Condition Node Settings" title="Condition Node Settings" style="border: 1px solid gray; zoom:60%;"></a></p>
+</li>
+<li>
+<p>Enter or select the following information:</p>
 <ul>
+<li><strong>Custom Name</strong>: Enter an appropriate name for the node.</li>
 <li>
-<p>Click the down arrow corresponding to the node from the <strong>Assets</strong> section from the left navigation bar of the <strong>Agents</strong> page and then click <strong>+New Condition</strong>.</p>
-<p>Or</p>
+<p><strong>If/Else Condition</strong>: Define the IF ELSE/ELSE IF conditions using context variables and the AND/OR operator. You can use Entity, Context, or Value.</p>
+<ol>
+<li>
+<p>In the <strong>IF</strong> section, select the context variable you want to use - enter "{{context." and select the node/variable from the list and then close the braces with "}}".<br />
+<a class="glightbox" href="../images/if-condition-context-variable-selection.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/if-condition-context-variable-selection.png" alt="Using Context Variable" title="Using Context Variable" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>For example: 
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{{context.ambiguous_sub_categories}}
+</span></code></pre></div></p>
 </li>
 <li>
-<p>Click <strong>Condition</strong> from the bottom bar of the <strong>Agents</strong> page.</p>
+<p>Select an appropriate Operator from the drop-down list. For example, <strong>Contains</strong>.</p>
 </li>
-</ul>
-<p><a class="glightbox" href="../images/add-a-new-condition-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-a-new-condition-node.png" alt="Add a New Condition Node" title="Add a New Condition Node" style="border: 1px solid gray; zoom:80%;"></a></p>
+<li>
+<p>Enter the value for the condition. If you want to use a context variable, start entering "{{context." and then select the node/variable, and then close the braces with "}}".</p>
+<p>For example:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{{context.steps.Sub_Category_Detection.output}}   
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Additionally, you can use an <strong>AND</strong>/<strong>OR</strong> logical operator to add more criteria to the condition.</p>
+</li>
+<li>
+<p>In the <strong>Then Go To</strong> drop-down list, select the node to connect to if the condition is met.</p>
+</li>
+<li>
+<p>In the <strong>ELSE</strong> section, select the node you want to trigger if the IF condition fails.<br />
+<a class="glightbox" href="../images/condition-node-settings-filled.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/condition-node-settings-filled.png" alt="Condition Node's Settings" title="Condition Node's Settings" style="border: 1px solid gray; zoom:60%;"></a></p>
 </li>
 </ol>
-<p>The Condition node is created on the canvas and you can now define the node's properties by clicking on the node. You can drag and move a node to any location on the canvas.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The start node is displayed by default on the flow builder.</p>
-</div>
-<h2 id="configure-the-condition-node">Configure the Condition Node<a class="headerlink" href="#configure-the-condition-node" title="Permanent link">&para;</a></h2>
-<p>This node helps you to trigger path flows based on the conditions you set.</p>
-<p><strong>To configure the Condition node, follow these steps</strong>:</p>
-<ol>
-<li>Add a Condition node to the canvas.</li>
-<li>
-<p>Click the <strong>Condition node</strong> and the general properties dialog for the node is displayed on the right side of the page as shown in the following image.</p>
-<p><a class="glightbox" href="../images/configure-the-condition-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/configure-the-condition-node.png" alt="Configure the Condition Node" title="Configure the Condition Node" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
-<li>
-<p>Enter a <strong>Custom Name</strong> for the node.</p>
-</li>
-<li>Define the IF/ELSE-IF/ELSE conditions using context variables and the AND/OR operator.</li>
-<li>
-<p>In the <strong>IF section</strong> select the following:</p>
-<ul>
-<li>Select the <strong>Context object</strong> you want to use. 
-For example, 
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{{context.steps.Start0001.Product_ID}}.
-</span></code></pre></div></li>
-</ul>
-<p>Here, Product_ID is the input variable/key name.</p>
-<ul>
-<li>
-<p>Select an <strong>Operator</strong> from the drop-down list such as, exists, does not exist, equal to, greater than or equal to, less than or equal to, not equal to, greater than, less than, does not contain, and contains.</p>
-</li>
-<li>
-<p>Enter a value in the <strong>Value</strong> field.</p>
-<p><a class="glightbox" href="../images/if-condition.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/if-condition.png" alt="If Condition" title="If Condition" style="border: 1px solid gray; zoom:60%;"></a></p>
-</li>
-<li>
-<p>In the <strong>Then go to</strong> dropdown, choose the node to connect to if the condition is met.</p>
-</li>
-<li>
-<p>You can add an AND or an OR logical operator and click the corresponding button within the Context condition criterion. And / OR parameters work as follows:</p>
-<ul>
-<li>
-<p><strong>AND</strong> – When using AND it means that you want both or all criteria to be met.</p>
-</li>
-<li>
-<p><strong>OR</strong> – When using OR it means that you want the condition to meet either one or another of the set criteria.</p>
-</li>
-</ul>
-<p><a class="glightbox" href="../images/and-or-logic-in -if-condition.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/and-or-logic-in -if-condition.png" alt="And or Logic in If Condition" title="And or Logic in If Condition" style="border: 1px solid gray; zoom:60%;"></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You can add multiple AND/OR criteria by clicking +AND or +OR. If you start with AND condition then you can only add AND similarly if you add OR condition, then you can add only OR. You cannot add both in the same node. You can delete an existing AND/OR criterion by clicking the “-” sign on its left.</p>
-</div>
 </li>
 </ul>
 </li>
 <li>
-<p>In the <strong>Else section</strong>, select the node you want to trigger if the If condition fails.</p>
-<p><a class="glightbox" href="../images/else-select-node-in-condition-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/else-select-node-in-condition-node.png" alt="Else Select Node in Condition Node" title="Else Select Node in Condition Node" style="border: 1px solid gray; zoom:60%;"></a></p>
+<p>Finally, test the flow and fix any issues found: Click the <strong>Run Flow</strong> button at the top-right corner of the flow builder.</p>
 </li>
 </ol>
-<h2 id="status-codes">Status Codes<a class="headerlink" href="#status-codes" title="Permanent link">&para;</a></h2>
-<p><strong>Errors</strong></p>
-<ul>
-<li>If the condition is true or false and does not have a node to go to, then an error will be displayed “Path not defined. Please check the flow.”</li>
-</ul>
-<p><strong>Connection</strong>:</p>
-<ul>
-<li><strong>On Success</strong>: On successful execution of the current node this connection can be linked with another node such as Gen AI node, Function node, Condition node, API node, or an End node.</li>
-<li><strong>On Failure</strong>: On failure in execution of the current node this connection should be linked with an End node to display the custom error message from the Condition node.</li>
-</ul>
+<div class="admonition failure">
+<p class="admonition-title">Standard Error</p>
+<p>If a condition is true or false but has no connected node, the following error message is displayed: "Path not defined. Please check the flow."</p>
+</div>
 
 
 

@@ -251,9 +251,7 @@
     
     <div class="nav-links md-d-none">
       <a class="nav-item" 
-          target="_blank" 
-          href="https://docs.kore.ai/gale/getting-started/introduction/"
-      >Release Notes</a>
+        href="https://docs.kore.ai/gale/getting-started/introduction/">Release Notes</a>
 
       <!-- <a class="nav-item"
           target="_blank" 
@@ -407,9 +405,7 @@
    <nav class="md-more-links">
     <div class="nav-links">
       <a class="nav-item" 
-          target="_blank" 
-          href="https://galeadmin-kore.github.io/docs/gale/introduction/"
-      >Release Notes</a>
+          href="https://galeadmin-kore.github.io/docs/gale/introduction/">Release Notes</a>
 
       <!-- <a class="nav-item"
           target="_blank" 
@@ -2855,16 +2851,14 @@
 <p>Steps to add and configure the node:</p>
 <ol>
 <li>
-<p>Open the Agent Flow to which you want to add the node: go to <strong>Agents</strong> &gt; <strong>Agent Flow</strong> &gt; <strong>Go to Flow</strong>.<br />
-<a class="glightbox" href="../images/go-to-flow-canvas.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/go-to-flow-canvas.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Open the Agent Flow to which you want to add the node: go to <strong>Agents</strong> &gt; <strong>Agent Flow</strong> &gt; <strong>Go to Flow</strong>.  </p>
 </li>
 <li>
-<p>The Agent Flow opens in the Flow Builder. Click the “<strong>+</strong>” icon on the <strong>Start</strong> node or any existing node on the canvas and select <strong>Gen AI</strong> from the pop-up menu. (Alternatively, you can drag the <strong>Gen AI</strong> node from the Assets panel onto the canvas.)<br />
-<a class="glightbox" href="../images/connect-start-to-gen-ai.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/connect-start-to-gen-ai.png" alt="Connect Start to Gen AI" title="Connect Start to Gen AI" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>The Agent Flow opens in the Flow Builder. Click the “<strong>+</strong>” icon on any existing node on the canvas and and select <strong>Gen AI</strong> from the pop-up menu. (Alternatively, you can drag the <strong>Gen AI</strong> node from the Assets panel onto the canvas.)  </p>
 </li>
 <li>
 <p>Click the added node to open its properties dialog box. The General Settings for the node are displayed.<br />
-<a class="glightbox" href="../images/configure-gen-ai-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/configure-gen-ai-node.png" alt="Configure Gen AI Node" title="Configure Gen AI Node" style="border: 1px solid gray; zoom:80%;"></a></p>
+<a class="glightbox" href="../images/configure-gen-ai-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/configure-gen-ai-node.png" alt="Configure Gen AI Node" title="Configure Gen AI Node" style="border: 1px solid gray; zoom:20%;"></a></p>
 </li>
 <li>
 <p>Enter or select the following <strong>General Settings</strong>:</p>
@@ -2877,20 +2871,20 @@
 </li>
 <li>
 <p><strong>System Prompt</strong>: Enter the System Prompt for your use case. 
-For example, “Go through the conversation and identify the intent of the conversation.”</p>
+For example, “Generate a summary of the transcription of a conversation in a maximum of 5 lines without returning any special characters.”</p>
 </li>
 <li>
-<p><strong>Prompt</strong>: It allows you to pass a variable to the system prompt. For example, you can store the conversation transcript in a variable named “transcript” and pass that on to identify the intent.<br />
+<p><strong>Prompt</strong>: It allows you to pass a variable to the System Prompt. For example, you can store the conversation transcript in a variable named “conversation” and pass it on in the Prompt.<br />
 Format: 
     <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{{context.variable_name}}
-</span></code></pre></div></p>
-<p>Example:   <br />
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{{context.transcript}}
+</span></code></pre></div>
+     Example:   <br />
+    <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{{context.conversation}}
 </span></code></pre></div></p>
 </li>
 <li>
 <p><strong>Examples</strong>: Add a few relevant examples to guide the model. Click the arrow to add examples of User input and expected AI output.<br />
-<a class="glightbox" href="../images/gen-ai-detect-intent-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/gen-ai-detect-intent-node.png" alt="Configure System Prompt and Prompt" title="Configure System Prompt and Prompt" style="border: 1px solid gray; zoom:80%;"></a> </p>
+<a class="glightbox" href="../images/gen-ai-node-summarization.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/gen-ai-node-summarization.png" alt="Configure System Prompt and Prompt" title="Configure System Prompt and Prompt" style="border: 1px solid gray; zoom:70%;"></a> </p>
 </li>
 <li>
 <p><strong>Hyperparameters</strong>: Hyperparameters allow you to fine-tune the AI model's behavior to suit your needs. While the default settings work well for most cases, you can adjust them to find the right balance for your use case.</p>
@@ -2916,7 +2910,7 @@ Format:
 </li>
 <li>
 <p>Click the <strong>Connections</strong> icon and select the <strong>Go to Node</strong> for both success and failure conditions.<br />
-<a class="glightbox" href="../images/gen-ai-actions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/gen-ai-actions.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:50%;"></a></p>
+<a class="glightbox" href="../images/gen-ai-connections.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/gen-ai-connections.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:70%;"></a></p>
 <ol>
 <li>
 <p><strong>On Success</strong> &gt; <strong>Go to Node</strong>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a Gen AI node, Function node, Condition node, API node, or End node.</p>
@@ -2927,7 +2921,7 @@ Format:
 </ol>
 </li>
 <li>
-<p>Finally, test the flow and fix any issues found. Click the <strong>Run Flow</strong> button at the top-right corner of the flow builder.</p>
+<p>Finally, test the flow and fix any issues found: Click the <strong>Run Flow</strong> button at the top-right corner of the flow builder.</p>
 </li>
 </ol>
 <div class="admonition failure">

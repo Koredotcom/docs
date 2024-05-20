@@ -251,9 +251,7 @@
     
     <div class="nav-links md-d-none">
       <a class="nav-item" 
-          target="_blank" 
-          href="https://docs.kore.ai/gale/getting-started/introduction/"
-      >Release Notes</a>
+        href="https://docs.kore.ai/gale/getting-started/introduction/">Release Notes</a>
 
       <!-- <a class="nav-item"
           target="_blank" 
@@ -407,9 +405,7 @@
    <nav class="md-more-links">
     <div class="nav-links">
       <a class="nav-item" 
-          target="_blank" 
-          href="https://galeadmin-kore.github.io/docs/gale/introduction/"
-      >Release Notes</a>
+          href="https://galeadmin-kore.github.io/docs/gale/introduction/">Release Notes</a>
 
       <!-- <a class="nav-item"
           target="_blank" 
@@ -1213,27 +1209,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#add-a-new-functions-node" class="md-nav__link">
+  <a href="#add-and-configure-a-function-node" class="md-nav__link">
     <span class="md-ellipsis">
-      Add a New Functions Node
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-the-function-node" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure the Function Node
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#status-codes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Status Codes
+      Add and Configure a Function Node
     </span>
   </a>
   
@@ -2822,27 +2800,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#add-a-new-functions-node" class="md-nav__link">
+  <a href="#add-and-configure-a-function-node" class="md-nav__link">
     <span class="md-ellipsis">
-      Add a New Functions Node
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-the-function-node" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure the Function Node
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#status-codes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Status Codes
+      Add and Configure a Function Node
     </span>
   </a>
   
@@ -2867,115 +2827,76 @@
 
 
 <h1 id="function-node">Function Node<a class="headerlink" href="#function-node" title="Permanent link">&para;</a></h1>
-<p>This node empowers you to create a script for handling context variables or other variables essential in constructing the experience flow. Utilizing a JavaScript or Python editor, you can develop and customize the script according to your requirements.</p>
-<h2 id="add-a-new-functions-node">Add a New Functions Node<a class="headerlink" href="#add-a-new-functions-node" title="Permanent link">&para;</a></h2>
-<p><strong>To add a Function node, follow these steps</strong>:</p>
+<p>Function nodes allow you to write custom scripts using JavaScript or Python to process context variables or other variables used in building the experience flow.</p>
+<h2 id="add-and-configure-a-function-node">Add and Configure a Function Node<a class="headerlink" href="#add-and-configure-a-function-node" title="Permanent link">&para;</a></h2>
+<p>Setting up a Function node in an Agent Flow involves adding the node at the appropriate location in the flow and configuring various node properties, as explained below.</p>
+<p>Steps to add and configure the node:</p>
 <ol>
-<li>Open the required agent from the list of agents to create the flow.</li>
-<li>Click <strong>Agent flow</strong> from the left navigation bar. The <strong>Agent flow</strong> page is displayed.</li>
 <li>
-<p>Click <strong>Go to flow</strong> to open the flow builder page.</p>
-<p><a class="glightbox" href="../images/go-to-flow-canvas.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/go-to-flow-canvas.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;"></a></p>
-<p>The Agents Flow canvas is displayed, and you can start creating a new flow.</p>
+<p>Open the Agent Flow to which you want to add the node: go to <strong>Agents</strong> &gt; <strong>Agent Flow</strong> &gt; <strong>Go to Flow</strong>.</p>
 </li>
 <li>
-<p>You can add a new node in 2 ways:</p>
+<p>The Agent Flow opens in the Flow Builder. Click the “<strong>+</strong>” icon on any existing node on the canvas and select <strong>Function</strong> from the pop-up menu. (Alternatively, you can drag the <strong>Function</strong> node from the Assets panel onto the canvas.)</p>
+</li>
+<li>
+<p>Click the added node to open its properties dialog box. The General Settings for the node are displayed.<br />
+<a class="glightbox" href="../images/configure-function-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/configure-function-node.png" alt="Configure Function Node" title="Configure Function Node" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>Enter or select the following information:</p>
 <ul>
-<li>Click the down arrow corresponding to the node from the <strong>Assets</strong> section from the left navigation bar of the <strong>Agents</strong> page and then click <strong>+New Function</strong>.</li>
-</ul>
-<p>Or</p>
-<ul>
 <li>
-<p>Click <strong>Function</strong> from the bottom bar of the <strong>Agents</strong> page.</p>
-<p><a class="glightbox" href="../images/add-a-new-function-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-a-new-function-node.png" alt="Add a New Function Node" title="Add a New Function Node" style="border: 1px solid gray; zoom:80%;"></a></p>
-<p>The Function node is created on the canvas and you can now define the properties of the node by clicking on the node. You can drag and move a node to any location on the canvas.</p>
+<p><strong>Custom Name</strong>: Enter an appropriate name for the node.</p>
 </li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The start node is displayed by default on the flow builder.</p>
-</div>
-</li>
-</ol>
-<h2 id="configure-the-function-node">Configure the Function Node<a class="headerlink" href="#configure-the-function-node" title="Permanent link">&para;</a></h2>
-<p><strong>To configure the Function node, follow these steps</strong>:</p>
+<li>
+<p><strong>Define a Script</strong>: You can define a script using Javascript or Python to process/parse the given input or the output of the previous node. Click anywhere in the <strong>Define a Script</strong> field to open the <strong>Script Editor</strong> dialog box.<br />
+<a class="glightbox" href="../images/function-node-script-editor.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/function-node-script-editor.png" alt="Configure Function Node" title="Configure Function Node" style="border: 1px solid gray; zoom:80%;"></a></p>
 <ol>
-<li>Add a <strong>Function</strong> node to the canvas.</li>
 <li>
-<p>Click the <strong>Function</strong> node and the general properties dialog for the node is displayed on the right side of the page as shown in the following image.</p>
-<p><a class="glightbox" href="../images/configure-the-function-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/configure-the-function-node.png" alt="Configure the Function Node" title="Configure the Function Node" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
-<li>
-<p>Enter a <strong>Custom Name</strong> by which you will identify the node later.</p>
-</li>
-<li>
-<p>Click the <strong>Define a Script</strong> box, and the <strong>Edit script</strong> dialog is displayed. Script node is used to process/parse the given input or the output of the previous node in Python or JavaScript.</p>
-<p><a class="glightbox" href="../images/edit-script-box.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/edit-script-box.png" alt="Edit Script Box" title="Edit Script Box" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
-<li>
-<p>Select <strong>JavaScript</strong> or <strong>Python</strong> from the drop-down list of the <strong>Edit script</strong> dialog.</p>
-<p><a class="glightbox" href="../images/select-javascript.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/select-javascript.png" alt="Select Javascript" title="Select Javascript" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
-<li>
-<p>Enter a <strong>Script</strong> in the script box. Context variables are available for you to use while writing the script.</p>
-<p>For example, </p>
-<p><strong>Syntax for Java</strong>:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>context.js_fact20 = 1
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>for(var i=1;i&amp;lt;21;i++)
+<p>In the top-left corner, choose the appropriate scripting language - <strong>Javascript</strong> or <strong>Python</strong>. Enter the script in the box. You can use variables or context variables in the Script Editor. For example:</p>
+<p>To read an input variable:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>context.&lt;variable-name&gt; = context.steps.&lt;startNode-Name&gt;.&lt;inputVariable-name&gt;
 </span></code></pre></div>
-<p><strong>Syntax for Python</strong>:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>context.js_fact20 = context.js_fact20*i    #context[“js_fact20”]
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>}
-</span></code></pre></div>
-<p><a class="glightbox" href="../images/enter-a-script.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enter-a-script.png" alt="Enter a Script" title="Enter a Script" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
-<li>
-<p>Click the <strong>Copy</strong> icon if you want to copy the code.</p>
-</li>
-<li>
-<p>Click the <strong>Run</strong> button to test the script. Once the script is resolved successfully, you will be able to see the results in the <strong>Log</strong> section of the <strong>Edit Script</strong> page.</p>
-<p>For example, to read input variable “email_content”, use below notation:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>context.&lt;variable-name&gt; = context.steps.&lt;startNode-Name&gt;.&lt;inputVariable-name&gt;
+To call a function:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>context.&lt;UserDefined-Variable-Name&gt;= UserDefined-Function-Name(context.steps.&lt;startNode-Name&gt;.&lt;inputVariable-name&gt;
 </span></code></pre></div></p>
-<p><strong>To call a function</strong>:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>context.&lt;UserDefined-Variable-Name&gt;= UserDefined-Function-Name(context.steps.&lt;startNode-Name&gt;.&lt;inputVariable-name&gt;
-</span></code></pre></div>
-<p>In the Function node, GALE provides a console I/O feature. This feature can be used when there is a requirement of a variable coming from the previous node or when testing a function.</p>
-<ul>
-<li>
-<p><strong>Context input</strong>: You can provide some input for the script node to execute in the Context input section.</p>
-</li>
-<li>
-<p><strong>Context output</strong>: To find the results of the function from the given input. The output of the script execution along with the variable generated is displayed in the Context output section. You can debug the issues based on the log report and re-run the script.</p>
-</li>
-<li>
-<p><strong>Log</strong>: Status of the function can be monitored and you can view the values.</p>
-</li>
-</ul>
-<p><a class="glightbox" href="../images/context-input-context-output.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/context-input-context-output.png" alt="Context Input Context Output" title="Context Input Context Output" style="border: 1px solid gray; zoom:80%;"></a></p>
-<p>In the Function node, you can utilize pre-existing libraries such as pandas, NumPy and so on. This allows you to perform various data operations efficiently within your workflow.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>We cannot import packages in Function Node.</p>
+<p>You cannot import packages in the Function node. However, you can use pre-existing libraries such as pandas or  NumPy.</p>
 </div>
 </li>
 <li>
-<p>Click the <strong>Actions</strong> icon and select the actions that you want the node to trigger when the Functions node is successful or when it fails.</p>
-<p><a class="glightbox" href="../images/actions-for-function-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/actions-for-function-node.png" alt="Actions for Function Node" title="Actions for Function Node" style="border: 1px solid gray; zoom:50%;"></a></p>
+<p>You can use the Context input/output feature to use a variable from the previous node or when testing a function.</p>
+<ul>
+<li><strong>Context Input</strong>: Add the required variable; also, dummy input values can be given to test the defined function.</li>
+<li><strong>Context Output</strong>: Shows the results of the function from the given input.</li>
+<li><strong>Log</strong>: Monitor the state of the function and view the values.</li>
+</ul>
+</li>
+<li>
+<p>Click the <strong>Run</strong> button to test the script. Once the script is resolved successfully, the results are displayed in the Log section.</p>
+</li>
+<li>Close the Script Editor.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>Click the <strong>Connections</strong> icon in the left navigation and select the <strong>Go to Node</strong> for both success and failure conditions.<br />
+<a class="glightbox" href="../images/function-node-connections.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/function-node-connections.png" alt="Configure Connection Settings" title="Configure Connection Settings" style="border: 1px solid gray; zoom:80%;"></a></p>
+<ol>
+<li><strong>On Success</strong> &gt; <strong>Go to Node</strong>: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can go to a Gen AI node to use the processed data from the Function node. </li>
+<li><strong>On Failure</strong> &gt; <strong>Go to Node</strong>: If the execution of the current node fails, go to an appropriate node having a custom error message configured for this node.</li>
+</ol>
+</li>
+<li>
+<p>Finally, test the flow and fix any issues found: Click the <strong>Run Flow</strong> button at the top-right corner of the flow builder.</p>
 </li>
 </ol>
-<h2 id="status-codes">Status Codes<a class="headerlink" href="#status-codes" title="Permanent link">&para;</a></h2>
-<p><strong>Errors</strong>:</p>
-<ul>
-<li>Compilation and runtime errors.</li>
-</ul>
-<p><strong>Connection</strong>:</p>
-<ul>
-<li><strong>On Success</strong>: On successful execution of the current node this connection can be linked with another node such as Gen AI node, Function node, Condition node, API node, or an End node.</li>
-<li><strong>On Failure</strong>: On failure in execution of the current node this connection should be linked with an End node to display the custom error message from the Function node. </li>
-</ul>
+<div class="admonition failure">
+<p class="admonition-title">Standard Errors</p>
+<p>You can see compilation and runtime errors, if any, during the execution of the script/node.</p>
+</div>
 
 
 
