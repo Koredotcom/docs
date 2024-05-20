@@ -45,14 +45,15 @@ context.readableFormat=context.rule.toText();
 
 **Output:**
 
-* For context.between
-   ```[ 
+* For context.between  
+   ```
+   [ 
    "2012-08-27T10:30:00.000Z", 
    "2012-08-31T10:30:00.000Z" 
-   ]```
+   ]
+   ```
 
-* For context.readableFormat
-
+* For context.readableFormat  
    ```every 5 weeks on Monday, Friday until January 31, 2013```
 
 
@@ -77,19 +78,18 @@ koreUtil.intl is a platform-offered JS library for language-specific string comp
 
 **Usage Example:**
 
-```context.formattedNumberUK = koreUtil.intl.NumberFormat('en-GB').format(123456.789);
+```
+context.formattedNumberUK = koreUtil.intl.NumberFormat('en-GB').format(123456.789);
 var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0)); 
 context.USdate=koreUtil.intl.DateTimeFormat('en-US').format(date);
 ```
 
 **Output:**
 
-* For context.formattedNumberUK:
-
+* For context.formattedNumberUK:  
    ```123,456.789```
 
-* For context.USdate
-
+* For context.USdate  
    ```12/20/2012```
 
 
@@ -98,7 +98,9 @@ context.USdate=koreUtil.intl.DateTimeFormat('en-US').format(date);
 koreUtil.momenttz is a platform-offered JS library for the formatting of dates in any timezone and converting dates between timezones.
 
 **Usage Example:**
-```var jun = koreUtil.moment("2014-06-01T12:00:00Z"); 
+
+```
+var jun = koreUtil.moment("2014-06-01T12:00:00Z"); 
 context.newyork= koreUtil.momenttz(jun,'America/New_York').format('ha z'); 
 context.tokyo = koreUtil.moment().tz('Asia/Tokyo').format('ha z'); 
 context.sydney = koreUtil.moment().tz('Australia/Sydney').format('ha z');
