@@ -26,7 +26,7 @@ To show the self-reported status (available, busy, away, etc.) in the given time
 ## Sample Request
 
 ```
-curl --location --request POST 'https://staging-smartassist.kore.ai/agentassist/api/public/analytics/account/63f07d26f04465685df43234/agentstatusdetails?limit=8&offset=0' \
+curl --location --request POST 'https://{{host}}/agentassist/api/public/analytics/account/63f07d26f04465685df4xxxx/agentstatusdetails?limit=8&offset=0' \
 --header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy1iMDIzM2M2Ny0zMjJlLTVkMWEtOWZiNy0z
 NjZlN2Y1OTE1YTcifQ.d_q_yz0CKAm5w0TLbB2Rfpf_aMDPMBytThCMNiHCX5A' \
 --header 'Content-Type: application/json' \
@@ -44,11 +44,11 @@ NjZlN2Y1OTE1YTcifQ.d_q_yz0CKAm5w0TLbB2Rfpf_aMDPMBytThCMNiHCX5A' \
 
 | **PARAMETER**      | **DESCRIPTION**                                                                                                                                            | **TYPE**        |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-| filter             | Object with agents and date filter as the fields.                                                                                                           | String, Required|
+| filter             | Object with agents and date filter as the fields.                                                                                                           | string, required|
 | agents             | The Email Ids of the agents.                                                                                                                                | String, Optional|
-| dateFilter         | Object with start date, end date, and time zone offset as the fields. It contains the following details to filter the result set.                           | Number, Required|
-| startDate          | The start date from which the records need to be considered. The date format is: `yyyy-mm-dd`. For example, `2022-08-25`                                    | Date, Required  |
-| endDate            | The end date from which the records need to be considered. The date format is: `yyyy-mm-dd`. For example, `2022-08-25`                                      | Date, Required  |
+| dateFilter         | Object with start date, end date, and time zone offset as the fields. It contains the following details to filter the result set.                           | number, required|
+| startDate          | The start date from which the records need to be considered. The date format is: `yyyy-mm-dd`. For example, `2022-08-25`                                    | date, required  |
+| endDate            | The end date from which the records need to be considered. The date format is: `yyyy-mm-dd`. For example, `2022-08-25`                                      | date, required  |
 | timeZoneOffSet     | The time zone offset. For example, `-330, 630, -500`. If a user is in US/New York then the timeZoneOffset would be 300. Use the '-' sign for negative numbers and no sign for positive numbers. For timeZones east of GMT use the '-' sign, and for timeZones west of GMT don’t use any sign. | Number, Required|
 
 ## Sample Response

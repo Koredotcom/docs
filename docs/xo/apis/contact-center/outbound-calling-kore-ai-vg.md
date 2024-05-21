@@ -13,23 +13,23 @@ This process happens in two parts:
 
 The application triggers an outbound call using an HTTP POST request to the endpoint.
 
-| Method      | POST                                                                                                     |
+| **Method**      | POST                                                                                                     |
 |-------------|----------------------------------------------------------------------------------------------------------|
-| Endpoint    | `[https://{{host}}/api/1.1/public/bot/:/smartassist/dialout](https://{{host}}/api/1.1/public/bot/:/smartassist/dialout)` |
-| Content Type | `application/json`                                                                                       |
-| Authorization | `auth: {{JWT}}`<br>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
-| API Scope   | SmartAssist Dialout                                                                                      |
+| **Endpoint**    | `[https://{{host}}/api/1.1/public/bot/:/smartassist/dialout](https://{{host}}/api/1.1/public/bot/:/smartassist/dialout)` |
+| **Content Type** | `application/json`                                                                                       |
+| **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
+| **API Scope**   | SmartAssist Dialout                                                                                      |
 
 ## Path Parameters
 
-| PARAMETER | DESCRIPTION                                                                                          | TYPE           |
+| **PARAMETER** | **DESCRIPTION**                                                                                          | **TYPE**           |
 |-----------|------------------------------------------------------------------------------------------------------|----------------|
 | host      | Environment URL, for example, https://platform.kore.ai                                             | string, required |
 | botId     | botId or streamId. You can access it from the General Settings page of the bot.                      | string, required |
 
 ## Query Parameters
 
-| PARAMETER           | DESCRIPTION                                                                                                                                              | TYPE             |
+| **PARAMETER**           | **DESCRIPTION**                                                                                                                                              | **TYPE**             |
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
 | target              | URI of the target of the outbound call. For example:                                                                                                     | string, required |
 |                     | - “tel:911234567890” with the country code                                                                                                               |                  |
@@ -47,7 +47,7 @@ The application triggers an outbound call using an HTTP POST request to the endp
 
 ## Timers Configuration
 
-| PROPERTY                                   | DESCRIPTION                                                                                        | REQUIRED     |
+| **PROPERTY**                                   | **DESCRIPTION**                                                                                        | **REQUIRED**     |
 |--------------------------------------------|----------------------------------------------------------------------------------------------------|--------------|
 | `timers.noSpeechTimeoutMs`                 | Time in milliseconds to wait for a speech before returning amd_no_speech_detected.                 | no, default=5000 |
 | `timers.decisionTimeoutMs`                | Time in milliseconds to wait before returning amd_decision_timeout.                                | no, default=15000 |
@@ -181,7 +181,7 @@ User-Agent: abc
 
 ## Response Body Parameters
 
-| PARAMETER          | DESCRIPTION                                                                                                                                                              | TYPE             |
+| **PARAMETER**          | **DESCRIPTION**                                                                                                                                                              | **TYPE**             |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
 | conversationId     | UUID of the conversation (matches the `conversationId` sent in the dial-out trigger response).                                                                            | string, required |
 | status             | Call status:                                                                                                                                                             | string, required |

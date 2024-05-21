@@ -6,7 +6,7 @@ To create a contact with the given stream Id.
 |------------------|------------------------------------------------------------------------------------------------------------------|
 | **Endpoint**     | `https://{host}/agentassist/api/v1/public/{{streamId}}/contacts`                                                 |
 | **Content Type** | `application/json`                                                                                               |
-| **Authorization**| `auth: {{JWT}}` See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
+| **Authorization**| `auth: {{JWT}}` <br>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**    | Configuration                                                                                                    |
 
 ## Path Parameters
@@ -22,7 +22,7 @@ To create a contact with the given stream Id.
 
 ```
 curl --location --request POST \
-     'https://{host}/agentassist/api/v1/public/{{streamId}}/contacts'
+     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/contacts'
       --header 'auth: {jwt-code}' \
       --header 'accountId:123456789'
       --header 'Content-Type: application/json' \
