@@ -4,12 +4,7 @@ FAQs allow you to add question-answer sets to your Knowledge Graph and map them 
 
 !!! Warning "Important"
 
-    i love ice cream
-
-<div class="admonition warning">
-<p class="admonition-title">Important</p>
-<p>There is a limit of 50k FAQs over 20k nodes to avoid performance issues.</p>
-</div>
+    There is a limit of 50k FAQs over 20k nodes to avoid performance issues.
 
 All features explained here are supported by the Few-Shot Knowledge Graph, except for the following:
 
@@ -46,10 +41,9 @@ You can add channel-specific responses to questions in your Knowledge Graph. By 
 
 To add a channel-specific response, select the channel from the channels list before typing the response.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We recommend adding one response for All Channels so that it is triggered in the absence of a channel-specific response.</p>
-</div>
+!!! Note
+
+    We recommend adding one response for All Channels so that it is triggered in the absence of a channel-specific response.
 
 **Handling Lengthy Reponses and Improving Readability**
 
@@ -90,4 +84,3 @@ The demo below shows you how this works.
 <img src="../images/edit-delete-faq-responses.png" alt="edit or delete faq responses" title="edit or delete faq responses" style="border: 1px solid gray; zoom:75%;">
 Selecting multiple intents lets you delete them in bulk.
 <img src="../images/delete-multiple-intents.png" alt="delete selected intents" title="delete selected intents" style="border: 1px solid gray; zoom:75%;">
-
