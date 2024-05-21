@@ -2,6 +2,10 @@
 
 FAQs allow you to add question-answer sets to your Knowledge Graph and map them to related ontology terms. This feature improves intent recognition and increases the performance of your VA.
 
+!!! Warning "Important"
+
+    i love ice cream
+
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p>There is a limit of 50k FAQs over 20k nodes to avoid performance issues.</p>
@@ -27,7 +31,7 @@ To add an FAQ, follow the below steps:
 6. (Optional) If there are alternatives to the same question, add them in the **Add Alternate FAQ** field. Repeat the step for all the alternative questions you want to add.
 7. (Optional) Use patterns to define the FAQs. This can be done by preceding the pattern with || (two vertical bars) in the alternate question field. The Platform marks these as patterns and evaluates them accordingly. [Learn more](../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities.md){:target="_blank"}.
 8. (Optional) Add terms that enable the Knowledge Graph Engine to identify questions more effectively.
-9. (Optional) Enable or disable the **Intent Status** for the FAQ intents. The Knowledge Graph does not use the FAQs intents that are enabled. These intents do not participate in the intent recognition process during testing and end-user interaction.
+9. (Optional) Enable or disable the **Intent Status** for the FAQ intents. The Knowledge Graph does not use the FAQs intents that are disabled. These intents do not participate in the intent recognition process during testing and end-user interaction.
 10. (Optional) Enable or disable the **Term Status**. The Knowledge Graph uses only the enabled terms. The disabled terms and all their FAQ intents do not participate in the intent recognition process during testing and end-user interaction.
 11. (Optional) Add a **Reference Id**. This field is used to reference any external content used as a source for this FAQ.
 <img src="../images/add-faq-form.png" alt="add faq form" title="add faq form" style="border: 1px solid gray; zoom:75%;">
