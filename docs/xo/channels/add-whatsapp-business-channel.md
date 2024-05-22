@@ -317,7 +317,7 @@ An example of a success payload is given below:
 ```
 ### Error Response Codes
 
-The following table shows the possible error codes and messages for common errors in the Gupshup channel incoming requests:
+The table below outlines the various error status codes that may occur when receiving incoming requests through the Gupshup Whatsapp channel:
 
 | Scenario                              | Status Code | Message                 |
 |---------------------------------------|-------------|-------------------------|
@@ -334,7 +334,7 @@ To integrate **Karix** to your _WhatsApp Business Messaging_ channel and enable 
 
 !!! note
 
-    To complete this procedure, you must already have a _Karix _account. This is one of the messaging provider for enabling WhatsApp Business Messaging.
+    To complete this procedure, you must already have a _Karix_ account. This is one of the messaging provider for enabling WhatsApp Business Messaging.
 
 
 ### Prerequisites
