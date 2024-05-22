@@ -14,7 +14,7 @@ Steps to deploy an agent and get its endpoint:
 2. Click **Deploy**. After the deployment, you can see the dedicated API endpoint created for your agent. The API endpoint is available in the following formats: curl, Python, and Node.js. You can copy the code and use it as needed.  
 <img src="../images/agents-endpoint.png" alt="Agents Endpoint" title="Agents Endpoint" style="border: 1px solid gray; zoom:80%;">
 
-## How do you change the agent's flow and redeploy the agent? 
+## Redeploy an Agent for the Changes in the Flow 
 
 The Deployed version of your agent's flow is accessible from the **Agent Flow** page. You can click the **View the Flow** button to view the flow in read-only mode.  
 <img src="../images/deployed-version.png" alt="Deployed Version" title="Deployed Version" style="border: 1px solid gray; zoom:80%;">
