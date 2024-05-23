@@ -1,6 +1,6 @@
 # Google Drive Cloud Storage Connector
 
-By setting up the Google Drive connector in SearchAssist, you can extend the search capabilities to your Google Drive cloud storage-managed content and provide a seamless experience.
+By setting up the Google Drive connector in Search AI, you can extend the search capabilities to your Google Drive cloud storage-managed content and provide a seamless experience.
 
 <span style="text-decoration:underline;">Specifications</span>
 
@@ -61,7 +61,7 @@ Follow the steps listed below to set up and enable access to the content on your
 If the publishing status is set to Testing, you can add your test users by clicking on _ADD USERS_ on the same page. 
 ![Add Users](../images/googledrive/add-users.png "Add Users")
 
-7. [Create OAuth access credentials](https://developers.google.com/workspace/guides/create-credentials) to authenticate the client (SearchAI). Enter the _Application type_ as _Web Application_ and give it a name. Add the URL of your  SearchAssist deployment as _Authorized redirect URIs_ and click _CREATE_.
+7. [Create OAuth access credentials](https://developers.google.com/workspace/guides/create-credentials) to authenticate the client (SearchAI). Enter the _Application type_ as _Web Application_ and give it a name. Add the URL of your  Search AI deployment as _Authorized redirect URIs_ and click _CREATE_.
 
 You can use one of the following URLs as per your region.
 
@@ -82,12 +82,9 @@ You can use one of the following URLs as per your region.
 2. Configure the authorization parameters for the connector and click **Connect**.
     * **Name**- Unique name for the connector.
     * **Authorization Type** - Search AI supports **OAuth 2.0 for Google Drive.** Set this field accordingly.
-    * **Grant Type** - Method of obtaining access token in OAuth 2.0 authentication. SearchAI supports **Authorization Code Grant Type for Google Drive**. Refer to [this for more information on Grant types](https://docs.google.com/document/d/1U-fxzFd9f2sGUZYq7HmI4HO1Tu3p9AvXBwSVRrVNDkw/edit#heading=h.gtcwm1lgykmp).
+    * **Grant Type** - Method of obtaining access token in OAuth 2.0 authentication. SearchAI supports **Authorization Code Grant Type for Google Drive**. Refer to [this for more information on Grant types](../../connectors.md).
     * **Client ID** - The client ID generated after registering SearchAI for OAuth authentication. 
-    * **Client Secret**- The secret generated while configuring the OAuth authentication.  
-    * **Username**- Username for authorization.
-    * **Password**- Password for authorization. 
-
+    * **Client Secret**- The secret generated after registering SearchAI for OAuth authentication.  
 
 ![Authorization](../images/googledrive/auth-tab.png "Authorization")
 

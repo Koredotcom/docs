@@ -32,7 +32,7 @@ When you test an utterance, the NLP engine tries to identify an intent using the
 
 * [Machine Learning](../../natural-language/training/machine-learning-engine){:target="_blank"} engine, 
 * [Fundamental Meaning](../../natural-language/training/fundamental-meaning){:target="_blank"} engine,
-* [Knowledge AI](../../../answers/knowledge-ai/knowledge-ai-introduction){:target="_blank"}, including the [Knowledge Graph](../../../answers/knowledge-ai/knowledge-graph-training){:target="_blank"} engine and the [Answer from Documents](../../../answers/answer-from-documents){:target="_blank"} feature,
+* [Knowledge AI](../../../answers/knowledge-ai/knowledge-ai-introduction){:target="_blank"}, including the [Knowledge Graph](../../../answers/knowledge-ai/knowledge-graph-training){:target="_blank"} engine,
 * [Ranking and Resolver](../../natural-language/training/ranking-and-resolver){:target="_blank"}.
 
 
@@ -164,25 +164,6 @@ If the VA includes a Knowledge Graph, the user utterances are processed to extra
 
 In case the utterance triggers a dialog (as per run a dialog option in KG), the same is displayed as _matched intent_ and _matched utterance_. You can further train the VA as you would for an intent from ML or FM engine. [Know more about Knowledge Graph Training from here](../../../answers/knowledge-ai/knowledge-graph-training){:target="_blank"}.  
 <img src="../images/utterance-testing-11-testing-kg.png" alt="Knowledge Graph" title="Knowledge Graph" style="border: 1px solid gray; zoom:50%;"/>
-
-
-
-#### Answer from Documents
-
-If you have enabled [Answer from Documents](../../../answers/answer-from-documents){:target="_blank"} for your VA, and a match is found within your uploaded documents, you will see results for this match, provided the intent is not identified using any other method (a dialog task, a Knowledge Graph FAQ, the Machine Learning or the Fundamental Meaning engine).
-
-When an utterance is answered from a document, you will see a note mentioning that no Intent was identified by the ML, FM, and KG engines. Click [Add to KG](../../../answers/knowledge-ai/manage-faqs){:target="_blank"} to add an FAQ to the Knowledge Graph to address the utterance and improve intent identification. 
-
-When the _Answer from Document_ feature is used in reply to a test utterance, the following information is provided:
-
-1. The document from which the answer has been retrieved;
-2. An option to view this document;
-3. The page where the answer has been identified;
-4. A similarity score between the tested utterance and the top-matched document;
-5. The content of the answer.
-
-<img src="../images/answer-from-doc-feature.png" alt="Answer from Document" title="Answer from Document" style="border: 1px solid gray; zoom:50%;"/>
-
 
 
 #### Ranking and Resolver

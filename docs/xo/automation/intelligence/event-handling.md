@@ -173,7 +173,7 @@ Users can initiate VA conversations in varied ways, from a simple greeting to di
 
 To facilitate a scope for the developer to customize the response based on the user choice, the Welcome event comes with additional options when you choose _Initiate Task_ or _Show Message_ as the event configurations. For example, if the first user utterance maps to a task, should the VAexecute the event-based task or the user intent first?
 
-Post ver9.0, you can use the <code>isReturningUser</code> parameter in the **BotUserSession** context object to [identify returning users](../../kb/new-and-returning-users.md){target="_blank"}.
+Post ver9.0, you can use the <code>isReturningUser</code> parameter in the **BotUserSession** context object to [identify returning users](../../kb/new-and-returning-users.md){target="_blank"}
  and send an appropriate welcome message. [Learn More](../intelligence/context-object.md){target="_blank"}.
 
 As a developer, you can define the VA’s priority when the user starts the conversation with a greeting, task, or FAQ from the options listed below:
@@ -499,7 +499,7 @@ This default behavior is ideal for most of the use cases. However, you can custo
 
 You can build custom business logic to analyze ambiguous intents, define appropriate conversation flow using a Dialog Task, and associate it with the Ambiguous Intents Identified event. 
 
-By customizing the flow, you can avoid displaying ambiguous intents to the end user and redirect the conversation to the desired task. You can use the `koreUtil.getAmbiguousIntents()` function to retrieve the list of ambiguous intents and their confidence scores. For more information on the function, click [here](/docs/xo/apis/koreutil-libraries/){target="_blank"}.
+By customizing the flow, you can avoid displaying ambiguous intents to the end user and redirect the conversation to the desired task. You can use the `koreUtil.getAmbiguousIntents()` function to retrieve the list of ambiguous intents and their confidence scores. For more information on the function, click [here](/docs/xo/apis/automation/koreutil-libraries/#koreutilgetambiguousintents){target="_blank"}.
 
 <img src="../images/ambiguous-intents-event-window.png" alt="ambiguous intents event" title="ambiguous intents event" style="border: 1px solid gray; zoom:75%;">
 

@@ -12,7 +12,6 @@ This update includes feature enhancements and bug fixes. Key enhancement include
 
 In addition to the existing ServiceNow connector, Search AI now supports more knowledge base connectors, including Zendesk, Confluence Server, Google Drive, and Dropbox. The new connectors make it easier to integrate Search AI with these platforms, helping users quickly find and access information to boost productivity. [Learn more :octicons-arrow-right-24:](../../searchai/content-sources/connectors.md)
 
-
 <hr>
 
 ## v11.1.0 April 27, 2024

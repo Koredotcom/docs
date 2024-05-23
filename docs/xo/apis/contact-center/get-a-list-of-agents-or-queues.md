@@ -2,68 +2,19 @@
 
 To get all agents if you have `queuesIds` and all the queues if you have `agentIds`.
 
-<table>
-  <tr>
-   <td>Method
-   </td>
-   <td>POST
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoints
-   </td>
-   <td><code>https://{{host}}/agentassist/api/v1/public/{{streamId}}/queues/agents</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>Configuration
-   </td>
-  </tr>
-</table>
+| **Method** | POST |
+|--------|------|
+| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/queues/agents` |
+| **Content Type** | `application/json` |
+| **Authorization** | `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
+| **API Scope** | Configuration |
 
 ## Path Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL, for example, https://smartassist.kore.ai
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>botId
-   </td>
-   <td>botId or streamId. You can access it from the General Settings page of the bot.
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-</table>
+| **PARAMETER** | **DESCRIPTION** | **TYPE** |
+|-----------|-------------|------|
+| host | Environment URL, for example, https://platform.kore.ai | string, required |
+| botId | botId or streamId. You can access it from the General Settings page of the bot. | string, required |
 
 ## Sample Request
 
@@ -132,35 +83,7 @@ When `agentIds` are passed:
 
 ## Body Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>queueIds
-   </td>
-   <td>An array of queueIds. For example:
-[
-“Qu-444b2d2-cba6-41c8-945e-04746a353be5”
-]
-   </td>
-   <td>array, optional
-   </td>
-  </tr>
-  <tr>
-   <td>agentIds
-   </td>
-   <td>An array of agentIds. For example:
-[
-“u-9d9cc5f8-ac46-5c0e-9986-21270989906c”
-]
-   </td>
-   <td>array, optional
-   </td>
-  </tr>
-</table>
+| **PARAMETER** | **DESCRIPTION** | **TYPE** |
+|-----------|-------------|------|
+| queueIds | An array of queueIds. For example: ["Qu-444b2d2-cba6-41c8-945e-04746a353be5"] | array, optional |
+| agentIds | An array of agentIds. For example: ["u-9d9cc5f8-ac46-5c0e-9986-21270989906c"] | array, optional |

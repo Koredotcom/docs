@@ -19,7 +19,7 @@ The following sections describe configuring the default flows for a phone experi
 
 ## Off-Working Hours
 
-This flow plays a voice message to the caller who tries to reach an agent during off-working or non-business hours. Off-working hours are considered those that are outside of your configured [Hours of Operation](https://docs.kore.ai/smartassist/settings/hours-of-operation-2/).
+This flow plays a voice message to the caller who tries to reach an agent during off-working or non-business hours. Off-working hours are considered those that are outside of your configured [Hours of Operation](../hours-of-operation/manage-hours-of-operation.md).
 
 To configure the **Off Working Hours** flow, click the **Off Working Hours** tile in the **Phone Experiences** section.
 <img src="../images/off-working-hours-phone.png" alt="
@@ -49,7 +49,7 @@ The following sections describe the default flows configuration for a chat exper
 The **Off Working Hours** flow sets the auto-response message during non-business hours for automated and live chats. To configure this feature, follow these steps:
 
 1. Click the **Off Working Hours** tile under **Chat Experiences**.
-2. In the **Off Working Hours for Chats** panel, you can define the messages displayed during off-working hours (based on the [hours of operation](https://docs.kore.ai/smartassist/settings/hours-of-operation-2/)) when a customer attempts to reach a live chat agent.
+2. In the **Off Working Hours for Chats** panel, you can define the messages displayed during off-working hours (based on the [hours of operation](../hours-of-operation/manage-hours-of-operation.md)) when a customer attempts to reach a live chat agent.
 
 You can define messages for the following scenarios:
 

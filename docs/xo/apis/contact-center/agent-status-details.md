@@ -2,103 +2,31 @@
 
 To show the self-reported status (available, busy, away, etc.) in the given time interval.
 
-<table>
-  <tr>
-   <td>Method
-   </td>
-   <td>POST
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoint
-   </td>
-   <td><code>https://{{host}}/agentassist/api/public/analytics/account/</code>
-<code>{{accountId}}/agentstatusdetails</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content-Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>SmartAssist Analytics
-   </td>
-  </tr>
-</table>
+| **METHOD**   | **POST**                                                                                   |
+|--------------|---------------------------------------------------------------------------------------------|
+| **Endpoint** | `https://{{host}}/agentassist/api/public/analytics/account/`<br>`{{accountId}}/agentstatusdetails` |
+| **Content Type** | `application/json`                                                            |
+| **Authorization** | `auth: {{JWT}}`<br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token).  |
+| **API Scope** | SmartAssist Analytics                                                                       |
 
 ## Path Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>The Environment URL. For example, https://smartassist.kore.ai
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>accountId
-   </td>
-   <td>The Account Id.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-</table>
+| **PARAMETER** | **DESCRIPTION**                                          | **TYPE**            |
+|---------------|----------------------------------------------------------|---------------------|
+| host          | The Environment URL. For example, https://platform.kore.ai | string, required    |
+| accountId     | The Account Id.                                          | string, required    |
 
 ## Query Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>limit
-   </td>
-   <td>Default is 50, Maximum is 50 – applied to the agent counts
-   </td>
-   <td>Number, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>offset
-   </td>
-   <td>Default is 0.
-   </td>
-   <td>Number, Optional
-   </td>
-  </tr>
-</table>
+| **PARAMETER** | **DESCRIPTION**                                         | **TYPE**         |
+|---------------|---------------------------------------------------------|------------------|
+| limit         | Default is 50, Maximum is 50 – applied to the agent counts | Number, Optional |
+| offset        | Default is 0.                                           | number, optional |
 
 ## Sample Request
 
 ```
-curl --location --request POST 'https://staging-smartassist.kore.ai/agentassist/api/public/analytics/account/63f07d26f04465685df43234/agentstatusdetails?limit=8&offset=0' \
+curl --location --request POST 'https://{{host}}/agentassist/api/public/analytics/account/63f07d26f04465685df4xxxx/agentstatusdetails?limit=8&offset=0' \
 --header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy1iMDIzM2M2Ny0zMjJlLTVkMWEtOWZiNy0z
 NjZlN2Y1OTE1YTcifQ.d_q_yz0CKAm5w0TLbB2Rfpf_aMDPMBytThCMNiHCX5A' \
 --header 'Content-Type: application/json' \
@@ -114,72 +42,14 @@ NjZlN2Y1OTE1YTcifQ.d_q_yz0CKAm5w0TLbB2Rfpf_aMDPMBytThCMNiHCX5A' \
 
 ## Body Parameters
 
-
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>filter
-   </td>
-   <td>Object with agents and date filter as the fields.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>agents
-   </td>
-   <td>The Email Ids of the agents.
-   </td>
-   <td>String, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>dateFilter
-   </td>
-   <td>Object with start date, end date, and time zone offset as the fields. It contains the following details to filter the result set.
-   </td>
-   <td>Number, Required
-   </td>
-  </tr>
-  <tr>
-   <td>startDate
-   </td>
-   <td> The start date from which the records need to be considered.
-The date format  is :
-<code>yyyy-mm-dd</code>
-For example, <code>2022-08-25</code>
-   </td>
-   <td>Date, Required
-   </td>
-  </tr>
-  <tr>
-   <td>endDate
-   </td>
-   <td>The end date from which the records need to be considered.
-The date format  is :
-<code>yyyy-mm-dd</code>
-For example, <code>2022-08-25</code>
-   </td>
-   <td>Date, Required
-   </td>
-  </tr>
-  <tr>
-   <td>timeZoneOffSet
-   </td>
-   <td>The time zone offset.
-For example, <code>-330,630,-500</code>If a user is in US/New York then the timeZoneOffset would be 300. For the -ve numbers use the ‘-‘ sign, and for +ve numbers don’t use the sign. For timeZones east of GMT use the -ve sign , for the timeZones west of GMT don’t use any sign.
-   </td>
-   <td>Number, Required
-   </td>
-  </tr>
-</table>
+| **PARAMETER**      | **DESCRIPTION**                                                                                                                                            | **TYPE**        |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+| filter             | Object with agents and date filter as the fields.                                                                                                           | string, required|
+| agents             | The Email Ids of the agents.                                                                                                                                | String, Optional|
+| dateFilter         | Object with start date, end date, and time zone offset as the fields. It contains the following details to filter the result set.                           | number, required|
+| startDate          | The start date from which the records need to be considered. The date format is: `yyyy-mm-dd`. For example, `2022-08-25`                                    | date, required  |
+| endDate            | The end date from which the records need to be considered. The date format is: `yyyy-mm-dd`. For example, `2022-08-25`                                      | date, required  |
+| timeZoneOffSet     | The time zone offset. For example, `-330, 630, -500`. If a user is in US/New York then the timeZoneOffset would be 300. Use the '-' sign for negative numbers and no sign for positive numbers. For timeZones east of GMT use the '-' sign, and for timeZones west of GMT don’t use any sign. | Number, Required|
 
 ## Sample Response
 

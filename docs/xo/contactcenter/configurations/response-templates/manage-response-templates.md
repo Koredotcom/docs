@@ -16,7 +16,7 @@ The Response Templates section provides the following high-level features:
 
 # Response Groups
 
-Response Templates are organized into _Response Groups_, to which agents need to be mapped for responses to be available to them in the [Agent Console](https://docs.kore.ai/smartassist/console/agent-console/).
+Response Templates are organized into _Response Groups_, to which agents need to be mapped for responses to be available to them in the [Agent Console](../../../console/introduction-to-the-console/Introduction.md).
 
 ## View an Existing Response Group
 
@@ -121,7 +121,7 @@ To create a new response within a response group, follow these steps:
 
 ### List of Variables within Response Templates
 
-You can use variables to pull customer-specific information from the [context object](https://developer.kore.ai/docs/bots/bot-builder-tool/context-object/).
+You can use variables to pull customer-specific information from the [context object](../../../automation/intelligence/context-object.md).
 
 You can add the following variables to Response Templates (chat and email):
 

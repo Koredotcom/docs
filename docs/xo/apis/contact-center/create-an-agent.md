@@ -2,82 +2,26 @@
 
 To add an agent with the given Stream Id.
 
-<table>
-  <tr>
-   <td>Method
-   </td>
-   <td>POST
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoint
-   </td>
-   <td><code>https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>SmartAssist Analytics
-   </td>
-  </tr>
-</table>
+| **METHOD**       | **POST**                                                         |
+|--------------|--------------------------------------------------------------|
+| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents` |
+| **Content Type** | `application/json`                                           |
+| **Authorization**| `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
+| **API Scope**    | SmartAssist Analytics                                        |
 
 ## Path Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL, for example, https://smartassist.kore.ai
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>BotId
-   </td>
-   <td>BotId or StreamId. You can access it from the General Settings page of the bot.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>customId
-   </td>
-   <td>The customID of the agent, without any special characters or spaces, and up to 15 characters long.
-   </td>
-   <td>String, Optional
-   </td>
-  </tr>
-</table>
+| **PARAMETER** | **DESCRIPTION**                                                                                         | **TYPE**        |
+|-----------|-----------------------------------------------------------------------------------------------------|-------------|
+| host      | Environment URL, for example, https://platform.kore.ai                                           | string, required |
+| BotId     | BotId or StreamId. You can access it from the General Settings page of the bot.                     | string, required |
+| customId  | The customID of the agent, without any special characters or spaces, and up to 15 characters long. | string, optional |
 
 ## Sample Request
 
 ```
 curl --location --request POST \
-     'https://smartassist.kore.ai/agentassist/api/v1/public/{{streamId}}/agents'
+     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents'
       --header 'auth: {jwt-code}' \
       --header 'Content-Type: application/json' \
       --data-raw '{
@@ -170,230 +114,33 @@ curl --location --request POST \
 
 ## Body Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>emaiId
-   </td>
-   <td>The Email Id of the agent.
-Example: adfa@adfa.com
-   </td>
-   <td>Email, Required
-   </td>
-  </tr>
-  <tr>
-   <td>firstName
-   </td>
-   <td>The First Name of the agent up to 50 characters long.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>lastName
-   </td>
-   <td>The Last Name of the agent up to 50 characters long.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>nickName
-   </td>
-   <td>The Nick Name of the agent up to 50 characters long.
-   </td>
-   <td>String, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>phoneNumber
-   </td>
-   <td>The Phone number of the agent.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>profImage
-   </td>
-   <td>The file Id of the profile image to be set.
-   </td>
-   <td>String, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>agentGroupId
-   </td>
-   <td>The Id of the agent group which you can find with <a href="https://docs.kore.ai/smartassist/api/get-all-agent-groups/">GET /agent-groups</a>
-Example: ag-3234fsdf21312412123
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>canSupportChat
-   </td>
-   <td>It tells whether the agent supports chat.
-   </td>
-   <td>Boolean, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>canSupportVoice
-   </td>
-   <td>It tells whether the agent can support the voice chat.
-   </td>
-   <td>Boolean, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>voiceLanguageSupport
-   </td>
-   <td>An array of Objects with the following details
-   </td>
-   <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td>language
-   </td>
-   <td>The Language supported.
-Example: en/es
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>proficiency
-   </td>
-   <td>The Proficiency level which can be:
-expert, novice, average, good.
-Example : ‘expert’
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>isActive
-   </td>
-   <td>It tells whether this support is active.
-   </td>
-   <td>Boolean, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>chatLanguageSupport
-   </td>
-   <td>Array of Objects with the following details
-   </td>
-   <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td>language
-   </td>
-   <td>The Language supported.
-Example: en/es
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>proficiency
-   </td>
-   <td>The Proficiency level can be:
-expert, novice, average, good.
-Example: ‘expert’
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>isActive
-   </td>
-   <td>It tells whether this support is active.
-   </td>
-   <td>Boolean, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>skills
-   </td>
-   <td>Array of Objects which you can find with <a href="https://{{host}}/api/public/%7B%7BstreamId%7D%7D/skill-groups/%7B%7BskillGroupId%7D%7D/skills">GET /skills </a>.
-It contains the following details
-   </td>
-   <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td>skillId
-   </td>
-   <td>The Skill Id.
-Example: s-21223123
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>proficiencyLevel
-   </td>
-   <td>The Proficiency level can be:
-expert, novice, average, good.
-Example: ‘expert’
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>roleId
-   </td>
-   <td>The Role id which you can find with GET /roles.
-Example:633edb2bfa0ecc1192c62190
-   </td>
-   <td>String, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>desktopLayouts
-   </td>
-   <td>Array of Objects which can find with GET /layouts. It contains the following details
-   </td>
-   <td>Optional
-   </td>
-  </tr>
-  <tr>
-   <td>id
-   </td>
-   <td>The desktop Layout Id.
-Example: ly-de35d82-7323-4420-b893-c35b5175c6c6
-   </td>
-   <td>String, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>isPreferredAgent
-   </td>
-   <td>It tells whether this is a preferred agent.
-   </td>
-   <td>Boolean, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>createDefaultLayoutAndAssign
-   </td>
-   <td>It tells whether to create and assign the default layout.
-   </td>
-   <td>Boolean, Optional
-   </td>
-  </tr>
-</table>
+| **PARAMETER**             | **DESCRIPTION**                                                                                                                   | **TYPE**             |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------------|------------------|
+| emaiId                | The Email Id of the agent.                                                                                                    | email, required |
+| firstName             | The First Name of the agent up to 50 characters long.                                                                         | string, required |
+| lastName              | The Last Name of the agent up to 50 characters long.                                                                          | string, required |
+| nickName              | The Nick Name of the agent up to 50 characters long.                                                                          | string, optional |
+| phoneNumber           | The Phone number of the agent.                                                                                                | string, required |
+| profImage             | The file Id of the profile image to be set.                                                                                   | string, optional |
+| agentGroupId          | The Id of the agent group which you can find with [GET /agent-groups](../contact-center/get-all-agent-groups.md). | string, required |
+| canSupportChat        | It tells whether the agent supports chat.                                                                                     | boolean, pptional |
+| canSupportVoice       | It tells whether the agent can support the voice chat.                                                                        | boolean, optional |
+| voiceLanguageSupport  | An array of Objects with the following details.                                                                              | array, required         |
+| language              | The Language supported.                                                                                                       | string, required |
+| proficiency           | The Proficiency level which can be: expert, novice, average, good.                                                            | string, required |
+| isActive              | It tells whether this support is active.                                                                                      | boolean, optional |
+| chatLanguageSupport   | Array of Objects with the following details.                                                                                 | array, required         |
+| language              | The Language supported.                                                                                                       | string, required |
+| proficiency           | The Proficiency level which can be: expert, novice, average, good.                                                            | string, required |
+| isActive              | It tells whether this support is active.                                                                                      | boolean, optional |
+| skills                | Array of Objects which you can find with [GET /skills](https://{{host}}/api/public/%7B%7BstreamId%7D%7D/skill-groups/%7B%7BskillGroupId%7D%7D/skills). | Required         |
+| skillId               | The Skill Id.                                                                                                                 | string, required |
+| proficiencyLevel      | The Proficiency level which can be: expert, novice, average, good.                                                            | string, required |
+| roleId                | The Role id which you can find with GET /roles.                                                                               | string, optional |
+| desktopLayouts        | Array of Objects which can find with GET /layouts. It contains the following details.                                          | optional         |
+| id                    | The desktop Layout Id.                                                                                                        | string, optional |
+| isPreferredAgent      | It tells whether this is a preferred agent.                                                                                   | boolean, optional |
+| createDefaultLayoutAndAssign | It tells whether to create and assign the default layout.                                                                 | boolean, optional |
 
 ## Sample Response
 
