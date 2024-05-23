@@ -1362,6 +1362,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Deploy an Agent
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1371,6 +1382,36 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#redeploy-an-agent-for-the-changes-in-the-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Redeploy an Agent for the Changes in the Flow
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2750,6 +2791,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#redeploy-an-agent-for-the-changes-in-the-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Redeploy an Agent for the Changes in the Flow
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2767,24 +2825,26 @@
 
 
 <h1 id="deploy-an-agent">Deploy an Agent<a class="headerlink" href="#deploy-an-agent" title="Permanent link">&para;</a></h1>
-<p>Once the flow-building process is completed and you have tested your flow, you can deploy your agents.</p>
+<p>After completing and testing your agent flow, you can deploy your agent. After the deployment, you can see the dedicated API endpoint created for the agent.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You cannot deploy your app if there are any errors and warnings. You have to fix the errors in the App flow section and then retry to deploy the app.</p>
+<p>Before deploying the agent, you must fix any errors or warnings in the Agent Flow.</p>
 </div>
-<p><strong>To deploy your app, follow these steps</strong>:</p>
+<p>Steps to deploy an agent and get its endpoint:</p>
 <ol>
 <li>
-<p>Click the <strong>Agents endpoint</strong> tab in the left panel.</p>
-<p><a class="glightbox" href="../images/deploy-an-agent.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/deploy-an-agent.png" alt="Deploy an Agent" title="Deploy an Agent" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Click <strong>Agent endpoint</strong> in the left navigation.<br />
+<a class="glightbox" href="../images/deploy-an-agent.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/deploy-an-agent.png" alt="Deploy an Agent" title="Deploy an Agent" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>Click <strong>Deploy model</strong>. The deployment of your model will start and after the deployment process is complete, you can find the API endpoint created for your agents. The API endpoint is available in 3 formats as shown in the following image. You can copy and use the same as required.</p>
-<p><a class="glightbox" href="../images/agents-endpoint.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agents-endpoint.png" alt="Agents Endpoint" title="Agents Endpoint" style="border: 1px solid gray; zoom:80%;"></a></p>
-<p>The Deployed version of your app is accessible from the <strong>Agent flow</strong> page. You can click the <strong>View the flow</strong> button to view your flow but will not be able to edit it.</p>
-<p><a class="glightbox" href="../images/deployed-version.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/deployed-version.png" alt="Deployed Version" title="Deployed Version" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Click <strong>Deploy</strong>. After the deployment, you can see the dedicated API endpoint created for your agent. The API endpoint is available in the following formats: <strong>curl</strong>, <strong>Python</strong>, and <strong>Node.js</strong>. You can copy the code and use it as needed.<br />
+<a class="glightbox" href="../images/agents-endpoint.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agents-endpoint.png" alt="Agents Endpoint" title="Agents Endpoint" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 </ol>
+<h2 id="redeploy-an-agent-for-the-changes-in-the-flow">Redeploy an Agent for the Changes in the Flow<a class="headerlink" href="#redeploy-an-agent-for-the-changes-in-the-flow" title="Permanent link">&para;</a></h2>
+<p>The Deployed version of your agent's flow is accessible from the <strong>Agent Flow</strong> page. You can click the <strong>View the Flow</strong> button to view the flow in read-only mode.<br />
+<a class="glightbox" href="../images/deployed-version.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/deployed-version.png" alt="Deployed Version" title="Deployed Version" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>You can change the in-development version of the flow. To redeploy the agent with the updated flow, click the <strong>Deploy</strong> button at the top-right corner of the <strong>Agent endpoint</strong> page. The redeployment doesn't change the agent's endpoint.  </p>
 
 
 

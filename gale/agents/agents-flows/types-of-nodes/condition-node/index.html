@@ -2830,9 +2830,9 @@
 <p>Condition Nodes allow you to create branches in a workflow, directing actions based on whether certain conditions are met. This helps control the flow’s execution.</p>
 <p>The node can handle three types of conditions:</p>
 <ul>
-<li><strong>If</strong>: Directs the flow to a specific path if certain criteria (Entity, Context, or Value) are met.</li>
+<li><strong>If</strong>: Directs the flow to a specific path if certain criteria (Node, Context, or Value) are met.</li>
 <li><strong>Else</strong>: Sets the node connection when no condition is met, allowing you to configure the next node to connect to.</li>
-<li><strong>Else If</strong>: Allows you to configure another set of criteria (Entity, Context, or Value) to be met when the initial If condition is not satisfied.</li>
+<li><strong>Else If</strong>: Allows you to configure another set of criteria (Node, Context, or Value) to be met when the initial If condition is not satisfied.</li>
 </ul>
 <h2 id="add-and-configure-a-condition-node">Add and Configure a Condition Node<a class="headerlink" href="#add-and-configure-a-condition-node" title="Permanent link">&para;</a></h2>
 <p>Setting up a Condition node in an Agent Flow involves adding the node at the appropriate location in the flow and configuring various node properties, as explained below.</p>
@@ -2853,7 +2853,7 @@
 <ul>
 <li><strong>Custom Name</strong>: Enter an appropriate name for the node.</li>
 <li>
-<p><strong>If/Else Condition</strong>: Define the IF ELSE/ELSE IF conditions using context variables and the AND/OR operator. You can use Entity, Context, or Value.</p>
+<p><strong>If/Else Condition</strong>: Define the IF ELSE/ELSE IF conditions using context variables and the AND/OR operator. You can use Node, Context, or Value.</p>
 <ol>
 <li>
 <p>In the <strong>IF</strong> section, select the context variable you want to use - enter "{{context." and select the node/variable from the list and then close the braces with "}}".<br />
