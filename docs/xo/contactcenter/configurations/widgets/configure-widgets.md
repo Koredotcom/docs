@@ -1,10 +1,10 @@
 # Widgets
 
-SmartAssist allows you to integrate external systems and pages into the Agent Console. Agents can use widgets from within custom [Agent Console Layouts](https://docs.kore.ai/smartassist/console/manage-layout/).
+SmartAssist allows you to integrate external systems and pages into the Agent Console. Agents can use widgets from within custom [Agent Console Layouts](../../../console/manage-layout/manage-layout.md).
 
 !!! Note
 
-    For widgets to load properly within the agent console, you may need to set up permissions to allow “smartassist.kore.ai’ to access the application or page you want to integrate. 
+    For widgets to load properly within the agent console, you may need to set up permissions to allow “platform.kore.ai’ to access the application or page you want to integrate. 
 
 # Add a Widget
 
@@ -51,7 +51,7 @@ To delete an existing widget, find it in the list of _External Widgets_, then cl
 
 # Add a Widget to an Agent Console Layout
 
-Once you save an external widget, you can add it to the Agent Console using the [Manage Layout](https://docs.kore.ai/smartassist/console/manage-layout/) feature.
+Once you save an external widget, you can add it to the Agent Console using the [Manage Layout](../../../console/manage-layout/manage-layout.md) feature.
 
 To add a widget to an _Agent Console Layout_, follow these steps:
 
