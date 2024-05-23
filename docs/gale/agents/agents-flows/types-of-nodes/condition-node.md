@@ -4,9 +4,9 @@ Condition Nodes allow you to create branches in a workflow, directing actions ba
 
 The node can handle three types of conditions:
 
-* **If**: Directs the flow to a specific path if certain criteria (Entity, Context, or Value) are met.
+* **If**: Directs the flow to a specific path if certain criteria (Node, Context, or Value) are met.
 * **Else**: Sets the node connection when no condition is met, allowing you to configure the next node to connect to.
-* **Else If**: Allows you to configure another set of criteria (Entity, Context, or Value) to be met when the initial If condition is not satisfied.
+* **Else If**: Allows you to configure another set of criteria (Node, Context, or Value) to be met when the initial If condition is not satisfied.
 
 ## Add and Configure a Condition Node
 
@@ -24,7 +24,7 @@ Steps to add and configure the node:
 4. Enter or select the following information:
     
     * **Custom Name**: Enter an appropriate name for the node.
-    * **If/Else Condition**: Define the IF ELSE/ELSE IF conditions using context variables and the AND/OR operator. You can use Entity, Context, or Value.
+    * **If/Else Condition**: Define the IF ELSE/ELSE IF conditions using context variables and the AND/OR operator. You can use Node, Context, or Value.
         1. In the **IF** section, select the context variable you want to use - enter "{{context." and select the node/variable from the list and then close the braces with "}}".  
         <img src="../images/if-condition-context-variable-selection.png" alt="Using Context Variable" title="Using Context Variable" style="border: 1px solid gray; zoom:80%;">
         

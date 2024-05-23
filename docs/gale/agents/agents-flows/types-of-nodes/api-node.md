@@ -29,7 +29,7 @@ Steps to add and configure the node:
         4. The **Body** tab is displayed for all request types except GET. Select the body content type from the drop-down list:
             * application/x-www-form-urlencoded: Allows file uploads through HTTP POST requests. Add key/value pairs encoded by the platform.
             * application/json: Transmits data between servers and web applications using JSON format without processing.
-            * application/xml: Sends XML payload for SOAP services via POST methods, with the option to include entity node values.
+            * application/xml: Sends XML payload for SOAP services via POST methods, with the option to include node values.
             * Custom: Allows sending request payload in non-standard formats, such as for handling blogs or custom variables. 
         5. Click the **Test** button at the top-right corner of the dialog. The API response will appear on the **Response** tab.
         6. Click **Save** at the top-right corner of the dialog.
