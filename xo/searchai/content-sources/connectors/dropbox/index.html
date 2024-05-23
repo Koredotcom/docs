@@ -5233,6 +5233,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#authorization-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authorization Support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#step-1-configure-an-application-in-the-dropbox-account" class="md-nav__link">
     <span class="md-ellipsis">
       Step 1: Configure an application in the Dropbox Account
@@ -5242,9 +5251,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-configuring-the-dropbox-connector-in-the-searchassist-application" class="md-nav__link">
+  <a href="#step-2-configuring-the-dropbox-connector-in-the-search-ai-application" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Configuring the Dropbox connector in the SearchAssist application
+      Step 2: Configuring the Dropbox connector in the Search AI application
     </span>
   </a>
   
@@ -5287,7 +5296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../servicenow/" class="md-nav__link">
+      <a href="../../servicenow.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5902,7 +5911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../contactcenter/configurations/email-inbox-config/configure-emails/" class="md-nav__link">
+      <a href="../../../../contactcenter/configurations/email-inbox-config/configure-emails.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9528,64 +9537,16 @@
   
   
   
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="../../../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_3_1_3_2" id="__nav_7_3_1_3_2_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Contact Center APIs
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_1_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3_1_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Contact Center APIs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    API List
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -12331,6 +12292,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#authorization-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authorization Support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#step-1-configure-an-application-in-the-dropbox-account" class="md-nav__link">
     <span class="md-ellipsis">
       Step 1: Configure an application in the Dropbox Account
@@ -12340,9 +12310,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-configuring-the-dropbox-connector-in-the-searchassist-application" class="md-nav__link">
+  <a href="#step-2-configuring-the-dropbox-connector-in-the-search-ai-application" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Configuring the Dropbox connector in the SearchAssist application
+      Step 2: Configuring the Dropbox connector in the Search AI application
     </span>
   </a>
   
@@ -12391,10 +12361,11 @@ Note: Password-protected files in any format are not supported
   </tr>
 </table>
 
-<p>To configure the Dropbox Connector:</p>
+<h2 id="authorization-support">Authorization Support<a class="headerlink" href="#authorization-support" title="Permanent link">&para;</a></h2>
+<p>Search AI supports <strong>OAuth 2.0 Authorization Code Grant Type</strong> mechanism for Dropbox. To configure the Dropbox Connector:</p>
 <ul>
 <li>Configure an application in your Dropbox account with appropriate permissions.</li>
-<li>Configure the Dropbox connector in the SearchAssist application.</li>
+<li>Configure the Dropbox connector in the Search AI application.</li>
 </ul>
 <h2 id="step-1-configure-an-application-in-the-dropbox-account">Step 1: Configure an application in the Dropbox Account<a class="headerlink" href="#step-1-configure-an-application-in-the-dropbox-account" title="Permanent link">&para;</a></h2>
 <p>To create an application in the Dropbox account, log in to the <a href="https://www.dropbox.com/developers/apps">Dropbox Developer Portal</a>. Create a new app. On the Create app widget, under Choose an API, select Scoped access and select the type of access you need. </p>
@@ -12408,12 +12379,12 @@ Note: Password-protected files in any format are not supported
 </ul>
 <p><a class="glightbox" href="../images/dropbox/permissions-types.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Permissions" src="../images/dropbox/permissions-types.png" title="Permissions" /></a></p>
 <p>Set the Redirect URIs under the Settings tab to the following URL.</p>
-<p>SearchAssist Prod Redirect URI : <a href="https://idp.kore.com/workflows/callback?__hstc=59894770.28210ac89bd49725c54c92ebeabe794b.1663135555706.1715330815958.1715335858461.699&amp;__hssc=59894770.2.1715335858461&amp;__hsfp=659442714">https://idp.kore.com/workflows/callback</a></p>
+<p>Search AI Prod Redirect URI : <a href="https://idp.kore.com/workflows/callback?__hstc=59894770.28210ac89bd49725c54c92ebeabe794b.1663135555706.1715330815958.1715335858461.699&amp;__hssc=59894770.2.1715335858461&amp;__hsfp=659442714">https://idp.kore.com/workflows/callback</a></p>
 <p><a class="glightbox" href="../images/dropbox/redirect-url.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Redirect URL" src="../images/dropbox/redirect-url.png" title="Redirect URI" /></a></p>
-<p>Save the <strong>App key</strong> and <strong>App secret</strong> displayed on this page. These credentials are required for the configuration of the Dropbox connector in the SearchAssist application. </p>
+<p>Save the <strong>App key</strong> and <strong>App secret</strong> displayed on this page. These credentials are required for the configuration of the Dropbox connector in the Search AI application. </p>
 <p><a class="glightbox" href="../images/dropbox/app-credentials.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="App credentials" src="../images/dropbox/app-credentials.png" title="App Credentials" /></a></p>
-<h2 id="step-2-configuring-the-dropbox-connector-in-the-searchassist-application">Step 2: Configuring the Dropbox connector in the SearchAssist application<a class="headerlink" href="#step-2-configuring-the-dropbox-connector-in-the-searchassist-application" title="Permanent link">&para;</a></h2>
-<p>To complete the integration, log in to your Search AI application. Go to the Connectors under the Sources and select <strong>Dropbox</strong> connector.  Provide the following config parameters on the <strong>Authorization</strong> tab and click Connect. </p>
+<h2 id="step-2-configuring-the-dropbox-connector-in-the-search-ai-application">Step 2: Configuring the Dropbox connector in the Search AI application<a class="headerlink" href="#step-2-configuring-the-dropbox-connector-in-the-search-ai-application" title="Permanent link">&para;</a></h2>
+<p>To complete the integration, log in to your Search AI application. Go to the <strong>Connectors</strong> under the <strong>Sources</strong> and select <strong>Dropbox</strong> connector.  Provide the following config parameters on the <strong>Authorization</strong> tab and click <strong>Connect</strong>. </p>
 <ul>
 <li>Name – Unique name for the connector </li>
 <li>Authorization Type - Set to OAuth 2.0</li>

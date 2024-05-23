@@ -5204,7 +5204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/servicenow/" class="md-nav__link">
+      <a href="../../../searchai/content-sources/servicenow.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5816,7 +5816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails/" class="md-nav__link">
+      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9442,64 +9442,16 @@
   
   
   
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="../contact-center-api-list/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_3_1_3_2" id="__nav_7_3_1_3_2_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Contact Center APIs
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_1_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3_1_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Contact Center APIs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../contact-center-api-list/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    API List
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -12301,81 +12253,64 @@
 <h1 id="create-a-skill"><strong>Create a Skill</strong><a class="headerlink" href="#create-a-skill" title="Permanent link">&para;</a></h1>
 <p>To add a skill with the given Stream Id and Skill Group ID.</p>
 <table>
-  <tr>
-   <td>Method
-   </td>
-   <td>POST
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoint
-   </td>
-   <td><code>https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups/{{skillGroupId}}/skills</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>SmartAssist Analytics
-   </td>
-  </tr>
+<thead>
+<tr>
+<th><strong>METHOD</strong></th>
+<th><strong>POST</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Endpoint</strong></td>
+<td><code>https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups/{{skillGroupId}}/skills</code></td>
+</tr>
+<tr>
+<td><strong>Content Type</strong></td>
+<td><code>application/json</code></td>
+</tr>
+<tr>
+<td><strong>Authorization</strong></td>
+<td><code>auth: {{JWT}}</code> <br>See <a href="../../automation/api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a></td>
+</tr>
+<tr>
+<td><strong>API Scope</strong></td>
+<td>SmartAssist Analytics</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="path-parameters">Path Parameters<a class="headerlink" href="#path-parameters" title="Permanent link">&para;</a></h2>
 <table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL, for example, https://smartassist.kore.ai
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>BotId
-   </td>
-   <td>BotId or StreamId. You can access it from the General Settings page of the bot.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>skillGroupId
-   </td>
-   <td>Id of the Skill Group.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
+<thead>
+<tr>
+<th><strong>PARAMETER</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+<th><strong>TYPE</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>host</td>
+<td>Environment URL, for example, <a href="https://platform.kore.ai">https://platform.kore.ai</a></td>
+<td>string, required</td>
+</tr>
+<tr>
+<td>BotId</td>
+<td>BotId or StreamId. You can access it from the General Settings page of the bot.</td>
+<td>string, required</td>
+</tr>
+<tr>
+<td>skillGroupId</td>
+<td>Id of the Skill Group.</td>
+<td>string, required</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="sample-request">Sample Request<a class="headerlink" href="#sample-request" title="Permanent link">&para;</a></h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request POST \
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>     &#39;https://{{host}}/agentassist/api/v1/public/{{streamId}}/skill-groups/{{skillGroupId}}/skills&#39;
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>      --header &#39;auth: {jwt-code}&#39; \
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>      --header &#39;Content-Type: application/json&#39; \
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>      --data-raw &#39;{
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>      --data-raw &#39;
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    {
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
@@ -12392,67 +12327,46 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
 </span></code></pre></div>
 <h2 id="body-parameters">Body Parameters<a class="headerlink" href="#body-parameters" title="Permanent link">&para;</a></h2>
 <table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>name
-   </td>
-   <td>Name of the skill.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>description
-   </td>
-   <td>Brief description of the skill up to 200 characters.
-   </td>
-   <td>String, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>skillGroupId
-   </td>
-   <td>Id of the skill Group which you can find with <a href="https://docs.kore.ai/smartassist/api/get-a-skill-group/">GET /skill-groups</a>.
-Example: sg-4372
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>agents
-   </td>
-   <td>An Array of Objects with the following details
-   </td>
-   <td>Optional
-   </td>
-  </tr>
-  <tr>
-   <td>userId
-   </td>
-   <td>This is the user Id that you can find with <a href="https://docs.kore.ai/smartassist/api/list-all-agents/">GET /agents</a> .
-   </td>
-   <td>String, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>proficiencyLevel
-   </td>
-   <td>The Proficiency level can be:
-expert, novice, average, good
-Example: ‘expert’
-   </td>
-   <td>String, Optional
-   </td>
-  </tr>
+<thead>
+<tr>
+<th><strong>PARAMETER</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+<th><strong>TYPE</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>Name of the skill.</td>
+<td>string, required</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Brief description of the skill up to 200 characters.</td>
+<td>string, optional</td>
+</tr>
+<tr>
+<td>skillGroupId</td>
+<td>Id of the skill Group which you can find with <a href="../get-a-skill-group/">GET /skill-groups</a>. For example, sg-4372</td>
+<td>string, required</td>
+</tr>
+<tr>
+<td>agents</td>
+<td>An Array of Objects with the following details</td>
+<td>array, optional</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>This is the user Id that you can find with <a href="../list-all-agents/">GET /agents</a>.</td>
+<td>string, optional</td>
+</tr>
+<tr>
+<td>proficiencyLevel</td>
+<td>The Proficiency level can be: expert, novice, average, good. Example: ‘expert’</td>
+<td>string, optional</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="sample-response">Sample Response<a class="headerlink" href="#sample-response" title="Permanent link">&para;</a></h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a> {
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    &quot;id&quot;: &quot;sk-87679&quot;,

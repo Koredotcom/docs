@@ -5212,7 +5212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/servicenow/" class="md-nav__link">
+      <a href="../../../searchai/content-sources/servicenow.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5824,7 +5824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails/" class="md-nav__link">
+      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9450,64 +9450,16 @@
   
   
   
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="../../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_3_1_3_2" id="__nav_7_3_1_3_2_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Contact Center APIs
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_1_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3_1_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Contact Center APIs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    API List
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -12388,13 +12340,13 @@
 
 
 <h1 id="redacting-personally-identifiable-information">Redacting Personally Identifiable Information<a class="headerlink" href="#redacting-personally-identifiable-information" title="Permanent link">&para;</a></h1>
-<p>Personally identifiable information (PII), or sensitive personal information (SPI), refers to information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Some examples of PII include Social Security Number, email address, credit card numbers, passport number, home address, and so forth.</p>
-<p>Kore.ai allows you to redact any sensitive information that users share with your bots. When you enable redaction for an information type, you can transform its value into a pattern that doesn’t contain comprehensible data. Any end user input that matches the PII pattern gets redacted by the platform in the context object, chat logs and all other places.</p>
-<p>There are a few scenarios where the original value can be used to achieve the business needs.</p>
+<p>Personally identifiable information (PII) or sensitive personal information (SPI) refers to information that can be used alone or in conjunction with other information to identify, contact, or locate a single person or to identify an individual in context. Some examples of PII include Social Security Numbers, email addresses, credit card numbers, passport numbers, home addresses, and so forth.</p>
+<p>Kore.ai allows you to redact any sensitive information that users share with your bots. When you enable redaction for an information type, you can transform its value into a pattern that doesn’t contain comprehensible data. The platform redacts any end-user input that matches the PII pattern in the context object, chat logs, chat history, and other places to protect sensitive data.</p>
+<p>The original values are stored in a secure vault and can be used in a few scenarios to achieve business needs.  </p>
 <ul>
-<li>If a PII value is used in Dialog Task transitions, the platform automatically uses the original value for the transition condition evaluation.</li>
-<li>If a PII value is used in the Service Node definition, the platform uses the redacted value by default to make the service calls. You can choose to send the original data using the ‘De-identification of PII data’ configuration of the Service Node. Refer to the <a href="../../../automation/use-cases/dialogs/node-types/working-with-the-service-node" target="_blank">Service Node </a>post for more details</li>
-<li>You may use the Redaction of PII Data configuration of the Entity Nodes to present the original values of a redacted entity value to the users. Refer to the <a href="../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node" target="_blank">Entity Node</a> post for more details.</li>
+<li>If a PII value is used in Dialog Task transitions, the platform automatically uses the original value for the transition condition evaluation, such as validating the entity value's format (for example,  checking if it is a valid number).</li>
+<li>If a PII value is used in the Service Node definition, the platform uses the redacted value by default to make the service calls. You can choose to send the original data using the ‘De-identification of PII data’ configuration of the Service Node for scenarios like passing this value to the backend system for further processing. Refer to the <a href="../../../automation/use-cases/dialogs/node-types/working-with-the-service-node" target="_blank">Service Node </a>post for more details.</li>
+<li>You may use the Redaction of PII Data configuration of the Entity Nodes to present the original values of a redacted entity value to the users for confirmation. Refer to the <a href="../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node" target="_blank">Entity Node</a> post for more details.</li>
 </ul>
 <p>The platform provides the following three modes to redact specified information types:</p>
 <table border="1">

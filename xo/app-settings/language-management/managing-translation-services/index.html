@@ -5212,7 +5212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/servicenow/" class="md-nav__link">
+      <a href="../../../searchai/content-sources/servicenow.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5824,7 +5824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails/" class="md-nav__link">
+      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9450,64 +9450,16 @@
   
   
   
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="../../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_3_1_3_2" id="__nav_7_3_1_3_2_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Contact Center APIs
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_1_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3_1_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Contact Center APIs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    API List
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -12453,10 +12405,15 @@
 <ol>
 <li>Go to <strong>App Settings &gt; Language Management &gt; Translation Configurations</strong>.</li>
 <li>Select <strong>Google Translator</strong>.</li>
-<li>Provide the <strong>API Key</strong> of your Google Translation API service. <a href="https://cloud.google.com/translate" target="_blank">Learn More.</a></li>
+<li>Provide the <strong>API Key</strong> (Eg: AIzaXXXXXXXXXXXXXXXXXXXEpeW4xa0) of your Google Translation API service in the <strong>Access Key</strong> field <a href="https://cloud.google.com/translate" target="_blank">Learn More.</a><ul>
+<li><strong>Note</strong> that the Platform does not validate the key. It is highly recommended that the key is <strong>validated beforehand and is active and working</strong>. A tool like Postman can be used to validate the key.</li>
+<li>You can also save the translator key in an <strong>environment / content variable</strong> and provide that variable name enclosed in double curly braces while setting up the configuration.</li>
+</ul>
+</li>
 <li>Click <strong>Save</strong> to complete the setup.</li>
 </ol>
 <p><a class="glightbox" href="../images/mts-img2-google-translation-config-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/mts-img2-google-translation-config-1.png" alt="Translation configurations - Google" title="Translation Configurations - Google" style="border: 1px solid gray;zoom:50%;"/></a></p>
+<p>To know how to use the service, please visit <a href="../../../apis/automation/koreutil-libraries/#koreutilautotranslate" target="_blank">KoreUtil Libraries – autoTranslate.</a></p>
 <h2 id="configuring-custom-translation-service">Configuring Custom Translation Service<a class="headerlink" href="#configuring-custom-translation-service" title="Permanent link">&para;</a></h2>
 <p>The <strong>Custom Translation Service</strong> allows you to use translation services by integrating with other translation providers or to integrate with any in-house translation services you may have.</p>
 <h3 id="how-it-works">How it works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h3>

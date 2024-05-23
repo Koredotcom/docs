@@ -4651,15 +4651,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#answer-from-documents" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer from Documents
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#ranking-and-resolver" class="md-nav__link">
     <span class="md-ellipsis">
       Ranking and Resolver
@@ -5451,7 +5442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/servicenow/" class="md-nav__link">
+      <a href="../../../searchai/content-sources/servicenow.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6063,7 +6054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails/" class="md-nav__link">
+      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9689,64 +9680,16 @@
   
   
   
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="../../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_3_1_3_2" id="__nav_7_3_1_3_2_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Contact Center APIs
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_1_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3_1_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Contact Center APIs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    API List
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -12584,15 +12527,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#answer-from-documents" class="md-nav__link">
-    <span class="md-ellipsis">
-      Answer from Documents
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#ranking-and-resolver" class="md-nav__link">
     <span class="md-ellipsis">
       Ranking and Resolver
@@ -12702,7 +12636,7 @@
 <ul>
 <li><a href="../../natural-language/training/machine-learning-engine" target="_blank">Machine Learning</a> engine, </li>
 <li><a href="../../natural-language/training/fundamental-meaning" target="_blank">Fundamental Meaning</a> engine,</li>
-<li><a href="../../../answers/knowledge-ai/knowledge-ai-introduction" target="_blank">Knowledge AI</a>, including the <a href="../../../answers/knowledge-ai/knowledge-graph-training" target="_blank">Knowledge Graph</a> engine and the <a href="../../../answers/answer-from-documents" target="_blank">Answer from Documents</a> feature,</li>
+<li><a href="../../../answers/knowledge-ai/knowledge-ai-introduction" target="_blank">Knowledge AI</a>, including the <a href="../../../answers/knowledge-ai/knowledge-graph-training" target="_blank">Knowledge Graph</a> engine,</li>
 <li><a href="../../natural-language/training/ranking-and-resolver" target="_blank">Ranking and Resolver</a>.</li>
 </ul>
 <div class="admonition note">
@@ -12791,18 +12725,6 @@ Clicking the <strong>Processed Utterance</strong> shows how the user utterance w
 <p>If the VA includes a Knowledge Graph, the user utterances are processed to extract the terms and are mapped with the Knowledge Graph to fetch the relevant paths. All the paths containing more than a preset threshold of the number of terms get shortlisted for further screening. Path with 100% terms covered and having a similar FAQ in the path is considered a perfect match.</p>
 <p>In case the utterance triggers a dialog (as per run a dialog option in KG), the same is displayed as <em>matched intent</em> and <em>matched utterance</em>. You can further train the VA as you would for an intent from ML or FM engine. <a href="../../../answers/knowledge-ai/knowledge-graph-training" target="_blank">Know more about Knowledge Graph Training from here</a>.<br />
 <a class="glightbox" href="../images/utterance-testing-11-testing-kg.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/utterance-testing-11-testing-kg.png" alt="Knowledge Graph" title="Knowledge Graph" style="border: 1px solid gray; zoom:50%;"/></a></p>
-<h4 id="answer-from-documents">Answer from Documents<a class="headerlink" href="#answer-from-documents" title="Permanent link">&para;</a></h4>
-<p>If you have enabled <a href="../../../answers/answer-from-documents" target="_blank">Answer from Documents</a> for your VA, and a match is found within your uploaded documents, you will see results for this match, provided the intent is not identified using any other method (a dialog task, a Knowledge Graph FAQ, the Machine Learning or the Fundamental Meaning engine).</p>
-<p>When an utterance is answered from a document, you will see a note mentioning that no Intent was identified by the ML, FM, and KG engines. Click <a href="../../../answers/knowledge-ai/manage-faqs" target="_blank">Add to KG</a> to add an FAQ to the Knowledge Graph to address the utterance and improve intent identification. </p>
-<p>When the <em>Answer from Document</em> feature is used in reply to a test utterance, the following information is provided:</p>
-<ol>
-<li>The document from which the answer has been retrieved;</li>
-<li>An option to view this document;</li>
-<li>The page where the answer has been identified;</li>
-<li>A similarity score between the tested utterance and the top-matched document;</li>
-<li>The content of the answer.</li>
-</ol>
-<p><a class="glightbox" href="../images/answer-from-doc-feature.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/answer-from-doc-feature.png" alt="Answer from Document" title="Answer from Document" style="border: 1px solid gray; zoom:50%;"/></a></p>
 <h4 id="ranking-and-resolver">Ranking and Resolver<a class="headerlink" href="#ranking-and-resolver" title="Permanent link">&para;</a></h4>
 <p>Ranking and Resolver determines the final winner of the entire NLP computation. If either the ML model or the Knowledge Graph find a perfect match, the ranking and resolver doesn’t re-score the intent and presents it as a matched intent. Even if there are multiple perfect matches, they will be presented as options to the developers from which they can choose.</p>
 <p>The Ranking and Resolver re-scores all the other good and unsure matches identified by the three models using the Fundamental Meaning model. After re-scoring, if the final score of an intent crosses a certain threshold, it too is considered as a match.</p>

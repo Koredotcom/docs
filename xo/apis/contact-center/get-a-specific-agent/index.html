@@ -5204,7 +5204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/servicenow/" class="md-nav__link">
+      <a href="../../../searchai/content-sources/servicenow.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5816,7 +5816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails/" class="md-nav__link">
+      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9442,64 +9442,16 @@
   
   
   
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="../contact-center-api-list/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_3_1_3_2" id="__nav_7_3_1_3_2_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Contact Center APIs
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_1_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3_1_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Contact Center APIs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../contact-center-api-list/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    API List
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -12310,67 +12262,53 @@
 <h1 id="get-a-specific-agent">Get a Specific Agent<a class="headerlink" href="#get-a-specific-agent" title="Permanent link">&para;</a></h1>
 <p>To retrieve the details of a particular agent with the given stream Id and agent Id.</p>
 <table>
-  <tr>
-   <td>Method
-   </td>
-   <td>GET
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoint
-   </td>
-   <td><code>https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/{{agentId}}</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content-Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>SmartAssist Analytics
-   </td>
-  </tr>
+<thead>
+<tr>
+<th><strong>Method</strong></th>
+<th>GET</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Endpoint</strong></td>
+<td><code>https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/{{agentId}}</code></td>
+</tr>
+<tr>
+<td><strong>Content Type</strong></td>
+<td><code>application/json</code></td>
+</tr>
+<tr>
+<td><strong>Authorization</strong></td>
+<td><code>auth: {{JWT}}</code><br>See <a href="../../automation/api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a></td>
+</tr>
+<tr>
+<td><strong>API Scope</strong></td>
+<td>SmartAssist Analytics</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="path-parameters">Path Parameters<a class="headerlink" href="#path-parameters" title="Permanent link">&para;</a></h2>
 <table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL, for example, https://smartassist.kore.ai
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>StreamId
-   </td>
-   <td>BotId or StreamId. You can access it from the General Settings page of the bot.
-   </td>
-   <td>string, required
-   </td>
-  </tr>
+<thead>
+<tr>
+<th><strong>PARAMETER</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+<th><strong>TYPE</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>host</td>
+<td>Environment URL, for example, <a href="https://platform.kore.ai">https://platform.kore.ai</a></td>
+<td>string, required</td>
+</tr>
+<tr>
+<td>StreamId</td>
+<td>BotId or StreamId. You can access it from the General Settings page of the bot.</td>
+<td>string, required</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="sample-request">Sample Request<a class="headerlink" href="#sample-request" title="Permanent link">&para;</a></h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request GET\
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>     &#39;https://{{host}}/agentassist/api/v1/public/{{streamId}}/agents/{{agentId}}&#39;
@@ -12379,24 +12317,21 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
 </span></code></pre></div>
 <h2 id="query-parameter">Query Parameter<a class="headerlink" href="#query-parameter" title="Permanent link">&para;</a></h2>
 <table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>agentId
-   </td>
-   <td>The Agent Id of the particular agent whose details are being retrieved. You can get this from agents GET API.
-   </td>
-   <td>string, required
-   </td>
-  </tr>
+<thead>
+<tr>
+<th><strong>PARAMETER</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+<th><strong>TYPE</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>agentId</td>
+<td>The Agent Id of the particular agent whose details are being retrieved. You can get this from agents GET API.</td>
+<td>string, required</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="sample-response">Sample Response<a class="headerlink" href="#sample-response" title="Permanent link">&para;</a></h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    &quot;isAccountOwner&quot;: false,
@@ -12435,13 +12370,13 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
 </span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>    ],
 </span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>    &quot;fullName&quot;: &quot;agent 1&quot;,
 </span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>    &quot;lFullName&quot;: &quot;agent 1&quot;,
-</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>    &quot;userId&quot;: &quot;u-edc0304d-05b5-5350-98da-c9748eda79f9&quot;,
-</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>    &quot;accountId&quot;: &quot;6457f21044e2ab580af1dff6&quot;,
-</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>    &quot;createdBy&quot;: &quot;u-042a7093-8178-547a-ab50-364a239b2226&quot;,
-</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>    &quot;orgId&quot;: &quot;o-0a4dcb56-5d8e-5bfa-86fc-1294e829f62e&quot;,
+</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>    &quot;userId&quot;: &quot;u-edc0304d-05b5-5350-98da-c9748edaxxxx&quot;,
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>    &quot;accountId&quot;: &quot;6457f21044e2ab580af1xxxx&quot;,
+</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>    &quot;createdBy&quot;: &quot;u-042a7093-8178-547a-ab50-364a239bxxxx&quot;,
+</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>    &quot;orgId&quot;: &quot;o-0a4dcb56-5d8e-5bfa-86fc-1294e829xxxx&quot;,
 </span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>    &quot;agentGroups&quot;: [
 </span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a>        {
-</span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>            &quot;groupId&quot;: &quot;ag-aa690c9-1a2b-4926-aa7e-2511e5e414d1&quot;,
+</span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>            &quot;groupId&quot;: &quot;ag-aa690c9-1a2b-4926-aa7e-2511e5e4xxxx&quot;,
 </span><span id="__span-1-45"><a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a>            &quot;role&quot;: &quot;agent&quot;,
 </span><span id="__span-1-46"><a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a>            &quot;name&quot;: &quot;grp2&quot;
 </span><span id="__span-1-47"><a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a>        }
@@ -12451,13 +12386,13 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
 </span><span id="__span-1-51"><a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a>    &quot;updatedAt&quot;: &quot;2023-05-23T10:20:19.178Z&quot;,
 </span><span id="__span-1-52"><a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a>    &quot;onlineStatus&quot;: &quot;Offline&quot;,
 </span><span id="__span-1-53"><a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a>    &quot;onlineStatusType&quot;: &quot;OFFLINE&quot;,
-</span><span id="__span-1-54"><a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a>    &quot;id&quot;: &quot;a-953e380-2bc1-483a-a823-d9446806cc93&quot;,
+</span><span id="__span-1-54"><a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a>    &quot;id&quot;: &quot;a-953e380-2bc1-483a-a823-d9446806xxxx&quot;,
 </span><span id="__span-1-55"><a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a>    &quot;nickName&quot;: &quot;1&quot;,
 </span><span id="__span-1-56"><a id="__codelineno-1-56" name="__codelineno-1-56" href="#__codelineno-1-56"></a>    &quot;role&quot;: &quot;Supervisor&quot;,
 </span><span id="__span-1-57"><a id="__codelineno-1-57" name="__codelineno-1-57" href="#__codelineno-1-57"></a>    &quot;skills&quot;: [],
 </span><span id="__span-1-58"><a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a>    &quot;queues&quot;: [
 </span><span id="__span-1-59"><a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a>        {
-</span><span id="__span-1-60"><a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a>            &quot;id&quot;: &quot;qu-d1c05a4-99e5-4688-9156-897c959d68b3&quot;,
+</span><span id="__span-1-60"><a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a>            &quot;id&quot;: &quot;qu-d1c05a4-99e5-4688-9156-897c959dxxxx&quot;,
 </span><span id="__span-1-61"><a id="__codelineno-1-61" name="__codelineno-1-61" href="#__codelineno-1-61"></a>            &quot;name&quot;: &quot;queueuueue&quot;,
 </span><span id="__span-1-62"><a id="__codelineno-1-62" name="__codelineno-1-62" href="#__codelineno-1-62"></a>            &quot;description&quot;: &quot;quieuueue&quot;,
 </span><span id="__span-1-63"><a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a>            &quot;isPreferredAgent&quot;: true
@@ -12467,286 +12402,185 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
 </span></code></pre></div>
 <h2 id="response-body-parameters">Response Body Parameters<a class="headerlink" href="#response-body-parameters" title="Permanent link">&para;</a></h2>
 <table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>isAccountOwner
-   </td>
-   <td>Indicates whether the user is the account owner.
-   </td>
-   <td>boolean
-   </td>
-  </tr>
-  <tr>
-   <td>attachmentsEnabled
-   </td>
-   <td>Indicates whether attachments are enabled for the agent.
-   </td>
-   <td>boolean
-   </td>
-  </tr>
-  <tr>
-   <td>emojisEnabled
-   </td>
-   <td>Indicates whether emojis are enabled for the agent.
-   </td>
-   <td>boolean
-   </td>
-  </tr>
-  <tr>
-   <td>status
-   </td>
-   <td>The status of the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>firstName
-   </td>
-   <td>The first name of the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>lastName
-   </td>
-   <td>The last name of the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>phoneNumber
-   </td>
-   <td>The phone number of the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>emailId
-   </td>
-   <td>The email ID of the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>customId
-   </td>
-   <td>The custom ID associated with the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>profImage
-   </td>
-   <td>The profile image of the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>canSupportChat
-   </td>
-   <td>Indicates whether the agent can support chat.
-   </td>
-   <td>boolean
-   </td>
-  </tr>
-  <tr>
-   <td>maxChatSupport
-   </td>
-   <td>The maximum number of chat sessions the agent can support.
-   </td>
-   <td>integer
-   </td>
-  </tr>
-  <tr>
-   <td>roleId
-   </td>
-   <td>The ID of the role assigned to the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>chatLanguageSupport
-   </td>
-   <td>The chat languages supported by the agent.
-   </td>
-   <td>array
-   </td>
-  </tr>
-  <tr>
-   <td>canSupportVoice
-   </td>
-   <td>Indicates whether the agent can support voice calls.
-   </td>
-   <td>boolean
-   </td>
-  </tr>
-  <tr>
-   <td>voiceLanguageSupport
-   </td>
-   <td> The voice languages supported by the agent.
-   </td>
-   <td>array
-   </td>
-  </tr>
-  <tr>
-   <td>desktopLayouts
-   </td>
-   <td>The desktop layout details of the agent.
-   </td>
-   <td>array
-   </td>
-  </tr>
-  <tr>
-   <td>fullName
-   </td>
-   <td>The full name of the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>lFullName
-   </td>
-   <td>The localized full name of the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>userId
-   </td>
-   <td>The user ID of the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>accountId
-   </td>
-   <td> The ID of the account associated with the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>createdBy
-   </td>
-   <td>The ID of the user who created the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>orgId
-   </td>
-   <td>The ID of the organization associated with the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>agentGroups
-   </td>
-   <td>The agent group details associated with the agent.
-   </td>
-   <td>array
-   </td>
-  </tr>
-  <tr>
-   <td>lastOnlineAt
-   </td>
-   <td>The timestamp when the agent was last online.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>createdAt
-   </td>
-   <td> The creation time of the interaction.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>updatedAt
-   </td>
-   <td>The last updated time of the interaction.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>onlineStatus
-   </td>
-   <td>The online status of the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>onlineStatusType
-   </td>
-   <td>The online status type of the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>id
-   </td>
-   <td>The ID of the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>nickName
-   </td>
-   <td>The nick name of the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>role
-   </td>
-   <td>The role of the agent.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>skills
-   </td>
-   <td>The skills assigned to the agent.
-   </td>
-   <td>array
-   </td>
-  </tr>
-  <tr>
-   <td>queues
-   </td>
-   <td>The queues assigned to the agent.
-   </td>
-   <td>array
-   </td>
-  </tr>
+<thead>
+<tr>
+<th><strong>PARAMETER</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+<th><strong>TYPE</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>isAccountOwner</td>
+<td>Indicates whether the user is the account owner.</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td>attachmentsEnabled</td>
+<td>Indicates whether attachments are enabled for the agent.</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td>emojisEnabled</td>
+<td>Indicates whether emojis are enabled for the agent.</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td>status</td>
+<td>The status of the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>firstName</td>
+<td>The first name of the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>lastName</td>
+<td>The last name of the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>phoneNumber</td>
+<td>The phone number of the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>emailId</td>
+<td>The email ID of the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>customId</td>
+<td>The custom ID associated with the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>profImage</td>
+<td>The profile image of the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>canSupportChat</td>
+<td>Indicates whether the agent can support chat.</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td>maxChatSupport</td>
+<td>The maximum number of chat sessions the agent can support.</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>roleId</td>
+<td>The ID of the role assigned to the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>chatLanguageSupport</td>
+<td>The chat languages supported by the agent.</td>
+<td>array</td>
+</tr>
+<tr>
+<td>canSupportVoice</td>
+<td>Indicates whether the agent can support voice calls.</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td>voiceLanguageSupport</td>
+<td>The voice languages supported by the agent.</td>
+<td>array</td>
+</tr>
+<tr>
+<td>desktopLayouts</td>
+<td>The desktop layout details of the agent.</td>
+<td>array</td>
+</tr>
+<tr>
+<td>fullName</td>
+<td>The full name of the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>lFullName</td>
+<td>The localized full name of the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>The user ID of the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>accountId</td>
+<td>The ID of the account associated with the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>createdBy</td>
+<td>The ID of the user who created the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>orgId</td>
+<td>The ID of the organization associated with the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>agentGroups</td>
+<td>The agent group details associated with the agent.</td>
+<td>array</td>
+</tr>
+<tr>
+<td>lastOnlineAt</td>
+<td>The timestamp when the agent was last online.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>The creation time of the interaction.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>updatedAt</td>
+<td>The last updated time of the interaction.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>onlineStatus</td>
+<td>The online status of the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>onlineStatusType</td>
+<td>The online status type of the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>id</td>
+<td>The ID of the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>nickName</td>
+<td>The nick name of the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>role</td>
+<td>The role of the agent.</td>
+<td>string</td>
+</tr>
+<tr>
+<td>skills</td>
+<td>The skills assigned to the agent.</td>
+<td>array</td>
+</tr>
+<tr>
+<td>queues</td>
+<td>The queues assigned to the agent.</td>
+<td>array</td>
+</tr>
+</tbody>
 </table>
 
 

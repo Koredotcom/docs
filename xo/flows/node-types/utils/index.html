@@ -5204,7 +5204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/servicenow/" class="md-nav__link">
+      <a href="../../../searchai/content-sources/servicenow.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5816,7 +5816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails/" class="md-nav__link">
+      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9442,64 +9442,16 @@
   
   
   
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="../../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_3_1_3_2" id="__nav_7_3_1_3_2_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Contact Center APIs
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_1_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3_1_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Contact Center APIs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    API List
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -12305,15 +12257,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#set-voice-chat-on-koreai-voice-gateway-account" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set Voice Chat on Kore.ai Voice Gateway Account
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#agent-utils" class="md-nav__link">
     <span class="md-ellipsis">
       Agent Utils
@@ -12506,152 +12449,144 @@
 <div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>setCallFlowVariable(&quot;user_id&quot;, context.UserContext._id)
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>var userId =  getCallFlowVariable(&quot;user_id&quot;)
 </span></code></pre></div>
-<h2 id="set-voice-chat-on-koreai-voice-gateway-account">Set Voice Chat on Kore.ai Voice Gateway Account<a class="headerlink" href="#set-voice-chat-on-koreai-voice-gateway-account" title="Permanent link">&para;</a></h2>
-<p>Using the following Utils method/script inside the script node, you can set up voice chat in accounts configured with Kore.ai Voice Gateway.</p>
-<p><strong>Syntax</strong>:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>userSessionUtils.setConversationType(&#39;voiceChat&#39;);
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>userSessionUtils.setLanguageTranslationAPIKey(&quot;AIzaSyBnk4hBmHuLjeIzScNAxAdhy0RExxxx&quot;);
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>userSessionUtils.setVoiceChatAgentLang(&quot;en&quot;);
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>userSessionUtils.setVoiceChatUserLang(&quot;de&quot;);
-</span></code></pre></div>
 <h2 id="agent-utils">Agent Utils<a class="headerlink" href="#agent-utils" title="Permanent link">&para;</a></h2>
 <p>Agent Utils is a library available for any programmatic modifications or updates you (the developer) may want to make.</p>
 <h3 id="change-sip-uri-and-phone-number">Change SIP URI and Phone Number<a class="headerlink" href="#change-sip-uri-and-phone-number" title="Permanent link">&para;</a></h3>
 <p>Using the following Agent Utils method/script, you can change the SIP URI and the phone number.</p>
 <p>Syntax</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>agentUtils.setTransferSipURI( {{sip URI}} )
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>agentUtils.setTransferPhoneNumber( {{phoneNumber}} )
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>agentUtils.setTransferSipURI( {{sip URI}} )
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>agentUtils.setTransferPhoneNumber( {{phoneNumber}} )
 </span></code></pre></div>
 <p>Example</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>agentUtils.setTransferSipURI(&quot;sip:+123344234232@2.3.4.5:5060&quot;)
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>agentUtils.setTransferPhoneNumber(&quot;+12345434567&quot;)
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>agentUtils.setTransferSipURI(&quot;sip:+123344234232@2.3.4.5:5060&quot;)
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>agentUtils.setTransferPhoneNumber(&quot;+12345434567&quot;)
 </span></code></pre></div>
 <h3 id="set-user-info">Set User Info<a class="headerlink" href="#set-user-info" title="Permanent link">&para;</a></h3>
 <p>Using the following Agent Utils method/script, you can set or add additional information about the customer in the instance bot. You can add the script as part of the script node inside the connectToagent node in the instance bot.</p>
 <p>Syntax</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>const userInfo = { &quot;firstName&quot;: &quot;&lt;value&gt;&quot;, &quot;lastName&quot;: &quot;&lt;value&gt;&quot;, &quot;email&quot;: &quot;&lt;value&gt;&quot;,&quot;phoneNumber&quot;: &quot;value&quot;,&quot;country&quot;: &quot;value&quot;,&quot;city&quot;: &quot;value&quot;,&quot;Unit Address&quot;: &quot;value&quot;};
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>agentUtils.setUserInfo(userInfo);
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>const userInfo = { &quot;firstName&quot;: &quot;&lt;value&gt;&quot;, &quot;lastName&quot;: &quot;&lt;value&gt;&quot;, &quot;email&quot;: &quot;&lt;value&gt;&quot;,&quot;phoneNumber&quot;: &quot;value&quot;,&quot;country&quot;: &quot;value&quot;,&quot;city&quot;: &quot;value&quot;,&quot;Unit Address&quot;: &quot;value&quot;};
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>agentUtils.setUserInfo(userInfo);
 </span></code></pre></div>
 <p>Example 1</p>
 <p>In the below example, static data is used to set the user info.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>const userInfo = {
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>&quot;firstName&quot;: &quot;John&quot;,
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>&quot;lastName&quot;: &quot;Smith&quot;,
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>&quot;email&quot;: &quot;jsmith316@gmail.com&quot;,
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>&quot;phoneNumber&quot;: &quot;407-876-8654&quot;,
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>&quot;country&quot;: &quot;USA&quot;,
-</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>&quot;city&quot;: &quot;Philadelphia&quot;,
-</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>&quot;Unit Address&quot;: &quot;Unit 12 - Witherspoon Philadelphia&quot;
-</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>};
-</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>agentUtils.setUserInfo(userInfo);
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>const userInfo = {
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>&quot;firstName&quot;: &quot;John&quot;,
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>&quot;lastName&quot;: &quot;Smith&quot;,
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>&quot;email&quot;: &quot;jsmith316@gmail.com&quot;,
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>&quot;phoneNumber&quot;: &quot;407-876-8654&quot;,
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>&quot;country&quot;: &quot;USA&quot;,
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>&quot;city&quot;: &quot;Philadelphia&quot;,
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>&quot;Unit Address&quot;: &quot;Unit 12 - Witherspoon Philadelphia&quot;
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>};
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>agentUtils.setUserInfo(userInfo);
 </span></code></pre></div>
 <p>Example 2</p>
 <p>In the below example, dynamic data based on context is used to set the user info.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>const userInfo = {
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>&quot;firstName&quot;: context.session.BotUserSession.memberData.firstName,
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>&quot;lastName&quot;: context.session.BotUserSession.memberData.lastName,
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>&quot;email&quot;: context.session.BotUserSession.memberData.email,
-</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>&quot;phoneNumber&quot;: context.session.BotUserSession.memberData.phoneNumber,
-</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>&quot;country&quot;: context.session.BotUserSession.memberData.country,
-</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>&quot;city&quot;: context.session.BotUserSession.memberData.city,
-</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>&quot;Unit Address&quot;: context.session.BotUserSession.memberData.Unit Address
-</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>};
-</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>agentUtils.setUserInfo(userInfo);
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>const userInfo = {
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>&quot;firstName&quot;: context.session.BotUserSession.memberData.firstName,
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>&quot;lastName&quot;: context.session.BotUserSession.memberData.lastName,
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>&quot;email&quot;: context.session.BotUserSession.memberData.email,
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>&quot;phoneNumber&quot;: context.session.BotUserSession.memberData.phoneNumber,
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>&quot;country&quot;: context.session.BotUserSession.memberData.country,
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>&quot;city&quot;: context.session.BotUserSession.memberData.city,
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>&quot;Unit Address&quot;: context.session.BotUserSession.memberData.Unit Address
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>};
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>agentUtils.setUserInfo(userInfo);
 </span></code></pre></div>
 <h3 id="setget-bot-languages">Set/Get Bot Languages<a class="headerlink" href="#setget-bot-languages" title="Permanent link">&para;</a></h3>
 <p>Using the following Agent Utils method/script, you can set/get the bot languages for the agent desktop.</p>
 <p>Syntax</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>agentUtils.setBotLanguage( {{langCode }} )
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>agentUtils.getBotLanguage()
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>agentUtils.setBotLanguage( {{langCode }} )
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>agentUtils.getBotLanguage()
 </span></code></pre></div>
 <p>Example</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>agentUtils.setBotLanguage(&quot;en&quot;)
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>agentUtils.getBotLanguage()
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>agentUtils.setBotLanguage(&quot;en&quot;)
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>agentUtils.getBotLanguage()
 </span></code></pre></div>
 <h3 id="set-queue">Set Queue<a class="headerlink" href="#set-queue" title="Permanent link">&para;</a></h3>
 <p>Syntax</p>
 <p>You can use the agentUtils.setQueue() method to set the conversations queue at any point leading up to the agent transfer. You can do this by using a <a href="../../../automation/use-cases/dialogs/node-types/working-with-the-script-node/">Script Node</a> within a bot action node in the XO Platform or a <a href="../script-task/">Script Task</a> node within a flow in Contact Center AI</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>agentUtils.setQueue()&lt;/code
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>agentUtils.setQueue()&lt;/code
 </span></code></pre></div>
 <p>Example</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>agentUtils.setQueue(queueId);
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>agentUtils.setQueue(queueId);
 </span></code></pre></div>
 <h3 id="set-live-chat-agent-transfer">Set Live Chat Agent Transfer<a class="headerlink" href="#set-live-chat-agent-transfer" title="Permanent link">&para;</a></h3>
 <p>Contact Center AI supports dynamic (multiple) live chat agent transfer using the following Agent Utils method/script. On the user interface, you may have one agent system, but you can override the agent system using the method.</p>
 <p>Syntax</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>agentUtils.setLiveChatAgentOutGoingSetup({&quot;name&quot;:&quot;&lt;&lt;system name&gt;&gt;&quot;, &quot;config&quot;: {&quot;&quot;:&quot;&quot;}})
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>agentUtils.setLiveChatAgentOutGoingSetup({&quot;name&quot;:&quot;&lt;&lt;system name&gt;&gt;&quot;, &quot;config&quot;: {&quot;&quot;:&quot;&quot;}})
 </span></code></pre></div>
 <p>Example (for Salesforce)</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>agentUtils.setLiveChatAgentOutGoingSetup({
-</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>&quot;name&quot;: &quot;salesforce&quot;,
-</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>&quot;config&quot;: {
-</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>&quot;liveAgentUrl&quot;: &quot;https://d.la2-c1-ph2.salesforceliveagent.com/chat/rest&quot;,
-</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>&quot;organizationId&quot;: &quot;00D5g00000KClxx&quot;,
-</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>&quot;deploymentId&quot;: &quot;5725g000000QKxx&quot;,
-</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>&quot;buttonId&quot;: &quot;5735g000000QQxx&quot;
-</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>}
-</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>});
+<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>agentUtils.setLiveChatAgentOutGoingSetup({
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>&quot;name&quot;: &quot;salesforce&quot;,
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>&quot;config&quot;: {
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>&quot;liveAgentUrl&quot;: &quot;https://d.la2-c1-ph2.salesforceliveagent.com/chat/rest&quot;,
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>&quot;organizationId&quot;: &quot;00D5g00000KClxx&quot;,
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>&quot;deploymentId&quot;: &quot;5725g000000QKxx&quot;,
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>&quot;buttonId&quot;: &quot;5735g000000QQxx&quot;
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>}
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>});
 </span></code></pre></div>
 <h3 id="set-named-agents">Set Named Agents<a class="headerlink" href="#set-named-agents" title="Permanent link">&para;</a></h3>
 <p>This method takes an array of agentIds and only uses these agents for assigning a conversation.</p>
 <p>Syntax</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>agentUtils.setNamedAgents([&#39;agentId1&#39;, &#39;agentId2&#39;])
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>agentUtils.setNamedAgents([&#39;agentId1&#39;, &#39;agentId2&#39;])
 </span></code></pre></div>
 <p>Example</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>agentUtils.setNamedAgents([&#39;a-e1427c4-8e7d-4728-8e6c-64281b235ad7&#39;, &#39;a-e1427c4-8e7d-4728-8e6c-64281b235ad8&#39;])
+<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>agentUtils.setNamedAgents([&#39;a-e1427c4-8e7d-4728-8e6c-64281b235ad7&#39;, &#39;a-e1427c4-8e7d-4728-8e6c-64281b235ad8&#39;])
 </span></code></pre></div>
 <h3 id="set-agent-matching-conditions">Set Agent Matching Conditions<a class="headerlink" href="#set-agent-matching-conditions" title="Permanent link">&para;</a></h3>
 <p>You can add Skills, Skill groups, and Agent groups to the script task, and based on that, a set of agent IDs is generated.</p>
 <p>Syntax</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>agentUtils.setAgentMatchingConditions({
-</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>skills : [&quot;skillId&quot;],
-</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>agentGroups: [&#39;agentGroupId&#39;],
-</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>skillGroups: [&quot;skillGroupId&quot;],
-</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>})
+<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>agentUtils.setAgentMatchingConditions({
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>skills : [&quot;skillId&quot;],
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>agentGroups: [&#39;agentGroupId&#39;],
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>skillGroups: [&quot;skillGroupId&quot;],
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>})
 </span></code></pre></div>
 <p>Example</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>agentUtils.setAgentMatchingConditions({
-</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>skills : [&quot;63b2c180ab43c287acab1014&quot;],
-</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>agentGroups: [&#39;ag-6b135b4-b03a-461d-b33d-dd5189cb4604&#39;],
-</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>skillGroups: [&quot;6390989f1d00e75d5df4db35&quot;],
-</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>})
+<div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>agentUtils.setAgentMatchingConditions({
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>skills : [&quot;63b2c180ab43c287acab1014&quot;],
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>agentGroups: [&#39;ag-6b135b4-b03a-461d-b33d-dd5189cb4604&#39;],
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>skillGroups: [&quot;6390989f1d00e75d5df4db35&quot;],
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>})
 </span></code></pre></div>
 <h2 id="usersessionutils">userSessionUtils<a class="headerlink" href="#usersessionutils" title="Permanent link">&para;</a></h2>
 <p><strong>Get</strong>: Use this function to get the value associated within a key within the “userSession” object in the conversation context. You can get the value associated with the key using this script.</p>
 <p>Syntax</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>userSessionUtils.get(key)
+<div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>userSessionUtils.get(key)
 </span></code></pre></div>
 <p>Example:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>userSessionUtils.get(&#39;Caller&#39;);
+<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>userSessionUtils.get(&#39;Caller&#39;);
 </span></code></pre></div>
 <p><strong>Put</strong>: Use this function to store a key-value pair within the “userSession” object in the conversation context.</p>
 <p>Syntax</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>userSessionUtils.put(key,value)
+<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>userSessionUtils.put(key,value)
 </span></code></pre></div>
 <p>Example</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>var caller = getCallFlowVariable(&#39;caller&#39;);
-</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>userSessionUtils.put(&#39;Caller&#39;, caller);
+<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>var caller = getCallFlowVariable(&#39;caller&#39;);
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>userSessionUtils.put(&#39;Caller&#39;, caller);
 </span></code></pre></div>
 <p>The example above adds the key ‘Caller’ to userSession and stores the value of the caller variable against that key.</p>
 <p><strong>Delete</strong>: Use this function to delete the key from the userSession object.</p>
 <p>Syntax</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>userSessionUtils.delete(key)
+<div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>userSessionUtils.delete(key)
 </span></code></pre></div>
 <p>Example:-</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>userSessionUtils.delete(&#39;Caller&#39;);
+<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>userSessionUtils.delete(&#39;Caller&#39;);
 </span></code></pre></div>
 <h2 id="pass-data-from-experience-flow-to-dialog-in-a-child-bot">Pass Data from Experience Flow to Dialog in a Child Bot<a class="headerlink" href="#pass-data-from-experience-flow-to-dialog-in-a-child-bot" title="Permanent link">&para;</a></h2>
 <p>This script accesses data from an experience flow to pass it to a dialog in a child bot. The script node of the experience flow sets a variable named ‘caller’ using information from the current user session. This variable is then stored in the user session with the key “Caller” using userSessionUtils.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>&quot;Caller&quot; using userSessionUtils.
-</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>setCallFlowVariable(&#39;caller&#39;,context.BotUserSession.&lt;context variable&gt;);
-</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>var caller = getCallFlowVariable(&#39;caller&#39;);
-</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>userSessionUtils.put(&quot;Caller&quot;, caller);
+<div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>&quot;Caller&quot; using userSessionUtils.
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>setCallFlowVariable(&#39;caller&#39;,context.BotUserSession.&lt;context variable&gt;);
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>var caller = getCallFlowVariable(&#39;caller&#39;);
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>userSessionUtils.put(&quot;Caller&quot;, caller);
 </span></code></pre></div>
 <h3 id="access-the-variable-inside-a-dialog-in-the-child-bot">Access the Variable Inside a Dialog in the Child Bot<a class="headerlink" href="#access-the-variable-inside-a-dialog-in-the-child-bot" title="Permanent link">&para;</a></h3>
 <p>To access this variable in a dialog within the child bot, you must reference it using <code>"context.session.UserSession.Caller"</code>. This retrieves the value of the ‘Caller’ variable from the user session in the context of the current conversation within the child bot’s dialog.</p>
 <h3 id="store-a-value-inside-a-dialog-in-the-child-bot">Store a Value Inside a Dialog in the Child Bot<a class="headerlink" href="#store-a-value-inside-a-dialog-in-the-child-bot" title="Permanent link">&para;</a></h3>
 <p>The script stores a value inside a dialog in a child bot, you can retrieve it in the experience flow script node and print it in the end node of the experience flow. This process allows data to be transferred between a dialog in a child bot and the experience flow.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>BotUserSession.put(&quot;key&quot;, &quot;value&quot;)
+<div class="language-text highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>BotUserSession.put(&quot;key&quot;, &quot;value&quot;)
 </span></code></pre></div>
 <ul>
 <li>
@@ -12665,7 +12600,7 @@ setCallFlowVariable('testvar', CBContext.BotUserSession.key)</code>
 </li>
 </ul>
 <h3 id="print-it-in-the-end-node-of-the-experience-flow">Print it in the End Node of the Experience Flow<a class="headerlink" href="#print-it-in-the-end-node-of-the-experience-flow" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>{{context.key}}
+<div class="language-text highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>{{context.key}}
 </span></code></pre></div>
 <ul>
 <li>

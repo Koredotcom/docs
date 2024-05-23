@@ -5212,18 +5212,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-register-the-searchassist-application-in-the-confluence-server" class="md-nav__link">
+  <a href="#authorization-support-for-confluence-server" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1: Register the SearchAssist application in the Confluence Server
+      Authorization Support for Confluence Server
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-configuring-searchassist-connector" class="md-nav__link">
+  <a href="#step-1-register-the-search-ai-application-in-the-confluence-server" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Configuring SearchAssist Connector
+      Step 1: Register the Search AI application in the Confluence Server
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-configuring-searchai-connector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Configuring SearchAI Connector
     </span>
   </a>
   
@@ -5287,7 +5296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../servicenow/" class="md-nav__link">
+      <a href="../../servicenow.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5902,7 +5911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../contactcenter/configurations/email-inbox-config/configure-emails/" class="md-nav__link">
+      <a href="../../../../contactcenter/configurations/email-inbox-config/configure-emails.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9528,64 +9537,16 @@
   
   
   
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="../../../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_3_1_3_2" id="__nav_7_3_1_3_2_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Contact Center APIs
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_1_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3_1_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Contact Center APIs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    API List
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -12331,18 +12292,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-register-the-searchassist-application-in-the-confluence-server" class="md-nav__link">
+  <a href="#authorization-support-for-confluence-server" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1: Register the SearchAssist application in the Confluence Server
+      Authorization Support for Confluence Server
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-configuring-searchassist-connector" class="md-nav__link">
+  <a href="#step-1-register-the-search-ai-application-in-the-confluence-server" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Configuring SearchAssist Connector
+      Step 1: Register the Search AI application in the Confluence Server
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-configuring-searchai-connector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Configuring SearchAI Connector
     </span>
   </a>
   
@@ -12391,39 +12361,42 @@ Note: Password-protected files in any format are not supported
   </tr>
 </table>
 
+<h2 id="authorization-support-for-confluence-server">Authorization Support for Confluence Server<a class="headerlink" href="#authorization-support-for-confluence-server" title="Permanent link">&para;</a></h2>
 <p>There are two ways to authorize and set up communication between Confluence Server and Search AI application.</p>
 <ul>
-<li>Using Basic Auth </li>
+<li>Using Basic Auth</li>
 <li>Using OAuth 2.0</li>
 </ul>
-<p>For more information on auth types, refer to <a href="https://docs.google.com/document/d/1U-fxzFd9f2sGUZYq7HmI4HO1Tu3p9AvXBwSVRrVNDkw/edit?usp=sharing">this</a>. </p>
-<p>If you are setting up <strong>OAuth</strong> auth mechanism, you need to do the following.</p>
+<p>For more information on auth types, refer to <a href="../../connector.md">this</a>. </p>
+<p>If you are setting up <strong>OAuth</strong> auth mechanism, you need to </p>
 <ul>
 <li>Register Search AI application as OAuth client in the Confluence Server.</li>
 <li>Configure the connector in SearchAI with the integration details.</li>
 </ul>
-<p>If you are using <strong>Basic</strong> authentication, no specific configuration is needed on the server side to fetch content from the Confluence Server. Directly go to step 2 and configure the connector in Search AI. </p>
-<h2 id="step-1-register-the-searchassist-application-in-the-confluence-server">Step 1: Register the SearchAssist application in the Confluence Server<a class="headerlink" href="#step-1-register-the-searchassist-application-in-the-confluence-server" title="Permanent link">&para;</a></h2>
-<p><strong>OAuth 2.0 authentication</strong> requires creating an incoming link in the <strong>application links</strong> section on the Confluence server. During the registration process, set the <strong>Redirect URL</strong> as per your region and enable proper scopes to limit the range of resources that the SearchAssist application can access.</p>
+<p>If you are using <strong>Basic</strong> authentication, no specific configuration is needed on the server side to fetch content from the Confluence Server. Directly go to step 2 and configure the connector in Search AI.</p>
+<h2 id="step-1-register-the-search-ai-application-in-the-confluence-server">Step 1: Register the Search AI application in the Confluence Server<a class="headerlink" href="#step-1-register-the-search-ai-application-in-the-confluence-server" title="Permanent link">&para;</a></h2>
+<p><strong>OAuth 2.0 authentication</strong> requires creating an incoming link in the <strong>application links</strong> section on the Confluence server. During the registration process, set the <strong>Redirect URL</strong> as per your region and enable proper scopes to limit the range of resources that the SearchAI application can access.</p>
 <p>Depending upon your region, you can use one of the following URLs as the Redirect URL.</p>
 <ul>
 <li>JP Region Callback URL: <a href="https://jp-bots-idp.kore.ai/workflows/callback">https://jp-bots-idp.kore.ai/workflows/callback</a></li>
 <li>DE Region Callback URL: <a href="https://de-bots-idp.kore.ai/workflows/callback">https://de-bots-idp.kore.ai/workflows/callback</a></li>
 <li>Prod Region Callback URL: <a href="https://idp.kore.com/workflows/callback">https://idp.kore.com/workflows/callback</a></li>
 </ul>
-<p>Once you've created the link, you'll receive the OAuth credentials: Client ID and Client Secret. These will be used to complete the configuration in the SearchAssist application. </p>
+<p>Once you've created the link, you'll receive the OAuth credentials: Client ID and Client Secret. These will be used to complete the configuration in the SearchAI application. </p>
 <p>For detailed information and step-by-step instructions, refer to <a href="https://confluence.atlassian.com/doc/configure-an-incoming-link-1115674733.html">this</a>. </p>
-<h2 id="step-2-configuring-searchassist-connector">Step 2: Configuring SearchAssist Connector<a class="headerlink" href="#step-2-configuring-searchassist-connector" title="Permanent link">&para;</a></h2>
+<h2 id="step-2-configuring-searchai-connector">Step 2: Configuring SearchAI Connector<a class="headerlink" href="#step-2-configuring-searchai-connector" title="Permanent link">&para;</a></h2>
 <p>To complete the integration, do the following configuration in the connector. </p>
 <ol>
-<li>Go to <strong>Connectors**under the **Sources</strong> tab. </li>
+<li>Go to **_Connectors _**under the **_Sources _**tab. </li>
 <li>On the authorization tab, provide the config parameters. <ul>
+<li>Authorization Type: Basic or OAuth 2.0</li>
+<li>Grant Type: Enter the Grant type for OAuth 2.0-based authentication. For Confluence Server, Search AI supports two types: <strong>Authorization Code grant type</strong> and <strong>Client Credentials</strong> grant type. For more details, refer to <a href="../../connectors.md">this</a>. </li>
 <li>For Basic Auth, provide the connector name, username, password, and Confluence server host URL.</li>
-<li>For OAuth 2.0 Authentication, enter the connector name, Client ID, Client Secret (as generated in the previous step), and Confluence server base URL and domain name.</li>
+<li>For OAuth 2.0 Authentication,  enter the connector name, Client ID, Client Secret (as generated in the previous step), and Confluence server base URL and domain name.</li>
 </ul>
 </li>
 </ol>
-<p>Click <strong>Connect</strong> to initiate the connector authorization process. This completes the setup for communication between SearchAI and Confluence Server.</p>
+<p>Click <strong>Connect</strong> to initiate the connector authorization process. This completes the setup for communication between SearchAI and the Confluence Server. </p>
 
 
 

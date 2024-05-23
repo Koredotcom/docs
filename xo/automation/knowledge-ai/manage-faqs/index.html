@@ -5327,7 +5327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/servicenow/" class="md-nav__link">
+      <a href="../../../searchai/content-sources/servicenow.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5939,7 +5939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails/" class="md-nav__link">
+      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9565,64 +9565,16 @@
   
   
   
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="../../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_3_1_3_2" id="__nav_7_3_1_3_2_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Contact Center APIs
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_1_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3_1_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Contact Center APIs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    API List
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -12436,7 +12388,6 @@
 <p class="admonition-title">Important</p>
 <p>There is a limit of 50k FAQs over 20k nodes to avoid performance issues.</p>
 </div>
-
 <p>All features explained here are supported by the Few-Shot Knowledge Graph, except for the following:</p>
 <ul>
 <li>Adding the Root Term/Node without an ontology structure. However, you can create one to improve intent detection.</li>
@@ -12460,7 +12411,7 @@
 <li>(Optional) If there are alternatives to the same question, add them in the <strong>Add Alternate FAQ</strong> field. Repeat the step for all the alternative questions you want to add.</li>
 <li>(Optional) Use patterns to define the FAQs. This can be done by preceding the pattern with || (two vertical bars) in the alternate question field. The Platform marks these as patterns and evaluates them accordingly. <a href="../../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/" target="_blank">Learn more</a>.</li>
 <li>(Optional) Add terms that enable the Knowledge Graph Engine to identify questions more effectively.</li>
-<li>(Optional) Enable or disable the <strong>Intent Status</strong> for the FAQ intents. The Knowledge Graph does not use the FAQs intents that are enabled. These intents do not participate in the intent recognition process during testing and end-user interaction.</li>
+<li>(Optional) Enable or disable the <strong>Intent Status</strong> for the FAQ intents. The Knowledge Graph does not use the FAQs intents that are disabled. These intents do not participate in the intent recognition process during testing and end-user interaction.</li>
 <li>(Optional) Enable or disable the <strong>Term Status</strong>. The Knowledge Graph uses only the enabled terms. The disabled terms and all their FAQ intents do not participate in the intent recognition process during testing and end-user interaction.</li>
 <li>(Optional) Add a <strong>Reference Id</strong>. This field is used to reference any external content used as a source for this FAQ.
 <a class="glightbox" href="../images/add-faq-form.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-faq-form.png" alt="add faq form" title="add faq form" style="border: 1px solid gray; zoom:75%;"></a></li>
@@ -12474,7 +12425,6 @@
 <p class="admonition-title">Note</p>
 <p>We recommend adding one response for All Channels so that it is triggered in the absence of a channel-specific response.</p>
 </div>
-
 <p><strong>Handling Lengthy Reponses and Improving Readability</strong></p>
 <p>Sometimes the FAQ responses are quite lengthy or may include nice-to-have information along with the primary response. To improve the readability of such responses, you can do one of the following:</p>
 <ul>

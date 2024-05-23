@@ -5204,7 +5204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/servicenow/" class="md-nav__link">
+      <a href="../../../searchai/content-sources/servicenow.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5816,7 +5816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails/" class="md-nav__link">
+      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9442,64 +9442,16 @@
   
   
   
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="../contact-center-api-list/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_3_1_3_2" id="__nav_7_3_1_3_2_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Contact Center APIs
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_1_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3_1_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Contact Center APIs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../contact-center-api-list/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    API List
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -12301,80 +12253,62 @@
 <h1 id="queue-size">Queue Size<a class="headerlink" href="#queue-size" title="Permanent link">&para;</a></h1>
 <p>To get the queueDetails by giving queueId and filters with the given stream Id.</p>
 <table>
-  <tr>
-   <td>Method
-   </td>
-   <td>POST
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoint
-   </td>
-   <td><code>https://{host}/agentassist/api/v1/public/{{:streamId}}/monitor/</code>
-<code>queueStatsById/{{:queueId}}</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content-Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>SmartAssist Analytics
-   </td>
-  </tr>
+<thead>
+<tr>
+<th><strong>Method</strong></th>
+<th>POST</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Endpoint</strong></td>
+<td><code>https://{host}/agentassist/api/v1/public/{{:streamId}}/monitor/queueStatsById/{{:queueId}}</code></td>
+</tr>
+<tr>
+<td><strong>Content Type</strong></td>
+<td><code>application/json</code></td>
+</tr>
+<tr>
+<td><strong>Authorization</strong></td>
+<td><code>auth: {{JWT}}</code> <br>See <a href="../../automation/api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a></td>
+</tr>
+<tr>
+<td><strong>API Scope</strong></td>
+<td>SmartAssist Analytics</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="query-parameters">Query Parameters<a class="headerlink" href="#query-parameters" title="Permanent link">&para;</a></h2>
 <table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Host
-   </td>
-   <td>The Environment URL. For example, https://smartassist.kore.ai
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>queueId
-   </td>
-   <td>You can get the queueId in the /queues GET API.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>BotId
-   </td>
-   <td>BotId or StreamId. You can access it from the General Settings page of the bot.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
+<thead>
+<tr>
+<th><strong>PARAMETER</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+<th><strong>TYPE</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Host</td>
+<td>The Environment URL. For example, <a href="https://platform.kore.ai">https://platform.kore.ai</a></td>
+<td>string, required</td>
+</tr>
+<tr>
+<td>queueId</td>
+<td>You can get the queueId in the /queues GET API.</td>
+<td>string, required</td>
+</tr>
+<tr>
+<td>BotId</td>
+<td>BotId or StreamId. You can access it from the General Settings page of the bot.</td>
+<td>string, required</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="sample-request">Sample Request<a class="headerlink" href="#sample-request" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location &#39;https://smartassist.kore.ai/agentassist/api/v1/public/st-3bf09bef-f979-5489-b337-f465bd5d2f4/monitor/queueStatsById/qu-895dc0c-a83e-4d25-9517-dbb2ccda5920/&#39; \
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location &#39;https://{{host}}/agentassist/api/v1/public/st-3bf09bef-f979-5489-b337-f465bd5xxxx/monitor/queueStatsById/qu-895dc0c-a83e-4d25-9517-dbb2ccdaxxxx/&#39; \
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--header &#39;auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTNmYzQwYTcyLThiNGUtNWNlMy1iY2E3LThjYTcwZTQxYTQwZCJ9.ssiizteAJB0pdV2BYhILSRp12TAJ2V4cHWzpjp3SU8I&#39; \
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--header &#39;accountId: 637368b4a1d031234ba63bbf&#39; \
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--header &#39;accountId: 637368b4a1d031234ba6xxxx&#39; \
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--header &#39;Content-Type: application/json&#39; \
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>--data &#39;{
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>&quot;languages&quot;: [&quot;en&quot;, &quot;es&quot;],
@@ -12383,72 +12317,33 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
 </span></code></pre></div>
 <h2 id="request-parameters">Request Parameters<a class="headerlink" href="#request-parameters" title="Permanent link">&para;</a></h2>
 <table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>REQUIRED/OPTIONAL</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Channels
-   </td>
-   <td>To filter the results based on the channel. Only SmartAssist supported channels can be given and should be selected from the following:
-[“rtm”, “ivr”, “sms”, “slack”, “facebook”, “kore”, “spark”, “skype”, “msteams”, “twitter”, “telegram”, “wfacebook”, “ringcentral”, “skypeforbusiness”, “jabber”, “yammer”, “whatsapp”, “line”, “liveperson”, “mattermost”, “wechat”, “web-sdk”, “rcs”, “skypeonprem”, “unblu”, “audiocodes”, “alexa”, “twiliovoice”, “ivrVoice”, “korevg”, “email”, “emailConnect”] “rtm” : Web/Mobile Client channel
-“ivr” : agentassist channel
-   </td>
-   <td>Optional
-   </td>
-   <td>Array of strings
-   </td>
-  </tr>
-  <tr>
-   <td>Languages
-   </td>
-   <td>To filter the results based on the bot language i.e interaction language with the bot.
-Only Smartassist supported languages can be selected and should be selected from the following:
-[“en”, “de”, “es”, “fr”, “pt”, “it”, “zh_cn”, “zh_tw”, “id”, “ko”, “nl”, “ja”, “ar”, “fi”, “ru”, ‘pl”, “uk”, “sv”, “kk”, “nb”, “hi”, “te”, “ta”, “mr”, “ca”, “sl”, “ge” ]Here “en” : English
-“de” : German
-“es” : spanish
-“fr” : french
-“pt” : Portuguese
-“it” : Indonesian
-“zh_cn” : Chinese
-“zh_tw” :
-“id” : Indonesian
-“ko” : Korean
-“nl” : Dutch
-“ja” : Japanese
-“ar” : Arabic
-“fi” : Finnish
-“ru” : Russian
-“pl” : Polish
-“uk” : Ukrainian
-“sv” : Swedish
-“kk” : Kazakh
-“nb” : Norwegian
-“hi” : Hindi
-“te” : Telugu
-“ta” : Tamil
-“mr” : Marathi
-“ca” : Catalan
-“sl” : Slovenian
-“ge” : Georgia
-   </td>
-   <td>Optional
-   </td>
-   <td>Array of strings
-   </td>
-  </tr>
+<thead>
+<tr>
+<th>PARAMETER</th>
+<th>DESCRIPTION</th>
+<th>REQUIRED/OPTIONAL</th>
+<th>TYPE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channels</td>
+<td>To filter the results based on the channel. Only Contact Center AI supported channels can be given and should be selected from the following: <br> ["rtm", "ivr", "sms", "slack", "facebook", "kore", "spark", "skype", "msteams", "twitter", "telegram", "wfacebook", "ringcentral", "skypeforbusiness", "jabber", "yammer", "whatsapp", "line", "liveperson", "mattermost", "wechat", "web-sdk", "rcs", "skypeonprem", "unblu", "audiocodes", "alexa", "twiliovoice", "ivrVoice", "korevg", "email", "emailConnect"] <br> "rtm" : Web/Mobile Client channel <br> "ivr" : agent ai channel</td>
+<td>optional</td>
+<td>array of strings</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>To filter the results based on the bot language, that is, interaction language with the bot. Only Contact Center AI supported languages can be selected and should be selected from the following: <br> ["en", "de", "es", "fr", "pt", "it", "zh_cn", "zh_tw", "id", "ko", "nl", "ja", "ar", "fi", "ru", 'pl", "uk", "sv", "kk", "nb", "hi", "te", "ta", "mr", "ca", "sl", "ge" ] Here "en" : English "de" : German "es" : spanish "fr" : french "pt" : Portuguese "it" : Indonesian "zh_cn" : Chinese "zh_tw" : "id" : Indonesian "ko" : Korean "nl" : Dutch "ja" : Japanese "ar" : Arabic "fi" : Finnish "ru" : Russian "pl" : Polish "uk" : Ukrainian "sv" : Swedish "kk" : Kazakh "nb" : Norwegian "hi" : Hindi "te" : Telugu "ta" : Tamil "mr" : Marathi "ca" : Catalan "sl" : Slovenian "ge" : Georgia</td>
+<td>0ptional</td>
+<td>array of strings</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="sample-response">Sample Response<a class="headerlink" href="#sample-response" title="Permanent link">&para;</a></h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>[
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    {
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>        &quot;queueId&quot;: &quot;qu-aa16c29-08b2-4948-aa00-a6a3547e57ab&quot;,
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>        &quot;queueId&quot;: &quot;qu-aa16c29-08b2-4948-aa00-a6a3547exxxx&quot;,
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        &quot;queueName&quot;: &quot;Default Queue&quot;,
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>        &quot;skills&quot;: [],
 </span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>        &quot;waiting&quot;: 0,

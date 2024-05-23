@@ -5204,7 +5204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/servicenow/" class="md-nav__link">
+      <a href="../../../searchai/content-sources/servicenow.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5816,7 +5816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails/" class="md-nav__link">
+      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9442,64 +9442,16 @@
   
   
   
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="../contact-center-api-list/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_3_1_3_2" id="__nav_7_3_1_3_2_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Contact Center APIs
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_1_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3_1_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Contact Center APIs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../contact-center-api-list/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    API List
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -12245,9 +12197,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#query-parameters" class="md-nav__link">
+  <a href="#path-parameters" class="md-nav__link">
     <span class="md-ellipsis">
-      Query Parameters
+      Path Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Query Parameter
     </span>
   </a>
   
@@ -12292,76 +12253,78 @@
 <h1 id="delete-call-recording-api">Delete Call Recording API<a class="headerlink" href="#delete-call-recording-api" title="Permanent link">&para;</a></h1>
 <p>This API is used to delete Voice Call Recordings. The response varies based on whether the execution is successful or not.</p>
 <table>
-  <tr>
-   <td>Method
-   </td>
-   <td>DELETE
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoints
-   </td>
-   <td><code><a href="https://{{host}}/api/public/bot/{{:streamId}}/v2/recordings">https://{{host}}/api/public/bot/{{:streamId}}/recordings</a></code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-<p>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>Delete Recordings
-   </td>
-  </tr>
+<thead>
+<tr>
+<th><strong>Method</strong></th>
+<th>DELETE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Endpoints</strong></td>
+<td><code>https://{{host}}/api/public/bot/{{:streamId}}/v2/recordings?sessionId={{sessionId}}</code></td>
+</tr>
+<tr>
+<td><strong>Content Type</strong></td>
+<td><code>application/json</code></td>
+</tr>
+<tr>
+<td>Authorization</td>
+<td><code>auth: {{JWT}}</code><br>See <a href="../../automation/api-introduction/#generating-the-jwt-token">How to generate the JWT Token.</a></td>
+</tr>
+<tr>
+<td><strong>API Scope</strong></td>
+<td>Delete Recordings</td>
+</tr>
+</tbody>
 </table>
-
-<h2 id="query-parameters">Query Parameters<a class="headerlink" href="#query-parameters" title="Permanent link">&para;</a></h2>
+<h2 id="path-parameters">Path Parameters<a class="headerlink" href="#path-parameters" title="Permanent link">&para;</a></h2>
 <table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL, for example, https://smartassist.kore.ai
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>sessionId
-   </td>
-   <td>You can access it from the Conversation Logs.
-   </td>
-   <td>string, required
-   </td>
-  </tr>
+<thead>
+<tr>
+<th><strong>PARAMETER</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+<th><strong>TYPE</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>host</td>
+<td>Environment URL, for example, <a href="https://platform.kore.ai">https://platform.kore.ai</a></td>
+<td>string, required</td>
+</tr>
+<tr>
+<td>streamId</td>
+<td>Bot ID or Stream ID. You can access it from the General Settings page of the bot.</td>
+<td>string, required</td>
+</tr>
+</tbody>
 </table>
-
+<h2 id="query-parameter">Query Parameter<a class="headerlink" href="#query-parameter" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>PARAMETER</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+<th><strong>TYPE</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sessionId</td>
+<td>The unique identifier for the session record. You can access it from the conversation logs.</td>
+<td>string, required</td>
+</tr>
+</tbody>
+</table>
 <h2 id="sample-request">Sample Request<a class="headerlink" href="#sample-request" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request DELETE &#39;https://bots.kore.ai/api/1.1/public/bot/st-b110e148-7428-5295-960b-099e8167xxxx/recordings?sessionId=6627b9adb9af28711b78xxxx&#39; \
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request DELETE &#39;https://{{host}}/api/1.1/public/bot/st-b110e148-7428-5295-960b-099e8167xxxx/recordings?sessionId=6627b9adb9af28711b78xxxx&#39; \
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--header &#39;auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTQ0YTIzOTNmLTk4MTEtNWY3Mi04NGUyLTM0YTY4MzI4N2I1ZCJ9.kW9tN1gTUW7QjFrHvwBp-EcRu8QhBK223Xi2NgZxxxx&#39;
 </span></code></pre></div>
 <h2 id="sample-request_1">Sample Request<a class="headerlink" href="#sample-request_1" title="Permanent link">&para;</a></h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>   &quot;message&quot;: &quot;Call recordings deleted successfully&quot;,
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>   &quot;sessionId&quot;: &quot;65fada548c712ee0552fxxxx&quot;
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>   &quot;sessionId&quot;: &quot;66627b9adb9af28711b78xxxx&quot;
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>}
 </span></code></pre></div>
 

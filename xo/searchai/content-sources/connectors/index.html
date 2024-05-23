@@ -5338,7 +5338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../servicenow/" class="md-nav__link">
+      <a href="../servicenow.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5953,7 +5953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails/" class="md-nav__link">
+      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9579,64 +9579,16 @@
   
   
   
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="../../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_3_1_3_2" id="__nav_7_3_1_3_2_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Contact Center APIs
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_1_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3_1_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Contact Center APIs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    API List
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -12487,15 +12439,33 @@ To use this type of authorization mechanism, <strong>register Search AI as an In
 </li>
 </ol>
 <p>OAuth 2.0 protocol defines several grant types for different use cases. Each grant type is designed to address specific authorization scenarios. </p>
-<p>Currently, SearchAI supports the following two grant types:</p>
+<p>Currently, SearchAI supports the following grant types:</p>
 <ol>
 <li>
-<p><strong>Client credentials Grant Type</strong>: In this type, the client application(SearchAI, here) directly accesses the resources from the backend application. The client sends the client ID and client secret and gets an access token to access the resources directly. </p>
-<p>For this type of authentication, provide the <strong>client ID</strong> and <strong>client secret</strong> generated after registering Search AI as an OAuth client application. </p>
+<p><strong>Client credentials Grant Type</strong>: In this type, the client application(SearchAI, here) directly accesses the resources from the backend application. The client sends the client ID and client secret and gets an access token to access the resources directly. 
+    For this type of authentication, provide the <strong>client ID</strong> and <strong>client secret</strong> generated after registering Search AI as an OAuth client application. </p>
 </li>
 <li>
-<p><strong>Authorization Code Grant Type</strong>: In the type, the client application(SearchAI) accesses the resources on behalf of a user. When the client communicates with the backend application, after verification of the client ID and client secret, it is redirected to the login process when the user needs to log in and provide consent to access the resources.</p>
-<p>For this type of authentication, both the <strong>client credentials</strong> as well as the <strong>user credentials</strong> are required to access the resources. </p>
+<p><strong>Authorization Code Grant Type</strong>: In the type, the client application(SearchAI) accesses the resources on behalf of a user. Here’s how it works:</p>
+<ul>
+<li>The client application (in this case, Search AI) initiates the OAuth flow by redirecting the user to the authorization server's authorization endpoint, where the user is prompted to log in to the authorization server.</li>
+<li>If the login is successful, the authorization server redirects the user back to the client application's redirect URI, along with an authorization code.</li>
+<li>Upon receiving the authorization code, the client application makes a POST request to the authorization server's token endpoint.</li>
+<li>The authorization server verifies the authorization code, client credentials, and a redirect URI and responds with an access token and optionally a refresh token in the body of the response.</li>
+<li>The client application can now use the access token to make authorized requests to the resources.</li>
+<li>When an access token expires, the client application can use the refresh token to obtain the new token. </li>
+</ul>
+<p>For this type of authentication, provide the <strong>client credentials,</strong> and on the consent screen, log in with your user credentials to access the resources.</p>
+</li>
+<li>
+<p><strong>Password Grant Type</strong>: This type of authorization allows the client application to exchange the user's credentials for an access token. Here’s how it works:</p>
+<ul>
+<li>The client application authenticates itself to the authorization server by sending its client ID and client secret to the token endpoint.</li>
+<li>The resource owner provides their credentials (username and password) directly to the client application. The client application sends a POST request to the authorization server's token endpoint, including the user's credentials.</li>
+<li>If the user's credentials are valid and authorized to access the requested resources, the authorization server responds with an access token.</li>
+<li>The client application can now use the access token to make authorized requests to the resource server on behalf of the user.</li>
+</ul>
+<p>For this type of authorization, provide the <strong>client credentials</strong> as well as <strong>user credentials</strong> with access to the required resources. </p>
 </li>
 </ol>
 <h2 id="managing-connectors">Managing Connectors<a class="headerlink" href="#managing-connectors" title="Permanent link">&para;</a></h2>

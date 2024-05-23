@@ -5210,7 +5210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/servicenow/" class="md-nav__link">
+      <a href="../../../searchai/content-sources/servicenow.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5822,7 +5822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails/" class="md-nav__link">
+      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9463,64 +9463,16 @@
   
   
   
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="../../contact-center/contact-center-api-list/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_3_1_3_2" id="__nav_7_3_1_3_2_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Contact Center APIs
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_1_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3_1_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Contact Center APIs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../contact-center/contact-center-api-list/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    API List
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -9739,21 +9691,6 @@
       koreUtil.autoTranslate
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="koreUtil.autoTranslate">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#related-link" class="md-nav__link">
-    <span class="md-ellipsis">
-      Related Link
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -12633,21 +12570,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="koreUtil.autoTranslate">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#related-link" class="md-nav__link">
-    <span class="md-ellipsis">
-      Related Link
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -12673,7 +12595,7 @@
   
 
 
-<h1 id="koreutil-libraries"><strong>koreUtil Libraries</strong><a class="headerlink" href="#koreutil-libraries" title="Permanent link">&para;</a></h1>
+<h1 id="koreutil-libraries">koreUtil Libraries<a class="headerlink" href="#koreutil-libraries" title="Permanent link">&para;</a></h1>
 <p><strong>koreUtil libraries</strong> provide pre-written JavaScript functions which makes common or complex tasks easy to implement. These libraries often target specific tasks such as setting up recurring rules for calendars, parsing, and manipulation of dates, conversion of dates between timezones, tools to simplify programming with strings, numbers, arrays, functions, and objects, etc.</p>
 <h2 id="how-to-use">How to Use<a class="headerlink" href="#how-to-use" title="Permanent link">&para;</a></h2>
 <p>koreUtil libraries can be used anywhere in the assistant where there is flexibility to write JavaScript code such as script node, message node, confirmation node, entity node, standard responses, answers to FAQs, small talk, event handlers, etc.</p>
@@ -12707,310 +12629,340 @@
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>context.readableFormat=context.rule.toText();
 </span></code></pre></div></p>
 <p><strong>Output:</strong></p>
-<p><em>For context.between</em>
-<code>[ 
-"2012-08-27T10:30:00.000Z", 
-"2012-08-31T10:30:00.000Z" 
-]</code>
-<em>For context.readableFormat</em>
+<ul>
+<li>
+<p>For context.between<br />
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>[ 
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>&quot;2012-08-27T10:30:00.000Z&quot;, 
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>&quot;2012-08-31T10:30:00.000Z&quot; 
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>]
+</span></code></pre></div></p>
+</li>
+<li>
+<p>For context.readableFormat<br />
 <code>every 5 weeks on Monday, Friday until January 31, 2013</code></p>
+</li>
+</ul>
 <h3 id="koreutilmoment">koreUtil.moment<a class="headerlink" href="#koreutilmoment" title="Permanent link">&para;</a></h3>
 <p>koreUtil.moment is a platform-offered JS library for validating, manipulating, and formatting dates.</p>
-<p><strong>Usage Example:</strong> 
-<code>context.german=koreUtil.moment().locale('de').format('LLLL');</code></p>
-<p><strong>Output:</strong> 
-<em>For context.german:</em>
-<code>Montag, 18. November 2019 01:43</code></p>
+<p><strong>Usage Example:</strong> </p>
+<p><code>context.german=koreUtil.moment().locale('de').format('LLLL');</code></p>
+<p><strong>Output:</strong> </p>
+<p>For context.german:</p>
+<p><code>Montag, 18. November 2019 01:43</code></p>
 <h3 id="koreutilintl">koreUtil.intl<a class="headerlink" href="#koreutilintl" title="Permanent link">&para;</a></h3>
 <p>koreUtil.intl is a platform-offered JS library for language-specific string comparison, number formatting, and date and time formatting.</p>
-<p><strong>Usage Example:</strong>
-<code>context.formattedNumberUK = koreUtil.intl.NumberFormat('en-GB').format(123456.789);
-var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0)); 
-context.USdate=koreUtil.intl.DateTimeFormat('en-US').format(date);</code></p>
-<p><strong>Output:</strong></p>
-<p><em>For context.formattedNumberUK:</em>
-<code>123,456.789</code>
-<em>For context.USdate</em>
-<code>12/20/2012</code></p>
-<h3 id="koreutilmomenttz">koreUtil.momenttz<a class="headerlink" href="#koreutilmomenttz" title="Permanent link">&para;</a></h3>
-<p>koreUtil.momenttz is a platform-offered JS library for the formatting of dates in any timezone and converting dates between timezones.</p>
-<p><strong>Usage Example:</strong>
-<code>var jun = koreUtil.moment("2014-06-01T12:00:00Z"); 
-context.newyork= koreUtil.momenttz(jun,'America/New_York').format('ha z'); 
-context.tokyo = koreUtil.moment().tz('Asia/Tokyo').format('ha z'); 
-context.sydney = koreUtil.moment().tz('Australia/Sydney').format('ha z');</code></p>
+<p><strong>Usage Example:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>context.formattedNumberUK = koreUtil.intl.NumberFormat(&#39;en-GB&#39;).format(123456.789);
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0)); 
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>context.USdate=koreUtil.intl.DateTimeFormat(&#39;en-US&#39;).format(date);
+</span></code></pre></div>
 <p><strong>Output:</strong></p>
 <ul>
-<li>For context.newyork: *
-<code>5am PDT</code></li>
-<li>For context.tokyo: *
-<code>7pm JST</code></li>
-<li>For context.sydney: *
-<code>9pm AEDT</code></li>
+<li>
+<p>For context.formattedNumberUK:<br />
+<code>123,456.789</code></p>
+</li>
+<li>
+<p>For context.USdate<br />
+<code>12/20/2012</code></p>
+</li>
+</ul>
+<h3 id="koreutilmomenttz">koreUtil.momenttz<a class="headerlink" href="#koreutilmomenttz" title="Permanent link">&para;</a></h3>
+<p>koreUtil.momenttz is a platform-offered JS library for the formatting of dates in any timezone and converting dates between timezones.</p>
+<p><strong>Usage Example:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>var jun = koreUtil.moment(&quot;2014-06-01T12:00:00Z&quot;); 
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>context.newyork= koreUtil.momenttz(jun,&#39;America/New_York&#39;).format(&#39;ha z&#39;); 
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>context.tokyo = koreUtil.moment().tz(&#39;Asia/Tokyo&#39;).format(&#39;ha z&#39;); 
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>context.sydney = koreUtil.moment().tz(&#39;Australia/Sydney&#39;).format(&#39;ha z&#39;);
+</span></code></pre></div>
+<p><strong>Output:</strong></p>
+<ul>
+<li>
+<p>For context.newyork:<br />
+<code>5am PDT</code></p>
+</li>
+<li>
+<p>For context.tokyo:<br />
+<code>7pm JST</code></p>
+</li>
+<li>
+<p>For context.sydney:<br />
+<code>9pm AEDT</code></p>
+</li>
 </ul>
 <h3 id="koreutilxml2js">koreUtil.xml2js<a class="headerlink" href="#koreutilxml2js" title="Permanent link">&para;</a></h3>
 <p>koreUtil.xml2js is a Platform-offered JS library for parsing XML to JSON and vice versa.</p>
-<p><strong>Usage Example:</strong>
-<code>var obj = {name: "John", Surname: "Doe", age: 23}; \
-var builder = new koreUtil.xml2js.Builder(); \
-context.xml = builder.buildObject(obj);</code></p>
+<p><strong>Usage Example:</strong>  </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>var obj = {name: &quot;John&quot;, Surname: &quot;Doe&quot;, age: 23};
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>var builder = new koreUtil.xml2js.Builder();
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>context.xml = builder.buildObject(obj);
+</span></code></pre></div>
 <p><strong>Output:</strong></p>
-<ul>
-<li>For context.xml: *
-<code>John Doe 23</code></li>
-</ul>
+<p>For context.xml:</p>
+<p><code>John Doe 23</code></p>
 <h3 id="koreutilhash">koreUtil.hash<a class="headerlink" href="#koreutilhash" title="Permanent link">&para;</a></h3>
 <p>koreUtil.hash is a Platform offered JS library that supports SHA on JavaScript.</p>
-<p><strong>Usage Example:</strong>
-```context.hashString= koreUtil.hash('sha256').update('42').digest('hex');
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>**Output:**
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>* For context.hashString:*
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>```73475cb40a568e8da8a045ced110137e159f890ac4da883b6b17dc651b3a8049
-</span></code></pre></div></p>
+<p><strong>Usage Example:</strong></p>
+<p><code>context.hashString= koreUtil.hash('sha256').update('42').digest('hex');</code></p>
+<p><strong>Output:</strong></p>
+<p>For context.hashString:</p>
+<p><code>73475cb40a568e8da8a045ced110137e159f890ac4da883b6b17dc651b3a8049</code></p>
 <h3 id="koreutil_">koreUtil._<a class="headerlink" href="#koreutil_" title="Permanent link">&para;</a></h3>
 <p>koreUtil._ is a Platform-offered JS library that provides utility functions for common programming tasks.</p>
-<p><strong>Usage Example:</strong>
-```context.chunkArray = koreUtil.<em>.chunk(['a', 'b', 'c', 'd'], 2); 
-var users = [ 
-{ 'user': 'barney', 'age': 36, 'active': true }, 
-{ 'user': 'fred', 'age': 40, 'active': false } 
-]; 
-context.filterActive =koreUtil.</em>.pluck(koreUtil._.filter(users, { 'age': 36, 'active': true }), 'user');
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>**Output:**
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>* For context.chunkArray: *
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>```[[&quot;a&quot;,&quot;b&quot;],[&quot;c&quot;,&quot;d&quot;]]```
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>* For context.filterActive: *
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>```[ \
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>&quot;barney&quot; \
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>]
+<p><strong>Usage Example:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>context.chunkArray = koreUtil._.chunk([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;], 2); 
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>var users = [ 
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>{ &#39;user&#39;: &#39;barney&#39;, &#39;age&#39;: 36, &#39;active&#39;: true }, 
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>{ &#39;user&#39;: &#39;fred&#39;, &#39;age&#39;: 40, &#39;active&#39;: false } 
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>]; 
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>context.filterActive =koreUtil._.pluck(koreUtil._.filter(users, { &#39;age&#39;: 36, &#39;active&#39;: true }), &#39;user&#39;);
+</span></code></pre></div>
+<p><strong>Output:</strong></p>
+<ul>
+<li>
+<p>For context.chunkArray:<br />
+<code>[["a","b"],["c","d"]]</code></p>
+</li>
+<li>
+<p>For context.filterActive:<br />
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>[
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>&quot;barney&quot;
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>]
 </span></code></pre></div></p>
+</li>
+</ul>
 <h3 id="koreutilgetcurrentoptions">koreUtil.getCurrentOptions<a class="headerlink" href="#koreutilgetcurrentoptions" title="Permanent link">&para;</a></h3>
 <p>koreUtil.getCurrentOptions is a platform-offered JS library that provides utility functions to get the current template for language selection standard response options. This can be used to customize the standard response. 
 Post the release of v8.1, this function has been enhanced to return the authorization URL used in the standard response when end-user authorization is requested.</p>
 <p>Following is the return format for each of the situations:</p>
 <ul>
-<li>For the language selection standard response:*
-<code>``{"list_of_languages": [
-      {"title": "English","value": "English"},
-      {"title": "Deutsche","value": "Deutsche"},</code>
-      {"title": "Español","value": "Español"}`
-]}
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>* For the language ambiguity standard response:
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>`{&quot;current_language&quot;: &quot;Español&quot;,`
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>* `      &quot;list_of_new_languages&quot;: [`
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>* `         {&quot;title&quot;: &quot;English&quot;,&quot;value&quot;: &quot;English&quot;},`
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>* `         {&quot;title&quot;: &quot;Deutsche&quot;,&quot;value&quot;: &quot;Deutsche&quot;},`
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>* `         {&quot;title&quot;: &quot;Español&quot;,&quot;value&quot;: &quot;Español&quot;}`
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>* `  ]}`
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>* For the language switch standard response: \
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>`{&quot;new_language&quot;: &quot;Español&quot;,&quot;current_language&quot;: &quot;English&quot;}`
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>* For User authorization request standard response: \
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>`{`
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>* `    &quot;authorizationURL&quot;: &quot;https:///r/xxxxxxxxxxxxx&quot;`
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>* `}`
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>Following are the usage examples of how the above utility can be used to render the message in a button template, you can use any template as per your requirements.  [See here for more on message templates](https://developer.kore.ai/docs/bots/sdks/message-templates/).
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>**Usage Example 1:** To get the standard response for “_Ask if the user would like to select any of the languages_”
-</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>
-</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>```javascript
-</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>var info = koreUtil.getCurrentOptions();
-</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>var message = {
-</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>   &quot;type&quot;: &quot;template&quot;,
-</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>   &quot;payload&quot;: {
-</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>      &quot;template_type&quot;: &quot;button&quot;,
-</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>      &quot;text&quot;: &quot;please select your laguage&quot;,
-</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>      &quot;subText&quot;: &quot;Button Template Description&quot;,
-</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>      &quot;buttons&quot;: []
-</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>   }
-</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>};
-</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>for (i = 0; i &amp;lt; info.list_of_languages.length; i++) {
-</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>   var button = {
-</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>      &quot;type&quot;: &quot;postback&quot;,
-</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>      &quot;title&quot;: info.list_of_languages[i].title,
-</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>      &quot;payload&quot;: info.list_of_languages[i].value
-</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>   };
-</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>   message.payload.buttons.push(button);
-</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>}
-</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>print(JSON.stringify(message));
-</span></code></pre></div></li>
+<li>
+<p>For the language selection standard response:<br />
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>{&quot;list_of_languages&quot;: [
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>      {&quot;title&quot;: &quot;English&quot;,&quot;value&quot;: &quot;English&quot;},
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>      {&quot;title&quot;: &quot;Deutsche&quot;,&quot;value&quot;: &quot;Deutsche&quot;},`
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>      {&quot;title&quot;: &quot;Español&quot;,&quot;value&quot;: &quot;Español&quot;}`
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>]}
+</span></code></pre></div></p>
+</li>
+<li>
+<p>For the language ambiguity standard response:<br />
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>{&quot;current_language&quot;: &quot;Español&quot;,
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>   &quot;list_of_new_languages&quot;: [
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>      {&quot;title&quot;: &quot;English&quot;,&quot;value&quot;: &quot;English&quot;},
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>      {&quot;title&quot;: &quot;Deutsche&quot;,&quot;value&quot;: &quot;Deutsche&quot;},
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>      {&quot;title&quot;: &quot;Español&quot;,&quot;value&quot;: &quot;Español&quot;}
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>   ]}
+</span></code></pre></div></p>
+</li>
+<li>
+<p>For the language switch standard response:<br />
+<code>{"new_language": "Español","current_language": "English"}</code></p>
+</li>
+<li>
+<p>For User authorization request standard response:<br />
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>{
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>   &quot;authorizationURL&quot;: &quot;https:///r/xxxxxxxxxxxxx&quot;
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>}
+</span></code></pre></div></p>
+</li>
 </ul>
+<p>Following are the usage examples of how the above utility can be used to render the message in a button template, you can use any template as per your requirements.  <a href="../../../sdk/web-mobile-sdk-message-formatting-and-templates/">See here for more on message templates</a>.</p>
+<p><strong>Usage Example 1:</strong> To get the standard response for “<em>Ask if the user would like to select any of the languages</em>”</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">getCurrentOptions</span><span class="p">();</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">   </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;template&quot;</span><span class="p">,</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">   </span><span class="s2">&quot;payload&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">      </span><span class="s2">&quot;template_type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;button&quot;</span><span class="p">,</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">      </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;please select your laguage&quot;</span><span class="p">,</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">      </span><span class="s2">&quot;subText&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Button Template Description&quot;</span><span class="p">,</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">      </span><span class="s2">&quot;buttons&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[]</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="w">   </span><span class="p">}</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="p">};</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="w"> </span><span class="nx">info</span><span class="p">.</span><span class="nx">list_of_languages</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="w">   </span><span class="kd">var</span><span class="w"> </span><span class="nx">button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="w">      </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;postback&quot;</span><span class="p">,</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="w">      </span><span class="s2">&quot;title&quot;</span><span class="o">:</span><span class="w"> </span><span class="nx">info</span><span class="p">.</span><span class="nx">list_of_languages</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">title</span><span class="p">,</span>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="w">      </span><span class="s2">&quot;payload&quot;</span><span class="o">:</span><span class="w"> </span><span class="nx">info</span><span class="p">.</span><span class="nx">list_of_languages</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">value</span>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a><span class="w">   </span><span class="p">};</span>
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a><span class="w">   </span><span class="nx">message</span><span class="p">.</span><span class="nx">payload</span><span class="p">.</span><span class="nx">buttons</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">button</span><span class="p">);</span>
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a><span class="p">}</span>
+</span><span id="__span-10-19"><a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a><span class="nx">print</span><span class="p">(</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">message</span><span class="p">));</span>
+</span></code></pre></div>
 <p><strong>Usage Example 2:</strong> To get the standard response for “<em>Ask if the user would like to switch to any of the new languages detected during a conversation</em>”</p>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">getCurrentOptions</span><span class="p">();</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">   </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;template&quot;</span><span class="p">,</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">   </span><span class="s2">&quot;payload&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">      </span><span class="s2">&quot;template_type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;button&quot;</span><span class="p">,</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">      </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;language ambiguity response for the current language&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">info</span><span class="p">.</span><span class="nx">current_language</span><span class="p">,</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">      </span><span class="s2">&quot;subText&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Button Template Description&quot;</span><span class="p">,</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">      </span><span class="s2">&quot;buttons&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[]</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">   </span><span class="p">}</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="p">};</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="w"> </span><span class="nx">info</span><span class="p">.</span><span class="nx">list_of_new_languages</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">   </span><span class="kd">var</span><span class="w"> </span><span class="nx">button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">      </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;postback&quot;</span><span class="p">,</span>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">      </span><span class="s2">&quot;title&quot;</span><span class="o">:</span><span class="w"> </span><span class="nx">info</span><span class="p">.</span><span class="nx">list_of_new_languages</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">title</span><span class="p">,</span>
-</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">      </span><span class="s2">&quot;payload&quot;</span><span class="o">:</span><span class="w"> </span><span class="nx">info</span><span class="p">.</span><span class="nx">list_of_new_languages</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">value</span>
-</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">   </span><span class="p">};</span>
-</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">   </span><span class="nx">message</span><span class="p">.</span><span class="nx">payload</span><span class="p">.</span><span class="nx">buttons</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">button</span><span class="p">);</span>
-</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="p">}</span>
-</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="nx">print</span><span class="p">(</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">message</span><span class="p">));</span>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">getCurrentOptions</span><span class="p">();</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">   </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;template&quot;</span><span class="p">,</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">   </span><span class="s2">&quot;payload&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">      </span><span class="s2">&quot;template_type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;button&quot;</span><span class="p">,</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">      </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;language ambiguity response for the current language&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">info</span><span class="p">.</span><span class="nx">current_language</span><span class="p">,</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">      </span><span class="s2">&quot;subText&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Button Template Description&quot;</span><span class="p">,</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">      </span><span class="s2">&quot;buttons&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[]</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">   </span><span class="p">}</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="p">};</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="w"> </span><span class="nx">info</span><span class="p">.</span><span class="nx">list_of_new_languages</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="w">   </span><span class="kd">var</span><span class="w"> </span><span class="nx">button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">      </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;postback&quot;</span><span class="p">,</span>
+</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="w">      </span><span class="s2">&quot;title&quot;</span><span class="o">:</span><span class="w"> </span><span class="nx">info</span><span class="p">.</span><span class="nx">list_of_new_languages</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">title</span><span class="p">,</span>
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="w">      </span><span class="s2">&quot;payload&quot;</span><span class="o">:</span><span class="w"> </span><span class="nx">info</span><span class="p">.</span><span class="nx">list_of_new_languages</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">value</span>
+</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="w">   </span><span class="p">};</span>
+</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="w">   </span><span class="nx">message</span><span class="p">.</span><span class="nx">payload</span><span class="p">.</span><span class="nx">buttons</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">button</span><span class="p">);</span>
+</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a><span class="p">}</span>
+</span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a><span class="nx">print</span><span class="p">(</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">message</span><span class="p">));</span>
 </span></code></pre></div>
 <p><strong>Usage Example 3:</strong> To get the standard response for “<em>Ask if the user would like to switch to any of the new languages detected during a conversation</em>”</p>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">getCurrentOptions</span><span class="p">();</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">   </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;template&quot;</span><span class="p">,</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">   </span><span class="s2">&quot;payload&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">     </span><span class="s2">&quot;template_type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;button&quot;</span><span class="p">,</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">     </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;would you like to switch to new language detected: current language &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">info</span><span class="p">.</span><span class="nx">current_language</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;new language : &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">info</span><span class="p">.</span><span class="nx">new_language</span><span class="p">,</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">     </span><span class="s2">&quot;subText&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Button Template Description&quot;</span><span class="p">,</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">     </span><span class="s2">&quot;buttons&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[]</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">   </span><span class="p">};</span>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="p">};</span>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="kd">var</span><span class="w"> </span><span class="nx">options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;yes&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;no&quot;</span><span class="p">]</span>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="w"> </span><span class="nx">options</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">   </span><span class="kd">var</span><span class="w"> </span><span class="nx">button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="w">      </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;postback&quot;</span><span class="p">,</span>
-</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w">      </span><span class="s2">&quot;title&quot;</span><span class="o">:</span><span class="w"> </span><span class="nx">options</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span>
-</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="w">      </span><span class="s2">&quot;payload&quot;</span><span class="o">:</span><span class="w"> </span><span class="nx">options</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span>
-</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="w">   </span><span class="p">};</span>
-</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="w">   </span><span class="nx">message</span><span class="p">.</span><span class="nx">payload</span><span class="p">.</span><span class="nx">buttons</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">button</span><span class="p">);</span>
-</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="p">}</span>
-</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="nx">print</span><span class="p">(</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">message</span><span class="p">));</span>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">getCurrentOptions</span><span class="p">();</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">   </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;template&quot;</span><span class="p">,</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">   </span><span class="s2">&quot;payload&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">     </span><span class="s2">&quot;template_type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;button&quot;</span><span class="p">,</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">     </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;would you like to switch to new language detected: current language &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">info</span><span class="p">.</span><span class="nx">current_language</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;new language : &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">info</span><span class="p">.</span><span class="nx">new_language</span><span class="p">,</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">     </span><span class="s2">&quot;subText&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Button Template Description&quot;</span><span class="p">,</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">     </span><span class="s2">&quot;buttons&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[]</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="w">   </span><span class="p">};</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="p">};</span>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="kd">var</span><span class="w"> </span><span class="nx">options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;yes&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;no&quot;</span><span class="p">]</span>
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="w"> </span><span class="nx">options</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="w">   </span><span class="kd">var</span><span class="w"> </span><span class="nx">button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="w">      </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;postback&quot;</span><span class="p">,</span>
+</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="w">      </span><span class="s2">&quot;title&quot;</span><span class="o">:</span><span class="w"> </span><span class="nx">options</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span>
+</span><span id="__span-12-16"><a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="w">      </span><span class="s2">&quot;payload&quot;</span><span class="o">:</span><span class="w"> </span><span class="nx">options</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span>
+</span><span id="__span-12-17"><a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="w">   </span><span class="p">};</span>
+</span><span id="__span-12-18"><a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="w">   </span><span class="nx">message</span><span class="p">.</span><span class="nx">payload</span><span class="p">.</span><span class="nx">buttons</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">button</span><span class="p">);</span>
+</span><span id="__span-12-19"><a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="p">}</span>
+</span><span id="__span-12-20"><a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="nx">print</span><span class="p">(</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">message</span><span class="p">));</span>
 </span></code></pre></div>
 <p><strong>Usage Example 4:</strong> To get the standard response for “<em>User needs to authorize or re-authorize</em>”</p>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">getCurrentOptions</span><span class="p">();</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">   </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;template&#39;</span><span class="p">,</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">   </span><span class="nx">payload</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">      </span><span class="nx">template_type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;button&#39;</span><span class="p">,</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">      </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Please authorize before we continue...&#39;</span><span class="p">,</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">      </span><span class="nx">buttons</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">      </span><span class="p">{</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">         </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;url&#39;</span><span class="p">,</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">         </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Click here to authorize&#39;</span><span class="p">,</span>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">         </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="nx">info</span><span class="p">.</span><span class="nx">authorizationURL</span>
-</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">      </span><span class="p">]</span>
-</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">   </span><span class="p">}</span>
-</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="p">};</span>
-</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="nx">print</span><span class="p">(</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">message</span><span class="p">));</span><span class="sb">`</span>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">getCurrentOptions</span><span class="p">();</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">   </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;template&#39;</span><span class="p">,</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">   </span><span class="nx">payload</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">      </span><span class="nx">template_type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;button&#39;</span><span class="p">,</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">      </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Please authorize before we continue...&#39;</span><span class="p">,</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">      </span><span class="nx">buttons</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">      </span><span class="p">{</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">         </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;url&#39;</span><span class="p">,</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">         </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Click here to authorize&#39;</span><span class="p">,</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w">         </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="nx">info</span><span class="p">.</span><span class="nx">authorizationURL</span>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="w">      </span><span class="p">]</span>
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="w">   </span><span class="p">}</span>
+</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="p">};</span>
+</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="nx">print</span><span class="p">(</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">message</span><span class="p">));</span><span class="sb">`</span>
 </span></code></pre></div>
 <h3 id="koreutilgetambiguousintents">koreUtil.getAmbiguousIntents<a class="headerlink" href="#koreutilgetambiguousintents" title="Permanent link">&para;</a></h3>
 <p>The <code>koreUtil.getAmbiguousIntents</code> util function is used to obtain the ambiguous intents list when the <a href="../../automation/intelligence/event-handling/#ambiguous-intents-identified-event">Ambiguity Intents Identified</a> event gets triggered. Along with the list of ambiguous intents, the retrieved context object contains additional details such as ambiguity reasons – ‘multiple definite intents’, ‘multiple intents with similar scores’, etc., and the engine name that detects the intent (ML, FM, or KG), the score given by the respective engines, and so on. The <a href="../../automation/natural-language/training/ranking-and-resolver">Ranking and Resolver</a> score is displayed wherever available.</p>
-<p><strong>Usage Example</strong>
-You can use the <code>koreUtil.getAmbiguousIntents()</code> function in the entity prompt or any other node to obtain the list of ambiguous intents.</p>
+<p><strong>Usage Example</strong></p>
+<p>You can use the <code>koreUtil.getAmbiguousIntents()</code> function in the entity prompt or any other node to obtain the list of ambiguous intents.</p>
 <p><strong>Sample Response</strong></p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nt">&quot;intents&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">   </span><span class="p">{</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">      </span><span class="nt">&quot;intent&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Transfer Money&quot;</span><span class="p">,</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Transfer Money&quot;</span><span class="p">,</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">      </span><span class="nt">&quot;intentType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dialog&quot;</span><span class="p">,</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">      </span><span class="nt">&quot;mlScore&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">      </span><span class="nt">&quot;rrScore&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">7980</span><span class="p">,</span>
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">      </span><span class="nt">&quot;identifyingEngines&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">         </span><span class="nt">&quot;ml&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">         </span><span class="p">}</span>
-</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">   </span><span class="p">},</span>
-</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">   </span><span class="p">{</span>
-</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">      </span><span class="nt">&quot;intent&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pay Bills&quot;</span><span class="p">,</span>
-</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pay Bills&quot;</span><span class="p">,</span>
-</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="w">      </span><span class="nt">&quot;intentType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dialog&quot;</span><span class="p">,</span>
-</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="w">      </span><span class="nt">&quot;rrScore&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="w">      </span><span class="nt">&quot;identifyingEngines&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="w">         </span><span class="nt">&quot;traits&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="w">   </span><span class="p">},</span>
-</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="w">   </span><span class="p">{</span>
-</span><span id="__span-7-23"><a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="w">      </span><span class="nt">&quot;intent&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Status of Funds Transfer&quot;</span><span class="p">,</span>
-</span><span id="__span-7-24"><a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Status of Funds Transfer&quot;</span><span class="p">,</span>
-</span><span id="__span-7-25"><a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="w">      </span><span class="nt">&quot;intentType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dialog&quot;</span><span class="p">,</span>
-</span><span id="__span-7-26"><a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="w">      </span><span class="nt">&quot;fmScore&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5330</span><span class="p">,</span>
-</span><span id="__span-7-27"><a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="w">      </span><span class="nt">&quot;rrScore&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5330</span><span class="p">,</span>
-</span><span id="__span-7-28"><a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="w">      </span><span class="nt">&quot;identifyingEngines&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-29"><a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="w">         </span><span class="nt">&quot;fm&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-</span><span id="__span-7-30"><a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-7-31"><a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a><span class="w">   </span><span class="p">},</span>
-</span><span id="__span-7-32"><a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a><span class="w">   </span><span class="p">{</span>
-</span><span id="__span-7-33"><a id="__codelineno-7-33" name="__codelineno-7-33" href="#__codelineno-7-33"></a><span class="w">      </span><span class="nt">&quot;PrimaryQuestion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;How to Send Money&quot;</span><span class="p">,</span>
-</span><span id="__span-7-34"><a id="__codelineno-7-34" name="__codelineno-7-34" href="#__codelineno-7-34"></a><span class="w">      </span><span class="nt">&quot;MatchedQuestion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;How to Send Money&quot;</span><span class="p">,</span>
-</span><span id="__span-7-35"><a id="__codelineno-7-35" name="__codelineno-7-35" href="#__codelineno-7-35"></a><span class="w">      </span><span class="nt">&quot;intentType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FAQ&quot;</span><span class="p">,</span>
-</span><span id="__span-7-36"><a id="__codelineno-7-36" name="__codelineno-7-36" href="#__codelineno-7-36"></a><span class="w">      </span><span class="nt">&quot;faqScore&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span>
-</span><span id="__span-7-37"><a id="__codelineno-7-37" name="__codelineno-7-37" href="#__codelineno-7-37"></a><span class="w">      </span><span class="nt">&quot;rrScore&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">7960</span><span class="p">,</span>
-</span><span id="__span-7-38"><a id="__codelineno-7-38" name="__codelineno-7-38" href="#__codelineno-7-38"></a><span class="w">      </span><span class="nt">&quot;faqDemystification&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-39"><a id="__codelineno-7-39" name="__codelineno-7-39" href="#__codelineno-7-39"></a><span class="w">         </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-7-40"><a id="__codelineno-7-40" name="__codelineno-7-40" href="#__codelineno-7-40"></a><span class="w">            </span><span class="s2">&quot;Money Transfer&quot;</span>
-</span><span id="__span-7-41"><a id="__codelineno-7-41" name="__codelineno-7-41" href="#__codelineno-7-41"></a><span class="w">         </span><span class="p">]</span>
-</span><span id="__span-7-42"><a id="__codelineno-7-42" name="__codelineno-7-42" href="#__codelineno-7-42"></a><span class="w">      </span><span class="p">},</span>
-</span><span id="__span-7-43"><a id="__codelineno-7-43" name="__codelineno-7-43" href="#__codelineno-7-43"></a><span class="w">      </span><span class="nt">&quot;identifyingEngines&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-44"><a id="__codelineno-7-44" name="__codelineno-7-44" href="#__codelineno-7-44"></a><span class="w">         </span><span class="nt">&quot;faq&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-</span><span id="__span-7-45"><a id="__codelineno-7-45" name="__codelineno-7-45" href="#__codelineno-7-45"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-7-46"><a id="__codelineno-7-46" name="__codelineno-7-46" href="#__codelineno-7-46"></a><span class="w">   </span><span class="p">}</span>
-</span><span id="__span-7-47"><a id="__codelineno-7-47" name="__codelineno-7-47" href="#__codelineno-7-47"></a><span class="p">],</span>
-</span><span id="__span-7-48"><a id="__codelineno-7-48" name="__codelineno-7-48" href="#__codelineno-7-48"></a><span class="nt">&quot;cause&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;multipleChoices&quot;</span><span class="p">,</span>
-</span><span id="__span-7-49"><a id="__codelineno-7-49" name="__codelineno-7-49" href="#__codelineno-7-49"></a><span class="nt">&quot;userInput&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;How do I make a payment or transfer&quot;</span>
-</span><span id="__span-7-50"><a id="__codelineno-7-50" name="__codelineno-7-50" href="#__codelineno-7-50"></a><span class="p">}</span><span class="err">;</span>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="p">{</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="nt">&quot;intents&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">   </span><span class="p">{</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">      </span><span class="nt">&quot;intent&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Transfer Money&quot;</span><span class="p">,</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Transfer Money&quot;</span><span class="p">,</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">      </span><span class="nt">&quot;intentType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dialog&quot;</span><span class="p">,</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">      </span><span class="nt">&quot;mlScore&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">      </span><span class="nt">&quot;rrScore&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">7980</span><span class="p">,</span>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">      </span><span class="nt">&quot;identifyingEngines&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">         </span><span class="nt">&quot;ml&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="w">         </span><span class="p">}</span>
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="w">   </span><span class="p">},</span>
+</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="w">   </span><span class="p">{</span>
+</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="w">      </span><span class="nt">&quot;intent&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pay Bills&quot;</span><span class="p">,</span>
+</span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pay Bills&quot;</span><span class="p">,</span>
+</span><span id="__span-14-16"><a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a><span class="w">      </span><span class="nt">&quot;intentType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dialog&quot;</span><span class="p">,</span>
+</span><span id="__span-14-17"><a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a><span class="w">      </span><span class="nt">&quot;rrScore&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-14-18"><a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a><span class="w">      </span><span class="nt">&quot;identifyingEngines&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-19"><a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a><span class="w">         </span><span class="nt">&quot;traits&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-14-20"><a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-14-21"><a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a><span class="w">   </span><span class="p">},</span>
+</span><span id="__span-14-22"><a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a><span class="w">   </span><span class="p">{</span>
+</span><span id="__span-14-23"><a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a><span class="w">      </span><span class="nt">&quot;intent&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Status of Funds Transfer&quot;</span><span class="p">,</span>
+</span><span id="__span-14-24"><a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a><span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Status of Funds Transfer&quot;</span><span class="p">,</span>
+</span><span id="__span-14-25"><a id="__codelineno-14-25" name="__codelineno-14-25" href="#__codelineno-14-25"></a><span class="w">      </span><span class="nt">&quot;intentType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dialog&quot;</span><span class="p">,</span>
+</span><span id="__span-14-26"><a id="__codelineno-14-26" name="__codelineno-14-26" href="#__codelineno-14-26"></a><span class="w">      </span><span class="nt">&quot;fmScore&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5330</span><span class="p">,</span>
+</span><span id="__span-14-27"><a id="__codelineno-14-27" name="__codelineno-14-27" href="#__codelineno-14-27"></a><span class="w">      </span><span class="nt">&quot;rrScore&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5330</span><span class="p">,</span>
+</span><span id="__span-14-28"><a id="__codelineno-14-28" name="__codelineno-14-28" href="#__codelineno-14-28"></a><span class="w">      </span><span class="nt">&quot;identifyingEngines&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-29"><a id="__codelineno-14-29" name="__codelineno-14-29" href="#__codelineno-14-29"></a><span class="w">         </span><span class="nt">&quot;fm&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-14-30"><a id="__codelineno-14-30" name="__codelineno-14-30" href="#__codelineno-14-30"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-14-31"><a id="__codelineno-14-31" name="__codelineno-14-31" href="#__codelineno-14-31"></a><span class="w">   </span><span class="p">},</span>
+</span><span id="__span-14-32"><a id="__codelineno-14-32" name="__codelineno-14-32" href="#__codelineno-14-32"></a><span class="w">   </span><span class="p">{</span>
+</span><span id="__span-14-33"><a id="__codelineno-14-33" name="__codelineno-14-33" href="#__codelineno-14-33"></a><span class="w">      </span><span class="nt">&quot;PrimaryQuestion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;How to Send Money&quot;</span><span class="p">,</span>
+</span><span id="__span-14-34"><a id="__codelineno-14-34" name="__codelineno-14-34" href="#__codelineno-14-34"></a><span class="w">      </span><span class="nt">&quot;MatchedQuestion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;How to Send Money&quot;</span><span class="p">,</span>
+</span><span id="__span-14-35"><a id="__codelineno-14-35" name="__codelineno-14-35" href="#__codelineno-14-35"></a><span class="w">      </span><span class="nt">&quot;intentType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FAQ&quot;</span><span class="p">,</span>
+</span><span id="__span-14-36"><a id="__codelineno-14-36" name="__codelineno-14-36" href="#__codelineno-14-36"></a><span class="w">      </span><span class="nt">&quot;faqScore&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span>
+</span><span id="__span-14-37"><a id="__codelineno-14-37" name="__codelineno-14-37" href="#__codelineno-14-37"></a><span class="w">      </span><span class="nt">&quot;rrScore&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">7960</span><span class="p">,</span>
+</span><span id="__span-14-38"><a id="__codelineno-14-38" name="__codelineno-14-38" href="#__codelineno-14-38"></a><span class="w">      </span><span class="nt">&quot;faqDemystification&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-39"><a id="__codelineno-14-39" name="__codelineno-14-39" href="#__codelineno-14-39"></a><span class="w">         </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-14-40"><a id="__codelineno-14-40" name="__codelineno-14-40" href="#__codelineno-14-40"></a><span class="w">            </span><span class="s2">&quot;Money Transfer&quot;</span>
+</span><span id="__span-14-41"><a id="__codelineno-14-41" name="__codelineno-14-41" href="#__codelineno-14-41"></a><span class="w">         </span><span class="p">]</span>
+</span><span id="__span-14-42"><a id="__codelineno-14-42" name="__codelineno-14-42" href="#__codelineno-14-42"></a><span class="w">      </span><span class="p">},</span>
+</span><span id="__span-14-43"><a id="__codelineno-14-43" name="__codelineno-14-43" href="#__codelineno-14-43"></a><span class="w">      </span><span class="nt">&quot;identifyingEngines&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-44"><a id="__codelineno-14-44" name="__codelineno-14-44" href="#__codelineno-14-44"></a><span class="w">         </span><span class="nt">&quot;faq&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-14-45"><a id="__codelineno-14-45" name="__codelineno-14-45" href="#__codelineno-14-45"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-14-46"><a id="__codelineno-14-46" name="__codelineno-14-46" href="#__codelineno-14-46"></a><span class="w">   </span><span class="p">}</span>
+</span><span id="__span-14-47"><a id="__codelineno-14-47" name="__codelineno-14-47" href="#__codelineno-14-47"></a><span class="p">],</span>
+</span><span id="__span-14-48"><a id="__codelineno-14-48" name="__codelineno-14-48" href="#__codelineno-14-48"></a><span class="nt">&quot;cause&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;multipleChoices&quot;</span><span class="p">,</span>
+</span><span id="__span-14-49"><a id="__codelineno-14-49" name="__codelineno-14-49" href="#__codelineno-14-49"></a><span class="nt">&quot;userInput&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;How do I make a payment or transfer&quot;</span>
+</span><span id="__span-14-50"><a id="__codelineno-14-50" name="__codelineno-14-50" href="#__codelineno-14-50"></a><span class="p">}</span><span class="err">;</span>
 </span></code></pre></div>
 <p>In this response, we obtain the details of multiple ambiguous intents from different engines.</p>
 <p>The type of intent is captured in the <code>intentType</code>object. For example, <code>Status of Funds Transfer</code> is a Dialog-type intent, and <code>How to Send Money</code> is a FAQ-type intent. The identifying engine for that respective intent and the confidence scores assigned by the engines for the intents are captured. For example, for the intent <code>Transfer Money</code>, the <code>mlScore</code>is 100. The <code>rrScore</code>is the <a href="../../automation/natural-language/training/ranking-and-resolver">Ranking and Resolver</a> score for the winning intent. The object <code>faqDemystification</code>provides the bot path for the FAQ. The user input and the cause for the ambiguous intents are also captured.</p>
 <h3 id="koreutilgetsessionid">koreUtil.getSessionId<a class="headerlink" href="#koreutilgetsessionid" title="Permanent link">&para;</a></h3>
 <p>koreUtil.getSessionId is a Platform offered JS library for obtaining the current conversation session Id.</p>
-<p><strong>Usage Example:</strong>
-<code>var sessionId = koreUtil.getSessionId();</code></p>
+<p><strong>Usage Example:</strong></p>
+<p><code>var sessionId = koreUtil.getSessionId();</code></p>
 <p><strong>Output:</strong></p>
-<p>For sessionId:
-<code>5x54321x11xx87654321xx12</code></p>
+<p>For sessionId:</p>
+<p><code>5x54321x11xx87654321xx12</code></p>
 <h3 id="koreutilgetsunshineconversationsmetadata">koreUtil.getSunshineConversationsMetadata<a class="headerlink" href="#koreutilgetsunshineconversationsmetadata" title="Permanent link">&para;</a></h3>
 <p>The XO Platform captures and stores the metadata sent as part of the Pass control action that routes the conversation to the bot via Switchboard integration API in Zendesk. Developers can use the <code>koreUtil.getSunshineConversationsMetadata()</code> function to access the stored metadata. For more information, read the <a href="../../channels/add-sunshine-conversations-channel/#switchboard-integration-for-agent-handoff">Switchboard Integration</a> section.</p>
 <p>The <strong>koreUtil.getSunshineConversationsMetadata</strong> function can be used by a bot developer to access the metadata captured in any node.</p>
-<p><strong>Usage Example:
-<code>koreUtil.getSunshineConversationsMetadata();</code></strong></p>
+<p><strong>Usage Example:</strong></p>
+<p><code>koreUtil.getSunshineConversationsMetadata();</code></p>
 <p><strong>Output:</strong></p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nt">&quot;dataCapture.systemField.tags&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TransferToBot&quot;</span><span class="p">,</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nt">&quot;dataCapture.systemField.priority&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;high&quot;</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="p">}</span>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="p">{</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">   </span><span class="nt">&quot;dataCapture.systemField.tags&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TransferToBot&quot;</span><span class="p">,</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">   </span><span class="nt">&quot;dataCapture.systemField.priority&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;high&quot;</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="p">}</span>
 </span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-</div>
 <p>The <strong>koreUtil.getSunshineConversationsMetadata</strong> is supported in the Platform v10.1.9 and above versions.</p>
+</div>
 <h3 id="koreutilclearauthprofiles">koreUtil.ClearAuthProfiles<a class="headerlink" href="#koreutilclearauthprofiles" title="Permanent link">&para;</a></h3>
 <p>The <code>koreUtil.ClearAuthProfiles</code> is a Platform function to clear tokens associated with an authorization profile of an active conversation by passing a particular profile name in the custom script. This function can be invoked from any component that supports JavaScript.</p>
 <p><strong>Usage Example:</strong></p>
-<p>Example : To clear one or more authorization profile:</p>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">ClearAuthProfiles</span><span class="p">([</span><span class="nx">Auth_Profle_Name</span><span class="p">]);</span>
+<p>To clear one or more authorization profile:</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">ClearAuthProfiles</span><span class="p">([</span><span class="nx">Auth_Profle_Name</span><span class="p">]);</span>
 </span></code></pre></div>
-<p>Example:
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">ClearAuthProfiles</span><span class="p">([</span><span class="s2">&quot;Auth_openai&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Auth_hubspot&quot;</span><span class="p">]);</span>
-</span></code></pre></div></p>
+<p>Example:</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">ClearAuthProfiles</span><span class="p">([</span><span class="s2">&quot;Auth_openai&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Auth_hubspot&quot;</span><span class="p">]);</span>
+</span></code></pre></div>
 <h3 id="koreutilclearallauthprofiles">koreUtil.ClearAllAuthProfiles<a class="headerlink" href="#koreutilclearallauthprofiles" title="Permanent link">&para;</a></h3>
 <p>The <code>koreUtil.ClearAllAuthProfiles</code> is a Platform function to clear tokens associated with all auth profiles associated with any active conversation. This function can be invoked from any component that supports JavaScript.</p>
 <p><strong>Usage Example:</strong></p>
-<p>Example : To clear all authorization profiles:</p>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">ClearAllAuthProfiles</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">);</span>
+<p>To clear all authorization profiles:</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">ClearAllAuthProfiles</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">);</span>
 </span></code></pre></div>
 <h3 id="koreutilcloseconversationsession">koreUtil.closeConversationSession<a class="headerlink" href="#koreutilcloseconversationsession" title="Permanent link">&para;</a></h3>
 <p>koreUtil.closeConversationSession is a Platform function for force closing any active conversation. This function can be invoked from any component that supports JavaScript. When you invoke this function, the Platform will discard any ongoing task and the active conversation session  will be closed. The Platform also presents the session timeout message on the supported channels.</p>
 <p><strong>Usage Example:</strong></p>
-<p><div class="language-javascript highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">closeConversationSession</span><span class="p">();</span>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">closeConversationSession</span><span class="p">();</span>
 </span></code></pre></div>
-<strong>Output:</strong></p>
+<p><strong>Output:</strong></p>
 <p>No response is returned and the session ends.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-</div>
 <p>The koreUtil.closeConversationSession is supported in the Platform v8.1 and above versions.</p>
+</div>
 <h3 id="koreutilautotranslate">koreUtil.autoTranslate<a class="headerlink" href="#koreutilautotranslate" title="Permanent link">&para;</a></h3>
 <p>koreUtil.autotranslate is a Platform function that lets you automatically translate the virtual assistant response from a language in which the assistant is configured to the language in which the user is interacting or a language of your choice. This function uses a translation engine to translate the bot responses into user input language. For more information on how to configure a translation engine, <a href="../../app-settings/language-management/managing-translation-services">refer here</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-</div>
 <p>To use the <code>koreUtil.autoTranlsate</code>function for language translation, you must have the Access Key provided by your translation service provider, such as Google Translator, Microsoft Translator, etc.</p>
+</div>
 <p>Please refer below for the translation behavior:</p>
 <table>
   <tr>
@@ -13027,7 +12979,7 @@ You can use the <code>koreUtil.getAmbiguousIntents()</code> function in the enti
    <td>Refers to plain text responses defined anywhere in the virtual assistant. For example, prompts, responses etc.
    </td>
    <td>Default: Auto-translated
-<p>
+<br>
 You can choose to translate only a specific part of the response by using the koreUtil.autoTranslate function only for that part.
    </td>
   </tr>
@@ -13037,14 +12989,14 @@ You can choose to translate only a specific part of the response by using the ko
    <td>Refers to responses defined using JavaScript. For example, prompts, responses etc.
    </td>
    <td>Default: No auto-translation
-<p>
+<br>
 You can use the AutoTranslation function inside the JavaScript to define the parts of the responses that need translation.
    </td>
   </tr>
   <tr>
    <td>Auto-formatted Responses
    </td>
-   <td>Refers to the responses that are auto-formatted by the Platform as per the channel specifications—for example, confirmations, list of values, ambiguities, etc.
+   <td>Refers to the responses that are auto-formatted by the Platform as per the channel specifications - for example, confirmations, list of values, ambiguities, etc.
    </td>
    <td>Default: Auto-translated
    </td>
@@ -13052,34 +13004,35 @@ You can use the AutoTranslation function inside the JavaScript to define the par
 </table>
 
 <p><strong>Usage Example:</strong></p>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">autoTranslate</span><span class="p">();</span>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">autoTranslate</span><span class="p">();</span>
 </span></code></pre></div>
 <p>Here are a few use-case examples for your reference:</p>
-<p>**Use Case-1:**To translate part of a sentence in the user’s language:</p>
+<p><strong>Use Case-1:</strong> To translate part of a sentence in the user’s language:</p>
 <p><strong>Example:</strong></p>
-<p><div class="language-javascript highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="p">{{</span><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">autoTranslate</span><span class="p">(</span><span class="s1">&#39;Welcome! I am a virtual assistant powered by &#39;</span><span class="p">)}}</span><span class="w"> </span><span class="nx">General</span><span class="w"> </span><span class="nx">Insurance</span>
-</span></code></pre></div>
-<strong>Output in Serbian</strong></p>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nx">Добредојдовте</span><span class="o">!</span><span class="w"> </span><span class="nx">Јас</span><span class="w"> </span><span class="nx">сум</span><span class="w"> </span><span class="nx">виртуелен</span><span class="w"> </span><span class="nx">асистент</span><span class="w"> </span><span class="nx">напојуван</span><span class="w"> </span><span class="nx">од</span><span class="w"> </span><span class="nx">General</span><span class="w"> </span><span class="nx">Insurance</span>
-</span></code></pre></div>
-<p>**Use Case-2:**To translate the content of a customized JavaScript template, then use koreUtil.autoTranslate as follows:</p>
-<p><strong>Example:</strong></p>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">accountBalance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getbalance</span><span class="p">();</span><span class="w"> </span>
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">autoTranslate</span><span class="p">(</span><span class="s2">&quot;Your account balance is &quot;</span><span class="p">);</span><span class="w"> </span>
-</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="kd">var</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">message</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">env</span><span class="p">.</span><span class="nx">currency</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">accountBalance</span><span class="p">);</span><span class="w"> </span><span class="nx">print</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="p">{{</span><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">autoTranslate</span><span class="p">(</span><span class="s1">&#39;Welcome! I am a virtual assistant powered by &#39;</span><span class="p">)}}</span><span class="w"> </span><span class="nx">General</span><span class="w"> </span><span class="nx">Insurance</span>
 </span></code></pre></div>
 <p><strong>Output in Serbian</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Баланс вашего счета USD 5,278.00
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="nx">Добредојдовте</span><span class="o">!</span><span class="w"> </span><span class="nx">Јас</span><span class="w"> </span><span class="nx">сум</span><span class="w"> </span><span class="nx">виртуелен</span><span class="w"> </span><span class="nx">асистент</span><span class="w"> </span><span class="nx">напојуван</span><span class="w"> </span><span class="nx">од</span><span class="w"> </span><span class="nx">General</span><span class="w"> </span><span class="nx">Insurance</span>
+</span></code></pre></div>
+<p><strong>Use Case-2:</strong> To translate the content of a customized JavaScript template, then use koreUtil.autoTranslate as follows:</p>
+<p><strong>Example:</strong></p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">accountBalance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getbalance</span><span class="p">();</span><span class="w"> </span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">autoTranslate</span><span class="p">(</span><span class="s2">&quot;Your account balance is &quot;</span><span class="p">);</span><span class="w"> </span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="kd">var</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">message</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">env</span><span class="p">.</span><span class="nx">currency</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">accountBalance</span><span class="p">);</span><span class="w"> </span><span class="nx">print</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+</span></code></pre></div>
+<p><strong>Output in Serbian</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>Баланс вашего счета USD 5,278.00
 </span></code></pre></div>
 <p><strong>Use Case-3:</strong> To translate the bot responses in a particular language by passing the language code. An example where the assistant will respond only in German even though the user is interacting in any language:</p>
 <p><strong>Example</strong></p>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">autoTranslate</span><span class="p">(</span><span class="s2">&quot;This is a sample message&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;de&quot;</span><span class="p">);</span>
-</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="nx">print</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">koreUtil</span><span class="p">.</span><span class="nx">autoTranslate</span><span class="p">(</span><span class="s2">&quot;This is a sample message&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;de&quot;</span><span class="p">);</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="nx">print</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
 </span></code></pre></div>
 <p><strong>Output in German</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>Dies ist eine Beispielnachricht
+<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>Dies ist eine Beispielnachricht
 </span></code></pre></div>
-<h4 id="related-link">Related Link<a class="headerlink" href="#related-link" title="Permanent link">&para;</a></h4>
+<p><a class="glightbox" href="../images/kore-util-auto-translate.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/kore-util-auto-translate.png" alt="Auto translate service as Bot Response" title="Auto translate service as Bot Response" style="border:1px solid gray; zoom:60%;"></a></p>
+<p>** Related Link</p>
 <ul>
 <li><strong><a href="../../automation/use-cases/dialogs/node-types/working-with-the-script-node">Script Node</a></strong> (Write JavaScript code in a dialog task)</li>
 </ul>
@@ -13162,7 +13115,7 @@ You can use the AutoTranslation function inside the JavaScript to define the par
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../contact-center/contact-center-api-list/" class="md-footer__link md-footer__link--prev" aria-label="Previous: API List">
+          <a href="../../contact-center/contact-center-api-list/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Contact Center APIs">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -13172,7 +13125,7 @@ You can use the AutoTranslation function inside the JavaScript to define the par
                 Previous
               </span>
               <div class="md-ellipsis">
-                API List
+                Contact Center APIs
               </div>
             </div>
           </a>

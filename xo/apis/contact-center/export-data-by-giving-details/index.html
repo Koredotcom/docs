@@ -5204,7 +5204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/servicenow/" class="md-nav__link">
+      <a href="../../../searchai/content-sources/servicenow.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5816,7 +5816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails/" class="md-nav__link">
+      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9442,64 +9442,16 @@
   
   
   
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="../contact-center-api-list/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_3_1_3_2" id="__nav_7_3_1_3_2_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Contact Center APIs
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_1_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3_1_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Contact Center APIs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../contact-center-api-list/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    API List
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -12292,91 +12244,80 @@
 <h1 id="export-data-by-accountid-and-orgid">Export data by accountId and orgId<a class="headerlink" href="#export-data-by-accountid-and-orgid" title="Permanent link">&para;</a></h1>
 <p>To get exported data which is one of (skillsGroups, Queues, StandardResponses, Waiting Experience) by giving details with account Id and orgId.</p>
 <table>
-  <tr>
-   <td>Method
-   </td>
-   <td>GET
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoint
-   </td>
-   <td><code>http://{host}/agentassist/api/public/analytics/{instanceBotId}/</code>
-<code>importSmartAssistFunctionalities?accountId=&orgId=&type=</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/">How to generate the JWT Token</a>.
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td> SmartAssist Import and Export Feature
-   </td>
-  </tr>
+<thead>
+<tr>
+<th><strong>PARAMETER</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+<th><strong>TYPE</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Method</strong></td>
+<td>GET</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Endpoint</strong></td>
+<td><code>http://{{host}}/agentassist/api/public/analytics/{{instanceBotId}}/importSmartAssistFunctionalities?accountId=&amp;orgId=&amp;type=</code></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Content Type</strong></td>
+<td><code>application/json</code></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Authorization</strong></td>
+<td><code>auth: {{JWT}}</code> <br>See <a href="../../automation/api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>API Scope</strong></td>
+<td>SmartAssist Import and Export Feature</td>
+<td></td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="query-parameters">Query Parameters<a class="headerlink" href="#query-parameters" title="Permanent link">&para;</a></h2>
 <table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL, for example, https://smartassist.kore.ai
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>AccountId
-   </td>
-   <td>The Account Id.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>OrgId
-   </td>
-   <td>The Organization Id.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>BotId
-   </td>
-   <td>The BotId or StreamId. You can access it from the General Settings page of the bot.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
+<thead>
+<tr>
+<th><strong>PARAMETER</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+<th><strong>TYPE</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>host</td>
+<td>Environment URL, for example, <a href="https://platform.kore.ai">https://platform.kore.ai</a></td>
+<td>string, required</td>
+</tr>
+<tr>
+<td>AccountId</td>
+<td>The Account Id.</td>
+<td>string, required</td>
+</tr>
+<tr>
+<td>OrgId</td>
+<td>The Organization Id.</td>
+<td>String, Required</td>
+</tr>
+<tr>
+<td>BotId</td>
+<td>The BotId or StreamId. You can access it from the General Settings page of the bot.</td>
+<td>string, required</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="sample-request">Sample Request<a class="headerlink" href="#sample-request" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request GET &#39;https://uat-smartassist.kore.ai/agentassist/api/v1/public/analytics/st-ef2ab28a-0d16-5
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>cbf-bf31-a395bdb19d69/importSmartAssistFunctionalities?accountId=6297011e24f30b5ab18e6e4c&amp;orgId=o-18f401c2-f1a6-5a97-
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>8b5c-4511863cec93&amp;type=skillGroups&#39; 
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request GET &#39;https://{{host}}/agentassist/api/v1/public/analytics/st-ef2ab28a-0d16-5
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>cbf-bf31-a395bdb1xxxx/importSmartAssistFunctionalities?accountId=6297011e24f30b5ab18e6e4c&amp;orgId=o-18f401c2-f1a6-5a97-
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>8b5c-4511863cxxxx&amp;type=skillGroups&#39; 
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--header &#39;Accept: application/json, text/plain, */*&#39; 
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>--header &#39;Accept-Language: en-GB,en-US;q=0.9,en;q=0.8&#39; 
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>--header &#39;AccountId: 63e0f303560867d783133a8f&#39; 
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>--header &#39;AccountId: 63e0f303560867d78313xxxx&#39; 
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>--header &#39;Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYXBwSWQiOiJjcy05N2IwNDZlMy
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>1jYzA3LTVhMDEtYmYwNS1jYmZhNzAzMmFlY2IifQ.xv4hGyyqH9JAN8iPIMaxNgOqgr_2gfQGohu3aTCGGjI&#39; 
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>--header &#39;Cache-Control: no-cache&#39; 
@@ -12393,7 +12334,7 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/">How to generate th
 </span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>--header &#39;state: configured&#39;
 </span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>--header &#39;auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTc4OGQ0OWEwLTQ3ZjUtNTdhYS1iZmVlLWFjMWI1MWVhMWFkOCJ9.
 </span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>KcWr4dd_hZwCYl0D6jciR1IETqzZsThTNBEmams3MWY&#39;
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>--header &#39;accountId: 63f48134cf47814d774bc316&#39;
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>--header &#39;accountId: 63f48134cf47814d774bxxxx&#39;
 </span></code></pre></div>
 <h2 id="sample-response">Sample Response<a class="headerlink" href="#sample-response" title="Permanent link">&para;</a></h2>
 <p>The response will be an array of objects.

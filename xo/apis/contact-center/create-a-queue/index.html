@@ -5204,7 +5204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/servicenow/" class="md-nav__link">
+      <a href="../../../searchai/content-sources/servicenow.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5816,7 +5816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails/" class="md-nav__link">
+      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9442,64 +9442,16 @@
   
   
   
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="../contact-center-api-list/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_1_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_3_1_3_2" id="__nav_7_3_1_3_2_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
     Contact Center APIs
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_1_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3_1_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Contact Center APIs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../contact-center-api-list/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    API List
-  </span>
-  
-
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -12301,67 +12253,53 @@
 <h1 id="create-a-queue">Create a Queue<a class="headerlink" href="#create-a-queue" title="Permanent link">&para;</a></h1>
 <p>To create a queue with the given <code>streamId</code>.</p>
 <table>
-  <tr>
-   <td>Method
-   </td>
-   <td>POST
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoints
-   </td>
-   <td><code>https://{{host}}/agentassist/api/v1/public/{{streamId}}/queues</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>Configuration
-   </td>
-  </tr>
+<thead>
+<tr>
+<th><strong>METHOD</strong></th>
+<th><strong>POST</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Endpoints</strong></td>
+<td><code>https://{{host}}/agentassist/api/v1/public/{{streamId}}/queues</code></td>
+</tr>
+<tr>
+<td><strong>Content Type</strong></td>
+<td><code>application/json</code></td>
+</tr>
+<tr>
+<td><strong>Authorization</strong></td>
+<td><code>auth: {{JWT}}</code><br>See <a href="../../automation/api-introduction/#generating-the-jwt-token">How to generate the JWT Token.</a></td>
+</tr>
+<tr>
+<td><strong>API Scope</strong></td>
+<td>Configuration</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="path-parameters">Path Parameters<a class="headerlink" href="#path-parameters" title="Permanent link">&para;</a></h2>
 <table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL, for example, https://smartassist.kore.ai
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>streamId
-   </td>
-   <td>You can access it from the General Settings page of the bot.
-   </td>
-   <td>string, required
-   </td>
-  </tr>
+<thead>
+<tr>
+<th><strong>PARAMETER</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+<th><strong>TYPE</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>host</td>
+<td>Environment URL, for example, <a href="https://platform.kore.ai">https://platform.kore.ai</a></td>
+<td>string, required</td>
+</tr>
+<tr>
+<td>streamId</td>
+<td>You can access it from the General Settings page of the bot.</td>
+<td>string, required</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="sample-request">Sample Request<a class="headerlink" href="#sample-request" title="Permanent link">&para;</a></h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a> &quot;isActive&quot;: true,
@@ -12519,167 +12457,110 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
 </span></code></pre></div>
 <h2 id="body-parameters">Body Parameters<a class="headerlink" href="#body-parameters" title="Permanent link">&para;</a></h2>
 <table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>name
-   </td>
-   <td>Name of the queue.
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>description
-   </td>
-   <td>Brief description of the queue.
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-  <tr>
-   <td>isAdvancedRoutingEnabled
-   </td>
-   <td>Boolean value to know if advanced routing is enabled or not. For example: True.
-   </td>
-   <td>boolean, optional
-   </td>
-  </tr>
-  <tr>
-   <td>hoursOfOperation {Id}
-   </td>
-   <td>Hours of operation ID. For example: 6335486202826111eb3c3759
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>hoursOfOperation {name}
-   </td>
-   <td>Hours of operation Name. For example: Default hours of operation.
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-  <tr>
-   <td>agents {userId}
-   </td>
-   <td>You can get this from GET /agents api.
-For example: u-ca2cc57f-5c2b-5437-bb07-fe9020d88050
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>agents {aId}
-   </td>
-   <td>You can get this from GET /agents api.
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>agents {name}
-   </td>
-   <td>Name of the agent.
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-  <tr>
-   <td>agents {isPreferredAgent}
-   </td>
-   <td>Is the agent a preferred agent or not.
-   </td>
-   <td>boolean, required
-   </td>
-  </tr>
-  <tr>
-   <td>skills {Id}
-   </td>
-   <td>You can get this from GET /skills api.
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>skills {name}
-   </td>
-   <td>Name of the Skill.
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-  <tr>
-   <td>skills {isExpireEnabled}
-   </td>
-   <td>The skill should expire or not.
-   </td>
-   <td>boolean, required
-   </td>
-  </tr>
-  <tr>
-   <td>skills{expireTime}
-   </td>
-   <td>It is required if isExpireEnabled is true. For example: expireTime: {min:5, sec:0}
-   </td>
-   <td>object, optional
-   </td>
-  </tr>
-  <tr>
-   <td>agentGroups
-   </td>
-   <td>An array of objects containing agentGroupIds. For example: [“ag-410b641-16ae-4c02-9355-8a47c2b9a296″]
-   </td>
-   <td>array, optional
-   </td>
-  </tr>
-  <tr>
-   <td>advancedSettings {preferredAgentTimeout}
-   </td>
-   <td>If the preferred agent is selected, then this is required. For example: Example: preferredAgentTimeout: {min:10}
-   </td>
-   <td>object, optional
-   </td>
-  </tr>
-  <tr>
-   <td>advancedSettings {isSkillMatchEnabled}
-   </td>
-   <td>If skill match is enabled.
-   </td>
-   <td>boolean, optional
-   </td>
-  </tr>
-  <tr>
-   <td>advancedSettings {isAffinityMatchEnabled}
-   </td>
-   <td>If agent affinity match is enabled.
-   </td>
-   <td>boolean, optional
-   </td>
-  </tr>
-  <tr>
-   <td>enableTransferRules
-   </td>
-   <td>To enable the transfer rules.
-   </td>
-   <td>boolean, optional
-   </td>
-  </tr>
-  <tr>
-   <td>transferQueues
-   </td>
-   <td>An array containing queueIds. For Example: [“qu-70d0451-bb2a-4cc9-9bdb-ec5c1ccc464c”]
-   </td>
-   <td>array, optional
-   </td>
-  </tr>
+<thead>
+<tr>
+<th><strong>PARAMETER</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+<th><strong>TYPE</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>Name of the queue.</td>
+<td>string, required</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Brief description of the queue.</td>
+<td>string, optional</td>
+</tr>
+<tr>
+<td>isAdvancedRoutingEnabled</td>
+<td>Boolean value to know if advanced routing is enabled or not.</td>
+<td>boolean, optional</td>
+</tr>
+<tr>
+<td Id="Id">hoursOfOperation</td>
+<td>Hours of operation ID.</td>
+<td>string, required</td>
+</tr>
+<tr>
+<td name="name">hoursOfOperation</td>
+<td>Hours of operation Name.</td>
+<td>string, optional</td>
+</tr>
+<tr>
+<td userId="userId">agents</td>
+<td>User ID of the agent. You can get this from GET /agents api.</td>
+<td>string, required</td>
+</tr>
+<tr>
+<td aId="aId">agents</td>
+<td>Agent ID. You can get this from GET /agents api.</td>
+<td>string, required</td>
+</tr>
+<tr>
+<td name="name">agents</td>
+<td>Name of the agent.</td>
+<td>string, optional</td>
+</tr>
+<tr>
+<td isPreferredAgent="isPreferredAgent">agents</td>
+<td>Indicates if the agent is a preferred agent or not.</td>
+<td>boolean, required</td>
+</tr>
+<tr>
+<td Id="Id">skills</td>
+<td>Skill ID. You can get this from GET /skills api.</td>
+<td>string, required</td>
+</tr>
+<tr>
+<td name="name">skills</td>
+<td>Name of the Skill.</td>
+<td>string, optional</td>
+</tr>
+<tr>
+<td isExpireEnabled="isExpireEnabled">skills</td>
+<td>Indicates if the skill should expire or not.</td>
+<td>boolean, required</td>
+</tr>
+<tr>
+<td expireTime="expireTime">skills</td>
+<td>Time for skill expiration if enabled.</td>
+<td>object, optional</td>
+</tr>
+<tr>
+<td>agentGroups</td>
+<td>An array of objects containing agentGroupIds.</td>
+<td>array, optional</td>
+</tr>
+<tr>
+<td preferredAgentTimeout="preferredAgentTimeout">advancedSettings</td>
+<td>Preferred agent timeout settings.</td>
+<td>object, optional</td>
+</tr>
+<tr>
+<td isSkillMatchEnabled="isSkillMatchEnabled">advancedSettings</td>
+<td>Indicates if skill match is enabled.</td>
+<td>boolean, optional</td>
+</tr>
+<tr>
+<td isAffinityMatchEnabled="isAffinityMatchEnabled">advancedSettings</td>
+<td>Indicates if agent affinity match is enabled.</td>
+<td>boolean, optional</td>
+</tr>
+<tr>
+<td>enableTransferRules</td>
+<td>Indicates whether transfer rules are enabled.</td>
+<td>boolean, optional</td>
+</tr>
+<tr>
+<td>transferQueues</td>
+<td>An array containing queueIds for transfer.</td>
+<td>array, optional</td>
+</tr>
+</tbody>
 </table>
 
 
