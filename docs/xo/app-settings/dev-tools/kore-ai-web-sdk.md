@@ -33,7 +33,7 @@ To get started, you will need to build a bot to run in the test application, and
 2. Hover over **Travel Planning Sample**, and then click **Install**.
 3. The Travel Planning Sample installed successfully message is displayed and the sample bot is added to your **Bots** left-hand navigation menu.
 
-In this next section, you will define the Web/Mobile Client channel for the Travel Planning Sample bot by creating a new client app and defining channel settings. [See here](../../../channels/add-web-mobile-client/){:target="_blank"} for a detailed explanation of the steps.
+In this next section, you will define the Web/Mobile Client channel for the Travel Planning Sample bot by creating a new client app and defining channel settings. [See here](../../../channels/add-web-mobile-client){:target="_blank"} for a detailed explanation of the steps.
 
 4. On the bot builder top menu, select the **Deploy** tab
 5. From the left menu, click **Integrations > Web/Mobile SDK**.

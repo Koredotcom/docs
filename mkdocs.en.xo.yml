@@ -496,7 +496,7 @@ nav:
       - Dev Tools:
         - App Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
         - Authorization Profiles: app-settings/dev-tools/bot-authorization/bot-authentication.md
-        - Web/Mobile SDK: sdk/tutorials/web-sdk.md
+        - Web/Mobile SDK: app-settings/dev-tools/kore-ai-web-sdk.md
         - API Scopes: apis/automation/api-introduction.md
         - Mock Scenes: app-settings/mock-scenes.md
       - Using Variables: app-settings/variables/using-bot-variables.md
