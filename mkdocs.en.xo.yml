@@ -428,6 +428,7 @@ nav:
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md
+        - How the Web SDK Works: sdk/how-web-sdk-works.md
         - SDK Security: sdk/sdk-security.md
         - SDK Registration: sdk/app-registration.md
         - SDK Configurations: sdk/sdk-configuration.md

@@ -2,7 +2,7 @@
 
 
 
-**How the Web SDK Works and Resource Utilization:**
+## How the Web SDK Works and Resource Utilization
 
 
 
@@ -10,7 +10,7 @@
 * The SDK libraries run on the client-side, in the user's web browser. This means the SDK itself does not consume server-side resources.
 * The main resource utilization will be the hosting of the SDK files (JavaScript, CSS, etc.) and serving them to the client. This is minimal overhead, similar to serving other static web assets.
 
-**Session Management between Web SDK and Bot Platform:**
+## Session Management between Web SDK and Bot Platform
 
 
 
@@ -27,7 +27,7 @@
 ![JWT Flow](./images/JWT-flow.png "JWT Flow")
 
 
-**Stateless Web SDK and Session Persistence:**
+## Stateless Web SDK and Session Persistence
 
 
 
@@ -36,7 +36,7 @@
 * This is because the session state (user context, conversation history, etc.) is enclosed in the JWT and messages sent from the SDK. It is not dependent on any particular server.
 * Even if the client-side state gets lost (e.g. user refreshes page), the session can be restored from the user identity in the JWT. The loadHistory option can be enabled to retrieve recent conversation history in this scenario.
 
-**Minimum Server Requirements:**
+## Minimum Server Requirements
 
 
 
@@ -44,7 +44,7 @@
 * A server with 2 CPUs and 4 GB RAM should be more than adequate to serve the Web SDK files as part of a web application.
 * The real consideration is the expected traffic and concurrent users for your application as a whole, rather than the Web SDK specifically.
 
-**Security of the Web SDK and JWT Service:**
+## Security of the Web SDK and JWT Service
 
 
 
@@ -60,8 +60,8 @@
     * Retrieve the client app ID and secret (or private key) from a secure location (e.g. environment variables, secret management service)
     * Generate and sign the JWT using the client credentials and return it to the Web SDK
 
-The JWT service should be hosted on infrastructure that matches your security and compliance requirements. A few recommendations:
 
+The JWT service should be hosted on infrastructure that matches your security and compliance requirements. A few recommendations:
 
 
 * Host the service on HTTPS with a valid SSL certificate.
