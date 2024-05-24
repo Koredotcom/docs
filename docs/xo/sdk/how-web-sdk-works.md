@@ -15,11 +15,11 @@
 
 
 * The Web SDK uses JSON Web Tokens (JWTs) to establish a secure session with the Kore.ai platform on behalf of the end user.
-* When the SDK is initialized, it calls a client-provided assertion function that generates a signed JWT containing the user identity and client app credentials.To make the signing secured this assertion function will internally call the the JWT generation service to get the JWT
+* When the SDK is initialized, it calls a client-provided assertion function that generates a signed JWT containing the user identity and client app credentials. To make the signing secured this assertion function will internally call the the JWT generation service to get the JWT
 * This JWT is sent to the Kore.ai platform to authenticate the user and establish the bot session.
 * The session is maintained at client-side using web sockets. The messages between the SDK and the bot platform are exchanged using this secure web socket.
 
-**JWT Flow:**
+## JWT Flow
 
 
 
