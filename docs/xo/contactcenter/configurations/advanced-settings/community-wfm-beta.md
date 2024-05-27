@@ -1,4 +1,4 @@
-# Community WFM (Beta)
+# Community WFM [Beta]
 
 The Community WFM solution assists with forecasting, scheduling, strategically allocating resources, tracking attendance, and complying with constantly changing workplace regulations and reporting capability.
 

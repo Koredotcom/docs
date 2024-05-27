@@ -1,4 +1,4 @@
-# Automatic Conversation Summary (Beta)
+# Automatic Conversation Summary [Beta]
 
 Contact Center AI can automatically generate conversation summaries of the interaction between the agents and customers. These summaries are generated in two places.
 
