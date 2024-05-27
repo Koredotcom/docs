@@ -1,11 +1,13 @@
 # Sensitive Data Masking
 
-Organizations protect their sensitive data (PII, PCI, and PHI) for several important reasons. Here are some of the most important ones:
+Organizations protect their sensitive data (PII, PCI, and PHI) for several important reasons. [Learn more](../advanced-settings/handling-sensitive-data.md).
 
-* Privacy Protection
-* Legal and Regulatory Compliance
-* Trust and Goodwill
-* Financial Impact
+Here are some of the most important ones:
+
+* Privacy Protection,
+* Legal and Regulatory Compliance,
+* Trust and Goodwill,
+* Financial Impact.
 
 Safeguarding sensitive data is essential for preserving trust, protecting individual privacy, ensuring the long-term success of organizations, and complying with regulations.
 
@@ -25,7 +27,7 @@ Administrators can configure sensitive data masking as follows:
 
 5. Choose the queues from the dropdown list and click **Done**.  
 <img src="../images/select-queues.png" alt="Select Queues" title="Select Queues" style="border: 1px solid gray; zoom:80%;">  
-The selected queues are displayed. You can delete a queue by clicking the Bin icon.  
+The selected queues are displayed. You can delete a queue by clicking the **Bin** icon.  
 <img src="../images/delete-icon.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
 
 6. Click **Save**. A confirmation message is displayed.  
