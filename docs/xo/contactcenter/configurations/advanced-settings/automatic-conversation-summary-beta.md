@@ -14,9 +14,10 @@ Steps to enable Automatic Conversation Summary:
 
 2. Turn on the  **Arrival and Post Conversation Summary** toggle.
 
-!!! Note
+    !!! Note
 
-    All existing users have this feature enabled by default.
+        All existing users have this feature enabled by default.
+
 <img src="../images/enable-automatic-conversation-summary.png" alt="Enable Automatic Conversation Summary" title="Enable Automatic Conversation Summary" style="border: 1px solid gray; zoom:80%;">
 
 3. A confirmation message is displayed.
