@@ -305,6 +305,11 @@ nav:
       - Secure Forms: contactcenter/configurations/secure-forms/configure-secure-forms.md
       - Surveys: contactcenter/configurations/surveys/configure-surveys.md
       - Widgets: contactcenter/configurations/widgets/configure-widgets.md
+      - Advanced Settings:
+        - Co-Browse: contactcenter/configurations/advanced-settings/co-browse.md
+        - Community WFM [Beta]: contactcenter/configurations/advanced-settings/community-wfm-beta.md
+        - Automatic Conversation Summary [Beta]: contactcenter/configurations/advanced-settings/automatic-conversation-summary-beta.md
+        - Sensitive Data Masking: contactcenter/configurations/advanced-settings/sensitive-data-masking.md
     - Flows and Routing:
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md

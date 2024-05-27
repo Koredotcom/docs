@@ -5,7 +5,7 @@ Contact Center AI can automatically generate conversation summaries of the inter
 1. **Arrival Summary**: The arrival summary appears on the live interaction pane above the compose bar.
 2. **Post-conversation Summary**: The post-conversation summary appears in the Disposition & Notes section.
 
-Administrators can disable the automatic generation of the conversation summary.
+Administrators can enable/disable the automatic generation of the conversation summary.
 
 Steps to enable Automatic Conversation Summary:
 
@@ -28,7 +28,7 @@ The changes made to this setting are recorded on the Audit Report page in the An
 
 ### Arrival Summary
 
-Upon an agent accepting a conversation, the arrival summary appears on the Live Interaction pane above the compose bar.
+Upon an agent accepting a conversation, the arrival summary appears on the Live Interaction pane above the compose bar.  
 <img src="../images/live-interaction-summary.png" alt="Summary-Live Interaction" title="Summary-Live Interaction" style="border: 1px solid gray; zoom:80%;">
 
 ### Post Conversation Summary
