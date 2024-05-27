@@ -18,7 +18,7 @@ Steps to enable Automatic Conversation Summary:
 
         All existing users have this feature enabled by default.
 
-<img src="../images/enable-automatic-conversation-summary.png" alt="Enable Automatic Conversation Summary" title="Enable Automatic Conversation Summary" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/enable-automatic-conversation-summary.png" alt="Enable Automatic Conversation Summary" title="Enable Automatic Conversation Summary" style="border: 1px solid gray; zoom:80%;">
 
 3. A confirmation message is displayed.
 <img src="../images/confirmation-automatic-summary-generation.png" alt="Confirmation-Automatic Summary Generation" title="Confirmation-Automatic Summary Generation" style="border: 1px solid gray; zoom:80%;">
