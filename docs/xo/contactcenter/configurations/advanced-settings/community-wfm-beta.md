@@ -30,7 +30,7 @@ Before configuring the integration, note that the following Community WFM detail
 
 ### Configure and Enable Community WFM
 
-1. Go to **CONFIGURATIONS** > **Advanced Settings** > **Community WFM**.
+1. Go to **CONFIGURATIONS** > **Advanced Settings** > **Community WFM [Beta]**.
 2. Click **Community WFM**.  
 <img src="../images/community-wfm.png" alt="Community WFM" title="Community WFM" style="border: 1px solid gray; zoom:80%;">
 

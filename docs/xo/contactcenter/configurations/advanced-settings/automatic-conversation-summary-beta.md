@@ -9,7 +9,7 @@ Administrators can enable/disable the automatic generation of the conversation s
 
 Steps to enable Automatic Conversation Summary:
 
-1. Go to **Contact Center AI** > **CONFIGURATIONS** > **Advanced Settings** > **Automatic Conversation Summary (Beta)**.  
+1. Go to **Contact Center AI** > **CONFIGURATIONS** > **Advanced Settings** > **Automatic Conversation Summary [Beta]**.  
 <img src="../images/advanced-conversation-summary-beta.png" alt="Advanced Conversation Summary (Beta)" title="Advanced Conversation Summary (Beta)" style="border: 1px solid gray; zoom:80%;">
 
 2. Turn on the  **Arrival and Post Conversation Summary** toggle.
