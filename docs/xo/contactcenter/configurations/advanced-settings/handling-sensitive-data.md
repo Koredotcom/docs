@@ -16,7 +16,7 @@ Any end-user input that matches the PII, PCI, or PHI pattern gets redacted in th
 
 Contact Center AI allows you to redact any sensitive information that customers share. When you enable redaction for sensitive information, you can transform its value into a pattern that doesn’t contain comprehensible data. [Learn more](../advanced-settings/sensitive-data-masking.md).
 
-PII Data that passes through SmartAssist is managed as follows:
+PII Data that passes through Contact Center AI is managed as follows:
 
 For chat conversations: In the response, the system tracks and identifies sensitive information and type of sensitivity (PII, PCI, PHI).
 
