@@ -32,3 +32,4 @@ After masking the above example for sensitive information it appears as follows:
 
 ```
 Hello, my name is **** ***. I live at *** **** **, ****, ***. My phone number is ***-***-****, and my email address is ********@***.com. My date of birth is ****** **, ****.
+```
