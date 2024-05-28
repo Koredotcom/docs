@@ -14,7 +14,7 @@ This type of information includes Personally Identifiable Information, Payment C
 
 Any end-user input that matches the PII, PCI, or PHI pattern gets redacted in the context object, interactions, and anywhere it may be required.
 
-SmartAssist allows you to redact any sensitive information that customers share. When you enable redaction for sensitive information, you can transform its value into a pattern that doesn’t contain comprehensible data. [Learn more](https://docs.kore.ai/smartassist/configuration/sensitive-data-masking/).
+SmartAssist allows you to redact any sensitive information that customers share. When you enable redaction for sensitive information, you can transform its value into a pattern that doesn’t contain comprehensible data. [Learn more](../advanced-settings/sensitive-data-masking.md).
 
 PII Data that passes through SmartAssist is managed as follows:
 
