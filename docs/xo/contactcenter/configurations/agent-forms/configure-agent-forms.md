@@ -76,9 +76,9 @@ Steps to publish a form:
 3. Select **Publish**.
 <img src="../images/publish-button.png" alt="Publish Button" title="Publish Button" style="border: 1px solid gray; zoom:80%;">
 
-!!! Note
+    !!! Note
 
-    If you edit the form after publishing it, you must re-publish it for the change to reflect.
+        If you edit the form after publishing it, you must re-publish it for the change to reflect.
 
 ### Delete an Agent Form
 
@@ -95,6 +95,6 @@ There are two ways to delete an Agent Form:
     5. Select **Delete**.
     <img src="../images/delete-button-form-builder.png" alt="Form Builder Delete Button" title="Form Builder Delete Button" style="border: 1px solid gray; zoom:80%;">
 
-!!! Note
+    !!! Note
 
-    You cannot restore deleted forms. Please proceed with caution.
+        You cannot restore deleted forms. Please proceed with caution.
