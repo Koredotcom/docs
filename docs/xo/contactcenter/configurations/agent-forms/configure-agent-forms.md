@@ -90,9 +90,9 @@ There are two ways to delete an Agent Form:
     3. Select **Delete**.
     <img src="../images/delete-button.png" alt="Delete Button" title="Delete Button" style="border: 1px solid gray; zoom:80%;">
 
-2. **From the Form Builder**:
-    4. From the top toolbar of the form builder, click the **More Options** button.
-    5. Select **Delete**.
+2. **From the Form Builder**:  
+    4. From the top toolbar of the form builder, click the **More Options** button.  
+    5. Select **Delete**.  
     <img src="../images/delete-button-form-builder.png" alt="Form Builder Delete Button" title="Form Builder Delete Button" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
