@@ -24,7 +24,7 @@ Agent Forms Columns" title="Agent Forms Columns" style="border: 1px solid gray; 
 
 Steps to create an Agent form:
 
-1. Click **+ New Form**.
+1. Click **+ New Form**.  
 <img src="../images/add-new-form.png" alt="
 Add New Form Button" title="Add New Form Button" style="border: 1px solid gray; zoom:80%;">
 
@@ -34,8 +34,8 @@ Add New Form Button" title="Add New Form Button" style="border: 1px solid gray; 
     3. Select an **Assignment**:
         1. **Assign to Queues** lets you make forms available for conversations in all or selected queues.
         2. **Assign to Agent Groups** allows you to make forms available for agents in specific agent groups.
-    4. Click **Save & Proceed**.
-    <img src="../images/new-form.png" alt="New Form" title="New Form" style="border: 1px solid gray; zoom:100%;">
+    4. Click **Save & Proceed**.  
+    <img src="../images/new-form.png" alt="Save New Form" title="Save New Form" style="border: 1px solid gray; zoom:80%;">
 
 ### Build an Agent Form
 
