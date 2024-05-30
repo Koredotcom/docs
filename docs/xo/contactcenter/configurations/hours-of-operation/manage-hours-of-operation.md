@@ -15,7 +15,7 @@ The Hours of Operation section displays the following details:
 * **Timezone**: Lists the timezone for which the hours of operation are configured;
 * **Special** Days: Lists any configured special days or holidays.
 
-# Add Hours of Operation
+## Add Hours of Operation
 
 To add **Hours of Operation**, follow these steps:
 
@@ -51,13 +51,13 @@ Add Holidays & Special Days" title="Add Holidays & Special Days" style="border: 
 <img src="../images/configure-holiday-hours.png" alt="
 Configure Holiday Hours" title="Configure Holiday Hours" style="border: 1px solid gray; zoom:80%;">
 
-# Edit Hours of Operation
+## Edit Hours of Operation
 
 To edit **Hours of Operation**, click the corresponding **Edit** icon under _Actions_.
 <img src="../images/edit-button.png" alt="
 Edit Hours of Operation" title="Edit Hours of Operation" style="border: 1px solid gray; zoom:80%;">
 
-# Delete Hours of Operation
+## Delete Hours of Operation
 
 To delete an **Hours of Operation** entry, click the corresponding **Delete** icon under _Actions_. You will be asked to confirm your choice.
 <img src="../images/delete-button.png" alt="

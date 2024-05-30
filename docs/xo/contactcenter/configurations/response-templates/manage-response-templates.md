@@ -6,7 +6,7 @@ To access this feature, go to **Contact Center > CONFIGURATIONS > Response Templ
 <img src="../images/response-templates-page.png" alt="
 Response Templates Page" title="Response Templates Page" style="border: 1px solid gray; zoom:80%;">
 
-# The Response Templates Live Board
+## The Response Templates Live Board
 
 The Response Templates section provides the following high-level features:
 
@@ -14,11 +14,11 @@ The Response Templates section provides the following high-level features:
 * **Name-Level Search** Response Groups and Response Templates. The search runs for groups and responses at the name level and does not extend to the response message content.
 * **Browse** Response Templates and Groups by clicking the name of a group. This action opens up the group and lists the responses included within it.
 
-# Response Groups
+## Response Groups
 
 Response Templates are organized into _Response Groups_, to which agents need to be mapped for responses to be available to them in the [Agent Console](../../../console/introduction-to-the-console/Introduction.md).
 
-## View an Existing Response Group
+### View an Existing Response Group
 
 Click on a Response Group name to view its contents:
 <img src="../images/view-existing-response-group.gif" alt="
@@ -33,7 +33,7 @@ Contact Center comes pre-configured with the following Response Groups:
 5. **Abuse**: Fair (initial) and final warning levels when the customer uses abusive language.
 6. **Privacy**: Permission-based service responses that enhance conversational privacy.
 
-## Create a Response Group
+### Create a Response Group
 
 To create a **Response Group**, follow these steps:
 
@@ -73,7 +73,7 @@ Shortcut Command Usage" title="Shortcut Command Usage" style="border: 1px solid 
 
     You can enable Skill Match and Agent Group Match, and the responses within the Response Group will display to agents within the selected Groups who match selected skills.
 
-## Edit a Response Group
+### Edit a Response Group
 
 To update an existing response group, follow these steps:
 
@@ -84,7 +84,7 @@ Edit a Response" title="Edit a Response" style="border: 1px solid gray; zoom:100
 
 3. Make the necessary changes in the **Edit Response Group** panel and click **Save**.
 
-## Delete a Response Group
+### Delete a Response Group
 
 To delete a response group, follow these steps:
 
@@ -99,9 +99,9 @@ Delete a Response" title="Delete a Response" style="border: 1px solid gray; zoom
 
     You cannot restore deleted standard response groups or any responses it contains. Agents will no longer see responses associated with the deleted group within the console. Please proceed with caution.
 
-# Response Management
+## Response Management
 
-## Create a Response
+### Create a Response
 
 To create a new response within a response group, follow these steps:
 
@@ -125,7 +125,7 @@ You can use variables to pull customer-specific information from the [context ob
 
 You can add the following variables to Response Templates (chat and email):
 
-* `Customer First Name, `
+* `Customer First Name,`
 * `Customer Last Name,`
 * `Customer Email,`
 * `Customer Phone Number,`
