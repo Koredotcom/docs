@@ -8,9 +8,9 @@ SmartAssist allows you to integrate external systems and pages into the Agent Co
 
 # Add a Widget
 
-Steps to Add a new external widget:
+Steps to add an external widget:
 
-1. Go to **Contact Center** > **CONFIGURATIONS** > **Widgets**.
+1. Go to **Contact Center AI** > **CONFIGURATIONS** > **Widgets**.
 2. Click **External Widget**.  
 <img src="../images/widgets-page.png" alt="Widgets Page" title="Widgets Page" style="border: 1px solid gray; zoom:80%;">
 
