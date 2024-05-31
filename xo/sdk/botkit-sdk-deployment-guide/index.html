@@ -11,25 +11,25 @@
       
       
       
-        <link rel="prev" href="../bot-authorization/bot-authentication/">
+        <link rel="prev" href="../tutorials/web-sdk/">
       
       
-        <link rel="next" href="../../../apis/automation/api-introduction/">
+        <link rel="next" href="../installing-the-botkit-sdk/">
       
       
-      <link rel="icon" href="../../../images/kore_favicon.svg">
+      <link rel="icon" href="../../images/kore_favicon.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
       
-        <title>Web/Mobile SDK - Kore ai Docs</title>
+        <title>BotKit SDK Deployment Guide - Kore ai Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra_kore.css">
+      <link rel="stylesheet" href="../../stylesheets/extra_kore.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -67,7 +67,7 @@
     
     
     
-   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -76,7 +76,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#koreai-web-sdk-tutorial" class="md-skip">
+        <a href="#botkit-sdk-deployment-guide-architecture-hosting-and-best-practices" class="md-skip">
           Skip to content
         </a>
       
@@ -229,7 +229,7 @@
 
     <!-- Link to home -->
     <!-- <a
-      href="../../.."
+      href="../.."
       title="Kore ai Docs"
       class="md-header__button md-logo"
       aria-label="Kore ai Docs"
@@ -257,7 +257,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Web/Mobile SDK
+              BotKit SDK Deployment Guide
             
           </span>
         </div>
@@ -487,7 +487,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../home/" class="md-tabs__link">
+      <a href="../../home/" class="md-tabs__link">
         
   
     
@@ -506,7 +506,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../getting-started/about-xo-platform/" class="md-tabs__link">
+        <a href="../../getting-started/about-xo-platform/" class="md-tabs__link">
           
   
   Platform
@@ -524,7 +524,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../automation/about-automation-ai/" class="md-tabs__link">
+        <a href="../../automation/about-automation-ai/" class="md-tabs__link">
           
   
   Automation AI
@@ -542,7 +542,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../searchai/about-search-ai/" class="md-tabs__link">
+        <a href="../../searchai/about-search-ai/" class="md-tabs__link">
           
   
   Search AI
@@ -560,7 +560,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../contactcenter/about-contact-center-ai/" class="md-tabs__link">
+        <a href="../../contactcenter/about-contact-center-ai/" class="md-tabs__link">
           
   
   Contact Center AI
@@ -578,7 +578,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../agentai/about-agent-ai/" class="md-tabs__link">
+        <a href="../../agentai/about-agent-ai/" class="md-tabs__link">
           
   
   Agent AI
@@ -592,11 +592,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../integrations/about-integration/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../app-settings/integrations/about-integration/" class="md-tabs__link">
           
   
   Integrations & APIs
@@ -614,7 +616,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../analytics/introduction/" class="md-tabs__link">
+        <a href="../../analytics/introduction/" class="md-tabs__link">
           
   
   Analytics
@@ -628,21 +630,17 @@
         
   
   
-    
-  
   
     
     
       
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../user-management/manage-users/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../user-management/manage-users/" class="md-tabs__link">
           
   
   Administration
@@ -678,7 +676,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Kore ai Docs" class="md-nav__button md-logo" aria-label="Kore ai Docs" data-md-component="logo">
+    <a href="../.." title="Kore ai Docs" class="md-nav__button md-logo" aria-label="Kore ai Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -708,7 +706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../home/" class="md-nav__link">
+      <a href="../../home/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -768,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/about-xo-platform/" class="md-nav__link">
+      <a href="../../getting-started/about-xo-platform/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -829,7 +827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/accessing-the-platform/" class="md-nav__link">
+      <a href="../../getting-started/accessing-the-platform/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -850,7 +848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/navigating-the-platform/" class="md-nav__link">
+      <a href="../../getting-started/navigating-the-platform/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -951,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../flows/introduction-to-flows/" class="md-nav__link">
+      <a href="../../flows/introduction-to-flows/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -972,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../flows/create-flows/" class="md-nav__link">
+      <a href="../../flows/create-flows/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -993,7 +991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../flows/navigate-the-flow-designer/" class="md-nav__link">
+      <a href="../../flows/navigate-the-flow-designer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1054,7 +1052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../flows/node-types/introduction-to-flow-nodes/" class="md-nav__link">
+      <a href="../../flows/node-types/introduction-to-flow-nodes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1075,7 +1073,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../flows/node-types/agent-transfer/" class="md-nav__link">
+      <a href="../../flows/node-types/agent-transfer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1096,7 +1094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../flows/node-types/automation/" class="md-nav__link">
+      <a href="../../flows/node-types/automation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1117,7 +1115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../flows/node-types/check-agent-availability/" class="md-nav__link">
+      <a href="../../flows/node-types/check-agent-availability/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1138,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../flows/node-types/check-business-hours/" class="md-nav__link">
+      <a href="../../flows/node-types/check-business-hours/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1159,7 +1157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../flows/node-types/connect-to-api/" class="md-nav__link">
+      <a href="../../flows/node-types/connect-to-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1180,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../flows/node-types/end-flow/" class="md-nav__link">
+      <a href="../../flows/node-types/end-flow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1201,7 +1199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../flows/node-types/go-to-flow/" class="md-nav__link">
+      <a href="../../flows/node-types/go-to-flow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1222,7 +1220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../flows/node-types/ivr-digit-input/" class="md-nav__link">
+      <a href="../../flows/node-types/ivr-digit-input/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1243,7 +1241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../flows/node-types/ivr-menu/" class="md-nav__link">
+      <a href="../../flows/node-types/ivr-menu/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1264,7 +1262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../flows/node-types/message-prompt/" class="md-nav__link">
+      <a href="../../flows/node-types/message-prompt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1285,7 +1283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../flows/node-types/script-task/" class="md-nav__link">
+      <a href="../../flows/node-types/script-task/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1306,7 +1304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../flows/node-types/set-queue/" class="md-nav__link">
+      <a href="../../flows/node-types/set-queue/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1327,7 +1325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../flows/node-types/split/" class="md-nav__link">
+      <a href="../../flows/node-types/split/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1404,7 +1402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../channels/adding-channels-to-your-bot/" class="md-nav__link">
+      <a href="../../channels/adding-channels-to-your-bot/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1465,7 +1463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../channels/kore.ai-voice-gateway/kore-voice-gateway/" class="md-nav__link">
+      <a href="../../channels/kore.ai-voice-gateway/kore-voice-gateway/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1526,7 +1524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../channels/amazon-alexa/" class="md-nav__link">
+      <a href="../../channels/amazon-alexa/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1547,7 +1545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../channels/add-twilio-voice-channel/" class="md-nav__link">
+      <a href="../../channels/add-twilio-voice-channel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1568,7 +1566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../channels/ivr-audio-codes/" class="md-nav__link">
+      <a href="../../channels/ivr-audio-codes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1589,7 +1587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../channels/IVR-integration/" class="md-nav__link">
+      <a href="../../channels/IVR-integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1690,7 +1688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/glossary/concepts-and-terminology/" class="md-nav__link">
+      <a href="../../getting-started/glossary/concepts-and-terminology/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1759,7 +1757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/whats-new-in-xo-platform/" class="md-nav__link">
+      <a href="../../getting-started/whats-new-in-xo-platform/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1780,7 +1778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/key-differences-between-xo11-and-xo10/" class="md-nav__link">
+      <a href="../../getting-started/key-differences-between-xo11-and-xo10/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1801,7 +1799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../release-notes/current-limitations/" class="md-nav__link">
+      <a href="../../release-notes/current-limitations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1862,7 +1860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../release-notes/11.x/automation-ai/" class="md-nav__link">
+      <a href="../../release-notes/11.x/automation-ai/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1883,7 +1881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../release-notes/11.x/search-ai/" class="md-nav__link">
+      <a href="../../release-notes/11.x/search-ai/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1904,7 +1902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../release-notes/11.x/contact-center-ai/" class="md-nav__link">
+      <a href="../../release-notes/11.x/contact-center-ai/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1925,7 +1923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../release-notes/11.x/agent-ai/" class="md-nav__link">
+      <a href="../../release-notes/11.x/agent-ai/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1946,7 +1944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../release-notes/11.x/platform-services/" class="md-nav__link">
+      <a href="../../release-notes/11.x/platform-services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2030,7 +2028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/about-automation-ai/" class="md-nav__link">
+      <a href="../../automation/about-automation-ai/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2091,7 +2089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/virtual-assistants-overview/" class="md-nav__link">
+      <a href="../../getting-started/virtual-assistants-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2112,7 +2110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/building-a-virtual-assistant/" class="md-nav__link">
+      <a href="../../getting-started/building-a-virtual-assistant/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2221,7 +2219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/dialog-tasks-overview/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/dialog-tasks-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2242,7 +2240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/navigating-dialog-tasks/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/navigating-dialog-tasks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2263,7 +2261,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/using-the-dialog-builder-tool/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/using-the-dialog-builder-tool/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2324,7 +2322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/nodes-transitions/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/nodes-transitions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2345,7 +2343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/working-with-the-user-intent-node/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/working-with-the-user-intent-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2366,7 +2364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/working-with-the-dialog-node/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/working-with-the-dialog-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2387,7 +2385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/dynamic-intent-node/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/dynamic-intent-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2408,7 +2406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/genai-node/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/genai-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2429,7 +2427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/genai-prompt/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/genai-prompt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2450,7 +2448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/working-with-the-entity-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2471,7 +2469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/working-with-the-form-node/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/working-with-the-form-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2492,7 +2490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/working-with-the-confirmation-nodes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2513,7 +2511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2534,7 +2532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/working-with-the-logic-node/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/working-with-the-logic-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2555,7 +2553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/working-with-the-service-node/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/working-with-the-service-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2576,7 +2574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/working-with-the-web-hook-node/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/working-with-the-web-hook-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2597,7 +2595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/working-with-the-script-node/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/working-with-the-script-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2618,7 +2616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/process-nodes/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/process-nodes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2639,7 +2637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/working-with-the-agent-transfer-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2708,7 +2706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-connections/nodes-conditions/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-connections/nodes-conditions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2729,7 +2727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-connections/grouping-nodes/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-connections/grouping-nodes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2758,7 +2756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/entity-types/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/entity-types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2779,7 +2777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/entity-rules/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/entity-rules/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2800,7 +2798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/prompt-editor/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/prompt-editor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2821,7 +2819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/voice-call-properties/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/voice-call-properties/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2842,7 +2840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/implementing-custom-authentication/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/implementing-custom-authentication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2863,7 +2861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/enabling-2-way-ssl-for-service-nodes/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/enabling-2-way-ssl-for-service-nodes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2892,7 +2890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/alert-tasks/" class="md-nav__link">
+      <a href="../../automation/use-cases/alert-tasks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2913,7 +2911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/small-talk/" class="md-nav__link">
+      <a href="../../automation/use-cases/small-talk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2974,7 +2972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/digital-skills/digital-skills-overview/" class="md-nav__link">
+      <a href="../../automation/use-cases/digital-skills/digital-skills-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2995,7 +2993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/digital-skills/digital-forms/" class="md-nav__link">
+      <a href="../../automation/use-cases/digital-skills/digital-forms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3016,7 +3014,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/digital-skills/configure-digital-forms/" class="md-nav__link">
+      <a href="../../automation/use-cases/digital-skills/configure-digital-forms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3037,7 +3035,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/digital-skills/digital-views/" class="md-nav__link">
+      <a href="../../automation/use-cases/digital-skills/digital-views/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3058,7 +3056,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/digital-skills/configure-digital-views/" class="md-nav__link">
+      <a href="../../automation/use-cases/digital-skills/configure-digital-views/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3135,7 +3133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/knowledge-ai/knowledge-ai-introduction/" class="md-nav__link">
+      <a href="../../automation/knowledge-ai/knowledge-ai-introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3196,7 +3194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/knowledge-ai/knowledge-graph-overview/" class="md-nav__link">
+      <a href="../../automation/knowledge-ai/knowledge-graph-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3217,7 +3215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/knowledge-ai/knowledge-graph-terminology/" class="md-nav__link">
+      <a href="../../automation/knowledge-ai/knowledge-graph-terminology/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3238,7 +3236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/knowledge-ai/build-a-knowledge-graph/" class="md-nav__link">
+      <a href="../../automation/knowledge-ai/build-a-knowledge-graph/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3259,7 +3257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/knowledge-ai/manage-faqs/" class="md-nav__link">
+      <a href="../../automation/knowledge-ai/manage-faqs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3280,7 +3278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/knowledge-ai/knowledge-extraction/" class="md-nav__link">
+      <a href="../../automation/knowledge-ai/knowledge-extraction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3341,7 +3339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/knowledge-ai/create-knowledge-graph-from-csv-and-json/" class="md-nav__link">
+      <a href="../../automation/knowledge-ai/create-knowledge-graph-from-csv-and-json/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3362,7 +3360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/knowledge-ai/import-and-export-knowledge-graph/" class="md-nav__link">
+      <a href="../../automation/knowledge-ai/import-and-export-knowledge-graph/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3383,7 +3381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/knowledge-ai/generate-a-knowledge-graph/" class="md-nav__link">
+      <a href="../../automation/knowledge-ai/generate-a-knowledge-graph/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3412,7 +3410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/knowledge-ai/knowledge-graph-analysis/" class="md-nav__link">
+      <a href="../../automation/knowledge-ai/knowledge-graph-analysis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3489,7 +3487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/natural-language/nlp-introduction/" class="md-nav__link">
+      <a href="../../automation/natural-language/nlp-introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3510,7 +3508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/natural-language/training/optimizing-bots/" class="md-nav__link">
+      <a href="../../automation/natural-language/training/optimizing-bots/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3531,7 +3529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/natural-language/nlp-guidelines/" class="md-nav__link">
+      <a href="../../automation/natural-language/nlp-guidelines/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3592,7 +3590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/natural-language/training/nlp-training-overview/" class="md-nav__link">
+      <a href="../../automation/natural-language/training/nlp-training-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3653,7 +3651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/natural-language/training/machine-learning-engine/" class="md-nav__link">
+      <a href="../../automation/natural-language/training/machine-learning-engine/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3674,7 +3672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/natural-language/training/model-validation/" class="md-nav__link">
+      <a href="../../automation/natural-language/training/model-validation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3703,7 +3701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/natural-language/training/fundamental-meaning/" class="md-nav__link">
+      <a href="../../automation/natural-language/training/fundamental-meaning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3724,7 +3722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/knowledge-ai/knowledge-graph-training/" class="md-nav__link">
+      <a href="../../automation/knowledge-ai/knowledge-graph-training/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3745,7 +3743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/natural-language/training/traits/" class="md-nav__link">
+      <a href="../../automation/natural-language/training/traits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3766,7 +3764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/natural-language/training/ranking-and-resolver/" class="md-nav__link">
+      <a href="../../automation/natural-language/training/ranking-and-resolver/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3787,7 +3785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/natural-language/training/training-validations/" class="md-nav__link">
+      <a href="../../automation/natural-language/training/training-validations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3856,7 +3854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/natural-language/nlu-configurations/engine-tuning/" class="md-nav__link">
+      <a href="../../automation/natural-language/nlu-configurations/engine-tuning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3877,7 +3875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/natural-language/nlu-configurations/multi-intent-detection/" class="md-nav__link">
+      <a href="../../automation/natural-language/nlu-configurations/multi-intent-detection/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3898,7 +3896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/natural-language/nlu-configurations/amend-entities/" class="md-nav__link">
+      <a href="../../automation/natural-language/nlu-configurations/amend-entities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3927,7 +3925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/natural-language/llm-and-generative-ai/" class="md-nav__link">
+      <a href="../../automation/natural-language/llm-and-generative-ai/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3996,7 +3994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/intelligence/intelligence-overview/" class="md-nav__link">
+      <a href="../../automation/intelligence/intelligence-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4057,7 +4055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/intelligence/event-handling/" class="md-nav__link">
+      <a href="../../automation/intelligence/event-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4078,7 +4076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/intelligence/context-management/" class="md-nav__link">
+      <a href="../../automation/intelligence/context-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4099,7 +4097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/intelligence/context-object/" class="md-nav__link">
+      <a href="../../automation/intelligence/context-object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4160,7 +4158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/intelligence/conversation-management/default-conversations/" class="md-nav__link">
+      <a href="../../automation/intelligence/conversation-management/default-conversations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4229,7 +4227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/intelligence/sentiment-management/sentiment-management-overview/" class="md-nav__link">
+      <a href="../../automation/intelligence/sentiment-management/sentiment-management-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4250,7 +4248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/intelligence/sentiment-management/tone-analysis/" class="md-nav__link">
+      <a href="../../automation/intelligence/sentiment-management/tone-analysis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4327,7 +4325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/intelligence/conversation-management/standard-responses/" class="md-nav__link">
+      <a href="../../automation/intelligence/conversation-management/standard-responses/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4348,7 +4346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/intelligence/conversation-management/manage-interruptions/" class="md-nav__link">
+      <a href="../../automation/intelligence/conversation-management/manage-interruptions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4369,7 +4367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/intelligence/conversation-management/ignore-words-and-field-memory/" class="md-nav__link">
+      <a href="../../automation/intelligence/conversation-management/ignore-words-and-field-memory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4446,7 +4444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/testing/test-and-debug-overview/" class="md-nav__link">
+      <a href="../../automation/testing/test-and-debug-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4467,7 +4465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/testing/talk-to-bot/" class="md-nav__link">
+      <a href="../../automation/testing/talk-to-bot/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4488,7 +4486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/testing/testing-your-bot-with-nlp/" class="md-nav__link">
+      <a href="../../automation/testing/testing-your-bot-with-nlp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4549,7 +4547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring/" class="md-nav__link">
+      <a href="../../automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4570,7 +4568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/testing/regression-testing/batch-testing/" class="md-nav__link">
+      <a href="../../automation/testing/regression-testing/batch-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4591,7 +4589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page/" class="md-nav__link">
+      <a href="../../automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4668,7 +4666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/tools/intent-discovery/" class="md-nav__link">
+      <a href="../../automation/tools/intent-discovery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4729,7 +4727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../manage-assistant/collaborative-development/" class="md-nav__link">
+      <a href="../../manage-assistant/collaborative-development/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4750,7 +4748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../manage-assistant/feedbacksurvey/" class="md-nav__link">
+      <a href="../../manage-assistant/feedbacksurvey/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4834,7 +4832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/about-search-ai/" class="md-nav__link">
+      <a href="../../searchai/about-search-ai/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4895,7 +4893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/introduction-to-answers/" class="md-nav__link">
+      <a href="../../searchai/introduction-to-answers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4916,7 +4914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/setup-search-ai/" class="md-nav__link">
+      <a href="../../searchai/setup-search-ai/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5025,7 +5023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/introduction/" class="md-nav__link">
+      <a href="../../searchai/content-sources/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5046,7 +5044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/web-crawl/" class="md-nav__link">
+      <a href="../../searchai/content-sources/web-crawl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5067,7 +5065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/directory/" class="md-nav__link">
+      <a href="../../searchai/content-sources/directory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5128,7 +5126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/connectors/" class="md-nav__link">
+      <a href="../../searchai/content-sources/connectors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5149,7 +5147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/connectors/confluence-server/" class="md-nav__link">
+      <a href="../../searchai/content-sources/connectors/confluence-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5170,7 +5168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/connectors/dropbox/" class="md-nav__link">
+      <a href="../../searchai/content-sources/connectors/dropbox/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5191,7 +5189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/connectors/googledrive/" class="md-nav__link">
+      <a href="../../searchai/content-sources/connectors/googledrive/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5212,7 +5210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/servicenow.md" class="md-nav__link">
+      <a href="../../searchai/content-sources/servicenow.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5233,7 +5231,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-sources/connectors/zendesk/" class="md-nav__link">
+      <a href="../../searchai/content-sources/connectors/zendesk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5270,7 +5268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/content-extraction/extraction/" class="md-nav__link">
+      <a href="../../searchai/content-extraction/extraction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5331,7 +5329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/workbench/introduction/" class="md-nav__link">
+      <a href="../../searchai/workbench/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5352,7 +5350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/workbench/field-mapping/" class="md-nav__link">
+      <a href="../../searchai/workbench/field-mapping/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5373,7 +5371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/workbench/custom-script/" class="md-nav__link">
+      <a href="../../searchai/workbench/custom-script/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5394,7 +5392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/workbench/exclude-document/" class="md-nav__link">
+      <a href="../../searchai/workbench/exclude-document/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5415,7 +5413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/workbench/simulation/" class="md-nav__link">
+      <a href="../../searchai/workbench/simulation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5444,7 +5442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/chunk-browser/" class="md-nav__link">
+      <a href="../../searchai/chunk-browser/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5465,7 +5463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/index-configuration/" class="md-nav__link">
+      <a href="../../searchai/index-configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5534,7 +5532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/business-rules/" class="md-nav__link">
+      <a href="../../searchai/business-rules/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5555,7 +5553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/answer-configuration/" class="md-nav__link">
+      <a href="../../searchai/answer-configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5576,7 +5574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../searchai/testing-and-debugging-answers/" class="md-nav__link">
+      <a href="../../searchai/testing-and-debugging-answers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5652,7 +5650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/about-contact-center-ai/" class="md-nav__link">
+      <a href="../../contactcenter/about-contact-center-ai/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5713,7 +5711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/agent-and-supervisors/agent-management/agent-management/" class="md-nav__link">
+      <a href="../../contactcenter/agent-and-supervisors/agent-management/agent-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5734,7 +5732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/agent-and-supervisors/dispositions/manage-dispositions/" class="md-nav__link">
+      <a href="../../contactcenter/agent-and-supervisors/dispositions/manage-dispositions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5803,7 +5801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/agentassist-settings/agentassist-settings/" class="md-nav__link">
+      <a href="../../contactcenter/configurations/agentassist-settings/agentassist-settings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5824,7 +5822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/email-inbox-config/configure-emails.md" class="md-nav__link">
+      <a href="../../contactcenter/configurations/email-inbox-config/configure-emails.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5845,7 +5843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/hours-of-operation/manage-hours-of-operation/" class="md-nav__link">
+      <a href="../../contactcenter/configurations/hours-of-operation/manage-hours-of-operation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5866,7 +5864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/languages-and-speech/configure-languages-and-speech/" class="md-nav__link">
+      <a href="../../contactcenter/configurations/languages-and-speech/configure-languages-and-speech/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5887,7 +5885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/response-templates/manage-response-templates/" class="md-nav__link">
+      <a href="../../contactcenter/configurations/response-templates/manage-response-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5908,11 +5906,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/secure-forms/configure-secure-forms.md" class="md-nav__link">
+      <a href="../../contactcenter/configurations/agent-forms/configure-agent-forms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Secure Forms
+    Agent Forms
   </span>
   
 
@@ -5929,7 +5927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/surveys/configure-surveys/" class="md-nav__link">
+      <a href="../../contactcenter/configurations/surveys/configure-surveys/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5950,7 +5948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/configurations/widgets/configure-widgets/" class="md-nav__link">
+      <a href="../../contactcenter/configurations/widgets/configure-widgets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5959,6 +5957,138 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3_9" id="__nav_5_3_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Advanced Settings
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced Settings
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contactcenter/configurations/advanced-settings/co-browse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Co-Browse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contactcenter/configurations/advanced-settings/community-wfm-beta/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Community WFM [Beta]
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contactcenter/configurations/advanced-settings/automatic-conversation-summary-beta/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Automatic Conversation Summary [Beta]
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contactcenter/configurations/advanced-settings/sensitive-data-masking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sensitive Data Masking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -6019,7 +6149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/flows-and-routing/conditional-flows/" class="md-nav__link">
+      <a href="../../contactcenter/flows-and-routing/conditional-flows/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6040,7 +6170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/flows-and-routing/waiting-flows/" class="md-nav__link">
+      <a href="../../contactcenter/flows-and-routing/waiting-flows/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6109,7 +6239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/routing/queues/queue-management/" class="md-nav__link">
+      <a href="../../contactcenter/routing/queues/queue-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6130,7 +6260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/routing/skills/skill-management/" class="md-nav__link">
+      <a href="../../contactcenter/routing/skills/skill-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6199,11 +6329,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../console/additional-tools/additional-tools/" class="md-nav__link">
+      <a href="../../console/introduction-to-the-console/agent-console-introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Additional Tools
+    Introduction to the Console
   </span>
   
 
@@ -6220,7 +6350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../console/conversation-tray/conversation-tray/" class="md-nav__link">
+      <a href="../../console/conversation-tray/conversation-tray/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6241,7 +6371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../console/incoming-interactions/managing-incoming-interactions/" class="md-nav__link">
+      <a href="../../console/incoming-interactions/managing-incoming-interactions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6262,7 +6392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../console/interacting-with-customers/interacting-with-customers/" class="md-nav__link">
+      <a href="../../console/interacting-with-customers/interacting-with-customers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6283,11 +6413,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../console/introduction-to-the-console/introduction.md" class="md-nav__link">
+      <a href="../../console/additional-tools/additional-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Introduction to the Console
+    Additional Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../console/manage-layout-/manage-layout.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage Layout
   </span>
   
 
@@ -6352,7 +6503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/campaigns/about-campaigns/" class="md-nav__link">
+      <a href="../../contactcenter/campaigns/about-campaigns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6373,7 +6524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/campaigns/dashboard/campaign-dashboard/" class="md-nav__link">
+      <a href="../../contactcenter/campaigns/dashboard/campaign-dashboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6434,7 +6585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/campaigns/campaign-management/voice-campaigns/" class="md-nav__link">
+      <a href="../../contactcenter/campaigns/campaign-management/voice-campaigns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6455,7 +6606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/campaigns/campaign-management/proactive-web-campaigns/" class="md-nav__link">
+      <a href="../../contactcenter/campaigns/campaign-management/proactive-web-campaigns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6484,7 +6635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/campaigns/list-management/list-management/" class="md-nav__link">
+      <a href="../../contactcenter/campaigns/list-management/list-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6505,7 +6656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/campaigns/settings/global-settings/" class="md-nav__link">
+      <a href="../../contactcenter/campaigns/settings/global-settings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6526,7 +6677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contactcenter/campaigns/frequently-asked-questions/" class="md-nav__link">
+      <a href="../../contactcenter/campaigns/frequently-asked-questions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6602,7 +6753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agentai/about-agent-ai/" class="md-nav__link">
+      <a href="../../agentai/about-agent-ai/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6663,7 +6814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agentai/agent-experience/agent-realtime-coaching/" class="md-nav__link">
+      <a href="../../agentai/agent-experience/agent-realtime-coaching/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6684,7 +6835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agentai/agent-experience/playbook/" class="md-nav__link">
+      <a href="../../agentai/agent-experience/playbook/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6745,7 +6896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agentai/configuration/welcome-events/" class="md-nav__link">
+      <a href="../../agentai/configuration/welcome-events/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6766,7 +6917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agentai/configuration/answers-configuration/" class="md-nav__link">
+      <a href="../../agentai/configuration/answers-configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6787,7 +6938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agentai/configuration/widget-settings/" class="md-nav__link">
+      <a href="../../agentai/configuration/widget-settings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6864,7 +7015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agentai/agent-experience/agent-assist-widget-v3/" class="md-nav__link">
+      <a href="../../agentai/agent-experience/agent-assist-widget-v3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6885,7 +7036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../agentai/agent-experience/bot-override-and-automation/" class="md-nav__link">
+      <a href="../../agentai/agent-experience/bot-override-and-automation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6918,25 +7069,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -6947,7 +7103,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Integrations & APIs
@@ -6961,7 +7117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/about-integration/" class="md-nav__link">
+      <a href="../../app-settings/integrations/about-integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6987,17 +7143,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
         
           
-          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -7062,7 +7221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/actions/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/actions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7123,7 +7282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/asana/configuring-the-asana-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/asana/configuring-the-asana-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7144,7 +7303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/asana/using-the-asana-action-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/asana/using-the-asana-action-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7213,7 +7372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/azure-open-ai/configuring-the-azure-openai-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/azure-open-ai/configuring-the-azure-openai-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7234,7 +7393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/azure-open-ai/using-the-azure-openai-action-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/azure-open-ai/using-the-azure-openai-action-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7303,7 +7462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/bamboo-hr/configuring-the-bamboohr-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/bamboo-hr/configuring-the-bamboohr-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7324,7 +7483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/bamboo-hr/using-the-bamboohr-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/bamboo-hr/using-the-bamboohr-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7393,7 +7552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/bitly/configuring-the-bitly-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/bitly/configuring-the-bitly-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7414,7 +7573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/bitly/using-the-bitly-action-template/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/bitly/using-the-bitly-action-template/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7483,7 +7642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/confluence/configuring-the-confluence-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/confluence/configuring-the-confluence-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7504,7 +7663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/confluence/using-the-confluence-action-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/confluence/using-the-confluence-action-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7573,7 +7732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/dhl/configuring-the-dhl-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/dhl/configuring-the-dhl-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7594,7 +7753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/dhl/using-the-dhl-action-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/dhl/using-the-dhl-action-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7663,7 +7822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/freshdesk/configuring-the-freshdesk-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/freshdesk/configuring-the-freshdesk-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7684,7 +7843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/freshdesk/using-the-freshdesk-action-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/freshdesk/using-the-freshdesk-action-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7753,7 +7912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/freshservice/configuring-the-freshservice-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/freshservice/configuring-the-freshservice-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7774,7 +7933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/freshservice/using-the-freshservice-itsm-action-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/freshservice/using-the-freshservice-itsm-action-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7843,7 +8002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/google-maps/configuring-the-google-maps-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/google-maps/configuring-the-google-maps-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7864,7 +8023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/google-maps/using-the-google-maps-action-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/google-maps/using-the-google-maps-action-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7933,7 +8092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/here/configuring-the-here-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/here/configuring-the-here-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7954,7 +8113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/here/using-here-action-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/here/using-here-action-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8023,7 +8182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/hubspot/configuring-the-hubspot-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/hubspot/configuring-the-hubspot-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8044,7 +8203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/hubspot/using-the-hubspot-action-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/hubspot/using-the-hubspot-action-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8113,7 +8272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/jira/configuring-the-jira-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/jira/configuring-the-jira-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8134,7 +8293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/jira/using-the-jira-action-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/jira/using-the-jira-action-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8203,7 +8362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/microsoft-graph/configuring-the-microsoft-graph-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/microsoft-graph/configuring-the-microsoft-graph-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8224,7 +8383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/microsoft-graph/using-the-microsoft-graph-action-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/microsoft-graph/using-the-microsoft-graph-action-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8293,7 +8452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/open-ai/configuring-the-openai-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/open-ai/configuring-the-openai-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8314,7 +8473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/open-ai/using-the-openai-actions-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/open-ai/using-the-openai-actions-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8383,7 +8542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/salesforce/configuring-the-salesforce-crm-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/salesforce/configuring-the-salesforce-crm-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8404,7 +8563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/salesforce/using-the-salesforce-crm-action-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/salesforce/using-the-salesforce-crm-action-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8473,7 +8632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/servicenow/configuring-the-servicenow-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/servicenow/configuring-the-servicenow-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8494,7 +8653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/servicenow/using-the-servicenow-action-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/servicenow/using-the-servicenow-action-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8563,7 +8722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/stripe/configuring-the-stripe-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/stripe/configuring-the-stripe-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8584,7 +8743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/stripe/using-the-stripe-action-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/stripe/using-the-stripe-action-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8653,7 +8812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/shopify/configuring-the-shopify-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/shopify/configuring-the-shopify-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8674,7 +8833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/shopify/using-the-shopify-action-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/shopify/using-the-shopify-action-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8743,7 +8902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/twilio/configuring-the-twilio-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/twilio/configuring-the-twilio-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8764,7 +8923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/twilio/using-the-twilio-action-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/twilio/using-the-twilio-action-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8833,7 +8992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/zendesk/configuring-the-zendesk-action/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/zendesk/configuring-the-zendesk-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8854,7 +9013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/actions/zendesk/using-the-zendesk-action-templates/" class="md-nav__link">
+      <a href="../../app-settings/integrations/actions/zendesk/using-the-zendesk-action-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8931,7 +9090,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/agents/agent-transfer-integrations/" class="md-nav__link">
+      <a href="../../app-settings/integrations/agents/agent-transfer-integrations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8952,7 +9111,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/agents/how-to-configure-agent-transfer/" class="md-nav__link">
+      <a href="../../app-settings/integrations/agents/how-to-configure-agent-transfer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8973,7 +9132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/agents/configuring-the-drift-agent/" class="md-nav__link">
+      <a href="../../app-settings/integrations/agents/configuring-the-drift-agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8994,7 +9153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/agents/configuring-the-genesys-agent/" class="md-nav__link">
+      <a href="../../app-settings/integrations/agents/configuring-the-genesys-agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9015,7 +9174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/agents/configuring-the-intercom-agent/" class="md-nav__link">
+      <a href="../../app-settings/integrations/agents/configuring-the-intercom-agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9036,7 +9195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/agents/configuring-the-niceincontact/" class="md-nav__link">
+      <a href="../../app-settings/integrations/agents/configuring-the-niceincontact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9057,7 +9216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/agents/configuring-the-salesforce-agent/" class="md-nav__link">
+      <a href="../../app-settings/integrations/agents/configuring-the-salesforce-agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9078,7 +9237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/agents/servicenow/configuring-the-servicenow-agent/" class="md-nav__link">
+      <a href="../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9099,7 +9258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver/" class="md-nav__link">
+      <a href="../../app-settings/integrations/agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9120,7 +9279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/agents/adding-the-unblu-channel/" class="md-nav__link">
+      <a href="../../app-settings/integrations/agents/adding-the-unblu-channel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9189,7 +9348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/external-nlu/external-nlu-adapters/" class="md-nav__link">
+      <a href="../../app-settings/integrations/external-nlu/external-nlu-adapters/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9210,7 +9369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/external-nlu/dialogflow-engine/" class="md-nav__link">
+      <a href="../../app-settings/integrations/external-nlu/dialogflow-engine/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9231,7 +9390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integrations/external-nlu/test-and-debug/" class="md-nav__link">
+      <a href="../../app-settings/integrations/external-nlu/test-and-debug/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9265,25 +9424,30 @@
                 
   
   
+    
   
   
+  
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
         
           
-          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -9294,7 +9458,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7_3">
             <span class="md-nav__icon md-icon"></span>
             APIs and SDKs
@@ -9348,7 +9512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../apis/automation/api-introduction/" class="md-nav__link">
+      <a href="../../apis/automation/api-introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9369,7 +9533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../apis/automation/rate-limit/" class="md-nav__link">
+      <a href="../../apis/automation/rate-limit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9430,7 +9594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../apis/automation/api-list/" class="md-nav__link">
+      <a href="../../apis/automation/api-list/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9451,7 +9615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
+      <a href="../../apis/contact-center/contact-center-api-list/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9480,7 +9644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../apis/automation/koreutil-libraries/" class="md-nav__link">
+      <a href="../../apis/automation/koreutil-libraries/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9506,8 +9670,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -9517,11 +9683,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_7_3_2" id="__nav_7_3_2_label" tabindex="0">
@@ -9535,7 +9701,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7_3_2">
             <span class="md-nav__icon md-icon"></span>
             SDK Reference
@@ -9549,7 +9715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sdk/bot-sdk-introduction/" class="md-nav__link">
+      <a href="../bot-sdk-introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9569,8 +9735,69 @@
   
   
   
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3_2_2" id="__nav_7_3_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Web SDK
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_3_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Web SDK
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../../sdk/sdk-security/" class="md-nav__link">
+      <a href="../how-web-sdk-works/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How the Web SDK Works
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sdk-security/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9591,7 +9818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sdk/app-registration/" class="md-nav__link">
+      <a href="../app-registration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9612,7 +9839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sdk/sdk-configuration/" class="md-nav__link">
+      <a href="../sdk-configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9633,7 +9860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sdk/web-socket-connect-and-rtm/" class="md-nav__link">
+      <a href="../web-socket-connect-and-rtm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9653,8 +9880,283 @@
   
   
   
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_2_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3_2_2_6" id="__nav_7_3_2_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_2_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_2_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../../sdk/installing-the-botkit-sdk/" class="md-nav__link">
+      <a href="../tutorials/widget-sdk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Widget SDK Tutorial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/web-sdk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web SDK Tutorial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7_3_2_3" id="__nav_7_3_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    BotKit SDK
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_3_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7_3_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            BotKit SDK
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    BotKit SDK Deployment Guide
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    BotKit SDK Deployment Guide
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hosting-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hosting Considerations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#high-availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      High Availability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asynchronous-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asynchronous API
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Authorization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rate-limit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rate Limit
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-the-botkit-sdk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9675,7 +10177,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sdk/using-the-botkit-sdk/" class="md-nav__link">
+      <a href="../using-the-botkit-sdk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9696,7 +10198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sdk/sdk-events/" class="md-nav__link">
+      <a href="../sdk-events/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9717,7 +10219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sdk/sdk-functions/" class="md-nav__link">
+      <a href="../sdk-functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9750,24 +10252,24 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_2_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_2_3_6" >
         
           
-          <label class="md-nav__link" for="__nav_7_3_2_10" id="__nav_7_3_2_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_3_2_3_6" id="__nav_7_3_2_3_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    SDK Tutorials
+    Tutorials
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_3_2_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3_2_10">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_2_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_2_3_6">
             <span class="md-nav__icon md-icon"></span>
-            SDK Tutorials
+            Tutorials
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -9778,7 +10280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sdk/tutorials/blue-prism/" class="md-nav__link">
+      <a href="../tutorials/blue-prism/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9799,7 +10301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sdk/tutorials/flight-search-sample-bot/" class="md-nav__link">
+      <a href="../tutorials/flight-search-sample-bot/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9820,7 +10322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sdk/tutorials/agent-transfer/" class="md-nav__link">
+      <a href="../tutorials/agent-transfer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9834,43 +10336,9 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../sdk/tutorials/widget-sdk/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Widget SDK Tutorial
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../sdk/tutorials/web-sdk/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Web SDK Tutorial
-  </span>
-  
-
-      </a>
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -9954,7 +10422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/introduction/" class="md-nav__link">
+      <a href="../../analytics/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9975,7 +10443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/dashboard-filters/" class="md-nav__link">
+      <a href="../../analytics/dashboard-filters/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10036,7 +10504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/overview/summary-dashboard/" class="md-nav__link">
+      <a href="../../analytics/overview/summary-dashboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10057,7 +10525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/overview/conversations-dashboard/" class="md-nav__link">
+      <a href="../../analytics/overview/conversations-dashboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10078,7 +10546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/overview/conversations-history/" class="md-nav__link">
+      <a href="../../analytics/overview/conversations-history/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10099,7 +10567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/overview/users-dashboard/" class="md-nav__link">
+      <a href="../../analytics/overview/users-dashboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10120,7 +10588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/overview/feedback-dashboard/" class="md-nav__link">
+      <a href="../../analytics/overview/feedback-dashboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10189,7 +10657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/automation/performance-dashboard/" class="md-nav__link">
+      <a href="../../analytics/automation/performance-dashboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10210,7 +10678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/automation/conversation-insights/" class="md-nav__link">
+      <a href="../../analytics/automation/conversation-insights/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10231,7 +10699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/automation/nlp-insights/" class="md-nav__link">
+      <a href="../../analytics/automation/nlp-insights/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10252,7 +10720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/automation/task-execution-logs/" class="md-nav__link">
+      <a href="../../analytics/automation/task-execution-logs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10313,7 +10781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/automation/custom-dashboard/introduction-to-custom-dashboard/" class="md-nav__link">
+      <a href="../../analytics/automation/custom-dashboard/introduction-to-custom-dashboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10334,7 +10802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/automation/custom-dashboard/custom-meta-tags/" class="md-nav__link">
+      <a href="../../analytics/automation/custom-dashboard/custom-meta-tags/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10355,7 +10823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/automation/custom-dashboard/create-custom-dashboard/" class="md-nav__link">
+      <a href="../../analytics/automation/custom-dashboard/create-custom-dashboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10376,7 +10844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/automation/custom-dashboard/create-custom-dashboard-filters/" class="md-nav__link">
+      <a href="../../analytics/automation/custom-dashboard/create-custom-dashboard-filters/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10405,7 +10873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/automation/conversation-flows/" class="md-nav__link">
+      <a href="../../analytics/automation/conversation-flows/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10474,7 +10942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/contact-center/queues-and-agents/" class="md-nav__link">
+      <a href="../../analytics/contact-center/queues-and-agents/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10495,7 +10963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/contact-center/interactions/" class="md-nav__link">
+      <a href="../../analytics/contact-center/interactions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10556,7 +11024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/contact-center/reports/introduction-to-reports/" class="md-nav__link">
+      <a href="../../analytics/contact-center/reports/introduction-to-reports/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10577,7 +11045,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../analytics/contact-center/reports/reports-list/" class="md-nav__link">
+      <a href="../../analytics/contact-center/reports/reports-list/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10618,30 +11086,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -10652,7 +11115,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Administration
@@ -10671,20 +11134,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_1" >
         
           
-          <label class="md-nav__link" for="__nav_9_1" id="__nav_9_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_9_1" id="__nav_9_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -10709,7 +11169,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user-management/manage-users/" class="md-nav__link">
+      <a href="../../user-management/manage-users/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10730,7 +11190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user-management/role-management/" class="md-nav__link">
+      <a href="../../user-management/role-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10764,20 +11224,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" >
         
           
-          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -10802,7 +11259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deploy/bot-versioning/" class="md-nav__link">
+      <a href="../../deploy/bot-versioning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10823,7 +11280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deploy/publishing-bot/" class="md-nav__link">
+      <a href="../../deploy/publishing-bot/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10844,7 +11301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deploy/bot-management/" class="md-nav__link">
+      <a href="../../deploy/bot-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10870,30 +11327,25 @@
                 
   
   
-    
   
   
-  
     
     
     
       
       
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3" >
         
           
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_9_3" id="__nav_9_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_9_3" id="__nav_9_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -10904,7 +11356,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9_3">
             <span class="md-nav__icon md-icon"></span>
             App Settings
@@ -10918,7 +11370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app-profile/" class="md-nav__link">
+      <a href="../../app-settings/app-profile/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -10979,7 +11431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language-management/building-multi-language-bots/" class="md-nav__link">
+      <a href="../../app-settings/language-management/building-multi-language-bots/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11000,7 +11452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language-management/multilingual-vas-components-feature-support/" class="md-nav__link">
+      <a href="../../app-settings/language-management/multilingual-vas-components-feature-support/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11021,7 +11473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language-management/managing-languages-for-multilingual-vas/" class="md-nav__link">
+      <a href="../../app-settings/language-management/managing-languages-for-multilingual-vas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11042,7 +11494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language-management/managing-translation-services/" class="md-nav__link">
+      <a href="../../app-settings/language-management/managing-translation-services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11063,7 +11515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../language-management/multi-lingual-bot-behavior/" class="md-nav__link">
+      <a href="../../app-settings/language-management/multi-lingual-bot-behavior/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11132,7 +11584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../generative-ai-tools/introduction/" class="md-nav__link">
+      <a href="../../app-settings/generative-ai-tools/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11153,7 +11605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../generative-ai-tools/llm-integration/" class="md-nav__link">
+      <a href="../../app-settings/generative-ai-tools/llm-integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11174,7 +11626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../generative-ai-tools/xo-gpt-module/" class="md-nav__link">
+      <a href="../../app-settings/generative-ai-tools/xo-gpt-module/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11195,7 +11647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../generative-ai-tools/prompts-and-requests-library/" class="md-nav__link">
+      <a href="../../app-settings/generative-ai-tools/prompts-and-requests-library/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11216,7 +11668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../generative-ai-tools/co-pilot-features/" class="md-nav__link">
+      <a href="../../app-settings/generative-ai-tools/co-pilot-features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11237,7 +11689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../generative-ai-tools/dynamic-conversations-features/" class="md-nav__link">
+      <a href="../../app-settings/generative-ai-tools/dynamic-conversations-features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11258,7 +11710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../generative-ai-tools/pii-and-sensitive-data/" class="md-nav__link">
+      <a href="../../app-settings/generative-ai-tools/pii-and-sensitive-data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11279,7 +11731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../generative-ai-tools/guardrails/" class="md-nav__link">
+      <a href="../../app-settings/generative-ai-tools/guardrails/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11305,8 +11757,6 @@
                 
   
   
-    
-  
   
   
     
@@ -11318,11 +11768,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_4" >
         
           
           <label class="md-nav__link" for="__nav_9_3_4" id="__nav_9_3_4_label" tabindex="0">
@@ -11336,7 +11786,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_3_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_3_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9_3_4">
             <span class="md-nav__icon md-icon"></span>
             Dev Tools
@@ -11350,7 +11800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reusing-bot-functions-custom-script-file/" class="md-nav__link">
+      <a href="../../app-settings/dev-tools/reusing-bot-functions-custom-script-file/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11371,7 +11821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bot-authorization/bot-authentication/" class="md-nav__link">
+      <a href="../../app-settings/dev-tools/bot-authorization/bot-authentication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11389,30 +11839,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Web/Mobile SDK
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../app-settings/dev-tools/kore-ai-web-sdk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11421,88 +11851,6 @@
   
 
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this Page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this Page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#web-sdk-tutorial-overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Web SDK Tutorial Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installing-and-running-the-koreai-web-sdk" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installing and Running the Kore.ai Web SDK
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installing and Running the Kore.ai Web SDK">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#passing-data-via-websdk" class="md-nav__link">
-    <span class="md-ellipsis">
-      Passing data via webSDK
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#passing-mapped-identities" class="md-nav__link">
-    <span class="md-ellipsis">
-      Passing Mapped Identities
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#custom-meta-tags-via-websdk" class="md-nav__link">
-    <span class="md-ellipsis">
-      Custom Meta Tags via webSDK
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#some-commonly-encountered-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Some commonly encountered errors
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -11515,7 +11863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../apis/automation/api-introduction/" class="md-nav__link">
+      <a href="../../apis/automation/api-introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11536,7 +11884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mock-scenes/" class="md-nav__link">
+      <a href="../../app-settings/mock-scenes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11565,7 +11913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../variables/using-bot-variables/" class="md-nav__link">
+      <a href="../../app-settings/variables/using-bot-variables/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11586,7 +11934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../managing-namespace/" class="md-nav__link">
+      <a href="../../app-settings/managing-namespace/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11647,7 +11995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced-settings/pii-data-masking/" class="md-nav__link">
+      <a href="../../app-settings/advanced-settings/pii-data-masking/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11668,7 +12016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced-settings/bot-sessions/" class="md-nav__link">
+      <a href="../../app-settings/advanced-settings/bot-sessions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11697,7 +12045,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../change-logs/" class="md-nav__link">
+      <a href="../../app-settings/change-logs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11718,7 +12066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../delete-app/" class="md-nav__link">
+      <a href="../../app-settings/delete-app/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11752,20 +12100,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_4" >
         
           
-          <label class="md-nav__link" for="__nav_9_4" id="__nav_9_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_9_4" id="__nav_9_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -11790,7 +12135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/adminconsole/" class="md-nav__link">
+      <a href="../../administration/adminconsole/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11811,7 +12156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/dashboard-bac/" class="md-nav__link">
+      <a href="../../administration/dashboard-bac/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11872,7 +12217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/user-management/managing-your-users/" class="md-nav__link">
+      <a href="../../administration/user-management/managing-your-users/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11893,7 +12238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/user-management/managing-your-groups/" class="md-nav__link">
+      <a href="../../administration/user-management/managing-your-groups/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11914,7 +12259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/user-management/role-management/" class="md-nav__link">
+      <a href="../../administration/user-management/role-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11943,7 +12288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/data/manage-data-tables-and-views-in-admin-console/" class="md-nav__link">
+      <a href="../../administration/data/manage-data-tables-and-views-in-admin-console/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11964,7 +12309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/bot-management/" class="md-nav__link">
+      <a href="../../administration/bot-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12025,7 +12370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/enrollment/enrolling-a-new-user/" class="md-nav__link">
+      <a href="../../administration/enrollment/enrolling-a-new-user/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12046,7 +12391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/enrollment/enrolling-many-users/" class="md-nav__link">
+      <a href="../../administration/enrollment/enrolling-many-users/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12067,7 +12412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/enrollment/importing-users-and-user-data/" class="md-nav__link">
+      <a href="../../administration/enrollment/importing-users-and-user-data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12088,7 +12433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/enrollment/synchronizing-users-from-active-directory/" class="md-nav__link">
+      <a href="../../administration/enrollment/synchronizing-users-from-active-directory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12157,7 +12502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/security-and-control/using-single-sign-on/" class="md-nav__link">
+      <a href="../../administration/security-and-control/using-single-sign-on/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12178,7 +12523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/security-and-control/two-factor-authentication-for-platform-access/" class="md-nav__link">
+      <a href="../../administration/security-and-control/two-factor-authentication-for-platform-access/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12199,7 +12544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/security-and-control/security-settings/" class="md-nav__link">
+      <a href="../../administration/security-and-control/security-settings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12228,7 +12573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/kore-ai-connector/" class="md-nav__link">
+      <a href="../../administration/kore-ai-connector/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12249,7 +12594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/analytics/" class="md-nav__link">
+      <a href="../../administration/analytics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12270,7 +12615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/billing/" class="md-nav__link">
+      <a href="../../administration/billing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12328,62 +12673,74 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#web-sdk-tutorial-overview" class="md-nav__link">
+  <a href="#architecture" class="md-nav__link">
     <span class="md-ellipsis">
-      Web SDK Tutorial Overview
+      Architecture
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installing-and-running-the-koreai-web-sdk" class="md-nav__link">
+  <a href="#hosting-considerations" class="md-nav__link">
     <span class="md-ellipsis">
-      Installing and Running the Kore.ai Web SDK
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installing and Running the Kore.ai Web SDK">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#passing-data-via-websdk" class="md-nav__link">
-    <span class="md-ellipsis">
-      Passing data via webSDK
+      Hosting Considerations
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#passing-mapped-identities" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#system-requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      Passing Mapped Identities
+      System Requirements
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#custom-meta-tags-via-websdk" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
     <span class="md-ellipsis">
-      Custom Meta Tags via webSDK
+      Performance
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#some-commonly-encountered-errors" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#high-availability" class="md-nav__link">
     <span class="md-ellipsis">
-      Some commonly encountered errors
+      High Availability
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#asynchronous-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asynchronous API
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Authorization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rate-limit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rate Limit
+    </span>
+  </a>
   
 </li>
       
@@ -12405,284 +12762,57 @@
   
 
 
-<h1 id="koreai-web-sdk-tutorial">Kore.ai Web SDK Tutorial<a class="headerlink" href="#koreai-web-sdk-tutorial" title="Permanent link">&para;</a></h1>
-<p>This tutorial is an end-to-end walkthrough for setting up and running an instance of the Kore.ai Bots Web SDK which is a collection of libraries that you can use to integrate Kore.ai bots with your own web applications.</p>
-<h2 id="web-sdk-tutorial-overview">Web SDK Tutorial Overview<a class="headerlink" href="#web-sdk-tutorial-overview" title="Permanent link">&para;</a></h2>
-<p>In this tutorial, you will install a Kore.ai sample bot, a test application to host the bot, and then a JSON Web Token (JWT) generation web service using your local host server to communicate between the bot on your local server and the XO Platform.
-The following list describes the general steps you will take to install and configure the Web SDK.</p>
-<ol>
-<li><strong>Build the Bot to be integrated</strong> – For this tutorial, you will install the <em>Travel Planning Sample</em> bot that uses open APIs to get flight and location information, along with weather reports.</li>
-<li><strong>Configure Web/Mobile Client channel</strong> – To use the <em>Travel Planning Sample</em> bot with the Web SDK, you must configure the bot for the Web/Mobile Client channel.</li>
-<li><strong>Create a new Client App</strong> – When you configure the Web/Mobile Client channel for the <em>Travel Planning Sample</em> bot, you must create a client app and select the JWT signing algorithm used to generate the authentication tokens.</li>
-<li><strong>Publish the bot</strong> – After you have configured the <em>Travel Planning Sample</em> bot, you must publish the bot which sends the bot to the Bots Admin for approval.</li>
-<li><strong>Approve and Deploy the bot</strong> – In the Bots Admin Console, the published bot and tasks must be approved to deploy.</li>
-<li><strong>Download and install Node.js</strong> – You will need to install Node.js used to host the JWT token generation web service for the Web SDK to communicate between the bot in the test application and the XO Platform.</li>
-<li><strong>Download and uncompress the test application</strong> –  The test application, <a href="https://s3.amazonaws.com/static-kore/downloads/SDKApp.zip" target="_blank">SDKApp</a> is used to simulate your application that will host the Kore.ai bot as a channel on a web page using your computer local host server.</li>
-<li><strong>Download and uncompress the Kore.ai Web SDK</strong> – The Web SDK contains the libraries used to communicate and run the bot in the test application using the Web/Mobile Client channel. You will need to configure settings in the index.html file for your computer.</li>
-<li><strong>Start your application and view the bot in a web browser</strong> – In a <strong>Terminal</strong> window, you will start the JWT service, and then view the bot in a web browser.</li>
-</ol>
-<p>Now let us see detailed step by step implementation.</p>
-<h2 id="installing-and-running-the-koreai-web-sdk">Installing and Running the Kore.ai Web SDK<a class="headerlink" href="#installing-and-running-the-koreai-web-sdk" title="Permanent link">&para;</a></h2>
-<p>This section provides detailed steps on how to run a Kore.ai sample bot using the Web SDK and a test application running on your computer local host server.
-To get started, you will need to build a bot to run in the test application, and then configure the bot to run in the Web/Mobile Client channel.</p>
-<ol>
-<li>Log on to Bot Builder, and click the <strong>down-arrow</strong> next to the  <strong>+New Bot</strong> and select <strong>Install Sample Bots.</strong></li>
-<li>Hover over <strong>Travel Planning Sample</strong>, and then click <strong>Install</strong>.</li>
-<li>The Travel Planning Sample installed successfully message is displayed and the sample bot is added to your <strong>Bots</strong> left-hand navigation menu.</li>
-</ol>
-<p>In this next section, you will define the Web/Mobile Client channel for the Travel Planning Sample bot by creating a new client app and defining channel settings. <a href="../../../channels/add-web-mobile-client/" target="_blank">See here</a> for a detailed explanation of the steps.</p>
-<ol>
-<li>On the bot builder top menu, select the <strong>Deploy</strong> tab</li>
-<li>From the left menu, click <strong>Integrations &gt; Web/Mobile SDK</strong>.</li>
-<li>In the <strong>Select App</strong> drop-down list, click <strong>Create App</strong>. The <strong>Create Client App</strong> dialog is displayed.</li>
-<li>In the <strong>Name</strong> field, enter a name for your app, for example, My SDK Client App.</li>
-<li>In the <strong>JWT Signing Algorithms</strong> section, select <strong>HS256</strong> to generate the authentication tokens.</li>
-<li>Click <strong>Next -&gt; Done</strong>.</li>
-<li>The <strong>Web/Mobile Client Channel</strong> page is displayed with the following JWT credentials, make a note of all these details. We will be using them later in the Web SDK setup:<ol>
-<li>Bot Name</li>
-<li>Bot ID</li>
-<li>Client ID</li>
-<li>Client Secret</li>
-</ol>
-</li>
-<li>
-<p>Click <strong>Save</strong>.<br />
-  Now that the bot is created and defined for the Web/Mobile Client channel, you are ready to publish and deploy your bot.  </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>By default, the Travel Sample Planning bot is configured with <strong>Target Audience</strong> set to <strong>Enterprise Users</strong> on the <strong>Build</strong> tab in the <strong>Configurations -&gt; General Settings.</strong> Optionally, you can define this bot for <strong>General Public</strong> use. Once this bot is published, the <strong>Target Audience</strong> cannot be changed.</p>
-</div>
-</li>
-<li>
-<p>On the <strong>Deploy</strong> tab, click <strong>Bot Management -&gt; Publish</strong>.</p>
-</li>
-<li>On <strong>Publish</strong> page, select all tasks, and then click <strong>Proceed</strong>.</li>
-<li>Enter a comment and <strong>Confirm</strong> publish.<br />
-  After an enterprise developer publishes a bot, it must be approved and assigned to the users for use.</li>
-<li>
-<p>Complete one of the following bot deployments in the Bots Admin Console depending if your bot <strong>Target Audience</strong> is set to <strong>Enterprise Users</strong> or <strong>General Public</strong>. Complete one of the following:</p>
-<ol>
-<li>In the Bots Admin Console, in the <strong>Bots Management</strong> module, on the <strong>Enterprise Bots</strong> page, click the <strong>Ellipses</strong>  icon for the Travel Planning Sample bot that you want to deploy, and then click <strong>Manage bot tasks</strong>. The <strong>Manage Bot Tasks</strong> dialog is displayed.</li>
-<li>In the <strong>Bot tasks</strong> field, click the <strong>Expand</strong> <a class="glightbox" href="../images/web-mobile-sdk-imgarrow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/web-mobile-sdk-imgarrow.png" style="border: 1px solid gray;zoom:50%;"/></a> icon to display the available and deployed tasks, select all tasks for this bot, and then click <strong>Confirm</strong>.</li>
-<li>In the <strong>Manage bots tasks</strong> dialog, click <strong>Confirm</strong>. The Bot status changed successfully message is displayed.</li>
-<li>On the <strong>Enterprise Bots</strong> page, click the <strong>Ellipses</strong> icon for theTravel Planning Sample bot that you want to assign the users to, and then click <strong>Bot &amp; task assignments</strong>.</li>
-<li>The <strong>Bot &amp; task assignments</strong> dialog is displayed. Assign the bot to your users, for all tasks, including yourself.</li>
-</ol>
-<p>Now it is time to download, uncompress, install and configure the software packages required for the Web SDK and a test application to run the bot locally on your local host server.</p>
-</li>
-<li>
-<p>To download and install node.js on your computer, go to <a href="https://nodejs.org/en/download/" target="_blank">https://nodejs.org/en/download/</a>, and then select your OS as .pkg for Mac, and .msi for Windows.</p>
-</li>
-<li>In a <strong>Terminal</strong> window, run the <code>node -v</code> command to verify installation and version, for example, <code>v6.10.2</code>.</li>
-<li>Locate the <strong>SDKApp/sdk</strong> folder of your <span style="text-decoration:underline;">web server hosting the app</span> where you want to integrate the Kore bot. For this tutorial, to download the test application and JWT web service, click <a href="https://s3.amazonaws.com/static-kore/downloads/SDKApp.zip" target="_blank">SDKApp</a>, and unzip it.</li>
-<li>To download the Kore.ai Web SDK, go to <a href="https://github.com/Koredotcom/web-kore-sdk" target="_blank">https://github.com/Koredotcom/web-kore-sdk</a>, and then click <strong>Download</strong>. Extract all files to the …/SDKApp/sdk folder mentioned in step above. Check for the release compatibility from the <a href="../../../whats-new/whats-new-in-this-release" target="_blank">release notes</a>.</li>
-<li>
-<p>From the Bot Builder <strong>Web/Mobile Client Channel</strong> page on the <strong>Deploy -&gt; Channels</strong> menu, copy the following (as mentioned in step 8 above):</p>
-<ol>
-<li>clientSecret</li>
-<li>clientId</li>
-<li>Bot Name</li>
-</ol>
-</li>
-<li>
-<p>For ver7.2 of the platform, the Web SDK repo structure has undergone a major change. The steps would vary based on which repo you are using.</p>
-<ol>
-<li>
-<p>Follow this step for the latest Web SDK file downloaded <span style="text-decoration:underline;">after ver7.2</span> of the platform i.e. <span style="text-decoration:underline;">after Feb 2020.</span></p>
-<ol>
-<li>
-<p>Open the index.html file from the …/SDKApp/sdk/UI folder using a text editor. Update the following lines to add the path to the UI folder:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&amp;lt;script src=&quot;libs/jquery.js&quot; type=&quot;text/javascript&quot;&gt;&amp;lt;/script&gt;
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>&amp;lt;script src=&quot;libs/jquery.tmpl.min.js&quot; type=&quot;text/javascript&quot;&gt;&amp;lt;/script&gt;
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>&amp;lt;script src=&quot;libs/jquery-ui.min.js&quot; type=&quot;text/javascript&quot;&gt;&amp;lt;/script&gt;
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>&amp;lt;link href=&quot;libs/jquery-ui.min.css&quot; rel=&quot;stylesheet&quot;&gt;&amp;lt;/link&gt;
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>&amp;lt;script src=&quot;chatWindow.js&quot; type=&quot;text/javascript&quot;&gt;&amp;lt;/script&gt;
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>&amp;lt;link href=&quot;chatWindow.css&quot; rel=&quot;stylesheet&quot;&gt;&amp;lt;/link&gt;
-</span></code></pre></div>
-</li>
-<li>
-<p>Open the kore-config.js and update the botOptions parameters botInfo, clientId and clientSecret, and your email id as userIdentity.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>&quot;clientSecret&quot;: &quot;{client secret}&quot;
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>$.ajax({
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>url: &quot;[http://localhost:3000/api/users/getJWT](http://localhost:3000/api/users/getJWT)&quot;,
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    //this is sample url of a localhost. 
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    //This should include the url where you are hosting 
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>the bot.
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>botOptions.userIdentity = &#39; &#39;;
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    // Provide users email id here
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>botOptions.clientId= &quot;{client id} &quot;;
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    // secure client-id
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>_botOptions.botInfo= {name:&quot;{bot name}&quot;,&quot;id&quot;:&quot;{bot id&quot;};
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    // Kore bot name is case sensitive
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>})
-</span></code></pre></div>
-<p>The JWTUrl refers to the location where your app (where you want the Kore.ai Bot to be integrated) is hosted. For this tutorial, we are using the JWT server (as setup in step 19) and hence using the same here.</p>
-</li>
-<li>
-<p>Ensure that in kore-config.js you set the audience for your bot. Choose one of the following:</p>
-<ol>
-<li>
-<p><code>"isAnonymous": &lt; <strong>false </strong>&gt;;</code> if bot is deployed for the <strong>enterprise users</strong>, and then set <code>botOptions.userIdentity = '<strong>&lt;</strong> <strong>Your email ID &gt;</strong>'</code>;</p>
-<p><strong>– or –</strong></p>
-</li>
-<li>
-<p><code>"isAnonymous": &lt; <strong>true </strong>&gt;;</code> if bot is deployed for <strong>Consumer Use</strong></p>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>
-<p>This step is valid for older Web SDK file downloaded <span style="text-decoration:underline;">before ver7.2</span> of the platform i.e. <span style="text-decoration:underline;">before Feb 2020</span></p>
-<p>Open the index.html file from the …/SDKApp/sdk/UI folder using a text editor:</p>
-<ol>
-<li>
-<p>Update the following lines to add the path to the UI folder:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>&lt;script src=&quot;libs/jquery.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>&lt;script src=&quot;libs/jquery.tmpl.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>&lt;script src=&quot;libs/jquery-ui.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>&lt;link href=&quot;libs/jquery-ui.min.css&quot; rel=&quot;stylesheet&quot;&gt;&lt;/link&gt;
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>&lt;script src=&quot;chatWindow.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>&lt;link href=&quot;chatWindow.css&quot; rel=&quot;stylesheet&quot;&gt;&lt;/link&gt;
-</span></code></pre></div>
-</li>
-<li>
-<p>Update the following parameters to run as local host</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>“clientSecret”: “{client secret}”
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>$.ajax({
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>url: “http://localhost:3000/api/users/getJWT”,
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    //this is sample url of a local host. 
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    //This should include the url where you are hosting the bot.
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>botOptions.userIdentity = ‘ ‘;
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    // Provide users email id here
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>botOptions.clientId= &quot;{client id} &quot;;
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    // secure client-id
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>_botOptions.botInfo= {name:&quot;{bot name}&quot;,&quot;id&quot;:&quot;{bot id&quot;};
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    // Kore bot name is case sensitive
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>})
-</span></code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The URL mentioned in the above code snippet, refers to the location where your app (where you want the Kore.ai Bot to be integrated) is hosted. For this tutorial, we are using the JWT server (as setup in step 15) and hence using the same here.</p>
-</div>
-</li>
-<li>
-<p>Choose one of the following:</p>
+<h1 id="botkit-sdk-deployment-guide-architecture-hosting-and-best-practices">BotKit SDK Deployment Guide: Architecture, Hosting, and Best Practices<a class="headerlink" href="#botkit-sdk-deployment-guide-architecture-hosting-and-best-practices" title="Permanent link">&para;</a></h1>
+<p>The Kore.ai BotKit SDK is a powerful tool for extending and customizing Kore.ai virtual assistants. It allows developers to intercept messages sent to the Kore.ai platform and add custom processing logic, enabling advanced bot behaviors and integrations. However, deploying the BotKit SDK in a production environment requires careful planning and consideration to ensure scalability, high availability, and optimal performance.</p>
+<p>This guide provides a comprehensive overview of the architecture, hosting options, system requirements, performance optimization techniques, load testing strategies, high availability configurations, API gateway integration, and security best practices for deploying the Kore.ai BotKit SDK at scale. Whether you are a developer, DevOps engineer, or IT architect, this handbook will provide you with the knowledge and guidelines necessary to successfully deploy and operate BotKit-enabled virtual assistants in an enterprise environment.</p>
+<p>We will begin by discussing the overall architecture and integration patterns between the Kore.ai platform and the BotKit SDK. Then, we will explore various hosting options and the system requirements for running BotKit. Performance optimization and load testing will be covered in detail, including best practices for writing efficient BotKit code and simulating production loads. We will also delve into high availability considerations, API gateway configuration, authentication and authorization mechanisms, and rate-limiting strategies.</p>
+<p>By following the guidelines and best practices outlined in this guide, you can confidently deploy the Kore.ai BotKit SDK, knowing that your virtual assistant can handle high traffic loads, provide optimal response times, and maintain high availability and security. Let’s get started on the path to BotKit production readiness!</p>
+<h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p><code>"isAnonymous": &lt; <strong>false </strong>&gt;;</code> if bot is deployed for the <strong>enterprise users</strong>, and then set <code>botOptions.userIdentity = '<strong>&lt;</strong> <strong>Your email ID &gt;</strong>'</code>;</p>
-<p><strong>– or –</strong></p>
-</li>
-<li>
-<p><code>"isAnonymous": &lt; <strong>true </strong>&gt;;</code> if bot is deployed for <strong>Consumer Use</strong></p>
-</li>
+<li>The BotKit SDK is a Node.js application that enables intercepting messages to the Kore.ai platform to add custom processing.</li>
+<li>It runs as a standalone service that receives events from the Kore.ai platform based on the dialog flow.</li>
+<li>The SDK receives message events, feedback survey events, and webhook events from Kore.ai.</li>
+<li>It can send responses back to Kore.ai to control the conversation flow.</li>
 </ul>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>
-<p>Save your changes.
-    You are ready to start the JWT token generation service and access the test application with the configured Web SDK in your local web browser.</p>
-</li>
-<li>
-<p>Go to home directory <code>cd SDKApp</code></p>
-</li>
-<li>
-<p>Install dependencies using the following command</p>
-<p><code>npm install</code></p>
-<p><a class="glightbox" href="../images/web-mobile-sdk-img1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/web-mobile-sdk-img1.png" alt="Install dependencies" title="Install dependencies" style="border: 1px solid gray;zoom:50%;"/></a></p>
-</li>
-<li>
-<p>Start SDKApp</p>
-<p><code>node startServer.js</code></p>
-</li>
-<li>
-<p>Access the application in any browser using localhost:3000</p>
-</li>
-</ol>
-<h3 id="passing-data-via-websdk">Passing data via webSDK<a class="headerlink" href="#passing-data-via-websdk" title="Permanent link">&para;</a></h3>
-<p>You can pass additional information of the user accessing the channel by adding the custom data at <strong>botInfo</strong> inside the index.html file.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>botOptions.botInfo = {name: &quot;Banking Bot&quot;, 
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>                              &quot;_id&quot;: &quot;&lt;bot_id&gt;&quot;, 
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>                              customData: &quot;value&quot;
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>              };
-</span></code></pre></div>
-<p>Details like phone number, address, or location, etc., are examples of data that can be passed inside the <span style="text-decoration:underline;">customData</span>.</p>
-<p><code>customData</code> can be accessed from <code>lastMessage</code> under the <code>BotUserSession</code> of the context object. This data will be specific to the user using webSDK and will last for the user session.</p>
-<p>Multiple values can also be added to the <code>customData</code> in the <code>index.html</code> file as key-value pairs:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>botOptions.botInfo = {name:&quot;&lt;bot_name&gt;&quot;,
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>                      &quot;_id&quot;:&quot;&lt;bot_id&quot;,
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>                      customData:{&quot;name&quot;:&quot;John&quot;,
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>                                  &quot;age&quot;:30,
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>                                   &quot;cars&quot;: {&quot;car1&quot;:&quot;Ford&quot;,
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>                                            &quot;car2&quot;:&quot;BMW&quot;,
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>                                            &quot;car3&quot;:&quot;Fiat&quot;
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>                                             }
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>                                   }
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>                           };
-</span></code></pre></div>
-<p><a class="glightbox" href="../images/web-mobile-sdk-img2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/web-mobile-sdk-img2.png" alt="BotUserSession of the context object" title="BotUserSession of the context object" style="border: 1px solid gray;zoom:50%;"/></a></p>
-<h3 id="passing-mapped-identities">Passing Mapped Identities<a class="headerlink" href="#passing-mapped-identities" title="Permanent link">&para;</a></h3>
-<p>The Web/Mobile SDKs support the passing of mapped identities of the users when they switch from one identity to another while interacting with the bot. This process allows the users to continue any ongoing conversation initiated using a previous identity.
-For example, a user may have started the conversation with the bot using an anonymous or randomly generated identity. After exchanging a few messages, the user may become an authenticated or known user by logging into your website or any application. At this point, the user’s known identity can be passed to the bot from the SDK as part of the ‘<a href="https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/#About_JWT" target="_blank">JWT Grant API</a>’ call using the parameter identityToMerge. The Platform uses this information to merge the user identities and allows the user to resume an ongoing conversation using the new known identity.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>{
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a> &quot;iat&quot;: 1611810186883,
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a> &quot;exp&quot;: 1611813786.883,
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a> &quot;aud&quot;: &quot;https://idproxy.kore.com/authorize&quot;,
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a> &quot;iss&quot;: &quot;cs-d3042d3e-7da4-55da-a94d-783349270cc0&quot;,
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a> &quot;sub&quot;: &quot;knowuser1@test.com&quot;,
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a> &quot;isAnonymous&quot;: &quot;false&quot;,
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a> &quot;identityToMerge&quot;: &quot;anonymoususer1@test.com&quot;
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>}
-</span></code></pre></div>
-<p>The following scenarios describe the bot behavior when dealing with the new identity and merged identity:</p>
+<h2 id="hosting-considerations">Hosting Considerations<a class="headerlink" href="#hosting-considerations" title="Permanent link">&para;</a></h2>
 <ul>
-<li>When both the new and merged identities are not present in the system, then the new identity is created and a new conversation is started using new identity</li>
-<li>When the new identity is present but the merged identity is not present in the system, then the conversation is started or continued (in case of an active session) using new identity</li>
-<li>When the merged identity is present but the new identity is not present in the system, then the new identity is created and the conversation is continued using the new identity. All references to the merged identity are replaced with the new identity and the merged identity is removed.</li>
-<li>When both the merged identity and the new identity are present in the system and the new identity does not have an active session, then the conversation is continued using the new identity. All references to the merged identity are replaced with the new identity and the merged identity is removed.</li>
-<li>When both the merged identity and the new identity are present in the system and both have an active session, then the merged identity’s conversation is continued using the new identity. All references to the merged identity are replaced with the new identity and the merged identity is removed. The active session of the new identity is marked as “Drop-off” and closed</li>
+<li>The BotKit SDK can be hosted on a dedicated VM or using serverless functions like AWS Lambda.</li>
+<li>A typical VM configuration starts with 2 vCPUs and 4GB memory. Adjust based on load and performance testing.</li>
+<li>Follow the BotKit installation steps provided in the Kore.ai documentation.</li>
 </ul>
-<p>Due to the above-mentioned behavior in the user identity following changes can be seen:</p>
+<h2 id="system-requirements">System Requirements<a class="headerlink" href="#system-requirements" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Analytics and Chat History will be updated associating all the sessions related to the merged identity with the new identity</li>
-<li>The sessions data is updated replacing the merged identity with the new identity</li>
-<li>The Billing Session tracking merged identity’s conversation will be marked as new identity</li>
+<li>Node.js version 16 or higher</li>
+<li>Typical starting server spec: 2 vCPU, 4GB memory</li>
 </ul>
-<h3 id="custom-meta-tags-via-websdk">Custom Meta Tags via webSDK<a class="headerlink" href="#custom-meta-tags-via-websdk" title="Permanent link">&para;</a></h3>
-<p>With the release of ver8.0 of the platform, you can directly add Custom Meta Tags from all supported internal channels (Web SDK/IVR / IVRVoice / Webhook channels). You can define Session, User, and Message level meta-tags. These tags will be added to the Conversation Session as soon as it is created.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>botOptions.botInfo = {
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    name:&quot;&lt;bot_name&gt;&quot;, &quot;_id&quot;:&quot;&lt;bot_id&quot;,
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    customData :{&quot;name&quot;:&quot;John&quot;},
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    &quot;metaTags&quot;: { 
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>            &quot;messageLevelTags&quot;: [{ &quot;name&quot;: &quot;tag1&quot;, value: &quot;message&quot;}],
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>            &quot;sessionLevelTags&quot;: [{ &quot;name&quot;: &quot;tag2&quot;, value: &quot;session&quot;}],
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>            &quot;userLevelTags&quot;: [{ &quot;name&quot;: &quot;tag3&quot;, value: &quot;user&quot;}]
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>            }  
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    };
-</span></code></pre></div>
-<h3 id="some-commonly-encountered-errors">Some commonly encountered errors<a class="headerlink" href="#some-commonly-encountered-errors" title="Permanent link">&para;</a></h3>
+<h2 id="performance">Performance<a class="headerlink" href="#performance" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p>A wrong URL is given in index.html, users see a 404 error. Double check the URL. URL changes depending on whether you are hosting the bot on your own web SDK or on Kore’s web SDK. If its Kore web SDK, then the URL is <code>http://demo.kore.net:3000/users/sts 7</code>.</p>
-<p>If you are hosting on your in-house web SDK, then provide the respective URL.</p>
-</li>
-<li>
-<p>missing/Invalid jwt.sub(): This error occurs for enterprise Bots, when the user’s email id is not given in the index.html file. Provide users identity as shown below in index.html</p>
-<p><code>botOptions.userIdentity = 'x@gmail.com';// Provide users email id here.</code></p>
-</li>
-<li>
-<p>Not found: User sees this error when either wrong clientID or no clientID is given. Check the correct ClientID from Bot – API Extensions option</p>
-<p><code>botOptions.clientId = "{clientID}"; // secure client-id</code></p>
-</li>
-<li>
-<p>error verifying the jwt: the Wrong clientSecret is given in index.html: Check the correct clientSecret you get from Bot – API Extensions option</p>
-<p><code>"clientSecret": "{clientSecret}" //provide clientSecret here</code></p>
-</li>
+<li>Load test the BotKit API to ensure it provides the required throughput.</li>
+<li>Use tools like Apache Bench or JMeter to simulate request load and benchmark the BotKit instance.</li>
+<li>Ensure all code within BotKit handlers uses asynchronous processing to avoid blocking the event loop.</li>
+<li>Any synchronous, long-running code will negatively impact the overall responsiveness and throughput.</li>
 </ul>
-<p>After you install and test the Web SDK using the test application and your local host server, you can use the same concept to install and configure the Web SDK in your own enterprise application. You will just need to reconfigure the file paths and URLs in the index.html file of the Web SDK to point to your website and servers, and configure a Kore.ai bot for the Web/Mobile Client channel with JWT credentials for your enterprise.</p>
+<h2 id="high-availability">High Availability<a class="headerlink" href="#high-availability" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Deploy multiple BotKit instances behind a load balancer in an active-active, highly available configuration.</li>
+<li>Ensure the BotKit process is monitored and automatically restarted on failure.</li>
+</ul>
+<h2 id="asynchronous-api">Asynchronous API<a class="headerlink" href="#asynchronous-api" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Kore.ai sends events to the configured BotKit API endpoint.</li>
+<li>BotKit supports asynchronous communication – Kore.ai can call the API with a return URL.</li>
+<li>BotKit should respond with an ACK immediately, then call the return URL to submit the final response later.</li>
+</ul>
+<h2 id="api-authorization">API Authorization<a class="headerlink" href="#api-authorization" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Whitelist the Kore.ai platform IP addresses so that only Kore.ai can call your BotKit API.</li>
+<li>Require Kore.ai to authenticate requests using the Client ID and Secret generated when registering the BotKit app.</li>
+</ul>
+<h2 id="rate-limit">Rate Limit<a class="headerlink" href="#rate-limit" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Implement a rate limit on the BotKit API to protect against excessive requests.</li>
+<li>Enforce limits per API key to prevent individual clients from overloading the system.</li>
+</ul>
 
 
 
@@ -12728,7 +12858,7 @@ For example, a user may have started the conversation with the bot using an anon
               
                 
               
-              Thanks for your feedback! Help us improve this page by using our <a href="https://docsinternal-kore.github.io/docs/xo/feedback/feedback-form/?title=[Feedback]+/app-settings/dev-tools/kore-ai-web-sdk-tutorial/" target="_blank" rel="noopener">feedback form<a>.
+              Thanks for your feedback! Help us improve this page by using our <a href="https://docsinternal-kore.github.io/docs/xo/feedback/feedback-form/?title=[Feedback]+/sdk/botkit-sdk-deployment-guide/" target="_blank" rel="noopener">feedback form<a>.
             </div>
           
         </div>
@@ -12762,7 +12892,7 @@ For example, a user may have started the conversation with the bot using an anon
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../bot-authorization/bot-authentication/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Authorization Profiles">
+          <a href="../tutorials/web-sdk/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Web SDK Tutorial">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -12772,20 +12902,20 @@ For example, a user may have started the conversation with the bot using an anon
                 Previous
               </span>
               <div class="md-ellipsis">
-                Authorization Profiles
+                Web SDK Tutorial
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../../apis/automation/api-introduction/" class="md-footer__link md-footer__link--next" aria-label="Next: API Scopes">
+          <a href="../installing-the-botkit-sdk/" class="md-footer__link md-footer__link--next" aria-label="Next: Installing the BotKit SDK">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                API Scopes
+                Installing the BotKit SDK
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -12819,10 +12949,10 @@ For example, a user may have started the conversation with the bot using an anon
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.footer", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "header.autohide"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.footer", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "header.autohide"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js"></script>
       
