@@ -33,7 +33,7 @@ To get started, you will need to build a bot to run in the test application, and
 2. Hover over **Travel Planning Sample**, and then click **Install**.
 3. The Travel Planning Sample installed successfully message is displayed and the sample bot is added to your **Bots** left-hand navigation menu.
 
-In this next section, you will define the Web/Mobile Client channel for the Travel Planning Sample bot by creating a new client app and defining channel settings. [See here](../../../channels/add-web-mobile-client/){:target="_blank"} for a detailed explanation of the steps.
+In this next section, you will define the Web/Mobile Client channel for the Travel Planning Sample bot by creating a new client app and defining channel settings. [See here](../../../channels/add-web-mobile-client){:target="_blank"} for a detailed explanation of the steps.
 
 4. On the bot builder top menu, select the **Deploy** tab
 5. From the left menu, click **Integrations > Web/Mobile SDK**.
@@ -69,7 +69,7 @@ In this next section, you will define the Web/Mobile Client channel for the Trav
 16. To download and install node.js on your computer, go to [https://nodejs.org/en/download/](https://nodejs.org/en/download/){:target="_blank"}, and then select your OS as .pkg for Mac, and .msi for Windows.
 17. In a **Terminal** window, run the `node -v` command to verify installation and version, for example, `v6.10.2`.
 18. Locate the **SDKApp/sdk** folder of your <span style="text-decoration:underline;">web server hosting the app</span> where you want to integrate the Kore bot. For this tutorial, to download the test application and JWT web service, click [SDKApp](https://s3.amazonaws.com/static-kore/downloads/SDKApp.zip){:target="_blank"}, and unzip it.
-19. To download the Kore.ai Web SDK, go to [https://github.com/Koredotcom/web-kore-sdk](https://github.com/Koredotcom/web-kore-sdk){:target="_blank"}, and then click **Download**. Extract all files to the …/SDKApp/sdk folder mentioned in step above. Check for the release compatibility from the [release notes](../../../whats-new/whats-new-in-this-release){:target="_blank"}.
+19. To download the Kore.ai Web SDK, go to [https://github.com/Koredotcom/web-kore-sdk](https://github.com/Koredotcom/web-kore-sdk){:target="_blank"}. In the **master** dropdown, select the required **Branch/Tag** and then in the **Code** dropdown, click **Download ZIP**. Extract all files to the …/SDKApp/sdk folder mentioned in step above. Check for the release compatibility from the [release notes](../../../whats-new/whats-new-in-this-release){:target="_blank"}.
 20. From the Bot Builder **Web/Mobile Client Channel** page on the **Deploy -> Channels** menu, copy the following (as mentioned in step 8 above):
     1. clientSecret
     2. clientId
