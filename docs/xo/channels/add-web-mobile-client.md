@@ -127,19 +127,19 @@ Steps to change the theme and design:
     !!! note
 
         You cannot edit the default themes, but you can create a copy and modify that copy using the **Make Copy** and **Customize** option.
+        
 5. You can choose from the available themes or create your own using existing themes.
     1. Click the theme you want to apply. The changes are reflected in the preview pane, and a success message is displayed. 
-
 
         ![alt_text](images/sdke4.png  )
 
     2. Select the theme, click **Make Copy** to create a copy, and apply customization. The copy of the selected theme opens in the edit mode.
         1. Make the required changes in the **Components** and the **Chat Screen** sections. 
 
-
         ![alt_text](images/sdke2.png  )
 
         2. Click **Save**. The custom theme is created and selected as the current theme.
+
 6. Click the back icon before the theme editor in the top left corner. 
 
 
@@ -150,4 +150,5 @@ Steps to change the theme and design:
     ![alt_text](images/sdke5.png  )
 
 8. Click **Proceed**. The Digital > Configured page is displayed.
+
 9. To push the modification from the development to the published state, publish the VA.
