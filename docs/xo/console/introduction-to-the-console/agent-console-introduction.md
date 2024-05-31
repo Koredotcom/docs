@@ -8,7 +8,7 @@ The Console allows agents to access AgentAssist and execute conversational tasks
 * Find information from an external system or knowledge base.
 * Provide structured training and coaching to Agents.
 
-# Access the Console
+## Access the Console
 
 To access the console, follow these steps:
 
@@ -25,7 +25,7 @@ The Agent Console is an agent’s primary working area consisting of the followi
 4. Additional Tools (AgentAssist Widget, History, Actions, Responses, User Info). The layout and components can be customized using [Manage Layout](../manage-layout/manage-layout.md).
 <img src="../images/console-layout.png" alt="Console Layout" title="Console Layout" style="border: 1px solid gray; zoom:80%;">
 
-# Agent Features
+## Agent Features
 
 The Agent Console has several primary agent features, including:
 
@@ -37,7 +37,7 @@ The Agent Console has several primary agent features, including:
 * Integration with third-party sites or systems via widgets displayed within the console.
 * Customizable layout via [Manage Layouts](../manage-layout/manage-layout.md).
 
-# Supervisor Features
+## Supervisor Features
 
 The console offers several features that enable contact center supervisors to monitor agent activity, including:
 
