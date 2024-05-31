@@ -2,7 +2,7 @@
 
 The Console combines the workflows of Agents, Supervisors, and Contact Center Operations Managers. It allows them to communicate with customers, monitor operations in real-time, and access historical performance reports.
 
-The Console allows agents to access AgentAssist and execute conversational tasks. AgentAssist seamlessly performs the following functions:
+The Console allows agents to access Agent AI and execute conversational tasks. Agent AI seamlessly performs the following functions:
 
 * Guide agents through conversations by providing response suggestions.
 * Find information from an external system or knowledge base.
@@ -22,7 +22,7 @@ The Agent Console is an agent’s primary working area consisting of the followi
 1. The Conversation Tray
 2. Incoming Interactions (Next Customer notification)
 3. Live Interaction Pane
-4. Additional Tools (AgentAssist Widget, History, Actions, Responses, User Info). The layout and components can be customized using [Manage Layout](../manage-layout/manage-layout.md).
+4. Additional Tools (Agent AI Widget, History, Actions, Responses, User Info). The layout and components can be customized using [Manage Layout](../manage-layout/manage-layout.md).
 <img src="../images/console-layout.png" alt="Console Layout" title="Console Layout" style="border: 1px solid gray; zoom:80%;">
 
 ## Agent Features
