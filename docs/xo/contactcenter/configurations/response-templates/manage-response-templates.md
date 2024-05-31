@@ -2,7 +2,7 @@
 
 Response Templates are predefined (“canned”) messages that agents can use to speed up their delivery of information during customer interactions: welcome messages, salutations, notifications, and more. Response Templates are organized into groups and may be assigned to agents according to skills or agent groups.
 
-To access this feature, go to **Contact Center > CONFIGURATIONS > Response Templates**.
+To access this feature, go to **Contact Center AI** > **CONFIGURATIONS** > **Response Templates**.
 <img src="../images/response-templates-page.png" alt="
 Response Templates Page" title="Response Templates Page" style="border: 1px solid gray; zoom:80%;">
 
@@ -16,7 +16,7 @@ The Response Templates section provides the following high-level features:
 
 ## Response Groups
 
-Response Templates are organized into _Response Groups_, to which agents need to be mapped for responses to be available to them in the [Agent Console](../../../console/introduction-to-the-console/Introduction.md).
+Response Templates are organized into _Response Groups_, to which agents need to be mapped for responses to be available to them in the [Agent Console](../../../console/introduction-to-the-console/agent-console-introduction.md).
 
 ### View an Existing Response Group
 

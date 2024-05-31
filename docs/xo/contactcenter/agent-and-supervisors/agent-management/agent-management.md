@@ -4,7 +4,7 @@
 
 An **Agent Group** is a collection of agents based on skills, scopes, roles, functionalities, etc. Agents are assigned to groups to streamline customer service within Contact Center.
 
-To find _Agent Groups_, go to **Contact Center > AGENT & SUPERVISORS > Agent Management**. All groups are visible on this page by default.  
+To find _Agent Groups_, go to **Contact Center AI** > **AGENT & SUPERVISORS** > **Agent Management**. All groups are visible on this page by default.  
 <img src="../images/agent-groups-tab.png" alt="Agent Groups Tab" title="Agent Groups Tab" style="border: 1px solid gray; zoom:80%;">
 
 ### Agent Group Section Features

@@ -6,7 +6,7 @@ By default, **AgentAssist Widget** is enabled inside the SmartAssist Agent Conso
 
 To enable or disable AgentAssist Widget and its features:
 
-1. Go to **Contact Center > CONFIGURATION > AgentAssist Settings**.
+1. Go to **Contact Center AI** > **CONFIGURATIONS** > **AgentAssist Settings**.
 <img src="../images/agentassist-settings-page.png" alt="AgentAssist Settings Page" title="AgentAssist Settings Page" style="border: 1px solid gray; zoom:80%;">
 
 2. To disable the widget, click the button highlighted in the following screenshot:
