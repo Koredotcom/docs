@@ -9,7 +9,7 @@ Here, you can configure the interaction flow based on the customer’s behavior 
 
 The contact center module provides inbuilt **Phone and Chat Experience** flows for these scenarios. However, you can change the default flow and the message to the customer based on the current conversation channel.
 
-To start, go to **Contact Center > Configuration > Default Flows**.
+To start, go to **Contact Center AI** > **CONFIGURATIONS** > **Default Flows**.
 <img src="../images/default-flows-page.png" alt="
 Default Flows Page" title="Default Flows Page" style="border: 1px solid gray; zoom:80%;">
 

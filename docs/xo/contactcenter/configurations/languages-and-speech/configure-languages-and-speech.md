@@ -2,7 +2,7 @@
 
 This feature lets you configure the language and speech settings within Contact Center module, to manage how your contact center uses languages and speech recognition.
 
-Go to **Contact Center > CONFIGURATIONS > Languages & Speech** to access Languages and Speech settings.
+Go to **Contact Center AI** > **CONFIGURATIONS** > **Languages & Speech** to access Languages and Speech settings.
 <img src="../images/languages-and-speech-page.png" alt="
 Languages & Speech Page" title="Languages & Speech Page" style="border: 1px solid gray; zoom:80%;">
 
