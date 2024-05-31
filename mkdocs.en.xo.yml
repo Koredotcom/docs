@@ -322,6 +322,7 @@ nav:
       - Incoming Interactions: console/incoming-interactions/managing-incoming-interactions.md
       - Interacting With Customers: console/interacting-with-customers/interacting-with-customers.md
       - Additional Tools: console/additional-tools/additional-tools.md
+      - Manage Layout: console/manage-layout-manage-layout.md
     - Campaigns:  
       - Overview: contactcenter/campaigns/about-campaigns.md
       - Dashboard: contactcenter/campaigns/dashboard/campaign-dashboard.md
