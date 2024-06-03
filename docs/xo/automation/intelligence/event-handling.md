@@ -165,16 +165,15 @@ To configure the Ambiguous Intents Identified event follow these steps:
 2. Click **Configure** to enable the event.
     <img src="../images/configure-intent-events.png" alt="configure intent events" title="configure intent events" style="border: 1px solid gray; zoom:75%;">
 
-!!!note
-
-    If not enabled, the list of ambiguous intents is presented to the user during the conversation.
+     !!!note
+        If not enabled, the list of ambiguous intents is presented to the user during the conversation.
 
 3. You can select the following options in the Configuration panel:
-    * **Present all the qualified intents to the end-user for disambiguation**: This is the default selection in which the standard response related to the ambiguous intent(s) is presented.[Learn more](../intelligence/conversation-management/standard-responses.md).
+    * **Present all the qualified intents to the end-user for disambiguation**: This is the default selection in which the standard response related to the ambiguous intent(s) is presented. [Learn more](../intelligence/conversation-management/standard-responses.md).
 
-    * **Automatically run a Dialog Task**: This option lets you select a Dialog Task. Select this option if you want to build custom business logic to analyze the ambiguous intents, define appropriate conversation flow using a Dialog Task, and associate it with the Ambiguous Intents Identified event.[Learn more](../intelligence/conversation-management/conversation-driven-dialog-builder.md).
+    * **Automatically run a Dialog Task**: This option lets you select a Dialog Task. Select this option if you want to build custom business logic to analyze the ambiguous intents, define appropriate conversation flow using a Dialog Task, and associate it with the Ambiguous Intents Identified event. [Learn more](../intelligence/conversation-management/conversation-driven-dialog-builder.md).
 
-<img src="../images/ambiguous-intents-identified.png" alt="ambiguous intents identified" title="ambiguous intents identified" style="border: 1px solid gray; zoom:75%;"></li></ul>
+    <img src="../images/ambiguous-intents-identified.png" alt="ambiguous intents identified" title="ambiguous intents identified" style="border: 1px solid gray; zoom:75%;"></li></ul>
 
 4. Click the button **Save & Enable** to enable the event.
 
