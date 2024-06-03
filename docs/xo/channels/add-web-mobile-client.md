@@ -120,7 +120,7 @@ Steps to change the theme and design:
 
     ![alt_text](images/sdke6.png  )
 
-4. The theme editor page displays all the default and created themes, if any.
+4. The theme editor page displays all the default and created themes, if any. 
 
     ![alt_text](images/sdke3.png  )
     
