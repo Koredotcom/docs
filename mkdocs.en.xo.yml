@@ -434,21 +434,25 @@ nav:
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md
-        - How the Web SDK Works: sdk/how-web-sdk-works.md
-        - SDK Security: sdk/sdk-security.md
-        - SDK Registration: sdk/app-registration.md
-        - SDK Configurations: sdk/sdk-configuration.md
-        - Web Socket Connect and RTM: sdk/web-socket-connect-and-rtm.md
-        - Installing the BotKit SDK: sdk/installing-the-botkit-sdk.md
-        - Using the BotKit SDK: sdk/using-the-botkit-sdk.md
-        - SDK Events: sdk/sdk-events.md
-        - SDK Functions: sdk/sdk-functions.md
-        - SDK Tutorials:
-          - BotKit - Blue Prism: sdk/tutorials/blue-prism.md
-          - BotKit - Flight Search Sample VA: sdk/tutorials/flight-search-sample-bot.md
-          - BotKit - Agent Transfer: sdk/tutorials/agent-transfer.md
-          - Widget SDK Tutorial: sdk/tutorials/widget-sdk.md
-          - Web SDK Tutorial: sdk/tutorials/web-sdk.md   
+        - Web SDK:
+          - How the Web SDK Works: sdk/how-web-sdk-works.md
+          - SDK Security: sdk/sdk-security.md
+          - SDK Registration: sdk/app-registration.md
+          - SDK Configurations: sdk/sdk-configuration.md
+          - Web Socket Connect and RTM: sdk/web-socket-connect-and-rtm.md
+          - Tutorials:
+            - Widget SDK Tutorial: sdk/tutorials/widget-sdk.md
+            - Web SDK Tutorial: sdk/tutorials/web-sdk.md   
+        - BotKit SDK:
+          - BotKit SDK Deployment Guide: sdk/botkit-sdk-deployment-guide.md
+          - Installing the BotKit SDK: sdk/installing-the-botkit-sdk.md
+          - Using the BotKit SDK: sdk/using-the-botkit-sdk.md
+          - SDK Events: sdk/sdk-events.md
+          - SDK Functions: sdk/sdk-functions.md
+          - Tutorials:
+            - BotKit - Blue Prism: sdk/tutorials/blue-prism.md
+            - BotKit - Flight Search Sample VA: sdk/tutorials/flight-search-sample-bot.md
+            - BotKit - Agent Transfer: sdk/tutorials/agent-transfer.md          
   - Analytics:
     - Introduction: analytics/introduction.md
     - Dashboard Filters: analytics/dashboard-filters.md
