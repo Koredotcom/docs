@@ -176,7 +176,7 @@ To configure the Ambiguous Intents Identified event follow these steps:
 
 <img src="../images/ambiguous-intents-identified.png" alt="ambiguous intents identified" title="ambiguous intents identified" style="border: 1px solid gray; zoom:75%;"></li></ul>
 
-<4. Click the button **Save & Enable** to enable the event.
+4. Click the button **Save & Enable** to enable the event.
 
 !!!note 
     During the conversation with your Virtual Assistant, if there are ambiguous intents, a message is displayed in the Debug Log that Multiple intents are identified, and the **Ambiguous Intents Identified event is initiated**.
