@@ -6,7 +6,7 @@ To create bulk contact from a CSV file with the given stream Id.
 |--------------|---------------------------------------------------------------|
 | **Endpoint**     | `https://{host}/agentassist/api/v1/public/{{streamId}}/contacts/import-contacts` |
 | **Content Type** | `application/json`                                           |
-| **Authorization**| `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
+| **Authorization**| `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**    | Configuration                                                 |
 
 ## Path Parameters
@@ -25,7 +25,7 @@ To create bulk contact from a CSV file with the given stream Id.
 
 ```
 curl --location --request POST
-     'https://smartassist.kore.ai/agentassist/api/v1/public/st-733b03fb-667c-58d4-89ab-9d13f63fxxxx/contacts/import-contacts' \
+     'https://{{host}}/agentassist/api/v1/public/st-733b03fb-667c-58d4-89ab-9d13f63fxxxx/contacts/import-contacts' \
       --header 'authority: smartassist.kore.ai' \
       --header 'accept: application/json, text/plain, */*' \
       --header 'accept-language: en-GB,en;q=0.6' \

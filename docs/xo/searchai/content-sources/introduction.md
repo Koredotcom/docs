@@ -4,9 +4,9 @@ Business organizations use multiple sources to store diverse information and dat
 
 You can ingest data in the Search AI application from various sources using the following methods.
 
-* **[Web Crawl](https://docsinternal-kore.github.io/docs/xo/answers/content-sources/web-crawl/)**: Extract and index content from websites. 
-* **[Directories](https://docsinternal-kore.github.io/docs/xo/answers/content-sources/directory/)**: Index data from files in various formats like PDF, docx, ppt, etc.
-* **[Connectors](https://docsinternal-kore.github.io/docs/xo/answers/content-sources/connectors/)**: Extract data from third-party applications like ServiceNow, Confluence, etc.
+* [**Web Crawl**](./web-crawl.md): Extract and index content from websites. 
+* [**Directories**](./directory.md): Index data from files in various formats like PDF, docx, ppt, etc.
+* [**Connectors**](./connectors.md): Extract data from third-party applications like ServiceNow, Confluence, etc.
 
 To add or update any content source to XO, go to the **Sources** page under **Search AI**. This page lists different content sources under different tabs.
 

@@ -8,21 +8,19 @@
 
 			
 
-The Co-Pilot features add design-time capabilities to accelerate your bot development process using tailored LLM features. By default, all the features are disabled. To enable the feature, select the model, prompt (for custom model only), and then toggle the status to enable it. You can select another supported model for a feature if you have configured multiple models. You can also change the model, its prompts, and the respective settings.
+The Co-Pilot features add design-time capabilities to accelerate your bot development process using tailored LLM features. By default, all the features are disabled. To enable the feature, select the model, prompt, and then toggle the status to enable it. You can select another supported model for a feature if you have configured multiple models. You can also change the model, its prompts, and the respective settings.
 
 Steps to enable the feature:
 
 
 
 1. Navigate to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
-2. Select the preferred model from the **Model** drop-down menu for a feature. 
+2. Select the**Model** and **Prompt** from the drop-down list for a feature. 
 
 
     ![alt_text](images/cpf(1).jpg  )
 
-3. For a pre-built model, the default prompt is used. For a custom model, you can select the prompt from the **Prompt** drop-down menu. 
-
-4. Turn on the **Status** toggle. The success message is displayed.
+3. Turn on the **Status** toggle. The success message is displayed.
 
 		
 

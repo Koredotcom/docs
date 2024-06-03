@@ -7,7 +7,8 @@
 
 			
 
-The Dynamic Conversations features boost your virtual assistant’s performance with LLM-powered runtime features designed to streamline development and reduce time and effort. By default, all the features are disabled. To enable the feature, select the model and toggle the status to enable it. You can select another supported model for a feature if you have configured multiple models. You can also change the model and its settings.
+The Dynamic Conversations features boost your virtual assistant’s performance with LLM-powered runtime features designed to streamline development and reduce time and effort. By default, all the features are disabled. To enable the feature, select the model, prompt, and toggle the status to enable it. You can select another supported model for a feature if you have configured multiple models. You can also change the model, its prompts, and its settings.
+
 
 Steps to enable the feature:
 
@@ -20,7 +21,7 @@ Steps to enable the feature:
     ![alt_text](images/dcf(1).jpg  )
     
 
-2. Select the preferred model from the model drop-down menu for a feature. (For a pre-built model, the default prompt is used that can’t be changed.) 
+2. Select the**Model** and **Prompt** from the drop-down list for a feature. 
 3. Turn on the Status toggle. The success message is displayed.
 
 		

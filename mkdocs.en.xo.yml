@@ -302,9 +302,14 @@ nav:
       - Hours of Operation: contactcenter/configurations/hours-of-operation/manage-hours-of-operation.md
       - Languages and Speech: contactcenter/configurations/languages-and-speech/configure-languages-and-speech.md
       - Response Templates: contactcenter/configurations/response-templates/manage-response-templates.md
-      - Secure Forms: contactcenter/configurations/secure-forms/configure-secure-forms.md
+      - Agent Forms: contactcenter/configurations/agent-forms/configure-agent-forms.md
       - Surveys: contactcenter/configurations/surveys/configure-surveys.md
       - Widgets: contactcenter/configurations/widgets/configure-widgets.md
+      - Advanced Settings:
+        - Co-Browse: contactcenter/configurations/advanced-settings/co-browse.md
+        - Community WFM [Beta]: contactcenter/configurations/advanced-settings/community-wfm-beta.md
+        - Automatic Conversation Summary [Beta]: contactcenter/configurations/advanced-settings/automatic-conversation-summary-beta.md
+        - Sensitive Data Masking: contactcenter/configurations/advanced-settings/sensitive-data-masking.md
     - Flows and Routing:
       - Conditional Flows: contactcenter/flows-and-routing/conditional-flows.md
       - Waiting Flows: contactcenter/flows-and-routing/waiting-flows.md
@@ -312,11 +317,12 @@ nav:
       - Queues: contactcenter/routing/queues/queue-management.md
       - Skills: contactcenter/routing/skills/skill-management.md
     - Agent Console:
-      - Additional Tools: console/additional-tools/additional-tools.md
+      - Introduction to the Console: console/introduction-to-the-console/agent-console-introduction.md
       - Conversation Tray: console/conversation-tray/conversation-tray.md
       - Incoming Interactions: console/incoming-interactions/managing-incoming-interactions.md
       - Interacting With Customers: console/interacting-with-customers/interacting-with-customers.md
-      - Introduction to the Console: console/introduction-to-the-console/introduction.md
+      - Additional Tools: console/additional-tools/additional-tools.md
+      - Manage Layout: console/manage-layout-/manage-layout.md
     - Campaigns:  
       - Overview: contactcenter/campaigns/about-campaigns.md
       - Dashboard: contactcenter/campaigns/dashboard/campaign-dashboard.md
@@ -428,20 +434,25 @@ nav:
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md
-        - SDK Security: sdk/sdk-security.md
-        - SDK Registration: sdk/app-registration.md
-        - SDK Configurations: sdk/sdk-configuration.md
-        - Web Socket Connect and RTM: sdk/web-socket-connect-and-rtm.md
-        - Installing the BotKit SDK: sdk/installing-the-botkit-sdk.md
-        - Using the BotKit SDK: sdk/using-the-botkit-sdk.md
-        - SDK Events: sdk/sdk-events.md
-        - SDK Functions: sdk/sdk-functions.md
-        - SDK Tutorials:
-          - BotKit - Blue Prism: sdk/tutorials/blue-prism.md
-          - BotKit - Flight Search Sample VA: sdk/tutorials/flight-search-sample-bot.md
-          - BotKit - Agent Transfer: sdk/tutorials/agent-transfer.md
-          - Widget SDK Tutorial: sdk/tutorials/widget-sdk.md
-          - Web SDK Tutorial: sdk/tutorials/web-sdk.md   
+        - Web SDK:
+          - How the Web SDK Works: sdk/how-web-sdk-works.md
+          - SDK Security: sdk/sdk-security.md
+          - SDK Registration: sdk/app-registration.md
+          - SDK Configurations: sdk/sdk-configuration.md
+          - Web Socket Connect and RTM: sdk/web-socket-connect-and-rtm.md
+          - Tutorials:
+            - Widget SDK Tutorial: sdk/tutorials/widget-sdk.md
+            - Web SDK Tutorial: sdk/tutorials/web-sdk.md   
+        - BotKit SDK:
+          - BotKit SDK Deployment Guide: sdk/botkit-sdk-deployment-guide.md
+          - Installing the BotKit SDK: sdk/installing-the-botkit-sdk.md
+          - Using the BotKit SDK: sdk/using-the-botkit-sdk.md
+          - SDK Events: sdk/sdk-events.md
+          - SDK Functions: sdk/sdk-functions.md
+          - Tutorials:
+            - BotKit - Blue Prism: sdk/tutorials/blue-prism.md
+            - BotKit - Flight Search Sample VA: sdk/tutorials/flight-search-sample-bot.md
+            - BotKit - Agent Transfer: sdk/tutorials/agent-transfer.md          
   - Analytics:
     - Introduction: analytics/introduction.md
     - Dashboard Filters: analytics/dashboard-filters.md
@@ -496,7 +507,7 @@ nav:
       - Dev Tools:
         - App Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
         - Authorization Profiles: app-settings/dev-tools/bot-authorization/bot-authentication.md
-        - Web/Mobile SDK: app-settings/dev-tools/kore-ai-web-sdk-tutorial.md
+        - Web/Mobile SDK: app-settings/dev-tools/kore-ai-web-sdk.md
         - API Scopes: apis/automation/api-introduction.md
         - Mock Scenes: app-settings/mock-scenes.md
       - Using Variables: app-settings/variables/using-bot-variables.md

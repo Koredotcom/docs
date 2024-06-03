@@ -6,7 +6,7 @@ To add an agent with the given Stream Id.
 |--------------|------------------------------------------------------------------|
 | **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/agent-groups` |
 | **Content Type** | `application/json`                                               |
-| **Authorization** | `auth: {{JWT}}` See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
+| **Authorization** | `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
 | **API Scope**    | SmartAssist Analytics                                            |
 
 ## Path Parameters

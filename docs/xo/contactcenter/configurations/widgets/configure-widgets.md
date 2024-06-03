@@ -1,17 +1,17 @@
 # Widgets
 
-SmartAssist allows you to integrate external systems and pages into the Agent Console. Agents can use widgets from within custom [Agent Console Layouts](https://docs.kore.ai/smartassist/console/manage-layout/).
+SmartAssist allows you to integrate external systems and pages into the Agent Console. Agents can use widgets from within custom [Agent Console Layouts](../../../console/manage-layout/manage-layout.md).
 
 !!! Note
 
-    For widgets to load properly within the agent console, you may need to set up permissions to allow “smartassist.kore.ai’ to access the application or page you want to integrate. 
+    For widgets to load properly within the agent console, you may need to set up permissions to allow “platform.kore.ai’ to access the application or page you want to integrate. 
 
-# Add a Widget
+## Add a Widget
 
-Steps to Add a new external widget:
+Steps to add an external widget:
 
-1. Go to **Contact Center > CONFIGURATIONS > Widgets**.
-2. Click **External Widget**.
+1. Go to **Contact Center AI** > **CONFIGURATIONS** > **Widgets**.
+2. Click **External Widget**.  
 <img src="../images/widgets-page.png" alt="Widgets Page" title="Widgets Page" style="border: 1px solid gray; zoom:80%;">
 
 3. The _External Widgets_ window opens. Click **+ New External Widget**.
@@ -19,13 +19,16 @@ Steps to Add a new external widget:
 
 4. The _Add Widget_ window opens, and you can configure the following:
     1. The **Widget Name** by which to identify it later.
-    2. The **Widget Icon**. Click the section to upload a file, or use drag-and-drop.
-    <img src="../images/widget-name-and-icon.png" alt="Widget Name and Icon" title="Widget Name and Icon" style="border: 1px solid gray; zoom:100%;">
+    2. The **Widget Icon**. Click the section to upload a file, or use drag-and-drop.  
+    <img src="../images/widget-name-and-icon.png" alt="Widget Name and Icon" title="Widget Name and Icon" style="border: 1px solid gray; zoom:80%;">
 
 5. If you want to remove an icon, click the **Delete (bin)** button on the right side. You can re-upload an icon afterward as needed.   
-<img src="../images/delete-icon-button.png" alt="Widget Name and Icon" title="Widget Name and Icon" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/delete-icon-button.png" alt="Delete Icon Button" title="Delete Icon Button" style="border: 1px solid gray; zoom:80%;">
 
-6. The **URL** is the address of the system or webpage that you want to integrate as a widget. You can create a dynamic URL and select variables from a static list or based on custom variables that reside inside the meta-info of the conversation. Select parameters from the **{} Variable** drop-down. The available variables are _Agent Id, Customer Email Id, Conversation Id, Agent First Name, Customer First Name, Customer Last Name, Customer phone Number, and Agent Last Name._ You can also insert a custom variable of the type: {{context.metaInfo.&lt;yourCustomVarName>}}.
+6. The **URL** is the address of the system or webpage that you want to integrate as a widget. You can create a dynamic URL and select variables from a static list or based on custom variables that reside inside the meta-info of the conversation. Select parameters from the **{} Variable** drop-down. The available variables are _Agent Id, Customer Email Id, Conversation Id, Agent First Name, Customer First Name, Customer Last Name, Customer phone Number, and Agent Last Name._ You can also insert a custom variable of the type:
+    ```
+    {{context.metaInfo.&lt;yourCustomVarName>}}.
+    ```
 7. The **Failure URL** displays in case the intended page does not load. You can set the same variables as for the main URL above.  
 <img src="../images/url-and-failure-url.png" alt="URL and Failure URL" title="URL and Failure URL" style="border: 1px solid gray; zoom:80%;">
 
@@ -35,23 +38,23 @@ Steps to Add a new external widget:
 9. Once saving the widget, a success message displays, and the widget is listed within the External Widgets window.
 <img src="../images/widget-created.png" alt="Widget Created" title="Widget Created" style="border: 1px solid gray; zoom:80%;">
 
-# Edit a Widget
+## Edit a Widget
 
-To edit an existing widget, find it in the list of External Widgets, then click on it. The configuration window opens, and you can edit the name, icon, URLs, or all.
+To edit an existing widget, find it in the list of External Widgets, then click on it. The configuration window opens, and you can edit the name, icon, URLs, or all.  
 <img src="../images/edit-widget.png" alt="Edit Widget" title="Edit Widget" style="border: 1px solid gray; zoom:80%;">
 
-# Delete a Widget
+## Delete a Widget
 
-To delete an existing widget, find it in the list of _External Widgets_, then click on it. Click the **Delete (bin)** button on the left of the bottom toolbar, then **confirm** your choice.
+To delete an existing widget, find it in the list of _External Widgets_, then click on it. Click the **Delete (bin)** button on the left of the bottom toolbar, then **confirm** your choice.  
 <img src="../images/deleted-widget.png" alt=" Delete Widget Button" title="Delete Widget Button" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
 
     When deleting a widget, all configurations are lost, and the widget is removed from the Agent Console. You cannot restore deleted widgets. Please proceed with caution.
 
-# Add a Widget to an Agent Console Layout
+## Add a Widget to an Agent Console Layout
 
-Once you save an external widget, you can add it to the Agent Console using the [Manage Layout](https://docs.kore.ai/smartassist/console/manage-layout/) feature.
+Once you save an external widget, you can add it to the Agent Console using the [Manage Layout](../../../console/manage-layout/manage-layout.md) feature.
 
 To add a widget to an _Agent Console Layout_, follow these steps:
 
@@ -63,7 +66,7 @@ To add a widget to an _Agent Console Layout_, follow these steps:
 4. Click Save. Once the widget is added, the integrated system or page will display within the widget as part of the selected Agent Console Layout. See what it looks like in the demo below.
 <img src="../images/layout-demo.gif" alt="Layout Demo" title="Layout Demo" style="border: 1px solid gray; zoom:80%;">
 
-# Delete a Widget from an Agent Console Layout
+## Delete a Widget from an Agent Console Layout
 
 To delete a widget from an _Agent Console Layout_, follow these steps:
 
