@@ -1,64 +1,133 @@
-# Event Handling
+# Events
 
-Events are triggered when specific actions occur during conversation with the Virtual Assistant  or when specific events are triggered on any active channels.
+Events are triggered when specific actions occur during a conversation with the Virtual Assistant  or when specific events are triggered on any active channels.
 
-For example, when a user clicks the **Get Started** button to initiate a chat with your FB Messenger VA, it triggers the Facebook Welcome event. 
-
-You can use this event to customize the welcome greeting such as personalizing it with the user’s first and last names, capturing additional information from users, and updating the back-end systems.
-
-To generate the **Get Started** button, please use the following Curl code:
-
-```json
-curl –location -g –request POST ‘https://graph.facebook.com/v2.6/me/messenger_profile?access_token={{page access token}}’ 
-–header ‘Content-Type: application/json’ 
-–header ‘Cookie: fr=0DjuarxRV9YWitxAN..BfXHzR…1.0.BfXHzR.’ 
-–data-raw ‘{ 
-“get_started”: {“payload”: “Facebook”} 
-}’
-```
-
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You must provide <code>access_token</code>, the Page access token for the specific Facebook page in the curl to run the API.</p></div>
-
-To access **Event Handlers**, navigate to **Conversation Intelligence** > **Events**.
+To access **Events**, navigate to **Automation AI > Virtual Assistant > Conversation Intelligence > Events**.
 
 <img src="../images/access-event-handlers-window.png" alt="access event handlers" title="access event handlers" style="border: 1px solid gray; zoom:75%;">
 
 ## Event Actions
 
-Developers can define the VA should take when an event is triggered using one of the following options:
+Developers can define what action the VA should take when an event is triggered using one of the following options:
 
-### Run a Task
+### Initiate a Task
 
-Select a Dialog task (Standard or Hidden) to be invoked when the event triggers. Once the event is triggered, the dialog starts executing. If it is interrupted because of other intent detections, the _Hold and Resume settings_ come into play. During execution, if the selected Dialog is not published in the VA, the event is discarded.
+Select a Dialog task (Standard or Hidden) to be invoked when the event triggers. Once the event is triggered, the dialog starts executing. If it is interrupted by other intent detections, the Hold and Resume settings come into play. During execution, the event is discarded if the selected Dialog is not published in the VA.
 
-In some cases, the Dialog may not be available to the user during a conversation for various reasons such as the task not yet being published, being suspended, or simply not having been assigned to the user. In such cases, the VA  shows an error message that the task is not currently available for execution. 
+In some cases, the Dialog may not be available to the user during a conversation for various reasons, such as the task not being published, suspended, or simply not having been assigned to the user. In such cases, the VA shows an error message that the task is not currently available for execution.
 
-Developers can preempt such situations by testing the VA in Debug mode. The Debug Console shows full details about the error, including the reason why the task is not available.
+Developers can preempt such situations by testing the VA in Debug mode. The Debug Console shows full details about the error, including why the task is not available.
 
 ### Run a Script
 
-Define a JavaScript to run when the event triggers. The script can make use of all applicable components such as session, context objects, variables, and functions. You can also fix the code using the Debug mode.
+Define a JavaScript to run when the event triggers. The script can use all applicable components, such as session, context objects, variables, and functions. You can also fix the code using the Debug mode.
 
 ### Show a Message
 
-Define a simple or advanced message to the user when the event triggers. It supports all messaging formatting features available in the XO Platform, including multiple messages with channel override options.
+When the event triggers, define a simple or advanced message for the user. It supports all messaging formatting features available in the XO Platform, including multiple messages with channel override options. 
 <img src="../images/show-a-message.gif" alt="show a message" title="show a message" style="border: 1px solid gray; zoom:75%;">
 
 #### Multilingual VA Behavior for Messages
 
 * You can define language-specific messages;
-* If a message is deleted from an Event for a specific language then it will be removed from all other languages of the VA;
-* If a message is added for a language then the message would be added in all other languages using the same content;
-* If a message is modified in a language, then the modifications will be applied for that language alone. [Learn more](/docs/xo/web-mobile-SDK-message-formatting-and-templates/){target="_blank"}.
+* If a message is deleted from an Event for a specific language, then it will be removed from all other languages of the VA;
+* If a message is added for a language, then the message would be added in all other languages using the same content;
+* If a message is modified in a language, the modifications will be applied only to that language. [Learn more](../../sdk/web-mobile-sdk-message-formatting-and-templates.md).
 
 ## Event Types
 
-Event Handlers are classified as **Conversation Events**, **Intent Events**, and **Channel Events**.
+Events are classified as **Intent Events**, **Conversation Events**, and **Sentiment Events**. 
 <img src="../images/event-types-window.png" alt="event types" title="event types" style="border: 1px solid gray; zoom:75%;">
 
 You can configure the following events to trigger responses:
+<table border="1.5">
+<tr bgcolor="#ECECEC">
+   <td><strong>EVENT</strong>
+   </td>
+   <td><strong>TRIGGER</strong>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Intent Events</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Intent not Identified
+   </td>
+   <td>Runs every time the VA cannot understand the user’s intent.
+   </td>
+  </tr>
+  <tr>
+   <td>Ambiguous Intents Identified
+   </td>
+   <td>On identifying ambiguous intents from the user utterance
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Conversation  Events</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>End of Task
+   </td>
+   <td>On completing a task (Dialog Task or FAQ)
+   </td>
+  </tr>
+  <tr>
+   <td>Task Execution Failure
+   </td>
+   <td>On encountering an error in dialog task execution like:
+<ul>
+
+<li>An error in the execution of the VA,
+
+<li>Service call failure,
+
+<li>Unable to reach the server
+
+<li>Error in invoking agent node in case of agent transfer,
+
+<li>Knowledge Graph Task failures,
+
+<li>Webhook node failures,
+
+<li>Dialog related to a sub-dialog node is not available,
+
+<li>Exceptions in parsing the VA message.
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>RCS Opt-in Event
+   </td>
+   <td>On receiving the message that a user has opted for the RCS Messaging channel.
+   </td>
+  </tr>
+  <tr>
+   <td>RCS Opt-out Event
+   </td>
+   <td>On receiving the message that a user has opted out of the RCS Messaging channel.
+   </td>
+  </tr>
+  <tr>
+   <td>Repeat Bot Response Event
+   </td>
+   <td>On identifying the user's request to repeat the bot responses.
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>Sentiment Events</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td>You can define multiple sentiment events. Click<strong> + New Event</strong> to define an event based on which to capture the user’s emotion.
+   </td>
+  </tr>
+</table>
+
 
 <table border="1.5">
 <tr bgcolor="#ECECEC">
