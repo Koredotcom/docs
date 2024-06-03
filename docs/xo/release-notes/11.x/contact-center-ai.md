@@ -45,7 +45,7 @@ The User Diagnostics (♡) icon is at the top right corner of the Agent Console.
 
 #### Set Voice Chat on Kore.ai Voice Gateway Account
 
-Administrators can use a Utils method/script inside the script node to set up voice chat in accounts configured with Kore.ai Voice Gateway.
+Administrators can use a Utils method/script inside the script node to set up voice chat in accounts configured with Kore.ai Voice Gateway. [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#set-voice-chat-on-koreai-voice-gateway-account)
 
 #### Handling ASR Fallback Using Call Control Parameters
 
@@ -63,9 +63,9 @@ Campaign managers can read, fetch, and display column/field values from a CSV fi
 
 ### Configuration
 
-#### Experience Flows Table: Enhanced Visibility for Channels and Flow Types
+#### Start Flows Table: Enhanced Visibility for Channels and Flow Types
 
-A Channels column is added to the Experience Flow table. This column displays a list of all channels attached to each flow. Each row shows the flow type (call or chat) for each flow.
+A Channels column is added to the Start Flows table. This column displays a list of all channels attached to each flow. Each row shows the flow type (call or chat) for each flow. [Learn more :octicons-arrow-right-24:](../../flows/introduction-to-flows.md#the-flows-live-board)
 
 ### Analytics
 

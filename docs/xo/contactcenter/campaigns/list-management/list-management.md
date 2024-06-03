@@ -59,11 +59,12 @@ To retrieve user information from the context, specifically the user details fro
 
 Steps to query the CSV fields in the start flow-node:
 
-1. Use the following code to retrieve the data from the context. \
-`
+1. Use the following code to retrieve the data from the context.
+
+    `
 let userInfo = context?.campaignUserInfo;
 setCallFlowVariable('userInfo', userInfo);
-`  
+    `  
 <img src="../images/script-task.png" alt="MScript Task" title="Script Task" style="border: 1px solid gray; zoom:80%;">  
 The user information is stored in the userInfo variable and saved in the `callFlowVariable` for future use.
 
