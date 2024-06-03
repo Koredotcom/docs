@@ -4,7 +4,7 @@ Events are triggered when specific actions occur during a conversation with the 
 
 To access **Events**, navigate to **Automation AI > Virtual Assistant > Conversation Intelligence > Events**.
 
-<img src="../images/access-event-handlers-window.png" alt="access event handlers" title="access event handlers" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/access-event-handlers-window.png" title="access event handlers" style="border: 1px solid gray; zoom:75%;">
 
 ## Event Actions
 
@@ -124,110 +124,6 @@ You can configure the following events to trigger responses:
    <td>
    </td>
    <td>You can define multiple sentiment events. Click<strong> + New Event</strong> to define an event based on which to capture the user’s emotion.
-   </td>
-  </tr>
-</table>
-
-
-<table border="1.5">
-<tr bgcolor="#ECECEC">
-   <td><strong>EVENT</strong>
-   </td>
-   <td><strong>TRIGGER</strong>
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong>Conversation Events</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Welcome Event
-   </td>
-   <td>On receiving the first message from the user from any channel.
-   </td>
-  </tr>
-  <tr>
-   <td>End of Conversation
-   </td>
-   <td>On reaching the end of conversation. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/event-handling/#end-of-conversation">Learn more</a>.
-   </td>
-  </tr>
-  <tr>
-   <td>Task Execution Failure
-   </td>
-   <td>On encountering an error in dialog task execution like:
-<ul>
-
-<li>An error in the execution of the VA,
-
-<li>Service call failure,
-
-<li>Unable to reach the server
-
-<li>Error in invoking agent node in case of agent transfer,
-
-<li>Knowledge Graph Task failures,
-
-<li>Webhook node failures,
-
-<li>Dialog related to a sub-dialog node not available,
-
-<li>Exceptions in parsing the VA message.</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong>Intent Events</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Intent not Identified
-   </td>
-   <td>Runs every time the VA cannot understand the user’s intent.
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong>Channel Events</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Facebook Welcome Event
-   </td>
-   <td>On receiving a Welcome Event from Facebook Messenger. This event takes precedence over Welcome Event if both are configured.
-   </td>
-  </tr>
-  <tr>
-   <td>Telephony Welcome Event
-   </td>
-   <td>On receiving a user’s call from a voice channel like IVR, Twilio, or Audio Codes. <a href="https://docsinternal-kore.github.io/docs/xo/automation/intelligence/event-handling/#telephony-welcome-event">See</a> details below.
-<p>
-(previously called Twilio Voice Welcome Event)
-   </td>
-  </tr>
-  <tr>
-   <td>Telegram Welcome Event
-   </td>
-   <td>On receiving the Welcome Event from Telegram. This event takes precedence over Welcome Event if both are configured.
-   </td>
-  </tr>
-  <tr>
-   <td>On Connect
-   </td>
-   <td>Every time a user converses over Web / Mobile SDK channels. The event will be triggered irrespective of whether the user has started the conversation or not.
-<p>
-<strong>Note</strong>: This event applies ONLY for Web/Mobile SDK channel and takes precedence over the Welcome event if both are configured.
-   </td>
-  </tr>
-  <tr>
-   <td>RCS Opt-in Event
-   </td>
-   <td>On receiving the message that a user has opted for the RCS Messaging channel.
-   </td>
-  </tr>
-  <tr>
-   <td>RCS Opt-out Event
-   </td>
-   <td>On receiving the message that a user has opted out of the RCS Messaging channel.
    </td>
   </tr>
 </table>
