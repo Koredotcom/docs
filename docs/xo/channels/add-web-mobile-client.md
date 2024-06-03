@@ -116,7 +116,8 @@ Steps to change the theme and design:
 
 1. Navigate to **Flows & Channels** > **Channels** > **Digital** > **Configured**.
 2. Click **Web/Mobile Client**.
-3. On the Configure tab, click **Edit** to change the current theme. 
+3. On the Configure tab, click **Edit** to change the current theme.
+ <img src="../images/sdke6.png" alt="embed code" title="embed code" style="border: 1px solid gray; zoom:70%;">
 
     ![alt_text](images/sdke6.png  )
 
