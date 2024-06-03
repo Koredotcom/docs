@@ -35,9 +35,9 @@ When a new auto-accepted conversation arrives in the agent's conversation tray, 
 
 User diagnostics systematically assesses and analyzes network connectivity and device permissions to identify issues, optimize service delivery, and enhance user satisfaction. Using real-time monitoring, this tool helps resolve problems efficiently, improving agent performance and ensuring a seamless customer experience.
 
-The User Diagnostics (♡) icon is at the top right corner of the Agent Console.
+The User Diagnostics icon is at the top right corner of the Agent Console.
 
-**Agent Diagnostics**: Clicking the User Diagnostics (♡) icon displays the Agent Diagnostics page. Users can run diagnostics related to their:
+**Agent Diagnostics**: Clicking the User Diagnostics icon displays the Agent Diagnostics page. Users can run diagnostics related to their:
 
 * Audio Device,
 * Video Device,
