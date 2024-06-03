@@ -46,8 +46,41 @@ Steps to add a contact list:
 
 The Contact List is created.
 
-#### Time Zone
+#### Dynamic Retrieval and Reflection of CSV Column Values
 
+Campaign managers can read, fetch, and display column and corresponding field values from a CSV file whenever required. This can be done within the message node in the start flow or by sending the necessary values to the Agent Console during an agent transfer ensuring these values are reflected in the voice campaign call.
+
+* Mapped fields in the uploaded CSV file are readable and can be used within the start flow. These fields can be configured in the message node of the experience flow.
+* When a field is configured in the experience flow, the system recognizes it and fetches the corresponding value during outbound campaigns. For example, if the `{{First Name}}` field is configured in a message node, the system retrieves and speaks the relevant value during a voice campaign call.
+* The system reads data from the CSV file and transmits necessary information/values to the agent console corresponding to the Customer/Phone number. This applies to both agent transfers in an Agentless Campaign and Auto Dialers on the agent console.
+* Non-mapped fields are saved in the data table for additional queries. For example, if there is a column named "Account Num" in the contact, this "Account Num" will be part of the contact data table and can be called as part of the start flow.
+
+To retrieve user information from the context, specifically the user details from the uploaded CSV, we need to extract all the fields present in the CSV. This requires configuring the script node to capture the data from the context and store it in a variable. This allows us to use and modify the data throughout the entire workflow.
+
+Steps to query the CSV fields in the start flow-node:
+
+1. Use the following code to retrieve the data from the context. \
+`
+let userInfo = context?.campaignUserInfo;
+setCallFlowVariable('userInfo', userInfo);
+`  
+<img src="../images/script-task.png" alt="MScript Task" title="Script Task" style="border: 1px solid gray; zoom:80%;">  
+The user information is stored in the userInfo variable and saved in the `callFlowVariable` for future use.
+
+2. The userInfo data can be used depending on the use case. For example, if we want to create a message to play when calling a customer, we can add the following in a message node:
+
+    `
+hi {{context.userInfo.firstName}} {{context.userInfo.lastName}}, your balance on the phoneNumber {{context.userInfo.phoneNumber}} is {{context.userInfo.balance}}, please recharge before the due date {{context.userInfo.dueDate}} {{context.userInfo.month}}
+    `
+<img src="../images/script-task-customized.png" alt="Customized Script Task" title="Customized script Task" style="border: 1px solid gray; zoom:80%;">  
+
+3. The user details provided in the CSV are fetched as `context.userInfo.firstName` (where `firstName` is the header in the CSV). Similarly, all the other fields can be accessed.
+
+    <img src="../images/insights-to-logs.png" alt="Insights to Logs" title="Insights to Logs" style="border: 1px solid gray; zoom:80%;">  
+
+    <img src="../images/csv.png" alt="CSV Fields" title="CSV Fields" style="border: 1px solid gray; zoom:80%;">  
+
+#### Time Zone
 * The "**Timezone**" field of the CSV is validated against the Calling Hours Timezone.
 * The time zone mentioned against a contact in the CSV is given preference over Calling Hours.
 * When setting up the time zones for an Outbound campaign's contact list or specifying callable times, use the Tz database notation. This notation, also known as tzdata, zoneinfo database, or IANA Time Zone Database, provides a standardized naming convention for time zones across the globe.
