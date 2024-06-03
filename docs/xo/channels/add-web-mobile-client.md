@@ -147,7 +147,7 @@ Steps to change the theme and design:
     ![alt_text](images/sdke1.png  )
 
 7. On the Configure tab, click **Save**. The configuration saved message is displayed.
-<img src="./images/sdke5-1.png" alt="Web Client details" title="Web Client details" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/sdke5-1.png" alt="Configuration" title="Configuration Saved" style="border: 1px solid gray; zoom:70%;">
 
 
 
