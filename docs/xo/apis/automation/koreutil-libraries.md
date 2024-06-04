@@ -24,6 +24,7 @@ Below is the list of koreUtil libraries provided by the Platform:
 * [koreUtil.getSessionId](../koreutil-libraries#koreutilgetsessionid)
 * [koreUtil.closeConversationSession](../koreutil-libraries#koreutilclose)
 * [koreUtil.autoTranslate](../koreutil-libraries#koreautotranslate)
+* [koreUtil.getFormDefinition](#koreutilgetformdefinition)
 
 
 ### koreUtil.rrule
