@@ -15,8 +15,11 @@ Key features and enhancements included in this release are summarized below.
 The Digital Forms module now provides the ability to dynamically configure the form definition and behavior. The newly introduced Preprocessor configuration allows updating the form definition dynamically using JavaScript. The platform executes this preprocessor during the runtime and delivers the form definition to the channel. The preprocessor can use the environment, content, and context variables. 
 
 The following are some of the key use cases:
+
 1. Dynamically changing the form field titles, descriptions, etc. 
+
 2. Dynamically populating the values of fields, for e.g., options in a  drop-down component
+
 3. Changing the language of the messages to support multilingual conversations 
   
 The koreUtil library has been extended with the "getFormDefinition" function to retrieve and modify the form definition.
