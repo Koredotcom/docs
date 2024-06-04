@@ -268,7 +268,7 @@ On triggering this event, the context will be updated with the following details
     
 #### RCS Opt-In / Opt-Out Events
 
-These events trigger on receiving _opt-in_ or _opt-out_ requests from users via the RCS channel. These events allow you to configure a response to be sent to the user as a follow-up for their action.
+These events trigger on receiving **_opt-in_** or **_opt-out_** requests from users via the RCS channel. These events allow you to configure a response to be sent to the user as a follow-up for their action.
 <img src="../images/rcs-opt-in.png" alt="rcs opt-in" title="rcs opt-in" style="border: 1px solid gray; zoom:75%;">
 
 #### Repeat Bot Response Event
@@ -382,8 +382,8 @@ You can edit or add the filler message for the repeat bot response event before 
 <li>Click <b>+Add Filler Message</b>, select the <b>IVR</b> channel, enter the filler messages and then click <b>Done</b>.
 <img src="../images/add-filler-to-ivr.png" alt="add filler to ivr" title="add filler to ivr" style="border: 1px solid gray; zoom:75%;">
 
-When the Repeat Bot Response event is triggered, these filler messages are used in the IVR channel conversation before repeating the response.
-<img src="../images/use-filler-message.png" alt="use filler message" title="use filler message" style="border: 1px solid gray; zoom:75%;"></li>
+<ul><li>When the Repeat Bot Response event is triggered, these filler messages are used in the IVR channel conversation before repeating the response.
+<img src="../images/use-filler-message.png" alt="use filler message" title="use filler message" style="border: 1px solid gray; zoom:75%;"></li></ul>
 
 <ul><li><b>Auto-generate Response</b> – When you select this option, you are redirected to enable the Advanced NLU model, if not enabled, to generate the bot response using the LLM and Generative AI engine.
 
@@ -407,7 +407,7 @@ When you select the <b>Initiate Dialog</b> option, you can choose the task to wh
 
 ### Sentiment Events
 
-Refer to [Sentiment Events](../intelligence/sentiment-management) for Sentiment Management and Tone Analysis.
+Refer to [Sentiment Events](../intelligence/sentiment-management/sentiment-management-overview.md) for Sentiment Management.
 
 ## Variable Namespaces
 
