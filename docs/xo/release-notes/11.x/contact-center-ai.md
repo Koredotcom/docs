@@ -1,6 +1,6 @@
 # Contact Center AI Updates
 
-This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.1.x releases.
+This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x.x releases.
 
 ## v11.2.0 June 01, 2024
 
@@ -21,13 +21,13 @@ Using this feature, agents can do the following:
 * Add hyperlinks for HTTP and HTTPS URLs.
 * Add hyperlink actions for email (mailto:a@b.com). Clicking the link opens the associated mail app.
 * Customize the display text of the hyperlink.
-* Display the full URL when an agent hovers over the hyperlink.
+* Display the full URL when an agent hovers over the hyperlink. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#adddelete-hyperlinks-in-the-compose-bar)
 
 #### Improved Sorting and Enhanced Auto Accept
 
 By default, new conversations will appear at the top of the conversation tray based on their order of acceptance. Agents can choose to revise the sorting order, placing the latest conversation at the top or bottom.
 
-When a new auto-accepted conversation arrives in the agent's conversation tray, a **New** indicator is displayed beside it. If the user has applied a conversation filter (for example, ongoing, idle) and cannot see the incoming auto-accepted conversations a **View** option appears. This button allows the user to navigate to the auto-accepted conversation quickly. The indicator and the view option remain till the agent clicks the conversation and sends the first message.
+When a new auto-accepted conversation arrives in the agent's conversation tray, a **New** indicator is displayed beside it. If the user has applied a conversation filter (for example, ongoing, idle) and cannot see the incoming auto-accepted conversations a **View** option appears. This button allows the user to navigate to the auto-accepted conversation quickly. The indicator and the view option remain till the agent clicks the conversation and sends the first message. [Learn more :octicons-arrow-right-24:](../../console/managing-incoming-interactions.md#handling-incoming-interactions-based-on-answer-mode)
 
 ### Voice Gateway
 
@@ -42,6 +42,8 @@ The User Diagnostics icon is at the top right corner of the Agent Console.
 * Audio Device,
 * Video Device,
 * Connectivity.
+
+[Learn more :octicons-arrow-right-24:](../../console/manage-layout.md#user-diagnostics)
 
 #### Set Voice Chat on Kore.ai Voice Gateway Account
 
@@ -75,13 +77,13 @@ Supervisors can select conversations and choose to Export Conversation Data or E
 
 * If Export Conversation Data is selected, the metadata of all selected conversations is exported.
 * If Export Transcripts is selected, the exported transcript files retain the same naming convention currently used for all transcript exports. These files are compressed into a zip file named "transcripts-YYYY-MM-DD-HH24-mm-SS.zip.
-* Up to 25 conversations can be selected for exporting transcripts.
+* Up to 25 conversations can be selected for exporting transcripts. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#export-conversation-datatranscripts)
 
 #### Display Agent and Disposition Notes in Search Results on the Interactions Tab
 
 **Dashboard > Interactions**
 
-Agent notes and Disposition notes are now displayed in the search results on the Interactions tab.
+Agent notes and Disposition notes are now displayed in the search results on the Interactions tab. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#search-interactions)
 
 ## v11.1.1 May 11, 2024
 

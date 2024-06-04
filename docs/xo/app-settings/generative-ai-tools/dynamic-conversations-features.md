@@ -21,7 +21,7 @@ Steps to enable the feature:
     ![alt_text](images/dcf(1).jpg  )
     
 
-2. Select the**Model** and **Prompt** from the drop-down list for a feature. 
+2. Select the **Model** and **Prompt** from the drop-down list for a feature. 
 3. Turn on the Status toggle. The success message is displayed.
 
 		
