@@ -268,7 +268,7 @@ On triggering this event, the context will be updated with the following details
     
 #### RCS Opt-In / Opt-Out Events
 
-**These events trigger on receiving _opt-in_ or _opt-out_ requests from users via the RCS channel. These events allow you to configure a response to be sent to the user as a follow-up for their action.**
+These events trigger on receiving _opt-in_ or _opt-out_ requests from users via the RCS channel. These events allow you to configure a response to be sent to the user as a follow-up for their action.
 <img src="../images/rcs-opt-in.png" alt="rcs opt-in" title="rcs opt-in" style="border: 1px solid gray; zoom:75%;">
 
 #### Repeat Bot Response Event
