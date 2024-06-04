@@ -1,8 +1,8 @@
 # Contact Center AI Updates
 
-This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x.x releases.
+This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
-## v11.2.0 June 01, 2024
+## v11.2 June 01, 2024
 
 <u>Patch Release</u>
 

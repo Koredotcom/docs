@@ -1,6 +1,6 @@
 # Agent AI Updates
 
-This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.1.x releases.
+This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
 ## v11.1.1 May 11, 2024
 
