@@ -35,9 +35,9 @@ When a new auto-accepted conversation arrives in the agent's conversation tray, 
 
 User diagnostics systematically assesses and analyzes network connectivity and device permissions to identify issues, optimize service delivery, and enhance user satisfaction. Using real-time monitoring, this tool helps resolve problems efficiently, improving agent performance and ensuring a seamless customer experience.
 
-The User Diagnostics (♡) icon is at the top right corner of the Agent Console.
+The User Diagnostics icon is at the top right corner of the Agent Console.
 
-**Agent Diagnostics**: Clicking the User Diagnostics (♡) icon displays the Agent Diagnostics page. Users can run diagnostics related to their:
+**Agent Diagnostics**: Clicking the User Diagnostics icon displays the Agent Diagnostics page. Users can run diagnostics related to their:
 
 * Audio Device,
 * Video Device,
@@ -45,7 +45,7 @@ The User Diagnostics (♡) icon is at the top right corner of the Agent Console.
 
 #### Set Voice Chat on Kore.ai Voice Gateway Account
 
-Administrators can use a Utils method/script inside the script node to set up voice chat in accounts configured with Kore.ai Voice Gateway.
+Administrators can use a Utils method/script inside the script node to set up voice chat in accounts configured with Kore.ai Voice Gateway. [Learn more :octicons-arrow-right-24:](../../flows/node-types/utils.md#set-voice-chat-on-koreai-voice-gateway-account)
 
 #### Handling ASR Fallback Using Call Control Parameters
 
@@ -63,9 +63,9 @@ Campaign managers can read, fetch, and display column/field values from a CSV fi
 
 ### Configuration
 
-#### Experience Flows Table: Enhanced Visibility for Channels and Flow Types
+#### Start Flows Table: Enhanced Visibility for Channels and Flow Types
 
-A Channels column is added to the Experience Flow table. This column displays a list of all channels attached to each flow. Each row shows the flow type (call or chat) for each flow.
+A Channels column is added to the Start Flows table. This column displays a list of all channels attached to each flow. Each row shows the flow type (call or chat) for each flow. [Learn more :octicons-arrow-right-24:](../../flows/introduction-to-flows.md#the-flows-live-board)
 
 ### Analytics
 
