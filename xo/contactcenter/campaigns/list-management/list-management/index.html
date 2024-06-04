@@ -6349,7 +6349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../console/introduction-to-the-console/agent-console-introduction/" class="md-nav__link">
+      <a href="../../../../console/agent-console-introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6370,7 +6370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../console/conversation-tray/conversation-tray/" class="md-nav__link">
+      <a href="../../../../console/conversation-tray/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6391,7 +6391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../console/incoming-interactions/managing-incoming-interactions/" class="md-nav__link">
+      <a href="../../../../console/managing-incoming-interactions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6412,7 +6412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../console/interacting-with-customers/interacting-with-customers/" class="md-nav__link">
+      <a href="../../../../console/interacting-with-customers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6433,7 +6433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../console/additional-tools/additional-tools/" class="md-nav__link">
+      <a href="../../../../console/additional-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6454,7 +6454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../console/manage-layout-/manage-layout.md" class="md-nav__link">
+      <a href="../../../../console/manage-layout/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6726,6 +6726,15 @@
   
     <nav class="md-nav" aria-label="Create a Contact List">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-retrieval-and-reflection-of-csv-column-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic Retrieval and Reflection of CSV Column Values
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#time-zone" class="md-nav__link">
@@ -12728,6 +12737,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#dynamic-retrieval-and-reflection-of-csv-column-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic Retrieval and Reflection of CSV Column Values
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#time-zone" class="md-nav__link">
     <span class="md-ellipsis">
       Time Zone
@@ -12872,6 +12890,35 @@
 </li>
 </ol>
 <p>The Contact List is created.</p>
+<h4 id="dynamic-retrieval-and-reflection-of-csv-column-values">Dynamic Retrieval and Reflection of CSV Column Values<a class="headerlink" href="#dynamic-retrieval-and-reflection-of-csv-column-values" title="Permanent link">&para;</a></h4>
+<p>Campaign managers can read, fetch, and display column and corresponding field values from a CSV file whenever required. This can be done within the message node in the start flow or by sending the necessary values to the Agent Console during an agent transfer ensuring these values are reflected in the voice campaign call.</p>
+<ul>
+<li>Mapped fields in the uploaded CSV file are readable and can be used within the start flow. These fields can be configured in the message node of the experience flow.</li>
+<li>When a field is configured in the experience flow, the system recognizes it and fetches the corresponding value during outbound campaigns. For example, if the <code>{{First Name}}</code> field is configured in a message node, the system retrieves and speaks the relevant value during a voice campaign call.</li>
+<li>The system reads data from the CSV file and transmits necessary information/values to the agent console corresponding to the Customer/Phone number. This applies to both agent transfers in an Agentless Campaign and Auto Dialers on the agent console.</li>
+<li>Non-mapped fields are saved in the data table for additional queries. For example, if there is a column named "Account Num" in the contact, this "Account Num" will be part of the contact data table and can be called as part of the start flow.</li>
+</ul>
+<p>To retrieve user information from the context, specifically the user details from the uploaded CSV, we need to extract all the fields present in the CSV. This requires configuring the script node to capture the data from the context and store it in a variable. This allows us to use and modify the data throughout the entire workflow.</p>
+<p>Steps to query the CSV fields in the start flow-node:</p>
+<ol>
+<li>
+<p>Use the following code to retrieve the data from the context.</p>
+<p><code>let userInfo = context?.campaignUserInfo;
+setCallFlowVariable('userInfo', userInfo);</code><br />
+<a class="glightbox" href="../images/script-task.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/script-task.png" alt="MScript Task" title="Script Task" style="border: 1px solid gray; zoom:80%;"></a><br />
+The user information is stored in the userInfo variable and saved in the <code>callFlowVariable</code> for future use.</p>
+</li>
+<li>
+<p>The userInfo data can be used depending on the use case. For example, if we want to create a message to play when calling a customer, we can add the following in a message node:</p>
+<p><code>hi {{context.userInfo.firstName}} {{context.userInfo.lastName}}, your balance on the phoneNumber {{context.userInfo.phoneNumber}} is {{context.userInfo.balance}}, please recharge before the due date {{context.userInfo.dueDate}} {{context.userInfo.month}}</code>
+<a class="glightbox" href="../images/script-task-customized.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/script-task-customized.png" alt="Customized Script Task" title="Customized script Task" style="border: 1px solid gray; zoom:80%;"></a>  </p>
+</li>
+<li>
+<p>The user details provided in the CSV are fetched as <code>context.userInfo.firstName</code> (where <code>firstName</code> is the header in the CSV). Similarly, all the other fields can be accessed.</p>
+<p><a class="glightbox" href="../images/insights-to-logs.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/insights-to-logs.png" alt="Insights to Logs" title="Insights to Logs" style="border: 1px solid gray; zoom:80%;"></a>  </p>
+<p><a class="glightbox" href="../images/csv.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/csv.png" alt="CSV Fields" title="CSV Fields" style="border: 1px solid gray; zoom:80%;"></a>  </p>
+</li>
+</ol>
 <h4 id="time-zone">Time Zone<a class="headerlink" href="#time-zone" title="Permanent link">&para;</a></h4>
 <ul>
 <li>The "<strong>Timezone</strong>" field of the CSV is validated against the Calling Hours Timezone.</li>

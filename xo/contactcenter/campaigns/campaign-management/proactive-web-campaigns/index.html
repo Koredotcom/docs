@@ -6349,7 +6349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../console/introduction-to-the-console/agent-console-introduction/" class="md-nav__link">
+      <a href="../../../../console/agent-console-introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6370,7 +6370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../console/conversation-tray/conversation-tray/" class="md-nav__link">
+      <a href="../../../../console/conversation-tray/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6391,7 +6391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../console/incoming-interactions/managing-incoming-interactions/" class="md-nav__link">
+      <a href="../../../../console/managing-incoming-interactions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6412,7 +6412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../console/interacting-with-customers/interacting-with-customers/" class="md-nav__link">
+      <a href="../../../../console/interacting-with-customers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6433,7 +6433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../console/additional-tools/additional-tools/" class="md-nav__link">
+      <a href="../../../../console/additional-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6454,7 +6454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../console/manage-layout-/manage-layout.md" class="md-nav__link">
+      <a href="../../../../console/manage-layout/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6754,6 +6754,24 @@
   <a href="#using-a-template-to-create-a-proactive-web-campaign" class="md-nav__link">
     <span class="md-ellipsis">
       Using a Template to Create a Proactive Web Campaign
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schedule-proactive-web-campaigns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schedule Proactive Web Campaigns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-a-scheduled-campaign" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop a Scheduled Campaign
     </span>
   </a>
   
@@ -12819,6 +12837,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#schedule-proactive-web-campaigns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schedule Proactive Web Campaigns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-a-scheduled-campaign" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop a Scheduled Campaign
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#edit-a-proactive-web-campaign" class="md-nav__link">
     <span class="md-ellipsis">
       Edit a Proactive Web Campaign
@@ -13126,6 +13162,68 @@ The following options are available for the Actions:</p>
 <p>Enter the required information and create the web campaign.</p>
 </li>
 </ol>
+<h3 id="schedule-proactive-web-campaigns">Schedule Proactive Web Campaigns<a class="headerlink" href="#schedule-proactive-web-campaigns" title="Permanent link">&para;</a></h3>
+<p>Scheduling allows precise control over when your messages will be delivered. You can seamlessly plan campaigns to coincide with peak engagement times, ensuring maximum impact. Whether daily, weekly, Monthly, or Yearly, tailor your schedule to optimize outreach and enhance audience responsiveness. Scheduling a campaign will activate the campaign at a designated date and time.</p>
+<p>Steps to schedule a Campaign:</p>
+<ol>
+<li>
+<p>Click the <strong>Schedule</strong> tab and turn on the <strong>Schedule Campaign</strong> toggle.
+<a class="glightbox" href="../images/schedule-campaign-toggle.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/schedule-campaign-toggle.png" alt="Schedule campaign Toggle" title="Schedule Campaign Toggle" style="border: 1px solid gray; zoom:100%;"></a></p>
+</li>
+<li>
+<p>Select the campaign <strong>Start Date &amp; Time</strong>. <strong>End Date &amp; Time</strong> is optional.
+<a class="glightbox" href="../images/start-and-end-time.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/start-and-end-time.png" alt="Start & End time" title="Start & End Time" style="border: 1px solid gray; zoom:100%;"></a></p>
+</li>
+<li>
+<p>Select the <strong>Time Zone</strong> in which the campaign will be dialed.
+<a class="glightbox" href="../images/timezone-dropdown.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/timezone-dropdown.png" alt="Timezone" title="Timezone" style="border: 1px solid gray; zoom:100%;"></a></p>
+</li>
+<li>
+<p>Turn on the Recurrence toggle if you want the campaign to recur at defined intervals. You can select from the following options:</p>
+<ol>
+<li>Daily,</li>
+<li>Weekly,</li>
+<li>Monthly,</li>
+<li>Yearly.</li>
+</ol>
+<p><strong>Every “Enter Value” day(s)</strong> is a subset of what you select, Daily, Weekly, Monthly, or Yearly.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When a Scheduled campaign completes the first occurrence, it considers that run as complete so on the next recurrence it will start reaching the contacts freshly.
+For example, If a campaign is scheduled to run every week on Monday then on the first occurrence of Monday, the dialer will dial as many contacts as it can and then treat the contact list as completed. The next Monday the dialer will again consider dialing all contacts in the list.</p>
+</div>
+</li>
+<li>
+<p>Turning on the Allow Recurrence Precedence toggle will give the recurrence start and end time precedence over Contactable timings.
+For example, if Contactable Timings are 9:00 AM to 6:00 PM but the user selects Recurrence Start Time as 8:00 AM, the campaign will start contacting from 8:00 AM.
+<a class="glightbox" href="../images/allow-recurrence-precedence.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/allow-recurrence-precedence.png" alt="Allow Recurrence Precedence" title="Allow Recurrence Precedence" style="border: 1px solid gray; zoom:100%;"></a></p>
+</li>
+<li>
+<p>Click <strong>Save</strong>. A campaign is created as per the configured schedule.</p>
+<div class="admonition notes">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>
+<p>When a timezone is selected in the 'Contactable Timings' section, it automatically becomes the default timezone for scheduling in the 'Schedule' section. However, campaign managers can still choose a different timezone from the dropdown if necessary.</p>
+</li>
+<li>
+<p>Once a campaign is scheduled, it will become active at the specified date and time. However, the contacts will be dialed according to the 'Contactable Timings' time and timezone settings.</p>
+</li>
+<li>
+<p>To ensure accuracy, the contacts are scrubbed again 15 minutes before the scheduled time of a campaign.</p>
+</li>
+<li>
+<p>A scheduled campaign will automatically run at the scheduled date/time but the contacts are dialed as per the contactable timings and timezone. Clicking the Run button for a scheduled campaign displays an error message.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+<h3 id="stop-a-scheduled-campaign">Stop a Scheduled Campaign<a class="headerlink" href="#stop-a-scheduled-campaign" title="Permanent link">&para;</a></h3>
+<p>Click the <strong>Stop</strong> button under actions. Stopping a scheduled campaign will end the instance of that campaign.
+<a class="glightbox" href="../images/stop-scheduled-campaign.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/stop-scheduled-campaign.png" alt="Stop Button" title="Stop Button" style="border: 1px solid gray; zoom:100%;"></a></p>
+<p>A confirmation message is displayed. Click <strong>Stop</strong>.
+<a class="glightbox" href="../images/stop-scheduled-campaign-confirmation.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/stop-scheduled-campaign-confirmation.png" alt="Stop Scheduled campaign Confirmation" title="Stop Scheduled Campaign Confirmation" style="border: 1px solid gray; zoom:100%;"></a></p>
 <h3 id="edit-a-proactive-web-campaign">Edit a Proactive Web Campaign<a class="headerlink" href="#edit-a-proactive-web-campaign" title="Permanent link">&para;</a></h3>
 <p>Editing a proactive web campaign allows you to make changes to the campaign as per your needs.</p>
 <p>Steps to edit a web campaign:</p>

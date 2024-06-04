@@ -6436,7 +6436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../console/introduction-to-the-console/agent-console-introduction/" class="md-nav__link">
+      <a href="../../console/agent-console-introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6457,7 +6457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../console/conversation-tray/conversation-tray/" class="md-nav__link">
+      <a href="../../console/conversation-tray/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6478,7 +6478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../console/incoming-interactions/managing-incoming-interactions/" class="md-nav__link">
+      <a href="../../console/managing-incoming-interactions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6499,7 +6499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../console/interacting-with-customers/interacting-with-customers/" class="md-nav__link">
+      <a href="../../console/interacting-with-customers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6520,7 +6520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../console/additional-tools/additional-tools/" class="md-nav__link">
+      <a href="../../console/additional-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6541,7 +6541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../console/manage-layout-/manage-layout.md" class="md-nav__link">
+      <a href="../../console/manage-layout/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12716,7 +12716,7 @@
 <p>A <em>flow</em> is a step-by-step process that helps you define the end-to-end customer experience at a contact center for each communication channel. Flows can be built using the Flow Designer.</p>
 <h2 id="what-is-the-flow-designer">What Is the Flow Designer?<a class="headerlink" href="#what-is-the-flow-designer" title="Permanent link">&para;</a></h2>
 <p>The Flow Designer is a tool that allows you to quickly set up both simple and complex customer experiences. It is a drag-and-drop work surface that enables you to link together blocks of actions called <em>nodes</em>. These nodes help you map the customer experience from the initial contact to the query allocation to an agent, a bot, or both.</p>
-<p>The Experience Flow Designer also allows you to link Contact Center AI to an XO Platform Bot to handle the customer request, potentially resolve it, or otherwise transfer it to an agent.</p>
+<p>The Flow Designer also allows you to link Contact Center AI to an XO Platform Bot to handle the customer request, potentially resolve it, or otherwise transfer it to an agent.</p>
 <h2 id="why-use-the-flow-designer">Why Use the Flow Designer?<a class="headerlink" href="#why-use-the-flow-designer" title="Permanent link">&para;</a></h2>
 <p>There are a few benefits to using the Flow Designer:</p>
 <ul>
@@ -12728,78 +12728,65 @@
 <li>It lets you design default flows and define how the application behaves in regular scenarios.</li>
 </ul>
 <h2 id="the-flows-live-board">The Flows Live Board<a class="headerlink" href="#the-flows-live-board" title="Permanent link">&para;</a></h2>
-<p>You can find the Flows by navigating to <strong>Automation AI</strong>/<strong>Contact Center AI</strong>/<strong>Agent AI</strong> &gt; <strong>Flows &amp; Channels</strong> &gt; <strong>FLOWS</strong>.
-<a class="glightbox" href="../images/channels-and-flows-page.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/channels-and-flows-page.png" alt="Flows & Channels Page" title="Flows & Channels Page" style="border: 1px solid gray; zoom:100%;"></a></p>
+<p>You can find the Flows by navigating to <strong>Automation AI</strong>/<strong>Contact Center AI</strong>/<strong>Agent AI</strong> &gt; <strong>Flows &amp; Channels</strong> &gt; <strong>FLOWS</strong>.<br />
+<a class="glightbox" href="../images/channels-and-flows-page.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/channels-and-flows-page.png" alt="Flows & Channels Page" title="Flows & Channels Page" style="border: 1px solid gray; zoom:80%;"></a></p>
 <table>
-  <tr>
-   <td><strong>FIELD</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Flow
-   </td>
-   <td>The name of the Experience Flow.
-   </td>
-  </tr>
-  <tr>
-   <td>Actions (⋮)
-   </td>
-   <td>Displays the following icons:
-<ul>
-
-<li>View (Default Flows), which allows you to view the main configuration for the selected Experience Flow entry (<em>Name </em>and<em> Description</em>).
-
-<li>Update, which allows you to update the main configuration for the selected Experience Flow entry (<em>Name, Description, </em>and <em>Channel</em>).
-
-<li>Delete, which lets you remove the Experience Flow entry.
-</li>
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>Description
-   </td>
-   <td>Displays the description of the Experience Flow entry.
-   </td>
-  </tr>
-  <tr>
-   <td>Status
-   </td>
-   <td>Displays the status ‘Published’ if the conversation has been published; otherwise, it displays ‘In Development.’
-   </td>
-  </tr>
+<thead>
+<tr>
+<th><strong>FIELD</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flow</td>
+<td>The name of the Start Flow.</td>
+</tr>
+<tr>
+<td>Actions (⋮)</td>
+<td>Displays the following icons:<br> - <strong>View (Default Flows)</strong>: Allows you to view the main configuration for the selected Start Flow entry (<em>Name</em> and <em>Description</em>).<br> - <strong>Update</strong>: Allows you to update the main configuration for the selected Start Flow entry (<em>Name</em>, <em>Description</em>, and <em>Channel</em>).<br> - <strong>Delete</strong>: Lets you remove the Start Flow entry.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Displays the description of the Start Flow entry.</td>
+</tr>
+<tr>
+<td>Channels</td>
+<td>Displays a list of channels attached to each flow and the flow types (call or chat).</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>Displays the status ‘Published’ if the conversation has been published; otherwise, it displays ‘In Development.’</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="flows-section-features">Flows Section Features<a class="headerlink" href="#flows-section-features" title="Permanent link">&para;</a></h2>
 <p>You can access the following features on the Flows Live Board:</p>
 <ul>
 <li>
 <p>Use the <strong>Search</strong> option to enter keywords and search for a specific flow.
-<a class="glightbox" href="../images/search-field.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/search-field.png" alt="Arrange in Order" title="Arrange in Order" style="border: 1px solid gray; zoom:100%;"></a></p>
+<a class="glightbox" href="../images/search-field.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/search-field.png" alt="Arrange in Order" title="Arrange in Order" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>Sort entries by clicking the <strong>Flow</strong> header:</p>
 <ul>
 <li><strong>↑</strong> – sort alphabetically, in ascending order.</li>
-<li><strong>↓</strong> – sort alphabetically, in descending order.
-<a class="glightbox" href="../images/order.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/order.png" alt="Search Bar" title="Search Bar" style="border: 1px solid gray; zoom:100%;"></a></li>
+<li><strong>↓</strong> – sort alphabetically, in descending order.<br />
+<a class="glightbox" href="../images/order.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/order.png" alt="Search Bar" title="Search Bar" style="border: 1px solid gray; zoom:80%;"></a></li>
 </ul>
 </li>
 <li>
-<p>Click any Flow to access the Flow Designer and configure the selected entry and to update the Name, Description, or Channel of an entry, click <strong>Update</strong>.
-<a class="glightbox" href="../images/functions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/functions.png" alt="Functionalities" title="Functionalities" style="border: 1px solid gray; zoom:100%;"></a></p>
+<p>Click any Flow to access the Flow Designer and configure the selected entry and to update the Name, Description, or Channel of an entry, click <strong>Update</strong>.<br />
+<a class="glightbox" href="../images/functions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/functions.png" alt="Functionalities" title="Functionalities" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>To delete a flow, click <strong>Delete</strong>.
-<a class="glightbox" href="../images/delete-flow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/delete-flow.png" alt="Delete Flow" title="Delete Flow" style="border: 1px solid gray; zoom:100%;"></a></p>
+<p>To delete a flow, click <strong>Delete</strong>.<br />
+<a class="glightbox" href="../images/delete-flow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/delete-flow.png" alt="Delete Flow" title="Delete Flow" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You cannot restore deleted flow entries. Please proceed with caution.</p>
-</div>
+<p>!!!Note</p>
+<div class="language-text highlight"><pre><span></span><code>  You cannot restore deleted flow entries. Please proceed with caution.
+</code></pre></div>
 
 
 
