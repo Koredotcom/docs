@@ -2,12 +2,12 @@
 
 # LLM Integration
 
-To use LLM and Generative AI features, you must configure the integration with a pre-built or custom LLM.
+You must configure the integration with a pre-built or custom LLM or Kore.ai XO GPT Module to use LLM and Generative AI features.
 
 
 ## Pre-built LLM Integration
 
-The XO Platform offers seamless integration with leading AI services like Azure OpenAI, OpenAI, and Anthropic. Utilizing pre-configured prompts and APIs, you can effortlessly tap into the core capabilities of these services. Although you can customize certain elements, the overall structure adheres to a standardized format for simplicity. You can quickly realize the potential of LLM with the XO platform’s plug-and-play integration with premium AI services.
+The XO Platform offers seamless integration with leading AI services like Azure OpenAI, OpenAI, and Anthropic. Utilizing pre-configured prompts and APIs, you can effortlessly tap into the core capabilities of these services. Although you can customize certain elements, the overall structure adheres to a standardized format for simplicity. You can quickly realize the potential of LLM with the XO platform’s plug-and-play integration with premium AI services. Along with pre-configured or default prompts, you can craft your own custom prompt optimized for their specific purposes.
 
 
 ### Configure Pre-built LLM Integration

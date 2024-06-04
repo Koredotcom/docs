@@ -2,15 +2,16 @@
 
 This feature lets you configure the language and speech settings within Contact Center module, to manage how your contact center uses languages and speech recognition.
 
-Go to **Contact Center > CONFIGURATIONS > Languages & Speech** to access Languages and Speech settings.
+Go to **Contact Center AI** > **CONFIGURATIONS** > **Languages & Speech** to access Languages and Speech settings.
 <img src="../images/languages-and-speech-page.png" alt="
 Languages & Speech Page" title="Languages & Speech Page" style="border: 1px solid gray; zoom:80%;">
 
 This section of the Contact Center module provides access to the following settings:
 
-* **[Supported languages](https://docs.kore.ai/smartassist/settings/general-settings/language-management/#)**: Define the languages you want agents and automation to work with.
-* **[Voice Preferences](https://docs.kore.ai/smartassist/settings/advanced-settings/)**: Choose the engines to use with SmartAssist for Automated Speech Recognition (ASR) and Text-to-Speech (TTS).
-* **[Hold Audio](https://docs.kore.ai/smartassist/agent/default-agent-interaction-flows/#Hold_Audio)**: Define the default audio that plays to callers while on hold or waiting in the queue.
+* **[Supported languages for Bots and Agents](#list-of-supported-languages-for-bots-and-agents)**: Define the languages you want agents and automation to work with.
+* **[Voice Preferences](#voice-preferences)**: Choose the engines to use with SmartAssist for Automated Speech Recognition (ASR) and Text-to-Speech (TTS).
+* **[List of Supported Dialects](#list-of-supported-dialects)**: Choose the supported dialects.
+* **[Hold Audio](#hold-audio)**: Define the default audio that plays to callers while on hold or waiting in the queue.
 
 ## Language Management
 
@@ -43,6 +44,32 @@ In the **Language** panel, click the **Delete (bin)** icon for the language you 
 <img src="../images/delete-language.png" alt="
 Delete Language" title="Delete Language" style="border: 1px solid gray; zoom:80%;">
 
+### List of Supported Languages for Bots and Agents
+
+The following languages are supported for bots and agents:
+
+| Afrikaans       | English        | Indonesian      | Malayalam       | Sesotho         | Ukrainian       |
+|-----------------|----------------|-----------------|-----------------|-----------------|-----------------|
+| Albanian        | Esperanto      | Irish           | Maltese         | Sona            | Urdu            |
+| Amharic         | Estonian       | Italian         | Maori           | Sinhala (Sinhalese) | Uyghur          |
+| Arabic          | Filipino       | Japanese        | Marathi         | Slovak          | Uzbek (Latin)   |
+| Armenian        | Finnish        | Javanese        | Mongolian (Cyrillic) | Slovenian      | Vietnamese      |
+| Assamese        | French         | Kannada         | Myanmar (Burmese) | Somali         | Welsh           |
+| Azerbaijani     | Galician       | Kazakh          | Nepali          | Spanish         | Wolof           |
+| Basque          | German         | Khmer           | Norwegian       | Sudanese        | Xhosa           |
+| Belarusian      | Georgian       | Kinyarwanda     | Nyanja (Chichewa) | Swahili        | Yiddish         |
+| Bangla          | Greek          | Korean          | Odia            | Swedish         | Yoruba          |
+| Bosnian         | Gujarati       | Kurdish (Central) | Persian       | Tagalog         | Zulu            |
+| Bulgarian       | Haitian Creole | Kyrgyz          | Polish          | Tajik           |                 |
+| Catalan         | Hausa          | Lao             | Portuguese (Brazil) | Tamil         |                 |
+| Cebuano         | Hawaiian       | Latin           | Portuguese (European) | Tatar         |                 |
+| Chinese Simplified | Hebrew     | Latvian         | Punjabi         | Telugu          |                 |
+| Corsican        | Hindi          | Lithuanian      | Russian         | Thai            |                 |
+| Croatian        | Hmong Daw      | Luxembourgish   | Romanian        | Tibetian        |                 |
+| Czech           | Hungarian      | Macedonian      | Samoan          | Traditional Chinese |                 |
+| Danish          | Icelandic      | Malagasy        | Scots Gaelic    | Turkish         |                 |
+| Dutch           | Igbo           | Malay           | Serbian (Cyrillic) | Turkmen       |                 |
+
 ## Voice Preferences
 
 In the Language & Speech section of SmartAssist, you can configure the voice preferences to personalize the ASR Engine and the voice that plays for your text-to-speech conversions.
@@ -64,6 +91,19 @@ Voice Preferences" title="Voice Preferences" style="border: 1px solid gray; zoom
 Select ASR and Dialect" title="Select ASR and Dialect" style="border: 1px solid gray; zoom:80%;">
 
 4. Click **Done** once you have completed configuring your voice preferences. The set voice, language, and dialect apply to automated customer responses that use text-to-speech.
+
+### List of Supported Dialects
+
+Here is the HTML table converted into Markdown format:
+
+|                     |                       |
+|---------------------|-----------------------|
+| English (Australia) | English (Philippines) |
+| English (Canada)    | English (Singapore)   |
+| English (Hong Kong) | English (South Africa)|
+| English (India)     | English (United Kingdom) |
+| English (Ireland)   | English (United States)  |
+| English (New Zealand) |                     |
 
 ## Hold Audio
 

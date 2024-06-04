@@ -131,7 +131,9 @@ The platform offers different plans, and you can choose the plan for each produc
 * Dev tools offer all the developer-related menus, such as BotKit, API scopes, Auth profiles, etc., across the products.
 * Now you can customize the WebSDK to align with your brand identity, including options such as color schemes, fonts, logos, headers, homepage design, etc.
 * Standard account users won't have access to the Knowledge Graph feature but can still define FAQs by adding questions and answers. Enterprise account users will have access to the Knowledge Graph, allowing them to add tags, graphs, and other elements, similar to the functionality in XO v11.
+* Data Tables are available for all existing Standard and Enterprise accounts, as well as new Enterprise accounts. However, new Standard account users created in v11 will not have access to the Data Tables feature.
 * The ASR and TTS configurations provided in the Kore Voice Gateway are designed as default settings. Platform users have the option to customize them on a per-flow if required.
+* Process Apps are discontinued.
 
 <hr>
 
