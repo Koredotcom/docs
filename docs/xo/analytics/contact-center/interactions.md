@@ -63,7 +63,8 @@ You can find the search field on the top right side of the Interactions tab.
 The search feature on Interactions allows supervisors to do the following:
 
 * Search for keywords in both chats and call transcripts.
-* Exclude AgentAssist Logs when searching the Transcripts.
+* Search the Agent and Disposition notes.
+* Exclude Agent AI Logs when searching the Transcripts.
 * Search on Partial and Full Matches of Words and Phrases: The search function works for partial and complete matches of individual words and phrases.
     * Complete matches receive the highest rank in the search results.
     * Results that match all single words of a phrase receive the next priority.
@@ -83,16 +84,24 @@ How it works:
 4. The system displays the count of the occurrences of the word or phrase along with the highlighted results.  
 <img src="../images/search-interactions-3.png" alt="Search Interactions 3" title="Search Interactions 3" style="border: 1px solid gray; zoom:80%;">
 
-## Export Interactions
+## Export Conversation Data/Transcripts
 
-The interaction data can be exported as a .csv file and downloaded to the local system from the dashboard.
+The conversation data/transcripts can be exported as a .csv file and downloaded to the local system from the dashboard.
 
-To export the interactions, follow these steps:
+Steps to export conversation data/transcripts:
 
-1. Click the **Export** icon in the upper-right corner. The interactions are exported as a CSV file.
-<img src="../images/export-interactions.png" alt="Export Interactions" title="Export Interactions" style="border: 1px solid gray; zoom:80%;">
+1. Select the conversations and click **Export**.  
+<img src="../images/export-button.png" alt="Export Button" title="Export Button" style="border: 1px solid gray; zoom:80%;">
 
-2. A status message is displayed at the start of the export. On completion, the file is downloaded.
+2. Click **Export Conversation Data** or **Export Transcripts** as required.  
+<img src="../images/export-options.png" alt="Export Options" title="Export Options" style="border: 1px solid gray; zoom:80%;">
+
+    !!! Notes
+
+        * If Export Conversation Data is selected, the metadata of all selected conversations is exported.
+        * If Export Transcripts is selected, the exported transcript files retain the same naming convention currently used for all transcript exports. These files are compressed into a zip file named "transcripts-YYYY-MM-DD-HH24-mm-SS.zip.
+        * Up to 25 conversations can be selected for exporting transcripts. If a selected conversation does not have a transcript or the system cannot retrieve one, a blank transcript is exported for that conversation.
+3. A status message is displayed at the start of the export. On completion, the file is downloaded.
 
 ## Filters
 
