@@ -386,7 +386,6 @@ You can edit or add the filler message for the repeat bot response event before 
 <img src="../images/use-filler-message.png" alt="use filler message" title="use filler message" style="border: 1px solid gray; zoom:75%;"></li></ul>
 
 <ul><li><b>Auto-generate Response</b> – When you select this option, you are redirected to enable the Advanced NLU model, if not enabled, to generate the bot response using the LLM and Generative AI engine.  
-
 <img src="../images/auto-generate-response.png" alt="auto-generate responses" title="auto-generate responses" style="border: 1px solid gray; zoom:75%;"></li></ul>
 
 <li>Click <b>Enable Now</b> to define the Advanced NLU Settings for the <b>LLM and Generative</b> model and enable the Repeat Responses feature.</li></ul></ol>
