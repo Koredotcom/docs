@@ -15,10 +15,11 @@ Steps to enable the feature:
 
 
 1. Navigate to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
-2. Select the**Model** and **Prompt** from the drop-down list for a feature. 
+   ![alt_text](images/cpf(1).jpg  )
+2. Select the **Model** and **Prompt** from the drop-down list for a feature. 
 
 
-    ![alt_text](images/cpf(1).jpg  )
+
 
 3. Turn on the **Status** toggle. The success message is displayed.
 
