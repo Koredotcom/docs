@@ -81,7 +81,7 @@ Supervisors can select conversations and choose to Export Conversation Data or E
 
 #### Display Agent and Disposition Notes in Search Results on the Interactions Tab
 
-**Dashboard > Interactions**
+**Dashboard** > **Interactions**
 
 Agent notes and Disposition notes are now displayed in the search results on the Interactions tab. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#search-interactions)
 
