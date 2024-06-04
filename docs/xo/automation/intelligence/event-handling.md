@@ -165,7 +165,7 @@ To configure the Ambiguous Intents Identified event follow these steps:
 2. Click **Configure** to enable the event.
     <img src="../images/configure-intent-events.png" alt="configure intent events" title="configure intent events" style="border: 1px solid gray; zoom:75%;">
 
-     !!!note
+    !!!note
         If not enabled, the list of ambiguous intents is presented to the user during the conversation.
 
 3. You can select the following options in the Configuration panel:
