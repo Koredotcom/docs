@@ -41,6 +41,84 @@ Steps to manage notifications:
     
     2. Click **Save** to update the notification settings.
 
+## User Diagnostics
+
+User diagnostics systematically assesses and analyzes network connectivity and device permissions to identify issues, optimize service delivery, and enhance user satisfaction. Using real-time monitoring, this tool helps resolve problems efficiently, improving agent performance, and ensuring a seamless customer experience.
+
+The User Diagnostics icon is at the top right corner of the Agent Console.
+<img src="../images/user-diagnostics-icon.png" alt="User Diagnostics Icon" title="User Diagnostics Icon" style="border: 1px solid gray; zoom:80%;">
+
+When an agent logs in to the Agent Console, the browser asks for microphone and speaker permissions. If the permissions are granted, the user diagnostics icon will appear green. Hovering over the icon displays “Device connections are active”.  
+<img src="../images/device-permissions-active.png" alt="Device Permissions Active" title="Device Permissions Active" style="border: 1px solid gray; zoom:100%;">
+
+If device permissions are denied, the user diagnostics icon will appear orange. A pop-up appears, prompting you to enable the settings.  
+<img src="../images/permissions-popup.png" alt="Permissions Pop-up" title="Permissions Pop-up" style="border: 1px solid gray; zoom:100%;">
+
+Hovering over the icon displays “Device permissions are missing”.  
+<img src="../images/device-permissions-missing.png" alt="Device Permissions Missing" title="Device Permissions Missing" style="border: 1px solid gray; zoom:100%;">
+
+Click the **Set Permissions** button to configure the device permissions.  
+<img src="../images/device-permissions-page.png" alt="Device Permissions Page" title="Device Permissions Page" style="border: 1px solid gray; zoom:100%;">
+
+### Agent Diagnostics
+
+Clicking the User Diagnostics icon displays the Agent Diagnostics page. There are three sections on the agent diagnostics page:
+
+1. Audio Device,
+2. Video Device,
+3. Connectivity.
+
+**Audio Device**: You can check your microphone and speaker by recording and playing an audio clip.
+
+Steps to check your audio device:
+
+1. Select the **Speaker** and **Microphone** from the dropdowns on the **Audio Device** tab.  
+<img src="../images/audio-device-selection.png" alt="Audio Device Selection" title="Audio Device Selection" style="border: 1px solid gray; zoom:90%;">
+
+2. Click **Start Recording** to record the audio.  
+<img src="../images/start-recording.png" alt="Audio Device Selection" title="Audio Device Selection" style="border: 1px solid gray; zoom:90%;">
+
+3. You can record up to 12 minutes of audio. Click **Stop Recording** to stop the recording.  
+<img src="../images/stop-recording.png" alt="Audio Device Selection" title="Audio Device Selection" style="border: 1px solid gray; zoom:90%;">
+
+4. Click **Play**.  
+<img src="../images/play-button.png" alt="Audio Device Selection" title="Audio Device Selection" style="border: 1px solid gray; zoom:90%;">
+
+    A confirmation message is displayed if no issues are detected with the audio device.  
+
+    <img src="../images/no-issues-detected.png" alt="Audio Device Selection" title="Audio Device Selection" style="border: 1px solid gray; zoom:90%;">
+
+    !!! Note
+
+        If you cannot hear the audio, check the volume, try a different speaker or microphone, or check your Bluetooth settings.
+
+**Video Device**: You can check your camera by seeing if your video is visible.
+
+Steps to check your video device:
+
+1. Select the **Camera** from the dropdown on the **Video Device** tab.  
+<img src="../images/camera-selection.png" alt="Camera Selection" title="Camera Selection" style="border: 1px solid gray; zoom:90%;">
+
+2. Check if your video is visible. If yes, there are no issues with your video device/camera.  
+<img src="../images/video-check.png" alt="Video Check" title="Video Check" style="border: 1px solid gray; zoom:90%;">
+
+    !!! Note
+
+        If you don't see your video, select another camera. If the camera is not part of your computer, check your settings to ensure your system recognizes it.
+
+**Connectivity**: You can evaluate the client's network access by checking the connectivity, bandwidth, and hardware access through a loopback connection to our telephony infrastructure.
+
+Steps to perform the connectivity and bandwidth tests:
+
+1. Select the **Edge Location** and **Codec Preferences** from the dropdowns on the **Connectivity** tab. You can choose up to three edge locations for testing.  
+<img src="../images/connectivity-selections.png" alt="Connectivity Selections" title="Connectivity Selections" style="border: 1px solid gray; zoom:90%;">
+
+2. Click **Start Test**. The progress is displayed for each edge location.  
+<img src="../images/start-test-connectivity.png" alt="Start Test - Connectivity" title="Start Test - Connectivity" style="border: 1px solid gray; zoom:90%;">
+
+3. The **Expected Call Quality** for each edge location is displayed along with detailed test results once the tests are completed. You can copy the results by clicking **Copy Results**.  
+<img src="../images/test-results.png" alt="Test Results" title="Test Results" style="border: 1px solid gray; zoom:90%;">
+
 ## Features
 
 The three monitoring icons, CSAT, Completed, and Average Response, provide details on the completed tasks, in-progress conversations, response time, and customer feedback.

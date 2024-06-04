@@ -116,11 +116,12 @@ Steps to change the theme and design:
 
 1. Navigate to **Flows & Channels** > **Channels** > **Digital** > **Configured**.
 2. Click **Web/Mobile Client**.
-3. On the Configure tab, click **Edit** to change the current theme. 
+3. On the Configure tab, click **Edit** to change the current theme.
+
 
     ![alt_text](images/sdke6.png  )
 
-4. The theme editor page displays all the default and created themes, if any.
+4. The theme editor page displays all the default and created themes, if any. 
 
     ![alt_text](images/sdke3.png  )
     
@@ -145,9 +146,10 @@ Steps to change the theme and design:
 
     ![alt_text](images/sdke1.png  )
 
-7. On the Configure tab, click **Save**. The configuration saved message is displayed. 
+7. On the Configure tab, click **Save**. The configuration saved message is displayed.
+<img src="../images/sdke5-1.png" alt="Configuration" title="Configuration Saved" style="border: 1px solid gray; zoom:70%;">
 
-    ![alt_text](images/sdke5.png  )
+
 
 8. Click **Proceed**. The Digital > Configured page is displayed.
 

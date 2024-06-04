@@ -1,6 +1,6 @@
 # Introduction to LLM and Generative AI
 
-The Kore.ai XO Platform helps enhance your bot development process and enrich end-user conversational experiences by integrating pre-built (OpenAI, Azure OpenAI, Anthropic) or custom models in the backend.
+The Kore.ai XO Platform helps enhance your bot development process and enrich end-user conversational experiences by integrating pre-built (OpenAI, Azure OpenAI, Anthropic) or custom models or Kore.ai XO GPT Module in the backend.
 
 In addition to the out-of-box integration with pre-built models, the Platform supports the bring-your-own (BYO) model framework to integrate with externally hosted models by third parties as well as models hosted by the enterprises themselves. The framework allows the creation of custom prompts that are optimized for specific purposes and models. This generic framework works seamlessly with the Auth Profiles module of the Platform, enabling enterprises to use the authentication mechanism of their choice.
 
@@ -24,7 +24,7 @@ The Integration of Generative AI and LLM enables the following features:
 
 
 
-* Prompts & Requests Library: Complete flexibility to create fully customized prompts optimized for particular use cases using custom models.
+* Prompts & Requests Library: Complete flexibility to create fully customized prompts optimized for particular use cases using pre-built or custom models.
 * Co-Pilot features:
     * **Automatic Dialog Generation**: This feature helps build production-ready dialog tasks automatically by briefly describing the task. A preview of the generated dialog is available and lets you modify the intent description and create multiple iterations of the dialog.
     * **Conversation Test Cases Suggestion**: The Platform suggests simulated user inputs covering various scenarios from an end-user perspective at every test step. You can use these suggestions to create test suites.
@@ -63,7 +63,7 @@ The Integration of Generative AI and LLM enables the following features:
 
 All these features benefit VA developers, NLP developers, and testers as follows:
 
-* Being able to select between custom and pre-built LLM integrations.
+* Being able to select among Kore.ai XO GPT or custom or pre-built LLM integrations.
 * Developers can create dialog tasks on the fly through the prebuilt Dialog Tasks Flow.
 * Developers can unlock the power of Generative AI with their prompts, enabling them to build creative and custom use cases.
 * Mundane tasks like generating dialog tasks or training utterances are automated to help developers be more productive and focus on other important tasks like enhancing conversation design, creating complex test cases, and more.

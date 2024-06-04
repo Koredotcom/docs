@@ -32,61 +32,49 @@ For example, the formal draft response “Your mortgage appointment has been sch
 
 This feature can be enabled from [CONFIGURATION > Advanced Settings > Intelligent Agent Tools](https://docs.kore.ai/smartassist/configuration/intelligent-agent-tools-beta/).
 
+### Add/Delete Hyperlinks in the Compose Bar
+
+Agents can add/delete hyperlinks in the compose bar while responding to the messages.
+
+Steps to add/remove hyperlinks:
+
+1. Highlight the text that you want to hyperlink and click the **Add Link** icon.  
+<img src="../images/highlight.png" alt="Highlight Text" title="Highlight Text" style="border: 1px solid gray; zoom:80%;">
+
+2. In the **Add Link** dialog box, do the following:
+    * Select the **web address** option and enter the URL in the box, for linking a web page.  
+    <img src="../images/link-to-web-address.png" alt="Link to Web Address" title="Link to Web Address" style="border: 1px solid gray; zoom:60%;">
+
+    * For linking an email address, select the **Email Address** option and enter the email address in the box.  
+    <img src="../images/add-link-email.png" alt="Add Link Email" title="Add Link Email" style="border: 1px solid gray; zoom:60%;">
+
+        !!! Note
+
+            The highlighted text appears in the Text to display field.
+
+3. Click **Ok**. The selected text is hyperlinked.  
+<img src="../images/hyperlinked.png" alt="Hyperlinked Text" title="Hyperlinked Text" style="border: 1px solid gray; zoom:80%;">
+
+4. Hover over the hyperlinked text to view the following options:
+    * Open
+    * Break Link (icon)
+    * Edit
+5. Press **Enter** to send the message.  
+<img src="../images/send-message.png" alt="Send Message" title="Send Message" style="border: 1px solid gray; zoom:80%;">
+
 ## Resend Message When Network Disconnects
 
 The following table lists scenarios with expected results in case of a network failure while an agent attempts to send a response.
 
-<table>
-  <tr>
-   <td><strong>SCENARIO</strong>
-   </td>
-   <td><strong>RESULT</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>When an agent sends a message
-   </td>
-   <td>“Sending” appears on the chat window.
-   </td>
-  </tr>
-  <tr>
-   <td>If the message is sent successfully
-   </td>
-   <td>“Sent” appears on the chat window.
-   </td>
-  </tr>
-  <tr>
-   <td>If the network is disrupted
-   </td>
-   <td>The chat window is disabled. Undelivered messages appear as “Not Delivered” with the Resend icon in the compose bar’s left corner.
-   </td>
-  </tr>
-  <tr>
-   <td>When the network is restored
-   </td>
-   <td>The chat window is enabled.
-   </td>
-  </tr>
-  <tr>
-   <td>If the resend icon is clicked
-   </td>
-   <td>The message is sent again.
-   </td>
-  </tr>
-  <tr>
-   <td>If the conversation is terminated
-   </td>
-   <td>The Resend icon does not appear.
-   </td>
-  </tr>
-  <tr>
-   <td>If the page is refreshed
-   </td>
-   <td>The undelivered messages do not appear.
-   </td>
-  </tr>
-</table>
-
+| **SCENARIO**                             | **RESULT**                                                                                                                      |
+|------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| When an agent sends a message            | “Sending” appears on the chat window.                                                                                           |
+| If the message is sent successfully      | “Sent” appears on the chat window.                                                                                              |
+| If the network is disrupted              | The chat window is disabled. Undelivered messages appear as “Not Delivered” with the Resend icon in the compose bar’s left corner. |
+| When the network is restored             | The chat window is enabled.                                                                                                     |
+| If the resend icon is clicked            | The message is sent again.                                                                                                      |
+| If the conversation is terminated        | The Resend icon does not appear.                                                                                                |
+| If the page is refreshed                 | The undelivered messages do not appear.                                                                                         |
 ## Audio and Video Calls with Customers
 
 Agents can request the customer for an audio or video call during the chat conversation if required. Clicking the **Audio** or **Video Call** icon initiates a call.

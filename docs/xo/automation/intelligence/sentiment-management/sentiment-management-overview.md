@@ -2,20 +2,19 @@
 
 Emotion tones are critical indicators in understanding the attitudes and opinions of users interacting with Virtual Assistants. **Sentiment Events** allow the developer to define and trigger events based on the user’s emotion or sentiment.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This feature was introduced in v7.0 and is not supported in all languages. <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/language-management/multi-lingual-bot-behavior/" target="_blank">Learn more</a>.</p>
-</div>
+!!!Note
+
+    This feature was introduced in v7.0 and is not supported in all languages. [Learn more](../../../app-settings/language-management/multi-lingual-bot-behavior.md).
 
 Negative emotion scenarios like anger or disgust are typically considered factors that would determine a transfer of the conversation to a live agent.
 
-The [NLP](/docs/xo/automation/natural-language/nlp-introduction/){target="_blank"} interpreter can parse user utterances for specific words and phrases, and then provide an average tone score based on the connotation, word placement, and any added modifiers. [Learn more](/docs/xo/automation/intelligence/sentiment-management/tone-analysis/){target="_blank"}.
+The [NLP](../../../automation/natural-language/nlp-introduction.md) interpreter can parse user utterances for specific words and phrases, and then provide an average tone score based on the connotation, word placement, and any added modifiers. [Learn more](../../../automation/intelligence/sentiment-management/tone-analysis.md).
 
 The tone or sentiment scores are stored as context and used to drive the flow of a dialog task through conditional transition statements. You can use these scores to steer user-assistant conversations or seamlessly invoke escalation to a live agent.
 
 ## Configuration
 
-You can define multiple sentiment events from under **Conversation Intelligence** > **Events** > **Sentiment Events**. Click **Create New Event** to define an event based on which to capture the user’s emotion.
+You can define multiple sentiment events from under **Conversation Intelligence** > **Events** > **Sentiment Events**. Click **+ New Event** to define an event based on which to capture the user’s emotion.
 
 <img src="../images/new-event-window.png" alt="new event" title="new event" style="border: 1px solid gray; zoom:75%;">
 
@@ -30,7 +29,7 @@ The following parameters can be configured for a sentiment event:
     * The Message-level tone value is a tone value calculated for a given message from the user.
     * Select the required emotions to be captured from a list of six tones, anger, disgust, fear, sadness, joy, and positive.
     * Select if the tone should be considered at the _Session_ level or _Message_ level
-    * Define the range to be considered for each of these tones, the range can be between -3 to +3. [Learn more](/docs/xo/automation/intelligence/sentiment-management/tone-analysis/){target="_blank"}.
+    * Define the range to be considered for each of these tones, the range can be between -3 to +3. [Learn more](../../../automation/intelligence/sentiment-management/tone-analysis.md).
     * When multiple emotions are selected, the event is triggered when **ALL** the tone rules are met. In case you want the event to trigger when any tone rule is met, add them as separate rules.
 
 !!!note
@@ -46,8 +45,8 @@ Emotion tones are continuously updated whenever a message is received from the u
 * If the configuration used is to **Initiate a task**, then the current task is discarded and the VA switches to the new task according to the event configuration.
     * Any other implicitly paused tasks will also be discarded.
     * Tasks that are kept on hold using Hold and Resume settings are resumed as per Hold and Resume configuration.
-    * If the dialog selected to trigger for the sentiment event is not available for any reason, then a standard response is displayed. Refer to the standard response with the title _Dialog task required for conversation is not available_ for more information. [Learn more](/docs/xo/automation/intelligence/conversation-management/standard-responses/){target="_blank"}
-* If the configuration used is to **Run a Script**, then the Platform executes the script and continues with the task execution. In case of any errors executing the script associated with the sentiment event, then a standard response is displayed. You may refer to the standard response titled _Error in continuing the conversation due to incorrect bot definition_ for more information. [Learn more](/docs/xo/automation/intelligence/conversation-management/standard-responses/){target="_blank"}.
+    * If the dialog selected to trigger for the sentiment event is not available for any reason, then a standard response is displayed. Refer to the standard response with the title _Dialog task required for conversation is not available_ for more information. [Learn more](../../../automation/intelligence/conversation-management/standard-responses.md).
+* If the configuration used is to **Run a Script**, then the Platform executes the script and continues with the task execution. In case of any errors executing the script associated with the sentiment event, then a standard response is displayed. You may refer to the standard response titled _Error in continuing the conversation due to incorrect bot definition_ for more information. [Learn more](../../../automation/intelligence/conversation-management/standard-responses.md).
 * In case of a conflict between a sentiment event and direct intent invocation by the user, sentiment event is given precedence.
 * When tone criteria for two or more sentiment events are satisfied at the same instance, then the Platform prefers the sentiment event with the highest order of precedence used in defining the events.
 
