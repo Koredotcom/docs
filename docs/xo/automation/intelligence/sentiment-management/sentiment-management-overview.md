@@ -2,10 +2,9 @@
 
 Emotion tones are critical indicators in understanding the attitudes and opinions of users interacting with Virtual Assistants. **Sentiment Events** allow the developer to define and trigger events based on the user’s emotion or sentiment.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This feature was introduced in v7.0 and is not supported in all languages. [Learn more](../../../app-settings/language-management/multi-lingual-bot-behavior.md).</p>
-</div>
+!!!Note
+
+    This feature was introduced in v7.0 and is not supported in all languages. [Learn more](../../../app-settings/language-management/multi-lingual-bot-behavior.md).
 
 Negative emotion scenarios like anger or disgust are typically considered factors that would determine a transfer of the conversation to a live agent.
 
