@@ -190,110 +190,11 @@ The only exception is when you select the Continue the current task and add a ne
 
 ### Conversation Events
 
-#### Welcome / On Connect Event
+#### End of Task
 
-Users can initiate VA conversations in varied ways, from a simple greeting to directly expressing an intent or asking an FAQ. 
+*End of Task* is triggered when the VA is not expected to send any message to the user or receive any message from the user.
 
-To facilitate a scope for the developer to customize the response based on the user choice, the Welcome event comes with additional options when you choose _Initiate Task_ or _Show Message_ as the event configurations. For example, if the first user utterance maps to a task, should the VAexecute the event-based task or the user intent first?
-
-Post ver9.0, you can use the <code>isReturningUser</code> parameter in the **BotUserSession** context object to [identify returning users](../../kb/new-and-returning-users.md){target="_blank"}
- and send an appropriate welcome message. [Learn More](../intelligence/context-object.md){target="_blank"}.
-
-As a developer, you can define the VA’s priority when the user starts the conversation with a greeting, task, or FAQ from the options listed below:
-
-<img src="../images/welcome-event.gif" alt="welcome event" title="welcome event" style="border: 1px solid gray; zoom:75%;">
-
-<table border="1.5">
-<tr bgcolor="#ECECEC">
-   <td><strong>EVENT CONFIGURATION</strong>
-   </td>
-   <td><strong>OPTIONS</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Initiate Task
-   </td>
-   <td>
-<ul>
-
-<li>Greetings / Small Talk 
-<ul>
- 
-<li>Respond to greetings or small talk and initiate Welcome Event dialog.
- 
-<li>Discard the user message and initiate the Welcome Event dialog.
-</li> 
-</ul>
-
-<li>FAQ 
-<ul>
- 
-<li>Respond to FAQ and initiate the Welcome Event dialog.
- 
-<li>Discard the user message and initiate the Welcome Event dialog.
-</li> 
-</ul>
-
-<li>Task 
-<ul>
- 
-<li>Initiate the user-requested task and discard the Welcome Event dialog.
- 
-<li>Initiate the Welcome Event dialog and add the user-requested task to Follow-up Intents.
-If the Task is unavailable to the user for any reasons, such as not yet published or suspended or simply not assigned to the user, the VA shows an error message that the task is not currently available for execution.
-</li> 
-</ul>
-</li> 
-</ul>
-   </td>
-  </tr>
-  <tr>
-   <td>Show Message
-   </td>
-   <td>
-<ul>
-
-<li>Greetings / Small Talk 
-<ul>
- 
-<li>Respond to greetings or small talk and display the Welcome Event message.
- 
-<li>Respond to greetings or small talk and discard the Welcome Event message.
-</li> 
-</ul>
-
-<li>FAQ 
-<ul>
- 
-<li>Respond to FAQ and display the Welcome Event message.
- 
-<li>Respond to FAQ and discard the Welcome Event message.
-</li> 
-</ul>
-
-<li>Task 
-<ul>
- 
-<li>Display the Welcome Event message and run the user-requested task
- 
-<li>Discard the Welcome Event message and run the user-requested task
-</li> 
-</ul>
-</li> 
-</ul>
-   </td>
-  </tr>
-</table>
-
-!!!note
-
-    The XO Platform no longer supports Welcome Messages. If you have defined a Welcome Message in previous versions, the upgraded version automatically creates a corresponding Welcome event and On Connect event to ensure backward compatibility.
-
-#### End of Conversation
-
-*End of Conversation* is triggered when the VA is not expected to send any message to the user or receive any message from the user.
-
-A new flag indicating the reason for ending the task, added to the _end of task_ event, will help decide the end of the conversation behavior. Client-side implementations of BotKits, RTM, and Webhook channels can use this reason for the task completion flag in the context to determine an appropriate course of action.
+A new flag indicating the reason for ending the task, added to the _end of task_ event, will help decide the end of the conversation behavior. Client-side implementations of BotKits, RTM, and Webhook channels can use this reason for the task completion flag to determine an appropriate course of action.
 
 On triggering this event, the context will be updated with the following details:
 
@@ -305,7 +206,7 @@ On triggering this event, the context will be updated with the following details
    <td>
 <strong>SCENARIO</strong>
    </td>
-   <td><strong>END OF CONVERSATION FLAG</strong>
+   <td><strong>END OF TASK FLAG</strong>
    </td>
   </tr>
   <tr>
@@ -321,7 +222,7 @@ On triggering this event, the context will be updated with the following details
    </td>
   </tr>
   <tr>
-   <td>Error in task or FAQs execution (without Task Failure Event, no hold tasks)
+   <td>Error in a task or FAQs execution (without Task Failure Event, no hold tasks)
    </td>
    <td>Failed
    </td>
@@ -351,12 +252,19 @@ On triggering this event, the context will be updated with the following details
    </td>
   </tr>
   <tr>
-   <td>User declines to resume on-hold task (when no other task is on hold
+   <td>The user declines to resume the on-hold task (when no other task is on hold)
    </td>
    <td>Canceled
    </td>
   </tr>
 </table>
+
+#### Task Execution Failure Event
+
+* By default, this event is always enabled with the _Show Message_ option. This event cannot be disabled.
+* This VA-level behavior can be overridden for specific tasks by defining task-specific failure events from the dialog task settings. [Learn more](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#dialog-settings).
+
+    <img src="../images/task-execution-failure-event.png" alt="task execution failure event" title="task execution failure event" style="border: 1px solid gray; zoom:75%;">
 
 #### Repeat Bot Response Event
 
@@ -492,13 +400,6 @@ When you select the <b>Initiate Dialog</b> option, you can choose the task to wh
 
 <ol start="10"><li>Click <b>Save & Enable</b> to trigger the Repeat Bot Response event with the configurations.</li></ol>
 
-#### Task Execution Failure Event
-
-* This event is available starting with the v6.40 release.
-* By default, this event is always enabled with the _Show Message_ option. This event cannot be disabled.
-* This VA-level behavior can be overridden for specific tasks by defining task-specific failure events from the dialog task settings. [Learn more](/docs/xo/automation/use-cases/dialogs/using-the-dialog-builder-tool/#dialog-settings){target="_blank"}.
-
-    <img src="../images/task-execution-failure-event.png" alt="task execution failure event" title="task execution failure event" style="border: 1px solid gray; zoom:75%;">
 
 
 ### Channel Events
