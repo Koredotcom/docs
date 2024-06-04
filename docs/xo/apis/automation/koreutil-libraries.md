@@ -573,6 +573,41 @@ Dies ist eine Beispielnachricht
 
 <img src="../images/kore-util-auto-translate.png" alt="Auto translate service as Bot Response" title="Auto translate service as Bot Response" style="border:1px solid gray; zoom:60%;">
 
-** Related Link
+### koreUtil.getFormDefinition
+
+The `koreUtil.getFormDefinition` allows you to get the form definition, which consists of the form meta, form components, and form messages.
+
+**Usage Example:**
+
+Suppose you want to change the standard response of a field of EMail type in a digital form based on the bot language. You have added English, Spanish, German, and Japanese as your bot languages.
+
+```
+let formDef = koreUtil.getFormDefinition();
+if(context.currentLanguage === 'en'){
+    formDef.formMsgMeta.EMAIL_INVALID_FORMAT = 'Invalid EMail';
+}
+else if(context.currentLanguage === 'de'){
+    formDef.formMsgMeta.EMAIL_INVALID_FORMAT = 'ungültige E-Mail';
+}
+else if(context.currentLanguage === 'es'){
+    formDef.formMsgMeta.EMAIL_INVALID_FORMAT = 'EMail inválido';
+}
+else{
+    formDef.formMsgMeta.EMAIL_INVALID_FORMAT = '無効なメールアドレス';
+}
+```
+
+
+**Output:**
+
+If your bot language is Japanese:
+
+```
+無効なメールアドレス
+```
+
+<img src="../images/koreutil-invalid-email-jap.png" alt="Auto translate service as Bot Response" title="Auto translate service as Bot Response" style="border:1px solid gray; zoom:60%;">
+
+**Related Link**
 
 * **[Script Node](../../automation/use-cases/dialogs/node-types/working-with-the-script-node)** (Write JavaScript code in a dialog task)
