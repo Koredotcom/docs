@@ -1,10 +1,10 @@
 # Contact Center AI Updates
 
-This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x.x releases.
+This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
-## v11.2.0 June 01, 2024
+## v11.2 June 01, 2024
 
-<u>Patch Release</u>
+<u>Minor Release</u>
 
 This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
 
@@ -35,9 +35,10 @@ When a new auto-accepted conversation arrives in the agent's conversation tray, 
 
 User diagnostics systematically assesses and analyzes network connectivity and device permissions to identify issues, optimize service delivery, and enhance user satisfaction. Using real-time monitoring, this tool helps resolve problems efficiently, improving agent performance and ensuring a seamless customer experience.
 
-The User Diagnostics icon is at the top right corner of the Agent Console.
+The User Diagnostics (♡) icon is at the top right corner of the Agent Console.  
+<img src="../images/user-diagnostics-icon.png" alt="User Diagnostics Icon" title="User Diagnostics Icon" style="border: 1px solid gray; zoom:70%;">
 
-**Agent Diagnostics**: Clicking the User Diagnostics icon displays the Agent Diagnostics page. Users can run diagnostics related to their:
+**Agent Diagnostics**: Clicking the User Diagnostics (♡) icon displays the Agent Diagnostics page. Users can run diagnostics related to their:
 
 * Audio Device,
 * Video Device,
@@ -83,7 +84,8 @@ Supervisors can select conversations and choose to Export Conversation Data or E
 
 **Dashboard** > **Interactions**
 
-Agent notes and Disposition notes are now displayed in the search results on the Interactions tab. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#search-interactions)
+Agent notes and Disposition notes are now displayed in the search results on the Interactions tab. 
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#search-interactions)
 
 ## v11.1.1 May 11, 2024
 
