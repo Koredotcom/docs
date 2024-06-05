@@ -25,7 +25,7 @@ Define a JavaScript to run when the event triggers. The script can use all appli
 
 ### Show a Message
 
-When the event triggers, define a simple or advanced message for the user. It supports all messaging formatting features available in the XO Platform, including multiple messages with channel override options. 
+When the event triggers, define a simple or advanced message for the user. It supports all messaging formatting features available in the XO Platform, including multiple messages with channel override options.  
 <img src="../images/show-a-message.gif" alt="show a message" title="show a message" style="border: 1px solid gray; zoom:75%;">
 
 #### Multilingual VA Behavior for Messages
