@@ -45,7 +45,7 @@ Steps to manage notifications:
 
 User diagnostics systematically assesses and analyzes network connectivity and device permissions to identify issues, optimize service delivery, and enhance user satisfaction. Using real-time monitoring, this tool helps resolve problems efficiently, improving agent performance, and ensuring a seamless customer experience.
 
-The User Diagnostics icon is at the top right corner of the Agent Console.
+The User Diagnostics (♡) icon is at the top right corner of the Agent Console.  
 <img src="../images/user-diagnostics-icon.png" alt="User Diagnostics Icon" title="User Diagnostics Icon" style="border: 1px solid gray; zoom:80%;">
 
 When an agent logs in to the Agent Console, the browser asks for microphone and speaker permissions. If the permissions are granted, the user diagnostics icon will appear green. Hovering over the icon displays “Device connections are active”.  
@@ -62,7 +62,7 @@ Click the **Set Permissions** button to configure the device permissions.
 
 ### Agent Diagnostics
 
-Clicking the User Diagnostics icon displays the Agent Diagnostics page. There are three sections on the agent diagnostics page:
+Clicking the User Diagnostics (♡) icon displays the Agent Diagnostics page. There are three sections on the agent diagnostics page:
 
 1. Audio Device,
 2. Video Device,
