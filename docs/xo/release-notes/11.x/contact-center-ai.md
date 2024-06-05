@@ -4,7 +4,7 @@ This document provides information on the feature updates and enhancements intro
 
 ## v11.2 June 01, 2024
 
-<u>Minor Release</u>
+<u>Patch Release</u>
 
 This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
 
