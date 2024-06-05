@@ -16,8 +16,8 @@
       - Generative AI Tools:
         - Overview: app-settings/generative-ai-tools/introduction.md
         - Models Library:
-          - Kore.ai XO GPT Module: app-settings/generative-ai-tools/xo-gpt-module.md
           - LLM Integration: app-settings/generative-ai-tools/llm-integration.md
+          - Kore.ai XO GPT Module: app-settings/generative-ai-tools/xo-gpt-module.md
         - Prompts Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
         - GenAI Features:
           - Co-Pilot Features: app-settings/generative-ai-tools/co-pilot-features.md        
