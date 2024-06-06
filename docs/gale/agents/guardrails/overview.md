@@ -1,6 +1,6 @@
 # Guardrails
 
-Guardrails are safety measures that provide guidelines and limits to ensure that the responses of the Guardrails provide safety measures to ensure that AI-generated responses from large language models (LLMs) are appropriate and align with standards. GALE supports various guardrail scanners that can be deployed to analyze inputs, prompts, and outputs, ensuring responsible AI interactions while generating contextually relevant responses.
+Guardrails are safety measures that ensure AI-generated responses from large language models (LLMs) are appropriate and align with standards. You can deploy various guardrail models in GALE and use them to scan the inputs or prompts and output results. The scanners ensure responsible AI interactions while generating responses.
 
 Supported Scanners:
 
