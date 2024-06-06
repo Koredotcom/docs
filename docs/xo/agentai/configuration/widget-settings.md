@@ -33,8 +33,11 @@ This section lets you set your preferences based on the channels. It has three c
     * **Warm Transfer**: It is defined as a conference call between two agents and applies to both Voice and Chat channels. During this process, Agent-2 has the ability to modify the Summary Feedback, but the Run, Override, Send, Copy, Terminate, Restart, and List View buttons remain disabled until Agent-1 disconnects from the call.
     
         Both the Cold Transfer and the Warm Transfer have the following options to choose from:
+
         * Scroll up to the First Message: The chat history page scrolls up to the top of the page (first message).
+
         * Continue from the Last Message: The chat history page scrolls down to the bottom of the page (last message).
+        
         * Configure Dialog Task: The user has to select one of the dialog tasks associated with a bot from the list. If a dialogue task of fetching a summary of agent 1 and the customer is selected, agent 2 will see it automatically when the conversation is transferred to them.
 
 * **Transcript Tab**: This widget appears only for the **Voice** channel and lets you control the appearance of the Transcript tab in the AgentAssist widget. By default, this widget is enabled.
@@ -54,14 +57,21 @@ This section lets you set your preferences based on the channels. It has three c
 5. Click the **toggle** against **AgentAssist Channel Specific Settings** to enable it (if **Disabled**).
 6. Turn the toggle **on** or **off** against each widget, as required.
 7. Select an option under the **Conversation Transfer** section.
+
 8. Select or clear the **Submit** button under the **Auto Summarization** section.
 
     Under the **Auto Summarization Model** section, select:
+
     * **OOTB Kore Summarization**: For Kore’s default auto summarization.
+
     * **Custom Dialog Task**: To select a dialog task with an entity node. These message nodes call APIs. The Custom Dialog Task field displays a list of dialog tasks or child bots based on bot selection at the app level. At the app level, if you have selected:
+
         * **Universal Bot**: The backend logic detects it and populates its associated Child Bots. You can expand each Child Bot to view and select its dialog task.
+
         * **Child Bot/Normal/Singular Bot**: The Dialog Tasks list displays dialogs linked to the selected bot, and you can select any from the displayed list.
+
 9. Select an option from the list against the **Widget Landing Tab** section.
+
 10. Click **Save** to save your settings.
    <img src="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" alt="agentassist-channel-specific-settings-page" title="agentassist-channel-specific-settings-page" style="border: 1px solid gray; zoom:80%;">
 
