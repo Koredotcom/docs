@@ -1,6 +1,6 @@
 # Create a New API Key for Agent Access
 
-You can generate an API key for an agent and share it with trusted users to enable secure access to your deployed agent from external environments. This ensures that only authorized users can interact with them from external systems.
+You can generate an API key for an agent and share it with trusted users to enable secure access to your deployed agent from external environments. It helps ensure that only authorized users from external systems can interact with the agent.
 
 Steps to create an API key for your agent:
 
