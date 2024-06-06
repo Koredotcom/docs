@@ -4,7 +4,7 @@ This document provides information on the feature updates and enhancements intro
 
 ## v11.2 June 01, 2024
 
-<u>Minor Release</u>
+<u>Patch Release</u>
 
 This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
 
@@ -43,6 +43,8 @@ For better processing and accurate identification of reasons for receiving a “
 **Feedback Messages and Comment Box in the Widget**:
 
 <img src="../images/feedback-settings-widget-4.png" alt="feedback-settings-widget" title="feedback-settings-widget" style="border: 1px solid gray; zoom:80%;">
+
+<hr>
 
 ## v11.1.1 May 11, 2024
 
