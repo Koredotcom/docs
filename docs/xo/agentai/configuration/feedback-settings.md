@@ -68,6 +68,6 @@ The negative feedback messages and additional comment box appear in the Agent AI
 
 The following screenshot represents a list of the feedback messages with one of them being selected (in blue) by the agent:
 
-    <img src="../feedback-settings-images/feedback-message-display-in-widget-7.png" alt="feedback-message-display-in-widget" title="feedback-message-display-in-widget" style="border: 1px solid gray; zoom:80%;">
+<img src="../feedback-settings-images/feedback-message-display-in-widget-7.png" alt="feedback-message-display-in-widget" title="feedback-message-display-in-widget" style="border: 1px solid gray; zoom:80%;">
 
 Note that the additional comment box can only contain 150 characters. The **Submit** button appears only if the feedback messages or the additional comment box appear on the widget.
