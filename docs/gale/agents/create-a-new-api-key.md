@@ -16,5 +16,5 @@ Steps to create an API key for your agent:
     !!! note
         GALE will not show the API key again for security reasons. Keep the API key secure and confidential. Never share it with unauthorized users or expose it in client-side code or browsers.
 
-All generated API keys are listed in the API keys section for easy reference and management.  
+All generated API keys are listed in the API keys section for easy reference and management. 
 <img src="../images/api-keys-list.png" alt="API Keys List" title="API Keys List" style="border: 1px solid gray; zoom:80%;">
