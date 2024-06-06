@@ -22,6 +22,7 @@ This section lets you set your preferences based on the channels. It has three c
 * **Agent Playbook**: This widget provides agents with structured guidance and helps streamline task management. Supervisors can define stages and steps to follow, choose step progression (sequential or random), mark whether the steps are completed manually or automatically, and set adherence notifications. They can leverage this feature to gain valuable insights into agent adherence to specific playbook steps and use this data to enhance agents’ ability to handle interactions and significantly improve customer satisfaction.
 
     If disabled, the Playbook tab doesn’t appear in the widget, but you have the Assist tab and the welcome messages in the Assist tab. However, if Playbook is enabled, then welcome messages become a part of the Playbooks step, and nothing appears in the Assist tab. By default, this widget is disabled, but you can enable it for all three channels.
+* **Auto-Scroll Widget Content**: This widget lets you manage the auto-scroll functionality for the content in the **Assist** tab. Admins can enable/disable it through the **Widget Settings** > **AgentAssist Settings** > **AgentAssist Channel Specific Settings** page, while the Agents can access it in the **AgentAssist widget** > **Settings** tab. Between these two users, the Agents can override the Admin’s selection.
 
 * **Send Button**: This widget lets you control the accessibility of the Send button functionality for AgentAssist responses. By default, this widget is enabled for Voice and Chat channels only.
 
@@ -37,7 +38,7 @@ This section lets you set your preferences based on the channels. It has three c
         * Scroll up to the First Message: The chat history page scrolls up to the top of the page (first message).
 
         * Continue from the Last Message: The chat history page scrolls down to the bottom of the page (last message).
-        
+
         * Configure Dialog Task: The user has to select one of the dialog tasks associated with a bot from the list. If a dialogue task of fetching a summary of agent 1 and the customer is selected, agent 2 will see it automatically when the conversation is transferred to them.
 
 * **Transcript Tab**: This widget appears only for the **Voice** channel and lets you control the appearance of the Transcript tab in the AgentAssist widget. By default, this widget is enabled.
