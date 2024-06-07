@@ -9,12 +9,13 @@ The new Kore.ai XO GPT Models module provides fine-tuned large language models o
 
 By leveraging LLM and Generative AI capabilities, you can create intelligent, human-like conversational experiences for your end-users.
 
-You can find Generative AI and LLM features by going to **App Settings** > **Generative AI Tools**.
+You can find Generative AI and LLM features by going to **Product Switcher** > **Generative AI Tools**.
+You can access the Generative AI and LLM features by going to **Product Switcher** > **Generative AI Tools** or clicking the Generative AI Tools icon ![alt_text](images/llm-icon.png ) to access tools from Automation AI, Search AI, and Agent AI.
 
 
 
 
-![alt_text](images/llm-intro.png )
+![alt_text](images/models-library.png )
 
 
 
@@ -68,18 +69,19 @@ All these features benefit VA developers, NLP developers, and testers as follows
 * Developers can unlock the power of Generative AI with their prompts, enabling them to build creative and custom use cases.
 * Mundane tasks like generating dialog tasks or training utterances are automated to help developers be more productive and focus on other important tasks like enhancing conversation design, creating complex test cases, and more.
 * Testers can ensure that their intent descriptions are meaningful in the right context to generate the right content.
-* The Platform provides suggestions and nudges developers in the right direction for the better design and development of Virtual Assistants. For example, it offers curated use case suggestions while[ creating the VA](../../getting-started/building-a-virtual-assistant.md#create-a-standard-virtual-assistant), including probable user inputs (simulating end-user behavior) in[ Conversation Testing](../../automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md). This way, the VA can simulate the end user’s behavior at every conversation step and respond more realistically by considering error scenarios, digressions, and contextual changes.
+* The Platform provides suggestions and nudges developers in the right direction for the better design and development of Virtual Assistants. For example, it offers curated use case suggestions while[ creating the VA](../getting-started/building-a-virtual-assistant.md#create-a-standard-virtual-assistant), including probable user inputs (simulating end-user behavior) in[ Conversation Testing](../automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md). This way, the VA can simulate the end user’s behavior at every conversation step and respond more realistically by considering error scenarios, digressions, and contextual changes.
 * Allows enterprises and advanced users to bypass the platform’s pre-built integrations. They can establish customized connections to large language models and optimize prompts and requests for their specific use cases.
 
 
 ## Important Considerations
 
-Generative AI features are available for English and non-English NLU and VA languages on the Kore.ai XO Platform. However, custom LLM-specific features are currently limited to English. To learn more about managing languages for VAs, click[ here](../../app-settings/language-management/managing-languages-for-multilingual-vas.md).
+Generative AI features are available for English and non-English NLU and VA languages on the Kore.ai XO Platform. However, custom LLM-specific features are currently limited to English. To learn more about managing languages for VAs, click[ here](../app-settings/language-management/managing-languages-for-multilingual-vas.md).
 
 LLM and Generative AI also require sharing data with third parties: OpenAI (when using the OpenAI integration) or OpenAI and Microsoft (when using the Azure integration).
 
 
 ## Next Steps
-1. [Integrate a pre-built or custom LLM](llm-integration.md). 
-2. (Optional – only for custom LLM model)[ Add Prompts](prompts-and-requests-library.md).
+1. Integrate a [Kore.ai XO GPT or pre-built or custom LLM](llm-integration.md). 
+2. [ Add Prompts](prompts-and-requests-library.md).
 3. Enable[ Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
+4. (Optional) Enable [Data Anonymization](pii-and-sensitive-data.md) and [Guardrails](guardrails.md)
