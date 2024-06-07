@@ -106,7 +106,7 @@ Steps to integrate a Custom LLM:
 
     ![alt_text](images/llm-integration(17).png  )
 
-9. The next step is to add[ Prompts](prompts-and-requests-library.md).
+9. The next step is to add[ Prompts](prompts-library.md).
 
 ## Kore.ai XO GPT Integration
 
