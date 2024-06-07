@@ -1,4 +1,4 @@
-# Introduction to LLM and Generative AI
+# Introduction to Generative AI Tools
 
 The Kore.ai XO Platform helps enhance your bot development process and enrich end-user conversational experiences by integrating pre-built (OpenAI, Azure OpenAI, Anthropic) or custom models or Kore.ai XO GPT Module in the backend.
 
@@ -10,13 +10,12 @@ The new Kore.ai XO GPT Models module provides fine-tuned large language models o
 By leveraging LLM and Generative AI capabilities, you can create intelligent, human-like conversational experiences for your end-users.
 
 
-You can access the Generative AI and LLM features by going to **Product Switcher** > **Generative AI Tools** or clicking the Generative AI Tools icon to access tools from Automation AI, Search AI, and Agent AI.
+
+To configure Generative AI and LLM, go to **Product Switcher** > **Generative AI Tools** or click the Generative AI Tools icon in the left-side menu.
 
 
 
-
-![alt_text](images/models-library.png )
-<img src="../images/models-library.png" alt="Models-Library" title="Models-Library">
+<img src="../images/models-library.png" alt="Models-Library" title="Models-Library" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -25,8 +24,8 @@ You can access the Generative AI and LLM features by going to **Product Switcher
 The Integration of Generative AI and LLM enables the following features:
 
 
-
-* Prompts & Requests Library: Complete flexibility to create fully customized prompts optimized for particular use cases using pre-built or custom models.
+* Model Library: Connect to Generative AI models of your choice using the out-of-box integrations (pre-built LLM integration) or custom integrations or Kore.ai XO GPT Module.
+* Prompts Library: Complete flexibility to create fully customized prompts optimized for particular use cases using pre-built or custom models.
 * Co-Pilot features:
     * **Automatic Dialog Generation**: This feature helps build production-ready dialog tasks automatically by briefly describing the task. A preview of the generated dialog is available and lets you modify the intent description and create multiple iterations of the dialog.
     * **Conversation Test Cases Suggestion**: The Platform suggests simulated user inputs covering various scenarios from an end-user perspective at every test step. You can use these suggestions to create test suites.
@@ -37,11 +36,6 @@ The Integration of Generative AI and LLM enables the following features:
     * **NLP Batch Test Cases Suggestion**: The Platform generates NLP test cases for every intent, including entity checks. You only need to create test suites in the Builder using the generated testing utterances.
     * **Training Utterance Suggestions**: Generate high-quality training data quickly and easily with our platform’s suggested utterances for each intent. Review and add the suggestions as needed to create a powerful training set for your bot.    
     * **Use Case Suggestions**: Uses the Open AI LLM model to generate use cases during the VA (Bot) creation journey.
-
-
-
-  
-
 
     
 
@@ -60,6 +54,9 @@ The Integration of Generative AI and LLM enables the following features:
 
     * **Few-shot ML Model**: Uses the Kore Ai’s hosted embeddings for intent identification during run time based on semantic similarity.
 
+* Safeguards
+    * **Data Anonymization**: Protect Personal Identifiable Information (PII) and Sensitive Data shared to LLMs in GenAI Features.
+    * **Guardrails**: Ensure the safety and appropriateness of LLM responses using the Guardrails.
 
 ## Benefits
 
@@ -82,7 +79,7 @@ LLM and Generative AI also require sharing data with third parties: OpenAI (when
 
 
 ## Next Steps
-1. Integrate a [Kore.ai XO GPT or pre-built or custom LLM](llm-integration.md). 
-2. [ Add Prompts](prompts-and-requests-library.md).
+1. Integrate a [Kore.ai XO GPT or pre-built or custom LLM](models-library.md). 
+2. [ Add Prompts](prompts-library.md).
 3. Enable[ Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
-4. (Optional) Enable [Data Anonymization](pii-and-sensitive-data.md) and [Guardrails](guardrails.md)
+4. (Optional) Enable [Data Anonymization](data-anonymization.md) and [Guardrails](guardrails.md)

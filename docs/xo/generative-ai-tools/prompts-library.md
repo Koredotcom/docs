@@ -18,7 +18,7 @@ The post processor for prompts allows designers to align LLM responses perfectly
 
 ## Pre-requisites
 
-Before proceeding, ensure that you have successfully Integrated a Pre-built or Custom LLM. For more information, see[ LLM Integration](llm-integration.md).
+Before proceeding, ensure that you have successfully Integrated a Pre-built or Custom LLM. For more information, see[ LLM Integration](models-library.md).
 
 
 ## How to add Prompts and Requests
