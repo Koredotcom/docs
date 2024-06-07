@@ -10,8 +10,8 @@ The conversation tray divides conversations into different statuses, which are d
 * **Overdue**: These are conversations where the agent has not responded to the customer within the system-specified time.
 * **Ongoing**: These are conversations where the last sent or received message was within the system-specified time.
 * **Idle**: These are conversations where the last message was sent or received more than the system-specified time ago.
-* **Expired**: These are conversations where the user left the conversation, or the conversation was auto-closed after the system-specified time of inactivity. These conversations are also known as dropped-off conversations.  
-<img src="../images/conversation-status.png" alt="Conversation Status" title="Conversation Status" style="border: 1px solid gray; zoom:100%;">
+* **After Call Work (ACW)**: ACW refers to the post-call tasks or activities that agents perform immediately after ending a conversation with a customer.  
+<img src="../images/conversation-status.png" alt="Conversation Status" title="Conversation Status" style="border: 1px solid gray; zoom:80%;">
 
 # Conversation Information
 
