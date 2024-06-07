@@ -498,14 +498,14 @@ nav:
       - Generative AI Tools:
         - Overview: generative-ai-tools/introduction.md
         - Models Library:
-          - LLM Integration: generative-ai-tools/llm-integration.md
+          - LLM Integration: generative-ai-tools/models-library.md
           - Kore.ai XO GPT Module: generative-ai-tools/xo-gpt-module.md
-        - Prompts Library: generative-ai-tools/prompts-and-requests-library.md
+        - Prompts Library: generative-ai-tools/prompts-library.md
         - GenAI Features:
           - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
           - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
         - Safeguards:
-          - Data Anonymization: generative-ai-tools/pii-and-sensitive-data.md
+          - Data Anonymization: generative-ai-tools/data-anonymization.md
           - Guardrails: generative-ai-tools/guardrails.md               
       - Dev Tools:
         - App Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
