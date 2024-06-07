@@ -3,7 +3,7 @@
 The conversation tray helps agents track their workload by displaying all conversations that are currently assigned to them.  
 <img src="../images/conversation-tray.png" alt="Conversation Tray" title="Conversation Tray" style="border: 1px solid gray; zoom:80%;">
 
-# Conversation Status
+## Conversation Status
 
 The conversation tray divides conversations into different statuses, which are displayed at the top. Conversations can have any of the following four statuses:
 
@@ -13,7 +13,7 @@ The conversation tray divides conversations into different statuses, which are d
 * **After Call Work (ACW)**: ACW refers to the post-call tasks or activities that agents perform immediately after ending a conversation with a customer.  
 <img src="../images/conversation-status.png" alt="Conversation Status" title="Conversation Status" style="border: 1px solid gray; zoom:80%;">
 
-# Conversation Information
+## Conversation Information
 
 This section displays data about the conversations you are handling.
 
@@ -27,7 +27,7 @@ Each entry in this tray includes the following information:
 * Conversation status icon.  
 <img src="../images/conversation.png" alt="Conversation" title="Conversation" style="border: 1px solid gray; zoom:80%;">
 
-# Manual Call using the Dialer
+## Manual Call using the Dialer
 
 You can use the Dialer to call external contacts, as follows:
 
@@ -41,7 +41,7 @@ You can use the Dialer to call external contacts, as follows:
 4. You can search for a specific name and click the **Call** button to initiate an Outbound Call with the selected contact.  
 <img src="../images/contacts.png" alt="Contacts" title="Contacts" style="border: 1px solid gray; zoom:80%;">
 
-# Call History
+## Call History
 
 To view the Outbound Call History, follow these steps:
 
