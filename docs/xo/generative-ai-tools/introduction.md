@@ -9,13 +9,14 @@ The new Kore.ai XO GPT Models module provides fine-tuned large language models o
 
 By leveraging LLM and Generative AI capabilities, you can create intelligent, human-like conversational experiences for your end-users.
 
-You can find Generative AI and LLM features by going to **Product Switcher** > **Generative AI Tools**.
-You can access the Generative AI and LLM features by going to **Product Switcher** > **Generative AI Tools** or clicking the Generative AI Tools icon ![alt_text](images/llm-icon.png ) to access tools from Automation AI, Search AI, and Agent AI.
+
+You can access the Generative AI and LLM features by going to **Product Switcher** > **Generative AI Tools** or clicking the Generative AI Tools icon to access tools from Automation AI, Search AI, and Agent AI.
 
 
 
 
 ![alt_text](images/models-library.png )
+<img src="../images/models-library.png" alt="Models-Library" title="Models-Library">
 
 
 
