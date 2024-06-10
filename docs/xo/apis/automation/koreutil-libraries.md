@@ -580,12 +580,9 @@ The `koreUtil.getFormDefinition` allows you to get the form definition, which co
 
 **Usage Example:**
 
-Suppose you want to change the standard response of a field of EMail type in a digital form based on the bot language. You have added English, Spanish, German, and Japanese as your bot languages.
-
 ```
 let formDef = koreUtil.getFormDefinition();
 ```
-
 
 **Output:**
 
