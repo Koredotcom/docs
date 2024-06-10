@@ -73,10 +73,91 @@ To create forms, follow the steps below:
 
     Secure Form feature ensures data security at form level. You can achieve securing data at component level too. [Read here](../configure-digital-forms/#form-editor){:target="_blank"} to know more.
 
+7. **Pre-Processor script**—The Pre-Processor script in the form settings can be used by the developer to manipulate all the data required for the form that cannot be customized from the UI design view.
 
-7. Click **Save & Proceed**.
+    For example, in the case of a multilingual bot, the user can customize the form UI  & standard responses of the components in the digital form so that they appear based on the selected bot language. 
+
+    Moreover, you can provide dynamic variables to replace the static content in the pre-processor script for use in the form using environment, content, and context variables.
+
+    The platform processes and resolves the pre-processor script as the first step in the form node execution. The same can be seen in the debug log. As part of this, the updated definition from the pre-processor script is passed to webUI to render the form.
+
+    **Example:**
+
+    Suppose you want to change the standard response of a field of URL type in a digital form based on the bot language. You have added English, Spanish, German, and Japanese as your bot languages.
+
+    ```
+    let formDef = koreUtil.getFormDefinition();
+    if(context.currentLanguage === 'en'){
+        formDef.formMsgMeta.URL_INVALID_FORMAT = 'Invalid URL';
+    }
+    elseif(context.currentLanguage === 'de'){
+        formDef.formMsgMeta.URL_INVALID_FORMAT = 'ungültige URL';
+    }
+    elseif(context.currentLanguage === 'es'){
+        formDef.formMsgMeta.URL_INVALID_FORMAT = 'URL invalida';
+    }
+    else{
+        formDef.formMsgMeta.URL_INVALID_FORMAT = '無効なURL';
+    }
+    ```
+
+    <img src="../../images/xop-8553-pre-processor-script.png" alt="Digital form - Pre processor script" title="Digital form - Pre processor script" style="border:1px solid gray; zoom:60%;">
+
+    !!! Note
+
+        * This field will be available **only while updating** the form and not at the creation time.
+        * Defining a pre-processor script is **not mandatory**. The default standard responses will always be present.
+        * This feature is available **only for Automation AI**.
+
+    Please click here to learn more about the digital form’s pre-processor script.
+
+8. Click **Save & Proceed**.
 
     <img src="../../images/save-digital-form.png" alt="save digital form" title="save digital form" style="border: 1px solid gray; zoom:75%;">
+
+
+### Configuration setup using Pre-Processor script
+
+Earlier, our digital forms can be created only in one language and hence multiple forms need to be created to provide the flexibility to render the forms in different languages for multi lingual bot. Also the  messages and errors were  available only in English and cannot be customized. This posed a limitation as it didn't support all bot languages. Additionally, users lacked the ability to customize the forms using the dynamic data from context.
+
+The pre-processor script has been introduced to counter the above limitations. You can provide values to the relevant keys based on the bot language or any other condition that requires customization of aspects like field labels or standard responses.
+
+To get the form definition that is provided as a response in the `koreUtil.getFormDefinition` and keys that need to be customized, refer to the digital form's **JSON view**. Navigate to **Automation AI > Virtual Assistant > Digital Skills > Digital forms** and open the form that you wish to configure. Click **Test** on the Form Design view, then select the **JSON** tab.
+
+<img src="../../images/xop-8553-json-preview.png" alt="Digital Form Preview - JSON" title="Digital Form Preview - JSON" style="border:1px solid gray; zoom:60%;">
+
+The pre-processor script allows you to:
+
+* Make Language specific customizations
+* Populate Dynamic data from external sources (Eg: data file or API)
+* Populate Dynamic data using variables
+* Pre-fill the form with static or dynamic data (default value using value or context variable)
+
+!!! Important
+
+    Remember that you must create a form definition object using `koreUtil.getFormDefinition` before adding any code to customize any field’s property or standard response. This object consists of the form meta, form components & form messages. Make sure that this is the first line in your javascript code, with the syntax:
+
+    ```
+    let formDef = koreUtil.getFormDefinition();
+    ```
+
+The below sections contain the keys that you may need to manipulate:
+
+* **Components**: for field and form level customizations like Form Header, Description, Field Names, Descriptions, Default Text, Validation rules etc.
+* **formMsgMeta**: for customizing Standard Messages and Standard Error Responses
+
+!!! Tip
+
+    The entire JSON is usually large, and it may be a challenge to find out the keys that need to be manipulated. You may consider copying the entire JSON, pasting it in any JSON Viewer application wherein you can collapse and expand the sections. You can expand only the **components** and **formMsgMeta** sections for convenience.
+
+    <img src="../../images/xop-8553-json-sections-collapsed.png" alt="Components and Metadata sections in the JSON viewer" title="Components and Metadata sections in the JSON viewer" style="border:1px solid gray; zoom:60%;">
+
+#### Components
+
+The **Components** section is a container for all the fields on the form and the keys that can be manipulated in the pre-processor script for customization.
+
+Upon expanding the **components** section, which appears as an array in the JSON viewer, you see an indexed sub-sections that indicates the number of fields in the form. For example, the components section in the below screenshot shows that there are 12 fields in the form.
+
 
 ### Add Components
 
