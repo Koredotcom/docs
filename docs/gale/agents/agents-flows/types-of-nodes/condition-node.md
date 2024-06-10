@@ -8,6 +8,11 @@ The node can handle three types of conditions:
 * **Else**: Sets the node connection when no condition is met, allowing you to configure the next node to connect to.
 * **Else If**: Allows you to configure another set of criteria (Node, Context, or Value) to be met when the initial If condition is not satisfied.
 
+!!! note
+    
+    A condition can be called a maximum of 10 times in an agent flow. Exceeding this limit will result in an error.
+
+
 ## Add and Configure a Condition Node
 
 Setting up a Condition node in an Agent Flow involves adding the node at the appropriate location in the flow and configuring various node properties, as explained below.

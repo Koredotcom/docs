@@ -41,5 +41,5 @@ You can initiate a fresh agent flow and specify the inputs required to initializ
 
 !!! note
 
-    You can create multiple output variables based on your use case.
+    You can create multiple input as well as output variables based on your use case.
 
