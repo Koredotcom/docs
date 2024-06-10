@@ -1,4 +1,4 @@
-# Introduction to LLM and Generative AI
+# Introduction to Generative AI Tools
 
 The Kore.ai XO Platform helps enhance your bot development process and enrich end-user conversational experiences by integrating pre-built (OpenAI, Azure OpenAI, Anthropic) or custom models or Kore.ai XO GPT Module in the backend.
 
@@ -9,12 +9,13 @@ The new Kore.ai XO GPT Models module provides fine-tuned large language models o
 
 By leveraging LLM and Generative AI capabilities, you can create intelligent, human-like conversational experiences for your end-users.
 
-You can find Generative AI and LLM features by going to **App Settings** > **Generative AI Tools**.
+
+
+To configure Generative AI and LLM, go to **Product Switcher** > **Generative AI Tools** or click the Generative AI Tools icon in the left-side menu.
 
 
 
-
-![alt_text](images/llm-intro.png )
+<img src="../images/models-library.png" alt="Models-Library" title="Models-Library" style="border: 1px solid gray; zoom:70%;">
 
 
 
@@ -23,8 +24,8 @@ You can find Generative AI and LLM features by going to **App Settings** > **Gen
 The Integration of Generative AI and LLM enables the following features:
 
 
-
-* Prompts & Requests Library: Complete flexibility to create fully customized prompts optimized for particular use cases using pre-built or custom models.
+* Model Library: Connect to Generative AI models of your choice using the out-of-box integrations (pre-built LLM integration) or custom integrations or Kore.ai XO GPT Module.
+* Prompts Library: Complete flexibility to create fully customized prompts optimized for particular use cases using pre-built or custom models.
 * Co-Pilot features:
     * **Automatic Dialog Generation**: This feature helps build production-ready dialog tasks automatically by briefly describing the task. A preview of the generated dialog is available and lets you modify the intent description and create multiple iterations of the dialog.
     * **Conversation Test Cases Suggestion**: The Platform suggests simulated user inputs covering various scenarios from an end-user perspective at every test step. You can use these suggestions to create test suites.
@@ -35,11 +36,6 @@ The Integration of Generative AI and LLM enables the following features:
     * **NLP Batch Test Cases Suggestion**: The Platform generates NLP test cases for every intent, including entity checks. You only need to create test suites in the Builder using the generated testing utterances.
     * **Training Utterance Suggestions**: Generate high-quality training data quickly and easily with our platform’s suggested utterances for each intent. Review and add the suggestions as needed to create a powerful training set for your bot.    
     * **Use Case Suggestions**: Uses the Open AI LLM model to generate use cases during the VA (Bot) creation journey.
-
-
-
-  
-
 
     
 
@@ -58,6 +54,9 @@ The Integration of Generative AI and LLM enables the following features:
 
     * **Few-shot ML Model**: Uses the Kore Ai’s hosted embeddings for intent identification during run time based on semantic similarity.
 
+* Safeguards
+    * **Data Anonymization**: Protect Personal Identifiable Information (PII) and Sensitive Data shared to LLMs in GenAI Features.
+    * **Guardrails**: Ensure the safety and appropriateness of LLM responses using the Guardrails.
 
 ## Benefits
 
@@ -68,18 +67,19 @@ All these features benefit VA developers, NLP developers, and testers as follows
 * Developers can unlock the power of Generative AI with their prompts, enabling them to build creative and custom use cases.
 * Mundane tasks like generating dialog tasks or training utterances are automated to help developers be more productive and focus on other important tasks like enhancing conversation design, creating complex test cases, and more.
 * Testers can ensure that their intent descriptions are meaningful in the right context to generate the right content.
-* The Platform provides suggestions and nudges developers in the right direction for the better design and development of Virtual Assistants. For example, it offers curated use case suggestions while[ creating the VA](../../getting-started/building-a-virtual-assistant.md#create-a-standard-virtual-assistant), including probable user inputs (simulating end-user behavior) in[ Conversation Testing](../../automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md). This way, the VA can simulate the end user’s behavior at every conversation step and respond more realistically by considering error scenarios, digressions, and contextual changes.
+* The Platform provides suggestions and nudges developers in the right direction for the better design and development of Virtual Assistants. For example, it offers curated use case suggestions while[ creating the VA](../getting-started/building-a-virtual-assistant.md#create-a-standard-virtual-assistant), including probable user inputs (simulating end-user behavior) in[ Conversation Testing](../automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md). This way, the VA can simulate the end user’s behavior at every conversation step and respond more realistically by considering error scenarios, digressions, and contextual changes.
 * Allows enterprises and advanced users to bypass the platform’s pre-built integrations. They can establish customized connections to large language models and optimize prompts and requests for their specific use cases.
 
 
 ## Important Considerations
 
-Generative AI features are available for English and non-English NLU and VA languages on the Kore.ai XO Platform. However, custom LLM-specific features are currently limited to English. To learn more about managing languages for VAs, click[ here](../../app-settings/language-management/managing-languages-for-multilingual-vas.md).
+Generative AI features are available for English and non-English NLU and VA languages on the Kore.ai XO Platform. However, custom LLM-specific features are currently limited to English. To learn more about managing languages for VAs, click[ here](../app-settings/language-management/managing-languages-for-multilingual-vas.md).
 
 LLM and Generative AI also require sharing data with third parties: OpenAI (when using the OpenAI integration) or OpenAI and Microsoft (when using the Azure integration).
 
 
 ## Next Steps
-1. [Integrate a pre-built or custom LLM](llm-integration.md). 
-2. (Optional – only for custom LLM model)[ Add Prompts](prompts-and-requests-library.md).
+1. Integrate a [Kore.ai XO GPT or pre-built or custom LLM](models-library.md). 
+2. [ Add Prompts](prompts-library.md).
 3. Enable[ Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
+4. (Optional) Enable [Data Anonymization](data-anonymization.md) and [Guardrails](guardrails.md)

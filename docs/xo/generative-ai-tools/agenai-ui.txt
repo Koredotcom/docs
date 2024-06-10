@@ -1,0 +1,33 @@
+
+
+
+      - Generative AI Tools:
+        - Introduction: app-settings/generative-ai-tools/introduction.md
+        - LLM Integration: app-settings/generative-ai-tools/llm-integration.md
+        - Kore.ai XO GPT Module: app-settings/generative-ai-tools/xo-gpt-module.md
+        - Prompts & Requests Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
+        - Co-Pilot Features: app-settings/generative-ai-tools/co-pilot-features.md        
+        - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md 
+        - PII and Sensitive Data: app-settings/generative-ai-tools/pii-and-sensitive-data.md
+        - Guardrails: app-settings/generative-ai-tools/guardrails.md    
+
+
+
+      - Generative AI Tools:
+        - Overview: app-settings/generative-ai-tools/introduction.md
+        - Models Library:
+          - LLM Integration: app-settings/generative-ai-tools/llm-integration.md
+          - Kore.ai XO GPT Module: app-settings/generative-ai-tools/xo-gpt-module.md
+        - Prompts Library: app-settings/generative-ai-tools/prompts-and-requests-library.md
+        - GenAI Features:
+          - Co-Pilot Features: app-settings/generative-ai-tools/co-pilot-features.md        
+          - Dynamic Conversations Features: app-settings/generative-ai-tools/dynamic-conversations-features.md
+        - Safeguards:
+          - Data Anonymization: app-settings/generative-ai-tools/pii-and-sensitive-data.md
+          - Guardrails: app-settings/generative-ai-tools/guardrails.md
+
+        
+        
+       
+         
+         

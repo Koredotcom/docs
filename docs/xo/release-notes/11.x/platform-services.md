@@ -1,6 +1,46 @@
 # Platform Services Updates
 
-This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.1.x releases.
+This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
+
+## v11.2 June 01, 2024
+
+<u>Patch Release</u>  
+
+Key features and enhancements included in this release are summarized below.
+
+### LLM & Generative AI Framework
+
+#### Improved Discoverability of Generative AI Tools
+
+The platform has made it easier to discover and manage the Generative AI capabilities across products. The new Generative AI menu will be available in the primary navigation bar of Automation AI, Search AI, and Agent AI products. 
+
+Key updates include:
+
+* Added a new top-level "Generative AI" menu within the Product Switcher, Automation AI, Search AI, and Agent AI areas. This provides quick access to Generative AI settings and tools. 
+  <img src="../images/genai-tools-reorganized.png" alt="Discover GenAI Tools" title="Discover GenAI Tools" style="border: 1px solid gray; zoom:100%;">
+* Reorganized the Generative AI tools into four clear sub-categories:
+    * Models Library: Access the Models Library (LLM integrations).
+    * Prompts Library: Access the Prompts Library (default prompts and custom prompts).
+    * GenAI Features: Enable and configure Co-pilot and Dynamic Conversations capabilities. The available options will be automatically filtered based on which product area the users access this from.
+    * Safeguards: Manage data privacy with assistant-level and LLM-level anonymization of PII & sensitive data. Set up Guardrails to enforce appropriate AI outputs.
+* Smart filtering in the Features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent). The users can easily add/remove this filter as needed.  
+ <img src="../images/genai-product-level-filters.png" alt="Filter by Product" title="Filter by Product" style="border: 1px solid gray; zoom:100%;"> 
+
+#### Introducing Custom Prompts for Pre-built Models
+
+The platform now supports custom prompts for the prebuilt LLM integrations. This will be in addition to the current support of default prompts. This new capability delivers a consistent prompt engineering experience across custom and pre-built models, making crafting the prompts for various features easy.
+<img src="../images/custom-prompt-for-prebuilt-models.png" alt="Custom Prompts" title="Custom Prompts" style="border: 1px solid gray; zoom:100%;"> 
+
+[Learn more :octicons-arrow-right-24:](../../app-settings/generative-ai-tools/prompts-and-requests-library.md)
+
+#### Answers Module Details in the Debug Logs
+
+The Debug Logs presented while testing the app now include detailed logs for the responses from the Search AI product. This includes information on the various stages, response times, and LLM outputs. This enhancement streamlines testing, improves debugging and provides deeper insights into the Search AI performance.  
+<img src="../images/dubug-logs-in-answers.png" alt="Debug Logs" title="Debug Logs" style="border: 1px solid gray; zoom:100%;"> 
+
+[Learn more :octicons-arrow-right-24:](../../searchai/testing-and-debugging-answers.md) 
+
+<hr>
 
 ## v11.1.1 May 11, 2024
 

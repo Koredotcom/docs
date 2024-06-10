@@ -1,6 +1,22 @@
 # Search AI Updates
 
-This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.1.x releases.
+This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.x releases.
+
+## v11.2 June 01, 2024
+
+<u>Patch Release</u>
+
+Key features and enhancements included in this release are summarized below.
+
+###  Support for Hybrid Chunk Retrieval Strategy
+
+Search AI now supports the Hybrid Chunk Retrieval strategy, which leverages both keyword-based and semantic search techniques to deliver more precise and contextually appropriate answers. This improvement ensures that users receive high-quality responses tailored to their queries, enhancing the overall search experience.
+
+###  Chunk Order Configuration 
+
+Search AI now allows adding relevant chunks in your preferred order within the prompt. The order of the chunks in the prompt can affect the performance depending upon the LLM limitations of context retention, prompt lengths, and attention mechanism. By allowing users to configure the chunk order, SearchAI ensures that relevant data is prioritized, improving the generated responses' quality and reliability.
+
+<hr>
 
 ## v11.1.1 May 11, 2024
 
