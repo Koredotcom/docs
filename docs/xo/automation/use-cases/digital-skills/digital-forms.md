@@ -162,7 +162,7 @@ Upon expanding the **components** section, which appears as an array in the JSON
 
 You can see any field’s keys and their values by expanding the sub-section, and then expanding **metaData**. Usually the index of sub-sections represents the sequence of the fields on the form.
 
-<img src="../../images/xop-8553-expanded-sub-section" alt="JSON - Component sub section expanded" title="JSON - Component sub section expanded" style="border:1px solid gray; zoom:70%;">
+<img src="../../images/xop-8553-expanded-sub-section.png" alt="JSON - Component sub section expanded" title="JSON - Component sub section expanded" style="border:1px solid gray; zoom:70%;">
 
 You can customize the properties of a field by referencing it using its index number within the array using the below syntax:
 
