@@ -51,6 +51,7 @@ GALE supports open-source models and provide them as a service.
 
 9. In the **Review** step, verify all the details that you provided earlier. Select the **I accept all the terms and conditions** check box.  
 <img src="../images/deploy-model-review-section.png" alt="Deploy Model Review Section" title="Deploy Model Review Section" style="border: 1px solid gray; zoom:80%;">
+
     !!! note
 
         If you want to make any modifications, you can go to the previous step by clicking the **Back** button or a particular step indicator on the left panel.

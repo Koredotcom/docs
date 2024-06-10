@@ -10,7 +10,7 @@ The node can handle three types of conditions:
 
 !!! note
     
-    A condition can be called a maximum of 10 times in an agent flow. Exceeding this limit will result in an error.
+    Due to security reasons, a condition can be called a maximum of 10 times in an agent flow. Exceeding this limit will result in an error.
 
 
 ## Add and Configure a Condition Node
