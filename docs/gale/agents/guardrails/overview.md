@@ -40,6 +40,7 @@ Supported Scanners:
 * Helps restore original information in the output when needed.
 
 **Relevance Scanner** 
+
 * Measures the similarity between the input prompt and the model's output.
 * Provides a confidence score indicating the contextual relevance of the response.
 * Ensures LLM outputs remain aligned with the given input prompt.
