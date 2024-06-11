@@ -24,7 +24,7 @@ The following are some of the key use cases:
   
 The koreUtil library has been extended with the "getFormDefinition" function to retrieve and modify the form definition.
 
-This feature also helps address the current limitation of system messages available only in English. The "formMsgMeta" section of the form data contains the full list of system messages and errors, which can be modified using the Preprocessor.
+This feature also helps address the current limitation of system messages available only in English. The "formMsgMeta" section of the form data contains the full list of system messages and errors, which can be modified using the Preprocessor. [Learn more :octicons-arrow-right-24:](../../../automation/use-cases/digital-skills/digital-forms/#configuration-setup-using-pre-processor-script)
 
 ### SDK Configuration
 
