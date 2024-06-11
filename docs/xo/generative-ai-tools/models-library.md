@@ -16,7 +16,7 @@ Steps to configure a pre-built LLM:
 
 
 
-1. Go to **App Settings** > **Generative AI Tools** > **LLM Integrations**.
+1. Go to **Generative AI Tools** > **Models Library**.
 
 
     ![alt_text](images/llm-intro.png  )
@@ -38,10 +38,10 @@ Steps to configure a pre-built LLM:
         2. On the **Authorization** tab, enter the **API Key**.
         3. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
 
-3. The configured model is listed in the LLM Integrations section. The status changed to _X/Y_ models configured, where _X_ is the number of the model(s) configured, and _Y_ is the number of model(s) supported. 
+3. The configured model is listed in the Models Library section. The status changed to _X/Y_ models configured, where _X_ is the number of the model(s) configured, and _Y_ is the number of model(s) supported. 
     ![alt_text](images/llm-integration(10).png  )
 
-4. If you want to configure another model, click **+New Integration** and select the model. 
+4. If you want to configure another model, click **+ New Integration** and select the model. 
 
     ![alt_text](images/llm-integration(11).png  )
 
@@ -65,13 +65,13 @@ Steps to integrate a Custom LLM:
 
 
 
-1. Go to **App Settings** > **Generative AI Tools** > **LLM Integrations**.
+1. Go to **Generative AI Tools** > **Models Library**.
 2. Click **Custom LLM**. 
 
 
     ![alt_text](images/llm-intro.png  )
 
-    If you have already configured a model, click **New Integration** > **Custom Integration**. 
+    If you have already configured a model, click **+ New Integration** > **Custom Integration**. 
 
 
 
@@ -120,12 +120,12 @@ The new Kore.ai XO GPT Models module provides fine-tuned large language models o
 ### Enable Kore.ai XO GPT Integration
 Steps to enable Kore.ai XO GPT Models.
 
-1. Go to **App Settings** > **Generative AI Tools** > **LLM Integrations**..
+1. Go to **Generative AI Tools** > **Models Library**..
 
 2. Click **Enable Now** for Kore.ai XO GPT.
 ![alt_text](images/llm-intro.png  )
 
-    If you have already configured a model, click **+New Integration > Kore.ai XO GPT**.
+    If you have already configured a model, click **+ New Integration > Kore.ai XO GPT**.
 
     ![alt_text](images/xogpt2.png  )
  
@@ -164,7 +164,7 @@ Steps to reset an integration:
 
 
 
-1. Go to **App Settings** > **Generative AI Tools** > **LLM Integrations**.
+1. Go to **Generative AI Tools** > **Models Library**.
 2. In the **LLM Integration** section, click three dots (more icons) and then click the **Reset Configuration** for the integration you want to reset. 
 
 
@@ -186,7 +186,7 @@ Steps to delete an integration:
 
 
 
-1. Go to **App Settings** > **Generative AI Tools** > **LLM Integrations**.
+1. Go to **Generative AI Tools** > **Models Library**.
 2. In the **LLM Integration** section, click three dots (more icons) and then click **Delete** for the integration you want to delete. 
 
     ![alt_text](images/llm-integration(13).png  )
@@ -207,7 +207,7 @@ Steps to delete an integration:
 ### Reset Configured Kore.ai XO GPT Integration
 Steps to reset an integration:
 
-1. Go to **App Settings** > **Generative AI Tools** > **LLM Integrations**..
+1. Go to **Generative AI Tools** > **Models Library**.
 2. In the **LLM Integration section**, click three dots (more icons) for Kore.ai XO GPT and then click the **Reset Configuration** for the integration you want to reset.
 ![alt_text](images/xogpt5.png  )
 
