@@ -13,11 +13,17 @@ Steps to test the Guardrails or Scanners:
 3. Select Test. Under Scores and Results, review the following results:  
 <img src="../images/guardrails-test-results.png" alt="Guardrails Test Results" title="Guardrails Test Results" style="border: 1px solid gray; zoom:80%;"> 
 
-    * **Validity**: Indicates whether the prompt is valid.
+    * **Validity**: Indicates whether the prompt is valid based on the scanner's criteria. (For example, if Toxicity is not found in the prompt, the prompt is valid, and the Validity is set to True.)
 
-    * **Risk Score**:  Indicates the risk score of the prompt based on the value configured in the "End the flow if the risk score is above" field in the scanner settings.
+    * **Risk Score**: Indicates the prompt's risk level, calculated using the scanner's threshold and score.
 
-    * **Duration**: Displays the time taken by the Scanner to execute the prompt.
+    * **Duration**: Displays the time taken by the scanner to process the prompt.
 
-4. Based on the results, you can adjust the Scanner's settings and test them again if necessary
+    !!! note
+
+        * The Risk Score is calculated by the formula: (Threshold - Scanner Score) / Threshold. 
+
+        * For the Relevance Scanner, if the similarity between the prompt and generated answer is below the user-defined threshold, the Risk Score is 1; otherwise, it's 0.
+
+4. Based on the results, you can adjust the Scanner's settings and test them again if required.
 
