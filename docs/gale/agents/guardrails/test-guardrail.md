@@ -21,7 +21,7 @@ Steps to test the Guardrails or Scanners:
 
     !!! note
 
-        * The **Risk Score** is calculated by the formula: (Threshold - Scanner Score) / Threshold. 
+        * The **Risk Score** is calculated using the following formula: (Threshold - Scanner Score) / Threshold. 
 
         * For the **Relevance Scanner**, if the similarity between the prompt and generated answer is below the user-defined threshold, the Risk Score is 1; otherwise, it's 0.
 
