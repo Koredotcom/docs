@@ -28,7 +28,7 @@ For example, you can blacklist the topics like politics, violence, religion, etc
 
 !!! note
 
-    We recommend adding between one and ten topics to the list for optimal.
+    We recommend adding between one and ten topics to the list for optimal performance.
 
 
 ### Detect Prompt Injections
