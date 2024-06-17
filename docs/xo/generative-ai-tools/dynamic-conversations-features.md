@@ -109,7 +109,7 @@ Follow these steps:
 
 1. Go to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**.
 2. Hover over the feature to view the **Setting** (gear) icon.
-<img src="./images/image4-3-4.png" alt="Edit Settings" title="Edit Settings" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/image4-3-4.png" alt="Edit Settings" title="Edit Settings" style="border: 1px solid gray; zoom:70%;"> 
 
 
  

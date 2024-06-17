@@ -20,6 +20,16 @@ This guardrail analyzes and prevents the dissemination of potentially harmful co
 
 For example, you can detect scenarios where the LLM has generated toxic content that your customers may find inappropriate. 
 
+### Blacklist Topics
+
+Ensure the conversations are within acceptable boundaries and avoid any conversations by adding a list of sensitive or controversial topics. Define the topics to be blacklisted in the guardrails and ensure the LLM is not responding to requests related to that topic.  
+
+For example, you can blacklist the topics like politics, violence, religion, etc.
+
+!!! note
+
+    If the Blacklist Topics guardrail is enabled, ensure that at least one topic is added to the list.
+
 
 ### Detect Prompt Injections
 
@@ -48,68 +58,51 @@ The Guardrails are currently available for the following features: **GenAI Node*
 (✅ Supported | ❌ Not supported)
 
 
+
+
 <table>
   <tr>
-   <td>Guardrail
-   </td>
-   <td colspan="2" >Restrict Toxicity
-   </td>
-   <td colspan="2" >Detect Prompt Injections
-   </td>
-   <td colspan="2" >Filter Responses
-   </td>
+    <td>Guardrail</td>
+    <td colspan="2">Restrict Toxicity</td>
+    <td colspan="2">Blacklist Topics</td>
+    <td colspan="2">Detect Prompt Injections</td>
+    <td colspan="2">Filter Responses</td>
   </tr>
   <tr>
-   <td>
-   </td>
-   <td>LLM Input
-   </td>
-   <td>LLM Output
-   </td>
-   <td>LLM Input
-   </td>
-   <td>LLM Output
-   </td>
-   <td>LLM Input
-   </td>
-   <td>LLM Output
-   </td>
+    <td></td>
+    <td>LLM Input</td>
+    <td>LLM Output</td>
+    <td>LLM Input</td>
+    <td>LLM Output</td>
+    <td>LLM Input</td>
+    <td>LLM Output</td>
+    <td>LLM Input</td>
+    <td>LLM Output</td>
   </tr>
   <tr>
-   <td colspan="7" ><strong>Dynamic Conversation Features</strong>
-   </td>
+    <td colspan="9"><strong>Dynamic Conversation Features</strong></td>
   </tr>
   <tr>
-   <td>GenAI Node
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>NA
-   </td>
-   <td>NA
-   </td>
-   <td>✅
-   </td>
+    <td>GenAI Node</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>✅</td>
   </tr>
   <tr>
-   <td>Rephrase Dialog Responses
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>NA
-   </td>
-   <td>NA
-   </td>
-   <td>✅
-   </td>
+    <td>Rephrase Dialog Responses</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>✅</td>
   </tr>
 </table>
 
@@ -128,7 +121,7 @@ Steps to enable a Guardrail:
 
 
 
-1. Navigate to **Generative AI Tools** > **Safeguards**> **Guardrails**.
+1. Navigate to **Generative AI Tools** > **Safeguards** > **Guardrails**.
 <img src="../images/guardrails6.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 2. Turn on the **Status** toggle for the required guardrail. The advanced settings are displayed.  <img src="../images/guardrails2.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
@@ -149,7 +142,7 @@ Steps to disable a Guardrail:
 
 
 
-1. Navigate to **Generative AI Tools** > **Safeguards**> **Guardrails**.
+1. Navigate to **Generative AI Tools** > **Safeguards** > **Guardrails**.
 2. Turn off the **Status** toggle for the respective guardrail. The disable guardrail popup is displayed.  <img src="../images/guardrails1.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:45%;">
 3. Click **Disable**. The success message is displayed.
 
@@ -160,7 +153,7 @@ Steps to edit a Guardrail:
 
 
 
-1. Navigate to **Generative AI Tools** > **Safeguards**> **Guardrails**.
+1. Navigate to **Generative AI Tools** > **Safeguards** > **Guardrails**.
 2. Click **more** (three dots) and click **Edit**. The advanced settings are displayed.  <img src="../images/guardrails4.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 3. Toggle on/off the **LLM Input** and **LLM Output** as required.  <img src="../images/guardrails2.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:60%;">
