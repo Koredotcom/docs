@@ -166,7 +166,7 @@ The following table displays the Dynamic Conversation features and the supported
 
 The following table displays the Dynamic Conversation features and the supported models. 
 
-(✅ Supported | ❌ Not Supported)
+(✅ Supported | ❌ Not supported)
 
 
 <table>
