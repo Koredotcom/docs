@@ -80,6 +80,6 @@ LLM and Generative AI also require sharing data with third parties: OpenAI (when
 
 ## Next Steps
 1. Integrate a [pre-built or custom LLM or Kore.ai XO GPT](models-library.md) in models library. 
-2. Create [ New Prompts](prompts-library.md) in the prompts library .
+2. Create [ New Prompts](prompts-library.md) in the prompts library.
 3. Enable[ Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
-4. (Optional) Enable [Data Anonymization](data-anonymization.md) and [Guardrails](guardrails.md)
+4. (Optional) Enable [Data Anonymization](data-anonymization.md) and [Guardrails](guardrails.md).
