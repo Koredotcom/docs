@@ -1989,6 +1989,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v1121-june-15-2024" class="md-nav__link">
+    <span class="md-ellipsis">
+      v11.2.1 June 15, 2024
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v112-june-01-2024" class="md-nav__link">
     <span class="md-ellipsis">
       v11.2 June 01, 2024
@@ -11723,7 +11732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/introduction/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11784,7 +11793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/llm-integration/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/models-library/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11805,7 +11814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/xo-gpt-module/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/xo-gpt-module/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11834,7 +11843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/prompts-and-requests-library/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/prompts-library/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11895,7 +11904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/co-pilot-features/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/co-pilot-features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11916,7 +11925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/dynamic-conversations-features/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/dynamic-conversations-features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11985,7 +11994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/pii-and-sensitive-data/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/data-anonymization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12006,7 +12015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/guardrails/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/guardrails/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12956,6 +12965,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v1121-june-15-2024" class="md-nav__link">
+    <span class="md-ellipsis">
+      v11.2.1 June 15, 2024
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v112-june-01-2024" class="md-nav__link">
     <span class="md-ellipsis">
       v11.2 June 01, 2024
@@ -13185,6 +13203,11 @@
 
 <h1 id="agent-ai-updates">Agent AI Updates<a class="headerlink" href="#agent-ai-updates" title="Permanent link">&para;</a></h1>
 <p>This document provides information on the feature updates and enhancements introduced in <strong>Agent AI</strong> of XO v11.x releases.</p>
+<h2 id="v1121-june-15-2024">v11.2.1 June 15, 2024<a class="headerlink" href="#v1121-june-15-2024" title="Permanent link">&para;</a></h2>
+<p><u>Patch Release</u></p>
+<p>This update includes bug fixes.</p>
+<hr>
+
 <h2 id="v112-june-01-2024">v11.2 June 01, 2024<a class="headerlink" href="#v112-june-01-2024" title="Permanent link">&para;</a></h2>
 <p><u>Patch Release</u></p>
 <p>This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.</p>
@@ -13198,10 +13221,18 @@
 <p>For Conversation Summary customization, select a dialog task with “entity node” in the <strong>Custom Dialog Task</strong> field.</p>
 <h3 id="warm-transfer">Warm Transfer<a class="headerlink" href="#warm-transfer" title="Permanent link">&para;</a></h3>
 <p>Agent AI has introduced the <strong>Warm Transfer</strong> feature to customize the transfer functionality of the Agent AI widget. This feature specifically caters to third-party configurations, where appropriate transfer events are transmitted.</p>
-<p>The <strong>Warm Transfer</strong> feature can be defined as a conference call between two agents and applies to both Voice and Chat channels. During this process, Agent-2 has the ability to modify the Summary Feedback, but the <strong>Run</strong>, <strong>Override, Send, Copy, Terminate, Restart,</strong> and <strong>List View</strong> buttons remain disabled until Agent-1 disconnects from the call. It has the following options to choose from:
-* <strong>Scroll up to the First Message</strong>
-* <strong>Continue from the Last Message</strong>
-* <strong>Configure Dialog Task</strong></p>
+<p>The <strong>Warm Transfer</strong> feature can be defined as a conference call between two agents and applies to both Voice and Chat channels. During this process, Agent-2 has the ability to modify the Summary Feedback, but the <strong>Run</strong>, <strong>Override, Send, Copy, Terminate, Restart,</strong> and <strong>List View</strong> buttons remain disabled until Agent-1 disconnects from the call. It has the following options to choose from:</p>
+<ul>
+<li>
+<p><strong>Scroll up to the First Message</strong></p>
+</li>
+<li>
+<p><strong>Continue from the Last Message</strong></p>
+</li>
+<li>
+<p><strong>Configure Dialog Task</strong></p>
+</li>
+</ul>
 <h3 id="negative-feedback-settings">Negative Feedback Settings<a class="headerlink" href="#negative-feedback-settings" title="Permanent link">&para;</a></h3>
 <p>For better processing and accurate identification of reasons for receiving a “thumbs down”, Admins can now configure a list of negative feedback messages for agents to select. They can also include a comment box for agents to add additional comments. Admins decide whether these two options appear in the widget after agents select the “thumbs down” icon at the end of a Dialog Task and after each answer and FAQ. Additionally, Admins can change the language of the feedback messages by selecting one from the available language list.</p>
 <p><strong>Feedback Settings in the AgentAssist UI</strong>:</p>

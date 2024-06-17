@@ -11582,7 +11582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/introduction/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11643,7 +11643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/llm-integration/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/models-library/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11664,7 +11664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/xo-gpt-module/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/xo-gpt-module/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11693,7 +11693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/prompts-and-requests-library/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/prompts-library/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11754,7 +11754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/co-pilot-features/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/co-pilot-features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11775,7 +11775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/dynamic-conversations-features/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/dynamic-conversations-features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11844,7 +11844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/pii-and-sensitive-data/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/data-anonymization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11865,7 +11865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/guardrails/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/guardrails/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12926,10 +12926,13 @@
 </ul>
 </li>
 <li><strong>Agent Coaching</strong>: This widget enables real-time agent coaching based on the analysis of agent utterances and speech. You can set up specific utterances and speech patterns for AgentAssist to take relevant actions, such as providing hints and nudges or emailing the manager when those patterns occur. If disabled, you will no longer be able to utilize this feature. To resume real-time coaching, you must enable this feature. By default, it is disabled for all channels and is available for Chat and Voice channels only.</li>
-<li><strong>Agent Playbook</strong>: This widget provides agents with structured guidance and helps streamline task management. Supervisors can define stages and steps to follow, choose step progression (sequential or random), mark whether the steps are completed manually or automatically, and set adherence notifications. They can leverage this feature to gain valuable insights into agent adherence to specific playbook steps and use this data to enhance agents’ ability to handle interactions and significantly improve customer satisfaction.</li>
-</ul>
+<li>
+<p><strong>Agent Playbook</strong>: This widget provides agents with structured guidance and helps streamline task management. Supervisors can define stages and steps to follow, choose step progression (sequential or random), mark whether the steps are completed manually or automatically, and set adherence notifications. They can leverage this feature to gain valuable insights into agent adherence to specific playbook steps and use this data to enhance agents’ ability to handle interactions and significantly improve customer satisfaction.</p>
 <p>If disabled, the Playbook tab doesn’t appear in the widget, but you have the Assist tab and the welcome messages in the Assist tab. However, if Playbook is enabled, then welcome messages become a part of the Playbooks step, and nothing appears in the Assist tab. By default, this widget is disabled, but you can enable it for all three channels.</p>
-<ul>
+</li>
+<li>
+<p><strong>Auto-Scroll Widget Content</strong>: This widget lets you manage the auto-scroll functionality for the content in the <strong>Assist</strong> tab. Admins can enable/disable it through the <strong>Widget Settings</strong> &gt; <strong>AgentAssist Settings</strong> &gt; <strong>AgentAssist Channel Specific Settings</strong> page, while the Agents can access it in the <strong>AgentAssist widget</strong> &gt; <strong>Settings</strong> tab. Between these two users, the Agents can override the Admin’s selection.</p>
+</li>
 <li>
 <p><strong>Send Button</strong>: This widget lets you control the accessibility of the Send button functionality for AgentAssist responses. By default, this widget is enabled for Voice and Chat channels only.</p>
 </li>
@@ -12937,10 +12940,35 @@
 <p><strong>Copy Button</strong>: This widget lets you control the accessibility of the Copy button functionality for AgentAssist responses. By default, this widget is enabled for all three channels.</p>
 </li>
 <li>
-<p><strong>Auto Summarization</strong>: This widget lets you automatically generate a summary of the conversation when it ends. Agents can copy the summary and save it into the Notes or Remark field while closing the conversation. By default, this widget is enabled for Voice and Chat channels only, and it also has the option to select the Submit button.</p>
+<p><strong>Conversation Transfer</strong>: This widget lets you define and categorize the conversation transfer behavior based on the transfer type and channels. It applies only to the third-party configurations where appropriate transfer events are transmitted.</p>
+<ul>
+<li><strong>Cold Transfer</strong>: It is defined as a conversation handover that happens between two agents and is applicable to all three channels – Voice, Chat, and Email. The conversation summary is generated again for the receiving agent, and this summary, along with the feedback options, gets added to Agent-1’s Assist tab. Agent-2 can change the summary feedback for voice and email channels.</li>
+<li>
+<p><strong>Warm Transfer</strong>: It is defined as a conference call between two agents and applies to both Voice and Chat channels. During this process, Agent-2 has the ability to modify the Summary Feedback, but the Run, Override, Send, Copy, Terminate, Restart, and List View buttons remain disabled until Agent-1 disconnects from the call.</p>
+<p>Both the Cold Transfer and the Warm Transfer have the following options to choose from:</p>
+<ul>
+<li>
+<p>Scroll up to the First Message: The chat history page scrolls up to the top of the page (first message).</p>
 </li>
 <li>
-<p><strong>Widget Landing Tab</strong>: This widget allows you to select the default landing page for your selected channel and is available for all three channels. Note that the Transcription option appears here for selection only when the Transcript Tab widget is enabled.</p>
+<p>Continue from the Last Message: The chat history page scrolls down to the bottom of the page (last message).</p>
+</li>
+<li>
+<p>Configure Dialog Task: The user has to select one of the dialog tasks associated with a bot from the list. If a dialogue task of fetching a summary of agent 1 and the customer is selected, agent 2 will see it automatically when the conversation is transferred to them.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Transcript Tab</strong>: This widget appears only for the <strong>Voice</strong> channel and lets you control the appearance of the Transcript tab in the AgentAssist widget. By default, this widget is enabled.</p>
+</li>
+<li>
+<p><strong>Auto Summarization</strong>: This widget lets you automatically generate a summary of the conversation when it ends. Agents can copy the summary and save it into the <strong>Notes</strong> or <strong>Remark</strong> field while closing the conversation. By default, this widget is enabled for Voice and Chat channels only, and it also has the option to select the <strong>Submit</strong> button.</p>
+<p>Third-party agent desktops can use the <strong>Auto Summarization Model</strong> widget to manage the automatic summarization process. They can select Kore’s default automatic summarization or the “Custom Dialog Task“ option, which lets them select a “dialog task with an entity node” enabling them to customize the Conversation Summary.</p>
+</li>
+<li>
+<p><strong>Widget Landing Tab</strong>: This widget allows you to select the default landing page for your selected channel and is available for all three channels. Note that the <strong>Transcription</strong> option appears here for selection only when the <strong>Transcript Tab</strong> widget is enabled.</p>
 </li>
 </ul>
 <h3 id="steps-to-set-channel-specific-preferences">Steps to set channel specific preferences<a class="headerlink" href="#steps-to-set-channel-specific-preferences" title="Permanent link">&para;</a></h3>
@@ -12951,10 +12979,36 @@
 <li>Select a <strong>channel</strong> in the <strong>Select channel</strong> list.</li>
 <li>Click the <strong>toggle</strong> against <strong>AgentAssist Channel Specific Settings</strong> to enable it (if <strong>Disabled</strong>).</li>
 <li>Turn the toggle <strong>on</strong> or <strong>off</strong> against each widget, as required.</li>
-<li>Select or clear the <strong>Submit</strong> button under the <strong>Auto Summarization</strong> section.</li>
-<li>Select an option from the list against the <strong>Widget Landing Tab</strong> section.</li>
-<li>Click <strong>Save</strong> to save your settings.
-   <a class="glightbox" href="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" alt="agentassist-channel-specific-settings-page" title="agentassist-channel-specific-settings-page" style="border: 1px solid gray; zoom:80%;"></a></li>
+<li>
+<p>Select an option under the <strong>Conversation Transfer</strong> section.</p>
+</li>
+<li>
+<p>Select or clear the <strong>Submit</strong> button under the <strong>Auto Summarization</strong> section.</p>
+<p>Under the <strong>Auto Summarization Model</strong> section, select:</p>
+<ul>
+<li>
+<p><strong>OOTB Kore Summarization</strong>: For Kore’s default auto summarization.</p>
+</li>
+<li>
+<p><strong>Custom Dialog Task</strong>: To select a dialog task with an entity node. These message nodes call APIs. The Custom Dialog Task field displays a list of dialog tasks or child bots based on bot selection at the app level. At the app level, if you have selected:</p>
+<ul>
+<li>
+<p><strong>Universal Bot</strong>: The backend logic detects it and populates its associated Child Bots. You can expand each Child Bot to view and select its dialog task.</p>
+</li>
+<li>
+<p><strong>Child Bot/Normal/Singular Bot</strong>: The Dialog Tasks list displays dialogs linked to the selected bot, and you can select any from the displayed list.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Select an option from the list against the <strong>Widget Landing Tab</strong> section.</p>
+</li>
+<li>
+<p>Click <strong>Save</strong> to save your settings.
+   <a class="glightbox" href="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../widget-settings-images/agentassist-channel-specific-settings-page-1.png" alt="agentassist-channel-specific-settings-page" title="agentassist-channel-specific-settings-page" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
 </ol>
 <h2 id="knowledge-ai">Knowledge AI<a class="headerlink" href="#knowledge-ai" title="Permanent link">&para;</a></h2>
 <p>This section lets you gain access to the Knowledge AI features within the AgentAssist widget during customer interactions. Here, you can set channel-specific display of Knowledge AI search results. It has the following sub sections:</p>

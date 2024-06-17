@@ -11678,7 +11678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/introduction/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11739,7 +11739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/llm-integration/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/models-library/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11760,7 +11760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/xo-gpt-module/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/xo-gpt-module/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11789,7 +11789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/prompts-and-requests-library/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/prompts-library/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11850,7 +11850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/co-pilot-features/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/co-pilot-features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11871,7 +11871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/dynamic-conversations-features/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/dynamic-conversations-features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11940,7 +11940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/pii-and-sensitive-data/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/data-anonymization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11961,7 +11961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../app-settings/generative-ai-tools/guardrails/" class="md-nav__link">
+      <a href="../../../generative-ai-tools/guardrails/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -13537,26 +13537,10 @@ You can use the AutoTranslation function inside the JavaScript to define the par
 <h3 id="koreutilgetformdefinition">koreUtil.getFormDefinition<a class="headerlink" href="#koreutilgetformdefinition" title="Permanent link">&para;</a></h3>
 <p>The <code>koreUtil.getFormDefinition</code> allows you to get the form definition, which consists of the form meta, form components, and form messages.</p>
 <p><strong>Usage Example:</strong></p>
-<p>Suppose you want to change the standard response of a field of EMail type in a digital form based on the bot language. You have added English, Spanish, German, and Japanese as your bot languages.</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>let formDef = koreUtil.getFormDefinition();
-</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>if(context.currentLanguage === &#39;en&#39;){
-</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>    formDef.formMsgMeta.EMAIL_INVALID_FORMAT = &#39;Invalid EMail&#39;;
-</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>}
-</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>else if(context.currentLanguage === &#39;de&#39;){
-</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>    formDef.formMsgMeta.EMAIL_INVALID_FORMAT = &#39;ungültige E-Mail&#39;;
-</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>}
-</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>else if(context.currentLanguage === &#39;es&#39;){
-</span><span id="__span-27-9"><a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>    formDef.formMsgMeta.EMAIL_INVALID_FORMAT = &#39;EMail inválido&#39;;
-</span><span id="__span-27-10"><a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>}
-</span><span id="__span-27-11"><a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a>else{
-</span><span id="__span-27-12"><a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a>    formDef.formMsgMeta.EMAIL_INVALID_FORMAT = &#39;無効なメールアドレス&#39;;
-</span><span id="__span-27-13"><a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a>}
 </span></code></pre></div>
 <p><strong>Output:</strong></p>
-<p>If your bot language is Japanese:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>無効なメールアドレス
-</span></code></pre></div>
-<p><a class="glightbox" href="../images/koreutil-invalid-email-jap.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/koreutil-invalid-email-jap.png" alt="Auto translate service as Bot Response" title="Auto translate service as Bot Response" style="border:1px solid gray; zoom:60%;"></a></p>
+<p><a class="glightbox" href="../images/xop-8553-json-preview.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/xop-8553-json-preview.png" alt="Form Definition" title="Form Definition" style="border:1px solid gray; zoom:60%;"></a></p>
 <p><strong>Related Link</strong></p>
 <ul>
 <li><strong><a href="../../automation/use-cases/dialogs/node-types/working-with-the-script-node">Script Node</a></strong> (Write JavaScript code in a dialog task)</li>
