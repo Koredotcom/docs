@@ -27,12 +27,13 @@ To add a new prompt, follow the steps:
 
 
 
-1. Go to **App Settings** > **Generative AI Tools**. 
+1. Go to **Generative AI Tools** > **Prompts Library**.
+    <img src="../images/prompts-library.png" alt="Prompts Library" title="Prompts Library" style="border: 1px solid gray; zoom:70%;"> 
 
 
-    ![alt_text](images/prl(10).png  )
 
-2. On the top right corner of the **Prompts and Requests Library** section, click **+Add New**.
+
+2. On the top right corner of the **Prompts Library** section, click **+ New Prompt**.
 3. Enter the **prompt name**. Select the **feature** and the respective **model**. 
 
     ![alt_text](images/prl(13).png  )
@@ -88,8 +89,9 @@ To add a new prompt, follow the steps:
 
 11. (Only for GenAI Node) Enter the **Exit Scenario Key-Value fields** and **Virtual Assistance Response Key**. The Exit Scenario Key-Value fields help identify when to end the interaction with the GenAI model and return to the dialog flow. A Virtual Assistance Response Key is available in the response payload to display the VA’s response to the user.
     ![alt_text](images/image1-8.png  )
-12. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section. 
-    ![alt_text](images/prl(1).png  )
+12. Click **Save**. The request is added and displayed in the **Prompts and Requests Library** section.
+<img src="../images/custom-prompt.png" alt="custom-prompt" title="Custom Prompt" style="border: 1px solid gray; zoom:70%;">
+ 
 13. Now proceed to enable[ Co-Pilot](co-pilot-features.md) and[ Dynamic Conversations](dynamic-conversations-features.md) features.
 
 		

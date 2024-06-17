@@ -17,7 +17,7 @@ Steps to configure a pre-built LLM:
 
 
 1. Go to **Generative AI Tools** > **Models Library**.
-<img src="../images/llm-intro.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
+<img src="./images/llm-intro.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
 
   
 
@@ -75,7 +75,7 @@ Steps to integrate a Custom LLM:
 
 
 
-    <img src="../images/new-model.png" alt="+ New  Model" title="+ New Model" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/custom-new.png" alt="+ New  Model" title="+ New Model" style="border: 1px solid gray; zoom:70%;">
 
 3. On the **Configuration** tab, enter the details like **Integration Name**, **Model Name**, **Endpoint**, and **Headers**. 
 

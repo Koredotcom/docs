@@ -14,7 +14,7 @@ Steps to enable the feature:
 
 
 
-1. Navigate to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
+1. Navigate to **Generative AI Tools** > **Co-Pilot**.
    ![alt_text](images/cpf(1).jpg  )
 2. Select the **Model** and **Prompt** from the drop-down list for a feature. 
 
@@ -59,7 +59,7 @@ Follow these steps:
 
 
 
-1. Go to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
+1. Go to **Generative AI Tools** > **Co-Pilot**.
 2. Hover over the feature to view the **Advance Setting** (gear) icon. 
 
     ![alt_text](images/cpf(3).png   )
@@ -96,7 +96,7 @@ Follow these steps:
 
 
 
-1. Go to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
+1. Go to **Generative AI Tools** > **Co-Pilot**.
 2. Hover over the feature to view the **Setting** (gear) icon. 
 
     ![alt_text](images/cpf(4).png  )
