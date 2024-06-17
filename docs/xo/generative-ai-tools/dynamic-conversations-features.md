@@ -14,11 +14,12 @@ Steps to enable the feature:
 
 
 
-1. Navigate to **App Settings** > **Generative AI Tools** > **Dynamic Conversations**. 
+1. Navigate to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**.
+<img src="../images/dcf(1).png" alt="Dynamic Conversations" title="Dynamic Conversations" style="border: 1px solid gray; zoom:70%;"> 
 
 
    
-    ![alt_text](images/dcf(1).jpg  )
+
     
 
 2. Select the **Model** and **Prompt** from the drop-down list for a feature. 
@@ -27,7 +28,12 @@ Steps to enable the feature:
 		
 
 	
+## Smart Filter
 
+Smart filtering in the Features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent). The users can easily add/remove this filter as needed.
+
+
+<img src="../images/genai-product-level-filters-dcf.png" alt="Product Level Filter" title="Product Level Filter" style="border: 1px solid gray; zoom:70%;"> 
 	
 
 		
@@ -58,17 +64,20 @@ Follow these steps:
 
 
 
-1. Go to **App Settings** > **Generative AI Tools** > **Dynamic Conversations**.
+1. Go to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**.
 2. Hover over the feature to view the **Advance Setting** (gear) icon. 
+<img src="../images/dcf(2).png" alt="Dynamic Conversations" title="Dynamic Conversations" style="border: 1px solid gray; zoom:70%;"> 
 
 
-    ![alt_text](images/dcf(2).jpg  )
-   
     
-3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed. 
+3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed.
+<img src="../images/dcf(5).png" alt="Advance Setting" title="Advance Setting" style="border: 1px solid gray; zoom:70%;"> 
+ 
 
 
-    ![alt_text](images/dcf(5).png  )
+
+
+
  
 
 
@@ -98,10 +107,11 @@ Follow these steps:
 
 
 
-1. Go to **App Settings** > **Generative AI Tools** > **Dynamic Conversations**.
-2. Hover over the feature to view the **Setting** (gear) icon. 
+1. Go to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**.
+2. Hover over the feature to view the **Setting** (gear) icon.
+<img src="./images/image4-3-4.png" alt="Edit Settings" title="Edit Settings" style="border: 1px solid gray; zoom:70%;"> 
 
-    ![alt_text](images/image4-3-4.png  )
+
  
 
 3. Click **Edit**. The Actual Response is displayed. 
@@ -132,7 +142,20 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 
 		
 
-			
+## Product and Feature Support Matrix
+
+| Feature                     | Automation AI | Search AI | Agent AI |
+|-----------------------------|---------------|-----------|----------|
+| Agent Response Rephrasing   |               |         |    ✅      |
+| Answer Generation           |               | ✅        |          |
+| GenAI Node                  | ✅            |           |          |
+| GenAI Prompt                | ✅            |           |          |
+| Repeat Responses            | ✅            |           |          |
+| Rephrase Dialog Responses   | ✅            |           |          |
+| Rephrase User Query         | ✅            |           |          |
+| Vector Generation           |               | ✅        |          |
+| Zero-shot ML Model          | ✅            |           |          |
+
 
 
 ## Model and Feature Support Matrix
@@ -325,7 +348,7 @@ If this feature is disabled, you cannot configure the ML model to build custom p
 
 ### Repeat Responses
 
-This feature uses LLM to reiterate the recent bot responses when the Repeat Response event is triggered. Bot developers can enable the event and customize the trigger conditions. This empowers end-users to ask the bot to repeat its recent responses at any point during the conversation. Currently, this event is supported for IVR, Audiocodes, and Twilio Voice channels.[ Learn more](https://developer.kore.ai/docs/bots/bot-intelligence/event-based-bot-actions/#Repeat_Bot_Response_Event).
+This feature uses LLM to reiterate the recent bot responses when the Repeat Response event is triggered. Bot developers can enable the event and customize the trigger conditions. This empowers end-users to ask the bot to repeat its recent responses at any point during the conversation. Currently, this event is supported for IVR, Audiocodes, and Twilio Voice channels.[ Learn more](../automation/intelligence/event-handling.md#repeat-bot-response-event).
 
 
 

@@ -14,8 +14,9 @@ Steps to enable the feature:
 
 
 
-1. Navigate to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
-   ![alt_text](images/cpf(1).jpg  )
+1. Navigate to **Generative AI Tools** > **GenAI Features** > **Co-Pilot**.
+<img src="../images/cpf(1).png" alt="Select Model and Prompt" title="Select Model and Prompt" style="border: 1px solid gray; zoom:70%;"> 
+
 2. Select the **Model** and **Prompt** from the drop-down list for a feature. 
 
 
@@ -32,7 +33,12 @@ Steps to enable the feature:
 		
 
 			
+## Smart Filter
 
+Smart filtering in the Features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent). The users can easily add/remove this filter as needed.
+
+
+<img src="../images/genai-product-level-filters.png" alt="Product Level Filter" title="Product Level Filter" style="border: 1px solid gray; zoom:70%;"> 
 
 ## Change Settings for a Model
 
@@ -53,19 +59,21 @@ Choose the option below based on the model for which you want to change the sett
 
 			
 
-You can change the selected model’s settings if required. **In most cases**,**the default settings work fine**.
+You can change the selected model’s settings if required. **In most cases**, **the default settings work fine**.
 
 Follow these steps:
 
 
 
-1. Go to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
-2. Hover over the feature to view the **Advance Setting** (gear) icon. 
+1. Go to **Generative AI Tools** > **GenAI Features** > **Co-Pilot**.
+2. Hover over the feature to view the **Advance Setting** (gear) icon.
+<img src="../images/cpf(3).png" alt="Advance Setting" title="Advance Setting" style="border: 1px solid gray; zoom:70%;"> 
 
-    ![alt_text](images/cpf(3).png   )
+ 
 
-3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed.  
-    ![alt_text](images/cpf(2).png )
+3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed.
+<img src="../images/cpf(2).png" alt="Edit Setting" title="Edit Setting" style="border: 1px solid gray; zoom:70%;">  
+
 
 Adjusting the settings allows you to fine-tune the model’s behavior to meet your needs. The default settings work fine for most cases. You can tweak the settings and find the right balance for your use case. A few settings are common in the features, and a few are feature-specific:
 
@@ -96,10 +104,11 @@ Follow these steps:
 
 
 
-1. Go to **App Settings** > **Generative AI Tools** > **Co-Pilot**.
-2. Hover over the feature to view the **Setting** (gear) icon. 
+1. Go to **Generative AI Tools** > **GenAI Features** > **Co-Pilot**.
+2. Hover over the feature to view the **Setting** (gear) icon.
+<img src="../images/cpf(4).png" alt="Edit Setting" title="Edit Setting" style="border: 1px solid gray; zoom:70%;"> 
 
-    ![alt_text](images/cpf(4).png  )
+  
 
 3. Click **Edit**. The Actual Response is displayed. 
 
@@ -126,9 +135,21 @@ Follow these steps:
 
 	
 
-		
+## Product and Feature Support Matrix
 
-			
+
+| Feature                                 | Automation AI | Search AI | Agent AI |
+|-----------------------------------------|---------------|-----------|----------|
+| Automatic Dialog Generation             | ✅            |           |          |
+| Conversation Test Case Suggestions      | ✅            |           |          |
+| Conversation Summary                    | ✅            |           |          |
+| Generating Opposite Utterance Suggestions |               |         |     ✅     |
+| Generating Similar Answer Suggestions   | Not Linked    |           |          |
+| Generating Similar Utterance Suggestions|               |        |       ✅    |
+| Generating Similar QM Utterance Suggestions | Not Linked  |           |          |
+| NLP Batch Test Case Suggestions         | ✅            |           |          |
+| Training Utterance Suggestions          | ✅            |           |          |
+
 
 
 ## Model and Feature Support Matrix
@@ -474,13 +495,13 @@ LLM and Generative AI help generate accurate suggestions automatically without c
 1. When adding the short Bot description, the user must include specific details on the high-level scenarios the Bot needs to handle.
 2. The user generates use case suggestions by clicking **Get Use Cases**.
 3. Based on the user’s description, the system generates improved use case suggestions with the help of the OpenAI Model.
+<img src="../images/use-case-suggestions.png" alt="Use Case Suggestions" title="Use Case Suggestions" style="border: 1px solid gray; zoom:70%;"> 
 
 
 
 
 
 
-    ![alt_text](images/cpf(1).png  )
 
 
 
