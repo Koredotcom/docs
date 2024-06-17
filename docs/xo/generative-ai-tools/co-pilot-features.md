@@ -29,12 +29,12 @@ Steps to enable the feature:
 		
 
 			
-## Smart Filter
+## Product Filter
 
-Smart filtering in the Features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent). The users can easily add/remove this filter as needed.
+Smart filtering in the features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent). The users can easily add/remove this filter as needed.
 
 
-<img src="./images/genai-product-level-filters-cf.png" alt="Product Level Filter" title="Product Level Filter" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/genai-product-level-filters-cf.png" alt="Product Level Filter" title="Product Level Filter" style="border: 1px solid gray; zoom:70%;"> 
 
 ## Change Settings for a Model
 
@@ -132,6 +132,8 @@ Follow these steps:
 	
 
 ## Product and Feature Support Matrix
+
+The following table displays the Co-Pilot features and the supported products.
 
 (✅ Supported | - Not supported)
 
