@@ -2,6 +2,14 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
+## v11.2.1 June 15, 2024
+
+<u>Patch Release</u>
+
+This update includes bug fixes.
+
+<hr>
+
 ## v11.2 June 01, 2024
 
 <u>Patch Release</u>
@@ -24,7 +32,7 @@ The following are some of the key use cases:
   
 The koreUtil library has been extended with the "getFormDefinition" function to retrieve and modify the form definition.
 
-This feature also helps address the current limitation of system messages available only in English. The "formMsgMeta" section of the form data contains the full list of system messages and errors, which can be modified using the Preprocessor.
+This feature also helps address the current limitation of system messages available only in English. The "formMsgMeta" section of the form data contains the full list of system messages and errors, which can be modified using the Preprocessor. [Learn more :octicons-arrow-right-24:](../../../automation/use-cases/digital-skills/digital-forms/#configuration-setup-using-pre-processor-script)
 
 ### SDK Configuration
 

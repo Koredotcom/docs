@@ -15,7 +15,7 @@ This task-wise Containment Report offers a comparative analysis of the impact of
    <td>It’s a combination of POST and GET methods. The POST method is used to set the filters and the GET method is used to fetch data as per the set filters.
 <p>
 <strong>Post Method</strong>: Set filters. The response contains the API Response ID (“<em>_id</em>”) 
-<code>https://{{host}}/api/public/bot/{{botID}}/taskContainmentReport</code>
+<code>https://{{host}}/api/public/bot/{{botID}}/taskContainmentReport?skip={{skipValue}}&limit={{limitValue}}</code>
 <p>
 <strong>Get Method</strong>: Use the API Response ID (“<em>_id</em>”) to get data as per the set filters.   
 <code>https://{{host}}/api/public/bot/{{botID}}/taskContainmentReport/status/{{<strong>_id</strong>}}</code>
@@ -86,6 +86,16 @@ See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-int
    <td>The API Response ID returned by the POST method in the response object; Use it in the GET method to get data as per the set filters via the POST method.
    </td>
   </tr>
+  <tr>
+    <td>skip</td>
+    <td>Optional (Only for POST)</td>
+    <td>The number of messages to be skipped</td>
+  </tr>
+  <tr>
+    <td>limit</td>
+    <td>Optional (Only for POST)</td>
+    <td>The number of messages to be shown on each page.</td>
+  </tr>
 </table>
 
 
@@ -94,9 +104,9 @@ See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-int
 The following sample request shows how to retrieve task-execution based analytics data for different containment types with specific filters. You can modify the type and filters parameters to retrieve different types of analytics data as needed.
 
 ```
-curl --location 'https://prod-bots.korebots.com/api/public/bot/st-8xxxxxxc-cxx2-5xxf-axx5-9xxxxxxxxxxb/taskContainmentReport' 
---header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' 
---header 'Content-Type: application/json' 
+curl --location 'https://{{host}}/api/public/bot/{{botId}}/taskContainmentReport?skip={{skipValue}}&limit={{limitValue}}' \
+--header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
+--header 'Content-Type: application/json' \
 --data '{
     "filters": {
         "dateFrom": "2024-04-22",

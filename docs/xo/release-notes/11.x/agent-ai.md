@@ -2,6 +2,14 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+## v11.2.1 June 15, 2024
+
+<u>Patch Release</u>
+
+This update includes bug fixes.
+
+<hr>
+
 ## v11.2 June 01, 2024
 
 <u>Patch Release</u>
@@ -28,8 +36,11 @@ For Conversation Summary customization, select a dialog task with “entity node
 Agent AI has introduced the **Warm Transfer** feature to customize the transfer functionality of the Agent AI widget. This feature specifically caters to third-party configurations, where appropriate transfer events are transmitted.
 
 The **Warm Transfer** feature can be defined as a conference call between two agents and applies to both Voice and Chat channels. During this process, Agent-2 has the ability to modify the Summary Feedback, but the **Run**, **Override, Send, Copy, Terminate, Restart,** and **List View** buttons remain disabled until Agent-1 disconnects from the call. It has the following options to choose from:
+
 * **Scroll up to the First Message**
+
 * **Continue from the Last Message**
+
 * **Configure Dialog Task**
 
 ### Negative Feedback Settings
