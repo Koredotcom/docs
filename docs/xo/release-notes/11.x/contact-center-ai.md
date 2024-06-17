@@ -44,10 +44,12 @@ Additionally, Ava Multilingual, a voice that supports a wide range of languages,
 
 Kore Voice Gateway now integrates with AmiVoice, a Japanese Automatic Speech Recognition (ASR) system, as part of an external application. By leveraging this integration, the Voice Gateway can now accurately process and understand Japanese voice inputs, leading to more efficient and effective voice-based interactions.
 
-!!! Note
+!!! note
 
-    This integration is under post deployment validation.
+    This integration is being validated post-deployment.
  
+<hr>
+
 ## v11.2 June 01, 2024
 
 <u>Patch Release</u>

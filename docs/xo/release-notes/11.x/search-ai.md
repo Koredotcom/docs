@@ -2,6 +2,23 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.x releases.
 
+## v11.2.1 June 15, 2024
+
+<u>Patch Release</u>
+
+Key features and enhancements included in this release are summarized below.
+
+###  Automated Content Syncing and Training with Connectors
+
+Search AI now offers the capability to schedule automatic content syncing from third-party applications using connectors. The data is automatically ingested, and the application is trained with the new data, ensuring that the content is always up to date.
+
+###  Enhanced Web Crawl Error Reporting
+
+The enhanced web crawl error reporting feature in Search AI provides detailed information about crawl failures, enabling quick identification and resolution of issues. 
+
+
+<hr>
+
 ## v11.2 June 01, 2024
 
 <u>Patch Release</u>
