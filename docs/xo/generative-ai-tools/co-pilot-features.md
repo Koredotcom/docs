@@ -135,7 +135,7 @@ Follow these steps:
 
 The following table displays the Co-Pilot features and the supported products.
 
-(✅ Supported | ❌Not supported)
+(✅ Supported | ❌ Not supported)
 
 | Feature                                 | Automation AI | Search AI | Agent AI |
 |:-----------------------------------|:------------:|:------------:|:------------:|

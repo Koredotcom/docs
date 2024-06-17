@@ -146,7 +146,7 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 
 The following table displays the Dynamic Conversation features and the supported products. 
 
-(✅ Supported | ❌Not supported)
+(✅ Supported | ❌ Not supported)
 
 | Feature                     | Automation AI | Search AI | Agent AI |
 |:-------------------------|:------------:|:------------:|:------------:|
