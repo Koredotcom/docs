@@ -14,7 +14,7 @@ Steps to enable the feature:
 
 
 
-1. Navigate to **App Settings** > **Generative AI Tools** > **Dynamic Conversations**. 
+1. Navigate to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**. 
 
 
    
