@@ -304,7 +304,7 @@ This feature helps generate an answer to the user question based on the data ing
 
 When enabled, this feature lets you add an GenAI Node to Dialog Tasks. This node allows you to collect Entities from end-users in a free-flowing conversation (in the selected English/Non-English Bot Language) using LLM and Generative AI in the background. You can define the entities to be collected as well as rules & scenarios in English and Non-English Bot languages. You can configure node properties just like any other node. You can also use the GenAI Node across Dialog Tasks.
 
-<img src="./images/genai-node1.png" alt="GenAI Node" title="GenAI Node" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/genai-node1.png" alt="GenAI Node" title="GenAI Node" style="border: 1px solid gray; zoom:70%;"> 
 
 
 

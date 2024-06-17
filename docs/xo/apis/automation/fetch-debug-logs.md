@@ -243,4 +243,3 @@ Accepted channel types are:
     }
 ]
 ```
-```
