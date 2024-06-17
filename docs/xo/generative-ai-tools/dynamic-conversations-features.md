@@ -144,17 +144,19 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 
 ## Product and Feature Support Matrix
 
+(✅ Supported | ❌ Not supported)
+
 | Feature                     | Automation AI | Search AI | Agent AI |
-|-----------------------------|---------------|-----------|----------|
-| Agent Response Rephrasing   |               |          |    ✅      |
-| Answer Generation           |               | ✅        |          |
-| GenAI Node                  | ✅            |           |          |
-| GenAI Prompt                | ✅            |           |          |
-| Repeat Responses            | ✅            |           |          |
-| Rephrase Dialog Responses   | ✅            |           |          |
-| Rephrase User Query         | ✅            |           |          |
-| Vector Generation           |               | ✅        |          |
-| Zero-shot ML Model          | ✅            |           |          |
+|:-------------------------|:------------:|:------------:|:------------:|
+| Agent Response Rephrasing   |      -        |   -       |    ✅      |
+| Answer Generation           |       -      | ✅        |    -      |
+| GenAI Node                  | ✅            |      -     |  -        |
+| GenAI Prompt                | ✅            |        -   |    -      |
+| Repeat Responses            | ✅            |    -       |    -      |
+| Rephrase Dialog Responses   | ✅            |    -       |      -    |
+| Rephrase User Query         | ✅            |    -       |   -       |
+| Vector Generation           |        -       | ✅        |   -       |
+| Zero-shot ML Model          | ✅            |     -      |    -      |
 
 
 

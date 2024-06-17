@@ -137,18 +137,19 @@ Follow these steps:
 
 ## Product and Feature Support Matrix
 
+(✅ Supported | ❌ Not supported)
 
 | Feature                                 | Automation AI | Search AI | Agent AI |
-|-----------------------------------------|---------------|-----------|----------|
-| Automatic Dialog Generation             | ✅            |           |          |
-| Conversation Test Case Suggestions      | ✅            |           |          |
-| Conversation Summary                    | ✅            |           |          |
-| Generating Opposite Utterance Suggestions |               |         |     ✅     |
-| Generating Similar Answer Suggestions   | -    |           |          |
-| Generating Similar Utterance Suggestions|               |        |       ✅    |
-| Generating Similar QM Utterance Suggestions | -  |           |          |
-| NLP Batch Test Case Suggestions         | ✅            |           |          |
-| Training Utterance Suggestions          | ✅            |           |          |
+|:-----------------------------------|:------------:|:------------:|:------------:|
+| Automatic Dialog Generation             | ✅            |    -       |     -     |
+| Conversation Test Case Suggestions      | ✅            |      -     |      -    |
+| Conversation Summary                    | ✅            |      -     |      -    |
+| Generating Opposite Utterance Suggestions |      -       |    -     |     ✅     |
+| Generating Similar Answer Suggestions   | Not linked on UI |     -   |      ✅        |
+| Generating Similar Utterance Suggestions|      -         |    -    |       ✅    |
+| Generating Similar QM Utterance Suggestions | Not linked  on UI   |    -     |     -    |
+| NLP Batch Test Case Suggestions         | ✅            |     -      |      -    |
+| Training Utterance Suggestions          | ✅            |     -      |    -      |
 
 
 
