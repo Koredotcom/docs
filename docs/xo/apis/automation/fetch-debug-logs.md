@@ -155,7 +155,6 @@ Accepted channel types are:
 
 ## Sample Response
 
-
 ```json
 [
     {
@@ -243,3 +242,4 @@ Accepted channel types are:
         }
     }
 ]
+```
