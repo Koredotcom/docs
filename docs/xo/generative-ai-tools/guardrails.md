@@ -160,7 +160,6 @@ Steps to edit a Guardrail:
 
 4. Click **Save**. The success message is displayed.
 
-We should have another section here Guardrails Runtime Behavior
 
 
 ## Guardrails Runtime Behavior
