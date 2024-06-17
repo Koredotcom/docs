@@ -8,7 +8,7 @@ Large language models (LLMs) are powerful AI systems that can be leveraged to of
 Guardrails enable responsible and ethical AI practices by allowing platform users to easily enable/disable rules and configure settings for different features using LLMs. Additionally, the users can design and implement fallback behaviors for a feature, such as triggering specific events, if a guardrail detects content that violates set standards.
 
 The XO Platform leverages the open-source models tailored for conversational AI applications. Each guardrail is powered by a different model, that has been fine-tuned specifically to validate text for toxicity, bias, filter topics, etc. Kore.ai hosts these models and periodically updates them through training to detect emerging threats and prompt injection patterns effectively. These small models reside within the platform, ensuring swift performance during runtime.
-<img src="../images/guardrails-home1.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/guardrails-safeguard.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Types of Guardrails
@@ -19,6 +19,16 @@ The XO Platform leverages the open-source models tailored for conversational AI 
 This guardrail analyzes and prevents the dissemination of potentially harmful content in both prompts sent to the LLM and responses received from it. The LLM-generated content that contains toxic words will be automatically discarded, and an appropriate fallback action will be triggered. This ensures that only safe and non-toxic content reaches the end-user, thereby protecting both the user and the integrity of the platform.
 
 For example, you can detect scenarios where the LLM has generated toxic content that your customers may find inappropriate. 
+
+### Blacklist Topics
+
+Ensure the conversations are within acceptable boundaries and avoid any conversations by adding a list of sensitive or controversial topics. Define the topics to be blacklisted in the guardrails and ensure the LLM is not responding to requests related to that topic.  
+
+For example, you can blacklist the topics like politics, violence, religion, etc.
+
+!!! note
+
+    If the Blacklist Topics guardrail is enabled, ensure that at least one topic is added to the list.
 
 
 ### Detect Prompt Injections
@@ -48,68 +58,51 @@ The Guardrails are currently available for the following features: **GenAI Node*
 (✅ Supported | ❌ Not supported)
 
 
+
+
 <table>
   <tr>
-   <td>Guardrail
-   </td>
-   <td colspan="2" >Restrict Toxicity
-   </td>
-   <td colspan="2" >Detect Prompt Injections
-   </td>
-   <td colspan="2" >Filter Responses
-   </td>
+    <td>Guardrail</td>
+    <td colspan="2">Restrict Toxicity</td>
+    <td colspan="2">Blacklist Topics</td>
+    <td colspan="2">Detect Prompt Injections</td>
+    <td colspan="2">Filter Responses</td>
   </tr>
   <tr>
-   <td>
-   </td>
-   <td>LLM Input
-   </td>
-   <td>LLM Output
-   </td>
-   <td>LLM Input
-   </td>
-   <td>LLM Output
-   </td>
-   <td>LLM Input
-   </td>
-   <td>LLM Output
-   </td>
+    <td></td>
+    <td>LLM Input</td>
+    <td>LLM Output</td>
+    <td>LLM Input</td>
+    <td>LLM Output</td>
+    <td>LLM Input</td>
+    <td>LLM Output</td>
+    <td>LLM Input</td>
+    <td>LLM Output</td>
   </tr>
   <tr>
-   <td colspan="7" ><strong>Dynamic Conversation Features</strong>
-   </td>
+    <td colspan="9"><strong>Dynamic Conversation Features</strong></td>
   </tr>
   <tr>
-   <td>GenAI Node
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>NA
-   </td>
-   <td>NA
-   </td>
-   <td>✅
-   </td>
+    <td>GenAI Node</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>✅</td>
   </tr>
   <tr>
-   <td>Rephrase Dialog Responses
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>✅
-   </td>
-   <td>NA
-   </td>
-   <td>NA
-   </td>
-   <td>✅
-   </td>
+    <td>Rephrase Dialog Responses</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>✅</td>
   </tr>
 </table>
 
@@ -128,7 +121,7 @@ Steps to enable a Guardrail:
 
 
 
-1. Navigate to **Generative AI Tools** > **Safeguards**> **Guardrails**.
+1. Navigate to **Generative AI Tools** > **Safeguards** > **Guardrails**.
 <img src="../images/guardrails6.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 2. Turn on the **Status** toggle for the required guardrail. The advanced settings are displayed.  <img src="../images/guardrails2.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
@@ -149,7 +142,7 @@ Steps to disable a Guardrail:
 
 
 
-1. Navigate to **Generative AI Tools** > **Safeguards**> **Guardrails**.
+1. Navigate to **Generative AI Tools** > **Safeguards** > **Guardrails**.
 2. Turn off the **Status** toggle for the respective guardrail. The disable guardrail popup is displayed.  <img src="../images/guardrails1.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:45%;">
 3. Click **Disable**. The success message is displayed.
 
@@ -160,14 +153,13 @@ Steps to edit a Guardrail:
 
 
 
-1. Navigate to **Generative AI Tools** > **Safeguards**> **Guardrails**.
+1. Navigate to **Generative AI Tools** > **Safeguards** > **Guardrails**.
 2. Click **more** (three dots) and click **Edit**. The advanced settings are displayed.  <img src="../images/guardrails4.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 3. Toggle on/off the **LLM Input** and **LLM Output** as required.  <img src="../images/guardrails2.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:60%;">
 
 4. Click **Save**. The success message is displayed.
 
-We should have another section here Guardrails Runtime Behavior
 
 
 ## Guardrails Runtime Behavior

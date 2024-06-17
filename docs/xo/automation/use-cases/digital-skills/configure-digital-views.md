@@ -115,7 +115,9 @@ The Widgets thus created need to be attached to a Panel for runtime display and 
 We will see how to create Widgets with static JSON content. We will use a JSON to display a pie chart.
 
 1. Click **Create Panel** to create a new panel and name it **JSON Example**.
-2. Use the **more** icon and select **Panel Management**, there you will find the option to **Create Widget**. Click on that.
+2. Use the **3-dot** icon and select **Panel Management** from the menu, there you will find the option to **Add Widget**. Click on that.
+
+    <img src="../../images/panel-3-dot-menu.png" alt="3-dot menu for the new panel" title="3-dot menu for the new panel" style="border: 1px solid gray; zoom:75%;">
 
     <img src="../../images/more-panel-management.png" alt="more panel management" title="more panel management" style="border: 1px solid gray; zoom:75%;">
 
