@@ -15,7 +15,7 @@ Steps to enable the feature:
 
 
 1. Navigate to **Generative AI Tools** > **GenAI Features** > **Co-Pilot**.
-<img src="../images/cpf(1).png" alt="Select Model and Prompt" title="Select Model and Prompt" style="border: 1px solid gray; zoom:70%;"> 
+<img src="./images/cpf(1).png" alt="Select Model and Prompt" title="Select Model and Prompt" style="border: 1px solid gray; zoom:70%;"> 
 
 2. Select the **Model** and **Prompt** from the drop-down list for a feature. 
 
@@ -62,12 +62,12 @@ Follow these steps:
 
 1. Go to **Generative AI Tools** > **GenAI Features** > **Co-Pilot**.
 2. Hover over the feature to view the **Advance Setting** (gear) icon.
-<img src="./images/cpf(3).png" alt="Advance Setting" title="Advance Setting" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/cpf(3).png" alt="Advance Setting" title="Advance Setting" style="border: 1px solid gray; zoom:70%;"> 
 
  
 
 3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed.
-<img src="./images/cpf(2).png" alt="Edit Setting" title="Edit Setting" style="border: 1px solid gray; zoom:70%;">  
+<img src="../images/cpf(2).png" alt="Edit Setting" title="Edit Setting" style="border: 1px solid gray; zoom:70%;">  
 
 
 Adjusting the settings allows you to fine-tune the model’s behavior to meet your needs. The default settings work fine for most cases. You can tweak the settings and find the right balance for your use case. A few settings are common in the features, and a few are feature-specific:
@@ -101,7 +101,7 @@ Follow these steps:
 
 1. Go to **Generative AI Tools** > **GenAI Features** > **Co-Pilot**.
 2. Hover over the feature to view the **Setting** (gear) icon.
-<img src="./images/cpf(4).png" alt="Edit Setting" title="Edit Setting" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/cpf(4).png" alt="Edit Setting" title="Edit Setting" style="border: 1px solid gray; zoom:70%;"> 
 
   
 
@@ -478,13 +478,13 @@ LLM and Generative AI help generate accurate suggestions automatically without c
 1. When adding the short Bot description, the user must include specific details on the high-level scenarios the Bot needs to handle.
 2. The user generates use case suggestions by clicking **Get Use Cases**.
 3. Based on the user’s description, the system generates improved use case suggestions with the help of the OpenAI Model.
+<img src="../images/use-case-suggestions.png" alt="Use Case Suggestions" title="Use Case Suggestions" style="border: 1px solid gray; zoom:70%;"> 
 
 
 
 
 
 
-    ![alt_text](images/cpf(1).png  )
 
 
 

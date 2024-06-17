@@ -14,11 +14,12 @@ Steps to enable the feature:
 
 
 
-1. Navigate to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**. 
+1. Navigate to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**.
+<img src="../images/dcf(1).png" alt="Dynamic Conversations" title="Dynamic Conversations" style="border: 1px solid gray; zoom:70%;"> 
 
 
    
-    ![alt_text](images/dcf(1).jpg  )
+
     
 
 2. Select the **Model** and **Prompt** from the drop-down list for a feature. 
@@ -58,17 +59,20 @@ Follow these steps:
 
 
 
-1. Go to **App Settings** > **Generative AI Tools** > **Dynamic Conversations**.
+1. Go to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**.
 2. Hover over the feature to view the **Advance Setting** (gear) icon. 
+<img src="../images/dcf(2).png" alt="Dynamic Conversations" title="Dynamic Conversations" style="border: 1px solid gray; zoom:70%;"> 
 
 
-    ![alt_text](images/dcf(2).jpg  )
-   
     
-3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed. 
+3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed.
+<img src="../images/dcf(5).png" alt="Advance Setting" title="Advance Setting" style="border: 1px solid gray; zoom:70%;"> 
+ 
 
 
-    ![alt_text](images/dcf(5).png  )
+
+
+
  
 
 
@@ -98,7 +102,7 @@ Follow these steps:
 
 
 
-1. Go to **App Settings** > **Generative AI Tools** > **Dynamic Conversations**.
+1. Go to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**.
 2. Hover over the feature to view the **Setting** (gear) icon. 
 
     ![alt_text](images/image4-3-4.png  )

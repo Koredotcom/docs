@@ -17,7 +17,7 @@ Steps to configure a pre-built LLM:
 
 
 1. Go to **Generative AI Tools** > **Models Library**.
-<img src="./images/llm-intro.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/llm-intro.png" alt="Models Library" title="Models Library" style="border: 1px solid gray; zoom:70%;">
 
   
 
@@ -192,7 +192,7 @@ Steps to delete an integration:
 2. Click three dots (more icons) and then click **Delete** for the integration you want to delete.
 <img src="../images/reset-custom.png" alt="reset-custom" title="Delete Custom Model" style="border: 1px solid gray; zoom:70%;">
 
-    ![alt_text](images/reset-custom).png  )
+
 
 3. Click **Delete** in the confirmation dialog.  
 <img src="../images/llm-integration(16).png" alt="Delete Configuration" title="Delete Configuration" style="border: 1px solid gray; zoom:70%;">
