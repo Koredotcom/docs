@@ -144,9 +144,9 @@ Follow these steps:
 | Conversation Test Case Suggestions      | ✅            |           |          |
 | Conversation Summary                    | ✅            |           |          |
 | Generating Opposite Utterance Suggestions |               |         |     ✅     |
-| Generating Similar Answer Suggestions   | Not Linked    |           |          |
+| Generating Similar Answer Suggestions   | -    |           |          |
 | Generating Similar Utterance Suggestions|               |        |       ✅    |
-| Generating Similar QM Utterance Suggestions | Not Linked  |           |          |
+| Generating Similar QM Utterance Suggestions | -  |           |          |
 | NLP Batch Test Case Suggestions         | ✅            |           |          |
 | Training Utterance Suggestions          | ✅            |           |          |
 

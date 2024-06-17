@@ -146,7 +146,7 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 
 | Feature                     | Automation AI | Search AI | Agent AI |
 |-----------------------------|---------------|-----------|----------|
-| Agent Response Rephrasing   |               |         |    ✅      |
+| Agent Response Rephrasing   |               |          |    ✅      |
 | Answer Generation           |               | ✅        |          |
 | GenAI Node                  | ✅            |           |          |
 | GenAI Prompt                | ✅            |           |          |
