@@ -70,8 +70,8 @@ Follow these steps:
 
 
     
-3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed.
-<img src="../images/dcf(5).png" alt="Advance Setting" title="Advance Setting" style="border: 1px solid gray; zoom:70%;"> 
+3. Click the **Advance Settings**. The **Advance Settings** dialog box is displayed.
+<img src="../images/dcf(5).png" alt="Advance Settings" title="Advance Settings" style="border: 1px solid gray; zoom:70%;"> 
  
 
 
@@ -108,7 +108,7 @@ Follow these steps:
 
 
 1. Go to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**.
-2. Hover over the feature to view the **Setting** (gear) icon.
+2. Hover over the feature to view the **Settings** (gear) icon.
 <img src="../images/image4-3-4.png" alt="Edit Settings" title="Edit Settings" style="border: 1px solid gray; zoom:70%;"> 
 
 
@@ -144,7 +144,7 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 
 ## Product and Feature Support Matrix
 
-(✅ Supported | ❌ Not supported)
+(✅ Supported | - Not supported)
 
 | Feature                     | Automation AI | Search AI | Agent AI |
 |:-------------------------|:------------:|:------------:|:------------:|
