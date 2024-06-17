@@ -2,6 +2,44 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+## v11.2.1 June 15, 2024
+
+<u>Patch Release</u>
+
+This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
+
+### Configuration
+
+#### Revised Routing Logic When No Agents Available
+
+When no agents are logged in, conversations will now remain in the queue until the maximum wait time specified for that queue is reached. After the queue timeout occurs, the "no agents available" flow will be automatically triggered.
+
+This enhanced routing logic is enabled by default at the account level for all new accounts and applies across all channels. It ensures that when agents are unavailable, conversations are handled smoothly by the fallback flow after the configured wait time, improving the customer experience.
+
+Existing accounts will continue to use their current routing logic. To take advantage of this improved routing, please contact Kore Support to modify your configuration. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#behavior-when-no-agents-are-available)
+
+### Voice Gateway
+
+#### Support for Additional Azure Voices
+
+Contact Center AI now supports additional Azure voices, providing a wider range of options for voice-based interactions. The following voices have been added:
+
+* en-US: Ava
+* en-UK: Sonia
+* de-DE: Louisa
+* en-AU: Freya
+* es-ES: Elvira
+* es-CO: Salome
+* fr-FR: Denise
+* it-IT: Isabella
+* ko-KO: SoonBok
+* Mandarin (China): XiaoXiao
+* Cantonese (China): XiaoMin
+
+Additionally, Ava Multilingual, a voice that supports a wide range of languages, has been introduced. Ava Multilingual supports the following languages:
+
+* af-ZA, am-ET, ar-EG, ar-SA, az-AZ, bg-BG, bn-BD, bn-IN, bs-BA, ca-ES, cs-CZ, cy-GB, da-DK, de-AT, de-CH, de-DE, el-GR, en-AU, en-CA, en-GB, en-IE, en-IN, en-US, es-ES, es-MX, et-EE, eu-ES, fa-IR, fi-FI, fil-PH, fr-BE, fr-CA, fr-CH, fr-FR, ga-IE, gl-ES, he-IL, hi-IN, hr-HR, hu-HU, hy-AM, id-ID, is-IS, it-IT, ja-JP, jv-ID, ka-GE, kk-KZ, km-KH, kn-IN, ko-KR, lo-LA, lt-LT, lv-LV, mk-MK, ml-IN, mn-MN, ms-MY, mt-MT, my-MM, nb-NO, ne-NP, nl-BE, nl-NL, pl-PL, ps-AF, pt-BR, pt-PT, ro-RO, ru-RU, si-LK, sk-SK, sl-SI, so-SO, sq-AL, sr-RS, su-ID, sv-SE, sw-KE, ta-IN, te-IN, th-TH, tr-TR, uk-UA, ur-PK, uz-UZ, vi-VN, zh-CN, zh-HK, zh-TW, zu-ZA.
+
 ## v11.2 June 01, 2024
 
 <u>Patch Release</u>

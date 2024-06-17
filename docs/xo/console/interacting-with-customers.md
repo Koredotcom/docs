@@ -714,6 +714,13 @@ If an agent does not accept/send a response within a specified time, the system 
 This status is not available for selection by an agent.
 <img src="../images/away-idle.png" alt="Away (Idle)" title="Away (Idle)" style="border: 1px solid gray; zoom:80%;">
 
+## Behavior When No Agents are Available
+
+If no agents are logged in, conversations will wait in the queue till the maximum wait time specified for the queue.
+After the queue max timeout occurs, the "[no agents available](../contactcenter/configurations/default-flows/configure-default-flows.md#no-agents-available)" flow is triggered. This is enabled at the account level for new accounts and applies to all channels.
+For existing accounts, the existing routing logic is applicable. For accounts wanting to modify their routing logic, contact Kore Support.
+
+
 ## CSAT Survey
 
 The CSAT (Customer Satisfaction) survey is essential for contact centers because it provides valuable feedback on customer satisfaction levels, enabling continuous improvement of service quality.
