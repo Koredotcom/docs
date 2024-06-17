@@ -28,7 +28,12 @@ Steps to enable the feature:
 		
 
 	
+## Smart Filter
 
+Smart filtering in the Features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent). The users can easily add/remove this filter as needed.
+
+
+<img src="./images/genai-product-level-filters-dcf.png" alt="Product Level Filter" title="Product Level Filter" style="border: 1px solid gray; zoom:70%;"> 
 	
 
 		
@@ -103,9 +108,10 @@ Follow these steps:
 
 
 1. Go to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**.
-2. Hover over the feature to view the **Setting** (gear) icon. 
+2. Hover over the feature to view the **Setting** (gear) icon.
+<img src="./images/image4-3-4.png" alt="Edit Settings" title="Edit Settings" style="border: 1px solid gray; zoom:70%;"> 
 
-    ![alt_text](images/image4-3-4.png  )
+
  
 
 3. Click **Edit**. The Actual Response is displayed. 
@@ -329,7 +335,7 @@ If this feature is disabled, you cannot configure the ML model to build custom p
 
 ### Repeat Responses
 
-This feature uses LLM to reiterate the recent bot responses when the Repeat Response event is triggered. Bot developers can enable the event and customize the trigger conditions. This empowers end-users to ask the bot to repeat its recent responses at any point during the conversation. Currently, this event is supported for IVR, Audiocodes, and Twilio Voice channels.[ Learn more](https://developer.kore.ai/docs/bots/bot-intelligence/event-based-bot-actions/#Repeat_Bot_Response_Event).
+This feature uses LLM to reiterate the recent bot responses when the Repeat Response event is triggered. Bot developers can enable the event and customize the trigger conditions. This empowers end-users to ask the bot to repeat its recent responses at any point during the conversation. Currently, this event is supported for IVR, Audiocodes, and Twilio Voice channels.[ Learn more](../automation/intelligence/event-handling.md#repeat-bot-response-event).
 
 
 

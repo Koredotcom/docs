@@ -129,7 +129,7 @@ Steps to enable a Guardrail:
 
 
 1. Navigate to **Generative AI Tools** > **Safeguards**> **Guardrails**.
-<img src="./images/guardrails6.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/guardrails6.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 
 2. Turn on the **Status** toggle for the required guardrail. The advanced settings are displayed.  <img src="../images/guardrails2.png" alt="Guardrails" title="Guardrails" style="border: 1px solid gray; zoom:70%;">
 

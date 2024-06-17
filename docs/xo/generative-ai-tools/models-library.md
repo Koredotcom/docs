@@ -82,7 +82,7 @@ Steps to integrate a Custom LLM:
 
     ![alt_text](images/llm-integration(8).png  )
 
-4. On the **Auth** tab, select an existing authorization profile from the drop-down or create a new profile  to use for this request. For more information, see the[ Bot Authorization Overview](https://developer.kore.ai/docs/bots/advanced-topics/authorization/bot-authentication/) article. 
+4. On the **Auth** tab, select an existing authorization profile from the drop-down or create a new profile  to use for this request. For more information, see the[ Bot Authorization Overview](../app-settings/dev-tools/bot-authorization/bot-authentication.md) article. 
     ![alt_text](images/llm-integration(15).png  )
 
     !!! note
