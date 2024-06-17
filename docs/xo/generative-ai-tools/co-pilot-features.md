@@ -135,18 +135,18 @@ Follow these steps:
 
 The following table displays the Co-Pilot features and the supported products.
 
-(✅ Supported | - Not supported)
+(✅ Supported | ❌Not supported)
 
 | Feature                                 | Automation AI | Search AI | Agent AI |
 |:-----------------------------------|:------------:|:------------:|:------------:|
-| Automatic Dialog Generation             | ✅            |    -       |     -     |
-| Conversation Test Case Suggestions      | ✅            |      -     |      -    |
-| Conversation Summary                    | ✅            |      -     |      -    |
-| Generating Opposite Utterance Suggestions |      -       |    -     |     ✅     |
-| Generating Similar Answer Suggestions   |        -       |     ✅  |      -       |
-| Generating Similar Utterance Suggestions|      -         |    -    |       ✅    |
-| NLP Batch Test Case Suggestions         | ✅            |     -      |      -    |
-| Training Utterance Suggestions          | ✅            |     -      |    -      |
+| Automatic Dialog Generation             | ✅            |    ❌      |     ❌    |
+| Conversation Test Case Suggestions      | ✅            |      ❌    |      ❌   |
+| Conversation Summary                    | ✅            |      ❌    |      ❌   |
+| Generating Opposite Utterance Suggestions |      ❌      |    ❌    |     ✅     |
+| Generating Similar Answer Suggestions   |        ❌      |     ✅  |      ❌      |
+| Generating Similar Utterance Suggestions|      ❌        |    ❌   |       ✅    |
+| NLP Batch Test Case Suggestions         | ✅            |     ❌     |      ❌   |
+| Training Utterance Suggestions          | ✅            |     ❌     |    ❌     |
 
 
 
