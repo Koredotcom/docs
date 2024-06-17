@@ -66,13 +66,13 @@ Follow these steps:
 
 
 1. Go to **Generative AI Tools** > **GenAI Features** > **Co-Pilot**.
-2. Hover over the feature to view the **Advance Setting** (gear) icon.
-<img src="../images/cpf(3).png" alt="Advance Setting" title="Advance Setting" style="border: 1px solid gray; zoom:70%;"> 
+2. Hover over the feature to view the **Advance Settings** (gear) icon.
+<img src="../images/cpf(3).png" alt="Advance Settings" title="Advance Settings" style="border: 1px solid gray; zoom:70%;"> 
 
  
 
-3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed.
-<img src="../images/cpf(2).png" alt="Edit Setting" title="Edit Setting" style="border: 1px solid gray; zoom:70%;">  
+3. Click the **Advance Settings**. The **Advance Settings** dialog box is displayed.
+<img src="../images/cpf(2).png" alt="Edit Settings" title="Edit Settings" style="border: 1px solid gray; zoom:70%;">  
 
 
 Adjusting the settings allows you to fine-tune the model’s behavior to meet your needs. The default settings work fine for most cases. You can tweak the settings and find the right balance for your use case. A few settings are common in the features, and a few are feature-specific:
@@ -105,8 +105,8 @@ Follow these steps:
 
 
 1. Go to **Generative AI Tools** > **GenAI Features** > **Co-Pilot**.
-2. Hover over the feature to view the **Setting** (gear) icon.
-<img src="../images/cpf(4).png" alt="Edit Setting" title="Edit Setting" style="border: 1px solid gray; zoom:70%;"> 
+2. Hover over the feature to view the **Settings** (gear) icon.
+<img src="../images/cpf(4).png" alt="Edit Settings" title="Edit Settings" style="border: 1px solid gray; zoom:70%;"> 
 
   
 
@@ -137,7 +137,7 @@ Follow these steps:
 
 ## Product and Feature Support Matrix
 
-(✅ Supported | ❌ Not supported)
+(✅ Supported | - Not supported)
 
 | Feature                                 | Automation AI | Search AI | Agent AI |
 |:-----------------------------------|:------------:|:------------:|:------------:|
@@ -145,9 +145,8 @@ Follow these steps:
 | Conversation Test Case Suggestions      | ✅            |      -     |      -    |
 | Conversation Summary                    | ✅            |      -     |      -    |
 | Generating Opposite Utterance Suggestions |      -       |    -     |     ✅     |
-| Generating Similar Answer Suggestions   | Not linked on UI |     -   |      ✅        |
+| Generating Similar Answer Suggestions   |        -       |     ✅  |      -       |
 | Generating Similar Utterance Suggestions|      -         |    -    |       ✅    |
-| Generating Similar QM Utterance Suggestions | Not linked  on UI   |    -     |     -    |
 | NLP Batch Test Case Suggestions         | ✅            |     -      |      -    |
 | Training Utterance Suggestions          | ✅            |     -      |    -      |
 
