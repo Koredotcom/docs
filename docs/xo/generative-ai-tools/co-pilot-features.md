@@ -38,7 +38,7 @@ Steps to enable the feature:
 Smart filtering in the Features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent). The users can easily add/remove this filter as needed.
 
 
-<img src="./images/genai-product-level-filters.png" alt="Product Level Filter" title="Product Level Filter" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/genai-product-level-filters.png" alt="Product Level Filter" title="Product Level Filter" style="border: 1px solid gray; zoom:70%;"> 
 
 ## Change Settings for a Model
 
@@ -135,9 +135,21 @@ Follow these steps:
 
 	
 
-		
+## Product and Feature Support Matrix
 
-			
+
+| Feature                                 | Automation AI | Search AI | Agent AI |
+|-----------------------------------------|---------------|-----------|----------|
+| Automatic Dialog Generation             | ✅            |           |          |
+| Conversation Test Case Suggestions      | ✅            |           |          |
+| Conversation Summary                    | ✅            |           |          |
+| Generating Opposite Utterance Suggestions |               |         |     ✅     |
+| Generating Similar Answer Suggestions   | Not Linked    |           |          |
+| Generating Similar Utterance Suggestions|               |        |       ✅    |
+| Generating Similar QM Utterance Suggestions | Not Linked  |           |          |
+| NLP Batch Test Case Suggestions         | ✅            |           |          |
+| Training Utterance Suggestions          | ✅            |           |          |
+
 
 
 ## Model and Feature Support Matrix

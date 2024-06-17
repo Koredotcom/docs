@@ -33,7 +33,7 @@ Steps to enable the feature:
 Smart filtering in the Features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent). The users can easily add/remove this filter as needed.
 
 
-<img src="./images/genai-product-level-filters-dcf.png" alt="Product Level Filter" title="Product Level Filter" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/genai-product-level-filters-dcf.png" alt="Product Level Filter" title="Product Level Filter" style="border: 1px solid gray; zoom:70%;"> 
 	
 
 		
@@ -142,7 +142,20 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 
 		
 
-			
+## Product and Feature Support Matrix
+
+| Feature                     | Automation AI | Search AI | Agent AI |
+|-----------------------------|---------------|-----------|----------|
+| Agent Response Rephrasing   |               |         |    ✅      |
+| Answer Generation           |               | ✅        |          |
+| GenAI Node                  | ✅            |           |          |
+| GenAI Prompt                | ✅            |           |          |
+| Repeat Responses            | ✅            |           |          |
+| Rephrase Dialog Responses   | ✅            |           |          |
+| Rephrase User Query         | ✅            |           |          |
+| Vector Generation           |               | ✅        |          |
+| Zero-shot ML Model          | ✅            |           |          |
+
 
 
 ## Model and Feature Support Matrix
