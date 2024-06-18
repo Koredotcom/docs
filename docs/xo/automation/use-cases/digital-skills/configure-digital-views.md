@@ -148,6 +148,7 @@ We will see how to create Widgets with static JSON content. We will use a JSON t
         };
     print(JSON.stringify(message));
     ```
+    
 4. Save the new widget.
 5. Click on **Create Panel** to create a new panel and name it _JSON Example_.
 6. Click the **3-dot menu** icon on the panel. Select the **Add Widget** or **Panel Management** option and add the above created _Pie Chart_ widget.
