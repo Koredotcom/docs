@@ -56,6 +56,28 @@ To configure a new connector, go to the **Connectors** tab under the **Sources**
 
 The following page shows the list of available connectors. Choose the connector corresponding to the third-party application that you want to connect to and configure it. For detailed instructions on configuring connectors, refer to the respective documentation.
 
+### Ingesting Content
+
+By default when a connector is added, the content is not ingested from the third-party application until a Sync operation is performed. You can either initiate a sync operation manually or schedule an automatic sync. 
+
+To initiate a sync operation manually, go to the Configurations tab in the Connector details and click on **Sync Now**. This initiates the sync operation immediately and ingests new or updated content from the application. 
+
+![Manual Sync](../images/connectors/manual-sync.png "Manual Sync")
+
+You can also schedule an automatic sync operation for a future time. Automatic Sync ensures that the data stays up-to-date and also reduces the administrative overhead of performing manual sync regularly. 
+
+The automatic sync can be scheduled as a one-time activity or to be performed at regular intervals. To schedule a sync operation, enable the **Schedule Sync** option and provide the date and time of the beginning of the event. 
+
+![Auto Sync](../images/connectors/schedule-sync.png "Auto Sync")
+
+To set up a recurring sync schedule, provide the synchronization frequency along with the date and time of the first sync operation.  Once set, the scheduler automatically ingests content using the connector at regular intervals. 
+
+![Recurring Sync](../images/connectors/recurrent-sync.png "Recurring Sync")
+
+To disable automatic synchronization at any time, use the **Schedule Sync** slider button. 
+
+![Disable Sync](../images/connectors/disable-sync.png "Disable Sync")
+
 ### Enabling/Disabling Connectors
 
 After the connector is configured and the source is connected, you can enable or disable the connection temporarily. When a connector is disabled, sync operation is temporarily disabled. This may be useful for testing, particularly when there is more than one connector configured with your Search AIst application. 
