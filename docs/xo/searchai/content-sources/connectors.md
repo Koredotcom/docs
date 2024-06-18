@@ -62,21 +62,21 @@ By default when a connector is added, the content is not ingested from the third
 
 To initiate a sync operation manually, go to the Configurations tab in the Connector details and click on **Sync Now**. This initiates the sync operation immediately and ingests new or updated content from the application. 
 
-![Manual Sync](../images/connectors/manual-sync.png "Manual Sync")
+![Manual Sync](../images/connectors/manual-sync.PNG "Manual Sync")
 
 You can also schedule an automatic sync operation for a future time. Automatic Sync ensures that the data stays up-to-date and also reduces the administrative overhead of performing manual sync regularly. 
 
 The automatic sync can be scheduled as a one-time activity or to be performed at regular intervals. To schedule a sync operation, enable the **Schedule Sync** option and provide the date and time of the beginning of the event. 
 
-![Auto Sync](../images/connectors/schedule-sync.png "Auto Sync")
+![Auto Sync](../images/connectors/schedule-sync.PNG "Auto Sync")
 
 To set up a recurring sync schedule, provide the synchronization frequency along with the date and time of the first sync operation.  Once set, the scheduler automatically ingests content using the connector at regular intervals. 
 
-![Recurring Sync](../images/connectors/recurrent-sync.png "Recurring Sync")
+![Recurring Sync](../images/connectors/recurrent-sync.PNG "Recurring Sync")
 
 To disable automatic synchronization at any time, use the **Schedule Sync** slider button. 
 
-![Disable Sync](../images/connectors/disable-sync.png "Disable Sync")
+![Disable Sync](../images/connectors/disable-sync.PNG "Disable Sync")
 
 ### Enabling/Disabling Connectors
 
