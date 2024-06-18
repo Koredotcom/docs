@@ -106,7 +106,7 @@ The Widgets thus created need to be attached to a Panel for runtime display and 
 
     <img src="../../images/add-widget-to-panel.png" alt="add widget to panel" title="add widget to panel" style="border: 1px solid gray; zoom:75%;">
 
-5. Use the **Test** button to see the widgets in action. 
+5. Click the 3-dot menu icon on the panel, and select the **Test** option from the menu to see the widgets in action. 
 
     <img src="../../images/test-widget.png" alt="test widget" title="test widget" style="border: 1px solid gray; zoom:75%;">
 
@@ -115,17 +115,13 @@ The Widgets thus created need to be attached to a Panel for runtime display and 
 We will see how to create Widgets with static JSON content. We will use a JSON to display a pie chart.
 
 1. Click **Create Panel** to create a new panel and name it **JSON Example**.
-2. Use the **3-dot** icon and select **Panel Management** from the menu, there you will find the option to **Add Widget**. Click on that.
+2. In the New Widget dialog, name it Pie Chart, and set the source to JSON.
 
-    <img src="../../images/panel-3-dot-menu.png" alt="3-dot menu for the new panel" title="3-dot menu for the new panel" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/new-widget-json.png" alt="New widget - JSON" title="New widget - JSON" style="border: 1px solid gray; zoom:75%;">
 
-    <img src="../../images/more-panel-management.png" alt="more panel management" title="more panel management" style="border: 1px solid gray; zoom:75%;">
-
-3. In the **New Widget** dialog, enter the Name, and set the source to JSON.
+3. Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, [refer here](../../../../sdk/widget-sdk-message-formatting-and-templates/){:target="_blank"}.
 
     <img src="../../images/new-widget-data-entry.png" alt="new widget data" title="new widget data" style="border: 1px solid gray; zoom:75%;">
-
-4. Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, click [here](../../../../channels/add-wigdet-sdk-channel/){:target="_blank"}. 
 
     ```
     {   "templateType": "piechart",
@@ -152,9 +148,13 @@ We will see how to create Widgets with static JSON content. We will use a JSON t
         };
     print(JSON.stringify(message));
     ```
+4. Save the new widget.
+5. Click on **Create Panel** to create a new panel and name it _JSON Example_.
+6. Click the **3-dot menu** icon on the panel. Select the **Add Widget** or **Panel Management** option and add the above created _Pie Chart_ widget.
 
-    * Test the panel and you will see both the **Panel** icons.
-    * Click on each to see them in action.
+    <img src="../../images/panel-3-dot-menu.png" alt="Add widget to panel" title="Add widget to panel" style="border: 1px solid gray; zoom:75%;">
+
+7. **Test** the panel and you will see the panel icons, click on each to see the widgets within them in action.
 
     <img src="../../images/test-panel.png" alt="test panel" title="test panel" style="border: 1px solid gray; zoom:75%;">
 
