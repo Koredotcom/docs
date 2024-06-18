@@ -28,9 +28,9 @@ Steps to enable the feature:
 		
 
 	
-## Smart Filter
+## Product Filter
 
-Smart filtering in the Features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent). The users can easily add/remove this filter as needed.
+Smart filtering in the features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent). The users can easily add/remove this filter as needed.
 
 
 <img src="../images/genai-product-level-filters-dcf.png" alt="Product Level Filter" title="Product Level Filter" style="border: 1px solid gray; zoom:70%;"> 
@@ -65,7 +65,7 @@ Follow these steps:
 
 
 1. Go to **Generative AI Tools** > **GenAI Features** > **Dynamic Conversations**.
-2. Hover over the feature to view the **Advance Setting** (gear) icon. 
+2. Hover over the feature to view the **Advance Settings** (gear) icon. 
 <img src="../images/dcf(2).png" alt="Dynamic Conversations" title="Dynamic Conversations" style="border: 1px solid gray; zoom:70%;"> 
 
 
@@ -144,19 +144,21 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 
 ## Product and Feature Support Matrix
 
-(✅ Supported | - Not supported)
+The following table displays the Dynamic Conversation features and the supported products. 
+
+(✅ Supported | ❌ Not supported)
 
 | Feature                     | Automation AI | Search AI | Agent AI |
 |:-------------------------|:------------:|:------------:|:------------:|
-| Agent Response Rephrasing   |      -        |   -       |    ✅      |
-| Answer Generation           |       -      | ✅        |    -      |
-| GenAI Node                  | ✅            |      -     |  -        |
-| GenAI Prompt                | ✅            |        -   |    -      |
-| Repeat Responses            | ✅            |    -       |    -      |
-| Rephrase Dialog Responses   | ✅            |    -       |      -    |
-| Rephrase User Query         | ✅            |    -       |   -       |
-| Vector Generation           |        -       | ✅        |   -       |
-| Zero-shot ML Model          | ✅            |     -      |    -      |
+| Agent Response Rephrasing   |      ❌       |   ❌      |    ✅      |
+| Answer Generation           |       ❌     | ✅        |    ❌     |
+| GenAI Node                  | ✅            |      ❌    |  ❌       |
+| GenAI Prompt                | ✅            |        ❌  |    ❌     |
+| Repeat Responses            | ✅            |    ❌      |    ❌     |
+| Rephrase Dialog Responses   | ✅            |    ❌      |      ❌   |
+| Rephrase User Query         | ✅            |    ❌      |   ❌      |
+| Vector Generation           |        ❌      | ✅        |   ❌      |
+| Zero-shot ML Model          | ✅            |     ❌     |    ❌     |
 
 
 
@@ -164,7 +166,7 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 
 The following table displays the Dynamic Conversation features and the supported models. 
 
-(✅ Supported | ❌ Not Supported)
+(✅ Supported | ❌ Not supported)
 
 
 <table>

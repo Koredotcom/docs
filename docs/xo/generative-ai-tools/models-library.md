@@ -38,7 +38,8 @@ Steps to configure a pre-built LLM:
         2. On the **Authorization** tab, enter the **API Key**.
         3. Read the **Policy Guidelines**, select the checkbox, and click **Save**.
 
-3. The configured model is listed in the Models Library section. The status changed to _X/Y_ models configured, where _X_ is the number of the model(s) configured, and _Y_ is the number of model(s) supported. 
+3. The configured model is listed in the Models Library section. The status changed to _X/Y_ models configured, where _X_ is the number of the model(s) configured, and _Y_ is the number of model(s) supported.
+<img src="../images/model-status.png" alt="Model Configured" title="Model Configured" style="border: 1px solid gray; zoom:70%;">
    
 
 4. If you want to configure another model, click **+ New Model** and select the model. 
@@ -102,7 +103,8 @@ Steps to integrate a Custom LLM:
     ![alt_text](images/llm-integration(7).png  )
 
 7. Please **Read Policy Guidelines**, select the check box, and then click **Save**.
-8. The success confirmation message is displayed on the screen. The configured model is listed in the LLM Integration section. The status changed to _X/Y_ models configured, where _X_ is the number of the model(s) configured, and _Y_ is the number of model(s) supported. 
+8. The success confirmation message is displayed on the screen. The configured model is listed in the LLM Integration section. The status changed to _X/Y_ models configured, where _X_ is the number of the model(s) configured, and _Y_ is the number of model(s) supported.
+<img src="../images/model-status.png" alt="Model Configured" title="Model Configured" style="border: 1px solid gray; zoom:70%;">
 
     
 
@@ -135,7 +137,7 @@ Steps to enable Kore.ai XO GPT Models.
 
 4. Read the Policy Guidelines, select the checkbox, and click Save.
 5. The success confirmation message is displayed on the screen. The configured model is listed in the LLM Integration section. The status changes to X/Y models configured, where X is the number of the model(s) configured, and Y is the number of model(s) supported.
-
+<img src="../images/model-status.png" alt="Model Configured" title="Model Configured" style="border: 1px solid gray; zoom:70%;">
 
 
 6. You can now use these models in [ Co-Pilot](co-pilot-features.md) and [Dynamic Conversations](dynamic-conversations-features.md) features.
