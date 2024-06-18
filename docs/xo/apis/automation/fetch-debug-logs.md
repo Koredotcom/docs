@@ -155,7 +155,7 @@ Accepted channel types are:
 
 ## Sample Response
 
-```
+```json
 [
     {
         "timestamp": "2018-11-22T13:06:17.258Z",

@@ -23,9 +23,17 @@ Alternatively, if some web domains are already configured for crawling, you will
 
 ![Add new web source](../images/add-web-source.png "add a new web source")
 
-Enter the following details of the web domain to be crawled on the **Configuration** tab and click **Save & Crawl**.
+Provide details of the crawl configuration on the **Configuration** tab and click **Save & Crawl**.
 
 ![Web Crawl Configuration](../images/add-web-config-page.png "Web Crawl Configuration")
+
+This validates the configuration provided and by default, automatically initiates the crawl process after validation.
+![Automate Crawling](../images/automatic-crawl.PNG "Automate Crawling")
+
+You can choose to run the crawl in the background which allows you to perform other tasks on the application. Alternatively, you can also schedule the crawler to run at specific times in the future.
+![Schedule Crawling](../images/schedule-crawl.PNG "Schedule Crawling")
+
+### Crawl Configuration
 
 **Source Title** – Provide a unique name for the web source. 
 
@@ -262,9 +270,17 @@ You can also delete one or more of the crawled pages individually from the sourc
 !!!note
     Note that if a specific page is deleted manually as explained above and the web source is recrawled, the page reappears in the crawled pages list unless the crawl options are modified to disable the crawling of this page( like adding it in the exclude list). 
 
-## Troubleshooting
+## Web Crawl Errors and Troubleshooting
 
-There can be various scenarios when the application either fails to crawl a web page or successfully crawls the page but does not index the web page’s content and, hence, does not return the expected results. Listed below are some of the most common of these scenarios. For any specific queries or issues, please contact us. 
+There can be various scenarios when the application either fails to crawl a web page or successfully crawls the page but does not index the web page’s content and, hence, does not return the expected results. 
+
+Whenever the application fails to validate the crawl configuration provided and is unable to initiate the crawling process, the details of the error are displayed as shown below.
+![Error Reporting](../images/validation-error.PNG "Error Reporting")
+
+If the web crawl fails while running in the background, you can see the crawl errors in the status field as shown below. Hovering over the info icon gives you more details about the error.
+![Error Reporting](../images/webcrawl-list-error-status.PNG "Error Reporting")
+
+Some of the most common error scenarios are listed below for reference. For any specific queries or issues, please contact us. 
 
 1.**Web Crawl Failure:**
 
@@ -282,3 +298,5 @@ There can be various scenarios when the application either fails to crawl a web 
 3.**Web Crawl Takes Too Long:**
 
 * Verify if the web pages are JavaScript-rendered and enable the option if necessary. This situation may arise when many pages on the website being crawled return no content because they are JavaScript-rendered. The crawler continues to crawl the next pages until it crawls the specified number of pages (defined by *‘max URLs’* ).
+
+For an exact list of errors, potential reasons for errors and the next steps to take, refer to [this list](../web-crawl-errors).

@@ -2,11 +2,7 @@
 
 # Co-Pilot Features
 
-	
 
-		
-
-			
 
 The Co-Pilot features add design-time capabilities to accelerate your bot development process using tailored LLM features. By default, all the features are disabled. To enable the feature, select the model, prompt, and then toggle the status to enable it. You can select another supported model for a feature if you have configured multiple models. You can also change the model, its prompts, and the respective settings.
 
@@ -33,12 +29,12 @@ Steps to enable the feature:
 		
 
 			
-## Smart Filter
+## Product Filter
 
-Smart filtering in the Features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent). The users can easily add/remove this filter as needed.
+Smart filtering in the features section is based on the context from which the users access the Generative AI menu. This will only show the relevant feature options for that product (e.g., Automation, Search, Agent). The users can easily add/remove this filter as needed.
 
 
-<img src="../images/genai-product-level-filters.png" alt="Product Level Filter" title="Product Level Filter" style="border: 1px solid gray; zoom:70%;"> 
+<img src="../images/genai-product-level-filters-cf.png" alt="Product Level Filter" title="Product Level Filter" style="border: 1px solid gray; zoom:70%;"> 
 
 ## Change Settings for a Model
 
@@ -66,13 +62,13 @@ Follow these steps:
 
 
 1. Go to **Generative AI Tools** > **GenAI Features** > **Co-Pilot**.
-2. Hover over the feature to view the **Advance Setting** (gear) icon.
-<img src="../images/cpf(3).png" alt="Advance Setting" title="Advance Setting" style="border: 1px solid gray; zoom:70%;"> 
+2. Hover over the feature to view the **Advance Settings** (gear) icon.
+<img src="../images/cpf(3).png" alt="Advance Settings" title="Advance Settings" style="border: 1px solid gray; zoom:70%;"> 
 
  
 
-3. Click the **Advance Setting**. The **Advance Settings** dialog box is displayed.
-<img src="../images/cpf(2).png" alt="Edit Setting" title="Edit Setting" style="border: 1px solid gray; zoom:70%;">  
+3. Click the **Advance Settings**. The **Advance Settings** dialog box is displayed.
+<img src="../images/cpf(2).png" alt="Edit Settings" title="Edit Settings" style="border: 1px solid gray; zoom:70%;">  
 
 
 Adjusting the settings allows you to fine-tune the model’s behavior to meet your needs. The default settings work fine for most cases. You can tweak the settings and find the right balance for your use case. A few settings are common in the features, and a few are feature-specific:
@@ -105,8 +101,8 @@ Follow these steps:
 
 
 1. Go to **Generative AI Tools** > **GenAI Features** > **Co-Pilot**.
-2. Hover over the feature to view the **Setting** (gear) icon.
-<img src="../images/cpf(4).png" alt="Edit Setting" title="Edit Setting" style="border: 1px solid gray; zoom:70%;"> 
+2. Hover over the feature to view the **Settings** (gear) icon.
+<img src="../images/cpf(4).png" alt="Edit Settings" title="Edit Settings" style="border: 1px solid gray; zoom:70%;"> 
 
   
 
@@ -137,18 +133,20 @@ Follow these steps:
 
 ## Product and Feature Support Matrix
 
+The following table displays the Co-Pilot features and the supported products.
+
+(✅ Supported | ❌ Not supported)
 
 | Feature                                 | Automation AI | Search AI | Agent AI |
-|-----------------------------------------|---------------|-----------|----------|
-| Automatic Dialog Generation             | ✅            |           |          |
-| Conversation Test Case Suggestions      | ✅            |           |          |
-| Conversation Summary                    | ✅            |           |          |
-| Generating Opposite Utterance Suggestions |               |         |     ✅     |
-| Generating Similar Answer Suggestions   | -    |           |          |
-| Generating Similar Utterance Suggestions|               |        |       ✅    |
-| Generating Similar QM Utterance Suggestions | -  |           |          |
-| NLP Batch Test Case Suggestions         | ✅            |           |          |
-| Training Utterance Suggestions          | ✅            |           |          |
+|:-----------------------------------|:------------:|:------------:|:------------:|
+| Automatic Dialog Generation             | ✅            |    ❌      |     ❌    |
+| Conversation Test Case Suggestions      | ✅            |      ❌    |      ❌   |
+| Conversation Summary                    | ✅            |      ❌    |      ❌   |
+| Generating Opposite Utterance Suggestions |      ❌      |    ❌    |     ✅     |
+| Generating Similar Answer Suggestions   |        ❌      |     ✅  |      ❌      |
+| Generating Similar Utterance Suggestions|      ❌        |    ❌   |       ✅    |
+| NLP Batch Test Case Suggestions         | ✅            |     ❌     |      ❌   |
+| Training Utterance Suggestions          | ✅            |     ❌     |    ❌     |
 
 
 
