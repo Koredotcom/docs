@@ -1617,6 +1617,57 @@ Headers: {
 
 If your bot has a form that needs user input, the synchronous WebHook channel gets the complete form definition in the response, and you need to send the _formData_ in the request when interacting with the bot.
 
+#### Sample Request
+You can get the Webhook API URL on the WebHook channel **Configurations** tab. Learn more.
+
+!!! note
+
+    This URL is available only after enabling the channel.
+
+```
+ "session": {
+       "new": false
+   },
+   "message": {
+       "val": {
+           "formId": "{{formId}}",
+           "data": [
+               {
+                   "componentId": "{{ComponentId}}",
+                   "input": "VIPUL"
+               },
+               {
+                   "componentId": "{{ComponentId}}",
+                   "input": "SHARMA"
+               },
+               {
+                   "componentId": "{{ComponentId}}",
+                   "input": "Submit"
+               }
+           ],
+           "meta": {}
+       },
+       "type": "formData"
+   },
+   "from": {
+       "id": "",
+       "userInfo": {
+           "firstName": "",
+           "lastName": "",
+           "email": ""
+       }
+   },
+   "to": {
+       "id": "",
+       "groupInfo": {
+           "id": "",
+           "name": ""
+       }
+   },
+Others if any
+}
+```
+
 
 #### Sample Response
 
@@ -1729,36 +1780,7 @@ If your bot has a form that needs user input, the synchronous WebHook channel ge
 
 
 
-#### Sample Request
 
-
-```
-{
-    "session": {
-        "new": false
-    },
-    "message": {
-        "formData": {
-            "formId": "frm-2b2f1ae4-9a3b-5f22-8940-b6827710940f",
-            "data": [
-                {
-                    "componentId": "fct-9f7e487d-d4b8-542a-9a77-7806819f141b",
-                    "input": "input1"
-                },
-                {
-                    "componentId": "fct-7aae4eae-2ce7-5d1b-8db1-bb5cfadc3342",
-                    "input": "input2"
-                }
-            ],
-            "meta": {}
-        }
-    },
-    "from": {
-        "id": ""
-    }
-    ..others params if any
-}
-```
 
 
 
