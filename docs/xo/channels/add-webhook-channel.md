@@ -1634,11 +1634,11 @@ You can get the Webhook API URL on the WebHook channel **Configurations** tab. L
            "data": [
                {
                    "componentId": "{{ComponentId}}",
-                   "input": "VIPUL"
+                   "input": "{{user input1}}"
                },
                {
                    "componentId": "{{ComponentId}}",
-                   "input": "SHARMA"
+                   "input": "{{user input2}"
                },
                {
                    "componentId": "{{ComponentId}}",
