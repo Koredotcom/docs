@@ -112,6 +112,7 @@ By default, most agents don’t have access to read from a Data Table. You must 
 **Conversation** > **Transcription** > **View**
 
 **Note**: The Conversation permission is available only in CX3 license.
+
 6. Once finished, the **Assigned Permissions** view should look like this:
 <img src="../images/assigned-permissions-10.png" alt="assigned-permissions" title="assigned-permissions" style="border: 1px solid gray; zoom:80%;">
 7. Once the role is created, click the three dots at the right end of the **Permission role** and select **Change Membership**.
@@ -201,22 +202,28 @@ The Audiohook integration requires specific configuration values to support Agen
 3. Install a new audiohook app by clicking the **Integrations** button on the top-right corner.  
 <img src="../images/add-new-audiohook-19.png" alt="add-new-audiohook" title="add-new-audiohook" style="border: 1px solid gray; zoom:80%;">  
 
-<img src="../images/locate-audiohook-20.png" alt="locate-audiohook" title="locate-audiohook" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/locate-audiohook-20.png" alt="locate-audiohook" title="locate-audiohook" style="border: 1px solid gray; zoom:80%;">
 
 4.Open the audiohook, and go to the **Configuration** tab.  
 <img src="../images/audiohook-configuration-tab-21.png" alt="audiohook-configuration-tab" title="audiohook-configuration-tab" style="border: 1px solid gray; zoom:80%;">
     1. Channel value should be both.
+
     2. The **Connection URI** format should be similar to the following:
 wss://[savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true](http://savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true)
+
     3. Get **sipuri=sip:&lt;sip-string>** from **UXO**, **Flow & Channels** > **Channels** > **Kore.ai Voice Gateway** > **SIP Numbers** > **Configure SIP Transfer** > **Transfer from IVR** page.  
     <img src="../images/Transfer-from-IVR-page-22.png" alt="Transfer-from-IVR-page" title="Transfer-from-IVR-page" style="border: 1px solid gray; zoom:80%;">
     4. Use the following reference from **Flow & Channels** > **Channels** > **Digital** > **Configured Channels** > **JWT App Details** section of the **[XO](https://platform.kore.ai/)** application to fetch **Bot ID**, **Account ID**, **Client ID**, and **Client Secret** (for token generation).
     <img src="../images/web-mobile-client-23.png" alt="web-mobile-client" title="web-mobile-client" style="border: 1px solid gray; zoom:80%;">
+
     5. Follow the steps of [Using XO Platform APIs – Kore.ai Documentation](https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token) to generate the token (token= &lt;token>.)
+
 5. Add credentials in the **Credentials** tab.
 <img src="../images/integration-configuration-credentials-tab-24.png" alt="integration-configuration-credentials-tab" title="integration-configuration-credentials-tab" style="border: 1px solid gray; zoom:80%;">
+
     1. Refer to [Step-4](https://docs.kore.ai/agentassist/integration/agentassist-integration-in-genesys-manual-steps/#Step_4_Data_Table_Configuration) and use **Bot Client ID** and **Client Secret** as API Key and Client Secret respectively.
     2. These credentials are used to validate the audiostream signature by Kore.
+
 6. Click **Save**.
 
 ### **Step 6: XO 11 Configuration Notes**
