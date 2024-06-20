@@ -135,7 +135,6 @@ This step includes creation of a Data Table with Agent AI bot details.
 5. Click **Add Field** to create five custom fields to provide the Agent AI configuration.
 <img src="../images/add-field-15.png" alt="add-field-15" title="add-field-15" style="border: 1px solid gray; zoom:80%;">
 6. Click the **Add Field** button under **Custom Fields**.
-
 Set the data type for all custom fields as **String** while adding.  
 <img src="../images/custom-field-string-16.png" alt="custom-field-string" title="custom-field-string" style="border: 1px solid gray; zoom:80%;">
 7. Add the custom fields with Bot details.  
@@ -204,7 +203,7 @@ The Audiohook integration requires specific configuration values to support Agen
 
 <img src="../images/locate-audiohook-20.png" alt="locate-audiohook" title="locate-audiohook" style="border: 1px solid gray; zoom:80%;">
 
-4. Open the audiohook, and go to the **Configuration** tab.  
+4.Open the audiohook, and go to the **Configuration** tab.  
 <img src="../images/audiohook-configuration-tab-21.png" alt="audiohook-configuration-tab" title="audiohook-configuration-tab" style="border: 1px solid gray; zoom:80%;">
     1. Channel value should be both.
     2. The **Connection URI** format should be similar to the following:
