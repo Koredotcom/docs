@@ -211,13 +211,16 @@ The Audiohook integration requires specific configuration values to support Agen
 wss://[savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true](http://savg-webserver.kore.ai/audiosocket/genesys/?sipuri=xxx&token=xxx&botId=xxx&accountId=xxx&agentassist=true)
     3. Get **sipuri=sip:&lt;sip-string>** from **UXO**, **Flow & Channels** > **Channels** > **Kore.ai Voice Gateway** > **SIP Numbers** > **Configure SIP Transfer** > **Transfer from IVR** page.  
     <img src="../images/Transfer-from-IVR-page-22.png" alt="Transfer-from-IVR-page" title="Transfer-from-IVR-page" style="border: 1px solid gray; zoom:80%;">
-    4. Use the following reference from **Flow & Channels** > **Channels** > **Digital** > **Configured Channels** > **JWT App Details** section of the **[XO](https://platform.kore.ai/)** application to fetch **Bot ID**, **Account ID**, **Client ID**, and **Client Secret** (for token generation).
+    4. Use the following reference from **Flow & Channels** > **Channels** > **Digital** > **Configured Channels** > **JWT App Details** section of the **[XO](https://platform.kore.ai/)** application to fetch **Bot ID**, **Account ID**, **Client ID**, and **Client Secret** (for token generation).  
     <img src="../images/web-mobile-client-23.png" alt="web-mobile-client" title="web-mobile-client" style="border: 1px solid gray; zoom:80%;">
+
     5. Follow the steps of [Using XO Platform APIs – Kore.ai Documentation](https://developer.kore.ai/docs/bots/api-guide/apis/#Generating_the_JWT_Token) to generate the token (token= &lt;token>.)
 5. Add credentials in the **Credentials** tab.  
 <img src="../images/integration-configuration-credentials-tab-24.png" alt="integration-configuration-credentials-tab" title="integration-configuration-credentials-tab" style="border: 1px solid gray; zoom:80%;">
     1. Refer to [Step-4](https://docs.kore.ai/agentassist/integration/agentassist-integration-in-genesys-manual-steps/#Step_4_Data_Table_Configuration) and use **Bot Client ID** and **Client Secret** as API Key and Client Secret respectively.
+
     2. These credentials are used to validate the audiostream signature by Kore.
+
 6. Click **Save**.
 
 ### **Step 6: XO 11 Configuration Notes**
