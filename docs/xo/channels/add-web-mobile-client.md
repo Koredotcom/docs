@@ -17,22 +17,28 @@ The Web/Mobile Client channel can be configured using the following options:
 * When you choose to enable Web/Mobile client, an app is automatically created for you
 * You can choose to replace this app with any other app that you may want to use
 
-To create your own app, follow these steps:
-
+Steps to create your own app:
 
 1. Open the bot on which you want to add the Web/Mobile Client channel.
+
 2. On the bots menu, click **Channels & Flows** > **Channels** > **Digital** > **All** > **Web/Mobile** **Client**.
+
 3. In the **Select App** drop-down list, select your existing app registration or click **Add App** to create a new app.  
 <img src="../images/Web_Mobile.png" alt="Web Mobile Client channel" title="Web Mobile client channel" style="border: 1px solid gray; zoom:70%;">
+
 4. In the **Name** field, enter the name for the app registration used in Bot Builder. For example, **weather app**.
+
 5. Select one of these scopes for the app:
     * **Allow anonymous users to chat with the bot**: Enables anonymous users to interact with the bot.
     * **Auto register new users on Kore.ai Bots Platform**: Select to control the auto-user registration in Kore.ai if the user assertion is unknown.
+
 6. In the **JWT Signing Algorithms Used For Client App Authentication** drop-down list, select one of the following security algorithms:
     * **RS256/RS512**: Select to enable the **Public Key.** _The Private key, used for encryption, is provided by the user, and the Public key, used for decryption, is provided by the Platform_. Both the keys have to be used for generating the token. The Public Key is used by the XO Platform to authenticate the client application.
     * **HS256/HS512**: Select to generate a **Secret Key** and a **Client ID**. The **Client ID** is required for app initialization, and the **Secret Key** is used by the XO Platform to authenticate the client application.
+
 7. (Optional) In the **Push Notifications** section, click **Enable** and then specify a URL to send the notifications.  
 <img src="../images/Web_Mobile1.png" alt="Web Mobile client configuration" title="Web Mobile client configuration" style="border: 1px solid gray; zoom:70%;">
+
 8. When you Enable the Push Notifications, you can select one of the following options to manage the notifications:
     * **All Messages** – Sends push notifications for all conversation messages to the client app.
     * **Message Delivery Failures** – Sends push notifications for failure scenarios such as WebSocket Disconnected, App is Killed, and Message Delivery Failure.
@@ -71,8 +77,7 @@ If you are using the Kore.ai hosted client, then there are two different approac
 * Share the URL with users
 * Embed code in your website
 
-To choose deployment options, follow these steps:
-
+Steps to choose deployment options:
 
 1. In the **Web Client Details** section, copy the URL to share this URL with users to interact with your virtual assistant.  
 <img src="../images/Web_Mobile5.png" alt="Web Client details" title="Web Client details" style="border: 1px solid gray; zoom:70%;">
@@ -87,11 +92,9 @@ To choose deployment options, follow these steps:
 <img src="../images/Web_Mobile7.png" alt="whitelist domains" title="whitelist domains" style="border: 1px solid gray;">
 
 
-
 ## Edit Web/Mobile Channel
 
-To edit the Web/Mobile Client channel, follow the below steps:
-
+Steps to edit the Web/Mobile Client channel:
 
 1. You can edit, test, disable or delete the channel. [Learn more](adding-channels-to-your-bot.md#editing-testing-disabling-or-deleting-channels)
 
