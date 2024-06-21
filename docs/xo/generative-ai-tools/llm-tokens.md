@@ -1,4 +1,5 @@
-## **Explore GenAI Features with Free Tokens**
+
+# **Explore GenAI Features with Free Tokens**
 
 We're excited to offer you a selection of free tokens to explore the powerful GenAI features in our platform. These tokens use OpenAI GPT-3.5 model from Azure by Kore.ai's enterprise account, allowing you to experience the capabilities of large language models (LLMs) without the need for your own LLM account initially.
 
