@@ -121,31 +121,31 @@ We will see how to create Widgets with static JSON content. We will use a JSON t
 
 3. Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, [refer here](../../../../sdk/widget-sdk-message-formatting-and-templates/){:target="_blank"}.
 
-    <img src="../../images/new-widget-data-entry.png" alt="new widget data" title="new widget data" style="border: 1px solid gray; zoom:75%;">
-
     ```
-    {   "templateType": "piechart",
-        "pie_type": "regular",
-        "title": "Summary",
-        "description": "monthly report",
-        "elements": [
-            {
-            "title": "Airlines",
-            "value": "1264.0",
-            "displayValue": "$ 1,234"
-            },
-            {
-            "title": "Hotels",
-            "value": "568.10",
-            "displayValue": "$ 568"
-            },
-            {
-            "title": "Food",
-            "value": "324.50",
-            "displayValue": "$ 324"
-            }
-        ]
-        };
+    var message =
+    {
+      "templateType": "piechart",
+      "pie_type": "regular",
+      "title": "Summary",
+      "description": "monthly report",
+      "elements": [
+        {
+          "title": "Airlines",
+          "value": "1264.0",
+          "displayValue": "$ 1,234"
+        },
+        {
+          "title": "Hotels",
+          "value": "568.10",
+          "displayValue": "$ 568"
+        },
+        {
+          "title": "Food",
+          "value": "324.50",
+          "displayValue": "$ 324"
+        }
+      ]
+    };
     print(JSON.stringify(message));
     ```
     
