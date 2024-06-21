@@ -24,7 +24,7 @@ We're excited to offer you a selection of free tokens to explore the powerful Ge
 6. **Generating Similar Utterance Suggestions**: Receive suggestions for similar utterances to broaden your AI's understanding.
 7. **Generating Opposite Utterance Suggestions**: Get suggestions for opposite utterances to cover a wide range of conversational scenarios.
 
-Learn More - https://developer.kore.ai/docs/bots/nlp/co-pilot-features/
+[Learn More](../co-pilot-features/)
 
 
 ### **Dynamic Features**
@@ -35,7 +35,7 @@ Learn More - https://developer.kore.ai/docs/bots/nlp/co-pilot-features/
 4. **Repeat Responses**: Generate repeated responses to ensure consistency in answers.
 5. **Rephrase Dialog Responses**: Automatically rephrase responses for variety and naturalness in conversations.
 
-Learn More - https://developer.kore.ai/docs/bots/nlp/dynamic-conversations-features/
+[Learn More](../dynamic-conversations-features/)
 
 
 ## **Transitioning to Your Own LLM Account**
