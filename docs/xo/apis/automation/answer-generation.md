@@ -127,9 +127,10 @@ curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-522
    </td>
    <td>No
    </td>
-   <td>This parameter can be used to define rules to filter out the results from the Answer Index before using them for generating the answer. This parameter takes an array of rules with conditions. For instance, to use only web pages to answer a query, set the filters as shown below. 
+   <td>This parameter can be used to define rules to filter out the results from the Answer Index before using them for generating the answer. This parameter takes an array of rules with conditions. For instance, to use only web pages to answer a query, set the filters as shown below.
+   
     <code>
-    "answerMetaFilters": [
+    "metaFilters": [
         {
         "condition": "AND",
         "rules": [
