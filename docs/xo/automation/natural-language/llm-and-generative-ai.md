@@ -11,8 +11,11 @@ By leveraging LLM and Generative AI capabilities, you can create intelligent, hu
 ## Key Features
 
 The Integration of Generative AI and LLM enables the following features:
+
 * Model Library: Connect to Generative AI models of your choice using the out-of-box integrations (pre-built LLM integration) or custom integrations or Kore.ai XO GPT Module.
+
 * Prompts Library: Complete flexibility to create fully customized prompts optimized for particular use cases using pre-built or custom models.
+
 * Co-Pilot features:
     * **Automatic Dialog Generation**: This feature helps build production-ready dialog tasks automatically by briefly describing the task. A preview of the generated dialog is available and lets you modify the intent description and create multiple iterations of the dialog.
     * **Conversation Test Cases Suggestion**: The Platform suggests simulated user inputs covering various scenarios from an end-user perspective at every test step. You can use these suggestions to create test suites.
@@ -48,5 +51,10 @@ All these features benefit VA developers, NLP developers, and testers as follows
 * Allows enterprises and advanced users to bypass the platform’s pre-built integrations. They can establish customized connections to large language models and optimize prompts and requests for their specific use cases.
 
 ## Next Step
-You can find LLM and Generative AI features by going to **App Switcher** > **Generative AI Tools**. [Learn how to enable LLM and Generative AI features :octicons-arrow-right-24:](../../generative-ai-tools/introduction.md)
+
+
+1. Integrate a [pre-built or custom LLM or Kore.ai XO GPT](../../generative-ai-tools/models-library.md) in models library. 
+2. Create [ New Prompts](../../generative-ai-tools/prompts-library.md) in the prompts library.
+3. Enable[ Co-Pilot](../../generative-ai-tools/co-pilot-features.md) and [Dynamic Conversations](../../generative-ai-tools/dynamic-conversations-features.md) features.
+4. (Optional) Enable [Data Anonymization](../../generative-ai-tools/data-anonymization.md) and [Guardrails](../../generative-ai-tools/guardrails.md).
 
