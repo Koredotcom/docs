@@ -21,9 +21,8 @@ Based on the functionality addressed, the APIs can be categorized as:
 
 ## Bot Definition APIs
 
-|     |     |     |     |
-| --- | --- | --- | --- |
 | API | DESCRIPTION | ASSOCIATED APP SCOPE |     |
+| --- | --- | --- | --- |
 |     |     | **XO PLATFORM** | **ADMIN CONSOLE** |
 | [Upload File](../upload-file) | To upload the botdefinition, botconfig, and botfunction file (if any) as well as the bot icon to the local server and get the file ID to be used in the Import Bot API.<br><br>To upload utterances in [ML Utterances Import API](../import-ml-utterances), bot roles, admin roles for [Import Roles API](../import-roles), [Import Batch Test Suite](../import-batch-test-suite) details and [Extraction from file or URL](../extract-kg-from-file-url) to extract FAQs. | NA  | Bot Definition > Bot Import |
 | [Import Bot as a New Bot](../import-bot-as-new-bot) | To create a new assistant in the account owner’s XO Platform using the File IDs generated when uploading the files. | NA  | Bot Definition > Bot Import |
@@ -57,9 +56,8 @@ Based on the functionality addressed, the APIs can be categorized as:
 
 ## NLP Training APIs
 
-|     |     |     |     |
-| --- | --- | --- | --- |
 | API | DESCRIPTION | ASSOCIATED APP SCOPE |     |
+| --- | --- | --- | --- |
 |     |     | **XO PLATFORM** | **ADMIN CONSOLE** |
 | [ML Utterances Import](../import-ml-utterances) | To import ML Utterances into an assistant. | Utterances Import | Test > Utterances Import & Train |
 | [ML Utterances Import Status](../ml-utterances-import-status) | To get the status of the ML utterances import request made through Import ML Utterances API. | Utterances Import | Test > Utterances Import & Train |
@@ -79,9 +77,9 @@ Based on the functionality addressed, the APIs can be categorized as:
 
 ## Analytics APIs
 
-|     |     |     |     |
-| --- | --- | --- | --- |
+
 | API | DESCRIPTION | ASSOCIATED APP SCOPE |     |
+| --- | --- | --- | --- |
 |     |     | **XO PLATFORM** | **ADMIN CONSOLE** |
 | [Find Intent](../find-intent) | To obtain the intent recognition result and the scoring from NLP and ML engines. | Intent and Entity Detection | Intent Identification > Intent and Entity Detection |
 | [Conversation History](../conversation-history) | To fetch the conversational messages between the assistant and user in reverse chronological order. | Chat History | Bot Analytics > Chat History |
@@ -99,9 +97,8 @@ Based on the functionality addressed, the APIs can be categorized as:
 
 ## Admin APIs
 
-|     |     |     |
-| --- | --- | --- |
 | API | DESCRIPTION | ASSOCIATED BOT ADMIN APP SCOPE |
+| --- | --- | --- |
 | [Get Bots](../get-bots) | To retrieve the list of bots available in an account | Profile Management > Role Management |
 | [Import Roles](../import-roles) | To import bot or admin roles into an account | Profile Management > Role Management |
 | [Get Roles](../get-roles) | To retrieve the list of bot or admin roles available in an account. | Profile Management > Role Management |
@@ -121,9 +118,9 @@ Based on the functionality addressed, the APIs can be categorized as:
 
 ## Data (Data Table) Access APIs
 
-|     |     |     |
-| --- | --- | --- |
+
 | API | DESCRIPTION | ASSOCIATED APP SCOPE |
+| --- | --- | --- |
 | [Insert Data](../data-insert) | To insert data into Data Table | Write access to the Data Table |
 | [Insert Bulk Data](../bulk-data-insert) | To insert bulk data into Data Table | Write access to the Data Table |
 | [Update Data](../data-update) | To update data into Data Table. | Read and Write access to the Data Table |
