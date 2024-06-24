@@ -145,8 +145,8 @@ nav:
       - Configure an Agent: agents/configure-an-agent.md
   - Models: 
     - About Models: models/overview.md 
-    - Fine-Tune Models: 
-      - About: models/fine-tune-models/fine-tune-models-overview.md
+    - Fine-Tuned Models: 
+      - About Fine-Tuned Models: models/fine-tune-models/fine-tune-models-overview.md
       - Create a Model: models/fine-tune-models/create-a-fine-tuned-model.md
       - Deploy a Model: models/fine-tune-models/deploy-a-fine-tuned-model.md
       - Model Settings:
@@ -154,9 +154,9 @@ nav:
         - Model Endpoint: models/fine-tune-models/view-the-generated-api-endpoint.md
         - API Keys: models/fine-tune-models/generate-an-api-key.md
         - Configurations: models/fine-tune-models/configure-your-fine-tuned-model.md
-        - Export a Model: models/fine-tune-models/export-your-fine-tuned-model.md
+      - Export a Model: models/fine-tune-models/export-your-fine-tuned-model.md
     - Open-Source Models: 
-      - About: models/open-source-models/open-source-models-overview.md
+      - About Open-Source Models: models/open-source-models/open-source-models-overview.md
       - Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
       - Deploy a Hugging Face Model: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
       - Model Settings:
