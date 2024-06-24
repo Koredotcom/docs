@@ -720,7 +720,6 @@ If no agents are logged in, conversations will wait in the queue till the maximu
 After the queue max timeout occurs, the "[no agents available](../contactcenter/configurations/default-flows/configure-default-flows.md#no-agents-available)" flow is triggered. This is enabled at the account level for new accounts and applies to all channels.
 For existing accounts, the existing routing logic is applicable. For accounts wanting to modify their routing logic, contact Kore Support.
 
-
 ## CSAT Survey
 
 The CSAT (Customer Satisfaction) survey is essential for contact centers because it provides valuable feedback on customer satisfaction levels, enabling continuous improvement of service quality.
