@@ -128,7 +128,7 @@ Based on the functionality addressed, the APIs can be categorized as:
 | [Get Table Data](../query-table-data) | To get data from Data Table. | Read access to the Data Table |
 | [Get View Data](../query-data-table-view) | To get data from Data View. | Read access to the Table View |
 
-# Answer Generation API
+## Answer Generation API
 
 
 | API            | Description                                 | App Scope         |
