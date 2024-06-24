@@ -146,29 +146,27 @@ nav:
   - Models: 
     - About Models: models/overview.md 
     - Fine-Tune Models: 
-      - About Fine-Tuned Models: models/fine-tune-models/fine-tune-models-overview.md
-      - Create a Fine-Tuned Model: models/fine-tune-models/create-a-fine-tuned-model.md
-      - Deploy a Fine-Tuned Model: models/fine-tune-models/deploy-a-fine-tuned-model.md
-      - View the Generated API Endpoint: models/fine-tune-models/view-the-generated-api-endpoint.md
-      - Generate a New API Key: models/fine-tune-models/generate-an-api-key.md
-      - Configure your Fine-Tuned Model: models/fine-tune-models/configure-your-fine-tuned-model.md
-      - Export your Fine-Tuned Model: models/fine-tune-models/export-your-fine-tuned-model.md
+      - About: models/fine-tune-models/fine-tune-models-overview.md
+      - Create Model: models/fine-tune-models/create-a-fine-tuned-model.md
+      - Deploy Model: models/fine-tune-models/deploy-a-fine-tuned-model.md
+      - Model Settings:
+        - Overview: models/model-settings/model-settings-overview.md
+        - Model Endpoint: models/fine-tune-models/view-the-generated-api-endpoint.md
+        - API Keys: models/fine-tune-models/generate-an-api-key.md
+        - Configurations: models/fine-tune-models/configure-your-fine-tuned-model.md
+        - Export your Fine-Tuned Model: models/fine-tune-models/export-your-fine-tuned-model.md
     - Open-Source Models: 
-      - About Open-Source Models: models/open-source-models/open-source-models-overview.md
+      - About: models/open-source-models/open-source-models-overview.md
       - Select and Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
-      - Deploy an Imported Model from Hugging Face: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
-      - View the Generated API Endpoint: models/open-source-models/view-the-generated-api-endpoint.md
-      - Generate a New API Key: models/open-source-models/generate-an-api-key-open-source.md
-      - Configure your Open-Source Model: models/open-source-models/configure-your-open-source-model.md
+      - Import and Deploy Hugging Face Model: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
+      - Model Settings:
+        - Model Endpoint: models/open-source-models/view-the-generated-api-endpoint.md
+        - API Keys: models/open-source-models/generate-an-api-key-open-source.md
+        - Configurations: models/open-source-models/configure-your-open-source-model.md
     - External Models: 
       - About External Models: models/external-models/external-models-overview.md
       - Add an External Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
       - Add an External Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
-    - Model Settings:
-      - Overview: models/model-settings/model-settings-overview.md
-      - Model Endpoint: models/fine-tune-models/view-the-generated-api-endpoint.md
-      - API Keys: models/fine-tune-models/generate-an-api-key.md
-      - Configurations: models/fine-tune-models/configure-your-fine-tuned-model.md
   - Playground: 
     - About Playground: playground/overview.md
     - Create a New Prompt Experiment: playground/create-a-new-prompt-experiment.md
