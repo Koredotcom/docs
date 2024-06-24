@@ -1,0 +1,186 @@
+site_name: Kore ai Docs
+site_author: Rajasekhar Balla
+docs_dir: 'docs/gale/'
+site_dir: 'site/gale/'
+repo_name: Koredotcom/docs
+repo_url: https://github.com/Koredotcom/docs
+extra_css:
+    - stylesheets/extra_kore.css
+theme:
+  favicon: images/gale_favicon.svg
+  name: material
+  custom_dir: overrides.en.gale
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.path
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - header.autohide
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: indigo
+      accent: indigo
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: indigo
+      accent: lime
+plugins:
+  - search:
+      lang: tr
+  - glightbox   
+extra:
+  version:
+    provider: mike
+  generator: false
+  analytics:
+    provider: google
+    property: G-560BYJFH0P
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback!
+            
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js #?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: On this Page
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+copyright: |
+  © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+nav:
+  - Home : home.md
+  - Getting Started: 
+    - Welcome to GALE: getting-started/introduction.md 
+    - Sign up for Beta Testing: getting-started/sing-up-for-beta.md 
+  - Agents: 
+    - About Agents: agents/overview.md
+    - Create an Agent: agents/create-a-new-agent.md
+    - Agent Flows:
+      - About Flows: agents/agents-flows/flows-overview.md
+      - Manage Flows: 
+        - Manage Nodes in Flows: agents/agents-flows/manage-flow-nodes.md
+        - Manage Input and Output: agents/agents-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
+        - Run the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
+        - Create a Version of the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
+      - Types of Nodes: 
+        - Overview: agents/agents-flows/types-of-nodes/overview-of-nodes.md
+        - Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node.md
+        - API Node: agents/agents-flows/types-of-nodes/api-node.md
+        - Function Node: agents/agents-flows/types-of-nodes/function-node.md
+        - Condition Node: agents/agents-flows/types-of-nodes/condition-node.md        
+        - End Node: agents/agents-flows/types-of-nodes/end-node.md        
+    - Sharing & Permissions: 
+      - Manage User Roles and Permissions:  agents/manage-user-roles-and-permissions.md
+    - Agent Endpoint: 
+      - Deploy an Agent: agents/deploy-an-agent.md
+    - API Keys: 
+      - Create an API Key: agents/create-a-new-api-key.md 
+    - Guardrails: 
+      - About Guardrails: agents/guardrails/overview.md
+      - Add a Scanner: agents/guardrails/add-a-scanner.md
+      - Test Guardrail: agents/guardrails/test-guardrail.md
+      - Manage Guardrails: agents/guardrails/manage-guardrails.md
+    - Configurations:
+      - Configure an Agent: agents/configure-an-agent.md
+  - Models: 
+    - About Models: models/overview.md 
+    - Fine-Tune Models: 
+      - About Fine-Tuned Models: models/fine-tune-models/fine-tune-models-overview.md
+      - Create a Fine-Tuned Model: models/fine-tune-models/create-a-fine-tuned-model.md
+      - Deploy a Fine-Tuned Model: models/fine-tune-models/deploy-a-fine-tuned-model.md
+      - View the Generated API Endpoint: models/fine-tune-models/view-the-generated-api-endpoint.md
+      - Generate a New API Key: models/fine-tune-models/generate-an-api-key.md
+      - Configure your Fine-Tuned Model: models/fine-tune-models/configure-your-fine-tuned-model.md
+      - Export your Fine-Tuned Model: models/fine-tune-models/export-your-fine-tuned-model.md
+    - Open-Source Models: 
+      - About Open-Source Models: models/open-source-models/open-source-models-overview.md
+      - Select and Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
+      - Deploy an Imported Model from Hugging Face: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
+      - View the Generated API Endpoint: models/open-source-models/view-the-generated-api-endpoint.md
+      - Generate a New API Key: models/open-source-models/generate-an-api-key-open-source.md
+      - Configure your Open-Source Model: models/open-source-models/configure-your-open-source-model.md
+    - External Models: 
+      - About External Models: models/external-models/external-models-overview.md
+      - Add an External Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
+      - Add an External Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
+  - Playground: 
+    - About Playground: playground/overview.md
+    - Create a New Prompt Experiment: playground/create-a-new-prompt-experiment.md
+    - Add a Model: playground/add-a-model.md
+    - Select a Template for a Prompt: playground/select-a-template-for-a-prompt.md
+    - Generate Output using Advanced Mode: playground/generate-output-using-advanced-mode.md
+    - Explore Other Actions to Perform: playground/explore-other-actions-to-perform-in-the-prompt-playground.md    
+  - Data: 
+    - About Data: data/overview.md 
+    - Upload a Dataset: data/upload-a-dataset.md
+  - Integrations: 
+    - How to Enable Hugging Face: integrations/how-to-enable-hugging-face.md
+    - How to Integrate with S3 Bucket: integrations/how-to-integrate-with-s3-bucket.md
+    - How to Integrate with Weights & Biases: integrations/how-to-integrate-with-wandb.md
+  - Administration:
+    - User Management: 
+        - About User Management: administration/user-management/overview.md
+        - Invite a User to your Account: administration/user-management/invite-a-user-to-your-account.md
+        
+   
