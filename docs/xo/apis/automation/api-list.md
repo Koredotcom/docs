@@ -13,6 +13,7 @@ Based on the functionality addressed, the APIs can be categorized as:
 3. APIs aiding in Analyzing the performance and behavior, [more](#analytics-apis)
 4. APIs related to the Admin Console functionality, [more](#admin-apis)
 5. APIs related to the data access from Data Tables, [more](#data-data-table-access-apis)
+6. API related to Search and Answer Generation, [more](#answer-generation-api)
 
 !!!note
     All the APIs have rate limits to manage the usage. If the rate limit is exceeded, an API call fails with the following error message – “_Rate limit for this API has been reached. Please try again after some time._”
@@ -129,3 +130,10 @@ Based on the functionality addressed, the APIs can be categorized as:
 | [Delete Data](../data-delete) | To delete data from Data Table. | Read and Delete access to the Data Table |
 | [Get Table Data](../query-table-data) | To get data from Data Table. | Read access to the Data Table |
 | [Get View Data](../query-data-table-view) | To get data from Data View. | Read access to the Table View |
+
+# Answer Generation API
+
+
+| API            | Description                                 | App Scope         |
+|----------------|---------------------------------------------|-------------------|
+| advancedSearch | To fetch answers for a query using SearchAI | Answer Generation |
