@@ -147,26 +147,26 @@ nav:
     - About Models: models/overview.md 
     - Fine-Tune Models: 
       - About: models/fine-tune-models/fine-tune-models-overview.md
-      - Create Model: models/fine-tune-models/create-a-fine-tuned-model.md
-      - Deploy Model: models/fine-tune-models/deploy-a-fine-tuned-model.md
+      - Create a Model: models/fine-tune-models/create-a-fine-tuned-model.md
+      - Deploy a Model: models/fine-tune-models/deploy-a-fine-tuned-model.md
       - Model Settings:
-        - Overview: models/model-settings/model-settings-overview.md
+        - Overview: models/fine-tune-models/model-settings-overview.md
         - Model Endpoint: models/fine-tune-models/view-the-generated-api-endpoint.md
         - API Keys: models/fine-tune-models/generate-an-api-key.md
         - Configurations: models/fine-tune-models/configure-your-fine-tuned-model.md
-        - Export your Fine-Tuned Model: models/fine-tune-models/export-your-fine-tuned-model.md
+        - Export a Model: models/fine-tune-models/export-your-fine-tuned-model.md
     - Open-Source Models: 
       - About: models/open-source-models/open-source-models-overview.md
-      - Select and Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
-      - Import and Deploy Hugging Face Model: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
+      - Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
+      - Deploy a Hugging Face Model: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
       - Model Settings:
         - Model Endpoint: models/open-source-models/view-the-generated-api-endpoint.md
         - API Keys: models/open-source-models/generate-an-api-key-open-source.md
         - Configurations: models/open-source-models/configure-your-open-source-model.md
     - External Models: 
       - About External Models: models/external-models/external-models-overview.md
-      - Add an External Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
-      - Add an External Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
+      - Add a Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
+      - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
   - Playground: 
     - About Playground: playground/overview.md
     - Create a New Prompt Experiment: playground/create-a-new-prompt-experiment.md
