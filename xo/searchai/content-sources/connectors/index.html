@@ -5228,6 +5228,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#ingesting-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ingesting Content
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#enablingdisabling-connectors" class="md-nav__link">
     <span class="md-ellipsis">
       Enabling/Disabling Connectors
@@ -7172,6 +7181,75 @@
   
   <span class="md-ellipsis">
     Bot Override and Automation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Integrations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Integrations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Genesys Voice
   </span>
   
 
@@ -12854,6 +12932,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#ingesting-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ingesting Content
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#enablingdisabling-connectors" class="md-nav__link">
     <span class="md-ellipsis">
       Enabling/Disabling Connectors
@@ -12956,6 +13043,17 @@ To use this type of authorization mechanism, <strong>register Search AI as an In
 <p>To configure a new connector, go to the <strong>Connectors</strong> tab under the <strong>Sources</strong> page. For a new connector, click on the <strong>+Connect</strong> button.
 <a class="glightbox" href="../images/connectors/connector-home.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Connector Home" src="../images/connectors/connector-home.png" title="connector home" /></a></p>
 <p>The following page shows the list of available connectors. Choose the connector corresponding to the third-party application that you want to connect to and configure it. For detailed instructions on configuring connectors, refer to the respective documentation.</p>
+<h3 id="ingesting-content">Ingesting Content<a class="headerlink" href="#ingesting-content" title="Permanent link">&para;</a></h3>
+<p>By default when a connector is added, the content is not ingested from the third-party application until a Sync operation is performed. You can either initiate a sync operation manually or schedule an automatic sync. </p>
+<p>To initiate a sync operation manually, go to the Configurations tab in the Connector details and click on <strong>Sync Now</strong>. This initiates the sync operation immediately and ingests new or updated content from the application. </p>
+<p><a class="glightbox" href="../images/connectors/manual-sync.PNG" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Manual Sync" src="../images/connectors/manual-sync.PNG" title="Manual Sync" /></a></p>
+<p>You can also schedule an automatic sync operation for a future time. Automatic Sync ensures that the data stays up-to-date and also reduces the administrative overhead of performing manual sync regularly. </p>
+<p>The automatic sync can be scheduled as a one-time activity or to be performed at regular intervals. To schedule a sync operation, enable the <strong>Schedule Sync</strong> option and provide the date and time of the beginning of the event. </p>
+<p><a class="glightbox" href="../images/connectors/schedule-sync.PNG" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Auto Sync" src="../images/connectors/schedule-sync.PNG" title="Auto Sync" /></a></p>
+<p>To set up a recurring sync schedule, provide the synchronization frequency along with the date and time of the first sync operation.  Once set, the scheduler automatically ingests content using the connector at regular intervals. </p>
+<p><a class="glightbox" href="../images/connectors/recurrent-sync.PNG" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Recurring Sync" src="../images/connectors/recurrent-sync.PNG" title="Recurring Sync" /></a></p>
+<p>To disable automatic synchronization at any time, use the <strong>Schedule Sync</strong> slider button. </p>
+<p><a class="glightbox" href="../images/connectors/disable-sync.PNG" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Disable Sync" src="../images/connectors/disable-sync.PNG" title="Disable Sync" /></a></p>
 <h3 id="enablingdisabling-connectors">Enabling/Disabling Connectors<a class="headerlink" href="#enablingdisabling-connectors" title="Permanent link">&para;</a></h3>
 <p>After the connector is configured and the source is connected, you can enable or disable the connection temporarily. When a connector is disabled, sync operation is temporarily disabled. This may be useful for testing, particularly when there is more than one connector configured with your Search AIst application. </p>
 <div class="admonition note">

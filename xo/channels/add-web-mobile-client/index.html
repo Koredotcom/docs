@@ -7052,6 +7052,75 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Integrations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Integrations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Genesys Voice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -12745,25 +12814,39 @@ This topic describes how to register your application and generate credentials f
 <li>When you choose to enable Web/Mobile client, an app is automatically created for you</li>
 <li>You can choose to replace this app with any other app that you may want to use</li>
 </ul>
-<p>To create your own app, follow these steps:</p>
+<p>Steps to create your own app:</p>
 <ol>
-<li>Open the bot on which you want to add the Web/Mobile Client channel.</li>
-<li>On the bots menu, click <strong>Channels &amp; Flows</strong> &gt; <strong>Channels</strong> &gt; <strong>Digital</strong> &gt; <strong>All</strong> &gt; <strong>Web/Mobile</strong> <strong>Client</strong>.</li>
-<li>In the <strong>Select App</strong> drop-down list, select your existing app registration or click <strong>Add App</strong> to create a new app.
-<a class="glightbox" href="../images/Web_Mobile.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Web_Mobile.png" alt="Web Mobile Client channel" title="Web Mobile client channel" style="border: 1px solid gray; zoom:70%;"></a></li>
-<li>In the <strong>Name</strong> field, enter the name for the app registration used in Bot Builder. For example, <strong>weather app</strong>.</li>
-<li>Select one of these scopes for the app:<ul>
+<li>
+<p>Open the bot on which you want to add the Web/Mobile Client channel.</p>
+</li>
+<li>
+<p>On the bots menu, click <strong>Channels &amp; Flows</strong> &gt; <strong>Channels</strong> &gt; <strong>Digital</strong> &gt; <strong>All</strong> &gt; <strong>Web/Mobile</strong> <strong>Client</strong>.</p>
+</li>
+<li>
+<p>In the <strong>Select App</strong> drop-down list, select your existing app registration or click <strong>Add App</strong> to create a new app.<br />
+<a class="glightbox" href="../images/Web_Mobile.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Web_Mobile.png" alt="Web Mobile Client channel" title="Web Mobile client channel" style="border: 1px solid gray; zoom:70%;"></a></p>
+</li>
+<li>
+<p>In the <strong>Name</strong> field, enter the name for the app registration used in Bot Builder. For example, <strong>weather app</strong>.</p>
+</li>
+<li>
+<p>Select one of these scopes for the app:</p>
+<ul>
 <li><strong>Allow anonymous users to chat with the bot</strong>: Enables anonymous users to interact with the bot.</li>
 <li><strong>Auto register new users on Kore.ai Bots Platform</strong>: Select to control the auto-user registration in Kore.ai if the user assertion is unknown.</li>
 </ul>
 </li>
-<li>In the <strong>JWT Signing Algorithms Used For Client App Authentication</strong> drop-down list, select one of the following security algorithms:<ul>
+<li>
+<p>In the <strong>JWT Signing Algorithms Used For Client App Authentication</strong> drop-down list, select one of the following security algorithms:</p>
+<ul>
 <li><strong>RS256/RS512</strong>: Select to enable the <strong>Public Key.</strong> <em>The Private key, used for encryption, is provided by the user, and the Public key, used for decryption, is provided by the Platform</em>. Both the keys have to be used for generating the token. The Public Key is used by the XO Platform to authenticate the client application.</li>
 <li><strong>HS256/HS512</strong>: Select to generate a <strong>Secret Key</strong> and a <strong>Client ID</strong>. The <strong>Client ID</strong> is required for app initialization, and the <strong>Secret Key</strong> is used by the XO Platform to authenticate the client application.</li>
 </ul>
 </li>
-<li>(Optional) In the <strong>Push Notifications</strong> section, click <strong>Enable</strong> and then specify a URL to send the notifications.
-<a class="glightbox" href="../images/Web_Mobile1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Web_Mobile1.png" alt="Web Mobile client configuration" title="Web Mobile client configuration" style="border: 1px solid gray; zoom:70%;"></a></li>
+<li>
+<p>(Optional) In the <strong>Push Notifications</strong> section, click <strong>Enable</strong> and then specify a URL to send the notifications.<br />
+<a class="glightbox" href="../images/Web_Mobile1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Web_Mobile1.png" alt="Web Mobile client configuration" title="Web Mobile client configuration" style="border: 1px solid gray; zoom:70%;"></a></p>
+</li>
 <li>
 <p>When you Enable the Push Notifications, you can select one of the following options to manage the notifications:</p>
 <ul>
@@ -12777,18 +12860,18 @@ This topic describes how to register your application and generate credentials f
 <ul>
 <li><strong>Send Original Messages</strong> – Sends the actual conversation message as part of the push notification.</li>
 <li>
-<p><strong>Show a standard message from standard responses</strong> – Sends a generic message instead of the original message.
+<p><strong>Show a standard message from standard responses</strong> – Sends a generic message instead of the original message.<br />
 <a class="glightbox" href="../images/Web_Mobile2_New.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Web_Mobile2_New.png" alt="Web Push Notifications   configuration" title="Web Push Notifications configuration" style="border: 1px solid gray; zoom:70%;"></a></p>
 </li>
 <li>
-<p>Click <strong>Manage Responses</strong> to add custom messages in the push notification. To learn more about adding responses, see <a href="https://developer.kore.ai/docs/bots/bot-intelligence/default-standard-responses/">Default Standard Responses</a> and <a href="https://developer.kore.ai/docs/bots/bot-intelligence/default-dialog/">Default Conversations</a>.
+<p>Click <strong>Manage Responses</strong> to add custom messages in the push notification. To learn more about adding responses, see <a href="https://developer.kore.ai/docs/bots/bot-intelligence/default-standard-responses/">Default Standard Responses</a> and <a href="https://developer.kore.ai/docs/bots/bot-intelligence/default-dialog/">Default Conversations</a>.<br />
 <a class="glightbox" href="../images/Web_Mobile3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Web_Mobile3.png" alt="manage responses" title="manage responses" style="border: 1px solid gray; zoom:70%;"></a></p>
 </li>
 </ul>
 </li>
 <li>
-<p>Click <strong>Save</strong> and then <strong>Create</strong>. The app registration details appear.
- <a class="glightbox" href="../images/Web_Mobile4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Web_Mobile4.png" alt="create web app" title="create web app" style="border: 1px solid gray; zoom:70%;"></a></p>
+<p>Click <strong>Save</strong> and then <strong>Create</strong>. The app registration details appear.<br />
+<a class="glightbox" href="../images/Web_Mobile4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Web_Mobile4.png" alt="create web app" title="create web app" style="border: 1px solid gray; zoom:70%;"></a></p>
 </li>
 <li>
 <p>To copy the app registration details to the clipboard for your application, you can click <strong>Copy</strong> for <strong>Bot Name</strong>, <strong>Bot ID</strong>, and <strong>Client ID</strong>. For <strong>Client Secret</strong>, click <strong>View</strong>, and then click <strong>Copy</strong>.</p>
@@ -12812,20 +12895,26 @@ This topic describes how to register your application and generate credentials f
 <li>Share the URL with users</li>
 <li>Embed code in your website</li>
 </ul>
-<p>To choose deployment options, follow these steps:</p>
+<p>Steps to choose deployment options:</p>
 <ol>
-<li>In the <strong>Web Client Details</strong> section, copy the URL to share this URL with users to interact with your virtual assistant.
-<a class="glightbox" href="../images/Web_Mobile5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Web_Mobile5.png" alt="Web Client details" title="Web Client details" style="border: 1px solid gray; zoom:70%;"></a></li>
-<li>In the <strong>Embed Code</strong> section, copy the code to embed this Channel in your application pages where you want to display this virtual assistant widget.
- <a class="glightbox" href="../images/Web_Mobile6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Web_Mobile6.png" alt="embed code" title="embed code" style="border: 1px solid gray; zoom:70%;"></a></li>
-<li>In the <strong>Whitelist Domains</strong> section, click <strong>+Add Domain</strong> to add URLs which want to include in the whitelist for your assistant.</li>
+<li>
+<p>In the <strong>Web Client Details</strong> section, copy the URL to share this URL with users to interact with your virtual assistant.<br />
+<a class="glightbox" href="../images/Web_Mobile5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Web_Mobile5.png" alt="Web Client details" title="Web Client details" style="border: 1px solid gray; zoom:70%;"></a></p>
+</li>
+<li>
+<p>In the <strong>Embed Code</strong> section, copy the code to embed this Channel in your application pages where you want to display this virtual assistant widget.<br />
+<a class="glightbox" href="../images/Web_Mobile6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Web_Mobile6.png" alt="embed code" title="embed code" style="border: 1px solid gray; zoom:70%;"></a></p>
+</li>
+<li>
+<p>In the <strong>Whitelist Domains</strong> section, click <strong>+Add Domain</strong> to add URLs which want to include in the whitelist for your assistant.</p>
+</li>
 <li>Click the <strong>Download SDK</strong> link to download, setup and configure the Web/Mobile SDK using the prebuilt SDK libraries.</li>
 <li>Select an appropriate option to Allow Alert Task setup. You can choose either <strong>Yes</strong> or <strong>No</strong> to let users to set up Alerts using Web Client.</li>
-<li>Click <strong>Save</strong> to save the settings and close the Web/Mobile Client Channel page.
- <a class="glightbox" href="../images/Web_Mobile7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Web_Mobile7.png" alt="whitelist domains" title="whitelist domains" style="border: 1px solid gray;"></a></li>
+<li>Click <strong>Save</strong> to save the settings and close the Web/Mobile Client Channel page.<br />
+<a class="glightbox" href="../images/Web_Mobile7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Web_Mobile7.png" alt="whitelist domains" title="whitelist domains" style="border: 1px solid gray;"></a></li>
 </ol>
 <h2 id="edit-webmobile-channel">Edit Web/Mobile Channel<a class="headerlink" href="#edit-webmobile-channel" title="Permanent link">&para;</a></h2>
-<p>To edit the Web/Mobile Client channel, follow the below steps:</p>
+<p>Steps to edit the Web/Mobile Client channel:</p>
 <ol>
 <li>
 <p>You can edit, test, disable or delete the channel. <a href="../adding-channels-to-your-bot/#editing-testing-disabling-or-deleting-channels">Learn more</a></p>
@@ -12849,15 +12938,19 @@ This topic describes how to register your application and generate credentials f
 <p>The Theme and Design feature allows platform users to easily customize various aspects of VA interfaces, such as welcome text, buttons, colors, chat windows, and sound themes. This helps create engaging and user-friendly bot experiences aligned with specific design requirements. A real-time preview pane shows changes before deployment for quick adjustments. While the default light and dark themes cannot be edited, users can create and modify copies to make new themes. The light theme is used by default.</p>
 <p>Steps to change the theme and design:</p>
 <ol>
-<li>Navigate to <strong>Flows &amp; Channels</strong> &gt; <strong>Channels</strong> &gt; <strong>Digital</strong> &gt; <strong>Configured</strong>.</li>
-<li>Click <strong>Web/Mobile Client</strong>.</li>
 <li>
-<p>On the Configure tab, click <strong>Edit</strong> to change the current theme.</p>
-<p><a class="glightbox" href="../images/sdke6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt_text" src="../images/sdke6.png" /></a></p>
+<p>Navigate to <strong>Flows &amp; Channels</strong> &gt; <strong>Channels</strong> &gt; <strong>Digital</strong> &gt; <strong>Configured</strong>.</p>
 </li>
 <li>
-<p>The theme editor page displays all the default and created themes, if any. </p>
-<p><a class="glightbox" href="../images/sdke3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt_text" src="../images/sdke3.png" /></a></p>
+<p>Click <strong>Web/Mobile Client</strong>.</p>
+</li>
+<li>
+<p>On the Configure tab, click <strong>Edit</strong> to change the current theme.<br />
+<a class="glightbox" href="../images/sdke6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt_text" src="../images/sdke6.png" /></a></p>
+</li>
+<li>
+<p>The theme editor page displays all the default and created themes, if any. 
+    <a class="glightbox" href="../images/sdke3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt_text" src="../images/sdke3.png" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You cannot edit the default themes, but you can create a copy and modify that copy using the <strong>Make Copy</strong> and <strong>Customize</strong> option.</p>
@@ -12883,11 +12976,11 @@ This topic describes how to register your application and generate credentials f
 </ol>
 </li>
 <li>
-<p>Click the back icon before the theme editor in the top left corner. </p>
-<p><a class="glightbox" href="../images/sdke1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt_text" src="../images/sdke1.png" /></a></p>
+<p>Click the back icon before the theme editor in the top left corner. 
+<a class="glightbox" href="../images/sdke1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt_text" src="../images/sdke1.png" /></a></p>
 </li>
 <li>
-<p>On the Configure tab, click <strong>Save</strong>. The configuration saved message is displayed.
+<p>On the Configure tab, click <strong>Save</strong>. The configuration saved message is displayed.<br />
 <a class="glightbox" href="../images/sdke5-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/sdke5-1.png" alt="Configuration" title="Configuration Saved" style="border: 1px solid gray; zoom:70%;"></a></p>
 </li>
 <li>

@@ -5122,6 +5122,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Adding a new web crawler for a web source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crawl-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crawl Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -5161,9 +5176,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
+  <a href="#web-crawl-errors-and-troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
-      Troubleshooting
+      Web Crawl Errors and Troubleshooting
     </span>
   </a>
   
@@ -7164,6 +7179,75 @@
   
   <span class="md-ellipsis">
     Bot Override and Automation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Integrations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Integrations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Genesys Voice
   </span>
   
 
@@ -12824,6 +12908,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Adding a new web crawler for a web source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crawl-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crawl Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -12863,9 +12962,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
+  <a href="#web-crawl-errors-and-troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
-      Troubleshooting
+      Web Crawl Errors and Troubleshooting
     </span>
   </a>
   
@@ -12905,8 +13004,13 @@
 <p><a class="glightbox" href="../images/add-new-web-source.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Adding Web Source" src="../images/add-new-web-source.png" title="Add Web Source" /></a></p>
 <p>Alternatively, if some web domains are already configured for crawling, you will see the list on this page. Click <strong>+Web Crawl</strong> on the top right to add a new web domain for crawling.</p>
 <p><a class="glightbox" href="../images/add-web-source.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Add new web source" src="../images/add-web-source.png" title="add a new web source" /></a></p>
-<p>Enter the following details of the web domain to be crawled on the <strong>Configuration</strong> tab and click <strong>Save &amp; Crawl</strong>.</p>
+<p>Provide details of the crawl configuration on the <strong>Configuration</strong> tab and click <strong>Save &amp; Crawl</strong>.</p>
 <p><a class="glightbox" href="../images/add-web-config-page.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Web Crawl Configuration" src="../images/add-web-config-page.png" title="Web Crawl Configuration" /></a></p>
+<p>This validates the configuration provided and by default, automatically initiates the crawl process after validation.
+<a class="glightbox" href="../images/automatic-crawl.PNG" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Automate Crawling" src="../images/automatic-crawl.PNG" title="Automate Crawling" /></a></p>
+<p>You can choose to run the crawl in the background which allows you to perform other tasks on the application. Alternatively, you can also schedule the crawler to run at specific times in the future.
+<a class="glightbox" href="../images/schedule-crawl.PNG" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Schedule Crawling" src="../images/schedule-crawl.PNG" title="Schedule Crawling" /></a></p>
+<h3 id="crawl-configuration">Crawl Configuration<a class="headerlink" href="#crawl-configuration" title="Permanent link">&para;</a></h3>
 <p><strong>Source Title</strong> – Provide a unique name for the web source. </p>
 <p><strong>Description</strong> - Enter a description of the source. This field can contain any information about the source, such as the data it offers and the reason for adding it as a source. </p>
 <p><strong>Crawl Sources</strong> – There are three ways to initiate crawling for a web domain. </p>
@@ -13104,8 +13208,13 @@
 <p class="admonition-title">Note</p>
 <p>Note that if a specific page is deleted manually as explained above and the web source is recrawled, the page reappears in the crawled pages list unless the crawl options are modified to disable the crawling of this page( like adding it in the exclude list). </p>
 </div>
-<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
-<p>There can be various scenarios when the application either fails to crawl a web page or successfully crawls the page but does not index the web page’s content and, hence, does not return the expected results. Listed below are some of the most common of these scenarios. For any specific queries or issues, please contact us. </p>
+<h2 id="web-crawl-errors-and-troubleshooting">Web Crawl Errors and Troubleshooting<a class="headerlink" href="#web-crawl-errors-and-troubleshooting" title="Permanent link">&para;</a></h2>
+<p>There can be various scenarios when the application either fails to crawl a web page or successfully crawls the page but does not index the web page’s content and, hence, does not return the expected results. </p>
+<p>Whenever the application fails to validate the crawl configuration provided and is unable to initiate the crawling process, the details of the error are displayed as shown below.
+<a class="glightbox" href="../images/validation-error.PNG" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Error Reporting" src="../images/validation-error.PNG" title="Error Reporting" /></a></p>
+<p>If the web crawl fails while running in the background, you can see the crawl errors in the status field as shown below. Hovering over the info icon gives you more details about the error.
+<a class="glightbox" href="../images/webcrawl-list-error-status.PNG" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Error Reporting" src="../images/webcrawl-list-error-status.PNG" title="Error Reporting" /></a></p>
+<p>Some of the most common error scenarios are listed below for reference. For any specific queries or issues, please contact us. </p>
 <p>1.<strong>Web Crawl Failure:</strong></p>
 <ul>
 <li>Ensure you have permission to log in to the web pages you are trying to crawl and have provided the correct credentials in the web crawl configuration.</li>
@@ -13123,6 +13232,7 @@
 <ul>
 <li>Verify if the web pages are JavaScript-rendered and enable the option if necessary. This situation may arise when many pages on the website being crawled return no content because they are JavaScript-rendered. The crawler continues to crawl the next pages until it crawls the specified number of pages (defined by <em>‘max URLs’</em> ).</li>
 </ul>
+<p>For an exact list of errors, potential reasons for errors and the next steps to take, refer to <a href="../web-crawl-errors">this list</a>.</p>
 
 
 
