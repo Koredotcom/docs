@@ -1,10 +1,10 @@
 # LLM and Generative AI Features
 
-The Kore.ai XO Platform helps enhance your bot development process and enrich end-user conversational experiences by integrating pre-built (OpenAI, Azure OpenAI, Anthropic) or custom models in the backend.
+The Kore.ai XO Platform helps enhance your bot development process and enrich end-user conversational experiences by integrating pre-built (OpenAI, Azure OpenAI, Anthropic) or custom models or Kore.ai XO GPT Module in the backend.
 
 In addition to the out-of-box integration with pre-built models, the Platform supports the bring-your-own (BYO) model framework to integrate with externally hosted models by third parties as well as models hosted by the enterprises themselves. The framework allows the creation of custom prompts that are optimized for specific purposes and models. This generic framework works seamlessly with the Auth Profiles module of the Platform, enabling enterprises to use the authentication mechanism of their choice.
 
-The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment.
+The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. For more information, see [Kore.ai XO GPT](../../generative-ai-tools/xo-gpt-module.md).
 
 By leveraging LLM and Generative AI capabilities, you can create intelligent, human-like conversational experiences for your end-users.
 
@@ -12,7 +12,10 @@ By leveraging LLM and Generative AI capabilities, you can create intelligent, hu
 
 The Integration of Generative AI and LLM enables the following features:
 
-* Prompts & Requests Library: Complete flexibility to create fully customized prompts optimized for particular use cases using custom models.
+* Model Library: Connect to Generative AI models of your choice using the out-of-box integrations (pre-built LLM integration) or custom integrations or Kore.ai XO GPT Module.
+
+* Prompts Library: Complete flexibility to create fully customized prompts optimized for particular use cases using pre-built or custom models.
+
 * Co-Pilot features:
     * **Automatic Dialog Generation**: This feature helps build production-ready dialog tasks automatically by briefly describing the task. A preview of the generated dialog is available and lets you modify the intent description and create multiple iterations of the dialog.
     * **Conversation Test Cases Suggestion**: The Platform suggests simulated user inputs covering various scenarios from an end-user perspective at every test step. You can use these suggestions to create test suites.
@@ -31,6 +34,10 @@ The Integration of Generative AI and LLM enables the following features:
     * **Rephrase User Query**: Improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing conversation context.
     * **Few-shot ML Model**: Uses the Kore Ai’s hosted embeddings for intent identification during run time based on semantic similarity.
 
+* Safeguards:
+    * **Data Anonymization**: Protect Personal Identifiable Information (PII) and Sensitive Data shared to LLMs in GenAI Features.
+    * **Guardrails**: Ensure the safety and appropriateness of LLM responses using the Guardrails.    
+
 ## Benefits
 
 All these features benefit VA developers, NLP developers, and testers as follows:
@@ -44,5 +51,10 @@ All these features benefit VA developers, NLP developers, and testers as follows
 * Allows enterprises and advanced users to bypass the platform’s pre-built integrations. They can establish customized connections to large language models and optimize prompts and requests for their specific use cases.
 
 ## Next Step
-You can find LLM and Generative AI features by going to **App Switcher** > **Manage** > **Settings** > **App Settings** > **Generative AI Tools**. [Learn how to enable LLM and Generative AI features :octicons-arrow-right-24:](../../app-settings/generative-ai-tools/introduction.md)
+
+
+1. Integrate a [pre-built or custom LLM or Kore.ai XO GPT](../../generative-ai-tools/models-library.md) in models library. 
+2. Create [ New Prompts](../../generative-ai-tools/prompts-library.md) in the prompts library.
+3. Enable[ Co-Pilot](../../generative-ai-tools/co-pilot-features.md) and [Dynamic Conversations](../../generative-ai-tools/dynamic-conversations-features.md) features.
+4. (Optional) Enable [Data Anonymization](../../generative-ai-tools/data-anonymization.md) and [Guardrails](../../generative-ai-tools/guardrails.md).
 
