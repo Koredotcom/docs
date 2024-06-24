@@ -164,6 +164,11 @@ nav:
       - About External Models: models/external-models/external-models-overview.md
       - Add an External Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
       - Add an External Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
+    - Model Settings:
+      - Overview: models/model-settings/model-settings-overview.md
+      - Model Endpoint: models/fine-tune-models/view-the-generated-api-endpoint.md
+      - API Keys: models/fine-tune-models/generate-an-api-key.md
+      - Configurations: models/fine-tune-models/configure-your-fine-tuned-model.md
   - Playground: 
     - About Playground: playground/overview.md
     - Create a New Prompt Experiment: playground/create-a-new-prompt-experiment.md
