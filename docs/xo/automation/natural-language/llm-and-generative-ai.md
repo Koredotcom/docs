@@ -11,8 +11,8 @@ By leveraging LLM and Generative AI capabilities, you can create intelligent, hu
 ## Key Features
 
 The Integration of Generative AI and LLM enables the following features:
-
-* Prompts & Requests Library: Complete flexibility to create fully customized prompts optimized for particular use cases using custom models.
+* Model Library: Connect to Generative AI models of your choice using the out-of-box integrations (pre-built LLM integration) or custom integrations or Kore.ai XO GPT Module.
+* Prompts Library: Complete flexibility to create fully customized prompts optimized for particular use cases using pre-built or custom models.
 * Co-Pilot features:
     * **Automatic Dialog Generation**: This feature helps build production-ready dialog tasks automatically by briefly describing the task. A preview of the generated dialog is available and lets you modify the intent description and create multiple iterations of the dialog.
     * **Conversation Test Cases Suggestion**: The Platform suggests simulated user inputs covering various scenarios from an end-user perspective at every test step. You can use these suggestions to create test suites.
@@ -30,6 +30,10 @@ The Integration of Generative AI and LLM enables the following features:
     * **Repeat Responses**: Use LLM to reiterate the last bot responses when the Repeat Bot Response event is triggered.
     * **Rephrase User Query**: Improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing conversation context.
     * **Few-shot ML Model**: Uses the Kore Ai’s hosted embeddings for intent identification during run time based on semantic similarity.
+
+* Safeguards:
+    * **Data Anonymization**: Protect Personal Identifiable Information (PII) and Sensitive Data shared to LLMs in GenAI Features.
+    * **Guardrails**: Ensure the safety and appropriateness of LLM responses using the Guardrails.    
 
 ## Benefits
 

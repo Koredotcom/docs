@@ -54,7 +54,7 @@ The Integration of Generative AI and LLM enables the following features:
 
     * **Few-shot ML Model**: Uses the Kore Ai’s hosted embeddings for intent identification during run time based on semantic similarity.
 
-* Safeguards
+* Safeguards:
     * **Data Anonymization**: Protect Personal Identifiable Information (PII) and Sensitive Data shared to LLMs in GenAI Features.
     * **Guardrails**: Ensure the safety and appropriateness of LLM responses using the Guardrails.
 
