@@ -1,4 +1,4 @@
-# How to Integrate with S3 Bucket
+# Integrate with S3 Bucket
 
 The S3 Storage Integration functionality broadens GALE's capabilities by enabling connectivity with your AWS S3 account. It empowers you to import files from S3 and leverage them in developing high-quality AI applications for enterprises.
 

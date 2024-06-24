@@ -1,4 +1,4 @@
-# How to Integrate with Weights and Biases
+# Integrate with Weights and Biases
 
 Connecting with Weights and Biases (WandB) allows users to link to the platform, ensuring that the fine-tuning data associated with the model being refined in GALE is seamlessly transmitted to the WandB console for additional analytics.
 

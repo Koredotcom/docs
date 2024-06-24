@@ -174,13 +174,12 @@ nav:
   - Data: 
     - About Data: data/overview.md 
     - Upload a Dataset: data/upload-a-dataset.md
-  - Integrations: 
-    - How to Enable Hugging Face: integrations/how-to-enable-hugging-face.md
-    - How to Integrate with S3 Bucket: integrations/how-to-integrate-with-s3-bucket.md
-    - How to Integrate with Weights & Biases: integrations/how-to-integrate-with-wandb.md
-  - Administration:
+  - Settings:
     - User Management: 
-        - About User Management: administration/user-management/overview.md
-        - Invite a User to your Account: administration/user-management/invite-a-user-to-your-account.md
-        
+      - About User Management: settings/user-management/overview.md
+      - Invite a User to your Account: settings/user-management/invite-a-user-to-your-account.md
+    - Integrations: 
+      - Enable Hugging Face: settings/integrations/enable-hugging-face.md
+      - Integrate with S3 Bucket: settings/integrations/integrate-with-s3-bucket.md
+      - Integrate with Weights & Biases: settings/integrations/integrate-with-wandb.md    
    
