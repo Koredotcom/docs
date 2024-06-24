@@ -133,4 +133,4 @@ Based on the functionality addressed, the APIs can be categorized as:
 
 | API            | Description                                 | App Scope         |
 |----------------|---------------------------------------------|-------------------|
-| advancedSearch | To fetch answers for a query using SearchAI | Answer Generation |
+| [Answer Generation](../answer-generation) | To fetch answers for a query using SearchAI | Answer Generation |
