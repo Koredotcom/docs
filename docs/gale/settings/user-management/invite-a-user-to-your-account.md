@@ -9,13 +9,13 @@ As the owner of the account in GALE, you have the authority to invite any user a
 
     <img src="../images/profile-icon.png" alt="Profile Icon" title="Profile Icon" style="border: 1px solid gray; zoom:80%;">
 
-1. Hover over <**Account** name>> from the pop-up list and click **Invite user to the account** option from the list of options displayed as shown in the following image.
+2. Hover over **Account** name from the pop-up list and click the **Invite user to the account** option from the list as shown below.
 
-    <img src="../images/invite-user-to-account.png" alt="Invite User to Account" title="Invite User to Account" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/invite-user-to-account.png" alt="Invite User to Account" title="Invite User to Account" style="border: 1px solid gray; zoom:80%;">
 
     The **Invite users to &lt;<account name>>** dialog is displayed.
 
-1. Enter the **Email ID** of the user to add to the account and click **Invite**.
+3. Enter the **Email ID** of the user to add to the account and click **Invite**.
 
     <img src="../images/add-user-id-to-invite.png" alt="Add User ID to Invite" title="Add User ID to Invite" style="border: 1px solid gray; zoom:80%;">
 
