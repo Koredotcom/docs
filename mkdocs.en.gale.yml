@@ -124,7 +124,6 @@ nav:
         - Run the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
         - Create a Version of the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
       - Types of Nodes: 
-        - Overview: agents/agents-flows/types-of-nodes/overview-of-nodes.md
         - Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node.md
         - API Node: agents/agents-flows/types-of-nodes/api-node.md
         - Function Node: agents/agents-flows/types-of-nodes/function-node.md
