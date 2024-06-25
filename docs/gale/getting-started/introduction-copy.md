@@ -5,7 +5,8 @@ GALE is a new platform for building LLM-powered AI agents. It provides tools to 
 With GALE's user-friendly drag-and-drop interface, you can easily prototype, customize, and deploy AI agents tailored to your specific needs. The platform offers a range of popular open-source and commercial AI models that you can fine-tune as required. You can also chain together workflows, manage inputs/outputs, and implement guardrails - all without the need for coding expertise.
 
 Once your AI agent is ready, GALE simplifies the deployment process via API, allowing you to seamlessly integrate it into your existing systems and applications. This streamlined approach to leveraging Gen AI capabilities makes GALE the perfect solution for any business looking to accelerate their AI adoption.
-<p><iframe src="https://player.vimeo.com/video/960261668?h=26050864c2" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></p>
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/960261668?h=26050864c2" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ## Key Components of GALE
 
