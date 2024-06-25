@@ -19,17 +19,20 @@ Agents, Models, and Playground are the key components of GALE that work together
 
 === "Agents"
 
-    Agents allow you to create AI-powered workflows and automation with little to no coding required. Using a visual drag-and-drop interface, you can easily configure settings and combine multiple complex workflows. Guardrails ensure the models within these workflows operate responsibly, adhering to societal norms and your business requirements. The agents can seamlessly integrate with AWS, expanding the range of use cases. This user-friendly approach empowers you to leverage AI capabilities across various applications without extensive technical expertise.  
+    Agents allow you to create AI-powered workflows and automation with little to no coding required. Using a visual drag-and-drop interface, you can easily configure settings and combine multiple complex workflows. Guardrails ensure the models within these workflows operate responsibly, adhering to societal norms and your business requirements. The agents can seamlessly integrate with AWS, expanding the range of use cases. This user-friendly approach empowers you to leverage AI capabilities across various applications without extensive technical expertise.
+    
     [Learn more about Agents :octicons-arrow-right-24:](../agents/overview.md)
 
 === "Models"
 
     Models are the core of GALE. Based on your needs, you can choose from fine-tuned, commercial, or open-source AI models. Once you've selected the right models, you can easily integrate them into your AI agents. Guardrails ensure the models generate outputs responsibly and follow defined constraints. Additionally, you can deploy these AI agents via API endpoints and integrate them with your existing systems as required.
+    
     [Learn more about Models :octicons-arrow-right-24:](../models/overview.md)
 
 === "Playground"
 
     GALE's Prompt Playground allows you to experiment and refine prompts to get the best performance from AI models. You can test different prompts across various models - external, fine-tuned, or open-source. The Playground helps you identify the ideal model and configurations for each prompt through an iterative process. This streamlined workspace enables you to optimize prompts rapidly for maximum model effectiveness.
+    
     [Learn more about Playground :octicons-arrow-right-24:](../playground/overview.md)
 
 <hr>
