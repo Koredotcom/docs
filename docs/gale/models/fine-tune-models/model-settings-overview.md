@@ -1,10 +1,9 @@
 # Overview
 
-
 The model overview page displays real-time progress of the Fine-tuned models. 
 
-To access the model’s overview page,  go to  **Models** > **Fine-tuned models** and click **Model**.
-
+To access the model’s overview page,  go to  **Models** > **Fine-tuned models** and click **Model**.  
+<img src="../images/model-overview.png" alt="Model Overview" title="Model Overview" style="border: 1px solid gray; zoom:60%;">
 
 
 * **General Information**: This section displays the model's **progress status**, **Total time**, and **Author details**.  
@@ -26,5 +25,3 @@ To access the model’s overview page,  go to  **Models** > **Fine-tuned models*
 * **Hardware information**: This displays CPU and GPU utilization during fine-tuning.
 
 * **Training parameters**: Displays the summary of the parameters provided.
-
-<img src="../images/model-overview.png" alt="Model Overview" title="Model Overview" style="border: 1px solid gray; zoom:60%;">
