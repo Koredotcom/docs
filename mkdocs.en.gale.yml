@@ -112,7 +112,7 @@ nav:
   - Home : home.md
   - Getting Started: 
     - Welcome to GALE: getting-started/introduction.md 
-    - Welcome to GALE (copy): getting-started/introduction-copy.md    
+    - Welcome to GALE (v2): getting-started/introduction-copy.md    
   - Agents: 
     - About Agents: agents/overview.md
     - Create an Agent: agents/create-a-new-agent.md
