@@ -6,7 +6,12 @@ With GALE's user-friendly drag-and-drop interface, you can easily prototype, cus
 
 Once your AI agent is ready, GALE simplifies the deployment process via API, allowing you to seamlessly integrate it into your existing systems and applications. This streamlined approach to leveraging Gen AI capabilities makes GALE the perfect solution for any business looking to accelerate their AI adoption.
 
+<hr>
+
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/960261668?h=26050864c2" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+<hr>
+
 
 ## Key Components of GALE
 
