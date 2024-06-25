@@ -4,7 +4,7 @@ GALE's Models Studio empowers you to enhance base models by fine-tuning them dir
 
 ### Key Features
 
-* **Fine-tuned model**: Customize existing models to suit your specific requirements. Learn more. [Learn more](../models/fine-tune-models/fine-tune-models-overview.md).
+* **Fine-tuned model**: Customize existing models to suit your specific requirements. [Learn more](../models/fine-tune-models/fine-tune-models-overview.md).
 
 * **Open-source model**: Choose from a curated list of 30+ popular open-source models or bring in any text generation model from Hugging Face. [Learn more](../models/open-source-models/open-source-models-overview.md).
 
