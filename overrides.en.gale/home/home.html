@@ -60,10 +60,14 @@
             position: relative;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: center;            
+        }
+        [data-md-color-scheme=slate] .mdc-main-banner {
+            background-image: none;
+            background-color: transparent;
         }
         .mdc-main-banner h1{
-            color: var(--gray-900, #101828);
+            color: var(--md-default-fg-color--light);
             font-size: 24px;
             font-weight: 600;
             line-height: 32px;
@@ -311,16 +315,16 @@
 
          /* Whats new section styles start */
         .mdc-whats-new{
-            padding: 24px 0px;
+            padding: 14px 0px;
             display: flex;
             gap: 24px;
         }
         .mdc-whats-new-left{
-            width: 100%;
+            width: 50%;
             padding: 0px 60px 0px 0px;
         }
         .mdc-heading{
-            color: var(--gray-900, #101828);
+            color: var(--md-default-fg-color--light);
             font-size: 24px;
             font-weight: 600;
             line-height: 32px; 
@@ -392,11 +396,7 @@
             line-height: 18px; 
         }
         .mdc-whats-new-right{
-            width: 360px;
-            flex-shrink: 0;
-            padding: var(--spacing-3-xl, 64px) var(--spacing-lg, 24px) var(--spacing-lg, 24px) var(--spacing-lg, 24px);
-            border-radius: var(--radius-md, 8px);
-            background: var(--gray-50, #F9FAFB);
+            width: 50%;            
             position: relative;
             height: max-content;
         }
@@ -719,7 +719,7 @@
             <section class="mdc-whats-new">
                 <div class="mdc-whats-new-left">
                     <h2 class="mdc-heading">Accelerate your AI Adoption with GALE</h2>
-                    <p class="mdc-des">Confidently accelerate and scale your AI adoption while ensuring data security, reliable performance, and deployment flexibility to suit your unique business needs.</p>
+                    <p class="mdc-des">Accelerate and scale your AI adoption securely, with reliable performance and flexible deployment tailored to your business needs.</p>
                     <div class="mdc-whats-new-block">
                         <h4 class="mdc-whats-new-title">Deploy fine-tuned, open source, or external models</h4>
                         <div class="mdc-whats-new-des">
@@ -742,7 +742,7 @@
                 </div>
                 
                 <div class="mdc-whats-new-right">
-                    <iframe src="https://player.vimeo.com/video/960261668?h=26050864c2" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    <iframe src="https://player.vimeo.com/video/960261668?h=26050864c2" width="100%" height="400px" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
 
             </section>
