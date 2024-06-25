@@ -69,35 +69,39 @@ To fine-tune a model, follow these steps:
 
 
 6. Select or upload the test dataset to test the fine-tuned model. Click **Next**.
+    <img src="../images/test-data-section.png" alt=" Test Data Section" title="Test Data Section" style="border: 1px solid gray; zoom:80%;">
+
 
     !!! note
 
         The system accepts JSONL, CSV, and JSON files. 
         
-    <img src="../images/test-data-section.png" alt=" Test Data Section" title="Test Data Section" style="border: 1px solid gray; zoom:80%;">
 
 
 
-7. Select the required hardware for fine-tuning from the dropdown menu and click **Next**. 
+7. Select the required hardware for fine-tuning from the dropdown menu and click **Next**.
+        <img src="../images/hardware-section.png" alt="Hardware Section" title="Hardware Section" style="border: 1px solid gray; zoom:80%;">
 
 
 
 8. In the **Weights & Biases** section, select your **WandB connection** from the drop-down list and click **Next**. 
-To create a Weight & Biases connection, click **+ New connection**. For more information about how to create the WandB account, see[ How-to-Integrate-with-WandB](https://galeadmin-kore.github.io/docs/gale/integrations/how-to-integrate-with-wandb/) 
+To create a Weight & Biases connection, click **+ New connection**. For more information about how to create the WandB account, see[ How to Integrate with WandB](https://galeadmin-kore.github.io/docs/gale/integrations/how-to-integrate-with-wandb/) 
 
     !!! note
 
-        You need an account with Weights and Biases. Enabling the integration with an API token will share your real-time fine-tuning status with the platform, allowing you to monitor your model's fine-tuning metrics comprehensively. Use the provided API token to create an integration, sending all fine-tuning process data to the associated account. 
+        You need an account with Weights and Biases. Enabling the integration with an API token will share your real-time fine-tuning status with the platform, allowing you to monitor your model's fine-tuning metrics comprehensively. Use the provided API token to create an integration, sending all fine-tuning process data to the associated account.
+
+    <img src="../images/new-connection.png" alt="WandB Section" title="WandB Section" style="border: 1px solid gray; zoom:80%;">      
 
 
 
 9. In the **Review** step, verify all the details before starting the fine-tuning. To modify previous steps, click **Back**. 
-
+    <img src="../images/review-section.png" alt="Review Section" title="Review Section" style="border: 1px solid gray; zoom:80%;">
 
 
 10. Click **Start fine-tuning**.  
 The model **Overview** page displays real-time progress. You can also view the model’s overview page by clicking the model on the **Fine-tuned models** page. [Learn more](../fine-tune-models/model-settings-overview.md).
-
+<img src="../images/overview1.png" alt="Overview Page" title="Overview Page" style="border: 1px solid gray; zoom:80%;">
 
 Once testing is completed, you can download the training file, test results, and test data for your reference.
 
