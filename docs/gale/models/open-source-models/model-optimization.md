@@ -8,7 +8,9 @@ Model optimization is the process of improving a machine learning model's perfor
 
 The GALE supports the following optimization types: CTranslate2 and vLLM.
 
-**Note**: The model optimization is supported only for the Kore-hosted models.
+!!! note
+
+    The model optimization is supported only for the Kore-hosted models.
 
 
 ## CTranslate2
@@ -42,7 +44,9 @@ Key advantages of using vLLM:
 
 Supported Quantization: float16 (default), bfloat16, and Float32.
 
-**Note**: The T4 machine does not support bfloat16.
+!!! note
+
+    The T4 machine does not support bfloat16.
 
 [Learn more](https://docs.vllm.ai/en/stable/index.html).
 
