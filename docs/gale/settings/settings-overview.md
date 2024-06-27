@@ -10,10 +10,11 @@ GALE’s **Settings** console is a centralized management interface that provide
 
 ## Levels of Users Management 
 
-The **Settings** Console provides administrators comprehensive control and visibility on the user management features available at the account and agent levels, facilitating proactive and improved management.
+The **Settings** Console provides administrators comprehensive control and visibility on the user management features available at the following levels, facilitating proactive and improved management.
 
-* **Account level**: At the account level, administrators can manage users, integrations, and security permissions with a broader scope, encompassing the entire GALE account. This includes responsibilities such as user registration, access control, and permissions applicable across various applications within the GALE platform. The list of configured integrations can also be managed at the account level.
-* **Agent level**: User management becomes more detailed and specific at the agent level, concentrating on individual agent deployments and configurations within the GALE platform. The owner of each respective agent holds the authority to extend invitations to any number of individual users and customize their permissions and access levels for creating and deleting an agent, assigning roles, and managing deployments, guardrail configurations, and API keys.
+* **Account level**: At the account level, administrators can manage users, their roles, and permissions throughout the entire GALE account. This includes tasks such as inviting users, establishing automatic data synchronization from the enterprise Active Directory (AD), and setting up access controls for modules including agent creation, model management (including access, deployment, and export), integrations, user management, security controls, model guardrails, and others.
+
+* **Agent level**: User management within the GALE platform is focused on agent management, emphasizing individual agent deployments and configurations. Each agent's owner has the authority to invite individual users, customize their permissions and access levels, and manage tasks such as creating and deleting agents, assigning roles, overseeing deployments, configuring guardrails, and managing API keys.
 
 This post describes how to access the **Settings Console** and summarizes the modules and features available.
 
@@ -43,7 +44,7 @@ The modules and the capabilities supported on the <b>Settings</b> Console includ
 
 **Settings**
 
-Sync and import key user information from your organization's Active Directory (AD) by doing the following:  
+Sync and import key user information from your organization's AD by doing the following:  
    * Configuring the connection to your AD.
    * Importing user data from all or specific organization units.
    * Selecting and managing default AD user fields, or adding custom fields, and defining inclusion and exclusion rules for data import and sync.
