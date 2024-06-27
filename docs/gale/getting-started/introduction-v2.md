@@ -36,7 +36,7 @@ Agents, Models, and Playground are the key components of GALE that work together
 
 ## Comprehensive Suite for AI Operations
 
-The illustration below demonstrates how GALE provides a comprehensive platform for managing AI agents, models, and data integrations, with various tools for development, deployment, and monitoring. It also shows how GALE interfaces with external systems and users, providing a complete ecosystem for AI operations.
+The diagram below shows how GALE provides a comprehensive platform for managing AI agents, models, and data integrations, with various tools for development, deployment, and monitoring. It also shows how GALE interfaces with external systems and users, providing a complete ecosystem for AI operations.
 
 <img src="../images/gale-architecture-diagram.png" alt="Gale Architecture" title="Gale Architecture" style="border: 0px solid gray; zoom:100%;">
 
