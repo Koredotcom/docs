@@ -111,8 +111,7 @@ copyright: |
 nav:
   - Home : home.md
   - Getting Started: 
-    - Welcome to GALE: getting-started/introduction.md 
-    - Welcome to GALE (v2): getting-started/introduction-copy.md    
+    - GALE Overview: getting-started/introduction.md    
   - Agents: 
     - About Agents: agents/overview.md
     - Create an Agent: agents/create-a-new-agent.md
