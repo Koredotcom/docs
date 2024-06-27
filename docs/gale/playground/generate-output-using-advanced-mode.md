@@ -6,7 +6,7 @@ The advanced mode option helps you improve the prompt creation and testing proce
 
 On the Prompt page, you can find a Prompt sample auto-populated based on the template you have selected. This is additional information/instruction given to the LLM while it processes the prompt. You can modify this prompt if required.
 
-**To generate an output using advanced mode, follow these steps**:
+Steps to generate an output using advanced mode:
 
 
 1. On the **Prompt** page, click the **Advance Mode** toggle button to shift to the advanced mode from the simple mode of output generation.
@@ -17,23 +17,24 @@ On the Prompt page, you can find a Prompt sample auto-populated based on the tem
 
     <img src="../images/advanced-mode-options.png" alt="Advanced Mode Options" title="Advanced Mode Options" style="border: 1px solid gray; zoom:80%;">
 
-1. Click the **+Add Dataset** link under the **Dataset** section on the **Prompt** page to upload your CSV file with data.
+2. Click the **+Add Dataset** link under the **Dataset** section on the **Prompt** page to upload your CSV file with data.
 
     <img src="../images/add-dataset-advanced-mode.png" alt="Add Dataset Advanced Mode" title="Add Dataset Advanced Mode" style="border: 1px solid gray; zoom:80%;">
 
     The **Dataset** dialog is displayed.
 
-2. Click **Upload file** to upload a CSV file from your local computer and click **Upload**. You can see a preview of all the data in your CSV file. Click **Proceed** to accept the file.
-3. Click the arrow under the **Examples** section on the **Prompt** section to add a sample user input and sample AI response output.
+3. Click **Upload file** to upload a CSV file from your local computer and click **Upload**. You can see a preview of all the data in your CSV file. Click **Proceed** to accept the file.
+
+4. Click the arrow under the **Examples** section on the **Prompt** section to add a sample user input and sample AI response output.
 
     <img src="../images/add-examples-advanced-mode.png" alt="Add Examples Advanced Mode" title="Add Examples Advanced Mode" style="border: 1px solid gray; zoom:60%;">
 
     
-1. Click **Save** to save the sample examples.
+5. Click **Save** to save the sample examples.
 
-2. Click the down arrow corresponding to the **Input** field. A pop-up with a list of numbers such as 5, 10, 15, and 20 are visible. This displays the number of rows you want to see in your generated output from the CSV file that you have selected. Select the Randomize check box if you want to select randomly otherwise the list is sequential.
+6. Click the down arrow corresponding to the **Input** field. A pop-up with a list of numbers such as 5, 10, 15, and 20 are visible. This displays the number of rows you want to see in your generated output from the CSV file that you have selected. Select the Randomize check box if you want to select randomly otherwise the list is sequential.
 
-3. The value for the variables in the {{}} braces is populated from the uploaded CSV file. You can add variables to the prompt by opening the brackets. For example, {{ xyz }} is a variable in the prompt box. 
+7. The value for the variables in the {{}} braces is populated from the uploaded CSV file. You can add variables to the prompt by opening the brackets. For example, {{ xyz }} is a variable in the prompt box. 
 
     The value of the variable is populated from the dataset or file you have uploaded. To make sure the value is mapped correctly between the variable and the file, for the data to flow, you need to make the column name a variable within those curly braces.
 
@@ -41,13 +42,13 @@ On the Prompt page, you can find a Prompt sample auto-populated based on the tem
     
     For example, {{Name}} is a variable, from the file you uploaded where Name is a column in that CSV file. A maximum of 20 names or rows that you select can flow from the file to the prompt input column of the advanced mode.
 
-1. Click the + icon corresponding to the **Add Model** section to add the models you want to select and compare the generated outputs.
+8. Click the + icon corresponding to the **Add Model** section to add the models you want to select and compare the generated outputs.
 
     !!! note
 
         Currently, you can add only a maximum of 3 models in the playground. For more information about how to add a model to the prompt, see [Add an external model](../models/external-models/add-an-external-model-using-easy-integration.md).
 
-1. Click **Generate Output** after you have added the required number of models to compare. The Generated output for comparison is displayed in the Model section of the Prompt playground space for your reference.
+9. Click **Generate Output** after you have added the required number of models to compare. The Generated output for comparison is displayed in the Model section of the Prompt playground space for your reference.
 
     !!! note
 

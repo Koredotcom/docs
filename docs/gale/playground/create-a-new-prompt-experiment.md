@@ -6,7 +6,7 @@ In a prompt experiment, you can create experiments in either a simple or an adva
 
 Prompt experiments are useful for testing and comparing AI models for specific use cases and applications. 
 
-**To create a prompt experiment, follow these steps**:
+Steps to create a prompt experiment:
 
 
 1. Click **Playground** on the top navigation bar of the application. The **Experiments** page is displayed.
@@ -18,9 +18,10 @@ Prompt experiments are useful for testing and comparing AI models for specific u
 
     <img src="../images/create-new-experiment.png" alt="Create New Experiment" title="Create New Experiment" style="border: 1px solid gray; zoom:60%;">
 
-
 3. Enter a name for your experiment in the **Experiment name** field.
+
 4. Select the **Type** of experiment if it is Text-based, then click the **Text generation** option.
+
 5. Click **Create** to start with your prompt experiment process. A blank **Prompt experiment** page is displayed where you can enter your prompt and add models to compare the generated outputs.
 
     <img src="../images/new-prompt-experiment-page.png" alt="New Prompt Experiment Page" title="New Prompt Experiment Page" style="border: 1px solid gray; zoom:80%;">
