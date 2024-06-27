@@ -36,7 +36,9 @@ Additionally, the system automatically appends a version number to the deploymen
 
 For example, if a model named "Flan T5" is deployed for the first time, it will be named as "Flan T5_v1". Subsequent deployments will be named as "Flan T5_v2", "Flan T5_v3", and so on, incrementing the version number with each redeployment.
 
-The most recent deployment is marked with a green ticket next to the model name. Click on any deployment version to view the following details.
+The most recent deployment is marked with a green ticket next to the model name. Click on any deployment version to view the details.
+
+ <img src="../images/deployment-history.png" alt="Deployment History" title="Deployment History" style="border: 1px solid gray; zoom:80%;">
 
 **General details**: This section displays the model's basic information, such as its name, description, tags, optimization technique, parameters, the hardware used, and deployment duration.
 
@@ -45,7 +47,7 @@ The most recent deployment is marked with a green ticket next to the model name.
 **Un-deployment details**: This section appears only if the model is undeployed either automatically by the system or manually. In the case of manual un-deployment, the person who initiated the un-deployment, along with the start and end timestamps of the process, is displayed.
 
 
- <img src="../images/deployment-history.png" alt="Deployment History" title="Deployment History" style="border: 1px solid gray; zoom:80%;">
+
 
 
 
