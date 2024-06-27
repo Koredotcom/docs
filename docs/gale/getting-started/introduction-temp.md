@@ -2,7 +2,7 @@
 
 GALE is a new platform for building LLM-powered AI agents. It provides tools to integrate all the pieces necessary to power Gen AI agents that can be seamlessly integrated into your existing systems and workflows, enabling you to quickly unlock the benefits of Gen AI.
 
-<img src="../images/gale-arch.png" alt="Gale Architecture" title="Gale Architecture" style="border: 1px solid gray; zoom:100%;">
+<img src="./images/gale-arch.png" alt="Gale Architecture" title="Gale Architecture" style="border: 1px solid gray; zoom:100%;">
 
 You don't need to be an AI expert or write complex code. The platform provides ready-to-use AI models and intuitive tools to create custom Gen AI solutions quickly.
 
