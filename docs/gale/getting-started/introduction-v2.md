@@ -14,7 +14,7 @@ Once your AI agent is ready, GALE simplifies the deployment process via API, all
 
 GALE provides a comprehensive platform for managing AI agents, models, and data integrations, with various tools for development, deployment, and monitoring. It also shows how GALE interfaces with external systems and users, providing a complete ecosystem for AI operations.
 
-<img src="./images/gale-architecture-diagram.png" alt="Gale Architecture" title="Gale Architecture" style="border: 0px solid gray; zoom:100%;">
+<img src="../images/gale-architecture-diagram.png" alt="Gale Architecture" title="Gale Architecture" style="border: 0px solid gray; zoom:100%;">
 
 === "GALE Core Offerings"
 
