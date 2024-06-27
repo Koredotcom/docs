@@ -68,7 +68,7 @@ The diagram below shows how GALE provides a comprehensive platform for managing 
 
 === "Kore Stack"
 
-    Search AI and XO Platform are part of the broader ecosystem.
+    * Search AI and XO Platform are part of the broader ecosystem.
 
 <hr>
 
