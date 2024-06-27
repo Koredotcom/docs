@@ -45,7 +45,7 @@ The modules and the capabilities supported on the <b>Settings</b> Console includ
 **Settings**
 
 Sync and import key user information from your organization's AD by doing the following: 
- 
+
 * Configuring the connection to your AD.
 * Importing user data from all or specific organization units.
 * Selecting and managing default AD user fields, or adding custom fields, and defining inclusion and exclusion rules for data import and sync.
@@ -72,7 +72,7 @@ To access the **Settings Console** on GALE, follow the steps below:
 
 1. Log in to GALE using your credentials.
 2. Click **Settings** on the top menu.
-<img src="../images/Settings-console.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/Settings-console-access.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
 
 The system redirects to the **Users** page under **Users Management** on the **Settings** console.
 
