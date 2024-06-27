@@ -4,7 +4,7 @@ GALE’s **Settings** console is a centralized management interface that provide
 
 * Users
 * Roles and permissions
-* Active Directory Data Sync, user field(s), and email notifications configurations.
+* Automated synchronization of user data from Enterprise Active Directory, plus configuration of user profile fields and email notifications.
 * Integrations
 * Manage Guardrails 
 
@@ -68,7 +68,7 @@ To access the **Settings Console** on GALE, follow the steps below:
 2. Click **Settings** on the top menu.
 <img src="../images/Settings-console.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
 
-The system redirects to the **Users** page under **User Management** on the **Settings** console.
+The system redirects to the **Users** page under **Users Management** on the **Settings** console.
 
 ## Modules and Features
 
