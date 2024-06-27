@@ -171,8 +171,7 @@ nav:
     - Generate Output using Advanced Mode: playground/generate-output-using-advanced-mode.md
     - Explore Other Actions to Perform: playground/explore-other-actions-to-perform-in-the-prompt-playground.md    
   - Data: 
-    - About Data: data/overview.md 
-    - Upload a Dataset: data/upload-a-dataset.md
+    - Manage Datasets: data/manage-datasets.md
   - Settings:
     - User Management: 
       - About User Management: settings/user-management/overview.md
