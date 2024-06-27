@@ -44,11 +44,12 @@ The modules and the capabilities supported on the <b>Settings</b> Console includ
 
 **Settings**
 
-Sync and import key user information from your organization's AD by doing the following:  
-   * Configuring the connection to your AD.
-   * Importing user data from all or specific organization units.
-   * Selecting and managing default AD user fields, or adding custom fields, and defining inclusion and exclusion rules for data import and sync.
-   * Configuring AD auto sync schedules to ensure user data on GALE remains up-to-date.
+Sync and import key user information from your organization's AD by doing the following: 
+ 
+* Configuring the connection to your AD.
+* Importing user data from all or specific organization units.
+* Selecting and managing default AD user fields, or adding custom fields, and defining inclusion and exclusion rules for data import and sync.
+* Configuring AD auto sync schedules to ensure user data on GALE remains up-to-date.
 
 Additionally, you can do the following:
 
