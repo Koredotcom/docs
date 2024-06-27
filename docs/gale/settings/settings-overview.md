@@ -1,10 +1,10 @@
 # Settings Console Overview
 
-GALE’s **Settings** console is a centralized management interface that provides administrators with the tools and functionalities to configure, monitor, and manage GALE’s system configurations for the following features:
+GALE’s **Settings** console is a centralized management interface that provides administrators with the tools and functionalities to configure, monitor, and manage GALE’s system configurations to manage the following:
 
 * Users
 * Roles and permissions
-* Automated synchronization of user data from Enterprise Active Directory, plus configuration of user profile fields and email notifications.
+* Automated synchronization of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 * Integrations
 * Manage Guardrails 
 
@@ -22,43 +22,47 @@ This post describes how to access the **Settings Console** and summarizes the mo
 <p>Only users included as Admin in the system with the required permissions can access the Settings Console.</p>
 </div>
 
-## What You Can Do on the Settings Console
+## Actions You Can Perform on the Settings Console
 
-For modules defined on the Settings Console, you can do the following:
+The modules and the capabilities supported on the <b>Settings</b> Console include the following:
 
 **Users**
 
-* Add a new user to the system with pre-defined roles and permissions
+* Add a new user to your account via email invitation or user information file import.
 * View the summary of counts for total, active, inactive, and locked users.
-* Select one or more users and delete them.
-* Unlock locked users
-* View and edit individual user profile details 
-* View session and device information for a user.
-* Manage agents and models the user is a part of, including editing, deleting, or adding roles and adding agents/models to a user for a specific role.
+* View the list of all the users in your account and their details like Name, Email ID, Account Role, and Status.
+* Select and delete one or multiple users from your account.
+* Unlock locked users.
 
 **Roles and Permissions**
 
-* View system-generated roles for account and agent role types.
+* View system-generated roles for <b>account</b> and <b>agent</b> role types.
 * Duplicate the roles and make custom changes.
 * View the enabled/disabled access controls for various modules and permissions for system roles.
 * Add new custom roles for agent and account types, enable/disable access, and set access controls (full, view, custom, and no access) for various modules and permissions assigned to the roles.
 
 **Settings**
 
-* Sync and import key user information from your organization's directory, refresh the directory, 
-* Configure the connection of your Active Directory, manage organization units, view default and edit custom user attributes to sync, and set up sync schedules.
-* View sync history and reports.
-* Manage the ability to view and edit default and controlled (custom) user data fields.
-* Configure how a joining request from a new user is allowed and if it should be automatically approved.
-* Choose whether the users should receive email notifications when they are added to your account through an email invitation or AD sync.
+Sync and import key user information from your organization's Active Directory (AD) by doing the following:  
+   * Configuring the connection to your AD.
+   * Importing user data from all or specific organization units.
+   * Selecting and managing default AD user fields, or adding custom fields, and defining inclusion and exclusion rules for data import and sync.
+   * Configuring AD auto sync schedules to ensure user data on GALE remains up-to-date.
+
+Additionally, you can do the following:
+
+* View sync history and reports to monitor successful and failed AD syncs.
+* Manage the ability to view and edit default and custom user data fields.
+* Configure how joining requests from new users are handled, including automatic approval options.
+* Choose whether users should receive email notifications upon being added to your account via email invitation or AD sync.
 
 **Integrations**
 
-Add connections for Weights & Biases, AWS S3 Bucket, and Hugging Face integrations using API or App credentials.
+Integrate connections for Weights & Biases, AWS S3 Bucket, and Hugging Face using API or App credentials.
 
 **Guardrails**
 
-Deploy/Undeploy guardrail models to implement scanners on prompt input and output text in all the agents.
+Deploy and undeploy guardrail models to apply scanners to prompt input and output text across all agents.
 
 ## Access Settings Console
 
@@ -113,7 +117,7 @@ The following modules and features are supported on the Settings Console:
 
 <p><strong>Settings</strong></p>
 <ul>
-<li><strong>Active Directory</strong>: Configure and connect your organization's Active Directory (AD) to import user information from required organization units to GALE seamlessly. Enable automatic data sync between the AD and GALE daily, weekly, or monthly.
+<li><strong>Active Directory</strong>: Configure and connect your organization's AD to import user information from required organization units to GALE seamlessly. Enable automatic data sync between the AD and GALE daily, weekly, or monthly.
 </li>
 <li><strong>User Settings</strong>: Set up the visibility of user profile information across GALE. Select profile fields and allow edits by the end user.
 </li>
