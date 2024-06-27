@@ -58,8 +58,8 @@ Steps to edit or delete a variable:
 
 ## Undeploy the Agent
 
-You can undeploy the agent if it's no longer in use. Undeploying the agent will result in an immediate disconnection from all active instances. Click **Proceed to undeploy** and follow the on-screen instructions.
+You can undeploy the agent if it's no longer in use. Undeploying the agent will result in an immediate disconnection from all active instances. Click **Proceed to undeploy** on the Configurations page and follow the on-screen instructions.
 
 ## Delete the Agent
 
-You can delete an undeployed agent. Deleting the agent will remove all the associated data. Click **Proceed to delete** and follow the on-screen instructions.
+You can delete an undeployed agent. Deleting the agent will remove all the associated data. Click **Proceed to delete** on the Configurations page and follow the on-screen instructions.
