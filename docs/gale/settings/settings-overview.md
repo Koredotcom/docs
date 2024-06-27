@@ -22,9 +22,9 @@ This post describes how to access the **Settings Console** and summarizes the mo
 <p>Only users included as Admin in the system with the required permissions can access the Settings Console.</p>
 </div>
 
-## What You Can Do on the Settings Console
+## Actions You Can Perform on the Settings Console
 
-For modules defined on the Settings Console, you can do the following:
+The modules and the capabilities supported on the <b>Settings</b> Console include the following:
 
 **Users**
 
