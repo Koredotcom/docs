@@ -173,6 +173,7 @@ nav:
   - Data: 
     - Manage Datasets: data/manage-datasets.md
   - Settings:
+    - Overview: settings/settings-overview.md
     - User Management: 
       - About User Management: settings/user-management/overview.md
       - Invite a User to your Account: settings/user-management/invite-a-user-to-your-account.md
