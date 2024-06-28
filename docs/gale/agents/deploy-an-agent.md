@@ -2,9 +2,9 @@
 
 GALE supports both synchronous and asynchronous modes of agent deployment.
 
-    !!! Note
+!!! Note
 
-        Before deploying the agent, you must fix any errors or warnings in the Agent Flow.
+    Before deploying the agent, you must fix any errors or warnings in the Agent Flow.
 
  Steps to deploy an agent and get its endpoint in synchronous mode:
 
