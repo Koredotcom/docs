@@ -294,7 +294,7 @@ The new account creation is successful. The account you are currently using is i
 
 <img src="../images/make-account-default.png" alt="make default" title="make default" style="border: 1px solid gray; zoom:75%;">
 
-## Invite Users to Your Account
+## Invite a User to Your Account
 
 As an account owner, you can invite new users in your organization and collaborate with them. However, you cannot invite users to an account someone else owns.
 
