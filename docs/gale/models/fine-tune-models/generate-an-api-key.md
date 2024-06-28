@@ -2,7 +2,7 @@
 
 You can generate an API for your fine-tuned model and share it with other trusted users. It is essential to have a secure API key when trying to connect to this fine-tuned model in an external environment.  
 
-**To generate a new API key for your fine-tuned model, follow these steps**:
+To generate a new API key for your fine-tuned model, follow these steps:
 
 1. Click the **API keys** tab in the left panel on the **Overview** page of your fine-tuned model.
 

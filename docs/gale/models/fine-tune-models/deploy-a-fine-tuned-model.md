@@ -2,7 +2,7 @@
 
 Once the fine-tuning process is completed, you can deploy your fine-tuned model.
 
-**To deploy your fine-tuned model, follow these steps**:
+To deploy your fine-tuned model, follow these steps:
 
 
 1. Do one of the following:
@@ -61,14 +61,13 @@ Once the fine-tuning process is completed, you can deploy your fine-tuned model.
 
 
 1. Click **Next**.
-2. In the **Hardware** section:
-    * Select the **Hardware name** required for the deployment and click **Next**.
+2. Select the required **Hardware** for deployment from the dropdown menu and click **Next**. 
+ 
+    <img src="../images/deploy-fine-tuned-hardware-section.png" alt="Deploy Fine-Tuned Hardware Section" title="Deploy Fine-Tuned Hardware Section" style="border: 1px solid gray; zoom:80%;">
 
-        <img src="../images/deploy-fine-tuned-hardware-section.png" alt="Deploy Fine-Tuned Hardware Section" title="Deploy Fine-Tuned Hardware Section" style="border: 1px solid gray; zoom:80%;">
+1. In the **Review** step, verify all the details that you provided earlier. Select the **I accept all the terms and conditions** check box.
 
-    * In the **Review** step, verify all the details that you provided earlier. Select the **I accept all the terms and conditions** check box.
-
-        <img src="../images/deploy-fine-tuned-review-section.png" alt="Deploy Fine-Tuned Review Section" title="Deploy Fine-Tuned Review Section" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/deploy-fine-tuned-review-section.png" alt="Deploy Fine-Tuned Review Section" title="Deploy Fine-Tuned Review Section" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
 

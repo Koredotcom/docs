@@ -2,7 +2,7 @@
 
 You can modify the general details of your fine-tuned model if required.
 
-**To modify the settings of your fine-tuned model, follow the steps**:
+To modify the settings of your fine-tuned model, follow the steps:
 
 
 1. Click the **Configurations** tab from the left panel on the **Models** page. The **Configurations** page is displayed.

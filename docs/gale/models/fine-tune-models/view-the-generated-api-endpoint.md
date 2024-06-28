@@ -1,5 +1,7 @@
 # View API Endpoint & Deployment History
 
+
+
 ## API Endpoint
 After the model is deployed, the API endpoint is generated which implies that your fine-tuned model is ready for inferencing externally and across the other sections in GALE.
 
