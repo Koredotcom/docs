@@ -14,13 +14,13 @@ Steps to create a prompt experiment:
     <img src="../images/navigate-to-playground.png" alt="Navigate To Playground" title="Navigate To Playground" style="border: 1px solid gray; zoom:80%;">
 
 
-2. Click the **Create experiment** button. The **New experiment** dialog is displayed.
+2. Click the **Create experiment**. The **New experiment** dialog is displayed.
 
     <img src="../images/create-new-experiment.png" alt="Create New Experiment" title="Create New Experiment" style="border: 1px solid gray; zoom:60%;">
 
 3. Enter a name for your experiment in the **Experiment name** field.
 
-4. Select the **Type** of experiment if it is Text-based, then click the **Text generation** option.
+
 
 5. Click **Create** to start with your prompt experiment process. A blank **Prompt experiment** page is displayed where you can enter your prompt and add models to compare the generated outputs.
 
