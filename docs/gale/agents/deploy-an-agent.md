@@ -30,19 +30,6 @@ GALE supports both synchronous and asynchronous modes of agent deployment.
 <img src="../images/async-push-endpoint.png" alt="Async Push Endpoint" title="Existing Push Endpoint" style="border: 1px solid gray; zoom:80%;">  
 <img src="../images/async-poll-endpoint.png" alt="Async Poll Endpoint" title="Async Poll Endpoint" style="border: 1px solid gray; zoom:80%;">
 
-## Redeploy an Agent for the Changes in the Flow[¶](https://docs.kore.ai/gale/agents/deploy-an-agent/#redeploy-an-agent-for-the-changes-in-the-flow)
-
-The Deployed version of your agent's flow is accessible from the **Agent Flow** page. You can click the **View the Flow** button to view the flow in read-only mode. \
-
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image9.png "image_tooltip")
-
-
-You can change the in-development version of the flow. To redeploy the agent with the updated flow, click the **Deploy** button at the top-right corner of the **Agent endpoint** page. The redeployment doesn't change the agent's endpoint.
-
 ## Redeploy an Agent for the Changes in the Flow 
 
 The Deployed version of your agent's flow is accessible from the **Agent Flow** page. You can click the **View the Flow** button to view the flow in read-only mode.  
