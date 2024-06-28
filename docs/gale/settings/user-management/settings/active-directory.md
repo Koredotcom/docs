@@ -33,13 +33,14 @@ Moreover, the automatic synchronization (auto sync) feature ensures that Setting
 ### Step 1: Set up the Connection
 
 1. Configure the AD connection by providing the following mandatory fields:
-* **Host Name**: The domain's hostname or IP address where AD services run.
-* **Server Port**: The network port number used by the domain host to communicate over the network.
-* **Base DN**: The server location for users and groups in a domain.
-* **User ID**: The identity used to log into the AD.
-* **Password**: The password used to log into the AD.
-* **(Optional) SSL**: Enable this option to secure communications over the web, particularly for services and applications that interact with AD via HTTPS.
-<img src="../images/configure-ad-connection.png" alt="configure ad connection" title="configure ad connection" style="border: 1px solid gray; zoom:75%;">
+
+<ul><li><b>Host Name</b>: The domain's hostname or IP address where AD services run.</li>
+<li><b>Server Port</b>: The network port number used by the domain host to communicate over the network.</li>
+<li><b>Base DN</b>: The server location for users and groups in a domain.</li>
+<li><b>User ID</b>: The identity used to log into the AD.</li>
+<li><b>Password</b>: The password used to log into the AD.</li>
+<li><b>(Optional) SSL</b>: Enable this option to secure communications over the web, particularly for services and applications that interact with AD via HTTPS.</li>
+<img src="../images/configure-ad-connection.png" alt="configure ad connection" title="configure ad connection" style="border: 1px solid gray; zoom:75%;"></ul>
 
 2. Click **Next** to confirm the credentials before proceeding. If validation errors occur, they will be displayed on the screen so you can correct them before continuing.
 
@@ -48,9 +49,10 @@ Moreover, the automatic synchronization (auto sync) feature ensures that Setting
 Follow the steps below to configure and import user data from key organizational units such as Sales, Finance, or Operations in your AD:
 
 1. Select one of the following options based on your requirements:
-* **Import all organization units**: Imports user information from all the organization units.
-* **Do not import organization units**: Do not import user information from any organization units in the AD.
-* **Import only the following organization units**: Imports user information only from the organization unit you select.
+
+<ul><li><b>Import all organization units</b>: Imports user information from all the organization units.</li>
+<li><b>Do not import organization units</b>: Do not import user information from any organization units in the AD.</li>
+<li><b>Import only the following organization units</b>: Imports user information only from the organization unit you select.</li></ul>
 
 2. Click **Next** to proceed to user profile fields mapping.
 <img src="../images/org-units.png" alt="manage org units" title="manage org units" style="border: 1px solid gray; zoom:75%;">
