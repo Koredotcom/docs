@@ -111,9 +111,13 @@ copyright: |
 nav:
   - Home : home.md
   - Getting Started: 
+<<<<<<< HEAD
     - GALE Overview: getting-started/introduction.md    
     - GALE Overview (v2): getting-started/introduction-v2.md
     - Access GALE: getting-started/sign-up-sign-in.md
+=======
+    - GALE Overview: getting-started/introduction.md        
+>>>>>>> db413b827d3a980df4334e4c2d9ee6761936a997
   - Agents: 
     - About Agents: agents/overview.md
     - Create an Agent: agents/create-a-new-agent.md

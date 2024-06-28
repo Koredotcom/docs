@@ -23,18 +23,19 @@ Custom API Integration in GALE enables extensibility of use, where it allows you
 
 7. In the **Variables** section, you have 2 types:
 
-    * **Prompt variable**: The Prompt variable is by default set to mandatory. You can Turn ON the toggle button for the System prompt and examples if required.
-    * **Custom variables:** Click the **Custom variables** tab under the **Variables** section and click the **+Custom variables** button on the Custom variables section.  
-    <img src="../images/custom-api-integration-prompt-variable.png" alt="Custom API Integration Prompt Variable" title="Custom API Integration Prompt Variable" style="border: 1px solid gray; zoom:80%;">
+    * **Prompt variable**: The Prompt variable is by default set to mandatory. You can Turn ON the toggle for the System prompt and examples if required.
+        <img src="../images/custom-api-integration-prompt-variable.png" alt="Custom API Integration Prompt Variable" title="Custom API Integration Prompt Variable" style="border: 1px solid gray; zoom:80%;">
+    * **Custom variables**: Click the **Custom variables** tab under the **Variables** section and click the **+Custom variables**.  
 
-    The Add custom variable dialog is displayed. Enter the **Variable name**, and **Display name** and select the **Data type**.  
+
+        * The Add custom variable dialog is displayed. Enter the **Variable name**, and **Display name** and select the **Data type**.  
     <img src="../images/add-custom-variable.png" alt="Add Custom Variable" title="Add Custom Variable" style="border: 1px solid gray; zoom:60%;">
 
 8. In the **Body** section, add request body of the model you are trying to connect with in GALE. Ensure that the body is in the format as shown in the screenshot below, otherwise the API testing won't work.  
 <img src="../images/custom-api-integration-body.png" alt="Custom API Integration Body" title="Custom API Integration Body" style="border: 1px solid gray; zoom:80%;">
 
 9. In the **Test response** section, you need to provide a test response from the model:
-    * Click the **Test** button under the **Test** section on the **Custom API Integration** dialog.
+    * Click the **Test** under the **Test** section on the **Custom API Integration** dialog.
    The **Sample Input** dialog is displayed.  
    <img src="../images/test-sample.png" alt="Test Sample" title="Test Sample" style="border: 1px solid gray; zoom:60%;">
 
@@ -44,7 +45,7 @@ Custom API Integration in GALE enables extensibility of use, where it allows you
     
     !!! note
 
-        Click the **Save as draft** button to save the model and the status is saved as Draft.
+        Click the **Save as draft** to save the model and the status is saved as Draft.
     
 
 11. Click **Confirm** to save the details and your external model is listed in the External model's list. The model can now be used in the playground and the Gen AI node of the agent flow builder.
