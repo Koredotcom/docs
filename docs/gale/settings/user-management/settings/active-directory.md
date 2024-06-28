@@ -1,6 +1,6 @@
 # Active Directory: Configuring Automatic User Data Synchronization
 
-By configuring Active Directory (AD) import, you can seamlessly bring your organizational user information into the [Settings](../../settings-overview.md) console and keep it in sync with a single source of truth. This bulk import eliminates the need for email invitations or manual user info file imports, making the process more efficient. 
+By configuring Active Directory (AD) import, you can seamlessly bring your organizational user information into the [Settings](../../settings-overview.md){:target="_blank"} console and keep it in sync with a single source of truth. This bulk import eliminates the need for email invitations or manual user info file imports, making the process more efficient. 
 
 Moreover, the automatic synchronization (auto sync) feature ensures that Settings always has the most up-to-date user information, even reflecting deleted and modified records in the AD.
 
@@ -11,10 +11,10 @@ Moreover, the automatic synchronization (auto sync) feature ensures that Setting
 
 **Key Steps for Configuring AD Import**
 
-1. [Set up the Connection](./active-directory.md/#step-1-set-up-the-connection): Connect the **Settings** Console to your organization's AD to enable data import.
-2. [Select and Import the Organizational Units (OUs)](./active-directory.md/#step-2-import-organization-units): Choose specific OUs or all OUs from which to import key user information.
-3. [Specify User Attributes and Configure Rules for Selective Import from AD](./active-directory.md/#step-3-specify-user-attributes-and-configure-rules-for-selective-import-from-ad): Define desired user attributes (profile fields) that need to be imported from your active directory. Configure the inclusion and exclusion rules to control the information you need.
-4. [Schedule Automatic AD Sync](./active-directory.md/#step-4-schedule-automatic-ad-sync): Set up automatic or periodic sync schedules to keep user data current and reflect any changes or deletions from AD.
+1. [Set up the Connection](./active-directory.md/#step-1-set-up-the-connection){:target="_blank"}: Connect the **Settings** Console to your organization's AD to enable data import.
+2. [Select and Import the Organizational Units (OUs)](./active-directory.md/#step-2-import-organization-units){:target="_blank"}: Choose specific OUs or all OUs from which to import key user information.
+3. [Specify User Attributes and Configure Rules for Selective Import from AD](./active-directory.md/#step-3-specify-user-attributes-and-configure-rules-for-selective-import-from-ad){:target="_blank"}: Define desired user attributes (profile fields) that need to be imported from your active directory. Configure the inclusion and exclusion rules to control the information you need.
+4. [Schedule Automatic AD Sync](./active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"}: Set up automatic or periodic sync schedules to keep user data current and reflect any changes or deletions from AD.
 
 ## Steps to Configure AD Sync 
 
@@ -33,7 +33,6 @@ Moreover, the automatic synchronization (auto sync) feature ensures that Setting
 ### Step 1: Set up the Connection
 
 1. Configure the AD connection by providing the following mandatory fields:
-
 * **Host Name**: The domain's hostname or IP address where AD services run.
 * **Server Port**: The network port number used by the domain host to communicate over the network.
 * **Base DN**: The server location for users and groups in a domain.
@@ -49,7 +48,6 @@ Moreover, the automatic synchronization (auto sync) feature ensures that Setting
 Follow the steps below to configure and import user data from key organizational units such as Sales, Finance, or Operations in your AD:
 
 1. Select one of the following options based on your requirements:
-
 * **Import all organization units**: Imports user information from all the organization units.
 * **Do not import organization units**: Do not import user information from any organization units in the AD.
 * **Import only the following organization units**: Imports user information only from the organization unit you select.
@@ -72,13 +70,13 @@ To define both default (predefined) and custom fields during setup, follow the s
 
 3. (Optional) In addition to the default fields, you can add custom fields for your user profile information and map them to a corresponding field in the AD. To add a custom field mapping, follow the steps below:
 
-<ol start="a"><li>Click <b>Add Field</b> in the <b>Custom Fields</b> section.</li>
+<ul><li>Click <b>Add Field</b> in the <b>Custom Fields</b> section.</li>
 <li>Enter the custom field you want to map to your user profile in the <b>Custom field name</b> textbox.</li>
 <li>Enter the corresponding AD field in the <b>Field from Active Directory</b> textbox.</li>
 <li>(Optional) Click the <b>tag</b> icon to set the custom field as the primary field. However, to delete this field, you must first remove the primary field tag.</li>
 <li>Click <b>Next</b> to complete user profile fields' mapping and proceed.</li>
 <img src="../images/custom-field-management.png" alt="manage custom field" title="manage custom field" style="border: 1px solid gray; zoom:75%;">
-</ol>
+</ul>
 
 To remove a field, click the **Delete** icon as shown below.
 
@@ -140,7 +138,7 @@ To enable and configure auto sync, follow the steps below:
 <p>You can run AD-Sync anytime by choosing the run now option on the settings page.</p>
 </div>
 
-2. Select the following sync fields:
+<ol start="2"><li>Select the following sync fields:</li></ol>
 
 * **Sync Frequency**: Select from _daily,_ _weekly_, _monthly_, or _other _sync periods. The default selection is _Daily_.
 * **Sync Start**: Click the Calendar icon and choose a date from the widget to start the AD sync. The default selection is the current date. 
@@ -225,6 +223,6 @@ For a **failed** sync, you will receive the following email:
 
 <img src="../images/failed-sync.png" alt="failed sync" title="failed sync" style="border: 1px solid gray; zoom:75%;">
 
-An alternative way to add users to your account (without using AD sync) is to invite them via email. [Learn more](../../../getting-started/sign-up-sign-in.md/#invite-a-user-to-your-account).
+An alternative way to add users to your account (without using AD sync) is to invite them via email. [Learn more](../../../getting-started/sign-up-sign-in.md/#invite-a-user-to-your-account){:target="_blank"}.
 
-To learn more about other administrator features on the **Settings** Console, click [here](../../settings-overview.md).
+To learn more about other administrator features on the **Settings** Console, click [here](../../settings-overview.md){:target="_blank"}.
