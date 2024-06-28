@@ -30,7 +30,7 @@ GALE supports both synchronous and asynchronous modes of agent deployment.
 <img src="../images/async-push-endpoint.png" alt="Async Push Endpoint" title="Existing Push Endpoint" style="border: 1px solid gray; zoom:80%;">  
 <img src="../images/async-poll-endpoint.png" alt="Async Poll Endpoint" title="Async Poll Endpoint" style="border: 1px solid gray; zoom:80%;">
 
-## Redeploy an Agent for the Changes in the Flow 
+## Redeploy an Agent for the Changes in the Flow
 
 The Deployed version of your agent's flow is accessible from the **Agent Flow** page. You can click the **View the Flow** button to view the flow in read-only mode.  
 <img src="../images/deployed-version.png" alt="Deployed Version" title="Deployed Version" style="border: 1px solid gray; zoom:80%;">
