@@ -177,7 +177,7 @@ nav:
     - Overview: settings/settings-overview.md
     - User Management: 
       - About User Management: settings/user-management/overview.md
-      - Invite a User to your Account: settings/user-management/invite-a-user-to-your-account.md
+      - Invite a User to your Account: getting-started/sign-up-sign-in/#invite-users-to-your-account
     - Integrations: 
       - Enable Hugging Face: settings/integrations/enable-hugging-face.md
       - Integrate with S3 Bucket: settings/integrations/integrate-with-s3-bucket.md
