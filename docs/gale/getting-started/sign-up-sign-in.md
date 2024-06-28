@@ -10,7 +10,7 @@ Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Int
 
 ## GALE Account Creation Using SSO
 
-When [signing up](./sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account) for GALE using Single Sign-On (SSO) options such as Google or Office 365, the platform utilizes your email address to create an account. Here's how the process works based on the domain of your email address:
+When [signing up](./sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account){:target="_blank"} for GALE using Single Sign-On (SSO) options such as Google or Office 365, the platform utilizes your email address to create an account. Here's how the process works based on the domain of your email address:
 
 1. **Email Address with Kore.com Domain**
 
@@ -27,25 +27,23 @@ This ensures that only users with a Kore.com email can self-register, while othe
 
 ## Accounts
 
-When you [sign up](./sign-up-sign-in.md/#new-account-sign-up-and-activation) on GALE, you must do the following:
+When you [sign up](./sign-up-sign-in.md/#new-account-sign-up-and-activation){:target="_blank"} on GALE, you must do the following:
 
 1. **Create an Account**
-
 * Use your email address to register.
 * Set a password for your new account.
 
 2. **Name Your Account**
-
-* After creating the account, provide a name that will be displayed on your user interface (UI). [Learn more](./sign-up-sign-in.md/#create-an-account).
+* After creating the account, provide a name that will be displayed on your user interface (UI). [Learn more](./sign-up-sign-in.md/#create-an-account){:target="_blank"}.
 
 **Master Admin Role**
 
-When you create the first user account on GALE, you automatically become the **Master Admin** or **Owner**. [Learn more](./sign-up-sign-in.md/#create-an-account).
+When you create the first user account on GALE, you automatically become the **Master Admin** or **Owner**. [Learn more](./sign-up-sign-in.md/#create-an-account){:target="_blank"}.
 
 This role provides access to default permissions and administrative capabilities:
 
 * **Invite Team Members**: Invite others to join your account via the **Settings** page to collaborate on agents, models, experiments, and other modules.
-* **Administrative Tasks**: Manage account users, including adding, deleting, and modifying user profiles, and assigning roles and permissions. [Learn more](../settings/settings-overview.md).
+* **Administrative Tasks**: Manage account users, including adding, deleting, and modifying user profiles, and assigning roles and permissions. [Learn more](../settings/settings-overview.md){:target="_blank"}.
 
 **Joining and Switching Accounts**
 
@@ -74,7 +72,7 @@ You can assign a system or custom role to a user in your account. This user can 
 
 An account owner or master admin can perform the following functions:
 
-* Access the **Settings** page. [Learn more](../settings/settings-overview.md).
+* Access the **Settings** page. [Learn more](../settings/settings-overview.md){:target="_blank"}.
 * Add users via email invite or file import to their account.
 * Delete users from their account (possible only when the user has deleted all the agents they’ve created).
 * Manage data for user profiles, sessions/devices, agents, and models in their accounts.
@@ -89,7 +87,7 @@ An account owner or master admin can perform the following functions:
 
 ## New Account Sign-up and Activation
 
-If you do not have an account on GALE, visit this home page [link](https://gale.kore.ai/) to sign up and follow the steps mentioned [here](./sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account).
+If you do not have an account on GALE, visit this home page [link](https://gale.kore.ai/){:target="_blank"} to sign up and follow the steps mentioned [here](./sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account){:target="_blank"}.
 
 You can sign up on GALE in one of the following ways:
 
@@ -124,7 +122,7 @@ Alternatively, enter your email address and click **Continue** to sign up via em
 
 Once the admin accepts your request via an invitation, you can complete the sign-up process. 
 
-3. To sign up via email, enter your **_Full Name_** and **_Password_**, and click **Create Account**.
+<ol start="3"><li>To sign up via email, enter your <b>Full Name</b> and <b>Password</b>, and click <b>Create Account</b>.</li></ol>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -163,7 +161,7 @@ If the verification link or code expires or becomes invalid, the system prompts 
 
 ## Sign in to GALE
 
-Once you sign up and activate your GALE account, you can sign in for the first time on the [login page](https://qa-gale.kore.ai/) using one of the following methods:
+Once you sign up and activate your GALE account, you can sign in for the first time on the [login page](https://qa-gale.kore.ai/){:target="_blank"} using one of the following methods:
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -178,6 +176,7 @@ Please complete the email OTP verification to sign in successfully.</div>
     <img src="../images/continue-with-email.png" alt="continue with email" title="continue with email" style="border: 1px solid gray; zoom:75%;">
 
 3. Enter your password and click **Login**.
+
 <img src="../images/click-login.png" alt="click login" title="click login" style="border: 1px solid gray; zoom:75%;">
 
 
@@ -223,7 +222,6 @@ You will receive instructions via email on how to reset your password. Check you
 
 <img src="../images/resend-email.png" alt="resend email" title="resend email" style="border: 1px solid gray; zoom:75%;">
 
-
 3. Click the **Reset Password** link in the email, or copy and paste the URL into your browser.
 <img src="../images/click-password-link-in-email.png" alt="click reset link" title="click reset link" style="border: 1px solid gray; zoom:75%;">
 
@@ -233,9 +231,10 @@ You will receive instructions via email on how to reset your password. Check you
     If both the entries do not match, you cannot proceed.
 
 5. Click **Reset Password**.
+
 <img src="../images/reset-password.png" alt="reset password" title="reset password" style="border: 1px solid gray; zoom:75%;">
 
-The password is reset successfully. On the [Sign In](./sign-up-sign-in.md/#sign-in-to-gale) page, enter the new password for your email account.
+The password is reset successfully. On the [Sign In](./sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} page, enter the new password for your email account.
 
 #### Change Expired Password
 
@@ -265,7 +264,7 @@ Click the account you want to access. The system redirects you to the **Agents**
 
 ## Create an Account
 
-Once you sign up on GALE, you must create an account to access and manage GALE’s features and offerings. [Learn more](./sign-up-sign-in.md/#accounts) about GALE accounts. 
+Once you sign up on GALE, you must create an account to access and manage GALE’s features and offerings. [Learn more](./sign-up-sign-in.md/#accounts){:target="_blank"} about GALE accounts. 
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -279,7 +278,7 @@ Once you sign up on GALE, you must create an account to access and manage GALE�
 
 To create an account, follow the steps below:
 
-1. [Sign in](./sign-up-sign-in.md/#sign-in-to-gale) to GALE using SSO or email.
+1. [Sign in](./sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE using SSO or email.
 2. Click the **Account Profile** icon on the top right corner.
 3. Click **+ Create New Account**.
 <img src="../images/click-create-account.png" alt="click create new account" title="click create new account" style="border: 1px solid gray; zoom:75%;">
@@ -317,7 +316,7 @@ To invite a user, follow the steps below:
 <li>If there is an error then the email with the issue is highlighted.</li></ul>
 </div>
 
-4. Click **Send invite**.
+<ol start="4"><li>Click <b>Send invite</b>.</li></ol>
 
 A success message appears to indicate that your invitation has been sent.
 
@@ -327,7 +326,7 @@ When you make an account default, the system automatically redirects you to its 
 
 **When Signing In for the first time**
 
-1. [Sign in](./sign-up-sign-in.md/#sign-in-to-gale) to GALE.
+1. [Sign in](./sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE.
 
 2. Hover over the required account and click **Set as Default** on the following page:
 <img src="../images/set-as-default.png" alt="set as default" title="set as default" style="border: 1px solid gray; zoom:75%;">
