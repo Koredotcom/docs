@@ -113,6 +113,7 @@ nav:
   - Getting Started: 
     - GALE Overview: getting-started/introduction.md    
     - GALE Overview (v2): getting-started/introduction-v2.md
+    - Access GALE: getting-started/sign-up-sign-in.md
   - Agents: 
     - About Agents: agents/overview.md
     - Create an Agent: agents/create-a-new-agent.md
