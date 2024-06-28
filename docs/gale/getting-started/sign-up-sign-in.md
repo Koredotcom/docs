@@ -29,11 +29,13 @@ This ensures that only users with a Kore.com email can self-register, while othe
 
 When you [sign up](./sign-up-sign-in.md/#new-account-sign-up-and-activation){:target="_blank"} on GALE, you must do the following:
 
-1. **Create an Account**
+**Create an Account**
+
 * Use your email address to register.
 * Set a password for your new account.
 
-2. **Name Your Account**
+**Name Your Account**
+
 * After creating the account, provide a name that will be displayed on your user interface (UI). [Learn more](./sign-up-sign-in.md/#create-an-account){:target="_blank"}.
 
 **Master Admin Role**
@@ -222,17 +224,13 @@ You will receive instructions via email on how to reset your password. Check you
 
 <img src="../images/resend-email.png" alt="resend email" title="resend email" style="border: 1px solid gray; zoom:75%;">
 
-3. Click the **Reset Password** link in the email, or copy and paste the URL into your browser.
-<img src="../images/click-password-link-in-email.png" alt="click reset link" title="click reset link" style="border: 1px solid gray; zoom:75%;">
-
-4. Enter the new password in the **New Password** and **Confirm Password** fields.
+<ol start="3"><li>Click the <b>Reset Password</b> link in the email, or copy and paste the URL into your browser.
+<img src="../images/click-password-link-in-email.png" alt="click reset link" title="click reset link" style="border: 1px solid gray; zoom:75%;"></li>
+<li>Enter the new password in the <b>New Password</b> and <b>Confirm Password</b> fields.
 <img src="../images/enter-new-passsword.png" alt="enter new password" title="enter new password" style="border: 1px solid gray; zoom:75%;">
-
-    If both the entries do not match, you cannot proceed.
-
-5. Click **Reset Password**.
-
-<img src="../images/reset-password.png" alt="reset password" title="reset password" style="border: 1px solid gray; zoom:75%;">
+If both the entries do not match, you cannot proceed.</li>
+<li>Click <b>Reset Password</b>.
+<img src="../images/reset-password.png" alt="reset password" title="reset password" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 The password is reset successfully. On the [Sign In](./sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} page, enter the new password for your email account.
 
