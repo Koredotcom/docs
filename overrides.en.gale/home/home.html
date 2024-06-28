@@ -60,10 +60,14 @@
             position: relative;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: center;            
+        }
+        [data-md-color-scheme=slate] .mdc-main-banner {
+            background-image: none;
+            background-color: transparent;
         }
         .mdc-main-banner h1{
-            color: var(--gray-900, #101828);
+            color: var(--md-default-fg-color--light);
             font-size: 24px;
             font-weight: 600;
             line-height: 32px;
@@ -311,16 +315,16 @@
 
          /* Whats new section styles start */
         .mdc-whats-new{
-            padding: 24px 0px;
+            padding: 14px 0px;
             display: flex;
             gap: 24px;
         }
         .mdc-whats-new-left{
-            width: 100%;
+            width: 50%;
             padding: 0px 60px 0px 0px;
         }
         .mdc-heading{
-            color: var(--gray-900, #101828);
+            color: var(--md-default-fg-color--light);
             font-size: 24px;
             font-weight: 600;
             line-height: 32px; 
@@ -392,11 +396,7 @@
             line-height: 18px; 
         }
         .mdc-whats-new-right{
-            width: 360px;
-            flex-shrink: 0;
-            padding: var(--spacing-3-xl, 64px) var(--spacing-lg, 24px) var(--spacing-lg, 24px) var(--spacing-lg, 24px);
-            border-radius: var(--radius-md, 8px);
-            background: var(--gray-50, #F9FAFB);
+            width: 50%;            
             position: relative;
             height: max-content;
         }
@@ -699,7 +699,7 @@
                         <span class="mdc-services-action">Learn More</span>
                     </div>
                 </a>
-                <a  href="../data/overview/" class="mdc-services-block">
+                <a  href="../data/manage-datasets/" class="mdc-services-block">
                     <div class="mdc-services-icon">
                         <img src="assets/data.svg" alt="Data">
                     </div>
@@ -715,6 +715,43 @@
     
             <div class="mdc-spacing"></div>
  
+            <!--Whats new section start-->
+            <section class="mdc-whats-new">
+                <div class="mdc-whats-new-left">
+                    <h2 class="mdc-heading">Accelerate your AI Adoption with GALE</h2>
+                    <p class="mdc-des">Accelerate and scale your AI adoption securely, with reliable performance and flexible deployment tailored to your business needs.</p>
+                    <div class="mdc-whats-new-block">
+                        <h4 class="mdc-whats-new-title">Deploy fine-tuned, open source, or external models</h4>
+                        <div class="mdc-whats-new-des">
+                            <p>Deploy a model quickly in just a few steps - select the model, review parameters and hardware, and then deploy.</p>                            
+                        </div>
+                     </div>
+                     <div class="mdc-whats-new-block">
+                        <h4 class="mdc-whats-new-title">Experiment and refine prompts using prompt playground</h4>
+                        <div class="mdc-whats-new-des">
+                            <p>Create a prompt, add examples, add one or more LLMs, generate responses, and compare the results.</p>                            
+                        </div>
+                     </div>
+                     <div class="mdc-whats-new-block">
+                        <h4 class="mdc-whats-new-title">Convert your experiment into a ready to use AI-powered Agent</h4>
+                        <div class="mdc-whats-new-des">
+                            <p>Create AI-powered workflows and automations using a visual drag-and-drop interface with little to no coding required.</p>                            
+                        </div>
+                     </div>
+                     <a href="../getting-started/introduction/" class="relase-note-action">Get Started</a>
+                </div>
+                
+                <div class="mdc-whats-new-right">
+                    <iframe src="https://player.vimeo.com/video/960261668?h=26050864c2" width="100%" height="400px" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+
+            </section>
+             <!--Whats new section End-->
+
+
+
+
+
             <!-- <div class="mdc-spacing"></div> -->
     
             <!--Documentation help start-->

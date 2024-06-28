@@ -20,8 +20,19 @@ You can initiate a fresh agent flow and specify the inputs required to initializ
 
 1. Enter a **Name(key)** to the input variable. For example, Product_ID.
 2. Select a data type from the **Type** drop-down list. If you want to make the data type mandatory, then move the **Mandatory** toggle button.
-3. You can Enable the **Default value** toggle button to add a Default value for the input variable. You can set a default value for this input variable. If the value is not provided, then the flow automatically selects this default value. For example, Default Value - 9393JAS
-4. Click **Save**. The Input variable is displayed in the list on the **Manage Input & Output** dialog.
+    *  If you select data **Type** as **Text** or **Number** or **Boolean**, the **Default value** field appears.
+        * You can Enable the **Default value** toggle to add a Default value for the input variable. You can set a default value for this input variable. If the value is not provided, then the flow automatically selects this default value. For example, Default Value - 9393JAS.
+    
+    *  If you select data **Type** as **Remote file**, the **File URL timeout** field appears.
+        <img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:80%;">
+        *  Enter the File URL timeout duration in minutes.
+            
+            !!! note
+
+                The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).
+                   
+ 
+3. Click **Save**. The Input variable is displayed in the list on the **Manage Input & Output** dialog.
 
 **To manage output variables, follow these steps**:
 
@@ -41,5 +52,5 @@ You can initiate a fresh agent flow and specify the inputs required to initializ
 
 !!! note
 
-    You can create multiple output variables based on your use case.
+    You can create multiple input as well as output variables based on your use case.
 

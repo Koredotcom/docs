@@ -1,0 +1,349 @@
+# Accessing GALE
+
+By signing up and creating an account, you can efficiently manage GALE's modules and collaborate with your team on projects in one place.
+
+## Supported Browsers
+
+Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Internet Explorer mode in Microsoft Edge is not supported.
+
+## GALE Account Creation Using SSO
+
+You can sign up for GALE at https://gale.kore.ai/.
+
+When you [sign up](./sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account){:target="_blank"} for GALE using Single Sign-On (SSO) options such as Google or Office 365, the platform utilizes your email address to create an account. Here's how the process works based on the domain of your email address:
+
+**Email Address with Kore.com Domain**
+
+* If your email address ends with "@kore.com" (e.g., john@kore.com), you are automatically granted access to GALE.
+* You can directly create an account with your Kore.com email without any additional steps.
+
+**Email Address with a Different Domain**
+
+* If your email address has a different domain (e.g., john@doe.com), you cannot directly create an account.
+* The Kore team needs to invite you to join GALE.
+* Once invited, you can then proceed to create an account using your email address.
+
+This ensures that only users with a Kore.com email can self-register, while others need authorization from the Kore team to gain access.
+
+## Accounts
+
+When you [sign up](./sign-up-sign-in.md/#new-account-sign-up-and-activation){:target="_blank"} for GALE, you must do the following:
+
+**Create an Account**
+
+* Use your email address to register.
+* Set a password for your new account.
+
+**Name Your Account**
+
+* After creating the account, provide a name that will be displayed on your user interface (UI). [Learn more](./sign-up-sign-in.md/#create-an-account){:target="_blank"}.
+
+**Master Admin Role**
+
+When you create the first user account on GALE, you automatically become the **Master Admin** or **Owner**. [Learn more](./sign-up-sign-in.md/#create-an-account){:target="_blank"}.
+
+This role provides access to default permissions and administrative capabilities:
+
+* **Invite Team Members**: Invite others to join your account via the **Settings** page to collaborate on agents, models, experiments, and other modules.
+* **Administrative Tasks**: Manage account users, including adding, deleting, and modifying user profiles, and assigning roles and permissions. [Learn more](../settings/settings-overview.md){:target="_blank"}.
+
+**Joining and Switching Accounts**
+
+* **Invitations**: You can be invited to join other accounts by their respective owners.
+* **Switching Accounts**: If you are part of multiple accounts, you can switch between them to work on various projects.
+
+On the **Settings** page, you must enable the **invite users** permission to allow a user in your account to invite other users to their account.
+
+**Enable Invite Users**
+
+You can assign a system or custom role to a user in your account. This user can invite others only if the assigned role supports the **invite user's** permission. You can check this permission with the steps below:
+
+1. Navigate to **Settings** > **Users Management** > **Role Management**.
+2. Click **View** for the role you have assigned to the user.
+<img src="../images/click-view-role.png" alt="click view role" title="click view role" style="border: 1px solid gray; zoom:75%;">
+
+3. In the resulting window, go to **Settings** > **User Management** and select **Invite User**.
+<img src="../images/enable-invite-users.png" alt="enable invite users" title="enable invite users" style="border: 1px solid gray; zoom:75%;">
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For a custom role, you can enable <b>Invite User</b>. For a system role, editing this permission is not allowed.</p>
+</div>
+
+### Account Owner Privileges
+
+An account owner or master admin can perform the following functions:
+
+* Access the **Settings** page. [Learn more](../settings/settings-overview.md){:target="_blank"}.
+* Add users via email invite or file import to their account.
+* Delete users from their account (possible only when the user has deleted all the agents they’ve created).
+* Manage data for user profiles, sessions/devices, agents, and models in their accounts.
+* View system role details.
+* Create, delete, and update custom roles.
+* Assign or change roles (system/custom) for one or more users.
+* Enable/disable Account or Agent permissions and set access levels for custom roles.
+* Configure Active Directory synchronization of user data from another organization. Set up periodic and automatic refresh, and view sync history to track updates.
+* Configure the ability to view and edit user profile fields.
+* Set up which users will receive email notifications when they are added to the admin’s account.
+* Manage guardrail scanners and configured integrations for the account.
+
+## New Account Sign-up and Activation
+
+If you do not have an account on GALE, visit this home page [link](https://gale.kore.ai/){:target="_blank"} to sign up and follow the steps mentioned [here](./sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account){:target="_blank"}.
+
+You can sign up on GALE in one of the following ways:
+
+* **Create a new account**: GALE allows signing up using a valid email address. You can sign up to create a personal account or even set up your enterprise account in Kore AIi. After you sign up for the account, you automatically become the account’s admin, which allows you to invite other users to the account.
+* **Join an existing enterprise account**: If your enterprise is already on Kore.ai, you can join the account in one of the following ways:
+    * Your enterprise account’s Admin sends you an invite. If you haven’t already received the invitation email, reach out to them for access.
+    * You can sign up using your enterprise email account. You will then be prompted to either join the enterprise network or create a personal account.
+
+### Steps to Sign Up and Activate Your GALE Account
+
+1. On the login page, click **Sign Up**.
+<img src="../images/sign-up-page.png" alt="sign up page" title="sign up page" style="border: 1px solid gray; zoom:75%;">
+
+2. Choose an SSO profile to sign in to your account and access GALE.
+<img src="../images/choose-sso-profile.png" alt="choose sso profile" title="choose sso profile" style="border: 1px solid gray; zoom:75%;">
+
+Alternatively, enter your email address and click **Continue** to sign up via email.
+
+<img src="../images/click-continue.png" alt="click continue" title="click continue" style="border: 1px solid gray; zoom:75%;">
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can sign in and enter the password if the email address is registered.</p>
+</div>
+
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>GALE is accessible by invitation only. If your email domain is different from Kore.ai, the system prompts you to request the Kore.ai admin for access.</p>
+</div>
+
+<img src="../images/gale-accessible-by-invitation-only.png" alt="invitation only" title="invitation only" style="border: 1px solid gray; zoom:75%;">
+
+Once the admin accepts your request via an invitation, you can complete the sign-up process. 
+
+<ol start="3"><li>To sign up via email, enter your <b>Full Name</b> and <b>Password</b>, and click <b>Create Account</b>.</li></ol>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ensure you set a strong password that follows all the requirements.</p>
+</div>
+
+<img src="../images/strong-password.png" alt="strong password" title="strong password" style="border: 1px solid gray; zoom:75%;">
+
+### **Account Activation**
+
+After you initiate the sign-up process, GALE sends an email to the address you provided. This email contains a verification link and a code to activate your account.
+
+Look for the verification email from GALE in your inbox. If you don’t see it, check your spam or junk folder.
+
+Do one of the following to validate your account:
+
+1. Click the **Verify Email** button or click/copy and paste the verification URL into the browser. Upon verification, your account is created.
+<img src="../images/verify-email.png" alt="verify email" title="verify email" style="border: 1px solid gray; zoom:75%;">
+
+2. Enter the 6-digit verification code included in your email on the verification page.
+<img src="../images/verification-code.png" alt="verification code" title="verification code" style="border: 1px solid gray; zoom:75%;">
+
+Entering a valid code completes the verification and signs you in automatically.
+
+**Expired or Invalid Links and Codes**
+
+Expired or invalid links don’t allow you to complete the account verification process as follows:
+
+**Expiration and Invalidity**
+
+Verification links and codes have an expiration time set at the application level. The system notifies you if you attempt to use an expired or invalid link or code.
+
+**Requesting a New Link/Code**
+
+If the verification link or code expires or becomes invalid, the system prompts you to request a new one. Follow the instructions to complete the verification process.
+
+## Sign in to GALE
+
+Once you sign up and activate your GALE account, you can sign in for the first time on the [login page](https://qa-gale.kore.ai/){:target="_blank"} using one of the following methods:
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+Please complete the email OTP verification to sign in successfully.</div>
+
+1. Click your Google, MS Office 365, or LinkedIn profile (account), and provide your credentials registered on the service for Single Sign-on (SSO) and authentication.
+    
+    <img src="../images/login-with-SSO.png" alt="login with sso" title="login with sso" style="border: 1px solid gray; zoom:75%;">
+
+2. Enter your registered email ID and click **Continue with Email**.
+
+    <img src="../images/continue-with-email.png" alt="continue with email" title="continue with email" style="border: 1px solid gray; zoom:75%;">
+
+3. Enter your password and click **Login**.
+
+<img src="../images/click-login.png" alt="click login" title="click login" style="border: 1px solid gray; zoom:75%;">
+
+
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>Once you create an account, you need to add credits for computation hours to start using GALE's features.</p>
+</div>
+
+### Failed Login Attempt
+
+If you enter the wrong password when using email sign-in, the system displays an **Invalid Credential** message and disables login.
+
+<img src="../images/invalid-credentials.png" alt="invalid credentials" title="invalid credentials" style="border: 1px solid gray; zoom:75%;">
+
+You are allowed up to 5 attempts to enter the correct password and log in.
+
+<img src="../images/five-attempts.png" alt="five login attempts" title="five login attempts" style="border: 1px solid gray; zoom:75%;">
+
+Exceeding the fifth failed login attempt locks your account for 30 minutes, after which you can retry signing in.
+
+<img src="../images/account-locked.png" alt="account locked" title="account locked" style="border: 1px solid gray; zoom:75%;">
+
+While your account is locked, you can try an alternative login method by clicking **Login using another account**. You are redirected to the following page to sign in with SSO or your third-party accounts.
+
+<img src="../images/login-using-another-account.png" alt="login using another account" title="login using another account" style="border: 1px solid gray; zoom:75%;">
+
+### Reset Password
+
+You can reset your password in the following scenarios:
+
+* If you do not remember the correct password to log in to GALE.
+* You want to change the password at regular intervals due to security reasons.
+
+To reset, follow the steps below:
+
+1. Click the **Forgot Password?** Link.
+<img src="../images/forgot-password-link.png" alt="forgot password" title="forgot password" style="border: 1px solid gray; zoom:75%;">
+
+2. Enter your email address on the **Forgot Password** page and click **Send reset link**.
+<img src="../images/send-reset-link.png" alt="send reset link" title="send reset link" style="border: 1px solid gray; zoom:75%;">
+
+You will receive instructions via email on how to reset your password. Check your Spam folder to see if the email does not appear in your inbox. Click **Resend email** if you have not received it.
+
+<img src="../images/resend-email.png" alt="resend email" title="resend email" style="border: 1px solid gray; zoom:75%;">
+
+<ol start="3"><li>Click the <b>Reset Password</b> link in the email, or copy and paste the URL into your browser.
+<img src="../images/click-password-link-in-email.png" alt="click reset link" title="click reset link" style="border: 1px solid gray; zoom:75%;"></li>
+<li>Enter the new password in the <b>New Password</b> and <b>Confirm Password</b> fields.
+<img src="../images/enter-new-passsword.png" alt="enter new password" title="enter new password" style="border: 1px solid gray; zoom:75%;"></li></ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+If both the entries do not match, you cannot proceed.</div>
+
+<ol start="5"><li>Click <b>Reset Password</b>.</li>
+<img src="../images/reset-password.png" alt="reset password" title="reset password" style="border: 1px solid gray; zoom:75%;"></ol>
+
+The password is reset successfully. On the [Sign In](./sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} page, enter the new password for your email account.
+
+#### Change Expired Password
+
+When your password expires, the system redirects to the following page where you can change the expired password.
+
+<img src="../images/change-password.png" alt="change password" title="change password" style="border: 1px solid gray; zoom:75%;">
+
+To change the password, enter the expired password in the **Old Password** textbox and follow Steps 4 and 5 in the previous section. Please ensure the password value matches the **New password** and **Confirm password** fields.
+
+A mismatch displays the following error message:
+
+<img src="../images/password-mismatch.png" alt="password mismatch" title="password mismatch" style="border: 1px solid gray; zoom:75%;">
+
+## GALE Landing Page
+
+After signing in, you are redirected based on the number of accounts you have joined. If you have one account, the system will redirect you to the **Agents** section of that account’s UI. If no agents are added to your account, the following page is displayed.
+
+<img src="../images/gale-landing-page.png" alt="gale landing page" title="gale landing page" style="border: 1px solid gray; zoom:75%;">
+
+**Choose from Multiple Accounts**
+
+If you are a part of multiple accounts, you must choose the account you want to use in the window shown below:
+
+<img src="../images/select-account.png" alt="select account" title="select account" style="border: 1px solid gray; zoom:75%;">
+
+Click the account you want to access. The system redirects you to the **Agents** section of the account you select.
+
+## Create an Account
+
+Once you sign up on GALE, you must create an account to access and manage GALE’s features and offerings. [Learn more](./sign-up-sign-in.md/#accounts){:target="_blank"} about GALE accounts. 
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul><li>Each email address can only be associated with one GALE account.</li>
+<li>If you do not have computation hours in your account, you will have only limited access to modules and features. The following message is displayed for accounts with no computational hours.</li></ul>
+</div>
+
+<img src="../images/error-message-computation-hours.png" alt="error message computation hours" title="error message computation hours" style="border: 1px solid gray; zoom:75%;">
+
+**Steps to Create an Account**
+
+To create an account, follow the steps below:
+
+1. [Sign in](./sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE using SSO or email.
+2. Click the **Account Profile** icon on the top right corner.
+3. Click **+ Create New Account**.
+<img src="../images/click-create-account.png" alt="click create new account" title="click create new account" style="border: 1px solid gray; zoom:75%;">
+
+4. Enter the Account Name in the **Create New Account** window.
+
+    <img src="../images/create-new-account-window.png" alt="create new account" title="create new account" style="border: 1px solid gray; zoom:75%;">
+
+5. Click **Confirm**.
+
+The new account creation is successful. The account you are currently using is identified with a **check/tick** icon. Click the **Star** icon to make this account your default.
+
+<img src="../images/make-account-default.png" alt="make default" title="make default" style="border: 1px solid gray; zoom:75%;">
+
+## Invite a User to Your Account
+
+As an account owner, you can invite new users in your organization and collaborate with them. However, you cannot invite users to an account someone else owns.
+
+To invite a user, follow the steps below:
+
+1. Click **Settings** on the top menu.
+2. Click **Users Management** > **Users** > **Add New User**.
+<img src="../images/add-new-user.png" alt="add new user" title="add new user" style="border: 1px solid gray; zoom:75%;">
+
+3. Enter the email address of the user you want to invite. To invite multiple users, type the first email address, press the **Enter** key, and enter the next email address.
+<img src="../images/send-invite.png" alt="send invite" title="send invite" style="border: 1px solid gray; zoom:75%;">
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note the following when adding an email address:</p>
+<ul><li>The system does not accept a space in front, between, or after the mail ID.</li>
+<li>You cannot add just a word; a domain should be attached to it.</li>
+<li>An empty value is not accepted.</li>
+<li>You must correct every entered email before sending the invite, else the <b>invite</b> button is disabled.</li>
+<li>If there is an error then the email with the issue is highlighted.</li></ul>
+</div>
+
+<ol start="4"><li>Click <b>Send invite</b>.</li></ol>
+
+A success message appears to indicate that your invitation has been sent.
+
+## Make an Account your Default
+
+When you make an account default, the system automatically redirects you to its UI where you can access the modules you work on regularly. To make an account default, follow the steps below based on the relevant scenario:
+
+**When Signing In for the first time**
+
+1. [Sign in](./sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE.
+
+2. Hover over the required account and click **Set as Default** on the following page:
+<img src="../images/set-as-default.png" alt="set as default" title="set as default" style="border: 1px solid gray; zoom:75%;">
+
+**After Signing In to Your Account**
+
+1. Click the **Account** icon on the top right corner of the UI.
+2. Click the **>** icon to the right of your account name.
+3. Click the **Star** icon for the required account from the **Accounts** list.
+<img src="../images/star-icon-account.png" alt="click star icon" title="click star icon" style="border: 1px solid gray; zoom:75%;">
+
+## Switch Account
+
+When you are mapped to multiple accounts, you can switch to the required one after signing in. To switch between the accounts, follow the steps below:
+
+1. Click the **Account** icon on the top right corner of the UI.
+2. Click the **>** icon to the right of your account name.
+3. Select the account you want from the **Accounts** list.
+<img src="../images/switch-accounts.png" alt="switch account" title="switch account" style="border: 1px solid gray; zoom:75%;">

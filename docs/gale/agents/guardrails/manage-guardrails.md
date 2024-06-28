@@ -1,21 +1,20 @@
 # Manage Guardrails
 
-All the scanners have models at the back end so to initiate the necessary input and output scanners, you need to deploy a scanner. Once deployed, this scanner becomes accessible throughout GALE, allowing its utilization across all agents.
+To use input and output scanners in GALE, you need to deploy them first. Once deployed, a scanner will be available across all your agents on the platform.
 
-**To deploy a scanner, follow these steps**:
+Steps to deploy a scanner:
 
-1. Click the **Settings** icon on the top navigation bar of the application. The **Settings** page is displayed.
-2. Click the **Manage Guardrails** tab from the left navigation pane. The **Manage guardrail models** are displayed on the right side of the page.
+1. Click the **Settings** icon in the top navigation bar.
 
-    <img src="../images/manage-guardrails.png" alt="Manage Guardrails" title="Manage Guardrails" style="border: 1px solid gray; zoom:80%;">
+2. In the left navigation pane, click **Manage Guardrails**.  
+<img src="../images/manage-guardrails.png" alt="Manage Guardrails" title="Manage Guardrails" style="border: 1px solid gray; zoom:80%;">
 
-1. Click the **Deploy** button corresponding to the name of the Scanner you want to deploy.
+3. On the Manage guardrail models page, click the **Deploy** button next to the scanner you want to deploy.  
+<img src="../images/deploy-guardrails-model.png" alt="Deploy Guardrails Model" title="Deploy Guardrails Model" style="border: 1px solid gray; zoom:80%;">
 
-    <img src="../images/deploy-guardrails-model.png" alt="Deploy Guardrails Model" title="Deploy Guardrails Model" style="border: 1px solid gray; zoom:80%;">
-
-    The deployment process is initiated and the status is displayed as “Deploying”. Once the scanner is deployed it is listed in the scanners list when you want to add a new scanner.
+    The deployment process starts, and the status is displayed as **Deploying**. Once the scanner is deployed, it's available in the scanners list when a new scanner is added.
 
     !!! note
 
-        You can click the **Undeploy** button corresponding to the scanner model if you no longer need it.
+        If you no longer need a scanner, click the **Undeploy** button next to the scanner to remove it from the platform.
 

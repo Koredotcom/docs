@@ -8,20 +8,27 @@ The node can handle three types of conditions:
 * **Else**: Sets the node connection when no condition is met, allowing you to configure the next node to connect to.
 * **Else If**: Allows you to configure another set of criteria (Node, Context, or Value) to be met when the initial If condition is not satisfied.
 
+!!! note
+    
+    Due to security reasons, a condition can be called a maximum of 10 times in an agent flow. Exceeding this limit will result in an error.
+
+
 ## Add and Configure a Condition Node
 
 Setting up a Condition node in an Agent Flow involves adding the node at the appropriate location in the flow and configuring various node properties, as explained below.
 
 Steps to add and configure the node:
 
-1. Open the Agent Flow to which you want to add the node: go to **Agents** > **Agent Flow** > **Go to Flow**.
+1. On the **Agents** tab, click the name of the agent to which you want to add the node. The Agent Flow page is displayed. 
 
-2. The Agent Flow opens in the Flow Builder. Click the “**+**” icon on any existing node on the canvas and select **Condition** from the pop-up menu. (Alternatively, you can drag the **Condition** node from the Assets panel onto the canvas.)
+2. Click the **Go to flow** button for the in-development version of the flow for editing.
 
-3. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
+3. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **Condition** from the pop-up menu. (Alternatively, you can drag the **Condition** node from the Assets panel onto the canvas.)
+
+4. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
 <img src="../images/condition-node-settings-to-be-filled.png" alt="Condition Node Settings" title="Condition Node Settings" style="border: 1px solid gray; zoom:60%;">
 
-4. Enter or select the following information:
+5. Enter or select the following information:
     
     * **Custom Name**: Enter an appropriate name for the node.
     * **If/Else Condition**: Define the IF ELSE/ELSE IF conditions using context variables and the AND/OR operator. You can use Node, Context, or Value.
@@ -49,7 +56,7 @@ Steps to add and configure the node:
         6. In the **ELSE** section, select the node you want to trigger if the IF condition fails.  
         <img src="../images/condition-node-settings-filled.png" alt="Condition Node's Settings" title="Condition Node's Settings" style="border: 1px solid gray; zoom:60%;">
 
-5. Finally, test the flow and fix any issues found: Click the **Run Flow** button at the top-right corner of the flow builder.
+6. Finally, test the flow and fix any issues found: Click the **Run Flow** button at the top-right corner of the flow builder.
 
 !!! failure "Standard Error"
     If a condition is true or false but has no connected node, the following error message is displayed: "Path not defined. Please check the flow."
