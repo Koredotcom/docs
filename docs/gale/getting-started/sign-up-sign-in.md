@@ -232,9 +232,8 @@ You will receive instructions via email on how to reset your password. Check you
 <p class="admonition-title">Note</p>
 If both the entries do not match, you cannot proceed.</div>
 
-<ol start="5"><li>Click <b>Reset Password</b>.
-
-<img src="../images/reset-password.png" alt="reset password" title="reset password" style="border: 1px solid gray; zoom:75%;"></li></ol>
+<ol start="5"><li>Click <b>Reset Password</b>.</li>
+<img src="../images/reset-password.png" alt="reset password" title="reset password" style="border: 1px solid gray; zoom:75%;"></ol>
 
 The password is reset successfully. On the [Sign In](./sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} page, enter the new password for your email account.
 
