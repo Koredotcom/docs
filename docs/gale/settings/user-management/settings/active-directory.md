@@ -42,7 +42,7 @@ Moreover, the automatic synchronization (auto sync) feature ensures that Setting
 <li><b>(Optional) SSL</b>: Enable this option to secure communications over the web, particularly for services and applications that interact with AD via HTTPS.</li>
 <img src="../images/configure-ad-connection.png" alt="configure ad connection" title="configure ad connection" style="border: 1px solid gray; zoom:75%;"></ul>
 
-2. Click **Next** to confirm the credentials before proceeding. If validation errors occur, they will be displayed on the screen so you can correct them before continuing.
+<ol start="2"><li>Click <b>Next</b> to confirm the credentials before proceeding. If validation errors occur, they will be displayed on the screen so you can correct them before continuing.</li></ol>
 
 ### Step 2: Import Organization Units
 
@@ -54,8 +54,8 @@ Follow the steps below to configure and import user data from key organizational
 <li><b>Do not import organization units</b>: Do not import user information from any organization units in the AD.</li>
 <li><b>Import only the following organization units</b>: Imports user information only from the organization unit you select.</li></ul>
 
-2. Click **Next** to proceed to user profile fields mapping.
-<img src="../images/org-units.png" alt="manage org units" title="manage org units" style="border: 1px solid gray; zoom:75%;">
+<ol start="2"><li>Click <b>Next</b> to proceed to user profile fields mapping.
+<img src="../images/org-units.png" alt="manage org units" title="manage org units" style="border: 1px solid gray; zoom:75%;"></li></ol>
 
 ### Step 3: Specify User Attributes and Configure Rules for Selective Import from AD
 
