@@ -10,7 +10,7 @@ To deploy a model from Hugging Face, follow these steps:
 
     <img src="../images/deploy-a-model.png" alt="Deploy a Model" title="Deploy a Model" style="border: 1px solid gray; zoom:80%;">
 
-1. Click the **Deploy a model** button. A pop-up with a list of available models is displayed.
+1. Click the **Deploy a model**. A pop-up with a list of available models is displayed.
 
     <img src="../images/deploy-using-hugging-face.png" alt="Deploy using Hugging Face" title="Deploy using Hugging Face" style="border: 1px solid gray; zoom:80%;">
 
