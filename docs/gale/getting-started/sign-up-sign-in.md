@@ -10,7 +10,7 @@ Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Int
 
 ## GALE Account Creation Using SSO
 
-When signing up for GALE using Single Sign-On (SSO) options such as Google or Office 365, the platform utilizes your email address to create an account. Here's how the process works based on the domain of your email address:
+When [signing up](./sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account) for GALE using Single Sign-On (SSO) options such as Google or Office 365, the platform utilizes your email address to create an account. Here's how the process works based on the domain of your email address:
 
 1. **Email Address with Kore.com Domain**
 
