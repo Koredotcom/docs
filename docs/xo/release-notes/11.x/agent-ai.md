@@ -85,6 +85,7 @@ This updated version of the Raw Data API offers the following additional convers
 * Dialog task execution details
 * Agent search bar activity timing
 
+
 ## v11.2.1 June 15, 2024
 
 <u>Patch Release</u>
