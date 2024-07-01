@@ -132,7 +132,8 @@ Steps to enable Kore.ai XO GPT Models.
    
  
 3. On the **Models** tab, toggle on the models as required.
-![alt_text](images/xo-gpt-models.png  )
+<img src="../images/xo-gpt-models.png" alt="Kore.ai XO GPT" title="Kore.ai XO GPT" style="border: 1px solid gray; zoom:70%;">
+
 
 
 4. Read the Policy Guidelines, select the checkbox, and click Save.
