@@ -325,7 +325,7 @@ Follow these steps:
 1. Log in to your ServiceNow account with admin user credentials.
 2. Go to **System Properties** > **sys_cs_provider_application.list** > **Configure** > **Form Layout**.
 3. In the **Trusted Media Domains** field, enter the domain you want to send and receive the attachments.
-<img src="./images/sn-at.png" alt="Attachment Sharing" title="Attachment Sharing" style="border: 1px solid gray;zoom=60%;">
+<img src="../images/sn-at.png" alt="Attachment Sharing" title="Attachment Sharing" style="border: 1px solid gray;zoom=60%;">
 
 !!! note
 

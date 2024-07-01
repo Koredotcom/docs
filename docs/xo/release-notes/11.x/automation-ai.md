@@ -6,6 +6,8 @@ This document provides information on the feature updates and enhancements intro
 
 <u> Patch Release </u>
 
+Key features and enhancements included in this release are summarized below.
+
 ### Virtual Assistant
 
 #### Dynamic Values for Timeout Duration in Voice Call Properties
@@ -22,7 +24,8 @@ The users now have two options for setting timeout durations:
 
 #### Ability to import ML utterances from one language to another (without Translation)
 
-The platform now supports copying utterances between languages within the same app. This feature simplifies importing and synchronizing utterance data across multiple languages. (The ability to automatically translate the copied utterances in the target language will be available soon.) [Learn more :octicons-arrow-right-24:](../../automation/natural-language/training/machine-learning-engine.md#how-to-export-or-import-ml-utterances)
+The platform now supports copying utterances between languages within the same app. This feature simplifies importing and synchronizing utterance data across multiple languages. (The ability to automatically translate the copied utterances in the target language will be available soon.) 
+[Learn more :octicons-arrow-right-24:](../../automation/natural-language/training/machine-learning-engine.md#how-to-export-or-import-ml-utterances)
 
 #### Improvements to Zip Code Entities
 
