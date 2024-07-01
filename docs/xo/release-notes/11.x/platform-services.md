@@ -2,6 +2,18 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+## v11.3.0 June 29, 2024
+
+<u> Patch Release </u>
+
+### LLM and Generative AI Framework
+
+#### Free LLM Tokens for Generative AI Features
+
+Free LLM tokens are now allocated to each newly created app, enabling the exploration of our generative AI capabilities. These tokens allow immediate access to AI-driven tools like Co-pilot and dynamic conversations without initial setup. Once an app's free tokens are exhausted, users can seamlessly transition to their own LLM configuration. The platform provides clear token usage notifications and an intuitive activation interface. This feature aims to boost AI tool engagement and streamline onboarding for new users. This is available only for the apps created in the Standard workspaces/accounts.
+
+<hr>
+
 ## v11.2.1 June 15, 2024
 
 <u>Patch Release</u>
