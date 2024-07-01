@@ -24,6 +24,7 @@ Agent AI dashboard is enhanced with new suggestion relevance metrics and reorgan
 * The **What are your customers looking for** section is revised:
     * "Articles" is renamed to "Answers", displaying SearchAssist results.
     * A new "Others" tab is added for web suggestions and additional data sources.
+
 <img src="../images/updated-dashboard.png" alt="updated-dashboard" title="updated-dashboard" style="border: 1px solid gray; zoom:80%;">
 
 ## Attachment Support in Widget
@@ -39,29 +40,31 @@ Agents can now customize the widget appearance by selecting a theme. To select i
 ## In-line Digital Form
 
 Agent AI has introduced in-line digital forms in the **Assist** tab, making it easier to collect customer information during live conversations. Configure the forms with dialog tasks to use this feature and select "Open inline form" in the **Web/Mobile SDK Form Behavior** setting.
-<img src="../inline-digital-form.png" alt="inline-digital-form" title="inline-digital-form" style="border: 1px solid gray; zoom:80%;">
+
+<img src="../images/inline-digital-form.png" alt="inline-digital-form" title="inline-digital-form" style="border: 1px solid gray; zoom:80%;">
 
 **In-line form**:
-<img src="../inline-form" alt="inline-form" title="inline-form" style="border: 1px solid gray; zoom:80%;">
+
+<img src="../images/inline-form" alt="inline-form" title="inline-form" style="border: 1px solid gray; zoom:80%;">
 
 ## Streamlined Conversation Summary Management
 
 Conversation Summary management has been improved to enhance usability and tracking.
 
 * When agents submit a summary, it's automatically saved and linked to its **Conversation ID**, making it easily accessible in the **Conversation Logs** screen.
-<img src="../conversation-logs.png" alt="conversation-logs" title="conversation-logs" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/conversation-logs.png" alt="conversation-logs" title="conversation-logs" style="border: 1px solid gray; zoom:80%;">
 
 * For easy identification and comparison, the modified Conversation Summary before submission is marked as “Edited Summary” with an “eye” icon to view the original summary.
-<img src="../edited-summary.png" alt="edited-summary" title="edited-summary" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/edited-summary.png" alt="edited-summary" title="edited-summary" style="border: 1px solid gray; zoom:80%;">
 
 * Each displayed Conversation Summary indicates whether it has been modified.
 * If summary generation fails, the following message is displayed to inform the user: "Error occurred while generating summary".
-<img src="../summary-generation-error.png" alt="summary-generation-error" title="summary-generation-error" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/summary-generation-error.png" alt="summary-generation-error" title="summary-generation-error" style="border: 1px solid gray; zoom:80%;">
 
 ## Enabling Channel-Specific Automations and Managing Appearance in the Widget Library
 
 Agent AI lets you configure channel-specific dialog tasks across all communication channels - Chat, Voice, and Email. You can also specify whether these dialog tasks appear in the list or only when searched in the widget’s library (**Search** tab). These preferences can be set while creating or editing a dialog task and are available under the **Triggers & Permissions** tab.
-<img src="../triggers-and-permissions.png" alt="triggers-and-permissions" title="free text" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/triggers-and-permissions.png" alt="triggers-and-permissions" title="free text" style="border: 1px solid gray; zoom:80%;">
 
 **When Enabled**: When a dialog task is enabled for a specific channel, it is triggered automatically or manually by the agent during interaction with customers on that specific channel.
 
