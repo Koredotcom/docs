@@ -51,14 +51,14 @@ Agent AI has introduced in-line digital forms in the **Assist** tab, making it e
 
 Conversation Summary management has been improved to enhance usability and tracking.
 
-* When agents submit a summary, it's automatically saved and linked to its **Conversation ID**, making it easily accessible in the **Conversation Logs** screen.
+* When agents submit a summary, it's automatically saved and linked to its **Conversation ID**, making it easily accessible in the **Conversation Logs** screen.  
 <img src="../images/conversation-logs.png" alt="conversation-logs" title="conversation-logs" style="border: 1px solid gray; zoom:80%;">
 
-* For easy identification and comparison, the modified Conversation Summary before submission is marked as “Edited Summary” with an “eye” icon to view the original summary.
+* For easy identification and comparison, the modified Conversation Summary before submission is marked as “Edited Summary” with an “eye” icon to view the original summary.  
 <img src="../images/edited-summary.png" alt="edited-summary" title="edited-summary" style="border: 1px solid gray; zoom:80%;">
 
 * Each displayed Conversation Summary indicates whether it has been modified.
-* If summary generation fails, the following message is displayed to inform the user: "Error occurred while generating summary".
+* If summary generation fails, the following message is displayed to inform the user: "Error occurred while generating summary".  
 <img src="../images/summary-generation-error.png" alt="summary-generation-error" title="summary-generation-error" style="border: 1px solid gray; zoom:80%;">
 
 ## Enabling Channel-Specific Automations and Managing Appearance in the Widget Library
@@ -84,6 +84,7 @@ This updated version of the Raw Data API offers the following additional convers
 * Full end-user utterances
 * Dialog task execution details
 * Agent search bar activity timing
+
 
 ## v11.2.1 June 15, 2024
 
