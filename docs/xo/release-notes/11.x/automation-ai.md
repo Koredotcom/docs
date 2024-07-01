@@ -24,7 +24,7 @@ The users now have two options for setting timeout durations:
 
 #### Ability to Import ML Utterances from One Language to Another (without Translation)
 
-The platform now supports copying utterances between languages within the same app. This feature simplifies importing and synchronizing utterance data across multiple languages. (The ability to automatically translate the copied utterances in the target language will be available soon.) 
+The platform now supports copying utterances between languages within the same app. This feature simplifies importing and synchronizing utterance data across multiple languages. The ability to automatically translate the copied utterances in the target language will be available soon.
 [Learn more :octicons-arrow-right-24:](../../automation/natural-language/training/machine-learning-engine.md#how-to-export-or-import-ml-utterances)
 
 #### Improvements to Zip Code Entities
