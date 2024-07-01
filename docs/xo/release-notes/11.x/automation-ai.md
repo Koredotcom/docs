@@ -41,7 +41,7 @@ Date fields on digital forms now have a clear ('x') icon, which allows users to 
 
 #### Attachment Sharing Between Users and Live Agents
 
-Users can now send files to agents during conversations. This improves communication and helps solve issues faster. This feature is currently available only for ServiceNow agent integration.
+Users can now send files to agents during conversations. This improves communication and helps solve issues faster. This feature is currently available only for ServiceNow agent integration. [Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/agent-transfer-integrations.md#attachment-sharing-with-live-agent).
 
 ### Capability to Handle Agent Fallback Errors
 
