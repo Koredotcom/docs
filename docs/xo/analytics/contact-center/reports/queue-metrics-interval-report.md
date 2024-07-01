@@ -27,11 +27,11 @@ Steps to generate the Queue Metrics Interval Report:
 9. Click the **Run** icon next to the instance of the report.  
 <img src="../images/run-report-queue-metrics-interval-report.png" alt="Run Report" title="Run Report" style="border: 1px solid gray; zoom:100%;">
 
-While generating reports, you have two options – Run On Demand and Schedule.
+    While generating reports, you have two options – Run On Demand and Schedule.
 
-**Run On Demand**: While creating a new report or editing an existing one, the report’s schedule can be run on demand.
+    **Run On Demand**: While creating a new report or editing an existing one, the report’s schedule can be run on demand.
 
-**Schedule**: While creating a new report or editing an existing report, the report’s schedule can be changed. The use of the schedule is the standard way to generate a report. If the report is scheduled for later, then it will automatically be generated on the scheduled day and time without the need to click Run.
+    **Schedule**: While creating a new report or editing an existing report, the report’s schedule can be changed. The use of the schedule is the standard way to generate a report. If the report is scheduled for later, then it will automatically be generated on the scheduled day and time without the need to click Run.
 
 10. Click the CSV icon and generate the output of that report, as shown below.  
 <img src="../images/csv-icon-queue-metrics-interval.png" alt="CSV Icon" title="CSV Icon" style="border: 1px solid gray; zoom:100%;">
