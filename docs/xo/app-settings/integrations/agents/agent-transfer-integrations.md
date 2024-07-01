@@ -224,8 +224,6 @@ The VA supports sharing the following file formats.
 ### Enable Attachment Sharing
 
 
-To enable attachment sharing for Utah and Vancouver, see [Enable Attachment Sharing with Live Agent](../agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md#enable-attachment-sharing-with-live-agents).
-
-
 To enable attachment sharing for Tokyo, see [Enable Attachment Sharing with Live Agent](../agents/servicenow/configuring-the-servicenow-agent.md#enable-attachment-sharing-with-live-agents).
 
+To enable attachment sharing for Utah and Vancouver, see [Enable Attachment Sharing with Live Agent](../agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md#enable-attachment-sharing-with-live-agents).
