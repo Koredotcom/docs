@@ -132,7 +132,7 @@ Steps to enable Kore.ai XO GPT Models.
    
  
 3. On the **Models** tab, toggle on the models as required.
-<img src="./images/xo-gpt-models.png" alt="Kore.ai XO GPT" title="Kore.ai XO GPT" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/xo-gpt-models.png" alt="Kore.ai XO GPT" title="Kore.ai XO GPT" style="border: 1px solid gray; zoom:70%;">
 
 
 
