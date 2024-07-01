@@ -2,6 +2,25 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of XO v11.x releases.
 
+## v11.3.0 June 29, 2024
+
+<u> Patch Release </u>
+
+### LLM & Generative AI Framework
+
+#### Free LLM Tokens for Generative AI Features
+
+Free LLM tokens are now allocated to each newly created app, enabling the exploration of our generative AI capabilities. These tokens allow immediate access to AI-driven tools like Co-pilot and dynamic conversations without initial setup. Once an app's free tokens are exhausted, users can seamlessly transition to their own LLM configuration. The platform provides clear token usage notifications and an intuitive activation interface. This feature aims to boost AI tool engagement and streamline onboarding for new users. This is available only for the apps created in the Standard workspaces/accounts.  
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/llm-tokens.md)
+
+### Channels
+
+#### Discontinuation of the Google Business Messages Channel
+Google announced the discontinuation of the Google Business Messages channel from July 31, 2024. This channel will be phased out in the coming weeks. If you have alternative chat channels, consider inviting your customers to continue conversations there.  
+For more details, refer to the [Google announcement](https://developers.google.com/business-communications/business-messages/resources/release-notes/update-on-gbm?hl=en).
+
+<hr>
+
 ## v11.2.1 June 15, 2024
 
 <u>Patch Release</u>
@@ -39,7 +58,7 @@ Key updates include:
 The platform now supports custom prompts for the prebuilt LLM integrations. This will be in addition to the current support of default prompts. This new capability delivers a consistent prompt engineering experience across custom and pre-built models, making crafting the prompts for various features easy.
 <img src="../images/custom-prompt-for-prebuilt-models.png" alt="Custom Prompts" title="Custom Prompts" style="border: 1px solid gray; zoom:100%;"> 
 
-[Learn more :octicons-arrow-right-24:](../../app-settings/generative-ai-tools/prompts-and-requests-library.md)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/prompts-library.md)
 
 #### Answers Module Details in the Debug Logs
 
@@ -69,15 +88,15 @@ Key features and enhancements included in this release are summarized below.
 #### Custom LLM Integration Support for Rephrase Dialog Responses  
 
 Rephrase Dialog Responses now supports Custom LLMs in addition to commercial LLMs. This allows platform users to use the rephrasing feature with their own custom-trained language models and create customized prompts tailored to their specific use cases, models, and linguistic contexts, providing greater flexibility and control over the rephrasing process and conversational experiences.  
-[Learn more :octicons-arrow-right-24:](../../app-settings/generative-ai-tools/dynamic-conversations-features.md#rephrase-dialog-responses)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#rephrase-dialog-responses)
 
 #### Custom LLM Integration Support for Answer Generation 
 
-In addition to pre-built commercial LLMs, the Answer Generation now supports Custom LLMs. It allows platform users to craft personalized prompts to unlock the full potential of the Answer Generation and deliver uniquely tailored conversation experiences for their users. [Learn more :octicons-arrow-right-24:](../../app-settings/generative-ai-tools/dynamic-conversations-features.md#answer-generation)
+In addition to pre-built commercial LLMs, the Answer Generation now supports Custom LLMs. It allows platform users to craft personalized prompts to unlock the full potential of the Answer Generation and deliver uniquely tailored conversation experiences for their users. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#answer-generation)
 
 #### Kore.ai XO GPT Supports Vector Generation and Answer Generation (Beta)
 
-Kore.ai XO GPT now supports Answer Generation and Vector Generation. The XO GPT provides a range of models, including the fine-tuned Mistral-Answers Model for Answer Generation and E5, Labse, and MPNet embedding models for Vector Generation. [Learn more :octicons-arrow-right-24:](../../app-settings/generative-ai-tools/xo-gpt-module.md)
+Kore.ai XO GPT now supports Answer Generation and Vector Generation. The XO GPT provides a range of models, including the fine-tuned Mistral-Answers Model for Answer Generation and E5, Labse, and MPNet embedding models for Vector Generation. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/xo-gpt-module.md)
 
 ### Flows & Channels
 

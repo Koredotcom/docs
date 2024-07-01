@@ -849,7 +849,7 @@ You can import and export ML utterances of a VA into another in CSV and JSON for
 
 ### How to Export or Import ML Utterances
 
-1. On the VA’s menu, click **Natural Language** > **Training**.
+1. On the VA’s menu, click **Natural Language > Training**.
 2. The ‘In-Development’ version of the VA’s ML utterances open by default. If you want to see the utterances in the ‘Published’ version, toggle on the top right side of the window to **Published**. 
 
     !!! Note
@@ -858,16 +858,52 @@ You can import and export ML utterances of a VA into another in CSV and JSON for
 
 3. Click the options icon and select an option:
 
-    * Click **Import Utterances** and upload a CSV or JSON file with the utterances to import, or
-    * Click **Export Utterances** and select CSV or JSON formats to export the utterances.
+    * Click **Import** to upload a CSV or JSON file with the utterances to import OR import utterances between different languages in the same app, or,
+    * Click **Export** and select CSV or JSON formats to export the utterances.
     
         <img src="../images/import-export-utterances-select.png" alt="import export utterances" title="import export utterances" style="border: 1px solid gray; zoom:75%;">
 
+You can import/export ML utterances using either of the below methods:
+
+* Upload Utterances File
+* Copy from another Language
+
+    <img src="../images/import-options.png" alt="import export utterances" title="import export utterances" style="border: 1px solid gray; zoom:75%;">
+
+#### Upload Utterances File (Default)
+
+1. Ensure that the **Upload Utterances File (CSV / JSON)** option is selected. This is the default import option.
+2. Select the language(s) for which you want to import. All the language added to the VA will be available for selection.
+
+    <img src="../images/import-file-target-languages.png" alt="import export utterances" title="import export utterances" style="border: 1px solid gray; zoom:75%;">
+
+3. Upload or drag and drop the CSV or JSON file containing the utterances. Click **Import** to initiate the import.
+
+    <img src="../images/import-file-upload.png" alt="import export utterances" title="import export utterances" style="border: 1px solid gray; zoom:75%;">
+
+You can see a popup that would display the import status and details.
+
+#### Copy from another Language
+
+Using this option, you can copy the utterances from one language to another in the **same VA** so that you can easily import and synchronize the utterances data between two languages.This option is available for VA's that have more than one language enabled.
+
+1. **Import From**: Select the language from which you want to copy the utterances. The base language of the bot is pre-selected by default.
+2. **Version**: Choose **Configured** or **Published**, whichever meets your requirements.
+3. **Import To**: Select the language to which you wish to import. The current bot language is pre-selected by default. If the current language is the primary language of the bot, the field is pre-populated with any other language. You can change it by clicking the **Change** link, selecting a language and clicking Save.
+4. **Choose Intents to Import:** You can choose either of the two options: 
+    * **Import Utterances from all the Intents**: This is the default option. All the intents with all the utterances are imported. You can preview the summary of intents and utterances by clicking View Intents.
+    * **Select Intents to import Utterances**: Having selected this option, you can choose which utterances to import. Only the utterances from the selected intents will be imported
+
+Once you have finalized the selections, click Import. After the import completes, a popup appears that would display the import status and details.
+
+<img src="../images/import-copy-from-another-language.png" alt="import export utterances" title="import export utterances" style="border: 1px solid gray; zoom:75%;">
+
+
 ### Versioning and Behavior of Imported Utterances
 
-* The imported utterances in CSV/JSON entirely replace the utterances present in the _latest copy_ of the tasks.
-* If the task is in _Upgrade in Progress_ status, the utterances related to the task get entirely replaced with the task utterances present in the imported file. The utterances in the _Published_ copy of the task aren’t affected.
-* If the task is in the _Published_ status, an _Upgrade in Progress_ copy of the task gets created by default and the new utterances present in the imported file will be added to the upgraded copy. The utterances in the Published copy of the task aren’t affected.
+* The imported utterances in CSV/JSON (if imported from Utterance File) or the source language (if imported from another language of the same VA) entirely replace the utterances present in the _latest copy_ of the tasks.
+* If the task is in _Upgrade in Progress_ status, the utterances related to the task get entirely replaced with the task utterances present in the imported file or source language. The utterances in the _Published_ copy of the task aren’t affected.
+* If the task is in the _Published_ status, an _Upgrade in Progress_ copy of the task gets created by default and the new utterances present in the imported file or source language will be added to the upgraded copy. The utterances in the Published copy of the task aren’t affected.
 
 ### Versioning and Behavior of Exported Utterances
 

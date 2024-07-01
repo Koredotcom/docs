@@ -2,6 +2,22 @@
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of XO v11.x releases.
 
+## v11.3.0 June 29, 2024
+
+<u> Patch Release </u>
+
+Key features and enhancements included in this release are summarized below.
+
+### Support for Filtered Content Ingestion from third-party applications
+
+Search AI now extends support for content ingestion from a wider variety of third-party applications, including Confluence Cloud, Azure Storage, Salesforce, Oracle Knowledge, and dotCMS, in addition to the existing connectors. The connectors now offer customizable filters that give platform users the flexibility to selectively ingest data, allowing for precise and targeted indexing and enhancing the search index's efficiency and accuracy.
+
+### Advanced Web Crawl Configurations
+
+Search AI now offers advanced web crawl capabilities that allow platform users to remove redundant sections of a web page while indexing. Also, for JavaScript-rendered pages, the users can now introduce a delay after which the crawler starts indexing the page, allowing all dynamic content to load properly. These enhancements provide greater control and precision in web crawling, leading to a more efficient and accurate search experience.
+
+<hr>
+
 ## v11.2.1 June 15, 2024
 
 <u>Patch Release</u>

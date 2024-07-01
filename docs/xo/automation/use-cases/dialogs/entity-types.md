@@ -1567,7 +1567,9 @@ Captures a web URL from the utterance. The virtual assistant recognizes all stan
 
 ### Zip Code
 
-Captures a US zip code from the user utterance. For example, _What is the weather for 32746?_ The value for **Zip Code** is 32746 and is returned as a string.
+Captures a zip code from the user utterance. For example, _What is the weather for 32746?_ The value for Zip Code is 32746 and is returned as a string.
+
+Please note that the entity does not pick a zip code from regular expressions (eg: #$A1B2%), however it successfully picks the zip code if it contains hyphen, spaces or leading “0”s in the utterance.
 
 ```
 "entities":

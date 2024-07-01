@@ -275,3 +275,23 @@ For more information on the Work item routing condition and queue, see the follo
 [ServiceNow Documentation > Virtual Agent Bot Integration API](https://developer.servicenow.com/dev.do#!/reference/api/tokyo/rest/bot-api){:target="_blank"}:
 
 <img src="../images/configuring-the-servicenow-agent-utah-and-vancouver-img33.png" alt="Virtual Agent Bot Integration API" title="Virtual Agent Bot Integration API" style="border: 1px solid gray;zoom=60%;">
+
+
+
+
+
+
+
+
+### Enable Attachment Sharing with Live Agents
+
+Follow these steps:
+
+1. Log in to your ServiceNow account with admin user credentials.
+2. Go to **System Properties** > **sys_cs_provider_application.list** > **Configure** > **Form Layout**.
+3. In the **Trusted Media Domains** field, enter the domain you want to send and receive the attachments.
+<img src="../images/sn-at.png" alt="Attachment Sharing" title="Attachment Sharing" style="border: 1px solid gray;zoom=60%;">
+
+!!! note
+
+    This feature currently supports only the Utah and Vancouver versions.

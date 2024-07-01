@@ -25,11 +25,13 @@ The Integration of Generative AI and LLM enables the following features:
 
 
 * Model Library: Connect to Generative AI models of your choice using the out-of-box integrations (pre-built LLM integration) or custom integrations or Kore.ai XO GPT Module.
+
 * Prompts Library: Complete flexibility to create fully customized prompts optimized for particular use cases using pre-built or custom models.
+
 * Co-Pilot features:
     * **Automatic Dialog Generation**: This feature helps build production-ready dialog tasks automatically by briefly describing the task. A preview of the generated dialog is available and lets you modify the intent description and create multiple iterations of the dialog.
     * **Conversation Test Cases Suggestion**: The Platform suggests simulated user inputs covering various scenarios from an end-user perspective at every test step. You can use these suggestions to create test suites.
-    * **Conversation Summary**: Implements the Conversation Summary public API to fetch the details of the entire conversation between the customer and the VA or agent. This API leverages the Flan-T5 foundational model to summarize conversations.
+    * **Conversation Summary**: Implements the Conversation Summary public API to fetch the details of the entire conversation between the customer and the VA or agent. This API leverages an open-source LLM to summarize conversations.
     * **Generating Opposite Utterance Suggestions**: Use LLM models for generating opposite utterances during design time.
     * **Generating Similar Answer Suggestions**: Use LLM models for generating similar answers during design time based on semantic similarity.
     * **Generating Similar Utterance Suggestions**: Use LLM models for generating similar utterances during design time based on semantic similarity.
@@ -46,15 +48,13 @@ The Integration of Generative AI and LLM enables the following features:
     * **GenAI Prompt:** Leverage this node to unlock the power of Generative AI with your prompts, enabling you to build creative and custom use cases.
     * **Repeat Responses**: Use LLM to reiterate the last bot responses when the Repeat Bot Response event is triggered.
     * **Rephrase Dialog Responses**: Enhance end-user experience with empathetic and contextual bot responses.
-
     * **Rephrase User Query**: Improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing conversation context.
-
     * **Vector Generation**: Generate embeddings for the ingested data in the Answers module and user queries to answer end-user queries at run time.
     * **Zero-shot ML Model**: Uses the Open AI LLM model for intent identification during run time based on semantic similarity.
 
     * **Few-shot ML Model**: Uses the Kore Ai’s hosted embeddings for intent identification during run time based on semantic similarity.
 
-* Safeguards
+* Safeguards:
     * **Data Anonymization**: Protect Personal Identifiable Information (PII) and Sensitive Data shared to LLMs in GenAI Features.
     * **Guardrails**: Ensure the safety and appropriateness of LLM responses using the Guardrails.
 

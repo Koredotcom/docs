@@ -2,6 +2,90 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+## v11.3.0 June 29, 2024
+
+<u>Patch Release</u>
+
+This update includes feature enhancements and bug fixes. Key features and enhancements included in this release are summarized below.
+
+## Summarization Service Optimization
+
+The Conversation Summary generation process has been updated to handle short, long, and abrupt endings of conversations. For long conversations, the maximum limit is set to 8000 tokens (approximately 6000 words).
+
+## Improved Widget Search Experience
+
+The widget search bar has been improved for a better user experience. It now shows "Ask a question" as placeholder text with a search icon on the right. As users type in the bar, the placeholder disappears, and the search icon changes to a close (X) icon, which makes it easy to clear the text.
+
+## Dashboard Updates
+
+Agent AI dashboard is enhanced with new suggestion relevance metrics and reorganized customer inquiry insights.
+
+* A new **Relevant Suggestions** tab is added, showing the percentage of suggestions used by agents.
+* The **What are your customers looking for** section is revised:
+    * "Articles" is renamed to "Answers", displaying SearchAssist results.
+    * A new "Others" tab is added for web suggestions and additional data sources.
+
+<img src="../images/updated-dashboard.png" alt="updated-dashboard" title="updated-dashboard" style="border: 1px solid gray; zoom:80%;">
+
+## Attachment Support in Widget
+
+Agent AI now accepts file or image attachments during live conversations. 
+
+If the file or image is not automatically detected, you can override and manually attach the file. To maintain system efficiency, attachments are limited to one file at a time and must not exceed 25 MB in size.
+
+## Dark Theme for Agent AI Widget
+
+Agents can now customize the widget appearance by selecting a theme. To select it, go to the widget’s **Settings** section and select **Dark** or **Light**.
+
+## In-line Digital Form
+
+Agent AI has introduced in-line digital forms in the **Assist** tab, making it easier to collect customer information during live conversations. Configure the forms with dialog tasks to use this feature and select "Open inline form" in the **Web/Mobile SDK Form Behavior** setting.
+
+<img src="../images/inline-digital-form.png" alt="inline-digital-form" title="inline-digital-form" style="border: 1px solid gray; zoom:80%;">
+
+**In-line form**:
+
+<img src="../images/inline-form.png" alt="inline-form" title="inline-form" style="border: 1px solid gray; zoom:80%;">
+
+## Streamlined Conversation Summary Management
+
+Conversation Summary management has been improved to enhance usability and tracking.
+
+* When agents submit a summary, it's automatically saved and linked to its **Conversation ID**, making it easily accessible in the **Conversation Logs** screen.  
+<img src="../images/conversation-logs.png" alt="conversation-logs" title="conversation-logs" style="border: 1px solid gray; zoom:80%;">
+
+* For easy identification and comparison, the modified Conversation Summary before submission is marked as “Edited Summary” with an “eye” icon to view the original summary.  
+<img src="../images/edited-summary.png" alt="edited-summary" title="edited-summary" style="border: 1px solid gray; zoom:80%;">
+
+* Each displayed Conversation Summary indicates whether it has been modified.
+* If summary generation fails, the following message is displayed to inform the user: "Error occurred while generating summary".  
+<img src="../images/summary-generation-error.png" alt="summary-generation-error" title="summary-generation-error" style="border: 1px solid gray; zoom:80%;">
+
+## Enabling Channel-Specific Automations and Managing Appearance in the Widget Library
+
+Agent AI lets you configure channel-specific dialog tasks across all communication channels - Chat, Voice, and Email. You can also specify whether these dialog tasks appear in the list or only when searched in the widget’s library (**Search** tab). These preferences can be set while creating or editing a dialog task and are available under the **Triggers & Permissions** tab.
+<img src="../images/triggers-and-permissions.png" alt="triggers-and-permissions" title="free text" style="border: 1px solid gray; zoom:80%;">
+
+**When Enabled**: When a dialog task is enabled for a specific channel, it is triggered automatically or manually by the agent during interaction with customers on that specific channel.
+
+**Launch Through Library**: 
+
+**Enabled**: The dialog task is listed under all available dialog tasks in the **Search** tab of triggers-and-permissions widget.
+
+**Disabled**: The dialog task doesn’t appear on the list but remains searchable via the “Ask a question” search bar in the **Search** tab.
+
+## Agent AI Raw Data API v2
+
+This updated version of the Raw Data API offers the following additional conversation data for deeper insights into Agent AI interactions and conversation flows:
+
+* Feedback (reason code and feedback text in addition to like/dislike) from the agent.
+* Complete generated answers with feedback
+* Comprehensive agent activity tracking
+* Full end-user utterances
+* Dialog task execution details
+* Agent search bar activity timing
+
+
 ## v11.2.1 June 15, 2024
 
 <u>Patch Release</u>

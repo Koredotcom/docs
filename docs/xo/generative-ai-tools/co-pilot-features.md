@@ -388,7 +388,7 @@ When closing a conversation request, contact centers require an agent to summari
 
 **Usage** 
 
-The system uses the[ Conversation Summary](../../apis/automation/conversation-summary.md.) public API to fetch the details of the entire conversation between the customer and the VA or agent. The API uses the Flan-T5 foundational model to summarize conversations using a large number of sample conversation transcripts.
+The system uses the[ Conversation Summary](../../apis/automation/conversation-summary.md.) public API to fetch the details of the entire conversation between the customer and the VA or agent. The API uses an open-source LLM to summarize conversations using a large number of sample conversation transcripts.
 
 ### Generating Opposite Utterance Suggestions
 Use LLM models for generating opposite utterances during design time.

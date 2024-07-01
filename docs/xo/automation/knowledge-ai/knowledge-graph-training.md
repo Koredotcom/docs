@@ -49,7 +49,7 @@ Here are the steps that the Knowledge Graph Engine takes when detecting FAQs:
 
 !!! note
     
-    Patch coverage computation doesn't consider the root node.
+    Path coverage computation doesn't consider the root node.
 
 <ol start="4"><li><b>Filter with Traits</b>: If traits are defined in the Knowledge Graph, paths shortlisted in the above step are further filtered based on the confidence score of a classification algorithm in user utterance.</li>
 <li><b>Send to Ranker</b>: The KG engine then sends the shortlisted paths to the Ontology Ranker Program.</li>

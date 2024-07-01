@@ -2,6 +2,114 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+## v11.3.0 June 29, 2024
+
+<u> Patch Release </u>
+
+Key features and enhancements included in this release are summarized below.
+
+### Agent Console
+
+#### Enhanced Outbound Dialer
+
+The outbound dialer has been enhanced with the following functionalities:
+
+* **Search Bar**: The search bar on the dialer interface allows agents to enter keywords or partial numbers to find configured contacts quickly.
+* **International Subscriber Dialing (ISD) Code Update**: The dialer automatically adjusts the outbound phone number's ISD code based on the last country code used. This streamlines the process for agents making calls to different regions.
+* **Phone Number Formatting**: The system displays the phone number in a standardized format when an agent enters it for dialing, regardless of whether the original number contains hyphens or brackets if the format is valid.
+* **Validation and Error Handling**: An error message is displayed if an invalid number is entered (for example, incorrect length or characters). The call button is disabled until a valid number is entered, preventing accidental calls to inaccurate numbers.
+
+#### Improved Conversation Handling With an Explicit Reject Button
+
+Administrators can enable agents to explicitly reject an incoming interaction, allowing them to manage their workload efficiently. If Explicit Reject is enabled in the Answer Mode:
+
+* Agents can Accept (✅) or Reject (❌) each interaction on the conversation tray.
+* **Accept**: Displays the conversation panel for that interaction.
+* **Reject**: Removes the interaction from the agent's queue and returns it to the queue for reassignment.
+
+The Monitor tab displays metrics relevant to rejection in the Agents and Interactions sub-tabs.
+
+**Monitor** > **Agents**
+
+* The Agents sub-tab now includes counts for rejected and unanswered interactions. 
+* Clicking an agent displays the count of Completed, Transferred, Rejected, and Unanswered interactions.
+
+**Monitor** > **Interactions**
+
+* Clicking an agent displays the count of Answered, Transferred, Rejected, and Unanswered interactions.
+
+### Configuration
+
+#### Phone Number Labels for Outbound Dialer
+
+Administrators can now label outbound phone numbers (for example, Technical Support, Helpdesk). These labels appear next to phone numbers on the outbound dialer. Agents can search numbers by label, with results updating dynamically. The system logs all label-related activities, including creation, modification, and deletion.
+
+### Administration
+
+#### PII Redaction: Consistency Between Instance and Automation Bots
+
+To ensure consistency, the instance bot also redacts data that the Automation bot redacts and vice versa. This applies to all channels.
+
+### Analytics and Reporting
+
+#### Queue Metrics Interval Report
+
+This report provides queue performance metrics at sub-daily intervals (15 minutes to 4 hours). It includes service level data, highlighting both met and unmet targets. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/queue-metrics-interval-report.md)
+
+#### Secure Form View Extended to 30 Days
+
+Administrators and Supervisors with access to Dashboard > Interactions can now view the data captured via the Secure Forms for up to 30 days from the conversation date.
+
+#### Auto Refresh of Monitor Tab Filters
+
+Automatic refresh for filters applied in the Monitor tabs at fixed intervals is implemented to ensure real-time data accuracy.
+
+* Filtered data on Monitor tabs is updated at the specified interval, reflecting real-time changes.
+* New interactions are not immediately added to filtered results but appear after the 5-second update interval.
+
+### Kore Voice Gateway
+
+#### Changes to Bot Delay Handling
+
+These updates refine how delays are managed during bot interactions, enhancing the user experience by providing smoother transitions.
+
+If a delay persists between two message nodes:
+
+* In the case of a URL, the music stops immediately when the bot responds.
+* In the case of a text message, the prompt plays completely, even after the bot responds.
+
+Example: If a bot has the following nodes - Message → API → Message nodes.
+
+* Waiting music starts playing when there is a delay from the API node.
+* When the API node responds, the music stops gracefully, and the next message node begins playback without interruption.
+
+### API
+
+#### Conversation History API
+
+#### Task Name (tN) Field Added in the Response for Automation Bots
+
+The response of the Conversation History API is updated to show the “tN” field for all intents executed in Automation bots. This field accurately shows the task name associated with the executed intent. For example, “tN” = “Pay Bill”, “tN” = “Show Balance”. [Learn more :octicons-arrow-right-24:](../../apis/automation/conversation-history.md)
+
+### Campaigns
+
+#### Cloning Campaigns Without Schedule Configurations
+
+When a campaign is cloned, the new campaign will not include the schedule configurations of the parent campaign. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#clone-a-voice-campaign)
+
+#### Voice Campaigns: User Settings for Auto Dialers
+
+Administrators can enable voice support for inbound calls and outbound campaigns.
+
+* Inbound: In the case of an Agentless Dialer, the agent can handle transferred calls.
+* Outbound Campaigns: Agents can handle calls from Auto Dialers. [Learn more :octicons-arrow-right-24:](../../user-management/manage-users.md#chat--voice)
+
+#### Progressive Dialer
+
+The Progressive Dialer is an outbound calling system that improves agent efficiency and productivity. It automatically dials the next number in a queue as agents complete their current calls, ensuring continuous activity. Calls are connected only when a human answers, filtering out voicemails and busy signals. Agents can review contextual information about the contact beforehand but have limited control over the timing or recipient of calls. The dialer optimizes lead allocation based on agent availability, tracks statuses to assign calls to the least busy agent, and provides comprehensive metrics and call statistics for monitoring and reporting purposes. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#auto-dialers)
+
+<hr>
+
 ## v11.2.1 June 15, 2024
 
 <u>Patch Release</u>
