@@ -101,7 +101,9 @@ In the Chat & Voice section, you can configure the following:
    2. Language Support - Supported languages and their proficiency level. (Novice, Average, Good, or Expert)
    3. Widget Features - Attachments and emojis in live chat.
 
-* Turn on **Enable Voice** toggle to set the supported languages and their proficiency level.
+* Turn on **Enable Voice** toggle to set the following:
+  1. **Voice Support**: Select Yes for either Inbound or Campaigns. The default selection is No.
+  2. Select the supported languages and their proficiency level.
 
 * Turn on **Enable Voice Mail** toggle to set the count of voice mails callers can leave in a queue.
 <img src="../images/chat-and-voice.png" alt="Chat & Voice" title="Chat & Voice" style="border: 1px solid gray; zoom:70%;">

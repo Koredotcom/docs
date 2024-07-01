@@ -168,10 +168,14 @@ Cloning a voice campaign creates a replica of the original campaign. This is use
 
 Steps to clone a campaign:
 
-1. Click the **Ellipsis** (**⋮**) icon beside the campaign name and click **Clone**.
-<img src="../images/clone-campaign.png" alt="Clone Campaign Button" title="Clone Campaign Button" style="border: 1px solid gray; zoom:100%;">
-2. A cloned copy of the original campaign is created.
-<img src="../images/cloned-campaigns.png" alt="Cloned Campaign" title="Cloned Campaign" style="border: 1px solid gray; zoom:100%;">
+1. Click the **Ellipsis** (**⋮**) icon beside the campaign name and click **Clone**.  
+<img src="../images/clone-campaign.png" alt="Clone Campaign Button" title="Clone Campaign Button" style="border: 1px solid gray; zoom:80%;">
+2. A cloned copy of the original campaign is created.  
+
+    !!! Note
+
+        The system does not clone the original campaign's schedule configuration.  
+    <img src="../images/cloned-campaigns.png" alt="Cloned Campaign" title="Cloned Campaign" style="border: 1px solid gray; zoom:80%;">
 
 ### Stop a Voice Campaign
 
@@ -204,3 +208,31 @@ You can run a voice campaign by clicking the **Play** button.
 <img src="../images/run-campaign-button.png" alt="Run Campaign" title="Run Campaign" style="border: 1px solid gray; zoom:100%;">
 
 When the campaign runs, you can pause or stop it. You can also rerun a completed campaign.
+
+### Auto Dialers
+
+#### Progressive Dialer
+
+A progressive dialer is an outbound calling system that enhances the efficiency and productivity of agents. The dialer automatically calls the next number in a pre-defined queue immediately after agents complete their current calls. It ensures that one call is made for each available agent. For example, if 10 agents are free, it will initiate 10 calls simultaneously.
+
+A progressive dialer connects the agent to the call only if a human answers, filtering out voicemails and busy lines. This gives agents time to review contextual information about the person they are about to contact, although they cannot control who they will speak to or the time they have for review.
+
+The dialer efficiently manages lead allocation based on agent availability. It tracks agents’ statuses, ensuring the most idle agent receives the next call. It provides metrics and call statistics, such as the number of calls made, call duration, and call outcomes essential for monitoring and reporting.
+
+Progressive Dialer Call Handling
+
+Once the dialer selects a contact from the list, it dials the number and upon successful connection with the contact, the interaction is assigned to an agent. The CUSTOMER INFO widget displays the customer's information. the interaction appears on the [Conversation Tray](../../../console/conversation-tray.md) along with the campaign name.  
+<img src="../images/dialing.png" alt="Dialing" title="Dialing" style="border: 1px solid gray; zoom:60%;">
+
+During the call the agent can Mute, place the call on Hold, Transfer, or end the interaction.  
+<img src="../images/call-connected.png" alt="Call Connected" title="Call Connected" style="border: 1px solid gray; zoom:60%;">
+
+Dispositions are displayed to the agent when the call ends.  
+<img src="../images/dispositions.png" alt="Dispositions" title="Dispositions" style="border: 1px solid gray; zoom:60%;">
+
+ !!! Note
+ 
+    Below is the dialing logic when the same agents are assigned multiple campaigns:
+* If the campaigns have different priorities, the dialer first dials contacts in campaigns with higher priority and then campaigns with lower priority.
+* If the campaigns have the same priority then it randomly selects contacts from the campaigns and assigns them to agents.
+* Say there are two campaigns with Priority 5 and one campaign with Priority 4, the dialer will first randomly dial contacts from the two Priority 5 campaigns and after completing all contacts from these two campaigns it will dial contacts from the Priority 4 campaign.
