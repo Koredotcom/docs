@@ -1,4 +1,22 @@
 # Adding the Google Business Messaging Channel
+
+<span style="color:red">
+Google announced the discontinuation of the Google Business Messages channel from July 31st. This channel will be phased out in the coming weeks. If you have alternative chat channels, consider inviting your customers to continue conversations there. For more details, please refer to the [Google announcement](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-google-business-messaging-channel/)
+</span>
+
+
+!!! Warning
+
+    Google announced the discontinuation of the Google Business Messages channel from July 31st. This channel will be phased out in the coming weeks. If you have alternative chat channels, consider inviting your customers to continue conversations there. For more details, please refer to the [Google announcement](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-google-business-messaging-channel/).
+
+[!CAUTION]
+Google announced the discontinuation of the Google Business Messages channel from July 31st. This channel will be phased out in the coming weeks. If you have alternative chat channels, consider inviting your customers to continue conversations there. For more details, please refer to the [Google announcement](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-google-business-messaging-channel/). 
+
+!!! note
+
+    Google announced the discontinuation of the Google Business Messages channel from July 31st. This channel will be phased out in the coming weeks. If you have alternative chat channels, consider inviting your customers to continue conversations there. For more details, please refer to the [Google announcement](https://developer.kore.ai/docs/bots/channel-enablement/adding-the-google-business-messaging-channel/). 
+    
+
 Modern business applications require agent integrations on web/mobile devices to enable seamless customer communication via SMS/chats.
 
 The **Kore.ai XO Platform** now helps a _Google Business Messaging Partner_ to create rich and asynchronous messaging experiences within apps and during calls through the GBM channel enablement. This feature helps seamlessly integrate real-time business agents to Virtual Assistants.
