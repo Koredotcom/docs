@@ -18,7 +18,7 @@ The users now have two options for setting timeout durations:
 
 * **Preset**: Select a maximum wait time between 1 and 60 seconds to receive input.
 
-* **Environment Variable**: Select any environment variable from a drop-down list or use a search bar to find a specific variable.
+* **Environment Variable**: Select any environment variable from a drop-down list or use a search bar to find a specific variable. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/voice-call-properties.md#dialog-node-settings)
 
 ### NLU
 
