@@ -45,7 +45,7 @@ Agent AI has introduced in-line digital forms in the **Assist** tab, making it e
 
 **In-line form**:
 
-<img src="../images/inline-form" alt="inline-form" title="inline-form" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/inline-form.png" alt="inline-form" title="inline-form" style="border: 1px solid gray; zoom:80%;">
 
 ## Streamlined Conversation Summary Management
 
