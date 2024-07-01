@@ -4,7 +4,7 @@ The Kore.ai XO Platform helps enhance your bot development process and enrich en
 
 In addition to the out-of-box integration with pre-built models, the platform supports the bring-your-own (BYO) model framework to integrate with externally hosted models by third parties and enterprises.
 
-The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment.
+The new Kore.ai XO GPT Models module provides fine-tuned large language models optimized for enterprise conversational AI applications. These models have been evaluated and fine-tuned to be accurate, safe, and efficient for production deployment. For more information, see [Kore.ai XO GPT](../../generative-ai-tools/xo-gpt-module.md).
 
 
 To configure LLM and Generative AI, click the **Generative AI Tools** icon in the left navigation.

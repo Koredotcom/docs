@@ -8,14 +8,16 @@ Setting up an End node in an Agent Flow involves adding the node at the appropri
 
 Steps to add and configure the node:
 
-1. Open the Agent Flow to which you want to add the node: go to **Agents** > **Agent Flow** > **Go to Flow**.
+1. On the **Agents** tab, click the name of the agent to which you want to add the node. The Agent Flow page is displayed. 
 
-2. The Agent Flow opens in the Flow Builder. Click the “**+**” icon on any existing node on the canvas and select **End** from the pop-up menu. (Alternatively, you can drag the **End** node from the Assets panel onto the canvas.)
+2. Click the **Go to flow** button for the in-development version of the flow for editing.
 
-3. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
+3. In the flow builder, click the “**+**” icon on any existing node on the canvas and select **End** from the pop-up menu. (Alternatively, you can drag the **End** node from the Assets panel onto the canvas.)
+
+4. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
 <img src="../images/end-node-configure.png" alt="Configure End Node" title="Configure End Node" style="border: 1px solid gray; zoom:80%;">
 
-4. Enter or select the following information:
+5. Enter or select the following information:
 
     * **Custom Name**: Enter an appropriate name for the node.
     
@@ -32,7 +34,7 @@ Steps to add and configure the node:
 
     * If you want to show multiple outputs/messages, click **Add a Key** to add the key and value details for the same.
 
-5. Finally, test the flow and fix any issues found: Click the **Run Flow** button at the top-right corner of the flow builder.
+6. Finally, test the flow and fix any issues found: Click the **Run Flow** button at the top-right corner of the flow builder.
 
 !!! failure "Standard Error"
 
