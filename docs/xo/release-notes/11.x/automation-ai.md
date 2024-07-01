@@ -4,7 +4,7 @@ This document provides information on the feature updates and enhancements intro
 
 ## v11.3.0 June 29, 2024
 
-<u> Patch Release </u>
+<u>Patch Release</u>
 
 Key features and enhancements included in this release are summarized below.
 
@@ -22,7 +22,7 @@ The users now have two options for setting timeout durations:
 
 ### NLU
 
-#### Ability to import ML utterances from one language to another (without Translation)
+#### Ability to Import ML Utterances from One Language to Another (without Translation)
 
 The platform now supports copying utterances between languages within the same app. This feature simplifies importing and synchronizing utterance data across multiple languages. (The ability to automatically translate the copied utterances in the target language will be available soon.) 
 [Learn more :octicons-arrow-right-24:](../../automation/natural-language/training/machine-learning-engine.md#how-to-export-or-import-ml-utterances)
@@ -33,7 +33,7 @@ The  Zip Code entity has been enhanced to identify wild cards like “ “ and �
 
 ### Digital Forms 
 
-#### Option to Clear Default Date during Design Time
+#### Option to Clear Default Date During Design Time
 
 Date fields on digital forms now have a clear ('x') icon, which allows users to easily remove the default date value.
 
