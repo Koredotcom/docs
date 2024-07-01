@@ -54,7 +54,7 @@ To ensure consistency, the instance bot also redacts data that the Automation bo
 
 #### Queue Metrics Interval Report
 
-This report provides queue performance metrics at sub-daily intervals (15 minutes to 4 hours). It includes service level data, highlighting both met and unmet targets.
+This report provides queue performance metrics at sub-daily intervals (15 minutes to 4 hours). It includes service level data, highlighting both met and unmet targets. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/reports/queue-metrics-interval-report.md)
 
 #### Secure Form View Extended to 30 Days
 
@@ -95,7 +95,7 @@ The response of the Conversation History API is updated to show the “tN” fie
 
 #### Cloning Campaigns Without Schedule Configurations
 
-When a campaign is cloned, the new campaign will not include the schedule configurations of the parent campaign. Learn more.
+When a campaign is cloned, the new campaign will not include the schedule configurations of the parent campaign. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#clone-a-voice-campaign)
 
 #### Voice Campaigns: User Settings for Auto Dialers
 
