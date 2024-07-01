@@ -39,7 +39,7 @@ Key updates include:
 The platform now supports custom prompts for the prebuilt LLM integrations. This will be in addition to the current support of default prompts. This new capability delivers a consistent prompt engineering experience across custom and pre-built models, making crafting the prompts for various features easy.
 <img src="../images/custom-prompt-for-prebuilt-models.png" alt="Custom Prompts" title="Custom Prompts" style="border: 1px solid gray; zoom:100%;"> 
 
-[Learn more :octicons-arrow-right-24:](../../app-settings/generative-ai-tools/prompts-and-requests-library.md)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/prompts-library.md)
 
 #### Answers Module Details in the Debug Logs
 
