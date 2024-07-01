@@ -308,8 +308,29 @@
           </ul>
         </div>
       </div>
-
-  
+      <div class="md-select md-cstm-sele">
+        <a
+          class="md-header__button m-0 nav-item"
+        >
+          Doc Versions
+          <span class="md-nav__icon md-icon"></span>
+      </a>
+        <div class="md-select__inner">
+          <ul class="md-select__list md-select__list__cstm">
+            
+              <li class="md-select__item">
+                <a href="https://docs.kore.ai/xo/home/" target="_blank" class="md-select__link">
+                  Current (11.x)
+                </a>
+              </li>
+              <li class="md-select__item">
+                <a href="https://developer.kore.ai/docs/bots/whats-new/10-x-x-release-notes/" target="_blank" class="md-select__link">
+                  Previous (10.x)
+                </a>
+              </li>              
+          </ul>
+        </div>
+      </div>
       
     </div>
 
@@ -14812,7 +14833,8 @@ The external service invoked must have a provision to accept and handle the user
 </span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>}
 </span></code></pre></div>
 <h3 id="zip-code">Zip Code<a class="headerlink" href="#zip-code" title="Permanent link">&para;</a></h3>
-<p>Captures a US zip code from the user utterance. For example, <em>What is the weather for 32746?</em> The value for <strong>Zip Code</strong> is 32746 and is returned as a string.</p>
+<p>Captures a zip code from the user utterance. For example, <em>What is the weather for 32746?</em> The value for Zip Code is 32746 and is returned as a string.</p>
+<p>Please note that the entity does not pick a zip code from regular expressions (eg: #$A1B2%), however it successfully picks the zip code if it contains hyphen, spaces or leading “0”s in the utterance.</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>&quot;entities&quot;:
 </span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>{
 </span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>&quot;ZipcodeEntity&quot;: &quot;32746&quot;

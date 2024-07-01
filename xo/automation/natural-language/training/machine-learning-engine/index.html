@@ -308,8 +308,29 @@
           </ul>
         </div>
       </div>
-
-  
+      <div class="md-select md-cstm-sele">
+        <a
+          class="md-header__button m-0 nav-item"
+        >
+          Doc Versions
+          <span class="md-nav__icon md-icon"></span>
+      </a>
+        <div class="md-select__inner">
+          <ul class="md-select__list md-select__list__cstm">
+            
+              <li class="md-select__item">
+                <a href="https://docs.kore.ai/xo/home/" target="_blank" class="md-select__link">
+                  Current (11.x)
+                </a>
+              </li>
+              <li class="md-select__item">
+                <a href="https://developer.kore.ai/docs/bots/whats-new/10-x-x-release-notes/" target="_blank" class="md-select__link">
+                  Previous (10.x)
+                </a>
+              </li>              
+          </ul>
+        </div>
+      </div>
       
     </div>
 
@@ -4100,6 +4121,30 @@
       How to Export or Import ML Utterances
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="How to Export or Import ML Utterances">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#upload-utterances-file-default" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upload Utterances File (Default)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-from-another-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copy from another Language
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -13664,6 +13709,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="How to Export or Import ML Utterances">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#upload-utterances-file-default" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upload Utterances File (Default)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-from-another-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copy from another Language
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -14516,7 +14585,7 @@ You can set the n-gram using the <strong>n-gram Sequence Length –</strong> The
 <p>You can import and export ML utterances of a VA into another in CSV and JSON formats. You can choose between ‘In-Development’ or ‘Published’ tasks to export, whereas importing utterances always replace the latest copy of the task.</p>
 <h3 id="how-to-export-or-import-ml-utterances">How to Export or Import ML Utterances<a class="headerlink" href="#how-to-export-or-import-ml-utterances" title="Permanent link">&para;</a></h3>
 <ol>
-<li>On the VA’s menu, click <strong>Natural Language</strong> &gt; <strong>Training</strong>.</li>
+<li>On the VA’s menu, click <strong>Natural Language &gt; Training</strong>.</li>
 <li>
 <p>The ‘In-Development’ version of the VA’s ML utterances open by default. If you want to see the utterances in the ‘Published’ version, toggle on the top right side of the window to <strong>Published</strong>. </p>
 <div class="admonition note">
@@ -14527,19 +14596,54 @@ You can set the n-gram using the <strong>n-gram Sequence Length –</strong> The
 <li>
 <p>Click the options icon and select an option:</p>
 <ul>
-<li>Click <strong>Import Utterances</strong> and upload a CSV or JSON file with the utterances to import, or</li>
+<li>Click <strong>Import</strong> to upload a CSV or JSON file with the utterances to import OR import utterances between different languages in the same app, or,</li>
 <li>
-<p>Click <strong>Export Utterances</strong> and select CSV or JSON formats to export the utterances.</p>
+<p>Click <strong>Export</strong> and select CSV or JSON formats to export the utterances.</p>
 <p><a class="glightbox" href="../images/import-export-utterances-select.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/import-export-utterances-select.png" alt="import export utterances" title="import export utterances" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 </ul>
 </li>
 </ol>
+<p>You can import/export ML utterances using either of the below methods:</p>
+<ul>
+<li>Upload Utterances File</li>
+<li>
+<p>Copy from another Language</p>
+<p><a class="glightbox" href="../images/import-options.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/import-options.png" alt="import export utterances" title="import export utterances" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+</ul>
+<h4 id="upload-utterances-file-default">Upload Utterances File (Default)<a class="headerlink" href="#upload-utterances-file-default" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Ensure that the <strong>Upload Utterances File (CSV / JSON)</strong> option is selected. This is the default import option.</li>
+<li>
+<p>Select the language(s) for which you want to import. All the language added to the VA will be available for selection.</p>
+<p><a class="glightbox" href="../images/import-file-target-languages.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/import-file-target-languages.png" alt="import export utterances" title="import export utterances" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>Upload or drag and drop the CSV or JSON file containing the utterances. Click <strong>Import</strong> to initiate the import.</p>
+<p><a class="glightbox" href="../images/import-file-upload.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/import-file-upload.png" alt="import export utterances" title="import export utterances" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+</ol>
+<p>You can see a popup that would display the import status and details.</p>
+<h4 id="copy-from-another-language">Copy from another Language<a class="headerlink" href="#copy-from-another-language" title="Permanent link">&para;</a></h4>
+<p>Using this option, you can copy the utterances from one language to another in the <strong>same VA</strong> so that you can easily import and synchronize the utterances data between two languages.This option is available for VA's that have more than one language enabled.</p>
+<ol>
+<li><strong>Import From</strong>: Select the language from which you want to copy the utterances. The base language of the bot is pre-selected by default.</li>
+<li><strong>Version</strong>: Choose <strong>Configured</strong> or <strong>Published</strong>, whichever meets your requirements.</li>
+<li><strong>Import To</strong>: Select the language to which you wish to import. The current bot language is pre-selected by default. If the current language is the primary language of the bot, the field is pre-populated with any other language. You can change it by clicking the <strong>Change</strong> link, selecting a language and clicking Save.</li>
+<li><strong>Choose Intents to Import:</strong> You can choose either of the two options: <ul>
+<li><strong>Import Utterances from all the Intents</strong>: This is the default option. All the intents with all the utterances are imported. You can preview the summary of intents and utterances by clicking View Intents.</li>
+<li><strong>Select Intents to import Utterances</strong>: Having selected this option, you can choose which utterances to import. Only the utterances from the selected intents will be imported</li>
+</ul>
+</li>
+</ol>
+<p>Once you have finalized the selections, click Import. After the import completes, a popup appears that would display the import status and details.</p>
+<p><a class="glightbox" href="../images/import-copy-from-another-language.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/import-copy-from-another-language.png" alt="import export utterances" title="import export utterances" style="border: 1px solid gray; zoom:75%;"></a></p>
 <h3 id="versioning-and-behavior-of-imported-utterances">Versioning and Behavior of Imported Utterances<a class="headerlink" href="#versioning-and-behavior-of-imported-utterances" title="Permanent link">&para;</a></h3>
 <ul>
-<li>The imported utterances in CSV/JSON entirely replace the utterances present in the <em>latest copy</em> of the tasks.</li>
-<li>If the task is in <em>Upgrade in Progress</em> status, the utterances related to the task get entirely replaced with the task utterances present in the imported file. The utterances in the <em>Published</em> copy of the task aren’t affected.</li>
-<li>If the task is in the <em>Published</em> status, an <em>Upgrade in Progress</em> copy of the task gets created by default and the new utterances present in the imported file will be added to the upgraded copy. The utterances in the Published copy of the task aren’t affected.</li>
+<li>The imported utterances in CSV/JSON (if imported from Utterance File) or the source language (if imported from another language of the same VA) entirely replace the utterances present in the <em>latest copy</em> of the tasks.</li>
+<li>If the task is in <em>Upgrade in Progress</em> status, the utterances related to the task get entirely replaced with the task utterances present in the imported file or source language. The utterances in the <em>Published</em> copy of the task aren’t affected.</li>
+<li>If the task is in the <em>Published</em> status, an <em>Upgrade in Progress</em> copy of the task gets created by default and the new utterances present in the imported file or source language will be added to the upgraded copy. The utterances in the Published copy of the task aren’t affected.</li>
 </ul>
 <h3 id="versioning-and-behavior-of-exported-utterances">Versioning and Behavior of Exported Utterances<a class="headerlink" href="#versioning-and-behavior-of-exported-utterances" title="Permanent link">&para;</a></h3>
 <ul>

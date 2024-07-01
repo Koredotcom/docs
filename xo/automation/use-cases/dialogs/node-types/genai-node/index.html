@@ -308,8 +308,29 @@
           </ul>
         </div>
       </div>
-
-  
+      <div class="md-select md-cstm-sele">
+        <a
+          class="md-header__button m-0 nav-item"
+        >
+          Doc Versions
+          <span class="md-nav__icon md-icon"></span>
+      </a>
+        <div class="md-select__inner">
+          <ul class="md-select__list md-select__list__cstm">
+            
+              <li class="md-select__item">
+                <a href="https://docs.kore.ai/xo/home/" target="_blank" class="md-select__link">
+                  Current (11.x)
+                </a>
+              </li>
+              <li class="md-select__item">
+                <a href="https://developer.kore.ai/docs/bots/whats-new/10-x-x-release-notes/" target="_blank" class="md-select__link">
+                  Previous (10.x)
+                </a>
+              </li>              
+          </ul>
+        </div>
+      </div>
       
     </div>
 
@@ -13387,17 +13408,7 @@
 <h3 id="challenge-mitigation">Challenge Mitigation<a class="headerlink" href="#challenge-mitigation" title="Permanent link">&para;</a></h3>
 <p>Large Language Models come with challenges, such as potentially unwanted behavior. This is why the GenAI Node is built with the necessary infrastructure to enable you to define VA behavior. The node considers existing entities and context and allows you to configure specific rules and exit scenarios that ensure the VA acts within the boundaries of your business.</p>
 <h2 id="enable">Enable<a class="headerlink" href="#enable" title="Permanent link">&para;</a></h2>
-<p>This node is not available by default. You can enable it for all Dialog Tasks, including those created using Generative AI, as follows:</p>
-<ol>
-<li>
-<p>Configure the <a href="../../../../../app-settings/generative-ai-tools/llm-integration">LLM integration</a></p>
-</li>
-<li>
-<p>Toggle GenAI Node feature under <strong>App Settings</strong> &gt; <strong>Generative AI Tools</strong> &gt; <strong>Dynamics Conversations</strong>. <a href="../../../../../app-settings/generative-ai-tools/dynamic-conversations-features/#genai-node" target="_blank">Learn more</a>.</p>
-<p><a class="glightbox" href="../images/genai-nodef.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/genai-nodef.png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"></a></p>
-</li>
-</ol>
-<p>If you do not integrate OpenAI and do not enable LLM or GenAI Node, then the node will not be available within the Dialog Builder.</p>
+<p>By default, the feature/node is disabled. To enable the feature, see <a href="../../../../../generative-ai-tools/dynamic-conversations-features/">Dynamic Conversations Features</a>.</p>
 <h2 id="add-to-a-task">Add to a Task<a class="headerlink" href="#add-to-a-task" title="Permanent link">&para;</a></h2>
 <p>To add the GenAI Node to a Dialog Task, follow these steps:</p>
 <ol>
@@ -13512,7 +13523,7 @@
 <h3 id="voice-call-properties">Voice Call Properties<a class="headerlink" href="#voice-call-properties" title="Permanent link">&para;</a></h3>
 <p>Configure Voice Properties to streamline the user experience on voice channels. You can define prompts, grammar, and other call behavior parameters for the node. This node does not require Initial Prompts, Error Prompts, and grammar configuration.</p>
 <p>See <a href="../voice-call-properties/" target="_blank">Voice Call Properties</a> for more information on setting up this section of the GenAI Node.</p>
-<p><a class="glightbox" href="../images/genai-node(1).png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/genai-node(1).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"></a></p>
+<p><a class="glightbox" href="../images/genai-ivr-properties.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/genai-ivr-properties.gif" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;"></a></p>
 <h3 id="connections-properties">Connections Properties<a class="headerlink" href="#connections-properties" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
