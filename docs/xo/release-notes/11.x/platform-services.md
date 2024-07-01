@@ -69,15 +69,15 @@ Key features and enhancements included in this release are summarized below.
 #### Custom LLM Integration Support for Rephrase Dialog Responses  
 
 Rephrase Dialog Responses now supports Custom LLMs in addition to commercial LLMs. This allows platform users to use the rephrasing feature with their own custom-trained language models and create customized prompts tailored to their specific use cases, models, and linguistic contexts, providing greater flexibility and control over the rephrasing process and conversational experiences.  
-[Learn more :octicons-arrow-right-24:](../../app-settings/generative-ai-tools/dynamic-conversations-features.md#rephrase-dialog-responses)
+[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#rephrase-dialog-responses)
 
 #### Custom LLM Integration Support for Answer Generation 
 
-In addition to pre-built commercial LLMs, the Answer Generation now supports Custom LLMs. It allows platform users to craft personalized prompts to unlock the full potential of the Answer Generation and deliver uniquely tailored conversation experiences for their users. [Learn more :octicons-arrow-right-24:](../../app-settings/generative-ai-tools/dynamic-conversations-features.md#answer-generation)
+In addition to pre-built commercial LLMs, the Answer Generation now supports Custom LLMs. It allows platform users to craft personalized prompts to unlock the full potential of the Answer Generation and deliver uniquely tailored conversation experiences for their users. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dynamic-conversations-features.md#answer-generation)
 
 #### Kore.ai XO GPT Supports Vector Generation and Answer Generation (Beta)
 
-Kore.ai XO GPT now supports Answer Generation and Vector Generation. The XO GPT provides a range of models, including the fine-tuned Mistral-Answers Model for Answer Generation and E5, Labse, and MPNet embedding models for Vector Generation. [Learn more :octicons-arrow-right-24:](../../app-settings/generative-ai-tools/xo-gpt-module.md)
+Kore.ai XO GPT now supports Answer Generation and Vector Generation. The XO GPT provides a range of models, including the fine-tuned Mistral-Answers Model for Answer Generation and E5, Labse, and MPNet embedding models for Vector Generation. [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/xo-gpt-module.md)
 
 ### Flows & Channels
 
