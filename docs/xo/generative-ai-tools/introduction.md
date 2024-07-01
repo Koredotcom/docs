@@ -31,7 +31,7 @@ The Integration of Generative AI and LLM enables the following features:
 * Co-Pilot features:
     * **Automatic Dialog Generation**: This feature helps build production-ready dialog tasks automatically by briefly describing the task. A preview of the generated dialog is available and lets you modify the intent description and create multiple iterations of the dialog.
     * **Conversation Test Cases Suggestion**: The Platform suggests simulated user inputs covering various scenarios from an end-user perspective at every test step. You can use these suggestions to create test suites.
-    * **Conversation Summary**: Implements the Conversation Summary public API to fetch the details of the entire conversation between the customer and the VA or agent. This API leverages the Flan-T5 foundational model to summarize conversations.
+    * **Conversation Summary**: Implements the Conversation Summary public API to fetch the details of the entire conversation between the customer and the VA or agent. This API leverages an open-source LLM to summarize conversations.
     * **Generating Opposite Utterance Suggestions**: Use LLM models for generating opposite utterances during design time.
     * **Generating Similar Answer Suggestions**: Use LLM models for generating similar answers during design time based on semantic similarity.
     * **Generating Similar Utterance Suggestions**: Use LLM models for generating similar utterances during design time based on semantic similarity.
