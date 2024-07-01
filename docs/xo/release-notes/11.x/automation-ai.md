@@ -2,6 +2,50 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of XO v11.x releases.
 
+## v11.3.0 June 29, 2024
+
+<u> Patch Release </u>
+
+### Virtual Assistant
+
+#### Dynamic Values for Timeout Duration in Voice Call Properties
+
+This update enables dynamic timeout settings for voice calls via environment variables. Users can now manage timeouts across multiple components without manual adjustments. This approach enhances consistency, reduces errors, and simplifies voice call property management.
+
+The users now have two options for setting timeout durations:
+
+* **Preset**: Select a maximum wait time between 1 and 60 seconds to receive input.
+
+* **Environment Variable**: Select any environment variable from a drop-down list or use a search bar to find a specific variable.
+
+### NLU
+
+#### Ability to import ML utterances from one language to another (without Translation)
+
+The platform now supports copying utterances between languages within the same app. This feature simplifies importing and synchronizing utterance data across multiple languages. (The ability to automatically translate the copied utterances in the target language will be available soon.) [Learn more :octicons-arrow-right-24:](../../automation/natural-language/training/machine-learning-engine.md#how-to-export-or-import-ml-utterances)
+
+#### Improvements to Zip Code Entities
+
+The  Zip Code entity has been enhanced to identify wild cards like “ “ and “-”. For example, “1 2 3 45” is identified as “12345”. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/entity-types.md#zip-code)
+
+### Digital Forms 
+
+#### Option to Clear Default Date during Design Time
+
+Date fields on digital forms now have a clear ('x') icon, which allows users to easily remove the default date value.
+
+### Agent Transfer 
+
+#### Attachment Sharing Between Users and Live Agents
+
+Users can now send files to agents during conversations. This improves communication and helps solve issues faster. This feature is currently available only for ServiceNow agent integration.
+
+### Capability to Handle Agent Fallback Errors
+
+The platform has introduced a new "Agent Transfer fallback response" to improve user experience during agent transfers. Instead of leaving the conversation idle, the platform can now inform users with an appropriate response that can be configured in the app definition. This feature allows for clearer communication and better handling of technical issues during agent transfers.
+
+<hr>
+
 ## v11.2.1 June 15, 2024
 
 <u>Patch Release</u>
