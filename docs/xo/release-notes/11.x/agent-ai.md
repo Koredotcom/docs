@@ -24,7 +24,7 @@ Agent AI dashboard is enhanced with new suggestion relevance metrics and reorgan
 * The **What are your customers looking for** section is revised:
     * "Articles" is renamed to "Answers", displaying SearchAssist results.
     * A new "Others" tab is added for web suggestions and additional data sources.
-<img src="../updated-dashboard.png" alt="updated-dashboard" title="updated-dashboard" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/updated-dashboard.png" alt="updated-dashboard" title="updated-dashboard" style="border: 1px solid gray; zoom:80%;">
 
 ## Attachment Support in Widget
 
