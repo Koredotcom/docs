@@ -41,7 +41,7 @@ While generating reports, you have two options – Run On Demand and Schedule.
         The red dot beside the report indicates that it was generated within the last 24 hours. You can download, save, and view the report in CSV format.
 
     The Queue Metrics Interval Report is generated and is available for download.  
-    <img src="../images/report-generated-queue-metrics-interval.png" alt="CSV Output" title="CSV Output" style="border: 1px solid gray; zoom:90%;">
+    <img src="../images/csv-report-output-queue-metrics-interval.png" alt="CSV Output" title="CSV Output" style="border: 1px solid gray; zoom:90%;">
 
 ### About Report Fields
 
