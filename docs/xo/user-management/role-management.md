@@ -3459,7 +3459,6 @@ No</td>
 </tr>
 </table>
 
-
 ## Custom Roles
 
 You can create custom user roles within the XO Platform to suit your business needs. Unlike the default ones, custom user roles let you assign preferred permissions. You can add, edit, and delete custom roles if you have the Role Management permission set to Yes.
