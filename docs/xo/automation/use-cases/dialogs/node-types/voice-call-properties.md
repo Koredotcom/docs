@@ -1,6 +1,6 @@
 # Voice Call Properties
 
-You can enable voice interaction with your virtual assistant, i.e., users can talk to the virtual assistant. For this, you need to enable one of the voice channels like [IVR](../../../../../xo/channels/IVR-integration.md), [Twilio](../../../../channels/add-twilio-voice-channel.md), [IVR-AudioCodes](../../../../channels/ivr-audio-codes.md), [kore.ai Voice Gateway](../../../../channels/kore.ai-voice-gateway/kore-voice-gateway.md) etc and publish the VA on those channels.
+You can enable voice interaction with your virtual assistant, i.e., users can talk to the virtual assistant. For this, you need to enable one of the voice channels like [IVR](../../../../channels/IVR-integration.md), [Twilio](../../../../channels/add-twilio-voice-channel.md), [IVR-AudioCodes](../../../../channels/ivr-audio-codes.md), [kore.ai Voice Gateway](../../../../channels/kore.ai-voice-gateway/kore-voice-gateway.md) etc and publish the VA on those channels.
 
 There are some Voice Properties you can configure to streamline the user experience across the above-mentioned channels. These configurations can be done at multiple levels:
 
