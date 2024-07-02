@@ -575,9 +575,9 @@ Allow users to Access and Manage the Campaigns Module
    </td>
 </tr>
 <tr>
-   <td><strong>AgentAssist Module</strong>
+   <td><strong>AgentAI Module</strong>
    <br>
-Allow user to Access and Manage AgentAssist Module
+Allow user to Access and Manage AgentAI Module
    </td>
    <td>Yes
    </td>
@@ -1068,9 +1068,9 @@ Allow users to Access and Manage the Campaigns Module
    <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>AgentAssist Module</strong>
+   <td><strong>AgentAI Module</strong>
    <br>
-Allow user to Access and Manage AgentAssist Module
+Allow user to Access and Manage AgentAI Module
    </td>
    <td>Yes</td>
 </tr>
@@ -1559,9 +1559,9 @@ Allow users to Access and Manage the Campaigns Module
    <td>No</td>
 </tr>
 <tr>
-   <td><strong>AgentAssist Module</strong>
+   <td><strong>AgentAI Module</strong>
    <br>
-Allow user to Access and Manage AgentAssist Module
+Allow user to Access and Manage AgentAI Module
    </td>
    <td>Yes</td>
 </tr>
@@ -2050,9 +2050,9 @@ Allow users to Access and Manage the Campaigns Module
    <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>AgentAssist Module</strong>
+   <td><strong>AgentAI Module</strong>
    <br>
-Allow user to Access and Manage AgentAssist Module
+Allow user to Access and Manage AgentAI Module
    </td>
    <td>No</td>
 </tr>
@@ -2541,9 +2541,9 @@ Allow users to Access and Manage the Campaigns Module
    <td>No</td>
 </tr>
 <tr>
-   <td><strong>AgentAssist Module</strong>
+   <td><strong>AgentAI Module</strong>
    <br>
-Allow user to Access and Manage AgentAssist Module
+Allow user to Access and Manage AgentAI Module
    </td>
    <td>No</td>
 </tr>
@@ -3232,9 +3232,9 @@ Allow users to Access and Manage the Campaigns Module
 No</td>
 </tr>
 <tr>
-   <td><strong>AgentAssist Module</strong>
+   <td><strong>AgentAI Module</strong>
    <br>
-Allow user to Access and Manage AgentAssist Module
+Allow user to Access and Manage AgentAI Module
    </td>
    <td>Yes
    <br>
