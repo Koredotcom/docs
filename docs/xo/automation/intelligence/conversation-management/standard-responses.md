@@ -761,18 +761,12 @@ This message is displayed when <em>Hold and Resume</em> are set to <em>Allow the
   <tr>
    <td>Agent Transfer fallback response
    </td>
-   <td>This response  is displayed under the following scenarios:
-   * When there is a wait time for the agent to receive the chat.
-   * When an agent is unavailable to take the chat.
-   * When an agent closes or rejects the chat.
-   * When there is a technical error with the third-party agent system.
-   * When the Platform fails to transfer the conversation to the agent.
-   
-   * When there is a wait time for the agent to receive the chat.
-   * When an agent is unavailable to take the chat.
-   * When an agent closes or rejects the chat.
-   * When there is a technical error with the third-party agent system.
-   * When the Platform fails to transfer the conversation to the agent.
+   <td>This response  is displayed under the following scenarios:  
+    <br><br>* When there is a wait time for the agent to receive the chat.  
+    <br>* When an agent is unavailable to take the chat.
+    <br>* When an agent closes or rejects the chat.
+    <br>* When there is a technical error with the third-party agent system.
+    <br>* When the Platform fails to transfer the conversation to the agent.<br>
    </td>
   </tr>
   <tr>
