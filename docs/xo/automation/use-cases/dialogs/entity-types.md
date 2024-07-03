@@ -1081,8 +1081,8 @@ Post v7.1, the following keys are added to the context object for the below-ment
 !!! Note
 
     * The ‘**Display List of Values**’ option is available only for the [List of Items (enumerated)](#list-of-items-enumerated). It is **NOT** available for the [List of Items (lookup)](#list-of-items-lookup).
-    
-    * When using a list of values entities in the context object, the VA only supports attribute types as “String” for Title, Value, and Synonyms. 
+
+    * When using a list of values entities in the context object, the VA only supports attribute types as “String” for **Title**, **Value**, and **Synonyms**. 
 
 
 ### List of Items (lookup)
