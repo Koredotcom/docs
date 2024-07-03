@@ -200,6 +200,11 @@ These settings are grouped and presented as closed groups when first opening the
 * **Auto**: Emails are auto-accepted, and the agent does not need to click ‘Accept’.
 <img src="../images/email-configuration-auto.png" alt="Email Configuration Auto" title="Email Configuration Auto" style="border: 1px solid gray; zoom:80%;">
 
+### Explicit Reject Button
+
+Turn on the toggle to add an explicit reject button for incoming conversations. This applies only in manual acceptance mode. This toggle is turned off by default.  
+<img src="../images/explicit-reject-button-toggle.png" alt="Explicit Reject Toggle" title="Explicit Reject Toggle" style="border: 1px solid gray; zoom:90%;">
+
 ## Conversation Status Control
 
 The Conversation Status Control settings are available for the following channels: Live Chat, Messaging, Voice, and Emails.
@@ -211,142 +216,19 @@ Different statuses apply to each channel. Watch the short demo below to see what
 
 Conversation statuses apply in certain conditions for specific channels. These are listed in the table below:
 
-<table>
-  <tr>
-   <td><strong>Status</strong>
-   </td>
-   <td><strong>Applicability</strong>
-   </td>
-   <td><strong>Channel</strong>
-   </td>
-   <td><strong>Message</strong>
-   </td>
-   <td><strong>Variables</strong>
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="2" >On Connect
-   </td>
-   <td rowspan="2" >When the agent connects
-   </td>
-   <td>Live Chat, Messaging.
-   </td>
-   <td>To User
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-  <tr>
-   <td>Voice
-   </td>
-   <td>To User
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name
-   </td>
-  </tr>
-  <tr>
-   <td>Due Reminder For Agent
-   </td>
-   <td>If the agent’s response time is greater than the set percentile of overdue conversations.
-   </td>
-   <td>Live Chat, Messaging.
-   </td>
-   <td>To Agent
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-  <tr>
-   <td>Agent Inactivity
-   </td>
-   <td>If the agent has not responded to an overdue conversation for the set time (in minutes and seconds).
-   </td>
-   <td>Live Chat
-   </td>
-   <td>To Agent
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-  <tr>
-   <td>Overdue
-   </td>
-   <td>If the agent has not responded for the set amount of time (in minutes and seconds).
-   </td>
-   <td>Live Chat, Messaging.
-   </td>
-   <td>To Agent
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-  <tr>
-   <td>Idle Reminder For Customer
-   </td>
-   <td>If the customer’s response time is greater than the set percentile of total idle customer conversations.
-   </td>
-   <td>Live Chat, Messaging.
-   </td>
-   <td>To User
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-  <tr>
-   <td>Idle
-   </td>
-   <td>If the customer has not responded for the set amount of time (in minutes and seconds).
-   </td>
-   <td>Live Chat, Messaging.
-   </td>
-   <td>To User
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="2" >Auto Expire
-   </td>
-   <td rowspan="2" >If the customer’s response time is greater than the set amount of time (in minutes and seconds).
-   </td>
-   <td rowspan="2" >Live Chat
-   </td>
-   <td>To User
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-  <tr>
-   <td>To Agent
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name
-   </td>
-  </tr>
-  <tr>
-   <td>On Interruption
-   </td>
-   <td>If the agent disconnects unexpectedly.
-   </td>
-   <td>Live Chat, Messaging.
-   </td>
-   <td>To User
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-  <tr>
-   <td>On Close
-   </td>
-   <td>If the agent closes the conversation.
-   </td>
-   <td>Live Chat, Messaging.
-   </td>
-   <td>To User
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-</table>
+| **Status**                  | **Applicability**                                                                        | **Channel**             | **Message** | **Variables**                                                                                                     |
+|-----------------------------|------------------------------------------------------------------------------------------|-------------------------|-------------|-------------------------------------------------------------------------------------------------------------------|
+| **On Connect**              | When the agent connects                                                                  | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+|                             |                                                                                          | Voice                   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name                                               |
+| **Due Reminder For Agent**  | If the agent’s response time is greater than the set percentile of overdue conversations | Live Chat, Messaging.   | To Agent    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+| **Agent Inactivity**        | If the agent has not responded to an overdue conversation for the set time               | Live Chat               | To Agent    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+| **Overdue**                 | If the agent has not responded for the set amount of time                                | Live Chat, Messaging.   | To Agent    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+| **Idle Reminder For Customer** | If the customer’s response time is greater than the set percentile of total idle customer conversations | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+| **Idle**                    | If the customer has not responded for the set amount of time                             | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+| **Auto Expire**             | If the customer’s response time is greater than the set amount of time                   | Live Chat               | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+|                             |                                                                                          |                         | To Agent    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name                                               |
+| **On Interruption**         | If the agent disconnects unexpectedly                                                    | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+| **On Close**                | If the agent closes the conversation                                                     | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
 
 ### Conversation Statuses by Channel (Email)
 

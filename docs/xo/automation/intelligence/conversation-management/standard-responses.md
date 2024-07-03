@@ -759,6 +759,17 @@ This message is displayed when <em>Hold and Resume</em> are set to <em>Allow the
    </td>
   </tr>
   <tr>
+   <td>Agent Transfer fallback response
+   </td>
+   <td>This response  is displayed under the following scenarios:  
+    <br><br>* When there is a wait time for the agent to receive the chat.  
+    <br>* When an agent is unavailable to take the chat.
+    <br>* When an agent closes or rejects the chat.
+    <br>* When there is a technical error with the third-party agent system.
+    <br>* When the Platform fails to transfer the conversation to the agent.<br>
+   </td>
+  </tr>
+  <tr>
    <td>User exceeds the maximum allowed retries for an entity when another task is on hold
    </td>
    <td>You have exceeded the number of allowed attempts. I am discarding the current task.
