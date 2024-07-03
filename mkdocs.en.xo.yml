@@ -279,7 +279,7 @@ nav:
                 - Confluence Server: searchai/content-sources/connectors/confluence-server.md
                 - Dropbox: searchai/content-sources/connectors/dropbox.md
                 - Google Drive: searchai/content-sources/connectors/googledrive.md
-                - ServiceNow: searchai/content-sources/servicenow.md              
+                - ServiceNow: searchai/content-sources/connectors/servicenow.md              
                 - Zendesk: searchai/content-sources/connectors/zendesk.md                  
         - Extraction Strategy: searchai/content-extraction/extraction.md
         - Workbench:
@@ -436,6 +436,7 @@ nav:
         - API List:
           - Automation APIs: apis/automation/api-list.md
           - Contact Center APIs: apis/contact-center/contact-center-api-list.md
+          - Search AI APIs: apis/searchai/api-list.md
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md
