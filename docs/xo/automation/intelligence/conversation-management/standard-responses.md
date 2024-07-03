@@ -767,6 +767,12 @@ This message is displayed when <em>Hold and Resume</em> are set to <em>Allow the
    * When an agent closes or rejects the chat.
    * When there is a technical error with the third-party agent system.
    * When the Platform fails to transfer the conversation to the agent.
+   
+   * When there is a wait time for the agent to receive the chat.
+   * When an agent is unavailable to take the chat.
+   * When an agent closes or rejects the chat.
+   * When there is a technical error with the third-party agent system.
+   * When the Platform fails to transfer the conversation to the agent.
    </td>
   </tr>
   <tr>
