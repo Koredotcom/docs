@@ -54,6 +54,7 @@ Based on the functionality addressed, the APIs can be categorized as:
 | [Conversation Test Suite Execution Status](./get-test-suite-execution-status.md) | To get the execution status and summary of a Conversation Test Suite. | Conversation Tests Execution | Conversation Tests Execution |
 | [Delete Conversation Test Suite](./delete-test-suite.md) | To delete a Conversation Test Suite. | Conversation Tests Management | Conversation Tests Management |
 
+
 ## NLP Training APIs
 
 | API | DESCRIPTION | ASSOCIATED APP SCOPE |     |
@@ -75,8 +76,8 @@ Based on the functionality addressed, the APIs can be categorized as:
 | [Get FAQs](./get-faqs-from-knowledge-task.md) | To get a list of questions and nodes under the Knowledge task. | Manage Knowledge Graph | Manage Knowledge Graph |
 | [Update NLP Configurations](./update-nlp-configurations.md) | To update the NLP thresholds and configurations. | NLP Configurations | Test > NLP Configurations & Train |
 
-## Analytics APIs
 
+## Analytics APIs
 
 | API | DESCRIPTION | ASSOCIATED APP SCOPE |     |
 | --- | --- | --- | --- |
@@ -118,7 +119,6 @@ Based on the functionality addressed, the APIs can be categorized as:
 
 ## Data (Data Table) Access APIs
 
-
 | API | DESCRIPTION | ASSOCIATED APP SCOPE |
 | --- | --- | --- |
 | [Insert Data](./data-insert.md) | To insert data into Data Table | Write access to the Data Table |
@@ -127,4 +127,12 @@ Based on the functionality addressed, the APIs can be categorized as:
 | [Delete Data](./data-delete.md) | To delete data from Data Table. | Read and Delete access to the Data Table |
 | [Get Table Data](./query-table-data.md) | To get data from Data Table. | Read access to the Data Table |
 | [Get View Data](./query-data-table-view.md) | To get data from Data View. | Read access to the Table View |
+
+
+## Answer Generation API
+
+
+| API            | Description                                 | App Scope         |
+|----------------|---------------------------------------------|-------------------|
+| [Answer Generation](../answer-generation.md) | To fetch answers for a query using SearchAI | Answer Generation |
 
