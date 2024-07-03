@@ -582,6 +582,46 @@ Allow user to Access and Manage AgentAI Module
    <td>Yes
    </td>
 </tr>
+<tr>
+   <td><strong>Auto QA</strong>
+   <br>
+Enable and Disable access for Auto QA
+   </td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Conversational Intelligence</strong>
+   <br>
+Configuration and view access to conversational Intelligence
+   </td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Evaluation Forms and Metrics</strong>
+   <br>
+Creation and edit access to evaluation forms and evaluation metrics
+   </td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Audit Allocation creation</strong>
+   <br>
+Access to create and assign interactions for audit to other users
+   </td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>QA Functionalities access</strong>
+   <br>
+Access to scored interactions, submit audits & QA dashboard
+   </td>
+   <td>Full Access
+   </td>
+</tr>
 </table>
 
 ### APP DEVELOPER
@@ -1065,6 +1105,46 @@ Allow users to Access and Manage the Campaigns Module
 Allow user to Access and Manage AgentAI Module
    </td>
    <td>Yes
+   </td>
+</tr>
+<tr>
+   <td><strong>Auto QA</strong>
+   <br>
+Enable and Disable access for Auto QA
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>Conversational Intelligence</strong>
+   <br>
+Configuration and view access to conversational Intelligence
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>Evaluation Forms and Metrics</strong>
+   <br>
+Creation and edit access to evaluation forms and evaluation metrics
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>Audit Allocation creation</strong>
+   <br>
+Access to create and assign interactions for audit to other users
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>QA Functionalities access</strong>
+   <br>
+Access to scored interactions, submit audits & QA dashboard
+   </td>
+   <td>No
    </td>
 </tr>
 </table>
@@ -1552,6 +1632,46 @@ Allow user to Access and Manage AgentAI Module
    <td>Yes
    </td>
 </tr>
+<tr>
+   <td><strong>Auto QA</strong>
+   <br>
+Enable and Disable access for Auto QA
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>Conversational Intelligence</strong>
+   <br>
+Configuration and view access to conversational Intelligence
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>Evaluation Forms and Metrics</strong>
+   <br>
+Creation and edit access to evaluation forms and evaluation metrics
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>Audit Allocation creation</strong>
+   <br>
+Access to create and assign interactions for audit to other users
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>QA Functionalities access</strong>
+   <br>
+Access to scored interactions, submit audits & QA dashboard
+   </td>
+   <td>No
+   </td>
+</tr>
 </table>
 
 ### SUPERVISOR
@@ -2036,6 +2156,46 @@ Allow user to Access and Manage AgentAI Module
    </td>
    <td>No</td>
 </tr>
+<tr>
+   <td><strong>Auto QA</strong>
+   <br>
+Enable and Disable access for Auto QA
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>Conversational Intelligence</strong>
+   <br>
+Configuration and view access to conversational Intelligence
+   </td>
+   <td>View
+   </td>
+</tr>
+<tr>
+   <td><strong>Evaluation Forms and Metrics</strong>
+   <br>
+Creation and edit access to evaluation forms and evaluation metrics
+   </td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>Audit Allocation creation</strong>
+   <br>
+Access to create and assign interactions for audit to other users
+   </td>
+   <td>Full Access
+   </td>
+</tr>
+<tr>
+   <td><strong>QA Functionalities access</strong>
+   <br>
+Access to scored interactions, submit audits & QA dashboard
+   </td>
+   <td>Full Access
+   </td>
+</tr>
 </table>
 
 ### AGENT
@@ -2519,6 +2679,46 @@ Allow users to Access and Manage the Campaigns Module
 Allow user to Access and Manage AgentAI Module
    </td>
    <td>No</td>
+</tr>
+<tr>
+   <td><strong>Auto QA</strong>
+   <br>
+Enable and Disable access for Auto QA
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>Conversational Intelligence</strong>
+   <br>
+Configuration and view access to conversational Intelligence
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>Evaluation Forms and Metrics</strong>
+   <br>
+Creation and edit access to evaluation forms and evaluation metrics
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>Audit Allocation creation</strong>
+   <br>
+Access to create and assign interactions for audit to other users
+   </td>
+   <td>No
+   </td>
+</tr>
+<tr>
+   <td><strong>QA Functionalities access</strong>
+   <br>
+Access to scored interactions, submit audits & QA dashboard
+   </td>
+   <td>No
+   </td>
 </tr>
 </table>
 
@@ -3203,6 +3403,57 @@ No</td>
 Allow user to Access and Manage AgentAI Module
    </td>
    <td>Yes
+   <br>
+No</td>
+</tr>
+<tr>
+   <td><strong>Auto QA</strong>
+   <br>
+Enable and Disable access for Auto QA
+   </td>
+   <td>Full Access
+   <br>
+No</td>
+</tr>
+<tr>
+   <td><strong>Conversational Intelligence</strong>
+   <br>
+Configuration and view access to conversational Intelligence
+   </td>
+   <td>View
+   <br>
+Full Access
+   <br>
+No</td>
+   </td>
+</tr>
+<tr>
+   <td><strong>Evaluation Forms and Metrics</strong>
+   <br>
+Creation and edit access to evaluation forms and evaluation metrics
+   </td>
+   <td>Full Access
+   <br>
+View
+   <br>
+No</td>
+   </td>
+</tr>
+<tr>
+   <td><strong>Audit Allocation creation</strong>
+   <br>
+Access to create and assign interactions for audit to other users
+   </td>
+   <td>Full Access
+   <br>
+No</td>
+</tr>
+<tr>
+   <td><strong>QA Functionalities access</strong>
+   <br>
+Access to scored interactions, submit audits & QA dashboard
+   </td>
+   <td>Full Access
    <br>
 No</td>
 </tr>
