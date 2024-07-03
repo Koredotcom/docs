@@ -118,7 +118,7 @@ nav:
       - Navigating the Platform: getting-started/navigating-the-platform.md  
       - Onboarding:
         - Guided Onboarding: getting-started/guided-onboarding.md
-        - Best Practices for FAQs and Answers: getting-started/best-practices-faq-and-answer.md
+        - Best Practices for FAQs and Answers Generation: getting-started/best-practices-faq-and-answer.md
       - Flows and Channels:
         - Flows: 
           - Introduction: flows/introduction-to-flows.md

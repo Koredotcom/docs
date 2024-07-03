@@ -1,5 +1,5 @@
 
-# Best Practices for FAQs and Answer Generation
+# Best Practices for FAQs and Answers Generation
 
 You can train your Virtual Assistant (VA) to provide exact answers to specific questions from customers. There are two ways to train your VA to do so:
 
