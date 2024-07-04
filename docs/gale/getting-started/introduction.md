@@ -8,7 +8,6 @@ You don't need to be an AI expert to use GALE. It has ready-to-use AI models and
 
 <hr>
 
-
 ## Key Components
 
 Agents, Models, and Playground are the key components of GALE that work together to enable businesses to leverage AI capabilities effectively.

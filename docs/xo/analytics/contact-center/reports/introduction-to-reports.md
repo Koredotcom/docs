@@ -17,11 +17,11 @@ You can segregate the reports as follows:
 
 To create a new report:
 
-1. Go to **Contact Center AI** > **Go to Analytics** > **CONTACT CENTER** > **Reports**.
+1. Go to **Contact Center AI** > **Analytics** > **CONTACT CENTER** > **Reports**.
 2. Click **New Report**.
 <img src="../images/reports-tab.png" alt="New Report Button" title="New Report Button" style="border: 1px solid gray; zoom:70%;">
 
-3. A new report page opens.
+3. A new report page opens.  
 <img src="../images/new-reports-page.png" alt="New Reports Page" title="New Reports Page" style="border: 1px solid gray; zoom:70%;">
 
 You can choose different report types from the list, for example, the Agent Activity Summary.
@@ -43,7 +43,8 @@ When generating a new report, you have the option to select from a list of avail
 * Agent Chat Metrics Report,
 * Queue Dispositions Report,
 * Queue Chat Metrics Interval Report,
-* Total Volumes Report.
+* Total Volumes Report,
+* IVR Containment Report.
 
 By clicking the New Report button, you can choose the desired report type from the above list.
 
@@ -64,15 +65,15 @@ By default, all reports are public. You can restrict the access to the reports b
 
 Steps to revise the access:
 
-1. Click the (…) button under **ACTIONS** to revise the access for the report.
+1. Click the (**⋮**) button under **ACTIONS** to revise the access for the report.
 2. Click **Switch to Private**. The access is updated.
 <img src="../images/switch-to-private.png" alt="Switch to Private" title="Switch to Private" style="border: 1px solid gray; zoom:70%;">
 
 You can make the report public by following the above steps and clicking **Switch to Public**. The report is then accessible to everyone.
 
-!!! Note
+    !!!Note
 
-    A private report is not visible to other users on the REPORTS tab.
+        A private report is not visible to other users on the REPORTS tab.
 
 ### Adding Filters
 
@@ -86,7 +87,7 @@ When generating reports, you have the choice to either Run On Demand or Schedule
 
 When creating a new report or editing an existing report, you can schedule the report to run on demand as shown below:
 
-* Select **Run On Demand**.
+* Select **Run On Demand**.  
 <img src="../images/run-on-demand.png" alt="Run on Demand" title="Run on Demand" style="border: 1px solid gray; zoom:70%;">
 
 ### Schedule
@@ -98,6 +99,7 @@ When creating or editing a report, you can modify its schedule as shown below:
 3. Select the Day, Hour, Minute and AM/PM.
 4. Select the time zone.  
 <img src="../images/schedule-report.png" alt="Schedule Report" title="Schedule report" style="border: 1px solid gray; zoom:70%;">
+
 5. The report generation follows the selected schedule, as shown in the below example. You can enable or disable the schedule for the report. This option applies only to scheduled reports.
 <img src="../images/schedule-toggle.png" alt="Enable Schedule Toggle" title="Enable Schedule Toggle" style="border: 1px solid gray; zoom:70%;">
 
@@ -108,17 +110,19 @@ When creating a new report or editing an existing report, you can change the rep
 **Data Filters**: Contact Center AI allows you to add data filters as needed.
 
 1. Click **+ Add Filter**.  
-<img src="../images/data-filters.png" alt="Data Filters" title="Data Filters" style="border: 1px solid gray; zoom:70%;">
-2. Select the required filters.
-<img src="../images/data-filters-filled.png" alt="Data Filters Selected" title="Data Filters Selected" style="border: 1px solid gray; zoom:70%;">
-3. Click the (-) sign to remove filters.
-<img src="../images/minus-sign.png" alt="Remove Filter" title="Remove Filter" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/data-filters.png" alt="Data Filters" title="Data Filters" style="border: 1px solid gray; zoom:100%;">
+
+2. Select the required filters.  
+<img src="../images/data-filters-filled.png" alt="Data Filters Selected" title="Data Filters Selected" style="border: 1px solid gray; zoom:100%;">
+
+3. Click the (**-**) sign to remove filters.
+<img src="../images/minus-sign.png" alt="Remove Filter" title="Remove Filter" style="border: 1px solid gray; zoom:100%;">
 
 **Formats**: You have the option to choose either a PDF or CSV output format for your report.  
-<img src="../images/report-formats.png" alt="Report Formats" title="Report Formats" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/report-formats.png" alt="Report Formats" title="Report Formats" style="border: 1px solid gray; zoom:100%;">
 
 **Send To**: You can select the Email for sharing the report.
-<img src="../images/email.png" alt="Email" title="Email" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/email.png" alt="Email" title="Email" style="border: 1px solid gray; zoom:100%;">
 
 ## Bulk Actions
 
@@ -128,20 +132,23 @@ Run Now:
 
 1. Select multiple reports from the list.
 2. The Bulk Action menu appears on the top-left of the screen, above the list of reports.
-<img src="../images/bulk-actions.png" alt="Bulk Action" title="Bulk Actions" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/bulk-actions.png" alt="Bulk Action" title="Bulk Actions" style="border: 1px solid gray; zoom:100%;">
+
 3. The bulk actions menu items are displayed. Click **Run Now**.
-<img src="../images/run-bulk-actions.png" alt="Run Bulk Action" title="Run Bulk Actions" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/run-bulk-actions.png" alt="Run Bulk Action" title="Run Bulk Actions" style="border: 1px solid gray; zoom:100%;">
+
 4. A confirmation pop-up appears. Type RUN to confirm the action and then click **Yes, Run**.  
-<img src="../images/run-confirmation.png" alt="Run Bulk Action Confirmation" title="Run Bulk Actions Confirmation" style="border: 1px solid gray; zoom:70%;">  
+<img src="../images/run-confirmation.png" alt="Run Bulk Action Confirmation" title="Run Bulk Actions Confirmation" style="border: 1px solid gray; zoom:100%;">
+
 A list of reports that are run together appears.
 
 **Delete Reports**:
 
 1. From the Bulk Actions menu, select Delete to remove the selected reports all at once.
-<img src="../images/delete-bulk-actions.png" alt="Delete Bulk Action" title="Delete Bulk Actions" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/delete-bulk-actions.png" alt="Delete Bulk Action" title="Delete Bulk Actions" style="border: 1px solid gray; zoom:100%;">
 
 2. Type **DELETE** to confirm the action on the pop-up window and then click **Yes, Delete**.  
-<img src="../images/delete-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:70%;">  
+<img src="../images/delete-confirmation.png" alt="Delete Confirmation" title="Delete Confirmation" style="border: 1px solid gray; zoom:100%;">  
 All the selected reports will be deleted.
 
 ## ACTIONS
@@ -149,12 +156,12 @@ All the selected reports will be deleted.
 For each report, the following actions are allowed:
 
 * **Edit**  
-<img src="../images/edit.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/edit.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:100%;">
 
 * **View History**  
-<img src="../images/view-history.png" alt="View History Button" title="View History Button" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/view-history.png" alt="View History Button" title="View History Button" style="border: 1px solid gray; zoom:100%;">
 
-* **Clone/Favorite/Unfavorite/Switch to/Delete (…) Ellipses button**
+* **Clone/Favorite/Unfavorite/Switch to/Delete (⋮) Ellipses button**  
 <img src="../images/ellipsis.png" alt="Ellipses Button" title="Ellipses Button" style="border: 1px solid gray; zoom:70%;">
 
 ### Edit
@@ -164,7 +171,7 @@ To edit a report:
 1. Navigate to the report and click the **Edit** button.
 2. A pop-up appears for editing the report.
 3. Make the necessary changes and click **Save**.
-<img src="../images/edit-report.png" alt="Edit Report" title="Edit Report" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/edit-report.png" alt="Edit Report" title="Edit Report" style="border: 1px solid gray; zoom:100%;">
 
 ### View History
 
@@ -178,24 +185,28 @@ To view the history of any report:
 
 To clone a report:
 
-1. Navigate to the report and click the **ellipses (…)**.
+1. Navigate to the report and click the **ellipses (⋮)**.
 2. Click Clone. A pop-up appears for cloning the report.
 3. Click **Save**.  
-<img src="../images/clone-report.png" alt="Clone Report" title="Clone Report" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/clone-report.png" alt="Clone Report" title="Clone Report" style="border: 1px solid gray; zoom:100%;">
 
 ### Favorite/Unfavorite
 
 To mark a report favorite/unfavorite:
 
-1. Navigate to the report and click the **ellipses (…)**.
+1. Navigate to the report and click the **ellipses (⋮)**.
 2. Click **Favorite/Unfavorite**. A pop-up appears confirming the update.
-<img src="../images/report-updated-successfully.png" alt="Favorite/Unfavorite" title="Favorite/Unfavorite" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/report-updated-successfully.png" alt="Favorite/Unfavorite" title="Favorite/Unfavorite" style="border: 1px solid gray; zoom:100%;">
 
 ### Deleting Reports
 
 To delete a report:
 
-1. Navigate to the report and click the **ellipses (…)**.
+1. Navigate to the report and click the **ellipses (⋮)**.
 2. Click **Delete**. A pop-up appears for confirming the deletion.
 3. Click **Yes, Delete**.  
-<img src="../images/delete-report.png" alt="Delete Report" title="Delete Report" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/delete-report.png" alt="Delete Report" title="Delete Report" style="border: 1px solid gray; zoom:100%;">
+
+#### Related Link
+
+* [Reports List](../reports/reports-list.md)

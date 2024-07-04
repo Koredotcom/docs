@@ -1,4 +1,4 @@
-# **BotKit SDK Tutorial – Flight Search Sample Bot**
+# BotKit SDK Tutorial – Flight Search Sample Bot
 
 This tutorial is an end-to-end walkthrough for setting up and running an instance of the Kore.ai BotKit SDK, which is a collection of libraries that you can use for more control of the messages and webhook events in Kore.ai assistants for your web service. For this tutorial, you will use the sample Flight Search Assistant that you can install, generate authentication tokens, and then test using _ngrok_ as a test callback server.
 

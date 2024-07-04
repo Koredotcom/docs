@@ -4,26 +4,27 @@ Once you have built and trained your bot, the most important question that arise
 
 The **Batch Testing** feature helps you discern the ability of your bot to correctly recognize the expected intents and entities from a given set of utterances. This involves the execution of a series of tests to get a detailed statistical analysis and gauge the performance of your bot’s ML model.
 
-**Note**: The Batch Testing dashboard displays the summary of test coverage, performance, and training recommendations for multiple test suites based on validations of the intent identification capabilities of your NLU model. The **Health and Monitoring** dashboard is a one-stop place that displays this information for the individual test suite(s) the user selects. [Learn More](../health-and-monitoring/virtual-assistants-health-and-monitoring/){:target="_blank"}.
+!!! Note
 
-To conduct a batch test, you can use predefined test suites available in the builder or create your own custom test suites. Based on your requirement, the test suites can be run to view the desired results. This option can be accessed from the **Automation > Testing > Regression Testing** from the left navigation menu, and then the **Batch Testing** tab..
+    The Batch Testing dashboard displays the summary of test coverage, performance, and training recommendations for multiple test suites based on validations of the intent identification capabilities of your NLU model. The **Health and Monitoring** dashboard is a one-stop place that displays this information for the individual test suite(s) the user selects. [Learn More](../health-and-monitoring/virtual-assistants-health-and-monitoring/){:target="_blank"}.
+
+To conduct a batch test, you can use predefined test suites available in the builder or create your own custom test suites. Based on your requirement, the test suites can be run to view the desired results. This option can be accessed from the **Automation AI > Virtual Assistant > Testing > Regression Testing** from the left navigation menu, and then the **Batch Testing** tab..
 
 
-## **Best Practices**
+## Best Practices
 
 * An optimal approach to bot NLP training is to first create a test suite of most of the use cases(user utterances) that the bot needs to identify, run it against the model and start training for the ones that failed.
 * Create/update batch testing modules for high usage utterances.
 * Publish the trained model only after detailed testing.
 * When naming the intent, ensure that the name is relatively short (3-5 words) and does not have special characters or words from the Stop Wordlist. Try to ensure the intent name is close to what the users request in their utterance.
 * Batch Test executions do not consider the context of the user. Hence you might see some False Negatives in the test results which in fact are True Positives in the actual bot when the context is taken into consideration.
-* The ‘count’ in Batch Test results refers to the ‘unique assertion’ statements and not necessarily the number of the rows in the CSV file. Batch tests use a rule to validate the unique assertions based on the ‘utterance’ in consecutive rows. If two consecutive rows have same utterances and different entity values, the XO platform considers it as one assertion statement which accepts both the entity values.
+* The **count** in Batch Test results refers to the **unique assertion** statements and not necessarily the number of the rows in the CSV file. Batch tests use a rule to validate the unique assertions based on the **utterance** in consecutive rows. If two consecutive rows have same utterances and different entity values, the XO platform considers it as one assertion statement which accepts both the entity values.
 
 
 
-## **Managing Test Suites**
+## Managing Test Suites
 
-Kore.ai provides a few out-of-the-box **Test Suites** to perform batch testing. **'Developer defined utterances’** and **'Successful user utterances’** are the built-in test suites that can be run to perform Batch Testing. You can also create a **New Test Suite** for testing a custom set of utterances.
-
+Kore.ai provides a few out-of-the-box **Test Suites** to perform batch testing. **Developer defined utterances** and **Successful user utterances** are the built-in test suites that can be run to perform Batch Testing. You can also create a **New Test Suite** for testing a custom set of utterances.
 
 
 ### Developer defined utterances
@@ -35,7 +36,7 @@ This test suite validates the utterances that have been previously added and tra
 
 ### Successful user utterances
 
-This test suite includes all the end-user utterances that have successfully matched one or more intents and the corresponding task is fully executed. You can also find these utterances from the ‘Intent found’ section of the Analyze module.
+This test suite includes all the end-user utterances that have successfully matched one or more intents and the corresponding task is fully executed. You can also find these utterances from the **Intent found** section of the Analyze module.
 
 <img src="../images/batch-testing-2-successful-utterances.png" alt="BT - Successful user utterances" title="BT - Successful user utterances" style="border: 1px solid gray;zoom:50%;"/>
 
@@ -44,7 +45,7 @@ This test suite includes all the end-user utterances that have successfully matc
 
 To add a new test suite, follow the steps below:
 
-1. Go to **Automation > Testing > Regression Testing**, select **Batch Testing** tab, and click **New Test Suite**.  
+1. Go to **Automation AI > Virtual Assistant > Testing > Regression Testing**, select **Batch Testing** tab, and click **New Test Suite**.  
   <img src="../images/batch-testing-3.png" alt="BT - New Test Suite" title="BT - New Test Suite" style="border: 1px solid gray;zoom:50%;">
 2. In the **New test Suite** window, add a **name** and provide a **description**.
 3. Next, choose how to add test cases: either manually or by uploading a test case file.
@@ -95,24 +96,18 @@ You can automatically generate batch test cases if you have enabled [LLM and Gen
 
 To generate test cases automatically, follow the steps below:
 
-
 1. Click **Generate Test Cases** from any of the two areas mentioned above.
 2. In the **Generate Test Case** window, select the **Dialog Task** you want to test. 
 3. Click **Generate**. Wait for a few moments until the generation completes.  
 <img src="../images/batch-testing-10-generate-add-intent.png" alt="Click Generate" title="Click Generate" style="border: 1px solid gray; zoom:50%;"/> 
 
-
-
 4. Once test cases are generated, you can reject some of them. If required, click Generate more to get more suggestions. 
 5. Click **Add Test Cases** when ready.  
 <img src="../images/batch-testing-11-generation-done.png" alt="Add Test case" title="Add Test case" style="border: 1px solid gray; zoom:50%;"/> 
 
-
 Once you add the test cases, they are listed within your test suite, along with any other cases you might have added manually or generated in the past. You can continue adding test cases to the suite using these two methods.
 
 <img src="../images/batch-testing-12-test-cases-added.png" alt="test case list" title="test case list" style="border: 1px solid gray; zoom:50%;"/> 
-
-
 
 
 #### Adding a Test Suite by Uploading a Test Cases File
@@ -796,7 +791,7 @@ table, th, td {
 
 ### Running Test Suites
 
-The following steps guide you on how to run a batch test on your bot and get a detailed analytical report on the utterances based on the test results. To get started, go to **Automation > Testing > Regression Testing**, select **Batch Testing** tab.
+The following steps guide you on how to run a batch test on your bot and get a detailed analytical report on the utterances based on the test results. To get started, go to **Automation AI > Virtual Assistant > Testing > Regression Testing**, select **Batch Testing** tab.
 
 !!! note
 
@@ -857,7 +852,7 @@ You can cancel an ongoing batch test execution in either **_Published_** or **_I
 
 **Steps to Cancel an Ongoing Batch Test Execution:**
 
-1. Navigate to **Automation > Testing > Regression Testing**, select **Batch Testing** tab on the Bot Builder.
+1. Navigate to **Automation AI > Virtual Assistant > Testing > Regression Testing**, select **Batch Testing** tab on the Bot Builder.
 2. When the required test suite is running, click the **Cancel** icon.  
 <img src="../images/batch-testing-cancel-img1.png" alt="Click Cancel" title="Click Cancel" style="border: 1px solid gray; zoom:50%;"/> 
 
@@ -891,7 +886,9 @@ You cannot cancel a batch test run in the following scenarios:
 
 Running a test suite will display the results as described below.
 
-**Note:** The test case with multiple intents is considered a test case for all the intents mentioned. For example, if a test case has Intent 1 and Intent 2 as expected intents, then Intent 1 and Intent 2 are shown as covered in the batch test summary.
+!!! Note
+
+    The test case with multiple intents is considered a test case for all the intents mentioned. For example, if a test case has Intent 1 and Intent 2 as expected intents, then Intent 1 and Intent 2 are shown as covered in the batch test summary.
 
 Each test run creates a test report record and displays a summary of the test result. The batch test result in the screenshot below includes the following information:
 
@@ -929,6 +926,7 @@ To get a detailed analysis of the test run, click **the Download** icon to downl
     * **wordCoverage**
     * **suggestionsCount**
     * **pathCoverage**
+
 * **Last Tested:** Date of the latest test run for developer-defined utterances.
 * **Utterance Count:** Total number of utterances included in the test run.
 * **Success/Failure Ratio:** Total number of successfully predicted utterances divided by the total count of utterances multiplied by 100.
@@ -957,6 +955,7 @@ The report also provides detailed information on each of the test utterances and
     * if the order for all expected entities is provided, then the same is included in this column
     * if no order is provided, the system determined order will be included in the column
     * If an order is provided for some entities, then a combination of user-defined order and system-defined order will be included
+
 * **Matched Intent’s Score** – For False Positives and False Negatives, the confidence scores from FM, ML, and/or KG engines are displayed for the matched intent from the utterance. Note that the scores are given only if the engine detects the intent, which means that you may not see the scores from all three engines at all times.
 * **Expected Intent’s Score** – For False Positives, the confidence scores for the intent expected to match for the given utterance is given. Again the score will be given by the engines detecting the intent.
 

@@ -110,7 +110,7 @@ The platform supports the following agent transfer integrations.
 
 The following limitations apply to all supported agent transfers and the XO Platform integration:
 
-* Attachments are not supported for any agent transfer through any third-party integrations.
+* Currently, the attachments are only supported for ServiceNow integration.
 * Sharing end-user details with agents is not directly supported. For example, populating the customer (end-user) information directly on _ServiceNow_ is not supported.
 * There is no in-built provision for customers to end the conversation/chat with the agent.
 
@@ -137,3 +137,93 @@ Steps to delete a configured agent transfer integration:
 2. Click **Proceed** to delete.
 
     <img src="../images/agent-transfer-integrations-img2-delete-agent-confirmation.png" alt="Delete agent" title="Delete agent" style="border: 1px solid gray;zoom:80%;">
+
+
+
+
+
+
+
+
+
+## Attachment Sharing with Live Agent
+
+Users can now send files to agents during conversations. This improves communication and helps solve issues faster. This feature is currently available only for ServiceNow agent integration.
+
+The user and agent can share multiple files up to 25 MB each in over 22 file formats. The user and agent can download attachments up to five times within forty-eight hours of sharing.
+
+!!! note
+
+    Currently, this feature is available only with ServiceNow (Tokyo, Utah, and Vancouver) agent integration with the mobile SDK channel. 
+
+
+### Supported File Formats
+
+The VA supports sharing the following file formats.
+
+
+<table>
+  <tr>
+   <td><strong>Category</strong>
+   </td>
+   <td><strong>File Formats</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Document Formats
+   </td>
+   <td>.pdf, .doc, .docx, .txt, .xml
+   </td>
+  </tr>
+  <tr>
+   <td>Spreadsheet Formats
+   </td>
+   <td>.xls, .xlsx, .csv
+   </td>
+  </tr>
+  <tr>
+   <td>Presentation Formats
+   </td>
+   <td>.ppt, .pptx
+   </td>
+  </tr>
+  <tr>
+   <td>Image Formats
+   </td>
+   <td>.jpg, .jpeg, .png, .gif
+   </td>
+  </tr>
+  <tr>
+   <td>Archive Formats
+   </td>
+   <td>.zip, .rar
+   </td>
+  </tr>
+  <tr>
+   <td>Audio Formats
+   </td>
+   <td>.mp3, .wav
+   </td>
+  </tr>
+  <tr>
+   <td>Video Formats
+   </td>
+   <td>.mp4, .avi
+   </td>
+  </tr>
+  <tr>
+   <td>Web Formats
+   </td>
+   <td>.html, .htm
+   </td>
+  </tr>
+</table>
+
+
+
+### Enable Attachment Sharing
+
+
+To enable attachment sharing for Tokyo, see [Enable Attachment Sharing with Live Agent](../agents/servicenow/configuring-the-servicenow-agent.md#enable-attachment-sharing-with-live-agents).
+
+To enable attachment sharing for Utah and Vancouver, see [Enable Attachment Sharing with Live Agent](../agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md#enable-attachment-sharing-with-live-agents).

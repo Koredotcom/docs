@@ -26,7 +26,7 @@ Here is the overall usage process for Digital Forms within the XO Platform
 
 * **Form Creation**: Define a Digital Form by adding components and configuring their properties.
 * **Form Invocation**: Forms are invoked from inside a task or process:
-   * A form is included as a component in the task. The dialog task offers a Form Experience and Conversation Experience based on the channel of interaction. Learn more by reading about the [Form Node](../../dialogs/node-types/working-with-the-form-node/{:target="_blank"}.
+   * A form is included as a component in the task. The dialog task offers a Form Experience and Conversation Experience based on the channel of interaction. Learn more by reading about the [Form Node](../../dialogs/node-types/working-with-the-form-node/){:target="_blank"}.
    * A Digital Form is added to a Digital View with a dialog task triggered when a form is submitted from there.
 
 * **Form Submission**: When it is submitted, the component values are validated and any errors are highlighted. Based on the mode of invocation, post successful validation:
@@ -69,17 +69,902 @@ To create forms, follow the steps below:
    
     Once enabled, the Platform will replace the user input with a unique random system-generated alphanumeric value in all the modules. Also, the **Secure Form** icon and a tip will be displayed, notifying the user that the form is secure.
 
-    <img src="../../images/secure-form-icon.png" alt="secure form icon" title="secure form icon" style="border: 1px solid gray; zoom:75%;"></li>
+    <img src="../../images/secure-form-icon.png" alt="secure form icon" title="secure form icon" style="border: 1px solid gray; zoom:75%;">
 
-7. Click **Save & Proceed**.
+    Secure Form feature ensures data security at form level. You can achieve securing data at component level too. [Read here](../configure-digital-forms/#form-editor){:target="_blank"} to know more.
 
-    <img src="../../images/save-digital-form.png" alt="save digital form" title="save digital form" style="border: 1px solid gray; zoom:75%;"></li></ol>
+7. **Pre-Processor script**—The Pre-Processor script in the form settings can be used by the developer to manipulate all the data required for the form that cannot be customized from the UI design view.
+
+    For example, in the case of a multilingual bot, the user can customize the form UI  & standard responses of the components in the digital form so that they appear based on the selected bot language. 
+
+    Moreover, you can provide dynamic variables to replace the static content in the pre-processor script for use in the form using environment, content, and context variables.
+
+    The platform processes and resolves the pre-processor script as the first step in the form node execution. The same can be seen in the debug log. As part of this, the updated definition from the pre-processor script is passed to webUI to render the form.
+
+    **Example:**
+
+    Suppose you want to change the standard response of a field of URL type in a digital form based on the bot language. You have added English, Spanish, German, and Japanese as your bot languages.
+
+    ```
+    let formDef = koreUtil.getFormDefinition();
+    if(context.currentLanguage === 'en'){
+        formDef.formMsgMeta.URL_INVALID_FORMAT = 'Invalid URL';
+    }
+    elseif(context.currentLanguage === 'de'){
+        formDef.formMsgMeta.URL_INVALID_FORMAT = 'ungültige URL';
+    }
+    elseif(context.currentLanguage === 'es'){
+        formDef.formMsgMeta.URL_INVALID_FORMAT = 'URL invalida';
+    }
+    else{
+        formDef.formMsgMeta.URL_INVALID_FORMAT = '無効なURL';
+    }
+    ```
+
+    <img src="../../images/xop-8553-pre-processor-script.png" alt="Digital form - Pre processor script" title="Digital form - Pre processor script" style="border:1px solid gray; zoom:60%;">
+
+    !!! Note
+
+        * This field will be available **only while updating** the form and not at the creation time.
+        * Defining a pre-processor script is **not mandatory**. The default standard responses will always be present.
+        * This feature is available **only for Automation AI**.
+
+    Please click here to learn more about the digital form’s pre-processor script.
+
+8. Click **Save & Proceed**.
+
+    <img src="../../images/save-digital-form.png" alt="save digital form" title="save digital form" style="border: 1px solid gray; zoom:75%;">
+
+
+### Configuration setup using Pre-Processor script
+
+Earlier, our digital forms can be created only in one language and hence multiple forms need to be created to provide the flexibility to render the forms in different languages for multi lingual bot. Also the  messages and errors were  available only in English and cannot be customized. This posed a limitation as it didn't support all bot languages. Additionally, users lacked the ability to customize the forms using the dynamic data from context.
+
+The pre-processor script has been introduced to counter the above limitations. You can provide values to the relevant keys based on the bot language or any other condition that requires customization of aspects like field labels or standard responses.
+
+To get the form definition that is provided as a response in the `koreUtil.getFormDefinition` and keys that need to be customized, refer to the digital form's **JSON view**. Navigate to **Automation AI > Virtual Assistant > Digital Skills > Digital forms** and open the form that you wish to configure. Click **Test** on the Form Design view, then select the **JSON** tab.
+
+<img src="../../images/xop-8553-json-preview.png" alt="Digital Form Preview - JSON" title="Digital Form Preview - JSON" style="border:1px solid gray; zoom:60%;">
+
+The pre-processor script allows you to:
+
+* Make Language specific customizations
+* Populate Dynamic data from external sources (Eg: data file or API)
+* Populate Dynamic data using variables
+* Pre-fill the form with static or dynamic data (default value using value or context variable)
+
+!!! Important
+
+    Remember that you must create a form definition object using `koreUtil.getFormDefinition` before adding any code to customize any field’s property or standard response. This object consists of the form meta, form components & form messages. Make sure that this is the first line in your javascript code, with the syntax:
+
+    ```
+    let formDef = koreUtil.getFormDefinition();
+    ```
+
+The below sections contain the keys that you may need to manipulate:
+
+* **Components**: for field and form level customizations like Form Header, Description, Field Names, Descriptions, Default Text, Validation rules etc.
+* **formMsgMeta**: for customizing Standard Messages and Standard Error Responses
+
+!!! Tip
+
+    The entire JSON is usually large, and it may be a challenge to find out the keys that need to be manipulated. You may consider copying the entire JSON, pasting it in any JSON Viewer application wherein you can collapse and expand the sections. You can expand only the **components** and **formMsgMeta** sections for convenience.
+
+    <img src="../../images/xop-8553-json-sections-collapsed.png" alt="Components and Metadata sections in the JSON viewer" title="Components and Metadata sections in the JSON viewer" style="border:1px solid gray; zoom:60%;">
+
+#### Components
+
+The **Components** section is a container for all the fields on the form and the keys that can be manipulated in the pre-processor script for customization.
+
+Upon expanding the **components** section, which appears as an array in the JSON viewer, you see an indexed sub-sections that indicates the number of fields in the form. For example, the components section in the below screenshot shows that there are 12 fields in the form.
+
+<img src="../../images/xop-8553-components.png" alt="JSON - Components section" title="JSON - Components section" style="border:1px solid gray; zoom:70%;">
+
+You can see any field’s keys and their values by expanding the sub-section, and then expanding **metaData**. Usually the index of sub-sections represents the sequence of the fields on the form.
+
+<img src="../../images/xop-8553-expanded-sub-section.png" alt="JSON - Component sub section expanded" title="JSON - Component sub section expanded" style="border:1px solid gray; zoom:70%;">
+
+You can customize the properties of a field by referencing it using its index number within the array using the below syntax:
+
+```
+formDef.components[<<index>>].metaData.<<keyName>> = '<<value>>';
+```
+**Example:** to customize the **displayName** of the first field in the form, below is the code:
+
+```
+formDef.components[0].metaData.displayName = '名前';
+```
+
+Here’s a list of keys and their purpose:
+
+<table border="1">
+<tr>
+   <td><strong>Key</strong>
+
+   </td>
+   <td><strong>Form Setting</strong>
+
+   </td>
+   <td><strong>Purpose</strong>
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.displayName
+
+   </td>
+   <td>Display Name
+
+   </td>
+   <td>The field name visible to the user
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.placeHolder
+
+   </td>
+   <td>Placeholder
+
+   </td>
+   <td>The text pre-populated in the field, but is not captured as field data
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.toolTip
+
+   </td>
+   <td>Tooltip Text
+
+   </td>
+   <td>The tooltip text associated with the field
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.isVisible
+
+   </td>
+   <td>Is visible
+
+   </td>
+   <td>To change the visibility setting; it can be true or false.
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.required
+
+   </td>
+   <td>Required
+
+   </td>
+   <td>To establish whether the field is a mandatory one
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.defaultvalueInput
+
+   </td>
+   <td>Default Value
+
+   </td>
+   <td>To provide a default value to the field
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.validateOn
+
+   </td>
+   <td>Validate
+
+   </td>
+   <td>To mention the event that would trigger validation. Can be onChange or onBlur.
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.description
+
+   </td>
+   <td>Description
+
+   </td>
+   <td>Description of the field
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.disabled
+
+   </td>
+   <td>Read-only
+
+   </td>
+   <td>To establish whether the field is read only.
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.options.locale.format
+<br>
+(Only for <strong>Date</strong> fields)
+
+   </td>
+   <td>Date Format and Time Format
+
+   </td>
+   <td>To choose the format of date and time
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.options.timePicker
+<br>
+(Only for <strong>Date</strong> fields)
+
+   </td>
+   <td>Time
+
+   </td>
+   <td>To show/hide the time picker within the date picker
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.options.timePicker24Hour
+<br>
+(Only for <strong>Date</strong> fields)
+
+   </td>
+   <td>Time Format
+
+   </td>
+   <td>To choose the time format between 12 Hour or 24 Hour
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.options.locale.applyLabel
+<br>
+(Only for <strong>Date</strong> fields)
+
+   </td>
+   <td>–
+
+   </td>
+   <td>The label of <strong>Apply</strong> button on the date-time picker; visible only if timePicker is set to true
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.options.locale.cancelLabel
+<br>
+(Only for <strong>Date</strong> fields)
+
+   </td>
+   <td>–
+
+   </td>
+   <td>The label of <strong>Cancel</strong> button on the date-time picker; visible only if timePicker is set to true
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.countryCode
+<br>
+(Only for <strong>Phone Number</strong> fields)
+
+   </td>
+   <td>Default Country Code
+
+   </td>
+   <td>The Default Country code Eg: +1
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.countryName
+<br>
+(Only for <strong>Phone Number</strong> fields)
+
+   </td>
+   <td>Default Country Code
+
+   </td>
+   <td>The default Country Name (Eg: United States)
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.enableDropDownSearch
+<br>
+(Only for <strong>Dropdown</strong> fields)
+
+   </td>
+   <td>–
+
+   </td>
+   <td>To establish whether search box is available in the dropdown
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.isMultiSelect
+<br>
+(Only for <strong>Dropdown</strong> and <strong>Radio Button</strong> fields)
+
+   </td>
+   <td>Multi Select
+
+   </td>
+   <td>To establish whether multiple items can be selected from the dropdown
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.minSelection
+<br>
+(Only for <strong>Dropdown</strong> fields)
+
+   </td>
+   <td>–
+
+   </td>
+   <td>To establish the minimum number of items to be selected. If metaData.isMultiSelect is <strong>false</strong>, this value will be ignored.
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.maxSelection
+<br>
+(Only for <strong>Dropdown</strong> fields)
+
+   </td>
+   <td>–
+
+   </td>
+   <td>To establish the maximum number of items that can be selected. Works only if metaData.isMultiSelect is <strong>true.</strong>
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.values
+<br>
+(Only for <strong>Dropdown</strong> and <strong>Radio Button</strong> fields)
+
+   </td>
+   <td>Dropdown values
+
+   </td>
+   <td>An array containing the items in the dropdown. Every item is represented by an index number.
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.values[&lt;<index>>].value
+<br>
+(Only for <strong>Dropdown</strong> and <strong>Radio Button</strong> fields)
+
+   </td>
+   <td>Dropdown values > Edit Values > Value
+
+   </td>
+   <td>The dropdown item
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.values[&lt;<index>>].selected
+<br>
+(Only for <strong>Dropdown, Checkbox</strong> and <strong>Radio Button</strong> fields)
+
+   </td>
+   <td>Dropdown values > Edit Values > Default
+
+   </td>
+   <td>To establish whether the dropdown item is selected by default
+
+   </td>
+  </tr>
+  <tr>
+   <td>metadata.toggleDefaultValue
+<br>
+(Only for <strong>Toggle</strong> fields)
+
+   </td>
+   <td>–
+
+   </td>
+   <td>Default state of the toggle, can be <strong>true</strong> or <strong>false</strong>
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.toggleEnabledValue
+<br>
+(Only for <strong>Toggle</strong> fields)
+
+   </td>
+   <td>Value > Yes
+
+   </td>
+   <td>Value to be read by platform if the toggle is enabled
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.toggleDisabledValue
+<br>
+(Only for <strong>Toggle</strong> fields)
+
+   </td>
+   <td>Value > No
+
+   </td>
+   <td>Value to be read by platform if the toggle is disabled
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.minRange
+<br>
+(Only for <strong>Range Slider</strong> fields)
+
+   </td>
+   <td>Value > Min
+
+   </td>
+   <td>Minimum value of the range slider
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.maxRange
+<br>
+(Only for <strong>Range Slider</strong> fields)
+
+   </td>
+   <td>Value > Max
+
+   </td>
+   <td>Maximum value of the range slider
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.defaultvalueInput
+<br>
+(Only for <strong>Range Slider</strong> fields)
+
+   </td>
+   <td>Default value
+
+   </td>
+   <td>Default value of the range slider
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.buttonAction
+<br>
+(Only for <strong>Button</strong> component)
+
+   </td>
+   <td>Button Action
+
+   </td>
+   <td>The action triggered on clicking the button. Can be <strong>submit, cancel, reset or goToUrl</strong>
+
+   </td>
+  </tr>
+  <tr>
+   <td>metaData.url
+<br>
+(Only for <strong>Button</strong> component)
+
+   </td>
+   <td>URL
+
+   </td>
+   <td>URL to navigate to when user clicks the button if Button Action is goToUrl.
+
+   </td>
+  </tr>
+</table>
+
+#### formMsgMeta
+
+The formMsgMeta section contains the keys that contain the Standard Responses and Error Messages. If you want to customize these messages and responses, or customize them based on the VA’s language, you can do so in the pre-processor script by manipulating the values of these keys.
+
+These messages and responses cannot be customized from the form design UI. The pre-processor script provides you the required mechanism to create status or dynamic responses based on your requirements.
+
+Upon expanding the **formMsgMeta** section, you can see the keys that you can customize.
+
+<img src="../../images/xop-8553-formmsgmeta-keys.png" alt="Digital Form JSON - formMsgMeta Keys"title="Digital Form JSON - formMsgMeta Keys" style="border:1px solid gray; zoom:70%;">
+
+!!! Note
+
+    You will need to set useFormMsgMeta to **yes** to ensure that the customized formMsgMeta values are passed on to WebUI for rendering the form. This is an optional key, but not mentioning it will make the form display the system default responses and error messages.
+
+    The syntax to set it is `formDef.formMsgMeta.useFormMsgMeta = 'yes';`
+
+The syntax to provide value to a key of the formMsgMeta section is `formDef.formMsgMeta.<<KEY>> = '<<value>>';`
+
+The response message customizations are at the form level, that is, a response message of a particular nature will be applicable to all the fields across the form. For example, the customized response message for invalid URL will be the same for all the fields of URL type within the form.
+
+**Example:** Suppose you want to customize the system response for mandatory fields. The default system response is ‘This field is required’, but you want the response to be ‘This is a mandatory field; please provide a value’. This is how you can do it:
+
+```
+formDef.formMsgMeta.FIELD_MANDATORY = 'This is a mandatory field; please provide a value';
+```
+
+Here’s a list of keys and their purpose:
+
+<table border="1">
+  <tr>
+   <td><strong>Key</strong>
+   </td>
+   <td><strong>Purpose</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FIELD_MANDATORY
+   </td>
+   <td>Response message if no data is provided in a mandatory field
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FIELD_INVALID_FORMAT
+   </td>
+   <td>Response message if the data provided in the field is not valid.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.URL_INVALID_FORMAT
+   </td>
+   <td>Response message if the url entered in the field is of invalid format.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FIELD_TOO_LONG
+   </td>
+   <td>Response message if the data entered in the field exceeds the maximum permitted length..
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FIELD_TOO_SHORT
+   </td>
+   <td>Response message if the data entered in the field falls below the required minimum length.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.EMAIL_INVALID_FORMAT
+   </td>
+   <td>Response message if the data entered in an Email type field in invalid format.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.ERROR_PREVIEW
+   </td>
+   <td>Response message if error occurs in preview.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.ERROR_DOWNLOAD_ATTACHMENT
+   </td>
+   <td>Response message if error occurs while downloading attachment.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FILE_SIZE_EXCEED
+   </td>
+   <td>Response message if file size exceeds the maximum limit.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FILE_UPLOAD_EXISTING
+   </td>
+   <td>Response message if the file has already been uploaded.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FILE_UPLOAD_ERROR
+   </td>
+   <td>Response message if error occurs while uploading a file.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FILE_TYPES_SUPPORTED
+   </td>
+   <td>Response message if user tries to upload a file of unsupported type.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.INVALID_PHONE_NUMBER
+   </td>
+   <td>Response message if user enters an invalid phone number in a field of Phone Number type.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.ERROR_PROCESS_APP.PUBLISH
+   </td>
+   <td>Response message when process app is not published
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.ERROR_PROCESS_APP.EXPIRE_INVALID
+   </td>
+   <td>Response message when the process app being accessed has expired or is invalid.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_DISCARD.CONFIRM
+   </td>
+   <td>Header text of the popup that appears on discarding a form
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_DISCARD.DESC
+   </td>
+   <td>Text within the popup that appears on discarding the form
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_DISCARD.SUBMIT
+   </td>
+   <td>Caption of the ‘Confirm’ button of the popup. Confirms the action.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_DISCARD.CLOSE
+   </td>
+   <td>Caption of the ‘Close’ button of the popup. Closes the popup without discarding the form.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_SUBMISSION_CONFIRMATION.HEADER
+   </td>
+   <td>Header text of the popup that appears on submitting a form
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_SUBMISSION_CONFIRMATION.DESC
+   </td>
+   <td>Text within the popup that appears on submitting the form
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_SUBMISSION_CONFIRMATION.CLOSE
+   </td>
+   <td>Caption of the ‘Confirm’ button of the popup. Confirms the action.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_SUBMISSION_CONFIRMATION.CONFIRM
+   </td>
+   <td>Caption of the ‘Close’ button of the popup. Closes the popup without submitting the form.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_SUBMISSION_FAILED
+   </td>
+   <td>Message that is displayed when form submission fails
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_LINK_EXPIRY
+   </td>
+   <td>Message that is displayed when the form link expires.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_CANCEL
+   </td>
+   <td>Message that is displayed when the form is canceled.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.DROPDOWN_MESSAGE
+   </td>
+   <td>Message displayed on dropdown
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_LOADING
+   </td>
+   <td>Message displayed when the form is loading
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_DATE_PICKER.FORMAT
+   </td>
+   <td>The format in which the date entered in the date picker will be saved
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_DATE_PICKER.CONFIRM
+   </td>
+   <td>Caption of the Confirm button on date picker
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_DATE_PICKER.CANCEL
+   </td>
+   <td>Caption of the Cancel button of the date picker
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_DATE_PICKER.DAYS_OF_WEEK[ ]
+   </td>
+   <td>Array containing the names of weekdays. They can be customized using the array index based on language or which day does the user want to be the start of the week on the form.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_DATE_PICKER.MONTHS[ ]
+   </td>
+   <td>Array containing the names of months.
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_DATE_PICKER.TIME
+   </td>
+   <td>Caption of the ‘Time’ part of date picker
+   </td>
+  </tr>
+  <tr>
+   <td>formDef.formMsgMeta.FORM_SUBMIT_SUCCESS
+   </td>
+   <td>Message displayed when form submission is successful
+   </td>
+  </tr>
+  <tr>
+   <td>formDef.formMsgMeta.FORM_SUBMIt_FAILURE
+   </td>
+   <td>Message displayed when form submission fails
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_CLOSE_MESSAGE
+   </td>
+   <td>Message displayed when form is closed
+   </td>
+  </tr>
+  <tr>
+   <td>formMsgMeta.FORM_CLOSE_BUTTON
+   </td>
+   <td>Caption of the Form Closing button
+   </td>
+  </tr>
+</table>
+
+The below use cases explain the steps to make various customizations using the pre-processor script. The digital form to gather data for opening a bank account is being used as an example. Japanese and German languages have been added to the VA.
+
+<img src="../../images/xop-8553-case-study-form.png" alt="formMetaData - Case study form" title="formMetaData - Case study form" style="border:1px solid gray; zoom:70%;">
+
+#### Use Case 1: Language specific customizations
+
+**Components:**
+
+Suppose you want to customize the display names of the Name and Date of Birth fields based on the selected VA language.
+
+Since these are the first two fields on the form, their index values are 0 and 1, respectively.
+
+Below is the code to customize the display names:
+
+```
+let formDef = koreUtil.getFormDefinition();
+if(context.currentLanguage === 'en'){
+   	formDef.components[0].metaData.displayName = 'Name';
+formDef.components[1].metaData.displayName = 'Date of Birth';
+}
+else if(context.currentLanguage=== 'de'){
+	formDef.components[0].metaData.displayName = 'Name';
+formDef.components[1].metaData.displayName = 'Geburtsdatum';
+}
+else{
+	formDef.components[0].metaData.displayName = '名前';
+formDef.components[1].metaData.displayName = '生年月日';
+}
+```
+
+Let’s assume that currently the VA language is Japanese. This is how the form would look in the run-time:
+
+<img src="../../images/xop-8553-form-fields-in-japanese.png" alt="formMetaData - Customized field labels" title="formMetaData - Customized field labels" style="border:1px solid gray; zoom:70%;">
+
+**formMsgMeta:**
+
+Suppose you want to customize the standard response for mandatory fields based on the VA language. Below is the pre-processor script for that:
+
+```
+let formDef = koreUtil.getFormDefinition();
+if(context.currentLanguage === 'en'){
+    formDef.formMsgMeta.FIELD_MANDATORY = 'This is a mandatory field. Please provide a value';
+}
+else if(context.currentLanguage === 'de'){
+    formDef.formMsgMeta.FIELD_MANDATORY = 'Dies ist ein Pflichtfeld. Bitte geben Sie einen Wert ein';
+}
+else{
+    formDef.formMsgMets.FIELD_MANDATORY = 'これは必須フィールドです。値を入力してください';
+}
+```
+
+This is how the standard message would look if the bot language is Japanese:
+
+<img src="../../images/xop-8553-field-level-standard-response-japanese.png" alt="formMetaData - Customized field level response messages" title="formMetaData - Customized field level response messages" style="border:1px solid gray; zoom:70%;">
+
+#### Use case 2: Dynamically generating form text and data using Variables
+
+**Component**
+
+Suppose you want to ask the user’s name and pre-fill it in the form fields and labels. In this example, the user’s name is captured in an entity node, and that name is used to: 
+
+* Pre-fill the **name** field
+* Personalize the labels of the other fields
+
+<img src="../../images/xop-8553-creating-context-var.png" alt="Component - Creating context variable" title="Component - Creating context variable" style="border:1px solid gray; zoom:70%;">
+
+You can use the value captured in the entity node using the context variable in the pre-processor script to pre-populate the **Name** field using the below code:
+
+```
+formDef.components[0].metaData.defaultvalueInput = context.entities.entName;
+```
+
+This is how it would look at the time of run:
+
+<img src="../../images/xop-8553-enter-name-open-account.png" alt="Component - Getting the value for context variable through entity node" title="Component - Getting the value for context variable through entity node" style="border:1px solid gray; zoom:70%;">
+
+<img src="../../images/xop-8553-name-field-pre-populated-using-variable.png" alt="Component - Pre-populating field using context variable" title="Component - Pre-populating field using context variable" style="border:1px solid gray; zoom:70%;">
+
+To personalize the labels of other fields like Date of Birth, Phone Number, Email etc. as well, you can add the below code to manipulate the **displayName**:
+
+```
+formDef.components[1].metaData.displayName = context.entities.entName + ''s Date of Birth';
+formDef.components[2].metaData.displayName = context.entities.entName + ''s Phone Number';
+formDef.components[3].metaData.displayName = context.entities.entName + ''s E-Mail';
+formDef.components[4].metaData.displayName = context.entities.entName + ''s Address for Correspondence';
+```
+
+This is how it would look at run time:
+
+<img src="../../images/xop-8553-field-labels-customized-using-variable.png" alt="Component - Field labels customized using context variable" title="Component - Field labels customized using context variable" style="border:1px solid gray; zoom:70%;">
+
+**formMsgMeta:**
+
+Suppose, in addition to personalizing the field labels and pre-filling the Name field, you want to personalize the form’s Response Message text for Mandatory fields by adding the user’s name so that it becomes **<&lt;User’s Name>>, this is a mandatory field. Please provide a value**. You can achieve this by adding the below code:
+
+```
+formDef.formMsgMeta.useFormMsgMeta = 'yes';
+formDef.formMsgMeta.FIELD_MANDATORY = context.entities.entName + ', this is a mandatory field. Please provide a value.';
+```
+
+This is how it would look at run time:
+
+<img src="../../images/xop-8553-response-message-customized-using-variable.png" alt="Component - Field lelel response customized using context variable" title="Component - Field level response customized using context variable" style="border:1px solid gray; zoom:70%;">
+
+#### Use Case 3: Dynamically generating form data from external sources
+
+You can use external sources of data, like data tables, data fetched from API etc to dynamically generate form data.
+
+The syntax to do that is:
+
+```
+var resultSet = context.<<NameOfService>>.response.body.queryResult;
+for (var i=0; i<resultSet.length; i++) {
+	formDef.components[<<componentIndex>>].metaData.<<keyName>> = context.<<NameOFService>>.response.body.queryResult[i].<<AttributeName>>
+}
+```
+
+Please note that in such scenarios you will need to add a service node prior to the digital form node, that will fetch the data to be used for dynamically generating the form data.
 
 ### Add Components
 
 Once you configure the basic details for your form, the Platform takes you to the form builder, where you can add the components you require.
 
-You can drag and drop the components available on the left pane to the canvas and configure their properties to build the form. For details of the available components & their properties.
+You can drag and drop the components available on the left pane to the canvas and configure their properties to build the form. For details of the available components & their properties [see here](../configure-digital-forms/#form-editor){:target="_blank"}.
 
 <img src="../../images/drag-component.gif" alt="Drag and drop component" title="Drag and drop component" style="border: 1px solid gray; zoom:75%;">
 
@@ -444,6 +1329,10 @@ Following is a list of the available components.
 * **Date** – Used for date entries, gives a date picker for the user to choose the date.
 
     <img src="../../images/date-calendar.png" alt="date" title="date" style="border: 1px solid gray; zoom:75%;">
+
+    **Note** : The Date picker displays the month and week names in Japanese characters if the VA language is Japanese. This support will be extended to more languages in the future.
+
+    <img src="../../images/digital-forms-date-picker-japanese.png" alt="date picker - Japanese" title="date picker - Japanese" style="border: 1px solid gray; zoom:75%;">
 
 * **Date & Time** – Used for date & time entries. The system displays a date and time picker for the user to choose the date and time.
 Use the **Date component** and set the _Time option_ to _yes_; choose from _12_ or _24-hour_ format.

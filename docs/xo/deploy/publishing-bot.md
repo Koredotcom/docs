@@ -1,4 +1,4 @@
-# Publishing your Bot
+# Publishing your VA
 
 End users can interact with a VA only when it is published. The Kore.ai Experience Optimization Platform provides a publishing flow to allow administrators to review new VAs and updates before they are made available to end users. The publishing workflow applies to any component that impacts the end user.
 
@@ -20,7 +20,7 @@ You can switch between the two states using the drop-down on the top left side o
 
 <img src="../images/publish-bot-img1.png" alt="Switch between statuses" title="Switch between statuses" style="border: 1px solid gray; zoom:70%;">
 
-If your bot is trained in one or more languages that use NLP Version 2, you will see a banner notifying you about the upcoming[ auto-upgrade to NLP Version 3](../../automation/natural-language/training/optimizing-bots/#nlp-version-3){:target="_blank"}.
+If your VA is trained in one or more languages that use NLP Version 2, you will see a banner notifying you about the upcoming[ auto-upgrade to NLP Version 3](../../automation/natural-language/training/optimizing-bots/#nlp-version-3){:target="_blank"}.
 
 
 ## Component Statuses
@@ -123,7 +123,7 @@ Every component that impacts end-user interactions or experience goes through th
    <td>NL Model
    </td>
    
-   <td>The NL Model lets you publish only the NLP training data of specific intents without publishing the task definitions. When multiple users are working on a virtual assistant (VA), Bot developers or NLP trainers can independently publish their work without impacting the bot definitions of other users.
+   <td>The NL Model lets you publish only the NLP training data of specific intents without publishing the task definitions. When multiple users are working on a virtual assistant (VA), Bot developers or NLP trainers can independently publish their work without impacting the VA definitions of other users.
     <br>
     For example, an NLP trainer might modify an utterance to correct some issue in a dialog task. In this case, the NLP trainer would like to publish only the training data without including the task definition.
     <br>
@@ -340,9 +340,9 @@ When you publish a VA or any of its components, the Platform initiates a request
 
 Admins can set up auto-approval for any updates made to Enterprise or Consumer VAs using the following steps:
 
-1. Open the Xo Platform Admin Console at: [https://bots.kore.ai/admin](https://bots.kore.ai/admin){:target="_blank"}.
+1. Open the Xo Platform Admin Console at: [https://platform.kore.ai/admin](https://platform.kore.ai/admin){:target="_blank"}.
 2. Go to **Bots Management > Consumer Bots** or **Bots Management > Enterprise Bots**.
-3. Click the more icon for the required bot and select **Bot Settings**.
+3. Click the more icon for the required VA and select **Bot Settings**.
 
     <img src="../images/publish-bot-img6.png" alt="Bot settings" title="Bot settings" style="border: 1px solid gray; zoom:70%;">
 

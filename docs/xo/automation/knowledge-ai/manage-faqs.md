@@ -2,10 +2,9 @@
 
 FAQs allow you to add question-answer sets to your Knowledge Graph and map them to related ontology terms. This feature improves intent recognition and increases the performance of your VA.
 
-<div class="admonition warning">
-<p class="admonition-title">Important</p>
-<p>There is a limit of 50k FAQs over 20k nodes to avoid performance issues.</p>
-</div>
+!!! Warning "Important"
+
+    There is a limit of 50k FAQs over 20k nodes to avoid performance issues.
 
 All features explained here are supported by the Few-Shot Knowledge Graph, except for the following:
 
@@ -17,7 +16,7 @@ All features explained here are supported by the Few-Shot Knowledge Graph, excep
 ## Add FAQs
 To add an FAQ, follow the below steps:
 
-1. On the left pane of the **Knowledge Graph** window, click the node to which you want to add questions.
+1. Go to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **Manage KG** and click the node to which you want to add questions.
 2. Click **Add Intent** on the top-right.
 <img src="../images/add-faq-intent.png" alt="add faq intent" title="add faq intent" style="border: 1px solid gray; zoom:75%;">
 
@@ -25,27 +24,26 @@ To add an FAQ, follow the below steps:
 4. (Optional) Enter a **Display Name** to represent the FAQ to the end-users.
 5. In the **Add Question** field, enter the question that describes the user’s query.
 6. (Optional) If there are alternatives to the same question, add them in the **Add Alternate FAQ** field. Repeat the step for all the alternative questions you want to add.
-7. (Optional) Use patterns to define the FAQs. This can be done by preceding the pattern with || (two vertical bars) in the alternate question field. The Platform marks these as patterns and evaluates them accordingly. <a href=" https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities/" target="_blank">Learn more</a>.
+7. (Optional) Use patterns to define the FAQs. This can be done by preceding the pattern with || (two vertical bars) in the alternate question field. The Platform marks these as patterns and evaluates them accordingly. [Learn more](../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities.md){:target="_blank"}.
 8. (Optional) Add terms that enable the Knowledge Graph Engine to identify questions more effectively.
-9. (Optional) Enable or disable the **Intent Status** for the FAQ intents. The Knowledge Graph does not use the FAQs intents that are enabled. These intents do not participate in the intent recognition process during testing and end-user interaction.
+9. (Optional) Enable or disable the **Intent Status** for the FAQ intents. The Knowledge Graph does not use the FAQs intents that are disabled. These intents do not participate in the intent recognition process during testing and end-user interaction.
 10. (Optional) Enable or disable the **Term Status**. The Knowledge Graph uses only the enabled terms. The disabled terms and all their FAQ intents do not participate in the intent recognition process during testing and end-user interaction.
 11. (Optional) Add a **Reference Id**. This field is used to reference any external content used as a source for this FAQ.
 <img src="../images/add-faq-form.png" alt="add faq form" title="add faq form" style="border: 1px solid gray; zoom:75%;">
 
-As you enter these questions, pay attention to terms that you can further add to your FAQ hierarchy. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-graph-terminology/#terms-or-nodes" target="_blank">Learn more</a>.
+As you enter these questions, pay attention to terms that you can further add to your FAQ hierarchy. [Learn more](knowledge-graph-terminology.md).
 
 ## Manage Bot Responses
 
-For the FAQ Response, you can compose a simple or complex channel-specific reply. The editor is like any other prompt editor on the Platform, for example, messages for dialog nodes. <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/prompt-editor/#prompt-editor" target="_blank">Learn more</a>.
+For the FAQ Response, you can compose a simple or complex channel-specific reply. The editor is like any other prompt editor on the Platform, for example, messages for dialog nodes. [Learn more](../use-cases/dialogs/prompt-editor.md#prompt-editor){:target="_blank"}.
 
 You can add channel-specific responses to questions in your Knowledge Graph. By creating varying responses with different language and formatting options, you can leverage the dynamic responses on the selected channels. 
 
 To add a channel-specific response, select the channel from the channels list before typing the response.
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We recommend adding one response for All Channels so that it is triggered in the absence of a channel-specific response.</p>
-</div>
+!!! Note
+
+    We recommend adding one response for All Channels so that it is triggered in the absence of a channel-specific response.
 
 **Handling Lengthy Reponses and Improving Readability**
 
@@ -61,9 +59,9 @@ When the Knowledge Graph you are trying to build is large and complex, it's impo
 
 Adding FAQs from an existing source is the most effective method to implement in this case. The different ways to accomplish this include the following:
 
-* Use the Knowledge Graph Generator to generate Knowledge Graph from a FAQ list and import it to your VA. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/generate-a-knowledge-graph/" target="_blank">Learn more</a>.
-* Select the **Import** option to import a Knowledge Graph exported from another VA. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/import-and-export-knowledge-graph/#import" target="_blank">Learn more</a>.
-* Leverage an existing list of Q&As from **Knowledge Extraction** to populate the Questions and Responses. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-extraction/" target="_blank">Learn more</a>.
+* Use the Knowledge Graph Generator to generate Knowledge Graph from a FAQ list and import it to your VA. [Learn more](generate-a-knowledge-graph.md){:target="_blank"}.
+* Select the **Import** option to import a Knowledge Graph exported from another VA. [Learn more](import-and-export-knowledge-graph.md#import){:target="_blank"}.
+* Leverage an existing list of Q&As from **Knowledge Extraction** to populate the Questions and Responses. [Learn more](knowledge-extraction.md){:target="_blank"}.
 
 ## Move FAQs Between Nodes
 
@@ -86,4 +84,3 @@ The demo below shows you how this works.
 <img src="../images/edit-delete-faq-responses.png" alt="edit or delete faq responses" title="edit or delete faq responses" style="border: 1px solid gray; zoom:75%;">
 Selecting multiple intents lets you delete them in bulk.
 <img src="../images/delete-multiple-intents.png" alt="delete selected intents" title="delete selected intents" style="border: 1px solid gray; zoom:75%;">
-

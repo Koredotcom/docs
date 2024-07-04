@@ -2,88 +2,21 @@
 
 To retrieve the self reported status (available, busy, away, etc.) and ACD status (interacting, idle) of every agent for each bucket in the given time interval.
 
-<table>
-  <tr>
-   <td>Method
-   </td>
-   <td>POST
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoint
-   </td>
-   <td><code>https://{{host}}/agentassist/api/public/analytics/1.1/account/</code>
-<code>{{accountId}}//userstatus</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>SmartAssist Analytics
-   </td>
-  </tr>
-</table>
+| **Method**       | POST                                                          |
+|--------------|---------------------------------------------------------------|
+| **Endpoint**     | `https://{{host}}/agentassist/api/public/analytics/1.1/account/{{accountId}}//userstatus` |
+| **Content Type** | `application/json`                                            |
+| Authorization| `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
+| **API Scope**    | SmartAssist Analytics                                         |
 
 ## Query Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Host
-   </td>
-   <td>The Environment URL. For example, https://bots.kore.ai
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>accountId
-   </td>
-   <td>The accountId
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>limit
-   </td>
-   <td>Number of agents to be displayed in the response.
-Default: 50
-Example: 50
-   </td>
-   <td>Integer, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>offset
-   </td>
-   <td>Number of response documents needed to be skipped.
-Default: 0
-   </td>
-   <td>Integer, Optional
-   </td>
-  </tr>
-</table>
+| **Parameter**  | **Description**                                    | **Type**        |
+|------------|------------------------------------------------|-------------|
+| Host       | The Environment URL. For example, https://platform.kore.ai | string, required |
+| accountId  | The accountId                                 | string, required |
+| limit      | Number of agents to be displayed in the response. Default: 50. Example: 50 | integer, optional |
+| offset     | Number of response documents needed to be skipped. Default: 0 | integer, optional |
 
 ## Sample Request
 
@@ -107,80 +40,15 @@ curl --location --request POST \
 
 ## Body Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>filter
-   </td>
-   <td>Object with agents and date filter as the fields. It contains the following details to filter the result set.
-   </td>
-   <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td>agents
-   </td>
-   <td>The Email Ids of the agents.
-   </td>
-   <td>String, Optional
-   </td>
-  </tr>
-  <tr>
-   <td>dateFilter
-   </td>
-   <td>Object with start date, end date, and time zone offset as the fields. It contains the following details to filter the result set.
-   </td>
-   <td>Required
-   </td>
-  </tr>
-  <tr>
-   <td>startDate
-   </td>
-   <td>The start date from which the records need to be considered.
-The date format  is :
-<code>yyyy-mm-dd</code>
-For example, <code>2022-08-25</code>
-   </td>
-   <td>Date, Required
-   </td>
-  </tr>
-  <tr>
-   <td>endDate
-   </td>
-   <td>The end date from which the records need to be considered.
-The date format  is :
-<code>yyyy-mm-dd</code>
-For example, <code>2022-08-25</code>
-   </td>
-   <td>Date, Required
-   </td>
-  </tr>
-  <tr>
-   <td>timeZoneOffSet
-   </td>
-   <td>The time zone offset.
-For example, <code>-330,630,-500</code>
-   </td>
-   <td>Number, Required
-   </td>
-  </tr>
-  <tr>
-   <td>granularity
-   </td>
-   <td>The  IS0-8601 format is the input.
-For example, <code>PT15M, PT30M, PT1H, PT2H , PT4H, PT8H, PT12H, PT24H</code>
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-</table>
+| **Parameter**    | **Description**                                                            | **Type**      |
+|--------------|------------------------------------------------------------------------|-----------|
+| filter       | Object with agents and date filter as the fields. It contains the following details to filter the result set. | Required  |
+| agents       | The Email Ids of the agents.                                           | string, optional |
+| dateFilter   | Object with start date, end date, and time zone offset as the fields. It contains the following details to filter the result set. | required  |
+| startDate    | The start date from which the records need to be considered. The date format is: `yyyy-mm-dd`. For example, `2022-08-25`. | date, required |
+| endDate      | The end date from which the records need to be considered. The date format is: `yyyy-mm-dd`. For example, `2022-08-25`. | date, required |
+| timeZoneOffSet | The time zone offset. For example, `-330,630,-500`.                     | number, required |
+| granularity  | The ISO-8601 format is the input. For example, `PT15M, PT30M, PT1H, PT2H, PT4H, PT8H, PT12H, PT24H`. | String, Required |
 
 ## Sample Response
 
@@ -1998,5 +1866,10 @@ For example, <code>PT15M, PT30M, PT1H, PT2H , PT4H, PT8H, PT12H, PT24H</code>
                             }
                         }
                     ]
-                },              
+             
+                  }, 
+            ] 
+        }  
+    ]
+}          
 ```

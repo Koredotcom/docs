@@ -1,6 +1,6 @@
 # Agent Activity Summary Report
 
-## Generating Agent Activity Summary Report
+## Generating the Agent Activity Summary Report
 
 Agent Activity Summary report is a summary of agent time by status, calculated daily.
 
@@ -20,11 +20,11 @@ Steps to generate Agent Activity Summary report:
         * CSV
     * Send To (single email address or a mailing list)
 7. Click **Create**.
-8. An instance of the **Agent Activity Summary Report** is created.
-<img src="../images/agent-activity-summary-report-created.png" alt="Agent Activity Summary Report Created" title="Agent Activity Summary Report Created" style="border: 1px solid gray; zoom:70%;">
+8. The **Agent Activity Summary Report** is generated.
+<img src="../images/agent-activity-summary-report-created.png" alt="Agent Activity Summary Report Created" title="Agent Activity Summary Report Created" style="border: 1px solid gray; zoom:100%;">
 
 9. Click the **Run** icon as shown below to generate the report.
-<img src="../images/run-report.png" alt="Run Agent Activity Summary Report" title="Run Agent Activity Summary Report" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/run-report.png" alt="Run Agent Activity Summary Report" title="Run Agent Activity Summary Report" style="border: 1px solid gray; zoom:100%;">
 
 While generating reports you have two options, Run On Demand and Schedule.
 
@@ -34,13 +34,14 @@ While generating reports you have two options, Run On Demand and Schedule.
 
 10. First, the report object is configured (as pdf) and then the report output is generated as pdf.
 Click the **PDF/Page** icon to download the report.
-<img src="../images/pdf-report-agent-activity-summary.png" alt="PDF Agent Activity Summary Report" title="PDF Agent Activity Summary Report" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/pdf-report-agent-activity-summary.png" alt="PDF Agent Activity Summary Report" title="PDF Agent Activity Summary Report" style="border: 1px solid gray; zoom:100%;">
 
-!!! Note
+    !!! Note
 
-    The red dot beside the report indicates that the report has been     generated within the last 24 hours. You can download the report and save and view it in pdf format.
+        The red dot beside the report indicates that it was generated within the last 24 hours. You can download, save, and view the report in PDF format.
+
 The Agent Activity Report is generated and is available for download.
-<img src="../images/agent-activity-summary-report-output.png" alt="Agent Activity Summary Report Output" title="Agent Activity Summary Report Output" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/agent-activity-summary-report-output.png" alt="Agent Activity Summary Report Output" title="Agent Activity Summary Report Output" style="border: 1px solid gray; zoom:100%;">
 
 ### About Report Fields
 
@@ -154,3 +155,7 @@ The Agent Activity Report is generated and is available for download.
    </td>
   </tr>
 </table>
+
+#### Related Link
+
+* [Reports List](../reports/reports-list.md)

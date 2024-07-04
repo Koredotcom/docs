@@ -123,7 +123,8 @@ The first step in the WhatsApp Messaging Channel integration is to create a GupS
 1. Log in to the [GupShup portal](https://www.gupshup.io/whatsapp/dashboard) and navigate to the **Dashboard → WhatsApp** section.
 <img src="../images/whatsapp12.png" alt="save gupshup application" title="save gupshup application" style="border: 1px solid gray; zoom:70%;">
 
-2. Click the **+ Create App** button.  <img src="../images/whatsapp13.png" alt="create gupshup app" title="create gupshup app" style="border: 1px solid gray; zoom:70%;">
+2. Click the **+ Create App** button.
+<img src="../images/whatsapp13.png" alt="create gupshup app" title="create gupshup app" style="border: 1px solid gray; zoom:70%;">
 
 
 3. On the **Create App** screen, click **Access API** to select the app type.
@@ -238,7 +239,7 @@ Once you enable **Associate an App**, you must manually select an app and config
     This channel configuration is not a part of the Bot Import/Export feature. The user should manually enable the channel for the target Bot. The integration flow remains the same even with the **App Association** feature.
 
 
-### **Messaging Templates**
+### Messaging Templates
 
 As part of the GupShup WhatsApp channel integration, the Platform supports the following Gupshup outbound message types to provide an engaging, interactive end-user experience:
 
@@ -286,7 +287,7 @@ Prior to submitting notifications through the WhatsApp Business Solution or the 
 
 The Kore.ai XO Platform supports public APIs for the integration and utilization of WhatsApp Outbound Templates on the GupShup channel. Contact(https://kore.ai/contact-us/) our experts to learn more. 
 
-### **Support for WhatsApp Pay**
+### Support for WhatsApp Pay
 
 The XO Platform supports WhatsApp Pay, a digital payment service that enables instant money transfers between banks through mobile devices using the Unified Payments Interface (UPI) system for the GupShup channel. GupShup, as a WhatsApp Business integration provider, supports outbound message types **Order Details [Text]** and **Order Status** templates, which are also supported on the XO Platform via APIs.
 
@@ -314,7 +315,17 @@ An example of a success payload is given below:
   "timestamp": "1687160320000"
 }
 ```
+### Error Response Codes
 
+The table below outlines the various error status codes that may occur when receiving incoming requests through the Gupshup Whatsapp channel:
+
+| Scenario                              | Status Code | Message                 |
+|---------------------------------------|-------------|-------------------------|
+| Authorization header is missing       | 401         | Access token not found  |
+| Authorization header is incorrect     | 401         | Invalid access          |
+| JSON request body is missing          | 500         | Internal Server Error   |
+| Invalid “streamId” in the request URL | 500         | Internal Server Error   |
+| Missing "mobile" field in the request body | 500         | Internal Server Error   |
 
 
 ## Adding the WhatsApp Channel Using Karix Application
@@ -323,7 +334,7 @@ To integrate **Karix** to your _WhatsApp Business Messaging_ channel and enable 
 
 !!! note
 
-    To complete this procedure, you must already have a _Karix _account. This is one of the messaging provider for enabling WhatsApp Business Messaging.
+    To complete this procedure, you must already have a _Karix_ account. This is one of the messaging provider for enabling WhatsApp Business Messaging.
 
 
 ### Prerequisites

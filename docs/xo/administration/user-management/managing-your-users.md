@@ -108,7 +108,7 @@ As an admin, you may need to end one or more user sessions. You can use the **Ki
 
 !!! warning
 
-        No confirmation message is displayed and the session is immediately and abruptly ended for the user.
+    No confirmation message is displayed and the session is immediately and abruptly ended for the user.
 
 
 <img src="../images/bac-users-sessions.png" alt="Sessions - User Activity" title="Sessions - User Activity" style="border: 1px solid gray;zoom:50%;"/>
@@ -141,7 +141,7 @@ The _password reset email_ sent message is displayed and an email is sent to the
 
 !!! tip
 
-        If SSO is enabled, Bots Admins can still log on to the Bots Admin Console directly using their password credentials and bypass SSO. For more information, see [Logging On Using Your Admin Password Instead of SSO](../../security-and-control/using-single-sign-on/#logging-on-using-your-admin-password-instead-of-sso){:target="_blank"}.
+    If SSO is enabled, Bots Admins can still log on to the Bots Admin Console directly using their password credentials and bypass SSO. For more information, see [Logging On Using Your Admin Password Instead of SSO](../../security-and-control/using-single-sign-on/#logging-on-using-your-admin-password-instead-of-sso){:target="_blank"}.
 
 
 #### Delete User
@@ -152,7 +152,7 @@ You can also **Delete User** from the Users page by using the **delete icon** on
 
 !!! Note
 
-        You cannot delete the Users if they are owners of the virtual assistant. You need to change the respective bot ownership to someone else in order to delete the user.
+    You cannot delete the Users if they are owners of the virtual assistant. You need to change the respective bot ownership to someone else in order to delete the user.
 
 
 ## User Settings

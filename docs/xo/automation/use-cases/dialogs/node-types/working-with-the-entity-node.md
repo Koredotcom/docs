@@ -59,8 +59,6 @@ The **Entity Type** provides the NLP Interpreter with the expected type of data 
             
             <img src="../images/entity-node-img2.png" alt="Entity node - Reorder error messages" title="Entity node - Reorder Error messages" style="border:1px solid gray;zoom:70%;">
 
-            This image corresponds to the new Dialog Builder, you will find this feature in the legacy builder at the same location: i.e. Entity node -> Component Properties.
-
 6. You can enable the **Sensitive Entity** option to redact, replace, or mask sensitive data input at the entity node level. This setting helps you secure sensitive data input during the conversation.
     
     <img src="../images/entity-node-img3.png" alt="Entity node - Sensitive entity" title="Entity node - Sensitive entity" style="border:1px solid gray;zoom:70%;">

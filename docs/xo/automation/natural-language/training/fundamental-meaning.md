@@ -122,7 +122,7 @@ For more information about best practices and tips for naming tasks and task fie
 
 #### Add Synonyms
 
-The Platform provides a set of default synonyms, pre-listed within the dedicated section (**Training** > **Synonyms**). These are only available in English, German, Spanish, French; Traditional and Simplified Chinese.
+The Platform provides a set of default synonyms, pre-listed within the dedicated section (**Training > Bot Synonyms**). These are only available in English, German, Spanish, French; Traditional and Simplified Chinese.
 
 Adding Synonyms involves using the Natural Language Training section of the XO Platform, where you can add synonyms for VA, task and entity node names. 
 
@@ -131,7 +131,7 @@ The following sections show you how to add these synonyms.
 #### Navigate to Synonyms
 
 1. Open the VA for which you want to add synonyms.
-2. From the left navigation menu and click **Natural Language** -> **Training.**
+2. From the left navigation menu and click **Natural Language > Training.**
 3. On the **Training** page, click one of the following tabs:
     * **Bot Synonyms** – Add and edit synonyms for the words in the bot or task names.
     * **Entities** – Add and edit synonyms for any words in your dialog task Entity node names.
@@ -143,7 +143,8 @@ On the **Training** page under the **Bot Synonyms** tab, you can view and add sy
 To add a bot synonym, follow the below steps:
 
 1. On the **Training** page, select the **Bot Synonyms** tab.
-<img src="../images/add-bot-synonym-select.png" alt="add synonyms" title="add synonyms" style="border: 1px solid gray; zoom:75%;">
+
+    <img src="../images/add-bot-synonym-select.png" alt="add synonyms" title="add synonyms" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **New Synonym** or use the edit icon against an existing synonym, to open the synonym page.
 3. In the **Name** field, enter the name of the word (keyword) for which you want to create synonyms.
@@ -155,6 +156,7 @@ To add a bot synonym, follow the below steps:
 #### Add Entity Synonyms
 
 On the **Training** page, on the **Entities** tab, each dialog task entity is listed with any defined synonyms for that entity name.
+
 <img src="../images/entity-tab-select.png" alt="entity tab" title="entity tab" style="border: 1px solid gray; zoom:75%;">
 
 To add synonyms for a dialog task entity, follow the below steps:

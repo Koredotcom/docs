@@ -1,6 +1,6 @@
 # NLP Settings and Guidelines
 
-This article provides you with some essential guidelines to help you optimize your workflow with the XO Platform’s NLP, and thus improve your VA’s performance. Please refer to the guidance below before before intent naming, ML training, and handling entities, concepts, and synonyms.
+This article provides you with some essential guidelines to optimize your workflow with the XO Platform’s NLP, and thus improve your VA’s performance. Please refer to the guidance below before before intent naming, ML training, and handling entities, concepts, and synonyms.
 
 ## Intent Naming Guidelines
 

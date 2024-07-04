@@ -4,7 +4,7 @@ In this help document, we will explore how a user can view his/her account detai
 
 We will also see how the Panel can be hosted on Web/Mobile Client using the Widget SDK.
 
-For details on what Digital Views are and how it is implemented on the XO Platform, click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/digital-skills/digital-views/" target="_blank">here</a>.
+For details on what Digital Views are and how it is implemented on the XO Platform, click [here](../digital-views/){:target="_blank"}.
 
 ## Illustration with an Example
 
@@ -18,8 +18,8 @@ This document gives a detailed step-by-step approach to achieving all the above-
 ## Prerequisites
 
 * Bot building knowledge
-* A <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant/" target="_blank">Banking Bot</a> with a dialog as mentioned below:
-* <a href="https://docsinternal-kore.github.io/docs/xo/how-tos/build-a-banking-assistant/design-conversation-skills/create-balance-task/" target="_blank">Get Balance</a> – Dialog task prompting the user for their Account Number and Account Type and displaying the available balance in the account.
+* A [Banking Bot](../../../../how-tos/build-a-banking-assistant/design-conversation-skills/create-a-sample-banking-assistant){:target="_blank"} with a **Get Balance** dialog as mentioned below.
+* [Get Balance](../../../../how-tos/build-a-banking-assistant/design-conversation-skills/create-balance-task/){:target="_blank"} – Dialog task prompting the user for their Account Number and Account Type and displaying the available balance in the account.
     
     <img src="../../images/get-balance-dialog-task.png" alt="get balance" title="get balance" style="border: 1px solid gray; zoom:75%;">
     
@@ -52,11 +52,12 @@ var message = {
 };
 print(JSON.stringify(message));
 ```
+
 ### Widgets Configuration
 
 You can configure the following widget types:
 
-### Dialog Task Widgets
+#### Dialog Task Widgets
 
 We will be creating two Widgets to trigger a Dialog Task.
 
@@ -64,25 +65,26 @@ We will be creating two Widgets to trigger a Dialog Task.
 
 First, let us see how to configure a Widget to display balance from the current account of the user with the steps below:
 
-1. Ensure that **Build** is selected from the top menu.
-2. From under **Digital Skills** open **Digital Views**.
-3. Click the **Create Widget** button.
-4. Give a Widget Name and a Display Name.
-5. Set the **Source**, we are triggering Dialog Task, hence select _Dialog Task_.
-* **Select Dialog Task** as _Get Balance_, as per our use case
-* In the **Entity Assignment**, set the following entities (you can select from the drop box that appears as you type) as per the Dialog Task requirement:
-    * **AccountType** to _current;_
-    * **AccountNumber** to _1_. 
+1. Navigate to **Virtual Assistant > Automation AI > Digital Skills > Digital Views**.
+2. Click the **Create Widget** button.
+3. Give a Widget Name and a Display Name.
+4. Set the **Source**, we are triggering Dialog Task, hence select _Dialog Task_.
+    * **Select Dialog Task** as _Get Balance_, as per our use case
+    * In the **Entity Assignment**, set the following entities (you can select from the drop box that appears as you type) as per the Dialog Task requirement:
 
-    You can use the **Open Dialog Task** icon, next to the select Dialog Task drop down, to open the dialog and check the entities needed.
+        * **AccountType** to _current;_
+        * **AccountNumber** to _1_. 
 
-    <img src="../../images/open-dialog-task.png" alt="open dialog task" title="open dialog task" style="border: 1px solid gray; zoom:75%;">
+        You can use the **Open Dialog Task** icon, next to the select Dialog Task drop down, to open the dialog and check the entities needed.
 
-6. **Save** the widget.
-7. **Edit** the widget and click **Run & Preview** to see the widget output.
-8. **Save as preview** will set the output as the thumbnail against the widget.
+        <img src="../../images/open-dialog-task.png" alt="open dialog task" title="open dialog task" style="border: 1px solid gray; zoom:75%;">
+
+5. **Save** the widget.
+6. **Edit** the widget and click **Run & Preview** to see the widget output.
+7. **Save as preview** will set the output as the thumbnail against the widget.
 
 **Savings Account**
+
 Repeat the above steps for Account View from _savings_ account of the same account number. 
 
 <img src="../../images/account-view.png" alt="account view" title="account view" style="border: 1px solid gray; zoom:75%;">
@@ -97,11 +99,14 @@ The Widgets thus created need to be attached to a Panel for runtime display and 
     <img src="../../images/add-panel-name.png" alt="add panel name" title="add panel name" style="border: 1px solid gray; zoom:75%;">
 
 3. Click the **Add Widget** button to open the **Panel Management** window.
+
+    <img src="../../images/panel-management.png" alt="Panel Management - Add Widget" title="Panel Management - Add Widget" style="border: 1px solid gray; zoom:75%;">
+
 4. Use the **Add Widget** to select and add the Widgets that we want to display, in this case Account Balance and Current Account widgets.
 
     <img src="../../images/add-widget-to-panel.png" alt="add widget to panel" title="add widget to panel" style="border: 1px solid gray; zoom:75%;">
 
-5. Use the **Test** button to see the widgets in action. 
+5. Click the 3-dot menu icon on the panel, and select the **Test** option from the menu to see the widgets in action. 
 
     <img src="../../images/test-widget.png" alt="test widget" title="test widget" style="border: 1px solid gray; zoom:75%;">
 
@@ -110,18 +115,19 @@ The Widgets thus created need to be attached to a Panel for runtime display and 
 We will see how to create Widgets with static JSON content. We will use a JSON to display a pie chart.
 
 1. Click **Create Panel** to create a new panel and name it **JSON Example**.
-2. Use the **more** icon and select **Panel Management**, there you will find the option to **Create Widget**. Click on that.
 
-    <img src="../../images/more-panel-management.png" alt="more panel management" title="more panel management" style="border: 1px solid gray; zoom:75%;">
+2. Use the **3-dot** icon and select **Panel Management** from the menu, there you will find the option to **Add Widget**. Click on that.
 
-3. In the **New Widget** dialog, enter the Name, and set the source to JSON.
+    <img src="../../images/panel-3-dot-menu.png" alt="3-dot menu for the new panel" title="3-dot menu for the new panel" style="border: 1px solid gray; zoom:75%;">
 
-    <img src="../../images/new-widget-data-entry.png" alt="new widget data" title="new widget data" style="border: 1px solid gray; zoom:75%;">
+    <img src="../../images/new-widget-json.png" alt="New widget - JSON" title="New widget - JSON" style="border: 1px solid gray; zoom:75%;">
 
-4. Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, click <a href="https://docsinternal-kore.github.io/docs/xo/channels/add-wigdet-sdk-channel/" target="_blank">here</a>. 
+3. Enter the following in the JavaScript Editor. This is a message template to display a pie chart with a break up for amounts spent under various heads like travel, food, and accommodation. For more on supported message templates, [refer here](../../../../sdk/widget-sdk-message-formatting-and-templates/){:target="_blank"}.
 
-```
-{     "templateType": "piechart",
+    ```
+    var message =
+    {
+      "templateType": "piechart",
       "pie_type": "regular",
       "title": "Summary",
       "description": "monthly report",
@@ -143,13 +149,18 @@ We will see how to create Widgets with static JSON content. We will use a JSON t
         }
       ]
     };
-print(JSON.stringify(message));
-```
+    print(JSON.stringify(message));
+    ```
+    
+4. Save the new widget.
+5. Click on **Create Panel** to create a new panel and name it _JSON Example_.
+6. Click the **3-dot menu** icon on the panel. Select the **Add Widget** or **Panel Management** option and add the above created _Pie Chart_ widget.
 
-<ol start="5"><li> Test the panel and you will see both the <b>Panel</b> icons.</li>
-<li>Click on each to see them in action.</li>
-<img src="../../images/test-panel.png" alt="test panel" title="test panel" style="border: 1px solid gray; zoom:75%;">
-</ol>
+    <img src="../../images/panel-3-dot-menu.png" alt="Add widget to panel" title="Add widget to panel" style="border: 1px solid gray; zoom:75%;">
+
+7. **Test** the panel and you will see the panel icons, click on each to see the widgets within them in action.
+
+    <img src="../../images/test-panel.png" alt="test panel" title="test panel" style="border: 1px solid gray; zoom:75%;">
 
 ## Publish
 
@@ -162,25 +173,29 @@ To publish the Bot first enable channels:
 
 ## Hosting
 
-We will be hosting the Panels in the web/mobile client. Click <a href="https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/kore-ai-web-sdk-tutorial/" target="_blank">here</a> for more details on the Widget SDK usage.
+We will be hosting the Panels in the web/mobile client. Click [here](../../../../app-settings/dev-tools/kore-ai-web-sdk-tutorial/){:target="_blank"} for more details on the Widget SDK usage.
 
-1. Download the Kore.ai Widget SDK, go to this <a href="https://github.com/Koredotcom/web-kore-sdk" target="_blank">link</a>, and then click **Download**.
+1. Download the Kore.ai Widget SDK, go to this [link](https://github.com/Koredotcom/web-kore-sdk){:target="_blank"}, and then click **Download**.
 2. Extract all files to the _…/SDKApp/sdk_ folder.
 3. Open the above SDK folder, and traverse to _UI_ folder.
 4. Open the `kore-config.js`
 5. Configure your `botOptions` with the ‘_web/mobile client_’ channel configurations copied  in  above  section.
+
     * `botOptions.botInfo`
     * `botOptions.clientId`
     * `botOptions.clientSecret`
+
 6. Make other changes as per your requirements.
 
     <img src="../../images/configure-bot-actions.png" alt="configure bot actions" title="configure bot actions" style="border: 1px solid gray; zoom:75%;">
 
 7. Open the `kore-widgets-config.js`
 8. Configure your `botOptionsWiz` with the ‘_Widget SDK_’ channel configurations copied  in  above  section.
+
     * `botOptionsWiz.botInfo`
     * `botOptionsWiz.clientId`
     * `botOptionsWiz.clientSecret`
+
 9. Make other changes as per your requirements.
 
     <img src="../../images/configure-bot-actions-2.png" alt="configure bot actions" title="configure bot actions" style="border: 1px solid gray; zoom:75%;">

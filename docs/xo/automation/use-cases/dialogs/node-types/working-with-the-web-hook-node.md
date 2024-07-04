@@ -24,7 +24,7 @@ The Webhook window is displayed with the **Component Properties** tab selected b
 
 ### Component Properties
 
-!!! Notes:
+!!! Note
     
     * All changes made to the Component Properties tab will affect all instances of the Webhook Node across Dialog Tasks.
     * If you have not yet configured the SDK, the Component Properties section will notify you that the SDK is not currently configured/Subscribed. Please go through the [steps](#create-and-register-an-app) to configure the SDK.

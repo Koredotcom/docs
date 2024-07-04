@@ -2,90 +2,27 @@
 
 To create a contact with the given stream Id.
 
-<table>
-  <tr>
-   <td>Method
-   </td>
-   <td>POST
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoint
-   </td>
-   <td><code>https://{host}/agentassist/api/v1/public/{{streamId}}/contacts</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>Configuration
-   </td>
-  </tr>
-</table>
+| **METHOD**       | **POST**                                                                                                             |
+|------------------|------------------------------------------------------------------------------------------------------------------|
+| **Endpoint**     | `https://{host}/agentassist/api/v1/public/{{streamId}}/contacts`                                                 |
+| **Content Type** | `application/json`                                                                                               |
+| **Authorization**| `auth: {{JWT}}` <br>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
+| **API Scope**    | Configuration                                                                                                    |
 
 ## Path Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL, for example, https://smartassist.kore.ai
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>BotId
-   </td>
-   <td>BotId or StreamId. You can access it from the General Settings page of the bot.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>accountId
-   </td>
-   <td>Your Account ID.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>contacts
-   </td>
-   <td>Contact details, for example, firstName, salutation, phoneNumber, countryCode, extension.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-</table>
+| **PARAMETER** | **DESCRIPTION**                                                                                         | **TYPE**         |
+|---------------|---------------------------------------------------------------------------------------------------------|------------------|
+| host          | Environment URL, for example, https://platform.kore.ai                                                | string, required |
+| BotId         | BotId or StreamId. You can access it from the General Settings page of the bot.                         | string, required |
+| accountId     | Your Account ID.                                                                                        | string, required |
+| contacts      | Contact details, for example, firstName, salutation, phoneNumber, countryCode, extension.               | string, required |
 
 ## Sample Request
 
 ```
 curl --location --request POST \
-     'https://{host}/agentassist/api/v1/public/{{streamId}}/contacts'
+     'https://{{host}}/agentassist/api/v1/public/{{streamId}}/contacts'
       --header 'auth: {jwt-code}' \
       --header 'accountId:123456789'
       --header 'Content-Type: application/json' \
@@ -105,64 +42,14 @@ curl --location --request POST \
 
 ## Body Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>firstName
-   </td>
-   <td>The first name of the contact.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>lastName
-   </td>
-   <td>The last name of the contact.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>salutation
-   </td>
-   <td>The salutation (Mr. or Mrs.) of the contact.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>cellPhone.phoneNumber
-   </td>
-   <td>The phoneNumber of the contact in numeric digits without any special characters or alphabets.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>cellPhone.countryCode
-   </td>
-   <td>The countryCode of the contact
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-  <tr>
-   <td>cellPhone.extension
-   </td>
-   <td>The extension of the contact.
-   </td>
-   <td>String, Required
-   </td>
-  </tr>
-</table>
+| **PARAMETER**            | **DESCRIPTION**                                                                              | **TYPE**         |
+|--------------------------|----------------------------------------------------------------------------------------------|------------------|
+| firstName                | The first name of the contact.                                                               | string, required |
+| lastName                 | The last name of the contact.                                                                | string, required |
+| salutation               | The salutation (Mr. or Mrs.) of the contact.                                                 | string, required |
+| cellPhone.phoneNumber    | The phone number of the contact in numeric digits without any special characters or alphabets.| string, required |
+| cellPhone.countryCode    | The country code of the contact.                                                             | string, required |
+| cellPhone.extension      | The extension of the contact.                                                                | string, required |
 
 ## Sample Response
 

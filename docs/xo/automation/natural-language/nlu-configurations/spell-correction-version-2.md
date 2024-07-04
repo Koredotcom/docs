@@ -2,7 +2,7 @@
 
 The Spell Correction feature for the supported languages corrects the misspelled words in the user’s utterance based on the language.
 
-Version 10.1.19 of the XO Platform includes a new version of the Spell Correction (Version 2) for English that comes with the following advantages:
+Version 10.1.19 of the XO Platform includes a new version of the Spell Correction (Version 2) for English, French and Dutch that comes with the following advantages:
 
 * **Consistent Spell Correction Experience**: The spell correction is performed at a central place immediately after identifying the conversation language, unlike the previous version, where spell correction used to happen separately at each NLP engine. This makes the Spell Correction experience consistent across languages.
 * **Enhanced Accuracy**: It checks words against comprehensive dictionaries and uses edit distance to find and rank possible corrections based on their commonness in the dictionary.

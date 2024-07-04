@@ -31,7 +31,7 @@ The version type is based on the ways in which a Bot version is created:
 * **User Created**: These versions are created by you as a developer, as discussed below.
     * There is a limit of 20 user-created versions. Once the limit is reached, the oldest versions are deleted to make room for any new ones.
 
-* **Auto Created**: These versions are created as part of the publishing cycle. [Learn more](../publishing-bot/){:target="_blank"}.
+* **Auto Created**: These versions are created as part of the publishing cycle. [Learn more](../publishing-app/){:target="_blank"}.
     * Whenever you publish a VA, the Platform creates a version automatically.
     * This auto created version includes the definition of the published copy of the assistant after the current publish request is accepted.
     * In case the publish request is rejected, the version will not be created.
@@ -39,7 +39,7 @@ The version type is based on the ways in which a Bot version is created:
     * While an auto-version creation is in-progress, you cannot raise any subsequent publish requests.
     * There is a maximum limit of 20 auto-created versions. Once the limit is reached, the oldest versions are deleted to make room for any new ones.
 
-<img src="../images/bot-versioning-img1.png" alt="Deploy - App Versions" title="Deploy - App Versions" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/app-versioning-img1.png" alt="Deploy - App Versions" title="Deploy - App Versions" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Creating a Bot Version
@@ -53,7 +53,7 @@ In this section, we discuss user created versions. Following are the steps to cr
 
 3. Click **New App Version** when done. Your version is created.
 
-    <img src="../images/bot-versioning-img2.png" alt="Version created" title="Version created" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/app-versioning-img2.png" alt="Version created" title="Version created" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Version Actions
@@ -75,7 +75,7 @@ Following are the actions you can perform from the Bot Versions listing page:
 
 4. You can also **Compare** versions to track changes.
 
-    <img src="../images/bot-versioning-img3.png" alt="Version actions" title="Version actions" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/app-versioning-img3.png" alt="Version actions" title="Version actions" style="border: 1px solid gray; zoom:70%;">
 
 
 ## Comparing Versions
@@ -96,7 +96,7 @@ To compare versions, follow the below steps:
 3. On the **New Version** window, you can find the selected version (source) of your assistant and a list that contains different versions (target). Select a version from the list to compare to.
 4. Click **Proceed**.
 
-    <img src="../images/bot-versioning-img4.png" alt="Compare versions" title="Compare versions" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/app-versioning-img4.png" alt="Compare versions" title="Compare versions" style="border: 1px solid gray; zoom:70%;">
 
 5. On the Version Comparison page, you can find the comparison details categorized into:
     1. Tasks
@@ -109,7 +109,7 @@ To compare versions, follow the below steps:
 6. The following information is highlighted to the developer in a JSON format:
     1. **Data addition** – Newly added data in the secondary version is highlighted, but not in the primary version.
     2. **Data removal** – Data deleted from the primary version is highlighted, but not in the secondary version.
-    3. **Data update** – In the case of key-value pairs, the same _key_ present in both versions with different values is highlighted. 
+    3. **Data update** – In the case of key-value pairs, the same _key_ present in apph versions with different values is highlighted. 
     4. For data addition and removal, an empty line is shown in the version where the corresponding detail is missing to understand the position of the new line.
 
         <img src="../images/bot-versioning-img5.png" alt="Comparison findings" title="Comparison findings" style="border: 1px solid gray; zoom:70%;">

@@ -2,73 +2,24 @@
 
 To create a queue with the given `streamId`.
 
-<table>
-  <tr>
-   <td>Method
-   </td>
-   <td>GET
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoints
-   </td>
-   <td><code>https://{{host}}/agentassist/api/v1/public/{{streamId}}/queues</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>Configuration
-   </td>
-  </tr>
-</table>
+| **Method** | GET |
+|--------|-----|
+| **Endpoint** | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/queues` |
+| **Content Type** | `application/json` |
+| **Authorization** | `auth: {{JWT}}` <br> See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token) |
+| **API Scope** | Configuration |
 
 ## Path Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL, for example, https://smartassist.kore.ai
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>streamId
-   </td>
-   <td>You can access it from the General Settings page of the bot.
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-</table>
+| **PARAMETER** | **DESCRIPTION** | **TYPE** |
+|-----------|-------------|------|
+| host      | Environment URL, for example, https://platform.kore.ai | string, required |
+| streamId  | You can access it from the General Settings page of the bot. | string, required |
 
 ## Sample Request
 
 ```
-curl --location 'http://www.smartassist.kore.ai/agentassist/api/v1/public/st-0aae83f7-49c7-58c8-921a-29d84d03xxxx/queues' \
+curl --location 'http://{{host}}/agentassist/api/v1/public/st-0aae83f7-49c7-58c8-921a-29d84d03xxxx/queues' \
 --header 'accept: application/json' \
 --header 'accountId: 64dc99337ac0b4d3d684xxxx' \
 --header 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTdlZjBkY2IwLTQ1ZTItNTY3YS1hYzMyLTkwNTA1NzdmMWIyYiJ9.7t145BjU0eZDdlnXYazmqkVT-8WpDIUgCquQM0xxxx' \

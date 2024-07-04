@@ -106,7 +106,8 @@ To do so, create an MS Teams app, associate the bot with it, and then publish th
 
 1. [Log in](https://teams.microsoft.com/) to the MS Teams account with admin credentials.
 
-2. Click **Ellipsis […]** in the left navigation bar and then select the **Developer Portal** icon to launch the Apps builder.  <img src="../images/MS_Team13.png" alt="developer portal" title="developer portal" style="border: 1px solid gray; zoom:70%;">
+2. Click **Ellipsis […]** in the left navigation bar and then select the **Developer Portal** icon to launch the Apps builder.  
+<img src="../images/MS_Team13.png" alt="developer portal" title="developer portal" style="border: 1px solid gray; zoom:70%;">
 
 3. On the **Developer Portal** page, select the **Apps** tab and then click the **New App** button.
 <img src="../images/MS_Team14.png" alt="new app" title="new app" style="border: 1px solid gray; zoom:70%;">

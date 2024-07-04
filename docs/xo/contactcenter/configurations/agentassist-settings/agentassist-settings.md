@@ -6,7 +6,7 @@ By default, **AgentAssist Widget** is enabled inside the SmartAssist Agent Conso
 
 To enable or disable AgentAssist Widget and its features:
 
-1. Go to **Contact Center > CONFIGURATION > AgentAssist Settings**.
+1. Go to **Contact Center AI** > **CONFIGURATIONS** > **AgentAssist Settings**.
 <img src="../images/agentassist-settings-page.png" alt="AgentAssist Settings Page" title="AgentAssist Settings Page" style="border: 1px solid gray; zoom:80%;">
 
 2. To disable the widget, click the button highlighted in the following screenshot:
@@ -24,7 +24,7 @@ Once disabled, agents will not have access to the AgentAssist widget and won’t
     * **Real-Time Coaching**: This widget enables real-time coaching based on the analysis of agent utterances and speech. You can set up specific utterances and speech patterns for AgentAssist to take relevant actions, such as providing hints and nudges or emailing the manager when those patterns occur. If disabled, you will no longer be able to utilize this feature. To resume real-time coaching, you have to enable this feature.
     * **Agent Playbook**: This widget provides agents with structured guidance and streamlines task management. Supervisors can define stages and steps to follow, choose step progression (sequential or random), mark whether the steps are completed manually or automatically, and set adherence notifications. Supervisors can leverage this feature to gain valuable insights into agent adherence to specific playbook steps. They can use this data to enhance agents’ ability to handle interactions and significantly improve customer satisfaction.
     If disabled, the Playbook tab doesn’t appear in the widget, but you have the Assist tab and the welcome messages in the Assist tab. However, if Playbook is enabled, then welcome messages become a part of the Playbooks step, and nothing appears in the Assist tab.
-    * **SearchAssist**: This widget is a conversational search platform that combines natural language understanding with intelligent virtual assistant actions, resulting in a contextualized search experience that is proactive and personalized for your users. This no-code platform helps you launch word-class search experiences within days and provides measurable progress toward your business goals. Drive brand engagement, and increase conversions by designing impactful search experiences powered by interactive virtual avatars.
+    * **Search AI**: This widget is a conversational search platform that combines natural language understanding with intelligent virtual assistant actions, resulting in a contextualized search experience that is proactive and personalized for your users. This no-code platform helps you launch word-class search experiences within days and provides measurable progress toward your business goals. Drive brand engagement, and increase conversions by designing impactful search experiences powered by interactive virtual avatars.
     If enabled, SearchAssist results are available along with Bot intents. If disabled, all configured data in SearchAssist do not show up as search results, but data configured in the bot (for example, FAQ) shows up.
 4. After disabling or enabling a widget, click **Save** to update the changes. The following message confirms the successful completion of the update.  
 <img src="../images/confirmation-message.png" alt="Other Features" title="Other Features" style="border: 1px solid gray; zoom:80%;">

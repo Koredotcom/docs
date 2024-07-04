@@ -15,7 +15,7 @@ This task-wise Containment Report offers a comparative analysis of the impact of
    <td>It’s a combination of POST and GET methods. The POST method is used to set the filters and the GET method is used to fetch data as per the set filters.
 <p>
 <strong>Post Method</strong>: Set filters. The response contains the API Response ID (“<em>_id</em>”) 
-<code>https://{{host}}/api/public/bot/{{botID}}/taskContainmentReport</code>
+<code>https://{{host}}/api/public/bot/{{botID}}/taskContainmentReport?skip={{skipValue}}&limit={{limitValue}}</code>
 <p>
 <strong>Get Method</strong>: Use the API Response ID (“<em>_id</em>”) to get data as per the set filters.   
 <code>https://{{host}}/api/public/bot/{{botID}}/taskContainmentReport/status/{{<strong>_id</strong>}}</code>
@@ -49,8 +49,6 @@ See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-int
    </td>
   </tr>
 </table>
-
-
 
 ## Path Parameters
 
@@ -88,33 +86,37 @@ See <a href="https://docsinternal-kore.github.io/docs/xo/apis/automation/api-int
    <td>The API Response ID returned by the POST method in the response object; Use it in the GET method to get data as per the set filters via the POST method.
    </td>
   </tr>
+  <tr>
+    <td>skip</td>
+    <td>Optional (Only for POST)</td>
+    <td>The number of messages to be skipped</td>
+  </tr>
+  <tr>
+    <td>limit</td>
+    <td>Optional (Only for POST)</td>
+    <td>The number of messages to be shown on each page.</td>
+  </tr>
 </table>
-
 
 
 ## Sample Request for the POST Method
 
-The following sample request shows how to retrieve task-execution based analytics data for different containment types with specific filters. You can modify the _type_ and _filters_ parameters to retrieve different types of analytics data as needed.
-
+The following sample request shows how to retrieve task-execution based analytics data for different containment types with specific filters. You can modify the type and filters parameters to retrieve different types of analytics data as needed.
 
 ```
-curl --location 
-'https://{{host}}/api/public/bot/{{botID}}/taskContainmentReport' 
---header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' 
---header 'Content-Type: application/json' 
+curl --location 'https://{{host}}/api/public/bot/{{botId}}/taskContainmentReport?skip={{skipValue}}&limit={{limitValue}}' \
+--header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}' \
+--header 'Content-Type: application/json' \
 --data '{
     "filters": {
-    "dateFrom": "2024-03-05T08:05:30.746Z",
-    "dateTo": "2024-03-08T08:05:30.747Z",
-    "includeTaskName":[],
-    "ConversationType": "All",
-    "ConversationStatus": "All",
-    "AggregationType": "Daily"
-  }
-}`
+        "dateFrom": "2024-04-22",
+        "dateTo": "2024-04-30T00:00:00.000Z",
+        "ConversationStatus": "Active",
+        "ConversationType": "Interactive",
+        "AggregationType": "Daily"
+    }
+}'
 ```
-
-
 
 ## Request Body Parameters
 
@@ -194,12 +196,9 @@ curl --location
    <td>The following conversation types for which data is available:
 <ul>
 
-<li>Interactive
+<li>Interactive</li>
 
-<li>Non-Interactive
-
-<li>All: Both Interactive and Non-interactive
-</li>
+<li>Non-Interactive</li>
 </ul>
    </td>
   </tr>
@@ -208,7 +207,7 @@ curl --location
    </td>
    <td>Optional
    </td>
-   <td>The current conversation status, <strong><em>Active</em></strong>, <strong><em>Closed</em>, or <em>All</em> for both.</strong>
+   <td>The current conversation status, <strong><em>Active</em></strong>, or <strong><em>Closed</em>.</strong>
    </td>
   </tr>
   <tr>
@@ -236,12 +235,11 @@ curl --location
   </tr>
 </table>
 
-## Sample Response form the Post Method
+## Sample Response for the Post Method
 
-Please note the value of the API Response ID “**__id_**“ in the response (as shown in the sample response below) to use in the GET method.
+The response returns the API Response ID "**_id**" (as highlighted in the sample payload below). Please make a note of this value to be used in the GET request.
 
-
-```
+<pre class="code-limit-200px">
 {
    "status": "IN_PROGRESS",
    "percentageComplete": 0,
@@ -252,13 +250,13 @@ Please note the value of the API Response ID “**__id_**“ in the response (as
    "createdBy": "u-exxxxxx6-6xx1-5xx5-axx4-5xxxxxxxxxd2",
    "expireAt": "2024-03-08T12:30:46.247Z",
    "statusLogs": [],
-   "_id": "ds-9xxxxxxd-0xx4-5xx8-axx8-axxxxxxxd083",
+   "_id": "<b>ds-9xxxxxxd-0xx4-5xx8-axx8-axxxxxxxd083</b>",
    "lMod": "2024-03-08T12:15:46.000Z",
    "createdOn": "2024-03-08T12:15:46.253Z",
    "requestedTime": "2024-03-08T12:15:46.253Z",
    "__v": 0
 }
-```
+</pre>
 
 ## Response Body Parameters
 
@@ -357,21 +355,16 @@ Please note the value of the API Response ID “**__id_**“ in the response (as
 </table>
 
 
-
 ## Sample Request for the GET Method
 
-Use the value of the API Response ID “__id_” from the POST request, as per the sample response from the POST method above, it should be “`ds-9xxxxxxd-0xx4-5xx8-axx8-axxxxxxxd083`”.
-
+The <b>_id</b> generated by the POST method, (for example,  <b><i>ds-9xxxxxxd-0xx4-5xx8-axx8-axxxxxxxd083</i></b> shown in the sample POST response) should replace <code>{{_id}}</code> for the query parameter in the below GET Method.
 
 ```
-curl --location 
-'https://{{host}}/api/public/bot/{{botID}}/taskContainmentReport/status/{{_id}}' 
+curl --location 'https://{{host}}/api/public/bot/{{botID}}/taskContainmentReport/status/{{_id}}' 
 --header 'auth: {{YOUR_JWT_ACCESS_TOKEN}}'
 ```
 
-
-
-## Sample Response form the GET Method
+## Sample Response for the GET Method
 
 
 ```
@@ -498,7 +491,6 @@ curl --location
   "status": "SUCCESS"
 }
 ```
-
 
 
 ## Response Body Parameters

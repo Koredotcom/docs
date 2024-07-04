@@ -2,7 +2,7 @@
 
 **Dispositions** represent a label that agents assign to the outcome of a conversation. In SmartAssist, you can create **disposition sets** to organize **disposition codes** according to your business requirements.
 
-To reach this feature, go to **Contact Center > AGENT & SUPERVISORS > Dispositions**.
+To reach this feature, go to **Contact Center AI > AGENT & SUPERVISORS > Dispositions**.
 <img src="../images/dispositions-page.png" alt="
 Dispositions Page" title="Dispositions Page" style="border: 1px solid gray; zoom:80%;">
 
@@ -14,7 +14,9 @@ The Dispositions section opens with the **Disposition Sets** tab preselected.
 <img src="../images/disposition-sets.png" alt="
 Disposition Sets Tab" title="Disposition Sets Tab" style="border: 1px solid gray; zoom:80%;">
 
-The **Resolution**vDisposition Set comes prebuilt. It can be edited but cannot be deleted or disabled. You can change your _Display_ option and edit assigned Disposition Codes. Everything else within this Set is uneditable. The default Disposition Codes for this Set are: _Resolved, Requires Supervisor Attention_, and _Unresolved_.
+The **Resolution** Disposition Set comes prebuilt. Administrators can enable/disable and edit the resolution disposition set. [Learn more](#edit-a-disposition-set).
+
+A resolution disposition cannot be deleted. The default Disposition Codes for this set are _Resolved_, _Requires Supervisor Attention_, and _Unresolved_. If you disable the resolution disposition set or remove a conversation's queue from the attached list, selecting a disposition from the set becomes optional when closing a conversation, if other disposition sets are created. Users can close a conversation without selecting a disposition from the set.
 
 ### Section Features
 

@@ -1,6 +1,6 @@
 # Agent Metrics Daily Report
 
-## Generating Agent Metrics Daily Report
+## Generating the Agent Metrics Daily Report
 
 The Agent Metrics Daily Report is a daily summary of agent performance metrics, by channel.
 
@@ -20,11 +20,11 @@ Steps to generate the Agent Metrics Daily Report:
         * CSV
     * Send To (single email address or a mailing list)
 7. Click **Create**.
-8. An instance of the **Agent Metrics Daily Report** is generated.
-<img src="../images/agent-metrics-daily-report-created.png" alt="Agent Metrics Daily Report Created" title="Agent Metrics Daily Report Created" style="border: 1px solid gray; zoom:70%;">
+8. The **Agent Metrics Daily Report** is generated.
+<img src="../images/agent-metrics-daily-report-created.png" alt="Agent Metrics Daily Report Created" title="Agent Metrics Daily Report Created" style="border: 1px solid gray; zoom:100%;">
 
 9. Click the **Run** icon next to the instance of the report.
-<img src="../images/run-agent-metrics-daily-report.png" alt=" Run Agent Metrics Daily Report" title="Run Agent Metrics Daily Report" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/run-agent-metrics-daily-report.png" alt=" Run Agent Metrics Daily Report" title="Run Agent Metrics Daily Report" style="border: 1px solid gray; zoom:100%;">
 
 While generating reports you have two options, Run On Demand and Schedule.
 
@@ -33,14 +33,14 @@ While generating reports you have two options, Run On Demand and Schedule.
 **Schedule**: While creating a new report or editing an existing report, the schedule of the report can be changed. The use of the schedule is the standard way to generate a report. If the report is scheduled for later then it will automatically be generated on the scheduled day and time without the need to click Run.
 
 10. First, the report object is configured (as PDF) and then the report output is generated as PDF. Click the **PDF/Page** icon to download the report.
-<img src="../images/pdf-agent-metrics-daily-report.png" alt="Agent Metrics Dailt Report PDF" title="Agent Metrics Daily Report PDF" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/pdf-agent-metrics-daily-report.png" alt="Agent Metrics Dailt Report PDF" title="Agent Metrics Daily Report PDF" style="border: 1px solid gray; zoom:100%;">
 
-!!! Note
+    !!! Note
 
-    The red dot beside the report indicates that the report has been generated within the last 24 hours. You can download the report and save and view it in pdf format.
+        The red dot beside the report indicates that it was generated within the last 24 hours. You can download, save, and view the report in PDF format.
 
 The Agent Metrics Daily Report is generated and is available for download.
-<img src="../images/agent-metrics-daily-report-output.png" alt="Agent Metrics Daily Report Output" title="Agent Metrics Daily Report Output" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/agent-metrics-daily-report-output.png" alt="Agent Metrics Daily Report Output" title="Agent Metrics Daily Report Output" style="border: 1px solid gray; zoom:100%;">
 
 ### About Report Fields
 
@@ -214,3 +214,7 @@ The Agent Metrics Daily Report is generated and is available for download.
    </td>
   </tr>
 </table>
+
+#### Related Link
+
+* [Reports List](../reports/reports-list.md)

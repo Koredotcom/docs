@@ -6,13 +6,11 @@ Using **Namespaces** you can categorize variables and map them to various compon
 
 [Learn more about Variables.](../variables/using-bot-variables/){:target="_blank"}
 
-
 ## Enabling Namespaces
 
 You can enable namespaces by going to **Automation AI > App Settings > App Profile** Turn on the toggle, then confirm your choice to enable the feature.
 
 <img src="../images/managing-namespace-img1.png" alt="Enable namespace" title="Enable namespace" style="border: 1px solid gray;zoom:70%;"/>
-
 
 ## Implementation
 

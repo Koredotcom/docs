@@ -63,7 +63,7 @@ Once added, each of the sub-intent can be trained for recognition within this gr
         2. **Patterns** – Identify patterns in the user utterance related to this sub-intent.
         3. **Rules** – Define intent identification rules to trigger this intent.
 
-3. You can also set the **Intent Preconditions** i.e. the sub-intent would get identified only when any of the preconditions defined is available in the context at the time of intent detection. These pre-conditions will be considered as instance levels and would take precedence over the component level pre-conditions. \
+3. You can also set the **Intent Preconditions** i.e. the sub-intent would get identified only when any of the preconditions defined is available in the context at the time of intent detection. These pre-conditions will be considered as instance levels and would take precedence over the component level pre-conditions.
 
     <img src="../images/sub-intent-scoping-pre-conditions.png" alt="Sub intent pre-conditions" title="Sub intent pre-conditions" style="border:1px solid gray; zoom:70%;">
 

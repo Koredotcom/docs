@@ -2,7 +2,7 @@
 
 This section consists of the settings required for campaigns.
 
-To access campaign settings, go to **Contact Center AI** > **Campaigns** > **PROACTIVE OUTREACH** > **Settings**.
+To access campaign settings, go to **Contact Center AI** > **Campaigns** > **Settings**.
 <img src="../images/settings-main-page.png" alt="Settings Page" title="Settings Page" style="border: 1px solid gray; zoom:80%;">
 
 ## Global Settings

@@ -50,7 +50,7 @@ JSON object consisting of the following translatable elements
 </td>
 <td>Object
 </td>
-<td>Arrays of error codes and their corresponding messages. Enter translations of the error message. Refer to <a href="../../general-settings/#customizing-error-messages" target="_blank">Customizing Error Messages</a> to learn more about error messages.
+<td>Arrays of error codes and their corresponding messages. Enter translations of the error message. Refer to <a href="../../app-profile/#customizing-error-messages" target="_blank">Customizing Error Messages</a> to learn more about error messages.
 </td>
 </tr>
 </table>
@@ -368,7 +368,7 @@ JSON object consisting of the following translatable components related to IDP c
 
 We have seen in [this document](../../../how-tos/build-a-banking-assistant/train-the-assistant/use-patterns-for-intents-and-entities){:target="_blank"}, how Patterns can be used for Intent detection and Entity extraction. These rules are for VAs in the English language. In other languages, there may be differences. 
 
-Patterns can be used in [Small Talk](../../../automation/use-cases/small-talk/#terminology){:target="_blank"} (while defining queries), [Knowledge Graph](../../../answers/knowledge-ai/build-a-knowledge-graph/#add-faqs){:target="_blank"} (using alternate question fields), and [Trait](../../../automation/natural-language/training/traits/#trait-definition){:target="_blank"} identification but their behavior might differ slightly. The table below provides an overview of how this may occur.
+Patterns can be used in [Small Talk](../../../automation/use-cases/small-talk/#terminology){:target="_blank"} (while defining queries), [Knowledge Graph](../../../automation/knowledge-ai/build-a-knowledge-graph){:target="_blank"} (using alternate question fields), and [Trait](../../../automation/natural-language/training/traits/#trait-definition){:target="_blank"} identification but their behavior might differ slightly. The table below provides an overview of how this may occur.
 
 <table border="1">
 <tr>

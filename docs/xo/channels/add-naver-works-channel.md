@@ -39,10 +39,12 @@ The new Virtual Assistant is listed on the **Bot** page.
 The next step is to add a client application to integrate with the Kore.ai XO Platform using the app’s credentials. To add a client app, follow the steps below:
 
 1. Navigate to **API 2.0** on the left menu of the **Line Works Developer Console**.
-2. Click the **Add Client App** tab.  <img src="../images/naverworks3.png" alt="naverworks developer console" title="naverworks developer console" style="border: 1px solid gray; zoom:70%;">
+2. Click the **Add Client App** tab.  
+<img src="../images/naverworks3.png" alt="naverworks developer console" title="naverworks developer console" style="border: 1px solid gray; zoom:70%;">
 
 
-3. Add the App name and click **Confirm**.  <img src="../images/naverworks4.png" alt="naverworks confirm" title="naverworks confirm" style="border: 1px solid gray; zoom:70%;">
+3. Add the App name and click **Confirm**.  
+<img src="../images/naverworks4.png" alt="naverworks confirm" title="naverworks confirm" style="border: 1px solid gray; zoom:70%;">
 
 
 4. On the **Manage client apps** page, copy the **_Client ID_** and **_Client Secret_** values displayed for the client app.  <img src="../images/naverworks5.png" alt="naverworks client secret" title="naverworks client secret" style="border: 1px solid gray; zoom:70%;">
@@ -99,7 +101,7 @@ To add the VA to the Line Works Admin Console, follow the steps below:
 
 5. Click the required VA on the **Bot** page.
 
-6.  In the **Bot Info** window, click **Edit**.
+6.  In the **Bot Info** window, click **Edit**.  
 <img src="../images/naverworks15.png" alt="naverworks bot info" title="naverworks bot info" style="border: 1px solid gray; zoom:70%;">
 
 7.  Select **_All_** for **Permission** and enable the **Visibility Setting** option.
@@ -113,5 +115,5 @@ To add the VA to the Line Works Admin Console, follow the steps below:
 To complete the integration, you must enable the channel on the Kore.ai XO Platform. To enable Naver Works, follow the steps below:
 
 1. In the **Configurations** section of the **Naver Works** channel, select **_YES_** for **Enable Channel**.
-2. Click **Save**.
+2. Click **Save**.  
 <img src="../images/naverworks17.png" alt="enable naverworks channel" title="enable naverworks channel" style="border: 1px solid gray; zoom:70%;">

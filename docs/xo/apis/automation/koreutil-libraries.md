@@ -1,4 +1,4 @@
-# **koreUtil Libraries**
+# koreUtil Libraries
 
 **koreUtil libraries** provide pre-written JavaScript functions which makes common or complex tasks easy to implement. These libraries often target specific tasks such as setting up recurring rules for calendars, parsing, and manipulation of dates, conversion of dates between timezones, tools to simplify programming with strings, numbers, arrays, functions, and objects, etc.
 
@@ -12,8 +12,6 @@ koreUtil libraries can be used anywhere in the assistant where there is flexibil
 
 Below is the list of koreUtil libraries provided by the Platform:
 
-
-
 * [koreUtil.rrule](../koreutil-libraries#koreutilrrule)
 * [koreUtil.moment](../koreutil-libraries#koreutilmoment)
 * [koreUtil.intl](../koreutil-libraries#koreutilintl)
@@ -26,6 +24,7 @@ Below is the list of koreUtil libraries provided by the Platform:
 * [koreUtil.getSessionId](../koreutil-libraries#koreutilgetsessionid)
 * [koreUtil.closeConversationSession](../koreutil-libraries#koreutilclose)
 * [koreUtil.autoTranslate](../koreutil-libraries#koreautotranslate)
+* [koreUtil.getFormDefinition](#koreutilgetformdefinition)
 
 
 ### koreUtil.rrule
@@ -47,13 +46,16 @@ context.readableFormat=context.rule.toText();
 
 **Output:**
 
-*For context.between*
-```[ 
-"2012-08-27T10:30:00.000Z", 
-"2012-08-31T10:30:00.000Z" 
-]```
-*For context.readableFormat*
-```every 5 weeks on Monday, Friday until January 31, 2013```
+* For context.between  
+   ```
+   [ 
+   "2012-08-27T10:30:00.000Z", 
+   "2012-08-31T10:30:00.000Z" 
+   ]
+   ```
+
+* For context.readableFormat  
+   ```every 5 weeks on Monday, Friday until January 31, 2013```
 
 
 ### koreUtil.moment
@@ -61,10 +63,13 @@ context.readableFormat=context.rule.toText();
 koreUtil.moment is a platform-offered JS library for validating, manipulating, and formatting dates.
 
 **Usage Example:** 
+
 ```context.german=koreUtil.moment().locale('de').format('LLLL');```
 
 **Output:** 
-*For context.german:*
+
+For context.german:
+
 ```Montag, 18. November 2019 01:43```
 
 
@@ -73,16 +78,20 @@ koreUtil.moment is a platform-offered JS library for validating, manipulating, a
 koreUtil.intl is a platform-offered JS library for language-specific string comparison, number formatting, and date and time formatting.
 
 **Usage Example:**
-```context.formattedNumberUK = koreUtil.intl.NumberFormat('en-GB').format(123456.789);
+
+```
+context.formattedNumberUK = koreUtil.intl.NumberFormat('en-GB').format(123456.789);
 var date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0)); 
-context.USdate=koreUtil.intl.DateTimeFormat('en-US').format(date);```
+context.USdate=koreUtil.intl.DateTimeFormat('en-US').format(date);
+```
 
 **Output:**
 
-*For context.formattedNumberUK:*
-```123,456.789```
-*For context.USdate*
-```12/20/2012```
+* For context.formattedNumberUK:  
+   ```123,456.789```
+
+* For context.USdate  
+   ```12/20/2012```
 
 
 ### koreUtil.momenttz
@@ -90,33 +99,42 @@ context.USdate=koreUtil.intl.DateTimeFormat('en-US').format(date);```
 koreUtil.momenttz is a platform-offered JS library for the formatting of dates in any timezone and converting dates between timezones.
 
 **Usage Example:**
-```var jun = koreUtil.moment("2014-06-01T12:00:00Z"); 
+
+```
+var jun = koreUtil.moment("2014-06-01T12:00:00Z"); 
 context.newyork= koreUtil.momenttz(jun,'America/New_York').format('ha z'); 
 context.tokyo = koreUtil.moment().tz('Asia/Tokyo').format('ha z'); 
-context.sydney = koreUtil.moment().tz('Australia/Sydney').format('ha z');```
+context.sydney = koreUtil.moment().tz('Australia/Sydney').format('ha z');
+```
 
 **Output:**
 
-* For context.newyork: *
-```5am PDT```
-* For context.tokyo: *
-```7pm JST```
-* For context.sydney: *
-```9pm AEDT```
+* For context.newyork:  
+   ```5am PDT```
+
+* For context.tokyo:  
+   ```7pm JST```
+
+* For context.sydney:  
+   ```9pm AEDT```
 
 
 ### koreUtil.xml2js
 
 koreUtil.xml2js is a Platform-offered JS library for parsing XML to JSON and vice versa.
 
-**Usage Example:**
-```var obj = {name: "John", Surname: "Doe", age: 23}; \
-var builder = new koreUtil.xml2js.Builder(); \
-context.xml = builder.buildObject(obj);```
+**Usage Example:**  
+
+```
+var obj = {name: "John", Surname: "Doe", age: 23};
+var builder = new koreUtil.xml2js.Builder();
+context.xml = builder.buildObject(obj);
+```
 
 **Output:**
 
-* For context.xml: *
+For context.xml:
+
 ```John Doe 23```
 
 
@@ -125,14 +143,14 @@ context.xml = builder.buildObject(obj);```
 koreUtil.hash is a Platform offered JS library that supports SHA on JavaScript.
 
 **Usage Example:**
-```context.hashString= koreUtil.hash('sha256').update('42').digest('hex');
-```
+
+```context.hashString= koreUtil.hash('sha256').update('42').digest('hex');```
 
 **Output:**
 
-* For context.hashString:*
-```73475cb40a568e8da8a045ced110137e159f890ac4da883b6b17dc651b3a8049
-```
+For context.hashString:
+
+```73475cb40a568e8da8a045ced110137e159f890ac4da883b6b17dc651b3a8049```
 
 
 ### koreUtil._
@@ -140,7 +158,9 @@ koreUtil.hash is a Platform offered JS library that supports SHA on JavaScript.
 koreUtil._ is a Platform-offered JS library that provides utility functions for common programming tasks.
 
 **Usage Example:**
-```context.chunkArray = koreUtil._.chunk(['a', 'b', 'c', 'd'], 2); 
+
+```
+context.chunkArray = koreUtil._.chunk(['a', 'b', 'c', 'd'], 2); 
 var users = [ 
 { 'user': 'barney', 'age': 36, 'active': true }, 
 { 'user': 'fred', 'age': 40, 'active': false } 
@@ -150,13 +170,16 @@ context.filterActive =koreUtil._.pluck(koreUtil._.filter(users, { 'age': 36, 'ac
 
 **Output:**
 
-* For context.chunkArray: *
-```[["a","b"],["c","d"]]```
-* For context.filterActive: *
-```[ \
-"barney" \
-]
-```
+* For context.chunkArray:  
+   ```[["a","b"],["c","d"]]```
+
+* For context.filterActive:  
+   ```
+   [
+   "barney"
+   ]
+   ```
+
 ### koreUtil.getCurrentOptions
 
 koreUtil.getCurrentOptions is a platform-offered JS library that provides utility functions to get the current template for language selection standard response options. This can be used to customize the standard response. 
@@ -165,30 +188,36 @@ Post the release of v8.1, this function has been enhanced to return the authoriz
 Following is the return format for each of the situations:
 
 
-* For the language selection standard response:*
-```{"list_of_languages": [
-      {"title": "English","value": "English"},
-      {"title": "Deutsche","value": "Deutsche"},`
-      {"title": "Español","value": "Español"}`
-]}
-```
+* For the language selection standard response:  
+   ```
+   {"list_of_languages": [
+         {"title": "English","value": "English"},
+         {"title": "Deutsche","value": "Deutsche"},`
+         {"title": "Español","value": "Español"}`
+   ]}
+   ```
 
-* For the language ambiguity standard response:
-`{"current_language": "Español",`
-* `      "list_of_new_languages": [`
-* `         {"title": "English","value": "English"},`
-* `         {"title": "Deutsche","value": "Deutsche"},`
-* `         {"title": "Español","value": "Español"}`
-* `  ]}`
+* For the language ambiguity standard response:  
+   ```
+   {"current_language": "Español",
+      "list_of_new_languages": [
+         {"title": "English","value": "English"},
+         {"title": "Deutsche","value": "Deutsche"},
+         {"title": "Español","value": "Español"}
+      ]}
+   ```
 
-* For the language switch standard response: \
-`{"new_language": "Español","current_language": "English"}`
-* For User authorization request standard response: \
-`{`
-* `    "authorizationURL": "https:///r/xxxxxxxxxxxxx"`
-* `}`
+* For the language switch standard response:  
+   `{"new_language": "Español","current_language": "English"}`
 
-Following are the usage examples of how the above utility can be used to render the message in a button template, you can use any template as per your requirements.  [See here for more on message templates](https://developer.kore.ai/docs/bots/sdks/message-templates/).
+* For User authorization request standard response:  
+   ```
+   {
+      "authorizationURL": "https:///r/xxxxxxxxxxxxx"
+   }
+   ```
+
+Following are the usage examples of how the above utility can be used to render the message in a button template, you can use any template as per your requirements.  [See here for more on message templates](../../../sdk/web-mobile-sdk-message-formatting-and-templates/).
 
 **Usage Example 1:** To get the standard response for “_Ask if the user would like to select any of the languages_”
 
@@ -289,6 +318,7 @@ print(JSON.stringify(message));`
 The `koreUtil.getAmbiguousIntents` util function is used to obtain the ambiguous intents list when the [Ambiguity Intents Identified](../../automation/intelligence/event-handling/#ambiguous-intents-identified-event) event gets triggered. Along with the list of ambiguous intents, the retrieved context object contains additional details such as ambiguity reasons – ‘multiple definite intents’, ‘multiple intents with similar scores’, etc., and the engine name that detects the intent (ML, FM, or KG), the score given by the respective engines, and so on. The [Ranking and Resolver](../../automation/natural-language/training/ranking-and-resolver) score is displayed wherever available.
 
 **Usage Example**
+
 You can use the `koreUtil.getAmbiguousIntents()` function in the entity prompt or any other node to obtain the list of ambiguous intents.
 
 **Sample Response**
@@ -356,11 +386,13 @@ The type of intent is captured in the `intentType`object. For example, `Status o
 koreUtil.getSessionId is a Platform offered JS library for obtaining the current conversation session Id.
 
 **Usage Example:**
+
 `var sessionId = koreUtil.getSessionId();`
 
 **Output:**
 
 For sessionId:
+
 `5x54321x11xx87654321xx12`
 
 ### koreUtil.getSunshineConversationsMetadata
@@ -369,20 +401,22 @@ The XO Platform captures and stores the metadata sent as part of the Pass contro
 
 The **koreUtil.getSunshineConversationsMetadata** function can be used by a bot developer to access the metadata captured in any node.
 
-**Usage Example:
-`koreUtil.getSunshineConversationsMetadata();`**
+**Usage Example:**
+
+`koreUtil.getSunshineConversationsMetadata();`
 
 **Output:**
 
 ```json
 {
-"dataCapture.systemField.tags" : "TransferToBot",
-"dataCapture.systemField.priority" : "high"
+   "dataCapture.systemField.tags" : "TransferToBot",
+   "dataCapture.systemField.priority" : "high"
 }
 ```
 
-!!!note
-   The **koreUtil.getSunshineConversationsMetadata** is supported in the Platform v10.1.9 and above versions.
+!!! note
+
+    The **koreUtil.getSunshineConversationsMetadata** is supported in the Platform v10.1.9 and above versions.
 
 
 ### koreUtil.ClearAuthProfiles
@@ -391,14 +425,14 @@ The `koreUtil.ClearAuthProfiles` is a Platform function to clear tokens associat
 
 **Usage Example:**
 
-Example : To clear one or more authorization profile:
-
+To clear one or more authorization profile:
 
 ```javascript
 koreUtil.ClearAuthProfiles([Auth_Profle_Name]);
 ```
 
 Example:
+
 ```javascript
 koreUtil.ClearAuthProfiles(["Auth_openai", "Auth_hubspot"]);
 ```
@@ -410,8 +444,7 @@ The `koreUtil.ClearAllAuthProfiles` is a Platform function to clear tokens assoc
 
 **Usage Example:**
 
-Example : To clear all authorization profiles:
-
+To clear all authorization profiles:
 
 ```javascript
 koreUtil.ClearAllAuthProfiles ( );
@@ -426,23 +459,25 @@ koreUtil.closeConversationSession is a Platform function for force closing any a
 ```javascript
 koreUtil.closeConversationSession();
 ```
+
 **Output:**
 
 No response is returned and the session ends.
 
-!!!note
-   The koreUtil.closeConversationSession is supported in the Platform v8.1 and above versions.
+!!! note
+
+    The koreUtil.closeConversationSession is supported in the Platform v8.1 and above versions.
 
 
 ### koreUtil.autoTranslate
 
 koreUtil.autotranslate is a Platform function that lets you automatically translate the virtual assistant response from a language in which the assistant is configured to the language in which the user is interacting or a language of your choice. This function uses a translation engine to translate the bot responses into user input language. For more information on how to configure a translation engine, [refer here](../../app-settings/language-management/managing-translation-services).
 
-!!!note
-   To use the `koreUtil.autoTranlsate`function for language translation, you must have the Access Key provided by your translation service provider, such as Google Translator, Microsoft Translator, etc.
+!!! note
+    
+    To use the `koreUtil.autoTranlsate`function for language translation, you must have the Access Key provided by your translation service provider, such as Google Translator, Microsoft Translator, etc.
 
 Please refer below for the translation behavior:
-
 
 <table>
   <tr>
@@ -459,7 +494,7 @@ Please refer below for the translation behavior:
    <td>Refers to plain text responses defined anywhere in the virtual assistant. For example, prompts, responses etc.
    </td>
    <td>Default: Auto-translated
-<p>
+<br>
 You can choose to translate only a specific part of the response by using the koreUtil.autoTranslate function only for that part.
    </td>
   </tr>
@@ -469,14 +504,14 @@ You can choose to translate only a specific part of the response by using the ko
    <td>Refers to responses defined using JavaScript. For example, prompts, responses etc.
    </td>
    <td>Default: No auto-translation
-<p>
+<br>
 You can use the AutoTranslation function inside the JavaScript to define the parts of the responses that need translation.
    </td>
   </tr>
   <tr>
    <td>Auto-formatted Responses
    </td>
-   <td>Refers to the responses that are auto-formatted by the Platform as per the channel specifications—for example, confirmations, list of values, ambiguities, etc.
+   <td>Refers to the responses that are auto-formatted by the Platform as per the channel specifications - for example, confirmations, list of values, ambiguities, etc.
    </td>
    <td>Default: Auto-translated
    </td>
@@ -492,22 +527,21 @@ koreUtil.autoTranslate();
 
 Here are a few use-case examples for your reference:
 
-**Use Case-1:**To translate part of a sentence in the user’s language:
+**Use Case-1:** To translate part of a sentence in the user’s language:
 
 **Example:**
-
 
 ```javascript
 {{koreUtil.autoTranslate('Welcome! I am a virtual assistant powered by ')}} General Insurance
 ```
-**Output in Serbian**
 
+**Output in Serbian**
 
 ```javascript
 Добредојдовте! Јас сум виртуелен асистент напојуван од General Insurance
 ```
 
-**Use Case-2:**To translate the content of a customized JavaScript template, then use koreUtil.autoTranslate as follows:
+**Use Case-2:** To translate the content of a customized JavaScript template, then use koreUtil.autoTranslate as follows:
 
 **Example:**
 
@@ -517,9 +551,7 @@ var message = koreUtil.autoTranslate("Your account balance is ");
 var message = message.concat(env.currency, ' ', accountBalance); print(message);
 ```
 
-
 **Output in Serbian**
-
 
 ```
 Баланс вашего счета USD 5,278.00
@@ -529,7 +561,6 @@ var message = message.concat(env.currency, ' ', accountBalance); print(message);
 
 **Example**
 
-
 ```javascript
 var message = koreUtil.autoTranslate("This is a sample message", "de");
 print(message);
@@ -537,11 +568,26 @@ print(message);
 
 **Output in German**
 
-
 ```
 Dies ist eine Beispielnachricht
 ```
 
-#### Related Link
+<img src="../images/kore-util-auto-translate.png" alt="Auto translate service as Bot Response" title="Auto translate service as Bot Response" style="border:1px solid gray; zoom:60%;">
+
+### koreUtil.getFormDefinition
+
+The `koreUtil.getFormDefinition` allows you to get the form definition, which consists of the form meta, form components, and form messages.
+
+**Usage Example:**
+
+```
+let formDef = koreUtil.getFormDefinition();
+```
+
+**Output:**
+
+<img src="../images/xop-8553-json-preview.png" alt="Form Definition" title="Form Definition" style="border:1px solid gray; zoom:60%;">
+
+**Related Link**
 
 * **[Script Node](../../automation/use-cases/dialogs/node-types/working-with-the-script-node)** (Write JavaScript code in a dialog task)

@@ -47,7 +47,8 @@ Chat
    <td>Check Agent Availability
    </td>
    <td>This node lets you check agent availability based on skillset and decide the next node based on agent availability.
-<strong>Note</strong>: This is an experimental node and may be deprecated in future versions.
+
+   <strong>Note</strong>: This is an experimental node and may be deprecated in future versions.
    </td>
   </tr>
   <tr>
@@ -196,9 +197,10 @@ To edit/delete nodes, right-click the node. The following options are displayed:
 <img src="./../images/edit-node-color.gif" alt="Edit Node Color" title="Edit Node Color" style="border: 1px solid gray; zoom:70%;">
 
 **Delete Node**: Click the **Delete** button. A confirmation pop-up is displayed. Click **Confirm** to delete the node.
-<img src="./../images/delete-node.gif" alt="Delete Node" title="Delete Node" style="border: 1px solid gray; zoom:70%;">
 
-!!! Notes
+!!!Note
 
-    * You cannot restore deleted nodes unless you have previously saved a version that contains them. Restoring a version also means that you may lose other changes you made to the flow. Please proceed with caution. See [Restore Versions](https://docsinternal-kore.github.io/docs/xo/deploy/bot-versioning/#restoring-versions) for details.
+    * You cannot restore deleted nodes unless you have previously saved a version that contains them. Restoring a version also means that you may lose other changes you made to the flow. Please proceed with caution. See [Restore Versions](../../deploy/bot-versioning.md#restoring-versions) for details.
     * You cannot delete the Start node.
+
+<img src="./../images/delete-node.gif" alt="Delete Node" title="Delete Node" style="border: 1px solid gray; zoom:70%;">

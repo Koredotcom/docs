@@ -1,6 +1,6 @@
 # Agent Login Logout Summary Report
 
-## Generating Agent Login Logout Summary Report
+## Generating the Agent Login Logout Summary Report
 
 Agent Login Logout Summary Report is a detailed report of an agent’s login and logout events.
 
@@ -20,11 +20,11 @@ Steps to generate the Agent Login Logout Summary Report:
         * CSV
     * Send To (single email address or a mailing list)
 7. Click **Create**.
-8. An instance of the **Agent Login Logout Summary Report** is generated.
-<img src="../images/agent-login-logout-report-created.png" alt="Agent Login Logout Summary Report Created" title="Agent Login Logout Summary Report Created" style="border: 1px solid gray; zoom:70%;">
+8. The **Agent Login Logout Summary Report** is generated.
+<img src="../images/agent-login-logout-report-created.png" alt="Agent Login Logout Summary Report Created" title="Agent Login Logout Summary Report Created" style="border: 1px solid gray; zoom:100%;">
 
 9. Click the **Run** icon as shown below to generate the report.
-<img src="../images/run-login-logout-summary-report.png" alt="Run Agent Login Logout Summary Report" title="Create Agent Login Logout Summary Report" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/run-login-logout-summary-report.png" alt="Run Agent Login Logout Summary Report" title="Create Agent Login Logout Summary Report" style="border: 1px solid gray; zoom:100%;">
 
 While generating reports you have two options, Run On Demand and Schedule.
 
@@ -34,13 +34,14 @@ While generating reports you have two options, Run On Demand and Schedule.
 
 10. First, the report object is configured (as PDF) and then the report output is generated as PDF.
 Click the **PDF/Page** icon to download the report.
-<img src="../reports/images/pdf-agent-login-logout-summary.png" alt="PDF Agent Login Logout Report" title="PDF Agent Login Logout Report" style="border: 1px solid gray; zoom:70%;">
+<img src="../reports/images/pdf-agent-login-logout-summary.png" alt="PDF Agent Login Logout Report" title="PDF Agent Login Logout Report" style="border: 1px solid gray; zoom:100%;">
 
-!!! Note
+    !!! Note
 
-    The red dot beside the report indicates that the report has been generated within the last 24 hours. You can download the report and save and view it in PDF format.
+        The red dot beside the report indicates that it was generated within the last 24 hours. You can download, save, and view the report in PDF format.
+
 The Agent Login Logout Summary Report is generated and available for download.
-<img src="../images/agent-login-logout-summary-report-output.png" alt="Agent Login Logout Summary Report Output" title="Agent Login Logout Summary Report Output" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/agent-login-logout-summary-report-output.png" alt="Agent Login Logout Summary Report Output" title="Agent Login Logout Summary Report Output" style="border: 1px solid gray; zoom:100%;">
 
 ### About Report Fields
 
@@ -88,3 +89,7 @@ The Agent Login Logout Summary Report is generated and available for download.
 
    </td>
   </tr>
+
+#### Related Link
+
+* [Reports List](../reports/reports-list.md)

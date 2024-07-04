@@ -15,9 +15,9 @@ Click the **General Settings** icon and provide the following information:
         1. **Queue**: Select the queue that you want to apply to this node.
         2. **Priority**: Set the conversation priority within the assigned queue. Priorities range from 1 to 10, where 1 is the highest priority, and 10 is the lowest. The default value is 5 – Standard.
 
-        !!! Note
+            !!! Note
 
-            With the ability to prioritize, conversations will shuffle in the queue. This means that the number in the queue and wait time calculations will change for the customer as the priority of their conversation changes. Consider this scenario if you decide to play queue positions and wait time calculations in the waiting experience.
+                With the ability to prioritize, conversations will shuffle in the queue. This means that the number in the queue and wait time calculations will change for the customer as the priority of their conversation changes. Consider this scenario if you decide to play queue positions and wait time calculations in the waiting experience.
 
 If you select **Script**, you can define the queue or conversation priority.
 <img src="./../images/script-set-queue.png" alt="Script" title="Script" style="border: 1px solid gray; zoom:70%;">
@@ -37,9 +37,11 @@ Priority should be a valid number between 0 and 10 (both are inclusive). If an I
 
 **Examples**:
 
-_agentUtils.setPriority(0); // priority of 0 (highest priority) will be set.
-agentUtils.setPriority(10); //  priority of 10 (Lowest Priority) will be set.
-agentUtils.setPriority(7); // priority of 7 will be set._
+_agentUtils.setPriority(0); // priority of 0 (highest priority) will be set_.
+
+_agentUtils.setPriority(10); //  priority of 10 (Lowest Priority) will be set_.
+
+_agentUtils.setPriority(7); // priority of 7 will be set_.
 
 Under **Inside working hours**, select the **Go to node** that the node should take once it runs successfully during working hours. For this, set the node that should trigger after setting the queue.
 
@@ -47,7 +49,7 @@ For example, if the Go to node is set to Check Agent Availability, it will check
 
 Under **Outside working hours**, choose the **Go to node** that the node should take once it runs successfully outside working hours. For this, set the node that should trigger after setting the queue.
 
-For example, if the Go to node is set to CheckBusinessHours, you can set the action to a message prompt to let customers know they have called outside working hours. [Learn more](https://docs.kore.ai/smartassist/settings/hours-of-operation/hours-of-operation/).
+For example, if the Go to node is set to CheckBusinessHours, you can set the action to a message prompt to let customers know they have called outside working hours. [Learn more](../../contactcenter/configurations/hours-of-operation/manage-hours-of-operation.md).
 
 ### Error Handling
 
@@ -61,6 +63,6 @@ Use this section to handle system errors during customer interactions.
     <img src="./../images/text-to-speech-set-queue.png" alt="Text to Speech" title="Text to Speech" style="border: 1px solid gray; zoom:70%;">
     * **Audio File**: You can type a new message to be played to the customer in the text field or click **+ Upload New** to upload an audio file (.mp3 or .wav format) with the message to be played;
     <img src="./../images/audio-file-set-queue.png" alt="Audio File" title="Audio File" style="border: 1px solid gray; zoom:70%;">
-    * **Link**: Click **+ Create New** to add the text of the message you want to play to the customer and insert the URL of an audio file in .mp3 or .wav format. Click **+ Add Another** to add another message URL.
+    * **Link**: Click **+ Create New** to add the text of the message you want to play to the customer and insert the URL of an audio file in .mp3 or .wav format. Click **+ Add Another** to add another message URL.  
     <img src="./../images/link-set-queue.png" alt="Link" title="General Settings" style="border: 1px solid gray; zoom:70%;">
 * **Go to node**: Select the node to which you want to direct the error handling flow and define the system behavior. You can create a new node by selecting a node type or identifying and selecting an existing node.

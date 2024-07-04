@@ -204,6 +204,8 @@ This feature allows you to use one of the default themes, with either a Light or
 
 The background image that is displayed on the mock website where the conversation widget is previewed can be customized. You need to provide a valid URL with the location of the image.
 
+<img src="../images/mock-scene-customize-background-image.png" alt="Preview Customization - Background image" title="Preview Customization - Background image" style="border:1px solid gray; zoom:60%;">
+
 
 #### Chat Widget
 
@@ -214,18 +216,23 @@ This option will let you customize the entire chat widget. This includes:
 * Widget border-color
 * Widget divider color
 
+<img src="../images/mock-scene-customize-chat-widget.png" alt="Preview Customization - Chat Widget" title="Preview Customization - Chat Widget" style="border:1px solid gray; zoom:60%;">
+
 
 #### User Messages
 
 This option is used to customize the color of the user message bubble and text.
+
+<img src="../images/mock-scene-customize-user-messages.png" alt="Preview Customization - User Messages" title="Preview Customization - User Messages" style="border:1px solid gray; zoom:60%;">
 
 
 #### Bot Messages and Templates
 
 This option is used to customize the color of the Virtual Assistant message bubble and text. You can also customize the button template messages if any are used.
 
+<img src="../images/mock-scene-customize-bot-messages.png" alt="Preview Customization - Bot Messages and Templates" title="Preview Customization - Bot Messages and Templates" style="border:1px solid gray; zoom:60%;">
 
-##### Message Templates
+**Message Templates**
 
 <table border="1">
   <tr>
@@ -374,7 +381,7 @@ For each List Item:
   </tr>
 </table>
 
-
+<img src="../images/mock-scene-customize-preview.png" alt="Preview Customization" title="Preview Customization" style="border:1px solid gray; zoom:60%;">
 
 ### Flow View
 

@@ -1,6 +1,6 @@
 # Interaction Details Report
 
-## Generating Interaction Details Report
+## Generating the Interaction Details Report
 
 Interaction Details Report is a comprehensive report covering how all interactions were processed, by whom, and their final dispositions. This report contains the meta-data of each conversation, except the recording or transcript. A comma-separated list of all Disposition Codes assigned to that conversation is included in the CSV output file of the Interaction Details Report.
 
@@ -20,11 +20,11 @@ Steps to generate the Interaction Details Report:
         * CSV
     * Send To (single email address or a mailing list)
 7. Click **Create**.
-8. An instance of the **Interaction Details Report** is generated.
-<img src="../images/interaction-details-report-generated.png" alt="Interaction Details Report Created" title="Interaction Details Report Created" style="border: 1px solid gray; zoom:70%;">
+8. The **Interaction Details Report** is generated.
+<img src="../images/interaction-details-report-generated.png" alt="Interaction Details Report Created" title="Interaction Details Report Created" style="border: 1px solid gray; zoom:100%;">
 
 9. Click the **Run** icon next to the instance of the report.
-<img src="../images/run-interaction-details-report.png" alt="Run Interaction Details Report" title="Run Interaction Details Report" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/run-interaction-details-report.png" alt="Run Interaction Details Report" title="Run Interaction Details Report" style="border: 1px solid gray; zoom:100%;">
 
 While generating reports you have two options, Run On Demand and Schedule.
 
@@ -33,14 +33,14 @@ While generating reports you have two options, Run On Demand and Schedule.
 **Schedule**: While creating a new report or editing an existing report, the schedule of the report can be changed. The use of the schedule is the standard way to generate a report. If the report is scheduled for later then it will automatically be generated on the scheduled day and time without the need to click Run.
 
 10. Click the **PDF/Page** icon to generate the output of that report.
-<img src="../images/pdf-interaction-details-report.png" alt="Interaction Details Report PDF" title="Interaction Details Report PDF" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/pdf-interaction-details-report.png" alt="Interaction Details Report PDF" title="Interaction Details Report PDF" style="border: 1px solid gray; zoom:100%;">
 
-!!! Note
+    !!! Note
 
-    The red dot beside the report indicates that the report has been generated within the last 24 hours. You can download the report and save and view it in PDF format.
+        The red dot beside the report indicates that it was generated within the last 24 hours. You can download, save, and view the report in PDF format.
 
 The Agent Interaction Details report is generated and is available for download.
-<img src="../images/interaction-details-report-output.png" alt="Interaction Details Report Output" title="Interaction Details Report Output" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/interaction-details-report-output.png" alt="Interaction Details Report Output" title="Interaction Details Report Output" style="border: 1px solid gray; zoom:100%;">
 
 ### About Report Fields
 
@@ -143,3 +143,6 @@ The Agent Interaction Details report is generated and is available for download.
   </tr>
 </table>
 
+#### Related Link
+
+* [Reports List](../reports/reports-list.md)

@@ -4,7 +4,7 @@
 
 An **Agent Group** is a collection of agents based on skills, scopes, roles, functionalities, etc. Agents are assigned to groups to streamline customer service within Contact Center.
 
-To find _Agent Groups_, go to **Contact Center > AGENT & SUPERVISORS > Agent Management**. All groups are visible on this page by default.  
+To find _Agent Groups_, go to **Contact Center AI** > **AGENT & SUPERVISORS** > **Agent Management**. All groups are visible on this page by default.  
 <img src="../images/agent-groups-tab.png" alt="Agent Groups Tab" title="Agent Groups Tab" style="border: 1px solid gray; zoom:80%;">
 
 ### Agent Group Section Features
@@ -13,7 +13,7 @@ The Agent Group section includes the following features:
 
 * You can use the **Search** field to find a group by name.
 * Each group item shows the _Group Name, Description,_ and the _Number of Agents_ it includes.
-* Clicking any group name reveals the agents who are part of it. Each agent is listed with their name, Edit Action, Role, assigned Skills, and Queues. Learn more about [User Management](https://docs.kore.ai/smartassist/getting-started/agent-management/).
+* Clicking any group name reveals the agents who are part of it. Each agent is listed with their name, Edit Action, Role, assigned Skills, and Queues. Learn more about [User Management](../../../user-management/manage-users.md).
 
 ### Pre-configured Groups
 
@@ -41,7 +41,7 @@ To add agents to a group, you either need to add a new agent to the Contact Cent
 2. On the **profile**, select the desired group.
 3. **Save** the agent record.
 
-To learn more about adding or editing agents, please see [User Management](https://docs.kore.ai/smartassist/getting-started/agent-management/).
+To learn more about adding or editing agents, please see [Edit a User](../../../user-management/manage-users.md#edit-a-user).
 <img src="../images/group-dropdown.png" alt="Select Group" title="Select Group" style="border: 1px solid gray; zoom:80%;">
 
 ### Edit an Agent Group
@@ -81,6 +81,16 @@ Here you can see a list of existing statuses, along with the following informati
 * **Type**: The type of status, mentioning whether the agent is _Available, Away, Busy,_ or _Offline_ while the particular status is set.
 * **Description**: A short description of the status.
 <img src="../images/agent-status-page.png" alt="Agent Status Page" title="Agent Status Page" style="border: 1px solid gray; zoom:80%;">
+
+### System Away and System Busy Status
+
+**System Away**: When an agent does not accept or respond to an interaction within the configured acceptance timeout, the agent’s status automatically changes to system away.
+
+**System Busy**: When all the slots assigned to an agent are occupied, the agent’s status automatically changes to system busy.
+
+!!! Note
+
+    System Away and System Busy statuses are enabled by default for new accounts. To enable them for existing accounts, contact Kore Support. 
 
 ### Create an Agent Status
 
@@ -142,11 +152,11 @@ You can customize the following fields:
         2. Message 
         <img src="../images/edit-login-prep.png" alt="Edit Login Prep" title="Edit Login Prep" style="border: 1px solid gray; zoom:80%;">  
 
-3. Click **Update** to save the changes. 
-<img src="../images/update-login-prep-status.png" alt="Update Login Prep" title="Update Login Prep" style="border: 1px solid gray; zoom:80%;"> 
-A confirmation message is displayed. 
-<img src="../images/login-prep-enabled.png" alt="Login Prep Enabled" title="Login Prep Enabled" style="border: 1px solid gray; zoom:100%;"> 
-Once enabled, the Login Prep becomes the default status for every new login for the agent. [Learn more](https://docs.kore.ai/smartassist/console/interacting-with-customers/#Behavior_When_Login_Prep_Status_is_Enabled).
+3. Click **Update** to save the changes.  
+<img src="../images/update-login-prep-status.png" alt="Update Login Prep" title="Update Login Prep" style="border: 1px solid gray; zoom:80%;">   
+A confirmation message is displayed.  
+<img src="../images/login-prep-enabled.png" alt="Login Prep Enabled" title="Login Prep Enabled" style="border: 1px solid gray; zoom:100%;">  
+Once enabled, the Login Prep becomes the default status for every new login for the agent. [Learn more](../../../console/interacting-with-customers/interacting-with-customers.md#behavior-when-login-prep-status-is-enabled).
 
 ## **Agent Settings**
 
@@ -190,6 +200,11 @@ These settings are grouped and presented as closed groups when first opening the
 * **Auto**: Emails are auto-accepted, and the agent does not need to click ‘Accept’.
 <img src="../images/email-configuration-auto.png" alt="Email Configuration Auto" title="Email Configuration Auto" style="border: 1px solid gray; zoom:80%;">
 
+### Explicit Reject Button
+
+Turn on the toggle to add an explicit reject button for incoming conversations. This applies only in manual acceptance mode. This toggle is turned off by default.  
+<img src="../images/explicit-reject-button-toggle.png" alt="Explicit Reject Toggle" title="Explicit Reject Toggle" style="border: 1px solid gray; zoom:90%;">
+
 ## Conversation Status Control
 
 The Conversation Status Control settings are available for the following channels: Live Chat, Messaging, Voice, and Emails.
@@ -201,261 +216,35 @@ Different statuses apply to each channel. Watch the short demo below to see what
 
 Conversation statuses apply in certain conditions for specific channels. These are listed in the table below:
 
-<table>
-  <tr>
-   <td><strong>Status</strong>
-   </td>
-   <td><strong>Applicability</strong>
-   </td>
-   <td><strong>Channel</strong>
-   </td>
-   <td><strong>Message</strong>
-   </td>
-   <td><strong>Variables</strong>
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="2" >On Connect
-   </td>
-   <td rowspan="2" >When the agent connects
-   </td>
-   <td>Live Chat, Messaging.
-   </td>
-   <td>To User
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-  <tr>
-   <td>Voice
-   </td>
-   <td>To User
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name
-   </td>
-  </tr>
-  <tr>
-   <td>Due Reminder For Agent
-   </td>
-   <td>If the agent’s response time is greater than the set percentile of overdue conversations.
-   </td>
-   <td>Live Chat, Messaging.
-   </td>
-   <td>To Agent
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-  <tr>
-   <td>Agent Inactivity
-   </td>
-   <td>If the agent has not responded to an overdue conversation for the set time (in minutes and seconds).
-   </td>
-   <td>Live Chat
-   </td>
-   <td>To Agent
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-  <tr>
-   <td>Overdue
-   </td>
-   <td>If the agent has not responded for the set amount of time (in minutes and seconds).
-   </td>
-   <td>Live Chat, Messaging.
-   </td>
-   <td>To Agent
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-  <tr>
-   <td>Idle Reminder For Customer
-   </td>
-   <td>If the customer’s response time is greater than the set percentile of total idle customer conversations.
-   </td>
-   <td>Live Chat, Messaging.
-   </td>
-   <td>To User
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-  <tr>
-   <td>Idle
-   </td>
-   <td>If the customer has not responded for the set amount of time (in minutes and seconds).
-   </td>
-   <td>Live Chat, Messaging.
-   </td>
-   <td>To User
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="2" >Auto Expire
-   </td>
-   <td rowspan="2" >If the customer’s response time is greater than the set amount of time (in minutes and seconds).
-   </td>
-   <td rowspan="2" >Live Chat
-   </td>
-   <td>To User
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-  <tr>
-   <td>To Agent
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name
-   </td>
-  </tr>
-  <tr>
-   <td>On Interruption
-   </td>
-   <td>If the agent disconnects unexpectedly.
-   </td>
-   <td>Live Chat, Messaging.
-   </td>
-   <td>To User
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-  <tr>
-   <td>On Close
-   </td>
-   <td>If the agent closes the conversation.
-   </td>
-   <td>Live Chat, Messaging.
-   </td>
-   <td>To User
-   </td>
-   <td>Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name Elapsed Time, Expired Time.
-   </td>
-  </tr>
-</table>
+| **Status**                  | **Applicability**                                                                        | **Channel**             | **Message** | **Variables**                                                                                                     |
+|-----------------------------|------------------------------------------------------------------------------------------|-------------------------|-------------|-------------------------------------------------------------------------------------------------------------------|
+| **On Connect**              | When the agent connects                                                                  | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+|                             |                                                                                          | Voice                   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name                                               |
+| **Due Reminder For Agent**  | If the agent’s response time is greater than the set percentile of overdue conversations | Live Chat, Messaging.   | To Agent    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+| **Agent Inactivity**        | If the agent has not responded to an overdue conversation for the set time               | Live Chat               | To Agent    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+| **Overdue**                 | If the agent has not responded for the set amount of time                                | Live Chat, Messaging.   | To Agent    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+| **Idle Reminder For Customer** | If the customer’s response time is greater than the set percentile of total idle customer conversations | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+| **Idle**                    | If the customer has not responded for the set amount of time                             | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+| **Auto Expire**             | If the customer’s response time is greater than the set amount of time                   | Live Chat               | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+|                             |                                                                                          |                         | To Agent    | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name                                               |
+| **On Interruption**         | If the agent disconnects unexpectedly                                                    | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
+| **On Close**                | If the agent closes the conversation                                                     | Live Chat, Messaging.   | To User     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time.                  |
 
 ### Conversation Statuses by Channel (Email)
 
-<table>
-  <tr>
-   <td><strong>Status</strong>
-   </td>
-   <td><strong>Applicability</strong>
-   </td>
-   <td><strong>Channel</strong>
-   </td>
-   <td><strong>Message</strong>
-   </td>
-   <td><strong>Variables</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Overdue
-   </td>
-   <td>If the agent has not responded for the set amount of time (in hours and minutes).
-   </td>
-   <td>Email
-   </td>
-   <td>To Agent
-   </td>
-   <td>Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry.
-   </td>
-  </tr>
-  <tr>
-   <td>Due Reminder for Agent Inactivity
-   </td>
-   <td>If the agent’s response time is under the set amount of time (in hours).
-   </td>
-   <td>Email
-   </td>
-   <td>To Agent
-   </td>
-   <td>Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry.
-   </td>
-  </tr>
-  <tr>
-   <td>Agent Inactivity
-   </td>
-   <td>The conversation will be moved back to Queue, once it turns overdue if the agent has not responded for the set amount of time (in hours and minutes).
-   </td>
-   <td>Email
-   </td>
-   <td>To Agent
-   </td>
-   <td>Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry.
-   </td>
-  </tr>
-  <tr>
-   <td>Agent Offline
-   </td>
-   <td>If an agent gets disconnected unexpectedly, conversations will wait in queue for a set amount of time (in hours and minutes).
-   </td>
-   <td>Email
-   </td>
-   <td>To Agent
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>Customer Idle
-   </td>
-   <td>If the customer has not responded for the set amount of time (in hours and minutes) since the last agent response.
-   </td>
-   <td>Email
-   </td>
-   <td>To User
-   </td>
-   <td>Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry.
-   </td>
-  </tr>
-  <tr>
-   <td>Due Reminder for Auto Expiry
-   </td>
-   <td>If the customer’s response time is under the set amount of time (in hours) before Auto Expiry.
-   </td>
-   <td>Email
-   </td>
-   <td>To User
-   </td>
-   <td>Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry.
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="2" >Auto Expire
-   </td>
-   <td rowspan="2" >Once the conversation turns idle if the customer does not respond for the set amount of time (in hours and minutes) the interaction expires.
-   </td>
-   <td rowspan="2" >Email
-   </td>
-   <td>To User
-   </td>
-   <td>Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry.
-   </td>
-  </tr>
-  <tr>
-   <td>To Agent
-   </td>
-   <td>Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry.
-   </td>
-  </tr>
-  <tr>
-   <td>On Close
-   </td>
-   <td>If the conversation is closed by the agent.
-   </td>
-   <td>Email
-   </td>
-   <td>To User
-   </td>
-   <td>Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry.
-   </td>
-  </tr>
-</table>
+Here is the HTML table converted into Markdown format:
+
+| **Status**                       | **Applicability**                                                                                                                   | **Channel** | **Message** | **Variables**                                                              |
+|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|----------------------------------------------------------------------------|
+| Overdue                          | If the agent has not responded for the set amount of time (in hours and minutes).                                                    | Email       | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
+| Due Reminder for Agent Inactivity| If the agent’s response time is under the set amount of time (in hours).                                                            | Email       | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
+| Agent Inactivity                 | The conversation will be moved back to Queue, once it turns overdue if the agent has not responded for the set amount of time (in hours and minutes). | Email       | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
+| Agent Offline                    | If an agent gets disconnected unexpectedly, conversations will wait in queue for a set amount of time (in hours and minutes).       | Email       | To Agent    |                                                                            |
+| Customer Idle                    | If the customer has not responded for the set amount of time (in hours and minutes) since the last agent response.                  | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
+| Due Reminder for Auto Expiry     | If the customer’s response time is under the set amount of time (in hours) before Auto Expiry.                                      | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
+| Auto Expire                      | Once the conversation turns idle if the customer does not respond for the set amount of time (in hours and minutes) the interaction expires. | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
+|                                  |                                                                                                                                     |             | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
+| On Close                         | If the conversation is closed by the agent.                                                                                         | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
 
 ### Conversation Status Configuration
 
@@ -464,30 +253,30 @@ For each status, you can configure the following:
 1. **The response time after which the status should trigger**: This can be set in either as a percent value of a total or as minutes and seconds.
     1. The statuses for which you can set a percent value are: _Due Reminder For Agent_, and _Idle Reminder For Customer._
     2. The statuses for which you can set a response time (in minutes and seconds) are: _Overdue, Agent Inactivity, Idle_, and _Auto Expire_.
-    3. The statuses that do not require percentile or response time configuration are: _On Connect, On Interruption_, and _On Close_. 
-    <img src="../images/response-status.png" alt="Status Configuration" title="Status Configuration" style="border: 1px solid gray; zoom:80%;">
+    3. The statuses that do not require percentile or response time configuration are: _On Connect, On Interruption_, and _On Close_.  
+    <img src="../images/response-status.png" alt="Status Configuration" title="Status Configuration" style="border: 1px solid gray; zoom:80%;">  
     The following applies to emails:
     4. The statuses for which you can set a response time (in hours) are _Due Reminder for Agent Inactivity_, and _Due Reminder for Auto Expiry_.
     5. The status for which there is no response time is _On Close_.
     6. The statuses for which you can set a response time (in hours and minutes) are _Overdue_, Agent _Inactivity_, _Agent Offline_, _Customer Idle_, and _Auto Expire_.
 2. **The messaging goes out to either the user or the agent**. Status
-Messages can be edited by clicking the Edit icon under the Message column. 
+Messages can be edited by clicking the Edit icon under the Message column.  
 <img src="../images/status-edit.png" alt="Status Edit" title="Status Edit" style="border: 1px solid gray; zoom:80%;">
 
     7. Each status lets you edit the message text, add variables and select the language.
     <img src="../images/status-pop-up.png" alt="Status Message Dialog Box" title="Status Message Dilaog Box" style="border: 1px solid gray; zoom:80%;">
 
     8. **To add a variable**, place the cursor where you want to insert the variable, click the **Variable** field, then select the one you need. This adds a variable placeholder in your message text, which will be replaced with contextual information once the message reaches its recipient. You can select more than one variable within the same message.
-    For example: `{{agentFirstName}}` becomes Christine Mark.
-    <img src="../images/select-variables.png" alt="Add Variable" title="Add Variable" style="border: 1px solid gray; zoom:80%;">
-See the table in [Conversation Statuses by Channel](https://docs.kore.ai/smartassist/user-management/agent-settings/?preview_id=7923&preview_nonce=34f3bb377c&post_format=standard&_thumbnail_id=-1&preview=true#Conversation_Statuses_by_Channel) for details on available variables.
+    For example: `{{agentFirstName}}` becomes Christine Mark.  
+    <img src="../images/select-variables.png" alt="Add Variable" title="Add Variable" style="border: 1px solid gray; zoom:80%;">  
+See the tables in [Conversation Statuses by Channel (Live Chat, MEssaging, and Voice)](#conversation-statuses-by-channel-live-chat-messaging-and-voice) and [Conversation Statuses by Channel (Email)](#conversation-statuses-by-channel-email) for details on available variables.
 
 Once you configure your Conversation Statuses and Messaging, click **Save** at the bottom right of the Agent Settings screen.
 <img src="../images/save-button.png" alt="Save Conversation Status" title="Save Conversation Status" style="border: 1px solid gray; zoom:80%;">
 
 ## Call Recording Control
 
-By default, SmartAssist records all voice interactions. SmartAssist admins can disable call recording for all voice interactions.
+By default, SmartAssist records all voice interactions. SmartAssist admins can disable call recording for all voice interactions.  
 <img src="../images/call-recording-control.png" alt="Call Recording Control" title="Call Recording Control" style="border: 1px solid gray; zoom:80%;">
 
 ### Allow Agent to Pause/Resume
@@ -497,31 +286,31 @@ By default, the Allow Agent to Pause/Resume feature is disabled. However, admins
 
 ### Allow Virtual Assistant Dialogs to Pause/Resume
 
-By default, the Allow Virtual Assistant to Pause/Resume feature is disabled. However, admins can enable it for virtual assistants (automation) handling voice interactions, allowing them to pause the recording when collecting [Personally Identifiable Information](https://docs.kore.ai/smartassist/history/handling-pii-data/) (PII).
+By default, the Allow Virtual Assistant to Pause/Resume feature is disabled. However, admins can enable it for virtual assistants (automation) handling voice interactions, allowing them to pause the recording when collecting [Personally Identifiable Information (PII)](../../configurations/advanced-settings/handling-sensitive-data.md).  
 <img src="../images/allow-virtual-assistants-to-pause-resume.png" alt="Allow Virtual Assitant Dialogs to Pause/Resume Call Recording" title="Allow Virtual Assitant Dialogs to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
 
-Recorded calls are accessible to supervisors on the Dashboard’s [Interactions](https://docs.kore.ai/smartassist/dashboard/interactions/#Call_Recording) tab. The interactions are not recorded in the interactions tab for the duration that the recording was stopped/paused.
+Recorded calls are accessible to supervisors on the Dashboard’s [Interactions](../../../analytics/contact-center/interactions.md#call-recording) tab. The interactions are not recorded in the interactions tab for the duration that the recording was stopped/paused.
 
-Changes to the Call Recording Control settings are logged on the [Kore.ai Bots Admin Console](https://bots.kore.ai/admin/#_login) > Analytics > [Audit Report page](https://docs.kore.ai/smartassist/administration/audit-report/).
+Changes to the Call Recording Control settings are logged on the [Kore.ai Bots Admin Console](../../../administration/adminconsole.md#accessing-the-admin-console) > Analytics > [Audit Report page](../../../administration/analytics.md#audit-report-details).
 
 ## Transfers
 
 ### Transfer to External Contacts
 
-If enabled, this option allows agents to transfer ongoing customer calls to the external contacts list, via the Agent Console. Please see [Agent Console > Transfer Interactions](https://docs.kore.ai/smartassist/console/interacting-with-customers/#Transfer_Interactions) to learn more.
+If enabled, this option allows agents to transfer ongoing customer calls to the external contacts list, via the Agent Console. Please see [Agent Console > Transfer Interactions](../../../console/interacting-with-customers/interacting-with-customers.md#transfer-interactions) to learn more.  
 <img src="../images/transfer-to-external-contacts.png" alt="Enable Transfer to External Contacts" title="Enable Transfer to External Contacts" style="border: 1px solid gray; zoom:80%;">
 
 ### Enforce Skill Match for Transfers
 
-If enabled, the system considers skills while finding an agent, during a queue transfer. If disabled, the system ignores skills while finding an agent, during a queue transfer.
+If enabled, the system considers skills while finding an agent, during a queue transfer. If disabled, the system ignores skills while finding an agent, during a queue transfer.  
 <img src="../images/enforce-skill-match-for-transfers.png" alt="Enable Enforce Skill Match for Transfers" title="Enable Enforce Skill Match for Transfers" style="border: 1px solid gray; zoom:80%;">
 
 ### Transfer Destinations
 
-Supervisors can decide where agents can transfer interactions: 
+Supervisors can decide where agents can transfer interactions:
 
 * **Queues & Agents**: Agents can transfer interactions to queues and other individual agents.
-* **Queues only**: Agents can transfer interactions only to queues.
+* **Queues only**: Agents can transfer interactions only to queues.  
 <img src="../images/transfer-destinations.png" alt="Transfer Destinations" title="Transfer Destinations" style="border: 1px solid gray; zoom:80%;">
 
 ## Skill Modification
@@ -536,7 +325,7 @@ You can select from the following options:
 
 ## Auto Logout
 
-This feature allows administrators to specify the period of inactivity after which auto logout occurs. By default, auto logout is disabled.
+This feature allows administrators to specify the period of inactivity after which auto logout occurs. By default, auto logout is disabled.  
 <img src="../images/auto-logout.png" alt="Auto Logout" title="Auto Logout" style="border: 1px solid gray; zoom:80%;">
 
 Enabling the setting allows administrators to configure the following rules:
@@ -550,5 +339,5 @@ Enabling the setting allows administrators to configure the following rules:
 
 This feature allows agents to temporarily pause conversations that are awaiting a response from the customer or require any necessary action from the agent.
 
-By default, the snooze functionality is disabled. Administrators can turn on the **Snooze** toggle to enable the functionality.
+By default, the snooze functionality is disabled. Administrators can turn on the **Snooze** toggle to enable the functionality.  
 <img src="../images/enable-snooze.png" alt="Enable Snooze" title="Enable Snooze" style="border: 1px solid gray; zoom:80%;">

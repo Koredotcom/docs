@@ -314,3 +314,19 @@ To verify the data exchange between Kore.ai’s VA and ServiceNow agent, follow 
 10. Now, the connection between the ServiceNow agent and the user has been established, and the conversation continues.
 
     <img src="../images/configuring-the-servicenow-agent-tokyo-img39.png" alt="Connection established between Servicenow agent and user" title="Connection established between Servicenow agent and user" style="border: 1px solid gray;zoom:80%;">
+
+
+
+
+### Enable Attachment Sharing with Live Agents
+
+Follow these steps:
+
+1. Log in to your ServiceNow account with admin user credentials.
+2. Go to **System Properties** > **sys_cs_provider_application.list** > **Configure** > **Form Layout**.
+3. In the **Trusted Media Domains** field, enter the domain you want to send and receive the attachments.
+<img src="../images/sn-at.png" alt="Attachment Sharing" title="Attachment Sharing" style="border: 1px solid gray;zoom=60%;">
+
+!!! note
+
+    This feature currently supports only Tokyo versions.

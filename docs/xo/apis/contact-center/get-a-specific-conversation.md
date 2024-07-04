@@ -2,68 +2,19 @@
 
 Get a particular conversation by providing the Conversation Id.
 
-<table>
-  <tr>
-   <td>Method
-   </td>
-   <td>GET
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoint
-   </td>
-   <td><code>https://{{host}}/agentassist/api/v1/public/{{streamId}}/conversations/{{conversation-id}}</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content-Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>SmartAssist Analytics
-   </td>
-  </tr>
-</table>
+| **Method**       | GET                                                                                          |
+|--------------|----------------------------------------------------------------------------------------------|
+| **Endpoint**     | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/conversations/{{conversation-id}}` |
+| **Content Type** | `application/json`                                                                          |
+| **Authorization** | `auth: {{JWT}}` <br>See [How to generate the JWT Token](../automation/api-introduction.md#generating-the-jwt-token)                                                                           |
+| **API Scope**    | SmartAssist Analytics                                                                       |
 
 ## Path Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>The Environment URL. For example, https://smartassist.kore.ai
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>streamId
-   </td>
-   <td>Bot ID or Stream ID. You can access it from the General Settings page of the bot.
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-</table>
+| **PARAMETER** | **DESCRIPTION**                                      | **TYPE**           |
+|-----------|--------------------------------------------------|----------------|
+| host      | The Environment URL. For example, https://platform.kore.ai | string, required |
+| streamId  | Bot ID or Stream ID. You can access it from the General Settings page of the bot. | string, required |
 
 ## Sample Request
 
@@ -75,26 +26,9 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
 
 ## Query Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>conversationId
-   </td>
-   <td>A specific conversationId. This will fetch the records from that conversation. In case only the specific conversation is required, set the limit to 1.
-
-    NOTE: This field cannot be used in combination with dateFrom and dateTo.
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-</table>
+| **PARAMETER**       | **DESCRIPTION**                                                                                                                                                                   | **TYPE**           |
+|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
+| conversationId  | A specific conversationId. This will fetch the records from that conversation. In case only the specific conversation is required, set the limit to 1. This field cannot be used in combination with dateFrom and dateTo. | string, required |
 
 ## Sample Response
 
@@ -102,10 +36,10 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
 {
     "participants": [
         {
-            "queueId": "qu-241a4d7-e5d0-45a9-8032-8238450501c2",
+            "queueId": "qu-241a4d7-e5d0-45a9-8032-82384505xxxx",
             "queueStartTime": "2023-05-22T04:55:05.350Z",
             "queueName": "Default Queue",
-            "agentId": "u-b19cd89e-6533-59af-b491-eec9bf8f8b9f",
+            "agentId": "u-b19cd89e-6533-59af-b491-eec9bf8fxxxx",
             "name": "John Doe",
             "status": "INACTIVE",
             "assignedAt": "2023-05-22T04:55:05.452Z",
@@ -117,17 +51,17 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
     ],
     "transferDetails": [
         {
-            "fromQueue": "qu-241a4d7-e5d0-45a9-8032-8238450501c2",
-            "fromAgent": "u-b19cd89e-6533-59af-b491-eec9bf8f8b9f",
+            "fromQueue": "qu-241a4d7-e5d0-45a9-8032-82384505xxxx",
+            "fromAgent": "u-b19cd89e-6533-59af-b491-eec9bf8fxxxx",
             "transferredType": "QUEUE",
             "transferredTo": [
                 {
-                    "id": "qu-241a4d7-e5d0-45a9-8032-8238450501c2",
+                    "id": "qu-241a4d7-e5d0-45a9-8032-82384505xxxx",
                     "name": "Default Queue",
                     "type": "QUEUE"
                 }
             ],
-            "transferredBy": "u-b19cd89e-6533-59af-b491-eec9bf8f8b9f",
+            "transferredBy": "u-b19cd89e-6533-59af-b491-eec9bf8fxxxx",
             "priority": "HIGHEST",
             "transferredAt": "2023-05-22T05:29:14.007Z",
             "isManager": false
@@ -140,13 +74,13 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
     "contactFlow": [],
     "surveyRequired": "YES",
     "isDeveloper": false,
-    "_id": "c-3c04346-e522-4c53-9e03-c9566d859aad",
-    "orgId": "o-ca23f4c5-cc3e-586d-90e6-8375bf2d54ab",
-    "userId": "u-aa15c0f4-7f78-5912-8713-f5cd1c3e476e",
-    "accountId": "637368b4a1d039e34ba63bbf",
-    "botId": "st-3bf09bef-f979-5489-b337-f465bd5db1f4",
+    "_id": "c-3c04346-e522-4c53-9e03-c9566d85xxxx",
+    "orgId": "o-ca23f4c5-cc3e-586d-90e6-8375bf2dxxxx",
+    "userId": "u-aa15c0f4-7f78-5912-8713-f5cd1c3exxxx",
+    "accountId": "637368b4a1d039e34ba6xxxx",
+    "botId": "st-3bf09bef-f979-5489-b337-f465bd5dxxxx",
     "source": "rtm",
-    "botSessionId": "646af57bcc41e5bfbd5efb82",
+    "botSessionId": "646af57bcc41e5bfbd5exxxx",
     "language": "en",
     "keyIntentName": "TalkToAgent",
     "keyIntentUserInput": "I want to talk to an agent",
@@ -166,7 +100,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
             "type": "ASSIGNED",
             "status": "INACTIVE",
             "isPreferredAgentTimeoutExpired": true,
-            "id": "qu-241a4d7-e5d0-45a9-8032-8238450501c2",
+            "id": "qu-241a4d7-e5d0-45a9-8032-82384505xxxx",
             "name": "Default Queue",
             "startTime": "2023-05-22T04:55:05.350Z"
         },
@@ -174,7 +108,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
             "type": "TRANSFERRED",
             "status": "ACTIVE",
             "isPreferredAgentTimeoutExpired": true,
-            "id": "qu-241a4d7-e5d0-45a9-8032-8238450501c2",
+            "id": "qu-241a4d7-e5d0-45a9-8032-82384505xxxx",
             "startTime": "2023-05-22T05:29:14.007Z",
             "name": "Default Queue"
         }
@@ -208,11 +142,11 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
         "activationStatus": "active",
         "firstName": "",
         "lastName": "",
-        "orgId": "o-e31a1a45-c24a-5074-b4b7-d44396e6e4ac",
-        "_id": "u-aa15c0f4-7f78-5912-8713-f5cd1c3e476e",
+        "orgId": "o-e31a1a45-c24a-5074-b4b7-d44396e6xxxx",
+        "_id": "u-aa15c0f4-7f78-5912-8713-f5cd1c3exxxx",
         "identities": [
             {
-                "val": "cs-b6296994-21c9-5108-9dee-1ab3dbbd0b8b/dc5680b0-a4a4-4ed1-afe7-fa77bda4f1586736bed4-850f-41cf-8baf-2eb8857490ce",
+                "val": "cs-b6296994-21c9-5108-9dee-1ab3dbbdxxxx/dc5680b0-a4a4-4ed1-afe7-fa77bda4f1586736bed4-850f-41cf-8baf-2eb88574xxxx",
                 "type": "mapped"
             }
         ],
@@ -223,12 +157,12 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
             "assistEvents": {
                 "startEvent": {
                     "isEnabled": true,
-                    "botId": "st-ba0fcf10-b687-53b0-ad16-16cbacf20dd1",
-                    "dialogId": "dg-dea45cdd-c731-522e-a1dd-f5d5aacc5f39",
-                    "dialogRefId": "6f3688aa-f41b-5d6e-8444-e27c6c225634"
+                    "botId": "st-ba0fcf10-b687-53b0-ad16-16cbacf2xxxx",
+                    "dialogId": "dg-dea45cdd-c731-522e-a1dd-f5d5aaccxxxx",
+                    "dialogRefId": "6f3688aa-f41b-5d6e-8444-e27c6c22xxxx"
                 }
             },
-            "automationBotId": "st-ba0fcf10-b687-53b0-ad16-16cbacf20dd1",
+            "automationBotId": "st-ba0fcf10-b687-53b0-ad16-16cbacf2xxxx",
             "lastIntentName": "TalkToAgent",
             "lastIntentuserInput": "I want to talk to an agent",
             "dialog_tone": []
@@ -237,7 +171,7 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
         "country": "India",
         "isp": "Bharti Airtel Ltd. AS for GPRS Service",
         "ipAddress": "106.203.156.168",
-        "queue": "qu-241a4d7-e5d0-45a9-8032-8238450501c2",
+        "queue": "qu-241a4d7-e5d0-45a9-8032-82384505xxxx",
         "hostDomain": "https://bots.kore.ai",
         "os": "Windows",
         "device": "NA"
@@ -247,237 +181,33 @@ curl --location 'https://{{host}}/agentassist/api/v1/public/{{streamId}}/convers
 
 ## Response Body Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>transferDetails
-   </td>
-   <td>Transfer details of the conversation.
-   </td>
-   <td>array
-   </td>
-  </tr>
-  <tr>
-   <td>waitTime
-   </td>
-   <td>The wait time for the conversation in milliseconds.
-   </td>
-   <td>integer
-   </td>
-  </tr>
-  <tr>
-   <td>isProactiveAgentAssistEnabled
-   </td>
-   <td>Whether proactive AgentAssist is enabled for the conversation.
-   </td>
-   <td>boolean
-   </td>
-  </tr>
-  <tr>
-   <td>callbackOpted
-   </td>
-   <td>Whether callback is opted for the conversation.
-   </td>
-   <td>boolean
-   </td>
-  </tr>
-  <tr>
-   <td>contactFlow
-   </td>
-   <td>Contact flow information for the conversation.
-   </td>
-   <td>array
-   </td>
-  </tr>
-  <tr>
-   <td>surveyRequired
-   </td>
-   <td>Whether a survey is required for the conversation.
-   </td>
-   <td>boolean
-   </td>
-  </tr>
-  <tr>
-   <td>isDeveloper
-   </td>
-   <td>Whether the user is a developer.
-   </td>
-   <td>boolean
-   </td>
-  </tr>
-  <tr>
-   <td>id
-   </td>
-   <td>The conversation Id.
-   </td>
-   <td>integer
-   </td>
-  </tr>
-  <tr>
-   <td>userId
-   </td>
-   <td>The ID of the user associated with the conversation.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>source
-   </td>
-   <td>The source of the conversation.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>botSessionId
-   </td>
-   <td>The ID of the bot session associated with the conversation.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>keyIntentName
-   </td>
-   <td>The key intent for the conversation.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>keyIntentUserInput
-   </td>
-   <td>The user input associated with the key intent for the conversation.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>agentDesktopMeta
-   </td>
-   <td>Additional metadata related to the agent desktop.
-   </td>
-   <td>object
-   </td>
-  </tr>
-  <tr>
-   <td>conversationType
-   </td>
-   <td>The type of conversation (for example, messaging).
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>priority
-   </td>
-   <td>The priority level of the conversation.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>queues
-   </td>
-   <td>Queue details for the conversation.
-   </td>
-   <td>array
-   </td>
-  </tr>
-  <tr>
-   <td>startTime
-   </td>
-   <td>The start time of the conversation.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>endTime
-   </td>
-   <td>The end time of the conversation
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>formData
-   </td>
-   <td>Form data associated with the conversation.
-   </td>
-   <td>array
-   </td>
-  </tr>
-  <tr>
-   <td>timestampValue
-   </td>
-   <td>The timestamp value of the conversation.
-   </td>
-   <td>integer
-   </td>
-  </tr>
-  <tr>
-   <td>createdAt
-   </td>
-   <td>The creation time of the conversation.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>updatedAt
-   </td>
-   <td>Last updated time of the conversation.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>skills
-   </td>
-   <td>The skills associated with the conversation.
-   </td>
-   <td>array
-   </td>
-  </tr>
-  <tr>
-   <td>acceptedAt
-   </td>
-   <td>The time when the conversation was accepted.
-   </td>
-   <td>string
-   </td>
-  </tr>
-  <tr>
-   <td>notes
-   </td>
-   <td>Notes associated with the conversation.
-   </td>
-   <td>array
-   </td>
-  </tr>
-  <tr>
-   <td>dispositions
-   </td>
-   <td>Disposition details for the conversation.
-   </td>
-   <td>object
-   </td>
-  </tr>
-  <tr>
-   <td>userInfo
-   </td>
-   <td>User information associated with the conversation.
-   </td>
-   <td>object
-   </td>
-  </tr>
-</table>
+| **PARAMETER**                  | **DESCRIPTION**                                                      | **TYPE**     |
+|----------------------------|------------------------------------------------------------------|----------|
+| transferDetails            | Transfer details of the conversation.                            | array    |
+| waitTime                   | The wait time for the conversation in milliseconds.             | integer  |
+| isProactiveAgentAssistEnabled | Whether proactive AgentAssist is enabled for the conversation. | boolean  |
+| callbackOpted              | Whether callback is opted for the conversation.                  | boolean  |
+| contactFlow                | Contact flow information for the conversation.                  | array    |
+| surveyRequired             | Whether a survey is required for the conversation.               | boolean  |
+| isDeveloper                | Whether the user is a developer.                                | boolean  |
+| id                         | The conversation Id.                                             | integer  |
+| userId                     | The ID of the user associated with the conversation.             | string   |
+| source                     | The source of the conversation.                                  | string   |
+| botSessionId               | The ID of the bot session associated with the conversation.      | string   |
+| keyIntentName              | The key intent for the conversation.                             | string   |
+| keyIntentUserInput         | The user input associated with the key intent for the conversation. | string |
+| agentDesktopMeta           | Additional metadata related to the agent desktop.                | object   |
+| conversationType           | The type of conversation (for example, messaging).               | string   |
+| priority                   | The priority level of the conversation.                          | string   |
+| queues                     | Queue details for the conversation.                             | array    |
+| startTime                  | The start time of the conversation.                              | string   |
+| endTime                    | The end time of the conversation.                                | string   |
+| formData                   | Form data associated with the conversation.                       | array    |
+| timestampValue             | The timestamp value of the conversation.                         | integer  |
+| createdAt                  | The creation time of the conversation.                           | string   |
+| updatedAt                  | Last updated time of the conversation.                           | string   |
+| skills                     | The skills associated with the conversation.                     | array    |
+| acceptedAt                 | The time when the conversation was accepted.                     | string   |
+| notes                      | Notes associated with the conversation.                          | array    |
+| dispositions               | Disposition details for the conversation.                        | object   |
+| userInfo                   | User information associated with the conversation.               | object   |

@@ -89,9 +89,9 @@ The options listed include the default mapped integrations and others available 
         * Skip the **Key-Value** input and move to the next step. Not adding these parameters will create a Zendesk ticket with the conversation details but not close it.
 
 8. Select **_Yes_** for **Enable Channel**.
-
+    ![alt_text](images/sunshine-(6).png )
 9. Click **Save**.
-    ![alt_text](images/sunshine-(6).png "image_tooltip")
+    
 
 
 		

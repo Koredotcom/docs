@@ -10,7 +10,7 @@ Here, the bot is the core of the entire solution. Apart from performing all its 
 
 * **Bot**: Chat Bot that the user interacts with.
 * **Users**: Users are the customers who are using this bot.
-* **Agent**: Agents are humans who chat with users. The agent will also need a chat window. For this, you can use _Unblu _software.
+* **Agent**: Agents are humans who chat with users. The agent will also need a chat window. For this, you can use _Unblu_ software.
 
 
 ## Prerequisites

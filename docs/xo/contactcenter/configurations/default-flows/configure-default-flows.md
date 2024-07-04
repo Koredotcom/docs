@@ -9,17 +9,17 @@ Here, you can configure the interaction flow based on the customer’s behavior 
 
 The contact center module provides inbuilt **Phone and Chat Experience** flows for these scenarios. However, you can change the default flow and the message to the customer based on the current conversation channel.
 
-To start, go to **Contact Center > Configuration > Default Flows**.
+To start, go to **Contact Center AI** > **CONFIGURATIONS** > **Default Flows**.
 <img src="../images/default-flows-page.png" alt="
 Default Flows Page" title="Default Flows Page" style="border: 1px solid gray; zoom:80%;">
 
-# Phone Experiences
+## Phone Experiences
 
 The following sections describe configuring the default flows for a phone experience.
 
-## Off-Working Hours
+### Off-Working Hours
 
-This flow plays a voice message to the caller who tries to reach an agent during off-working or non-business hours. Off-working hours are considered those that are outside of your configured [Hours of Operation](https://docs.kore.ai/smartassist/settings/hours-of-operation-2/).
+This flow plays a voice message to the caller who tries to reach an agent during off-working or non-business hours. Off-working hours are considered those that are outside of your configured [Hours of Operation](../hours-of-operation/manage-hours-of-operation.md).
 
 To configure the **Off Working Hours** flow, click the **Off Working Hours** tile in the **Phone Experiences** section.
 <img src="../images/off-working-hours-phone.png" alt="
@@ -29,7 +29,7 @@ In the **Off Working Hours for Calls** panel, a text area displays the default m
 <img src="../images/configure-off-working-hours-phone.png" alt="
 Configure Off Working Hours - Phone Experience" title="Configure Off Working Hours - Phone Experience" style="border: 1px solid gray; zoom:80%;">
 
-## No Agents Available
+### No Agents Available
 
 You can set the message played to the customer if the available online agents don’t have the required skills.
 To configure the **No Agents Available** flow, click the **No Agents Available** tile under **Phone Experiences**.
@@ -40,16 +40,16 @@ In the **No Online Agents with needed skill** panel, use the text area to config
 <img src="../images/configure-no-agents-avilable-phone.png" alt="
 Configure No Agents Available  - Phone Experience" title="Configure No Agents Available - Phone Experience" style="border: 1px solid gray; zoom:80%;">
 
-# Chat Experiences
+## Chat Experiences
 
 The following sections describe the default flows configuration for a chat experience.
 
-## Off Working Hours
+### Off Working Hours
 
 The **Off Working Hours** flow sets the auto-response message during non-business hours for automated and live chats. To configure this feature, follow these steps:
 
 1. Click the **Off Working Hours** tile under **Chat Experiences**.
-2. In the **Off Working Hours for Chats** panel, you can define the messages displayed during off-working hours (based on the [hours of operation](https://docs.kore.ai/smartassist/settings/hours-of-operation-2/)) when a customer attempts to reach a live chat agent.
+2. In the **Off Working Hours for Chats** panel, you can define the messages displayed during off-working hours (based on the [hours of operation](../hours-of-operation/manage-hours-of-operation.md)) when a customer attempts to reach a live chat agent.
 
 You can define messages for the following scenarios:
 

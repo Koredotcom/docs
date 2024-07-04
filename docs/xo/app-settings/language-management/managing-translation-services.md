@@ -25,10 +25,14 @@ To enable automatic translation using Google Translation Services, please follow
 
 1. Go to **App Settings > Language Management > Translation Configurations**.
 2. Select **Google Translator**.
-3. Provide the **API Key** of your Google Translation API service. [Learn More.](https://cloud.google.com/translate){:target="_blank"}
+3. Provide the **API Key** (Eg: AIzaXXXXXXXXXXXXXXXXXXXEpeW4xa0) of your Google Translation API service in the **Access Key** field [Learn More.](https://cloud.google.com/translate){:target="_blank"}
+    * **Note** that the Platform does not validate the key. It is highly recommended that the key is **validated beforehand and is active and working**. A tool like Postman can be used to validate the key.
+    * You can also save the translator key in an **environment / content variable** and provide that variable name enclosed in double curly braces while setting up the configuration.
 4. Click **Save** to complete the setup.
 
 <img src="../images/mts-img2-google-translation-config-1.png" alt="Translation configurations - Google" title="Translation Configurations - Google" style="border: 1px solid gray;zoom:50%;"/>
+
+To know how to use the service, please visit [KoreUtil Libraries – autoTranslate.](../../../apis/automation/koreutil-libraries/#koreutilautotranslate){:target="_blank"}
 
 
 ## Configuring Custom Translation Service

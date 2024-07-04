@@ -8,7 +8,7 @@ You can query or get information from an external system by defining a service r
 
 ### General Settings
 
-Click the **General Settings** icon and configure the following:
+Click the **General Settings** icon and configure the following:  
 <img src="./../images/general-settings-api.png" alt="General Settings" title="General Settings" style="border: 1px solid gray; zoom:70%;">
 
 1. A **Custom Name** to identify the node.
@@ -18,8 +18,9 @@ Click the **General Settings** icon and configure the following:
 3. Select an **Integration Type** from the following options:
     3. **Synchronous**: The API returns resources, data, or services immediately.
     4. **Asynchronous**: The API returns resources, data, or services later based on the number of seconds you select. The default selection is 20s, and the available options range from 8s to 20s.
-4. Under **Request Definition**, configure the API request. Define the _GET, PUT, POST_, or _DELETE_ service request, along with the API call and parameters to pass. To create a new request, click **+ Define Request**.
+4. Under **Request Definition**, configure the API request. Define the _GET, PUT, POST_, or _DELETE_ service request, along with the API call and parameters to pass. To create a new request, click **+ Define Request**.  
 <img src="./../images/request-definition.png" alt="Request Definition" title="Request Definition" style="border: 1px solid gray; zoom:70%;">
+
 Define your API request by following the steps outlined in Define and Test an API Request, available below.
 
 5. Under **Access Using URL Connector**, select “URLs are behind a firewall and a connector has been set up” if the API must be accessed using a configured URL connector.  
@@ -67,10 +68,11 @@ Use this section to handle system errors during customer interactions.
 * **Your Message to User**: The message that will be played or displayed to the customer. Select one of the following options from under **Choose your message type**:
     * **Text to speech**: This option allows you to transcribe text to speech. Type the text to be transcribed in the textbox or select an already configured message.
         * Click **+ Create New** to create a new prompt for the text-to-speech message type. Enter a name for your message and type its contents.
-        * Define multiple message types for the prompt message to be played to the customer by clicking **+ Add Another**. In this case, one message will be randomly selected and played during runtime.
+        * Define multiple message types for the prompt message to be played to the customer by clicking **+ Add Another**. In this case, one message will be randomly selected and played during runtime.  
     <img src="./../images/text-to-speech-api.png" alt="Text to Speech" title="Text to Speech" style="border: 1px solid gray; zoom:70%;">
+
     * **Audio File**: You can type a new message to be played to the customer in the text field or click **+ Upload New** to upload an audio file (.mp3 or .wav format) with the message to be played;
     <img src="./../images/audio-file-api.png" alt="Audio File" title="Audio File" style="border: 1px solid gray; zoom:70%;">
-    * **Link**: Click **+ Create New** to add the text of the message you want to play to the customer and insert the URL of an audio file in .mp3 or .wav format. Click **+ Add Another** to add another message URL.
+    * **Link**: Click **+ Create New** to add the text of the message you want to play to the customer and insert the URL of an audio file in .mp3 or .wav format. Click **+ Add Another** to add another message URL.  
     <img src="./../images/link-api.png" alt="Link" title="Link" style="border: 1px solid gray; zoom:70%;">
 * **Go to node**: Select the node to which you want to direct the error handling flow and define the system behavior. You can create a new node by selecting a node type or identifying and selecting an existing node.

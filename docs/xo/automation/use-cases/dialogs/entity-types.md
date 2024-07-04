@@ -1080,7 +1080,9 @@ Post v7.1, the following keys are added to the context object for the below-ment
 
 !!! Note
 
-    The ‘**Display List of Values**’ option is available only for the [List of Items (enumerated)](#list-of-items-enumerated). It is **NOT** available for the [List of Items (lookup)](#list-of-items-lookup).
+    * The ‘**Display List of Values**’ option is available only for the [List of Items (enumerated)](#list-of-items-enumerated). It is **NOT** available for the [List of Items (lookup)](#list-of-items-lookup).
+
+    * When using a list of values entities in the context object, the VA only supports attribute types as “String” for **Title**, **Value**, and **Synonyms**. 
 
 
 ### List of Items (lookup)
@@ -1567,7 +1569,9 @@ Captures a web URL from the utterance. The virtual assistant recognizes all stan
 
 ### Zip Code
 
-Captures a US zip code from the user utterance. For example, _What is the weather for 32746?_ The value for **Zip Code** is 32746 and is returned as a string.
+Captures a zip code from the user utterance. For example, _What is the weather for 32746?_ The value for Zip Code is 32746 and is returned as a string.
+
+Please note that the entity does not pick a zip code from regular expressions (eg: #$A1B2%), however it successfully picks the zip code if it contains hyphen, spaces or leading “0”s in the utterance.
 
 ```
 "entities":

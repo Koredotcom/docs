@@ -1,6 +1,6 @@
-# Bot Functions
+# App Functions
 
-Bot Functions is a feature that uses a custom Script file that enables you to collate and manage reusable utility JavaScript functions that can be used by different tasks, nodes, and other elements. Once you upload a custom script file to the assistant, it reduces the redundant development efforts by making all the functions in the file accessible anywhere in the assistant.
+App Function is a feature that uses a custom Script file that enables you to collate and manage reusable utility JavaScript functions that can be used by different tasks, nodes, and other elements. Once you upload a custom script file to the assistant, it reduces the redundant development efforts by making all the functions in the file accessible anywhere in the assistant.
 
 
 # Using the Custom Script File
@@ -48,8 +48,8 @@ print(custTemplatel(info));|
 Follow these steps to upload the script file to the assistant:
 
 1. Select **App Settings** from the left menu.
-2. Select **Dev Tools** from the menu, and then the **Bot Functions** tab.  
-<img src="../images/bot-functions-img2.png" alt="Navigate to Bot Functions" title="Navigate to Bot Functions" style="border: 1px solid gray;zoom:50%;"/>
+2. Select **Dev Tools** from the menu, and then the **App Function** tab.  
+<img src="../images/bot-functions-img2.png" alt="Navigate to App Function" title="Navigate to App Function" style="border: 1px solid gray;zoom:50%;"/>
 
 3. Under **Custom Script**, click **Import**.
 4. On the _Import Custom Script_ dialog, click **Browse** and navigate to the script file in your local machine. Click **Import**. You can also drag and drop the script file from the folder on the local machine.
@@ -60,7 +60,7 @@ Follow these steps to upload the script file to the assistant:
 You can add or modify functions in the custom script file by downloading the file, making changes, and then importing it back to the assistant. Importing a new custom script file replaces the existing file, which cannot be retrieved later. Therefore, we recommend you exercise caution and keep a copy of the downloaded file for backup.
 
 1. Select **App Settings** from the left menu.
-2. Select **Dev Tools** from the menu, and then the **Bot Functions** tab.
+2. Select **Dev Tools** from the menu, and then the **App Function** tab.
 3. Under the **Custom Script**, click **Download** to save a copy of the file on your local computer.
 4. After you make changes to the file, click **Import New**.
 5. Click **Browse** to the location of the custom script file on your local computer and then click **Import**.

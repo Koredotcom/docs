@@ -71,6 +71,7 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 To access the **Settings Console** on GALE, follow the steps below:
 
 1. [Log in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE using your credentials.
+
 2. Click **Settings** on the top menu.
 <img src="../images/Settings-console-access.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
 

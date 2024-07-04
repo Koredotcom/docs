@@ -6,7 +6,7 @@ Here, you can configure the interaction flow based on the customer’s behavior 
 
 1. **Out of Hours Flow**: When the customer tries to connect to an agent outside of working hours.
 2. **No Agents Available Flow**: When agents with specific skills, required by the customer, are unavailable.
-3. **In Queue Flow**: When a customer is waiting in the queue for an agent transfer. [Learn more](https://docs.kore.ai/smartassist/experience-flows/agent-transfer-2/).
+3. **In Queue Flow**: When a customer is waiting in the queue for an agent transfer. [Learn more](../../flows/node-types/agent-transfer.md).
 
 Contact Center AI provides default Call and Chat flows for “Out of Hours” and “No Agents Available” scenarios. However, you can change the default flow and the message to the customer based on the current conversation channel.
 

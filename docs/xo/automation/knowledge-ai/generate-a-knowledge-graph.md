@@ -2,7 +2,7 @@
 
 The performance of the  Knowledge Graph is based on its organization which is influenced by the key domain terms, and the established hierarchy.
 
-Building the FAQ is easy when you start fresh with the Knowledge Graph, but in case you have a list of questions-answer pairs, converting them into a fully-functional Knowledge Graph is tedious.
+Building the FAQ is easy when you start fresh with the Knowledge Graph, but in case you have a list of questions-answer pairs, converting them into a fully-functional Knowledge Graph is tedious task.
 
 The XO Platform provides a Knowledge Graph Generator that automatically extracts terms from FAQ, defines the hierarchy between these terms, and also associates the FAQ to the right terms. You can then import the output file from the generator to your VA’s Knowledge Graph without worrying about the hierarchy. 
 
@@ -24,7 +24,7 @@ The Kore.ai Knowledge Graph Generator is hosted on the Kore GitHub repository. T
     * Windows 10 users must install **Windows 10 SDK**. You can download it <a href="https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk/" target="_blank">here</a>.
     * The operating system must be up to date for a seamless installation of requirements. Some libraries like SpiCy (internal dependency) need specific DLLs that are available in the latest updates.
 * A file containing the FAQs in _JSON_ or _CSV_ format. You can obtain this file in two ways:
-    * Export the Knowledge Graph from XO Platform, <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/import-and-export-knowledge-graph/" target="_blank">Learn more</a>.
+    * Export the Knowledge Graph from XO Platform. [Learn more](import-and-export-knowledge-graph.md).
     * Build the Knowledge Graph in a tabular form with questions in the first column and answers in the corresponding second column and save the file in _CSV_ format.
 
 ## Configuration
@@ -124,7 +124,7 @@ The output JSON file is generated and placed under the project root directory wi
 
 The output JSON file can directly be imported to Knowledge Graph in the bot. 
 
-Please refer to this <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/import-and-export-knowledge-graph/#import" target="_blank">link</a> for steps to import Knowledge Graph.
+See [steps to import Knowledge Graph](import-and-export-knowledge-graph.md).
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>

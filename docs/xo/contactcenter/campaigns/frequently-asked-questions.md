@@ -1,68 +1,69 @@
 # Frequently Asked Questions (FAQ)
 
-1. **What is the difference in the resumption behavior of a paused and a completed campaign when using the 'Rerun' icon?**
+* **What is the difference in the resumption behavior of a paused and a completed campaign when using the 'Rerun' icon?**
 
-When you pause and resume a running campaign, it will restart from where it left off. However, if a campaign has dialed the last record and is then resumed by clicking the 'Rerun' icon, it will start dialing from the beginning of the dial list and will be a new instance of the same campaign. The new instance will not maintain data from the previous run.
+    When you pause and resume a running campaign, it will restart from where it left off. However, if a campaign has dialed the last record and is then resumed by clicking the 'Rerun' icon, it will start dialing from the beginning of the dial list and will be a new instance of the same campaign. The new instance will not maintain data from the previous run.
 
-2. **How does the system handle contact lists in campaigns, and what are the limitations when sharing contact lists or running campaigns concurrently with the same list?**
+* **How does the system handle contact lists in campaigns, and what are the limitations when sharing contact lists or running campaigns concurrently with the same list?**
 
-Each campaign can have its contact list. Campaigns also can share contact lists. However, it is not possible for campaigns to simultaneously operate with the same contact list.
+    Each campaign can have its contact list. Campaigns also can share contact lists. However, it is not possible for campaigns to simultaneously operate with the same contact list.
 
-3. **Is there a limit to the number of call lists per campaign?**
+* **Is there a limit to the number of call lists per campaign?**
 
-A campaign can have a maximum of 10 Call Lists.
+    A campaign can have a maximum of 10 Call Lists.
 
-4. **Is there a limit on the number of Do Not Contact (DNC)  lists per campaign?**
+* **Is there a limit on the number of Do Not Contact (DNC) lists per campaign?**
 
-The maximum number of DNC lists per campaign is one.
+    The maximum number of DNC lists per campaign is one.
 
-5. **How many contact lists are permitted to be created?**
+* **How many contact lists are permitted to be created?**
 
-Each account can create a maximum of 1000 contact lists.
+    Each account can create a maximum of 1000 contact lists.
 
-6. **What are the limitations on DNC lists in terms of the number of records allowed per DNC list and account?**
+* **What are the limitations on DNC lists in terms of the number of records allowed per DNC list and account?**
 
-There is a limit of one million records for each DNC list and two million is the total limit for DNC records for each account.
+    There is a limit of one million records for each DNC list and two million is the total limit for DNC records for each account.
 
-7. **How many DNC lists are permitted to be created?**
+* **How many DNC lists are permitted to be created?**
 
-Each account can create a maximum of 1000 DNC lists.
+    Each account can create a maximum of 1000 DNC lists.
 
-8. **How many voice campaigns can be run concurrently?**
+* **How many voice campaigns can be run concurrently?**
 
-You can run a maximum of 50 voice campaigns concurrently.
+    You can run a maximum of 50 voice campaigns concurrently.
 
-9. **What is the maximum number of contacts per account?**
+* **What is the maximum number of contacts per account?**
 
-Each account can have a maximum of five million contacts.
+    Each account can have a maximum of five million contacts.
 
-10. **What is the maximum number of contacts that can be added to a contact list?**
+* **What is the maximum number of contacts that can be added to a contact list?**
 
-Each contact list can contain a maximum of one million contacts, or up to a 5 MB file size limit.
+    Each contact list can contain a maximum of one million contacts, or up to a 5 MB file size limit.
 
-11. **How does priority work in Voice Campaigns?**
+* **How does priority work in Voice Campaigns?**
 
-Assigning percentages to campaigns facilitates managing campaigns with varying priorities. A higher percentage implies more contacts will be dialed for that specific campaign. However, it's important to note that a higher priority doesn't guarantee that the campaign will be completed first.
+    Assigning percentages to campaigns facilitates managing campaigns with varying priorities. A higher percentage implies more contacts will be dialed for that specific campaign. However, it's important to note that a higher priority doesn't guarantee that the campaign will be completed first.
 
-A Campaign Manager can oversee multiple campaigns with similar or different priorities. The campaign management system can automatically select and transfer contacts to the dialer.
+    A Campaign Manager can oversee multiple campaigns with similar or different priorities. The campaign management system can automatically select and transfer contacts to the dialer.
 
-**Priority Percentage** = (Sum of Priority Value of each Campaign / Number of Campaigns) * 100
+    **Priority Percentage** = (Sum of Priority Value of each Campaign / Number of Campaigns) * 100
 
-**Scenario 1:** Two campaigns with priorities 5 and 3 respectively
+    **Scenario 1:** Two campaigns with priorities 5 and 3 respectively
 
-Percentage allocation to campaign 1 = (5 / (5+3)) * 100 = 62.5%
+    Percentage allocation to campaign 1 = (5 / (5+3)) * 100 = 62.5%
 
-Percentage allocation to campaign 2 = (3 / (5+3)) * 100 = 37.5%
+    Percentage allocation to campaign 2 = (3 / (5+3)) * 100 = 37.5%
 
-**Execution in this case**: 62.5% of calls will be picked from campaign 1 and 37.5% of calls will be picked from campaign 2.
-Dialer will randomly dial from the 62.5% of calls from campaign 1 and the 37.5% of calls from campaign 2.
+    **Execution in this case**: 62.5% of calls will be picked from campaign 1 and 37.5% of calls will be picked from campaign 2.
+  
+    Dialer will randomly dial from the 62.5% of calls from campaign 1 and the 37.5% of calls from campaign 2.
 
-**Scenario 2:** Two campaigns with the same priorities of 5.
+    **Scenario 2:** Two campaigns with the same priorities of 5.
 
-Percentage allocation to campaign 1 = (5 / (5+5)) * 100 = 50%
+    Percentage allocation to campaign 1 = (5 / (5+5)) * 100 = 50%
 
-Percentage allocation to campaign 2 = (5 / (5+5)) * 100 = 50%
+    Percentage allocation to campaign 2 = (5 / (5+5)) * 100 = 50%
 
-**Execution in this case**: 50% of calls will be picked from campaign 1 and 50% of calls will be picked from campaign 2.
+    **Execution in this case**: 50% of calls will be picked from campaign 1 and 50% of calls will be picked from campaign 2.
 
-Dialer will randomly dial from the 50% of calls from campaign 1 and 50% of calls from campaign 2.
+    Dialer will randomly dial from the 50% of calls from campaign 1 and 50% of calls from campaign 2.

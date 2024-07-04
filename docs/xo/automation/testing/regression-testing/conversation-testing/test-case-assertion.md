@@ -26,11 +26,11 @@ If the virtual assistant’s response is from a Dialog node, then the following 
     * This section shows the summary on the right side of the Test Suite panel:
         * **Expected Response**: Contains all possible responses/variations with the annotated dynamic values.  
 
-        <img src="../images/tca-img2.png" alt="Text Assertion" title="Text Assertion" style="border: 1px solid gray;zoom:50%;"/>  
-      
-          !!! note
-          
-              In case of text assertion, if the expected output has dynamic values, then it should be annotated using [Dynamic Text Marking](#dynamic-text-marking). If not marked, the text assertion fails and eventually leads to failure of the test case. For the test case to pass, the text for that specific output must be dynamically marked.  
+            <img src="../images/tca-img2.png" alt="Text Assertion" title="Text Assertion" style="border: 1px solid gray;zoom:50%;"/>  
+        
+        !!! note
+            
+            In case of text assertion, if the expected output has dynamic values, then it should be annotated using [Dynamic Text Marking](#dynamic-text-marking). If not marked, the text assertion fails and eventually leads to failure of the test case. For the test case to pass, the text for that specific output must be dynamically marked.  
       
     For example, in the following test case, the city name entered by the user can be different every time. It is marked as dynamic for that specific test case to pass.  
     <img src="../images/tca-img3.png" alt="Example-Test case details" title="Example-Test case details" style="border: 1px solid gray;zoom:50%;"/>  
@@ -66,19 +66,22 @@ During test execution, the annotated portion of the text is ignored by the platf
 
 !!! note
 
-        Even if the value of the specific marked text is different, the test cases are marked as a success during execution. This feature is handy when different values are expected every time you interact with the bot.
+    Even if the value of the specific marked text is different, the test cases are marked as a success during execution. This feature is handy when different values are expected every time you interact with the bot.
 
 
 The following steps explain the dynamic text marking with an example:
 
 1. Click any Test Suite on the Conversation Testing page.
 2. In the **Test Editor** tab, navigate to the **Test Suite Details** Panel.
-3. In the **Test Suite Details** panel, select a text in the **Expected Output** for a test case and click the Dynamic Marker icon (see the following screenshots).  
-<img src="../images/tca-img8.png" alt="Test suite details-Expected output" title="Test suite details-Expected output" style="border: 1px solid gray;zoom:50%;"/>  
+3. In the **Test Suite Details** panel, select a text in the **Expected Output** for a test case and click the Dynamic Marker icon (see the following screenshots).
+
+    <img src="../images/tca-img8.png" alt="Test suite details-Expected output" title="Test suite details-Expected output" style="border: 1px solid gray;zoom:50%;"/>  
   
     <img src="../images/tca-img9.png" alt="Clicked Dynamic marker" title="Clicked Dynamic marker" style="border: 1px solid gray;zoom:50%;"/>  
   
-    **Note:** The selected state variable in the Expected Output is annotated and highlighted in blue. One or multiple words can be marked as dynamic text.  
+    !!! Note
+    
+        The selected state variable in the Expected Output is annotated and highlighted in blue. One or multiple words can be marked as dynamic text.  
 
 4. You can again click the Dynamic Marker icon to deselect the text and remove the dynamic marking.
 5. Click the Dynamic Marker icon next to the list to expand and see the list of dynamic values.  
@@ -120,9 +123,7 @@ For example, the VA has total 292 transitions, out of which the coverage is as f
 
 !!! note
 
-        If you delete the node transition in a particular intent, then such transitions are displayed as Not Valid in the Coverage Status column.
-
-
+    If you delete the node transition in a particular intent, then such transitions are displayed as Not Valid in the Coverage Status column.
 
 **Intent Coverage**
 
@@ -148,11 +149,11 @@ You can obtain Node transition details of an intent by clicking the **View Trans
 
 !!! note
 
-        A transition must have one of the following three values displayed in the Coverage Status column:
+    A transition must have one of the following three values displayed in the Coverage Status column:
 
-          - Covered  
-          - Not Covered  
-          - Not Valid
+      - Covered  
+      - Not Covered  
+      - Not Valid
 
 
 You can sort, search, and filter the data for all the columns in the Intent coverage grid.  
@@ -179,7 +180,7 @@ To know more about Patterns and Groups, see [Small Talk](../../../../use-cases/s
 
 !!! note
 
-        You can filter and sort the details displayed in the Small Talks grid.
+    You can filter and sort the details displayed in the Small Talks grid.
 
 
 On the main page, the Test Suite is marked as **Passed** only when all the test cases are passed; else, it is marked as **Failed**.

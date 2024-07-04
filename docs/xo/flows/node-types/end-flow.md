@@ -17,6 +17,6 @@ Click the **General Settings** icon and set up the following conditions:
     <img src="./../images/text-to-speech-end-flow.png" alt="Text to Speech" title="Text to Speech" style="border: 1px solid gray; zoom:70%;">
     2. **Audio File**: You can type a new message to be played to the customer in the text field or click **+ Upload New** to upload an audio file (.mp3 or .wav format) with the message to be played;
     <img src="./../images/audio-file-end-flow.png" alt="Audio File" title="Audio File" style="border: 1px solid gray; zoom:70%;">
-    3. **Link**: Click **+ Create New** to add the text of the message you want to play to the customer and insert the URL of an audio file in .mp3 or .wav format. Click **+ Add Another** to add another message URL.
+    3. **Link**: Click **+ Create New** to add the text of the message you want to play to the customer and insert the URL of an audio file in .mp3 or .wav format. Click **+ Add Another** to add another message URL.  
     <img src="./../images/link-end-flow.png" alt="Link" title="Link" style="border: 1px solid gray; zoom:70%;">
 3. **Go to node**: Select the node to which you want to direct the error handling flow and define the system behavior. You can create a new node by selecting a node type or identifying and selecting an existing node.

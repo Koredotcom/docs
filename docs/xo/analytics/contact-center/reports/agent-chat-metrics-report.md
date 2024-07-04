@@ -1,6 +1,6 @@
 # Agent Chat Metrics Report
 
-## Generating Agent Chat Metrics Report
+## Generating the Agent Chat Metrics Report
 
 The Agent Chat Metrics Report is a daily summary of agent performance metrics that are particularly relevant to chat conversations.
 
@@ -20,11 +20,11 @@ Steps to generate the Agent Chat Metrics Report:
         * CSV
     * Send To (single email address or a mailing list).
 7. Click **Create**.
-8. An instance of the Agent Chat Metrics Report is generated.
-<img src="../images/agent-chat-metrics-report-created.png" alt="Agent Chat Metrics Report Created" title="Agent Chat Metrics Report Created" style="border: 1px solid gray; zoom:70%;">
+8. The Agent Chat Metrics Report is generated.
+<img src="../images/agent-chat-metrics-report-created.png" alt="Agent Chat Metrics Report Created" title="Agent Chat Metrics Report Created" style="border: 1px solid gray; zoom:100%;">
 
 9. Click the **Run** icon next to the instance of the report.
-<img src="../images/run-agent-chat-metrics-report.png" alt="Run Agent Chat Metrics Report" title="Run Agent Chat Metrics Report" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/run-agent-chat-metrics-report.png" alt="Run Agent Chat Metrics Report" title="Run Agent Chat Metrics Report" style="border: 1px solid gray; zoom:100%;">
 
 While generating reports you have two options, Run On Demand and Schedule.
 
@@ -33,14 +33,14 @@ While generating reports you have two options, Run On Demand and Schedule.
 **Schedule**: While creating a new report or editing an existing report, the schedule of the report can be changed. The use of the schedule is the standard way to generate a report. If the report is scheduled for later then it will automatically be generated on the scheduled day and time without the need to click Run.
 
 10. Click the **PDF/Page** icon and generate the output of that report, as shown below.
-<img src="../images/pdf-agent-chat-metrics-report.png" alt="Agent Chat Metrics Report PDF" title="Agent Chat Metrics Report PDF" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/pdf-agent-chat-metrics-report.png" alt="Agent Chat Metrics Report PDF" title="Agent Chat Metrics Report PDF" style="border: 1px solid gray; zoom:100%;">
 
-!!! Note
+    !!! Note
 
-    The red dot beside the report indicates that the report has been generated within the last 24 hours. You can download the report and save and view it in pdf format.
+        The red dot beside the report indicates that it was generated within the last 24 hours. You can download, save, and view the report in PDF format.
 
 The Agent Chat Metrics Report is generated and is available for download.
-<img src="../images/agent-chat-metrics-report-output.png" alt="Agent Chat Metrics Report Output" title="Agent Chat Metrics Report Output" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/agent-chat-metrics-report-output.png" alt="Agent Chat Metrics Report Output" title="Agent Chat Metrics Report Output" style="border: 1px solid gray; zoom:100%;">
 
 ### About Report Fields
 
@@ -178,3 +178,7 @@ The Agent Chat Metrics Report is generated and is available for download.
    </td>
   </tr>
 </table>
+
+#### Related Link
+
+* [Reports List](../reports/reports-list.md)

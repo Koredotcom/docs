@@ -44,7 +44,7 @@ After creating your assistant, you are directed to the **Bot Summary** page. The
 To create a Dialog Task, please follow the steps below:
 
 1. On the **Tasks** widget, click **+ New Task** and select **Dialog Task**.
-<img src="../images/add-new-dialog-task.png" alt="add dialog task" title="add dialog task" style="border: 1px solid gray; zoom:75%;"> 
+<img src="../images/travel-planning-assistant-dialog-task.png" alt="add dialog task" title="add dialog task" style="border: 1px solid gray; zoom:75%;"> 
 
 2. On the **Create Dialog** page, enter the following details:
     * **Intent Name** – Enter the Intent name. This is the phrase that triggers the dialog. The intent name must be simple and not more than 3-4 words. For example, _Check flight status_.
@@ -209,7 +209,7 @@ A Script node is used to write custom JavaScript in the Dialog task. Here, users
 4. Click the **+** next to the Bot Action node to expand the Bot Action.
 5. From within the Bot Action node click **+**
 6. Select **Script** > + **New script**.
-7. On the Script window, by default, the **Component Properties** tab is selected.
+7. In the **Script** window, by default, the **Component Properties** tab is selected.
 8. Under the **General Settings** section, enter the following details:
     * **Name**: _ValidateFlight_
     * **Display Name**: _Validate Flight_
@@ -255,7 +255,7 @@ A Message node is used to display a message from the VA to the user. Here, users
 
 1. Click the **+** icon next to the **Validate Flight Script** node.
 2. Select **Message** > **New message node +**.
-3. On the Message window, by default, the **Component Properties** tab is selected.
+3. In the **Message** window, by default, the **Component Properties** tab is selected.
 4. Under the **General Settings** section, enter the following details:
     * **Name**: _FlightStatus_
     * **Display Name**: _Flight Status_
@@ -295,7 +295,7 @@ print(JSON.stringify(message));
 
 <ol start="9"><li>Click <b>Save</b>.</li>
 <li>Return to the <b>Message</b> window.</li>
-<li>On the Message window, click the <b>Connections</b> tab, and follow the steps below:</li>
+<li>In the Message window, click the <b>Connections</b> tab, and follow the steps below:</li>
 <ul><li>From the drop-down list, change the default connection from <i>Not Connected</i> to <i>End of Dialog</i>.</li>
 <li>Click <b>Save</b>.</li></ul>
 <li>Close the <b>Message</b> window.</li></ol>
@@ -315,7 +315,7 @@ The following are the steps required in order to add the conditional flow from t
 2. You can see the **Add Node** button, click the button and then on the “**+**” to insert a node.
 3. Create a new Message node with the steps below:
 * Select **Message** > **+ New Message**.
-* On the Message window, by default, the **Component Properties** tab is selected.
+* In the **Message** window, by default, the **Component Properties** tab is selected.
 * Under the **General Settings** section, enter the following details:
     * **Name**: _ErrorMessage_
     * **Display Name**: _Error Message_
@@ -332,7 +332,7 @@ As you can see in the demonstration above, the initial validation message remain
 
 
 1. Click the **Flight Validation** Bot Action node.
-2. On the **Flight Validation Bot Action** window, click the **Connections** tab, and follow the steps below:
+2. In the **Flight Validation Bot Action** window, click the **Connections** tab, and follow the steps below:
     * Click **+ ADD IF** under **Bot Action Group Connections**.
     * Under the **IF** section, select **Context**.
     * For **If Condition**, enter “**valid**” in the context text field.
@@ -351,15 +351,19 @@ When completed, the task might look similar to the illustration below:
 
 **Add Events**
 
-Currently, the assistant is waiting for user input on the start. However, it can also guide the user at the start of the conversation. For this, you can add an Event Handler to initiate this task every time a new connection is established from the Web/Mobile SDK. Learn more about <a href="https://developer.kore.ai/docs/bots/bot-intelligence/event-based-bot-actions/" target="_blank">Event Handlers</a>.
+Currently, the assistant is waiting for user input on the start. However, it can also guide the user at the start of the conversation. 
+
+For this, you can add an Event Handler to initiate this task every time a new connection is established from the Web/Mobile SDK. Learn more about <a href="https://developer.kore.ai/docs/bots/bot-intelligence/event-based-bot-actions/" target="_blank">Event Handlers</a>.
 
 1. Close the Dialog Builder to go back to the **Dialog Tasks** page.
-2. From the Left Navigation pane, and select **Intelligence** > **Events**.
-3. From the events list, click **Configure** against the **On Connect** event.
-4. On the On Connect window, by default, the **Initiate Task** option is selected; retain it.
+2. From the Left Navigation pane, select **Automation AI** > **Virtual Assistant** > **Conversation Intelligence** > **Events**.
+3. On the **Events** page, click **Configure** against the **On Connect** event.
+<img src="../images/on-connect-event-configuration.png" alt="on connect event configure" title="on connect event configure" style="border: 1px solid gray; zoom:75%;">
+
+4. In the **On Connect** window, by default, the **Initiate Task** option is selected for _Define how to proceed when this event is detected_.
 5. From the drop-down list, select the **Get Flight Status** task.
 6. Click **Save**.
-<img src="../images/add-events.png" alt="add event" title="add event" style="border: 1px solid gray; zoom:75%;">
+<img src="../images/on-connect-window.png" alt="add event" title="add event" style="border: 1px solid gray; zoom:75%;">
 
 ## Test the Assistant
 

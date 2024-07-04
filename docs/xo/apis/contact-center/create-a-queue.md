@@ -2,68 +2,19 @@
 
 To create a queue with the given `streamId`.
 
-<table>
-  <tr>
-   <td>Method
-   </td>
-   <td>POST
-   </td>
-  </tr>
-  <tr>
-   <td>Endpoints
-   </td>
-   <td><code>https://{{host}}/agentassist/api/v1/public/{{streamId}}/queues</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Content Type
-   </td>
-   <td><code>application/json</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Authorization
-   </td>
-   <td><code>auth: {{JWT}}</code>
-See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_token">How to generate the JWT Token.</a>
-   </td>
-  </tr>
-  <tr>
-   <td>API Scope
-   </td>
-   <td>Configuration
-   </td>
-  </tr>
-</table>
+| **METHOD**       | **POST**                                                                                           |
+|------------------|----------------------------------------------------------------------------------------------------|
+| **Endpoints**    | `https://{{host}}/agentassist/api/v1/public/{{streamId}}/queues`                                   |
+| **Content Type** | `application/json`                                                                                 |
+| **Authorization**| `auth: {{JWT}}`<br>See [How to generate the JWT Token.](../automation/api-introduction.md#generating-the-jwt-token) |
+| **API Scope**    | Configuration                                                                                      |
 
 ## Path Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Environment URL, for example, https://smartassist.kore.ai
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>streamId
-   </td>
-   <td>You can access it from the General Settings page of the bot.
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-</table>
+| **PARAMETER** | **DESCRIPTION**                                                         | **TYPE**         |
+|---------------|--------------------------------------------------------------------------|------------------|
+| host          | Environment URL, for example, https://platform.kore.ai                | string, required |
+| streamId      | You can access it from the General Settings page of the bot.             | string, required |
 
 ## Sample Request
 
@@ -228,166 +179,24 @@ See <a href="https://docs.kore.ai/smartassist/api/api-setup/#Generating_a_JWT_to
 
 ## Body Parameters
 
-<table>
-  <tr>
-   <td><strong>PARAMETER</strong>
-   </td>
-   <td><strong>DESCRIPTION</strong>
-   </td>
-   <td><strong>TYPE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>name
-   </td>
-   <td>Name of the queue.
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>description
-   </td>
-   <td>Brief description of the queue.
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-  <tr>
-   <td>isAdvancedRoutingEnabled
-   </td>
-   <td>Boolean value to know if advanced routing is enabled or not. For example: True.
-   </td>
-   <td>boolean, optional
-   </td>
-  </tr>
-  <tr>
-   <td>hoursOfOperation {Id}
-   </td>
-   <td>Hours of operation ID. For example: 6335486202826111eb3c3759
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>hoursOfOperation {name}
-   </td>
-   <td>Hours of operation Name. For example: Default hours of operation.
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-  <tr>
-   <td>agents {userId}
-   </td>
-   <td>You can get this from GET /agents api.
-For example: u-ca2cc57f-5c2b-5437-bb07-fe9020d88050
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>agents {aId}
-   </td>
-   <td>You can get this from GET /agents api.
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>agents {name}
-   </td>
-   <td>Name of the agent.
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-  <tr>
-   <td>agents {isPreferredAgent}
-   </td>
-   <td>Is the agent a preferred agent or not.
-   </td>
-   <td>boolean, required
-   </td>
-  </tr>
-  <tr>
-   <td>skills {Id}
-   </td>
-   <td>You can get this from GET /skills api.
-   </td>
-   <td>string, required
-   </td>
-  </tr>
-  <tr>
-   <td>skills {name}
-   </td>
-   <td>Name of the Skill.
-   </td>
-   <td>string, optional
-   </td>
-  </tr>
-  <tr>
-   <td>skills {isExpireEnabled}
-   </td>
-   <td>The skill should expire or not.
-   </td>
-   <td>boolean, required
-   </td>
-  </tr>
-  <tr>
-   <td>skills{expireTime}
-   </td>
-   <td>It is required if isExpireEnabled is true. For example: expireTime: {min:5, sec:0}
-   </td>
-   <td>object, optional
-   </td>
-  </tr>
-  <tr>
-   <td>agentGroups
-   </td>
-   <td>An array of objects containing agentGroupIds. For example: [“ag-410b641-16ae-4c02-9355-8a47c2b9a296″]
-   </td>
-   <td>array, optional
-   </td>
-  </tr>
-  <tr>
-   <td>advancedSettings {preferredAgentTimeout}
-   </td>
-   <td>If the preferred agent is selected, then this is required. For example: Example: preferredAgentTimeout: {min:10}
-   </td>
-   <td>object, optional
-   </td>
-  </tr>
-  <tr>
-   <td>advancedSettings {isSkillMatchEnabled}
-   </td>
-   <td>If skill match is enabled.
-   </td>
-   <td>boolean, optional
-   </td>
-  </tr>
-  <tr>
-   <td>advancedSettings {isAffinityMatchEnabled}
-   </td>
-   <td>If agent affinity match is enabled.
-   </td>
-   <td>boolean, optional
-   </td>
-  </tr>
-  <tr>
-   <td>enableTransferRules
-   </td>
-   <td>To enable the transfer rules.
-   </td>
-   <td>boolean, optional
-   </td>
-  </tr>
-  <tr>
-   <td>transferQueues
-   </td>
-   <td>An array containing queueIds. For Example: [“qu-70d0451-bb2a-4cc9-9bdb-ec5c1ccc464c”]
-   </td>
-   <td>array, optional
-   </td>
-  </tr>
-</table>
+| **PARAMETER**                        | **DESCRIPTION**                                                | **TYPE**           |
+|-------------------------------------|----------------------------------------------------------------|--------------------|
+| name                                | Name of the queue.                                             | string, required   |
+| description                         | Brief description of the queue.                                | string, optional   |
+| isAdvancedRoutingEnabled            | Boolean value to know if advanced routing is enabled or not.   | boolean, optional  |
+| hoursOfOperation {Id}               | Hours of operation ID.                                         | string, required   |
+| hoursOfOperation {name}             | Hours of operation Name.                                       | string, optional   |
+| agents {userId}                     | User ID of the agent. You can get this from GET /agents api.   | string, required   |
+| agents {aId}                        | Agent ID. You can get this from GET /agents api.               | string, required   |
+| agents {name}                       | Name of the agent.                                             | string, optional   |
+| agents {isPreferredAgent}           | Indicates if the agent is a preferred agent or not.            | boolean, required  |
+| skills {Id}                         | Skill ID. You can get this from GET /skills api.               | string, required   |
+| skills {name}                       | Name of the Skill.                                             | string, optional   |
+| skills {isExpireEnabled}            | Indicates if the skill should expire or not.                   | boolean, required  |
+| skills {expireTime}                 | Time for skill expiration if enabled.                          | object, optional   |
+| agentGroups                         | An array of objects containing agentGroupIds.                   | array, optional    |
+| advancedSettings {preferredAgentTimeout} | Preferred agent timeout settings.                          | object, optional   |
+| advancedSettings {isSkillMatchEnabled} | Indicates if skill match is enabled.                        | boolean, optional  |
+| advancedSettings {isAffinityMatchEnabled} | Indicates if agent affinity match is enabled.           | boolean, optional  |
+| enableTransferRules                 | Indicates whether transfer rules are enabled.                  | boolean, optional  |
+| transferQueues                      | An array containing queueIds for transfer.                     | array, optional    |

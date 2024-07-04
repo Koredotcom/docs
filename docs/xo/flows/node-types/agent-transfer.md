@@ -17,7 +17,7 @@ Click the **General Settings** icon and provide the following information:
     <img src="./../images/text-to-speech-agent-transfer.png" alt="Text to Speech" title="Text to Speech" style="border: 1px solid gray; zoom:70%;">
     2. **Audio File**: You can type a new message to be played to the customer in the text field or click **+ Upload New** to upload an audio file (.mp3 or .wav format) with the message to be played;
     <img src="./../images/audio-file-agent-transfer.png" alt="Audio File" title="Audio File" style="border: 1px solid gray; zoom:70%;">
-    3. **Link**: Click **+ Create New** to add the text of the message you want to play to the customer and insert the URL of an audio file in .mp3 or .wav format. Click **+ Add Another** to add another message URL.
+    3. **Link**: Click **+ Create New** to add the text of the message you want to play to the customer and insert the URL of an audio file in .mp3 or .wav format. Click **+ Add Another** to add another message URL.  
     <img src="./../images/link-agent-transfer.png" alt="Link" title="Link" style="border: 1px solid gray; zoom:70%;">
 
 ### Transfer to Agents
@@ -30,7 +30,7 @@ In the **Transfer to Agents** section, configure the following:
 
 ### Waiting Experience
 
-Click the **Waiting Experience** icon to configure the customer’s **Waiting Experience** for the current **Agent Transfer** flow as follows:
+Click the **Waiting Experience** icon to configure the customer’s **Waiting Experience** for the current **Agent Transfer** flow as follows:  
 <img src="./../images/waiting-experience.png" alt="Waiting experience" title="Waiting Experience" style="border: 1px solid gray; zoom:70%;">
 
 Choose whether to use the **Default Waiting Experience** or override it. Clicking **Override** activates the field and allows you to select from a dropdown list of available options.  
@@ -43,7 +43,7 @@ Choose whether to use the **Default Waiting Experience** or override it. Clickin
 * This flow executes whenever the associated interaction enters a queue, including transfers into a queue.
 * This flow does not trigger during transfers between agents.
 
-The result of this flow type is always an agent transfer.
+The result of this flow type is always an agent transfer.  
 <img src="./../images/in-queue-flow.png" alt="In Queue Flow" title="In Queue Flow" style="border: 1px solid gray; zoom:70%;">
 
 ### Error Handling
@@ -51,5 +51,5 @@ The result of this flow type is always an agent transfer.
 Use this section to handle system errors during customer interactions.
 <img src="./../images/error-handling-agent-transfer.png" alt="Error Handling" title="Error Handling" style="border: 1px solid gray; zoom:70%;">
 
-* **Your Message to User**: Choose the message type from _Text to Speech, Link, or audio_; then, type the message, upload an audio file (mp3 and .wav formats are only supported for audio files), or provide a URL to the error message that will be played out to the caller when a system error occurs. If the message is not configured, the default system message is played. See General Settings for a detailed explanation of these features.
+* **Your Message to User**: Choose the message type from _Text to Speech, Link, or audio_; then, type the message, upload an audio file (mp3 and .wav formats are only supported for audio files), or provide a URL to the error message that will be played out to the caller when a system error occurs. If the message is not configured, the default system message is played. See [General Settings](#general-settings) for a detailed explanation of these features.
 * **Go to node**: Select the node to which you want to direct the error handling flow and define the system behavior. You can create a new node by selecting a node type or identifying and selecting an existing node.

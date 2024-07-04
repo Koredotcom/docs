@@ -1066,10 +1066,14 @@ The response contains the following fields:
 * _to_ – refers to the user to whom the message is delivered to.
 * _from_ – identity (Stream Id) of the bot from which the response is generated.
 * _text_ – contains the response(s) from the bot. Can be a string, object or an array of strings or objects.
-* _endOfTask_ – indicating whether the task was completed or not, values _true_ or _false_.
 * _endReason_ – the reason for the task completion – _fulfilled_, _interrupted_, or _canceled_
 * _completedTaskId_ – the _id _of the dialog task triggered.
 * _completedTaskName_ – the name of the dialog task triggered.
+* _endOfTask_ – indicates whether the task is completed or not in the asynchronous mode. It gets added to the response after executing a dialog or fallback task. Possible values are _true_ or _false_.
+* _endOfMessage_ – indicates the last message of a session and is added in the asynchronous mode. It is added whenever a Smalltalk, Standard Response, or SessionClosure Event message is triggered, or after the execution of the entity node in the flow.
+* _partialMessage_ – indicates that the message node is executed within the flow in the asynchronous mode.
+* _createdOn_ - indicates the response is from a regular dialog node in a synchronous mode.
+
 
 
 ### Change Conversation Language Request
@@ -1613,6 +1617,57 @@ Headers: {
 
 If your bot has a form that needs user input, the synchronous WebHook channel gets the complete form definition in the response, and you need to send the _formData_ in the request when interacting with the bot.
 
+#### Sample Request
+You can get the Webhook API URL on the WebHook channel **Configurations** tab. Learn more.
+
+!!! note
+
+    This URL is available only after enabling the channel.
+
+```
+ "session": {
+       "new": false
+   },
+   "message": {
+       "val": {
+           "formId": "{{formId}}",
+           "data": [
+               {
+                   "componentId": "{{ComponentId}}",
+                   "input": "{{user input1}}"
+               },
+               {
+                   "componentId": "{{ComponentId}}",
+                   "input": "{{user input2}"
+               },
+               {
+                   "componentId": "{{ComponentId}}",
+                   "input": "Submit"
+               }
+           ],
+           "meta": {}
+       },
+       "type": "formData"
+   },
+   "from": {
+       "id": "",
+       "userInfo": {
+           "firstName": "",
+           "lastName": "",
+           "email": ""
+       }
+   },
+   "to": {
+       "id": "",
+       "groupInfo": {
+           "id": "",
+           "name": ""
+       }
+   },
+Others if any
+}
+```
+
 
 #### Sample Response
 
@@ -1725,36 +1780,7 @@ If your bot has a form that needs user input, the synchronous WebHook channel ge
 
 
 
-#### Sample Request
 
-
-```
-{
-    "session": {
-        "new": false
-    },
-    "message": {
-        "formData": {
-            "formId": "frm-2b2f1ae4-9a3b-5f22-8940-b6827710940f",
-            "data": [
-                {
-                    "componentId": "fct-9f7e487d-d4b8-542a-9a77-7806819f141b",
-                    "input": "input1"
-                },
-                {
-                    "componentId": "fct-7aae4eae-2ce7-5d1b-8db1-bb5cfadc3342",
-                    "input": "input2"
-                }
-            ],
-            "meta": {}
-        }
-    },
-    "from": {
-        "id": ""
-    }
-    ..others params if any
-}
-```
 
 
 

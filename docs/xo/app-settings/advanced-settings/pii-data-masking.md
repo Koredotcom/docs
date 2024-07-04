@@ -1,14 +1,14 @@
 # Redacting Personally Identifiable Information
 
-Personally identifiable information (PII), or sensitive personal information (SPI), refers to information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Some examples of PII include Social Security Number, email address, credit card numbers, passport number, home address, and so forth.
+Personally identifiable information (PII) or sensitive personal information (SPI) refers to information that can be used alone or in conjunction with other information to identify, contact, or locate a single person or to identify an individual in context. Some examples of PII include Social Security Numbers, email addresses, credit card numbers, passport numbers, home addresses, and so forth.
 
-Kore.ai allows you to redact any sensitive information that users share with your bots. When you enable redaction for an information type, you can transform its value into a pattern that doesn’t contain comprehensible data. Any end user input that matches the PII pattern gets redacted by the platform in the context object, chat logs and all other places.
+Kore.ai allows you to redact any sensitive information that users share with your bots. When you enable redaction for an information type, you can transform its value into a pattern that doesn’t contain comprehensible data. The platform redacts any end-user input that matches the PII pattern in the context object, chat logs, chat history, and other places to protect sensitive data.
 
-There are a few scenarios where the original value can be used to achieve the business needs.
+The original values are stored in a secure vault and can be used in a few scenarios to achieve business needs.  
 
-* If a PII value is used in Dialog Task transitions, the platform automatically uses the original value for the transition condition evaluation.
-* If a PII value is used in the Service Node definition, the platform uses the redacted value by default to make the service calls. You can choose to send the original data using the ‘De-identification of PII data’ configuration of the Service Node. Refer to the [Service Node ](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node){:target="_blank"}post for more details
-* You may use the Redaction of PII Data configuration of the Entity Nodes to present the original values of a redacted entity value to the users. Refer to the [Entity Node](../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node){:target="_blank"} post for more details.
+* If a PII value is used in Dialog Task transitions, the platform automatically uses the original value for the transition condition evaluation, such as validating the entity value's format (for example,  checking if it is a valid number).
+* If a PII value is used in the Service Node definition, the platform uses the redacted value by default to make the service calls. You can choose to send the original data using the ‘De-identification of PII data’ configuration of the Service Node for scenarios like passing this value to the backend system for further processing. Refer to the [Service Node ](../../../automation/use-cases/dialogs/node-types/working-with-the-service-node){:target="_blank"}post for more details.
+* You may use the Redaction of PII Data configuration of the Entity Nodes to present the original values of a redacted entity value to the users for confirmation. Refer to the [Entity Node](../../../automation/use-cases/dialogs/node-types/working-with-the-entity-node){:target="_blank"} post for more details.
 
 The platform provides the following three modes to redact specified information types:
 
@@ -47,8 +47,6 @@ The platform provides the following three modes to redact specified information 
    </td>
   </tr>
 </table>
-
-
 
 ### How to Redact
 

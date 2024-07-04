@@ -19,7 +19,7 @@ Starting with v10.1 of the XO Platform, the Few-Shot Model is the default for al
 
 If you have built your Ontology-based graph before this release, you can migrate to the new model anytime. You must upgrade to NLP V3 to use the Few-Shot Model. You can return to the Ontology model if you change your mind later.
 
-You can select your desired Knowledge Graph Type by going to **Automation AI** > **Virtual Assistant** > **Knowledge AI**.
+You can select your desired Knowledge Graph Type by going to **Virtual Assistant** > **Knowledge AI** > **FAQs**.
 
 Changing Knowledge Graph Types is captured in the Change Logs, which you can access by going to **App Settings** > **Change Logs**.
 
@@ -74,7 +74,7 @@ To enable the Few-Shot Knowledge Graph, go to **Virtual Assistant** > **Natural 
 
 Before enabling the Few-Shot Knowledge Graph, please consider the following:
 
-1. When switching from an Ontology-based Knowledge Graph to the Few-Shot model, _Default_ terms/odes are still stored until you update them. From this point onwards, the terms are stored as _Organizer_ unless you make them _Mandatory_.
+1. When switching from an Ontology-based Knowledge Graph to the Few-Shot model, _Default_ terms/Nodes are still stored until you update them. From this point onwards, the terms are stored as _Organizer_ unless you make them _Mandatory_.
 2. Only _Mandatory_ terms support path-level synonyms.
 3. The Few-Shot model works with Ranking & Resolver V2 and NLP V3. When you enable this model, the Ranking & Resolver version will be updated automatically. If you are not using NLP V3, you will be asked to upgrade before enabling it.
 

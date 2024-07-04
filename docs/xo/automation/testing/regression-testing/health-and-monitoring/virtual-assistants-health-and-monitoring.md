@@ -13,8 +13,8 @@ This dashboard lets you achieve the following:
 
 !!! note
 
-        The Health & Monitoring Dashboard is available only post 9.3 release, i.e. post-July 24, 2022.
-        This feature only considers the latest In-development test executions.
+    The Health & Monitoring Dashboard is available only post 9.3 release, i.e. post-July 24, 2022.
+    This feature only considers the latest In-development test executions.
 
 
 
@@ -551,7 +551,7 @@ Please refer to [Intent Details Window](#intent-details-window) for more informa
 
 !!! note
 
-        The 'Knowledge Graph' and 'Recommendations' options are not available for Universal Bot on this page.
+    The 'Knowledge Graph' and 'Recommendations' options are not available for Universal Bot on this page.
 
 To view the intents not covered on the **FAQ Details** page, click the **Three-dotted/Ellipses** icon and select **_View Intents Not Covered_**.  
 <img src="../images/hm-31.png" alt="FAQ-Intents Not Covered" title="FAQ-Intents Not Covered" style="border: 1px solid  gray; zoom:50%;"/>    
@@ -578,7 +578,7 @@ Please refer to [Intent Details Window](#intent-details-window) for more informa
 
 !!! note
 
-        The 'Small Talk' option is not available for Universal Bot on this page.
+    The 'Small Talk' option is not available for Universal Bot on this page.
 
 To view the intents not covered on the **Small Talk Details** page, click the **Three-dotted/Ellipses** icon and select **_View Intents Not Covered_**.  
 <img src="../images/hm-34.png" alt="Small Talk-Intents Not Covered" title="Small Talk-Intents Not Covered" style="border: 1px solid  gray; zoom:50%;"/> 
@@ -739,12 +739,6 @@ The summary of all the metrics displayed is given below:
   </tr>
 </table>
 
-<br>
-
-</p>
-
-
-
 **View Intents Not Covered**
 
 This feature helps identify the intents not covered so as to include them in the test data for better and holistic [testing of the virtual assistant](../../../testing-your-bot-with-nlp/#testing-the-assistant){:target="_blank"}. Click the **three-dot menu** on the right side of the panel to view the list of **intents not covered** in batch testing.  
@@ -753,4 +747,3 @@ This feature helps identify the intents not covered so as to include them in the
 
 You can include the intents from this list to retrain your virtual assistant and improve performance.  
 <img src="../images/hm-39.png" alt="Training data-Not covered intents" title="Training data-Not covered intents" style="border: 1px solid  gray; zoom:50%;"/> 
-

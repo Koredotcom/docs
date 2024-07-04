@@ -1,11 +1,5 @@
 # Usage Plans
 
-	
-
-		
-
-			
-
 Usage Plans help you manage your bots and workspaces while keeping track of their periodic billing and usage. On the analytics-driven **Plan & Usage** dashboard, you can view the conversations volume and billing on a daily or monthly basis. You can also track free credits usage, add funds to your account, and manage auto payments in a single place.
 
 When you sign up on the Platform, the Kore.ai XO Platform associates all the workspaces with a default Standard Plan. A Standard Plan offers a pay-as-you-go model that supports eCommerce flexible and customized journeys for enterprises to launch virtual assistants. You can select a standard plan that comes with self-service features, or upgrade to a customized Enterprise Plan that offers “Enterprise-grade” features by[ contacting](https://kore.ai/services/) our service team.
@@ -14,12 +8,9 @@ We’ve put much thought into our usage plans so you can explore the Platform ef
 
 The following plans are currently available on the latest version of the Kore.ai XO Platform:
 
-
 ## Standard Plan
 
 As a new user, you get free credits worth \$500 at the workspace level, which you can share among the Virtual Assistants in the workspace. The plan follows **Conversation-based billing** where each conversation handled by a Bot linked to your account is billed at a unit price of $ 0.2, deducted from your free credits (if available), otherwise paid credits balance.
-
-		
 
 
     
@@ -29,19 +20,8 @@ As a new user, you get free credits worth \$500 at the workspace level, which yo
 
 You can leverage the[ basic features](https://developer.kore.ai/docs/bots/bot-settings/plan-usage/usage-plans/#Usage_Plan_Features) for your bots with a Standard Plan.
 
-		
-
-	
-
-	
-
-		
-
-			
 
 A Standard Plan’s key features include the following:
-
-
 
 1. If a conversation ends with 15 minutes of inactivity, and the interaction starts again, it is considered a new conversation and billed.
 2. Conversations-based Billing: The Standard Plan billing is done on the basis of the following primary units types:
@@ -58,30 +38,17 @@ A Standard Plan’s key features include the following:
 
 When Free credits expire, the following happen:
 
-
-
 1. Any remaining free credits get lapsed (are treated as zero balance) and cannot be used anymore.
 2. The free credits expiry impacts the utilization of credits, triggers low balance or zero balance emails, and highlights low or zero balance in the system warnings and messages.
 3. The number of free credits that lapsed on expiry displays on the account owner’s dashboard.
 
-
-
 **Important**: For an existing Standard Workspace, the remaining or unutilized free credit will expire in 90 days from the release date of this policy – March 19, 2023.
-
-	
-
-		
-
-			
-
 
 ### Free Credits Utilization
 
 The usage deduction from the paid balance starts only after the free credits are fully utilized or expired. This ensures that the Free Credits available can be used before they expire.
 
 Here are other important considerations:
-
-
 
 1. You can use free credits as required for one or more multiple virtual assistants mapped to your account/workspace.
 2. You must add funds and purchase paid credits to ensure that a Virtual Assistant (VA) does not stop responding if free credits are consumed collectively by all the VAs.
@@ -96,8 +63,6 @@ To ensure that your Virtual Assistants in the Workspace respond after your Free 
 
 The important considerations to add Paid Credits to a Virtual Assistant (Standard Workspace) are given below:
 
-
-
 1. You can add paid credits to a particular virtual assistant from the Builder at any time in one of the following ways:
     * Add paid credits before the virtual assistant is published.
     * Add paid credits even if the workspace has free credits.
@@ -107,18 +72,12 @@ The important considerations to add Paid Credits to a Virtual Assistant (Standar
 
 ## Enterprise Plan
 
-
-
-
-
 The **Enterprise Plan** is available for all the instances of the Kore.ai XO Platform (Global, EU, and JP). It is a pay-as-you-go plan that supports enterprise bots with high volume interactions and enterprise administration needs. The plan follows a **Session-based billing** model where a **Session** is the billing unit clocked for 15 minutes of interaction with the bot. It includes both active interactions and inactivity. You can leverage the[ basic features](https://developer.kore.ai/docs/bots/bot-settings/plan-usage/usage-plans/#Usage_Plan_Features) for your bots with an Enterprise Plan.
 
 The important features include the following:
 
-
-
 * Every **15 minutes** of user interaction with the virtual assistant is billed as a **session**.
-* The Enterprise Plan can be customized to your business needs. Please[ contact](https://kore.ai/contact-us/) the Kore AI support team for more information.
+* The Enterprise Plan can be customized to your business needs. Please [contact](https://kore.ai/contact-us/) the Kore AI support team for more information.
 * To initiate a Custom Enterprise Plan subscription, you must create a contract with the Kore.ai Team.
 * The real-time billing usage data of your Enterprise Virtual Assistant is available on the **Plan & Usage** page.
 * As a Workspace owner, you can view and manage your bot usage and balance by clicking the **Manage** menu item. 
@@ -173,12 +132,6 @@ The Enterprise Plan billing is done on the basis of the following primary units 
 4. You can reach out to us from there ([https://kore.ai/contact-us/](https://kore.ai/contact-us/)) for upgrading to Enterprise Support. 
 
 The[ Support Plans](https://developer.kore.ai/docs/bots/bot-settings/plan-usage/support-plans/) article provides complete information about the Support plans.
-
-
-
-
-
-
 
 ## Usage Plan Features
 
@@ -720,16 +673,6 @@ Email, phone, and video support (24*7). Guided success program.
 
 
 
-
-
-
-
-
-
-
-
-
-
 ## Navigating to Plan and Usage
 
 To access the **Plan and Usage** feature on the Bot Builder, follow the steps below:
@@ -821,7 +764,7 @@ For free credits, **Using Free Credits** is displayed.
 
 **Free Credits Details**
 
-The[ Usage Plan dashboard](https://developer.kore.ai/docs/bots/bot-settings/plan-usage/usage-plans/#Usage_Plan_Dashboard) displays the usage summary of the free credits in the **Standard Account** including the following:
+The [Usage Plan dashboard](#navigating-to-plan-and-usage) displays the usage summary of the free credits in the **Standard Account** including the following:
 
 
 
@@ -1017,7 +960,7 @@ This message indicates using free credits. You can further explore the Platform 
 		
 !!! note
 
-      The attribution to Kore.ai does not apply to Enterprise and standard accounts with paid credits.
+      If you're using a standard account with free credit, all your bots will display attribution to Kore.ai or Watermark ( Powered by Kore.ai ). To remove it, add paid credit to your bot or upgrade to an enterprise account.
 
 	
 
@@ -1877,7 +1820,6 @@ Steps to manage the Usage and Plan details in the XO Platform:
 5. On the Plan & Usage page, click **Upgrade Plan**.
 ![alt_text](images/up(8).png "image_tooltip")
 
-
 6. You can choose the Plan and upgrade the details. For information, see the[ Upgrading a Standard Plan to an Enterprise Custom Plan](https://developer.kore.ai/docs/bots/bot-settings/plan-usage/usage-plans/#Upgrading_a_Standard_Plan_to_an_Enterprise_Custom_Plan) section.
 7. To manage users, select the **Bots** tab and choose the bot that you want to **Manage**.
 ![alt_text](images/up(5).png "image_tooltip")
@@ -1888,8 +1830,6 @@ Steps to manage the Usage and Plan details in the XO Platform:
 #### Manage the Plan Details in Bot Admin Console
 
 Steps to manage the Usage and Plan details in BAC:
-
-
 
 1. Log in to the Bot Admin Console with admin user credentials.
 2. Select the bot you want to manage the plan details for.

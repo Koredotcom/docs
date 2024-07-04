@@ -1,4 +1,4 @@
-# Bot Authorization Overview
+# VA Authorization Overview
 
 Kore.ai XO Platform’s Enterprise Integration Framework provides support for multiple authentication models that can be configured at a task level for each assistant, to use both authenticated and unauthenticated tasks in the same configuration.
 

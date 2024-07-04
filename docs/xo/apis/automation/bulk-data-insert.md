@@ -26,7 +26,7 @@ Used to insert bulk data into Data Table.
    <td><strong>Authorization</strong>
    </td>
    <td><code>auth: {{JWT}}</code>
-<p>
+<br>
 See <a href="../api-introduction/#generating-the-jwt-token">How to generate the JWT Token</a>.
    </td>
   </tr>
@@ -34,7 +34,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td><strong>App Access</strong>
    </td>
    <td>Write access to the Data Table from the Data Definition in DaaS.
-<p>
+<br>
 For more information, see <a href="../../../administration/data/data-table">app assignment for accessing the data in a table </a>and <a href="../../../administration/data/data-as-service">Data as a Service </a>articles.
    </td>
   </tr>
@@ -116,31 +116,33 @@ curl -X POST \
    <td>data
    </td>
    <td>Array of objects with the column_name: value pairing
-<p>
+<br>
 <code>"data": [</code>
-<p>
+<br>
 <code>    {</code>
-<p>
+<br>
 <code>        "&lt;col1_name>": "&lt;value1>",</code>
-<p>
+<br>
 <code>        "&lt;col2_name>": "&lt;value2>",</code>
-<p>
+<br>
 <code>      },</code>
-<p>
+<br>
 <code>     { </code>
-<p>
+<br>
 <code>         "&lt;col1_name>": "&lt;value1>", </code>
-<p>
+<br>
 <code>         "&lt;col2_name>": "&lt;value2>", </code>
-<p>
+<br>
 <code>      }</code>
-<p>
+<br>
 <code>   ]</code>
    </td>
   </tr>
 </table>
 
+!!! note
 
+    The maximum payload size is 50 MB. One way to ensure that the payload size is within the permitted limit is to paste the entire payload in a JSON file and check its size before running the API.
  
 
 

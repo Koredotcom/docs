@@ -109,8 +109,8 @@ Accepted channel types are:
 <ul>
 
 <li>rtm
-
 <li>ivrVoice
+<li>audiocodes
 </li>
 </ul>
    </td>
@@ -154,7 +154,6 @@ Accepted channel types are:
 </table>
 
 ## Sample Response
-
 
 ```json
 [
@@ -243,3 +242,4 @@ Accepted channel types are:
         }
     }
 ]
+```

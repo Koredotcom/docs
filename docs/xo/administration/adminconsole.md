@@ -98,4 +98,4 @@ To assign a role to a user follow these steps:
 
 !!! Note
 
-        _The role of Bot Owner is assigned at the time of Bot creation and can be changed either from the Bots Management module or from the XO Platform by the Bot Owner not from Role Management._
+    _The role of Bot Owner is assigned at the time of Bot creation and can be changed either from the Bots Management module or from the XO Platform by the Bot Owner not from Role Management._

@@ -13,6 +13,7 @@ Based on the functionality addressed, the APIs can be categorized as:
 3. APIs aiding in Analyzing the performance and behavior, [more](#analytics-apis)
 4. APIs related to the Admin Console functionality, [more](#admin-apis)
 5. APIs related to the data access from Data Tables, [more](#data-data-table-access-apis)
+6. API related to Search and Answer Generation, [more](#answer-generation-api)
 
 !!!note
     All the APIs have rate limits to manage the usage. If the rate limit is exceeded, an API call fails with the following error message – “_Rate limit for this API has been reached. Please try again after some time._”
@@ -20,845 +21,118 @@ Based on the functionality addressed, the APIs can be categorized as:
 
 ## Bot Definition APIs
 
-
-<table>
-  <tr>
-   <td>API
-   </td>
-   <td>DESCRIPTION
-   </td>
-   <td colspan="2" >ASSOCIATED APP SCOPE
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td><strong>XO PLATFORM</strong>
-   </td>
-   <td><strong>ADMIN CONSOLE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../upload-file">Upload File</a>
-   </td>
-   <td>To upload the botdefinition, botconfig, and botfunction file (if any) as well as the bot icon to the local server and get the file ID to be used in the Import Bot API.
-<p>
-To upload utterances in <a href="../import-ml-utterances">ML Utterances Import API</a>, bot roles, admin roles for <a href="../import-roles">Import Roles API</a>, <a href="../import-batch-test-suite">Import Batch Test Suite </a>details and <a href="../extract-kg-from-file-url">Extraction from file or URL</a> to extract FAQs.
-   </td>
-   <td>NA
-   </td>
-   <td>Bot Definition > Bot Import
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../import-bot-as-new-bot">Import Bot as a New Bot</a>
-   </td>
-   <td>To create a new assistant in the account owner’s XO Platform using the File IDs generated when uploading the files.
-   </td>
-   <td>NA
-   </td>
-   <td>Bot Definition > Bot Import
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../import-bot-into-an-existing-bot">Import Bot into an Existing Bot</a>
-   </td>
-   <td>To import the bot definition file into an existing assistant for upgrading to a new version or restoring to an earlier version.
-   </td>
-   <td>NA
-   </td>
-   <td>Bot Definition > Bot Import
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../bot-import-status">Bot Import Status</a>
-   </td>
-   <td>To get the status of the bot import request.
-   </td>
-   <td>NA
-   </td>
-   <td>Bot Definition > Bot Import
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../install-sample-bot">Install Sample Bot</a>
-   </td>
-   <td>To install a sample assistant.
-   </td>
-   <td>NA
-   </td>
-   <td>Bot Definition > Bot Create
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../bot-export">Bot Export</a>
-   </td>
-   <td>To export a bot definition and all associated components.
-   </td>
-   <td>Bot Export
-   </td>
-   <td>Bot Definition > Bot Export
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../bot-export-status">Bot Export – Status</a>
-   </td>
-   <td>To get the status of the Bot Export request and also provides the download link of the export copy after the export is completed.
-   </td>
-   <td>Bot Export
-   </td>
-   <td>Bot Definition > Bot Export
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../channel-enablement">Enable Channel</a>
-   </td>
-   <td>To enable or update a channel for an assistant.
-   </td>
-   <td>NA
-   </td>
-   <td>Channel Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../add-enable-new-language">Add and Enable a New Language</a>
-   </td>
-   <td>To add and enable a new language for a virtual assistant.
-   </td>
-   <td>Languages Configuration.
-   </td>
-   <td>API Scopes > Language Settings
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../enable-existing-language">Enable an existing Language</a>
-   </td>
-   <td>To enable an <a href="/app-settings/language-management/building-multi-language-bots">existing language</a> for a virtual assistant.
-   </td>
-   <td>Languages Configuration.
-   </td>
-   <td>API Scopes > Language Settings
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../disable-existing-language">Disable an existing Language</a>
-   </td>
-   <td>To disable an existing language for a virtual assistant that is currently enabled.
-   </td>
-   <td>Languages Configuration.
-   </td>
-   <td>API Scopes > Language Settings
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../language-updation">Update a Language Configuration</a>
-   </td>
-   <td>To update the configuration of an existing language for a virtual assistant.
-   </td>
-   <td>Languages Configuration.
-   </td>
-   <td>API Scopes > Language Settings
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../proactive-notifications">Proactive Notification</a>
-   </td>
-   <td>To send proactive notifications to the configured channel.
-   </td>
-   <td>NA
-   </td>
-   <td>Channel Management > Proactive Messages
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../proactive-notifications-status">Proactive Notification Status</a>
-   </td>
-   <td>To send proactive notifications to the configured channel.
-   </td>
-   <td>NA
-   </td>
-   <td>Channel Management > Proactive Messages
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../publish-bot">Publish Bot</a>
-   </td>
-   <td>To initiate a bot publish request.
-   </td>
-   <td>NA
-   </td>
-   <td>Bot Publish > Publish
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../bot-publish-status">Bot Publish Status</a>
-   </td>
-   <td>Gets the publish status of the ongoing assistant or the last completed status request of the assistant. 
-   </td>
-   <td>NA
-   </td>
-   <td>Bot Publish > Publish
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../bot-variables-import">Bot Variables Import</a>
-   </td>
-   <td>To import global and content variables into the assistant.
-   </td>
-   <td>Import Variables
-   </td>
-   <td>NA
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../batch-test-execution">Batch Test Execution</a>
-   </td>
-   <td>To invoke the execution of a Batch Test suite.
-   </td>
-   <td>Batch Tests Execution
-   </td>
-   <td>NA
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../batch-test-execution-status">Batch Test Execution Status</a>
-   </td>
-   <td>To know the status of the execution against a unique Test Request Id.
-   </td>
-   <td>Batch Tests Execution
-   </td>
-   <td>NA
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../get-batch-test-suites">Get Batch Test Suites</a>
-   </td>
-   <td>To get the list of Batch Test Suites available.
-   </td>
-   <td>Batch Tests Management
-   </td>
-   <td>Batch Tests Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../export-batch-test-suite">Export Batch Test Suite</a>
-   </td>
-   <td>To export the test cases of a given Batch Test Suite.
-   </td>
-   <td>Batch Tests Management
-   </td>
-   <td>Batch Tests Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../import-batch-test-suite">Import Batch Test Suite</a>
-   </td>
-   <td>To import a batch test suite.
-   </td>
-   <td>Batch Tests Management
-   </td>
-   <td>Batch Tests Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../delete-batch-test-suite">Delete Batch Test Suite</a>
-   </td>
-   <td>To delete a Batch Test Suite.
-   </td>
-   <td>Batch Tests Management
-   </td>
-   <td>Batch Tests Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../delete-batch-test-suite-execution">Delete Batch Test Suite Execution</a>
-   </td>
-   <td>To delete a specific execution of a Batch Test Suite.
-   </td>
-   <td>Batch Tests Management
-   </td>
-   <td>Batch Tests Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../create-conversation-test-suite">Create (Import) a Conversation Test Suite</a>
-   </td>
-   <td>To create or import a Conversation Test Suite.
-   </td>
-   <td>Conversation Tests Management
-   </td>
-   <td>Conversation Tests Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../get-conversation-test-suite-creation-status">Conversation Test Suite Creation Status</a>
-   </td>
-   <td>To get the creation status of a Conversation Test Suite.
-   </td>
-   <td>Conversation Tests Management
-   </td>
-   <td>Conversation Tests Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../execute-test-suite">Conversation Test Suite Execution</a>
-   </td>
-   <td>To execute a Conversation Test Suite.
-   </td>
-   <td>Conversation Tests Execution
-   </td>
-   <td>Conversation Tests Execution
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../get-test-suite-execution-status">Conversation Test Suite Execution Status</a>
-   </td>
-   <td>To get the execution status and summary of a Conversation Test Suite.
-   </td>
-   <td>Conversation Tests Execution
-   </td>
-   <td>Conversation Tests Execution
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../delete-test-suite">Delete Conversation Test Suite</a>
-   </td>
-   <td>To delete a Conversation Test Suite.
-   </td>
-   <td>Conversation Tests Management
-   </td>
-   <td>Conversation Tests Management
-   </td>
-  </tr>
-</table>
-
+| API | DESCRIPTION | ASSOCIATED APP SCOPE |     |
+| --- | --- | --- | --- |
+|     |     | **XO PLATFORM** | **ADMIN CONSOLE** |
+| [Upload File](./upload-file.md) | To upload the botdefinition, botconfig, and botfunction file (if any) as well as the bot icon to the local server and get the file ID to be used in the Import Bot API.<br><br>To upload utterances in [ML Utterances Import API](./import-ml-utterances.md), bot roles, admin roles for [Import Roles API](./import-roles.md), [Import Batch Test Suite](./import-batch-test-suite.md) details and [Extraction from file or URL](../extract-kg-from-file-url.md) to extract FAQs. | NA  | Bot Definition > Bot Import |
+| [Import Bot as a New Bot](./import-bot-as-new-bot.md) | To create a new assistant in the account owner’s XO Platform using the File IDs generated when uploading the files. | NA  | Bot Definition > Bot Import |
+| [Import Bot into an Existing Bot](./import-bot-into-an-existing-bot.md) | To import the bot definition file into an existing assistant for upgrading to a new version or restoring to an earlier version. | NA  | Bot Definition > Bot Import |
+| [Bot Import Status](./bot-import-status.md) | To get the status of the bot import request. | NA  | Bot Definition > Bot Import |
+| [Install Sample Bot](./install-sample-bot.md) | To install a sample assistant. | NA  | Bot Definition > Bot Create |
+| [Bot Export](./bot-export.md) | To export a bot definition and all associated components. | Bot Export | Bot Definition > Bot Export |
+| [Bot Export – Status](./bot-export-status.md) | To get the status of the Bot Export request and also provides the download link of the export copy after the export is completed. | Bot Export | Bot Definition > Bot Export |
+| [Enable Channel](./channel-enablement.md) | To enable or update a channel for an assistant. | NA  | Channel Management |
+| [Add and Enable a New Language](./add-enable-new-language.md) | To add and enable a new language for a virtual assistant. | Languages Configuration. | API Scopes > Language Settings |
+| [Enable an existing Language](./enable-existing-language.md) | To enable an [existing language](../../app-settings/language-management/building-multi-language-bots.md) for a virtual assistant. | Languages Configuration. | API Scopes > Language Settings |
+| [Disable an existing Language](./disable-existing-language.md) | To disable an existing language for a virtual assistant that is currently enabled. | Languages Configuration. | API Scopes > Language Settings |
+| [Update a Language Configuration](./language-updation.md) | To update the configuration of an existing language for a virtual assistant. | Languages Configuration. | API Scopes > Language Settings |
+| [Proactive Notification](./proactive-notifications.md) | To send proactive notifications to the configured channel. | NA  | Channel Management > Proactive Messages |
+| [Proactive Notification Status](./proactive-notifications-status.md) | To send proactive notifications to the configured channel. | NA  | Channel Management > Proactive Messages |
+| [Publish Bot](./publish-bot.md) | To initiate a bot publish request. | NA  | Bot Publish > Publish |
+| [Bot Publish Status](./bot-publish-status.md) | Gets the publish status of the ongoing assistant or the last completed status request of the assistant. | NA  | Bot Publish > Publish |
+| [Bot Variables Import](./bot-variables-import.md) | To import global and content variables into the assistant. | Import Variables | NA  |
+| [Batch Test Execution](./batch-test-execution.md) | To invoke the execution of a Batch Test suite. | Batch Tests Execution | NA  |
+| [Batch Test Execution Status](./batch-test-execution-status.md) | To know the status of the execution against a unique Test Request Id. | Batch Tests Execution | NA  |
+| [Get Batch Test Suites](./get-batch-test-suites.md) | To get the list of Batch Test Suites available. | Batch Tests Management | Batch Tests Management |
+| [Export Batch Test Suite](./export-batch-test-suite.md) | To export the test cases of a given Batch Test Suite. | Batch Tests Management | Batch Tests Management |
+| [Import Batch Test Suite](./import-batch-test-suite.md) | To import a batch test suite. | Batch Tests Management | Batch Tests Management |
+| [Delete Batch Test Suite](./delete-batch-test-suite.md) | To delete a Batch Test Suite. | Batch Tests Management | Batch Tests Management |
+| [Delete Batch Test Suite Execution](./delete-batch-test-suite-execution.md) | To delete a specific execution of a Batch Test Suite. | Batch Tests Management | Batch Tests Management |
+| [Create (Import) a Conversation Test Suite](./create-conversation-test-suite.md) | To create or import a Conversation Test Suite. | Conversation Tests Management | Conversation Tests Management |
+| [Conversation Test Suite Creation Status](./get-conversation-test-suite-creation-status.md) | To get the creation status of a Conversation Test Suite. | Conversation Tests Management | Conversation Tests Management |
+| [Conversation Test Suite Execution](./execute-test-suite.md) | To execute a Conversation Test Suite. | Conversation Tests Execution | Conversation Tests Execution |
+| [Conversation Test Suite Execution Status](./get-test-suite-execution-status.md) | To get the execution status and summary of a Conversation Test Suite. | Conversation Tests Execution | Conversation Tests Execution |
+| [Delete Conversation Test Suite](./delete-test-suite.md) | To delete a Conversation Test Suite. | Conversation Tests Management | Conversation Tests Management |
 
 
 ## NLP Training APIs
 
+| API | DESCRIPTION | ASSOCIATED APP SCOPE |     |
+| --- | --- | --- | --- |
+|     |     | **XO PLATFORM** | **ADMIN CONSOLE** |
+| [ML Utterances Import](./import-ml-utterances.md) | To import ML Utterances into an assistant. | Utterances Import | Test > Utterances Import & Train |
+| [ML Utterances Import Status](./ml-utterances-import-status.md) | To get the status of the ML utterances import request made through Import ML Utterances API. | Utterances Import | Test > Utterances Import & Train |
+| [ML Utterance Train](./ml-utterances-train.md) | To initiate ML training of an assistant. | Train ML | Test > Train ML & Train |
+| [ML Utterance Train Status](./ml-utterances-train-status.md) | To get the status of the ML training. | Train ML | Test > Train ML & Train |
+| [ML Utterances Export](./ml-utterances-export.md) | To export the ML utterances of an assistant. | Utterances Export | Test > Utterances Export & Train |
+| [ML Utterances Export Status](./ml-utterances-export-status.md) | To get the download link of the ML Utterances export copy. | Utterances Export | Test > Utterances Export & Train |
+| [FAQ Training](./faq-training.md) | To initiate the training of the knowledge graph. | Train Faq | Test > Train FAQ & Train |
+| [FAQ Training Status](./faq-training-status.md) | To get the status of the FAQ training. | Train Faq | Test > Train FAQ & Train |
+| [Extraction from file or URL](./extract-kg-from-file-url.md) | To extract FAQs using a file or URL. | Manage Knowledge Graph | Manage Knowledge Graph |
+| [Get Extractions History](./get-kg-extraction-history.md) | To get a list of KG Extractions history. | Manage Knowledge Graph | Manage Knowledge Graph |
+| [Get Extraction Question](./get-kg-extraction-questions.md) | To get a list of KG Extraction Questions. | Manage Knowledge Graph | Manage Knowledge Graph |
+| [Get KnowledgeTasks](./get-knowledge-tasks.md) | To get a listing of knowledge Tasks along with the nodes. | Manage Knowledge Graph | Manage Knowledge Graph |
+| [Add Questions from Extraction](./add-questions-to-knowledgegraph.md) | To add specific questions from extraction to the Knowledge Graph. | Manage Knowledge Graph | Manage Knowledge Graph |
+| [Get FAQs](./get-faqs-from-knowledge-task.md) | To get a list of questions and nodes under the Knowledge task. | Manage Knowledge Graph | Manage Knowledge Graph |
+| [Update NLP Configurations](./update-nlp-configurations.md) | To update the NLP thresholds and configurations. | NLP Configurations | Test > NLP Configurations & Train |
 
-<table>
-  <tr>
-   <td>API
-   </td>
-   <td>DESCRIPTION
-   </td>
-   <td colspan="2" >ASSOCIATED APP SCOPE
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td><strong>XO PLATFORM</strong>
-   </td>
-   <td><strong>ADMIN CONSOLE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../import-ml-utterances">ML Utterances Import</a>
-   </td>
-   <td>To import ML Utterances into an assistant.
-   </td>
-   <td>Utterances Import
-   </td>
-   <td>Test > Utterances Import & Train
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../ml-utterances-import-status">ML Utterances Import Status</a>
-   </td>
-   <td>To get the status of the ML utterances import request made through Import ML Utterances API.
-   </td>
-   <td>Utterances Import
-   </td>
-   <td>Test > Utterances Import & Train
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../ml-utterances-train">ML Utterance Train</a>
-   </td>
-   <td>To initiate ML training of an assistant.
-   </td>
-   <td>Train ML
-   </td>
-   <td>Test > Train ML & Train
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../ml-utterances-train-status">ML Utterance Train Status</a>
-   </td>
-   <td>To get the status of the ML training.
-   </td>
-   <td>Train ML
-   </td>
-   <td>Test > Train ML & Train
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../ml-utterances-export">ML Utterances Export</a>
-   </td>
-   <td>To export the ML utterances of an assistant.
-   </td>
-   <td>Utterances Export
-   </td>
-   <td>Test > Utterances Export & Train
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../ml-utterances-export-status">ML Utterances Export Status</a>
-   </td>
-   <td>To get the download link of the ML Utterances export copy.
-   </td>
-   <td>Utterances Export
-   </td>
-   <td>Test > Utterances Export & Train
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../faq-training">FAQ Training</a>
-   </td>
-   <td>To initiate the training of the knowledge graph.
-   </td>
-   <td>Train Faq
-   </td>
-   <td>Test > Train FAQ & Train
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../faq-training-status">FAQ Training Status</a>
-   </td>
-   <td>To get the status of the FAQ training.
-   </td>
-   <td>Train Faq
-   </td>
-   <td>Test > Train FAQ & Train
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../extract-kg-from-file-url">Extraction from file or URL</a>
-   </td>
-   <td>To extract FAQs using a file or URL.
-   </td>
-   <td>Manage Knowledge Graph
-   </td>
-   <td>Manage Knowledge Graph
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../get-kg-extraction-history">Get Extractions History</a>
-   </td>
-   <td>To get a list of KG Extractions history.
-   </td>
-   <td>Manage Knowledge Graph
-   </td>
-   <td>Manage Knowledge Graph
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../get-kg-extraction-questions">Get Extraction Question</a>
-   </td>
-   <td>To get a list of KG Extraction Questions.
-   </td>
-   <td>Manage Knowledge Graph
-   </td>
-   <td>Manage Knowledge Graph
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../get-knowledge-tasks">Get KnowledgeTasks</a>
-   </td>
-   <td>To get a listing of knowledge Tasks along with the nodes.
-   </td>
-   <td>Manage Knowledge Graph
-   </td>
-   <td>Manage Knowledge Graph
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../add-questions-to-knowledgegraph">Add Questions from Extraction</a>
-   </td>
-   <td>To add specific questions from extraction to the Knowledge Graph.
-   </td>
-   <td>Manage Knowledge Graph
-   </td>
-   <td>Manage Knowledge Graph
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../get-faqs-from-knowledge-task">Get FAQs</a>
-   </td>
-   <td>To get a list of questions and nodes under the Knowledge task.
-   </td>
-   <td>Manage Knowledge Graph
-   </td>
-   <td>Manage Knowledge Graph
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../update-nlp-configurations">Update NLP Configurations</a>
-   </td>
-   <td>To update the NLP thresholds and configurations.
-   </td>
-   <td>NLP Configurations
-   </td>
-   <td>Test > NLP Configurations & Train
-   </td>
-  </tr>
-</table>
 
 ## Analytics APIs
 
-<table>
-  <tr>
-   <td>API
-   </td>
-   <td>DESCRIPTION
-   </td>
-   <td colspan="2" >ASSOCIATED APP SCOPE
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td><strong>XO PLATFORM</strong>
-   </td>
-   <td><strong>ADMIN CONSOLE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../find-intent">Find Intent</a>
-   </td>
-   <td>To obtain the intent recognition result and the scoring from NLP and ML engines.
-   </td>
-   <td>Intent and Entity Detection
-   </td>
-   <td>Intent Identification > Intent and Entity Detection
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../conversation-history">Conversation History</a>
-   </td>
-   <td>To fetch the conversational messages between the assistant and user in reverse chronological order.
-   </td>
-   <td>Chat History
-   </td>
-   <td>Bot Analytics > Chat History
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../conversation-summary">Conversation Summary</a>
-   </td>
-   <td>To summarizes the conversation between a user and an agent.
-   </td>
-   <td>Conversation Summary
-   </td>
-   <td>NA
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../fetch-feedback-survey-scores">Feedback Analytics</a>
-   </td>
-   <td>To fetch the Feedback Survey Response Data and push it to the Feedback Analytics Dashboard.
-   </td>
-   <td>Feedback Survey
-   </td>
-   <td>Bot Analytics > Feedback Analytics
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../fetch-debug-logs">Debug Logs</a>
-   </td>
-   <td>To get debug logs of a specific conversation.
-   </td>
-   <td>Debug Logs
-   </td>
-   <td>NA
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../get-change-logs">Get ChangeLogs</a>
-   </td>
-   <td>To get the list of changes made to the assistant definition for a given date period.
-   </td>
-   <td>Logs History
-   </td>
-   <td>Logs > Bot Audit Logs
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../get-sessions-history">Sessions History</a>
-   </td>
-   <td>To retrieve the conversation sessions created.
-   </td>
-   <td>Bot Sessions
-   </td>
-   <td>Bot Analytics > Bot Sessions
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../get-dashboard-widget-data">Get Dashboard Widget Data</a>
-   </td>
-   <td>To get the data result of a widget from a specific Custom Dashboard added to an assistant.
-   </td>
-   <td>Custom Reports
-   </td>
-   <td>Custom Reports > Custom Reports
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../get-analytics">Get Analytics</a>
-   </td>
-   <td>To extract the metrics data related to the intent detection and task performance using API
-   </td>
-   <td>Metrics
-   </td>
-   <td>NA
-   </td>
-  </tr>
-    <tr>
-   <td><a href="../task-execution-based-containment-report">Task Execution-based Containment Report</a>
-   </td>
-   <td>To extract task execution details (including success and failure status) across all the conversation sessions of the virtual assistant in the selected timeframe for Drop-off, Self-service, and Agent Hand-off containment types using API.</td>
-   <td>Metrics   </td>
-   <td>NA</td>
-  </tr>
-  <tr>
-   <td><a href="../user-engagement-trend">User Engagement Trend</a>
-   </td>
-   <td>To provide the number of users who have interacted with the assistant in a given period across different time intervals.
-   </td>
-   <td>User Engagement Trend
-   </td>
-   <td>NA
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../conversation-details-and-summary">Conversation Details and Summary</a>
-   </td>
-   <td>To fetch the conversational details and summary between the bot and the user..
-   </td>
-   <td>Conversation History
-   </td>
-   <td>NA
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../llm-usage-logs-api">LLM and Generative AI Usage Logs API </a>
-   </td>
-   <td>To fetch the LLM & Generative AI usage logs. 
-   </td>
-   <td>Gen AI and LLM Usage Logs
-   </td>
-   <td>API Scopes > Gen AI and LLM Usage Logs
-   </td>
-  </tr>
-</table>
+| API | DESCRIPTION | ASSOCIATED APP SCOPE |     |
+| --- | --- | --- | --- |
+|     |     | **XO PLATFORM** | **ADMIN CONSOLE** |
+| [Find Intent](./find-intent.md) | To obtain the intent recognition result and the scoring from NLP and ML engines. | Intent and Entity Detection | Intent Identification > Intent and Entity Detection |
+| [Conversation History](./conversation-history.md) | To fetch the conversational messages between the assistant and user in reverse chronological order. | Chat History | Bot Analytics > Chat History |
+| [Conversation Summary](./conversation-summary.md) | To summarizes the conversation between a user and an agent. | Conversation Summary | NA  |
+| [Feedback Analytics](./fetch-feedback-survey-scores) | To fetch the Feedback Survey Response Data and push it to the Feedback Analytics Dashboard. | Feedback Survey | Bot Analytics > Feedback Analytics |
+| [Debug Logs](./fetch-debug-logs.md) | To get debug logs of a specific conversation. | Debug Logs | NA  |
+| [Get ChangeLogs](./get-change-logs.md) | To get the list of changes made to the assistant definition for a given date period. | Logs History | Logs > Bot Audit Logs |
+| [Sessions History](./get-sessions-history.md) | To retrieve the conversation sessions created. | Bot Sessions | Bot Analytics > Bot Sessions |
+| [Get Dashboard Widget Data](./get-dashboard-widget-data.md) | To get the data result of a widget from a specific Custom Dashboard added to an assistant. | Custom Reports | Custom Reports > Custom Reports |
+| [Get Analytics](./get-analytics.md) | To extract the metrics data related to the intent detection and task performance using API | Metrics | NA  |
+| [Task Execution-based Containment Report](./task-execution-based-containment-report.md) | To extract task execution details (including success and failure status) across all the conversation sessions of the virtual assistant in the selected timeframe for Drop-off, Self-service, and Agent Hand-off containment types using API. | Metrics | NA  |
+| [User Engagement Trend](./user-engagement-trend.md) | To provide the number of users who have interacted with the assistant in a given period across different time intervals. | User Engagement Trend | NA  |
+| [Conversation Details and Summary](./conversation-details-and-summary.md) | To fetch the conversational details and summary between the bot and the user.. | Conversation History | NA  |
+| [LLM and Generative AI Usage Logs API](./llm-usage-logs-api.md) | To fetch the LLM & Generative AI usage logs. | Gen AI and LLM Usage Logs | API Scopes > Gen AI and LLM Usage Logs |
 
 ## Admin APIs
 
-<table>
-  <tr>
-   <td>API
-   </td>
-   <td>DESCRIPTION
-   </td>
-   <td>ASSOCIATED BOT ADMIN APP SCOPE
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../get-bots">Get Bots</a>
-   </td>
-   <td>To retrieve the list of bots available in an account
-   </td>
-   <td>Profile Management > Role Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../import-roles">Import Roles</a>
-   </td>
-   <td>To import bot or admin roles into an account
-   </td>
-   <td>Profile Management > Role Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../get-roles">Get Roles</a>
-   </td>
-   <td>To retrieve the list of bot or admin roles available in an account.
-   </td>
-   <td>Profile Management > Role Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../get-user-roles-details">Get User Roles Details</a>
-   </td>
-   <td>To get full information on all users and their associated roles in the account
-   </td>
-   <td>Profile Management > Role Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../get-groups">Get Groups</a>
-   </td>
-   <td>To get the list of groups and group members available in the account
-   </td>
-   <td>Profile Management > Role Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../export-roles">Export Roles</a>
-   </td>
-   <td>To export bot or admin roles from an account
-   </td>
-   <td>Profile Management > Role Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../assign-bt-roles">Assign BT Roles</a>
-   </td>
-   <td>To assign a bot role to a set of users in a specific assistant
-   </td>
-   <td>Profile Management > Role Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../assign-admin-roles">Assign Admin Roles</a>
-   </td>
-   <td>To add or remove users or groups from admin roles
-   </td>
-   <td>Profile Management > Role Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../update-user-access">Update User Access</a>
-   </td>
-   <td>To add or remove the ability to access XO Platform, create new assistants
-   </td>
-   <td>Profile Management > Role Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../create-users">Create Users</a>
-   </td>
-   <td>To add users to an account
-   </td>
-   <td>User Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../get-user-information">Get Users Information</a>
-   </td>
-   <td>To retrieve the user details
-   </td>
-   <td>User Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../update-user">Update User</a>
-   </td>
-   <td>To update user details
-   </td>
-   <td>User Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../delete-users">Remove Users from Account</a>
-   </td>
-   <td>To remove users from an account
-   </td>
-   <td>User Management
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../delete-customer-data">Delete Customer Data</a>
-   </td>
-   <td>To delete customer data
-   </td>
-   <td>Profile Management > Delete Users Data
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../delete-customer-data-status">Delete Customer Data Status API</a>
-   </td>
-   <td>To get the status of the Customer Data Delete request
-   </td>
-   <td>Profile Management > Delete Users Data
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../get-admin-console-audit-logs">Get Admin Console Audit Logs</a>
-   </td>
-   <td>To get admin console audit logs.
-   </td>
-   <td>Logs Admin > Admin Console Audit Logs
-   </td>
-  </tr>
-</table>
+| API | DESCRIPTION | ASSOCIATED BOT ADMIN APP SCOPE |
+| --- | --- | --- |
+| [Get Bots](./get-bots.md) | To retrieve the list of bots available in an account | Profile Management > Role Management |
+| [Import Roles](./import-roles.md) | To import bot or admin roles into an account | Profile Management > Role Management |
+| [Get Roles](./get-roles.md) | To retrieve the list of bot or admin roles available in an account. | Profile Management > Role Management |
+| [Get User Roles Details](./get-user-roles-details.md) | To get full information on all users and their associated roles in the account | Profile Management > Role Management |
+| [Get Groups](./get-groups.md) | To get the list of groups and group members available in the account | Profile Management > Role Management |
+| [Export Roles](./export-roles.md) | To export bot or admin roles from an account | Profile Management > Role Management |
+| [Assign BT Roles](./assign-bt-roles.md) | To assign a bot role to a set of users in a specific assistant | Profile Management > Role Management |
+| [Assign Admin Roles](./assign-admin-roles.md) | To add or remove users or groups from admin roles | Profile Management > Role Management |
+| [Update User Access](./update-user-access.md) | To add or remove the ability to access XO Platform, create new assistants | Profile Management > Role Management |
+| [Create Users](./create-users.md) | To add users to an account | User Management |
+| [Get Users Information](./get-user-information.md) | To retrieve the user details | User Management |
+| [Update User](./update-user.md) | To update user details | User Management |
+| [Remove Users from Account](./delete-users.md) | To remove users from an account | User Management |
+| [Delete Customer Data](./delete-customer-data.md) | To delete customer data | Profile Management > Delete Users Data |
+| [Delete Customer Data Status API](./delete-customer-data-status.md) | To get the status of the Customer Data Delete request | Profile Management > Delete Users Data |
+| [Get Admin Console Audit Logs](./get-admin-console-audit-logs.md) | To get admin console audit logs. | Logs Admin > Admin Console Audit Logs |
 
 ## Data (Data Table) Access APIs
 
-<table>
-  <tr>
-   <td>API
-   </td>
-   <td>DESCRIPTION
-   </td>
-   <td>ASSOCIATED APP SCOPE
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../data-insert">Insert Data</a>
-   </td>
-   <td>To insert data into Data Table
-   </td>
-   <td>Write access to the Data Table
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../bulk-data-insert">Insert Bulk Data</a>
-   </td>
-   <td>To insert bulk data into Data Table
-   </td>
-   <td>Write access to the Data Table
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../data-update">Update Data</a>
-   </td>
-   <td>To update data into Data Table.
-   </td>
-   <td>Read and Write access to the Data Table
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../data-delete">Delete Data</a>
-   </td>
-   <td>To delete data from Data Table.
-   </td>
-   <td>Read and Delete access to the Data Table
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../query-table-data">Get Table Data</a>
-   </td>
-   <td>To get data from Data Table.
-   </td>
-   <td>Read access to the Data Table
-   </td>
-  </tr>
-  <tr>
-   <td><a href="../query-data-table-view">Get View Data</a>
-   </td>
-   <td>To get data from Data View.
-   </td>
-   <td>Read access to the Table View
-   </td>
-  </tr>
-</table>
+| API | DESCRIPTION | ASSOCIATED APP SCOPE |
+| --- | --- | --- |
+| [Insert Data](./data-insert.md) | To insert data into Data Table | Write access to the Data Table |
+| [Insert Bulk Data](./bulk-data-insert.md) | To insert bulk data into Data Table | Write access to the Data Table |
+| [Update Data](./data-update.md) | To update data into Data Table. | Read and Write access to the Data Table |
+| [Delete Data](./data-delete.md) | To delete data from Data Table. | Read and Delete access to the Data Table |
+| [Get Table Data](./query-table-data.md) | To get data from Data Table. | Read access to the Data Table |
+| [Get View Data](./query-data-table-view.md) | To get data from Data View. | Read access to the Table View |
+
+
+## Answer Generation API
+
+
+| API            | Description                                 | App Scope         |
+|----------------|---------------------------------------------|-------------------|
+| [Answer Generation](../answer-generation.md) | To fetch answers for a query using SearchAI | Answer Generation |
 

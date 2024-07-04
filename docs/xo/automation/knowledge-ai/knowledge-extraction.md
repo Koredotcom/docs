@@ -6,16 +6,16 @@ The feature supports the extraction of knowledge from unstructured content such 
 
 After completing the extraction, you can edit the question and answers using an easy-to-use interface and organize them under the relevant Knowledge Graph nodes.
 
-<img src="../images/knowledge-extraction.png" alt="knowledge extraction" title="knowledge extraction" style="border: 1px solid gray; zoom:75%;">
+
 
 ## The Extraction Process
 
 To move data using the Knowledge Extraction service to the Knowledge Graph, follow the process below:
 
-1. **Extracting:** Extract the existing FAQ content from structured or unstructured sources of question-answer data such as PDF, web pages, and CSV files. This extraction can be done before or after creating a Knowledge Graph for the assistant you are working with. 
+1. **Extracting**: Extract the existing FAQ content from structured or unstructured sources of question-answer data such as PDF, web pages, and CSV files. This extraction can be done before or after creating a Knowledge Graph for the assistant you are working with. 
     <div class="admonition note">
     <p class="admonition-title">Note</p>
-    <p>The Knowledge Extraction service supports a specific content structure for each source type. Refer to the <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-extraction/#supported-formats-and-requirements">Supported formats</a> section below for details.</p>
+    <p>The Knowledge Extraction service supports a specific content structure for each source type. Refer to the [Supported formats](#supported-formats-and-requirements).
     </div>
 
 <ol start="2"><li><b>Editing</b>: Upon successful data extraction, you can edit the questions and answer text before moving it to the Knowledge Graph.</li>
@@ -29,14 +29,13 @@ The Knowledge Extractor allows you to add the extracted content to the Knowledge
 ## Extract from a Website
 
 1. Open the VA to which you want to extract the content.
-2. Select the **Build** top menu item.
-3. From the left menu, click **Conversational Skills** > **Knowledge Graph**.
- 4. Under the **Extracts** section, click **Extract from URL**.
+2. Go to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **more** (three dots) > **Manage Extracts**.
+4. Click **Extract from URL**.
 5. Enter a **Name** for the extraction.
 6. Enter the **URL** of the page, and then click **Proceed**.
 <img src="../images/extract-url.png" alt="extract url" title="extract url" style="border: 1px solid gray; zoom:75%;">
 7. Once the extraction is completed successfully, a success status page appears.
-8. **Review & Add** the relevant questions to your Knowledge Graph,
+8. **Review & Add** the relevant questions to your Knowledge Graph.
 
 ## Extract from a File
 
@@ -45,12 +44,11 @@ The Knowledge Extractor allows you to add the extracted content to the Knowledge
 <p>The file size should not exceed 5MB.</p>
 </div>
 
-To extract content from a file, please follow the steps below. For file format details, refer to the <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-extraction/#supported-formats-and-requirements" target="_blank">Supported Formats</a> section of this article.
+To extract content from a file, please follow the steps below. For file format details, refer to the [Supported Formats](#supported-formats-and-requirements).
 
 1. Open the VA to which you want to extract the content.
-2. Select the **Build** top menu item.
-3. From the left menu, click **Conversational Skills** > **Knowledge Graph**.
-4. Under the **Extracts** section, click **Extract from URL**.
+2. Go to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **more** (three dots) > **Manage Extracts**.
+4. Click **Extract from file**.
 5. Click **Browse** to locate the file (PDF or CSV).
 
     <img src="../images/drag-and-drop-file.png" alt="locate file" title="locate file" style="border: 1px solid gray; zoom:75%;">
@@ -58,14 +56,10 @@ To extract content from a file, please follow the steps below. For file format d
 6. Click **Proceed**.
 7. For PDF files you have an option to annotate the document before extraction.
 8. After the extraction is completed successfully, a success status page is displayed.
-9. **Review & Add** the relevant questions to your Knowledge Graph. <a href="https://docsinternal-kore.github.io/docs/xo/automation/knowledge-ai/knowledge-extraction/#add-the-extracted-content-to-the-knowledge-graph" target="_blank">Learn more</a>.
+9. **Review & Add** the relevant questions to your Knowledge Graph.
 
 ### Annotate & Extract
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This feature has been introduced in v8.0 of the Platform.</p>
-</div>
 
 You might have all the FAQs related to your business in a PDF file but not in the XO Platform compatible format. Versions prior to 8.0 of the XO Platform did not allow incompatible files. The introduction of the Annotation tool helps annotate documents, identifying the key sections of the content. The Knowledge Extraction engine uses this information to extract the FAQs from the document.
 
@@ -76,8 +70,8 @@ You might have all the FAQs related to your business in a PDF file but not in th
 
 1. Select a new or previously extracted PDF file. Note that you can use a previously extracted file provided no questions from that file are added to the Knowledge Graph.
 2. Click **Annotate & Extract** to make annotation on a newly uploaded file.
+    ![alt_text](images/annotate-andextract-pdf.png "text")
 
-    <img src="<../images/annotate-and extract-pdf.png>" alt="annotate and extract" title="annotate and extract" style="border: 1px solid gray; zoom:75%;">
 
 3. The PDF document is loaded into the Annotation Tool allowing you to annotate the various sections in the document.
 4. To annotate, select the text and tag it as follows:
@@ -86,7 +80,7 @@ You might have all the FAQs related to your business in a PDF file but not in th
     * **Footer** – Text thus marked is ignored. Text marked as Footers is used to train the model to identify and ignore such text. Same as the Header, random marking of texts as footers must be avoided as marking text such as header or paragraphs as the footer invalidates the backend ML model, and will not produce optimal results.
     * **Exclude** – This text is not used for extraction.
     * **Ignore Page** – Pages marked as ignored are not used for extraction.
-   * You can use **Remove Annotation** to rectify any incorrect annotations.
+    * You can use **Remove Annotation** to rectify any incorrect annotations.
 5. The Knowledge Graph Engine uses the headings, headers, and footers in the extraction process. Since the model is trained by the KG Engine, annotating the entire document is not necessary. You can annotate a couple of pages with headings, headers, and footers, extract and review the questions. If satisfied, you can proceed with adding questions to the Knowledge Graph, else repeat the annotation process till you get satisfactory results.
 6. Additional document information is provided:
     * **Document Info** – Name, Size, and the Number of Pages of the document.
@@ -110,11 +104,9 @@ You might have all the FAQs related to your business in a PDF file but not in th
 ### Edit the Extracted Content
 
 1. Open the VA.
-2. Select the **Build** top menu item.
-3. From the left pane, click **Conversational Skills** > **Knowledge Graph**.
-4. The **Knowledge Extraction** section displays the list of all extractions.
+2. Got to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **more** (three dots) > **Manage Extracts**.
+4. The **Manage Extracts** section displays the list of all extractions.
 
-    <img src="../images/knowledge-extraction-section.png" alt="knowledge extraction section" title="knowledge extraction sections" style="border: 1px solid gray; zoom:75%;">
 
 5. Click the name of a successful extract you want to edit.
 
@@ -133,9 +125,8 @@ There are two ways to add the extracted content to the Knowledge Graph.
 To add the content from the **Extracts** section, follow the steps below:
 
 1. Open the VA.
-2. Select the **Build** top menu item.
-3. From the left menu, click **Conversational Skills** > **Knowledge Graph**.
-4. From the **Knowledge Extraction** section, select the name of a successful extract you want to add.
+2. Got to **Virtual Assistant** > **Knowledge AI** > **FAQs** > **more** (three dots) > **Manage Extracts**.
+4. From the **Manage Extracts** section, select the name of a successful extract you want to add.
 5. Drag and drop the required Q&A to the node/term you want to add. As you drag and drop, the child nodes will be expanded.
 6. You can select multiple Q&As and perform a bulk move.
 

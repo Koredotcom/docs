@@ -1,11 +1,11 @@
-# Talk to Bot
+# Test (Talk to Bot)
 
 After you have defined your assistant and configured one or more tasks, you should test your settings before you publish your NLP-enabled assistant. Bot owners and developers can chat with the assistant in real-time to test recognition, performance, and flow as if it were a live session.
 
 
 ## Testing a Virtual Assistant
 
-To test your tasks in a messaging window, click the **Talk to Bot** icon located on the lower right corner on the XO Platform. 
+To test your tasks in a messaging window, click the **Test** icon located on the top right corner on the Platform. 
 
 <img src="../images/talk-to-bot-window.png" alt="Talk to Bot" title="Talk to Bot" style="border: 1px solid gray; zoom:80%;"/>
 
@@ -13,11 +13,11 @@ A messaging window for the assistant is displayed and connected to the NLP inter
 
 !!! Note
 
-        The **Talk to Bot** icon is not enabled until and unless at least one task is created.
+    The **Test** icon is not enabled until and unless at least one task is created.
 
 <img src="../images/talk-to-bot-img2.png" alt="Talk to Bot - Messaging window" title="Talk to Bot - Messaging window" style="border: 1px solid gray; zoom:80%;"/>
 
-When you first open the window, the **Bot Setup Confirmation Message** field definition for the assistant is displayed, if defined. In the **Message** section, enter text to begin interacting and testing your assistant , for example, _Book a flight._ The NLP interpreter begins processing the task, verifying authentication with the user and the web service, and then prompting for required task field information. When all the required task fields are collected, it executes the task. While testing your assistant , try different variations of user prompts and ensure the NLP interpreter is processing the synonyms (or lack of synonyms) properly. If the assistant returns unexpected results, consider adding or modifying synonyms for your tasks and task field names as required. For more information, see [Natural Language Processing](../../natural-language/training/optimizing-bots/){:target="_blank"}.
+When you first open the window, you need to select whether you wish to proceed with Voice or Chat. Chat experience is described in this content. In the **Message** section, enter text to begin interacting and testing your assistant , for example, _Book a flight._ The NLP interpreter begins processing the task, verifying authentication with the user and the web service, and then prompting for required task field information. When all the required task fields are collected, it executes the task. While testing your assistant , try different variations of user prompts and ensure the NLP interpreter is processing the synonyms (or lack of synonyms) properly. If the assistant returns unexpected results, consider adding or modifying synonyms for your tasks and task field names as required. For more information, see [Natural Language Processing](../../natural-language/training/optimizing-bots/){:target="_blank"}.
 
 
 ## Debugging and Troubleshooting

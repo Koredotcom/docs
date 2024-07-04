@@ -275,13 +275,15 @@ Steps to generate the token:
 1. Visit [https://developer.kore.ai/tools/jwt/](https://developer.kore.ai/tools/jwt/).
 2. In the **Algorithm** drop-down list, select **HS256**.
 3. Scroll down to the **Decoded** section, and update the **Payload** and the **Secret**.
-        1. Replace the content of the **Payload** field with the code block shown below, and add the Client ID of the app copied in the previous section.
-        ```json
-        {
-            "sub": "1234567890",
-            "appId": "add-Client-ID-here"
-        }```
-        Note that the XO Platform validates the token only when it is entered exactly as “appId”. Don’t use “App ID”, “appid”, or “app ID”.
+4. Replace the content of the **Payload** field with the code block shown below, and add the Client ID of the app copied in the previous section
+    
+    ```json
+    {
+        "sub": "1234567890",
+        "appId": "add-Client-ID-here"
+    }```
+    
+    Note that the XO Platform validates the token only when it is entered exactly as “appId”. Don’t use “App ID”, “appid”, or “app ID”.
 
-4. In the **Verify Signature** field, replace **your-256-bit-secret** with the Client Secret copied in the previous section.
-5. Click **Copy JWT** to copy the generated token. You can pass this token as a part of the API request for authorization.
+5. In the **Verify Signature** field, replace **your-256-bit-secret** with the Client Secret copied in the previous section.
+6. Click **Copy JWT** to copy the generated token. You can pass this token as a part of the API request for authorization.

@@ -85,6 +85,8 @@ Some of these settings include: making a field mandatory, adding tooltips, secur
     * **Placeholder** value to be displayed in the field when blank, say, _Please select the departure date_.
         <img src="../images/departure-date-settings.png" alt="departure date" title="departure date" style="border: 1px solid gray; zoom:75%;">
 
+    * **Default Value** (Optional), you can, for example, mention the Current Date; please note that you can clear (using the ‘x’ option on the field) as well as edit this value at run-time, if the field is not read-only..
+
 5. Add a second Date field, for the Return Date and repeat **Step 4**. 
 6. Drag and drop a Radio Button component onto the form for the **Fare** field, and set it up as follows:
     * **Display Name**, say Fare.

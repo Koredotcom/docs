@@ -1,4 +1,15 @@
 # Adding the Google Business Messaging Channel
+
+
+
+
+
+!!! Warning
+
+    Google announced the discontinuation of the Google Business Messages channel from July 31st. This channel will be phased out in the coming weeks. If you have alternative chat channels, consider inviting your customers to continue conversations there. For more details, please refer to the [Google announcement](https://developers.google.com/business-communications/business-messages/resources/release-notes/update-on-gbm?hl=en).
+
+    
+
 Modern business applications require agent integrations on web/mobile devices to enable seamless customer communication via SMS/chats.
 
 The **Kore.ai XO Platform** now helps a _Google Business Messaging Partner_ to create rich and asynchronous messaging experiences within apps and during calls through the GBM channel enablement. This feature helps seamlessly integrate real-time business agents to Virtual Assistants.
@@ -98,7 +109,7 @@ To integrate with the GBM channel, you need to register as a partner for Google 
 
     !!! note
 
-      To launch a production agent with Business Messages, please register with a corporate email, not a personal email.
+        To launch a production agent with Business Messages, please register with a corporate email, not a personal email.
   
 4. Review and Accept the **Business Messages Terms of Service**.
 
@@ -119,7 +130,7 @@ Also, to create an agent for your GBM Partner account, you must submit informati
 
 !!! note
 
-        To manage multiple brands, you must create an agent for each brand.	
+    To manage multiple brands, you must create an agent for each brand.	
 
 			
 
@@ -147,7 +158,7 @@ Once you’ve gathered the above information, to create an agent follow the step
 
 !!! note
 
-        If you manage multiple brands, repeat the steps to create an agent for each brand.
+    If you manage multiple brands, repeat the steps to create an agent for each brand.
 
 
 
@@ -208,7 +219,8 @@ To send messages and events as your agent, you need to authenticate API calls wi
 1. On the left menu, click **Service account**.
 <img src="../images/GBM-9.png" alt="service account" title="service account" style="border: 1px solid gray; zoom:70%;">
 
-2. Click the **Create key** button.  <img src="../images/GBM-10.png" alt="create key" title="create key" style="border: 1px solid gray; zoom:70%;">
+2. Click the **Create key** button.  
+<img src="../images/GBM-10.png" alt="create key" title="create key" style="border: 1px solid gray; zoom:70%;">
 
 3. Click **Create** on the confirmation window to download the JSON file with the **service account key**.  <img src="../images/GBM-11.png" alt="service account key" title="service account key" style="border: 1px solid gray; zoom:70%;">
 <img src="../images/GBM-12.png" alt="service key" title="service key" style="border: 1px solid gray; zoom:70%;">

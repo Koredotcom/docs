@@ -15,16 +15,16 @@ The XO Platform allows you to import any VA with a file size up to 50MB. If you 
 
 To import a Knowledge Graph, follow the steps below:
 
-1. Open the VA to import the KG and select the **Build** tab.
-2. On the left pane, click **Conversational Skills** > **Knowledge Graph**.
-3. You can find the **Import** option on the respective Knowledge Graph.
-<img src="../images/import-knowledge-graph.png" alt="Import Knowledge Graph" title="Import Knowledge Graph" style="border: 1px solid gray; zoom:75%;">
+1. To import the KG and go to **Virtual Assistant** > **Knowledge AI** > **FAQs**.
+2. In the top right corner, click **more** icon.
+3. Click **Import** option on the respective Knowledge Graph.
+    ![alt_text](images/kg-more.png )
 
-4. Click **Import**.
-5. In the **Import** dialog, do one of the following based on the scenario:
+
+5. In the **Import FAQs** dialog, do one of the following based on the scenario:
     * For a new Knowledge Graph, click **Proceed**.
     * For an existing Knowledge Graph, take a backup CSV or JSON file, and then click **Proceed**.
-    <img src="../images/backup-knowledge-graph.png" alt="backup knowledge graph" title="backup knowledge graph" style="border: 1px solid gray; zoom:75%;">
+     ![alt_text](images/import-faq.png )
 
 6. Drag and drop the file to the **Import** window or click **Browse** to locate the file.
 7. Click **Next** to begin the import.
@@ -39,10 +39,9 @@ The hierarchy is displayed in the Knowledge Graph which you can edit and use to 
 
 To export a Knowledge Graph, follow the below steps:
 
-1. On the left pane, click **Conversational Skills** > **Knowledge Graph**.
-2. You can find the **Export** option on the respective Knowledge Graph.
-
-    <img src="../images/export-knowledge-graph.png" alt="export knowledge graph" title="export knowledge graph" style="border: 1px solid gray; zoom:75%;">
+1. To export the KG and go to **Virtual Assistant** > **Knowledge AI** > **FAQs**.
+2. In the top right corner, click **more** icon.
+     ![alt_text](images/kg-more.png )
 
 3. Based on the preferred format: click **Export JSON** or **Export CSV**.
 

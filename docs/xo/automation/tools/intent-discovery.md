@@ -4,7 +4,7 @@ The new Intent Discovery module helps you auto-extract popular intents from prev
 
 You can upload your historical transcripts in CSV format. After the transcripts are uploaded into the bot, the bot uses LLMs to identify the different topics, intents, or conversations between the user and the bot. It intelligently identifies all the intents available. You can review each intent to understand which conversations have resulted in identifying these intents. After the review, you can also see the underline utterances that resulted in identifying an intent. You can either add these intents as new intents for your virtual assistant or pick specific utterances and train them as utterances for your existing dialogs and FAQs. So, it helps both ways – either create new intents or enhance the training you provide to your virtual assistant.
 
-<img src="../images/intent-discovery-demo-diagram.png" alt="Intent Discovery" title="Intent Discovery" style="border: 1px solid gray; zoom:50%;"/> 
+<img src="../images/intent-discovery-demo-diagram.png" alt="Intent Discovery" title="Intent Discovery" style="border: 1px solid gray; zoom:50%;"> 
 
 
 The Intent Discovery journey consists of the following steps:
@@ -16,15 +16,15 @@ The Intent Discovery journey consists of the following steps:
 
 ## Create a Project
 
-1. Go to **Build > Tools > Intent Discovery**.  
-<img src="../images/intent-discovery-home.png" alt="Click Intent Discovery" title="Click Intent Discovery" style="border: 1px solid gray; zoom:50%;"/>  
+1. Go to **Automation AI > Virtual Assistant > Tools > Intent Discovery**.  
+<img src="../images/intent-discovery-home.png" alt="Click Intent Discovery" title="Click Intent Discovery" style="border: 1px solid gray; zoom:50%;">  
 
 2. Click the **Create Project** button.
-3. Enter a name and a brief description of the project. Note that the character limit for Project Name is 256, and Description is 1000. Click **Proceed**.  
-<img src="../images/intent-discovery-project.png" alt="Project name and description" title="Project name and description" style="border: 1px solid gray; zoom:50%;"/>  
+3. Enter a name and a brief description of the project. **Note** that the character limit for Project Name is 256, and Description is 1000. Click **Proceed**.  
+<img src="../images/intent-discovery-project.png" alt="Project name and description" title="Project name and description" style="border: 1px solid gray; zoom:50%;">  
 
 4. The new project is created. You see the Intent Discovery page with the header **‘Projects / {{New Project’s Name}}’**.  
-<img src="../images/upload-transcript.png" alt="Project Created" title="Project Created" style="border: 1px solid gray; zoom:50%;"/>  
+<img src="../images/upload-transcript.png" alt="Project Created" title="Project Created" style="border: 1px solid gray; zoom:50%;">  
   
 
 The Intent Discovery landing page lists all the projects with conversational insights for each project, such as the status of the project, number of sessions, intents extracted, and results in terms of added dialogs, added FAQs, trained dialogs, and trained FAQs. Note that the result will be NA for the projects for which intent extraction is incomplete.
@@ -36,18 +36,18 @@ The status of a project can be any of the following, displayed in the Status col
 * Intent Extraction In Progress
 * Intents Extracted
 
-<img src="../images/intent-discovery-page.png" alt="Different status of project" title="Different status of project" style="border: 1px solid gray; zoom:50%;"/>   
+<img src="../images/intent-discovery-page.png" alt="Different status of project" title="Different status of project" style="border: 1px solid gray; zoom:50%;">   
 
 !!! note
 
-        You can create a maximum of 10 projects per VA. You can change an existing project’s name and description anytime.
+    You can create a maximum of 10 projects per VA. You can change an existing project’s name and description anytime.
 
 
 ## Upload Transcripts
 
 On the Intent Discovery page for the new project, you can see a button to initiate the upload of the transcript file(s) and a link to download a sample transcript file.
 
-<img src="../images/upload-transcript.png" alt="Upload Transcripts" title="Upload Transcripts" style="border: 1px solid gray; zoom:50%;"/>  
+<img src="../images/upload-transcript-button-click.png" alt="Upload Transcripts" title="Upload Transcripts" style="border: 1px solid gray; zoom:50%;">  
 
 
 You can download the sample CSV file by clicking the link. Ensure to upload transcripts in the format specified in the sample file. Please note that **all the columns in the file must be filled**.
@@ -55,7 +55,7 @@ You can download the sample CSV file by clicking the link. Ensure to upload tran
 
 ### Format of the CSV (Transcript) file
 
-<img src="../images/sample-csv-file.png" alt="Sample CSV File" title="Sample CSV File" style="border: 1px solid gray; zoom:50%;"/>  
+<img src="../images/sample-csv-file.png" alt="Sample CSV File" title="Sample CSV File" style="border: 1px solid gray; zoom:50%;">  
 
 
 
@@ -126,12 +126,12 @@ table, th, td {
 ### Steps to upload the transcripts:
 
 1. Click the **Upload Transcript** button, and then browse and select the transcripts files (CSV format). The selected files are uploaded, and you see a prompt to manage the transcripts on the next page.  
-<img src="../images/browse-for-transcript.png" alt="Browse for Transcript" title="Browse for Transcript" style="border: 1px solid gray; zoom:50%;"/>  
-  
-    <img src="../images/upload-transcript-confirmation.png" alt="Transcript upload confirmation" title="Upload transcript confirmation" style="border: 1px solid gray; zoom:50%;"/>  
+    
+    <img src="../images/browse-for-transcript.png" alt="Browse for Transcript" title="Browse for Transcript" style="border: 1px solid gray; zoom:50%;">    
 
 2. If some transcript files are uploaded but No intents extracted so far, the **Manage Transcripts** button is displayed as shown in the screenshot below.  
-<img src="../images/manage-transcripts.png" alt="Manage Transcript" title="Manage Transcript" style="border: 1px solid gray; zoom:50%;"/>
+    
+    <img src="../images/manage-transcripts.png" alt="Manage Transcript" title="Manage Transcript" style="border: 1px solid gray; zoom:50%;">
     
 3. On clicking **Manage Transcripts**, you can see the **Transcripts** dialog box with the list of all the transcript files. Below details are displayed on the window:
     1. File Name: Name of the transcript file uploaded
@@ -144,7 +144,7 @@ table, th, td {
         * Invalid File
         * Upload Failed
 
-    <img src="../images/transcript-list.png" alt="List of Transcripts" title="List of Transcripts" style="border: 1px solid gray; zoom:50%;"/>
+    <img src="../images/transcript-list.png" alt="List of Transcripts" title="List of Transcripts" style="border: 1px solid gray; zoom:50%;">
 
 
 The dialog box has the provision to download a sample file using the **Sample File** button and upload additional transcript files by clicking the **Upload Transcripts** button.
@@ -155,7 +155,7 @@ The dialog box has the provision to download a sample file using the **Sample Fi
 Upon successful upload of the transcript(s), the platform extracts the conversations from the uploaded files. You can view all the conversations, and the chat messages exchanged between the end user and the VA/agent.
 
 The platform displays the conversation session summary, which includes the count of the VA messages and user messages. You need to select a **Date Filter** under **Contents** to display the details.  
-<img src="../images/conversation-in-transcript.png" alt="Conversations in Transcript" title="Conversations in Transcript" style="border: 1px solid gray; zoom:50%;"/>
+<img src="../images/conversation-in-transcript.png" alt="Conversations in Transcript" title="Conversations in Transcript" style="border: 1px solid gray; zoom:50%;">
 
 
 If a conversation is not useful or is not contributing to the intent, you can delete the specific conversation. Deleting a conversation also impacts the conversation count and average message count in the columns.
@@ -166,7 +166,7 @@ If a conversation is not useful or is not contributing to the intent, you can de
 You can delete the uploaded transcript file if the file is not required anymore, in case the upload was incorrect, or if the conversation has been extracted but the file is not useful.
 
 On hovering any row, the **delete** icon is displayed, which is used to delete that specific Transcript.  
-<img src="../images/delete-transcript.png" alt="Delete Transcript" title="Delete Transcript" style="border: 1px solid gray; zoom:50%;"/>
+<img src="../images/delete-transcript.png" alt="Delete Transcript" title="Delete Transcript" style="border: 1px solid gray; zoom:50%;">
 
 
 ## Extract Intents
@@ -174,22 +174,16 @@ On hovering any row, the **delete** icon is displayed, which is used to delete t
 The next step is intent extraction. 
 
 Click the **Extract Intents** button on the Transcripts dialog box. You can see a message about intents being extracted. This process may take a few minutes depending on the number and size of the transcript files.  
-<img src="../images/intent-extraction-in-progress.png" alt="Intent extraction in progress" title="Intent extraction in progress" style="border: 1px solid gray; zoom:50%;"/>
+<img src="../images/intent-extraction-in-progress.png" alt="Intent extraction in progress" title="Intent extraction in progress" style="border: 1px solid gray; zoom:50%;">
 
 After the intent extraction is completed, you can see the list of extracted intents along with session count, qualified utterances, and actions.  
-<img src="../images/intents-extracted.png" alt="Intents Extracted" title="Intents extracted" style="border: 1px solid gray; zoom:50%;"/>
-
-You can view the details of the intent action by clicking the **View** icon under the Actions column next to the text.  
-<img src="../images/click-view-on-intent.png" alt="Click View on Images" title="Click View on Images" style="border: 1px solid gray; zoom:50%;"/>  
-  
- <img src="../images/view-intent-activity.png" alt="Intent Activity" title="Intent Activity" style="border: 1px solid gray; zoom:50%;"/>
-
+<img src="../images/intents-extracted.png" alt="Intents Extracted" title="Intents extracted" style="border: 1px solid gray; zoom:50%;">
 
 
 ### Extracted Intent Details
 
 Clicking anywhere on the extracted Intents row displays a pop-up dialog box to view the details of the extracted Intent. The title of the dialog box is the extracted Intent name.  
-<img src="../images/extracted-intent-details-slider.png" alt="Details of Extracted Intent" title="Details of Extracted Intent" style="border: 1px solid gray; zoom:50%;"/>
+<img src="../images/extracted-intent-details-slider.png" alt="Details of Extracted Intent" title="Details of Extracted Intent" style="border: 1px solid gray; zoom:50%;">
 
 The dialog box shows a table with individual rows for each session. The table has below columns: 
 
@@ -207,7 +201,7 @@ The dialog box shows a table with individual rows for each session. The table ha
 ### Session Details
 
 The **Transcript** dialog box shows the summary of the session. The detailed chat is displayed below the summary.  
-<img src="../images/session-summary.png" alt="Transcript - Session Summary" title="Transcript - Session Summary" style="border: 1px solid gray; zoom:50%;"/>
+<img src="../images/session-summary.png" alt="Transcript - Session Summary" title="Transcript - Session Summary" style="border: 1px solid gray; zoom:50%;">
 
 
 ## Train the Utterances
@@ -222,14 +216,14 @@ In a scenario where the utterances cannot be mapped to the existing intents, you
 ### Add a new Dialog Task intent
 
 1. Click the **Add/Train** dropdown across the intent, then select the **Dialog Task** option under **Add**. The **Add Dialog Task** dialog box for the intent is displayed.  
-<img src="../images/add-dialog-task.png" alt="Choose to Add Dialog Task" title="Choose to Add Dialog Task" style="border: 1px solid gray; zoom:50%;"/>  
+<img src="../images/add-dialog-task.png" alt="Choose to Add Dialog Task" title="Choose to Add Dialog Task" style="border: 1px solid gray; zoom:50%;">  
 
 2. Provide a name and description for the new intent.
 3. All the utterances qualified for the extracted intent are displayed in a table. The bookmark icon appears if you have bookmarked this utterance in the Extracted Intent Details dialog box.  
-<img src="../images/add-dialog-task-st1.png" alt="Add dialog task intent - Qualified utterances" title="Add dialog task intent - Qualified utterances" style="border: 1px solid gray; zoom:50%;"/>  
+<img src="../images/add-dialog-task-st1.png" alt="Add dialog task intent - Qualified utterances" title="Add dialog task intent - Qualified utterances" style="border: 1px solid gray; zoom:50%;">  
 
 4. Select all the required utterances and click the **Add to Bot** button. A confirmation message is shown on adding a new Dialog Task.  
-<img src="../images/add-dialog-task-st2.png" alt="Add dialog task intent - Add required utterances to bot" title="Add dialog task intent - Add required utterances to bot" style="border: 1px solid gray; zoom:50%;"/>
+<img src="../images/add-dialog-task-st2.png" alt="Add dialog task intent - Add required utterances to bot" title="Add dialog task intent - Add required utterances to bot" style="border: 1px solid gray; zoom:50%;">
 
 The **Actions** column text for the intent will reflect the addition of a dialog task. For example:
 
@@ -245,14 +239,17 @@ Additionally, this  change will reflect under the **Results** column against the
 ### Train a Dialog task
 
 1. Click the **Add/Train** dropdown across the intent, then select the **Dialog Task** option under **Train**. The **Train Dialog Task** dialog box for the intent is displayed.  
-<img src="../images/train-dialog-task.png" alt="Choose to Train Dialog Task" title="Choose to Train Dialog Task" style="border: 1px solid gray; zoom:50%;"/>  
-  <img src="../images/train-dialog-task-st1.png" alt="Train dialog task - Dialog Tasks list" title="Train dialog task - Dialog Tasks list" style="border: 1px solid gray; zoom:50%;"/>  
+  <img src="../images/train-dialog-task.png" alt="Choose to Train Dialog Task" title="Choose to Train Dialog Task" style="border: 1px solid gray; zoom:50%;">  
+  
+  <img src="../images/train-dialog-task-st1.png" alt="Train dialog task - Dialog Tasks list" title="Train dialog task - Dialog Tasks list" style="border: 1px solid gray; zoom:30%;">  
   
 2. Select the dialog task to be trained from the **Intent** drop-down and select all the required utterances from the table below. Click **Add Utterances**.  
-<img src="../images/train-dialog-task-st2.png" alt="Train dialog task - Select dialog task" title="Train dialog task - Select dialog task" style="border: 1px solid gray; zoom:50%;"/>  
+
+  <img src="../images/train-dialog-task-st2.png" alt="Train dialog task - Select dialog task" title="Train dialog task - Select dialog task" style="border: 1px solid gray; zoom:50%;">  
 
 3. Once the existing Dialog task is trained with the selected Utterances, a confirmation message is shown.  
-<img src="../images/train-dialog-task-st2.png" alt="Train dialog task - Confirmation" title="Train dialog task - Confirmation" style="border: 1px solid gray; zoom:50%;"/>  
+
+  <img src="../images/train-dialog-task-st2.png" alt="Train dialog task - Confirmation" title="Train dialog task - Confirmation" style="border: 1px solid gray; zoom:50%;">  
 
 
 The **Actions** column text for the intent will reflect the training of a new dialog task. For example:
@@ -269,19 +266,19 @@ Additionally, this change will reflect under the **Results** column against the 
 ### Add a new FAQ intent
 
 1. Click the **Add/Train** dropdown across the intent, then select the **FAQ** option under **Add**. The **Add FAQ** dialog box for the intent is displayed.  
-<img src="../images/add-faq.png" alt="Choose to add FAQ" title="Choose to add FAQ" style="border: 1px solid gray; zoom:50%;"/>  
+<img src="../images/add-faq.png" alt="Choose to add FAQ" title="Choose to add FAQ" style="border: 1px solid gray; zoom:50%;">  
 
 2. Provide a name and description for the new intent. 
 3. All the Utterances qualified for the Extracted Intent are displayed in a table. The bookmark icon appears if the user has bookmarked this utterance in the Session summary dialog box. 
 4. Select all the required utterances and click **Next**.  
-<img src="../images/add-faq-st1.png" alt="Add FAQ Intent - Select required utterances" title="Add FAQ Intent - Select required utterances" style="border: 1px solid gray; zoom:50%;"/>  
+<img src="../images/add-faq-st1.png" alt="Add FAQ Intent - Select required utterances" title="Add FAQ Intent - Select required utterances" style="border: 1px solid gray; zoom:50%;">  
 
 5. On the next dialog box, provide the FAQ question text to be created as an FAQ, along with the required Bot Response to be shown. All the selected utterances from the previous screen are added as alternative questions for this FAQ. 
 6. Provide or select other features of the FAQ, like Bot response channel, Display name, reference ID, etc. as per your need and preference, and click the **Add to Bot** button.  
-<img src="../images/add-faq-st2.png" alt="Add FAQ Intent - Add to bot" title="Add FAQ Intent - Add to bot" style="border: 1px solid gray; zoom:50%;"/>  
+<img src="../images/add-faq-st2.png" alt="Add FAQ Intent - Add to bot" title="Add FAQ Intent - Add to bot" style="border: 1px solid gray; zoom:50%;">  
 
 7. A confirmation message is shown on adding a new FAQ.  
-<img src="../images/add-faq-st3.png" alt="Add FAQ Intent - Confirmation" title="Add FAQ Intent - Confirmation" style="border: 1px solid gray; zoom:50%;"/>  
+<img src="../images/add-faq-st3.png" alt="Add FAQ Intent - Confirmation" title="Add FAQ Intent - Confirmation" style="border: 1px solid gray; zoom:50%;">  
 
 The **Actions** column text for the intent will reflect the addition of an FAQ. For example:
 
@@ -297,13 +294,13 @@ Additionally, the adding will reflect under the **Results** column against the p
 ### Train an FAQ
 
 1. Click the **Add/Train** dropdown across the intent, then select the **FAQ** option under **Train**. The **Train FAQ** dialog box for the intent is displayed.  
-<img src="../images/train-faq.png" alt="Choose to train FAQ" title="Choose to train FAQ" style="border: 1px solid gray; zoom:50%;"/>  
+<img src="../images/train-faq.png" alt="Choose to train FAQ" title="Choose to train FAQ" style="border: 1px solid gray; zoom:50%;">  
 
 2. Select the FAQ to be trained from the **FAQ** drop-down. A label box showing the current Bot Response appears. Select all the required utterances from the table below and click **Add Utterances**.  
-<img src="../images/train-faq-st1.png" alt="Train FAQ - Add required utterances" title="Train FAQ - Add required utterances" style="border: 1px solid gray; zoom:50%;"/>  
+<img src="../images/train-faq-st1.png" alt="Train FAQ - Add required utterances" title="Train FAQ - Add required utterances" style="border: 1px solid gray; zoom:50%;">  
 
 3. Once the existing FAQ is trained with the selected Utterances, a confirmation message is shown.  
-<img src="../images/train-faq-st2.png" alt="Train FAQ - Confirmation" title="Train FAQ - Confirmation" style="border: 1px solid gray; zoom:50%;"/> 
+<img src="../images/train-faq-st2.png" alt="Train FAQ - Confirmation" title="Train FAQ - Confirmation" style="border: 1px solid gray; zoom:50%;"> 
 
 
 The **Actions** column text for the intent will reflect the training of an FAQ. For example:
@@ -316,11 +313,18 @@ Additionally, the training will reflect under the **Results** column against the
 * If **Trained ‘n’ new FAQs** tag/text is existing, then the count increases by 1. For example: **Trained 1 new FAQs** will be changed to **Trained 2 new FAQs**.
 * If there are no Dialog tasks created so far, then the text becomes **Trained 1 new FAQ**. 
 
+You can view the details of the intent action by clicking the **View** icon under the Actions column next to the text.  
+
+<img src="../images/click-view-on-intent.png" alt="Click View on Images" title="Click View on Images" style="border: 1px solid gray; zoom:50%;">  
+  
+<img src="../images/view-intent-activity.png" alt="Intent Activity" title="Intent Activity" style="border: 1px solid gray; zoom:50%;">
 
 ### Change the status of utterances
 
 You can change the status of utterances between **Yet to Review** and **Reviewed** on the 
 [Extracted Intent Details](#extracted-intent-details) dialog box. You can change the status of one or multiple utterances in a go as per requirement.
+
+<img src="../images/change-utterance-status.png" alt="Change status of utterance" title="Change status of utterance" style="border: 1px solid gray; zoom:50%;">
 
 
 ## Reusing an existing project
@@ -344,9 +348,9 @@ Please note that the previously loaded transcript files will not be deleted whil
 
 You can also delete the project if it is no longer required. Since a maximum of 10 projects can be created within a bot, you may need to delete a past, unwanted project to make a place for a new one.
 
-<img src="../images/delete-project.png" alt="Delete a project" title="Delete a project" style="border: 1px solid gray; zoom:50%;"/>  
+<img src="../images/delete-project.png" alt="Delete a project" title="Delete a project" style="border: 1px solid gray; zoom:50%;">  
   
-  <img src="../images/project-delete-confirmation.png" alt="Delete Project - Confirmation" title="Delete Project - Confirmation" style="border: 1px solid gray; zoom:50%;"/> 
+  <img src="../images/project-delete-confirmation.png" alt="Delete Project - Confirmation" title="Delete Project - Confirmation" style="border: 1px solid gray; zoom:50%;"> 
 
 
 When you delete a project, all the corresponding data in the project is automatically deleted, which includes: 
