@@ -7,6 +7,9 @@ You don't need to be an AI expert to use GALE. It has ready-to-use AI models and
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/960261668?h=26050864c2" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 <hr>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe width="656" height="369" src="https://www.youtube.com/embed/ktJrwUAWEAY" title="GALE  Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+<hr>
 
 ## Key Components
 
