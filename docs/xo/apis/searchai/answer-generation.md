@@ -12,7 +12,7 @@ This API allows you to fetch answers to a query from SearchAI corresponding to t
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code><a href="https://{{host}}/api/public/stream/">https://{{host}}/api/public/stream/</a><App ID>/advancedSearch</code>
+   <td><code>https://{{host}}/api/public/stream/<App ID>/advancedSearch</code>
    </td>
   </tr>
   <tr>
@@ -74,10 +74,7 @@ See <a href="../api-introduction#generating-the-jwt-token">How to generate the J
   </tr>
 </table>
 
-
-
 ## Sample Request
-
 
 ```
 curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-5224-b70b-656c4eef768e/advancedSearch' \
@@ -129,7 +126,7 @@ curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-522
    </td>
    <td>This parameter can be used to define rules to filter out the results from the Answer Index before using them for generating the answer. This parameter takes an array of rules with conditions. For instance, to use only web pages to answer a query, set the filters as shown below.
    
-    <code>
+    <pre>
     "metaFilters": [
         {
         "condition": "AND",
@@ -142,7 +139,7 @@ curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-522
             "operator": "contains"
             }]
         }]
-    </code>
+    </pre>
    </td>
   </tr>
 </table>
