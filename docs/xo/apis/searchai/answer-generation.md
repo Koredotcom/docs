@@ -12,7 +12,7 @@ This API allows you to fetch answers to a query from SearchAI corresponding to t
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{{host}}/api/public/stream/<StreamID>/advancedSearch</code>
+   <td><code>https://{{host}}/api/public/stream/{{AppID}}/advancedSearch</code>
    </td>
   </tr>
   <tr>
@@ -65,7 +65,7 @@ See <a href="../api-introduction#generating-the-jwt-token">How to generate the J
    </td>
   </tr>
   <tr>
-   <td>StreamID
+   <td>AppID
    </td>
    <td>Required
    </td>
