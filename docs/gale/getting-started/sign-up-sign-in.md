@@ -14,12 +14,12 @@ When you sign up for GALE using Single Sign-On (SSO) options such as Google or O
 
 **Email Address with Kore.com Domain**
 
-* If your email address ends with "@kore.com" (e.g., john@kore.com), you are automatically granted access to GALE.
+* If your email address ends with "@kore.com" (e.g., <john@kore.com>), you are automatically granted access to GALE.
 * You can directly create an account with your Kore.com email without any additional steps.
 
 **Email Address with a Different Domain**
 
-* If your email address has a different domain (e.g., john@doe.com), you cannot directly create an account.
+* If your email address has a different domain (e.g., <john@doe.com>), you cannot directly create an account.
 * The Kore team needs to invite you to join GALE.
 * Once invited, you can then proceed to create an account using your email address.
 
@@ -95,8 +95,8 @@ You can sign up on GALE in one of the following ways:
 
 * **Create a new account**: GALE allows signing up using a valid email address. You can sign up to create a personal account or even set up your enterprise account in Kore AIi. After you sign up for the account, you automatically become the account’s admin, which allows you to invite other users to the account.
 * **Join an existing enterprise account**: If your enterprise is already on Kore.ai, you can join the account in one of the following ways:
-    * Your enterprise account’s Admin sends you an invite. If you haven’t already received the invitation email, reach out to them for access.
-    * You can sign up using your enterprise email account. You will then be prompted to either join the enterprise network or create a personal account.
+  * Your enterprise account’s Admin sends you an invite. If you haven’t already received the invitation email, reach out to them for access.
+  * You can sign up using your enterprise email account. You will then be prompted to either join the enterprise network or create a personal account.
 
 ### Steps to Sign Up and Activate Your GALE Account
 
@@ -122,7 +122,7 @@ Alternatively, enter your email address and click **Continue** to sign up via em
 
 <img src="../images/gale-accessible-by-invitation-only.png" alt="invitation only" title="invitation only" style="border: 1px solid gray; zoom:75%;">
 
-Once the admin accepts your request via an invitation, you can complete the sign-up process. 
+Once the admin accepts your request via an invitation, you can complete the sign-up process.
 
 <ol start="3"><li>To sign up via email, enter your <b>Full Name</b> and <b>Password</b>, and click <b>Create Account</b>.</li></ol>
 
@@ -170,7 +170,7 @@ Once you sign up and activate your GALE account, you can sign in for the first t
 Please complete the email OTP verification to sign in successfully.</div>
 
 1. Click your Google, MS Office 365, or LinkedIn profile (account), and provide your credentials registered on the service for Single Sign-on (SSO) and authentication.
-    
+
     <img src="../images/login-with-SSO.png" alt="login with sso" title="login with sso" style="border: 1px solid gray; zoom:75%;">
 
 2. Enter your registered email ID and click **Continue with Email**.
@@ -180,7 +180,6 @@ Please complete the email OTP verification to sign in successfully.</div>
 3. Enter your password and click **Login**.
 
 <img src="../images/click-login.png" alt="click login" title="click login" style="border: 1px solid gray; zoom:75%;">
-
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
@@ -265,7 +264,7 @@ Click the account you want to access. The system redirects you to the **Agents**
 
 ## Create an Account
 
-Once you sign up on GALE, you must create an account to access and manage GALE’s features and offerings. [Learn more](./sign-up-sign-in.md/#accounts){:target="_blank"} about GALE accounts. 
+Once you sign up on GALE, you must create an account to access and manage GALE’s features and offerings. [Learn more](./sign-up-sign-in.md/#accounts){:target="_blank"} about GALE accounts.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -346,4 +345,5 @@ When you are mapped to multiple accounts, you can switch to the required one aft
 1. Click the **Account** icon on the top right corner of the UI.
 2. Click the **>** icon to the right of your account name.
 3. Select the account you want from the **Accounts** list.
+
 <img src="../images/switch-accounts.png" alt="switch account" title="switch account" style="border: 1px solid gray; zoom:75%;">
