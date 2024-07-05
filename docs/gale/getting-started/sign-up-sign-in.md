@@ -175,11 +175,11 @@ Please complete the email OTP verification to sign in successfully.</div>
 
 2. Enter your registered email ID and click **Continue with Email**.
 
-    <img src="../images/continue-with-email.png" alt="continue with email" title="continue with email" style="border: 1px solid gray; zoom:75%;">
+    <img src="../getting-started/images/continue-with-email.png" alt="continue with email" title="continue with email" style="border: 1px solid gray; zoom:75%;">
 
 3. Enter your password and click **Login**.
 
-<img src="../images/click-login.png" alt="click login" title="click login" style="border: 1px solid gray; zoom:75%;">
+<img src="../getting-started/images/click-login.png" alt="click login" title="click login" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
@@ -190,11 +190,11 @@ Please complete the email OTP verification to sign in successfully.</div>
 
 If you enter the wrong password when using email sign-in, the system displays an **Invalid Credential** message and disables login.
 
-<img src="../images/invalid-credentials.png" alt="invalid credentials" title="invalid credentials" style="border: 1px solid gray; zoom:75%;">
+<img src="../getting-started/images/invalid-credentials.png" alt="invalid credentials" title="invalid credentials" style="border: 1px solid gray; zoom:75%;">
 
 You are allowed up to 5 attempts to enter the correct password and log in.
 
-<img src="../images/five-attempts.png" alt="five login attempts" title="five login attempts" style="border: 1px solid gray; zoom:75%;">
+<img src="../getting-started/images/five-attempts.png" alt="five login attempts" title="five login attempts" style="border: 1px solid gray; zoom:75%;">
 
 Exceeding the fifth failed login attempt locks your account for 30 minutes, after which you can retry signing in.
 
@@ -214,10 +214,10 @@ You can reset your password in the following scenarios:
 To reset, follow the steps below:
 
 1. Click the **Forgot Password?** Link.
-<img src="../images/forgot-password-link.png" alt="forgot password" title="forgot password" style="border: 1px solid gray; zoom:75%;">
+<img src="../getting-started/images/forgot-password-link.png" alt="forgot password" title="forgot password" style="border: 1px solid gray; zoom:75%;">
 
 2. Enter your email address on the **Forgot Password** page and click **Send reset link**.
-<img src="../images/send-reset-link.png" alt="send reset link" title="send reset link" style="border: 1px solid gray; zoom:75%;">
+<img src="../getting-started/images/send-reset-link.png" alt="send reset link" title="send reset link" style="border: 1px solid gray; zoom:75%;">
 
 You will receive instructions via email on how to reset your password. Check your Spam folder to see if the email does not appear in your inbox. Click **Resend email** if you have not received it.
 
@@ -281,7 +281,7 @@ To create an account, follow the steps below:
 1. [Sign in](./sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE using SSO or email.
 2. Click the **Account Profile** icon on the top right corner.
 3. Click **+ Create New Account**.
-<img src="../images/click-create-account.png" alt="click create new account" title="click create new account" style="border: 1px solid gray; zoom:75%;">
+<img src="../getting-started/images/click-create-account.png" alt="click create new account" title="click create new account" style="border: 1px solid gray; zoom:75%;">
 
 4. Enter the Account Name in the **Create New Account** window.
 
@@ -291,7 +291,7 @@ To create an account, follow the steps below:
 
 The new account creation is successful. The account you are currently using is identified with a **check/tick** icon. Click the **Star** icon to make this account your default.
 
-<img src="../images/make-account-default.png" alt="make default" title="make default" style="border: 1px solid gray; zoom:75%;">
+<img src="../getting-started/images/make-account-default.png" alt="make default" title="make default" style="border: 1px solid gray; zoom:75%;">
 
 ## Invite a User to Your Account
 
@@ -304,7 +304,7 @@ To invite a user, follow the steps below:
 <img src="../images/add-new-user.png" alt="add new user" title="add new user" style="border: 1px solid gray; zoom:75%;">
 
 3. Enter the email address of the user you want to invite. To invite multiple users, type the first email address, press the **Enter** key, and enter the next email address.
-<img src="../images/send-invite.png" alt="send invite" title="send invite" style="border: 1px solid gray; zoom:75%;">
+<img src="../getting-started/images/send-invite.png" alt="send invite" title="send invite" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -336,7 +336,7 @@ When you make an account default, the system automatically redirects you to its 
 1. Click the **Account** icon on the top right corner of the UI.
 2. Click the **>** icon to the right of your account name.
 3. Click the **Star** icon for the required account from the **Accounts** list.
-<img src="../images/star-icon-account.png" alt="click star icon" title="click star icon" style="border: 1px solid gray; zoom:75%;">
+<img src="../getting-started/images/star-icon-account.png" alt="click star icon" title="click star icon" style="border: 1px solid gray; zoom:75%;">
 
 ## Switch Account
 
@@ -346,4 +346,4 @@ When you are mapped to multiple accounts, you can switch to the required one aft
 2. Click the **>** icon to the right of your account name.
 3. Select the account you want from the **Accounts** list.
 
-<img src="../images/switch-accounts.png" alt="switch account" title="switch account" style="border: 1px solid gray; zoom:75%;">
+<img src="../getting-started/images/switch-accounts.png" alt="switch account" title="switch account" style="border: 1px solid gray; zoom:75%;">
