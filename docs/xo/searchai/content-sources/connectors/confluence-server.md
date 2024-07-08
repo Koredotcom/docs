@@ -68,4 +68,47 @@ To complete the integration, do the following configuration in the connector.
     * For Basic Auth, provide the connector name, username, password, and Confluence server host URL.
     * For OAuth 2.0 Authentication,  enter the connector name, Client ID, Client Secret (as generated in the previous step), and Confluence server base URL and domain name.
 
-Click **Connect** to initiate the connector authorization process. This completes the setup for communication between SearchAI and the Confluence Server. 
+Click **Connect** to initiate the connector authorization process. This completes the setup for communication between SearchAI and the Confluence Server.
+
+### Content Ingestion
+
+Go to the **Configuration** tab and select the content to be ingested. You can choose to sync all the content from the Confluence Server or select specific content. 
+
+![Content Synchronization](../images/confluenceserver/content-sync.png "Content Synchronization")
+
+### Content Filters
+
+The connector allows you to set up rules to selectively ingest content from the application. To define such rules, select **Sync Specific Content and** click on the **Configure** link. The following page allows you to define rules for selecting the content. Each rule can be defined using a parameter, operator, and its values. 
+
+![Content Filters](../images/confluenceserver/content-filters.png "Content Filters")
+
+The Parameter field can take one of the following values. You can also add other CQL fields defined for your Confluence content. Refer to the complete list of supported fields [here](https://developer.atlassian.com/cloud/confluence/cql-fields/).
+  * Ancestor: Affects the direct child pages/content and descendants of the given content IDs as value. 
+  * Content: Affects the content defined using content ID only. 
+  * Created: Affects the content with the given creation date. It takes Date as values in the following format “yyyy/mm/dd hh:mm”, “yyyy-mm-dd hh:mm”, “yyyy/mm/dd”, “yyyy-MM-dd”
+  * Creator: Affects the content created by the User account IDs provided as values. 
+  * Label: Affects the content by its label. 
+  * Parent: Affects the content under a given parent. 
+  * ID: Affects the content based on its content ID. 
+  * Space: Affects the content based on the space that it is available in.
+  * Title: Define the rule using the title of the pages
+  * User: Define the rule using userId 
+
+The Operator field can take different values depending upon the parameter selected like equals to, not equals to, contains, etc. 
+
+The value field is used for providing the value as per the parameter.
+
+For instance, you can choose all the pages and sub-pages under a given ancestor using the following rule. 
+
+![Content Filters](../images/confluenceserver/example1.png "Content Filters")
+
+Similarly, to selectively ingest only the pages created or modified after Jan 1, 2024, you can configure the rule as shown below. 
+
+![Content Filters](../images/confluenceserver/example1.png "Content Filters")
+
+Note:
+  * You can define more than one condition to choose different types of content from the connector using the OR operator. 
+  * Every rule can have one or more conditions to select a subset of content using the AND operator. For example, to ingest the latest content created after Jan 1, 2024 and having the word ‘SearchAI’ in its title, define the rule as:
+  
+  ![Content Filters](../images/confluenceserver/example3.png "Content Filters")
+
