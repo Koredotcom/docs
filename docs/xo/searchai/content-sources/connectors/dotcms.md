@@ -99,7 +99,7 @@ DotCMS connector allows you to set up rules to selectively ingest content from t
 
 The **Parameter** field refers to the system property used to filter the content. By default, Search AI offers the following parameters but you can add any of the properties that you use for your content. Refer to [this for more information on available System Properties in dotCMS](https://www.dotcms.com/docs/latest/how-content-is-mapped-to-elasticsearch#SystemProperties).
 
-* Base Type: Base content type in dotCMS. There is a fixed set of base types in dotCMS. Refer to [this](https://www.dotcms.com/docs/latest/base-content-types)for more info on the values that the field can take.  
+* Base Type: Base content type in dotCMS. There is a fixed set of base types in dotCMS. Refer to [this](https://www.dotcms.com/docs/latest/base-content-types) for more info on the values that the field can take.  
 * Content Type: Variable name for the Content Type defined for your content.
 * Locked:  Refers to the locked content. This can take values as true or false. Suppose locked content is to be ingested, set this to true. Else, set it to false. 
 * Live: Refers to the published content. This can take values as true or false. If published content is to be ingested, set this to true. Else, set it to false. 
@@ -117,10 +117,10 @@ Similarly, to selectively ingest only the live pages in a certain language, you 
 ![Content Filters](../images/dotcms/example2.png "Content Filters")
 
 !!!note:
-    * You can define more than one condition to choose different types of content from the connector using the OR operator. 
-    * Every rule can have one or more conditions to select a subset of content using the AND operator. 
-    * You can use other System Properties defined by dotCMS to add rules. The properties listed by default are the commonly used ones. 
-    * Ensure that the properties and their values should exactly match the expected values in dotCMS. Refer to [this](https://www.dotcms.com/docs/latest/how-content-is-mapped-to-elasticsearch#SystemProperties) for details.
+* You can define more than one condition to choose different types of content from the connector using the OR operator. 
+* Every rule can have one or more conditions to select a subset of content using the AND operator. 
+* You can use other System Properties defined by dotCMS to add rules. The properties listed by default are the commonly used ones. 
+* Ensure that the properties and their values should exactly match the expected values in dotCMS. Refer to [this](https://www.dotcms.com/docs/latest/how-content-is-mapped-to-elasticsearch#SystemProperties) for details.
 
 
 #### Content Sync Schedule 

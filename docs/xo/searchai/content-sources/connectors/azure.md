@@ -50,14 +50,13 @@ To enable an efficient and quick search of your content available in Azure Stora
 
 ![Account Overview ](../images/azure/account-overview.png "Account Overview")
 
-
-* From the left navigation menu, go to **Shared access signature** and generate a SAS key. To do so, enable the following settings and click on **_Generate SAS and connection string_** button at the bottom.  
+* From the left navigation menu, go to **Shared access signature** and generate a SAS key. To do so, enable the following settings and click on **Generate SAS and connection string** button at the bottom.  
 
 ![Generate Connection String ](../images/azure/generate-sas.png "Connection String")
 
 Use the following minimum permissions:
-  * **Allowed resource types**: Enable Service, Container & Object.
-  * **Allowed permissions**: Read, List
+* **Allowed resource types**: Enable Service, Container & Object.
+* **Allowed permissions**: Read, List
 
 This will generate the connection string, SAS token, and blob service SAS URL. Save these fields to configure the Azure connector in Search AI. 
 
@@ -75,14 +74,14 @@ Go to the **Connectors** tab, click on the **Add New Connector** option, and sel
 ![Connector Home](../images/azure/connector-home.png "Connector Home")
 
 On the **Authorization** tab, enter the following fields and click **Connect**.
-    * Name: Name for the connector
-    * Host URL: The base URL from the **blob service SAS URL** generated in the above step.
-    * SAS Token: SAS token generated in the above step. 
+  * Name: Name for the connector
+  * Host URL: The base URL from the **blob service SAS URL** generated in the above step.
+  * SAS Token: SAS token generated in the above step. 
 
 On successful authentication, this will set up a connection with Azure storage and display the connector as **Connected**.
 
 !!!note
-  This does not trigger content syncing automatically.**
+  This does not trigger content syncing automatically.
 
 
 ### Content Synchronization 

@@ -77,20 +77,22 @@ Provide a name for the application and click **Create**.
 
 ![Create App](../images/confluencecloud/app-details.png "Create app")
 
-Once the application is created, you can update its name and description from the **_Settings _**tab. You can also add an avatar for the application. Update the settings and click **Save changes**.
+Once the application is created, you can update its name and description from the **Settings** tab. You can also add an avatar for the application. Update the settings and click **Save changes**.
 
 ![App Settings](../images/confluencecloud/app-settings.png "App Settings")
 
-Next, configure Authorization code grants to allow SearchAssist to access data. To do so, go to the **Authorization** tab. Enter the SearchAI Callback URL provided to you and click **Save changes**. You can use one of the following callback URLs as per your region. 
-  * JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
-  * DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
-  * Prod Region Callback URLs: https://idp.kore.com/workflows/callback
+Next, configure Authorization code grants to allow SearchAssist to access data. To do so, go to the **Authorization** tab. Enter the SearchAI Callback URL provided to you and click **Save changes**. You can use one of the following callback URLs as per your region.
+
+* JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
+* DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
+* Prod Region Callback URLs: https://idp.kore.com/workflows/callback
 
 ![App Settings](../images/confluencecloud/callback-url.png "App Settings")
 
 The next step is to grant the necessary permissions. Go to the **Permissions** tab. Add the following scopes:
-  * User Identity API
-  * Confluence API
+
+* User Identity API
+* Confluence API
 
 ![App Permissions](../images/confluencecloud/app-permissions.png "App Permissions")
 
@@ -103,8 +105,9 @@ On the following page, click the Edit Scopes button.
 ![API Scope](../images/confluencecloud/api-scope.png "API Scope")
 
 Grant the following permissions and click **Save**.
-  * Read:me
-  * Read:account
+
+* Read:me
+* Read:account
 
 ![API Scope](../images/confluencecloud/useridentityapi-scope.png "API Scope")
 
@@ -218,10 +221,11 @@ Similarly, to selectively ingest only the pages created or modified after Jan 1,
 ![Example ](../images/confluencecloud/example2.png "Example")
 
 Note:
-  * You can define more than one condition to choose different types of content from the connector using the OR operator. 
-  * Every rule can have one or more conditions to select a subset of content using the AND operator. For example, to ingest the latest content created after Jan 1, 2024, and having the word ‘SearchAI’ in its title, define the rule as:
+
+* You can define more than one condition to choose different types of content from the connector using the OR operator. 
+* Every rule can have one or more conditions to select a subset of content using the AND operator. For example, to ingest the latest content created after Jan 1, 2024, and having the word ‘SearchAI’ in its title, define the rule as:
   
-  ![Example ](../images/confluencecloud/example3.png "Example")
+![Example ](../images/confluencecloud/example3.png "Example")
 
 ### Content Sync Schedule 
 

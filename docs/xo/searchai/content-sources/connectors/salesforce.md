@@ -63,14 +63,14 @@ Provide the details for the app. Provide basic information about the application
 
 ![App details](../images/salesforce/app-details.png "App details")
 
-**Enable OAuth settings** for API Integration under the **API**section and provide the callback URL. You can use one of the following callback URLs as per your region or deployment. 
-  * JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
-  * DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
-  * Prod Region Callback URLs: https://idp.kore.com/workflows/callback
+**Enable OAuth settings** for API Integration under the **API**section and provide the callback URL. You can use one of the following callback URLs as per your region or deployment.
+* JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
+* DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
+* Prod Region Callback URLs: https://idp.kore.com/workflows/callback
 
-Select and add the following to the **Selected OAuth Scopes**. 
-  * Full access (full)
-  * Perform requests at any time (refresh_token, offline_access)
+Select and add the following to the **Selected OAuth Scopes**.
+* Full access (full)
+* Perform requests at any time (refresh_token, offline_access)
 
 Leave other settings as default and click **Save** and **Continue**. The summary page for the application will be displayed as shown below. 
 
