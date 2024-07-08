@@ -5,18 +5,16 @@ You can also perform other actions on the prompt page and use it for your refere
 <img src="../images/explore-other-options.png" alt="Explore other Options" title="Explore other Options" style="border: 1px solid gray; zoom:80%;">
 
 
-## **Copy a Prompt**
+## Copy a Prompt
 
 You can copy a prompt experiment and use it for your reference for easy access to the other sections in the product.
 
 You have 2 options to copy your prompt experiment:
 
-
-
 * **Copy as a Prompt**: If you select the copy as a prompt option, then the user prompt, the few shot examples, and the system prompt are all copied. 
 * **Copy as Gen AI node**: If you select the copy as Gen AI node option, then along with the user prompt, the few shot examples, and the system prompt, the bookmarked model and the settings applied to the model are also copied. Once it is copied you can paste it as an Gen AI node in the Flow builder canvas. 
 
-**To copy a prompt, follow these steps**:
+Steps to copy a prompt:
 
 
 * On the **Prompts experiment** page, click **Copy** on the header of the page. A pop-up with options is displayed.
@@ -31,7 +29,7 @@ You have 2 options to copy your prompt experiment:
 
 You can review the timeline of prompts and their corresponding generated outputs, complete with date and time stamps. Additionally, you can restore a prompt from this section, enabling you to utilize it and implement any necessary modifications, thereby saving considerable time compared to creating a new prompt from scratch.
 
-**To restore a prompt, follow these steps**:
+Steps to restore a prompt:
 
 * On the **Prompts** experiment page, click the **History** icon on the header of the page.
 
@@ -51,9 +49,8 @@ You can review the timeline of prompts and their corresponding generated outputs
 
 You can download the prompt and the related experiment data and export it as a CSV file which can be used for later reference. 
 
-**To export a CSV file, follow these steps**:
+Steps to export a CSV file:
 
 * On the **Prompts** experiment page, click the download icon on the header of the page.
-
 
 The prompt experiment is downloaded as a CSV file successfully and is available in the downloads section of your computer.

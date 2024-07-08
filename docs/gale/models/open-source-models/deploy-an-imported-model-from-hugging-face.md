@@ -2,7 +2,7 @@
 
 You can deploy an open-source model by selecting the Hugging Face option in the deployment process.
 
-**To deploy a model from Hugging Face, follow these steps**:
+To deploy a model from Hugging Face, follow these steps:
 
 
 1. Click **Models** on the top navigation bar of the application. The **Models** page is displayed.
@@ -10,7 +10,7 @@ You can deploy an open-source model by selecting the Hugging Face option in the 
 
     <img src="../images/deploy-a-model.png" alt="Deploy a Model" title="Deploy a Model" style="border: 1px solid gray; zoom:80%;">
 
-1. Click the **Deploy a model** button. A pop-up with a list of available models is displayed.
+1. Click the **Deploy a model**. A pop-up with a list of available models is displayed.
 
     <img src="../images/deploy-using-hugging-face.png" alt="Deploy using Hugging Face" title="Deploy using Hugging Face" style="border: 1px solid gray; zoom:80%;">
 
@@ -57,14 +57,13 @@ You can deploy an open-source model by selecting the Hugging Face option in the 
         <img src="../images/deploy-hugging-face-parameters-section.png" alt="Deploy Hugging Face Parameters Section" title="Deploy Hugging Face Parameters Section" style="border: 1px solid gray; zoom:80%;">
 
 2. Click **Next**.
-3. In the **Hardware** section:
-    * Select the **Hardware name** required for the deployment and click **Next**.
+3. Select the required **Hardware** for deployment from the dropdown menu and click **Next**. 
 
-        <img src="../images/deploy-hugging-face-hardware-section.png" alt="Deploy Hugging Face Hardware Section" title="Deploy Hugging Face Hardware Section" style="border: 1px solid gray; zoom:80%;">
+     <img src="../images/deploy-hugging-face-hardware-section.png" alt="Deploy Hugging Face Hardware Section" title="Deploy Hugging Face Hardware Section" style="border: 1px solid gray; zoom:80%;">
 
-    * In the **Review** step, verify all the details that you provided earlier. Select the **I accept all the terms and conditions** check box.
+1. In the **Review** step, verify all the details that you provided earlier. Select the **I accept all the terms and conditions** check box.
 
-        <img src="../images/deploy-hugging-face-review-section.png" alt="Deploy Hugging Face Review Section" title="Deploy Hugging Face Review Section" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/deploy-hugging-face-review-section.png" alt="Deploy Hugging Face Review Section" title="Deploy Hugging Face Review Section" style="border: 1px solid gray; zoom:80%;">
 
     !!! note
 

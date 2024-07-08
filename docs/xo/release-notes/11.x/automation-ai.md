@@ -18,14 +18,15 @@ The users now have two options for setting timeout durations:
 
 * **Preset**: Select a maximum wait time between 1 and 60 seconds to receive input.
 
-* **Environment Variable**: Select any environment variable from a drop-down list or use a search bar to find a specific variable.
+* **Environment Variable**: Select any environment variable from a drop-down list or use a search bar to find a specific variable. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/voice-call-properties.md#dialog-node-settings)
 
 ### NLU
 
 #### Ability to Import ML Utterances from One Language to Another (without Translation)
 
-The platform now supports copying utterances between languages within the same app. This feature simplifies importing and synchronizing utterance data across multiple languages. (The ability to automatically translate the copied utterances in the target language will be available soon.) 
-[Learn more :octicons-arrow-right-24:](../../automation/natural-language/training/machine-learning-engine.md#how-to-export-or-import-ml-utterances)
+The platform now supports copying utterances between languages within the same app. This feature simplifies importing and synchronizing utterance data across multiple languages. [Learn more :octicons-arrow-right-24:](../../automation/natural-language/training/machine-learning-engine.md#how-to-export-or-import-ml-utterances)
+
+The ability to automatically translate the copied utterances in the target language will be available soon. 
 
 #### Improvements to Zip Code Entities
 
@@ -41,11 +42,11 @@ Date fields on digital forms now have a clear ('x') icon, which allows users to 
 
 #### Attachment Sharing Between Users and Live Agents
 
-Users can now send files to agents during conversations. This improves communication and helps solve issues faster. This feature is currently available only for ServiceNow agent integration.
+Users can now send files to agents during conversations. This improves communication and helps solve issues faster. This feature is currently available only for ServiceNow agent integration. [Learn more:octicons-arrow-right-24:](../../app-settings/integrations/agents/agent-transfer-integrations.md#attachment-sharing-with-live-agent).
 
 ### Capability to Handle Agent Fallback Errors
 
-The platform has introduced a new "Agent Transfer fallback response" to improve user experience during agent transfers. Instead of leaving the conversation idle, the platform can now inform users with an appropriate response that can be configured in the app definition. This feature allows for clearer communication and better handling of technical issues during agent transfers.
+The platform has introduced a new "Agent Transfer fallback response" to improve user experience during agent transfers. Instead of leaving the conversation idle, the platform can now inform users with an appropriate response that can be configured in the app definition. This feature allows for clearer communication and better handling of technical issues during agent transfers. [Learn more:octicons-arrow-right-24:](../../automation/intelligence/conversation-management/standard-responses.md#errors-warnings).
 
 <hr>
 

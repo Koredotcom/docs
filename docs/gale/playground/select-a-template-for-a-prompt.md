@@ -9,7 +9,7 @@ For example, if you select the “Writing a blog post” template from the Writi
     In the simple mode, you input the required variable without the curly braces. In advanced mode, data is taken from the selected dataset file. For more information about uploading a dataset, see [Upload a dataset file](../data/upload-a-dataset.md).
 
 
-**To select a template, follow these steps**:
+Steps to select a template:
 
 
 1. On the **Prompts** experiment page, click **Templates** corresponding to the **Prompt** box.
@@ -19,12 +19,12 @@ For example, if you select the “Writing a blog post” template from the Writi
     
     The list of templates is displayed.
 
-1. Click the required template from the category you require. For example, you can take a template “_Text to bullet points_” and then the prompt is displayed in the **Prompt** box.
+2. Click the required template from the category you require. For example, you can take a template “_Text to bullet points_” and then the prompt is displayed in the **Prompt** box.
 
     <img src="../images/text-to-bullet-template.png" alt="Text to Bullet Template" title="Text to Bullet Template" style="border: 1px solid gray; zoom:80%;">
 
     
-2. Enter a value for the variables by removing the {{ }} to get the desired output as shown in the following image.
+3. Enter a value for the variables by removing the {{ }} to get the desired output as shown in the following image.
 
     !!! note
 

@@ -111,8 +111,8 @@ copyright: |
 nav:
   - Home : home.md
   - Getting Started: 
-    - Welcome to GALE: getting-started/introduction.md 
-    - Sign up for Beta Testing: getting-started/sing-up-for-beta.md 
+    - GALE Overview: getting-started/introduction.md
+    - Accessing GALE: getting-started/sign-up-sign-in.md        
   - Agents: 
     - About Agents: agents/overview.md
     - Create an Agent: agents/create-a-new-agent.md
@@ -124,7 +124,6 @@ nav:
         - Run the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
         - Create a Version of the Flow: agents/agents-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
       - Types of Nodes: 
-        - Overview: agents/agents-flows/types-of-nodes/overview-of-nodes.md
         - Gen AI Node: agents/agents-flows/types-of-nodes/gen-ai-node.md
         - API Node: agents/agents-flows/types-of-nodes/api-node.md
         - Function Node: agents/agents-flows/types-of-nodes/function-node.md
@@ -145,25 +144,26 @@ nav:
       - Configure an Agent: agents/configure-an-agent.md
   - Models: 
     - About Models: models/overview.md 
-    - Fine-Tune Models: 
-      - About Fine-Tuned Models: models/fine-tune-models/fine-tune-models-overview.md
-      - Create a Fine-Tuned Model: models/fine-tune-models/create-a-fine-tuned-model.md
-      - Deploy a Fine-Tuned Model: models/fine-tune-models/deploy-a-fine-tuned-model.md
-      - View the Generated API Endpoint: models/fine-tune-models/view-the-generated-api-endpoint.md
-      - Generate a New API Key: models/fine-tune-models/generate-an-api-key.md
-      - Configure your Fine-Tuned Model: models/fine-tune-models/configure-your-fine-tuned-model.md
-      - Export your Fine-Tuned Model: models/fine-tune-models/export-your-fine-tuned-model.md
-    - Open-Source Models: 
-      - About Open-Source Models: models/open-source-models/open-source-models-overview.md
-      - Select and Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
-      - Deploy an Imported Model from Hugging Face: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
-      - View the Generated API Endpoint: models/open-source-models/view-the-generated-api-endpoint.md
-      - Generate a New API Key: models/open-source-models/generate-an-api-key-open-source.md
-      - Configure your Open-Source Model: models/open-source-models/configure-your-open-source-model.md
+    - Fine-Tuned Models: 
+      - Create a Model: models/fine-tune-models/create-a-fine-tuned-model.md
+      - Deploy a Model: models/fine-tune-models/deploy-a-fine-tuned-model.md
+      - Model Settings:
+        - Overview: models/fine-tune-models/model-settings-overview.md
+        - Model Endpoint: models/fine-tune-models/view-the-generated-api-endpoint.md
+        - API Keys: models/fine-tune-models/generate-an-api-key.md
+        - Configurations: models/fine-tune-models/configure-your-fine-tuned-model.md
+      - Export a Model: models/fine-tune-models/export-your-fine-tuned-model.md
+    - Open-Source Models:
+      - Model Optimization Techniques: models/open-source-models/model-optimization.md 
+      - Deploy an Open-Source Model: models/open-source-models/select-and-deploy-an-open-source-model.md
+      - Deploy a Hugging Face Model: models/open-source-models/deploy-an-imported-model-from-hugging-face.md
+      - Model Settings:
+        - Model Endpoint: models/open-source-models/view-the-generated-api-endpoint.md
+        - API Keys: models/open-source-models/generate-an-api-key-open-source.md
+        - Configurations: models/open-source-models/configure-your-open-source-model.md
     - External Models: 
-      - About External Models: models/external-models/external-models-overview.md
-      - Add an External Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
-      - Add an External Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
+      - Add a Model using Easy Integration: models/external-models/add-an-external-model-using-easy-integration.md
+      - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
   - Playground: 
     - About Playground: playground/overview.md
     - Create a New Prompt Experiment: playground/create-a-new-prompt-experiment.md
@@ -172,15 +172,14 @@ nav:
     - Generate Output using Advanced Mode: playground/generate-output-using-advanced-mode.md
     - Explore Other Actions to Perform: playground/explore-other-actions-to-perform-in-the-prompt-playground.md    
   - Data: 
-    - About Data: data/overview.md 
-    - Upload a Dataset: data/upload-a-dataset.md
-  - Integrations: 
-    - How to Enable Hugging Face: integrations/how-to-enable-hugging-face.md
-    - How to Integrate with S3 Bucket: integrations/how-to-integrate-with-s3-bucket.md
-    - How to Integrate with Weights & Biases: integrations/how-to-integrate-with-wandb.md
-  - Administration:
+    - Manage Data: data/manage-datasets.md
+  - Settings:
+    - Overview: settings/settings-overview.md
     - User Management: 
-        - About User Management: administration/user-management/overview.md
-        - Invite a User to your Account: administration/user-management/invite-a-user-to-your-account.md
-        
+      - About User Management: settings/user-management/overview.md
+      - Invite a User to your Account: getting-started/sign-up-sign-in/#invite-a-user-to-your-account
+    - Integrations: 
+      - Enable Hugging Face: settings/integrations/enable-hugging-face.md
+      - Integrate with S3 Bucket: settings/integrations/integrate-with-s3-bucket.md
+      - Integrate with Weights & Biases: settings/integrations/integrate-with-wandb.md    
    

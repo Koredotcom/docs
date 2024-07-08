@@ -41,6 +41,9 @@ Below is an example from the Entity node type.
 
 Under the **Connection Properties** section, click **Add IF or Add Else If**. You can configure the conditional expression for both of these condition types based on one of the following criteria:
 
+!!! note
+
+    In a conditional connection, if entity type, context type, or intent type is an array, then the operator “contains” is supported.
 
 ### Entity
 

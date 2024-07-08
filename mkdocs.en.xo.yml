@@ -115,7 +115,10 @@ nav:
     - Overview: getting-started/about-xo-platform.md    
     - Getting Started:
       - Accessing the Platform: getting-started/accessing-the-platform.md   
-      - Navigating the Platform: getting-started/navigating-the-platform.md       
+      - Navigating the Platform: getting-started/navigating-the-platform.md  
+      - Onboarding:
+        - Guided Onboarding: getting-started/guided-onboarding.md
+        - Best Practices for FAQs and Answers Generation: getting-started/best-practices-faq-and-answer.md
       - Flows and Channels:
         - Flows: 
           - Introduction: flows/introduction-to-flows.md
@@ -274,10 +277,14 @@ nav:
             - Connectors:
                 - Introduction: searchai/content-sources/connectors.md
                 - Confluence Server: searchai/content-sources/connectors/confluence-server.md
+                - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
                 - Dropbox: searchai/content-sources/connectors/dropbox.md
                 - Google Drive: searchai/content-sources/connectors/googledrive.md
-                - ServiceNow: searchai/content-sources/servicenow.md              
-                - Zendesk: searchai/content-sources/connectors/zendesk.md                  
+                - ServiceNow: searchai/content-sources/connectors/servicenow.md              
+                - Zendesk: searchai/content-sources/connectors/zendesk.md
+                - Salesforce: searchai/content-sources/connectors/salesforce.md
+                - Azure Storage: searchai/content-sources/connectors/azure.md
+                - DotCMS: searchai/content-sources/connectors/dotcms.md                  
         - Extraction Strategy: searchai/content-extraction/extraction.md
         - Workbench:
             - Introduction: searchai/workbench/introduction.md
@@ -433,6 +440,7 @@ nav:
         - API List:
           - Automation APIs: apis/automation/api-list.md
           - Contact Center APIs: apis/contact-center/contact-center-api-list.md
+          - Search AI APIs: apis/searchai/api-list.md
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md

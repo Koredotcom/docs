@@ -2,7 +2,7 @@
 
 You can export your fine-tuned model for reference.
 
-**To export your fine-tuned model, follow these steps**:
+To export your fine-tuned model, follow these steps:
 
 
 1. Click the three dots icon corresponding to the **Model name** on the **Models** page. A pop-up with a list of options is displayed.

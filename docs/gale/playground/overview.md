@@ -1,5 +1,14 @@
 # About Playground
 
-Prompts are the basic inputs you provide to large language models (LLMs) to generate a required response. Prompts can also be augmented with additional information, such as examples, to help the model understand the context of the input. This can improve the accuracy and relevance of the output, making it more valuable to the user.
+GALE's prompt Playground allows you to experiment and refine prompts to get the best performance from LLMs. You can test different prompts across various models - external, fine-tuned, or open-source. The Playground helps you identify each prompt's ideal model and configurations through an iterative process. This streamlined workspace enables you to optimize prompts rapidly for maximum model effectiveness.
 
-Designing effective prompts is critical to training and using LLMs. By providing clear and relevant inputs, you can ensure that the models can provide accurate and useful responses to your queries and tasks. The playground interface facilitates experimentation with various prompts and different types of AI models including commercial, open-source, or fine-tuned to achieve the intended outcome.
+### Key Features
+
+* **Create a Prompt Experiment**: Create experiments by selecting a template or writing a custom prompt and adding examples. Link a dataset, add one or more LLMs to generate responses, and compare the results. [Learn more](./create-a-new-prompt-experiment.md).
+
+* **Simple vs. Advanced Mode**: Simple mode allows quickly generating output by adding a prompt and model. Advanced mode provides more control, enabling the addition of a prompt, system prompt, and examples, linking a dataset, and adding multiple models to generate and compare outputs. [Learn more](./generate-output-using-advanced-mode.md).  
+
+* **Resue the Prompt Experiment**: Copy the prompt as a Gen AI node directly in the Agent Flow builder or copy it for use elsewhere. You can also export/download the prompt and related data in CSV format. [Learn more](./explore-other-actions-to-perform-in-the-prompt-playground.md#copy-a-prompt).
+
+* **Restore a Prompt Experiment from History**: Review the timeline of prompts and their corresponding generated outputs, and restore a prompt version if needed. [Learn more](./explore-other-actions-to-perform-in-the-prompt-playground.md#restore-a-prompt-version-using-the-history).
+
