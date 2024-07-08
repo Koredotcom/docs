@@ -35,7 +35,7 @@ The widget consists of five tabs–Search, My Bot, Assist, Transcript, and Setti
 
 This tab shows all configured Dialog Tasks at the bot level and also gives search capabilities wherein agents can search Dialog Tasks, frequently asked questions (FAQs), Generative AI answers, web pages, files, and more. The content in this section dynamically updates based on all agent interactions. The agents can scroll through the list to get visibility of all the automations that are readily available to execute. If you click the ellipsis and select “Run with Agent’s input”, the dialog moves to the My Bot section, and you can run the dialog from there.
 
-<img src="../widget-images/search-tab.png" alt="search-tab.png" title="search-tab.png" style="border: 1px solid gray; zoom:80%;">
+<img src="../WidgetContentUpdate_3.3.0/updated-search-bar_12.png" alt="updated-search-bar" title="updated-search-bar" style="border: 1px solid gray; zoom:80%;">
 
 The following buttons are available in this section:
 
