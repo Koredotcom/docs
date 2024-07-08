@@ -277,10 +277,14 @@ nav:
             - Connectors:
                 - Introduction: searchai/content-sources/connectors.md
                 - Confluence Server: searchai/content-sources/connectors/confluence-server.md
+                - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
                 - Dropbox: searchai/content-sources/connectors/dropbox.md
                 - Google Drive: searchai/content-sources/connectors/googledrive.md
                 - ServiceNow: searchai/content-sources/connectors/servicenow.md              
-                - Zendesk: searchai/content-sources/connectors/zendesk.md                  
+                - Zendesk: searchai/content-sources/connectors/zendesk.md
+                - Salesforce: searchai/content-sources/connectors/salesforce.md
+                - Azure Storage: searchai/content-sources/connectors/azure.md
+                - DotCMS: searchai/content-sources/connectors/dotcms.md                  
         - Extraction Strategy: searchai/content-extraction/extraction.md
         - Workbench:
             - Introduction: searchai/workbench/introduction.md
