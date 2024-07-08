@@ -74,7 +74,7 @@ Click **Connect** to initiate the connector authorization process. This complete
 
 Go to the **Configuration** tab and select the content to be ingested. You can choose to sync all the content from the Confluence Server or select specific content. 
 
-![Content Synchronization](../images/confluenceserver/content-sync.png "Content Synchronization")
+![Content Synchronization](../images/confluenceserver/content-synchronization.png "Content Synchronization")
 
 ### Content Filters
 

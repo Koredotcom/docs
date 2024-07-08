@@ -36,7 +36,7 @@ To enable an efficient and quick search of your content available in Azure Stora
 
 * Click on **Create** to create a new storage account.
 
-![Create Storage Account ](../images/azure/create-account.png "Storage Account")
+![Create Storage Account ](../images/azure/create-storage.png "Storage Account")
 
 * Fill in the required details for the project. You need to enter details related to security, access protocols, networking, encryption, etc. For a detailed description of the fields, [refer to this guide](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal). After entering and reviewing the fields, click **Create**.
 
@@ -56,9 +56,10 @@ To enable an efficient and quick search of your content available in Azure Stora
 ![Generate Connection String ](../images/azure/generate-sas.png "Connection String")
 
 Use the following minimum permissions:
-    * **_Allowed resource types_**: Enable Service, Container & Object.
-    * **_Allowed permissions_**: Read, List
-    * This will generate the connection string, SAS token, and blob service SAS URL. Save these fields to configure the Azure connector in Search AI. 
+  * **Allowed resource types**: Enable Service, Container & Object.
+  * **Allowed permissions**: Read, List
+
+This will generate the connection string, SAS token, and blob service SAS URL. Save these fields to configure the Azure connector in Search AI. 
 
 ![Azure Connection Details](../images/azure/azure-credentials.png "Azure Connection Details")
 
@@ -80,7 +81,8 @@ On the **Authorization** tab, enter the following fields and click **Connect**.
 
 On successful authentication, this will set up a connection with Azure storage and display the connector as **Connected**.
 
-**Note that this does not trigger content syncing automatically.**
+!!!note
+  This does not trigger content syncing automatically.**
 
 
 ### Content Synchronization 

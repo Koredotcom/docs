@@ -31,7 +31,7 @@ DotCMS is a content management system specifically designed to manage documentat
 
 ## Authorization Support
 
-Search AI supports Basic Auth with dotCMS. Hence to enable Search AI to interact with dotCMS,  you require user credentials** **with the permissions to access the required resources. 
+Search AI supports Basic Auth with dotCMS. Hence to enable Search AI to interact with dotCMS,  you require user credentials with the permissions to access the required resources. 
 
 ## DotCMS Connector Configuration
 
@@ -93,17 +93,17 @@ Go to the **Configuration** tab and select the content to be ingested. You can c
 
 #### Content Filters
 
-DotCMS connector allows you to set up rules to selectively ingest content from the application. To define such rules, select **Sync Specific Content and** click on the **Configure **link. The following page allows you to define rules for selecting the content. Each rule can be defined using a parameter, operator, and its values. 
+DotCMS connector allows you to set up rules to selectively ingest content from the application. To define such rules, select **Sync Specific Content** and click on the **Configure** link. The following page allows you to define rules for selecting the content. Each rule can be defined using a parameter, operator, and its values. 
 
 ![Content Filters](../images/dotcms/content-filters.png "Content Filters")
 
 The **Parameter** field refers to the system property used to filter the content. By default, Search AI offers the following parameters but you can add any of the properties that you use for your content. Refer to [this for more information on available System Properties in dotCMS](https://www.dotcms.com/docs/latest/how-content-is-mapped-to-elasticsearch#SystemProperties).
 
-    * Base Type: Base content type in dotCMS. There is a fixed set of base types in dotCMS. Refer to [this ](https://www.dotcms.com/docs/latest/base-content-types)for more info on the values that the field can take.  
-    * Content Type: Variable name for the Content Type defined for your content.
-    * Locked:  Refers to the locked content. This can take values as true or false. Suppose locked content is to be ingested, set this to true. Else, set it to false. 
-    * Live: Refers to the published content. This can take values as true or false. If published content is to be ingested, set this to true. Else, set it to false. 
-    * Language ID:  If content in a specific language is to be ingested, set this to the language ID defined by dotCMS.
+* Base Type: Base content type in dotCMS. There is a fixed set of base types in dotCMS. Refer to [this](https://www.dotcms.com/docs/latest/base-content-types)for more info on the values that the field can take.  
+* Content Type: Variable name for the Content Type defined for your content.
+* Locked:  Refers to the locked content. This can take values as true or false. Suppose locked content is to be ingested, set this to true. Else, set it to false. 
+* Live: Refers to the published content. This can take values as true or false. If published content is to be ingested, set this to true. Else, set it to false. 
+* Language ID:  If content in a specific language is to be ingested, set this to the language ID defined by dotCMS.
 
 The **Operator** field can take different values depending upon the parameter selected like equals to, not equals to, contains, etc. 
 
@@ -116,11 +116,11 @@ Similarly, to selectively ingest only the live pages in a certain language, you 
 
 ![Content Filters](../images/dotcms/example2.png "Content Filters")
 
-Note:
+!!!note:
     * You can define more than one condition to choose different types of content from the connector using the OR operator. 
     * Every rule can have one or more conditions to select a subset of content using the AND operator. 
     * You can use other System Properties defined by dotCMS to add rules. The properties listed by default are the commonly used ones. 
-    * Ensure that the properties and their values should exactly match the expected values in dotCMS. Refer to [this](https://www.dotcms.com/docs/latest/how-content-is-mapped-to-elasticsearch#SystemProperties) for details. 
+    * Ensure that the properties and their values should exactly match the expected values in dotCMS. Refer to [this](https://www.dotcms.com/docs/latest/how-content-is-mapped-to-elasticsearch#SystemProperties) for details.
 
 
 #### Content Sync Schedule 

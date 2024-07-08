@@ -81,21 +81,20 @@ Once the application is created, you can update its name and description from th
 
 ![App Settings](../images/confluencecloud/app-settings.png "App Settings")
 
-Next, configure Authorization code grants to allow SearchAssist to access data. To do so, go to the **_Authorization _**tab. Enter the SearchAI Callback URL provided to you and click **Save changes**. You can use one of the following callback URLs as per your region. 
-
-* JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
-* DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
-* Prod Region Callback URLs: https://idp.kore.com/workflows/callback
+Next, configure Authorization code grants to allow SearchAssist to access data. To do so, go to the **Authorization** tab. Enter the SearchAI Callback URL provided to you and click **Save changes**. You can use one of the following callback URLs as per your region. 
+  * JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
+  * DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
+  * Prod Region Callback URLs: https://idp.kore.com/workflows/callback
 
 ![App Settings](../images/confluencecloud/callback-url.png "App Settings")
 
 The next step is to grant the necessary permissions. Go to the **Permissions** tab. Add the following scopes:
-    *User Identity API
-    *Confluence API
+  * User Identity API
+  * Confluence API
 
 ![App Permissions](../images/confluencecloud/app-permissions.png "App Permissions")
 
-To add permissions to the User Identity API, click the config link.
+To add permissions to the User Identity API, click the **config** link.
 
 ![App Permissions](../images/confluencecloud/permission-config.png "App Permissions")
 
@@ -104,8 +103,8 @@ On the following page, click the Edit Scopes button.
 ![API Scope](../images/confluencecloud/api-scope.png "API Scope")
 
 Grant the following permissions and click **Save**.
-    *Read:me
-    *Read:account
+  * Read:me
+  * Read:account
 
 ![API Scope](../images/confluencecloud/useridentityapi-scope.png "API Scope")
 
@@ -113,10 +112,10 @@ Similarly, for **Confluence API**, go to the **Granular Scopes** and click **Edi
 
 ![API Scope](../images/confluencecloud/confluenceapi-scope.png "API Scope")
 
-After adding permissions, go to **Settings**and find the **Client ID** and **Secret** at the end of the page. Save these fields as these will be used for configuring the SearchAI connector in the next step.
+After adding permissions, go to **Settings** and find the **Client ID** and **Secret** at the end of the page. Save these fields as these will be used for configuring the SearchAI connector in the next step.
 ![Settings](../images/confluencecloud/settings.png "Settings")
 
-You also need the Host URL in Confluence to configure the SearchAI Connector.  To fetch this field,** **go to the [Confluence home page](https://www.atlassian.com/software/confluence) and click on Profile. 
+You also need the Host URL in Confluence to configure the SearchAI Connector.  To fetch this field, go to the [Confluence home page](https://www.atlassian.com/software/confluence) and click on Profile. 
 
 ![Profile](../images/confluencecloud/profile-page.png "Profile")
 
@@ -195,16 +194,16 @@ The connector allows you to set up rules to selectively ingest content from the 
 
 The Parameter field can take one of the following values. You can also add other CQL fields defined for your Confluence content. Refer to the complete list of supported fields [here](https://developer.atlassian.com/cloud/confluence/cql-fields/).
 
-    * Ancestor: Affects the direct child pages/content and descendants of the given content IDs as value. 
-    * Content: Affects the content defined using content ID only. 
-    * Created: Affects the content with the given creation date. It takes Date as values in the following format “yyyy/mm/dd hh:mm”, “yyyy-mm-dd hh:mm”, “yyyy/mm/dd”, “yyyy-MM-dd”
-    * Creator: Affects the content created by the User account IDs provided as values. 
-    * Label: Affects the content by its label. 
-    * Parent: Affects the content under a given parent. 
-    * ID: Affects the content based on its content ID. 
-    * Space: Affects the content based on the space that it is available in.
-    * Title: Define the rule using the title of the pages
-    * User: Define the rule using userId 
+* Ancestor: Affects the direct child pages/content and descendants of the given content IDs as value. 
+* Content: Affects the content defined using content ID only. 
+* Created: Affects the content with the given creation date. It takes Date as values in the following format “yyyy/mm/dd hh:mm”, “yyyy-mm-dd hh:mm”, “yyyy/mm/dd”, “yyyy-MM-dd”
+* Creator: Affects the content created by the User account IDs provided as values. 
+* Label: Affects the content by its label. 
+* Parent: Affects the content under a given parent. 
+* ID: Affects the content based on its content ID. 
+* Space: Affects the content based on the space that it is available in.
+* Title: Define the rule using the title of the pages
+* User: Define the rule using userId 
 
 The Operator field can take different values depending upon the parameter selected like equals to, not equals to, contains, etc. 
 
@@ -219,10 +218,10 @@ Similarly, to selectively ingest only the pages created or modified after Jan 1,
 ![Example ](../images/confluencecloud/example2.png "Example")
 
 Note:
-    * You can define more than one condition to choose different types of content from the connector using the OR operator. 
-    * Every rule can have one or more conditions to select a subset of content using the AND operator. For example, to ingest the latest content created after Jan 1, 2024, and having the word ‘SearchAI’ in its title, define the rule as: \
-
-![Example ](../images/confluencecloud/example3.png "Example")
+  * You can define more than one condition to choose different types of content from the connector using the OR operator. 
+  * Every rule can have one or more conditions to select a subset of content using the AND operator. For example, to ingest the latest content created after Jan 1, 2024, and having the word ‘SearchAI’ in its title, define the rule as:
+  
+  ![Example ](../images/confluencecloud/example3.png "Example")
 
 ### Content Sync Schedule 
 

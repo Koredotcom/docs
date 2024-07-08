@@ -64,13 +64,13 @@ Provide the details for the app. Provide basic information about the application
 ![App details](../images/salesforce/app-details.png "App details")
 
 **Enable OAuth settings** for API Integration under the **API**section and provide the callback URL. You can use one of the following callback URLs as per your region or deployment. 
-    * JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
-    * DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
-    * Prod Region Callback URLs: https://idp.kore.com/workflows/callback
+  * JP Region Callback URLs: https://jp-bots-idp.kore.ai/workflows/callback
+  * DE Region Callback URLs: https://de-bots-idp.kore.ai/workflows/callback
+  * Prod Region Callback URLs: https://idp.kore.com/workflows/callback
 
 Select and add the following to the **Selected OAuth Scopes**. 
-    * Full access (full)
-    * Perform requests at any time (refresh_token, offline_access)
+  * Full access (full)
+  * Perform requests at any time (refresh_token, offline_access)
 
 Leave other settings as default and click **Save** and **Continue**. The summary page for the application will be displayed as shown below. 
 
@@ -81,7 +81,7 @@ Click **Manage Consumer Details** to generate the consumer ID and secret from th
 
 ## Configuring the Salesforce connector
 
-The next step is to configure the Salesforce connector in SearchAI. Go to the **_Connectors _**tab under **_Sources_** and select **_Salesforce _**from the list of available connectors. On the Authorization tab, enter a name for the connector, provide the Consumer ID and Consumer Secret Key, generated in the previous section, select the type of source, and click **_Connect_**. The field **Type** can take the following values:
+The next step is to configure the Salesforce connector in SearchAI. Go to the **Connectors** tab under **Sources** and select **Salesforce** from the list of available connectors. On the Authorization tab, enter a name for the connector, provide the Consumer ID and Consumer Secret Key, generated in the previous section, select the type of source, and click **Connect**. The field **Type** can take the following values:
 
 **Cloud**- Production environment/instance
 
@@ -97,7 +97,7 @@ After the connection is successfully established, the connector is marked as **C
 
 Salesforce Connector allows selective ingestion of content. To set content filters, select **Sync Specific Content** and click on the **Configure** link. The following page allows you to define rules for selecting the content. Each rule can be defined using a parameter, operator, and its value. 
 
-![Content Rules](../images/salesforce/content-rules.png "Content Rules")
+![Content Rules](../images/salesforce/content-rule.png "Content Rules")
 
 The most commonly used **Parameter** fields are listed in the dropdown. You can also add new parameters if the content supports those fields using the **+Add** option. 
 
