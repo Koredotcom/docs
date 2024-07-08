@@ -16,7 +16,10 @@ The following features are available in the Agent AI widget:
 * **Feedback**: Empowers agents to provide real-time feedback on suggestions. This continuous process forms a dynamic loop, allowing Machine Learning (ML) algorithms to continuously enhance and customize recommendations for accurate and contextually relevant outcomes.
 * **Next Best Action**: Enhances the product by enabling seamless execution of Dialog Tasks for swift customer query resolution. The generative AI nodes and script nodes integration equips the system to efficiently communicate with external systems through API calls. This leads to improved customer experience and reduced necessity for frequent screen changes for agents. This allows agents to deliver contextually relevant next-best responses, contributing to a more streamlined and effective contact center operation.
 * **Multi-language Support**: Provides multiple language support, enabling agents to switch between languages instantaneously. It ensures seamless communication with users in diverse linguistic environments. Agents can engage with customers in their preferred language, providing a more personalized and efficient support experience.
-* **Knowledge AI**: Allows customization of Knowledge AI search result displays with control over search results presentation, the option to display auto suggestions in the Ask Agent AI search bar, and optimization of the search experience through advanced Knowledge AI API configuration, offering both Basic and Advanced options.
+* **Knowledge AI**: Allows customization of Knowledge AI search result displays with control over search results presentation, the option to display auto suggestions in the Ask AgentAssist search bar, and optimization of the search experience through advanced Knowledge AI API configuration, offering both Basic and Advanced options.
+* **Image or file attachment**: Allows image or file attachments during live conversations.
+* **Theme selection**: Allows customization of the widget appearance by letting you select a Dark or Light theme.
+* **In-line Digital Form**: Lets you easily collect customer information during live conversations.
 
 <img src="../widget-images/agent-assist-widget-v3-appearance.png" alt="agent-assist-widget-v3-appearance.png" title="agent-assist-widget-v3-appearance.png" style="border: 1px solid gray; zoom:80%;">
 
@@ -30,7 +33,7 @@ The widget consists of five tabs–Search, My Bot, Assist, Transcript, and Setti
 
 ### Search Tab
 
-This tab shows all configured Dialog Tasks at the bot level and also gives search capabilities wherein agents can search Dialog Tasks, frequently asked questions (FAQs), Generative AI answers, web pages, files, and more. The content in this section dynamically updates based on all agent interactions. The agents can scroll through the list to get visibility of all the automations that are readily available to execute. If you click the ellipsis and select "Run with Agent’s input", the dialog moves to the My Bot section, and you can run the dialog from there.
+This tab shows all configured Dialog Tasks at the bot level and also gives search capabilities wherein agents can search Dialog Tasks, frequently asked questions (FAQs), Generative AI answers, web pages, files, and more. The content in this section dynamically updates based on all agent interactions. The agents can scroll through the list to get visibility of all the automations that are readily available to execute. If you click the ellipsis and select “Run with Agent’s input”, the dialog moves to the My Bot section, and you can run the dialog from there.
 
 <img src="../widget-images/search-tab.png" alt="search-tab.png" title="search-tab.png" style="border: 1px solid gray; zoom:80%;">
 
@@ -56,10 +59,9 @@ My bot functionality can be used in multiple circumstances (but not limited to):
 
 ### Assist Tab
 
-The Assist tab is the primary interface for the agents. Agent AI actively monitors conversations and offers assistance to agents. Through the Assist tab, customer intents in the form of Dialog Tasks, FAQs, KnowledgeAI, and Playbook are identified. Agents can run automation processes and send FAQs, Playbook body text, and Dialog Task text to users. The Assist tab displays Dialog Tasks, Playbooks, and Agent Coaching progression. For these features to be available, they should be configured on your device. This section also displays a “bulb” icon if there is a Dynamic Playbook match.
+The Assist tab is the primary interface for the agents. AgentAssist actively monitors conversations and offers assistance to agents. Through the Assist tab, customer intents in the form of Dialog Tasks, FAQs, KnowledgeAI, and Playbook are identified. Agents can run automation processes and send FAQs, Playbook body text, and Dialog Task text to users. The Assist tab displays Dialog Tasks, Playbooks, Agent Coaching progression, and a “bulb” icon (if there is a Dynamic Playbook match). For these features to be available, they should be configured on your device. This tab also accepts file or image attachments during live conversations up to the size of 25 MB. If the file or image is not automatically detected, you can override and manually attach the file.
 
-
-<img src="../widget-images/assist-tab.png" alt="assist-tab" title="assist-tab" style="border: 1px solid gray; zoom:80%;">
+<img src="../widget-images/assist-tab.png" alt="assist-tab" title="assist-tab" style="border: 1px solid gray; zoom:80%;">  
 
 The Assist tab facilitates the following:
 
@@ -69,8 +71,10 @@ The Assist tab facilitates the following:
 * Run bot for customers based on customer-provided information.
 * Provide a historical view to look at the previously executed automation.
 * View Conversation History for chat conversations– The **History** tab shows the record of user-bot interaction.
-* Send/Copy button 
-* Feedback for Dialog Task and Knowledge AI
+* Send/Copy button.
+* Feedback for Dialog Task and Knowledge AI.
+* Attach files or images up to the size of 25 MB.
+* Lets you collect customer information during live conversations through the In-line digital forms.
 
 The Assist tab features the following:
 
@@ -87,6 +91,63 @@ The Assist tab features the following:
     * **Option 3: Continue with Override Mode**: Agents manually enter the response to the customer’s conversation.
 * **Maximize/Minimize button**: This button maximizes/minimizes the displayed page section.
 
+#### **Attachment Support**
+
+AgentAssist accepts file or image attachments during live conversations. If the file or image is not automatically detected, you can override and manually attach the file. To maintain system efficiency, attachments are limited to one file at a time and must not exceed 25 MB in size.
+
+If the file or image is automatically detected:
+
+* A “waiting…” message appears, and upon successful attachment the file name is displayed in the input field and a “View” button appears to preview the file/image.  
+<img src="../WidgetContentUpdate_3.3.0/automatic-detection-attachment_1.png" alt="automatic-detection-attachment" title="automatic-detection-attachment" style="border: 1px solid gray; zoom:80%;">
+
+* Preview is confined within the widget, featuring a “back” button and a “close” icon.  
+<img src="../WidgetContentUpdate_3.3.0/attachment-preview-back-and-close-buttons_2.png" alt="attachment-preview-back-and-close-buttons" title="attachment-preview-back-and-close-buttons" style="border: 1px solid gray; zoom:80%;">
+
+If the file or image does not get detected:
+
+* An “Override” option appears.
+* Once you click “Override,” the “Choose File” option with an attachment icon appears. You can choose a file or an image from your local directory and reject or confirm the attachment by clicking the “close” sign or the “tick” mark.  
+<img src="../WidgetContentUpdate_3.3.0/override-choose-file_3.png" alt="override-choose-file" title="override-choose-file" style="border: 1px solid gray; zoom:80%;">
+
+Error Messages
+
+The following error messages, along with an “exclamation” mark and count, appear during file/image attachment:
+
+* For more than 25 MB file size:  
+<img src="../WidgetContentUpdate_3.3.0/more-than-25mb-error_4.png" alt="more-than-25mb-error" title="more-than-25mb-error" style="border: 1px solid gray; zoom:80%;">
+
+* For an unsupported file sent by the customer or attached by the agent:  
+<img src="../WidgetContentUpdate_3.3.0/unsupported-file_5.png" alt="unsupported-file" title="unsupported-file" style="border: 1px solid gray; zoom:80%;">
+
+#### **In-line Digital Form**
+
+The in-line digital forms in the Assist tab lets you easily collect customer information during live conversations. To use this feature, configure the forms with dialog tasks, and select “Open inline form” in the Web/Mobile SDK Form Behavior setting.  
+<img src="../WidgetContentUpdate_3.3.0/open-inline-form_6.png" alt="open-inline-form" title="open-inline-form" style="border: 1px solid gray; zoom:80%;">
+
+The following features appear for in-line forms within the Assist tab:
+
+1. Close icon: It appears on the top-right corner to let agents exit the form.
+2. Confirmation option: It appears while closing the form to confirm if you want to discard the task.  
+<img src="../WidgetContentUpdate_3.3.0/inline-form-confirmation-option_7.png" alt="inline-form-confirmation-option" title="inline-form-confirmation-option" style="border: 1px solid gray; zoom:80%;">
+
+3. Fixed Frame Size: The form frame maintains a fixed height of 306 pixels.
+4. Scrolling Capability: Scroll within the form frame to access and complete all form content.
+5. Submit button: A sticky “Submit” button at the bottom of the form frame for easy access.  
+<img src="../WidgetContentUpdate_3.3.0/inline-form-submit-button_8.png" alt="inline-form-submit-button" title="inline-form-submit-button" style="border: 1px solid gray; zoom:80%;">
+
+Scenario Specific Configurations
+
+Scenario 1: Third-Party Contact Center Applications
+
+* You can’t send the form directly to the customers.
+* You must manually fill out the forms once you open them.
+
+Scenario 2: Smart Assist Application Suite
+
+* You can send the form to the customers.
+* You can send the form multiple times, but it can be accessed only once in its entirety.
+* If the customer opens the form independently, you get an error message, preventing simultaneous access.  
+<img src="../WidgetContentUpdate_3.3.0/inline-form-opening-error_9.png" alt="inline-form-opening-error" title="inline-form-opening-error" style="border: 1px solid gray; zoom:80%;">
 
 ### Transcript Tab
 
@@ -99,19 +160,16 @@ The Transcript functionality transcribes the audio for the agent and the custome
 
 ### Settings
 
-The Settings tab gives you access to set the listening mode of the bot, available documents and FAQs, and the option to choose a language.
-
-<img src="../widget-images/settings-tab.png" alt="settings-tab.png" title="settings-tab.png" style="border: 1px solid gray; zoom:80%;">
-
+The Settings tab gives you access to set the listening mode of the bot, auto-scroll functionality of the content in the Assist tab, available documents and FAQs, option to choose a language, and the option to select a theme (Dark or Light).  
+<img src="../WidgetContentUpdate_3.3.0/settings-tab-updated_10.png" alt="settings-tab-updated" title="settings-tab-updated" style="border: 1px solid gray; zoom:80%;">
 
 #### Proactive Mode
 
 The Proactive Mode toggle allows you to put the bot in listening mode. You can turn off the toggle if it is not working as expected.
 
-
 #### Help & Support
 
-This section gives you access to the available documentation, FAQs, and the Kore Academy courses. You can refer to these materials to answer questions or give reference to these to the customer. \
+This section gives you access to the available documentation, FAQs, and the Kore Academy courses. You can refer to these materials to answer questions or give reference to these to the customer.  
 
 <img src="../widget-images/settings-tab-help&support.png" alt="settings-tab-help&support.png" title="settings-tab-help&support.png" style="border: 1px solid gray; zoom:80%;">
 
@@ -120,8 +178,11 @@ This section gives you access to the available documentation, FAQs, and the Kore
 This section lists the supported languages and lets you select a language of your choice. The selected language appears at the top of the section heading.
 
 <img src="../widget-images/settings-tab-help&support-language.png" alt="settings-tab-help&support-language.png" title="settings-tab-help&support-language.png" style="border: 1px solid gray; zoom:80%;">
-# 
 
+#### **Theme Selection**
+
+This section lets you customize the widget’s appearance with the help of a theme (dark or light). To select it, go to the widget’s Settings tab, and select Dark or Light.  
+<img src="../WidgetContentUpdate_3.3.0/widget-theme-selection_11.png" alt="widget-theme-selection" title="widget-theme-selection" style="border: 1px solid gray; zoom:80%;">
 
 ## Agent AI V2 vs V3 - Key Differences
 
