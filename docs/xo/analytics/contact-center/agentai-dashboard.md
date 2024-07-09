@@ -2,18 +2,17 @@
 
 The Agent AI Dashboard displays performance metrics of the Agent AI widget and the behavioral trends of the end users (agents and customers). You can filter data by channel or time period. Metrics include total sessions, widget suggestions, relevant suggestions, average widget suggestions used per session, help content and automations agents used to resolve customer issues, search behavior of agents, automation performance results, and agent feedback via likes and dislikes.
 
-To view the Dashboard, sign in to XO, and click **Agent AI **>** Analytics **>** Contact Center **>** Agent AI**.  
+To view the Dashboard, sign in to XO, and click **Agent AI** > **Analytics** > **Contact Center** > **Agent AI**.  
 <img src="../agentai-dashboard-images/agent-ai-dashboard-1.png" alt="agent-ai-dashboard" title="agent-ai-dashboard" style="border: 1px solid gray; zoom:80%;">
 
 # **Dashboard Filters**
 
 The Agent AI Dashboard lets you filter the dashboard data over a period of time and of a specific channel.
 
-
 ## **Filter by Time Period**
 
 You can filter data based on a selected time duration. Click the **Calendar** icon at the top, select one of the options from the list, and then click **Apply**.  
-<img src="../agentai-dashboard-images/dashboard-filters-2.png" alt="dashboard-filters" title="dashboard-filters" style="border: 1px solid gray; zoom:60%;">
+<img src="../agentai-dashboard-images/dashboard-filters-2.png" alt="dashboard-filters" title="dashboard-filters" style="border: 1px solid gray; zoom:80%;">
 
 * **Today**: Default value. It shows data until the present time (minute).
 * **Yesterday**: Data of the previous day.
@@ -25,7 +24,7 @@ You can filter data based on a selected time duration. Click the **Calendar** ic
 ## **Filter by Channel**
 
 The default setting of the Agent AI Dashboard shows the combined data of all three channels – Voice, Chat, and Email. To filter data by channel, click the **All Channels** button on the top-right corner, and then click against a channel to select or clear it from the dropdown list.  
-<img src="./agentai-dashboard-images/dashboard-channel-filters-3.png" alt="dashboard-channel-filters" title="dashboard-channel-filters" style="border: 1px solid gray; zoom:40%;">
+<img src="../agentai-dashboard-images/dashboard-channel-filters-3.png" alt="dashboard-channel-filters" title="dashboard-channel-filters" style="border: 1px solid gray; zoom:60%;">
 
 ### **Data on Widget Performance and Agent/Customer Behavior**
 
@@ -69,7 +68,7 @@ This section shows the performance results (successfully completed, error encoun
 * The pie chart is divided into three color-coded sections –Successfully Completed (green), Terminated or Error (red), and Other (dark blue).
 * Hover over any section of the pie chart to see the top three automations of that result, with invocations percentage over total invocations.
 * On the right, you find the total number and percentage out of the sum total for each item.  
-<img src="./agentai-dashboard-images/dashboard-automation-performance-data-10.png" alt="automation-performance-data" title="automation-performance-data" style="border: 1px solid gray; zoom:80%;">
+<img src="../agentai-dashboard-images/dashboard-automation-performance-data-10.png" alt="automation-performance-data" title="automation-performance-data" style="border: 1px solid gray; zoom:80%;">
 
 ## **Agent Feedback**
 
@@ -81,7 +80,7 @@ This section shows the top three most disliked automations by agents in descendi
 * Click the **Counts** number to access the **Conversation ID**, **Date**, **Time**, and **Agent Name/ID**.
 * Use the “search” button to find conversations by agent name, agent ID, or conversation ID.
 * If the agent’s name is provided, the agent column appears for searching; otherwise, the conversation ID is available.  
-<img src="./agentai-dashboard-images/dashboard-agent-feedback-data-11.png" alt="agent-feedback-data" title="agent-feedback-data" style="border: 1px solid gray; zoom:80%;">
+<img src="../agentai-dashboard-images/dashboard-agent-feedback-data-11.png" alt="agent-feedback-data" title="agent-feedback-data" style="border: 1px solid gray; zoom:80%;">
 
 ## **Average Widget Usage (Third-Party Agent Desktop)**
 
