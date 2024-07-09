@@ -499,6 +499,7 @@ nav:
         - Create Custom Dashboard Filters: analytics/automation/custom-dashboard/create-custom-dashboard-filters.md
       - Conversation Flows: analytics/automation/conversation-flows.md            
     - Contact Center:  
+      - Agent AI: analytics/contact-center/agentai-dashboard.md
       - Queues & Agents: analytics/contact-center/queues-and-agents.md
       - Interactions: analytics/contact-center/interactions.md  
       - Reports:
