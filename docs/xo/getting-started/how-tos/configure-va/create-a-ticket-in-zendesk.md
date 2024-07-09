@@ -31,48 +31,24 @@ Before you start the linking process, keep the following information handy:
 2. Click **Install** at the top-right corner. The Instructions tab is highlighted.
 3. Switch to the **Authenticate and Install** tab - click the tab. The Authorization Details section is displayed.
 4. In the section, pre-authorize the integration using the Basic Auth option as follows:
-    1. Select **Pre-authorize the Integration** and **Basic Auth** options. 
-
-
-    <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-    ![alt_text](images/image1.png "image_tooltip")
+    1. Select **Pre-authorize the Integration** and **Basic Auth** options.  
+    <img src="../images/authorisation.png" alt="authorisation" title="authorisation" style="border: 1px solid gray; zoom:70%;">
 
     2. Under the Basic Auth section, enter the following information specific to your Zendesk account:
         * **User Sub Domain**: The instance name of your Zendesk account.
         * **User Email**: The username or email of the Zendesk account. To authenticate the Zendesk account, you must enter /token after the email address, for example, `john@example.com/token`.
         * **API Token**: The password token of the Zendesk account.
     3. Click **Proceed** at the top-right corner of the dialog box.
-5. The Integration Installed Successfully confirmation is displayed. 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
-
+5. The Integration Installed Successfully confirmation is displayed.  
+<img src="../images/integration-installed-successfully.png" alt="successfull_message" title="successfull_message" style="border: 1px solid gray; zoom:70%;">
 
 ### Step 2: Install the ‘Create a Ticket’ Template for Zendesk
 
+1. Go to the **Marketplace** and select **Create a Ticket for Zendesk** Dialog Template.  
+<img src="../images/marketplace.png" alt="marketplace" title="marketplace" style="border: 1px solid gray; zoom:70%;">
 
-
-1. Go to the **Marketplace** and select **Create a Ticket for Zendesk** Dialog Template**.
-**
-
-    <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-    ![alt_text](images/image3.png "image_tooltip")
-** 
-**
-2. The **Create a Ticket** installation dialog box is displayed. Click **Install** to begin the installation. 
-
-    <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-    ![alt_text](images/image4.png "image_tooltip")
-
+2. The **Create a Ticket** installation dialog box is displayed. Click **Install** to begin the installation.  
+<img src="../images/create-ticket-zendesk.png" alt="create_ticket" title="create_a_ticket" style="border: 1px solid gray; zoom:70%;">
 
 3. Enter the following details in the Create a Ticket dialog task.
     1. **Name:** Name of the dialog.
@@ -81,59 +57,25 @@ Before you start the linking process, keep the following information handy:
     4. **Channel Experiences:** Define the experiences you want for this dialog for the channel types.
     5. **Create a Ticket Setup:** Define the Create a Ticket setup and the information to be captured.
         * Follow up actions: Define the zendesk follow up actions and information that needs to be captured. For example,  live agent assistance while creating tickets during business hours.
-        * Ticket Details: Define if any particular details need  to be captured, such as an order ID or booking ID.
-
-        
-
-    <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-    ![alt_text](images/image5.png "image_tooltip")
-
+        * Ticket Details: Define if any particular details need  to be captured, such as an order ID or booking ID.  
+        <img src="../images/install-template-zendesk.png" alt="install_template" title="install_template" style="border: 1px solid gray; zoom:70%;">
 
 4. Click **Finish**.
-5. Once the template is installed, a dialog task is auto-created. You can find it in the list of dialogs in **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.
-
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.png "image_tooltip")
- 
-
-
+5. Once the template is installed, a dialog task is auto-created. You can find it in the list of dialogs in **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.  
+<img src="../images/dialogs-zendesk.png" alt="create_dialog" title="create_dialog" style="border: 1px solid gray; zoom:70%;">
 
 ### Step 3: Train the VA for the Dialog Task and Test It
-
-
 
 1. Click the **Test** icon.
 2. Choose a conversation type (Voice Conversation or Chat Conversation) to test the flow.
 3. Click **Train** to complete the untrained utterances.
-4. Follow the prompts in the App console to create a ticket, as shown below.
+4. Follow the prompts in the App console to create a ticket, as shown below.  
+<img src="../images/appconsole-zendesk.png" alt="iapp_console" title="app_console" style="border: 1px solid gray; zoom:70%;">
 
-
-    <p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-    ![alt_text](images/image7.png "image_tooltip")
-
-5. Enter all the details when prompted by the VA, as shown below: 
+5. Enter all the details when prompted by the VA, as shown below.  
+<img src="../images/view-ticket-details-zendesk.png" alt="ticket_details" title="ticket_details" style="border: 1px solid gray; zoom:70%;">
  
+6. A new Ticket is created in Zendesk. To view the Ticket, click** View Ticket Details** on the app console. You will be redirected to Zendesk. Login to view the Ticket.  
+<img src="../images/zendesk.png" alt="zendesk" title="zendesk" style="border: 1px solid gray; zoom:70%;">
 
-
-    <p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-    ![alt_text](images/image8.png "image_tooltip")
-
-6. A new Ticket is created in Zendesk. To view the Ticket, click** View Ticket Details** on the app console. You will be redirected to Zendesk. Login to view the Ticket. 
-
-
-    <p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-    ![alt_text](images/image9.png "image_tooltip")
- 
-
-7. [Publish your App (VA)](https://docsinternal-kore.github.io/docs/xo/deploy/publishing-bot/?h=publish) so the end users can use this capability.
+7. [Publish your App (VA)](../../../deploy/publishing-bot.md) so the end users can use this capability.
