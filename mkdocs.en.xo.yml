@@ -277,10 +277,14 @@ nav:
             - Connectors:
                 - Introduction: searchai/content-sources/connectors.md
                 - Confluence Server: searchai/content-sources/connectors/confluence-server.md
+                - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
                 - Dropbox: searchai/content-sources/connectors/dropbox.md
                 - Google Drive: searchai/content-sources/connectors/googledrive.md
-                - ServiceNow: searchai/content-sources/servicenow.md              
-                - Zendesk: searchai/content-sources/connectors/zendesk.md                  
+                - ServiceNow: searchai/content-sources/connectors/servicenow.md              
+                - Zendesk: searchai/content-sources/connectors/zendesk.md
+                - Salesforce: searchai/content-sources/connectors/salesforce.md
+                - Azure Storage: searchai/content-sources/connectors/azure.md
+                - DotCMS: searchai/content-sources/connectors/dotcms.md                  
         - Extraction Strategy: searchai/content-extraction/extraction.md
         - Workbench:
             - Introduction: searchai/workbench/introduction.md
@@ -349,6 +353,19 @@ nav:
       - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
     - Integrations:
       - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
+  - Gen AI Tools:
+    - Overview: generative-ai-tools/introduction.md
+    - Models Library:
+      - LLM Integration: generative-ai-tools/models-library.md
+      - Kore.ai XO GPT Module: generative-ai-tools/xo-gpt-module.md
+    - Prompts Library: 
+      - Add Custom Prompts: generative-ai-tools/prompts-library.md
+    - GenAI Features:
+      - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
+      - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
+    - Safeguards:
+      - Data Anonymization: generative-ai-tools/data-anonymization.md
+      - Guardrails: generative-ai-tools/guardrails.md       
   - Integrations & APIs:
     - Overview: app-settings/integrations/about-integration.md
     - Integrations:
@@ -434,8 +451,11 @@ nav:
         - Getting Started: apis/automation/api-introduction.md
         - Rate Limits: apis/automation/rate-limit.md
         - API List:
+          - Agent AI APIs: apis/agent-ai/raw-data-api.md
           - Automation APIs: apis/automation/api-list.md
           - Contact Center APIs: apis/contact-center/contact-center-api-list.md
+
+          - Search AI APIs: apis/searchai/api-list.md
         - koreUtil Libraries: apis/automation/koreutil-libraries.md
       - SDK Reference:
         - SDK Introduction: sdk/bot-sdk-introduction.md
@@ -479,6 +499,7 @@ nav:
         - Create Custom Dashboard Filters: analytics/automation/custom-dashboard/create-custom-dashboard-filters.md
       - Conversation Flows: analytics/automation/conversation-flows.md            
     - Contact Center:  
+      - Agent AI: analytics/contact-center/agentai-dashboard.md
       - Queues & Agents: analytics/contact-center/queues-and-agents.md
       - Interactions: analytics/contact-center/interactions.md  
       - Reports:
@@ -499,19 +520,7 @@ nav:
         - Supported Components & Features: app-settings/language-management/multilingual-vas-components-feature-support.md
         - Manage Languages: app-settings/language-management/managing-languages-for-multilingual-vas.md
         - Manage Translation Services: app-settings/language-management/managing-translation-services.md
-        - Multilingual Virtual Assistant Behavior: app-settings/language-management/multi-lingual-bot-behavior.md
-      - Generative AI Tools:
-        - Overview: generative-ai-tools/introduction.md
-        - Models Library:
-          - LLM Integration: generative-ai-tools/models-library.md
-          - Kore.ai XO GPT Module: generative-ai-tools/xo-gpt-module.md
-        - Prompts Library: generative-ai-tools/prompts-library.md
-        - GenAI Features:
-          - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
-          - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
-        - Safeguards:
-          - Data Anonymization: generative-ai-tools/data-anonymization.md
-          - Guardrails: generative-ai-tools/guardrails.md               
+        - Multilingual Virtual Assistant Behavior: app-settings/language-management/multi-lingual-bot-behavior.md              
       - Dev Tools:
         - App Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
         - Authorization Profiles: app-settings/dev-tools/bot-authorization/bot-authentication.md
