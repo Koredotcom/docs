@@ -11,12 +11,13 @@ You can streamline your customer support experience with our virtual assistant. 
 The XO Platform makes it simple to link your Zendesk account and add ticket management capabilities to your virtual assistant using pre-built templates. It automatically sets up dialog tasks for each template. 
 
 The entire process consists of the following steps:
+   
+   Step 1: Link your Zendesk account.
+   
+   Step 2: Install the Create a Ticket Template for Zendesk.
+   
+   Step 3: Train and Test the Dialog Tasks.
 
-Step 1: Link your Zendesk account
-
-Step 2: Install the Create a Ticket Template for Zendesk
-
-Step 3: Train and Test the Dialog Tasks
 
 **Prerequisites**
 
