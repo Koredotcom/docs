@@ -1,39 +1,29 @@
-# Add a Scanner
+# Add Input/Output Scanners
 
-You have the option to add an input or output scanner, facilitating the scanning and verification of a particular objective. Input scanners evaluate the inputs or prompts directed to the LLM node, while output scanners assess the responses received from the LLM.
+You can add input or output scanners to evaluate prompts or responses in your application. Input scanners assess inputs or prompts sent to the LLM node, while output scanners evaluate the responses received from the LLM.
+
+In the following steps, you will learn how to add an input scanner. The steps to add an output scanner are similar to those for an input scanner. You need to add input and output scanners separately based on your requirements.
 
 !!! note
 
-    In the following procedure, you will learn how to add an input scanner. However, the steps are similar if you want to add an output scanner. You need to add an input scanner and output scanner separately based on your requirements.
+    Scanners must be deployed before you add or use them. [Learn more](./manage-guardrails.md).
 
+Steps to add a Scanner:
 
-**To add a scanner, follow these steps**:
+1. Click **Agents** on the top navigation bar and select the desired agent.
 
+2. Click **Guardrails** in the left navigation pane. The Guardrails page is displayed.  
+<img src="../images/navigate-to-guardrails.png" alt="Navigate to Guardrails" title="Navigate to Guardrails" style="border: 1px solid gray; zoom:80%;">
 
-1. Click **Apps** on the top navigation bar of the application.
-2. Select the required application to which you want to add the guardrail scanners. The **Application** is displayed.
-3. Click the **Guardrails** tab from the left navigation pane. The **Guardrails** page is displayed.
-   
-    <img src="../images/navigate-to-guardrails.png" alt="Navigate to Guardrails" title="Navigate to Guardrails" style="border: 1px solid gray; zoom:80%;">
+3. In the Input Scanners section, click **Add Scanner**, select the required scanners from the pop-up list, and then click **Done**. 
+<img src="../images/add-scanners.png" alt="Add Input Scanner" title="Add Input Scanner" style="border: 1px solid gray; zoom:80%;">
 
-1. Click **Add scanner** from the **Input Scanners** section. A pop-up with a list of options is displayed.
+    The selected scanners are added to the list.  
+    <img src="../images/added-guardrails.png" alt="Scanner Added" title="Scanner Added" style="border: 1px solid gray; zoom:80%;">
 
-    <img src="../images/add-input-scanner.png" alt="Add Input Scanner" title="Add Input Scanner" style="border: 1px solid gray; zoom:80%;">
-    
-1. Select the required scanners and click **Done**. The selected scanner is added to the list.
+4. Click an added scanner to configure its settings, which vary depending on the scanner type.
+For example, **Toxicity** has "Threshold" and "End the flow if the risk score is above" settings, while **Regex** has "Enter patterns to ban", "End the flow if the risk score is above", and "Match type" settings.  
+<img src="../images/toxicity-scanner-settings.png" alt="Configure Scanner's Settings" title="Configure Scanner's Settings" style="border: 1px solid gray; zoom:80%;">
 
-    <img src="../images/scanner-added.png" alt="Scanner Added" title="Scanner Added" style="border: 1px solid gray; zoom:80%;">
-
-    !!! note
-
-        You must deploy the required scanner first and only then it will be listed in this pop-up list.
-
-1. Click the required scanner from the list of added scanners to configure that scanner. The settings displayed are different for each scanner. For example, the settings for “Toxicity” are **Threshold** and **End the flow if the risk score is above**. Similarly, the settings for the “Regex” scanner are **Enter patterns to ban**, **End the flow if the risk score is above**, and **Match type**.
-
-    
-    !!! note
-
-        You can remove a scanner if you don’t want to be charged if not in use, by clicking the **Remove** icon corresponding to the scanner name from the list of scanners as shown in the following image.
-    
-
-    <img src="../images/remove-scanner.png" alt="Remove Scanner" title="Remove Scanner" style="border: 1px solid gray; zoom:80%;">
+5. (Optional) To add more scanners, click the plus or **Add Scanner** icon. To remove an unused scanner, click the minus or **Remove Scanner** icon.  
+<img src="../images/add-remove-scanners.png" alt="Remove Scanner" title="Remove Scanner" style="border: 1px solid gray; zoom:80%;">

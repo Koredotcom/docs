@@ -1,6 +1,6 @@
 # Gen AI Node
 
-The Gen AI node allows you to use LLM and Generative AI models to create custom prompts for your specific use case. You can choose a model, adjust its settings, and view the generated response.
+The Gen AI Node is a key component in GALE's Agent Flow that allows users to leverage LLMs for specific use cases. The node processes inputs and generates responses, which can be integrated into larger workflows within the Agent Flow.
 
 ## Add and Configure a Gen AI Node
 
@@ -8,14 +8,16 @@ Setting up a Gen AI node in an Agent Flow involves adding the node at the approp
 
 Steps to add and configure the node:
 
-1. Open the Agent Flow to which you want to add the node: go to **Agents** > **Agent Flow** > **Go to Flow**.  
+1. On the **Agents** tab, click the name of the agent to which you want to add the node. The Agent Flow page is displayed. 
 
-2. The Agent Flow opens in the Flow Builder. Click the “**+**” icon on any existing node on the canvas and and select **Gen AI** from the pop-up menu. (Alternatively, you can drag the **Gen AI** node from the Assets panel onto the canvas.)  
+2. Click the **Go to flow** button for the in-development version of the flow for editing.
 
-3. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
+3. In the flow builder, click the “**+**” icon on any existing node on the canvas and and select **Gen AI** from the pop-up menu. (Alternatively, you can drag the **Gen AI** node from the Assets panel onto the canvas.)  
+
+4. Click the added node to open its properties dialog box. The General Settings for the node are displayed.  
 <img src="../images/configure-gen-ai-node.png" alt="Configure Gen AI Node" title="Configure Gen AI Node" style="border: 1px solid gray; zoom:20%;">
 
-4. Enter or select the following **General Settings**:
+5. Enter or select the following **General Settings**:
 
     * **Custom Name**: Enter an appropriate name for the node.
     
@@ -49,14 +51,14 @@ Steps to add and configure the node:
 
         * **Top P**: Controls the diversity of the model's output by considering only the top tokens whose cumulative probability exceeds a threshold. Higher values produce more diverse outputs, while lower values result in more deterministic outputs.
 
-5. Click the **Connections** icon and select the **Go to Node** for both success and failure conditions.  
+6. Click the **Connections** icon and select the **Go to Node** for both success and failure conditions.  
 <img src="../images/gen-ai-connections.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:70%;">
 
     1. **On Success** > **Go to Node**: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a Gen AI node, Function node, Condition node, API node, or End node.
 
     2. **On Failure** > **Go to Node**: If the execution of the current node fails, go to the End node to display any custom error message from the Gen AI node.
 
-6. Finally, test the flow and fix any issues found: Click the **Run Flow** button at the top-right corner of the flow builder.
+7. Finally, test the flow and fix any issues found: Click the **Run Flow** button at the top-right corner of the flow builder.
 
 !!! failure "Standard Error"
 

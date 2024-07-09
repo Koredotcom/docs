@@ -115,7 +115,8 @@ Use the IVR properties tab on the Message Node to define the initial prompts, ti
 !!! Note
 
     The Message Node supports all voice call properties for the IVR, Audio Codes, Twilio Voice, and Voice Gateway channels provided the **On User Input Transition** setting is enabled for the node.
-
+    
+<img src="../images/message-ivr-properties.gif" alt="Message node - Voice call properties" title="Message node - Voice call properties" style="border:1px solid gray;zoom:50%;">
 
 ### Connections Properties
 

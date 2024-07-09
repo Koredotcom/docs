@@ -220,7 +220,7 @@ Configure Voice Properties to streamline the user experience on voice channels. 
 
 See [Voice Call Properties](../../../use-cases/dialogs/node-types/voice-call-properties.md){:target="_blank"} for more information on setting up this section of the GenAI Node.
 
-<img src="../images/genai-node(1).png" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/genai-ivr-properties.gif" alt="image_tooltip" title="image_tooltip" style="border: 1px solid gray; zoom:70%;">
 
 
 ### Connections Properties

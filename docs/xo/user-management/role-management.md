@@ -575,19 +575,11 @@ Allow users to Access and Manage the Campaigns Module
    </td>
 </tr>
 <tr>
-   <td><strong>AgentAssist Module</strong>
+   <td><strong>AgentAI Module</strong>
    <br>
-Allow user to Access and Manage AgentAssist Module
+Allow user to Access and Manage AgentAI Module
    </td>
    <td>Yes
-   </td>
-</tr>
-<tr>
-   <td><strong>Quality Management</strong>
-   <br>
-Allow users to Access and Manage Quality Management Module
-   </td>
-   <td>No
    </td>
 </tr>
 </table>
@@ -1068,18 +1060,12 @@ Allow users to Access and Manage the Campaigns Module
    <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>AgentAssist Module</strong>
+   <td><strong>AgentAI Module</strong>
    <br>
-Allow user to Access and Manage AgentAssist Module
+Allow user to Access and Manage AgentAI Module
    </td>
-   <td>Yes</td>
-</tr>
-<tr>
-   <td><strong>Quality Management</strong>
-   <br>
-Allow users to Access and Manage Quality Management Module
+   <td>Yes
    </td>
-   <td>No</td>
 </tr>
 </table>
 
@@ -1559,18 +1545,12 @@ Allow users to Access and Manage the Campaigns Module
    <td>No</td>
 </tr>
 <tr>
-   <td><strong>AgentAssist Module</strong>
+   <td><strong>AgentAI Module</strong>
    <br>
-Allow user to Access and Manage AgentAssist Module
+Allow user to Access and Manage AgentAI Module
    </td>
-   <td>Yes</td>
-</tr>
-<tr>
-   <td><strong>Quality Management</strong>
-   <br>
-Allow users to Access and Manage Quality Management Module
+   <td>Yes
    </td>
-   <td>No</td>
 </tr>
 </table>
 
@@ -2050,16 +2030,9 @@ Allow users to Access and Manage the Campaigns Module
    <td>Yes</td>
 </tr>
 <tr>
-   <td><strong>AgentAssist Module</strong>
+   <td><strong>AgentAI Module</strong>
    <br>
-Allow user to Access and Manage AgentAssist Module
-   </td>
-   <td>No</td>
-</tr>
-<tr>
-   <td><strong>Quality Management</strong>
-   <br>
-Allow users to Access and Manage Quality Management Module
+Allow user to Access and Manage AgentAI Module
    </td>
    <td>No</td>
 </tr>
@@ -2541,16 +2514,9 @@ Allow users to Access and Manage the Campaigns Module
    <td>No</td>
 </tr>
 <tr>
-   <td><strong>AgentAssist Module</strong>
+   <td><strong>AgentAI Module</strong>
    <br>
-Allow user to Access and Manage AgentAssist Module
-   </td>
-   <td>No</td>
-</tr>
-<tr>
-   <td><strong>Quality Management</strong>
-   <br>
-Allow users to Access and Manage Quality Management Module
+Allow user to Access and Manage AgentAI Module
    </td>
    <td>No</td>
 </tr>
@@ -3232,25 +3198,15 @@ Allow users to Access and Manage the Campaigns Module
 No</td>
 </tr>
 <tr>
-   <td><strong>AgentAssist Module</strong>
+   <td><strong>AgentAI Module</strong>
    <br>
-Allow user to Access and Manage AgentAssist Module
-   </td>
-   <td>Yes
-   <br>
-No</td>
-</tr>
-<tr>
-   <td><strong>Quality Management</strong>
-   <br>
-Allow users to Access and Manage Quality Management Module
+Allow user to Access and Manage AgentAI Module
    </td>
    <td>Yes
    <br>
 No</td>
 </tr>
 </table>
-
 
 ## Custom Roles
 

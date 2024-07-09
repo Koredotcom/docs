@@ -2,7 +2,7 @@
 
 Once you have given your prompts in the Prompt box, you can test your prompts across different AI model(s) and decide on the required model.
 
-**To add a model, follow these steps**:
+Steps to add a model:
 
 
 1. Click the required **Experiment** from the **Experiments** page. The **Prompt experiments** page is displayed.
