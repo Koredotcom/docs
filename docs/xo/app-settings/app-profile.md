@@ -33,11 +33,23 @@ Modify one or more of the settings described in the following table.
   <tr>
    <td>Icon
    </td>
-   <td>The icon image for the VA displayed in VA Builder, VAs Marketplace, and the end-user interface as shown in the previous illustration. The image format must be <strong>.png </strong>and best results are obtained using a <strong>200 x 200-pixel</strong> image. This field is required.
+   <td>The icon image for the VA displayed in the VA Builder, VAs Marketplace, and the end-user interface, as shown in the previous illustration. The image format must be <strong>.png </strong>and the best results can be obtained using a <strong>200 x 200-pixel</strong> image. This field is required.
    </td>
   </tr>
   <tr>
-   <td>Target Audience
+  </tr>
+  <td>Answers</td>
+  <td>
+  You can have the app use the capabilities of the Answers module by enabling this setting.
+
+  <ul>
+
+  <li>When the conversation is at Intent Identification level (i.e. not within a dialog’s context), the user can choose whether to route the utterances to SearchAI or Automation AI first for identifying Automation AI intents or SearchAI answers.
+
+  <li>When the user is within a Dialog Task, they can decide whether to route the call to Search AI as well to find an answer or to stick with Automation AI only, by means of the <strong>Use Search AI for Unrecognized Inputs During Dialogs</strong> checkbox.
+  </td>
+  <tr>
+   <td>Target Audience (Available only for enterprise accounts)
    </td>
    <td>
 <ul>
