@@ -12,11 +12,11 @@ The XO Platform makes it simple to link your Zendesk account and add ticket mana
 
 The entire process consists of the following steps:
 
-    Step 1: Link your Zendesk account
+Step 1: Link your Zendesk account
 
-    Step 2: Install the Create a Ticket Template for Zendesk
+Step 2: Install the Create a Ticket Template for Zendesk
 
-    Step 3: Train and Test the Dialog Tasks
+Step 3: Train and Test the Dialog Tasks
 
 **Prerequisites**
 
@@ -34,10 +34,10 @@ Before you start the linking process, keep the following information handy:
     1. Select **Pre-authorize the Integration** and **Basic Auth** options. 
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image1.png "image_tooltip")
+    ![alt_text](images/image1.png "image_tooltip")
 
     2. Under the Basic Auth section, enter the following information specific to your Zendesk account:
         * **User Sub Domain**: The instance name of your Zendesk account.
@@ -45,9 +45,6 @@ Before you start the linking process, keep the following information handy:
         * **API Token**: The password token of the Zendesk account.
     3. Click **Proceed** at the top-right corner of the dialog box.
 5. The Integration Installed Successfully confirmation is displayed. 
-
-
-
 
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
@@ -63,20 +60,18 @@ Before you start the linking process, keep the following information handy:
 1. Go to the **Marketplace** and select **Create a Ticket for Zendesk** Dialog Template**.
 **
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image3.png "image_tooltip")
+    ![alt_text](images/image3.png "image_tooltip")
 ** 
 **
-2. The** Create a Ticket** installation dialog box is displayed. Click **Install** to begin the installation. 
+2. The **Create a Ticket** installation dialog box is displayed. Click **Install** to begin the installation. 
+
+    <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
+    ![alt_text](images/image4.png "image_tooltip")
 
 
 3. Enter the following details in the Create a Ticket dialog task.
@@ -90,10 +85,10 @@ Before you start the linking process, keep the following information handy:
 
         
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image5.png "image_tooltip")
+    ![alt_text](images/image5.png "image_tooltip")
 
 
 4. Click **Finish**.
@@ -118,27 +113,27 @@ Before you start the linking process, keep the following information handy:
 4. Follow the prompts in the App console to create a ticket, as shown below.
 
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    <p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image7.png "image_tooltip")
+    ![alt_text](images/image7.png "image_tooltip")
 
 5. Enter all the details when prompted by the VA, as shown below: 
  
 
 
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    <p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image8.png "image_tooltip")
+    ![alt_text](images/image8.png "image_tooltip")
 
 6. A new Ticket is created in Zendesk. To view the Ticket, click** View Ticket Details** on the app console. You will be redirected to Zendesk. Login to view the Ticket. 
 
 
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    <p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image9.png "image_tooltip")
+    ![alt_text](images/image9.png "image_tooltip")
  
 
 7. [Publish your App (VA)](https://docsinternal-kore.github.io/docs/xo/deploy/publishing-bot/?h=publish) so the end users can use this capability.
