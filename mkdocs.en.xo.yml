@@ -358,7 +358,8 @@ nav:
     - Models Library:
       - LLM Integration: generative-ai-tools/models-library.md
       - Kore.ai XO GPT Module: generative-ai-tools/xo-gpt-module.md
-    - Prompts Library: generative-ai-tools/prompts-library.md
+    - Prompts Library: 
+      - Add Custom Prompts: generative-ai-tools/prompts-library.md
     - GenAI Features:
       - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
       - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
