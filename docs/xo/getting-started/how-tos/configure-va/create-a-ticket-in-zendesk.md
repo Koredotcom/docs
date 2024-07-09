@@ -75,11 +75,11 @@ Before you start the linking process, keep the following information handy:
 
 
 3. Enter the following details in the Create a Ticket dialog task.
-    1. **Name: **Name of the dialog.
+    1. **Name:** Name of the dialog.
     2. **Description:** Description of the dialog.
-    3. **Utterances: **Add utterances in all ways you expect customers to articulate a request, which will trigger the dialog.
-    4. **Channel Experiences: **Define the experiences you want for this dialog for the channel types.
-    5. **Create a Ticket Setup: **Define the Create a Ticket setup and the information to be captured.
+    3. **Utterances:** Add utterances in all ways you expect customers to articulate a request, which will trigger the dialog.
+    4. **Channel Experiences:** Define the experiences you want for this dialog for the channel types.
+    5. **Create a Ticket Setup:** Define the Create a Ticket setup and the information to be captured.
         * Follow up actions: Define the zendesk follow up actions and information that needs to be captured. For example,  live agent assistance while creating tickets during business hours.
         * Ticket Details: Define if any particular details need  to be captured, such as an order ID or booking ID.
 
