@@ -5,7 +5,6 @@
 
 You can streamline your customer support experience with our virtual assistant. Your end-users interact with the virtual assistant to resolve their queries. The assistant can tackle straightforward questions directly in the chat, saving users time and effort. For complex issues requiring more time or expertise or during non-office hours, the assistant can effortlessly guide users in creating a Zendesk support ticket. It can prompt users to collect the required information and create a ticket or convert the ongoing conversation into a ticket, keeping the conversation context in mind.
 
-
 ## Getting Started
 
 The XO Platform makes it simple to link your Zendesk account and add ticket management capabilities to your virtual assistant using pre-built templates. It automatically sets up dialog tasks for each template. 
@@ -17,7 +16,6 @@ The entire process consists of the following steps:
    Step 2: Install the Create a Ticket Template for Zendesk.
    
    Step 3: Train and Test the Dialog Tasks.
-
 
 **Prerequisites**
 
