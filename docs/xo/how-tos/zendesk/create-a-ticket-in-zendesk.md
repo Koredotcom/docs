@@ -27,7 +27,9 @@ Before you start the linking process, keep the following information handy:
 ### Step 1: Link your Zendesk Account
 
 1. Click **Marketplace** in the left navigation and select **Zendesk** Integration. The Zendesk Integration dialog box is displayed.
-2. Click **Install** at the top-right corner. The Instructions tab is highlighted.
+<img src="../images/marketplace_zendesk.png" alt="marketplace" title="marketplace" style="border: 1px solid gray; zoom:70%;">
+2. Click **Install** at the top-right corner. The Instructions tab is highlighted.  
+<img src="../images/zendesk_install.png" alt="zendesk_install" title="zendesk_install" style="border: 1px solid gray; zoom:70%;">
 3. Switch to the **Authenticate and Install** tab - click the tab. The Authorization Details section is displayed.
 4. In the section, pre-authorize the integration using the Basic Auth option as follows:
     1. Select **Pre-authorize the Integration** and **Basic Auth** options.  
