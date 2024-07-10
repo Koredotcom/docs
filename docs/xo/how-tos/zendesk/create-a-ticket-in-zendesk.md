@@ -79,4 +79,4 @@ Before you start the linking process, keep the following information handy:
 6. A new Ticket is created in Zendesk. To view the Ticket, click** View Ticket Details** on the app console. You will be redirected to Zendesk. Login to view the Ticket.  
 <img src="../images/zendesk.png" alt="zendesk" title="zendesk" style="border: 1px solid gray; zoom:70%;">
 
-7. [Publish your App (VA)](../../../deploy/publishing-bot.md) so the end users can use this capability.
+7. [Publish your App (VA)](../../deploy/publishing-bot.md) so the end users can use this capability.
