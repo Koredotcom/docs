@@ -5,7 +5,6 @@
 
 You can streamline your customer support experience with our virtual assistant. Your end-users interact with the virtual assistant to resolve their queries. The assistant can tackle straightforward questions directly in the chat, saving users time and effort. For complex issues requiring more time or expertise or during non-office hours, the assistant can effortlessly guide users in creating a Zendesk support ticket. It can prompt users to collect the required information and create a ticket or convert the ongoing conversation into a ticket, keeping the conversation context in mind.
 
-
 ## Getting Started
 
 The XO Platform makes it simple to link your Zendesk account and add ticket management capabilities to your virtual assistant using pre-built templates. It automatically sets up dialog tasks for each template. 
@@ -18,7 +17,6 @@ The entire process consists of the following steps:
    
    Step 3: Train and Test the Dialog Tasks.
 
-
 **Prerequisites**
 
 Before you start the linking process, keep the following information handy:
@@ -29,7 +27,9 @@ Before you start the linking process, keep the following information handy:
 ### Step 1: Link your Zendesk Account
 
 1. Click **Marketplace** in the left navigation and select **Zendesk** Integration. The Zendesk Integration dialog box is displayed.
-2. Click **Install** at the top-right corner. The Instructions tab is highlighted.
+<img src="../images/marketplace_zendesk.png" alt="marketplace" title="marketplace" style="border: 1px solid gray; zoom:70%;">
+2. Click **Install** at the top-right corner. The Instructions tab is highlighted.  
+<img src="../images/zendesk_install.png" alt="zendesk_install" title="zendesk_install" style="border: 1px solid gray; zoom:70%;">
 3. Switch to the **Authenticate and Install** tab - click the tab. The Authorization Details section is displayed.
 4. In the section, pre-authorize the integration using the Basic Auth option as follows:
     1. Select **Pre-authorize the Integration** and **Basic Auth** options.  
@@ -58,14 +58,15 @@ Before you start the linking process, keep the following information handy:
     4. **Channel Experiences:** Define the experiences you want for this dialog for the channel types.
     5. **Create a Ticket Setup:** Define the Create a Ticket setup and the information to be captured.
         * Follow up actions: Define the zendesk follow up actions and information that needs to be captured. For example,  live agent assistance while creating tickets during business hours.
-        * Ticket Details: Define if any particular details need  to be captured, such as an order ID or booking ID.  
-        <img src="../images/install-template-zendesk.png" alt="install_template" title="install_template" style="border: 1px solid gray; zoom:70%;">
+        * Ticket Details: Define if any particular details need  to be captured, such as an order ID or booking ID.
+
+<img src="../images/install-template-zendesk.png" alt="install_template" title="install_template" style="border: 1px solid gray; zoom:70%;">
 
 4. Click **Finish**.
 5. Once the template is installed, a dialog task is auto-created. You can find it in the list of dialogs in **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.  
 <img src="../images/dialogs-zendesk.png" alt="create_dialog" title="create_dialog" style="border: 1px solid gray; zoom:70%;">
 
-### Step 3: Train the VA for the Dialog Task and Test It
+### Step 3: Train the VA for the Dialog Task and Test it
 
 1. Click the **Test** icon.
 2. Choose a conversation type (Voice Conversation or Chat Conversation) to test the flow.
@@ -79,4 +80,4 @@ Before you start the linking process, keep the following information handy:
 6. A new Ticket is created in Zendesk. To view the Ticket, click** View Ticket Details** on the app console. You will be redirected to Zendesk. Login to view the Ticket.  
 <img src="../images/zendesk.png" alt="zendesk" title="zendesk" style="border: 1px solid gray; zoom:70%;">
 
-7. [Publish your App (VA)](../../../deploy/publishing-bot.md) so the end users can use this capability.
+7. [Publish your App (VA)](../../deploy/publishing-bot.md) so the end users can use this capability.
