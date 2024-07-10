@@ -22,7 +22,7 @@ To add a dialog task, follow the steps below:
     <img src="../images/using-dialog-builder-img2-create-dialog-scratch.png" alt="Start dialog building From Scratch" title="Start dialog building From Scratch" style="border:1px solid gray;zoom:60%;">
 
 7. Provide an **Intent Name** (mandatory) and **Description** (Optional but recommended).
-8. You can choose whether the new dialog will be available to the end users **(Customer Use Case)**,  agents **(AgentAssist Use Case)**, or both.
+8. You can choose whether the new dialog will be available to the end users **(Customer Use Case)**,  agents **(Agent AI Use Case)**, or both.
 9. Under **Intent Settings**, set options for the task to be independent, such as a **Sub-intent dialog** or **Hide it from Help**.
 10. Under **Analytics - Containment type**, you can choose between **Abandonment as Self-Service** and **Abandonment as Drop Off**.
 11. Optionally, you can adjust **Conversation Context**, set **Intent Preconditions**, or define **Context Output**.
@@ -536,9 +536,9 @@ Add or modify the following settings for your dialog:
 * **Intent Settings:**
         * **Sub intent only dialog** – The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
         * **Hide from help** – The task is not presented as a task when the user requests help. Users can invoke this task anytime while talking to the assistant.
-            
-            **Note:** This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
-
+        !!! Note 
+ 
+	    This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
 * **Customer Use Cases** – Select if this dialog task is available for end users (customers).
 * **Agent AI Use Cases** - Select if this dialog task is available for agents.
     * Enable or disable the following options in this section:
@@ -547,7 +547,7 @@ Add or modify the following settings for your dialog:
         * **During E-Mails**: If enabled, agents can manually or automatically trigger this use case when they are engaged with a customer in an email conversation.
             * **Launch through Library**:
                 * **Enabled**: The dialog task is listed under all available dialog tasks in the Search tab of the widget.
-                * **Disabled**: The dialog task doesn’t appear on the list, but remains searchable via the “Ask a question” search bar in the Search tab of the AgentAssist widget, allowing agents to browse and find this use case to trigger it.
+                * **Disabled**: The dialog task doesn’t appear on the list, but remains searchable via the “Ask a question” search bar in the Search tab of the Agent AI widget, allowing agents to browse and find this use case to trigger it.
 
 * **Analytics - Containment Type**(Any one option can be selected):
         * **Abundance as Self Service:** Users can abandon the conversation while executing the dialog.
