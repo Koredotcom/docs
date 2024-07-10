@@ -1,12 +1,10 @@
 # Lead Capture in Salesforce CRM Using a VA
 
-
 ## Overview
 
 You can automate the capture of a lead’s details on voice or chat channels by Installing the Lead Capture for Salesforce CRM. 
 
 With the '**Lead Capture**' dialog template, you can collect user fields in a conversational format and automate the creation of leads in Salesforce.
-
 
 ## Getting Started
 
@@ -20,10 +18,7 @@ Step 2: Install the Lead Capture for Salesforce CRM
 
 Step 3: Train and Test the Dialog Tasks
 
-
 ### Step 1: Link your Salesforce CRM Account
-
-
 
 1. Click **Marketplace** in the left navigation and select **Salesforce CRM** Integration. The Salesforce CRM Integration dialog box is displayed. 
 
@@ -58,8 +53,6 @@ Step 3: Train and Test the Dialog Tasks
 
 
     Create your own custom authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s Salesforce app for authorization.
-
-
 
 * Select the **Custom** to enable the custom authorization profile.
 * Click the **Select Authorization** drop-down and select the **Create New** option. 
