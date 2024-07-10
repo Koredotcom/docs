@@ -21,55 +21,38 @@ Step 3: Train and Test the Dialog Tasks
 ### Step 1: Link your Salesforce CRM Account
 
 1. Click **Marketplace** in the left navigation and select **Salesforce CRM** Integration. The Salesforce CRM Integration dialog box is displayed. 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
+<img src="../image/marketplace_salesforce.png" alt="marketplace" title="marketplace" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Install** at the top-right corner. The Instructions tab is highlighted. 
 
 3. Switch to the **Authenticate and Install** tab - click the tab. The Authorization Details section is displayed.
 4. **Authorization Type** – Select the **Pre-authorize the Integration** option, and then select the **_OAuth_** option. 
+<img src="../image/authorization.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">
  
 **System Authorization**
 
-    Pre-authorize Salesforce CRM integration with the necessary authorization credentials to obtain the token to access external services.
+Pre-authorize Salesforce CRM integration with the necessary authorization credentials to obtain the token to access external services.
 
-        * Select **System** to enable the Kore.ai’s preconfigured Salesforce app and click **Authorize**. 
+ * Select **System** to enable the Kore.ai’s preconfigured Salesforce app and click **Authorize**.  
+ <img src="../image/system_authorise.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">  
+ 
 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
-        * Once you click **Authorize**, you are redirected to “login.salesfore.com”
-        * Enter your developer account credentials to successfully connect with your Salesforce Account
-        * Click the **Allow Access** button to use Kore.ai’s app to fetch the access token to complete the authorization.
+  * Once you click **Authorize**, you are redirected to “login.salesfore.com”
+  * Enter your developer account credentials to successfully connect with your Salesforce Account
+  * Click the **Allow Access** button to use Kore.ai’s app to fetch the access token to complete the authorization.
 
 **Custom Authorization**
 
-
-    Create your own custom authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s Salesforce app for authorization.
+Create your own custom authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s Salesforce app for authorization.
 
 * Select the **Custom** to enable the custom authorization profile.
 * Click the **Select Authorization** drop-down and select the **Create New** option. 
 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<img src="../image/custom_authorize.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">
 
+* Select the type of authorization mechanism. For example, select the **OAuth v2** option. To create custom OAuth profiles, see [Setting Up Authorization Using OAuth v2](https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2).  
 
-![alt_text](images/image3.png "image_tooltip")
-
-* Select the type of authorization mechanism. For example, select the **OAuth v2** option. To create custom OAuth profiles, see [Setting Up Authorization Using OAuth v2](https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2). 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
 
 * Enter the following authentication credentials for the OAuth v2 mechanism:
     * Call back URL
@@ -81,25 +64,16 @@ Step 3: Train and Test the Dialog Tasks
     * Scope
     * Refresh Token URL
 
-
-
 <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image5.png "image_tooltip")
 
-
-
-
 * Click **Save Auth** to save Authorization Profile
 * Select the new **Authorization Profile,** which you created to enable integration
 * Click **Authorize**. You are navigated to “login.salesforce.com”. 
 
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.png "image_tooltip")
+<img src="../image/salesforce_authorise.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">
 
 * Enter login credentials to successfully connect with your Salesforce Account.
 * Once the authorization is successful, you will see a success message.
