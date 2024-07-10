@@ -58,14 +58,14 @@ Before you start the linking process, keep the following information handy:
     4. **Channel Experiences:** Define the experiences you want for this dialog for the channel types.
     5. **Create a Ticket Setup:** Define the Create a Ticket setup and the information to be captured.
         * Follow up actions: Define the zendesk follow up actions and information that needs to be captured. For example,  live agent assistance while creating tickets during business hours.
-        * Ticket Details: Define if any particular details need  to be captured, such as an order ID or booking ID.  
-        <img src="../images/install-template-zendesk.png" alt="install_template" title="install_template" style="border: 1px solid gray; zoom:70%;">
+        * Ticket Details: Define if any particular details need  to be captured, such as an order ID or booking ID.
+    <img src="../images/install-template-zendesk.png" alt="install_template" title="install_template" style="border: 1px solid gray; zoom:70%;">
 
 4. Click **Finish**.
 5. Once the template is installed, a dialog task is auto-created. You can find it in the list of dialogs in **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.  
 <img src="../images/dialogs-zendesk.png" alt="create_dialog" title="create_dialog" style="border: 1px solid gray; zoom:70%;">
 
-### Step 3: Train the VA for the Dialog Task and Test It
+### Step 3: Train the VA for the Dialog Task and Test it
 
 1. Click the **Test** icon.
 2. Choose a conversation type (Voice Conversation or Chat Conversation) to test the flow.
