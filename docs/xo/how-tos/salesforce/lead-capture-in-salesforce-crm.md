@@ -68,7 +68,7 @@ Create your own custom authorization profile to obtain an access token and use i
 * Select the new **Authorization Profile,** which you created to enable integration.
 * Click **Authorize**. You are navigated to “login.salesforce.com”. 
 
-<img src="../image/salesforce_authorise.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/salesforce_authorise.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">
 
 * Enter login credentials to successfully connect with your Salesforce Account.
 * Once the authorization is successful, you will see a success message.
