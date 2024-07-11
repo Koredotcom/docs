@@ -37,9 +37,8 @@ Pre-authorize Salesforce CRM integration with the necessary authorization creden
  <img src="../images/system_authorise.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">  
  
 
-  * Once you click **Authorize**, you are redirected to “login.salesfore.com”
-  * Enter your developer account credentials to successfully connect with your Salesforce Account
-  * Click the **Allow Access** button to use Kore.ai’s app to fetch the access token to complete the authorization.
+  * Once you click **Authorize**, you are redirected to Salesforce login page.
+  * Enter your developer account credentials to successfully connect with your Salesforce Account.
 
 **Custom Authorization**
 
@@ -56,7 +55,7 @@ Create your own custom authorization profile to obtain an access token and use i
     * Call back URL
     * Identity Provider Name
     * Client ID
-    * Client Secret
+    * Client Secret Key
     * Authorization URL
     * Token Request URL
     * Scope
@@ -66,7 +65,7 @@ Create your own custom authorization profile to obtain an access token and use i
 
 
 * Click **Save Auth** to save Authorization Profile
-* Select the new **Authorization Profile,** which you created to enable integration
+* Select the new **Authorization Profile,** which you created to enable integration.
 * Click **Authorize**. You are navigated to “login.salesforce.com”. 
 
 <img src="../image/salesforce_authorise.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">
