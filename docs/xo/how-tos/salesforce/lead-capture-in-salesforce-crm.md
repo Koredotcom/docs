@@ -26,7 +26,7 @@ Step 3: Train and Test the Dialog Tasks
 2. Click **Install** at the top-right corner. The Instructions tab is highlighted. 
 
 3. Switch to the **Authenticate and Install** tab - click the tab. The Authorization Details section is displayed.
-4. **Authorization Type** – Select the **Pre-authorize the Integration** option, and then select the **_OAuth_** option. 
+4. **Authorization Type** – Select the **Pre-authorize the Integration** option, and then select the **_OAuth_** option.  
 <img src="../images/authorization.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">
  
 **System Authorization**
