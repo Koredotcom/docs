@@ -27,14 +27,14 @@ Step 3: Train and Test the Dialog Tasks
 
 3. Switch to the **Authenticate and Install** tab - click the tab. The Authorization Details section is displayed.
 4. **Authorization Type** – Select the **Pre-authorize the Integration** option, and then select the **_OAuth_** option. 
-<img src="../image/authorization.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/authorization.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">
  
 **System Authorization**
 
 Pre-authorize Salesforce CRM integration with the necessary authorization credentials to obtain the token to access external services.
 
  * Select **System** to enable the Kore.ai’s preconfigured Salesforce app and click **Authorize**.  
- <img src="../image/system_authorise.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">  
+ <img src="../images/system_authorise.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">  
  
 
   * Once you click **Authorize**, you are redirected to “login.salesfore.com”
@@ -47,7 +47,7 @@ Create your own custom authorization profile to obtain an access token and use i
 
 * Select the **Custom** to enable the custom authorization profile.
 * Click the **Select Authorization** drop-down and select the **Create New** option. 
-<img src="../image/custom_authorize.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/custom_authorize.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">
 
 * Select the type of authorization mechanism. For example, select the **OAuth v2** option. To create custom OAuth profiles, see [Setting Up Authorization Using OAuth v2](https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2).  
 <img src="../images/OauthV2.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">  
