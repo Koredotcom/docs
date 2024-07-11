@@ -330,6 +330,7 @@ nav:
       - Interacting With Customers: console/interacting-with-customers.md
       - Additional Tools: console/additional-tools.md
       - Manage Layout: console/manage-layout.md
+      - Monitor: console/monitor-queues-agents-interactions-service-levels.md
     - Campaigns:  
       - Overview: contactcenter/campaigns/about-campaigns.md
       - Dashboard: contactcenter/campaigns/dashboard/campaign-dashboard.md
