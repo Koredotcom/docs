@@ -441,276 +441,146 @@ You can clear the filters by clicking Clear Filters on the upper right corner.
 You can configure the service level targets for each channel type and measuring interval. The measuring intervals can be configured in 30-minute increments, with a minimum interval of 30 minutes and a maximum interval of 24 hours.  
 <img src="../images/time-intervals.png" alt="Time Intervals" title="Time Intervals" style="border: 1px solid gray; zoom:100%;">
 
-### Configure Service Levels
+## Configure Service Levels
 
 This feature enables app developers to define, customize, and monitor service-level targets based on specific needs.
 
-To configure service levels, go to **CONFIGURATION** > **PERFORMANCE MANAGEMENT** > **Event Configuration**.  
-<img src="../images/filter-interactions.png" alt="Filter Button" title="Filter Button" style="border: 1px solid gray; zoom:80%;">
+To configure service levels, go to **Contact Center AI** > **PERFORMANCE MANAGEMENT** > **Service Level**.  
+<img src="../images/service-level-page.png" alt="Service Levels Page" title="Service Levels Page" style="border: 1px solid gray; zoom:80%;">
 
-## **Create a New Service Level**
+### Create a New Service Level
 
 Steps to create a new service level:
 
+1. Click the **+ New Service Level** button on the upper-right corner.  
+<img src="../images/new-service-level.png" alt="+ New Service Level Button" title="+ New Service Level Button" style="border: 1px solid gray; zoom:80%;">
 
+2. On the New Service Level Rule pop-up window, enter a **Name** and **Description** for the service rule and click **Next**.  
+    <img src="../images/new-service-level-rule.png" alt="New Service Level Rule Popup" title="New Service Level Rule Popup" style="border: 1px solid gray; zoom:70%;">
 
-1. Click the + New Service Level button on the upper-right corner. \
+    The service level configuration screen is displayed.  
+    <img src="../images/service-level-configuration-page.png" alt="Service Level Configuration Page" title="Service Level Configuration Page" style="border: 1px solid gray; zoom:80%;">
 
+3. Click and select the **Queues** and **Channels** from the drop-down menus.  
+<img src="../images/queues-and-channels.png" alt="Queues and Channels" title="Queues and Channels" style="border: 1px solid gray; zoom:80%;">
 
-<p id="gdcalert94" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert95">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+4. Click **+ Add triggers** and choose a trigger.  
+    <img src="../images/add-triggers.png" alt="Add Triggers" title="Add Triggers" style="border: 1px solid gray; zoom:80%;">
 
+    Based on your selected trigger, you can choose the following:
 
-2. On the New Service Level Rule pop-up window, enter a Name and Description for the service rule and click Next. \
+    **Abandonment rate**:
+    <img src="../images/abandonment-rate.png" alt="Abandonment Rate" title="Abandonment Rate" style="border: 1px solid gray; zoom:80%;">  
 
+    **Average speed to answer (ASA)**:  
+    <img src="../images/average-speed-to-answer.png" alt="Average Speed to Answer" title="Average Speed to Answer" style="border: 1px solid gray; zoom:80%;">
 
-<p id="gdcalert95" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert96">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    **Response Service Level (RSL)**:  
+    <img src="../images/response-service-level.png" alt="+ New Service Level Button" title="+ New Service Level Button" style="border: 1px solid gray; zoom:80%;">
 
- \
-The service level configuration screen is displayed. \
+    **Transfer rate**:  
+    <img src="../images/transfer-rate.png" alt="Transfer rate" title="Transfer rate" style="border: 1px solid gray; zoom:80%;">
 
+5. Click **+ Add an action** and choose an action.  
+    <img src="../images/add-an-action.png" alt="+ Add an action" title="+ Add an action" style="border: 1px solid gray; zoom:80%;">
 
-<p id="gdcalert96" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert97">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    Based on your selected action, you can choose the following:
 
+    **Alert**:  
+    <img src="../images/alert.png" alt="Alert" title="Alert" style="border: 1px solid gray; zoom:80%;">
 
-3. Click and select the Queues and Channels from the drop-down menus. \
+    **Email**:  
+    <img src="../images/email.png" alt="Email" title="Email" style="border: 1px solid gray; zoom:80%;">
 
+6. Click **Save** to create the service level.  
+    <img src="../images/save-service-level.png" alt="Save Service Level" title="Save New Service Level" style="border: 1px solid gray; zoom:80%;">
 
-<p id="gdcalert97" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert98">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    A confirmation message is displayed and the service level is created.
 
-
-4. Click + Add triggers and choose a trigger. \
-
-
-<p id="gdcalert98" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert99">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- \
-Based on your selected trigger, you can choose the following: \
-Abandonment rate: \
-
-
-<p id="gdcalert99" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert100">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- \
-Average speed to answer: \
-
-
-<p id="gdcalert100" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert101">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- \
-Response service level: \
-
-
-<p id="gdcalert101" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert102">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- \
-Transfer rate: \
-
-
-<p id="gdcalert102" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert103">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-5. Click + Add an action and choose an action. \
-
-
-<p id="gdcalert103" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert104">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- \
-Based on your selected action, you can choose the following: \
-Alert: \
-
-
-<p id="gdcalert104" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert105">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- \
-Email: \
-
-
-<p id="gdcalert105" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert106">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-6. Click Save to create the service level. \
-
-
-<p id="gdcalert106" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert107">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- \
-A confirmation message is displayed and the service level is created. \
-
-
-<p id="gdcalert107" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert108">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-
-
-## **Edit a Service Level**
+### Edit a Service Level
 
 Steps to edit a service level:
 
+1. Click the **Edit** button.  
+<img src="../images/edit-service-level.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;">
 
+2. Make the necessary changes to the service level and click **Save**.  
+    <img src="../images/edit-and-save.png" alt="Edit and Save" title="Edit and Save" style="border: 1px solid gray; zoom:80%;">
 
-1. Click the Edit button. \
+    A confirmation message is displayed.
 
-
-<p id="gdcalert108" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert109">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-2. Make the necessary changes to the service level and click Save. \
-
-
-<p id="gdcalert109" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert110">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- \
-A confirmation message is displayed. \
-
-
-<p id="gdcalert110" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert111">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-
-
-## **Edit a Service Level Name**
+### Edit a Service Level Name
 
 Steps to edit a service level name:
 
+1. Click the **Edit** button.  
+<img src="../images/edit-service-level.png" alt="Edit Button" title="Edit Button" style="border: 1px solid gray; zoom:80%;">
 
+2. Click the **Settings** icon.  
+<img src="../images/settings-icon.png" alt="Settings Icon" title="Settings Icon" style="border: 1px solid gray; zoom:80%;">
 
-1. Click the Edit button. \
+3. Make the changes on the Edit Sevice Level Name pop-up and click **Apply**.  
+<img src="../images/apply-edit.png" alt="Edit Service Level" title="Edit Service Level" style="border: 1px solid gray; zoom:60%;">
 
+4. Click **Save**.  
+    <img src="../images/revised-service-level-name.png" alt="Revised Service Level Name" title="Revised New Service Level Name" style="border: 1px solid gray; zoom:80%;">
 
-<p id="gdcalert111" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert112">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    The revised service level name is displayed.
 
-
-2. Click the Settings button. \
-
-
-<p id="gdcalert112" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert113">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-3. Make the changes on the Edit Sevice Level Name pop-up and click Apply. \
-
-
-<p id="gdcalert113" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert114">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-4. Click Save. \
-
-
-<p id="gdcalert114" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert115">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- \
-The revised service level name is displayed. \
-
-
-<p id="gdcalert115" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert116">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-
-
-## **Delete a Service Level**
+### Delete a Service Level
 
 Steps to delete a service level:
 
+1. Click the **Delete** button.  
+<img src="../images/delete-icon.png" alt="Delete Icon" title="Delete Icon" style="border: 1px solid gray; zoom:80%;">
 
+2. Click **Yes** on the confirmation pop-up window.  
+<img src="../images/delete-service-level.png" alt="Delete Service Level Confirmation" title="Delete Service Level Confirmation" style="border: 1px solid gray; zoom:80%;">
 
-1. Click the Delete button. \
+3. A confirmation message is displayed and the service level is displayed.
 
+## Configure Conversation Intelligence Dashboard
 
-<p id="gdcalert116" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert117">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+1. To configure the Conversation Intelligence Dashboard, go to **Contact Center AI** > **PERFORMANCE MANAGEMENT** > **Settings** > **Conversation Intelligence Dashboard**.  
+<img src="../images/conversation-intelligence-settings.png" alt="Conversation Intelligence Dashboard Settings" title="Conversation Intelligence Dashboard Settings" style="border: 1px solid gray; zoom:80%;">
 
+2. By default, the conversation intelligence dashboard is disabled. Click the down arrow, the Conversation Intelligence Dashboard is displayed in a disabled state.  
+<img src="../images/down-arrow.png" alt="Down Arrow" title="Down Arrow" style="border: 1px solid gray; zoom:80%;">
 
-2. Click Yes on the confirmation pop-up window. \
+3. Turn on the Conversation Intelligence Dashboard toggle, the Supervisor Dashboard is displayed in the disabled state.
+<img src="../images/supervisor-dashboard.png" alt="Supervisor Dashboard" title="Supervisor Dashboard" style="border: 1px solid gray; zoom:80%;">
 
+4. Turn on the Supervisor Dashboard toggle, the Interactivity Score and Script Adherence Configuration options are displayed in the disabled state.  
+<img src="../images/additional-toggle.png" alt="Interactivity Score and Script Adherence Toggles" title="Interactivity Score and Script Adherence Toggles" style="border: 1px solid gray; zoom:80%;">
 
-<p id="gdcalert117" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert118">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+5. Set the weightage for the voice and chat channels, the weightage for each channel must not exceed 100%.  
 
+    **Voice**:  
+    <img src="../images/interactivity-score-voice.png" alt="Interactivity Score - Voice" title="Interactivity Score - Voice" style="border: 1px solid gray; zoom:80%;">
 
-3. A confirmation message is displayed and the service level is displayed. \
+    **Chat**:  
+    <img src="../images/interactivity-score-chat.png" alt="Interactivity Score - Chat" title="Interactivity Score - Chat" style="border: 1px solid gray; zoom:80%;">
 
+5. Turn on Script adherence configuration toggle and define the scripts for agent adherence attributes.  
+<img src="../images/script-adherence-configuration.png" alt="Script Adherence Configuration" title="Script Adherence Configuration" style="border: 1px solid gray; zoom:80%;">
 
-<p id="gdcalert118" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert119">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+6. Turn on the STATUS toggle to enable it. A message is displayed to enter a message for the attribute. Click the **Edit** icon to add a message.  
+<img src="../images/status-toggle.png" alt="Status Toggle" title="Status Toggle" style="border: 1px solid gray; zoom:80%;">
 
+7. Click **Add Message** to enter the message.  
+<img src="../images/add-message-button.png" alt="Add Message Button" title="Add Message Button" style="border: 1px solid gray; zoom:60%;">
 
+8. Enter the message in the message field. You can add multiple messages by clicking the Add Message button. Click the (**-**) icon to delete a message.  
+<img src="../images/multiple-message.png" alt="Add Multiple Messages" title="Add Multiple Messages" style="border: 1px solid gray; zoom:60%;">
 
+9. Click **Save** to update the message.  
+    <img src="../images/save-message.png" alt="Save Message" title="Save Message" style="border: 1px solid gray; zoom:80%;">
 
-## **Configure Conversation Intelligence Dashboard**
+    The configured message is displayed under MESSAGE.
+    <img src="../images/message-configured.png" alt="Message Configured" title="Message Configured" style="border: 1px solid gray; zoom:80%;">
 
+10. Click **Save** after the messages are defined for the required attributes.  
+    <img src="../images/save-supervisor-dashboard.png" alt="Save Button" title="Save Button" style="border: 1px solid gray; zoom:80%;">
 
-
-1. To configure the Conversation Intelligence Dashboard, go to CONFIGURATION > PERFORMANCE MANAGEMENT > Settings > Conversation Intelligence Dashboard. \
-
-
-<p id="gdcalert119" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert120">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-2. By default, the conversation intelligence dashboard is disabled. Toggle on the conversation intelligence dashboard to enable it. The Supervisor Dashboard is displayed in a disabled state. \
-
-
-<p id="gdcalert120" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert121">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-3. Toggle on the Supervisor Dashboard to enable it. The Interactivity Score and Script Adhererence Configuration options are displayed in the disabled state. \
-
-
-<p id="gdcalert121" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert122">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-4. Set the weightage for the voice and chat channels, the weightage for each channel must not exceed 100%. \
-Voice: \
-
-
-<p id="gdcalert122" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert123">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- \
-Chat: \
-
-
-<p id="gdcalert123" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert124">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-5. Toggle on Script adherence configuration and define the scripts for agent adherence attributes \
-
-
-<p id="gdcalert124" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert125">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-6. Toggle on the STATUS to enable it. A message is displayed to enter a message for the attribute. Click the Edit icon to add a message. \
-
-
-<p id="gdcalert125" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert126">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-7. Click Add Message to add the message. \
-
-
-<p id="gdcalert126" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert127">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-8. Enter the message in the message field. You can add multiple messages by clicking the Add Message button. Click the (-) icon to delete a message. \
-
-
-<p id="gdcalert127" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert128">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-9. Click Save to update the message. \
-
-
-<p id="gdcalert128" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert129">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- \
-The configured message is displayed under MESSAGE. \
-
-
-<p id="gdcalert129" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert130">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-10. Click Save after the messages are defined for the required attributes. \
-
-
-<p id="gdcalert130" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert131">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- \
-A confirmation message is displayed. \
-
-
-<p id="gdcalert131" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: error handling inline image </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert132">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    A confirmation message is displayed.
 
