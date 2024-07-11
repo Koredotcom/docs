@@ -47,8 +47,6 @@ Create your own custom authorization profile to obtain an access token and use i
 
 * Select the **Custom** to enable the custom authorization profile.
 * Click the **Select Authorization** drop-down and select the **Create New** option. 
-
-
 <img src="../image/custom_authorize.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">
 
 * Select the type of authorization mechanism. For example, select the **OAuth v2** option. To create custom OAuth profiles, see [Setting Up Authorization Using OAuth v2](https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2).  
@@ -64,10 +62,6 @@ Create your own custom authorization profile to obtain an access token and use i
     * Scope
     * Refresh Token URL
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
 
 * Click **Save Auth** to save Authorization Profile
 * Select the new **Authorization Profile,** which you created to enable integration
@@ -108,20 +102,12 @@ Create your own custom authorization profile to obtain an access token and use i
 1. Click the **Test** icon.
 2. Choose a conversation type (Voice Conversation or Chat Conversation) to test the flow.
 3. Click **Train** to complete the untrained utterances.
-4. Follow the prompts in the App console to create a lead, as shown below. 
-
+4. Follow the prompts in the App console to create a lead, as shown below.  
 <img src="../images/app_console.png" alt="app-console" title="app-console" style="border: 1px solid gray; zoom:70%;">
 
 5. Enter all lead details when prompted by the VA, as shown below: 
 
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image13.png "image_tooltip")
-
-6. The new lead is created in Salesforce CRM. To view the lead, log in to **Salesforce**,  go to **App Launcher** > **Marketing CRM Classic** > **Leads**.
-
+6. The new lead is created in Salesforce CRM. To view the lead, log in to **Salesforce**,  go to **App Launcher** > **Marketing CRM Classic** > **Leads**.  
 <img src="../images/salesforce.png" alt="salesforce" title="salesforce" style="border: 1px solid gray; zoom:70%;">
 
 
