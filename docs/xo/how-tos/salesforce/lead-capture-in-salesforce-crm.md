@@ -26,7 +26,7 @@ Step 3: Train and Test the Dialog Tasks
 2. Click **Install** at the top-right corner. The Instructions tab is highlighted. 
 
 3. Switch to the **Authenticate and Install** tab - click the tab. The Authorization Details section is displayed.
-4. **Authorization Type** – Select the **Pre-authorize the Integration** option, and then select the **_OAuth_** option. 
+4. **Authorization Type** – Select the **Pre-authorize the Integration** option, and then select the **_OAuth_** option.  
 <img src="../images/authorization.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">
  
 **System Authorization**
@@ -68,7 +68,7 @@ Create your own custom authorization profile to obtain an access token and use i
 * Select the new **Authorization Profile,** which you created to enable integration.
 * Click **Authorize**. You are navigated to “login.salesforce.com”. 
 
-<img src="../image/salesforce_authorise.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/salesforce_authorise.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">
 
 * Enter login credentials to successfully connect with your Salesforce Account.
 * Once the authorization is successful, you will see a success message.
@@ -112,4 +112,4 @@ Create your own custom authorization profile to obtain an access token and use i
 6. The new lead is created in Salesforce CRM. To view the lead, log in to **Salesforce**,  go to **App Launcher** > **Marketing CRM Classic** > **Leads**.  
 <img src="../images/salesforce.png" alt="salesforce" title="salesforce" style="border: 1px solid gray; zoom:70%;">
 
-7.  [Publish your App (VA)](../../deploy/publishing-bot.md) so the end users can use this capability.
+7. [Publish your App (VA)](../../deploy/publishing-bot.md) so the end users can use this capability.
