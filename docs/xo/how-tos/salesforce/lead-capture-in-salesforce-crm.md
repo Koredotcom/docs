@@ -21,7 +21,7 @@ Step 3: Train and Test the Dialog Tasks
 ### Step 1: Link your Salesforce CRM Account
 
 1. Click **Marketplace** in the left navigation and select **Salesforce CRM** Integration. The Salesforce CRM Integration dialog box is displayed. 
-<img src="../image/marketplace_salesforce.png" alt="marketplace" title="marketplace" style="border: 1px solid gray; zoom:70%;">
+<img src="../images/marketplace_salesforce.png" alt="marketplace" title="marketplace" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Install** at the top-right corner. The Instructions tab is highlighted. 
 
