@@ -112,4 +112,4 @@ Create your own custom authorization profile to obtain an access token and use i
 6. The new lead is created in Salesforce CRM. To view the lead, log in to **Salesforce**,  go to **App Launcher** > **Marketing CRM Classic** > **Leads**.  
 <img src="../images/salesforce.png" alt="salesforce" title="salesforce" style="border: 1px solid gray; zoom:70%;">
 
-7.  [Publish your App (VA)](../../deploy/publishing-bot.md) so the end users can use this capability.
+7. [Publish your App (VA)](../../deploy/publishing-bot.md) so the end users can use this capability.
