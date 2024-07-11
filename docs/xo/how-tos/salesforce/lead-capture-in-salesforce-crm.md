@@ -62,6 +62,8 @@ Create your own custom authorization profile to obtain an access token and use i
     * Scope
     * Refresh Token URL
 
+<img src="../images/new_authorization_mechanism.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;"> 
+
 
 * Click **Save Auth** to save Authorization Profile
 * Select the new **Authorization Profile,** which you created to enable integration
@@ -77,11 +79,11 @@ Create your own custom authorization profile to obtain an access token and use i
 
 ### Step 2: Install the Lead Capture Template for Salesforce CRM
 
-1. Go to the **Marketplace** and select **Lead Capture** for Salesforce CRM Dialog Template**. 
-**
+1. Go to the **Marketplace** and select **Lead Capture** for Salesforce CRM Dialog Template. 
+
 <img src="../images/marketplace_leadcapture.png" alt="marketplace_leadcapture" title="marketplace_leadcapture" style="border: 1px solid gray; zoom:70%;">
 
-2. The** Lead Capture** installation dialog box is displayed. Click **Install** to begin the installation.  
+2. The **Lead Capture** installation dialog box is displayed. Click **Install** to begin the installation.  
 <img src="../images/lead_capture.png" alt="leadcapture" title="leadcapture" style="border: 1px solid gray; zoom:70%;">
 
 3. Enter the following details in the Lead Capture dialog task.
@@ -105,10 +107,10 @@ Create your own custom authorization profile to obtain an access token and use i
 4. Follow the prompts in the App console to create a lead, as shown below.  
 <img src="../images/app_console.png" alt="app-console" title="app-console" style="border: 1px solid gray; zoom:70%;">
 
-5. Enter all lead details when prompted by the VA, as shown below: 
+5. Enter all lead details when prompted by the VA, as shown below:  
+<img src="../images/lead_details.png" alt="app-console" title="app-console" style="border: 1px solid gray; zoom:70%;">
 
 6. The new lead is created in Salesforce CRM. To view the lead, log in to **Salesforce**,  go to **App Launcher** > **Marketing CRM Classic** > **Leads**.  
 <img src="../images/salesforce.png" alt="salesforce" title="salesforce" style="border: 1px solid gray; zoom:70%;">
-
 
 7.  [Publish your App (VA)](../../deploy/publishing-bot.md) so the end users can use this capability.
