@@ -59,8 +59,7 @@ Before you start the linking process, keep the following information handy:
     5. **Create a Ticket Setup:** Define the Create a Ticket setup and the information to be captured.
         * Follow up actions: Define the zendesk follow up actions and information that needs to be captured. For example,  live agent assistance while creating tickets during business hours.
         * Ticket Details: Define if any particular details need  to be captured, such as an order ID or booking ID.
-
-<img src="../images/install-template-zendesk.png" alt="install_template" title="install_template" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/install-template-zendesk.png" alt="install_template" title="install_template" style="border: 1px solid gray; zoom:70%;">
 
 4. Click **Finish**.
 5. Once the template is installed, a dialog task is auto-created. You can find it in the list of dialogs in **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.  
@@ -77,7 +76,7 @@ Before you start the linking process, keep the following information handy:
 5. Enter all the details when prompted by the VA, as shown below.  
 <img src="../images/view-ticket-details-zendesk.png" alt="ticket_details" title="ticket_details" style="border: 1px solid gray; zoom:70%;">
  
-6. A new Ticket is created in Zendesk. To view the Ticket, click** View Ticket Details** on the app console. You will be redirected to Zendesk. Login to view the Ticket.  
+6. A new Ticket is created in Zendesk. To view the Ticket, click **View Ticket Details** on the app console. You will be redirected to Zendesk. Login to view the Ticket.  
 <img src="../images/zendesk.png" alt="zendesk" title="zendesk" style="border: 1px solid gray; zoom:70%;">
 
 7. [Publish your App (VA)](../../deploy/publishing-bot.md) so the end users can use this capability.
