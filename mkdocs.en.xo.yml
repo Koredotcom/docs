@@ -258,17 +258,17 @@ nav:
       - Regression Testing: 
         - Health and Monitoring: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
         - Batch Testing: automation/testing/regression-testing/batch-testing.md
-        - Conversation Testing: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md
-    - How To:
-      - Marketplace Integration:
-        - Create a Ticket in Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
-        - Lead Capture in Salesforce: how-tos/salesforce/lead-capture-in-salesforce-crm.md
-        - Lead Capture in HubSpot: how-tos/hubspot/lead-capture-in-hubspot.md
+        - Conversation Testing: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md    
     - Advanced Topics:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
         - Team Collaboration: manage-assistant/collaborative-development.md
-        - Feedback Survey: manage-assistant/feedbacksurvey.md             
+        - Feedback Survey: manage-assistant/feedbacksurvey.md   
+    - How To:
+      - Marketplace Integration:
+        - Create a Ticket in Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
+        - Lead Capture in Salesforce: how-tos/salesforce/lead-capture-in-salesforce-crm.md
+        - Lead Capture in HubSpot: how-tos/hubspot/lead-capture-in-hubspot.md          
   - Search AI:
     - Overview: searchai/about-search-ai.md
     - Getting Started:
