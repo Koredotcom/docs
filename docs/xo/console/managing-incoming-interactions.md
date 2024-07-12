@@ -21,9 +21,9 @@ When the manual answer mode is enabled, agents can click **Accept** to interact 
 
 If an agent does not accept the assigned interaction in the period specified under answer mode. In that case, the conversation is returned to the queue and the agent status is automatically changed to away to avoid further conversations from being assigned to them.
 
-If Explicit Reject is enabled in the Answer Mode:
-* Agents can Accept (✅) or Reject (❌) each interaction on the conversation tray.
-* **Accept**: Displays conversation panel for that conversation.
+If Explicit Reject is enabled in the Answer Mode:  
+* Agents can Accept (✅) or Reject (❌) each interaction on the conversation tray.  
+* **Accept**: Displays conversation panel for that conversation.  
 * **Reject**: Removes conversation from agent's queue, and returns it to the queue for reassignment.  
 <img src="../images/accept-reject-button.png" alt="Accept Reject Button" title="Accept Reject Button" style="border: 1px solid gray; zoom:80%;">
 

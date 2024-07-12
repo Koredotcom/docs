@@ -25,18 +25,18 @@ Administrators can enable agents to explicitly reject an incoming interaction, a
 
 * Agents can Accept (✅) or Reject (❌) each interaction on the conversation tray.
 * **Accept**: Displays the conversation panel for that interaction.
-* **Reject**: Removes the interaction from the agent's queue and returns it to the queue for reassignment.
+* **Reject**: Removes the interaction from the agent's queue and returns it to the queue for reassignment. [Learn more :octicons-arrow-right-24:](../../console/managing-incoming-interactions.md#manual-answer-mode)
 
 The Monitor tab displays metrics relevant to rejection in the Agents and Interactions sub-tabs.
 
 **Monitor** > **Agents**
 
-* The Agents sub-tab now includes counts for rejected and unanswered interactions. 
-* Clicking an agent displays the count of Completed, Transferred, Rejected, and Unanswered interactions.
+* The Agents sub-tab now includes counts for rejected and unanswered interactions.
+* Clicking an agent displays the count of Completed, Transferred, Rejected, and Unanswered interactions. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#agents)
 
 **Monitor** > **Interactions**
 
-* Clicking an agent displays the count of Answered, Transferred, Rejected, and Unanswered interactions.
+* Clicking an agent displays the count of Answered, Transferred, Rejected, and Unanswered interactions. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#manually-assign-conversations-to-an-agent-and-change-queue)
 
 ### Configuration
 
@@ -65,7 +65,7 @@ Administrators and Supervisors with access to Dashboard > Interactions can now v
 Automatic refresh for filters applied in the Monitor tabs at fixed intervals is implemented to ensure real-time data accuracy.
 
 * Filtered data on Monitor tabs is updated at the specified interval, reflecting real-time changes.
-* New interactions are not immediately added to filtered results but appear after the 5-second update interval.
+* New interactions are not immediately added to filtered results but appear after the 5-second update interval. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#auto-refresh-when-filters-are-applied)
 
 ### Kore Voice Gateway
 
