@@ -162,6 +162,8 @@ nav:
         - Platform Services: release-notes/11.x/platform-services.md
     - How-tos:
       - Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
+      - Salesforce: lead-capture-in-salesforce-crm.md
+      - Hubspot: lead-capture-in-hubspot.md
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:
