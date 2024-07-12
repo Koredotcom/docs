@@ -23,7 +23,7 @@ The key sections of this Dashboard include:
 * **Fail Statistics**: The no. of fails count is the count of failed interactions for the selected forms and the selected date range, the chart allows visualization of failure trends for the selected forms over the last 7 days. last 7 weeks or last 7 months using the daily, weekly and monthly views. In general, it provides the failure statistics of Auto QA for a given period of time.  
 <img src="../images/fail-statistics.png" alt="Fail Statistics" title="Fail Statistics" style="border: 1px solid gray; zoom:60%;">
 
-* **Performance Monitor**: The Gauge chart shows the total score of the Performance Monitor based on the Date Range and Evaluation Form selected. 
+* **Performance Monitor**: The Gauge chart shows the total score of the Performance Monitor based on the Date Range and Evaluation Form selected.
     * **Trends**: The Performance Monitor allows visualization of agent performance through Trends view of the average Kore Evaluation Score on Daily, Weekly, and Monthly basis.  
     <img src="../images/performance-monitor-trends.png" alt="Performance Monitor Trends" title="Performance Monitor Trends" style="border: 1px solid gray; zoom:60%;">
 
