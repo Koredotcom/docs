@@ -160,6 +160,8 @@ nav:
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
         - Agent AI: release-notes/11.x/agent-ai.md
         - Platform Services: release-notes/11.x/platform-services.md
+    - How-tos:
+      - Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:
