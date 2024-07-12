@@ -354,7 +354,7 @@ nav:
         -  Conversation Mining: quality-management/analyze/conversation-mining.md
       - Configure:
         - Best Practices for Auditors: quality-management/configure/best-practices-for-auditors.md
-        - Evaluation Forms:
+        - Evaluation Criteria:
           - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md
           - Configure Evaluation Metrics:  quality-management/configure/evaluation-forms/configure-evaluation-metrics.md
         - Settings: quality-management/configure/settings.md
