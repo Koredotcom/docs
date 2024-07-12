@@ -5,7 +5,7 @@
 
 You can automate the capture of a lead’s details on voice or chat channels by Installing the Lead Capture for Hubspot CRM. 
 
-With the '**Lead Capture**' dialog template, you can collect user fields in a conversational format and automate the creation of leads in Hubspot.
+With the **Lead Capture** dialog template, you can collect user fields in a conversational format and automate the creation of leads in Hubspot.
 
 
 ## Getting Started
