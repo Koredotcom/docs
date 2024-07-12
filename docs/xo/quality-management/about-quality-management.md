@@ -11,7 +11,7 @@ The Quality Management module leverages AI to automated QA scoring for 100% cust
     <kr-grid-item>
         <img src="../images/conversational-intelligence.svg" style="zoom:200%;"></img>
         <kr-grid-title>Conversation Intelligence</kr-grid-title>
-        <kr-grid-desc>Gain actionable insights across contact center efficiency, agent efficacy, and customer experience. A single dashboard provides KPI monitoring, topic mining, and sentiment analysis to understand call drivers and improve customer experience.</kr-grid-desc>
+        <kr-grid-desc>Gain actionable insights on contact center efficiency, agent performance, and customer experience. A unified dashboard offers KPI monitoring, topic mining, and sentiment analysis to identify call drivers.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](./analyze/conversation-intelligence.md)
     </kr-grid-item>
     <kr-grid-item>
@@ -23,7 +23,7 @@ The Quality Management module leverages AI to automated QA scoring for 100% cust
     <kr-grid-item>
         <img src="../images/ai-assistance.svg" style="zoom:200%;"></img>
         <kr-grid-title>AI-Assisted Manual Audits</kr-grid-title>
-        <kr-grid-desc>Perform quick, easy manual audits with AI-powered conversation analysis. Easily navigate key moments, including adherence, violations, and omissions. Provide precise feedback through comments to support agent development.</kr-grid-desc>
+        <kr-grid-desc>Perform quick manual audits with AI-powered conversation analysis. Navigate key moments, including adherence, violations, and omissions. Provide precise feedback via comments to support agent development.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](./analyze/conversation-mining.md)
     </kr-grid-item>
 </kr-grid>
