@@ -5,7 +5,7 @@ hide:
 ---
 # Quality Management Overview
 
-Kore.ai's Quality Management module offers AI-powered Automated QA scoring for 100% customer interactions. It offers customizable scoring configurations, comprehensive interaction analysis, and identification of critical issues to meet your business needs. The system optimizes manual review efforts and enhances agent performance feedback. Organizations can measure key metrics to focus on problematic interactions, streamlining agent development, and improving customer service quality.
+The Quality Management module leverages AI to automated QA scoring for 100% customer interactions. It offers customizable scoring configurations, comprehensive interaction analysis, and identification of critical issues to meet your business needs. The system optimizes manual review efforts and enhances agent performance feedback. Organizations can measure key metrics to focus on problematic interactions, streamlining agent development, and improving customer service quality.
 
 <kr-grid type="g2">
     <kr-grid-item>
