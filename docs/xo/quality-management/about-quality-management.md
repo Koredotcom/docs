@@ -24,6 +24,6 @@ The Quality Management module leverages AI to automated QA scoring for 100% cust
         <img src="../images/ai-assistance.svg" style="zoom:200%;"></img>
         <kr-grid-title>AI-Assisted Manual Audits</kr-grid-title>
         <kr-grid-desc>Perform quick manual audits with AI-powered conversation analysis. Navigate key moments, including adherence, violations, and omissions. Provide precise feedback via comments to support agent development.</kr-grid-desc>
-        [Learn more :octicons-arrow-right-24:](./analyze/conversation-mining.md)
+        [Learn more :octicons-arrow-right-24:](./analyze/ai-assisted-manual-audit.md)
     </kr-grid-item>
 </kr-grid>
