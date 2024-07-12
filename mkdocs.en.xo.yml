@@ -351,7 +351,8 @@ nav:
       - Analyze:
         - Dashboard: quality-management/analyze/dashboard.md
         - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
-        -  Conversation Mining: quality-management/analyze/conversation-mining.md
+        - Conversation Mining: quality-management/analyze/conversation-mining.md
+        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
       - Configure:
         - Best Practices for Auditors: quality-management/configure/best-practices-for-auditors.md
         - Evaluation Criteria:

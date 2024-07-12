@@ -24,6 +24,6 @@ Kore.ai's Quality Management module offers AI-powered Automated QA scoring for 1
         <img src="../images/ai-assistance.svg" style="zoom:200%;"></img>
         <kr-grid-title>AI-Assisted Manual Audits</kr-grid-title>
         <kr-grid-desc>Perform quick, easy manual audits with AI-powered conversation analysis. Easily navigate key moments, including adherence, violations, and omissions. Provide precise feedback through comments to support agent development.</kr-grid-desc>
-        [Learn more :octicons-arrow-right-24:](./analyze/conversation-mining.md)
+        [Learn more :octicons-arrow-right-24:](./analyze/ai-assisted-manual-audit.md)
     </kr-grid-item>
 </kr-grid>
