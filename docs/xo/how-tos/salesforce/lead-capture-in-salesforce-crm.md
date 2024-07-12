@@ -1,12 +1,12 @@
 # Lead Capture in Salesforce CRM Using a VA
 
-You can automate the capture of a lead’s details on voice or chat channels by Installing the Lead Capture for Salesforce CRM. 
+You can automate the capture of a lead’s details on chat channels by Installing the Lead Capture for Salesforce CRM. 
 
 With the **Lead Capture** dialog template, you can collect user fields in a conversational format and automate the creation of leads in Salesforce.
 
 ## Getting Started
 
-The XO Platform makes it simple to Install the Lead Capture template for Salesforce CRM to automate the capture of a lead’s details on voice or chat channels. Once the fields are captured, the system automatically creates a lead object in Salesforce
+The XO Platform makes it simple to Install the Lead Capture template for Salesforce CRM to automate the capture of a lead’s details on chat channels. Once the fields are captured, the system automatically creates a lead object in Salesforce
 
 The entire process consists of the following steps:
 
