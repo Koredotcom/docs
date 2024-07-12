@@ -106,6 +106,7 @@ Create your own custom authorization profile to obtain an access token and use i
 5. Enter all lead details when prompted by the VA, as shown below:  
 <img src="../images/lead_details.png" alt="lead_details" title="lead_details" style="border: 1px solid gray; zoom:70%;">
 
-6. The new lead is created in Hubspot CRM. To view the lead, log in to Hubspot, click **CRM** in the left menu bar, and then select **Contacts**. 
+6. The new lead is created in Hubspot CRM. To view the lead, log in to Hubspot, click **CRM** in the left menu bar, and then select **Contacts**.  
+<img src="..//images/Hubspot.png" alt="salesforce" title="salesforce" style="border: 1px solid gray; zoom:70%;">
 
 7. [Publish your App (VA)](../../deploy/publishing-bot.md) so the end users can use this capability.
