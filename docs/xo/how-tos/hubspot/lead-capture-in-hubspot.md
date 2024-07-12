@@ -53,7 +53,7 @@ Create your own custom authorization profile to obtain an access token and use i
 * Click the **Select Authorization** drop-down and select the **Create New** option.  
 <img src="../images/custom_authorization.png" alt="custom_authorization" title="custom_authorization" style="border: 1px solid gray; zoom:70%;">
 
-* Select the type of authorization mechanism. For example, select the **OAuth v2** option. To create custom OAuth profiles, see [Setting Up Authorization Using OAuth v2](https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2).  
+* Select the type of authorization mechanism. For example, select the **OAuth v2** option. To create custom OAuth profiles, see [Setting Up Authorization Using OAuth v2](../../app-settings/dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2.md).  
 <img src="../images/Oauth.png" alt="Oauth" title="Oauth" style="border: 1px solid gray; zoom:70%;">
 
 * Enter the following authentication credentials for the OAuth v2 mechanism:
@@ -106,6 +106,6 @@ Create your own custom authorization profile to obtain an access token and use i
 5. Enter all lead details when prompted by the VA, as shown below:  
 <img src="../images/lead_details.png" alt="lead_details" title="lead_details" style="border: 1px solid gray; zoom:70%;">
 
-6. The new lead is created in Hubspot CRM. To view the lead, log in to Hubspot, click **CRM** in the left menu bar, and then select **Tickets**. 
+6. The new lead is created in Hubspot CRM. To view the lead, log in to Hubspot, click **CRM** in the left menu bar, and then select **Contacts**. 
 
 7. [Publish your App (VA)](../../deploy/publishing-bot.md) so the end users can use this capability.

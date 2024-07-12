@@ -12,7 +12,7 @@ The XO Platform makes it simple to Install the Lead Capture template for Salesfo
 
 The entire process consists of the following steps:
 
-Step 1: Link your Salesforce account
+Step 1: Link your Salesforce CRM account
 
 Step 2: Install the Lead Capture for Salesforce CRM
 
@@ -48,7 +48,7 @@ Create your own custom authorization profile to obtain an access token and use i
 * Click the **Select Authorization** drop-down and select the **Create New** option. 
 <img src="../images/custom_authorize.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">
 
-* Select the type of authorization mechanism. For example, select the **OAuth v2** option. To create custom OAuth profiles, see [Setting Up Authorization Using OAuth v2](https://docsinternal-kore.github.io/docs/xo/app-settings/dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2).  
+* Select the type of authorization mechanism. For example, select the **OAuth v2** option. To create custom OAuth profiles, see [Setting Up Authorization Using OAuth v2](../../app-settings/dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2.md).  
 <img src="../images/OauthV2.png" alt="authorization" title="authorization" style="border: 1px solid gray; zoom:70%;">  
 
 * Enter the following authentication credentials for the OAuth v2 mechanism:
