@@ -18,7 +18,7 @@ Step 1: Link your Hubspot account
 
 Step 2: Install the Lead Capture for Hubspot CRM
 
-Step 3 : Train and Test the Dialog Tasks
+Step 3: Train and Test the Dialog Tasks
 
 
 ### Step 1: Link your Hubspot Account
