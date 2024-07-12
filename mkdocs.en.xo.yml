@@ -159,16 +159,13 @@ nav:
         - Search AI: release-notes/11.x/search-ai.md
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
         - Agent AI: release-notes/11.x/agent-ai.md
-        - Platform Services: release-notes/11.x/platform-services.md
-    - How-tos:
-      - Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
-      - Salesforce: how-tos/salesforce/lead-capture-in-salesforce-crm.md
-      - HubSpot: how-tos/hubspot/lead-capture-in-hubspot.md
+        - Platform Services: release-notes/11.x/platform-services.md    
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:
         - About Virtual Assistant: getting-started/virtual-assistants-overview.md
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
+        - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md        
     - Use Cases: 
       - Dialog Tasks:
         - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
@@ -238,8 +235,7 @@ nav:
       - NLU Configuration:
         - NLP Engine Configurations: automation/natural-language/nlu-configurations/engine-tuning.md
         - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
-        - Amend Entities: automation/natural-language/nlu-configurations/amend-entities.md        
-      - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md        
+        - Amend Entities: automation/natural-language/nlu-configurations/amend-entities.md              
     - Intelligence:
       - Overview: automation/intelligence/intelligence-overview.md
       - Events: 
@@ -263,6 +259,11 @@ nav:
         - Health and Monitoring: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
         - Batch Testing: automation/testing/regression-testing/batch-testing.md
         - Conversation Testing: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md
+    - How To:
+      - Marketplace Integration:
+        - Crete a Ticket in Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
+        - Lead Capture in Salesforce: how-tos/salesforce/lead-capture-in-salesforce-crm.md
+        - Lead Capture in HubSpot: how-tos/hubspot/lead-capture-in-hubspot.md
     - Advanced Topics:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
@@ -371,7 +372,7 @@ nav:
       - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
     - Integrations:
       - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
-  - Gen AI Tools:
+  - GenAI Tools:
     - Overview: generative-ai-tools/introduction.md
     - Models Library:
       - LLM Integration: generative-ai-tools/models-library.md
