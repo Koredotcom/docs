@@ -1,30 +1,28 @@
-# Lead Capture in Hubspot Using a VA
+# Lead Capture in HubSpot Using a VA
 
 
 ## Overview
 
-You can automate the capture of a lead’s details on voice or chat channels by Installing the Lead Capture for Hubspot CRM. 
+You can automate the capture of a lead’s details on voice or chat channels by Installing the Lead Capture for HubSpot CRM. 
 
-With the **Lead Capture** dialog template, you can collect user fields in a conversational format and automate the creation of leads in Hubspot.
+With the **Lead Capture** dialog template, you can collect user fields in a conversational format and automate the creation of leads in HubSpot.
 
 
 ## Getting Started
 
-The XO Platform makes it simple to Install the Lead Capture template for Hubspot CRM, which automates the capture of a lead’s details on voice or chat channels. Once the fields are captured, the system automatically creates a lead object in Hubspot.
+The XO Platform makes it simple to Install the Lead Capture template for HubSpot CRM, which automates the capture of a lead’s details on voice or chat channels. Once the fields are captured, the system automatically creates a lead object in HubSpot.
 
 The entire process consists of the following steps:
 
-Step 1: Link your Hubspot account
+Step 1: Link your HubSpot account
 
-Step 2: Install the Lead Capture for Hubspot CRM
+Step 2: Install the Lead Capture for HubSpot CRM
 
 Step 3: Train and Test the Dialog Tasks
 
+### Step 1: Link your HubSpot Account
 
-### Step 1: Link your Hubspot Account
-
-
-1. Click **Marketplace** in the left navigation and select **Hubspot** Integration. The Hubspot Integration dialog box is displayed.  
+1. Click **Marketplace** in the left navigation and select **HubSpot** Integration. The HubSpot Integration dialog box is displayed.  
 <img src="../images/marketplace_hubspot.png" alt="marketplace" title="marketplace" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Install** at the top-right corner. The Instructions tab is highlighted. 
@@ -35,19 +33,17 @@ Step 3: Train and Test the Dialog Tasks
  
 **System Authorization**
 
-Pre-authorize Hubspot integration with the necessary authorization credentials to obtain the token to access external services.
+Pre-authorize HubSpot integration with the necessary authorization credentials to obtain the token to access external services.
 
-* Select **System** to enable the Kore.ai’s preconfigured Hubspot app and click **Authorize**.  
+* Select **System** to enable the Kore.ai’s preconfigured HubSpot app and click **Authorize**.  
 <img src="../images/system_authorization.png" alt="system_authorization" title="system_authorization" style="border: 1px solid gray; zoom:70%;">
  
-
- * Once you click **Authorize**, you are redirected to the Hubspot login page.
- * Enter your developer account credentials to successfully connect with your Hubspot Account.
+ * Once you click **Authorize**, you are redirected to the HubSpot login page.
+ * Enter your developer account credentials to successfully connect with your HubSpot Account.
 
 **Custom Authorization**
 
-
-Create your own custom authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s Hubspot app for authorization.
+Create your own custom authorization profile to obtain an access token and use it to complete integration without using Kore.ai’s HubSpot app for authorization.
 
 * Select the **Custom** to enable the custom authorization profile.
 * Click the **Select Authorization** drop-down and select the **Create New** option.  
@@ -72,13 +68,13 @@ Create your own custom authorization profile to obtain an access token and use i
 * Click **Authorize**. You are navigated to “app.hubspot.com”.  
 <img src="../images/hubspot_authorization.png" alt="hubspot_authorization" title="hubspot_authorization" style="border: 1px solid gray; zoom:70%;">
 
-* Enter login credentials to successfully connect with your Hubspot Account.
+* Enter login credentials to successfully connect with your HubSpot Account.
 * Once the authorization is successful, you will see a success message.
 * Click **Proceed**. When you configure the action for the first time, the **Integration Installed Successfully** pop-up is displayed.
 
-### Step 2: Install the Lead Capture Template for Hubspot CRM
+### Step 2: Install the Lead Capture Template for HubSpot CRM
 
-1. Go to the **Marketplace** and select **Lead Capture** for Hubspot CRM Dialog Template.  
+1. Go to the **Marketplace** and select **Lead Capture** for HubSpot CRM Dialog Template.  
 <img src="../images/marketplace_Leadcapture.png" alt="marketplace_Leadcapture" title="marketplace_Leadcapture" style="border: 1px solid gray; zoom:70%;">
 
 2. The **Lead Capture** installation dialog box is displayed. Click **Install** to begin the installation.  
@@ -106,7 +102,7 @@ Create your own custom authorization profile to obtain an access token and use i
 5. Enter all lead details when prompted by the VA, as shown below:  
 <img src="../images/lead_details.png" alt="lead_details" title="lead_details" style="border: 1px solid gray; zoom:70%;">
 
-6. The new lead is created in Hubspot CRM. To view the lead, log in to Hubspot, click **CRM** in the left menu bar, and then select **Contacts**.  
+6. The new lead is created in HubSpot CRM. To view the lead, log in to HubSpot, click **CRM** in the left menu bar, and then select **Contacts**.  
 <img src="..//images/Hubspot.png" alt="salesforce" title="salesforce" style="border: 1px solid gray; zoom:70%;">
 
 7. [Publish your App (VA)](../../deploy/publishing-bot.md) so the end users can use this capability.
