@@ -9,10 +9,16 @@ Contact Center AI offers a conversational AI-native contact center-as-a-service 
 <kr-grid type="g2">
     <kr-grid-item>
         <img src="../images/sa-unified-dataflow.svg" style="zoom:200%;"></img>
-        <kr-grid-title>Flows & Routing</kr-grid-title>
-        <kr-grid-desc>Define the end-to-end customer experience at a contact center for each communication channel. Configure routing and related properties - create skill groups, add skills, and set up queues and assignments.</kr-grid-desc>
+        <kr-grid-title>Flows</kr-grid-title>
+        <kr-grid-desc>Define the end-to-end customer experience at a contact center for each communication channel. Also, customize customers’ Waiting Experience to maintain engagement and improve customer satisfaction.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](./configurations/default-flows/configure-default-flows.md)
-    </kr-grid-item>    
+    </kr-grid-item>
+    <kr-grid-item>
+        <img src="../images/sa-unified-reverse-right.svg" style="zoom:200%;"></img>
+        <kr-grid-title>Routing</kr-grid-title>
+        <kr-grid-desc>Configure routing and related properties - create skill groups, add skills, and set up queues and assignments. Conversations are assigned to queues based on the agent selection logic and skill proficiency match.</kr-grid-desc>
+        [Learn more :octicons-arrow-right-24:](./routing/queues/queue-management.md)
+    </kr-grid-item>
     <kr-grid-item>
         <img src="../images/sa-unified-users.svg" style="zoom:200%;"></img>
         <kr-grid-title>Agents and Supervisors</kr-grid-title>
