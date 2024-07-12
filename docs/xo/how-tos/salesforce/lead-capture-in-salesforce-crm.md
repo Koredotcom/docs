@@ -4,7 +4,7 @@
 
 You can automate the capture of a lead’s details on voice or chat channels by Installing the Lead Capture for Salesforce CRM. 
 
-With the '**Lead Capture**' dialog template, you can collect user fields in a conversational format and automate the creation of leads in Salesforce.
+With the **Lead Capture** dialog template, you can collect user fields in a conversational format and automate the creation of leads in Salesforce.
 
 ## Getting Started
 
