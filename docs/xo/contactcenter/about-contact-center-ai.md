@@ -11,7 +11,7 @@ Contact Center AI offers a conversational AI-native contact center-as-a-service 
         <img src="../images/sa-unified-dataflow.svg" style="zoom:200%;"></img>
         <kr-grid-title>Flows</kr-grid-title>
         <kr-grid-desc>Define the end-to-end customer experience at a contact center for each communication channel. Also, customize customers’ Waiting Experience to maintain engagement and improve customer satisfaction.</kr-grid-desc>
-        [Learn more :octicons-arrow-right-24:](../flows/introduction-to-flows.md)
+        [Learn more :octicons-arrow-right-24:](./configurations/default-flows/configure-default-flows.md)
     </kr-grid-item>
     <kr-grid-item>
         <img src="../images/sa-unified-reverse-right.svg" style="zoom:200%;"></img>
@@ -37,10 +37,16 @@ Contact Center AI offers a conversational AI-native contact center-as-a-service 
         <kr-grid-desc>Boost agent efficiency with AI tools, secure communication, and collaborative features. Empower managers and supervisors to monitor and join calls, and allocate tasks to designated agents or queues.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](./console/conversation-tray/conversation-tray.md)
     </kr-grid-item>
-     <kr-grid-item>
+    <kr-grid-item>
         <img src="../images/campaigns.svg" style="zoom:200%;"></img>
         <kr-grid-title>Campaigns</kr-grid-title>
-        <kr-grid-desc>Creating targeted voice campaigns and proactive web campaigns, supported by easy-to-use templates and comprehensive analytics. Monitor campaign performance and objectives with greater precision and effectiveness.</kr-grid-desc>
+        <kr-grid-desc>Create targeted voice and proactive web campaigns supported by easy-to-use templates and comprehensive analytics. Monitor campaign performance and objectives with greater precision and effectiveness.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](./campaigns/about-campaigns.md)
+    </kr-grid-item>
+    <kr-grid-item>
+        <img src="../images/qm.svg" style="zoom:200%;"></img>
+        <kr-grid-title>Quality Management</kr-grid-title>
+        <kr-grid-desc>AI-powered automated QA scoring for all customer interactions, with customizable configurations and comprehensive analysis. Optimize manual reviews, enhance agent feedback, and measure metrics to improve service quality.</kr-grid-desc>
+        [Learn more :octicons-arrow-right-24:](../quality-management/about-quality-management.md)
     </kr-grid-item>            
 </kr-grid>
