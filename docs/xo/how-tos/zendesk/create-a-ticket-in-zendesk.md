@@ -1,8 +1,5 @@
 # Enable your VA to Create a Ticket in Zendesk
 
-
-## Overview
-
 You can streamline your customer support experience with our virtual assistant. Your end-users interact with the virtual assistant to resolve their queries. The assistant can tackle straightforward questions directly in the chat, saving users time and effort. For complex issues requiring more time or expertise or during non-office hours, the assistant can effortlessly guide users in creating a Zendesk support ticket. It can prompt users to collect the required information and create a ticket or convert the ongoing conversation into a ticket, keeping the conversation context in mind.
 
 ## Getting Started
@@ -11,13 +8,11 @@ The XO Platform makes it simple to link your Zendesk account and add ticket mana
 
 The entire process consists of the following steps:
    
-   Step 1: Link your Zendesk account.
-   
-   Step 2: Install the Create a Ticket Template for Zendesk.
-   
-   Step 3: Train and Test the Dialog Tasks.
+1. [Link your Zendesk account](#step-1-link-your-zendesk-account).
+2. [Install the Create a Ticket Template for Zendesk](#step-2-install-the-create-a-ticket-template-for-zendesk).
+3. [Train and Test the Dialog Tasks](#step-3-train-the-va-for-the-dialog-task-and-test-it).
 
-**Prerequisites**
+### Prerequisites
 
 Before you start the linking process, keep the following information handy:
 

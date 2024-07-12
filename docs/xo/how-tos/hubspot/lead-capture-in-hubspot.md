@@ -1,8 +1,5 @@
 # Lead Capture in HubSpot Using a VA
 
-
-## Overview
-
 You can automate the capture of a lead’s details on voice or chat channels by Installing the Lead Capture for HubSpot CRM. 
 
 With the **Lead Capture** dialog template, you can collect user fields in a conversational format and automate the creation of leads in HubSpot.
@@ -14,11 +11,9 @@ The XO Platform makes it simple to Install the Lead Capture template for HubSpot
 
 The entire process consists of the following steps:
 
-Step 1: Link your HubSpot account
-
-Step 2: Install the Lead Capture for HubSpot CRM
-
-Step 3: Train and Test the Dialog Tasks
+1. [Link your HubSpot account](#step-1-link-your-hubspot-account).
+2. [Install the Lead Capture for HubSpot CRM](#step-2-install-the-lead-capture-template-for-hubspot-crm).
+3. [Train and Test the Dialog Tasks](#step-3-train-the-va-for-the-dialog-task-and-test-it).
 
 ### Step 1: Link your HubSpot Account
 
