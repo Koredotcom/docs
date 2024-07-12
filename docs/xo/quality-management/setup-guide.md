@@ -17,7 +17,7 @@ Steps to follow the QM setup for Third-party Integration:
 
         For more information, refer to the [Conversation Intelligence Dashboard](../quality-management/analyze/conversation-intelligence.md) and _Quality Management_.
 
-5. Enable **Answer** and **Utterance**suggestions from GenAI settings.
+5. Enable **Answer** and **Utterance** suggestions from GenAI settings.
     * Enable the required options from the Co-Pilot section of GenAI features of the Generative AI section of XO11.
     * Select the desired Model for similar suggestions of Agent Answers and Utterances using AI Assistance.
 
