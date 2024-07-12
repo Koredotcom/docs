@@ -44,11 +44,10 @@ The following table describes the best practices that are based on - By Question
    <td><strong>Company and Brand Names</strong>
 <ul>
 
-<li>Include when necessary, but be aware they can impact semantic adherence. 
+<li>Include when necessary, but be aware they can impact semantic adherence.
 
-<li>Implement moderate thresholds (for example, 50-60% match) to accommodate variations 
+<li>Implement moderate thresholds (for example, 50-60% match) to accommodate variations
 
-<p>
 <strong>Agent Names</strong>
 <ul>
 
@@ -56,8 +55,7 @@ The following table describes the best practices that are based on - By Question
 
 <li>Use [Agent Name] as a placeholder where the agent references themself or any other agents.
 
-<p>
-<strong>Product Names and Model IDs</strong> 
+<strong>Product Names and Model IDs</strong>
 <ul>
 
 <li>Avoid including specific model identifiers unless necessary.
@@ -84,6 +82,7 @@ The following table describes the best practices that are based on - By Question
 <li>Configurations with company/brand names for policy: 70-80% match.
 
 <li>Configurations with product specifics: 50-60% match.
+<br>
 <strong>Note</strong>: Adjust these thresholds based on your specific use case and requirements.
 </li>
 </ul>

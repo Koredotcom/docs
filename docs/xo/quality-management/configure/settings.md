@@ -65,4 +65,4 @@ Steps to enable the Script Adherence Configuration:
 
 * **Message**: Allows you to define specified attribute messages for the agent or user. You can add more than one message for the user for the same attribute and delete the defined messages.
 
-* Click **Save**to save the defined messages.
+* Click **Save** to save the defined messages.
