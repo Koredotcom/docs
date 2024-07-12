@@ -11,7 +11,7 @@ Contact Center AI offers a conversational AI-native contact center-as-a-service 
         <img src="../images/sa-unified-dataflow.svg" style="zoom:200%;"></img>
         <kr-grid-title>Flows</kr-grid-title>
         <kr-grid-desc>Define the end-to-end customer experience at a contact center for each communication channel. Also, customize customers’ Waiting Experience to maintain engagement and improve customer satisfaction.</kr-grid-desc>
-        [Learn more :octicons-arrow-right-24:](./configurations/default-flows/configure-default-flows.md)
+        [Learn more :octicons-arrow-right-24:](../flows/introduction-to-flows.md)
     </kr-grid-item>
     <kr-grid-item>
         <img src="../images/sa-unified-reverse-right.svg" style="zoom:200%;"></img>
