@@ -43,7 +43,7 @@ Before you start the linking process, keep the following information handy:
 5. The Integration Installed Successfully confirmation is displayed.  
 <img src="../images/integration-installed-successfully.png" alt="successfull_message" title="successfull_message" style="border: 1px solid gray; zoom:70%;">
 
-### Step 2: Install the **Create a Ticket** Template for Zendesk
+### Step 2: Install the 'Create a Ticket' Template for Zendesk
 
 1. Go to the **Marketplace** and select **Create a Ticket for Zendesk** Dialog Template.  
 <img src="../images/marketplace.png" alt="marketplace" title="marketplace" style="border: 1px solid gray; zoom:70%;">
