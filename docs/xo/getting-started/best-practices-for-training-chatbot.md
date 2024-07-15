@@ -1,7 +1,7 @@
 
 # Best Practices for Training Your AI Chatbot
 
-You can train your AI Chatbot to provide exact answers to specific questions from customers. Consider the following best practices while doing so: 
+You can train your AI Chatbot to provide exact answers to specific questions from customers. Consider the following best practices for training your Chatbot:
 
 1. **FAQs** (Frequently Asked Questions)
     * FAQs are the most frequently asked questions by customers and visitors. Add the most common questions and their brief answers.
