@@ -14,7 +14,7 @@ Key features and enhancements included in this release are summarized below.
 
 Agents can now make outbound calls from any status except "System Away" (Chat and Voice) and "System Busy" (Voice). This feature allows agents to contact customers at scheduled times or during emergencies without changing to "Available" status, preventing incoming calls.  
 
-Key points:
+Key points:  
 * Outbound calls are possible while handling digital interactions.  
 * No secondary outbound calls until the current voice call ends.  
 * Agent status automatically changes to "System Busy" when initiating an outbound call. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#manual-outbound-call)
@@ -23,7 +23,7 @@ Key points:
 
 #### Two-Factor Authentication (2FA) Support
 
-Contact Center AI now offers Two-Factor Authentication (2FA) for enhanced login security. When enabled in the Kore admin console, 2FA becomes mandatory for users' login. If not enabled, the login process remains unchanged.
+Contact Center AI now offers Two-Factor Authentication (2FA) for enhanced login security. When enabled in the Kore.ai Admin Console, 2FA becomes mandatory for all users of the account/workspace. If not enabled, the login process remains unchanged. [Learn more :octicons-arrow-right-24:](../../administration/security-and-control/two-factor-authentication-for-platform-access.md)
 
 <hr>
 
