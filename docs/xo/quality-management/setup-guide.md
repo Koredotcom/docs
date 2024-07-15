@@ -1,64 +1,57 @@
-# Quality Management Setup Guide (WIP)
 
-This setup guide helps you get started using Quality Management. Learn how to set up, configure, and use Quality Management.
+# Quality Management Setup Guide
 
-Quality Management setup consists of the following steps:
+Get started on the Quality Management (QM) module: Learn how to set up, configure, and use the QM module.
 
-1. Go to **User Management** > **Role Management** > **New Role** > **Other Modules** for QM permission.
-2. Assign the relevant roles (Supervisor role) through User Management or configure the custom roles using the QM permission provided under the Other Modules section for new role creation under Role Management.
-3. Set up the Contact Center and assign the relevant roles (Supervisors/Auditors) to the respective queues to handle access to relevant interactions.
-4. Enable **Conversation Intelligence** and **Auto QA**.
-    * Enable **Conversation Intelligence**, **Auto QA**, and **Bookmarks** from Settings within QM to start analyzing interactions (Conversation Intelligence and Auto QA Scoring). See [Conversation Intelligence Dashboard](../quality-management/analyze/conversation-intelligence.md).
+Follow these steps:
 
-5. Enable **Answer** and **Utterance** suggestions from GenAI settings.
-    * Enable the required options from the Co-Pilot section of GenAI features of the Generative AI section of XO11.
-    * Select the desired Model for similar suggestions of Agent Answers and Utterances using AI Assistance.  
-    See [Evaluation Forms](../quality-management/configure/evaluation-forms/configure-evaluation-forms.md).
+1. Configure QM permissions:
 
-6. Create **Evaluation Metrics** from the **Evaluation Forms** section of QM based on the required evaluation criteria using the following user Evaluation Metrics Measurement Types (see [Evaluation Forms](../quality-management/configure/evaluation-forms/configure-evaluation-forms.md) and [Evaluation Metrics](../quality-management/configure/evaluation-forms/configure-evaluation-metrics.md)).
-    * **By Question**
-        * **Question Answer Pair**:
-            * Question is a reference for auditors to understand the evaluation criteria. For example, Did the agent greet the customer?
-        * **Adherence Type**:
-            * **Static**
-                * Non-conditional evaluation, answers configured are checked for adherence in all scenarios.
-            * **Dynamic**
-                * Conditional evaluation, answers configured are checked for adherence only when the configured trigger utterance either from the Customer or Agent is detected.
-        * **Answer**:
-            * Expected answer utterance from the agent in interactions.
-        * **Count Type**:
-            * **Entire Conversation**
-                * Adherence is checked across the entire interaction.
-            * **Time Bound**
-                * Adherence checks for the configured number of seconds for voice and the number of messages for chats, either at the start or at the end of the conversation, based on selection.
-7. Create the **Evaluation Forms**.
-    * Create evaluation forms by assigning Name, Description, Channel, and Pass Score.
-    * Select the desired metrics from the list of created metrics, add them, assign weights to each metric so that the total weight across metrics sums up to 100%, and assign the forms to queues. 
-    * After creating the Settings, enable the evaluation form to start evaluating interactions that are terminated in the queues assigned to that form.
-    * Each queue can have only one evaluation form per channel: Chat and Voice.
+    a. Go to **User Management** > **Role Management** > **New Role** > **Other Modules**.
 
-    See [Evaluation Forms](../quality-management/configure/evaluation-forms/configure-evaluation-forms.md).
+    b. Assign relevant roles (Supervisor role) or create custom roles with QM permissions.
 
-8. View the scored interaction from **Conversation Mining**.
-    * View the scored interactions from conversation mining, use filters to drill down to a set of interactions of interest or interactions with the most potential to improve, and save filters to assign them for audit.
-    * Interactions seen in the conversation mining screen are restricted to the queues that the user is part of.
-    
-    See [Conversation Mining](../quality-management/analyze/conversation-mining.md).
+2. Set up Contact Center:
 
-9. Create **Audit Allocations** to assign interactions for audit.
-    * Assign interactions for audit to different auditors to manually evaluate them.
-    * Interactions seen in the audit allocation are those assigned to that user for the audit. Upon audit completion, the interactions are removed from the New **Audit Allocation** tab.
+    a. Assign Supervisors/Auditors to relevant queues in your Contact Center application so that they have access to the relevant interactions.
 
-10. Expedite Manual audits.
-    * Use AI-assisted manual audits to score interactions easily. The entire interaction is broken down by moments of adherence, moments of violation, and omissions.
-    * By questioning metrics associated with the form on the right side, click on the metric to navigate to that point of the interaction and record playback.
-    * Violations for speech-based metrics with timestamps on the top-left section.
-    * Omissions for playbooks and dialog tasks on the bottom left.
+3. Enable features:
 
-    See [Conversation Mining](../quality-management/analyze/conversation-mining.md).
+    a. Enable Conversation Intelligence, Auto QA, and Bookmarks in QM Settings. See [Conversation Intelligence Dashboard](../quality-management/analyze/conversation-intelligence.md).
 
-11. Monitor task list and quality standards using the dashboard.
-    * The Dashboard is meant for individual QAs to review their audit completion progress and monitor scores and failure statistics for their respective queues. See [Dashboard](../quality-management/analyze/dashboard.md).
+    b. Enable Answer and Utterance suggestions in GenAI settings. See [Enabling Gen AI Co-pilot Features](../generative-ai-tools/co-pilot-features.md).
 
-12. Monitor contact center performance from the Conversation Intelligence Dashboard.
-    * Monitor efficiency KPIs, Agent performance metrics, and call drivers using topic modeling, sentiment analysis, and churn analysis from a single dashboard with conversation intelligence. See [Dashboard](../quality-management/analyze/dashboard.md).
+4. Create Evaluation Metrics:
+
+    a. Use By Question, Question Answer Pair, and Adherence Types (Static/Dynamic). See [Evaluation Metrics](../quality-management/configure/evaluation-forms/configure-evaluation-forms.md).
+
+    b. 	Set Count Type (Entire Conversation/Time Bound). See[ Add New Evaluation Metrics](../quality-management/configure/evaluation-forms/configure-evaluation-metrics.md#add-new-evaluation-metrics).  
+
+5. Create Evaluation Forms:
+
+    a. Assign Name, Description, Channel, and Pass Score.
+
+    b. Select metrics, assign weights, and link to queues. See [Evaluation Forms](../quality-management/configure/evaluation-forms/configure-evaluation-forms.md).
+
+6. View scored interactions in Conversation Mining:
+
+    a. Use filters to analyze interactions.
+
+    b. Save filters for audit assignments. See [Conversation Mining](../quality-management/analyze/conversation-mining.md).
+
+7. Create Audit Allocations
+
+    a. Assign interactions to auditors for manual evaluation. See [Add New Audit Allocation](../quality-management/analyze/conversation-mining.md#add-new-audit-allocation).
+
+8. Expedite Manual audits:
+
+    a. Use AI-assisted audits for easier scoring.
+
+    b. Navigate interactions using adherence moments and violations. See [AI-Assisted Manual Audit](../quality-management/analyze/ai-assisted-manual-audit.md).
+
+9. Monitor performance:
+
+    a. Use the Dashboard for individual QA progress and queue statistics.
+
+    b. Utilize the Conversation Intelligence Dashboard for overall contact center performance. \
+ See [Dashboard](../quality-management/analyze/dashboard.md).
