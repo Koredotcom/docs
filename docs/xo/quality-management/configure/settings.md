@@ -66,3 +66,51 @@ Steps to enable the Script Adherence Configuration:
 * **Message**: Allows you to define specified attribute messages for the agent or user. You can add more than one message for the user for the same attribute and delete the defined messages.
 
 * Click **Save** to save the defined messages.
+
+## Quality Management Settings
+
+The Quality Management Settings allows users to create and configure evaluation forms to generate automated scores and enable interactions to get bookmarked under the different sections for reference later.
+
+Users can access Quality Management (QM) Settings by going to **Contact Center AI** > **Quality Management** > **Settings** > **Quality Management**.  
+<img src="../images/qm-setting.png" alt="QM Settings" title="QM Settings" style="border: 1px solid gray; zoom:60%;">
+
+The QA has the following two sections:
+
+* Auto QA
+* Bookmarks
+
+### Auto QA
+
+This feature allows users to set up Evaluation Forms for automated scoring. If the Auto QA toggle is off, users cannot see automated QA scores across the entire application and its queues. This also restricts access to features like Conversation Mining, Dashboards, and Evaluation Forms.
+
+Steps to enable the Auto QA:
+
+1. Expand the **Quality Management** collapse icon to view the **Auto QA** option as shown below.  
+<img src="../images/auto-qa.png" alt="Auto QA" title="Auto QA" style="border: 1px solid gray; zoom:60%;">
+
+2. Enable the **Auto QA** option.
+3. Click **Save** to save the settings.
+
+    By Enabling the Auto QA toggle option, users can create and configure evaluation forms to generate automated scores.  
+    <img src="../images/bookmarks.png" alt="Bookmark Toggle" title="Script Adherence Toggle" style="border: 1px solid gray; zoom:60%;">
+
+### Bookmarks
+
+This feature lets users bookmark interactions into various collections for future reference. Once created, these collections are added to Conversation Mining.
+
+Steps to Add Bookmarks:
+
+1. Expand the **Quality Management** collapse icon to view the following **Bookmarks** option.  
+<img src="../images/bookmarks-(2).png" alt="Bookmark" title="Bookmark" style="border: 1px solid gray; zoom:70%;">
+
+2. Enable the **Bookmarks** toggle option to add a new bookmark.
+3. Click the **Add Bookmark**. A new **Bookmarks** row appears, as shown below.  
+<img src="../images/bookmarks.png" alt="Bookmarks" title="Bookmarks" style="border: 1px solid gray; zoom:60%;">
+
+4. Enter the **Bookmarks** name for the assigned interactions.
+5. Add **Color** for the newly added bookmarks.
+6. Click **Save**.
+
+    !!! Note
+    
+        Deleting any created bookmarks removes only the bookmark itself, not the associated relevant interactions.
