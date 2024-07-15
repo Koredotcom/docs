@@ -2,6 +2,35 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+## v11.3.1 July 13, 2024
+
+<u> Patch Release </u>
+
+Key features and enhancements included in this release are summarized below.
+
+### Agent Console
+
+#### Enhanced Outbound Calling
+
+Agents can now make outbound calls from any status except "System Away" (Chat and Voice) and "System Busy" (Voice). This feature allows agents to contact customers at scheduled times or during emergencies without changing to "Available" status, preventing incoming calls.  
+
+Key Points:  
+
+* Outbound calls are possible while handling digital interactions.  
+
+* No secondary outbound calls until the current voice call ends.  
+
+* Agent status automatically changes to "System Busy" when initiating an outbound call.  
+[Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#manual-outbound-call)
+
+### Administration
+
+#### Two-Factor Authentication (2FA) Support
+
+Contact Center AI now offers Two-Factor Authentication (2FA) for enhanced login security. When enabled in the Kore.ai Admin Console, 2FA becomes mandatory for all users of the account/workspace. If not enabled, the login process remains unchanged. [Learn more :octicons-arrow-right-24:](../../administration/security-and-control/two-factor-authentication-for-platform-access.md)
+
+<hr>
+
 ## v11.3.0 June 29, 2024
 
 <u> Patch Release </u>
@@ -17,7 +46,7 @@ The outbound dialer has been enhanced with the following functionalities:
 * **Search Bar**: The search bar on the dialer interface allows agents to enter keywords or partial numbers to find configured contacts quickly.
 * **International Subscriber Dialing (ISD) Code Update**: The dialer automatically adjusts the outbound phone number's ISD code based on the last country code used. This streamlines the process for agents making calls to different regions.
 * **Phone Number Formatting**: The system displays the phone number in a standardized format when an agent enters it for dialing, regardless of whether the original number contains hyphens or brackets if the format is valid.
-* **Validation and Error Handling**: An error message is displayed if an invalid number is entered (for example, incorrect length or characters). The call button is disabled until a valid number is entered, preventing accidental calls to inaccurate numbers.
+* **Validation and Error Handling**: An error message is displayed if an invalid number is entered (for example, incorrect length or characters). The call button is disabled until a valid number is entered, preventing accidental calls to inaccurate numbers. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#outbound-dialer)
 
 #### Improved Conversation Handling With an Explicit Reject Button
 
@@ -25,18 +54,18 @@ Administrators can enable agents to explicitly reject an incoming interaction, a
 
 * Agents can Accept (✅) or Reject (❌) each interaction on the conversation tray.
 * **Accept**: Displays the conversation panel for that interaction.
-* **Reject**: Removes the interaction from the agent's queue and returns it to the queue for reassignment.
+* **Reject**: Removes the interaction from the agent's queue and returns it to the queue for reassignment. [Learn more :octicons-arrow-right-24:](../../console/managing-incoming-interactions.md#manual-answer-mode)
 
 The Monitor tab displays metrics relevant to rejection in the Agents and Interactions sub-tabs.
 
 **Monitor** > **Agents**
 
-* The Agents sub-tab now includes counts for rejected and unanswered interactions. 
-* Clicking an agent displays the count of Completed, Transferred, Rejected, and Unanswered interactions.
+* The Agents sub-tab now includes counts for rejected and unanswered interactions.
+* Clicking an agent displays the count of Completed, Transferred, Rejected, and Unanswered interactions. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#agents)
 
 **Monitor** > **Interactions**
 
-* Clicking an agent displays the count of Answered, Transferred, Rejected, and Unanswered interactions.
+* Clicking an agent displays the count of Answered, Transferred, Rejected, and Unanswered interactions. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#manually-assign-conversations-to-an-agent-and-change-queue)
 
 ### Configuration
 
@@ -65,7 +94,7 @@ Administrators and Supervisors with access to Dashboard > Interactions can now v
 Automatic refresh for filters applied in the Monitor tabs at fixed intervals is implemented to ensure real-time data accuracy.
 
 * Filtered data on Monitor tabs is updated at the specified interval, reflecting real-time changes.
-* New interactions are not immediately added to filtered results but appear after the 5-second update interval.
+* New interactions are not immediately added to filtered results but appear after the 5-second update interval. [Learn more :octicons-arrow-right-24:](../../console/monitor-queues-agents-interactions-service-levels.md#auto-refresh-when-filters-are-applied)
 
 ### Kore Voice Gateway
 
