@@ -42,13 +42,13 @@ Modify one or more of the settings described in the following table.
   <td>
   Use the following options to configure the use of Search AI Answers.
 
-  **Intent Identification Priority**: This priority is used when the bot needs to identify the intent from the initial user utterances. This can take the following values:
+  <b>Intent Identification Priority</b>: This priority is used when the bot needs to identify the intent from the initial user utterances. This can take the following values:
    <ul> 
     <li> Automation first, Search AI as Fallback: The assistant prioritizes the automation framework for identifying the intent and answering the user input. If intent identification or action fails, the assistant uses the Search AI to generate a response.</li>
     <li> Search AI first, Automation as Fallback: The assistant uses the Search AI application to answer. If no satisfactory match is found within the Search AI sources, the assistant uses the automation framework to handle the user inputs.</li>
   </ul>
   
-  **Use Search AI for Unrecognized Inputs During Dialogs**: This option enhances the assistant's ability to handle diverse user inputs during Automation AI Dialog Tasks. If the NLP Engine fails to recognize an utterance, the system passes unidentified user inputs to Search AI, allowing access to the knowledge base mid-dialog. This improves conversation flow, reduces "I don't understand" responses, and allows for more diverse and comprehensive assistance throughout the dialog. 
+  <b>Use Search AI for Unrecognized Inputs During Dialogs</b>: This option enhances the assistant's ability to handle diverse user inputs during Automation AI Dialog Tasks. If the NLP Engine fails to recognize an utterance, the system passes unidentified user inputs to Search AI, allowing access to the knowledge base mid-dialog. This improves conversation flow, reduces "I don't understand" responses, and allows for more diverse and comprehensive assistance throughout the dialog. 
   
   </td>
   <tr>
