@@ -14,13 +14,14 @@ Key features and enhancements included in this release are summarized below.
 
 Agents can now make outbound calls from any status except "System Away" (Chat and Voice) and "System Busy" (Voice). This feature allows agents to contact customers at scheduled times or during emergencies without changing to "Available" status, preventing incoming calls.  
 
-Key points:  
+Key Points:  
 
 * Outbound calls are possible while handling digital interactions.  
 
 * No secondary outbound calls until the current voice call ends.  
 
-* Agent status automatically changes to "System Busy" when initiating an outbound call. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#manual-outbound-call)
+* Agent status automatically changes to "System Busy" when initiating an outbound call.  
+[Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#manual-outbound-call)
 
 ### Administration
 
