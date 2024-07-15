@@ -237,7 +237,7 @@ Steps to Add New Audit Allocation in Allocation:
     3. The no. of interactions per agent count below the input box displays the average no. of interactions across the selected agents, which is being taken based on the % interactions per agent allocation user input.
     4. The total interactions count at the bottom of the slideout displays the total interactions, which is being selected based on random sampling and the user input across date range selection. The % interactions per agent input across channels and the count of the interactions will be assigned for this audit if needed, and this can be adjusted by altering the user input across the fields mentioned.
 4. If you choose **Custom**, then the following screen appears to select a saved filter for **Custom Allocation** to assign those interactions for audits.  
-    <img src="../images/add-new-audit-allocation.png" alt="Allocation" title="Allocation" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/add-new-audit-allocation.png" alt="Allocation" title="Allocation" style="border: 1px solid gray; zoom:70%;">
 
 5. Select a required Filter option from the above search filter for audit.
     5. The total interactions count displays the total no. of interactions that is being assigned for this audit based on the evaluation form (queue), agent group selection and the filter selection
@@ -246,16 +246,16 @@ Steps to Add New Audit Allocation in Allocation:
 ### Assignment
 
 Steps to Add New Audit Allocation in Assignment:  
-<img src="../images/new-audit-allocat-assignment.png" alt="Assignment" title="Assignment" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/new-audit-allocat-assignment.png" alt="Assignment" title="Assignment" style="border: 1px solid gray; zoom:60%;">
 
 1. Select the **Auditors** from the Search filter that you want to assign interactions for manual evaluation.  
-    <img src="../images/audit-allocation-search-filter.png" alt="Audit Allocation Search Filter" title="Audit Allocation Search Filter" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/audit-allocation-search-filter.png" alt="Audit Allocation Search Filter" title="Audit Allocation Search Filter" style="border: 1px solid gray; zoom:60%;">
 2. Enter the % allocation of interactions that you want to allocate for each selected auditor.
     1. The interactions column displays the number of interactions that will be assigned for each auditor based on the allocation % input that allows you to adjust the input based on your preferences.
 3. The total allocation percentage across all auditors must sum to 100% to enable the **Create** button.
 
     !!! Note
-    
+
         Once the assignment configuration is completed, such that the total allocation percentage is 100%.
 
 4. Click **Create** to assign the interactions for evaluation to the selected auditors
