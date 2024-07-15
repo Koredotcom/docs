@@ -1,4 +1,4 @@
-# Lead Capture in Salesforce CRM Using a VA
+# Lead Capture in Salesforce CRM Using AI Chatbot
 
 You can automate the capture of a lead’s details on chat channels by Installing the Lead Capture for Salesforce CRM. 
 
@@ -12,7 +12,7 @@ The entire process consists of the following steps:
 
 1. [Link your Salesforce CRM account](#step-1-link-your-salesforce-crm-account).
 2. [Install the Lead Capture for Salesforce CRM](#step-2-install-the-lead-capture-template-for-salesforce-crm).
-3. [Train and Test the Dialog Tasks](#step-3-train-the-va-for-the-dialog-task-and-test-it).
+3. [Train and Test the Dialog Tasks](#step-3-train-the-chatbot-for-the-dialog-task-and-test-it).
 
 ### Step 1: Link your Salesforce CRM Account
 
@@ -94,7 +94,7 @@ Create your own custom authorization profile to obtain an access token and use i
 5. Once the template is installed, a dialog task for it is auto-created. You can find it in the list of dialogs in **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.  
 <img src="../images/dialogs.png" alt="dialogs" title="dialogs" style="border: 1px solid gray; zoom:70%;"> 
 
-### Step 3: Train the VA for the Dialog Task and Test It
+### Step 3: Train the Chatbot for the Dialog Task and Test It
 
 1. Click the **Test** icon.
 2. Choose a conversation type (Voice Conversation or Chat Conversation) to test the flow.
@@ -102,10 +102,10 @@ Create your own custom authorization profile to obtain an access token and use i
 4. Follow the prompts in the App console to create a lead, as shown below.  
 <img src="../images/app_console.png" alt="app-console" title="app-console" style="border: 1px solid gray; zoom:70%;">
 
-5. Enter all lead details when prompted by the VA, as shown below:  
+5. Enter all lead details when prompted by the Chatbot, as shown below:  
 <img src="../images/lead_details.png" alt="app-console" title="app-console" style="border: 1px solid gray; zoom:70%;">
 
 6. The new lead is created in Salesforce CRM. To view the lead, log in to **Salesforce**,  go to **App Launcher** > **Marketing CRM Classic** > **Leads**.  
 <img src="../images/salesforce.png" alt="salesforce" title="salesforce" style="border: 1px solid gray; zoom:70%;">
 
-7. [Publish your App (VA)](../../deploy/publishing-bot.md) so the end users can use this capability.
+7. [Publish your App](../../deploy/publishing-bot.md) so the end users can use this capability.

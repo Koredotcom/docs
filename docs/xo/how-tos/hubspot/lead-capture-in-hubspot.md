@@ -1,4 +1,4 @@
-# Lead Capture in HubSpot Using a VA
+# Lead Capture in HubSpot Using AI Chatbot
 
 You can automate the capture of a lead’s details on chat channels by Installing the Lead Capture for HubSpot CRM. 
 
@@ -13,7 +13,7 @@ The entire process consists of the following steps:
 
 1. [Link your HubSpot account](#step-1-link-your-hubspot-account).
 2. [Install the Lead Capture for HubSpot CRM](#step-2-install-the-lead-capture-template-for-hubspot-crm).
-3. [Train and Test the Dialog Tasks](#step-3-train-the-va-for-the-dialog-task-and-test-it).
+3. [Train and Test the Dialog Tasks](#step-3-train-the-chatbot-for-the-dialog-task-and-test-it).
 
 ### Step 1: Link your HubSpot Account
 
@@ -86,18 +86,17 @@ Create your own custom authorization profile to obtain an access token and use i
 5. Once the template is installed, a dialog task is auto-created. You can find it in the list of dialogs in **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.  
 <img src="../images/dialog-task.png" alt="dialog-task" title="dialog-task" style="border: 1px solid gray; zoom:70%;">
 
-### Step 3: Train the VA for the Dialog Task and Test it
+### Step 3: Train the Chatbot for the Dialog Task and Test it
 
 1. Click the **Test** icon.
 2. Choose a conversation type (Voice Conversation or Chat Conversation) to test the flow.
 3. Click **Train** to complete the untrained utterances.
 4. Follow the prompts in the App console to create a lead, as shown below.  
 <img src="../images/appconsole.png" alt="appconsole" title="appconsole" style="border: 1px solid gray; zoom:70%;">
-
-5. Enter all lead details when prompted by the VA, as shown below:  
+5. Enter all lead details when prompted by the Chatbot, as shown below:  
 <img src="../images/lead_details.png" alt="lead_details" title="lead_details" style="border: 1px solid gray; zoom:70%;">
 
 6. The new lead is created in HubSpot CRM. To view the lead, log in to HubSpot, click **CRM** in the left menu bar, and then select **Contacts**.  
 <img src="..//images/Hubspot.png" alt="salesforce" title="salesforce" style="border: 1px solid gray; zoom:70%;">
 
-7. [Publish your App (VA)](../../deploy/publishing-bot.md) so the end users can use this capability.
+7. [Publish your App](../../deploy/publishing-bot.md) so the end users can use this capability.
