@@ -25,7 +25,7 @@ Follow these steps:
 
     a. Use By Question, Question Answer Pair, and Adherence Types (Static/Dynamic). See [Evaluation Metrics](../quality-management/configure/evaluation-forms/configure-evaluation-forms.md).
 
-    b. 	Set Count Type (Entire Conversation/Time Bound). See[ Add New Evaluation Metrics](../quality-management/configure/evaluation-forms/configure-evaluation-metrics.md#add-new-evaluation-metrics).  
+    b. 	Set Count Type (Entire Conversation/Time Bound). See [Add New Evaluation Metrics](../quality-management/configure/evaluation-forms/configure-evaluation-metrics.md#add-new-evaluation-metrics).  
 
 5. Create Evaluation Forms:
 
