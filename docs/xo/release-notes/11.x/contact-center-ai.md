@@ -2,6 +2,34 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of XO v11.x releases.
 
+## v11.3.1 July 13, 2024
+
+<u> Patch Release </u>
+
+Key features and enhancements included in this release are summarized below.
+
+### Agent Console
+
+#### Enhanced Outbound Calling
+
+Agents can now make outbound calls from any status except "System Away" (Chat and Voice) and "System Busy" (Voice). This feature allows agents to contact customers at scheduled times or during emergencies without changing to "Available" status, preventing incoming calls.  
+
+Key points:  
+
+* Outbound calls are possible while handling digital interactions.  
+
+* No secondary outbound calls until the current voice call ends.  
+
+* Agent status automatically changes to "System Busy" when initiating an outbound call. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#manual-outbound-call)
+
+### Administration
+
+#### Two-Factor Authentication (2FA) Support
+
+Contact Center AI now offers Two-Factor Authentication (2FA) for enhanced login security. When enabled in the Kore.ai Admin Console, 2FA becomes mandatory for all users of the account/workspace. If not enabled, the login process remains unchanged. [Learn more :octicons-arrow-right-24:](../../administration/security-and-control/two-factor-authentication-for-platform-access.md)
+
+<hr>
+
 ## v11.3.0 June 29, 2024
 
 <u> Patch Release </u>
@@ -17,7 +45,7 @@ The outbound dialer has been enhanced with the following functionalities:
 * **Search Bar**: The search bar on the dialer interface allows agents to enter keywords or partial numbers to find configured contacts quickly.
 * **International Subscriber Dialing (ISD) Code Update**: The dialer automatically adjusts the outbound phone number's ISD code based on the last country code used. This streamlines the process for agents making calls to different regions.
 * **Phone Number Formatting**: The system displays the phone number in a standardized format when an agent enters it for dialing, regardless of whether the original number contains hyphens or brackets if the format is valid.
-* **Validation and Error Handling**: An error message is displayed if an invalid number is entered (for example, incorrect length or characters). The call button is disabled until a valid number is entered, preventing accidental calls to inaccurate numbers.
+* **Validation and Error Handling**: An error message is displayed if an invalid number is entered (for example, incorrect length or characters). The call button is disabled until a valid number is entered, preventing accidental calls to inaccurate numbers. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#outbound-dialer)
 
 #### Improved Conversation Handling With an Explicit Reject Button
 

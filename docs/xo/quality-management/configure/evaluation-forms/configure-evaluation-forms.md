@@ -85,6 +85,7 @@ The following table describes the Evaluation Forms details:
    </td>
    <td>It allows you to search and add evaluation metrics and weightage against them based on the metrics.  
 For example, if there is more than one Evaluation Metric, the total percentage must be set to 100% for all the evaluation metrics based on their weightage.
+<br>
 <strong>Note:</strong> If the channel selected is Chat, only metrics relevant to the Chat channel will be displayed. Metrics related to Speech and Playbook metrics with playbook channels set as Voice will not be shown.
    </td>
   </tr>
@@ -97,6 +98,7 @@ For example, if there is more than one Evaluation Metric, the total percentage m
 <img src="../images/eva-settings-assignments.png" alt="Assignments" title="Assignments" style="border: 1px solid gray; zoom:80%;">
    </td>
    <td>Allows you to search and add required assignment queues for the Evaluation Forms that you can access.
+   <br>
 <strong>Note</strong>: Each Queue can only have one Evaluation Form per channel.
    </td>
   </tr>
@@ -117,10 +119,10 @@ For example, if there is more than one Evaluation Metric, the total percentage m
 Steps to edit the existing Evaluation Forms:
 
 1. Right-click to select any of the existing **Evaluation Form** (Name). The following screen appears to edit the required fields.  
-<img src="../images/edit-evaluation-form.png" alt="Edit Evaluation Form" title="Edit Evaluation Form" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/edit-evaluation-form.png" alt="Edit Evaluation Form" title="Edit Evaluation Form" style="border: 1px solid gray; zoom:70%;">
 
 2. Click **Edit** to update the Evaluation Form dialog box fields. The following dialog box appears to update the required fields.  
-<img src="../images/edit-evaluation-form_settings.png" alt="Edit Evaluation Form Settings" title="Edit Evaluation Form Settings" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/edit-evaluation-form_settings.png" alt="Edit Evaluation Form Settings" title="Edit Evaluation Form Settings" style="border: 1px solid gray; zoom:70%;">
 
 3. Edit the required fields that you want to update.
 4. Click **Update** to save the changes.
