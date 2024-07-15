@@ -65,7 +65,7 @@ See <a href="../api-introduction#generating-the-jwt-token">How to generate the J
    </td>
   </tr>
   <tr>
-   <td>AppID
+   <td>App ID
    </td>
    <td>Required
    </td>
@@ -126,7 +126,8 @@ curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-522
    </td>
    <td>This parameter can be used to define rules to filter out the results from the Answer Index before using them for generating the answer. This parameter takes an array of rules with conditions. For instance, to use only web pages to answer a query, set the filters as shown below.
    
-    <pre>
+  <pre>
+   <code>
     "metaFilters": [
         {
         "condition": "AND",
@@ -140,6 +141,7 @@ curl --location 'https://platform.kore.ai/api/public/stream/st-3beea617-cfd5-522
             }]
         }]
     </pre>
+    </code>
    </td>
   </tr>
 </table>
