@@ -507,6 +507,8 @@ nav:
       - Conversations History: analytics/overview/conversations-history.md
       - Users Dashboard: analytics/overview/users-dashboard.md
       - Feedback Dashboard: analytics/overview/feedback-dashboard.md
+    - GenAI Analytics:
+      - LLM and GenAI Usage Logs: analytics/genai-analytics/llm-usage-logs.md
     - Automation:
       - Performance Dashboard: analytics/automation/performance-dashboard.md
       - Conversation Insights: analytics/automation/conversation-insights.md
