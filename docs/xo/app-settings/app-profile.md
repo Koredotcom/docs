@@ -41,8 +41,9 @@ Modify one or more of the settings described in the following table.
   <td>Answers</td>
   <td>
   Use the following options to configure the use of Search AI Answers.
-
+  
   <b>Intent Identification Priority</b>: This priority is used when the bot needs to identify the intent from the initial user utterances. This can take the following values:
+  
    <ul> 
     <li> Automation first, Search AI as Fallback: The assistant prioritizes the automation framework for identifying the intent and answering the user input. If intent identification or action fails, the assistant uses the Search AI to generate a response.</li>
     <li> Search AI first, Automation as Fallback: The assistant uses the Search AI application to answer. If no satisfactory match is found within the Search AI sources, the assistant uses the automation framework to handle the user inputs.</li>
