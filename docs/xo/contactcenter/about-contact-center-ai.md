@@ -38,7 +38,7 @@ Contact Center AI offers a conversational AI-native contact center-as-a-service 
         [Learn more :octicons-arrow-right-24:](./campaigns/about-campaigns.md)
     </kr-grid-item>
     <kr-grid-item>
-        <img src="../images/qm.svg" style="zoom:200%;"></img>
+        <img src="../images/quality-management.svg" style="zoom:200%;"></img>
         <kr-grid-title>Quality Management</kr-grid-title>
         <kr-grid-desc>AI-powered automated QA scoring for all customer interactions, with customizable configurations and comprehensive analysis. Optimize manual reviews, enhance agent feedback, and measure metrics to improve service quality.</kr-grid-desc>
         [Learn more :octicons-arrow-right-24:](../quality-management/about-quality-management.md)
