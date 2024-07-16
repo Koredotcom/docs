@@ -165,7 +165,8 @@ nav:
     - Getting Started:
         - About Virtual Assistant: getting-started/virtual-assistants-overview.md
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
-        - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md        
+        - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md
+        - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md        
     - Use Cases: 
       - Dialog Tasks:
         - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
