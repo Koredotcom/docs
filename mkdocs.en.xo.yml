@@ -375,6 +375,7 @@ nav:
       - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
   - GenAI Tools:
     - Overview: generative-ai-tools/introduction.md
+    - Free LLM Tokens: generative-ai-tools/llm-tokens.md
     - Models Library:
       - LLM Integration: generative-ai-tools/models-library.md
       - Kore.ai XO GPT Module: generative-ai-tools/xo-gpt-module.md
