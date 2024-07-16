@@ -237,5 +237,5 @@ For the configured App, ensure at least one Dialog Task has been configured for 
 
 **Where to find configuration settings**
 
-You can find the necessary information in In **Flows & Channels** > **Digital > Web/Mobile Client**.
-<img src="./images/jwt-app-details-26.png" alt="jwt-app-details" title="jwt-app-details" style="border: 1px solid gray; zoom:80%;">
+You can find the necessary information in **Flows & Channels** > **Digital** > **Web/Mobile Client**.
+<img src="../images/jwt-app-details-26.png" alt="jwt-app-details" title="jwt-app-details" style="border: 1px solid gray; zoom:80%;">
