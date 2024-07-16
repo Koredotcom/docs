@@ -4,7 +4,7 @@ GALE’s **Settings** console is a centralized management interface that provide
 
 * Users
 * Roles and permissions
-* Automated synchronization of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
+* [Automated synchronization](../settings/user-management/settings/active-directory.md/#step-4-schedule-automatic-ad-sync){:target="_blank"} of user data from Enterprise AD, plus configuration of user profile fields and email notifications.
 * Integrations
 * Manage Guardrails 
 
@@ -44,7 +44,7 @@ The modules and the capabilities supported on the <b>Settings</b> Console includ
 
 **Settings**
 
-Sync and import key user information from your organization's AD by doing the following: 
+[Sync and import key user information](../settings/user-management/settings/active-directory.md){:target="_blank"} from your organization's AD by doing the following: 
 
 * Configuring the connection to your AD.
 * Importing user data from all or specific organization units.
@@ -70,7 +70,8 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 
 To access the **Settings Console** on GALE, follow the steps below:
 
-1. [Log in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale) to GALE using your credentials.
+1. [Log in](../getting-started/sign-up-sign-in.md/#sign-in-to-gale){:target="_blank"} to GALE using your credentials.
+
 2. Click **Settings** on the top menu.
 <img src="../images/Settings-console-access.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
 
@@ -119,8 +120,7 @@ The following modules and features are supported on the Settings Console:
 
 <p><strong>Settings</strong></p>
 <ul>
-<li><strong>Active Directory</strong>: Configure and connect your organization's AD to import user information from required organization units to GALE seamlessly. Enable automatic data sync between the AD and GALE daily, weekly, or monthly.
-</li>
+<li><strong>Active Directory</strong>: Configure and connect your organization's AD to import user information from required organization units to GALE seamlessly. Enable automatic data sync between the AD and GALE daily, weekly, or monthly.</li>
 <li><strong>User Settings</strong>: Set up the visibility of user profile information across GALE. Select profile fields and allow edits by the end user.
 </li>
 <li><strong>Self sign up for enterprise users</strong>: Configure if new users from your domain can request to join this account.</li>

@@ -1,23 +1,18 @@
-# Enable your VA to Create a Ticket in Zendesk
+# Enable your AI Chatbot to Create a Ticket in Zendesk
 
-
-## Overview
-
-You can streamline your customer support experience with our virtual assistant. Your end-users interact with the virtual assistant to resolve their queries. The assistant can tackle straightforward questions directly in the chat, saving users time and effort. For complex issues requiring more time or expertise or during non-office hours, the assistant can effortlessly guide users in creating a Zendesk support ticket. It can prompt users to collect the required information and create a ticket or convert the ongoing conversation into a ticket, keeping the conversation context in mind.
+You can streamline your customer support experience with our AI chatbot. Your end-users interact with the chatbot to resolve their queries. The assistant can tackle straightforward questions directly in the chat, saving users time and effort. For complex issues requiring more time or expertise or during non-office hours, the assistant can effortlessly guide users in creating a Zendesk support ticket. It can prompt users to collect the required information and create a ticket or convert the ongoing conversation into a ticket, keeping the conversation context in mind.
 
 ## Getting Started
 
-The XO Platform makes it simple to link your Zendesk account and add ticket management capabilities to your virtual assistant using pre-built templates. It automatically sets up dialog tasks for each template. 
+The XO Platform makes it simple to link your Zendesk account and add ticket management capabilities to your chatbot using pre-built templates. It automatically sets up dialog tasks for each template. 
 
 The entire process consists of the following steps:
    
-   Step 1: Link your Zendesk account.
-   
-   Step 2: Install the Create a Ticket Template for Zendesk.
-   
-   Step 3: Train and Test the Dialog Tasks.
+1. [Link your Zendesk account](#step-1-link-your-zendesk-account).
+2. [Install the Create a Ticket Template for Zendesk](#step-2-install-the-create-a-ticket-template-for-zendesk).
+3. [Train and Test the Dialog Tasks](#step-3-train-the-chatbot-for-the-dialog-task-and-test-it).
 
-**Prerequisites**
+### Prerequisites
 
 Before you start the linking process, keep the following information handy:
 
@@ -43,7 +38,7 @@ Before you start the linking process, keep the following information handy:
 5. The Integration Installed Successfully confirmation is displayed.  
 <img src="../images/integration-installed-successfully.png" alt="successfull_message" title="successfull_message" style="border: 1px solid gray; zoom:70%;">
 
-### Step 2: Install the ‘Create a Ticket’ Template for Zendesk
+### Step 2: Install the 'Create a Ticket' Template for Zendesk
 
 1. Go to the **Marketplace** and select **Create a Ticket for Zendesk** Dialog Template.  
 <img src="../images/marketplace.png" alt="marketplace" title="marketplace" style="border: 1px solid gray; zoom:70%;">
@@ -59,14 +54,13 @@ Before you start the linking process, keep the following information handy:
     5. **Create a Ticket Setup:** Define the Create a Ticket setup and the information to be captured.
         * Follow up actions: Define the zendesk follow up actions and information that needs to be captured. For example,  live agent assistance while creating tickets during business hours.
         * Ticket Details: Define if any particular details need  to be captured, such as an order ID or booking ID.
-
-<img src="../images/install-template-zendesk.png" alt="install_template" title="install_template" style="border: 1px solid gray; zoom:70%;">
+    <img src="../images/install-template-zendesk.png" alt="install_template" title="install_template" style="border: 1px solid gray; zoom:70%;">
 
 4. Click **Finish**.
 5. Once the template is installed, a dialog task is auto-created. You can find it in the list of dialogs in **Automation AI** > **Virtual Assistant** > **Use Cases** > **Dialogs**.  
 <img src="../images/dialogs-zendesk.png" alt="create_dialog" title="create_dialog" style="border: 1px solid gray; zoom:70%;">
 
-### Step 3: Train the VA for the Dialog Task and Test it
+### Step 3: Train the Chatbot for the Dialog Task and Test it
 
 1. Click the **Test** icon.
 2. Choose a conversation type (Voice Conversation or Chat Conversation) to test the flow.
@@ -74,10 +68,10 @@ Before you start the linking process, keep the following information handy:
 4. Follow the prompts in the App console to create a ticket, as shown below.  
 <img src="../images/appconsole-zendesk.png" alt="iapp_console" title="app_console" style="border: 1px solid gray; zoom:70%;">
 
-5. Enter all the details when prompted by the VA, as shown below.  
+5. Enter all the details when prompted by the Chatbot, as shown below.  
 <img src="../images/view-ticket-details-zendesk.png" alt="ticket_details" title="ticket_details" style="border: 1px solid gray; zoom:70%;">
  
-6. A new Ticket is created in Zendesk. To view the Ticket, click** View Ticket Details** on the app console. You will be redirected to Zendesk. Login to view the Ticket.  
+6. A new Ticket is created in Zendesk. To view the Ticket, click **View Ticket Details** on the app console. You will be redirected to Zendesk. Login to view the Ticket.  
 <img src="../images/zendesk.png" alt="zendesk" title="zendesk" style="border: 1px solid gray; zoom:70%;">
 
-7. [Publish your App (VA)](../../deploy/publishing-bot.md) so the end users can use this capability.
+7. [Publish your App](../../deploy/publishing-bot.md) so the end users can use this capability.

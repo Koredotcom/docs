@@ -86,16 +86,60 @@ Agents can request the customer for an audio or video call during the chat conve
 
 ### Manual Outbound Call
 
+Agents can initiate manual outbound calls from the agent console. Following are the conditions under which agents can or cannot initiate outbound calls. These rules ensure efficient call management while maintaining system routing integrity.
+
+**Rules for Outbound Calls**
+
+1. **Initiating Outbound Calls from Any Status**  
+    * Agents can initiate outbound calls from any status within the agent interface.
+    * Exceptions:  
+        * Agents cannot initiate outbound calls when their status is "System Away" for both Chat and Voice interactions.
+        * Agents cannot initiate outbound calls when their status is "System Busy" for voice interactions.
+2. **Outbound Calls During Digital Interactions**
+    * Agents can initiate an outbound call even when handling digital interactions.
+    * If an agent's slots are full and their status is "System Busy," they can still initiate an outbound call.
+3. **Inbound Voice Interaction Restriction**
+    * Agents cannot initiate an outbound call if they are handling an existing inbound voice call.
+
+**Outbound Calling Button**
+
+* The outbound calling button is disabled:
+    * When agents are in a status that does not permit outbound calls (for example, System Away for both Chat and Voice interactions, System Busy for Voice interactions).
+    * When agents are handling an inbound voice call.
+    * When agents are handling an outbound call.
+
+**Handling Multiple Outbound Calls**
+
+Agents can initiate a secondary outbound voice call only after completing the ongoing call. This approach helps agents manage their workload effectively and provide undivided attention to each customer interaction.
+
+**Status Updates**
+
+When an agent initiates an outbound call, the system automatically changes the agent's status to "System Busy". This automatic status update helps manage agent availability and workload distribution, ensuring efficient call handling and resource allocation.
+
+#### Outbound Dialer
+
+The outbound dialer has the following functionalities:
+
+* Search Bar: The search bar on the dialer interface allows agents to enter keywords or partial numbers to find configured contacts quickly.  
+<img src="../images/search-bar.png" alt="Search Bar" title="Search Bar" style="border: 1px solid gray; zoom:70%;">
+
+* International Subscriber Dialing (ISD) Code Update: The dialer automatically adjusts the outbound phone number’s ISD code based on the last used country code. This streamlines the process for agents making calls to different regions. For example, if an agent selects India as the country but enters a phone number from the USA, the dialer automatically changes the country to the USA.
+
+* Phone Number Formatting: The system displays the phone number in a standardized format when an agent enters it for dialing, regardless of whether the original number contains hyphens or brackets, as long as the format is valid (for example, 090-1234-5678 or (123) 456-7890).
+
+* Validation and Error Handling: An error message is displayed if an invalid number is entered (for example, incorrect length or characters). The call button is disabled until a valid number is entered, preventing accidental calls to inaccurate numbers.  
+    <img src="../images/invalid-phone-number.png" alt="Invalid Phone Number" title="Invalid Phone Number" style="border: 1px solid gray; zoom:70%;">
+
 Agents can make outbound calls to the customers as follows:
 
-1. Click the **Dial pad** on the conversation tray. The dial pad appears.
-<img src="../images/dialer.png" alt="Dialer" title="Dialer" style="border: 1px solid gray; zoom:80%;">
+1. Click the **+** button on the conversation tray and click Outbound Call. The dial pad is displayed.  
+<img src="../images/outbound-call-button.png" alt="Outbound Call Button" title="Outbound call Button" style="border: 1px solid gray; zoom:70%;">
 
-2. Click the **Calling from** button on the Dialer tab, and select the number for placing the outbound call.
-<img src="../images/number-list.png" alt="Number List" title="Number List" style="border: 1px solid gray; zoom:80%;">
+2. Click the Calling from button on the Dialer tab, and select the number for placing the outbound call.  
+<img src="../images/calling-from-number.png" alt="Calling From Number" title="Calling From Number" style="border: 1px solid gray; zoom:70%;">
 
-3. Enter the country and the number, and click the **Call** button to place the outbound call.
-<img src="../images/selected-number.png" alt="Outgoing Number" title="Outgoing Number" style="border: 1px solid gray; zoom:80%;">
+3. Select the country, enter the number, and click the Call button to place the outbound call.  
+<img src="../images/call-button-(3).png" alt="Call Button" title="Call Button" style="border: 1px solid gray; zoom:70%;">
 
 ## Voicemail
 
