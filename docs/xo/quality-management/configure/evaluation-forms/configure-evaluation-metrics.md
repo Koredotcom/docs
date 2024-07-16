@@ -60,40 +60,17 @@ The following table describes the Evaluation Metrics Measurement Types:
    </td>
    <td>Provides the following two types of adherences:
 
-<ul>
-
-<li><strong>Static</strong>: Evaluates agent adherence across all conversations where no conditional check-in is required.
-
-    To get the agent's answers, you set up different acceptable utterances for a particular queue and then configure the extent of similarities expected against the set-up utterances. 
-<ul>
-
-<li><strong>Dynamic</strong>: Evaluates agent adherence only if the configured trigger is detected. Based on the evaluation trigger, the agent and customer option is selected.
-
-    This allows the conditional check-in. It is a trigger-based detection, in which you set up a trigger either for a customer or an agent utterance and then configure the answers appropriate to that scenario.
-
-    For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60% (Yellow), but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% (Green) because this is critical for the user to follow depending on the use cases.
-<ul>
-
-<li><strong>Trigger: </strong>Provides the following two options to select based on the trigger created by Agent Utterance or Customer Utterance for evaluation. You can add more than one Trigger utterance and Answers for each utterance and delete them if it is not required.  
-<ul>
-
-<li><strong>Customer Utterance</strong>: Select the Customer Utterance that triggers the adherence check. You can enter or select more than one utterance using generative AI Assistants that are similar utterances with the same meaning.
-      
-<ul>
-
-<li><strong>Agent Utterance</strong>: Select the Agent Utterance if it is triggered by the agent. Enter the utterances using generative AI Assistants suggestions that have similar utterances with the same meaning.
-
-You can add multiple utterances for the Customer and Agent and delete them.
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+   <ul>
+      <li><strong>Static</strong>: Evaluates agent adherence across all conversations where no conditional check-in is required. 
+      To get the agent's answers, you set up different acceptable utterances for a particular queue and then configure the extent of similarities expected against the set-up utterances. </li>    
+      <li><strong>Dynamic</strong>: Evaluates agent adherence only if the configured trigger is detected. Based on the evaluation trigger, the agent and customer option is selected.
+      This allows the conditional check-in. It is a trigger-based detection, in which you set up a trigger either for a customer or an agent utterance and then configure the answers appropriate to that scenario.              
+      For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60% (Yellow), but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% (Green) because this is critical for the user to follow depending on the use cases.
+         <ul><li><strong>Trigger: </strong>Provides the following two options to select based on the trigger created by Agent Utterance or Customer Utterance for evaluation. You can add more than one Trigger utterance and Answers for each utterance and delete them if it is not required. </li>
+         <ul><li><strong>Customer Utterance</strong>: Select the Customer Utterance that triggers the adherence check. You can enter or select more than one utterance using generative AI Assistants that are similar utterances with the same meaning.</li>
+         <li><strong>Agent Utterance</strong>: Select the Agent Utterance if it is triggered by the agent. Enter the utterances using generative AI Assistants suggestions that have similar utterances with the same meaning.</ul></li>
+         You can add multiple utterances for the Customer and Agent and delete them. </li></ul>         
+   </ul>
    </td>
   </tr>
   <tr>
@@ -106,8 +83,7 @@ If it is Static, then you need to define a similar percentage for the metric bas
 <ul>
 
 <li><strong>Similarity</strong>: You can set the Similarity percentage for the desired Evaluation metrics. <em>Whether it is Static or Dynamic, you can configure the expected Similarity threshold.</em>
-
-    For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60%, but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% because it is critical for the user to follow the adherence depending on the use cases.
+   For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60%, but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% because it is critical for the user to follow the adherence depending on the use cases.
 </li>
 </ul>
    </td>
@@ -120,33 +96,21 @@ If it is Static, then you need to define a similar percentage for the metric bas
    </td>
    <td>Provides the following two options based on the Adherence Type is selected:
 <ul>
-
 <li><strong>Entire Conversation</strong>: This allows you to check for adherence at different points of conversation. It does not matter where the agent wants to check adherence throughout the conversation.
-<ul>
-
+</li>
 <li><strong>Time Bound</strong>: This allows you to check adherence within a certain time range of the interaction, either for a specific number of seconds or a number of messages for chat at the start or end of the conversation.
+</li>
+</ul>
 <ul>
-
-<li><strong>Parameter:  </strong>In this field, select the section of the interaction that has to be evaluated for this metric.
-
-        If you select the <strong>First Part of Conversation </strong>or the <strong>Last  Part of Conversation</strong>, then enter the following subsection details provided:  
-<ul>
-  
-<li><strong>Voice</strong>: Enter the seconds from the start or end of the interaction within which this metric should be evaluated.  
-<ul>
-  
-<li><strong>Chat</strong>: Enter the number of messages from the start or end of the interaction within which this metric should be evaluated.
-</li>  
+<li><strong>Parameter</strong>: In this field, select the section of the interaction that has to be evaluated for this metric.
+   If you select the <strong>First Part of Conversation </strong>or the <strong>Last  Part of Conversation</strong>, then enter the following subsection details provided:  
+</li>
+<ul> 
+<li><strong>Voice</strong>: Enter the seconds from the start or end of the interaction within which this metric should be evaluated.</li>  
+<li><strong>Chat</strong>: Enter the number of messages from the start or end of the interaction within which this metric should be evaluated.</li>
+</ul>  
 </ul>
-</li>  
-</ul>
-</li>  
-</ul>
-</li>  
-</ul>
-</li>  
-</ul>
-   </td>
+  </td>
   </tr>
   <tr>
    <td><strong>Agent Attribute (Optional)</strong>
