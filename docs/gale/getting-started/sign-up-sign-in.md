@@ -8,9 +8,9 @@ Use the latest version of Google Chrome, Microsoft Edge, Safari, or Firefox. Int
 
 ## GALE Account Creation Using SSO
 
-You can sign up for GALE at https://gale.kore.ai/.
+You can sign up for GALE at [https://gale.kore.ai/](https://gale.kore.ai/){:target="_blank"}.
 
-When you [sign up](./sign-up-sign-in.md/#steps-to-sign-up-and-activate-your-gale-account){:target="_blank"} for GALE using Single Sign-On (SSO) options such as Google or Office 365, the platform utilizes your email address to create an account. Here's how the process works based on the domain of your email address:
+When you sign up for GALE using Single Sign-On (SSO) options such as Google or Office 365, the platform utilizes your email address to create an account. Here's how the process works based on the domain of your email address:
 
 **Email Address with Kore.com Domain**
 
@@ -27,7 +27,7 @@ This ensures that only users with a Kore.com email can self-register, while othe
 
 ## Accounts
 
-When you [sign up](./sign-up-sign-in.md/#new-account-sign-up-and-activation){:target="_blank"} for GALE, you must do the following:
+While you sign up for GALE, you must do the following:
 
 **Create an Account**
 

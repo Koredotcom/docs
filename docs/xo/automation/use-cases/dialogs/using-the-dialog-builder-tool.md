@@ -22,7 +22,7 @@ To add a dialog task, follow the steps below:
     <img src="../images/using-dialog-builder-img2-create-dialog-scratch.png" alt="Start dialog building From Scratch" title="Start dialog building From Scratch" style="border:1px solid gray;zoom:60%;">
 
 7. Provide an **Intent Name** (mandatory) and **Description** (Optional but recommended).
-8. You can choose whether the new dialog will be available to the end users **(Customer Use Case)**,  agents **(AgentAssist Use Case)**, or both.
+8. You can choose whether the new dialog will be available to the end users **(Customer Use Case)**,  agents **(Agent AI Use Case)**, or both.
 9. Under **Intent Settings**, set options for the task to be independent, such as a **Sub-intent dialog** or **Hide it from Help**.
 10. Under **Analytics - Containment type**, you can choose between **Abandonment as Self-Service** and **Abandonment as Drop Off**.
 11. Optionally, you can adjust **Conversation Context**, set **Intent Preconditions**, or define **Context Output**.
@@ -533,21 +533,29 @@ Add or modify the following settings for your dialog:
 
 * **Name** – The name of your dialog task, usually the main user intent. For example, _Book Ticket._
 * **Description** – An optional description of your dialog task displayed in the XO Platform.
-* **More Options** – Specify the behavior of this dialog task to the end-user:
-    * **Availability of Use Case** for the end users, the agents, or both.
-    * **Intent Settings:**
+* **Intent Settings:**
         * **Sub intent only dialog** – The task is invoked only as a sub-task when another task is in progress. It is not presented as a task when the user requests help.
         * **Hide from help** – The task is not presented as a task when the user requests help. Users can invoke this task anytime while talking to the assistant.
-            
-            **Note:** This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
-    
-    * **Analytics - Containment Type**(Any one option can be selected):
+        !!! Note 
+ 
+	    This option is selected automatically when the **Sub intent only dialog** option is selected. You can manually deselect it.
+* **Customer Use Cases** – Select if this dialog task is available for end users (customers).
+* **Agent AI Use Cases** - Select if this dialog task is available for agents.
+    * Enable or disable the following options in this section:
+        * **During Chats**: If enabled, agents can manually or automatically trigger this use case when they are engaged with a customer in a chat channel.
+        * **During Calls**: If enabled, agents can manually or automatically trigger this use case when they are engaged with a customer in a phone call.
+        * **During E-Mails**: If enabled, agents can manually or automatically trigger this use case when they are engaged with a customer in an email conversation.
+            * **Launch through Library**:
+                * **Enabled**: The dialog task is listed under all available dialog tasks in the Search tab of the widget.
+                * **Disabled**: The dialog task doesn’t appear on the list, but remains searchable via the “Ask a question” search bar in the Search tab of the Agent AI widget, allowing agents to browse and find this use case to trigger it.
+
+* **Analytics - Containment Type**(Any one option can be selected):
         * **Abundance as Self Service:** Users can abandon the conversation while executing the dialog.
         * **Abundance as Drop Off:** Conversations can be abandoned by users or due to any failure during dialog execution.
-    * **Follow-up Task** – The follow-up task array contains all the intents detected from user utterances from this dialog. You can either:
+* **Follow-up Task** – The follow-up task array contains all the intents detected from user utterances from this dialog. You can either:
         * Handle the follow-up tasks as part of node connections (default setting) or
         * Let the user select the follow-up task.
-    * **Task Execution Failure** – Define the assistant’s behavior when there is an error in task execution. It can be set as either:
+* **Task Execution Failure** – Define the assistant’s behavior when there is an error in task execution. It can be set as either:
         * Same as the Bot Level behavior.
         * Specific to this task – initiate a task, run a script, or show a message.
 
