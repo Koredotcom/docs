@@ -53,10 +53,7 @@ The following table describes the Evaluation Metrics Measurement Types:
    </td>
   </tr>
   <tr>
-   <td><strong>Adherence Type</strong>  
-   <img src="../images/adherence-type.png" alt="Metrics" title="Metrics" style="border: 1px solid gray; zoom:80%;">
-   <br>
-   <img src="../images/trigger.png" alt="Metrics" title="Metrics" style="border: 1px solid gray; zoom:80%;">
+   <td><strong>Adherence Type</strong>
    </td>
    <td>Provides the following two types of adherences:
 
@@ -64,26 +61,23 @@ The following table describes the Evaluation Metrics Measurement Types:
 
 <li><strong>Static</strong>: Evaluates agent adherence across all conversations where no conditional check-in is required.
 
-    To get the agent's answers, you set up different acceptable utterances for a particular queue and then configure the extent of similarities expected against the set-up utterances. 
+To get the agent's answers, you set up different acceptable utterances for a particular queue and then configure the extent of similarities expected against the set-up utterances.
 <ul>
 
 <li><strong>Dynamic</strong>: Evaluates agent adherence only if the configured trigger is detected. Based on the evaluation trigger, the agent and customer option is selected.
 
-    This allows the conditional check-in. It is a trigger-based detection, in which you set up a trigger either for a customer or an agent utterance and then configure the answers appropriate to that scenario.
+This allows the conditional check-in. It is a trigger-based detection, in which you set up a trigger either for a customer or an agent utterance and then configure the answers appropriate to that scenario.
 
-    For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60% (Yellow), but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% (Green) because this is critical for the user to follow depending on the use cases.
+For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60% (Yellow), but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% (Green) because this is critical for the user to follow depending on the use cases.
 <ul>
 
 <li><strong>Trigger: </strong>Provides the following two options to select based on the trigger created by Agent Utterance or Customer Utterance for evaluation. You can add more than one Trigger utterance and Answers for each utterance and delete them if it is not required.  
 <ul>
 
 <li><strong>Customer Utterance</strong>: Select the Customer Utterance that triggers the adherence check. You can enter or select more than one utterance using generative AI Assistants that are similar utterances with the same meaning.
-      
 <ul>
 
-<li><strong>Agent Utterance</strong>: Select the Agent Utterance if it is triggered by the agent. Enter the utterances using generative AI Assistants suggestions that have similar utterances with the same meaning.
-
-You can add multiple utterances for the Customer and Agent and delete them.
+<li><strong>Agent Utterance</strong>: Select the Agent Utterance if it is triggered by the agent. Enter the utterances using generative AI Assistants suggestions that have similar utterances with the same meaning. You can add multiple utterances for the Customer and Agent and delete them.
 </li>
 </ul>
 </li>
@@ -98,8 +92,6 @@ You can add multiple utterances for the Customer and Agent and delete them.
   </tr>
   <tr>
    <td><strong>Answer</strong>
-   <img src="../images/answers.png" alt="Answer" title="Answer" style="border: 1px solid gray; zoom:80%;">
-   </td>
    <td>Provides the expected answers relevant to your question (a few different utterances) entered with the help of generative AI suggestions, which have similar utterances with the same meaning and reduce the set up time.
 In this, you can enter or select more than one expected answer using generative AI having different utterances matching your question. In addition, you have the option to delete the added answers.
 If it is Static, then you need to define a similar percentage for the metric based on the defined use case and attribute.
@@ -107,16 +99,14 @@ If it is Static, then you need to define a similar percentage for the metric bas
 
 <li><strong>Similarity</strong>: You can set the Similarity percentage for the desired Evaluation metrics. <em>Whether it is Static or Dynamic, you can configure the expected Similarity threshold.</em>
 
-    For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60%, but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% because it is critical for the user to follow the adherence depending on the use cases.
+For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60%, but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% because it is critical for the user to follow the adherence depending on the use cases.
 </li>
 </ul>
    </td>
   </tr>
   <tr>
    <td><strong>Count Type </strong>
-   <img src="../images/time-bound.png" alt="Time Bound" title="Time Bound" style="border: 1px solid gray; zoom:80%;">
-   <br>
-   <img src="../images/voice.png" alt="Voice" title="Voice" style="border: 1px solid gray; zoom:80%;">
+
    </td>
    <td>Provides the following two options based on the Adherence Type is selected:
 <ul>
@@ -175,9 +165,6 @@ If it is Static, then you need to define a similar percentage for the metric bas
   </tr>
   <tr>
    <td><strong>Speech Type</strong>
-   <img src="../images/speech-type.png" alt="Speech Type" title="Speech Type" style="border: 1px solid gray; zoom:80%;">
-   <br>
-   <img src="../images/avg-speaking-rate.png" alt="Avg Speaking Rate" title="Avg Speaking Rate" style="border: 1px solid gray; zoom:80%;">
    </td>
    <td>Provides the following Speech Type options to select:
 <ul>
@@ -231,7 +218,6 @@ If it is Static, then you need to define a similar percentage for the metric bas
   </tr>
   <tr>
    <td><strong>Count Type</strong>
-   <img src="../images/entire-conv.png" alt="Count Type" title="Count Type" style="border: 1px solid gray; zoom:80%;">
    </td>
    <td>Provides the following two options based on the Count Type selected.
 <ul>
@@ -294,30 +280,20 @@ If it is Static, then you need to define a similar percentage for the metric bas
   </tr>
   <tr>
    <td><strong>Adherence Type</strong>
-   <img src="../images/name.png" alt="Adherence Type" title="Adherence Type" style="border: 1px solid gray; zoom:80%;">
-   <br>
-   <img src="../images/entire-playbook.png" alt="Entire Playbook" title="Entire Playbook" style="border: 1px solid gray; zoom:80%;">
-   <br>
-   <img src="../images/steps.png" alt="Steps" title="Steps" style="border: 1px solid gray; zoom:80%;">
    </td>
    <td>Provides the following two options to choose the Adherence Type:
 <ul>
 
-<li>Select<strong> Entire Playbook</strong> if you want to evaluate adherence across the entire playbook. 
+<li>Select<strong> Entire Playbook</strong> if you want to evaluate adherence across the entire playbook.
 <ul>
-
 <li><strong>Avg. Speaking Rate</strong>: This displays the average number of conversation sessions per day and comparison analysis for the selected period.
 <ul>
- 
 <li>In the <strong>Adherence Percentage</strong> field, enter the minimum expected adherence percentage to the playbook. If adherence falls below the configured percentage, this metric will fail.
 <ul>
-
 <li>Select<strong> Steps</strong> if you want to evaluate adherence to specific steps of the playbook.  
 <ul>
-
 <li>In the <strong>Stage</strong> field, select the stage under which the desired step for evaluation is configured.
 <ul>
-
 <li>In the <strong>Step </strong>field, select the desired step for adherence evaluation.
 </li>
 </ul>
