@@ -18,7 +18,6 @@ The Evaluation Metrics has the following options:
 ## Add New Evaluation Metrics
 
 The users can access the Evaluation Metrics by going to **Contact Center AI** > **Quality Management** > **Configure** > **Evaluation Metrics** > **New Evaluation Metrics**.  
-<img src="../images/add-new-eva-metrics.png" alt="Add New Evaluation Metrics" title="Add New Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
 
 Steps to create New Evaluation Metrics:
 
@@ -56,7 +55,6 @@ The following table describes the Evaluation Metrics Measurement Types:
    <td><strong>Adherence Type</strong>
    </td>
    <td>Provides the following two types of adherences:
-
    <ul>
       <li><strong>Static</strong>: Evaluates agent adherence across all conversations where no conditional check-in is required. 
       To get the agent's answers, you set up different acceptable utterances for a particular queue and then configure the extent of similarities expected against the set-up utterances. </li>    
@@ -85,7 +83,6 @@ If it is Static, then you need to define a similar percentage for the metric bas
   </tr>
   <tr>
    <td><strong>Count Type </strong>
-
    </td>
    <td>Provides the following two options based on the Adherence Type is selected:
 <ul>
@@ -261,6 +258,7 @@ If it is Static, then you need to define a similar percentage for the metric bas
 <ul>
 <li>In the <strong>Stage</strong> field, select the stage under which the desired step for evaluation is configured.
 <ul>
+
 <li>In the <strong>Step </strong>field, select the desired step for adherence evaluation.
 </li>
 </ul>
