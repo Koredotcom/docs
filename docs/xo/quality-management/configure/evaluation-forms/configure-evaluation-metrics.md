@@ -58,12 +58,11 @@ The following table describes the Evaluation Metrics Measurement Types:
    <td>Provides the following two types of adherences:
 
 <ul>
-
 <li><strong>Static</strong>: Evaluates agent adherence across all conversations where no conditional check-in is required.
 
 To get the agent's answers, you set up different acceptable utterances for a particular queue and then configure the extent of similarities expected against the set-up utterances.
-<ul>
 
+<ul>
 <li><strong>Dynamic</strong>: Evaluates agent adherence only if the configured trigger is detected. Based on the evaluation trigger, the agent and customer option is selected.
 
 This allows the conditional check-in. It is a trigger-based detection, in which you set up a trigger either for a customer or an agent utterance and then configure the answers appropriate to that scenario.
