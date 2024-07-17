@@ -230,14 +230,15 @@ If you select the <strong>First Part of Conversation</strong> or the <strong>Las
   </tr>
   <tr>
    <td><strong>Adherence Type</strong>
-   </td>
-   <td>From the <strong> Adherence Type</strong>, you can choose either <strong> Entire Playbook</strong> or <strong> Steps</strong> to do the following:
+   </td><td>
+   
+<p>From the <strong> Adherence Type</strong>, you can choose either <strong> Entire Playbook</strong> or <strong> Steps</strong> to do the following:</p>
 
 <ul><li><strong> Entire Playbook</strong>: To evaluate adherence across the entire playbook.</li>
 
-<li><strong>Adherence Percentage</strong>: To enter the minimum expected adherence percentage to the playbook. If adherence falls below the configured percentage, this metric will fail.
+<li><strong>Adherence Percentage</strong>: To enter the minimum expected adherence percentage to the playbook. If adherence falls below the configured percentage, this metric will fail.</li>
 
-From the <strong> Adherence Type</strong>, if you select <strong>Steps</strong>, then you will get the following options:
+<p>From the <strong> Adherence Type</strong>, if you select <strong>Steps</strong>, then you will get the following options:</p>
 
 <li><strong> Steps</strong>: To evaluate adherence to specific steps of the playbook.
 
