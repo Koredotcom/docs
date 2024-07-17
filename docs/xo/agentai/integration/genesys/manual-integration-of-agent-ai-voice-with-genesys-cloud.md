@@ -28,7 +28,7 @@ Steps to get Genesys OAuth ID:
 <img src="../images/integ-oauth-add-client-2.png" alt="integ-oauth-add-client" title="integ-oauth-add-client" style="border: 1px solid gray; zoom:80%;">
 4. Enter the app name, description, and token duration in the **App Name**, **Description**, and **Token Duration** fields.
 5. Select **Token Implicit Grant (Browser)** in the **Grant Types** fields.
-6. Add [https://platform.kore.ai/koreaiaa-genesys/](https://platform.kore.ai/koreaiaa-genesys/) in the **_Authorized redirect URIs (one per line)_** section.
+6. Add [https://agentassist.kore.ai/koreaiaa-genesys/](https://agentassist.kore.ai/koreaiaa-genesys/) in the **_Authorized redirect URIs (one per line)_** section.
 7. Add the following list of scopes in the **Scope** section:
     *  architect
     *  conversations
