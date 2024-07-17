@@ -2,15 +2,19 @@
 
 You can modify the general details of the open-source model if required.
 
-**To modify the settings of the open-source model, follow the steps**:
+Steps to modify the settings of the model:
 
-1. Click the **Configurations** tab from the left panel on the **Models** page. The **Configurations** page is displayed.
+1. Go to **Models** > **Open-source models** and click the required model from the list. The model's Overview page is displayed. 
 
-    <img src="../images/configure-open-source-model.png" alt="Configure your Open-Source Model " title="Configure your Open-Source Model" style="border: 1px solid gray; zoom:80%;">
+2. Click **Configurations** in the left navigation. The **Configurations** page is displayed.  
+<img src="../images/configure-open-source-model.png" alt="Configure your Open-Source Model " title="Configure your Open-Source Model" style="border: 1px solid gray; zoom:80%;">
 
-1. Make any required changes in the **Description**, or **Tags** fields, and the changes are auto-saved.
-2. You also have the option to suspend your deployed custom model using the **Proceed to undeploy** button. It immediately un-deploys the model and is not available for any inferencing requests. Then the status of the model changes to “**Ready to deploy**”. You can deploy the model again from the Deploy section to use it.
+3. Make any required changes in model's configurations. The changes are auto-saved.
 
-!!! note
+## Undeploy the Model 
 
-    To delete an open-source model, you must undeploy it and then only you can delete it.
+You can undeploy the model if it's no longer in use. Undeploying the modle will result in an immediate disconnection from all active instances. Click **Proceed to undeploy** on the Configurations page and follow the on-screen instructions.
+
+## Delete the Model
+
+You can delete an undeployed model. Deleting the model will remove all the associated data. Click **Proceed to delete** on the Configurations page and follow the on-screen instructions.

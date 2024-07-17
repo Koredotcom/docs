@@ -12,7 +12,7 @@ To deploy your fine-tuned model, follow these steps:
 
     Or
 
-    * Click **Model Endpoint** in the left mavigation and then **Deploy model** at the top-right corner of the page.  
+    * Click **Model Endpoint** in the left mavigation and then click **Deploy model** at the top-right corner of the page.  
     <img src="../images/deploy-fine-tuned-model-from-overview.png" alt="Deploy Fine-Tuned Model from Overview" title="Deploy Fine-Tuned Model from Overview" style="border: 1px solid gray; zoom:80%;">
 
 2. The **Deploy** dialog is displayed. In the **General details** section:

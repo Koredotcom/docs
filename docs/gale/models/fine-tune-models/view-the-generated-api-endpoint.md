@@ -1,7 +1,5 @@
 # View API Endpoint & Deployment History
 
-
-
 ## API Endpoint
 After the model is deployed, the API endpoint is generated which implies that your fine-tuned model is ready for inferencing externally and across the other sections in GALE.
 
@@ -11,7 +9,7 @@ After the model is deployed, the API endpoint is generated which implies that yo
 
 Steps to view the API Endpoint:
 
-1. Go to **Models** > **Fine-tuned models** and click the required model from the list. The model's Overview page is displayed. Click the **Model Endpoint** tab in the left navigation.
+1. Go to **Models** > **Fine-tuned models** and click the required model from the list. The model's Overview page is displayed. Click **Model Endpoint** in the left navigation.
 
 2. Click the **Copy** icon to copy and share the API Endpoint.  
 <img src="../images/view-generated-api-endpoint.png" alt="Generated API Endpoint" title="Generate API Endpoint" style="border: 1px solid gray; zoom:80%;">
