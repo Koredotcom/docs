@@ -186,22 +186,13 @@ In the <strong> No of Instances</strong> field, enter the maximum allowed dead a
 <li><strong>Time Bound</strong>: Allows you to check adherence within a certain time range of the interaction.
 <ul>
 
-<li><strong>Parameter: </strong>In this field, select the section of the interaction that has to be evaluated for this metric.
-<p>
+<li><strong>Parameter: </strong>In this field, select the section of the interaction that has to be evaluated for this metric. 
 
-        If you select the <strong>First Part of Conversation</strong> or the <strong>Last  Part of Conversation</strong>, then enter the following subsection details provided:  
-<ul>
+If you select the <strong>First Part of Conversation</strong> or the <strong>Last  Part of Conversation</strong>, then enter the following subsection details provided:
   
-<li><strong>Voice</strong>: Enter the seconds from the start or end of the interaction within which this metric should get evaluated.  
-<ul>
+<li><strong>Voice</strong>: Enter the seconds from the start or end of the interaction within which this metric should get evaluated.
   
 <li><strong>Chat</strong>: Enter the number of messages from the start or end of the interaction within which this metric should get evaluated.
-</li>  
-</ul>
-</li>  
-</ul>
-</li>  
-</ul>
 </li>  
 </ul>
    </td>
@@ -240,31 +231,19 @@ In the <strong> No of Instances</strong> field, enter the maximum allowed dead a
   <tr>
    <td><strong>Adherence Type</strong>
    </td>
-   <td>Provides the following two options to choose the Adherence Type:
-<ul>
+   <td>From the <strong> Adherence Type</strong>, you can choose either <strong> Entire Playbook</strong> or <strong> Steps</strong> to do the following:
 
-<li>Select<strong> Entire Playbook</strong> if you want to evaluate adherence across the entire playbook.
-<ul>
-<li><strong>Avg. Speaking Rate</strong>: This displays the average number of conversation sessions per day and comparison analysis for the selected period.
-<ul>
-<li>In the <strong>Adherence Percentage</strong> field, enter the minimum expected adherence percentage to the playbook. If adherence falls below the configured percentage, this metric will fail.
-<ul>
-<li>Select<strong> Steps</strong> if you want to evaluate adherence to specific steps of the playbook.  
-<ul>
-<li>In the <strong>Stage</strong> field, select the stage under which the desired step for evaluation is configured.
-<ul>
+<ul><li><strong> Entire Playbook</strong>: To evaluate adherence across the entire playbook.</li>
 
-<li>In the <strong>Step </strong>field, select the desired step for adherence evaluation.
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<li><strong>Adherence Percentage</strong>: To enter the minimum expected adherence percentage to the playbook. If adherence falls below the configured percentage, this metric will fail.
+
+From the <strong> Adherence Type</strong>, if you select <strong>Steps</strong>, then you will get the following options:
+
+<li><strong> Steps</strong>: To evaluate adherence to specific steps of the playbook.
+
+<li><strong>Stage</strong>: To select the stage under which the desired step for evaluation is configured.
+
+<li><strong>Step </strong>: To select the desired step for adherence evaluation.
 </li>
 </ul>
    </td>
