@@ -98,12 +98,10 @@ If it is Static, then you need to define a similar percentage for the metric bas
 </li>
 <li><strong>Time Bound</strong>: This allows you to check adherence within a certain time range of the interaction, either for a specific number of seconds or a number of messages for chat at the start or end of the conversation.
 </li>
-</ul>
-<ul>
-<li><strong>Parameter</strong>: In this field, select the section of the interaction that has to be evaluated for this metric.
+<ul><li><strong>Parameter</strong>: In this field, select the section of the interaction that has to be evaluated for this metric.
    If you select the <strong>First Part of Conversation </strong>or the <strong>Last  Part of Conversation</strong>, then enter the following subsection details provided:  
 </li>
-<ul> 
+ 
 <li><strong>Voice</strong>: Enter the seconds from the start or end of the interaction within which this metric should be evaluated.</li>  
 <li><strong>Chat</strong>: Enter the number of messages from the start or end of the interaction within which this metric should be evaluated.</li>
 </ul>  
@@ -142,25 +140,14 @@ If it is Static, then you need to define a similar percentage for the metric bas
 <ul>
 
 <li><strong>Cross Talk</strong>: If the Speech Type is Cross Talk, enter the maximum acceptable Number of instances. If the number of instances exceeds the configured count, this configured metric will fail.
-<ul>
 
-<li><strong>Dead Air</strong>: Defines the period of silence during a contact center interaction when neither the customer nor the agent is interacting. For example, the minimum dead air time is 1 second, with a maximum limit of 300 seconds.
+<li><strong>Dead Air</strong>: Defines the period of silence during a contact center interaction when neither the customer nor the agent is interacting. For example, the minimum dead air time is 1 second, with a maximum limit of 300 seconds. 
 
-    In the <strong>No of Instances</strong> field, enter the maximum allowed dead air instances per interaction.
-<ul>
+In the <strong> No of Instances</strong> field, enter the maximum allowed dead air instances per interaction.
 
 <li><strong>Avg. Speaking Rate</strong>: This displays the average number of conversation sessions per day and comparison analysis for the selected period.
-<ul>
  
-<li>In the <strong>Words Per Minute (WPM)</strong> field, select the expected speaking rate; failure to adhere to this configured rate results in failure for this configured metric.
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<ul><li>In the <strong>Words Per Minute (WPM)</strong> field, select the expected speaking rate; failure to adhere to this configured rate results in failure for this configured metric.</li></ul>
    </td>
   </tr>
 </table>
