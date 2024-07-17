@@ -18,7 +18,6 @@ The Evaluation Metrics has the following options:
 ## Add New Evaluation Metrics
 
 The users can access the Evaluation Metrics by going to **Contact Center AI** > **Quality Management** > **Configure** > **Evaluation Metrics** > **New Evaluation Metrics**.  
-<img src="../images/add-new-eva-metrics.png" alt="Add New Evaluation Metrics" title="Add New Evaluation Metrics" style="border: 1px solid gray; zoom:70%;">
 
 Steps to create New Evaluation Metrics:
 
@@ -58,11 +57,12 @@ The following table describes the Evaluation Metrics Measurement Types:
    <td>Provides the following two types of adherences:
 
 <ul>
+
 <li><strong>Static</strong>: Evaluates agent adherence across all conversations where no conditional check-in is required.
 
 To get the agent's answers, you set up different acceptable utterances for a particular queue and then configure the extent of similarities expected against the set-up utterances.
-
 <ul>
+
 <li><strong>Dynamic</strong>: Evaluates agent adherence only if the configured trigger is detected. Based on the evaluation trigger, the agent and customer option is selected.
 
 This allows the conditional check-in. It is a trigger-based detection, in which you set up a trigger either for a customer or an agent utterance and then configure the answers appropriate to that scenario.
@@ -97,45 +97,31 @@ If it is Static, then you need to define a similar percentage for the metric bas
 <ul>
 
 <li><strong>Similarity</strong>: You can set the Similarity percentage for the desired Evaluation metrics. <em>Whether it is Static or Dynamic, you can configure the expected Similarity threshold.</em>
-
-For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60%, but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% because it is critical for the user to follow the adherence depending on the use cases.
+   For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60%, but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% because it is critical for the user to follow the adherence depending on the use cases.
 </li>
 </ul>
    </td>
   </tr>
   <tr>
    <td><strong>Count Type </strong>
-
    </td>
    <td>Provides the following two options based on the Adherence Type is selected:
 <ul>
-
 <li><strong>Entire Conversation</strong>: This allows you to check for adherence at different points of conversation. It does not matter where the agent wants to check adherence throughout the conversation.
-<ul>
-
+</li>
 <li><strong>Time Bound</strong>: This allows you to check adherence within a certain time range of the interaction, either for a specific number of seconds or a number of messages for chat at the start or end of the conversation.
+</li>
+</ul>
 <ul>
-
-<li><strong>Parameter:  </strong>In this field, select the section of the interaction that has to be evaluated for this metric.
-
-        If you select the <strong>First Part of Conversation </strong>or the <strong>Last  Part of Conversation</strong>, then enter the following subsection details provided:  
-<ul>
-  
-<li><strong>Voice</strong>: Enter the seconds from the start or end of the interaction within which this metric should be evaluated.  
-<ul>
-  
-<li><strong>Chat</strong>: Enter the number of messages from the start or end of the interaction within which this metric should be evaluated.
-</li>  
+<li><strong>Parameter</strong>: In this field, select the section of the interaction that has to be evaluated for this metric.
+   If you select the <strong>First Part of Conversation </strong>or the <strong>Last  Part of Conversation</strong>, then enter the following subsection details provided:  
+</li>
+<ul> 
+<li><strong>Voice</strong>: Enter the seconds from the start or end of the interaction within which this metric should be evaluated.</li>  
+<li><strong>Chat</strong>: Enter the number of messages from the start or end of the interaction within which this metric should be evaluated.</li>
+</ul>  
 </ul>
-</li>  
-</ul>
-</li>  
-</ul>
-</li>  
-</ul>
-</li>  
-</ul>
-   </td>
+  </td>
   </tr>
   <tr>
    <td><strong>Agent Attribute (Optional)</strong>
@@ -293,6 +279,7 @@ For example, Greetings and Etiquette use cases have a lower adherence Similarity
 <ul>
 <li>In the <strong>Stage</strong> field, select the stage under which the desired step for evaluation is configured.
 <ul>
+
 <li>In the <strong>Step </strong>field, select the desired step for adherence evaluation.
 </li>
 </ul>
