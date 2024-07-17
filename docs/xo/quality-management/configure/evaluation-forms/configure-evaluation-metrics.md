@@ -60,32 +60,19 @@ The following table describes the Evaluation Metrics Measurement Types:
 
 <li><strong>Static</strong>: Evaluates agent adherence across all conversations where no conditional check-in is required.
 
-To get the agent's answers, you set up different acceptable utterances for a particular queue and then configure the extent of similarities expected against the set-up utterances.
-<ul>
+To get the agent's answers, you set up different acceptable utterances for a particular queue and then configure the extent of similarities expected against the set-up utterances.</li>
 
 <li><strong>Dynamic</strong>: Evaluates agent adherence only if the configured trigger is detected. Based on the evaluation trigger, the agent and customer option is selected.
 
 This allows the conditional check-in. It is a trigger-based detection, in which you set up a trigger either for a customer or an agent utterance and then configure the answers appropriate to that scenario.
 
 For example, Greetings and Etiquette use cases have a lower adherence Similarity, which is close to 60% (Yellow), but for Policy Privacy or Disclaimer, the adherence Similarity must be close to 100% (Green) because this is critical for the user to follow depending on the use cases.
-<ul>
 
-<li><strong>Trigger: </strong>Provides the following two options to select based on the trigger created by Agent Utterance or Customer Utterance for evaluation. You can add more than one Trigger utterance and Answers for each utterance and delete them if it is not required.  
-<ul>
+<ul><li><strong>Trigger: </strong>Provides the following two options to select based on the trigger created by Agent Utterance or Customer Utterance for evaluation. You can add more than one Trigger utterance and Answers for each utterance and delete them if it is not required.</li>  
 
-<li><strong>Customer Utterance</strong>: Select the Customer Utterance that triggers the adherence check. You can enter or select more than one utterance using generative AI Assistants that are similar utterances with the same meaning.
-<ul>
+<ul><li><strong>Customer Utterance</strong>: Select the Customer Utterance that triggers the adherence check. You can enter or select more than one utterance using generative AI Assistants that are similar utterances with the same meaning.</li>
 
-<li><strong>Agent Utterance</strong>: Select the Agent Utterance if it is triggered by the agent. Enter the utterances using generative AI Assistants suggestions that have similar utterances with the same meaning. You can add multiple utterances for the Customer and Agent and delete them.
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
+<li><strong>Agent Utterance</strong>: Select the Agent Utterance if it is triggered by the agent. Enter the utterances using generative AI Assistants suggestions that have similar utterances with the same meaning. You can add multiple utterances for the Customer and Agent and delete them.</li></ul>
 </ul>
    </td>
   </tr>
