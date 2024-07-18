@@ -100,7 +100,7 @@ curl --location
       --header 'bot-language: {language-code}' \
       --header 'Content-Type: application/json' \
       --data-raw '{
-         "version": "published", "userEmailId": "{email-id-of-the-bot-owner-or-developer}" 
+         "version": "published", "userEmailId": "email-id-of-the-bot-owner-or-developer" 
          }'
 ```
 
