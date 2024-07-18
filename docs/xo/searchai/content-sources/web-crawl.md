@@ -11,7 +11,7 @@ Websites usually provide detailed information about an organization's products a
 
 To manage the data ingested through web pages or to add new web sources, go to the **Web Crawl tab** under the **Sources** page.
 
-![Web Crawl](../images/webcrawlhome.png "Web Crawl")
+![Web Crawl](./images/webcrawlhome.png "Web Crawl")
 
 ## Adding a new web crawler for a web source
 

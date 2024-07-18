@@ -81,7 +81,6 @@ The following table describes the Evaluation Forms details:
   </tr>
   <tr>
    <td><strong>Add Evaluation Metrics</strong>  
-   <img src="../images/eva-settings-metrics.png" alt="Metrics" title="Metrics" style="border: 1px solid gray; zoom:80%;">
    </td>
    <td>It allows you to search and add evaluation metrics and weightage against them based on the metrics.  
 For example, if there is more than one Evaluation Metric, the total percentage must be set to 100% for all the evaluation metrics based on their weightage.
@@ -94,8 +93,7 @@ For example, if there is more than one Evaluation Metric, the total percentage m
    </td>
   </tr>
   <tr>
-   <td><strong>Queues</strong>  
-<img src="../images/eva-settings-assignments.png" alt="Assignments" title="Assignments" style="border: 1px solid gray; zoom:80%;">
+   <td><strong>Queues</strong>
    </td>
    <td>Allows you to search and add required assignment queues for the Evaluation Forms that you can access.
    <br>
