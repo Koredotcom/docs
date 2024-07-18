@@ -2,6 +2,14 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of XO v11.x releases.
 
+## v11.3.1 July 13, 2024
+
+<u> Patch Release </u>
+
+This update includes bug fixes.
+
+<hr>
+
 ## v11.3.0 June 29, 2024
 
 <u>Patch Release</u>

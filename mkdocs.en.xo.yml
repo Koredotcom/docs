@@ -118,7 +118,7 @@ nav:
       - Navigating the Platform: getting-started/navigating-the-platform.md  
       - Onboarding:
         - Guided Onboarding: getting-started/guided-onboarding.md
-        - Best Practices for FAQs and Answers Generation: getting-started/best-practices-faq-and-answer.md
+        - Best Practices for Training Your AI Chatbot: getting-started/best-practices-for-training-chatbot.md
       - Flows and Channels:
         - Flows: 
           - Introduction: flows/introduction-to-flows.md
@@ -159,12 +159,13 @@ nav:
         - Search AI: release-notes/11.x/search-ai.md
         - Contact Center AI: release-notes/11.x/contact-center-ai.md
         - Agent AI: release-notes/11.x/agent-ai.md
-        - Platform Services: release-notes/11.x/platform-services.md
+        - Platform Services: release-notes/11.x/platform-services.md    
   - Automation AI: 
     - Overview: automation/about-automation-ai.md
     - Getting Started:
         - About Virtual Assistant: getting-started/virtual-assistants-overview.md
         - Build a Virtual Assistant: getting-started/building-a-virtual-assistant.md   
+        - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md
     - Use Cases: 
       - Dialog Tasks:
         - Overview: automation/use-cases/dialogs/dialog-tasks-overview.md 
@@ -234,8 +235,7 @@ nav:
       - NLU Configuration:
         - NLP Engine Configurations: automation/natural-language/nlu-configurations/engine-tuning.md
         - Multi Intent Detection: automation/natural-language/nlu-configurations/multi-intent-detection.md
-        - Amend Entities: automation/natural-language/nlu-configurations/amend-entities.md        
-      - LLM and Generative AI: automation/natural-language/llm-and-generative-ai.md        
+        - Amend Entities: automation/natural-language/nlu-configurations/amend-entities.md              
     - Intelligence:
       - Overview: automation/intelligence/intelligence-overview.md
       - Events: 
@@ -258,12 +258,17 @@ nav:
       - Regression Testing: 
         - Health and Monitoring: automation/testing/regression-testing/health-and-monitoring/virtual-assistants-health-and-monitoring.md
         - Batch Testing: automation/testing/regression-testing/batch-testing.md
-        - Conversation Testing: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md
+        - Conversation Testing: automation/testing/regression-testing/conversation-testing/conversation-testing-landing-page.md    
     - Advanced Topics:
       - Intent Discovery: automation/tools/intent-discovery.md
       - Manage Assistant:
         - Team Collaboration: manage-assistant/collaborative-development.md
-        - Feedback Survey: manage-assistant/feedbacksurvey.md             
+        - Feedback Survey: manage-assistant/feedbacksurvey.md   
+    - How To:
+      - Marketplace Integration:
+        - Create a Ticket in Zendesk: how-tos/zendesk/create-a-ticket-in-zendesk.md
+        - Lead Capture in Salesforce: how-tos/salesforce/lead-capture-in-salesforce-crm.md
+        - Lead Capture in HubSpot: how-tos/hubspot/lead-capture-in-hubspot.md          
   - Search AI:
     - Overview: searchai/about-search-ai.md
     - Getting Started:
@@ -277,10 +282,14 @@ nav:
             - Connectors:
                 - Introduction: searchai/content-sources/connectors.md
                 - Confluence Server: searchai/content-sources/connectors/confluence-server.md
+                - Confluence Cloud: searchai/content-sources/connectors/confluence-cloud.md
                 - Dropbox: searchai/content-sources/connectors/dropbox.md
                 - Google Drive: searchai/content-sources/connectors/googledrive.md
                 - ServiceNow: searchai/content-sources/connectors/servicenow.md              
-                - Zendesk: searchai/content-sources/connectors/zendesk.md                  
+                - Zendesk: searchai/content-sources/connectors/zendesk.md
+                - Salesforce: searchai/content-sources/connectors/salesforce.md
+                - Azure Storage: searchai/content-sources/connectors/azure.md
+                - DotCMS: searchai/content-sources/connectors/dotcms.md                  
         - Extraction Strategy: searchai/content-extraction/extraction.md
         - Workbench:
             - Introduction: searchai/workbench/introduction.md
@@ -326,6 +335,7 @@ nav:
       - Interacting With Customers: console/interacting-with-customers.md
       - Additional Tools: console/additional-tools.md
       - Manage Layout: console/manage-layout.md
+      - Monitor: console/monitor-queues-agents-interactions-service-levels.md
     - Campaigns:  
       - Overview: contactcenter/campaigns/about-campaigns.md
       - Dashboard: contactcenter/campaigns/dashboard/campaign-dashboard.md
@@ -335,6 +345,20 @@ nav:
       - List Management: contactcenter/campaigns/list-management/list-management.md
       - Settings: contactcenter/campaigns/settings/global-settings.md
       - Frequently Asked Questions: contactcenter/campaigns/frequently-asked-questions.md
+    - Quality Management:
+      - Overview: quality-management/about-quality-management.md
+      - Setup Guide: quality-management/setup-guide.md 
+      - Analyze:
+        - Dashboard: quality-management/analyze/dashboard.md
+        - Conversation Intelligence: quality-management/analyze/conversation-intelligence.md
+        - Conversation Mining: quality-management/analyze/conversation-mining.md
+        - AI Assisted Manual Audit: quality-management/analyze/ai-assisted-manual-audit.md
+      - Configure:
+        - Evaluation Criteria:
+          - Configure Evaluation Forms: quality-management/configure/evaluation-forms/configure-evaluation-forms.md
+          - Configure Evaluation Metrics:  quality-management/configure/evaluation-forms/configure-evaluation-metrics.md
+        - Best Practices for Auto QA Configuration: quality-management/configure/best-practices-for-auto-qa-configuration.md
+        - Settings: quality-management/configure/settings.md
   - Agent AI:
     - Overview: agentai/about-agent-ai.md           
     - Set up Agent AI:
@@ -349,6 +373,20 @@ nav:
       - Bot Override and Automation: agentai/agent-experience/bot-override-and-automation.md
     - Integrations:
       - Genesys Voice: agentai/integration/genesys/manual-integration-of-agent-ai-voice-with-genesys-cloud.md
+  - GenAI Tools:
+    - Overview: generative-ai-tools/introduction.md
+    - Free LLM and GenAI Tokens: generative-ai-tools/llm-tokens.md 
+    - Models Library:
+      - LLM Integration: generative-ai-tools/models-library.md
+      - Kore.ai XO GPT Module: generative-ai-tools/xo-gpt-module.md
+    - Prompts Library: 
+      - Add Custom Prompts: generative-ai-tools/prompts-library.md
+    - GenAI Features:
+      - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
+      - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
+    - Safeguards:
+      - Data Anonymization: generative-ai-tools/data-anonymization.md
+      - Guardrails: generative-ai-tools/guardrails.md       
   - Integrations & APIs:
     - Overview: app-settings/integrations/about-integration.md
     - Integrations:
@@ -434,6 +472,7 @@ nav:
         - Getting Started: apis/automation/api-introduction.md
         - Rate Limits: apis/automation/rate-limit.md
         - API List:
+          - Agent AI APIs: apis/agent-ai/raw-data-api.md
           - Automation APIs: apis/automation/api-list.md
           - Contact Center APIs: apis/contact-center/contact-center-api-list.md
           - Search AI APIs: apis/searchai/api-list.md
@@ -468,6 +507,8 @@ nav:
       - Conversations History: analytics/overview/conversations-history.md
       - Users Dashboard: analytics/overview/users-dashboard.md
       - Feedback Dashboard: analytics/overview/feedback-dashboard.md
+    - GenAI Analytics:
+      - LLM and GenAI Usage Logs: analytics/genai-analytics/llm-usage-logs.md
     - Automation:
       - Performance Dashboard: analytics/automation/performance-dashboard.md
       - Conversation Insights: analytics/automation/conversation-insights.md
@@ -480,6 +521,7 @@ nav:
         - Create Custom Dashboard Filters: analytics/automation/custom-dashboard/create-custom-dashboard-filters.md
       - Conversation Flows: analytics/automation/conversation-flows.md            
     - Contact Center:  
+      - Agent AI: analytics/contact-center/agentai-dashboard.md
       - Queues & Agents: analytics/contact-center/queues-and-agents.md
       - Interactions: analytics/contact-center/interactions.md  
       - Reports:
@@ -500,19 +542,7 @@ nav:
         - Supported Components & Features: app-settings/language-management/multilingual-vas-components-feature-support.md
         - Manage Languages: app-settings/language-management/managing-languages-for-multilingual-vas.md
         - Manage Translation Services: app-settings/language-management/managing-translation-services.md
-        - Multilingual Virtual Assistant Behavior: app-settings/language-management/multi-lingual-bot-behavior.md
-      - Generative AI Tools:
-        - Overview: generative-ai-tools/introduction.md
-        - Models Library:
-          - LLM Integration: generative-ai-tools/models-library.md
-          - Kore.ai XO GPT Module: generative-ai-tools/xo-gpt-module.md
-        - Prompts Library: generative-ai-tools/prompts-library.md
-        - GenAI Features:
-          - Co-Pilot Features: generative-ai-tools/co-pilot-features.md        
-          - Dynamic Conversations Features: generative-ai-tools/dynamic-conversations-features.md
-        - Safeguards:
-          - Data Anonymization: generative-ai-tools/data-anonymization.md
-          - Guardrails: generative-ai-tools/guardrails.md               
+        - Multilingual Virtual Assistant Behavior: app-settings/language-management/multi-lingual-bot-behavior.md              
       - Dev Tools:
         - App Functions: app-settings/dev-tools/reusing-bot-functions-custom-script-file.md
         - Authorization Profiles: app-settings/dev-tools/bot-authorization/bot-authentication.md
