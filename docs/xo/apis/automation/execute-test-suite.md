@@ -4,7 +4,7 @@ To execute Conversation Test Suites and get results. This API only initiates the
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
-<p>Users invited as testers are not allowed to execute this API via the UI or a backend function (API).</p>
+<p>Testers can't run conversation test suites through the interface or API.</p>
 </div>
 
 
