@@ -2,6 +2,10 @@
 
 To execute Conversation Test Suites and get results. This API only initiates the test process and returns the execution status and **_testRunId_** to track the execution status. Please look at the [Conversation Test Suite Execution Status API](../batch-test-execution-status/) for the results of the test.
 
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>Users invited as testers are not allowed to execute this API via the UI or a backend function (API).</p>
+</div>
 
 <table>
   <tr>
@@ -85,26 +89,20 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   </tr>
 </table>
 
-
-
 ## Sample Request
 
-
 ```json
-curl --location --request POST \
+curl --location 
       'https://{{host}}/api/public/stream/:streamId/conversation/testsuite/:testSuiteName/run' \
-      --header 'auth: {YOUR_JWT_ACCESS_TOKEN}' \
+      --header 'auth: {jwt-token}' \
       --header 'bot-language: {language-code}' \
       --header 'Content-Type: application/json' \
       --data-raw '{
-         "version":"inDevelopment" 
+         "version": "published", "userEmailId": "{{john.stevens@kore.com}}" 
          }'
 ```
 
-
-
 ## Body Parameters
-
 
 <table>
   <tr>
@@ -115,7 +113,7 @@ curl --location --request POST \
    <td><strong>MANDATE</strong>
    </td>
   </tr>
-  <tr>
+   <tr>
    <td><strong>version</strong>
    </td>
    <td>The version of the bot against which the execution is required. The following options are available:
@@ -130,12 +128,15 @@ curl --location --request POST \
    <td>Required
    </td>
   </tr>
+   <tr>
+   <td><strong>userEmailId</strong>
+   </td>
+   <td>	The email ID of the bot owner or a developer with whom the bot is shared. For example, “userEmailId”: “<i>john.stevens@kore.com</i>“</td>
+   <td>Required   </td>
+  </tr>
 </table>
 
-
-
 ## Sample Response
-
 
 ```json
 {
