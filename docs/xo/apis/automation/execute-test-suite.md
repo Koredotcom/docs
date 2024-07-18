@@ -90,6 +90,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
   </tr>
 </table>
 
+
 ## Sample Request
 
 ```json
