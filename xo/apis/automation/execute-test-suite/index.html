@@ -13799,6 +13799,11 @@
 
 <h1 id="execute-a-test-suite-api">Execute a Test Suite API<a class="headerlink" href="#execute-a-test-suite-api" title="Permanent link">&para;</a></h1>
 <p>To execute Conversation Test Suites and get results. This API only initiates the test process and returns the execution status and <strong><em>testRunId</em></strong> to track the execution status. Please look at the <a href="../batch-test-execution-status/">Conversation Test Suite Execution Status API</a> for the results of the test.</p>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>Testers can't run conversation test suites through the interface or API.</p>
+</div>
+
 <table>
   <tr>
    <td><strong>Method</strong>
@@ -13878,13 +13883,13 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
 </table>
 
 <h2 id="sample-request">Sample Request<a class="headerlink" href="#sample-request" title="Permanent link">&para;</a></h2>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="err">curl</span><span class="w"> </span><span class="mi">--</span><span class="err">loca</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="w"> </span><span class="mi">--</span><span class="err">reques</span><span class="kc">t</span><span class="w"> </span><span class="err">POST</span><span class="w"> </span><span class="err">\</span>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="err">curl</span><span class="w"> </span><span class="mi">--</span><span class="err">loca</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="w"> </span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">      </span><span class="err">&#39;h</span><span class="kc">tt</span><span class="err">ps</span><span class="p">:</span><span class="c1">//{{host}}/api/public/stream/:streamId/conversation/testsuite/:testSuiteName/run&#39; \</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">      </span><span class="mi">--</span><span class="err">header</span><span class="w"> </span><span class="err">&#39;au</span><span class="kc">t</span><span class="err">h</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">YOUR_JWT_ACCESS_TOKEN</span><span class="p">}</span><span class="err">&#39;</span><span class="w"> </span><span class="err">\</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">      </span><span class="mi">--</span><span class="err">header</span><span class="w"> </span><span class="err">&#39;au</span><span class="kc">t</span><span class="err">h</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">jw</span><span class="kc">t</span><span class="mi">-</span><span class="kc">t</span><span class="err">oke</span><span class="kc">n</span><span class="p">}</span><span class="err">&#39;</span><span class="w"> </span><span class="err">\</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">      </span><span class="mi">--</span><span class="err">header</span><span class="w"> </span><span class="err">&#39;bo</span><span class="kc">t</span><span class="mi">-</span><span class="err">la</span><span class="kc">n</span><span class="err">guage</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">la</span><span class="kc">n</span><span class="err">guage</span><span class="mi">-</span><span class="err">code</span><span class="p">}</span><span class="err">&#39;</span><span class="w"> </span><span class="err">\</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">      </span><span class="mi">--</span><span class="err">header</span><span class="w"> </span><span class="err">&#39;Co</span><span class="kc">ntent</span><span class="mi">-</span><span class="err">Type</span><span class="p">:</span><span class="w"> </span><span class="err">applica</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">/jso</span><span class="kc">n</span><span class="err">&#39;</span><span class="w"> </span><span class="err">\</span>
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">      </span><span class="mi">--</span><span class="err">da</span><span class="kc">ta</span><span class="mi">-</span><span class="err">raw</span><span class="w"> </span><span class="err">&#39;</span><span class="p">{</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">         </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="s2">&quot;inDevelopment&quot;</span><span class="w"> </span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">         </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;published&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;userEmailId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;email-id-of-the-bot-owner-or-developer&quot;</span><span class="w"> </span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">         </span><span class="p">}</span><span class="err">&#39;</span>
 </span></code></pre></div>
 <h2 id="body-parameters">Body Parameters<a class="headerlink" href="#body-parameters" title="Permanent link">&para;</a></h2>
@@ -13897,7 +13902,7 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td><strong>MANDATE</strong>
    </td>
   </tr>
-  <tr>
+   <tr>
    <td><strong>version</strong>
    </td>
    <td>The version of the bot against which the execution is required. The following options are available:
@@ -13911,6 +13916,12 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    </td>
    <td>Required
    </td>
+  </tr>
+   <tr>
+   <td><strong>userEmailId</strong>
+   </td>
+   <td> The email ID of the bot owner or a developer with whom the bot is shared. For example, “userEmailId”: “<i>john.stevens@kore.com</i>“</td>
+   <td>Required   </td>
   </tr>
 </table>
 
